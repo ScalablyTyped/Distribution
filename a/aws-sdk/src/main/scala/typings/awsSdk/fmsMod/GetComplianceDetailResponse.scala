@@ -13,19 +13,15 @@ trait GetComplianceDetailResponse extends StObject {
 }
 object GetComplianceDetailResponse {
   
-  @scala.inline
-  def apply(): GetComplianceDetailResponse = {
+  inline def apply(): GetComplianceDetailResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComplianceDetailResponse]
   }
   
-  @scala.inline
-  implicit class GetComplianceDetailResponseMutableBuilder[Self <: GetComplianceDetailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetComplianceDetailResponse](x: Self) {
     
-    @scala.inline
-    def setPolicyComplianceDetail(value: PolicyComplianceDetail): Self = StObject.set(x, "PolicyComplianceDetail", value.asInstanceOf[js.Any])
+    inline def setPolicyComplianceDetail(value: PolicyComplianceDetail): Self = StObject.set(x, "PolicyComplianceDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyComplianceDetailUndefined: Self = StObject.set(x, "PolicyComplianceDetail", js.undefined)
+    inline def setPolicyComplianceDetailUndefined: Self = StObject.set(x, "PolicyComplianceDetail", js.undefined)
   }
 }

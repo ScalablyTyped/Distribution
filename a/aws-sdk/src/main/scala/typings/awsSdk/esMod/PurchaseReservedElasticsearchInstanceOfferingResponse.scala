@@ -18,25 +18,19 @@ trait PurchaseReservedElasticsearchInstanceOfferingResponse extends StObject {
 }
 object PurchaseReservedElasticsearchInstanceOfferingResponse {
   
-  @scala.inline
-  def apply(): PurchaseReservedElasticsearchInstanceOfferingResponse = {
+  inline def apply(): PurchaseReservedElasticsearchInstanceOfferingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurchaseReservedElasticsearchInstanceOfferingResponse]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedElasticsearchInstanceOfferingResponseMutableBuilder[Self <: PurchaseReservedElasticsearchInstanceOfferingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedElasticsearchInstanceOfferingResponse](x: Self) {
     
-    @scala.inline
-    def setReservationName(value: ReservationToken): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
+    inline def setReservationName(value: ReservationToken): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationNameUndefined: Self = StObject.set(x, "ReservationName", js.undefined)
+    inline def setReservationNameUndefined: Self = StObject.set(x, "ReservationName", js.undefined)
     
-    @scala.inline
-    def setReservedElasticsearchInstanceId(value: GUID): Self = StObject.set(x, "ReservedElasticsearchInstanceId", value.asInstanceOf[js.Any])
+    inline def setReservedElasticsearchInstanceId(value: GUID): Self = StObject.set(x, "ReservedElasticsearchInstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedElasticsearchInstanceIdUndefined: Self = StObject.set(x, "ReservedElasticsearchInstanceId", js.undefined)
+    inline def setReservedElasticsearchInstanceIdUndefined: Self = StObject.set(x, "ReservedElasticsearchInstanceId", js.undefined)
   }
 }

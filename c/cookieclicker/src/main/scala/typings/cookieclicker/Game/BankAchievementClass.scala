@@ -15,8 +15,7 @@ trait BankAchievementClass
 }
 object BankAchievementClass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseDesc: String,
     click: () => Unit,
     desc: String,
@@ -36,10 +35,8 @@ object BankAchievementClass {
     __obj.asInstanceOf[BankAchievementClass]
   }
   
-  @scala.inline
-  implicit class BankAchievementClassMutableBuilder[Self <: BankAchievementClass] (val x: Self) extends AnyVal {
+  extension [Self <: BankAchievementClass](x: Self) {
     
-    @scala.inline
-    def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
+    inline def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
   }
 }

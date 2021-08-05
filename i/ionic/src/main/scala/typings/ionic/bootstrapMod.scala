@@ -22,6 +22,5 @@ object bootstrapMod {
   @js.native
   val ERROR_VERSION_TOO_OLD: /* "VERSION_TOO_OLD" */ String = js.native
   
-  @scala.inline
-  def detectLocalCLI(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLocalCLI")().asInstanceOf[js.Promise[String]]
+  inline def detectLocalCLI(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLocalCLI")().asInstanceOf[js.Promise[String]]
 }

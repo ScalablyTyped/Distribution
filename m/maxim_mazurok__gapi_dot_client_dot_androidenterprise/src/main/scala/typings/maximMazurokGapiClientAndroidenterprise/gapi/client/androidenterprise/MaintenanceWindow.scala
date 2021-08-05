@@ -14,25 +14,19 @@ trait MaintenanceWindow extends StObject {
 }
 object MaintenanceWindow {
   
-  @scala.inline
-  def apply(): MaintenanceWindow = {
+  inline def apply(): MaintenanceWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindow]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowMutableBuilder[Self <: MaintenanceWindow] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindow](x: Self) {
     
-    @scala.inline
-    def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
+    inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
+    inline def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
     
-    @scala.inline
-    def setStartTimeAfterMidnightMs(value: String): Self = StObject.set(x, "startTimeAfterMidnightMs", value.asInstanceOf[js.Any])
+    inline def setStartTimeAfterMidnightMs(value: String): Self = StObject.set(x, "startTimeAfterMidnightMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeAfterMidnightMsUndefined: Self = StObject.set(x, "startTimeAfterMidnightMs", js.undefined)
+    inline def setStartTimeAfterMidnightMsUndefined: Self = StObject.set(x, "startTimeAfterMidnightMs", js.undefined)
   }
 }

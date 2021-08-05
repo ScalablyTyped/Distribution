@@ -12,8 +12,7 @@ trait ObjectType
 }
 object ObjectType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -44,10 +43,8 @@ object ObjectType {
     __obj.asInstanceOf[ObjectType]
   }
   
-  @scala.inline
-  implicit class ObjectTypeMutableBuilder[Self <: ObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectType](x: Self) {
     
-    @scala.inline
-    def setObjectFlags(value: ObjectFlags): Self = StObject.set(x, "objectFlags", value.asInstanceOf[js.Any])
+    inline def setObjectFlags(value: ObjectFlags): Self = StObject.set(x, "objectFlags", value.asInstanceOf[js.Any])
   }
 }

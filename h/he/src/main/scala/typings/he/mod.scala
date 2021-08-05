@@ -13,29 +13,24 @@ object mod {
   @JSImport("he", "decode")
   @js.native
   def decode: Decode_ = js.native
-  @scala.inline
-  def decode_=(x: Decode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decode")(x.asInstanceOf[js.Any])
+  inline def decode_=(x: Decode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decode")(x.asInstanceOf[js.Any])
   
   @JSImport("he", "encode")
   @js.native
   def encode: Encode_ = js.native
-  @scala.inline
-  def encode_=(x: Encode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encode")(x.asInstanceOf[js.Any])
+  inline def encode_=(x: Encode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encode")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def escape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("he", "unescape")
   @js.native
   def unescape: Decode_ = js.native
-  @scala.inline
-  def unescape_=(x: Decode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unescape")(x.asInstanceOf[js.Any])
+  inline def unescape_=(x: Decode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unescape")(x.asInstanceOf[js.Any])
   
   @JSImport("he", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   trait DecodeOptions extends StObject {
     
@@ -60,26 +55,20 @@ object mod {
   }
   object DecodeOptions {
     
-    @scala.inline
-    def apply(): DecodeOptions = {
+    inline def apply(): DecodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    @scala.inline
-    implicit class DecodeOptionsMutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeOptions](x: Self) {
       
-      @scala.inline
-      def setIsAttributeValue(value: Boolean): Self = StObject.set(x, "isAttributeValue", value.asInstanceOf[js.Any])
+      inline def setIsAttributeValue(value: Boolean): Self = StObject.set(x, "isAttributeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAttributeValueUndefined: Self = StObject.set(x, "isAttributeValue", js.undefined)
+      inline def setIsAttributeValueUndefined: Self = StObject.set(x, "isAttributeValue", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -151,44 +140,32 @@ object mod {
   }
   object EncodeOptions {
     
-    @scala.inline
-    def apply(): EncodeOptions = {
+    inline def apply(): EncodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    @scala.inline
-    implicit class EncodeOptionsMutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EncodeOptions](x: Self) {
       
-      @scala.inline
-      def setAllowUnsafeSymbols(value: Boolean): Self = StObject.set(x, "allowUnsafeSymbols", value.asInstanceOf[js.Any])
+      inline def setAllowUnsafeSymbols(value: Boolean): Self = StObject.set(x, "allowUnsafeSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnsafeSymbolsUndefined: Self = StObject.set(x, "allowUnsafeSymbols", js.undefined)
+      inline def setAllowUnsafeSymbolsUndefined: Self = StObject.set(x, "allowUnsafeSymbols", js.undefined)
       
-      @scala.inline
-      def setDecimal(value: Boolean): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: Boolean): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setEncodeEverything(value: Boolean): Self = StObject.set(x, "encodeEverything", value.asInstanceOf[js.Any])
+      inline def setEncodeEverything(value: Boolean): Self = StObject.set(x, "encodeEverything", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeEverythingUndefined: Self = StObject.set(x, "encodeEverything", js.undefined)
+      inline def setEncodeEverythingUndefined: Self = StObject.set(x, "encodeEverything", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setUseNamedReferences(value: Boolean): Self = StObject.set(x, "useNamedReferences", value.asInstanceOf[js.Any])
+      inline def setUseNamedReferences(value: Boolean): Self = StObject.set(x, "useNamedReferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNamedReferencesUndefined: Self = StObject.set(x, "useNamedReferences", js.undefined)
+      inline def setUseNamedReferencesUndefined: Self = StObject.set(x, "useNamedReferences", js.undefined)
     }
   }
   

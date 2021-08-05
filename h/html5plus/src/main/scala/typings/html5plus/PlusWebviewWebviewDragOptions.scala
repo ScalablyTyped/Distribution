@@ -61,31 +61,23 @@ trait PlusWebviewWebviewDragOptions extends StObject {
 }
 object PlusWebviewWebviewDragOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewDragOptions = {
+  inline def apply(): PlusWebviewWebviewDragOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewDragOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewDragOptionsMutableBuilder[Self <: PlusWebviewWebviewDragOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewDragOptions](x: Self) {
     
-    @scala.inline
-    def setCallbackStep(value: Double): Self = StObject.set(x, "callbackStep", value.asInstanceOf[js.Any])
+    inline def setCallbackStep(value: Double): Self = StObject.set(x, "callbackStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackStepUndefined: Self = StObject.set(x, "callbackStep", js.undefined)
+    inline def setCallbackStepUndefined: Self = StObject.set(x, "callbackStep", js.undefined)
     
-    @scala.inline
-    def setDirection(value: rtl | left | ltr | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: rtl | left | ltr | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setMoveMode(value: followFinger | silent | bounce): Self = StObject.set(x, "moveMode", value.asInstanceOf[js.Any])
+    inline def setMoveMode(value: followFinger | silent | bounce): Self = StObject.set(x, "moveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveModeUndefined: Self = StObject.set(x, "moveMode", js.undefined)
+    inline def setMoveModeUndefined: Self = StObject.set(x, "moveMode", js.undefined)
   }
 }

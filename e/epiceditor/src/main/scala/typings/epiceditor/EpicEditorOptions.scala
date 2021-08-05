@@ -36,85 +36,59 @@ trait EpicEditorOptions extends StObject {
 }
 object EpicEditorOptions {
   
-  @scala.inline
-  def apply(): EpicEditorOptions = {
+  inline def apply(): EpicEditorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EpicEditorOptions]
   }
   
-  @scala.inline
-  implicit class EpicEditorOptionsMutableBuilder[Self <: EpicEditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EpicEditorOptions](x: Self) {
     
-    @scala.inline
-    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
-    @scala.inline
-    def setClientSideStorage(value: Boolean): Self = StObject.set(x, "clientSideStorage", value.asInstanceOf[js.Any])
+    inline def setClientSideStorage(value: Boolean): Self = StObject.set(x, "clientSideStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSideStorageUndefined: Self = StObject.set(x, "clientSideStorage", js.undefined)
+    inline def setClientSideStorageUndefined: Self = StObject.set(x, "clientSideStorage", js.undefined)
     
-    @scala.inline
-    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setFile(value: AutoSave): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: AutoSave): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFocusOnLoad(value: Boolean): Self = StObject.set(x, "focusOnLoad", value.asInstanceOf[js.Any])
+    inline def setFocusOnLoad(value: Boolean): Self = StObject.set(x, "focusOnLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusOnLoadUndefined: Self = StObject.set(x, "focusOnLoad", js.undefined)
+    inline def setFocusOnLoadUndefined: Self = StObject.set(x, "focusOnLoad", js.undefined)
     
-    @scala.inline
-    def setLocalStorageName(value: String): Self = StObject.set(x, "localStorageName", value.asInstanceOf[js.Any])
+    inline def setLocalStorageName(value: String): Self = StObject.set(x, "localStorageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalStorageNameUndefined: Self = StObject.set(x, "localStorageName", js.undefined)
+    inline def setLocalStorageNameUndefined: Self = StObject.set(x, "localStorageName", js.undefined)
     
-    @scala.inline
-    def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    inline def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+    inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
-    @scala.inline
-    def setShortcut(value: Fullscreen): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+    inline def setShortcut(value: Fullscreen): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+    inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
     
-    @scala.inline
-    def setString(value: ToggleEdit): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: ToggleEdit): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
-    @scala.inline
-    def setTextarea(value: js.Any): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: js.Any): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
+    inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
     
-    @scala.inline
-    def setTheme(value: Base): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Base): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setUseNativeFullsreen(value: Boolean): Self = StObject.set(x, "useNativeFullsreen", value.asInstanceOf[js.Any])
+    inline def setUseNativeFullsreen(value: Boolean): Self = StObject.set(x, "useNativeFullsreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseNativeFullsreenUndefined: Self = StObject.set(x, "useNativeFullsreen", js.undefined)
+    inline def setUseNativeFullsreenUndefined: Self = StObject.set(x, "useNativeFullsreen", js.undefined)
   }
 }

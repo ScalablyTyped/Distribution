@@ -13,16 +13,13 @@ trait RequestTask extends StObject {
 }
 object RequestTask {
   
-  @scala.inline
-  def apply(abort: () => Unit): RequestTask = {
+  inline def apply(abort: () => Unit): RequestTask = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
     __obj.asInstanceOf[RequestTask]
   }
   
-  @scala.inline
-  implicit class RequestTaskMutableBuilder[Self <: RequestTask] (val x: Self) extends AnyVal {
+  extension [Self <: RequestTask](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }
 }

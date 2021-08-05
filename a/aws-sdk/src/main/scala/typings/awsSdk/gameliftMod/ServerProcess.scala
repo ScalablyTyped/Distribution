@@ -23,25 +23,19 @@ trait ServerProcess extends StObject {
 }
 object ServerProcess {
   
-  @scala.inline
-  def apply(ConcurrentExecutions: PositiveInteger, LaunchPath: NonZeroAndMaxString): ServerProcess = {
+  inline def apply(ConcurrentExecutions: PositiveInteger, LaunchPath: NonZeroAndMaxString): ServerProcess = {
     val __obj = js.Dynamic.literal(ConcurrentExecutions = ConcurrentExecutions.asInstanceOf[js.Any], LaunchPath = LaunchPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerProcess]
   }
   
-  @scala.inline
-  implicit class ServerProcessMutableBuilder[Self <: ServerProcess] (val x: Self) extends AnyVal {
+  extension [Self <: ServerProcess](x: Self) {
     
-    @scala.inline
-    def setConcurrentExecutions(value: PositiveInteger): Self = StObject.set(x, "ConcurrentExecutions", value.asInstanceOf[js.Any])
+    inline def setConcurrentExecutions(value: PositiveInteger): Self = StObject.set(x, "ConcurrentExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchPath(value: NonZeroAndMaxString): Self = StObject.set(x, "LaunchPath", value.asInstanceOf[js.Any])
+    inline def setLaunchPath(value: NonZeroAndMaxString): Self = StObject.set(x, "LaunchPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: NonZeroAndMaxString): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: NonZeroAndMaxString): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
   }
 }

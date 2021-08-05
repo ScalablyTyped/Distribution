@@ -11,13 +11,11 @@ object expressActuatorStrings {
   sealed trait full
     extends StObject
        with InfoGitMode
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait simple
     extends StObject
        with InfoGitMode
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
+  inline def simple: simple = "simple".asInstanceOf[simple]
 }

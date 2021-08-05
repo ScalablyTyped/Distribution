@@ -23,26 +23,20 @@ object sidebarSectionTitleMod {
   }
   object SidebarSectionTitleProps {
     
-    @scala.inline
-    def apply(): SidebarSectionTitleProps = {
+    inline def apply(): SidebarSectionTitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarSectionTitleProps]
     }
     
-    @scala.inline
-    implicit class SidebarSectionTitlePropsMutableBuilder[Self <: SidebarSectionTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarSectionTitleProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     }
   }
 }

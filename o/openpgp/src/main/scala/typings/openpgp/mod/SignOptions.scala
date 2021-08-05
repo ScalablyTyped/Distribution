@@ -50,55 +50,39 @@ trait SignOptions extends StObject {
 }
 object SignOptions {
   
-  @scala.inline
-  def apply(message: CleartextMessage | Message, privateKeys: Key | js.Array[js.Any]): SignOptions = {
+  inline def apply(message: CleartextMessage | Message, privateKeys: Key | js.Array[js.Any]): SignOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], privateKeys = privateKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]
   }
   
-  @scala.inline
-  implicit class SignOptionsMutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SignOptions](x: Self) {
     
-    @scala.inline
-    def setArmor(value: Boolean): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
+    inline def setArmor(value: Boolean): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArmorUndefined: Self = StObject.set(x, "armor", js.undefined)
+    inline def setArmorUndefined: Self = StObject.set(x, "armor", js.undefined)
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    @scala.inline
-    def setFromUserIds(value: js.Array[UserID]): Self = StObject.set(x, "fromUserIds", value.asInstanceOf[js.Any])
+    inline def setFromUserIds(value: js.Array[UserID]): Self = StObject.set(x, "fromUserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUserIdsUndefined: Self = StObject.set(x, "fromUserIds", js.undefined)
+    inline def setFromUserIdsUndefined: Self = StObject.set(x, "fromUserIds", js.undefined)
     
-    @scala.inline
-    def setFromUserIdsVarargs(value: UserID*): Self = StObject.set(x, "fromUserIds", js.Array(value :_*))
+    inline def setFromUserIdsVarargs(value: UserID*): Self = StObject.set(x, "fromUserIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: CleartextMessage | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: CleartextMessage | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeys(value: Key | js.Array[js.Any]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
+    inline def setPrivateKeys(value: Key | js.Array[js.Any]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeysVarargs(value: js.Any*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))
+    inline def setPrivateKeysVarargs(value: js.Any*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setStreaming(value: web | node | `false`): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
+    inline def setStreaming(value: web | node | `false`): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
+    inline def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
   }
 }

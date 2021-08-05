@@ -21,6 +21,5 @@ object MediaMarkerTypes {
   @JSGlobal("Windows.Media.MediaMarkerTypes.bookmark")
   @js.native
   def bookmark: String = js.native
-  @scala.inline
-  def bookmark_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bookmark")(x.asInstanceOf[js.Any])
+  inline def bookmark_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bookmark")(x.asInstanceOf[js.Any])
 }

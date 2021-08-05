@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def defaultOptions(): typings.cassandraDriver.mod.ClientOptions = typings.cassandraDriver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[typings.cassandraDriver.mod.ClientOptions]
+inline def defaultOptions(): typings.cassandraDriver.mod.ClientOptions = typings.cassandraDriver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[typings.cassandraDriver.mod.ClientOptions]
 
-@scala.inline
-def version: scala.Double = typings.cassandraDriver.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[scala.Double]
+inline def version: scala.Double = typings.cassandraDriver.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[scala.Double]
 
 type ArrayOrObject = js.Array[js.Any] | org.scalablytyped.runtime.StringDictionary[js.Any]
 

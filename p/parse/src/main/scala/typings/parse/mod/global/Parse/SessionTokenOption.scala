@@ -10,19 +10,15 @@ trait SessionTokenOption extends StObject {
 }
 object SessionTokenOption {
   
-  @scala.inline
-  def apply(): SessionTokenOption = {
+  inline def apply(): SessionTokenOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionTokenOption]
   }
   
-  @scala.inline
-  implicit class SessionTokenOptionMutableBuilder[Self <: SessionTokenOption] (val x: Self) extends AnyVal {
+  extension [Self <: SessionTokenOption](x: Self) {
     
-    @scala.inline
-    def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+    inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+    inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
   }
 }

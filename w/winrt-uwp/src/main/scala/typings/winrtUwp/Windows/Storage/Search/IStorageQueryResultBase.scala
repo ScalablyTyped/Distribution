@@ -39,8 +39,7 @@ trait IStorageQueryResultBase extends StObject {
 }
 object IStorageQueryResultBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyNewQueryOptions: QueryOptions => Unit,
     findStartIndexAsync: js.Any => IPromiseWithIAsyncOperation[Double],
     folder: StorageFolder,
@@ -51,22 +50,16 @@ object IStorageQueryResultBase {
     __obj.asInstanceOf[IStorageQueryResultBase]
   }
   
-  @scala.inline
-  implicit class IStorageQueryResultBaseMutableBuilder[Self <: IStorageQueryResultBase] (val x: Self) extends AnyVal {
+  extension [Self <: IStorageQueryResultBase](x: Self) {
     
-    @scala.inline
-    def setApplyNewQueryOptions(value: QueryOptions => Unit): Self = StObject.set(x, "applyNewQueryOptions", js.Any.fromFunction1(value))
+    inline def setApplyNewQueryOptions(value: QueryOptions => Unit): Self = StObject.set(x, "applyNewQueryOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindStartIndexAsync(value: js.Any => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "findStartIndexAsync", js.Any.fromFunction1(value))
+    inline def setFindStartIndexAsync(value: js.Any => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "findStartIndexAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentQueryOptions(value: () => QueryOptions): Self = StObject.set(x, "getCurrentQueryOptions", js.Any.fromFunction0(value))
+    inline def setGetCurrentQueryOptions(value: () => QueryOptions): Self = StObject.set(x, "getCurrentQueryOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemCountAsync(value: () => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "getItemCountAsync", js.Any.fromFunction0(value))
+    inline def setGetItemCountAsync(value: () => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "getItemCountAsync", js.Any.fromFunction0(value))
   }
 }

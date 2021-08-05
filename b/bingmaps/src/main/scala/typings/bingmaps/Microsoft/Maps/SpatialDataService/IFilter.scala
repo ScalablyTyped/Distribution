@@ -14,16 +14,13 @@ trait IFilter extends StObject {
 }
 object IFilter {
   
-  @scala.inline
-  def apply(execute: js.Any => Boolean): IFilter = {
+  inline def apply(execute: js.Any => Boolean): IFilter = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[IFilter]
   }
   
-  @scala.inline
-  implicit class IFilterMutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
+  extension [Self <: IFilter](x: Self) {
     
-    @scala.inline
-    def setExecute(value: js.Any => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: js.Any => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

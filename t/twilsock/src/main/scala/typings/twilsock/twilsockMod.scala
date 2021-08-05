@@ -23,25 +23,25 @@ object twilsockMod {
   class TwilsockChannel protected () extends EventEmitter {
     def this(websocket: WebSocketChannel, transport: PacketInterface, config: Configuration) = this()
     
-    var cancelDisconnectTimer: js.Any = js.native
+    /* private */ var cancelDisconnectTimer: js.Any = js.native
     
-    var cancelInit: js.Any = js.native
+    /* private */ var cancelInit: js.Any = js.native
     
-    var cancelUpdate: js.Any = js.native
+    /* private */ var cancelUpdate: js.Any = js.native
     
-    var changeState: js.Any = js.native
+    /* private */ var changeState: js.Any = js.native
     
     /**
       * Shutdown connection
       */
-    var closeSocket: js.Any = js.native
+    /* private */ var closeSocket: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
     /**
       * Should be called for each message to confirm it received
       */
-    var confirmReceiving: js.Any = js.native
+    /* private */ var confirmReceiving: js.Any = js.native
     
     /**
       * Initiate the twilsock connection
@@ -55,66 +55,66 @@ object twilsockMod {
       */
     def disconnect(): js.Promise[Unit] = js.native
     
-    var disconnectedPromiseResolve: js.Any = js.native
+    /* private */ var disconnectedPromiseResolve: js.Any = js.native
     
-    var disconnectingTimer: js.Any = js.native
+    /* private */ var disconnectingTimer: js.Any = js.native
     
-    var emitReplyConnectionError: js.Any = js.native
+    /* private */ var emitReplyConnectionError: js.Any = js.native
     
-    var finalizeSocket: js.Any = js.native
+    /* private */ var finalizeSocket: js.Any = js.native
     
-    val fsm: js.Any = js.native
+    /* private */ val fsm: js.Any = js.native
     
     def getTerminationReason: String = js.native
     
-    var initRetry: js.Any = js.native
+    /* private */ var initRetry: js.Any = js.native
     
     def isConnected: Boolean = js.native
     
     def isTerminalState: Boolean = js.native
     
-    var lastEmittedState: js.Any = js.native
+    /* private */ var lastEmittedState: js.Any = js.native
     
-    var modifyBackoff: js.Any = js.native
+    /* private */ var modifyBackoff: js.Any = js.native
     
-    var onCloseReceived: js.Any = js.native
+    /* private */ var onCloseReceived: js.Any = js.native
     
-    var onConnected: js.Any = js.native
+    /* private */ var onConnected: js.Any = js.native
     
-    var onIncomingMessage: js.Any = js.native
+    /* private */ var onIncomingMessage: js.Any = js.native
     
-    var resetBackoff: js.Any = js.native
+    /* private */ var resetBackoff: js.Any = js.native
     
-    var retrier: js.Any = js.native
+    /* private */ var retrier: js.Any = js.native
     
-    var retry: js.Any = js.native
+    /* private */ var retry: js.Any = js.native
     
-    var sendInit: js.Any = js.native
+    /* private */ var sendInit: js.Any = js.native
     
-    var sendUpdate: js.Any = js.native
+    /* private */ var sendUpdate: js.Any = js.native
     
-    var setupSocket: js.Any = js.native
+    /* private */ var setupSocket: js.Any = js.native
     
-    var startDisconnectTimer: js.Any = js.native
+    /* private */ var startDisconnectTimer: js.Any = js.native
     
     def state: State = js.native
     
-    val terminalStates: js.Any = js.native
+    /* private */ val terminalStates: js.Any = js.native
     
-    var terminationReason: js.Any = js.native
+    /* private */ var terminationReason: js.Any = js.native
     
-    val tokenExpiredSasCode: js.Any = js.native
+    /* private */ val tokenExpiredSasCode: js.Any = js.native
     
-    var transport: js.Any = js.native
+    /* private */ var transport: js.Any = js.native
     
-    var transportReady: js.Any = js.native
+    /* private */ var transportReady: js.Any = js.native
     
     /**
       * Update fpa token for twilsock connection
       */
     def updateToken(token: String): js.Promise[Unit] = js.native
     
-    var websocket: js.Any = js.native
+    /* private */ var websocket: js.Any = js.native
   }
   /**
     * Enum for connection state values.
@@ -135,26 +135,19 @@ object twilsockMod {
     trait State extends StObject
     object State {
       
-      @scala.inline
-      def connected: typings.twilsock.twilsockStrings.connected = "connected".asInstanceOf[typings.twilsock.twilsockStrings.connected]
+      inline def connected: typings.twilsock.twilsockStrings.connected = "connected".asInstanceOf[typings.twilsock.twilsockStrings.connected]
       
-      @scala.inline
-      def connecting: typings.twilsock.twilsockStrings.connecting = "connecting".asInstanceOf[typings.twilsock.twilsockStrings.connecting]
+      inline def connecting: typings.twilsock.twilsockStrings.connecting = "connecting".asInstanceOf[typings.twilsock.twilsockStrings.connecting]
       
-      @scala.inline
-      def disconnected: typings.twilsock.twilsockStrings.disconnected = "disconnected".asInstanceOf[typings.twilsock.twilsockStrings.disconnected]
+      inline def disconnected: typings.twilsock.twilsockStrings.disconnected = "disconnected".asInstanceOf[typings.twilsock.twilsockStrings.disconnected]
       
-      @scala.inline
-      def disconnecting: typings.twilsock.twilsockStrings.disconnecting = "disconnecting".asInstanceOf[typings.twilsock.twilsockStrings.disconnecting]
+      inline def disconnecting: typings.twilsock.twilsockStrings.disconnecting = "disconnecting".asInstanceOf[typings.twilsock.twilsockStrings.disconnecting]
       
-      @scala.inline
-      def error: typings.twilsock.twilsockStrings.error = "error".asInstanceOf[typings.twilsock.twilsockStrings.error]
+      inline def error: typings.twilsock.twilsockStrings.error = "error".asInstanceOf[typings.twilsock.twilsockStrings.error]
       
-      @scala.inline
-      def rejected: typings.twilsock.twilsockStrings.rejected = "rejected".asInstanceOf[typings.twilsock.twilsockStrings.rejected]
+      inline def rejected: typings.twilsock.twilsockStrings.rejected = "rejected".asInstanceOf[typings.twilsock.twilsockStrings.rejected]
       
-      @scala.inline
-      def unknown: typings.twilsock.twilsockStrings.unknown = "unknown".asInstanceOf[typings.twilsock.twilsockStrings.unknown]
+      inline def unknown: typings.twilsock.twilsockStrings.unknown = "unknown".asInstanceOf[typings.twilsock.twilsockStrings.unknown]
     }
   }
   

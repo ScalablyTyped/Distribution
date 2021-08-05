@@ -23,34 +23,25 @@ trait RuntimeConfiguration extends StObject {
 }
 object RuntimeConfiguration {
   
-  @scala.inline
-  def apply(): RuntimeConfiguration = {
+  inline def apply(): RuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuntimeConfiguration]
   }
   
-  @scala.inline
-  implicit class RuntimeConfigurationMutableBuilder[Self <: RuntimeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeConfiguration](x: Self) {
     
-    @scala.inline
-    def setGameSessionActivationTimeoutSeconds(value: GameSessionActivationTimeoutSeconds): Self = StObject.set(x, "GameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setGameSessionActivationTimeoutSeconds(value: GameSessionActivationTimeoutSeconds): Self = StObject.set(x, "GameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionActivationTimeoutSecondsUndefined: Self = StObject.set(x, "GameSessionActivationTimeoutSeconds", js.undefined)
+    inline def setGameSessionActivationTimeoutSecondsUndefined: Self = StObject.set(x, "GameSessionActivationTimeoutSeconds", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentGameSessionActivations(value: MaxConcurrentGameSessionActivations): Self = StObject.set(x, "MaxConcurrentGameSessionActivations", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentGameSessionActivations(value: MaxConcurrentGameSessionActivations): Self = StObject.set(x, "MaxConcurrentGameSessionActivations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentGameSessionActivationsUndefined: Self = StObject.set(x, "MaxConcurrentGameSessionActivations", js.undefined)
+    inline def setMaxConcurrentGameSessionActivationsUndefined: Self = StObject.set(x, "MaxConcurrentGameSessionActivations", js.undefined)
     
-    @scala.inline
-    def setServerProcesses(value: ServerProcessList): Self = StObject.set(x, "ServerProcesses", value.asInstanceOf[js.Any])
+    inline def setServerProcesses(value: ServerProcessList): Self = StObject.set(x, "ServerProcesses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerProcessesUndefined: Self = StObject.set(x, "ServerProcesses", js.undefined)
+    inline def setServerProcessesUndefined: Self = StObject.set(x, "ServerProcesses", js.undefined)
     
-    @scala.inline
-    def setServerProcessesVarargs(value: ServerProcess*): Self = StObject.set(x, "ServerProcesses", js.Array(value :_*))
+    inline def setServerProcessesVarargs(value: ServerProcess*): Self = StObject.set(x, "ServerProcesses", js.Array(value :_*))
   }
 }

@@ -19,43 +19,31 @@ trait InflateOptions extends StObject {
 }
 object InflateOptions {
   
-  @scala.inline
-  def apply(): InflateOptions = {
+  inline def apply(): InflateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InflateOptions]
   }
   
-  @scala.inline
-  implicit class InflateOptionsMutableBuilder[Self <: InflateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InflateOptions](x: Self) {
     
-    @scala.inline
-    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    @scala.inline
-    def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+    inline def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
+    inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setTo(value: string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
+    inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
+    inline def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
   }
 }

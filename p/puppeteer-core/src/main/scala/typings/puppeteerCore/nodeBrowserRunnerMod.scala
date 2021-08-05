@@ -15,17 +15,17 @@ object nodeBrowserRunnerMod {
     def this(executablePath: String, processArguments: js.Array[String]) = this()
     def this(executablePath: String, processArguments: js.Array[String], tempDirectory: String) = this()
     
-    var _closed: js.Any = js.native
+    /* private */ var _closed: js.Any = js.native
     
-    var _executablePath: js.Any = js.native
+    /* private */ var _executablePath: js.Any = js.native
     
-    var _listeners: js.Any = js.native
+    /* private */ var _listeners: js.Any = js.native
     
-    var _processArguments: js.Any = js.native
+    /* private */ var _processArguments: js.Any = js.native
     
-    var _processClosing: js.Any = js.native
+    /* private */ var _processClosing: js.Any = js.native
     
-    var _tempDirectory: js.Any = js.native
+    /* private */ var _tempDirectory: js.Any = js.native
     
     def close(): js.Promise[Unit] = js.native
     

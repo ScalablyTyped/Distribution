@@ -15,22 +15,17 @@ trait Camera extends StObject {
 }
 object Camera {
   
-  @scala.inline
-  def apply(center: PartialPoint, eye: PartialPoint, up: PartialPoint): Camera = {
+  inline def apply(center: PartialPoint, eye: PartialPoint, up: PartialPoint): Camera = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
     __obj.asInstanceOf[Camera]
   }
   
-  @scala.inline
-  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
+  extension [Self <: Camera](x: Self) {
     
-    @scala.inline
-    def setCenter(value: PartialPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: PartialPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEye(value: PartialPoint): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
+    inline def setEye(value: PartialPoint): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUp(value: PartialPoint): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: PartialPoint): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
   }
 }

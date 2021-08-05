@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PickerProperty")
 @js.native
-class PickerProperty protected ()
+/* private */ class PickerProperty ()
   extends StObject
      with typings.activexOffice.Office.PickerProperty {
   
@@ -20,7 +20,7 @@ class PickerProperty protected ()
   /* CompleteClass */
   override val Id: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.PickerProperty_typekey")
   var OfficeDotPickerProperty_typekey: typings.activexOffice.Office.PickerProperty = js.native
   

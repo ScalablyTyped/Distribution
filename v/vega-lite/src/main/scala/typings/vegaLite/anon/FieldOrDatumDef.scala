@@ -24,8 +24,7 @@ trait FieldOrDatumDef extends StObject {
 }
 object FieldOrDatumDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
     scaleType: typings.vegaLite.scaleMod.ScaleType
   ): FieldOrDatumDef = {
@@ -33,30 +32,22 @@ object FieldOrDatumDef {
     __obj.asInstanceOf[FieldOrDatumDef]
   }
   
-  @scala.inline
-  implicit class FieldOrDatumDefMutableBuilder[Self <: FieldOrDatumDef] (val x: Self) extends AnyVal {
+  extension [Self <: FieldOrDatumDef](x: Self) {
     
-    @scala.inline
-    def setFieldOrDatumDef(
+    inline def setFieldOrDatumDef(
       value: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setValues(value: (js.Array[Boolean | DateTime | Double | String]) | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: (js.Array[Boolean | DateTime | Double | String]) | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

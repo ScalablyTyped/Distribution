@@ -17,25 +17,19 @@ trait GridRowGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
 }
 object GridRowGapProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): GridRowGapProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): GridRowGapProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridRowGapProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class GridRowGapPropsMutableBuilder[Self <: GridRowGapProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridRowGapProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: GridRowGapProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (GridRowGapProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setGridRowGap(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
+    inline def setGridRowGap(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRowGapNull: Self = StObject.set(x, "gridRowGap", null)
+    inline def setGridRowGapNull: Self = StObject.set(x, "gridRowGap", null)
     
-    @scala.inline
-    def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
+    inline def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
     
-    @scala.inline
-    def setGridRowGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
+    inline def setGridRowGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
   }
 }

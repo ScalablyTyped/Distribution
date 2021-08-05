@@ -24,6 +24,5 @@ class Float32Array ()
 }
 object Float32Array {
   
-  @scala.inline
-  def apply: Float32ArrayConstructor = js.Dynamic.global.selectDynamic("Float32Array").asInstanceOf[Float32ArrayConstructor]
+  inline def apply: Float32ArrayConstructor = js.Dynamic.global.selectDynamic("Float32Array").asInstanceOf[Float32ArrayConstructor]
 }

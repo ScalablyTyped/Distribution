@@ -108,139 +108,95 @@ trait Nodegroup extends StObject {
 }
 object Nodegroup {
   
-  @scala.inline
-  def apply(): Nodegroup = {
+  inline def apply(): Nodegroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Nodegroup]
   }
   
-  @scala.inline
-  implicit class NodegroupMutableBuilder[Self <: Nodegroup] (val x: Self) extends AnyVal {
+  extension [Self <: Nodegroup](x: Self) {
     
-    @scala.inline
-    def setAmiType(value: AMITypes): Self = StObject.set(x, "amiType", value.asInstanceOf[js.Any])
+    inline def setAmiType(value: AMITypes): Self = StObject.set(x, "amiType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
+    inline def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setDiskSize(value: BoxedInteger): Self = StObject.set(x, "diskSize", value.asInstanceOf[js.Any])
+    inline def setDiskSize(value: BoxedInteger): Self = StObject.set(x, "diskSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeUndefined: Self = StObject.set(x, "diskSize", js.undefined)
+    inline def setDiskSizeUndefined: Self = StObject.set(x, "diskSize", js.undefined)
     
-    @scala.inline
-    def setHealth(value: NodegroupHealth): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+    inline def setHealth(value: NodegroupHealth): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
+    inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
-    @scala.inline
-    def setInstanceTypes(value: StringList): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
+    inline def setInstanceTypes(value: StringList): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
+    inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
     
-    @scala.inline
-    def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: labelsMap): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: labelsMap): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
     
-    @scala.inline
-    def setModifiedAt(value: Timestamp): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
+    inline def setModifiedAt(value: Timestamp): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedAtUndefined: Self = StObject.set(x, "modifiedAt", js.undefined)
+    inline def setModifiedAtUndefined: Self = StObject.set(x, "modifiedAt", js.undefined)
     
-    @scala.inline
-    def setNodeRole(value: String): Self = StObject.set(x, "nodeRole", value.asInstanceOf[js.Any])
+    inline def setNodeRole(value: String): Self = StObject.set(x, "nodeRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRoleUndefined: Self = StObject.set(x, "nodeRole", js.undefined)
+    inline def setNodeRoleUndefined: Self = StObject.set(x, "nodeRole", js.undefined)
     
-    @scala.inline
-    def setNodegroupArn(value: String): Self = StObject.set(x, "nodegroupArn", value.asInstanceOf[js.Any])
+    inline def setNodegroupArn(value: String): Self = StObject.set(x, "nodegroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupArnUndefined: Self = StObject.set(x, "nodegroupArn", js.undefined)
+    inline def setNodegroupArnUndefined: Self = StObject.set(x, "nodegroupArn", js.undefined)
     
-    @scala.inline
-    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
+    inline def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupNameUndefined: Self = StObject.set(x, "nodegroupName", js.undefined)
+    inline def setNodegroupNameUndefined: Self = StObject.set(x, "nodegroupName", js.undefined)
     
-    @scala.inline
-    def setReleaseVersion(value: String): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
+    inline def setReleaseVersion(value: String): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
+    inline def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
     
-    @scala.inline
-    def setRemoteAccess(value: RemoteAccessConfig): Self = StObject.set(x, "remoteAccess", value.asInstanceOf[js.Any])
+    inline def setRemoteAccess(value: RemoteAccessConfig): Self = StObject.set(x, "remoteAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAccessUndefined: Self = StObject.set(x, "remoteAccess", js.undefined)
+    inline def setRemoteAccessUndefined: Self = StObject.set(x, "remoteAccess", js.undefined)
     
-    @scala.inline
-    def setResources(value: NodegroupResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: NodegroupResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setScalingConfig(value: NodegroupScalingConfig): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
+    inline def setScalingConfig(value: NodegroupScalingConfig): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingConfigUndefined: Self = StObject.set(x, "scalingConfig", js.undefined)
+    inline def setScalingConfigUndefined: Self = StObject.set(x, "scalingConfig", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NodegroupStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NodegroupStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSubnets(value: StringList): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: StringList): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -89,8 +89,7 @@ trait EditorLayoutInfo extends StObject {
 }
 object EditorLayoutInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentLeft: Double,
     contentWidth: Double,
     decorationsLeft: Double,
@@ -114,61 +113,42 @@ object EditorLayoutInfo {
     __obj.asInstanceOf[EditorLayoutInfo]
   }
   
-  @scala.inline
-  implicit class EditorLayoutInfoMutableBuilder[Self <: EditorLayoutInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EditorLayoutInfo](x: Self) {
     
-    @scala.inline
-    def setContentLeft(value: Double): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
+    inline def setContentLeft(value: Double): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+    inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecorationsLeft(value: Double): Self = StObject.set(x, "decorationsLeft", value.asInstanceOf[js.Any])
+    inline def setDecorationsLeft(value: Double): Self = StObject.set(x, "decorationsLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecorationsWidth(value: Double): Self = StObject.set(x, "decorationsWidth", value.asInstanceOf[js.Any])
+    inline def setDecorationsWidth(value: Double): Self = StObject.set(x, "decorationsWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphMarginLeft(value: Double): Self = StObject.set(x, "glyphMarginLeft", value.asInstanceOf[js.Any])
+    inline def setGlyphMarginLeft(value: Double): Self = StObject.set(x, "glyphMarginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphMarginWidth(value: Double): Self = StObject.set(x, "glyphMarginWidth", value.asInstanceOf[js.Any])
+    inline def setGlyphMarginWidth(value: Double): Self = StObject.set(x, "glyphMarginWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalScrollbarHeight(value: Double): Self = StObject.set(x, "horizontalScrollbarHeight", value.asInstanceOf[js.Any])
+    inline def setHorizontalScrollbarHeight(value: Double): Self = StObject.set(x, "horizontalScrollbarHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsViewportWrapping(value: Boolean): Self = StObject.set(x, "isViewportWrapping", value.asInstanceOf[js.Any])
+    inline def setIsViewportWrapping(value: Boolean): Self = StObject.set(x, "isViewportWrapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWordWrapMinified(value: Boolean): Self = StObject.set(x, "isWordWrapMinified", value.asInstanceOf[js.Any])
+    inline def setIsWordWrapMinified(value: Boolean): Self = StObject.set(x, "isWordWrapMinified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumbersLeft(value: Double): Self = StObject.set(x, "lineNumbersLeft", value.asInstanceOf[js.Any])
+    inline def setLineNumbersLeft(value: Double): Self = StObject.set(x, "lineNumbersLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumbersWidth(value: Double): Self = StObject.set(x, "lineNumbersWidth", value.asInstanceOf[js.Any])
+    inline def setLineNumbersWidth(value: Double): Self = StObject.set(x, "lineNumbersWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimap(value: EditorMinimapLayoutInfo): Self = StObject.set(x, "minimap", value.asInstanceOf[js.Any])
+    inline def setMinimap(value: EditorMinimapLayoutInfo): Self = StObject.set(x, "minimap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewRuler(value: OverviewRulerPosition): Self = StObject.set(x, "overviewRuler", value.asInstanceOf[js.Any])
+    inline def setOverviewRuler(value: OverviewRulerPosition): Self = StObject.set(x, "overviewRuler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalScrollbarWidth(value: Double): Self = StObject.set(x, "verticalScrollbarWidth", value.asInstanceOf[js.Any])
+    inline def setVerticalScrollbarWidth(value: Double): Self = StObject.set(x, "verticalScrollbarWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportColumn(value: Double): Self = StObject.set(x, "viewportColumn", value.asInstanceOf[js.Any])
+    inline def setViewportColumn(value: Double): Self = StObject.set(x, "viewportColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrappingColumn(value: Double): Self = StObject.set(x, "wrappingColumn", value.asInstanceOf[js.Any])
+    inline def setWrappingColumn(value: Double): Self = StObject.set(x, "wrappingColumn", value.asInstanceOf[js.Any])
   }
 }

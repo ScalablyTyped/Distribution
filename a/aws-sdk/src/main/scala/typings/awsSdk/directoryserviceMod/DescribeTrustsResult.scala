@@ -18,28 +18,21 @@ trait DescribeTrustsResult extends StObject {
 }
 object DescribeTrustsResult {
   
-  @scala.inline
-  def apply(): DescribeTrustsResult = {
+  inline def apply(): DescribeTrustsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTrustsResult]
   }
   
-  @scala.inline
-  implicit class DescribeTrustsResultMutableBuilder[Self <: DescribeTrustsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrustsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTrusts(value: Trusts): Self = StObject.set(x, "Trusts", value.asInstanceOf[js.Any])
+    inline def setTrusts(value: Trusts): Self = StObject.set(x, "Trusts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustsUndefined: Self = StObject.set(x, "Trusts", js.undefined)
+    inline def setTrustsUndefined: Self = StObject.set(x, "Trusts", js.undefined)
     
-    @scala.inline
-    def setTrustsVarargs(value: Trust*): Self = StObject.set(x, "Trusts", js.Array(value :_*))
+    inline def setTrustsVarargs(value: Trust*): Self = StObject.set(x, "Trusts", js.Array(value :_*))
   }
 }

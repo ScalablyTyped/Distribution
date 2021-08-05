@@ -21,23 +21,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object FootnoteGenericToken {
   
-  @scala.inline
-  def apply(id: Double, level: Double, `type`: String): FootnoteGenericToken = {
+  inline def apply(id: Double, level: Double, `type`: String): FootnoteGenericToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FootnoteGenericToken]
   }
   
-  @scala.inline
-  implicit class FootnoteGenericTokenMutableBuilder[Self <: FootnoteGenericToken] (val x: Self) extends AnyVal {
+  extension [Self <: FootnoteGenericToken](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubId(value: Double): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
+    inline def setSubId(value: Double): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubIdUndefined: Self = StObject.set(x, "subId", js.undefined)
+    inline def setSubIdUndefined: Self = StObject.set(x, "subId", js.undefined)
   }
 }

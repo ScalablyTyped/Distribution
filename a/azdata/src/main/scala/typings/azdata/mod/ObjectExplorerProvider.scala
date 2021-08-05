@@ -21,8 +21,7 @@ trait ObjectExplorerProvider
 }
 object ObjectExplorerProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeSession: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse],
     createNewSession: ConnectionInfo => Thenable[ObjectExplorerSessionResponse],
     expandNode: ExpandNodeInfo => Thenable[Boolean],
@@ -36,22 +35,16 @@ object ObjectExplorerProvider {
     __obj.asInstanceOf[ObjectExplorerProvider]
   }
   
-  @scala.inline
-  implicit class ObjectExplorerProviderMutableBuilder[Self <: ObjectExplorerProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExplorerProvider](x: Self) {
     
-    @scala.inline
-    def setCloseSession(value: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse]): Self = StObject.set(x, "closeSession", js.Any.fromFunction1(value))
+    inline def setCloseSession(value: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse]): Self = StObject.set(x, "closeSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNewSession(value: ConnectionInfo => Thenable[ObjectExplorerSessionResponse]): Self = StObject.set(x, "createNewSession", js.Any.fromFunction1(value))
+    inline def setCreateNewSession(value: ConnectionInfo => Thenable[ObjectExplorerSessionResponse]): Self = StObject.set(x, "createNewSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnSessionCreated(value: js.Function1[/* response */ ObjectExplorerSession, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionCreated", js.Any.fromFunction1(value))
+    inline def setRegisterOnSessionCreated(value: js.Function1[/* response */ ObjectExplorerSession, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionCreated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnSessionDisconnected(value: /* handler */ js.Function1[/* response */ ObjectExplorerSession, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionDisconnected", js.Any.fromFunction1(value))
+    inline def setRegisterOnSessionDisconnected(value: /* handler */ js.Function1[/* response */ ObjectExplorerSession, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionDisconnected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnSessionDisconnectedUndefined: Self = StObject.set(x, "registerOnSessionDisconnected", js.undefined)
+    inline def setRegisterOnSessionDisconnectedUndefined: Self = StObject.set(x, "registerOnSessionDisconnected", js.undefined)
   }
 }

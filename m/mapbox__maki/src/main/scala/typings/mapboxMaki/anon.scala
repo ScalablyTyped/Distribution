@@ -13,20 +13,16 @@ object anon {
   }
   object All {
     
-    @scala.inline
-    def apply(all: js.Array[IconName]): All = {
+    inline def apply(all: js.Array[IconName]): All = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
       __obj.asInstanceOf[All]
     }
     
-    @scala.inline
-    implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+    extension [Self <: All](x: Self) {
       
-      @scala.inline
-      def setAll(value: js.Array[IconName]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: js.Array[IconName]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllVarargs(value: IconName*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: IconName*): Self = StObject.set(x, "all", js.Array(value :_*))
     }
   }
 }

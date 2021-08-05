@@ -36,31 +36,23 @@ trait KeyboardNavigationSeriesNavigationOptionsObject extends StObject {
 }
 object KeyboardNavigationSeriesNavigationOptionsObject {
   
-  @scala.inline
-  def apply(): KeyboardNavigationSeriesNavigationOptionsObject = {
+  inline def apply(): KeyboardNavigationSeriesNavigationOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardNavigationSeriesNavigationOptionsObject]
   }
   
-  @scala.inline
-  implicit class KeyboardNavigationSeriesNavigationOptionsObjectMutableBuilder[Self <: KeyboardNavigationSeriesNavigationOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardNavigationSeriesNavigationOptionsObject](x: Self) {
     
-    @scala.inline
-    def setMode(value: OptionsModeValue): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: OptionsModeValue): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setPointNavigationEnabledThreshold(value: Boolean | Double): Self = StObject.set(x, "pointNavigationEnabledThreshold", value.asInstanceOf[js.Any])
+    inline def setPointNavigationEnabledThreshold(value: Boolean | Double): Self = StObject.set(x, "pointNavigationEnabledThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointNavigationEnabledThresholdUndefined: Self = StObject.set(x, "pointNavigationEnabledThreshold", js.undefined)
+    inline def setPointNavigationEnabledThresholdUndefined: Self = StObject.set(x, "pointNavigationEnabledThreshold", js.undefined)
     
-    @scala.inline
-    def setSkipNullPoints(value: Boolean): Self = StObject.set(x, "skipNullPoints", value.asInstanceOf[js.Any])
+    inline def setSkipNullPoints(value: Boolean): Self = StObject.set(x, "skipNullPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipNullPointsUndefined: Self = StObject.set(x, "skipNullPoints", js.undefined)
+    inline def setSkipNullPointsUndefined: Self = StObject.set(x, "skipNullPoints", js.undefined)
   }
 }

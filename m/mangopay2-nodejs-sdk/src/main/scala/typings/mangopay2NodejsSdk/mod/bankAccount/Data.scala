@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Data extends StObject
 object Data {
   
-  @scala.inline
-  def CAData(
+  inline def CAData(
     AccountNumber: String,
     Active: Boolean,
     BankName: String,
@@ -34,8 +33,7 @@ object Data {
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.CAData]
   }
   
-  @scala.inline
-  def GBData(
+  inline def GBData(
     AccountNumber: String,
     Active: Boolean,
     CreationDate: Double,
@@ -51,8 +49,7 @@ object Data {
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.GBData]
   }
   
-  @scala.inline
-  def IBANData(
+  inline def IBANData(
     Active: Boolean,
     CreationDate: Double,
     IBAN: String,
@@ -67,8 +64,7 @@ object Data {
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.IBANData]
   }
   
-  @scala.inline
-  def OtherData(
+  inline def OtherData(
     AccountNumber: String,
     Active: Boolean,
     BIC: String,
@@ -85,8 +81,7 @@ object Data {
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.OtherData]
   }
   
-  @scala.inline
-  def USData(
+  inline def USData(
     ABA: String,
     AccountNumber: String,
     Active: Boolean,

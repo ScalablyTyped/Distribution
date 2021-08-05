@@ -8,21 +8,17 @@ object maximMazurokGapiClientCustomsearchStrings {
   
   @js.native
   sealed trait Result extends StObject
-  @scala.inline
-  def Result: Result = "Result".asInstanceOf[Result]
+  inline def Result: Result = "Result".asInstanceOf[Result]
   
   @js.native
   sealed trait Search extends StObject
-  @scala.inline
-  def Search: Search = "Search".asInstanceOf[Search]
+  inline def Search: Search = "Search".asInstanceOf[Search]
   
   @js.native
   sealed trait customsearch extends StObject
-  @scala.inline
-  def customsearch: customsearch = "customsearch".asInstanceOf[customsearch]
+  inline def customsearch: customsearch = "customsearch".asInstanceOf[customsearch]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

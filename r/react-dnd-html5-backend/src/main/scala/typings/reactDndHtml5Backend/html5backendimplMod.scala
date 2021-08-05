@@ -23,17 +23,17 @@ object html5backendimplMod {
     def this(manager: DragDropManager) = this()
     def this(manager: DragDropManager, globalContext: HTML5BackendContext) = this()
     
-    var actions: js.Any = js.native
+    /* private */ var actions: js.Any = js.native
     
-    var addEventListeners: js.Any = js.native
+    /* private */ var addEventListeners: js.Any = js.native
     
-    var altKeyPressed: js.Any = js.native
+    /* private */ var altKeyPressed: js.Any = js.native
     
-    var asyncEndDragFrameId: js.Any = js.native
+    /* private */ var asyncEndDragFrameId: js.Any = js.native
     
-    var beginDragNativeItem: js.Any = js.native
+    /* private */ var beginDragNativeItem: js.Any = js.native
     
-    var clearCurrentDragSourceNode: js.Any = js.native
+    /* private */ var clearCurrentDragSourceNode: js.Any = js.native
     
     def connectDragPreview(sourceId: String, node: Element, options: js.Any): Unsubscribe = js.native
     
@@ -41,35 +41,35 @@ object html5backendimplMod {
     
     def connectDropTarget(targetId: String, node: HTMLElement): Unsubscribe = js.native
     
-    var currentDragSourceNode: js.Any = js.native
+    /* private */ var currentDragSourceNode: js.Any = js.native
     
-    var currentNativeHandle: js.Any = js.native
+    /* private */ var currentNativeHandle: js.Any = js.native
     
-    var currentNativeSource: js.Any = js.native
+    /* private */ var currentNativeSource: js.Any = js.native
     
     def document: js.UndefOr[Document] = js.native
     
-    var dragEnterTargetIds: js.Any = js.native
+    /* private */ var dragEnterTargetIds: js.Any = js.native
     
-    var dragOverTargetIds: js.Any = js.native
+    /* private */ var dragOverTargetIds: js.Any = js.native
     
-    var dragStartSourceIds: js.Any = js.native
+    /* private */ var dragStartSourceIds: js.Any = js.native
     
-    var dropTargetIds: js.Any = js.native
+    /* private */ var dropTargetIds: js.Any = js.native
     
-    var endDragIfSourceWasRemovedFromDOM: js.Any = js.native
+    /* private */ var endDragIfSourceWasRemovedFromDOM: js.Any = js.native
     
-    var endDragNativeItem: js.Any = js.native
+    /* private */ var endDragNativeItem: js.Any = js.native
     
-    var enterLeaveCounter: js.Any = js.native
+    /* private */ var enterLeaveCounter: js.Any = js.native
     
-    var getCurrentDropEffect: js.Any = js.native
+    /* private */ var getCurrentDropEffect: js.Any = js.native
     
-    var getCurrentSourceNodeOptions: js.Any = js.native
+    /* private */ var getCurrentSourceNodeOptions: js.Any = js.native
     
-    var getCurrentSourcePreviewNodeOptions: js.Any = js.native
+    /* private */ var getCurrentSourcePreviewNodeOptions: js.Any = js.native
     
-    var getSourceClientOffset: js.Any = js.native
+    /* private */ var getSourceClientOffset: js.Any = js.native
     
     def handleDragEnter(e: DragEvent, targetId: String): Unit = js.native
     
@@ -101,29 +101,29 @@ object html5backendimplMod {
     
     def handleTopDropCapture(e: DragEvent): Unit = js.native
     
-    var isDraggingNativeItem: js.Any = js.native
+    /* private */ var isDraggingNativeItem: js.Any = js.native
     
-    var isNodeInDocument: js.Any = js.native
+    /* private */ var isNodeInDocument: js.Any = js.native
     
-    var monitor: js.Any = js.native
+    /* private */ var monitor: js.Any = js.native
     
-    var mouseMoveTimeoutTimer: js.Any = js.native
+    /* private */ var mouseMoveTimeoutTimer: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var registry: js.Any = js.native
+    /* private */ var registry: js.Any = js.native
     
-    var removeEventListeners: js.Any = js.native
+    /* private */ var removeEventListeners: js.Any = js.native
     
-    var setCurrentDragSourceNode: js.Any = js.native
+    /* private */ var setCurrentDragSourceNode: js.Any = js.native
     
-    var sourceNodeOptions: js.Any = js.native
+    /* private */ var sourceNodeOptions: js.Any = js.native
     
-    var sourceNodes: js.Any = js.native
+    /* private */ var sourceNodes: js.Any = js.native
     
-    var sourcePreviewNodeOptions: js.Any = js.native
+    /* private */ var sourcePreviewNodeOptions: js.Any = js.native
     
-    var sourcePreviewNodes: js.Any = js.native
+    /* private */ var sourcePreviewNodes: js.Any = js.native
     
     def window: js.UndefOr[Window] = js.native
   }
@@ -136,20 +136,16 @@ object html5backendimplMod {
     }
     object Window {
       
-      @scala.inline
-      def apply(): Window = {
+      inline def apply(): Window = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def set__isReactDndBackendSetUp(value: Boolean): Self = StObject.set(x, "__isReactDndBackendSetUp", value.asInstanceOf[js.Any])
+        inline def set__isReactDndBackendSetUp(value: Boolean): Self = StObject.set(x, "__isReactDndBackendSetUp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set__isReactDndBackendSetUpUndefined: Self = StObject.set(x, "__isReactDndBackendSetUp", js.undefined)
+        inline def set__isReactDndBackendSetUpUndefined: Self = StObject.set(x, "__isReactDndBackendSetUp", js.undefined)
       }
     }
   }

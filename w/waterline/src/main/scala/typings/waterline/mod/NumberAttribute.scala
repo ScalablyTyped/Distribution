@@ -17,23 +17,18 @@ trait NumberAttribute
 }
 object NumberAttribute {
   
-  @scala.inline
-  def apply(): NumberAttribute = {
+  inline def apply(): NumberAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[NumberAttribute]
   }
   
-  @scala.inline
-  implicit class NumberAttributeMutableBuilder[Self <: NumberAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: NumberAttribute](x: Self) {
     
-    @scala.inline
-    def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
+    inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
+    inline def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
     
-    @scala.inline
-    def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

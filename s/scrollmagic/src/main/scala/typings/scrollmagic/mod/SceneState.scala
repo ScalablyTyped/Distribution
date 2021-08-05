@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneState extends StObject
 object SceneState {
   
-  @scala.inline
-  def AFTER: typings.scrollmagic.scrollmagicStrings.AFTER = "AFTER".asInstanceOf[typings.scrollmagic.scrollmagicStrings.AFTER]
+  inline def AFTER: typings.scrollmagic.scrollmagicStrings.AFTER = "AFTER".asInstanceOf[typings.scrollmagic.scrollmagicStrings.AFTER]
   
-  @scala.inline
-  def BEFORE: typings.scrollmagic.scrollmagicStrings.BEFORE = "BEFORE".asInstanceOf[typings.scrollmagic.scrollmagicStrings.BEFORE]
+  inline def BEFORE: typings.scrollmagic.scrollmagicStrings.BEFORE = "BEFORE".asInstanceOf[typings.scrollmagic.scrollmagicStrings.BEFORE]
   
-  @scala.inline
-  def DURING: typings.scrollmagic.scrollmagicStrings.DURING = "DURING".asInstanceOf[typings.scrollmagic.scrollmagicStrings.DURING]
+  inline def DURING: typings.scrollmagic.scrollmagicStrings.DURING = "DURING".asInstanceOf[typings.scrollmagic.scrollmagicStrings.DURING]
 }

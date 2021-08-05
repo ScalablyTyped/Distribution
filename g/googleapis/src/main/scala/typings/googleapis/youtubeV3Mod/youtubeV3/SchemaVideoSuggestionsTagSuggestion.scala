@@ -25,28 +25,21 @@ trait SchemaVideoSuggestionsTagSuggestion extends StObject {
 }
 object SchemaVideoSuggestionsTagSuggestion {
   
-  @scala.inline
-  def apply(): SchemaVideoSuggestionsTagSuggestion = {
+  inline def apply(): SchemaVideoSuggestionsTagSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoSuggestionsTagSuggestion]
   }
   
-  @scala.inline
-  implicit class SchemaVideoSuggestionsTagSuggestionMutableBuilder[Self <: SchemaVideoSuggestionsTagSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoSuggestionsTagSuggestion](x: Self) {
     
-    @scala.inline
-    def setCategoryRestricts(value: js.Array[String]): Self = StObject.set(x, "categoryRestricts", value.asInstanceOf[js.Any])
+    inline def setCategoryRestricts(value: js.Array[String]): Self = StObject.set(x, "categoryRestricts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryRestrictsUndefined: Self = StObject.set(x, "categoryRestricts", js.undefined)
+    inline def setCategoryRestrictsUndefined: Self = StObject.set(x, "categoryRestricts", js.undefined)
     
-    @scala.inline
-    def setCategoryRestrictsVarargs(value: String*): Self = StObject.set(x, "categoryRestricts", js.Array(value :_*))
+    inline def setCategoryRestrictsVarargs(value: String*): Self = StObject.set(x, "categoryRestricts", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

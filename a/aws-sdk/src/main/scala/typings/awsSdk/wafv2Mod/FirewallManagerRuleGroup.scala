@@ -27,8 +27,7 @@ trait FirewallManagerRuleGroup extends StObject {
 }
 object FirewallManagerRuleGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FirewallManagerStatement: FirewallManagerStatement,
     Name: EntityName,
     OverrideAction: OverrideAction,
@@ -39,22 +38,16 @@ object FirewallManagerRuleGroup {
     __obj.asInstanceOf[FirewallManagerRuleGroup]
   }
   
-  @scala.inline
-  implicit class FirewallManagerRuleGroupMutableBuilder[Self <: FirewallManagerRuleGroup] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallManagerRuleGroup](x: Self) {
     
-    @scala.inline
-    def setFirewallManagerStatement(value: FirewallManagerStatement): Self = StObject.set(x, "FirewallManagerStatement", value.asInstanceOf[js.Any])
+    inline def setFirewallManagerStatement(value: FirewallManagerStatement): Self = StObject.set(x, "FirewallManagerStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideAction(value: OverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
+    inline def setOverrideAction(value: OverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityConfig(value: VisibilityConfig): Self = StObject.set(x, "VisibilityConfig", value.asInstanceOf[js.Any])
+    inline def setVisibilityConfig(value: VisibilityConfig): Self = StObject.set(x, "VisibilityConfig", value.asInstanceOf[js.Any])
   }
 }

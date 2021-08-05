@@ -21,25 +21,19 @@ trait NetworkPolicyIngressRule extends StObject {
 }
 object NetworkPolicyIngressRule {
   
-  @scala.inline
-  def apply(from: js.Array[NetworkPolicyPeer], ports: js.Array[NetworkPolicyPort]): NetworkPolicyIngressRule = {
+  inline def apply(from: js.Array[NetworkPolicyPeer], ports: js.Array[NetworkPolicyPort]): NetworkPolicyIngressRule = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkPolicyIngressRule]
   }
   
-  @scala.inline
-  implicit class NetworkPolicyIngressRuleMutableBuilder[Self <: NetworkPolicyIngressRule] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicyIngressRule](x: Self) {
     
-    @scala.inline
-    def setFrom(value: js.Array[NetworkPolicyPeer]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Array[NetworkPolicyPeer]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromVarargs(value: NetworkPolicyPeer*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: NetworkPolicyPeer*): Self = StObject.set(x, "from", js.Array(value :_*))
     
-    @scala.inline
-    def setPorts(value: js.Array[NetworkPolicyPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[NetworkPolicyPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsVarargs(value: NetworkPolicyPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: NetworkPolicyPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

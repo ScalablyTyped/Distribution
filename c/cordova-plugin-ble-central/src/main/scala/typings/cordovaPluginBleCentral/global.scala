@@ -10,6 +10,5 @@ object global {
   @JSGlobal("ble")
   @js.native
   def ble: BLECentralPluginStatic = js.native
-  @scala.inline
-  def ble_=(x: BLECentralPluginStatic): Unit = js.Dynamic.global.updateDynamic("ble")(x.asInstanceOf[js.Any])
+  inline def ble_=(x: BLECentralPluginStatic): Unit = js.Dynamic.global.updateDynamic("ble")(x.asInstanceOf[js.Any])
 }

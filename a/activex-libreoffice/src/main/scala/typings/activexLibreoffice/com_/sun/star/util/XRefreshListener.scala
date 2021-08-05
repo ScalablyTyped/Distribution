@@ -17,8 +17,7 @@ trait XRefreshListener
 }
 object XRefreshListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -29,10 +28,8 @@ object XRefreshListener {
     __obj.asInstanceOf[XRefreshListener]
   }
   
-  @scala.inline
-  implicit class XRefreshListenerMutableBuilder[Self <: XRefreshListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRefreshListener](x: Self) {
     
-    @scala.inline
-    def setRefreshed(value: EventObject => Unit): Self = StObject.set(x, "refreshed", js.Any.fromFunction1(value))
+    inline def setRefreshed(value: EventObject => Unit): Self = StObject.set(x, "refreshed", js.Any.fromFunction1(value))
   }
 }

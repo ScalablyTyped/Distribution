@@ -16,16 +16,13 @@ trait ApnsPayload
 }
 object ApnsPayload {
   
-  @scala.inline
-  def apply(aps: Aps): ApnsPayload = {
+  inline def apply(aps: Aps): ApnsPayload = {
     val __obj = js.Dynamic.literal(aps = aps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApnsPayload]
   }
   
-  @scala.inline
-  implicit class ApnsPayloadMutableBuilder[Self <: ApnsPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ApnsPayload](x: Self) {
     
-    @scala.inline
-    def setAps(value: Aps): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
+    inline def setAps(value: Aps): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
   }
 }

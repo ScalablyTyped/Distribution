@@ -29,8 +29,7 @@ trait INetworkInformationStatics extends StObject {
 }
 object INetworkInformationStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getConnectionProfiles: () => IVectorView[ConnectionProfile],
     getHostNames: () => IVectorView[HostName],
     getInternetConnectionProfile: () => ConnectionProfile,
@@ -43,28 +42,20 @@ object INetworkInformationStatics {
     __obj.asInstanceOf[INetworkInformationStatics]
   }
   
-  @scala.inline
-  implicit class INetworkInformationStaticsMutableBuilder[Self <: INetworkInformationStatics] (val x: Self) extends AnyVal {
+  extension [Self <: INetworkInformationStatics](x: Self) {
     
-    @scala.inline
-    def setGetConnectionProfiles(value: () => IVectorView[ConnectionProfile]): Self = StObject.set(x, "getConnectionProfiles", js.Any.fromFunction0(value))
+    inline def setGetConnectionProfiles(value: () => IVectorView[ConnectionProfile]): Self = StObject.set(x, "getConnectionProfiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHostNames(value: () => IVectorView[HostName]): Self = StObject.set(x, "getHostNames", js.Any.fromFunction0(value))
+    inline def setGetHostNames(value: () => IVectorView[HostName]): Self = StObject.set(x, "getHostNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInternetConnectionProfile(value: () => ConnectionProfile): Self = StObject.set(x, "getInternetConnectionProfile", js.Any.fromFunction0(value))
+    inline def setGetInternetConnectionProfile(value: () => ConnectionProfile): Self = StObject.set(x, "getInternetConnectionProfile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLanIdentifiers(value: () => IVectorView[LanIdentifier]): Self = StObject.set(x, "getLanIdentifiers", js.Any.fromFunction0(value))
+    inline def setGetLanIdentifiers(value: () => IVectorView[LanIdentifier]): Self = StObject.set(x, "getLanIdentifiers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProxyConfigurationAsync(value: Uri => IAsyncOperation[ProxyConfiguration]): Self = StObject.set(x, "getProxyConfigurationAsync", js.Any.fromFunction1(value))
+    inline def setGetProxyConfigurationAsync(value: Uri => IAsyncOperation[ProxyConfiguration]): Self = StObject.set(x, "getProxyConfigurationAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSortedEndpointPairs(value: (IIterable[EndpointPair], HostNameSortOptions) => IVectorView[EndpointPair]): Self = StObject.set(x, "getSortedEndpointPairs", js.Any.fromFunction2(value))
+    inline def setGetSortedEndpointPairs(value: (IIterable[EndpointPair], HostNameSortOptions) => IVectorView[EndpointPair]): Self = StObject.set(x, "getSortedEndpointPairs", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnnetworkstatuschanged(value: js.Any): Self = StObject.set(x, "onnetworkstatuschanged", value.asInstanceOf[js.Any])
+    inline def setOnnetworkstatuschanged(value: js.Any): Self = StObject.set(x, "onnetworkstatuschanged", value.asInstanceOf[js.Any])
   }
 }

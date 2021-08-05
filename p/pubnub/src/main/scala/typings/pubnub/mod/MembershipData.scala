@@ -20,37 +20,27 @@ trait MembershipData extends StObject {
 }
 object MembershipData {
   
-  @scala.inline
-  def apply(created: String, eTag: String, spaceId: String, updated: String, userId: String): MembershipData = {
+  inline def apply(created: String, eTag: String, spaceId: String, updated: String, userId: String): MembershipData = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], spaceId = spaceId.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MembershipData]
   }
   
-  @scala.inline
-  implicit class MembershipDataMutableBuilder[Self <: MembershipData] (val x: Self) extends AnyVal {
+  extension [Self <: MembershipData](x: Self) {
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom(value: js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomNull: Self = StObject.set(x, "custom", null)
+    inline def setCustomNull: Self = StObject.set(x, "custom", null)
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
+    inline def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

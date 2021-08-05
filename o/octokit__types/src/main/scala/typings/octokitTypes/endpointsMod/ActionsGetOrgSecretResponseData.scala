@@ -18,8 +18,7 @@ trait ActionsGetOrgSecretResponseData extends StObject {
 }
 object ActionsGetOrgSecretResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     name: String,
     selected_repositories_url: String,
@@ -30,22 +29,16 @@ object ActionsGetOrgSecretResponseData {
     __obj.asInstanceOf[ActionsGetOrgSecretResponseData]
   }
   
-  @scala.inline
-  implicit class ActionsGetOrgSecretResponseDataMutableBuilder[Self <: ActionsGetOrgSecretResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsGetOrgSecretResponseData](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repositories_url(value: String): Self = StObject.set(x, "selected_repositories_url", value.asInstanceOf[js.Any])
+    inline def setSelected_repositories_url(value: String): Self = StObject.set(x, "selected_repositories_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

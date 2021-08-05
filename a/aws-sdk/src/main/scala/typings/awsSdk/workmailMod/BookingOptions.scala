@@ -23,31 +23,23 @@ trait BookingOptions extends StObject {
 }
 object BookingOptions {
   
-  @scala.inline
-  def apply(): BookingOptions = {
+  inline def apply(): BookingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BookingOptions]
   }
   
-  @scala.inline
-  implicit class BookingOptionsMutableBuilder[Self <: BookingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BookingOptions](x: Self) {
     
-    @scala.inline
-    def setAutoAcceptRequests(value: Boolean): Self = StObject.set(x, "AutoAcceptRequests", value.asInstanceOf[js.Any])
+    inline def setAutoAcceptRequests(value: Boolean): Self = StObject.set(x, "AutoAcceptRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAcceptRequestsUndefined: Self = StObject.set(x, "AutoAcceptRequests", js.undefined)
+    inline def setAutoAcceptRequestsUndefined: Self = StObject.set(x, "AutoAcceptRequests", js.undefined)
     
-    @scala.inline
-    def setAutoDeclineConflictingRequests(value: Boolean): Self = StObject.set(x, "AutoDeclineConflictingRequests", value.asInstanceOf[js.Any])
+    inline def setAutoDeclineConflictingRequests(value: Boolean): Self = StObject.set(x, "AutoDeclineConflictingRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeclineConflictingRequestsUndefined: Self = StObject.set(x, "AutoDeclineConflictingRequests", js.undefined)
+    inline def setAutoDeclineConflictingRequestsUndefined: Self = StObject.set(x, "AutoDeclineConflictingRequests", js.undefined)
     
-    @scala.inline
-    def setAutoDeclineRecurringRequests(value: Boolean): Self = StObject.set(x, "AutoDeclineRecurringRequests", value.asInstanceOf[js.Any])
+    inline def setAutoDeclineRecurringRequests(value: Boolean): Self = StObject.set(x, "AutoDeclineRecurringRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeclineRecurringRequestsUndefined: Self = StObject.set(x, "AutoDeclineRecurringRequests", js.undefined)
+    inline def setAutoDeclineRecurringRequestsUndefined: Self = StObject.set(x, "AutoDeclineRecurringRequests", js.undefined)
   }
 }

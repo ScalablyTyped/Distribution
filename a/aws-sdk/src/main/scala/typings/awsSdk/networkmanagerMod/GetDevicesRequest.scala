@@ -33,43 +33,31 @@ trait GetDevicesRequest extends StObject {
 }
 object GetDevicesRequest {
   
-  @scala.inline
-  def apply(GlobalNetworkId: String): GetDevicesRequest = {
+  inline def apply(GlobalNetworkId: String): GetDevicesRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDevicesRequest]
   }
   
-  @scala.inline
-  implicit class GetDevicesRequestMutableBuilder[Self <: GetDevicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDevicesRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceIds(value: StringList): Self = StObject.set(x, "DeviceIds", value.asInstanceOf[js.Any])
+    inline def setDeviceIds(value: StringList): Self = StObject.set(x, "DeviceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdsUndefined: Self = StObject.set(x, "DeviceIds", js.undefined)
+    inline def setDeviceIdsUndefined: Self = StObject.set(x, "DeviceIds", js.undefined)
     
-    @scala.inline
-    def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "DeviceIds", js.Array(value :_*))
+    inline def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "DeviceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
+    inline def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
   }
 }

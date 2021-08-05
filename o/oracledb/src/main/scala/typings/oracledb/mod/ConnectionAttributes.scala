@@ -127,109 +127,75 @@ trait ConnectionAttributes extends StObject {
 }
 object ConnectionAttributes {
   
-  @scala.inline
-  def apply(): ConnectionAttributes = {
+  inline def apply(): ConnectionAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionAttributes]
   }
   
-  @scala.inline
-  implicit class ConnectionAttributesMutableBuilder[Self <: ConnectionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionAttributes](x: Self) {
     
-    @scala.inline
-    def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
+    inline def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectStringUndefined: Self = StObject.set(x, "connectString", js.undefined)
+    inline def setConnectStringUndefined: Self = StObject.set(x, "connectString", js.undefined)
     
-    @scala.inline
-    def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
+    inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
+    inline def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
     
-    @scala.inline
-    def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
+    inline def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
+    inline def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
     
-    @scala.inline
-    def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setExternalAuth(value: Boolean): Self = StObject.set(x, "externalAuth", value.asInstanceOf[js.Any])
+    inline def setExternalAuth(value: Boolean): Self = StObject.set(x, "externalAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalAuthUndefined: Self = StObject.set(x, "externalAuth", js.undefined)
+    inline def setExternalAuthUndefined: Self = StObject.set(x, "externalAuth", js.undefined)
     
-    @scala.inline
-    def setMatchAny(value: Boolean): Self = StObject.set(x, "matchAny", value.asInstanceOf[js.Any])
+    inline def setMatchAny(value: Boolean): Self = StObject.set(x, "matchAny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchAnyUndefined: Self = StObject.set(x, "matchAny", js.undefined)
+    inline def setMatchAnyUndefined: Self = StObject.set(x, "matchAny", js.undefined)
     
-    @scala.inline
-    def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
+    inline def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPasswordUndefined: Self = StObject.set(x, "newPassword", js.undefined)
+    inline def setNewPasswordUndefined: Self = StObject.set(x, "newPassword", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPoolAlias(value: String): Self = StObject.set(x, "poolAlias", value.asInstanceOf[js.Any])
+    inline def setPoolAlias(value: String): Self = StObject.set(x, "poolAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolAliasUndefined: Self = StObject.set(x, "poolAlias", js.undefined)
+    inline def setPoolAliasUndefined: Self = StObject.set(x, "poolAlias", js.undefined)
     
-    @scala.inline
-    def setPrivilege(value: Double): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
+    inline def setPrivilege(value: Double): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
+    inline def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
-    @scala.inline
-    def setShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "shardingKey", value.asInstanceOf[js.Any])
+    inline def setShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "shardingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardingKeyUndefined: Self = StObject.set(x, "shardingKey", js.undefined)
+    inline def setShardingKeyUndefined: Self = StObject.set(x, "shardingKey", js.undefined)
     
-    @scala.inline
-    def setShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "shardingKey", js.Array(value :_*))
+    inline def setShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "shardingKey", js.Array(value :_*))
     
-    @scala.inline
-    def setStmtCacheSize(value: Double): Self = StObject.set(x, "stmtCacheSize", value.asInstanceOf[js.Any])
+    inline def setStmtCacheSize(value: Double): Self = StObject.set(x, "stmtCacheSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStmtCacheSizeUndefined: Self = StObject.set(x, "stmtCacheSize", js.undefined)
+    inline def setStmtCacheSizeUndefined: Self = StObject.set(x, "stmtCacheSize", js.undefined)
     
-    @scala.inline
-    def setSuperShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "superShardingKey", value.asInstanceOf[js.Any])
+    inline def setSuperShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "superShardingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperShardingKeyUndefined: Self = StObject.set(x, "superShardingKey", js.undefined)
+    inline def setSuperShardingKeyUndefined: Self = StObject.set(x, "superShardingKey", js.undefined)
     
-    @scala.inline
-    def setSuperShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "superShardingKey", js.Array(value :_*))
+    inline def setSuperShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "superShardingKey", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

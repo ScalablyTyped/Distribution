@@ -18,25 +18,19 @@ trait DashboardValidationMessage extends StObject {
 }
 object DashboardValidationMessage {
   
-  @scala.inline
-  def apply(): DashboardValidationMessage = {
+  inline def apply(): DashboardValidationMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashboardValidationMessage]
   }
   
-  @scala.inline
-  implicit class DashboardValidationMessageMutableBuilder[Self <: DashboardValidationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardValidationMessage](x: Self) {
     
-    @scala.inline
-    def setDataPath(value: DataPath): Self = StObject.set(x, "DataPath", value.asInstanceOf[js.Any])
+    inline def setDataPath(value: DataPath): Self = StObject.set(x, "DataPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPathUndefined: Self = StObject.set(x, "DataPath", js.undefined)
+    inline def setDataPathUndefined: Self = StObject.set(x, "DataPath", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

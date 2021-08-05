@@ -20,16 +20,13 @@ trait ThreeDSecure extends StObject {
 }
 object ThreeDSecure {
   
-  @scala.inline
-  def apply(ThreeDSecure: /* riskOptions */ RiskOptions => ThreeDSecureEmitter): ThreeDSecure = {
+  inline def apply(ThreeDSecure: /* riskOptions */ RiskOptions => ThreeDSecureEmitter): ThreeDSecure = {
     val __obj = js.Dynamic.literal(ThreeDSecure = js.Any.fromFunction1(ThreeDSecure))
     __obj.asInstanceOf[ThreeDSecure]
   }
   
-  @scala.inline
-  implicit class ThreeDSecureMutableBuilder[Self <: ThreeDSecure] (val x: Self) extends AnyVal {
+  extension [Self <: ThreeDSecure](x: Self) {
     
-    @scala.inline
-    def setThreeDSecure(value: /* riskOptions */ RiskOptions => ThreeDSecureEmitter): Self = StObject.set(x, "ThreeDSecure", js.Any.fromFunction1(value))
+    inline def setThreeDSecure(value: /* riskOptions */ RiskOptions => ThreeDSecureEmitter): Self = StObject.set(x, "ThreeDSecure", js.Any.fromFunction1(value))
   }
 }

@@ -28,34 +28,25 @@ trait SchemaAnalyzeSentimentResponse extends StObject {
 }
 object SchemaAnalyzeSentimentResponse {
   
-  @scala.inline
-  def apply(): SchemaAnalyzeSentimentResponse = {
+  inline def apply(): SchemaAnalyzeSentimentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnalyzeSentimentResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAnalyzeSentimentResponseMutableBuilder[Self <: SchemaAnalyzeSentimentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnalyzeSentimentResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentSentiment(value: SchemaSentiment): Self = StObject.set(x, "documentSentiment", value.asInstanceOf[js.Any])
+    inline def setDocumentSentiment(value: SchemaSentiment): Self = StObject.set(x, "documentSentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentSentimentUndefined: Self = StObject.set(x, "documentSentiment", js.undefined)
+    inline def setDocumentSentimentUndefined: Self = StObject.set(x, "documentSentiment", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
+    inline def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
+    inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    @scala.inline
-    def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
   }
 }

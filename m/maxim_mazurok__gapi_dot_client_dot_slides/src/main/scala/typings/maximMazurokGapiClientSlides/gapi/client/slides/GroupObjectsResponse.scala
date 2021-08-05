@@ -11,19 +11,15 @@ trait GroupObjectsResponse extends StObject {
 }
 object GroupObjectsResponse {
   
-  @scala.inline
-  def apply(): GroupObjectsResponse = {
+  inline def apply(): GroupObjectsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupObjectsResponse]
   }
   
-  @scala.inline
-  implicit class GroupObjectsResponseMutableBuilder[Self <: GroupObjectsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GroupObjectsResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

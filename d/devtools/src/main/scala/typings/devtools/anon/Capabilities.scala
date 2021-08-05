@@ -10,19 +10,16 @@ trait Capabilities extends StObject {
 }
 object Capabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capabilities: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Capabilities */ js.Any
   ): Capabilities = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capabilities]
   }
   
-  @scala.inline
-  implicit class CapabilitiesMutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
+  extension [Self <: Capabilities](x: Self) {
     
-    @scala.inline
-    def setCapabilities(
+    inline def setCapabilities(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Capabilities */ js.Any
     ): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
   }

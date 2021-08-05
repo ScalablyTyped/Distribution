@@ -26,8 +26,7 @@ trait AuthoringInfoField1ClassBreakInfos
 }
 object AuthoringInfoField1ClassBreakInfos {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object AuthoringInfoField1ClassBreakInfos {
     __obj.asInstanceOf[AuthoringInfoField1ClassBreakInfos]
   }
   
-  @scala.inline
-  implicit class AuthoringInfoField1ClassBreakInfosMutableBuilder[Self <: AuthoringInfoField1ClassBreakInfos] (val x: Self) extends AnyVal {
+  extension [Self <: AuthoringInfoField1ClassBreakInfos](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait PersistableModel extends StObject {
 }
 object PersistableModel {
   
-  @scala.inline
-  def apply(id: ZendeskID): PersistableModel = {
+  inline def apply(id: ZendeskID): PersistableModel = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistableModel]
   }
   
-  @scala.inline
-  implicit class PersistableModelMutableBuilder[Self <: PersistableModel] (val x: Self) extends AnyVal {
+  extension [Self <: PersistableModel](x: Self) {
     
-    @scala.inline
-    def setId(value: ZendeskID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ZendeskID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

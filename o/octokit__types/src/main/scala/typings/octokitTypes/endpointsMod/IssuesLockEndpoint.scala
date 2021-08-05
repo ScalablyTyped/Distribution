@@ -27,28 +27,21 @@ trait IssuesLockEndpoint extends StObject {
 }
 object IssuesLockEndpoint {
   
-  @scala.inline
-  def apply(issue_number: Double, owner: String, repo: String): IssuesLockEndpoint = {
+  inline def apply(issue_number: Double, owner: String, repo: String): IssuesLockEndpoint = {
     val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesLockEndpoint]
   }
   
-  @scala.inline
-  implicit class IssuesLockEndpointMutableBuilder[Self <: IssuesLockEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesLockEndpoint](x: Self) {
     
-    @scala.inline
-    def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
+    inline def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLock_reason(value: `off-topic` | (`too heated`) | resolved | spam): Self = StObject.set(x, "lock_reason", value.asInstanceOf[js.Any])
+    inline def setLock_reason(value: `off-topic` | (`too heated`) | resolved | spam): Self = StObject.set(x, "lock_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLock_reasonUndefined: Self = StObject.set(x, "lock_reason", js.undefined)
+    inline def setLock_reasonUndefined: Self = StObject.set(x, "lock_reason", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait CompiledResultFunctions extends StObject {
 }
 object CompiledResultFunctions {
   
-  @scala.inline
-  def apply(render: () => VNode, staticRenderFns: js.Array[js.Function0[VNode]]): CompiledResultFunctions = {
+  inline def apply(render: () => VNode, staticRenderFns: js.Array[js.Function0[VNode]]): CompiledResultFunctions = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction0(render), staticRenderFns = staticRenderFns.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompiledResultFunctions]
   }
   
-  @scala.inline
-  implicit class CompiledResultFunctionsMutableBuilder[Self <: CompiledResultFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: CompiledResultFunctions](x: Self) {
     
-    @scala.inline
-    def setRender(value: () => VNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => VNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStaticRenderFns(value: js.Array[js.Function0[VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
+    inline def setStaticRenderFns(value: js.Array[js.Function0[VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticRenderFnsVarargs(value: js.Function0[VNode]*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
+    inline def setStaticRenderFnsVarargs(value: js.Function0[VNode]*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
   }
 }

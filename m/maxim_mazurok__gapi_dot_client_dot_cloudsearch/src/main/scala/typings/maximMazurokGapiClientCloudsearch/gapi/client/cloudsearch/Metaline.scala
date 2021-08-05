@@ -11,22 +11,17 @@ trait Metaline extends StObject {
 }
 object Metaline {
   
-  @scala.inline
-  def apply(): Metaline = {
+  inline def apply(): Metaline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metaline]
   }
   
-  @scala.inline
-  implicit class MetalineMutableBuilder[Self <: Metaline] (val x: Self) extends AnyVal {
+  extension [Self <: Metaline](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[DisplayedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[DisplayedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: DisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: DisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

@@ -18,8 +18,7 @@ trait INetworkInformationService extends StObject {
 }
 object INetworkInformationService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearOfflineWatch: () => Unit,
     clearOnlineWatch: () => Unit,
     getNetwork: () => String,
@@ -30,22 +29,16 @@ object INetworkInformationService {
     __obj.asInstanceOf[INetworkInformationService]
   }
   
-  @scala.inline
-  implicit class INetworkInformationServiceMutableBuilder[Self <: INetworkInformationService] (val x: Self) extends AnyVal {
+  extension [Self <: INetworkInformationService](x: Self) {
     
-    @scala.inline
-    def setClearOfflineWatch(value: () => Unit): Self = StObject.set(x, "clearOfflineWatch", js.Any.fromFunction0(value))
+    inline def setClearOfflineWatch(value: () => Unit): Self = StObject.set(x, "clearOfflineWatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearOnlineWatch(value: () => Unit): Self = StObject.set(x, "clearOnlineWatch", js.Any.fromFunction0(value))
+    inline def setClearOnlineWatch(value: () => Unit): Self = StObject.set(x, "clearOnlineWatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNetwork(value: () => String): Self = StObject.set(x, "getNetwork", js.Any.fromFunction0(value))
+    inline def setGetNetwork(value: () => String): Self = StObject.set(x, "getNetwork", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
+    inline def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
+    inline def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
   }
 }

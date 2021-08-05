@@ -13,19 +13,15 @@ trait DBParameterGroupNameMessage extends StObject {
 }
 object DBParameterGroupNameMessage {
   
-  @scala.inline
-  def apply(): DBParameterGroupNameMessage = {
+  inline def apply(): DBParameterGroupNameMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBParameterGroupNameMessage]
   }
   
-  @scala.inline
-  implicit class DBParameterGroupNameMessageMutableBuilder[Self <: DBParameterGroupNameMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBParameterGroupNameMessage](x: Self) {
     
-    @scala.inline
-    def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupNameUndefined: Self = StObject.set(x, "DBParameterGroupName", js.undefined)
+    inline def setDBParameterGroupNameUndefined: Self = StObject.set(x, "DBParameterGroupName", js.undefined)
   }
 }

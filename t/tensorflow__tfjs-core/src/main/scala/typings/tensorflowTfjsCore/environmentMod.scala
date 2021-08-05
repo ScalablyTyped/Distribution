@@ -16,21 +16,20 @@ object environmentMod {
   @js.native
   def ENV_ : Environment = js.native
   
-  @scala.inline
-  def ENV__=(x: Environment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENV")(x.asInstanceOf[js.Any])
+  inline def ENV__=(x: Environment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENV")(x.asInstanceOf[js.Any])
   
   @JSImport("@tensorflow/tfjs-core/dist/environment", "Environment")
   @js.native
   class Environment protected () extends StObject {
     def this(global: js.Any) = this()
     
-    var evaluateFlag: js.Any = js.native
+    /* private */ var evaluateFlag: js.Any = js.native
     
     val features: Flags = js.native
     
-    var flagRegistry: js.Any = js.native
+    /* private */ var flagRegistry: js.Any = js.native
     
-    var flags: js.Any = js.native
+    /* private */ var flags: js.Any = js.native
     
     def get(flagName: String): FlagValue = js.native
     
@@ -48,7 +47,7 @@ object environmentMod {
     
     var platformName: String = js.native
     
-    var populateURLFlags: js.Any = js.native
+    /* private */ var populateURLFlags: js.Any = js.native
     
     def registerFlag(flagName: String, evaluationFn: FlagEvaluationFn): Unit = js.native
     def registerFlag(
@@ -65,17 +64,14 @@ object environmentMod {
     
     def setPlatform(platformName: String, platform: Platform): Unit = js.native
     
-    var urlFlags: js.Any = js.native
+    /* private */ var urlFlags: js.Any = js.native
   }
   
-  @scala.inline
-  def env(): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[Environment]
+  inline def env(): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[Environment]
   
-  @scala.inline
-  def getQueryParams(queryString: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParams")(queryString.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def getQueryParams(queryString: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParams")(queryString.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @scala.inline
-  def setEnvironmentGlobal(environment: Environment): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnvironmentGlobal")(environment.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEnvironmentGlobal(environment: Environment): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnvironmentGlobal")(environment.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type FlagEvaluationFn = js.Function0[FlagValue | js.Promise[FlagValue]]
   
@@ -87,23 +83,18 @@ object environmentMod {
   }
   object FlagRegistryEntry {
     
-    @scala.inline
-    def apply(evaluationFn: () => FlagValue | js.Promise[FlagValue]): FlagRegistryEntry = {
+    inline def apply(evaluationFn: () => FlagValue | js.Promise[FlagValue]): FlagRegistryEntry = {
       val __obj = js.Dynamic.literal(evaluationFn = js.Any.fromFunction0(evaluationFn))
       __obj.asInstanceOf[FlagRegistryEntry]
     }
     
-    @scala.inline
-    implicit class FlagRegistryEntryMutableBuilder[Self <: FlagRegistryEntry] (val x: Self) extends AnyVal {
+    extension [Self <: FlagRegistryEntry](x: Self) {
       
-      @scala.inline
-      def setEvaluationFn(value: () => FlagValue | js.Promise[FlagValue]): Self = StObject.set(x, "evaluationFn", js.Any.fromFunction0(value))
+      inline def setEvaluationFn(value: () => FlagValue | js.Promise[FlagValue]): Self = StObject.set(x, "evaluationFn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetHook(value: /* value */ FlagValue => Unit): Self = StObject.set(x, "setHook", js.Any.fromFunction1(value))
+      inline def setSetHook(value: /* value */ FlagValue => Unit): Self = StObject.set(x, "setHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHookUndefined: Self = StObject.set(x, "setHook", js.undefined)
+      inline def setSetHookUndefined: Self = StObject.set(x, "setHook", js.undefined)
     }
   }
   

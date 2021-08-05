@@ -18,19 +18,15 @@ trait RelativeLocation extends StObject {
 }
 object RelativeLocation {
   
-  @scala.inline
-  def apply(relation: Relation, toMiddleware: String): RelativeLocation = {
+  inline def apply(relation: Relation, toMiddleware: String): RelativeLocation = {
     val __obj = js.Dynamic.literal(relation = relation.asInstanceOf[js.Any], toMiddleware = toMiddleware.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeLocation]
   }
   
-  @scala.inline
-  implicit class RelativeLocationMutableBuilder[Self <: RelativeLocation] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeLocation](x: Self) {
     
-    @scala.inline
-    def setRelation(value: Relation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+    inline def setRelation(value: Relation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToMiddleware(value: String): Self = StObject.set(x, "toMiddleware", value.asInstanceOf[js.Any])
+    inline def setToMiddleware(value: String): Self = StObject.set(x, "toMiddleware", value.asInstanceOf[js.Any])
   }
 }

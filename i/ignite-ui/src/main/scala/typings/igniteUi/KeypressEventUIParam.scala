@@ -33,43 +33,31 @@ trait KeypressEventUIParam extends StObject {
 }
 object KeypressEventUIParam {
   
-  @scala.inline
-  def apply(): KeypressEventUIParam = {
+  inline def apply(): KeypressEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeypressEventUIParam]
   }
   
-  @scala.inline
-  implicit class KeypressEventUIParamMutableBuilder[Self <: KeypressEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: KeypressEventUIParam](x: Self) {
     
-    @scala.inline
-    def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    inline def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
+    inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

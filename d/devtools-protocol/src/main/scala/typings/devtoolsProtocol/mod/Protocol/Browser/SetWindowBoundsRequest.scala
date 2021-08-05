@@ -19,19 +19,15 @@ trait SetWindowBoundsRequest extends StObject {
 }
 object SetWindowBoundsRequest {
   
-  @scala.inline
-  def apply(bounds: Bounds, windowId: WindowID): SetWindowBoundsRequest = {
+  inline def apply(bounds: Bounds, windowId: WindowID): SetWindowBoundsRequest = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetWindowBoundsRequest]
   }
   
-  @scala.inline
-  implicit class SetWindowBoundsRequestMutableBuilder[Self <: SetWindowBoundsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetWindowBoundsRequest](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowId(value: WindowID): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: WindowID): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }
 }

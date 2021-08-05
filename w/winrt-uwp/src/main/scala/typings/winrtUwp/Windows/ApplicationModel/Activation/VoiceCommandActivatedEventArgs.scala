@@ -22,8 +22,7 @@ trait VoiceCommandActivatedEventArgs extends StObject {
 }
 object VoiceCommandActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     result: SpeechRecognitionResult,
@@ -33,19 +32,14 @@ object VoiceCommandActivatedEventArgs {
     __obj.asInstanceOf[VoiceCommandActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class VoiceCommandActivatedEventArgsMutableBuilder[Self <: VoiceCommandActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommandActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: SpeechRecognitionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SpeechRecognitionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

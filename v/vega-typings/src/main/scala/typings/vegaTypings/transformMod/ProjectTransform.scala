@@ -18,35 +18,26 @@ trait ProjectTransform
 }
 object ProjectTransform {
   
-  @scala.inline
-  def apply(): ProjectTransform = {
+  inline def apply(): ProjectTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("project")
     __obj.asInstanceOf[ProjectTransform]
   }
   
-  @scala.inline
-  implicit class ProjectTransformMutableBuilder[Self <: ProjectTransform] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: project): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: project): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

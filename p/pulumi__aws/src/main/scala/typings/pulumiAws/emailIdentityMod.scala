@@ -50,21 +50,16 @@ object emailIdentityMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EmailIdentityState): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EmailIdentityState, opts: CustomResourceOptions): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
+    inline def get(name: String, id: Input[ID]): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
+    inline def get(name: String, id: Input[ID], state: EmailIdentityState): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
+    inline def get(name: String, id: Input[ID], state: EmailIdentityState, opts: CustomResourceOptions): EmailIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailIdentity]
     
     /**
       * Returns true if the given object is an instance of EmailIdentity.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/emailIdentity.EmailIdentity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/emailIdentity.EmailIdentity */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/emailIdentity.EmailIdentity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/emailIdentity.EmailIdentity */ Boolean]
   }
   
   trait EmailIdentityArgs extends StObject {
@@ -76,17 +71,14 @@ object emailIdentityMod {
   }
   object EmailIdentityArgs {
     
-    @scala.inline
-    def apply(email: Input[String]): EmailIdentityArgs = {
+    inline def apply(email: Input[String]): EmailIdentityArgs = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailIdentityArgs]
     }
     
-    @scala.inline
-    implicit class EmailIdentityArgsMutableBuilder[Self <: EmailIdentityArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EmailIdentityArgs](x: Self) {
       
-      @scala.inline
-      def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,26 +96,20 @@ object emailIdentityMod {
   }
   object EmailIdentityState {
     
-    @scala.inline
-    def apply(): EmailIdentityState = {
+    inline def apply(): EmailIdentityState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmailIdentityState]
     }
     
-    @scala.inline
-    implicit class EmailIdentityStateMutableBuilder[Self <: EmailIdentityState] (val x: Self) extends AnyVal {
+    extension [Self <: EmailIdentityState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     }
   }
 }

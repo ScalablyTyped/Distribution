@@ -16,28 +16,21 @@ trait AnnotationControllable extends StObject {
 }
 object AnnotationControllable {
   
-  @scala.inline
-  def apply(annotation: Annotation, chart: Chart_, collection: String, points: js.Array[Point]): AnnotationControllable = {
+  inline def apply(annotation: Annotation, chart: Chart_, collection: String, points: js.Array[Point]): AnnotationControllable = {
     val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationControllable]
   }
   
-  @scala.inline
-  implicit class AnnotationControllableMutableBuilder[Self <: AnnotationControllable] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationControllable](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

@@ -19,19 +19,15 @@ trait SegmentDrawActionProperties
 }
 object SegmentDrawActionProperties {
   
-  @scala.inline
-  def apply(): SegmentDrawActionProperties = {
+  inline def apply(): SegmentDrawActionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentDrawActionProperties]
   }
   
-  @scala.inline
-  implicit class SegmentDrawActionPropertiesMutableBuilder[Self <: SegmentDrawActionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentDrawActionProperties](x: Self) {
     
-    @scala.inline
-    def setMode(value: freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

@@ -28,28 +28,21 @@ trait UpdateDetectorRequest extends StObject {
 }
 object UpdateDetectorRequest {
   
-  @scala.inline
-  def apply(detectorModelName: DetectorModelName, messageId: MessageId, state: DetectorStateDefinition): UpdateDetectorRequest = {
+  inline def apply(detectorModelName: DetectorModelName, messageId: MessageId, state: DetectorStateDefinition): UpdateDetectorRequest = {
     val __obj = js.Dynamic.literal(detectorModelName = detectorModelName.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDetectorRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDetectorRequestMutableBuilder[Self <: UpdateDetectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDetectorRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
+    inline def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValue(value: KeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
+    inline def setKeyValue(value: KeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
+    inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: DetectorStateDefinition): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: DetectorStateDefinition): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

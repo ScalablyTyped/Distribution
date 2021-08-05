@@ -15,19 +15,15 @@ trait ReferrerInfo extends StObject {
 }
 object ReferrerInfo {
   
-  @scala.inline
-  def apply(appId: String, extraData: IAnyObject): ReferrerInfo = {
+  inline def apply(appId: String, extraData: IAnyObject): ReferrerInfo = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferrerInfo]
   }
   
-  @scala.inline
-  implicit class ReferrerInfoMutableBuilder[Self <: ReferrerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReferrerInfo](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraData(value: IAnyObject): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: IAnyObject): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Lock(): ILock = ^.asInstanceOf[js.Dynamic].applyDynamic("Lock")().asInstanceOf[ILock]
+  inline def Lock(): ILock = ^.asInstanceOf[js.Dynamic].applyDynamic("Lock")().asInstanceOf[ILock]
   
   @js.native
   trait ILock extends StObject {

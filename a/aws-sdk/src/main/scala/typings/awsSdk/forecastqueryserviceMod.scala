@@ -38,20 +38,16 @@ object forecastqueryserviceMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -74,26 +70,20 @@ object forecastqueryserviceMod {
   }
   object DataPoint {
     
-    @scala.inline
-    def apply(): DataPoint = {
+    inline def apply(): DataPoint = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataPoint]
     }
     
-    @scala.inline
-    implicit class DataPointMutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
+    extension [Self <: DataPoint](x: Self) {
       
-      @scala.inline
-      def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   
@@ -112,20 +102,16 @@ object forecastqueryserviceMod {
   }
   object Forecast {
     
-    @scala.inline
-    def apply(): Forecast = {
+    inline def apply(): Forecast = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Forecast]
     }
     
-    @scala.inline
-    implicit class ForecastMutableBuilder[Self <: Forecast] (val x: Self) extends AnyVal {
+    extension [Self <: Forecast](x: Self) {
       
-      @scala.inline
-      def setPredictions(value: Predictions): Self = StObject.set(x, "Predictions", value.asInstanceOf[js.Any])
+      inline def setPredictions(value: Predictions): Self = StObject.set(x, "Predictions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredictionsUndefined: Self = StObject.set(x, "Predictions", js.undefined)
+      inline def setPredictionsUndefined: Self = StObject.set(x, "Predictions", js.undefined)
     }
   }
   
@@ -183,38 +169,28 @@ object forecastqueryserviceMod {
   }
   object QueryForecastRequest {
     
-    @scala.inline
-    def apply(Filters: Filters, ForecastArn: Arn): QueryForecastRequest = {
+    inline def apply(Filters: Filters, ForecastArn: Arn): QueryForecastRequest = {
       val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], ForecastArn = ForecastArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryForecastRequest]
     }
     
-    @scala.inline
-    implicit class QueryForecastRequestMutableBuilder[Self <: QueryForecastRequest] (val x: Self) extends AnyVal {
+    extension [Self <: QueryForecastRequest](x: Self) {
       
-      @scala.inline
-      def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
+      inline def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setStartDate(value: DateTime): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: DateTime): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
+      inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     }
   }
   
@@ -227,20 +203,16 @@ object forecastqueryserviceMod {
   }
   object QueryForecastResponse {
     
-    @scala.inline
-    def apply(): QueryForecastResponse = {
+    inline def apply(): QueryForecastResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryForecastResponse]
     }
     
-    @scala.inline
-    implicit class QueryForecastResponseMutableBuilder[Self <: QueryForecastResponse] (val x: Self) extends AnyVal {
+    extension [Self <: QueryForecastResponse](x: Self) {
       
-      @scala.inline
-      def setForecast(value: Forecast): Self = StObject.set(x, "Forecast", value.asInstanceOf[js.Any])
+      inline def setForecast(value: Forecast): Self = StObject.set(x, "Forecast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForecastUndefined: Self = StObject.set(x, "Forecast", js.undefined)
+      inline def setForecastUndefined: Self = StObject.set(x, "Forecast", js.undefined)
     }
   }
   

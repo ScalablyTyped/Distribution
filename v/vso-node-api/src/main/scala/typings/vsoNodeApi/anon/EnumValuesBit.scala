@@ -10,16 +10,13 @@ trait EnumValuesBit extends StObject {
 }
 object EnumValuesBit {
   
-  @scala.inline
-  def apply(enumValues: Bit): EnumValuesBit = {
+  inline def apply(enumValues: Bit): EnumValuesBit = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesBit]
   }
   
-  @scala.inline
-  implicit class EnumValuesBitMutableBuilder[Self <: EnumValuesBit] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesBit](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Bit): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Bit): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

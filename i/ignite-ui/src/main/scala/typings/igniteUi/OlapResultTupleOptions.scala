@@ -19,22 +19,17 @@ trait OlapResultTupleOptions
 }
 object OlapResultTupleOptions {
   
-  @scala.inline
-  def apply(): OlapResultTupleOptions = {
+  inline def apply(): OlapResultTupleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OlapResultTupleOptions]
   }
   
-  @scala.inline
-  implicit class OlapResultTupleOptionsMutableBuilder[Self <: OlapResultTupleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResultTupleOptions](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[js.Any]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[js.Any]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: js.Any*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: js.Any*): Self = StObject.set(x, "members", js.Array(value :_*))
   }
 }

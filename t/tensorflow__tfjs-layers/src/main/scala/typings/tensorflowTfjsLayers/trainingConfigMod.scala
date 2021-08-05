@@ -33,8 +33,7 @@ object trainingConfigMod {
   }
   object TrainingConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loss: LossIdentifier | js.Array[LossIdentifier] | StringDictionary[LossIdentifier],
       optimizer_config: OptimizerSerialization
     ): TrainingConfig = {
@@ -42,50 +41,35 @@ object trainingConfigMod {
       __obj.asInstanceOf[TrainingConfig]
     }
     
-    @scala.inline
-    implicit class TrainingConfigMutableBuilder[Self <: TrainingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TrainingConfig](x: Self) {
       
-      @scala.inline
-      def setLoss(value: LossIdentifier | js.Array[LossIdentifier] | StringDictionary[LossIdentifier]): Self = StObject.set(x, "loss", value.asInstanceOf[js.Any])
+      inline def setLoss(value: LossIdentifier | js.Array[LossIdentifier] | StringDictionary[LossIdentifier]): Self = StObject.set(x, "loss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLossVarargs(value: LossIdentifier*): Self = StObject.set(x, "loss", js.Array(value :_*))
+      inline def setLossVarargs(value: LossIdentifier*): Self = StObject.set(x, "loss", js.Array(value :_*))
       
-      @scala.inline
-      def setLoss_weights(value: LossWeights): Self = StObject.set(x, "loss_weights", value.asInstanceOf[js.Any])
+      inline def setLoss_weights(value: LossWeights): Self = StObject.set(x, "loss_weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoss_weightsUndefined: Self = StObject.set(x, "loss_weights", js.undefined)
+      inline def setLoss_weightsUndefined: Self = StObject.set(x, "loss_weights", js.undefined)
       
-      @scala.inline
-      def setLoss_weightsVarargs(value: Double*): Self = StObject.set(x, "loss_weights", js.Array(value :_*))
+      inline def setLoss_weightsVarargs(value: Double*): Self = StObject.set(x, "loss_weights", js.Array(value :_*))
       
-      @scala.inline
-      def setMetrics(value: js.Array[MetricsIdentifier] | StringDictionary[MetricsIdentifier]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: js.Array[MetricsIdentifier] | StringDictionary[MetricsIdentifier]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
-      @scala.inline
-      def setMetricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+      inline def setMetricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "metrics", js.Array(value :_*))
       
-      @scala.inline
-      def setOptimizer_config(value: OptimizerSerialization): Self = StObject.set(x, "optimizer_config", value.asInstanceOf[js.Any])
+      inline def setOptimizer_config(value: OptimizerSerialization): Self = StObject.set(x, "optimizer_config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSample_weight_mode(value: SampleWeightMode): Self = StObject.set(x, "sample_weight_mode", value.asInstanceOf[js.Any])
+      inline def setSample_weight_mode(value: SampleWeightMode): Self = StObject.set(x, "sample_weight_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSample_weight_modeUndefined: Self = StObject.set(x, "sample_weight_mode", js.undefined)
+      inline def setSample_weight_modeUndefined: Self = StObject.set(x, "sample_weight_mode", js.undefined)
       
-      @scala.inline
-      def setWeighted_metrics(value: js.Array[MetricsIdentifier]): Self = StObject.set(x, "weighted_metrics", value.asInstanceOf[js.Any])
+      inline def setWeighted_metrics(value: js.Array[MetricsIdentifier]): Self = StObject.set(x, "weighted_metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeighted_metricsUndefined: Self = StObject.set(x, "weighted_metrics", js.undefined)
+      inline def setWeighted_metricsUndefined: Self = StObject.set(x, "weighted_metrics", js.undefined)
       
-      @scala.inline
-      def setWeighted_metricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "weighted_metrics", js.Array(value :_*))
+      inline def setWeighted_metricsVarargs(value: MetricsIdentifier*): Self = StObject.set(x, "weighted_metrics", js.Array(value :_*))
     }
   }
 }

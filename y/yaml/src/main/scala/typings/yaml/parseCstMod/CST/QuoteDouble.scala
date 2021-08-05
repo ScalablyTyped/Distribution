@@ -14,8 +14,7 @@ trait QuoteDouble
 }
 object QuoteDouble {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -28,10 +27,8 @@ object QuoteDouble {
     __obj.asInstanceOf[QuoteDouble]
   }
   
-  @scala.inline
-  implicit class QuoteDoubleMutableBuilder[Self <: QuoteDouble] (val x: Self) extends AnyVal {
+  extension [Self <: QuoteDouble](x: Self) {
     
-    @scala.inline
-    def setType(value: QUOTE_DOUBLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: QUOTE_DOUBLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

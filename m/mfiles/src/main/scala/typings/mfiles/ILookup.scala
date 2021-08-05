@@ -36,8 +36,7 @@ trait ILookup extends StObject {
 }
 object ILookup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => ILookup,
     CloneFrom: ILookup => Unit,
     Deleted: Boolean,
@@ -56,46 +55,32 @@ object ILookup {
     __obj.asInstanceOf[ILookup]
   }
   
-  @scala.inline
-  implicit class ILookupMutableBuilder[Self <: ILookup] (val x: Self) extends AnyVal {
+  extension [Self <: ILookup](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ILookup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ILookup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: ILookup => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: ILookup => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayID(value: String): Self = StObject.set(x, "DisplayID", value.asInstanceOf[js.Any])
+    inline def setDisplayID(value: String): Self = StObject.set(x, "DisplayID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayIDAvailable(value: Boolean): Self = StObject.set(x, "DisplayIDAvailable", value.asInstanceOf[js.Any])
+    inline def setDisplayIDAvailable(value: Boolean): Self = StObject.set(x, "DisplayIDAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
+    inline def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFormattedDisplayValue(value: (Boolean, Boolean, Boolean) => String): Self = StObject.set(x, "GetFormattedDisplayValue", js.Any.fromFunction3(value))
+    inline def setGetFormattedDisplayValue(value: (Boolean, Boolean, Boolean) => String): Self = StObject.set(x, "GetFormattedDisplayValue", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Double): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemGUID(value: String): Self = StObject.set(x, "ItemGUID", value.asInstanceOf[js.Any])
+    inline def setItemGUID(value: String): Self = StObject.set(x, "ItemGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectFlags(value: MFSpecialObjectFlag): Self = StObject.set(x, "ObjectFlags", value.asInstanceOf[js.Any])
+    inline def setObjectFlags(value: MFSpecialObjectFlag): Self = StObject.set(x, "ObjectFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

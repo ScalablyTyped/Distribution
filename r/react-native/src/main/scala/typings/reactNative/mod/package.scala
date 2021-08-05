@@ -7,202 +7,145 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ART = typings.reactNative.mod.ARTStatic
 
-@scala.inline
-def AccessibilityInfo: typings.reactNative.mod.AccessibilityInfoStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AccessibilityInfo").asInstanceOf[typings.reactNative.mod.AccessibilityInfoStatic]
+inline def AccessibilityInfo: typings.reactNative.mod.AccessibilityInfoStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AccessibilityInfo").asInstanceOf[typings.reactNative.mod.AccessibilityInfoStatic]
 type AccessibilityInfo = typings.reactNative.mod.AccessibilityInfoStatic
 
-@scala.inline
-def ActionSheetIOS: typings.reactNative.mod.ActionSheetIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ActionSheetIOS").asInstanceOf[typings.reactNative.mod.ActionSheetIOSStatic]
+inline def ActionSheetIOS: typings.reactNative.mod.ActionSheetIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ActionSheetIOS").asInstanceOf[typings.reactNative.mod.ActionSheetIOSStatic]
 type ActionSheetIOS = typings.reactNative.mod.ActionSheetIOSStatic
 
-@scala.inline
-def Alert: typings.reactNative.mod.AlertStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Alert").asInstanceOf[typings.reactNative.mod.AlertStatic]
+inline def Alert: typings.reactNative.mod.AlertStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Alert").asInstanceOf[typings.reactNative.mod.AlertStatic]
 type Alert = typings.reactNative.mod.AlertStatic
 
-@scala.inline
-def AppState: typings.reactNative.mod.AppStateStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AppState").asInstanceOf[typings.reactNative.mod.AppStateStatic]
+inline def AppState: typings.reactNative.mod.AppStateStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AppState").asInstanceOf[typings.reactNative.mod.AppStateStatic]
 type AppState = typings.reactNative.mod.AppStateStatic
 
-@scala.inline
-def AsyncStorage: typings.reactNative.mod.AsyncStorageStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AsyncStorage").asInstanceOf[typings.reactNative.mod.AsyncStorageStatic]
+inline def AsyncStorage: typings.reactNative.mod.AsyncStorageStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AsyncStorage").asInstanceOf[typings.reactNative.mod.AsyncStorageStatic]
 type AsyncStorage = typings.reactNative.mod.AsyncStorageStatic
 
-@scala.inline
-def BackHandler: typings.reactNative.mod.BackHandlerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BackHandler").asInstanceOf[typings.reactNative.mod.BackHandlerStatic]
+inline def BackHandler: typings.reactNative.mod.BackHandlerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BackHandler").asInstanceOf[typings.reactNative.mod.BackHandlerStatic]
 type BackHandler = typings.reactNative.mod.BackHandlerStatic
 
-@scala.inline
-def CameraRoll: typings.reactNative.mod.CameraRollStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CameraRoll").asInstanceOf[typings.reactNative.mod.CameraRollStatic]
+inline def CameraRoll: typings.reactNative.mod.CameraRollStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CameraRoll").asInstanceOf[typings.reactNative.mod.CameraRollStatic]
 type CameraRoll = typings.reactNative.mod.CameraRollStatic
 
-@scala.inline
-def Clipboard: typings.reactNative.mod.ClipboardStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Clipboard").asInstanceOf[typings.reactNative.mod.ClipboardStatic]
+inline def Clipboard: typings.reactNative.mod.ClipboardStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Clipboard").asInstanceOf[typings.reactNative.mod.ClipboardStatic]
 type Clipboard = typings.reactNative.mod.ClipboardStatic
 
-@scala.inline
-def ColorPropType: typings.react.mod.Validator[java.lang.String] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ColorPropType").asInstanceOf[typings.react.mod.Validator[java.lang.String]]
+inline def ColorPropType: typings.react.mod.Validator[java.lang.String] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ColorPropType").asInstanceOf[typings.react.mod.Validator[java.lang.String]]
 
-@scala.inline
-def DatePickerAndroid: typings.reactNative.mod.DatePickerAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DatePickerAndroid").asInstanceOf[typings.reactNative.mod.DatePickerAndroidStatic]
+inline def DatePickerAndroid: typings.reactNative.mod.DatePickerAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DatePickerAndroid").asInstanceOf[typings.reactNative.mod.DatePickerAndroidStatic]
 type DatePickerAndroid = typings.reactNative.mod.DatePickerAndroidStatic
 
-@scala.inline
-def DevSettings: typings.reactNative.mod.DevSettingsStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DevSettings").asInstanceOf[typings.reactNative.mod.DevSettingsStatic]
+inline def DevSettings: typings.reactNative.mod.DevSettingsStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DevSettings").asInstanceOf[typings.reactNative.mod.DevSettingsStatic]
 
-@scala.inline
-def DynamicColorIOS(tuple: typings.reactNative.mod.DynamicColorIOSTuple): typings.reactNative.mod.OpaqueColorValue = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DynamicColorIOS")(tuple.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.OpaqueColorValue]
+inline def DynamicColorIOS(tuple: typings.reactNative.mod.DynamicColorIOSTuple): typings.reactNative.mod.OpaqueColorValue = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DynamicColorIOS")(tuple.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.OpaqueColorValue]
 
-@scala.inline
-def Easing: typings.reactNative.mod.EasingStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Easing").asInstanceOf[typings.reactNative.mod.EasingStatic]
+inline def Easing: typings.reactNative.mod.EasingStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Easing").asInstanceOf[typings.reactNative.mod.EasingStatic]
 type Easing = typings.reactNative.mod.EasingStatic
 
-@scala.inline
-def EdgeInsetsPropType: typings.react.mod.Validator[typings.reactNative.mod.Insets] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EdgeInsetsPropType").asInstanceOf[typings.react.mod.Validator[typings.reactNative.mod.Insets]]
+inline def EdgeInsetsPropType: typings.react.mod.Validator[typings.reactNative.mod.Insets] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EdgeInsetsPropType").asInstanceOf[typings.react.mod.Validator[typings.reactNative.mod.Insets]]
 
-@scala.inline
-def I18nManager: typings.reactNative.mod.I18nManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("I18nManager").asInstanceOf[typings.reactNative.mod.I18nManagerStatic]
+inline def I18nManager: typings.reactNative.mod.I18nManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("I18nManager").asInstanceOf[typings.reactNative.mod.I18nManagerStatic]
 type I18nManager = typings.reactNative.mod.I18nManagerStatic
 
-@scala.inline
-def ImageEditor: typings.reactNative.mod.ImageEditorStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageEditor").asInstanceOf[typings.reactNative.mod.ImageEditorStatic]
+inline def ImageEditor: typings.reactNative.mod.ImageEditorStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageEditor").asInstanceOf[typings.reactNative.mod.ImageEditorStatic]
 type ImageEditor = typings.reactNative.mod.ImageEditorStatic
 
-@scala.inline
-def ImagePickerIOS: typings.reactNative.mod.ImagePickerIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImagePickerIOS").asInstanceOf[typings.reactNative.mod.ImagePickerIOSStatic]
+inline def ImagePickerIOS: typings.reactNative.mod.ImagePickerIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImagePickerIOS").asInstanceOf[typings.reactNative.mod.ImagePickerIOSStatic]
 type ImagePickerIOS = typings.reactNative.mod.ImagePickerIOSStatic
 
-@scala.inline
-def ImageStore: typings.reactNative.mod.ImageStoreStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageStore").asInstanceOf[typings.reactNative.mod.ImageStoreStatic]
+inline def ImageStore: typings.reactNative.mod.ImageStoreStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageStore").asInstanceOf[typings.reactNative.mod.ImageStoreStatic]
 type ImageStore = typings.reactNative.mod.ImageStoreStatic
 
-@scala.inline
-def InteractionManager: typings.reactNative.mod.InteractionManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InteractionManager").asInstanceOf[typings.reactNative.mod.InteractionManagerStatic]
+inline def InteractionManager: typings.reactNative.mod.InteractionManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InteractionManager").asInstanceOf[typings.reactNative.mod.InteractionManagerStatic]
 
-@scala.inline
-def Keyboard: typings.reactNative.mod.KeyboardStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Keyboard").asInstanceOf[typings.reactNative.mod.KeyboardStatic]
+inline def Keyboard: typings.reactNative.mod.KeyboardStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Keyboard").asInstanceOf[typings.reactNative.mod.KeyboardStatic]
 
-@scala.inline
-def LayoutAnimation: typings.reactNative.mod.LayoutAnimationStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LayoutAnimation").asInstanceOf[typings.reactNative.mod.LayoutAnimationStatic]
+inline def LayoutAnimation: typings.reactNative.mod.LayoutAnimationStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LayoutAnimation").asInstanceOf[typings.reactNative.mod.LayoutAnimationStatic]
 type LayoutAnimation = typings.reactNative.mod.LayoutAnimationStatic
 
-@scala.inline
-def Linking: typings.reactNative.mod.LinkingStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Linking").asInstanceOf[typings.reactNative.mod.LinkingStatic]
+inline def Linking: typings.reactNative.mod.LinkingStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Linking").asInstanceOf[typings.reactNative.mod.LinkingStatic]
 type Linking = typings.reactNative.mod.LinkingStatic
 
-@scala.inline
-def LogBox: typings.reactNative.mod.LogBoxStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LogBox").asInstanceOf[typings.reactNative.mod.LogBoxStatic]
+inline def LogBox: typings.reactNative.mod.LogBoxStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LogBox").asInstanceOf[typings.reactNative.mod.LogBoxStatic]
 type LogBox = typings.reactNative.mod.LogBoxStatic
 
-@scala.inline
-def NativeModules: typings.reactNative.mod.NativeModulesStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NativeModules").asInstanceOf[typings.reactNative.mod.NativeModulesStatic]
+inline def NativeModules: typings.reactNative.mod.NativeModulesStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NativeModules").asInstanceOf[typings.reactNative.mod.NativeModulesStatic]
 
-@scala.inline
-def PanResponder: typings.reactNative.mod.PanResponderStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PanResponder").asInstanceOf[typings.reactNative.mod.PanResponderStatic]
+inline def PanResponder: typings.reactNative.mod.PanResponderStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PanResponder").asInstanceOf[typings.reactNative.mod.PanResponderStatic]
 type PanResponder = typings.reactNative.mod.PanResponderStatic
 
-@scala.inline
-def PermissionsAndroid: typings.reactNative.mod.PermissionsAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PermissionsAndroid").asInstanceOf[typings.reactNative.mod.PermissionsAndroidStatic]
+inline def PermissionsAndroid: typings.reactNative.mod.PermissionsAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PermissionsAndroid").asInstanceOf[typings.reactNative.mod.PermissionsAndroidStatic]
 type PermissionsAndroid = typings.reactNative.mod.PermissionsAndroidStatic
 
-@scala.inline
-def PixelRatio: typings.reactNative.mod.PixelRatioStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PixelRatio").asInstanceOf[typings.reactNative.mod.PixelRatioStatic]
+inline def PixelRatio: typings.reactNative.mod.PixelRatioStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PixelRatio").asInstanceOf[typings.reactNative.mod.PixelRatioStatic]
 
-@scala.inline
-def Platform: typings.reactNative.mod.PlatformIOSStatic | typings.reactNative.mod.PlatformAndroidStatic | typings.reactNative.mod.PlatformWindowsOSStatic | typings.reactNative.mod.PlatformMacOSStatic | typings.reactNative.mod.PlatformWebStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Platform").asInstanceOf[typings.reactNative.mod.PlatformIOSStatic | typings.reactNative.mod.PlatformAndroidStatic | typings.reactNative.mod.PlatformWindowsOSStatic | typings.reactNative.mod.PlatformMacOSStatic | typings.reactNative.mod.PlatformWebStatic]
+inline def Platform: typings.reactNative.mod.PlatformIOSStatic | typings.reactNative.mod.PlatformAndroidStatic | typings.reactNative.mod.PlatformWindowsOSStatic | typings.reactNative.mod.PlatformMacOSStatic | typings.reactNative.mod.PlatformWebStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Platform").asInstanceOf[typings.reactNative.mod.PlatformIOSStatic | typings.reactNative.mod.PlatformAndroidStatic | typings.reactNative.mod.PlatformWindowsOSStatic | typings.reactNative.mod.PlatformMacOSStatic | typings.reactNative.mod.PlatformWebStatic]
 
-@scala.inline
-def PlatformColor(colors: java.lang.String*): typings.reactNative.mod.OpaqueColorValue = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PlatformColor")(colors.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.OpaqueColorValue]
+inline def PlatformColor(colors: java.lang.String*): typings.reactNative.mod.OpaqueColorValue = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PlatformColor")(colors.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.OpaqueColorValue]
 
-@scala.inline
-def Pressable: typings.react.mod.ForwardRefExoticComponent[
+inline def Pressable: typings.react.mod.ForwardRefExoticComponent[
 typings.reactNative.mod.PressableProps & typings.react.mod.RefAttributes[typings.reactNative.mod.View]] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Pressable").asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
 typings.reactNative.mod.PressableProps & typings.react.mod.RefAttributes[typings.reactNative.mod.View]]]
 
-@scala.inline
-def PushNotificationIOS: typings.reactNative.mod.PushNotificationIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PushNotificationIOS").asInstanceOf[typings.reactNative.mod.PushNotificationIOSStatic]
+inline def PushNotificationIOS: typings.reactNative.mod.PushNotificationIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PushNotificationIOS").asInstanceOf[typings.reactNative.mod.PushNotificationIOSStatic]
 type PushNotificationIOS = typings.reactNative.mod.PushNotificationIOSStatic
 
-@scala.inline
-def Settings: typings.reactNative.mod.SettingsStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Settings").asInstanceOf[typings.reactNative.mod.SettingsStatic]
+inline def Settings: typings.reactNative.mod.SettingsStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Settings").asInstanceOf[typings.reactNative.mod.SettingsStatic]
 type Settings = typings.reactNative.mod.SettingsStatic
 
-@scala.inline
-def ShadowPropTypesIOS: typings.reactNative.mod.ShadowPropTypesIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShadowPropTypesIOS").asInstanceOf[typings.reactNative.mod.ShadowPropTypesIOSStatic]
+inline def ShadowPropTypesIOS: typings.reactNative.mod.ShadowPropTypesIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShadowPropTypesIOS").asInstanceOf[typings.reactNative.mod.ShadowPropTypesIOSStatic]
 
-@scala.inline
-def Share: typings.reactNative.mod.ShareStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Share").asInstanceOf[typings.reactNative.mod.ShareStatic]
+inline def Share: typings.reactNative.mod.ShareStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Share").asInstanceOf[typings.reactNative.mod.ShareStatic]
 type Share = typings.reactNative.mod.ShareStatic
 
-@scala.inline
-def StatusBarIOS: typings.reactNative.mod.StatusBarIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StatusBarIOS").asInstanceOf[typings.reactNative.mod.StatusBarIOSStatic]
+inline def StatusBarIOS: typings.reactNative.mod.StatusBarIOSStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StatusBarIOS").asInstanceOf[typings.reactNative.mod.StatusBarIOSStatic]
 type StatusBarIOS = typings.reactNative.mod.StatusBarIOSStatic
 
-@scala.inline
-def Systrace: typings.reactNative.mod.SystraceStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Systrace").asInstanceOf[typings.reactNative.mod.SystraceStatic]
+inline def Systrace: typings.reactNative.mod.SystraceStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Systrace").asInstanceOf[typings.reactNative.mod.SystraceStatic]
 type Systrace = typings.reactNative.mod.SystraceStatic
 
-@scala.inline
-def TimePickerAndroid: typings.reactNative.mod.TimePickerAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TimePickerAndroid").asInstanceOf[typings.reactNative.mod.TimePickerAndroidStatic]
+inline def TimePickerAndroid: typings.reactNative.mod.TimePickerAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TimePickerAndroid").asInstanceOf[typings.reactNative.mod.TimePickerAndroidStatic]
 type TimePickerAndroid = typings.reactNative.mod.TimePickerAndroidStatic
 
-@scala.inline
-def ToastAndroid: typings.reactNative.mod.ToastAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToastAndroid").asInstanceOf[typings.reactNative.mod.ToastAndroidStatic]
+inline def ToastAndroid: typings.reactNative.mod.ToastAndroidStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToastAndroid").asInstanceOf[typings.reactNative.mod.ToastAndroidStatic]
 type ToastAndroid = typings.reactNative.mod.ToastAndroidStatic
 
-@scala.inline
-def UIManager: typings.reactNative.mod.UIManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[typings.reactNative.mod.UIManagerStatic]
+inline def UIManager: typings.reactNative.mod.UIManagerStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[typings.reactNative.mod.UIManagerStatic]
 type UIManager = typings.reactNative.mod.UIManagerStatic
 
-@scala.inline
-def Vibration: typings.reactNative.mod.VibrationStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Vibration").asInstanceOf[typings.reactNative.mod.VibrationStatic]
+inline def Vibration: typings.reactNative.mod.VibrationStatic = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Vibration").asInstanceOf[typings.reactNative.mod.VibrationStatic]
 type Vibration = typings.reactNative.mod.VibrationStatic
 
-@scala.inline
-def createElement[P](`type`: typings.react.mod.ReactType[js.Any], props: P, children: typings.react.mod.ReactNode*): typings.react.mod.ReactElement = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement]
-@scala.inline
-def createElement[P](
+inline def createElement[P](`type`: typings.react.mod.ReactType[js.Any], props: P, children: typings.react.mod.ReactNode*): typings.react.mod.ReactElement = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement]
+inline def createElement[P](
   `type`: typings.react.mod.ReactType[js.Any],
   props: scala.Unit,
   children: typings.react.mod.ReactNode*
 ): typings.react.mod.ReactElement = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement]
 
-@scala.inline
-def findNodeHandle(): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")().asInstanceOf[scala.Null | scala.Double]
-@scala.inline
-def findNodeHandle(componentOrHandle: scala.Double): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
-@scala.inline
-def findNodeHandle(componentOrHandle: typings.react.mod.Component[js.Any, js.Any, js.Any]): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
-@scala.inline
-def findNodeHandle(componentOrHandle: typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
+inline def findNodeHandle(): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")().asInstanceOf[scala.Null | scala.Double]
+inline def findNodeHandle(componentOrHandle: scala.Double): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
+inline def findNodeHandle(componentOrHandle: typings.react.mod.Component[js.Any, js.Any, js.Any]): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
+inline def findNodeHandle(componentOrHandle: typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]): scala.Null | scala.Double = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[scala.Null | scala.Double]
 
-@scala.inline
-def processColor(): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")().asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
-@scala.inline
-def processColor(color: scala.Double): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
-@scala.inline
-def processColor(color: typings.reactNative.mod.ColorValue): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
+inline def processColor(): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")().asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
+inline def processColor(color: scala.Double): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
+inline def processColor(color: typings.reactNative.mod.ColorValue): js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("processColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.reactNative.mod.ProcessedColorValue | scala.Null]]
 
-@scala.inline
-def requireNativeComponent[T](viewName: java.lang.String): typings.reactNative.mod.HostComponent[T] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeComponent")(viewName.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.HostComponent[T]]
+inline def requireNativeComponent[T](viewName: java.lang.String): typings.reactNative.mod.HostComponent[T] = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeComponent")(viewName.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.HostComponent[T]]
 
-@scala.inline
-def spread(target: js.Any, sources: js.Any*): js.Any = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def spread(target: js.Any, sources: js.Any*): js.Any = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 
-@scala.inline
-def unstableBatchedUpdates(callback: js.Function0[js.Any]): scala.Unit = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): scala.Unit = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): scala.Unit = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def unstableBatchedUpdates(callback: js.Function0[js.Any]): scala.Unit = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): scala.Unit = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): scala.Unit = (typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def unstableEnableLogBox(): scala.Unit = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_enableLogBox")().asInstanceOf[scala.Unit]
+inline def unstableEnableLogBox(): scala.Unit = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_enableLogBox")().asInstanceOf[scala.Unit]
 
-@scala.inline
-def useColorScheme(): typings.reactNative.mod.ColorSchemeName = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useColorScheme")().asInstanceOf[typings.reactNative.mod.ColorSchemeName]
+inline def useColorScheme(): typings.reactNative.mod.ColorSchemeName = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useColorScheme")().asInstanceOf[typings.reactNative.mod.ColorSchemeName]
 
-@scala.inline
-def useWindowDimensions(): typings.reactNative.mod.ScaledSize = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[typings.reactNative.mod.ScaledSize]
+inline def useWindowDimensions(): typings.reactNative.mod.ScaledSize = typings.reactNative.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[typings.reactNative.mod.ScaledSize]
 
 type AccessibilityActionEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNative.anon.ReadonlyactionNamestring]
 

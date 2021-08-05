@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ISVGElementInstance")
 @js.native
-class ISVGElementInstance protected ()
+/* private */ class ISVGElementInstance ()
   extends StObject
      with typings.activexMshtml.MSHTML.ISVGElementInstance {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.ISVGElementInstance_typekey")
   var MSHTMLDotISVGElementInstance_typekey: typings.activexMshtml.MSHTML.ISVGElementInstance = js.native
   

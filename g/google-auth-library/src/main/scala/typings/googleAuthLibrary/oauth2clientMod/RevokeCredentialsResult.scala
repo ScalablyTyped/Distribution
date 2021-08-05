@@ -10,16 +10,13 @@ trait RevokeCredentialsResult extends StObject {
 }
 object RevokeCredentialsResult {
   
-  @scala.inline
-  def apply(success: Boolean): RevokeCredentialsResult = {
+  inline def apply(success: Boolean): RevokeCredentialsResult = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeCredentialsResult]
   }
   
-  @scala.inline
-  implicit class RevokeCredentialsResultMutableBuilder[Self <: RevokeCredentialsResult] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeCredentialsResult](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

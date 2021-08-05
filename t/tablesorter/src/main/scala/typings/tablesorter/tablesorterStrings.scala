@@ -26,720 +26,606 @@ object tablesorterStrings {
     extends StObject
        with ColumnFilter
        with CoreTheme
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait a
     extends StObject
        with RelativeSorting
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
   sealed trait addRows extends StObject
-  @scala.inline
-  def addRows: addRows = "addRows".asInstanceOf[addRows]
+  inline def addRows: addRows = "addRows".asInstanceOf[addRows]
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait altKey extends StObject
-  @scala.inline
-  def altKey: altKey = "altKey".asInstanceOf[altKey]
+  inline def altKey: altKey = "altKey".asInstanceOf[altKey]
   
   @js.native
   sealed trait appendCache
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def appendCache: appendCache = "appendCache".asInstanceOf[appendCache]
+  inline def appendCache: appendCache = "appendCache".asInstanceOf[appendCache]
   
   @js.native
   sealed trait applyWidgetId extends StObject
-  @scala.inline
-  def applyWidgetId: applyWidgetId = "applyWidgetId".asInstanceOf[applyWidgetId]
+  inline def applyWidgetId: applyWidgetId = "applyWidgetId".asInstanceOf[applyWidgetId]
   
   @js.native
   sealed trait applyWidgets
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def applyWidgets: applyWidgets = "applyWidgets".asInstanceOf[applyWidgets]
+  inline def applyWidgets: applyWidgets = "applyWidgets".asInstanceOf[applyWidgets]
   
   @js.native
   sealed trait asc
     extends StObject
        with SortOrder
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait basic extends StObject
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
   sealed trait blackice
     extends StObject
        with CoreTheme
-  @scala.inline
-  def blackice: blackice = "blackice".asInstanceOf[blackice]
+  inline def blackice: blackice = "blackice".asInstanceOf[blackice]
   
   @js.native
   sealed trait blue
     extends StObject
        with CoreTheme
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
   sealed trait bootstrap
     extends StObject
        with CoreTheme
-  @scala.inline
-  def bootstrap: bootstrap = "bootstrap".asInstanceOf[bootstrap]
+  inline def bootstrap: bootstrap = "bootstrap".asInstanceOf[bootstrap]
   
   @js.native
   sealed trait bottom
     extends StObject
        with EmptySorting
        with StringSorting
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait button extends StObject
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait buttons extends StObject
-  @scala.inline
-  def buttons: buttons = "buttons".asInstanceOf[buttons]
+  inline def buttons: buttons = "buttons".asInstanceOf[buttons]
   
   @js.native
   sealed trait c
     extends StObject
        with StorageType
-  @scala.inline
-  def c: c = "c".asInstanceOf[c]
+  inline def c: c = "c".asInstanceOf[c]
   
   @js.native
   sealed trait clientX extends StObject
-  @scala.inline
-  def clientX: clientX = "clientX".asInstanceOf[clientX]
+  inline def clientX: clientX = "clientX".asInstanceOf[clientX]
   
   @js.native
   sealed trait clientY extends StObject
-  @scala.inline
-  def clientY: clientY = "clientY".asInstanceOf[clientY]
+  inline def clientY: clientY = "clientY".asInstanceOf[clientY]
   
   @js.native
   sealed trait ctrlKey extends StObject
-  @scala.inline
-  def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
+  inline def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
   
   @js.native
   sealed trait d
     extends StObject
        with RelativeSorting
        with StorageType
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
   sealed trait dark
     extends StObject
        with CoreTheme
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait dateFormat extends StObject
-  @scala.inline
-  def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
+  inline def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
   
   @js.native
   sealed trait desc
     extends StObject
        with SortOrder
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait destroy
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait destroyPager
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def destroyPager: destroyPager = "destroyPager".asInstanceOf[destroyPager]
+  inline def destroyPager: destroyPager = "destroyPager".asInstanceOf[destroyPager]
   
   @js.native
   sealed trait disablePager
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def disablePager: disablePager = "disablePager".asInstanceOf[disablePager]
+  inline def disablePager: disablePager = "disablePager".asInstanceOf[disablePager]
   
   @js.native
   sealed trait dropbox
     extends StObject
        with CoreTheme
-  @scala.inline
-  def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
+  inline def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
   
   @js.native
   sealed trait empty extends StObject
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
   sealed trait emptyMax
     extends StObject
        with EmptySorting
-  @scala.inline
-  def emptyMax: emptyMax = "emptyMax".asInstanceOf[emptyMax]
+  inline def emptyMax: emptyMax = "emptyMax".asInstanceOf[emptyMax]
   
   @js.native
   sealed trait emptyMin
     extends StObject
        with EmptySorting
-  @scala.inline
-  def emptyMin: emptyMin = "emptyMin".asInstanceOf[emptyMin]
+  inline def emptyMin: emptyMin = "emptyMin".asInstanceOf[emptyMin]
   
   @js.native
   sealed trait enablePager
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def enablePager: enablePager = "enablePager".asInstanceOf[enablePager]
+  inline def enablePager: enablePager = "enablePager".asInstanceOf[enablePager]
   
   @js.native
   sealed trait exact
     extends StObject
        with MatchType
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
+  inline def exact: exact = "exact".asInstanceOf[exact]
   
   @js.native
   sealed trait `false`
     extends StObject
        with ColumnFilter
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait filter extends StObject
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
   sealed trait filterAndSortReset
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def filterAndSortReset: filterAndSortReset = "filterAndSortReset".asInstanceOf[filterAndSortReset]
+  inline def filterAndSortReset: filterAndSortReset = "filterAndSortReset".asInstanceOf[filterAndSortReset]
   
   @js.native
   sealed trait filterEnd
     extends StObject
        with ConfigEventMap
-  @scala.inline
-  def filterEnd: filterEnd = "filterEnd".asInstanceOf[filterEnd]
+  inline def filterEnd: filterEnd = "filterEnd".asInstanceOf[filterEnd]
   
   @js.native
   sealed trait filterInit
     extends StObject
        with ConfigEventMap
-  @scala.inline
-  def filterInit: filterInit = "filterInit".asInstanceOf[filterInit]
+  inline def filterInit: filterInit = "filterInit".asInstanceOf[filterInit]
   
   @js.native
   sealed trait filterReset
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def filterReset: filterReset = "filterReset".asInstanceOf[filterReset]
+  inline def filterReset: filterReset = "filterReset".asInstanceOf[filterReset]
   
   @js.native
   sealed trait filterResetSaved
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def filterResetSaved: filterResetSaved = "filterResetSaved".asInstanceOf[filterResetSaved]
+  inline def filterResetSaved: filterResetSaved = "filterResetSaved".asInstanceOf[filterResetSaved]
   
   @js.native
   sealed trait filterStart extends StObject
-  @scala.inline
-  def filterStart: filterStart = "filterStart".asInstanceOf[filterStart]
+  inline def filterStart: filterStart = "filterStart".asInstanceOf[filterStart]
   
   @js.native
   sealed trait from
     extends StObject
        with FilterBox
-  @scala.inline
-  def from: from = "from".asInstanceOf[from]
+  inline def from: from = "from".asInstanceOf[from]
   
   @js.native
   sealed trait green
     extends StObject
        with CoreTheme
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait grey
     extends StObject
        with CoreTheme
-  @scala.inline
-  def grey: grey = "grey".asInstanceOf[grey]
+  inline def grey: grey = "grey".asInstanceOf[grey]
   
   @js.native
   sealed trait ice
     extends StObject
        with CoreTheme
-  @scala.inline
-  def ice: ice = "ice".asInstanceOf[ice]
+  inline def ice: ice = "ice".asInstanceOf[ice]
   
   @js.native
   sealed trait jui
     extends StObject
        with CoreTheme
-  @scala.inline
-  def jui: jui = "jui".asInstanceOf[jui]
+  inline def jui: jui = "jui".asInstanceOf[jui]
   
   @js.native
   sealed trait lockedOrder extends StObject
-  @scala.inline
-  def lockedOrder: lockedOrder = "lockedOrder".asInstanceOf[lockedOrder]
+  inline def lockedOrder: lockedOrder = "lockedOrder".asInstanceOf[lockedOrder]
   
   @js.native
   sealed trait `match`
     extends StObject
        with MatchType
-  @scala.inline
-  def `match`: `match` = "match".asInstanceOf[`match`]
+  inline def `match`: `match` = "match".asInstanceOf[`match`]
   
   @js.native
   sealed trait max
     extends StObject
        with StringSorting
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
+  inline def max: max = "max".asInstanceOf[max]
   
   @js.native
   sealed trait metaKey extends StObject
-  @scala.inline
-  def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
+  inline def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
   
   @js.native
   sealed trait `metro-dark`
     extends StObject
        with CoreTheme
-  @scala.inline
-  def `metro-dark`: `metro-dark` = "metro-dark".asInstanceOf[`metro-dark`]
+  inline def `metro-dark`: `metro-dark` = "metro-dark".asInstanceOf[`metro-dark`]
   
   @js.native
   sealed trait min
     extends StObject
        with StringSorting
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
+  inline def min: min = "min".asInstanceOf[min]
   
   @js.native
   sealed trait movementX extends StObject
-  @scala.inline
-  def movementX: movementX = "movementX".asInstanceOf[movementX]
+  inline def movementX: movementX = "movementX".asInstanceOf[movementX]
   
   @js.native
   sealed trait movementY extends StObject
-  @scala.inline
-  def movementY: movementY = "movementY".asInstanceOf[movementY]
+  inline def movementY: movementY = "movementY".asInstanceOf[movementY]
   
   @js.native
   sealed trait numeric
     extends StObject
        with ParserType
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait o
     extends StObject
        with RelativeSorting
-  @scala.inline
-  def o: o = "o".asInstanceOf[o]
+  inline def o: o = "o".asInstanceOf[o]
   
   @js.native
   sealed trait offsetX extends StObject
-  @scala.inline
-  def offsetX: offsetX = "offsetX".asInstanceOf[offsetX]
+  inline def offsetX: offsetX = "offsetX".asInstanceOf[offsetX]
   
   @js.native
   sealed trait offsetY extends StObject
-  @scala.inline
-  def offsetY: offsetY = "offsetY".asInstanceOf[offsetY]
+  inline def offsetY: offsetY = "offsetY".asInstanceOf[offsetY]
   
   @js.native
   sealed trait pageAndSize extends StObject
-  @scala.inline
-  def pageAndSize: pageAndSize = "pageAndSize".asInstanceOf[pageAndSize]
+  inline def pageAndSize: pageAndSize = "pageAndSize".asInstanceOf[pageAndSize]
   
   @js.native
   sealed trait pageMoved
     extends StObject
        with PagerEventMap
-  @scala.inline
-  def pageMoved: pageMoved = "pageMoved".asInstanceOf[pageMoved]
+  inline def pageMoved: pageMoved = "pageMoved".asInstanceOf[pageMoved]
   
   @js.native
   sealed trait pageSet extends StObject
-  @scala.inline
-  def pageSet: pageSet = "pageSet".asInstanceOf[pageSet]
+  inline def pageSet: pageSet = "pageSet".asInstanceOf[pageSet]
   
   @js.native
   sealed trait pageSize extends StObject
-  @scala.inline
-  def pageSize: pageSize = "pageSize".asInstanceOf[pageSize]
+  inline def pageSize: pageSize = "pageSize".asInstanceOf[pageSize]
   
   @js.native
   sealed trait pageX extends StObject
-  @scala.inline
-  def pageX: pageX = "pageX".asInstanceOf[pageX]
+  inline def pageX: pageX = "pageX".asInstanceOf[pageX]
   
   @js.native
   sealed trait pageY extends StObject
-  @scala.inline
-  def pageY: pageY = "pageY".asInstanceOf[pageY]
+  inline def pageY: pageY = "pageY".asInstanceOf[pageY]
   
   @js.native
   sealed trait pagerBeforeInitialized
     extends StObject
        with PagerEventMap
-  @scala.inline
-  def pagerBeforeInitialized: pagerBeforeInitialized = "pagerBeforeInitialized".asInstanceOf[pagerBeforeInitialized]
+  inline def pagerBeforeInitialized: pagerBeforeInitialized = "pagerBeforeInitialized".asInstanceOf[pagerBeforeInitialized]
   
   @js.native
   sealed trait pagerChange
     extends StObject
        with PagerEventMap
-  @scala.inline
-  def pagerChange: pagerChange = "pagerChange".asInstanceOf[pagerChange]
+  inline def pagerChange: pagerChange = "pagerChange".asInstanceOf[pagerChange]
   
   @js.native
   sealed trait pagerComplete
     extends StObject
        with PagerEventMap
-  @scala.inline
-  def pagerComplete: pagerComplete = "pagerComplete".asInstanceOf[pagerComplete]
+  inline def pagerComplete: pagerComplete = "pagerComplete".asInstanceOf[pagerComplete]
   
   @js.native
   sealed trait pagerInitialized
     extends StObject
        with PagerEventMap
-  @scala.inline
-  def pagerInitialized: pagerInitialized = "pagerInitialized".asInstanceOf[pagerInitialized]
+  inline def pagerInitialized: pagerInitialized = "pagerInitialized".asInstanceOf[pagerInitialized]
   
   @js.native
   sealed trait pagerUpdate
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def pagerUpdate: pagerUpdate = "pagerUpdate".asInstanceOf[pagerUpdate]
+  inline def pagerUpdate: pagerUpdate = "pagerUpdate".asInstanceOf[pagerUpdate]
   
   @js.native
   sealed trait parsed
     extends StObject
        with ColumnFilter
-  @scala.inline
-  def parsed: parsed = "parsed".asInstanceOf[parsed]
+  inline def parsed: parsed = "parsed".asInstanceOf[parsed]
   
   @js.native
   sealed trait parser extends StObject
-  @scala.inline
-  def parser: parser = "parser".asInstanceOf[parser]
+  inline def parser: parser = "parser".asInstanceOf[parser]
   
   @js.native
   sealed trait refreshComplete
     extends StObject
        with EventMap
-  @scala.inline
-  def refreshComplete: refreshComplete = "refreshComplete".asInstanceOf[refreshComplete]
+  inline def refreshComplete: refreshComplete = "refreshComplete".asInstanceOf[refreshComplete]
   
   @js.native
   sealed trait refreshWidgets extends StObject
-  @scala.inline
-  def refreshWidgets: refreshWidgets = "refreshWidgets".asInstanceOf[refreshWidgets]
+  inline def refreshWidgets: refreshWidgets = "refreshWidgets".asInstanceOf[refreshWidgets]
   
   @js.native
   sealed trait relatedTarget extends StObject
-  @scala.inline
-  def relatedTarget: relatedTarget = "relatedTarget".asInstanceOf[relatedTarget]
+  inline def relatedTarget: relatedTarget = "relatedTarget".asInstanceOf[relatedTarget]
   
   @js.native
   sealed trait removeWidget extends StObject
-  @scala.inline
-  def removeWidget: removeWidget = "removeWidget".asInstanceOf[removeWidget]
+  inline def removeWidget: removeWidget = "removeWidget".asInstanceOf[removeWidget]
   
   @js.native
   sealed trait resetToLoadState
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def resetToLoadState: resetToLoadState = "resetToLoadState".asInstanceOf[resetToLoadState]
+  inline def resetToLoadState: resetToLoadState = "resetToLoadState".asInstanceOf[resetToLoadState]
   
   @js.native
   sealed trait resizable extends StObject
-  @scala.inline
-  def resizable: resizable = "resizable".asInstanceOf[resizable]
+  inline def resizable: resizable = "resizable".asInstanceOf[resizable]
   
   @js.native
   sealed trait s
     extends StObject
        with RelativeSorting
        with StorageType
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
   sealed trait saveSortReset
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def saveSortReset: saveSortReset = "saveSortReset".asInstanceOf[saveSortReset]
+  inline def saveSortReset: saveSortReset = "saveSortReset".asInstanceOf[saveSortReset]
   
   @js.native
   sealed trait screenX extends StObject
-  @scala.inline
-  def screenX: screenX = "screenX".asInstanceOf[screenX]
+  inline def screenX: screenX = "screenX".asInstanceOf[screenX]
   
   @js.native
   sealed trait screenY extends StObject
-  @scala.inline
-  def screenY: screenY = "screenY".asInstanceOf[screenY]
+  inline def screenY: screenY = "screenY".asInstanceOf[screenY]
   
   @js.native
   sealed trait search
     extends StObject
        with FilterBox
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait select
     extends StObject
        with FilterBox
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
   sealed trait shiftKey extends StObject
-  @scala.inline
-  def shiftKey: shiftKey = "shiftKey".asInstanceOf[shiftKey]
+  inline def shiftKey: shiftKey = "shiftKey".asInstanceOf[shiftKey]
   
   @js.native
   sealed trait sort
     extends StObject
        with ParameterlessTriggerNameMap
        with SortInitiator
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
+  inline def sort: sort = "sort".asInstanceOf[sort]
   
   @js.native
   sealed trait sortAppend
     extends StObject
        with SortInitiator
-  @scala.inline
-  def sortAppend: sortAppend = "sortAppend".asInstanceOf[sortAppend]
+  inline def sortAppend: sortAppend = "sortAppend".asInstanceOf[sortAppend]
   
   @js.native
   sealed trait sortBegin
     extends StObject
        with EventMap
-  @scala.inline
-  def sortBegin: sortBegin = "sortBegin".asInstanceOf[sortBegin]
+  inline def sortBegin: sortBegin = "sortBegin".asInstanceOf[sortBegin]
   
   @js.native
   sealed trait sortEnd
     extends StObject
        with EventMap
-  @scala.inline
-  def sortEnd: sortEnd = "sortEnd".asInstanceOf[sortEnd]
+  inline def sortEnd: sortEnd = "sortEnd".asInstanceOf[sortEnd]
   
   @js.native
   sealed trait sortForce
     extends StObject
        with SortInitiator
-  @scala.inline
-  def sortForce: sortForce = "sortForce".asInstanceOf[sortForce]
+  inline def sortForce: sortForce = "sortForce".asInstanceOf[sortForce]
   
   @js.native
   sealed trait sortInitialOrder extends StObject
-  @scala.inline
-  def sortInitialOrder: sortInitialOrder = "sortInitialOrder".asInstanceOf[sortInitialOrder]
+  inline def sortInitialOrder: sortInitialOrder = "sortInitialOrder".asInstanceOf[sortInitialOrder]
   
   @js.native
   sealed trait sortReset extends StObject
-  @scala.inline
-  def sortReset: sortReset = "sortReset".asInstanceOf[sortReset]
+  inline def sortReset: sortReset = "sortReset".asInstanceOf[sortReset]
   
   @js.native
   sealed trait sortStart
     extends StObject
        with EventMap
-  @scala.inline
-  def sortStart: sortStart = "sortStart".asInstanceOf[sortStart]
+  inline def sortStart: sortStart = "sortStart".asInstanceOf[sortStart]
   
   @js.native
   sealed trait sorter extends StObject
-  @scala.inline
-  def sorter: sorter = "sorter".asInstanceOf[sorter]
+  inline def sorter: sorter = "sorter".asInstanceOf[sorter]
   
   @js.native
   sealed trait sorton
     extends StObject
        with SortInitiator
-  @scala.inline
-  def sorton: sorton = "sorton".asInstanceOf[sorton]
+  inline def sorton: sorton = "sorton".asInstanceOf[sorton]
   
   @js.native
   sealed trait step extends StObject
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
+  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
   sealed trait stickyHeadersInit extends StObject
-  @scala.inline
-  def stickyHeadersInit: stickyHeadersInit = "stickyHeadersInit".asInstanceOf[stickyHeadersInit]
+  inline def stickyHeadersInit: stickyHeadersInit = "stickyHeadersInit".asInstanceOf[stickyHeadersInit]
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait `tablesorter-initialized`
     extends StObject
        with EventMap
-  @scala.inline
-  def `tablesorter-initialized`: `tablesorter-initialized` = "tablesorter-initialized".asInstanceOf[`tablesorter-initialized`]
+  inline def `tablesorter-initialized`: `tablesorter-initialized` = "tablesorter-initialized".asInstanceOf[`tablesorter-initialized`]
   
   @js.native
   sealed trait `tablesorter-ready`
     extends StObject
        with EventMap
-  @scala.inline
-  def `tablesorter-ready`: `tablesorter-ready` = "tablesorter-ready".asInstanceOf[`tablesorter-ready`]
+  inline def `tablesorter-ready`: `tablesorter-ready` = "tablesorter-ready".asInstanceOf[`tablesorter-ready`]
   
   @js.native
   sealed trait text
     extends StObject
        with ParserType
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait to
     extends StObject
        with FilterBox
-  @scala.inline
-  def to: to = "to".asInstanceOf[to]
+  inline def to: to = "to".asInstanceOf[to]
   
   @js.native
   sealed trait top
     extends StObject
        with EmptySorting
        with StringSorting
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait update
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
   sealed trait updateAll
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def updateAll: updateAll = "updateAll".asInstanceOf[updateAll]
+  inline def updateAll: updateAll = "updateAll".asInstanceOf[updateAll]
   
   @js.native
   sealed trait updateCache
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def updateCache: updateCache = "updateCache".asInstanceOf[updateCache]
+  inline def updateCache: updateCache = "updateCache".asInstanceOf[updateCache]
   
   @js.native
   sealed trait updateCell extends StObject
-  @scala.inline
-  def updateCell: updateCell = "updateCell".asInstanceOf[updateCell]
+  inline def updateCell: updateCell = "updateCell".asInstanceOf[updateCell]
   
   @js.native
   sealed trait updateComplete
     extends StObject
        with EventMap
-  @scala.inline
-  def updateComplete: updateComplete = "updateComplete".asInstanceOf[updateComplete]
+  inline def updateComplete: updateComplete = "updateComplete".asInstanceOf[updateComplete]
   
   @js.native
   sealed trait updateHeaders
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def updateHeaders: updateHeaders = "updateHeaders".asInstanceOf[updateHeaders]
+  inline def updateHeaders: updateHeaders = "updateHeaders".asInstanceOf[updateHeaders]
   
   @js.native
   sealed trait updateRows
     extends StObject
        with ParameterlessTriggerNameMap
-  @scala.inline
-  def updateRows: updateRows = "updateRows".asInstanceOf[updateRows]
+  inline def updateRows: updateRows = "updateRows".asInstanceOf[updateRows]
   
   @js.native
   sealed trait user
     extends StObject
        with SortInitiator
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait widgetRemoveEnd
     extends StObject
        with EventMap
-  @scala.inline
-  def widgetRemoveEnd: widgetRemoveEnd = "widgetRemoveEnd".asInstanceOf[widgetRemoveEnd]
+  inline def widgetRemoveEnd: widgetRemoveEnd = "widgetRemoveEnd".asInstanceOf[widgetRemoveEnd]
   
   @js.native
   sealed trait x extends StObject
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait y extends StObject
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  inline def y: y = "y".asInstanceOf[y]
   
   @js.native
   sealed trait zero
     extends StObject
        with EmptySorting
        with StringSorting
-  @scala.inline
-  def zero: zero = "zero".asInstanceOf[zero]
+  inline def zero: zero = "zero".asInstanceOf[zero]
 }

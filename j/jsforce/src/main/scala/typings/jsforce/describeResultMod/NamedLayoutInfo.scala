@@ -13,19 +13,15 @@ trait NamedLayoutInfo extends StObject {
 }
 object NamedLayoutInfo {
   
-  @scala.inline
-  def apply(name: String, urls: Record[String, String]): NamedLayoutInfo = {
+  inline def apply(name: String, urls: Record[String, String]): NamedLayoutInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedLayoutInfo]
   }
   
-  @scala.inline
-  implicit class NamedLayoutInfoMutableBuilder[Self <: NamedLayoutInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NamedLayoutInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrls(value: Record[String, String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: Record[String, String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
   }
 }

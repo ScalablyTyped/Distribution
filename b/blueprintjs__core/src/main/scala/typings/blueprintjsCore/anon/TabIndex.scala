@@ -10,16 +10,13 @@ trait TabIndex extends StObject {
 }
 object TabIndex {
   
-  @scala.inline
-  def apply(tabIndex: Double): TabIndex = {
+  inline def apply(tabIndex: Double): TabIndex = {
     val __obj = js.Dynamic.literal(tabIndex = tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabIndex]
   }
   
-  @scala.inline
-  implicit class TabIndexMutableBuilder[Self <: TabIndex] (val x: Self) extends AnyVal {
+  extension [Self <: TabIndex](x: Self) {
     
-    @scala.inline
-    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
   }
 }

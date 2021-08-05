@@ -18,19 +18,15 @@ trait RouteSpecTcpRouteTimeoutIdle extends StObject {
 }
 object RouteSpecTcpRouteTimeoutIdle {
   
-  @scala.inline
-  def apply(unit: String, value: Double): RouteSpecTcpRouteTimeoutIdle = {
+  inline def apply(unit: String, value: Double): RouteSpecTcpRouteTimeoutIdle = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecTcpRouteTimeoutIdle]
   }
   
-  @scala.inline
-  implicit class RouteSpecTcpRouteTimeoutIdleMutableBuilder[Self <: RouteSpecTcpRouteTimeoutIdle] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecTcpRouteTimeoutIdle](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

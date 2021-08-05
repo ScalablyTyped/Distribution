@@ -16,19 +16,15 @@ trait IListOptionsCreated
 }
 object IListOptionsCreated {
   
-  @scala.inline
-  def apply(): IListOptionsCreated = {
+  inline def apply(): IListOptionsCreated = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListOptionsCreated]
   }
   
-  @scala.inline
-  implicit class IListOptionsCreatedMutableBuilder[Self <: IListOptionsCreated] (val x: Self) extends AnyVal {
+  extension [Self <: IListOptionsCreated](x: Self) {
     
-    @scala.inline
-    def setCreated(value: String | IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String | IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
   }
 }

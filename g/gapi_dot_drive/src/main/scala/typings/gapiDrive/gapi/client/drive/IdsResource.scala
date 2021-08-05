@@ -15,25 +15,19 @@ trait IdsResource extends StObject {
 }
 object IdsResource {
   
-  @scala.inline
-  def apply(ids: js.Array[String], space: String): IdsResource = {
+  inline def apply(ids: js.Array[String], space: String): IdsResource = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], kind = "drive#generatedIds", space = space.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdsResource]
   }
   
-  @scala.inline
-  implicit class IdsResourceMutableBuilder[Self <: IdsResource] (val x: Self) extends AnyVal {
+  extension [Self <: IdsResource](x: Self) {
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: driveNumbersigngeneratedIds): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: driveNumbersigngeneratedIds): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
   }
 }

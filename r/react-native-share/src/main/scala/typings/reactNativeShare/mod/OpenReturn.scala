@@ -12,25 +12,19 @@ trait OpenReturn extends StObject {
 }
 object OpenReturn {
   
-  @scala.inline
-  def apply(): OpenReturn = {
+  inline def apply(): OpenReturn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenReturn]
   }
   
-  @scala.inline
-  implicit class OpenReturnMutableBuilder[Self <: OpenReturn] (val x: Self) extends AnyVal {
+  extension [Self <: OpenReturn](x: Self) {
     
-    @scala.inline
-    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    @scala.inline
-    def setDismissedAction(value: Boolean): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
+    inline def setDismissedAction(value: Boolean): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissedActionUndefined: Self = StObject.set(x, "dismissedAction", js.undefined)
+    inline def setDismissedActionUndefined: Self = StObject.set(x, "dismissedAction", js.undefined)
   }
 }

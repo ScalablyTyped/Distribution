@@ -13,19 +13,15 @@ trait GetLogRecordResponse extends StObject {
 }
 object GetLogRecordResponse {
   
-  @scala.inline
-  def apply(): GetLogRecordResponse = {
+  inline def apply(): GetLogRecordResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLogRecordResponse]
   }
   
-  @scala.inline
-  implicit class GetLogRecordResponseMutableBuilder[Self <: GetLogRecordResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogRecordResponse](x: Self) {
     
-    @scala.inline
-    def setLogRecord(value: LogRecord): Self = StObject.set(x, "logRecord", value.asInstanceOf[js.Any])
+    inline def setLogRecord(value: LogRecord): Self = StObject.set(x, "logRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogRecordUndefined: Self = StObject.set(x, "logRecord", js.undefined)
+    inline def setLogRecordUndefined: Self = StObject.set(x, "logRecord", js.undefined)
   }
 }

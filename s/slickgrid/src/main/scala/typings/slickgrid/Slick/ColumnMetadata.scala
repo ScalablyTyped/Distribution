@@ -33,45 +33,33 @@ trait ColumnMetadata[T /* <: SlickData */] extends StObject {
 }
 object ColumnMetadata {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](): ColumnMetadata[T] = {
+  inline def apply[T /* <: SlickData */](): ColumnMetadata[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnMetadata[T]]
   }
   
-  @scala.inline
-  implicit class ColumnMetadataMutableBuilder[Self <: ColumnMetadata[?], T /* <: SlickData */] (val x: Self & ColumnMetadata[T]) extends AnyVal {
+  extension [Self <: ColumnMetadata[?], T /* <: SlickData */](x: Self & ColumnMetadata[T]) {
     
-    @scala.inline
-    def setColspan(value: Double | String): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
+    inline def setColspan(value: Double | String): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
+    inline def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
     
-    @scala.inline
-    def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
-    @scala.inline
-    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
-    @scala.inline
-    def setFormatter(
+    inline def setFormatter(
       value: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
     ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
   }
 }

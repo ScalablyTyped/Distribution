@@ -64,22 +64,22 @@ object eventContollerMod {
     
     def _triggerEvent(`type`: js.Any, ev: js.Any): Unit = js.native
     
-    var canvas: js.Any = js.native
+    /* private */ var canvas: js.Any = js.native
     
-    var currentShape: js.Any = js.native
+    /* private */ var currentShape: js.Any = js.native
     
     def destroy(): Unit = js.native
     
-    var dragging: js.Any = js.native
+    /* private */ var dragging: js.Any = js.native
     
-    var draggingShape: js.Any = js.native
+    /* private */ var draggingShape: js.Any = js.native
     
     def init(): Unit = js.native
     
-    var mousedownPoint: js.Any = js.native
+    /* private */ var mousedownPoint: js.Any = js.native
     
-    var mousedownShape: js.Any = js.native
+    /* private */ var mousedownShape: js.Any = js.native
     
-    var mousedownTimeStamp: js.Any = js.native
+    /* private */ var mousedownTimeStamp: js.Any = js.native
   }
 }

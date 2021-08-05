@@ -38,49 +38,35 @@ trait LicenseConfigurationUsage extends StObject {
 }
 object LicenseConfigurationUsage {
   
-  @scala.inline
-  def apply(): LicenseConfigurationUsage = {
+  inline def apply(): LicenseConfigurationUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicenseConfigurationUsage]
   }
   
-  @scala.inline
-  implicit class LicenseConfigurationUsageMutableBuilder[Self <: LicenseConfigurationUsage] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseConfigurationUsage](x: Self) {
     
-    @scala.inline
-    def setAssociationTime(value: DateTime): Self = StObject.set(x, "AssociationTime", value.asInstanceOf[js.Any])
+    inline def setAssociationTime(value: DateTime): Self = StObject.set(x, "AssociationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationTimeUndefined: Self = StObject.set(x, "AssociationTime", js.undefined)
+    inline def setAssociationTimeUndefined: Self = StObject.set(x, "AssociationTime", js.undefined)
     
-    @scala.inline
-    def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
+    inline def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedLicensesUndefined: Self = StObject.set(x, "ConsumedLicenses", js.undefined)
+    inline def setConsumedLicensesUndefined: Self = StObject.set(x, "ConsumedLicenses", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
-    @scala.inline
-    def setResourceOwnerId(value: String): Self = StObject.set(x, "ResourceOwnerId", value.asInstanceOf[js.Any])
+    inline def setResourceOwnerId(value: String): Self = StObject.set(x, "ResourceOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOwnerIdUndefined: Self = StObject.set(x, "ResourceOwnerId", js.undefined)
+    inline def setResourceOwnerIdUndefined: Self = StObject.set(x, "ResourceOwnerId", js.undefined)
     
-    @scala.inline
-    def setResourceStatus(value: String): Self = StObject.set(x, "ResourceStatus", value.asInstanceOf[js.Any])
+    inline def setResourceStatus(value: String): Self = StObject.set(x, "ResourceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceStatusUndefined: Self = StObject.set(x, "ResourceStatus", js.undefined)
+    inline def setResourceStatusUndefined: Self = StObject.set(x, "ResourceStatus", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

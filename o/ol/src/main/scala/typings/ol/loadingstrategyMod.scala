@@ -12,12 +12,9 @@ object loadingstrategyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def all(extent: Extent, resolution: Double): js.Array[Extent] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Extent]]
+  inline def all(extent: Extent, resolution: Double): js.Array[Extent] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Extent]]
   
-  @scala.inline
-  def bbox(extent: Extent, resolution: Double): js.Array[Extent] = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Extent]]
+  inline def bbox(extent: Extent, resolution: Double): js.Array[Extent] = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Extent]]
   
-  @scala.inline
-  def tile(tileGrid: default): js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tile")(tileGrid.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]]]
+  inline def tile(tileGrid: default): js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tile")(tileGrid.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]]]
 }

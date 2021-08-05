@@ -13,17 +13,14 @@ object anon {
   }
   object Lnglat {
     
-    @scala.inline
-    def apply(lnglat: LngLat): Lnglat = {
+    inline def apply(lnglat: LngLat): Lnglat = {
       val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lnglat]
     }
     
-    @scala.inline
-    implicit class LnglatMutableBuilder[Self <: Lnglat] (val x: Self) extends AnyVal {
+    extension [Self <: Lnglat](x: Self) {
       
-      @scala.inline
-      def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+      inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
     }
   }
 }

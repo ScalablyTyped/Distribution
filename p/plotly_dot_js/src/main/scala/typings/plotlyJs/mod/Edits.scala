@@ -28,8 +28,7 @@ trait Edits extends StObject {
 }
 object Edits {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotationPosition: Boolean,
     annotationTail: Boolean,
     annotationText: Boolean,
@@ -45,37 +44,26 @@ object Edits {
     __obj.asInstanceOf[Edits]
   }
   
-  @scala.inline
-  implicit class EditsMutableBuilder[Self <: Edits] (val x: Self) extends AnyVal {
+  extension [Self <: Edits](x: Self) {
     
-    @scala.inline
-    def setAnnotationPosition(value: Boolean): Self = StObject.set(x, "annotationPosition", value.asInstanceOf[js.Any])
+    inline def setAnnotationPosition(value: Boolean): Self = StObject.set(x, "annotationPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationTail(value: Boolean): Self = StObject.set(x, "annotationTail", value.asInstanceOf[js.Any])
+    inline def setAnnotationTail(value: Boolean): Self = StObject.set(x, "annotationTail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationText(value: Boolean): Self = StObject.set(x, "annotationText", value.asInstanceOf[js.Any])
+    inline def setAnnotationText(value: Boolean): Self = StObject.set(x, "annotationText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisTitleText(value: Boolean): Self = StObject.set(x, "axisTitleText", value.asInstanceOf[js.Any])
+    inline def setAxisTitleText(value: Boolean): Self = StObject.set(x, "axisTitleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorbarPosition(value: Boolean): Self = StObject.set(x, "colorbarPosition", value.asInstanceOf[js.Any])
+    inline def setColorbarPosition(value: Boolean): Self = StObject.set(x, "colorbarPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorbarTitleText(value: Boolean): Self = StObject.set(x, "colorbarTitleText", value.asInstanceOf[js.Any])
+    inline def setColorbarTitleText(value: Boolean): Self = StObject.set(x, "colorbarTitleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendPosition(value: Boolean): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
+    inline def setLegendPosition(value: Boolean): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendText(value: Boolean): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
+    inline def setLegendText(value: Boolean): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapePosition(value: Boolean): Self = StObject.set(x, "shapePosition", value.asInstanceOf[js.Any])
+    inline def setShapePosition(value: Boolean): Self = StObject.set(x, "shapePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleText(value: Boolean): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+    inline def setTitleText(value: Boolean): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
   }
 }

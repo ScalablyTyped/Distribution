@@ -14,19 +14,15 @@ trait FunctionEnvironment extends StObject {
 }
 object FunctionEnvironment {
   
-  @scala.inline
-  def apply(): FunctionEnvironment = {
+  inline def apply(): FunctionEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionEnvironment]
   }
   
-  @scala.inline
-  implicit class FunctionEnvironmentMutableBuilder[Self <: FunctionEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionEnvironment](x: Self) {
     
-    @scala.inline
-    def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
   }
 }

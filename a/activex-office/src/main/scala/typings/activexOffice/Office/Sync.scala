@@ -17,7 +17,7 @@ trait Sync extends StObject {
   
   val LastSyncTime: VarDate
   
-  @JSName("Office.Sync_typekey")
+  /* private */ @JSName("Office.Sync_typekey")
   var OfficeDotSync_typekey: Sync
   
   def OpenVersion(SyncVersionType: MsoSyncVersionType): Unit
@@ -36,8 +36,7 @@ trait Sync extends StObject {
 }
 object Sync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     ErrorType: MsoSyncErrorType,
@@ -57,46 +56,32 @@ object Sync {
     __obj.asInstanceOf[Sync]
   }
   
-  @scala.inline
-  implicit class SyncMutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
+  extension [Self <: Sync](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorType(value: MsoSyncErrorType): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: MsoSyncErrorType): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUpdate(value: () => Unit): Self = StObject.set(x, "GetUpdate", js.Any.fromFunction0(value))
+    inline def setGetUpdate(value: () => Unit): Self = StObject.set(x, "GetUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLastSyncTime(value: VarDate): Self = StObject.set(x, "LastSyncTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncTime(value: VarDate): Self = StObject.set(x, "LastSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotSync_typekey(value: Sync): Self = StObject.set(x, "Office.Sync_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotSync_typekey(value: Sync): Self = StObject.set(x, "Office.Sync_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenVersion(value: MsoSyncVersionType => Unit): Self = StObject.set(x, "OpenVersion", js.Any.fromFunction1(value))
+    inline def setOpenVersion(value: MsoSyncVersionType => Unit): Self = StObject.set(x, "OpenVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPutUpdate(value: () => Unit): Self = StObject.set(x, "PutUpdate", js.Any.fromFunction0(value))
+    inline def setPutUpdate(value: () => Unit): Self = StObject.set(x, "PutUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResolveConflict(value: MsoSyncConflictResolutionType => Unit): Self = StObject.set(x, "ResolveConflict", js.Any.fromFunction1(value))
+    inline def setResolveConflict(value: MsoSyncConflictResolutionType => Unit): Self = StObject.set(x, "ResolveConflict", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStatus(value: MsoSyncStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MsoSyncStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuspend(value: () => Unit): Self = StObject.set(x, "Unsuspend", js.Any.fromFunction0(value))
+    inline def setUnsuspend(value: () => Unit): Self = StObject.set(x, "Unsuspend", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWorkspaceLastChangedBy(value: String): Self = StObject.set(x, "WorkspaceLastChangedBy", value.asInstanceOf[js.Any])
+    inline def setWorkspaceLastChangedBy(value: String): Self = StObject.set(x, "WorkspaceLastChangedBy", value.asInstanceOf[js.Any])
   }
 }

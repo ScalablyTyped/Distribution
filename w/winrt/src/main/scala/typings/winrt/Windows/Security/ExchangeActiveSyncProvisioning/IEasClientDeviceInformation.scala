@@ -20,8 +20,7 @@ trait IEasClientDeviceInformation extends StObject {
 }
 object IEasClientDeviceInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendlyName: String,
     id: String,
     operatingSystem: String,
@@ -33,25 +32,18 @@ object IEasClientDeviceInformation {
     __obj.asInstanceOf[IEasClientDeviceInformation]
   }
   
-  @scala.inline
-  implicit class IEasClientDeviceInformationMutableBuilder[Self <: IEasClientDeviceInformation] (val x: Self) extends AnyVal {
+  extension [Self <: IEasClientDeviceInformation](x: Self) {
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemManufacturer(value: String): Self = StObject.set(x, "systemManufacturer", value.asInstanceOf[js.Any])
+    inline def setSystemManufacturer(value: String): Self = StObject.set(x, "systemManufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemProductName(value: String): Self = StObject.set(x, "systemProductName", value.asInstanceOf[js.Any])
+    inline def setSystemProductName(value: String): Self = StObject.set(x, "systemProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSku(value: String): Self = StObject.set(x, "systemSku", value.asInstanceOf[js.Any])
+    inline def setSystemSku(value: String): Self = StObject.set(x, "systemSku", value.asInstanceOf[js.Any])
   }
 }

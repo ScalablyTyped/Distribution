@@ -14,28 +14,21 @@ trait CommitResponse extends StObject {
 }
 object CommitResponse {
   
-  @scala.inline
-  def apply(): CommitResponse = {
+  inline def apply(): CommitResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitResponse]
   }
   
-  @scala.inline
-  implicit class CommitResponseMutableBuilder[Self <: CommitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CommitResponse](x: Self) {
     
-    @scala.inline
-    def setIndexUpdates(value: Double): Self = StObject.set(x, "indexUpdates", value.asInstanceOf[js.Any])
+    inline def setIndexUpdates(value: Double): Self = StObject.set(x, "indexUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUpdatesUndefined: Self = StObject.set(x, "indexUpdates", js.undefined)
+    inline def setIndexUpdatesUndefined: Self = StObject.set(x, "indexUpdates", js.undefined)
     
-    @scala.inline
-    def setMutationResults(value: js.Array[MutationResult]): Self = StObject.set(x, "mutationResults", value.asInstanceOf[js.Any])
+    inline def setMutationResults(value: js.Array[MutationResult]): Self = StObject.set(x, "mutationResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutationResultsUndefined: Self = StObject.set(x, "mutationResults", js.undefined)
+    inline def setMutationResultsUndefined: Self = StObject.set(x, "mutationResults", js.undefined)
     
-    @scala.inline
-    def setMutationResultsVarargs(value: MutationResult*): Self = StObject.set(x, "mutationResults", js.Array(value :_*))
+    inline def setMutationResultsVarargs(value: MutationResult*): Self = StObject.set(x, "mutationResults", js.Array(value :_*))
   }
 }

@@ -30,8 +30,7 @@ trait FireKeyDown extends StObject {
 }
 object FireKeyDown {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => js.Any,
     click: () => Unit,
     exists: () => Boolean,
@@ -48,40 +47,28 @@ object FireKeyDown {
     __obj.asInstanceOf[FireKeyDown]
   }
   
-  @scala.inline
-  implicit class FireKeyDownMutableBuilder[Self <: FireKeyDown] (val x: Self) extends AnyVal {
+  extension [Self <: FireKeyDown](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFireKeyDown(value: () => Boolean): Self = StObject.set(x, "fireKeyDown", js.Any.fromFunction0(value))
+    inline def setFireKeyDown(value: () => Boolean): Self = StObject.set(x, "fireKeyDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFireKeyUp(value: () => Boolean): Self = StObject.set(x, "fireKeyUp", js.Any.fromFunction0(value))
+    inline def setFireKeyUp(value: () => Boolean): Self = StObject.set(x, "fireKeyUp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFireMouseDown(value: () => Boolean): Self = StObject.set(x, "fireMouseDown", js.Any.fromFunction0(value))
+    inline def setFireMouseDown(value: () => Boolean): Self = StObject.set(x, "fireMouseDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasFocusState(value: () => Boolean): Self = StObject.set(x, "hasFocusState", js.Any.fromFunction0(value))
+    inline def setHasFocusState(value: () => Boolean): Self = StObject.set(x, "hasFocusState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasFocusVisibleState(value: () => Boolean): Self = StObject.set(x, "hasFocusVisibleState", js.Any.fromFunction0(value))
+    inline def setHasFocusVisibleState(value: () => Boolean): Self = StObject.set(x, "hasFocusVisibleState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTabIn(value: () => Unit): Self = StObject.set(x, "tabIn", js.Any.fromFunction0(value))
+    inline def setTabIn(value: () => Unit): Self = StObject.set(x, "tabIn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTabOut(value: () => Unit): Self = StObject.set(x, "tabOut", js.Any.fromFunction0(value))
+    inline def setTabOut(value: () => Unit): Self = StObject.set(x, "tabOut", js.Any.fromFunction0(value))
   }
 }

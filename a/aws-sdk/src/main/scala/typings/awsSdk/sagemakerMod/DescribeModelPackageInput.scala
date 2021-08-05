@@ -13,16 +13,13 @@ trait DescribeModelPackageInput extends StObject {
 }
 object DescribeModelPackageInput {
   
-  @scala.inline
-  def apply(ModelPackageName: VersionedArnOrName): DescribeModelPackageInput = {
+  inline def apply(ModelPackageName: VersionedArnOrName): DescribeModelPackageInput = {
     val __obj = js.Dynamic.literal(ModelPackageName = ModelPackageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeModelPackageInput]
   }
   
-  @scala.inline
-  implicit class DescribeModelPackageInputMutableBuilder[Self <: DescribeModelPackageInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeModelPackageInput](x: Self) {
     
-    @scala.inline
-    def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
+    inline def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
   }
 }

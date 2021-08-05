@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Phonetic")
 @js.native
-class Phonetic protected ()
+/* private */ class Phonetic ()
   extends StObject
      with typings.activexExcel.Excel.Phonetic {
   
@@ -23,7 +23,7 @@ class Phonetic protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Phonetic_typekey")
   var ExcelDotPhonetic_typekey: typings.activexExcel.Excel.Phonetic = js.native
   

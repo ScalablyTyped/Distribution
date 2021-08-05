@@ -23,19 +23,15 @@ trait ASPxClientRichEditCharacterPropertiesChangedEventArgs
 }
 object ASPxClientRichEditCharacterPropertiesChangedEventArgs {
   
-  @scala.inline
-  def apply(interval: Interval, subDocumentId: Double): ASPxClientRichEditCharacterPropertiesChangedEventArgs = {
+  inline def apply(interval: Interval, subDocumentId: Double): ASPxClientRichEditCharacterPropertiesChangedEventArgs = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], subDocumentId = subDocumentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditCharacterPropertiesChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditCharacterPropertiesChangedEventArgsMutableBuilder[Self <: ASPxClientRichEditCharacterPropertiesChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditCharacterPropertiesChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDocumentId(value: Double): Self = StObject.set(x, "subDocumentId", value.asInstanceOf[js.Any])
+    inline def setSubDocumentId(value: Double): Self = StObject.set(x, "subDocumentId", value.asInstanceOf[js.Any])
   }
 }

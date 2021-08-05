@@ -23,22 +23,17 @@ trait RevokeCertificateRequest extends StObject {
 }
 object RevokeCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateAuthorityArn: Arn, CertificateSerial: String128, RevocationReason: RevocationReason): RevokeCertificateRequest = {
+  inline def apply(CertificateAuthorityArn: Arn, CertificateSerial: String128, RevocationReason: RevocationReason): RevokeCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], CertificateSerial = CertificateSerial.asInstanceOf[js.Any], RevocationReason = RevocationReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeCertificateRequest]
   }
   
-  @scala.inline
-  implicit class RevokeCertificateRequestMutableBuilder[Self <: RevokeCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateSerial(value: String128): Self = StObject.set(x, "CertificateSerial", value.asInstanceOf[js.Any])
+    inline def setCertificateSerial(value: String128): Self = StObject.set(x, "CertificateSerial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevocationReason(value: RevocationReason): Self = StObject.set(x, "RevocationReason", value.asInstanceOf[js.Any])
+    inline def setRevocationReason(value: RevocationReason): Self = StObject.set(x, "RevocationReason", value.asInstanceOf[js.Any])
   }
 }

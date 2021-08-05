@@ -14,28 +14,21 @@ trait SqlServerUserDetails extends StObject {
 }
 object SqlServerUserDetails {
   
-  @scala.inline
-  def apply(): SqlServerUserDetails = {
+  inline def apply(): SqlServerUserDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlServerUserDetails]
   }
   
-  @scala.inline
-  implicit class SqlServerUserDetailsMutableBuilder[Self <: SqlServerUserDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SqlServerUserDetails](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setServerRoles(value: js.Array[String]): Self = StObject.set(x, "serverRoles", value.asInstanceOf[js.Any])
+    inline def setServerRoles(value: js.Array[String]): Self = StObject.set(x, "serverRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerRolesUndefined: Self = StObject.set(x, "serverRoles", js.undefined)
+    inline def setServerRolesUndefined: Self = StObject.set(x, "serverRoles", js.undefined)
     
-    @scala.inline
-    def setServerRolesVarargs(value: String*): Self = StObject.set(x, "serverRoles", js.Array(value :_*))
+    inline def setServerRolesVarargs(value: String*): Self = StObject.set(x, "serverRoles", js.Array(value :_*))
   }
 }

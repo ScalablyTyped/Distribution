@@ -13,16 +13,13 @@ trait DeleteAcceleratorRequest extends StObject {
 }
 object DeleteAcceleratorRequest {
   
-  @scala.inline
-  def apply(AcceleratorArn: GenericString): DeleteAcceleratorRequest = {
+  inline def apply(AcceleratorArn: GenericString): DeleteAcceleratorRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAcceleratorRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAcceleratorRequestMutableBuilder[Self <: DeleteAcceleratorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAcceleratorRequest](x: Self) {
     
-    @scala.inline
-    def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
+    inline def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
   }
 }

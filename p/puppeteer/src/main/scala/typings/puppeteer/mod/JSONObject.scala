@@ -11,8 +11,7 @@ trait JSONObject
      with _Serializable
 object JSONObject {
   
-  @scala.inline
-  def apply(): JSONObject = {
+  inline def apply(): JSONObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONObject]
   }

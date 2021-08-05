@@ -15,7 +15,7 @@ class IonIcon protected ()
      with typings.ionicons.componentsMod.Components.IonIcon {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If enabled, ion-icon will be loaded lazily when it's visible in the viewport. Default, `false`.
@@ -36,5 +36,5 @@ class IonIcon protected ()
   /* CompleteClass */
   var sanitize: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

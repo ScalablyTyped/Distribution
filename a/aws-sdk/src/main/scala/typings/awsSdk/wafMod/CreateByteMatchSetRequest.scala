@@ -18,19 +18,15 @@ trait CreateByteMatchSetRequest extends StObject {
 }
 object CreateByteMatchSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateByteMatchSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateByteMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateByteMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class CreateByteMatchSetRequestMutableBuilder[Self <: CreateByteMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateByteMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

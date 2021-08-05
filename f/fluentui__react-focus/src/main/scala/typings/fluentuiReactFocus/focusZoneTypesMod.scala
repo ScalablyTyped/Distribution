@@ -78,22 +78,19 @@ object focusZoneTypesMod {
     @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone.types", "FocusZoneTabbableElements.all")
     @js.native
     def all: `1` = js.native
-    @scala.inline
-    def all_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
+    inline def all_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
     
     /** Tabbing is allowed only on input elements */
     @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone.types", "FocusZoneTabbableElements.inputOnly")
     @js.native
     def inputOnly: `2` = js.native
-    @scala.inline
-    def inputOnly_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputOnly")(x.asInstanceOf[js.Any])
+    inline def inputOnly_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputOnly")(x.asInstanceOf[js.Any])
     
     /** Tabbing is not allowed */
     @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone.types", "FocusZoneTabbableElements.none")
     @js.native
     def none: `0` = js.native
-    @scala.inline
-    def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -356,226 +353,154 @@ object focusZoneTypesMod {
   }
   object IFocusZoneProps {
     
-    @scala.inline
-    def apply(): IFocusZoneProps = {
+    inline def apply(): IFocusZoneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFocusZoneProps]
     }
     
-    @scala.inline
-    implicit class IFocusZonePropsMutableBuilder[Self <: IFocusZoneProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFocusZoneProps](x: Self) {
       
-      @scala.inline
-      def setAllowFocusRoot(value: Boolean): Self = StObject.set(x, "allowFocusRoot", value.asInstanceOf[js.Any])
+      inline def setAllowFocusRoot(value: Boolean): Self = StObject.set(x, "allowFocusRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFocusRootUndefined: Self = StObject.set(x, "allowFocusRoot", js.undefined)
+      inline def setAllowFocusRootUndefined: Self = StObject.set(x, "allowFocusRoot", js.undefined)
       
-      @scala.inline
-      def setAllowTabKey(value: Boolean): Self = StObject.set(x, "allowTabKey", value.asInstanceOf[js.Any])
+      inline def setAllowTabKey(value: Boolean): Self = StObject.set(x, "allowTabKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTabKeyUndefined: Self = StObject.set(x, "allowTabKey", js.undefined)
+      inline def setAllowTabKeyUndefined: Self = StObject.set(x, "allowTabKey", js.undefined)
       
-      @scala.inline
-      def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
+      inline def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
+      inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
-      @scala.inline
-      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setCheckForNoWrap(value: Boolean): Self = StObject.set(x, "checkForNoWrap", value.asInstanceOf[js.Any])
+      inline def setCheckForNoWrap(value: Boolean): Self = StObject.set(x, "checkForNoWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckForNoWrapUndefined: Self = StObject.set(x, "checkForNoWrap", js.undefined)
+      inline def setCheckForNoWrapUndefined: Self = StObject.set(x, "checkForNoWrap", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IFocusZone]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IFocusZone]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IFocusZone | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IFocusZone | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveElement(value: String): Self = StObject.set(x, "defaultActiveElement", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveElement(value: String): Self = StObject.set(x, "defaultActiveElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActiveElementUndefined: Self = StObject.set(x, "defaultActiveElement", js.undefined)
+      inline def setDefaultActiveElementUndefined: Self = StObject.set(x, "defaultActiveElement", js.undefined)
       
-      @scala.inline
-      def setDefaultTabbableElement(value: String | (js.Function1[/* root */ HTMLElement, HTMLElement])): Self = StObject.set(x, "defaultTabbableElement", value.asInstanceOf[js.Any])
+      inline def setDefaultTabbableElement(value: String | (js.Function1[/* root */ HTMLElement, HTMLElement])): Self = StObject.set(x, "defaultTabbableElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTabbableElementFunction1(value: /* root */ HTMLElement => HTMLElement): Self = StObject.set(x, "defaultTabbableElement", js.Any.fromFunction1(value))
+      inline def setDefaultTabbableElementFunction1(value: /* root */ HTMLElement => HTMLElement): Self = StObject.set(x, "defaultTabbableElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultTabbableElementUndefined: Self = StObject.set(x, "defaultTabbableElement", js.undefined)
+      inline def setDefaultTabbableElementUndefined: Self = StObject.set(x, "defaultTabbableElement", js.undefined)
       
-      @scala.inline
-      def setDirection(value: FocusZoneDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: FocusZoneDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDoNotAllowFocusEventToPropagate(value: Boolean): Self = StObject.set(x, "doNotAllowFocusEventToPropagate", value.asInstanceOf[js.Any])
+      inline def setDoNotAllowFocusEventToPropagate(value: Boolean): Self = StObject.set(x, "doNotAllowFocusEventToPropagate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotAllowFocusEventToPropagateUndefined: Self = StObject.set(x, "doNotAllowFocusEventToPropagate", js.undefined)
+      inline def setDoNotAllowFocusEventToPropagateUndefined: Self = StObject.set(x, "doNotAllowFocusEventToPropagate", js.undefined)
       
-      @scala.inline
-      def setElementRef(value: Ref[HTMLElement]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
+      inline def setElementRef(value: Ref[HTMLElement]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
+      inline def setElementRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementRefNull: Self = StObject.set(x, "elementRef", null)
+      inline def setElementRefNull: Self = StObject.set(x, "elementRef", null)
       
-      @scala.inline
-      def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
+      inline def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
       
-      @scala.inline
-      def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+      inline def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
+      inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
       
-      @scala.inline
-      def setHandleTabKey(value: FocusZoneTabbableElements): Self = StObject.set(x, "handleTabKey", value.asInstanceOf[js.Any])
+      inline def setHandleTabKey(value: FocusZoneTabbableElements): Self = StObject.set(x, "handleTabKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleTabKeyUndefined: Self = StObject.set(x, "handleTabKey", js.undefined)
+      inline def setHandleTabKeyUndefined: Self = StObject.set(x, "handleTabKey", js.undefined)
       
-      @scala.inline
-      def setIsCircularNavigation(value: Boolean): Self = StObject.set(x, "isCircularNavigation", value.asInstanceOf[js.Any])
+      inline def setIsCircularNavigation(value: Boolean): Self = StObject.set(x, "isCircularNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCircularNavigationUndefined: Self = StObject.set(x, "isCircularNavigation", js.undefined)
+      inline def setIsCircularNavigationUndefined: Self = StObject.set(x, "isCircularNavigation", js.undefined)
       
-      @scala.inline
-      def setIsInnerZoneKeystroke(value: /* ev */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "isInnerZoneKeystroke", js.Any.fromFunction1(value))
+      inline def setIsInnerZoneKeystroke(value: /* ev */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "isInnerZoneKeystroke", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsInnerZoneKeystrokeUndefined: Self = StObject.set(x, "isInnerZoneKeystroke", js.undefined)
+      inline def setIsInnerZoneKeystrokeUndefined: Self = StObject.set(x, "isInnerZoneKeystroke", js.undefined)
       
-      @scala.inline
-      def setOnActiveElementChanged(
+      inline def setOnActiveElementChanged(
         value: (/* element */ js.UndefOr[HTMLElement], /* ev */ js.UndefOr[FocusEvent[HTMLElement]]) => Unit
       ): Self = StObject.set(x, "onActiveElementChanged", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnActiveElementChangedUndefined: Self = StObject.set(x, "onActiveElementChanged", js.undefined)
+      inline def setOnActiveElementChangedUndefined: Self = StObject.set(x, "onActiveElementChanged", js.undefined)
       
-      @scala.inline
-      def setOnBeforeFocus(value: /* childElement */ js.UndefOr[HTMLElement] => Boolean): Self = StObject.set(x, "onBeforeFocus", js.Any.fromFunction1(value))
+      inline def setOnBeforeFocus(value: /* childElement */ js.UndefOr[HTMLElement] => Boolean): Self = StObject.set(x, "onBeforeFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeFocusUndefined: Self = StObject.set(x, "onBeforeFocus", js.undefined)
+      inline def setOnBeforeFocusUndefined: Self = StObject.set(x, "onBeforeFocus", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* event */ FocusEvent[HTMLElement | FocusZone] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* event */ FocusEvent[HTMLElement | FocusZone] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusNotification(value: () => Unit): Self = StObject.set(x, "onFocusNotification", js.Any.fromFunction0(value))
+      inline def setOnFocusNotification(value: () => Unit): Self = StObject.set(x, "onFocusNotification", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFocusNotificationUndefined: Self = StObject.set(x, "onFocusNotification", js.undefined)
+      inline def setOnFocusNotificationUndefined: Self = StObject.set(x, "onFocusNotification", js.undefined)
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setPagingSupportDisabled(value: Boolean): Self = StObject.set(x, "pagingSupportDisabled", value.asInstanceOf[js.Any])
+      inline def setPagingSupportDisabled(value: Boolean): Self = StObject.set(x, "pagingSupportDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagingSupportDisabledUndefined: Self = StObject.set(x, "pagingSupportDisabled", js.undefined)
+      inline def setPagingSupportDisabledUndefined: Self = StObject.set(x, "pagingSupportDisabled", js.undefined)
       
-      @scala.inline
-      def setPreventDefaultWhenHandled(value: Boolean): Self = StObject.set(x, "preventDefaultWhenHandled", value.asInstanceOf[js.Any])
+      inline def setPreventDefaultWhenHandled(value: Boolean): Self = StObject.set(x, "preventDefaultWhenHandled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultWhenHandledUndefined: Self = StObject.set(x, "preventDefaultWhenHandled", js.undefined)
+      inline def setPreventDefaultWhenHandledUndefined: Self = StObject.set(x, "preventDefaultWhenHandled", js.undefined)
       
-      @scala.inline
-      def setPreventFocusRestoration(value: Boolean): Self = StObject.set(x, "preventFocusRestoration", value.asInstanceOf[js.Any])
+      inline def setPreventFocusRestoration(value: Boolean): Self = StObject.set(x, "preventFocusRestoration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventFocusRestorationUndefined: Self = StObject.set(x, "preventFocusRestoration", js.undefined)
+      inline def setPreventFocusRestorationUndefined: Self = StObject.set(x, "preventFocusRestoration", js.undefined)
       
-      @scala.inline
-      def setRootProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "rootProps", value.asInstanceOf[js.Any])
+      inline def setRootProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "rootProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPropsUndefined: Self = StObject.set(x, "rootProps", js.undefined)
+      inline def setRootPropsUndefined: Self = StObject.set(x, "rootProps", js.undefined)
       
-      @scala.inline
-      def setShouldEnterInnerZone(value: /* ev */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "shouldEnterInnerZone", js.Any.fromFunction1(value))
+      inline def setShouldEnterInnerZone(value: /* ev */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "shouldEnterInnerZone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldEnterInnerZoneUndefined: Self = StObject.set(x, "shouldEnterInnerZone", js.undefined)
+      inline def setShouldEnterInnerZoneUndefined: Self = StObject.set(x, "shouldEnterInnerZone", js.undefined)
       
-      @scala.inline
-      def setShouldFocusInnerElementWhenReceivedFocus(value: Boolean): Self = StObject.set(x, "shouldFocusInnerElementWhenReceivedFocus", value.asInstanceOf[js.Any])
+      inline def setShouldFocusInnerElementWhenReceivedFocus(value: Boolean): Self = StObject.set(x, "shouldFocusInnerElementWhenReceivedFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFocusInnerElementWhenReceivedFocusUndefined: Self = StObject.set(x, "shouldFocusInnerElementWhenReceivedFocus", js.undefined)
+      inline def setShouldFocusInnerElementWhenReceivedFocusUndefined: Self = StObject.set(x, "shouldFocusInnerElementWhenReceivedFocus", js.undefined)
       
-      @scala.inline
-      def setShouldFocusOnMount(value: Boolean): Self = StObject.set(x, "shouldFocusOnMount", value.asInstanceOf[js.Any])
+      inline def setShouldFocusOnMount(value: Boolean): Self = StObject.set(x, "shouldFocusOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFocusOnMountUndefined: Self = StObject.set(x, "shouldFocusOnMount", js.undefined)
+      inline def setShouldFocusOnMountUndefined: Self = StObject.set(x, "shouldFocusOnMount", js.undefined)
       
-      @scala.inline
-      def setShouldInputLoseFocusOnArrowKey(value: /* inputElement */ HTMLInputElement => Boolean): Self = StObject.set(x, "shouldInputLoseFocusOnArrowKey", js.Any.fromFunction1(value))
+      inline def setShouldInputLoseFocusOnArrowKey(value: /* inputElement */ HTMLInputElement => Boolean): Self = StObject.set(x, "shouldInputLoseFocusOnArrowKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldInputLoseFocusOnArrowKeyUndefined: Self = StObject.set(x, "shouldInputLoseFocusOnArrowKey", js.undefined)
+      inline def setShouldInputLoseFocusOnArrowKeyUndefined: Self = StObject.set(x, "shouldInputLoseFocusOnArrowKey", js.undefined)
       
-      @scala.inline
-      def setShouldRaiseClicks(value: Boolean): Self = StObject.set(x, "shouldRaiseClicks", value.asInstanceOf[js.Any])
+      inline def setShouldRaiseClicks(value: Boolean): Self = StObject.set(x, "shouldRaiseClicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRaiseClicksUndefined: Self = StObject.set(x, "shouldRaiseClicks", js.undefined)
+      inline def setShouldRaiseClicksUndefined: Self = StObject.set(x, "shouldRaiseClicks", js.undefined)
       
-      @scala.inline
-      def setShouldReceiveFocus(value: /* childElement */ js.UndefOr[HTMLElement] => Boolean): Self = StObject.set(x, "shouldReceiveFocus", js.Any.fromFunction1(value))
+      inline def setShouldReceiveFocus(value: /* childElement */ js.UndefOr[HTMLElement] => Boolean): Self = StObject.set(x, "shouldReceiveFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldReceiveFocusUndefined: Self = StObject.set(x, "shouldReceiveFocus", js.undefined)
+      inline def setShouldReceiveFocusUndefined: Self = StObject.set(x, "shouldReceiveFocus", js.undefined)
       
-      @scala.inline
-      def setShouldResetActiveElementWhenTabFromZone(value: Boolean): Self = StObject.set(x, "shouldResetActiveElementWhenTabFromZone", value.asInstanceOf[js.Any])
+      inline def setShouldResetActiveElementWhenTabFromZone(value: Boolean): Self = StObject.set(x, "shouldResetActiveElementWhenTabFromZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldResetActiveElementWhenTabFromZoneUndefined: Self = StObject.set(x, "shouldResetActiveElementWhenTabFromZone", js.undefined)
+      inline def setShouldResetActiveElementWhenTabFromZoneUndefined: Self = StObject.set(x, "shouldResetActiveElementWhenTabFromZone", js.undefined)
       
-      @scala.inline
-      def setStopFocusPropagation(value: Boolean): Self = StObject.set(x, "stopFocusPropagation", value.asInstanceOf[js.Any])
+      inline def setStopFocusPropagation(value: Boolean): Self = StObject.set(x, "stopFocusPropagation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopFocusPropagationUndefined: Self = StObject.set(x, "stopFocusPropagation", js.undefined)
+      inline def setStopFocusPropagationUndefined: Self = StObject.set(x, "stopFocusPropagation", js.undefined)
     }
   }
 }

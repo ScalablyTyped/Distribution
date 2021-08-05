@@ -28,37 +28,27 @@ trait AwsDynamoDbTableRestoreSummary extends StObject {
 }
 object AwsDynamoDbTableRestoreSummary {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableRestoreSummary = {
+  inline def apply(): AwsDynamoDbTableRestoreSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableRestoreSummary]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableRestoreSummaryMutableBuilder[Self <: AwsDynamoDbTableRestoreSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableRestoreSummary](x: Self) {
     
-    @scala.inline
-    def setRestoreDateTime(value: NonEmptyString): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+    inline def setRestoreDateTime(value: NonEmptyString): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreDateTimeUndefined: Self = StObject.set(x, "RestoreDateTime", js.undefined)
+    inline def setRestoreDateTimeUndefined: Self = StObject.set(x, "RestoreDateTime", js.undefined)
     
-    @scala.inline
-    def setRestoreInProgress(value: Boolean): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
+    inline def setRestoreInProgress(value: Boolean): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreInProgressUndefined: Self = StObject.set(x, "RestoreInProgress", js.undefined)
+    inline def setRestoreInProgressUndefined: Self = StObject.set(x, "RestoreInProgress", js.undefined)
     
-    @scala.inline
-    def setSourceBackupArn(value: NonEmptyString): Self = StObject.set(x, "SourceBackupArn", value.asInstanceOf[js.Any])
+    inline def setSourceBackupArn(value: NonEmptyString): Self = StObject.set(x, "SourceBackupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupArnUndefined: Self = StObject.set(x, "SourceBackupArn", js.undefined)
+    inline def setSourceBackupArnUndefined: Self = StObject.set(x, "SourceBackupArn", js.undefined)
     
-    @scala.inline
-    def setSourceTableArn(value: NonEmptyString): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
+    inline def setSourceTableArn(value: NonEmptyString): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
+    inline def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
   }
 }

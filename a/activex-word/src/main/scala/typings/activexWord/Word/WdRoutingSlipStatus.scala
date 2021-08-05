@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRoutingSlipStatus extends StObject
 object WdRoutingSlipStatus {
   
-  @scala.inline
-  def wdNotYetRouted: `0` = 0.asInstanceOf[`0`]
+  inline def wdNotYetRouted: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRouteComplete: `2` = 2.asInstanceOf[`2`]
+  inline def wdRouteComplete: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdRouteInProgress: `1` = 1.asInstanceOf[`1`]
+  inline def wdRouteInProgress: `1` = 1.asInstanceOf[`1`]
 }

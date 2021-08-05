@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Section")
 @js.native
-class Section protected ()
+/* private */ class Section ()
   extends StObject
      with typings.activexWord.Word.Section {
   
@@ -40,7 +40,7 @@ class Section protected ()
   /* CompleteClass */
   override val Range: typings.activexWord.Word.Range = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Section_typekey")
   var WordDotSection_typekey: typings.activexWord.Word.Section = js.native
 }

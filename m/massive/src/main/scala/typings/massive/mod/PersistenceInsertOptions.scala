@@ -12,25 +12,19 @@ trait PersistenceInsertOptions extends StObject {
 }
 object PersistenceInsertOptions {
   
-  @scala.inline
-  def apply(): PersistenceInsertOptions = {
+  inline def apply(): PersistenceInsertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistenceInsertOptions]
   }
   
-  @scala.inline
-  implicit class PersistenceInsertOptionsMutableBuilder[Self <: PersistenceInsertOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PersistenceInsertOptions](x: Self) {
     
-    @scala.inline
-    def setDeepInsert(value: Boolean): Self = StObject.set(x, "deepInsert", value.asInstanceOf[js.Any])
+    inline def setDeepInsert(value: Boolean): Self = StObject.set(x, "deepInsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepInsertUndefined: Self = StObject.set(x, "deepInsert", js.undefined)
+    inline def setDeepInsertUndefined: Self = StObject.set(x, "deepInsert", js.undefined)
     
-    @scala.inline
-    def setOnConflictIgnore(value: Boolean): Self = StObject.set(x, "onConflictIgnore", value.asInstanceOf[js.Any])
+    inline def setOnConflictIgnore(value: Boolean): Self = StObject.set(x, "onConflictIgnore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnConflictIgnoreUndefined: Self = StObject.set(x, "onConflictIgnore", js.undefined)
+    inline def setOnConflictIgnoreUndefined: Self = StObject.set(x, "onConflictIgnore", js.undefined)
   }
 }

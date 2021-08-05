@@ -26,26 +26,20 @@ object event {
   }
   object IDispatcher {
     
-    @scala.inline
-    def apply(): IDispatcher = {
+    inline def apply(): IDispatcher = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDispatcher]
     }
     
-    @scala.inline
-    implicit class IDispatcherMutableBuilder[Self <: IDispatcher] (val x: Self) extends AnyVal {
+    extension [Self <: IDispatcher](x: Self) {
       
-      @scala.inline
-      def setGetPublishers(value: () => js.Any): Self = StObject.set(x, "getPublishers", js.Any.fromFunction0(value))
+      inline def setGetPublishers(value: () => js.Any): Self = StObject.set(x, "getPublishers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPublishersUndefined: Self = StObject.set(x, "getPublishers", js.undefined)
+      inline def setGetPublishersUndefined: Self = StObject.set(x, "getPublishers", js.undefined)
       
-      @scala.inline
-      def setSetPublishers(value: /* publishers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPublishers", js.Any.fromFunction1(value))
+      inline def setSetPublishers(value: /* publishers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPublishers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPublishersUndefined: Self = StObject.set(x, "setPublishers", js.undefined)
+      inline def setSetPublishersUndefined: Self = StObject.set(x, "setPublishers", js.undefined)
     }
   }
   
@@ -103,76 +97,54 @@ object event {
   }
   object IDom {
     
-    @scala.inline
-    def apply(): IDom = {
+    inline def apply(): IDom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDom]
     }
     
-    @scala.inline
-    implicit class IDomMutableBuilder[Self <: IDom] (val x: Self) extends AnyVal {
+    extension [Self <: IDom](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setGetPageX(value: () => Double): Self = StObject.set(x, "getPageX", js.Any.fromFunction0(value))
+      inline def setGetPageX(value: () => Double): Self = StObject.set(x, "getPageX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageXUndefined: Self = StObject.set(x, "getPageX", js.undefined)
+      inline def setGetPageXUndefined: Self = StObject.set(x, "getPageX", js.undefined)
       
-      @scala.inline
-      def setGetPageY(value: () => Double): Self = StObject.set(x, "getPageY", js.Any.fromFunction0(value))
+      inline def setGetPageY(value: () => Double): Self = StObject.set(x, "getPageY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageYUndefined: Self = StObject.set(x, "getPageY", js.undefined)
+      inline def setGetPageYUndefined: Self = StObject.set(x, "getPageY", js.undefined)
       
-      @scala.inline
-      def setGetTarget(
+      inline def setGetTarget(
         value: (/* selector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement
       ): Self = StObject.set(x, "getTarget", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
+      inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
       
-      @scala.inline
-      def setGetTime(value: () => js.Any): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      inline def setGetTime(value: () => js.Any): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeUndefined: Self = StObject.set(x, "getTime", js.undefined)
+      inline def setGetTimeUndefined: Self = StObject.set(x, "getTime", js.undefined)
       
-      @scala.inline
-      def setGetXY(value: () => Array): Self = StObject.set(x, "getXY", js.Any.fromFunction0(value))
+      inline def setGetXY(value: () => Array): Self = StObject.set(x, "getXY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetXYUndefined: Self = StObject.set(x, "getXY", js.undefined)
+      inline def setGetXYUndefined: Self = StObject.set(x, "getXY", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
+      inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
+      inline def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -208,56 +180,40 @@ object event {
   }
   object IEvent {
     
-    @scala.inline
-    def apply(): IEvent = {
+    inline def apply(): IEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEvent]
     }
     
-    @scala.inline
-    implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IEvent](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setStopEvent(value: () => IEvent): Self = StObject.set(x, "stopEvent", js.Any.fromFunction0(value))
+      inline def setStopEvent(value: () => IEvent): Self = StObject.set(x, "stopEvent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
+      inline def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
       
-      @scala.inline
-      def setStopPropagation(value: () => IEvent): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => IEvent): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+      inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     }
   }
   
@@ -307,38 +263,28 @@ object event {
     }
     object ITouchGesture {
       
-      @scala.inline
-      def apply(): ITouchGesture = {
+      inline def apply(): ITouchGesture = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ITouchGesture]
       }
       
-      @scala.inline
-      implicit class ITouchGestureMutableBuilder[Self <: ITouchGesture] (val x: Self) extends AnyVal {
+      extension [Self <: ITouchGesture](x: Self) {
         
-        @scala.inline
-        def setGetMoveThrottle(value: () => Double): Self = StObject.set(x, "getMoveThrottle", js.Any.fromFunction0(value))
+        inline def setGetMoveThrottle(value: () => Double): Self = StObject.set(x, "getMoveThrottle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMoveThrottleUndefined: Self = StObject.set(x, "getMoveThrottle", js.undefined)
+        inline def setGetMoveThrottleUndefined: Self = StObject.set(x, "getMoveThrottle", js.undefined)
         
-        @scala.inline
-        def setGetRecognizers(value: () => js.Any): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
+        inline def setGetRecognizers(value: () => js.Any): Self = StObject.set(x, "getRecognizers", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetRecognizersUndefined: Self = StObject.set(x, "getRecognizers", js.undefined)
+        inline def setGetRecognizersUndefined: Self = StObject.set(x, "getRecognizers", js.undefined)
         
-        @scala.inline
-        def setSetMoveThrottle(value: /* moveThrottle */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMoveThrottle", js.Any.fromFunction1(value))
+        inline def setSetMoveThrottle(value: /* moveThrottle */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMoveThrottle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMoveThrottleUndefined: Self = StObject.set(x, "setMoveThrottle", js.undefined)
+        inline def setSetMoveThrottleUndefined: Self = StObject.set(x, "setMoveThrottle", js.undefined)
         
-        @scala.inline
-        def setSetRecognizers(value: /* recognizers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRecognizers", js.Any.fromFunction1(value))
+        inline def setSetRecognizers(value: /* recognizers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRecognizers", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetRecognizersUndefined: Self = StObject.set(x, "setRecognizers", js.undefined)
+        inline def setSetRecognizersUndefined: Self = StObject.set(x, "setRecognizers", js.undefined)
       }
     }
   }
@@ -361,26 +307,20 @@ object event {
     }
     object IDoubleTap {
       
-      @scala.inline
-      def apply(): IDoubleTap = {
+      inline def apply(): IDoubleTap = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IDoubleTap]
       }
       
-      @scala.inline
-      implicit class IDoubleTapMutableBuilder[Self <: IDoubleTap] (val x: Self) extends AnyVal {
+      extension [Self <: IDoubleTap](x: Self) {
         
-        @scala.inline
-        def setGetMaxDuration(value: () => Double): Self = StObject.set(x, "getMaxDuration", js.Any.fromFunction0(value))
+        inline def setGetMaxDuration(value: () => Double): Self = StObject.set(x, "getMaxDuration", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMaxDurationUndefined: Self = StObject.set(x, "getMaxDuration", js.undefined)
+        inline def setGetMaxDurationUndefined: Self = StObject.set(x, "getMaxDuration", js.undefined)
         
-        @scala.inline
-        def setSetMaxDuration(value: /* maxDuration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxDuration", js.Any.fromFunction1(value))
+        inline def setSetMaxDuration(value: /* maxDuration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxDuration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMaxDurationUndefined: Self = StObject.set(x, "setMaxDuration", js.undefined)
+        inline def setSetMaxDurationUndefined: Self = StObject.set(x, "setMaxDuration", js.undefined)
       }
     }
     
@@ -403,32 +343,24 @@ object event {
     }
     object IDrag {
       
-      @scala.inline
-      def apply(): IDrag = {
+      inline def apply(): IDrag = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IDrag]
       }
       
-      @scala.inline
-      implicit class IDragMutableBuilder[Self <: IDrag] (val x: Self) extends AnyVal {
+      extension [Self <: IDrag](x: Self) {
         
-        @scala.inline
-        def setGetMinDistance(value: () => Double): Self = StObject.set(x, "getMinDistance", js.Any.fromFunction0(value))
+        inline def setGetMinDistance(value: () => Double): Self = StObject.set(x, "getMinDistance", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMinDistanceUndefined: Self = StObject.set(x, "getMinDistance", js.undefined)
+        inline def setGetMinDistanceUndefined: Self = StObject.set(x, "getMinDistance", js.undefined)
         
-        @scala.inline
-        def setMinDistance(value: Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
+        inline def setMinDistance(value: Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
+        inline def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
         
-        @scala.inline
-        def setSetMinDistance(value: /* minDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinDistance", js.Any.fromFunction1(value))
+        inline def setSetMinDistance(value: /* minDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinDistance", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMinDistanceUndefined: Self = StObject.set(x, "setMinDistance", js.undefined)
+        inline def setSetMinDistanceUndefined: Self = StObject.set(x, "setMinDistance", js.undefined)
       }
     }
     
@@ -437,8 +369,7 @@ object event {
          with ISwipe
     object IEdgeSwipe {
       
-      @scala.inline
-      def apply(): IEdgeSwipe = {
+      inline def apply(): IEdgeSwipe = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IEdgeSwipe]
       }
@@ -462,26 +393,20 @@ object event {
     }
     object ILongPress {
       
-      @scala.inline
-      def apply(): ILongPress = {
+      inline def apply(): ILongPress = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ILongPress]
       }
       
-      @scala.inline
-      implicit class ILongPressMutableBuilder[Self <: ILongPress] (val x: Self) extends AnyVal {
+      extension [Self <: ILongPress](x: Self) {
         
-        @scala.inline
-        def setGetMinDuration(value: () => Double): Self = StObject.set(x, "getMinDuration", js.Any.fromFunction0(value))
+        inline def setGetMinDuration(value: () => Double): Self = StObject.set(x, "getMinDuration", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMinDurationUndefined: Self = StObject.set(x, "getMinDuration", js.undefined)
+        inline def setGetMinDurationUndefined: Self = StObject.set(x, "getMinDuration", js.undefined)
         
-        @scala.inline
-        def setSetMinDuration(value: /* minDuration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinDuration", js.Any.fromFunction1(value))
+        inline def setSetMinDuration(value: /* minDuration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinDuration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMinDurationUndefined: Self = StObject.set(x, "setMinDuration", js.undefined)
+        inline def setSetMinDurationUndefined: Self = StObject.set(x, "setMinDuration", js.undefined)
       }
     }
     
@@ -531,56 +456,40 @@ object event {
     }
     object IRecognizer {
       
-      @scala.inline
-      def apply(): IRecognizer = {
+      inline def apply(): IRecognizer = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IRecognizer]
       }
       
-      @scala.inline
-      implicit class IRecognizerMutableBuilder[Self <: IRecognizer] (val x: Self) extends AnyVal {
+      extension [Self <: IRecognizer](x: Self) {
         
-        @scala.inline
-        def setGetCallbackScope(value: () => js.Any): Self = StObject.set(x, "getCallbackScope", js.Any.fromFunction0(value))
+        inline def setGetCallbackScope(value: () => js.Any): Self = StObject.set(x, "getCallbackScope", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetCallbackScopeUndefined: Self = StObject.set(x, "getCallbackScope", js.undefined)
+        inline def setGetCallbackScopeUndefined: Self = StObject.set(x, "getCallbackScope", js.undefined)
         
-        @scala.inline
-        def setGetId(value: () => java.lang.String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+        inline def setGetId(value: () => java.lang.String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
+        inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
         
-        @scala.inline
-        def setGetOnFailed(value: () => js.Any): Self = StObject.set(x, "getOnFailed", js.Any.fromFunction0(value))
+        inline def setGetOnFailed(value: () => js.Any): Self = StObject.set(x, "getOnFailed", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetOnFailedUndefined: Self = StObject.set(x, "getOnFailed", js.undefined)
+        inline def setGetOnFailedUndefined: Self = StObject.set(x, "getOnFailed", js.undefined)
         
-        @scala.inline
-        def setGetOnRecognized(value: () => js.Any): Self = StObject.set(x, "getOnRecognized", js.Any.fromFunction0(value))
+        inline def setGetOnRecognized(value: () => js.Any): Self = StObject.set(x, "getOnRecognized", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetOnRecognizedUndefined: Self = StObject.set(x, "getOnRecognized", js.undefined)
+        inline def setGetOnRecognizedUndefined: Self = StObject.set(x, "getOnRecognized", js.undefined)
         
-        @scala.inline
-        def setSetCallbackScope(value: /* callbackScope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallbackScope", js.Any.fromFunction1(value))
+        inline def setSetCallbackScope(value: /* callbackScope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallbackScope", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetCallbackScopeUndefined: Self = StObject.set(x, "setCallbackScope", js.undefined)
+        inline def setSetCallbackScopeUndefined: Self = StObject.set(x, "setCallbackScope", js.undefined)
         
-        @scala.inline
-        def setSetOnFailed(value: /* onFailed */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnFailed", js.Any.fromFunction1(value))
+        inline def setSetOnFailed(value: /* onFailed */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnFailed", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetOnFailedUndefined: Self = StObject.set(x, "setOnFailed", js.undefined)
+        inline def setSetOnFailedUndefined: Self = StObject.set(x, "setOnFailed", js.undefined)
         
-        @scala.inline
-        def setSetOnRecognized(value: /* onRecognized */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnRecognized", js.Any.fromFunction1(value))
+        inline def setSetOnRecognized(value: /* onRecognized */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnRecognized", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetOnRecognizedUndefined: Self = StObject.set(x, "setOnRecognized", js.undefined)
+        inline def setSetOnRecognizedUndefined: Self = StObject.set(x, "setOnRecognized", js.undefined)
       }
     }
     
@@ -624,50 +533,36 @@ object event {
     }
     object ISwipe {
       
-      @scala.inline
-      def apply(): ISwipe = {
+      inline def apply(): ISwipe = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISwipe]
       }
       
-      @scala.inline
-      implicit class ISwipeMutableBuilder[Self <: ISwipe] (val x: Self) extends AnyVal {
+      extension [Self <: ISwipe](x: Self) {
         
-        @scala.inline
-        def setGetMaxDuration(value: () => Double): Self = StObject.set(x, "getMaxDuration", js.Any.fromFunction0(value))
+        inline def setGetMaxDuration(value: () => Double): Self = StObject.set(x, "getMaxDuration", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMaxDurationUndefined: Self = StObject.set(x, "getMaxDuration", js.undefined)
+        inline def setGetMaxDurationUndefined: Self = StObject.set(x, "getMaxDuration", js.undefined)
         
-        @scala.inline
-        def setGetMaxOffset(value: () => Double): Self = StObject.set(x, "getMaxOffset", js.Any.fromFunction0(value))
+        inline def setGetMaxOffset(value: () => Double): Self = StObject.set(x, "getMaxOffset", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMaxOffsetUndefined: Self = StObject.set(x, "getMaxOffset", js.undefined)
+        inline def setGetMaxOffsetUndefined: Self = StObject.set(x, "getMaxOffset", js.undefined)
         
-        @scala.inline
-        def setGetMinDistance(value: () => Double): Self = StObject.set(x, "getMinDistance", js.Any.fromFunction0(value))
+        inline def setGetMinDistance(value: () => Double): Self = StObject.set(x, "getMinDistance", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMinDistanceUndefined: Self = StObject.set(x, "getMinDistance", js.undefined)
+        inline def setGetMinDistanceUndefined: Self = StObject.set(x, "getMinDistance", js.undefined)
         
-        @scala.inline
-        def setSetMaxDuration(value: /* maxDuration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxDuration", js.Any.fromFunction1(value))
+        inline def setSetMaxDuration(value: /* maxDuration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxDuration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMaxDurationUndefined: Self = StObject.set(x, "setMaxDuration", js.undefined)
+        inline def setSetMaxDurationUndefined: Self = StObject.set(x, "setMaxDuration", js.undefined)
         
-        @scala.inline
-        def setSetMaxOffset(value: /* maxOffset */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxOffset", js.Any.fromFunction1(value))
+        inline def setSetMaxOffset(value: /* maxOffset */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxOffset", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMaxOffsetUndefined: Self = StObject.set(x, "setMaxOffset", js.undefined)
+        inline def setSetMaxOffsetUndefined: Self = StObject.set(x, "setMaxOffset", js.undefined)
         
-        @scala.inline
-        def setSetMinDistance(value: /* minDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinDistance", js.Any.fromFunction1(value))
+        inline def setSetMinDistance(value: /* minDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinDistance", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMinDistanceUndefined: Self = StObject.set(x, "setMinDistance", js.undefined)
+        inline def setSetMinDistanceUndefined: Self = StObject.set(x, "setMinDistance", js.undefined)
       }
     }
     
@@ -690,32 +585,24 @@ object event {
     }
     object ITap {
       
-      @scala.inline
-      def apply(): ITap = {
+      inline def apply(): ITap = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ITap]
       }
       
-      @scala.inline
-      implicit class ITapMutableBuilder[Self <: ITap] (val x: Self) extends AnyVal {
+      extension [Self <: ITap](x: Self) {
         
-        @scala.inline
-        def setGetMoveDistance(value: () => Double): Self = StObject.set(x, "getMoveDistance", js.Any.fromFunction0(value))
+        inline def setGetMoveDistance(value: () => Double): Self = StObject.set(x, "getMoveDistance", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMoveDistanceUndefined: Self = StObject.set(x, "getMoveDistance", js.undefined)
+        inline def setGetMoveDistanceUndefined: Self = StObject.set(x, "getMoveDistance", js.undefined)
         
-        @scala.inline
-        def setMoveDistance(value: Double): Self = StObject.set(x, "moveDistance", value.asInstanceOf[js.Any])
+        inline def setMoveDistance(value: Double): Self = StObject.set(x, "moveDistance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMoveDistanceUndefined: Self = StObject.set(x, "moveDistance", js.undefined)
+        inline def setMoveDistanceUndefined: Self = StObject.set(x, "moveDistance", js.undefined)
         
-        @scala.inline
-        def setSetMoveDistance(value: /* moveDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMoveDistance", js.Any.fromFunction1(value))
+        inline def setSetMoveDistance(value: /* moveDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMoveDistance", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMoveDistanceUndefined: Self = StObject.set(x, "setMoveDistance", js.undefined)
+        inline def setSetMoveDistanceUndefined: Self = StObject.set(x, "setMoveDistance", js.undefined)
       }
     }
     

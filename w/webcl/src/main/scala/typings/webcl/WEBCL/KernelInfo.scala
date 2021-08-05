@@ -19,15 +19,11 @@ trait KernelInfo extends StObject
 object KernelInfo {
   
   //KERNEL_REFERENCE_COUNT                    = 0x1192, // disallowed
-  @scala.inline
-  def KERNEL_CONTEXT: `0x1193` = 0x1193.asInstanceOf[`0x1193`]
+  inline def KERNEL_CONTEXT: `0x1193` = 0x1193.asInstanceOf[`0x1193`]
   
-  @scala.inline
-  def KERNEL_FUNCTION_NAME: `0x1190` = 0x1190.asInstanceOf[`0x1190`]
+  inline def KERNEL_FUNCTION_NAME: `0x1190` = 0x1190.asInstanceOf[`0x1190`]
   
-  @scala.inline
-  def KERNEL_NUM_RGS: `0x1191` = 0x1191.asInstanceOf[`0x1191`]
+  inline def KERNEL_NUM_RGS: `0x1191` = 0x1191.asInstanceOf[`0x1191`]
   
-  @scala.inline
-  def KERNEL_PROGRAM: `0x1194` = 0x1194.asInstanceOf[`0x1194`]
+  inline def KERNEL_PROGRAM: `0x1194` = 0x1194.asInstanceOf[`0x1194`]
 }

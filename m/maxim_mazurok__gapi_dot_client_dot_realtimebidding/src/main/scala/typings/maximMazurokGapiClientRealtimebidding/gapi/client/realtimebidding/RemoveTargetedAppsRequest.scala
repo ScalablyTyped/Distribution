@@ -14,22 +14,17 @@ trait RemoveTargetedAppsRequest extends StObject {
 }
 object RemoveTargetedAppsRequest {
   
-  @scala.inline
-  def apply(): RemoveTargetedAppsRequest = {
+  inline def apply(): RemoveTargetedAppsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveTargetedAppsRequest]
   }
   
-  @scala.inline
-  implicit class RemoveTargetedAppsRequestMutableBuilder[Self <: RemoveTargetedAppsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTargetedAppsRequest](x: Self) {
     
-    @scala.inline
-    def setAppIds(value: js.Array[String]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
+    inline def setAppIds(value: js.Array[String]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
+    inline def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
     
-    @scala.inline
-    def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value :_*))
+    inline def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value :_*))
   }
 }

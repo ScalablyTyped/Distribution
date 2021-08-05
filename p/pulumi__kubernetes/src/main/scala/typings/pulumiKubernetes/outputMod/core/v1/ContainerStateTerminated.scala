@@ -46,8 +46,7 @@ trait ContainerStateTerminated extends StObject {
 }
 object ContainerStateTerminated {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerID: String,
     exitCode: Double,
     finishedAt: String,
@@ -60,28 +59,20 @@ object ContainerStateTerminated {
     __obj.asInstanceOf[ContainerStateTerminated]
   }
   
-  @scala.inline
-  implicit class ContainerStateTerminatedMutableBuilder[Self <: ContainerStateTerminated] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerStateTerminated](x: Self) {
     
-    @scala.inline
-    def setContainerID(value: String): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
+    inline def setContainerID(value: String): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedAt(value: String): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: String): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: Double): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: Double): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
   }
 }

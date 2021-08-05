@@ -12,25 +12,19 @@ trait RTCRtcpFeedback extends StObject {
 }
 object RTCRtcpFeedback {
   
-  @scala.inline
-  def apply(): RTCRtcpFeedback = {
+  inline def apply(): RTCRtcpFeedback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCRtcpFeedback]
   }
   
-  @scala.inline
-  implicit class RTCRtcpFeedbackMutableBuilder[Self <: RTCRtcpFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtcpFeedback](x: Self) {
     
-    @scala.inline
-    def setParameter(value: java.lang.String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: java.lang.String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -96,21 +96,16 @@ object volumeMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Volume]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Volume]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VolumeState): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Volume]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Volume]
+    inline def get(name: String, id: Input[ID]): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Volume]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Volume]
+    inline def get(name: String, id: Input[ID], state: VolumeState): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Volume]
+    inline def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Volume]
     
     /**
       * Returns true if the given object is an instance of Volume.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean]
   }
   
   trait VolumeArgs extends StObject {
@@ -167,71 +162,50 @@ object volumeMod {
   }
   object VolumeArgs {
     
-    @scala.inline
-    def apply(availabilityZone: Input[String]): VolumeArgs = {
+    inline def apply(availabilityZone: Input[String]): VolumeArgs = {
       val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any])
       __obj.asInstanceOf[VolumeArgs]
     }
     
-    @scala.inline
-    implicit class VolumeArgsMutableBuilder[Self <: VolumeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeArgs](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+      inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
       
-      @scala.inline
-      def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+      inline def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+      inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setMultiAttachEnabled(value: Input[Boolean]): Self = StObject.set(x, "multiAttachEnabled", value.asInstanceOf[js.Any])
+      inline def setMultiAttachEnabled(value: Input[Boolean]): Self = StObject.set(x, "multiAttachEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiAttachEnabledUndefined: Self = StObject.set(x, "multiAttachEnabled", js.undefined)
+      inline def setMultiAttachEnabledUndefined: Self = StObject.set(x, "multiAttachEnabled", js.undefined)
       
-      @scala.inline
-      def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
+      inline def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
       
-      @scala.inline
-      def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+      inline def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+      inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -294,80 +268,56 @@ object volumeMod {
   }
   object VolumeState {
     
-    @scala.inline
-    def apply(): VolumeState = {
+    inline def apply(): VolumeState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VolumeState]
     }
     
-    @scala.inline
-    implicit class VolumeStateMutableBuilder[Self <: VolumeState] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+      inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
       
-      @scala.inline
-      def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+      inline def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+      inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setMultiAttachEnabled(value: Input[Boolean]): Self = StObject.set(x, "multiAttachEnabled", value.asInstanceOf[js.Any])
+      inline def setMultiAttachEnabled(value: Input[Boolean]): Self = StObject.set(x, "multiAttachEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiAttachEnabledUndefined: Self = StObject.set(x, "multiAttachEnabled", js.undefined)
+      inline def setMultiAttachEnabledUndefined: Self = StObject.set(x, "multiAttachEnabled", js.undefined)
       
-      @scala.inline
-      def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
+      inline def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
       
-      @scala.inline
-      def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+      inline def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+      inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

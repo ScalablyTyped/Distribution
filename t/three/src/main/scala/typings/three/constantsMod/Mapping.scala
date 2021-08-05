@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait Mapping extends StObject
 object Mapping {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[Mapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Mapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Mapping & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[Mapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Mapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Mapping & scala.Nothing]]
 }

@@ -22,21 +22,17 @@ trait SearchBy extends StObject {
 }
 object SearchBy {
   
-  @scala.inline
-  def apply(): SearchBy = {
+  inline def apply(): SearchBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBy]
   }
   
-  @scala.inline
-  implicit class SearchByMutableBuilder[Self <: SearchBy] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBy](x: Self) {
     
-    @scala.inline
-    def setSearchBy(
+    inline def setSearchBy(
       value: bottomLeft | bottomMiddle | center | corner | leftMiddle | origin | rightMiddle | topMiddle | topRight | bbox
     ): Self = StObject.set(x, "searchBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchByUndefined: Self = StObject.set(x, "searchBy", js.undefined)
+    inline def setSearchByUndefined: Self = StObject.set(x, "searchBy", js.undefined)
   }
 }

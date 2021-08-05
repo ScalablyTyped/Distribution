@@ -74,8 +74,7 @@ trait IAttributes
 }
 object IAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $addClass: String => Unit,
     $attr: js.Object,
     $normalize: String => String,
@@ -88,28 +87,20 @@ object IAttributes {
     __obj.asInstanceOf[IAttributes]
   }
   
-  @scala.inline
-  implicit class IAttributesMutableBuilder[Self <: IAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: IAttributes](x: Self) {
     
-    @scala.inline
-    def set$addClass(value: String => Unit): Self = StObject.set(x, "$addClass", js.Any.fromFunction1(value))
+    inline def set$addClass(value: String => Unit): Self = StObject.set(x, "$addClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set$attr(value: js.Object): Self = StObject.set(x, "$attr", value.asInstanceOf[js.Any])
+    inline def set$attr(value: js.Object): Self = StObject.set(x, "$attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$normalize(value: String => String): Self = StObject.set(x, "$normalize", js.Any.fromFunction1(value))
+    inline def set$normalize(value: String => String): Self = StObject.set(x, "$normalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set$observe(value: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function): Self = StObject.set(x, "$observe", js.Any.fromFunction2(value))
+    inline def set$observe(value: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function): Self = StObject.set(x, "$observe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$removeClass(value: String => Unit): Self = StObject.set(x, "$removeClass", js.Any.fromFunction1(value))
+    inline def set$removeClass(value: String => Unit): Self = StObject.set(x, "$removeClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set$set(value: (String, js.Any) => Unit): Self = StObject.set(x, "$set", js.Any.fromFunction2(value))
+    inline def set$set(value: (String, js.Any) => Unit): Self = StObject.set(x, "$set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$updateClass(value: (String, String) => Unit): Self = StObject.set(x, "$updateClass", js.Any.fromFunction2(value))
+    inline def set$updateClass(value: (String, String) => Unit): Self = StObject.set(x, "$updateClass", js.Any.fromFunction2(value))
   }
 }

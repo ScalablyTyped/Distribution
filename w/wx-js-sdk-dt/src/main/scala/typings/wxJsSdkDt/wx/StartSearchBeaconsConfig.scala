@@ -21,19 +21,15 @@ trait StartSearchBeaconsConfig
 }
 object StartSearchBeaconsConfig {
   
-  @scala.inline
-  def apply(complete: js.Any => Unit, ticket: String): StartSearchBeaconsConfig = {
+  inline def apply(complete: js.Any => Unit, ticket: String): StartSearchBeaconsConfig = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), ticket = ticket.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSearchBeaconsConfig]
   }
   
-  @scala.inline
-  implicit class StartSearchBeaconsConfigMutableBuilder[Self <: StartSearchBeaconsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StartSearchBeaconsConfig](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+    inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
   }
 }

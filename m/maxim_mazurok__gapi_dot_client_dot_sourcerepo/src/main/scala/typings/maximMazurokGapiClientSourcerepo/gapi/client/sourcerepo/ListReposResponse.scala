@@ -14,28 +14,21 @@ trait ListReposResponse extends StObject {
 }
 object ListReposResponse {
   
-  @scala.inline
-  def apply(): ListReposResponse = {
+  inline def apply(): ListReposResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReposResponse]
   }
   
-  @scala.inline
-  implicit class ListReposResponseMutableBuilder[Self <: ListReposResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReposResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRepos(value: js.Array[Repo]): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+    inline def setRepos(value: js.Array[Repo]): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReposUndefined: Self = StObject.set(x, "repos", js.undefined)
+    inline def setReposUndefined: Self = StObject.set(x, "repos", js.undefined)
     
-    @scala.inline
-    def setReposVarargs(value: Repo*): Self = StObject.set(x, "repos", js.Array(value :_*))
+    inline def setReposVarargs(value: Repo*): Self = StObject.set(x, "repos", js.Array(value :_*))
   }
 }

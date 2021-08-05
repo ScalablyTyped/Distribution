@@ -21,244 +21,155 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def geoAlbers(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbers")().asInstanceOf[GeoConicProjection]
+  inline def geoAlbers(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbers")().asInstanceOf[GeoConicProjection]
   
-  @scala.inline
-  def geoAlbersUsa(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbersUsa")().asInstanceOf[GeoProjection_]
+  inline def geoAlbersUsa(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbersUsa")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def geoArea(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoArea(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def geoAzimuthalEqualArea(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualArea")().asInstanceOf[GeoProjection_]
+  inline def geoAzimuthalEqualArea(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualArea")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoAzimuthalEqualAreaRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualAreaRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoAzimuthalEqualAreaRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualAreaRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoAzimuthalEquidistant(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistant")().asInstanceOf[GeoProjection_]
+  inline def geoAzimuthalEquidistant(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistant")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoAzimuthalEquidistantRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistantRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoAzimuthalEquidistantRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistantRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
-  @scala.inline
-  def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
-  @scala.inline
-  def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
-  @scala.inline
-  def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  inline def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  inline def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  inline def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  inline def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
   
-  @scala.inline
-  def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
-  @scala.inline
-  def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
-  @scala.inline
-  def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
-  @scala.inline
-  def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @scala.inline
-  def geoCircle(): GeoCircleGenerator[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, js.Any]]
+  inline def geoCircle(): GeoCircleGenerator[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, js.Any]]
   
-  @scala.inline
-  def geoCircle_Datum[Datum](): GeoCircleGenerator[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, Datum]]
+  inline def geoCircle_Datum[Datum](): GeoCircleGenerator[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, Datum]]
   
-  @scala.inline
-  def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[This, Datum]]
+  inline def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[This, Datum]]
   
-  @scala.inline
-  def geoClipAntimeridian(stream: GeoStream_): GeoStream_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipAntimeridian")(stream.asInstanceOf[js.Any]).asInstanceOf[GeoStream_]
+  inline def geoClipAntimeridian(stream: GeoStream_): GeoStream_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipAntimeridian")(stream.asInstanceOf[js.Any]).asInstanceOf[GeoStream_]
   
-  @scala.inline
-  def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipCircle")(angle.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
+  inline def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipCircle")(angle.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
   
-  @scala.inline
-  def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoClipRectangle")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
+  inline def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoClipRectangle")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
   
-  @scala.inline
-  def geoConicConformal(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformal")().asInstanceOf[GeoConicProjection]
+  inline def geoConicConformal(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformal")().asInstanceOf[GeoConicProjection]
   
-  @scala.inline
-  def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformalRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
+  inline def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformalRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoConicEqualArea(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualArea")().asInstanceOf[GeoConicProjection]
+  inline def geoConicEqualArea(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualArea")().asInstanceOf[GeoConicProjection]
   
-  @scala.inline
-  def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualAreaRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
+  inline def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualAreaRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoConicEquidistant(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistant")().asInstanceOf[GeoConicProjection]
+  inline def geoConicEquidistant(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistant")().asInstanceOf[GeoConicProjection]
   
-  @scala.inline
-  def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistantRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
+  inline def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistantRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoContains(
+  inline def geoContains(
     `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
     point: js.Tuple2[Double, Double]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def geoContains(
+  inline def geoContains(
     `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties],
     point: js.Tuple2[Double, Double]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def geoEqualEarth(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarth")().asInstanceOf[GeoProjection_]
+  inline def geoEqualEarth(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarth")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoEqualEarthRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarthRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoEqualEarthRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarthRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoEquirectangular(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangular")().asInstanceOf[GeoProjection_]
+  inline def geoEquirectangular(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangular")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoEquirectangularRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangularRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoEquirectangularRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangularRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoGnomonic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonic")().asInstanceOf[GeoProjection_]
+  inline def geoGnomonic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonic")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoGnomonicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonicRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoGnomonicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonicRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoGraticule(): GeoGraticuleGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule")().asInstanceOf[GeoGraticuleGenerator]
+  inline def geoGraticule(): GeoGraticuleGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule")().asInstanceOf[GeoGraticuleGenerator]
   
-  @scala.inline
-  def geoGraticule10(): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule10")().asInstanceOf[MultiLineString]
+  inline def geoGraticule10(): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule10")().asInstanceOf[MultiLineString]
   
-  @scala.inline
-  def geoIdentity(): GeoIdentityTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("geoIdentity")().asInstanceOf[GeoIdentityTransform]
+  inline def geoIdentity(): GeoIdentityTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("geoIdentity")().asInstanceOf[GeoIdentityTransform]
   
-  @scala.inline
-  def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoInterpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[Double, Double]]]
+  inline def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoInterpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[Double, Double]]]
   
-  @scala.inline
-  def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def geoLength(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geoLength(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def geoMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercator")().asInstanceOf[GeoProjection_]
+  inline def geoMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercator")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercatorRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercatorRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoNaturalEarth1(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1")().asInstanceOf[GeoProjection_]
+  inline def geoNaturalEarth1(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoNaturalEarth1Raw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1Raw")().asInstanceOf[GeoRawProjection]
+  inline def geoNaturalEarth1Raw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1Raw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoOrthographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographic")().asInstanceOf[GeoProjection_]
+  inline def geoOrthographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographic")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoOrthographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographicRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoOrthographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographicRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoPath(): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  @scala.inline
-  def geoPath(projection: Null, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  @scala.inline
-  def geoPath(projection: Unit, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  @scala.inline
-  def geoPath(projection: GeoProjection_): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  @scala.inline
-  def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  @scala.inline
-  def geoPath(projection: GeoStreamWrapper): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  @scala.inline
-  def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: Null, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: Unit, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoProjection_): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoStreamWrapper): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
   
-  @scala.inline
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  @scala.inline
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  @scala.inline
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  @scala.inline
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  @scala.inline
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  @scala.inline
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  @scala.inline
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
   
-  @scala.inline
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
-  @scala.inline
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
-  @scala.inline
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
-  @scala.inline
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
-  @scala.inline
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
-  @scala.inline
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
-  @scala.inline
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
   
-  @scala.inline
-  def geoProjection(project: GeoRawProjection): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjection")(project.asInstanceOf[js.Any]).asInstanceOf[GeoProjection_]
+  inline def geoProjection(project: GeoRawProjection): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjection")(project.asInstanceOf[js.Any]).asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
+  inline def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
   
-  @scala.inline
-  def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
-  @scala.inline
-  def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
+  inline def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
+  inline def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
   
-  @scala.inline
-  def geoStereographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographic")().asInstanceOf[GeoProjection_]
+  inline def geoStereographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographic")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoStereographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographicRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoStereographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographicRaw")().asInstanceOf[GeoRawProjection]
   
-  @scala.inline
-  def geoStream(
+  inline def geoStream(
     `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
     stream: GeoStream_
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): `0`[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransform")(methods.asInstanceOf[js.Any]).asInstanceOf[`0`[T]]
+  inline def geoTransform[T /* <: GeoTransformPrototype */](methods: T): `0`[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransform")(methods.asInstanceOf[js.Any]).asInstanceOf[`0`[T]]
   
-  @scala.inline
-  def geoTransverseMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercator")().asInstanceOf[GeoProjection_]
+  inline def geoTransverseMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercator")().asInstanceOf[GeoProjection_]
   
-  @scala.inline
-  def geoTransverseMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercatorRaw")().asInstanceOf[GeoRawProjection]
+  inline def geoTransverseMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercatorRaw")().asInstanceOf[GeoRawProjection]
   
   trait ExtendedFeature[GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */]
     extends StObject
@@ -272,27 +183,21 @@ object mod {
   }
   object ExtendedFeature {
     
-    @scala.inline
-    def apply[GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */](geometry: GeometryType, properties: Properties, `type`: GeoJsonTypes): ExtendedFeature[GeometryType, Properties] = {
+    inline def apply[GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */](geometry: GeometryType, properties: Properties, `type`: GeoJsonTypes): ExtendedFeature[GeometryType, Properties] = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtendedFeature[GeometryType, Properties]]
     }
     
-    @scala.inline
-    implicit class ExtendedFeatureMutableBuilder[Self <: ExtendedFeature[?, ?], GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */] (val x: Self & (ExtendedFeature[GeometryType, Properties])) extends AnyVal {
+    extension [Self <: ExtendedFeature[?, ?], GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */](x: Self & (ExtendedFeature[GeometryType, Properties])) {
       
-      @scala.inline
-      def setGeometry(value: GeometryType): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: GeometryType): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,21 +209,17 @@ object mod {
   }
   object ExtendedFeatureCollection {
     
-    @scala.inline
-    def apply[FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */](features: js.Array[FeatureType], `type`: GeoJsonTypes): ExtendedFeatureCollection[FeatureType] = {
+    inline def apply[FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */](features: js.Array[FeatureType], `type`: GeoJsonTypes): ExtendedFeatureCollection[FeatureType] = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtendedFeatureCollection[FeatureType]]
     }
     
-    @scala.inline
-    implicit class ExtendedFeatureCollectionMutableBuilder[Self <: ExtendedFeatureCollection[?], FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */] (val x: Self & ExtendedFeatureCollection[FeatureType]) extends AnyVal {
+    extension [Self <: ExtendedFeatureCollection[?], FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */](x: Self & ExtendedFeatureCollection[FeatureType]) {
       
-      @scala.inline
-      def setFeatures(value: js.Array[FeatureType]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: js.Array[FeatureType]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesVarargs(value: FeatureType*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: FeatureType*): Self = StObject.set(x, "features", js.Array(value :_*))
     }
   }
   
@@ -334,39 +235,29 @@ object mod {
   }
   object ExtendedGeometryCollection {
     
-    @scala.inline
-    def apply[GeometryType /* <: GeoGeometryObjects */](geometries: js.Array[GeometryType], `type`: String): ExtendedGeometryCollection[GeometryType] = {
+    inline def apply[GeometryType /* <: GeoGeometryObjects */](geometries: js.Array[GeometryType], `type`: String): ExtendedGeometryCollection[GeometryType] = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtendedGeometryCollection[GeometryType]]
     }
     
-    @scala.inline
-    implicit class ExtendedGeometryCollectionMutableBuilder[Self <: ExtendedGeometryCollection[?], GeometryType /* <: GeoGeometryObjects */] (val x: Self & ExtendedGeometryCollection[GeometryType]) extends AnyVal {
+    extension [Self <: ExtendedGeometryCollection[?], GeometryType /* <: GeoGeometryObjects */](x: Self & ExtendedGeometryCollection[GeometryType]) {
       
-      @scala.inline
-      def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+      inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      @scala.inline
-      def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
       
-      @scala.inline
-      def setCrs(value: Properties): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
+      inline def setCrs(value: Properties): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
+      inline def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
       
-      @scala.inline
-      def setGeometries(value: js.Array[GeometryType]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+      inline def setGeometries(value: js.Array[GeometryType]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometriesVarargs(value: GeometryType*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+      inline def setGeometriesVarargs(value: GeometryType*): Self = StObject.set(x, "geometries", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1400,18 +1291,15 @@ object mod {
   }
   object GeoSphere {
     
-    @scala.inline
-    def apply(): GeoSphere = {
+    inline def apply(): GeoSphere = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Sphere")
       __obj.asInstanceOf[GeoSphere]
     }
     
-    @scala.inline
-    implicit class GeoSphereMutableBuilder[Self <: GeoSphere] (val x: Self) extends AnyVal {
+    extension [Self <: GeoSphere](x: Self) {
       
-      @scala.inline
-      def setType(value: Sphere): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Sphere): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1428,17 +1316,14 @@ object mod {
   }
   object GeoStreamWrapper {
     
-    @scala.inline
-    def apply(stream: GeoStream_ => GeoStream_): GeoStreamWrapper = {
+    inline def apply(stream: GeoStream_ => GeoStream_): GeoStreamWrapper = {
       val __obj = js.Dynamic.literal(stream = js.Any.fromFunction1(stream))
       __obj.asInstanceOf[GeoStreamWrapper]
     }
     
-    @scala.inline
-    implicit class GeoStreamWrapperMutableBuilder[Self <: GeoStreamWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: GeoStreamWrapper](x: Self) {
       
-      @scala.inline
-      def setStream(value: GeoStream_ => GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
+      inline def setStream(value: GeoStream_ => GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
     }
   }
   
@@ -1535,29 +1420,22 @@ object mod {
   }
   object GeoTransformPrototype {
     
-    @scala.inline
-    def apply(): GeoTransformPrototype = {
+    inline def apply(): GeoTransformPrototype = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeoTransformPrototype]
     }
     
-    @scala.inline
-    implicit class GeoTransformPrototypeMutableBuilder[Self <: GeoTransformPrototype] (val x: Self) extends AnyVal {
+    extension [Self <: GeoTransformPrototype](x: Self) {
       
-      @scala.inline
-      def setLineEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
+      inline def setLineEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
+      inline def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
       
-      @scala.inline
-      def setLineStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
+      inline def setLineStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineStartUndefined: Self = StObject.set(x, "lineStart", js.undefined)
+      inline def setLineStartUndefined: Self = StObject.set(x, "lineStart", js.undefined)
       
-      @scala.inline
-      def setPoint(
+      inline def setPoint(
         value: js.ThisFunction3[
               /* this */ GeoTransformPrototype & Stream, 
               /* x */ Double, 
@@ -1567,26 +1445,19 @@ object mod {
             ]
       ): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+      inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
       
-      @scala.inline
-      def setPolygonEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "polygonEnd", value.asInstanceOf[js.Any])
+      inline def setPolygonEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "polygonEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonEndUndefined: Self = StObject.set(x, "polygonEnd", js.undefined)
+      inline def setPolygonEndUndefined: Self = StObject.set(x, "polygonEnd", js.undefined)
       
-      @scala.inline
-      def setPolygonStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "polygonStart", value.asInstanceOf[js.Any])
+      inline def setPolygonStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "polygonStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonStartUndefined: Self = StObject.set(x, "polygonStart", js.undefined)
+      inline def setPolygonStartUndefined: Self = StObject.set(x, "polygonStart", js.undefined)
       
-      @scala.inline
-      def setSphere(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+      inline def setSphere(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSphereUndefined: Self = StObject.set(x, "sphere", js.undefined)
+      inline def setSphereUndefined: Self = StObject.set(x, "sphere", js.undefined)
     }
   }
 }

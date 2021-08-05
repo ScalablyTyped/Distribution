@@ -13,14 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransitionSpec extends StObject
 object TransitionSpec {
   
-  @scala.inline
-  def Animation(config: OmitSpringAnimationConfig): typings.reactNavigationStack.anon.Animation = {
+  inline def Animation(config: OmitSpringAnimationConfig): typings.reactNavigationStack.anon.Animation = {
     val __obj = js.Dynamic.literal(animation = "spring", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNavigationStack.anon.Animation]
   }
   
-  @scala.inline
-  def Config(config: OmitTimingAnimationConfig): typings.reactNavigationStack.anon.Config = {
+  inline def Config(config: OmitTimingAnimationConfig): typings.reactNavigationStack.anon.Config = {
     val __obj = js.Dynamic.literal(animation = "timing", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNavigationStack.anon.Config]
   }

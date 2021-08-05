@@ -10,19 +10,15 @@ trait and extends StObject {
 }
 object and {
   
-  @scala.inline
-  def apply(args: js.Array[js.Any]): and = {
+  inline def apply(args: js.Array[js.Any]): and = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.asInstanceOf[and]
   }
   
-  @scala.inline
-  implicit class andMutableBuilder[Self <: and] (val x: Self) extends AnyVal {
+  extension [Self <: and](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
   }
 }

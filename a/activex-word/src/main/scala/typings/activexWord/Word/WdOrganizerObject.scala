@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOrganizerObject extends StObject
 object WdOrganizerObject {
   
-  @scala.inline
-  def wdOrganizerObjectAutoText: `1` = 1.asInstanceOf[`1`]
+  inline def wdOrganizerObjectAutoText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOrganizerObjectCommandBars: `2` = 2.asInstanceOf[`2`]
+  inline def wdOrganizerObjectCommandBars: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdOrganizerObjectProjectItems: `3` = 3.asInstanceOf[`3`]
+  inline def wdOrganizerObjectProjectItems: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdOrganizerObjectStyles: `0` = 0.asInstanceOf[`0`]
+  inline def wdOrganizerObjectStyles: `0` = 0.asInstanceOf[`0`]
 }

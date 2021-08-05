@@ -59,10 +59,8 @@ object mod {
   	//
   	```
   	*/
-  @scala.inline
-  def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("boxen", JSImport.Namespace)
   @js.native
@@ -87,26 +85,19 @@ object mod {
     @js.native
     val ^ : /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderStyle */ js.Any = js.native
     
-    @scala.inline
-    def Bold: bold = "bold".asInstanceOf[bold]
+    inline def Bold: bold = "bold".asInstanceOf[bold]
     
-    @scala.inline
-    def Classic: classic = "classic".asInstanceOf[classic]
+    inline def Classic: classic = "classic".asInstanceOf[classic]
     
-    @scala.inline
-    def Double: double = "double".asInstanceOf[double]
+    inline def Double: double = "double".asInstanceOf[double]
     
-    @scala.inline
-    def DoubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
+    inline def DoubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
     
-    @scala.inline
-    def Round: round = "round".asInstanceOf[round]
+    inline def Round: round = "round".asInstanceOf[round]
     
-    @scala.inline
-    def Single: single = "single".asInstanceOf[single]
+    inline def Single: single = "single".asInstanceOf[single]
     
-    @scala.inline
-    def SingleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
+    inline def SingleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
   }
   
   /**
@@ -188,72 +179,54 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(
+      inline def setBackgroundColor(
         value: LiteralUnion[
               black | red | green | yellow | blue | magenta | cyan | white | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
               String
             ]
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBorderColor(
+      inline def setBorderColor(
         value: LiteralUnion[
               black | red | green | yellow | blue | magenta | cyan | white | gray | grey | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
               String
             ]
       ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      @scala.inline
-      def setBorderStyle(value: BorderStyle | CustomBorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: BorderStyle | CustomBorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setDimBorder(value: Boolean): Self = StObject.set(x, "dimBorder", value.asInstanceOf[js.Any])
+      inline def setDimBorder(value: Boolean): Self = StObject.set(x, "dimBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimBorderUndefined: Self = StObject.set(x, "dimBorder", js.undefined)
+      inline def setDimBorderUndefined: Self = StObject.set(x, "dimBorder", js.undefined)
       
-      @scala.inline
-      def setFloat(value: left | right | center): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: left | right | center): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double | Spacing): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double | Spacing): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | Spacing): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | Spacing): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
   
@@ -272,26 +245,20 @@ object mod {
   }
   object Spacing {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Spacing = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Spacing = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Spacing]
     }
     
-    @scala.inline
-    implicit class SpacingMutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
+    extension [Self <: Spacing](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

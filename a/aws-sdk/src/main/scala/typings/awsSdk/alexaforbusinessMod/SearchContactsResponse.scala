@@ -23,34 +23,25 @@ trait SearchContactsResponse extends StObject {
 }
 object SearchContactsResponse {
   
-  @scala.inline
-  def apply(): SearchContactsResponse = {
+  inline def apply(): SearchContactsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchContactsResponse]
   }
   
-  @scala.inline
-  implicit class SearchContactsResponseMutableBuilder[Self <: SearchContactsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchContactsResponse](x: Self) {
     
-    @scala.inline
-    def setContacts(value: ContactDataList): Self = StObject.set(x, "Contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: ContactDataList): Self = StObject.set(x, "Contacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactsUndefined: Self = StObject.set(x, "Contacts", js.undefined)
+    inline def setContactsUndefined: Self = StObject.set(x, "Contacts", js.undefined)
     
-    @scala.inline
-    def setContactsVarargs(value: ContactData*): Self = StObject.set(x, "Contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: ContactData*): Self = StObject.set(x, "Contacts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

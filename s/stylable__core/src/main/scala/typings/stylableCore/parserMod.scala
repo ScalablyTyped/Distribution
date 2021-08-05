@@ -13,15 +13,11 @@ object parserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cssObjectToAst(cssObject: CSSObject): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cssObjectToAst")(cssObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def cssObjectToAst(cssObject: CSSObject, sourceFile: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cssObjectToAst")(cssObject.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def cssObjectToAst(cssObject: CSSObject): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cssObjectToAst")(cssObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def cssObjectToAst(cssObject: CSSObject, sourceFile: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cssObjectToAst")(cssObject.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def safeParse(css: String): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
-  @scala.inline
-  def safeParse(css: String, options: ProcessOptions): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root_]
+  inline def safeParse(css: String): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
+  inline def safeParse(css: String, options: ProcessOptions): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root_]
   
   type CssParser = js.Function2[/* css */ String, /* options */ js.UndefOr[ProcessOptions], Root_]
 }

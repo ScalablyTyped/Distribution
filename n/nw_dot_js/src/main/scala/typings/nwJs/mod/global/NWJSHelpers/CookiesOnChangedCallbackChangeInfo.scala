@@ -31,8 +31,7 @@ trait CookiesOnChangedCallbackChangeInfo extends StObject {
 }
 object CookiesOnChangedCallbackChangeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cause: String | evicted | expired | explicit | expired_overwrite | overwrite,
     cookie: Cookie,
     removed: Boolean
@@ -41,16 +40,12 @@ object CookiesOnChangedCallbackChangeInfo {
     __obj.asInstanceOf[CookiesOnChangedCallbackChangeInfo]
   }
   
-  @scala.inline
-  implicit class CookiesOnChangedCallbackChangeInfoMutableBuilder[Self <: CookiesOnChangedCallbackChangeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CookiesOnChangedCallbackChangeInfo](x: Self) {
     
-    @scala.inline
-    def setCause(value: String | evicted | expired | explicit | expired_overwrite | overwrite): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String | evicted | expired | explicit | expired_overwrite | overwrite): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
   }
 }

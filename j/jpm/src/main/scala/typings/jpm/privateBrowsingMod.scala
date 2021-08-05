@@ -16,10 +16,7 @@ object privateBrowsingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPrivate(`object`: BrowserWindow): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isPrivate(`object`: ContentWorker): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isPrivate(`object`: Tab): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPrivate(`object`: BrowserWindow): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPrivate(`object`: ContentWorker): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPrivate(`object`: Tab): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -45,101 +45,70 @@ trait TreemapTransform
 }
 object TreemapTransform {
   
-  @scala.inline
-  def apply(): TreemapTransform = {
+  inline def apply(): TreemapTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("treemap")
     __obj.asInstanceOf[TreemapTransform]
   }
   
-  @scala.inline
-  implicit class TreemapTransformMutableBuilder[Self <: TreemapTransform] (val x: Self) extends AnyVal {
+  extension [Self <: TreemapTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (Vector6[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (Vector6[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setMethod(value: TreemapMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: TreemapMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottom(value: Double | SignalRef): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingBottom(value: Double | SignalRef): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+    inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    @scala.inline
-    def setPaddingInner(value: Double | SignalRef): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
+    inline def setPaddingInner(value: Double | SignalRef): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
+    inline def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
     
-    @scala.inline
-    def setPaddingLeft(value: Double | SignalRef): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: Double | SignalRef): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+    inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    @scala.inline
-    def setPaddingOuter(value: Double | SignalRef): Self = StObject.set(x, "paddingOuter", value.asInstanceOf[js.Any])
+    inline def setPaddingOuter(value: Double | SignalRef): Self = StObject.set(x, "paddingOuter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingOuterUndefined: Self = StObject.set(x, "paddingOuter", js.undefined)
+    inline def setPaddingOuterUndefined: Self = StObject.set(x, "paddingOuter", js.undefined)
     
-    @scala.inline
-    def setPaddingRight(value: Double | SignalRef): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: Double | SignalRef): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    @scala.inline
-    def setPaddingTop(value: Double | SignalRef): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    inline def setPaddingTop(value: Double | SignalRef): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double | SignalRef): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double | SignalRef): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
-    @scala.inline
-    def setRound(value: Boolean | SignalRef): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: Boolean | SignalRef): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
-    @scala.inline
-    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setType(value: treemap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: treemap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

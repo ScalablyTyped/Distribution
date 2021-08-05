@@ -23,31 +23,23 @@ trait SFTPStreamConfig extends StObject {
 }
 object SFTPStreamConfig {
   
-  @scala.inline
-  def apply(): SFTPStreamConfig = {
+  inline def apply(): SFTPStreamConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SFTPStreamConfig]
   }
   
-  @scala.inline
-  implicit class SFTPStreamConfigMutableBuilder[Self <: SFTPStreamConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SFTPStreamConfig](x: Self) {
     
-    @scala.inline
-    def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
-    @scala.inline
-    def setServer(value: Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

@@ -210,61 +210,42 @@ object global {
       }
     }
     
-    @scala.inline
-    def getNavigatorFriendlyName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorFriendlyName")().asInstanceOf[String]
+    inline def getNavigatorFriendlyName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorFriendlyName")().asInstanceOf[String]
     
-    @scala.inline
-    def getNavigatorVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorVersion")().asInstanceOf[String]
+    inline def getNavigatorVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorVersion")().asInstanceOf[String]
     
-    @scala.inline
-    def getSystemFriendlyName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemFriendlyName")().asInstanceOf[String]
+    inline def getSystemFriendlyName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemFriendlyName")().asInstanceOf[String]
     
-    @scala.inline
-    def getWebRtc4AllVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebRtc4AllVersion")().asInstanceOf[String]
+    inline def getWebRtc4AllVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebRtc4AllVersion")().asInstanceOf[String]
     
-    @scala.inline
-    def haveMediaStream(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("haveMediaStream")().asInstanceOf[Boolean]
+    inline def haveMediaStream(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("haveMediaStream")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def init(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Boolean]
-    @scala.inline
-    def init(readyCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def init(
+    inline def init(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Boolean]
+    inline def init(readyCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def init(
       readyCallback: js.Function1[/* e */ js.Any, js.Any],
       errorCallback: js.Function1[/* e */ js.Any, js.Any]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def init(readyCallback: Unit, errorCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def init(readyCallback: Unit, errorCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isInitialized(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInitialized")().asInstanceOf[Boolean]
+    inline def isInitialized(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInitialized")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isNavigatorOutdated(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavigatorOutdated")().asInstanceOf[Boolean]
+    inline def isNavigatorOutdated(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavigatorOutdated")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[Boolean]
+    inline def isReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isScreenShareSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScreenShareSupported")().asInstanceOf[Boolean]
+    inline def isScreenShareSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScreenShareSupported")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isWebRtc4AllSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtc4AllSupported")().asInstanceOf[Boolean]
+    inline def isWebRtc4AllSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtc4AllSupported")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isWebRtcPluginOutdated(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtcPluginOutdated")().asInstanceOf[Boolean]
+    inline def isWebRtcPluginOutdated(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtcPluginOutdated")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isWebRtcSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtcSupported")().asInstanceOf[Boolean]
+    inline def isWebRtcSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtcSupported")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isWebSocketSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebSocketSupported")().asInstanceOf[Boolean]
+    inline def isWebSocketSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebSocketSupported")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def setDebugLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDebugLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setWebRtcType(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebRtcType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def setWebRtcType(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebRtcType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

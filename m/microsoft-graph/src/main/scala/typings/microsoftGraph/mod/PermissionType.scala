@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PermissionType extends StObject
 object PermissionType {
   
-  @scala.inline
-  def application: typings.microsoftGraph.microsoftGraphStrings.application = "application".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.application]
+  inline def application: typings.microsoftGraph.microsoftGraphStrings.application = "application".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.application]
   
-  @scala.inline
-  def delegated: typings.microsoftGraph.microsoftGraphStrings.delegated = "delegated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.delegated]
+  inline def delegated: typings.microsoftGraph.microsoftGraphStrings.delegated = "delegated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.delegated]
   
-  @scala.inline
-  def delegatedUserConsentable: typings.microsoftGraph.microsoftGraphStrings.delegatedUserConsentable = "delegatedUserConsentable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.delegatedUserConsentable]
+  inline def delegatedUserConsentable: typings.microsoftGraph.microsoftGraphStrings.delegatedUserConsentable = "delegatedUserConsentable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.delegatedUserConsentable]
 }

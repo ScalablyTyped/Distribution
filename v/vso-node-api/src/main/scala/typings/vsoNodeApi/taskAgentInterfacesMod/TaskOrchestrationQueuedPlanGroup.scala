@@ -20,8 +20,7 @@ trait TaskOrchestrationQueuedPlanGroup extends StObject {
 }
 object TaskOrchestrationQueuedPlanGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definition: TaskOrchestrationOwner,
     owner: TaskOrchestrationOwner,
     planGroup: String,
@@ -33,28 +32,20 @@ object TaskOrchestrationQueuedPlanGroup {
     __obj.asInstanceOf[TaskOrchestrationQueuedPlanGroup]
   }
   
-  @scala.inline
-  implicit class TaskOrchestrationQueuedPlanGroupMutableBuilder[Self <: TaskOrchestrationQueuedPlanGroup] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOrchestrationQueuedPlanGroup](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: TaskOrchestrationOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: TaskOrchestrationOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
+    inline def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlans(value: js.Array[TaskOrchestrationQueuedPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+    inline def setPlans(value: js.Array[TaskOrchestrationQueuedPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlansVarargs(value: TaskOrchestrationQueuedPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: TaskOrchestrationQueuedPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuePosition(value: Double): Self = StObject.set(x, "queuePosition", value.asInstanceOf[js.Any])
+    inline def setQueuePosition(value: Double): Self = StObject.set(x, "queuePosition", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait UpdateApprovalRuleTemplateNameInput extends StObject {
 }
 object UpdateApprovalRuleTemplateNameInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newApprovalRuleTemplateName: ApprovalRuleTemplateName,
     oldApprovalRuleTemplateName: ApprovalRuleTemplateName
   ): UpdateApprovalRuleTemplateNameInput = {
@@ -27,13 +26,10 @@ object UpdateApprovalRuleTemplateNameInput {
     __obj.asInstanceOf[UpdateApprovalRuleTemplateNameInput]
   }
   
-  @scala.inline
-  implicit class UpdateApprovalRuleTemplateNameInputMutableBuilder[Self <: UpdateApprovalRuleTemplateNameInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApprovalRuleTemplateNameInput](x: Self) {
     
-    @scala.inline
-    def setNewApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "newApprovalRuleTemplateName", value.asInstanceOf[js.Any])
+    inline def setNewApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "newApprovalRuleTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "oldApprovalRuleTemplateName", value.asInstanceOf[js.Any])
+    inline def setOldApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "oldApprovalRuleTemplateName", value.asInstanceOf[js.Any])
   }
 }

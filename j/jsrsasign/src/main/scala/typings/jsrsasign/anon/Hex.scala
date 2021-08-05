@@ -10,16 +10,13 @@ trait Hex extends StObject {
 }
 object Hex {
   
-  @scala.inline
-  def apply(hex: String): Hex = {
+  inline def apply(hex: String): Hex = {
     val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hex]
   }
   
-  @scala.inline
-  implicit class HexMutableBuilder[Self <: Hex] (val x: Self) extends AnyVal {
+  extension [Self <: Hex](x: Self) {
     
-    @scala.inline
-    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+    inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
   }
 }

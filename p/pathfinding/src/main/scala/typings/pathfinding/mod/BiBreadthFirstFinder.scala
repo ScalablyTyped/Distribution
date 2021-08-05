@@ -15,6 +15,5 @@ trait BiBreadthFirstFinder
      with Instantiable1[/* opt */ BiBreadthFirstFinderOptions, BiBreadthFirstFinder]
 object BiBreadthFirstFinder {
   
-  @scala.inline
-  def apply: BiBreadthFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiBreadthFirstFinder").asInstanceOf[BiBreadthFirstFinder]
+  inline def apply: BiBreadthFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiBreadthFirstFinder").asInstanceOf[BiBreadthFirstFinder]
 }

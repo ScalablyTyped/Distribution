@@ -14,25 +14,19 @@ trait PartialBorder extends StObject {
 }
 object PartialBorder {
   
-  @scala.inline
-  def apply(): PartialBorder = {
+  inline def apply(): PartialBorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialBorder]
   }
   
-  @scala.inline
-  implicit class PartialBorderMutableBuilder[Self <: PartialBorder] (val x: Self) extends AnyVal {
+  extension [Self <: PartialBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: PartialColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: PartialColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setStyle(value: BorderStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: BorderStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

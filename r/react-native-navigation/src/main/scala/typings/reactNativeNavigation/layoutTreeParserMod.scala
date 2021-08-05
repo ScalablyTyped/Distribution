@@ -14,24 +14,24 @@ object layoutTreeParserMod {
   class LayoutTreeParser protected () extends StObject {
     def this(uniqueIdProvider: UniqueIdProvider) = this()
     
-    var bottomTabs: js.Any = js.native
+    /* private */ var bottomTabs: js.Any = js.native
     
-    var component: js.Any = js.native
+    /* private */ var component: js.Any = js.native
     
-    var externalComponent: js.Any = js.native
+    /* private */ var externalComponent: js.Any = js.native
     
     def parse(api: Layout[js.Object]): LayoutNode = js.native
     
-    var sideMenu: js.Any = js.native
+    /* private */ var sideMenu: js.Any = js.native
     
-    var sideMenuChildren: js.Any = js.native
+    /* private */ var sideMenuChildren: js.Any = js.native
     
-    var splitView: js.Any = js.native
+    /* private */ var splitView: js.Any = js.native
     
-    var stack: js.Any = js.native
+    /* private */ var stack: js.Any = js.native
     
-    var topTabs: js.Any = js.native
+    /* private */ var topTabs: js.Any = js.native
     
-    var uniqueIdProvider: js.Any = js.native
+    /* private */ var uniqueIdProvider: js.Any = js.native
   }
 }

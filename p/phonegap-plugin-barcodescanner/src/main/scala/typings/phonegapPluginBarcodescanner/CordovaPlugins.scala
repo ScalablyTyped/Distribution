@@ -11,16 +11,13 @@ trait CordovaPlugins extends StObject {
 }
 object CordovaPlugins {
   
-  @scala.inline
-  def apply(barcodeScanner: BarcodeScanner): CordovaPlugins = {
+  inline def apply(barcodeScanner: BarcodeScanner): CordovaPlugins = {
     val __obj = js.Dynamic.literal(barcodeScanner = barcodeScanner.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPlugins](x: Self) {
     
-    @scala.inline
-    def setBarcodeScanner(value: BarcodeScanner): Self = StObject.set(x, "barcodeScanner", value.asInstanceOf[js.Any])
+    inline def setBarcodeScanner(value: BarcodeScanner): Self = StObject.set(x, "barcodeScanner", value.asInstanceOf[js.Any])
   }
 }

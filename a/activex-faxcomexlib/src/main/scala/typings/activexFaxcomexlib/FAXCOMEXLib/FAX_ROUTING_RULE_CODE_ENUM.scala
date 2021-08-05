@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FAX_ROUTING_RULE_CODE_ENUM {
   
-  @scala.inline
-  def frrcANY_CODE: `0` = 0.asInstanceOf[`0`]
+  inline def frrcANY_CODE: `0` = 0.asInstanceOf[`0`]
 }

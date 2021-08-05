@@ -17,20 +17,16 @@ object headerDriverMod {
   }
   object HeaderDriver {
     
-    @scala.inline
-    def apply(exists: () => Boolean, subtitle: () => String, title: () => String): HeaderDriver = {
+    inline def apply(exists: () => Boolean, subtitle: () => String, title: () => String): HeaderDriver = {
       val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), subtitle = js.Any.fromFunction0(subtitle), title = js.Any.fromFunction0(title))
       __obj.asInstanceOf[HeaderDriver]
     }
     
-    @scala.inline
-    implicit class HeaderDriverMutableBuilder[Self <: HeaderDriver] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderDriver](x: Self) {
       
-      @scala.inline
-      def setSubtitle(value: () => String): Self = StObject.set(x, "subtitle", js.Any.fromFunction0(value))
+      inline def setSubtitle(value: () => String): Self = StObject.set(x, "subtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitle(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+      inline def setTitle(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
     }
   }
 }

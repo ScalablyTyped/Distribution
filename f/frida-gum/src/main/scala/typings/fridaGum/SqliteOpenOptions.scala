@@ -10,22 +10,17 @@ trait SqliteOpenOptions extends StObject {
 }
 object SqliteOpenOptions {
   
-  @scala.inline
-  def apply(): SqliteOpenOptions = {
+  inline def apply(): SqliteOpenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqliteOpenOptions]
   }
   
-  @scala.inline
-  implicit class SqliteOpenOptionsMutableBuilder[Self <: SqliteOpenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SqliteOpenOptions](x: Self) {
     
-    @scala.inline
-    def setFlags(value: js.Array[SqliteOpenFlag]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: js.Array[SqliteOpenFlag]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setFlagsVarargs(value: SqliteOpenFlag*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: SqliteOpenFlag*): Self = StObject.set(x, "flags", js.Array(value :_*))
   }
 }

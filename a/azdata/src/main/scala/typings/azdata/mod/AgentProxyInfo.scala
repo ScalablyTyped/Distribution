@@ -22,8 +22,7 @@ trait AgentProxyInfo extends StObject {
 }
 object AgentProxyInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accountName: String,
     credentialId: Double,
     credentialIdentity: String,
@@ -36,28 +35,20 @@ object AgentProxyInfo {
     __obj.asInstanceOf[AgentProxyInfo]
   }
   
-  @scala.inline
-  implicit class AgentProxyInfoMutableBuilder[Self <: AgentProxyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AgentProxyInfo](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialId(value: Double): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
+    inline def setCredentialId(value: Double): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialIdentity(value: String): Self = StObject.set(x, "credentialIdentity", value.asInstanceOf[js.Any])
+    inline def setCredentialIdentity(value: String): Self = StObject.set(x, "credentialIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialName(value: String): Self = StObject.set(x, "credentialName", value.asInstanceOf[js.Any])
+    inline def setCredentialName(value: String): Self = StObject.set(x, "credentialName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
   }
 }

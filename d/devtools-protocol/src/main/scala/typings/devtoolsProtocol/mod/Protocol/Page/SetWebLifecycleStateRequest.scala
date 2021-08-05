@@ -15,16 +15,13 @@ trait SetWebLifecycleStateRequest extends StObject {
 }
 object SetWebLifecycleStateRequest {
   
-  @scala.inline
-  def apply(state: frozen | active): SetWebLifecycleStateRequest = {
+  inline def apply(state: frozen | active): SetWebLifecycleStateRequest = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetWebLifecycleStateRequest]
   }
   
-  @scala.inline
-  implicit class SetWebLifecycleStateRequestMutableBuilder[Self <: SetWebLifecycleStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetWebLifecycleStateRequest](x: Self) {
     
-    @scala.inline
-    def setState(value: frozen | active): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: frozen | active): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait DescribeSpotFleetRequestsResponse extends StObject {
 }
 object DescribeSpotFleetRequestsResponse {
   
-  @scala.inline
-  def apply(): DescribeSpotFleetRequestsResponse = {
+  inline def apply(): DescribeSpotFleetRequestsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSpotFleetRequestsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSpotFleetRequestsResponseMutableBuilder[Self <: DescribeSpotFleetRequestsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSpotFleetRequestsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestConfigs(value: SpotFleetRequestConfigSet): Self = StObject.set(x, "SpotFleetRequestConfigs", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestConfigs(value: SpotFleetRequestConfigSet): Self = StObject.set(x, "SpotFleetRequestConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotFleetRequestConfigsUndefined: Self = StObject.set(x, "SpotFleetRequestConfigs", js.undefined)
+    inline def setSpotFleetRequestConfigsUndefined: Self = StObject.set(x, "SpotFleetRequestConfigs", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestConfigsVarargs(value: SpotFleetRequestConfig*): Self = StObject.set(x, "SpotFleetRequestConfigs", js.Array(value :_*))
+    inline def setSpotFleetRequestConfigsVarargs(value: SpotFleetRequestConfig*): Self = StObject.set(x, "SpotFleetRequestConfigs", js.Array(value :_*))
   }
 }

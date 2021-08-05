@@ -9,8 +9,7 @@ trait DescribeTimeToLiveInput
      with typings.awsSdkClientDynamodbNode.typesDescribeTimeToLiveInputMod.DescribeTimeToLiveInput
 object DescribeTimeToLiveInput {
   
-  @scala.inline
-  def apply(TableName: String): DescribeTimeToLiveInput = {
+  inline def apply(TableName: String): DescribeTimeToLiveInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTimeToLiveInput]
   }

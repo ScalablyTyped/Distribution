@@ -27,22 +27,17 @@ trait Severity extends StObject {
 }
 object Severity {
   
-  @scala.inline
-  def apply(description: String, id: String, severity: none | note | warning | error): Severity = {
+  inline def apply(description: String, id: String, severity: none | note | warning | error): Severity = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Severity]
   }
   
-  @scala.inline
-  implicit class SeverityMutableBuilder[Self <: Severity] (val x: Self) extends AnyVal {
+  extension [Self <: Severity](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverity(value: none | note | warning | error): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: none | note | warning | error): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
   }
 }

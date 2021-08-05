@@ -16,14 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* static member */
-  @scala.inline
-  def apply(tag: String, value: String): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(tag: String, value: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(tag: Double, value: String): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(tag: Double, value: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(tag: String, value: String): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(tag: String, value: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(tag: Double, value: String): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(tag: Double, value: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("node-tlv", JSImport.Namespace)
   @js.native
@@ -49,8 +45,7 @@ object mod {
   @JSImport("node-tlv", "DGI")
   @js.native
   def DGI: `1` = js.native
-  @scala.inline
-  def DGI_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DGI")(x.asInstanceOf[js.Any])
+  inline def DGI_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DGI")(x.asInstanceOf[js.Any])
   
   @js.native
   trait DOL
@@ -101,41 +96,31 @@ object mod {
     override def setValue(args: js.Any*): js.Array[TLV] = js.native
   }
   
-  @scala.inline
-  def DOL_=(x: DOL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOL")(x.asInstanceOf[js.Any])
+  inline def DOL_=(x: DOL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOL")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("node-tlv", "EMV")
   @js.native
   def EMV: `0` = js.native
-  @scala.inline
-  def EMV_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMV")(x.asInstanceOf[js.Any])
+  inline def EMV_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMV")(x.asInstanceOf[js.Any])
   
   /**
     * Return value of the length field as a hex string.
     */
   /* static member */
-  @scala.inline
-  def L(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def L(value: String, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def L(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def L(value: Buffer, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def L(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def L(value: String, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def L(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def L(value: Buffer, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("L")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return value of the length field and the value field as hex string
     */
   /* static member */
-  @scala.inline
-  def LV(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def LV(value: String, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def LV(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def LV(value: Buffer, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def LV(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def LV(value: String, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def LV(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def LV(value: Buffer, flag: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("LV")(value.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return value of the length field as a hex string
@@ -378,75 +363,52 @@ object mod {
     def apply(tag: Double, value: String, encoding: Double): String = js.native
   }
   
-  @scala.inline
-  def TL_=(x: TL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TL")(x.asInstanceOf[js.Any])
+  inline def TL_=(x: TL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TL")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def T_=(x: js.Function1[/* tag */ String | Buffer | Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
+  inline def T_=(x: js.Function1[/* tag */ String | Buffer | Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
   
   /**
     * Return value of the value field as string
     */
   /* static member */
-  @scala.inline
-  def V(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("V")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def V(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("V")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def adjustLength(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")().asInstanceOf[Double]
-  @scala.inline
-  def adjustLength(length: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def adjustLength(length: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def adjustLength(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")().asInstanceOf[Double]
+  inline def adjustLength(length: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def adjustLength(length: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustLength")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def adjustTag(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")().asInstanceOf[String]
-  @scala.inline
-  def adjustTag(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def adjustTag(tag: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def adjustTag(tag: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def adjustTag(tag: Double, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def adjustTag(tag: Unit, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def adjustTag(tag: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def adjustTag(tag: Buffer, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def adjustTag(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")().asInstanceOf[String]
+  inline def adjustTag(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def adjustTag(tag: String, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def adjustTag(tag: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def adjustTag(tag: Double, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def adjustTag(tag: Unit, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def adjustTag(tag: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def adjustTag(tag: Buffer, encoding: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustTag")(tag.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def adjustValue(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")().asInstanceOf[String]
-  @scala.inline
-  def adjustValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def adjustValue(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def adjustValue(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")().asInstanceOf[String]
+  inline def adjustValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def adjustValue(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def getBufferLength(len: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getBufferLength")(len.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def getBufferLength(len: Double, encoding: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("getBufferLength")(len.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def getBufferLength(len: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getBufferLength")(len.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def getBufferLength(len: Double, encoding: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("getBufferLength")(len.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /* static member */
-  @scala.inline
-  def getBufferTag(buf: Buffer, encoding: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("getBufferTag")(buf.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def getBufferTag(buf: Buffer, encoding: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("getBufferTag")(buf.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def getName(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getName(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Return the name of the TLV.
     */
   /* static member */
-  @scala.inline
-  def getName(tag: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getName(tag: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def log(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[Unit]
+  inline def log(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[Unit]
   
   /**
     * Parse
@@ -461,17 +423,12 @@ object mod {
     * Get TLV objects.
     */
   /* static member */
-  @scala.inline
-  def parseList(data: String): js.Array[TLV] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TLV]]
-  @scala.inline
-  def parseList(data: String, encoding: Double): js.Array[TLV] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Array[TLV]]
-  @scala.inline
-  def parseList(data: Buffer): js.Array[TLV] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TLV]]
-  @scala.inline
-  def parseList(data: Buffer, encoding: Double): js.Array[TLV] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Array[TLV]]
+  inline def parseList(data: String): js.Array[TLV] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TLV]]
+  inline def parseList(data: String, encoding: Double): js.Array[TLV] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Array[TLV]]
+  inline def parseList(data: Buffer): js.Array[TLV] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TLV]]
+  inline def parseList(data: Buffer, encoding: Double): js.Array[TLV] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Array[TLV]]
   
-  @scala.inline
-  def parse_=(x: js.Function2[/* data */ js.UndefOr[String | Buffer], /* encoding */ js.UndefOr[Double], TLV]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
+  inline def parse_=(x: js.Function2[/* data */ js.UndefOr[String | Buffer], /* encoding */ js.UndefOr[Double], TLV]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
   
   trait DOLConstructed extends StObject {
     
@@ -491,8 +448,7 @@ object mod {
   }
   object DOLConstructed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: () => Double,
       find: /* repeated */ js.Any => TL,
       getDolRelatedDataLength: () => Double,
@@ -505,32 +461,23 @@ object mod {
       __obj.asInstanceOf[DOLConstructed]
     }
     
-    @scala.inline
-    implicit class DOLConstructedMutableBuilder[Self <: DOLConstructed] (val x: Self) extends AnyVal {
+    extension [Self <: DOLConstructed](x: Self) {
       
-      @scala.inline
-      def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+      inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFind(value: /* repeated */ js.Any => TL): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: /* repeated */ js.Any => TL): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDolRelatedDataLength(value: () => Double): Self = StObject.set(x, "getDolRelatedDataLength", js.Any.fromFunction0(value))
+      inline def setGetDolRelatedDataLength(value: () => Double): Self = StObject.set(x, "getDolRelatedDataLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetList(value: () => js.Array[TL]): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
+      inline def setGetList(value: () => js.Array[TL]): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setList(value: js.Array[TL]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[TL]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListVarargs(value: TL*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: TL*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
+      inline def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValue(value: /* repeated */ js.Any => js.Array[TLV]): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: /* repeated */ js.Any => js.Array[TLV]): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
 }

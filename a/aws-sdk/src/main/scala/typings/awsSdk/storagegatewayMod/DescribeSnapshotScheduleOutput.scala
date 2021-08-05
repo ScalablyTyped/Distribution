@@ -38,52 +38,37 @@ trait DescribeSnapshotScheduleOutput extends StObject {
 }
 object DescribeSnapshotScheduleOutput {
   
-  @scala.inline
-  def apply(): DescribeSnapshotScheduleOutput = {
+  inline def apply(): DescribeSnapshotScheduleOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSnapshotScheduleOutput]
   }
   
-  @scala.inline
-  implicit class DescribeSnapshotScheduleOutputMutableBuilder[Self <: DescribeSnapshotScheduleOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSnapshotScheduleOutput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRecurrenceInHours(value: RecurrenceInHours): Self = StObject.set(x, "RecurrenceInHours", value.asInstanceOf[js.Any])
+    inline def setRecurrenceInHours(value: RecurrenceInHours): Self = StObject.set(x, "RecurrenceInHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceInHoursUndefined: Self = StObject.set(x, "RecurrenceInHours", js.undefined)
+    inline def setRecurrenceInHoursUndefined: Self = StObject.set(x, "RecurrenceInHours", js.undefined)
     
-    @scala.inline
-    def setStartAt(value: HourOfDay): Self = StObject.set(x, "StartAt", value.asInstanceOf[js.Any])
+    inline def setStartAt(value: HourOfDay): Self = StObject.set(x, "StartAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAtUndefined: Self = StObject.set(x, "StartAt", js.undefined)
+    inline def setStartAtUndefined: Self = StObject.set(x, "StartAt", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimezone(value: GatewayTimezone): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: GatewayTimezone): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
   }
 }

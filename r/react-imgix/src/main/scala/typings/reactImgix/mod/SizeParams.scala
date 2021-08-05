@@ -28,73 +28,51 @@ trait SizeParams extends StObject {
 }
 object SizeParams {
   
-  @scala.inline
-  def apply(): SizeParams = {
+  inline def apply(): SizeParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeParams]
   }
   
-  @scala.inline
-  implicit class SizeParamsMutableBuilder[Self <: SizeParams] (val x: Self) extends AnyVal {
+  extension [Self <: SizeParams](x: Self) {
     
-    @scala.inline
-    def setAr(value: ImgixParamType): Self = StObject.set(x, "ar", value.asInstanceOf[js.Any])
+    inline def setAr(value: ImgixParamType): Self = StObject.set(x, "ar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArUndefined: Self = StObject.set(x, "ar", js.undefined)
+    inline def setArUndefined: Self = StObject.set(x, "ar", js.undefined)
     
-    @scala.inline
-    def setCrop(value: ImgixParamType): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: ImgixParamType): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    @scala.inline
-    def setFit(value: ImgixParamType): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: ImgixParamType): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
-    @scala.inline
-    def setH(value: ImgixParamType): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: ImgixParamType): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    @scala.inline
-    def `setMax-h`(value: ImgixParamType): Self = StObject.set(x, "max-h", value.asInstanceOf[js.Any])
+    inline def `setMax-h`(value: ImgixParamType): Self = StObject.set(x, "max-h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-hUndefined`: Self = StObject.set(x, "max-h", js.undefined)
+    inline def `setMax-hUndefined`: Self = StObject.set(x, "max-h", js.undefined)
     
-    @scala.inline
-    def `setMax-w`(value: ImgixParamType): Self = StObject.set(x, "max-w", value.asInstanceOf[js.Any])
+    inline def `setMax-w`(value: ImgixParamType): Self = StObject.set(x, "max-w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-wUndefined`: Self = StObject.set(x, "max-w", js.undefined)
+    inline def `setMax-wUndefined`: Self = StObject.set(x, "max-w", js.undefined)
     
-    @scala.inline
-    def `setMin-h`(value: ImgixParamType): Self = StObject.set(x, "min-h", value.asInstanceOf[js.Any])
+    inline def `setMin-h`(value: ImgixParamType): Self = StObject.set(x, "min-h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMin-hUndefined`: Self = StObject.set(x, "min-h", js.undefined)
+    inline def `setMin-hUndefined`: Self = StObject.set(x, "min-h", js.undefined)
     
-    @scala.inline
-    def `setMin-w`(value: ImgixParamType): Self = StObject.set(x, "min-w", value.asInstanceOf[js.Any])
+    inline def `setMin-w`(value: ImgixParamType): Self = StObject.set(x, "min-w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMin-wUndefined`: Self = StObject.set(x, "min-w", js.undefined)
+    inline def `setMin-wUndefined`: Self = StObject.set(x, "min-w", js.undefined)
     
-    @scala.inline
-    def setRect(value: ImgixParamType): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: ImgixParamType): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+    inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
-    @scala.inline
-    def setW(value: ImgixParamType): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: ImgixParamType): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
   }
 }

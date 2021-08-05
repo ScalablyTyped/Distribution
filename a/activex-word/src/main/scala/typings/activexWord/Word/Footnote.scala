@@ -20,13 +20,12 @@ trait Footnote extends StObject {
   
   val Reference: typings.activexWord.Word.Range
   
-  @JSName("Word.Footnote_typekey")
+  /* private */ @JSName("Word.Footnote_typekey")
   var WordDotFootnote_typekey: Footnote
 }
 object Footnote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -41,31 +40,22 @@ object Footnote {
     __obj.asInstanceOf[Footnote]
   }
   
-  @scala.inline
-  implicit class FootnoteMutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
+  extension [Self <: Footnote](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: Range): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Range): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotFootnote_typekey(value: Footnote): Self = StObject.set(x, "Word.Footnote_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotFootnote_typekey(value: Footnote): Self = StObject.set(x, "Word.Footnote_typekey", value.asInstanceOf[js.Any])
   }
 }

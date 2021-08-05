@@ -15,20 +15,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: TermLocation, start: TermLocation): End = {
+    inline def apply(end: TermLocation, start: TermLocation): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: TermLocation): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: TermLocation): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: TermLocation): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: TermLocation): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,20 +36,16 @@ object anon {
   }
   object Start {
     
-    @scala.inline
-    def apply(end: TermLocation, start: TermLocation): Start = {
+    inline def apply(end: TermLocation, start: TermLocation): Start = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Start]
     }
     
-    @scala.inline
-    implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+    extension [Self <: Start](x: Self) {
       
-      @scala.inline
-      def setEnd(value: TermLocation): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: TermLocation): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: TermLocation): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: TermLocation): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

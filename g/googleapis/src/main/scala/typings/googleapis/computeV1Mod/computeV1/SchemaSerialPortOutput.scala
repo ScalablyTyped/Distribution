@@ -42,43 +42,31 @@ trait SchemaSerialPortOutput extends StObject {
 }
 object SchemaSerialPortOutput {
   
-  @scala.inline
-  def apply(): SchemaSerialPortOutput = {
+  inline def apply(): SchemaSerialPortOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSerialPortOutput]
   }
   
-  @scala.inline
-  implicit class SchemaSerialPortOutputMutableBuilder[Self <: SchemaSerialPortOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSerialPortOutput](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

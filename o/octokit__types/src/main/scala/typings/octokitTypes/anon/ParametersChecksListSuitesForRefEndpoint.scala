@@ -18,8 +18,7 @@ trait ParametersChecksListSuitesForRefEndpoint extends StObject {
 }
 object ParametersChecksListSuitesForRefEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ChecksListSuitesForRefEndpoint,
     request: ChecksListSuitesForRefRequestOptions,
     response: OctokitResponse[ChecksListSuitesForRefResponseData]
@@ -28,16 +27,12 @@ object ParametersChecksListSuitesForRefEndpoint {
     __obj.asInstanceOf[ParametersChecksListSuitesForRefEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersChecksListSuitesForRefEndpointMutableBuilder[Self <: ParametersChecksListSuitesForRefEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersChecksListSuitesForRefEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ChecksListSuitesForRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ChecksListSuitesForRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ChecksListSuitesForRefRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ChecksListSuitesForRefRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ChecksListSuitesForRefResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ChecksListSuitesForRefResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

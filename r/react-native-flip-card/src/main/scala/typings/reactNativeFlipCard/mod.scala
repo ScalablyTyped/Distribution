@@ -53,29 +53,22 @@ object mod {
   }
   object BackProps {
     
-    @scala.inline
-    def apply(chilren: js.Array[Element], flipHorizontal: Boolean, flipVertical: Boolean, perspective: Double): BackProps = {
+    inline def apply(chilren: js.Array[Element], flipHorizontal: Boolean, flipVertical: Boolean, perspective: Double): BackProps = {
       val __obj = js.Dynamic.literal(chilren = chilren.asInstanceOf[js.Any], flipHorizontal = flipHorizontal.asInstanceOf[js.Any], flipVertical = flipVertical.asInstanceOf[js.Any], perspective = perspective.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackProps]
     }
     
-    @scala.inline
-    implicit class BackPropsMutableBuilder[Self <: BackProps] (val x: Self) extends AnyVal {
+    extension [Self <: BackProps](x: Self) {
       
-      @scala.inline
-      def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
+      inline def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value :_*))
+      inline def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value :_*))
       
-      @scala.inline
-      def setFlipHorizontal(value: Boolean): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
+      inline def setFlipHorizontal(value: Boolean): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipVertical(value: Boolean): Self = StObject.set(x, "flipVertical", value.asInstanceOf[js.Any])
+      inline def setFlipVertical(value: Boolean): Self = StObject.set(x, "flipVertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+      inline def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,20 +78,16 @@ object mod {
   }
   object FaceProps {
     
-    @scala.inline
-    def apply(chilren: js.Array[Element]): FaceProps = {
+    inline def apply(chilren: js.Array[Element]): FaceProps = {
       val __obj = js.Dynamic.literal(chilren = chilren.asInstanceOf[js.Any])
       __obj.asInstanceOf[FaceProps]
     }
     
-    @scala.inline
-    implicit class FacePropsMutableBuilder[Self <: FaceProps] (val x: Self) extends AnyVal {
+    extension [Self <: FaceProps](x: Self) {
       
-      @scala.inline
-      def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
+      inline def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value :_*))
+      inline def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value :_*))
     }
   }
   
@@ -132,89 +121,62 @@ object mod {
   }
   object FlipCardProps {
     
-    @scala.inline
-    def apply(): FlipCardProps = {
+    inline def apply(): FlipCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlipCardProps]
     }
     
-    @scala.inline
-    implicit class FlipCardPropsMutableBuilder[Self <: FlipCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlipCardProps](x: Self) {
       
-      @scala.inline
-      def setAlignHeight(value: Boolean): Self = StObject.set(x, "alignHeight", value.asInstanceOf[js.Any])
+      inline def setAlignHeight(value: Boolean): Self = StObject.set(x, "alignHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignHeightUndefined: Self = StObject.set(x, "alignHeight", js.undefined)
+      inline def setAlignHeightUndefined: Self = StObject.set(x, "alignHeight", js.undefined)
       
-      @scala.inline
-      def setAlignWidth(value: Boolean): Self = StObject.set(x, "alignWidth", value.asInstanceOf[js.Any])
+      inline def setAlignWidth(value: Boolean): Self = StObject.set(x, "alignWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignWidthUndefined: Self = StObject.set(x, "alignWidth", js.undefined)
+      inline def setAlignWidthUndefined: Self = StObject.set(x, "alignWidth", js.undefined)
       
-      @scala.inline
-      def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipHorizontal(value: Boolean): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
+      inline def setFlipHorizontal(value: Boolean): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipHorizontalUndefined: Self = StObject.set(x, "flipHorizontal", js.undefined)
+      inline def setFlipHorizontalUndefined: Self = StObject.set(x, "flipHorizontal", js.undefined)
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setFlipVertical(value: Boolean): Self = StObject.set(x, "flipVertical", value.asInstanceOf[js.Any])
+      inline def setFlipVertical(value: Boolean): Self = StObject.set(x, "flipVertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipVerticalUndefined: Self = StObject.set(x, "flipVertical", js.undefined)
+      inline def setFlipVerticalUndefined: Self = StObject.set(x, "flipVertical", js.undefined)
       
-      @scala.inline
-      def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+      inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+      inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
       
-      @scala.inline
-      def setOnFlipEnd(value: () => Unit): Self = StObject.set(x, "onFlipEnd", js.Any.fromFunction0(value))
+      inline def setOnFlipEnd(value: () => Unit): Self = StObject.set(x, "onFlipEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFlipEndUndefined: Self = StObject.set(x, "onFlipEnd", js.undefined)
+      inline def setOnFlipEndUndefined: Self = StObject.set(x, "onFlipEnd", js.undefined)
       
-      @scala.inline
-      def setOnFlipStart(value: () => Unit): Self = StObject.set(x, "onFlipStart", js.Any.fromFunction0(value))
+      inline def setOnFlipStart(value: () => Unit): Self = StObject.set(x, "onFlipStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFlipStartUndefined: Self = StObject.set(x, "onFlipStart", js.undefined)
+      inline def setOnFlipStartUndefined: Self = StObject.set(x, "onFlipStart", js.undefined)
       
-      @scala.inline
-      def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+      inline def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
+      inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
     }
   }
 }

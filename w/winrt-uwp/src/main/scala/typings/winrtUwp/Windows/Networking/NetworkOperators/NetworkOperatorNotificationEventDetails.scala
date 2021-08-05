@@ -35,8 +35,7 @@ trait NetworkOperatorNotificationEventDetails extends StObject {
 }
 object NetworkOperatorNotificationEventDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizeTethering: (Boolean, String) => Unit,
     encodingType: Double,
     message: String,
@@ -49,28 +48,20 @@ object NetworkOperatorNotificationEventDetails {
     __obj.asInstanceOf[NetworkOperatorNotificationEventDetails]
   }
   
-  @scala.inline
-  implicit class NetworkOperatorNotificationEventDetailsMutableBuilder[Self <: NetworkOperatorNotificationEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkOperatorNotificationEventDetails](x: Self) {
     
-    @scala.inline
-    def setAuthorizeTethering(value: (Boolean, String) => Unit): Self = StObject.set(x, "authorizeTethering", js.Any.fromFunction2(value))
+    inline def setAuthorizeTethering(value: (Boolean, String) => Unit): Self = StObject.set(x, "authorizeTethering", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    inline def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationType(value: NetworkOperatorEventMessageType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: NetworkOperatorEventMessageType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMessage(value: ISmsMessage): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
+    inline def setSmsMessage(value: ISmsMessage): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
   }
 }

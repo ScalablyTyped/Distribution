@@ -14,22 +14,17 @@ trait AutoConfirmUser extends StObject {
 }
 object AutoConfirmUser {
   
-  @scala.inline
-  def apply(autoConfirmUser: Boolean, autoVerifyEmail: Boolean, autoVerifyPhone: Boolean): AutoConfirmUser = {
+  inline def apply(autoConfirmUser: Boolean, autoVerifyEmail: Boolean, autoVerifyPhone: Boolean): AutoConfirmUser = {
     val __obj = js.Dynamic.literal(autoConfirmUser = autoConfirmUser.asInstanceOf[js.Any], autoVerifyEmail = autoVerifyEmail.asInstanceOf[js.Any], autoVerifyPhone = autoVerifyPhone.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoConfirmUser]
   }
   
-  @scala.inline
-  implicit class AutoConfirmUserMutableBuilder[Self <: AutoConfirmUser] (val x: Self) extends AnyVal {
+  extension [Self <: AutoConfirmUser](x: Self) {
     
-    @scala.inline
-    def setAutoConfirmUser(value: Boolean): Self = StObject.set(x, "autoConfirmUser", value.asInstanceOf[js.Any])
+    inline def setAutoConfirmUser(value: Boolean): Self = StObject.set(x, "autoConfirmUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoVerifyEmail(value: Boolean): Self = StObject.set(x, "autoVerifyEmail", value.asInstanceOf[js.Any])
+    inline def setAutoVerifyEmail(value: Boolean): Self = StObject.set(x, "autoVerifyEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoVerifyPhone(value: Boolean): Self = StObject.set(x, "autoVerifyPhone", value.asInstanceOf[js.Any])
+    inline def setAutoVerifyPhone(value: Boolean): Self = StObject.set(x, "autoVerifyPhone", value.asInstanceOf[js.Any])
   }
 }

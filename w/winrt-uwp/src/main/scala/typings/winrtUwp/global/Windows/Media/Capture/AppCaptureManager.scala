@@ -21,14 +21,12 @@ object AppCaptureManager {
     * @param appCaptureSettings The settings to apply.
     */
   /* static member */
-  @scala.inline
-  def applySettings(appCaptureSettings: typings.winrtUwp.Windows.Media.Capture.AppCaptureSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(appCaptureSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def applySettings(appCaptureSettings: typings.winrtUwp.Windows.Media.Capture.AppCaptureSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(appCaptureSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Gets the current app capture settings.
     * @return The current app capture settings.
     */
   /* static member */
-  @scala.inline
-  def getCurrentSettings(): typings.winrtUwp.Windows.Media.Capture.AppCaptureSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentSettings")().asInstanceOf[typings.winrtUwp.Windows.Media.Capture.AppCaptureSettings]
+  inline def getCurrentSettings(): typings.winrtUwp.Windows.Media.Capture.AppCaptureSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentSettings")().asInstanceOf[typings.winrtUwp.Windows.Media.Capture.AppCaptureSettings]
 }

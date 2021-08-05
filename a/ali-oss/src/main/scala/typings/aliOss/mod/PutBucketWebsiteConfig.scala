@@ -13,22 +13,17 @@ trait PutBucketWebsiteConfig extends StObject {
 }
 object PutBucketWebsiteConfig {
   
-  @scala.inline
-  def apply(index: String): PutBucketWebsiteConfig = {
+  inline def apply(index: String): PutBucketWebsiteConfig = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketWebsiteConfig]
   }
   
-  @scala.inline
-  implicit class PutBucketWebsiteConfigMutableBuilder[Self <: PutBucketWebsiteConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketWebsiteConfig](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

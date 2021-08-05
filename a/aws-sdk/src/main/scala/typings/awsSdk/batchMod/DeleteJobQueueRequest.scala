@@ -13,16 +13,13 @@ trait DeleteJobQueueRequest extends StObject {
 }
 object DeleteJobQueueRequest {
   
-  @scala.inline
-  def apply(jobQueue: String): DeleteJobQueueRequest = {
+  inline def apply(jobQueue: String): DeleteJobQueueRequest = {
     val __obj = js.Dynamic.literal(jobQueue = jobQueue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteJobQueueRequest]
   }
   
-  @scala.inline
-  implicit class DeleteJobQueueRequestMutableBuilder[Self <: DeleteJobQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteJobQueueRequest](x: Self) {
     
-    @scala.inline
-    def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
+    inline def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
   }
 }

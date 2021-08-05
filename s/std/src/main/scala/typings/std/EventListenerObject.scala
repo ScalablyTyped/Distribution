@@ -10,16 +10,13 @@ trait EventListenerObject extends StObject {
 }
 object EventListenerObject {
   
-  @scala.inline
-  def apply(handleEvent: Event => Unit): EventListenerObject = {
+  inline def apply(handleEvent: Event => Unit): EventListenerObject = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
     __obj.asInstanceOf[EventListenerObject]
   }
   
-  @scala.inline
-  implicit class EventListenerObjectMutableBuilder[Self <: EventListenerObject] (val x: Self) extends AnyVal {
+  extension [Self <: EventListenerObject](x: Self) {
     
-    @scala.inline
-    def setHandleEvent(value: Event => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+    inline def setHandleEvent(value: Event => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }
 }

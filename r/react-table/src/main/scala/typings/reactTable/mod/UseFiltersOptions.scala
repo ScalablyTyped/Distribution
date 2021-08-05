@@ -19,43 +19,31 @@ trait UseFiltersOptions[D /* <: js.Object */] extends StObject {
 }
 object UseFiltersOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseFiltersOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseFiltersOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseFiltersOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseFiltersOptionsMutableBuilder[Self <: UseFiltersOptions[?], D /* <: js.Object */] (val x: Self & UseFiltersOptions[D]) extends AnyVal {
+  extension [Self <: UseFiltersOptions[?], D /* <: js.Object */](x: Self & UseFiltersOptions[D]) {
     
-    @scala.inline
-    def setAutoResetFilters(value: Boolean): Self = StObject.set(x, "autoResetFilters", value.asInstanceOf[js.Any])
+    inline def setAutoResetFilters(value: Boolean): Self = StObject.set(x, "autoResetFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResetFiltersUndefined: Self = StObject.set(x, "autoResetFilters", js.undefined)
+    inline def setAutoResetFiltersUndefined: Self = StObject.set(x, "autoResetFilters", js.undefined)
     
-    @scala.inline
-    def setDefaultCanFilter(value: Boolean): Self = StObject.set(x, "defaultCanFilter", value.asInstanceOf[js.Any])
+    inline def setDefaultCanFilter(value: Boolean): Self = StObject.set(x, "defaultCanFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCanFilterUndefined: Self = StObject.set(x, "defaultCanFilter", js.undefined)
+    inline def setDefaultCanFilterUndefined: Self = StObject.set(x, "defaultCanFilter", js.undefined)
     
-    @scala.inline
-    def setDisableFilters(value: Boolean): Self = StObject.set(x, "disableFilters", value.asInstanceOf[js.Any])
+    inline def setDisableFilters(value: Boolean): Self = StObject.set(x, "disableFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFiltersUndefined: Self = StObject.set(x, "disableFilters", js.undefined)
+    inline def setDisableFiltersUndefined: Self = StObject.set(x, "disableFilters", js.undefined)
     
-    @scala.inline
-    def setFilterTypes(value: FilterTypes[D]): Self = StObject.set(x, "filterTypes", value.asInstanceOf[js.Any])
+    inline def setFilterTypes(value: FilterTypes[D]): Self = StObject.set(x, "filterTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypesUndefined: Self = StObject.set(x, "filterTypes", js.undefined)
+    inline def setFilterTypesUndefined: Self = StObject.set(x, "filterTypes", js.undefined)
     
-    @scala.inline
-    def setManualFilters(value: Boolean): Self = StObject.set(x, "manualFilters", value.asInstanceOf[js.Any])
+    inline def setManualFilters(value: Boolean): Self = StObject.set(x, "manualFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualFiltersUndefined: Self = StObject.set(x, "manualFilters", js.undefined)
+    inline def setManualFiltersUndefined: Self = StObject.set(x, "manualFilters", js.undefined)
   }
 }

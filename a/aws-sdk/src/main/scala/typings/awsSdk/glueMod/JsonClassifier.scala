@@ -33,37 +33,27 @@ trait JsonClassifier extends StObject {
 }
 object JsonClassifier {
   
-  @scala.inline
-  def apply(JsonPath: JsonPath, Name: NameString): JsonClassifier = {
+  inline def apply(JsonPath: JsonPath, Name: NameString): JsonClassifier = {
     val __obj = js.Dynamic.literal(JsonPath = JsonPath.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonClassifier]
   }
   
-  @scala.inline
-  implicit class JsonClassifierMutableBuilder[Self <: JsonClassifier] (val x: Self) extends AnyVal {
+  extension [Self <: JsonClassifier](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: VersionId): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: VersionId): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

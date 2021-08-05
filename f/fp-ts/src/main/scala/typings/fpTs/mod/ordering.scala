@@ -18,8 +18,7 @@ object ordering {
   @js.native
   val eqOrdering: Eq[Ordering] = js.native
   
-  @scala.inline
-  def invert(O: Ordering): Ordering = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(O.asInstanceOf[js.Any]).asInstanceOf[Ordering]
+  inline def invert(O: Ordering): Ordering = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(O.asInstanceOf[js.Any]).asInstanceOf[Ordering]
   
   @JSImport("fp-ts", "ordering.monoidOrdering")
   @js.native
@@ -29,6 +28,5 @@ object ordering {
   @js.native
   val semigroupOrdering: Semigroup[Ordering] = js.native
   
-  @scala.inline
-  def sign(n: Double): Ordering = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Ordering]
+  inline def sign(n: Double): Ordering = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Ordering]
 }

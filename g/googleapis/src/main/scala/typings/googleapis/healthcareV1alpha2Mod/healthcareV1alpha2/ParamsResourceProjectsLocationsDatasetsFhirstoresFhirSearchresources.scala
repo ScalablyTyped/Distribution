@@ -29,31 +29,23 @@ trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources
 }
 object ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources = {
+  inline def apply(): ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresourcesMutableBuilder[Self <: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

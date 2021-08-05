@@ -27,8 +27,7 @@ trait XExtendedStorageStream
      with XTransactionBroadcaster
 object XExtendedStorageStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     Length: Double,
     OutputStream: XOutputStream,

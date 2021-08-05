@@ -20,8 +20,7 @@ trait XScriptEventsSupplier
 }
 object XScriptEventsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Events: XNameContainer,
     acquire: () => Unit,
     getEvents: () => XNameContainer,
@@ -32,13 +31,10 @@ object XScriptEventsSupplier {
     __obj.asInstanceOf[XScriptEventsSupplier]
   }
   
-  @scala.inline
-  implicit class XScriptEventsSupplierMutableBuilder[Self <: XScriptEventsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XScriptEventsSupplier](x: Self) {
     
-    @scala.inline
-    def setEvents(value: XNameContainer): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: XNameContainer): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEvents(value: () => XNameContainer): Self = StObject.set(x, "getEvents", js.Any.fromFunction0(value))
+    inline def setGetEvents(value: () => XNameContainer): Self = StObject.set(x, "getEvents", js.Any.fromFunction0(value))
   }
 }

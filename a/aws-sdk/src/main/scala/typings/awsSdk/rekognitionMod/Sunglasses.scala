@@ -18,25 +18,19 @@ trait Sunglasses extends StObject {
 }
 object Sunglasses {
   
-  @scala.inline
-  def apply(): Sunglasses = {
+  inline def apply(): Sunglasses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sunglasses]
   }
   
-  @scala.inline
-  implicit class SunglassesMutableBuilder[Self <: Sunglasses] (val x: Self) extends AnyVal {
+  extension [Self <: Sunglasses](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

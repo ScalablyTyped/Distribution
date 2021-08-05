@@ -13,19 +13,15 @@ trait MatchTags extends StObject {
 }
 object MatchTags {
   
-  @scala.inline
-  def apply(): MatchTags = {
+  inline def apply(): MatchTags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchTags]
   }
   
-  @scala.inline
-  implicit class MatchTagsMutableBuilder[Self <: MatchTags] (val x: Self) extends AnyVal {
+  extension [Self <: MatchTags](x: Self) {
     
-    @scala.inline
-    def setBothTags(value: Boolean): Self = StObject.set(x, "bothTags", value.asInstanceOf[js.Any])
+    inline def setBothTags(value: Boolean): Self = StObject.set(x, "bothTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBothTagsUndefined: Self = StObject.set(x, "bothTags", js.undefined)
+    inline def setBothTagsUndefined: Self = StObject.set(x, "bothTags", js.undefined)
   }
 }

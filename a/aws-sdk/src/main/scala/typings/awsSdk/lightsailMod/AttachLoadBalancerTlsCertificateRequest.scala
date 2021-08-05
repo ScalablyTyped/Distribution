@@ -18,19 +18,15 @@ trait AttachLoadBalancerTlsCertificateRequest extends StObject {
 }
 object AttachLoadBalancerTlsCertificateRequest {
   
-  @scala.inline
-  def apply(certificateName: ResourceName, loadBalancerName: ResourceName): AttachLoadBalancerTlsCertificateRequest = {
+  inline def apply(certificateName: ResourceName, loadBalancerName: ResourceName): AttachLoadBalancerTlsCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateName = certificateName.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachLoadBalancerTlsCertificateRequest]
   }
   
-  @scala.inline
-  implicit class AttachLoadBalancerTlsCertificateRequestMutableBuilder[Self <: AttachLoadBalancerTlsCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachLoadBalancerTlsCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
+    inline def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }
 }

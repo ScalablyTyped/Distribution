@@ -22,25 +22,19 @@ trait SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination extends StObjec
 }
 object SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination = {
+  inline def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestinationMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination](x: Self) {
     
-    @scala.inline
-    def setDatasetUri(value: String): Self = StObject.set(x, "datasetUri", value.asInstanceOf[js.Any])
+    inline def setDatasetUri(value: String): Self = StObject.set(x, "datasetUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUriUndefined: Self = StObject.set(x, "datasetUri", js.undefined)
+    inline def setDatasetUriUndefined: Self = StObject.set(x, "datasetUri", js.undefined)
     
-    @scala.inline
-    def setSchemaConfig(value: SchemaSchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
+    inline def setSchemaConfig(value: SchemaSchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
+    inline def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait ConsistentHashRingOptions extends StObject {
 }
 object ConsistentHashRingOptions {
   
-  @scala.inline
-  def apply(): ConsistentHashRingOptions = {
+  inline def apply(): ConsistentHashRingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConsistentHashRingOptions]
   }
   
-  @scala.inline
-  implicit class ConsistentHashRingOptionsMutableBuilder[Self <: ConsistentHashRingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConsistentHashRingOptions](x: Self) {
     
-    @scala.inline
-    def setComputeHash(value: (/* key */ String | Double, /* seed */ Double) => Double): Self = StObject.set(x, "computeHash", js.Any.fromFunction2(value))
+    inline def setComputeHash(value: (/* key */ String | Double, /* seed */ Double) => Double): Self = StObject.set(x, "computeHash", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComputeHashUndefined: Self = StObject.set(x, "computeHash", js.undefined)
+    inline def setComputeHashUndefined: Self = StObject.set(x, "computeHash", js.undefined)
     
-    @scala.inline
-    def setNumberOfVirtualNodesPerCollection(value: Double): Self = StObject.set(x, "numberOfVirtualNodesPerCollection", value.asInstanceOf[js.Any])
+    inline def setNumberOfVirtualNodesPerCollection(value: Double): Self = StObject.set(x, "numberOfVirtualNodesPerCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfVirtualNodesPerCollectionUndefined: Self = StObject.set(x, "numberOfVirtualNodesPerCollection", js.undefined)
+    inline def setNumberOfVirtualNodesPerCollectionUndefined: Self = StObject.set(x, "numberOfVirtualNodesPerCollection", js.undefined)
   }
 }

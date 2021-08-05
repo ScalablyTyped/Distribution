@@ -78,8 +78,7 @@ trait ITinyMceService extends StObject {
 }
 object ITinyMceService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configuration: () => js.Array[ITinyMcePlugin],
     createInsertEmbeddedMedia: (js.Object, IScope) => Unit,
     createInsertMacro: (js.Object, IScope) => Unit,
@@ -90,22 +89,16 @@ object ITinyMceService {
     __obj.asInstanceOf[ITinyMceService]
   }
   
-  @scala.inline
-  implicit class ITinyMceServiceMutableBuilder[Self <: ITinyMceService] (val x: Self) extends AnyVal {
+  extension [Self <: ITinyMceService](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: () => js.Array[ITinyMcePlugin]): Self = StObject.set(x, "configuration", js.Any.fromFunction0(value))
+    inline def setConfiguration(value: () => js.Array[ITinyMcePlugin]): Self = StObject.set(x, "configuration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateInsertEmbeddedMedia(value: (js.Object, IScope) => Unit): Self = StObject.set(x, "createInsertEmbeddedMedia", js.Any.fromFunction2(value))
+    inline def setCreateInsertEmbeddedMedia(value: (js.Object, IScope) => Unit): Self = StObject.set(x, "createInsertEmbeddedMedia", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateInsertMacro(value: (js.Object, IScope) => Unit): Self = StObject.set(x, "createInsertMacro", js.Any.fromFunction2(value))
+    inline def setCreateInsertMacro(value: (js.Object, IScope) => Unit): Self = StObject.set(x, "createInsertMacro", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateMediaPicker(value: js.Object => Unit): Self = StObject.set(x, "createMediaPicker", js.Any.fromFunction1(value))
+    inline def setCreateMediaPicker(value: js.Object => Unit): Self = StObject.set(x, "createMediaPicker", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultPrevalues(value: () => IConfiguration): Self = StObject.set(x, "defaultPrevalues", js.Any.fromFunction0(value))
+    inline def setDefaultPrevalues(value: () => IConfiguration): Self = StObject.set(x, "defaultPrevalues", js.Any.fromFunction0(value))
   }
 }

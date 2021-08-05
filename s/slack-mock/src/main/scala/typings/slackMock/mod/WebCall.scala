@@ -15,25 +15,19 @@ trait WebCall[T] extends StObject {
 }
 object WebCall {
   
-  @scala.inline
-  def apply[T](headers: WebHttpHeaders, params: T, url: WebUrl): WebCall[T] = {
+  inline def apply[T](headers: WebHttpHeaders, params: T, url: WebUrl): WebCall[T] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebCall[T]]
   }
   
-  @scala.inline
-  implicit class WebCallMutableBuilder[Self <: WebCall[?], T] (val x: Self & WebCall[T]) extends AnyVal {
+  extension [Self <: WebCall[?], T](x: Self & WebCall[T]) {
     
-    @scala.inline
-    def setHeaders(value: WebHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: WebHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: WebUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: WebUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

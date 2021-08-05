@@ -23,37 +23,27 @@ trait DataColorPalette extends StObject {
 }
 object DataColorPalette {
   
-  @scala.inline
-  def apply(): DataColorPalette = {
+  inline def apply(): DataColorPalette = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataColorPalette]
   }
   
-  @scala.inline
-  implicit class DataColorPaletteMutableBuilder[Self <: DataColorPalette] (val x: Self) extends AnyVal {
+  extension [Self <: DataColorPalette](x: Self) {
     
-    @scala.inline
-    def setColors(value: ColorList): Self = StObject.set(x, "Colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: ColorList): Self = StObject.set(x, "Colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "Colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "Colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(value: HexColor*): Self = StObject.set(x, "Colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: HexColor*): Self = StObject.set(x, "Colors", js.Array(value :_*))
     
-    @scala.inline
-    def setEmptyFillColor(value: HexColor): Self = StObject.set(x, "EmptyFillColor", value.asInstanceOf[js.Any])
+    inline def setEmptyFillColor(value: HexColor): Self = StObject.set(x, "EmptyFillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyFillColorUndefined: Self = StObject.set(x, "EmptyFillColor", js.undefined)
+    inline def setEmptyFillColorUndefined: Self = StObject.set(x, "EmptyFillColor", js.undefined)
     
-    @scala.inline
-    def setMinMaxGradient(value: ColorList): Self = StObject.set(x, "MinMaxGradient", value.asInstanceOf[js.Any])
+    inline def setMinMaxGradient(value: ColorList): Self = StObject.set(x, "MinMaxGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinMaxGradientUndefined: Self = StObject.set(x, "MinMaxGradient", js.undefined)
+    inline def setMinMaxGradientUndefined: Self = StObject.set(x, "MinMaxGradient", js.undefined)
     
-    @scala.inline
-    def setMinMaxGradientVarargs(value: HexColor*): Self = StObject.set(x, "MinMaxGradient", js.Array(value :_*))
+    inline def setMinMaxGradientVarargs(value: HexColor*): Self = StObject.set(x, "MinMaxGradient", js.Array(value :_*))
   }
 }

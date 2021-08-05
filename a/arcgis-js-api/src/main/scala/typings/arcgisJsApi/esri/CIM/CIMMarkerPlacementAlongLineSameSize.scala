@@ -14,17 +14,14 @@ trait CIMMarkerPlacementAlongLineSameSize
 }
 object CIMMarkerPlacementAlongLineSameSize {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementAlongLineSameSize = {
+  inline def apply(): CIMMarkerPlacementAlongLineSameSize = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementAlongLineSameSize")
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineSameSize]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementAlongLineSameSizeMutableBuilder[Self <: CIMMarkerPlacementAlongLineSameSize] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementAlongLineSameSize](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineSameSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineSameSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

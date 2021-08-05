@@ -12,22 +12,17 @@ trait BaseUrl extends StObject {
 }
 object BaseUrl {
   
-  @scala.inline
-  def apply(baseUrl: String): BaseUrl = {
+  inline def apply(baseUrl: String): BaseUrl = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseUrl]
   }
   
-  @scala.inline
-  implicit class BaseUrlMutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
+  extension [Self <: BaseUrl](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+    inline def setCustomHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+    inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
   }
 }

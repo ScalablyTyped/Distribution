@@ -23,31 +23,23 @@ trait BatchGetCommitsError extends StObject {
 }
 object BatchGetCommitsError {
   
-  @scala.inline
-  def apply(): BatchGetCommitsError = {
+  inline def apply(): BatchGetCommitsError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetCommitsError]
   }
   
-  @scala.inline
-  implicit class BatchGetCommitsErrorMutableBuilder[Self <: BatchGetCommitsError] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCommitsError](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+    inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

@@ -53,19 +53,19 @@ object columnControllerMod {
     def addValueColumns(keys: js.Array[String | Column]): Unit = js.native
     def addValueColumns(keys: js.Array[String | Column], source: ColumnEventType): Unit = js.native
     
-    var aggFuncService: js.Any = js.native
+    /* private */ var aggFuncService: js.Any = js.native
     
-    var allDisplayedCenterVirtualColumns: js.Any = js.native
+    /* private */ var allDisplayedCenterVirtualColumns: js.Any = js.native
     
-    var allDisplayedColumns: js.Any = js.native
+    /* private */ var allDisplayedColumns: js.Any = js.native
     
-    var allDisplayedVirtualColumns: js.Any = js.native
+    /* private */ var allDisplayedVirtualColumns: js.Any = js.native
     
-    var autoGroupColService: js.Any = js.native
+    /* private */ var autoGroupColService: js.Any = js.native
     
-    var autoGroupsNeedBuilding: js.Any = js.native
+    /* private */ var autoGroupsNeedBuilding: js.Any = js.native
     
-    var autoRowHeightColumns: js.Any = js.native
+    /* private */ var autoRowHeightColumns: js.Any = js.native
     
     def autoSizeAllColumns(): Unit = js.native
     def autoSizeAllColumns(source: ColumnEventType): Unit = js.native
@@ -78,13 +78,13 @@ object columnControllerMod {
     def autoSizeColumns(keys: js.Array[String | Column]): Unit = js.native
     def autoSizeColumns(keys: js.Array[String | Column], source: ColumnEventType): Unit = js.native
     
-    var autoWidthCalculator: js.Any = js.native
+    /* private */ var autoWidthCalculator: js.Any = js.native
     
-    var balancedColumnTreeBuilder: js.Any = js.native
+    /* private */ var balancedColumnTreeBuilder: js.Any = js.native
     
-    var bodyWidth: js.Any = js.native
+    /* private */ var bodyWidth: js.Any = js.native
     
-    var bodyWidthDirty: js.Any = js.native
+    /* private */ var bodyWidthDirty: js.Any = js.native
     
     /* private */ def buildDisplayedTrees(visibleColumns: js.Any): js.Any = js.native
     
@@ -100,19 +100,19 @@ object columnControllerMod {
     
     /* private */ def clearDisplayedColumns(): js.Any = js.native
     
-    var colSpanActive: js.Any = js.native
+    /* private */ var colSpanActive: js.Any = js.native
     
-    var columnAnimationService: js.Any = js.native
+    /* private */ var columnAnimationService: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnUtils: js.Any = js.native
+    /* private */ var columnUtils: js.Any = js.native
     
-    var columnsForQuickFilter: js.Any = js.native
+    /* private */ var columnsForQuickFilter: js.Any = js.native
     
     /* private */ def columnsMatch(column: js.Any, key: js.Any): js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createGroupAutoColumnsIfNeeded(): js.Any = js.native
     
@@ -120,25 +120,25 @@ object columnControllerMod {
     
     /* private */ def createValueColumns(source: js.Any): js.Any = js.native
     
-    var displayedCenterColumns: js.Any = js.native
+    /* private */ var displayedCenterColumns: js.Any = js.native
     
-    var displayedCentreColumnTree: js.Any = js.native
+    /* private */ var displayedCentreColumnTree: js.Any = js.native
     
-    var displayedCentreHeaderRows: js.Any = js.native
+    /* private */ var displayedCentreHeaderRows: js.Any = js.native
     
-    var displayedGroupCreator: js.Any = js.native
+    /* private */ var displayedGroupCreator: js.Any = js.native
     
-    var displayedLeftColumnTree: js.Any = js.native
+    /* private */ var displayedLeftColumnTree: js.Any = js.native
     
-    var displayedLeftColumns: js.Any = js.native
+    /* private */ var displayedLeftColumns: js.Any = js.native
     
-    var displayedLeftHeaderRows: js.Any = js.native
+    /* private */ var displayedLeftHeaderRows: js.Any = js.native
     
-    var displayedRightColumnTree: js.Any = js.native
+    /* private */ var displayedRightColumnTree: js.Any = js.native
     
-    var displayedRightColumns: js.Any = js.native
+    /* private */ var displayedRightColumns: js.Any = js.native
     
-    var displayedRightHeaderRows: js.Any = js.native
+    /* private */ var displayedRightHeaderRows: js.Any = js.native
     
     def doesMovePassLockedPositions(proposedColumnOrder: js.Array[Column]): Boolean = js.native
     
@@ -146,9 +146,9 @@ object columnControllerMod {
     
     def doesMovePassRules(columnsToMove: js.Array[Column], toIndex: Double): Boolean = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var expressionService: js.Any = js.native
+    /* private */ var expressionService: js.Any = js.native
     
     /* private */ def extractPivotColumns(source: js.Any): js.Any = js.native
     
@@ -277,21 +277,21 @@ object columnControllerMod {
     
     /* private */ def getWidthOfColsInList(columnList: js.Any): js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridBalancedTree: js.Any = js.native
+    /* private */ var gridBalancedTree: js.Any = js.native
     
-    var gridColsArePrimary: js.Any = js.native
+    /* private */ var gridColsArePrimary: js.Any = js.native
     
-    var gridColumns: js.Any = js.native
+    /* private */ var gridColumns: js.Any = js.native
     
-    var gridHeaderRowCount: js.Any = js.native
+    /* private */ var gridHeaderRowCount: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var groupAutoColumns: js.Any = js.native
+    /* private */ var groupAutoColumns: js.Any = js.native
     
-    var groupDisplayColumns: js.Any = js.native
+    /* private */ var groupDisplayColumns: js.Any = js.native
     
     def init(): Unit = js.native
     
@@ -321,11 +321,11 @@ object columnControllerMod {
     
     def isSecondaryColumnsPresent(): Boolean = js.native
     
-    var lastPrimaryOrder: js.Any = js.native
+    /* private */ var lastPrimaryOrder: js.Any = js.native
     
-    var leftWidth: js.Any = js.native
+    /* private */ var leftWidth: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     def moveColumn(key: String, toIndex: Double): Unit = js.native
     def moveColumn(key: String, toIndex: Double, source: ColumnEventType): Unit = js.native
@@ -347,21 +347,21 @@ object columnControllerMod {
     
     /* private */ def orderGridColsLikeLastPrimary(): js.Any = js.native
     
-    var pivotColumns: js.Any = js.native
+    /* private */ var pivotColumns: js.Any = js.native
     
-    var pivotMode: js.Any = js.native
+    /* private */ var pivotMode: js.Any = js.native
     
-    var primaryBalancedTree: js.Any = js.native
+    /* private */ var primaryBalancedTree: js.Any = js.native
     
-    var primaryColumns: js.Any = js.native
+    /* private */ var primaryColumns: js.Any = js.native
     
-    var primaryHeaderRowCount: js.Any = js.native
+    /* private */ var primaryHeaderRowCount: js.Any = js.native
     
     /* private */ def processSecondaryColumnDefinitions(colDefs: js.Any): js.Any = js.native
     
     /* private */ def putFixedColumnsFirst(): js.Any = js.native
     
-    var ready: js.Any = js.native
+    /* private */ var ready: js.Any = js.native
     
     def removePivotColumn(key: String): Unit = js.native
     def removePivotColumn(key: String, source: ColumnEventType): Unit = js.native
@@ -395,21 +395,21 @@ object columnControllerMod {
     
     def resizeColumnSets(resizeSets: js.Array[ColumnResizeSet], finished: Boolean, source: ColumnEventType): Unit = js.native
     
-    var rightWidth: js.Any = js.native
+    /* private */ var rightWidth: js.Any = js.native
     
-    var rowGroupColumns: js.Any = js.native
+    /* private */ var rowGroupColumns: js.Any = js.native
     
-    var scrollPosition: js.Any = js.native
+    /* private */ var scrollPosition: js.Any = js.native
     
-    var scrollWidth: js.Any = js.native
+    /* private */ var scrollWidth: js.Any = js.native
     
-    var secondaryBalancedTree: js.Any = js.native
+    /* private */ var secondaryBalancedTree: js.Any = js.native
     
-    var secondaryColumns: js.Any = js.native
+    /* private */ var secondaryColumns: js.Any = js.native
     
-    var secondaryColumnsPresent: js.Any = js.native
+    /* private */ var secondaryColumnsPresent: js.Any = js.native
     
-    var secondaryHeaderRowCount: js.Any = js.native
+    /* private */ var secondaryHeaderRowCount: js.Any = js.native
     
     /* private */ def setBeans(loggerFactory: js.Any): js.Any = js.native
     
@@ -499,7 +499,7 @@ object columnControllerMod {
     
     /* private */ def sortColumnListUsingIndexes(indexes: js.Any, colA: js.Any, colB: js.Any): js.Any = js.native
     
-    var suppressColumnVirtualisation: js.Any = js.native
+    /* private */ var suppressColumnVirtualisation: js.Any = js.native
     
     /* private */ def syncColumnWithNoState(column: js.Any, source: js.Any): js.Any = js.native
     
@@ -539,15 +539,15 @@ object columnControllerMod {
     
     /* private */ def updateVirtualSets(): js.Any = js.native
     
-    var usingTreeData: js.Any = js.native
+    /* private */ var usingTreeData: js.Any = js.native
     
-    var valueCache: js.Any = js.native
+    /* private */ var valueCache: js.Any = js.native
     
-    var valueColumns: js.Any = js.native
+    /* private */ var valueColumns: js.Any = js.native
     
-    var viewportLeft: js.Any = js.native
+    /* private */ var viewportLeft: js.Any = js.native
     
-    var viewportRight: js.Any = js.native
+    /* private */ var viewportRight: js.Any = js.native
     
     /* private */ def wrapHeaderNameWithAggFunc(column: js.Any, headerName: js.Any): js.Any = js.native
   }
@@ -562,29 +562,22 @@ object columnControllerMod {
   }
   object ColumnResizeSet {
     
-    @scala.inline
-    def apply(columns: js.Array[Column], ratios: js.Array[Double], width: Double): ColumnResizeSet = {
+    inline def apply(columns: js.Array[Column], ratios: js.Array[Double], width: Double): ColumnResizeSet = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], ratios = ratios.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnResizeSet]
     }
     
-    @scala.inline
-    implicit class ColumnResizeSetMutableBuilder[Self <: ColumnResizeSet] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnResizeSet](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setRatios(value: js.Array[Double]): Self = StObject.set(x, "ratios", value.asInstanceOf[js.Any])
+      inline def setRatios(value: js.Array[Double]): Self = StObject.set(x, "ratios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatiosVarargs(value: Double*): Self = StObject.set(x, "ratios", js.Array(value :_*))
+      inline def setRatiosVarargs(value: Double*): Self = StObject.set(x, "ratios", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -606,56 +599,40 @@ object columnControllerMod {
   }
   object ColumnState {
     
-    @scala.inline
-    def apply(colId: String): ColumnState = {
+    inline def apply(colId: String): ColumnState = {
       val __obj = js.Dynamic.literal(colId = colId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnState]
     }
     
-    @scala.inline
-    implicit class ColumnStateMutableBuilder[Self <: ColumnState] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnState](x: Self) {
       
-      @scala.inline
-      def setAggFunc(value: String | IAggFunc): Self = StObject.set(x, "aggFunc", value.asInstanceOf[js.Any])
+      inline def setAggFunc(value: String | IAggFunc): Self = StObject.set(x, "aggFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggFuncFunction1(value: /* input */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "aggFunc", js.Any.fromFunction1(value))
+      inline def setAggFuncFunction1(value: /* input */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "aggFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAggFuncUndefined: Self = StObject.set(x, "aggFunc", js.undefined)
+      inline def setAggFuncUndefined: Self = StObject.set(x, "aggFunc", js.undefined)
       
-      @scala.inline
-      def setColId(value: String): Self = StObject.set(x, "colId", value.asInstanceOf[js.Any])
+      inline def setColId(value: String): Self = StObject.set(x, "colId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setPinned(value: Boolean | String | left | right): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      inline def setPinned(value: Boolean | String | left | right): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+      inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
       
-      @scala.inline
-      def setPivotIndex(value: Double): Self = StObject.set(x, "pivotIndex", value.asInstanceOf[js.Any])
+      inline def setPivotIndex(value: Double): Self = StObject.set(x, "pivotIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPivotIndexUndefined: Self = StObject.set(x, "pivotIndex", js.undefined)
+      inline def setPivotIndexUndefined: Self = StObject.set(x, "pivotIndex", js.undefined)
       
-      @scala.inline
-      def setRowGroupIndex(value: Double): Self = StObject.set(x, "rowGroupIndex", value.asInstanceOf[js.Any])
+      inline def setRowGroupIndex(value: Double): Self = StObject.set(x, "rowGroupIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowGroupIndexUndefined: Self = StObject.set(x, "rowGroupIndex", js.undefined)
+      inline def setRowGroupIndexUndefined: Self = StObject.set(x, "rowGroupIndex", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

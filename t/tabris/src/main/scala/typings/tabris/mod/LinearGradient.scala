@@ -41,8 +41,7 @@ object LinearGradient {
     * value, including `null` and `'initial'` the method throws.
     * @param linearGradientValue The value to create a LinearGradient instance from
     */
-  @scala.inline
-  def from(linearGradientValue: LinearGradientValue): LinearGradient = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(linearGradientValue.asInstanceOf[js.Any]).asInstanceOf[LinearGradient]
+  inline def from(linearGradientValue: LinearGradientValue): LinearGradient = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(linearGradientValue.asInstanceOf[js.Any]).asInstanceOf[LinearGradient]
   
   /**
     * Returns true if value is a LinearGradientValue. This includes `null` and `'initial'`. Use this to
@@ -50,8 +49,7 @@ object LinearGradient {
     * guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isLinearGradientValue(value: js.Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
+  inline def isLinearGradientValue(value: js.Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
   
   /**
     * Returns true if value is a valid LinearGradientValue. This excludes `null` and `'initial'`. Use this
@@ -59,6 +57,5 @@ object LinearGradient {
     * guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isValidLinearGradientValue(value: js.Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
+  inline def isValidLinearGradientValue(value: js.Any): /* is tabris.tabris.LinearGradientValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLinearGradientValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.LinearGradientValue */ Boolean]
 }

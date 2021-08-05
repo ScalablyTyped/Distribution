@@ -23,34 +23,25 @@ trait SearchProvisionedProductsOutput extends StObject {
 }
 object SearchProvisionedProductsOutput {
   
-  @scala.inline
-  def apply(): SearchProvisionedProductsOutput = {
+  inline def apply(): SearchProvisionedProductsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchProvisionedProductsOutput]
   }
   
-  @scala.inline
-  implicit class SearchProvisionedProductsOutputMutableBuilder[Self <: SearchProvisionedProductsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SearchProvisionedProductsOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setProvisionedProducts(value: ProvisionedProductAttributes): Self = StObject.set(x, "ProvisionedProducts", value.asInstanceOf[js.Any])
+    inline def setProvisionedProducts(value: ProvisionedProductAttributes): Self = StObject.set(x, "ProvisionedProducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductsUndefined: Self = StObject.set(x, "ProvisionedProducts", js.undefined)
+    inline def setProvisionedProductsUndefined: Self = StObject.set(x, "ProvisionedProducts", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductsVarargs(value: ProvisionedProductAttribute*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value :_*))
+    inline def setProvisionedProductsVarargs(value: ProvisionedProductAttribute*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalResultsCount(value: TotalResultsCount): Self = StObject.set(x, "TotalResultsCount", value.asInstanceOf[js.Any])
+    inline def setTotalResultsCount(value: TotalResultsCount): Self = StObject.set(x, "TotalResultsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResultsCountUndefined: Self = StObject.set(x, "TotalResultsCount", js.undefined)
+    inline def setTotalResultsCountUndefined: Self = StObject.set(x, "TotalResultsCount", js.undefined)
   }
 }

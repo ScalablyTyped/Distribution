@@ -11,7 +11,7 @@ object schedulerMod {
   @js.native
   class Scheduler () extends StObject {
     
-    var _requestLoopId: js.Any = js.native
+    /* private */ var _requestLoopId: js.Any = js.native
     
     def publishInterval(observer: IObserver, initial: js.Any, interval: Double, action: js.Function): Double = js.native
     
@@ -30,7 +30,6 @@ object schedulerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(args: js.Any*): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Scheduler]
+    inline def create(args: js.Any*): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Scheduler]
   }
 }

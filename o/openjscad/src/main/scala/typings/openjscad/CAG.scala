@@ -110,23 +110,18 @@ object CAG {
   }
   object Vertex {
     
-    @scala.inline
-    def apply(getTag: () => Double, pos: Vector2D, tag: Double): Vertex = {
+    inline def apply(getTag: () => Double, pos: Vector2D, tag: Double): Vertex = {
       val __obj = js.Dynamic.literal(getTag = js.Any.fromFunction0(getTag), pos = pos.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vertex]
     }
     
-    @scala.inline
-    implicit class VertexMutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
+    extension [Self <: Vertex](x: Self) {
       
-      @scala.inline
-      def setGetTag(value: () => Double): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
+      inline def setGetTag(value: () => Double): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPos(value: Vector2D): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Vector2D): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,8 +137,7 @@ object CAG {
   }
   object fuzzyCAGFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCAG: CAG => CAG,
       getSide: Side => Side,
       getVertex: Vertex => Vertex,
@@ -153,20 +147,15 @@ object CAG {
       __obj.asInstanceOf[fuzzyCAGFactory]
     }
     
-    @scala.inline
-    implicit class fuzzyCAGFactoryMutableBuilder[Self <: fuzzyCAGFactory] (val x: Self) extends AnyVal {
+    extension [Self <: fuzzyCAGFactory](x: Self) {
       
-      @scala.inline
-      def setGetCAG(value: CAG => CAG): Self = StObject.set(x, "getCAG", js.Any.fromFunction1(value))
+      inline def setGetCAG(value: CAG => CAG): Self = StObject.set(x, "getCAG", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSide(value: Side => Side): Self = StObject.set(x, "getSide", js.Any.fromFunction1(value))
+      inline def setGetSide(value: Side => Side): Self = StObject.set(x, "getSide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVertex(value: Vertex => Vertex): Self = StObject.set(x, "getVertex", js.Any.fromFunction1(value))
+      inline def setGetVertex(value: Vertex => Vertex): Self = StObject.set(x, "getVertex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVertexfactory(value: fuzzyFactory): Self = StObject.set(x, "vertexfactory", value.asInstanceOf[js.Any])
+      inline def setVertexfactory(value: fuzzyFactory): Self = StObject.set(x, "vertexfactory", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,8 +33,7 @@ trait RequestedExtension extends StObject {
 }
 object RequestedExtension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extensionName: String,
     extensionRequests: js.Array[ExtensionRequest],
     publisherDisplayName: String,
@@ -45,25 +44,18 @@ object RequestedExtension {
     __obj.asInstanceOf[RequestedExtension]
   }
   
-  @scala.inline
-  implicit class RequestedExtensionMutableBuilder[Self <: RequestedExtension] (val x: Self) extends AnyVal {
+  extension [Self <: RequestedExtension](x: Self) {
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionRequests(value: js.Array[ExtensionRequest]): Self = StObject.set(x, "extensionRequests", value.asInstanceOf[js.Any])
+    inline def setExtensionRequests(value: js.Array[ExtensionRequest]): Self = StObject.set(x, "extensionRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "extensionRequests", js.Array(value :_*))
+    inline def setExtensionRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "extensionRequests", js.Array(value :_*))
     
-    @scala.inline
-    def setPublisherDisplayName(value: String): Self = StObject.set(x, "publisherDisplayName", value.asInstanceOf[js.Any])
+    inline def setPublisherDisplayName(value: String): Self = StObject.set(x, "publisherDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestCount(value: Double): Self = StObject.set(x, "requestCount", value.asInstanceOf[js.Any])
+    inline def setRequestCount(value: Double): Self = StObject.set(x, "requestCount", value.asInstanceOf[js.Any])
   }
 }

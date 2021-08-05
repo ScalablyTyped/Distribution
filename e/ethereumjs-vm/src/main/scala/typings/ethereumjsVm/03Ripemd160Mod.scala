@@ -12,6 +12,5 @@ object `03Ripemd160Mod` {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(opts: PrecompileInput): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
+  inline def default(opts: PrecompileInput): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
 }

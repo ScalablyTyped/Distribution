@@ -42,8 +42,7 @@ trait XFormattedField
 }
 object XFormattedField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharCaseMap: Double,
     CharColor: Color,
@@ -164,13 +163,10 @@ object XFormattedField {
     __obj.asInstanceOf[XFormattedField]
   }
   
-  @scala.inline
-  implicit class XFormattedFieldMutableBuilder[Self <: XFormattedField] (val x: Self) extends AnyVal {
+  extension [Self <: XFormattedField](x: Self) {
     
-    @scala.inline
-    def setFormatKey(value: Double): Self = StObject.set(x, "FormatKey", value.asInstanceOf[js.Any])
+    inline def setFormatKey(value: Double): Self = StObject.set(x, "FormatKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "FormatsSupplier", value.asInstanceOf[js.Any])
+    inline def setFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "FormatsSupplier", value.asInstanceOf[js.Any])
   }
 }

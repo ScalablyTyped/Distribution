@@ -456,8 +456,7 @@ object Core {
     @JSGlobal("Windows.UI.Text.Core.CoreTextServicesConstants.hiddenCharacter")
     @js.native
     def hiddenCharacter: String = js.native
-    @scala.inline
-    def hiddenCharacter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hiddenCharacter")(x.asInstanceOf[js.Any])
+    inline def hiddenCharacter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hiddenCharacter")(x.asInstanceOf[js.Any])
   }
   
   /** The entry point to all services provided by the Windows core text APIs and the text input server. This object is associated with an application's UI thread (the thread that CoreWindow runs on). */
@@ -477,8 +476,7 @@ object Core {
       * @return A CoreTextServicesManager instance, which can be used to create further objects to support the app's text input scenarios.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.UI.Text.Core.CoreTextServicesManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Text.Core.CoreTextServicesManager]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.UI.Text.Core.CoreTextServicesManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Text.Core.CoreTextServicesManager]
   }
   
   /** Represents information about a TextRequested event. */

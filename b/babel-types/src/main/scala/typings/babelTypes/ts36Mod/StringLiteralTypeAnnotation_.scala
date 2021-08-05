@@ -16,17 +16,14 @@ trait StringLiteralTypeAnnotation_
 }
 object StringLiteralTypeAnnotation_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): StringLiteralTypeAnnotation_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): StringLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteralTypeAnnotation")
     __obj.asInstanceOf[StringLiteralTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class StringLiteralTypeAnnotation_MutableBuilder[Self <: StringLiteralTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: StringLiteralTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: StringLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StringLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

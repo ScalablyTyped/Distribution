@@ -58,8 +58,7 @@ trait IBookmarkFieldItem extends StObject {
 }
 object IBookmarkFieldItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAndMode: Boolean,
     qDef: IFieldDefEx,
     qExcludedValues: js.Array[IFieldValue],
@@ -72,34 +71,24 @@ object IBookmarkFieldItem {
     __obj.asInstanceOf[IBookmarkFieldItem]
   }
   
-  @scala.inline
-  implicit class IBookmarkFieldItemMutableBuilder[Self <: IBookmarkFieldItem] (val x: Self) extends AnyVal {
+  extension [Self <: IBookmarkFieldItem](x: Self) {
     
-    @scala.inline
-    def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
+    inline def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDef(value: IFieldDefEx): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
+    inline def setQDef(value: IFieldDefEx): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExcludedValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qExcludedValues", value.asInstanceOf[js.Any])
+    inline def setQExcludedValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qExcludedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExcludedValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qExcludedValues", js.Array(value :_*))
+    inline def setQExcludedValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qExcludedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
+    inline def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
+    inline def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSelectInfo(value: ISelectInfo): Self = StObject.set(x, "qSelectInfo", value.asInstanceOf[js.Any])
+    inline def setQSelectInfo(value: ISelectInfo): Self = StObject.set(x, "qSelectInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
+    inline def setQValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
   }
 }

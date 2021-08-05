@@ -10,16 +10,13 @@ trait EmbeddedSession extends StObject {
 }
 object EmbeddedSession {
   
-  @scala.inline
-  def apply(init: () => js.Promise[js.Any]): EmbeddedSession = {
+  inline def apply(init: () => js.Promise[js.Any]): EmbeddedSession = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init))
     __obj.asInstanceOf[EmbeddedSession]
   }
   
-  @scala.inline
-  implicit class EmbeddedSessionMutableBuilder[Self <: EmbeddedSession] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedSession](x: Self) {
     
-    @scala.inline
-    def setInit(value: () => js.Promise[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => js.Promise[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
   }
 }

@@ -14,17 +14,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply[T /* <: GeoTransformPrototype */](stream: GeoStream_ => T & GeoStream_): `0`[T] = {
+    inline def apply[T /* <: GeoTransformPrototype */](stream: GeoStream_ => T & GeoStream_): `0`[T] = {
       val __obj = js.Dynamic.literal(stream = js.Any.fromFunction1(stream))
       __obj.asInstanceOf[`0`[T]]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[?], T /* <: GeoTransformPrototype */] (val x: Self & `0`[T]) extends AnyVal {
+    extension [Self <: `0`[?], T /* <: GeoTransformPrototype */](x: Self & `0`[T]) {
       
-      @scala.inline
-      def setStream(value: GeoStream_ => T & GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
+      inline def setStream(value: GeoStream_ => T & GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
     }
   }
   
@@ -36,21 +33,17 @@ object anon {
   }
   object Properties {
     
-    @scala.inline
-    def apply(properties: js.Any, `type`: String): Properties = {
+    inline def apply(properties: js.Any, `type`: String): Properties = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Properties]
     }
     
-    @scala.inline
-    implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+    extension [Self <: Properties](x: Self) {
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,17 +53,14 @@ object anon {
   }
   object Stream {
     
-    @scala.inline
-    def apply(stream: GeoStream_): Stream = {
+    inline def apply(stream: GeoStream_): Stream = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stream]
     }
     
-    @scala.inline
-    implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+    extension [Self <: Stream](x: Self) {
       
-      @scala.inline
-      def setStream(value: GeoStream_): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: GeoStream_): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

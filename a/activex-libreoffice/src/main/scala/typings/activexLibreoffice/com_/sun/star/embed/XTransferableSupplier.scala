@@ -26,8 +26,7 @@ trait XTransferableSupplier
 }
 object XTransferableSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Transferable: XTransferable,
     acquire: () => Unit,
     getTransferable: () => XTransferable,
@@ -38,13 +37,10 @@ object XTransferableSupplier {
     __obj.asInstanceOf[XTransferableSupplier]
   }
   
-  @scala.inline
-  implicit class XTransferableSupplierMutableBuilder[Self <: XTransferableSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTransferableSupplier](x: Self) {
     
-    @scala.inline
-    def setGetTransferable(value: () => XTransferable): Self = StObject.set(x, "getTransferable", js.Any.fromFunction0(value))
+    inline def setGetTransferable(value: () => XTransferable): Self = StObject.set(x, "getTransferable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransferable(value: XTransferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
+    inline def setTransferable(value: XTransferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
   }
 }

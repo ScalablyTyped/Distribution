@@ -16,8 +16,7 @@ trait SVG extends StObject {
 }
 object SVG {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     edges: DictrenderType,
     labels: StringDictionary[SVGObject[Node]],
     nodes: StringDictionary[SVGObject[Node]]
@@ -26,16 +25,12 @@ object SVG {
     __obj.asInstanceOf[SVG]
   }
   
-  @scala.inline
-  implicit class SVGMutableBuilder[Self <: SVG] (val x: Self) extends AnyVal {
+  extension [Self <: SVG](x: Self) {
     
-    @scala.inline
-    def setEdges(value: DictrenderType): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: DictrenderType): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: StringDictionary[SVGObject[Node]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[SVGObject[Node]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: StringDictionary[SVGObject[Node]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: StringDictionary[SVGObject[Node]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
   }
 }

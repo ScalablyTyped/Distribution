@@ -13,16 +13,13 @@ trait Body extends StObject {
 }
 object Body {
   
-  @scala.inline
-  def apply(body: BlockStatement_ | Statement | Expression): Body = {
+  inline def apply(body: BlockStatement_ | Statement | Expression): Body = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
   }
   
-  @scala.inline
-  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+  extension [Self <: Body](x: Self) {
     
-    @scala.inline
-    def setBody(value: BlockStatement_ | Statement | Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BlockStatement_ | Statement | Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

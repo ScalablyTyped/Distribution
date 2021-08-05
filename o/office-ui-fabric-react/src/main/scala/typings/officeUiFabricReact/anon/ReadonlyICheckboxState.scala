@@ -13,25 +13,19 @@ trait ReadonlyICheckboxState extends StObject {
 }
 object ReadonlyICheckboxState {
   
-  @scala.inline
-  def apply(): ReadonlyICheckboxState = {
+  inline def apply(): ReadonlyICheckboxState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlyICheckboxState]
   }
   
-  @scala.inline
-  implicit class ReadonlyICheckboxStateMutableBuilder[Self <: ReadonlyICheckboxState] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyICheckboxState](x: Self) {
     
-    @scala.inline
-    def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
+    inline def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
+    inline def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
     
-    @scala.inline
-    def setIsIndeterminate(value: Boolean): Self = StObject.set(x, "isIndeterminate", value.asInstanceOf[js.Any])
+    inline def setIsIndeterminate(value: Boolean): Self = StObject.set(x, "isIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIndeterminateUndefined: Self = StObject.set(x, "isIndeterminate", js.undefined)
+    inline def setIsIndeterminateUndefined: Self = StObject.set(x, "isIndeterminate", js.undefined)
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlAllocationMethod extends StObject
 object XlAllocationMethod {
   
-  @scala.inline
-  def xlEqualAllocation: `1` = 1.asInstanceOf[`1`]
+  inline def xlEqualAllocation: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlWeightedAllocation: `2` = 2.asInstanceOf[`2`]
+  inline def xlWeightedAllocation: `2` = 2.asInstanceOf[`2`]
 }

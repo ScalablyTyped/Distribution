@@ -77,26 +77,20 @@ object AMap {
     }
     object BusStop {
       
-      @scala.inline
-      def apply(id: String, location: LngLat, name: String, sequence: Double): BusStop = {
+      inline def apply(id: String, location: LngLat, name: String, sequence: Double): BusStop = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
         __obj.asInstanceOf[BusStop]
       }
       
-      @scala.inline
-      implicit class BusStopMutableBuilder[Self <: BusStop] (val x: Self) extends AnyVal {
+      extension [Self <: BusStop](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+        inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       }
     }
     
@@ -108,20 +102,16 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
+      inline def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
         val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
     }
     
@@ -132,8 +122,7 @@ object AMap {
     trait LineInfo extends StObject
     object LineInfo {
       
-      @scala.inline
-      def LineInfoBase(
+      inline def LineInfoBase(
         citycode: String,
         end_stop: String,
         id: String,
@@ -147,8 +136,7 @@ object AMap {
         __obj.asInstanceOf[typings.amapJsApiLineSearch.AMap.LineSearch.LineInfoBase]
       }
       
-      @scala.inline
-      def LineInfoExt(
+      inline def LineInfoExt(
         basic_price: String,
         bounds: Bounds,
         citycode: String,
@@ -212,8 +200,7 @@ object AMap {
     }
     object LineInfoBase {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         citycode: String,
         end_stop: String,
         id: String,
@@ -227,32 +214,23 @@ object AMap {
         __obj.asInstanceOf[LineInfoBase]
       }
       
-      @scala.inline
-      implicit class LineInfoBaseMutableBuilder[Self <: LineInfoBase] (val x: Self) extends AnyVal {
+      extension [Self <: LineInfoBase](x: Self) {
         
-        @scala.inline
-        def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+        inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnd_stop(value: String): Self = StObject.set(x, "end_stop", value.asInstanceOf[js.Any])
+        inline def setEnd_stop(value: String): Self = StObject.set(x, "end_stop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
         
-        @scala.inline
-        def setStart_stop(value: String): Self = StObject.set(x, "start_stop", value.asInstanceOf[js.Any])
+        inline def setStart_stop(value: String): Self = StObject.set(x, "start_stop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -304,8 +282,7 @@ object AMap {
     }
     object LineInfoExt {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         basic_price: String,
         bounds: Bounds,
         citycode: String,
@@ -327,35 +304,25 @@ object AMap {
         __obj.asInstanceOf[LineInfoExt]
       }
       
-      @scala.inline
-      implicit class LineInfoExtMutableBuilder[Self <: LineInfoExt] (val x: Self) extends AnyVal {
+      extension [Self <: LineInfoExt](x: Self) {
         
-        @scala.inline
-        def setBasic_price(value: String): Self = StObject.set(x, "basic_price", value.asInstanceOf[js.Any])
+        inline def setBasic_price(value: String): Self = StObject.set(x, "basic_price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+        inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistance(value: String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+        inline def setDistance(value: String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtime(value: String): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
+        inline def setEtime(value: String): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
+        inline def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotal_price(value: String): Self = StObject.set(x, "total_price", value.asInstanceOf[js.Any])
+        inline def setTotal_price(value: String): Self = StObject.set(x, "total_price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVia_stops(value: js.Array[BusStop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
+        inline def setVia_stops(value: js.Array[BusStop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVia_stopsVarargs(value: BusStop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
+        inline def setVia_stopsVarargs(value: BusStop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
       }
     }
     
@@ -389,38 +356,28 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+        inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+        inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
         
-        @scala.inline
-        def setExtensions(value: base | all): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: base | all): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+        inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
         
-        @scala.inline
-        def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+        inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
+        inline def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       }
     }
     
@@ -448,41 +405,30 @@ object AMap {
     }
     object SearchResult {
       
-      @scala.inline
-      def apply(info: String, lineInfo: js.Array[LineInfo]): SearchResult = {
+      inline def apply(info: String, lineInfo: js.Array[LineInfo]): SearchResult = {
         val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], lineInfo = lineInfo.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResult]
       }
       
-      @scala.inline
-      implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResult](x: Self) {
         
-        @scala.inline
-        def setCityList(value: js.Array[js.Any]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
+        inline def setCityList(value: js.Array[js.Any]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
+        inline def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
         
-        @scala.inline
-        def setCityListVarargs(value: js.Any*): Self = StObject.set(x, "cityList", js.Array(value :_*))
+        inline def setCityListVarargs(value: js.Any*): Self = StObject.set(x, "cityList", js.Array(value :_*))
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeywordList(value: js.Array[js.Any]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
+        inline def setKeywordList(value: js.Array[js.Any]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)
+        inline def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)
         
-        @scala.inline
-        def setKeywordListVarargs(value: js.Any*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
+        inline def setKeywordListVarargs(value: js.Any*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
         
-        @scala.inline
-        def setLineInfo(value: js.Array[LineInfo]): Self = StObject.set(x, "lineInfo", value.asInstanceOf[js.Any])
+        inline def setLineInfo(value: js.Array[LineInfo]): Self = StObject.set(x, "lineInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineInfoVarargs(value: LineInfo*): Self = StObject.set(x, "lineInfo", js.Array(value :_*))
+        inline def setLineInfoVarargs(value: LineInfo*): Self = StObject.set(x, "lineInfo", js.Array(value :_*))
       }
     }
     
@@ -494,14 +440,11 @@ object AMap {
     trait SearchStatus extends StObject
     object SearchStatus {
       
-      @scala.inline
-      def complete: typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.complete]
+      inline def complete: typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.complete]
       
-      @scala.inline
-      def error: typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.error = "error".asInstanceOf[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.error]
+      inline def error: typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.error = "error".asInstanceOf[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.error]
       
-      @scala.inline
-      def no_data: typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.no_data]
+      inline def no_data: typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.no_data]
     }
   }
 }

@@ -22,8 +22,7 @@ object sidebarSectionItemUniDriverMod {
   }
   object SidebarSectionItemUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -36,20 +35,15 @@ object sidebarSectionItemUniDriverMod {
       __obj.asInstanceOf[SidebarSectionItemUniDriver]
     }
     
-    @scala.inline
-    implicit class SidebarSectionItemUniDriverMutableBuilder[Self <: SidebarSectionItemUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarSectionItemUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetPrefix(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
+      inline def setGetPrefix(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSuffix(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
+      inline def setGetSuffix(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
+      inline def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
     }
   }
 }

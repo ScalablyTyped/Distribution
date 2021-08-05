@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentTypeShorthand extends StObject
 object CommentTypeShorthand {
   
-  @scala.inline
-  def inner: typings.babelTypes.babelTypesStrings.inner = "inner".asInstanceOf[typings.babelTypes.babelTypesStrings.inner]
+  inline def inner: typings.babelTypes.babelTypesStrings.inner = "inner".asInstanceOf[typings.babelTypes.babelTypesStrings.inner]
   
-  @scala.inline
-  def leading: typings.babelTypes.babelTypesStrings.leading = "leading".asInstanceOf[typings.babelTypes.babelTypesStrings.leading]
+  inline def leading: typings.babelTypes.babelTypesStrings.leading = "leading".asInstanceOf[typings.babelTypes.babelTypesStrings.leading]
   
-  @scala.inline
-  def trailing: typings.babelTypes.babelTypesStrings.trailing = "trailing".asInstanceOf[typings.babelTypes.babelTypesStrings.trailing]
+  inline def trailing: typings.babelTypes.babelTypesStrings.trailing = "trailing".asInstanceOf[typings.babelTypes.babelTypesStrings.trailing]
 }

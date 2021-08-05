@@ -12,6 +12,5 @@ object wonkaSourceMakeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def make[A](f: js.Function1[/* observer */ Observer[A], js.Function0[Unit]]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(f.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
+  inline def make[A](f: js.Function1[/* observer */ Observer[A], js.Function0[Unit]]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(f.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
 }

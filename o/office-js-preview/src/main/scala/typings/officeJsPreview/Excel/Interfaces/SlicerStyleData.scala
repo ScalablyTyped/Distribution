@@ -25,25 +25,19 @@ trait SlicerStyleData extends StObject {
 }
 object SlicerStyleData {
   
-  @scala.inline
-  def apply(): SlicerStyleData = {
+  inline def apply(): SlicerStyleData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlicerStyleData]
   }
   
-  @scala.inline
-  implicit class SlicerStyleDataMutableBuilder[Self <: SlicerStyleData] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerStyleData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

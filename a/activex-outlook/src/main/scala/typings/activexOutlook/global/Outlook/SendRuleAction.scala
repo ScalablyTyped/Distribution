@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.SendRuleAction")
 @js.native
-class SendRuleAction protected ()
+/* private */ class SendRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.SendRuleAction {
   
@@ -24,7 +24,7 @@ class SendRuleAction protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.SendRuleAction_typekey")
   var OutlookDotSendRuleAction_typekey: typings.activexOutlook.Outlook.SendRuleAction = js.native
   

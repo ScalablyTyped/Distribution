@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChipColor extends StObject
 object ChipColor {
   
-  @scala.inline
-  def default: typings.muiDatatables.muiDatatablesStrings.default = "default".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.default]
+  inline def default: typings.muiDatatables.muiDatatablesStrings.default = "default".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.default]
   
-  @scala.inline
-  def primary: typings.muiDatatables.muiDatatablesStrings.primary = "primary".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.primary]
+  inline def primary: typings.muiDatatables.muiDatatablesStrings.primary = "primary".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.primary]
   
-  @scala.inline
-  def secondary: typings.muiDatatables.muiDatatablesStrings.secondary = "secondary".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.secondary]
+  inline def secondary: typings.muiDatatables.muiDatatablesStrings.secondary = "secondary".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.secondary]
 }

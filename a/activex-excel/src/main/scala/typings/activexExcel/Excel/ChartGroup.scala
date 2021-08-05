@@ -21,7 +21,7 @@ trait ChartGroup extends StObject {
   
   val DropLines: typings.activexExcel.Excel.DropLines = js.native
   
-  @JSName("Excel.ChartGroup_typekey")
+  /* private */ @JSName("Excel.ChartGroup_typekey")
   var ExcelDotChartGroup_typekey: ChartGroup = js.native
   
   var FirstSliceAngle: Double = js.native

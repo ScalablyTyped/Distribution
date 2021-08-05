@@ -22,8 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChangeEvent[TSchema /* <: js.Object */] extends StObject
 object ChangeEvent {
   
-  @scala.inline
-  def ChangeEventCR[TSchema /* <: js.Object */](
+  inline def ChangeEventCR[TSchema /* <: js.Object */](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `5`[TSchema],
@@ -34,20 +33,17 @@ object ChangeEvent {
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventCR[TSchema]]
   }
   
-  @scala.inline
-  def ChangeEventDelete[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, documentKey: `5`[TSchema], ns: Coll): typings.mongodb.mod.ChangeEventDelete[TSchema] = {
+  inline def ChangeEventDelete[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, documentKey: `5`[TSchema], ns: Coll): typings.mongodb.mod.ChangeEventDelete[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "delete")
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventDelete[TSchema]]
   }
   
-  @scala.inline
-  def ChangeEventInvalidate[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp): typings.mongodb.mod.ChangeEventInvalidate[TSchema] = {
+  inline def ChangeEventInvalidate[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp): typings.mongodb.mod.ChangeEventInvalidate[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = "invalidate")
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventInvalidate[TSchema]]
   }
   
-  @scala.inline
-  def ChangeEventOther[TSchema /* <: js.Object */](
+  inline def ChangeEventOther[TSchema /* <: js.Object */](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     ns: Coll,
@@ -57,14 +53,12 @@ object ChangeEvent {
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventOther[TSchema]]
   }
   
-  @scala.inline
-  def ChangeEventRename[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, ns: Coll, to: Coll): typings.mongodb.mod.ChangeEventRename[TSchema] = {
+  inline def ChangeEventRename[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, ns: Coll, to: Coll): typings.mongodb.mod.ChangeEventRename[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "rename", to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventRename[TSchema]]
   }
   
-  @scala.inline
-  def ChangeEventUpdate[TSchema /* <: js.Object */](
+  inline def ChangeEventUpdate[TSchema /* <: js.Object */](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `5`[TSchema],

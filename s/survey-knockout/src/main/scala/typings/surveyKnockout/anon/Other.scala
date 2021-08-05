@@ -14,22 +14,17 @@ trait Other extends StObject {
 }
 object Other {
   
-  @scala.inline
-  def apply(control: String, other: String, root: String): Other = {
+  inline def apply(control: String, other: String, root: String): Other = {
     val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Other]
   }
   
-  @scala.inline
-  implicit class OtherMutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
+  extension [Self <: Other](x: Self) {
     
-    @scala.inline
-    def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

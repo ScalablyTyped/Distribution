@@ -43,46 +43,33 @@ trait UpdateDataSourceRequest extends StObject {
 }
 object UpdateDataSourceRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DataSourceId: ResourceId, Name: ResourceName): UpdateDataSourceRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DataSourceId: ResourceId, Name: ResourceName): UpdateDataSourceRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSourceId = DataSourceId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDataSourceRequestMutableBuilder[Self <: UpdateDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentials(value: DataSourceCredentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: DataSourceCredentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: ResourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: ResourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceParameters(value: DataSourceParameters): Self = StObject.set(x, "DataSourceParameters", value.asInstanceOf[js.Any])
+    inline def setDataSourceParameters(value: DataSourceParameters): Self = StObject.set(x, "DataSourceParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceParametersUndefined: Self = StObject.set(x, "DataSourceParameters", js.undefined)
+    inline def setDataSourceParametersUndefined: Self = StObject.set(x, "DataSourceParameters", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslProperties(value: SslProperties): Self = StObject.set(x, "SslProperties", value.asInstanceOf[js.Any])
+    inline def setSslProperties(value: SslProperties): Self = StObject.set(x, "SslProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslPropertiesUndefined: Self = StObject.set(x, "SslProperties", js.undefined)
+    inline def setSslPropertiesUndefined: Self = StObject.set(x, "SslProperties", js.undefined)
     
-    @scala.inline
-    def setVpcConnectionProperties(value: VpcConnectionProperties): Self = StObject.set(x, "VpcConnectionProperties", value.asInstanceOf[js.Any])
+    inline def setVpcConnectionProperties(value: VpcConnectionProperties): Self = StObject.set(x, "VpcConnectionProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConnectionPropertiesUndefined: Self = StObject.set(x, "VpcConnectionProperties", js.undefined)
+    inline def setVpcConnectionPropertiesUndefined: Self = StObject.set(x, "VpcConnectionProperties", js.undefined)
   }
 }

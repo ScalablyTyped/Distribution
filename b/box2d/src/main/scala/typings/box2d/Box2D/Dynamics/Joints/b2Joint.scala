@@ -78,8 +78,7 @@ trait b2Joint extends StObject {
 }
 object b2Joint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAnchorA: () => b2Vec2,
     GetAnchorB: () => b2Vec2,
     GetBodyA: () => b2Body,
@@ -96,40 +95,28 @@ object b2Joint {
     __obj.asInstanceOf[b2Joint]
   }
   
-  @scala.inline
-  implicit class b2JointMutableBuilder[Self <: b2Joint] (val x: Self) extends AnyVal {
+  extension [Self <: b2Joint](x: Self) {
     
-    @scala.inline
-    def setGetAnchorA(value: () => b2Vec2): Self = StObject.set(x, "GetAnchorA", js.Any.fromFunction0(value))
+    inline def setGetAnchorA(value: () => b2Vec2): Self = StObject.set(x, "GetAnchorA", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnchorB(value: () => b2Vec2): Self = StObject.set(x, "GetAnchorB", js.Any.fromFunction0(value))
+    inline def setGetAnchorB(value: () => b2Vec2): Self = StObject.set(x, "GetAnchorB", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBodyA(value: () => b2Body): Self = StObject.set(x, "GetBodyA", js.Any.fromFunction0(value))
+    inline def setGetBodyA(value: () => b2Body): Self = StObject.set(x, "GetBodyA", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBodyB(value: () => b2Body): Self = StObject.set(x, "GetBodyB", js.Any.fromFunction0(value))
+    inline def setGetBodyB(value: () => b2Body): Self = StObject.set(x, "GetBodyB", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNext(value: () => b2Joint): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
+    inline def setGetNext(value: () => b2Joint): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReactionForce(value: Double => b2Vec2): Self = StObject.set(x, "GetReactionForce", js.Any.fromFunction1(value))
+    inline def setGetReactionForce(value: Double => b2Vec2): Self = StObject.set(x, "GetReactionForce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetReactionTorque(value: Double => Double): Self = StObject.set(x, "GetReactionTorque", js.Any.fromFunction1(value))
+    inline def setGetReactionTorque(value: Double => Double): Self = StObject.set(x, "GetReactionTorque", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUserData(value: () => js.Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction0(value))
+    inline def setGetUserData(value: () => js.Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "IsActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "IsActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetUserData(value: js.Any => Unit): Self = StObject.set(x, "SetUserData", js.Any.fromFunction1(value))
+    inline def setSetUserData(value: js.Any => Unit): Self = StObject.set(x, "SetUserData", js.Any.fromFunction1(value))
   }
 }

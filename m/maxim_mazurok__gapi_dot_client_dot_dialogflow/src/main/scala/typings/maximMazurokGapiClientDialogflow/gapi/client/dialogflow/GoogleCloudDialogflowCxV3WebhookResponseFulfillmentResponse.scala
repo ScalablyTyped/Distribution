@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse extends StObje
 }
 object GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse = {
+  inline def apply(): GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponseMutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse](x: Self) {
     
-    @scala.inline
-    def setMergeBehavior(value: String): Self = StObject.set(x, "mergeBehavior", value.asInstanceOf[js.Any])
+    inline def setMergeBehavior(value: String): Self = StObject.set(x, "mergeBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeBehaviorUndefined: Self = StObject.set(x, "mergeBehavior", js.undefined)
+    inline def setMergeBehaviorUndefined: Self = StObject.set(x, "mergeBehavior", js.undefined)
     
-    @scala.inline
-    def setMessages(value: js.Array[GoogleCloudDialogflowCxV3ResponseMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[GoogleCloudDialogflowCxV3ResponseMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: GoogleCloudDialogflowCxV3ResponseMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: GoogleCloudDialogflowCxV3ResponseMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

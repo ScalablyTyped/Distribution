@@ -21,19 +21,15 @@ trait IQuery
 }
 object IQuery {
   
-  @scala.inline
-  def apply(query_id: Double): IQuery = {
+  inline def apply(query_id: Double): IQuery = {
     val __obj = js.Dynamic.literal(__type__ = "query", query_id = query_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQuery]
   }
   
-  @scala.inline
-  implicit class IQueryMutableBuilder[Self <: IQuery] (val x: Self) extends AnyVal {
+  extension [Self <: IQuery](x: Self) {
     
-    @scala.inline
-    def setQuery_id(value: Double): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
+    inline def setQuery_id(value: Double): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type__(value: query): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
+    inline def set__type__(value: query): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

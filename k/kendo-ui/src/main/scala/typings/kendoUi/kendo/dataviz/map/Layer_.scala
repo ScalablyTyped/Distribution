@@ -20,25 +20,19 @@ trait Layer_
 }
 object Layer_ {
   
-  @scala.inline
-  def apply(hide: () => Unit, map: Map, options: LayerOptions, show: () => Unit): Layer_ = {
+  inline def apply(hide: () => Unit, map: Map, options: LayerOptions, show: () => Unit): Layer_ = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), map = map.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[Layer_]
   }
   
-  @scala.inline
-  implicit class Layer_MutableBuilder[Self <: Layer_] (val x: Self) extends AnyVal {
+  extension [Self <: Layer_](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: LayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: LayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

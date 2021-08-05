@@ -18,19 +18,15 @@ trait FilterData extends StObject {
 }
 object FilterData {
   
-  @scala.inline
-  def apply(): FilterData = {
+  inline def apply(): FilterData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterData]
   }
   
-  @scala.inline
-  implicit class FilterDataMutableBuilder[Self <: FilterData] (val x: Self) extends AnyVal {
+  extension [Self <: FilterData](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: FilterCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: FilterCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
   }
 }

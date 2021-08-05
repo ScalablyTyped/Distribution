@@ -11,6 +11,5 @@ object hasOpenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasOpener(frame: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOpener")(frame.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOpener(frame: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOpener")(frame.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

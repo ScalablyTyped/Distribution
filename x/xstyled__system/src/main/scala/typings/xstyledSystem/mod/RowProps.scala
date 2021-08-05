@@ -10,22 +10,17 @@ trait RowProps extends StObject {
 }
 object RowProps {
   
-  @scala.inline
-  def apply(): RowProps = {
+  inline def apply(): RowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowProps]
   }
   
-  @scala.inline
-  implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
+  extension [Self <: RowProps](x: Self) {
     
-    @scala.inline
-    def setRow(value: ResponsiveValue[String | Double | Boolean]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: ResponsiveValue[String | Double | Boolean]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setRowVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "row", js.Array(value :_*))
+    inline def setRowVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "row", js.Array(value :_*))
   }
 }

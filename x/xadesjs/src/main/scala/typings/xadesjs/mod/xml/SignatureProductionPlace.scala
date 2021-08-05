@@ -13,6 +13,5 @@ class SignatureProductionPlace ()
   extends typings.xadesjs.xmlMod.SignatureProductionPlace
 object SignatureProductionPlace {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SignatureProductionPlace] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignatureProductionPlace").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignatureProductionPlace]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SignatureProductionPlace] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignatureProductionPlace").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignatureProductionPlace]]
 }

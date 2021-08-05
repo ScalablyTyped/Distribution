@@ -13,22 +13,17 @@ trait CreditCardTypes extends StObject {
 }
 object CreditCardTypes {
   
-  @scala.inline
-  def apply(): CreditCardTypes = {
+  inline def apply(): CreditCardTypes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreditCardTypes]
   }
   
-  @scala.inline
-  implicit class CreditCardTypesMutableBuilder[Self <: CreditCardTypes] (val x: Self) extends AnyVal {
+  extension [Self <: CreditCardTypes](x: Self) {
     
-    @scala.inline
-    def setCardTypes(value: js.Array[String]): Self = StObject.set(x, "cardTypes", value.asInstanceOf[js.Any])
+    inline def setCardTypes(value: js.Array[String]): Self = StObject.set(x, "cardTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardTypesUndefined: Self = StObject.set(x, "cardTypes", js.undefined)
+    inline def setCardTypesUndefined: Self = StObject.set(x, "cardTypes", js.undefined)
     
-    @scala.inline
-    def setCardTypesVarargs(value: String*): Self = StObject.set(x, "cardTypes", js.Array(value :_*))
+    inline def setCardTypesVarargs(value: String*): Self = StObject.set(x, "cardTypes", js.Array(value :_*))
   }
 }

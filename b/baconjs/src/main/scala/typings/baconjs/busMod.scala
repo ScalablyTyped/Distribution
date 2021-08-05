@@ -85,23 +85,18 @@ object busMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply[V](input: typings.baconjs.observableMod.default[V]): Subscription[V] = {
+    inline def apply[V](input: typings.baconjs.observableMod.default[V]): Subscription[V] = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscription[V]]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription[?], V] (val x: Self & Subscription[V]) extends AnyVal {
+    extension [Self <: Subscription[?], V](x: Self & Subscription[V]) {
       
-      @scala.inline
-      def setInput(value: typings.baconjs.observableMod.default[V]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: typings.baconjs.observableMod.default[V]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsub(value: () => Unit): Self = StObject.set(x, "unsub", js.Any.fromFunction0(value))
+      inline def setUnsub(value: () => Unit): Self = StObject.set(x, "unsub", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnsubUndefined: Self = StObject.set(x, "unsub", js.undefined)
+      inline def setUnsubUndefined: Self = StObject.set(x, "unsub", js.undefined)
     }
   }
 }

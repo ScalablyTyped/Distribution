@@ -12,19 +12,15 @@ trait BlockItemDto extends StObject {
 }
 object BlockItemDto {
   
-  @scala.inline
-  def apply(count: Double, id: Double): BlockItemDto = {
+  inline def apply(count: Double, id: Double): BlockItemDto = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockItemDto]
   }
   
-  @scala.inline
-  implicit class BlockItemDtoMutableBuilder[Self <: BlockItemDto] (val x: Self) extends AnyVal {
+  extension [Self <: BlockItemDto](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

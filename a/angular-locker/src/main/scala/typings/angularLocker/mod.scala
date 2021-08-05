@@ -25,17 +25,14 @@ object mod {
     }
     object ILockerProvider {
       
-      @scala.inline
-      def apply($get: js.Any, defaults: ILockerSettings => Unit): ILockerProvider = {
+      inline def apply($get: js.Any, defaults: ILockerSettings => Unit): ILockerProvider = {
         val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], defaults = js.Any.fromFunction1(defaults))
         __obj.asInstanceOf[ILockerProvider]
       }
       
-      @scala.inline
-      implicit class ILockerProviderMutableBuilder[Self <: ILockerProvider] (val x: Self) extends AnyVal {
+      extension [Self <: ILockerProvider](x: Self) {
         
-        @scala.inline
-        def setDefaults(value: ILockerSettings => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
+        inline def setDefaults(value: ILockerSettings => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
       }
     }
     
@@ -217,44 +214,32 @@ object mod {
     }
     object ILockerSettings {
       
-      @scala.inline
-      def apply(): ILockerSettings = {
+      inline def apply(): ILockerSettings = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ILockerSettings]
       }
       
-      @scala.inline
-      implicit class ILockerSettingsMutableBuilder[Self <: ILockerSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ILockerSettings](x: Self) {
         
-        @scala.inline
-        def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+        inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
+        inline def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
         
-        @scala.inline
-        def setEventsEnabled(value: Boolean): Self = StObject.set(x, "eventsEnabled", value.asInstanceOf[js.Any])
+        inline def setEventsEnabled(value: Boolean): Self = StObject.set(x, "eventsEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventsEnabledUndefined: Self = StObject.set(x, "eventsEnabled", js.undefined)
+        inline def setEventsEnabledUndefined: Self = StObject.set(x, "eventsEnabled", js.undefined)
         
-        @scala.inline
-        def setExtend(value: js.Object): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+        inline def setExtend(value: js.Object): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+        inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
         
-        @scala.inline
-        def setNamespace(value: String | Boolean): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: String | Boolean): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
         
-        @scala.inline
-        def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+        inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+        inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       }
     }
   }

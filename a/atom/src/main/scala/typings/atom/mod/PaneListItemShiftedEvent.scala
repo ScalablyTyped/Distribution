@@ -14,19 +14,15 @@ trait PaneListItemShiftedEvent extends StObject {
 }
 object PaneListItemShiftedEvent {
   
-  @scala.inline
-  def apply(index: Double, item: js.Object): PaneListItemShiftedEvent = {
+  inline def apply(index: Double, item: js.Object): PaneListItemShiftedEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneListItemShiftedEvent]
   }
   
-  @scala.inline
-  implicit class PaneListItemShiftedEventMutableBuilder[Self <: PaneListItemShiftedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PaneListItemShiftedEvent](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

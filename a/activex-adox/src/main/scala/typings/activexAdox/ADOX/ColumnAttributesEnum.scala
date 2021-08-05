@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColumnAttributesEnum extends StObject
 object ColumnAttributesEnum {
   
-  @scala.inline
-  def adColFixed: `1` = 1.asInstanceOf[`1`]
+  inline def adColFixed: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adColNullable: `2` = 2.asInstanceOf[`2`]
+  inline def adColNullable: `2` = 2.asInstanceOf[`2`]
 }

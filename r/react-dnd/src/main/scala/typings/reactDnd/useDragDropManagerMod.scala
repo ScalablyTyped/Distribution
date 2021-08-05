@@ -11,6 +11,5 @@ object useDragDropManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useDragDropManager(): DragDropManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useDragDropManager")().asInstanceOf[DragDropManager]
+  inline def useDragDropManager(): DragDropManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useDragDropManager")().asInstanceOf[DragDropManager]
 }

@@ -34,58 +34,41 @@ trait Active extends StObject {
 }
 object Active {
   
-  @scala.inline
-  def apply(): Active = {
+  inline def apply(): Active = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Active]
   }
   
-  @scala.inline
-  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+  extension [Self <: Active](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
+    inline def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEveryUndefined: Self = StObject.set(x, "every", js.undefined)
+    inline def setEveryUndefined: Self = StObject.set(x, "every", js.undefined)
     
-    @scala.inline
-    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
-    @scala.inline
-    def setRepeats(value: String): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
+    inline def setRepeats(value: String): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatsOnWeekDays(value: js.Array[String]): Self = StObject.set(x, "repeatsOnWeekDays", value.asInstanceOf[js.Any])
+    inline def setRepeatsOnWeekDays(value: js.Array[String]): Self = StObject.set(x, "repeatsOnWeekDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatsOnWeekDaysUndefined: Self = StObject.set(x, "repeatsOnWeekDays", js.undefined)
+    inline def setRepeatsOnWeekDaysUndefined: Self = StObject.set(x, "repeatsOnWeekDays", js.undefined)
     
-    @scala.inline
-    def setRepeatsOnWeekDaysVarargs(value: String*): Self = StObject.set(x, "repeatsOnWeekDays", js.Array(value :_*))
+    inline def setRepeatsOnWeekDaysVarargs(value: String*): Self = StObject.set(x, "repeatsOnWeekDays", js.Array(value :_*))
     
-    @scala.inline
-    def setRepeatsUndefined: Self = StObject.set(x, "repeats", js.undefined)
+    inline def setRepeatsUndefined: Self = StObject.set(x, "repeats", js.undefined)
     
-    @scala.inline
-    def setRunsOnDayOfMonth(value: String): Self = StObject.set(x, "runsOnDayOfMonth", value.asInstanceOf[js.Any])
+    inline def setRunsOnDayOfMonth(value: String): Self = StObject.set(x, "runsOnDayOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunsOnDayOfMonthUndefined: Self = StObject.set(x, "runsOnDayOfMonth", js.undefined)
+    inline def setRunsOnDayOfMonthUndefined: Self = StObject.set(x, "runsOnDayOfMonth", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

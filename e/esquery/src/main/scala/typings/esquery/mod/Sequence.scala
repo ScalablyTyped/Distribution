@@ -16,17 +16,14 @@ trait Sequence
 }
 object Sequence {
   
-  @scala.inline
-  def apply(selectors: js.Array[SubjectSelector]): Sequence = {
+  inline def apply(selectors: js.Array[SubjectSelector]): Sequence = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("compound")
     __obj.asInstanceOf[Sequence]
   }
   
-  @scala.inline
-  implicit class SequenceMutableBuilder[Self <: Sequence] (val x: Self) extends AnyVal {
+  extension [Self <: Sequence](x: Self) {
     
-    @scala.inline
-    def setType(value: compound): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: compound): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

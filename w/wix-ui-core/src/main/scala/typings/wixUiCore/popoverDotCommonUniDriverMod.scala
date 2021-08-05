@@ -12,6 +12,5 @@ object popoverDotCommonUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CommonDriver(base: UniDriver[js.Any], body: UniDriver[js.Any]): GetContentElement = (^.asInstanceOf[js.Dynamic].applyDynamic("CommonDriver")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetContentElement]
+  inline def CommonDriver(base: UniDriver[js.Any], body: UniDriver[js.Any]): GetContentElement = (^.asInstanceOf[js.Dynamic].applyDynamic("CommonDriver")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetContentElement]
 }

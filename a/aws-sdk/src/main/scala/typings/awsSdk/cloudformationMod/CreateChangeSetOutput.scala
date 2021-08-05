@@ -18,25 +18,19 @@ trait CreateChangeSetOutput extends StObject {
 }
 object CreateChangeSetOutput {
   
-  @scala.inline
-  def apply(): CreateChangeSetOutput = {
+  inline def apply(): CreateChangeSetOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateChangeSetOutput]
   }
   
-  @scala.inline
-  implicit class CreateChangeSetOutputMutableBuilder[Self <: CreateChangeSetOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChangeSetOutput](x: Self) {
     
-    @scala.inline
-    def setId(value: ChangeSetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ChangeSetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

@@ -15,31 +15,23 @@ trait ITestRunFinished extends StObject {
 }
 object ITestRunFinished {
   
-  @scala.inline
-  def apply(): ITestRunFinished = {
+  inline def apply(): ITestRunFinished = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestRunFinished]
   }
   
-  @scala.inline
-  implicit class ITestRunFinishedMutableBuilder[Self <: ITestRunFinished] (val x: Self) extends AnyVal {
+  extension [Self <: ITestRunFinished](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessNull: Self = StObject.set(x, "success", null)
+    inline def setSuccessNull: Self = StObject.set(x, "success", null)
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampNull: Self = StObject.set(x, "timestamp", null)
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

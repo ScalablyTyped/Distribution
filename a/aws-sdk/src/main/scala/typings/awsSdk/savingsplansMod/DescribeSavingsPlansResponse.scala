@@ -18,28 +18,21 @@ trait DescribeSavingsPlansResponse extends StObject {
 }
 object DescribeSavingsPlansResponse {
   
-  @scala.inline
-  def apply(): DescribeSavingsPlansResponse = {
+  inline def apply(): DescribeSavingsPlansResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSavingsPlansResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSavingsPlansResponseMutableBuilder[Self <: DescribeSavingsPlansResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSavingsPlansResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSavingsPlans(value: SavingsPlanList): Self = StObject.set(x, "savingsPlans", value.asInstanceOf[js.Any])
+    inline def setSavingsPlans(value: SavingsPlanList): Self = StObject.set(x, "savingsPlans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansUndefined: Self = StObject.set(x, "savingsPlans", js.undefined)
+    inline def setSavingsPlansUndefined: Self = StObject.set(x, "savingsPlans", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansVarargs(value: SavingsPlan*): Self = StObject.set(x, "savingsPlans", js.Array(value :_*))
+    inline def setSavingsPlansVarargs(value: SavingsPlan*): Self = StObject.set(x, "savingsPlans", js.Array(value :_*))
   }
 }

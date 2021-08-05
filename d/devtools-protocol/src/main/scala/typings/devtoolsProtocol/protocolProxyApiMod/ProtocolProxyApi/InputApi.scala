@@ -63,8 +63,7 @@ trait InputApi extends StObject {
 }
 object InputApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispatchKeyEvent: DispatchKeyEventRequest => js.Promise[Unit],
     dispatchMouseEvent: DispatchMouseEventRequest => js.Promise[Unit],
     dispatchTouchEvent: DispatchTouchEventRequest => js.Promise[Unit],
@@ -79,34 +78,24 @@ object InputApi {
     __obj.asInstanceOf[InputApi]
   }
   
-  @scala.inline
-  implicit class InputApiMutableBuilder[Self <: InputApi] (val x: Self) extends AnyVal {
+  extension [Self <: InputApi](x: Self) {
     
-    @scala.inline
-    def setDispatchKeyEvent(value: DispatchKeyEventRequest => js.Promise[Unit]): Self = StObject.set(x, "dispatchKeyEvent", js.Any.fromFunction1(value))
+    inline def setDispatchKeyEvent(value: DispatchKeyEventRequest => js.Promise[Unit]): Self = StObject.set(x, "dispatchKeyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDispatchMouseEvent(value: DispatchMouseEventRequest => js.Promise[Unit]): Self = StObject.set(x, "dispatchMouseEvent", js.Any.fromFunction1(value))
+    inline def setDispatchMouseEvent(value: DispatchMouseEventRequest => js.Promise[Unit]): Self = StObject.set(x, "dispatchMouseEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDispatchTouchEvent(value: DispatchTouchEventRequest => js.Promise[Unit]): Self = StObject.set(x, "dispatchTouchEvent", js.Any.fromFunction1(value))
+    inline def setDispatchTouchEvent(value: DispatchTouchEventRequest => js.Promise[Unit]): Self = StObject.set(x, "dispatchTouchEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmulateTouchFromMouseEvent(value: EmulateTouchFromMouseEventRequest => js.Promise[Unit]): Self = StObject.set(x, "emulateTouchFromMouseEvent", js.Any.fromFunction1(value))
+    inline def setEmulateTouchFromMouseEvent(value: EmulateTouchFromMouseEventRequest => js.Promise[Unit]): Self = StObject.set(x, "emulateTouchFromMouseEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertText(value: InsertTextRequest => js.Promise[Unit]): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
+    inline def setInsertText(value: InsertTextRequest => js.Promise[Unit]): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIgnoreInputEvents(value: SetIgnoreInputEventsRequest => js.Promise[Unit]): Self = StObject.set(x, "setIgnoreInputEvents", js.Any.fromFunction1(value))
+    inline def setSetIgnoreInputEvents(value: SetIgnoreInputEventsRequest => js.Promise[Unit]): Self = StObject.set(x, "setIgnoreInputEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSynthesizePinchGesture(value: SynthesizePinchGestureRequest => js.Promise[Unit]): Self = StObject.set(x, "synthesizePinchGesture", js.Any.fromFunction1(value))
+    inline def setSynthesizePinchGesture(value: SynthesizePinchGestureRequest => js.Promise[Unit]): Self = StObject.set(x, "synthesizePinchGesture", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSynthesizeScrollGesture(value: SynthesizeScrollGestureRequest => js.Promise[Unit]): Self = StObject.set(x, "synthesizeScrollGesture", js.Any.fromFunction1(value))
+    inline def setSynthesizeScrollGesture(value: SynthesizeScrollGestureRequest => js.Promise[Unit]): Self = StObject.set(x, "synthesizeScrollGesture", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSynthesizeTapGesture(value: SynthesizeTapGestureRequest => js.Promise[Unit]): Self = StObject.set(x, "synthesizeTapGesture", js.Any.fromFunction1(value))
+    inline def setSynthesizeTapGesture(value: SynthesizeTapGestureRequest => js.Promise[Unit]): Self = StObject.set(x, "synthesizeTapGesture", js.Any.fromFunction1(value))
   }
 }

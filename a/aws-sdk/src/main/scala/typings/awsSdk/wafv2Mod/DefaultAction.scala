@@ -18,25 +18,19 @@ trait DefaultAction extends StObject {
 }
 object DefaultAction {
   
-  @scala.inline
-  def apply(): DefaultAction = {
+  inline def apply(): DefaultAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultAction]
   }
   
-  @scala.inline
-  implicit class DefaultActionMutableBuilder[Self <: DefaultAction] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultAction](x: Self) {
     
-    @scala.inline
-    def setAllow(value: AllowAction): Self = StObject.set(x, "Allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: AllowAction): Self = StObject.set(x, "Allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUndefined: Self = StObject.set(x, "Allow", js.undefined)
+    inline def setAllowUndefined: Self = StObject.set(x, "Allow", js.undefined)
     
-    @scala.inline
-    def setBlock(value: BlockAction): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: BlockAction): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
   }
 }

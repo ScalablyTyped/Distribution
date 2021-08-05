@@ -12,23 +12,18 @@ trait RaxPortal
 }
 object RaxPortal {
   
-  @scala.inline
-  def apply(props: js.Any, `type`: String | JSXElementConstructor[js.Any]): RaxPortal = {
+  inline def apply(props: js.Any, `type`: String | JSXElementConstructor[js.Any]): RaxPortal = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaxPortal]
   }
   
-  @scala.inline
-  implicit class RaxPortalMutableBuilder[Self <: RaxPortal] (val x: Self) extends AnyVal {
+  extension [Self <: RaxPortal](x: Self) {
     
-    @scala.inline
-    def setChildren(value: RaxNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: RaxNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenNull: Self = StObject.set(x, "children", null)
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

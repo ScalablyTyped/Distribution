@@ -58,73 +58,51 @@ trait KafkaSettings extends StObject {
 }
 object KafkaSettings {
   
-  @scala.inline
-  def apply(): KafkaSettings = {
+  inline def apply(): KafkaSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KafkaSettings]
   }
   
-  @scala.inline
-  implicit class KafkaSettingsMutableBuilder[Self <: KafkaSettings] (val x: Self) extends AnyVal {
+  extension [Self <: KafkaSettings](x: Self) {
     
-    @scala.inline
-    def setBroker(value: String): Self = StObject.set(x, "Broker", value.asInstanceOf[js.Any])
+    inline def setBroker(value: String): Self = StObject.set(x, "Broker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerUndefined: Self = StObject.set(x, "Broker", js.undefined)
+    inline def setBrokerUndefined: Self = StObject.set(x, "Broker", js.undefined)
     
-    @scala.inline
-    def setIncludeControlDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeControlDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeControlDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeControlDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeControlDetailsUndefined: Self = StObject.set(x, "IncludeControlDetails", js.undefined)
+    inline def setIncludeControlDetailsUndefined: Self = StObject.set(x, "IncludeControlDetails", js.undefined)
     
-    @scala.inline
-    def setIncludeNullAndEmpty(value: BooleanOptional): Self = StObject.set(x, "IncludeNullAndEmpty", value.asInstanceOf[js.Any])
+    inline def setIncludeNullAndEmpty(value: BooleanOptional): Self = StObject.set(x, "IncludeNullAndEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNullAndEmptyUndefined: Self = StObject.set(x, "IncludeNullAndEmpty", js.undefined)
+    inline def setIncludeNullAndEmptyUndefined: Self = StObject.set(x, "IncludeNullAndEmpty", js.undefined)
     
-    @scala.inline
-    def setIncludePartitionValue(value: BooleanOptional): Self = StObject.set(x, "IncludePartitionValue", value.asInstanceOf[js.Any])
+    inline def setIncludePartitionValue(value: BooleanOptional): Self = StObject.set(x, "IncludePartitionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludePartitionValueUndefined: Self = StObject.set(x, "IncludePartitionValue", js.undefined)
+    inline def setIncludePartitionValueUndefined: Self = StObject.set(x, "IncludePartitionValue", js.undefined)
     
-    @scala.inline
-    def setIncludeTableAlterOperations(value: BooleanOptional): Self = StObject.set(x, "IncludeTableAlterOperations", value.asInstanceOf[js.Any])
+    inline def setIncludeTableAlterOperations(value: BooleanOptional): Self = StObject.set(x, "IncludeTableAlterOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTableAlterOperationsUndefined: Self = StObject.set(x, "IncludeTableAlterOperations", js.undefined)
+    inline def setIncludeTableAlterOperationsUndefined: Self = StObject.set(x, "IncludeTableAlterOperations", js.undefined)
     
-    @scala.inline
-    def setIncludeTransactionDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeTransactionDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeTransactionDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeTransactionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTransactionDetailsUndefined: Self = StObject.set(x, "IncludeTransactionDetails", js.undefined)
+    inline def setIncludeTransactionDetailsUndefined: Self = StObject.set(x, "IncludeTransactionDetails", js.undefined)
     
-    @scala.inline
-    def setMessageFormat(value: MessageFormatValue): Self = StObject.set(x, "MessageFormat", value.asInstanceOf[js.Any])
+    inline def setMessageFormat(value: MessageFormatValue): Self = StObject.set(x, "MessageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormatUndefined: Self = StObject.set(x, "MessageFormat", js.undefined)
+    inline def setMessageFormatUndefined: Self = StObject.set(x, "MessageFormat", js.undefined)
     
-    @scala.inline
-    def setMessageMaxBytes(value: IntegerOptional): Self = StObject.set(x, "MessageMaxBytes", value.asInstanceOf[js.Any])
+    inline def setMessageMaxBytes(value: IntegerOptional): Self = StObject.set(x, "MessageMaxBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageMaxBytesUndefined: Self = StObject.set(x, "MessageMaxBytes", js.undefined)
+    inline def setMessageMaxBytesUndefined: Self = StObject.set(x, "MessageMaxBytes", js.undefined)
     
-    @scala.inline
-    def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = StObject.set(x, "PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
+    inline def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = StObject.set(x, "PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionIncludeSchemaTableUndefined: Self = StObject.set(x, "PartitionIncludeSchemaTable", js.undefined)
+    inline def setPartitionIncludeSchemaTableUndefined: Self = StObject.set(x, "PartitionIncludeSchemaTable", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "Topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "Topic", js.undefined)
   }
 }

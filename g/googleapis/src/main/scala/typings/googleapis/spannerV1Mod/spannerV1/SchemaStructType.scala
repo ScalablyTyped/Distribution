@@ -20,22 +20,17 @@ trait SchemaStructType extends StObject {
 }
 object SchemaStructType {
   
-  @scala.inline
-  def apply(): SchemaStructType = {
+  inline def apply(): SchemaStructType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStructType]
   }
   
-  @scala.inline
-  implicit class SchemaStructTypeMutableBuilder[Self <: SchemaStructType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStructType](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[SchemaField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[SchemaField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: SchemaField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaField*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

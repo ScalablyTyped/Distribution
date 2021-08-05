@@ -23,28 +23,21 @@ trait DescribeDefaultClusterParametersMessage extends StObject {
 }
 object DescribeDefaultClusterParametersMessage {
   
-  @scala.inline
-  def apply(ParameterGroupFamily: String): DescribeDefaultClusterParametersMessage = {
+  inline def apply(ParameterGroupFamily: String): DescribeDefaultClusterParametersMessage = {
     val __obj = js.Dynamic.literal(ParameterGroupFamily = ParameterGroupFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDefaultClusterParametersMessage]
   }
   
-  @scala.inline
-  implicit class DescribeDefaultClusterParametersMessageMutableBuilder[Self <: DescribeDefaultClusterParametersMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDefaultClusterParametersMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setParameterGroupFamily(value: String): Self = StObject.set(x, "ParameterGroupFamily", value.asInstanceOf[js.Any])
+    inline def setParameterGroupFamily(value: String): Self = StObject.set(x, "ParameterGroupFamily", value.asInstanceOf[js.Any])
   }
 }

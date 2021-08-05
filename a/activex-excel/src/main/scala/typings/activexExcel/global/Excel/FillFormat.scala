@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.FillFormat")
 @js.native
-class FillFormat protected ()
+/* private */ class FillFormat ()
   extends StObject
      with typings.activexExcel.Excel.FillFormat {
   
@@ -35,7 +35,7 @@ class FillFormat protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.FillFormat_typekey")
   var ExcelDotFillFormat_typekey: typings.activexExcel.Excel.FillFormat = js.native
   

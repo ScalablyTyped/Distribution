@@ -12,22 +12,17 @@ trait IConsensusIgnoreBlockRequest extends StObject {
 }
 object IConsensusIgnoreBlockRequest {
   
-  @scala.inline
-  def apply(): IConsensusIgnoreBlockRequest = {
+  inline def apply(): IConsensusIgnoreBlockRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusIgnoreBlockRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusIgnoreBlockRequestMutableBuilder[Self <: IConsensusIgnoreBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusIgnoreBlockRequest](x: Self) {
     
-    @scala.inline
-    def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
+    inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
-    @scala.inline
-    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
+    inline def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
   }
 }

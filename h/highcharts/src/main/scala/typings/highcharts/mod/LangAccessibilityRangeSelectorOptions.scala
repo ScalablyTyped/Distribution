@@ -14,31 +14,23 @@ trait LangAccessibilityRangeSelectorOptions extends StObject {
 }
 object LangAccessibilityRangeSelectorOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityRangeSelectorOptions = {
+  inline def apply(): LangAccessibilityRangeSelectorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityRangeSelectorOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityRangeSelectorOptionsMutableBuilder[Self <: LangAccessibilityRangeSelectorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityRangeSelectorOptions](x: Self) {
     
-    @scala.inline
-    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+    inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+    inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
-    @scala.inline
-    def setMaxInputLabel(value: String): Self = StObject.set(x, "maxInputLabel", value.asInstanceOf[js.Any])
+    inline def setMaxInputLabel(value: String): Self = StObject.set(x, "maxInputLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInputLabelUndefined: Self = StObject.set(x, "maxInputLabel", js.undefined)
+    inline def setMaxInputLabelUndefined: Self = StObject.set(x, "maxInputLabel", js.undefined)
     
-    @scala.inline
-    def setMinInputLabel(value: String): Self = StObject.set(x, "minInputLabel", value.asInstanceOf[js.Any])
+    inline def setMinInputLabel(value: String): Self = StObject.set(x, "minInputLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinInputLabelUndefined: Self = StObject.set(x, "minInputLabel", js.undefined)
+    inline def setMinInputLabelUndefined: Self = StObject.set(x, "minInputLabel", js.undefined)
   }
 }

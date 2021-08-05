@@ -19,31 +19,23 @@ trait ParameterObject
 }
 object ParameterObject {
   
-  @scala.inline
-  def apply(in: String, name: String): ParameterObject = {
+  inline def apply(in: String, name: String): ParameterObject = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterObject]
   }
   
-  @scala.inline
-  implicit class ParameterObjectMutableBuilder[Self <: ParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterObject](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

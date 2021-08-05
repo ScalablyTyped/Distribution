@@ -97,6 +97,5 @@ object SurveyWindowModel {
   @JSImport("survey-knockout", "SurveyWindowModel.surveyElementName")
   @js.native
   def surveyElementName: String = js.native
-  @scala.inline
-  def surveyElementName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("surveyElementName")(x.asInstanceOf[js.Any])
+  inline def surveyElementName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("surveyElementName")(x.asInstanceOf[js.Any])
 }

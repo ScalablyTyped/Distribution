@@ -10,19 +10,15 @@ trait UpdateExisting extends StObject {
 }
 object UpdateExisting {
   
-  @scala.inline
-  def apply(): UpdateExisting = {
+  inline def apply(): UpdateExisting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateExisting]
   }
   
-  @scala.inline
-  implicit class UpdateExistingMutableBuilder[Self <: UpdateExisting] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateExisting](x: Self) {
     
-    @scala.inline
-    def setUpdateExisting(value: Boolean): Self = StObject.set(x, "updateExisting", value.asInstanceOf[js.Any])
+    inline def setUpdateExisting(value: Boolean): Self = StObject.set(x, "updateExisting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateExistingUndefined: Self = StObject.set(x, "updateExisting", js.undefined)
+    inline def setUpdateExistingUndefined: Self = StObject.set(x, "updateExisting", js.undefined)
   }
 }

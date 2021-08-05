@@ -14,19 +14,15 @@ trait StackdriverLoggingConfig extends StObject {
 }
 object StackdriverLoggingConfig {
   
-  @scala.inline
-  def apply(): StackdriverLoggingConfig = {
+  inline def apply(): StackdriverLoggingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackdriverLoggingConfig]
   }
   
-  @scala.inline
-  implicit class StackdriverLoggingConfigMutableBuilder[Self <: StackdriverLoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StackdriverLoggingConfig](x: Self) {
     
-    @scala.inline
-    def setSamplingRatio(value: Double): Self = StObject.set(x, "samplingRatio", value.asInstanceOf[js.Any])
+    inline def setSamplingRatio(value: Double): Self = StObject.set(x, "samplingRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingRatioUndefined: Self = StObject.set(x, "samplingRatio", js.undefined)
+    inline def setSamplingRatioUndefined: Self = StObject.set(x, "samplingRatio", js.undefined)
   }
 }

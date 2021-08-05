@@ -18,8 +18,7 @@ trait IArrowFunctionExpressionSyntax
 }
 object IArrowFunctionExpressionSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     block: BlockSyntax,
     childAt: Double => ISyntaxElement,
@@ -53,19 +52,14 @@ object IArrowFunctionExpressionSyntax {
     __obj.asInstanceOf[IArrowFunctionExpressionSyntax]
   }
   
-  @scala.inline
-  implicit class IArrowFunctionExpressionSyntaxMutableBuilder[Self <: IArrowFunctionExpressionSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IArrowFunctionExpressionSyntax](x: Self) {
     
-    @scala.inline
-    def setBlock(value: BlockSyntax): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: BlockSyntax): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualsGreaterThanToken(value: ISyntaxToken): Self = StObject.set(x, "equalsGreaterThanToken", value.asInstanceOf[js.Any])
+    inline def setEqualsGreaterThanToken(value: ISyntaxToken): Self = StObject.set(x, "equalsGreaterThanToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: IExpressionSyntax): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: IExpressionSyntax): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsArrowFunctionExpression(value: () => Boolean): Self = StObject.set(x, "isArrowFunctionExpression", js.Any.fromFunction0(value))
+    inline def setIsArrowFunctionExpression(value: () => Boolean): Self = StObject.set(x, "isArrowFunctionExpression", js.Any.fromFunction0(value))
   }
 }

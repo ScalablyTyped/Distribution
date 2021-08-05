@@ -13,22 +13,17 @@ trait PipelineConfig extends StObject {
 }
 object PipelineConfig {
   
-  @scala.inline
-  def apply(): PipelineConfig = {
+  inline def apply(): PipelineConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineConfig]
   }
   
-  @scala.inline
-  implicit class PipelineConfigMutableBuilder[Self <: PipelineConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineConfig](x: Self) {
     
-    @scala.inline
-    def setFunctions(value: FunctionsIds): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: FunctionsIds): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    @scala.inline
-    def setFunctionsVarargs(value: String*): Self = StObject.set(x, "functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: String*): Self = StObject.set(x, "functions", js.Array(value :_*))
   }
 }

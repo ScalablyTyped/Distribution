@@ -33,40 +33,29 @@ trait DescribeResourcePermissionsRequest extends StObject {
 }
 object DescribeResourcePermissionsRequest {
   
-  @scala.inline
-  def apply(ResourceId: ResourceIdType): DescribeResourcePermissionsRequest = {
+  inline def apply(ResourceId: ResourceIdType): DescribeResourcePermissionsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResourcePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeResourcePermissionsRequestMutableBuilder[Self <: DescribeResourcePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourcePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: IdType): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: IdType): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

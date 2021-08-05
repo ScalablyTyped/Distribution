@@ -13,25 +13,19 @@ trait ListSubscriptionsOptions extends StObject {
 }
 object ListSubscriptionsOptions {
   
-  @scala.inline
-  def apply(): ListSubscriptionsOptions = {
+  inline def apply(): ListSubscriptionsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSubscriptionsOptions]
   }
   
-  @scala.inline
-  implicit class ListSubscriptionsOptionsMutableBuilder[Self <: ListSubscriptionsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListSubscriptionsOptions](x: Self) {
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

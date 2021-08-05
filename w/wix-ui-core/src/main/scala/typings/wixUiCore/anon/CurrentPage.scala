@@ -18,8 +18,7 @@ trait CurrentPage extends StObject {
 }
 object CurrentPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentPage: Double,
     maxPagesToShow: Double,
     showFirstPage: Boolean,
@@ -30,22 +29,16 @@ object CurrentPage {
     __obj.asInstanceOf[CurrentPage]
   }
   
-  @scala.inline
-  implicit class CurrentPageMutableBuilder[Self <: CurrentPage] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentPage](x: Self) {
     
-    @scala.inline
-    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPagesToShow(value: Double): Self = StObject.set(x, "maxPagesToShow", value.asInstanceOf[js.Any])
+    inline def setMaxPagesToShow(value: Double): Self = StObject.set(x, "maxPagesToShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFirstPage(value: Boolean): Self = StObject.set(x, "showFirstPage", value.asInstanceOf[js.Any])
+    inline def setShowFirstPage(value: Boolean): Self = StObject.set(x, "showFirstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLastPage(value: Boolean): Self = StObject.set(x, "showLastPage", value.asInstanceOf[js.Any])
+    inline def setShowLastPage(value: Boolean): Self = StObject.set(x, "showLastPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+    inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
   }
 }

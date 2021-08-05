@@ -12,19 +12,15 @@ trait Convert[U] extends StObject {
 }
 object Convert {
   
-  @scala.inline
-  def apply[U](convert: Boolean, error: U): Convert[U] = {
+  inline def apply[U](convert: Boolean, error: U): Convert[U] = {
     val __obj = js.Dynamic.literal(convert = convert.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Convert[U]]
   }
   
-  @scala.inline
-  implicit class ConvertMutableBuilder[Self <: Convert[?], U] (val x: Self & Convert[U]) extends AnyVal {
+  extension [Self <: Convert[?], U](x: Self & Convert[U]) {
     
-    @scala.inline
-    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: U): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: U): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

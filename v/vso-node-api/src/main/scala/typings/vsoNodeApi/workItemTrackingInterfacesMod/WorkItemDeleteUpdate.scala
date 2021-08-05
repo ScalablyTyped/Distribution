@@ -13,16 +13,13 @@ trait WorkItemDeleteUpdate extends StObject {
 }
 object WorkItemDeleteUpdate {
   
-  @scala.inline
-  def apply(isDeleted: Boolean): WorkItemDeleteUpdate = {
+  inline def apply(isDeleted: Boolean): WorkItemDeleteUpdate = {
     val __obj = js.Dynamic.literal(isDeleted = isDeleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemDeleteUpdate]
   }
   
-  @scala.inline
-  implicit class WorkItemDeleteUpdateMutableBuilder[Self <: WorkItemDeleteUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemDeleteUpdate](x: Self) {
     
-    @scala.inline
-    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+    inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
   }
 }

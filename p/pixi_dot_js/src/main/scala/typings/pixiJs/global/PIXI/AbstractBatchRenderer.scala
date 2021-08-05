@@ -46,7 +46,7 @@ class AbstractBatchRenderer protected ()
     * @member {PIXI.Shader} PIXI.AbstractBatchRenderer#_shader
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _shader: typings.pixiJs.PIXI.Shader = js.native
   
   /**
@@ -97,7 +97,7 @@ class AbstractBatchRenderer protected ()
     * @default PIXI.BatchGeometry
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var geometryClass: js.Any = js.native
   
   /**
@@ -169,7 +169,7 @@ class AbstractBatchRenderer protected ()
     * @member {PIXI.BatchShaderGenerator} PIXI.AbstractBatchRenderer#shaderGenerator
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var shaderGenerator: typings.pixiJs.PIXI.BatchShaderGenerator = js.native
   
   /**
@@ -245,8 +245,7 @@ object AbstractBatchRenderer {
   @js.native
   def drawCallPool: js.Array[typings.pixiJs.PIXI.BatchDrawCall] = js.native
   
-  @scala.inline
-  def drawCallPool_=(x: js.Array[typings.pixiJs.PIXI.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_drawCallPool")(x.asInstanceOf[js.Any])
+  inline def drawCallPool_=(x: js.Array[typings.pixiJs.PIXI.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_drawCallPool")(x.asInstanceOf[js.Any])
   
   /**
     * Pool of `BatchDrawCall` objects that `flush` used
@@ -263,6 +262,5 @@ object AbstractBatchRenderer {
   @js.native
   def textureArrayPool: js.Array[typings.pixiJs.PIXI.BatchTextureArray] = js.native
   
-  @scala.inline
-  def textureArrayPool_=(x: js.Array[typings.pixiJs.PIXI.BatchTextureArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_textureArrayPool")(x.asInstanceOf[js.Any])
+  inline def textureArrayPool_=(x: js.Array[typings.pixiJs.PIXI.BatchTextureArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_textureArrayPool")(x.asInstanceOf[js.Any])
 }

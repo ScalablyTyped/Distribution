@@ -10,16 +10,13 @@ trait EnumValuesIncludeEventTypeInformation extends StObject {
 }
 object EnumValuesIncludeEventTypeInformation {
   
-  @scala.inline
-  def apply(enumValues: IncludeEventTypeInformation): EnumValuesIncludeEventTypeInformation = {
+  inline def apply(enumValues: IncludeEventTypeInformation): EnumValuesIncludeEventTypeInformation = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesIncludeEventTypeInformation]
   }
   
-  @scala.inline
-  implicit class EnumValuesIncludeEventTypeInformationMutableBuilder[Self <: EnumValuesIncludeEventTypeInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesIncludeEventTypeInformation](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: IncludeEventTypeInformation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: IncludeEventTypeInformation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

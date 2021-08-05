@@ -25,25 +25,19 @@ trait ParamsResourceTransfersGet
 }
 object ParamsResourceTransfersGet {
   
-  @scala.inline
-  def apply(): ParamsResourceTransfersGet = {
+  inline def apply(): ParamsResourceTransfersGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTransfersGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTransfersGetMutableBuilder[Self <: ParamsResourceTransfersGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTransfersGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDataTransferId(value: String): Self = StObject.set(x, "dataTransferId", value.asInstanceOf[js.Any])
+    inline def setDataTransferId(value: String): Self = StObject.set(x, "dataTransferId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTransferIdUndefined: Self = StObject.set(x, "dataTransferId", js.undefined)
+    inline def setDataTransferIdUndefined: Self = StObject.set(x, "dataTransferId", js.undefined)
   }
 }

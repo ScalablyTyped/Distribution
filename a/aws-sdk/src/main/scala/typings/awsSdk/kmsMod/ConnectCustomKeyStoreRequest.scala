@@ -13,16 +13,13 @@ trait ConnectCustomKeyStoreRequest extends StObject {
 }
 object ConnectCustomKeyStoreRequest {
   
-  @scala.inline
-  def apply(CustomKeyStoreId: CustomKeyStoreIdType): ConnectCustomKeyStoreRequest = {
+  inline def apply(CustomKeyStoreId: CustomKeyStoreIdType): ConnectCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectCustomKeyStoreRequest]
   }
   
-  @scala.inline
-  implicit class ConnectCustomKeyStoreRequestMutableBuilder[Self <: ConnectCustomKeyStoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectCustomKeyStoreRequest](x: Self) {
     
-    @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
   }
 }

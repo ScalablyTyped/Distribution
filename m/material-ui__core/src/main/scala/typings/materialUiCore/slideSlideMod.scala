@@ -28,23 +28,18 @@ object slideSlideMod extends Shortcut {
   }
   object SlideProps {
     
-    @scala.inline
-    def apply(direction: left | right | up | down): SlideProps = {
+    inline def apply(direction: left | right | up | down): SlideProps = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
       __obj.asInstanceOf[SlideProps]
     }
     
-    @scala.inline
-    implicit class SlidePropsMutableBuilder[Self <: SlideProps] (val x: Self) extends AnyVal {
+    extension [Self <: SlideProps](x: Self) {
       
-      @scala.inline
-      def setDirection(value: left | right | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: left | right | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   

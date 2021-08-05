@@ -10,16 +10,13 @@ trait AudioTrackChangedParam extends StObject {
 }
 object AudioTrackChangedParam {
   
-  @scala.inline
-  def apply(currentTrack: Double): AudioTrackChangedParam = {
+  inline def apply(currentTrack: Double): AudioTrackChangedParam = {
     val __obj = js.Dynamic.literal(currentTrack = currentTrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTrackChangedParam]
   }
   
-  @scala.inline
-  implicit class AudioTrackChangedParamMutableBuilder[Self <: AudioTrackChangedParam] (val x: Self) extends AnyVal {
+  extension [Self <: AudioTrackChangedParam](x: Self) {
     
-    @scala.inline
-    def setCurrentTrack(value: Double): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
+    inline def setCurrentTrack(value: Double): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait Bare extends StObject {
 }
 object Bare {
   
-  @scala.inline
-  def apply(): Bare = {
+  inline def apply(): Bare = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bare]
   }
   
-  @scala.inline
-  implicit class BareMutableBuilder[Self <: Bare] (val x: Self) extends AnyVal {
+  extension [Self <: Bare](x: Self) {
     
-    @scala.inline
-    def setBare(value: Boolean): Self = StObject.set(x, "bare", value.asInstanceOf[js.Any])
+    inline def setBare(value: Boolean): Self = StObject.set(x, "bare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBareUndefined: Self = StObject.set(x, "bare", js.undefined)
+    inline def setBareUndefined: Self = StObject.set(x, "bare", js.undefined)
   }
 }

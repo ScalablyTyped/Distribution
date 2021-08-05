@@ -29,20 +29,16 @@ object mod {
     * relative protocol is enabled. Default: process.stdout
     * @returns a new logger instance.
     */
-  @scala.inline
-  def apply(): Logger = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Logger]
-  @scala.inline
-  def apply(optionsOrStream: DestinationStream): Logger = ^.asInstanceOf[js.Dynamic].apply(optionsOrStream.asInstanceOf[js.Any]).asInstanceOf[Logger]
-  @scala.inline
-  def apply(optionsOrStream: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].apply(optionsOrStream.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def apply(): Logger = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Logger]
+  inline def apply(optionsOrStream: DestinationStream): Logger = ^.asInstanceOf[js.Dynamic].apply(optionsOrStream.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def apply(optionsOrStream: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].apply(optionsOrStream.asInstanceOf[js.Any]).asInstanceOf[Logger]
   /**
     * @param [options]: an options object
     * @param [stream]: a writable stream where the logs will be written. It can also receive some log-line metadata, if the
     * relative protocol is enabled. Default: process.stdout
     * @returns a new logger instance.
     */
-  @scala.inline
-  def apply(options: LoggerOptions, stream: DestinationStream): Logger = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Logger]
+  inline def apply(options: LoggerOptions, stream: DestinationStream): Logger = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Logger]
   
   @JSImport("pino", JSImport.Namespace)
   @js.native
@@ -62,18 +58,12 @@ object mod {
     *                writing performance it is strongly recommended to use `pino.destination` to create the destination stream.
     * @returns A Sonic-Boom  stream to be used as destination for the pino function
     */
-  @scala.inline
-  def destination(): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")().asInstanceOf[typings.sonicBoom.mod.^]
-  @scala.inline
-  def destination(dest: String): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
-  @scala.inline
-  def destination(dest: Double): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
-  @scala.inline
-  def destination(dest: WritableStream): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
-  @scala.inline
-  def destination(dest: DestinationObjectOptions): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
-  @scala.inline
-  def destination(dest: DestinationStream): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  inline def destination(): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")().asInstanceOf[typings.sonicBoom.mod.^]
+  inline def destination(dest: String): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  inline def destination(dest: Double): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  inline def destination(dest: WritableStream): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  inline def destination(dest: DestinationObjectOptions): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  inline def destination(dest: DestinationStream): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
   
   /**
     * Create an extreme mode destination. This yields an additional 60% performance boost.
@@ -81,20 +71,16 @@ object mod {
     * @param [fileDescriptor]: File path or numerical file descriptor, by default 1
     * @returns A Sonic-Boom  stream to be used as destination for the pino function
     */
-  @scala.inline
-  def extreme(): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")().asInstanceOf[typings.sonicBoom.mod.^]
-  @scala.inline
-  def extreme(fileDescriptor: String): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
-  @scala.inline
-  def extreme(fileDescriptor: Double): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  inline def extreme(): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")().asInstanceOf[typings.sonicBoom.mod.^]
+  inline def extreme(fileDescriptor: String): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  inline def extreme(fileDescriptor: Double): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
   
   /**
     * The pino.final method can be used to acquire a final logger instance that synchronously flushes on every write.
     * @param [logger]: pino logger that serves as reference for the final logger
     * @returns Final, synchronous logger
     */
-  @scala.inline
-  def `final`(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("final")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def `final`(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("final")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
   /**
     * The pino.final method can be used to create an exit listener function.
     * This listener function can be supplied to process exit events.
@@ -103,8 +89,7 @@ object mod {
     * @param [handler]: Function that will be called by the handler returned from this function
     * @returns Exit listener function that can be supplied to process exit events and will call the supplied handler function
     */
-  @scala.inline
-  def `final`(
+  inline def `final`(
     logger: Logger,
     handler: js.Function3[/* error */ Error, /* finalLogger */ Logger, /* repeated */ js.Any, Unit]
   ): js.Function2[/* error */ Error | Null, /* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("final")(logger.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* error */ Error | Null, /* repeated */ js.Any, Unit]]
@@ -131,10 +116,8 @@ object mod {
     /**
       * Serializes an Error object.
       */
-    @scala.inline
-    def err(err: Error): typings.pinoStdSerializers.mod.SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedError]
-    @scala.inline
-    def err_=(x: js.Function1[/* err */ Error, typings.pinoStdSerializers.mod.SerializedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
+    inline def err(err: Error): typings.pinoStdSerializers.mod.SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedError]
+    inline def err_=(x: js.Function1[/* err */ Error, typings.pinoStdSerializers.mod.SerializedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
     
     /**
       * Returns an object:
@@ -161,10 +144,8 @@ object mod {
       * @param req The request to serialize
       * @return An object
       */
-    @scala.inline
-    def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
-    @scala.inline
-    def mapHttpRequest_=(x: js.Function1[/* req */ IncomingMessage, Req]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpRequest")(x.asInstanceOf[js.Any])
+    inline def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
+    inline def mapHttpRequest_=(x: js.Function1[/* req */ IncomingMessage, Req]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpRequest")(x.asInstanceOf[js.Any])
     
     /**
       * Returns an object:
@@ -191,10 +172,8 @@ object mod {
       * @param res The response to serialize.
       * @return An object.
       */
-    @scala.inline
-    def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
-    @scala.inline
-    def mapHttpResponse_=(x: js.Function1[/* res */ ServerResponse, Res]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpResponse")(x.asInstanceOf[js.Any])
+    inline def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
+    inline def mapHttpResponse_=(x: js.Function1[/* res */ ServerResponse, Res]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpResponse")(x.asInstanceOf[js.Any])
     
     /**
       * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
@@ -205,10 +184,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @scala.inline
-    def req(req: IncomingMessage): typings.pinoStdSerializers.mod.SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedRequest]
-    @scala.inline
-    def req_=(x: js.Function1[/* req */ IncomingMessage, typings.pinoStdSerializers.mod.SerializedRequest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
+    inline def req(req: IncomingMessage): typings.pinoStdSerializers.mod.SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedRequest]
+    inline def req_=(x: js.Function1[/* req */ IncomingMessage, typings.pinoStdSerializers.mod.SerializedRequest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
     
     /**
       * Generates a JSONifiable object from the HTTP `response` object passed to the `createServer` callback of Node's HTTP server.
@@ -219,10 +196,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `response` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @scala.inline
-    def res(res: ServerResponse): typings.pinoStdSerializers.mod.SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedResponse]
-    @scala.inline
-    def res_=(x: js.Function1[/* res */ ServerResponse, typings.pinoStdSerializers.mod.SerializedResponse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
+    inline def res(res: ServerResponse): typings.pinoStdSerializers.mod.SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedResponse]
+    inline def res_=(x: js.Function1[/* res */ ServerResponse, typings.pinoStdSerializers.mod.SerializedResponse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
     
     /**
       * A utility method for wrapping the default error serializer. Allows custom serializers to work with the
@@ -244,10 +219,8 @@ object mod {
       * error object. Returns the new (or updated) error object.
       * @return A new error serializer.
       */
-    @scala.inline
-    def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
-    @scala.inline
-    def wrapErrorSerializer_=(
+    inline def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
+    inline def wrapErrorSerializer_=(
       x: js.Function1[
           /* customSerializer */ CustomErrorSerializer, 
           js.Function1[/* err */ Error, Record[String, js.Any]]
@@ -274,10 +247,8 @@ object mod {
       * request object. Returns the new (or updated) request object.
       * @return A new error serializer.
       */
-    @scala.inline
-    def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
-    @scala.inline
-    def wrapRequestSerializer_=(
+    inline def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
+    inline def wrapRequestSerializer_=(
       x: js.Function1[
           /* customSerializer */ CustomRequestSerializer, 
           js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]
@@ -304,10 +275,8 @@ object mod {
       * response object. Returns the new (or updated) response object.
       * @return A new error serializer.
       */
-    @scala.inline
-    def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
-    @scala.inline
-    def wrapResponseSerializer_=(
+    inline def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
+    inline def wrapResponseSerializer_=(
       x: js.Function1[
           /* customSerializer */ CustomResponseSerializer, 
           js.Function1[/* res */ ServerResponse, Record[String, js.Any]]
@@ -330,8 +299,7 @@ object mod {
     /**
       * The default time function for Pino. Returns a string like `,"time":1493426328206`.
       */
-    @scala.inline
-    def epochTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("epochTime")().asInstanceOf[String]
+    inline def epochTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("epochTime")().asInstanceOf[String]
     /**
       * The default time function for Pino. Returns a string like `,"time":1493426328206`.
       */
@@ -339,14 +307,12 @@ object mod {
     @js.native
     def epochTime_FstdTimeFunctions: TimeFn = js.native
     
-    @scala.inline
-    def epochTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epochTime")(x.asInstanceOf[js.Any])
+    inline def epochTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epochTime")(x.asInstanceOf[js.Any])
     
     /*
       * Returns ISO 8601-formatted time in UTC
       */
-    @scala.inline
-    def isoTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoTime")().asInstanceOf[String]
+    inline def isoTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoTime")().asInstanceOf[String]
     /*
       * Returns ISO 8601-formatted time in UTC
       */
@@ -354,14 +320,12 @@ object mod {
     @js.native
     def isoTime_FstdTimeFunctions: TimeFn = js.native
     
-    @scala.inline
-    def isoTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isoTime")(x.asInstanceOf[js.Any])
+    inline def isoTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isoTime")(x.asInstanceOf[js.Any])
     
     /**
       * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
       */
-    @scala.inline
-    def nullTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nullTime")().asInstanceOf[String]
+    inline def nullTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nullTime")().asInstanceOf[String]
     /**
       * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
       */
@@ -369,14 +333,12 @@ object mod {
     @js.native
     def nullTime_FstdTimeFunctions: TimeFn = js.native
     
-    @scala.inline
-    def nullTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nullTime")(x.asInstanceOf[js.Any])
+    inline def nullTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nullTime")(x.asInstanceOf[js.Any])
     
     /*
       * Returns the seconds since Unix epoch
       */
-    @scala.inline
-    def unixTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unixTime")().asInstanceOf[String]
+    inline def unixTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unixTime")().asInstanceOf[String]
     /*
       * Returns the seconds since Unix epoch
       */
@@ -384,8 +346,7 @@ object mod {
     @js.native
     def unixTime_FstdTimeFunctions: TimeFn = js.native
     
-    @scala.inline
-    def unixTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unixTime")(x.asInstanceOf[js.Any])
+    inline def unixTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unixTime")(x.asInstanceOf[js.Any])
   }
   
   object symbols {
@@ -844,26 +805,20 @@ object mod {
   }
   object Bindings {
     
-    @scala.inline
-    def apply(): Bindings = {
+    inline def apply(): Bindings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bindings]
     }
     
-    @scala.inline
-    implicit class BindingsMutableBuilder[Self <: Bindings] (val x: Self) extends AnyVal {
+    extension [Self <: Bindings](x: Self) {
       
-      @scala.inline
-      def setLevel(value: Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setSerializers(value: StringDictionary[SerializerFn]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: StringDictionary[SerializerFn]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
     }
   }
   
@@ -883,38 +838,28 @@ object mod {
   }
   object DestinationObjectOptions {
     
-    @scala.inline
-    def apply(): DestinationObjectOptions = {
+    inline def apply(): DestinationObjectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestinationObjectOptions]
     }
     
-    @scala.inline
-    implicit class DestinationObjectOptionsMutableBuilder[Self <: DestinationObjectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DestinationObjectOptions](x: Self) {
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setFd(value: String | Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+      inline def setFd(value: String | Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+      inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   
@@ -924,17 +869,14 @@ object mod {
   }
   object DestinationStream {
     
-    @scala.inline
-    def apply(write: String => Unit): DestinationStream = {
+    inline def apply(write: String => Unit): DestinationStream = {
       val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[DestinationStream]
     }
     
-    @scala.inline
-    implicit class DestinationStreamMutableBuilder[Self <: DestinationStream] (val x: Self) extends AnyVal {
+    extension [Self <: DestinationStream](x: Self) {
       
-      @scala.inline
-      def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -949,23 +891,17 @@ object mod {
   trait Level extends StObject
   object Level {
     
-    @scala.inline
-    def debug: typings.pino.pinoStrings.debug = "debug".asInstanceOf[typings.pino.pinoStrings.debug]
+    inline def debug: typings.pino.pinoStrings.debug = "debug".asInstanceOf[typings.pino.pinoStrings.debug]
     
-    @scala.inline
-    def error: typings.pino.pinoStrings.error = "error".asInstanceOf[typings.pino.pinoStrings.error]
+    inline def error: typings.pino.pinoStrings.error = "error".asInstanceOf[typings.pino.pinoStrings.error]
     
-    @scala.inline
-    def fatal: typings.pino.pinoStrings.fatal = "fatal".asInstanceOf[typings.pino.pinoStrings.fatal]
+    inline def fatal: typings.pino.pinoStrings.fatal = "fatal".asInstanceOf[typings.pino.pinoStrings.fatal]
     
-    @scala.inline
-    def info: typings.pino.pinoStrings.info = "info".asInstanceOf[typings.pino.pinoStrings.info]
+    inline def info: typings.pino.pinoStrings.info = "info".asInstanceOf[typings.pino.pinoStrings.info]
     
-    @scala.inline
-    def trace: typings.pino.pinoStrings.trace = "trace".asInstanceOf[typings.pino.pinoStrings.trace]
+    inline def trace: typings.pino.pinoStrings.trace = "trace".asInstanceOf[typings.pino.pinoStrings.trace]
     
-    @scala.inline
-    def warn: typings.pino.pinoStrings.warn = "warn".asInstanceOf[typings.pino.pinoStrings.warn]
+    inline def warn: typings.pino.pinoStrings.warn = "warn".asInstanceOf[typings.pino.pinoStrings.warn]
   }
   
   type LevelChangeEventListener = js.Function4[
@@ -990,20 +926,16 @@ object mod {
   }
   object LevelMapping {
     
-    @scala.inline
-    def apply(labels: NumberDictionary[String], values: StringDictionary[Double]): LevelMapping = {
+    inline def apply(labels: NumberDictionary[String], values: StringDictionary[Double]): LevelMapping = {
       val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[LevelMapping]
     }
     
-    @scala.inline
-    implicit class LevelMappingMutableBuilder[Self <: LevelMapping] (val x: Self) extends AnyVal {
+    extension [Self <: LevelMapping](x: Self) {
       
-      @scala.inline
-      def setLabels(value: NumberDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: NumberDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: StringDictionary[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: StringDictionary[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1019,26 +951,19 @@ object mod {
   trait LevelWithSilent extends StObject
   object LevelWithSilent {
     
-    @scala.inline
-    def debug: typings.pino.pinoStrings.debug = "debug".asInstanceOf[typings.pino.pinoStrings.debug]
+    inline def debug: typings.pino.pinoStrings.debug = "debug".asInstanceOf[typings.pino.pinoStrings.debug]
     
-    @scala.inline
-    def error: typings.pino.pinoStrings.error = "error".asInstanceOf[typings.pino.pinoStrings.error]
+    inline def error: typings.pino.pinoStrings.error = "error".asInstanceOf[typings.pino.pinoStrings.error]
     
-    @scala.inline
-    def fatal: typings.pino.pinoStrings.fatal = "fatal".asInstanceOf[typings.pino.pinoStrings.fatal]
+    inline def fatal: typings.pino.pinoStrings.fatal = "fatal".asInstanceOf[typings.pino.pinoStrings.fatal]
     
-    @scala.inline
-    def info: typings.pino.pinoStrings.info = "info".asInstanceOf[typings.pino.pinoStrings.info]
+    inline def info: typings.pino.pinoStrings.info = "info".asInstanceOf[typings.pino.pinoStrings.info]
     
-    @scala.inline
-    def silent: typings.pino.pinoStrings.silent = "silent".asInstanceOf[typings.pino.pinoStrings.silent]
+    inline def silent: typings.pino.pinoStrings.silent = "silent".asInstanceOf[typings.pino.pinoStrings.silent]
     
-    @scala.inline
-    def trace: typings.pino.pinoStrings.trace = "trace".asInstanceOf[typings.pino.pinoStrings.trace]
+    inline def trace: typings.pino.pinoStrings.trace = "trace".asInstanceOf[typings.pino.pinoStrings.trace]
     
-    @scala.inline
-    def warn: typings.pino.pinoStrings.warn = "warn".asInstanceOf[typings.pino.pinoStrings.warn]
+    inline def warn: typings.pino.pinoStrings.warn = "warn".asInstanceOf[typings.pino.pinoStrings.warn]
   }
   
   /**
@@ -1084,32 +1009,24 @@ object mod {
   }
   object LogEvent {
     
-    @scala.inline
-    def apply(bindings: js.Array[Bindings], level: Label, messages: js.Array[js.Any], ts: Double): LogEvent = {
+    inline def apply(bindings: js.Array[Bindings], level: Label, messages: js.Array[js.Any], ts: Double): LogEvent = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogEvent]
     }
     
-    @scala.inline
-    implicit class LogEventMutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
+    extension [Self <: LogEvent](x: Self) {
       
-      @scala.inline
-      def setBindings(value: js.Array[Bindings]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: js.Array[Bindings]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingsVarargs(value: Bindings*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: Bindings*): Self = StObject.set(x, "bindings", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: Label): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Label): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessages(value: js.Array[js.Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[js.Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: js.Any*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: js.Any*): Self = StObject.set(x, "messages", js.Array(value :_*))
       
-      @scala.inline
-      def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+      inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1282,161 +1199,110 @@ object mod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setBase(value: StringDictionary[js.Any]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: StringDictionary[js.Any]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseNull: Self = StObject.set(x, "base", null)
+      inline def setBaseNull: Self = StObject.set(x, "base", null)
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setBrowser(value: AsObject): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: AsObject): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
-      @scala.inline
-      def setChangeLevelName(value: String): Self = StObject.set(x, "changeLevelName", value.asInstanceOf[js.Any])
+      inline def setChangeLevelName(value: String): Self = StObject.set(x, "changeLevelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeLevelNameUndefined: Self = StObject.set(x, "changeLevelName", js.undefined)
+      inline def setChangeLevelNameUndefined: Self = StObject.set(x, "changeLevelName", js.undefined)
       
-      @scala.inline
-      def setCustomLevels(value: StringDictionary[Double]): Self = StObject.set(x, "customLevels", value.asInstanceOf[js.Any])
+      inline def setCustomLevels(value: StringDictionary[Double]): Self = StObject.set(x, "customLevels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomLevelsUndefined: Self = StObject.set(x, "customLevels", js.undefined)
+      inline def setCustomLevelsUndefined: Self = StObject.set(x, "customLevels", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFormatters(value: typings.pino.anon.Bindings): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
+      inline def setFormatters(value: typings.pino.anon.Bindings): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
+      inline def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
       
-      @scala.inline
-      def setHooks(value: LogMethod): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      inline def setHooks(value: LogMethod): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+      inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LevelWithSilent | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LevelWithSilent | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelKey(value: String): Self = StObject.set(x, "levelKey", value.asInstanceOf[js.Any])
+      inline def setLevelKey(value: String): Self = StObject.set(x, "levelKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelKeyUndefined: Self = StObject.set(x, "levelKey", js.undefined)
+      inline def setLevelKeyUndefined: Self = StObject.set(x, "levelKey", js.undefined)
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setLevelVal(value: Double): Self = StObject.set(x, "levelVal", value.asInstanceOf[js.Any])
+      inline def setLevelVal(value: Double): Self = StObject.set(x, "levelVal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelValUndefined: Self = StObject.set(x, "levelVal", js.undefined)
+      inline def setLevelValUndefined: Self = StObject.set(x, "levelVal", js.undefined)
       
-      @scala.inline
-      def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
+      inline def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
+      inline def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
       
-      @scala.inline
-      def setMixin(value: () => js.Object): Self = StObject.set(x, "mixin", js.Any.fromFunction0(value))
+      inline def setMixin(value: () => js.Object): Self = StObject.set(x, "mixin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
+      inline def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNestedKey(value: String): Self = StObject.set(x, "nestedKey", value.asInstanceOf[js.Any])
+      inline def setNestedKey(value: String): Self = StObject.set(x, "nestedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedKeyUndefined: Self = StObject.set(x, "nestedKey", js.undefined)
+      inline def setNestedKeyUndefined: Self = StObject.set(x, "nestedKey", js.undefined)
       
-      @scala.inline
-      def setOnTerminated(value: (/* eventName */ String, /* err */ js.Any) => Unit): Self = StObject.set(x, "onTerminated", js.Any.fromFunction2(value))
+      inline def setOnTerminated(value: (/* eventName */ String, /* err */ js.Any) => Unit): Self = StObject.set(x, "onTerminated", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTerminatedUndefined: Self = StObject.set(x, "onTerminated", js.undefined)
+      inline def setOnTerminatedUndefined: Self = StObject.set(x, "onTerminated", js.undefined)
       
-      @scala.inline
-      def setPrettifier(value: js.Any): Self = StObject.set(x, "prettifier", value.asInstanceOf[js.Any])
+      inline def setPrettifier(value: js.Any): Self = StObject.set(x, "prettifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettifierUndefined: Self = StObject.set(x, "prettifier", js.undefined)
+      inline def setPrettifierUndefined: Self = StObject.set(x, "prettifier", js.undefined)
       
-      @scala.inline
-      def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      inline def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
       
-      @scala.inline
-      def setRedact(value: js.Array[String] | redactOptions): Self = StObject.set(x, "redact", value.asInstanceOf[js.Any])
+      inline def setRedact(value: js.Array[String] | redactOptions): Self = StObject.set(x, "redact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedactUndefined: Self = StObject.set(x, "redact", js.undefined)
+      inline def setRedactUndefined: Self = StObject.set(x, "redact", js.undefined)
       
-      @scala.inline
-      def setRedactVarargs(value: String*): Self = StObject.set(x, "redact", js.Array(value :_*))
+      inline def setRedactVarargs(value: String*): Self = StObject.set(x, "redact", js.Array(value :_*))
       
-      @scala.inline
-      def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+      inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+      inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
       
-      @scala.inline
-      def setSerializers(value: StringDictionary[SerializerFn]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: StringDictionary[SerializerFn]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: TimeFn | Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: TimeFn | Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampFunction0(value: () => String): Self = StObject.set(x, "timestamp", js.Any.fromFunction0(value))
+      inline def setTimestampFunction0(value: () => String): Self = StObject.set(x, "timestamp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setUseLevelLabels(value: Boolean): Self = StObject.set(x, "useLevelLabels", value.asInstanceOf[js.Any])
+      inline def setUseLevelLabels(value: Boolean): Self = StObject.set(x, "useLevelLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLevelLabelsUndefined: Self = StObject.set(x, "useLevelLabels", js.undefined)
+      inline def setUseLevelLabelsUndefined: Self = StObject.set(x, "useLevelLabels", js.undefined)
       
-      @scala.inline
-      def setUseOnlyCustomLevels(value: Boolean): Self = StObject.set(x, "useOnlyCustomLevels", value.asInstanceOf[js.Any])
+      inline def setUseOnlyCustomLevels(value: Boolean): Self = StObject.set(x, "useOnlyCustomLevels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseOnlyCustomLevelsUndefined: Self = StObject.set(x, "useOnlyCustomLevels", js.undefined)
+      inline def setUseOnlyCustomLevelsUndefined: Self = StObject.set(x, "useOnlyCustomLevels", js.undefined)
     }
   }
   
@@ -1510,89 +1376,62 @@ object mod {
   }
   object PrettyOptions {
     
-    @scala.inline
-    def apply(): PrettyOptions = {
+    inline def apply(): PrettyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrettyOptions]
     }
     
-    @scala.inline
-    implicit class PrettyOptionsMutableBuilder[Self <: PrettyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrettyOptions](x: Self) {
       
-      @scala.inline
-      def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
+      inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
+      inline def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
       
-      @scala.inline
-      def setCrlf(value: Boolean): Self = StObject.set(x, "crlf", value.asInstanceOf[js.Any])
+      inline def setCrlf(value: Boolean): Self = StObject.set(x, "crlf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrlfUndefined: Self = StObject.set(x, "crlf", js.undefined)
+      inline def setCrlfUndefined: Self = StObject.set(x, "crlf", js.undefined)
       
-      @scala.inline
-      def setErrorLikeObjectKeys(value: js.Array[String]): Self = StObject.set(x, "errorLikeObjectKeys", value.asInstanceOf[js.Any])
+      inline def setErrorLikeObjectKeys(value: js.Array[String]): Self = StObject.set(x, "errorLikeObjectKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorLikeObjectKeysUndefined: Self = StObject.set(x, "errorLikeObjectKeys", js.undefined)
+      inline def setErrorLikeObjectKeysUndefined: Self = StObject.set(x, "errorLikeObjectKeys", js.undefined)
       
-      @scala.inline
-      def setErrorLikeObjectKeysVarargs(value: String*): Self = StObject.set(x, "errorLikeObjectKeys", js.Array(value :_*))
+      inline def setErrorLikeObjectKeysVarargs(value: String*): Self = StObject.set(x, "errorLikeObjectKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setErrorProps(value: String): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
+      inline def setErrorProps(value: String): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
+      inline def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setLevelFirst(value: Boolean): Self = StObject.set(x, "levelFirst", value.asInstanceOf[js.Any])
+      inline def setLevelFirst(value: Boolean): Self = StObject.set(x, "levelFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelFirstUndefined: Self = StObject.set(x, "levelFirst", js.undefined)
+      inline def setLevelFirstUndefined: Self = StObject.set(x, "levelFirst", js.undefined)
       
-      @scala.inline
-      def setMessageFormat(value: `false` | String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+      inline def setMessageFormat(value: `false` | String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+      inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
       
-      @scala.inline
-      def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
+      inline def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
+      inline def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setSuppressFlushSyncWarning(value: Boolean): Self = StObject.set(x, "suppressFlushSyncWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressFlushSyncWarning(value: Boolean): Self = StObject.set(x, "suppressFlushSyncWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressFlushSyncWarningUndefined: Self = StObject.set(x, "suppressFlushSyncWarning", js.undefined)
+      inline def setSuppressFlushSyncWarningUndefined: Self = StObject.set(x, "suppressFlushSyncWarning", js.undefined)
       
-      @scala.inline
-      def setTimestampKey(value: String): Self = StObject.set(x, "timestampKey", value.asInstanceOf[js.Any])
+      inline def setTimestampKey(value: String): Self = StObject.set(x, "timestampKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampKeyUndefined: Self = StObject.set(x, "timestampKey", js.undefined)
+      inline def setTimestampKeyUndefined: Self = StObject.set(x, "timestampKey", js.undefined)
       
-      @scala.inline
-      def setTranslateTime(value: Boolean | String): Self = StObject.set(x, "translateTime", value.asInstanceOf[js.Any])
+      inline def setTranslateTime(value: Boolean | String): Self = StObject.set(x, "translateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateTimeUndefined: Self = StObject.set(x, "translateTime", js.undefined)
+      inline def setTranslateTimeUndefined: Self = StObject.set(x, "translateTime", js.undefined)
     }
   }
   
@@ -1618,35 +1457,26 @@ object mod {
   }
   object redactOptions {
     
-    @scala.inline
-    def apply(paths: js.Array[String]): redactOptions = {
+    inline def apply(paths: js.Array[String]): redactOptions = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
       __obj.asInstanceOf[redactOptions]
     }
     
-    @scala.inline
-    implicit class redactOptionsMutableBuilder[Self <: redactOptions] (val x: Self) extends AnyVal {
+    extension [Self <: redactOptions](x: Self) {
       
-      @scala.inline
-      def setCensor(value: String | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
+      inline def setCensor(value: String | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCensorFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
+      inline def setCensorFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
+      inline def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     }
   }
 }

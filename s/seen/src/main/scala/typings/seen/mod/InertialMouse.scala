@@ -28,18 +28,15 @@ object InertialMouse {
   @JSImport("seen", "InertialMouse.inertiaExtinction")
   @js.native
   def inertiaExtinction: Double = js.native
-  @scala.inline
-  def inertiaExtinction_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inertiaExtinction")(x.asInstanceOf[js.Any])
+  inline def inertiaExtinction_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inertiaExtinction")(x.asInstanceOf[js.Any])
   
   @JSImport("seen", "InertialMouse.inertiaMsecDelay")
   @js.native
   def inertiaMsecDelay: Double = js.native
-  @scala.inline
-  def inertiaMsecDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inertiaMsecDelay")(x.asInstanceOf[js.Any])
+  inline def inertiaMsecDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inertiaMsecDelay")(x.asInstanceOf[js.Any])
   
   @JSImport("seen", "InertialMouse.smoothingTimeout")
   @js.native
   def smoothingTimeout: Double = js.native
-  @scala.inline
-  def smoothingTimeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smoothingTimeout")(x.asInstanceOf[js.Any])
+  inline def smoothingTimeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smoothingTimeout")(x.asInstanceOf[js.Any])
 }

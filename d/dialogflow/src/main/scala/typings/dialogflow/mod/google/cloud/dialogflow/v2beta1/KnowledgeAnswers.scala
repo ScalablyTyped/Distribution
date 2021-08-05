@@ -124,10 +124,8 @@ object KnowledgeAnswers {
       * @returns Answer instance
       */
     /* static member */
-    @scala.inline
-    def create(): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Answer]
-    @scala.inline
-    def create(properties: IAnswer): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def create(): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Answer]
+    inline def create(properties: IAnswer): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Answer]
     
     /**
       * Decodes an Answer message from the specified reader or buffer.
@@ -138,14 +136,10 @@ object KnowledgeAnswers {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Answer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Answer]
-    @scala.inline
-    def decode(reader: Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Answer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Answer]
+    inline def decode(reader: Reader): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def decode(reader: Reader, length: Double): Answer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Answer]
+    inline def decode(reader: Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def decode(reader: Uint8Array, length: Double): Answer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Answer]
     
     /**
       * Decodes an Answer message from the specified reader or buffer, length delimited.
@@ -155,10 +149,8 @@ object KnowledgeAnswers {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def decodeDelimited(reader: Reader): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def decodeDelimited(reader: Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
     
     /**
       * Encodes the specified Answer message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.verify|verify} messages.
@@ -167,10 +159,8 @@ object KnowledgeAnswers {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IAnswer): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IAnswer, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IAnswer): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IAnswer, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Answer message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.verify|verify} messages.
@@ -179,10 +169,8 @@ object KnowledgeAnswers {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IAnswer): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IAnswer, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IAnswer): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IAnswer, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an Answer message from a plain object. Also converts values to their respective internal types.
@@ -190,8 +178,7 @@ object KnowledgeAnswers {
       * @returns Answer
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Answer]
     
     /**
       * Creates a plain object from an Answer message. Also converts values to other types if specified.
@@ -200,10 +187,8 @@ object KnowledgeAnswers {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Answer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Answer, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Answer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Answer, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an Answer message.
@@ -211,8 +196,7 @@ object KnowledgeAnswers {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -221,10 +205,8 @@ object KnowledgeAnswers {
     * @returns KnowledgeAnswers instance
     */
   /* static member */
-  @scala.inline
-  def create(): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[KnowledgeAnswers]
-  @scala.inline
-  def create(properties: IKnowledgeAnswers): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def create(): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[KnowledgeAnswers]
+  inline def create(properties: IKnowledgeAnswers): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   
   /**
     * Decodes a KnowledgeAnswers message from the specified reader or buffer.
@@ -235,14 +217,10 @@ object KnowledgeAnswers {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
-  @scala.inline
-  def decode(reader: Reader, length: Double): KnowledgeAnswers = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeAnswers]
-  @scala.inline
-  def decode(reader: Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): KnowledgeAnswers = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeAnswers]
+  inline def decode(reader: Reader): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def decode(reader: Reader, length: Double): KnowledgeAnswers = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeAnswers]
+  inline def decode(reader: Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def decode(reader: Uint8Array, length: Double): KnowledgeAnswers = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeAnswers]
   
   /**
     * Decodes a KnowledgeAnswers message from the specified reader or buffer, length delimited.
@@ -252,10 +230,8 @@ object KnowledgeAnswers {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def decodeDelimited(reader: Reader): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def decodeDelimited(reader: Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   
   /**
     * Encodes the specified KnowledgeAnswers message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeAnswers.verify|verify} messages.
@@ -264,10 +240,8 @@ object KnowledgeAnswers {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IKnowledgeAnswers): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IKnowledgeAnswers, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IKnowledgeAnswers): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IKnowledgeAnswers, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified KnowledgeAnswers message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeAnswers.verify|verify} messages.
@@ -276,10 +250,8 @@ object KnowledgeAnswers {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IKnowledgeAnswers): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IKnowledgeAnswers, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IKnowledgeAnswers): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IKnowledgeAnswers, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a KnowledgeAnswers message from a plain object. Also converts values to their respective internal types.
@@ -287,8 +259,7 @@ object KnowledgeAnswers {
     * @returns KnowledgeAnswers
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def fromObject(`object`: StringDictionary[js.Any]): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   
   /**
     * Creates a plain object from a KnowledgeAnswers message. Also converts values to other types if specified.
@@ -297,10 +268,8 @@ object KnowledgeAnswers {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: KnowledgeAnswers): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: KnowledgeAnswers, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: KnowledgeAnswers): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: KnowledgeAnswers, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a KnowledgeAnswers message.
@@ -308,8 +277,7 @@ object KnowledgeAnswers {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Answer. */
   trait IAnswer extends StObject {
@@ -333,61 +301,44 @@ object KnowledgeAnswers {
   }
   object IAnswer {
     
-    @scala.inline
-    def apply(): IAnswer = {
+    inline def apply(): IAnswer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAnswer]
     }
     
-    @scala.inline
-    implicit class IAnswerMutableBuilder[Self <: IAnswer] (val x: Self) extends AnyVal {
+    extension [Self <: IAnswer](x: Self) {
       
-      @scala.inline
-      def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+      inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnswerNull: Self = StObject.set(x, "answer", null)
+      inline def setAnswerNull: Self = StObject.set(x, "answer", null)
       
-      @scala.inline
-      def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
+      inline def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
       
-      @scala.inline
-      def setFaqQuestion(value: String): Self = StObject.set(x, "faqQuestion", value.asInstanceOf[js.Any])
+      inline def setFaqQuestion(value: String): Self = StObject.set(x, "faqQuestion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaqQuestionNull: Self = StObject.set(x, "faqQuestion", null)
+      inline def setFaqQuestionNull: Self = StObject.set(x, "faqQuestion", null)
       
-      @scala.inline
-      def setFaqQuestionUndefined: Self = StObject.set(x, "faqQuestion", js.undefined)
+      inline def setFaqQuestionUndefined: Self = StObject.set(x, "faqQuestion", js.undefined)
       
-      @scala.inline
-      def setMatchConfidence(value: Double): Self = StObject.set(x, "matchConfidence", value.asInstanceOf[js.Any])
+      inline def setMatchConfidence(value: Double): Self = StObject.set(x, "matchConfidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchConfidenceLevel(
+      inline def setMatchConfidenceLevel(
         value: MatchConfidenceLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel * / any */ String)
       ): Self = StObject.set(x, "matchConfidenceLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchConfidenceLevelNull: Self = StObject.set(x, "matchConfidenceLevel", null)
+      inline def setMatchConfidenceLevelNull: Self = StObject.set(x, "matchConfidenceLevel", null)
       
-      @scala.inline
-      def setMatchConfidenceLevelUndefined: Self = StObject.set(x, "matchConfidenceLevel", js.undefined)
+      inline def setMatchConfidenceLevelUndefined: Self = StObject.set(x, "matchConfidenceLevel", js.undefined)
       
-      @scala.inline
-      def setMatchConfidenceNull: Self = StObject.set(x, "matchConfidence", null)
+      inline def setMatchConfidenceNull: Self = StObject.set(x, "matchConfidence", null)
       
-      @scala.inline
-      def setMatchConfidenceUndefined: Self = StObject.set(x, "matchConfidence", js.undefined)
+      inline def setMatchConfidenceUndefined: Self = StObject.set(x, "matchConfidence", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceNull: Self = StObject.set(x, "source", null)
+      inline def setSourceNull: Self = StObject.set(x, "source", null)
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
 }

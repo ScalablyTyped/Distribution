@@ -37,26 +37,20 @@ object gapi {
     }
     object GoogleApiOAuth2TokenObject {
       
-      @scala.inline
-      def apply(access_token: String, error: String, expires_in: String, state: String): GoogleApiOAuth2TokenObject = {
+      inline def apply(access_token: String, error: String, expires_in: String, state: String): GoogleApiOAuth2TokenObject = {
         val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
         __obj.asInstanceOf[GoogleApiOAuth2TokenObject]
       }
       
-      @scala.inline
-      implicit class GoogleApiOAuth2TokenObjectMutableBuilder[Self <: GoogleApiOAuth2TokenObject] (val x: Self) extends AnyVal {
+      extension [Self <: GoogleApiOAuth2TokenObject](x: Self) {
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+        inline def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -121,41 +115,30 @@ object gapi {
     }
     object Response {
       
-      @scala.inline
-      def apply[T](body: String, result: T): Response[T] = {
+      inline def apply[T](body: String, result: T): Response[T] = {
         val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[Response[T]]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
+      extension [Self <: Response[?], T](x: Self & Response[T]) {
         
-        @scala.inline
-        def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+        inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        @scala.inline
-        def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
         
-        @scala.inline
-        def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+        inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+        inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     

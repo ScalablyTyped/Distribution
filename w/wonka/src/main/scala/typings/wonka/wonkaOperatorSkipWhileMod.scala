@@ -11,6 +11,5 @@ object wonkaOperatorSkipWhileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def skipWhile[A](f: js.Function1[/* x */ A, Boolean]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def skipWhile[A](f: js.Function1[/* x */ A, Boolean]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

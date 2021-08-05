@@ -22,37 +22,27 @@ trait VarianceScalingArgs extends StObject {
 }
 object VarianceScalingArgs {
   
-  @scala.inline
-  def apply(): VarianceScalingArgs = {
+  inline def apply(): VarianceScalingArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VarianceScalingArgs]
   }
   
-  @scala.inline
-  implicit class VarianceScalingArgsMutableBuilder[Self <: VarianceScalingArgs] (val x: Self) extends AnyVal {
+  extension [Self <: VarianceScalingArgs](x: Self) {
     
-    @scala.inline
-    def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setMode(value: FanMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: FanMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait Field extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply(key: fieldNameString): Field = {
+  inline def apply(key: fieldNameString): Field = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setKey(value: fieldNameString): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: fieldNameString): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefValue(value: fieldNameString): Self = StObject.set(x, "refValue", value.asInstanceOf[js.Any])
+    inline def setRefValue(value: fieldNameString): Self = StObject.set(x, "refValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefValueUndefined: Self = StObject.set(x, "refValue", js.undefined)
+    inline def setRefValueUndefined: Self = StObject.set(x, "refValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: fieldStringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: fieldStringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

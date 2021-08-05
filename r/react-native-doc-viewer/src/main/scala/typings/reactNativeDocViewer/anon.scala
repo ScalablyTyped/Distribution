@@ -16,29 +16,22 @@ object anon {
   }
   object Base64 {
     
-    @scala.inline
-    def apply(base64: String): Base64 = {
+    inline def apply(base64: String): Base64 = {
       val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base64]
     }
     
-    @scala.inline
-    implicit class Base64MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
+    extension [Self <: Base64](x: Self) {
       
-      @scala.inline
-      def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     }
   }
   
@@ -56,41 +49,30 @@ object anon {
   }
   object Cache {
     
-    @scala.inline
-    def apply(url: String): Cache = {
+    inline def apply(url: String): Cache = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cache]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+    extension [Self <: Cache](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameOptional(value: String): Self = StObject.set(x, "fileNameOptional", value.asInstanceOf[js.Any])
+      inline def setFileNameOptional(value: String): Self = StObject.set(x, "fileNameOptional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameOptionalUndefined: Self = StObject.set(x, "fileNameOptional", js.undefined)
+      inline def setFileNameOptionalUndefined: Self = StObject.set(x, "fileNameOptional", js.undefined)
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,29 +86,22 @@ object anon {
   }
   object FileName {
     
-    @scala.inline
-    def apply(url: String): FileName = {
+    inline def apply(url: String): FileName = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileName]
     }
     
-    @scala.inline
-    implicit class FileNameMutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
+    extension [Self <: FileName](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

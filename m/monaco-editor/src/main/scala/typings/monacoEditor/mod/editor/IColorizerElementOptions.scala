@@ -14,25 +14,19 @@ trait IColorizerElementOptions
 }
 object IColorizerElementOptions {
   
-  @scala.inline
-  def apply(): IColorizerElementOptions = {
+  inline def apply(): IColorizerElementOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColorizerElementOptions]
   }
   
-  @scala.inline
-  implicit class IColorizerElementOptionsMutableBuilder[Self <: IColorizerElementOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IColorizerElementOptions](x: Self) {
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

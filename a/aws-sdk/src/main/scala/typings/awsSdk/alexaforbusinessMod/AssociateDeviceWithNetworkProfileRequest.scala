@@ -18,19 +18,15 @@ trait AssociateDeviceWithNetworkProfileRequest extends StObject {
 }
 object AssociateDeviceWithNetworkProfileRequest {
   
-  @scala.inline
-  def apply(DeviceArn: Arn, NetworkProfileArn: Arn): AssociateDeviceWithNetworkProfileRequest = {
+  inline def apply(DeviceArn: Arn, NetworkProfileArn: Arn): AssociateDeviceWithNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(DeviceArn = DeviceArn.asInstanceOf[js.Any], NetworkProfileArn = NetworkProfileArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateDeviceWithNetworkProfileRequest]
   }
   
-  @scala.inline
-  implicit class AssociateDeviceWithNetworkProfileRequestMutableBuilder[Self <: AssociateDeviceWithNetworkProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateDeviceWithNetworkProfileRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
+    inline def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
   }
 }

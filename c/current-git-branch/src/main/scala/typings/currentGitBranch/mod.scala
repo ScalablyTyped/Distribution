@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): CurrentGitBranchResult = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CurrentGitBranchResult]
-  @scala.inline
-  def apply(args: CurrentGitBranchOptions): CurrentGitBranchResult = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[CurrentGitBranchResult]
+  inline def apply(): CurrentGitBranchResult = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CurrentGitBranchResult]
+  inline def apply(args: CurrentGitBranchOptions): CurrentGitBranchResult = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[CurrentGitBranchResult]
   
   @JSImport("current-git-branch", JSImport.Namespace)
   @js.native
@@ -26,26 +24,20 @@ object mod {
   }
   object CurrentGitBranchOptionsObject {
     
-    @scala.inline
-    def apply(): CurrentGitBranchOptionsObject = {
+    inline def apply(): CurrentGitBranchOptionsObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CurrentGitBranchOptionsObject]
     }
     
-    @scala.inline
-    implicit class CurrentGitBranchOptionsObjectMutableBuilder[Self <: CurrentGitBranchOptionsObject] (val x: Self) extends AnyVal {
+    extension [Self <: CurrentGitBranchOptionsObject](x: Self) {
       
-      @scala.inline
-      def setAltPath(value: String): Self = StObject.set(x, "altPath", value.asInstanceOf[js.Any])
+      inline def setAltPath(value: String): Self = StObject.set(x, "altPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltPathUndefined: Self = StObject.set(x, "altPath", js.undefined)
+      inline def setAltPathUndefined: Self = StObject.set(x, "altPath", js.undefined)
       
-      @scala.inline
-      def setBranchOptions(value: String): Self = StObject.set(x, "branchOptions", value.asInstanceOf[js.Any])
+      inline def setBranchOptions(value: String): Self = StObject.set(x, "branchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchOptionsUndefined: Self = StObject.set(x, "branchOptions", js.undefined)
+      inline def setBranchOptionsUndefined: Self = StObject.set(x, "branchOptions", js.undefined)
     }
   }
   

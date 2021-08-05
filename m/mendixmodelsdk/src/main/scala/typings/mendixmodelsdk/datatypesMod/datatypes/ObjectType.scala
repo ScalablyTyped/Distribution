@@ -85,8 +85,7 @@ object ObjectType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def create(model: IModel): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -97,8 +96,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -109,8 +107,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -121,8 +118,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConstantUnderType(container: Constant): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInConstantUnderType(container: Constant): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -133,8 +129,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -145,8 +140,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataSetColumnUnderColumnType(container: DataSetColumn): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -157,8 +151,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataSetParameterUnderParameterType(container: DataSetParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -169,8 +162,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -181,8 +173,7 @@ object ObjectType {
     *  7.16.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInImportMappingUnderParameterType(container: ImportMapping): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInImportMappingUnderParameterType(container: ImportMapping): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -193,8 +184,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -205,8 +195,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -217,8 +206,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -229,8 +217,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -241,8 +228,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPublishedParameterUnderParameterType(container: PublishedParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -253,8 +239,7 @@ object ObjectType {
     *  7.17.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestOperationParameterUnderType(container: RestOperationParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInRestOperationParameterUnderType(container: RestOperationParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -265,8 +250,7 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInResultHandlingUnderVariableType(container: ResultHandling): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInResultHandlingUnderVariableType(container: ResultHandling): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -277,20 +261,17 @@ object ObjectType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInValueMappingElementUnderType(container: ValueMappingElement): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def createInValueMappingElementUnderType(container: ValueMappingElement): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

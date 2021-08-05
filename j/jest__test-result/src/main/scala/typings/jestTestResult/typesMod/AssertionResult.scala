@@ -26,8 +26,7 @@ trait AssertionResult extends StObject {
 }
 object AssertionResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ancestorTitles: js.Array[String],
     failureMessages: js.Array[String],
     fullName: String,
@@ -39,55 +38,38 @@ object AssertionResult {
     __obj.asInstanceOf[AssertionResult]
   }
   
-  @scala.inline
-  implicit class AssertionResultMutableBuilder[Self <: AssertionResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssertionResult](x: Self) {
     
-    @scala.inline
-    def setAncestorTitles(value: js.Array[String]): Self = StObject.set(x, "ancestorTitles", value.asInstanceOf[js.Any])
+    inline def setAncestorTitles(value: js.Array[String]): Self = StObject.set(x, "ancestorTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestorTitlesVarargs(value: String*): Self = StObject.set(x, "ancestorTitles", js.Array(value :_*))
+    inline def setAncestorTitlesVarargs(value: String*): Self = StObject.set(x, "ancestorTitles", js.Array(value :_*))
     
-    @scala.inline
-    def setDuration(value: Milliseconds): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Milliseconds): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationNull: Self = StObject.set(x, "duration", null)
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFailureMessages(value: js.Array[String]): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
+    inline def setFailureMessages(value: js.Array[String]): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureMessagesVarargs(value: String*): Self = StObject.set(x, "failureMessages", js.Array(value :_*))
+    inline def setFailureMessagesVarargs(value: String*): Self = StObject.set(x, "failureMessages", js.Array(value :_*))
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocations(value: Double): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
+    inline def setInvocations(value: Double): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationsUndefined: Self = StObject.set(x, "invocations", js.undefined)
+    inline def setInvocationsUndefined: Self = StObject.set(x, "invocations", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Callsite): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Callsite): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNull: Self = StObject.set(x, "location", null)
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setNumPassingAsserts(value: Double): Self = StObject.set(x, "numPassingAsserts", value.asInstanceOf[js.Any])
+    inline def setNumPassingAsserts(value: Double): Self = StObject.set(x, "numPassingAsserts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

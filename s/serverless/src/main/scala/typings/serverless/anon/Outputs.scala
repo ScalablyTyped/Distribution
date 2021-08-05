@@ -13,22 +13,17 @@ trait Outputs extends StObject {
 }
 object Outputs {
   
-  @scala.inline
-  def apply(Resources: StringDictionary[js.Any]): Outputs = {
+  inline def apply(Resources: StringDictionary[js.Any]): Outputs = {
     val __obj = js.Dynamic.literal(Resources = Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Outputs]
   }
   
-  @scala.inline
-  implicit class OutputsMutableBuilder[Self <: Outputs] (val x: Self) extends AnyVal {
+  extension [Self <: Outputs](x: Self) {
     
-    @scala.inline
-    def setOutputs(value: StringDictionary[js.Any]): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: StringDictionary[js.Any]): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    @scala.inline
-    def setResources(value: StringDictionary[js.Any]): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: StringDictionary[js.Any]): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
   }
 }

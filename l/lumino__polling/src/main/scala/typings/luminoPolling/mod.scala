@@ -145,8 +145,7 @@ object mod {
   }
   object IPoll {
     
-    @scala.inline
-    def apply[T, U, V /* <: String */](
+    inline def apply[T, U, V /* <: String */](
       disposed: ISignal[IPoll[T, U, V], Unit],
       frequency: Frequency,
       isDisposed: Boolean,
@@ -196,49 +195,36 @@ object mod {
     }
     object Frequency {
       
-      @scala.inline
-      def apply(backoff: Boolean | Double, interval: Double, max: Double): Frequency = {
+      inline def apply(backoff: Boolean | Double, interval: Double, max: Double): Frequency = {
         val __obj = js.Dynamic.literal(backoff = backoff.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
         __obj.asInstanceOf[Frequency]
       }
       
-      @scala.inline
-      implicit class FrequencyMutableBuilder[Self <: Frequency] (val x: Self) extends AnyVal {
+      extension [Self <: Frequency](x: Self) {
         
-        @scala.inline
-        def setBackoff(value: Boolean | Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
+        inline def setBackoff(value: Boolean | Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class IPollMutableBuilder[Self <: IPoll[?, ?, ?], T, U, V /* <: String */] (val x: Self & (IPoll[T, U, V])) extends AnyVal {
+    extension [Self <: IPoll[?, ?, ?], T, U, V /* <: String */](x: Self & (IPoll[T, U, V])) {
       
-      @scala.inline
-      def setDisposed(value: ISignal[IPoll[T, U, V], Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
+      inline def setDisposed(value: ISignal[IPoll[T, U, V], Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequency(value: Frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+      inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: State[T, U, V]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State[T, U, V]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTick(value: js.Promise[IPoll[T, U, V]]): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+      inline def setTick(value: js.Promise[IPoll[T, U, V]]): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicked(value: ISignal[IPoll[T, U, V], State[T, U, V]]): Self = StObject.set(x, "ticked", value.asInstanceOf[js.Any])
+      inline def setTicked(value: ISignal[IPoll[T, U, V], State[T, U, V]]): Self = StObject.set(x, "ticked", value.asInstanceOf[js.Any])
     }
     
     /**
@@ -297,29 +283,22 @@ object mod {
     }
     object State {
       
-      @scala.inline
-      def apply[T, U, V /* <: String */](interval: Double, phase: Phase[V], timestamp: Double): State[T, U, V] = {
+      inline def apply[T, U, V /* <: String */](interval: Double, phase: Phase[V], timestamp: Double): State[T, U, V] = {
         val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], payload = null)
         __obj.asInstanceOf[State[T, U, V]]
       }
       
-      @scala.inline
-      implicit class StateMutableBuilder[Self <: State[?, ?, ?], T, U, V /* <: String */] (val x: Self & (State[T, U, V])) extends AnyVal {
+      extension [Self <: State[?, ?, ?], T, U, V /* <: String */](x: Self & (State[T, U, V])) {
         
-        @scala.inline
-        def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayload(value: T | U): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+        inline def setPayload(value: T | U): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayloadNull: Self = StObject.set(x, "payload", null)
+        inline def setPayloadNull: Self = StObject.set(x, "payload", null)
         
-        @scala.inline
-        def setPhase(value: Phase[V]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+        inline def setPhase(value: Phase[V]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+        inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       }
     }
     
@@ -347,8 +326,7 @@ object mod {
   }
   object IRateLimiter {
     
-    @scala.inline
-    def apply[T, U](
+    inline def apply[T, U](
       dispose: () => Unit,
       invoke: () => js.Promise[T],
       isDisposed: Boolean,
@@ -359,17 +337,13 @@ object mod {
       __obj.asInstanceOf[IRateLimiter[T, U]]
     }
     
-    @scala.inline
-    implicit class IRateLimiterMutableBuilder[Self <: IRateLimiter[?, ?], T, U] (val x: Self & (IRateLimiter[T, U])) extends AnyVal {
+    extension [Self <: IRateLimiter[?, ?], T, U](x: Self & (IRateLimiter[T, U])) {
       
-      @scala.inline
-      def setInvoke(value: () => js.Promise[T]): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
+      inline def setInvoke(value: () => js.Promise[T]): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

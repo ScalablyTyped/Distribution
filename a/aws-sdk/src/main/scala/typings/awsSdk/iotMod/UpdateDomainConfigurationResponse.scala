@@ -18,25 +18,19 @@ trait UpdateDomainConfigurationResponse extends StObject {
 }
 object UpdateDomainConfigurationResponse {
   
-  @scala.inline
-  def apply(): UpdateDomainConfigurationResponse = {
+  inline def apply(): UpdateDomainConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDomainConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDomainConfigurationResponseMutableBuilder[Self <: UpdateDomainConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDomainConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setDomainConfigurationArn(value: DomainConfigurationArn): Self = StObject.set(x, "domainConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setDomainConfigurationArn(value: DomainConfigurationArn): Self = StObject.set(x, "domainConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainConfigurationArnUndefined: Self = StObject.set(x, "domainConfigurationArn", js.undefined)
+    inline def setDomainConfigurationArnUndefined: Self = StObject.set(x, "domainConfigurationArn", js.undefined)
     
-    @scala.inline
-    def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
+    inline def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainConfigurationNameUndefined: Self = StObject.set(x, "domainConfigurationName", js.undefined)
+    inline def setDomainConfigurationNameUndefined: Self = StObject.set(x, "domainConfigurationName", js.undefined)
   }
 }

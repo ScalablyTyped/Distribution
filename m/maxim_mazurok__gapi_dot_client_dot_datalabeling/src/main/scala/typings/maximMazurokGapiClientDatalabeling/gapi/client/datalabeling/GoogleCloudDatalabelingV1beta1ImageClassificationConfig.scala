@@ -17,31 +17,23 @@ trait GoogleCloudDatalabelingV1beta1ImageClassificationConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ImageClassificationConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ImageClassificationConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ImageClassificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ImageClassificationConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ImageClassificationConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImageClassificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ImageClassificationConfig](x: Self) {
     
-    @scala.inline
-    def setAllowMultiLabel(value: Boolean): Self = StObject.set(x, "allowMultiLabel", value.asInstanceOf[js.Any])
+    inline def setAllowMultiLabel(value: Boolean): Self = StObject.set(x, "allowMultiLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMultiLabelUndefined: Self = StObject.set(x, "allowMultiLabel", js.undefined)
+    inline def setAllowMultiLabelUndefined: Self = StObject.set(x, "allowMultiLabel", js.undefined)
     
-    @scala.inline
-    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
+    inline def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
     
-    @scala.inline
-    def setAnswerAggregationType(value: String): Self = StObject.set(x, "answerAggregationType", value.asInstanceOf[js.Any])
+    inline def setAnswerAggregationType(value: String): Self = StObject.set(x, "answerAggregationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerAggregationTypeUndefined: Self = StObject.set(x, "answerAggregationType", js.undefined)
+    inline def setAnswerAggregationTypeUndefined: Self = StObject.set(x, "answerAggregationType", js.undefined)
   }
 }

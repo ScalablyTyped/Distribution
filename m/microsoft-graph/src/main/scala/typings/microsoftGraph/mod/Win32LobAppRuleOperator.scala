@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Win32LobAppRuleOperator extends StObject
 object Win32LobAppRuleOperator {
   
-  @scala.inline
-  def equal: typings.microsoftGraph.microsoftGraphStrings.equal = "equal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.equal]
+  inline def equal: typings.microsoftGraph.microsoftGraphStrings.equal = "equal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.equal]
   
-  @scala.inline
-  def greaterThan: typings.microsoftGraph.microsoftGraphStrings.greaterThan = "greaterThan".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.greaterThan]
+  inline def greaterThan: typings.microsoftGraph.microsoftGraphStrings.greaterThan = "greaterThan".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.greaterThan]
   
-  @scala.inline
-  def greaterThanOrEqual: typings.microsoftGraph.microsoftGraphStrings.greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.greaterThanOrEqual]
+  inline def greaterThanOrEqual: typings.microsoftGraph.microsoftGraphStrings.greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.greaterThanOrEqual]
   
-  @scala.inline
-  def lessThan: typings.microsoftGraph.microsoftGraphStrings.lessThan = "lessThan".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lessThan]
+  inline def lessThan: typings.microsoftGraph.microsoftGraphStrings.lessThan = "lessThan".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lessThan]
   
-  @scala.inline
-  def lessThanOrEqual: typings.microsoftGraph.microsoftGraphStrings.lessThanOrEqual = "lessThanOrEqual".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lessThanOrEqual]
+  inline def lessThanOrEqual: typings.microsoftGraph.microsoftGraphStrings.lessThanOrEqual = "lessThanOrEqual".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lessThanOrEqual]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
   
-  @scala.inline
-  def notEqual: typings.microsoftGraph.microsoftGraphStrings.notEqual = "notEqual".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notEqual]
+  inline def notEqual: typings.microsoftGraph.microsoftGraphStrings.notEqual = "notEqual".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notEqual]
 }

@@ -20,34 +20,25 @@ trait Annotation extends StObject {
 }
 object Annotation {
   
-  @scala.inline
-  def apply(from: Position): Annotation = {
+  inline def apply(from: Position): Annotation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

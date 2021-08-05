@@ -11,19 +11,15 @@ trait ProjectsSetDefaultNetworkTierRequest extends StObject {
 }
 object ProjectsSetDefaultNetworkTierRequest {
   
-  @scala.inline
-  def apply(): ProjectsSetDefaultNetworkTierRequest = {
+  inline def apply(): ProjectsSetDefaultNetworkTierRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectsSetDefaultNetworkTierRequest]
   }
   
-  @scala.inline
-  implicit class ProjectsSetDefaultNetworkTierRequestMutableBuilder[Self <: ProjectsSetDefaultNetworkTierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsSetDefaultNetworkTierRequest](x: Self) {
     
-    @scala.inline
-    def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
+    inline def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
+    inline def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
   }
 }

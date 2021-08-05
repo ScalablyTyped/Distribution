@@ -146,8 +146,7 @@ object mod {
   }
   object Color_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayable: () => Boolean,
       formatHex: () => String,
       formatHsl: () => String,
@@ -158,23 +157,17 @@ object mod {
       __obj.asInstanceOf[Color_]
     }
     
-    @scala.inline
-    implicit class Color_MutableBuilder[Self <: Color_] (val x: Self) extends AnyVal {
+    extension [Self <: Color_](x: Self) {
       
-      @scala.inline
-      def setDisplayable(value: () => Boolean): Self = StObject.set(x, "displayable", js.Any.fromFunction0(value))
+      inline def setDisplayable(value: () => Boolean): Self = StObject.set(x, "displayable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFormatHex(value: () => String): Self = StObject.set(x, "formatHex", js.Any.fromFunction0(value))
+      inline def setFormatHex(value: () => String): Self = StObject.set(x, "formatHex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFormatHsl(value: () => String): Self = StObject.set(x, "formatHsl", js.Any.fromFunction0(value))
+      inline def setFormatHsl(value: () => String): Self = StObject.set(x, "formatHsl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFormatRgb(value: () => String): Self = StObject.set(x, "formatRgb", js.Any.fromFunction0(value))
+      inline def setFormatRgb(value: () => String): Self = StObject.set(x, "formatRgb", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
+      inline def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
     }
   }
   

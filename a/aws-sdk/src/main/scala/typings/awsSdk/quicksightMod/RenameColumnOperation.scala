@@ -18,19 +18,15 @@ trait RenameColumnOperation extends StObject {
 }
 object RenameColumnOperation {
   
-  @scala.inline
-  def apply(ColumnName: ColumnName, NewColumnName: ColumnName): RenameColumnOperation = {
+  inline def apply(ColumnName: ColumnName, NewColumnName: ColumnName): RenameColumnOperation = {
     val __obj = js.Dynamic.literal(ColumnName = ColumnName.asInstanceOf[js.Any], NewColumnName = NewColumnName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameColumnOperation]
   }
   
-  @scala.inline
-  implicit class RenameColumnOperationMutableBuilder[Self <: RenameColumnOperation] (val x: Self) extends AnyVal {
+  extension [Self <: RenameColumnOperation](x: Self) {
     
-    @scala.inline
-    def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewColumnName(value: ColumnName): Self = StObject.set(x, "NewColumnName", value.asInstanceOf[js.Any])
+    inline def setNewColumnName(value: ColumnName): Self = StObject.set(x, "NewColumnName", value.asInstanceOf[js.Any])
   }
 }

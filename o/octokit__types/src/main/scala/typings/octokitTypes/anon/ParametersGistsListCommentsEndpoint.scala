@@ -18,8 +18,7 @@ trait ParametersGistsListCommentsEndpoint extends StObject {
 }
 object ParametersGistsListCommentsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GistsListCommentsEndpoint,
     request: GistsListCommentsRequestOptions,
     response: OctokitResponse[GistsListCommentsResponseData]
@@ -28,16 +27,12 @@ object ParametersGistsListCommentsEndpoint {
     __obj.asInstanceOf[ParametersGistsListCommentsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGistsListCommentsEndpointMutableBuilder[Self <: ParametersGistsListCommentsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGistsListCommentsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GistsListCommentsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GistsListCommentsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GistsListCommentsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GistsListCommentsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GistsListCommentsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GistsListCommentsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

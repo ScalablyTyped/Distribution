@@ -33,10 +33,8 @@ object Response {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def error(): typings.tabris.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.tabris.Response]
+  inline def error(): typings.tabris.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.tabris.Response]
   
   /* static member */
-  @scala.inline
-  def redirect(url: String, status: Double): typings.tabris.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.Response]
+  inline def redirect(url: String, status: Double): typings.tabris.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.Response]
 }

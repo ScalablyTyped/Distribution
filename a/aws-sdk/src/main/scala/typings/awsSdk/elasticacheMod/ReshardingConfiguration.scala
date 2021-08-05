@@ -18,28 +18,21 @@ trait ReshardingConfiguration extends StObject {
 }
 object ReshardingConfiguration {
   
-  @scala.inline
-  def apply(): ReshardingConfiguration = {
+  inline def apply(): ReshardingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReshardingConfiguration]
   }
   
-  @scala.inline
-  implicit class ReshardingConfigurationMutableBuilder[Self <: ReshardingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ReshardingConfiguration](x: Self) {
     
-    @scala.inline
-    def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
+    inline def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
+    inline def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
-    @scala.inline
-    def setPreferredAvailabilityZones(value: AvailabilityZonesList): Self = StObject.set(x, "PreferredAvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setPreferredAvailabilityZones(value: AvailabilityZonesList): Self = StObject.set(x, "PreferredAvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredAvailabilityZonesUndefined: Self = StObject.set(x, "PreferredAvailabilityZones", js.undefined)
+    inline def setPreferredAvailabilityZonesUndefined: Self = StObject.set(x, "PreferredAvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setPreferredAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "PreferredAvailabilityZones", js.Array(value :_*))
+    inline def setPreferredAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "PreferredAvailabilityZones", js.Array(value :_*))
   }
 }

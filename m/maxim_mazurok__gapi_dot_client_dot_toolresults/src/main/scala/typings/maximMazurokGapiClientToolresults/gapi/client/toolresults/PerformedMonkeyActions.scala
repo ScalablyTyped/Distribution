@@ -11,19 +11,15 @@ trait PerformedMonkeyActions extends StObject {
 }
 object PerformedMonkeyActions {
   
-  @scala.inline
-  def apply(): PerformedMonkeyActions = {
+  inline def apply(): PerformedMonkeyActions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformedMonkeyActions]
   }
   
-  @scala.inline
-  implicit class PerformedMonkeyActionsMutableBuilder[Self <: PerformedMonkeyActions] (val x: Self) extends AnyVal {
+  extension [Self <: PerformedMonkeyActions](x: Self) {
     
-    @scala.inline
-    def setTotalActions(value: Double): Self = StObject.set(x, "totalActions", value.asInstanceOf[js.Any])
+    inline def setTotalActions(value: Double): Self = StObject.set(x, "totalActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalActionsUndefined: Self = StObject.set(x, "totalActions", js.undefined)
+    inline def setTotalActionsUndefined: Self = StObject.set(x, "totalActions", js.undefined)
   }
 }

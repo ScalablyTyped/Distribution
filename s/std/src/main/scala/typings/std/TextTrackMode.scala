@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextTrackMode extends StObject
 object TextTrackMode {
   
-  @scala.inline
-  def disabled: typings.std.stdStrings.disabled = "disabled".asInstanceOf[typings.std.stdStrings.disabled]
+  inline def disabled: typings.std.stdStrings.disabled = "disabled".asInstanceOf[typings.std.stdStrings.disabled]
   
-  @scala.inline
-  def hidden: typings.std.stdStrings.hidden = "hidden".asInstanceOf[typings.std.stdStrings.hidden]
+  inline def hidden: typings.std.stdStrings.hidden = "hidden".asInstanceOf[typings.std.stdStrings.hidden]
   
-  @scala.inline
-  def showing: typings.std.stdStrings.showing = "showing".asInstanceOf[typings.std.stdStrings.showing]
+  inline def showing: typings.std.stdStrings.showing = "showing".asInstanceOf[typings.std.stdStrings.showing]
 }

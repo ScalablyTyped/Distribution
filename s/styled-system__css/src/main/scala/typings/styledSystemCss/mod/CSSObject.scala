@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with CSSPseudosForCSSObject
 object CSSObject {
   
-  @scala.inline
-  def apply(): CSSObject = {
+  inline def apply(): CSSObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSObject]
   }

@@ -17,25 +17,19 @@ trait IdleState
 }
 object IdleState {
   
-  @scala.inline
-  def apply(shouldFlush: Boolean): IdleState = {
+  inline def apply(shouldFlush: Boolean): IdleState = {
     val __obj = js.Dynamic.literal(phase = "IDLE", shouldFlush = shouldFlush.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdleState]
   }
   
-  @scala.inline
-  implicit class IdleStateMutableBuilder[Self <: IdleState] (val x: Self) extends AnyVal {
+  extension [Self <: IdleState](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+    inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
-    @scala.inline
-    def setPhase(value: IDLE): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: IDLE): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldFlush(value: Boolean): Self = StObject.set(x, "shouldFlush", value.asInstanceOf[js.Any])
+    inline def setShouldFlush(value: Boolean): Self = StObject.set(x, "shouldFlush", value.asInstanceOf[js.Any])
   }
 }

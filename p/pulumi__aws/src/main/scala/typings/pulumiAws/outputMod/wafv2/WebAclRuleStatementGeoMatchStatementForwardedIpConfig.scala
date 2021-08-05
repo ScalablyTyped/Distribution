@@ -18,19 +18,15 @@ trait WebAclRuleStatementGeoMatchStatementForwardedIpConfig extends StObject {
 }
 object WebAclRuleStatementGeoMatchStatementForwardedIpConfig {
   
-  @scala.inline
-  def apply(fallbackBehavior: String, headerName: String): WebAclRuleStatementGeoMatchStatementForwardedIpConfig = {
+  inline def apply(fallbackBehavior: String, headerName: String): WebAclRuleStatementGeoMatchStatementForwardedIpConfig = {
     val __obj = js.Dynamic.literal(fallbackBehavior = fallbackBehavior.asInstanceOf[js.Any], headerName = headerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementGeoMatchStatementForwardedIpConfig]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementGeoMatchStatementForwardedIpConfigMutableBuilder[Self <: WebAclRuleStatementGeoMatchStatementForwardedIpConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementGeoMatchStatementForwardedIpConfig](x: Self) {
     
-    @scala.inline
-    def setFallbackBehavior(value: String): Self = StObject.set(x, "fallbackBehavior", value.asInstanceOf[js.Any])
+    inline def setFallbackBehavior(value: String): Self = StObject.set(x, "fallbackBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
   }
 }

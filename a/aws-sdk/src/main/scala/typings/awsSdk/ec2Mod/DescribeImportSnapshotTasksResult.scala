@@ -18,28 +18,21 @@ trait DescribeImportSnapshotTasksResult extends StObject {
 }
 object DescribeImportSnapshotTasksResult {
   
-  @scala.inline
-  def apply(): DescribeImportSnapshotTasksResult = {
+  inline def apply(): DescribeImportSnapshotTasksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeImportSnapshotTasksResult]
   }
   
-  @scala.inline
-  implicit class DescribeImportSnapshotTasksResultMutableBuilder[Self <: DescribeImportSnapshotTasksResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImportSnapshotTasksResult](x: Self) {
     
-    @scala.inline
-    def setImportSnapshotTasks(value: ImportSnapshotTaskList): Self = StObject.set(x, "ImportSnapshotTasks", value.asInstanceOf[js.Any])
+    inline def setImportSnapshotTasks(value: ImportSnapshotTaskList): Self = StObject.set(x, "ImportSnapshotTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportSnapshotTasksUndefined: Self = StObject.set(x, "ImportSnapshotTasks", js.undefined)
+    inline def setImportSnapshotTasksUndefined: Self = StObject.set(x, "ImportSnapshotTasks", js.undefined)
     
-    @scala.inline
-    def setImportSnapshotTasksVarargs(value: ImportSnapshotTask*): Self = StObject.set(x, "ImportSnapshotTasks", js.Array(value :_*))
+    inline def setImportSnapshotTasksVarargs(value: ImportSnapshotTask*): Self = StObject.set(x, "ImportSnapshotTasks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLMediaError")
 @js.native
-class HTMLMediaError protected ()
+/* private */ class HTMLMediaError ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLMediaError {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLMediaError_typekey")
   var MSHTMLDotHTMLMediaError_typekey: typings.activexMshtml.MSHTML.HTMLMediaError = js.native
   

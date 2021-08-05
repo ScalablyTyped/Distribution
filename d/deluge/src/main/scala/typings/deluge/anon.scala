@@ -14,26 +14,20 @@ object anon {
   }
   object State {
     
-    @scala.inline
-    def apply(state: js.Array[js.Tuple2[String, Double]], tracker_host: js.Array[js.Tuple2[String, Double]]): State = {
+    inline def apply(state: js.Array[js.Tuple2[String, Double]], tracker_host: js.Array[js.Tuple2[String, Double]]): State = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], tracker_host = tracker_host.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setState(value: js.Array[js.Tuple2[String, Double]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Array[js.Tuple2[String, Double]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "state", js.Array(value :_*))
+      inline def setStateVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "state", js.Array(value :_*))
       
-      @scala.inline
-      def setTracker_host(value: js.Array[js.Tuple2[String, Double]]): Self = StObject.set(x, "tracker_host", value.asInstanceOf[js.Any])
+      inline def setTracker_host(value: js.Array[js.Tuple2[String, Double]]): Self = StObject.set(x, "tracker_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracker_hostVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "tracker_host", js.Array(value :_*))
+      inline def setTracker_hostVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "tracker_host", js.Array(value :_*))
     }
   }
 }

@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(opts: Data): BasicScroll = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[BasicScroll]
+  inline def create(opts: Data): BasicScroll = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[BasicScroll]
   
   type AnimatedType = Double | String | Null
   
@@ -61,8 +60,7 @@ object mod {
   }
   object BasicScroll {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calculate: () => Unit,
       destroy: () => Unit,
       getData: () => Data,
@@ -75,29 +73,21 @@ object mod {
       __obj.asInstanceOf[BasicScroll]
     }
     
-    @scala.inline
-    implicit class BasicScrollMutableBuilder[Self <: BasicScroll] (val x: Self) extends AnyVal {
+    extension [Self <: BasicScroll](x: Self) {
       
-      @scala.inline
-      def setCalculate(value: () => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction0(value))
+      inline def setCalculate(value: () => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetData(value: () => Data): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => Data): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+      inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => Props): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Props): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -149,65 +139,46 @@ object mod {
   }
   object Data {
     
-    @scala.inline
-    def apply(): Data = {
+    inline def apply(): Data = {
       val __obj = js.Dynamic.literal(from = null, to = null)
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setDirect(value: Boolean | Element): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
+      inline def setDirect(value: Boolean | Element): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectUndefined: Self = StObject.set(x, "direct", js.undefined)
+      inline def setDirectUndefined: Self = StObject.set(x, "direct", js.undefined)
       
-      @scala.inline
-      def setElem(value: Element): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
+      inline def setElem(value: Element): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElemNull: Self = StObject.set(x, "elem", null)
+      inline def setElemNull: Self = StObject.set(x, "elem", null)
       
-      @scala.inline
-      def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
+      inline def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
       
-      @scala.inline
-      def setFrom(value: AnimatedType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: AnimatedType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromNull: Self = StObject.set(x, "from", null)
+      inline def setFromNull: Self = StObject.set(x, "from", null)
       
-      @scala.inline
-      def setInside(value: (/* instance */ BasicScroll, /* percentage */ Double, /* props */ Props) => Unit): Self = StObject.set(x, "inside", js.Any.fromFunction3(value))
+      inline def setInside(value: (/* instance */ BasicScroll, /* percentage */ Double, /* props */ Props) => Unit): Self = StObject.set(x, "inside", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInsideUndefined: Self = StObject.set(x, "inside", js.undefined)
+      inline def setInsideUndefined: Self = StObject.set(x, "inside", js.undefined)
       
-      @scala.inline
-      def setOutside(value: (/* instance */ BasicScroll, /* percentage */ Double, /* props */ Props) => Unit): Self = StObject.set(x, "outside", js.Any.fromFunction3(value))
+      inline def setOutside(value: (/* instance */ BasicScroll, /* percentage */ Double, /* props */ Props) => Unit): Self = StObject.set(x, "outside", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOutsideUndefined: Self = StObject.set(x, "outside", js.undefined)
+      inline def setOutsideUndefined: Self = StObject.set(x, "outside", js.undefined)
       
-      @scala.inline
-      def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setTo(value: AnimatedType): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: AnimatedType): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToNull: Self = StObject.set(x, "to", null)
+      inline def setToNull: Self = StObject.set(x, "to", null)
       
-      @scala.inline
-      def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+      inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     }
   }
   
@@ -247,98 +218,67 @@ object mod {
   trait KnownTimings extends StObject
   object KnownTimings {
     
-    @scala.inline
-    def backIn: typings.basicscroll.basicscrollStrings.backIn = "backIn".asInstanceOf[typings.basicscroll.basicscrollStrings.backIn]
+    inline def backIn: typings.basicscroll.basicscrollStrings.backIn = "backIn".asInstanceOf[typings.basicscroll.basicscrollStrings.backIn]
     
-    @scala.inline
-    def backInOut: typings.basicscroll.basicscrollStrings.backInOut = "backInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.backInOut]
+    inline def backInOut: typings.basicscroll.basicscrollStrings.backInOut = "backInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.backInOut]
     
-    @scala.inline
-    def backOut: typings.basicscroll.basicscrollStrings.backOut = "backOut".asInstanceOf[typings.basicscroll.basicscrollStrings.backOut]
+    inline def backOut: typings.basicscroll.basicscrollStrings.backOut = "backOut".asInstanceOf[typings.basicscroll.basicscrollStrings.backOut]
     
-    @scala.inline
-    def bounceIn: typings.basicscroll.basicscrollStrings.bounceIn = "bounceIn".asInstanceOf[typings.basicscroll.basicscrollStrings.bounceIn]
+    inline def bounceIn: typings.basicscroll.basicscrollStrings.bounceIn = "bounceIn".asInstanceOf[typings.basicscroll.basicscrollStrings.bounceIn]
     
-    @scala.inline
-    def bounceInOut: typings.basicscroll.basicscrollStrings.bounceInOut = "bounceInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.bounceInOut]
+    inline def bounceInOut: typings.basicscroll.basicscrollStrings.bounceInOut = "bounceInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.bounceInOut]
     
-    @scala.inline
-    def bounceOut: typings.basicscroll.basicscrollStrings.bounceOut = "bounceOut".asInstanceOf[typings.basicscroll.basicscrollStrings.bounceOut]
+    inline def bounceOut: typings.basicscroll.basicscrollStrings.bounceOut = "bounceOut".asInstanceOf[typings.basicscroll.basicscrollStrings.bounceOut]
     
-    @scala.inline
-    def circIn: typings.basicscroll.basicscrollStrings.circIn = "circIn".asInstanceOf[typings.basicscroll.basicscrollStrings.circIn]
+    inline def circIn: typings.basicscroll.basicscrollStrings.circIn = "circIn".asInstanceOf[typings.basicscroll.basicscrollStrings.circIn]
     
-    @scala.inline
-    def circInOut: typings.basicscroll.basicscrollStrings.circInOut = "circInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.circInOut]
+    inline def circInOut: typings.basicscroll.basicscrollStrings.circInOut = "circInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.circInOut]
     
-    @scala.inline
-    def circOut: typings.basicscroll.basicscrollStrings.circOut = "circOut".asInstanceOf[typings.basicscroll.basicscrollStrings.circOut]
+    inline def circOut: typings.basicscroll.basicscrollStrings.circOut = "circOut".asInstanceOf[typings.basicscroll.basicscrollStrings.circOut]
     
-    @scala.inline
-    def cubicIn: typings.basicscroll.basicscrollStrings.cubicIn = "cubicIn".asInstanceOf[typings.basicscroll.basicscrollStrings.cubicIn]
+    inline def cubicIn: typings.basicscroll.basicscrollStrings.cubicIn = "cubicIn".asInstanceOf[typings.basicscroll.basicscrollStrings.cubicIn]
     
-    @scala.inline
-    def cubicInOut: typings.basicscroll.basicscrollStrings.cubicInOut = "cubicInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.cubicInOut]
+    inline def cubicInOut: typings.basicscroll.basicscrollStrings.cubicInOut = "cubicInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.cubicInOut]
     
-    @scala.inline
-    def cubicOut: typings.basicscroll.basicscrollStrings.cubicOut = "cubicOut".asInstanceOf[typings.basicscroll.basicscrollStrings.cubicOut]
+    inline def cubicOut: typings.basicscroll.basicscrollStrings.cubicOut = "cubicOut".asInstanceOf[typings.basicscroll.basicscrollStrings.cubicOut]
     
-    @scala.inline
-    def elasticIn: typings.basicscroll.basicscrollStrings.elasticIn = "elasticIn".asInstanceOf[typings.basicscroll.basicscrollStrings.elasticIn]
+    inline def elasticIn: typings.basicscroll.basicscrollStrings.elasticIn = "elasticIn".asInstanceOf[typings.basicscroll.basicscrollStrings.elasticIn]
     
-    @scala.inline
-    def elasticInOut: typings.basicscroll.basicscrollStrings.elasticInOut = "elasticInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.elasticInOut]
+    inline def elasticInOut: typings.basicscroll.basicscrollStrings.elasticInOut = "elasticInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.elasticInOut]
     
-    @scala.inline
-    def elasticOut: typings.basicscroll.basicscrollStrings.elasticOut = "elasticOut".asInstanceOf[typings.basicscroll.basicscrollStrings.elasticOut]
+    inline def elasticOut: typings.basicscroll.basicscrollStrings.elasticOut = "elasticOut".asInstanceOf[typings.basicscroll.basicscrollStrings.elasticOut]
     
-    @scala.inline
-    def expoIn: typings.basicscroll.basicscrollStrings.expoIn = "expoIn".asInstanceOf[typings.basicscroll.basicscrollStrings.expoIn]
+    inline def expoIn: typings.basicscroll.basicscrollStrings.expoIn = "expoIn".asInstanceOf[typings.basicscroll.basicscrollStrings.expoIn]
     
-    @scala.inline
-    def expoInOut: typings.basicscroll.basicscrollStrings.expoInOut = "expoInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.expoInOut]
+    inline def expoInOut: typings.basicscroll.basicscrollStrings.expoInOut = "expoInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.expoInOut]
     
-    @scala.inline
-    def expoOut: typings.basicscroll.basicscrollStrings.expoOut = "expoOut".asInstanceOf[typings.basicscroll.basicscrollStrings.expoOut]
+    inline def expoOut: typings.basicscroll.basicscrollStrings.expoOut = "expoOut".asInstanceOf[typings.basicscroll.basicscrollStrings.expoOut]
     
-    @scala.inline
-    def linear: typings.basicscroll.basicscrollStrings.linear = "linear".asInstanceOf[typings.basicscroll.basicscrollStrings.linear]
+    inline def linear: typings.basicscroll.basicscrollStrings.linear = "linear".asInstanceOf[typings.basicscroll.basicscrollStrings.linear]
     
-    @scala.inline
-    def quadIn: typings.basicscroll.basicscrollStrings.quadIn = "quadIn".asInstanceOf[typings.basicscroll.basicscrollStrings.quadIn]
+    inline def quadIn: typings.basicscroll.basicscrollStrings.quadIn = "quadIn".asInstanceOf[typings.basicscroll.basicscrollStrings.quadIn]
     
-    @scala.inline
-    def quadInOut: typings.basicscroll.basicscrollStrings.quadInOut = "quadInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quadInOut]
+    inline def quadInOut: typings.basicscroll.basicscrollStrings.quadInOut = "quadInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quadInOut]
     
-    @scala.inline
-    def quadOut: typings.basicscroll.basicscrollStrings.quadOut = "quadOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quadOut]
+    inline def quadOut: typings.basicscroll.basicscrollStrings.quadOut = "quadOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quadOut]
     
-    @scala.inline
-    def quartIn: typings.basicscroll.basicscrollStrings.quartIn = "quartIn".asInstanceOf[typings.basicscroll.basicscrollStrings.quartIn]
+    inline def quartIn: typings.basicscroll.basicscrollStrings.quartIn = "quartIn".asInstanceOf[typings.basicscroll.basicscrollStrings.quartIn]
     
-    @scala.inline
-    def quartInOut: typings.basicscroll.basicscrollStrings.quartInOut = "quartInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quartInOut]
+    inline def quartInOut: typings.basicscroll.basicscrollStrings.quartInOut = "quartInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quartInOut]
     
-    @scala.inline
-    def quartOut: typings.basicscroll.basicscrollStrings.quartOut = "quartOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quartOut]
+    inline def quartOut: typings.basicscroll.basicscrollStrings.quartOut = "quartOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quartOut]
     
-    @scala.inline
-    def quintIn: typings.basicscroll.basicscrollStrings.quintIn = "quintIn".asInstanceOf[typings.basicscroll.basicscrollStrings.quintIn]
+    inline def quintIn: typings.basicscroll.basicscrollStrings.quintIn = "quintIn".asInstanceOf[typings.basicscroll.basicscrollStrings.quintIn]
     
-    @scala.inline
-    def quintInOut: typings.basicscroll.basicscrollStrings.quintInOut = "quintInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quintInOut]
+    inline def quintInOut: typings.basicscroll.basicscrollStrings.quintInOut = "quintInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quintInOut]
     
-    @scala.inline
-    def quintOut: typings.basicscroll.basicscrollStrings.quintOut = "quintOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quintOut]
+    inline def quintOut: typings.basicscroll.basicscrollStrings.quintOut = "quintOut".asInstanceOf[typings.basicscroll.basicscrollStrings.quintOut]
     
-    @scala.inline
-    def sineIn: typings.basicscroll.basicscrollStrings.sineIn = "sineIn".asInstanceOf[typings.basicscroll.basicscrollStrings.sineIn]
+    inline def sineIn: typings.basicscroll.basicscrollStrings.sineIn = "sineIn".asInstanceOf[typings.basicscroll.basicscrollStrings.sineIn]
     
-    @scala.inline
-    def sineInOut: typings.basicscroll.basicscrollStrings.sineInOut = "sineInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.sineInOut]
+    inline def sineInOut: typings.basicscroll.basicscrollStrings.sineInOut = "sineInOut".asInstanceOf[typings.basicscroll.basicscrollStrings.sineInOut]
     
-    @scala.inline
-    def sineOut: typings.basicscroll.basicscrollStrings.sineOut = "sineOut".asInstanceOf[typings.basicscroll.basicscrollStrings.sineOut]
+    inline def sineOut: typings.basicscroll.basicscrollStrings.sineOut = "sineOut".asInstanceOf[typings.basicscroll.basicscrollStrings.sineOut]
   }
   
   type Props = StringDictionary[From]

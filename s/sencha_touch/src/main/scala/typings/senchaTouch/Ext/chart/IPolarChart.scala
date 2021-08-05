@@ -37,49 +37,35 @@ trait IPolarChart
 }
 object IPolarChart {
   
-  @scala.inline
-  def apply(): IPolarChart = {
+  inline def apply(): IPolarChart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPolarChart]
   }
   
-  @scala.inline
-  implicit class IPolarChartMutableBuilder[Self <: IPolarChart] (val x: Self) extends AnyVal {
+  extension [Self <: IPolarChart](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Array): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Array): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setGetCenter(value: () => Array): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
+    inline def setGetCenter(value: () => Array): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCenterUndefined: Self = StObject.set(x, "getCenter", js.undefined)
+    inline def setGetCenterUndefined: Self = StObject.set(x, "getCenter", js.undefined)
     
-    @scala.inline
-    def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
+    inline def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRadiusUndefined: Self = StObject.set(x, "getRadius", js.undefined)
+    inline def setGetRadiusUndefined: Self = StObject.set(x, "getRadius", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
+    inline def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCenterUndefined: Self = StObject.set(x, "setCenter", js.undefined)
+    inline def setSetCenterUndefined: Self = StObject.set(x, "setCenter", js.undefined)
     
-    @scala.inline
-    def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
+    inline def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRadiusUndefined: Self = StObject.set(x, "setRadius", js.undefined)
+    inline def setSetRadiusUndefined: Self = StObject.set(x, "setRadius", js.undefined)
   }
 }

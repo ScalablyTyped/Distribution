@@ -11,16 +11,13 @@ trait PickImplzIndex extends StObject {
 }
 object PickImplzIndex {
   
-  @scala.inline
-  def apply(zIndex: Double): PickImplzIndex = {
+  inline def apply(zIndex: Double): PickImplzIndex = {
     val __obj = js.Dynamic.literal(zIndex = zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplzIndex]
   }
   
-  @scala.inline
-  implicit class PickImplzIndexMutableBuilder[Self <: PickImplzIndex] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplzIndex](x: Self) {
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
   }
 }

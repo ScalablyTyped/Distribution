@@ -13,16 +13,13 @@ trait QPathSeparator extends StObject {
 }
 object QPathSeparator {
   
-  @scala.inline
-  def apply(qPathSeparator: String): QPathSeparator = {
+  inline def apply(qPathSeparator: String): QPathSeparator = {
     val __obj = js.Dynamic.literal(qPathSeparator = qPathSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[QPathSeparator]
   }
   
-  @scala.inline
-  implicit class QPathSeparatorMutableBuilder[Self <: QPathSeparator] (val x: Self) extends AnyVal {
+  extension [Self <: QPathSeparator](x: Self) {
     
-    @scala.inline
-    def setQPathSeparator(value: String): Self = StObject.set(x, "qPathSeparator", value.asInstanceOf[js.Any])
+    inline def setQPathSeparator(value: String): Self = StObject.set(x, "qPathSeparator", value.asInstanceOf[js.Any])
   }
 }

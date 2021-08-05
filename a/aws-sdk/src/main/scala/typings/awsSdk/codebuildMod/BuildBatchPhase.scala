@@ -38,52 +38,37 @@ trait BuildBatchPhase extends StObject {
 }
 object BuildBatchPhase {
   
-  @scala.inline
-  def apply(): BuildBatchPhase = {
+  inline def apply(): BuildBatchPhase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBatchPhase]
   }
   
-  @scala.inline
-  implicit class BuildBatchPhaseMutableBuilder[Self <: BuildBatchPhase] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBatchPhase](x: Self) {
     
-    @scala.inline
-    def setContexts(value: PhaseContexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setContexts(value: PhaseContexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+    inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    @scala.inline
-    def setContextsVarargs(value: PhaseContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: PhaseContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
-    @scala.inline
-    def setDurationInSeconds(value: WrapperLong): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: WrapperLong): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "durationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "durationInSeconds", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setPhaseStatus(value: StatusType): Self = StObject.set(x, "phaseStatus", value.asInstanceOf[js.Any])
+    inline def setPhaseStatus(value: StatusType): Self = StObject.set(x, "phaseStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseStatusUndefined: Self = StObject.set(x, "phaseStatus", js.undefined)
+    inline def setPhaseStatusUndefined: Self = StObject.set(x, "phaseStatus", js.undefined)
     
-    @scala.inline
-    def setPhaseType(value: BuildBatchPhaseType): Self = StObject.set(x, "phaseType", value.asInstanceOf[js.Any])
+    inline def setPhaseType(value: BuildBatchPhaseType): Self = StObject.set(x, "phaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseTypeUndefined: Self = StObject.set(x, "phaseType", js.undefined)
+    inline def setPhaseTypeUndefined: Self = StObject.set(x, "phaseType", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

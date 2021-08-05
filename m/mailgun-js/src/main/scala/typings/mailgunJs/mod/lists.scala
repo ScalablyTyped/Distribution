@@ -25,26 +25,20 @@ object lists {
   }
   object MemberAddMultipleData {
     
-    @scala.inline
-    def apply(members: js.Array[Address]): MemberAddMultipleData = {
+    inline def apply(members: js.Array[Address]): MemberAddMultipleData = {
       val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemberAddMultipleData]
     }
     
-    @scala.inline
-    implicit class MemberAddMultipleDataMutableBuilder[Self <: MemberAddMultipleData] (val x: Self) extends AnyVal {
+    extension [Self <: MemberAddMultipleData](x: Self) {
       
-      @scala.inline
-      def setMembers(value: js.Array[Address]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[Address]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersVarargs(value: Address*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: Address*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
   
@@ -60,29 +54,22 @@ object lists {
   }
   object MemberCreateData {
     
-    @scala.inline
-    def apply(address: String, name: String, subscribed: Boolean): MemberCreateData = {
+    inline def apply(address: String, name: String, subscribed: Boolean): MemberCreateData = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemberCreateData]
     }
     
-    @scala.inline
-    implicit class MemberCreateDataMutableBuilder[Self <: MemberCreateData] (val x: Self) extends AnyVal {
+    extension [Self <: MemberCreateData](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
+      inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
+      inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
     }
   }
   
@@ -96,26 +83,20 @@ object lists {
   }
   object MemberUpdateData {
     
-    @scala.inline
-    def apply(name: String, subscribed: Boolean): MemberUpdateData = {
+    inline def apply(name: String, subscribed: Boolean): MemberUpdateData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemberUpdateData]
     }
     
-    @scala.inline
-    implicit class MemberUpdateDataMutableBuilder[Self <: MemberUpdateData] (val x: Self) extends AnyVal {
+    extension [Self <: MemberUpdateData](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
+      inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
+      inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
     }
   }
   

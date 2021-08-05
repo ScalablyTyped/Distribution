@@ -11,8 +11,7 @@ object floatingPanelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def theme(FloatingPanelsProps: FloatingPanelsProps): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")(FloatingPanelsProps.asInstanceOf[js.Any]).asInstanceOf[ThemeInterface]
+  inline def theme(FloatingPanelsProps: FloatingPanelsProps): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")(FloatingPanelsProps.asInstanceOf[js.Any]).asInstanceOf[ThemeInterface]
   
   trait FloatingPanelsProps
     extends StObject
@@ -22,20 +21,16 @@ object floatingPanelsMod {
   }
   object FloatingPanelsProps {
     
-    @scala.inline
-    def apply(): FloatingPanelsProps = {
+    inline def apply(): FloatingPanelsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FloatingPanelsProps]
     }
     
-    @scala.inline
-    implicit class FloatingPanelsPropsMutableBuilder[Self <: FloatingPanelsProps] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingPanelsProps](x: Self) {
       
-      @scala.inline
-      def setMainColor(value: String): Self = StObject.set(x, "mainColor", value.asInstanceOf[js.Any])
+      inline def setMainColor(value: String): Self = StObject.set(x, "mainColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainColorUndefined: Self = StObject.set(x, "mainColor", js.undefined)
+      inline def setMainColorUndefined: Self = StObject.set(x, "mainColor", js.undefined)
     }
   }
 }

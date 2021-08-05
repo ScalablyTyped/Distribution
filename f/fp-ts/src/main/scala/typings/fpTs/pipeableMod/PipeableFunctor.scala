@@ -13,8 +13,7 @@ trait PipeableFunctor[F] extends StObject {
 }
 object PipeableFunctor {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     map: js.Function1[js.Any, js.Any] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
@@ -24,11 +23,9 @@ object PipeableFunctor {
     __obj.asInstanceOf[PipeableFunctor[F]]
   }
   
-  @scala.inline
-  implicit class PipeableFunctorMutableBuilder[Self <: PipeableFunctor[?], F] (val x: Self & PipeableFunctor[F]) extends AnyVal {
+  extension [Self <: PipeableFunctor[?], F](x: Self & PipeableFunctor[F]) {
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: js.Function1[js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any

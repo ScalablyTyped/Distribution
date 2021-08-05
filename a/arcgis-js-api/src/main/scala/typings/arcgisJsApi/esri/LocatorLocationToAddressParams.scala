@@ -26,8 +26,7 @@ trait LocatorLocationToAddressParams
 }
 object LocatorLocationToAddressParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     location: Point,
@@ -37,16 +36,12 @@ object LocatorLocationToAddressParams {
     __obj.asInstanceOf[LocatorLocationToAddressParams]
   }
   
-  @scala.inline
-  implicit class LocatorLocationToAddressParamsMutableBuilder[Self <: LocatorLocationToAddressParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocatorLocationToAddressParams](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
   }
 }

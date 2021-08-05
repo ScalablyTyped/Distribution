@@ -13,16 +13,13 @@ trait DescribeSecurityPolicyResponse extends StObject {
 }
 object DescribeSecurityPolicyResponse {
   
-  @scala.inline
-  def apply(SecurityPolicy: DescribedSecurityPolicy): DescribeSecurityPolicyResponse = {
+  inline def apply(SecurityPolicy: DescribedSecurityPolicy): DescribeSecurityPolicyResponse = {
     val __obj = js.Dynamic.literal(SecurityPolicy = SecurityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecurityPolicyResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSecurityPolicyResponseMutableBuilder[Self <: DescribeSecurityPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecurityPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setSecurityPolicy(value: DescribedSecurityPolicy): Self = StObject.set(x, "SecurityPolicy", value.asInstanceOf[js.Any])
+    inline def setSecurityPolicy(value: DescribedSecurityPolicy): Self = StObject.set(x, "SecurityPolicy", value.asInstanceOf[js.Any])
   }
 }

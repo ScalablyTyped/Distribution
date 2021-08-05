@@ -29,37 +29,27 @@ trait IonSelectPopover extends StObject {
 }
 object IonSelectPopover {
   
-  @scala.inline
-  def apply(options: js.Array[SelectPopoverOption]): IonSelectPopover = {
+  inline def apply(options: js.Array[SelectPopoverOption]): IonSelectPopover = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSelectPopover]
   }
   
-  @scala.inline
-  implicit class IonSelectPopoverMutableBuilder[Self <: IonSelectPopover] (val x: Self) extends AnyVal {
+  extension [Self <: IonSelectPopover](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[SelectPopoverOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[SelectPopoverOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: SelectPopoverOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: SelectPopoverOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setSubHeader(value: String): Self = StObject.set(x, "subHeader", value.asInstanceOf[js.Any])
+    inline def setSubHeader(value: String): Self = StObject.set(x, "subHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubHeaderUndefined: Self = StObject.set(x, "subHeader", js.undefined)
+    inline def setSubHeaderUndefined: Self = StObject.set(x, "subHeader", js.undefined)
   }
 }

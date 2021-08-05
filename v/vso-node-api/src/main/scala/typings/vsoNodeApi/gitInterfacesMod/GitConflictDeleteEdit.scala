@@ -18,8 +18,7 @@ trait GitConflictDeleteEdit
 }
 object GitConflictDeleteEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     baseBlob: GitBlobRef,
     conflictId: Double,
@@ -41,16 +40,12 @@ object GitConflictDeleteEdit {
     __obj.asInstanceOf[GitConflictDeleteEdit]
   }
   
-  @scala.inline
-  implicit class GitConflictDeleteEditMutableBuilder[Self <: GitConflictDeleteEdit] (val x: Self) extends AnyVal {
+  extension [Self <: GitConflictDeleteEdit](x: Self) {
     
-    @scala.inline
-    def setBaseBlob(value: GitBlobRef): Self = StObject.set(x, "baseBlob", value.asInstanceOf[js.Any])
+    inline def setBaseBlob(value: GitBlobRef): Self = StObject.set(x, "baseBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: GitResolutionPickOneAction): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: GitResolutionPickOneAction): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBlob(value: GitBlobRef): Self = StObject.set(x, "targetBlob", value.asInstanceOf[js.Any])
+    inline def setTargetBlob(value: GitBlobRef): Self = StObject.set(x, "targetBlob", value.asInstanceOf[js.Any])
   }
 }

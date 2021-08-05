@@ -38,40 +38,29 @@ trait SearchUsersEndpoint extends StObject {
 }
 object SearchUsersEndpoint {
   
-  @scala.inline
-  def apply(q: String): SearchUsersEndpoint = {
+  inline def apply(q: String): SearchUsersEndpoint = {
     val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUsersEndpoint]
   }
   
-  @scala.inline
-  implicit class SearchUsersEndpointMutableBuilder[Self <: SearchUsersEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: SearchUsersEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: followers | repositories | joined): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: followers | repositories | joined): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

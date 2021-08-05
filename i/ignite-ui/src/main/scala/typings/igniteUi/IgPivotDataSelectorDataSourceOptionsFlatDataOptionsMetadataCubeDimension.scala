@@ -33,38 +33,29 @@ trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension
 }
 object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension {
   
-  @scala.inline
-  def apply(): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension = {
+  inline def apply(): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension]
   }
   
-  @scala.inline
-  implicit class IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionMutableBuilder[Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setHierarchies(
+    inline def setHierarchies(
       value: js.Array[
           IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
         ]
     ): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
+    inline def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
     
-    @scala.inline
-    def setHierarchiesVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie*): Self = StObject.set(x, "hierarchies", js.Array(value :_*))
+    inline def setHierarchiesVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie*): Self = StObject.set(x, "hierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

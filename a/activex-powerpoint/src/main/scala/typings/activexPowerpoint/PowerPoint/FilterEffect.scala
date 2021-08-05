@@ -11,7 +11,7 @@ trait FilterEffect extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.FilterEffect_typekey")
+  /* private */ @JSName("PowerPoint.FilterEffect_typekey")
   var PowerPointDotFilterEffect_typekey: FilterEffect
   
   var Reveal: MsoTriState
@@ -22,8 +22,7 @@ trait FilterEffect extends StObject {
 }
 object FilterEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Parent: js.Any,
     PowerPointDotFilterEffect_typekey: FilterEffect,
@@ -36,25 +35,18 @@ object FilterEffect {
     __obj.asInstanceOf[FilterEffect]
   }
   
-  @scala.inline
-  implicit class FilterEffectMutableBuilder[Self <: FilterEffect] (val x: Self) extends AnyVal {
+  extension [Self <: FilterEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotFilterEffect_typekey(value: FilterEffect): Self = StObject.set(x, "PowerPoint.FilterEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotFilterEffect_typekey(value: FilterEffect): Self = StObject.set(x, "PowerPoint.FilterEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReveal(value: MsoTriState): Self = StObject.set(x, "Reveal", value.asInstanceOf[js.Any])
+    inline def setReveal(value: MsoTriState): Self = StObject.set(x, "Reveal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtype(value: MsoAnimFilterEffectSubtype): Self = StObject.set(x, "Subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: MsoAnimFilterEffectSubtype): Self = StObject.set(x, "Subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoAnimFilterEffectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoAnimFilterEffectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

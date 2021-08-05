@@ -81,8 +81,7 @@ trait XController
 }
 object XController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     Model: XModel,
     ViewData: js.Any,
@@ -104,37 +103,26 @@ object XController {
     __obj.asInstanceOf[XController]
   }
   
-  @scala.inline
-  implicit class XControllerMutableBuilder[Self <: XController] (val x: Self) extends AnyVal {
+  extension [Self <: XController](x: Self) {
     
-    @scala.inline
-    def setAttachFrame(value: XFrame => Unit): Self = StObject.set(x, "attachFrame", js.Any.fromFunction1(value))
+    inline def setAttachFrame(value: XFrame => Unit): Self = StObject.set(x, "attachFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttachModel(value: XModel => Boolean): Self = StObject.set(x, "attachModel", js.Any.fromFunction1(value))
+    inline def setAttachModel(value: XModel => Boolean): Self = StObject.set(x, "attachModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFrame(value: () => XFrame): Self = StObject.set(x, "getFrame", js.Any.fromFunction0(value))
+    inline def setGetFrame(value: () => XFrame): Self = StObject.set(x, "getFrame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModel(value: () => XModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+    inline def setGetModel(value: () => XModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewData(value: () => js.Any): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
+    inline def setGetViewData(value: () => js.Any): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreViewData(value: js.Any => Unit): Self = StObject.set(x, "restoreViewData", js.Any.fromFunction1(value))
+    inline def setRestoreViewData(value: js.Any => Unit): Self = StObject.set(x, "restoreViewData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuspend(value: Boolean => Boolean): Self = StObject.set(x, "suspend", js.Any.fromFunction1(value))
+    inline def setSuspend(value: Boolean => Boolean): Self = StObject.set(x, "suspend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setViewData(value: js.Any): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
+    inline def setViewData(value: js.Any): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
   }
 }

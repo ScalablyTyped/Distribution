@@ -12,25 +12,19 @@ trait UpdateSubscriberOptions extends StObject {
 }
 object UpdateSubscriberOptions {
   
-  @scala.inline
-  def apply(): UpdateSubscriberOptions = {
+  inline def apply(): UpdateSubscriberOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSubscriberOptions]
   }
   
-  @scala.inline
-  implicit class UpdateSubscriberOptionsMutableBuilder[Self <: UpdateSubscriberOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSubscriberOptions](x: Self) {
     
-    @scala.inline
-    def setSubscribeChannels(value: String): Self = StObject.set(x, "SubscribeChannels", value.asInstanceOf[js.Any])
+    inline def setSubscribeChannels(value: String): Self = StObject.set(x, "SubscribeChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribeChannelsUndefined: Self = StObject.set(x, "SubscribeChannels", js.undefined)
+    inline def setSubscribeChannelsUndefined: Self = StObject.set(x, "SubscribeChannels", js.undefined)
     
-    @scala.inline
-    def setUnsubscribeChannels(value: String): Self = StObject.set(x, "UnsubscribeChannels", value.asInstanceOf[js.Any])
+    inline def setUnsubscribeChannels(value: String): Self = StObject.set(x, "UnsubscribeChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscribeChannelsUndefined: Self = StObject.set(x, "UnsubscribeChannels", js.undefined)
+    inline def setUnsubscribeChannelsUndefined: Self = StObject.set(x, "UnsubscribeChannels", js.undefined)
   }
 }

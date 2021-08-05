@@ -38,49 +38,35 @@ trait DescribeDirectConnectGatewayAssociationsRequest extends StObject {
 }
 object DescribeDirectConnectGatewayAssociationsRequest {
   
-  @scala.inline
-  def apply(): DescribeDirectConnectGatewayAssociationsRequest = {
+  inline def apply(): DescribeDirectConnectGatewayAssociationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDirectConnectGatewayAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDirectConnectGatewayAssociationsRequestMutableBuilder[Self <: DescribeDirectConnectGatewayAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDirectConnectGatewayAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setAssociatedGatewayId(value: AssociatedGatewayId): Self = StObject.set(x, "associatedGatewayId", value.asInstanceOf[js.Any])
+    inline def setAssociatedGatewayId(value: AssociatedGatewayId): Self = StObject.set(x, "associatedGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedGatewayIdUndefined: Self = StObject.set(x, "associatedGatewayId", js.undefined)
+    inline def setAssociatedGatewayIdUndefined: Self = StObject.set(x, "associatedGatewayId", js.undefined)
     
-    @scala.inline
-    def setAssociationId(value: DirectConnectGatewayAssociationId): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: DirectConnectGatewayAssociationId): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "associationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "associationId", js.undefined)
     
-    @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
+    inline def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResultSetSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultSetSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
+    inline def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
   }
 }

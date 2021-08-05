@@ -18,8 +18,7 @@ trait ProviderOverride extends StObject {
 }
 object ProviderOverride {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deprecatedBehavior: Boolean,
     deps: js.Array[(js.Tuple2[ɵDepFlags, js.Any]) | js.Any],
     flags: ɵNodeFlags,
@@ -30,25 +29,18 @@ object ProviderOverride {
     __obj.asInstanceOf[ProviderOverride]
   }
   
-  @scala.inline
-  implicit class ProviderOverrideMutableBuilder[Self <: ProviderOverride] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderOverride](x: Self) {
     
-    @scala.inline
-    def setDeprecatedBehavior(value: Boolean): Self = StObject.set(x, "deprecatedBehavior", value.asInstanceOf[js.Any])
+    inline def setDeprecatedBehavior(value: Boolean): Self = StObject.set(x, "deprecatedBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeps(value: js.Array[(js.Tuple2[ɵDepFlags, js.Any]) | js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[(js.Tuple2[ɵDepFlags, js.Any]) | js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsVarargs(value: ((js.Tuple2[ɵDepFlags, js.Any]) | js.Any)*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: ((js.Tuple2[ɵDepFlags, js.Any]) | js.Any)*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setFlags(value: ɵNodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: ɵNodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

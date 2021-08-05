@@ -15,10 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(arg: String): Result = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def apply(arg: String, where: String): Result = (^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any], where.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def apply(arg: String): Result = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def apply(arg: String, where: String): Result = (^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any], where.asInstanceOf[js.Any])).asInstanceOf[Result]
   
   @JSImport("npm-package-arg", JSImport.Namespace)
   @js.native
@@ -81,10 +79,8 @@ object mod {
     * Something like: 1.2, ^1.7.17, http://x.com/foo.tgz, git+https://github.com/user/foo, bitbucket:user/foo, file:foo.tar.gz or file:../foo/bar/. If not included then the default is latest.
     * @param where Optionally the path to resolve file paths relative to. Defaults to process.cwd()
     */
-  @scala.inline
-  def resolve(name: String, spec: String): FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult]
-  @scala.inline
-  def resolve(name: String, spec: String, where: String): FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], where.asInstanceOf[js.Any])).asInstanceOf[FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult]
+  inline def resolve(name: String, spec: String): FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult]
+  inline def resolve(name: String, spec: String, where: String): FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], where.asInstanceOf[js.Any])).asInstanceOf[FileResult | HostedGitResult | URLResult | AliasResult | RegistryResult]
   
   @js.native
   trait AliasResult extends Result {
@@ -131,27 +127,21 @@ object mod {
   }
   object HostedGit {
     
-    @scala.inline
-    def apply(domain: String, project: String, `type`: String, user: String): HostedGit = {
+    inline def apply(domain: String, project: String, `type`: String, user: String): HostedGit = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedGit]
     }
     
-    @scala.inline
-    implicit class HostedGitMutableBuilder[Self <: HostedGit] (val x: Self) extends AnyVal {
+    extension [Self <: HostedGit](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   

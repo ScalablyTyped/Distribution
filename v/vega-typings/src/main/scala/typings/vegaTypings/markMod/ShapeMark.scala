@@ -17,17 +17,14 @@ trait ShapeMark
 }
 object ShapeMark {
   
-  @scala.inline
-  def apply(): ShapeMark = {
+  inline def apply(): ShapeMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("shape")
     __obj.asInstanceOf[ShapeMark]
   }
   
-  @scala.inline
-  implicit class ShapeMarkMutableBuilder[Self <: ShapeMark] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeMark](x: Self) {
     
-    @scala.inline
-    def setType(value: shape): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: shape): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object guideMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def guideEncodeEntry(encoding: GuideEncodingEntry, model: UnitModel): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("guideEncodeEntry")(encoding.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def guideEncodeEntry(encoding: GuideEncodingEntry, model: UnitModel): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("guideEncodeEntry")(encoding.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 }

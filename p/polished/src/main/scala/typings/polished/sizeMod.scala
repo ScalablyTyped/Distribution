@@ -11,16 +11,10 @@ object sizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(height: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any]).asInstanceOf[Styles]
-  @scala.inline
-  def default(height: String, width: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  @scala.inline
-  def default(height: String, width: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  @scala.inline
-  def default(height: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any]).asInstanceOf[Styles]
-  @scala.inline
-  def default(height: Double, width: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  @scala.inline
-  def default(height: Double, width: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(height: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(height: String, width: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(height: String, width: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(height: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(height: Double, width: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(height: Double, width: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
 }

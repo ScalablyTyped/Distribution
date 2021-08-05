@@ -14,31 +14,23 @@ trait FilterItem extends StObject {
 }
 object FilterItem {
   
-  @scala.inline
-  def apply(): FilterItem = {
+  inline def apply(): FilterItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterItem]
   }
   
-  @scala.inline
-  implicit class FilterItemMutableBuilder[Self <: FilterItem] (val x: Self) extends AnyVal {
+  extension [Self <: FilterItem](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setHierarchyName(value: String): Self = StObject.set(x, "hierarchyName", value.asInstanceOf[js.Any])
+    inline def setHierarchyName(value: String): Self = StObject.set(x, "hierarchyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyNameUndefined: Self = StObject.set(x, "hierarchyName", js.undefined)
+    inline def setHierarchyNameUndefined: Self = StObject.set(x, "hierarchyName", js.undefined)
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
   }
 }

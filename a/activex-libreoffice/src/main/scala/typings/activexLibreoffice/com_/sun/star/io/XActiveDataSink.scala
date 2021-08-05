@@ -30,8 +30,7 @@ trait XActiveDataSink
 }
 object XActiveDataSink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     acquire: () => Unit,
     getInputStream: () => XInputStream,
@@ -43,16 +42,12 @@ object XActiveDataSink {
     __obj.asInstanceOf[XActiveDataSink]
   }
   
-  @scala.inline
-  implicit class XActiveDataSinkMutableBuilder[Self <: XActiveDataSink] (val x: Self) extends AnyVal {
+  extension [Self <: XActiveDataSink](x: Self) {
     
-    @scala.inline
-    def setGetInputStream(value: () => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction0(value))
+    inline def setGetInputStream(value: () => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
+    inline def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetInputStream(value: XInputStream => Unit): Self = StObject.set(x, "setInputStream", js.Any.fromFunction1(value))
+    inline def setSetInputStream(value: XInputStream => Unit): Self = StObject.set(x, "setInputStream", js.Any.fromFunction1(value))
   }
 }

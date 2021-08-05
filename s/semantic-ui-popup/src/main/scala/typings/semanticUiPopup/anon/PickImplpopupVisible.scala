@@ -11,16 +11,13 @@ trait PickImplpopupVisible extends StObject {
 }
 object PickImplpopupVisible {
   
-  @scala.inline
-  def apply(popupVisible: String): PickImplpopupVisible = {
+  inline def apply(popupVisible: String): PickImplpopupVisible = {
     val __obj = js.Dynamic.literal(popupVisible = popupVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpopupVisible]
   }
   
-  @scala.inline
-  implicit class PickImplpopupVisibleMutableBuilder[Self <: PickImplpopupVisible] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpopupVisible](x: Self) {
     
-    @scala.inline
-    def setPopupVisible(value: String): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+    inline def setPopupVisible(value: String): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
   }
 }

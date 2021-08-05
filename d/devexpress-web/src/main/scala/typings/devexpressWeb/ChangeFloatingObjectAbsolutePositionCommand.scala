@@ -12,8 +12,7 @@ trait ChangeFloatingObjectAbsolutePositionCommand
      with ChangeFloatingObjectPropertyCommandBase[FloatingObjectAbsolutePositionSettings]
 object ChangeFloatingObjectAbsolutePositionCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: FloatingObjectAbsolutePositionSettings => Boolean,
     getState: () => CommandState[FloatingObjectAbsolutePositionSettings]
   ): ChangeFloatingObjectAbsolutePositionCommand = {

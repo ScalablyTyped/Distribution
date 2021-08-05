@@ -121,157 +121,107 @@ trait IComponent
 }
 object IComponent {
   
-  @scala.inline
-  def apply(): IComponent = {
+  inline def apply(): IComponent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IComponent]
   }
   
-  @scala.inline
-  implicit class IComponentMutableBuilder[Self <: IComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IComponent](x: Self) {
     
-    @scala.inline
-    def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
+    inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
+    inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
     
-    @scala.inline
-    def setFitSurface(value: Boolean): Self = StObject.set(x, "fitSurface", value.asInstanceOf[js.Any])
+    inline def setFitSurface(value: Boolean): Self = StObject.set(x, "fitSurface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitSurfaceUndefined: Self = StObject.set(x, "fitSurface", js.undefined)
+    inline def setFitSurfaceUndefined: Self = StObject.set(x, "fitSurface", js.undefined)
     
-    @scala.inline
-    def setGetAutoSize(value: () => Boolean): Self = StObject.set(x, "getAutoSize", js.Any.fromFunction0(value))
+    inline def setGetAutoSize(value: () => Boolean): Self = StObject.set(x, "getAutoSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAutoSizeUndefined: Self = StObject.set(x, "getAutoSize", js.undefined)
+    inline def setGetAutoSizeUndefined: Self = StObject.set(x, "getAutoSize", js.undefined)
     
-    @scala.inline
-    def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+    inline def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
+    inline def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
     
-    @scala.inline
-    def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
+    inline def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
+    inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
-    @scala.inline
-    def setGetFitSurface(value: () => Boolean): Self = StObject.set(x, "getFitSurface", js.Any.fromFunction0(value))
+    inline def setGetFitSurface(value: () => Boolean): Self = StObject.set(x, "getFitSurface", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFitSurfaceUndefined: Self = StObject.set(x, "getFitSurface", js.undefined)
+    inline def setGetFitSurfaceUndefined: Self = StObject.set(x, "getFitSurface", js.undefined)
     
-    @scala.inline
-    def setGetGradients(value: () => Array): Self = StObject.set(x, "getGradients", js.Any.fromFunction0(value))
+    inline def setGetGradients(value: () => Array): Self = StObject.set(x, "getGradients", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGradientsUndefined: Self = StObject.set(x, "getGradients", js.undefined)
+    inline def setGetGradientsUndefined: Self = StObject.set(x, "getGradients", js.undefined)
     
-    @scala.inline
-    def setGetResizeHandler(value: () => js.Any): Self = StObject.set(x, "getResizeHandler", js.Any.fromFunction0(value))
+    inline def setGetResizeHandler(value: () => js.Any): Self = StObject.set(x, "getResizeHandler", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResizeHandlerUndefined: Self = StObject.set(x, "getResizeHandler", js.undefined)
+    inline def setGetResizeHandlerUndefined: Self = StObject.set(x, "getResizeHandler", js.undefined)
     
-    @scala.inline
-    def setGetSprites(value: () => js.Any): Self = StObject.set(x, "getSprites", js.Any.fromFunction0(value))
+    inline def setGetSprites(value: () => js.Any): Self = StObject.set(x, "getSprites", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSpritesUndefined: Self = StObject.set(x, "getSprites", js.undefined)
+    inline def setGetSpritesUndefined: Self = StObject.set(x, "getSprites", js.undefined)
     
-    @scala.inline
-    def setGetSurface(value: /* id */ js.UndefOr[String] => ISurface): Self = StObject.set(x, "getSurface", js.Any.fromFunction1(value))
+    inline def setGetSurface(value: /* id */ js.UndefOr[String] => ISurface): Self = StObject.set(x, "getSurface", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
+    inline def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
     
-    @scala.inline
-    def setGetViewBox(value: () => Boolean): Self = StObject.set(x, "getViewBox", js.Any.fromFunction0(value))
+    inline def setGetViewBox(value: () => Boolean): Self = StObject.set(x, "getViewBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewBoxUndefined: Self = StObject.set(x, "getViewBox", js.undefined)
+    inline def setGetViewBoxUndefined: Self = StObject.set(x, "getViewBox", js.undefined)
     
-    @scala.inline
-    def setGradients(value: Array): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
+    inline def setGradients(value: Array): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientsUndefined: Self = StObject.set(x, "gradients", js.undefined)
+    inline def setGradientsUndefined: Self = StObject.set(x, "gradients", js.undefined)
     
-    @scala.inline
-    def setOnPlaceWatermark(value: () => Unit): Self = StObject.set(x, "onPlaceWatermark", js.Any.fromFunction0(value))
+    inline def setOnPlaceWatermark(value: () => Unit): Self = StObject.set(x, "onPlaceWatermark", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPlaceWatermarkUndefined: Self = StObject.set(x, "onPlaceWatermark", js.undefined)
+    inline def setOnPlaceWatermarkUndefined: Self = StObject.set(x, "onPlaceWatermark", js.undefined)
     
-    @scala.inline
-    def setRenderFrame(value: () => Unit): Self = StObject.set(x, "renderFrame", js.Any.fromFunction0(value))
+    inline def setRenderFrame(value: () => Unit): Self = StObject.set(x, "renderFrame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
+    inline def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
     
-    @scala.inline
-    def setResizeHandler(value: js.Any): Self = StObject.set(x, "resizeHandler", value.asInstanceOf[js.Any])
+    inline def setResizeHandler(value: js.Any): Self = StObject.set(x, "resizeHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeHandlerUndefined: Self = StObject.set(x, "resizeHandler", js.undefined)
+    inline def setResizeHandlerUndefined: Self = StObject.set(x, "resizeHandler", js.undefined)
     
-    @scala.inline
-    def setSetAutoSize(value: /* autoSize */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoSize", js.Any.fromFunction1(value))
+    inline def setSetAutoSize(value: /* autoSize */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoSizeUndefined: Self = StObject.set(x, "setAutoSize", js.undefined)
+    inline def setSetAutoSizeUndefined: Self = StObject.set(x, "setAutoSize", js.undefined)
     
-    @scala.inline
-    def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
+    inline def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
+    inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
     
-    @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
+    inline def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
+    inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
-    @scala.inline
-    def setSetFitSurface(value: /* fitSurface */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFitSurface", js.Any.fromFunction1(value))
+    inline def setSetFitSurface(value: /* fitSurface */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFitSurface", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFitSurfaceUndefined: Self = StObject.set(x, "setFitSurface", js.undefined)
+    inline def setSetFitSurfaceUndefined: Self = StObject.set(x, "setFitSurface", js.undefined)
     
-    @scala.inline
-    def setSetGradients(value: /* gradients */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setGradients", js.Any.fromFunction1(value))
+    inline def setSetGradients(value: /* gradients */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setGradients", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGradientsUndefined: Self = StObject.set(x, "setGradients", js.undefined)
+    inline def setSetGradientsUndefined: Self = StObject.set(x, "setGradients", js.undefined)
     
-    @scala.inline
-    def setSetResizeHandler(value: /* resizeHandler */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setResizeHandler", js.Any.fromFunction1(value))
+    inline def setSetResizeHandler(value: /* resizeHandler */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setResizeHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetResizeHandlerUndefined: Self = StObject.set(x, "setResizeHandler", js.undefined)
+    inline def setSetResizeHandlerUndefined: Self = StObject.set(x, "setResizeHandler", js.undefined)
     
-    @scala.inline
-    def setSetSprites(value: /* sprites */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSprites", js.Any.fromFunction1(value))
+    inline def setSetSprites(value: /* sprites */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSprites", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSpritesUndefined: Self = StObject.set(x, "setSprites", js.undefined)
+    inline def setSetSpritesUndefined: Self = StObject.set(x, "setSprites", js.undefined)
     
-    @scala.inline
-    def setSetViewBox(value: /* viewBox */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setViewBox", js.Any.fromFunction1(value))
+    inline def setSetViewBox(value: /* viewBox */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setViewBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetViewBoxUndefined: Self = StObject.set(x, "setViewBox", js.undefined)
+    inline def setSetViewBoxUndefined: Self = StObject.set(x, "setViewBox", js.undefined)
     
-    @scala.inline
-    def setViewBox(value: Boolean): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    inline def setViewBox(value: Boolean): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+    inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
   }
 }

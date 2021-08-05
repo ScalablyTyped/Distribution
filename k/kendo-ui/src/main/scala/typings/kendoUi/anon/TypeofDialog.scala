@@ -15,19 +15,15 @@ trait TypeofDialog extends StObject {
 }
 object TypeofDialog {
   
-  @scala.inline
-  def apply(extend: js.Object => Dialog, fn: Dialog): TypeofDialog = {
+  inline def apply(extend: js.Object => Dialog, fn: Dialog): TypeofDialog = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDialog]
   }
   
-  @scala.inline
-  implicit class TypeofDialogMutableBuilder[Self <: TypeofDialog] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDialog](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Dialog): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Dialog): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Dialog): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Dialog): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

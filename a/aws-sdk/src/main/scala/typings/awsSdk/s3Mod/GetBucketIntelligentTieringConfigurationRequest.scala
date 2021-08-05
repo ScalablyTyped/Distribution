@@ -18,19 +18,15 @@ trait GetBucketIntelligentTieringConfigurationRequest extends StObject {
 }
 object GetBucketIntelligentTieringConfigurationRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, Id: IntelligentTieringId): GetBucketIntelligentTieringConfigurationRequest = {
+  inline def apply(Bucket: BucketName, Id: IntelligentTieringId): GetBucketIntelligentTieringConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketIntelligentTieringConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetBucketIntelligentTieringConfigurationRequestMutableBuilder[Self <: GetBucketIntelligentTieringConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketIntelligentTieringConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: IntelligentTieringId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IntelligentTieringId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

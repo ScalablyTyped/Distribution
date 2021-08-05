@@ -6,28 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Triangulator extends StObject {
   
-  var convexPolygons: js.Any
+  /* private */ var convexPolygons: js.Any
   
-  var convexPolygonsIndices: js.Any
+  /* private */ var convexPolygonsIndices: js.Any
   
   def decompose(verticesArray: js.Array[Double], triangles: js.Array[Double]): js.Array[js.Array[Double]]
   
-  var indicesArray: js.Any
+  /* private */ var indicesArray: js.Any
   
-  var isConcaveArray: js.Any
+  /* private */ var isConcaveArray: js.Any
   
-  var polygonIndicesPool: js.Any
+  /* private */ var polygonIndicesPool: js.Any
   
-  var polygonPool: js.Any
+  /* private */ var polygonPool: js.Any
   
-  var triangles: js.Any
+  /* private */ var triangles: js.Any
   
   def triangulate(verticesArray: ArrayLike[Double]): js.Array[Double]
 }
 object Triangulator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     convexPolygons: js.Any,
     convexPolygonsIndices: js.Any,
     decompose: (js.Array[Double], js.Array[Double]) => js.Array[js.Array[Double]],
@@ -42,34 +41,24 @@ object Triangulator {
     __obj.asInstanceOf[Triangulator]
   }
   
-  @scala.inline
-  implicit class TriangulatorMutableBuilder[Self <: Triangulator] (val x: Self) extends AnyVal {
+  extension [Self <: Triangulator](x: Self) {
     
-    @scala.inline
-    def setConvexPolygons(value: js.Any): Self = StObject.set(x, "convexPolygons", value.asInstanceOf[js.Any])
+    inline def setConvexPolygons(value: js.Any): Self = StObject.set(x, "convexPolygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvexPolygonsIndices(value: js.Any): Self = StObject.set(x, "convexPolygonsIndices", value.asInstanceOf[js.Any])
+    inline def setConvexPolygonsIndices(value: js.Any): Self = StObject.set(x, "convexPolygonsIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecompose(value: (js.Array[Double], js.Array[Double]) => js.Array[js.Array[Double]]): Self = StObject.set(x, "decompose", js.Any.fromFunction2(value))
+    inline def setDecompose(value: (js.Array[Double], js.Array[Double]) => js.Array[js.Array[Double]]): Self = StObject.set(x, "decompose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIndicesArray(value: js.Any): Self = StObject.set(x, "indicesArray", value.asInstanceOf[js.Any])
+    inline def setIndicesArray(value: js.Any): Self = StObject.set(x, "indicesArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConcaveArray(value: js.Any): Self = StObject.set(x, "isConcaveArray", value.asInstanceOf[js.Any])
+    inline def setIsConcaveArray(value: js.Any): Self = StObject.set(x, "isConcaveArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonIndicesPool(value: js.Any): Self = StObject.set(x, "polygonIndicesPool", value.asInstanceOf[js.Any])
+    inline def setPolygonIndicesPool(value: js.Any): Self = StObject.set(x, "polygonIndicesPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonPool(value: js.Any): Self = StObject.set(x, "polygonPool", value.asInstanceOf[js.Any])
+    inline def setPolygonPool(value: js.Any): Self = StObject.set(x, "polygonPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangles(value: js.Any): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
+    inline def setTriangles(value: js.Any): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangulate(value: ArrayLike[Double] => js.Array[Double]): Self = StObject.set(x, "triangulate", js.Any.fromFunction1(value))
+    inline def setTriangulate(value: ArrayLike[Double] => js.Array[Double]): Self = StObject.set(x, "triangulate", js.Any.fromFunction1(value))
   }
 }

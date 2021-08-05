@@ -438,8 +438,7 @@ object mod {
   }
   object IGesturePayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       center: Vec2,
       centerDelta: Vec2,
       centerVelocity: Vec2,
@@ -453,35 +452,25 @@ object mod {
       __obj.asInstanceOf[IGesturePayload]
     }
     
-    @scala.inline
-    implicit class IGesturePayloadMutableBuilder[Self <: IGesturePayload] (val x: Self) extends AnyVal {
+    extension [Self <: IGesturePayload](x: Self) {
       
-      @scala.inline
-      def setCenter(value: Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterDelta(value: Vec2): Self = StObject.set(x, "centerDelta", value.asInstanceOf[js.Any])
+      inline def setCenterDelta(value: Vec2): Self = StObject.set(x, "centerDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterVelocity(value: Vec2): Self = StObject.set(x, "centerVelocity", value.asInstanceOf[js.Any])
+      inline def setCenterVelocity(value: Vec2): Self = StObject.set(x, "centerVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointers(value: js.Array[IGesturePointer]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
+      inline def setPointers(value: js.Array[IGesturePointer]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointersVarargs(value: IGesturePointer*): Self = StObject.set(x, "pointers", js.Array(value :_*))
+      inline def setPointersVarargs(value: IGesturePointer*): Self = StObject.set(x, "pointers", js.Array(value :_*))
       
-      @scala.inline
-      def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -495,23 +484,18 @@ object mod {
   }
   object IGesturePointer {
     
-    @scala.inline
-    def apply(delta: Vec2, position: Vec2, velocity: Vec2): IGesturePointer = {
+    inline def apply(delta: Vec2, position: Vec2, velocity: Vec2): IGesturePointer = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGesturePointer]
     }
     
-    @scala.inline
-    implicit class IGesturePointerMutableBuilder[Self <: IGesturePointer] (val x: Self) extends AnyVal {
+    extension [Self <: IGesturePointer](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Vec2): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Vec2): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocity(value: Vec2): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+      inline def setVelocity(value: Vec2): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     }
   }
 }

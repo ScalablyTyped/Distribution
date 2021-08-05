@@ -8,11 +8,9 @@ object motorHatNumbers {
   
   @js.native
   sealed trait `16` extends StObject
-  @scala.inline
-  def `16`: `16` = 16.asInstanceOf[`16`]
+  inline def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
   sealed trait `8` extends StObject
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
+  inline def `8`: `8` = 8.asInstanceOf[`8`]
 }

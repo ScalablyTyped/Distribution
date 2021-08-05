@@ -28,8 +28,7 @@ trait ClickOnInputWrapper extends StObject {
 }
 object ClickOnInputWrapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clickOnInputWrapper: () => Unit,
     customSuffixExists: () => HTMLElement,
     getMaxHeight: () => String,
@@ -44,34 +43,24 @@ object ClickOnInputWrapper {
     __obj.asInstanceOf[ClickOnInputWrapper]
   }
   
-  @scala.inline
-  implicit class ClickOnInputWrapperMutableBuilder[Self <: ClickOnInputWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: ClickOnInputWrapper](x: Self) {
     
-    @scala.inline
-    def setClickOnInputWrapper(value: () => Unit): Self = StObject.set(x, "clickOnInputWrapper", js.Any.fromFunction0(value))
+    inline def setClickOnInputWrapper(value: () => Unit): Self = StObject.set(x, "clickOnInputWrapper", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCustomSuffixExists(value: () => HTMLElement): Self = StObject.set(x, "customSuffixExists", js.Any.fromFunction0(value))
+    inline def setCustomSuffixExists(value: () => HTMLElement): Self = StObject.set(x, "customSuffixExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxHeight(value: () => String): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
+    inline def setGetMaxHeight(value: () => String): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTagDriverByTagId(value: String => TagDriver): Self = StObject.set(x, "getTagDriverByTagId", js.Any.fromFunction1(value))
+    inline def setGetTagDriverByTagId(value: String => TagDriver): Self = StObject.set(x, "getTagDriverByTagId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTagLabelAt(value: Double => String): Self = StObject.set(x, "getTagLabelAt", js.Any.fromFunction1(value))
+    inline def setGetTagLabelAt(value: Double => String): Self = StObject.set(x, "getTagLabelAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInputWrapperHasFocus(value: () => Boolean): Self = StObject.set(x, "inputWrapperHasFocus", js.Any.fromFunction0(value))
+    inline def setInputWrapperHasFocus(value: () => Boolean): Self = StObject.set(x, "inputWrapperHasFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputWrapperIsDisabled(value: () => Boolean): Self = StObject.set(x, "inputWrapperIsDisabled", js.Any.fromFunction0(value))
+    inline def setInputWrapperIsDisabled(value: () => Boolean): Self = StObject.set(x, "inputWrapperIsDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberOfTags(value: () => Double): Self = StObject.set(x, "numberOfTags", js.Any.fromFunction0(value))
+    inline def setNumberOfTags(value: () => Double): Self = StObject.set(x, "numberOfTags", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPressCommaKey(value: () => Unit): Self = StObject.set(x, "pressCommaKey", js.Any.fromFunction0(value))
+    inline def setPressCommaKey(value: () => Unit): Self = StObject.set(x, "pressCommaKey", js.Any.fromFunction0(value))
   }
 }

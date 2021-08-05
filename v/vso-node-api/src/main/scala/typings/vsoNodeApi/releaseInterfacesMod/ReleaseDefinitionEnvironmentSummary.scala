@@ -14,25 +14,19 @@ trait ReleaseDefinitionEnvironmentSummary extends StObject {
 }
 object ReleaseDefinitionEnvironmentSummary {
   
-  @scala.inline
-  def apply(id: Double, lastReleases: js.Array[ReleaseShallowReference], name: String): ReleaseDefinitionEnvironmentSummary = {
+  inline def apply(id: Double, lastReleases: js.Array[ReleaseShallowReference], name: String): ReleaseDefinitionEnvironmentSummary = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lastReleases = lastReleases.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentSummary]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionEnvironmentSummaryMutableBuilder[Self <: ReleaseDefinitionEnvironmentSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionEnvironmentSummary](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastReleases(value: js.Array[ReleaseShallowReference]): Self = StObject.set(x, "lastReleases", value.asInstanceOf[js.Any])
+    inline def setLastReleases(value: js.Array[ReleaseShallowReference]): Self = StObject.set(x, "lastReleases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastReleasesVarargs(value: ReleaseShallowReference*): Self = StObject.set(x, "lastReleases", js.Array(value :_*))
+    inline def setLastReleasesVarargs(value: ReleaseShallowReference*): Self = StObject.set(x, "lastReleases", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

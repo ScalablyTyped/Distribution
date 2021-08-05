@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): /* keyof ObjectType */ String = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[/* keyof ObjectType */ String]
+  inline def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): /* keyof ObjectType */ String = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[/* keyof ObjectType */ String]
   
   @JSImport("random-obj-key", JSImport.Namespace)
   @js.native

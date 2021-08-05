@@ -10,17 +10,14 @@ trait SentinelAction extends StObject {
 }
 object SentinelAction {
   
-  @scala.inline
-  def apply(`type`: Identifier): SentinelAction = {
+  inline def apply(`type`: Identifier): SentinelAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentinelAction]
   }
   
-  @scala.inline
-  implicit class SentinelActionMutableBuilder[Self <: SentinelAction] (val x: Self) extends AnyVal {
+  extension [Self <: SentinelAction](x: Self) {
     
-    @scala.inline
-    def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

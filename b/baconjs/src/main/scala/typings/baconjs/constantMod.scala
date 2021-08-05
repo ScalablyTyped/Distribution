@@ -11,6 +11,5 @@ object constantMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](x: V): Property[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Property[V]]
+  inline def default[V](x: V): Property[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Property[V]]
 }

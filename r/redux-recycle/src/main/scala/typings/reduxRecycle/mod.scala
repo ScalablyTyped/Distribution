@@ -12,10 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String]): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
-  @scala.inline
-  def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: A): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
-  @scala.inline
-  def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: Reducer[A, AnyAction]): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
+  inline def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String]): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
+  inline def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: A): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
+  inline def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: Reducer[A, AnyAction]): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
 }

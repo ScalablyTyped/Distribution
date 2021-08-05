@@ -32,6 +32,6 @@ trait HTMLDivision extends StObject {
   
   var SpaceBefore: Double = js.native
   
-  @JSName("Word.HTMLDivision_typekey")
+  /* private */ @JSName("Word.HTMLDivision_typekey")
   var WordDotHTMLDivision_typekey: HTMLDivision = js.native
 }

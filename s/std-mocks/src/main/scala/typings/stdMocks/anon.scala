@@ -18,32 +18,24 @@ object anon {
   }
   object Optionsprintbooleanundefi {
     
-    @scala.inline
-    def apply(): Optionsprintbooleanundefi = {
+    inline def apply(): Optionsprintbooleanundefi = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsprintbooleanundefi]
     }
     
-    @scala.inline
-    implicit class OptionsprintbooleanundefiMutableBuilder[Self <: Optionsprintbooleanundefi] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsprintbooleanundefi](x: Self) {
       
-      @scala.inline
-      def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      inline def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+      inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
       
-      @scala.inline
-      def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
   
@@ -56,23 +48,18 @@ object anon {
   }
   object Optionsstderrfalse {
     
-    @scala.inline
-    def apply(stderr: js.UndefOr[Boolean] & `false`): Optionsstderrfalse = {
+    inline def apply(stderr: js.UndefOr[Boolean] & `false`): Optionsstderrfalse = {
       val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstderrfalse]
     }
     
-    @scala.inline
-    implicit class OptionsstderrfalseMutableBuilder[Self <: Optionsstderrfalse] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsstderrfalse](x: Self) {
       
-      @scala.inline
-      def setStderr(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
   
@@ -85,23 +72,18 @@ object anon {
   }
   object Optionsstdoutfalse {
     
-    @scala.inline
-    def apply(stdout: js.UndefOr[Boolean] & `false`): Optionsstdoutfalse = {
+    inline def apply(stdout: js.UndefOr[Boolean] & `false`): Optionsstdoutfalse = {
       val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstdoutfalse]
     }
     
-    @scala.inline
-    implicit class OptionsstdoutfalseMutableBuilder[Self <: Optionsstdoutfalse] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsstdoutfalse](x: Self) {
       
-      @scala.inline
-      def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdout(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,20 +96,16 @@ object anon {
   }
   object Optionsstdoutfalsestderrf {
     
-    @scala.inline
-    def apply(stderr: js.UndefOr[Boolean] & `false`, stdout: js.UndefOr[Boolean] & `false`): Optionsstdoutfalsestderrf = {
+    inline def apply(stderr: js.UndefOr[Boolean] & `false`, stdout: js.UndefOr[Boolean] & `false`): Optionsstdoutfalsestderrf = {
       val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstdoutfalsestderrf]
     }
     
-    @scala.inline
-    implicit class OptionsstdoutfalsestderrfMutableBuilder[Self <: Optionsstdoutfalsestderrf] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsstdoutfalsestderrf](x: Self) {
       
-      @scala.inline
-      def setStderr(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,20 +115,16 @@ object anon {
   }
   object Stderr {
     
-    @scala.inline
-    def apply(stderr: js.Array[String]): Stderr = {
+    inline def apply(stderr: js.Array[String]): Stderr = {
       val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stderr]
     }
     
-    @scala.inline
-    implicit class StderrMutableBuilder[Self <: Stderr] (val x: Self) extends AnyVal {
+    extension [Self <: Stderr](x: Self) {
       
-      @scala.inline
-      def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value :_*))
+      inline def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value :_*))
     }
   }
   
@@ -162,26 +136,20 @@ object anon {
   }
   object StderrStdout {
     
-    @scala.inline
-    def apply(stderr: js.Array[String], stdout: js.Array[String]): StderrStdout = {
+    inline def apply(stderr: js.Array[String], stdout: js.Array[String]): StderrStdout = {
       val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[StderrStdout]
     }
     
-    @scala.inline
-    implicit class StderrStdoutMutableBuilder[Self <: StderrStdout] (val x: Self) extends AnyVal {
+    extension [Self <: StderrStdout](x: Self) {
       
-      @scala.inline
-      def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: js.Array[String]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value :_*))
+      inline def setStderrVarargs(value: String*): Self = StObject.set(x, "stderr", js.Array(value :_*))
       
-      @scala.inline
-      def setStdout(value: js.Array[String]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: js.Array[String]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value :_*))
+      inline def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value :_*))
     }
   }
   
@@ -191,20 +159,16 @@ object anon {
   }
   object Stdout {
     
-    @scala.inline
-    def apply(stdout: js.Array[String]): Stdout = {
+    inline def apply(stdout: js.Array[String]): Stdout = {
       val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stdout]
     }
     
-    @scala.inline
-    implicit class StdoutMutableBuilder[Self <: Stdout] (val x: Self) extends AnyVal {
+    extension [Self <: Stdout](x: Self) {
       
-      @scala.inline
-      def setStdout(value: js.Array[String]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: js.Array[String]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value :_*))
+      inline def setStdoutVarargs(value: String*): Self = StObject.set(x, "stdout", js.Array(value :_*))
     }
   }
 }

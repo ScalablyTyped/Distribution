@@ -32,16 +32,13 @@ trait DependencyException
 }
 object DependencyException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, UnsatisfiedDependencies: SafeArray[XElement]): DependencyException = {
+  inline def apply(Context: XInterface, Message: String, UnsatisfiedDependencies: SafeArray[XElement]): DependencyException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], UnsatisfiedDependencies = UnsatisfiedDependencies.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyException]
   }
   
-  @scala.inline
-  implicit class DependencyExceptionMutableBuilder[Self <: DependencyException] (val x: Self) extends AnyVal {
+  extension [Self <: DependencyException](x: Self) {
     
-    @scala.inline
-    def setUnsatisfiedDependencies(value: SafeArray[XElement]): Self = StObject.set(x, "UnsatisfiedDependencies", value.asInstanceOf[js.Any])
+    inline def setUnsatisfiedDependencies(value: SafeArray[XElement]): Self = StObject.set(x, "UnsatisfiedDependencies", value.asInstanceOf[js.Any])
   }
 }

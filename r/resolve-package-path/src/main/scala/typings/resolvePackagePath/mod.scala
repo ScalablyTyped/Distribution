@@ -6,16 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(target: String, basedir: String): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(
+  inline def apply(target: String, basedir: String): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(
     target: String,
     basedir: String,
     _cache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any
   ): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], _cache.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(target: String, basedir: String, _cache: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], _cache.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(target: String, basedir: String, _cache: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], _cache.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   @JSImport("resolve-package-path", JSImport.Namespace)
   @js.native
@@ -24,27 +21,23 @@ object mod {
   @JSImport("resolve-package-path", "_CACHE")
   @js.native
   def _CACHE: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any = js.native
-  @scala.inline
-  def _CACHE_=(
+  inline def _CACHE_=(
     x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CACHE")(x.asInstanceOf[js.Any])
   
   @JSImport("resolve-package-path", "getRealDirectoryPath")
   @js.native
   def getRealDirectoryPath: js.Function1[/* directoryhPath */ String, js.Any] = js.native
-  @scala.inline
-  def getRealDirectoryPath_=(x: js.Function1[/* directoryhPath */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getRealDirectoryPath")(x.asInstanceOf[js.Any])
+  inline def getRealDirectoryPath_=(x: js.Function1[/* directoryhPath */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getRealDirectoryPath")(x.asInstanceOf[js.Any])
   
   @JSImport("resolve-package-path", "getRealFilePath")
   @js.native
   def getRealFilePath: js.Function1[/* filePath */ String, js.Any] = js.native
-  @scala.inline
-  def getRealFilePath_=(x: js.Function1[/* filePath */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getRealFilePath")(x.asInstanceOf[js.Any])
+  inline def getRealFilePath_=(x: js.Function1[/* filePath */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getRealFilePath")(x.asInstanceOf[js.Any])
   
   @JSImport("resolve-package-path", "_resetCache")
   @js.native
   def resetCache: js.Function0[Unit] = js.native
   
-  @scala.inline
-  def resetCache_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_resetCache")(x.asInstanceOf[js.Any])
+  inline def resetCache_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_resetCache")(x.asInstanceOf[js.Any])
 }

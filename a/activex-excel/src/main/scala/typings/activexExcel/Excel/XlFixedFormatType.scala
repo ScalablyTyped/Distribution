@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlFixedFormatType extends StObject
 object XlFixedFormatType {
   
-  @scala.inline
-  def xlTypePDF: `0` = 0.asInstanceOf[`0`]
+  inline def xlTypePDF: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlTypeXPS: `1` = 1.asInstanceOf[`1`]
+  inline def xlTypeXPS: `1` = 1.asInstanceOf[`1`]
 }

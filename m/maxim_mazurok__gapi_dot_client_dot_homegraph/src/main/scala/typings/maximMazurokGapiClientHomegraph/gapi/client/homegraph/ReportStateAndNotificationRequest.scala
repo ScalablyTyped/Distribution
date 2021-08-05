@@ -26,43 +26,31 @@ trait ReportStateAndNotificationRequest extends StObject {
 }
 object ReportStateAndNotificationRequest {
   
-  @scala.inline
-  def apply(): ReportStateAndNotificationRequest = {
+  inline def apply(): ReportStateAndNotificationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportStateAndNotificationRequest]
   }
   
-  @scala.inline
-  implicit class ReportStateAndNotificationRequestMutableBuilder[Self <: ReportStateAndNotificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReportStateAndNotificationRequest](x: Self) {
     
-    @scala.inline
-    def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
+    inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
+    inline def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setFollowUpToken(value: String): Self = StObject.set(x, "followUpToken", value.asInstanceOf[js.Any])
+    inline def setFollowUpToken(value: String): Self = StObject.set(x, "followUpToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowUpTokenUndefined: Self = StObject.set(x, "followUpToken", js.undefined)
+    inline def setFollowUpTokenUndefined: Self = StObject.set(x, "followUpToken", js.undefined)
     
-    @scala.inline
-    def setPayload(value: StateAndNotificationPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: StateAndNotificationPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

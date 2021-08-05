@@ -15,8 +15,7 @@ object mod {
   //=> {seconds: 0.000002399, milliseconds: 0.002399, nanoseconds: 2399}
   ```
   */
-  @scala.inline
-  def apply(hrtime: js.Tuple2[Double, Double]): HRTime = ^.asInstanceOf[js.Dynamic].apply(hrtime.asInstanceOf[js.Any]).asInstanceOf[HRTime]
+  inline def apply(hrtime: js.Tuple2[Double, Double]): HRTime = ^.asInstanceOf[js.Dynamic].apply(hrtime.asInstanceOf[js.Any]).asInstanceOf[HRTime]
   
   @JSImport("convert-hrtime", JSImport.Namespace)
   @js.native
@@ -32,23 +31,18 @@ object mod {
   }
   object HRTime {
     
-    @scala.inline
-    def apply(milliseconds: Double, nanoseconds: Double, seconds: Double): HRTime = {
+    inline def apply(milliseconds: Double, nanoseconds: Double, seconds: Double): HRTime = {
       val __obj = js.Dynamic.literal(milliseconds = milliseconds.asInstanceOf[js.Any], nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[HRTime]
     }
     
-    @scala.inline
-    implicit class HRTimeMutableBuilder[Self <: HRTime] (val x: Self) extends AnyVal {
+    extension [Self <: HRTime](x: Self) {
       
-      @scala.inline
-      def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
+      inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }
   }
 }

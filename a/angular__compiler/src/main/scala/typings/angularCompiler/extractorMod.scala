@@ -25,11 +25,11 @@ object extractorMod {
     
     var host: ExtractorHost = js.native
     
-    var messageBundle: js.Any = js.native
+    /* private */ var messageBundle: js.Any = js.native
     
-    var metadataResolver: js.Any = js.native
+    /* private */ var metadataResolver: js.Any = js.native
     
-    var staticSymbolResolver: js.Any = js.native
+    /* private */ var staticSymbolResolver: js.Any = js.native
   }
   /* static members */
   object Extractor {
@@ -38,10 +38,8 @@ object extractorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.anon.Extractor]
-    @scala.inline
-    def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompiler.anon.Extractor]
+    inline def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.anon.Extractor]
+    inline def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompiler.anon.Extractor]
   }
   
   @js.native

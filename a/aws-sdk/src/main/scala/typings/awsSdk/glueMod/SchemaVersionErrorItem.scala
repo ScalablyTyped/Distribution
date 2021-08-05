@@ -18,25 +18,19 @@ trait SchemaVersionErrorItem extends StObject {
 }
 object SchemaVersionErrorItem {
   
-  @scala.inline
-  def apply(): SchemaVersionErrorItem = {
+  inline def apply(): SchemaVersionErrorItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVersionErrorItem]
   }
   
-  @scala.inline
-  implicit class SchemaVersionErrorItemMutableBuilder[Self <: SchemaVersionErrorItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVersionErrorItem](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

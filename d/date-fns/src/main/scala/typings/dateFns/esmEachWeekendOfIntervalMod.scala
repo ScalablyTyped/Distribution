@@ -9,8 +9,7 @@ object esmEachWeekendOfIntervalMod {
   
   object default {
     
-    @scala.inline
-    def apply(interval: typings.dateFns.mod.Interval | Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+    inline def apply(interval: typings.dateFns.mod.Interval | Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
     
     @JSImport("date-fns/esm/eachWeekendOfInterval", JSImport.Default)
     @js.native

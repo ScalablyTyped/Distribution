@@ -11,19 +11,15 @@ trait Photo extends StObject {
 }
 object Photo {
   
-  @scala.inline
-  def apply(): Photo = {
+  inline def apply(): Photo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Photo]
   }
   
-  @scala.inline
-  implicit class PhotoMutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
+  extension [Self <: Photo](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

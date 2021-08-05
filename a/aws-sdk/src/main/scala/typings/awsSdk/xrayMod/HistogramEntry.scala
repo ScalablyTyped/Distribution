@@ -18,25 +18,19 @@ trait HistogramEntry extends StObject {
 }
 object HistogramEntry {
   
-  @scala.inline
-  def apply(): HistogramEntry = {
+  inline def apply(): HistogramEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramEntry]
   }
   
-  @scala.inline
-  implicit class HistogramEntryMutableBuilder[Self <: HistogramEntry] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramEntry](x: Self) {
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

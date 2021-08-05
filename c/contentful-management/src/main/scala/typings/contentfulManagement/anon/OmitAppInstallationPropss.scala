@@ -12,16 +12,13 @@ trait OmitAppInstallationPropss extends StObject {
 }
 object OmitAppInstallationPropss {
   
-  @scala.inline
-  def apply(parameters: StringDictionary[String]): OmitAppInstallationPropss = {
+  inline def apply(parameters: StringDictionary[String]): OmitAppInstallationPropss = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitAppInstallationPropss]
   }
   
-  @scala.inline
-  implicit class OmitAppInstallationPropssMutableBuilder[Self <: OmitAppInstallationPropss] (val x: Self) extends AnyVal {
+  extension [Self <: OmitAppInstallationPropss](x: Self) {
     
-    @scala.inline
-    def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }
 }

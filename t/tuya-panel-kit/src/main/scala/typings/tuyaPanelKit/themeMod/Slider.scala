@@ -27,64 +27,45 @@ trait Slider extends StObject {
 }
 object Slider {
   
-  @scala.inline
-  def apply(dark: SliderTheme, light: SliderTheme): Slider = {
+  inline def apply(dark: SliderTheme, light: SliderTheme): Slider = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slider]
   }
   
-  @scala.inline
-  implicit class SliderMutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
+  extension [Self <: Slider](x: Self) {
     
-    @scala.inline
-    def setDark(value: SliderTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: SliderTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLight(value: SliderTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: SliderTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
+    inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
+    inline def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
     
-    @scala.inline
-    def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
+    inline def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbRadiusUndefined: Self = StObject.set(x, "thumbRadius", js.undefined)
+    inline def setThumbRadiusUndefined: Self = StObject.set(x, "thumbRadius", js.undefined)
     
-    @scala.inline
-    def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
+    inline def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbSizeUndefined: Self = StObject.set(x, "thumbSize", js.undefined)
+    inline def setThumbSizeUndefined: Self = StObject.set(x, "thumbSize", js.undefined)
     
-    @scala.inline
-    def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
+    inline def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
+    inline def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
-    @scala.inline
-    def setTrackHeight(value: Double): Self = StObject.set(x, "trackHeight", value.asInstanceOf[js.Any])
+    inline def setTrackHeight(value: Double): Self = StObject.set(x, "trackHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackHeightUndefined: Self = StObject.set(x, "trackHeight", js.undefined)
+    inline def setTrackHeightUndefined: Self = StObject.set(x, "trackHeight", js.undefined)
     
-    @scala.inline
-    def setTrackRadius(value: Double): Self = StObject.set(x, "trackRadius", value.asInstanceOf[js.Any])
+    inline def setTrackRadius(value: Double): Self = StObject.set(x, "trackRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackRadiusUndefined: Self = StObject.set(x, "trackRadius", js.undefined)
+    inline def setTrackRadiusUndefined: Self = StObject.set(x, "trackRadius", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

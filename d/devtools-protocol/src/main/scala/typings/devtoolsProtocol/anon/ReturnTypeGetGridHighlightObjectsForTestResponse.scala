@@ -14,8 +14,7 @@ trait ReturnTypeGetGridHighlightObjectsForTestResponse extends StObject {
 }
 object ReturnTypeGetGridHighlightObjectsForTestResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[GetGridHighlightObjectsForTestRequest],
     returnType: GetGridHighlightObjectsForTestResponse
   ): ReturnTypeGetGridHighlightObjectsForTestResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeGetGridHighlightObjectsForTestResponse {
     __obj.asInstanceOf[ReturnTypeGetGridHighlightObjectsForTestResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetGridHighlightObjectsForTestResponseMutableBuilder[Self <: ReturnTypeGetGridHighlightObjectsForTestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetGridHighlightObjectsForTestResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetGridHighlightObjectsForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetGridHighlightObjectsForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetGridHighlightObjectsForTestRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetGridHighlightObjectsForTestRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetGridHighlightObjectsForTestResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetGridHighlightObjectsForTestResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait FuncRegSymbol extends StObject {
 }
 object FuncRegSymbol {
   
-  @scala.inline
-  def apply(func: NotationPrecedenceRightToLeft): FuncRegSymbol = {
+  inline def apply(func: NotationPrecedenceRightToLeft): FuncRegSymbol = {
     val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = "max\\b", symbol = "max")
     __obj.asInstanceOf[FuncRegSymbol]
   }
   
-  @scala.inline
-  implicit class FuncRegSymbolMutableBuilder[Self <: FuncRegSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: FuncRegSymbol](x: Self) {
     
-    @scala.inline
-    def setFunc(value: NotationPrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: NotationPrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: maxBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: maxBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: max): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: max): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

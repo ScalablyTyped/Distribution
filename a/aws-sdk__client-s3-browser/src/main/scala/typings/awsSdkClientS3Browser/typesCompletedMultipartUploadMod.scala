@@ -18,23 +18,18 @@ object typesCompletedMultipartUploadMod {
   }
   object CompletedMultipartUpload {
     
-    @scala.inline
-    def apply(): CompletedMultipartUpload = {
+    inline def apply(): CompletedMultipartUpload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompletedMultipartUpload]
     }
     
-    @scala.inline
-    implicit class CompletedMultipartUploadMutableBuilder[Self <: CompletedMultipartUpload] (val x: Self) extends AnyVal {
+    extension [Self <: CompletedMultipartUpload](x: Self) {
       
-      @scala.inline
-      def setParts(value: js.Array[CompletedPart] | Iterable[CompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[CompletedPart] | Iterable[CompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
+      inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
       
-      @scala.inline
-      def setPartsVarargs(value: CompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: CompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
     }
   }
   
@@ -50,23 +45,18 @@ object typesCompletedMultipartUploadMod {
   }
   object UnmarshalledCompletedMultipartUpload {
     
-    @scala.inline
-    def apply(): UnmarshalledCompletedMultipartUpload = {
+    inline def apply(): UnmarshalledCompletedMultipartUpload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledCompletedMultipartUpload]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCompletedMultipartUploadMutableBuilder[Self <: UnmarshalledCompletedMultipartUpload] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCompletedMultipartUpload](x: Self) {
       
-      @scala.inline
-      def setParts(value: js.Array[UnmarshalledCompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[UnmarshalledCompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
+      inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
       
-      @scala.inline
-      def setPartsVarargs(value: UnmarshalledCompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: UnmarshalledCompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
     }
   }
 }

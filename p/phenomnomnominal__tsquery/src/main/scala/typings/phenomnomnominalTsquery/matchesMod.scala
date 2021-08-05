@@ -14,8 +14,7 @@ object matchesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def matches_every(modifier: every): js.Function3[
+  inline def matches_every(modifier: every): js.Function3[
     /* node */ Node, 
     /* selector */ TSQuerySelectorNode, 
     /* ancestry */ js.Array[Node], 
@@ -27,8 +26,7 @@ object matchesMod {
     Boolean
   ]]
   
-  @scala.inline
-  def matches_some(modifier: some): js.Function3[
+  inline def matches_some(modifier: some): js.Function3[
     /* node */ Node, 
     /* selector */ TSQuerySelectorNode, 
     /* ancestry */ js.Array[Node], 

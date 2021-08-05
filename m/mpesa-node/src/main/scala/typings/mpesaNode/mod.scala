@@ -37,62 +37,44 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(consumerKey: String, consumerSecret: String): ConfigOptions = {
+    inline def apply(consumerKey: String, consumerSecret: String): ConfigOptions = {
       val __obj = js.Dynamic.literal(consumerKey = consumerKey.asInstanceOf[js.Any], consumerSecret = consumerSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
+      inline def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertPathUndefined: Self = StObject.set(x, "certPath", js.undefined)
+      inline def setCertPathUndefined: Self = StObject.set(x, "certPath", js.undefined)
       
-      @scala.inline
-      def setConsumerKey(value: String): Self = StObject.set(x, "consumerKey", value.asInstanceOf[js.Any])
+      inline def setConsumerKey(value: String): Self = StObject.set(x, "consumerKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerSecret(value: String): Self = StObject.set(x, "consumerSecret", value.asInstanceOf[js.Any])
+      inline def setConsumerSecret(value: String): Self = StObject.set(x, "consumerSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnviroment(value: String): Self = StObject.set(x, "enviroment", value.asInstanceOf[js.Any])
+      inline def setEnviroment(value: String): Self = StObject.set(x, "enviroment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnviromentUndefined: Self = StObject.set(x, "enviroment", js.undefined)
+      inline def setEnviromentUndefined: Self = StObject.set(x, "enviroment", js.undefined)
       
-      @scala.inline
-      def setInitiatorName(value: String): Self = StObject.set(x, "initiatorName", value.asInstanceOf[js.Any])
+      inline def setInitiatorName(value: String): Self = StObject.set(x, "initiatorName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiatorNameUndefined: Self = StObject.set(x, "initiatorName", js.undefined)
+      inline def setInitiatorNameUndefined: Self = StObject.set(x, "initiatorName", js.undefined)
       
-      @scala.inline
-      def setLipaNaMpesaShortCode(value: String): Self = StObject.set(x, "lipaNaMpesaShortCode", value.asInstanceOf[js.Any])
+      inline def setLipaNaMpesaShortCode(value: String): Self = StObject.set(x, "lipaNaMpesaShortCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLipaNaMpesaShortCodeUndefined: Self = StObject.set(x, "lipaNaMpesaShortCode", js.undefined)
+      inline def setLipaNaMpesaShortCodeUndefined: Self = StObject.set(x, "lipaNaMpesaShortCode", js.undefined)
       
-      @scala.inline
-      def setLipaNaMpesaShortPass(value: String): Self = StObject.set(x, "lipaNaMpesaShortPass", value.asInstanceOf[js.Any])
+      inline def setLipaNaMpesaShortPass(value: String): Self = StObject.set(x, "lipaNaMpesaShortPass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLipaNaMpesaShortPassUndefined: Self = StObject.set(x, "lipaNaMpesaShortPass", js.undefined)
+      inline def setLipaNaMpesaShortPassUndefined: Self = StObject.set(x, "lipaNaMpesaShortPass", js.undefined)
       
-      @scala.inline
-      def setSecurityCredential(value: String): Self = StObject.set(x, "securityCredential", value.asInstanceOf[js.Any])
+      inline def setSecurityCredential(value: String): Self = StObject.set(x, "securityCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityCredentialUndefined: Self = StObject.set(x, "securityCredential", js.undefined)
+      inline def setSecurityCredentialUndefined: Self = StObject.set(x, "securityCredential", js.undefined)
       
-      @scala.inline
-      def setShortCode(value: String): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
+      inline def setShortCode(value: String): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
+      inline def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
     }
   }
   

@@ -33,8 +33,7 @@ trait EndpointSummary extends StObject {
 }
 object EndpointSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: Timestamp,
     EndpointArn: EndpointArn,
     EndpointName: EndpointName,
@@ -45,22 +44,16 @@ object EndpointSummary {
     __obj.asInstanceOf[EndpointSummary]
   }
   
-  @scala.inline
-  implicit class EndpointSummaryMutableBuilder[Self <: EndpointSummary] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointStatus(value: EndpointStatus): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
+    inline def setEndpointStatus(value: EndpointStatus): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

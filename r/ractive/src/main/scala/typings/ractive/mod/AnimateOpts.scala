@@ -28,49 +28,35 @@ trait AnimateOpts extends StObject {
 }
 object AnimateOpts {
   
-  @scala.inline
-  def apply(): AnimateOpts = {
+  inline def apply(): AnimateOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimateOpts]
   }
   
-  @scala.inline
-  implicit class AnimateOptsMutableBuilder[Self <: AnimateOpts] (val x: Self) extends AnyVal {
+  extension [Self <: AnimateOpts](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* value */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* value */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String | Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String | Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingFunction1(value: /* time */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+    inline def setEasingFunction1(value: /* time */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setInterpolator(value: String | Interpolator): Self = StObject.set(x, "interpolator", value.asInstanceOf[js.Any])
+    inline def setInterpolator(value: String | Interpolator): Self = StObject.set(x, "interpolator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolatorFunction2(value: (/* from */ js.Any, /* to */ js.Any) => js.Function1[/* t */ Double, js.Any]): Self = StObject.set(x, "interpolator", js.Any.fromFunction2(value))
+    inline def setInterpolatorFunction2(value: (/* from */ js.Any, /* to */ js.Any) => js.Function1[/* t */ Double, js.Any]): Self = StObject.set(x, "interpolator", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInterpolatorUndefined: Self = StObject.set(x, "interpolator", js.undefined)
+    inline def setInterpolatorUndefined: Self = StObject.set(x, "interpolator", js.undefined)
     
-    @scala.inline
-    def setStep(value: (/* time */ Double, /* value */ js.Any) => Unit): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
+    inline def setStep(value: (/* time */ Double, /* value */ js.Any) => Unit): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

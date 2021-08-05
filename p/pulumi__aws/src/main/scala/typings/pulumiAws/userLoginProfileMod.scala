@@ -70,21 +70,16 @@ object userLoginProfileMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserLoginProfileState): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserLoginProfileState, opts: CustomResourceOptions): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
+    inline def get(name: String, id: Input[ID]): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
+    inline def get(name: String, id: Input[ID], state: UserLoginProfileState): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
+    inline def get(name: String, id: Input[ID], state: UserLoginProfileState, opts: CustomResourceOptions): UserLoginProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserLoginProfile]
     
     /**
       * Returns true if the given object is an instance of UserLoginProfile.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ Boolean]
   }
   
   trait UserLoginProfileArgs extends StObject {
@@ -111,32 +106,24 @@ object userLoginProfileMod {
   }
   object UserLoginProfileArgs {
     
-    @scala.inline
-    def apply(pgpKey: Input[String], user: Input[String]): UserLoginProfileArgs = {
+    inline def apply(pgpKey: Input[String], user: Input[String]): UserLoginProfileArgs = {
       val __obj = js.Dynamic.literal(pgpKey = pgpKey.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserLoginProfileArgs]
     }
     
-    @scala.inline
-    implicit class UserLoginProfileArgsMutableBuilder[Self <: UserLoginProfileArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserLoginProfileArgs](x: Self) {
       
-      @scala.inline
-      def setPasswordLength(value: Input[Double]): Self = StObject.set(x, "passwordLength", value.asInstanceOf[js.Any])
+      inline def setPasswordLength(value: Input[Double]): Self = StObject.set(x, "passwordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordLengthUndefined: Self = StObject.set(x, "passwordLength", js.undefined)
+      inline def setPasswordLengthUndefined: Self = StObject.set(x, "passwordLength", js.undefined)
       
-      @scala.inline
-      def setPasswordResetRequired(value: Input[Boolean]): Self = StObject.set(x, "passwordResetRequired", value.asInstanceOf[js.Any])
+      inline def setPasswordResetRequired(value: Input[Boolean]): Self = StObject.set(x, "passwordResetRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordResetRequiredUndefined: Self = StObject.set(x, "passwordResetRequired", js.undefined)
+      inline def setPasswordResetRequiredUndefined: Self = StObject.set(x, "passwordResetRequired", js.undefined)
       
-      @scala.inline
-      def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
+      inline def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,50 +161,36 @@ object userLoginProfileMod {
   }
   object UserLoginProfileState {
     
-    @scala.inline
-    def apply(): UserLoginProfileState = {
+    inline def apply(): UserLoginProfileState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserLoginProfileState]
     }
     
-    @scala.inline
-    implicit class UserLoginProfileStateMutableBuilder[Self <: UserLoginProfileState] (val x: Self) extends AnyVal {
+    extension [Self <: UserLoginProfileState](x: Self) {
       
-      @scala.inline
-      def setEncryptedPassword(value: Input[String]): Self = StObject.set(x, "encryptedPassword", value.asInstanceOf[js.Any])
+      inline def setEncryptedPassword(value: Input[String]): Self = StObject.set(x, "encryptedPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedPasswordUndefined: Self = StObject.set(x, "encryptedPassword", js.undefined)
+      inline def setEncryptedPasswordUndefined: Self = StObject.set(x, "encryptedPassword", js.undefined)
       
-      @scala.inline
-      def setKeyFingerprint(value: Input[String]): Self = StObject.set(x, "keyFingerprint", value.asInstanceOf[js.Any])
+      inline def setKeyFingerprint(value: Input[String]): Self = StObject.set(x, "keyFingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFingerprintUndefined: Self = StObject.set(x, "keyFingerprint", js.undefined)
+      inline def setKeyFingerprintUndefined: Self = StObject.set(x, "keyFingerprint", js.undefined)
       
-      @scala.inline
-      def setPasswordLength(value: Input[Double]): Self = StObject.set(x, "passwordLength", value.asInstanceOf[js.Any])
+      inline def setPasswordLength(value: Input[Double]): Self = StObject.set(x, "passwordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordLengthUndefined: Self = StObject.set(x, "passwordLength", js.undefined)
+      inline def setPasswordLengthUndefined: Self = StObject.set(x, "passwordLength", js.undefined)
       
-      @scala.inline
-      def setPasswordResetRequired(value: Input[Boolean]): Self = StObject.set(x, "passwordResetRequired", value.asInstanceOf[js.Any])
+      inline def setPasswordResetRequired(value: Input[Boolean]): Self = StObject.set(x, "passwordResetRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordResetRequiredUndefined: Self = StObject.set(x, "passwordResetRequired", js.undefined)
+      inline def setPasswordResetRequiredUndefined: Self = StObject.set(x, "passwordResetRequired", js.undefined)
       
-      @scala.inline
-      def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
+      inline def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPgpKeyUndefined: Self = StObject.set(x, "pgpKey", js.undefined)
+      inline def setPgpKeyUndefined: Self = StObject.set(x, "pgpKey", js.undefined)
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
 }

@@ -14,16 +14,13 @@ trait GetWindowBoundsResponse extends StObject {
 }
 object GetWindowBoundsResponse {
   
-  @scala.inline
-  def apply(bounds: Bounds): GetWindowBoundsResponse = {
+  inline def apply(bounds: Bounds): GetWindowBoundsResponse = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWindowBoundsResponse]
   }
   
-  @scala.inline
-  implicit class GetWindowBoundsResponseMutableBuilder[Self <: GetWindowBoundsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWindowBoundsResponse](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
   }
 }

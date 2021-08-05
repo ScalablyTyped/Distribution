@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NoticeTypeOptions extends StObject
 object NoticeTypeOptions {
   
-  @scala.inline
-  def error: typings.jqueryPnotify.jqueryPnotifyStrings.error = "error".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.error]
+  inline def error: typings.jqueryPnotify.jqueryPnotifyStrings.error = "error".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.error]
   
-  @scala.inline
-  def info: typings.jqueryPnotify.jqueryPnotifyStrings.info = "info".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.info]
+  inline def info: typings.jqueryPnotify.jqueryPnotifyStrings.info = "info".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.info]
   
-  @scala.inline
-  def notice: typings.jqueryPnotify.jqueryPnotifyStrings.notice = "notice".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.notice]
+  inline def notice: typings.jqueryPnotify.jqueryPnotifyStrings.notice = "notice".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.notice]
   
-  @scala.inline
-  def success: typings.jqueryPnotify.jqueryPnotifyStrings.success = "success".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.success]
+  inline def success: typings.jqueryPnotify.jqueryPnotifyStrings.success = "success".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.success]
 }

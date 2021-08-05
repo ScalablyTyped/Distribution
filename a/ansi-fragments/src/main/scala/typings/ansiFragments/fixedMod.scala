@@ -18,18 +18,17 @@ object fixedMod {
        with IFragment {
     def this(width: Double, bias: Bias, children: js.Array[String | IFragment]) = this()
     
-    val bias: js.Any = js.native
+    /* private */ val bias: js.Any = js.native
     
     /* CompleteClass */
     override def build(): String = js.native
     
-    val children: js.Any = js.native
+    /* private */ val children: js.Any = js.native
     
-    val width: js.Any = js.native
+    /* private */ val width: js.Any = js.native
   }
   
-  @scala.inline
-  def fixed(value: Double, bias: Bias, children: (String | IFragment)*): Fixed_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(value.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Fixed_]
+  inline def fixed(value: Double, bias: Bias, children: (String | IFragment)*): Fixed_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(value.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Fixed_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.start
@@ -38,10 +37,8 @@ object fixedMod {
   trait Bias extends StObject
   object Bias {
     
-    @scala.inline
-    def end: typings.ansiFragments.ansiFragmentsStrings.end = "end".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.end]
+    inline def end: typings.ansiFragments.ansiFragmentsStrings.end = "end".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.end]
     
-    @scala.inline
-    def start: typings.ansiFragments.ansiFragmentsStrings.start = "start".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.start]
+    inline def start: typings.ansiFragments.ansiFragmentsStrings.start = "start".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.start]
   }
 }

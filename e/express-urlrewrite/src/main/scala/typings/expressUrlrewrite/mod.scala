@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(s: String): Handler = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Handler]
-  @scala.inline
-  def apply(s: String, t: String): Handler = (^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Handler]
-  @scala.inline
-  def apply(s: RegExp, t: String): Handler = (^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def apply(s: String): Handler = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def apply(s: String, t: String): Handler = (^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def apply(s: RegExp, t: String): Handler = (^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
   @JSImport("express-urlrewrite", JSImport.Namespace)
   @js.native

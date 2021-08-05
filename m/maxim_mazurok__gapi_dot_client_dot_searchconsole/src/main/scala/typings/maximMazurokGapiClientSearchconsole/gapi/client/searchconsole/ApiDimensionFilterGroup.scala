@@ -12,28 +12,21 @@ trait ApiDimensionFilterGroup extends StObject {
 }
 object ApiDimensionFilterGroup {
   
-  @scala.inline
-  def apply(): ApiDimensionFilterGroup = {
+  inline def apply(): ApiDimensionFilterGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiDimensionFilterGroup]
   }
   
-  @scala.inline
-  implicit class ApiDimensionFilterGroupMutableBuilder[Self <: ApiDimensionFilterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ApiDimensionFilterGroup](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[ApiDimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[ApiDimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
+    inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
+    inline def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
   }
 }

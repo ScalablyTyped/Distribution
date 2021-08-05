@@ -32,8 +32,7 @@ trait AccessibleTextEmbeddedObject
      with XAccessibleEventBroadcaster
 object AccessibleTextEmbeddedObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleImageDescription: String,

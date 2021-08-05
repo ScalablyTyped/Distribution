@@ -17,33 +17,23 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calcMoveStatus(startTouches: js.Any, touches: js.Any, time: js.Any): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("calcMoveStatus")(startTouches.asInstanceOf[js.Any], touches.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Time]
+  inline def calcMoveStatus(startTouches: js.Any, touches: js.Any, time: js.Any): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("calcMoveStatus")(startTouches.asInstanceOf[js.Any], touches.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Time]
   
-  @scala.inline
-  def calcMutliFingerStatus(touches: js.Any): js.UndefOr[Angle] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcMutliFingerStatus")(touches.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Angle]]
+  inline def calcMutliFingerStatus(touches: js.Any): js.UndefOr[Angle] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcMutliFingerStatus")(touches.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Angle]]
   
-  @scala.inline
-  def calcRotation(startMutliFingerStatus: js.Any, mutliFingerStatus: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcRotation")(startMutliFingerStatus.asInstanceOf[js.Any], mutliFingerStatus.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def calcRotation(startMutliFingerStatus: js.Any, mutliFingerStatus: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcRotation")(startMutliFingerStatus.asInstanceOf[js.Any], mutliFingerStatus.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getDirection(x: js.Any, y: js.Any): `1` | `2` | `4` | `8` | `16` = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[`1` | `2` | `4` | `8` | `16`]
+  inline def getDirection(x: js.Any, y: js.Any): `1` | `2` | `4` | `8` | `16` = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[`1` | `2` | `4` | `8` | `16`]
   
-  @scala.inline
-  def getDirectionEventName(direction: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectionEventName")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getDirectionEventName(direction: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectionEventName")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getEventName(prefix: js.Any, status: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventName")(prefix.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getEventName(prefix: js.Any, status: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventName")(prefix.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getMovingDirection(point1: js.Any, point2: js.Any): `1` | `2` | `4` | `8` | `16` = (^.asInstanceOf[js.Dynamic].applyDynamic("getMovingDirection")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[`1` | `2` | `4` | `8` | `16`]
+  inline def getMovingDirection(point1: js.Any, point2: js.Any): `1` | `2` | `4` | `8` | `16` = (^.asInstanceOf[js.Dynamic].applyDynamic("getMovingDirection")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[`1` | `2` | `4` | `8` | `16`]
   
-  @scala.inline
-  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @scala.inline
-  def shouldTriggerDirection(direction: js.Any, directionSetting: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldTriggerDirection")(direction.asInstanceOf[js.Any], directionSetting.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldTriggerDirection(direction: js.Any, directionSetting: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldTriggerDirection")(direction.asInstanceOf[js.Any], directionSetting.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def shouldTriggerSwipe(delta: js.Any, velocity: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldTriggerSwipe")(delta.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldTriggerSwipe(delta: js.Any, velocity: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldTriggerSwipe")(delta.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

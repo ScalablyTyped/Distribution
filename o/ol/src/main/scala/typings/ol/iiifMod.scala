@@ -69,152 +69,104 @@ object iiifMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(size: Size): Options = {
+    inline def apply(size: Size): Options = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+      inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributionsCollapsible(value: Boolean): Self = StObject.set(x, "attributionsCollapsible", value.asInstanceOf[js.Any])
+      inline def setAttributionsCollapsible(value: Boolean): Self = StObject.set(x, "attributionsCollapsible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributionsCollapsibleUndefined: Self = StObject.set(x, "attributionsCollapsible", js.undefined)
+      inline def setAttributionsCollapsibleUndefined: Self = StObject.set(x, "attributionsCollapsible", js.undefined)
       
-      @scala.inline
-      def setAttributionsFunction1(value: /* p0 */ FrameState => String | js.Array[String]): Self = StObject.set(x, "attributions", js.Any.fromFunction1(value))
+      inline def setAttributionsFunction1(value: /* p0 */ FrameState => String | js.Array[String]): Self = StObject.set(x, "attributions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+      inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      @scala.inline
-      def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
       
-      @scala.inline
-      def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+      inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+      inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
-      @scala.inline
-      def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setImageSmoothing(value: Boolean): Self = StObject.set(x, "imageSmoothing", value.asInstanceOf[js.Any])
+      inline def setImageSmoothing(value: Boolean): Self = StObject.set(x, "imageSmoothing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSmoothingUndefined: Self = StObject.set(x, "imageSmoothing", js.undefined)
+      inline def setImageSmoothingUndefined: Self = StObject.set(x, "imageSmoothing", js.undefined)
       
-      @scala.inline
-      def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setReprojectionErrorThreshold(value: Double): Self = StObject.set(x, "reprojectionErrorThreshold", value.asInstanceOf[js.Any])
+      inline def setReprojectionErrorThreshold(value: Double): Self = StObject.set(x, "reprojectionErrorThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
+      inline def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
       
-      @scala.inline
-      def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+      inline def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
+      inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      @scala.inline
-      def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizes(value: js.Array[Size]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: js.Array[Size]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      @scala.inline
-      def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+      inline def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
+      inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
       
-      @scala.inline
-      def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
+      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
       
-      @scala.inline
-      def setTilePixelRatio(value: Double): Self = StObject.set(x, "tilePixelRatio", value.asInstanceOf[js.Any])
+      inline def setTilePixelRatio(value: Double): Self = StObject.set(x, "tilePixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTilePixelRatioUndefined: Self = StObject.set(x, "tilePixelRatio", js.undefined)
+      inline def setTilePixelRatioUndefined: Self = StObject.set(x, "tilePixelRatio", js.undefined)
       
-      @scala.inline
-      def setTileSize(value: Double | Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+      inline def setTileSize(value: Double | Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+      inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
       
-      @scala.inline
-      def setTransition(value: Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Versions): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Versions): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setZDirection(value: Double): Self = StObject.set(x, "zDirection", value.asInstanceOf[js.Any])
+      inline def setZDirection(value: Double): Self = StObject.set(x, "zDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZDirectionUndefined: Self = StObject.set(x, "zDirection", js.undefined)
+      inline def setZDirectionUndefined: Self = StObject.set(x, "zDirection", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait GetAccountPasswordPolicyResponse extends StObject {
 }
 object GetAccountPasswordPolicyResponse {
   
-  @scala.inline
-  def apply(PasswordPolicy: PasswordPolicy): GetAccountPasswordPolicyResponse = {
+  inline def apply(PasswordPolicy: PasswordPolicy): GetAccountPasswordPolicyResponse = {
     val __obj = js.Dynamic.literal(PasswordPolicy = PasswordPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountPasswordPolicyResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountPasswordPolicyResponseMutableBuilder[Self <: GetAccountPasswordPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountPasswordPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setPasswordPolicy(value: PasswordPolicy): Self = StObject.set(x, "PasswordPolicy", value.asInstanceOf[js.Any])
+    inline def setPasswordPolicy(value: PasswordPolicy): Self = StObject.set(x, "PasswordPolicy", value.asInstanceOf[js.Any])
   }
 }

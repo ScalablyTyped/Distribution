@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRVisibilityState extends StObject
 object XRVisibilityState {
   
-  @scala.inline
-  def hidden: typings.three.threeStrings.hidden = "hidden".asInstanceOf[typings.three.threeStrings.hidden]
+  inline def hidden: typings.three.threeStrings.hidden = "hidden".asInstanceOf[typings.three.threeStrings.hidden]
   
-  @scala.inline
-  def visible: typings.three.threeStrings.visible = "visible".asInstanceOf[typings.three.threeStrings.visible]
+  inline def visible: typings.three.threeStrings.visible = "visible".asInstanceOf[typings.three.threeStrings.visible]
   
-  @scala.inline
-  def `visible-blurred`: typings.three.threeStrings.`visible-blurred` = "visible-blurred".asInstanceOf[typings.three.threeStrings.`visible-blurred`]
+  inline def `visible-blurred`: typings.three.threeStrings.`visible-blurred` = "visible-blurred".asInstanceOf[typings.three.threeStrings.`visible-blurred`]
 }

@@ -16,19 +16,15 @@ trait SchemaGroupsExportOptions extends StObject {
 }
 object SchemaGroupsExportOptions {
   
-  @scala.inline
-  def apply(): SchemaGroupsExportOptions = {
+  inline def apply(): SchemaGroupsExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupsExportOptions]
   }
   
-  @scala.inline
-  implicit class SchemaGroupsExportOptionsMutableBuilder[Self <: SchemaGroupsExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroupsExportOptions](x: Self) {
     
-    @scala.inline
-    def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
+    inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
+    inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
   }
 }

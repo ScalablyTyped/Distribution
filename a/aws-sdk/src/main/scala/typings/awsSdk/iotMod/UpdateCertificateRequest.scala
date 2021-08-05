@@ -18,19 +18,15 @@ trait UpdateCertificateRequest extends StObject {
 }
 object UpdateCertificateRequest {
   
-  @scala.inline
-  def apply(certificateId: CertificateId, newStatus: CertificateStatus): UpdateCertificateRequest = {
+  inline def apply(certificateId: CertificateId, newStatus: CertificateStatus): UpdateCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any], newStatus = newStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCertificateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCertificateRequestMutableBuilder[Self <: UpdateCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewStatus(value: CertificateStatus): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
+    inline def setNewStatus(value: CertificateStatus): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
   }
 }

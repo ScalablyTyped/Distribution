@@ -47,43 +47,31 @@ trait VectorTileLayerProperties
 }
 object VectorTileLayerProperties {
   
-  @scala.inline
-  def apply(): VectorTileLayerProperties = {
+  inline def apply(): VectorTileLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VectorTileLayerProperties]
   }
   
-  @scala.inline
-  implicit class VectorTileLayerPropertiesMutableBuilder[Self <: VectorTileLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VectorTileLayerProperties](x: Self) {
     
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait PickImpldecimal extends StObject {
 }
 object PickImpldecimal {
   
-  @scala.inline
-  def apply(decimal: String): PickImpldecimal = {
+  inline def apply(decimal: String): PickImpldecimal = {
     val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldecimal]
   }
   
-  @scala.inline
-  implicit class PickImpldecimalMutableBuilder[Self <: PickImpldecimal] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldecimal](x: Self) {
     
-    @scala.inline
-    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
   }
 }

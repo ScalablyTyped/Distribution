@@ -12,32 +12,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
+  inline def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
   
-  @scala.inline
-  def expect[T](value: T): AssertionChain[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionChain[T]]
-  @scala.inline
-  def expect[T](value: T, prefix: String): AssertionChain[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[AssertionChain[T]]
-  @scala.inline
-  def expect[T](value: js.Array[T]): AssertionChain[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionChain[T]]
-  @scala.inline
-  def expect[T](value: js.Array[T], prefix: String): AssertionChain[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[AssertionChain[T]]
+  inline def expect[T](value: T): AssertionChain[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionChain[T]]
+  inline def expect[T](value: T, prefix: String): AssertionChain[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[AssertionChain[T]]
+  inline def expect[T](value: js.Array[T]): AssertionChain[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionChain[T]]
+  inline def expect[T](value: js.Array[T], prefix: String): AssertionChain[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[AssertionChain[T]]
   
-  @scala.inline
-  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
+  inline def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
   
   @JSImport("code", "settings")
   @js.native
   val settings: Settings_ = js.native
   
-  @scala.inline
-  def thrownAt(): CodeError = ^.asInstanceOf[js.Dynamic].applyDynamic("thrownAt")().asInstanceOf[CodeError]
-  @scala.inline
-  def thrownAt(error: Error): CodeError = ^.asInstanceOf[js.Dynamic].applyDynamic("thrownAt")(error.asInstanceOf[js.Any]).asInstanceOf[CodeError]
+  inline def thrownAt(): CodeError = ^.asInstanceOf[js.Dynamic].applyDynamic("thrownAt")().asInstanceOf[CodeError]
+  inline def thrownAt(error: Error): CodeError = ^.asInstanceOf[js.Dynamic].applyDynamic("thrownAt")(error.asInstanceOf[js.Any]).asInstanceOf[CodeError]
   
   trait Assertion[T]
     extends StObject
@@ -45,8 +36,7 @@ object mod {
        with Flags[T]
   object Assertion {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       a: AssertionChain[T],
       an: AssertionChain[T],
       and: AssertionChain[T],
@@ -78,23 +68,18 @@ object mod {
   }
   object CodeError {
     
-    @scala.inline
-    def apply(column: String, filename: String, line: String): CodeError = {
+    inline def apply(column: String, filename: String, line: String): CodeError = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeError]
     }
     
-    @scala.inline
-    implicit class CodeErrorMutableBuilder[Self <: CodeError] (val x: Self) extends AnyVal {
+    extension [Self <: CodeError](x: Self) {
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +120,7 @@ object mod {
   }
   object Flags {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       not: AssertionChain[T],
       once: AssertionChain[T],
       only: AssertionChain[T],
@@ -147,23 +131,17 @@ object mod {
       __obj.asInstanceOf[Flags[T]]
     }
     
-    @scala.inline
-    implicit class FlagsMutableBuilder[Self <: Flags[?], T] (val x: Self & Flags[T]) extends AnyVal {
+    extension [Self <: Flags[?], T](x: Self & Flags[T]) {
       
-      @scala.inline
-      def setNot(value: AssertionChain[T]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: AssertionChain[T]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnce(value: AssertionChain[T]): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: AssertionChain[T]): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnly(value: AssertionChain[T]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: AssertionChain[T]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPart(value: AssertionChain[T]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+      inline def setPart(value: AssertionChain[T]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShallow(value: AssertionChain[T]): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+      inline def setShallow(value: AssertionChain[T]): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,8 +173,7 @@ object mod {
   }
   object Grammar {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       a: AssertionChain[T],
       an: AssertionChain[T],
       and: AssertionChain[T],
@@ -210,32 +187,23 @@ object mod {
       __obj.asInstanceOf[Grammar[T]]
     }
     
-    @scala.inline
-    implicit class GrammarMutableBuilder[Self <: Grammar[?], T] (val x: Self & Grammar[T]) extends AnyVal {
+    extension [Self <: Grammar[?], T](x: Self & Grammar[T]) {
       
-      @scala.inline
-      def setA(value: AssertionChain[T]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: AssertionChain[T]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAn(value: AssertionChain[T]): Self = StObject.set(x, "an", value.asInstanceOf[js.Any])
+      inline def setAn(value: AssertionChain[T]): Self = StObject.set(x, "an", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnd(value: AssertionChain[T]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+      inline def setAnd(value: AssertionChain[T]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAt(value: AssertionChain[T]): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      inline def setAt(value: AssertionChain[T]): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBe(value: AssertionChain[T]): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
+      inline def setBe(value: AssertionChain[T]): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHave(value: AssertionChain[T]): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
+      inline def setHave(value: AssertionChain[T]): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIn(value: AssertionChain[T]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: AssertionChain[T]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: AssertionChain[T]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: AssertionChain[T]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,26 +223,20 @@ object mod {
   }
   object Settings_ {
     
-    @scala.inline
-    def apply(): Settings_ = {
+    inline def apply(): Settings_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings_]
     }
     
-    @scala.inline
-    implicit class Settings_MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
+    extension [Self <: Settings_](x: Self) {
       
-      @scala.inline
-      def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
+      inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
+      inline def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
       
-      @scala.inline
-      def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
+      inline def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
+      inline def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
     }
   }
   

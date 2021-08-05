@@ -15,12 +15,9 @@ object Reflog {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def delete(repo: typings.nodegit.repositoryMod.Repository, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def delete(repo: typings.nodegit.repositoryMod.Repository, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def read(repo: typings.nodegit.repositoryMod.Repository, name: String): js.Promise[typings.nodegit.refLogMod.Reflog] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.refLogMod.Reflog]]
+  inline def read(repo: typings.nodegit.repositoryMod.Repository, name: String): js.Promise[typings.nodegit.refLogMod.Reflog] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.refLogMod.Reflog]]
   
-  @scala.inline
-  def rename(repo: typings.nodegit.repositoryMod.Repository, oldName: String, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(repo.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def rename(repo: typings.nodegit.repositoryMod.Repository, oldName: String, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(repo.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

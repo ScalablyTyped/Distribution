@@ -17,31 +17,23 @@ trait CreativeDealAssociation extends StObject {
 }
 object CreativeDealAssociation {
   
-  @scala.inline
-  def apply(): CreativeDealAssociation = {
+  inline def apply(): CreativeDealAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeDealAssociation]
   }
   
-  @scala.inline
-  implicit class CreativeDealAssociationMutableBuilder[Self <: CreativeDealAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeDealAssociation](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
+    inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
-    @scala.inline
-    def setDealsId(value: String): Self = StObject.set(x, "dealsId", value.asInstanceOf[js.Any])
+    inline def setDealsId(value: String): Self = StObject.set(x, "dealsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealsIdUndefined: Self = StObject.set(x, "dealsId", js.undefined)
+    inline def setDealsIdUndefined: Self = StObject.set(x, "dealsId", js.undefined)
   }
 }

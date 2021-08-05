@@ -9,77 +9,63 @@ object reactNavigationDrawerStrings {
   
   @js.native
   sealed trait CHILD_ACTION extends StObject
-  @scala.inline
-  def CHILD_ACTION: CHILD_ACTION = "CHILD_ACTION".asInstanceOf[CHILD_ACTION]
+  inline def CHILD_ACTION: CHILD_ACTION = "CHILD_ACTION".asInstanceOf[CHILD_ACTION]
   
   @js.native
   sealed trait back extends StObject
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
+  inline def back: back = "back".asInstanceOf[back]
   
   @js.native
   sealed trait fade extends StObject
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
   sealed trait front extends StObject
-  @scala.inline
-  def front: front = "front".asInstanceOf[front]
+  inline def front: front = "front".asInstanceOf[front]
   
   @js.native
   sealed trait history extends StObject
-  @scala.inline
-  def history: history = "history".asInstanceOf[history]
+  inline def history: history = "history".asInstanceOf[history]
   
   @js.native
   sealed trait initialRoute extends StObject
-  @scala.inline
-  def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
+  inline def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait `locked-closed`
     extends StObject
        with DrawerLockMode
-  @scala.inline
-  def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
+  inline def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
   
   @js.native
   sealed trait `locked-open`
     extends StObject
        with DrawerLockMode
-  @scala.inline
-  def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
+  inline def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait `on-drag` extends StObject
-  @scala.inline
-  def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
+  inline def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait slide extends StObject
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
   sealed trait unlocked
     extends StObject
        with DrawerLockMode
-  @scala.inline
-  def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
+  inline def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
 }

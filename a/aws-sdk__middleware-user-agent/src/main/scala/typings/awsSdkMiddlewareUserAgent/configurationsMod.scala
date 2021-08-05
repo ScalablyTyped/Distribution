@@ -10,8 +10,7 @@ object configurationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveUserAgentConfig[T](input: T & PreviouslyResolved & UserAgentInputConfig): T & UserAgentResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUserAgentConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & UserAgentResolvedConfig]
+  inline def resolveUserAgentConfig[T](input: T & PreviouslyResolved & UserAgentInputConfig): T & UserAgentResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUserAgentConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & UserAgentResolvedConfig]
   
   trait PreviouslyResolved extends StObject {
     
@@ -21,20 +20,16 @@ object configurationsMod {
   }
   object PreviouslyResolved {
     
-    @scala.inline
-    def apply(defaultUserAgent: String, runtime: String): PreviouslyResolved = {
+    inline def apply(defaultUserAgent: String, runtime: String): PreviouslyResolved = {
       val __obj = js.Dynamic.literal(defaultUserAgent = defaultUserAgent.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    @scala.inline
-    implicit class PreviouslyResolvedMutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
+    extension [Self <: PreviouslyResolved](x: Self) {
       
-      @scala.inline
-      def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +42,16 @@ object configurationsMod {
   }
   object UserAgentInputConfig {
     
-    @scala.inline
-    def apply(): UserAgentInputConfig = {
+    inline def apply(): UserAgentInputConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserAgentInputConfig]
     }
     
-    @scala.inline
-    implicit class UserAgentInputConfigMutableBuilder[Self <: UserAgentInputConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgentInputConfig](x: Self) {
       
-      @scala.inline
-      def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
+      inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
     }
   }
   
@@ -74,26 +65,20 @@ object configurationsMod {
   }
   object UserAgentResolvedConfig {
     
-    @scala.inline
-    def apply(defaultUserAgent: String, runtime: String): UserAgentResolvedConfig = {
+    inline def apply(defaultUserAgent: String, runtime: String): UserAgentResolvedConfig = {
       val __obj = js.Dynamic.literal(defaultUserAgent = defaultUserAgent.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgentResolvedConfig]
     }
     
-    @scala.inline
-    implicit class UserAgentResolvedConfigMutableBuilder[Self <: UserAgentResolvedConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgentResolvedConfig](x: Self) {
       
-      @scala.inline
-      def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
+      inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
       
-      @scala.inline
-      def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }
   }
 }

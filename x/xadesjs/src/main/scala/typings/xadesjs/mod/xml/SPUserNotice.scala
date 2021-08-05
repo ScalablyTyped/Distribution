@@ -13,6 +13,5 @@ class SPUserNotice ()
   extends typings.xadesjs.xmlMod.SPUserNotice
 object SPUserNotice {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SPUserNotice] = ^.asInstanceOf[js.Dynamic].selectDynamic("SPUserNotice").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SPUserNotice]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SPUserNotice] = ^.asInstanceOf[js.Dynamic].selectDynamic("SPUserNotice").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SPUserNotice]]
 }

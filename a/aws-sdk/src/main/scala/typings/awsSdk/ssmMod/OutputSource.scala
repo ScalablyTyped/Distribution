@@ -18,25 +18,19 @@ trait OutputSource extends StObject {
 }
 object OutputSource {
   
-  @scala.inline
-  def apply(): OutputSource = {
+  inline def apply(): OutputSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputSource]
   }
   
-  @scala.inline
-  implicit class OutputSourceMutableBuilder[Self <: OutputSource] (val x: Self) extends AnyVal {
+  extension [Self <: OutputSource](x: Self) {
     
-    @scala.inline
-    def setOutputSourceId(value: OutputSourceId): Self = StObject.set(x, "OutputSourceId", value.asInstanceOf[js.Any])
+    inline def setOutputSourceId(value: OutputSourceId): Self = StObject.set(x, "OutputSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSourceIdUndefined: Self = StObject.set(x, "OutputSourceId", js.undefined)
+    inline def setOutputSourceIdUndefined: Self = StObject.set(x, "OutputSourceId", js.undefined)
     
-    @scala.inline
-    def setOutputSourceType(value: OutputSourceType): Self = StObject.set(x, "OutputSourceType", value.asInstanceOf[js.Any])
+    inline def setOutputSourceType(value: OutputSourceType): Self = StObject.set(x, "OutputSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSourceTypeUndefined: Self = StObject.set(x, "OutputSourceType", js.undefined)
+    inline def setOutputSourceTypeUndefined: Self = StObject.set(x, "OutputSourceType", js.undefined)
   }
 }

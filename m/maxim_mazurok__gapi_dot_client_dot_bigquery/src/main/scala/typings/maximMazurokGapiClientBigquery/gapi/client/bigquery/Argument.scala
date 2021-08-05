@@ -20,37 +20,27 @@ trait Argument extends StObject {
 }
 object Argument {
   
-  @scala.inline
-  def apply(): Argument = {
+  inline def apply(): Argument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Argument]
   }
   
-  @scala.inline
-  implicit class ArgumentMutableBuilder[Self <: Argument] (val x: Self) extends AnyVal {
+  extension [Self <: Argument](x: Self) {
     
-    @scala.inline
-    def setArgumentKind(value: String): Self = StObject.set(x, "argumentKind", value.asInstanceOf[js.Any])
+    inline def setArgumentKind(value: String): Self = StObject.set(x, "argumentKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentKindUndefined: Self = StObject.set(x, "argumentKind", js.undefined)
+    inline def setArgumentKindUndefined: Self = StObject.set(x, "argumentKind", js.undefined)
     
-    @scala.inline
-    def setDataType(value: StandardSqlDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: StandardSqlDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

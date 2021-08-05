@@ -29,67 +29,47 @@ trait ScheduleItem extends StObject {
 }
 object ScheduleItem {
   
-  @scala.inline
-  def apply(): ScheduleItem = {
+  inline def apply(): ScheduleItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduleItem]
   }
   
-  @scala.inline
-  implicit class ScheduleItemMutableBuilder[Self <: ScheduleItem] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleItem](x: Self) {
     
-    @scala.inline
-    def setEnd(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndNull: Self = StObject.set(x, "end", null)
+    inline def setEndNull: Self = StObject.set(x, "end", null)
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setIsPrivate(value: NullableOption[Boolean]): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+    inline def setIsPrivate(value: NullableOption[Boolean]): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrivateNull: Self = StObject.set(x, "isPrivate", null)
+    inline def setIsPrivateNull: Self = StObject.set(x, "isPrivate", null)
     
-    @scala.inline
-    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
+    inline def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
-    @scala.inline
-    def setLocation(value: NullableOption[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: NullableOption[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNull: Self = StObject.set(x, "location", null)
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStart(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartNull: Self = StObject.set(x, "start", null)
+    inline def setStartNull: Self = StObject.set(x, "start", null)
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NullableOption[FreeBusyStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NullableOption[FreeBusyStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectNull: Self = StObject.set(x, "subject", null)
+    inline def setSubjectNull: Self = StObject.set(x, "subject", null)
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

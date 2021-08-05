@@ -157,8 +157,7 @@ object gaugeBandMod {
   }
   object GaugeBand {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Double,
       balloonText: String,
       color: String,
@@ -176,47 +175,33 @@ object gaugeBandMod {
       __obj.asInstanceOf[GaugeBand]
     }
     
-    @scala.inline
-    implicit class GaugeBandMutableBuilder[Self <: GaugeBand] (val x: Self) extends AnyVal {
+    extension [Self <: GaugeBand](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
+      inline def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+      inline def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientRatio(value: js.Array[Double]): Self = StObject.set(x, "gradientRatio", value.asInstanceOf[js.Any])
+      inline def setGradientRatio(value: js.Array[Double]): Self = StObject.set(x, "gradientRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientRatioVarargs(value: Double*): Self = StObject.set(x, "gradientRatio", js.Array(value :_*))
+      inline def setGradientRatioVarargs(value: Double*): Self = StObject.set(x, "gradientRatio", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRadius(value: js.Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: js.Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: js.Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: js.Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetEndValue(value: Double => Unit): Self = StObject.set(x, "setEndValue", js.Any.fromFunction1(value))
+      inline def setSetEndValue(value: Double => Unit): Self = StObject.set(x, "setEndValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStartValue(value: Double => Unit): Self = StObject.set(x, "setStartValue", js.Any.fromFunction1(value))
+      inline def setSetStartValue(value: Double => Unit): Self = StObject.set(x, "setStartValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+      inline def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

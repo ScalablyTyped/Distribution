@@ -13,8 +13,7 @@ trait CommandRegistryTargetMap
      with /* key */ StringDictionary[EventTarget]
 object CommandRegistryTargetMap {
   
-  @scala.inline
-  def apply(`atom-text-editor`: TextEditorElement): CommandRegistryTargetMap = {
+  inline def apply(`atom-text-editor`: TextEditorElement): CommandRegistryTargetMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("atom-text-editor")(`atom-text-editor`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandRegistryTargetMap]

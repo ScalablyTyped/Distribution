@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PageOrder extends StObject
 object PageOrder {
   
-  @scala.inline
-  def `1-to-n-order`: typings.ipp.ippStrings.`1-to-n-order` = "1-to-n-order".asInstanceOf[typings.ipp.ippStrings.`1-to-n-order`]
+  inline def `1-to-n-order`: typings.ipp.ippStrings.`1-to-n-order` = "1-to-n-order".asInstanceOf[typings.ipp.ippStrings.`1-to-n-order`]
   
-  @scala.inline
-  def `n-to-1-order`: typings.ipp.ippStrings.`n-to-1-order` = "n-to-1-order".asInstanceOf[typings.ipp.ippStrings.`n-to-1-order`]
+  inline def `n-to-1-order`: typings.ipp.ippStrings.`n-to-1-order` = "n-to-1-order".asInstanceOf[typings.ipp.ippStrings.`n-to-1-order`]
 }

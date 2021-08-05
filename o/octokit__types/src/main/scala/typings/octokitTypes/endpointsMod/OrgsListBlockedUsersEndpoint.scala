@@ -11,17 +11,14 @@ trait OrgsListBlockedUsersEndpoint extends StObject {
 }
 object OrgsListBlockedUsersEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): OrgsListBlockedUsersEndpoint = {
+  inline def apply(org_ : String): OrgsListBlockedUsersEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsListBlockedUsersEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsListBlockedUsersEndpointMutableBuilder[Self <: OrgsListBlockedUsersEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsListBlockedUsersEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait GetVpcEndpointServiceFilter extends StObject {
 }
 object GetVpcEndpointServiceFilter {
   
-  @scala.inline
-  def apply(name: String, values: js.Array[String]): GetVpcEndpointServiceFilter = {
+  inline def apply(name: String, values: js.Array[String]): GetVpcEndpointServiceFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVpcEndpointServiceFilter]
   }
   
-  @scala.inline
-  implicit class GetVpcEndpointServiceFilterMutableBuilder[Self <: GetVpcEndpointServiceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GetVpcEndpointServiceFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

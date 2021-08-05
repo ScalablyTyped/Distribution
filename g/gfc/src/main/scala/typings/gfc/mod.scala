@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Stderr]]
-  @scala.inline
-  def apply(cwd: String): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
-  @scala.inline
-  def apply(
+  inline def apply(): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Stderr]]
+  inline def apply(cwd: String): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
+  inline def apply(
     cwd: String,
     callback: js.Function3[
       /* error */ ExecException | Null, 
@@ -29,10 +26,8 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(cwd: String, options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stderr]]
-  @scala.inline
-  def apply(
+  inline def apply(cwd: String, options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stderr]]
+  inline def apply(
     cwd: String,
     options: Options[ExecOptionsWithEncoding],
     callback: js.Function3[
@@ -42,21 +37,16 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
+  inline def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
   
   @JSImport("gfc", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String | Buffer]
-  @scala.inline
-  def sync(cwd: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
-  @scala.inline
-  def sync(cwd: String, options: Options[ExecSyncOptions]): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
-  @scala.inline
-  def sync(options: Options[ExecSyncOptions]): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  inline def sync(): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String | Buffer]
+  inline def sync(cwd: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  inline def sync(cwd: String, options: Options[ExecSyncOptions]): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  inline def sync(options: Options[ExecSyncOptions]): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   
   trait ExecOptionsWithEncoding
     extends StObject
@@ -66,23 +56,18 @@ object mod {
   }
   object ExecOptionsWithEncoding {
     
-    @scala.inline
-    def apply(): ExecOptionsWithEncoding = {
+    inline def apply(): ExecOptionsWithEncoding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecOptionsWithEncoding]
     }
     
-    @scala.inline
-    implicit class ExecOptionsWithEncodingMutableBuilder[Self <: ExecOptionsWithEncoding] (val x: Self) extends AnyVal {
+    extension [Self <: ExecOptionsWithEncoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding | buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding | buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
   
@@ -106,62 +91,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[TExecOptions](): Options[TExecOptions] = {
+    inline def apply[TExecOptions](): Options[TExecOptions] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[TExecOptions]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], TExecOptions] (val x: Self & Options[TExecOptions]) extends AnyVal {
+    extension [Self <: Options[?], TExecOptions](x: Self & Options[TExecOptions]) {
       
-      @scala.inline
-      def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+      inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setExec(value: TExecOptions): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+      inline def setExec(value: TExecOptions): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+      inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
       
-      @scala.inline
-      def setFile(value: Contents | `false`): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Contents | `false`): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setForceFile(value: Boolean): Self = StObject.set(x, "forceFile", value.asInstanceOf[js.Any])
+      inline def setForceFile(value: Boolean): Self = StObject.set(x, "forceFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceFileUndefined: Self = StObject.set(x, "forceFile", js.undefined)
+      inline def setForceFileUndefined: Self = StObject.set(x, "forceFile", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
       
-      @scala.inline
-      def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     }
   }
 }

@@ -43,20 +43,16 @@ object dynamodbMixinsMod {
   }
   object TableEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[TableEventRecord]): TableEvent = {
+    inline def apply(Records: js.Array[TableEventRecord]): TableEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableEvent]
     }
     
-    @scala.inline
-    implicit class TableEventMutableBuilder[Self <: TableEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TableEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[TableEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[TableEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: TableEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: TableEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -80,8 +76,7 @@ object dynamodbMixinsMod {
   }
   object TableEventRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsRegion: String,
       dynamodb: ApproximateCreationDateTime,
       eventID: String,
@@ -94,29 +89,21 @@ object dynamodbMixinsMod {
       __obj.asInstanceOf[TableEventRecord]
     }
     
-    @scala.inline
-    implicit class TableEventRecordMutableBuilder[Self <: TableEventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: TableEventRecord](x: Self) {
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodb(value: ApproximateCreationDateTime): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+      inline def setDynamodb(value: ApproximateCreationDateTime): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
+      inline def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventName(value: INSERT | MODIFY | REMOVE): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: INSERT | MODIFY | REMOVE): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
+      inline def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdentity(value: PrincipalId): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
+      inline def setUserIdentity(value: PrincipalId): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,59 +153,42 @@ object dynamodbMixinsMod {
   }
   object TableEventSubscriptionArgs {
     
-    @scala.inline
-    def apply(startingPosition: TRIM_HORIZON | LATEST): TableEventSubscriptionArgs = {
+    inline def apply(startingPosition: TRIM_HORIZON | LATEST): TableEventSubscriptionArgs = {
       val __obj = js.Dynamic.literal(startingPosition = startingPosition.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableEventSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class TableEventSubscriptionArgsMutableBuilder[Self <: TableEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TableEventSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setBisectBatchOnFunctionError(value: Boolean): Self = StObject.set(x, "bisectBatchOnFunctionError", value.asInstanceOf[js.Any])
+      inline def setBisectBatchOnFunctionError(value: Boolean): Self = StObject.set(x, "bisectBatchOnFunctionError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBisectBatchOnFunctionErrorUndefined: Self = StObject.set(x, "bisectBatchOnFunctionError", js.undefined)
+      inline def setBisectBatchOnFunctionErrorUndefined: Self = StObject.set(x, "bisectBatchOnFunctionError", js.undefined)
       
-      @scala.inline
-      def setDestinationConfig(value: Input[EventSourceMappingDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
+      inline def setDestinationConfig(value: Input[EventSourceMappingDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
+      inline def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
       
-      @scala.inline
-      def setMaximumBatchingWindowInSeconds(value: Double): Self = StObject.set(x, "maximumBatchingWindowInSeconds", value.asInstanceOf[js.Any])
+      inline def setMaximumBatchingWindowInSeconds(value: Double): Self = StObject.set(x, "maximumBatchingWindowInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumBatchingWindowInSecondsUndefined: Self = StObject.set(x, "maximumBatchingWindowInSeconds", js.undefined)
+      inline def setMaximumBatchingWindowInSecondsUndefined: Self = StObject.set(x, "maximumBatchingWindowInSeconds", js.undefined)
       
-      @scala.inline
-      def setMaximumRecordAgeInSeconds(value: Double): Self = StObject.set(x, "maximumRecordAgeInSeconds", value.asInstanceOf[js.Any])
+      inline def setMaximumRecordAgeInSeconds(value: Double): Self = StObject.set(x, "maximumRecordAgeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumRecordAgeInSecondsUndefined: Self = StObject.set(x, "maximumRecordAgeInSeconds", js.undefined)
+      inline def setMaximumRecordAgeInSecondsUndefined: Self = StObject.set(x, "maximumRecordAgeInSeconds", js.undefined)
       
-      @scala.inline
-      def setMaximumRetryAttempts(value: Double): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
+      inline def setMaximumRetryAttempts(value: Double): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
+      inline def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
       
-      @scala.inline
-      def setParallelizationFactor(value: Double): Self = StObject.set(x, "parallelizationFactor", value.asInstanceOf[js.Any])
+      inline def setParallelizationFactor(value: Double): Self = StObject.set(x, "parallelizationFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelizationFactorUndefined: Self = StObject.set(x, "parallelizationFactor", js.undefined)
+      inline def setParallelizationFactorUndefined: Self = StObject.set(x, "parallelizationFactor", js.undefined)
       
-      @scala.inline
-      def setStartingPosition(value: TRIM_HORIZON | LATEST): Self = StObject.set(x, "startingPosition", value.asInstanceOf[js.Any])
+      inline def setStartingPosition(value: TRIM_HORIZON | LATEST): Self = StObject.set(x, "startingPosition", value.asInstanceOf[js.Any])
     }
   }
   

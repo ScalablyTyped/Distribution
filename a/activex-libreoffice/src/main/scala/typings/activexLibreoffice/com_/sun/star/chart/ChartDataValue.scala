@@ -23,22 +23,17 @@ trait ChartDataValue extends StObject {
 }
 object ChartDataValue {
   
-  @scala.inline
-  def apply(HighError: Double, LowError: Double, Value: Double): ChartDataValue = {
+  inline def apply(HighError: Double, LowError: Double, Value: Double): ChartDataValue = {
     val __obj = js.Dynamic.literal(HighError = HighError.asInstanceOf[js.Any], LowError = LowError.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartDataValue]
   }
   
-  @scala.inline
-  implicit class ChartDataValueMutableBuilder[Self <: ChartDataValue] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDataValue](x: Self) {
     
-    @scala.inline
-    def setHighError(value: Double): Self = StObject.set(x, "HighError", value.asInstanceOf[js.Any])
+    inline def setHighError(value: Double): Self = StObject.set(x, "HighError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowError(value: Double): Self = StObject.set(x, "LowError", value.asInstanceOf[js.Any])
+    inline def setLowError(value: Double): Self = StObject.set(x, "LowError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

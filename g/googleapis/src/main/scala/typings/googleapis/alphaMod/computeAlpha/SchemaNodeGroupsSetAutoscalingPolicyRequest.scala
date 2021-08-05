@@ -10,19 +10,15 @@ trait SchemaNodeGroupsSetAutoscalingPolicyRequest extends StObject {
 }
 object SchemaNodeGroupsSetAutoscalingPolicyRequest {
   
-  @scala.inline
-  def apply(): SchemaNodeGroupsSetAutoscalingPolicyRequest = {
+  inline def apply(): SchemaNodeGroupsSetAutoscalingPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNodeGroupsSetAutoscalingPolicyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaNodeGroupsSetAutoscalingPolicyRequestMutableBuilder[Self <: SchemaNodeGroupsSetAutoscalingPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNodeGroupsSetAutoscalingPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAutoscalingPolicy(value: SchemaNodeGroupAutoscalingPolicy): Self = StObject.set(x, "autoscalingPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoscalingPolicy(value: SchemaNodeGroupAutoscalingPolicy): Self = StObject.set(x, "autoscalingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalingPolicyUndefined: Self = StObject.set(x, "autoscalingPolicy", js.undefined)
+    inline def setAutoscalingPolicyUndefined: Self = StObject.set(x, "autoscalingPolicy", js.undefined)
   }
 }

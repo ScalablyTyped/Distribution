@@ -15,24 +15,17 @@ object iconsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIcon(): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")().asInstanceOf[js.UndefOr[IIconRecord]]
-  @scala.inline
-  def getIcon(name: String): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IIconRecord]]
+  inline def getIcon(): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")().asInstanceOf[js.UndefOr[IIconRecord]]
+  inline def getIcon(name: String): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IIconRecord]]
   
-  @scala.inline
-  def registerIconAlias(iconName: String, mappedToName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAlias")(iconName.asInstanceOf[js.Any], mappedToName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerIconAlias(iconName: String, mappedToName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAlias")(iconName.asInstanceOf[js.Any], mappedToName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerIcons(iconSubset: IIconSubset): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerIcons(iconSubset: IIconSubset): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setIconOptions(options: PartialIIconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setIconOptions(options: PartialIIconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def unregisterIcons(iconNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterIcons")(iconNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregisterIcons(iconNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterIcons")(iconNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IIconOptions extends StObject {
     
@@ -60,23 +53,18 @@ object iconsMod {
   }
   object IIconOptions {
     
-    @scala.inline
-    def apply(disableWarnings: Boolean): IIconOptions = {
+    inline def apply(disableWarnings: Boolean): IIconOptions = {
       val __obj = js.Dynamic.literal(disableWarnings = disableWarnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconOptions]
     }
     
-    @scala.inline
-    implicit class IIconOptionsMutableBuilder[Self <: IIconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIconOptions](x: Self) {
       
-      @scala.inline
-      def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
+      inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnOnMissingIcons(value: Boolean): Self = StObject.set(x, "warnOnMissingIcons", value.asInstanceOf[js.Any])
+      inline def setWarnOnMissingIcons(value: Boolean): Self = StObject.set(x, "warnOnMissingIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnOnMissingIconsUndefined: Self = StObject.set(x, "warnOnMissingIcons", js.undefined)
+      inline def setWarnOnMissingIconsUndefined: Self = StObject.set(x, "warnOnMissingIcons", js.undefined)
     }
   }
   
@@ -88,23 +76,18 @@ object iconsMod {
   }
   object IIconRecord {
     
-    @scala.inline
-    def apply(subset: IIconSubsetRecord): IIconRecord = {
+    inline def apply(subset: IIconSubsetRecord): IIconRecord = {
       val __obj = js.Dynamic.literal(subset = subset.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconRecord]
     }
     
-    @scala.inline
-    implicit class IIconRecordMutableBuilder[Self <: IIconRecord] (val x: Self) extends AnyVal {
+    extension [Self <: IIconRecord](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setSubset(value: IIconSubsetRecord): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
+      inline def setSubset(value: IIconSubsetRecord): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,20 +101,16 @@ object iconsMod {
   }
   object IIconRecords {
     
-    @scala.inline
-    def apply(__options: IIconOptions, __remapped: StringDictionary[String]): IIconRecords = {
+    inline def apply(__options: IIconOptions, __remapped: StringDictionary[String]): IIconRecords = {
       val __obj = js.Dynamic.literal(__options = __options.asInstanceOf[js.Any], __remapped = __remapped.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconRecords]
     }
     
-    @scala.inline
-    implicit class IIconRecordsMutableBuilder[Self <: IIconRecords] (val x: Self) extends AnyVal {
+    extension [Self <: IIconRecords](x: Self) {
       
-      @scala.inline
-      def set__options(value: IIconOptions): Self = StObject.set(x, "__options", value.asInstanceOf[js.Any])
+      inline def set__options(value: IIconOptions): Self = StObject.set(x, "__options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__remapped(value: StringDictionary[String]): Self = StObject.set(x, "__remapped", value.asInstanceOf[js.Any])
+      inline def set__remapped(value: StringDictionary[String]): Self = StObject.set(x, "__remapped", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,29 +124,22 @@ object iconsMod {
   }
   object IIconSubset {
     
-    @scala.inline
-    def apply(icons: StringDictionary[String | Element]): IIconSubset = {
+    inline def apply(icons: StringDictionary[String | Element]): IIconSubset = {
       val __obj = js.Dynamic.literal(icons = icons.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconSubset]
     }
     
-    @scala.inline
-    implicit class IIconSubsetMutableBuilder[Self <: IIconSubset] (val x: Self) extends AnyVal {
+    extension [Self <: IIconSubset](x: Self) {
       
-      @scala.inline
-      def setFontFace(value: IFontFace): Self = StObject.set(x, "fontFace", value.asInstanceOf[js.Any])
+      inline def setFontFace(value: IFontFace): Self = StObject.set(x, "fontFace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFaceUndefined: Self = StObject.set(x, "fontFace", js.undefined)
+      inline def setFontFaceUndefined: Self = StObject.set(x, "fontFace", js.undefined)
       
-      @scala.inline
-      def setIcons(value: StringDictionary[String | Element]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: StringDictionary[String | Element]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: IRawStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: IRawStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -181,26 +153,20 @@ object iconsMod {
   }
   object IIconSubsetRecord {
     
-    @scala.inline
-    def apply(icons: StringDictionary[String | Element]): IIconSubsetRecord = {
+    inline def apply(icons: StringDictionary[String | Element]): IIconSubsetRecord = {
       val __obj = js.Dynamic.literal(icons = icons.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconSubsetRecord]
     }
     
-    @scala.inline
-    implicit class IIconSubsetRecordMutableBuilder[Self <: IIconSubsetRecord] (val x: Self) extends AnyVal {
+    extension [Self <: IIconSubsetRecord](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsRegistered(value: Boolean): Self = StObject.set(x, "isRegistered", value.asInstanceOf[js.Any])
+      inline def setIsRegistered(value: Boolean): Self = StObject.set(x, "isRegistered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRegisteredUndefined: Self = StObject.set(x, "isRegistered", js.undefined)
+      inline def setIsRegisteredUndefined: Self = StObject.set(x, "isRegistered", js.undefined)
     }
   }
 }

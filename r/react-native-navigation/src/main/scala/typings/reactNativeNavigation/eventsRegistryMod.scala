@@ -38,11 +38,11 @@ object eventsRegistryMod {
     def bindComponent(component: Component[js.Any, js.Object, js.Any]): EventSubscription = js.native
     def bindComponent(component: Component[js.Any, js.Object, js.Any], componentId: String): EventSubscription = js.native
     
-    var commandsObserver: js.Any = js.native
+    /* private */ var commandsObserver: js.Any = js.native
     
-    var componentEventsObserver: js.Any = js.native
+    /* private */ var componentEventsObserver: js.Any = js.native
     
-    var nativeEventsReceiver: js.Any = js.native
+    /* private */ var nativeEventsReceiver: js.Any = js.native
     
     def registerAppLaunchedListener(callback: js.Function0[Unit]): EmitterSubscription = js.native
     

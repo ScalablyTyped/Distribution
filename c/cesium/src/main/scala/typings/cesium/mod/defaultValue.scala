@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object defaultValue {
   
-  @scala.inline
-  def apply[T, D](value: T, defaultValue: D): T | D = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T | D]
+  inline def apply[T, D](value: T, defaultValue: D): T | D = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T | D]
   
   @JSImport("cesium", "defaultValue")
   @js.native

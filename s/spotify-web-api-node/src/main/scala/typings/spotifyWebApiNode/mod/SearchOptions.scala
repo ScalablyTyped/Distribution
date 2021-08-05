@@ -13,19 +13,15 @@ trait SearchOptions
 }
 object SearchOptions {
   
-  @scala.inline
-  def apply(): SearchOptions = {
+  inline def apply(): SearchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchOptions]
   }
   
-  @scala.inline
-  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchOptions](x: Self) {
     
-    @scala.inline
-    def setInclude_external(value: audio): Self = StObject.set(x, "include_external", value.asInstanceOf[js.Any])
+    inline def setInclude_external(value: audio): Self = StObject.set(x, "include_external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_externalUndefined: Self = StObject.set(x, "include_external", js.undefined)
+    inline def setInclude_externalUndefined: Self = StObject.set(x, "include_external", js.undefined)
   }
 }

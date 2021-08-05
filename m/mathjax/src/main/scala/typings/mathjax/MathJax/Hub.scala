@@ -161,8 +161,7 @@ trait Hub extends StObject {
 }
 object Hub {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Config: Config => Unit,
     Configured: () => Unit,
     Insert: (js.Any, js.Any) => js.Any,
@@ -185,112 +184,76 @@ object Hub {
     __obj.asInstanceOf[Hub]
   }
   
-  @scala.inline
-  implicit class HubMutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
+  extension [Self <: Hub](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: BrowserInfo): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: BrowserInfo): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserUndefined: Self = StObject.set(x, "Browser", js.undefined)
+    inline def setBrowserUndefined: Self = StObject.set(x, "Browser", js.undefined)
     
-    @scala.inline
-    def setConfig(value: Config => Unit): Self = StObject.set(x, "Config", js.Any.fromFunction1(value))
+    inline def setConfig(value: Config => Unit): Self = StObject.set(x, "Config", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setConfigured(value: () => Unit): Self = StObject.set(x, "Configured", js.Any.fromFunction0(value))
+    inline def setConfigured(value: () => Unit): Self = StObject.set(x, "Configured", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormatError(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "formatError", js.Any.fromFunction2(value))
+    inline def setFormatError(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "formatError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAllJax(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getAllJax", js.Any.fromFunction1(value))
+    inline def setGetAllJax(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getAllJax", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetJaxByInputType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByInputType", js.Any.fromFunction2(value))
+    inline def setGetJaxByInputType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByInputType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetJaxByType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByType", js.Any.fromFunction2(value))
+    inline def setGetJaxByType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetJaxFor(value: js.Any => js.Any): Self = StObject.set(x, "getJaxFor", js.Any.fromFunction1(value))
+    inline def setGetJaxFor(value: js.Any => js.Any): Self = StObject.set(x, "getJaxFor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInputJax(value: js.Any): Self = StObject.set(x, "inputJax", value.asInstanceOf[js.Any])
+    inline def setInputJax(value: js.Any): Self = StObject.set(x, "inputJax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputJaxUndefined: Self = StObject.set(x, "inputJax", js.undefined)
+    inline def setInputJaxUndefined: Self = StObject.set(x, "inputJax", js.undefined)
     
-    @scala.inline
-    def setInsert(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsJax(value: js.Any => Double): Self = StObject.set(x, "isJax", js.Any.fromFunction1(value))
+    inline def setIsJax(value: js.Any => Double): Self = StObject.set(x, "isJax", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutputJax(value: js.Any): Self = StObject.set(x, "outputJax", value.asInstanceOf[js.Any])
+    inline def setOutputJax(value: js.Any): Self = StObject.set(x, "outputJax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputJaxUndefined: Self = StObject.set(x, "outputJax", js.undefined)
+    inline def setOutputJaxUndefined: Self = StObject.set(x, "outputJax", js.undefined)
     
-    @scala.inline
-    def setPreProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "PreProcess", js.Any.fromFunction2(value))
+    inline def setPreProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "PreProcess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
+    inline def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProcessSectionDelay(value: Double): Self = StObject.set(x, "processSectionDelay", value.asInstanceOf[js.Any])
+    inline def setProcessSectionDelay(value: Double): Self = StObject.set(x, "processSectionDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessSectionDelayUndefined: Self = StObject.set(x, "processSectionDelay", js.undefined)
+    inline def setProcessSectionDelayUndefined: Self = StObject.set(x, "processSectionDelay", js.undefined)
     
-    @scala.inline
-    def setProcessUpdateDelay(value: Double): Self = StObject.set(x, "processUpdateDelay", value.asInstanceOf[js.Any])
+    inline def setProcessUpdateDelay(value: Double): Self = StObject.set(x, "processUpdateDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUpdateDelayUndefined: Self = StObject.set(x, "processUpdateDelay", js.undefined)
+    inline def setProcessUpdateDelayUndefined: Self = StObject.set(x, "processUpdateDelay", js.undefined)
     
-    @scala.inline
-    def setProcessUpdateTime(value: Double): Self = StObject.set(x, "processUpdateTime", value.asInstanceOf[js.Any])
+    inline def setProcessUpdateTime(value: Double): Self = StObject.set(x, "processUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUpdateTimeUndefined: Self = StObject.set(x, "processUpdateTime", js.undefined)
+    inline def setProcessUpdateTimeUndefined: Self = StObject.set(x, "processUpdateTime", js.undefined)
     
-    @scala.inline
-    def setQueue(value: js.Any => js.Any): Self = StObject.set(x, "Queue", js.Any.fromFunction1(value))
+    inline def setQueue(value: js.Any => js.Any): Self = StObject.set(x, "Queue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setRegister(value: Register): Self = StObject.set(x, "Register", value.asInstanceOf[js.Any])
+    inline def setRegister(value: Register): Self = StObject.set(x, "Register", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterUndefined: Self = StObject.set(x, "Register", js.undefined)
+    inline def setRegisterUndefined: Self = StObject.set(x, "Register", js.undefined)
     
-    @scala.inline
-    def setReprocess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Reprocess", js.Any.fromFunction2(value))
+    inline def setReprocess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Reprocess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRerender(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Rerender", js.Any.fromFunction2(value))
+    inline def setRerender(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Rerender", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetRenderer(value: (String, String) => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction2(value))
+    inline def setSetRenderer(value: (String, String) => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSignal(value: Signal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: Signal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setTypeset(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Typeset", js.Any.fromFunction2(value))
+    inline def setTypeset(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Typeset", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
   }
 }

@@ -24,41 +24,30 @@ trait InlineQueryResultCachedDocument
 }
 object InlineQueryResultCachedDocument {
   
-  @scala.inline
-  def apply(document_file_id: String, id: String, title: String): InlineQueryResultCachedDocument = {
+  inline def apply(document_file_id: String, id: String, title: String): InlineQueryResultCachedDocument = {
     val __obj = js.Dynamic.literal(document_file_id = document_file_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("document")
     __obj.asInstanceOf[InlineQueryResultCachedDocument]
   }
   
-  @scala.inline
-  implicit class InlineQueryResultCachedDocumentMutableBuilder[Self <: InlineQueryResultCachedDocument] (val x: Self) extends AnyVal {
+  extension [Self <: InlineQueryResultCachedDocument](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDocument_file_id(value: String): Self = StObject.set(x, "document_file_id", value.asInstanceOf[js.Any])
+    inline def setDocument_file_id(value: String): Self = StObject.set(x, "document_file_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
+    inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
+    inline def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: document): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: document): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -25,12 +25,9 @@ object mod {
     /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY & String = js.native
   }
   
-  @scala.inline
-  def JsonProperty(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[js.Any]
-  @scala.inline
-  def JsonProperty(options: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def JsonProperty(options: JsonPropertyOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def JsonProperty(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[js.Any]
+  inline def JsonProperty(options: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def JsonProperty(options: JsonPropertyOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("@hyperloris/tyson", "TypeAdapter")
   @js.native
@@ -48,11 +45,11 @@ object mod {
   class Tyson () extends StObject {
     def this(builder: typings.hyperlorisTyson.tysonBuilderMod.TysonBuilder) = this()
     
-    var _factories: js.Any = js.native
+    /* private */ var _factories: js.Any = js.native
     
-    var _serializeNulls: js.Any = js.native
+    /* private */ var _serializeNulls: js.Any = js.native
     
-    var _typeTokenCache: js.Any = js.native
+    /* private */ var _typeTokenCache: js.Any = js.native
     
     /**
       * This method deserializes the specified JSON into an object|array of the specified type.

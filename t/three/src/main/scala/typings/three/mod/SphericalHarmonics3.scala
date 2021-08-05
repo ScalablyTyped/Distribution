@@ -15,6 +15,5 @@ object SphericalHarmonics3 {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBasisAt(normal: typings.three.vector3Mod.Vector3, shBasis: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasisAt")(normal.asInstanceOf[js.Any], shBasis.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getBasisAt(normal: typings.three.vector3Mod.Vector3, shBasis: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasisAt")(normal.asInstanceOf[js.Any], shBasis.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

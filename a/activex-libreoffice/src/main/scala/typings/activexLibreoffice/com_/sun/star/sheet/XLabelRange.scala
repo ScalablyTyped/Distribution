@@ -37,8 +37,7 @@ trait XLabelRange
 }
 object XLabelRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataArea: CellRangeAddress,
     LabelArea: CellRangeAddress,
     acquire: () => Unit,
@@ -53,25 +52,18 @@ object XLabelRange {
     __obj.asInstanceOf[XLabelRange]
   }
   
-  @scala.inline
-  implicit class XLabelRangeMutableBuilder[Self <: XLabelRange] (val x: Self) extends AnyVal {
+  extension [Self <: XLabelRange](x: Self) {
     
-    @scala.inline
-    def setDataArea(value: CellRangeAddress): Self = StObject.set(x, "DataArea", value.asInstanceOf[js.Any])
+    inline def setDataArea(value: CellRangeAddress): Self = StObject.set(x, "DataArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataArea(value: () => CellRangeAddress): Self = StObject.set(x, "getDataArea", js.Any.fromFunction0(value))
+    inline def setGetDataArea(value: () => CellRangeAddress): Self = StObject.set(x, "getDataArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelArea(value: () => CellRangeAddress): Self = StObject.set(x, "getLabelArea", js.Any.fromFunction0(value))
+    inline def setGetLabelArea(value: () => CellRangeAddress): Self = StObject.set(x, "getLabelArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabelArea(value: CellRangeAddress): Self = StObject.set(x, "LabelArea", value.asInstanceOf[js.Any])
+    inline def setLabelArea(value: CellRangeAddress): Self = StObject.set(x, "LabelArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDataArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setDataArea", js.Any.fromFunction1(value))
+    inline def setSetDataArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setDataArea", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabelArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setLabelArea", js.Any.fromFunction1(value))
+    inline def setSetLabelArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setLabelArea", js.Any.fromFunction1(value))
   }
 }

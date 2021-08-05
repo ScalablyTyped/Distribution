@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TaskGroup[A /* <: js.Array[js.Any] */, R](tasks: js.Array[Task_[A, R]]): typings.mobxTask.taskGroupMod.TaskGroup[A, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("TaskGroup")(tasks.asInstanceOf[js.Any]).asInstanceOf[typings.mobxTask.taskGroupMod.TaskGroup[A, R]]
+  inline def TaskGroup[A /* <: js.Array[js.Any] */, R](tasks: js.Array[Task_[A, R]]): typings.mobxTask.taskGroupMod.TaskGroup[A, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("TaskGroup")(tasks.asInstanceOf[js.Any]).asInstanceOf[typings.mobxTask.taskGroupMod.TaskGroup[A, R]]
   
   /**
     * Creates a task in the `pending` state.

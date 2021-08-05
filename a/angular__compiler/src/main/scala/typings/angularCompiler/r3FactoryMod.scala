@@ -138,11 +138,9 @@ object r3FactoryMod {
     /* 0 */ val Token: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.Token & Double = js.native
   }
   
-  @scala.inline
-  def compileFactoryFunction(meta: R3FactoryMetadata): R3FactoryFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFactoryFunction")(meta.asInstanceOf[js.Any]).asInstanceOf[R3FactoryFn]
+  inline def compileFactoryFunction(meta: R3FactoryMetadata): R3FactoryFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFactoryFunction")(meta.asInstanceOf[js.Any]).asInstanceOf[R3FactoryFn]
   
-  @scala.inline
-  def dependenciesFromGlobalMetadata(`type`: CompileTypeMetadata, outputCtx: OutputContext, reflector: CompileReflector): js.Array[R3DependencyMetadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("dependenciesFromGlobalMetadata")(`type`.asInstanceOf[js.Any], outputCtx.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[js.Array[R3DependencyMetadata]]
+  inline def dependenciesFromGlobalMetadata(`type`: CompileTypeMetadata, outputCtx: OutputContext, reflector: CompileReflector): js.Array[R3DependencyMetadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("dependenciesFromGlobalMetadata")(`type`.asInstanceOf[js.Any], outputCtx.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[js.Array[R3DependencyMetadata]]
   
   trait R3ConstructorFactoryMetadata
     extends StObject
@@ -193,8 +191,7 @@ object r3FactoryMod {
   }
   object R3ConstructorFactoryMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       injectFn: ExternalReference,
       internalType: Expression,
       name: String,
@@ -207,35 +204,25 @@ object r3FactoryMod {
       __obj.asInstanceOf[R3ConstructorFactoryMetadata]
     }
     
-    @scala.inline
-    implicit class R3ConstructorFactoryMetadataMutableBuilder[Self <: R3ConstructorFactoryMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3ConstructorFactoryMetadata](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[R3DependencyMetadata] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[R3DependencyMetadata] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsNull: Self = StObject.set(x, "deps", null)
+      inline def setDepsNull: Self = StObject.set(x, "deps", null)
       
-      @scala.inline
-      def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setInjectFn(value: ExternalReference): Self = StObject.set(x, "injectFn", value.asInstanceOf[js.Any])
+      inline def setInjectFn(value: ExternalReference): Self = StObject.set(x, "injectFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: R3FactoryTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: R3FactoryTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
+      inline def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,8 +237,7 @@ object r3FactoryMod {
   }
   object R3DelegatedFactoryMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delegate: Expression,
       delegateType: Factory,
       injectFn: ExternalReference,
@@ -266,14 +252,11 @@ object r3FactoryMod {
       __obj.asInstanceOf[R3DelegatedFactoryMetadata]
     }
     
-    @scala.inline
-    implicit class R3DelegatedFactoryMetadataMutableBuilder[Self <: R3DelegatedFactoryMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3DelegatedFactoryMetadata](x: Self) {
       
-      @scala.inline
-      def setDelegate(value: Expression): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: Expression): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateType(value: Factory): Self = StObject.set(x, "delegateType", value.asInstanceOf[js.Any])
+      inline def setDelegateType(value: Factory): Self = StObject.set(x, "delegateType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,8 +273,7 @@ object r3FactoryMod {
   }
   object R3DelegatedFnOrClassMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delegate: Expression,
       delegateDeps: js.Array[R3DependencyMetadata],
       delegateType: Class | Function,
@@ -307,20 +289,15 @@ object r3FactoryMod {
       __obj.asInstanceOf[R3DelegatedFnOrClassMetadata]
     }
     
-    @scala.inline
-    implicit class R3DelegatedFnOrClassMetadataMutableBuilder[Self <: R3DelegatedFnOrClassMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3DelegatedFnOrClassMetadata](x: Self) {
       
-      @scala.inline
-      def setDelegate(value: Expression): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: Expression): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "delegateDeps", value.asInstanceOf[js.Any])
+      inline def setDelegateDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "delegateDeps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "delegateDeps", js.Array(value :_*))
+      inline def setDelegateDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "delegateDeps", js.Array(value :_*))
       
-      @scala.inline
-      def setDelegateType(value: Class | Function): Self = StObject.set(x, "delegateType", value.asInstanceOf[js.Any])
+      inline def setDelegateType(value: Class | Function): Self = StObject.set(x, "delegateType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -366,8 +343,7 @@ object r3FactoryMod {
   }
   object R3DependencyMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       host: Boolean,
       optional: Boolean,
       resolved: R3ResolvedDependencyType,
@@ -379,32 +355,23 @@ object r3FactoryMod {
       __obj.asInstanceOf[R3DependencyMetadata]
     }
     
-    @scala.inline
-    implicit class R3DependencyMetadataMutableBuilder[Self <: R3DependencyMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3DependencyMetadata](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: Expression): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: Expression): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeNull: Self = StObject.set(x, "attribute", null)
+      inline def setAttributeNull: Self = StObject.set(x, "attribute", null)
       
-      @scala.inline
-      def setHost(value: Boolean): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: Boolean): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolved(value: R3ResolvedDependencyType): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: R3ResolvedDependencyType): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+      inline def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipSelf(value: Boolean): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
+      inline def setSkipSelf(value: Boolean): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: Expression): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Expression): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -417,8 +384,7 @@ object r3FactoryMod {
   }
   object R3ExpressionFactoryMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expression: Expression,
       injectFn: ExternalReference,
       internalType: Expression,
@@ -432,11 +398,9 @@ object r3FactoryMod {
       __obj.asInstanceOf[R3ExpressionFactoryMetadata]
     }
     
-    @scala.inline
-    implicit class R3ExpressionFactoryMetadataMutableBuilder[Self <: R3ExpressionFactoryMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3ExpressionFactoryMetadata](x: Self) {
       
-      @scala.inline
-      def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     }
   }
   
@@ -450,27 +414,21 @@ object r3FactoryMod {
   }
   object R3FactoryFn {
     
-    @scala.inline
-    def apply(factory: Expression, statements: js.Array[Statement], `type`: ExpressionType_): R3FactoryFn = {
+    inline def apply(factory: Expression, statements: js.Array[Statement], `type`: ExpressionType_): R3FactoryFn = {
       val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3FactoryFn]
     }
     
-    @scala.inline
-    implicit class R3FactoryFnMutableBuilder[Self <: R3FactoryFn] (val x: Self) extends AnyVal {
+    extension [Self <: R3FactoryFn](x: Self) {
       
-      @scala.inline
-      def setFactory(value: Expression): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: Expression): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+      inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: ExpressionType_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ExpressionType_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -483,8 +441,7 @@ object r3FactoryMod {
   trait R3FactoryMetadata extends StObject
   object R3FactoryMetadata {
     
-    @scala.inline
-    def R3ConstructorFactoryMetadata(
+    inline def R3ConstructorFactoryMetadata(
       injectFn: ExternalReference,
       internalType: Expression,
       name: String,
@@ -497,8 +454,7 @@ object r3FactoryMod {
       __obj.asInstanceOf[typings.angularCompiler.r3FactoryMod.R3ConstructorFactoryMetadata]
     }
     
-    @scala.inline
-    def R3DelegatedFactoryMetadata(
+    inline def R3DelegatedFactoryMetadata(
       delegate: Expression,
       delegateType: Factory,
       injectFn: ExternalReference,
@@ -513,8 +469,7 @@ object r3FactoryMod {
       __obj.asInstanceOf[typings.angularCompiler.r3FactoryMod.R3DelegatedFactoryMetadata]
     }
     
-    @scala.inline
-    def R3DelegatedFnOrClassMetadata(
+    inline def R3DelegatedFnOrClassMetadata(
       delegate: Expression,
       delegateDeps: js.Array[R3DependencyMetadata],
       delegateType: Class | Function,
@@ -530,8 +485,7 @@ object r3FactoryMod {
       __obj.asInstanceOf[typings.angularCompiler.r3FactoryMod.R3DelegatedFnOrClassMetadata]
     }
     
-    @scala.inline
-    def R3ExpressionFactoryMetadata(
+    inline def R3ExpressionFactoryMetadata(
       expression: Expression,
       injectFn: ExternalReference,
       internalType: Expression,

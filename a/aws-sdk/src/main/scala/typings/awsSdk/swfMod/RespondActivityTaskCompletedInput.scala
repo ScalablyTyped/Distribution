@@ -18,22 +18,17 @@ trait RespondActivityTaskCompletedInput extends StObject {
 }
 object RespondActivityTaskCompletedInput {
   
-  @scala.inline
-  def apply(taskToken: TaskToken): RespondActivityTaskCompletedInput = {
+  inline def apply(taskToken: TaskToken): RespondActivityTaskCompletedInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RespondActivityTaskCompletedInput]
   }
   
-  @scala.inline
-  implicit class RespondActivityTaskCompletedInputMutableBuilder[Self <: RespondActivityTaskCompletedInput] (val x: Self) extends AnyVal {
+  extension [Self <: RespondActivityTaskCompletedInput](x: Self) {
     
-    @scala.inline
-    def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

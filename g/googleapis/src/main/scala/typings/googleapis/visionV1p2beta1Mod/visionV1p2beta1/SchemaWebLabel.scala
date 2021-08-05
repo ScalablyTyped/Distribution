@@ -23,25 +23,19 @@ trait SchemaWebLabel extends StObject {
 }
 object SchemaWebLabel {
   
-  @scala.inline
-  def apply(): SchemaWebLabel = {
+  inline def apply(): SchemaWebLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWebLabel]
   }
   
-  @scala.inline
-  implicit class SchemaWebLabelMutableBuilder[Self <: SchemaWebLabel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWebLabel](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

@@ -19,31 +19,23 @@ trait Groups extends StObject {
 }
 object Groups {
   
-  @scala.inline
-  def apply(groups: StringDictionary[Group], re: RegExp): Groups = {
+  inline def apply(groups: StringDictionary[Group], re: RegExp): Groups = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], re = re.asInstanceOf[js.Any])
     __obj.asInstanceOf[Groups]
   }
   
-  @scala.inline
-  implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
+  extension [Self <: Groups](x: Self) {
     
-    @scala.inline
-    def setGroups(value: StringDictionary[Group]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: StringDictionary[Group]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRegex(value: String): Self = StObject.set(x, "namedRegex", value.asInstanceOf[js.Any])
+    inline def setNamedRegex(value: String): Self = StObject.set(x, "namedRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRegexUndefined: Self = StObject.set(x, "namedRegex", js.undefined)
+    inline def setNamedRegexUndefined: Self = StObject.set(x, "namedRegex", js.undefined)
     
-    @scala.inline
-    def setRe(value: RegExp): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
+    inline def setRe(value: RegExp): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteKeys(value: StringDictionary[String]): Self = StObject.set(x, "routeKeys", value.asInstanceOf[js.Any])
+    inline def setRouteKeys(value: StringDictionary[String]): Self = StObject.set(x, "routeKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteKeysUndefined: Self = StObject.set(x, "routeKeys", js.undefined)
+    inline def setRouteKeysUndefined: Self = StObject.set(x, "routeKeys", js.undefined)
   }
 }

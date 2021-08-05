@@ -10,16 +10,13 @@ trait TagParam extends StObject {
 }
 object TagParam {
   
-  @scala.inline
-  def apply(str: String): TagParam = {
+  inline def apply(str: String): TagParam = {
     val __obj = js.Dynamic.literal(str = str.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagParam]
   }
   
-  @scala.inline
-  implicit class TagParamMutableBuilder[Self <: TagParam] (val x: Self) extends AnyVal {
+  extension [Self <: TagParam](x: Self) {
     
-    @scala.inline
-    def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+    inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
   }
 }

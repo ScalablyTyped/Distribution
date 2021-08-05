@@ -61,8 +61,7 @@ trait Cube extends StObject {
 }
 object Cube {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: js.Object => String,
     cubeType: js.Object => Double,
     description: js.Object => String,
@@ -75,28 +74,20 @@ object Cube {
     __obj.asInstanceOf[Cube]
   }
   
-  @scala.inline
-  implicit class CubeMutableBuilder[Self <: Cube] (val x: Self) extends AnyVal {
+  extension [Self <: Cube](x: Self) {
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCubeType(value: js.Object => Double): Self = StObject.set(x, "cubeType", js.Any.fromFunction1(value))
+    inline def setCubeType(value: js.Object => Double): Self = StObject.set(x, "cubeType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
+    inline def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLastProcessed(value: js.Object => js.Object): Self = StObject.set(x, "lastProcessed", js.Any.fromFunction1(value))
+    inline def setLastProcessed(value: js.Object => js.Object): Self = StObject.set(x, "lastProcessed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLastUpdated(value: js.Object => js.Object): Self = StObject.set(x, "lastUpdated", js.Any.fromFunction1(value))
+    inline def setLastUpdated(value: js.Object => js.Object): Self = StObject.set(x, "lastUpdated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
+    inline def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

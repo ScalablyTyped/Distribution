@@ -33,43 +33,31 @@ trait ListPresetsRequest extends StObject {
 }
 object ListPresetsRequest {
   
-  @scala.inline
-  def apply(): ListPresetsRequest = {
+  inline def apply(): ListPresetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPresetsRequest]
   }
   
-  @scala.inline
-  implicit class ListPresetsRequestMutableBuilder[Self <: ListPresetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPresetsRequest](x: Self) {
     
-    @scala.inline
-    def setCategory(value: string): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: string): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
-    @scala.inline
-    def setListBy(value: PresetListBy): Self = StObject.set(x, "ListBy", value.asInstanceOf[js.Any])
+    inline def setListBy(value: PresetListBy): Self = StObject.set(x, "ListBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListByUndefined: Self = StObject.set(x, "ListBy", js.undefined)
+    inline def setListByUndefined: Self = StObject.set(x, "ListBy", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: integerMin1Max20): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integerMin1Max20): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Order): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Order): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
   }
 }

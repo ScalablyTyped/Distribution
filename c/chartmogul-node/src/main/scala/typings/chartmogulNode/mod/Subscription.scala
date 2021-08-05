@@ -13,11 +13,9 @@ object Subscription {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def all(config: Config, uuid: String, data: CursorParams): js.Promise[Subscriptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Subscriptions]]
+  inline def all(config: Config, uuid: String, data: CursorParams): js.Promise[Subscriptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Subscriptions]]
   
-  @scala.inline
-  def cancel(config: Config, uuid: String, data: CancelSubscriptionParams): js.Promise[typings.chartmogulNode.mod.Subscription.Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Subscription.Subscription]]
+  inline def cancel(config: Config, uuid: String, data: CancelSubscriptionParams): js.Promise[typings.chartmogulNode.mod.Subscription.Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Subscription.Subscription]]
   
   trait CancelSubscriptionParams extends StObject {
     
@@ -27,29 +25,22 @@ object Subscription {
   }
   object CancelSubscriptionParams {
     
-    @scala.inline
-    def apply(): CancelSubscriptionParams = {
+    inline def apply(): CancelSubscriptionParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CancelSubscriptionParams]
     }
     
-    @scala.inline
-    implicit class CancelSubscriptionParamsMutableBuilder[Self <: CancelSubscriptionParams] (val x: Self) extends AnyVal {
+    extension [Self <: CancelSubscriptionParams](x: Self) {
       
-      @scala.inline
-      def setCancellation_dates(value: Strings): Self = StObject.set(x, "cancellation_dates", value.asInstanceOf[js.Any])
+      inline def setCancellation_dates(value: Strings): Self = StObject.set(x, "cancellation_dates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellation_datesUndefined: Self = StObject.set(x, "cancellation_dates", js.undefined)
+      inline def setCancellation_datesUndefined: Self = StObject.set(x, "cancellation_dates", js.undefined)
       
-      @scala.inline
-      def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value :_*))
+      inline def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value :_*))
       
-      @scala.inline
-      def setCancelled_at(value: String): Self = StObject.set(x, "cancelled_at", value.asInstanceOf[js.Any])
+      inline def setCancelled_at(value: String): Self = StObject.set(x, "cancelled_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelled_atUndefined: Self = StObject.set(x, "cancelled_at", js.undefined)
+      inline def setCancelled_atUndefined: Self = StObject.set(x, "cancelled_at", js.undefined)
     }
   }
   
@@ -69,8 +60,7 @@ object Subscription {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancellation_dates: Strings,
       customer_uuid: String,
       data_source_uuid: String,
@@ -82,29 +72,21 @@ object Subscription {
       __obj.asInstanceOf[typings.chartmogulNode.mod.Subscription.Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: typings.chartmogulNode.mod.Subscription.Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: typings.chartmogulNode.mod.Subscription.Subscription](x: Self) {
       
-      @scala.inline
-      def setCancellation_dates(value: Strings): Self = StObject.set(x, "cancellation_dates", value.asInstanceOf[js.Any])
+      inline def setCancellation_dates(value: Strings): Self = StObject.set(x, "cancellation_dates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value :_*))
+      inline def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
+      inline def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData_source_uuid(value: String): Self = StObject.set(x, "data_source_uuid", value.asInstanceOf[js.Any])
+      inline def setData_source_uuid(value: String): Self = StObject.set(x, "data_source_uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+      inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan_uuid(value: String): Self = StObject.set(x, "plan_uuid", value.asInstanceOf[js.Any])
+      inline def setPlan_uuid(value: String): Self = StObject.set(x, "plan_uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,26 +100,20 @@ object Subscription {
   }
   object Subscriptions {
     
-    @scala.inline
-    def apply(subscriptions: js.Array[typings.chartmogulNode.mod.Subscription.Subscription]): Subscriptions = {
+    inline def apply(subscriptions: js.Array[typings.chartmogulNode.mod.Subscription.Subscription]): Subscriptions = {
       val __obj = js.Dynamic.literal(subscriptions = subscriptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscriptions]
     }
     
-    @scala.inline
-    implicit class SubscriptionsMutableBuilder[Self <: Subscriptions] (val x: Self) extends AnyVal {
+    extension [Self <: Subscriptions](x: Self) {
       
-      @scala.inline
-      def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
+      inline def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer_uuidUndefined: Self = StObject.set(x, "customer_uuid", js.undefined)
+      inline def setCustomer_uuidUndefined: Self = StObject.set(x, "customer_uuid", js.undefined)
       
-      @scala.inline
-      def setSubscriptions(value: js.Array[typings.chartmogulNode.mod.Subscription.Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: js.Array[typings.chartmogulNode.mod.Subscription.Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionsVarargs(value: typings.chartmogulNode.mod.Subscription.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+      inline def setSubscriptionsVarargs(value: typings.chartmogulNode.mod.Subscription.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
     }
   }
 }

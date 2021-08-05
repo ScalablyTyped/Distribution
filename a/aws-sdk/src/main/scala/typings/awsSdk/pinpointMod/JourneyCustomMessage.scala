@@ -13,19 +13,15 @@ trait JourneyCustomMessage extends StObject {
 }
 object JourneyCustomMessage {
   
-  @scala.inline
-  def apply(): JourneyCustomMessage = {
+  inline def apply(): JourneyCustomMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JourneyCustomMessage]
   }
   
-  @scala.inline
-  implicit class JourneyCustomMessageMutableBuilder[Self <: JourneyCustomMessage] (val x: Self) extends AnyVal {
+  extension [Self <: JourneyCustomMessage](x: Self) {
     
-    @scala.inline
-    def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
   }
 }

@@ -19,31 +19,23 @@ trait editAsstringundefinedhype extends StObject {
 }
 object editAsstringundefinedhype {
   
-  @scala.inline
-  def apply(br: Anchor, tl: Anchor): editAsstringundefinedhype = {
+  inline def apply(br: Anchor, tl: Anchor): editAsstringundefinedhype = {
     val __obj = js.Dynamic.literal(br = br.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any])
     __obj.asInstanceOf[editAsstringundefinedhype]
   }
   
-  @scala.inline
-  implicit class editAsstringundefinedhypeMutableBuilder[Self <: editAsstringundefinedhype] (val x: Self) extends AnyVal {
+  extension [Self <: editAsstringundefinedhype](x: Self) {
     
-    @scala.inline
-    def setBr(value: Anchor): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+    inline def setBr(value: Anchor): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditAs(value: String): Self = StObject.set(x, "editAs", value.asInstanceOf[js.Any])
+    inline def setEditAs(value: String): Self = StObject.set(x, "editAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditAsUndefined: Self = StObject.set(x, "editAs", js.undefined)
+    inline def setEditAsUndefined: Self = StObject.set(x, "editAs", js.undefined)
     
-    @scala.inline
-    def setHyperlinks(value: ImageHyperlinkValue): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
+    inline def setHyperlinks(value: ImageHyperlinkValue): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
+    inline def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
     
-    @scala.inline
-    def setTl(value: Anchor): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
+    inline def setTl(value: Anchor): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
   }
 }

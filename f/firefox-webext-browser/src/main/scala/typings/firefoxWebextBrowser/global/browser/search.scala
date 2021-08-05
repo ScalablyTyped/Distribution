@@ -21,10 +21,8 @@ object search {
   
   /* search functions */
   /** Gets a list of search engines. */
-  @scala.inline
-  def get(): js.Promise[js.Array[SearchEngine]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Array[SearchEngine]]]
+  inline def get(): js.Promise[js.Array[SearchEngine]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Array[SearchEngine]]]
   
   /** Perform a search. */
-  @scala.inline
-  def search(searchProperties: SearchSearchProperties): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def search(searchProperties: SearchSearchProperties): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

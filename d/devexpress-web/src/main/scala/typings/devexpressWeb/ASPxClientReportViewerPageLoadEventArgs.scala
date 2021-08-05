@@ -33,25 +33,19 @@ trait ASPxClientReportViewerPageLoadEventArgs
 }
 object ASPxClientReportViewerPageLoadEventArgs {
   
-  @scala.inline
-  def apply(IsFirstPage: () => Boolean, IsLastPage: () => Boolean, PageCount: Double, PageIndex: Double): ASPxClientReportViewerPageLoadEventArgs = {
+  inline def apply(IsFirstPage: () => Boolean, IsLastPage: () => Boolean, PageCount: Double, PageIndex: Double): ASPxClientReportViewerPageLoadEventArgs = {
     val __obj = js.Dynamic.literal(IsFirstPage = js.Any.fromFunction0(IsFirstPage), IsLastPage = js.Any.fromFunction0(IsLastPage), PageCount = PageCount.asInstanceOf[js.Any], PageIndex = PageIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportViewerPageLoadEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportViewerPageLoadEventArgsMutableBuilder[Self <: ASPxClientReportViewerPageLoadEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportViewerPageLoadEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsFirstPage(value: () => Boolean): Self = StObject.set(x, "IsFirstPage", js.Any.fromFunction0(value))
+    inline def setIsFirstPage(value: () => Boolean): Self = StObject.set(x, "IsFirstPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLastPage(value: () => Boolean): Self = StObject.set(x, "IsLastPage", js.Any.fromFunction0(value))
+    inline def setIsLastPage(value: () => Boolean): Self = StObject.set(x, "IsLastPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
+    inline def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIndex(value: Double): Self = StObject.set(x, "PageIndex", value.asInstanceOf[js.Any])
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "PageIndex", value.asInstanceOf[js.Any])
   }
 }

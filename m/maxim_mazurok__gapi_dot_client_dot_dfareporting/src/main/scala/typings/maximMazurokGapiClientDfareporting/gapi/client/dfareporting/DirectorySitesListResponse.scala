@@ -17,34 +17,25 @@ trait DirectorySitesListResponse extends StObject {
 }
 object DirectorySitesListResponse {
   
-  @scala.inline
-  def apply(): DirectorySitesListResponse = {
+  inline def apply(): DirectorySitesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectorySitesListResponse]
   }
   
-  @scala.inline
-  implicit class DirectorySitesListResponseMutableBuilder[Self <: DirectorySitesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DirectorySitesListResponse](x: Self) {
     
-    @scala.inline
-    def setDirectorySites(value: js.Array[DirectorySite]): Self = StObject.set(x, "directorySites", value.asInstanceOf[js.Any])
+    inline def setDirectorySites(value: js.Array[DirectorySite]): Self = StObject.set(x, "directorySites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectorySitesUndefined: Self = StObject.set(x, "directorySites", js.undefined)
+    inline def setDirectorySitesUndefined: Self = StObject.set(x, "directorySites", js.undefined)
     
-    @scala.inline
-    def setDirectorySitesVarargs(value: DirectorySite*): Self = StObject.set(x, "directorySites", js.Array(value :_*))
+    inline def setDirectorySitesVarargs(value: DirectorySite*): Self = StObject.set(x, "directorySites", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

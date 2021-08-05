@@ -18,8 +18,7 @@ object createPaletteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(palette: PaletteOptions): Palette = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any]).asInstanceOf[Palette]
+  inline def default(palette: PaletteOptions): Palette = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any]).asInstanceOf[Palette]
   
   @JSImport("@material-ui/core/styles/createPalette", "dark")
   @js.native
@@ -64,98 +63,68 @@ object createPaletteMod {
   }
   object ColorPartial {
     
-    @scala.inline
-    def apply(): ColorPartial = {
+    inline def apply(): ColorPartial = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorPartial]
     }
     
-    @scala.inline
-    implicit class ColorPartialMutableBuilder[Self <: ColorPartial] (val x: Self) extends AnyVal {
+    extension [Self <: ColorPartial](x: Self) {
       
-      @scala.inline
-      def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+      inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set100Undefined: Self = StObject.set(x, "100", js.undefined)
+      inline def set100Undefined: Self = StObject.set(x, "100", js.undefined)
       
-      @scala.inline
-      def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+      inline def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set200Undefined: Self = StObject.set(x, "200", js.undefined)
+      inline def set200Undefined: Self = StObject.set(x, "200", js.undefined)
       
-      @scala.inline
-      def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
+      inline def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set300Undefined: Self = StObject.set(x, "300", js.undefined)
+      inline def set300Undefined: Self = StObject.set(x, "300", js.undefined)
       
-      @scala.inline
-      def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+      inline def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set400Undefined: Self = StObject.set(x, "400", js.undefined)
+      inline def set400Undefined: Self = StObject.set(x, "400", js.undefined)
       
-      @scala.inline
-      def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
+      inline def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+      inline def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500Undefined: Self = StObject.set(x, "500", js.undefined)
+      inline def set500Undefined: Self = StObject.set(x, "500", js.undefined)
       
-      @scala.inline
-      def set50Undefined: Self = StObject.set(x, "50", js.undefined)
+      inline def set50Undefined: Self = StObject.set(x, "50", js.undefined)
       
-      @scala.inline
-      def set600(value: String): Self = StObject.set(x, "600", value.asInstanceOf[js.Any])
+      inline def set600(value: String): Self = StObject.set(x, "600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set600Undefined: Self = StObject.set(x, "600", js.undefined)
+      inline def set600Undefined: Self = StObject.set(x, "600", js.undefined)
       
-      @scala.inline
-      def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
+      inline def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set700Undefined: Self = StObject.set(x, "700", js.undefined)
+      inline def set700Undefined: Self = StObject.set(x, "700", js.undefined)
       
-      @scala.inline
-      def set800(value: String): Self = StObject.set(x, "800", value.asInstanceOf[js.Any])
+      inline def set800(value: String): Self = StObject.set(x, "800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set800Undefined: Self = StObject.set(x, "800", js.undefined)
+      inline def set800Undefined: Self = StObject.set(x, "800", js.undefined)
       
-      @scala.inline
-      def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
+      inline def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set900Undefined: Self = StObject.set(x, "900", js.undefined)
+      inline def set900Undefined: Self = StObject.set(x, "900", js.undefined)
       
-      @scala.inline
-      def setA100(value: String): Self = StObject.set(x, "A100", value.asInstanceOf[js.Any])
+      inline def setA100(value: String): Self = StObject.set(x, "A100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA100Undefined: Self = StObject.set(x, "A100", js.undefined)
+      inline def setA100Undefined: Self = StObject.set(x, "A100", js.undefined)
       
-      @scala.inline
-      def setA200(value: String): Self = StObject.set(x, "A200", value.asInstanceOf[js.Any])
+      inline def setA200(value: String): Self = StObject.set(x, "A200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA200Undefined: Self = StObject.set(x, "A200", js.undefined)
+      inline def setA200Undefined: Self = StObject.set(x, "A200", js.undefined)
       
-      @scala.inline
-      def setA400(value: String): Self = StObject.set(x, "A400", value.asInstanceOf[js.Any])
+      inline def setA400(value: String): Self = StObject.set(x, "A400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA400Undefined: Self = StObject.set(x, "A400", js.undefined)
+      inline def setA400Undefined: Self = StObject.set(x, "A400", js.undefined)
       
-      @scala.inline
-      def setA700(value: String): Self = StObject.set(x, "A700", value.asInstanceOf[js.Any])
+      inline def setA700(value: String): Self = StObject.set(x, "A700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA700Undefined: Self = StObject.set(x, "A700", js.undefined)
+      inline def setA700Undefined: Self = StObject.set(x, "A700", js.undefined)
     }
   }
   
@@ -230,26 +199,20 @@ object createPaletteMod {
   }
   object PaletteColor {
     
-    @scala.inline
-    def apply(contrastText: String, dark: String, light: String, main: String): PaletteColor = {
+    inline def apply(contrastText: String, dark: String, light: String, main: String): PaletteColor = {
       val __obj = js.Dynamic.literal(contrastText = contrastText.asInstanceOf[js.Any], dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaletteColor]
     }
     
-    @scala.inline
-    implicit class PaletteColorMutableBuilder[Self <: PaletteColor] (val x: Self) extends AnyVal {
+    extension [Self <: PaletteColor](x: Self) {
       
-      @scala.inline
-      def setContrastText(value: String): Self = StObject.set(x, "contrastText", value.asInstanceOf[js.Any])
+      inline def setContrastText(value: String): Self = StObject.set(x, "contrastText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+      inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,14 +223,12 @@ object createPaletteMod {
   trait PaletteColorOptions extends StObject
   object PaletteColorOptions {
     
-    @scala.inline
-    def ColorPartial(): typings.materialUiCore.createPaletteMod.ColorPartial = {
+    inline def ColorPartial(): typings.materialUiCore.createPaletteMod.ColorPartial = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.materialUiCore.createPaletteMod.ColorPartial]
     }
     
-    @scala.inline
-    def SimplePaletteColorOptions(main: String): typings.materialUiCore.createPaletteMod.SimplePaletteColorOptions = {
+    inline def SimplePaletteColorOptions(main: String): typings.materialUiCore.createPaletteMod.SimplePaletteColorOptions = {
       val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.materialUiCore.createPaletteMod.SimplePaletteColorOptions]
     }
@@ -303,92 +264,64 @@ object createPaletteMod {
   }
   object PaletteOptions {
     
-    @scala.inline
-    def apply(): PaletteOptions = {
+    inline def apply(): PaletteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaletteOptions]
     }
     
-    @scala.inline
-    implicit class PaletteOptionsMutableBuilder[Self <: PaletteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PaletteOptions](x: Self) {
       
-      @scala.inline
-      def setAction(value: PartialTypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: PartialTypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setBackground(value: PartialTypeBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: PartialTypeBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setCommon(value: PartialCommonColors): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: PartialCommonColors): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+      inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
       
-      @scala.inline
-      def setContrastThreshold(value: Double): Self = StObject.set(x, "contrastThreshold", value.asInstanceOf[js.Any])
+      inline def setContrastThreshold(value: Double): Self = StObject.set(x, "contrastThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContrastThresholdUndefined: Self = StObject.set(x, "contrastThreshold", js.undefined)
+      inline def setContrastThresholdUndefined: Self = StObject.set(x, "contrastThreshold", js.undefined)
       
-      @scala.inline
-      def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setError(value: PaletteColorOptions): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: PaletteColorOptions): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setGetContrastText(value: /* background */ String => String): Self = StObject.set(x, "getContrastText", js.Any.fromFunction1(value))
+      inline def setGetContrastText(value: /* background */ String => String): Self = StObject.set(x, "getContrastText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContrastTextUndefined: Self = StObject.set(x, "getContrastText", js.undefined)
+      inline def setGetContrastTextUndefined: Self = StObject.set(x, "getContrastText", js.undefined)
       
-      @scala.inline
-      def setGrey(value: ColorPartial): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+      inline def setGrey(value: ColorPartial): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreyUndefined: Self = StObject.set(x, "grey", js.undefined)
+      inline def setGreyUndefined: Self = StObject.set(x, "grey", js.undefined)
       
-      @scala.inline
-      def setPrimary(value: PaletteColorOptions): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: PaletteColorOptions): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
       
-      @scala.inline
-      def setSecondary(value: PaletteColorOptions): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: PaletteColorOptions): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+      inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
       
-      @scala.inline
-      def setText(value: PartialTypeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: PartialTypeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTonalOffset(value: Double): Self = StObject.set(x, "tonalOffset", value.asInstanceOf[js.Any])
+      inline def setTonalOffset(value: Double): Self = StObject.set(x, "tonalOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTonalOffsetUndefined: Self = StObject.set(x, "tonalOffset", js.undefined)
+      inline def setTonalOffsetUndefined: Self = StObject.set(x, "tonalOffset", js.undefined)
       
-      @scala.inline
-      def setType(value: PaletteType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PaletteType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -405,38 +338,28 @@ object createPaletteMod {
   }
   object PartialTypeObject {
     
-    @scala.inline
-    def apply(): PartialTypeObject = {
+    inline def apply(): PartialTypeObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialTypeObject]
     }
     
-    @scala.inline
-    implicit class PartialTypeObjectMutableBuilder[Self <: PartialTypeObject] (val x: Self) extends AnyVal {
+    extension [Self <: PartialTypeObject](x: Self) {
       
-      @scala.inline
-      def setAction(value: PartialTypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: PartialTypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setBackground(value: PartialTypeBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: PartialTypeBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setDivider(value: Partial[TypeDivider]): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: Partial[TypeDivider]): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setText(value: PartialTypeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: PartialTypeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -454,35 +377,26 @@ object createPaletteMod {
   }
   object SimplePaletteColorOptions {
     
-    @scala.inline
-    def apply(main: String): SimplePaletteColorOptions = {
+    inline def apply(main: String): SimplePaletteColorOptions = {
       val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimplePaletteColorOptions]
     }
     
-    @scala.inline
-    implicit class SimplePaletteColorOptionsMutableBuilder[Self <: SimplePaletteColorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SimplePaletteColorOptions](x: Self) {
       
-      @scala.inline
-      def setContrastText(value: String): Self = StObject.set(x, "contrastText", value.asInstanceOf[js.Any])
+      inline def setContrastText(value: String): Self = StObject.set(x, "contrastText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContrastTextUndefined: Self = StObject.set(x, "contrastText", js.undefined)
+      inline def setContrastTextUndefined: Self = StObject.set(x, "contrastText", js.undefined)
       
-      @scala.inline
-      def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+      inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+      inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
       
-      @scala.inline
-      def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+      inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
       
-      @scala.inline
-      def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     }
   }
   
@@ -502,8 +416,7 @@ object createPaletteMod {
   }
   object TypeAction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: String,
       disabled: String,
       disabledBackground: String,
@@ -515,26 +428,19 @@ object createPaletteMod {
       __obj.asInstanceOf[TypeAction]
     }
     
-    @scala.inline
-    implicit class TypeActionMutableBuilder[Self <: TypeAction] (val x: Self) extends AnyVal {
+    extension [Self <: TypeAction](x: Self) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledBackground(value: String): Self = StObject.set(x, "disabledBackground", value.asInstanceOf[js.Any])
+      inline def setDisabledBackground(value: String): Self = StObject.set(x, "disabledBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+      inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverOpacity(value: Double): Self = StObject.set(x, "hoverOpacity", value.asInstanceOf[js.Any])
+      inline def setHoverOpacity(value: Double): Self = StObject.set(x, "hoverOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -546,20 +452,16 @@ object createPaletteMod {
   }
   object TypeBackground {
     
-    @scala.inline
-    def apply(default: String, paper: String): TypeBackground = {
+    inline def apply(default: String, paper: String): TypeBackground = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeBackground]
     }
     
-    @scala.inline
-    implicit class TypeBackgroundMutableBuilder[Self <: TypeBackground] (val x: Self) extends AnyVal {
+    extension [Self <: TypeBackground](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+      inline def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -577,26 +479,20 @@ object createPaletteMod {
   }
   object TypeObject {
     
-    @scala.inline
-    def apply(action: TypeAction, background: TypeBackground, divider: TypeDivider, text: TypeText): TypeObject = {
+    inline def apply(action: TypeAction, background: TypeBackground, divider: TypeDivider, text: TypeText): TypeObject = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeObject]
     }
     
-    @scala.inline
-    implicit class TypeObjectMutableBuilder[Self <: TypeObject] (val x: Self) extends AnyVal {
+    extension [Self <: TypeObject](x: Self) {
       
-      @scala.inline
-      def setAction(value: TypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: TypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackground(value: TypeBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: TypeBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivider(value: TypeDivider): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: TypeDivider): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TypeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TypeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -612,26 +508,20 @@ object createPaletteMod {
   }
   object TypeText {
     
-    @scala.inline
-    def apply(disabled: String, hint: String, primary: String, secondary: String): TypeText = {
+    inline def apply(disabled: String, hint: String, primary: String, secondary: String): TypeText = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], secondary = secondary.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeText]
     }
     
-    @scala.inline
-    implicit class TypeTextMutableBuilder[Self <: TypeText] (val x: Self) extends AnyVal {
+    extension [Self <: TypeText](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     }
   }
 }

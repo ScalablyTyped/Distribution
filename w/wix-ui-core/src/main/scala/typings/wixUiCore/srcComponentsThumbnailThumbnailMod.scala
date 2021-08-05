@@ -40,56 +40,40 @@ object srcComponentsThumbnailThumbnailMod {
   }
   object ThumbnailProps {
     
-    @scala.inline
-    def apply(): ThumbnailProps = {
+    inline def apply(): ThumbnailProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThumbnailProps]
     }
     
-    @scala.inline
-    implicit class ThumbnailPropsMutableBuilder[Self <: ThumbnailProps] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbnailProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIcon(value: ReactNode): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
+      inline def setSelectedIcon(value: ReactNode): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
+      inline def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     }
   }
 }

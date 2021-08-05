@@ -41,37 +41,27 @@ trait ParamsResourceControllerDebuggeesBreakpointsList
 }
 object ParamsResourceControllerDebuggeesBreakpointsList {
   
-  @scala.inline
-  def apply(): ParamsResourceControllerDebuggeesBreakpointsList = {
+  inline def apply(): ParamsResourceControllerDebuggeesBreakpointsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceControllerDebuggeesBreakpointsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceControllerDebuggeesBreakpointsListMutableBuilder[Self <: ParamsResourceControllerDebuggeesBreakpointsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceControllerDebuggeesBreakpointsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDebuggeeId(value: String): Self = StObject.set(x, "debuggeeId", value.asInstanceOf[js.Any])
+    inline def setDebuggeeId(value: String): Self = StObject.set(x, "debuggeeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggeeIdUndefined: Self = StObject.set(x, "debuggeeId", js.undefined)
+    inline def setDebuggeeIdUndefined: Self = StObject.set(x, "debuggeeId", js.undefined)
     
-    @scala.inline
-    def setSuccessOnTimeout(value: Boolean): Self = StObject.set(x, "successOnTimeout", value.asInstanceOf[js.Any])
+    inline def setSuccessOnTimeout(value: Boolean): Self = StObject.set(x, "successOnTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessOnTimeoutUndefined: Self = StObject.set(x, "successOnTimeout", js.undefined)
+    inline def setSuccessOnTimeoutUndefined: Self = StObject.set(x, "successOnTimeout", js.undefined)
     
-    @scala.inline
-    def setWaitToken(value: String): Self = StObject.set(x, "waitToken", value.asInstanceOf[js.Any])
+    inline def setWaitToken(value: String): Self = StObject.set(x, "waitToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitTokenUndefined: Self = StObject.set(x, "waitToken", js.undefined)
+    inline def setWaitTokenUndefined: Self = StObject.set(x, "waitToken", js.undefined)
   }
 }

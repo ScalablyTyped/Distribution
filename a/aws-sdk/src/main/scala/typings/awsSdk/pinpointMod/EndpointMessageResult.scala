@@ -38,43 +38,31 @@ trait EndpointMessageResult extends StObject {
 }
 object EndpointMessageResult {
   
-  @scala.inline
-  def apply(DeliveryStatus: DeliveryStatus, StatusCode: integer): EndpointMessageResult = {
+  inline def apply(DeliveryStatus: DeliveryStatus, StatusCode: integer): EndpointMessageResult = {
     val __obj = js.Dynamic.literal(DeliveryStatus = DeliveryStatus.asInstanceOf[js.Any], StatusCode = StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointMessageResult]
   }
   
-  @scala.inline
-  implicit class EndpointMessageResultMutableBuilder[Self <: EndpointMessageResult] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointMessageResult](x: Self) {
     
-    @scala.inline
-    def setAddress(value: string): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: string): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setDeliveryStatus(value: DeliveryStatus): Self = StObject.set(x, "DeliveryStatus", value.asInstanceOf[js.Any])
+    inline def setDeliveryStatus(value: DeliveryStatus): Self = StObject.set(x, "DeliveryStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: string): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: string): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: string): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: string): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setUpdatedToken(value: string): Self = StObject.set(x, "UpdatedToken", value.asInstanceOf[js.Any])
+    inline def setUpdatedToken(value: string): Self = StObject.set(x, "UpdatedToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedTokenUndefined: Self = StObject.set(x, "UpdatedToken", js.undefined)
+    inline def setUpdatedTokenUndefined: Self = StObject.set(x, "UpdatedToken", js.undefined)
   }
 }

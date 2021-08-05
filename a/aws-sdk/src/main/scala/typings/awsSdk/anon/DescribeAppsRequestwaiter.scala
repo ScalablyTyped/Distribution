@@ -25,34 +25,25 @@ trait DescribeAppsRequestwaiter extends StObject {
 }
 object DescribeAppsRequestwaiter {
   
-  @scala.inline
-  def apply(): DescribeAppsRequestwaiter = {
+  inline def apply(): DescribeAppsRequestwaiter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAppsRequestwaiter]
   }
   
-  @scala.inline
-  implicit class DescribeAppsRequestwaiterMutableBuilder[Self <: DescribeAppsRequestwaiter] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAppsRequestwaiter](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setAppIds(value: Strings): Self = StObject.set(x, "AppIds", value.asInstanceOf[js.Any])
+    inline def setAppIds(value: Strings): Self = StObject.set(x, "AppIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdsUndefined: Self = StObject.set(x, "AppIds", js.undefined)
+    inline def setAppIdsUndefined: Self = StObject.set(x, "AppIds", js.undefined)
     
-    @scala.inline
-    def setAppIdsVarargs(value: String*): Self = StObject.set(x, "AppIds", js.Array(value :_*))
+    inline def setAppIdsVarargs(value: String*): Self = StObject.set(x, "AppIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

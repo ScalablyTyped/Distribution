@@ -41,6 +41,5 @@ object cookieMod {
     def setCookie(name: String, value: Unit, options: CookieSerializeOptions): Unit = js.native
   }
   
-  @scala.inline
-  def default_=(x: Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

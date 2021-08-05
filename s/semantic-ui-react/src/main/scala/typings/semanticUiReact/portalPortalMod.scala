@@ -39,8 +39,7 @@ object portalPortalMod {
        with /* key */ StringDictionary[js.Any]
   object PortalProps {
     
-    @scala.inline
-    def apply(): PortalProps = {
+    inline def apply(): PortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortalProps]
     }
@@ -144,152 +143,104 @@ object portalPortalMod {
   }
   object StrictPortalProps {
     
-    @scala.inline
-    def apply(): StrictPortalProps = {
+    inline def apply(): StrictPortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictPortalProps]
     }
     
-    @scala.inline
-    implicit class StrictPortalPropsMutableBuilder[Self <: StrictPortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictPortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCloseOnDocumentClick(value: Boolean): Self = StObject.set(x, "closeOnDocumentClick", value.asInstanceOf[js.Any])
+      inline def setCloseOnDocumentClick(value: Boolean): Self = StObject.set(x, "closeOnDocumentClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnDocumentClickUndefined: Self = StObject.set(x, "closeOnDocumentClick", js.undefined)
+      inline def setCloseOnDocumentClickUndefined: Self = StObject.set(x, "closeOnDocumentClick", js.undefined)
       
-      @scala.inline
-      def setCloseOnEscape(value: Boolean): Self = StObject.set(x, "closeOnEscape", value.asInstanceOf[js.Any])
+      inline def setCloseOnEscape(value: Boolean): Self = StObject.set(x, "closeOnEscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnEscapeUndefined: Self = StObject.set(x, "closeOnEscape", js.undefined)
+      inline def setCloseOnEscapeUndefined: Self = StObject.set(x, "closeOnEscape", js.undefined)
       
-      @scala.inline
-      def setCloseOnPortalMouseLeave(value: Boolean): Self = StObject.set(x, "closeOnPortalMouseLeave", value.asInstanceOf[js.Any])
+      inline def setCloseOnPortalMouseLeave(value: Boolean): Self = StObject.set(x, "closeOnPortalMouseLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnPortalMouseLeaveUndefined: Self = StObject.set(x, "closeOnPortalMouseLeave", js.undefined)
+      inline def setCloseOnPortalMouseLeaveUndefined: Self = StObject.set(x, "closeOnPortalMouseLeave", js.undefined)
       
-      @scala.inline
-      def setCloseOnTriggerBlur(value: Boolean): Self = StObject.set(x, "closeOnTriggerBlur", value.asInstanceOf[js.Any])
+      inline def setCloseOnTriggerBlur(value: Boolean): Self = StObject.set(x, "closeOnTriggerBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnTriggerBlurUndefined: Self = StObject.set(x, "closeOnTriggerBlur", js.undefined)
+      inline def setCloseOnTriggerBlurUndefined: Self = StObject.set(x, "closeOnTriggerBlur", js.undefined)
       
-      @scala.inline
-      def setCloseOnTriggerClick(value: Boolean): Self = StObject.set(x, "closeOnTriggerClick", value.asInstanceOf[js.Any])
+      inline def setCloseOnTriggerClick(value: Boolean): Self = StObject.set(x, "closeOnTriggerClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnTriggerClickUndefined: Self = StObject.set(x, "closeOnTriggerClick", js.undefined)
+      inline def setCloseOnTriggerClickUndefined: Self = StObject.set(x, "closeOnTriggerClick", js.undefined)
       
-      @scala.inline
-      def setCloseOnTriggerMouseLeave(value: Boolean): Self = StObject.set(x, "closeOnTriggerMouseLeave", value.asInstanceOf[js.Any])
+      inline def setCloseOnTriggerMouseLeave(value: Boolean): Self = StObject.set(x, "closeOnTriggerMouseLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnTriggerMouseLeaveUndefined: Self = StObject.set(x, "closeOnTriggerMouseLeave", js.undefined)
+      inline def setCloseOnTriggerMouseLeaveUndefined: Self = StObject.set(x, "closeOnTriggerMouseLeave", js.undefined)
       
-      @scala.inline
-      def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
+      inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
+      inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
-      @scala.inline
-      def setEventPool(value: String): Self = StObject.set(x, "eventPool", value.asInstanceOf[js.Any])
+      inline def setEventPool(value: String): Self = StObject.set(x, "eventPool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPoolUndefined: Self = StObject.set(x, "eventPool", js.undefined)
+      inline def setEventPoolUndefined: Self = StObject.set(x, "eventPool", js.undefined)
       
-      @scala.inline
-      def setMountNode(value: js.Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
+      inline def setMountNode(value: js.Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
+      inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
-      @scala.inline
-      def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
+      inline def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseEnterDelayUndefined: Self = StObject.set(x, "mouseEnterDelay", js.undefined)
+      inline def setMouseEnterDelayUndefined: Self = StObject.set(x, "mouseEnterDelay", js.undefined)
       
-      @scala.inline
-      def setMouseLeaveDelay(value: Double): Self = StObject.set(x, "mouseLeaveDelay", value.asInstanceOf[js.Any])
+      inline def setMouseLeaveDelay(value: Double): Self = StObject.set(x, "mouseLeaveDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseLeaveDelayUndefined: Self = StObject.set(x, "mouseLeaveDelay", js.undefined)
+      inline def setMouseLeaveDelayUndefined: Self = StObject.set(x, "mouseLeaveDelay", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PortalProps) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      inline def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PortalProps) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnMount(value: (/* nothing */ Null, /* data */ PortalProps) => Unit): Self = StObject.set(x, "onMount", js.Any.fromFunction2(value))
+      inline def setOnMount(value: (/* nothing */ Null, /* data */ PortalProps) => Unit): Self = StObject.set(x, "onMount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
+      inline def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PortalProps) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
+      inline def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PortalProps) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOnUnmount(value: (/* nothing */ Null, /* data */ PortalProps) => Unit): Self = StObject.set(x, "onUnmount", js.Any.fromFunction2(value))
+      inline def setOnUnmount(value: (/* nothing */ Null, /* data */ PortalProps) => Unit): Self = StObject.set(x, "onUnmount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
+      inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnTriggerClick(value: Boolean): Self = StObject.set(x, "openOnTriggerClick", value.asInstanceOf[js.Any])
+      inline def setOpenOnTriggerClick(value: Boolean): Self = StObject.set(x, "openOnTriggerClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnTriggerClickUndefined: Self = StObject.set(x, "openOnTriggerClick", js.undefined)
+      inline def setOpenOnTriggerClickUndefined: Self = StObject.set(x, "openOnTriggerClick", js.undefined)
       
-      @scala.inline
-      def setOpenOnTriggerFocus(value: Boolean): Self = StObject.set(x, "openOnTriggerFocus", value.asInstanceOf[js.Any])
+      inline def setOpenOnTriggerFocus(value: Boolean): Self = StObject.set(x, "openOnTriggerFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnTriggerFocusUndefined: Self = StObject.set(x, "openOnTriggerFocus", js.undefined)
+      inline def setOpenOnTriggerFocusUndefined: Self = StObject.set(x, "openOnTriggerFocus", js.undefined)
       
-      @scala.inline
-      def setOpenOnTriggerMouseEnter(value: Boolean): Self = StObject.set(x, "openOnTriggerMouseEnter", value.asInstanceOf[js.Any])
+      inline def setOpenOnTriggerMouseEnter(value: Boolean): Self = StObject.set(x, "openOnTriggerMouseEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnTriggerMouseEnterUndefined: Self = StObject.set(x, "openOnTriggerMouseEnter", js.undefined)
+      inline def setOpenOnTriggerMouseEnterUndefined: Self = StObject.set(x, "openOnTriggerMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: ReactNode): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: ReactNode): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerRef(value: Ref[js.Any]): Self = StObject.set(x, "triggerRef", value.asInstanceOf[js.Any])
+      inline def setTriggerRef(value: Ref[js.Any]): Self = StObject.set(x, "triggerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "triggerRef", js.Any.fromFunction1(value))
+      inline def setTriggerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "triggerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTriggerRefNull: Self = StObject.set(x, "triggerRef", null)
+      inline def setTriggerRefNull: Self = StObject.set(x, "triggerRef", null)
       
-      @scala.inline
-      def setTriggerRefUndefined: Self = StObject.set(x, "triggerRef", js.undefined)
+      inline def setTriggerRefUndefined: Self = StObject.set(x, "triggerRef", js.undefined)
       
-      @scala.inline
-      def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     }
   }
 }

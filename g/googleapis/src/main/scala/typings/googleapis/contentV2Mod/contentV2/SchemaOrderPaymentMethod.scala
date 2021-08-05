@@ -40,49 +40,35 @@ trait SchemaOrderPaymentMethod extends StObject {
 }
 object SchemaOrderPaymentMethod {
   
-  @scala.inline
-  def apply(): SchemaOrderPaymentMethod = {
+  inline def apply(): SchemaOrderPaymentMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderPaymentMethod]
   }
   
-  @scala.inline
-  implicit class SchemaOrderPaymentMethodMutableBuilder[Self <: SchemaOrderPaymentMethod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderPaymentMethod](x: Self) {
     
-    @scala.inline
-    def setBillingAddress(value: SchemaOrderAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: SchemaOrderAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
-    @scala.inline
-    def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    inline def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+    inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
-    @scala.inline
-    def setExpirationYear(value: Double): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    inline def setExpirationYear(value: Double): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+    inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
-    @scala.inline
-    def setLastFourDigits(value: String): Self = StObject.set(x, "lastFourDigits", value.asInstanceOf[js.Any])
+    inline def setLastFourDigits(value: String): Self = StObject.set(x, "lastFourDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFourDigitsUndefined: Self = StObject.set(x, "lastFourDigits", js.undefined)
+    inline def setLastFourDigitsUndefined: Self = StObject.set(x, "lastFourDigits", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

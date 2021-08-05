@@ -23,34 +23,25 @@ trait MultiConditionalSplitActivity extends StObject {
 }
 object MultiConditionalSplitActivity {
   
-  @scala.inline
-  def apply(): MultiConditionalSplitActivity = {
+  inline def apply(): MultiConditionalSplitActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiConditionalSplitActivity]
   }
   
-  @scala.inline
-  implicit class MultiConditionalSplitActivityMutableBuilder[Self <: MultiConditionalSplitActivity] (val x: Self) extends AnyVal {
+  extension [Self <: MultiConditionalSplitActivity](x: Self) {
     
-    @scala.inline
-    def setBranches(value: ListOfMultiConditionalBranch): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
+    inline def setBranches(value: ListOfMultiConditionalBranch): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
+    inline def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
     
-    @scala.inline
-    def setBranchesVarargs(value: MultiConditionalBranch*): Self = StObject.set(x, "Branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: MultiConditionalBranch*): Self = StObject.set(x, "Branches", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultActivity(value: string): Self = StObject.set(x, "DefaultActivity", value.asInstanceOf[js.Any])
+    inline def setDefaultActivity(value: string): Self = StObject.set(x, "DefaultActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultActivityUndefined: Self = StObject.set(x, "DefaultActivity", js.undefined)
+    inline def setDefaultActivityUndefined: Self = StObject.set(x, "DefaultActivity", js.undefined)
     
-    @scala.inline
-    def setEvaluationWaitTime(value: WaitTime): Self = StObject.set(x, "EvaluationWaitTime", value.asInstanceOf[js.Any])
+    inline def setEvaluationWaitTime(value: WaitTime): Self = StObject.set(x, "EvaluationWaitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationWaitTimeUndefined: Self = StObject.set(x, "EvaluationWaitTime", js.undefined)
+    inline def setEvaluationWaitTimeUndefined: Self = StObject.set(x, "EvaluationWaitTime", js.undefined)
   }
 }

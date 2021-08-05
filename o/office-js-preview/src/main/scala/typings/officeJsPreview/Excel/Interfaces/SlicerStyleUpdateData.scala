@@ -17,19 +17,15 @@ trait SlicerStyleUpdateData extends StObject {
 }
 object SlicerStyleUpdateData {
   
-  @scala.inline
-  def apply(): SlicerStyleUpdateData = {
+  inline def apply(): SlicerStyleUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlicerStyleUpdateData]
   }
   
-  @scala.inline
-  implicit class SlicerStyleUpdateDataMutableBuilder[Self <: SlicerStyleUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerStyleUpdateData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

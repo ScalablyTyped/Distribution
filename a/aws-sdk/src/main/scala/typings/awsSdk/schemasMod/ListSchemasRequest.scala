@@ -25,34 +25,25 @@ trait ListSchemasRequest extends StObject {
 }
 object ListSchemasRequest {
   
-  @scala.inline
-  def apply(RegistryName: string): ListSchemasRequest = {
+  inline def apply(RegistryName: string): ListSchemasRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSchemasRequest]
   }
   
-  @scala.inline
-  implicit class ListSchemasRequestMutableBuilder[Self <: ListSchemasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSchemasRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNamePrefix(value: string): Self = StObject.set(x, "SchemaNamePrefix", value.asInstanceOf[js.Any])
+    inline def setSchemaNamePrefix(value: string): Self = StObject.set(x, "SchemaNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNamePrefixUndefined: Self = StObject.set(x, "SchemaNamePrefix", js.undefined)
+    inline def setSchemaNamePrefixUndefined: Self = StObject.set(x, "SchemaNamePrefix", js.undefined)
   }
 }

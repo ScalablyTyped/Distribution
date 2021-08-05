@@ -45,23 +45,18 @@ object mod extends Shortcut {
   }
   object Keygrip {
     
-    @scala.inline
-    def apply(index: (js.Any, String) => Double, sign: js.Any => String, verify: (js.Any, String) => Boolean): Keygrip = {
+    inline def apply(index: (js.Any, String) => Double, sign: js.Any => String, verify: (js.Any, String) => Boolean): Keygrip = {
       val __obj = js.Dynamic.literal(index = js.Any.fromFunction2(index), sign = js.Any.fromFunction1(sign), verify = js.Any.fromFunction2(verify))
       __obj.asInstanceOf[Keygrip]
     }
     
-    @scala.inline
-    implicit class KeygripMutableBuilder[Self <: Keygrip] (val x: Self) extends AnyVal {
+    extension [Self <: Keygrip](x: Self) {
       
-      @scala.inline
-      def setIndex(value: (js.Any, String) => Double): Self = StObject.set(x, "index", js.Any.fromFunction2(value))
+      inline def setIndex(value: (js.Any, String) => Double): Self = StObject.set(x, "index", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSign(value: js.Any => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: js.Any => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerify(value: (js.Any, String) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (js.Any, String) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
     }
   }
   

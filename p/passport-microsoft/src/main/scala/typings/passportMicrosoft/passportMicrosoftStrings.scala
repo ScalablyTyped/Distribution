@@ -11,27 +11,23 @@ object passportMicrosoftStrings {
   sealed trait authorizationURL
     extends StObject
        with OptionalOptionParameters
-  @scala.inline
-  def authorizationURL: authorizationURL = "authorizationURL".asInstanceOf[authorizationURL]
+  inline def authorizationURL: authorizationURL = "authorizationURL".asInstanceOf[authorizationURL]
   
   @js.native
   sealed trait customHeaders
     extends StObject
        with OptionalOptionParameters
-  @scala.inline
-  def customHeaders: customHeaders = "customHeaders".asInstanceOf[customHeaders]
+  inline def customHeaders: customHeaders = "customHeaders".asInstanceOf[customHeaders]
   
   @js.native
   sealed trait scopeSeparator
     extends StObject
        with OptionalOptionParameters
-  @scala.inline
-  def scopeSeparator: scopeSeparator = "scopeSeparator".asInstanceOf[scopeSeparator]
+  inline def scopeSeparator: scopeSeparator = "scopeSeparator".asInstanceOf[scopeSeparator]
   
   @js.native
   sealed trait tokenURL
     extends StObject
        with OptionalOptionParameters
-  @scala.inline
-  def tokenURL: tokenURL = "tokenURL".asInstanceOf[tokenURL]
+  inline def tokenURL: tokenURL = "tokenURL".asInstanceOf[tokenURL]
 }

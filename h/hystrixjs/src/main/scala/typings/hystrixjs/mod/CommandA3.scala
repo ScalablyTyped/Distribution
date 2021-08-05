@@ -10,16 +10,13 @@ trait CommandA3[R, T, U, V] extends StObject {
 }
 object CommandA3 {
   
-  @scala.inline
-  def apply[R, T, U, V](execute: (T, U, V) => js.Thenable[R]): CommandA3[R, T, U, V] = {
+  inline def apply[R, T, U, V](execute: (T, U, V) => js.Thenable[R]): CommandA3[R, T, U, V] = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction3(execute))
     __obj.asInstanceOf[CommandA3[R, T, U, V]]
   }
   
-  @scala.inline
-  implicit class CommandA3MutableBuilder[Self <: CommandA3[?, ?, ?, ?], R, T, U, V] (val x: Self & (CommandA3[R, T, U, V])) extends AnyVal {
+  extension [Self <: CommandA3[?, ?, ?, ?], R, T, U, V](x: Self & (CommandA3[R, T, U, V])) {
     
-    @scala.inline
-    def setExecute(value: (T, U, V) => js.Thenable[R]): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (T, U, V) => js.Thenable[R]): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }
 }

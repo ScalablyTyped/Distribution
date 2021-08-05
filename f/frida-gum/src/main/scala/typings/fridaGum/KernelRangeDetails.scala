@@ -23,22 +23,17 @@ trait KernelRangeDetails extends StObject {
 }
 object KernelRangeDetails {
   
-  @scala.inline
-  def apply(base: UInt64, protection: PageProtection, size: Double): KernelRangeDetails = {
+  inline def apply(base: UInt64, protection: PageProtection, size: Double): KernelRangeDetails = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[KernelRangeDetails]
   }
   
-  @scala.inline
-  implicit class KernelRangeDetailsMutableBuilder[Self <: KernelRangeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: KernelRangeDetails](x: Self) {
     
-    @scala.inline
-    def setBase(value: UInt64): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: UInt64): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

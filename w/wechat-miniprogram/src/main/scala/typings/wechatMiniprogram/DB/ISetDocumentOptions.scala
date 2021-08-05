@@ -13,16 +13,13 @@ trait ISetDocumentOptions
 }
 object ISetDocumentOptions {
   
-  @scala.inline
-  def apply(data: IUpdateCondition): ISetDocumentOptions = {
+  inline def apply(data: IUpdateCondition): ISetDocumentOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetDocumentOptions]
   }
   
-  @scala.inline
-  implicit class ISetDocumentOptionsMutableBuilder[Self <: ISetDocumentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISetDocumentOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: IUpdateCondition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IUpdateCondition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

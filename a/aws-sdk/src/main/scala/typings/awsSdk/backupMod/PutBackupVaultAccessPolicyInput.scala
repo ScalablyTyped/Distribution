@@ -18,22 +18,17 @@ trait PutBackupVaultAccessPolicyInput extends StObject {
 }
 object PutBackupVaultAccessPolicyInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName): PutBackupVaultAccessPolicyInput = {
+  inline def apply(BackupVaultName: BackupVaultName): PutBackupVaultAccessPolicyInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBackupVaultAccessPolicyInput]
   }
   
-  @scala.inline
-  implicit class PutBackupVaultAccessPolicyInputMutableBuilder[Self <: PutBackupVaultAccessPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutBackupVaultAccessPolicyInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: IAMPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: IAMPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

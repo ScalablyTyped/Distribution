@@ -10,16 +10,13 @@ trait NoAlternate extends StObject {
 }
 object NoAlternate {
   
-  @scala.inline
-  def apply(noAlternate: Boolean): NoAlternate = {
+  inline def apply(noAlternate: Boolean): NoAlternate = {
     val __obj = js.Dynamic.literal(noAlternate = noAlternate.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoAlternate]
   }
   
-  @scala.inline
-  implicit class NoAlternateMutableBuilder[Self <: NoAlternate] (val x: Self) extends AnyVal {
+  extension [Self <: NoAlternate](x: Self) {
     
-    @scala.inline
-    def setNoAlternate(value: Boolean): Self = StObject.set(x, "noAlternate", value.asInstanceOf[js.Any])
+    inline def setNoAlternate(value: Boolean): Self = StObject.set(x, "noAlternate", value.asInstanceOf[js.Any])
   }
 }

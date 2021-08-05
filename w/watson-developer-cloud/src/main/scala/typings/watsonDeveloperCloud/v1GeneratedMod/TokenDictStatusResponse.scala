@@ -15,25 +15,19 @@ trait TokenDictStatusResponse extends StObject {
 }
 object TokenDictStatusResponse {
   
-  @scala.inline
-  def apply(): TokenDictStatusResponse = {
+  inline def apply(): TokenDictStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenDictStatusResponse]
   }
   
-  @scala.inline
-  implicit class TokenDictStatusResponseMutableBuilder[Self <: TokenDictStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TokenDictStatusResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

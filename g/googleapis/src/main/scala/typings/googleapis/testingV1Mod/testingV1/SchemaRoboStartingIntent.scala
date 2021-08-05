@@ -20,31 +20,23 @@ trait SchemaRoboStartingIntent extends StObject {
 }
 object SchemaRoboStartingIntent {
   
-  @scala.inline
-  def apply(): SchemaRoboStartingIntent = {
+  inline def apply(): SchemaRoboStartingIntent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoboStartingIntent]
   }
   
-  @scala.inline
-  implicit class SchemaRoboStartingIntentMutableBuilder[Self <: SchemaRoboStartingIntent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoboStartingIntent](x: Self) {
     
-    @scala.inline
-    def setLauncherActivity(value: SchemaLauncherActivityIntent): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
+    inline def setLauncherActivity(value: SchemaLauncherActivityIntent): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLauncherActivityUndefined: Self = StObject.set(x, "launcherActivity", js.undefined)
+    inline def setLauncherActivityUndefined: Self = StObject.set(x, "launcherActivity", js.undefined)
     
-    @scala.inline
-    def setStartActivity(value: SchemaStartActivityIntent): Self = StObject.set(x, "startActivity", value.asInstanceOf[js.Any])
+    inline def setStartActivity(value: SchemaStartActivityIntent): Self = StObject.set(x, "startActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartActivityUndefined: Self = StObject.set(x, "startActivity", js.undefined)
+    inline def setStartActivityUndefined: Self = StObject.set(x, "startActivity", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

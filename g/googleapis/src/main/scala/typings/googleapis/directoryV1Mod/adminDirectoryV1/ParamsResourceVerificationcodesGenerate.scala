@@ -24,25 +24,19 @@ trait ParamsResourceVerificationcodesGenerate
 }
 object ParamsResourceVerificationcodesGenerate {
   
-  @scala.inline
-  def apply(): ParamsResourceVerificationcodesGenerate = {
+  inline def apply(): ParamsResourceVerificationcodesGenerate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVerificationcodesGenerate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVerificationcodesGenerateMutableBuilder[Self <: ParamsResourceVerificationcodesGenerate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVerificationcodesGenerate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
+    inline def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
+    inline def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
   }
 }

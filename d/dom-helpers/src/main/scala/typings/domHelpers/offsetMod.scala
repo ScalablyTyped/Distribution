@@ -12,6 +12,5 @@ object offsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: HTMLElement): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Height]
+  inline def default(node: HTMLElement): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Height]
 }

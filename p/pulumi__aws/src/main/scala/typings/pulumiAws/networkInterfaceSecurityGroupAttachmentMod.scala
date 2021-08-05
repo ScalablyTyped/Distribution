@@ -50,14 +50,10 @@ object networkInterfaceSecurityGroupAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceSecurityGroupAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceSecurityGroupAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NetworkInterfaceSecurityGroupAttachmentState): NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceSecurityGroupAttachment]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceSecurityGroupAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceSecurityGroupAttachment]
+    inline def get(name: String, id: Input[ID], state: NetworkInterfaceSecurityGroupAttachmentState): NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkInterfaceSecurityGroupAttachment]
+    inline def get(
       name: String,
       id: Input[ID],
       state: NetworkInterfaceSecurityGroupAttachmentState,
@@ -68,8 +64,7 @@ object networkInterfaceSecurityGroupAttachmentMod {
       * Returns true if the given object is an instance of NetworkInterfaceSecurityGroupAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean]
   }
   
   trait NetworkInterfaceSecurityGroupAttachmentArgs extends StObject {
@@ -86,20 +81,16 @@ object networkInterfaceSecurityGroupAttachmentMod {
   }
   object NetworkInterfaceSecurityGroupAttachmentArgs {
     
-    @scala.inline
-    def apply(networkInterfaceId: Input[String], securityGroupId: Input[String]): NetworkInterfaceSecurityGroupAttachmentArgs = {
+    inline def apply(networkInterfaceId: Input[String], securityGroupId: Input[String]): NetworkInterfaceSecurityGroupAttachmentArgs = {
       val __obj = js.Dynamic.literal(networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkInterfaceSecurityGroupAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class NetworkInterfaceSecurityGroupAttachmentArgsMutableBuilder[Self <: NetworkInterfaceSecurityGroupAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInterfaceSecurityGroupAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,26 +108,20 @@ object networkInterfaceSecurityGroupAttachmentMod {
   }
   object NetworkInterfaceSecurityGroupAttachmentState {
     
-    @scala.inline
-    def apply(): NetworkInterfaceSecurityGroupAttachmentState = {
+    inline def apply(): NetworkInterfaceSecurityGroupAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkInterfaceSecurityGroupAttachmentState]
     }
     
-    @scala.inline
-    implicit class NetworkInterfaceSecurityGroupAttachmentStateMutableBuilder[Self <: NetworkInterfaceSecurityGroupAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInterfaceSecurityGroupAttachmentState](x: Self) {
       
-      @scala.inline
-      def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
+      inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
+      inline def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
     }
   }
 }

@@ -49,24 +49,15 @@ object chromeMod {
       *     default.
       * @return {!Driver} A new driver instance.
       */
-    @scala.inline
-    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Unit, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Unit, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Options, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Options, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: CreateSessionCapabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: CreateSessionCapabilities, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    inline def createSession(opt_config: Unit, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Unit, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(opt_config: Options, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Options, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: CreateSessionCapabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(opt_config: CreateSessionCapabilities, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/chrome", "Options")
@@ -315,8 +306,7 @@ object chromeMod {
       * @param {!webdriver.Capabilities} capabilities The capabilities object.
       * @return {!Options} The ChromeDriver options.
       */
-    @scala.inline
-    def fromCapabilities(capabilities: Capabilities): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCapabilities")(capabilities.asInstanceOf[js.Any]).asInstanceOf[Options]
+    inline def fromCapabilities(capabilities: Capabilities): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCapabilities")(capabilities.asInstanceOf[js.Any]).asInstanceOf[Options]
   }
   
   @JSImport("selenium-webdriver/chrome", "ServiceBuilder")
@@ -365,11 +355,9 @@ object chromeMod {
     def setNumHttpThreads(n: Double): this.type = js.native
   }
   
-  @scala.inline
-  def getDefaultService(): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultService")().asInstanceOf[DriverService]
+  inline def getDefaultService(): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultService")().asInstanceOf[DriverService]
   
-  @scala.inline
-  def setDefaultService(service: DriverService): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultService")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultService(service: DriverService): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultService")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IOptionsValues extends StObject {
     
@@ -389,53 +377,38 @@ object chromeMod {
   }
   object IOptionsValues {
     
-    @scala.inline
-    def apply(args: js.Array[String], detach: Boolean, extensions: js.Array[String]): IOptionsValues = {
+    inline def apply(args: js.Array[String], detach: Boolean, extensions: js.Array[String]): IOptionsValues = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], detach = detach.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOptionsValues]
     }
     
-    @scala.inline
-    implicit class IOptionsValuesMutableBuilder[Self <: IOptionsValues] (val x: Self) extends AnyVal {
+    extension [Self <: IOptionsValues](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
+      inline def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalState(value: js.Any): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
+      inline def setLocalState(value: js.Any): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStateUndefined: Self = StObject.set(x, "localState", js.undefined)
+      inline def setLocalStateUndefined: Self = StObject.set(x, "localState", js.undefined)
       
-      @scala.inline
-      def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
+      inline def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogFileUndefined: Self = StObject.set(x, "logFile", js.undefined)
+      inline def setLogFileUndefined: Self = StObject.set(x, "logFile", js.undefined)
       
-      @scala.inline
-      def setPrefs(value: js.Any): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+      inline def setPrefs(value: js.Any): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
+      inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     }
   }
   
@@ -453,8 +426,7 @@ object chromeMod {
   }
   object IPerfLoggingPrefs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bufferUsageReportingInterval: Double,
       enableNetwork: Boolean,
       enablePage: Boolean,
@@ -465,23 +437,17 @@ object chromeMod {
       __obj.asInstanceOf[IPerfLoggingPrefs]
     }
     
-    @scala.inline
-    implicit class IPerfLoggingPrefsMutableBuilder[Self <: IPerfLoggingPrefs] (val x: Self) extends AnyVal {
+    extension [Self <: IPerfLoggingPrefs](x: Self) {
       
-      @scala.inline
-      def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
+      inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableNetwork(value: Boolean): Self = StObject.set(x, "enableNetwork", value.asInstanceOf[js.Any])
+      inline def setEnableNetwork(value: Boolean): Self = StObject.set(x, "enableNetwork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePage(value: Boolean): Self = StObject.set(x, "enablePage", value.asInstanceOf[js.Any])
+      inline def setEnablePage(value: Boolean): Self = StObject.set(x, "enablePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTimeline(value: Boolean): Self = StObject.set(x, "enableTimeline", value.asInstanceOf[js.Any])
+      inline def setEnableTimeline(value: Boolean): Self = StObject.set(x, "enableTimeline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingCategories(value: String): Self = StObject.set(x, "tracingCategories", value.asInstanceOf[js.Any])
+      inline def setTracingCategories(value: String): Self = StObject.set(x, "tracingCategories", value.asInstanceOf[js.Any])
     }
   }
 }

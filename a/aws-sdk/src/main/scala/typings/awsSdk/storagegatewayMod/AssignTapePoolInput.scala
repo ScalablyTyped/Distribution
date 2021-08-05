@@ -23,25 +23,19 @@ trait AssignTapePoolInput extends StObject {
 }
 object AssignTapePoolInput {
   
-  @scala.inline
-  def apply(PoolId: PoolId, TapeARN: TapeARN): AssignTapePoolInput = {
+  inline def apply(PoolId: PoolId, TapeARN: TapeARN): AssignTapePoolInput = {
     val __obj = js.Dynamic.literal(PoolId = PoolId.asInstanceOf[js.Any], TapeARN = TapeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignTapePoolInput]
   }
   
-  @scala.inline
-  implicit class AssignTapePoolInputMutableBuilder[Self <: AssignTapePoolInput] (val x: Self) extends AnyVal {
+  extension [Self <: AssignTapePoolInput](x: Self) {
     
-    @scala.inline
-    def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
+    inline def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
+    inline def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
     
-    @scala.inline
-    def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
   }
 }

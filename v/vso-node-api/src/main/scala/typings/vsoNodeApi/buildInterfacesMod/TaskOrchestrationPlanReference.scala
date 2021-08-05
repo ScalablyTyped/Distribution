@@ -18,19 +18,15 @@ trait TaskOrchestrationPlanReference extends StObject {
 }
 object TaskOrchestrationPlanReference {
   
-  @scala.inline
-  def apply(orchestrationType: Double, planId: String): TaskOrchestrationPlanReference = {
+  inline def apply(orchestrationType: Double, planId: String): TaskOrchestrationPlanReference = {
     val __obj = js.Dynamic.literal(orchestrationType = orchestrationType.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOrchestrationPlanReference]
   }
   
-  @scala.inline
-  implicit class TaskOrchestrationPlanReferenceMutableBuilder[Self <: TaskOrchestrationPlanReference] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOrchestrationPlanReference](x: Self) {
     
-    @scala.inline
-    def setOrchestrationType(value: Double): Self = StObject.set(x, "orchestrationType", value.asInstanceOf[js.Any])
+    inline def setOrchestrationType(value: Double): Self = StObject.set(x, "orchestrationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
   }
 }

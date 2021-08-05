@@ -16,8 +16,7 @@ object counterBadgeUniDriverMod {
   }
   object CounterBadgeUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -27,11 +26,9 @@ object counterBadgeUniDriverMod {
       __obj.asInstanceOf[CounterBadgeUniDriver]
     }
     
-    @scala.inline
-    implicit class CounterBadgeUniDriverMutableBuilder[Self <: CounterBadgeUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CounterBadgeUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetContent(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     }
   }
 }

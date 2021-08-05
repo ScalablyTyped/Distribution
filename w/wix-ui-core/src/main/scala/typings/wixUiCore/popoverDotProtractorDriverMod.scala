@@ -33,8 +33,7 @@ object popoverDotProtractorDriverMod {
   }
   object PopoverDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => ElementFinder,
       getContentElement: () => ElementFinder,
@@ -48,29 +47,21 @@ object popoverDotProtractorDriverMod {
       __obj.asInstanceOf[PopoverDriver]
     }
     
-    @scala.inline
-    implicit class PopoverDriverMutableBuilder[Self <: PopoverDriver] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentElement(value: () => ElementFinder): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
+      inline def setGetContentElement(value: () => ElementFinder): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTargetElement(value: () => ElementFinder): Self = StObject.set(x, "getTargetElement", js.Any.fromFunction0(value))
+      inline def setGetTargetElement(value: () => ElementFinder): Self = StObject.set(x, "getTargetElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsContentElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isContentElementExists", js.Any.fromFunction0(value))
+      inline def setIsContentElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isContentElementExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTargetElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTargetElementExists", js.Any.fromFunction0(value))
+      inline def setIsTargetElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTargetElementExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+      inline def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+      inline def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
     }
   }
 }

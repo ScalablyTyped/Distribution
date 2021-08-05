@@ -18,25 +18,19 @@ trait ProximityLocationListAssignedTargetingOptionDetails extends StObject {
 }
 object ProximityLocationListAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ProximityLocationListAssignedTargetingOptionDetails = {
+  inline def apply(): ProximityLocationListAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProximityLocationListAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ProximityLocationListAssignedTargetingOptionDetailsMutableBuilder[Self <: ProximityLocationListAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ProximityLocationListAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setProximityLocationListId(value: String): Self = StObject.set(x, "proximityLocationListId", value.asInstanceOf[js.Any])
+    inline def setProximityLocationListId(value: String): Self = StObject.set(x, "proximityLocationListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityLocationListIdUndefined: Self = StObject.set(x, "proximityLocationListId", js.undefined)
+    inline def setProximityLocationListIdUndefined: Self = StObject.set(x, "proximityLocationListId", js.undefined)
     
-    @scala.inline
-    def setProximityRadiusRange(value: String): Self = StObject.set(x, "proximityRadiusRange", value.asInstanceOf[js.Any])
+    inline def setProximityRadiusRange(value: String): Self = StObject.set(x, "proximityRadiusRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityRadiusRangeUndefined: Self = StObject.set(x, "proximityRadiusRange", js.undefined)
+    inline def setProximityRadiusRangeUndefined: Self = StObject.set(x, "proximityRadiusRange", js.undefined)
   }
 }

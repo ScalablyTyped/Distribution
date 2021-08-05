@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ResampleMediaTasks")
 @js.native
-class ResampleMediaTasks protected ()
+/* private */ class ResampleMediaTasks ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ResampleMediaTasks {
   
@@ -25,7 +25,7 @@ class ResampleMediaTasks protected ()
   /* CompleteClass */
   override val PercentComplete: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ResampleMediaTasks_typekey")
   var PowerPointDotResampleMediaTasks_typekey: typings.activexPowerpoint.PowerPoint.ResampleMediaTasks = js.native
   

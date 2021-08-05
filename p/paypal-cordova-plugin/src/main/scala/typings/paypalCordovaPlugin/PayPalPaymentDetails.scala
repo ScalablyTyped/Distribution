@@ -28,22 +28,17 @@ trait PayPalPaymentDetails extends StObject {
 }
 object PayPalPaymentDetails {
   
-  @scala.inline
-  def apply(shipping: String, subtotal: String, tax: String): PayPalPaymentDetails = {
+  inline def apply(shipping: String, subtotal: String, tax: String): PayPalPaymentDetails = {
     val __obj = js.Dynamic.literal(shipping = shipping.asInstanceOf[js.Any], subtotal = subtotal.asInstanceOf[js.Any], tax = tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayPalPaymentDetails]
   }
   
-  @scala.inline
-  implicit class PayPalPaymentDetailsMutableBuilder[Self <: PayPalPaymentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PayPalPaymentDetails](x: Self) {
     
-    @scala.inline
-    def setShipping(value: String): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+    inline def setShipping(value: String): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
+    inline def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTax(value: String): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    inline def setTax(value: String): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
   }
 }

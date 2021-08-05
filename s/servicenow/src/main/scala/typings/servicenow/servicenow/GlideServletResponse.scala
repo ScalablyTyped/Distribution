@@ -14,22 +14,17 @@ trait GlideServletResponse extends StObject {
 }
 object GlideServletResponse {
   
-  @scala.inline
-  def apply(setContentType: String => Unit, setHeader: (String, String) => Unit, setStatus: Double => Unit): GlideServletResponse = {
+  inline def apply(setContentType: String => Unit, setHeader: (String, String) => Unit, setStatus: Double => Unit): GlideServletResponse = {
     val __obj = js.Dynamic.literal(setContentType = js.Any.fromFunction1(setContentType), setHeader = js.Any.fromFunction2(setHeader), setStatus = js.Any.fromFunction1(setStatus))
     __obj.asInstanceOf[GlideServletResponse]
   }
   
-  @scala.inline
-  implicit class GlideServletResponseMutableBuilder[Self <: GlideServletResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GlideServletResponse](x: Self) {
     
-    @scala.inline
-    def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
+    inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
+    inline def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
+    inline def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
   }
 }

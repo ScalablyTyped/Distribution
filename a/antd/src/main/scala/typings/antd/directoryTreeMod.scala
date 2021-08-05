@@ -23,20 +23,16 @@ object directoryTreeMod extends Shortcut {
   }
   object DirectoryTreeProps {
     
-    @scala.inline
-    def apply(): DirectoryTreeProps = {
+    inline def apply(): DirectoryTreeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectoryTreeProps]
     }
     
-    @scala.inline
-    implicit class DirectoryTreePropsMutableBuilder[Self <: DirectoryTreeProps] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryTreeProps](x: Self) {
       
-      @scala.inline
-      def setExpandAction(value: ExpandAction): Self = StObject.set(x, "expandAction", value.asInstanceOf[js.Any])
+      inline def setExpandAction(value: ExpandAction): Self = StObject.set(x, "expandAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandActionUndefined: Self = StObject.set(x, "expandAction", js.undefined)
+      inline def setExpandActionUndefined: Self = StObject.set(x, "expandAction", js.undefined)
     }
   }
   
@@ -48,32 +44,24 @@ object directoryTreeMod extends Shortcut {
   }
   object DirectoryTreeState {
     
-    @scala.inline
-    def apply(): DirectoryTreeState = {
+    inline def apply(): DirectoryTreeState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectoryTreeState]
     }
     
-    @scala.inline
-    implicit class DirectoryTreeStateMutableBuilder[Self <: DirectoryTreeState] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryTreeState](x: Self) {
       
-      @scala.inline
-      def setExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
+      inline def setExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedKeysUndefined: Self = StObject.set(x, "expandedKeys", js.undefined)
+      inline def setExpandedKeysUndefined: Self = StObject.set(x, "expandedKeys", js.undefined)
       
-      @scala.inline
-      def setExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
+      inline def setExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedKeys(value: js.Array[Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
+      inline def setSelectedKeys(value: js.Array[Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
+      inline def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
       
-      @scala.inline
-      def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+      inline def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
     }
   }
   
@@ -85,14 +73,11 @@ object directoryTreeMod extends Shortcut {
   trait ExpandAction extends StObject
   object ExpandAction {
     
-    @scala.inline
-    def click: typings.antd.antdStrings.click = "click".asInstanceOf[typings.antd.antdStrings.click]
+    inline def click: typings.antd.antdStrings.click = "click".asInstanceOf[typings.antd.antdStrings.click]
     
-    @scala.inline
-    def doubleClick: typings.antd.antdStrings.doubleClick = "doubleClick".asInstanceOf[typings.antd.antdStrings.doubleClick]
+    inline def doubleClick: typings.antd.antdStrings.doubleClick = "doubleClick".asInstanceOf[typings.antd.antdStrings.doubleClick]
     
-    @scala.inline
-    def `false`: typings.antd.antdBooleans.`false` = false.asInstanceOf[typings.antd.antdBooleans.`false`]
+    inline def `false`: typings.antd.antdBooleans.`false` = false.asInstanceOf[typings.antd.antdBooleans.`false`]
   }
   
   type _To = ForwardRefExoticComponent[DirectoryTreeProps & RefAttributes[typings.rcTree.mod.default]]

@@ -16,17 +16,14 @@ object NodeJS {
   }
   object Process {
     
-    @scala.inline
-    def apply(browser: Boolean): Process = {
+    inline def apply(browser: Boolean): Process = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
       __obj.asInstanceOf[Process]
     }
     
-    @scala.inline
-    implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+    extension [Self <: Process](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,17 +33,14 @@ object NodeJS {
   }
   object ProcessEnv {
     
-    @scala.inline
-    def apply(NODE_ENV: development | production | test): ProcessEnv = {
+    inline def apply(NODE_ENV: development | production | test): ProcessEnv = {
       val __obj = js.Dynamic.literal(NODE_ENV = NODE_ENV.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessEnv]
     }
     
-    @scala.inline
-    implicit class ProcessEnvMutableBuilder[Self <: ProcessEnv] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessEnv](x: Self) {
       
-      @scala.inline
-      def setNODE_ENV(value: development | production | test): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
+      inline def setNODE_ENV(value: development | production | test): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
     }
   }
 }

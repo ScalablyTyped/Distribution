@@ -10,16 +10,13 @@ trait LabelPrecision extends StObject {
 }
 object LabelPrecision {
   
-  @scala.inline
-  def apply(labelPrecision: Double): LabelPrecision = {
+  inline def apply(labelPrecision: Double): LabelPrecision = {
     val __obj = js.Dynamic.literal(labelPrecision = labelPrecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelPrecision]
   }
   
-  @scala.inline
-  implicit class LabelPrecisionMutableBuilder[Self <: LabelPrecision] (val x: Self) extends AnyVal {
+  extension [Self <: LabelPrecision](x: Self) {
     
-    @scala.inline
-    def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
+    inline def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
   }
 }

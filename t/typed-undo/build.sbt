@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typed-undo"
-version := "2.1.0-0e298e"
+version := "2.1.0-9d0b48"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

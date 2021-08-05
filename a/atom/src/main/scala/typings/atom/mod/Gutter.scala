@@ -36,8 +36,7 @@ trait Gutter extends StObject {
 }
 object Gutter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decorateMarker: (DisplayMarker, DecorationOptions) => Decoration,
     destroy: () => Unit,
     hide: () => Unit,
@@ -50,28 +49,20 @@ object Gutter {
     __obj.asInstanceOf[Gutter]
   }
   
-  @scala.inline
-  implicit class GutterMutableBuilder[Self <: Gutter] (val x: Self) extends AnyVal {
+  extension [Self <: Gutter](x: Self) {
     
-    @scala.inline
-    def setDecorateMarker(value: (DisplayMarker, DecorationOptions) => Decoration): Self = StObject.set(x, "decorateMarker", js.Any.fromFunction2(value))
+    inline def setDecorateMarker(value: (DisplayMarker, DecorationOptions) => Decoration): Self = StObject.set(x, "decorateMarker", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDidChangeVisible(value: js.Function1[Gutter, Unit] => Disposable): Self = StObject.set(x, "onDidChangeVisible", js.Any.fromFunction1(value))
+    inline def setOnDidChangeVisible(value: js.Function1[Gutter, Unit] => Disposable): Self = StObject.set(x, "onDidChangeVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidDestroy(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDestroy", js.Any.fromFunction1(value))
+    inline def setOnDidDestroy(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDestroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

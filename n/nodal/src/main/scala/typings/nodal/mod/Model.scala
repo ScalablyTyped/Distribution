@@ -72,7 +72,7 @@ class Model protected () extends StObject {
   
   var _calculationsList: js.Array[String] = js.native
   
-  var _changed: js.Any = js.native
+  /* private */ var _changed: js.Any = js.native
   
   var _columnLookup: StringDictionary[js.Any] = js.native
   
@@ -80,19 +80,19 @@ class Model protected () extends StObject {
   
   var _columns: js.Array[IColumn] = js.native
   
-  var _data: js.Any = js.native
+  /* private */ var _data: js.Any = js.native
   
-  var _errors: js.Any = js.native
+  /* private */ var _errors: js.Any = js.native
   
   var _hides: IAnyObject = js.native
   
   var _inStorage: Boolean = js.native
   
-  var _isSeeding: js.Any = js.native
+  /* private */ var _isSeeding: js.Any = js.native
   
-  var _joinsCache: js.Any = js.native
+  /* private */ var _joinsCache: js.Any = js.native
   
-  var _joinsList: js.Any = js.native
+  /* private */ var _joinsList: js.Any = js.native
   
   var _relationshipCache: IAnyObject = js.native
   
@@ -366,8 +366,7 @@ object Model {
   @JSImport("nodal", "Model._relationshipCache")
   @js.native
   def _relationshipCache: js.Any = js.native
-  @scala.inline
-  def _relationshipCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_relationshipCache")(x.asInstanceOf[js.Any])
+  inline def _relationshipCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_relationshipCache")(x.asInstanceOf[js.Any])
   
   /**
     * Create a calculated field (in JavaScript). Must be synchronous.
@@ -375,44 +374,38 @@ object Model {
     * @param {function} fnCalculate The synchronous method to perform a calculation for.
     *   Pass the names of the (non-computed) fields you'd like to use as parameters.
     */
-  @scala.inline
-  def calculates(calcField: String, fnCompute: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calculates")(calcField.asInstanceOf[js.Any], fnCompute.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def calculates(calcField: String, fnCompute: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calculates")(calcField.asInstanceOf[js.Any], fnCompute.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Return the column schema data for a given name
     * @param {string} columnName
     */
-  @scala.inline
-  def column(columnName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(columnName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def column(columnName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(columnName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Get the model's column lookup data
     * @return {Object}
     */
-  @scala.inline
-  def columnLookup(): IAnyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("columnLookup")().asInstanceOf[IAnyObject]
+  inline def columnLookup(): IAnyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("columnLookup")().asInstanceOf[IAnyObject]
   
   /**
     * Get the model's column names (fields)
     * @return {Array}
     */
-  @scala.inline
-  def columnNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("columnNames")().asInstanceOf[js.Array[String]]
+  inline def columnNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("columnNames")().asInstanceOf[js.Array[String]]
   
   /**
     * Get the model's column data
     * @return {Array}
     */
-  @scala.inline
-  def columns(): js.Array[IColumn] = ^.asInstanceOf[js.Dynamic].applyDynamic("columns")().asInstanceOf[js.Array[IColumn]]
+  inline def columns(): js.Array[IColumn] = ^.asInstanceOf[js.Dynamic].applyDynamic("columns")().asInstanceOf[js.Array[IColumn]]
   
   /**
     * Creates a new model instance using the provided data.
     * @param {object} data The data to load into the object.
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
-  @scala.inline
-  def create(
+  inline def create(
     data: IAnyObject,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -422,20 +415,17 @@ object Model {
     * @param {number} id The id of the model you're looking for
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
-  @scala.inline
-  def destroy(
+  inline def destroy(
     id: Double,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def find(
+  inline def find(
     id: Double,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def findBy(
+  inline def findBy(
     field: String,
     value: js.Any,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
@@ -447,8 +437,7 @@ object Model {
     * @param {object} data Key-value pairs of Model creation data. Will use appropriate value to query for based on "field" parametere.
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
-  @scala.inline
-  def findOrCreateBy(
+  inline def findOrCreateBy(
     field: String,
     data: IAnyObject,
     callback: js.Function2[/* err */ IExtendedError | Null, /* model */ js.UndefOr[this.type], Unit]
@@ -458,22 +447,19 @@ object Model {
     * Check if the model has a column name in its schema
     * @param {string} columnName
     */
-  @scala.inline
-  def hasColumn(columnName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasColumn")(columnName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasColumn(columnName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasColumn")(columnName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Hides fields from being output in .toObject() (i.e. API responses), even if asked for
     * @param {String} field
     */
-  @scala.inline
-  def hides(field: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hides")(field.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hides(field: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hides")(field.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Tells us if a field is hidden (i.e. from API queries)
     * @param {String} field
     */
-  @scala.inline
-  def isHidden(field: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isHidden")(field.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isHidden(field: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isHidden")(field.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Sets a joins relationship for the Model. Sets joinedBy relationship for parent.
@@ -484,51 +470,43 @@ object Model {
     *   "as": What to display the name of the child as when joined to the parent (default to camelCase of child name)
     *   "multiple": Whether the child exists in multiples for the parent (defaults to false)
     */
-  @scala.inline
-  def joinsTo(modelClass: TypeofModelInstantiable, options: As): RelationshipEdge | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("joinsTo")(modelClass.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelationshipEdge | Null]
+  inline def joinsTo(modelClass: TypeofModelInstantiable, options: As): RelationshipEdge | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("joinsTo")(modelClass.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelationshipEdge | Null]
   
   /**
     * Creates a new Composer (ORM) instance to begin a new query.
     * @param {optional Nodal.Database} db Deprecated - provide a database to query from. Set the model's db in its constructor file, instead.
     * @return {Nodal.Composer}
     */
-  @scala.inline
-  def query[T /* <: Model */](): Composer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")().asInstanceOf[Composer[T]]
-  @scala.inline
-  def query[T /* <: Model */](db: Database): Composer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(db.asInstanceOf[js.Any]).asInstanceOf[Composer[T]]
+  inline def query[T /* <: Model */](): Composer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")().asInstanceOf[Composer[T]]
+  inline def query[T /* <: Model */](db: Database): Composer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(db.asInstanceOf[js.Any]).asInstanceOf[Composer[T]]
   
   /**`
     * FIXME
     */
-  @scala.inline
-  def relationship(name: String): RelationshipPath = ^.asInstanceOf[js.Dynamic].applyDynamic("relationship")(name.asInstanceOf[js.Any]).asInstanceOf[RelationshipPath]
+  inline def relationship(name: String): RelationshipPath = ^.asInstanceOf[js.Dynamic].applyDynamic("relationship")(name.asInstanceOf[js.Any]).asInstanceOf[RelationshipPath]
   
   /**
     * FIXME
     */
-  @scala.inline
-  def relationships(): RelationshipNode = ^.asInstanceOf[js.Dynamic].applyDynamic("relationships")().asInstanceOf[RelationshipNode]
+  inline def relationships(): RelationshipNode = ^.asInstanceOf[js.Dynamic].applyDynamic("relationships")().asInstanceOf[RelationshipNode]
   
   /**
     * Set the database to be used for this model
     * @param {Nodal.Database} db
     */
-  @scala.inline
-  def setDatabase(db: Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDatabase")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDatabase(db: Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDatabase")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set the schema to be used for this model
     * @param {Object} schema
     */
-  @scala.inline
-  def setSchema(schema: Columns): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSchema(schema: Columns): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Get the model's table name
     * @return {string}
     */
-  @scala.inline
-  def table(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("table")().asInstanceOf[String]
+  inline def table(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("table")().asInstanceOf[String]
   
   /**
     * Finds and updates a model with a specified id. Return a notFound error if model does not exist.
@@ -536,8 +514,7 @@ object Model {
     * @param {object} data The data to load into the object.
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
-  @scala.inline
-  def update(
+  inline def update(
     id: Double,
     data: IAnyObject,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
@@ -549,8 +526,7 @@ object Model {
     * @param {string} message The error message shown if a validation fails.
     * @param {function({any} value)} fnAction the validation to run - first parameter is the value you're testing.
     */
-  @scala.inline
-  def validates(field: String, message: String, fnAction: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(field.asInstanceOf[js.Any], message.asInstanceOf[js.Any], fnAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validates(field: String, message: String, fnAction: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(field.asInstanceOf[js.Any], message.asInstanceOf[js.Any], fnAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a verifier. These run asynchronously, support multiple fields, and check every time you try to save a Model.
@@ -558,6 +534,5 @@ object Model {
     * @param {function} fnAction The asynchronous verification method. The last argument passed is always a callback,
     * and field names are determined by the  argument names.
     */
-  @scala.inline
-  def verifies(message: String, fnAction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifies")(message.asInstanceOf[js.Any], fnAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verifies(message: String, fnAction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifies")(message.asInstanceOf[js.Any], fnAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

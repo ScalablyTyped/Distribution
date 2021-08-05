@@ -28,37 +28,27 @@ trait FastRestoreRule extends StObject {
 }
 object FastRestoreRule {
   
-  @scala.inline
-  def apply(AvailabilityZones: AvailabilityZoneList): FastRestoreRule = {
+  inline def apply(AvailabilityZones: AvailabilityZoneList): FastRestoreRule = {
     val __obj = js.Dynamic.literal(AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastRestoreRule]
   }
   
-  @scala.inline
-  implicit class FastRestoreRuleMutableBuilder[Self <: FastRestoreRule] (val x: Self) extends AnyVal {
+  extension [Self <: FastRestoreRule](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: Count): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Count): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
-    @scala.inline
-    def setIntervalUnit(value: RetentionIntervalUnitValues): Self = StObject.set(x, "IntervalUnit", value.asInstanceOf[js.Any])
+    inline def setIntervalUnit(value: RetentionIntervalUnitValues): Self = StObject.set(x, "IntervalUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
+    inline def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
   }
 }

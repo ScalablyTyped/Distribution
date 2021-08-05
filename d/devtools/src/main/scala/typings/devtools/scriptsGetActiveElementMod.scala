@@ -11,6 +11,5 @@ object scriptsGetActiveElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(_underscore: Element, dataProperty: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(_underscore: Element, dataProperty: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

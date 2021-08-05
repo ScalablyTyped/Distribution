@@ -20,49 +20,35 @@ trait GridParamNames extends StObject {
 }
 object GridParamNames {
   
-  @scala.inline
-  def apply(): GridParamNames = {
+  inline def apply(): GridParamNames = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridParamNames]
   }
   
-  @scala.inline
-  implicit class GridParamNamesMutableBuilder[Self <: GridParamNames] (val x: Self) extends AnyVal {
+  extension [Self <: GridParamNames](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByDirection(value: String): Self = StObject.set(x, "groupByDirection", value.asInstanceOf[js.Any])
+    inline def setGroupByDirection(value: String): Self = StObject.set(x, "groupByDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByDirectionUndefined: Self = StObject.set(x, "groupByDirection", js.undefined)
+    inline def setGroupByDirectionUndefined: Self = StObject.set(x, "groupByDirection", js.undefined)
     
-    @scala.inline
-    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+    inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
   }
 }

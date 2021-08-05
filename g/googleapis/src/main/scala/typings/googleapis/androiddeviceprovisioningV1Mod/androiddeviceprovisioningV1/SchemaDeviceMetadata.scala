@@ -18,19 +18,15 @@ trait SchemaDeviceMetadata extends StObject {
 }
 object SchemaDeviceMetadata {
   
-  @scala.inline
-  def apply(): SchemaDeviceMetadata = {
+  inline def apply(): SchemaDeviceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceMetadataMutableBuilder[Self <: SchemaDeviceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceMetadata](x: Self) {
     
-    @scala.inline
-    def setEntries(value: StringDictionary[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: StringDictionary[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
   }
 }

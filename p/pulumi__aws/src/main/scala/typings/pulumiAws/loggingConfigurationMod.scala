@@ -51,21 +51,16 @@ object loggingConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LoggingConfigurationState): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LoggingConfigurationState, opts: CustomResourceOptions): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
+    inline def get(name: String, id: Input[ID]): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
+    inline def get(name: String, id: Input[ID], state: LoggingConfigurationState): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
+    inline def get(name: String, id: Input[ID], state: LoggingConfigurationState, opts: CustomResourceOptions): LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoggingConfiguration]
     
     /**
       * Returns true if the given object is an instance of LoggingConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean]
   }
   
   trait LoggingConfigurationArgs extends StObject {
@@ -84,8 +79,7 @@ object loggingConfigurationMod {
   }
   object LoggingConfigurationArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firewallArn: Input[String],
       loggingConfiguration: Input[
           typings.pulumiAws.inputMod.networkfirewall.LoggingConfigurationLoggingConfiguration
@@ -95,14 +89,11 @@ object loggingConfigurationMod {
       __obj.asInstanceOf[LoggingConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class LoggingConfigurationArgsMutableBuilder[Self <: LoggingConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LoggingConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setFirewallArn(value: Input[String]): Self = StObject.set(x, "firewallArn", value.asInstanceOf[js.Any])
+      inline def setFirewallArn(value: Input[String]): Self = StObject.set(x, "firewallArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingConfiguration(
+      inline def setLoggingConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.networkfirewall.LoggingConfigurationLoggingConfiguration
             ]
@@ -128,30 +119,24 @@ object loggingConfigurationMod {
   }
   object LoggingConfigurationState {
     
-    @scala.inline
-    def apply(): LoggingConfigurationState = {
+    inline def apply(): LoggingConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggingConfigurationState]
     }
     
-    @scala.inline
-    implicit class LoggingConfigurationStateMutableBuilder[Self <: LoggingConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: LoggingConfigurationState](x: Self) {
       
-      @scala.inline
-      def setFirewallArn(value: Input[String]): Self = StObject.set(x, "firewallArn", value.asInstanceOf[js.Any])
+      inline def setFirewallArn(value: Input[String]): Self = StObject.set(x, "firewallArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirewallArnUndefined: Self = StObject.set(x, "firewallArn", js.undefined)
+      inline def setFirewallArnUndefined: Self = StObject.set(x, "firewallArn", js.undefined)
       
-      @scala.inline
-      def setLoggingConfiguration(
+      inline def setLoggingConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.networkfirewall.LoggingConfigurationLoggingConfiguration
             ]
       ): Self = StObject.set(x, "loggingConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingConfigurationUndefined: Self = StObject.set(x, "loggingConfiguration", js.undefined)
+      inline def setLoggingConfigurationUndefined: Self = StObject.set(x, "loggingConfiguration", js.undefined)
     }
   }
 }

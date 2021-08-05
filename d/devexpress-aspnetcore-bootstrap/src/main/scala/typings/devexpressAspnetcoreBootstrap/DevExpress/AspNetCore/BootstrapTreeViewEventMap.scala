@@ -24,8 +24,7 @@ trait BootstrapTreeViewEventMap
 }
 object BootstrapTreeViewEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginCallback: BeginCallbackEventArgs,
     callbackError: CallbackErrorEventArgs,
     checkedChanged: TreeViewNodeProcessingModeEventArgs,
@@ -39,28 +38,20 @@ object BootstrapTreeViewEventMap {
     __obj.asInstanceOf[BootstrapTreeViewEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapTreeViewEventMapMutableBuilder[Self <: BootstrapTreeViewEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapTreeViewEventMap](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedChanged(value: TreeViewNodeProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
+    inline def setCheckedChanged(value: TreeViewNodeProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedChanged(value: TreeViewNodeEventArgs): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
+    inline def setExpandedChanged(value: TreeViewNodeEventArgs): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedChanging(value: TreeViewNodeCancelEventArgs): Self = StObject.set(x, "expandedChanging", value.asInstanceOf[js.Any])
+    inline def setExpandedChanging(value: TreeViewNodeCancelEventArgs): Self = StObject.set(x, "expandedChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeClick(value: TreeViewNodeClickEventArgs): Self = StObject.set(x, "nodeClick", value.asInstanceOf[js.Any])
+    inline def setNodeClick(value: TreeViewNodeClickEventArgs): Self = StObject.set(x, "nodeClick", value.asInstanceOf[js.Any])
   }
 }

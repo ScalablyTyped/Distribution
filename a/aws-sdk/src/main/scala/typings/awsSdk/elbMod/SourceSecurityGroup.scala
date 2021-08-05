@@ -18,25 +18,19 @@ trait SourceSecurityGroup extends StObject {
 }
 object SourceSecurityGroup {
   
-  @scala.inline
-  def apply(): SourceSecurityGroup = {
+  inline def apply(): SourceSecurityGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceSecurityGroup]
   }
   
-  @scala.inline
-  implicit class SourceSecurityGroupMutableBuilder[Self <: SourceSecurityGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSecurityGroup](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: SecurityGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: SecurityGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setOwnerAlias(value: SecurityGroupOwnerAlias): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
+    inline def setOwnerAlias(value: SecurityGroupOwnerAlias): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
+    inline def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
   }
 }

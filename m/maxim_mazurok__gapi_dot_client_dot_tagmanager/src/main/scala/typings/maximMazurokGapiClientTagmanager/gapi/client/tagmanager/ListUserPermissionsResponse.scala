@@ -14,28 +14,21 @@ trait ListUserPermissionsResponse extends StObject {
 }
 object ListUserPermissionsResponse {
   
-  @scala.inline
-  def apply(): ListUserPermissionsResponse = {
+  inline def apply(): ListUserPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUserPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class ListUserPermissionsResponseMutableBuilder[Self <: ListUserPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setUserPermission(value: js.Array[UserPermission]): Self = StObject.set(x, "userPermission", value.asInstanceOf[js.Any])
+    inline def setUserPermission(value: js.Array[UserPermission]): Self = StObject.set(x, "userPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPermissionUndefined: Self = StObject.set(x, "userPermission", js.undefined)
+    inline def setUserPermissionUndefined: Self = StObject.set(x, "userPermission", js.undefined)
     
-    @scala.inline
-    def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value :_*))
+    inline def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value :_*))
   }
 }

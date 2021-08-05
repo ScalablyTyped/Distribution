@@ -16,25 +16,19 @@ trait ParticipantTimelineData extends StObject {
 }
 object ParticipantTimelineData {
   
-  @scala.inline
-  def apply(tenToTwenty: Double, thirtyToEnd: Double, twentyToThirty: Double, zeroToTen: Double): ParticipantTimelineData = {
+  inline def apply(tenToTwenty: Double, thirtyToEnd: Double, twentyToThirty: Double, zeroToTen: Double): ParticipantTimelineData = {
     val __obj = js.Dynamic.literal(tenToTwenty = tenToTwenty.asInstanceOf[js.Any], thirtyToEnd = thirtyToEnd.asInstanceOf[js.Any], twentyToThirty = twentyToThirty.asInstanceOf[js.Any], zeroToTen = zeroToTen.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticipantTimelineData]
   }
   
-  @scala.inline
-  implicit class ParticipantTimelineDataMutableBuilder[Self <: ParticipantTimelineData] (val x: Self) extends AnyVal {
+  extension [Self <: ParticipantTimelineData](x: Self) {
     
-    @scala.inline
-    def setTenToTwenty(value: Double): Self = StObject.set(x, "tenToTwenty", value.asInstanceOf[js.Any])
+    inline def setTenToTwenty(value: Double): Self = StObject.set(x, "tenToTwenty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirtyToEnd(value: Double): Self = StObject.set(x, "thirtyToEnd", value.asInstanceOf[js.Any])
+    inline def setThirtyToEnd(value: Double): Self = StObject.set(x, "thirtyToEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwentyToThirty(value: Double): Self = StObject.set(x, "twentyToThirty", value.asInstanceOf[js.Any])
+    inline def setTwentyToThirty(value: Double): Self = StObject.set(x, "twentyToThirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZeroToTen(value: Double): Self = StObject.set(x, "zeroToTen", value.asInstanceOf[js.Any])
+    inline def setZeroToTen(value: Double): Self = StObject.set(x, "zeroToTen", value.asInstanceOf[js.Any])
   }
 }

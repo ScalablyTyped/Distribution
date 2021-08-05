@@ -16,19 +16,15 @@ trait SchemaDesktopInfo extends StObject {
 }
 object SchemaDesktopInfo {
   
-  @scala.inline
-  def apply(): SchemaDesktopInfo = {
+  inline def apply(): SchemaDesktopInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDesktopInfo]
   }
   
-  @scala.inline
-  implicit class SchemaDesktopInfoMutableBuilder[Self <: SchemaDesktopInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDesktopInfo](x: Self) {
     
-    @scala.inline
-    def setDesktopFallbackLink(value: String): Self = StObject.set(x, "desktopFallbackLink", value.asInstanceOf[js.Any])
+    inline def setDesktopFallbackLink(value: String): Self = StObject.set(x, "desktopFallbackLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopFallbackLinkUndefined: Self = StObject.set(x, "desktopFallbackLink", js.undefined)
+    inline def setDesktopFallbackLinkUndefined: Self = StObject.set(x, "desktopFallbackLink", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait FusedConv2DAttrs extends StObject {
 }
 object FusedConv2DAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activation: Activation,
     dataFormat: NHWC | NCHW,
     dilations: (js.Tuple2[Double, Double]) | Double,
@@ -42,25 +41,18 @@ object FusedConv2DAttrs {
     __obj.asInstanceOf[FusedConv2DAttrs]
   }
   
-  @scala.inline
-  implicit class FusedConv2DAttrsMutableBuilder[Self <: FusedConv2DAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: FusedConv2DAttrs](x: Self) {
     
-    @scala.inline
-    def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
+    inline def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
+    inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double | ExplicitPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double | ExplicitPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

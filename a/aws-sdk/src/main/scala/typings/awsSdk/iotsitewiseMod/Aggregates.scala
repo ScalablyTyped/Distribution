@@ -38,49 +38,35 @@ trait Aggregates extends StObject {
 }
 object Aggregates {
   
-  @scala.inline
-  def apply(): Aggregates = {
+  inline def apply(): Aggregates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Aggregates]
   }
   
-  @scala.inline
-  implicit class AggregatesMutableBuilder[Self <: Aggregates] (val x: Self) extends AnyVal {
+  extension [Self <: Aggregates](x: Self) {
     
-    @scala.inline
-    def setAverage(value: AggregatedDoubleValue): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: AggregatedDoubleValue): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
-    @scala.inline
-    def setCount(value: AggregatedDoubleValue): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: AggregatedDoubleValue): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: AggregatedDoubleValue): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: AggregatedDoubleValue): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: AggregatedDoubleValue): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: AggregatedDoubleValue): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setStandardDeviation(value: AggregatedDoubleValue): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
+    inline def setStandardDeviation(value: AggregatedDoubleValue): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
+    inline def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
     
-    @scala.inline
-    def setSum(value: AggregatedDoubleValue): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: AggregatedDoubleValue): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

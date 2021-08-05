@@ -23,19 +23,15 @@ trait PlusIoFileEvent extends StObject {
 }
 object PlusIoFileEvent {
   
-  @scala.inline
-  def apply(): PlusIoFileEvent = {
+  inline def apply(): PlusIoFileEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusIoFileEvent]
   }
   
-  @scala.inline
-  implicit class PlusIoFileEventMutableBuilder[Self <: PlusIoFileEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlusIoFileEvent](x: Self) {
     
-    @scala.inline
-    def setTarget(value: PlusIoDirectoryEntry): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: PlusIoDirectoryEntry): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

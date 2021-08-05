@@ -14,13 +14,12 @@ trait TaskPane extends StObject {
   
   var Visible: Boolean
   
-  @JSName("Word.TaskPane_typekey")
+  /* private */ @JSName("Word.TaskPane_typekey")
   var WordDotTaskPane_typekey: TaskPane
 }
 object TaskPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Parent: js.Any,
@@ -32,22 +31,16 @@ object TaskPane {
     __obj.asInstanceOf[TaskPane]
   }
   
-  @scala.inline
-  implicit class TaskPaneMutableBuilder[Self <: TaskPane] (val x: Self) extends AnyVal {
+  extension [Self <: TaskPane](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotTaskPane_typekey(value: TaskPane): Self = StObject.set(x, "Word.TaskPane_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotTaskPane_typekey(value: TaskPane): Self = StObject.set(x, "Word.TaskPane_typekey", value.asInstanceOf[js.Any])
   }
 }

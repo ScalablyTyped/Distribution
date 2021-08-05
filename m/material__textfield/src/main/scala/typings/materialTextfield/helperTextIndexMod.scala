@@ -26,8 +26,7 @@ object helperTextIndexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText]
+    inline def attachTo(root: Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText]
   }
   
   @JSImport("@material/textfield/helper-text/index", "MDCTextFieldHelperTextFoundation")
@@ -68,20 +67,17 @@ object helperTextIndexMod {
     @JSImport("@material/textfield/helper-text/index", "helperTextCssClasses.HELPER_TEXT_PERSISTENT")
     @js.native
     def HELPER_TEXT_PERSISTENT: String = js.native
-    @scala.inline
-    def HELPER_TEXT_PERSISTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_PERSISTENT")(x.asInstanceOf[js.Any])
+    inline def HELPER_TEXT_PERSISTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_PERSISTENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/helper-text/index", "helperTextCssClasses.HELPER_TEXT_VALIDATION_MSG")
     @js.native
     def HELPER_TEXT_VALIDATION_MSG: String = js.native
-    @scala.inline
-    def HELPER_TEXT_VALIDATION_MSG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG")(x.asInstanceOf[js.Any])
+    inline def HELPER_TEXT_VALIDATION_MSG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/helper-text/index", "helperTextCssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
   object helperTextStrings {
@@ -93,19 +89,16 @@ object helperTextIndexMod {
     @JSImport("@material/textfield/helper-text/index", "helperTextStrings.ARIA_HIDDEN")
     @js.native
     def ARIA_HIDDEN: String = js.native
-    @scala.inline
-    def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/helper-text/index", "helperTextStrings.ROLE")
     @js.native
     def ROLE: String = js.native
-    @scala.inline
-    def ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROLE")(x.asInstanceOf[js.Any])
+    inline def ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROLE")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/helper-text/index", "helperTextStrings.ROOT_SELECTOR")
     @js.native
     def ROOT_SELECTOR: String = js.native
-    @scala.inline
-    def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

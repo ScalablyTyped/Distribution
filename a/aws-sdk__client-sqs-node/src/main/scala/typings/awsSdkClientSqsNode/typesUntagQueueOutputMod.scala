@@ -20,17 +20,14 @@ object typesUntagQueueOutputMod {
   }
   object UntagQueueOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UntagQueueOutput = {
+    inline def apply($metadata: ResponseMetadata): UntagQueueOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UntagQueueOutput]
     }
     
-    @scala.inline
-    implicit class UntagQueueOutputMutableBuilder[Self <: UntagQueueOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UntagQueueOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

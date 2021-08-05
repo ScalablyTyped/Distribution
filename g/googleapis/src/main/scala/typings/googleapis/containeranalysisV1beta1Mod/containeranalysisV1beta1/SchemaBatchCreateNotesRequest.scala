@@ -17,19 +17,15 @@ trait SchemaBatchCreateNotesRequest extends StObject {
 }
 object SchemaBatchCreateNotesRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchCreateNotesRequest = {
+  inline def apply(): SchemaBatchCreateNotesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchCreateNotesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchCreateNotesRequestMutableBuilder[Self <: SchemaBatchCreateNotesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchCreateNotesRequest](x: Self) {
     
-    @scala.inline
-    def setNotes(value: StringDictionary[SchemaNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: StringDictionary[SchemaNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
   }
 }

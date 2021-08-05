@@ -14,8 +14,7 @@ trait StoryAttachedMedia
 }
 object StoryAttachedMedia {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     is_sticker: Boolean,
     media_id: String,
@@ -28,13 +27,10 @@ object StoryAttachedMedia {
     __obj.asInstanceOf[StoryAttachedMedia]
   }
   
-  @scala.inline
-  implicit class StoryAttachedMediaMutableBuilder[Self <: StoryAttachedMedia] (val x: Self) extends AnyVal {
+  extension [Self <: StoryAttachedMedia](x: Self) {
     
-    @scala.inline
-    def setIs_sticker(value: Boolean): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: Boolean): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+    inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
   }
 }

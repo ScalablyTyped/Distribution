@@ -56,49 +56,35 @@ trait GroupFindingsRequest extends StObject {
 }
 object GroupFindingsRequest {
   
-  @scala.inline
-  def apply(): GroupFindingsRequest = {
+  inline def apply(): GroupFindingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupFindingsRequest]
   }
   
-  @scala.inline
-  implicit class GroupFindingsRequestMutableBuilder[Self <: GroupFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GroupFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setCompareDuration(value: String): Self = StObject.set(x, "compareDuration", value.asInstanceOf[js.Any])
+    inline def setCompareDuration(value: String): Self = StObject.set(x, "compareDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareDurationUndefined: Self = StObject.set(x, "compareDuration", js.undefined)
+    inline def setCompareDurationUndefined: Self = StObject.set(x, "compareDuration", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+    inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
   }
 }

@@ -26,31 +26,24 @@ trait CIMMarkerPlacementOnLine
 }
 object CIMMarkerPlacementOnLine {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementOnLine = {
+  inline def apply(): CIMMarkerPlacementOnLine = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementOnLine")
     __obj.asInstanceOf[CIMMarkerPlacementOnLine]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementOnLineMutableBuilder[Self <: CIMMarkerPlacementOnLine] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementOnLine](x: Self) {
     
-    @scala.inline
-    def setRelativeTo(
+    inline def setRelativeTo(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementOnLineRelativeTo * / any */ String
     ): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
+    inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     
-    @scala.inline
-    def setStartPointOffset(value: Double): Self = StObject.set(x, "startPointOffset", value.asInstanceOf[js.Any])
+    inline def setStartPointOffset(value: Double): Self = StObject.set(x, "startPointOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPointOffsetUndefined: Self = StObject.set(x, "startPointOffset", js.undefined)
+    inline def setStartPointOffsetUndefined: Self = StObject.set(x, "startPointOffset", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnLine): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnLine): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

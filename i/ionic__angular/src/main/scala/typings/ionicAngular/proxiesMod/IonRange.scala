@@ -36,7 +36,7 @@ class IonRange protected ()
   /* CompleteClass */
   var dualKnobs: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionBlur: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -92,5 +92,5 @@ class IonRange protected ()
   /* CompleteClass */
   var value: RangeValue = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

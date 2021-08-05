@@ -93,21 +93,16 @@ object glueTriggerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trigger]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TriggerState): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trigger]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID]): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID], state: TriggerState): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
     
     /**
       * Returns true if the given object is an instance of Trigger.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean]
   }
   
   trait TriggerArgs extends StObject {
@@ -159,8 +154,7 @@ object glueTriggerMod {
   }
   object TriggerArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actions: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]],
       `type`: Input[String]
     ): TriggerArgs = {
@@ -169,59 +163,41 @@ object glueTriggerMod {
       __obj.asInstanceOf[TriggerArgs]
     }
     
-    @scala.inline
-    implicit class TriggerArgsMutableBuilder[Self <: TriggerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerArgs](x: Self) {
       
-      @scala.inline
-      def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.glue.TriggerAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.glue.TriggerAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPredicate(value: Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+      inline def setPredicate(value: Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
+      inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflowName(value: Input[String]): Self = StObject.set(x, "workflowName", value.asInstanceOf[js.Any])
+      inline def setWorkflowName(value: Input[String]): Self = StObject.set(x, "workflowName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflowNameUndefined: Self = StObject.set(x, "workflowName", js.undefined)
+      inline def setWorkflowNameUndefined: Self = StObject.set(x, "workflowName", js.undefined)
     }
   }
   
@@ -279,77 +255,54 @@ object glueTriggerMod {
   }
   object TriggerState {
     
-    @scala.inline
-    def apply(): TriggerState = {
+    inline def apply(): TriggerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TriggerState]
     }
     
-    @scala.inline
-    implicit class TriggerStateMutableBuilder[Self <: TriggerState] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerState](x: Self) {
       
-      @scala.inline
-      def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.glue.TriggerAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.glue.TriggerAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPredicate(value: Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+      inline def setPredicate(value: Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
+      inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWorkflowName(value: Input[String]): Self = StObject.set(x, "workflowName", value.asInstanceOf[js.Any])
+      inline def setWorkflowName(value: Input[String]): Self = StObject.set(x, "workflowName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkflowNameUndefined: Self = StObject.set(x, "workflowName", js.undefined)
+      inline def setWorkflowNameUndefined: Self = StObject.set(x, "workflowName", js.undefined)
     }
   }
 }

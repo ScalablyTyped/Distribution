@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply[T](): typings.elasticlunr.mod.Index[T] = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.elasticlunr.mod.Index[T]]
-@scala.inline
-def apply[T](
+inline def apply[T](): typings.elasticlunr.mod.Index[T] = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.elasticlunr.mod.Index[T]]
+inline def apply[T](
   config: js.ThisFunction1[
   /* this */ typings.elasticlunr.mod.Index[T], 
   /* idx */ typings.elasticlunr.mod.Index[T], 
@@ -16,17 +14,13 @@ def apply[T](
 ]
 ): typings.elasticlunr.mod.Index[T] = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.elasticlunr.mod.Index[T]]
 
-@scala.inline
-def addStopWords(words: js.Array[java.lang.String]): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addStopWords")(words.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def addStopWords(words: js.Array[java.lang.String]): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addStopWords")(words.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def clearStopWords(): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearStopWords")().asInstanceOf[scala.Unit]
+inline def clearStopWords(): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearStopWords")().asInstanceOf[scala.Unit]
 
-@scala.inline
-def resetStopWords(): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetStopWords")().asInstanceOf[scala.Unit]
+inline def resetStopWords(): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetStopWords")().asInstanceOf[scala.Unit]
 
-@scala.inline
-def version: java.lang.String = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: java.lang.String = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 
 type DocumentReference = java.lang.String | scala.Double
 

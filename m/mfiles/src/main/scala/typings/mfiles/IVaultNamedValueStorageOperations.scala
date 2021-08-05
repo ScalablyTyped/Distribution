@@ -15,8 +15,7 @@ trait IVaultNamedValueStorageOperations extends StObject {
 }
 object IVaultNamedValueStorageOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetNamedValues: (MFNamedValueType, String) => INamedValues,
     RemoveNamedValues: (MFNamedValueType, String, IStrings) => Unit,
     SetNamedValues: (MFNamedValueType, String, INamedValues) => Unit
@@ -25,16 +24,12 @@ object IVaultNamedValueStorageOperations {
     __obj.asInstanceOf[IVaultNamedValueStorageOperations]
   }
   
-  @scala.inline
-  implicit class IVaultNamedValueStorageOperationsMutableBuilder[Self <: IVaultNamedValueStorageOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultNamedValueStorageOperations](x: Self) {
     
-    @scala.inline
-    def setGetNamedValues(value: (MFNamedValueType, String) => INamedValues): Self = StObject.set(x, "GetNamedValues", js.Any.fromFunction2(value))
+    inline def setGetNamedValues(value: (MFNamedValueType, String) => INamedValues): Self = StObject.set(x, "GetNamedValues", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveNamedValues(value: (MFNamedValueType, String, IStrings) => Unit): Self = StObject.set(x, "RemoveNamedValues", js.Any.fromFunction3(value))
+    inline def setRemoveNamedValues(value: (MFNamedValueType, String, IStrings) => Unit): Self = StObject.set(x, "RemoveNamedValues", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetNamedValues(value: (MFNamedValueType, String, INamedValues) => Unit): Self = StObject.set(x, "SetNamedValues", js.Any.fromFunction3(value))
+    inline def setSetNamedValues(value: (MFNamedValueType, String, INamedValues) => Unit): Self = StObject.set(x, "SetNamedValues", js.Any.fromFunction3(value))
   }
 }

@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     options: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
       RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
@@ -146,140 +145,96 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDecoder(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "decoder", js.Any.fromFunction1(value))
+      inline def setDecoder(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
+      inline def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
       
-      @scala.inline
-      def setEncoder(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "encoder", js.Any.fromFunction1(value))
+      inline def setEncoder(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
+      inline def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setEncryptEncoding(value: String): Self = StObject.set(x, "encryptEncoding", value.asInstanceOf[js.Any])
+      inline def setEncryptEncoding(value: String): Self = StObject.set(x, "encryptEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptEncodingUndefined: Self = StObject.set(x, "encryptEncoding", js.undefined)
+      inline def setEncryptEncodingUndefined: Self = StObject.set(x, "encryptEncoding", js.undefined)
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      @scala.inline
-      def setFallbackSessionFn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fallbackSessionFn", js.Any.fromFunction1(value))
+      inline def setFallbackSessionFn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fallbackSessionFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFallbackSessionFnUndefined: Self = StObject.set(x, "fallbackSessionFn", js.undefined)
+      inline def setFallbackSessionFnUndefined: Self = StObject.set(x, "fallbackSessionFn", js.undefined)
       
-      @scala.inline
-      def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
+      inline def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
+      inline def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
       
-      @scala.inline
-      def setFilePattern(value: RegExp): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
+      inline def setFilePattern(value: RegExp): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePatternUndefined: Self = StObject.set(x, "filePattern", js.undefined)
+      inline def setFilePatternUndefined: Self = StObject.set(x, "filePattern", js.undefined)
       
-      @scala.inline
-      def setKeyFunction(value: (/* secret */ String, /* sessionId */ String) => String): Self = StObject.set(x, "keyFunction", js.Any.fromFunction2(value))
+      inline def setKeyFunction(value: (/* secret */ String, /* sessionId */ String) => String): Self = StObject.set(x, "keyFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyFunctionUndefined: Self = StObject.set(x, "keyFunction", js.undefined)
+      inline def setKeyFunctionUndefined: Self = StObject.set(x, "keyFunction", js.undefined)
       
-      @scala.inline
-      def setLogFn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logFn", js.Any.fromFunction1(value))
+      inline def setLogFn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogFnUndefined: Self = StObject.set(x, "logFn", js.undefined)
+      inline def setLogFnUndefined: Self = StObject.set(x, "logFn", js.undefined)
       
-      @scala.inline
-      def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+      inline def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+      inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
       
-      @scala.inline
-      def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
+      inline def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
+      inline def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setReapAsync(value: Boolean): Self = StObject.set(x, "reapAsync", value.asInstanceOf[js.Any])
+      inline def setReapAsync(value: Boolean): Self = StObject.set(x, "reapAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReapAsyncUndefined: Self = StObject.set(x, "reapAsync", js.undefined)
+      inline def setReapAsyncUndefined: Self = StObject.set(x, "reapAsync", js.undefined)
       
-      @scala.inline
-      def setReapInterval(value: Double): Self = StObject.set(x, "reapInterval", value.asInstanceOf[js.Any])
+      inline def setReapInterval(value: Double): Self = StObject.set(x, "reapInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReapIntervalObject(value: js.Any): Self = StObject.set(x, "reapIntervalObject", value.asInstanceOf[js.Any])
+      inline def setReapIntervalObject(value: js.Any): Self = StObject.set(x, "reapIntervalObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReapIntervalObjectUndefined: Self = StObject.set(x, "reapIntervalObject", js.undefined)
+      inline def setReapIntervalObjectUndefined: Self = StObject.set(x, "reapIntervalObject", js.undefined)
       
-      @scala.inline
-      def setReapIntervalUndefined: Self = StObject.set(x, "reapInterval", js.undefined)
+      inline def setReapIntervalUndefined: Self = StObject.set(x, "reapInterval", js.undefined)
       
-      @scala.inline
-      def setReapMaxConcurrent(value: Double): Self = StObject.set(x, "reapMaxConcurrent", value.asInstanceOf[js.Any])
+      inline def setReapMaxConcurrent(value: Double): Self = StObject.set(x, "reapMaxConcurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReapMaxConcurrentUndefined: Self = StObject.set(x, "reapMaxConcurrent", js.undefined)
+      inline def setReapMaxConcurrentUndefined: Self = StObject.set(x, "reapMaxConcurrent", js.undefined)
       
-      @scala.inline
-      def setReapSyncFallback(value: Boolean): Self = StObject.set(x, "reapSyncFallback", value.asInstanceOf[js.Any])
+      inline def setReapSyncFallback(value: Boolean): Self = StObject.set(x, "reapSyncFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReapSyncFallbackUndefined: Self = StObject.set(x, "reapSyncFallback", js.undefined)
+      inline def setReapSyncFallbackUndefined: Self = StObject.set(x, "reapSyncFallback", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
 }

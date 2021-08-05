@@ -28,26 +28,20 @@ object rowCheckboxMod {
   }
   object RowCheckboxProps {
     
-    @scala.inline
-    def apply(): RowCheckboxProps = {
+    inline def apply(): RowCheckboxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowCheckboxProps]
     }
     
-    @scala.inline
-    implicit class RowCheckboxPropsMutableBuilder[Self <: RowCheckboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: RowCheckboxProps](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: /* e */ CheckedData => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ CheckedData => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRowData(value: js.Object): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: js.Object): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
+      inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
     }
   }
 }

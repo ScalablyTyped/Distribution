@@ -23,34 +23,25 @@ trait GetLogEventsResponse extends StObject {
 }
 object GetLogEventsResponse {
   
-  @scala.inline
-  def apply(): GetLogEventsResponse = {
+  inline def apply(): GetLogEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLogEventsResponse]
   }
   
-  @scala.inline
-  implicit class GetLogEventsResponseMutableBuilder[Self <: GetLogEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogEventsResponse](x: Self) {
     
-    @scala.inline
-    def setEvents(value: OutputLogEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: OutputLogEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: OutputLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: OutputLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setNextBackwardToken(value: NextToken): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
+    inline def setNextBackwardToken(value: NextToken): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextBackwardTokenUndefined: Self = StObject.set(x, "nextBackwardToken", js.undefined)
+    inline def setNextBackwardTokenUndefined: Self = StObject.set(x, "nextBackwardToken", js.undefined)
     
-    @scala.inline
-    def setNextForwardToken(value: NextToken): Self = StObject.set(x, "nextForwardToken", value.asInstanceOf[js.Any])
+    inline def setNextForwardToken(value: NextToken): Self = StObject.set(x, "nextForwardToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextForwardTokenUndefined: Self = StObject.set(x, "nextForwardToken", js.undefined)
+    inline def setNextForwardTokenUndefined: Self = StObject.set(x, "nextForwardToken", js.undefined)
   }
 }

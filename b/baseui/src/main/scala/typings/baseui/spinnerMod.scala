@@ -93,54 +93,42 @@ object spinnerMod {
   }
   object SpinnerDeterminateOverrides {
     
-    @scala.inline
-    def apply(): SpinnerDeterminateOverrides = {
+    inline def apply(): SpinnerDeterminateOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinnerDeterminateOverrides]
     }
     
-    @scala.inline
-    implicit class SpinnerDeterminateOverridesMutableBuilder[Self <: SpinnerDeterminateOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: SpinnerDeterminateOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setSvg(
+      inline def setSvg(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "Svg", js.undefined)
+      inline def setSvgUndefined: Self = StObject.set(x, "Svg", js.undefined)
       
-      @scala.inline
-      def setText(
+      inline def setText(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
       
-      @scala.inline
-      def setTrackBackground(
+      inline def setTrackBackground(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TrackBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackBackgroundUndefined: Self = StObject.set(x, "TrackBackground", js.undefined)
+      inline def setTrackBackgroundUndefined: Self = StObject.set(x, "TrackBackground", js.undefined)
       
-      @scala.inline
-      def setTrackForeground(
+      inline def setTrackForeground(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TrackForeground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackForegroundUndefined: Self = StObject.set(x, "TrackForeground", js.undefined)
+      inline def setTrackForegroundUndefined: Self = StObject.set(x, "TrackForeground", js.undefined)
     }
   }
   
@@ -160,46 +148,34 @@ object spinnerMod {
   }
   object SpinnerDeterminateProps {
     
-    @scala.inline
-    def apply(): SpinnerDeterminateProps = {
+    inline def apply(): SpinnerDeterminateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinnerDeterminateProps]
     }
     
-    @scala.inline
-    implicit class SpinnerDeterminatePropsMutableBuilder[Self <: SpinnerDeterminateProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpinnerDeterminateProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: SpinnerDeterminateOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: SpinnerDeterminateOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setSize(
+      inline def setSize(
         value: /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/spinner.SIZE[keyof baseui.baseui/spinner.SIZE] */ js.Any
       ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -219,38 +195,30 @@ object spinnerMod {
   }
   object SpinnerOverrides {
     
-    @scala.inline
-    def apply(): SpinnerOverrides = {
+    inline def apply(): SpinnerOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinnerOverrides]
     }
     
-    @scala.inline
-    implicit class SpinnerOverridesMutableBuilder[Self <: SpinnerOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: SpinnerOverrides](x: Self) {
       
-      @scala.inline
-      def setActivePath(
+      inline def setActivePath(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "ActivePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivePathUndefined: Self = StObject.set(x, "ActivePath", js.undefined)
+      inline def setActivePathUndefined: Self = StObject.set(x, "ActivePath", js.undefined)
       
-      @scala.inline
-      def setSvg(
+      inline def setSvg(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "Svg", js.undefined)
+      inline def setSvgUndefined: Self = StObject.set(x, "Svg", js.undefined)
       
-      @scala.inline
-      def setTrackPath(
+      inline def setTrackPath(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TrackPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackPathUndefined: Self = StObject.set(x, "TrackPath", js.undefined)
+      inline def setTrackPathUndefined: Self = StObject.set(x, "TrackPath", js.undefined)
     }
   }
   
@@ -268,44 +236,32 @@ object spinnerMod {
   }
   object SpinnerProps {
     
-    @scala.inline
-    def apply(): SpinnerProps = {
+    inline def apply(): SpinnerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinnerProps]
     }
     
-    @scala.inline
-    implicit class SpinnerPropsMutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpinnerProps](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: SpinnerOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: SpinnerOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

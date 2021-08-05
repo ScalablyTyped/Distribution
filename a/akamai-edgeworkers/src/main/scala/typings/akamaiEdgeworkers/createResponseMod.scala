@@ -17,14 +17,10 @@ object createResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createResponse(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")().asInstanceOf[js.Object]
-  @scala.inline
-  def createResponse(body: Unit, opts: Body): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def createResponse(body: CreateResponseBody): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  @scala.inline
-  def createResponse(body: CreateResponseBody, opts: Body): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def createResponse(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")().asInstanceOf[js.Object]
+  inline def createResponse(body: Unit, opts: Body): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def createResponse(body: CreateResponseBody): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def createResponse(body: CreateResponseBody, opts: Body): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(body.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   /**
     * Generates a return value for responseProvider(). It validates the
     * passed values and returns an opaque object. Callers should be
@@ -41,10 +37,8 @@ object createResponseMod {
     *          as a ReadableStream, there is no limit.
     * @param denyReason Deny reason when the status code is 403.
     */
-  @scala.inline
-  def createResponse(status: Double, headers: Headers, body: CreateResponseBody): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(status.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def createResponse(status: Double, headers: Headers, body: CreateResponseBody, denyReason: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(status.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any], denyReason.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def createResponse(status: Double, headers: Headers, body: CreateResponseBody): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(status.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def createResponse(status: Double, headers: Headers, body: CreateResponseBody, denyReason: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(status.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any], denyReason.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   /**
     * A response body, either in the form of a static string or a readable stream.

@@ -17,34 +17,25 @@ trait LiaSettings extends StObject {
 }
 object LiaSettings {
   
-  @scala.inline
-  def apply(): LiaSettings = {
+  inline def apply(): LiaSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiaSettings]
   }
   
-  @scala.inline
-  implicit class LiaSettingsMutableBuilder[Self <: LiaSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LiaSettings](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setCountrySettings(value: js.Array[LiaCountrySettings]): Self = StObject.set(x, "countrySettings", value.asInstanceOf[js.Any])
+    inline def setCountrySettings(value: js.Array[LiaCountrySettings]): Self = StObject.set(x, "countrySettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySettingsUndefined: Self = StObject.set(x, "countrySettings", js.undefined)
+    inline def setCountrySettingsUndefined: Self = StObject.set(x, "countrySettings", js.undefined)
     
-    @scala.inline
-    def setCountrySettingsVarargs(value: LiaCountrySettings*): Self = StObject.set(x, "countrySettings", js.Array(value :_*))
+    inline def setCountrySettingsVarargs(value: LiaCountrySettings*): Self = StObject.set(x, "countrySettings", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

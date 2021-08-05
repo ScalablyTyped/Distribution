@@ -17,8 +17,7 @@ trait Metadata extends StObject {
 }
 object Metadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     metadata: CompileNgModuleMetadata | CompileDirectiveMetadata | CompilePipeMetadata | CompileTypeMetadata,
     summary: CompileTypeSummary
   ): Metadata = {
@@ -26,15 +25,12 @@ object Metadata {
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: CompileNgModuleMetadata | CompileDirectiveMetadata | CompilePipeMetadata | CompileTypeMetadata
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: CompileTypeSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: CompileTypeSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

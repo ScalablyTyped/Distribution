@@ -26,14 +26,12 @@ object platformMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPlatforms(): js.Array[
+  inline def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")().asInstanceOf[js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ]]
-  @scala.inline
-  def getPlatforms(win: js.Any): js.Array[
+  inline def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
@@ -43,21 +41,18 @@ object platformMod {
   @js.native
   val isPlatform: IsPlatformSignature = js.native
   
-  @scala.inline
-  def setupPlatforms(): js.Array[
+  inline def setupPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPlatforms")().asInstanceOf[js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ]]
-  @scala.inline
-  def setupPlatforms(win: js.Any): js.Array[
+  inline def setupPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPlatforms")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ]]
   
-  @scala.inline
-  def testUserAgent(win: Window, expr: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testUserAgent")(win.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def testUserAgent(win: Window, expr: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testUserAgent")(win.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
   trait IsPlatformSignature extends StObject {

@@ -19,25 +19,19 @@ trait PlotAroonAroonDownStylesOptions extends StObject {
 }
 object PlotAroonAroonDownStylesOptions {
   
-  @scala.inline
-  def apply(): PlotAroonAroonDownStylesOptions = {
+  inline def apply(): PlotAroonAroonDownStylesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotAroonAroonDownStylesOptions]
   }
   
-  @scala.inline
-  implicit class PlotAroonAroonDownStylesOptionsMutableBuilder[Self <: PlotAroonAroonDownStylesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotAroonAroonDownStylesOptions](x: Self) {
     
-    @scala.inline
-    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
   }
 }

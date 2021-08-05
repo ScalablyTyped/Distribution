@@ -11,8 +11,7 @@ trait ResourceBaseData[ResourceType]
      with /* resourceName */ StringDictionary[js.UndefOr[ResourceType]]
 object ResourceBaseData {
   
-  @scala.inline
-  def apply[ResourceType](): ResourceBaseData[ResourceType] = {
+  inline def apply[ResourceType](): ResourceBaseData[ResourceType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceBaseData[ResourceType]]
   }

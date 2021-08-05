@@ -23,34 +23,25 @@ trait DefaultCategoricalHyperParameterRange extends StObject {
 }
 object DefaultCategoricalHyperParameterRange {
   
-  @scala.inline
-  def apply(): DefaultCategoricalHyperParameterRange = {
+  inline def apply(): DefaultCategoricalHyperParameterRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultCategoricalHyperParameterRange]
   }
   
-  @scala.inline
-  implicit class DefaultCategoricalHyperParameterRangeMutableBuilder[Self <: DefaultCategoricalHyperParameterRange] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultCategoricalHyperParameterRange](x: Self) {
     
-    @scala.inline
-    def setIsTunable(value: Tunable): Self = StObject.set(x, "isTunable", value.asInstanceOf[js.Any])
+    inline def setIsTunable(value: Tunable): Self = StObject.set(x, "isTunable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTunableUndefined: Self = StObject.set(x, "isTunable", js.undefined)
+    inline def setIsTunableUndefined: Self = StObject.set(x, "isTunable", js.undefined)
     
-    @scala.inline
-    def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValues(value: CategoricalValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: CategoricalValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: CategoricalValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: CategoricalValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

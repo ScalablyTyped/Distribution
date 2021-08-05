@@ -12,28 +12,21 @@ trait ChooseFileSystemEntriesFileOptions extends StObject {
 }
 object ChooseFileSystemEntriesFileOptions {
   
-  @scala.inline
-  def apply(): ChooseFileSystemEntriesFileOptions = {
+  inline def apply(): ChooseFileSystemEntriesFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChooseFileSystemEntriesFileOptions]
   }
   
-  @scala.inline
-  implicit class ChooseFileSystemEntriesFileOptionsMutableBuilder[Self <: ChooseFileSystemEntriesFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseFileSystemEntriesFileOptions](x: Self) {
     
-    @scala.inline
-    def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
+    inline def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
+    inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
     
-    @scala.inline
-    def setAcceptsVarargs(value: ChooseFileSystemEntriesOptionsAccepts*): Self = StObject.set(x, "accepts", js.Array(value :_*))
+    inline def setAcceptsVarargs(value: ChooseFileSystemEntriesOptionsAccepts*): Self = StObject.set(x, "accepts", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
+    inline def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeAcceptAllOptionUndefined: Self = StObject.set(x, "excludeAcceptAllOption", js.undefined)
+    inline def setExcludeAcceptAllOptionUndefined: Self = StObject.set(x, "excludeAcceptAllOption", js.undefined)
   }
 }

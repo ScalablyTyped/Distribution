@@ -18,19 +18,15 @@ trait ProcessorParameter extends StObject {
 }
 object ProcessorParameter {
   
-  @scala.inline
-  def apply(ParameterName: ProcessorParameterName, ParameterValue: ProcessorParameterValue): ProcessorParameter = {
+  inline def apply(ParameterName: ProcessorParameterName, ParameterValue: ProcessorParameterValue): ProcessorParameter = {
     val __obj = js.Dynamic.literal(ParameterName = ParameterName.asInstanceOf[js.Any], ParameterValue = ParameterValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessorParameter]
   }
   
-  @scala.inline
-  implicit class ProcessorParameterMutableBuilder[Self <: ProcessorParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessorParameter](x: Self) {
     
-    @scala.inline
-    def setParameterName(value: ProcessorParameterName): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: ProcessorParameterName): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValue(value: ProcessorParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
+    inline def setParameterValue(value: ProcessorParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
   }
 }

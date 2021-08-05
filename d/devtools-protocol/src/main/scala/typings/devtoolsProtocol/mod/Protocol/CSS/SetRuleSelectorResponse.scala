@@ -13,16 +13,13 @@ trait SetRuleSelectorResponse extends StObject {
 }
 object SetRuleSelectorResponse {
   
-  @scala.inline
-  def apply(selectorList: SelectorList): SetRuleSelectorResponse = {
+  inline def apply(selectorList: SelectorList): SetRuleSelectorResponse = {
     val __obj = js.Dynamic.literal(selectorList = selectorList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetRuleSelectorResponse]
   }
   
-  @scala.inline
-  implicit class SetRuleSelectorResponseMutableBuilder[Self <: SetRuleSelectorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetRuleSelectorResponse](x: Self) {
     
-    @scala.inline
-    def setSelectorList(value: SelectorList): Self = StObject.set(x, "selectorList", value.asInstanceOf[js.Any])
+    inline def setSelectorList(value: SelectorList): Self = StObject.set(x, "selectorList", value.asInstanceOf[js.Any])
   }
 }

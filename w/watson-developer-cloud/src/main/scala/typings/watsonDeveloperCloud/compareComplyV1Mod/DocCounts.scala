@@ -21,37 +21,27 @@ trait DocCounts extends StObject {
 }
 object DocCounts {
   
-  @scala.inline
-  def apply(): DocCounts = {
+  inline def apply(): DocCounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocCounts]
   }
   
-  @scala.inline
-  implicit class DocCountsMutableBuilder[Self <: DocCounts] (val x: Self) extends AnyVal {
+  extension [Self <: DocCounts](x: Self) {
     
-    @scala.inline
-    def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
-    @scala.inline
-    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
-    @scala.inline
-    def setSuccessful(value: Double): Self = StObject.set(x, "successful", value.asInstanceOf[js.Any])
+    inline def setSuccessful(value: Double): Self = StObject.set(x, "successful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulUndefined: Self = StObject.set(x, "successful", js.undefined)
+    inline def setSuccessfulUndefined: Self = StObject.set(x, "successful", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait MediaEncodingProfile
      with IMediaEncodingProfile
 object MediaEncodingProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audio: AudioEncodingProperties,
     container: ContainerEncodingProperties,
     video: VideoEncodingProperties

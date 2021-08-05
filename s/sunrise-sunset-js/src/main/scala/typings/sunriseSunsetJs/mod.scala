@@ -11,13 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSunrise(latitude: Double, longitude: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunrise")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[Date]
-  @scala.inline
-  def getSunrise(latitude: Double, longitude: Double, date: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunrise")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def getSunrise(latitude: Double, longitude: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunrise")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def getSunrise(latitude: Double, longitude: Double, date: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunrise")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def getSunset(latitude: Double, longitude: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunset")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[Date]
-  @scala.inline
-  def getSunset(latitude: Double, longitude: Double, date: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunset")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def getSunset(latitude: Double, longitude: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunset")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def getSunset(latitude: Double, longitude: Double, date: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunset")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Date]
 }

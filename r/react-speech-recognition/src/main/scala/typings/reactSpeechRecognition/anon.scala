@@ -20,8 +20,7 @@ object anon {
   }
   object FinalTranscript {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       finalTranscript: String,
       interimTranscript: String,
       listening: Boolean,
@@ -32,23 +31,17 @@ object anon {
       __obj.asInstanceOf[FinalTranscript]
     }
     
-    @scala.inline
-    implicit class FinalTranscriptMutableBuilder[Self <: FinalTranscript] (val x: Self) extends AnyVal {
+    extension [Self <: FinalTranscript](x: Self) {
       
-      @scala.inline
-      def setFinalTranscript(value: String): Self = StObject.set(x, "finalTranscript", value.asInstanceOf[js.Any])
+      inline def setFinalTranscript(value: String): Self = StObject.set(x, "finalTranscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterimTranscript(value: String): Self = StObject.set(x, "interimTranscript", value.asInstanceOf[js.Any])
+      inline def setInterimTranscript(value: String): Self = StObject.set(x, "interimTranscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListening(value: Boolean): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
+      inline def setListening(value: Boolean): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTranscript(value: () => Unit): Self = StObject.set(x, "resetTranscript", js.Any.fromFunction0(value))
+      inline def setResetTranscript(value: () => Unit): Self = StObject.set(x, "resetTranscript", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+      inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     }
   }
 }

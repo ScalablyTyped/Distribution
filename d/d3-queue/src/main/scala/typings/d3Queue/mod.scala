@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def queue(): Queue_ = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")().asInstanceOf[Queue_]
-  @scala.inline
-  def queue(concurrency: Double): Queue_ = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")(concurrency.asInstanceOf[js.Any]).asInstanceOf[Queue_]
+  inline def queue(): Queue_ = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")().asInstanceOf[Queue_]
+  inline def queue(concurrency: Double): Queue_ = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")(concurrency.asInstanceOf[js.Any]).asInstanceOf[Queue_]
   
   trait Queue_ extends StObject {
     
@@ -63,8 +61,7 @@ object mod {
   }
   object Queue_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Queue_,
       await: js.Function2[/* error */ js.Any | Null, /* repeated */ js.Any, Unit] => Queue_,
       awaitAll: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[js.Any]], Unit] => Queue_,
@@ -74,22 +71,17 @@ object mod {
       __obj.asInstanceOf[Queue_]
     }
     
-    @scala.inline
-    implicit class Queue_MutableBuilder[Self <: Queue_] (val x: Self) extends AnyVal {
+    extension [Self <: Queue_](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Queue_): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Queue_): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAwait(value: js.Function2[/* error */ js.Any | Null, /* repeated */ js.Any, Unit] => Queue_): Self = StObject.set(x, "await", js.Any.fromFunction1(value))
+      inline def setAwait(value: js.Function2[/* error */ js.Any | Null, /* repeated */ js.Any, Unit] => Queue_): Self = StObject.set(x, "await", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAwaitAll(
+      inline def setAwaitAll(
         value: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[js.Any]], Unit] => Queue_
       ): Self = StObject.set(x, "awaitAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefer(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Queue_): Self = StObject.set(x, "defer", js.Any.fromFunction2(value))
+      inline def setDefer(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Queue_): Self = StObject.set(x, "defer", js.Any.fromFunction2(value))
     }
   }
 }

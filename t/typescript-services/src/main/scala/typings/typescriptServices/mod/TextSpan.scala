@@ -11,10 +11,10 @@ class TextSpan protected ()
      with typings.typescriptServices.TypeScript.TextSpan {
   def this(start: Double, length: Double) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _length: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _start: js.Any = js.native
   
   /* CompleteClass */
@@ -60,6 +60,5 @@ object TextSpan {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromBounds(start: Double, end: Double): typings.typescriptServices.TypeScript.TextSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBounds")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.TextSpan]
+  inline def fromBounds(start: Double, end: Double): typings.typescriptServices.TypeScript.TextSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBounds")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.TextSpan]
 }

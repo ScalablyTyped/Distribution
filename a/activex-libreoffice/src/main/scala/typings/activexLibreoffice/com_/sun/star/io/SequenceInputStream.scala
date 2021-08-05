@@ -16,8 +16,7 @@ trait SequenceInputStream
 }
 object SequenceInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Length: Double,
     Position: Double,
     acquire: () => Unit,
@@ -37,10 +36,8 @@ object SequenceInputStream {
     __obj.asInstanceOf[SequenceInputStream]
   }
   
-  @scala.inline
-  implicit class SequenceInputStreamMutableBuilder[Self <: SequenceInputStream] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceInputStream](x: Self) {
     
-    @scala.inline
-    def setCreateStreamFromSequence(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "createStreamFromSequence", js.Any.fromFunction1(value))
+    inline def setCreateStreamFromSequence(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "createStreamFromSequence", js.Any.fromFunction1(value))
   }
 }

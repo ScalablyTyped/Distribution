@@ -13,19 +13,15 @@ trait SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities extends StO
 }
 object SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilitiesMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities](x: Self) {
     
-    @scala.inline
-    def setUpdateEnabled(value: Boolean): Self = StObject.set(x, "updateEnabled", value.asInstanceOf[js.Any])
+    inline def setUpdateEnabled(value: Boolean): Self = StObject.set(x, "updateEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEnabledUndefined: Self = StObject.set(x, "updateEnabled", js.undefined)
+    inline def setUpdateEnabledUndefined: Self = StObject.set(x, "updateEnabled", js.undefined)
   }
 }

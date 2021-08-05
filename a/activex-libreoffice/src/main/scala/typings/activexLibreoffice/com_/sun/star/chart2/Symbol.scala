@@ -49,8 +49,7 @@ trait Symbol extends StObject {
 }
 object Symbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderColor: Double,
     FillColor: Double,
     Graphic: XGraphic,
@@ -63,28 +62,20 @@ object Symbol {
     __obj.asInstanceOf[Symbol]
   }
   
-  @scala.inline
-  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+  extension [Self <: Symbol](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColor(value: Double): Self = StObject.set(x, "FillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: Double): Self = StObject.set(x, "FillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonCoords(value: PolyPolygonBezierCoords): Self = StObject.set(x, "PolygonCoords", value.asInstanceOf[js.Any])
+    inline def setPolygonCoords(value: PolyPolygonBezierCoords): Self = StObject.set(x, "PolygonCoords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardSymbol(value: Double): Self = StObject.set(x, "StandardSymbol", value.asInstanceOf[js.Any])
+    inline def setStandardSymbol(value: Double): Self = StObject.set(x, "StandardSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: SymbolStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SymbolStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait ModifyingQuery
 }
 object ModifyingQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: () => typings.bluebird.mod.^[js.Array[Unit]],
     allWithin: DatabaseConnection => typings.bluebird.mod.^[js.Array[Unit]],
     exec: () => typings.bluebird.mod.^[Unit],
@@ -30,13 +29,10 @@ object ModifyingQuery {
     __obj.asInstanceOf[ModifyingQuery]
   }
   
-  @scala.inline
-  implicit class ModifyingQueryMutableBuilder[Self <: ModifyingQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyingQuery](x: Self) {
     
-    @scala.inline
-    def setReturning(value: /* repeated */ js.Any => Query[js.Any]): Self = StObject.set(x, "returning", js.Any.fromFunction1(value))
+    inline def setReturning(value: /* repeated */ js.Any => Query[js.Any]): Self = StObject.set(x, "returning", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhere(value: /* repeated */ js.Any => ModifyingQuery): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
+    inline def setWhere(value: /* repeated */ js.Any => ModifyingQuery): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
   }
 }

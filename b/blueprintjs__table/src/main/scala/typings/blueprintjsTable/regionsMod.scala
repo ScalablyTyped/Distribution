@@ -22,9 +22,9 @@ object regionsMod {
       */
     def this(props: IRegionLayerProps, context: js.Any) = this()
     
-    var renderRegion: js.Any = js.native
+    /* private */ var renderRegion: js.Any = js.native
     
-    var renderRegionChildren: js.Any = js.native
+    /* private */ var renderRegionChildren: js.Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MRegionLayer(nextProps: IRegionLayerProps): Boolean = js.native
@@ -47,32 +47,24 @@ object regionsMod {
   }
   object IRegionLayerProps {
     
-    @scala.inline
-    def apply(): IRegionLayerProps = {
+    inline def apply(): IRegionLayerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRegionLayerProps]
     }
     
-    @scala.inline
-    implicit class IRegionLayerPropsMutableBuilder[Self <: IRegionLayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IRegionLayerProps](x: Self) {
       
-      @scala.inline
-      def setRegionStyles(value: js.Array[CSSProperties]): Self = StObject.set(x, "regionStyles", value.asInstanceOf[js.Any])
+      inline def setRegionStyles(value: js.Array[CSSProperties]): Self = StObject.set(x, "regionStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionStylesUndefined: Self = StObject.set(x, "regionStyles", js.undefined)
+      inline def setRegionStylesUndefined: Self = StObject.set(x, "regionStyles", js.undefined)
       
-      @scala.inline
-      def setRegionStylesVarargs(value: CSSProperties*): Self = StObject.set(x, "regionStyles", js.Array(value :_*))
+      inline def setRegionStylesVarargs(value: CSSProperties*): Self = StObject.set(x, "regionStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setRegions(value: js.Array[IRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[IRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: IRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: IRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
     }
   }
   

@@ -9,8 +9,7 @@ trait CreateKeyInput
      with typings.awsSdkClientKmsNode.typesCreateKeyInputMod.CreateKeyInput
 object CreateKeyInput {
   
-  @scala.inline
-  def apply(): CreateKeyInput = {
+  inline def apply(): CreateKeyInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateKeyInput]
   }

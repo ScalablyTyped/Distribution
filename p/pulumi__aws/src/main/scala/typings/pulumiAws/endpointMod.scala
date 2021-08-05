@@ -146,21 +146,16 @@ object endpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ Boolean]
   }
   
   trait EndpointArgs extends StObject {
@@ -262,119 +257,82 @@ object endpointMod {
   }
   object EndpointArgs {
     
-    @scala.inline
-    def apply(endpointId: Input[String], endpointType: Input[String], engineName: Input[String]): EndpointArgs = {
+    inline def apply(endpointId: Input[String], endpointType: Input[String], engineName: Input[String]): EndpointArgs = {
       val __obj = js.Dynamic.literal(endpointId = endpointId.asInstanceOf[js.Any], endpointType = endpointType.asInstanceOf[js.Any], engineName = engineName.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointArgs]
     }
     
-    @scala.inline
-    implicit class EndpointArgsMutableBuilder[Self <: EndpointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointArgs](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+      inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
       
-      @scala.inline
-      def setElasticsearchSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]): Self = StObject.set(x, "elasticsearchSettings", value.asInstanceOf[js.Any])
+      inline def setElasticsearchSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]): Self = StObject.set(x, "elasticsearchSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchSettingsUndefined: Self = StObject.set(x, "elasticsearchSettings", js.undefined)
+      inline def setElasticsearchSettingsUndefined: Self = StObject.set(x, "elasticsearchSettings", js.undefined)
       
-      @scala.inline
-      def setEndpointId(value: Input[String]): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
+      inline def setEndpointId(value: Input[String]): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+      inline def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineName(value: Input[String]): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
+      inline def setEngineName(value: Input[String]): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraConnectionAttributes(value: Input[String]): Self = StObject.set(x, "extraConnectionAttributes", value.asInstanceOf[js.Any])
+      inline def setExtraConnectionAttributes(value: Input[String]): Self = StObject.set(x, "extraConnectionAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraConnectionAttributesUndefined: Self = StObject.set(x, "extraConnectionAttributes", js.undefined)
+      inline def setExtraConnectionAttributesUndefined: Self = StObject.set(x, "extraConnectionAttributes", js.undefined)
       
-      @scala.inline
-      def setKafkaSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]): Self = StObject.set(x, "kafkaSettings", value.asInstanceOf[js.Any])
+      inline def setKafkaSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]): Self = StObject.set(x, "kafkaSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafkaSettingsUndefined: Self = StObject.set(x, "kafkaSettings", js.undefined)
+      inline def setKafkaSettingsUndefined: Self = StObject.set(x, "kafkaSettings", js.undefined)
       
-      @scala.inline
-      def setKinesisSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]): Self = StObject.set(x, "kinesisSettings", value.asInstanceOf[js.Any])
+      inline def setKinesisSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]): Self = StObject.set(x, "kinesisSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisSettingsUndefined: Self = StObject.set(x, "kinesisSettings", js.undefined)
+      inline def setKinesisSettingsUndefined: Self = StObject.set(x, "kinesisSettings", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setMongodbSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]): Self = StObject.set(x, "mongodbSettings", value.asInstanceOf[js.Any])
+      inline def setMongodbSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]): Self = StObject.set(x, "mongodbSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongodbSettingsUndefined: Self = StObject.set(x, "mongodbSettings", js.undefined)
+      inline def setMongodbSettingsUndefined: Self = StObject.set(x, "mongodbSettings", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setS3Settings(value: Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]): Self = StObject.set(x, "s3Settings", value.asInstanceOf[js.Any])
+      inline def setS3Settings(value: Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]): Self = StObject.set(x, "s3Settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3SettingsUndefined: Self = StObject.set(x, "s3Settings", js.undefined)
+      inline def setS3SettingsUndefined: Self = StObject.set(x, "s3Settings", js.undefined)
       
-      @scala.inline
-      def setServerName(value: Input[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+      inline def setServerName(value: Input[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
+      inline def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
       
-      @scala.inline
-      def setServiceAccessRole(value: Input[String]): Self = StObject.set(x, "serviceAccessRole", value.asInstanceOf[js.Any])
+      inline def setServiceAccessRole(value: Input[String]): Self = StObject.set(x, "serviceAccessRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccessRoleUndefined: Self = StObject.set(x, "serviceAccessRole", js.undefined)
+      inline def setServiceAccessRoleUndefined: Self = StObject.set(x, "serviceAccessRole", js.undefined)
       
-      @scala.inline
-      def setSslMode(value: Input[String]): Self = StObject.set(x, "sslMode", value.asInstanceOf[js.Any])
+      inline def setSslMode(value: Input[String]): Self = StObject.set(x, "sslMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslModeUndefined: Self = StObject.set(x, "sslMode", js.undefined)
+      inline def setSslModeUndefined: Self = StObject.set(x, "sslMode", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -482,134 +440,92 @@ object endpointMod {
   }
   object EndpointState {
     
-    @scala.inline
-    def apply(): EndpointState = {
+    inline def apply(): EndpointState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointState]
     }
     
-    @scala.inline
-    implicit class EndpointStateMutableBuilder[Self <: EndpointState] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointState](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+      inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
       
-      @scala.inline
-      def setElasticsearchSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]): Self = StObject.set(x, "elasticsearchSettings", value.asInstanceOf[js.Any])
+      inline def setElasticsearchSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]): Self = StObject.set(x, "elasticsearchSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchSettingsUndefined: Self = StObject.set(x, "elasticsearchSettings", js.undefined)
+      inline def setElasticsearchSettingsUndefined: Self = StObject.set(x, "elasticsearchSettings", js.undefined)
       
-      @scala.inline
-      def setEndpointArn(value: Input[String]): Self = StObject.set(x, "endpointArn", value.asInstanceOf[js.Any])
+      inline def setEndpointArn(value: Input[String]): Self = StObject.set(x, "endpointArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointArnUndefined: Self = StObject.set(x, "endpointArn", js.undefined)
+      inline def setEndpointArnUndefined: Self = StObject.set(x, "endpointArn", js.undefined)
       
-      @scala.inline
-      def setEndpointId(value: Input[String]): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
+      inline def setEndpointId(value: Input[String]): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointIdUndefined: Self = StObject.set(x, "endpointId", js.undefined)
+      inline def setEndpointIdUndefined: Self = StObject.set(x, "endpointId", js.undefined)
       
-      @scala.inline
-      def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+      inline def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
+      inline def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
       
-      @scala.inline
-      def setEngineName(value: Input[String]): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
+      inline def setEngineName(value: Input[String]): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineNameUndefined: Self = StObject.set(x, "engineName", js.undefined)
+      inline def setEngineNameUndefined: Self = StObject.set(x, "engineName", js.undefined)
       
-      @scala.inline
-      def setExtraConnectionAttributes(value: Input[String]): Self = StObject.set(x, "extraConnectionAttributes", value.asInstanceOf[js.Any])
+      inline def setExtraConnectionAttributes(value: Input[String]): Self = StObject.set(x, "extraConnectionAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraConnectionAttributesUndefined: Self = StObject.set(x, "extraConnectionAttributes", js.undefined)
+      inline def setExtraConnectionAttributesUndefined: Self = StObject.set(x, "extraConnectionAttributes", js.undefined)
       
-      @scala.inline
-      def setKafkaSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]): Self = StObject.set(x, "kafkaSettings", value.asInstanceOf[js.Any])
+      inline def setKafkaSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]): Self = StObject.set(x, "kafkaSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafkaSettingsUndefined: Self = StObject.set(x, "kafkaSettings", js.undefined)
+      inline def setKafkaSettingsUndefined: Self = StObject.set(x, "kafkaSettings", js.undefined)
       
-      @scala.inline
-      def setKinesisSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]): Self = StObject.set(x, "kinesisSettings", value.asInstanceOf[js.Any])
+      inline def setKinesisSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]): Self = StObject.set(x, "kinesisSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisSettingsUndefined: Self = StObject.set(x, "kinesisSettings", js.undefined)
+      inline def setKinesisSettingsUndefined: Self = StObject.set(x, "kinesisSettings", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setMongodbSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]): Self = StObject.set(x, "mongodbSettings", value.asInstanceOf[js.Any])
+      inline def setMongodbSettings(value: Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]): Self = StObject.set(x, "mongodbSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongodbSettingsUndefined: Self = StObject.set(x, "mongodbSettings", js.undefined)
+      inline def setMongodbSettingsUndefined: Self = StObject.set(x, "mongodbSettings", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setS3Settings(value: Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]): Self = StObject.set(x, "s3Settings", value.asInstanceOf[js.Any])
+      inline def setS3Settings(value: Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]): Self = StObject.set(x, "s3Settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3SettingsUndefined: Self = StObject.set(x, "s3Settings", js.undefined)
+      inline def setS3SettingsUndefined: Self = StObject.set(x, "s3Settings", js.undefined)
       
-      @scala.inline
-      def setServerName(value: Input[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+      inline def setServerName(value: Input[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
+      inline def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
       
-      @scala.inline
-      def setServiceAccessRole(value: Input[String]): Self = StObject.set(x, "serviceAccessRole", value.asInstanceOf[js.Any])
+      inline def setServiceAccessRole(value: Input[String]): Self = StObject.set(x, "serviceAccessRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccessRoleUndefined: Self = StObject.set(x, "serviceAccessRole", js.undefined)
+      inline def setServiceAccessRoleUndefined: Self = StObject.set(x, "serviceAccessRole", js.undefined)
       
-      @scala.inline
-      def setSslMode(value: Input[String]): Self = StObject.set(x, "sslMode", value.asInstanceOf[js.Any])
+      inline def setSslMode(value: Input[String]): Self = StObject.set(x, "sslMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslModeUndefined: Self = StObject.set(x, "sslMode", js.undefined)
+      inline def setSslModeUndefined: Self = StObject.set(x, "sslMode", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

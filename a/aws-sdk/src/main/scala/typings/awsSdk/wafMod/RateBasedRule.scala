@@ -38,40 +38,29 @@ trait RateBasedRule extends StObject {
 }
 object RateBasedRule {
   
-  @scala.inline
-  def apply(MatchPredicates: Predicates, RateKey: RateKey, RateLimit: RateLimit, RuleId: ResourceId): RateBasedRule = {
+  inline def apply(MatchPredicates: Predicates, RateKey: RateKey, RateLimit: RateLimit, RuleId: ResourceId): RateBasedRule = {
     val __obj = js.Dynamic.literal(MatchPredicates = MatchPredicates.asInstanceOf[js.Any], RateKey = RateKey.asInstanceOf[js.Any], RateLimit = RateLimit.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateBasedRule]
   }
   
-  @scala.inline
-  implicit class RateBasedRuleMutableBuilder[Self <: RateBasedRule] (val x: Self) extends AnyVal {
+  extension [Self <: RateBasedRule](x: Self) {
     
-    @scala.inline
-    def setMatchPredicates(value: Predicates): Self = StObject.set(x, "MatchPredicates", value.asInstanceOf[js.Any])
+    inline def setMatchPredicates(value: Predicates): Self = StObject.set(x, "MatchPredicates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchPredicatesVarargs(value: Predicate*): Self = StObject.set(x, "MatchPredicates", js.Array(value :_*))
+    inline def setMatchPredicatesVarargs(value: Predicate*): Self = StObject.set(x, "MatchPredicates", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRateKey(value: RateKey): Self = StObject.set(x, "RateKey", value.asInstanceOf[js.Any])
+    inline def setRateKey(value: RateKey): Self = StObject.set(x, "RateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateLimit(value: RateLimit): Self = StObject.set(x, "RateLimit", value.asInstanceOf[js.Any])
+    inline def setRateLimit(value: RateLimit): Self = StObject.set(x, "RateLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

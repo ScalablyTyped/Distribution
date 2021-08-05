@@ -12,11 +12,8 @@ object confirmMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def confirm(message: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def confirm(message: String, element: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def confirm(message: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def confirm(message: String, element: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def handleConfirm(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleConfirm")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleConfirm(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleConfirm")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

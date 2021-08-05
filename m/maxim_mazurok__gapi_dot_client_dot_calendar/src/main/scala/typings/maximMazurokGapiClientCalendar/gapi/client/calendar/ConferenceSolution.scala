@@ -17,31 +17,23 @@ trait ConferenceSolution extends StObject {
 }
 object ConferenceSolution {
   
-  @scala.inline
-  def apply(): ConferenceSolution = {
+  inline def apply(): ConferenceSolution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConferenceSolution]
   }
   
-  @scala.inline
-  implicit class ConferenceSolutionMutableBuilder[Self <: ConferenceSolution] (val x: Self) extends AnyVal {
+  extension [Self <: ConferenceSolution](x: Self) {
     
-    @scala.inline
-    def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
+    inline def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUriUndefined: Self = StObject.set(x, "iconUri", js.undefined)
+    inline def setIconUriUndefined: Self = StObject.set(x, "iconUri", js.undefined)
     
-    @scala.inline
-    def setKey(value: ConferenceSolutionKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ConferenceSolutionKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

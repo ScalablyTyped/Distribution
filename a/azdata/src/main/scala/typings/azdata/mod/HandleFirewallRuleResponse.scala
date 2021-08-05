@@ -12,19 +12,15 @@ trait HandleFirewallRuleResponse extends StObject {
 }
 object HandleFirewallRuleResponse {
   
-  @scala.inline
-  def apply(ipAddress: String, result: Boolean): HandleFirewallRuleResponse = {
+  inline def apply(ipAddress: String, result: Boolean): HandleFirewallRuleResponse = {
     val __obj = js.Dynamic.literal(ipAddress = ipAddress.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleFirewallRuleResponse]
   }
   
-  @scala.inline
-  implicit class HandleFirewallRuleResponseMutableBuilder[Self <: HandleFirewallRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: HandleFirewallRuleResponse](x: Self) {
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

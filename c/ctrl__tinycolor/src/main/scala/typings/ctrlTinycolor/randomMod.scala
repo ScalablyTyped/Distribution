@@ -27,15 +27,11 @@ object randomMod {
   @js.native
   val bounds: js.Array[ColorBound] = js.native
   
-  @scala.inline
-  def random(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[TinyColor_]
-  @scala.inline
-  def random(options: RandomCountOptions): js.Array[TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[TinyColor_]]
-  @scala.inline
-  def random(options: RandomOptions): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
+  inline def random(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[TinyColor_]
+  inline def random(options: RandomCountOptions): js.Array[TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[TinyColor_]]
+  inline def random(options: RandomOptions): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
   
-  @scala.inline
-  def random_Array(): js.Array[TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Array[TinyColor_]]
+  inline def random_Array(): js.Array[TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Array[TinyColor_]]
   
   trait ColorBound extends StObject {
     
@@ -47,29 +43,22 @@ object randomMod {
   }
   object ColorBound {
     
-    @scala.inline
-    def apply(lowerBounds: js.Array[js.Tuple2[Double, Double]], name: String): ColorBound = {
+    inline def apply(lowerBounds: js.Array[js.Tuple2[Double, Double]], name: String): ColorBound = {
       val __obj = js.Dynamic.literal(lowerBounds = lowerBounds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], hueRange = null)
       __obj.asInstanceOf[ColorBound]
     }
     
-    @scala.inline
-    implicit class ColorBoundMutableBuilder[Self <: ColorBound] (val x: Self) extends AnyVal {
+    extension [Self <: ColorBound](x: Self) {
       
-      @scala.inline
-      def setHueRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hueRange", value.asInstanceOf[js.Any])
+      inline def setHueRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hueRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHueRangeNull: Self = StObject.set(x, "hueRange", null)
+      inline def setHueRangeNull: Self = StObject.set(x, "hueRange", null)
       
-      @scala.inline
-      def setLowerBounds(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "lowerBounds", value.asInstanceOf[js.Any])
+      inline def setLowerBounds(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "lowerBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerBoundsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "lowerBounds", js.Array(value :_*))
+      inline def setLowerBoundsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "lowerBounds", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,23 +70,18 @@ object randomMod {
   }
   object RandomCountOptions {
     
-    @scala.inline
-    def apply(): RandomCountOptions = {
+    inline def apply(): RandomCountOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RandomCountOptions]
     }
     
-    @scala.inline
-    implicit class RandomCountOptionsMutableBuilder[Self <: RandomCountOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RandomCountOptions](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountNull: Self = StObject.set(x, "count", null)
+      inline def setCountNull: Self = StObject.set(x, "count", null)
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     }
   }
   
@@ -115,38 +99,28 @@ object randomMod {
   }
   object RandomOptions {
     
-    @scala.inline
-    def apply(): RandomOptions = {
+    inline def apply(): RandomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RandomOptions]
     }
     
-    @scala.inline
-    implicit class RandomOptionsMutableBuilder[Self <: RandomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RandomOptions](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setHue(value: Double | String | red | orange | yellow | green | blue | purple | pink | monochrome): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: Double | String | red | orange | yellow | green | blue | purple | pink | monochrome): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
+      inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
       
-      @scala.inline
-      def setLuminosity(value: random | bright | dark | light): Self = StObject.set(x, "luminosity", value.asInstanceOf[js.Any])
+      inline def setLuminosity(value: random | bright | dark | light): Self = StObject.set(x, "luminosity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLuminosityUndefined: Self = StObject.set(x, "luminosity", js.undefined)
+      inline def setLuminosityUndefined: Self = StObject.set(x, "luminosity", js.undefined)
       
-      @scala.inline
-      def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
 }

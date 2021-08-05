@@ -15,22 +15,17 @@ trait UacGroup extends StObject {
 }
 object UacGroup {
   
-  @scala.inline
-  def apply(id: Double, name: String, showName: String): UacGroup = {
+  inline def apply(id: Double, name: String, showName: String): UacGroup = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], showName = showName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UacGroup]
   }
   
-  @scala.inline
-  implicit class UacGroupMutableBuilder[Self <: UacGroup] (val x: Self) extends AnyVal {
+  extension [Self <: UacGroup](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
+    inline def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
   }
 }

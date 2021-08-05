@@ -31,32 +31,24 @@ object typesGetTraceGraphOutputMod {
   }
   object GetTraceGraphOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetTraceGraphOutput = {
+    inline def apply($metadata: ResponseMetadata): GetTraceGraphOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTraceGraphOutput]
     }
     
-    @scala.inline
-    implicit class GetTraceGraphOutputMutableBuilder[Self <: GetTraceGraphOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetTraceGraphOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setServices(value: js.Array[UnmarshalledService]): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
+      inline def setServices(value: js.Array[UnmarshalledService]): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
+      inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
       
-      @scala.inline
-      def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+      inline def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value :_*))
     }
   }
 }

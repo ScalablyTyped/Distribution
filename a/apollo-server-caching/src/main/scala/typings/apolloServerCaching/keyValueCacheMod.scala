@@ -23,23 +23,18 @@ object keyValueCacheMod {
   }
   object KeyValueCacheSetOptions {
     
-    @scala.inline
-    def apply(): KeyValueCacheSetOptions = {
+    inline def apply(): KeyValueCacheSetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyValueCacheSetOptions]
     }
     
-    @scala.inline
-    implicit class KeyValueCacheSetOptionsMutableBuilder[Self <: KeyValueCacheSetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeyValueCacheSetOptions](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlNull: Self = StObject.set(x, "ttl", null)
+      inline def setTtlNull: Self = StObject.set(x, "ttl", null)
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   

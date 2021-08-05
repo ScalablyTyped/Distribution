@@ -41,32 +41,24 @@ object baseWidgetMod {
   }
   object BaseWidgetProps {
     
-    @scala.inline
-    def apply(): BaseWidgetProps = {
+    inline def apply(): BaseWidgetProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseWidgetProps]
     }
     
-    @scala.inline
-    implicit class BaseWidgetPropsMutableBuilder[Self <: BaseWidgetProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseWidgetProps](x: Self) {
       
-      @scala.inline
-      def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+      inline def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseClassUndefined: Self = StObject.set(x, "baseClass", js.undefined)
+      inline def setBaseClassUndefined: Self = StObject.set(x, "baseClass", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExtraProps(value: js.Any): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
+      inline def setExtraProps(value: js.Any): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraPropsUndefined: Self = StObject.set(x, "extraProps", js.undefined)
+      inline def setExtraPropsUndefined: Self = StObject.set(x, "extraProps", js.undefined)
     }
   }
 }

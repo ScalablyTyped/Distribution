@@ -18,22 +18,17 @@ trait RequestSpotFleetRequest extends StObject {
 }
 object RequestSpotFleetRequest {
   
-  @scala.inline
-  def apply(SpotFleetRequestConfig: SpotFleetRequestConfigData): RequestSpotFleetRequest = {
+  inline def apply(SpotFleetRequestConfig: SpotFleetRequestConfigData): RequestSpotFleetRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestConfig = SpotFleetRequestConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSpotFleetRequest]
   }
   
-  @scala.inline
-  implicit class RequestSpotFleetRequestMutableBuilder[Self <: RequestSpotFleetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSpotFleetRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestConfig(value: SpotFleetRequestConfigData): Self = StObject.set(x, "SpotFleetRequestConfig", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestConfig(value: SpotFleetRequestConfigData): Self = StObject.set(x, "SpotFleetRequestConfig", value.asInstanceOf[js.Any])
   }
 }

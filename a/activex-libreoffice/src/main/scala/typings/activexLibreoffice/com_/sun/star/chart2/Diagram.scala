@@ -81,8 +81,7 @@ trait Diagram
 }
 object Diagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConnectBars: Boolean,
     CoordinateSystems: SafeArray[XCoordinateSystem],
     DataTableHBorder: Boolean,
@@ -129,55 +128,38 @@ object Diagram {
     __obj.asInstanceOf[Diagram]
   }
   
-  @scala.inline
-  implicit class DiagramMutableBuilder[Self <: Diagram] (val x: Self) extends AnyVal {
+  extension [Self <: Diagram](x: Self) {
     
-    @scala.inline
-    def setConnectBars(value: Boolean): Self = StObject.set(x, "ConnectBars", value.asInstanceOf[js.Any])
+    inline def setConnectBars(value: Boolean): Self = StObject.set(x, "ConnectBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableHBorder(value: Boolean): Self = StObject.set(x, "DataTableHBorder", value.asInstanceOf[js.Any])
+    inline def setDataTableHBorder(value: Boolean): Self = StObject.set(x, "DataTableHBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableOutline(value: Boolean): Self = StObject.set(x, "DataTableOutline", value.asInstanceOf[js.Any])
+    inline def setDataTableOutline(value: Boolean): Self = StObject.set(x, "DataTableOutline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableVBorder(value: Boolean): Self = StObject.set(x, "DataTableVBorder", value.asInstanceOf[js.Any])
+    inline def setDataTableVBorder(value: Boolean): Self = StObject.set(x, "DataTableVBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalData(value: String): Self = StObject.set(x, "ExternalData", value.asInstanceOf[js.Any])
+    inline def setExternalData(value: String): Self = StObject.set(x, "ExternalData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBarsPerAxis(value: Boolean): Self = StObject.set(x, "GroupBarsPerAxis", value.asInstanceOf[js.Any])
+    inline def setGroupBarsPerAxis(value: Boolean): Self = StObject.set(x, "GroupBarsPerAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingValueTreatment(value: Double): Self = StObject.set(x, "MissingValueTreatment", value.asInstanceOf[js.Any])
+    inline def setMissingValueTreatment(value: Double): Self = StObject.set(x, "MissingValueTreatment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerspective(value: Double): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
+    inline def setPerspective(value: Double): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosSizeExcludeLabels(value: Boolean): Self = StObject.set(x, "PosSizeExcludeLabels", value.asInstanceOf[js.Any])
+    inline def setPosSizeExcludeLabels(value: Boolean): Self = StObject.set(x, "PosSizeExcludeLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativePosition(value: RelativePosition): Self = StObject.set(x, "RelativePosition", value.asInstanceOf[js.Any])
+    inline def setRelativePosition(value: RelativePosition): Self = StObject.set(x, "RelativePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeSize(value: RelativeSize): Self = StObject.set(x, "RelativeSize", value.asInstanceOf[js.Any])
+    inline def setRelativeSize(value: RelativeSize): Self = StObject.set(x, "RelativeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightAngledAxes(value: Boolean): Self = StObject.set(x, "RightAngledAxes", value.asInstanceOf[js.Any])
+    inline def setRightAngledAxes(value: Boolean): Self = StObject.set(x, "RightAngledAxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationHorizontal(value: Double): Self = StObject.set(x, "RotationHorizontal", value.asInstanceOf[js.Any])
+    inline def setRotationHorizontal(value: Double): Self = StObject.set(x, "RotationHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationVertical(value: Double): Self = StObject.set(x, "RotationVertical", value.asInstanceOf[js.Any])
+    inline def setRotationVertical(value: Double): Self = StObject.set(x, "RotationVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByXValues(value: Boolean): Self = StObject.set(x, "SortByXValues", value.asInstanceOf[js.Any])
+    inline def setSortByXValues(value: Boolean): Self = StObject.set(x, "SortByXValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingAngle(value: Double): Self = StObject.set(x, "StartingAngle", value.asInstanceOf[js.Any])
+    inline def setStartingAngle(value: Double): Self = StObject.set(x, "StartingAngle", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait ExtensionHost extends StObject {
 }
 object ExtensionHost {
   
-  @scala.inline
-  def apply(id: String, name: String): ExtensionHost = {
+  inline def apply(id: String, name: String): ExtensionHost = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionHost]
   }
   
-  @scala.inline
-  implicit class ExtensionHostMutableBuilder[Self <: ExtensionHost] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionHost](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

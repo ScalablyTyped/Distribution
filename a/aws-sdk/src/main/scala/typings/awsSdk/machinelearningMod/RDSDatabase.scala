@@ -15,19 +15,15 @@ trait RDSDatabase extends StObject {
 }
 object RDSDatabase {
   
-  @scala.inline
-  def apply(DatabaseName: RDSDatabaseName, InstanceIdentifier: RDSInstanceIdentifier): RDSDatabase = {
+  inline def apply(DatabaseName: RDSDatabaseName, InstanceIdentifier: RDSInstanceIdentifier): RDSDatabase = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], InstanceIdentifier = InstanceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RDSDatabase]
   }
   
-  @scala.inline
-  implicit class RDSDatabaseMutableBuilder[Self <: RDSDatabase] (val x: Self) extends AnyVal {
+  extension [Self <: RDSDatabase](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: RDSDatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: RDSDatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdentifier(value: RDSInstanceIdentifier): Self = StObject.set(x, "InstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setInstanceIdentifier(value: RDSInstanceIdentifier): Self = StObject.set(x, "InstanceIdentifier", value.asInstanceOf[js.Any])
   }
 }

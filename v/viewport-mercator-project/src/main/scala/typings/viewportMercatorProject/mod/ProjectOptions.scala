@@ -10,19 +10,15 @@ trait ProjectOptions extends StObject {
 }
 object ProjectOptions {
   
-  @scala.inline
-  def apply(): ProjectOptions = {
+  inline def apply(): ProjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectOptions]
   }
   
-  @scala.inline
-  implicit class ProjectOptionsMutableBuilder[Self <: ProjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectOptions](x: Self) {
     
-    @scala.inline
-    def setTopLeft(value: Boolean): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
+    inline def setTopLeft(value: Boolean): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLeftUndefined: Self = StObject.set(x, "topLeft", js.undefined)
+    inline def setTopLeftUndefined: Self = StObject.set(x, "topLeft", js.undefined)
   }
 }

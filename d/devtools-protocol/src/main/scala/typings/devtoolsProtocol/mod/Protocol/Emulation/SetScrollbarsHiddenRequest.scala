@@ -13,16 +13,13 @@ trait SetScrollbarsHiddenRequest extends StObject {
 }
 object SetScrollbarsHiddenRequest {
   
-  @scala.inline
-  def apply(hidden: Boolean): SetScrollbarsHiddenRequest = {
+  inline def apply(hidden: Boolean): SetScrollbarsHiddenRequest = {
     val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScrollbarsHiddenRequest]
   }
   
-  @scala.inline
-  implicit class SetScrollbarsHiddenRequestMutableBuilder[Self <: SetScrollbarsHiddenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetScrollbarsHiddenRequest](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
   }
 }

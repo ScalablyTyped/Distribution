@@ -12,20 +12,16 @@ trait IndicesExistsTypeParams
 }
 object IndicesExistsTypeParams {
   
-  @scala.inline
-  def apply(index: NameList, `type`: NameList): IndicesExistsTypeParams = {
+  inline def apply(index: NameList, `type`: NameList): IndicesExistsTypeParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesExistsTypeParams]
   }
   
-  @scala.inline
-  implicit class IndicesExistsTypeParamsMutableBuilder[Self <: IndicesExistsTypeParams] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesExistsTypeParams](x: Self) {
     
-    @scala.inline
-    def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

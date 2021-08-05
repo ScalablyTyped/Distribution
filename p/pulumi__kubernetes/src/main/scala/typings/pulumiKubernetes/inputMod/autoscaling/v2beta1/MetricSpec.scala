@@ -37,41 +37,30 @@ trait MetricSpec extends StObject {
 }
 object MetricSpec {
   
-  @scala.inline
-  def apply(`type`: Input[String]): MetricSpec = {
+  inline def apply(`type`: Input[String]): MetricSpec = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricSpec]
   }
   
-  @scala.inline
-  implicit class MetricSpecMutableBuilder[Self <: MetricSpec] (val x: Self) extends AnyVal {
+  extension [Self <: MetricSpec](x: Self) {
     
-    @scala.inline
-    def setExternal(value: Input[ExternalMetricSource]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+    inline def setExternal(value: Input[ExternalMetricSource]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+    inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
-    @scala.inline
-    def setObject(value: Input[ObjectMetricSource]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Input[ObjectMetricSource]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
-    @scala.inline
-    def setPods(value: Input[PodsMetricSource]): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
+    inline def setPods(value: Input[PodsMetricSource]): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
+    inline def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
     
-    @scala.inline
-    def setResource(value: Input[ResourceMetricSource]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Input[ResourceMetricSource]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

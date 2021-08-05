@@ -18,25 +18,19 @@ trait NotificationOptions extends StObject {
 }
 object NotificationOptions {
   
-  @scala.inline
-  def apply(): NotificationOptions = {
+  inline def apply(): NotificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationOptions]
   }
   
-  @scala.inline
-  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationOptions](x: Self) {
     
-    @scala.inline
-    def setEmailMessage(value: MessageType): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
+    inline def setEmailMessage(value: MessageType): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
+    inline def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
     
-    @scala.inline
-    def setSendEmail(value: BooleanType): Self = StObject.set(x, "SendEmail", value.asInstanceOf[js.Any])
+    inline def setSendEmail(value: BooleanType): Self = StObject.set(x, "SendEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendEmailUndefined: Self = StObject.set(x, "SendEmail", js.undefined)
+    inline def setSendEmailUndefined: Self = StObject.set(x, "SendEmail", js.undefined)
   }
 }

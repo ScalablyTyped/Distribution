@@ -12,8 +12,7 @@ trait QueueInstance
 }
 object QueueInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     get: RestMethod,
     members: QueueMemberResource,
@@ -24,10 +23,8 @@ object QueueInstance {
     __obj.asInstanceOf[QueueInstance]
   }
   
-  @scala.inline
-  implicit class QueueInstanceMutableBuilder[Self <: QueueInstance] (val x: Self) extends AnyVal {
+  extension [Self <: QueueInstance](x: Self) {
     
-    @scala.inline
-    def setMembers(value: QueueMemberResource): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: QueueMemberResource): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
   }
 }

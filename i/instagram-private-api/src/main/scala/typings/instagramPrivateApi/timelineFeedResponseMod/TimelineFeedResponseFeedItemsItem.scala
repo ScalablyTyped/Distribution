@@ -12,22 +12,17 @@ trait TimelineFeedResponseFeedItemsItem extends StObject {
 }
 object TimelineFeedResponseFeedItemsItem {
   
-  @scala.inline
-  def apply(media_or_ad: TimelineFeedResponseMediaOrAd): TimelineFeedResponseFeedItemsItem = {
+  inline def apply(media_or_ad: TimelineFeedResponseMediaOrAd): TimelineFeedResponseFeedItemsItem = {
     val __obj = js.Dynamic.literal(media_or_ad = media_or_ad.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseFeedItemsItem]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseFeedItemsItemMutableBuilder[Self <: TimelineFeedResponseFeedItemsItem] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponseFeedItemsItem](x: Self) {
     
-    @scala.inline
-    def setMedia_or_ad(value: TimelineFeedResponseMediaOrAd): Self = StObject.set(x, "media_or_ad", value.asInstanceOf[js.Any])
+    inline def setMedia_or_ad(value: TimelineFeedResponseMediaOrAd): Self = StObject.set(x, "media_or_ad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStories_netego(value: TimelineFeedResponseStoriesNetego): Self = StObject.set(x, "stories_netego", value.asInstanceOf[js.Any])
+    inline def setStories_netego(value: TimelineFeedResponseStoriesNetego): Self = StObject.set(x, "stories_netego", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStories_netegoUndefined: Self = StObject.set(x, "stories_netego", js.undefined)
+    inline def setStories_netegoUndefined: Self = StObject.set(x, "stories_netego", js.undefined)
   }
 }

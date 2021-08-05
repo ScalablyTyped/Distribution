@@ -19,24 +19,19 @@ trait OldValueType[T]
 }
 object OldValueType {
   
-  @scala.inline
-  def apply[T](`object`: ObservableSet[T], oldValue: T): OldValueType[T] = {
+  inline def apply[T](`object`: ObservableSet[T], oldValue: T): OldValueType[T] = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[OldValueType[T]]
   }
   
-  @scala.inline
-  implicit class OldValueTypeMutableBuilder[Self <: OldValueType[?], T] (val x: Self & OldValueType[T]) extends AnyVal {
+  extension [Self <: OldValueType[?], T](x: Self & OldValueType[T]) {
     
-    @scala.inline
-    def setObject(value: ObservableSet[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ObservableSet[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

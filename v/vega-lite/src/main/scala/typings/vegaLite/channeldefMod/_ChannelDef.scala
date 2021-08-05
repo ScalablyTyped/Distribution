@@ -9,14 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _ChannelDef[F /* <: Field */] extends StObject
 object _ChannelDef {
   
-  @scala.inline
-  def OrderFieldDef[F /* <: Field */](): typings.vegaLite.channeldefMod.OrderFieldDef[F] = {
+  inline def OrderFieldDef[F /* <: Field */](): typings.vegaLite.channeldefMod.OrderFieldDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.channeldefMod.OrderFieldDef[F]]
   }
   
-  @scala.inline
-  def OrderValueDef(value: Double | ExprRef | SignalRef): typings.vegaLite.channeldefMod.OrderValueDef = {
+  inline def OrderValueDef(value: Double | ExprRef | SignalRef): typings.vegaLite.channeldefMod.OrderValueDef = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.channeldefMod.OrderValueDef]
   }

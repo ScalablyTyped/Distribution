@@ -9,8 +9,7 @@ trait HotspotAuthenticationEventDetails
      with IHotspotAuthenticationEventDetails
 object HotspotAuthenticationEventDetails {
   
-  @scala.inline
-  def apply(eventToken: String): HotspotAuthenticationEventDetails = {
+  inline def apply(eventToken: String): HotspotAuthenticationEventDetails = {
     val __obj = js.Dynamic.literal(eventToken = eventToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotspotAuthenticationEventDetails]
   }

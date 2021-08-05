@@ -13,25 +13,19 @@ trait DateRangePickerRange extends StObject {
 }
 object DateRangePickerRange {
   
-  @scala.inline
-  def apply(): DateRangePickerRange = {
+  inline def apply(): DateRangePickerRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateRangePickerRange]
   }
   
-  @scala.inline
-  implicit class DateRangePickerRangeMutableBuilder[Self <: DateRangePickerRange] (val x: Self) extends AnyVal {
+  extension [Self <: DateRangePickerRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

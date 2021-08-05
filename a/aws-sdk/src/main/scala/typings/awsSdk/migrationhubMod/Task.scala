@@ -23,28 +23,21 @@ trait Task extends StObject {
 }
 object Task {
   
-  @scala.inline
-  def apply(Status: Status): Task = {
+  inline def apply(Status: Status): Task = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
   
-  @scala.inline
-  implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+  extension [Self <: Task](x: Self) {
     
-    @scala.inline
-    def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
+    inline def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
+    inline def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
   }
 }

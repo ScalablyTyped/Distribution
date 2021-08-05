@@ -14,10 +14,8 @@ object hocMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")().asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
-  @scala.inline
-  def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(hasThemeKeyThemePropMemoizeeOptsContextPath.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
+  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")().asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
+  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(hasThemeKeyThemePropMemoizeeOptsContextPath.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
   
   trait IHOCDefaultNoThemeProps extends StObject {
     
@@ -25,17 +23,14 @@ object hocMod {
   }
   object IHOCDefaultNoThemeProps {
     
-    @scala.inline
-    def apply(t: IStaticFnReturn): IHOCDefaultNoThemeProps = {
+    inline def apply(t: IStaticFnReturn): IHOCDefaultNoThemeProps = {
       val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHOCDefaultNoThemeProps]
     }
     
-    @scala.inline
-    implicit class IHOCDefaultNoThemePropsMutableBuilder[Self <: IHOCDefaultNoThemeProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHOCDefaultNoThemeProps](x: Self) {
       
-      @scala.inline
-      def setT(value: IStaticFnReturn): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: IStaticFnReturn): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +42,16 @@ object hocMod {
   }
   object IHOCDefaultProps {
     
-    @scala.inline
-    def apply(t: IStaticFnReturn): IHOCDefaultProps = {
+    inline def apply(t: IStaticFnReturn): IHOCDefaultProps = {
       val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHOCDefaultProps]
     }
     
-    @scala.inline
-    implicit class IHOCDefaultPropsMutableBuilder[Self <: IHOCDefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHOCDefaultProps](x: Self) {
       
-      @scala.inline
-      def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -76,41 +67,30 @@ object hocMod {
   }
   object IThemeDecoratorArgs {
     
-    @scala.inline
-    def apply(): IThemeDecoratorArgs = {
+    inline def apply(): IThemeDecoratorArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IThemeDecoratorArgs]
     }
     
-    @scala.inline
-    implicit class IThemeDecoratorArgsMutableBuilder[Self <: IThemeDecoratorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IThemeDecoratorArgs](x: Self) {
       
-      @scala.inline
-      def setContextPath(value: String | js.Array[String]): Self = StObject.set(x, "contextPath", value.asInstanceOf[js.Any])
+      inline def setContextPath(value: String | js.Array[String]): Self = StObject.set(x, "contextPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextPathUndefined: Self = StObject.set(x, "contextPath", js.undefined)
+      inline def setContextPathUndefined: Self = StObject.set(x, "contextPath", js.undefined)
       
-      @scala.inline
-      def setContextPathVarargs(value: String*): Self = StObject.set(x, "contextPath", js.Array(value :_*))
+      inline def setContextPathVarargs(value: String*): Self = StObject.set(x, "contextPath", js.Array(value :_*))
       
-      @scala.inline
-      def setMemoizeeOpts(value: js.Any): Self = StObject.set(x, "memoizeeOpts", value.asInstanceOf[js.Any])
+      inline def setMemoizeeOpts(value: js.Any): Self = StObject.set(x, "memoizeeOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoizeeOptsUndefined: Self = StObject.set(x, "memoizeeOpts", js.undefined)
+      inline def setMemoizeeOptsUndefined: Self = StObject.set(x, "memoizeeOpts", js.undefined)
       
-      @scala.inline
-      def setThemeKey(value: String): Self = StObject.set(x, "themeKey", value.asInstanceOf[js.Any])
+      inline def setThemeKey(value: String): Self = StObject.set(x, "themeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeKeyUndefined: Self = StObject.set(x, "themeKey", js.undefined)
+      inline def setThemeKeyUndefined: Self = StObject.set(x, "themeKey", js.undefined)
       
-      @scala.inline
-      def setThemeProp(value: String): Self = StObject.set(x, "themeProp", value.asInstanceOf[js.Any])
+      inline def setThemeProp(value: String): Self = StObject.set(x, "themeProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePropUndefined: Self = StObject.set(x, "themeProp", js.undefined)
+      inline def setThemePropUndefined: Self = StObject.set(x, "themeProp", js.undefined)
     }
   }
   

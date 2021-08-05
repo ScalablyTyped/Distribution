@@ -17,8 +17,7 @@ trait PopupWindow
 }
 object PopupWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     center: () => Unit,
@@ -63,13 +62,10 @@ object PopupWindow {
     __obj.asInstanceOf[PopupWindow]
   }
   
-  @scala.inline
-  implicit class PopupWindowMutableBuilder[Self <: PopupWindow] (val x: Self) extends AnyVal {
+  extension [Self <: PopupWindow](x: Self) {
     
-    @scala.inline
-    def setPopupWidget(value: Widget => Unit): Self = StObject.set(x, "popupWidget", js.Any.fromFunction1(value))
+    inline def setPopupWidget(value: Widget => Unit): Self = StObject.set(x, "popupWidget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPopupXY(value: (Double, Double) => Unit): Self = StObject.set(x, "popupXY", js.Any.fromFunction2(value))
+    inline def setPopupXY(value: (Double, Double) => Unit): Self = StObject.set(x, "popupXY", js.Any.fromFunction2(value))
   }
 }

@@ -21,20 +21,16 @@ object typesMod {
   }
   object FakeTxData {
     
-    @scala.inline
-    def apply(): FakeTxData = {
+    inline def apply(): FakeTxData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FakeTxData]
     }
     
-    @scala.inline
-    implicit class FakeTxDataMutableBuilder[Self <: FakeTxData] (val x: Self) extends AnyVal {
+    extension [Self <: FakeTxData](x: Self) {
       
-      @scala.inline
-      def setFrom(value: BufferLike): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: BufferLike): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     }
   }
   
@@ -59,32 +55,24 @@ object typesMod {
   }
   object TransactionOptions {
     
-    @scala.inline
-    def apply(): TransactionOptions = {
+    inline def apply(): TransactionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    @scala.inline
-    implicit class TransactionOptionsMutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionOptions](x: Self) {
       
-      @scala.inline
-      def setChain(value: Double | String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
+      inline def setChain(value: Double | String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
+      inline def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
       
-      @scala.inline
-      def setCommon(value: default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+      inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
       
-      @scala.inline
-      def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
+      inline def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
+      inline def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
     }
   }
   
@@ -94,17 +82,14 @@ object typesMod {
   }
   object TransformableToBuffer {
     
-    @scala.inline
-    def apply(toBuffer: () => Buffer): TransformableToBuffer = {
+    inline def apply(toBuffer: () => Buffer): TransformableToBuffer = {
       val __obj = js.Dynamic.literal(toBuffer = js.Any.fromFunction0(toBuffer))
       __obj.asInstanceOf[TransformableToBuffer]
     }
     
-    @scala.inline
-    implicit class TransformableToBufferMutableBuilder[Self <: TransformableToBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: TransformableToBuffer](x: Self) {
       
-      @scala.inline
-      def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+      inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
     }
   }
   
@@ -157,68 +142,48 @@ object typesMod {
   }
   object TxData {
     
-    @scala.inline
-    def apply(): TxData = {
+    inline def apply(): TxData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TxData]
     }
     
-    @scala.inline
-    implicit class TxDataMutableBuilder[Self <: TxData] (val x: Self) extends AnyVal {
+    extension [Self <: TxData](x: Self) {
       
-      @scala.inline
-      def setData(value: BufferLike): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: BufferLike): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setGasLimit(value: BufferLike): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+      inline def setGasLimit(value: BufferLike): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
+      inline def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
       
-      @scala.inline
-      def setGasPrice(value: BufferLike): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: BufferLike): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
-      @scala.inline
-      def setNonce(value: BufferLike): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: BufferLike): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setR(value: BufferLike): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: BufferLike): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
       
-      @scala.inline
-      def setS(value: BufferLike): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: BufferLike): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
       
-      @scala.inline
-      def setTo(value: BufferLike): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: BufferLike): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setV(value: BufferLike): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: BufferLike): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
       
-      @scala.inline
-      def setValue(value: BufferLike): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: BufferLike): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

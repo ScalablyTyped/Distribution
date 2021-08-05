@@ -126,8 +126,7 @@ object loggerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneHandlers")(handlers.asInstanceOf[js.Any]).asInstanceOf[Set[LoggerHandler]]
+    inline def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneHandlers")(handlers.asInstanceOf[js.Any]).asInstanceOf[Set[LoggerHandler]]
   }
   
   @JSImport("@ionic/cli-framework/lib/logger", "StreamHandler")
@@ -147,25 +146,17 @@ object loggerMod {
     val stream: WritableStream = js.native
   }
   
-  @scala.inline
-  def createPrefixedFormatter(prefix: String): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
-  @scala.inline
-  def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  inline def createPrefixedFormatter(prefix: String): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  inline def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @scala.inline
-  def createTaggedFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")().asInstanceOf[LoggerFormatter]
-  @scala.inline
-  def createTaggedFormatter(hasColorsPrefixTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(hasColorsPrefixTitleizeWrap.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  inline def createTaggedFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")().asInstanceOf[LoggerFormatter]
+  inline def createTaggedFormatter(hasColorsPrefixTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(hasColorsPrefixTitleizeWrap.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @scala.inline
-  def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ColorFunction]]
-  @scala.inline
-  def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ColorFunction]]
+  inline def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ColorFunction]]
+  inline def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ColorFunction]]
   
-  @scala.inline
-  def getLoggerLevelName(): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")().asInstanceOf[js.UndefOr[LoggerLevel]]
-  @scala.inline
-  def getLoggerLevelName(level: LoggerLevelWeight): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")(level.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LoggerLevel]]
+  inline def getLoggerLevelName(): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")().asInstanceOf[js.UndefOr[LoggerLevel]]
+  inline def getLoggerLevelName(level: LoggerLevelWeight): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")(level.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LoggerLevel]]
   
   trait CreateTaggedFormatterOptions extends StObject {
     
@@ -179,41 +170,30 @@ object loggerMod {
   }
   object CreateTaggedFormatterOptions {
     
-    @scala.inline
-    def apply(): CreateTaggedFormatterOptions = {
+    inline def apply(): CreateTaggedFormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateTaggedFormatterOptions]
     }
     
-    @scala.inline
-    implicit class CreateTaggedFormatterOptionsMutableBuilder[Self <: CreateTaggedFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTaggedFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String | js.Function0[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String | js.Function0[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixFunction0(value: () => String): Self = StObject.set(x, "prefix", js.Any.fromFunction0(value))
+      inline def setPrefixFunction0(value: () => String): Self = StObject.set(x, "prefix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setTitleize(value: Boolean): Self = StObject.set(x, "titleize", value.asInstanceOf[js.Any])
+      inline def setTitleize(value: Boolean): Self = StObject.set(x, "titleize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleizeUndefined: Self = StObject.set(x, "titleize", js.undefined)
+      inline def setTitleizeUndefined: Self = StObject.set(x, "titleize", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean | WordWrapOptions): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean | WordWrapOptions): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -229,32 +209,24 @@ object loggerMod {
   }
   object LogRecord {
     
-    @scala.inline
-    def apply(logger: Logger, msg: String): LogRecord = {
+    inline def apply(logger: Logger, msg: String): LogRecord = {
       val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogRecord]
     }
     
-    @scala.inline
-    implicit class LogRecordMutableBuilder[Self <: LogRecord] (val x: Self) extends AnyVal {
+    extension [Self <: LogRecord](x: Self) {
       
-      @scala.inline
-      def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LoggerLevelWeight): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LoggerLevelWeight): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -268,23 +240,18 @@ object loggerMod {
   }
   object LoggerHandler {
     
-    @scala.inline
-    def apply(handle: LogRecord => Unit): LoggerHandler = {
+    inline def apply(handle: LogRecord => Unit): LoggerHandler = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
       __obj.asInstanceOf[LoggerHandler]
     }
     
-    @scala.inline
-    implicit class LoggerHandlerMutableBuilder[Self <: LoggerHandler] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerHandler](x: Self) {
       
-      @scala.inline
-      def setFormatter(value: /* record */ LogRecord => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* record */ LogRecord => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setHandle(value: LogRecord => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+      inline def setHandle(value: LogRecord => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }
   }
   
@@ -297,17 +264,13 @@ object loggerMod {
   trait LoggerLevel extends StObject
   object LoggerLevel {
     
-    @scala.inline
-    def DEBUG: typings.ionicCliFramework.ionicCliFrameworkStrings.DEBUG = "DEBUG".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.DEBUG]
+    inline def DEBUG: typings.ionicCliFramework.ionicCliFrameworkStrings.DEBUG = "DEBUG".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.DEBUG]
     
-    @scala.inline
-    def ERROR: typings.ionicCliFramework.ionicCliFrameworkStrings.ERROR = "ERROR".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.ERROR]
+    inline def ERROR: typings.ionicCliFramework.ionicCliFrameworkStrings.ERROR = "ERROR".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.ERROR]
     
-    @scala.inline
-    def INFO: typings.ionicCliFramework.ionicCliFrameworkStrings.INFO = "INFO".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.INFO]
+    inline def INFO: typings.ionicCliFramework.ionicCliFrameworkStrings.INFO = "INFO".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.INFO]
     
-    @scala.inline
-    def WARN: typings.ionicCliFramework.ionicCliFrameworkStrings.WARN = "WARN".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.WARN]
+    inline def WARN: typings.ionicCliFramework.ionicCliFrameworkStrings.WARN = "WARN".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.WARN]
   }
   
   type LoggerLevelWeight = Double
@@ -320,26 +283,20 @@ object loggerMod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setHandlers(value: Set[LoggerHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: Set[LoggerHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+      inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LoggerLevelWeight): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LoggerLevelWeight): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     }
   }
   
@@ -353,29 +310,22 @@ object loggerMod {
   }
   object StreamHandlerOptions {
     
-    @scala.inline
-    def apply(stream: WritableStream): StreamHandlerOptions = {
+    inline def apply(stream: WritableStream): StreamHandlerOptions = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamHandlerOptions]
     }
     
-    @scala.inline
-    implicit class StreamHandlerOptionsMutableBuilder[Self <: StreamHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: /* record */ LogRecord => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* record */ LogRecord => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: /* record */ LogRecord => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* record */ LogRecord => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

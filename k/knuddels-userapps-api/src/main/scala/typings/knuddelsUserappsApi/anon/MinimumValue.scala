@@ -15,34 +15,25 @@ trait MinimumValue extends StObject {
 }
 object MinimumValue {
   
-  @scala.inline
-  def apply(): MinimumValue = {
+  inline def apply(): MinimumValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinimumValue]
   }
   
-  @scala.inline
-  implicit class MinimumValueMutableBuilder[Self <: MinimumValue] (val x: Self) extends AnyVal {
+  extension [Self <: MinimumValue](x: Self) {
     
-    @scala.inline
-    def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
+    inline def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
-    @scala.inline
-    def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
+    inline def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
-    @scala.inline
-    def setTargetUsers(value: js.Array[User]): Self = StObject.set(x, "targetUsers", value.asInstanceOf[js.Any])
+    inline def setTargetUsers(value: js.Array[User]): Self = StObject.set(x, "targetUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUsersUndefined: Self = StObject.set(x, "targetUsers", js.undefined)
+    inline def setTargetUsersUndefined: Self = StObject.set(x, "targetUsers", js.undefined)
     
-    @scala.inline
-    def setTargetUsersVarargs(value: User*): Self = StObject.set(x, "targetUsers", js.Array(value :_*))
+    inline def setTargetUsersVarargs(value: User*): Self = StObject.set(x, "targetUsers", js.Array(value :_*))
   }
 }

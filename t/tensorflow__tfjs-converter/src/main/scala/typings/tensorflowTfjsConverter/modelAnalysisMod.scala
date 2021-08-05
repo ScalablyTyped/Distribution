@@ -15,27 +15,21 @@ object modelAnalysisMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getExecutionSubgraph(inputs: NamedTensorMap, outputs: js.Array[Node], weightMap: NamedTensorsMap): ExecutionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getExecutionSubgraph")(inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any])).asInstanceOf[ExecutionInfo]
-  @scala.inline
-  def getExecutionSubgraph(
+  inline def getExecutionSubgraph(inputs: NamedTensorMap, outputs: js.Array[Node], weightMap: NamedTensorsMap): ExecutionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getExecutionSubgraph")(inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any])).asInstanceOf[ExecutionInfo]
+  inline def getExecutionSubgraph(
     inputs: NamedTensorMap,
     outputs: js.Array[Node],
     weightMap: NamedTensorsMap,
     initNodes: js.Array[Node]
   ): ExecutionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getExecutionSubgraph")(inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any], initNodes.asInstanceOf[js.Any])).asInstanceOf[ExecutionInfo]
   
-  @scala.inline
-  def getNodesInTopologicalOrder(graph: Graph, weightMap: NamedTensorsMap, executionInfo: ExecutionInfo): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodesInTopologicalOrder")(graph.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any], executionInfo.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
+  inline def getNodesInTopologicalOrder(graph: Graph, weightMap: NamedTensorsMap, executionInfo: ExecutionInfo): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodesInTopologicalOrder")(graph.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any], executionInfo.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  @scala.inline
-  def isControlFlow(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isControlFlow")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isControlFlow(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isControlFlow")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isDynamicShape(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicShape")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDynamicShape(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicShape")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isHashTable(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHashTable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHashTable(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHashTable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait ExecutionInfo extends StObject {
     
@@ -53,8 +47,7 @@ object modelAnalysisMod {
   }
   object ExecutionInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dynamicNode: Node,
       inputs: NamedTensorMap,
       missingInputs: js.Array[String],
@@ -66,35 +59,25 @@ object modelAnalysisMod {
       __obj.asInstanceOf[ExecutionInfo]
     }
     
-    @scala.inline
-    implicit class ExecutionInfoMutableBuilder[Self <: ExecutionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ExecutionInfo](x: Self) {
       
-      @scala.inline
-      def setDynamicNode(value: Node): Self = StObject.set(x, "dynamicNode", value.asInstanceOf[js.Any])
+      inline def setDynamicNode(value: Node): Self = StObject.set(x, "dynamicNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputs(value: NamedTensorMap): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: NamedTensorMap): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingInputs(value: js.Array[String]): Self = StObject.set(x, "missingInputs", value.asInstanceOf[js.Any])
+      inline def setMissingInputs(value: js.Array[String]): Self = StObject.set(x, "missingInputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingInputsVarargs(value: String*): Self = StObject.set(x, "missingInputs", js.Array(value :_*))
+      inline def setMissingInputsVarargs(value: String*): Self = StObject.set(x, "missingInputs", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputs(value: js.Array[Node]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: js.Array[Node]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsVarargs(value: Node*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Node*): Self = StObject.set(x, "outputs", js.Array(value :_*))
       
-      @scala.inline
-      def setSyncInputs(value: js.Array[String]): Self = StObject.set(x, "syncInputs", value.asInstanceOf[js.Any])
+      inline def setSyncInputs(value: js.Array[String]): Self = StObject.set(x, "syncInputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncInputsVarargs(value: String*): Self = StObject.set(x, "syncInputs", js.Array(value :_*))
+      inline def setSyncInputsVarargs(value: String*): Self = StObject.set(x, "syncInputs", js.Array(value :_*))
       
-      @scala.inline
-      def setUsedNodes(value: Set[String]): Self = StObject.set(x, "usedNodes", value.asInstanceOf[js.Any])
+      inline def setUsedNodes(value: Set[String]): Self = StObject.set(x, "usedNodes", value.asInstanceOf[js.Any])
     }
   }
 }

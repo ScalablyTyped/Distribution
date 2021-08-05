@@ -14,25 +14,19 @@ trait UpdateRepoRequest extends StObject {
 }
 object UpdateRepoRequest {
   
-  @scala.inline
-  def apply(): UpdateRepoRequest = {
+  inline def apply(): UpdateRepoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRepoRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRepoRequestMutableBuilder[Self <: UpdateRepoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRepoRequest](x: Self) {
     
-    @scala.inline
-    def setRepo(value: Repo): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: Repo): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+    inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

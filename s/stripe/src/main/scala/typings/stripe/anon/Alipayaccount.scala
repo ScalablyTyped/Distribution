@@ -16,34 +16,25 @@ trait Alipayaccount extends StObject {
 }
 object Alipayaccount {
   
-  @scala.inline
-  def apply(card: Double): Alipayaccount = {
+  inline def apply(card: Double): Alipayaccount = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alipayaccount]
   }
   
-  @scala.inline
-  implicit class AlipayaccountMutableBuilder[Self <: Alipayaccount] (val x: Self) extends AnyVal {
+  extension [Self <: Alipayaccount](x: Self) {
     
-    @scala.inline
-    def setAlipay_account(value: Double): Self = StObject.set(x, "alipay_account", value.asInstanceOf[js.Any])
+    inline def setAlipay_account(value: Double): Self = StObject.set(x, "alipay_account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlipay_accountUndefined: Self = StObject.set(x, "alipay_account", js.undefined)
+    inline def setAlipay_accountUndefined: Self = StObject.set(x, "alipay_account", js.undefined)
     
-    @scala.inline
-    def setBitcoin_receiver(value: Double): Self = StObject.set(x, "bitcoin_receiver", value.asInstanceOf[js.Any])
+    inline def setBitcoin_receiver(value: Double): Self = StObject.set(x, "bitcoin_receiver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitcoin_receiverUndefined: Self = StObject.set(x, "bitcoin_receiver", js.undefined)
+    inline def setBitcoin_receiverUndefined: Self = StObject.set(x, "bitcoin_receiver", js.undefined)
     
-    @scala.inline
-    def setCard(value: Double): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Double): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomer_bank_account(value: Double): Self = StObject.set(x, "customer_bank_account", value.asInstanceOf[js.Any])
+    inline def setCustomer_bank_account(value: Double): Self = StObject.set(x, "customer_bank_account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomer_bank_accountUndefined: Self = StObject.set(x, "customer_bank_account", js.undefined)
+    inline def setCustomer_bank_accountUndefined: Self = StObject.set(x, "customer_bank_account", js.undefined)
   }
 }

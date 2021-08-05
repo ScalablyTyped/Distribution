@@ -33,37 +33,27 @@ trait PoolClusterConfig extends StObject {
 }
 object PoolClusterConfig {
   
-  @scala.inline
-  def apply(): PoolClusterConfig = {
+  inline def apply(): PoolClusterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolClusterConfig]
   }
   
-  @scala.inline
-  implicit class PoolClusterConfigMutableBuilder[Self <: PoolClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PoolClusterConfig](x: Self) {
     
-    @scala.inline
-    def setCanRetry(value: Boolean): Self = StObject.set(x, "canRetry", value.asInstanceOf[js.Any])
+    inline def setCanRetry(value: Boolean): Self = StObject.set(x, "canRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanRetryUndefined: Self = StObject.set(x, "canRetry", js.undefined)
+    inline def setCanRetryUndefined: Self = StObject.set(x, "canRetry", js.undefined)
     
-    @scala.inline
-    def setDefaultSelector(value: String): Self = StObject.set(x, "defaultSelector", value.asInstanceOf[js.Any])
+    inline def setDefaultSelector(value: String): Self = StObject.set(x, "defaultSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSelectorUndefined: Self = StObject.set(x, "defaultSelector", js.undefined)
+    inline def setDefaultSelectorUndefined: Self = StObject.set(x, "defaultSelector", js.undefined)
     
-    @scala.inline
-    def setRemoveNodeErrorCount(value: Double): Self = StObject.set(x, "removeNodeErrorCount", value.asInstanceOf[js.Any])
+    inline def setRemoveNodeErrorCount(value: Double): Self = StObject.set(x, "removeNodeErrorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveNodeErrorCountUndefined: Self = StObject.set(x, "removeNodeErrorCount", js.undefined)
+    inline def setRemoveNodeErrorCountUndefined: Self = StObject.set(x, "removeNodeErrorCount", js.undefined)
     
-    @scala.inline
-    def setRestoreNodeTimeout(value: Double): Self = StObject.set(x, "restoreNodeTimeout", value.asInstanceOf[js.Any])
+    inline def setRestoreNodeTimeout(value: Double): Self = StObject.set(x, "restoreNodeTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreNodeTimeoutUndefined: Self = StObject.set(x, "restoreNodeTimeout", js.undefined)
+    inline def setRestoreNodeTimeoutUndefined: Self = StObject.set(x, "restoreNodeTimeout", js.undefined)
   }
 }

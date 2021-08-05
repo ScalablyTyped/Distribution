@@ -18,8 +18,7 @@ trait TestPlanHubData extends StObject {
 }
 object TestPlanHubData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     selectedSuiteId: Double,
     testPlan: TestPlan,
     testPoints: js.Array[TestPoint],
@@ -30,28 +29,20 @@ object TestPlanHubData {
     __obj.asInstanceOf[TestPlanHubData]
   }
   
-  @scala.inline
-  implicit class TestPlanHubDataMutableBuilder[Self <: TestPlanHubData] (val x: Self) extends AnyVal {
+  extension [Self <: TestPlanHubData](x: Self) {
     
-    @scala.inline
-    def setSelectedSuiteId(value: Double): Self = StObject.set(x, "selectedSuiteId", value.asInstanceOf[js.Any])
+    inline def setSelectedSuiteId(value: Double): Self = StObject.set(x, "selectedSuiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPlan(value: TestPlan): Self = StObject.set(x, "testPlan", value.asInstanceOf[js.Any])
+    inline def setTestPlan(value: TestPlan): Self = StObject.set(x, "testPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPoints(value: js.Array[TestPoint]): Self = StObject.set(x, "testPoints", value.asInstanceOf[js.Any])
+    inline def setTestPoints(value: js.Array[TestPoint]): Self = StObject.set(x, "testPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPointsVarargs(value: TestPoint*): Self = StObject.set(x, "testPoints", js.Array(value :_*))
+    inline def setTestPointsVarargs(value: TestPoint*): Self = StObject.set(x, "testPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setTestSuites(value: js.Array[TestSuite]): Self = StObject.set(x, "testSuites", value.asInstanceOf[js.Any])
+    inline def setTestSuites(value: js.Array[TestSuite]): Self = StObject.set(x, "testSuites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSuitesVarargs(value: TestSuite*): Self = StObject.set(x, "testSuites", js.Array(value :_*))
+    inline def setTestSuitesVarargs(value: TestSuite*): Self = StObject.set(x, "testSuites", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalTestPoints(value: Double): Self = StObject.set(x, "totalTestPoints", value.asInstanceOf[js.Any])
+    inline def setTotalTestPoints(value: Double): Self = StObject.set(x, "totalTestPoints", value.asInstanceOf[js.Any])
   }
 }

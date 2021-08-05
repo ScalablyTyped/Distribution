@@ -14,8 +14,7 @@ trait Fit[Holder /* <: js.Array[js.Any] */, Count /* <: Double */] extends StObj
 }
 object Fit {
   
-  @scala.inline
-  def apply[Holder /* <: js.Array[js.Any] */, Count /* <: Double */](
+  inline def apply[Holder /* <: js.Array[js.Any] */, Count /* <: Double */](
     fit: Holder,
     unfit: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Count, typescript-tuple.typescript-tuple/lib/utils.Prepend<Holder, Type>> */ js.Object,
     union: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Holder['length'], []> */ js.Object
@@ -24,19 +23,15 @@ object Fit {
     __obj.asInstanceOf[Fit[Holder, Count]]
   }
   
-  @scala.inline
-  implicit class FitMutableBuilder[Self <: Fit[?, ?], Holder /* <: js.Array[js.Any] */, Count /* <: Double */] (val x: Self & (Fit[Holder, Count])) extends AnyVal {
+  extension [Self <: Fit[?, ?], Holder /* <: js.Array[js.Any] */, Count /* <: Double */](x: Self & (Fit[Holder, Count])) {
     
-    @scala.inline
-    def setFit(value: Holder): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: Holder): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnfit(
+    inline def setUnfit(
       value: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Count, typescript-tuple.typescript-tuple/lib/utils.Prepend<Holder, Type>> */ js.Object
     ): Self = StObject.set(x, "unfit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnion(
+    inline def setUnion(
       value: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Holder['length'], []> */ js.Object
     ): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
   }

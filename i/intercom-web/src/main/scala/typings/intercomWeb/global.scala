@@ -11,12 +11,10 @@ object global {
   @JSGlobal("Intercom")
   @js.native
   def Intercom: IntercomStatic = js.native
-  @scala.inline
-  def Intercom_=(x: IntercomStatic): Unit = js.Dynamic.global.updateDynamic("Intercom")(x.asInstanceOf[js.Any])
+  inline def Intercom_=(x: IntercomStatic): Unit = js.Dynamic.global.updateDynamic("Intercom")(x.asInstanceOf[js.Any])
   
   @JSGlobal("intercomSettings")
   @js.native
   def intercomSettings: js.UndefOr[IntercomSettings] = js.native
-  @scala.inline
-  def intercomSettings_=(x: js.UndefOr[IntercomSettings]): Unit = js.Dynamic.global.updateDynamic("intercomSettings")(x.asInstanceOf[js.Any])
+  inline def intercomSettings_=(x: js.UndefOr[IntercomSettings]): Unit = js.Dynamic.global.updateDynamic("intercomSettings")(x.asInstanceOf[js.Any])
 }

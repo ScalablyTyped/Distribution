@@ -13,16 +13,13 @@ trait GetDataCatalogInput extends StObject {
 }
 object GetDataCatalogInput {
   
-  @scala.inline
-  def apply(Name: CatalogNameString): GetDataCatalogInput = {
+  inline def apply(Name: CatalogNameString): GetDataCatalogInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataCatalogInput]
   }
   
-  @scala.inline
-  implicit class GetDataCatalogInputMutableBuilder[Self <: GetDataCatalogInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataCatalogInput](x: Self) {
     
-    @scala.inline
-    def setName(value: CatalogNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CatalogNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

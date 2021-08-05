@@ -11,8 +11,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clamp(min: Double, max: Double): js.Function1[/* v */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, Double]]
+  inline def clamp(min: Double, max: Double): js.Function1[/* v */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, Double]]
   
   @JSImport("style-value-types/lib/utils", "colorRegex")
   @js.native
@@ -22,8 +21,7 @@ object utilsMod {
   @js.native
   val floatRegex: RegExp = js.native
   
-  @scala.inline
-  def sanitize(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def sanitize(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("style-value-types/lib/utils", "singleColorRegex")
   @js.native

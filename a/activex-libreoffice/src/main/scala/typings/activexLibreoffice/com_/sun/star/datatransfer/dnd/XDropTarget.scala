@@ -69,8 +69,7 @@ trait XDropTarget
 }
 object XDropTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultActions: Double,
     acquire: () => Unit,
     addDropTargetListener: XDropTargetListener => Unit,
@@ -86,28 +85,20 @@ object XDropTarget {
     __obj.asInstanceOf[XDropTarget]
   }
   
-  @scala.inline
-  implicit class XDropTargetMutableBuilder[Self <: XDropTarget] (val x: Self) extends AnyVal {
+  extension [Self <: XDropTarget](x: Self) {
     
-    @scala.inline
-    def setAddDropTargetListener(value: XDropTargetListener => Unit): Self = StObject.set(x, "addDropTargetListener", js.Any.fromFunction1(value))
+    inline def setAddDropTargetListener(value: XDropTargetListener => Unit): Self = StObject.set(x, "addDropTargetListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultActions(value: Double): Self = StObject.set(x, "DefaultActions", value.asInstanceOf[js.Any])
+    inline def setDefaultActions(value: Double): Self = StObject.set(x, "DefaultActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultActions(value: () => Double): Self = StObject.set(x, "getDefaultActions", js.Any.fromFunction0(value))
+    inline def setGetDefaultActions(value: () => Double): Self = StObject.set(x, "getDefaultActions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveDropTargetListener(value: XDropTargetListener => Unit): Self = StObject.set(x, "removeDropTargetListener", js.Any.fromFunction1(value))
+    inline def setRemoveDropTargetListener(value: XDropTargetListener => Unit): Self = StObject.set(x, "removeDropTargetListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
+    inline def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultActions(value: Double => Unit): Self = StObject.set(x, "setDefaultActions", js.Any.fromFunction1(value))
+    inline def setSetDefaultActions(value: Double => Unit): Self = StObject.set(x, "setDefaultActions", js.Any.fromFunction1(value))
   }
 }

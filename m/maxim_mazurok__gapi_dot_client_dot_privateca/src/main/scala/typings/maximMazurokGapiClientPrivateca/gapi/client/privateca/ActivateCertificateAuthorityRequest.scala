@@ -23,31 +23,23 @@ trait ActivateCertificateAuthorityRequest extends StObject {
 }
 object ActivateCertificateAuthorityRequest {
   
-  @scala.inline
-  def apply(): ActivateCertificateAuthorityRequest = {
+  inline def apply(): ActivateCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivateCertificateAuthorityRequest]
   }
   
-  @scala.inline
-  implicit class ActivateCertificateAuthorityRequestMutableBuilder[Self <: ActivateCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ActivateCertificateAuthorityRequest](x: Self) {
     
-    @scala.inline
-    def setPemCaCertificate(value: String): Self = StObject.set(x, "pemCaCertificate", value.asInstanceOf[js.Any])
+    inline def setPemCaCertificate(value: String): Self = StObject.set(x, "pemCaCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemCaCertificateUndefined: Self = StObject.set(x, "pemCaCertificate", js.undefined)
+    inline def setPemCaCertificateUndefined: Self = StObject.set(x, "pemCaCertificate", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setSubordinateConfig(value: SubordinateConfig): Self = StObject.set(x, "subordinateConfig", value.asInstanceOf[js.Any])
+    inline def setSubordinateConfig(value: SubordinateConfig): Self = StObject.set(x, "subordinateConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubordinateConfigUndefined: Self = StObject.set(x, "subordinateConfig", js.undefined)
+    inline def setSubordinateConfigUndefined: Self = StObject.set(x, "subordinateConfig", js.undefined)
   }
 }

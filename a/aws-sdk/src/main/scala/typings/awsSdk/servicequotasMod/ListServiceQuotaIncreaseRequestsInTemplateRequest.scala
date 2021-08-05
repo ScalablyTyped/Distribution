@@ -28,37 +28,27 @@ trait ListServiceQuotaIncreaseRequestsInTemplateRequest extends StObject {
 }
 object ListServiceQuotaIncreaseRequestsInTemplateRequest {
   
-  @scala.inline
-  def apply(): ListServiceQuotaIncreaseRequestsInTemplateRequest = {
+  inline def apply(): ListServiceQuotaIncreaseRequestsInTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServiceQuotaIncreaseRequestsInTemplateRequest]
   }
   
-  @scala.inline
-  implicit class ListServiceQuotaIncreaseRequestsInTemplateRequestMutableBuilder[Self <: ListServiceQuotaIncreaseRequestsInTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListServiceQuotaIncreaseRequestsInTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
+    inline def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServiceCode(value: ServiceCode): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
+    inline def setServiceCode(value: ServiceCode): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
+    inline def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
   }
 }

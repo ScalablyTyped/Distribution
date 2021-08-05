@@ -28,40 +28,29 @@ trait Scope extends StObject {
 }
 object Scope {
   
-  @scala.inline
-  def apply(): Scope = {
+  inline def apply(): Scope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scope]
   }
   
-  @scala.inline
-  implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+  extension [Self <: Scope](x: Self) {
     
-    @scala.inline
-    def setComplianceResourceId(value: BaseResourceId): Self = StObject.set(x, "ComplianceResourceId", value.asInstanceOf[js.Any])
+    inline def setComplianceResourceId(value: BaseResourceId): Self = StObject.set(x, "ComplianceResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceResourceIdUndefined: Self = StObject.set(x, "ComplianceResourceId", js.undefined)
+    inline def setComplianceResourceIdUndefined: Self = StObject.set(x, "ComplianceResourceId", js.undefined)
     
-    @scala.inline
-    def setComplianceResourceTypes(value: ComplianceResourceTypes): Self = StObject.set(x, "ComplianceResourceTypes", value.asInstanceOf[js.Any])
+    inline def setComplianceResourceTypes(value: ComplianceResourceTypes): Self = StObject.set(x, "ComplianceResourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceResourceTypesUndefined: Self = StObject.set(x, "ComplianceResourceTypes", js.undefined)
+    inline def setComplianceResourceTypesUndefined: Self = StObject.set(x, "ComplianceResourceTypes", js.undefined)
     
-    @scala.inline
-    def setComplianceResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ComplianceResourceTypes", js.Array(value :_*))
+    inline def setComplianceResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ComplianceResourceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTagKey(value: StringWithCharLimit128): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
+    inline def setTagKey(value: StringWithCharLimit128): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeyUndefined: Self = StObject.set(x, "TagKey", js.undefined)
+    inline def setTagKeyUndefined: Self = StObject.set(x, "TagKey", js.undefined)
     
-    @scala.inline
-    def setTagValue(value: StringWithCharLimit256): Self = StObject.set(x, "TagValue", value.asInstanceOf[js.Any])
+    inline def setTagValue(value: StringWithCharLimit256): Self = StObject.set(x, "TagValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagValueUndefined: Self = StObject.set(x, "TagValue", js.undefined)
+    inline def setTagValueUndefined: Self = StObject.set(x, "TagValue", js.undefined)
   }
 }

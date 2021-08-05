@@ -36,43 +36,31 @@ trait OAuth2Configuration extends StObject {
 }
 object OAuth2Configuration {
   
-  @scala.inline
-  def apply(): OAuth2Configuration = {
+  inline def apply(): OAuth2Configuration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuth2Configuration]
   }
   
-  @scala.inline
-  implicit class OAuth2ConfigurationMutableBuilder[Self <: OAuth2Configuration] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2Configuration](x: Self) {
     
-    @scala.inline
-    def setClient(value: OAuth2ClientSettings): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: OAuth2ClientSettings): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setFake_token_response(value: js.Any): Self = StObject.set(x, "fake_token_response", value.asInstanceOf[js.Any])
+    inline def setFake_token_response(value: js.Any): Self = StObject.set(x, "fake_token_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFake_token_responseUndefined: Self = StObject.set(x, "fake_token_response", js.undefined)
+    inline def setFake_token_responseUndefined: Self = StObject.set(x, "fake_token_response", js.undefined)
     
-    @scala.inline
-    def setProvider(value: OAuth2Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: OAuth2Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+    inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

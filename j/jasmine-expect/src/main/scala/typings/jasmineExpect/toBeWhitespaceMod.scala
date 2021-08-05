@@ -22,17 +22,14 @@ object toBeWhitespaceMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeWhitespace: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
+        inline def apply[T](toBeWhitespace: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeWhitespace = js.Any.fromFunction1(toBeWhitespace))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeWhitespace(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeWhitespace", js.Any.fromFunction1(value))
+          inline def setToBeWhitespace(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeWhitespace", js.Any.fromFunction1(value))
         }
       }
     }

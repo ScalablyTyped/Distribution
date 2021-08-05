@@ -88,11 +88,9 @@ object SourceCodeInfo {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def deserializeBinary(bytes: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Location]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Location, reader: BinaryReader): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Location]
+    inline def deserializeBinaryFromReader(message: Location, reader: BinaryReader): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Location]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location.extensions")
     @js.native
@@ -101,17 +99,13 @@ object SourceCodeInfo {
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Location, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Location, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Location): typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Location): typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]
     
     trait AsObject extends StObject {
       
@@ -127,8 +121,7 @@ object SourceCodeInfo {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         leadingDetachedCommentsList: js.Array[String],
         pathList: js.Array[Double],
         spanList: js.Array[Double]
@@ -137,47 +130,34 @@ object SourceCodeInfo {
         __obj.asInstanceOf[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject](x: Self) {
         
-        @scala.inline
-        def setLeadingComments(value: String): Self = StObject.set(x, "leadingComments", value.asInstanceOf[js.Any])
+        inline def setLeadingComments(value: String): Self = StObject.set(x, "leadingComments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeadingCommentsUndefined: Self = StObject.set(x, "leadingComments", js.undefined)
+        inline def setLeadingCommentsUndefined: Self = StObject.set(x, "leadingComments", js.undefined)
         
-        @scala.inline
-        def setLeadingDetachedCommentsList(value: js.Array[String]): Self = StObject.set(x, "leadingDetachedCommentsList", value.asInstanceOf[js.Any])
+        inline def setLeadingDetachedCommentsList(value: js.Array[String]): Self = StObject.set(x, "leadingDetachedCommentsList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeadingDetachedCommentsListVarargs(value: String*): Self = StObject.set(x, "leadingDetachedCommentsList", js.Array(value :_*))
+        inline def setLeadingDetachedCommentsListVarargs(value: String*): Self = StObject.set(x, "leadingDetachedCommentsList", js.Array(value :_*))
         
-        @scala.inline
-        def setPathList(value: js.Array[Double]): Self = StObject.set(x, "pathList", value.asInstanceOf[js.Any])
+        inline def setPathList(value: js.Array[Double]): Self = StObject.set(x, "pathList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathListVarargs(value: Double*): Self = StObject.set(x, "pathList", js.Array(value :_*))
+        inline def setPathListVarargs(value: Double*): Self = StObject.set(x, "pathList", js.Array(value :_*))
         
-        @scala.inline
-        def setSpanList(value: js.Array[Double]): Self = StObject.set(x, "spanList", value.asInstanceOf[js.Any])
+        inline def setSpanList(value: js.Array[Double]): Self = StObject.set(x, "spanList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpanListVarargs(value: Double*): Self = StObject.set(x, "spanList", js.Array(value :_*))
+        inline def setSpanListVarargs(value: Double*): Self = StObject.set(x, "spanList", js.Array(value :_*))
         
-        @scala.inline
-        def setTrailingComments(value: String): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
+        inline def setTrailingComments(value: String): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrailingCommentsUndefined: Self = StObject.set(x, "trailingComments", js.undefined)
+        inline def setTrailingCommentsUndefined: Self = StObject.set(x, "trailingComments", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
+  inline def deserializeBinary(bytes: Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: SourceCodeInfo, reader: BinaryReader): SourceCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SourceCodeInfo]
+  inline def deserializeBinaryFromReader(message: SourceCodeInfo, reader: BinaryReader): SourceCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SourceCodeInfo]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.extensions")
   @js.native
@@ -186,17 +166,13 @@ object SourceCodeInfo {
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: SourceCodeInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: SourceCodeInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: SourceCodeInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: SourceCodeInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -204,20 +180,16 @@ object SourceCodeInfo {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(locationList: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]): AsObject = {
+    inline def apply(locationList: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]): AsObject = {
       val __obj = js.Dynamic.literal(locationList = locationList.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setLocationList(value: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]): Self = StObject.set(x, "locationList", value.asInstanceOf[js.Any])
+      inline def setLocationList(value: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]): Self = StObject.set(x, "locationList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationListVarargs(value: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject*): Self = StObject.set(x, "locationList", js.Array(value :_*))
+      inline def setLocationListVarargs(value: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject*): Self = StObject.set(x, "locationList", js.Array(value :_*))
     }
   }
 }

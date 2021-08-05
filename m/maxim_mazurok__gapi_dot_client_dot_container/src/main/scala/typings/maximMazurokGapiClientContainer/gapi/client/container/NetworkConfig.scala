@@ -29,37 +29,27 @@ trait NetworkConfig extends StObject {
 }
 object NetworkConfig {
   
-  @scala.inline
-  def apply(): NetworkConfig = {
+  inline def apply(): NetworkConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkConfig]
   }
   
-  @scala.inline
-  implicit class NetworkConfigMutableBuilder[Self <: NetworkConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkConfig](x: Self) {
     
-    @scala.inline
-    def setDefaultSnatStatus(value: DefaultSnatStatus): Self = StObject.set(x, "defaultSnatStatus", value.asInstanceOf[js.Any])
+    inline def setDefaultSnatStatus(value: DefaultSnatStatus): Self = StObject.set(x, "defaultSnatStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSnatStatusUndefined: Self = StObject.set(x, "defaultSnatStatus", js.undefined)
+    inline def setDefaultSnatStatusUndefined: Self = StObject.set(x, "defaultSnatStatus", js.undefined)
     
-    @scala.inline
-    def setEnableIntraNodeVisibility(value: Boolean): Self = StObject.set(x, "enableIntraNodeVisibility", value.asInstanceOf[js.Any])
+    inline def setEnableIntraNodeVisibility(value: Boolean): Self = StObject.set(x, "enableIntraNodeVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIntraNodeVisibilityUndefined: Self = StObject.set(x, "enableIntraNodeVisibility", js.undefined)
+    inline def setEnableIntraNodeVisibilityUndefined: Self = StObject.set(x, "enableIntraNodeVisibility", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
   }
 }

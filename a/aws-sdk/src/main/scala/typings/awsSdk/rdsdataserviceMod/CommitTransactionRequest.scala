@@ -23,22 +23,17 @@ trait CommitTransactionRequest extends StObject {
 }
 object CommitTransactionRequest {
   
-  @scala.inline
-  def apply(resourceArn: Arn, secretArn: Arn, transactionId: Id): CommitTransactionRequest = {
+  inline def apply(resourceArn: Arn, secretArn: Arn, transactionId: Id): CommitTransactionRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitTransactionRequest]
   }
   
-  @scala.inline
-  implicit class CommitTransactionRequestMutableBuilder[Self <: CommitTransactionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CommitTransactionRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }
 }

@@ -29,8 +29,7 @@ object challengeStateResponseMod {
   }
   object ChallengeRepositoryStateResponseStepData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       big_blue_token: String,
       choice: String,
       contact_point: String,
@@ -45,35 +44,25 @@ object challengeStateResponseMod {
       __obj.asInstanceOf[ChallengeRepositoryStateResponseStepData]
     }
     
-    @scala.inline
-    implicit class ChallengeRepositoryStateResponseStepDataMutableBuilder[Self <: ChallengeRepositoryStateResponseStepData] (val x: Self) extends AnyVal {
+    extension [Self <: ChallengeRepositoryStateResponseStepData](x: Self) {
       
-      @scala.inline
-      def setBig_blue_token(value: String): Self = StObject.set(x, "big_blue_token", value.asInstanceOf[js.Any])
+      inline def setBig_blue_token(value: String): Self = StObject.set(x, "big_blue_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoice(value: String): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
+      inline def setChoice(value: String): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContact_point(value: String): Self = StObject.set(x, "contact_point", value.asInstanceOf[js.Any])
+      inline def setContact_point(value: String): Self = StObject.set(x, "contact_point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFb_access_token(value: String): Self = StObject.set(x, "fb_access_token", value.asInstanceOf[js.Any])
+      inline def setFb_access_token(value: String): Self = StObject.set(x, "fb_access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForm_type(value: String): Self = StObject.set(x, "form_type", value.asInstanceOf[js.Any])
+      inline def setForm_type(value: String): Self = StObject.set(x, "form_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogle_oauth_token(value: String): Self = StObject.set(x, "google_oauth_token", value.asInstanceOf[js.Any])
+      inline def setGoogle_oauth_token(value: String): Self = StObject.set(x, "google_oauth_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResend_delay(value: Double): Self = StObject.set(x, "resend_delay", value.asInstanceOf[js.Any])
+      inline def setResend_delay(value: Double): Self = StObject.set(x, "resend_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity_code(value: String): Self = StObject.set(x, "security_code", value.asInstanceOf[js.Any])
+      inline def setSecurity_code(value: String): Self = StObject.set(x, "security_code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,8 +84,7 @@ object challengeStateResponseMod {
   }
   object ChallengeStateResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: String,
       nonce_code: String,
       status: String,
@@ -108,32 +96,23 @@ object challengeStateResponseMod {
       __obj.asInstanceOf[ChallengeStateResponse]
     }
     
-    @scala.inline
-    implicit class ChallengeStateResponseMutableBuilder[Self <: ChallengeStateResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ChallengeStateResponse](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogged_in_user(value: AccountRepositoryLoginResponseLoggedInUser): Self = StObject.set(x, "logged_in_user", value.asInstanceOf[js.Any])
+      inline def setLogged_in_user(value: AccountRepositoryLoginResponseLoggedInUser): Self = StObject.set(x, "logged_in_user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogged_in_userUndefined: Self = StObject.set(x, "logged_in_user", js.undefined)
+      inline def setLogged_in_userUndefined: Self = StObject.set(x, "logged_in_user", js.undefined)
       
-      @scala.inline
-      def setNonce_code(value: String): Self = StObject.set(x, "nonce_code", value.asInstanceOf[js.Any])
+      inline def setNonce_code(value: String): Self = StObject.set(x, "nonce_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep_data(value: ChallengeRepositoryStateResponseStepData): Self = StObject.set(x, "step_data", value.asInstanceOf[js.Any])
+      inline def setStep_data(value: ChallengeRepositoryStateResponseStepData): Self = StObject.set(x, "step_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep_name(value: String): Self = StObject.set(x, "step_name", value.asInstanceOf[js.Any])
+      inline def setStep_name(value: String): Self = StObject.set(x, "step_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
 }

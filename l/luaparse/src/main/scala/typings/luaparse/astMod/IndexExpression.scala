@@ -15,20 +15,16 @@ trait IndexExpression
 }
 object IndexExpression {
   
-  @scala.inline
-  def apply(base: Expression, index: Expression): IndexExpression = {
+  inline def apply(base: Expression, index: Expression): IndexExpression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("IndexExpression")
     __obj.asInstanceOf[IndexExpression]
   }
   
-  @scala.inline
-  implicit class IndexExpressionMutableBuilder[Self <: IndexExpression] (val x: Self) extends AnyVal {
+  extension [Self <: IndexExpression](x: Self) {
     
-    @scala.inline
-    def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Expression): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Expression): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

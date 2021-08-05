@@ -42,43 +42,31 @@ trait SchemaVolumeMount extends StObject {
 }
 object SchemaVolumeMount {
   
-  @scala.inline
-  def apply(): SchemaVolumeMount = {
+  inline def apply(): SchemaVolumeMount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVolumeMount]
   }
   
-  @scala.inline
-  implicit class SchemaVolumeMountMutableBuilder[Self <: SchemaVolumeMount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVolumeMount](x: Self) {
     
-    @scala.inline
-    def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
+    inline def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPathUndefined: Self = StObject.set(x, "mountPath", js.undefined)
+    inline def setMountPathUndefined: Self = StObject.set(x, "mountPath", js.undefined)
     
-    @scala.inline
-    def setMountPropagation(value: String): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
+    inline def setMountPropagation(value: String): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPropagationUndefined: Self = StObject.set(x, "mountPropagation", js.undefined)
+    inline def setMountPropagationUndefined: Self = StObject.set(x, "mountPropagation", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
+    inline def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPathUndefined: Self = StObject.set(x, "subPath", js.undefined)
+    inline def setSubPathUndefined: Self = StObject.set(x, "subPath", js.undefined)
   }
 }

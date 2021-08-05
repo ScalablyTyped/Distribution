@@ -119,32 +119,24 @@ object jws {
     }
     object JWSResult {
       
-      @scala.inline
-      def apply(headerObj: Typ, headerPP: String, payloadPP: String, sigHex: String): JWSResult = {
+      inline def apply(headerObj: Typ, headerPP: String, payloadPP: String, sigHex: String): JWSResult = {
         val __obj = js.Dynamic.literal(headerObj = headerObj.asInstanceOf[js.Any], headerPP = headerPP.asInstanceOf[js.Any], payloadPP = payloadPP.asInstanceOf[js.Any], sigHex = sigHex.asInstanceOf[js.Any])
         __obj.asInstanceOf[JWSResult]
       }
       
-      @scala.inline
-      implicit class JWSResultMutableBuilder[Self <: JWSResult] (val x: Self) extends AnyVal {
+      extension [Self <: JWSResult](x: Self) {
         
-        @scala.inline
-        def setHeaderObj(value: Typ): Self = StObject.set(x, "headerObj", value.asInstanceOf[js.Any])
+        inline def setHeaderObj(value: Typ): Self = StObject.set(x, "headerObj", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderPP(value: String): Self = StObject.set(x, "headerPP", value.asInstanceOf[js.Any])
+        inline def setHeaderPP(value: String): Self = StObject.set(x, "headerPP", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayloadObj(value: js.Object): Self = StObject.set(x, "payloadObj", value.asInstanceOf[js.Any])
+        inline def setPayloadObj(value: js.Object): Self = StObject.set(x, "payloadObj", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayloadObjUndefined: Self = StObject.set(x, "payloadObj", js.undefined)
+        inline def setPayloadObjUndefined: Self = StObject.set(x, "payloadObj", js.undefined)
         
-        @scala.inline
-        def setPayloadPP(value: String): Self = StObject.set(x, "payloadPP", value.asInstanceOf[js.Any])
+        inline def setPayloadPP(value: String): Self = StObject.set(x, "payloadPP", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSigHex(value: String): Self = StObject.set(x, "sigHex", value.asInstanceOf[js.Any])
+        inline def setSigHex(value: String): Self = StObject.set(x, "sigHex", value.asInstanceOf[js.Any])
       }
     }
     
@@ -168,38 +160,28 @@ object jws {
     }
     object JsonWebKey {
       
-      @scala.inline
-      def apply(crv: String, e: String, k: String, kty: String, n: String, v: String, x: String, y: String): JsonWebKey = {
+      inline def apply(crv: String, e: String, k: String, kty: String, n: String, v: String, x: String, y: String): JsonWebKey = {
         val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
         __obj.asInstanceOf[JsonWebKey]
       }
       
-      @scala.inline
-      implicit class JsonWebKeyMutableBuilder[Self <: JsonWebKey] (val x: Self) extends AnyVal {
+      extension [Self <: JsonWebKey](x: Self) {
         
-        @scala.inline
-        def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
+        inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+        inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+        inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+        inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+        inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+        inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
   }

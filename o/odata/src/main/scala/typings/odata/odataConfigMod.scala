@@ -31,44 +31,32 @@ object odataConfigMod {
   }
   object OdataBatchConfig {
     
-    @scala.inline
-    def apply(useChangset: Boolean, useRelativeURLs: Boolean): OdataBatchConfig = {
+    inline def apply(useChangset: Boolean, useRelativeURLs: Boolean): OdataBatchConfig = {
       val __obj = js.Dynamic.literal(useChangset = useChangset.asInstanceOf[js.Any], useRelativeURLs = useRelativeURLs.asInstanceOf[js.Any])
       __obj.asInstanceOf[OdataBatchConfig]
     }
     
-    @scala.inline
-    implicit class OdataBatchConfigMutableBuilder[Self <: OdataBatchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OdataBatchConfig](x: Self) {
       
-      @scala.inline
-      def setBoundaryPrefix(value: String): Self = StObject.set(x, "boundaryPrefix", value.asInstanceOf[js.Any])
+      inline def setBoundaryPrefix(value: String): Self = StObject.set(x, "boundaryPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryPrefixUndefined: Self = StObject.set(x, "boundaryPrefix", js.undefined)
+      inline def setBoundaryPrefixUndefined: Self = StObject.set(x, "boundaryPrefix", js.undefined)
       
-      @scala.inline
-      def setChangsetBoundaryPrefix(value: String): Self = StObject.set(x, "changsetBoundaryPrefix", value.asInstanceOf[js.Any])
+      inline def setChangsetBoundaryPrefix(value: String): Self = StObject.set(x, "changsetBoundaryPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangsetBoundaryPrefixUndefined: Self = StObject.set(x, "changsetBoundaryPrefix", js.undefined)
+      inline def setChangsetBoundaryPrefixUndefined: Self = StObject.set(x, "changsetBoundaryPrefix", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setUseChangset(value: Boolean): Self = StObject.set(x, "useChangset", value.asInstanceOf[js.Any])
+      inline def setUseChangset(value: Boolean): Self = StObject.set(x, "useChangset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseRelativeURLs(value: Boolean): Self = StObject.set(x, "useRelativeURLs", value.asInstanceOf[js.Any])
+      inline def setUseRelativeURLs(value: Boolean): Self = StObject.set(x, "useRelativeURLs", value.asInstanceOf[js.Any])
     }
   }
   

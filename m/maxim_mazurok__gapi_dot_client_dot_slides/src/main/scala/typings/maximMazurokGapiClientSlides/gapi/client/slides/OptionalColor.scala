@@ -11,19 +11,15 @@ trait OptionalColor extends StObject {
 }
 object OptionalColor {
   
-  @scala.inline
-  def apply(): OptionalColor = {
+  inline def apply(): OptionalColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionalColor]
   }
   
-  @scala.inline
-  implicit class OptionalColorMutableBuilder[Self <: OptionalColor] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalColor](x: Self) {
     
-    @scala.inline
-    def setOpaqueColor(value: OpaqueColor): Self = StObject.set(x, "opaqueColor", value.asInstanceOf[js.Any])
+    inline def setOpaqueColor(value: OpaqueColor): Self = StObject.set(x, "opaqueColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpaqueColorUndefined: Self = StObject.set(x, "opaqueColor", js.undefined)
+    inline def setOpaqueColorUndefined: Self = StObject.set(x, "opaqueColor", js.undefined)
   }
 }

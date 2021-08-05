@@ -12,7 +12,7 @@ trait ReflectionFormat extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.ReflectionFormat_typekey")
+  /* private */ @JSName("Office.ReflectionFormat_typekey")
   var OfficeDotReflectionFormat_typekey: ReflectionFormat
   
   var Offset: Double
@@ -25,8 +25,7 @@ trait ReflectionFormat extends StObject {
 }
 object ReflectionFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Blur: Double,
     Creator: Double,
@@ -41,31 +40,22 @@ object ReflectionFormat {
     __obj.asInstanceOf[ReflectionFormat]
   }
   
-  @scala.inline
-  implicit class ReflectionFormatMutableBuilder[Self <: ReflectionFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ReflectionFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlur(value: Double): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: Double): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotReflectionFormat_typekey(value: ReflectionFormat): Self = StObject.set(x, "Office.ReflectionFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotReflectionFormat_typekey(value: ReflectionFormat): Self = StObject.set(x, "Office.ReflectionFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoReflectionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoReflectionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

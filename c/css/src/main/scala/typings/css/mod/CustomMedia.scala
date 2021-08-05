@@ -17,25 +17,19 @@ trait CustomMedia
 }
 object CustomMedia {
   
-  @scala.inline
-  def apply(): CustomMedia = {
+  inline def apply(): CustomMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomMedia]
   }
   
-  @scala.inline
-  implicit class CustomMediaMutableBuilder[Self <: CustomMedia] (val x: Self) extends AnyVal {
+  extension [Self <: CustomMedia](x: Self) {
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -28,31 +28,23 @@ trait RemovePermissionRequest extends StObject {
 }
 object RemovePermissionRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName, StatementId: NamespacedStatementId): RemovePermissionRequest = {
+  inline def apply(FunctionName: FunctionName, StatementId: NamespacedStatementId): RemovePermissionRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], StatementId = StatementId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovePermissionRequest]
   }
   
-  @scala.inline
-  implicit class RemovePermissionRequestMutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
-    @scala.inline
-    def setStatementId(value: NamespacedStatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
+    inline def setStatementId(value: NamespacedStatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
   }
 }

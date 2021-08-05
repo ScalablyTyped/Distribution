@@ -14,22 +14,17 @@ trait PaddingLeft extends StObject {
 }
 object PaddingLeft {
   
-  @scala.inline
-  def apply(height: Double, paddingLeft: Double, paddingRight: Double): PaddingLeft = {
+  inline def apply(height: Double, paddingLeft: Double, paddingRight: Double): PaddingLeft = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingLeft]
   }
   
-  @scala.inline
-  implicit class PaddingLeftMutableBuilder[Self <: PaddingLeft] (val x: Self) extends AnyVal {
+  extension [Self <: PaddingLeft](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
   }
 }

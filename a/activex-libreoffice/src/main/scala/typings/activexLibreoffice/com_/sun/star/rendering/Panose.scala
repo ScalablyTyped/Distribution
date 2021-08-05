@@ -28,8 +28,7 @@ trait Panose extends StObject {
 }
 object Panose {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ArmStyle: Double,
     Contrast: Double,
     FamilyType: Double,
@@ -45,37 +44,26 @@ object Panose {
     __obj.asInstanceOf[Panose]
   }
   
-  @scala.inline
-  implicit class PanoseMutableBuilder[Self <: Panose] (val x: Self) extends AnyVal {
+  extension [Self <: Panose](x: Self) {
     
-    @scala.inline
-    def setArmStyle(value: Double): Self = StObject.set(x, "ArmStyle", value.asInstanceOf[js.Any])
+    inline def setArmStyle(value: Double): Self = StObject.set(x, "ArmStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrast(value: Double): Self = StObject.set(x, "Contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Double): Self = StObject.set(x, "Contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyType(value: Double): Self = StObject.set(x, "FamilyType", value.asInstanceOf[js.Any])
+    inline def setFamilyType(value: Double): Self = StObject.set(x, "FamilyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterform(value: Double): Self = StObject.set(x, "Letterform", value.asInstanceOf[js.Any])
+    inline def setLetterform(value: Double): Self = StObject.set(x, "Letterform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidline(value: Double): Self = StObject.set(x, "Midline", value.asInstanceOf[js.Any])
+    inline def setMidline(value: Double): Self = StObject.set(x, "Midline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProportion(value: Double): Self = StObject.set(x, "Proportion", value.asInstanceOf[js.Any])
+    inline def setProportion(value: Double): Self = StObject.set(x, "Proportion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerifStyle(value: Double): Self = StObject.set(x, "SerifStyle", value.asInstanceOf[js.Any])
+    inline def setSerifStyle(value: Double): Self = StObject.set(x, "SerifStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeVariation(value: Double): Self = StObject.set(x, "StrokeVariation", value.asInstanceOf[js.Any])
+    inline def setStrokeVariation(value: Double): Self = StObject.set(x, "StrokeVariation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXHeight(value: Double): Self = StObject.set(x, "XHeight", value.asInstanceOf[js.Any])
+    inline def setXHeight(value: Double): Self = StObject.set(x, "XHeight", value.asInstanceOf[js.Any])
   }
 }

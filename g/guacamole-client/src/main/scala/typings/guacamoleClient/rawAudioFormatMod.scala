@@ -51,7 +51,6 @@ object rawAudioFormatMod {
       *     audio data represented by the given mimetype, or null if the given
       *     mimetype is not supported.
       */
-    @scala.inline
-    def parse(mimetype: Mimetype): RawAudioFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mimetype.asInstanceOf[js.Any]).asInstanceOf[RawAudioFormat]
+    inline def parse(mimetype: Mimetype): RawAudioFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mimetype.asInstanceOf[js.Any]).asInstanceOf[RawAudioFormat]
   }
 }

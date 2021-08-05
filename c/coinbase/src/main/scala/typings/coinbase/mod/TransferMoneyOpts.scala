@@ -34,32 +34,24 @@ trait TransferMoneyOpts extends StObject {
 }
 object TransferMoneyOpts {
   
-  @scala.inline
-  def apply(amount: String, currency: String, to: String): TransferMoneyOpts = {
+  inline def apply(amount: String, currency: String, to: String): TransferMoneyOpts = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("transfer")
     __obj.asInstanceOf[TransferMoneyOpts]
   }
   
-  @scala.inline
-  implicit class TransferMoneyOptsMutableBuilder[Self <: TransferMoneyOpts] (val x: Self) extends AnyVal {
+  extension [Self <: TransferMoneyOpts](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: transfer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: transfer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

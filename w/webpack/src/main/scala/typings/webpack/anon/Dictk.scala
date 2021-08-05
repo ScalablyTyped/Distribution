@@ -16,19 +16,15 @@ trait Dictk
 }
 object Dictk {
   
-  @scala.inline
-  def apply(): Dictk = {
+  inline def apply(): Dictk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictk]
   }
   
-  @scala.inline
-  implicit class DictkMutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
+  extension [Self <: Dictk](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
   }
 }

@@ -56,60 +56,43 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply(): Group = {
+  inline def apply(): Group = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
+    inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
+    inline def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
     
-    @scala.inline
-    def setPermissionProfileId(value: String): Self = StObject.set(x, "permissionProfileId", value.asInstanceOf[js.Any])
+    inline def setPermissionProfileId(value: String): Self = StObject.set(x, "permissionProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionProfileIdUndefined: Self = StObject.set(x, "permissionProfileId", js.undefined)
+    inline def setPermissionProfileIdUndefined: Self = StObject.set(x, "permissionProfileId", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersCount(value: String): Self = StObject.set(x, "usersCount", value.asInstanceOf[js.Any])
+    inline def setUsersCount(value: String): Self = StObject.set(x, "usersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersCountUndefined: Self = StObject.set(x, "usersCount", js.undefined)
+    inline def setUsersCountUndefined: Self = StObject.set(x, "usersCount", js.undefined)
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: UserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

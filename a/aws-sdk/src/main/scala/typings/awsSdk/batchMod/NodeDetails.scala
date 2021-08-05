@@ -18,25 +18,19 @@ trait NodeDetails extends StObject {
 }
 object NodeDetails {
   
-  @scala.inline
-  def apply(): NodeDetails = {
+  inline def apply(): NodeDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeDetails]
   }
   
-  @scala.inline
-  implicit class NodeDetailsMutableBuilder[Self <: NodeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: NodeDetails](x: Self) {
     
-    @scala.inline
-    def setIsMainNode(value: Boolean): Self = StObject.set(x, "isMainNode", value.asInstanceOf[js.Any])
+    inline def setIsMainNode(value: Boolean): Self = StObject.set(x, "isMainNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMainNodeUndefined: Self = StObject.set(x, "isMainNode", js.undefined)
+    inline def setIsMainNodeUndefined: Self = StObject.set(x, "isMainNode", js.undefined)
     
-    @scala.inline
-    def setNodeIndex(value: Integer): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
+    inline def setNodeIndex(value: Integer): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIndexUndefined: Self = StObject.set(x, "nodeIndex", js.undefined)
+    inline def setNodeIndexUndefined: Self = StObject.set(x, "nodeIndex", js.undefined)
   }
 }

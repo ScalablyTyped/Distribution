@@ -13,16 +13,13 @@ trait InviteAction extends StObject {
 }
 object InviteAction {
   
-  @scala.inline
-  def apply(Principal: PrincipalString): InviteAction = {
+  inline def apply(Principal: PrincipalString): InviteAction = {
     val __obj = js.Dynamic.literal(Principal = Principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviteAction]
   }
   
-  @scala.inline
-  implicit class InviteActionMutableBuilder[Self <: InviteAction] (val x: Self) extends AnyVal {
+  extension [Self <: InviteAction](x: Self) {
     
-    @scala.inline
-    def setPrincipal(value: PrincipalString): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: PrincipalString): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
   }
 }

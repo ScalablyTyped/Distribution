@@ -18,28 +18,21 @@ trait DescribeInstanceRefreshesAnswer extends StObject {
 }
 object DescribeInstanceRefreshesAnswer {
   
-  @scala.inline
-  def apply(): DescribeInstanceRefreshesAnswer = {
+  inline def apply(): DescribeInstanceRefreshesAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstanceRefreshesAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceRefreshesAnswerMutableBuilder[Self <: DescribeInstanceRefreshesAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceRefreshesAnswer](x: Self) {
     
-    @scala.inline
-    def setInstanceRefreshes(value: InstanceRefreshes): Self = StObject.set(x, "InstanceRefreshes", value.asInstanceOf[js.Any])
+    inline def setInstanceRefreshes(value: InstanceRefreshes): Self = StObject.set(x, "InstanceRefreshes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRefreshesUndefined: Self = StObject.set(x, "InstanceRefreshes", js.undefined)
+    inline def setInstanceRefreshesUndefined: Self = StObject.set(x, "InstanceRefreshes", js.undefined)
     
-    @scala.inline
-    def setInstanceRefreshesVarargs(value: InstanceRefresh*): Self = StObject.set(x, "InstanceRefreshes", js.Array(value :_*))
+    inline def setInstanceRefreshesVarargs(value: InstanceRefresh*): Self = StObject.set(x, "InstanceRefreshes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

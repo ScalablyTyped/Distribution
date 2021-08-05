@@ -8,26 +8,21 @@ object wavesurferJsStrings {
   
   @js.native
   sealed trait MediaElement extends StObject
-  @scala.inline
-  def MediaElement: MediaElement = "MediaElement".asInstanceOf[MediaElement]
+  inline def MediaElement: MediaElement = "MediaElement".asInstanceOf[MediaElement]
   
   @js.native
   sealed trait MediaElementWebAudio extends StObject
-  @scala.inline
-  def MediaElementWebAudio: MediaElementWebAudio = "MediaElementWebAudio".asInstanceOf[MediaElementWebAudio]
+  inline def MediaElementWebAudio: MediaElementWebAudio = "MediaElementWebAudio".asInstanceOf[MediaElementWebAudio]
   
   @js.native
   sealed trait WebAudio extends StObject
-  @scala.inline
-  def WebAudio: WebAudio = "WebAudio".asInstanceOf[WebAudio]
+  inline def WebAudio: WebAudio = "WebAudio".asInstanceOf[WebAudio]
   
   @js.native
   sealed trait blob extends StObject
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
   sealed trait dataURL extends StObject
-  @scala.inline
-  def dataURL: dataURL = "dataURL".asInstanceOf[dataURL]
+  inline def dataURL: dataURL = "dataURL".asInstanceOf[dataURL]
 }

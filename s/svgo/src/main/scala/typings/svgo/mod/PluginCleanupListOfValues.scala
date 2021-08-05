@@ -12,16 +12,13 @@ trait PluginCleanupListOfValues
 }
 object PluginCleanupListOfValues {
   
-  @scala.inline
-  def apply(cleanupListOfValues: Boolean | js.Object): PluginCleanupListOfValues = {
+  inline def apply(cleanupListOfValues: Boolean | js.Object): PluginCleanupListOfValues = {
     val __obj = js.Dynamic.literal(cleanupListOfValues = cleanupListOfValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginCleanupListOfValues]
   }
   
-  @scala.inline
-  implicit class PluginCleanupListOfValuesMutableBuilder[Self <: PluginCleanupListOfValues] (val x: Self) extends AnyVal {
+  extension [Self <: PluginCleanupListOfValues](x: Self) {
     
-    @scala.inline
-    def setCleanupListOfValues(value: Boolean | js.Object): Self = StObject.set(x, "cleanupListOfValues", value.asInstanceOf[js.Any])
+    inline def setCleanupListOfValues(value: Boolean | js.Object): Self = StObject.set(x, "cleanupListOfValues", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait UpdateIPSetRequest extends StObject {
 }
 object UpdateIPSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, IPSetId: ResourceId, Updates: IPSetUpdates): UpdateIPSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, IPSetId: ResourceId, Updates: IPSetUpdates): UpdateIPSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], IPSetId = IPSetId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIPSetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateIPSetRequestMutableBuilder[Self <: UpdateIPSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateIPSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
+    inline def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdates(value: IPSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: IPSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesVarargs(value: IPSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: IPSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
   }
 }

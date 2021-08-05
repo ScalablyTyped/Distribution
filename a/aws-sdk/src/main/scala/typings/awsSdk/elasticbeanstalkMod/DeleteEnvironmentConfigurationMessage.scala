@@ -18,19 +18,15 @@ trait DeleteEnvironmentConfigurationMessage extends StObject {
 }
 object DeleteEnvironmentConfigurationMessage {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, EnvironmentName: EnvironmentName): DeleteEnvironmentConfigurationMessage = {
+  inline def apply(ApplicationName: ApplicationName, EnvironmentName: EnvironmentName): DeleteEnvironmentConfigurationMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], EnvironmentName = EnvironmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEnvironmentConfigurationMessage]
   }
   
-  @scala.inline
-  implicit class DeleteEnvironmentConfigurationMessageMutableBuilder[Self <: DeleteEnvironmentConfigurationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEnvironmentConfigurationMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
   }
 }

@@ -20,25 +20,19 @@ trait InstanceFleetInstanceTypeConfigConfiguration extends StObject {
 }
 object InstanceFleetInstanceTypeConfigConfiguration {
   
-  @scala.inline
-  def apply(): InstanceFleetInstanceTypeConfigConfiguration = {
+  inline def apply(): InstanceFleetInstanceTypeConfigConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceFleetInstanceTypeConfigConfiguration]
   }
   
-  @scala.inline
-  implicit class InstanceFleetInstanceTypeConfigConfigurationMutableBuilder[Self <: InstanceFleetInstanceTypeConfigConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetInstanceTypeConfigConfiguration](x: Self) {
     
-    @scala.inline
-    def setClassification(value: Input[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: Input[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
+    inline def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
     
-    @scala.inline
-    def setProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

@@ -85,9 +85,7 @@ object v2MainMod {
     def this(wire: default, identity: Identity) = this()
   }
   
-  @scala.inline
-  def connect(config: ConnectConfig): js.Promise[typings.openfin.finMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.finMod.default]]
+  inline def connect(config: ConnectConfig): js.Promise[typings.openfin.finMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.finMod.default]]
   
-  @scala.inline
-  def launch(config: ConnectConfig): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def launch(config: ConnectConfig): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
 }

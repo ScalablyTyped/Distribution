@@ -12,19 +12,15 @@ trait DisplacedBy extends StObject {
 }
 object DisplacedBy {
   
-  @scala.inline
-  def apply(point: Position, value: Double): DisplacedBy = {
+  inline def apply(point: Position, value: Double): DisplacedBy = {
     val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplacedBy]
   }
   
-  @scala.inline
-  implicit class DisplacedByMutableBuilder[Self <: DisplacedBy] (val x: Self) extends AnyVal {
+  extension [Self <: DisplacedBy](x: Self) {
     
-    @scala.inline
-    def setPoint(value: Position): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Position): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

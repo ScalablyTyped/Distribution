@@ -11,19 +11,15 @@ trait SegmentInfo extends StObject {
 }
 object SegmentInfo {
   
-  @scala.inline
-  def apply(): SegmentInfo = {
+  inline def apply(): SegmentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentInfo]
   }
   
-  @scala.inline
-  implicit class SegmentInfoMutableBuilder[Self <: SegmentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentInfo](x: Self) {
     
-    @scala.inline
-    def setRoadInfo(value: RoadInfo): Self = StObject.set(x, "roadInfo", value.asInstanceOf[js.Any])
+    inline def setRoadInfo(value: RoadInfo): Self = StObject.set(x, "roadInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoadInfoUndefined: Self = StObject.set(x, "roadInfo", js.undefined)
+    inline def setRoadInfoUndefined: Self = StObject.set(x, "roadInfo", js.undefined)
   }
 }

@@ -18,31 +18,23 @@ trait CreateLocalTrackOptions
 }
 object CreateLocalTrackOptions {
   
-  @scala.inline
-  def apply(): CreateLocalTrackOptions = {
+  inline def apply(): CreateLocalTrackOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLocalTrackOptions]
   }
   
-  @scala.inline
-  implicit class CreateLocalTrackOptionsMutableBuilder[Self <: CreateLocalTrackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocalTrackOptions](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setWorkaroundWebKitBug180748(value: Boolean): Self = StObject.set(x, "workaroundWebKitBug180748", value.asInstanceOf[js.Any])
+    inline def setWorkaroundWebKitBug180748(value: Boolean): Self = StObject.set(x, "workaroundWebKitBug180748", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkaroundWebKitBug180748Undefined: Self = StObject.set(x, "workaroundWebKitBug180748", js.undefined)
+    inline def setWorkaroundWebKitBug180748Undefined: Self = StObject.set(x, "workaroundWebKitBug180748", js.undefined)
   }
 }

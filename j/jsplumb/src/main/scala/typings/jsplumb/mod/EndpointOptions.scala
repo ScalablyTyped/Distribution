@@ -76,202 +76,137 @@ trait EndpointOptions extends StObject {
 }
 object EndpointOptions {
   
-  @scala.inline
-  def apply(maxConnections: Double): EndpointOptions = {
+  inline def apply(maxConnections: Double): EndpointOptions = {
     val __obj = js.Dynamic.literal(maxConnections = maxConnections.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointOptions]
   }
   
-  @scala.inline
-  implicit class EndpointOptionsMutableBuilder[Self <: EndpointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: AnchorSpec): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: AnchorSpec): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value :_*))
+    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectionType(value: String): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    inline def setConnectionType(value: String): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
+    inline def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
     
-    @scala.inline
-    def setConnectionsDetachable(value: Boolean): Self = StObject.set(x, "connectionsDetachable", value.asInstanceOf[js.Any])
+    inline def setConnectionsDetachable(value: Boolean): Self = StObject.set(x, "connectionsDetachable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsDetachableUndefined: Self = StObject.set(x, "connectionsDetachable", js.undefined)
+    inline def setConnectionsDetachableUndefined: Self = StObject.set(x, "connectionsDetachable", js.undefined)
     
-    @scala.inline
-    def setConnector(value: ConnectorSpec): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+    inline def setConnector(value: ConnectorSpec): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setConnector-pointer-events`(value: String): Self = StObject.set(x, "connector-pointer-events", value.asInstanceOf[js.Any])
+    inline def `setConnector-pointer-events`(value: String): Self = StObject.set(x, "connector-pointer-events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setConnector-pointer-eventsUndefined`: Self = StObject.set(x, "connector-pointer-events", js.undefined)
+    inline def `setConnector-pointer-eventsUndefined`: Self = StObject.set(x, "connector-pointer-events", js.undefined)
     
-    @scala.inline
-    def setConnectorClass(value: String): Self = StObject.set(x, "connectorClass", value.asInstanceOf[js.Any])
+    inline def setConnectorClass(value: String): Self = StObject.set(x, "connectorClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorClassUndefined: Self = StObject.set(x, "connectorClass", js.undefined)
+    inline def setConnectorClassUndefined: Self = StObject.set(x, "connectorClass", js.undefined)
     
-    @scala.inline
-    def setConnectorHoverClass(value: String): Self = StObject.set(x, "connectorHoverClass", value.asInstanceOf[js.Any])
+    inline def setConnectorHoverClass(value: String): Self = StObject.set(x, "connectorHoverClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorHoverClassUndefined: Self = StObject.set(x, "connectorHoverClass", js.undefined)
+    inline def setConnectorHoverClassUndefined: Self = StObject.set(x, "connectorHoverClass", js.undefined)
     
-    @scala.inline
-    def setConnectorHoverStyle(value: PaintStyle): Self = StObject.set(x, "connectorHoverStyle", value.asInstanceOf[js.Any])
+    inline def setConnectorHoverStyle(value: PaintStyle): Self = StObject.set(x, "connectorHoverStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorHoverStyleUndefined: Self = StObject.set(x, "connectorHoverStyle", js.undefined)
+    inline def setConnectorHoverStyleUndefined: Self = StObject.set(x, "connectorHoverStyle", js.undefined)
     
-    @scala.inline
-    def setConnectorOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "connectorOverlays", value.asInstanceOf[js.Any])
+    inline def setConnectorOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "connectorOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorOverlaysUndefined: Self = StObject.set(x, "connectorOverlays", js.undefined)
+    inline def setConnectorOverlaysUndefined: Self = StObject.set(x, "connectorOverlays", js.undefined)
     
-    @scala.inline
-    def setConnectorOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "connectorOverlays", js.Array(value :_*))
+    inline def setConnectorOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "connectorOverlays", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectorStyle(value: PaintStyle): Self = StObject.set(x, "connectorStyle", value.asInstanceOf[js.Any])
+    inline def setConnectorStyle(value: PaintStyle): Self = StObject.set(x, "connectorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorStyleUndefined: Self = StObject.set(x, "connectorStyle", js.undefined)
+    inline def setConnectorStyleUndefined: Self = StObject.set(x, "connectorStyle", js.undefined)
     
-    @scala.inline
-    def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+    inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setDragOptions(value: DragOptions): Self = StObject.set(x, "dragOptions", value.asInstanceOf[js.Any])
+    inline def setDragOptions(value: DragOptions): Self = StObject.set(x, "dragOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragOptionsUndefined: Self = StObject.set(x, "dragOptions", js.undefined)
+    inline def setDragOptionsUndefined: Self = StObject.set(x, "dragOptions", js.undefined)
     
-    @scala.inline
-    def setDragProxy(value: String | js.Array[String]): Self = StObject.set(x, "dragProxy", value.asInstanceOf[js.Any])
+    inline def setDragProxy(value: String | js.Array[String]): Self = StObject.set(x, "dragProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragProxyUndefined: Self = StObject.set(x, "dragProxy", js.undefined)
+    inline def setDragProxyUndefined: Self = StObject.set(x, "dragProxy", js.undefined)
     
-    @scala.inline
-    def setDragProxyVarargs(value: String*): Self = StObject.set(x, "dragProxy", js.Array(value :_*))
+    inline def setDragProxyVarargs(value: String*): Self = StObject.set(x, "dragProxy", js.Array(value :_*))
     
-    @scala.inline
-    def setDropOptions(value: DropOptions): Self = StObject.set(x, "dropOptions", value.asInstanceOf[js.Any])
+    inline def setDropOptions(value: DropOptions): Self = StObject.set(x, "dropOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropOptionsUndefined: Self = StObject.set(x, "dropOptions", js.undefined)
+    inline def setDropOptionsUndefined: Self = StObject.set(x, "dropOptions", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: EndpointSpec): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: EndpointSpec): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
+    inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
+    inline def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
     
-    @scala.inline
-    def setHoverPaintStyle(value: PaintStyle): Self = StObject.set(x, "hoverPaintStyle", value.asInstanceOf[js.Any])
+    inline def setHoverPaintStyle(value: PaintStyle): Self = StObject.set(x, "hoverPaintStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverPaintStyleUndefined: Self = StObject.set(x, "hoverPaintStyle", js.undefined)
+    inline def setHoverPaintStyleUndefined: Self = StObject.set(x, "hoverPaintStyle", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsSource(value: Boolean): Self = StObject.set(x, "isSource", value.asInstanceOf[js.Any])
+    inline def setIsSource(value: Boolean): Self = StObject.set(x, "isSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSourceUndefined: Self = StObject.set(x, "isSource", js.undefined)
+    inline def setIsSourceUndefined: Self = StObject.set(x, "isSource", js.undefined)
     
-    @scala.inline
-    def setIsTarget(value: Boolean): Self = StObject.set(x, "isTarget", value.asInstanceOf[js.Any])
+    inline def setIsTarget(value: Boolean): Self = StObject.set(x, "isTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTargetUndefined: Self = StObject.set(x, "isTarget", js.undefined)
+    inline def setIsTargetUndefined: Self = StObject.set(x, "isTarget", js.undefined)
     
-    @scala.inline
-    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+    inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+    inline def setOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
+    inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
-    @scala.inline
-    def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+    inline def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
-    @scala.inline
-    def setPaintStyle(value: PaintStyle): Self = StObject.set(x, "paintStyle", value.asInstanceOf[js.Any])
+    inline def setPaintStyle(value: PaintStyle): Self = StObject.set(x, "paintStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintStyleUndefined: Self = StObject.set(x, "paintStyle", js.undefined)
+    inline def setPaintStyleUndefined: Self = StObject.set(x, "paintStyle", js.undefined)
     
-    @scala.inline
-    def setParameters(value: Record[String, js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Record[String, js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setReattach(value: Boolean): Self = StObject.set(x, "reattach", value.asInstanceOf[js.Any])
+    inline def setReattach(value: Boolean): Self = StObject.set(x, "reattach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReattachConnections(value: Boolean): Self = StObject.set(x, "reattachConnections", value.asInstanceOf[js.Any])
+    inline def setReattachConnections(value: Boolean): Self = StObject.set(x, "reattachConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReattachConnectionsUndefined: Self = StObject.set(x, "reattachConnections", js.undefined)
+    inline def setReattachConnectionsUndefined: Self = StObject.set(x, "reattachConnections", js.undefined)
     
-    @scala.inline
-    def setReattachUndefined: Self = StObject.set(x, "reattach", js.undefined)
+    inline def setReattachUndefined: Self = StObject.set(x, "reattach", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

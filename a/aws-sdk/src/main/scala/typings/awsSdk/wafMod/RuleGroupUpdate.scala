@@ -18,19 +18,15 @@ trait RuleGroupUpdate extends StObject {
 }
 object RuleGroupUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, ActivatedRule: ActivatedRule): RuleGroupUpdate = {
+  inline def apply(Action: ChangeAction, ActivatedRule: ActivatedRule): RuleGroupUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], ActivatedRule = ActivatedRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupUpdate]
   }
   
-  @scala.inline
-  implicit class RuleGroupUpdateMutableBuilder[Self <: RuleGroupUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivatedRule(value: ActivatedRule): Self = StObject.set(x, "ActivatedRule", value.asInstanceOf[js.Any])
+    inline def setActivatedRule(value: ActivatedRule): Self = StObject.set(x, "ActivatedRule", value.asInstanceOf[js.Any])
   }
 }

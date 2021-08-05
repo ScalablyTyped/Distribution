@@ -26,25 +26,19 @@ trait SchemaDockerExecutor extends StObject {
 }
 object SchemaDockerExecutor {
   
-  @scala.inline
-  def apply(): SchemaDockerExecutor = {
+  inline def apply(): SchemaDockerExecutor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDockerExecutor]
   }
   
-  @scala.inline
-  implicit class SchemaDockerExecutorMutableBuilder[Self <: SchemaDockerExecutor] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDockerExecutor](x: Self) {
     
-    @scala.inline
-    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
+    inline def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
     
-    @scala.inline
-    def setImageName(value: String): Self = StObject.set(x, "imageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: String): Self = StObject.set(x, "imageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageNameUndefined: Self = StObject.set(x, "imageName", js.undefined)
+    inline def setImageNameUndefined: Self = StObject.set(x, "imageName", js.undefined)
   }
 }

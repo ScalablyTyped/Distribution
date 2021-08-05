@@ -111,8 +111,7 @@ object disputes {
   }
   object IDispute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       balance_transactions: js.Array[IBalanceTransaction],
       charge: String | ICharge,
@@ -131,55 +130,39 @@ object disputes {
       __obj.asInstanceOf[IDispute]
     }
     
-    @scala.inline
-    implicit class IDisputeMutableBuilder[Self <: IDispute] (val x: Self) extends AnyVal {
+    extension [Self <: IDispute](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transactions(value: js.Array[IBalanceTransaction]): Self = StObject.set(x, "balance_transactions", value.asInstanceOf[js.Any])
+      inline def setBalance_transactions(value: js.Array[IBalanceTransaction]): Self = StObject.set(x, "balance_transactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transactionsVarargs(value: IBalanceTransaction*): Self = StObject.set(x, "balance_transactions", js.Array(value :_*))
+      inline def setBalance_transactionsVarargs(value: IBalanceTransaction*): Self = StObject.set(x, "balance_transactions", js.Array(value :_*))
       
-      @scala.inline
-      def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+      inline def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvidence(value: IDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
+      inline def setEvidence(value: IDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvidence_details(value: Dueby): Self = StObject.set(x, "evidence_details", value.asInstanceOf[js.Any])
+      inline def setEvidence_details(value: Dueby): Self = StObject.set(x, "evidence_details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvidence_detailsUndefined: Self = StObject.set(x, "evidence_details", js.undefined)
+      inline def setEvidence_detailsUndefined: Self = StObject.set(x, "evidence_details", js.undefined)
       
-      @scala.inline
-      def setIs_charge_refundable(value: Boolean): Self = StObject.set(x, "is_charge_refundable", value.asInstanceOf[js.Any])
+      inline def setIs_charge_refundable(value: Boolean): Self = StObject.set(x, "is_charge_refundable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: dispute): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: dispute): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(
+      inline def setReason(
         value: duplicate | fraudulent | subscription_canceled | product_unacceptable | product_not_received | unrecognized | credit_not_processed | incorrect_account_details | insufficient_funds | bank_cannot_process | debit_not_authorized | general
       ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(
+      inline def setStatus(
         value: warning_needs_response | warning_under_review | warning_closed | needs_response | response_disabled | under_review | charge_refunded | won | lost
       ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -335,176 +318,120 @@ object disputes {
   }
   object IDisputeEvidence {
     
-    @scala.inline
-    def apply(): IDisputeEvidence = {
+    inline def apply(): IDisputeEvidence = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDisputeEvidence]
     }
     
-    @scala.inline
-    implicit class IDisputeEvidenceMutableBuilder[Self <: IDisputeEvidence] (val x: Self) extends AnyVal {
+    extension [Self <: IDisputeEvidence](x: Self) {
       
-      @scala.inline
-      def setAccess_activity_log(value: String): Self = StObject.set(x, "access_activity_log", value.asInstanceOf[js.Any])
+      inline def setAccess_activity_log(value: String): Self = StObject.set(x, "access_activity_log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccess_activity_logUndefined: Self = StObject.set(x, "access_activity_log", js.undefined)
+      inline def setAccess_activity_logUndefined: Self = StObject.set(x, "access_activity_log", js.undefined)
       
-      @scala.inline
-      def setBilling_address(value: String): Self = StObject.set(x, "billing_address", value.asInstanceOf[js.Any])
+      inline def setBilling_address(value: String): Self = StObject.set(x, "billing_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilling_addressUndefined: Self = StObject.set(x, "billing_address", js.undefined)
+      inline def setBilling_addressUndefined: Self = StObject.set(x, "billing_address", js.undefined)
       
-      @scala.inline
-      def setCancellation_policy(value: String): Self = StObject.set(x, "cancellation_policy", value.asInstanceOf[js.Any])
+      inline def setCancellation_policy(value: String): Self = StObject.set(x, "cancellation_policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellation_policyUndefined: Self = StObject.set(x, "cancellation_policy", js.undefined)
+      inline def setCancellation_policyUndefined: Self = StObject.set(x, "cancellation_policy", js.undefined)
       
-      @scala.inline
-      def setCancellation_policy_disclosure(value: String): Self = StObject.set(x, "cancellation_policy_disclosure", value.asInstanceOf[js.Any])
+      inline def setCancellation_policy_disclosure(value: String): Self = StObject.set(x, "cancellation_policy_disclosure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellation_policy_disclosureUndefined: Self = StObject.set(x, "cancellation_policy_disclosure", js.undefined)
+      inline def setCancellation_policy_disclosureUndefined: Self = StObject.set(x, "cancellation_policy_disclosure", js.undefined)
       
-      @scala.inline
-      def setCancellation_rebuttal(value: String): Self = StObject.set(x, "cancellation_rebuttal", value.asInstanceOf[js.Any])
+      inline def setCancellation_rebuttal(value: String): Self = StObject.set(x, "cancellation_rebuttal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellation_rebuttalUndefined: Self = StObject.set(x, "cancellation_rebuttal", js.undefined)
+      inline def setCancellation_rebuttalUndefined: Self = StObject.set(x, "cancellation_rebuttal", js.undefined)
       
-      @scala.inline
-      def setCustomer_communication(value: String): Self = StObject.set(x, "customer_communication", value.asInstanceOf[js.Any])
+      inline def setCustomer_communication(value: String): Self = StObject.set(x, "customer_communication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer_communicationUndefined: Self = StObject.set(x, "customer_communication", js.undefined)
+      inline def setCustomer_communicationUndefined: Self = StObject.set(x, "customer_communication", js.undefined)
       
-      @scala.inline
-      def setCustomer_email_address(value: String): Self = StObject.set(x, "customer_email_address", value.asInstanceOf[js.Any])
+      inline def setCustomer_email_address(value: String): Self = StObject.set(x, "customer_email_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer_email_addressUndefined: Self = StObject.set(x, "customer_email_address", js.undefined)
+      inline def setCustomer_email_addressUndefined: Self = StObject.set(x, "customer_email_address", js.undefined)
       
-      @scala.inline
-      def setCustomer_name(value: String): Self = StObject.set(x, "customer_name", value.asInstanceOf[js.Any])
+      inline def setCustomer_name(value: String): Self = StObject.set(x, "customer_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer_nameUndefined: Self = StObject.set(x, "customer_name", js.undefined)
+      inline def setCustomer_nameUndefined: Self = StObject.set(x, "customer_name", js.undefined)
       
-      @scala.inline
-      def setCustomer_purchase_ip(value: String): Self = StObject.set(x, "customer_purchase_ip", value.asInstanceOf[js.Any])
+      inline def setCustomer_purchase_ip(value: String): Self = StObject.set(x, "customer_purchase_ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer_purchase_ipUndefined: Self = StObject.set(x, "customer_purchase_ip", js.undefined)
+      inline def setCustomer_purchase_ipUndefined: Self = StObject.set(x, "customer_purchase_ip", js.undefined)
       
-      @scala.inline
-      def setCustomer_signature(value: String): Self = StObject.set(x, "customer_signature", value.asInstanceOf[js.Any])
+      inline def setCustomer_signature(value: String): Self = StObject.set(x, "customer_signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer_signatureUndefined: Self = StObject.set(x, "customer_signature", js.undefined)
+      inline def setCustomer_signatureUndefined: Self = StObject.set(x, "customer_signature", js.undefined)
       
-      @scala.inline
-      def setDuplicate_charge_documentation(value: String): Self = StObject.set(x, "duplicate_charge_documentation", value.asInstanceOf[js.Any])
+      inline def setDuplicate_charge_documentation(value: String): Self = StObject.set(x, "duplicate_charge_documentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicate_charge_documentationUndefined: Self = StObject.set(x, "duplicate_charge_documentation", js.undefined)
+      inline def setDuplicate_charge_documentationUndefined: Self = StObject.set(x, "duplicate_charge_documentation", js.undefined)
       
-      @scala.inline
-      def setDuplicate_charge_explanation(value: String): Self = StObject.set(x, "duplicate_charge_explanation", value.asInstanceOf[js.Any])
+      inline def setDuplicate_charge_explanation(value: String): Self = StObject.set(x, "duplicate_charge_explanation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicate_charge_explanationUndefined: Self = StObject.set(x, "duplicate_charge_explanation", js.undefined)
+      inline def setDuplicate_charge_explanationUndefined: Self = StObject.set(x, "duplicate_charge_explanation", js.undefined)
       
-      @scala.inline
-      def setDuplicate_charge_id(value: String): Self = StObject.set(x, "duplicate_charge_id", value.asInstanceOf[js.Any])
+      inline def setDuplicate_charge_id(value: String): Self = StObject.set(x, "duplicate_charge_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicate_charge_idUndefined: Self = StObject.set(x, "duplicate_charge_id", js.undefined)
+      inline def setDuplicate_charge_idUndefined: Self = StObject.set(x, "duplicate_charge_id", js.undefined)
       
-      @scala.inline
-      def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
+      inline def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
+      inline def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
       
-      @scala.inline
-      def setReceipt(value: String): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
+      inline def setReceipt(value: String): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptUndefined: Self = StObject.set(x, "receipt", js.undefined)
+      inline def setReceiptUndefined: Self = StObject.set(x, "receipt", js.undefined)
       
-      @scala.inline
-      def setRefund_policy(value: String): Self = StObject.set(x, "refund_policy", value.asInstanceOf[js.Any])
+      inline def setRefund_policy(value: String): Self = StObject.set(x, "refund_policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefund_policyUndefined: Self = StObject.set(x, "refund_policy", js.undefined)
+      inline def setRefund_policyUndefined: Self = StObject.set(x, "refund_policy", js.undefined)
       
-      @scala.inline
-      def setRefund_policy_disclosure(value: String): Self = StObject.set(x, "refund_policy_disclosure", value.asInstanceOf[js.Any])
+      inline def setRefund_policy_disclosure(value: String): Self = StObject.set(x, "refund_policy_disclosure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefund_policy_disclosureUndefined: Self = StObject.set(x, "refund_policy_disclosure", js.undefined)
+      inline def setRefund_policy_disclosureUndefined: Self = StObject.set(x, "refund_policy_disclosure", js.undefined)
       
-      @scala.inline
-      def setRefund_refusal_explanation(value: String): Self = StObject.set(x, "refund_refusal_explanation", value.asInstanceOf[js.Any])
+      inline def setRefund_refusal_explanation(value: String): Self = StObject.set(x, "refund_refusal_explanation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefund_refusal_explanationUndefined: Self = StObject.set(x, "refund_refusal_explanation", js.undefined)
+      inline def setRefund_refusal_explanationUndefined: Self = StObject.set(x, "refund_refusal_explanation", js.undefined)
       
-      @scala.inline
-      def setService_date(value: String): Self = StObject.set(x, "service_date", value.asInstanceOf[js.Any])
+      inline def setService_date(value: String): Self = StObject.set(x, "service_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService_dateUndefined: Self = StObject.set(x, "service_date", js.undefined)
+      inline def setService_dateUndefined: Self = StObject.set(x, "service_date", js.undefined)
       
-      @scala.inline
-      def setService_documentation(value: String): Self = StObject.set(x, "service_documentation", value.asInstanceOf[js.Any])
+      inline def setService_documentation(value: String): Self = StObject.set(x, "service_documentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService_documentationUndefined: Self = StObject.set(x, "service_documentation", js.undefined)
+      inline def setService_documentationUndefined: Self = StObject.set(x, "service_documentation", js.undefined)
       
-      @scala.inline
-      def setShipping_address(value: String): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
+      inline def setShipping_address(value: String): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping_addressUndefined: Self = StObject.set(x, "shipping_address", js.undefined)
+      inline def setShipping_addressUndefined: Self = StObject.set(x, "shipping_address", js.undefined)
       
-      @scala.inline
-      def setShipping_carrier(value: String): Self = StObject.set(x, "shipping_carrier", value.asInstanceOf[js.Any])
+      inline def setShipping_carrier(value: String): Self = StObject.set(x, "shipping_carrier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping_carrierUndefined: Self = StObject.set(x, "shipping_carrier", js.undefined)
+      inline def setShipping_carrierUndefined: Self = StObject.set(x, "shipping_carrier", js.undefined)
       
-      @scala.inline
-      def setShipping_date(value: String): Self = StObject.set(x, "shipping_date", value.asInstanceOf[js.Any])
+      inline def setShipping_date(value: String): Self = StObject.set(x, "shipping_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping_dateUndefined: Self = StObject.set(x, "shipping_date", js.undefined)
+      inline def setShipping_dateUndefined: Self = StObject.set(x, "shipping_date", js.undefined)
       
-      @scala.inline
-      def setShipping_documentation(value: String): Self = StObject.set(x, "shipping_documentation", value.asInstanceOf[js.Any])
+      inline def setShipping_documentation(value: String): Self = StObject.set(x, "shipping_documentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping_documentationUndefined: Self = StObject.set(x, "shipping_documentation", js.undefined)
+      inline def setShipping_documentationUndefined: Self = StObject.set(x, "shipping_documentation", js.undefined)
       
-      @scala.inline
-      def setShipping_tracking_number(value: String): Self = StObject.set(x, "shipping_tracking_number", value.asInstanceOf[js.Any])
+      inline def setShipping_tracking_number(value: String): Self = StObject.set(x, "shipping_tracking_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping_tracking_numberUndefined: Self = StObject.set(x, "shipping_tracking_number", js.undefined)
+      inline def setShipping_tracking_numberUndefined: Self = StObject.set(x, "shipping_tracking_number", js.undefined)
       
-      @scala.inline
-      def setUncategorized_file(value: String): Self = StObject.set(x, "uncategorized_file", value.asInstanceOf[js.Any])
+      inline def setUncategorized_file(value: String): Self = StObject.set(x, "uncategorized_file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncategorized_fileUndefined: Self = StObject.set(x, "uncategorized_file", js.undefined)
+      inline def setUncategorized_fileUndefined: Self = StObject.set(x, "uncategorized_file", js.undefined)
       
-      @scala.inline
-      def setUncategorized_text(value: String): Self = StObject.set(x, "uncategorized_text", value.asInstanceOf[js.Any])
+      inline def setUncategorized_text(value: String): Self = StObject.set(x, "uncategorized_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncategorized_textUndefined: Self = StObject.set(x, "uncategorized_text", js.undefined)
+      inline def setUncategorized_textUndefined: Self = StObject.set(x, "uncategorized_text", js.undefined)
     }
   }
   
@@ -519,20 +446,16 @@ object disputes {
   }
   object IDisputeUpdateOptions {
     
-    @scala.inline
-    def apply(): IDisputeUpdateOptions = {
+    inline def apply(): IDisputeUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDisputeUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IDisputeUpdateOptionsMutableBuilder[Self <: IDisputeUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDisputeUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setEvidence(value: IDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
+      inline def setEvidence(value: IDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
+      inline def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
     }
   }
 }

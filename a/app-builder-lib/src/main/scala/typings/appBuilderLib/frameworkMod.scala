@@ -16,8 +16,7 @@ object frameworkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isElectronBased(framework: Framework): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElectronBased")(framework.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isElectronBased(framework: Framework): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElectronBased")(framework.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait BeforeCopyExtraFilesOptions extends StObject {
     
@@ -31,29 +30,22 @@ object frameworkMod {
   }
   object BeforeCopyExtraFilesOptions {
     
-    @scala.inline
-    def apply(appOutDir: String, packager: PlatformPackager[js.Any], platformName: String): BeforeCopyExtraFilesOptions = {
+    inline def apply(appOutDir: String, packager: PlatformPackager[js.Any], platformName: String): BeforeCopyExtraFilesOptions = {
       val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any], asarIntegrity = null)
       __obj.asInstanceOf[BeforeCopyExtraFilesOptions]
     }
     
-    @scala.inline
-    implicit class BeforeCopyExtraFilesOptionsMutableBuilder[Self <: BeforeCopyExtraFilesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeCopyExtraFilesOptions](x: Self) {
       
-      @scala.inline
-      def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
+      inline def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsarIntegrity(value: AsarIntegrity): Self = StObject.set(x, "asarIntegrity", value.asInstanceOf[js.Any])
+      inline def setAsarIntegrity(value: AsarIntegrity): Self = StObject.set(x, "asarIntegrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsarIntegrityNull: Self = StObject.set(x, "asarIntegrity", null)
+      inline def setAsarIntegrityNull: Self = StObject.set(x, "asarIntegrity", null)
       
-      @scala.inline
-      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
+      inline def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,8 +81,7 @@ object frameworkMod {
   }
   object Framework {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultAppIdPrefix: String,
       distMacOsAppName: String,
       isCopyElevateHelper: Boolean,
@@ -104,71 +95,49 @@ object frameworkMod {
       __obj.asInstanceOf[Framework]
     }
     
-    @scala.inline
-    implicit class FrameworkMutableBuilder[Self <: Framework] (val x: Self) extends AnyVal {
+    extension [Self <: Framework](x: Self) {
       
-      @scala.inline
-      def setAfterPack(value: /* context */ AfterPackContext => js.Promise[js.Any]): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
+      inline def setAfterPack(value: /* context */ AfterPackContext => js.Promise[js.Any]): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterPackUndefined: Self = StObject.set(x, "afterPack", js.undefined)
+      inline def setAfterPackUndefined: Self = StObject.set(x, "afterPack", js.undefined)
       
-      @scala.inline
-      def setBeforeCopyExtraFiles(value: /* options */ BeforeCopyExtraFilesOptions => js.Promise[js.Any]): Self = StObject.set(x, "beforeCopyExtraFiles", js.Any.fromFunction1(value))
+      inline def setBeforeCopyExtraFiles(value: /* options */ BeforeCopyExtraFilesOptions => js.Promise[js.Any]): Self = StObject.set(x, "beforeCopyExtraFiles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeCopyExtraFilesUndefined: Self = StObject.set(x, "beforeCopyExtraFiles", js.undefined)
+      inline def setBeforeCopyExtraFilesUndefined: Self = StObject.set(x, "beforeCopyExtraFiles", js.undefined)
       
-      @scala.inline
-      def setCreateTransformer(value: () => FileTransformer | Null): Self = StObject.set(x, "createTransformer", js.Any.fromFunction0(value))
+      inline def setCreateTransformer(value: () => FileTransformer | Null): Self = StObject.set(x, "createTransformer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateTransformerUndefined: Self = StObject.set(x, "createTransformer", js.undefined)
+      inline def setCreateTransformerUndefined: Self = StObject.set(x, "createTransformer", js.undefined)
       
-      @scala.inline
-      def setDefaultAppIdPrefix(value: String): Self = StObject.set(x, "defaultAppIdPrefix", value.asInstanceOf[js.Any])
+      inline def setDefaultAppIdPrefix(value: String): Self = StObject.set(x, "defaultAppIdPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistMacOsAppName(value: String): Self = StObject.set(x, "distMacOsAppName", value.asInstanceOf[js.Any])
+      inline def setDistMacOsAppName(value: String): Self = StObject.set(x, "distMacOsAppName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDefaultIcon(value: /* platform */ Platform => String | Null): Self = StObject.set(x, "getDefaultIcon", js.Any.fromFunction1(value))
+      inline def setGetDefaultIcon(value: /* platform */ Platform => String | Null): Self = StObject.set(x, "getDefaultIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDefaultIconUndefined: Self = StObject.set(x, "getDefaultIcon", js.undefined)
+      inline def setGetDefaultIconUndefined: Self = StObject.set(x, "getDefaultIcon", js.undefined)
       
-      @scala.inline
-      def setGetExcludedDependencies(value: /* platform */ Platform => js.Array[String] | Null): Self = StObject.set(x, "getExcludedDependencies", js.Any.fromFunction1(value))
+      inline def setGetExcludedDependencies(value: /* platform */ Platform => js.Array[String] | Null): Self = StObject.set(x, "getExcludedDependencies", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetExcludedDependenciesUndefined: Self = StObject.set(x, "getExcludedDependencies", js.undefined)
+      inline def setGetExcludedDependenciesUndefined: Self = StObject.set(x, "getExcludedDependencies", js.undefined)
       
-      @scala.inline
-      def setGetMainFile(value: /* platform */ Platform => String | Null): Self = StObject.set(x, "getMainFile", js.Any.fromFunction1(value))
+      inline def setGetMainFile(value: /* platform */ Platform => String | Null): Self = StObject.set(x, "getMainFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMainFileUndefined: Self = StObject.set(x, "getMainFile", js.undefined)
+      inline def setGetMainFileUndefined: Self = StObject.set(x, "getMainFile", js.undefined)
       
-      @scala.inline
-      def setIsCopyElevateHelper(value: Boolean): Self = StObject.set(x, "isCopyElevateHelper", value.asInstanceOf[js.Any])
+      inline def setIsCopyElevateHelper(value: Boolean): Self = StObject.set(x, "isCopyElevateHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNpmRebuildRequired(value: Boolean): Self = StObject.set(x, "isNpmRebuildRequired", value.asInstanceOf[js.Any])
+      inline def setIsNpmRebuildRequired(value: Boolean): Self = StObject.set(x, "isNpmRebuildRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacOsDefaultTargets(value: js.Array[String]): Self = StObject.set(x, "macOsDefaultTargets", value.asInstanceOf[js.Any])
+      inline def setMacOsDefaultTargets(value: js.Array[String]): Self = StObject.set(x, "macOsDefaultTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacOsDefaultTargetsVarargs(value: String*): Self = StObject.set(x, "macOsDefaultTargets", js.Array(value :_*))
+      inline def setMacOsDefaultTargetsVarargs(value: String*): Self = StObject.set(x, "macOsDefaultTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrepareApplicationStageDirectory(value: PrepareApplicationStageDirectoryOptions => js.Promise[js.Any]): Self = StObject.set(x, "prepareApplicationStageDirectory", js.Any.fromFunction1(value))
+      inline def setPrepareApplicationStageDirectory(value: PrepareApplicationStageDirectoryOptions => js.Promise[js.Any]): Self = StObject.set(x, "prepareApplicationStageDirectory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,8 +158,7 @@ object frameworkMod {
   }
   object PrepareApplicationStageDirectoryOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appOutDir: String,
       arch: String,
       packager: PlatformPackager[js.Any],
@@ -201,23 +169,17 @@ object frameworkMod {
       __obj.asInstanceOf[PrepareApplicationStageDirectoryOptions]
     }
     
-    @scala.inline
-    implicit class PrepareApplicationStageDirectoryOptionsMutableBuilder[Self <: PrepareApplicationStageDirectoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrepareApplicationStageDirectoryOptions](x: Self) {
       
-      @scala.inline
-      def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
+      inline def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformName(value: ElectronPlatformName): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
+      inline def setPlatformName(value: ElectronPlatformName): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

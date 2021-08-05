@@ -29,8 +29,7 @@ object ui {
   }
   object LicenseDialog {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       create: (XWindow, String, String) => Unit,
       execute: () => Double,
@@ -42,11 +41,9 @@ object ui {
       __obj.asInstanceOf[LicenseDialog]
     }
     
-    @scala.inline
-    implicit class LicenseDialogMutableBuilder[Self <: LicenseDialog] (val x: Self) extends AnyVal {
+    extension [Self <: LicenseDialog](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (XWindow, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+      inline def setCreate(value: (XWindow, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     }
   }
   
@@ -78,8 +75,7 @@ object ui {
   }
   object PackageManagerDialog {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       create: (XWindow, String) => Unit,
       createAndInstall: String => Unit,
@@ -93,17 +89,13 @@ object ui {
       __obj.asInstanceOf[PackageManagerDialog]
     }
     
-    @scala.inline
-    implicit class PackageManagerDialogMutableBuilder[Self <: PackageManagerDialog] (val x: Self) extends AnyVal {
+    extension [Self <: PackageManagerDialog](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (XWindow, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (XWindow, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateAndInstall(value: String => Unit): Self = StObject.set(x, "createAndInstall", js.Any.fromFunction1(value))
+      inline def setCreateAndInstall(value: String => Unit): Self = StObject.set(x, "createAndInstall", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+      inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     }
   }
   
@@ -120,8 +112,7 @@ object ui {
   }
   object UpdateRequiredDialog {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       create: () => Unit,
       execute: () => Double,
@@ -133,11 +124,9 @@ object ui {
       __obj.asInstanceOf[UpdateRequiredDialog]
     }
     
-    @scala.inline
-    implicit class UpdateRequiredDialogMutableBuilder[Self <: UpdateRequiredDialog] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateRequiredDialog](x: Self) {
       
-      @scala.inline
-      def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+      inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     }
   }
 }

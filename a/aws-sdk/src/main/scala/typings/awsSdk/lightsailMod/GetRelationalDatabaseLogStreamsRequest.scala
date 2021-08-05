@@ -13,16 +13,13 @@ trait GetRelationalDatabaseLogStreamsRequest extends StObject {
 }
 object GetRelationalDatabaseLogStreamsRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseLogStreamsRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseLogStreamsRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseLogStreamsRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseLogStreamsRequestMutableBuilder[Self <: GetRelationalDatabaseLogStreamsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseLogStreamsRequest](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }
 }

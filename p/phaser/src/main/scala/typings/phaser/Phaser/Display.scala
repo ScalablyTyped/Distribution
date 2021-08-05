@@ -54,26 +54,20 @@ object Display {
   }
   object BaseShader {
     
-    @scala.inline
-    def apply(fragmentSrc: String, key: String, uniforms: js.Any, vertexSrc: String): BaseShader = {
+    inline def apply(fragmentSrc: String, key: String, uniforms: js.Any, vertexSrc: String): BaseShader = {
       val __obj = js.Dynamic.literal(fragmentSrc = fragmentSrc.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any], vertexSrc = vertexSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseShader]
     }
     
-    @scala.inline
-    implicit class BaseShaderMutableBuilder[Self <: BaseShader] (val x: Self) extends AnyVal {
+    extension [Self <: BaseShader](x: Self) {
       
-      @scala.inline
-      def setFragmentSrc(value: String): Self = StObject.set(x, "fragmentSrc", value.asInstanceOf[js.Any])
+      inline def setFragmentSrc(value: String): Self = StObject.set(x, "fragmentSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexSrc(value: String): Self = StObject.set(x, "vertexSrc", value.asInstanceOf[js.Any])
+      inline def setVertexSrc(value: String): Self = StObject.set(x, "vertexSrc", value.asInstanceOf[js.Any])
     }
   }
   

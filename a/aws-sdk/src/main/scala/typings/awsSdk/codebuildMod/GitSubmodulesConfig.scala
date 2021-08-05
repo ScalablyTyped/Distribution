@@ -13,16 +13,13 @@ trait GitSubmodulesConfig extends StObject {
 }
 object GitSubmodulesConfig {
   
-  @scala.inline
-  def apply(fetchSubmodules: WrapperBoolean): GitSubmodulesConfig = {
+  inline def apply(fetchSubmodules: WrapperBoolean): GitSubmodulesConfig = {
     val __obj = js.Dynamic.literal(fetchSubmodules = fetchSubmodules.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitSubmodulesConfig]
   }
   
-  @scala.inline
-  implicit class GitSubmodulesConfigMutableBuilder[Self <: GitSubmodulesConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GitSubmodulesConfig](x: Self) {
     
-    @scala.inline
-    def setFetchSubmodules(value: WrapperBoolean): Self = StObject.set(x, "fetchSubmodules", value.asInstanceOf[js.Any])
+    inline def setFetchSubmodules(value: WrapperBoolean): Self = StObject.set(x, "fetchSubmodules", value.asInstanceOf[js.Any])
   }
 }

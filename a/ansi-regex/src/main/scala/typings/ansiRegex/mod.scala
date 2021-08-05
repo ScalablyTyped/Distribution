@@ -24,10 +24,8 @@ object mod {
   //=> ['\\u001B]8;;https://github.com\\u0007', '\\u001B]8;;\\u0007']
   ```
   */
-  @scala.inline
-  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
-  @scala.inline
-  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  inline def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   @JSImport("ansi-regex", JSImport.Namespace)
   @js.native
@@ -43,17 +41,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(onlyFirst: Boolean): Options = {
+    inline def apply(onlyFirst: Boolean): Options = {
       val __obj = js.Dynamic.literal(onlyFirst = onlyFirst.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnlyFirst(value: Boolean): Self = StObject.set(x, "onlyFirst", value.asInstanceOf[js.Any])
+      inline def setOnlyFirst(value: Boolean): Self = StObject.set(x, "onlyFirst", value.asInstanceOf[js.Any])
     }
   }
 }

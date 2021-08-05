@@ -22,6 +22,6 @@ trait Versions extends StObject {
   def Save(): Unit = js.native
   def Save(Comment: js.Any): Unit = js.native
   
-  @JSName("Word.Versions_typekey")
+  /* private */ @JSName("Word.Versions_typekey")
   var WordDotVersions_typekey: Versions = js.native
 }

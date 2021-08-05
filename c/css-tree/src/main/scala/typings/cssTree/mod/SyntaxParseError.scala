@@ -17,22 +17,17 @@ trait SyntaxParseError
 }
 object SyntaxParseError {
   
-  @scala.inline
-  def apply(input: String, message: String, name: String, offset: Double, rawMessage: String): SyntaxParseError = {
+  inline def apply(input: String, message: String, name: String, offset: Double, rawMessage: String): SyntaxParseError = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], rawMessage = rawMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxParseError]
   }
   
-  @scala.inline
-  implicit class SyntaxParseErrorMutableBuilder[Self <: SyntaxParseError] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxParseError](x: Self) {
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawMessage(value: String): Self = StObject.set(x, "rawMessage", value.asInstanceOf[js.Any])
+    inline def setRawMessage(value: String): Self = StObject.set(x, "rawMessage", value.asInstanceOf[js.Any])
   }
 }

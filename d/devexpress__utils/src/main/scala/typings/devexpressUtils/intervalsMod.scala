@@ -14,9 +14,9 @@ object intervalsMod {
   class SparseIntervals[T /* <: ConstInterval */] () extends StObject {
     def this(list: js.Array[T]) = this()
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    var _numIntervals: js.Any = js.native
+    /* private */ var _numIntervals: js.Any = js.native
     
     val count: Double = js.native
     
@@ -26,7 +26,7 @@ object intervalsMod {
     
     def getObjectsIterator[ObjT /* <: js.Any */](objects: js.Array[ObjT]): SparseObjectsIterator[T, ObjT] = js.native
     
-    var list: js.Any = js.native
+    /* private */ var list: js.Any = js.native
     
     val numIntervals: Double = js.native
   }

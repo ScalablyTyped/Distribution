@@ -33,43 +33,31 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(): Action = {
+  inline def apply(): Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setActionType(value: String): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: String): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
     
-    @scala.inline
-    def setAwsApiCallAction(value: AwsApiCallAction): Self = StObject.set(x, "AwsApiCallAction", value.asInstanceOf[js.Any])
+    inline def setAwsApiCallAction(value: AwsApiCallAction): Self = StObject.set(x, "AwsApiCallAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsApiCallActionUndefined: Self = StObject.set(x, "AwsApiCallAction", js.undefined)
+    inline def setAwsApiCallActionUndefined: Self = StObject.set(x, "AwsApiCallAction", js.undefined)
     
-    @scala.inline
-    def setDnsRequestAction(value: DnsRequestAction): Self = StObject.set(x, "DnsRequestAction", value.asInstanceOf[js.Any])
+    inline def setDnsRequestAction(value: DnsRequestAction): Self = StObject.set(x, "DnsRequestAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsRequestActionUndefined: Self = StObject.set(x, "DnsRequestAction", js.undefined)
+    inline def setDnsRequestActionUndefined: Self = StObject.set(x, "DnsRequestAction", js.undefined)
     
-    @scala.inline
-    def setNetworkConnectionAction(value: NetworkConnectionAction): Self = StObject.set(x, "NetworkConnectionAction", value.asInstanceOf[js.Any])
+    inline def setNetworkConnectionAction(value: NetworkConnectionAction): Self = StObject.set(x, "NetworkConnectionAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkConnectionActionUndefined: Self = StObject.set(x, "NetworkConnectionAction", js.undefined)
+    inline def setNetworkConnectionActionUndefined: Self = StObject.set(x, "NetworkConnectionAction", js.undefined)
     
-    @scala.inline
-    def setPortProbeAction(value: PortProbeAction): Self = StObject.set(x, "PortProbeAction", value.asInstanceOf[js.Any])
+    inline def setPortProbeAction(value: PortProbeAction): Self = StObject.set(x, "PortProbeAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortProbeActionUndefined: Self = StObject.set(x, "PortProbeAction", js.undefined)
+    inline def setPortProbeActionUndefined: Self = StObject.set(x, "PortProbeAction", js.undefined)
   }
 }

@@ -20,10 +20,8 @@ object mod {
     * object.
     * @async
     */
-  @scala.inline
-  def apply(options: Options): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(options: Options, environment: Config): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(options: Options): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def apply(options: Options, environment: Config): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   @JSImport("semantic-release", JSImport.Namespace)
   @js.native
@@ -87,8 +85,7 @@ object mod {
   }
   object Commit {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: Email,
       body: String,
       commit: Long,
@@ -103,35 +100,25 @@ object mod {
       __obj.asInstanceOf[Commit]
     }
     
-    @scala.inline
-    implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
+    extension [Self <: Commit](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommit(value: Long): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: Long): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitter(value: Email): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+      inline def setCommitter(value: Email): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitterDate(value: String): Self = StObject.set(x, "committerDate", value.asInstanceOf[js.Any])
+      inline def setCommitterDate(value: String): Self = StObject.set(x, "committerDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTree(value: Long): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: Long): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,38 +168,28 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
   
@@ -245,38 +222,28 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(env: StringDictionary[String], logger: Error): Context = {
+    inline def apply(env: StringDictionary[String], logger: Error): Context = {
       val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastRelease(value: LastRelease): Self = StObject.set(x, "lastRelease", value.asInstanceOf[js.Any])
+      inline def setLastRelease(value: LastRelease): Self = StObject.set(x, "lastRelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastReleaseUndefined: Self = StObject.set(x, "lastRelease", js.undefined)
+      inline def setLastReleaseUndefined: Self = StObject.set(x, "lastRelease", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextRelease(value: NextRelease): Self = StObject.set(x, "nextRelease", value.asInstanceOf[js.Any])
+      inline def setNextRelease(value: NextRelease): Self = StObject.set(x, "nextRelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextReleaseUndefined: Self = StObject.set(x, "nextRelease", js.undefined)
+      inline def setNextReleaseUndefined: Self = StObject.set(x, "nextRelease", js.undefined)
       
-      @scala.inline
-      def setOptions(value: GlobalConfig): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: GlobalConfig): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -369,8 +336,7 @@ object mod {
   }
   object GlobalConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       branches: js.Array[BranchSpec] | BranchSpec,
       plugins: js.Array[PluginSpec],
       repositoryUrl: String,
@@ -380,26 +346,19 @@ object mod {
       __obj.asInstanceOf[GlobalConfig]
     }
     
-    @scala.inline
-    implicit class GlobalConfigMutableBuilder[Self <: GlobalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalConfig](x: Self) {
       
-      @scala.inline
-      def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value :_*))
       
-      @scala.inline
-      def setPlugins(value: js.Array[PluginSpec]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[PluginSpec]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
+      inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagFormat(value: String): Self = StObject.set(x, "tagFormat", value.asInstanceOf[js.Any])
+      inline def setTagFormat(value: String): Self = StObject.set(x, "tagFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -422,23 +381,18 @@ object mod {
   }
   object LastRelease {
     
-    @scala.inline
-    def apply(gitHead: String, gitTag: String, version: String): LastRelease = {
+    inline def apply(gitHead: String, gitTag: String, version: String): LastRelease = {
       val __obj = js.Dynamic.literal(gitHead = gitHead.asInstanceOf[js.Any], gitTag = gitTag.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[LastRelease]
     }
     
-    @scala.inline
-    implicit class LastReleaseMutableBuilder[Self <: LastRelease] (val x: Self) extends AnyVal {
+    extension [Self <: LastRelease](x: Self) {
       
-      @scala.inline
-      def setGitHead(value: String): Self = StObject.set(x, "gitHead", value.asInstanceOf[js.Any])
+      inline def setGitHead(value: String): Self = StObject.set(x, "gitHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitTag(value: String): Self = StObject.set(x, "gitTag", value.asInstanceOf[js.Any])
+      inline def setGitTag(value: String): Self = StObject.set(x, "gitTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -458,21 +412,17 @@ object mod {
   }
   object NextRelease {
     
-    @scala.inline
-    def apply(gitHead: String, gitTag: String, notes: String, `type`: patch | minor | major, version: String): NextRelease = {
+    inline def apply(gitHead: String, gitTag: String, notes: String, `type`: patch | minor | major, version: String): NextRelease = {
       val __obj = js.Dynamic.literal(gitHead = gitHead.asInstanceOf[js.Any], gitTag = gitTag.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NextRelease]
     }
     
-    @scala.inline
-    implicit class NextReleaseMutableBuilder[Self <: NextRelease] (val x: Self) extends AnyVal {
+    extension [Self <: NextRelease](x: Self) {
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: patch | minor | major): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: patch | minor | major): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -592,65 +542,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      @scala.inline
-      def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value :_*))
       
-      @scala.inline
-      def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
+      inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
+      inline def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
       
-      @scala.inline
-      def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
       
-      @scala.inline
-      def setExtends(value: js.Array[String] | String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+      inline def setExtends(value: js.Array[String] | String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+      inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      @scala.inline
-      def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value :_*))
       
-      @scala.inline
-      def setPlugins(value: js.Array[PluginSpec]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[PluginSpec]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
+      inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUrlUndefined: Self = StObject.set(x, "repositoryUrl", js.undefined)
+      inline def setRepositoryUrlUndefined: Self = StObject.set(x, "repositoryUrl", js.undefined)
       
-      @scala.inline
-      def setTagFormat(value: String): Self = StObject.set(x, "tagFormat", value.asInstanceOf[js.Any])
+      inline def setTagFormat(value: String): Self = StObject.set(x, "tagFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagFormatUndefined: Self = StObject.set(x, "tagFormat", js.undefined)
+      inline def setTagFormatUndefined: Self = StObject.set(x, "tagFormat", js.undefined)
     }
   }
   
@@ -711,8 +642,7 @@ object mod {
   }
   object Release {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gitHead: String,
       gitTag: String,
       notes: String,
@@ -725,38 +655,27 @@ object mod {
       __obj.asInstanceOf[Release]
     }
     
-    @scala.inline
-    implicit class ReleaseMutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
+    extension [Self <: Release](x: Self) {
       
-      @scala.inline
-      def setGitHead(value: String): Self = StObject.set(x, "gitHead", value.asInstanceOf[js.Any])
+      inline def setGitHead(value: String): Self = StObject.set(x, "gitHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitTag(value: String): Self = StObject.set(x, "gitTag", value.asInstanceOf[js.Any])
+      inline def setGitTag(value: String): Self = StObject.set(x, "gitTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
+      inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: patch | minor | major): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: patch | minor | major): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

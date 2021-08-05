@@ -26,20 +26,16 @@ object signatureInputClearButtonClearButtonMod {
   }
   object ClearButtonChildrenProps {
     
-    @scala.inline
-    def apply(): ClearButtonChildrenProps = {
+    inline def apply(): ClearButtonChildrenProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearButtonChildrenProps]
     }
     
-    @scala.inline
-    implicit class ClearButtonChildrenPropsMutableBuilder[Self <: ClearButtonChildrenProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClearButtonChildrenProps](x: Self) {
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
     }
   }
   

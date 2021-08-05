@@ -503,8 +503,7 @@ object Sound {
     * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
     * @param game Reference to the current game instance.
     */
-  @scala.inline
-  def SoundManagerCreator(game: typings.phaser.Phaser.Game): typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager = ^.asInstanceOf[js.Dynamic].applyDynamic("SoundManagerCreator")(game.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager]
+  inline def SoundManagerCreator(game: typings.phaser.Phaser.Game): typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager = ^.asInstanceOf[js.Dynamic].applyDynamic("SoundManagerCreator")(game.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager]
   
   /**
     * Web Audio API implementation of the sound.

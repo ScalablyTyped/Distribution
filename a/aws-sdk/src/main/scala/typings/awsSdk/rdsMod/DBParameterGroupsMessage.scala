@@ -18,28 +18,21 @@ trait DBParameterGroupsMessage extends StObject {
 }
 object DBParameterGroupsMessage {
   
-  @scala.inline
-  def apply(): DBParameterGroupsMessage = {
+  inline def apply(): DBParameterGroupsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBParameterGroupsMessage]
   }
   
-  @scala.inline
-  implicit class DBParameterGroupsMessageMutableBuilder[Self <: DBParameterGroupsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBParameterGroupsMessage](x: Self) {
     
-    @scala.inline
-    def setDBParameterGroups(value: DBParameterGroupList): Self = StObject.set(x, "DBParameterGroups", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroups(value: DBParameterGroupList): Self = StObject.set(x, "DBParameterGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupsUndefined: Self = StObject.set(x, "DBParameterGroups", js.undefined)
+    inline def setDBParameterGroupsUndefined: Self = StObject.set(x, "DBParameterGroups", js.undefined)
     
-    @scala.inline
-    def setDBParameterGroupsVarargs(value: DBParameterGroup*): Self = StObject.set(x, "DBParameterGroups", js.Array(value :_*))
+    inline def setDBParameterGroupsVarargs(value: DBParameterGroup*): Self = StObject.set(x, "DBParameterGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse extends S
 }
 object SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
+    inline def setSessionEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
+    inline def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
+    inline def setSessionEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait ProtectedContentRevokedEventArgs extends StObject {
 }
 object ProtectedContentRevokedEventArgs {
   
-  @scala.inline
-  def apply(identities: IVectorView[String]): ProtectedContentRevokedEventArgs = {
+  inline def apply(identities: IVectorView[String]): ProtectedContentRevokedEventArgs = {
     val __obj = js.Dynamic.literal(identities = identities.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectedContentRevokedEventArgs]
   }
   
-  @scala.inline
-  implicit class ProtectedContentRevokedEventArgsMutableBuilder[Self <: ProtectedContentRevokedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectedContentRevokedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIdentities(value: IVectorView[String]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: IVectorView[String]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
   }
 }

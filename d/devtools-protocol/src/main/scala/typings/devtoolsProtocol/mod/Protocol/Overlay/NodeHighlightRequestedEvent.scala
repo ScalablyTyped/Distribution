@@ -11,16 +11,13 @@ trait NodeHighlightRequestedEvent extends StObject {
 }
 object NodeHighlightRequestedEvent {
   
-  @scala.inline
-  def apply(nodeId: NodeId): NodeHighlightRequestedEvent = {
+  inline def apply(nodeId: NodeId): NodeHighlightRequestedEvent = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeHighlightRequestedEvent]
   }
   
-  @scala.inline
-  implicit class NodeHighlightRequestedEventMutableBuilder[Self <: NodeHighlightRequestedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NodeHighlightRequestedEvent](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

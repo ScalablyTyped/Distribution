@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTableDirection extends StObject
 object WdTableDirection {
   
-  @scala.inline
-  def wdTableDirectionLtr: `1` = 1.asInstanceOf[`1`]
+  inline def wdTableDirectionLtr: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTableDirectionRtl: `0` = 0.asInstanceOf[`0`]
+  inline def wdTableDirectionRtl: `0` = 0.asInstanceOf[`0`]
 }

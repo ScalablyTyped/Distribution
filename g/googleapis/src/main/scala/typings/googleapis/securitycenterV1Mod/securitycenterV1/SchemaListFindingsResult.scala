@@ -21,25 +21,19 @@ trait SchemaListFindingsResult extends StObject {
 }
 object SchemaListFindingsResult {
   
-  @scala.inline
-  def apply(): SchemaListFindingsResult = {
+  inline def apply(): SchemaListFindingsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListFindingsResult]
   }
   
-  @scala.inline
-  implicit class SchemaListFindingsResultMutableBuilder[Self <: SchemaListFindingsResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListFindingsResult](x: Self) {
     
-    @scala.inline
-    def setFinding(value: SchemaFinding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: SchemaFinding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
-    @scala.inline
-    def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
+    inline def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
+    inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }
 }

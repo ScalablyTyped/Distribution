@@ -40,8 +40,7 @@ object commonWindowsInstallerConfigurationMod {
     /* 2 */ val NEVER: typings.appBuilderLib.commonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.NEVER & Double = js.native
   }
   
-  @scala.inline
-  def getEffectiveOptions(options: CommonWindowsInstallerConfiguration, packager: WinPackager): FinalCommonWindowsInstallerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getEffectiveOptions")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[FinalCommonWindowsInstallerOptions]
+  inline def getEffectiveOptions(options: CommonWindowsInstallerConfiguration, packager: WinPackager): FinalCommonWindowsInstallerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getEffectiveOptions")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[FinalCommonWindowsInstallerOptions]
   
   trait CommonWindowsInstallerConfiguration extends StObject {
     
@@ -84,59 +83,42 @@ object commonWindowsInstallerConfigurationMod {
   }
   object CommonWindowsInstallerConfiguration {
     
-    @scala.inline
-    def apply(): CommonWindowsInstallerConfiguration = {
+    inline def apply(): CommonWindowsInstallerConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonWindowsInstallerConfiguration]
     }
     
-    @scala.inline
-    implicit class CommonWindowsInstallerConfigurationMutableBuilder[Self <: CommonWindowsInstallerConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CommonWindowsInstallerConfiguration](x: Self) {
       
-      @scala.inline
-      def setCreateDesktopShortcut(value: Boolean | always): Self = StObject.set(x, "createDesktopShortcut", value.asInstanceOf[js.Any])
+      inline def setCreateDesktopShortcut(value: Boolean | always): Self = StObject.set(x, "createDesktopShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDesktopShortcutUndefined: Self = StObject.set(x, "createDesktopShortcut", js.undefined)
+      inline def setCreateDesktopShortcutUndefined: Self = StObject.set(x, "createDesktopShortcut", js.undefined)
       
-      @scala.inline
-      def setCreateStartMenuShortcut(value: Boolean): Self = StObject.set(x, "createStartMenuShortcut", value.asInstanceOf[js.Any])
+      inline def setCreateStartMenuShortcut(value: Boolean): Self = StObject.set(x, "createStartMenuShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateStartMenuShortcutUndefined: Self = StObject.set(x, "createStartMenuShortcut", js.undefined)
+      inline def setCreateStartMenuShortcutUndefined: Self = StObject.set(x, "createStartMenuShortcut", js.undefined)
       
-      @scala.inline
-      def setMenuCategory(value: Boolean | String): Self = StObject.set(x, "menuCategory", value.asInstanceOf[js.Any])
+      inline def setMenuCategory(value: Boolean | String): Self = StObject.set(x, "menuCategory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuCategoryUndefined: Self = StObject.set(x, "menuCategory", js.undefined)
+      inline def setMenuCategoryUndefined: Self = StObject.set(x, "menuCategory", js.undefined)
       
-      @scala.inline
-      def setOneClick(value: Boolean): Self = StObject.set(x, "oneClick", value.asInstanceOf[js.Any])
+      inline def setOneClick(value: Boolean): Self = StObject.set(x, "oneClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneClickUndefined: Self = StObject.set(x, "oneClick", js.undefined)
+      inline def setOneClickUndefined: Self = StObject.set(x, "oneClick", js.undefined)
       
-      @scala.inline
-      def setPerMachine(value: Boolean): Self = StObject.set(x, "perMachine", value.asInstanceOf[js.Any])
+      inline def setPerMachine(value: Boolean): Self = StObject.set(x, "perMachine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerMachineUndefined: Self = StObject.set(x, "perMachine", js.undefined)
+      inline def setPerMachineUndefined: Self = StObject.set(x, "perMachine", js.undefined)
       
-      @scala.inline
-      def setRunAfterFinish(value: Boolean): Self = StObject.set(x, "runAfterFinish", value.asInstanceOf[js.Any])
+      inline def setRunAfterFinish(value: Boolean): Self = StObject.set(x, "runAfterFinish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunAfterFinishUndefined: Self = StObject.set(x, "runAfterFinish", js.undefined)
+      inline def setRunAfterFinishUndefined: Self = StObject.set(x, "runAfterFinish", js.undefined)
       
-      @scala.inline
-      def setShortcutName(value: String): Self = StObject.set(x, "shortcutName", value.asInstanceOf[js.Any])
+      inline def setShortcutName(value: String): Self = StObject.set(x, "shortcutName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcutNameNull: Self = StObject.set(x, "shortcutName", null)
+      inline def setShortcutNameNull: Self = StObject.set(x, "shortcutName", null)
       
-      @scala.inline
-      def setShortcutNameUndefined: Self = StObject.set(x, "shortcutName", js.undefined)
+      inline def setShortcutNameUndefined: Self = StObject.set(x, "shortcutName", js.undefined)
     }
   }
   
@@ -156,8 +138,7 @@ object commonWindowsInstallerConfigurationMod {
   }
   object FinalCommonWindowsInstallerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isAssisted: Boolean,
       isCreateDesktopShortcut: DesktopShortcutCreationPolicy,
       isCreateStartMenuShortcut: Boolean,
@@ -168,29 +149,21 @@ object commonWindowsInstallerConfigurationMod {
       __obj.asInstanceOf[FinalCommonWindowsInstallerOptions]
     }
     
-    @scala.inline
-    implicit class FinalCommonWindowsInstallerOptionsMutableBuilder[Self <: FinalCommonWindowsInstallerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FinalCommonWindowsInstallerOptions](x: Self) {
       
-      @scala.inline
-      def setIsAssisted(value: Boolean): Self = StObject.set(x, "isAssisted", value.asInstanceOf[js.Any])
+      inline def setIsAssisted(value: Boolean): Self = StObject.set(x, "isAssisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCreateDesktopShortcut(value: DesktopShortcutCreationPolicy): Self = StObject.set(x, "isCreateDesktopShortcut", value.asInstanceOf[js.Any])
+      inline def setIsCreateDesktopShortcut(value: DesktopShortcutCreationPolicy): Self = StObject.set(x, "isCreateDesktopShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCreateStartMenuShortcut(value: Boolean): Self = StObject.set(x, "isCreateStartMenuShortcut", value.asInstanceOf[js.Any])
+      inline def setIsCreateStartMenuShortcut(value: Boolean): Self = StObject.set(x, "isCreateStartMenuShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPerMachine(value: Boolean): Self = StObject.set(x, "isPerMachine", value.asInstanceOf[js.Any])
+      inline def setIsPerMachine(value: Boolean): Self = StObject.set(x, "isPerMachine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuCategory(value: String): Self = StObject.set(x, "menuCategory", value.asInstanceOf[js.Any])
+      inline def setMenuCategory(value: String): Self = StObject.set(x, "menuCategory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuCategoryNull: Self = StObject.set(x, "menuCategory", null)
+      inline def setMenuCategoryNull: Self = StObject.set(x, "menuCategory", null)
       
-      @scala.inline
-      def setShortcutName(value: String): Self = StObject.set(x, "shortcutName", value.asInstanceOf[js.Any])
+      inline def setShortcutName(value: String): Self = StObject.set(x, "shortcutName", value.asInstanceOf[js.Any])
     }
   }
 }

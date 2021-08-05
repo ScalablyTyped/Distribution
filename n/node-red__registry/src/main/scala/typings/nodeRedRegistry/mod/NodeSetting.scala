@@ -12,22 +12,17 @@ trait NodeSetting[T] extends StObject {
 }
 object NodeSetting {
   
-  @scala.inline
-  def apply[T](value: T): NodeSetting[T] = {
+  inline def apply[T](value: T): NodeSetting[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeSetting[T]]
   }
   
-  @scala.inline
-  implicit class NodeSettingMutableBuilder[Self <: NodeSetting[?], T] (val x: Self & NodeSetting[T]) extends AnyVal {
+  extension [Self <: NodeSetting[?], T](x: Self & NodeSetting[T]) {
     
-    @scala.inline
-    def setExportable(value: Boolean): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
+    inline def setExportable(value: Boolean): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportableUndefined: Self = StObject.set(x, "exportable", js.undefined)
+    inline def setExportableUndefined: Self = StObject.set(x, "exportable", js.undefined)
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

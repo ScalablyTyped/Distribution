@@ -18,23 +18,18 @@ trait ObjectACL extends StObject {
 }
 object ObjectACL {
   
-  @scala.inline
-  def apply(`object`: Double, owner: String, ownerGroup: String): ObjectACL = {
+  inline def apply(`object`: Double, owner: String, ownerGroup: String): ObjectACL = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ownerGroup = ownerGroup.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectACL]
   }
   
-  @scala.inline
-  implicit class ObjectACLMutableBuilder[Self <: ObjectACL] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectACL](x: Self) {
     
-    @scala.inline
-    def setObject(value: Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerGroup(value: String): Self = StObject.set(x, "ownerGroup", value.asInstanceOf[js.Any])
+    inline def setOwnerGroup(value: String): Self = StObject.set(x, "ownerGroup", value.asInstanceOf[js.Any])
   }
 }

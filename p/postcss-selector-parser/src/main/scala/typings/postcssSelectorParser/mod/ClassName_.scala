@@ -15,8 +15,7 @@ trait ClassName_
 }
 object ClassName_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -38,10 +37,8 @@ object ClassName_ {
     __obj.asInstanceOf[ClassName_]
   }
   
-  @scala.inline
-  implicit class ClassName_MutableBuilder[Self <: ClassName_] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName_](x: Self) {
     
-    @scala.inline
-    def setType(value: `class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

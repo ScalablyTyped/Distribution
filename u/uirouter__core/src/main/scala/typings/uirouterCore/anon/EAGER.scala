@@ -12,19 +12,15 @@ trait EAGER extends StObject {
 }
 object EAGER {
   
-  @scala.inline
-  def apply(EAGER: String, LAZY: String): EAGER = {
+  inline def apply(EAGER: String, LAZY: String): EAGER = {
     val __obj = js.Dynamic.literal(EAGER = EAGER.asInstanceOf[js.Any], LAZY = LAZY.asInstanceOf[js.Any])
     __obj.asInstanceOf[EAGER]
   }
   
-  @scala.inline
-  implicit class EAGERMutableBuilder[Self <: EAGER] (val x: Self) extends AnyVal {
+  extension [Self <: EAGER](x: Self) {
     
-    @scala.inline
-    def setEAGER(value: String): Self = StObject.set(x, "EAGER", value.asInstanceOf[js.Any])
+    inline def setEAGER(value: String): Self = StObject.set(x, "EAGER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAZY(value: String): Self = StObject.set(x, "LAZY", value.asInstanceOf[js.Any])
+    inline def setLAZY(value: String): Self = StObject.set(x, "LAZY", value.asInstanceOf[js.Any])
   }
 }

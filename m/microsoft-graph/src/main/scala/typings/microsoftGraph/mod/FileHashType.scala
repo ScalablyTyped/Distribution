@@ -18,27 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileHashType extends StObject
 object FileHashType {
   
-  @scala.inline
-  def authenticodeHash256: typings.microsoftGraph.microsoftGraphStrings.authenticodeHash256 = "authenticodeHash256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.authenticodeHash256]
+  inline def authenticodeHash256: typings.microsoftGraph.microsoftGraphStrings.authenticodeHash256 = "authenticodeHash256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.authenticodeHash256]
   
-  @scala.inline
-  def ctph: typings.microsoftGraph.microsoftGraphStrings.ctph = "ctph".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ctph]
+  inline def ctph: typings.microsoftGraph.microsoftGraphStrings.ctph = "ctph".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ctph]
   
-  @scala.inline
-  def lsHash: typings.microsoftGraph.microsoftGraphStrings.lsHash = "lsHash".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lsHash]
+  inline def lsHash: typings.microsoftGraph.microsoftGraphStrings.lsHash = "lsHash".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lsHash]
   
-  @scala.inline
-  def md5: typings.microsoftGraph.microsoftGraphStrings.md5 = "md5".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.md5]
+  inline def md5: typings.microsoftGraph.microsoftGraphStrings.md5 = "md5".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.md5]
   
-  @scala.inline
-  def sha1: typings.microsoftGraph.microsoftGraphStrings.sha1 = "sha1".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sha1]
+  inline def sha1: typings.microsoftGraph.microsoftGraphStrings.sha1 = "sha1".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sha1]
   
-  @scala.inline
-  def sha256: typings.microsoftGraph.microsoftGraphStrings.sha256 = "sha256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sha256]
+  inline def sha256: typings.microsoftGraph.microsoftGraphStrings.sha256 = "sha256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sha256]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

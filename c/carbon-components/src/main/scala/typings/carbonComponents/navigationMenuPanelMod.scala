@@ -32,8 +32,7 @@ object navigationMenuPanelMod {
     @JSImport("carbon-components/components/ui-shell/navigation-menu-panel", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -47,8 +46,7 @@ object navigationMenuPanelMod {
   }
   object NavigationMenuPanel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _changeState: (js.Any, js.Any) => Unit,
       createdByLauncher: js.Any => Unit,
       shouldStateBeChanged: js.Any => Boolean
@@ -57,17 +55,13 @@ object navigationMenuPanelMod {
       __obj.asInstanceOf[NavigationMenuPanel]
     }
     
-    @scala.inline
-    implicit class NavigationMenuPanelMutableBuilder[Self <: NavigationMenuPanel] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationMenuPanel](x: Self) {
       
-      @scala.inline
-      def setCreatedByLauncher(value: js.Any => Unit): Self = StObject.set(x, "createdByLauncher", js.Any.fromFunction1(value))
+      inline def setCreatedByLauncher(value: js.Any => Unit): Self = StObject.set(x, "createdByLauncher", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldStateBeChanged(value: js.Any => Boolean): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
+      inline def setShouldStateBeChanged(value: js.Any => Boolean): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_changeState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction2(value))
+      inline def set_changeState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction2(value))
     }
   }
 }

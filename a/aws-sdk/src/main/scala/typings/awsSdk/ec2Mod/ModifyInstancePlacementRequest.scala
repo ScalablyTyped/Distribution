@@ -43,52 +43,37 @@ trait ModifyInstancePlacementRequest extends StObject {
 }
 object ModifyInstancePlacementRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId): ModifyInstancePlacementRequest = {
+  inline def apply(InstanceId: InstanceId): ModifyInstancePlacementRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstancePlacementRequest]
   }
   
-  @scala.inline
-  implicit class ModifyInstancePlacementRequestMutableBuilder[Self <: ModifyInstancePlacementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstancePlacementRequest](x: Self) {
     
-    @scala.inline
-    def setAffinity(value: Affinity): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
+    inline def setAffinity(value: Affinity): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffinityUndefined: Self = StObject.set(x, "Affinity", js.undefined)
+    inline def setAffinityUndefined: Self = StObject.set(x, "Affinity", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setHostId(value: DedicatedHostId): Self = StObject.set(x, "HostId", value.asInstanceOf[js.Any])
+    inline def setHostId(value: DedicatedHostId): Self = StObject.set(x, "HostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIdUndefined: Self = StObject.set(x, "HostId", js.undefined)
+    inline def setHostIdUndefined: Self = StObject.set(x, "HostId", js.undefined)
     
-    @scala.inline
-    def setHostResourceGroupArn(value: String): Self = StObject.set(x, "HostResourceGroupArn", value.asInstanceOf[js.Any])
+    inline def setHostResourceGroupArn(value: String): Self = StObject.set(x, "HostResourceGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostResourceGroupArnUndefined: Self = StObject.set(x, "HostResourceGroupArn", js.undefined)
+    inline def setHostResourceGroupArnUndefined: Self = StObject.set(x, "HostResourceGroupArn", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionNumber(value: Integer): Self = StObject.set(x, "PartitionNumber", value.asInstanceOf[js.Any])
+    inline def setPartitionNumber(value: Integer): Self = StObject.set(x, "PartitionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionNumberUndefined: Self = StObject.set(x, "PartitionNumber", js.undefined)
+    inline def setPartitionNumberUndefined: Self = StObject.set(x, "PartitionNumber", js.undefined)
     
-    @scala.inline
-    def setTenancy(value: HostTenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
+    inline def setTenancy(value: HostTenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
+    inline def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
   }
 }

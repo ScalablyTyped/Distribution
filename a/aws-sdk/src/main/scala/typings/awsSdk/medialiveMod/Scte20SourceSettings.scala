@@ -18,25 +18,19 @@ trait Scte20SourceSettings extends StObject {
 }
 object Scte20SourceSettings {
   
-  @scala.inline
-  def apply(): Scte20SourceSettings = {
+  inline def apply(): Scte20SourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scte20SourceSettings]
   }
   
-  @scala.inline
-  implicit class Scte20SourceSettingsMutableBuilder[Self <: Scte20SourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Scte20SourceSettings](x: Self) {
     
-    @scala.inline
-    def setConvert608To708(value: Scte20Convert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
+    inline def setConvert608To708(value: Scte20Convert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
+    inline def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
     
-    @scala.inline
-    def setSource608ChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "Source608ChannelNumber", value.asInstanceOf[js.Any])
+    inline def setSource608ChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "Source608ChannelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource608ChannelNumberUndefined: Self = StObject.set(x, "Source608ChannelNumber", js.undefined)
+    inline def setSource608ChannelNumberUndefined: Self = StObject.set(x, "Source608ChannelNumber", js.undefined)
   }
 }

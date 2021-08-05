@@ -11,22 +11,17 @@ trait BatchRunPivotReportsResponse extends StObject {
 }
 object BatchRunPivotReportsResponse {
   
-  @scala.inline
-  def apply(): BatchRunPivotReportsResponse = {
+  inline def apply(): BatchRunPivotReportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchRunPivotReportsResponse]
   }
   
-  @scala.inline
-  implicit class BatchRunPivotReportsResponseMutableBuilder[Self <: BatchRunPivotReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchRunPivotReportsResponse](x: Self) {
     
-    @scala.inline
-    def setPivotReports(value: js.Array[RunPivotReportResponse]): Self = StObject.set(x, "pivotReports", value.asInstanceOf[js.Any])
+    inline def setPivotReports(value: js.Array[RunPivotReportResponse]): Self = StObject.set(x, "pivotReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotReportsUndefined: Self = StObject.set(x, "pivotReports", js.undefined)
+    inline def setPivotReportsUndefined: Self = StObject.set(x, "pivotReports", js.undefined)
     
-    @scala.inline
-    def setPivotReportsVarargs(value: RunPivotReportResponse*): Self = StObject.set(x, "pivotReports", js.Array(value :_*))
+    inline def setPivotReportsVarargs(value: RunPivotReportResponse*): Self = StObject.set(x, "pivotReports", js.Array(value :_*))
   }
 }

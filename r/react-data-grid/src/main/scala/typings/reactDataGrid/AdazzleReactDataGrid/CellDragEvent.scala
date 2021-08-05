@@ -31,25 +31,19 @@ trait CellDragEvent extends StObject {
 }
 object CellDragEvent {
   
-  @scala.inline
-  def apply(cellKey: String, fromRow: Double, toRow: Double, value: js.Any): CellDragEvent = {
+  inline def apply(cellKey: String, fromRow: Double, toRow: Double, value: js.Any): CellDragEvent = {
     val __obj = js.Dynamic.literal(cellKey = cellKey.asInstanceOf[js.Any], fromRow = fromRow.asInstanceOf[js.Any], toRow = toRow.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellDragEvent]
   }
   
-  @scala.inline
-  implicit class CellDragEventMutableBuilder[Self <: CellDragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CellDragEvent](x: Self) {
     
-    @scala.inline
-    def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
+    inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
+    inline def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
+    inline def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

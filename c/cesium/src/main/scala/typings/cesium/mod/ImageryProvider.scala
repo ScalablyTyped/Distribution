@@ -67,6 +67,5 @@ object ImageryProvider {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def loadImage(imageryProvider: ImageryProvider, url: String): js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(imageryProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]]]
+  inline def loadImage(imageryProvider: ImageryProvider, url: String): js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(imageryProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]]]
 }

@@ -21,22 +21,17 @@ trait IComponent[T] extends StObject {
 }
 object IComponent {
   
-  @scala.inline
-  def apply[T](__identifier__ : String, data: T): IComponent[T] = {
+  inline def apply[T](__identifier__ : String, data: T): IComponent[T] = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = "component", data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent[T]]
   }
   
-  @scala.inline
-  implicit class IComponentMutableBuilder[Self <: IComponent[?], T] (val x: Self & IComponent[T]) extends AnyVal {
+  extension [Self <: IComponent[?], T](x: Self & IComponent[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
+    inline def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type__(value: component): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
+    inline def set__type__(value: component): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

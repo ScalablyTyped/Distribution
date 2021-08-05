@@ -13,17 +13,14 @@ trait SlackSourceProperties extends StObject {
 }
 object SlackSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): SlackSourceProperties = {
+  inline def apply(`object`: Object): SlackSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlackSourceProperties]
   }
   
-  @scala.inline
-  implicit class SlackSourcePropertiesMutableBuilder[Self <: SlackSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SlackSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

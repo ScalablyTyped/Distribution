@@ -43,49 +43,35 @@ trait CreateSolutionRequest extends StObject {
 }
 object CreateSolutionRequest {
   
-  @scala.inline
-  def apply(datasetGroupArn: Arn, name: Name): CreateSolutionRequest = {
+  inline def apply(datasetGroupArn: Arn, name: Name): CreateSolutionRequest = {
     val __obj = js.Dynamic.literal(datasetGroupArn = datasetGroupArn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSolutionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSolutionRequestMutableBuilder[Self <: CreateSolutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSolutionRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformAutoML(value: PerformAutoML): Self = StObject.set(x, "performAutoML", value.asInstanceOf[js.Any])
+    inline def setPerformAutoML(value: PerformAutoML): Self = StObject.set(x, "performAutoML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformAutoMLUndefined: Self = StObject.set(x, "performAutoML", js.undefined)
+    inline def setPerformAutoMLUndefined: Self = StObject.set(x, "performAutoML", js.undefined)
     
-    @scala.inline
-    def setPerformHPO(value: Boolean): Self = StObject.set(x, "performHPO", value.asInstanceOf[js.Any])
+    inline def setPerformHPO(value: Boolean): Self = StObject.set(x, "performHPO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformHPOUndefined: Self = StObject.set(x, "performHPO", js.undefined)
+    inline def setPerformHPOUndefined: Self = StObject.set(x, "performHPO", js.undefined)
     
-    @scala.inline
-    def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
+    inline def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeArnUndefined: Self = StObject.set(x, "recipeArn", js.undefined)
+    inline def setRecipeArnUndefined: Self = StObject.set(x, "recipeArn", js.undefined)
     
-    @scala.inline
-    def setSolutionConfig(value: SolutionConfig): Self = StObject.set(x, "solutionConfig", value.asInstanceOf[js.Any])
+    inline def setSolutionConfig(value: SolutionConfig): Self = StObject.set(x, "solutionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionConfigUndefined: Self = StObject.set(x, "solutionConfig", js.undefined)
+    inline def setSolutionConfigUndefined: Self = StObject.set(x, "solutionConfig", js.undefined)
   }
 }

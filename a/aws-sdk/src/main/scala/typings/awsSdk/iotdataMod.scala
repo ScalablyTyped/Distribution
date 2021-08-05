@@ -33,20 +33,16 @@ object iotdataMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -69,23 +65,18 @@ object iotdataMod {
   }
   object DeleteThingShadowRequest {
     
-    @scala.inline
-    def apply(thingName: ThingName): DeleteThingShadowRequest = {
+    inline def apply(thingName: ThingName): DeleteThingShadowRequest = {
       val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteThingShadowRequest]
     }
     
-    @scala.inline
-    implicit class DeleteThingShadowRequestMutableBuilder[Self <: DeleteThingShadowRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteThingShadowRequest](x: Self) {
       
-      @scala.inline
-      def setShadowName(value: ShadowName): Self = StObject.set(x, "shadowName", value.asInstanceOf[js.Any])
+      inline def setShadowName(value: ShadowName): Self = StObject.set(x, "shadowName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowNameUndefined: Self = StObject.set(x, "shadowName", js.undefined)
+      inline def setShadowNameUndefined: Self = StObject.set(x, "shadowName", js.undefined)
       
-      @scala.inline
-      def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+      inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,17 +89,14 @@ object iotdataMod {
   }
   object DeleteThingShadowResponse {
     
-    @scala.inline
-    def apply(payload: JsonDocument): DeleteThingShadowResponse = {
+    inline def apply(payload: JsonDocument): DeleteThingShadowResponse = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteThingShadowResponse]
     }
     
-    @scala.inline
-    implicit class DeleteThingShadowResponseMutableBuilder[Self <: DeleteThingShadowResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteThingShadowResponse](x: Self) {
       
-      @scala.inline
-      def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,23 +114,18 @@ object iotdataMod {
   }
   object GetThingShadowRequest {
     
-    @scala.inline
-    def apply(thingName: ThingName): GetThingShadowRequest = {
+    inline def apply(thingName: ThingName): GetThingShadowRequest = {
       val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetThingShadowRequest]
     }
     
-    @scala.inline
-    implicit class GetThingShadowRequestMutableBuilder[Self <: GetThingShadowRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetThingShadowRequest](x: Self) {
       
-      @scala.inline
-      def setShadowName(value: ShadowName): Self = StObject.set(x, "shadowName", value.asInstanceOf[js.Any])
+      inline def setShadowName(value: ShadowName): Self = StObject.set(x, "shadowName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowNameUndefined: Self = StObject.set(x, "shadowName", js.undefined)
+      inline def setShadowNameUndefined: Self = StObject.set(x, "shadowName", js.undefined)
       
-      @scala.inline
-      def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+      inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,20 +138,16 @@ object iotdataMod {
   }
   object GetThingShadowResponse {
     
-    @scala.inline
-    def apply(): GetThingShadowResponse = {
+    inline def apply(): GetThingShadowResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetThingShadowResponse]
     }
     
-    @scala.inline
-    implicit class GetThingShadowResponseMutableBuilder[Self <: GetThingShadowResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetThingShadowResponse](x: Self) {
       
-      @scala.inline
-      def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   
@@ -267,29 +246,22 @@ object iotdataMod {
   }
   object ListNamedShadowsForThingRequest {
     
-    @scala.inline
-    def apply(thingName: ThingName): ListNamedShadowsForThingRequest = {
+    inline def apply(thingName: ThingName): ListNamedShadowsForThingRequest = {
       val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListNamedShadowsForThingRequest]
     }
     
-    @scala.inline
-    implicit class ListNamedShadowsForThingRequestMutableBuilder[Self <: ListNamedShadowsForThingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ListNamedShadowsForThingRequest](x: Self) {
       
-      @scala.inline
-      def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+      inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,35 +284,26 @@ object iotdataMod {
   }
   object ListNamedShadowsForThingResponse {
     
-    @scala.inline
-    def apply(): ListNamedShadowsForThingResponse = {
+    inline def apply(): ListNamedShadowsForThingResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListNamedShadowsForThingResponse]
     }
     
-    @scala.inline
-    implicit class ListNamedShadowsForThingResponseMutableBuilder[Self <: ListNamedShadowsForThingResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ListNamedShadowsForThingResponse](x: Self) {
       
-      @scala.inline
-      def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setResults(value: NamedShadowList): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: NamedShadowList): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setResultsVarargs(value: ShadowName*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: ShadowName*): Self = StObject.set(x, "results", js.Array(value :_*))
       
-      @scala.inline
-      def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
   
@@ -371,29 +334,22 @@ object iotdataMod {
   }
   object PublishRequest {
     
-    @scala.inline
-    def apply(topic: Topic): PublishRequest = {
+    inline def apply(topic: Topic): PublishRequest = {
       val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishRequest]
     }
     
-    @scala.inline
-    implicit class PublishRequestMutableBuilder[Self <: PublishRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PublishRequest](x: Self) {
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setQos(value: Qos): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
+      inline def setQos(value: Qos): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
+      inline def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
       
-      @scala.inline
-      def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -426,26 +382,20 @@ object iotdataMod {
   }
   object UpdateThingShadowRequest {
     
-    @scala.inline
-    def apply(payload: JsonDocument, thingName: ThingName): UpdateThingShadowRequest = {
+    inline def apply(payload: JsonDocument, thingName: ThingName): UpdateThingShadowRequest = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateThingShadowRequest]
     }
     
-    @scala.inline
-    implicit class UpdateThingShadowRequestMutableBuilder[Self <: UpdateThingShadowRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateThingShadowRequest](x: Self) {
       
-      @scala.inline
-      def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowName(value: ShadowName): Self = StObject.set(x, "shadowName", value.asInstanceOf[js.Any])
+      inline def setShadowName(value: ShadowName): Self = StObject.set(x, "shadowName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowNameUndefined: Self = StObject.set(x, "shadowName", js.undefined)
+      inline def setShadowNameUndefined: Self = StObject.set(x, "shadowName", js.undefined)
       
-      @scala.inline
-      def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+      inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -458,20 +408,16 @@ object iotdataMod {
   }
   object UpdateThingShadowResponse {
     
-    @scala.inline
-    def apply(): UpdateThingShadowResponse = {
+    inline def apply(): UpdateThingShadowResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateThingShadowResponse]
     }
     
-    @scala.inline
-    implicit class UpdateThingShadowResponseMutableBuilder[Self <: UpdateThingShadowResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateThingShadowResponse](x: Self) {
       
-      @scala.inline
-      def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   

@@ -13,19 +13,15 @@ trait MonitoringSubscription extends StObject {
 }
 object MonitoringSubscription {
   
-  @scala.inline
-  def apply(): MonitoringSubscription = {
+  inline def apply(): MonitoringSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoringSubscription]
   }
   
-  @scala.inline
-  implicit class MonitoringSubscriptionMutableBuilder[Self <: MonitoringSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringSubscription](x: Self) {
     
-    @scala.inline
-    def setRealtimeMetricsSubscriptionConfig(value: RealtimeMetricsSubscriptionConfig): Self = StObject.set(x, "RealtimeMetricsSubscriptionConfig", value.asInstanceOf[js.Any])
+    inline def setRealtimeMetricsSubscriptionConfig(value: RealtimeMetricsSubscriptionConfig): Self = StObject.set(x, "RealtimeMetricsSubscriptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimeMetricsSubscriptionConfigUndefined: Self = StObject.set(x, "RealtimeMetricsSubscriptionConfig", js.undefined)
+    inline def setRealtimeMetricsSubscriptionConfigUndefined: Self = StObject.set(x, "RealtimeMetricsSubscriptionConfig", js.undefined)
   }
 }

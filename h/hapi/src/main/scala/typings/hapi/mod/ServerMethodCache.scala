@@ -15,16 +15,13 @@ trait ServerMethodCache
 }
 object ServerMethodCache {
   
-  @scala.inline
-  def apply(generateTimeout: Double | `false`): ServerMethodCache = {
+  inline def apply(generateTimeout: Double | `false`): ServerMethodCache = {
     val __obj = js.Dynamic.literal(generateTimeout = generateTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerMethodCache]
   }
   
-  @scala.inline
-  implicit class ServerMethodCacheMutableBuilder[Self <: ServerMethodCache] (val x: Self) extends AnyVal {
+  extension [Self <: ServerMethodCache](x: Self) {
     
-    @scala.inline
-    def setGenerateTimeout(value: Double | `false`): Self = StObject.set(x, "generateTimeout", value.asInstanceOf[js.Any])
+    inline def setGenerateTimeout(value: Double | `false`): Self = StObject.set(x, "generateTimeout", value.asInstanceOf[js.Any])
   }
 }

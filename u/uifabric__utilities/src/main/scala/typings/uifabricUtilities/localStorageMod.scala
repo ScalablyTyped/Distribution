@@ -10,9 +10,7 @@ object localStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getItem(key: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getItem(key: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def setItem(key: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setItem(key: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

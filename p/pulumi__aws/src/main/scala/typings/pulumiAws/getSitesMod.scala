@@ -11,10 +11,8 @@ object getSitesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSites(): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")().asInstanceOf[js.Promise[GetSitesResult]]
-  @scala.inline
-  def getSites(opts: InvokeOptions): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSitesResult]]
+  inline def getSites(): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")().asInstanceOf[js.Promise[GetSitesResult]]
+  inline def getSites(opts: InvokeOptions): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSitesResult]]
   
   trait GetSitesResult extends StObject {
     
@@ -30,23 +28,18 @@ object getSitesMod {
   }
   object GetSitesResult {
     
-    @scala.inline
-    def apply(id: String, ids: js.Array[String]): GetSitesResult = {
+    inline def apply(id: String, ids: js.Array[String]): GetSitesResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSitesResult]
     }
     
-    @scala.inline
-    implicit class GetSitesResultMutableBuilder[Self <: GetSitesResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSitesResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     }
   }
 }

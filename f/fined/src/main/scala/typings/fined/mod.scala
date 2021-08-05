@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: String): Result | Null = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
-  @scala.inline
-  def apply(path: String, opts: PathSpec): Result | Null = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
-  @scala.inline
-  def apply(path: PathSpec): Result | Null = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
-  @scala.inline
-  def apply(path: PathSpec, opts: PathSpec): Result | Null = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
+  inline def apply(path: String): Result | Null = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  inline def apply(path: String, opts: PathSpec): Result | Null = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
+  inline def apply(path: PathSpec): Result | Null = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  inline def apply(path: PathSpec, opts: PathSpec): Result | Null = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
   
   @JSImport("fined", JSImport.Namespace)
   @js.native
@@ -34,47 +30,34 @@ object mod {
   }
   object PathSpec {
     
-    @scala.inline
-    def apply(): PathSpec = {
+    inline def apply(): PathSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathSpec]
     }
     
-    @scala.inline
-    implicit class PathSpecMutableBuilder[Self <: PathSpec] (val x: Self) extends AnyVal {
+    extension [Self <: PathSpec](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: String | js.Array[String] | (StringDictionary[String | Null])): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: String | js.Array[String] | (StringDictionary[String | Null])): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFindUp(value: Boolean): Self = StObject.set(x, "findUp", value.asInstanceOf[js.Any])
+      inline def setFindUp(value: Boolean): Self = StObject.set(x, "findUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindUpUndefined: Self = StObject.set(x, "findUp", js.undefined)
+      inline def setFindUpUndefined: Self = StObject.set(x, "findUp", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -86,21 +69,17 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(`extension`: String | StringDictionary[String], path: String): Result = {
+    inline def apply(`extension`: String | StringDictionary[String], path: String): Result = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setExtension(value: String | StringDictionary[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String | StringDictionary[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,28 +18,21 @@ trait DescribeTrailsRequest extends StObject {
 }
 object DescribeTrailsRequest {
   
-  @scala.inline
-  def apply(): DescribeTrailsRequest = {
+  inline def apply(): DescribeTrailsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTrailsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTrailsRequestMutableBuilder[Self <: DescribeTrailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrailsRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeShadowTrails(value: Boolean): Self = StObject.set(x, "includeShadowTrails", value.asInstanceOf[js.Any])
+    inline def setIncludeShadowTrails(value: Boolean): Self = StObject.set(x, "includeShadowTrails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeShadowTrailsUndefined: Self = StObject.set(x, "includeShadowTrails", js.undefined)
+    inline def setIncludeShadowTrailsUndefined: Self = StObject.set(x, "includeShadowTrails", js.undefined)
     
-    @scala.inline
-    def setTrailNameList(value: TrailNameList): Self = StObject.set(x, "trailNameList", value.asInstanceOf[js.Any])
+    inline def setTrailNameList(value: TrailNameList): Self = StObject.set(x, "trailNameList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailNameListUndefined: Self = StObject.set(x, "trailNameList", js.undefined)
+    inline def setTrailNameListUndefined: Self = StObject.set(x, "trailNameList", js.undefined)
     
-    @scala.inline
-    def setTrailNameListVarargs(value: String*): Self = StObject.set(x, "trailNameList", js.Array(value :_*))
+    inline def setTrailNameListVarargs(value: String*): Self = StObject.set(x, "trailNameList", js.Array(value :_*))
   }
 }

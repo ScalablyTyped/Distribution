@@ -52,49 +52,35 @@ trait SchemaSourceRepository extends StObject {
 }
 object SchemaSourceRepository {
   
-  @scala.inline
-  def apply(): SchemaSourceRepository = {
+  inline def apply(): SchemaSourceRepository = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceRepository]
   }
   
-  @scala.inline
-  implicit class SchemaSourceRepositoryMutableBuilder[Self <: SchemaSourceRepository] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceRepository](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setDeployedRevision(value: String): Self = StObject.set(x, "deployedRevision", value.asInstanceOf[js.Any])
+    inline def setDeployedRevision(value: String): Self = StObject.set(x, "deployedRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedRevisionUndefined: Self = StObject.set(x, "deployedRevision", js.undefined)
+    inline def setDeployedRevisionUndefined: Self = StObject.set(x, "deployedRevision", js.undefined)
     
-    @scala.inline
-    def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
+    inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUrlUndefined: Self = StObject.set(x, "repositoryUrl", js.undefined)
+    inline def setRepositoryUrlUndefined: Self = StObject.set(x, "repositoryUrl", js.undefined)
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
-    @scala.inline
-    def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
+    inline def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

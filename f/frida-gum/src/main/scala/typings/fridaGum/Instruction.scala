@@ -38,8 +38,7 @@ trait Instruction extends StObject {
 }
 object Instruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: NativePointer,
     groups: js.Array[String],
     mnemonic: String,
@@ -51,28 +50,20 @@ object Instruction {
     __obj.asInstanceOf[Instruction]
   }
   
-  @scala.inline
-  implicit class InstructionMutableBuilder[Self <: Instruction] (val x: Self) extends AnyVal {
+  extension [Self <: Instruction](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setMnemonic(value: String): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
+    inline def setMnemonic(value: String): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: NativePointer): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: NativePointer): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpStr(value: String): Self = StObject.set(x, "opStr", value.asInstanceOf[js.Any])
+    inline def setOpStr(value: String): Self = StObject.set(x, "opStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

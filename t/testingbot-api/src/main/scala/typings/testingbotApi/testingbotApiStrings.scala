@@ -11,13 +11,11 @@ object testingbotApiStrings {
   sealed trait rc
     extends StObject
        with BrowserType
-  @scala.inline
-  def rc: rc = "rc".asInstanceOf[rc]
+  inline def rc: rc = "rc".asInstanceOf[rc]
   
   @js.native
   sealed trait webdriver
     extends StObject
        with BrowserType
-  @scala.inline
-  def webdriver: webdriver = "webdriver".asInstanceOf[webdriver]
+  inline def webdriver: webdriver = "webdriver".asInstanceOf[webdriver]
 }

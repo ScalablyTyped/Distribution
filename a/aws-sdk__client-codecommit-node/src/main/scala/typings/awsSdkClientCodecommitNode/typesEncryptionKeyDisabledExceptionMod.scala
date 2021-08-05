@@ -76,17 +76,14 @@ object typesEncryptionKeyDisabledExceptionMod {
   }
   object EncryptionKeyDisabledException {
     
-    @scala.inline
-    def apply(): EncryptionKeyDisabledException = {
+    inline def apply(): EncryptionKeyDisabledException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyDisabledException")
       __obj.asInstanceOf[EncryptionKeyDisabledException]
     }
     
-    @scala.inline
-    implicit class EncryptionKeyDisabledExceptionMutableBuilder[Self <: EncryptionKeyDisabledException] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionKeyDisabledException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyDisabledException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

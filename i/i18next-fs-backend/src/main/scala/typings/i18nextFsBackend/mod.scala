@@ -75,8 +75,7 @@ object mod {
   }
   object Backend {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: (js.Array[String], String, String, String) => Unit,
       init: (Services, i18nextFsBackendOptions, InitOptions) => Unit,
       queue: (String, String, String, String, js.Any) => Unit,
@@ -89,20 +88,15 @@ object mod {
       __obj.asInstanceOf[Backend]
     }
     
-    @scala.inline
-    implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
+    extension [Self <: Backend](x: Self) {
       
-      @scala.inline
-      def setQueue(value: (String, String, String, String, js.Any) => Unit): Self = StObject.set(x, "queue", js.Any.fromFunction5(value))
+      inline def setQueue(value: (String, String, String, String, js.Any) => Unit): Self = StObject.set(x, "queue", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setType(value: typings.i18nextFsBackend.i18nextFsBackendStrings.backend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.i18nextFsBackend.i18nextFsBackendStrings.backend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: () => Unit): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+      inline def setWrite(value: () => Unit): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWriteFile(value: (String, String) => Unit): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
+      inline def setWriteFile(value: (String, String) => Unit): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
     }
   }
   
@@ -114,20 +108,16 @@ object mod {
     }
     object InitOptions {
       
-      @scala.inline
-      def apply(): typings.i18nextFsBackend.mod.i18next.InitOptions = {
+      inline def apply(): typings.i18nextFsBackend.mod.i18next.InitOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.i18nextFsBackend.mod.i18next.InitOptions]
       }
       
-      @scala.inline
-      implicit class InitOptionsMutableBuilder[Self <: typings.i18nextFsBackend.mod.i18next.InitOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.i18nextFsBackend.mod.i18next.InitOptions](x: Self) {
         
-        @scala.inline
-        def setBackend(value: i18nextFsBackendOptions): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+        inline def setBackend(value: i18nextFsBackendOptions): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+        inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       }
     }
   }
@@ -148,47 +138,34 @@ object mod {
     }
     object i18nextFsBackendOptions {
       
-      @scala.inline
-      def apply(): i18nextFsBackendOptions = {
+      inline def apply(): i18nextFsBackendOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[i18nextFsBackendOptions]
       }
       
-      @scala.inline
-      implicit class i18nextFsBackendOptionsMutableBuilder[Self <: i18nextFsBackendOptions] (val x: Self) extends AnyVal {
+      extension [Self <: i18nextFsBackendOptions](x: Self) {
         
-        @scala.inline
-        def setAddPath(value: String): Self = StObject.set(x, "addPath", value.asInstanceOf[js.Any])
+        inline def setAddPath(value: String): Self = StObject.set(x, "addPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddPathUndefined: Self = StObject.set(x, "addPath", js.undefined)
+        inline def setAddPathUndefined: Self = StObject.set(x, "addPath", js.undefined)
         
-        @scala.inline
-        def setIdent(value: Double): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
+        inline def setIdent(value: Double): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
+        inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
         
-        @scala.inline
-        def setLoadPath(value: String | loadPathFunction): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
+        inline def setLoadPath(value: String | loadPathFunction): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoadPathFunction2(value: (/* language */ String, /* namespace */ String) => String): Self = StObject.set(x, "loadPath", js.Any.fromFunction2(value))
+        inline def setLoadPathFunction2(value: (/* language */ String, /* namespace */ String) => String): Self = StObject.set(x, "loadPath", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
+        inline def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
         
-        @scala.inline
-        def setParse(value: /* data */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+        inline def setParse(value: /* data */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+        inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
         
-        @scala.inline
-        def setStringify(value: /* data */ js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+        inline def setStringify(value: /* data */ js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+        inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
       }
     }
     

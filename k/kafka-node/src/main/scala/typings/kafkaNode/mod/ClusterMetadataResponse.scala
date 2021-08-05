@@ -16,19 +16,15 @@ trait ClusterMetadataResponse extends StObject {
 }
 object ClusterMetadataResponse {
   
-  @scala.inline
-  def apply(clusterMetadata: ControllerId, metadata: StringDictionary[NumberDictionary[Isr]]): ClusterMetadataResponse = {
+  inline def apply(clusterMetadata: ControllerId, metadata: StringDictionary[NumberDictionary[Isr]]): ClusterMetadataResponse = {
     val __obj = js.Dynamic.literal(clusterMetadata = clusterMetadata.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterMetadataResponse]
   }
   
-  @scala.inline
-  implicit class ClusterMetadataResponseMutableBuilder[Self <: ClusterMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setClusterMetadata(value: ControllerId): Self = StObject.set(x, "clusterMetadata", value.asInstanceOf[js.Any])
+    inline def setClusterMetadata(value: ControllerId): Self = StObject.set(x, "clusterMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[NumberDictionary[Isr]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[NumberDictionary[Isr]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

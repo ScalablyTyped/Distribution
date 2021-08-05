@@ -26,23 +26,18 @@ object typesListTagsOutputMod {
   }
   object ListTagsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListTagsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListTagsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListTagsOutput]
     }
     
-    @scala.inline
-    implicit class ListTagsOutputMutableBuilder[Self <: ListTagsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTagsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     }
   }
 }

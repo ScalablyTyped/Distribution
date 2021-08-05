@@ -12,16 +12,13 @@ trait PickImpluseLegacy extends StObject {
 }
 object PickImpluseLegacy {
   
-  @scala.inline
-  def apply(useLegacy: auto | Boolean): PickImpluseLegacy = {
+  inline def apply(useLegacy: auto | Boolean): PickImpluseLegacy = {
     val __obj = js.Dynamic.literal(useLegacy = useLegacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluseLegacy]
   }
   
-  @scala.inline
-  implicit class PickImpluseLegacyMutableBuilder[Self <: PickImpluseLegacy] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpluseLegacy](x: Self) {
     
-    @scala.inline
-    def setUseLegacy(value: auto | Boolean): Self = StObject.set(x, "useLegacy", value.asInstanceOf[js.Any])
+    inline def setUseLegacy(value: auto | Boolean): Self = StObject.set(x, "useLegacy", value.asInstanceOf[js.Any])
   }
 }

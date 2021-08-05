@@ -20,8 +20,7 @@ object controlledWatchSolutionBuilderHostMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createControlledWatchSolutionBuilderHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchSolutionBuilderHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,

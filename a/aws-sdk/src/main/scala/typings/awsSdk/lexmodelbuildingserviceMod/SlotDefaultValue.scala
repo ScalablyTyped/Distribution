@@ -13,16 +13,13 @@ trait SlotDefaultValue extends StObject {
 }
 object SlotDefaultValue {
   
-  @scala.inline
-  def apply(defaultValue: SlotDefaultValueString): SlotDefaultValue = {
+  inline def apply(defaultValue: SlotDefaultValueString): SlotDefaultValue = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotDefaultValue]
   }
   
-  @scala.inline
-  implicit class SlotDefaultValueMutableBuilder[Self <: SlotDefaultValue] (val x: Self) extends AnyVal {
+  extension [Self <: SlotDefaultValue](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: SlotDefaultValueString): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: SlotDefaultValueString): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }
 }

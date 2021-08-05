@@ -33,25 +33,19 @@ trait Cycle extends StObject {
 }
 object Cycle {
   
-  @scala.inline
-  def apply(filePath: String, soundId: Double): Cycle = {
+  inline def apply(filePath: String, soundId: Double): Cycle = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], soundId = soundId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cycle]
   }
   
-  @scala.inline
-  implicit class CycleMutableBuilder[Self <: Cycle] (val x: Self) extends AnyVal {
+  extension [Self <: Cycle](x: Self) {
     
-    @scala.inline
-    def setCycle(value: Double): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    inline def setCycle(value: Double): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundId(value: Double): Self = StObject.set(x, "soundId", value.asInstanceOf[js.Any])
+    inline def setSoundId(value: Double): Self = StObject.set(x, "soundId", value.asInstanceOf[js.Any])
   }
 }

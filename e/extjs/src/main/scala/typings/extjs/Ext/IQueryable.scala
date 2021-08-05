@@ -41,43 +41,31 @@ trait IQueryable
 }
 object IQueryable {
   
-  @scala.inline
-  def apply(): IQueryable = {
+  inline def apply(): IQueryable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IQueryable]
   }
   
-  @scala.inline
-  implicit class IQueryableMutableBuilder[Self <: IQueryable] (val x: Self) extends AnyVal {
+  extension [Self <: IQueryable](x: Self) {
     
-    @scala.inline
-    def setChild(value: /* selector */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+    inline def setChild(value: /* selector */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
+    inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
-    @scala.inline
-    def setDown(value: /* selector */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+    inline def setDown(value: /* selector */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+    inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
-    @scala.inline
-    def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+    inline def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+    inline def setQueryBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryById(value: /* id */ js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
+    inline def setQueryById(value: /* id */ js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryByIdUndefined: Self = StObject.set(x, "queryById", js.undefined)
+    inline def setQueryByIdUndefined: Self = StObject.set(x, "queryById", js.undefined)
     
-    @scala.inline
-    def setQueryByUndefined: Self = StObject.set(x, "queryBy", js.undefined)
+    inline def setQueryByUndefined: Self = StObject.set(x, "queryBy", js.undefined)
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

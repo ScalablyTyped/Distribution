@@ -22,8 +22,7 @@ trait Media extends StObject {
 }
 object Media {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: String,
     cid: String,
     duration: Double,
@@ -36,28 +35,20 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  @scala.inline
-  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
+  extension [Self <: Media](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

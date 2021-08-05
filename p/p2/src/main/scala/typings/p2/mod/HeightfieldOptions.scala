@@ -18,40 +18,29 @@ trait HeightfieldOptions
 }
 object HeightfieldOptions {
   
-  @scala.inline
-  def apply(): HeightfieldOptions = {
+  inline def apply(): HeightfieldOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeightfieldOptions]
   }
   
-  @scala.inline
-  implicit class HeightfieldOptionsMutableBuilder[Self <: HeightfieldOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HeightfieldOptions](x: Self) {
     
-    @scala.inline
-    def setElementWidth(value: Double): Self = StObject.set(x, "elementWidth", value.asInstanceOf[js.Any])
+    inline def setElementWidth(value: Double): Self = StObject.set(x, "elementWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementWidthUndefined: Self = StObject.set(x, "elementWidth", js.undefined)
+    inline def setElementWidthUndefined: Self = StObject.set(x, "elementWidth", js.undefined)
     
-    @scala.inline
-    def setHeights(value: js.Array[Double]): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
+    inline def setHeights(value: js.Array[Double]): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
+    inline def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
     
-    @scala.inline
-    def setHeightsVarargs(value: Double*): Self = StObject.set(x, "heights", js.Array(value :_*))
+    inline def setHeightsVarargs(value: Double*): Self = StObject.set(x, "heights", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

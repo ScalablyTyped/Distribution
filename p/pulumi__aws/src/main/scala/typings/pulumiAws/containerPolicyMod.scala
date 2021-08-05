@@ -50,21 +50,16 @@ object containerPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ContainerPolicyState): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ContainerPolicyState, opts: CustomResourceOptions): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
+    inline def get(name: String, id: Input[ID]): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
+    inline def get(name: String, id: Input[ID], state: ContainerPolicyState): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
+    inline def get(name: String, id: Input[ID], state: ContainerPolicyState, opts: CustomResourceOptions): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
     
     /**
       * Returns true if the given object is an instance of ContainerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean]
   }
   
   trait ContainerPolicyArgs extends StObject {
@@ -81,20 +76,16 @@ object containerPolicyMod {
   }
   object ContainerPolicyArgs {
     
-    @scala.inline
-    def apply(containerName: Input[String], policy: Input[String]): ContainerPolicyArgs = {
+    inline def apply(containerName: Input[String], policy: Input[String]): ContainerPolicyArgs = {
       val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerPolicyArgs]
     }
     
-    @scala.inline
-    implicit class ContainerPolicyArgsMutableBuilder[Self <: ContainerPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      inline def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object containerPolicyMod {
   }
   object ContainerPolicyState {
     
-    @scala.inline
-    def apply(): ContainerPolicyState = {
+    inline def apply(): ContainerPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerPolicyState]
     }
     
-    @scala.inline
-    implicit class ContainerPolicyStateMutableBuilder[Self <: ContainerPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerPolicyState](x: Self) {
       
-      @scala.inline
-      def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      inline def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+      inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     }
   }
 }

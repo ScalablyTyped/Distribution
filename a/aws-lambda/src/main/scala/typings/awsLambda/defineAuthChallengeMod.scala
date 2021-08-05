@@ -22,8 +22,7 @@ object defineAuthChallengeMod {
   }
   object DefineAuthChallengeTriggerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callerContext: AwsSdkVersion,
       region: String,
       request: Session,
@@ -36,14 +35,11 @@ object defineAuthChallengeMod {
       __obj.asInstanceOf[DefineAuthChallengeTriggerEvent]
     }
     
-    @scala.inline
-    implicit class DefineAuthChallengeTriggerEventMutableBuilder[Self <: DefineAuthChallengeTriggerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DefineAuthChallengeTriggerEvent](x: Self) {
       
-      @scala.inline
-      def setRequest(value: Session): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Session): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: FailAuthentication): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: FailAuthentication): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

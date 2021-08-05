@@ -24,28 +24,21 @@ trait SchemaModelDefinition extends StObject {
 }
 object SchemaModelDefinition {
   
-  @scala.inline
-  def apply(): SchemaModelDefinition = {
+  inline def apply(): SchemaModelDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModelDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaModelDefinitionMutableBuilder[Self <: SchemaModelDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModelDefinition](x: Self) {
     
-    @scala.inline
-    def setModelOptions(value: Labels): Self = StObject.set(x, "modelOptions", value.asInstanceOf[js.Any])
+    inline def setModelOptions(value: Labels): Self = StObject.set(x, "modelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelOptionsUndefined: Self = StObject.set(x, "modelOptions", js.undefined)
+    inline def setModelOptionsUndefined: Self = StObject.set(x, "modelOptions", js.undefined)
     
-    @scala.inline
-    def setTrainingRuns(value: js.Array[SchemaBqmlTrainingRun]): Self = StObject.set(x, "trainingRuns", value.asInstanceOf[js.Any])
+    inline def setTrainingRuns(value: js.Array[SchemaBqmlTrainingRun]): Self = StObject.set(x, "trainingRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingRunsUndefined: Self = StObject.set(x, "trainingRuns", js.undefined)
+    inline def setTrainingRunsUndefined: Self = StObject.set(x, "trainingRuns", js.undefined)
     
-    @scala.inline
-    def setTrainingRunsVarargs(value: SchemaBqmlTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value :_*))
+    inline def setTrainingRunsVarargs(value: SchemaBqmlTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value :_*))
   }
 }

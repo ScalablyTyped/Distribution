@@ -18,11 +18,8 @@ object testingMod {
   class BrowserTestingModule ()
     extends typings.angularPlatformBrowser.testingTestingMod.BrowserTestingModule
   
-  @scala.inline
-  def platformBrowserTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserTesting")().asInstanceOf[PlatformRef]
-  @scala.inline
-  def platformBrowserTesting(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+  inline def platformBrowserTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserTesting")().asInstanceOf[PlatformRef]
+  inline def platformBrowserTesting(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserTestingTestingA(): NgZone = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_testing_testing_a")().asInstanceOf[NgZone]
+  inline def ɵangularPackagesPlatformBrowserTestingTestingA(): NgZone = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_testing_testing_a")().asInstanceOf[NgZone]
 }

@@ -15,25 +15,19 @@ trait ApiTestReport
 }
 object ApiTestReport {
   
-  @scala.inline
-  def apply(): ApiTestReport = {
+  inline def apply(): ApiTestReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiTestReport]
   }
   
-  @scala.inline
-  implicit class ApiTestReportMutableBuilder[Self <: ApiTestReport] (val x: Self) extends AnyVal {
+  extension [Self <: ApiTestReport](x: Self) {
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTest(value: ApiTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: ApiTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

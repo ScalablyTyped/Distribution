@@ -28,31 +28,23 @@ trait ChartResetZoomButtonOptions extends StObject {
 }
 object ChartResetZoomButtonOptions {
   
-  @scala.inline
-  def apply(): ChartResetZoomButtonOptions = {
+  inline def apply(): ChartResetZoomButtonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartResetZoomButtonOptions]
   }
   
-  @scala.inline
-  implicit class ChartResetZoomButtonOptionsMutableBuilder[Self <: ChartResetZoomButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartResetZoomButtonOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: AlignObject | ChartResetZoomButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: AlignObject | ChartResetZoomButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRelativeTo(value: ButtonRelativeToValue): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+    inline def setRelativeTo(value: ButtonRelativeToValue): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
+    inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     
-    @scala.inline
-    def setTheme(value: SVGAttributes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: SVGAttributes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

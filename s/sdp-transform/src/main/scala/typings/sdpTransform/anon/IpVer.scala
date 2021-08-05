@@ -16,34 +16,25 @@ trait IpVer extends StObject {
 }
 object IpVer {
   
-  @scala.inline
-  def apply(port: Double): IpVer = {
+  inline def apply(port: Double): IpVer = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpVer]
   }
   
-  @scala.inline
-  implicit class IpVerMutableBuilder[Self <: IpVer] (val x: Self) extends AnyVal {
+  extension [Self <: IpVer](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setIpVer(value: Double): Self = StObject.set(x, "ipVer", value.asInstanceOf[js.Any])
+    inline def setIpVer(value: Double): Self = StObject.set(x, "ipVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpVerUndefined: Self = StObject.set(x, "ipVer", js.undefined)
+    inline def setIpVerUndefined: Self = StObject.set(x, "ipVer", js.undefined)
     
-    @scala.inline
-    def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
+    inline def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetTypeUndefined: Self = StObject.set(x, "netType", js.undefined)
+    inline def setNetTypeUndefined: Self = StObject.set(x, "netType", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

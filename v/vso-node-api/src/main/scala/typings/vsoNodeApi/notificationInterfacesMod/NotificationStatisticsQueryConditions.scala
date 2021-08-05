@@ -22,8 +22,7 @@ trait NotificationStatisticsQueryConditions extends StObject {
 }
 object NotificationStatisticsQueryConditions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endDate: Date,
     hitCountMinimum: Double,
     path: String,
@@ -36,25 +35,18 @@ object NotificationStatisticsQueryConditions {
     __obj.asInstanceOf[NotificationStatisticsQueryConditions]
   }
   
-  @scala.inline
-  implicit class NotificationStatisticsQueryConditionsMutableBuilder[Self <: NotificationStatisticsQueryConditions] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationStatisticsQueryConditions](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitCountMinimum(value: Double): Self = StObject.set(x, "hitCountMinimum", value.asInstanceOf[js.Any])
+    inline def setHitCountMinimum(value: Double): Self = StObject.set(x, "hitCountMinimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NotificationStatisticType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NotificationStatisticType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: IdentityRef): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: IdentityRef): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

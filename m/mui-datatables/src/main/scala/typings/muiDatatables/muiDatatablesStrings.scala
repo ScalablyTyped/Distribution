@@ -16,144 +16,121 @@ object muiDatatablesStrings {
     extends StObject
        with ChipColor
        with ChipVariant
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait above extends StObject
-  @scala.inline
-  def above: above = "above".asInstanceOf[above]
+  inline def above: above = "above".asInstanceOf[above]
   
   @js.native
   sealed trait asc extends StObject
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait checkbox
     extends StObject
        with FilterType
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
   sealed trait chip extends StObject
-  @scala.inline
-  def chip: chip = "chip".asInstanceOf[chip]
+  inline def chip: chip = "chip".asInstanceOf[chip]
   
   @js.native
   sealed trait custom
     extends StObject
        with FilterType
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait desc extends StObject
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait disabled extends StObject
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait dropdown
     extends StObject
        with FilterType
-  @scala.inline
-  def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
   sealed trait excluded extends StObject
-  @scala.inline
-  def excluded: excluded = "excluded".asInstanceOf[excluded]
+  inline def excluded: excluded = "excluded".asInstanceOf[excluded]
   
   @js.native
   sealed trait multiple
     extends StObject
        with SelectableRows
-  @scala.inline
-  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  inline def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
   sealed trait multiselect
     extends StObject
        with FilterType
-  @scala.inline
-  def multiselect: multiselect = "multiselect".asInstanceOf[multiselect]
+  inline def multiselect: multiselect = "multiselect".asInstanceOf[multiselect]
   
   @js.native
   sealed trait none
     extends StObject
        with SelectableRows
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait outlined
     extends StObject
        with ChipVariant
-  @scala.inline
-  def outlined: outlined = "outlined".asInstanceOf[outlined]
+  inline def outlined: outlined = "outlined".asInstanceOf[outlined]
   
   @js.native
   sealed trait primary
     extends StObject
        with ChipColor
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
+  inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
   sealed trait replace extends StObject
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
   sealed trait reset extends StObject
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
   sealed trait secondary
     extends StObject
        with ChipColor
-  @scala.inline
-  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
   sealed trait simple
     extends StObject
        with Responsive
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
+  inline def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
   sealed trait single
     extends StObject
        with SelectableRows
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  inline def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait standard
     extends StObject
        with Responsive
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait textField
     extends StObject
        with FilterType
-  @scala.inline
-  def textField: textField = "textField".asInstanceOf[textField]
+  inline def textField: textField = "textField".asInstanceOf[textField]
   
   @js.native
   sealed trait vertical
     extends StObject
        with Responsive
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

@@ -12,22 +12,17 @@ trait SyntaxParseResult extends StObject {
 }
 object SyntaxParseResult {
   
-  @scala.inline
-  def apply(errors: js.Array[String], parseable: Boolean): SyntaxParseResult = {
+  inline def apply(errors: js.Array[String], parseable: Boolean): SyntaxParseResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], parseable = parseable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxParseResult]
   }
   
-  @scala.inline
-  implicit class SyntaxParseResultMutableBuilder[Self <: SyntaxParseResult] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxParseResult](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setParseable(value: Boolean): Self = StObject.set(x, "parseable", value.asInstanceOf[js.Any])
+    inline def setParseable(value: Boolean): Self = StObject.set(x, "parseable", value.asInstanceOf[js.Any])
   }
 }

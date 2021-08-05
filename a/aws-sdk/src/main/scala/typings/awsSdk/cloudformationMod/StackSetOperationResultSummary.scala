@@ -38,49 +38,35 @@ trait StackSetOperationResultSummary extends StObject {
 }
 object StackSetOperationResultSummary {
   
-  @scala.inline
-  def apply(): StackSetOperationResultSummary = {
+  inline def apply(): StackSetOperationResultSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackSetOperationResultSummary]
   }
   
-  @scala.inline
-  implicit class StackSetOperationResultSummaryMutableBuilder[Self <: StackSetOperationResultSummary] (val x: Self) extends AnyVal {
+  extension [Self <: StackSetOperationResultSummary](x: Self) {
     
-    @scala.inline
-    def setAccount(value: Account): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Account): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountGateResult(value: AccountGateResult): Self = StObject.set(x, "AccountGateResult", value.asInstanceOf[js.Any])
+    inline def setAccountGateResult(value: AccountGateResult): Self = StObject.set(x, "AccountGateResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountGateResultUndefined: Self = StObject.set(x, "AccountGateResult", js.undefined)
+    inline def setAccountGateResultUndefined: Self = StObject.set(x, "AccountGateResult", js.undefined)
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
-    @scala.inline
-    def setOrganizationalUnitId(value: OrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitId(value: OrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitIdUndefined: Self = StObject.set(x, "OrganizationalUnitId", js.undefined)
+    inline def setOrganizationalUnitIdUndefined: Self = StObject.set(x, "OrganizationalUnitId", js.undefined)
     
-    @scala.inline
-    def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StackSetOperationResultStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StackSetOperationResultStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: Reason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: Reason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

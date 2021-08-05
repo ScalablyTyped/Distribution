@@ -33,31 +33,23 @@ trait TestScriptSetupActionOperationRequestHeader
 }
 object TestScriptSetupActionOperationRequestHeader {
   
-  @scala.inline
-  def apply(field: String, value: String): TestScriptSetupActionOperationRequestHeader = {
+  inline def apply(field: String, value: String): TestScriptSetupActionOperationRequestHeader = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptSetupActionOperationRequestHeader]
   }
   
-  @scala.inline
-  implicit class TestScriptSetupActionOperationRequestHeaderMutableBuilder[Self <: TestScriptSetupActionOperationRequestHeader] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptSetupActionOperationRequestHeader](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_field(value: Element): Self = StObject.set(x, "_field", value.asInstanceOf[js.Any])
+    inline def set_field(value: Element): Self = StObject.set(x, "_field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fieldUndefined: Self = StObject.set(x, "_field", js.undefined)
+    inline def set_fieldUndefined: Self = StObject.set(x, "_field", js.undefined)
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

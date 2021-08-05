@@ -26,8 +26,7 @@ object activityIndicatorMod {
     @JSImport("@ant-design/react-native/lib/activity-indicator", "default.defaultProps")
     @js.native
     def defaultProps: Animating = js.native
-    @scala.inline
-    def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ActivityIndicatorNativeProps
@@ -49,50 +48,36 @@ object activityIndicatorMod {
   }
   object ActivityIndicatorNativeProps {
     
-    @scala.inline
-    def apply(): ActivityIndicatorNativeProps = {
+    inline def apply(): ActivityIndicatorNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActivityIndicatorNativeProps]
     }
     
-    @scala.inline
-    implicit class ActivityIndicatorNativePropsMutableBuilder[Self <: ActivityIndicatorNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActivityIndicatorNativeProps](x: Self) {
       
-      @scala.inline
-      def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+      inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
+      inline def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyles(value: ActivityIndicatorStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ActivityIndicatorStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setToast(value: Boolean): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+      inline def setToast(value: Boolean): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
+      inline def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
     }
   }
   

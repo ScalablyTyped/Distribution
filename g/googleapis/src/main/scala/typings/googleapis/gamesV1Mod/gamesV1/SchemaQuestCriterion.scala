@@ -45,43 +45,31 @@ trait SchemaQuestCriterion extends StObject {
 }
 object SchemaQuestCriterion {
   
-  @scala.inline
-  def apply(): SchemaQuestCriterion = {
+  inline def apply(): SchemaQuestCriterion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuestCriterion]
   }
   
-  @scala.inline
-  implicit class SchemaQuestCriterionMutableBuilder[Self <: SchemaQuestCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuestCriterion](x: Self) {
     
-    @scala.inline
-    def setCompletionContribution(value: SchemaQuestContribution): Self = StObject.set(x, "completionContribution", value.asInstanceOf[js.Any])
+    inline def setCompletionContribution(value: SchemaQuestContribution): Self = StObject.set(x, "completionContribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionContributionUndefined: Self = StObject.set(x, "completionContribution", js.undefined)
+    inline def setCompletionContributionUndefined: Self = StObject.set(x, "completionContribution", js.undefined)
     
-    @scala.inline
-    def setCurrentContribution(value: SchemaQuestContribution): Self = StObject.set(x, "currentContribution", value.asInstanceOf[js.Any])
+    inline def setCurrentContribution(value: SchemaQuestContribution): Self = StObject.set(x, "currentContribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentContributionUndefined: Self = StObject.set(x, "currentContribution", js.undefined)
+    inline def setCurrentContributionUndefined: Self = StObject.set(x, "currentContribution", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setInitialPlayerProgress(value: SchemaQuestContribution): Self = StObject.set(x, "initialPlayerProgress", value.asInstanceOf[js.Any])
+    inline def setInitialPlayerProgress(value: SchemaQuestContribution): Self = StObject.set(x, "initialPlayerProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPlayerProgressUndefined: Self = StObject.set(x, "initialPlayerProgress", js.undefined)
+    inline def setInitialPlayerProgressUndefined: Self = StObject.set(x, "initialPlayerProgress", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -58,73 +58,51 @@ trait AutoBranchCreationConfig extends StObject {
 }
 object AutoBranchCreationConfig {
   
-  @scala.inline
-  def apply(): AutoBranchCreationConfig = {
+  inline def apply(): AutoBranchCreationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoBranchCreationConfig]
   }
   
-  @scala.inline
-  implicit class AutoBranchCreationConfigMutableBuilder[Self <: AutoBranchCreationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AutoBranchCreationConfig](x: Self) {
     
-    @scala.inline
-    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
+    inline def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicAuthCredentialsUndefined: Self = StObject.set(x, "basicAuthCredentials", js.undefined)
+    inline def setBasicAuthCredentialsUndefined: Self = StObject.set(x, "basicAuthCredentials", js.undefined)
     
-    @scala.inline
-    def setBuildSpec(value: BuildSpec): Self = StObject.set(x, "buildSpec", value.asInstanceOf[js.Any])
+    inline def setBuildSpec(value: BuildSpec): Self = StObject.set(x, "buildSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
+    inline def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
     
-    @scala.inline
-    def setEnableAutoBuild(value: EnableAutoBuild): Self = StObject.set(x, "enableAutoBuild", value.asInstanceOf[js.Any])
+    inline def setEnableAutoBuild(value: EnableAutoBuild): Self = StObject.set(x, "enableAutoBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutoBuildUndefined: Self = StObject.set(x, "enableAutoBuild", js.undefined)
+    inline def setEnableAutoBuildUndefined: Self = StObject.set(x, "enableAutoBuild", js.undefined)
     
-    @scala.inline
-    def setEnableBasicAuth(value: EnableBasicAuth): Self = StObject.set(x, "enableBasicAuth", value.asInstanceOf[js.Any])
+    inline def setEnableBasicAuth(value: EnableBasicAuth): Self = StObject.set(x, "enableBasicAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableBasicAuthUndefined: Self = StObject.set(x, "enableBasicAuth", js.undefined)
+    inline def setEnableBasicAuthUndefined: Self = StObject.set(x, "enableBasicAuth", js.undefined)
     
-    @scala.inline
-    def setEnablePerformanceMode(value: EnablePerformanceMode): Self = StObject.set(x, "enablePerformanceMode", value.asInstanceOf[js.Any])
+    inline def setEnablePerformanceMode(value: EnablePerformanceMode): Self = StObject.set(x, "enablePerformanceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePerformanceModeUndefined: Self = StObject.set(x, "enablePerformanceMode", js.undefined)
+    inline def setEnablePerformanceModeUndefined: Self = StObject.set(x, "enablePerformanceMode", js.undefined)
     
-    @scala.inline
-    def setEnablePullRequestPreview(value: EnablePullRequestPreview): Self = StObject.set(x, "enablePullRequestPreview", value.asInstanceOf[js.Any])
+    inline def setEnablePullRequestPreview(value: EnablePullRequestPreview): Self = StObject.set(x, "enablePullRequestPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePullRequestPreviewUndefined: Self = StObject.set(x, "enablePullRequestPreview", js.undefined)
+    inline def setEnablePullRequestPreviewUndefined: Self = StObject.set(x, "enablePullRequestPreview", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariables): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: EnvironmentVariables): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    @scala.inline
-    def setFramework(value: Framework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: Framework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+    inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
-    @scala.inline
-    def setPullRequestEnvironmentName(value: PullRequestEnvironmentName): Self = StObject.set(x, "pullRequestEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setPullRequestEnvironmentName(value: PullRequestEnvironmentName): Self = StObject.set(x, "pullRequestEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestEnvironmentNameUndefined: Self = StObject.set(x, "pullRequestEnvironmentName", js.undefined)
+    inline def setPullRequestEnvironmentNameUndefined: Self = StObject.set(x, "pullRequestEnvironmentName", js.undefined)
     
-    @scala.inline
-    def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
   }
 }

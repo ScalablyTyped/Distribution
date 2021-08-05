@@ -12,19 +12,15 @@ trait IgLinkPropertiesDialogMethods extends StObject {
 }
 object IgLinkPropertiesDialogMethods {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: js.Object => Unit): IgLinkPropertiesDialogMethods = {
+  inline def apply(hide: () => Unit, show: js.Object => Unit): IgLinkPropertiesDialogMethods = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction1(show))
     __obj.asInstanceOf[IgLinkPropertiesDialogMethods]
   }
   
-  @scala.inline
-  implicit class IgLinkPropertiesDialogMethodsMutableBuilder[Self <: IgLinkPropertiesDialogMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgLinkPropertiesDialogMethods](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: js.Object => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: js.Object => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

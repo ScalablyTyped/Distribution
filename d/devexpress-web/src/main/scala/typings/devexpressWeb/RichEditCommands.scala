@@ -1186,8 +1186,7 @@ trait RichEditCommands extends StObject {
 }
 object RichEditCommands {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSpacingAfterParagraph: AddSpacingAfterParagraphCommand,
     addSpacingBeforeParagraph: AddSpacingBeforeParagraphCommand,
     assignShortcut: AssignShortcutCommand,
@@ -1428,712 +1427,476 @@ object RichEditCommands {
     __obj.asInstanceOf[RichEditCommands]
   }
   
-  @scala.inline
-  implicit class RichEditCommandsMutableBuilder[Self <: RichEditCommands] (val x: Self) extends AnyVal {
+  extension [Self <: RichEditCommands](x: Self) {
     
-    @scala.inline
-    def setAddSpacingAfterParagraph(value: AddSpacingAfterParagraphCommand): Self = StObject.set(x, "addSpacingAfterParagraph", value.asInstanceOf[js.Any])
+    inline def setAddSpacingAfterParagraph(value: AddSpacingAfterParagraphCommand): Self = StObject.set(x, "addSpacingAfterParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSpacingBeforeParagraph(value: AddSpacingBeforeParagraphCommand): Self = StObject.set(x, "addSpacingBeforeParagraph", value.asInstanceOf[js.Any])
+    inline def setAddSpacingBeforeParagraph(value: AddSpacingBeforeParagraphCommand): Self = StObject.set(x, "addSpacingBeforeParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignShortcut(value: AssignShortcutCommand): Self = StObject.set(x, "assignShortcut", value.asInstanceOf[js.Any])
+    inline def setAssignShortcut(value: AssignShortcutCommand): Self = StObject.set(x, "assignShortcut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackspace(value: BackspaceCommand): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
+    inline def setBackspace(value: BackspaceCommand): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
+    inline def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCapitalizeEachWordTextCase(value: CapitalizeEachWordTextCaseCommand): Self = StObject.set(x, "capitalizeEachWordTextCase", value.asInstanceOf[js.Any])
+    inline def setCapitalizeEachWordTextCase(value: CapitalizeEachWordTextCaseCommand): Self = StObject.set(x, "capitalizeEachWordTextCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeCustomNumberingList(value: ChangeCustomNumberingListCommand): Self = StObject.set(x, "changeCustomNumberingList", value.asInstanceOf[js.Any])
+    inline def setChangeCustomNumberingList(value: ChangeCustomNumberingListCommand): Self = StObject.set(x, "changeCustomNumberingList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectAbsolutePosition(value: ChangeFloatingObjectAbsolutePositionCommand): Self = StObject.set(x, "changeFloatingObjectAbsolutePosition", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectAbsolutePosition(value: ChangeFloatingObjectAbsolutePositionCommand): Self = StObject.set(x, "changeFloatingObjectAbsolutePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectAbsoluteSize(value: ChangeFloatingObjectAbsoluteSizeCommand): Self = StObject.set(x, "changeFloatingObjectAbsoluteSize", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectAbsoluteSize(value: ChangeFloatingObjectAbsoluteSizeCommand): Self = StObject.set(x, "changeFloatingObjectAbsoluteSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectAlignmentPosition(value: ChangeFloatingObjectAlignmentPositionCommand): Self = StObject.set(x, "changeFloatingObjectAlignmentPosition", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectAlignmentPosition(value: ChangeFloatingObjectAlignmentPositionCommand): Self = StObject.set(x, "changeFloatingObjectAlignmentPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectFillColor(value: ChangeFloatingObjectFillColorCommand): Self = StObject.set(x, "changeFloatingObjectFillColor", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectFillColor(value: ChangeFloatingObjectFillColorCommand): Self = StObject.set(x, "changeFloatingObjectFillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectLockAnchor(value: ChangeFloatingObjectLockAnchorCommand): Self = StObject.set(x, "changeFloatingObjectLockAnchor", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectLockAnchor(value: ChangeFloatingObjectLockAnchorCommand): Self = StObject.set(x, "changeFloatingObjectLockAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectLockAspectRatio(value: ChangeFloatingObjectLockAspectRatioCommand): Self = StObject.set(x, "changeFloatingObjectLockAspectRatio", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectLockAspectRatio(value: ChangeFloatingObjectLockAspectRatioCommand): Self = StObject.set(x, "changeFloatingObjectLockAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectOutlineColor(value: ChangeFloatingObjectOutlineColorCommand): Self = StObject.set(x, "changeFloatingObjectOutlineColor", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectOutlineColor(value: ChangeFloatingObjectOutlineColorCommand): Self = StObject.set(x, "changeFloatingObjectOutlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectOutlineWidth(value: ChangeFloatingObjectOutlineWidthCommand): Self = StObject.set(x, "changeFloatingObjectOutlineWidth", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectOutlineWidth(value: ChangeFloatingObjectOutlineWidthCommand): Self = StObject.set(x, "changeFloatingObjectOutlineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectRelativePosition(value: ChangeFloatingObjectRelativePositionCommand): Self = StObject.set(x, "changeFloatingObjectRelativePosition", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectRelativePosition(value: ChangeFloatingObjectRelativePositionCommand): Self = StObject.set(x, "changeFloatingObjectRelativePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectRotation(value: ChangeFloatingObjectRotationCommand): Self = StObject.set(x, "changeFloatingObjectRotation", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectRotation(value: ChangeFloatingObjectRotationCommand): Self = StObject.set(x, "changeFloatingObjectRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFloatingObjectTextWrapping(value: ChangeFloatingObjectTextWrappingCommand): Self = StObject.set(x, "changeFloatingObjectTextWrapping", value.asInstanceOf[js.Any])
+    inline def setChangeFloatingObjectTextWrapping(value: ChangeFloatingObjectTextWrappingCommand): Self = StObject.set(x, "changeFloatingObjectTextWrapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontBackColor(value: ChangeFontBackColorCommand): Self = StObject.set(x, "changeFontBackColor", value.asInstanceOf[js.Any])
+    inline def setChangeFontBackColor(value: ChangeFontBackColorCommand): Self = StObject.set(x, "changeFontBackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontBold(value: ChangeFontBoldCommand): Self = StObject.set(x, "changeFontBold", value.asInstanceOf[js.Any])
+    inline def setChangeFontBold(value: ChangeFontBoldCommand): Self = StObject.set(x, "changeFontBold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontForeColor(value: ChangeFontForeColorCommand): Self = StObject.set(x, "changeFontForeColor", value.asInstanceOf[js.Any])
+    inline def setChangeFontForeColor(value: ChangeFontForeColorCommand): Self = StObject.set(x, "changeFontForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontFormatting(value: ChangeFontFormattingCommand): Self = StObject.set(x, "changeFontFormatting", value.asInstanceOf[js.Any])
+    inline def setChangeFontFormatting(value: ChangeFontFormattingCommand): Self = StObject.set(x, "changeFontFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontItalic(value: ChangeFontItalicCommand): Self = StObject.set(x, "changeFontItalic", value.asInstanceOf[js.Any])
+    inline def setChangeFontItalic(value: ChangeFontItalicCommand): Self = StObject.set(x, "changeFontItalic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontName(value: ChangeFontNameCommand): Self = StObject.set(x, "changeFontName", value.asInstanceOf[js.Any])
+    inline def setChangeFontName(value: ChangeFontNameCommand): Self = StObject.set(x, "changeFontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontSize(value: ChangeFontSizeCommand): Self = StObject.set(x, "changeFontSize", value.asInstanceOf[js.Any])
+    inline def setChangeFontSize(value: ChangeFontSizeCommand): Self = StObject.set(x, "changeFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontStrikeout(value: ChangeFontStrikeoutCommand): Self = StObject.set(x, "changeFontStrikeout", value.asInstanceOf[js.Any])
+    inline def setChangeFontStrikeout(value: ChangeFontStrikeoutCommand): Self = StObject.set(x, "changeFontStrikeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontSubscript(value: ChangeFontSubscriptCommand): Self = StObject.set(x, "changeFontSubscript", value.asInstanceOf[js.Any])
+    inline def setChangeFontSubscript(value: ChangeFontSubscriptCommand): Self = StObject.set(x, "changeFontSubscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontSuperscript(value: ChangeFontSuperscriptCommand): Self = StObject.set(x, "changeFontSuperscript", value.asInstanceOf[js.Any])
+    inline def setChangeFontSuperscript(value: ChangeFontSuperscriptCommand): Self = StObject.set(x, "changeFontSuperscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeFontUnderline(value: ChangeFontUnderlineCommand): Self = StObject.set(x, "changeFontUnderline", value.asInstanceOf[js.Any])
+    inline def setChangeFontUnderline(value: ChangeFontUnderlineCommand): Self = StObject.set(x, "changeFontUnderline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeHyperlink(value: ChangeHyperlinkCommand): Self = StObject.set(x, "changeHyperlink", value.asInstanceOf[js.Any])
+    inline def setChangeHyperlink(value: ChangeHyperlinkCommand): Self = StObject.set(x, "changeHyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangePageColor(value: ChangePageColorCommand): Self = StObject.set(x, "changePageColor", value.asInstanceOf[js.Any])
+    inline def setChangePageColor(value: ChangePageColorCommand): Self = StObject.set(x, "changePageColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangePageMargins(value: ChangePageMarginsCommand): Self = StObject.set(x, "changePageMargins", value.asInstanceOf[js.Any])
+    inline def setChangePageMargins(value: ChangePageMarginsCommand): Self = StObject.set(x, "changePageMargins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangePageOrientation(value: ChangePageOrientationCommand): Self = StObject.set(x, "changePageOrientation", value.asInstanceOf[js.Any])
+    inline def setChangePageOrientation(value: ChangePageOrientationCommand): Self = StObject.set(x, "changePageOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangePageSize(value: ChangePageSizeCommand): Self = StObject.set(x, "changePageSize", value.asInstanceOf[js.Any])
+    inline def setChangePageSize(value: ChangePageSizeCommand): Self = StObject.set(x, "changePageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeParagraphBackColor(value: ChangeParagraphBackColorCommand): Self = StObject.set(x, "changeParagraphBackColor", value.asInstanceOf[js.Any])
+    inline def setChangeParagraphBackColor(value: ChangeParagraphBackColorCommand): Self = StObject.set(x, "changeParagraphBackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeParagraphFormatting(value: ChangeParagraphFormattingCommand): Self = StObject.set(x, "changeParagraphFormatting", value.asInstanceOf[js.Any])
+    inline def setChangeParagraphFormatting(value: ChangeParagraphFormattingCommand): Self = StObject.set(x, "changeParagraphFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangePictureScale(value: ChangePictureScaleCommand): Self = StObject.set(x, "changePictureScale", value.asInstanceOf[js.Any])
+    inline def setChangePictureScale(value: ChangePictureScaleCommand): Self = StObject.set(x, "changePictureScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSectionColumns(value: ChangeSectionColumnsCommand): Self = StObject.set(x, "changeSectionColumns", value.asInstanceOf[js.Any])
+    inline def setChangeSectionColumns(value: ChangeSectionColumnsCommand): Self = StObject.set(x, "changeSectionColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSectionEqualColumnCount(value: ChangeSectionEqualColumnCountCommand): Self = StObject.set(x, "changeSectionEqualColumnCount", value.asInstanceOf[js.Any])
+    inline def setChangeSectionEqualColumnCount(value: ChangeSectionEqualColumnCountCommand): Self = StObject.set(x, "changeSectionEqualColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeStyle(value: ChangeStyleCommand): Self = StObject.set(x, "changeStyle", value.asInstanceOf[js.Any])
+    inline def setChangeStyle(value: ChangeStyleCommand): Self = StObject.set(x, "changeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableBorderRepositoryItem(value: ChangeTableBorderRepositoryItemCommand): Self = StObject.set(x, "changeTableBorderRepositoryItem", value.asInstanceOf[js.Any])
+    inline def setChangeTableBorderRepositoryItem(value: ChangeTableBorderRepositoryItemCommand): Self = StObject.set(x, "changeTableBorderRepositoryItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableBordersAndShading(value: ChangeTableBordersAndShadingCommand): Self = StObject.set(x, "changeTableBordersAndShading", value.asInstanceOf[js.Any])
+    inline def setChangeTableBordersAndShading(value: ChangeTableBordersAndShadingCommand): Self = StObject.set(x, "changeTableBordersAndShading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableCellFormatting(value: ChangeTableCellFormattingCommand): Self = StObject.set(x, "changeTableCellFormatting", value.asInstanceOf[js.Any])
+    inline def setChangeTableCellFormatting(value: ChangeTableCellFormattingCommand): Self = StObject.set(x, "changeTableCellFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableCellPreferredWidth(value: ChangeTableCellPreferredWidthCommand): Self = StObject.set(x, "changeTableCellPreferredWidth", value.asInstanceOf[js.Any])
+    inline def setChangeTableCellPreferredWidth(value: ChangeTableCellPreferredWidthCommand): Self = StObject.set(x, "changeTableCellPreferredWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableCellShading(value: ChangeTableCellShadingCommand): Self = StObject.set(x, "changeTableCellShading", value.asInstanceOf[js.Any])
+    inline def setChangeTableCellShading(value: ChangeTableCellShadingCommand): Self = StObject.set(x, "changeTableCellShading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableColumnPreferredWidth(value: ChangeTableColumnPreferredWidthCommand): Self = StObject.set(x, "changeTableColumnPreferredWidth", value.asInstanceOf[js.Any])
+    inline def setChangeTableColumnPreferredWidth(value: ChangeTableColumnPreferredWidthCommand): Self = StObject.set(x, "changeTableColumnPreferredWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableFormatting(value: ChangeTableFormattingCommand): Self = StObject.set(x, "changeTableFormatting", value.asInstanceOf[js.Any])
+    inline def setChangeTableFormatting(value: ChangeTableFormattingCommand): Self = StObject.set(x, "changeTableFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableLook(value: ChangeTableLookCommand): Self = StObject.set(x, "changeTableLook", value.asInstanceOf[js.Any])
+    inline def setChangeTableLook(value: ChangeTableLookCommand): Self = StObject.set(x, "changeTableLook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableRowPreferredHeight(value: ChangeTableRowPreferredHeightCommand): Self = StObject.set(x, "changeTableRowPreferredHeight", value.asInstanceOf[js.Any])
+    inline def setChangeTableRowPreferredHeight(value: ChangeTableRowPreferredHeightCommand): Self = StObject.set(x, "changeTableRowPreferredHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTableStyle(value: ChangeTableStyleCommand): Self = StObject.set(x, "changeTableStyle", value.asInstanceOf[js.Any])
+    inline def setChangeTableStyle(value: ChangeTableStyleCommand): Self = StObject.set(x, "changeTableStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTabs(value: ChangeTabsCommand): Self = StObject.set(x, "changeTabs", value.asInstanceOf[js.Any])
+    inline def setChangeTabs(value: ChangeTabsCommand): Self = StObject.set(x, "changeTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTextBoxContentMargins(value: ChangeTextBoxContentMarginsCommand): Self = StObject.set(x, "changeTextBoxContentMargins", value.asInstanceOf[js.Any])
+    inline def setChangeTextBoxContentMargins(value: ChangeTextBoxContentMarginsCommand): Self = StObject.set(x, "changeTextBoxContentMargins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTextBoxRelativeSize(value: ChangeTextBoxRelativeSizeCommand): Self = StObject.set(x, "changeTextBoxRelativeSize", value.asInstanceOf[js.Any])
+    inline def setChangeTextBoxRelativeSize(value: ChangeTextBoxRelativeSizeCommand): Self = StObject.set(x, "changeTextBoxRelativeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTextBoxResizeShapeToFitText(value: ChangeTextBoxResizeShapeToFitTextCommand): Self = StObject.set(x, "changeTextBoxResizeShapeToFitText", value.asInstanceOf[js.Any])
+    inline def setChangeTextBoxResizeShapeToFitText(value: ChangeTextBoxResizeShapeToFitTextCommand): Self = StObject.set(x, "changeTextBoxResizeShapeToFitText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeViewType(value: ChangeViewTypeCommand): Self = StObject.set(x, "changeViewType", value.asInstanceOf[js.Any])
+    inline def setChangeViewType(value: ChangeViewTypeCommand): Self = StObject.set(x, "changeViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFormatting(value: ClearFormattingCommand): Self = StObject.set(x, "clearFormatting", value.asInstanceOf[js.Any])
+    inline def setClearFormatting(value: ClearFormattingCommand): Self = StObject.set(x, "clearFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseHeaderFooter(value: CloseHeaderFooterCommand): Self = StObject.set(x, "closeHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setCloseHeaderFooter(value: CloseHeaderFooterCommand): Self = StObject.set(x, "closeHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueNumberingList(value: ContinueNumberingListCommand): Self = StObject.set(x, "continueNumberingList", value.asInstanceOf[js.Any])
+    inline def setContinueNumberingList(value: ContinueNumberingListCommand): Self = StObject.set(x, "continueNumberingList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: CopyCommand): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    inline def setCopy(value: CopyCommand): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyContent(value: CopyContentCommand): Self = StObject.set(x, "copyContent", value.asInstanceOf[js.Any])
+    inline def setCopyContent(value: CopyContentCommand): Self = StObject.set(x, "copyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateField(value: CreateDateFieldCommand): Self = StObject.set(x, "createDateField", value.asInstanceOf[js.Any])
+    inline def setCreateDateField(value: CreateDateFieldCommand): Self = StObject.set(x, "createDateField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateField(value: CreateFieldCommand): Self = StObject.set(x, "createField", value.asInstanceOf[js.Any])
+    inline def setCreateField(value: CreateFieldCommand): Self = StObject.set(x, "createField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateMergeField(value: CreateMergeFieldCommand): Self = StObject.set(x, "createMergeField", value.asInstanceOf[js.Any])
+    inline def setCreateMergeField(value: CreateMergeFieldCommand): Self = StObject.set(x, "createMergeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatePageCountField(value: CreatePageCountFieldCommand): Self = StObject.set(x, "createPageCountField", value.asInstanceOf[js.Any])
+    inline def setCreatePageCountField(value: CreatePageCountFieldCommand): Self = StObject.set(x, "createPageCountField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatePageField(value: CreatePageFieldCommand): Self = StObject.set(x, "createPageField", value.asInstanceOf[js.Any])
+    inline def setCreatePageField(value: CreatePageFieldCommand): Self = StObject.set(x, "createPageField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeField(value: CreateTimeFieldCommand): Self = StObject.set(x, "createTimeField", value.asInstanceOf[js.Any])
+    inline def setCreateTimeField(value: CreateTimeFieldCommand): Self = StObject.set(x, "createTimeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCut(value: CutCommand): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
+    inline def setCut(value: CutCommand): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecreaseFontSize(value: DecreaseFontSizeCommand): Self = StObject.set(x, "decreaseFontSize", value.asInstanceOf[js.Any])
+    inline def setDecreaseFontSize(value: DecreaseFontSizeCommand): Self = StObject.set(x, "decreaseFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecreaseIndent(value: DecreaseIndentCommand): Self = StObject.set(x, "decreaseIndent", value.asInstanceOf[js.Any])
+    inline def setDecreaseIndent(value: DecreaseIndentCommand): Self = StObject.set(x, "decreaseIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecrementNumberingIndent(value: DecrementNumberingIndentCommand): Self = StObject.set(x, "decrementNumberingIndent", value.asInstanceOf[js.Any])
+    inline def setDecrementNumberingIndent(value: DecrementNumberingIndentCommand): Self = StObject.set(x, "decrementNumberingIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecrementParagraphLeftIndent(value: DecrementParagraphLeftIndentCommand): Self = StObject.set(x, "decrementParagraphLeftIndent", value.asInstanceOf[js.Any])
+    inline def setDecrementParagraphLeftIndent(value: DecrementParagraphLeftIndentCommand): Self = StObject.set(x, "decrementParagraphLeftIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: DeleteCommand): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: DeleteCommand): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteBookmark(value: DeleteBookmarkCommand): Self = StObject.set(x, "deleteBookmark", value.asInstanceOf[js.Any])
+    inline def setDeleteBookmark(value: DeleteBookmarkCommand): Self = StObject.set(x, "deleteBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteHyperlink(value: DeleteHyperlinkCommand): Self = StObject.set(x, "deleteHyperlink", value.asInstanceOf[js.Any])
+    inline def setDeleteHyperlink(value: DeleteHyperlinkCommand): Self = StObject.set(x, "deleteHyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteHyperlinks(value: DeleteHyperlinksCommand): Self = StObject.set(x, "deleteHyperlinks", value.asInstanceOf[js.Any])
+    inline def setDeleteHyperlinks(value: DeleteHyperlinksCommand): Self = StObject.set(x, "deleteHyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTable(value: DeleteTableCommand): Self = StObject.set(x, "deleteTable", value.asInstanceOf[js.Any])
+    inline def setDeleteTable(value: DeleteTableCommand): Self = StObject.set(x, "deleteTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTableCellsDialog(value: DeleteTableCellsDialogCommand): Self = StObject.set(x, "deleteTableCellsDialog", value.asInstanceOf[js.Any])
+    inline def setDeleteTableCellsDialog(value: DeleteTableCellsDialogCommand): Self = StObject.set(x, "deleteTableCellsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTableCellsWithShiftHorizontally(value: DeleteTableCellsWithShiftHorizontallyCommand): Self = StObject.set(x, "deleteTableCellsWithShiftHorizontally", value.asInstanceOf[js.Any])
+    inline def setDeleteTableCellsWithShiftHorizontally(value: DeleteTableCellsWithShiftHorizontallyCommand): Self = StObject.set(x, "deleteTableCellsWithShiftHorizontally", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTableCellsWithShiftVertically(value: DeleteTableCellsWithShiftVerticallyCommand): Self = StObject.set(x, "deleteTableCellsWithShiftVertically", value.asInstanceOf[js.Any])
+    inline def setDeleteTableCellsWithShiftVertically(value: DeleteTableCellsWithShiftVerticallyCommand): Self = StObject.set(x, "deleteTableCellsWithShiftVertically", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTableColumns(value: DeleteTableColumnsCommand): Self = StObject.set(x, "deleteTableColumns", value.asInstanceOf[js.Any])
+    inline def setDeleteTableColumns(value: DeleteTableColumnsCommand): Self = StObject.set(x, "deleteTableColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTableRows(value: DeleteTableRowsCommand): Self = StObject.set(x, "deleteTableRows", value.asInstanceOf[js.Any])
+    inline def setDeleteTableRows(value: DeleteTableRowsCommand): Self = StObject.set(x, "deleteTableRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
+    inline def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFileDownload(value: FileDownloadCommand): Self = StObject.set(x, "fileDownload", value.asInstanceOf[js.Any])
+    inline def setFileDownload(value: FileDownloadCommand): Self = StObject.set(x, "fileDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNew(value: FileNewCommand): Self = StObject.set(x, "fileNew", value.asInstanceOf[js.Any])
+    inline def setFileNew(value: FileNewCommand): Self = StObject.set(x, "fileNew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileOpen(value: FileOpenCommand): Self = StObject.set(x, "fileOpen", value.asInstanceOf[js.Any])
+    inline def setFileOpen(value: FileOpenCommand): Self = StObject.set(x, "fileOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileOpenDialog(value: FileOpenDialogCommand): Self = StObject.set(x, "fileOpenDialog", value.asInstanceOf[js.Any])
+    inline def setFileOpenDialog(value: FileOpenDialogCommand): Self = StObject.set(x, "fileOpenDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePrint(value: FilePrintCommand): Self = StObject.set(x, "filePrint", value.asInstanceOf[js.Any])
+    inline def setFilePrint(value: FilePrintCommand): Self = StObject.set(x, "filePrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSave(value: FileSaveCommand): Self = StObject.set(x, "fileSave", value.asInstanceOf[js.Any])
+    inline def setFileSave(value: FileSaveCommand): Self = StObject.set(x, "fileSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSaveAs(value: FileSaveAsCommand): Self = StObject.set(x, "fileSaveAs", value.asInstanceOf[js.Any])
+    inline def setFileSaveAs(value: FileSaveAsCommand): Self = StObject.set(x, "fileSaveAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSaveAsDialog(value: FileSaveAsDialogCommand): Self = StObject.set(x, "fileSaveAsDialog", value.asInstanceOf[js.Any])
+    inline def setFileSaveAsDialog(value: FileSaveAsDialogCommand): Self = StObject.set(x, "fileSaveAsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindAll(value: FindAllCommand): Self = StObject.set(x, "findAll", value.asInstanceOf[js.Any])
+    inline def setFindAll(value: FindAllCommand): Self = StObject.set(x, "findAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceSyncWithServer(value: ForceSyncWithServerCommand): Self = StObject.set(x, "forceSyncWithServer", value.asInstanceOf[js.Any])
+    inline def setForceSyncWithServer(value: ForceSyncWithServerCommand): Self = StObject.set(x, "forceSyncWithServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRtf(value: GetRtfCommand): Self = StObject.set(x, "getRtf", value.asInstanceOf[js.Any])
+    inline def setGetRtf(value: GetRtfCommand): Self = StObject.set(x, "getRtf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToBookmark(value: GoToBookmarkCommand): Self = StObject.set(x, "goToBookmark", value.asInstanceOf[js.Any])
+    inline def setGoToBookmark(value: GoToBookmarkCommand): Self = StObject.set(x, "goToBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToDataRecord(value: GoToDataRecordCommand): Self = StObject.set(x, "goToDataRecord", value.asInstanceOf[js.Any])
+    inline def setGoToDataRecord(value: GoToDataRecordCommand): Self = StObject.set(x, "goToDataRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToFirstDataRecord(value: GoToFirstDataRecordCommand): Self = StObject.set(x, "goToFirstDataRecord", value.asInstanceOf[js.Any])
+    inline def setGoToFirstDataRecord(value: GoToFirstDataRecordCommand): Self = StObject.set(x, "goToFirstDataRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToFooter(value: GoToFooterCommand): Self = StObject.set(x, "goToFooter", value.asInstanceOf[js.Any])
+    inline def setGoToFooter(value: GoToFooterCommand): Self = StObject.set(x, "goToFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToHeader(value: GoToHeaderCommand): Self = StObject.set(x, "goToHeader", value.asInstanceOf[js.Any])
+    inline def setGoToHeader(value: GoToHeaderCommand): Self = StObject.set(x, "goToHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToLastDataRecord(value: GoToLastDataRecordCommand): Self = StObject.set(x, "goToLastDataRecord", value.asInstanceOf[js.Any])
+    inline def setGoToLastDataRecord(value: GoToLastDataRecordCommand): Self = StObject.set(x, "goToLastDataRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToNextDataRecord(value: GoToNextDataRecordCommand): Self = StObject.set(x, "goToNextDataRecord", value.asInstanceOf[js.Any])
+    inline def setGoToNextDataRecord(value: GoToNextDataRecordCommand): Self = StObject.set(x, "goToNextDataRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToNextHeaderFooter(value: GoToNextHeaderFooterCommand): Self = StObject.set(x, "goToNextHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setGoToNextHeaderFooter(value: GoToNextHeaderFooterCommand): Self = StObject.set(x, "goToNextHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToPreviousDataRecord(value: GoToPreviousDataRecordCommand): Self = StObject.set(x, "goToPreviousDataRecord", value.asInstanceOf[js.Any])
+    inline def setGoToPreviousDataRecord(value: GoToPreviousDataRecordCommand): Self = StObject.set(x, "goToPreviousDataRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToPreviousHeaderFooter(value: GoToPreviousHeaderFooterCommand): Self = StObject.set(x, "goToPreviousHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setGoToPreviousHeaderFooter(value: GoToPreviousHeaderFooterCommand): Self = StObject.set(x, "goToPreviousHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideFindResults(value: HideFindResultsCommand): Self = StObject.set(x, "hideFindResults", value.asInstanceOf[js.Any])
+    inline def setHideFindResults(value: HideFindResultsCommand): Self = StObject.set(x, "hideFindResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreaseFontSize(value: IncreaseFontSizeCommand): Self = StObject.set(x, "increaseFontSize", value.asInstanceOf[js.Any])
+    inline def setIncreaseFontSize(value: IncreaseFontSizeCommand): Self = StObject.set(x, "increaseFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreaseIndent(value: IncreaseIndentCommand): Self = StObject.set(x, "increaseIndent", value.asInstanceOf[js.Any])
+    inline def setIncreaseIndent(value: IncreaseIndentCommand): Self = StObject.set(x, "increaseIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementNumberingIndent(value: IncrementNumberingIndentCommand): Self = StObject.set(x, "incrementNumberingIndent", value.asInstanceOf[js.Any])
+    inline def setIncrementNumberingIndent(value: IncrementNumberingIndentCommand): Self = StObject.set(x, "incrementNumberingIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementParagraphLeftIndent(value: IncrementParagraphLeftIndentCommand): Self = StObject.set(x, "incrementParagraphLeftIndent", value.asInstanceOf[js.Any])
+    inline def setIncrementParagraphLeftIndent(value: IncrementParagraphLeftIndentCommand): Self = StObject.set(x, "incrementParagraphLeftIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBookmark(value: InsertBookmarkCommand): Self = StObject.set(x, "insertBookmark", value.asInstanceOf[js.Any])
+    inline def setInsertBookmark(value: InsertBookmarkCommand): Self = StObject.set(x, "insertBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertColumnBreak(value: InsertColumnBreakCommand): Self = StObject.set(x, "insertColumnBreak", value.asInstanceOf[js.Any])
+    inline def setInsertColumnBreak(value: InsertColumnBreakCommand): Self = StObject.set(x, "insertColumnBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertContentFromServer(value: InsertContentFromServerCommand): Self = StObject.set(x, "insertContentFromServer", value.asInstanceOf[js.Any])
+    inline def setInsertContentFromServer(value: InsertContentFromServerCommand): Self = StObject.set(x, "insertContentFromServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertEquationsCaption(value: InsertEquationsCaptionCommand): Self = StObject.set(x, "insertEquationsCaption", value.asInstanceOf[js.Any])
+    inline def setInsertEquationsCaption(value: InsertEquationsCaptionCommand): Self = StObject.set(x, "insertEquationsCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertFiguresCaption(value: InsertFiguresCaptionCommand): Self = StObject.set(x, "insertFiguresCaption", value.asInstanceOf[js.Any])
+    inline def setInsertFiguresCaption(value: InsertFiguresCaptionCommand): Self = StObject.set(x, "insertFiguresCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertFloatingTextBox(value: InsertFloatingTextBoxCommand): Self = StObject.set(x, "insertFloatingTextBox", value.asInstanceOf[js.Any])
+    inline def setInsertFloatingTextBox(value: InsertFloatingTextBoxCommand): Self = StObject.set(x, "insertFloatingTextBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertFooter(value: InsertFooterCommand): Self = StObject.set(x, "insertFooter", value.asInstanceOf[js.Any])
+    inline def setInsertFooter(value: InsertFooterCommand): Self = StObject.set(x, "insertFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertHeader(value: InsertHeaderCommand): Self = StObject.set(x, "insertHeader", value.asInstanceOf[js.Any])
+    inline def setInsertHeader(value: InsertHeaderCommand): Self = StObject.set(x, "insertHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertHtml(value: InsertHtmlCommand): Self = StObject.set(x, "insertHtml", value.asInstanceOf[js.Any])
+    inline def setInsertHtml(value: InsertHtmlCommand): Self = StObject.set(x, "insertHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertHyperlink(value: InsertHyperlinkCommand): Self = StObject.set(x, "insertHyperlink", value.asInstanceOf[js.Any])
+    inline def setInsertHyperlink(value: InsertHyperlinkCommand): Self = StObject.set(x, "insertHyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertLineBreak(value: InsertLineBreakCommand): Self = StObject.set(x, "insertLineBreak", value.asInstanceOf[js.Any])
+    inline def setInsertLineBreak(value: InsertLineBreakCommand): Self = StObject.set(x, "insertLineBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertNonBreakingSpace(value: InsertNonBreakingSpaceCommand): Self = StObject.set(x, "insertNonBreakingSpace", value.asInstanceOf[js.Any])
+    inline def setInsertNonBreakingSpace(value: InsertNonBreakingSpaceCommand): Self = StObject.set(x, "insertNonBreakingSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertNumeration(value: InsertNumerationCommand): Self = StObject.set(x, "insertNumeration", value.asInstanceOf[js.Any])
+    inline def setInsertNumeration(value: InsertNumerationCommand): Self = StObject.set(x, "insertNumeration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertPageBreak(value: InsertPageBreakCommand): Self = StObject.set(x, "insertPageBreak", value.asInstanceOf[js.Any])
+    inline def setInsertPageBreak(value: InsertPageBreakCommand): Self = StObject.set(x, "insertPageBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertParagraph(value: InsertParagraphCommand): Self = StObject.set(x, "insertParagraph", value.asInstanceOf[js.Any])
+    inline def setInsertParagraph(value: InsertParagraphCommand): Self = StObject.set(x, "insertParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertPicture(value: InsertPictureCommand): Self = StObject.set(x, "insertPicture", value.asInstanceOf[js.Any])
+    inline def setInsertPicture(value: InsertPictureCommand): Self = StObject.set(x, "insertPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertRtf(value: InsertRtfCommand): Self = StObject.set(x, "insertRtf", value.asInstanceOf[js.Any])
+    inline def setInsertRtf(value: InsertRtfCommand): Self = StObject.set(x, "insertRtf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSectionBreakEvenPage(value: InsertSectionBreakEvenPageCommand): Self = StObject.set(x, "insertSectionBreakEvenPage", value.asInstanceOf[js.Any])
+    inline def setInsertSectionBreakEvenPage(value: InsertSectionBreakEvenPageCommand): Self = StObject.set(x, "insertSectionBreakEvenPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSectionBreakNextPage(value: InsertSectionBreakNextPageCommand): Self = StObject.set(x, "insertSectionBreakNextPage", value.asInstanceOf[js.Any])
+    inline def setInsertSectionBreakNextPage(value: InsertSectionBreakNextPageCommand): Self = StObject.set(x, "insertSectionBreakNextPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSectionBreakOddPage(value: InsertSectionBreakOddPageCommand): Self = StObject.set(x, "insertSectionBreakOddPage", value.asInstanceOf[js.Any])
+    inline def setInsertSectionBreakOddPage(value: InsertSectionBreakOddPageCommand): Self = StObject.set(x, "insertSectionBreakOddPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSymbol(value: InsertSymbolCommand): Self = StObject.set(x, "insertSymbol", value.asInstanceOf[js.Any])
+    inline def setInsertSymbol(value: InsertSymbolCommand): Self = StObject.set(x, "insertSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTab(value: InsertTabCommand): Self = StObject.set(x, "insertTab", value.asInstanceOf[js.Any])
+    inline def setInsertTab(value: InsertTabCommand): Self = StObject.set(x, "insertTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTable(value: InsertTableCommand): Self = StObject.set(x, "insertTable", value.asInstanceOf[js.Any])
+    inline def setInsertTable(value: InsertTableCommand): Self = StObject.set(x, "insertTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableCellWithShiftToTheLeft(value: InsertTableCellWithShiftToTheLeftCommand): Self = StObject.set(x, "insertTableCellWithShiftToTheLeft", value.asInstanceOf[js.Any])
+    inline def setInsertTableCellWithShiftToTheLeft(value: InsertTableCellWithShiftToTheLeftCommand): Self = StObject.set(x, "insertTableCellWithShiftToTheLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableCellsDialog(value: InsertTableCellsDialogCommand): Self = StObject.set(x, "insertTableCellsDialog", value.asInstanceOf[js.Any])
+    inline def setInsertTableCellsDialog(value: InsertTableCellsDialogCommand): Self = StObject.set(x, "insertTableCellsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableCellsWithShiftToTheVertically(value: InsertTableCellsWithShiftToTheVerticallyCommand): Self = StObject.set(x, "insertTableCellsWithShiftToTheVertically", value.asInstanceOf[js.Any])
+    inline def setInsertTableCellsWithShiftToTheVertically(value: InsertTableCellsWithShiftToTheVerticallyCommand): Self = StObject.set(x, "insertTableCellsWithShiftToTheVertically", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableColumnToTheLeft(value: InsertTableColumnToTheLeftCommand): Self = StObject.set(x, "insertTableColumnToTheLeft", value.asInstanceOf[js.Any])
+    inline def setInsertTableColumnToTheLeft(value: InsertTableColumnToTheLeftCommand): Self = StObject.set(x, "insertTableColumnToTheLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableColumnToTheRight(value: InsertTableColumnToTheRightCommand): Self = StObject.set(x, "insertTableColumnToTheRight", value.asInstanceOf[js.Any])
+    inline def setInsertTableColumnToTheRight(value: InsertTableColumnToTheRightCommand): Self = StObject.set(x, "insertTableColumnToTheRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableOfContents(value: InsertTableOfContentsCommand): Self = StObject.set(x, "insertTableOfContents", value.asInstanceOf[js.Any])
+    inline def setInsertTableOfContents(value: InsertTableOfContentsCommand): Self = StObject.set(x, "insertTableOfContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableOfEquations(value: InsertTableOfEquationsCommand): Self = StObject.set(x, "insertTableOfEquations", value.asInstanceOf[js.Any])
+    inline def setInsertTableOfEquations(value: InsertTableOfEquationsCommand): Self = StObject.set(x, "insertTableOfEquations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableOfFigures(value: InsertTableOfFiguresCommand): Self = StObject.set(x, "insertTableOfFigures", value.asInstanceOf[js.Any])
+    inline def setInsertTableOfFigures(value: InsertTableOfFiguresCommand): Self = StObject.set(x, "insertTableOfFigures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableOfTables(value: InsertTableOfTablesCommand): Self = StObject.set(x, "insertTableOfTables", value.asInstanceOf[js.Any])
+    inline def setInsertTableOfTables(value: InsertTableOfTablesCommand): Self = StObject.set(x, "insertTableOfTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableRowAbove(value: InsertTableRowAboveCommand): Self = StObject.set(x, "insertTableRowAbove", value.asInstanceOf[js.Any])
+    inline def setInsertTableRowAbove(value: InsertTableRowAboveCommand): Self = StObject.set(x, "insertTableRowAbove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTableRowBelow(value: InsertTableRowBelowCommand): Self = StObject.set(x, "insertTableRowBelow", value.asInstanceOf[js.Any])
+    inline def setInsertTableRowBelow(value: InsertTableRowBelowCommand): Self = StObject.set(x, "insertTableRowBelow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTablesCaption(value: InsertTablesCaptionCommand): Self = StObject.set(x, "insertTablesCaption", value.asInstanceOf[js.Any])
+    inline def setInsertTablesCaption(value: InsertTablesCaptionCommand): Self = StObject.set(x, "insertTablesCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertText(value: InsertTextCommand): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+    inline def setInsertText(value: InsertTextCommand): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkHeaderFooterToPrevious(value: LinkHeaderFooterToPreviousCommand): Self = StObject.set(x, "linkHeaderFooterToPrevious", value.asInstanceOf[js.Any])
+    inline def setLinkHeaderFooterToPrevious(value: LinkHeaderFooterToPreviousCommand): Self = StObject.set(x, "linkHeaderFooterToPrevious", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailMergeAndDownload(value: MailMergeAndDownloadCommand): Self = StObject.set(x, "mailMergeAndDownload", value.asInstanceOf[js.Any])
+    inline def setMailMergeAndDownload(value: MailMergeAndDownloadCommand): Self = StObject.set(x, "mailMergeAndDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailMergeAndSaveAs(value: MailMergeAndSaveAsCommand): Self = StObject.set(x, "mailMergeAndSaveAs", value.asInstanceOf[js.Any])
+    inline def setMailMergeAndSaveAs(value: MailMergeAndSaveAsCommand): Self = StObject.set(x, "mailMergeAndSaveAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailMergeDialog(value: MailMergeDialogCommand): Self = StObject.set(x, "mailMergeDialog", value.asInstanceOf[js.Any])
+    inline def setMailMergeDialog(value: MailMergeDialogCommand): Self = StObject.set(x, "mailMergeDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeTextLowerCase(value: MakeTextLowerCaseCommand): Self = StObject.set(x, "makeTextLowerCase", value.asInstanceOf[js.Any])
+    inline def setMakeTextLowerCase(value: MakeTextLowerCaseCommand): Self = StObject.set(x, "makeTextLowerCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeTextSentenceCase(value: MakeTextSentenceCaseCommand): Self = StObject.set(x, "makeTextSentenceCase", value.asInstanceOf[js.Any])
+    inline def setMakeTextSentenceCase(value: MakeTextSentenceCaseCommand): Self = StObject.set(x, "makeTextSentenceCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeTextUpperCase(value: MakeTextUpperCaseCommand): Self = StObject.set(x, "makeTextUpperCase", value.asInstanceOf[js.Any])
+    inline def setMakeTextUpperCase(value: MakeTextUpperCaseCommand): Self = StObject.set(x, "makeTextUpperCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeFieldDialog(value: MergeFieldDialogCommand): Self = StObject.set(x, "mergeFieldDialog", value.asInstanceOf[js.Any])
+    inline def setMergeFieldDialog(value: MergeFieldDialogCommand): Self = StObject.set(x, "mergeFieldDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeTableCells(value: MergeTableCellsCommand): Self = StObject.set(x, "mergeTableCells", value.asInstanceOf[js.Any])
+    inline def setMergeTableCells(value: MergeTableCellsCommand): Self = StObject.set(x, "mergeTableCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveContent(value: MoveContentCommand): Self = StObject.set(x, "moveContent", value.asInstanceOf[js.Any])
+    inline def setMoveContent(value: MoveContentCommand): Self = StObject.set(x, "moveContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenCustomNumberingListDialog(value: OpenCustomNumberingListDialogCommand): Self = StObject.set(x, "openCustomNumberingListDialog", value.asInstanceOf[js.Any])
+    inline def setOpenCustomNumberingListDialog(value: OpenCustomNumberingListDialogCommand): Self = StObject.set(x, "openCustomNumberingListDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenFindAndReplaceDialog(value: OpenFindAndReplaceDialogCommand): Self = StObject.set(x, "openFindAndReplaceDialog", value.asInstanceOf[js.Any])
+    inline def setOpenFindAndReplaceDialog(value: OpenFindAndReplaceDialogCommand): Self = StObject.set(x, "openFindAndReplaceDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenFindPanel(value: OpenFindPanelCommand): Self = StObject.set(x, "openFindPanel", value.asInstanceOf[js.Any])
+    inline def setOpenFindPanel(value: OpenFindPanelCommand): Self = StObject.set(x, "openFindPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenFontFormattingDialog(value: OpenFontFormattingDialogCommand): Self = StObject.set(x, "openFontFormattingDialog", value.asInstanceOf[js.Any])
+    inline def setOpenFontFormattingDialog(value: OpenFontFormattingDialogCommand): Self = StObject.set(x, "openFontFormattingDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenHyperlink(value: OpenHyperlinkCommand): Self = StObject.set(x, "openHyperlink", value.asInstanceOf[js.Any])
+    inline def setOpenHyperlink(value: OpenHyperlinkCommand): Self = StObject.set(x, "openHyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenInsertBookmarkDialog(value: OpenInsertBookmarkDialogCommand): Self = StObject.set(x, "openInsertBookmarkDialog", value.asInstanceOf[js.Any])
+    inline def setOpenInsertBookmarkDialog(value: OpenInsertBookmarkDialogCommand): Self = StObject.set(x, "openInsertBookmarkDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenInsertHyperlinkDialog(value: OpenInsertHyperlinkDialogCommand): Self = StObject.set(x, "openInsertHyperlinkDialog", value.asInstanceOf[js.Any])
+    inline def setOpenInsertHyperlinkDialog(value: OpenInsertHyperlinkDialogCommand): Self = StObject.set(x, "openInsertHyperlinkDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenInsertPictureDialog(value: OpenInsertPictureDialogCommand): Self = StObject.set(x, "openInsertPictureDialog", value.asInstanceOf[js.Any])
+    inline def setOpenInsertPictureDialog(value: OpenInsertPictureDialogCommand): Self = StObject.set(x, "openInsertPictureDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenInsertSymbolDialog(value: OpenInsertSymbolDialogCommand): Self = StObject.set(x, "openInsertSymbolDialog", value.asInstanceOf[js.Any])
+    inline def setOpenInsertSymbolDialog(value: OpenInsertSymbolDialogCommand): Self = StObject.set(x, "openInsertSymbolDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenInsertTableDialog(value: OpenInsertTableDialogCommand): Self = StObject.set(x, "openInsertTableDialog", value.asInstanceOf[js.Any])
+    inline def setOpenInsertTableDialog(value: OpenInsertTableDialogCommand): Self = StObject.set(x, "openInsertTableDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenLayoutOptionsDialog(value: OpenLayoutOptionsDialogCommand): Self = StObject.set(x, "openLayoutOptionsDialog", value.asInstanceOf[js.Any])
+    inline def setOpenLayoutOptionsDialog(value: OpenLayoutOptionsDialogCommand): Self = StObject.set(x, "openLayoutOptionsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenNumberingListDialog(value: OpenNumberingListDialogCommand): Self = StObject.set(x, "openNumberingListDialog", value.asInstanceOf[js.Any])
+    inline def setOpenNumberingListDialog(value: OpenNumberingListDialogCommand): Self = StObject.set(x, "openNumberingListDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenPageMarginsDialog(value: OpenPageMarginsDialogCommand): Self = StObject.set(x, "openPageMarginsDialog", value.asInstanceOf[js.Any])
+    inline def setOpenPageMarginsDialog(value: OpenPageMarginsDialogCommand): Self = StObject.set(x, "openPageMarginsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenPagePaperSizeDialog(value: OpenPagePaperSizeDialogCommand): Self = StObject.set(x, "openPagePaperSizeDialog", value.asInstanceOf[js.Any])
+    inline def setOpenPagePaperSizeDialog(value: OpenPagePaperSizeDialogCommand): Self = StObject.set(x, "openPagePaperSizeDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenParagraphFormattingDialog(value: OpenParagraphFormattingDialogCommand): Self = StObject.set(x, "openParagraphFormattingDialog", value.asInstanceOf[js.Any])
+    inline def setOpenParagraphFormattingDialog(value: OpenParagraphFormattingDialogCommand): Self = StObject.set(x, "openParagraphFormattingDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenSectionColumnsDialog(value: OpenSectionColumnsDialogCommand): Self = StObject.set(x, "openSectionColumnsDialog", value.asInstanceOf[js.Any])
+    inline def setOpenSectionColumnsDialog(value: OpenSectionColumnsDialogCommand): Self = StObject.set(x, "openSectionColumnsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenSpellingDialog(value: OpenSpellingDialogCommand): Self = StObject.set(x, "openSpellingDialog", value.asInstanceOf[js.Any])
+    inline def setOpenSpellingDialog(value: OpenSpellingDialogCommand): Self = StObject.set(x, "openSpellingDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenTableBordersAndShadingDialog(value: OpenTableBordersAndShadingDialogCommand): Self = StObject.set(x, "openTableBordersAndShadingDialog", value.asInstanceOf[js.Any])
+    inline def setOpenTableBordersAndShadingDialog(value: OpenTableBordersAndShadingDialogCommand): Self = StObject.set(x, "openTableBordersAndShadingDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenTableFormattingDialog(value: OpenTableFormattingDialogCommand): Self = StObject.set(x, "openTableFormattingDialog", value.asInstanceOf[js.Any])
+    inline def setOpenTableFormattingDialog(value: OpenTableFormattingDialogCommand): Self = StObject.set(x, "openTableFormattingDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenTabsDialog(value: OpenTabsDialogCommand): Self = StObject.set(x, "openTabsDialog", value.asInstanceOf[js.Any])
+    inline def setOpenTabsDialog(value: OpenTabsDialogCommand): Self = StObject.set(x, "openTabsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaste(value: PasteCommand): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
+    inline def setPaste(value: PasteCommand): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedo(value: RedoCommand): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+    inline def setRedo(value: RedoCommand): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveNextWord(value: RemoveNextWordCommand): Self = StObject.set(x, "removeNextWord", value.asInstanceOf[js.Any])
+    inline def setRemoveNextWord(value: RemoveNextWordCommand): Self = StObject.set(x, "removeNextWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveNumeration(value: RemoveNumerationCommand): Self = StObject.set(x, "removeNumeration", value.asInstanceOf[js.Any])
+    inline def setRemoveNumeration(value: RemoveNumerationCommand): Self = StObject.set(x, "removeNumeration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovePrevWord(value: RemovePrevWordCommand): Self = StObject.set(x, "removePrevWord", value.asInstanceOf[js.Any])
+    inline def setRemovePrevWord(value: RemovePrevWordCommand): Self = StObject.set(x, "removePrevWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveSpacingAfterParagraph(value: RemoveSpacingAfterParagraphCommand): Self = StObject.set(x, "removeSpacingAfterParagraph", value.asInstanceOf[js.Any])
+    inline def setRemoveSpacingAfterParagraph(value: RemoveSpacingAfterParagraphCommand): Self = StObject.set(x, "removeSpacingAfterParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveSpacingBeforeParagraph(value: RemoveSpacingBeforeParagraphCommand): Self = StObject.set(x, "removeSpacingBeforeParagraph", value.asInstanceOf[js.Any])
+    inline def setRemoveSpacingBeforeParagraph(value: RemoveSpacingBeforeParagraphCommand): Self = StObject.set(x, "removeSpacingBeforeParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveTableCellBorders(value: RemoveTableCellBordersCommand): Self = StObject.set(x, "removeTableCellBorders", value.asInstanceOf[js.Any])
+    inline def setRemoveTableCellBorders(value: RemoveTableCellBordersCommand): Self = StObject.set(x, "removeTableCellBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceAll(value: ReplaceAllCommand): Self = StObject.set(x, "replaceAll", value.asInstanceOf[js.Any])
+    inline def setReplaceAll(value: ReplaceAllCommand): Self = StObject.set(x, "replaceAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceNext(value: ReplaceNextCommand): Self = StObject.set(x, "replaceNext", value.asInstanceOf[js.Any])
+    inline def setReplaceNext(value: ReplaceNextCommand): Self = StObject.set(x, "replaceNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartNumberingList(value: RestartNumberingListCommand): Self = StObject.set(x, "restartNumberingList", value.asInstanceOf[js.Any])
+    inline def setRestartNumberingList(value: RestartNumberingListCommand): Self = StObject.set(x, "restartNumberingList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDifferentFirstPageHeaderFooter(value: SetDifferentFirstPageHeaderFooterCommand): Self = StObject.set(x, "setDifferentFirstPageHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setSetDifferentFirstPageHeaderFooter(value: SetDifferentFirstPageHeaderFooterCommand): Self = StObject.set(x, "setDifferentFirstPageHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDifferentOddAndEvenPagesHeaderFooter(value: SetDifferentOddAndEvenPagesHeaderFooterCommand): Self = StObject.set(x, "setDifferentOddAndEvenPagesHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setSetDifferentOddAndEvenPagesHeaderFooter(value: SetDifferentOddAndEvenPagesHeaderFooterCommand): Self = StObject.set(x, "setDifferentOddAndEvenPagesHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDoubleParagraphSpacing(value: SetDoubleParagraphSpacingCommand): Self = StObject.set(x, "setDoubleParagraphSpacing", value.asInstanceOf[js.Any])
+    inline def setSetDoubleParagraphSpacing(value: SetDoubleParagraphSpacingCommand): Self = StObject.set(x, "setDoubleParagraphSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFullscreen(value: SetFullscreenCommand): Self = StObject.set(x, "setFullscreen", value.asInstanceOf[js.Any])
+    inline def setSetFullscreen(value: SetFullscreenCommand): Self = StObject.set(x, "setFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPageSizeDialog(value: SetPageSizeDialogCommand): Self = StObject.set(x, "setPageSizeDialog", value.asInstanceOf[js.Any])
+    inline def setSetPageSizeDialog(value: SetPageSizeDialogCommand): Self = StObject.set(x, "setPageSizeDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetParagraphLevel(value: SetParagraphLevelCommand): Self = StObject.set(x, "setParagraphLevel", value.asInstanceOf[js.Any])
+    inline def setSetParagraphLevel(value: SetParagraphLevelCommand): Self = StObject.set(x, "setParagraphLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSesquialteralParagraphSpacing(value: SetSesquialteralParagraphSpacingCommand): Self = StObject.set(x, "setSesquialteralParagraphSpacing", value.asInstanceOf[js.Any])
+    inline def setSetSesquialteralParagraphSpacing(value: SetSesquialteralParagraphSpacingCommand): Self = StObject.set(x, "setSesquialteralParagraphSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSingleParagraphSpacing(value: SetSingleParagraphSpacingCommand): Self = StObject.set(x, "setSingleParagraphSpacing", value.asInstanceOf[js.Any])
+    inline def setSetSingleParagraphSpacing(value: SetSingleParagraphSpacingCommand): Self = StObject.set(x, "setSingleParagraphSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAllFieldCodes(value: ShowAllFieldCodesCommand): Self = StObject.set(x, "showAllFieldCodes", value.asInstanceOf[js.Any])
+    inline def setShowAllFieldCodes(value: ShowAllFieldCodesCommand): Self = StObject.set(x, "showAllFieldCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFieldCodes(value: ShowFieldCodesCommand): Self = StObject.set(x, "showFieldCodes", value.asInstanceOf[js.Any])
+    inline def setShowFieldCodes(value: ShowFieldCodesCommand): Self = StObject.set(x, "showFieldCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHiddenSymbols(value: ShowHiddenSymbolsCommand): Self = StObject.set(x, "showHiddenSymbols", value.asInstanceOf[js.Any])
+    inline def setShowHiddenSymbols(value: ShowHiddenSymbolsCommand): Self = StObject.set(x, "showHiddenSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHorizontalRuler(value: ShowHorizontalRulerCommand): Self = StObject.set(x, "showHorizontalRuler", value.asInstanceOf[js.Any])
+    inline def setShowHorizontalRuler(value: ShowHorizontalRulerCommand): Self = StObject.set(x, "showHorizontalRuler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMergedData(value: ShowMergedDataCommand): Self = StObject.set(x, "showMergedData", value.asInstanceOf[js.Any])
+    inline def setShowMergedData(value: ShowMergedDataCommand): Self = StObject.set(x, "showMergedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTableGridLines(value: ShowTableGridLinesCommand): Self = StObject.set(x, "showTableGridLines", value.asInstanceOf[js.Any])
+    inline def setShowTableGridLines(value: ShowTableGridLinesCommand): Self = StObject.set(x, "showTableGridLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitTableCells(value: SplitTableCellsCommand): Self = StObject.set(x, "splitTableCells", value.asInstanceOf[js.Any])
+    inline def setSplitTableCells(value: SplitTableCellsCommand): Self = StObject.set(x, "splitTableCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitTableCellsDialog(value: SplitTableCellsDialogCommand): Self = StObject.set(x, "splitTableCellsDialog", value.asInstanceOf[js.Any])
+    inline def setSplitTableCellsDialog(value: SplitTableCellsDialogCommand): Self = StObject.set(x, "splitTableCellsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchTextCase(value: SwitchTextCaseCommand): Self = StObject.set(x, "switchTextCase", value.asInstanceOf[js.Any])
+    inline def setSwitchTextCase(value: SwitchTextCaseCommand): Self = StObject.set(x, "switchTextCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleBulletedList(value: ToggleBulletedListCommand): Self = StObject.set(x, "toggleBulletedList", value.asInstanceOf[js.Any])
+    inline def setToggleBulletedList(value: ToggleBulletedListCommand): Self = StObject.set(x, "toggleBulletedList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleMultilevelList(value: ToggleMultilevelListCommand): Self = StObject.set(x, "toggleMultilevelList", value.asInstanceOf[js.Any])
+    inline def setToggleMultilevelList(value: ToggleMultilevelListCommand): Self = StObject.set(x, "toggleMultilevelList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleNumberingList(value: ToggleNumberingListCommand): Self = StObject.set(x, "toggleNumberingList", value.asInstanceOf[js.Any])
+    inline def setToggleNumberingList(value: ToggleNumberingListCommand): Self = StObject.set(x, "toggleNumberingList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleParagraphAlignmentCenter(value: ToggleParagraphAlignmentCenterCommand): Self = StObject.set(x, "toggleParagraphAlignmentCenter", value.asInstanceOf[js.Any])
+    inline def setToggleParagraphAlignmentCenter(value: ToggleParagraphAlignmentCenterCommand): Self = StObject.set(x, "toggleParagraphAlignmentCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleParagraphAlignmentJustify(value: ToggleParagraphAlignmentJustifyCommand): Self = StObject.set(x, "toggleParagraphAlignmentJustify", value.asInstanceOf[js.Any])
+    inline def setToggleParagraphAlignmentJustify(value: ToggleParagraphAlignmentJustifyCommand): Self = StObject.set(x, "toggleParagraphAlignmentJustify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleParagraphAlignmentLeft(value: ToggleParagraphAlignmentLeftCommand): Self = StObject.set(x, "toggleParagraphAlignmentLeft", value.asInstanceOf[js.Any])
+    inline def setToggleParagraphAlignmentLeft(value: ToggleParagraphAlignmentLeftCommand): Self = StObject.set(x, "toggleParagraphAlignmentLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleParagraphAlignmentRight(value: ToggleParagraphAlignmentRightCommand): Self = StObject.set(x, "toggleParagraphAlignmentRight", value.asInstanceOf[js.Any])
+    inline def setToggleParagraphAlignmentRight(value: ToggleParagraphAlignmentRightCommand): Self = StObject.set(x, "toggleParagraphAlignmentRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableAutoFitContents(value: ToggleTableAutoFitContentsCommand): Self = StObject.set(x, "toggleTableAutoFitContents", value.asInstanceOf[js.Any])
+    inline def setToggleTableAutoFitContents(value: ToggleTableAutoFitContentsCommand): Self = StObject.set(x, "toggleTableAutoFitContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableAutoFitWindow(value: ToggleTableAutoFitWindowCommand): Self = StObject.set(x, "toggleTableAutoFitWindow", value.asInstanceOf[js.Any])
+    inline def setToggleTableAutoFitWindow(value: ToggleTableAutoFitWindowCommand): Self = StObject.set(x, "toggleTableAutoFitWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignBottomCenter(value: ToggleTableCellAlignBottomCenterCommand): Self = StObject.set(x, "toggleTableCellAlignBottomCenter", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignBottomCenter(value: ToggleTableCellAlignBottomCenterCommand): Self = StObject.set(x, "toggleTableCellAlignBottomCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignBottomLeft(value: ToggleTableCellAlignBottomLeftCommand): Self = StObject.set(x, "toggleTableCellAlignBottomLeft", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignBottomLeft(value: ToggleTableCellAlignBottomLeftCommand): Self = StObject.set(x, "toggleTableCellAlignBottomLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignBottomRight(value: ToggleTableCellAlignBottomRightCommand): Self = StObject.set(x, "toggleTableCellAlignBottomRight", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignBottomRight(value: ToggleTableCellAlignBottomRightCommand): Self = StObject.set(x, "toggleTableCellAlignBottomRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignMiddleCenter(value: ToggleTableCellAlignMiddleCenterCommand): Self = StObject.set(x, "toggleTableCellAlignMiddleCenter", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignMiddleCenter(value: ToggleTableCellAlignMiddleCenterCommand): Self = StObject.set(x, "toggleTableCellAlignMiddleCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignMiddleLeft(value: ToggleTableCellAlignMiddleLeftCommand): Self = StObject.set(x, "toggleTableCellAlignMiddleLeft", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignMiddleLeft(value: ToggleTableCellAlignMiddleLeftCommand): Self = StObject.set(x, "toggleTableCellAlignMiddleLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignMiddleRight(value: ToggleTableCellAlignMiddleRightCommand): Self = StObject.set(x, "toggleTableCellAlignMiddleRight", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignMiddleRight(value: ToggleTableCellAlignMiddleRightCommand): Self = StObject.set(x, "toggleTableCellAlignMiddleRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignTopCenter(value: ToggleTableCellAlignTopCenterCommand): Self = StObject.set(x, "toggleTableCellAlignTopCenter", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignTopCenter(value: ToggleTableCellAlignTopCenterCommand): Self = StObject.set(x, "toggleTableCellAlignTopCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignTopLeft(value: ToggleTableCellAlignTopLeftCommand): Self = StObject.set(x, "toggleTableCellAlignTopLeft", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignTopLeft(value: ToggleTableCellAlignTopLeftCommand): Self = StObject.set(x, "toggleTableCellAlignTopLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAlignTopRight(value: ToggleTableCellAlignTopRightCommand): Self = StObject.set(x, "toggleTableCellAlignTopRight", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAlignTopRight(value: ToggleTableCellAlignTopRightCommand): Self = StObject.set(x, "toggleTableCellAlignTopRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellAllBorders(value: ToggleTableCellAllBordersCommand): Self = StObject.set(x, "toggleTableCellAllBorders", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellAllBorders(value: ToggleTableCellAllBordersCommand): Self = StObject.set(x, "toggleTableCellAllBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellBottomBorder(value: ToggleTableCellBottomBorderCommand): Self = StObject.set(x, "toggleTableCellBottomBorder", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellBottomBorder(value: ToggleTableCellBottomBorderCommand): Self = StObject.set(x, "toggleTableCellBottomBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellInsideBorders(value: ToggleTableCellInsideBordersCommand): Self = StObject.set(x, "toggleTableCellInsideBorders", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellInsideBorders(value: ToggleTableCellInsideBordersCommand): Self = StObject.set(x, "toggleTableCellInsideBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellInsideHorizontalBorders(value: ToggleTableCellInsideHorizontalBordersCommand): Self = StObject.set(x, "toggleTableCellInsideHorizontalBorders", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellInsideHorizontalBorders(value: ToggleTableCellInsideHorizontalBordersCommand): Self = StObject.set(x, "toggleTableCellInsideHorizontalBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellInsideVerticalBorders(value: ToggleTableCellInsideVerticalBordersCommand): Self = StObject.set(x, "toggleTableCellInsideVerticalBorders", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellInsideVerticalBorders(value: ToggleTableCellInsideVerticalBordersCommand): Self = StObject.set(x, "toggleTableCellInsideVerticalBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellLeftBorder(value: ToggleTableCellLeftBorderCommand): Self = StObject.set(x, "toggleTableCellLeftBorder", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellLeftBorder(value: ToggleTableCellLeftBorderCommand): Self = StObject.set(x, "toggleTableCellLeftBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellOutsideBorders(value: ToggleTableCellOutsideBordersCommand): Self = StObject.set(x, "toggleTableCellOutsideBorders", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellOutsideBorders(value: ToggleTableCellOutsideBordersCommand): Self = StObject.set(x, "toggleTableCellOutsideBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellRightBorder(value: ToggleTableCellRightBorderCommand): Self = StObject.set(x, "toggleTableCellRightBorder", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellRightBorder(value: ToggleTableCellRightBorderCommand): Self = StObject.set(x, "toggleTableCellRightBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableCellTopBorder(value: ToggleTableCellTopBorderCommand): Self = StObject.set(x, "toggleTableCellTopBorder", value.asInstanceOf[js.Any])
+    inline def setToggleTableCellTopBorder(value: ToggleTableCellTopBorderCommand): Self = StObject.set(x, "toggleTableCellTopBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTableFixedColumnWidth(value: ToggleTableFixedColumnWidthCommand): Self = StObject.set(x, "toggleTableFixedColumnWidth", value.asInstanceOf[js.Any])
+    inline def setToggleTableFixedColumnWidth(value: ToggleTableFixedColumnWidthCommand): Self = StObject.set(x, "toggleTableFixedColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleTextCase(value: ToggleTextCaseCommand): Self = StObject.set(x, "toggleTextCase", value.asInstanceOf[js.Any])
+    inline def setToggleTextCase(value: ToggleTextCaseCommand): Self = StObject.set(x, "toggleTextCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo(value: UndoCommand): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    inline def setUndo(value: UndoCommand): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAllFields(value: UpdateAllFieldsCommand): Self = StObject.set(x, "updateAllFields", value.asInstanceOf[js.Any])
+    inline def setUpdateAllFields(value: UpdateAllFieldsCommand): Self = StObject.set(x, "updateAllFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateField(value: UpdateFieldCommand): Self = StObject.set(x, "updateField", value.asInstanceOf[js.Any])
+    inline def setUpdateField(value: UpdateFieldCommand): Self = StObject.set(x, "updateField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTableOfContents(value: UpdateTableOfContentsCommand): Self = StObject.set(x, "updateTableOfContents", value.asInstanceOf[js.Any])
+    inline def setUpdateTableOfContents(value: UpdateTableOfContentsCommand): Self = StObject.set(x, "updateTableOfContents", value.asInstanceOf[js.Any])
   }
 }

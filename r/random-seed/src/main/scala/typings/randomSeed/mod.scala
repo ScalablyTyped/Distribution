@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): RandomSeed = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RandomSeed]
-  @scala.inline
-  def create(seed: String): RandomSeed = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(seed.asInstanceOf[js.Any]).asInstanceOf[RandomSeed]
+  inline def create(): RandomSeed = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RandomSeed]
+  inline def create(seed: String): RandomSeed = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(seed.asInstanceOf[js.Any]).asInstanceOf[RandomSeed]
   
   @js.native
   trait RandomSeed extends StObject {

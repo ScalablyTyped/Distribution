@@ -18,9 +18,9 @@ object datetimeMod {
     extends StObject
        with ComponentInterface {
     
-    var buttonEl: js.Any = js.native
+    /* private */ var buttonEl: js.Any = js.native
     
-    var calcMinMax: js.Any = js.native
+    /* private */ var calcMinMax: js.Any = js.native
     
     /**
       * The text to display on the picker's cancel button.
@@ -30,11 +30,11 @@ object datetimeMod {
     @JSName("componentWillLoad")
     def componentWillLoad_MDatetime(): Unit = js.native
     
-    var datetimeMax: js.Any = js.native
+    /* private */ var datetimeMax: js.Any = js.native
     
-    var datetimeMin: js.Any = js.native
+    /* private */ var datetimeMin: js.Any = js.native
     
-    var datetimeValue: js.Any = js.native
+    /* private */ var datetimeValue: js.Any = js.native
     
     /**
       * Full day of the week names. This can be used to provide
@@ -90,13 +90,13 @@ object datetimeMod {
     
     var el: HTMLIonDatetimeElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var generateColumns: js.Any = js.native
+    /* private */ var generateColumns: js.Any = js.native
     
-    var generatePickerOptions: js.Any = js.native
+    /* private */ var generatePickerOptions: js.Any = js.native
     
-    var hasValue: js.Any = js.native
+    /* private */ var hasValue: js.Any = js.native
     
     /**
       * Values used to create the list of selectable hours. By default
@@ -106,7 +106,7 @@ object datetimeMod {
       */
     var hourValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * Emitted when the datetime loses focus.
@@ -136,7 +136,7 @@ object datetimeMod {
     
     var isExpanded: Boolean = js.native
     
-    var locale: js.Any = js.native
+    /* private */ var locale: js.Any = js.native
     
     /**
       * The maximum datetime allowed. Value must be a date string
@@ -194,11 +194,11 @@ object datetimeMod {
       */
     var name: String = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
     /**
       * Opens the datetime overlay.
@@ -235,15 +235,15 @@ object datetimeMod {
     @JSName("render")
     def render_MDatetime(): js.Any = js.native
     
-    var setFocus: js.Any = js.native
+    /* private */ var setFocus: js.Any = js.native
     
     /* private */ def text: js.Any = js.native
     
-    var updateDatetimeValue: js.Any = js.native
+    /* private */ var updateDatetimeValue: js.Any = js.native
     
-    var validateColumn: js.Any = js.native
+    /* private */ var validateColumn: js.Any = js.native
     
-    var validateColumns: js.Any = js.native
+    /* private */ var validateColumns: js.Any = js.native
     
     /**
       * The value of the datetime as a valid ISO 8601 datetime string.

@@ -20,26 +20,20 @@ object typesAccountUsageMod {
   }
   object AccountUsage {
     
-    @scala.inline
-    def apply(): AccountUsage = {
+    inline def apply(): AccountUsage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountUsage]
     }
     
-    @scala.inline
-    implicit class AccountUsageMutableBuilder[Self <: AccountUsage] (val x: Self) extends AnyVal {
+    extension [Self <: AccountUsage](x: Self) {
       
-      @scala.inline
-      def setFunctionCount(value: Double): Self = StObject.set(x, "FunctionCount", value.asInstanceOf[js.Any])
+      inline def setFunctionCount(value: Double): Self = StObject.set(x, "FunctionCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionCountUndefined: Self = StObject.set(x, "FunctionCount", js.undefined)
+      inline def setFunctionCountUndefined: Self = StObject.set(x, "FunctionCount", js.undefined)
       
-      @scala.inline
-      def setTotalCodeSize(value: Double): Self = StObject.set(x, "TotalCodeSize", value.asInstanceOf[js.Any])
+      inline def setTotalCodeSize(value: Double): Self = StObject.set(x, "TotalCodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalCodeSizeUndefined: Self = StObject.set(x, "TotalCodeSize", js.undefined)
+      inline def setTotalCodeSizeUndefined: Self = StObject.set(x, "TotalCodeSize", js.undefined)
     }
   }
   

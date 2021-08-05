@@ -92,17 +92,14 @@ object mod {
   }
   object TdClient {
     
-    @scala.inline
-    def apply(send: TdObject => js.Promise[TdError | TdObject]): TdClient = {
+    inline def apply(send: TdObject => js.Promise[TdError | TdObject]): TdClient = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[TdClient]
     }
     
-    @scala.inline
-    implicit class TdClientMutableBuilder[Self <: TdClient] (val x: Self) extends AnyVal {
+    extension [Self <: TdClient](x: Self) {
       
-      @scala.inline
-      def setSend(value: TdObject => js.Promise[TdError | TdObject]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: TdObject => js.Promise[TdError | TdObject]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
@@ -123,30 +120,23 @@ object mod {
   }
   object TdError {
     
-    @scala.inline
-    def apply(code: Double, message: String): TdError = {
+    inline def apply(code: Double, message: String): TdError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("@type")("error")
       __obj.asInstanceOf[TdError]
     }
     
-    @scala.inline
-    implicit class TdErrorMutableBuilder[Self <: TdError] (val x: Self) extends AnyVal {
+    extension [Self <: TdError](x: Self) {
       
-      @scala.inline
-      def `set@extra`(value: string): Self = StObject.set(x, "@extra", value.asInstanceOf[js.Any])
+      inline def `set@extra`(value: string): Self = StObject.set(x, "@extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set@extraUndefined`: Self = StObject.set(x, "@extra", js.undefined)
+      inline def `set@extraUndefined`: Self = StObject.set(x, "@extra", js.undefined)
       
-      @scala.inline
-      def `set@type`(value: error): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+      inline def `set@type`(value: error): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,24 +154,19 @@ object mod {
   }
   object TdObject {
     
-    @scala.inline
-    def apply(`@type`: String): TdObject = {
+    inline def apply(`@type`: String): TdObject = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TdObject]
     }
     
-    @scala.inline
-    implicit class TdObjectMutableBuilder[Self <: TdObject] (val x: Self) extends AnyVal {
+    extension [Self <: TdObject](x: Self) {
       
-      @scala.inline
-      def `set@extra`(value: String): Self = StObject.set(x, "@extra", value.asInstanceOf[js.Any])
+      inline def `set@extra`(value: String): Self = StObject.set(x, "@extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set@extraUndefined`: Self = StObject.set(x, "@extra", js.undefined)
+      inline def `set@extraUndefined`: Self = StObject.set(x, "@extra", js.undefined)
       
-      @scala.inline
-      def `set@type`(value: String): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+      inline def `set@type`(value: String): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,62 +219,44 @@ object mod {
   }
   object TdOptions {
     
-    @scala.inline
-    def apply(): TdOptions = {
+    inline def apply(): TdOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TdOptions]
     }
     
-    @scala.inline
-    implicit class TdOptionsMutableBuilder[Self <: TdOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TdOptions](x: Self) {
       
-      @scala.inline
-      def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+      inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+      inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
       
-      @scala.inline
-      def setIsBackground(value: Boolean): Self = StObject.set(x, "isBackground", value.asInstanceOf[js.Any])
+      inline def setIsBackground(value: Boolean): Self = StObject.set(x, "isBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBackgroundUndefined: Self = StObject.set(x, "isBackground", js.undefined)
+      inline def setIsBackgroundUndefined: Self = StObject.set(x, "isBackground", js.undefined)
       
-      @scala.inline
-      def setJsLogVerbosityLevel(value: error | warning | info | log | debug): Self = StObject.set(x, "jsLogVerbosityLevel", value.asInstanceOf[js.Any])
+      inline def setJsLogVerbosityLevel(value: error | warning | info | log | debug): Self = StObject.set(x, "jsLogVerbosityLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsLogVerbosityLevelUndefined: Self = StObject.set(x, "jsLogVerbosityLevel", js.undefined)
+      inline def setJsLogVerbosityLevelUndefined: Self = StObject.set(x, "jsLogVerbosityLevel", js.undefined)
       
-      @scala.inline
-      def setLogVerbosityLevel(value: Double): Self = StObject.set(x, "logVerbosityLevel", value.asInstanceOf[js.Any])
+      inline def setLogVerbosityLevel(value: Double): Self = StObject.set(x, "logVerbosityLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogVerbosityLevelUndefined: Self = StObject.set(x, "logVerbosityLevel", js.undefined)
+      inline def setLogVerbosityLevelUndefined: Self = StObject.set(x, "logVerbosityLevel", js.undefined)
       
-      @scala.inline
-      def setMode(value: auto | asmjs | wasm): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: auto | asmjs | wasm): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* update */ TdObject => js.Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* update */ TdObject => js.Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setUseDatabase(value: Boolean): Self = StObject.set(x, "useDatabase", value.asInstanceOf[js.Any])
+      inline def setUseDatabase(value: Boolean): Self = StObject.set(x, "useDatabase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDatabaseUndefined: Self = StObject.set(x, "useDatabase", js.undefined)
+      inline def setUseDatabaseUndefined: Self = StObject.set(x, "useDatabase", js.undefined)
     }
   }
 }

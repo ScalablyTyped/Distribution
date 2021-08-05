@@ -160,32 +160,24 @@ object mod extends Shortcut {
     }
     object Assert {
       
-      @scala.inline
-      def apply(): Assert = {
+      inline def apply(): Assert = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Assert]
       }
       
-      @scala.inline
-      implicit class AssertMutableBuilder[Self <: Assert] (val x: Self) extends AnyVal {
+      extension [Self <: Assert](x: Self) {
         
-        @scala.inline
-        def setDiagnostic(value: Boolean): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
+        inline def setDiagnostic(value: Boolean): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDiagnosticUndefined: Self = StObject.set(x, "diagnostic", js.undefined)
+        inline def setDiagnosticUndefined: Self = StObject.set(x, "diagnostic", js.undefined)
         
-        @scala.inline
-        def setSkip(value: Boolean | String): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+        inline def setSkip(value: Boolean | String): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+        inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
         
-        @scala.inline
-        def setTodo(value: Boolean | String): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
+        inline def setTodo(value: Boolean | String): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTodoUndefined: Self = StObject.set(x, "todo", js.undefined)
+        inline def setTodoUndefined: Self = StObject.set(x, "todo", js.undefined)
       }
     }
     
@@ -203,26 +195,20 @@ object mod extends Shortcut {
     }
     object Spawn {
       
-      @scala.inline
-      def apply(): Spawn = {
+      inline def apply(): Spawn = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Spawn]
       }
       
-      @scala.inline
-      implicit class SpawnMutableBuilder[Self <: Spawn] (val x: Self) extends AnyVal {
+      extension [Self <: Spawn](x: Self) {
         
-        @scala.inline
-        def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+        inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+        inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       }
     }
     
@@ -248,65 +234,46 @@ object mod extends Shortcut {
     }
     object Test {
       
-      @scala.inline
-      def apply(): typings.tap.mod.Options.Test = {
+      inline def apply(): typings.tap.mod.Options.Test = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.tap.mod.Options.Test]
       }
       
-      @scala.inline
-      implicit class TestMutableBuilder[Self <: typings.tap.mod.Options.Test] (val x: Self) extends AnyVal {
+      extension [Self <: typings.tap.mod.Options.Test](x: Self) {
         
-        @scala.inline
-        def setAutoend(value: Boolean): Self = StObject.set(x, "autoend", value.asInstanceOf[js.Any])
+        inline def setAutoend(value: Boolean): Self = StObject.set(x, "autoend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoendUndefined: Self = StObject.set(x, "autoend", js.undefined)
+        inline def setAutoendUndefined: Self = StObject.set(x, "autoend", js.undefined)
         
-        @scala.inline
-        def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+        inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+        inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
         
-        @scala.inline
-        def setBuffered(value: Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+        inline def setBuffered(value: Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
+        inline def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
         
-        @scala.inline
-        def setGrep(value: js.Array[RegExp]): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+        inline def setGrep(value: js.Array[RegExp]): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
+        inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
         
-        @scala.inline
-        def setGrepVarargs(value: RegExp*): Self = StObject.set(x, "grep", js.Array(value :_*))
+        inline def setGrepVarargs(value: RegExp*): Self = StObject.set(x, "grep", js.Array(value :_*))
         
-        @scala.inline
-        def setJobs(value: Double): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+        inline def setJobs(value: Double): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
+        inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
         
-        @scala.inline
-        def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+        inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+        inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
         
-        @scala.inline
-        def setRunOnly(value: Boolean): Self = StObject.set(x, "runOnly", value.asInstanceOf[js.Any])
+        inline def setRunOnly(value: Boolean): Self = StObject.set(x, "runOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRunOnlyUndefined: Self = StObject.set(x, "runOnly", js.undefined)
+        inline def setRunOnlyUndefined: Self = StObject.set(x, "runOnly", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       }
     }
   }

@@ -13,19 +13,15 @@ trait Dictoption
 }
 object Dictoption {
   
-  @scala.inline
-  def apply(): Dictoption = {
+  inline def apply(): Dictoption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictoption]
   }
   
-  @scala.inline
-  implicit class DictoptionMutableBuilder[Self <: Dictoption] (val x: Self) extends AnyVal {
+  extension [Self <: Dictoption](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
   }
 }

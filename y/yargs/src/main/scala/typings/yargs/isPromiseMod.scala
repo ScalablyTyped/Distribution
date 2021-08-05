@@ -10,8 +10,6 @@ object isPromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPromise[T](maybePromise: T): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(maybePromise.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
-  @scala.inline
-  def isPromise[T](maybePromise: js.Promise[T]): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(maybePromise.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
+  inline def isPromise[T](maybePromise: T): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(maybePromise.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
+  inline def isPromise[T](maybePromise: js.Promise[T]): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(maybePromise.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
 }

@@ -15,6 +15,5 @@ object appScriptsMod {
   @js.native
   val APP_SCRIPTS_OPTIONS: js.Array[CommandMetadataOption] = js.native
   
-  @scala.inline
-  def importAppScripts(projectDir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("importAppScripts")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def importAppScripts(projectDir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("importAppScripts")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

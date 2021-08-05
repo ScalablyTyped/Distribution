@@ -21,23 +21,18 @@ trait ActionObject[TContext, TEvent /* <: EventObject */]
 }
 object ActionObject {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](`type`: String): ActionObject[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](`type`: String): ActionObject[TContext, TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionObject[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class ActionObjectMutableBuilder[Self <: ActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActionObject[TContext, TEvent])) extends AnyVal {
+  extension [Self <: ActionObject[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (ActionObject[TContext, TEvent])) {
     
-    @scala.inline
-    def setExec(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
+    inline def setExec(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

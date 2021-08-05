@@ -22,11 +22,11 @@ object routeOutletMod {
        with ComponentInterface
        with NavOutlet {
     
-    var activeComponent: js.Any = js.native
+    /* private */ var activeComponent: js.Any = js.native
     
-    var activeEl: js.Any = js.native
+    /* private */ var activeEl: js.Any = js.native
     
-    var ani: js.Any = js.native
+    /* private */ var ani: js.Any = js.native
     
     /**
       * If `true`, the router-outlet should animate the transition of components.
@@ -39,7 +39,7 @@ object routeOutletMod {
       */
     var animation: js.UndefOr[AnimationBuilder] = js.native
     
-    var animationEnabled: js.Any = js.native
+    /* private */ var animationEnabled: js.Any = js.native
     
     /** @internal */
     def commit(enteringEl: HTMLElement): js.Promise[Boolean] = js.native
@@ -61,7 +61,7 @@ object routeOutletMod {
     
     var el: HTMLElement = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
     /** @internal */
     var ionNavDidChange: EventEmitter[Unit] = js.native
@@ -72,7 +72,7 @@ object routeOutletMod {
     /** @internal */
     var ionNavWillLoad: EventEmitter[Unit] = js.native
     
-    var lock: js.Any = js.native
+    /* private */ var lock: js.Any = js.native
     
     /**
       * The mode determines which platform styles to use.
@@ -82,15 +82,15 @@ object routeOutletMod {
     @JSName("render")
     def render_MRouterOutlet(): js.Any = js.native
     
-    var setRoot: js.Any = js.native
+    /* private */ var setRoot: js.Any = js.native
     
     /** @internal */
     var swipeHandler: js.UndefOr[SwipeGestureHandler] = js.native
     
     def swipeHandlerChanged(): Unit = js.native
     
-    var transition: js.Any = js.native
+    /* private */ var transition: js.Any = js.native
     
-    var waitPromise: js.Any = js.native
+    /* private */ var waitPromise: js.Any = js.native
   }
 }

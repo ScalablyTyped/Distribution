@@ -25,8 +25,7 @@ trait XDragGestureListener
 }
 object XDragGestureListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     dragGestureRecognized: DragGestureEvent => Unit,
@@ -37,10 +36,8 @@ object XDragGestureListener {
     __obj.asInstanceOf[XDragGestureListener]
   }
   
-  @scala.inline
-  implicit class XDragGestureListenerMutableBuilder[Self <: XDragGestureListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDragGestureListener](x: Self) {
     
-    @scala.inline
-    def setDragGestureRecognized(value: DragGestureEvent => Unit): Self = StObject.set(x, "dragGestureRecognized", js.Any.fromFunction1(value))
+    inline def setDragGestureRecognized(value: DragGestureEvent => Unit): Self = StObject.set(x, "dragGestureRecognized", js.Any.fromFunction1(value))
   }
 }

@@ -24,23 +24,18 @@ object itemRendererMod {
   }
   object IItemModifiers {
     
-    @scala.inline
-    def apply(active: Boolean, disabled: Boolean, matchesPredicate: Boolean): IItemModifiers = {
+    inline def apply(active: Boolean, disabled: Boolean, matchesPredicate: Boolean): IItemModifiers = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], matchesPredicate = matchesPredicate.asInstanceOf[js.Any])
       __obj.asInstanceOf[IItemModifiers]
     }
     
-    @scala.inline
-    implicit class IItemModifiersMutableBuilder[Self <: IItemModifiers] (val x: Self) extends AnyVal {
+    extension [Self <: IItemModifiers](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesPredicate(value: Boolean): Self = StObject.set(x, "matchesPredicate", value.asInstanceOf[js.Any])
+      inline def setMatchesPredicate(value: Boolean): Self = StObject.set(x, "matchesPredicate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,8 +54,7 @@ object itemRendererMod {
   }
   object IItemRendererProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handleClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
       modifiers: IItemModifiers,
       query: String
@@ -69,23 +63,17 @@ object itemRendererMod {
       __obj.asInstanceOf[IItemRendererProps]
     }
     
-    @scala.inline
-    implicit class IItemRendererPropsMutableBuilder[Self <: IItemRendererProps] (val x: Self) extends AnyVal {
+    extension [Self <: IItemRendererProps](x: Self) {
       
-      @scala.inline
-      def setHandleClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
+      inline def setHandleClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setModifiers(value: IItemModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: IItemModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   

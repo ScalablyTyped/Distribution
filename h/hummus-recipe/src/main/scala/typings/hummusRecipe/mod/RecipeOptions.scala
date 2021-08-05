@@ -33,85 +33,59 @@ trait RecipeOptions extends StObject {
 }
 object RecipeOptions {
   
-  @scala.inline
-  def apply(): RecipeOptions = {
+  inline def apply(): RecipeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipeOptions]
   }
   
-  @scala.inline
-  implicit class RecipeOptionsMutableBuilder[Self <: RecipeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RecipeOptions](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setColorspace(value: rgb | cmyk | grey): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
+    inline def setColorspace(value: rgb | cmyk | grey): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorspaceUndefined: Self = StObject.set(x, "colorspace", js.undefined)
+    inline def setColorspaceUndefined: Self = StObject.set(x, "colorspace", js.undefined)
     
-    @scala.inline
-    def setFontSrcPath(value: String | js.Array[String]): Self = StObject.set(x, "fontSrcPath", value.asInstanceOf[js.Any])
+    inline def setFontSrcPath(value: String | js.Array[String]): Self = StObject.set(x, "fontSrcPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSrcPathUndefined: Self = StObject.set(x, "fontSrcPath", js.undefined)
+    inline def setFontSrcPathUndefined: Self = StObject.set(x, "fontSrcPath", js.undefined)
     
-    @scala.inline
-    def setFontSrcPathVarargs(value: String*): Self = StObject.set(x, "fontSrcPath", js.Array(value :_*))
+    inline def setFontSrcPathVarargs(value: String*): Self = StObject.set(x, "fontSrcPath", js.Array(value :_*))
     
-    @scala.inline
-    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
+    inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
+    inline def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUserPassword(value: String): Self = StObject.set(x, "userPassword", value.asInstanceOf[js.Any])
+    inline def setUserPassword(value: String): Self = StObject.set(x, "userPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPasswordUndefined: Self = StObject.set(x, "userPassword", js.undefined)
+    inline def setUserPasswordUndefined: Self = StObject.set(x, "userPassword", js.undefined)
     
-    @scala.inline
-    def setUserProtectionFlag(value: String): Self = StObject.set(x, "userProtectionFlag", value.asInstanceOf[js.Any])
+    inline def setUserProtectionFlag(value: String): Self = StObject.set(x, "userProtectionFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProtectionFlagUndefined: Self = StObject.set(x, "userProtectionFlag", js.undefined)
+    inline def setUserProtectionFlagUndefined: Self = StObject.set(x, "userProtectionFlag", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

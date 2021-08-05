@@ -14,28 +14,21 @@ trait GetSpreadsheetByDataFilterRequest extends StObject {
 }
 object GetSpreadsheetByDataFilterRequest {
   
-  @scala.inline
-  def apply(): GetSpreadsheetByDataFilterRequest = {
+  inline def apply(): GetSpreadsheetByDataFilterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSpreadsheetByDataFilterRequest]
   }
   
-  @scala.inline
-  implicit class GetSpreadsheetByDataFilterRequestMutableBuilder[Self <: GetSpreadsheetByDataFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSpreadsheetByDataFilterRequest](x: Self) {
     
-    @scala.inline
-    def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
+    inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
+    inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    @scala.inline
-    def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeGridData(value: Boolean): Self = StObject.set(x, "includeGridData", value.asInstanceOf[js.Any])
+    inline def setIncludeGridData(value: Boolean): Self = StObject.set(x, "includeGridData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGridDataUndefined: Self = StObject.set(x, "includeGridData", js.undefined)
+    inline def setIncludeGridDataUndefined: Self = StObject.set(x, "includeGridData", js.undefined)
   }
 }

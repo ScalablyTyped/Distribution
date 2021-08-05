@@ -24,8 +24,7 @@ object pictureInPictureTypesMod {
   }
   object IPictureInPicture {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       disablePictureInPicture: () => Unit,
       enablePictureInPicture: () => Unit,
@@ -38,29 +37,21 @@ object pictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPicture]
     }
     
-    @scala.inline
-    implicit class IPictureInPictureMutableBuilder[Self <: IPictureInPicture] (val x: Self) extends AnyVal {
+    extension [Self <: IPictureInPicture](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisablePictureInPicture(value: () => Unit): Self = StObject.set(x, "disablePictureInPicture", js.Any.fromFunction0(value))
+      inline def setDisablePictureInPicture(value: () => Unit): Self = StObject.set(x, "disablePictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnablePictureInPicture(value: () => Unit): Self = StObject.set(x, "enablePictureInPicture", js.Any.fromFunction0(value))
+      inline def setEnablePictureInPicture(value: () => Unit): Self = StObject.set(x, "enablePictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterPictureInPicture(value: () => Unit): Self = StObject.set(x, "enterPictureInPicture", js.Any.fromFunction0(value))
+      inline def setEnterPictureInPicture(value: () => Unit): Self = StObject.set(x, "enterPictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExitPictureInPicture(value: () => Unit): Self = StObject.set(x, "exitPictureInPicture", js.Any.fromFunction0(value))
+      inline def setExitPictureInPicture(value: () => Unit): Self = StObject.set(x, "exitPictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInPictureInPicture(value: Boolean): Self = StObject.set(x, "isInPictureInPicture", value.asInstanceOf[js.Any])
+      inline def setIsInPictureInPicture(value: Boolean): Self = StObject.set(x, "isInPictureInPicture", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,44 +69,32 @@ object pictureInPictureTypesMod {
   }
   object IPictureInPictureAPI {
     
-    @scala.inline
-    def apply(): IPictureInPictureAPI = {
+    inline def apply(): IPictureInPictureAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPictureInPictureAPI]
     }
     
-    @scala.inline
-    implicit class IPictureInPictureAPIMutableBuilder[Self <: IPictureInPictureAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IPictureInPictureAPI](x: Self) {
       
-      @scala.inline
-      def setDisablePictureInPicture(value: () => Unit): Self = StObject.set(x, "disablePictureInPicture", js.Any.fromFunction0(value))
+      inline def setDisablePictureInPicture(value: () => Unit): Self = StObject.set(x, "disablePictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisablePictureInPictureUndefined: Self = StObject.set(x, "disablePictureInPicture", js.undefined)
+      inline def setDisablePictureInPictureUndefined: Self = StObject.set(x, "disablePictureInPicture", js.undefined)
       
-      @scala.inline
-      def setEnablePictureInPicture(value: () => Unit): Self = StObject.set(x, "enablePictureInPicture", js.Any.fromFunction0(value))
+      inline def setEnablePictureInPicture(value: () => Unit): Self = StObject.set(x, "enablePictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnablePictureInPictureUndefined: Self = StObject.set(x, "enablePictureInPicture", js.undefined)
+      inline def setEnablePictureInPictureUndefined: Self = StObject.set(x, "enablePictureInPicture", js.undefined)
       
-      @scala.inline
-      def setEnterPictureInPicture(value: () => Unit): Self = StObject.set(x, "enterPictureInPicture", js.Any.fromFunction0(value))
+      inline def setEnterPictureInPicture(value: () => Unit): Self = StObject.set(x, "enterPictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterPictureInPictureUndefined: Self = StObject.set(x, "enterPictureInPicture", js.undefined)
+      inline def setEnterPictureInPictureUndefined: Self = StObject.set(x, "enterPictureInPicture", js.undefined)
       
-      @scala.inline
-      def setExitPictureInPicture(value: () => Unit): Self = StObject.set(x, "exitPictureInPicture", js.Any.fromFunction0(value))
+      inline def setExitPictureInPicture(value: () => Unit): Self = StObject.set(x, "exitPictureInPicture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExitPictureInPictureUndefined: Self = StObject.set(x, "exitPictureInPicture", js.undefined)
+      inline def setExitPictureInPictureUndefined: Self = StObject.set(x, "exitPictureInPicture", js.undefined)
       
-      @scala.inline
-      def setIsInPictureInPicture(value: Boolean): Self = StObject.set(x, "isInPictureInPicture", value.asInstanceOf[js.Any])
+      inline def setIsInPictureInPicture(value: Boolean): Self = StObject.set(x, "isInPictureInPicture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInPictureInPictureUndefined: Self = StObject.set(x, "isInPictureInPicture", js.undefined)
+      inline def setIsInPictureInPictureUndefined: Self = StObject.set(x, "isInPictureInPicture", js.undefined)
     }
   }
   
@@ -133,8 +112,7 @@ object pictureInPictureTypesMod {
   }
   object IPictureInPictureHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       exit: () => Unit,
       isEnabled: Boolean,
@@ -145,23 +123,17 @@ object pictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPictureHelper]
     }
     
-    @scala.inline
-    implicit class IPictureInPictureHelperMutableBuilder[Self <: IPictureInPictureHelper] (val x: Self) extends AnyVal {
+    extension [Self <: IPictureInPictureHelper](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+      inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInPictureInPicture(value: Boolean): Self = StObject.set(x, "isInPictureInPicture", value.asInstanceOf[js.Any])
+      inline def setIsInPictureInPicture(value: Boolean): Self = StObject.set(x, "isInPictureInPicture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: () => Unit): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
+      inline def setRequest(value: () => Unit): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
     }
   }
 }

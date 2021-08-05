@@ -22,9 +22,9 @@ object contextRunnerImplMod {
     def this(builderOrContext: ContextBuilder, selectFields: SelectFields_) = this()
     def this(builderOrContext: Context, selectFields: SelectFields_) = this()
     
-    val builderOrContext: js.Any = js.native
+    /* private */ val builderOrContext: js.Any = js.native
     
-    val selectFields: js.Any = js.native
+    /* private */ val selectFields: js.Any = js.native
   }
   
   @js.native

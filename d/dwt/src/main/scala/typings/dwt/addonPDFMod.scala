@@ -130,8 +130,7 @@ object addonPDFMod {
   }
   object PDFWSetting {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       compression: EnumDWTPDFCompressionType | Double,
       creationDate: String,
@@ -148,41 +147,29 @@ object addonPDFMod {
       __obj.asInstanceOf[PDFWSetting]
     }
     
-    @scala.inline
-    implicit class PDFWSettingMutableBuilder[Self <: PDFWSetting] (val x: Self) extends AnyVal {
+    extension [Self <: PDFWSetting](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompression(value: EnumDWTPDFCompressionType | Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: EnumDWTPDFCompressionType | Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+      inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyWords(value: String): Self = StObject.set(x, "keyWords", value.asInstanceOf[js.Any])
+      inline def setKeyWords(value: String): Self = StObject.set(x, "keyWords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+      inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
+      inline def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,17 +183,14 @@ object addonPDFMod {
   }
   object Write {
     
-    @scala.inline
-    def apply(Setup: PDFWSetting => Unit): Write = {
+    inline def apply(Setup: PDFWSetting => Unit): Write = {
       val __obj = js.Dynamic.literal(Setup = js.Any.fromFunction1(Setup))
       __obj.asInstanceOf[Write]
     }
     
-    @scala.inline
-    implicit class WriteMutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
+    extension [Self <: Write](x: Self) {
       
-      @scala.inline
-      def setSetup(value: PDFWSetting => Unit): Self = StObject.set(x, "Setup", js.Any.fromFunction1(value))
+      inline def setSetup(value: PDFWSetting => Unit): Self = StObject.set(x, "Setup", js.Any.fromFunction1(value))
     }
   }
 }

@@ -15,27 +15,20 @@ object serverValuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateWithValues(values: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWithValues")(values.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def generateWithValues(values: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWithValues")(values.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
-  @scala.inline
-  def resolveDeferredLeafValue(value: String, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
-  @scala.inline
-  def resolveDeferredLeafValue(
+  inline def resolveDeferredLeafValue(value: String, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+  inline def resolveDeferredLeafValue(
     value: StringDictionary[js.Any],
     existingVal: ValueProvider,
     serverValues: StringDictionary[js.Any]
   ): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
-  @scala.inline
-  def resolveDeferredLeafValue(value: Boolean, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
-  @scala.inline
-  def resolveDeferredLeafValue(value: Double, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+  inline def resolveDeferredLeafValue(value: Boolean, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+  inline def resolveDeferredLeafValue(value: Double, existingVal: ValueProvider, serverValues: StringDictionary[js.Any]): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredLeafValue")(value.asInstanceOf[js.Any], existingVal.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
   
-  @scala.inline
-  def resolveDeferredValueSnapshot(node: Node, existing: Node, serverValues: Indexable): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredValueSnapshot")(node.asInstanceOf[js.Any], existing.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def resolveDeferredValueSnapshot(node: Node, existing: Node, serverValues: Indexable): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredValueSnapshot")(node.asInstanceOf[js.Any], existing.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @scala.inline
-  def resolveDeferredValueTree(path: Path, node: Node, syncTree: SyncTree, serverValues: Indexable): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredValueTree")(path.asInstanceOf[js.Any], node.asInstanceOf[js.Any], syncTree.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def resolveDeferredValueTree(path: Path, node: Node, syncTree: SyncTree, serverValues: Indexable): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeferredValueTree")(path.asInstanceOf[js.Any], node.asInstanceOf[js.Any], syncTree.asInstanceOf[js.Any], serverValues.asInstanceOf[js.Any])).asInstanceOf[Node]
   
   trait ValueProvider extends StObject {
     
@@ -45,20 +38,16 @@ object serverValuesMod {
   }
   object ValueProvider {
     
-    @scala.inline
-    def apply(getImmediateChild: String => ValueProvider, node: () => Node): ValueProvider = {
+    inline def apply(getImmediateChild: String => ValueProvider, node: () => Node): ValueProvider = {
       val __obj = js.Dynamic.literal(getImmediateChild = js.Any.fromFunction1(getImmediateChild), node = js.Any.fromFunction0(node))
       __obj.asInstanceOf[ValueProvider]
     }
     
-    @scala.inline
-    implicit class ValueProviderMutableBuilder[Self <: ValueProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ValueProvider](x: Self) {
       
-      @scala.inline
-      def setGetImmediateChild(value: String => ValueProvider): Self = StObject.set(x, "getImmediateChild", js.Any.fromFunction1(value))
+      inline def setGetImmediateChild(value: String => ValueProvider): Self = StObject.set(x, "getImmediateChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNode(value: () => Node): Self = StObject.set(x, "node", js.Any.fromFunction0(value))
+      inline def setNode(value: () => Node): Self = StObject.set(x, "node", js.Any.fromFunction0(value))
     }
   }
 }

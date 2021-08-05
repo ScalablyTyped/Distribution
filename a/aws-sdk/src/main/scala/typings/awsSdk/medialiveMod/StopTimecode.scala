@@ -18,25 +18,19 @@ trait StopTimecode extends StObject {
 }
 object StopTimecode {
   
-  @scala.inline
-  def apply(): StopTimecode = {
+  inline def apply(): StopTimecode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopTimecode]
   }
   
-  @scala.inline
-  implicit class StopTimecodeMutableBuilder[Self <: StopTimecode] (val x: Self) extends AnyVal {
+  extension [Self <: StopTimecode](x: Self) {
     
-    @scala.inline
-    def setLastFrameClippingBehavior(value: LastFrameClippingBehavior): Self = StObject.set(x, "LastFrameClippingBehavior", value.asInstanceOf[js.Any])
+    inline def setLastFrameClippingBehavior(value: LastFrameClippingBehavior): Self = StObject.set(x, "LastFrameClippingBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFrameClippingBehaviorUndefined: Self = StObject.set(x, "LastFrameClippingBehavior", js.undefined)
+    inline def setLastFrameClippingBehaviorUndefined: Self = StObject.set(x, "LastFrameClippingBehavior", js.undefined)
     
-    @scala.inline
-    def setTimecode(value: string): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
+    inline def setTimecode(value: string): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeUndefined: Self = StObject.set(x, "Timecode", js.undefined)
+    inline def setTimecodeUndefined: Self = StObject.set(x, "Timecode", js.undefined)
   }
 }

@@ -19,20 +19,16 @@ trait UserObject
 }
 object UserObject {
   
-  @scala.inline
-  def apply(_id: String, common: UserCommon, native: Record[String, js.Any]): UserObject = {
+  inline def apply(_id: String, common: UserCommon, native: Record[String, js.Any]): UserObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[UserObject]
   }
   
-  @scala.inline
-  implicit class UserObjectMutableBuilder[Self <: UserObject] (val x: Self) extends AnyVal {
+  extension [Self <: UserObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: UserCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: UserCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait IScriptSnapshot extends StObject {
 }
 object IScriptSnapshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getLength: () => Double,
     getLineStartPositions: () => js.Array[Double],
     getText: (Double, Double) => String,
@@ -27,19 +26,14 @@ object IScriptSnapshot {
     __obj.asInstanceOf[IScriptSnapshot]
   }
   
-  @scala.inline
-  implicit class IScriptSnapshotMutableBuilder[Self <: IScriptSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: IScriptSnapshot](x: Self) {
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLineStartPositions(value: () => js.Array[Double]): Self = StObject.set(x, "getLineStartPositions", js.Any.fromFunction0(value))
+    inline def setGetLineStartPositions(value: () => js.Array[Double]): Self = StObject.set(x, "getLineStartPositions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: (Double, Double) => String): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
+    inline def setGetText(value: (Double, Double) => String): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTextChangeRangeSinceVersion(value: Double => TextChangeRange): Self = StObject.set(x, "getTextChangeRangeSinceVersion", js.Any.fromFunction1(value))
+    inline def setGetTextChangeRangeSinceVersion(value: Double => TextChangeRange): Self = StObject.set(x, "getTextChangeRangeSinceVersion", js.Any.fromFunction1(value))
   }
 }

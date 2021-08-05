@@ -18,28 +18,21 @@ trait ListSecurityProfilesResponse extends StObject {
 }
 object ListSecurityProfilesResponse {
   
-  @scala.inline
-  def apply(): ListSecurityProfilesResponse = {
+  inline def apply(): ListSecurityProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSecurityProfilesResponse]
   }
   
-  @scala.inline
-  implicit class ListSecurityProfilesResponseMutableBuilder[Self <: ListSecurityProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecurityProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSecurityProfileIdentifiers(value: SecurityProfileIdentifiers): Self = StObject.set(x, "securityProfileIdentifiers", value.asInstanceOf[js.Any])
+    inline def setSecurityProfileIdentifiers(value: SecurityProfileIdentifiers): Self = StObject.set(x, "securityProfileIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityProfileIdentifiersUndefined: Self = StObject.set(x, "securityProfileIdentifiers", js.undefined)
+    inline def setSecurityProfileIdentifiersUndefined: Self = StObject.set(x, "securityProfileIdentifiers", js.undefined)
     
-    @scala.inline
-    def setSecurityProfileIdentifiersVarargs(value: SecurityProfileIdentifier*): Self = StObject.set(x, "securityProfileIdentifiers", js.Array(value :_*))
+    inline def setSecurityProfileIdentifiersVarargs(value: SecurityProfileIdentifier*): Self = StObject.set(x, "securityProfileIdentifiers", js.Array(value :_*))
   }
 }

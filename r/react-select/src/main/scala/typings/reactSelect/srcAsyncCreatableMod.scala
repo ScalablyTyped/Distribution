@@ -34,8 +34,7 @@ object srcAsyncCreatableMod {
     @JSImport("react-select/src/AsyncCreatable", "default.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/AsyncCreatable", "AsyncCreatable")
@@ -75,8 +74,7 @@ object srcAsyncCreatableMod {
     @JSImport("react-select/src/AsyncCreatable", "AsyncCreatable.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type Props[OptionType /* <: OptionTypeBase */] = typings.reactSelect.srcAsyncMod.Props[OptionType] & typings.reactSelect.srcCreatableMod.Props[OptionType]
@@ -87,8 +85,7 @@ object srcAsyncCreatableMod {
        with typings.reactSelect.srcCreatableMod.State[OptionType]
   object State {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](
+    inline def apply[OptionType /* <: OptionTypeBase */](
       inputValue: String,
       isLoading: Boolean,
       loadedOptions: OptionsType[OptionType],

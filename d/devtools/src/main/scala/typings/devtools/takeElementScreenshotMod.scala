@@ -12,6 +12,5 @@ object takeElementScreenshotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasElementId: ElementId): js.Promise[String | Unit | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Unit | Buffer]]
+  inline def default(hasElementId: ElementId): js.Promise[String | Unit | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Unit | Buffer]]
 }

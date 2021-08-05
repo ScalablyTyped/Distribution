@@ -21,46 +21,29 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createBrowserHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[History[S]]
-  @scala.inline
-  def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
+  inline def createBrowserHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[History[S]]
+  inline def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
   
-  @scala.inline
-  def createHashHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")().asInstanceOf[History[S]]
-  @scala.inline
-  def createHashHistory[S](options: HashHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
+  inline def createHashHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")().asInstanceOf[History[S]]
+  inline def createHashHistory[S](options: HashHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
   
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S]): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any]).asInstanceOf[Location[S]]
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S], state: S, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S], state: Unit, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  @scala.inline
-  def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S]): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any]).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S], state: S, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S], state: Unit, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  inline def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
   
-  @scala.inline
-  def createMemoryHistory[S](): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")().asInstanceOf[MemoryHistory[S]]
-  @scala.inline
-  def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")(options.asInstanceOf[js.Any]).asInstanceOf[MemoryHistory[S]]
+  inline def createMemoryHistory[S](): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")().asInstanceOf[MemoryHistory[S]]
+  inline def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")(options.asInstanceOf[js.Any]).asInstanceOf[MemoryHistory[S]]
   
-  @scala.inline
-  def createPath[S](location: LocationDescriptorObject[S]): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(location.asInstanceOf[js.Any]).asInstanceOf[Path]
+  inline def createPath[S](location: LocationDescriptorObject[S]): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(location.asInstanceOf[js.Any]).asInstanceOf[Path]
   
-  @scala.inline
-  def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("locationsAreEqual")(lv.asInstanceOf[js.Any], rv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("locationsAreEqual")(lv.asInstanceOf[js.Any], rv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parsePath(path: Path): Location[LocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[Location[LocationState]]
+  inline def parsePath(path: Path): Location[LocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[Location[LocationState]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.history.historyStrings.PUSH
@@ -70,14 +53,11 @@ object mod {
   trait Action extends StObject
   object Action {
     
-    @scala.inline
-    def POP: typings.history.historyStrings.POP = "POP".asInstanceOf[typings.history.historyStrings.POP]
+    inline def POP: typings.history.historyStrings.POP = "POP".asInstanceOf[typings.history.historyStrings.POP]
     
-    @scala.inline
-    def PUSH: typings.history.historyStrings.PUSH = "PUSH".asInstanceOf[typings.history.historyStrings.PUSH]
+    inline def PUSH: typings.history.historyStrings.PUSH = "PUSH".asInstanceOf[typings.history.historyStrings.PUSH]
     
-    @scala.inline
-    def REPLACE: typings.history.historyStrings.REPLACE = "REPLACE".asInstanceOf[typings.history.historyStrings.REPLACE]
+    inline def REPLACE: typings.history.historyStrings.REPLACE = "REPLACE".asInstanceOf[typings.history.historyStrings.REPLACE]
   }
   
   type Hash = typings.history.mod.History.Hash
@@ -159,32 +139,24 @@ object mod {
   }
   object Location {
     
-    @scala.inline
-    def apply[S](hash: Hash, pathname: Pathname, search: Search, state: S): Location[S] = {
+    inline def apply[S](hash: Hash, pathname: Pathname, search: Search, state: S): Location[S] = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location[S]]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location[?], S] (val x: Self & Location[S]) extends AnyVal {
+    extension [Self <: Location[?], S](x: Self & Location[S]) {
       
-      @scala.inline
-      def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,44 +176,32 @@ object mod {
   }
   object LocationDescriptorObject {
     
-    @scala.inline
-    def apply[S](): LocationDescriptorObject[S] = {
+    inline def apply[S](): LocationDescriptorObject[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationDescriptorObject[S]]
     }
     
-    @scala.inline
-    implicit class LocationDescriptorObjectMutableBuilder[Self <: LocationDescriptorObject[?], S] (val x: Self & LocationDescriptorObject[S]) extends AnyVal {
+    extension [Self <: LocationDescriptorObject[?], S](x: Self & LocationDescriptorObject[S]) {
       
-      @scala.inline
-      def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      @scala.inline
-      def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -293,8 +253,7 @@ object mod {
   }
   object Module {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createBrowserHistory: FnCall,
       createHashHistory: FnCallOptions,
       createLocation: FnCallPathStateKeyCurrentLocation,
@@ -307,29 +266,21 @@ object mod {
       __obj.asInstanceOf[Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+    extension [Self <: Module](x: Self) {
       
-      @scala.inline
-      def setCreateBrowserHistory(value: FnCall): Self = StObject.set(x, "createBrowserHistory", value.asInstanceOf[js.Any])
+      inline def setCreateBrowserHistory(value: FnCall): Self = StObject.set(x, "createBrowserHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateHashHistory(value: FnCallOptions): Self = StObject.set(x, "createHashHistory", value.asInstanceOf[js.Any])
+      inline def setCreateHashHistory(value: FnCallOptions): Self = StObject.set(x, "createHashHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateLocation(value: FnCallPathStateKeyCurrentLocation): Self = StObject.set(x, "createLocation", value.asInstanceOf[js.Any])
+      inline def setCreateLocation(value: FnCallPathStateKeyCurrentLocation): Self = StObject.set(x, "createLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateMemoryHistory(value: Fn0): Self = StObject.set(x, "createMemoryHistory", value.asInstanceOf[js.Any])
+      inline def setCreateMemoryHistory(value: Fn0): Self = StObject.set(x, "createMemoryHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatePath(value: FnCallLocation): Self = StObject.set(x, "createPath", value.asInstanceOf[js.Any])
+      inline def setCreatePath(value: FnCallLocation): Self = StObject.set(x, "createPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsAreEqual(value: FnCallLvRv): Self = StObject.set(x, "locationsAreEqual", value.asInstanceOf[js.Any])
+      inline def setLocationsAreEqual(value: FnCallLvRv): Self = StObject.set(x, "locationsAreEqual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsePath(value: /* path */ Path => Location[LocationState]): Self = StObject.set(x, "parsePath", js.Any.fromFunction1(value))
+      inline def setParsePath(value: /* path */ Path => Location[LocationState]): Self = StObject.set(x, "parsePath", js.Any.fromFunction1(value))
     }
   }
   

@@ -10,16 +10,13 @@ trait BillingGetGithubPackagesBillingUserEndpoint extends StObject {
 }
 object BillingGetGithubPackagesBillingUserEndpoint {
   
-  @scala.inline
-  def apply(username: String): BillingGetGithubPackagesBillingUserEndpoint = {
+  inline def apply(username: String): BillingGetGithubPackagesBillingUserEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingGetGithubPackagesBillingUserEndpoint]
   }
   
-  @scala.inline
-  implicit class BillingGetGithubPackagesBillingUserEndpointMutableBuilder[Self <: BillingGetGithubPackagesBillingUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGetGithubPackagesBillingUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

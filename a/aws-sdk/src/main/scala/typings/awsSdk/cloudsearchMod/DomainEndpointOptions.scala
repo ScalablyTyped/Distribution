@@ -18,25 +18,19 @@ trait DomainEndpointOptions extends StObject {
 }
 object DomainEndpointOptions {
   
-  @scala.inline
-  def apply(): DomainEndpointOptions = {
+  inline def apply(): DomainEndpointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainEndpointOptions]
   }
   
-  @scala.inline
-  implicit class DomainEndpointOptionsMutableBuilder[Self <: DomainEndpointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DomainEndpointOptions](x: Self) {
     
-    @scala.inline
-    def setEnforceHTTPS(value: Boolean): Self = StObject.set(x, "EnforceHTTPS", value.asInstanceOf[js.Any])
+    inline def setEnforceHTTPS(value: Boolean): Self = StObject.set(x, "EnforceHTTPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceHTTPSUndefined: Self = StObject.set(x, "EnforceHTTPS", js.undefined)
+    inline def setEnforceHTTPSUndefined: Self = StObject.set(x, "EnforceHTTPS", js.undefined)
     
-    @scala.inline
-    def setTLSSecurityPolicy(value: TLSSecurityPolicy): Self = StObject.set(x, "TLSSecurityPolicy", value.asInstanceOf[js.Any])
+    inline def setTLSSecurityPolicy(value: TLSSecurityPolicy): Self = StObject.set(x, "TLSSecurityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTLSSecurityPolicyUndefined: Self = StObject.set(x, "TLSSecurityPolicy", js.undefined)
+    inline def setTLSSecurityPolicyUndefined: Self = StObject.set(x, "TLSSecurityPolicy", js.undefined)
   }
 }

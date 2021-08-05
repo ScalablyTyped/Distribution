@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceConnectionState extends StObject
 object RTCIceConnectionState {
   
-  @scala.inline
-  def checking: typings.reactNativeWebrtc.reactNativeWebrtcStrings.checking = "checking".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.checking]
+  inline def checking: typings.reactNativeWebrtc.reactNativeWebrtcStrings.checking = "checking".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.checking]
   
-  @scala.inline
-  def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = "closed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed]
+  inline def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = "closed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed]
   
-  @scala.inline
-  def completed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.completed = "completed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.completed]
+  inline def completed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.completed = "completed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.completed]
   
-  @scala.inline
-  def connected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.connected = "connected".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.connected]
+  inline def connected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.connected = "connected".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.connected]
   
-  @scala.inline
-  def disconnected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected = "disconnected".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected]
+  inline def disconnected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected = "disconnected".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected]
   
-  @scala.inline
-  def failed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.failed = "failed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.failed]
+  inline def failed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.failed = "failed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.failed]
   
-  @scala.inline
-  def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
+  inline def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
 }

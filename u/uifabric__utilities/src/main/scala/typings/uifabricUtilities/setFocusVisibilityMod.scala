@@ -19,8 +19,6 @@ object setFocusVisibilityMod {
   @js.native
   val IsFocusVisibleClassName: /* "ms-Fabric--isFocusVisible" */ String = js.native
   
-  @scala.inline
-  def setFocusVisibility(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setFocusVisibility(enabled: Boolean, target: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setFocusVisibility(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFocusVisibility(enabled: Boolean, target: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

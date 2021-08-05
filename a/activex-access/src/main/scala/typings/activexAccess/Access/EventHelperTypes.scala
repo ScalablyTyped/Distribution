@@ -33,38 +33,28 @@ object EventHelperTypes {
   }
   object WebBrowserControlBeforeNavigate2Parameter {
     
-    @scala.inline
-    def apply(Cancel: Boolean, Headers: js.Any, PostData: js.Any, URL: String, flags: Double, pDisp: js.Any): WebBrowserControlBeforeNavigate2Parameter = {
+    inline def apply(Cancel: Boolean, Headers: js.Any, PostData: js.Any, URL: String, flags: Double, pDisp: js.Any): WebBrowserControlBeforeNavigate2Parameter = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any], TargetFrameName = null)
       __obj.asInstanceOf[WebBrowserControlBeforeNavigate2Parameter]
     }
     
-    @scala.inline
-    implicit class WebBrowserControlBeforeNavigate2ParameterMutableBuilder[Self <: WebBrowserControlBeforeNavigate2Parameter] (val x: Self) extends AnyVal {
+    extension [Self <: WebBrowserControlBeforeNavigate2Parameter](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+      inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetFrameName(value: String): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
+      inline def setTargetFrameName(value: String): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetFrameNameNull: Self = StObject.set(x, "TargetFrameName", null)
+      inline def setTargetFrameNameNull: Self = StObject.set(x, "TargetFrameName", null)
       
-      @scala.inline
-      def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -26,18 +26,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(app: Application_): Instance = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Instance]
-  @scala.inline
-  def apply(app: Application_, server: Unit, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  @scala.inline
-  def apply(app: Application_, server: Server): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  @scala.inline
-  def apply(app: Application_, server: Server, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  @scala.inline
-  def apply(app: Application_, server: typings.node.httpsMod.Server): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
-  @scala.inline
-  def apply(app: Application_, server: typings.node.httpsMod.Server, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(app: Application_): Instance = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  inline def apply(app: Application_, server: Unit, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(app: Application_, server: Server): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(app: Application_, server: Server, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(app: Application_, server: typings.node.httpsMod.Server): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(app: Application_, server: typings.node.httpsMod.Server, options: Options): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Instance]
   
   @JSImport("express-ws", JSImport.Namespace)
   @js.native
@@ -50,8 +44,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Router(options: js.UndefOr[RouterOptions]): typings.express.mod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.Router]
+    inline def Router(options: js.UndefOr[RouterOptions]): typings.express.mod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.Router]
   }
   
   @js.native
@@ -78,23 +71,18 @@ object mod {
   }
   object Instance {
     
-    @scala.inline
-    def apply(app: Application, applyTo: RouterLike => Unit, getWss: () => typings.ws.mod.Server): Instance = {
+    inline def apply(app: Application, applyTo: RouterLike => Unit, getWss: () => typings.ws.mod.Server): Instance = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], applyTo = js.Any.fromFunction1(applyTo), getWss = js.Any.fromFunction0(getWss))
       __obj.asInstanceOf[Instance]
     }
     
-    @scala.inline
-    implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+    extension [Self <: Instance](x: Self) {
       
-      @scala.inline
-      def setApp(value: Application): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: Application): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyTo(value: RouterLike => Unit): Self = StObject.set(x, "applyTo", js.Any.fromFunction1(value))
+      inline def setApplyTo(value: RouterLike => Unit): Self = StObject.set(x, "applyTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWss(value: () => typings.ws.mod.Server): Self = StObject.set(x, "getWss", js.Any.fromFunction0(value))
+      inline def setGetWss(value: () => typings.ws.mod.Server): Self = StObject.set(x, "getWss", js.Any.fromFunction0(value))
     }
   }
   
@@ -106,26 +94,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLeaveRouterUntouched(value: Boolean): Self = StObject.set(x, "leaveRouterUntouched", value.asInstanceOf[js.Any])
+      inline def setLeaveRouterUntouched(value: Boolean): Self = StObject.set(x, "leaveRouterUntouched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeaveRouterUntouchedUndefined: Self = StObject.set(x, "leaveRouterUntouched", js.undefined)
+      inline def setLeaveRouterUntouchedUndefined: Self = StObject.set(x, "leaveRouterUntouched", js.undefined)
       
-      @scala.inline
-      def setWsOptions(value: ServerOptions): Self = StObject.set(x, "wsOptions", value.asInstanceOf[js.Any])
+      inline def setWsOptions(value: ServerOptions): Self = StObject.set(x, "wsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsOptionsUndefined: Self = StObject.set(x, "wsOptions", js.undefined)
+      inline def setWsOptionsUndefined: Self = StObject.set(x, "wsOptions", js.undefined)
     }
   }
   
@@ -158,17 +140,14 @@ object mod {
   }
   object RouterLike {
     
-    @scala.inline
-    def apply(get: IRouterMatcher[RouterLike]): RouterLike = {
+    inline def apply(get: IRouterMatcher[RouterLike]): RouterLike = {
       val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterLike]
     }
     
-    @scala.inline
-    implicit class RouterLikeMutableBuilder[Self <: RouterLike] (val x: Self) extends AnyVal {
+    extension [Self <: RouterLike](x: Self) {
       
-      @scala.inline
-      def setGet(value: IRouterMatcher[RouterLike]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: IRouterMatcher[RouterLike]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,17 +172,14 @@ object mod {
   }
   object WithWebsocketMethod {
     
-    @scala.inline
-    def apply(ws: WebsocketMethod[WithWebsocketMethod]): WithWebsocketMethod = {
+    inline def apply(ws: WebsocketMethod[WithWebsocketMethod]): WithWebsocketMethod = {
       val __obj = js.Dynamic.literal(ws = ws.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithWebsocketMethod]
     }
     
-    @scala.inline
-    implicit class WithWebsocketMethodMutableBuilder[Self <: WithWebsocketMethod] (val x: Self) extends AnyVal {
+    extension [Self <: WithWebsocketMethod](x: Self) {
       
-      @scala.inline
-      def setWs(value: WebsocketMethod[WithWebsocketMethod]): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
+      inline def setWs(value: WebsocketMethod[WithWebsocketMethod]): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
     }
   }
 }

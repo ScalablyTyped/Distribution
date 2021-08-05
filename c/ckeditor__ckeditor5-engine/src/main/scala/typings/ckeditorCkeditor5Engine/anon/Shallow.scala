@@ -23,49 +23,35 @@ trait Shallow extends StObject {
 }
 object Shallow {
   
-  @scala.inline
-  def apply(): Shallow = {
+  inline def apply(): Shallow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Shallow]
   }
   
-  @scala.inline
-  implicit class ShallowMutableBuilder[Self <: Shallow] (val x: Self) extends AnyVal {
+  extension [Self <: Shallow](x: Self) {
     
-    @scala.inline
-    def setBoundaries(value: Range): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+    inline def setBoundaries(value: Range): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
+    inline def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
     
-    @scala.inline
-    def setDirection(value: TreeWalkerDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: TreeWalkerDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setIgnoreElementEnd(value: Boolean): Self = StObject.set(x, "ignoreElementEnd", value.asInstanceOf[js.Any])
+    inline def setIgnoreElementEnd(value: Boolean): Self = StObject.set(x, "ignoreElementEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreElementEndUndefined: Self = StObject.set(x, "ignoreElementEnd", js.undefined)
+    inline def setIgnoreElementEndUndefined: Self = StObject.set(x, "ignoreElementEnd", js.undefined)
     
-    @scala.inline
-    def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+    inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
+    inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
     
-    @scala.inline
-    def setSingleCharacters(value: Boolean): Self = StObject.set(x, "singleCharacters", value.asInstanceOf[js.Any])
+    inline def setSingleCharacters(value: Boolean): Self = StObject.set(x, "singleCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleCharactersUndefined: Self = StObject.set(x, "singleCharacters", js.undefined)
+    inline def setSingleCharactersUndefined: Self = StObject.set(x, "singleCharacters", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: Position): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Position): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
   }
 }

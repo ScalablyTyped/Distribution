@@ -11,10 +11,8 @@ object optionsContentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getContentOpts(contentParam: String): ContentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentOpts")(contentParam.asInstanceOf[js.Any]).asInstanceOf[ContentOptions]
-  @scala.inline
-  def getContentOpts(contentParam: js.Object): ContentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentOpts")(contentParam.asInstanceOf[js.Any]).asInstanceOf[ContentOptions]
+  inline def getContentOpts(contentParam: String): ContentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentOpts")(contentParam.asInstanceOf[js.Any]).asInstanceOf[ContentOptions]
+  inline def getContentOpts(contentParam: js.Object): ContentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentOpts")(contentParam.asInstanceOf[js.Any]).asInstanceOf[ContentOptions]
   
   trait ContentOptions extends StObject {
     
@@ -24,23 +22,18 @@ object optionsContentMod {
   }
   object ContentOptions {
     
-    @scala.inline
-    def apply(element: String | Node): ContentOptions = {
+    inline def apply(element: String | Node): ContentOptions = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentOptions]
     }
     
-    @scala.inline
-    implicit class ContentOptionsMutableBuilder[Self <: ContentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ContentOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setElement(value: String | Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: String | Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
   }
 }

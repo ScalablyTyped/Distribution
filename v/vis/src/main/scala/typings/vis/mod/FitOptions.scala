@@ -19,25 +19,19 @@ trait FitOptions extends StObject {
 }
 object FitOptions {
   
-  @scala.inline
-  def apply(animation: TimelineAnimationType): FitOptions = {
+  inline def apply(animation: TimelineAnimationType): FitOptions = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[FitOptions]
   }
   
-  @scala.inline
-  implicit class FitOptionsMutableBuilder[Self <: FitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FitOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: TimelineAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: TimelineAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

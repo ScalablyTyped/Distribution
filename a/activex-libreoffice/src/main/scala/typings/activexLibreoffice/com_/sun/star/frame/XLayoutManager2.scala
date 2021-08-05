@@ -29,8 +29,7 @@ trait XLayoutManager2
      with XLayoutManagerEventBroadcaster
 object XLayoutManager2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentDockingArea: Rectangle,
     DockingAreaAcceptor: XDockingAreaAcceptor,
     Elements: SafeArray[XUIElement],

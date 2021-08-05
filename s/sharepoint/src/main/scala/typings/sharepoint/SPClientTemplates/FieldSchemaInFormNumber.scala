@@ -13,8 +13,7 @@ trait FieldSchemaInFormNumber
 }
 object FieldSchemaInFormNumber {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     Description: String,
     Direction: String,
@@ -35,10 +34,8 @@ object FieldSchemaInFormNumber {
     __obj.asInstanceOf[FieldSchemaInFormNumber]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormNumberMutableBuilder[Self <: FieldSchemaInFormNumber] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormNumber](x: Self) {
     
-    @scala.inline
-    def setShowAsPercentage(value: Boolean): Self = StObject.set(x, "ShowAsPercentage", value.asInstanceOf[js.Any])
+    inline def setShowAsPercentage(value: Boolean): Self = StObject.set(x, "ShowAsPercentage", value.asInstanceOf[js.Any])
   }
 }

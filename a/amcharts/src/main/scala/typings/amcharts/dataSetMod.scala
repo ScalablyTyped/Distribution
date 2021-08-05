@@ -130,8 +130,7 @@ object dataSetMod {
   }
   object DataSet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       categoryField: String,
       color: String,
       compared: Boolean,
@@ -146,44 +145,31 @@ object dataSetMod {
       __obj.asInstanceOf[DataSet]
     }
     
-    @scala.inline
-    implicit class DataSetMutableBuilder[Self <: DataSet] (val x: Self) extends AnyVal {
+    extension [Self <: DataSet](x: Self) {
       
-      @scala.inline
-      def setCategoryField(value: String): Self = StObject.set(x, "categoryField", value.asInstanceOf[js.Any])
+      inline def setCategoryField(value: String): Self = StObject.set(x, "categoryField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompared(value: Boolean): Self = StObject.set(x, "compared", value.asInstanceOf[js.Any])
+      inline def setCompared(value: Boolean): Self = StObject.set(x, "compared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataProvider(value: js.Array[js.Any]): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
+      inline def setDataProvider(value: js.Array[js.Any]): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataProviderVarargs(value: js.Any*): Self = StObject.set(x, "dataProvider", js.Array(value :_*))
+      inline def setDataProviderVarargs(value: js.Any*): Self = StObject.set(x, "dataProvider", js.Array(value :_*))
       
-      @scala.inline
-      def setFieldMappings(value: js.Array[js.Any]): Self = StObject.set(x, "fieldMappings", value.asInstanceOf[js.Any])
+      inline def setFieldMappings(value: js.Array[js.Any]): Self = StObject.set(x, "fieldMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldMappingsVarargs(value: js.Any*): Self = StObject.set(x, "fieldMappings", js.Array(value :_*))
+      inline def setFieldMappingsVarargs(value: js.Any*): Self = StObject.set(x, "fieldMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setShowInCompare(value: Boolean): Self = StObject.set(x, "showInCompare", value.asInstanceOf[js.Any])
+      inline def setShowInCompare(value: Boolean): Self = StObject.set(x, "showInCompare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowInSelect(value: Boolean): Self = StObject.set(x, "showInSelect", value.asInstanceOf[js.Any])
+      inline def setShowInSelect(value: Boolean): Self = StObject.set(x, "showInSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStockEvents(value: js.Array[typings.amcharts.stockEventMod.default]): Self = StObject.set(x, "stockEvents", value.asInstanceOf[js.Any])
+      inline def setStockEvents(value: js.Array[typings.amcharts.stockEventMod.default]): Self = StObject.set(x, "stockEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStockEventsVarargs(value: typings.amcharts.stockEventMod.default*): Self = StObject.set(x, "stockEvents", js.Array(value :_*))
+      inline def setStockEventsVarargs(value: typings.amcharts.stockEventMod.default*): Self = StObject.set(x, "stockEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

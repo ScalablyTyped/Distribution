@@ -17,19 +17,15 @@ trait PrintTaskProperties
 }
 object PrintTaskProperties {
   
-  @scala.inline
-  def apply(): PrintTaskProperties = {
+  inline def apply(): PrintTaskProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintTaskProperties]
   }
   
-  @scala.inline
-  implicit class PrintTaskPropertiesMutableBuilder[Self <: PrintTaskProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTaskProperties](x: Self) {
     
-    @scala.inline
-    def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
+    inline def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
+    inline def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
   }
 }

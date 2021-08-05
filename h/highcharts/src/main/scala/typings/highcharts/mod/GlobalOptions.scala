@@ -14,19 +14,15 @@ trait GlobalOptions extends StObject {
 }
 object GlobalOptions {
   
-  @scala.inline
-  def apply(): GlobalOptions = {
+  inline def apply(): GlobalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalOptions]
   }
   
-  @scala.inline
-  implicit class GlobalOptionsMutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalOptions](x: Self) {
     
-    @scala.inline
-    def setVMLRadialGradientURL(value: String): Self = StObject.set(x, "VMLRadialGradientURL", value.asInstanceOf[js.Any])
+    inline def setVMLRadialGradientURL(value: String): Self = StObject.set(x, "VMLRadialGradientURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVMLRadialGradientURLUndefined: Self = StObject.set(x, "VMLRadialGradientURL", js.undefined)
+    inline def setVMLRadialGradientURLUndefined: Self = StObject.set(x, "VMLRadialGradientURL", js.undefined)
   }
 }

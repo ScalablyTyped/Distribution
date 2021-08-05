@@ -12,19 +12,15 @@ trait BackupResponse extends StObject {
 }
 object BackupResponse {
   
-  @scala.inline
-  def apply(result: Boolean, taskId: Double): BackupResponse = {
+  inline def apply(result: Boolean, taskId: Double): BackupResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupResponse]
   }
   
-  @scala.inline
-  implicit class BackupResponseMutableBuilder[Self <: BackupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BackupResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

@@ -44,61 +44,43 @@ trait StackAnimationOptions extends StObject {
 }
 object StackAnimationOptions {
   
-  @scala.inline
-  def apply(): StackAnimationOptions = {
+  inline def apply(): StackAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackAnimationOptions]
   }
   
-  @scala.inline
-  implicit class StackAnimationOptionsMutableBuilder[Self <: StackAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StackAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setBottomTabs(value: ViewAnimationOptions): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
+    inline def setBottomTabs(value: ViewAnimationOptions): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomTabsUndefined: Self = StObject.set(x, "bottomTabs", js.undefined)
+    inline def setBottomTabsUndefined: Self = StObject.set(x, "bottomTabs", js.undefined)
     
-    @scala.inline
-    def setContent(value: ViewAnimationOptions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ViewAnimationOptions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setElementTransitions(value: js.Array[ElementTransition]): Self = StObject.set(x, "elementTransitions", value.asInstanceOf[js.Any])
+    inline def setElementTransitions(value: js.Array[ElementTransition]): Self = StObject.set(x, "elementTransitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementTransitionsUndefined: Self = StObject.set(x, "elementTransitions", js.undefined)
+    inline def setElementTransitionsUndefined: Self = StObject.set(x, "elementTransitions", js.undefined)
     
-    @scala.inline
-    def setElementTransitionsVarargs(value: ElementTransition*): Self = StObject.set(x, "elementTransitions", js.Array(value :_*))
+    inline def setElementTransitionsVarargs(value: ElementTransition*): Self = StObject.set(x, "elementTransitions", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSharedElementTransitions(value: js.Array[SharedElementTransition]): Self = StObject.set(x, "sharedElementTransitions", value.asInstanceOf[js.Any])
+    inline def setSharedElementTransitions(value: js.Array[SharedElementTransition]): Self = StObject.set(x, "sharedElementTransitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedElementTransitionsUndefined: Self = StObject.set(x, "sharedElementTransitions", js.undefined)
+    inline def setSharedElementTransitionsUndefined: Self = StObject.set(x, "sharedElementTransitions", js.undefined)
     
-    @scala.inline
-    def setSharedElementTransitionsVarargs(value: SharedElementTransition*): Self = StObject.set(x, "sharedElementTransitions", js.Array(value :_*))
+    inline def setSharedElementTransitionsVarargs(value: SharedElementTransition*): Self = StObject.set(x, "sharedElementTransitions", js.Array(value :_*))
     
-    @scala.inline
-    def setTopBar(value: ViewAnimationOptions): Self = StObject.set(x, "topBar", value.asInstanceOf[js.Any])
+    inline def setTopBar(value: ViewAnimationOptions): Self = StObject.set(x, "topBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopBarUndefined: Self = StObject.set(x, "topBar", js.undefined)
+    inline def setTopBarUndefined: Self = StObject.set(x, "topBar", js.undefined)
     
-    @scala.inline
-    def setWaitForRender(value: Boolean): Self = StObject.set(x, "waitForRender", value.asInstanceOf[js.Any])
+    inline def setWaitForRender(value: Boolean): Self = StObject.set(x, "waitForRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForRenderUndefined: Self = StObject.set(x, "waitForRender", js.undefined)
+    inline def setWaitForRenderUndefined: Self = StObject.set(x, "waitForRender", js.undefined)
   }
 }

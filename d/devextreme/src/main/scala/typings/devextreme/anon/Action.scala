@@ -13,25 +13,19 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(): Action = {
+  inline def apply(): Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setAction(value: (/* itemElement */ dxElement, /* itemData */ js.Any) => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+    inline def setAction(value: (/* itemElement */ dxElement, /* itemData */ js.Any) => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

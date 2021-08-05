@@ -20,8 +20,7 @@ trait Current extends StObject {
 }
 object Current {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     current: Double,
     mode: String,
     onChange: () => Unit,
@@ -33,25 +32,18 @@ object Current {
     __obj.asInstanceOf[Current]
   }
   
-  @scala.inline
-  implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+  extension [Self <: Current](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
+    inline def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

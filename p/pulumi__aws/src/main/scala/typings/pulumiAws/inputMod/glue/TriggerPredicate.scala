@@ -19,25 +19,19 @@ trait TriggerPredicate extends StObject {
 }
 object TriggerPredicate {
   
-  @scala.inline
-  def apply(conditions: Input[js.Array[Input[TriggerPredicateCondition]]]): TriggerPredicate = {
+  inline def apply(conditions: Input[js.Array[Input[TriggerPredicateCondition]]]): TriggerPredicate = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerPredicate]
   }
   
-  @scala.inline
-  implicit class TriggerPredicateMutableBuilder[Self <: TriggerPredicate] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerPredicate](x: Self) {
     
-    @scala.inline
-    def setConditions(value: Input[js.Array[Input[TriggerPredicateCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Input[js.Array[Input[TriggerPredicateCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: Input[TriggerPredicateCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Input[TriggerPredicateCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setLogical(value: Input[String]): Self = StObject.set(x, "logical", value.asInstanceOf[js.Any])
+    inline def setLogical(value: Input[String]): Self = StObject.set(x, "logical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalUndefined: Self = StObject.set(x, "logical", js.undefined)
+    inline def setLogicalUndefined: Self = StObject.set(x, "logical", js.undefined)
   }
 }

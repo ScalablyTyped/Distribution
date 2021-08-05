@@ -19,8 +19,7 @@ trait PortalItemUpdateParams
 }
 object PortalItemUpdateParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     data: String | js.Any,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object PortalItemUpdateParams {
     __obj.asInstanceOf[PortalItemUpdateParams]
   }
   
-  @scala.inline
-  implicit class PortalItemUpdateParamsMutableBuilder[Self <: PortalItemUpdateParams] (val x: Self) extends AnyVal {
+  extension [Self <: PortalItemUpdateParams](x: Self) {
     
-    @scala.inline
-    def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

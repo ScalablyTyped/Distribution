@@ -132,8 +132,7 @@ object reactNativeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def track(name: String, dimensions: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(name.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def track(name: String, dimensions: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(name.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   }
   
   /**
@@ -172,8 +171,7 @@ object reactNativeMod {
       var url: String = js.native
     }
     
-    @scala.inline
-    def HTTPOptions_=(x: Instantiable0[HTTPOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPOptions")(x.asInstanceOf[js.Any])
+    inline def HTTPOptions_=(x: Instantiable0[HTTPOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPOptions")(x.asInstanceOf[js.Any])
     
     // Read preference describes how MongoDB driver route read operations to the members of a replica set.
     @JSImport("parse/react-native", "Cloud.ReadPreferenceOption")
@@ -194,55 +192,35 @@ object reactNativeMod {
       /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred & String = js.native
     }
     
-    @scala.inline
-    def afterDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def afterDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def afterDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[Unit]
-    @scala.inline
-    def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[Unit]
+    inline def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def afterFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def afterFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def afterLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")().asInstanceOf[Unit]
-    @scala.inline
-    def afterLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")().asInstanceOf[Unit]
+    inline def afterLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def afterLogout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")().asInstanceOf[Unit]
-    @scala.inline
-    def afterLogout(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterLogout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")().asInstanceOf[Unit]
+    inline def afterLogout(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def afterSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def afterSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def afterSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[Unit]
-    @scala.inline
-    def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[Unit]
+    inline def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[Unit]
-    @scala.inline
-    def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[Unit]
+    inline def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def beforeFind(
+    inline def beforeFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeFind(
       arg1: js.Any,
       func: js.Function1[
           /* request */ BeforeFindRequest, 
@@ -250,31 +228,23 @@ object reactNativeMod {
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")().asInstanceOf[Unit]
-    @scala.inline
-    def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")().asInstanceOf[Unit]
+    inline def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")().asInstanceOf[Unit]
-    @scala.inline
-    def beforeSaveFile(
+    inline def beforeSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")().asInstanceOf[Unit]
+    inline def beforeSaveFile(
       func: js.Function1[
           /* request */ FileTriggerRequest, 
           js.Thenable[typings.parse.mod.global.Parse.File] | Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def define_0[T /* <: js.Function1[
+    inline def define_0[T /* <: js.Function1[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
       */ /* param */ define & TopLevel[Parameters[T]], 
@@ -289,8 +259,7 @@ object reactNativeMod {
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def define_T_Function0Any[T /* <: js.Function0[js.Any] */](
+    inline def define_T_Function0Any[T /* <: js.Function0[js.Any] */](
       name: String,
       func: js.Function1[
           /* request */ FunctionRequest[js.Object], 
@@ -303,37 +272,26 @@ object reactNativeMod {
       * @param jobStatusId The Id of Job Status.
       * @returns Status of Job.
       */
-    @scala.inline
-    def getJobStatus(jobStatusId: String): js.Promise[Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobStatus")(jobStatusId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Object[Attributes]]]
+    inline def getJobStatus(jobStatusId: String): js.Promise[Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobStatus")(jobStatusId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Object[Attributes]]]
     
     /**
       * Gets data for the current set of cloud jobs.
       * @returns A promise that will be resolved with the result of the function.
       */
-    @scala.inline
-    def getJobsData(): js.Promise[Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobsData")().asInstanceOf[js.Promise[Object[Attributes]]]
+    inline def getJobsData(): js.Promise[Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobsData")().asInstanceOf[js.Promise[Object[Attributes]]]
     
-    @scala.inline
-    def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
+    inline def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
     
-    @scala.inline
-    def job(name: String): HttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any]).asInstanceOf[HttpResponse]
-    @scala.inline
-    def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[HttpResponse]
+    inline def job(name: String): HttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any]).asInstanceOf[HttpResponse]
+    inline def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[HttpResponse]
     
-    @scala.inline
-    def run(name: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def run(name: String, data: Unit, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def run(name: String, data: Params): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def run(name: String, data: Params, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def run[T /* <: js.Function0[js.Any] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+    inline def run(name: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def run(name: String, data: Unit, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def run(name: String, data: Params): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def run(name: String, data: Params, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def run[T /* <: js.Function0[js.Any] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
     
-    @scala.inline
-    def run_0[T /* <: js.Function1[
+    inline def run_0[T /* <: js.Function1[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
       */ /* param */ run & TopLevel[Parameters[T]], 
@@ -342,8 +300,7 @@ object reactNativeMod {
       name: String,
       data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
     ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
-    @scala.inline
-    def run_0[T /* <: js.Function1[
+    inline def run_0[T /* <: js.Function1[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
       */ /* param */ run & TopLevel[Parameters[T]], 
@@ -354,10 +311,8 @@ object reactNativeMod {
       options: RunOptions
     ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
     
-    @scala.inline
-    def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
-    @scala.inline
-    def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+    inline def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
+    inline def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
     
     /**
       * Starts a given cloud job, which will process asynchronously.
@@ -365,11 +320,9 @@ object reactNativeMod {
       * @param data The parameters to send to the cloud function.
       * @returns A promise that will be resolved with the jobStatusId of the job.
       */
-    @scala.inline
-    def startJob(jobName: String, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def startJob(jobName: String, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @scala.inline
-    def useMasterKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMasterKey")().asInstanceOf[Unit]
+    inline def useMasterKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMasterKey")().asInstanceOf[Unit]
   }
   
   @JSImport("parse/react-native", "Config")
@@ -383,20 +336,15 @@ object reactNativeMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def current(): typings.parse.mod.global.Parse.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.parse.mod.global.Parse.Config]
+    inline def current(): typings.parse.mod.global.Parse.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.parse.mod.global.Parse.Config]
     
     /* static member */
-    @scala.inline
-    def get(): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
-    @scala.inline
-    def get(options: UseMasterKeyOption): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
+    inline def get(): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
+    inline def get(options: UseMasterKeyOption): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
     
     /* static member */
-    @scala.inline
-    def save(attr: js.Any): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
-    @scala.inline
-    def save(attr: js.Any, options: StringDictionary[Boolean]): js.Promise[typings.parse.mod.global.Parse.Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
+    inline def save(attr: js.Any): js.Promise[typings.parse.mod.global.Parse.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
+    inline def save(attr: js.Any, options: StringDictionary[Boolean]): js.Promise[typings.parse.mod.global.Parse.Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Config]]
   }
   
   /**
@@ -409,11 +357,9 @@ object reactNativeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def get(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def get(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def set(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("parse/react-native", "Error")
@@ -432,386 +378,331 @@ object reactNativeMod {
     @JSImport("parse/react-native", "Error.ACCOUNT_ALREADY_LINKED")
     @js.native
     def ACCOUNT_ALREADY_LINKED: typings.parse.mod.ErrorCode.ACCOUNT_ALREADY_LINKED = js.native
-    @scala.inline
-    def ACCOUNT_ALREADY_LINKED_=(x: ACCOUNT_ALREADY_LINKED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCOUNT_ALREADY_LINKED")(x.asInstanceOf[js.Any])
+    inline def ACCOUNT_ALREADY_LINKED_=(x: ACCOUNT_ALREADY_LINKED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCOUNT_ALREADY_LINKED")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.AGGREGATE_ERROR")
     @js.native
     def AGGREGATE_ERROR: typings.parse.mod.ErrorCode.AGGREGATE_ERROR = js.native
-    @scala.inline
-    def AGGREGATE_ERROR_=(x: AGGREGATE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AGGREGATE_ERROR")(x.asInstanceOf[js.Any])
+    inline def AGGREGATE_ERROR_=(x: AGGREGATE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AGGREGATE_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.CACHE_MISS")
     @js.native
     def CACHE_MISS: typings.parse.mod.ErrorCode.CACHE_MISS = js.native
-    @scala.inline
-    def CACHE_MISS_=(x: CACHE_MISS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CACHE_MISS")(x.asInstanceOf[js.Any])
+    inline def CACHE_MISS_=(x: CACHE_MISS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CACHE_MISS")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.COMMAND_UNAVAILABLE")
     @js.native
     def COMMAND_UNAVAILABLE: typings.parse.mod.ErrorCode.COMMAND_UNAVAILABLE = js.native
-    @scala.inline
-    def COMMAND_UNAVAILABLE_=(x: COMMAND_UNAVAILABLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMAND_UNAVAILABLE")(x.asInstanceOf[js.Any])
+    inline def COMMAND_UNAVAILABLE_=(x: COMMAND_UNAVAILABLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMAND_UNAVAILABLE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.CONNECTION_FAILED")
     @js.native
     def CONNECTION_FAILED: typings.parse.mod.ErrorCode.CONNECTION_FAILED = js.native
-    @scala.inline
-    def CONNECTION_FAILED_=(x: CONNECTION_FAILED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_FAILED")(x.asInstanceOf[js.Any])
+    inline def CONNECTION_FAILED_=(x: CONNECTION_FAILED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_FAILED")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.DUPLICATE_VALUE")
     @js.native
     def DUPLICATE_VALUE: typings.parse.mod.ErrorCode.DUPLICATE_VALUE = js.native
-    @scala.inline
-    def DUPLICATE_VALUE_=(x: DUPLICATE_VALUE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUPLICATE_VALUE")(x.asInstanceOf[js.Any])
+    inline def DUPLICATE_VALUE_=(x: DUPLICATE_VALUE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUPLICATE_VALUE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.EMAIL_MISSING")
     @js.native
     def EMAIL_MISSING: typings.parse.mod.ErrorCode.EMAIL_MISSING = js.native
-    @scala.inline
-    def EMAIL_MISSING_=(x: EMAIL_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_MISSING")(x.asInstanceOf[js.Any])
+    inline def EMAIL_MISSING_=(x: EMAIL_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_MISSING")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.EMAIL_NOT_FOUND")
     @js.native
     def EMAIL_NOT_FOUND: typings.parse.mod.ErrorCode.EMAIL_NOT_FOUND = js.native
-    @scala.inline
-    def EMAIL_NOT_FOUND_=(x: EMAIL_NOT_FOUND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_NOT_FOUND")(x.asInstanceOf[js.Any])
+    inline def EMAIL_NOT_FOUND_=(x: EMAIL_NOT_FOUND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_NOT_FOUND")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.EMAIL_TAKEN")
     @js.native
     def EMAIL_TAKEN: typings.parse.mod.ErrorCode.EMAIL_TAKEN = js.native
-    @scala.inline
-    def EMAIL_TAKEN_=(x: EMAIL_TAKEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_TAKEN")(x.asInstanceOf[js.Any])
+    inline def EMAIL_TAKEN_=(x: EMAIL_TAKEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_TAKEN")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.EXCEEDED_QUOTA")
     @js.native
     def EXCEEDED_QUOTA: typings.parse.mod.ErrorCode.EXCEEDED_QUOTA = js.native
-    @scala.inline
-    def EXCEEDED_QUOTA_=(x: EXCEEDED_QUOTA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXCEEDED_QUOTA")(x.asInstanceOf[js.Any])
+    inline def EXCEEDED_QUOTA_=(x: EXCEEDED_QUOTA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXCEEDED_QUOTA")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.FILE_DELETE_ERROR")
     @js.native
     def FILE_DELETE_ERROR: typings.parse.mod.ErrorCode.FILE_DELETE_ERROR = js.native
-    @scala.inline
-    def FILE_DELETE_ERROR_=(x: FILE_DELETE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_DELETE_ERROR")(x.asInstanceOf[js.Any])
+    inline def FILE_DELETE_ERROR_=(x: FILE_DELETE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_DELETE_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.FILE_READ_ERROR")
     @js.native
     def FILE_READ_ERROR: typings.parse.mod.ErrorCode.FILE_READ_ERROR = js.native
-    @scala.inline
-    def FILE_READ_ERROR_=(x: FILE_READ_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_READ_ERROR")(x.asInstanceOf[js.Any])
+    inline def FILE_READ_ERROR_=(x: FILE_READ_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_READ_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.FILE_SAVE_ERROR")
     @js.native
     def FILE_SAVE_ERROR: typings.parse.mod.ErrorCode.FILE_SAVE_ERROR = js.native
-    @scala.inline
-    def FILE_SAVE_ERROR_=(x: FILE_SAVE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_SAVE_ERROR")(x.asInstanceOf[js.Any])
+    inline def FILE_SAVE_ERROR_=(x: FILE_SAVE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_SAVE_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.FILE_TOO_LARGE")
     @js.native
     def FILE_TOO_LARGE: typings.parse.mod.ErrorCode.FILE_TOO_LARGE = js.native
-    @scala.inline
-    def FILE_TOO_LARGE_=(x: FILE_TOO_LARGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_TOO_LARGE")(x.asInstanceOf[js.Any])
+    inline def FILE_TOO_LARGE_=(x: FILE_TOO_LARGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_TOO_LARGE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INCORRECT_TYPE")
     @js.native
     def INCORRECT_TYPE: typings.parse.mod.ErrorCode.INCORRECT_TYPE = js.native
-    @scala.inline
-    def INCORRECT_TYPE_=(x: INCORRECT_TYPE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INCORRECT_TYPE")(x.asInstanceOf[js.Any])
+    inline def INCORRECT_TYPE_=(x: INCORRECT_TYPE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INCORRECT_TYPE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INTERNAL_SERVER_ERROR")
     @js.native
     def INTERNAL_SERVER_ERROR: typings.parse.mod.ErrorCode.INTERNAL_SERVER_ERROR = js.native
-    @scala.inline
-    def INTERNAL_SERVER_ERROR_=(x: INTERNAL_SERVER_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERNAL_SERVER_ERROR")(x.asInstanceOf[js.Any])
+    inline def INTERNAL_SERVER_ERROR_=(x: INTERNAL_SERVER_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERNAL_SERVER_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_ACL")
     @js.native
     def INVALID_ACL: typings.parse.mod.ErrorCode.INVALID_ACL = js.native
-    @scala.inline
-    def INVALID_ACL_=(x: INVALID_ACL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ACL")(x.asInstanceOf[js.Any])
+    inline def INVALID_ACL_=(x: INVALID_ACL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ACL")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_CHANNEL_NAME")
     @js.native
     def INVALID_CHANNEL_NAME: typings.parse.mod.ErrorCode.INVALID_CHANNEL_NAME = js.native
-    @scala.inline
-    def INVALID_CHANNEL_NAME_=(x: INVALID_CHANNEL_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CHANNEL_NAME")(x.asInstanceOf[js.Any])
+    inline def INVALID_CHANNEL_NAME_=(x: INVALID_CHANNEL_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CHANNEL_NAME")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_CLASS_NAME")
     @js.native
     def INVALID_CLASS_NAME: typings.parse.mod.ErrorCode.INVALID_CLASS_NAME = js.native
-    @scala.inline
-    def INVALID_CLASS_NAME_=(x: INVALID_CLASS_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CLASS_NAME")(x.asInstanceOf[js.Any])
+    inline def INVALID_CLASS_NAME_=(x: INVALID_CLASS_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CLASS_NAME")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_CONTENT_LENGTH")
     @js.native
     def INVALID_CONTENT_LENGTH: typings.parse.mod.ErrorCode.INVALID_CONTENT_LENGTH = js.native
-    @scala.inline
-    def INVALID_CONTENT_LENGTH_=(x: INVALID_CONTENT_LENGTH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CONTENT_LENGTH")(x.asInstanceOf[js.Any])
+    inline def INVALID_CONTENT_LENGTH_=(x: INVALID_CONTENT_LENGTH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CONTENT_LENGTH")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_EMAIL_ADDRESS")
     @js.native
     def INVALID_EMAIL_ADDRESS: typings.parse.mod.ErrorCode.INVALID_EMAIL_ADDRESS = js.native
-    @scala.inline
-    def INVALID_EMAIL_ADDRESS_=(x: INVALID_EMAIL_ADDRESS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_EMAIL_ADDRESS")(x.asInstanceOf[js.Any])
+    inline def INVALID_EMAIL_ADDRESS_=(x: INVALID_EMAIL_ADDRESS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_EMAIL_ADDRESS")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_EVENT_NAME")
     @js.native
     def INVALID_EVENT_NAME: typings.parse.mod.ErrorCode.INVALID_EVENT_NAME = js.native
-    @scala.inline
-    def INVALID_EVENT_NAME_=(x: INVALID_EVENT_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def INVALID_EVENT_NAME_=(x: INVALID_EVENT_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_FILE_NAME")
     @js.native
     def INVALID_FILE_NAME: typings.parse.mod.ErrorCode.INVALID_FILE_NAME = js.native
-    @scala.inline
-    def INVALID_FILE_NAME_=(x: INVALID_FILE_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_FILE_NAME")(x.asInstanceOf[js.Any])
+    inline def INVALID_FILE_NAME_=(x: INVALID_FILE_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_FILE_NAME")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_IMAGE_DATA")
     @js.native
     def INVALID_IMAGE_DATA: typings.parse.mod.ErrorCode.INVALID_IMAGE_DATA = js.native
-    @scala.inline
-    def INVALID_IMAGE_DATA_=(x: INVALID_IMAGE_DATA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_IMAGE_DATA")(x.asInstanceOf[js.Any])
+    inline def INVALID_IMAGE_DATA_=(x: INVALID_IMAGE_DATA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_IMAGE_DATA")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_JSON")
     @js.native
     def INVALID_JSON: typings.parse.mod.ErrorCode.INVALID_JSON = js.native
-    @scala.inline
-    def INVALID_JSON_=(x: INVALID_JSON): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_JSON")(x.asInstanceOf[js.Any])
+    inline def INVALID_JSON_=(x: INVALID_JSON): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_JSON")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_KEY_NAME")
     @js.native
     def INVALID_KEY_NAME: typings.parse.mod.ErrorCode.INVALID_KEY_NAME = js.native
-    @scala.inline
-    def INVALID_KEY_NAME_=(x: INVALID_KEY_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_KEY_NAME")(x.asInstanceOf[js.Any])
+    inline def INVALID_KEY_NAME_=(x: INVALID_KEY_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_KEY_NAME")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_LINKED_SESSION")
     @js.native
     def INVALID_LINKED_SESSION: typings.parse.mod.ErrorCode.INVALID_LINKED_SESSION = js.native
-    @scala.inline
-    def INVALID_LINKED_SESSION_=(x: INVALID_LINKED_SESSION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_LINKED_SESSION")(x.asInstanceOf[js.Any])
+    inline def INVALID_LINKED_SESSION_=(x: INVALID_LINKED_SESSION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_LINKED_SESSION")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_NESTED_KEY")
     @js.native
     def INVALID_NESTED_KEY: typings.parse.mod.ErrorCode.INVALID_NESTED_KEY = js.native
-    @scala.inline
-    def INVALID_NESTED_KEY_=(x: INVALID_NESTED_KEY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_NESTED_KEY")(x.asInstanceOf[js.Any])
+    inline def INVALID_NESTED_KEY_=(x: INVALID_NESTED_KEY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_NESTED_KEY")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_POINTER")
     @js.native
     def INVALID_POINTER: typings.parse.mod.ErrorCode.INVALID_POINTER = js.native
-    @scala.inline
-    def INVALID_POINTER_=(x: INVALID_POINTER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_POINTER")(x.asInstanceOf[js.Any])
+    inline def INVALID_POINTER_=(x: INVALID_POINTER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_POINTER")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_PUSH_TIME_ERROR")
     @js.native
     def INVALID_PUSH_TIME_ERROR: typings.parse.mod.ErrorCode.INVALID_PUSH_TIME_ERROR = js.native
-    @scala.inline
-    def INVALID_PUSH_TIME_ERROR_=(x: INVALID_PUSH_TIME_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_PUSH_TIME_ERROR")(x.asInstanceOf[js.Any])
+    inline def INVALID_PUSH_TIME_ERROR_=(x: INVALID_PUSH_TIME_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_PUSH_TIME_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_QUERY")
     @js.native
     def INVALID_QUERY: typings.parse.mod.ErrorCode.INVALID_QUERY = js.native
-    @scala.inline
-    def INVALID_QUERY_=(x: INVALID_QUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_QUERY")(x.asInstanceOf[js.Any])
+    inline def INVALID_QUERY_=(x: INVALID_QUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_QUERY")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_ROLE_NAME")
     @js.native
     def INVALID_ROLE_NAME: typings.parse.mod.ErrorCode.INVALID_ROLE_NAME = js.native
-    @scala.inline
-    def INVALID_ROLE_NAME_=(x: INVALID_ROLE_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ROLE_NAME")(x.asInstanceOf[js.Any])
+    inline def INVALID_ROLE_NAME_=(x: INVALID_ROLE_NAME): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ROLE_NAME")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.INVALID_SESSION_TOKEN")
     @js.native
     def INVALID_SESSION_TOKEN: typings.parse.mod.ErrorCode.INVALID_SESSION_TOKEN = js.native
-    @scala.inline
-    def INVALID_SESSION_TOKEN_=(x: INVALID_SESSION_TOKEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_SESSION_TOKEN")(x.asInstanceOf[js.Any])
+    inline def INVALID_SESSION_TOKEN_=(x: INVALID_SESSION_TOKEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_SESSION_TOKEN")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.LINKED_ID_MISSING")
     @js.native
     def LINKED_ID_MISSING: typings.parse.mod.ErrorCode.LINKED_ID_MISSING = js.native
-    @scala.inline
-    def LINKED_ID_MISSING_=(x: LINKED_ID_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINKED_ID_MISSING")(x.asInstanceOf[js.Any])
+    inline def LINKED_ID_MISSING_=(x: LINKED_ID_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINKED_ID_MISSING")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.MISSING_CONTENT_LENGTH")
     @js.native
     def MISSING_CONTENT_LENGTH: typings.parse.mod.ErrorCode.MISSING_CONTENT_LENGTH = js.native
-    @scala.inline
-    def MISSING_CONTENT_LENGTH_=(x: MISSING_CONTENT_LENGTH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_CONTENT_LENGTH")(x.asInstanceOf[js.Any])
+    inline def MISSING_CONTENT_LENGTH_=(x: MISSING_CONTENT_LENGTH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_CONTENT_LENGTH")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.MISSING_CONTENT_TYPE")
     @js.native
     def MISSING_CONTENT_TYPE: typings.parse.mod.ErrorCode.MISSING_CONTENT_TYPE = js.native
-    @scala.inline
-    def MISSING_CONTENT_TYPE_=(x: MISSING_CONTENT_TYPE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_CONTENT_TYPE")(x.asInstanceOf[js.Any])
+    inline def MISSING_CONTENT_TYPE_=(x: MISSING_CONTENT_TYPE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_CONTENT_TYPE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.MISSING_OBJECT_ID")
     @js.native
     def MISSING_OBJECT_ID: typings.parse.mod.ErrorCode.MISSING_OBJECT_ID = js.native
-    @scala.inline
-    def MISSING_OBJECT_ID_=(x: MISSING_OBJECT_ID): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_OBJECT_ID")(x.asInstanceOf[js.Any])
+    inline def MISSING_OBJECT_ID_=(x: MISSING_OBJECT_ID): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_OBJECT_ID")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.MUST_CREATE_USER_THROUGH_SIGNUP")
     @js.native
     def MUST_CREATE_USER_THROUGH_SIGNUP: typings.parse.mod.ErrorCode.MUST_CREATE_USER_THROUGH_SIGNUP = js.native
-    @scala.inline
-    def MUST_CREATE_USER_THROUGH_SIGNUP_=(x: MUST_CREATE_USER_THROUGH_SIGNUP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MUST_CREATE_USER_THROUGH_SIGNUP")(x.asInstanceOf[js.Any])
+    inline def MUST_CREATE_USER_THROUGH_SIGNUP_=(x: MUST_CREATE_USER_THROUGH_SIGNUP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MUST_CREATE_USER_THROUGH_SIGNUP")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.NOT_INITIALIZED")
     @js.native
     def NOT_INITIALIZED: typings.parse.mod.ErrorCode.NOT_INITIALIZED = js.native
-    @scala.inline
-    def NOT_INITIALIZED_=(x: NOT_INITIALIZED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_INITIALIZED")(x.asInstanceOf[js.Any])
+    inline def NOT_INITIALIZED_=(x: NOT_INITIALIZED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_INITIALIZED")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.OBJECT_NOT_FOUND")
     @js.native
     def OBJECT_NOT_FOUND: typings.parse.mod.ErrorCode.OBJECT_NOT_FOUND = js.native
-    @scala.inline
-    def OBJECT_NOT_FOUND_=(x: OBJECT_NOT_FOUND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT_NOT_FOUND")(x.asInstanceOf[js.Any])
+    inline def OBJECT_NOT_FOUND_=(x: OBJECT_NOT_FOUND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT_NOT_FOUND")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.OBJECT_TOO_LARGE")
     @js.native
     def OBJECT_TOO_LARGE: typings.parse.mod.ErrorCode.OBJECT_TOO_LARGE = js.native
-    @scala.inline
-    def OBJECT_TOO_LARGE_=(x: OBJECT_TOO_LARGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT_TOO_LARGE")(x.asInstanceOf[js.Any])
+    inline def OBJECT_TOO_LARGE_=(x: OBJECT_TOO_LARGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT_TOO_LARGE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.OPERATION_FORBIDDEN")
     @js.native
     def OPERATION_FORBIDDEN: typings.parse.mod.ErrorCode.OPERATION_FORBIDDEN = js.native
-    @scala.inline
-    def OPERATION_FORBIDDEN_=(x: OPERATION_FORBIDDEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATION_FORBIDDEN")(x.asInstanceOf[js.Any])
+    inline def OPERATION_FORBIDDEN_=(x: OPERATION_FORBIDDEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATION_FORBIDDEN")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.OTHER_CAUSE")
     @js.native
     def OTHER_CAUSE: typings.parse.mod.ErrorCode.OTHER_CAUSE = js.native
-    @scala.inline
-    def OTHER_CAUSE_=(x: OTHER_CAUSE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OTHER_CAUSE")(x.asInstanceOf[js.Any])
+    inline def OTHER_CAUSE_=(x: OTHER_CAUSE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OTHER_CAUSE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.PASSWORD_MISSING")
     @js.native
     def PASSWORD_MISSING: typings.parse.mod.ErrorCode.PASSWORD_MISSING = js.native
-    @scala.inline
-    def PASSWORD_MISSING_=(x: PASSWORD_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PASSWORD_MISSING")(x.asInstanceOf[js.Any])
+    inline def PASSWORD_MISSING_=(x: PASSWORD_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PASSWORD_MISSING")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.PUSH_MISCONFIGURED")
     @js.native
     def PUSH_MISCONFIGURED: typings.parse.mod.ErrorCode.PUSH_MISCONFIGURED = js.native
-    @scala.inline
-    def PUSH_MISCONFIGURED_=(x: PUSH_MISCONFIGURED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUSH_MISCONFIGURED")(x.asInstanceOf[js.Any])
+    inline def PUSH_MISCONFIGURED_=(x: PUSH_MISCONFIGURED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUSH_MISCONFIGURED")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.REQUEST_LIMIT_EXCEEDED")
     @js.native
     def REQUEST_LIMIT_EXCEEDED: typings.parse.mod.ErrorCode.REQUEST_LIMIT_EXCEEDED = js.native
-    @scala.inline
-    def REQUEST_LIMIT_EXCEEDED_=(x: REQUEST_LIMIT_EXCEEDED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_LIMIT_EXCEEDED")(x.asInstanceOf[js.Any])
+    inline def REQUEST_LIMIT_EXCEEDED_=(x: REQUEST_LIMIT_EXCEEDED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_LIMIT_EXCEEDED")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.SCRIPT_FAILED")
     @js.native
     def SCRIPT_FAILED: typings.parse.mod.ErrorCode.SCRIPT_FAILED = js.native
-    @scala.inline
-    def SCRIPT_FAILED_=(x: SCRIPT_FAILED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCRIPT_FAILED")(x.asInstanceOf[js.Any])
+    inline def SCRIPT_FAILED_=(x: SCRIPT_FAILED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCRIPT_FAILED")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.SESSION_MISSING")
     @js.native
     def SESSION_MISSING: typings.parse.mod.ErrorCode.SESSION_MISSING = js.native
-    @scala.inline
-    def SESSION_MISSING_=(x: SESSION_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION_MISSING")(x.asInstanceOf[js.Any])
+    inline def SESSION_MISSING_=(x: SESSION_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION_MISSING")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.TIMEOUT")
     @js.native
     def TIMEOUT: typings.parse.mod.ErrorCode.TIMEOUT = js.native
-    @scala.inline
-    def TIMEOUT_=(x: TIMEOUT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT")(x.asInstanceOf[js.Any])
+    inline def TIMEOUT_=(x: TIMEOUT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.UNSAVED_FILE_ERROR")
     @js.native
     def UNSAVED_FILE_ERROR: typings.parse.mod.ErrorCode.UNSAVED_FILE_ERROR = js.native
-    @scala.inline
-    def UNSAVED_FILE_ERROR_=(x: UNSAVED_FILE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSAVED_FILE_ERROR")(x.asInstanceOf[js.Any])
+    inline def UNSAVED_FILE_ERROR_=(x: UNSAVED_FILE_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSAVED_FILE_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.UNSUPPORTED_SERVICE")
     @js.native
     def UNSUPPORTED_SERVICE: typings.parse.mod.ErrorCode.UNSUPPORTED_SERVICE = js.native
-    @scala.inline
-    def UNSUPPORTED_SERVICE_=(x: UNSUPPORTED_SERVICE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSUPPORTED_SERVICE")(x.asInstanceOf[js.Any])
+    inline def UNSUPPORTED_SERVICE_=(x: UNSUPPORTED_SERVICE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSUPPORTED_SERVICE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.USERNAME_MISSING")
     @js.native
     def USERNAME_MISSING: typings.parse.mod.ErrorCode.USERNAME_MISSING = js.native
-    @scala.inline
-    def USERNAME_MISSING_=(x: USERNAME_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USERNAME_MISSING")(x.asInstanceOf[js.Any])
+    inline def USERNAME_MISSING_=(x: USERNAME_MISSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USERNAME_MISSING")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.USERNAME_TAKEN")
     @js.native
     def USERNAME_TAKEN: typings.parse.mod.ErrorCode.USERNAME_TAKEN = js.native
-    @scala.inline
-    def USERNAME_TAKEN_=(x: USERNAME_TAKEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USERNAME_TAKEN")(x.asInstanceOf[js.Any])
+    inline def USERNAME_TAKEN_=(x: USERNAME_TAKEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USERNAME_TAKEN")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.VALIDATION_ERROR")
     @js.native
     def VALIDATION_ERROR: typings.parse.mod.ErrorCode.VALIDATION_ERROR = js.native
-    @scala.inline
-    def VALIDATION_ERROR_=(x: VALIDATION_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALIDATION_ERROR")(x.asInstanceOf[js.Any])
+    inline def VALIDATION_ERROR_=(x: VALIDATION_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALIDATION_ERROR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("parse/react-native", "Error.X_DOMAIN_REQUEST")
     @js.native
     def X_DOMAIN_REQUEST: typings.parse.mod.ErrorCode.X_DOMAIN_REQUEST = js.native
-    @scala.inline
-    def X_DOMAIN_REQUEST_=(x: X_DOMAIN_REQUEST): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X_DOMAIN_REQUEST")(x.asInstanceOf[js.Any])
+    inline def X_DOMAIN_REQUEST_=(x: X_DOMAIN_REQUEST): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X_DOMAIN_REQUEST")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("parse/react-native", "ErrorCode")
@@ -942,32 +833,23 @@ object reactNativeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-    @scala.inline
-    def init(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def isLinked(user: typings.parse.mod.global.Parse.User[Attributes]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinked")(user.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLinked(user: typings.parse.mod.global.Parse.User[Attributes]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinked")(user.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def link(user: typings.parse.mod.global.Parse.User[Attributes], permissions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(user.asInstanceOf[js.Any], permissions.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def link(
+    inline def link(user: typings.parse.mod.global.Parse.User[Attributes], permissions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(user.asInstanceOf[js.Any], permissions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def link(
       user: typings.parse.mod.global.Parse.User[Attributes],
       permissions: js.Any,
       options: SuccessFailureOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(user.asInstanceOf[js.Any], permissions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def logIn(permissions: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def logIn(permissions: js.Any, options: FullOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(permissions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def logIn(permissions: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def logIn(permissions: js.Any, options: FullOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(permissions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def unlink(user: typings.parse.mod.global.Parse.User[Attributes]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def unlink(user: typings.parse.mod.global.Parse.User[Attributes], options: SuccessFailureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def unlink(user: typings.parse.mod.global.Parse.User[Attributes]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unlink(user: typings.parse.mod.global.Parse.User[Attributes], options: SuccessFailureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -1174,10 +1056,8 @@ object reactNativeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def send[T](data: PushData): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-    @scala.inline
-    def send[T](data: PushData, options: SendOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    inline def send[T](data: PushData): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    inline def send[T](data: PushData, options: SendOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   }
   
   /**
@@ -1249,20 +1129,16 @@ object reactNativeMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def and[U /* <: Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+    inline def and[U /* <: Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
     
     /* static member */
-    @scala.inline
-    def fromJSON[U /* <: Object[Attributes] */](className: String, json: js.Any): typings.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+    inline def fromJSON[U /* <: Object[Attributes] */](className: String, json: js.Any): typings.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
     
     /* static member */
-    @scala.inline
-    def nor[U /* <: Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+    inline def nor[U /* <: Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
     
     /* static member */
-    @scala.inline
-    def or[U /* <: Object[Attributes] */](var_args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+    inline def or[U /* <: Object[Attributes] */](var_args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
   }
   
   /**
@@ -1325,8 +1201,7 @@ object reactNativeMod {
       * the query completes.
       */
     /* static member */
-    @scala.inline
-    def all(): js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[js.Any]]]]
+    inline def all(): js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[js.Any]]]]
   }
   
   @JSImport("parse/react-native", "Session")
@@ -1358,34 +1233,29 @@ object reactNativeMod {
   @JSImport("parse/react-native", "applicationId")
   @js.native
   def applicationId: String = js.native
-  @scala.inline
-  def applicationId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applicationId")(x.asInstanceOf[js.Any])
+  inline def applicationId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applicationId")(x.asInstanceOf[js.Any])
   
   /**
     * Gets all contents from Local Datastore.
     */
-  @scala.inline
-  def dumpLocalDatastore(): js.Promise[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpLocalDatastore")().asInstanceOf[js.Promise[StringDictionary[js.Any]]]
+  inline def dumpLocalDatastore(): js.Promise[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpLocalDatastore")().asInstanceOf[js.Promise[StringDictionary[js.Any]]]
   
   /**
     * Enable the current user encryption.
     * This must be called before login any user.
     */
-  @scala.inline
-  def enableEncryptedUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableEncryptedUser")().asInstanceOf[Unit]
+  inline def enableEncryptedUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableEncryptedUser")().asInstanceOf[Unit]
   
   /**
     * Enable pinning in your application.
     * This must be called before your application can use pinning.
     */
-  @scala.inline
-  def enableLocalDatastore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLocalDatastore")().asInstanceOf[Unit]
+  inline def enableLocalDatastore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLocalDatastore")().asInstanceOf[Unit]
   
   @JSImport("parse/react-native", "encryptedUser")
   @js.native
   def encryptedUser: Boolean = js.native
-  @scala.inline
-  def encryptedUser_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encryptedUser")(x.asInstanceOf[js.Any])
+  inline def encryptedUser_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encryptedUser")(x.asInstanceOf[js.Any])
   
   /**
     * Call this method first to set up your authentication tokens for Parse.
@@ -1394,78 +1264,63 @@ object reactNativeMod {
     * @param javaScriptKey (optional) Your Parse JavaScript Key (Not needed for parse-server)
     * @param masterKey (optional) Your Parse Master Key. (Node.js only!)
     */
-  @scala.inline
-  def initialize(applicationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def initialize(applicationId: String, javaScriptKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initialize(applicationId: String, javaScriptKey: String, masterKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initialize(applicationId: String, javaScriptKey: Unit, masterKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initialize(applicationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialize(applicationId: String, javaScriptKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initialize(applicationId: String, javaScriptKey: String, masterKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initialize(applicationId: String, javaScriptKey: Unit, masterKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Flag that indicates whether Encrypted User is enabled.
     */
-  @scala.inline
-  def isEncryptedUserEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncryptedUserEnabled")().asInstanceOf[Boolean]
+  inline def isEncryptedUserEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncryptedUserEnabled")().asInstanceOf[Boolean]
   
   /**
     * Flag that indicates whether Local Datastore is enabled.
     */
-  @scala.inline
-  def isLocalDatastoreEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalDatastoreEnabled")().asInstanceOf[Boolean]
+  inline def isLocalDatastoreEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalDatastoreEnabled")().asInstanceOf[Boolean]
   
   @JSImport("parse/react-native", "javaScriptKey")
   @js.native
   def javaScriptKey: js.UndefOr[String] = js.native
-  @scala.inline
-  def javaScriptKey_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("javaScriptKey")(x.asInstanceOf[js.Any])
+  inline def javaScriptKey_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("javaScriptKey")(x.asInstanceOf[js.Any])
   
   @JSImport("parse/react-native", "liveQueryServerURL")
   @js.native
   def liveQueryServerURL: String = js.native
-  @scala.inline
-  def liveQueryServerURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liveQueryServerURL")(x.asInstanceOf[js.Any])
+  inline def liveQueryServerURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liveQueryServerURL")(x.asInstanceOf[js.Any])
   
   @JSImport("parse/react-native", "masterKey")
   @js.native
   def masterKey: js.UndefOr[String] = js.native
-  @scala.inline
-  def masterKey_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masterKey")(x.asInstanceOf[js.Any])
+  inline def masterKey_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masterKey")(x.asInstanceOf[js.Any])
   
   @JSImport("parse/react-native", "secret")
   @js.native
   def secret: String = js.native
-  @scala.inline
-  def secret_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secret")(x.asInstanceOf[js.Any])
+  inline def secret_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secret")(x.asInstanceOf[js.Any])
   
   @JSImport("parse/react-native", "serverAuthToken")
   @js.native
   def serverAuthToken: js.UndefOr[String] = js.native
-  @scala.inline
-  def serverAuthToken_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthToken")(x.asInstanceOf[js.Any])
+  inline def serverAuthToken_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthToken")(x.asInstanceOf[js.Any])
   
   @JSImport("parse/react-native", "serverAuthType")
   @js.native
   def serverAuthType: js.UndefOr[String] = js.native
-  @scala.inline
-  def serverAuthType_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthType")(x.asInstanceOf[js.Any])
+  inline def serverAuthType_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthType")(x.asInstanceOf[js.Any])
   
   @JSImport("parse/react-native", "serverURL")
   @js.native
   def serverURL: String = js.native
-  @scala.inline
-  def serverURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverURL")(x.asInstanceOf[js.Any])
+  inline def serverURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverURL")(x.asInstanceOf[js.Any])
   
   /**
     * Additionally on React-Native / Expo environments, add AsyncStorage from 'react-native' package
     * @param AsyncStorage AsyncStorage from 'react-native' package
     */
-  @scala.inline
-  def setAsyncStorage(AsyncStorage: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAsyncStorage")(AsyncStorage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAsyncStorage(AsyncStorage: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAsyncStorage")(AsyncStorage.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLocalDatastoreController(controller: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalDatastoreController")(controller.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLocalDatastoreController(controller: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalDatastoreController")(controller.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A Parse.Op is an atomic operation that can be applied to a field in a

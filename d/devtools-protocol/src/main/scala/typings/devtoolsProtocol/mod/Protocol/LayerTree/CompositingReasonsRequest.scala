@@ -13,16 +13,13 @@ trait CompositingReasonsRequest extends StObject {
 }
 object CompositingReasonsRequest {
   
-  @scala.inline
-  def apply(layerId: LayerId): CompositingReasonsRequest = {
+  inline def apply(layerId: LayerId): CompositingReasonsRequest = {
     val __obj = js.Dynamic.literal(layerId = layerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositingReasonsRequest]
   }
   
-  @scala.inline
-  implicit class CompositingReasonsRequestMutableBuilder[Self <: CompositingReasonsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CompositingReasonsRequest](x: Self) {
     
-    @scala.inline
-    def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
   }
 }

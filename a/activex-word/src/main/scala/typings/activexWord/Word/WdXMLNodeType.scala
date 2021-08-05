@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdXMLNodeType extends StObject
 object WdXMLNodeType {
   
-  @scala.inline
-  def wdXMLNodeAttribute: `2` = 2.asInstanceOf[`2`]
+  inline def wdXMLNodeAttribute: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdXMLNodeElement: `1` = 1.asInstanceOf[`1`]
+  inline def wdXMLNodeElement: `1` = 1.asInstanceOf[`1`]
 }

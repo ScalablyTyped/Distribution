@@ -15,10 +15,8 @@ object EmbedUpdateModes {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALWAYS_UPDATE: `0` = 0.asInstanceOf[`0`]
+    inline def ALWAYS_UPDATE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def EXPLICIT_UPDATE: `1` = 1.asInstanceOf[`1`]
+    inline def EXPLICIT_UPDATE: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -14,26 +14,20 @@ trait WinRTEvent[TSender] extends StObject {
 }
 object WinRTEvent {
   
-  @scala.inline
-  def apply[TSender](detail: js.Array[js.Any], target: TSender, `type`: String): WinRTEvent[TSender] = {
+  inline def apply[TSender](detail: js.Array[js.Any], target: TSender, `type`: String): WinRTEvent[TSender] = {
     val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WinRTEvent[TSender]]
   }
   
-  @scala.inline
-  implicit class WinRTEventMutableBuilder[Self <: WinRTEvent[?], TSender] (val x: Self & WinRTEvent[TSender]) extends AnyVal {
+  extension [Self <: WinRTEvent[?], TSender](x: Self & WinRTEvent[TSender]) {
     
-    @scala.inline
-    def setDetail(value: js.Array[js.Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: js.Array[js.Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailVarargs(value: js.Any*): Self = StObject.set(x, "detail", js.Array(value :_*))
+    inline def setDetailVarargs(value: js.Any*): Self = StObject.set(x, "detail", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: TSender): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TSender): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -634,6 +634,5 @@ trait S7Client extends StObject {
 }
 object S7Client {
   
-  @scala.inline
-  def apply: S7ClientStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("S7Client").asInstanceOf[S7ClientStatic]
+  inline def apply: S7ClientStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("S7Client").asInstanceOf[S7ClientStatic]
 }

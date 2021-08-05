@@ -277,16 +277,12 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def decycle(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decycle")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def decycle(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decycle")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def dehydrateError(error: js.Any): DehydratedError = ^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[DehydratedError]
-  @scala.inline
-  def dehydrateError(error: js.Any, includeStackTrace: Boolean): DehydratedError = (^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any], includeStackTrace.asInstanceOf[js.Any])).asInstanceOf[DehydratedError]
+  inline def dehydrateError(error: js.Any): DehydratedError = ^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[DehydratedError]
+  inline def dehydrateError(error: js.Any, includeStackTrace: Boolean): DehydratedError = (^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any], includeStackTrace.asInstanceOf[js.Any])).asInstanceOf[DehydratedError]
   
-  @scala.inline
-  def hydrateError(error: DehydratedError): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def hydrateError(error: DehydratedError): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("sc-errors", "socketProtocolErrorStatuses")
   @js.native
@@ -340,8 +336,7 @@ object mod {
   }
   object SocketProtocolErrorStatuses_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `1001`: String,
       `1002`: String,
       `1003`: String,
@@ -385,65 +380,45 @@ object mod {
       __obj.asInstanceOf[SocketProtocolErrorStatuses_]
     }
     
-    @scala.inline
-    implicit class SocketProtocolErrorStatuses_MutableBuilder[Self <: SocketProtocolErrorStatuses_] (val x: Self) extends AnyVal {
+    extension [Self <: SocketProtocolErrorStatuses_](x: Self) {
       
-      @scala.inline
-      def set1001(value: String): Self = StObject.set(x, "1001", value.asInstanceOf[js.Any])
+      inline def set1001(value: String): Self = StObject.set(x, "1001", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1002(value: String): Self = StObject.set(x, "1002", value.asInstanceOf[js.Any])
+      inline def set1002(value: String): Self = StObject.set(x, "1002", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1003(value: String): Self = StObject.set(x, "1003", value.asInstanceOf[js.Any])
+      inline def set1003(value: String): Self = StObject.set(x, "1003", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1005(value: String): Self = StObject.set(x, "1005", value.asInstanceOf[js.Any])
+      inline def set1005(value: String): Self = StObject.set(x, "1005", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1006(value: String): Self = StObject.set(x, "1006", value.asInstanceOf[js.Any])
+      inline def set1006(value: String): Self = StObject.set(x, "1006", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1007(value: String): Self = StObject.set(x, "1007", value.asInstanceOf[js.Any])
+      inline def set1007(value: String): Self = StObject.set(x, "1007", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1008(value: String): Self = StObject.set(x, "1008", value.asInstanceOf[js.Any])
+      inline def set1008(value: String): Self = StObject.set(x, "1008", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1009(value: String): Self = StObject.set(x, "1009", value.asInstanceOf[js.Any])
+      inline def set1009(value: String): Self = StObject.set(x, "1009", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1010(value: String): Self = StObject.set(x, "1010", value.asInstanceOf[js.Any])
+      inline def set1010(value: String): Self = StObject.set(x, "1010", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1011(value: String): Self = StObject.set(x, "1011", value.asInstanceOf[js.Any])
+      inline def set1011(value: String): Self = StObject.set(x, "1011", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4000(value: String): Self = StObject.set(x, "4000", value.asInstanceOf[js.Any])
+      inline def set4000(value: String): Self = StObject.set(x, "4000", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4001(value: String): Self = StObject.set(x, "4001", value.asInstanceOf[js.Any])
+      inline def set4001(value: String): Self = StObject.set(x, "4001", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4002(value: String): Self = StObject.set(x, "4002", value.asInstanceOf[js.Any])
+      inline def set4002(value: String): Self = StObject.set(x, "4002", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4003(value: String): Self = StObject.set(x, "4003", value.asInstanceOf[js.Any])
+      inline def set4003(value: String): Self = StObject.set(x, "4003", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4004(value: String): Self = StObject.set(x, "4004", value.asInstanceOf[js.Any])
+      inline def set4004(value: String): Self = StObject.set(x, "4004", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4005(value: String): Self = StObject.set(x, "4005", value.asInstanceOf[js.Any])
+      inline def set4005(value: String): Self = StObject.set(x, "4005", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4006(value: String): Self = StObject.set(x, "4006", value.asInstanceOf[js.Any])
+      inline def set4006(value: String): Self = StObject.set(x, "4006", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4007(value: String): Self = StObject.set(x, "4007", value.asInstanceOf[js.Any])
+      inline def set4007(value: String): Self = StObject.set(x, "4007", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4008(value: String): Self = StObject.set(x, "4008", value.asInstanceOf[js.Any])
+      inline def set4008(value: String): Self = StObject.set(x, "4008", value.asInstanceOf[js.Any])
     }
   }
   
@@ -455,22 +430,18 @@ object mod {
   }
   object SocketProtocolIgnoreStatuses_ {
     
-    @scala.inline
-    def apply(`1000`: String, `1001`: String): SocketProtocolIgnoreStatuses_ = {
+    inline def apply(`1000`: String, `1001`: String): SocketProtocolIgnoreStatuses_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("1000")(`1000`.asInstanceOf[js.Any])
       __obj.updateDynamic("1001")(`1001`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketProtocolIgnoreStatuses_]
     }
     
-    @scala.inline
-    implicit class SocketProtocolIgnoreStatuses_MutableBuilder[Self <: SocketProtocolIgnoreStatuses_] (val x: Self) extends AnyVal {
+    extension [Self <: SocketProtocolIgnoreStatuses_](x: Self) {
       
-      @scala.inline
-      def set1000(value: String): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
+      inline def set1000(value: String): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1001(value: String): Self = StObject.set(x, "1001", value.asInstanceOf[js.Any])
+      inline def set1001(value: String): Self = StObject.set(x, "1001", value.asInstanceOf[js.Any])
     }
   }
 }

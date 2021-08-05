@@ -13,16 +13,13 @@ trait DeleteInterconnectRequest extends StObject {
 }
 object DeleteInterconnectRequest {
   
-  @scala.inline
-  def apply(interconnectId: InterconnectId): DeleteInterconnectRequest = {
+  inline def apply(interconnectId: InterconnectId): DeleteInterconnectRequest = {
     val __obj = js.Dynamic.literal(interconnectId = interconnectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInterconnectRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInterconnectRequestMutableBuilder[Self <: DeleteInterconnectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInterconnectRequest](x: Self) {
     
-    @scala.inline
-    def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
+    inline def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
   }
 }

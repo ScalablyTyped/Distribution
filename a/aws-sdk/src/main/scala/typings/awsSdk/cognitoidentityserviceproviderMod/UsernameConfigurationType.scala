@@ -13,16 +13,13 @@ trait UsernameConfigurationType extends StObject {
 }
 object UsernameConfigurationType {
   
-  @scala.inline
-  def apply(CaseSensitive: WrappedBooleanType): UsernameConfigurationType = {
+  inline def apply(CaseSensitive: WrappedBooleanType): UsernameConfigurationType = {
     val __obj = js.Dynamic.literal(CaseSensitive = CaseSensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsernameConfigurationType]
   }
   
-  @scala.inline
-  implicit class UsernameConfigurationTypeMutableBuilder[Self <: UsernameConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: UsernameConfigurationType](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: WrappedBooleanType): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: WrappedBooleanType): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
   }
 }

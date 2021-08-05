@@ -25,8 +25,7 @@ trait SketchMSCurvePoint extends StObject {
 }
 object SketchMSCurvePoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cornerRadius: Double,
     curveFrom: SketchMSPointString,
     curveMode: SketchMSCurveMode,
@@ -39,31 +38,22 @@ object SketchMSCurvePoint {
     __obj.asInstanceOf[SketchMSCurvePoint]
   }
   
-  @scala.inline
-  implicit class SketchMSCurvePointMutableBuilder[Self <: SketchMSCurvePoint] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSCurvePoint](x: Self) {
     
-    @scala.inline
-    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveFrom(value: SketchMSPointString): Self = StObject.set(x, "curveFrom", value.asInstanceOf[js.Any])
+    inline def setCurveFrom(value: SketchMSPointString): Self = StObject.set(x, "curveFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveMode(value: SketchMSCurveMode): Self = StObject.set(x, "curveMode", value.asInstanceOf[js.Any])
+    inline def setCurveMode(value: SketchMSCurveMode): Self = StObject.set(x, "curveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveTo(value: SketchMSPointString): Self = StObject.set(x, "curveTo", value.asInstanceOf[js.Any])
+    inline def setCurveTo(value: SketchMSPointString): Self = StObject.set(x, "curveTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCurveFrom(value: Boolean): Self = StObject.set(x, "hasCurveFrom", value.asInstanceOf[js.Any])
+    inline def setHasCurveFrom(value: Boolean): Self = StObject.set(x, "hasCurveFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCurveTo(value: Boolean): Self = StObject.set(x, "hasCurveTo", value.asInstanceOf[js.Any])
+    inline def setHasCurveTo(value: Boolean): Self = StObject.set(x, "hasCurveTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: SketchMSPointString): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: SketchMSPointString): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: curvePoint): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: curvePoint): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

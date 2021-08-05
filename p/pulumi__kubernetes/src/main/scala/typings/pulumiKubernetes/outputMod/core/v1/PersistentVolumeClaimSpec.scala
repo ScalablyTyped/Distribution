@@ -47,8 +47,7 @@ trait PersistentVolumeClaimSpec extends StObject {
 }
 object PersistentVolumeClaimSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessModes: js.Array[String],
     dataSource: TypedLocalObjectReference,
     resources: ResourceRequirements,
@@ -61,31 +60,22 @@ object PersistentVolumeClaimSpec {
     __obj.asInstanceOf[PersistentVolumeClaimSpec]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimSpecMutableBuilder[Self <: PersistentVolumeClaimSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimSpec](x: Self) {
     
-    @scala.inline
-    def setAccessModes(value: js.Array[String]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
+    inline def setAccessModes(value: js.Array[String]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessModesVarargs(value: String*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
+    inline def setAccessModesVarargs(value: String*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSource(value: TypedLocalObjectReference): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: TypedLocalObjectReference): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: ResourceRequirements): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceRequirements): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassName(value: String): Self = StObject.set(x, "storageClassName", value.asInstanceOf[js.Any])
+    inline def setStorageClassName(value: String): Self = StObject.set(x, "storageClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeMode(value: String): Self = StObject.set(x, "volumeMode", value.asInstanceOf[js.Any])
+    inline def setVolumeMode(value: String): Self = StObject.set(x, "volumeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeName(value: String): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
+    inline def setVolumeName(value: String): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
   }
 }

@@ -22,7 +22,7 @@ trait IMsoDiagram extends StObject {
   @JSName("Nodes")
   val Nodes_Original: DiagramNodes
   
-  @JSName("Office.IMsoDiagram_typekey")
+  /* private */ @JSName("Office.IMsoDiagram_typekey")
   var OfficeDotIMsoDiagram_typekey: IMsoDiagram
   
   val Parent: js.Any
@@ -33,8 +33,7 @@ trait IMsoDiagram extends StObject {
 }
 object IMsoDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     AutoFormat: MsoTriState,
     AutoLayout: MsoTriState,
@@ -52,40 +51,28 @@ object IMsoDiagram {
     __obj.asInstanceOf[IMsoDiagram]
   }
   
-  @scala.inline
-  implicit class IMsoDiagramMutableBuilder[Self <: IMsoDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: IMsoDiagram](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormat(value: MsoTriState): Self = StObject.set(x, "AutoFormat", value.asInstanceOf[js.Any])
+    inline def setAutoFormat(value: MsoTriState): Self = StObject.set(x, "AutoFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLayout(value: MsoTriState): Self = StObject.set(x, "AutoLayout", value.asInstanceOf[js.Any])
+    inline def setAutoLayout(value: MsoTriState): Self = StObject.set(x, "AutoLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvert(value: MsoDiagramType => Unit): Self = StObject.set(x, "Convert", js.Any.fromFunction1(value))
+    inline def setConvert(value: MsoDiagramType => Unit): Self = StObject.set(x, "Convert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitText(value: () => Unit): Self = StObject.set(x, "FitText", js.Any.fromFunction0(value))
+    inline def setFitText(value: () => Unit): Self = StObject.set(x, "FitText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNodes(value: DiagramNodes): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: DiagramNodes): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotIMsoDiagram_typekey(value: IMsoDiagram): Self = StObject.set(x, "Office.IMsoDiagram_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotIMsoDiagram_typekey(value: IMsoDiagram): Self = StObject.set(x, "Office.IMsoDiagram_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse(value: MsoTriState): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: MsoTriState): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoDiagramType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoDiagramType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait SaveOptions
 }
 object SaveOptions {
   
-  @scala.inline
-  def apply(): SaveOptions = {
+  inline def apply(): SaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveOptions]
   }
   
-  @scala.inline
-  implicit class SaveOptionsMutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveOptions](x: Self) {
     
-    @scala.inline
-    def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+    inline def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
+    inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
   }
 }

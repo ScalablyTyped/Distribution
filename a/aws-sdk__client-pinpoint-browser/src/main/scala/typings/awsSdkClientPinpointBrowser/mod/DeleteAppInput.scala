@@ -9,8 +9,7 @@ trait DeleteAppInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteAppInputMod.DeleteAppInput
 object DeleteAppInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): DeleteAppInput = {
+  inline def apply(ApplicationId: String): DeleteAppInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppInput]
   }

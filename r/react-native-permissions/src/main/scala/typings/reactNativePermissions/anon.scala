@@ -262,101 +262,70 @@ object anon {
   }
   object ReadonlyreadonlyACCEPTHAN {
     
-    @scala.inline
-    def apply(): ReadonlyreadonlyACCEPTHAN = {
+    inline def apply(): ReadonlyreadonlyACCEPTHAN = {
       val __obj = js.Dynamic.literal(ACCEPT_HANDOVER = "android.permission.ACCEPT_HANDOVER", ACCESS_BACKGROUND_LOCATION = "android.permission.ACCESS_BACKGROUND_LOCATION", ACCESS_COARSE_LOCATION = "android.permission.ACCESS_COARSE_LOCATION", ACCESS_FINE_LOCATION = "android.permission.ACCESS_FINE_LOCATION", ACTIVITY_RECOGNITION = "android.permission.ACTIVITY_RECOGNITION", ADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL", ANSWER_PHONE_CALLS = "android.permission.ANSWER_PHONE_CALLS", BODY_SENSORS = "android.permission.BODY_SENSORS", CALL_PHONE = "android.permission.CALL_PHONE", CAMERA = "android.permission.CAMERA", GET_ACCOUNTS = "android.permission.GET_ACCOUNTS", PROCESS_OUTGOING_CALLS = "android.permission.PROCESS_OUTGOING_CALLS", READ_CALENDAR = "android.permission.READ_CALENDAR", READ_CALL_LOG = "android.permission.READ_CALL_LOG", READ_CONTACTS = "android.permission.READ_CONTACTS", READ_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE", READ_PHONE_NUMBERS = "android.permission.READ_PHONE_NUMBERS", READ_PHONE_STATE = "android.permission.READ_PHONE_STATE", READ_SMS = "android.permission.READ_SMS", RECEIVE_MMS = "android.permission.RECEIVE_MMS", RECEIVE_SMS = "android.permission.RECEIVE_SMS", RECEIVE_WAP_PUSH = "android.permission.RECEIVE_WAP_PUSH", RECORD_AUDIO = "android.permission.RECORD_AUDIO", SEND_SMS = "android.permission.SEND_SMS", USE_SIP = "android.permission.USE_SIP", WRITE_CALENDAR = "android.permission.WRITE_CALENDAR", WRITE_CALL_LOG = "android.permission.WRITE_CALL_LOG", WRITE_CONTACTS = "android.permission.WRITE_CONTACTS", WRITE_EXTERNAL_STORAGE = "android.permission.WRITE_EXTERNAL_STORAGE")
       __obj.asInstanceOf[ReadonlyreadonlyACCEPTHAN]
     }
     
-    @scala.inline
-    implicit class ReadonlyreadonlyACCEPTHANMutableBuilder[Self <: ReadonlyreadonlyACCEPTHAN] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyreadonlyACCEPTHAN](x: Self) {
       
-      @scala.inline
-      def setACCEPT_HANDOVER(value: androidDotpermissionDotACCEPT_HANDOVER): Self = StObject.set(x, "ACCEPT_HANDOVER", value.asInstanceOf[js.Any])
+      inline def setACCEPT_HANDOVER(value: androidDotpermissionDotACCEPT_HANDOVER): Self = StObject.set(x, "ACCEPT_HANDOVER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACCESS_BACKGROUND_LOCATION(value: androidDotpermissionDotACCESS_BACKGROUND_LOCATION): Self = StObject.set(x, "ACCESS_BACKGROUND_LOCATION", value.asInstanceOf[js.Any])
+      inline def setACCESS_BACKGROUND_LOCATION(value: androidDotpermissionDotACCESS_BACKGROUND_LOCATION): Self = StObject.set(x, "ACCESS_BACKGROUND_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACCESS_COARSE_LOCATION(value: androidDotpermissionDotACCESS_COARSE_LOCATION): Self = StObject.set(x, "ACCESS_COARSE_LOCATION", value.asInstanceOf[js.Any])
+      inline def setACCESS_COARSE_LOCATION(value: androidDotpermissionDotACCESS_COARSE_LOCATION): Self = StObject.set(x, "ACCESS_COARSE_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACCESS_FINE_LOCATION(value: androidDotpermissionDotACCESS_FINE_LOCATION): Self = StObject.set(x, "ACCESS_FINE_LOCATION", value.asInstanceOf[js.Any])
+      inline def setACCESS_FINE_LOCATION(value: androidDotpermissionDotACCESS_FINE_LOCATION): Self = StObject.set(x, "ACCESS_FINE_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACTIVITY_RECOGNITION(value: androidDotpermissionDotACTIVITY_RECOGNITION): Self = StObject.set(x, "ACTIVITY_RECOGNITION", value.asInstanceOf[js.Any])
+      inline def setACTIVITY_RECOGNITION(value: androidDotpermissionDotACTIVITY_RECOGNITION): Self = StObject.set(x, "ACTIVITY_RECOGNITION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADD_VOICEMAIL(value: comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL): Self = StObject.set(x, "ADD_VOICEMAIL", value.asInstanceOf[js.Any])
+      inline def setADD_VOICEMAIL(value: comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL): Self = StObject.set(x, "ADD_VOICEMAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setANSWER_PHONE_CALLS(value: androidDotpermissionDotANSWER_PHONE_CALLS): Self = StObject.set(x, "ANSWER_PHONE_CALLS", value.asInstanceOf[js.Any])
+      inline def setANSWER_PHONE_CALLS(value: androidDotpermissionDotANSWER_PHONE_CALLS): Self = StObject.set(x, "ANSWER_PHONE_CALLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBODY_SENSORS(value: androidDotpermissionDotBODY_SENSORS): Self = StObject.set(x, "BODY_SENSORS", value.asInstanceOf[js.Any])
+      inline def setBODY_SENSORS(value: androidDotpermissionDotBODY_SENSORS): Self = StObject.set(x, "BODY_SENSORS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCALL_PHONE(value: androidDotpermissionDotCALL_PHONE): Self = StObject.set(x, "CALL_PHONE", value.asInstanceOf[js.Any])
+      inline def setCALL_PHONE(value: androidDotpermissionDotCALL_PHONE): Self = StObject.set(x, "CALL_PHONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAMERA(value: androidDotpermissionDotCAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
+      inline def setCAMERA(value: androidDotpermissionDotCAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ACCOUNTS(value: androidDotpermissionDotGET_ACCOUNTS): Self = StObject.set(x, "GET_ACCOUNTS", value.asInstanceOf[js.Any])
+      inline def setGET_ACCOUNTS(value: androidDotpermissionDotGET_ACCOUNTS): Self = StObject.set(x, "GET_ACCOUNTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROCESS_OUTGOING_CALLS(value: androidDotpermissionDotPROCESS_OUTGOING_CALLS): Self = StObject.set(x, "PROCESS_OUTGOING_CALLS", value.asInstanceOf[js.Any])
+      inline def setPROCESS_OUTGOING_CALLS(value: androidDotpermissionDotPROCESS_OUTGOING_CALLS): Self = StObject.set(x, "PROCESS_OUTGOING_CALLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_CALENDAR(value: androidDotpermissionDotREAD_CALENDAR): Self = StObject.set(x, "READ_CALENDAR", value.asInstanceOf[js.Any])
+      inline def setREAD_CALENDAR(value: androidDotpermissionDotREAD_CALENDAR): Self = StObject.set(x, "READ_CALENDAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_CALL_LOG(value: androidDotpermissionDotREAD_CALL_LOG): Self = StObject.set(x, "READ_CALL_LOG", value.asInstanceOf[js.Any])
+      inline def setREAD_CALL_LOG(value: androidDotpermissionDotREAD_CALL_LOG): Self = StObject.set(x, "READ_CALL_LOG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_CONTACTS(value: androidDotpermissionDotREAD_CONTACTS): Self = StObject.set(x, "READ_CONTACTS", value.asInstanceOf[js.Any])
+      inline def setREAD_CONTACTS(value: androidDotpermissionDotREAD_CONTACTS): Self = StObject.set(x, "READ_CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_EXTERNAL_STORAGE(value: androidDotpermissionDotREAD_EXTERNAL_STORAGE): Self = StObject.set(x, "READ_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
+      inline def setREAD_EXTERNAL_STORAGE(value: androidDotpermissionDotREAD_EXTERNAL_STORAGE): Self = StObject.set(x, "READ_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_PHONE_NUMBERS(value: androidDotpermissionDotREAD_PHONE_NUMBERS): Self = StObject.set(x, "READ_PHONE_NUMBERS", value.asInstanceOf[js.Any])
+      inline def setREAD_PHONE_NUMBERS(value: androidDotpermissionDotREAD_PHONE_NUMBERS): Self = StObject.set(x, "READ_PHONE_NUMBERS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_PHONE_STATE(value: androidDotpermissionDotREAD_PHONE_STATE): Self = StObject.set(x, "READ_PHONE_STATE", value.asInstanceOf[js.Any])
+      inline def setREAD_PHONE_STATE(value: androidDotpermissionDotREAD_PHONE_STATE): Self = StObject.set(x, "READ_PHONE_STATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_SMS(value: androidDotpermissionDotREAD_SMS): Self = StObject.set(x, "READ_SMS", value.asInstanceOf[js.Any])
+      inline def setREAD_SMS(value: androidDotpermissionDotREAD_SMS): Self = StObject.set(x, "READ_SMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECEIVE_MMS(value: androidDotpermissionDotRECEIVE_MMS): Self = StObject.set(x, "RECEIVE_MMS", value.asInstanceOf[js.Any])
+      inline def setRECEIVE_MMS(value: androidDotpermissionDotRECEIVE_MMS): Self = StObject.set(x, "RECEIVE_MMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECEIVE_SMS(value: androidDotpermissionDotRECEIVE_SMS): Self = StObject.set(x, "RECEIVE_SMS", value.asInstanceOf[js.Any])
+      inline def setRECEIVE_SMS(value: androidDotpermissionDotRECEIVE_SMS): Self = StObject.set(x, "RECEIVE_SMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECEIVE_WAP_PUSH(value: androidDotpermissionDotRECEIVE_WAP_PUSH): Self = StObject.set(x, "RECEIVE_WAP_PUSH", value.asInstanceOf[js.Any])
+      inline def setRECEIVE_WAP_PUSH(value: androidDotpermissionDotRECEIVE_WAP_PUSH): Self = StObject.set(x, "RECEIVE_WAP_PUSH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECORD_AUDIO(value: androidDotpermissionDotRECORD_AUDIO): Self = StObject.set(x, "RECORD_AUDIO", value.asInstanceOf[js.Any])
+      inline def setRECORD_AUDIO(value: androidDotpermissionDotRECORD_AUDIO): Self = StObject.set(x, "RECORD_AUDIO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEND_SMS(value: androidDotpermissionDotSEND_SMS): Self = StObject.set(x, "SEND_SMS", value.asInstanceOf[js.Any])
+      inline def setSEND_SMS(value: androidDotpermissionDotSEND_SMS): Self = StObject.set(x, "SEND_SMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSE_SIP(value: androidDotpermissionDotUSE_SIP): Self = StObject.set(x, "USE_SIP", value.asInstanceOf[js.Any])
+      inline def setUSE_SIP(value: androidDotpermissionDotUSE_SIP): Self = StObject.set(x, "USE_SIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_CALENDAR(value: androidDotpermissionDotWRITE_CALENDAR): Self = StObject.set(x, "WRITE_CALENDAR", value.asInstanceOf[js.Any])
+      inline def setWRITE_CALENDAR(value: androidDotpermissionDotWRITE_CALENDAR): Self = StObject.set(x, "WRITE_CALENDAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_CALL_LOG(value: androidDotpermissionDotWRITE_CALL_LOG): Self = StObject.set(x, "WRITE_CALL_LOG", value.asInstanceOf[js.Any])
+      inline def setWRITE_CALL_LOG(value: androidDotpermissionDotWRITE_CALL_LOG): Self = StObject.set(x, "WRITE_CALL_LOG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_CONTACTS(value: androidDotpermissionDotWRITE_CONTACTS): Self = StObject.set(x, "WRITE_CONTACTS", value.asInstanceOf[js.Any])
+      inline def setWRITE_CONTACTS(value: androidDotpermissionDotWRITE_CONTACTS): Self = StObject.set(x, "WRITE_CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_EXTERNAL_STORAGE(value: androidDotpermissionDotWRITE_EXTERNAL_STORAGE): Self = StObject.set(x, "WRITE_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
+      inline def setWRITE_EXTERNAL_STORAGE(value: androidDotpermissionDotWRITE_EXTERNAL_STORAGE): Self = StObject.set(x, "WRITE_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -649,440 +618,296 @@ object anon {
   }
   object ReadonlyreadonlyACCESSORY {
     
-    @scala.inline
-    def apply(): ReadonlyreadonlyACCESSORY = {
+    inline def apply(): ReadonlyreadonlyACCESSORY = {
       val __obj = js.Dynamic.literal(ACCESSORY_MANAGER = "windows.permission.accessoryManager", ACTIVITY = "windows.permission.activity", ALLOW_ELEVATION = "windows.permission.allowElevation", ALL_APP_MODS = "windows.permission.allAppMods", ALL_JOYN = "windows.permission.allJoyn", APPOINTMENTS = "windows.permission.appointments", APPOINTMENTS_SYSTEM = "windows.permission.appointmentsSystem", APP_BROADCAST_SERVICES = "windows.permission.appBroadcastServices", APP_CAPTURE_SERVICES = "windows.permission.appCaptureServices", APP_CAPTURE_SETTINGS = "windows.permission.appCaptureSettings", APP_DIAGNOSTICS = "windows.permission.appDiagnostics", APP_LICENSING = "windows.permission.appLicensing", AUDIO_DEVICE_CONFIGURATION = "windows.permission.audioDeviceConfiguration", BACKGROUND_MEDIA_PLAYBACK = "windows.permission.backgroundMediaPlayback", BACKGROUND_MEDIA_RECORDING = "windows.permission.backgroundMediaRecording", BACKGROUND_SPATIAL_PERCEPTION = "windows.permission.backgroundSpatialPerception", BACKGROUND_VOIP = "windows.permission.backgroundVoIP", BLOCKED_CHAT_MESSAGES = "windows.permission.blockedChatMessages", BLUETOOTH = "windows.permission.bluetooth", BROAD_FILE_SYSTEM_ACCESS = "windows.permission.broadFileSystemAccess", CAMERA_PROCESSING_EXTENSION = "windows.permission.cameraProcessingExtension", CELLULAR_DEVICE_CONTROL = "windows.permission.cellularDeviceControl", CELLULAR_DEVICE_IDENTITY = "windows.permission.cellularDeviceIdentity", CELLULAR_MESSAGING = "windows.permission.cellularMessaging", CHAT_SYSTEM = "windows.permission.chatSystem", CODE_GENERATION = "windows.permission.codeGeneration", CONFIRM_APP_CLOSE = "windows.permission.confirmAppClose", CONTACTS = "windows.permission.contacts", CONTACTS_SYSTEM = "windows.permission.contactsSystem", CORTANA_PERMISSIONS = "windows.permission.cortanaPermissions", CORTANA_SPEECH_ACCESSORY = "windows.permission.cortanaSpeechAccessory", CUSTOM_INSTALL_ACTIONS = "windows.permission.customInstallActions", DEVELOPMENT_MODE_NETWORK = "windows.permission.developmentModeNetwork", DEVICE_MANAGEMENT_DM_ACCOUNT = "windows.permission.deviceManagementDmAccount", DEVICE_MANAGEMENT_EMAIL_ACCOUNT = "windows.permission.deviceManagementEmailAccount", DEVICE_MANAGEMENT_FOUNDATION = "windows.permission.deviceManagementFoundation", DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES = "windows.permission.deviceManagementWapSecurityPolicies", DEVICE_PORTAL_PROVIDER = "windows.permission.devicePortalProvider", DEVICE_UNLOCK = "windows.permission.deviceUnlock", DOCUMENTS_LIBRARY = "windows.permission.documentsLibrary", DUAL_SIM_TILES = "windows.permission.dualSimTiles", EMAIL = "windows.permission.email", EMAIL_SYSTEM = "windows.permission.emailSystem", ENTERPRISE_AUTHENTICATION = "windows.permission.enterpriseAuthentication", ENTERPRISE_CLOUD_S_S_O = "windows.permission.enterpriseCloudSSO", ENTERPRISE_DATA_POLICY = "windows.permission.enterpriseDataPolicy", ENTERPRISE_DEVICE_LOCKDOWN = "windows.permission.enterpriseDeviceLockdown", EXPANDED_RESOURCES = "windows.permission.expandedResources", EXTENDED_BACKGROUND_TASK_TIME = "windows.permission.extendedBackgroundTaskTime", EXTENDED_EXECUTION_BACKGROUND_AUDIO = "windows.permission.extendedExecutionBackgroundAudio", EXTENDED_EXECUTION_CRITICAL = "windows.permission.extendedExecutionCritical", EXTENDED_EXECUTION_UNCONSTRAINED = "windows.permission.extendedExecutionUnconstrained", FIRST_SIGN_IN_SETTINGS = "windows.permission.firstSignInSettings", GAME_BAR_SERVICES = "windows.permission.gameBarServices", GAME_LIST = "windows.permission.gameList", GAME_MONITOR = "windows.permission.gameMonitor", GAZE_INPUT = "windows.permission.gazeInput", GLOBAL_MEDIA_CONTROL = "windows.permission.globalMediaControl", HUMANINTERFACEDEVICE = "windows.permission.humaninterfacedevice", INPUT_FOREGROUND_OBSERVATION = "windows.permission.inputForegroundObservation", INPUT_INJECTION_BROKERED = "windows.permission.inputInjectionBrokered", INPUT_OBSERVATION = "windows.permission.inputObservation", INPUT_SUPPRESSION = "windows.permission.inputSuppression", INTERNET_CLIENT = "windows.permission.internetClient", INTERNET_CLIENT_SERVER = "windows.permission.internetClientServer", INTEROP_SERVICES = "windows.permission.interopServices", IOT = "windows.permission.iot", LOCAL_SYSTEM_SERVICES = "windows.permission.localSystemServices", LOCATION = "windows.permission.location", LOCATION_HISTORY = "windows.permission.locationHistory", LOCATION_SYSTEM = "windows.permission.locationSystem", LOW_LEVEL = "windows.permission.lowLevel", LOW_LEVEL_DEVICES = "windows.permission.lowLevelDevices", MICROPHONE = "windows.permission.microphone", MOBILE = "windows.permission.mobile", MODIFIABLE_APP = "windows.permission.modifiableApp", MUSIC_LIBRARY = "windows.permission.musicLibrary", NETWORKING_VPN_PROVIDER = "windows.permission.networkingVpnProvider", NETWORK_CONNECTION_MANAGER_PROVISIONING = "windows.permission.networkConnectionManagerProvisioning", NETWORK_DATA_PLAN_PROVISIONING = "windows.permission.networkDataPlanProvisioning", NETWORK_DATA_USAGE_MANAGEMENT = "windows.permission.networkDataUsageManagement", OEM_DEPLOYMENT = "windows.permission.oemDeployment", OEM_PUBLIC_DIRECTORY = "windows.permission.oemPublicDirectory", ONE_PROCESS_VOIP = "windows.permission.oneProcessVoIP", OPTICAL = "windows.permission.optical", PACKAGED_SERVICES = "windows.permission.packagedServices", PACKAGES_SERVICES = "windows.permission.packagesServices", PACKAGE_MANAGEMENT = "windows.permission.packageManagement", PACKAGE_POLICY_SYSTEM = "windows.permission.packagePolicySystem", PACKAGE_QUERY = "windows.permission.packageQuery", PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM = "windows.permission.packageWriteRedirectionCompatibilityShim", PHONE_CALL = "windows.permission.phoneCall", PHONE_CALL_HISTORY = "windows.permission.phoneCallHistory", PHONE_CALL_HISTORY_SYSTEM = "windows.permission.phoneCallHistorySystem", PHONE_LINE_TRANSPORT_MANAGEMENT = "windows.permission.phoneLineTransportManagement", PICTURES_LIBRARY = "windows.permission.picturesLibrary", POINT_OF_SERVICE = "windows.permission.pointOfService", PREVIEW_INK_WORKSPACE = "windows.permission.previewInkWorkspace", PREVIEW_PEN_WORKSPACE = "windows.permission.previewPenWorkspace", PREVIEW_STORE = "windows.permission.previewStore", PREVIEW_UI_COMPOSITION = "windows.permission.previewUiComposition", PRIVATE_NETWORK_CLIENT_SERVER = "windows.permission.privateNetworkClientServer", PROTECTED_APP = "windows.permission.protectedApp", PROXIMITY = "windows.permission.proximity", RADIOS = "windows.permission.radios", RECORDED_CALLS_FOLDER = "windows.permission.recordedCallsFolder", REMOTE_PASSPORT_AUTHENTICATION = "windows.permission.remotePassportAuthentication", REMOTE_SYSTEM = "windows.permission.remoteSystem", REMOVABLE_STORAGE = "windows.permission.removableStorage", RESCAP = "windows.permission.rescap", RUN_FULL_TRUST = "windows.permission.runFullTrust", SCREEN_DUPLICATION = "windows.permission.screenDuplication", SECONDARY_AUTHENTICATION_FACTOR = "windows.permission.secondaryAuthenticationFactor", SECURE_ASSESSMENT = "windows.permission.secureAssessment", SERIALCOMMUNICATION = "windows.permission.serialcommunication", SHARED_USER_CERTIFICATES = "windows.permission.sharedUserCertificates", SLAPI_QUERY_LICENSE_VALUE = "windows.permission.slapiQueryLicenseValue", SMBIOS = "windows.permission.smbios", SMS_SEND = "windows.permission.smsSend", SPATIAL_PERCEPTION = "windows.permission.spatialPerception", START_SCREEN_MANAGEMENT = "windows.permission.startScreenManagement", STORE_LICENSE_MANAGEMENT = "windows.permission.storeLicenseManagement", SYSTEM_MANAGEMENT = "windows.permission.systemManagement", TARGETED_CONTENT = "windows.permission.targetedContent", TEAM_EDITION_DEVICE_CREDENTIAL = "windows.permission.teamEditionDeviceCredential", TEAM_EDITION_EXPERIENCE = "windows.permission.teamEditionExperience", TEAM_EDITION_VIEW = "windows.permission.teamEditionView", UAP = "windows.permission.uap", UI_AUTOMATION = "windows.permission.uiAutomation", UNVIRTUALIZED_RESOURCES = "windows.permission.unvirtualizedResources", USB = "windows.permission.usb", USER_ACCOUNT_INFORMATION = "windows.permission.userAccountInformation", USER_DATA_ACCOUNTS_PROVIDER = "windows.permission.userDataAccountsProvider", USER_DATA_SYSTEM = "windows.permission.userDataSystem", USER_PRINCIPAL_NAME = "windows.permission.userPrincipalName", USER_SYSTEM_ID = "windows.permission.userSystemId", VIDEOS_LIBRARY = "windows.permission.videosLibrary", VOIP_CALL = "windows.permission.voipCall", WALLET_SYSTEM = "windows.permission.walletSystem", WEBCAM = "windows.permission.webcam", WIFI_CONTROL = "windows.permission.wiFiControl", XBOX_ACCESSORY_MANAGEMENT = "windows.permission.xboxAccessoryManagement")
       __obj.asInstanceOf[ReadonlyreadonlyACCESSORY]
     }
     
-    @scala.inline
-    implicit class ReadonlyreadonlyACCESSORYMutableBuilder[Self <: ReadonlyreadonlyACCESSORY] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyreadonlyACCESSORY](x: Self) {
       
-      @scala.inline
-      def setACCESSORY_MANAGER(value: windowsDotpermissionDotaccessoryManager): Self = StObject.set(x, "ACCESSORY_MANAGER", value.asInstanceOf[js.Any])
+      inline def setACCESSORY_MANAGER(value: windowsDotpermissionDotaccessoryManager): Self = StObject.set(x, "ACCESSORY_MANAGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACTIVITY(value: windowsDotpermissionDotactivity): Self = StObject.set(x, "ACTIVITY", value.asInstanceOf[js.Any])
+      inline def setACTIVITY(value: windowsDotpermissionDotactivity): Self = StObject.set(x, "ACTIVITY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALLOW_ELEVATION(value: windowsDotpermissionDotallowElevation): Self = StObject.set(x, "ALLOW_ELEVATION", value.asInstanceOf[js.Any])
+      inline def setALLOW_ELEVATION(value: windowsDotpermissionDotallowElevation): Self = StObject.set(x, "ALLOW_ELEVATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALL_APP_MODS(value: windowsDotpermissionDotallAppMods): Self = StObject.set(x, "ALL_APP_MODS", value.asInstanceOf[js.Any])
+      inline def setALL_APP_MODS(value: windowsDotpermissionDotallAppMods): Self = StObject.set(x, "ALL_APP_MODS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALL_JOYN(value: windowsDotpermissionDotallJoyn): Self = StObject.set(x, "ALL_JOYN", value.asInstanceOf[js.Any])
+      inline def setALL_JOYN(value: windowsDotpermissionDotallJoyn): Self = StObject.set(x, "ALL_JOYN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPPOINTMENTS(value: windowsDotpermissionDotappointments): Self = StObject.set(x, "APPOINTMENTS", value.asInstanceOf[js.Any])
+      inline def setAPPOINTMENTS(value: windowsDotpermissionDotappointments): Self = StObject.set(x, "APPOINTMENTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPPOINTMENTS_SYSTEM(value: windowsDotpermissionDotappointmentsSystem): Self = StObject.set(x, "APPOINTMENTS_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setAPPOINTMENTS_SYSTEM(value: windowsDotpermissionDotappointmentsSystem): Self = StObject.set(x, "APPOINTMENTS_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPP_BROADCAST_SERVICES(value: windowsDotpermissionDotappBroadcastServices): Self = StObject.set(x, "APP_BROADCAST_SERVICES", value.asInstanceOf[js.Any])
+      inline def setAPP_BROADCAST_SERVICES(value: windowsDotpermissionDotappBroadcastServices): Self = StObject.set(x, "APP_BROADCAST_SERVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPP_CAPTURE_SERVICES(value: windowsDotpermissionDotappCaptureServices): Self = StObject.set(x, "APP_CAPTURE_SERVICES", value.asInstanceOf[js.Any])
+      inline def setAPP_CAPTURE_SERVICES(value: windowsDotpermissionDotappCaptureServices): Self = StObject.set(x, "APP_CAPTURE_SERVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPP_CAPTURE_SETTINGS(value: windowsDotpermissionDotappCaptureSettings): Self = StObject.set(x, "APP_CAPTURE_SETTINGS", value.asInstanceOf[js.Any])
+      inline def setAPP_CAPTURE_SETTINGS(value: windowsDotpermissionDotappCaptureSettings): Self = StObject.set(x, "APP_CAPTURE_SETTINGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPP_DIAGNOSTICS(value: windowsDotpermissionDotappDiagnostics): Self = StObject.set(x, "APP_DIAGNOSTICS", value.asInstanceOf[js.Any])
+      inline def setAPP_DIAGNOSTICS(value: windowsDotpermissionDotappDiagnostics): Self = StObject.set(x, "APP_DIAGNOSTICS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPP_LICENSING(value: windowsDotpermissionDotappLicensing): Self = StObject.set(x, "APP_LICENSING", value.asInstanceOf[js.Any])
+      inline def setAPP_LICENSING(value: windowsDotpermissionDotappLicensing): Self = StObject.set(x, "APP_LICENSING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUDIO_DEVICE_CONFIGURATION(value: windowsDotpermissionDotaudioDeviceConfiguration): Self = StObject.set(x, "AUDIO_DEVICE_CONFIGURATION", value.asInstanceOf[js.Any])
+      inline def setAUDIO_DEVICE_CONFIGURATION(value: windowsDotpermissionDotaudioDeviceConfiguration): Self = StObject.set(x, "AUDIO_DEVICE_CONFIGURATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBACKGROUND_MEDIA_PLAYBACK(value: windowsDotpermissionDotbackgroundMediaPlayback): Self = StObject.set(x, "BACKGROUND_MEDIA_PLAYBACK", value.asInstanceOf[js.Any])
+      inline def setBACKGROUND_MEDIA_PLAYBACK(value: windowsDotpermissionDotbackgroundMediaPlayback): Self = StObject.set(x, "BACKGROUND_MEDIA_PLAYBACK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBACKGROUND_MEDIA_RECORDING(value: windowsDotpermissionDotbackgroundMediaRecording): Self = StObject.set(x, "BACKGROUND_MEDIA_RECORDING", value.asInstanceOf[js.Any])
+      inline def setBACKGROUND_MEDIA_RECORDING(value: windowsDotpermissionDotbackgroundMediaRecording): Self = StObject.set(x, "BACKGROUND_MEDIA_RECORDING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBACKGROUND_SPATIAL_PERCEPTION(value: windowsDotpermissionDotbackgroundSpatialPerception): Self = StObject.set(x, "BACKGROUND_SPATIAL_PERCEPTION", value.asInstanceOf[js.Any])
+      inline def setBACKGROUND_SPATIAL_PERCEPTION(value: windowsDotpermissionDotbackgroundSpatialPerception): Self = StObject.set(x, "BACKGROUND_SPATIAL_PERCEPTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBACKGROUND_VOIP(value: windowsDotpermissionDotbackgroundVoIP): Self = StObject.set(x, "BACKGROUND_VOIP", value.asInstanceOf[js.Any])
+      inline def setBACKGROUND_VOIP(value: windowsDotpermissionDotbackgroundVoIP): Self = StObject.set(x, "BACKGROUND_VOIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLOCKED_CHAT_MESSAGES(value: windowsDotpermissionDotblockedChatMessages): Self = StObject.set(x, "BLOCKED_CHAT_MESSAGES", value.asInstanceOf[js.Any])
+      inline def setBLOCKED_CHAT_MESSAGES(value: windowsDotpermissionDotblockedChatMessages): Self = StObject.set(x, "BLOCKED_CHAT_MESSAGES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLUETOOTH(value: windowsDotpermissionDotbluetooth): Self = StObject.set(x, "BLUETOOTH", value.asInstanceOf[js.Any])
+      inline def setBLUETOOTH(value: windowsDotpermissionDotbluetooth): Self = StObject.set(x, "BLUETOOTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBROAD_FILE_SYSTEM_ACCESS(value: windowsDotpermissionDotbroadFileSystemAccess): Self = StObject.set(x, "BROAD_FILE_SYSTEM_ACCESS", value.asInstanceOf[js.Any])
+      inline def setBROAD_FILE_SYSTEM_ACCESS(value: windowsDotpermissionDotbroadFileSystemAccess): Self = StObject.set(x, "BROAD_FILE_SYSTEM_ACCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAMERA_PROCESSING_EXTENSION(value: windowsDotpermissionDotcameraProcessingExtension): Self = StObject.set(x, "CAMERA_PROCESSING_EXTENSION", value.asInstanceOf[js.Any])
+      inline def setCAMERA_PROCESSING_EXTENSION(value: windowsDotpermissionDotcameraProcessingExtension): Self = StObject.set(x, "CAMERA_PROCESSING_EXTENSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCELLULAR_DEVICE_CONTROL(value: windowsDotpermissionDotcellularDeviceControl): Self = StObject.set(x, "CELLULAR_DEVICE_CONTROL", value.asInstanceOf[js.Any])
+      inline def setCELLULAR_DEVICE_CONTROL(value: windowsDotpermissionDotcellularDeviceControl): Self = StObject.set(x, "CELLULAR_DEVICE_CONTROL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCELLULAR_DEVICE_IDENTITY(value: windowsDotpermissionDotcellularDeviceIdentity): Self = StObject.set(x, "CELLULAR_DEVICE_IDENTITY", value.asInstanceOf[js.Any])
+      inline def setCELLULAR_DEVICE_IDENTITY(value: windowsDotpermissionDotcellularDeviceIdentity): Self = StObject.set(x, "CELLULAR_DEVICE_IDENTITY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCELLULAR_MESSAGING(value: windowsDotpermissionDotcellularMessaging): Self = StObject.set(x, "CELLULAR_MESSAGING", value.asInstanceOf[js.Any])
+      inline def setCELLULAR_MESSAGING(value: windowsDotpermissionDotcellularMessaging): Self = StObject.set(x, "CELLULAR_MESSAGING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAT_SYSTEM(value: windowsDotpermissionDotchatSystem): Self = StObject.set(x, "CHAT_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setCHAT_SYSTEM(value: windowsDotpermissionDotchatSystem): Self = StObject.set(x, "CHAT_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCODE_GENERATION(value: windowsDotpermissionDotcodeGeneration): Self = StObject.set(x, "CODE_GENERATION", value.asInstanceOf[js.Any])
+      inline def setCODE_GENERATION(value: windowsDotpermissionDotcodeGeneration): Self = StObject.set(x, "CODE_GENERATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONFIRM_APP_CLOSE(value: windowsDotpermissionDotconfirmAppClose): Self = StObject.set(x, "CONFIRM_APP_CLOSE", value.asInstanceOf[js.Any])
+      inline def setCONFIRM_APP_CLOSE(value: windowsDotpermissionDotconfirmAppClose): Self = StObject.set(x, "CONFIRM_APP_CLOSE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTACTS(value: windowsDotpermissionDotcontacts): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
+      inline def setCONTACTS(value: windowsDotpermissionDotcontacts): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTACTS_SYSTEM(value: windowsDotpermissionDotcontactsSystem): Self = StObject.set(x, "CONTACTS_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setCONTACTS_SYSTEM(value: windowsDotpermissionDotcontactsSystem): Self = StObject.set(x, "CONTACTS_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCORTANA_PERMISSIONS(value: windowsDotpermissionDotcortanaPermissions): Self = StObject.set(x, "CORTANA_PERMISSIONS", value.asInstanceOf[js.Any])
+      inline def setCORTANA_PERMISSIONS(value: windowsDotpermissionDotcortanaPermissions): Self = StObject.set(x, "CORTANA_PERMISSIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCORTANA_SPEECH_ACCESSORY(value: windowsDotpermissionDotcortanaSpeechAccessory): Self = StObject.set(x, "CORTANA_SPEECH_ACCESSORY", value.asInstanceOf[js.Any])
+      inline def setCORTANA_SPEECH_ACCESSORY(value: windowsDotpermissionDotcortanaSpeechAccessory): Self = StObject.set(x, "CORTANA_SPEECH_ACCESSORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCUSTOM_INSTALL_ACTIONS(value: windowsDotpermissionDotcustomInstallActions): Self = StObject.set(x, "CUSTOM_INSTALL_ACTIONS", value.asInstanceOf[js.Any])
+      inline def setCUSTOM_INSTALL_ACTIONS(value: windowsDotpermissionDotcustomInstallActions): Self = StObject.set(x, "CUSTOM_INSTALL_ACTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVELOPMENT_MODE_NETWORK(value: windowsDotpermissionDotdevelopmentModeNetwork): Self = StObject.set(x, "DEVELOPMENT_MODE_NETWORK", value.asInstanceOf[js.Any])
+      inline def setDEVELOPMENT_MODE_NETWORK(value: windowsDotpermissionDotdevelopmentModeNetwork): Self = StObject.set(x, "DEVELOPMENT_MODE_NETWORK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVICE_MANAGEMENT_DM_ACCOUNT(value: windowsDotpermissionDotdeviceManagementDmAccount): Self = StObject.set(x, "DEVICE_MANAGEMENT_DM_ACCOUNT", value.asInstanceOf[js.Any])
+      inline def setDEVICE_MANAGEMENT_DM_ACCOUNT(value: windowsDotpermissionDotdeviceManagementDmAccount): Self = StObject.set(x, "DEVICE_MANAGEMENT_DM_ACCOUNT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVICE_MANAGEMENT_EMAIL_ACCOUNT(value: windowsDotpermissionDotdeviceManagementEmailAccount): Self = StObject.set(x, "DEVICE_MANAGEMENT_EMAIL_ACCOUNT", value.asInstanceOf[js.Any])
+      inline def setDEVICE_MANAGEMENT_EMAIL_ACCOUNT(value: windowsDotpermissionDotdeviceManagementEmailAccount): Self = StObject.set(x, "DEVICE_MANAGEMENT_EMAIL_ACCOUNT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVICE_MANAGEMENT_FOUNDATION(value: windowsDotpermissionDotdeviceManagementFoundation): Self = StObject.set(x, "DEVICE_MANAGEMENT_FOUNDATION", value.asInstanceOf[js.Any])
+      inline def setDEVICE_MANAGEMENT_FOUNDATION(value: windowsDotpermissionDotdeviceManagementFoundation): Self = StObject.set(x, "DEVICE_MANAGEMENT_FOUNDATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVICE_MANAGEMENT_WAP_SECURITY_POLICIES(value: windowsDotpermissionDotdeviceManagementWapSecurityPolicies): Self = StObject.set(x, "DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES", value.asInstanceOf[js.Any])
+      inline def setDEVICE_MANAGEMENT_WAP_SECURITY_POLICIES(value: windowsDotpermissionDotdeviceManagementWapSecurityPolicies): Self = StObject.set(x, "DEVICE_MANAGEMENT_WAP_SECURITY_POLICIES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVICE_PORTAL_PROVIDER(value: windowsDotpermissionDotdevicePortalProvider): Self = StObject.set(x, "DEVICE_PORTAL_PROVIDER", value.asInstanceOf[js.Any])
+      inline def setDEVICE_PORTAL_PROVIDER(value: windowsDotpermissionDotdevicePortalProvider): Self = StObject.set(x, "DEVICE_PORTAL_PROVIDER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVICE_UNLOCK(value: windowsDotpermissionDotdeviceUnlock): Self = StObject.set(x, "DEVICE_UNLOCK", value.asInstanceOf[js.Any])
+      inline def setDEVICE_UNLOCK(value: windowsDotpermissionDotdeviceUnlock): Self = StObject.set(x, "DEVICE_UNLOCK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOCUMENTS_LIBRARY(value: windowsDotpermissionDotdocumentsLibrary): Self = StObject.set(x, "DOCUMENTS_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setDOCUMENTS_LIBRARY(value: windowsDotpermissionDotdocumentsLibrary): Self = StObject.set(x, "DOCUMENTS_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUAL_SIM_TILES(value: windowsDotpermissionDotdualSimTiles): Self = StObject.set(x, "DUAL_SIM_TILES", value.asInstanceOf[js.Any])
+      inline def setDUAL_SIM_TILES(value: windowsDotpermissionDotdualSimTiles): Self = StObject.set(x, "DUAL_SIM_TILES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMAIL(value: windowsDotpermissionDotemail): Self = StObject.set(x, "EMAIL", value.asInstanceOf[js.Any])
+      inline def setEMAIL(value: windowsDotpermissionDotemail): Self = StObject.set(x, "EMAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMAIL_SYSTEM(value: windowsDotpermissionDotemailSystem): Self = StObject.set(x, "EMAIL_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setEMAIL_SYSTEM(value: windowsDotpermissionDotemailSystem): Self = StObject.set(x, "EMAIL_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENTERPRISE_AUTHENTICATION(value: windowsDotpermissionDotenterpriseAuthentication): Self = StObject.set(x, "ENTERPRISE_AUTHENTICATION", value.asInstanceOf[js.Any])
+      inline def setENTERPRISE_AUTHENTICATION(value: windowsDotpermissionDotenterpriseAuthentication): Self = StObject.set(x, "ENTERPRISE_AUTHENTICATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENTERPRISE_CLOUD_S_S_O(value: windowsDotpermissionDotenterpriseCloudSSO): Self = StObject.set(x, "ENTERPRISE_CLOUD_S_S_O", value.asInstanceOf[js.Any])
+      inline def setENTERPRISE_CLOUD_S_S_O(value: windowsDotpermissionDotenterpriseCloudSSO): Self = StObject.set(x, "ENTERPRISE_CLOUD_S_S_O", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENTERPRISE_DATA_POLICY(value: windowsDotpermissionDotenterpriseDataPolicy): Self = StObject.set(x, "ENTERPRISE_DATA_POLICY", value.asInstanceOf[js.Any])
+      inline def setENTERPRISE_DATA_POLICY(value: windowsDotpermissionDotenterpriseDataPolicy): Self = StObject.set(x, "ENTERPRISE_DATA_POLICY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENTERPRISE_DEVICE_LOCKDOWN(value: windowsDotpermissionDotenterpriseDeviceLockdown): Self = StObject.set(x, "ENTERPRISE_DEVICE_LOCKDOWN", value.asInstanceOf[js.Any])
+      inline def setENTERPRISE_DEVICE_LOCKDOWN(value: windowsDotpermissionDotenterpriseDeviceLockdown): Self = StObject.set(x, "ENTERPRISE_DEVICE_LOCKDOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXPANDED_RESOURCES(value: windowsDotpermissionDotexpandedResources): Self = StObject.set(x, "EXPANDED_RESOURCES", value.asInstanceOf[js.Any])
+      inline def setEXPANDED_RESOURCES(value: windowsDotpermissionDotexpandedResources): Self = StObject.set(x, "EXPANDED_RESOURCES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTENDED_BACKGROUND_TASK_TIME(value: windowsDotpermissionDotextendedBackgroundTaskTime): Self = StObject.set(x, "EXTENDED_BACKGROUND_TASK_TIME", value.asInstanceOf[js.Any])
+      inline def setEXTENDED_BACKGROUND_TASK_TIME(value: windowsDotpermissionDotextendedBackgroundTaskTime): Self = StObject.set(x, "EXTENDED_BACKGROUND_TASK_TIME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTENDED_EXECUTION_BACKGROUND_AUDIO(value: windowsDotpermissionDotextendedExecutionBackgroundAudio): Self = StObject.set(x, "EXTENDED_EXECUTION_BACKGROUND_AUDIO", value.asInstanceOf[js.Any])
+      inline def setEXTENDED_EXECUTION_BACKGROUND_AUDIO(value: windowsDotpermissionDotextendedExecutionBackgroundAudio): Self = StObject.set(x, "EXTENDED_EXECUTION_BACKGROUND_AUDIO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTENDED_EXECUTION_CRITICAL(value: windowsDotpermissionDotextendedExecutionCritical): Self = StObject.set(x, "EXTENDED_EXECUTION_CRITICAL", value.asInstanceOf[js.Any])
+      inline def setEXTENDED_EXECUTION_CRITICAL(value: windowsDotpermissionDotextendedExecutionCritical): Self = StObject.set(x, "EXTENDED_EXECUTION_CRITICAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTENDED_EXECUTION_UNCONSTRAINED(value: windowsDotpermissionDotextendedExecutionUnconstrained): Self = StObject.set(x, "EXTENDED_EXECUTION_UNCONSTRAINED", value.asInstanceOf[js.Any])
+      inline def setEXTENDED_EXECUTION_UNCONSTRAINED(value: windowsDotpermissionDotextendedExecutionUnconstrained): Self = StObject.set(x, "EXTENDED_EXECUTION_UNCONSTRAINED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIRST_SIGN_IN_SETTINGS(value: windowsDotpermissionDotfirstSignInSettings): Self = StObject.set(x, "FIRST_SIGN_IN_SETTINGS", value.asInstanceOf[js.Any])
+      inline def setFIRST_SIGN_IN_SETTINGS(value: windowsDotpermissionDotfirstSignInSettings): Self = StObject.set(x, "FIRST_SIGN_IN_SETTINGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGAME_BAR_SERVICES(value: windowsDotpermissionDotgameBarServices): Self = StObject.set(x, "GAME_BAR_SERVICES", value.asInstanceOf[js.Any])
+      inline def setGAME_BAR_SERVICES(value: windowsDotpermissionDotgameBarServices): Self = StObject.set(x, "GAME_BAR_SERVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGAME_LIST(value: windowsDotpermissionDotgameList): Self = StObject.set(x, "GAME_LIST", value.asInstanceOf[js.Any])
+      inline def setGAME_LIST(value: windowsDotpermissionDotgameList): Self = StObject.set(x, "GAME_LIST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGAME_MONITOR(value: windowsDotpermissionDotgameMonitor): Self = StObject.set(x, "GAME_MONITOR", value.asInstanceOf[js.Any])
+      inline def setGAME_MONITOR(value: windowsDotpermissionDotgameMonitor): Self = StObject.set(x, "GAME_MONITOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGAZE_INPUT(value: windowsDotpermissionDotgazeInput): Self = StObject.set(x, "GAZE_INPUT", value.asInstanceOf[js.Any])
+      inline def setGAZE_INPUT(value: windowsDotpermissionDotgazeInput): Self = StObject.set(x, "GAZE_INPUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGLOBAL_MEDIA_CONTROL(value: windowsDotpermissionDotglobalMediaControl): Self = StObject.set(x, "GLOBAL_MEDIA_CONTROL", value.asInstanceOf[js.Any])
+      inline def setGLOBAL_MEDIA_CONTROL(value: windowsDotpermissionDotglobalMediaControl): Self = StObject.set(x, "GLOBAL_MEDIA_CONTROL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHUMANINTERFACEDEVICE(value: windowsDotpermissionDothumaninterfacedevice): Self = StObject.set(x, "HUMANINTERFACEDEVICE", value.asInstanceOf[js.Any])
+      inline def setHUMANINTERFACEDEVICE(value: windowsDotpermissionDothumaninterfacedevice): Self = StObject.set(x, "HUMANINTERFACEDEVICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINPUT_FOREGROUND_OBSERVATION(value: windowsDotpermissionDotinputForegroundObservation): Self = StObject.set(x, "INPUT_FOREGROUND_OBSERVATION", value.asInstanceOf[js.Any])
+      inline def setINPUT_FOREGROUND_OBSERVATION(value: windowsDotpermissionDotinputForegroundObservation): Self = StObject.set(x, "INPUT_FOREGROUND_OBSERVATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINPUT_INJECTION_BROKERED(value: windowsDotpermissionDotinputInjectionBrokered): Self = StObject.set(x, "INPUT_INJECTION_BROKERED", value.asInstanceOf[js.Any])
+      inline def setINPUT_INJECTION_BROKERED(value: windowsDotpermissionDotinputInjectionBrokered): Self = StObject.set(x, "INPUT_INJECTION_BROKERED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINPUT_OBSERVATION(value: windowsDotpermissionDotinputObservation): Self = StObject.set(x, "INPUT_OBSERVATION", value.asInstanceOf[js.Any])
+      inline def setINPUT_OBSERVATION(value: windowsDotpermissionDotinputObservation): Self = StObject.set(x, "INPUT_OBSERVATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINPUT_SUPPRESSION(value: windowsDotpermissionDotinputSuppression): Self = StObject.set(x, "INPUT_SUPPRESSION", value.asInstanceOf[js.Any])
+      inline def setINPUT_SUPPRESSION(value: windowsDotpermissionDotinputSuppression): Self = StObject.set(x, "INPUT_SUPPRESSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTERNET_CLIENT(value: windowsDotpermissionDotinternetClient): Self = StObject.set(x, "INTERNET_CLIENT", value.asInstanceOf[js.Any])
+      inline def setINTERNET_CLIENT(value: windowsDotpermissionDotinternetClient): Self = StObject.set(x, "INTERNET_CLIENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTERNET_CLIENT_SERVER(value: windowsDotpermissionDotinternetClientServer): Self = StObject.set(x, "INTERNET_CLIENT_SERVER", value.asInstanceOf[js.Any])
+      inline def setINTERNET_CLIENT_SERVER(value: windowsDotpermissionDotinternetClientServer): Self = StObject.set(x, "INTERNET_CLIENT_SERVER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTEROP_SERVICES(value: windowsDotpermissionDotinteropServices): Self = StObject.set(x, "INTEROP_SERVICES", value.asInstanceOf[js.Any])
+      inline def setINTEROP_SERVICES(value: windowsDotpermissionDotinteropServices): Self = StObject.set(x, "INTEROP_SERVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOT(value: windowsDotpermissionDotiot): Self = StObject.set(x, "IOT", value.asInstanceOf[js.Any])
+      inline def setIOT(value: windowsDotpermissionDotiot): Self = StObject.set(x, "IOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCAL_SYSTEM_SERVICES(value: windowsDotpermissionDotlocalSystemServices): Self = StObject.set(x, "LOCAL_SYSTEM_SERVICES", value.asInstanceOf[js.Any])
+      inline def setLOCAL_SYSTEM_SERVICES(value: windowsDotpermissionDotlocalSystemServices): Self = StObject.set(x, "LOCAL_SYSTEM_SERVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION(value: windowsDotpermissionDotlocation): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
+      inline def setLOCATION(value: windowsDotpermissionDotlocation): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION_HISTORY(value: windowsDotpermissionDotlocationHistory): Self = StObject.set(x, "LOCATION_HISTORY", value.asInstanceOf[js.Any])
+      inline def setLOCATION_HISTORY(value: windowsDotpermissionDotlocationHistory): Self = StObject.set(x, "LOCATION_HISTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION_SYSTEM(value: windowsDotpermissionDotlocationSystem): Self = StObject.set(x, "LOCATION_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setLOCATION_SYSTEM(value: windowsDotpermissionDotlocationSystem): Self = StObject.set(x, "LOCATION_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOW_LEVEL(value: windowsDotpermissionDotlowLevel): Self = StObject.set(x, "LOW_LEVEL", value.asInstanceOf[js.Any])
+      inline def setLOW_LEVEL(value: windowsDotpermissionDotlowLevel): Self = StObject.set(x, "LOW_LEVEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOW_LEVEL_DEVICES(value: windowsDotpermissionDotlowLevelDevices): Self = StObject.set(x, "LOW_LEVEL_DEVICES", value.asInstanceOf[js.Any])
+      inline def setLOW_LEVEL_DEVICES(value: windowsDotpermissionDotlowLevelDevices): Self = StObject.set(x, "LOW_LEVEL_DEVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMICROPHONE(value: windowsDotpermissionDotmicrophone): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
+      inline def setMICROPHONE(value: windowsDotpermissionDotmicrophone): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOBILE(value: windowsDotpermissionDotmobile): Self = StObject.set(x, "MOBILE", value.asInstanceOf[js.Any])
+      inline def setMOBILE(value: windowsDotpermissionDotmobile): Self = StObject.set(x, "MOBILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODIFIABLE_APP(value: windowsDotpermissionDotmodifiableApp): Self = StObject.set(x, "MODIFIABLE_APP", value.asInstanceOf[js.Any])
+      inline def setMODIFIABLE_APP(value: windowsDotpermissionDotmodifiableApp): Self = StObject.set(x, "MODIFIABLE_APP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMUSIC_LIBRARY(value: windowsDotpermissionDotmusicLibrary): Self = StObject.set(x, "MUSIC_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setMUSIC_LIBRARY(value: windowsDotpermissionDotmusicLibrary): Self = StObject.set(x, "MUSIC_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNETWORKING_VPN_PROVIDER(value: windowsDotpermissionDotnetworkingVpnProvider): Self = StObject.set(x, "NETWORKING_VPN_PROVIDER", value.asInstanceOf[js.Any])
+      inline def setNETWORKING_VPN_PROVIDER(value: windowsDotpermissionDotnetworkingVpnProvider): Self = StObject.set(x, "NETWORKING_VPN_PROVIDER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNETWORK_CONNECTION_MANAGER_PROVISIONING(value: windowsDotpermissionDotnetworkConnectionManagerProvisioning): Self = StObject.set(x, "NETWORK_CONNECTION_MANAGER_PROVISIONING", value.asInstanceOf[js.Any])
+      inline def setNETWORK_CONNECTION_MANAGER_PROVISIONING(value: windowsDotpermissionDotnetworkConnectionManagerProvisioning): Self = StObject.set(x, "NETWORK_CONNECTION_MANAGER_PROVISIONING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNETWORK_DATA_PLAN_PROVISIONING(value: windowsDotpermissionDotnetworkDataPlanProvisioning): Self = StObject.set(x, "NETWORK_DATA_PLAN_PROVISIONING", value.asInstanceOf[js.Any])
+      inline def setNETWORK_DATA_PLAN_PROVISIONING(value: windowsDotpermissionDotnetworkDataPlanProvisioning): Self = StObject.set(x, "NETWORK_DATA_PLAN_PROVISIONING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNETWORK_DATA_USAGE_MANAGEMENT(value: windowsDotpermissionDotnetworkDataUsageManagement): Self = StObject.set(x, "NETWORK_DATA_USAGE_MANAGEMENT", value.asInstanceOf[js.Any])
+      inline def setNETWORK_DATA_USAGE_MANAGEMENT(value: windowsDotpermissionDotnetworkDataUsageManagement): Self = StObject.set(x, "NETWORK_DATA_USAGE_MANAGEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOEM_DEPLOYMENT(value: windowsDotpermissionDotoemDeployment): Self = StObject.set(x, "OEM_DEPLOYMENT", value.asInstanceOf[js.Any])
+      inline def setOEM_DEPLOYMENT(value: windowsDotpermissionDotoemDeployment): Self = StObject.set(x, "OEM_DEPLOYMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOEM_PUBLIC_DIRECTORY(value: windowsDotpermissionDotoemPublicDirectory): Self = StObject.set(x, "OEM_PUBLIC_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setOEM_PUBLIC_DIRECTORY(value: windowsDotpermissionDotoemPublicDirectory): Self = StObject.set(x, "OEM_PUBLIC_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setONE_PROCESS_VOIP(value: windowsDotpermissionDotoneProcessVoIP): Self = StObject.set(x, "ONE_PROCESS_VOIP", value.asInstanceOf[js.Any])
+      inline def setONE_PROCESS_VOIP(value: windowsDotpermissionDotoneProcessVoIP): Self = StObject.set(x, "ONE_PROCESS_VOIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPTICAL(value: windowsDotpermissionDotoptical): Self = StObject.set(x, "OPTICAL", value.asInstanceOf[js.Any])
+      inline def setOPTICAL(value: windowsDotpermissionDotoptical): Self = StObject.set(x, "OPTICAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPACKAGED_SERVICES(value: windowsDotpermissionDotpackagedServices): Self = StObject.set(x, "PACKAGED_SERVICES", value.asInstanceOf[js.Any])
+      inline def setPACKAGED_SERVICES(value: windowsDotpermissionDotpackagedServices): Self = StObject.set(x, "PACKAGED_SERVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPACKAGES_SERVICES(value: windowsDotpermissionDotpackagesServices): Self = StObject.set(x, "PACKAGES_SERVICES", value.asInstanceOf[js.Any])
+      inline def setPACKAGES_SERVICES(value: windowsDotpermissionDotpackagesServices): Self = StObject.set(x, "PACKAGES_SERVICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPACKAGE_MANAGEMENT(value: windowsDotpermissionDotpackageManagement): Self = StObject.set(x, "PACKAGE_MANAGEMENT", value.asInstanceOf[js.Any])
+      inline def setPACKAGE_MANAGEMENT(value: windowsDotpermissionDotpackageManagement): Self = StObject.set(x, "PACKAGE_MANAGEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPACKAGE_POLICY_SYSTEM(value: windowsDotpermissionDotpackagePolicySystem): Self = StObject.set(x, "PACKAGE_POLICY_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setPACKAGE_POLICY_SYSTEM(value: windowsDotpermissionDotpackagePolicySystem): Self = StObject.set(x, "PACKAGE_POLICY_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPACKAGE_QUERY(value: windowsDotpermissionDotpackageQuery): Self = StObject.set(x, "PACKAGE_QUERY", value.asInstanceOf[js.Any])
+      inline def setPACKAGE_QUERY(value: windowsDotpermissionDotpackageQuery): Self = StObject.set(x, "PACKAGE_QUERY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM(value: windowsDotpermissionDotpackageWriteRedirectionCompatibilityShim): Self = StObject.set(x, "PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM", value.asInstanceOf[js.Any])
+      inline def setPACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM(value: windowsDotpermissionDotpackageWriteRedirectionCompatibilityShim): Self = StObject.set(x, "PACKAGE_WRITE_REDIRECTION_COMPATIBILITY_SHIM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHONE_CALL(value: windowsDotpermissionDotphoneCall): Self = StObject.set(x, "PHONE_CALL", value.asInstanceOf[js.Any])
+      inline def setPHONE_CALL(value: windowsDotpermissionDotphoneCall): Self = StObject.set(x, "PHONE_CALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHONE_CALL_HISTORY(value: windowsDotpermissionDotphoneCallHistory): Self = StObject.set(x, "PHONE_CALL_HISTORY", value.asInstanceOf[js.Any])
+      inline def setPHONE_CALL_HISTORY(value: windowsDotpermissionDotphoneCallHistory): Self = StObject.set(x, "PHONE_CALL_HISTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHONE_CALL_HISTORY_SYSTEM(value: windowsDotpermissionDotphoneCallHistorySystem): Self = StObject.set(x, "PHONE_CALL_HISTORY_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setPHONE_CALL_HISTORY_SYSTEM(value: windowsDotpermissionDotphoneCallHistorySystem): Self = StObject.set(x, "PHONE_CALL_HISTORY_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHONE_LINE_TRANSPORT_MANAGEMENT(value: windowsDotpermissionDotphoneLineTransportManagement): Self = StObject.set(x, "PHONE_LINE_TRANSPORT_MANAGEMENT", value.asInstanceOf[js.Any])
+      inline def setPHONE_LINE_TRANSPORT_MANAGEMENT(value: windowsDotpermissionDotphoneLineTransportManagement): Self = StObject.set(x, "PHONE_LINE_TRANSPORT_MANAGEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPICTURES_LIBRARY(value: windowsDotpermissionDotpicturesLibrary): Self = StObject.set(x, "PICTURES_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setPICTURES_LIBRARY(value: windowsDotpermissionDotpicturesLibrary): Self = StObject.set(x, "PICTURES_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOINT_OF_SERVICE(value: windowsDotpermissionDotpointOfService): Self = StObject.set(x, "POINT_OF_SERVICE", value.asInstanceOf[js.Any])
+      inline def setPOINT_OF_SERVICE(value: windowsDotpermissionDotpointOfService): Self = StObject.set(x, "POINT_OF_SERVICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPREVIEW_INK_WORKSPACE(value: windowsDotpermissionDotpreviewInkWorkspace): Self = StObject.set(x, "PREVIEW_INK_WORKSPACE", value.asInstanceOf[js.Any])
+      inline def setPREVIEW_INK_WORKSPACE(value: windowsDotpermissionDotpreviewInkWorkspace): Self = StObject.set(x, "PREVIEW_INK_WORKSPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPREVIEW_PEN_WORKSPACE(value: windowsDotpermissionDotpreviewPenWorkspace): Self = StObject.set(x, "PREVIEW_PEN_WORKSPACE", value.asInstanceOf[js.Any])
+      inline def setPREVIEW_PEN_WORKSPACE(value: windowsDotpermissionDotpreviewPenWorkspace): Self = StObject.set(x, "PREVIEW_PEN_WORKSPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPREVIEW_STORE(value: windowsDotpermissionDotpreviewStore): Self = StObject.set(x, "PREVIEW_STORE", value.asInstanceOf[js.Any])
+      inline def setPREVIEW_STORE(value: windowsDotpermissionDotpreviewStore): Self = StObject.set(x, "PREVIEW_STORE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPREVIEW_UI_COMPOSITION(value: windowsDotpermissionDotpreviewUiComposition): Self = StObject.set(x, "PREVIEW_UI_COMPOSITION", value.asInstanceOf[js.Any])
+      inline def setPREVIEW_UI_COMPOSITION(value: windowsDotpermissionDotpreviewUiComposition): Self = StObject.set(x, "PREVIEW_UI_COMPOSITION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRIVATE_NETWORK_CLIENT_SERVER(value: windowsDotpermissionDotprivateNetworkClientServer): Self = StObject.set(x, "PRIVATE_NETWORK_CLIENT_SERVER", value.asInstanceOf[js.Any])
+      inline def setPRIVATE_NETWORK_CLIENT_SERVER(value: windowsDotpermissionDotprivateNetworkClientServer): Self = StObject.set(x, "PRIVATE_NETWORK_CLIENT_SERVER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROTECTED_APP(value: windowsDotpermissionDotprotectedApp): Self = StObject.set(x, "PROTECTED_APP", value.asInstanceOf[js.Any])
+      inline def setPROTECTED_APP(value: windowsDotpermissionDotprotectedApp): Self = StObject.set(x, "PROTECTED_APP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROXIMITY(value: windowsDotpermissionDotproximity): Self = StObject.set(x, "PROXIMITY", value.asInstanceOf[js.Any])
+      inline def setPROXIMITY(value: windowsDotpermissionDotproximity): Self = StObject.set(x, "PROXIMITY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRADIOS(value: windowsDotpermissionDotradios): Self = StObject.set(x, "RADIOS", value.asInstanceOf[js.Any])
+      inline def setRADIOS(value: windowsDotpermissionDotradios): Self = StObject.set(x, "RADIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECORDED_CALLS_FOLDER(value: windowsDotpermissionDotrecordedCallsFolder): Self = StObject.set(x, "RECORDED_CALLS_FOLDER", value.asInstanceOf[js.Any])
+      inline def setRECORDED_CALLS_FOLDER(value: windowsDotpermissionDotrecordedCallsFolder): Self = StObject.set(x, "RECORDED_CALLS_FOLDER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMOTE_PASSPORT_AUTHENTICATION(value: windowsDotpermissionDotremotePassportAuthentication): Self = StObject.set(x, "REMOTE_PASSPORT_AUTHENTICATION", value.asInstanceOf[js.Any])
+      inline def setREMOTE_PASSPORT_AUTHENTICATION(value: windowsDotpermissionDotremotePassportAuthentication): Self = StObject.set(x, "REMOTE_PASSPORT_AUTHENTICATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMOTE_SYSTEM(value: windowsDotpermissionDotremoteSystem): Self = StObject.set(x, "REMOTE_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setREMOTE_SYSTEM(value: windowsDotpermissionDotremoteSystem): Self = StObject.set(x, "REMOTE_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMOVABLE_STORAGE(value: windowsDotpermissionDotremovableStorage): Self = StObject.set(x, "REMOVABLE_STORAGE", value.asInstanceOf[js.Any])
+      inline def setREMOVABLE_STORAGE(value: windowsDotpermissionDotremovableStorage): Self = StObject.set(x, "REMOVABLE_STORAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESCAP(value: windowsDotpermissionDotrescap): Self = StObject.set(x, "RESCAP", value.asInstanceOf[js.Any])
+      inline def setRESCAP(value: windowsDotpermissionDotrescap): Self = StObject.set(x, "RESCAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUN_FULL_TRUST(value: windowsDotpermissionDotrunFullTrust): Self = StObject.set(x, "RUN_FULL_TRUST", value.asInstanceOf[js.Any])
+      inline def setRUN_FULL_TRUST(value: windowsDotpermissionDotrunFullTrust): Self = StObject.set(x, "RUN_FULL_TRUST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCREEN_DUPLICATION(value: windowsDotpermissionDotscreenDuplication): Self = StObject.set(x, "SCREEN_DUPLICATION", value.asInstanceOf[js.Any])
+      inline def setSCREEN_DUPLICATION(value: windowsDotpermissionDotscreenDuplication): Self = StObject.set(x, "SCREEN_DUPLICATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSECONDARY_AUTHENTICATION_FACTOR(value: windowsDotpermissionDotsecondaryAuthenticationFactor): Self = StObject.set(x, "SECONDARY_AUTHENTICATION_FACTOR", value.asInstanceOf[js.Any])
+      inline def setSECONDARY_AUTHENTICATION_FACTOR(value: windowsDotpermissionDotsecondaryAuthenticationFactor): Self = StObject.set(x, "SECONDARY_AUTHENTICATION_FACTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSECURE_ASSESSMENT(value: windowsDotpermissionDotsecureAssessment): Self = StObject.set(x, "SECURE_ASSESSMENT", value.asInstanceOf[js.Any])
+      inline def setSECURE_ASSESSMENT(value: windowsDotpermissionDotsecureAssessment): Self = StObject.set(x, "SECURE_ASSESSMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSERIALCOMMUNICATION(value: windowsDotpermissionDotserialcommunication): Self = StObject.set(x, "SERIALCOMMUNICATION", value.asInstanceOf[js.Any])
+      inline def setSERIALCOMMUNICATION(value: windowsDotpermissionDotserialcommunication): Self = StObject.set(x, "SERIALCOMMUNICATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHARED_USER_CERTIFICATES(value: windowsDotpermissionDotsharedUserCertificates): Self = StObject.set(x, "SHARED_USER_CERTIFICATES", value.asInstanceOf[js.Any])
+      inline def setSHARED_USER_CERTIFICATES(value: windowsDotpermissionDotsharedUserCertificates): Self = StObject.set(x, "SHARED_USER_CERTIFICATES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSLAPI_QUERY_LICENSE_VALUE(value: windowsDotpermissionDotslapiQueryLicenseValue): Self = StObject.set(x, "SLAPI_QUERY_LICENSE_VALUE", value.asInstanceOf[js.Any])
+      inline def setSLAPI_QUERY_LICENSE_VALUE(value: windowsDotpermissionDotslapiQueryLicenseValue): Self = StObject.set(x, "SLAPI_QUERY_LICENSE_VALUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMBIOS(value: windowsDotpermissionDotsmbios): Self = StObject.set(x, "SMBIOS", value.asInstanceOf[js.Any])
+      inline def setSMBIOS(value: windowsDotpermissionDotsmbios): Self = StObject.set(x, "SMBIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMS_SEND(value: windowsDotpermissionDotsmsSend): Self = StObject.set(x, "SMS_SEND", value.asInstanceOf[js.Any])
+      inline def setSMS_SEND(value: windowsDotpermissionDotsmsSend): Self = StObject.set(x, "SMS_SEND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPATIAL_PERCEPTION(value: windowsDotpermissionDotspatialPerception): Self = StObject.set(x, "SPATIAL_PERCEPTION", value.asInstanceOf[js.Any])
+      inline def setSPATIAL_PERCEPTION(value: windowsDotpermissionDotspatialPerception): Self = StObject.set(x, "SPATIAL_PERCEPTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTART_SCREEN_MANAGEMENT(value: windowsDotpermissionDotstartScreenManagement): Self = StObject.set(x, "START_SCREEN_MANAGEMENT", value.asInstanceOf[js.Any])
+      inline def setSTART_SCREEN_MANAGEMENT(value: windowsDotpermissionDotstartScreenManagement): Self = StObject.set(x, "START_SCREEN_MANAGEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTORE_LICENSE_MANAGEMENT(value: windowsDotpermissionDotstoreLicenseManagement): Self = StObject.set(x, "STORE_LICENSE_MANAGEMENT", value.asInstanceOf[js.Any])
+      inline def setSTORE_LICENSE_MANAGEMENT(value: windowsDotpermissionDotstoreLicenseManagement): Self = StObject.set(x, "STORE_LICENSE_MANAGEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSYSTEM_MANAGEMENT(value: windowsDotpermissionDotsystemManagement): Self = StObject.set(x, "SYSTEM_MANAGEMENT", value.asInstanceOf[js.Any])
+      inline def setSYSTEM_MANAGEMENT(value: windowsDotpermissionDotsystemManagement): Self = StObject.set(x, "SYSTEM_MANAGEMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTARGETED_CONTENT(value: windowsDotpermissionDottargetedContent): Self = StObject.set(x, "TARGETED_CONTENT", value.asInstanceOf[js.Any])
+      inline def setTARGETED_CONTENT(value: windowsDotpermissionDottargetedContent): Self = StObject.set(x, "TARGETED_CONTENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEAM_EDITION_DEVICE_CREDENTIAL(value: windowsDotpermissionDotteamEditionDeviceCredential): Self = StObject.set(x, "TEAM_EDITION_DEVICE_CREDENTIAL", value.asInstanceOf[js.Any])
+      inline def setTEAM_EDITION_DEVICE_CREDENTIAL(value: windowsDotpermissionDotteamEditionDeviceCredential): Self = StObject.set(x, "TEAM_EDITION_DEVICE_CREDENTIAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEAM_EDITION_EXPERIENCE(value: windowsDotpermissionDotteamEditionExperience): Self = StObject.set(x, "TEAM_EDITION_EXPERIENCE", value.asInstanceOf[js.Any])
+      inline def setTEAM_EDITION_EXPERIENCE(value: windowsDotpermissionDotteamEditionExperience): Self = StObject.set(x, "TEAM_EDITION_EXPERIENCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEAM_EDITION_VIEW(value: windowsDotpermissionDotteamEditionView): Self = StObject.set(x, "TEAM_EDITION_VIEW", value.asInstanceOf[js.Any])
+      inline def setTEAM_EDITION_VIEW(value: windowsDotpermissionDotteamEditionView): Self = StObject.set(x, "TEAM_EDITION_VIEW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUAP(value: windowsDotpermissionDotuap): Self = StObject.set(x, "UAP", value.asInstanceOf[js.Any])
+      inline def setUAP(value: windowsDotpermissionDotuap): Self = StObject.set(x, "UAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUI_AUTOMATION(value: windowsDotpermissionDotuiAutomation): Self = StObject.set(x, "UI_AUTOMATION", value.asInstanceOf[js.Any])
+      inline def setUI_AUTOMATION(value: windowsDotpermissionDotuiAutomation): Self = StObject.set(x, "UI_AUTOMATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNVIRTUALIZED_RESOURCES(value: windowsDotpermissionDotunvirtualizedResources): Self = StObject.set(x, "UNVIRTUALIZED_RESOURCES", value.asInstanceOf[js.Any])
+      inline def setUNVIRTUALIZED_RESOURCES(value: windowsDotpermissionDotunvirtualizedResources): Self = StObject.set(x, "UNVIRTUALIZED_RESOURCES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSB(value: windowsDotpermissionDotusb): Self = StObject.set(x, "USB", value.asInstanceOf[js.Any])
+      inline def setUSB(value: windowsDotpermissionDotusb): Self = StObject.set(x, "USB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_ACCOUNT_INFORMATION(value: windowsDotpermissionDotuserAccountInformation): Self = StObject.set(x, "USER_ACCOUNT_INFORMATION", value.asInstanceOf[js.Any])
+      inline def setUSER_ACCOUNT_INFORMATION(value: windowsDotpermissionDotuserAccountInformation): Self = StObject.set(x, "USER_ACCOUNT_INFORMATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_DATA_ACCOUNTS_PROVIDER(value: windowsDotpermissionDotuserDataAccountsProvider): Self = StObject.set(x, "USER_DATA_ACCOUNTS_PROVIDER", value.asInstanceOf[js.Any])
+      inline def setUSER_DATA_ACCOUNTS_PROVIDER(value: windowsDotpermissionDotuserDataAccountsProvider): Self = StObject.set(x, "USER_DATA_ACCOUNTS_PROVIDER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_DATA_SYSTEM(value: windowsDotpermissionDotuserDataSystem): Self = StObject.set(x, "USER_DATA_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setUSER_DATA_SYSTEM(value: windowsDotpermissionDotuserDataSystem): Self = StObject.set(x, "USER_DATA_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_PRINCIPAL_NAME(value: windowsDotpermissionDotuserPrincipalName): Self = StObject.set(x, "USER_PRINCIPAL_NAME", value.asInstanceOf[js.Any])
+      inline def setUSER_PRINCIPAL_NAME(value: windowsDotpermissionDotuserPrincipalName): Self = StObject.set(x, "USER_PRINCIPAL_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_SYSTEM_ID(value: windowsDotpermissionDotuserSystemId): Self = StObject.set(x, "USER_SYSTEM_ID", value.asInstanceOf[js.Any])
+      inline def setUSER_SYSTEM_ID(value: windowsDotpermissionDotuserSystemId): Self = StObject.set(x, "USER_SYSTEM_ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVIDEOS_LIBRARY(value: windowsDotpermissionDotvideosLibrary): Self = StObject.set(x, "VIDEOS_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setVIDEOS_LIBRARY(value: windowsDotpermissionDotvideosLibrary): Self = StObject.set(x, "VIDEOS_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVOIP_CALL(value: windowsDotpermissionDotvoipCall): Self = StObject.set(x, "VOIP_CALL", value.asInstanceOf[js.Any])
+      inline def setVOIP_CALL(value: windowsDotpermissionDotvoipCall): Self = StObject.set(x, "VOIP_CALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWALLET_SYSTEM(value: windowsDotpermissionDotwalletSystem): Self = StObject.set(x, "WALLET_SYSTEM", value.asInstanceOf[js.Any])
+      inline def setWALLET_SYSTEM(value: windowsDotpermissionDotwalletSystem): Self = StObject.set(x, "WALLET_SYSTEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWEBCAM(value: windowsDotpermissionDotwebcam): Self = StObject.set(x, "WEBCAM", value.asInstanceOf[js.Any])
+      inline def setWEBCAM(value: windowsDotpermissionDotwebcam): Self = StObject.set(x, "WEBCAM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWIFI_CONTROL(value: windowsDotpermissionDotwiFiControl): Self = StObject.set(x, "WIFI_CONTROL", value.asInstanceOf[js.Any])
+      inline def setWIFI_CONTROL(value: windowsDotpermissionDotwiFiControl): Self = StObject.set(x, "WIFI_CONTROL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXBOX_ACCESSORY_MANAGEMENT(value: windowsDotpermissionDotxboxAccessoryManagement): Self = StObject.set(x, "XBOX_ACCESSORY_MANAGEMENT", value.asInstanceOf[js.Any])
+      inline def setXBOX_ACCESSORY_MANAGEMENT(value: windowsDotpermissionDotxboxAccessoryManagement): Self = StObject.set(x, "XBOX_ACCESSORY_MANAGEMENT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1097,8 +922,7 @@ object anon {
   }
   object ReadonlyreadonlyANDROIDRe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ANDROID: ReadonlyreadonlyACCEPTHAN,
       IOS: ReadonlyreadonlyAPPTRACKI,
       WINDOWS: ReadonlyreadonlyACCESSORY
@@ -1107,17 +931,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyANDROIDRe]
     }
     
-    @scala.inline
-    implicit class ReadonlyreadonlyANDROIDReMutableBuilder[Self <: ReadonlyreadonlyANDROIDRe] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyreadonlyANDROIDRe](x: Self) {
       
-      @scala.inline
-      def setANDROID(value: ReadonlyreadonlyACCEPTHAN): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
+      inline def setANDROID(value: ReadonlyreadonlyACCEPTHAN): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOS(value: ReadonlyreadonlyAPPTRACKI): Self = StObject.set(x, "IOS", value.asInstanceOf[js.Any])
+      inline def setIOS(value: ReadonlyreadonlyAPPTRACKI): Self = StObject.set(x, "IOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWINDOWS(value: ReadonlyreadonlyACCESSORY): Self = StObject.set(x, "WINDOWS", value.asInstanceOf[js.Any])
+      inline def setWINDOWS(value: ReadonlyreadonlyACCESSORY): Self = StObject.set(x, "WINDOWS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1160,65 +980,46 @@ object anon {
   }
   object ReadonlyreadonlyAPPTRACKI {
     
-    @scala.inline
-    def apply(): ReadonlyreadonlyAPPTRACKI = {
+    inline def apply(): ReadonlyreadonlyAPPTRACKI = {
       val __obj = js.Dynamic.literal(APP_TRACKING_TRANSPARENCY = "ios.permission.APP_TRACKING_TRANSPARENCY", BLUETOOTH_PERIPHERAL = "ios.permission.BLUETOOTH_PERIPHERAL", CALENDARS = "ios.permission.CALENDARS", CAMERA = "ios.permission.CAMERA", CONTACTS = "ios.permission.CONTACTS", FACE_ID = "ios.permission.FACE_ID", LOCATION_ALWAYS = "ios.permission.LOCATION_ALWAYS", LOCATION_WHEN_IN_USE = "ios.permission.LOCATION_WHEN_IN_USE", MEDIA_LIBRARY = "ios.permission.MEDIA_LIBRARY", MICROPHONE = "ios.permission.MICROPHONE", MOTION = "ios.permission.MOTION", PHOTO_LIBRARY = "ios.permission.PHOTO_LIBRARY", PHOTO_LIBRARY_ADD_ONLY = "ios.permission.PHOTO_LIBRARY_ADD_ONLY", REMINDERS = "ios.permission.REMINDERS", SIRI = "ios.permission.SIRI", SPEECH_RECOGNITION = "ios.permission.SPEECH_RECOGNITION", STOREKIT = "ios.permission.STOREKIT")
       __obj.asInstanceOf[ReadonlyreadonlyAPPTRACKI]
     }
     
-    @scala.inline
-    implicit class ReadonlyreadonlyAPPTRACKIMutableBuilder[Self <: ReadonlyreadonlyAPPTRACKI] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyreadonlyAPPTRACKI](x: Self) {
       
-      @scala.inline
-      def setAPP_TRACKING_TRANSPARENCY(value: iosDotpermissionDotAPP_TRACKING_TRANSPARENCY): Self = StObject.set(x, "APP_TRACKING_TRANSPARENCY", value.asInstanceOf[js.Any])
+      inline def setAPP_TRACKING_TRANSPARENCY(value: iosDotpermissionDotAPP_TRACKING_TRANSPARENCY): Self = StObject.set(x, "APP_TRACKING_TRANSPARENCY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLUETOOTH_PERIPHERAL(value: iosDotpermissionDotBLUETOOTH_PERIPHERAL): Self = StObject.set(x, "BLUETOOTH_PERIPHERAL", value.asInstanceOf[js.Any])
+      inline def setBLUETOOTH_PERIPHERAL(value: iosDotpermissionDotBLUETOOTH_PERIPHERAL): Self = StObject.set(x, "BLUETOOTH_PERIPHERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCALENDARS(value: iosDotpermissionDotCALENDARS): Self = StObject.set(x, "CALENDARS", value.asInstanceOf[js.Any])
+      inline def setCALENDARS(value: iosDotpermissionDotCALENDARS): Self = StObject.set(x, "CALENDARS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAMERA(value: iosDotpermissionDotCAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
+      inline def setCAMERA(value: iosDotpermissionDotCAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTACTS(value: iosDotpermissionDotCONTACTS): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
+      inline def setCONTACTS(value: iosDotpermissionDotCONTACTS): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFACE_ID(value: iosDotpermissionDotFACE_ID): Self = StObject.set(x, "FACE_ID", value.asInstanceOf[js.Any])
+      inline def setFACE_ID(value: iosDotpermissionDotFACE_ID): Self = StObject.set(x, "FACE_ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION_ALWAYS(value: iosDotpermissionDotLOCATION_ALWAYS): Self = StObject.set(x, "LOCATION_ALWAYS", value.asInstanceOf[js.Any])
+      inline def setLOCATION_ALWAYS(value: iosDotpermissionDotLOCATION_ALWAYS): Self = StObject.set(x, "LOCATION_ALWAYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION_WHEN_IN_USE(value: iosDotpermissionDotLOCATION_WHEN_IN_USE): Self = StObject.set(x, "LOCATION_WHEN_IN_USE", value.asInstanceOf[js.Any])
+      inline def setLOCATION_WHEN_IN_USE(value: iosDotpermissionDotLOCATION_WHEN_IN_USE): Self = StObject.set(x, "LOCATION_WHEN_IN_USE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEDIA_LIBRARY(value: iosDotpermissionDotMEDIA_LIBRARY): Self = StObject.set(x, "MEDIA_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setMEDIA_LIBRARY(value: iosDotpermissionDotMEDIA_LIBRARY): Self = StObject.set(x, "MEDIA_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMICROPHONE(value: iosDotpermissionDotMICROPHONE): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
+      inline def setMICROPHONE(value: iosDotpermissionDotMICROPHONE): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOTION(value: iosDotpermissionDotMOTION): Self = StObject.set(x, "MOTION", value.asInstanceOf[js.Any])
+      inline def setMOTION(value: iosDotpermissionDotMOTION): Self = StObject.set(x, "MOTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHOTO_LIBRARY(value: iosDotpermissionDotPHOTO_LIBRARY): Self = StObject.set(x, "PHOTO_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setPHOTO_LIBRARY(value: iosDotpermissionDotPHOTO_LIBRARY): Self = StObject.set(x, "PHOTO_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHOTO_LIBRARY_ADD_ONLY(value: iosDotpermissionDotPHOTO_LIBRARY_ADD_ONLY): Self = StObject.set(x, "PHOTO_LIBRARY_ADD_ONLY", value.asInstanceOf[js.Any])
+      inline def setPHOTO_LIBRARY_ADD_ONLY(value: iosDotpermissionDotPHOTO_LIBRARY_ADD_ONLY): Self = StObject.set(x, "PHOTO_LIBRARY_ADD_ONLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMINDERS(value: iosDotpermissionDotREMINDERS): Self = StObject.set(x, "REMINDERS", value.asInstanceOf[js.Any])
+      inline def setREMINDERS(value: iosDotpermissionDotREMINDERS): Self = StObject.set(x, "REMINDERS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSIRI(value: iosDotpermissionDotSIRI): Self = StObject.set(x, "SIRI", value.asInstanceOf[js.Any])
+      inline def setSIRI(value: iosDotpermissionDotSIRI): Self = StObject.set(x, "SIRI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPEECH_RECOGNITION(value: iosDotpermissionDotSPEECH_RECOGNITION): Self = StObject.set(x, "SPEECH_RECOGNITION", value.asInstanceOf[js.Any])
+      inline def setSPEECH_RECOGNITION(value: iosDotpermissionDotSPEECH_RECOGNITION): Self = StObject.set(x, "SPEECH_RECOGNITION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTOREKIT(value: iosDotpermissionDotSTOREKIT): Self = StObject.set(x, "STOREKIT", value.asInstanceOf[js.Any])
+      inline def setSTOREKIT(value: iosDotpermissionDotSTOREKIT): Self = StObject.set(x, "STOREKIT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1237,29 +1038,22 @@ object anon {
   }
   object ReadonlyreadonlyUNAVAILAB {
     
-    @scala.inline
-    def apply(): ReadonlyreadonlyUNAVAILAB = {
+    inline def apply(): ReadonlyreadonlyUNAVAILAB = {
       val __obj = js.Dynamic.literal(BLOCKED = "blocked", DENIED = "denied", GRANTED = "granted", LIMITED = "limited", UNAVAILABLE = "unavailable")
       __obj.asInstanceOf[ReadonlyreadonlyUNAVAILAB]
     }
     
-    @scala.inline
-    implicit class ReadonlyreadonlyUNAVAILABMutableBuilder[Self <: ReadonlyreadonlyUNAVAILAB] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyreadonlyUNAVAILAB](x: Self) {
       
-      @scala.inline
-      def setBLOCKED(value: blocked): Self = StObject.set(x, "BLOCKED", value.asInstanceOf[js.Any])
+      inline def setBLOCKED(value: blocked): Self = StObject.set(x, "BLOCKED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDENIED(value: denied): Self = StObject.set(x, "DENIED", value.asInstanceOf[js.Any])
+      inline def setDENIED(value: denied): Self = StObject.set(x, "DENIED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRANTED(value: granted): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
+      inline def setGRANTED(value: granted): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIMITED(value: limited): Self = StObject.set(x, "LIMITED", value.asInstanceOf[js.Any])
+      inline def setLIMITED(value: limited): Self = StObject.set(x, "LIMITED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNAVAILABLE(value: unavailable): Self = StObject.set(x, "UNAVAILABLE", value.asInstanceOf[js.Any])
+      inline def setUNAVAILABLE(value: unavailable): Self = StObject.set(x, "UNAVAILABLE", value.asInstanceOf[js.Any])
     }
   }
 }

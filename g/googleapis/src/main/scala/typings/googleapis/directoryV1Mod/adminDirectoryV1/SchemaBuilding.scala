@@ -60,64 +60,45 @@ trait SchemaBuilding extends StObject {
 }
 object SchemaBuilding {
   
-  @scala.inline
-  def apply(): SchemaBuilding = {
+  inline def apply(): SchemaBuilding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuilding]
   }
   
-  @scala.inline
-  implicit class SchemaBuildingMutableBuilder[Self <: SchemaBuilding] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuilding](x: Self) {
     
-    @scala.inline
-    def setAddress(value: SchemaBuildingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: SchemaBuildingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
+    inline def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
+    inline def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
     
-    @scala.inline
-    def setBuildingName(value: String): Self = StObject.set(x, "buildingName", value.asInstanceOf[js.Any])
+    inline def setBuildingName(value: String): Self = StObject.set(x, "buildingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildingNameUndefined: Self = StObject.set(x, "buildingName", js.undefined)
+    inline def setBuildingNameUndefined: Self = StObject.set(x, "buildingName", js.undefined)
     
-    @scala.inline
-    def setCoordinates(value: SchemaBuildingCoordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: SchemaBuildingCoordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
+    inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
+    inline def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
     
-    @scala.inline
-    def setFloorNames(value: js.Array[String]): Self = StObject.set(x, "floorNames", value.asInstanceOf[js.Any])
+    inline def setFloorNames(value: js.Array[String]): Self = StObject.set(x, "floorNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorNamesUndefined: Self = StObject.set(x, "floorNames", js.undefined)
+    inline def setFloorNamesUndefined: Self = StObject.set(x, "floorNames", js.undefined)
     
-    @scala.inline
-    def setFloorNamesVarargs(value: String*): Self = StObject.set(x, "floorNames", js.Array(value :_*))
+    inline def setFloorNamesVarargs(value: String*): Self = StObject.set(x, "floorNames", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

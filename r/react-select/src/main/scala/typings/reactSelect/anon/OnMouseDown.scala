@@ -13,16 +13,13 @@ trait OnMouseDown extends StObject {
 }
 object OnMouseDown {
   
-  @scala.inline
-  def apply(onMouseDown: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): OnMouseDown = {
+  inline def apply(onMouseDown: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): OnMouseDown = {
     val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown))
     __obj.asInstanceOf[OnMouseDown]
   }
   
-  @scala.inline
-  implicit class OnMouseDownMutableBuilder[Self <: OnMouseDown] (val x: Self) extends AnyVal {
+  extension [Self <: OnMouseDown](x: Self) {
     
-    @scala.inline
-    def setOnMouseDown(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
   }
 }

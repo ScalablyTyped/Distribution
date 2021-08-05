@@ -9,8 +9,7 @@ trait LaunchActivatedEventArgs
      with ILaunchActivatedEventArgs
 object LaunchActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: String,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

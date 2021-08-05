@@ -10,19 +10,15 @@ trait DropTarget extends StObject {
 }
 object DropTarget {
   
-  @scala.inline
-  def apply(): DropTarget = {
+  inline def apply(): DropTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropTarget]
   }
   
-  @scala.inline
-  implicit class DropTargetMutableBuilder[Self <: DropTarget] (val x: Self) extends AnyVal {
+  extension [Self <: DropTarget](x: Self) {
     
-    @scala.inline
-    def setDropTarget(value: Boolean): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    inline def setDropTarget(value: Boolean): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+    inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
   }
 }

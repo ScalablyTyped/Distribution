@@ -48,61 +48,43 @@ trait GetDASHStreamingSessionURLInput extends StObject {
 }
 object GetDASHStreamingSessionURLInput {
   
-  @scala.inline
-  def apply(): GetDASHStreamingSessionURLInput = {
+  inline def apply(): GetDASHStreamingSessionURLInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDASHStreamingSessionURLInput]
   }
   
-  @scala.inline
-  implicit class GetDASHStreamingSessionURLInputMutableBuilder[Self <: GetDASHStreamingSessionURLInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDASHStreamingSessionURLInput](x: Self) {
     
-    @scala.inline
-    def setDASHFragmentSelector(value: DASHFragmentSelector): Self = StObject.set(x, "DASHFragmentSelector", value.asInstanceOf[js.Any])
+    inline def setDASHFragmentSelector(value: DASHFragmentSelector): Self = StObject.set(x, "DASHFragmentSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDASHFragmentSelectorUndefined: Self = StObject.set(x, "DASHFragmentSelector", js.undefined)
+    inline def setDASHFragmentSelectorUndefined: Self = StObject.set(x, "DASHFragmentSelector", js.undefined)
     
-    @scala.inline
-    def setDisplayFragmentNumber(value: DASHDisplayFragmentNumber): Self = StObject.set(x, "DisplayFragmentNumber", value.asInstanceOf[js.Any])
+    inline def setDisplayFragmentNumber(value: DASHDisplayFragmentNumber): Self = StObject.set(x, "DisplayFragmentNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFragmentNumberUndefined: Self = StObject.set(x, "DisplayFragmentNumber", js.undefined)
+    inline def setDisplayFragmentNumberUndefined: Self = StObject.set(x, "DisplayFragmentNumber", js.undefined)
     
-    @scala.inline
-    def setDisplayFragmentTimestamp(value: DASHDisplayFragmentTimestamp): Self = StObject.set(x, "DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
+    inline def setDisplayFragmentTimestamp(value: DASHDisplayFragmentTimestamp): Self = StObject.set(x, "DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFragmentTimestampUndefined: Self = StObject.set(x, "DisplayFragmentTimestamp", js.undefined)
+    inline def setDisplayFragmentTimestampUndefined: Self = StObject.set(x, "DisplayFragmentTimestamp", js.undefined)
     
-    @scala.inline
-    def setExpires(value: Expires): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Expires): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     
-    @scala.inline
-    def setMaxManifestFragmentResults(value: PageLimit): Self = StObject.set(x, "MaxManifestFragmentResults", value.asInstanceOf[js.Any])
+    inline def setMaxManifestFragmentResults(value: PageLimit): Self = StObject.set(x, "MaxManifestFragmentResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxManifestFragmentResultsUndefined: Self = StObject.set(x, "MaxManifestFragmentResults", js.undefined)
+    inline def setMaxManifestFragmentResultsUndefined: Self = StObject.set(x, "MaxManifestFragmentResults", js.undefined)
     
-    @scala.inline
-    def setPlaybackMode(value: DASHPlaybackMode): Self = StObject.set(x, "PlaybackMode", value.asInstanceOf[js.Any])
+    inline def setPlaybackMode(value: DASHPlaybackMode): Self = StObject.set(x, "PlaybackMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaybackModeUndefined: Self = StObject.set(x, "PlaybackMode", js.undefined)
+    inline def setPlaybackModeUndefined: Self = StObject.set(x, "PlaybackMode", js.undefined)
     
-    @scala.inline
-    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

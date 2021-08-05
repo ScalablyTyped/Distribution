@@ -10,8 +10,7 @@ trait GenerateDataKeyWithoutPlaintextOutput
      with typings.awsSdkClientKmsNode.typesGenerateDataKeyWithoutPlaintextOutputMod.GenerateDataKeyWithoutPlaintextOutput
 object GenerateDataKeyWithoutPlaintextOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GenerateDataKeyWithoutPlaintextOutput = {
+  inline def apply($metadata: ResponseMetadata): GenerateDataKeyWithoutPlaintextOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyWithoutPlaintextOutput]
   }

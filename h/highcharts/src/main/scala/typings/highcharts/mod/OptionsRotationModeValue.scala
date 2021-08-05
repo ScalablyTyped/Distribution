@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsRotationModeValue extends StObject
 object OptionsRotationModeValue {
   
-  @scala.inline
-  def auto: typings.highcharts.highchartsStrings.auto = "auto".asInstanceOf[typings.highcharts.highchartsStrings.auto]
+  inline def auto: typings.highcharts.highchartsStrings.auto = "auto".asInstanceOf[typings.highcharts.highchartsStrings.auto]
   
-  @scala.inline
-  def circular: typings.highcharts.highchartsStrings.circular = "circular".asInstanceOf[typings.highcharts.highchartsStrings.circular]
+  inline def circular: typings.highcharts.highchartsStrings.circular = "circular".asInstanceOf[typings.highcharts.highchartsStrings.circular]
   
-  @scala.inline
-  def parallel: typings.highcharts.highchartsStrings.parallel = "parallel".asInstanceOf[typings.highcharts.highchartsStrings.parallel]
+  inline def parallel: typings.highcharts.highchartsStrings.parallel = "parallel".asInstanceOf[typings.highcharts.highchartsStrings.parallel]
   
-  @scala.inline
-  def perpendicular: typings.highcharts.highchartsStrings.perpendicular = "perpendicular".asInstanceOf[typings.highcharts.highchartsStrings.perpendicular]
+  inline def perpendicular: typings.highcharts.highchartsStrings.perpendicular = "perpendicular".asInstanceOf[typings.highcharts.highchartsStrings.perpendicular]
 }

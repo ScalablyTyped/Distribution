@@ -30,79 +30,55 @@ trait ImageEditorMessagesToolbar extends StObject {
 }
 object ImageEditorMessagesToolbar {
   
-  @scala.inline
-  def apply(): ImageEditorMessagesToolbar = {
+  inline def apply(): ImageEditorMessagesToolbar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageEditorMessagesToolbar]
   }
   
-  @scala.inline
-  implicit class ImageEditorMessagesToolbarMutableBuilder[Self <: ImageEditorMessagesToolbar] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEditorMessagesToolbar](x: Self) {
     
-    @scala.inline
-    def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    @scala.inline
-    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setRedo(value: String): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+    inline def setRedo(value: String): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
+    inline def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
     
-    @scala.inline
-    def setResize(value: String): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: String): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setUndo(value: String): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    inline def setUndo(value: String): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
+    inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
-    @scala.inline
-    def setZoomActualSize(value: String): Self = StObject.set(x, "zoomActualSize", value.asInstanceOf[js.Any])
+    inline def setZoomActualSize(value: String): Self = StObject.set(x, "zoomActualSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomActualSizeUndefined: Self = StObject.set(x, "zoomActualSize", js.undefined)
+    inline def setZoomActualSizeUndefined: Self = StObject.set(x, "zoomActualSize", js.undefined)
     
-    @scala.inline
-    def setZoomDropdown(value: String): Self = StObject.set(x, "zoomDropdown", value.asInstanceOf[js.Any])
+    inline def setZoomDropdown(value: String): Self = StObject.set(x, "zoomDropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomDropdownUndefined: Self = StObject.set(x, "zoomDropdown", js.undefined)
+    inline def setZoomDropdownUndefined: Self = StObject.set(x, "zoomDropdown", js.undefined)
     
-    @scala.inline
-    def setZoomFitToScreen(value: String): Self = StObject.set(x, "zoomFitToScreen", value.asInstanceOf[js.Any])
+    inline def setZoomFitToScreen(value: String): Self = StObject.set(x, "zoomFitToScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomFitToScreenUndefined: Self = StObject.set(x, "zoomFitToScreen", js.undefined)
+    inline def setZoomFitToScreenUndefined: Self = StObject.set(x, "zoomFitToScreen", js.undefined)
     
-    @scala.inline
-    def setZoomIn(value: String): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+    inline def setZoomIn(value: String): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
+    inline def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
     
-    @scala.inline
-    def setZoomOut(value: String): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+    inline def setZoomOut(value: String): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
+    inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
   }
 }

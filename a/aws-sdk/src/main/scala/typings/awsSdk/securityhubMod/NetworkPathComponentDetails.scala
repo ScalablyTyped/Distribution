@@ -18,31 +18,23 @@ trait NetworkPathComponentDetails extends StObject {
 }
 object NetworkPathComponentDetails {
   
-  @scala.inline
-  def apply(): NetworkPathComponentDetails = {
+  inline def apply(): NetworkPathComponentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkPathComponentDetails]
   }
   
-  @scala.inline
-  implicit class NetworkPathComponentDetailsMutableBuilder[Self <: NetworkPathComponentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPathComponentDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: StringList): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: StringList): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setAddressVarargs(value: NonEmptyString*): Self = StObject.set(x, "Address", js.Array(value :_*))
+    inline def setAddressVarargs(value: NonEmptyString*): Self = StObject.set(x, "Address", js.Array(value :_*))
     
-    @scala.inline
-    def setPortRanges(value: PortRangeList): Self = StObject.set(x, "PortRanges", value.asInstanceOf[js.Any])
+    inline def setPortRanges(value: PortRangeList): Self = StObject.set(x, "PortRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortRangesUndefined: Self = StObject.set(x, "PortRanges", js.undefined)
+    inline def setPortRangesUndefined: Self = StObject.set(x, "PortRanges", js.undefined)
     
-    @scala.inline
-    def setPortRangesVarargs(value: PortRange*): Self = StObject.set(x, "PortRanges", js.Array(value :_*))
+    inline def setPortRangesVarargs(value: PortRange*): Self = StObject.set(x, "PortRanges", js.Array(value :_*))
   }
 }

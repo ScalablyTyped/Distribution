@@ -34,8 +34,7 @@ object viewInterfaceMod {
   }
   object ActiveUIView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $type: String,
       config: ViewConfig,
       configUpdated: ViewConfig => Unit,
@@ -48,29 +47,21 @@ object viewInterfaceMod {
       __obj.asInstanceOf[ActiveUIView]
     }
     
-    @scala.inline
-    implicit class ActiveUIViewMutableBuilder[Self <: ActiveUIView] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveUIView](x: Self) {
       
-      @scala.inline
-      def set$type(value: String): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+      inline def set$type(value: String): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: ViewConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ViewConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUpdated(value: ViewConfig => Unit): Self = StObject.set(x, "configUpdated", js.Any.fromFunction1(value))
+      inline def setConfigUpdated(value: ViewConfig => Unit): Self = StObject.set(x, "configUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreationContext(value: ViewContext): Self = StObject.set(x, "creationContext", value.asInstanceOf[js.Any])
+      inline def setCreationContext(value: ViewContext): Self = StObject.set(x, "creationContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFqn(value: String): Self = StObject.set(x, "fqn", value.asInstanceOf[js.Any])
+      inline def setFqn(value: String): Self = StObject.set(x, "fqn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,8 +83,7 @@ object viewInterfaceMod {
   }
   object ViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $id: Double,
       load: () => js.Promise[ViewConfig],
       loaded: Boolean,
@@ -104,26 +94,19 @@ object viewInterfaceMod {
       __obj.asInstanceOf[ViewConfig]
     }
     
-    @scala.inline
-    implicit class ViewConfigMutableBuilder[Self <: ViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ViewConfig](x: Self) {
       
-      @scala.inline
-      def set$id(value: Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
+      inline def set$id(value: Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoad(value: () => js.Promise[ViewConfig]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Promise[ViewConfig]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[PathNode]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[PathNode]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: PathNode*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: PathNode*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setViewDecl(value: ViewDeclaration): Self = StObject.set(x, "viewDecl", value.asInstanceOf[js.Any])
+      inline def setViewDecl(value: ViewDeclaration): Self = StObject.set(x, "viewDecl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,20 +118,16 @@ object viewInterfaceMod {
   }
   object ViewContext {
     
-    @scala.inline
-    def apply(name: String, parent: ViewContext): ViewContext = {
+    inline def apply(name: String, parent: ViewContext): ViewContext = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewContext]
     }
     
-    @scala.inline
-    implicit class ViewContextMutableBuilder[Self <: ViewContext] (val x: Self) extends AnyVal {
+    extension [Self <: ViewContext](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: ViewContext): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ViewContext): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
   }
 }

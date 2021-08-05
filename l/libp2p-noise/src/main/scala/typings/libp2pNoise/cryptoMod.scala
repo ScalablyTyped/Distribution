@@ -14,11 +14,9 @@ object cryptoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decryptStream(handshake: IHandshake): IReturnEncryptionWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("decryptStream")(handshake.asInstanceOf[js.Any]).asInstanceOf[IReturnEncryptionWrapper]
+  inline def decryptStream(handshake: IHandshake): IReturnEncryptionWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("decryptStream")(handshake.asInstanceOf[js.Any]).asInstanceOf[IReturnEncryptionWrapper]
   
-  @scala.inline
-  def encryptStream(handshake: IHandshake): IReturnEncryptionWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("encryptStream")(handshake.asInstanceOf[js.Any]).asInstanceOf[IReturnEncryptionWrapper]
+  inline def encryptStream(handshake: IHandshake): IReturnEncryptionWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("encryptStream")(handshake.asInstanceOf[js.Any]).asInstanceOf[IReturnEncryptionWrapper]
   
   type IReturnEncryptionWrapper = js.Function1[/* source */ Iterable[Uint8Array], AsyncIterableIterator[Uint8Array]]
 }

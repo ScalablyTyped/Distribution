@@ -12,19 +12,15 @@ trait Log_ extends StObject {
 }
 object Log_ {
   
-  @scala.inline
-  def apply(info: /* repeated */ js.Any => Unit, warn: /* repeated */ js.Any => Unit): Log_ = {
+  inline def apply(info: /* repeated */ js.Any => Unit, warn: /* repeated */ js.Any => Unit): Log_ = {
     val __obj = js.Dynamic.literal(info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[Log_]
   }
   
-  @scala.inline
-  implicit class Log_MutableBuilder[Self <: Log_] (val x: Self) extends AnyVal {
+  extension [Self <: Log_](x: Self) {
     
-    @scala.inline
-    def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

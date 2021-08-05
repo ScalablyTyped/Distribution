@@ -15,22 +15,17 @@ trait Utterance extends StObject {
 }
 object Utterance {
   
-  @scala.inline
-  def apply(text: String): Utterance = {
+  inline def apply(text: String): Utterance = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Utterance]
   }
   
-  @scala.inline
-  implicit class UtteranceMutableBuilder[Self <: Utterance] (val x: Self) extends AnyVal {
+  extension [Self <: Utterance](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

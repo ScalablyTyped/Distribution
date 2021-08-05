@@ -21,43 +21,31 @@ trait PutObjectOptions extends StObject {
 }
 object PutObjectOptions {
   
-  @scala.inline
-  def apply(): PutObjectOptions = {
+  inline def apply(): PutObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutObjectOptions]
   }
   
-  @scala.inline
-  implicit class PutObjectOptionsMutableBuilder[Self <: PutObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

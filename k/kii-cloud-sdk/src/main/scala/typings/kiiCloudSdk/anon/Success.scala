@@ -13,19 +13,15 @@ trait Success extends StObject {
 }
 object Success {
   
-  @scala.inline
-  def apply(failure: (KiiACL, String) => js.Any, success: KiiACL => js.Any): Success = {
+  inline def apply(failure: (KiiACL, String) => js.Any, success: KiiACL => js.Any): Success = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[Success]
   }
   
-  @scala.inline
-  implicit class SuccessMutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
+  extension [Self <: Success](x: Self) {
     
-    @scala.inline
-    def setFailure(value: (KiiACL, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
+    inline def setFailure(value: (KiiACL, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccess(value: KiiACL => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: KiiACL => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

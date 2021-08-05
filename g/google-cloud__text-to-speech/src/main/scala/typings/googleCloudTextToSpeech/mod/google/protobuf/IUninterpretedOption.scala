@@ -33,79 +33,55 @@ trait IUninterpretedOption extends StObject {
 }
 object IUninterpretedOption {
   
-  @scala.inline
-  def apply(): IUninterpretedOption = {
+  inline def apply(): IUninterpretedOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUninterpretedOption]
   }
   
-  @scala.inline
-  implicit class IUninterpretedOptionMutableBuilder[Self <: IUninterpretedOption] (val x: Self) extends AnyVal {
+  extension [Self <: IUninterpretedOption](x: Self) {
     
-    @scala.inline
-    def setAggregateValue(value: String): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
+    inline def setAggregateValue(value: String): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateValueNull: Self = StObject.set(x, "aggregateValue", null)
+    inline def setAggregateValueNull: Self = StObject.set(x, "aggregateValue", null)
     
-    @scala.inline
-    def setAggregateValueUndefined: Self = StObject.set(x, "aggregateValue", js.undefined)
+    inline def setAggregateValueUndefined: Self = StObject.set(x, "aggregateValue", js.undefined)
     
-    @scala.inline
-    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValueNull: Self = StObject.set(x, "doubleValue", null)
+    inline def setDoubleValueNull: Self = StObject.set(x, "doubleValue", null)
     
-    @scala.inline
-    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
-    @scala.inline
-    def setIdentifierValue(value: String): Self = StObject.set(x, "identifierValue", value.asInstanceOf[js.Any])
+    inline def setIdentifierValue(value: String): Self = StObject.set(x, "identifierValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierValueNull: Self = StObject.set(x, "identifierValue", null)
+    inline def setIdentifierValueNull: Self = StObject.set(x, "identifierValue", null)
     
-    @scala.inline
-    def setIdentifierValueUndefined: Self = StObject.set(x, "identifierValue", js.undefined)
+    inline def setIdentifierValueUndefined: Self = StObject.set(x, "identifierValue", js.undefined)
     
-    @scala.inline
-    def setName(value: js.Array[INamePart]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Array[INamePart]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: INamePart*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: INamePart*): Self = StObject.set(x, "name", js.Array(value :_*))
     
-    @scala.inline
-    def setNegativeIntValue(value: Double | Long | String): Self = StObject.set(x, "negativeIntValue", value.asInstanceOf[js.Any])
+    inline def setNegativeIntValue(value: Double | Long | String): Self = StObject.set(x, "negativeIntValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeIntValueNull: Self = StObject.set(x, "negativeIntValue", null)
+    inline def setNegativeIntValueNull: Self = StObject.set(x, "negativeIntValue", null)
     
-    @scala.inline
-    def setNegativeIntValueUndefined: Self = StObject.set(x, "negativeIntValue", js.undefined)
+    inline def setNegativeIntValueUndefined: Self = StObject.set(x, "negativeIntValue", js.undefined)
     
-    @scala.inline
-    def setPositiveIntValue(value: Double | Long | String): Self = StObject.set(x, "positiveIntValue", value.asInstanceOf[js.Any])
+    inline def setPositiveIntValue(value: Double | Long | String): Self = StObject.set(x, "positiveIntValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveIntValueNull: Self = StObject.set(x, "positiveIntValue", null)
+    inline def setPositiveIntValueNull: Self = StObject.set(x, "positiveIntValue", null)
     
-    @scala.inline
-    def setPositiveIntValueUndefined: Self = StObject.set(x, "positiveIntValue", js.undefined)
+    inline def setPositiveIntValueUndefined: Self = StObject.set(x, "positiveIntValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: Uint8Array | String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: Uint8Array | String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueNull: Self = StObject.set(x, "stringValue", null)
+    inline def setStringValueNull: Self = StObject.set(x, "stringValue", null)
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

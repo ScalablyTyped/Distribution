@@ -14,19 +14,15 @@ trait SwitchDefault extends StObject {
 }
 object SwitchDefault {
   
-  @scala.inline
-  def apply(): SwitchDefault = {
+  inline def apply(): SwitchDefault = {
     val __obj = js.Dynamic.literal(otherwise = null)
     __obj.asInstanceOf[SwitchDefault]
   }
   
-  @scala.inline
-  implicit class SwitchDefaultMutableBuilder[Self <: SwitchDefault] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchDefault](x: Self) {
     
-    @scala.inline
-    def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
+    inline def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
+    inline def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
   }
 }

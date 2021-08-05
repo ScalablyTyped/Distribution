@@ -15,16 +15,13 @@ trait IEndpointPairFactory extends StObject {
 }
 object IEndpointPairFactory {
   
-  @scala.inline
-  def apply(createEndpointPair: (HostName, String, HostName, String) => EndpointPair): IEndpointPairFactory = {
+  inline def apply(createEndpointPair: (HostName, String, HostName, String) => EndpointPair): IEndpointPairFactory = {
     val __obj = js.Dynamic.literal(createEndpointPair = js.Any.fromFunction4(createEndpointPair))
     __obj.asInstanceOf[IEndpointPairFactory]
   }
   
-  @scala.inline
-  implicit class IEndpointPairFactoryMutableBuilder[Self <: IEndpointPairFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IEndpointPairFactory](x: Self) {
     
-    @scala.inline
-    def setCreateEndpointPair(value: (HostName, String, HostName, String) => EndpointPair): Self = StObject.set(x, "createEndpointPair", js.Any.fromFunction4(value))
+    inline def setCreateEndpointPair(value: (HostName, String, HostName, String) => EndpointPair): Self = StObject.set(x, "createEndpointPair", js.Any.fromFunction4(value))
   }
 }

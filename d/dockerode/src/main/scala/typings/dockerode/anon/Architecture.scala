@@ -12,19 +12,15 @@ trait Architecture extends StObject {
 }
 object Architecture {
   
-  @scala.inline
-  def apply(Architecture: String, OS: String): Architecture = {
+  inline def apply(Architecture: String, OS: String): Architecture = {
     val __obj = js.Dynamic.literal(Architecture = Architecture.asInstanceOf[js.Any], OS = OS.asInstanceOf[js.Any])
     __obj.asInstanceOf[Architecture]
   }
   
-  @scala.inline
-  implicit class ArchitectureMutableBuilder[Self <: Architecture] (val x: Self) extends AnyVal {
+  extension [Self <: Architecture](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOS(value: String): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
+    inline def setOS(value: String): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
   }
 }

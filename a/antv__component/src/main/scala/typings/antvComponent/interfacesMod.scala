@@ -134,8 +134,7 @@ object interfacesMod {
   }
   object IList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearItems: () => js.Any,
       clearItemsState: String => js.Any,
       getItems: () => js.Array[ListItem],
@@ -149,32 +148,23 @@ object interfacesMod {
       __obj.asInstanceOf[IList]
     }
     
-    @scala.inline
-    implicit class IListMutableBuilder[Self <: IList] (val x: Self) extends AnyVal {
+    extension [Self <: IList](x: Self) {
       
-      @scala.inline
-      def setClearItems(value: () => js.Any): Self = StObject.set(x, "clearItems", js.Any.fromFunction0(value))
+      inline def setClearItems(value: () => js.Any): Self = StObject.set(x, "clearItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearItemsState(value: String => js.Any): Self = StObject.set(x, "clearItemsState", js.Any.fromFunction1(value))
+      inline def setClearItemsState(value: String => js.Any): Self = StObject.set(x, "clearItemsState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItems(value: () => js.Array[ListItem]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+      inline def setGetItems(value: () => js.Array[ListItem]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemsByState(value: js.Any => js.Array[ListItem]): Self = StObject.set(x, "getItemsByState", js.Any.fromFunction1(value))
+      inline def setGetItemsByState(value: js.Any => js.Array[ListItem]): Self = StObject.set(x, "getItemsByState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasState(value: (ListItem, String) => Boolean): Self = StObject.set(x, "hasState", js.Any.fromFunction2(value))
+      inline def setHasState(value: (ListItem, String) => Boolean): Self = StObject.set(x, "hasState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetItemState(value: (ListItem, String, Boolean) => js.Any): Self = StObject.set(x, "setItemState", js.Any.fromFunction3(value))
+      inline def setSetItemState(value: (ListItem, String, Boolean) => js.Any): Self = StObject.set(x, "setItemState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetItems(value: js.Array[ListItem] => js.Any): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
+      inline def setSetItems(value: js.Array[ListItem] => js.Any): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateItem(value: (ListItem, js.Object) => js.Any): Self = StObject.set(x, "updateItem", js.Any.fromFunction2(value))
+      inline def setUpdateItem(value: (ListItem, js.Object) => js.Any): Self = StObject.set(x, "updateItem", js.Any.fromFunction2(value))
     }
   }
   
@@ -213,8 +203,7 @@ object interfacesMod {
   }
   object ILocation {
     
-    @scala.inline
-    def apply[T /* <: LocationCfg */](
+    inline def apply[T /* <: LocationCfg */](
       getLocation: () => T,
       getLocationType: () => LocationType,
       getOffset: () => OffsetPoint,
@@ -225,23 +214,17 @@ object interfacesMod {
       __obj.asInstanceOf[ILocation[T]]
     }
     
-    @scala.inline
-    implicit class ILocationMutableBuilder[Self <: ILocation[?], T /* <: LocationCfg */] (val x: Self & ILocation[T]) extends AnyVal {
+    extension [Self <: ILocation[?], T /* <: LocationCfg */](x: Self & ILocation[T]) {
       
-      @scala.inline
-      def setGetLocation(value: () => T): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+      inline def setGetLocation(value: () => T): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLocationType(value: () => LocationType): Self = StObject.set(x, "getLocationType", js.Any.fromFunction0(value))
+      inline def setGetLocationType(value: () => LocationType): Self = StObject.set(x, "getLocationType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffset(value: () => OffsetPoint): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
+      inline def setGetOffset(value: () => OffsetPoint): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetLocation(value: T => js.Any): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
+      inline def setSetLocation(value: T => js.Any): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOffset(value: (Double, Double) => js.Any): Self = StObject.set(x, "setOffset", js.Any.fromFunction2(value))
+      inline def setSetOffset(value: (Double, Double) => js.Any): Self = StObject.set(x, "setOffset", js.Any.fromFunction2(value))
     }
   }
   

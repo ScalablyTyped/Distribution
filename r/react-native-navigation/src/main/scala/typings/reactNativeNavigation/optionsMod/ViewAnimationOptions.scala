@@ -15,19 +15,15 @@ trait ViewAnimationOptions
 }
 object ViewAnimationOptions {
   
-  @scala.inline
-  def apply(): ViewAnimationOptions = {
+  inline def apply(): ViewAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewAnimationOptions]
   }
   
-  @scala.inline
-  implicit class ViewAnimationOptionsMutableBuilder[Self <: ViewAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ViewAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

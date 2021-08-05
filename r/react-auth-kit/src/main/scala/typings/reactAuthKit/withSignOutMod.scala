@@ -12,8 +12,7 @@ object withSignOutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P /* <: withSignOutProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
+  inline def default[P /* <: withSignOutProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   
   trait withSignOutProps extends StObject {
     
@@ -21,17 +20,14 @@ object withSignOutMod {
   }
   object withSignOutProps {
     
-    @scala.inline
-    def apply(signOut: () => Boolean): withSignOutProps = {
+    inline def apply(signOut: () => Boolean): withSignOutProps = {
       val __obj = js.Dynamic.literal(signOut = js.Any.fromFunction0(signOut))
       __obj.asInstanceOf[withSignOutProps]
     }
     
-    @scala.inline
-    implicit class withSignOutPropsMutableBuilder[Self <: withSignOutProps] (val x: Self) extends AnyVal {
+    extension [Self <: withSignOutProps](x: Self) {
       
-      @scala.inline
-      def setSignOut(value: () => Boolean): Self = StObject.set(x, "signOut", js.Any.fromFunction0(value))
+      inline def setSignOut(value: () => Boolean): Self = StObject.set(x, "signOut", js.Any.fromFunction0(value))
     }
   }
 }

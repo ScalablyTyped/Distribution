@@ -76,97 +76,67 @@ trait SchemaTable extends StObject {
 }
 object SchemaTable {
   
-  @scala.inline
-  def apply(): SchemaTable = {
+  inline def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTable]
   }
   
-  @scala.inline
-  implicit class SchemaTableMutableBuilder[Self <: SchemaTable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTable](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionLink(value: String): Self = StObject.set(x, "attributionLink", value.asInstanceOf[js.Any])
+    inline def setAttributionLink(value: String): Self = StObject.set(x, "attributionLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionLinkUndefined: Self = StObject.set(x, "attributionLink", js.undefined)
+    inline def setAttributionLinkUndefined: Self = StObject.set(x, "attributionLink", js.undefined)
     
-    @scala.inline
-    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
-    @scala.inline
-    def setBaseTableIds(value: js.Array[String]): Self = StObject.set(x, "baseTableIds", value.asInstanceOf[js.Any])
+    inline def setBaseTableIds(value: js.Array[String]): Self = StObject.set(x, "baseTableIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseTableIdsUndefined: Self = StObject.set(x, "baseTableIds", js.undefined)
+    inline def setBaseTableIdsUndefined: Self = StObject.set(x, "baseTableIds", js.undefined)
     
-    @scala.inline
-    def setBaseTableIdsVarargs(value: String*): Self = StObject.set(x, "baseTableIds", js.Array(value :_*))
+    inline def setBaseTableIdsVarargs(value: String*): Self = StObject.set(x, "baseTableIds", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnPropertiesJsonSchema(value: String): Self = StObject.set(x, "columnPropertiesJsonSchema", value.asInstanceOf[js.Any])
+    inline def setColumnPropertiesJsonSchema(value: String): Self = StObject.set(x, "columnPropertiesJsonSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnPropertiesJsonSchemaUndefined: Self = StObject.set(x, "columnPropertiesJsonSchema", js.undefined)
+    inline def setColumnPropertiesJsonSchemaUndefined: Self = StObject.set(x, "columnPropertiesJsonSchema", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[SchemaColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[SchemaColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: SchemaColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: SchemaColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIsExportable(value: Boolean): Self = StObject.set(x, "isExportable", value.asInstanceOf[js.Any])
+    inline def setIsExportable(value: Boolean): Self = StObject.set(x, "isExportable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExportableUndefined: Self = StObject.set(x, "isExportable", js.undefined)
+    inline def setIsExportableUndefined: Self = StObject.set(x, "isExportable", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+    inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
-    @scala.inline
-    def setTablePropertiesJson(value: String): Self = StObject.set(x, "tablePropertiesJson", value.asInstanceOf[js.Any])
+    inline def setTablePropertiesJson(value: String): Self = StObject.set(x, "tablePropertiesJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablePropertiesJsonSchema(value: String): Self = StObject.set(x, "tablePropertiesJsonSchema", value.asInstanceOf[js.Any])
+    inline def setTablePropertiesJsonSchema(value: String): Self = StObject.set(x, "tablePropertiesJsonSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablePropertiesJsonSchemaUndefined: Self = StObject.set(x, "tablePropertiesJsonSchema", js.undefined)
+    inline def setTablePropertiesJsonSchemaUndefined: Self = StObject.set(x, "tablePropertiesJsonSchema", js.undefined)
     
-    @scala.inline
-    def setTablePropertiesJsonUndefined: Self = StObject.set(x, "tablePropertiesJson", js.undefined)
+    inline def setTablePropertiesJsonUndefined: Self = StObject.set(x, "tablePropertiesJson", js.undefined)
   }
 }

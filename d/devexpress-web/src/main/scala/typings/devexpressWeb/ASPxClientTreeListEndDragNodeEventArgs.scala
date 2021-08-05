@@ -18,16 +18,13 @@ trait ASPxClientTreeListEndDragNodeEventArgs
 }
 object ASPxClientTreeListEndDragNodeEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Any, nodeKey: String, targetElement: js.Any): ASPxClientTreeListEndDragNodeEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: js.Any, nodeKey: String, targetElement: js.Any): ASPxClientTreeListEndDragNodeEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], targetElement = targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListEndDragNodeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListEndDragNodeEventArgsMutableBuilder[Self <: ASPxClientTreeListEndDragNodeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListEndDragNodeEventArgs](x: Self) {
     
-    @scala.inline
-    def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
   }
 }

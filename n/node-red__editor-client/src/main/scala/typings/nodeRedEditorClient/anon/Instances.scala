@@ -10,19 +10,15 @@ trait Instances extends StObject {
 }
 object Instances {
   
-  @scala.inline
-  def apply(instances: js.Array[js.Object]): Instances = {
+  inline def apply(instances: js.Array[js.Object]): Instances = {
     val __obj = js.Dynamic.literal(instances = instances.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instances]
   }
   
-  @scala.inline
-  implicit class InstancesMutableBuilder[Self <: Instances] (val x: Self) extends AnyVal {
+  extension [Self <: Instances](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[js.Object]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[js.Object]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesVarargs(value: js.Object*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: js.Object*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

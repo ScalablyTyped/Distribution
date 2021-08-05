@@ -14,8 +14,7 @@ trait BlankLine
 }
 object BlankLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -28,10 +27,8 @@ object BlankLine {
     __obj.asInstanceOf[BlankLine]
   }
   
-  @scala.inline
-  implicit class BlankLineMutableBuilder[Self <: BlankLine] (val x: Self) extends AnyVal {
+  extension [Self <: BlankLine](x: Self) {
     
-    @scala.inline
-    def setType(value: BLANK_LINE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BLANK_LINE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

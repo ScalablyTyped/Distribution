@@ -13,8 +13,7 @@ object popupMixinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     getModal: js.Function3[/* props */ js.Any, /* visible */ js.Any, /* args */ Args, Element],
     platformProps: ActionTextUnderlayColor
   ): DefaultProps = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getModal.asInstanceOf[js.Any], platformProps.asInstanceOf[js.Any])).asInstanceOf[DefaultProps]
@@ -31,26 +30,20 @@ object popupMixinMod {
   }
   object Args {
     
-    @scala.inline
-    def apply(getContent: js.Any, hide: js.Any, onDismiss: js.Any, onOk: js.Any): Args = {
+    inline def apply(getContent: js.Any, hide: js.Any, onDismiss: js.Any, onOk: js.Any): Args = {
       val __obj = js.Dynamic.literal(getContent = getContent.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], onDismiss = onDismiss.asInstanceOf[js.Any], onOk = onOk.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
-    @scala.inline
-    implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
+    extension [Self <: Args](x: Self) {
       
-      @scala.inline
-      def setGetContent(value: js.Any): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
+      inline def setGetContent(value: js.Any): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDismiss(value: js.Any): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
+      inline def setOnDismiss(value: js.Any): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnOk(value: js.Any): Self = StObject.set(x, "onOk", value.asInstanceOf[js.Any])
+      inline def setOnOk(value: js.Any): Self = StObject.set(x, "onOk", value.asInstanceOf[js.Any])
     }
   }
 }

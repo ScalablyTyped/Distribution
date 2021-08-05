@@ -103,113 +103,78 @@ object events {
     }
     object Event {
       
-      @scala.inline
-      def apply(eventTime: Input[String]): Event = {
+      inline def apply(eventTime: Input[String]): Event = {
         val __obj = js.Dynamic.literal(eventTime = eventTime.asInstanceOf[js.Any])
         __obj.asInstanceOf[Event]
       }
       
-      @scala.inline
-      implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+      extension [Self <: Event](x: Self) {
         
-        @scala.inline
-        def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+        inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
-        @scala.inline
-        def setApiVersion(value: Input[eventsDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[eventsDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setDeprecatedCount(value: Input[Double]): Self = StObject.set(x, "deprecatedCount", value.asInstanceOf[js.Any])
+        inline def setDeprecatedCount(value: Input[Double]): Self = StObject.set(x, "deprecatedCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedCountUndefined: Self = StObject.set(x, "deprecatedCount", js.undefined)
+        inline def setDeprecatedCountUndefined: Self = StObject.set(x, "deprecatedCount", js.undefined)
         
-        @scala.inline
-        def setDeprecatedFirstTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedFirstTimestamp", value.asInstanceOf[js.Any])
+        inline def setDeprecatedFirstTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedFirstTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedFirstTimestampUndefined: Self = StObject.set(x, "deprecatedFirstTimestamp", js.undefined)
+        inline def setDeprecatedFirstTimestampUndefined: Self = StObject.set(x, "deprecatedFirstTimestamp", js.undefined)
         
-        @scala.inline
-        def setDeprecatedLastTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedLastTimestamp", value.asInstanceOf[js.Any])
+        inline def setDeprecatedLastTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedLastTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedLastTimestampUndefined: Self = StObject.set(x, "deprecatedLastTimestamp", js.undefined)
+        inline def setDeprecatedLastTimestampUndefined: Self = StObject.set(x, "deprecatedLastTimestamp", js.undefined)
         
-        @scala.inline
-        def setDeprecatedSource(value: Input[EventSource]): Self = StObject.set(x, "deprecatedSource", value.asInstanceOf[js.Any])
+        inline def setDeprecatedSource(value: Input[EventSource]): Self = StObject.set(x, "deprecatedSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedSourceUndefined: Self = StObject.set(x, "deprecatedSource", js.undefined)
+        inline def setDeprecatedSourceUndefined: Self = StObject.set(x, "deprecatedSource", js.undefined)
         
-        @scala.inline
-        def setEventTime(value: Input[String]): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+        inline def setEventTime(value: Input[String]): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setNote(value: Input[String]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+        inline def setNote(value: Input[String]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+        inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setRegarding(value: Input[ObjectReference]): Self = StObject.set(x, "regarding", value.asInstanceOf[js.Any])
+        inline def setRegarding(value: Input[ObjectReference]): Self = StObject.set(x, "regarding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegardingUndefined: Self = StObject.set(x, "regarding", js.undefined)
+        inline def setRegardingUndefined: Self = StObject.set(x, "regarding", js.undefined)
         
-        @scala.inline
-        def setRelated(value: Input[ObjectReference]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+        inline def setRelated(value: Input[ObjectReference]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+        inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
         
-        @scala.inline
-        def setReportingController(value: Input[String]): Self = StObject.set(x, "reportingController", value.asInstanceOf[js.Any])
+        inline def setReportingController(value: Input[String]): Self = StObject.set(x, "reportingController", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReportingControllerUndefined: Self = StObject.set(x, "reportingController", js.undefined)
+        inline def setReportingControllerUndefined: Self = StObject.set(x, "reportingController", js.undefined)
         
-        @scala.inline
-        def setReportingInstance(value: Input[String]): Self = StObject.set(x, "reportingInstance", value.asInstanceOf[js.Any])
+        inline def setReportingInstance(value: Input[String]): Self = StObject.set(x, "reportingInstance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReportingInstanceUndefined: Self = StObject.set(x, "reportingInstance", js.undefined)
+        inline def setReportingInstanceUndefined: Self = StObject.set(x, "reportingInstance", js.undefined)
         
-        @scala.inline
-        def setSeries(value: Input[EventSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+        inline def setSeries(value: Input[EventSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+        inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
-        @scala.inline
-        def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -230,20 +195,16 @@ object events {
     }
     object EventSeries {
       
-      @scala.inline
-      def apply(count: Input[Double], lastObservedTime: Input[String]): EventSeries = {
+      inline def apply(count: Input[Double], lastObservedTime: Input[String]): EventSeries = {
         val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], lastObservedTime = lastObservedTime.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventSeries]
       }
       
-      @scala.inline
-      implicit class EventSeriesMutableBuilder[Self <: EventSeries] (val x: Self) extends AnyVal {
+      extension [Self <: EventSeries](x: Self) {
         
-        @scala.inline
-        def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastObservedTime(value: Input[String]): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
+        inline def setLastObservedTime(value: Input[String]): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -339,113 +300,78 @@ object events {
     }
     object Event {
       
-      @scala.inline
-      def apply(eventTime: Input[String]): Event = {
+      inline def apply(eventTime: Input[String]): Event = {
         val __obj = js.Dynamic.literal(eventTime = eventTime.asInstanceOf[js.Any])
         __obj.asInstanceOf[Event]
       }
       
-      @scala.inline
-      implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+      extension [Self <: Event](x: Self) {
         
-        @scala.inline
-        def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+        inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
-        @scala.inline
-        def setApiVersion(value: Input[eventsDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[eventsDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setDeprecatedCount(value: Input[Double]): Self = StObject.set(x, "deprecatedCount", value.asInstanceOf[js.Any])
+        inline def setDeprecatedCount(value: Input[Double]): Self = StObject.set(x, "deprecatedCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedCountUndefined: Self = StObject.set(x, "deprecatedCount", js.undefined)
+        inline def setDeprecatedCountUndefined: Self = StObject.set(x, "deprecatedCount", js.undefined)
         
-        @scala.inline
-        def setDeprecatedFirstTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedFirstTimestamp", value.asInstanceOf[js.Any])
+        inline def setDeprecatedFirstTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedFirstTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedFirstTimestampUndefined: Self = StObject.set(x, "deprecatedFirstTimestamp", js.undefined)
+        inline def setDeprecatedFirstTimestampUndefined: Self = StObject.set(x, "deprecatedFirstTimestamp", js.undefined)
         
-        @scala.inline
-        def setDeprecatedLastTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedLastTimestamp", value.asInstanceOf[js.Any])
+        inline def setDeprecatedLastTimestamp(value: Input[String]): Self = StObject.set(x, "deprecatedLastTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedLastTimestampUndefined: Self = StObject.set(x, "deprecatedLastTimestamp", js.undefined)
+        inline def setDeprecatedLastTimestampUndefined: Self = StObject.set(x, "deprecatedLastTimestamp", js.undefined)
         
-        @scala.inline
-        def setDeprecatedSource(value: Input[EventSource]): Self = StObject.set(x, "deprecatedSource", value.asInstanceOf[js.Any])
+        inline def setDeprecatedSource(value: Input[EventSource]): Self = StObject.set(x, "deprecatedSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeprecatedSourceUndefined: Self = StObject.set(x, "deprecatedSource", js.undefined)
+        inline def setDeprecatedSourceUndefined: Self = StObject.set(x, "deprecatedSource", js.undefined)
         
-        @scala.inline
-        def setEventTime(value: Input[String]): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+        inline def setEventTime(value: Input[String]): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setNote(value: Input[String]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+        inline def setNote(value: Input[String]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+        inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setRegarding(value: Input[ObjectReference]): Self = StObject.set(x, "regarding", value.asInstanceOf[js.Any])
+        inline def setRegarding(value: Input[ObjectReference]): Self = StObject.set(x, "regarding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegardingUndefined: Self = StObject.set(x, "regarding", js.undefined)
+        inline def setRegardingUndefined: Self = StObject.set(x, "regarding", js.undefined)
         
-        @scala.inline
-        def setRelated(value: Input[ObjectReference]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+        inline def setRelated(value: Input[ObjectReference]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+        inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
         
-        @scala.inline
-        def setReportingController(value: Input[String]): Self = StObject.set(x, "reportingController", value.asInstanceOf[js.Any])
+        inline def setReportingController(value: Input[String]): Self = StObject.set(x, "reportingController", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReportingControllerUndefined: Self = StObject.set(x, "reportingController", js.undefined)
+        inline def setReportingControllerUndefined: Self = StObject.set(x, "reportingController", js.undefined)
         
-        @scala.inline
-        def setReportingInstance(value: Input[String]): Self = StObject.set(x, "reportingInstance", value.asInstanceOf[js.Any])
+        inline def setReportingInstance(value: Input[String]): Self = StObject.set(x, "reportingInstance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReportingInstanceUndefined: Self = StObject.set(x, "reportingInstance", js.undefined)
+        inline def setReportingInstanceUndefined: Self = StObject.set(x, "reportingInstance", js.undefined)
         
-        @scala.inline
-        def setSeries(value: Input[EventSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+        inline def setSeries(value: Input[EventSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+        inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
-        @scala.inline
-        def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -471,26 +397,20 @@ object events {
     }
     object EventSeries {
       
-      @scala.inline
-      def apply(count: Input[Double], lastObservedTime: Input[String]): EventSeries = {
+      inline def apply(count: Input[Double], lastObservedTime: Input[String]): EventSeries = {
         val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], lastObservedTime = lastObservedTime.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventSeries]
       }
       
-      @scala.inline
-      implicit class EventSeriesMutableBuilder[Self <: EventSeries] (val x: Self) extends AnyVal {
+      extension [Self <: EventSeries](x: Self) {
         
-        @scala.inline
-        def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastObservedTime(value: Input[String]): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
+        inline def setLastObservedTime(value: Input[String]): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+        inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       }
     }
   }

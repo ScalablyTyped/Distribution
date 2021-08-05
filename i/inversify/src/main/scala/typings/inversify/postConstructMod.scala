@@ -11,8 +11,7 @@ object postConstructMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def postConstruct(): js.Function3[
+  inline def postConstruct(): js.Function3[
     /* target */ js.Any, 
     /* propertyKey */ String, 
     /* descriptor */ PropertyDescriptor, 

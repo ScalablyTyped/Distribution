@@ -31,19 +31,15 @@ trait OutputConfig extends StObject {
 }
 object OutputConfig {
   
-  @scala.inline
-  def apply(): OutputConfig = {
+  inline def apply(): OutputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputConfig]
   }
   
-  @scala.inline
-  implicit class OutputConfigMutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OutputConfig](x: Self) {
     
-    @scala.inline
-    def setGcsDestination(value: GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

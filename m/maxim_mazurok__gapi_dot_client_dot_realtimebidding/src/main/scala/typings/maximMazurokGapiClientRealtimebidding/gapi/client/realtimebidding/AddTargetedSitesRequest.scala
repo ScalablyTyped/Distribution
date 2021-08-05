@@ -17,28 +17,21 @@ trait AddTargetedSitesRequest extends StObject {
 }
 object AddTargetedSitesRequest {
   
-  @scala.inline
-  def apply(): AddTargetedSitesRequest = {
+  inline def apply(): AddTargetedSitesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddTargetedSitesRequest]
   }
   
-  @scala.inline
-  implicit class AddTargetedSitesRequestMutableBuilder[Self <: AddTargetedSitesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddTargetedSitesRequest](x: Self) {
     
-    @scala.inline
-    def setSites(value: js.Array[String]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
+    inline def setSites(value: js.Array[String]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
+    inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
-    @scala.inline
-    def setSitesVarargs(value: String*): Self = StObject.set(x, "sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: String*): Self = StObject.set(x, "sites", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
+    inline def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
+    inline def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
   }
 }

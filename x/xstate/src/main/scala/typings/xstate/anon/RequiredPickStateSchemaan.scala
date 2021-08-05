@@ -13,16 +13,13 @@ trait RequiredPickStateSchemaan extends StObject {
 }
 object RequiredPickStateSchemaan {
   
-  @scala.inline
-  def apply(states: StringDictionary[StateSchema[js.Any]]): RequiredPickStateSchemaan = {
+  inline def apply(states: StringDictionary[StateSchema[js.Any]]): RequiredPickStateSchemaan = {
     val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredPickStateSchemaan]
   }
   
-  @scala.inline
-  implicit class RequiredPickStateSchemaanMutableBuilder[Self <: RequiredPickStateSchemaan] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredPickStateSchemaan](x: Self) {
     
-    @scala.inline
-    def setStates(value: StringDictionary[StateSchema[js.Any]]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: StringDictionary[StateSchema[js.Any]]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
   }
 }

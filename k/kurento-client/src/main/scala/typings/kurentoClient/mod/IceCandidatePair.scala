@@ -16,25 +16,19 @@ trait IceCandidatePair extends StObject {
 }
 object IceCandidatePair {
   
-  @scala.inline
-  def apply(componentID: Double, localCandidate: String, remoteCandidate: String, streamID: String): IceCandidatePair = {
+  inline def apply(componentID: Double, localCandidate: String, remoteCandidate: String, streamID: String): IceCandidatePair = {
     val __obj = js.Dynamic.literal(componentID = componentID.asInstanceOf[js.Any], localCandidate = localCandidate.asInstanceOf[js.Any], remoteCandidate = remoteCandidate.asInstanceOf[js.Any], streamID = streamID.asInstanceOf[js.Any])
     __obj.asInstanceOf[IceCandidatePair]
   }
   
-  @scala.inline
-  implicit class IceCandidatePairMutableBuilder[Self <: IceCandidatePair] (val x: Self) extends AnyVal {
+  extension [Self <: IceCandidatePair](x: Self) {
     
-    @scala.inline
-    def setComponentID(value: Double): Self = StObject.set(x, "componentID", value.asInstanceOf[js.Any])
+    inline def setComponentID(value: Double): Self = StObject.set(x, "componentID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalCandidate(value: String): Self = StObject.set(x, "localCandidate", value.asInstanceOf[js.Any])
+    inline def setLocalCandidate(value: String): Self = StObject.set(x, "localCandidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteCandidate(value: String): Self = StObject.set(x, "remoteCandidate", value.asInstanceOf[js.Any])
+    inline def setRemoteCandidate(value: String): Self = StObject.set(x, "remoteCandidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamID(value: String): Self = StObject.set(x, "streamID", value.asInstanceOf[js.Any])
+    inline def setStreamID(value: String): Self = StObject.set(x, "streamID", value.asInstanceOf[js.Any])
   }
 }

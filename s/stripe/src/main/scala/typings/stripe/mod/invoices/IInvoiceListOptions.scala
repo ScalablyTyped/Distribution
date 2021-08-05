@@ -64,61 +64,43 @@ trait IInvoiceListOptions
 }
 object IInvoiceListOptions {
   
-  @scala.inline
-  def apply(): IInvoiceListOptions = {
+  inline def apply(): IInvoiceListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInvoiceListOptions]
   }
   
-  @scala.inline
-  implicit class IInvoiceListOptionsMutableBuilder[Self <: IInvoiceListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IInvoiceListOptions](x: Self) {
     
-    @scala.inline
-    def setBilling(value: charge_automatically | send_invoice): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
+    inline def setBilling(value: charge_automatically | send_invoice): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingUndefined: Self = StObject.set(x, "billing", js.undefined)
+    inline def setBillingUndefined: Self = StObject.set(x, "billing", js.undefined)
     
-    @scala.inline
-    def setCollection_method(value: charge_automatically | send_invoice): Self = StObject.set(x, "collection_method", value.asInstanceOf[js.Any])
+    inline def setCollection_method(value: charge_automatically | send_invoice): Self = StObject.set(x, "collection_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection_methodUndefined: Self = StObject.set(x, "collection_method", js.undefined)
+    inline def setCollection_methodUndefined: Self = StObject.set(x, "collection_method", js.undefined)
     
-    @scala.inline
-    def setCreated(value: IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
-    @scala.inline
-    def setDate(value: IDateFilter): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: IDateFilter): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDue_date(value: IDateFilter): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
+    inline def setDue_date(value: IDateFilter): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
+    inline def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
     
-    @scala.inline
-    def setStatus(value: draft | open | paid | uncollectible | void): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: draft | open | paid | uncollectible | void): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

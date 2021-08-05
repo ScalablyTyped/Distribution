@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.TextColumn2")
 @js.native
-class TextColumn2 protected ()
+/* private */ class TextColumn2 ()
   extends StObject
      with typings.activexOffice.Office.TextColumn2 {
   
@@ -20,7 +20,7 @@ class TextColumn2 protected ()
   /* CompleteClass */
   var Number: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.TextColumn2_typekey")
   var OfficeDotTextColumn2_typekey: typings.activexOffice.Office.TextColumn2 = js.native
   

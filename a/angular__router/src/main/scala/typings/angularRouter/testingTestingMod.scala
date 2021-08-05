@@ -33,10 +33,8 @@ object testingTestingMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def withRoutes(routes: Routes): ModuleWithProviders[RouterTestingModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterTestingModule]]
-    @scala.inline
-    def withRoutes(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterTestingModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("withRoutes")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[RouterTestingModule]]
+    inline def withRoutes(routes: Routes): ModuleWithProviders[RouterTestingModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterTestingModule]]
+    inline def withRoutes(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterTestingModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("withRoutes")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[RouterTestingModule]]
   }
   
   @JSImport("@angular/router/testing/testing", "SpyNgModuleFactoryLoader")
@@ -47,9 +45,9 @@ object testingTestingMod {
     /**
       * @docsNotRequired
       */
-    var _stubbedModules: js.Any = js.native
+    /* private */ var _stubbedModules: js.Any = js.native
     
-    var compiler: js.Any = js.native
+    /* private */ var compiler: js.Any = js.native
     
     /**
       * @docsNotRequired
@@ -61,8 +59,7 @@ object testingTestingMod {
     def stubbedModules_=(modules: StringDictionary[js.Any]): Unit = js.native
   }
   
-  @scala.inline
-  def setupTestingRouter(
+  inline def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,
@@ -71,8 +68,7 @@ object testingTestingMod {
     injector: Injector,
     routes: js.Array[js.Array[Route]]
   ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def setupTestingRouter(
+  inline def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,
@@ -83,8 +79,7 @@ object testingTestingMod {
     opts: Unit,
     urlHandlingStrategy: UrlHandlingStrategy
   ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def setupTestingRouter(
+  inline def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,
@@ -94,8 +89,7 @@ object testingTestingMod {
     routes: js.Array[js.Array[Route]],
     opts: ExtraOptions
   ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def setupTestingRouter(
+  inline def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,
@@ -106,8 +100,7 @@ object testingTestingMod {
     opts: ExtraOptions,
     urlHandlingStrategy: UrlHandlingStrategy
   ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def setupTestingRouter(
+  inline def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
     location: Location,

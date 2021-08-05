@@ -21,49 +21,35 @@ trait CacheKey extends StObject {
 }
 object CacheKey {
   
-  @scala.inline
-  def apply(): CacheKey = {
+  inline def apply(): CacheKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheKey]
   }
   
-  @scala.inline
-  implicit class CacheKeyMutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
+  extension [Self <: CacheKey](x: Self) {
     
-    @scala.inline
-    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+    inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
+    inline def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setFilter(value: NoteFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: NoteFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setNoteGuid(value: String): Self = StObject.set(x, "noteGuid", value.asInstanceOf[js.Any])
+    inline def setNoteGuid(value: String): Self = StObject.set(x, "noteGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteGuidUndefined: Self = StObject.set(x, "noteGuid", js.undefined)
+    inline def setNoteGuidUndefined: Self = StObject.set(x, "noteGuid", js.undefined)
     
-    @scala.inline
-    def setPlainText(value: String): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
+    inline def setPlainText(value: String): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlainTextUndefined: Self = StObject.set(x, "plainText", js.undefined)
+    inline def setPlainTextUndefined: Self = StObject.set(x, "plainText", js.undefined)
     
-    @scala.inline
-    def setReferenceUri(value: String): Self = StObject.set(x, "referenceUri", value.asInstanceOf[js.Any])
+    inline def setReferenceUri(value: String): Self = StObject.set(x, "referenceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUriUndefined: Self = StObject.set(x, "referenceUri", js.undefined)
+    inline def setReferenceUriUndefined: Self = StObject.set(x, "referenceUri", js.undefined)
   }
 }

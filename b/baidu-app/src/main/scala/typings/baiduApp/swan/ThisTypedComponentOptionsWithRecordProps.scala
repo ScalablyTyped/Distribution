@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with ThisType[CombinedInstance[V, Data, Methods, Props]]
 object ThisTypedComponentOptionsWithRecordProps {
   
-  @scala.inline
-  def apply[V /* <: Component[Data, Props] */, Data, Methods, Props](): ThisTypedComponentOptionsWithRecordProps[V, Data, Methods, Props] = {
+  inline def apply[V /* <: Component[Data, Props] */, Data, Methods, Props](): ThisTypedComponentOptionsWithRecordProps[V, Data, Methods, Props] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThisTypedComponentOptionsWithRecordProps[V, Data, Methods, Props]]
   }

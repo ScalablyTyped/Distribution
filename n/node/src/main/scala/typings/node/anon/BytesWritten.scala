@@ -13,19 +13,15 @@ trait BytesWritten[TBuffer /* <: Uint8Array */] extends StObject {
 }
 object BytesWritten {
   
-  @scala.inline
-  def apply[TBuffer /* <: Uint8Array */](buffer: TBuffer, bytesWritten: Double): BytesWritten[TBuffer] = {
+  inline def apply[TBuffer /* <: Uint8Array */](buffer: TBuffer, bytesWritten: Double): BytesWritten[TBuffer] = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[BytesWritten[TBuffer]]
   }
   
-  @scala.inline
-  implicit class BytesWrittenMutableBuilder[Self <: BytesWritten[?], TBuffer /* <: Uint8Array */] (val x: Self & BytesWritten[TBuffer]) extends AnyVal {
+  extension [Self <: BytesWritten[?], TBuffer /* <: Uint8Array */](x: Self & BytesWritten[TBuffer]) {
     
-    @scala.inline
-    def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
   }
 }

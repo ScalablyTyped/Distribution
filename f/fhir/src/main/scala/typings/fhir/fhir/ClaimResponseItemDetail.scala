@@ -43,58 +43,41 @@ trait ClaimResponseItemDetail
 }
 object ClaimResponseItemDetail {
   
-  @scala.inline
-  def apply(sequenceLinkId: positiveInt): ClaimResponseItemDetail = {
+  inline def apply(sequenceLinkId: positiveInt): ClaimResponseItemDetail = {
     val __obj = js.Dynamic.literal(sequenceLinkId = sequenceLinkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimResponseItemDetail]
   }
   
-  @scala.inline
-  implicit class ClaimResponseItemDetailMutableBuilder[Self <: ClaimResponseItemDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimResponseItemDetail](x: Self) {
     
-    @scala.inline
-    def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = StObject.set(x, "adjudication", value.asInstanceOf[js.Any])
+    inline def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = StObject.set(x, "adjudication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjudicationUndefined: Self = StObject.set(x, "adjudication", js.undefined)
+    inline def setAdjudicationUndefined: Self = StObject.set(x, "adjudication", js.undefined)
     
-    @scala.inline
-    def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = StObject.set(x, "adjudication", js.Array(value :_*))
+    inline def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = StObject.set(x, "adjudication", js.Array(value :_*))
     
-    @scala.inline
-    def setNoteNumber(value: js.Array[positiveInt]): Self = StObject.set(x, "noteNumber", value.asInstanceOf[js.Any])
+    inline def setNoteNumber(value: js.Array[positiveInt]): Self = StObject.set(x, "noteNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteNumberUndefined: Self = StObject.set(x, "noteNumber", js.undefined)
+    inline def setNoteNumberUndefined: Self = StObject.set(x, "noteNumber", js.undefined)
     
-    @scala.inline
-    def setNoteNumberVarargs(value: positiveInt*): Self = StObject.set(x, "noteNumber", js.Array(value :_*))
+    inline def setNoteNumberVarargs(value: positiveInt*): Self = StObject.set(x, "noteNumber", js.Array(value :_*))
     
-    @scala.inline
-    def setSequenceLinkId(value: positiveInt): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
+    inline def setSequenceLinkId(value: positiveInt): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDetail(value: js.Array[ClaimResponseItemDetailSubDetail]): Self = StObject.set(x, "subDetail", value.asInstanceOf[js.Any])
+    inline def setSubDetail(value: js.Array[ClaimResponseItemDetailSubDetail]): Self = StObject.set(x, "subDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDetailUndefined: Self = StObject.set(x, "subDetail", js.undefined)
+    inline def setSubDetailUndefined: Self = StObject.set(x, "subDetail", js.undefined)
     
-    @scala.inline
-    def setSubDetailVarargs(value: ClaimResponseItemDetailSubDetail*): Self = StObject.set(x, "subDetail", js.Array(value :_*))
+    inline def setSubDetailVarargs(value: ClaimResponseItemDetailSubDetail*): Self = StObject.set(x, "subDetail", js.Array(value :_*))
     
-    @scala.inline
-    def set_noteNumber(value: js.Array[Element]): Self = StObject.set(x, "_noteNumber", value.asInstanceOf[js.Any])
+    inline def set_noteNumber(value: js.Array[Element]): Self = StObject.set(x, "_noteNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_noteNumberUndefined: Self = StObject.set(x, "_noteNumber", js.undefined)
+    inline def set_noteNumberUndefined: Self = StObject.set(x, "_noteNumber", js.undefined)
     
-    @scala.inline
-    def set_noteNumberVarargs(value: Element*): Self = StObject.set(x, "_noteNumber", js.Array(value :_*))
+    inline def set_noteNumberVarargs(value: Element*): Self = StObject.set(x, "_noteNumber", js.Array(value :_*))
     
-    @scala.inline
-    def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
+    inline def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
+    inline def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
   }
 }

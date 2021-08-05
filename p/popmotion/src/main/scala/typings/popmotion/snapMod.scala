@@ -10,8 +10,6 @@ object snapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def snap(points: js.Array[Double]): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("snap")(points.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
-  @scala.inline
-  def snap(points: Double): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("snap")(points.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
+  inline def snap(points: js.Array[Double]): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("snap")(points.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
+  inline def snap(points: Double): js.Function1[/* v */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("snap")(points.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ Double, Double]]
 }

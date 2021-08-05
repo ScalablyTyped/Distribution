@@ -22,8 +22,7 @@ object baseMod {
     @JSImport("react-select/base", "default.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/base", "defaultProps")

@@ -10,19 +10,15 @@ trait PulsateEffect extends StObject {
 }
 object PulsateEffect {
   
-  @scala.inline
-  def apply(): PulsateEffect = {
+  inline def apply(): PulsateEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PulsateEffect]
   }
   
-  @scala.inline
-  implicit class PulsateEffectMutableBuilder[Self <: PulsateEffect] (val x: Self) extends AnyVal {
+  extension [Self <: PulsateEffect](x: Self) {
     
-    @scala.inline
-    def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
+    inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
   }
 }

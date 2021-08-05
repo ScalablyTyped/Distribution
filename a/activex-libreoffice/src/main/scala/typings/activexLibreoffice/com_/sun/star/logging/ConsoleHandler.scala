@@ -27,8 +27,7 @@ trait ConsoleHandler
 }
 object ConsoleHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Encoding: String,
     Formatter: XLogFormatter,
     Level: Double,
@@ -48,13 +47,10 @@ object ConsoleHandler {
     __obj.asInstanceOf[ConsoleHandler]
   }
   
-  @scala.inline
-  implicit class ConsoleHandlerMutableBuilder[Self <: ConsoleHandler] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleHandler](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithSettings(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "createWithSettings", js.Any.fromFunction1(value))
+    inline def setCreateWithSettings(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "createWithSettings", js.Any.fromFunction1(value))
   }
 }

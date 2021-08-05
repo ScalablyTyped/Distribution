@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Method extends StObject
 object Method {
   
-  @scala.inline
-  def ClassMethod_(
+  inline def ClassMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -36,8 +35,7 @@ object Method {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassMethod_]
   }
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,

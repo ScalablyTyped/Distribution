@@ -20,40 +20,29 @@ trait DeviceActionResult extends StObject {
 }
 object DeviceActionResult {
   
-  @scala.inline
-  def apply(): DeviceActionResult = {
+  inline def apply(): DeviceActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceActionResult]
   }
   
-  @scala.inline
-  implicit class DeviceActionResultMutableBuilder[Self <: DeviceActionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceActionResult](x: Self) {
     
-    @scala.inline
-    def setActionName(value: NullableOption[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: NullableOption[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameNull: Self = StObject.set(x, "actionName", null)
+    inline def setActionNameNull: Self = StObject.set(x, "actionName", null)
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    @scala.inline
-    def setActionState(value: ActionState): Self = StObject.set(x, "actionState", value.asInstanceOf[js.Any])
+    inline def setActionState(value: ActionState): Self = StObject.set(x, "actionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionStateUndefined: Self = StObject.set(x, "actionState", js.undefined)
+    inline def setActionStateUndefined: Self = StObject.set(x, "actionState", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDateTime(value: String): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: String): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
+    inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
   }
 }

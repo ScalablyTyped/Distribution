@@ -20,8 +20,7 @@ trait RawNumberData extends StObject {
 }
 object RawNumberData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currency: Record[NumberingSystem, RawCurrencyData],
     decimal: Record[NumberingSystem, LongShort],
     nu: js.Array[String],
@@ -32,25 +31,18 @@ object RawNumberData {
     __obj.asInstanceOf[RawNumberData]
   }
   
-  @scala.inline
-  implicit class RawNumberDataMutableBuilder[Self <: RawNumberData] (val x: Self) extends AnyVal {
+  extension [Self <: RawNumberData](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: Record[NumberingSystem, RawCurrencyData]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: Record[NumberingSystem, RawCurrencyData]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimal(value: Record[NumberingSystem, LongShort]): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    inline def setDecimal(value: Record[NumberingSystem, LongShort]): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
+    inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
+    inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
     
-    @scala.inline
-    def setPercent(value: Record[NumberingSystem, String]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Record[NumberingSystem, String]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbols(value: Record[NumberingSystem, SymbolsData]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: Record[NumberingSystem, SymbolsData]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
   }
 }

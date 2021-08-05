@@ -46,58 +46,41 @@ trait Rule extends StObject {
 }
 object Rule {
   
-  @scala.inline
-  def apply(objectID: String): Rule = {
+  inline def apply(objectID: String): Rule = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
   
-  @scala.inline
-  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+  extension [Self <: Rule](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setConsequence(value: Consequence): Self = StObject.set(x, "consequence", value.asInstanceOf[js.Any])
+    inline def setConsequence(value: Consequence): Self = StObject.set(x, "consequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsequenceUndefined: Self = StObject.set(x, "consequence", js.undefined)
+    inline def setConsequenceUndefined: Self = StObject.set(x, "consequence", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidity(value: js.Array[TimeRange]): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
+    inline def setValidity(value: js.Array[TimeRange]): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidityUndefined: Self = StObject.set(x, "validity", js.undefined)
+    inline def setValidityUndefined: Self = StObject.set(x, "validity", js.undefined)
     
-    @scala.inline
-    def setValidityVarargs(value: TimeRange*): Self = StObject.set(x, "validity", js.Array(value :_*))
+    inline def setValidityVarargs(value: TimeRange*): Self = StObject.set(x, "validity", js.Array(value :_*))
   }
 }

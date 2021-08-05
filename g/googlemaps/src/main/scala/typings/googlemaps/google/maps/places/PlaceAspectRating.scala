@@ -12,20 +12,16 @@ trait PlaceAspectRating extends StObject {
 }
 object PlaceAspectRating {
   
-  @scala.inline
-  def apply(rating: Double, `type`: String): PlaceAspectRating = {
+  inline def apply(rating: Double, `type`: String): PlaceAspectRating = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAspectRating]
   }
   
-  @scala.inline
-  implicit class PlaceAspectRatingMutableBuilder[Self <: PlaceAspectRating] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceAspectRating](x: Self) {
     
-    @scala.inline
-    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait StartTimecode extends StObject {
 }
 object StartTimecode {
   
-  @scala.inline
-  def apply(): StartTimecode = {
+  inline def apply(): StartTimecode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTimecode]
   }
   
-  @scala.inline
-  implicit class StartTimecodeMutableBuilder[Self <: StartTimecode] (val x: Self) extends AnyVal {
+  extension [Self <: StartTimecode](x: Self) {
     
-    @scala.inline
-    def setTimecode(value: string): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
+    inline def setTimecode(value: string): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeUndefined: Self = StObject.set(x, "Timecode", js.undefined)
+    inline def setTimecodeUndefined: Self = StObject.set(x, "Timecode", js.undefined)
   }
 }

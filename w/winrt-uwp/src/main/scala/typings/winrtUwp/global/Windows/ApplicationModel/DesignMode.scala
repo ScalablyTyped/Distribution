@@ -21,6 +21,5 @@ object DesignMode {
   @JSGlobal("Windows.ApplicationModel.DesignMode.designModeEnabled")
   @js.native
   def designModeEnabled: Boolean = js.native
-  @scala.inline
-  def designModeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("designModeEnabled")(x.asInstanceOf[js.Any])
+  inline def designModeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("designModeEnabled")(x.asInstanceOf[js.Any])
 }

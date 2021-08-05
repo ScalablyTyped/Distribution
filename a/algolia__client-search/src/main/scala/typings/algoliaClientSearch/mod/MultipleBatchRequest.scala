@@ -24,22 +24,17 @@ trait MultipleBatchRequest extends StObject {
 }
 object MultipleBatchRequest {
   
-  @scala.inline
-  def apply(action: BatchActionType, body: Record[String, js.Any], indexName: String): MultipleBatchRequest = {
+  inline def apply(action: BatchActionType, body: Record[String, js.Any], indexName: String): MultipleBatchRequest = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleBatchRequest]
   }
   
-  @scala.inline
-  implicit class MultipleBatchRequestMutableBuilder[Self <: MultipleBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleBatchRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: BatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: BatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
   }
 }

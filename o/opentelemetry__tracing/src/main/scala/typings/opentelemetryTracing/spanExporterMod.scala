@@ -21,8 +21,7 @@ object spanExporterMod {
   }
   object SpanExporter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `export`: (js.Array[ReadableSpan], js.Function1[/* result */ ExportResult, Unit]) => Unit,
       shutdown: () => Unit
     ): SpanExporter = {
@@ -31,14 +30,11 @@ object spanExporterMod {
       __obj.asInstanceOf[SpanExporter]
     }
     
-    @scala.inline
-    implicit class SpanExporterMutableBuilder[Self <: SpanExporter] (val x: Self) extends AnyVal {
+    extension [Self <: SpanExporter](x: Self) {
       
-      @scala.inline
-      def setExport(value: (js.Array[ReadableSpan], js.Function1[/* result */ ExportResult, Unit]) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction2(value))
+      inline def setExport(value: (js.Array[ReadableSpan], js.Function1[/* result */ ExportResult, Unit]) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShutdown(value: () => Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
+      inline def setShutdown(value: () => Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
     }
   }
 }

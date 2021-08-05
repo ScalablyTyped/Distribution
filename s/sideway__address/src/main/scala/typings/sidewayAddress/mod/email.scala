@@ -18,10 +18,8 @@ object email {
     * 
     * @return - undefined when valid, otherwise an object with single error key with a string message value.
     */
-  @scala.inline
-  def analyze(email: String): Analysis | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(email.asInstanceOf[js.Any]).asInstanceOf[Analysis | Null]
-  @scala.inline
-  def analyze(email: String, options: Options): Analysis | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Analysis | Null]
+  inline def analyze(email: String): Analysis | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(email.asInstanceOf[js.Any]).asInstanceOf[Analysis | Null]
+  inline def analyze(email: String, options: Options): Analysis | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Analysis | Null]
   
   /**
     * Analyzes a string to verify it is a valid email address.
@@ -31,10 +29,8 @@ object email {
     * 
     * @return - true when valid, otherwise false.
     */
-  @scala.inline
-  def isValid(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isValid(email: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValid(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(email: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait Options
     extends StObject
@@ -49,20 +45,16 @@ object email {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIgnoreLength(value: Boolean): Self = StObject.set(x, "ignoreLength", value.asInstanceOf[js.Any])
+      inline def setIgnoreLength(value: Boolean): Self = StObject.set(x, "ignoreLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreLengthUndefined: Self = StObject.set(x, "ignoreLength", js.undefined)
+      inline def setIgnoreLengthUndefined: Self = StObject.set(x, "ignoreLength", js.undefined)
     }
   }
 }

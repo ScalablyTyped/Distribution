@@ -13,19 +13,15 @@ trait CreateStreamOutput extends StObject {
 }
 object CreateStreamOutput {
   
-  @scala.inline
-  def apply(): CreateStreamOutput = {
+  inline def apply(): CreateStreamOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStreamOutput]
   }
   
-  @scala.inline
-  implicit class CreateStreamOutputMutableBuilder[Self <: CreateStreamOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamOutput](x: Self) {
     
-    @scala.inline
-    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
   }
 }

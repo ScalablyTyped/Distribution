@@ -18,22 +18,17 @@ trait KinesisConfiguration extends StObject {
 }
 object KinesisConfiguration {
   
-  @scala.inline
-  def apply(StreamArn: Arn): KinesisConfiguration = {
+  inline def apply(StreamArn: Arn): KinesisConfiguration = {
     val __obj = js.Dynamic.literal(StreamArn = StreamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisConfiguration]
   }
   
-  @scala.inline
-  implicit class KinesisConfigurationMutableBuilder[Self <: KinesisConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisConfiguration](x: Self) {
     
-    @scala.inline
-    def setAggregationEnabled(value: Boolean): Self = StObject.set(x, "AggregationEnabled", value.asInstanceOf[js.Any])
+    inline def setAggregationEnabled(value: Boolean): Self = StObject.set(x, "AggregationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationEnabledUndefined: Self = StObject.set(x, "AggregationEnabled", js.undefined)
+    inline def setAggregationEnabledUndefined: Self = StObject.set(x, "AggregationEnabled", js.undefined)
     
-    @scala.inline
-    def setStreamArn(value: Arn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+    inline def setStreamArn(value: Arn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
   }
 }

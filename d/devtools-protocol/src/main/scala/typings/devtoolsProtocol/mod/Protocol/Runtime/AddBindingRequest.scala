@@ -12,22 +12,17 @@ trait AddBindingRequest extends StObject {
 }
 object AddBindingRequest {
   
-  @scala.inline
-  def apply(name: String): AddBindingRequest = {
+  inline def apply(name: String): AddBindingRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddBindingRequest]
   }
   
-  @scala.inline
-  implicit class AddBindingRequestMutableBuilder[Self <: AddBindingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddBindingRequest](x: Self) {
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
+    inline def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

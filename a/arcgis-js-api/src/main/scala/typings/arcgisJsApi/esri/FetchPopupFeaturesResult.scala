@@ -40,8 +40,7 @@ trait FetchPopupFeaturesResult
 }
 object FetchPopupFeaturesResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -50,37 +49,26 @@ object FetchPopupFeaturesResult {
     __obj.asInstanceOf[FetchPopupFeaturesResult]
   }
   
-  @scala.inline
-  implicit class FetchPopupFeaturesResultMutableBuilder[Self <: FetchPopupFeaturesResult] (val x: Self) extends AnyVal {
+  extension [Self <: FetchPopupFeaturesResult](x: Self) {
     
-    @scala.inline
-    def setAllGraphicsPromise(value: js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "allGraphicsPromise", value.asInstanceOf[js.Any])
+    inline def setAllGraphicsPromise(value: js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "allGraphicsPromise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllGraphicsPromiseUndefined: Self = StObject.set(x, "allGraphicsPromise", js.undefined)
+    inline def setAllGraphicsPromiseUndefined: Self = StObject.set(x, "allGraphicsPromise", js.undefined)
     
-    @scala.inline
-    def setClientOnlyGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "clientOnlyGraphics", value.asInstanceOf[js.Any])
+    inline def setClientOnlyGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "clientOnlyGraphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientOnlyGraphicsUndefined: Self = StObject.set(x, "clientOnlyGraphics", js.undefined)
+    inline def setClientOnlyGraphicsUndefined: Self = StObject.set(x, "clientOnlyGraphics", js.undefined)
     
-    @scala.inline
-    def setClientOnlyGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "clientOnlyGraphics", js.Array(value :_*))
+    inline def setClientOnlyGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "clientOnlyGraphics", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPromisesPerLayerView(value: js.Array[FetchPopupFeaturesPromisesPerLayerView]): Self = StObject.set(x, "promisesPerLayerView", value.asInstanceOf[js.Any])
+    inline def setPromisesPerLayerView(value: js.Array[FetchPopupFeaturesPromisesPerLayerView]): Self = StObject.set(x, "promisesPerLayerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromisesPerLayerViewUndefined: Self = StObject.set(x, "promisesPerLayerView", js.undefined)
+    inline def setPromisesPerLayerViewUndefined: Self = StObject.set(x, "promisesPerLayerView", js.undefined)
     
-    @scala.inline
-    def setPromisesPerLayerViewVarargs(value: FetchPopupFeaturesPromisesPerLayerView*): Self = StObject.set(x, "promisesPerLayerView", js.Array(value :_*))
+    inline def setPromisesPerLayerViewVarargs(value: FetchPopupFeaturesPromisesPerLayerView*): Self = StObject.set(x, "promisesPerLayerView", js.Array(value :_*))
   }
 }

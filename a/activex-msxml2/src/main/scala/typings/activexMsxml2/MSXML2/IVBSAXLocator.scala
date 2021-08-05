@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IVBSAXLocator interface */
 trait IVBSAXLocator extends StObject {
   
-  @JSName("MSXML2.IVBSAXLocator_typekey")
+  /* private */ @JSName("MSXML2.IVBSAXLocator_typekey")
   var MSXML2DotIVBSAXLocator_typekey: IVBSAXLocator
   
   /** Get the column number where the current document event ends. */
@@ -24,8 +24,7 @@ trait IVBSAXLocator extends StObject {
 }
 object IVBSAXLocator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotIVBSAXLocator_typekey: IVBSAXLocator,
     columnNumber: Double,
     lineNumber: Double,
@@ -37,22 +36,16 @@ object IVBSAXLocator {
     __obj.asInstanceOf[IVBSAXLocator]
   }
   
-  @scala.inline
-  implicit class IVBSAXLocatorMutableBuilder[Self <: IVBSAXLocator] (val x: Self) extends AnyVal {
+  extension [Self <: IVBSAXLocator](x: Self) {
     
-    @scala.inline
-    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSXML2DotIVBSAXLocator_typekey(value: IVBSAXLocator): Self = StObject.set(x, "MSXML2.IVBSAXLocator_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotIVBSAXLocator_typekey(value: IVBSAXLocator): Self = StObject.set(x, "MSXML2.IVBSAXLocator_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
   }
 }

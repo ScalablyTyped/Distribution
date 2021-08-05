@@ -13,20 +13,17 @@ object windows1251Strings {
     extends StObject
        with DecoderMode
        with EncoderMode
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
+  inline def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
   sealed trait html
     extends StObject
        with EncoderMode
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait replacement
     extends StObject
        with DecoderMode
-  @scala.inline
-  def replacement: replacement = "replacement".asInstanceOf[replacement]
+  inline def replacement: replacement = "replacement".asInstanceOf[replacement]
 }

@@ -13,16 +13,13 @@ trait MethodOptionWithResponse
 }
 object MethodOptionWithResponse {
   
-  @scala.inline
-  def apply(): MethodOptionWithResponse = {
+  inline def apply(): MethodOptionWithResponse = {
     val __obj = js.Dynamic.literal(resolveWithFullResponse = true)
     __obj.asInstanceOf[MethodOptionWithResponse]
   }
   
-  @scala.inline
-  implicit class MethodOptionWithResponseMutableBuilder[Self <: MethodOptionWithResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MethodOptionWithResponse](x: Self) {
     
-    @scala.inline
-    def setResolveWithFullResponse(value: `true`): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
+    inline def setResolveWithFullResponse(value: `true`): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
   }
 }

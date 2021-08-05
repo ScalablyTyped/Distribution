@@ -54,46 +54,35 @@ trait FindPlaceRequest extends StObject {
 }
 object FindPlaceRequest {
   
-  @scala.inline
-  def apply(input: String, inputtype: textquery | phonenumber): FindPlaceRequest = {
+  inline def apply(input: String, inputtype: textquery | phonenumber): FindPlaceRequest = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], inputtype = inputtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPlaceRequest]
   }
   
-  @scala.inline
-  implicit class FindPlaceRequestMutableBuilder[Self <: FindPlaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FindPlaceRequest](x: Self) {
     
-    @scala.inline
-    def setFields(
+    inline def setFields(
       value: js.Array[
           icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed
         ]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(
+    inline def setFieldsVarargs(
       value: (icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed)*
     ): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputtype(value: textquery | phonenumber): Self = StObject.set(x, "inputtype", value.asInstanceOf[js.Any])
+    inline def setInputtype(value: textquery | phonenumber): Self = StObject.set(x, "inputtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocationbias(value: String): Self = StObject.set(x, "locationbias", value.asInstanceOf[js.Any])
+    inline def setLocationbias(value: String): Self = StObject.set(x, "locationbias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationbiasUndefined: Self = StObject.set(x, "locationbias", js.undefined)
+    inline def setLocationbiasUndefined: Self = StObject.set(x, "locationbias", js.undefined)
   }
 }

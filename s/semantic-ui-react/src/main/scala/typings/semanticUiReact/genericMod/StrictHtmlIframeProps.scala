@@ -10,19 +10,15 @@ trait StrictHtmlIframeProps extends StObject {
 }
 object StrictHtmlIframeProps {
   
-  @scala.inline
-  def apply(): StrictHtmlIframeProps = {
+  inline def apply(): StrictHtmlIframeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrictHtmlIframeProps]
   }
   
-  @scala.inline
-  implicit class StrictHtmlIframePropsMutableBuilder[Self <: StrictHtmlIframeProps] (val x: Self) extends AnyVal {
+  extension [Self <: StrictHtmlIframeProps](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
   }
 }

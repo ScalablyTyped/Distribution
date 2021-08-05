@@ -28,8 +28,7 @@ trait PSTNDialIn extends StObject {
 }
 object PSTNDialIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CountryCode: CountryCode,
     OneClickIdDelay: OneClickIdDelay,
     OneClickPinDelay: OneClickPinDelay,
@@ -39,19 +38,14 @@ object PSTNDialIn {
     __obj.asInstanceOf[PSTNDialIn]
   }
   
-  @scala.inline
-  implicit class PSTNDialInMutableBuilder[Self <: PSTNDialIn] (val x: Self) extends AnyVal {
+  extension [Self <: PSTNDialIn](x: Self) {
     
-    @scala.inline
-    def setCountryCode(value: CountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: CountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneClickIdDelay(value: OneClickIdDelay): Self = StObject.set(x, "OneClickIdDelay", value.asInstanceOf[js.Any])
+    inline def setOneClickIdDelay(value: OneClickIdDelay): Self = StObject.set(x, "OneClickIdDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneClickPinDelay(value: OneClickPinDelay): Self = StObject.set(x, "OneClickPinDelay", value.asInstanceOf[js.Any])
+    inline def setOneClickPinDelay(value: OneClickPinDelay): Self = StObject.set(x, "OneClickPinDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumber(value: OutboundPhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: OutboundPhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
   }
 }

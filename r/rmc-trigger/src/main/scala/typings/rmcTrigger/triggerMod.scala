@@ -23,8 +23,7 @@ object triggerMod {
     @JSImport("rmc-trigger/lib/Trigger", "default.defaultProps")
     @js.native
     def defaultProps: AfterPopupVisibleChange = js.native
-    @scala.inline
-    def defaultProps_=(x: AfterPopupVisibleChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AfterPopupVisibleChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IProptypes extends StObject {
@@ -37,23 +36,18 @@ object triggerMod {
   }
   object IProptypes {
     
-    @scala.inline
-    def apply(onClose: () => Unit, onTargetClick: () => Unit, visible: Boolean): IProptypes = {
+    inline def apply(onClose: () => Unit, onTargetClick: () => Unit, visible: Boolean): IProptypes = {
       val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), onTargetClick = js.Any.fromFunction0(onTargetClick), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProptypes]
     }
     
-    @scala.inline
-    implicit class IProptypesMutableBuilder[Self <: IProptypes] (val x: Self) extends AnyVal {
+    extension [Self <: IProptypes](x: Self) {
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTargetClick(value: () => Unit): Self = StObject.set(x, "onTargetClick", js.Any.fromFunction0(value))
+      inline def setOnTargetClick(value: () => Unit): Self = StObject.set(x, "onTargetClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   

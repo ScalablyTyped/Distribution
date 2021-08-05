@@ -14,22 +14,17 @@ trait PDFRenderTextLayer extends StObject {
 }
 object PDFRenderTextLayer {
   
-  @scala.inline
-  def apply(appendText: () => Unit, beginLayout: () => Unit, endLayout: () => Unit): PDFRenderTextLayer = {
+  inline def apply(appendText: () => Unit, beginLayout: () => Unit, endLayout: () => Unit): PDFRenderTextLayer = {
     val __obj = js.Dynamic.literal(appendText = js.Any.fromFunction0(appendText), beginLayout = js.Any.fromFunction0(beginLayout), endLayout = js.Any.fromFunction0(endLayout))
     __obj.asInstanceOf[PDFRenderTextLayer]
   }
   
-  @scala.inline
-  implicit class PDFRenderTextLayerMutableBuilder[Self <: PDFRenderTextLayer] (val x: Self) extends AnyVal {
+  extension [Self <: PDFRenderTextLayer](x: Self) {
     
-    @scala.inline
-    def setAppendText(value: () => Unit): Self = StObject.set(x, "appendText", js.Any.fromFunction0(value))
+    inline def setAppendText(value: () => Unit): Self = StObject.set(x, "appendText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeginLayout(value: () => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction0(value))
+    inline def setBeginLayout(value: () => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndLayout(value: () => Unit): Self = StObject.set(x, "endLayout", js.Any.fromFunction0(value))
+    inline def setEndLayout(value: () => Unit): Self = StObject.set(x, "endLayout", js.Any.fromFunction0(value))
   }
 }

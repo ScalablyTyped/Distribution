@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrackSwitchOffMode extends StObject
 object TrackSwitchOffMode {
   
-  @scala.inline
-  def detected: typings.twilioVideo.twilioVideoStrings.detected = "detected".asInstanceOf[typings.twilioVideo.twilioVideoStrings.detected]
+  inline def detected: typings.twilioVideo.twilioVideoStrings.detected = "detected".asInstanceOf[typings.twilioVideo.twilioVideoStrings.detected]
   
-  @scala.inline
-  def disabled: typings.twilioVideo.twilioVideoStrings.disabled = "disabled".asInstanceOf[typings.twilioVideo.twilioVideoStrings.disabled]
+  inline def disabled: typings.twilioVideo.twilioVideoStrings.disabled = "disabled".asInstanceOf[typings.twilioVideo.twilioVideoStrings.disabled]
   
-  @scala.inline
-  def predicted: typings.twilioVideo.twilioVideoStrings.predicted = "predicted".asInstanceOf[typings.twilioVideo.twilioVideoStrings.predicted]
+  inline def predicted: typings.twilioVideo.twilioVideoStrings.predicted = "predicted".asInstanceOf[typings.twilioVideo.twilioVideoStrings.predicted]
 }

@@ -81,7 +81,7 @@ trait SlideRange extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.SlideRange_typekey")
+  /* private */ @JSName("PowerPoint.SlideRange_typekey")
   var PowerPointDotSlideRange_typekey: SlideRange = js.native
   
   val PrintSteps: Double = js.native

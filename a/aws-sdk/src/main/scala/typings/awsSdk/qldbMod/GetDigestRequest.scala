@@ -13,16 +13,13 @@ trait GetDigestRequest extends StObject {
 }
 object GetDigestRequest {
   
-  @scala.inline
-  def apply(Name: LedgerName): GetDigestRequest = {
+  inline def apply(Name: LedgerName): GetDigestRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDigestRequest]
   }
   
-  @scala.inline
-  implicit class GetDigestRequestMutableBuilder[Self <: GetDigestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDigestRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

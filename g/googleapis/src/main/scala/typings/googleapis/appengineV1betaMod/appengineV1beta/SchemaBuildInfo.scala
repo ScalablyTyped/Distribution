@@ -17,19 +17,15 @@ trait SchemaBuildInfo extends StObject {
 }
 object SchemaBuildInfo {
   
-  @scala.inline
-  def apply(): SchemaBuildInfo = {
+  inline def apply(): SchemaBuildInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildInfo]
   }
   
-  @scala.inline
-  implicit class SchemaBuildInfoMutableBuilder[Self <: SchemaBuildInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildInfo](x: Self) {
     
-    @scala.inline
-    def setCloudBuildId(value: String): Self = StObject.set(x, "cloudBuildId", value.asInstanceOf[js.Any])
+    inline def setCloudBuildId(value: String): Self = StObject.set(x, "cloudBuildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudBuildIdUndefined: Self = StObject.set(x, "cloudBuildId", js.undefined)
+    inline def setCloudBuildIdUndefined: Self = StObject.set(x, "cloudBuildId", js.undefined)
   }
 }

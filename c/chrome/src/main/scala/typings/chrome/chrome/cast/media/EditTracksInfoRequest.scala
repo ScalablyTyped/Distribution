@@ -12,22 +12,17 @@ trait EditTracksInfoRequest extends StObject {
 }
 object EditTracksInfoRequest {
   
-  @scala.inline
-  def apply(activeTrackIds: js.Array[Double], textTrackStyle: TextTrackStyle): EditTracksInfoRequest = {
+  inline def apply(activeTrackIds: js.Array[Double], textTrackStyle: TextTrackStyle): EditTracksInfoRequest = {
     val __obj = js.Dynamic.literal(activeTrackIds = activeTrackIds.asInstanceOf[js.Any], textTrackStyle = textTrackStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditTracksInfoRequest]
   }
   
-  @scala.inline
-  implicit class EditTracksInfoRequestMutableBuilder[Self <: EditTracksInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EditTracksInfoRequest](x: Self) {
     
-    @scala.inline
-    def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
+    inline def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
+    inline def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTextTrackStyle(value: TextTrackStyle): Self = StObject.set(x, "textTrackStyle", value.asInstanceOf[js.Any])
+    inline def setTextTrackStyle(value: TextTrackStyle): Self = StObject.set(x, "textTrackStyle", value.asInstanceOf[js.Any])
   }
 }

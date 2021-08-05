@@ -18,22 +18,17 @@ trait ArchiveGroupSettings extends StObject {
 }
 object ArchiveGroupSettings {
   
-  @scala.inline
-  def apply(Destination: OutputLocationRef): ArchiveGroupSettings = {
+  inline def apply(Destination: OutputLocationRef): ArchiveGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveGroupSettings]
   }
   
-  @scala.inline
-  implicit class ArchiveGroupSettingsMutableBuilder[Self <: ArchiveGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ArchiveGroupSettings](x: Self) {
     
-    @scala.inline
-    def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloverInterval(value: integerMin1): Self = StObject.set(x, "RolloverInterval", value.asInstanceOf[js.Any])
+    inline def setRolloverInterval(value: integerMin1): Self = StObject.set(x, "RolloverInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloverIntervalUndefined: Self = StObject.set(x, "RolloverInterval", js.undefined)
+    inline def setRolloverIntervalUndefined: Self = StObject.set(x, "RolloverInterval", js.undefined)
   }
 }

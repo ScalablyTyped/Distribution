@@ -167,16 +167,12 @@ object mod {
   @js.native
   val console: Formatter = js.native
   
-  @scala.inline
-  def create(): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DiffPatcher]
-  @scala.inline
-  def create(options: js.Any): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[DiffPatcher]
+  inline def create(): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DiffPatcher]
+  inline def create(options: js.Any): DiffPatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[DiffPatcher]
   
-  @scala.inline
-  def dateReviver(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dateReviver")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def dateReviver(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dateReviver")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def diff(left: js.Any, right: js.Any): js.UndefOr[Delta] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Delta]]
+  inline def diff(left: js.Any, right: js.Any): js.UndefOr[Delta] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Delta]]
   
   object formatters {
     
@@ -187,30 +183,24 @@ object mod {
     @JSImport("jsondiffpatch", "formatters.annotated")
     @js.native
     def annotated: Formatter = js.native
-    @scala.inline
-    def annotated_=(x: Formatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("annotated")(x.asInstanceOf[js.Any])
+    inline def annotated_=(x: Formatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("annotated")(x.asInstanceOf[js.Any])
     
     @JSImport("jsondiffpatch", "formatters.console")
     @js.native
     def console: Formatter = js.native
-    @scala.inline
-    def console_=(x: Formatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("console")(x.asInstanceOf[js.Any])
+    inline def console_=(x: Formatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("console")(x.asInstanceOf[js.Any])
     
     @JSImport("jsondiffpatch", "formatters.html")
     @js.native
     def html: HtmlFormatter = js.native
-    @scala.inline
-    def html_=(x: HtmlFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
+    inline def html_=(x: HtmlFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def patch(left: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(left.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def patch(left: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(left.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def reverse(delta: Delta): js.UndefOr[Delta] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(delta.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Delta]]
+  inline def reverse(delta: Delta): js.UndefOr[Delta] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(delta.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Delta]]
   
-  @scala.inline
-  def unpatch(right: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpatch")(right.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def unpatch(right: js.Any, delta: Delta): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpatch")(right.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait Config extends StObject {
     
@@ -242,47 +232,34 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setArrays(value: DetectMove): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
+      inline def setArrays(value: DetectMove): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
+      inline def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
       
-      @scala.inline
-      def setCloneDiffValues(value: Boolean | (js.Function1[/* value */ js.Any, js.Any])): Self = StObject.set(x, "cloneDiffValues", value.asInstanceOf[js.Any])
+      inline def setCloneDiffValues(value: Boolean | (js.Function1[/* value */ js.Any, js.Any])): Self = StObject.set(x, "cloneDiffValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneDiffValuesFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "cloneDiffValues", js.Any.fromFunction1(value))
+      inline def setCloneDiffValuesFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "cloneDiffValues", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloneDiffValuesUndefined: Self = StObject.set(x, "cloneDiffValues", js.undefined)
+      inline def setCloneDiffValuesUndefined: Self = StObject.set(x, "cloneDiffValues", js.undefined)
       
-      @scala.inline
-      def setObjectHash(value: (/* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "objectHash", js.Any.fromFunction2(value))
+      inline def setObjectHash(value: (/* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "objectHash", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setObjectHashUndefined: Self = StObject.set(x, "objectHash", js.undefined)
+      inline def setObjectHashUndefined: Self = StObject.set(x, "objectHash", js.undefined)
       
-      @scala.inline
-      def setPropertyFilter(value: (/* name */ String, /* context */ DiffContext) => Boolean): Self = StObject.set(x, "propertyFilter", js.Any.fromFunction2(value))
+      inline def setPropertyFilter(value: (/* name */ String, /* context */ DiffContext) => Boolean): Self = StObject.set(x, "propertyFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPropertyFilterUndefined: Self = StObject.set(x, "propertyFilter", js.undefined)
+      inline def setPropertyFilterUndefined: Self = StObject.set(x, "propertyFilter", js.undefined)
       
-      @scala.inline
-      def setTextDiff(value: MinLength): Self = StObject.set(x, "textDiff", value.asInstanceOf[js.Any])
+      inline def setTextDiff(value: MinLength): Self = StObject.set(x, "textDiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDiffUndefined: Self = StObject.set(x, "textDiff", js.undefined)
+      inline def setTextDiffUndefined: Self = StObject.set(x, "textDiff", js.undefined)
     }
   }
   
@@ -316,17 +293,14 @@ object mod {
   }
   object Formatter {
     
-    @scala.inline
-    def apply(format: (Delta, js.Any) => String): Formatter = {
+    inline def apply(format: (Delta, js.Any) => String): Formatter = {
       val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format))
       __obj.asInstanceOf[Formatter]
     }
     
-    @scala.inline
-    implicit class FormatterMutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
+    extension [Self <: Formatter](x: Self) {
       
-      @scala.inline
-      def setFormat(value: (Delta, js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (Delta, js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     }
   }
   

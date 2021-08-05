@@ -16,20 +16,16 @@ object anon {
   }
   object As {
     
-    @scala.inline
-    def apply[T /* <: ElementType[js.Any] */](): As[T] = {
+    inline def apply[T /* <: ElementType[js.Any] */](): As[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[As[T]]
     }
     
-    @scala.inline
-    implicit class AsMutableBuilder[Self <: As[?], T /* <: ElementType[js.Any] */] (val x: Self & As[T]) extends AnyVal {
+    extension [Self <: As[?], T /* <: ElementType[js.Any] */](x: Self & As[T]) {
       
-      @scala.inline
-      def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     }
   }
 }

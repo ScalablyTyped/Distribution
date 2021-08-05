@@ -27,58 +27,41 @@ trait PlannerChecklistItem extends StObject {
 }
 object PlannerChecklistItem {
   
-  @scala.inline
-  def apply(): PlannerChecklistItem = {
+  inline def apply(): PlannerChecklistItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerChecklistItem]
   }
   
-  @scala.inline
-  implicit class PlannerChecklistItemMutableBuilder[Self <: PlannerChecklistItem] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerChecklistItem](x: Self) {
     
-    @scala.inline
-    def setIsChecked(value: NullableOption[Boolean]): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
+    inline def setIsChecked(value: NullableOption[Boolean]): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCheckedNull: Self = StObject.set(x, "isChecked", null)
+    inline def setIsCheckedNull: Self = StObject.set(x, "isChecked", null)
     
-    @scala.inline
-    def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
+    inline def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
     
-    @scala.inline
-    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
+    inline def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
     
-    @scala.inline
-    def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+    inline def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
+    inline def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
     
-    @scala.inline
-    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+    inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
-    @scala.inline
-    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleNull: Self = StObject.set(x, "title", null)
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

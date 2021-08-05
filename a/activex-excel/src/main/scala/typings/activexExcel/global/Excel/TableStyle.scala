@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TableStyle")
 @js.native
-class TableStyle protected ()
+/* private */ class TableStyle ()
   extends StObject
      with typings.activexExcel.Excel.TableStyle

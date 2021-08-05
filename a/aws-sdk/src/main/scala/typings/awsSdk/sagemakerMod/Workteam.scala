@@ -58,8 +58,7 @@ trait Workteam extends StObject {
 }
 object Workteam {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String200,
     MemberDefinitions: MemberDefinitions,
     WorkteamArn: WorkteamArn,
@@ -69,61 +68,42 @@ object Workteam {
     __obj.asInstanceOf[Workteam]
   }
   
-  @scala.inline
-  implicit class WorkteamMutableBuilder[Self <: Workteam] (val x: Self) extends AnyVal {
+  extension [Self <: Workteam](x: Self) {
     
-    @scala.inline
-    def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String200): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String200): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
+    inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
-    @scala.inline
-    def setMemberDefinitions(value: MemberDefinitions): Self = StObject.set(x, "MemberDefinitions", value.asInstanceOf[js.Any])
+    inline def setMemberDefinitions(value: MemberDefinitions): Self = StObject.set(x, "MemberDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value :_*))
+    inline def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
+    inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigurationUndefined: Self = StObject.set(x, "NotificationConfiguration", js.undefined)
+    inline def setNotificationConfigurationUndefined: Self = StObject.set(x, "NotificationConfiguration", js.undefined)
     
-    @scala.inline
-    def setProductListingIds(value: ProductListings): Self = StObject.set(x, "ProductListingIds", value.asInstanceOf[js.Any])
+    inline def setProductListingIds(value: ProductListings): Self = StObject.set(x, "ProductListingIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductListingIdsUndefined: Self = StObject.set(x, "ProductListingIds", js.undefined)
+    inline def setProductListingIdsUndefined: Self = StObject.set(x, "ProductListingIds", js.undefined)
     
-    @scala.inline
-    def setProductListingIdsVarargs(value: String*): Self = StObject.set(x, "ProductListingIds", js.Array(value :_*))
+    inline def setProductListingIdsVarargs(value: String*): Self = StObject.set(x, "ProductListingIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
+    inline def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDomainUndefined: Self = StObject.set(x, "SubDomain", js.undefined)
+    inline def setSubDomainUndefined: Self = StObject.set(x, "SubDomain", js.undefined)
     
-    @scala.inline
-    def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
+    inline def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkforceArnUndefined: Self = StObject.set(x, "WorkforceArn", js.undefined)
+    inline def setWorkforceArnUndefined: Self = StObject.set(x, "WorkforceArn", js.undefined)
     
-    @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
+    inline def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkteamName(value: WorkteamName): Self = StObject.set(x, "WorkteamName", value.asInstanceOf[js.Any])
+    inline def setWorkteamName(value: WorkteamName): Self = StObject.set(x, "WorkteamName", value.asInstanceOf[js.Any])
   }
 }

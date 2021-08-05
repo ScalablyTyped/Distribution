@@ -38,43 +38,31 @@ trait ImmunizationReaction
 }
 object ImmunizationReaction {
   
-  @scala.inline
-  def apply(): ImmunizationReaction = {
+  inline def apply(): ImmunizationReaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImmunizationReaction]
   }
   
-  @scala.inline
-  implicit class ImmunizationReactionMutableBuilder[Self <: ImmunizationReaction] (val x: Self) extends AnyVal {
+  extension [Self <: ImmunizationReaction](x: Self) {
     
-    @scala.inline
-    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDetail(value: Reference): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: Reference): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setReported(value: Boolean): Self = StObject.set(x, "reported", value.asInstanceOf[js.Any])
+    inline def setReported(value: Boolean): Self = StObject.set(x, "reported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportedUndefined: Self = StObject.set(x, "reported", js.undefined)
+    inline def setReportedUndefined: Self = StObject.set(x, "reported", js.undefined)
     
-    @scala.inline
-    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
-    @scala.inline
-    def set_reported(value: Element): Self = StObject.set(x, "_reported", value.asInstanceOf[js.Any])
+    inline def set_reported(value: Element): Self = StObject.set(x, "_reported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_reportedUndefined: Self = StObject.set(x, "_reported", js.undefined)
+    inline def set_reportedUndefined: Self = StObject.set(x, "_reported", js.undefined)
   }
 }

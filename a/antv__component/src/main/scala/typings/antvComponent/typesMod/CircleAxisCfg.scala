@@ -36,31 +36,23 @@ trait CircleAxisCfg
 }
 object CircleAxisCfg {
   
-  @scala.inline
-  def apply(center: Point, container: IGroup, radius: Double, ticks: js.Array[ListItem]): CircleAxisCfg = {
+  inline def apply(center: Point, container: IGroup, radius: Double, ticks: js.Array[ListItem]): CircleAxisCfg = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleAxisCfg]
   }
   
-  @scala.inline
-  implicit class CircleAxisCfgMutableBuilder[Self <: CircleAxisCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CircleAxisCfg](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
   }
 }

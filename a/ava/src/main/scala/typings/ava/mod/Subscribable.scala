@@ -11,16 +11,13 @@ trait Subscribable extends StObject {
 }
 object Subscribable {
   
-  @scala.inline
-  def apply(subscribe: Complete => Unit): Subscribable = {
+  inline def apply(subscribe: Complete => Unit): Subscribable = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
     __obj.asInstanceOf[Subscribable]
   }
   
-  @scala.inline
-  implicit class SubscribableMutableBuilder[Self <: Subscribable] (val x: Self) extends AnyVal {
+  extension [Self <: Subscribable](x: Self) {
     
-    @scala.inline
-    def setSubscribe(value: Complete => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+    inline def setSubscribe(value: Complete => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
   }
 }

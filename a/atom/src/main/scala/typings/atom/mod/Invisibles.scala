@@ -32,37 +32,27 @@ trait Invisibles extends StObject {
 }
 object Invisibles {
   
-  @scala.inline
-  def apply(): Invisibles = {
+  inline def apply(): Invisibles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invisibles]
   }
   
-  @scala.inline
-  implicit class InvisiblesMutableBuilder[Self <: Invisibles] (val x: Self) extends AnyVal {
+  extension [Self <: Invisibles](x: Self) {
     
-    @scala.inline
-    def setCr(value: Boolean | String): Self = StObject.set(x, "cr", value.asInstanceOf[js.Any])
+    inline def setCr(value: Boolean | String): Self = StObject.set(x, "cr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrUndefined: Self = StObject.set(x, "cr", js.undefined)
+    inline def setCrUndefined: Self = StObject.set(x, "cr", js.undefined)
     
-    @scala.inline
-    def setEol(value: Boolean | String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+    inline def setEol(value: Boolean | String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+    inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
     
-    @scala.inline
-    def setSpace(value: Boolean | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: Boolean | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
-    @scala.inline
-    def setTab(value: Boolean | String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: Boolean | String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
+    inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
   }
 }

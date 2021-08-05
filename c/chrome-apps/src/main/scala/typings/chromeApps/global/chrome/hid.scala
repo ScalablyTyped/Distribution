@@ -38,8 +38,7 @@ object hid {
     * @param callback The callback function returns an object, containing the connectionId.
     *                 The connectionId is the opaque ID used to identify this connection in all other functions.
     */
-  @scala.inline
-  def connect(deviceId: integer, callback: js.Function1[/* connection */ ConnectionId, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(deviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(deviceId: integer, callback: js.Function1[/* connection */ ConnectionId, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(deviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Disconnect from a device.
@@ -47,18 +46,15 @@ object hid {
     * @param connectionId The connectionId returned by connect.
     * @param [callback]
     */
-  @scala.inline
-  def disconnect(connectionId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def disconnect(connectionId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disconnect(connectionId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disconnect(connectionId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Enumerate connected HID devices.
     * @param options The properties to search for on target devices.
     * @param callback
     */
-  @scala.inline
-  def getDevices(options: DeviceOptions, callback: js.Function1[/* devices */ js.Array[HidDeviceInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getDevices(options: DeviceOptions, callback: js.Function1[/* devices */ js.Array[HidDeviceInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @requires(dev) **Dev channel only!**
@@ -72,8 +68,7 @@ object hid {
     * filters are provided devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
-  @scala.inline
-  def getUserSelectedDevices(callback: js.Function1[/* devices */ HidDeviceInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getUserSelectedDevices(callback: js.Function1[/* devices */ HidDeviceInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * @since Chrome 45.
     * @requires(dev) **Dev channel only!**
@@ -87,8 +82,7 @@ object hid {
     * @param options Configuration of the device picker dialog box.
     * @param callback Invoked with a list of chosen Devices.
     */
-  @scala.inline
-  def getUserSelectedDevices(
+  inline def getUserSelectedDevices(
     options: UserSelectedDevicePickerOptions,
     callback: js.Function1[/* devices */ HidDeviceInfo, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -123,8 +117,7 @@ object hid {
     *                      * reportId - The report ID or 0 if none.
     *                      * data - The report data, the report ID prefix (if present) is removed.
     */
-  @scala.inline
-  def receive(
+  inline def receive(
     connectionId: integer,
     callback: js.Function2[/* reportId */ integer, /* data */ ArrayBuffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receive")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -135,8 +128,7 @@ object hid {
     * @param reportId The report ID, or 0 if none.
     * @param callback Will provide `data` which contain the report data, including a report ID prefix if one is sent by the device.
     */
-  @scala.inline
-  def receiveFeatureReport(connectionId: integer, reportId: integer, callback: js.Function1[/* data */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveFeatureReport(connectionId: integer, reportId: integer, callback: js.Function1[/* data */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Send an output report to the device.
@@ -146,8 +138,7 @@ object hid {
     * @param data The report data.
     * @param callback
     */
-  @scala.inline
-  def send(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Send a feature report to the device.
@@ -157,6 +148,5 @@ object hid {
     * @param data The report data.
     * @param callback
     */
-  @scala.inline
-  def sendFeatureReport(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendFeatureReport(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

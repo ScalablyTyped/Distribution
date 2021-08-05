@@ -13,16 +13,13 @@ trait ComputeCapacity extends StObject {
 }
 object ComputeCapacity {
   
-  @scala.inline
-  def apply(DesiredInstances: Integer): ComputeCapacity = {
+  inline def apply(DesiredInstances: Integer): ComputeCapacity = {
     val __obj = js.Dynamic.literal(DesiredInstances = DesiredInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeCapacity]
   }
   
-  @scala.inline
-  implicit class ComputeCapacityMutableBuilder[Self <: ComputeCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeCapacity](x: Self) {
     
-    @scala.inline
-    def setDesiredInstances(value: Integer): Self = StObject.set(x, "DesiredInstances", value.asInstanceOf[js.Any])
+    inline def setDesiredInstances(value: Integer): Self = StObject.set(x, "DesiredInstances", value.asInstanceOf[js.Any])
   }
 }

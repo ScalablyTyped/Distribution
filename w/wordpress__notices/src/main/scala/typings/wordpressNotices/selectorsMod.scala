@@ -11,8 +11,6 @@ object selectorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNotices(): js.Array[Notice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotices")().asInstanceOf[js.Array[Notice]]
-  @scala.inline
-  def getNotices(context: String): js.Array[Notice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotices")(context.asInstanceOf[js.Any]).asInstanceOf[js.Array[Notice]]
+  inline def getNotices(): js.Array[Notice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotices")().asInstanceOf[js.Array[Notice]]
+  inline def getNotices(context: String): js.Array[Notice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotices")(context.asInstanceOf[js.Any]).asInstanceOf[js.Array[Notice]]
 }

@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _Clip extends StObject
 object _Clip {
   
-  @scala.inline
-  def Path(path: String | SignalRef): typings.vegaTypings.anon.Path = {
+  inline def Path(path: String | SignalRef): typings.vegaTypings.anon.Path = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.anon.Path]
   }
   
-  @scala.inline
-  def Sphere(sphere: String | SignalRef): typings.vegaTypings.anon.Sphere = {
+  inline def Sphere(sphere: String | SignalRef): typings.vegaTypings.anon.Sphere = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.anon.Sphere]
   }

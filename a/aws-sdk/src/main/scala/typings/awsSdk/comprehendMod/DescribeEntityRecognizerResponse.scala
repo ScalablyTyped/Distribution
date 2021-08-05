@@ -13,19 +13,15 @@ trait DescribeEntityRecognizerResponse extends StObject {
 }
 object DescribeEntityRecognizerResponse {
   
-  @scala.inline
-  def apply(): DescribeEntityRecognizerResponse = {
+  inline def apply(): DescribeEntityRecognizerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEntityRecognizerResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEntityRecognizerResponseMutableBuilder[Self <: DescribeEntityRecognizerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEntityRecognizerResponse](x: Self) {
     
-    @scala.inline
-    def setEntityRecognizerProperties(value: EntityRecognizerProperties): Self = StObject.set(x, "EntityRecognizerProperties", value.asInstanceOf[js.Any])
+    inline def setEntityRecognizerProperties(value: EntityRecognizerProperties): Self = StObject.set(x, "EntityRecognizerProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityRecognizerPropertiesUndefined: Self = StObject.set(x, "EntityRecognizerProperties", js.undefined)
+    inline def setEntityRecognizerPropertiesUndefined: Self = StObject.set(x, "EntityRecognizerProperties", js.undefined)
   }
 }

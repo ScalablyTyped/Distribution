@@ -19,40 +19,29 @@ trait Format extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply(method: String): Format = {
+  inline def apply(method: String): Format = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+  extension [Self <: Format](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFormatVersion(value: String): Self = StObject.set(x, "formatVersion", value.asInstanceOf[js.Any])
+    inline def setFormatVersion(value: String): Self = StObject.set(x, "formatVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatVersionUndefined: Self = StObject.set(x, "formatVersion", js.undefined)
+    inline def setFormatVersionUndefined: Self = StObject.set(x, "formatVersion", js.undefined)
     
-    @scala.inline
-    def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

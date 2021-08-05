@@ -20,44 +20,32 @@ object tooltipOptionsMod {
   }
   object TooltipOptions {
     
-    @scala.inline
-    def apply(): TooltipOptions = {
+    inline def apply(): TooltipOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TooltipOptions]
     }
     
-    @scala.inline
-    implicit class TooltipOptionsMutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipOptions](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+      inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
+      inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
+      inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
+      inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
     }
   }
 }

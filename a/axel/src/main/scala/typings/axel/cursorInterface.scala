@@ -16,25 +16,19 @@ trait cursorInterface extends StObject {
 }
 object cursorInterface {
   
-  @scala.inline
-  def apply(off: () => Unit, on: () => Unit, reset: () => Unit, restore: () => Unit): cursorInterface = {
+  inline def apply(off: () => Unit, on: () => Unit, reset: () => Unit, restore: () => Unit): cursorInterface = {
     val __obj = js.Dynamic.literal(off = js.Any.fromFunction0(off), on = js.Any.fromFunction0(on), reset = js.Any.fromFunction0(reset), restore = js.Any.fromFunction0(restore))
     __obj.asInstanceOf[cursorInterface]
   }
   
-  @scala.inline
-  implicit class cursorInterfaceMutableBuilder[Self <: cursorInterface] (val x: Self) extends AnyVal {
+  extension [Self <: cursorInterface](x: Self) {
     
-    @scala.inline
-    def setOff(value: () => Unit): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
+    inline def setOff(value: () => Unit): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: () => Unit): Self = StObject.set(x, "on", js.Any.fromFunction0(value))
+    inline def setOn(value: () => Unit): Self = StObject.set(x, "on", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
   }
 }

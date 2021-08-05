@@ -26,34 +26,25 @@ trait AddBindingFromSelectionOptions extends StObject {
 }
 object AddBindingFromSelectionOptions {
   
-  @scala.inline
-  def apply(): AddBindingFromSelectionOptions = {
+  inline def apply(): AddBindingFromSelectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddBindingFromSelectionOptions]
   }
   
-  @scala.inline
-  implicit class AddBindingFromSelectionOptionsMutableBuilder[Self <: AddBindingFromSelectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddBindingFromSelectionOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

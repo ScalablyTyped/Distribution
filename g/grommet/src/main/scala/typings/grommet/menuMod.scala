@@ -64,110 +64,76 @@ object menuMod {
   }
   object MenuProps {
     
-    @scala.inline
-    def apply(items: js.Array[js.Object]): MenuProps = {
+    inline def apply(items: js.Array[js.Object]): MenuProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuProps]
     }
     
-    @scala.inline
-    implicit class MenuPropsMutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuProps](x: Self) {
       
-      @scala.inline
-      def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
+      inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
+      inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
       
-      @scala.inline
-      def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDropAlign(value: Right): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
+      inline def setDropAlign(value: Right): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
+      inline def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
       
-      @scala.inline
-      def setDropBackground(value: String | ColorOpacity): Self = StObject.set(x, "dropBackground", value.asInstanceOf[js.Any])
+      inline def setDropBackground(value: String | ColorOpacity): Self = StObject.set(x, "dropBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropBackgroundUndefined: Self = StObject.set(x, "dropBackground", js.undefined)
+      inline def setDropBackgroundUndefined: Self = StObject.set(x, "dropBackground", js.undefined)
       
-      @scala.inline
-      def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
+      inline def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
+      inline def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
       
-      @scala.inline
-      def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+      inline def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+      inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
       
-      @scala.inline
-      def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+      inline def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+      inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      @scala.inline
-      def setIcon(value: Boolean | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Boolean | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setJustifyContent(value: JustifyContentType): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+      inline def setJustifyContent(value: JustifyContentType): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+      inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setMessages(value: CloseMenu): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: CloseMenu): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

@@ -14,25 +14,19 @@ trait ServiceIdentity extends StObject {
 }
 object ServiceIdentity {
   
-  @scala.inline
-  def apply(): ServiceIdentity = {
+  inline def apply(): ServiceIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceIdentity]
   }
   
-  @scala.inline
-  implicit class ServiceIdentityMutableBuilder[Self <: ServiceIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceIdentity](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+    inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+    inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
   }
 }

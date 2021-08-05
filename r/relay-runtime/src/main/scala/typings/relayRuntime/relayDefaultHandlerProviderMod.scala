@@ -11,8 +11,7 @@ object relayDefaultHandlerProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def RelayDefaultHandlerProvider(handle: String): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("RelayDefaultHandlerProvider")(handle.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def RelayDefaultHandlerProvider(handle: String): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("RelayDefaultHandlerProvider")(handle.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   type HandlerProvider = js.Function1[/* handle */ String, js.Any]
 }

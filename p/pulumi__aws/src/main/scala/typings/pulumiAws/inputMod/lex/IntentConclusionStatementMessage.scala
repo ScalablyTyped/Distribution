@@ -25,25 +25,19 @@ trait IntentConclusionStatementMessage extends StObject {
 }
 object IntentConclusionStatementMessage {
   
-  @scala.inline
-  def apply(content: Input[String], contentType: Input[String]): IntentConclusionStatementMessage = {
+  inline def apply(content: Input[String], contentType: Input[String]): IntentConclusionStatementMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentConclusionStatementMessage]
   }
   
-  @scala.inline
-  implicit class IntentConclusionStatementMessageMutableBuilder[Self <: IntentConclusionStatementMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IntentConclusionStatementMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumber(value: Input[Double]): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
+    inline def setGroupNumber(value: Input[Double]): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
+    inline def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait AdWordsAccount extends StObject {
 }
 object AdWordsAccount {
   
-  @scala.inline
-  def apply(): AdWordsAccount = {
+  inline def apply(): AdWordsAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdWordsAccount]
   }
   
-  @scala.inline
-  implicit class AdWordsAccountMutableBuilder[Self <: AdWordsAccount] (val x: Self) extends AnyVal {
+  extension [Self <: AdWordsAccount](x: Self) {
     
-    @scala.inline
-    def setAutoTaggingEnabled(value: Boolean): Self = StObject.set(x, "autoTaggingEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoTaggingEnabled(value: Boolean): Self = StObject.set(x, "autoTaggingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoTaggingEnabledUndefined: Self = StObject.set(x, "autoTaggingEnabled", js.undefined)
+    inline def setAutoTaggingEnabledUndefined: Self = StObject.set(x, "autoTaggingEnabled", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

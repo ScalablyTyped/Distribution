@@ -18,16 +18,13 @@ trait Navigation extends StObject {
 }
 object Navigation {
   
-  @scala.inline
-  def apply(items: ItemCollection[NavigationItem]): Navigation = {
+  inline def apply(items: ItemCollection[NavigationItem]): Navigation = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigation]
   }
   
-  @scala.inline
-  implicit class NavigationMutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
+  extension [Self <: Navigation](x: Self) {
     
-    @scala.inline
-    def setItems(value: ItemCollection[NavigationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ItemCollection[NavigationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

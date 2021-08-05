@@ -55,21 +55,16 @@ object staticIpAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StaticIpAttachmentState): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StaticIpAttachmentState, opts: CustomResourceOptions): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
+    inline def get(name: String, id: Input[ID]): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
+    inline def get(name: String, id: Input[ID], state: StaticIpAttachmentState): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
+    inline def get(name: String, id: Input[ID], state: StaticIpAttachmentState, opts: CustomResourceOptions): StaticIpAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StaticIpAttachment]
     
     /**
       * Returns true if the given object is an instance of StaticIpAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ Boolean]
   }
   
   trait StaticIpAttachmentArgs extends StObject {
@@ -86,20 +81,16 @@ object staticIpAttachmentMod {
   }
   object StaticIpAttachmentArgs {
     
-    @scala.inline
-    def apply(instanceName: Input[String], staticIpName: Input[String]): StaticIpAttachmentArgs = {
+    inline def apply(instanceName: Input[String], staticIpName: Input[String]): StaticIpAttachmentArgs = {
       val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], staticIpName = staticIpName.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticIpAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class StaticIpAttachmentArgsMutableBuilder[Self <: StaticIpAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StaticIpAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setInstanceName(value: Input[String]): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+      inline def setInstanceName(value: Input[String]): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticIpName(value: Input[String]): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
+      inline def setStaticIpName(value: Input[String]): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,32 +113,24 @@ object staticIpAttachmentMod {
   }
   object StaticIpAttachmentState {
     
-    @scala.inline
-    def apply(): StaticIpAttachmentState = {
+    inline def apply(): StaticIpAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StaticIpAttachmentState]
     }
     
-    @scala.inline
-    implicit class StaticIpAttachmentStateMutableBuilder[Self <: StaticIpAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: StaticIpAttachmentState](x: Self) {
       
-      @scala.inline
-      def setInstanceName(value: Input[String]): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+      inline def setInstanceName(value: Input[String]): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+      inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setStaticIpName(value: Input[String]): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
+      inline def setStaticIpName(value: Input[String]): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticIpNameUndefined: Self = StObject.set(x, "staticIpName", js.undefined)
+      inline def setStaticIpNameUndefined: Self = StObject.set(x, "staticIpName", js.undefined)
     }
   }
 }

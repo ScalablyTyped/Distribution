@@ -11,10 +11,8 @@ object createHashHistoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[History[S]]
-  @scala.inline
-  def default[S](options: HashHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
+  inline def default[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[History[S]]
+  inline def default[S](options: HashHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
   
   trait HashHistoryBuildOptions extends StObject {
     
@@ -28,32 +26,24 @@ object createHashHistoryMod {
   }
   object HashHistoryBuildOptions {
     
-    @scala.inline
-    def apply(): HashHistoryBuildOptions = {
+    inline def apply(): HashHistoryBuildOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HashHistoryBuildOptions]
     }
     
-    @scala.inline
-    implicit class HashHistoryBuildOptionsMutableBuilder[Self <: HashHistoryBuildOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HashHistoryBuildOptions](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setHashType(value: HashType): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+      inline def setHashType(value: HashType): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
+      inline def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
     }
   }
   
@@ -65,13 +55,10 @@ object createHashHistoryMod {
   trait HashType extends StObject
   object HashType {
     
-    @scala.inline
-    def hashbang: typings.history.historyStrings.hashbang = "hashbang".asInstanceOf[typings.history.historyStrings.hashbang]
+    inline def hashbang: typings.history.historyStrings.hashbang = "hashbang".asInstanceOf[typings.history.historyStrings.hashbang]
     
-    @scala.inline
-    def noslash: typings.history.historyStrings.noslash = "noslash".asInstanceOf[typings.history.historyStrings.noslash]
+    inline def noslash: typings.history.historyStrings.noslash = "noslash".asInstanceOf[typings.history.historyStrings.noslash]
     
-    @scala.inline
-    def slash: typings.history.historyStrings.slash = "slash".asInstanceOf[typings.history.historyStrings.slash]
+    inline def slash: typings.history.historyStrings.slash = "slash".asInstanceOf[typings.history.historyStrings.slash]
   }
 }

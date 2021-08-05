@@ -14,20 +14,16 @@ object accountRepositoryLoginErrorResponseMod {
   }
   object AccountRepositoryLoginBadPasswordResponseButtonsItem {
     
-    @scala.inline
-    def apply(action: String, title: String): AccountRepositoryLoginBadPasswordResponseButtonsItem = {
+    inline def apply(action: String, title: String): AccountRepositoryLoginBadPasswordResponseButtonsItem = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryLoginBadPasswordResponseButtonsItem]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryLoginBadPasswordResponseButtonsItemMutableBuilder[Self <: AccountRepositoryLoginBadPasswordResponseButtonsItem] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryLoginBadPasswordResponseButtonsItem](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,8 +49,7 @@ object accountRepositoryLoginErrorResponseMod {
   }
   object AccountRepositoryLoginErrorResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buttons: js.Array[AccountRepositoryLoginBadPasswordResponseButtonsItem],
       error_title: String,
       error_type: String,
@@ -69,38 +64,27 @@ object accountRepositoryLoginErrorResponseMod {
       __obj.asInstanceOf[AccountRepositoryLoginErrorResponse]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryLoginErrorResponseMutableBuilder[Self <: AccountRepositoryLoginErrorResponse] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryLoginErrorResponse](x: Self) {
       
-      @scala.inline
-      def setButtons(value: js.Array[AccountRepositoryLoginBadPasswordResponseButtonsItem]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[AccountRepositoryLoginBadPasswordResponseButtonsItem]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsVarargs(value: AccountRepositoryLoginBadPasswordResponseButtonsItem*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: AccountRepositoryLoginBadPasswordResponseButtonsItem*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setError_title(value: String): Self = StObject.set(x, "error_title", value.asInstanceOf[js.Any])
+      inline def setError_title(value: String): Self = StObject.set(x, "error_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
+      inline def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalid_credentials(value: Boolean): Self = StObject.set(x, "invalid_credentials", value.asInstanceOf[js.Any])
+      inline def setInvalid_credentials(value: Boolean): Self = StObject.set(x, "invalid_credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone_verification_settings(value: AccountRepositoryLoginErrorResponsePhoneVerificationSettings): Self = StObject.set(x, "phone_verification_settings", value.asInstanceOf[js.Any])
+      inline def setPhone_verification_settings(value: AccountRepositoryLoginErrorResponsePhoneVerificationSettings): Self = StObject.set(x, "phone_verification_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwo_factor_info(value: AccountRepositoryLoginErrorResponseTwoFactorInfo): Self = StObject.set(x, "two_factor_info", value.asInstanceOf[js.Any])
+      inline def setTwo_factor_info(value: AccountRepositoryLoginErrorResponseTwoFactorInfo): Self = StObject.set(x, "two_factor_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwo_factor_required(value: Boolean): Self = StObject.set(x, "two_factor_required", value.asInstanceOf[js.Any])
+      inline def setTwo_factor_required(value: Boolean): Self = StObject.set(x, "two_factor_required", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,8 +100,7 @@ object accountRepositoryLoginErrorResponseMod {
   }
   object AccountRepositoryLoginErrorResponsePhoneVerificationSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       max_sms_count: Double,
       resend_sms_delay_sec: Double,
       robocall_after_max_sms: Boolean,
@@ -127,20 +110,15 @@ object accountRepositoryLoginErrorResponseMod {
       __obj.asInstanceOf[AccountRepositoryLoginErrorResponsePhoneVerificationSettings]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryLoginErrorResponsePhoneVerificationSettingsMutableBuilder[Self <: AccountRepositoryLoginErrorResponsePhoneVerificationSettings] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryLoginErrorResponsePhoneVerificationSettings](x: Self) {
       
-      @scala.inline
-      def setMax_sms_count(value: Double): Self = StObject.set(x, "max_sms_count", value.asInstanceOf[js.Any])
+      inline def setMax_sms_count(value: Double): Self = StObject.set(x, "max_sms_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResend_sms_delay_sec(value: Double): Self = StObject.set(x, "resend_sms_delay_sec", value.asInstanceOf[js.Any])
+      inline def setResend_sms_delay_sec(value: Double): Self = StObject.set(x, "resend_sms_delay_sec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRobocall_after_max_sms(value: Boolean): Self = StObject.set(x, "robocall_after_max_sms", value.asInstanceOf[js.Any])
+      inline def setRobocall_after_max_sms(value: Boolean): Self = StObject.set(x, "robocall_after_max_sms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRobocall_count_down_time_sec(value: Double): Self = StObject.set(x, "robocall_count_down_time_sec", value.asInstanceOf[js.Any])
+      inline def setRobocall_count_down_time_sec(value: Double): Self = StObject.set(x, "robocall_count_down_time_sec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,8 +144,7 @@ object accountRepositoryLoginErrorResponseMod {
   }
   object AccountRepositoryLoginErrorResponseTwoFactorInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       obfuscated_phone_number: String,
       phone_verification_settings: AccountRepositoryLoginErrorResponsePhoneVerificationSettings,
       show_messenger_code_option: Boolean,
@@ -182,35 +159,25 @@ object accountRepositoryLoginErrorResponseMod {
       __obj.asInstanceOf[AccountRepositoryLoginErrorResponseTwoFactorInfo]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryLoginErrorResponseTwoFactorInfoMutableBuilder[Self <: AccountRepositoryLoginErrorResponseTwoFactorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryLoginErrorResponseTwoFactorInfo](x: Self) {
       
-      @scala.inline
-      def setObfuscated_phone_number(value: String): Self = StObject.set(x, "obfuscated_phone_number", value.asInstanceOf[js.Any])
+      inline def setObfuscated_phone_number(value: String): Self = StObject.set(x, "obfuscated_phone_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone_verification_settings(value: AccountRepositoryLoginErrorResponsePhoneVerificationSettings): Self = StObject.set(x, "phone_verification_settings", value.asInstanceOf[js.Any])
+      inline def setPhone_verification_settings(value: AccountRepositoryLoginErrorResponsePhoneVerificationSettings): Self = StObject.set(x, "phone_verification_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_messenger_code_option(value: Boolean): Self = StObject.set(x, "show_messenger_code_option", value.asInstanceOf[js.Any])
+      inline def setShow_messenger_code_option(value: Boolean): Self = StObject.set(x, "show_messenger_code_option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_new_login_screen(value: Boolean): Self = StObject.set(x, "show_new_login_screen", value.asInstanceOf[js.Any])
+      inline def setShow_new_login_screen(value: Boolean): Self = StObject.set(x, "show_new_login_screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_trusted_device_option(value: Boolean): Self = StObject.set(x, "show_trusted_device_option", value.asInstanceOf[js.Any])
+      inline def setShow_trusted_device_option(value: Boolean): Self = StObject.set(x, "show_trusted_device_option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSms_two_factor_on(value: Boolean): Self = StObject.set(x, "sms_two_factor_on", value.asInstanceOf[js.Any])
+      inline def setSms_two_factor_on(value: Boolean): Self = StObject.set(x, "sms_two_factor_on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotp_two_factor_on(value: Boolean): Self = StObject.set(x, "totp_two_factor_on", value.asInstanceOf[js.Any])
+      inline def setTotp_two_factor_on(value: Boolean): Self = StObject.set(x, "totp_two_factor_on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwo_factor_identifier(value: String): Self = StObject.set(x, "two_factor_identifier", value.asInstanceOf[js.Any])
+      inline def setTwo_factor_identifier(value: String): Self = StObject.set(x, "two_factor_identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

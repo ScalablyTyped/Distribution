@@ -23,31 +23,23 @@ trait SyncConfig extends StObject {
 }
 object SyncConfig {
   
-  @scala.inline
-  def apply(): SyncConfig = {
+  inline def apply(): SyncConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncConfig]
   }
   
-  @scala.inline
-  implicit class SyncConfigMutableBuilder[Self <: SyncConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SyncConfig](x: Self) {
     
-    @scala.inline
-    def setConflictDetection(value: ConflictDetectionType): Self = StObject.set(x, "conflictDetection", value.asInstanceOf[js.Any])
+    inline def setConflictDetection(value: ConflictDetectionType): Self = StObject.set(x, "conflictDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictDetectionUndefined: Self = StObject.set(x, "conflictDetection", js.undefined)
+    inline def setConflictDetectionUndefined: Self = StObject.set(x, "conflictDetection", js.undefined)
     
-    @scala.inline
-    def setConflictHandler(value: ConflictHandlerType): Self = StObject.set(x, "conflictHandler", value.asInstanceOf[js.Any])
+    inline def setConflictHandler(value: ConflictHandlerType): Self = StObject.set(x, "conflictHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
+    inline def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
     
-    @scala.inline
-    def setLambdaConflictHandlerConfig(value: LambdaConflictHandlerConfig): Self = StObject.set(x, "lambdaConflictHandlerConfig", value.asInstanceOf[js.Any])
+    inline def setLambdaConflictHandlerConfig(value: LambdaConflictHandlerConfig): Self = StObject.set(x, "lambdaConflictHandlerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaConflictHandlerConfigUndefined: Self = StObject.set(x, "lambdaConflictHandlerConfig", js.undefined)
+    inline def setLambdaConflictHandlerConfigUndefined: Self = StObject.set(x, "lambdaConflictHandlerConfig", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait ConfigurationSpec extends StObject {
 }
 object ConfigurationSpec {
   
-  @scala.inline
-  def apply(): ConfigurationSpec = {
+  inline def apply(): ConfigurationSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationSpec]
   }
   
-  @scala.inline
-  implicit class ConfigurationSpecMutableBuilder[Self <: ConfigurationSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationSpec](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: RevisionTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: RevisionTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

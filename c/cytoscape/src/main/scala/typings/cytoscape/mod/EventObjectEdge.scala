@@ -14,8 +14,7 @@ trait EventObjectEdge
 }
 object EventObjectEdge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cy: Core,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -37,10 +36,8 @@ object EventObjectEdge {
     __obj.asInstanceOf[EventObjectEdge]
   }
   
-  @scala.inline
-  implicit class EventObjectEdgeMutableBuilder[Self <: EventObjectEdge] (val x: Self) extends AnyVal {
+  extension [Self <: EventObjectEdge](x: Self) {
     
-    @scala.inline
-    def setTarget(value: EdgeSingular): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EdgeSingular): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

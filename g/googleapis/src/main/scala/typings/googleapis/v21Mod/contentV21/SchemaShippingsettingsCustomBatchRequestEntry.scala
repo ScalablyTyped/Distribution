@@ -34,43 +34,31 @@ trait SchemaShippingsettingsCustomBatchRequestEntry extends StObject {
 }
 object SchemaShippingsettingsCustomBatchRequestEntry {
   
-  @scala.inline
-  def apply(): SchemaShippingsettingsCustomBatchRequestEntry = {
+  inline def apply(): SchemaShippingsettingsCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShippingsettingsCustomBatchRequestEntry]
   }
   
-  @scala.inline
-  implicit class SchemaShippingsettingsCustomBatchRequestEntryMutableBuilder[Self <: SchemaShippingsettingsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShippingsettingsCustomBatchRequestEntry](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setShippingSettings(value: SchemaShippingSettings): Self = StObject.set(x, "shippingSettings", value.asInstanceOf[js.Any])
+    inline def setShippingSettings(value: SchemaShippingSettings): Self = StObject.set(x, "shippingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingSettingsUndefined: Self = StObject.set(x, "shippingSettings", js.undefined)
+    inline def setShippingSettingsUndefined: Self = StObject.set(x, "shippingSettings", js.undefined)
   }
 }

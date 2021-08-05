@@ -67,57 +67,44 @@ object syncAsyncFileSystemDecoratorMod {
   }
   object SyncAsyncFileSystemDecorator {
     
-    @scala.inline
-    def apply(fs: AbstractInputFileSystem): SyncAsyncFileSystemDecorator = {
+    inline def apply(fs: AbstractInputFileSystem): SyncAsyncFileSystemDecorator = {
       val __obj = js.Dynamic.literal(fs = fs.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncAsyncFileSystemDecorator]
     }
     
-    @scala.inline
-    implicit class SyncAsyncFileSystemDecoratorMutableBuilder[Self <: SyncAsyncFileSystemDecorator] (val x: Self) extends AnyVal {
+    extension [Self <: SyncAsyncFileSystemDecorator](x: Self) {
       
-      @scala.inline
-      def setFs(value: AbstractInputFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: AbstractInputFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadFile(
+      inline def setReadFile(
         value: (/* filename */ String, /* callback */ js.Function2[/* err */ ErrnoException | Null, /* data */ js.UndefOr[Buffer], Unit]) => Unit
       ): Self = StObject.set(x, "readFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+      inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
       
-      @scala.inline
-      def setReadJson(
+      inline def setReadJson(
         value: (/* path */ String, /* callback */ js.Function2[/* err */ ErrnoException | Null, /* data */ js.UndefOr[js.Any], Unit]) => Unit
       ): Self = StObject.set(x, "readJson", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadJsonUndefined: Self = StObject.set(x, "readJson", js.undefined)
+      inline def setReadJsonUndefined: Self = StObject.set(x, "readJson", js.undefined)
       
-      @scala.inline
-      def setReaddir(
+      inline def setReaddir(
         value: (/* path */ String, /* callback */ js.Function2[/* err */ ErrnoException | Null, /* files */ js.UndefOr[js.Array[String]], Unit]) => Unit
       ): Self = StObject.set(x, "readdir", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
+      inline def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
       
-      @scala.inline
-      def setReadlink(
+      inline def setReadlink(
         value: (/* path */ String, /* callback */ js.Function2[/* err */ ErrnoException | Null, /* linkString */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "readlink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadlinkUndefined: Self = StObject.set(x, "readlink", js.undefined)
+      inline def setReadlinkUndefined: Self = StObject.set(x, "readlink", js.undefined)
       
-      @scala.inline
-      def setStat(
+      inline def setStat(
         value: (/* path */ String, /* callback */ js.Function2[/* err */ ErrnoException | Null, /* stats */ js.UndefOr[Stats], Unit]) => Unit
       ): Self = StObject.set(x, "stat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
   }
 }

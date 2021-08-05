@@ -18,28 +18,21 @@ trait DescribeProjectVersionsResponse extends StObject {
 }
 object DescribeProjectVersionsResponse {
   
-  @scala.inline
-  def apply(): DescribeProjectVersionsResponse = {
+  inline def apply(): DescribeProjectVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProjectVersionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeProjectVersionsResponseMutableBuilder[Self <: DescribeProjectVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProjectVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: ExtendedPaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: ExtendedPaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProjectVersionDescriptions(value: ProjectVersionDescriptions): Self = StObject.set(x, "ProjectVersionDescriptions", value.asInstanceOf[js.Any])
+    inline def setProjectVersionDescriptions(value: ProjectVersionDescriptions): Self = StObject.set(x, "ProjectVersionDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectVersionDescriptionsUndefined: Self = StObject.set(x, "ProjectVersionDescriptions", js.undefined)
+    inline def setProjectVersionDescriptionsUndefined: Self = StObject.set(x, "ProjectVersionDescriptions", js.undefined)
     
-    @scala.inline
-    def setProjectVersionDescriptionsVarargs(value: ProjectVersionDescription*): Self = StObject.set(x, "ProjectVersionDescriptions", js.Array(value :_*))
+    inline def setProjectVersionDescriptionsVarargs(value: ProjectVersionDescription*): Self = StObject.set(x, "ProjectVersionDescriptions", js.Array(value :_*))
   }
 }

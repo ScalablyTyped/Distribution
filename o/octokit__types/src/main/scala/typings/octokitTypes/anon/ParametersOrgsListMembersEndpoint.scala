@@ -18,8 +18,7 @@ trait ParametersOrgsListMembersEndpoint extends StObject {
 }
 object ParametersOrgsListMembersEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OrgsListMembersEndpoint,
     request: OrgsListMembersRequestOptions,
     response: OctokitResponse[OrgsListMembersResponseData]
@@ -28,16 +27,12 @@ object ParametersOrgsListMembersEndpoint {
     __obj.asInstanceOf[ParametersOrgsListMembersEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOrgsListMembersEndpointMutableBuilder[Self <: ParametersOrgsListMembersEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOrgsListMembersEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OrgsListMembersEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OrgsListMembersEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: OrgsListMembersRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: OrgsListMembersRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[OrgsListMembersResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[OrgsListMembersResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

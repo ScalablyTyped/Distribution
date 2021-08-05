@@ -48,11 +48,8 @@ object webglMod {
   @js.native
   val UNSIGNED_SHORT: Double = js.native
   
-  @scala.inline
-  def getContext(canvas: HTMLCanvasElement): WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any]).asInstanceOf[WebGLRenderingContext]
-  @scala.inline
-  def getContext(canvas: HTMLCanvasElement, opt_attributes: js.Any): WebGLRenderingContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any], opt_attributes.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext]
+  inline def getContext(canvas: HTMLCanvasElement): WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any]).asInstanceOf[WebGLRenderingContext]
+  inline def getContext(canvas: HTMLCanvasElement, opt_attributes: js.Any): WebGLRenderingContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any], opt_attributes.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext]
   
-  @scala.inline
-  def getSupportedExtensions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedExtensions")().asInstanceOf[js.Array[String]]
+  inline def getSupportedExtensions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedExtensions")().asInstanceOf[js.Array[String]]
 }

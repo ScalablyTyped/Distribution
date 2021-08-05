@@ -13,22 +13,17 @@ trait DateParam extends StObject {
 }
 object DateParam {
   
-  @scala.inline
-  def apply(date: Date): DateParam = {
+  inline def apply(date: Date): DateParam = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateParam]
   }
   
-  @scala.inline
-  implicit class DateParamMutableBuilder[Self <: DateParam] (val x: Self) extends AnyVal {
+  extension [Self <: DateParam](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithMillis(value: Boolean): Self = StObject.set(x, "withMillis", value.asInstanceOf[js.Any])
+    inline def setWithMillis(value: Boolean): Self = StObject.set(x, "withMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithMillisUndefined: Self = StObject.set(x, "withMillis", js.undefined)
+    inline def setWithMillisUndefined: Self = StObject.set(x, "withMillis", js.undefined)
   }
 }

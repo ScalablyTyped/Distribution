@@ -13,16 +13,13 @@ trait ServerIdGetByPort
 }
 object ServerIdGetByPort {
   
-  @scala.inline
-  def apply(serverId: String): ServerIdGetByPort = {
+  inline def apply(serverId: String): ServerIdGetByPort = {
     val __obj = js.Dynamic.literal(serverId = serverId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerIdGetByPort]
   }
   
-  @scala.inline
-  implicit class ServerIdGetByPortMutableBuilder[Self <: ServerIdGetByPort] (val x: Self) extends AnyVal {
+  extension [Self <: ServerIdGetByPort](x: Self) {
     
-    @scala.inline
-    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
   }
 }

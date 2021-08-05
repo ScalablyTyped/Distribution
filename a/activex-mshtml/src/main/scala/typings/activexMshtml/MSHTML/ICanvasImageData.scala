@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ICanvasImageData extends StObject {
   
-  @JSName("MSHTML.ICanvasImageData_typekey")
+  /* private */ @JSName("MSHTML.ICanvasImageData_typekey")
   var MSHTMLDotICanvasImageData_typekey: ICanvasImageData
   
   val data: js.Any
@@ -17,26 +17,20 @@ trait ICanvasImageData extends StObject {
 }
 object ICanvasImageData {
   
-  @scala.inline
-  def apply(MSHTMLDotICanvasImageData_typekey: ICanvasImageData, data: js.Any, height: Double, width: Double): ICanvasImageData = {
+  inline def apply(MSHTMLDotICanvasImageData_typekey: ICanvasImageData, data: js.Any, height: Double, width: Double): ICanvasImageData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.ICanvasImageData_typekey")(MSHTMLDotICanvasImageData_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICanvasImageData]
   }
   
-  @scala.inline
-  implicit class ICanvasImageDataMutableBuilder[Self <: ICanvasImageData] (val x: Self) extends AnyVal {
+  extension [Self <: ICanvasImageData](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotICanvasImageData_typekey(value: ICanvasImageData): Self = StObject.set(x, "MSHTML.ICanvasImageData_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotICanvasImageData_typekey(value: ICanvasImageData): Self = StObject.set(x, "MSHTML.ICanvasImageData_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

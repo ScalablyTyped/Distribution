@@ -24,8 +24,7 @@ trait IUserGroup extends StObject {
 }
 object IUserGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddMember: Double => Unit,
     Clone: () => IUserGroup,
     CloneFrom: IUserGroup => Unit,
@@ -39,31 +38,22 @@ object IUserGroup {
     __obj.asInstanceOf[IUserGroup]
   }
   
-  @scala.inline
-  implicit class IUserGroupMutableBuilder[Self <: IUserGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IUserGroup](x: Self) {
     
-    @scala.inline
-    def setAddMember(value: Double => Unit): Self = StObject.set(x, "AddMember", js.Any.fromFunction1(value))
+    inline def setAddMember(value: Double => Unit): Self = StObject.set(x, "AddMember", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClone(value: () => IUserGroup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IUserGroup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: IUserGroup => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: IUserGroup => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: IIDs): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: IIDs): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefined(value: Boolean): Self = StObject.set(x, "Predefined", value.asInstanceOf[js.Any])
+    inline def setPredefined(value: Boolean): Self = StObject.set(x, "Predefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMember(value: Double => Unit): Self = StObject.set(x, "RemoveMember", js.Any.fromFunction1(value))
+    inline def setRemoveMember(value: Double => Unit): Self = StObject.set(x, "RemoveMember", js.Any.fromFunction1(value))
   }
 }

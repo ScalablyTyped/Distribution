@@ -20,28 +20,21 @@ trait SourceRedshift extends StObject {
 }
 object SourceRedshift {
   
-  @scala.inline
-  def apply(database: String, schema: String, table_name: String): SourceRedshift = {
+  inline def apply(database: String, schema: String, table_name: String): SourceRedshift = {
     val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], table_name = table_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceRedshift]
   }
   
-  @scala.inline
-  implicit class SourceRedshiftMutableBuilder[Self <: SourceRedshift] (val x: Self) extends AnyVal {
+  extension [Self <: SourceRedshift](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncremental_field(value: String): Self = StObject.set(x, "incremental_field", value.asInstanceOf[js.Any])
+    inline def setIncremental_field(value: String): Self = StObject.set(x, "incremental_field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncremental_fieldUndefined: Self = StObject.set(x, "incremental_field", js.undefined)
+    inline def setIncremental_fieldUndefined: Self = StObject.set(x, "incremental_field", js.undefined)
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable_name(value: String): Self = StObject.set(x, "table_name", value.asInstanceOf[js.Any])
+    inline def setTable_name(value: String): Self = StObject.set(x, "table_name", value.asInstanceOf[js.Any])
   }
 }

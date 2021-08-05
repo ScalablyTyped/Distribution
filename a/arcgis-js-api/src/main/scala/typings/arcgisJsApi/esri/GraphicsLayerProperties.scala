@@ -33,34 +33,25 @@ trait GraphicsLayerProperties
 }
 object GraphicsLayerProperties {
   
-  @scala.inline
-  def apply(): GraphicsLayerProperties = {
+  inline def apply(): GraphicsLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphicsLayerProperties]
   }
   
-  @scala.inline
-  implicit class GraphicsLayerPropertiesMutableBuilder[Self <: GraphicsLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicsLayerProperties](x: Self) {
     
-    @scala.inline
-    def setElevationInfo(value: GraphicsLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    inline def setElevationInfo(value: GraphicsLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
+    inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    @scala.inline
-    def setGraphics(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
+    inline def setGraphics(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
+    inline def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
     
-    @scala.inline
-    def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
-    @scala.inline
-    def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
+    inline def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
+    inline def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
   }
 }

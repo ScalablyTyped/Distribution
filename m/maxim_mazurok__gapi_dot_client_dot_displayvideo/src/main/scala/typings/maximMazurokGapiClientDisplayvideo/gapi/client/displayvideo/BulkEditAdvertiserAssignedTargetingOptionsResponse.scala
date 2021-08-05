@@ -11,22 +11,17 @@ trait BulkEditAdvertiserAssignedTargetingOptionsResponse extends StObject {
 }
 object BulkEditAdvertiserAssignedTargetingOptionsResponse {
   
-  @scala.inline
-  def apply(): BulkEditAdvertiserAssignedTargetingOptionsResponse = {
+  inline def apply(): BulkEditAdvertiserAssignedTargetingOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditAdvertiserAssignedTargetingOptionsResponse]
   }
   
-  @scala.inline
-  implicit class BulkEditAdvertiserAssignedTargetingOptionsResponseMutableBuilder[Self <: BulkEditAdvertiserAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditAdvertiserAssignedTargetingOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "createdAssignedTargetingOptions", value.asInstanceOf[js.Any])
+    inline def setCreatedAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "createdAssignedTargetingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAssignedTargetingOptionsUndefined: Self = StObject.set(x, "createdAssignedTargetingOptions", js.undefined)
+    inline def setCreatedAssignedTargetingOptionsUndefined: Self = StObject.set(x, "createdAssignedTargetingOptions", js.undefined)
     
-    @scala.inline
-    def setCreatedAssignedTargetingOptionsVarargs(value: AssignedTargetingOption*): Self = StObject.set(x, "createdAssignedTargetingOptions", js.Array(value :_*))
+    inline def setCreatedAssignedTargetingOptionsVarargs(value: AssignedTargetingOption*): Self = StObject.set(x, "createdAssignedTargetingOptions", js.Array(value :_*))
   }
 }

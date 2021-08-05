@@ -32,8 +32,7 @@ object SpritesheetLoader {
     * @param {string} baseUrl - Base root url
     */
   /* static member */
-  @scala.inline
-  def getResourcePath(resource: typings.pixiJs.PIXI.LoaderResource, baseUrl: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourcePath")(resource.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getResourcePath(resource: typings.pixiJs.PIXI.LoaderResource, baseUrl: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourcePath")(resource.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Called after a resource is loaded.
@@ -42,6 +41,5 @@ object SpritesheetLoader {
     * @param {function} next
     */
   /* static member */
-  @scala.inline
-  def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

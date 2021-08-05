@@ -14,22 +14,17 @@ trait Ipfs extends StObject {
 }
 object Ipfs {
   
-  @scala.inline
-  def apply(getStdin: js.Any, ipfs: js.Any, print: js.Any): Ipfs = {
+  inline def apply(getStdin: js.Any, ipfs: js.Any, print: js.Any): Ipfs = {
     val __obj = js.Dynamic.literal(getStdin = getStdin.asInstanceOf[js.Any], ipfs = ipfs.asInstanceOf[js.Any], print = print.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ipfs]
   }
   
-  @scala.inline
-  implicit class IpfsMutableBuilder[Self <: Ipfs] (val x: Self) extends AnyVal {
+  extension [Self <: Ipfs](x: Self) {
     
-    @scala.inline
-    def setGetStdin(value: js.Any): Self = StObject.set(x, "getStdin", value.asInstanceOf[js.Any])
+    inline def setGetStdin(value: js.Any): Self = StObject.set(x, "getStdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+    inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrint(value: js.Any): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    inline def setPrint(value: js.Any): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
   }
 }

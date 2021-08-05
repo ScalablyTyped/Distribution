@@ -13,19 +13,15 @@ trait AttachToIndexResponse extends StObject {
 }
 object AttachToIndexResponse {
   
-  @scala.inline
-  def apply(): AttachToIndexResponse = {
+  inline def apply(): AttachToIndexResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachToIndexResponse]
   }
   
-  @scala.inline
-  implicit class AttachToIndexResponseMutableBuilder[Self <: AttachToIndexResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AttachToIndexResponse](x: Self) {
     
-    @scala.inline
-    def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "AttachedObjectIdentifier", value.asInstanceOf[js.Any])
+    inline def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "AttachedObjectIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedObjectIdentifierUndefined: Self = StObject.set(x, "AttachedObjectIdentifier", js.undefined)
+    inline def setAttachedObjectIdentifierUndefined: Self = StObject.set(x, "AttachedObjectIdentifier", js.undefined)
   }
 }

@@ -32,31 +32,23 @@ trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
 }
 object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel {
   
-  @scala.inline
-  def apply(): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel = {
+  inline def apply(): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel]
   }
   
-  @scala.inline
-  implicit class IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevelMutableBuilder[Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setMemberProvider(value: js.Function): Self = StObject.set(x, "memberProvider", value.asInstanceOf[js.Any])
+    inline def setMemberProvider(value: js.Function): Self = StObject.set(x, "memberProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberProviderUndefined: Self = StObject.set(x, "memberProvider", js.undefined)
+    inline def setMemberProviderUndefined: Self = StObject.set(x, "memberProvider", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

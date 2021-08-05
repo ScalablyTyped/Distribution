@@ -26,25 +26,19 @@ trait SchemaUrlRewrite extends StObject {
 }
 object SchemaUrlRewrite {
   
-  @scala.inline
-  def apply(): SchemaUrlRewrite = {
+  inline def apply(): SchemaUrlRewrite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlRewrite]
   }
   
-  @scala.inline
-  implicit class SchemaUrlRewriteMutableBuilder[Self <: SchemaUrlRewrite] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlRewrite](x: Self) {
     
-    @scala.inline
-    def setHostRewrite(value: String): Self = StObject.set(x, "hostRewrite", value.asInstanceOf[js.Any])
+    inline def setHostRewrite(value: String): Self = StObject.set(x, "hostRewrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostRewriteUndefined: Self = StObject.set(x, "hostRewrite", js.undefined)
+    inline def setHostRewriteUndefined: Self = StObject.set(x, "hostRewrite", js.undefined)
     
-    @scala.inline
-    def setPathPrefixRewrite(value: String): Self = StObject.set(x, "pathPrefixRewrite", value.asInstanceOf[js.Any])
+    inline def setPathPrefixRewrite(value: String): Self = StObject.set(x, "pathPrefixRewrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPrefixRewriteUndefined: Self = StObject.set(x, "pathPrefixRewrite", js.undefined)
+    inline def setPathPrefixRewriteUndefined: Self = StObject.set(x, "pathPrefixRewrite", js.undefined)
   }
 }

@@ -224,8 +224,7 @@ object mod {
   @js.native
   val DebugEngine: Instantiable0[BrowserDebugEngine | NoopDebugEngine] = js.native
   
-  @scala.inline
-  def DevConsumer(props: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DevConsumer")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DevConsumer(props: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DevConsumer")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("styletron-react", "DevProvider")
   @js.native
@@ -252,8 +251,7 @@ object mod {
   @js.native
   val Provider: Instantiable0[DevProvider] | typings.react.mod.Provider[StandardEngine] = js.native
   
-  @scala.inline
-  def autoComposeDeep(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
+  inline def autoComposeDeep(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* styleArg */ js.Function1[/* props */ js.Object, StyleObject], 
@@ -270,8 +268,7 @@ object mod {
       ]
     ]
   ]]
-  @scala.inline
-  def autoComposeDeep(styletron: Styletron, styleArg: StyleObject): ReturnType[
+  inline def autoComposeDeep(styletron: Styletron, styleArg: StyleObject): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* style */ StyleObject, 
@@ -289,8 +286,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def autoComposeShallow(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
+  inline def autoComposeShallow(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* style */ StyleObject, 
@@ -307,8 +303,7 @@ object mod {
       ]
     ]
   ]]
-  @scala.inline
-  def autoComposeShallow(styletron: Styletron, styleArg: StyleObject): ReturnType[
+  inline def autoComposeShallow(styletron: Styletron, styleArg: StyleObject): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* style */ StyleObject, 
@@ -326,29 +321,22 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def composeDynamic(
+  inline def composeDynamic(
     styletron: Styletron,
     reducer: js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject]
   ): Styletron = (^.asInstanceOf[js.Dynamic].applyDynamic("composeDynamic")(styletron.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[Styletron]
   
-  @scala.inline
-  def composeStatic(styletron: Styletron, reducerContainer: ReducerContainer): Styletron = (^.asInstanceOf[js.Dynamic].applyDynamic("composeStatic")(styletron.asInstanceOf[js.Any], reducerContainer.asInstanceOf[js.Any])).asInstanceOf[Styletron]
+  inline def composeStatic(styletron: Styletron, reducerContainer: ReducerContainer): Styletron = (^.asInstanceOf[js.Dynamic].applyDynamic("composeStatic")(styletron.asInstanceOf[js.Any], reducerContainer.asInstanceOf[js.Any])).asInstanceOf[Styletron]
   
-  @scala.inline
-  def createDeepMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeepMergeReducer")(style.asInstanceOf[js.Any]).asInstanceOf[AssignmentCommutativeReducerContainer]
+  inline def createDeepMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeepMergeReducer")(style.asInstanceOf[js.Any]).asInstanceOf[AssignmentCommutativeReducerContainer]
   
-  @scala.inline
-  def createShallowMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallowMergeReducer")(style.asInstanceOf[js.Any]).asInstanceOf[AssignmentCommutativeReducerContainer]
+  inline def createShallowMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallowMergeReducer")(style.asInstanceOf[js.Any]).asInstanceOf[AssignmentCommutativeReducerContainer]
   
-  @scala.inline
-  def createStyled(options: CreateStyledOptions): StyledFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyled")(options.asInstanceOf[js.Any]).asInstanceOf[StyledFn]
+  inline def createStyled(options: CreateStyledOptions): StyledFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyled")(options.asInstanceOf[js.Any]).asInstanceOf[StyledFn]
   
-  @scala.inline
-  def createStyledElementComponent(styletron: Styletron): StyletronComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyledElementComponent")(styletron.asInstanceOf[js.Any]).asInstanceOf[StyletronComponent[js.Any]]
+  inline def createStyledElementComponent(styletron: Styletron): StyletronComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyledElementComponent")(styletron.asInstanceOf[js.Any]).asInstanceOf[StyletronComponent[js.Any]]
   
-  @scala.inline
-  def dynamicComposeDeep(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
+  inline def dynamicComposeDeep(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* reducer */ js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject], 
@@ -362,8 +350,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def dynamicComposeShallow(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
+  inline def dynamicComposeShallow(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* reducer */ js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject], 
@@ -377,18 +364,15 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def resolveStyle(getInitialStyle: js.Function0[StyleObject], reducers: js.Array[ReducerContainer], props: js.Object): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStyle")(getInitialStyle.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
+  inline def resolveStyle(getInitialStyle: js.Function0[StyleObject], reducers: js.Array[ReducerContainer], props: js.Object): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStyle")(getInitialStyle.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
   
-  @scala.inline
-  def staticComposeDeep(styletron: Styletron, style: StyleObject): ReturnType[
+  inline def staticComposeDeep(styletron: Styletron, style: StyleObject): ReturnType[
     js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticComposeDeep")(styletron.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
     js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
   ]]
   
-  @scala.inline
-  def staticComposeShallow(styletron: Styletron, style: StyleObject): ReturnType[
+  inline def staticComposeShallow(styletron: Styletron, style: StyleObject): ReturnType[
     js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticComposeShallow")(styletron.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
     js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
@@ -398,8 +382,7 @@ object mod {
   @js.native
   val styled: ReturnType[js.Function1[/* options */ CreateStyledOptions, StyledFn]] = js.native
   
-  @scala.inline
-  def useStyletron(): js.Array[CSSFn] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStyletron")().asInstanceOf[js.Array[CSSFn]]
+  inline def useStyletron(): js.Array[CSSFn] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStyletron")().asInstanceOf[js.Array[CSSFn]]
   
   @JSImport("styletron-react", "withStyle")
   @js.native
@@ -431,8 +414,7 @@ object mod {
   }
   object AssignmentCommutativeReducerContainer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       factory: StyleObject => AssignmentCommutativeReducerContainer,
       reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject,
       style: StyleObject
@@ -441,20 +423,15 @@ object mod {
       __obj.asInstanceOf[AssignmentCommutativeReducerContainer]
     }
     
-    @scala.inline
-    implicit class AssignmentCommutativeReducerContainerMutableBuilder[Self <: AssignmentCommutativeReducerContainer] (val x: Self) extends AnyVal {
+    extension [Self <: AssignmentCommutativeReducerContainer](x: Self) {
       
-      @scala.inline
-      def setAssignmentCommutative(value: `true`): Self = StObject.set(x, "assignmentCommutative", value.asInstanceOf[js.Any])
+      inline def setAssignmentCommutative(value: `true`): Self = StObject.set(x, "assignmentCommutative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactory(value: StyleObject => AssignmentCommutativeReducerContainer): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+      inline def setFactory(value: StyleObject => AssignmentCommutativeReducerContainer): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReducer(value: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
+      inline def setReducer(value: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStyle(value: StyleObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -470,8 +447,7 @@ object mod {
   }
   object CreateStyledOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       driver: (/* style */ StyleObject, /* styletron */ StandardEngine) => String,
       getInitialStyle: () => StyleObject,
       wrapper: /* fc */ FC[js.Any] => ComponentType[js.Any]
@@ -480,17 +456,13 @@ object mod {
       __obj.asInstanceOf[CreateStyledOptions]
     }
     
-    @scala.inline
-    implicit class CreateStyledOptionsMutableBuilder[Self <: CreateStyledOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateStyledOptions](x: Self) {
       
-      @scala.inline
-      def setDriver(value: (/* style */ StyleObject, /* styletron */ StandardEngine) => String): Self = StObject.set(x, "driver", js.Any.fromFunction2(value))
+      inline def setDriver(value: (/* style */ StyleObject, /* styletron */ StandardEngine) => String): Self = StObject.set(x, "driver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetInitialStyle(value: () => StyleObject): Self = StObject.set(x, "getInitialStyle", js.Any.fromFunction0(value))
+      inline def setGetInitialStyle(value: () => StyleObject): Self = StObject.set(x, "getInitialStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWrapper(value: /* fc */ FC[js.Any] => ComponentType[js.Any]): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
+      inline def setWrapper(value: /* fc */ FC[js.Any] => ComponentType[js.Any]): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
     }
   }
   
@@ -507,35 +479,26 @@ object mod {
   }
   object DevProviderProps {
     
-    @scala.inline
-    def apply(value: StandardEngine): DevProviderProps = {
+    inline def apply(value: StandardEngine): DevProviderProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DevProviderProps]
     }
     
-    @scala.inline
-    implicit class DevProviderPropsMutableBuilder[Self <: DevProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: DevProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDebug(value: typings.styletronReact.mod.DebugEngine): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: typings.styletronReact.mod.DebugEngine): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugAfterHydration(value: Boolean): Self = StObject.set(x, "debugAfterHydration", value.asInstanceOf[js.Any])
+      inline def setDebugAfterHydration(value: Boolean): Self = StObject.set(x, "debugAfterHydration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugAfterHydrationUndefined: Self = StObject.set(x, "debugAfterHydration", js.undefined)
+      inline def setDebugAfterHydrationUndefined: Self = StObject.set(x, "debugAfterHydration", js.undefined)
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setValue(value: StandardEngine): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: StandardEngine): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -549,20 +512,16 @@ object mod {
   }
   object NonAssignmentCommutativeReducerContainer {
     
-    @scala.inline
-    def apply(reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): NonAssignmentCommutativeReducerContainer = {
+    inline def apply(reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): NonAssignmentCommutativeReducerContainer = {
       val __obj = js.Dynamic.literal(assignmentCommutative = false, reducer = js.Any.fromFunction2(reducer))
       __obj.asInstanceOf[NonAssignmentCommutativeReducerContainer]
     }
     
-    @scala.inline
-    implicit class NonAssignmentCommutativeReducerContainerMutableBuilder[Self <: NonAssignmentCommutativeReducerContainer] (val x: Self) extends AnyVal {
+    extension [Self <: NonAssignmentCommutativeReducerContainer](x: Self) {
       
-      @scala.inline
-      def setAssignmentCommutative(value: `false`): Self = StObject.set(x, "assignmentCommutative", value.asInstanceOf[js.Any])
+      inline def setAssignmentCommutative(value: `false`): Self = StObject.set(x, "assignmentCommutative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReducer(value: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
+      inline def setReducer(value: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
     }
   }
   
@@ -575,8 +534,7 @@ object mod {
   trait ReducerContainer extends StObject
   object ReducerContainer {
     
-    @scala.inline
-    def AssignmentCommutativeReducerContainer(
+    inline def AssignmentCommutativeReducerContainer(
       factory: StyleObject => typings.styletronReact.mod.AssignmentCommutativeReducerContainer,
       reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject,
       style: StyleObject
@@ -585,8 +543,7 @@ object mod {
       __obj.asInstanceOf[typings.styletronReact.mod.AssignmentCommutativeReducerContainer]
     }
     
-    @scala.inline
-    def NonAssignmentCommutativeReducerContainer(reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): typings.styletronReact.mod.NonAssignmentCommutativeReducerContainer = {
+    inline def NonAssignmentCommutativeReducerContainer(reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): typings.styletronReact.mod.NonAssignmentCommutativeReducerContainer = {
       val __obj = js.Dynamic.literal(assignmentCommutative = false, reducer = js.Any.fromFunction2(reducer))
       __obj.asInstanceOf[typings.styletronReact.mod.NonAssignmentCommutativeReducerContainer]
     }
@@ -604,26 +561,20 @@ object mod {
   }
   object StackInfo {
     
-    @scala.inline
-    def apply(message: String, stacktrace: js.Any): StackInfo = {
+    inline def apply(message: String, stacktrace: js.Any): StackInfo = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stacktrace = stacktrace.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackInfo]
     }
     
-    @scala.inline
-    implicit class StackInfoMutableBuilder[Self <: StackInfo] (val x: Self) extends AnyVal {
+    extension [Self <: StackInfo](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
-      @scala.inline
-      def setStacktrace(value: js.Any): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
+      inline def setStacktrace(value: js.Any): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2764,8 +2715,7 @@ object mod {
   }
   object Styletron {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base: StyletronBase,
       driver: (/* style */ StyleObject, /* styletron */ StandardEngine) => String,
       getInitialStyle: () => StyleObject,
@@ -2776,32 +2726,23 @@ object mod {
       __obj.asInstanceOf[Styletron]
     }
     
-    @scala.inline
-    implicit class StyletronMutableBuilder[Self <: Styletron] (val x: Self) extends AnyVal {
+    extension [Self <: Styletron](x: Self) {
       
-      @scala.inline
-      def setBase(value: StyletronBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: StyletronBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: typings.styletronReact.anon.StackIndex): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: typings.styletronReact.anon.StackIndex): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDriver(value: (/* style */ StyleObject, /* styletron */ StandardEngine) => String): Self = StObject.set(x, "driver", js.Any.fromFunction2(value))
+      inline def setDriver(value: (/* style */ StyleObject, /* styletron */ StandardEngine) => String): Self = StObject.set(x, "driver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetInitialStyle(value: () => StyleObject): Self = StObject.set(x, "getInitialStyle", js.Any.fromFunction0(value))
+      inline def setGetInitialStyle(value: () => StyleObject): Self = StObject.set(x, "getInitialStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReducers(value: js.Array[ReducerContainer]): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
+      inline def setReducers(value: js.Array[ReducerContainer]): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReducersVarargs(value: ReducerContainer*): Self = StObject.set(x, "reducers", js.Array(value :_*))
+      inline def setReducersVarargs(value: ReducerContainer*): Self = StObject.set(x, "reducers", js.Array(value :_*))
       
-      @scala.inline
-      def setWrapper(value: /* fc */ FC[js.Any] => ComponentType[js.Any]): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
+      inline def setWrapper(value: /* fc */ FC[js.Any] => ComponentType[js.Any]): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
     }
   }
   
@@ -2825,29 +2766,22 @@ object mod {
   }
   object StyletronComponentInjectedProps {
     
-    @scala.inline
-    def apply[P /* <: js.Object */](): StyletronComponentInjectedProps[P] = {
+    inline def apply[P /* <: js.Object */](): StyletronComponentInjectedProps[P] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyletronComponentInjectedProps[P]]
     }
     
-    @scala.inline
-    implicit class StyletronComponentInjectedPropsMutableBuilder[Self <: StyletronComponentInjectedProps[?], P /* <: js.Object */] (val x: Self & StyletronComponentInjectedProps[P]) extends AnyVal {
+    extension [Self <: StyletronComponentInjectedProps[?], P /* <: js.Object */](x: Self & StyletronComponentInjectedProps[P]) {
       
-      @scala.inline
-      def set$as(value: StyletronBase): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
+      inline def set$as(value: StyletronBase): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$asUndefined: Self = StObject.set(x, "$as", js.undefined)
+      inline def set$asUndefined: Self = StObject.set(x, "$as", js.undefined)
       
-      @scala.inline
-      def set$style(value: StyleProp[P]): Self = StObject.set(x, "$style", value.asInstanceOf[js.Any])
+      inline def set$style(value: StyleProp[P]): Self = StObject.set(x, "$style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$styleFunction1(value: P => StyleObject): Self = StObject.set(x, "$style", js.Any.fromFunction1(value))
+      inline def set$styleFunction1(value: P => StyleObject): Self = StObject.set(x, "$style", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set$styleUndefined: Self = StObject.set(x, "$style", js.undefined)
+      inline def set$styleUndefined: Self = StObject.set(x, "$style", js.undefined)
     }
   }
   

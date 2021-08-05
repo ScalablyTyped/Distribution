@@ -55,29 +55,22 @@ trait TableSelectionChangedEventArgs extends StObject {
 }
 object TableSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(address: String, isInsideTable: Boolean, tableId: String, worksheetId: String): TableSelectionChangedEventArgs = {
+  inline def apply(address: String, isInsideTable: Boolean, tableId: String, worksheetId: String): TableSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], isInsideTable = isInsideTable.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableSelectionChanged")
     __obj.asInstanceOf[TableSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class TableSelectionChangedEventArgsMutableBuilder[Self <: TableSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TableSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInsideTable(value: Boolean): Self = StObject.set(x, "isInsideTable", value.asInstanceOf[js.Any])
+    inline def setIsInsideTable(value: Boolean): Self = StObject.set(x, "isInsideTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TableSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TableSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

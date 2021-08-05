@@ -20,34 +20,25 @@ trait UpdateDeveloperMetadataRequest extends StObject {
 }
 object UpdateDeveloperMetadataRequest {
   
-  @scala.inline
-  def apply(): UpdateDeveloperMetadataRequest = {
+  inline def apply(): UpdateDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDeveloperMetadataRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeveloperMetadataRequestMutableBuilder[Self <: UpdateDeveloperMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeveloperMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
+    inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
+    inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    @scala.inline
-    def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

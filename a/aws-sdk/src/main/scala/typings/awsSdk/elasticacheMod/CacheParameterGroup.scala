@@ -33,43 +33,31 @@ trait CacheParameterGroup extends StObject {
 }
 object CacheParameterGroup {
   
-  @scala.inline
-  def apply(): CacheParameterGroup = {
+  inline def apply(): CacheParameterGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheParameterGroup]
   }
   
-  @scala.inline
-  implicit class CacheParameterGroupMutableBuilder[Self <: CacheParameterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CacheParameterGroup](x: Self) {
     
-    @scala.inline
-    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setCacheParameterGroupFamily(value: String): Self = StObject.set(x, "CacheParameterGroupFamily", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupFamily(value: String): Self = StObject.set(x, "CacheParameterGroupFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheParameterGroupFamilyUndefined: Self = StObject.set(x, "CacheParameterGroupFamily", js.undefined)
+    inline def setCacheParameterGroupFamilyUndefined: Self = StObject.set(x, "CacheParameterGroupFamily", js.undefined)
     
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
+    inline def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setIsGlobal(value: Boolean): Self = StObject.set(x, "IsGlobal", value.asInstanceOf[js.Any])
+    inline def setIsGlobal(value: Boolean): Self = StObject.set(x, "IsGlobal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGlobalUndefined: Self = StObject.set(x, "IsGlobal", js.undefined)
+    inline def setIsGlobalUndefined: Self = StObject.set(x, "IsGlobal", js.undefined)
   }
 }

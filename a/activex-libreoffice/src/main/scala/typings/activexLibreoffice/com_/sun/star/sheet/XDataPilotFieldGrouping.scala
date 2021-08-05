@@ -45,8 +45,7 @@ trait XDataPilotFieldGrouping
 }
 object XDataPilotFieldGrouping {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDateGroup: DataPilotFieldGroupInfo => XDataPilotField,
     createNameGroup: SeqEquiv[String] => XDataPilotField,
@@ -57,13 +56,10 @@ object XDataPilotFieldGrouping {
     __obj.asInstanceOf[XDataPilotFieldGrouping]
   }
   
-  @scala.inline
-  implicit class XDataPilotFieldGroupingMutableBuilder[Self <: XDataPilotFieldGrouping] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotFieldGrouping](x: Self) {
     
-    @scala.inline
-    def setCreateDateGroup(value: DataPilotFieldGroupInfo => XDataPilotField): Self = StObject.set(x, "createDateGroup", js.Any.fromFunction1(value))
+    inline def setCreateDateGroup(value: DataPilotFieldGroupInfo => XDataPilotField): Self = StObject.set(x, "createDateGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNameGroup(value: SeqEquiv[String] => XDataPilotField): Self = StObject.set(x, "createNameGroup", js.Any.fromFunction1(value))
+    inline def setCreateNameGroup(value: SeqEquiv[String] => XDataPilotField): Self = StObject.set(x, "createNameGroup", js.Any.fromFunction1(value))
   }
 }

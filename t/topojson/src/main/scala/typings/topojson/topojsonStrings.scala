@@ -8,6 +8,5 @@ object topojsonStrings {
   
   @js.native
   sealed trait GeometryCollection extends StObject
-  @scala.inline
-  def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
+  inline def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
 }

@@ -10,6 +10,5 @@ object isWindowsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  inline def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
 }

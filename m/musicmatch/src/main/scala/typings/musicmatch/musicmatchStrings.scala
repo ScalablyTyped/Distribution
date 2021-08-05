@@ -12,72 +12,59 @@ object musicmatchStrings {
   sealed trait asc
     extends StObject
        with TSort
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait bad_characters extends StObject
-  @scala.inline
-  def bad_characters: bad_characters = "bad_characters".asInstanceOf[bad_characters]
+  inline def bad_characters: bad_characters = "bad_characters".asInstanceOf[bad_characters]
   
   @js.native
   sealed trait desc
     extends StObject
        with TSort
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait dfxp extends StObject
-  @scala.inline
-  def dfxp: dfxp = "dfxp".asInstanceOf[dfxp]
+  inline def dfxp: dfxp = "dfxp".asInstanceOf[dfxp]
   
   @js.native
   sealed trait json
     extends StObject
        with TFormat
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait lines_too_long extends StObject
-  @scala.inline
-  def lines_too_long: lines_too_long = "lines_too_long".asInstanceOf[lines_too_long]
+  inline def lines_too_long: lines_too_long = "lines_too_long".asInstanceOf[lines_too_long]
   
   @js.native
   sealed trait lrc extends StObject
-  @scala.inline
-  def lrc: lrc = "lrc".asInstanceOf[lrc]
+  inline def lrc: lrc = "lrc".asInstanceOf[lrc]
   
   @js.native
   sealed trait stledu extends StObject
-  @scala.inline
-  def stledu: stledu = "stledu".asInstanceOf[stledu]
+  inline def stledu: stledu = "stledu".asInstanceOf[stledu]
   
   @js.native
   sealed trait wrong_attribution extends StObject
-  @scala.inline
-  def wrong_attribution: wrong_attribution = "wrong_attribution".asInstanceOf[wrong_attribution]
+  inline def wrong_attribution: wrong_attribution = "wrong_attribution".asInstanceOf[wrong_attribution]
   
   @js.native
   sealed trait wrong_formatting extends StObject
-  @scala.inline
-  def wrong_formatting: wrong_formatting = "wrong_formatting".asInstanceOf[wrong_formatting]
+  inline def wrong_formatting: wrong_formatting = "wrong_formatting".asInstanceOf[wrong_formatting]
   
   @js.native
   sealed trait wrong_lyrics extends StObject
-  @scala.inline
-  def wrong_lyrics: wrong_lyrics = "wrong_lyrics".asInstanceOf[wrong_lyrics]
+  inline def wrong_lyrics: wrong_lyrics = "wrong_lyrics".asInstanceOf[wrong_lyrics]
   
   @js.native
   sealed trait wrong_verses extends StObject
-  @scala.inline
-  def wrong_verses: wrong_verses = "wrong_verses".asInstanceOf[wrong_verses]
+  inline def wrong_verses: wrong_verses = "wrong_verses".asInstanceOf[wrong_verses]
   
   @js.native
   sealed trait xml
     extends StObject
        with TFormat
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
+  inline def xml: xml = "xml".asInstanceOf[xml]
 }

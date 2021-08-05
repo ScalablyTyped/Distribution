@@ -21,25 +21,19 @@ trait SchemaBucketByActivity extends StObject {
 }
 object SchemaBucketByActivity {
   
-  @scala.inline
-  def apply(): SchemaBucketByActivity = {
+  inline def apply(): SchemaBucketByActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBucketByActivity]
   }
   
-  @scala.inline
-  implicit class SchemaBucketByActivityMutableBuilder[Self <: SchemaBucketByActivity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBucketByActivity](x: Self) {
     
-    @scala.inline
-    def setActivityDataSourceId(value: String): Self = StObject.set(x, "activityDataSourceId", value.asInstanceOf[js.Any])
+    inline def setActivityDataSourceId(value: String): Self = StObject.set(x, "activityDataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityDataSourceIdUndefined: Self = StObject.set(x, "activityDataSourceId", js.undefined)
+    inline def setActivityDataSourceIdUndefined: Self = StObject.set(x, "activityDataSourceId", js.undefined)
     
-    @scala.inline
-    def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
+    inline def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
+    inline def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
   }
 }

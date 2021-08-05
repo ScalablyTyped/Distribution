@@ -15,8 +15,7 @@ object useKeyboardSearchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useKeyboardSearch[D, E /* <: HTMLElement */](
+  inline def useKeyboardSearch[D, E /* <: HTMLElement */](
     hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex: KeyboardSearchOptions[D, E]
   ): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
@@ -60,43 +59,32 @@ object useKeyboardSearchMod {
   }
   object BaseKeyboardSearchOptions {
     
-    @scala.inline
-    def apply[D, E /* <: HTMLElement */](items: js.Array[D], onChange: /* data */ SearchData[D, E] => Unit): BaseKeyboardSearchOptions[D, E] = {
+    inline def apply[D, E /* <: HTMLElement */](items: js.Array[D], onChange: /* data */ SearchData[D, E] => Unit): BaseKeyboardSearchOptions[D, E] = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[BaseKeyboardSearchOptions[D, E]]
     }
     
-    @scala.inline
-    implicit class BaseKeyboardSearchOptionsMutableBuilder[Self <: BaseKeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */] (val x: Self & (BaseKeyboardSearchOptions[D, E])) extends AnyVal {
+    extension [Self <: BaseKeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */](x: Self & (BaseKeyboardSearchOptions[D, E])) {
       
-      @scala.inline
-      def setFindMatchIndex(
+      inline def setFindMatchIndex(
         value: (/* value */ String, /* values */ js.Array[String], /* startIndex */ Double, /* isSelfMatchable */ js.UndefOr[Boolean]) => Double
       ): Self = StObject.set(x, "findMatchIndex", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindMatchIndexUndefined: Self = StObject.set(x, "findMatchIndex", js.undefined)
+      inline def setFindMatchIndexUndefined: Self = StObject.set(x, "findMatchIndex", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnChange(value: /* data */ SearchData[D, E] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* data */ SearchData[D, E] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[E] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[E] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setResetTime(value: Double): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
+      inline def setResetTime(value: Double): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
+      inline def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
     }
   }
   
@@ -112,17 +100,14 @@ object useKeyboardSearchMod {
   }
   object KeyboardSearchOptions {
     
-    @scala.inline
-    def apply[D, E /* <: HTMLElement */](items: js.Array[D], onChange: /* data */ SearchData[D, E] => Unit, searchIndex: Double): KeyboardSearchOptions[D, E] = {
+    inline def apply[D, E /* <: HTMLElement */](items: js.Array[D], onChange: /* data */ SearchData[D, E] => Unit, searchIndex: Double): KeyboardSearchOptions[D, E] = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), searchIndex = searchIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyboardSearchOptions[D, E]]
     }
     
-    @scala.inline
-    implicit class KeyboardSearchOptionsMutableBuilder[Self <: KeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */] (val x: Self & (KeyboardSearchOptions[D, E])) extends AnyVal {
+    extension [Self <: KeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */](x: Self & (KeyboardSearchOptions[D, E])) {
       
-      @scala.inline
-      def setSearchIndex(value: Double): Self = StObject.set(x, "searchIndex", value.asInstanceOf[js.Any])
+      inline def setSearchIndex(value: Double): Self = StObject.set(x, "searchIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,32 +148,24 @@ object useKeyboardSearchMod {
   }
   object SearchData {
     
-    @scala.inline
-    def apply[D, E /* <: HTMLElement */](index: Double, item: D, items: js.Array[D], query: String, target: E): SearchData[D, E] = {
+    inline def apply[D, E /* <: HTMLElement */](index: Double, item: D, items: js.Array[D], query: String, target: E): SearchData[D, E] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchData[D, E]]
     }
     
-    @scala.inline
-    implicit class SearchDataMutableBuilder[Self <: SearchData[?, ?], D, E /* <: HTMLElement */] (val x: Self & (SearchData[D, E])) extends AnyVal {
+    extension [Self <: SearchData[?, ?], D, E /* <: HTMLElement */](x: Self & (SearchData[D, E])) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: D): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: D): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: E): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: E): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

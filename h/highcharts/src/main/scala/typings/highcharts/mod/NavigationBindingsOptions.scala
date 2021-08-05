@@ -258,247 +258,167 @@ trait NavigationBindingsOptions extends StObject {
 }
 object NavigationBindingsOptions {
   
-  @scala.inline
-  def apply(): NavigationBindingsOptions = {
+  inline def apply(): NavigationBindingsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationBindingsOptions]
   }
   
-  @scala.inline
-  implicit class NavigationBindingsOptionsMutableBuilder[Self <: NavigationBindingsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBindingsOptions](x: Self) {
     
-    @scala.inline
-    def setArrowInfinityLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
+    inline def setArrowInfinityLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowInfinityLineUndefined: Self = StObject.set(x, "arrowInfinityLine", js.undefined)
+    inline def setArrowInfinityLineUndefined: Self = StObject.set(x, "arrowInfinityLine", js.undefined)
     
-    @scala.inline
-    def setArrowRay(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
+    inline def setArrowRay(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowRayUndefined: Self = StObject.set(x, "arrowRay", js.undefined)
+    inline def setArrowRayUndefined: Self = StObject.set(x, "arrowRay", js.undefined)
     
-    @scala.inline
-    def setArrowSegment(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowSegment", value.asInstanceOf[js.Any])
+    inline def setArrowSegment(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowSegmentUndefined: Self = StObject.set(x, "arrowSegment", js.undefined)
+    inline def setArrowSegmentUndefined: Self = StObject.set(x, "arrowSegment", js.undefined)
     
-    @scala.inline
-    def setCircleAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "circleAnnotation", value.asInstanceOf[js.Any])
+    inline def setCircleAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "circleAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleAnnotationUndefined: Self = StObject.set(x, "circleAnnotation", js.undefined)
+    inline def setCircleAnnotationUndefined: Self = StObject.set(x, "circleAnnotation", js.undefined)
     
-    @scala.inline
-    def setCrooked3(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "crooked3", value.asInstanceOf[js.Any])
+    inline def setCrooked3(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "crooked3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrooked3Undefined: Self = StObject.set(x, "crooked3", js.undefined)
+    inline def setCrooked3Undefined: Self = StObject.set(x, "crooked3", js.undefined)
     
-    @scala.inline
-    def setCrooked5(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "crooked5", value.asInstanceOf[js.Any])
+    inline def setCrooked5(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "crooked5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrooked5Undefined: Self = StObject.set(x, "crooked5", js.undefined)
+    inline def setCrooked5Undefined: Self = StObject.set(x, "crooked5", js.undefined)
     
-    @scala.inline
-    def setCurrentPriceIndicator(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "currentPriceIndicator", value.asInstanceOf[js.Any])
+    inline def setCurrentPriceIndicator(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "currentPriceIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPriceIndicatorUndefined: Self = StObject.set(x, "currentPriceIndicator", js.undefined)
+    inline def setCurrentPriceIndicatorUndefined: Self = StObject.set(x, "currentPriceIndicator", js.undefined)
     
-    @scala.inline
-    def setElliott3(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "elliott3", value.asInstanceOf[js.Any])
+    inline def setElliott3(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "elliott3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElliott3Undefined: Self = StObject.set(x, "elliott3", js.undefined)
+    inline def setElliott3Undefined: Self = StObject.set(x, "elliott3", js.undefined)
     
-    @scala.inline
-    def setElliott5(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "elliott5", value.asInstanceOf[js.Any])
+    inline def setElliott5(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "elliott5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
+    inline def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
     
-    @scala.inline
-    def setFibonacci(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
+    inline def setFibonacci(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
+    inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
-    @scala.inline
-    def setFlagCirclepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagCirclepin", value.asInstanceOf[js.Any])
+    inline def setFlagCirclepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagCirclepin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagCirclepinUndefined: Self = StObject.set(x, "flagCirclepin", js.undefined)
+    inline def setFlagCirclepinUndefined: Self = StObject.set(x, "flagCirclepin", js.undefined)
     
-    @scala.inline
-    def setFlagDiamondpin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagDiamondpin", value.asInstanceOf[js.Any])
+    inline def setFlagDiamondpin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagDiamondpin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagDiamondpinUndefined: Self = StObject.set(x, "flagDiamondpin", js.undefined)
+    inline def setFlagDiamondpinUndefined: Self = StObject.set(x, "flagDiamondpin", js.undefined)
     
-    @scala.inline
-    def setFlagSimplepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagSimplepin", value.asInstanceOf[js.Any])
+    inline def setFlagSimplepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagSimplepin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagSimplepinUndefined: Self = StObject.set(x, "flagSimplepin", js.undefined)
+    inline def setFlagSimplepinUndefined: Self = StObject.set(x, "flagSimplepin", js.undefined)
     
-    @scala.inline
-    def setFlagSquarepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagSquarepin", value.asInstanceOf[js.Any])
+    inline def setFlagSquarepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagSquarepin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagSquarepinUndefined: Self = StObject.set(x, "flagSquarepin", js.undefined)
+    inline def setFlagSquarepinUndefined: Self = StObject.set(x, "flagSquarepin", js.undefined)
     
-    @scala.inline
-    def setFullScreen(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
-    @scala.inline
-    def setHorizontalLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
+    inline def setHorizontalLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
+    inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
-    @scala.inline
-    def setIndicators(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
+    inline def setIndicators(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
+    inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
     
-    @scala.inline
-    def setInfinityLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "infinityLine", value.asInstanceOf[js.Any])
+    inline def setInfinityLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "infinityLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfinityLineUndefined: Self = StObject.set(x, "infinityLine", js.undefined)
+    inline def setInfinityLineUndefined: Self = StObject.set(x, "infinityLine", js.undefined)
     
-    @scala.inline
-    def setLabelAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "labelAnnotation", value.asInstanceOf[js.Any])
+    inline def setLabelAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "labelAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAnnotationUndefined: Self = StObject.set(x, "labelAnnotation", js.undefined)
+    inline def setLabelAnnotationUndefined: Self = StObject.set(x, "labelAnnotation", js.undefined)
     
-    @scala.inline
-    def setMeasureX(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureX", value.asInstanceOf[js.Any])
+    inline def setMeasureX(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureXUndefined: Self = StObject.set(x, "measureX", js.undefined)
+    inline def setMeasureXUndefined: Self = StObject.set(x, "measureX", js.undefined)
     
-    @scala.inline
-    def setMeasureXY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureXY", value.asInstanceOf[js.Any])
+    inline def setMeasureXY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureXY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureXYUndefined: Self = StObject.set(x, "measureXY", js.undefined)
+    inline def setMeasureXYUndefined: Self = StObject.set(x, "measureXY", js.undefined)
     
-    @scala.inline
-    def setMeasureY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureY", value.asInstanceOf[js.Any])
+    inline def setMeasureY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureYUndefined: Self = StObject.set(x, "measureY", js.undefined)
+    inline def setMeasureYUndefined: Self = StObject.set(x, "measureY", js.undefined)
     
-    @scala.inline
-    def setParallelChannel(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "parallelChannel", value.asInstanceOf[js.Any])
+    inline def setParallelChannel(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "parallelChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelChannelUndefined: Self = StObject.set(x, "parallelChannel", js.undefined)
+    inline def setParallelChannelUndefined: Self = StObject.set(x, "parallelChannel", js.undefined)
     
-    @scala.inline
-    def setPitchfork(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
+    inline def setPitchfork(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
+    inline def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
     
-    @scala.inline
-    def setRay(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
+    inline def setRay(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRayUndefined: Self = StObject.set(x, "ray", js.undefined)
+    inline def setRayUndefined: Self = StObject.set(x, "ray", js.undefined)
     
-    @scala.inline
-    def setRectangleAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "rectangleAnnotation", value.asInstanceOf[js.Any])
+    inline def setRectangleAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "rectangleAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangleAnnotationUndefined: Self = StObject.set(x, "rectangleAnnotation", js.undefined)
+    inline def setRectangleAnnotationUndefined: Self = StObject.set(x, "rectangleAnnotation", js.undefined)
     
-    @scala.inline
-    def setSaveChart(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
+    inline def setSaveChart(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveChartUndefined: Self = StObject.set(x, "saveChart", js.undefined)
+    inline def setSaveChartUndefined: Self = StObject.set(x, "saveChart", js.undefined)
     
-    @scala.inline
-    def setSegment(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
-    @scala.inline
-    def setSeriesTypeCandlestick(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeCandlestick", value.asInstanceOf[js.Any])
+    inline def setSeriesTypeCandlestick(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeCandlestick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTypeCandlestickUndefined: Self = StObject.set(x, "seriesTypeCandlestick", js.undefined)
+    inline def setSeriesTypeCandlestickUndefined: Self = StObject.set(x, "seriesTypeCandlestick", js.undefined)
     
-    @scala.inline
-    def setSeriesTypeLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeLine", value.asInstanceOf[js.Any])
+    inline def setSeriesTypeLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTypeLineUndefined: Self = StObject.set(x, "seriesTypeLine", js.undefined)
+    inline def setSeriesTypeLineUndefined: Self = StObject.set(x, "seriesTypeLine", js.undefined)
     
-    @scala.inline
-    def setSeriesTypeOhlc(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeOhlc", value.asInstanceOf[js.Any])
+    inline def setSeriesTypeOhlc(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeOhlc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTypeOhlcUndefined: Self = StObject.set(x, "seriesTypeOhlc", js.undefined)
+    inline def setSeriesTypeOhlcUndefined: Self = StObject.set(x, "seriesTypeOhlc", js.undefined)
     
-    @scala.inline
-    def setToggleAnnotations(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
+    inline def setToggleAnnotations(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleAnnotationsUndefined: Self = StObject.set(x, "toggleAnnotations", js.undefined)
+    inline def setToggleAnnotationsUndefined: Self = StObject.set(x, "toggleAnnotations", js.undefined)
     
-    @scala.inline
-    def setVerticalArrow(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalArrow", value.asInstanceOf[js.Any])
+    inline def setVerticalArrow(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalArrowUndefined: Self = StObject.set(x, "verticalArrow", js.undefined)
+    inline def setVerticalArrowUndefined: Self = StObject.set(x, "verticalArrow", js.undefined)
     
-    @scala.inline
-    def setVerticalCounter(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalCounter", value.asInstanceOf[js.Any])
+    inline def setVerticalCounter(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalCounter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalCounterUndefined: Self = StObject.set(x, "verticalCounter", js.undefined)
+    inline def setVerticalCounterUndefined: Self = StObject.set(x, "verticalCounter", js.undefined)
     
-    @scala.inline
-    def setVerticalLabel(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalLabel", value.asInstanceOf[js.Any])
+    inline def setVerticalLabel(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLabelUndefined: Self = StObject.set(x, "verticalLabel", js.undefined)
+    inline def setVerticalLabelUndefined: Self = StObject.set(x, "verticalLabel", js.undefined)
     
-    @scala.inline
-    def setVerticalLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
+    inline def setVerticalLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
+    inline def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
     
-    @scala.inline
-    def setZoomX(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomX", value.asInstanceOf[js.Any])
+    inline def setZoomX(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomXUndefined: Self = StObject.set(x, "zoomX", js.undefined)
+    inline def setZoomXUndefined: Self = StObject.set(x, "zoomX", js.undefined)
     
-    @scala.inline
-    def setZoomXY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomXY", value.asInstanceOf[js.Any])
+    inline def setZoomXY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomXY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomXYUndefined: Self = StObject.set(x, "zoomXY", js.undefined)
+    inline def setZoomXYUndefined: Self = StObject.set(x, "zoomXY", js.undefined)
     
-    @scala.inline
-    def setZoomY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomY", value.asInstanceOf[js.Any])
+    inline def setZoomY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomYUndefined: Self = StObject.set(x, "zoomY", js.undefined)
+    inline def setZoomYUndefined: Self = StObject.set(x, "zoomY", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait DescribeStackResourcesOutput extends StObject {
 }
 object DescribeStackResourcesOutput {
   
-  @scala.inline
-  def apply(): DescribeStackResourcesOutput = {
+  inline def apply(): DescribeStackResourcesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStackResourcesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStackResourcesOutputMutableBuilder[Self <: DescribeStackResourcesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackResourcesOutput](x: Self) {
     
-    @scala.inline
-    def setStackResources(value: StackResources): Self = StObject.set(x, "StackResources", value.asInstanceOf[js.Any])
+    inline def setStackResources(value: StackResources): Self = StObject.set(x, "StackResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackResourcesUndefined: Self = StObject.set(x, "StackResources", js.undefined)
+    inline def setStackResourcesUndefined: Self = StObject.set(x, "StackResources", js.undefined)
     
-    @scala.inline
-    def setStackResourcesVarargs(value: StackResource*): Self = StObject.set(x, "StackResources", js.Array(value :_*))
+    inline def setStackResourcesVarargs(value: StackResource*): Self = StObject.set(x, "StackResources", js.Array(value :_*))
   }
 }

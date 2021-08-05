@@ -18,22 +18,17 @@ trait GetJobBookmarkRequest extends StObject {
 }
 object GetJobBookmarkRequest {
   
-  @scala.inline
-  def apply(JobName: JobName): GetJobBookmarkRequest = {
+  inline def apply(JobName: JobName): GetJobBookmarkRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobBookmarkRequest]
   }
   
-  @scala.inline
-  implicit class GetJobBookmarkRequestMutableBuilder[Self <: GetJobBookmarkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobBookmarkRequest](x: Self) {
     
-    @scala.inline
-    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: RunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: RunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
   }
 }

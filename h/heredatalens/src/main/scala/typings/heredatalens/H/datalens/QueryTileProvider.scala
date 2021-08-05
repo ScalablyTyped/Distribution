@@ -57,26 +57,20 @@ object QueryTileProvider {
   }
   object Options {
     
-    @scala.inline
-    def apply(queryId: String, tileParamNames: TileParamNames): Options = {
+    inline def apply(queryId: String, tileParamNames: TileParamNames): Options = {
       val __obj = js.Dynamic.literal(queryId = queryId.asInstanceOf[js.Any], tileParamNames = tileParamNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setQueryId(value: String): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
+      inline def setQueryId(value: String): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: String): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: String): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setTileParamNames(value: TileParamNames): Self = StObject.set(x, "tileParamNames", value.asInstanceOf[js.Any])
+      inline def setTileParamNames(value: TileParamNames): Self = StObject.set(x, "tileParamNames", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,23 +92,18 @@ object QueryTileProvider {
   }
   object TileParamNames {
     
-    @scala.inline
-    def apply(x: String, y: String, z: String): TileParamNames = {
+    inline def apply(x: String, y: String, z: String): TileParamNames = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[TileParamNames]
     }
     
-    @scala.inline
-    implicit class TileParamNamesMutableBuilder[Self <: TileParamNames] (val x: Self) extends AnyVal {
+    extension [Self <: TileParamNames](x: Self) {
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: String): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: String): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
   

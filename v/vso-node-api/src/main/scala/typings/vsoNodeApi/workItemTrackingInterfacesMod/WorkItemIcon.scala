@@ -18,19 +18,15 @@ trait WorkItemIcon extends StObject {
 }
 object WorkItemIcon {
   
-  @scala.inline
-  def apply(id: String, url: String): WorkItemIcon = {
+  inline def apply(id: String, url: String): WorkItemIcon = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemIcon]
   }
   
-  @scala.inline
-  implicit class WorkItemIconMutableBuilder[Self <: WorkItemIcon] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemIcon](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

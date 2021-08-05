@@ -29,23 +29,18 @@ object addonOCRMod {
   }
   object Line {
     
-    @scala.inline
-    def apply(GetLineRect: () => String, GetWordContent: Double => Word, GetWordCount: () => Double): Line = {
+    inline def apply(GetLineRect: () => String, GetWordContent: Double => Word, GetWordCount: () => Double): Line = {
       val __obj = js.Dynamic.literal(GetLineRect = js.Any.fromFunction0(GetLineRect), GetWordContent = js.Any.fromFunction1(GetWordContent), GetWordCount = js.Any.fromFunction0(GetWordCount))
       __obj.asInstanceOf[Line]
     }
     
-    @scala.inline
-    implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+    extension [Self <: Line](x: Self) {
       
-      @scala.inline
-      def setGetLineRect(value: () => String): Self = StObject.set(x, "GetLineRect", js.Any.fromFunction0(value))
+      inline def setGetLineRect(value: () => String): Self = StObject.set(x, "GetLineRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWordContent(value: Double => Word): Self = StObject.set(x, "GetWordContent", js.Any.fromFunction1(value))
+      inline def setGetWordContent(value: Double => Word): Self = StObject.set(x, "GetWordContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWordCount(value: () => Double): Self = StObject.set(x, "GetWordCount", js.Any.fromFunction0(value))
+      inline def setGetWordCount(value: () => Double): Self = StObject.set(x, "GetWordCount", js.Any.fromFunction0(value))
     }
   }
   
@@ -265,8 +260,7 @@ object addonOCRMod {
   }
   object OCRResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Get: () => String,
       GetErrorCode: () => Double,
       GetErrorString: () => String,
@@ -280,32 +274,23 @@ object addonOCRMod {
       __obj.asInstanceOf[OCRResult]
     }
     
-    @scala.inline
-    implicit class OCRResultMutableBuilder[Self <: OCRResult] (val x: Self) extends AnyVal {
+    extension [Self <: OCRResult](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => String): Self = StObject.set(x, "Get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => String): Self = StObject.set(x, "Get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorCode(value: () => Double): Self = StObject.set(x, "GetErrorCode", js.Any.fromFunction0(value))
+      inline def setGetErrorCode(value: () => Double): Self = StObject.set(x, "GetErrorCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorString(value: () => String): Self = StObject.set(x, "GetErrorString", js.Any.fromFunction0(value))
+      inline def setGetErrorString(value: () => String): Self = StObject.set(x, "GetErrorString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFormat(value: () => Double): Self = StObject.set(x, "GetFormat", js.Any.fromFunction0(value))
+      inline def setGetFormat(value: () => Double): Self = StObject.set(x, "GetFormat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInput(value: () => Double | String): Self = StObject.set(x, "GetInput", js.Any.fromFunction0(value))
+      inline def setGetInput(value: () => Double | String): Self = StObject.set(x, "GetInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageSetContent(value: Double => PageSet): Self = StObject.set(x, "GetPageSetContent", js.Any.fromFunction1(value))
+      inline def setGetPageSetContent(value: Double => PageSet): Self = StObject.set(x, "GetPageSetContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageSetCount(value: () => Double): Self = StObject.set(x, "GetPageSetCount", js.Any.fromFunction0(value))
+      inline def setGetPageSetCount(value: () => Double): Self = StObject.set(x, "GetPageSetCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSave(value: String => Boolean): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
+      inline def setSave(value: String => Boolean): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
     }
   }
   
@@ -324,20 +309,16 @@ object addonOCRMod {
   }
   object Page {
     
-    @scala.inline
-    def apply(GetLineContent: Double => Line, GetLineCount: () => Double): Page = {
+    inline def apply(GetLineContent: Double => Line, GetLineCount: () => Double): Page = {
       val __obj = js.Dynamic.literal(GetLineContent = js.Any.fromFunction1(GetLineContent), GetLineCount = js.Any.fromFunction0(GetLineCount))
       __obj.asInstanceOf[Page]
     }
     
-    @scala.inline
-    implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+    extension [Self <: Page](x: Self) {
       
-      @scala.inline
-      def setGetLineContent(value: Double => Line): Self = StObject.set(x, "GetLineContent", js.Any.fromFunction1(value))
+      inline def setGetLineContent(value: Double => Line): Self = StObject.set(x, "GetLineContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLineCount(value: () => Double): Self = StObject.set(x, "GetLineCount", js.Any.fromFunction0(value))
+      inline def setGetLineCount(value: () => Double): Self = StObject.set(x, "GetLineCount", js.Any.fromFunction0(value))
     }
   }
   
@@ -356,20 +337,16 @@ object addonOCRMod {
   }
   object PageSet {
     
-    @scala.inline
-    def apply(GetPageContent: Double => Page, GetPageCount: () => Double): PageSet = {
+    inline def apply(GetPageContent: Double => Page, GetPageCount: () => Double): PageSet = {
       val __obj = js.Dynamic.literal(GetPageContent = js.Any.fromFunction1(GetPageContent), GetPageCount = js.Any.fromFunction0(GetPageCount))
       __obj.asInstanceOf[PageSet]
     }
     
-    @scala.inline
-    implicit class PageSetMutableBuilder[Self <: PageSet] (val x: Self) extends AnyVal {
+    extension [Self <: PageSet](x: Self) {
       
-      @scala.inline
-      def setGetPageContent(value: Double => Page): Self = StObject.set(x, "GetPageContent", js.Any.fromFunction1(value))
+      inline def setGetPageContent(value: Double => Page): Self = StObject.set(x, "GetPageContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageCount(value: () => Double): Self = StObject.set(x, "GetPageCount", js.Any.fromFunction0(value))
+      inline def setGetPageCount(value: () => Double): Self = StObject.set(x, "GetPageCount", js.Any.fromFunction0(value))
     }
   }
   
@@ -395,8 +372,7 @@ object addonOCRMod {
   }
   object Word {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GetFontName: () => String,
       GetFontSize: () => Double,
       GetText: () => String,
@@ -406,20 +382,15 @@ object addonOCRMod {
       __obj.asInstanceOf[Word]
     }
     
-    @scala.inline
-    implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
+    extension [Self <: Word](x: Self) {
       
-      @scala.inline
-      def setGetFontName(value: () => String): Self = StObject.set(x, "GetFontName", js.Any.fromFunction0(value))
+      inline def setGetFontName(value: () => String): Self = StObject.set(x, "GetFontName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFontSize(value: () => Double): Self = StObject.set(x, "GetFontSize", js.Any.fromFunction0(value))
+      inline def setGetFontSize(value: () => Double): Self = StObject.set(x, "GetFontSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWordRect(value: Double => String): Self = StObject.set(x, "GetWordRect", js.Any.fromFunction1(value))
+      inline def setGetWordRect(value: Double => String): Self = StObject.set(x, "GetWordRect", js.Any.fromFunction1(value))
     }
   }
 }

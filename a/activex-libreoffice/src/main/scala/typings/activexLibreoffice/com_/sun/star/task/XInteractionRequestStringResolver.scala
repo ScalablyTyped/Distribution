@@ -24,8 +24,7 @@ trait XInteractionRequestStringResolver
 }
 object XInteractionRequestStringResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getStringFromInformationalRequest: XInteractionRequest => Optional[String],
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XInteractionRequestStringResolver {
     __obj.asInstanceOf[XInteractionRequestStringResolver]
   }
   
-  @scala.inline
-  implicit class XInteractionRequestStringResolverMutableBuilder[Self <: XInteractionRequestStringResolver] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionRequestStringResolver](x: Self) {
     
-    @scala.inline
-    def setGetStringFromInformationalRequest(value: XInteractionRequest => Optional[String]): Self = StObject.set(x, "getStringFromInformationalRequest", js.Any.fromFunction1(value))
+    inline def setGetStringFromInformationalRequest(value: XInteractionRequest => Optional[String]): Self = StObject.set(x, "getStringFromInformationalRequest", js.Any.fromFunction1(value))
   }
 }

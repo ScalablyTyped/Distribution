@@ -26,6 +26,5 @@ object IslandManager {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getUnvisitedNode(nodes: js.Array[IslandNode]): IslandNode | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnvisitedNode")(nodes.asInstanceOf[js.Any]).asInstanceOf[IslandNode | Boolean]
+  inline def getUnvisitedNode(nodes: js.Array[IslandNode]): IslandNode | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnvisitedNode")(nodes.asInstanceOf[js.Any]).asInstanceOf[IslandNode | Boolean]
 }

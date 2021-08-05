@@ -20,35 +20,26 @@ object directThreadBroadcastReelOptionsMod {
   }
   object DirectThreadBroadcastReelOptions {
     
-    @scala.inline
-    def apply(mediaId: String): DirectThreadBroadcastReelOptions = {
+    inline def apply(mediaId: String): DirectThreadBroadcastReelOptions = {
       val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadBroadcastReelOptions]
     }
     
-    @scala.inline
-    implicit class DirectThreadBroadcastReelOptionsMutableBuilder[Self <: DirectThreadBroadcastReelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadBroadcastReelOptions](x: Self) {
       
-      @scala.inline
-      def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
+      inline def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaType(value: photo_ | video_): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: photo_ | video_): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      @scala.inline
-      def setReelId(value: String): Self = StObject.set(x, "reelId", value.asInstanceOf[js.Any])
+      inline def setReelId(value: String): Self = StObject.set(x, "reelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReelIdUndefined: Self = StObject.set(x, "reelId", js.undefined)
+      inline def setReelIdUndefined: Self = StObject.set(x, "reelId", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

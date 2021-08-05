@@ -21,8 +21,7 @@ trait SketchMSBorder extends StObject {
 }
 object SketchMSBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: SketchMSColor,
     fillType: SketchMSFillTypeEnum,
     isEnabled: Boolean,
@@ -33,25 +32,18 @@ object SketchMSBorder {
     __obj.asInstanceOf[SketchMSBorder]
   }
   
-  @scala.inline
-  implicit class SketchMSBorderMutableBuilder[Self <: SketchMSBorder] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillType(value: SketchMSFillTypeEnum): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
+    inline def setFillType(value: SketchMSFillTypeEnum): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: SketchMSBorderPositionEnum): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: SketchMSBorderPositionEnum): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: border): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: border): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

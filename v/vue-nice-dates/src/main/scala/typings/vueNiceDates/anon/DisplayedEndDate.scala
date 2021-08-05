@@ -17,36 +17,27 @@ trait DisplayedEndDate extends StObject {
 }
 object DisplayedEndDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mergedModifiers: StringDictionary[js.Function2[/* date */ typings.std.Date, /* type */ String, Boolean]]
   ): DisplayedEndDate = {
     val __obj = js.Dynamic.literal(mergedModifiers = mergedModifiers.asInstanceOf[js.Any], displayedEndDate = null, displayedStartDate = null, receivedDate = null)
     __obj.asInstanceOf[DisplayedEndDate]
   }
   
-  @scala.inline
-  implicit class DisplayedEndDateMutableBuilder[Self <: DisplayedEndDate] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayedEndDate](x: Self) {
     
-    @scala.inline
-    def setDisplayedEndDate(value: String | typings.std.Date): Self = StObject.set(x, "displayedEndDate", value.asInstanceOf[js.Any])
+    inline def setDisplayedEndDate(value: String | typings.std.Date): Self = StObject.set(x, "displayedEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedEndDateNull: Self = StObject.set(x, "displayedEndDate", null)
+    inline def setDisplayedEndDateNull: Self = StObject.set(x, "displayedEndDate", null)
     
-    @scala.inline
-    def setDisplayedStartDate(value: String | typings.std.Date): Self = StObject.set(x, "displayedStartDate", value.asInstanceOf[js.Any])
+    inline def setDisplayedStartDate(value: String | typings.std.Date): Self = StObject.set(x, "displayedStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedStartDateNull: Self = StObject.set(x, "displayedStartDate", null)
+    inline def setDisplayedStartDateNull: Self = StObject.set(x, "displayedStartDate", null)
     
-    @scala.inline
-    def setMergedModifiers(value: StringDictionary[js.Function2[/* date */ typings.std.Date, /* type */ String, Boolean]]): Self = StObject.set(x, "mergedModifiers", value.asInstanceOf[js.Any])
+    inline def setMergedModifiers(value: StringDictionary[js.Function2[/* date */ typings.std.Date, /* type */ String, Boolean]]): Self = StObject.set(x, "mergedModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedDate(value: String | typings.std.Date): Self = StObject.set(x, "receivedDate", value.asInstanceOf[js.Any])
+    inline def setReceivedDate(value: String | typings.std.Date): Self = StObject.set(x, "receivedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedDateNull: Self = StObject.set(x, "receivedDate", null)
+    inline def setReceivedDateNull: Self = StObject.set(x, "receivedDate", null)
   }
 }

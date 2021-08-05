@@ -12,26 +12,20 @@ trait ComponentElement[P, T /* <: Component[P, ComponentState, js.Any] */]
 }
 object ComponentElement {
   
-  @scala.inline
-  def apply[P, T /* <: Component[P, ComponentState, js.Any] */](props: P, `type`: ComponentClass[P, ComponentState]): ComponentElement[P, T] = {
+  inline def apply[P, T /* <: Component[P, ComponentState, js.Any] */](props: P, `type`: ComponentClass[P, ComponentState]): ComponentElement[P, T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentElement[P, T]]
   }
   
-  @scala.inline
-  implicit class ComponentElementMutableBuilder[Self <: ComponentElement[?, ?], P, T /* <: Component[P, ComponentState, js.Any] */] (val x: Self & (ComponentElement[P, T])) extends AnyVal {
+  extension [Self <: ComponentElement[?, ?], P, T /* <: Component[P, ComponentState, js.Any] */](x: Self & (ComponentElement[P, T])) {
     
-    @scala.inline
-    def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait GzipOptions
 }
 object GzipOptions {
   
-  @scala.inline
-  def apply(): GzipOptions = {
+  inline def apply(): GzipOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GzipOptions]
   }
   
-  @scala.inline
-  implicit class GzipOptionsMutableBuilder[Self <: GzipOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GzipOptions](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+    inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
   }
 }

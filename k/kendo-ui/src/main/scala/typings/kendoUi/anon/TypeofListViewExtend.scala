@@ -15,19 +15,15 @@ trait TypeofListViewExtend extends StObject {
 }
 object TypeofListViewExtend {
   
-  @scala.inline
-  def apply(extend: js.Object => ListView, fn: ListView): TypeofListViewExtend = {
+  inline def apply(extend: js.Object => ListView, fn: ListView): TypeofListViewExtend = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofListViewExtend]
   }
   
-  @scala.inline
-  implicit class TypeofListViewExtendMutableBuilder[Self <: TypeofListViewExtend] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofListViewExtend](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ListView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ListView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ListView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ListView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

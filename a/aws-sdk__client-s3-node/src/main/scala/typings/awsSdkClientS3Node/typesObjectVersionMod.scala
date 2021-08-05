@@ -54,62 +54,44 @@ object typesObjectVersionMod {
   }
   object ObjectVersion {
     
-    @scala.inline
-    def apply(): ObjectVersion = {
+    inline def apply(): ObjectVersion = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObjectVersion]
     }
     
-    @scala.inline
-    implicit class ObjectVersionMutableBuilder[Self <: ObjectVersion] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectVersion](x: Self) {
       
-      @scala.inline
-      def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+      inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+      inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
       
-      @scala.inline
-      def setIsLatest(value: Boolean): Self = StObject.set(x, "IsLatest", value.asInstanceOf[js.Any])
+      inline def setIsLatest(value: Boolean): Self = StObject.set(x, "IsLatest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLatestUndefined: Self = StObject.set(x, "IsLatest", js.undefined)
+      inline def setIsLatestUndefined: Self = StObject.set(x, "IsLatest", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
       
-      @scala.inline
-      def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       
-      @scala.inline
-      def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: STANDARD | String): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: STANDARD | String): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
       
-      @scala.inline
-      def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     }
   }
   
@@ -131,26 +113,20 @@ object typesObjectVersionMod {
   }
   object UnmarshalledObjectVersion {
     
-    @scala.inline
-    def apply(): UnmarshalledObjectVersion = {
+    inline def apply(): UnmarshalledObjectVersion = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledObjectVersion]
     }
     
-    @scala.inline
-    implicit class UnmarshalledObjectVersionMutableBuilder[Self <: UnmarshalledObjectVersion] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledObjectVersion](x: Self) {
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       
-      @scala.inline
-      def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     }
   }
 }

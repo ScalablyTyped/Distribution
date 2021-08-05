@@ -23,31 +23,23 @@ trait GetAssetPropertyValueRequest extends StObject {
 }
 object GetAssetPropertyValueRequest {
   
-  @scala.inline
-  def apply(): GetAssetPropertyValueRequest = {
+  inline def apply(): GetAssetPropertyValueRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAssetPropertyValueRequest]
   }
   
-  @scala.inline
-  implicit class GetAssetPropertyValueRequestMutableBuilder[Self <: GetAssetPropertyValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssetPropertyValueRequest](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
+    inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
-    @scala.inline
-    def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
+    inline def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
+    inline def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
     
-    @scala.inline
-    def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
+    inline def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
   }
 }

@@ -22,37 +22,27 @@ trait MobileAppAssignment
 }
 object MobileAppAssignment {
   
-  @scala.inline
-  def apply(): MobileAppAssignment = {
+  inline def apply(): MobileAppAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MobileAppAssignment]
   }
   
-  @scala.inline
-  implicit class MobileAppAssignmentMutableBuilder[Self <: MobileAppAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: MobileAppAssignment](x: Self) {
     
-    @scala.inline
-    def setIntent(value: InstallIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: InstallIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
-    @scala.inline
-    def setSettings(value: NullableOption[MobileAppAssignmentSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: NullableOption[MobileAppAssignmentSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsNull: Self = StObject.set(x, "settings", null)
+    inline def setSettingsNull: Self = StObject.set(x, "settings", null)
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNull: Self = StObject.set(x, "target", null)
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

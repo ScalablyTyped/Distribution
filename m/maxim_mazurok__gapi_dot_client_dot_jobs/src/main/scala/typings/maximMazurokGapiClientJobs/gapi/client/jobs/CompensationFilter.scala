@@ -20,40 +20,29 @@ trait CompensationFilter extends StObject {
 }
 object CompensationFilter {
   
-  @scala.inline
-  def apply(): CompensationFilter = {
+  inline def apply(): CompensationFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompensationFilter]
   }
   
-  @scala.inline
-  implicit class CompensationFilterMutableBuilder[Self <: CompensationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: CompensationFilter](x: Self) {
     
-    @scala.inline
-    def setIncludeJobsWithUnspecifiedCompensationRange(value: Boolean): Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", value.asInstanceOf[js.Any])
+    inline def setIncludeJobsWithUnspecifiedCompensationRange(value: Boolean): Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeJobsWithUnspecifiedCompensationRangeUndefined: Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", js.undefined)
+    inline def setIncludeJobsWithUnspecifiedCompensationRangeUndefined: Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", js.undefined)
     
-    @scala.inline
-    def setRange(value: CompensationRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: CompensationRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnits(value: js.Array[String]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: js.Array[String]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    @scala.inline
-    def setUnitsVarargs(value: String*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: String*): Self = StObject.set(x, "units", js.Array(value :_*))
   }
 }

@@ -46,25 +46,19 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testDigest extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testDigest {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testDigest = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testDigest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testDigest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testDigestMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testDigest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testDigest](x: Self) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

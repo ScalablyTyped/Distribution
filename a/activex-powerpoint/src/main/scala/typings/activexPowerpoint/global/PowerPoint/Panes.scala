@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Panes")
 @js.native
-class Panes protected ()
+/* private */ class Panes ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Panes {
   
@@ -22,7 +22,7 @@ class Panes protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Panes_typekey")
   var PowerPointDotPanes_typekey: typings.activexPowerpoint.PowerPoint.Panes = js.native
 }

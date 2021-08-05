@@ -20,8 +20,7 @@ trait DeformTimeline
 }
 object DeformTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     attachment: VertexAttachment,
     curves: js.Any,
@@ -41,25 +40,18 @@ object DeformTimeline {
     __obj.asInstanceOf[DeformTimeline]
   }
   
-  @scala.inline
-  implicit class DeformTimelineMutableBuilder[Self <: DeformTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: DeformTimeline](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: VertexAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: VertexAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameVertices(value: js.Array[ArrayLike[Double]]): Self = StObject.set(x, "frameVertices", value.asInstanceOf[js.Any])
+    inline def setFrameVertices(value: js.Array[ArrayLike[Double]]): Self = StObject.set(x, "frameVertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameVerticesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "frameVertices", js.Array(value :_*))
+    inline def setFrameVerticesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "frameVertices", js.Array(value :_*))
     
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFrame(value: (Double, Double, ArrayLike[Double]) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction3(value))
+    inline def setSetFrame(value: (Double, Double, ArrayLike[Double]) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSlotIndex(value: Double): Self = StObject.set(x, "slotIndex", value.asInstanceOf[js.Any])
+    inline def setSlotIndex(value: Double): Self = StObject.set(x, "slotIndex", value.asInstanceOf[js.Any])
   }
 }

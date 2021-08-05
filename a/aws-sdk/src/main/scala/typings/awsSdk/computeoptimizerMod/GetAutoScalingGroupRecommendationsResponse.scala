@@ -23,37 +23,27 @@ trait GetAutoScalingGroupRecommendationsResponse extends StObject {
 }
 object GetAutoScalingGroupRecommendationsResponse {
   
-  @scala.inline
-  def apply(): GetAutoScalingGroupRecommendationsResponse = {
+  inline def apply(): GetAutoScalingGroupRecommendationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAutoScalingGroupRecommendationsResponse]
   }
   
-  @scala.inline
-  implicit class GetAutoScalingGroupRecommendationsResponseMutableBuilder[Self <: GetAutoScalingGroupRecommendationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAutoScalingGroupRecommendationsResponse](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupRecommendations(value: AutoScalingGroupRecommendations): Self = StObject.set(x, "autoScalingGroupRecommendations", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupRecommendations(value: AutoScalingGroupRecommendations): Self = StObject.set(x, "autoScalingGroupRecommendations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupRecommendationsUndefined: Self = StObject.set(x, "autoScalingGroupRecommendations", js.undefined)
+    inline def setAutoScalingGroupRecommendationsUndefined: Self = StObject.set(x, "autoScalingGroupRecommendations", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroupRecommendationsVarargs(value: AutoScalingGroupRecommendation*): Self = StObject.set(x, "autoScalingGroupRecommendations", js.Array(value :_*))
+    inline def setAutoScalingGroupRecommendationsVarargs(value: AutoScalingGroupRecommendation*): Self = StObject.set(x, "autoScalingGroupRecommendations", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: GetRecommendationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: GetRecommendationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: GetRecommendationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GetRecommendationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

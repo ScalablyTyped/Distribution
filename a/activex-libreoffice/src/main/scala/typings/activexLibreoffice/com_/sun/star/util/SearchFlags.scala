@@ -29,31 +29,22 @@ object SearchFlags {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL_IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
+    inline def ALL_IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LEV_RELAXED: `65536` = 65536.asInstanceOf[`65536`]
+    inline def LEV_RELAXED: `65536` = 65536.asInstanceOf[`65536`]
     
-    @scala.inline
-    def NORM_WORD_ONLY: `16` = 16.asInstanceOf[`16`]
+    inline def NORM_WORD_ONLY: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def REG_EXTENDED: `256` = 256.asInstanceOf[`256`]
+    inline def REG_EXTENDED: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def REG_NEWLINE: `1024` = 1024.asInstanceOf[`1024`]
+    inline def REG_NEWLINE: `1024` = 1024.asInstanceOf[`1024`]
     
-    @scala.inline
-    def REG_NOSUB: `512` = 512.asInstanceOf[`512`]
+    inline def REG_NOSUB: `512` = 512.asInstanceOf[`512`]
     
-    @scala.inline
-    def REG_NOT_BEGINOFLINE: `2048` = 2048.asInstanceOf[`2048`]
+    inline def REG_NOT_BEGINOFLINE: `2048` = 2048.asInstanceOf[`2048`]
     
-    @scala.inline
-    def REG_NOT_ENDOFLINE: `4096` = 4096.asInstanceOf[`4096`]
+    inline def REG_NOT_ENDOFLINE: `4096` = 4096.asInstanceOf[`4096`]
     
-    @scala.inline
-    def WILD_MATCH_SELECTION: `1048576` = 1048576.asInstanceOf[`1048576`]
+    inline def WILD_MATCH_SELECTION: `1048576` = 1048576.asInstanceOf[`1048576`]
   }
 }

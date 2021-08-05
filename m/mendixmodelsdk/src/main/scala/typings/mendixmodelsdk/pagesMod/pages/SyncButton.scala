@@ -39,8 +39,7 @@ object SyncButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def create(model: IModel): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -51,8 +50,7 @@ object SyncButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInDataViewUnderFooterWidget(container: DataView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -63,8 +61,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInDataViewUnderWidget(container: DataView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -75,8 +72,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInDivContainerUnderWidget(container: DivContainer): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -87,8 +83,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -99,8 +94,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInHeaderUnderLeftWidget(container: Header): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -111,8 +105,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInHeaderUnderRightWidget(container: Header): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -123,8 +116,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -135,8 +127,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -147,8 +138,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInLayoutUnderWidget(container: Layout): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -159,8 +149,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -171,8 +160,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInListViewUnderWidget(container: ListView): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -183,8 +171,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -195,8 +182,7 @@ object SyncButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -207,8 +193,7 @@ object SyncButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -219,8 +204,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -231,8 +215,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInSnippetUnderWidget(container: Snippet): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -243,8 +226,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -255,8 +237,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -267,8 +248,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInTabPageUnderWidget(container: TabPage): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -279,8 +259,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInTableCellUnderWidget(container: TableCell): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -291,8 +270,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -303,20 +281,17 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SyncButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

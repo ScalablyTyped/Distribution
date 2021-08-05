@@ -23,55 +23,39 @@ trait Domain extends StObject {
 }
 object Domain {
   
-  @scala.inline
-  def apply(): Domain = {
+  inline def apply(): Domain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Domain]
   }
   
-  @scala.inline
-  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+  extension [Self <: Domain](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+    inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+    inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

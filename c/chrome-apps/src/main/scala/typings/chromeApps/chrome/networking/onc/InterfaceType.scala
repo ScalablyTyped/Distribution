@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InterfaceType extends StObject
 object InterfaceType {
   
-  @scala.inline
-  def full: typings.chromeApps.chromeAppsStrings.full = "full".asInstanceOf[typings.chromeApps.chromeAppsStrings.full]
+  inline def full: typings.chromeApps.chromeAppsStrings.full = "full".asInstanceOf[typings.chromeApps.chromeAppsStrings.full]
   
-  @scala.inline
-  def partial: typings.chromeApps.chromeAppsStrings.partial = "partial".asInstanceOf[typings.chromeApps.chromeAppsStrings.partial]
+  inline def partial: typings.chromeApps.chromeAppsStrings.partial = "partial".asInstanceOf[typings.chromeApps.chromeAppsStrings.partial]
 }

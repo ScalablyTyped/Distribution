@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Node extends StObject
 object Node {
   
-  @scala.inline
-  def Alternative(
+  inline def Alternative(
     elements: js.Array[Element],
     end: Double,
     parent: Pattern | Group | CapturingGroup | LookaroundAssertion,
@@ -29,15 +28,13 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.Alternative]
   }
   
-  @scala.inline
-  def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
+  inline def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "any", parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[typings.regexpp.astMod.AnyCharacterSet]
   }
   
-  @scala.inline
-  def Backreference(
+  inline def Backreference(
     end: Double,
     parent: Alternative | Quantifier,
     raw: String,
@@ -50,8 +47,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.Backreference]
   }
   
-  @scala.inline
-  def CapturingGroup(
+  inline def CapturingGroup(
     alternatives: js.Array[Alternative],
     end: Double,
     parent: Alternative | Quantifier,
@@ -64,8 +60,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.CapturingGroup]
   }
   
-  @scala.inline
-  def Character(
+  inline def Character(
     end: Double,
     parent: Alternative | Quantifier | CharacterClass | CharacterClassRange,
     raw: String,
@@ -77,8 +72,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.Character]
   }
   
-  @scala.inline
-  def CharacterClass(
+  inline def CharacterClass(
     elements: js.Array[CharacterClassElement],
     end: Double,
     negate: Boolean,
@@ -91,22 +85,19 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.CharacterClass]
   }
   
-  @scala.inline
-  def CharacterClassRange(end: Double, max: Character, min: Character, parent: CharacterClass, raw: String, start: Double): typings.regexpp.astMod.CharacterClassRange = {
+  inline def CharacterClassRange(end: Double, max: Character, min: Character, parent: CharacterClass, raw: String, start: Double): typings.regexpp.astMod.CharacterClassRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CharacterClassRange")
     __obj.asInstanceOf[typings.regexpp.astMod.CharacterClassRange]
   }
   
-  @scala.inline
-  def EdgeAssertion(end: Double, kind: start | end, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.EdgeAssertion = {
+  inline def EdgeAssertion(end: Double, kind: start | end, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.EdgeAssertion = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[typings.regexpp.astMod.EdgeAssertion]
   }
   
-  @scala.inline
-  def EscapeCharacterSet(
+  inline def EscapeCharacterSet(
     end: Double,
     kind: digit | space | word,
     negate: Boolean,
@@ -119,8 +110,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.EscapeCharacterSet]
   }
   
-  @scala.inline
-  def Flags(
+  inline def Flags(
     dotAll: Boolean,
     end: Double,
     global: Boolean,
@@ -136,8 +126,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.Flags]
   }
   
-  @scala.inline
-  def Group(
+  inline def Group(
     alternatives: js.Array[Alternative],
     end: Double,
     parent: Alternative | Quantifier,
@@ -149,8 +138,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.Group]
   }
   
-  @scala.inline
-  def LookaheadAssertion(
+  inline def LookaheadAssertion(
     alternatives: js.Array[Alternative],
     end: Double,
     negate: Boolean,
@@ -163,8 +151,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.LookaheadAssertion]
   }
   
-  @scala.inline
-  def LookbehindAssertion(
+  inline def LookbehindAssertion(
     alternatives: js.Array[Alternative],
     end: Double,
     negate: Boolean,
@@ -177,15 +164,13 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.LookbehindAssertion]
   }
   
-  @scala.inline
-  def Pattern(alternatives: js.Array[Alternative], end: Double, raw: String, start: Double): typings.regexpp.astMod.Pattern = {
+  inline def Pattern(alternatives: js.Array[Alternative], end: Double, raw: String, start: Double): typings.regexpp.astMod.Pattern = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], parent = null)
     __obj.updateDynamic("type")("Pattern")
     __obj.asInstanceOf[typings.regexpp.astMod.Pattern]
   }
   
-  @scala.inline
-  def Quantifier(
+  inline def Quantifier(
     element: QuantifiableElement,
     end: Double,
     greedy: Boolean,
@@ -200,15 +185,13 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.Quantifier]
   }
   
-  @scala.inline
-  def RegExpLiteral(end: Double, flags: Flags, parent: Null, pattern: Pattern, raw: String, start: Double): typings.regexpp.astMod.RegExpLiteral = {
+  inline def RegExpLiteral(end: Double, flags: Flags, parent: Null, pattern: Pattern, raw: String, start: Double): typings.regexpp.astMod.RegExpLiteral = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RegExpLiteral")
     __obj.asInstanceOf[typings.regexpp.astMod.RegExpLiteral]
   }
   
-  @scala.inline
-  def UnicodePropertyCharacterSet(
+  inline def UnicodePropertyCharacterSet(
     end: Double,
     key: String,
     negate: Boolean,
@@ -221,8 +204,7 @@ object Node {
     __obj.asInstanceOf[typings.regexpp.astMod.UnicodePropertyCharacterSet]
   }
   
-  @scala.inline
-  def WordBoundaryAssertion(end: Double, negate: Boolean, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.WordBoundaryAssertion = {
+  inline def WordBoundaryAssertion(end: Double, negate: Boolean, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.WordBoundaryAssertion = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "word", negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[typings.regexpp.astMod.WordBoundaryAssertion]

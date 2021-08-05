@@ -36,8 +36,7 @@ trait ProofreadingResult extends StObject {
 }
 object ProofreadingResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aDocumentIdentifier: String,
     aErrors: SafeArray[SingleProofreadingError],
     aLocale: Locale,
@@ -53,37 +52,26 @@ object ProofreadingResult {
     __obj.asInstanceOf[ProofreadingResult]
   }
   
-  @scala.inline
-  implicit class ProofreadingResultMutableBuilder[Self <: ProofreadingResult] (val x: Self) extends AnyVal {
+  extension [Self <: ProofreadingResult](x: Self) {
     
-    @scala.inline
-    def setADocumentIdentifier(value: String): Self = StObject.set(x, "aDocumentIdentifier", value.asInstanceOf[js.Any])
+    inline def setADocumentIdentifier(value: String): Self = StObject.set(x, "aDocumentIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAErrors(value: SafeArray[SingleProofreadingError]): Self = StObject.set(x, "aErrors", value.asInstanceOf[js.Any])
+    inline def setAErrors(value: SafeArray[SingleProofreadingError]): Self = StObject.set(x, "aErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setALocale(value: Locale): Self = StObject.set(x, "aLocale", value.asInstanceOf[js.Any])
+    inline def setALocale(value: Locale): Self = StObject.set(x, "aLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aProperties", value.asInstanceOf[js.Any])
+    inline def setAProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAText(value: String): Self = StObject.set(x, "aText", value.asInstanceOf[js.Any])
+    inline def setAText(value: String): Self = StObject.set(x, "aText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNBehindEndOfSentencePosition(value: Double): Self = StObject.set(x, "nBehindEndOfSentencePosition", value.asInstanceOf[js.Any])
+    inline def setNBehindEndOfSentencePosition(value: Double): Self = StObject.set(x, "nBehindEndOfSentencePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNStartOfNextSentencePosition(value: Double): Self = StObject.set(x, "nStartOfNextSentencePosition", value.asInstanceOf[js.Any])
+    inline def setNStartOfNextSentencePosition(value: Double): Self = StObject.set(x, "nStartOfNextSentencePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNStartOfSentencePosition(value: Double): Self = StObject.set(x, "nStartOfSentencePosition", value.asInstanceOf[js.Any])
+    inline def setNStartOfSentencePosition(value: Double): Self = StObject.set(x, "nStartOfSentencePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFlatParagraph(value: XFlatParagraph): Self = StObject.set(x, "xFlatParagraph", value.asInstanceOf[js.Any])
+    inline def setXFlatParagraph(value: XFlatParagraph): Self = StObject.set(x, "xFlatParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXProofreader(value: XProofreader): Self = StObject.set(x, "xProofreader", value.asInstanceOf[js.Any])
+    inline def setXProofreader(value: XProofreader): Self = StObject.set(x, "xProofreader", value.asInstanceOf[js.Any])
   }
 }

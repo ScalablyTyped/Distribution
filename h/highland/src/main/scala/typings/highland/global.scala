@@ -45,6 +45,5 @@ object global {
   @JSGlobal("highland")
   @js.native
   def highland: HighlandStatic = js.native
-  @scala.inline
-  def highland_=(x: HighlandStatic): Unit = js.Dynamic.global.updateDynamic("highland")(x.asInstanceOf[js.Any])
+  inline def highland_=(x: HighlandStatic): Unit = js.Dynamic.global.updateDynamic("highland")(x.asInstanceOf[js.Any])
 }

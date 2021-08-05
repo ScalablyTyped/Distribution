@@ -54,50 +54,36 @@ object anon {
   }
   object ConstructorOptionscontent {
     
-    @scala.inline
-    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): ConstructorOptionscontent = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): ConstructorOptionscontent = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontent]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionscontentMutableBuilder[Self <: ConstructorOptionscontent] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptionscontent](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
   }
   
@@ -145,50 +131,36 @@ object anon {
   }
   object ConstructorOptionscontentBase {
     
-    @scala.inline
-    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): ConstructorOptionscontentBase = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): ConstructorOptionscontentBase = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentBase]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionscontentBaseMutableBuilder[Self <: ConstructorOptionscontentBase] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptionscontentBase](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
   }
   
@@ -236,50 +208,36 @@ object anon {
   }
   object ConstructorOptionscontentDictcustomOption {
     
-    @scala.inline
-    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentDictcustomOption]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionscontentDictcustomOptionMutableBuilder[Self <: ConstructorOptionscontentDictcustomOption] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptionscontentDictcustomOption](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
   }
   
@@ -291,26 +249,20 @@ object anon {
   }
   object Contents {
     
-    @scala.inline
-    def apply(): Contents = {
+    inline def apply(): Contents = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Contents]
     }
     
-    @scala.inline
-    implicit class ContentsMutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
+    extension [Self <: Contents](x: Self) {
       
-      @scala.inline
-      def setContents(value: Boolean): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Boolean): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+      inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     }
   }
   
@@ -323,20 +275,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(): End = {
+    inline def apply(): End = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     }
   }
 }

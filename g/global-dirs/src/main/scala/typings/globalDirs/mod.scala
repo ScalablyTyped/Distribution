@@ -58,23 +58,18 @@ object mod {
   }
   object GlobalDirectories {
     
-    @scala.inline
-    def apply(binaries: String, packages: String, prefix: String): GlobalDirectories = {
+    inline def apply(binaries: String, packages: String, prefix: String): GlobalDirectories = {
       val __obj = js.Dynamic.literal(binaries = binaries.asInstanceOf[js.Any], packages = packages.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalDirectories]
     }
     
-    @scala.inline
-    implicit class GlobalDirectoriesMutableBuilder[Self <: GlobalDirectories] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalDirectories](x: Self) {
       
-      @scala.inline
-      def setBinaries(value: String): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
+      inline def setBinaries(value: String): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackages(value: String): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+      inline def setPackages(value: String): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
 }

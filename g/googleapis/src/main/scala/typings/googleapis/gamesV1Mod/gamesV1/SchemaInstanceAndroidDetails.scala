@@ -32,37 +32,27 @@ trait SchemaInstanceAndroidDetails extends StObject {
 }
 object SchemaInstanceAndroidDetails {
   
-  @scala.inline
-  def apply(): SchemaInstanceAndroidDetails = {
+  inline def apply(): SchemaInstanceAndroidDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceAndroidDetails]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceAndroidDetailsMutableBuilder[Self <: SchemaInstanceAndroidDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceAndroidDetails](x: Self) {
     
-    @scala.inline
-    def setEnablePiracyCheck(value: Boolean): Self = StObject.set(x, "enablePiracyCheck", value.asInstanceOf[js.Any])
+    inline def setEnablePiracyCheck(value: Boolean): Self = StObject.set(x, "enablePiracyCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePiracyCheckUndefined: Self = StObject.set(x, "enablePiracyCheck", js.undefined)
+    inline def setEnablePiracyCheckUndefined: Self = StObject.set(x, "enablePiracyCheck", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
+    inline def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
+    inline def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
   }
 }

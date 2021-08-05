@@ -14,10 +14,8 @@ object Animate {
   @js.native
   val ^ : Animate = js.native
   
-  @scala.inline
-  implicit class AnimateMutableBuilder[Self <: Animate] (val x: Self) extends AnyVal {
+  extension [Self <: Animate](x: Self) {
     
-    @scala.inline
-    def setRegisterAnimation(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "registerAnimation", js.Any.fromFunction3(value))
+    inline def setRegisterAnimation(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "registerAnimation", js.Any.fromFunction3(value))
   }
 }

@@ -46,13 +46,12 @@ trait TableOfFigures extends StObject {
   
   var UseHyperlinks: Boolean
   
-  @JSName("Word.TableOfFigures_typekey")
+  /* private */ @JSName("Word.TableOfFigures_typekey")
   var WordDotTableOfFigures_typekey: TableOfFigures
 }
 object TableOfFigures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Caption: String,
     Creator: Double,
@@ -80,70 +79,48 @@ object TableOfFigures {
     __obj.asInstanceOf[TableOfFigures]
   }
   
-  @scala.inline
-  implicit class TableOfFiguresMutableBuilder[Self <: TableOfFigures] (val x: Self) extends AnyVal {
+  extension [Self <: TableOfFigures](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeadingStyles(value: HeadingStyles): Self = StObject.set(x, "HeadingStyles", value.asInstanceOf[js.Any])
+    inline def setHeadingStyles(value: HeadingStyles): Self = StObject.set(x, "HeadingStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidePageNumbersInWeb(value: Boolean): Self = StObject.set(x, "HidePageNumbersInWeb", value.asInstanceOf[js.Any])
+    inline def setHidePageNumbersInWeb(value: Boolean): Self = StObject.set(x, "HidePageNumbersInWeb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLabel(value: Boolean): Self = StObject.set(x, "IncludeLabel", value.asInstanceOf[js.Any])
+    inline def setIncludeLabel(value: Boolean): Self = StObject.set(x, "IncludeLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludePageNumbers(value: Boolean): Self = StObject.set(x, "IncludePageNumbers", value.asInstanceOf[js.Any])
+    inline def setIncludePageNumbers(value: Boolean): Self = StObject.set(x, "IncludePageNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerHeadingLevel(value: Double): Self = StObject.set(x, "LowerHeadingLevel", value.asInstanceOf[js.Any])
+    inline def setLowerHeadingLevel(value: Double): Self = StObject.set(x, "LowerHeadingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightAlignPageNumbers(value: Boolean): Self = StObject.set(x, "RightAlignPageNumbers", value.asInstanceOf[js.Any])
+    inline def setRightAlignPageNumbers(value: Boolean): Self = StObject.set(x, "RightAlignPageNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabLeader(value: WdTabLeader): Self = StObject.set(x, "TabLeader", value.asInstanceOf[js.Any])
+    inline def setTabLeader(value: WdTabLeader): Self = StObject.set(x, "TabLeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableID(value: String): Self = StObject.set(x, "TableID", value.asInstanceOf[js.Any])
+    inline def setTableID(value: String): Self = StObject.set(x, "TableID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdatePageNumbers(value: () => Unit): Self = StObject.set(x, "UpdatePageNumbers", js.Any.fromFunction0(value))
+    inline def setUpdatePageNumbers(value: () => Unit): Self = StObject.set(x, "UpdatePageNumbers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpperHeadingLevel(value: Double): Self = StObject.set(x, "UpperHeadingLevel", value.asInstanceOf[js.Any])
+    inline def setUpperHeadingLevel(value: Double): Self = StObject.set(x, "UpperHeadingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFields(value: Boolean): Self = StObject.set(x, "UseFields", value.asInstanceOf[js.Any])
+    inline def setUseFields(value: Boolean): Self = StObject.set(x, "UseFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHeadingStyles(value: Boolean): Self = StObject.set(x, "UseHeadingStyles", value.asInstanceOf[js.Any])
+    inline def setUseHeadingStyles(value: Boolean): Self = StObject.set(x, "UseHeadingStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHyperlinks(value: Boolean): Self = StObject.set(x, "UseHyperlinks", value.asInstanceOf[js.Any])
+    inline def setUseHyperlinks(value: Boolean): Self = StObject.set(x, "UseHyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotTableOfFigures_typekey(value: TableOfFigures): Self = StObject.set(x, "Word.TableOfFigures_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotTableOfFigures_typekey(value: TableOfFigures): Self = StObject.set(x, "Word.TableOfFigures_typekey", value.asInstanceOf[js.Any])
   }
 }

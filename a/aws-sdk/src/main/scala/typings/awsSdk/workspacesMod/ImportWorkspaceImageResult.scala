@@ -13,19 +13,15 @@ trait ImportWorkspaceImageResult extends StObject {
 }
 object ImportWorkspaceImageResult {
   
-  @scala.inline
-  def apply(): ImportWorkspaceImageResult = {
+  inline def apply(): ImportWorkspaceImageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportWorkspaceImageResult]
   }
   
-  @scala.inline
-  implicit class ImportWorkspaceImageResultMutableBuilder[Self <: ImportWorkspaceImageResult] (val x: Self) extends AnyVal {
+  extension [Self <: ImportWorkspaceImageResult](x: Self) {
     
-    @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
   }
 }

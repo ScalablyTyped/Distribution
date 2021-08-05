@@ -59,38 +59,28 @@ object gapi {
       }
       object GoogleExampleLibraryagentV1Book {
         
-        @scala.inline
-        def apply(): GoogleExampleLibraryagentV1Book = {
+        inline def apply(): GoogleExampleLibraryagentV1Book = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleExampleLibraryagentV1Book]
         }
         
-        @scala.inline
-        implicit class GoogleExampleLibraryagentV1BookMutableBuilder[Self <: GoogleExampleLibraryagentV1Book] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleExampleLibraryagentV1Book](x: Self) {
           
-          @scala.inline
-          def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+          inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+          inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+          inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+          inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
       
@@ -104,29 +94,22 @@ object gapi {
       }
       object GoogleExampleLibraryagentV1ListBooksResponse {
         
-        @scala.inline
-        def apply(): GoogleExampleLibraryagentV1ListBooksResponse = {
+        inline def apply(): GoogleExampleLibraryagentV1ListBooksResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleExampleLibraryagentV1ListBooksResponse]
         }
         
-        @scala.inline
-        implicit class GoogleExampleLibraryagentV1ListBooksResponseMutableBuilder[Self <: GoogleExampleLibraryagentV1ListBooksResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleExampleLibraryagentV1ListBooksResponse](x: Self) {
           
-          @scala.inline
-          def setBooks(value: js.Array[GoogleExampleLibraryagentV1Book]): Self = StObject.set(x, "books", value.asInstanceOf[js.Any])
+          inline def setBooks(value: js.Array[GoogleExampleLibraryagentV1Book]): Self = StObject.set(x, "books", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBooksUndefined: Self = StObject.set(x, "books", js.undefined)
+          inline def setBooksUndefined: Self = StObject.set(x, "books", js.undefined)
           
-          @scala.inline
-          def setBooksVarargs(value: GoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value :_*))
+          inline def setBooksVarargs(value: GoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -143,29 +126,22 @@ object gapi {
       }
       object GoogleExampleLibraryagentV1ListShelvesResponse {
         
-        @scala.inline
-        def apply(): GoogleExampleLibraryagentV1ListShelvesResponse = {
+        inline def apply(): GoogleExampleLibraryagentV1ListShelvesResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleExampleLibraryagentV1ListShelvesResponse]
         }
         
-        @scala.inline
-        implicit class GoogleExampleLibraryagentV1ListShelvesResponseMutableBuilder[Self <: GoogleExampleLibraryagentV1ListShelvesResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleExampleLibraryagentV1ListShelvesResponse](x: Self) {
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
           
-          @scala.inline
-          def setShelves(value: js.Array[GoogleExampleLibraryagentV1Shelf]): Self = StObject.set(x, "shelves", value.asInstanceOf[js.Any])
+          inline def setShelves(value: js.Array[GoogleExampleLibraryagentV1Shelf]): Self = StObject.set(x, "shelves", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShelvesUndefined: Self = StObject.set(x, "shelves", js.undefined)
+          inline def setShelvesUndefined: Self = StObject.set(x, "shelves", js.undefined)
           
-          @scala.inline
-          def setShelvesVarargs(value: GoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value :_*))
+          inline def setShelvesVarargs(value: GoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value :_*))
         }
       }
       
@@ -179,26 +155,20 @@ object gapi {
       }
       object GoogleExampleLibraryagentV1Shelf {
         
-        @scala.inline
-        def apply(): GoogleExampleLibraryagentV1Shelf = {
+        inline def apply(): GoogleExampleLibraryagentV1Shelf = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleExampleLibraryagentV1Shelf]
         }
         
-        @scala.inline
-        implicit class GoogleExampleLibraryagentV1ShelfMutableBuilder[Self <: GoogleExampleLibraryagentV1Shelf] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleExampleLibraryagentV1Shelf](x: Self) {
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+          inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+          inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
         }
       }
       

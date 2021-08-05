@@ -30,55 +30,39 @@ trait ServerOptions extends StObject {
 }
 object ServerOptions {
   
-  @scala.inline
-  def apply(): ServerOptions = {
+  inline def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerOptions]
   }
   
-  @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptions](x: Self) {
     
-    @scala.inline
-    def setBaseDir(value: String | js.Array[String]): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+    inline def setBaseDir(value: String | js.Array[String]): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+    inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
     
-    @scala.inline
-    def setBaseDirVarargs(value: String*): Self = StObject.set(x, "baseDir", js.Array(value :_*))
+    inline def setBaseDirVarargs(value: String*): Self = StObject.set(x, "baseDir", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+    inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setMiddleware(value: js.Array[MiddlewareHandler | PerRouteMiddleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+    inline def setMiddleware(value: js.Array[MiddlewareHandler | PerRouteMiddleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+    inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
-    @scala.inline
-    def setMiddlewareVarargs(value: (MiddlewareHandler | PerRouteMiddleware)*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+    inline def setMiddlewareVarargs(value: (MiddlewareHandler | PerRouteMiddleware)*): Self = StObject.set(x, "middleware", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutes(value: Hash[String]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: Hash[String]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    @scala.inline
-    def setServeStaticOptions(value: ServeStaticOptions[ServerResponse]): Self = StObject.set(x, "serveStaticOptions", value.asInstanceOf[js.Any])
+    inline def setServeStaticOptions(value: ServeStaticOptions[ServerResponse]): Self = StObject.set(x, "serveStaticOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServeStaticOptionsUndefined: Self = StObject.set(x, "serveStaticOptions", js.undefined)
+    inline def setServeStaticOptionsUndefined: Self = StObject.set(x, "serveStaticOptions", js.undefined)
   }
 }

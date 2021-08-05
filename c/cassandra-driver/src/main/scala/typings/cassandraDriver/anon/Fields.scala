@@ -10,22 +10,17 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  @scala.inline
-  def apply(): Fields = {
+  inline def apply(): Fields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fields]
   }
   
-  @scala.inline
-  implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+  extension [Self <: Fields](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

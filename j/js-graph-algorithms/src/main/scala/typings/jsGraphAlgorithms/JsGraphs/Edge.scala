@@ -16,16 +16,15 @@ trait Edge extends StObject {
   
   def to(): Double
   
-  var v: js.Any
+  /* private */ var v: js.Any
   
-  var w: js.Any
+  /* private */ var w: js.Any
   
   var weight: Double
 }
 object Edge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     either: () => Double,
     from: () => Double,
     other: Double => Double,
@@ -38,34 +37,24 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  @scala.inline
-  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+  extension [Self <: Edge](x: Self) {
     
-    @scala.inline
-    def setEither(value: () => Double): Self = StObject.set(x, "either", js.Any.fromFunction0(value))
+    inline def setEither(value: () => Double): Self = StObject.set(x, "either", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFrom(value: () => Double): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
+    inline def setFrom(value: () => Double): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOther(value: Double => Double): Self = StObject.set(x, "other", js.Any.fromFunction1(value))
+    inline def setOther(value: Double => Double): Self = StObject.set(x, "other", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
+    inline def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

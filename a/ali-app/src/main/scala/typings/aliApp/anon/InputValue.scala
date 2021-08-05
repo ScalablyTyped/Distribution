@@ -12,19 +12,15 @@ trait InputValue extends StObject {
 }
 object InputValue {
   
-  @scala.inline
-  def apply(inputValue: String, ok: Boolean): InputValue = {
+  inline def apply(inputValue: String, ok: Boolean): InputValue = {
     val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputValue]
   }
   
-  @scala.inline
-  implicit class InputValueMutableBuilder[Self <: InputValue] (val x: Self) extends AnyVal {
+  extension [Self <: InputValue](x: Self) {
     
-    @scala.inline
-    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+    inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

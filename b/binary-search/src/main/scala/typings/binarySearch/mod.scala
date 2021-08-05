@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[A, B](
+  inline def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
     comparator: js.Function4[
@@ -19,8 +18,7 @@ object mod {
       js.Any
     ]
   ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply[A, B](
+  inline def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
     comparator: js.Function4[
@@ -42,8 +40,7 @@ object mod {
   //    * examples: undefined, NaN, 'abc'
   low: Double
   ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any], low.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply[A, B](
+  inline def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
     comparator: js.Function4[
@@ -66,8 +63,7 @@ object mod {
   low: Double,
     high: Double
   ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply[A, B](
+  inline def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
     comparator: js.Function4[

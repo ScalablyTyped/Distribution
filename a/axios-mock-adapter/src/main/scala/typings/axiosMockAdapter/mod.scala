@@ -410,17 +410,14 @@ object mod {
   }
   object AsymmetricMatcher {
     
-    @scala.inline
-    def apply(asymmetricMatch: js.Function): AsymmetricMatcher = {
+    inline def apply(asymmetricMatch: js.Function): AsymmetricMatcher = {
       val __obj = js.Dynamic.literal(asymmetricMatch = asymmetricMatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsymmetricMatcher]
     }
     
-    @scala.inline
-    implicit class AsymmetricMatcherMutableBuilder[Self <: AsymmetricMatcher] (val x: Self) extends AnyVal {
+    extension [Self <: AsymmetricMatcher](x: Self) {
       
-      @scala.inline
-      def setAsymmetricMatch(value: js.Function): Self = StObject.set(x, "asymmetricMatch", value.asInstanceOf[js.Any])
+      inline def setAsymmetricMatch(value: js.Function): Self = StObject.set(x, "asymmetricMatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,14 +428,12 @@ object mod {
   trait AsymmetricRequestDataMatcher extends StObject
   object AsymmetricRequestDataMatcher {
     
-    @scala.inline
-    def AsymmetricMatcher(asymmetricMatch: js.Function): typings.axiosMockAdapter.mod.AsymmetricMatcher = {
+    inline def AsymmetricMatcher(asymmetricMatch: js.Function): typings.axiosMockAdapter.mod.AsymmetricMatcher = {
       val __obj = js.Dynamic.literal(asymmetricMatch = asymmetricMatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.axiosMockAdapter.mod.AsymmetricMatcher]
     }
     
-    @scala.inline
-    def RequestDataMatcher(): typings.axiosMockAdapter.mod.RequestDataMatcher = {
+    inline def RequestDataMatcher(): typings.axiosMockAdapter.mod.RequestDataMatcher = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.axiosMockAdapter.mod.RequestDataMatcher]
     }
@@ -653,8 +648,7 @@ object mod {
   }
   object MockAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adapter: () => AxiosAdapter,
       history: StringDictionary[js.Array[AxiosRequestConfig]],
       onAny: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
@@ -675,71 +669,55 @@ object mod {
       __obj.asInstanceOf[MockAdapter]
     }
     
-    @scala.inline
-    implicit class MockAdapterMutableBuilder[Self <: MockAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MockAdapter](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: () => AxiosAdapter): Self = StObject.set(x, "adapter", js.Any.fromFunction0(value))
+      inline def setAdapter(value: () => AxiosAdapter): Self = StObject.set(x, "adapter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistory(value: StringDictionary[js.Array[AxiosRequestConfig]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: StringDictionary[js.Array[AxiosRequestConfig]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAny(
+      inline def setOnAny(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onAny", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnDelete(
+      inline def setOnDelete(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onDelete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnGet(
+      inline def setOnGet(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onGet", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnHead(
+      inline def setOnHead(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onHead", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnList(
+      inline def setOnList(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onList", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnOptions(
+      inline def setOnOptions(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onOptions", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnPatch(
+      inline def setOnPatch(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onPatch", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnPost(
+      inline def setOnPost(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onPost", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnPut(
+      inline def setOnPut(
         value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onPut", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetHandlers(value: () => Unit): Self = StObject.set(x, "resetHandlers", js.Any.fromFunction0(value))
+      inline def setResetHandlers(value: () => Unit): Self = StObject.set(x, "resetHandlers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetHistory(value: () => Unit): Self = StObject.set(x, "resetHistory", js.Any.fromFunction0(value))
+      inline def setResetHistory(value: () => Unit): Self = StObject.set(x, "resetHistory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+      inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     }
   }
   
@@ -751,26 +729,20 @@ object mod {
   }
   object MockAdapterOptions {
     
-    @scala.inline
-    def apply(): MockAdapterOptions = {
+    inline def apply(): MockAdapterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockAdapterOptions]
     }
     
-    @scala.inline
-    implicit class MockAdapterOptionsMutableBuilder[Self <: MockAdapterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MockAdapterOptions](x: Self) {
       
-      @scala.inline
-      def setDelayResponse(value: Double): Self = StObject.set(x, "delayResponse", value.asInstanceOf[js.Any])
+      inline def setDelayResponse(value: Double): Self = StObject.set(x, "delayResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayResponseUndefined: Self = StObject.set(x, "delayResponse", js.undefined)
+      inline def setDelayResponseUndefined: Self = StObject.set(x, "delayResponse", js.undefined)
       
-      @scala.inline
-      def setOnNoMatch(value: passthrough | throwException): Self = StObject.set(x, "onNoMatch", value.asInstanceOf[js.Any])
+      inline def setOnNoMatch(value: passthrough | throwException): Self = StObject.set(x, "onNoMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnNoMatchUndefined: Self = StObject.set(x, "onNoMatch", js.undefined)
+      inline def setOnNoMatchUndefined: Self = StObject.set(x, "onNoMatch", js.undefined)
     }
   }
   
@@ -783,20 +755,16 @@ object mod {
   }
   object RequestDataMatcher {
     
-    @scala.inline
-    def apply(): RequestDataMatcher = {
+    inline def apply(): RequestDataMatcher = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestDataMatcher]
     }
     
-    @scala.inline
-    implicit class RequestDataMatcherMutableBuilder[Self <: RequestDataMatcher] (val x: Self) extends AnyVal {
+    extension [Self <: RequestDataMatcher](x: Self) {
       
-      @scala.inline
-      def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
   }
   
@@ -841,8 +809,7 @@ object mod {
   }
   object RequestHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abortRequest: () => MockAdapter,
       abortRequestOnce: () => MockAdapter,
       networkError: () => MockAdapter,
@@ -857,39 +824,29 @@ object mod {
       __obj.asInstanceOf[RequestHandler]
     }
     
-    @scala.inline
-    implicit class RequestHandlerMutableBuilder[Self <: RequestHandler] (val x: Self) extends AnyVal {
+    extension [Self <: RequestHandler](x: Self) {
       
-      @scala.inline
-      def setAbortRequest(value: () => MockAdapter): Self = StObject.set(x, "abortRequest", js.Any.fromFunction0(value))
+      inline def setAbortRequest(value: () => MockAdapter): Self = StObject.set(x, "abortRequest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAbortRequestOnce(value: () => MockAdapter): Self = StObject.set(x, "abortRequestOnce", js.Any.fromFunction0(value))
+      inline def setAbortRequestOnce(value: () => MockAdapter): Self = StObject.set(x, "abortRequestOnce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNetworkError(value: () => MockAdapter): Self = StObject.set(x, "networkError", js.Any.fromFunction0(value))
+      inline def setNetworkError(value: () => MockAdapter): Self = StObject.set(x, "networkError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNetworkErrorOnce(value: () => MockAdapter): Self = StObject.set(x, "networkErrorOnce", js.Any.fromFunction0(value))
+      inline def setNetworkErrorOnce(value: () => MockAdapter): Self = StObject.set(x, "networkErrorOnce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPassThrough(value: () => MockAdapter): Self = StObject.set(x, "passThrough", js.Any.fromFunction0(value))
+      inline def setPassThrough(value: () => MockAdapter): Self = StObject.set(x, "passThrough", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReply(
+      inline def setReply(
         value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter
       ): Self = StObject.set(x, "reply", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReplyOnce(
+      inline def setReplyOnce(
         value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter
       ): Self = StObject.set(x, "replyOnce", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTimeout(value: () => MockAdapter): Self = StObject.set(x, "timeout", js.Any.fromFunction0(value))
+      inline def setTimeout(value: () => MockAdapter): Self = StObject.set(x, "timeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimeoutOnce(value: () => MockAdapter): Self = StObject.set(x, "timeoutOnce", js.Any.fromFunction0(value))
+      inline def setTimeoutOnce(value: () => MockAdapter): Self = StObject.set(x, "timeoutOnce", js.Any.fromFunction0(value))
     }
   }
   

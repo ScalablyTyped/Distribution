@@ -23,31 +23,23 @@ trait QuerySchemaVersionMetadataResponse extends StObject {
 }
 object QuerySchemaVersionMetadataResponse {
   
-  @scala.inline
-  def apply(): QuerySchemaVersionMetadataResponse = {
+  inline def apply(): QuerySchemaVersionMetadataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuerySchemaVersionMetadataResponse]
   }
   
-  @scala.inline
-  implicit class QuerySchemaVersionMetadataResponseMutableBuilder[Self <: QuerySchemaVersionMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QuerySchemaVersionMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setMetadataInfoMap(value: MetadataInfoMap): Self = StObject.set(x, "MetadataInfoMap", value.asInstanceOf[js.Any])
+    inline def setMetadataInfoMap(value: MetadataInfoMap): Self = StObject.set(x, "MetadataInfoMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataInfoMapUndefined: Self = StObject.set(x, "MetadataInfoMap", js.undefined)
+    inline def setMetadataInfoMapUndefined: Self = StObject.set(x, "MetadataInfoMap", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
+    inline def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
   }
 }

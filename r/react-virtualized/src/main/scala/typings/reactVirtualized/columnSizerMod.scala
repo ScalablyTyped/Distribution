@@ -29,7 +29,6 @@ object columnSizerMod {
     @JSImport("react-virtualized/dist/commonjs/ColumnSizer", "ColumnSizer.propTypes")
     @js.native
     def propTypes: Children = js.native
-    @scala.inline
-    def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

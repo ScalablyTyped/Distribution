@@ -77,6 +77,5 @@ object Database {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def when(_promises: typings.bluebird.mod.^[js.Any]*): typings.bluebird.mod.^[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(_promises.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Any]]
+  inline def when(_promises: typings.bluebird.mod.^[js.Any]*): typings.bluebird.mod.^[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(_promises.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Any]]
 }

@@ -10,8 +10,7 @@ trait GetBucketLifecycleOutput
      with typings.awsSdkClientS3Node.typesGetBucketLifecycleOutputMod.GetBucketLifecycleOutput
 object GetBucketLifecycleOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketLifecycleOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketLifecycleOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLifecycleOutput]
   }

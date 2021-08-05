@@ -23,26 +23,20 @@ object mod {
   }
   object DocumentTitleProps {
     
-    @scala.inline
-    def apply(title: String): DocumentTitleProps = {
+    inline def apply(title: String): DocumentTitleProps = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentTitleProps]
     }
     
-    @scala.inline
-    implicit class DocumentTitlePropsMutableBuilder[Self <: DocumentTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentTitleProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

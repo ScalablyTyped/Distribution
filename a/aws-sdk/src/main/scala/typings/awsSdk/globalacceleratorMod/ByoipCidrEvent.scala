@@ -18,25 +18,19 @@ trait ByoipCidrEvent extends StObject {
 }
 object ByoipCidrEvent {
   
-  @scala.inline
-  def apply(): ByoipCidrEvent = {
+  inline def apply(): ByoipCidrEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ByoipCidrEvent]
   }
   
-  @scala.inline
-  implicit class ByoipCidrEventMutableBuilder[Self <: ByoipCidrEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ByoipCidrEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: GenericString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: GenericString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

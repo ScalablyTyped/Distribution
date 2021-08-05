@@ -45,8 +45,7 @@ trait Printing3D3MFPackage extends StObject {
 }
 object Printing3D3MFPackage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     loadModelFromPackageAsync: IRandomAccessStream => IPromiseWithIAsyncOperation[Printing3DModel],
     modelPart: IRandomAccessStream,
     printTicket: IRandomAccessStream,
@@ -59,28 +58,20 @@ object Printing3D3MFPackage {
     __obj.asInstanceOf[Printing3D3MFPackage]
   }
   
-  @scala.inline
-  implicit class Printing3D3MFPackageMutableBuilder[Self <: Printing3D3MFPackage] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3D3MFPackage](x: Self) {
     
-    @scala.inline
-    def setLoadModelFromPackageAsync(value: IRandomAccessStream => IPromiseWithIAsyncOperation[Printing3DModel]): Self = StObject.set(x, "loadModelFromPackageAsync", js.Any.fromFunction1(value))
+    inline def setLoadModelFromPackageAsync(value: IRandomAccessStream => IPromiseWithIAsyncOperation[Printing3DModel]): Self = StObject.set(x, "loadModelFromPackageAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModelPart(value: IRandomAccessStream): Self = StObject.set(x, "modelPart", value.asInstanceOf[js.Any])
+    inline def setModelPart(value: IRandomAccessStream): Self = StObject.set(x, "modelPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintTicket(value: IRandomAccessStream): Self = StObject.set(x, "printTicket", value.asInstanceOf[js.Any])
+    inline def setPrintTicket(value: IRandomAccessStream): Self = StObject.set(x, "printTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStream]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
+    inline def setSaveAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStream]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveModelToPackageAsync(value: Printing3DModel => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveModelToPackageAsync", js.Any.fromFunction1(value))
+    inline def setSaveModelToPackageAsync(value: Printing3DModel => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveModelToPackageAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextures(value: IVector[Printing3DTextureResource]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: IVector[Printing3DTextureResource]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: Printing3DTextureResource): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Printing3DTextureResource): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

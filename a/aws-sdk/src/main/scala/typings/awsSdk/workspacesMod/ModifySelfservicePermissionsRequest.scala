@@ -18,19 +18,15 @@ trait ModifySelfservicePermissionsRequest extends StObject {
 }
 object ModifySelfservicePermissionsRequest {
   
-  @scala.inline
-  def apply(ResourceId: DirectoryId, SelfservicePermissions: SelfservicePermissions): ModifySelfservicePermissionsRequest = {
+  inline def apply(ResourceId: DirectoryId, SelfservicePermissions: SelfservicePermissions): ModifySelfservicePermissionsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], SelfservicePermissions = SelfservicePermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySelfservicePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class ModifySelfservicePermissionsRequestMutableBuilder[Self <: ModifySelfservicePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifySelfservicePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: DirectoryId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: DirectoryId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfservicePermissions(value: SelfservicePermissions): Self = StObject.set(x, "SelfservicePermissions", value.asInstanceOf[js.Any])
+    inline def setSelfservicePermissions(value: SelfservicePermissions): Self = StObject.set(x, "SelfservicePermissions", value.asInstanceOf[js.Any])
   }
 }

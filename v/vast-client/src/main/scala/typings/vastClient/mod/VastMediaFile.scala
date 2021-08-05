@@ -34,8 +34,7 @@ trait VastMediaFile extends StObject {
 }
 object VastMediaFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitrate: Double,
     deliveryType: String,
     height: Double,
@@ -47,67 +46,46 @@ object VastMediaFile {
     __obj.asInstanceOf[VastMediaFile]
   }
   
-  @scala.inline
-  implicit class VastMediaFileMutableBuilder[Self <: VastMediaFile] (val x: Self) extends AnyVal {
+  extension [Self <: VastMediaFile](x: Self) {
     
-    @scala.inline
-    def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
+    inline def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiFrameworkNull: Self = StObject.set(x, "apiFramework", null)
+    inline def setApiFrameworkNull: Self = StObject.set(x, "apiFramework", null)
     
-    @scala.inline
-    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecNull: Self = StObject.set(x, "codec", null)
+    inline def setCodecNull: Self = StObject.set(x, "codec", null)
     
-    @scala.inline
-    def setDeliveryType(value: String): Self = StObject.set(x, "deliveryType", value.asInstanceOf[js.Any])
+    inline def setDeliveryType(value: String): Self = StObject.set(x, "deliveryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileURL(value: String): Self = StObject.set(x, "fileURL", value.asInstanceOf[js.Any])
+    inline def setFileURL(value: String): Self = StObject.set(x, "fileURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileURLNull: Self = StObject.set(x, "fileURL", null)
+    inline def setFileURLNull: Self = StObject.set(x, "fileURL", null)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setMaintainAspectRatio(value: Boolean): Self = StObject.set(x, "maintainAspectRatio", value.asInstanceOf[js.Any])
+    inline def setMaintainAspectRatio(value: Boolean): Self = StObject.set(x, "maintainAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintainAspectRatioNull: Self = StObject.set(x, "maintainAspectRatio", null)
+    inline def setMaintainAspectRatioNull: Self = StObject.set(x, "maintainAspectRatio", null)
     
-    @scala.inline
-    def setMaxBitrate(value: Double): Self = StObject.set(x, "maxBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxBitrate(value: Double): Self = StObject.set(x, "maxBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
+    inline def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
     
-    @scala.inline
-    def setMinBitrate(value: Double): Self = StObject.set(x, "minBitrate", value.asInstanceOf[js.Any])
+    inline def setMinBitrate(value: Double): Self = StObject.set(x, "minBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
+    inline def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableNull: Self = StObject.set(x, "scalable", null)
+    inline def setScalableNull: Self = StObject.set(x, "scalable", null)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

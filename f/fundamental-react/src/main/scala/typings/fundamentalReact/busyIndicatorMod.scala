@@ -27,29 +27,22 @@ object busyIndicatorMod extends Shortcut {
   }
   object BusyIndicatorProps {
     
-    @scala.inline
-    def apply(show: Boolean): BusyIndicatorProps = {
+    inline def apply(show: Boolean): BusyIndicatorProps = {
       val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
       __obj.asInstanceOf[BusyIndicatorProps]
     }
     
-    @scala.inline
-    implicit class BusyIndicatorPropsMutableBuilder[Self <: BusyIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: BusyIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setLocalizedText(value: Loading): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: Loading): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: BusyIndicatorSizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: BusyIndicatorSizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -61,14 +54,11 @@ object busyIndicatorMod extends Shortcut {
   trait BusyIndicatorSizes extends StObject
   object BusyIndicatorSizes {
     
-    @scala.inline
-    def l: typings.fundamentalReact.fundamentalReactStrings.l = "l".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.l]
+    inline def l: typings.fundamentalReact.fundamentalReactStrings.l = "l".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.l]
     
-    @scala.inline
-    def m: typings.fundamentalReact.fundamentalReactStrings.m = "m".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.m]
+    inline def m: typings.fundamentalReact.fundamentalReactStrings.m = "m".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.m]
     
-    @scala.inline
-    def s: typings.fundamentalReact.fundamentalReactStrings.s = "s".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.s]
+    inline def s: typings.fundamentalReact.fundamentalReactStrings.s = "s".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.s]
   }
   
   type _To = FunctionComponent[BusyIndicatorProps]

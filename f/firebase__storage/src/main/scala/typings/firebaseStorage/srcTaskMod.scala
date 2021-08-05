@@ -32,76 +32,76 @@ object srcTaskMod {
     /**
       * Adds the given observer.
       */
-    var _addObserver: js.Any = js.native
+    /* private */ var _addObserver: js.Any = js.native
     
     /**
       * @internal
       */
     var _blob: FbsBlob = js.native
     
-    var _chunkMultiplier: js.Any = js.native
+    /* private */ var _chunkMultiplier: js.Any = js.native
     
-    var _continueUpload: js.Any = js.native
+    /* private */ var _continueUpload: js.Any = js.native
     
-    var _createResumable: js.Any = js.native
+    /* private */ var _createResumable: js.Any = js.native
     
-    var _error: js.Any = js.native
+    /* private */ var _error: js.Any = js.native
     
-    var _errorHandler: js.Any = js.native
+    /* private */ var _errorHandler: js.Any = js.native
     
-    var _fetchMetadata: js.Any = js.native
+    /* private */ var _fetchMetadata: js.Any = js.native
     
-    var _fetchStatus: js.Any = js.native
+    /* private */ var _fetchStatus: js.Any = js.native
     
-    var _finishPromise: js.Any = js.native
+    /* private */ var _finishPromise: js.Any = js.native
     
-    var _increaseMultiplier: js.Any = js.native
+    /* private */ var _increaseMultiplier: js.Any = js.native
     
-    var _makeProgressCallback: js.Any = js.native
+    /* private */ var _makeProgressCallback: js.Any = js.native
     
-    var _mappings: js.Any = js.native
+    /* private */ var _mappings: js.Any = js.native
     
     /**
       * @internal
       */
     var _metadata: Metadata | Null = js.native
     
-    var _metadataErrorHandler: js.Any = js.native
+    /* private */ var _metadataErrorHandler: js.Any = js.native
     
-    var _needToFetchMetadata: js.Any = js.native
+    /* private */ var _needToFetchMetadata: js.Any = js.native
     
-    var _needToFetchStatus: js.Any = js.native
+    /* private */ var _needToFetchStatus: js.Any = js.native
     
-    var _notifyObserver: js.Any = js.native
+    /* private */ var _notifyObserver: js.Any = js.native
     
-    var _notifyObservers: js.Any = js.native
+    /* private */ var _notifyObservers: js.Any = js.native
     
-    var _observers: js.Any = js.native
+    /* private */ var _observers: js.Any = js.native
     
-    var _oneShotUpload: js.Any = js.native
+    /* private */ var _oneShotUpload: js.Any = js.native
     
-    var _promise: js.Any = js.native
+    /* private */ var _promise: js.Any = js.native
     
-    var _ref: js.Any = js.native
+    /* private */ var _ref: js.Any = js.native
     
-    var _reject: js.Any = js.native
+    /* private */ var _reject: js.Any = js.native
     
     /**
       * Removes the given observer.
       */
-    var _removeObserver: js.Any = js.native
+    /* private */ var _removeObserver: js.Any = js.native
     
-    var _request: js.Any = js.native
+    /* private */ var _request: js.Any = js.native
     
-    var _resolve: js.Any = js.native
+    /* private */ var _resolve: js.Any = js.native
     
-    var _resolveToken: js.Any = js.native
+    /* private */ var _resolveToken: js.Any = js.native
     
-    var _resumable: js.Any = js.native
+    /* private */ var _resumable: js.Any = js.native
     
-    var _shouldDoResumable: js.Any = js.native
+    /* private */ var _shouldDoResumable: js.Any = js.native
     
-    var _start: js.Any = js.native
+    /* private */ var _start: js.Any = js.native
     
     /**
       * @internal
@@ -113,11 +113,11 @@ object srcTaskMod {
       */
     var _transferred: Double = js.native
     
-    var _transition: js.Any = js.native
+    /* private */ var _transition: js.Any = js.native
     
-    var _updateProgress: js.Any = js.native
+    /* private */ var _updateProgress: js.Any = js.native
     
-    var _uploadUrl: js.Any = js.native
+    /* private */ var _uploadUrl: js.Any = js.native
     
     /**
       * Cancels a currently running or paused task. Has no effect on a complete or
@@ -131,7 +131,7 @@ object srcTaskMod {
       */
     def `catch`[T](onRejected: js.Function1[/* p1 */ FirebaseStorageError, T | js.Promise[T]]): js.Promise[T] = js.native
     
-    var completeTransitions_ : js.Any = js.native
+    /* private */ var completeTransitions_ : js.Any = js.native
     
     /**
       * Adds a callback for an event.

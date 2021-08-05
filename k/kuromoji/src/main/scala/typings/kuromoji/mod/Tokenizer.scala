@@ -22,8 +22,7 @@ trait Tokenizer[T] extends StObject {
 }
 object Tokenizer {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     formatter: Formatter[T],
     getLattice: String => ViterbiLattice,
     token_info_dictionary: TokenInfoDictionary,
@@ -36,28 +35,20 @@ object Tokenizer {
     __obj.asInstanceOf[Tokenizer[T]]
   }
   
-  @scala.inline
-  implicit class TokenizerMutableBuilder[Self <: Tokenizer[?], T] (val x: Self & Tokenizer[T]) extends AnyVal {
+  extension [Self <: Tokenizer[?], T](x: Self & Tokenizer[T]) {
     
-    @scala.inline
-    def setFormatter(value: Formatter[T]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: Formatter[T]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLattice(value: String => ViterbiLattice): Self = StObject.set(x, "getLattice", js.Any.fromFunction1(value))
+    inline def setGetLattice(value: String => ViterbiLattice): Self = StObject.set(x, "getLattice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
+    inline def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenize(value: String => js.Array[T]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
+    inline def setTokenize(value: String => js.Array[T]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
+    inline def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViterbi_builder(value: ViterbiBuilder): Self = StObject.set(x, "viterbi_builder", value.asInstanceOf[js.Any])
+    inline def setViterbi_builder(value: ViterbiBuilder): Self = StObject.set(x, "viterbi_builder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViterbi_searcher(value: ViterbiSearcher): Self = StObject.set(x, "viterbi_searcher", value.asInstanceOf[js.Any])
+    inline def setViterbi_searcher(value: ViterbiSearcher): Self = StObject.set(x, "viterbi_searcher", value.asInstanceOf[js.Any])
   }
 }

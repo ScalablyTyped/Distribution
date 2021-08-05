@@ -14,31 +14,23 @@ trait SparklineSeriesClickEventSeries extends StObject {
 }
 object SparklineSeriesClickEventSeries {
   
-  @scala.inline
-  def apply(): SparklineSeriesClickEventSeries = {
+  inline def apply(): SparklineSeriesClickEventSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineSeriesClickEventSeries]
   }
   
-  @scala.inline
-  implicit class SparklineSeriesClickEventSeriesMutableBuilder[Self <: SparklineSeriesClickEventSeries] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineSeriesClickEventSeries](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

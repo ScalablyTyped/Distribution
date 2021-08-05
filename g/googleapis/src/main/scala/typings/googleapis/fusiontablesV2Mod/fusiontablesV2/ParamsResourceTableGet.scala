@@ -24,25 +24,19 @@ trait ParamsResourceTableGet
 }
 object ParamsResourceTableGet {
   
-  @scala.inline
-  def apply(): ParamsResourceTableGet = {
+  inline def apply(): ParamsResourceTableGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTableGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTableGetMutableBuilder[Self <: ParamsResourceTableGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTableGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

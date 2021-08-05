@@ -72,10 +72,8 @@ object ClientEventsUnsubscribeResponse {
     * @param [properties] Properties to set
     * @returns ClientEventsUnsubscribeResponse instance
     */
-  @scala.inline
-  def create(): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientEventsUnsubscribeResponse]
-  @scala.inline
-  def create(properties: IClientEventsUnsubscribeResponse): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def create(): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def create(properties: IClientEventsUnsubscribeResponse): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
   
   /**
     * Decodes a ClientEventsUnsubscribeResponse message from the specified reader or buffer.
@@ -85,14 +83,10 @@ object ClientEventsUnsubscribeResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decode(reader: Reader): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ClientEventsUnsubscribeResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientEventsUnsubscribeResponse]
-  @scala.inline
-  def decode(reader: Uint8Array): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ClientEventsUnsubscribeResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def decode(reader: Reader): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def decode(reader: Reader, length: Double): ClientEventsUnsubscribeResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def decode(reader: Uint8Array): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def decode(reader: Uint8Array, length: Double): ClientEventsUnsubscribeResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientEventsUnsubscribeResponse]
   
   /**
     * Decodes a ClientEventsUnsubscribeResponse message from the specified reader or buffer, length delimited.
@@ -101,10 +95,8 @@ object ClientEventsUnsubscribeResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def decodeDelimited(reader: Reader): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def decodeDelimited(reader: Uint8Array): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
   
   /**
     * Encodes the specified ClientEventsUnsubscribeResponse message. Does not implicitly {@link ClientEventsUnsubscribeResponse.verify|verify} messages.
@@ -112,10 +104,8 @@ object ClientEventsUnsubscribeResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encode(message: IClientEventsUnsubscribeResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IClientEventsUnsubscribeResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IClientEventsUnsubscribeResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IClientEventsUnsubscribeResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientEventsUnsubscribeResponse message, length delimited. Does not implicitly {@link ClientEventsUnsubscribeResponse.verify|verify} messages.
@@ -123,18 +113,15 @@ object ClientEventsUnsubscribeResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encodeDelimited(message: IClientEventsUnsubscribeResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IClientEventsUnsubscribeResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IClientEventsUnsubscribeResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IClientEventsUnsubscribeResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientEventsUnsubscribeResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientEventsUnsubscribeResponse
     */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ClientEventsUnsubscribeResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientEventsUnsubscribeResponse]
   
   /**
     * Creates a plain object from a ClientEventsUnsubscribeResponse message. Also converts values to other types if specified.
@@ -142,16 +129,13 @@ object ClientEventsUnsubscribeResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @scala.inline
-  def toObject(message: ClientEventsUnsubscribeResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ClientEventsUnsubscribeResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientEventsUnsubscribeResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientEventsUnsubscribeResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientEventsUnsubscribeResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

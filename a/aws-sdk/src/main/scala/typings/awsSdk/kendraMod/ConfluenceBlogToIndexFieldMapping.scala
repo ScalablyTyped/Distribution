@@ -23,31 +23,23 @@ trait ConfluenceBlogToIndexFieldMapping extends StObject {
 }
 object ConfluenceBlogToIndexFieldMapping {
   
-  @scala.inline
-  def apply(): ConfluenceBlogToIndexFieldMapping = {
+  inline def apply(): ConfluenceBlogToIndexFieldMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfluenceBlogToIndexFieldMapping]
   }
   
-  @scala.inline
-  implicit class ConfluenceBlogToIndexFieldMappingMutableBuilder[Self <: ConfluenceBlogToIndexFieldMapping] (val x: Self) extends AnyVal {
+  extension [Self <: ConfluenceBlogToIndexFieldMapping](x: Self) {
     
-    @scala.inline
-    def setDataSourceFieldName(value: ConfluenceBlogFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
+    inline def setDataSourceFieldName(value: ConfluenceBlogFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceFieldNameUndefined: Self = StObject.set(x, "DataSourceFieldName", js.undefined)
+    inline def setDataSourceFieldNameUndefined: Self = StObject.set(x, "DataSourceFieldName", js.undefined)
     
-    @scala.inline
-    def setDateFieldFormat(value: DataSourceDateFieldFormat): Self = StObject.set(x, "DateFieldFormat", value.asInstanceOf[js.Any])
+    inline def setDateFieldFormat(value: DataSourceDateFieldFormat): Self = StObject.set(x, "DateFieldFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFieldFormatUndefined: Self = StObject.set(x, "DateFieldFormat", js.undefined)
+    inline def setDateFieldFormatUndefined: Self = StObject.set(x, "DateFieldFormat", js.undefined)
     
-    @scala.inline
-    def setIndexFieldName(value: IndexFieldName): Self = StObject.set(x, "IndexFieldName", value.asInstanceOf[js.Any])
+    inline def setIndexFieldName(value: IndexFieldName): Self = StObject.set(x, "IndexFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexFieldNameUndefined: Self = StObject.set(x, "IndexFieldName", js.undefined)
+    inline def setIndexFieldNameUndefined: Self = StObject.set(x, "IndexFieldName", js.undefined)
   }
 }

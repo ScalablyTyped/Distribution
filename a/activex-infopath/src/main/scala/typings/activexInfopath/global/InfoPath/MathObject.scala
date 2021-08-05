@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.MathObject")
 @js.native
-class MathObject protected ()
+/* private */ class MathObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.MathObject {
   
@@ -17,7 +17,7 @@ class MathObject protected ()
   /* CompleteClass */
   override def Eval(pxmllistContext: IXMLDOMNodeList, bstrExpression: String): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.MathObject_typekey")
   var InfoPathDotMathObject_typekey: typings.activexInfopath.InfoPath.MathObject = js.native
   

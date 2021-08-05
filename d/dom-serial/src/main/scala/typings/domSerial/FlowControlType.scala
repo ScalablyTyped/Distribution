@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowControlType extends StObject
 object FlowControlType {
   
-  @scala.inline
-  def hardware: typings.domSerial.domSerialStrings.hardware = "hardware".asInstanceOf[typings.domSerial.domSerialStrings.hardware]
+  inline def hardware: typings.domSerial.domSerialStrings.hardware = "hardware".asInstanceOf[typings.domSerial.domSerialStrings.hardware]
   
-  @scala.inline
-  def none: typings.domSerial.domSerialStrings.none = "none".asInstanceOf[typings.domSerial.domSerialStrings.none]
+  inline def none: typings.domSerial.domSerialStrings.none = "none".asInstanceOf[typings.domSerial.domSerialStrings.none]
 }

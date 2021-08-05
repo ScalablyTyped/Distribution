@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Alignment extends StObject
 object Alignment {
   
-  @scala.inline
-  def center: typings.pdfmake.pdfmakeStrings.center = "center".asInstanceOf[typings.pdfmake.pdfmakeStrings.center]
+  inline def center: typings.pdfmake.pdfmakeStrings.center = "center".asInstanceOf[typings.pdfmake.pdfmakeStrings.center]
   
-  @scala.inline
-  def justify: typings.pdfmake.pdfmakeStrings.justify = "justify".asInstanceOf[typings.pdfmake.pdfmakeStrings.justify]
+  inline def justify: typings.pdfmake.pdfmakeStrings.justify = "justify".asInstanceOf[typings.pdfmake.pdfmakeStrings.justify]
   
-  @scala.inline
-  def left: typings.pdfmake.pdfmakeStrings.left = "left".asInstanceOf[typings.pdfmake.pdfmakeStrings.left]
+  inline def left: typings.pdfmake.pdfmakeStrings.left = "left".asInstanceOf[typings.pdfmake.pdfmakeStrings.left]
   
-  @scala.inline
-  def right: typings.pdfmake.pdfmakeStrings.right = "right".asInstanceOf[typings.pdfmake.pdfmakeStrings.right]
+  inline def right: typings.pdfmake.pdfmakeStrings.right = "right".asInstanceOf[typings.pdfmake.pdfmakeStrings.right]
 }

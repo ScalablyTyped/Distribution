@@ -47,43 +47,31 @@ trait Draggable extends StObject {
 }
 object Draggable {
   
-  @scala.inline
-  def apply(): Draggable = {
+  inline def apply(): Draggable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Draggable]
   }
   
-  @scala.inline
-  implicit class DraggableMutableBuilder[Self <: Draggable] (val x: Self) extends AnyVal {
+  extension [Self <: Draggable](x: Self) {
     
-    @scala.inline
-    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
+    inline def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
+    inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
     
-    @scala.inline
-    def setIsselectable(value: js.ThisFunction1[/* this */ Record[String, js.Any], /* d */ DataSeries, Boolean]): Self = StObject.set(x, "isselectable", value.asInstanceOf[js.Any])
+    inline def setIsselectable(value: js.ThisFunction1[/* this */ Record[String, js.Any], /* d */ DataSeries, Boolean]): Self = StObject.set(x, "isselectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsselectableUndefined: Self = StObject.set(x, "isselectable", js.undefined)
+    inline def setIsselectableUndefined: Self = StObject.set(x, "isselectable", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

@@ -54,49 +54,35 @@ trait SchemaTestSuiteOverview extends StObject {
 }
 object SchemaTestSuiteOverview {
   
-  @scala.inline
-  def apply(): SchemaTestSuiteOverview = {
+  inline def apply(): SchemaTestSuiteOverview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestSuiteOverview]
   }
   
-  @scala.inline
-  implicit class SchemaTestSuiteOverviewMutableBuilder[Self <: SchemaTestSuiteOverview] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestSuiteOverview](x: Self) {
     
-    @scala.inline
-    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
-    @scala.inline
-    def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
+    inline def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
+    inline def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSkippedCount(value: Double): Self = StObject.set(x, "skippedCount", value.asInstanceOf[js.Any])
+    inline def setSkippedCount(value: Double): Self = StObject.set(x, "skippedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedCountUndefined: Self = StObject.set(x, "skippedCount", js.undefined)
+    inline def setSkippedCountUndefined: Self = StObject.set(x, "skippedCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
-    @scala.inline
-    def setXmlSource(value: SchemaFileReference): Self = StObject.set(x, "xmlSource", value.asInstanceOf[js.Any])
+    inline def setXmlSource(value: SchemaFileReference): Self = StObject.set(x, "xmlSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlSourceUndefined: Self = StObject.set(x, "xmlSource", js.undefined)
+    inline def setXmlSourceUndefined: Self = StObject.set(x, "xmlSource", js.undefined)
   }
 }

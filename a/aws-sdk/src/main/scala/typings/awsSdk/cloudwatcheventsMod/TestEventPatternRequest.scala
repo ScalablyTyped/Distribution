@@ -18,19 +18,15 @@ trait TestEventPatternRequest extends StObject {
 }
 object TestEventPatternRequest {
   
-  @scala.inline
-  def apply(Event: String, EventPattern: EventPattern): TestEventPatternRequest = {
+  inline def apply(Event: String, EventPattern: EventPattern): TestEventPatternRequest = {
     val __obj = js.Dynamic.literal(Event = Event.asInstanceOf[js.Any], EventPattern = EventPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEventPatternRequest]
   }
   
-  @scala.inline
-  implicit class TestEventPatternRequestMutableBuilder[Self <: TestEventPatternRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestEventPatternRequest](x: Self) {
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPattern(value: EventPattern): Self = StObject.set(x, "EventPattern", value.asInstanceOf[js.Any])
+    inline def setEventPattern(value: EventPattern): Self = StObject.set(x, "EventPattern", value.asInstanceOf[js.Any])
   }
 }

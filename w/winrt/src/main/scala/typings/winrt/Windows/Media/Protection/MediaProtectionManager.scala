@@ -10,8 +10,7 @@ trait MediaProtectionManager
      with IMediaProtectionManager
 object MediaProtectionManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     oncomponentloadfailed: js.Any,
     onrebootneeded: js.Any,
     onservicerequested: js.Any,

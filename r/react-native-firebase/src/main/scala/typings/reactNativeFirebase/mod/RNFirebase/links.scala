@@ -41,8 +41,7 @@ object links {
   }
   object AnalyticsParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setCampaign: String => DynamicLink,
       setContent: String => DynamicLink,
       setMedium: String => DynamicLink,
@@ -53,23 +52,17 @@ object links {
       __obj.asInstanceOf[AnalyticsParameters]
     }
     
-    @scala.inline
-    implicit class AnalyticsParametersMutableBuilder[Self <: AnalyticsParameters] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsParameters](x: Self) {
       
-      @scala.inline
-      def setSetCampaign(value: String => DynamicLink): Self = StObject.set(x, "setCampaign", js.Any.fromFunction1(value))
+      inline def setSetCampaign(value: String => DynamicLink): Self = StObject.set(x, "setCampaign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetContent(value: String => DynamicLink): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+      inline def setSetContent(value: String => DynamicLink): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMedium(value: String => DynamicLink): Self = StObject.set(x, "setMedium", js.Any.fromFunction1(value))
+      inline def setSetMedium(value: String => DynamicLink): Self = StObject.set(x, "setMedium", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSource(value: String => DynamicLink): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
+      inline def setSetSource(value: String => DynamicLink): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTerm(value: String => DynamicLink): Self = StObject.set(x, "setTerm", js.Any.fromFunction1(value))
+      inline def setSetTerm(value: String => DynamicLink): Self = StObject.set(x, "setTerm", js.Any.fromFunction1(value))
     }
   }
   
@@ -83,8 +76,7 @@ object links {
   }
   object AndroidParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setFallbackUrl: String => DynamicLink,
       setMinimumVersion: Double => DynamicLink,
       setPackageName: String => DynamicLink
@@ -93,17 +85,13 @@ object links {
       __obj.asInstanceOf[AndroidParameters]
     }
     
-    @scala.inline
-    implicit class AndroidParametersMutableBuilder[Self <: AndroidParameters] (val x: Self) extends AnyVal {
+    extension [Self <: AndroidParameters](x: Self) {
       
-      @scala.inline
-      def setSetFallbackUrl(value: String => DynamicLink): Self = StObject.set(x, "setFallbackUrl", js.Any.fromFunction1(value))
+      inline def setSetFallbackUrl(value: String => DynamicLink): Self = StObject.set(x, "setFallbackUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinimumVersion(value: Double => DynamicLink): Self = StObject.set(x, "setMinimumVersion", js.Any.fromFunction1(value))
+      inline def setSetMinimumVersion(value: Double => DynamicLink): Self = StObject.set(x, "setMinimumVersion", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPackageName(value: String => DynamicLink): Self = StObject.set(x, "setPackageName", js.Any.fromFunction1(value))
+      inline def setSetPackageName(value: String => DynamicLink): Self = StObject.set(x, "setPackageName", js.Any.fromFunction1(value))
     }
   }
   
@@ -125,8 +113,7 @@ object links {
   }
   object IOSParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setAppStoreId: String => DynamicLink,
       setBundleId: String => DynamicLink,
       setCustomScheme: String => DynamicLink,
@@ -139,29 +126,21 @@ object links {
       __obj.asInstanceOf[IOSParameters]
     }
     
-    @scala.inline
-    implicit class IOSParametersMutableBuilder[Self <: IOSParameters] (val x: Self) extends AnyVal {
+    extension [Self <: IOSParameters](x: Self) {
       
-      @scala.inline
-      def setSetAppStoreId(value: String => DynamicLink): Self = StObject.set(x, "setAppStoreId", js.Any.fromFunction1(value))
+      inline def setSetAppStoreId(value: String => DynamicLink): Self = StObject.set(x, "setAppStoreId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBundleId(value: String => DynamicLink): Self = StObject.set(x, "setBundleId", js.Any.fromFunction1(value))
+      inline def setSetBundleId(value: String => DynamicLink): Self = StObject.set(x, "setBundleId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCustomScheme(value: String => DynamicLink): Self = StObject.set(x, "setCustomScheme", js.Any.fromFunction1(value))
+      inline def setSetCustomScheme(value: String => DynamicLink): Self = StObject.set(x, "setCustomScheme", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFallbackUrl(value: String => DynamicLink): Self = StObject.set(x, "setFallbackUrl", js.Any.fromFunction1(value))
+      inline def setSetFallbackUrl(value: String => DynamicLink): Self = StObject.set(x, "setFallbackUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIPadBundleId(value: String => DynamicLink): Self = StObject.set(x, "setIPadBundleId", js.Any.fromFunction1(value))
+      inline def setSetIPadBundleId(value: String => DynamicLink): Self = StObject.set(x, "setIPadBundleId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIPadFallbackUrl(value: String => DynamicLink): Self = StObject.set(x, "setIPadFallbackUrl", js.Any.fromFunction1(value))
+      inline def setSetIPadFallbackUrl(value: String => DynamicLink): Self = StObject.set(x, "setIPadFallbackUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinimumVersion(value: String => DynamicLink): Self = StObject.set(x, "setMinimumVersion", js.Any.fromFunction1(value))
+      inline def setSetMinimumVersion(value: String => DynamicLink): Self = StObject.set(x, "setMinimumVersion", js.Any.fromFunction1(value))
     }
   }
   
@@ -175,8 +154,7 @@ object links {
   }
   object ITunesParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setAffiliateToken: String => DynamicLink,
       setCampaignToken: String => DynamicLink,
       setProviderToken: String => DynamicLink
@@ -185,17 +163,13 @@ object links {
       __obj.asInstanceOf[ITunesParameters]
     }
     
-    @scala.inline
-    implicit class ITunesParametersMutableBuilder[Self <: ITunesParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ITunesParameters](x: Self) {
       
-      @scala.inline
-      def setSetAffiliateToken(value: String => DynamicLink): Self = StObject.set(x, "setAffiliateToken", js.Any.fromFunction1(value))
+      inline def setSetAffiliateToken(value: String => DynamicLink): Self = StObject.set(x, "setAffiliateToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCampaignToken(value: String => DynamicLink): Self = StObject.set(x, "setCampaignToken", js.Any.fromFunction1(value))
+      inline def setSetCampaignToken(value: String => DynamicLink): Self = StObject.set(x, "setCampaignToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetProviderToken(value: String => DynamicLink): Self = StObject.set(x, "setProviderToken", js.Any.fromFunction1(value))
+      inline def setSetProviderToken(value: String => DynamicLink): Self = StObject.set(x, "setProviderToken", js.Any.fromFunction1(value))
     }
   }
   
@@ -238,17 +212,14 @@ object links {
   }
   object LinksStatics {
     
-    @scala.inline
-    def apply(DynamicLink: Instantiable2[/* link */ String, /* domainURIPrefix */ String, DynamicLink]): LinksStatics = {
+    inline def apply(DynamicLink: Instantiable2[/* link */ String, /* domainURIPrefix */ String, DynamicLink]): LinksStatics = {
       val __obj = js.Dynamic.literal(DynamicLink = DynamicLink.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinksStatics]
     }
     
-    @scala.inline
-    implicit class LinksStaticsMutableBuilder[Self <: LinksStatics] (val x: Self) extends AnyVal {
+    extension [Self <: LinksStatics](x: Self) {
       
-      @scala.inline
-      def setDynamicLink(value: Instantiable2[/* link */ String, /* domainURIPrefix */ String, DynamicLink]): Self = StObject.set(x, "DynamicLink", value.asInstanceOf[js.Any])
+      inline def setDynamicLink(value: Instantiable2[/* link */ String, /* domainURIPrefix */ String, DynamicLink]): Self = StObject.set(x, "DynamicLink", value.asInstanceOf[js.Any])
     }
   }
   
@@ -258,17 +229,14 @@ object links {
   }
   object NavigationParameters {
     
-    @scala.inline
-    def apply(setForcedRedirectEnabled: Boolean => DynamicLink): NavigationParameters = {
+    inline def apply(setForcedRedirectEnabled: Boolean => DynamicLink): NavigationParameters = {
       val __obj = js.Dynamic.literal(setForcedRedirectEnabled = js.Any.fromFunction1(setForcedRedirectEnabled))
       __obj.asInstanceOf[NavigationParameters]
     }
     
-    @scala.inline
-    implicit class NavigationParametersMutableBuilder[Self <: NavigationParameters] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationParameters](x: Self) {
       
-      @scala.inline
-      def setSetForcedRedirectEnabled(value: Boolean => DynamicLink): Self = StObject.set(x, "setForcedRedirectEnabled", js.Any.fromFunction1(value))
+      inline def setSetForcedRedirectEnabled(value: Boolean => DynamicLink): Self = StObject.set(x, "setForcedRedirectEnabled", js.Any.fromFunction1(value))
     }
   }
   
@@ -282,8 +250,7 @@ object links {
   }
   object SocialParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setDescriptionText: String => DynamicLink,
       setImageUrl: String => DynamicLink,
       setTitle: String => DynamicLink
@@ -292,17 +259,13 @@ object links {
       __obj.asInstanceOf[SocialParameters]
     }
     
-    @scala.inline
-    implicit class SocialParametersMutableBuilder[Self <: SocialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: SocialParameters](x: Self) {
       
-      @scala.inline
-      def setSetDescriptionText(value: String => DynamicLink): Self = StObject.set(x, "setDescriptionText", js.Any.fromFunction1(value))
+      inline def setSetDescriptionText(value: String => DynamicLink): Self = StObject.set(x, "setDescriptionText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetImageUrl(value: String => DynamicLink): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
+      inline def setSetImageUrl(value: String => DynamicLink): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitle(value: String => DynamicLink): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: String => DynamicLink): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     }
   }
 }

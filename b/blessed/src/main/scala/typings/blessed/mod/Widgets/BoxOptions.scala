@@ -12,19 +12,15 @@ trait BoxOptions
 }
 object BoxOptions {
   
-  @scala.inline
-  def apply(): BoxOptions = {
+  inline def apply(): BoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoxOptions]
   }
   
-  @scala.inline
-  implicit class BoxOptionsMutableBuilder[Self <: BoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BoxOptions](x: Self) {
     
-    @scala.inline
-    def setBindings(value: js.Any): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: js.Any): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
   }
 }

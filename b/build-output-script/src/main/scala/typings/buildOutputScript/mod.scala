@@ -15,8 +15,7 @@ object mod {
     * @param outputs An array of one or more output objects.
     * @returns A (hex string) P2PKH transaction output script.
     */
-  @scala.inline
-  def apply(outputs: Array[Output]): String = ^.asInstanceOf[js.Dynamic].apply(outputs.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(outputs: Array[Output]): String = ^.asInstanceOf[js.Dynamic].apply(outputs.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("build-output-script", JSImport.Namespace)
   @js.native
@@ -36,20 +35,16 @@ object mod {
   }
   object Output {
     
-    @scala.inline
-    def apply(address: String, value: Double): Output = {
+    inline def apply(address: String, value: Double): Output = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

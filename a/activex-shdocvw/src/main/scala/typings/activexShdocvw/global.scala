@@ -10,11 +10,11 @@ object global {
     
     @JSGlobal("SHDocVw.CScriptErrorList")
     @js.native
-    class CScriptErrorList protected ()
+    /* private */ class CScriptErrorList ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.CScriptErrorList {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("SHDocVw.CScriptErrorList_typekey")
       var SHDocVwDotCScriptErrorList_typekey: typings.activexShdocvw.SHDocVw.CScriptErrorList = js.native
       
@@ -64,27 +64,27 @@ object global {
     /** Internet Explorer Application. */
     @JSGlobal("SHDocVw.InternetExplorer")
     @js.native
-    class InternetExplorer protected ()
+    /* private */ class InternetExplorer ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.InternetExplorer
     
     /** Internet Explorer Application with default integrity of Medium */
     @JSGlobal("SHDocVw.InternetExplorerMedium")
     @js.native
-    class InternetExplorerMedium protected ()
+    /* private */ class InternetExplorerMedium ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.InternetExplorerMedium
     
     /** Shell Browser Window. */
     @JSGlobal("SHDocVw.ShellBrowserWindow")
     @js.native
-    class ShellBrowserWindow protected ()
+    /* private */ class ShellBrowserWindow ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellBrowserWindow
     
     @JSGlobal("SHDocVw.ShellNameSpace")
     @js.native
-    class ShellNameSpace protected ()
+    /* private */ class ShellNameSpace ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellNameSpace {
       
@@ -156,7 +156,7 @@ object global {
       /* CompleteClass */
       var Root: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("SHDocVw.ShellNameSpace_typekey")
       var SHDocVwDotShellNameSpace_typekey: typings.activexShdocvw.SHDocVw.ShellNameSpace = js.native
       
@@ -194,28 +194,28 @@ object global {
     
     @JSGlobal("SHDocVw.ShellUIHelper")
     @js.native
-    class ShellUIHelper protected ()
+    /* private */ class ShellUIHelper ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellUIHelper
     
     /** ShellDispatch Load in Shell Context */
     @JSGlobal("SHDocVw.ShellWindows")
     @js.native
-    class ShellWindows protected ()
+    /* private */ class ShellWindows ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.ShellWindows
     
     /** WebBrowser Control */
     @JSGlobal("SHDocVw.WebBrowser")
     @js.native
-    class WebBrowser protected ()
+    /* private */ class WebBrowser ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.WebBrowser
     
     /** WebBrowser Control */
     @JSGlobal("SHDocVw.WebBrowser_V1")
     @js.native
-    class WebBrowserV1 protected ()
+    /* private */ class WebBrowserV1 ()
       extends StObject
          with typings.activexShdocvw.SHDocVw.WebBrowserV1
   }

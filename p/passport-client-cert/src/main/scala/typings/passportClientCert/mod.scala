@@ -45,8 +45,7 @@ object mod {
   }
   object PeerCertificate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fingerprint: String,
       issuer: Certificate,
       issuerInfo: Certificate,
@@ -60,32 +59,23 @@ object mod {
       __obj.asInstanceOf[PeerCertificate]
     }
     
-    @scala.inline
-    implicit class PeerCertificateMutableBuilder[Self <: PeerCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: PeerCertificate](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuer(value: Certificate): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: Certificate): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerInfo(value: Certificate): Self = StObject.set(x, "issuerInfo", value.asInstanceOf[js.Any])
+      inline def setIssuerInfo(value: Certificate): Self = StObject.set(x, "issuerInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: Certificate): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: Certificate): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid_from(value: String): Self = StObject.set(x, "valid_from", value.asInstanceOf[js.Any])
+      inline def setValid_from(value: String): Self = StObject.set(x, "valid_from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid_to(value: String): Self = StObject.set(x, "valid_to", value.asInstanceOf[js.Any])
+      inline def setValid_to(value: String): Self = StObject.set(x, "valid_to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,20 +85,16 @@ object mod {
   }
   object StrategyOptions {
     
-    @scala.inline
-    def apply(): StrategyOptions = {
+    inline def apply(): StrategyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    @scala.inline
-    implicit class StrategyOptionsMutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptions](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
     }
   }
   
@@ -118,17 +104,14 @@ object mod {
   }
   object StrategyOptionsWithRequest {
     
-    @scala.inline
-    def apply(): StrategyOptionsWithRequest = {
+    inline def apply(): StrategyOptionsWithRequest = {
       val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
-    @scala.inline
-    implicit class StrategyOptionsWithRequestMutableBuilder[Self <: StrategyOptionsWithRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptionsWithRequest](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,17 +137,14 @@ object mod {
   }
   object VerifyOptions {
     
-    @scala.inline
-    def apply(message: String): VerifyOptions = {
+    inline def apply(message: String): VerifyOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    @scala.inline
-    implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptions](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

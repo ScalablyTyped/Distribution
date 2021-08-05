@@ -10,16 +10,13 @@ trait AbortHandle[TReturn] extends StObject {
 }
 object AbortHandle {
   
-  @scala.inline
-  def apply[TReturn](abort: () => TReturn): AbortHandle[TReturn] = {
+  inline def apply[TReturn](abort: () => TReturn): AbortHandle[TReturn] = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
     __obj.asInstanceOf[AbortHandle[TReturn]]
   }
   
-  @scala.inline
-  implicit class AbortHandleMutableBuilder[Self <: AbortHandle[?], TReturn] (val x: Self & AbortHandle[TReturn]) extends AnyVal {
+  extension [Self <: AbortHandle[?], TReturn](x: Self & AbortHandle[TReturn]) {
     
-    @scala.inline
-    def setAbort(value: () => TReturn): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => TReturn): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }
 }

@@ -11,6 +11,5 @@ object sourcesTypedocMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addTypeDocOptions(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeDocOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addTypeDocOptions(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeDocOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

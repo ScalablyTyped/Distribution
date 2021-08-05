@@ -23,13 +23,13 @@ object inclusiveNodeWatchFileSystemMod {
     
     val dirsWatchers: Map[String, js.UndefOr[FSWatcher]] = js.native
     
-    var paused: js.Any = js.native
+    /* private */ var paused: js.Any = js.native
     
-    var pluginState: js.Any = js.native
+    /* private */ var pluginState: js.Any = js.native
     
     val removedFiles: Set[String] = js.native
     
-    var watchFileSystem: js.Any = js.native
+    /* private */ var watchFileSystem: js.Any = js.native
     
     @JSName("watcher")
     def watcher_MInclusiveNodeWatchFileSystem: Watchpack = js.native

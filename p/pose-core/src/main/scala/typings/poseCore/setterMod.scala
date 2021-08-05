@@ -24,8 +24,7 @@ object setterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V, A, C, P, TD](setterProps: SetterFactoryProps[V, A, C, P, TD]): js.Function3[
+  inline def default[V, A, C, P, TD](setterProps: SetterFactoryProps[V, A, C, P, TD]): js.Function3[
     /* next */ String, 
     /* nextProps */ js.UndefOr[Props], 
     /* propagate */ js.UndefOr[Boolean], 
@@ -37,8 +36,7 @@ object setterMod {
     js.Promise[js.Array[js.Any]]
   ]]
   
-  @scala.inline
-  def resolveProp(target: js.Any, props: Props): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProp")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolveProp(target: js.Any, props: Props): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProp")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait SetterFactoryProps[V, A, C, P, TD] extends StObject {
     
@@ -91,8 +89,7 @@ object setterMod {
   }
   object SetterFactoryProps {
     
-    @scala.inline
-    def apply[V, A, C, P, TD](
+    inline def apply[V, A, C, P, TD](
       addActionDelay: (/* delay */ Double, A) => A,
       convertTransitionDefinition: (V, /* transitionDef */ TD | A, /* props */ Props) => A,
       getInstantTransition: (V, /* props */ Props) => A,
@@ -109,64 +106,45 @@ object setterMod {
       __obj.asInstanceOf[SetterFactoryProps[V, A, C, P, TD]]
     }
     
-    @scala.inline
-    implicit class SetterFactoryPropsMutableBuilder[Self <: SetterFactoryProps[?, ?, ?, ?, ?], V, A, C, P, TD] (val x: Self & (SetterFactoryProps[V, A, C, P, TD])) extends AnyVal {
+    extension [Self <: SetterFactoryProps[?, ?, ?, ?, ?], V, A, C, P, TD](x: Self & (SetterFactoryProps[V, A, C, P, TD])) {
       
-      @scala.inline
-      def setAddActionDelay(value: (/* delay */ Double, A) => A): Self = StObject.set(x, "addActionDelay", js.Any.fromFunction2(value))
+      inline def setAddActionDelay(value: (/* delay */ Double, A) => A): Self = StObject.set(x, "addActionDelay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConvertTransitionDefinition(value: (V, /* transitionDef */ TD | A, /* props */ Props) => A): Self = StObject.set(x, "convertTransitionDefinition", js.Any.fromFunction3(value))
+      inline def setConvertTransitionDefinition(value: (V, /* transitionDef */ TD | A, /* props */ Props) => A): Self = StObject.set(x, "convertTransitionDefinition", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setForceRender(value: /* props */ Props => js.Any): Self = StObject.set(x, "forceRender", js.Any.fromFunction1(value))
+      inline def setForceRender(value: /* props */ Props => js.Any): Self = StObject.set(x, "forceRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      @scala.inline
-      def setGetInstantTransition(value: (V, /* props */ Props) => A): Self = StObject.set(x, "getInstantTransition", js.Any.fromFunction2(value))
+      inline def setGetInstantTransition(value: (V, /* props */ Props) => A): Self = StObject.set(x, "getInstantTransition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetTransitionProps(value: (V, /* target */ Double, /* props */ Props) => Props): Self = StObject.set(x, "getTransitionProps", js.Any.fromFunction3(value))
+      inline def setGetTransitionProps(value: (V, /* target */ Double, /* props */ Props) => Props): Self = StObject.set(x, "getTransitionProps", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPosePriority(value: js.Array[String]): Self = StObject.set(x, "posePriority", value.asInstanceOf[js.Any])
+      inline def setPosePriority(value: js.Array[String]): Self = StObject.set(x, "posePriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosePriorityUndefined: Self = StObject.set(x, "posePriority", js.undefined)
+      inline def setPosePriorityUndefined: Self = StObject.set(x, "posePriority", js.undefined)
       
-      @scala.inline
-      def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value :_*))
+      inline def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value :_*))
       
-      @scala.inline
-      def setPoses(value: PoseMap[A, TD]): Self = StObject.set(x, "poses", value.asInstanceOf[js.Any])
+      inline def setPoses(value: PoseMap[A, TD]): Self = StObject.set(x, "poses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveTarget(value: (V, /* target */ js.Any) => js.Any): Self = StObject.set(x, "resolveTarget", js.Any.fromFunction2(value))
+      inline def setResolveTarget(value: (V, /* target */ js.Any) => js.Any): Self = StObject.set(x, "resolveTarget", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetValue(value: (V, /* value */ js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+      inline def setSetValue(value: (V, /* value */ js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetValueNative(value: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
+      inline def setSetValueNative(value: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStartAction(value: (V, A, /* complete */ js.Function0[js.Any]) => C): Self = StObject.set(x, "startAction", js.Any.fromFunction3(value))
+      inline def setStartAction(value: (V, A, /* complete */ js.Function0[js.Any]) => C): Self = StObject.set(x, "startAction", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setState(value: PoserState[V, A, C, P]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: PoserState[V, A, C, P]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopAction(value: C => js.Any): Self = StObject.set(x, "stopAction", js.Any.fromFunction1(value))
+      inline def setStopAction(value: C => js.Any): Self = StObject.set(x, "stopAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformPose(
+      inline def setTransformPose(
         value: (/* pose */ Pose[A, TD], /* key */ String, /* state */ PoserState[V, A, C, P]) => Pose[A, TD]
       ): Self = StObject.set(x, "transformPose", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformPoseUndefined: Self = StObject.set(x, "transformPose", js.undefined)
+      inline def setTransformPoseUndefined: Self = StObject.set(x, "transformPose", js.undefined)
     }
   }
 }

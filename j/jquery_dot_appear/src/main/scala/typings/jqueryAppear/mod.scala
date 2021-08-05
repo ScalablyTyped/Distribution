@@ -31,38 +31,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](): Options[T] = {
+    inline def apply[T](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setAccX(value: Double): Self = StObject.set(x, "accX", value.asInstanceOf[js.Any])
+      inline def setAccX(value: Double): Self = StObject.set(x, "accX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccXUndefined: Self = StObject.set(x, "accX", js.undefined)
+      inline def setAccXUndefined: Self = StObject.set(x, "accX", js.undefined)
       
-      @scala.inline
-      def setAccY(value: Double): Self = StObject.set(x, "accY", value.asInstanceOf[js.Any])
+      inline def setAccY(value: Double): Self = StObject.set(x, "accY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccYUndefined: Self = StObject.set(x, "accY", js.undefined)
+      inline def setAccYUndefined: Self = StObject.set(x, "accY", js.undefined)
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setOne(value: Boolean): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: Boolean): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+      inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
     }
   }
   

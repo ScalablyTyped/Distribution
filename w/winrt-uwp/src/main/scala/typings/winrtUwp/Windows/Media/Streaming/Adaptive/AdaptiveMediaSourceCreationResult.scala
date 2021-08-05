@@ -19,8 +19,7 @@ trait AdaptiveMediaSourceCreationResult extends StObject {
 }
 object AdaptiveMediaSourceCreationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     httpResponseMessage: HttpResponseMessage,
     mediaSource: AdaptiveMediaSource,
     status: AdaptiveMediaSourceCreationStatus
@@ -29,16 +28,12 @@ object AdaptiveMediaSourceCreationResult {
     __obj.asInstanceOf[AdaptiveMediaSourceCreationResult]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourceCreationResultMutableBuilder[Self <: AdaptiveMediaSourceCreationResult] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourceCreationResult](x: Self) {
     
-    @scala.inline
-    def setHttpResponseMessage(value: HttpResponseMessage): Self = StObject.set(x, "httpResponseMessage", value.asInstanceOf[js.Any])
+    inline def setHttpResponseMessage(value: HttpResponseMessage): Self = StObject.set(x, "httpResponseMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSource(value: AdaptiveMediaSource): Self = StObject.set(x, "mediaSource", value.asInstanceOf[js.Any])
+    inline def setMediaSource(value: AdaptiveMediaSource): Self = StObject.set(x, "mediaSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: AdaptiveMediaSourceCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AdaptiveMediaSourceCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

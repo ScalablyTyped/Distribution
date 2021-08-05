@@ -58,73 +58,51 @@ trait ApplicationVersionDescription extends StObject {
 }
 object ApplicationVersionDescription {
   
-  @scala.inline
-  def apply(): ApplicationVersionDescription = {
+  inline def apply(): ApplicationVersionDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationVersionDescription]
   }
   
-  @scala.inline
-  implicit class ApplicationVersionDescriptionMutableBuilder[Self <: ApplicationVersionDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationVersionDescription](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setApplicationVersionArn(value: ApplicationVersionArn): Self = StObject.set(x, "ApplicationVersionArn", value.asInstanceOf[js.Any])
+    inline def setApplicationVersionArn(value: ApplicationVersionArn): Self = StObject.set(x, "ApplicationVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionArnUndefined: Self = StObject.set(x, "ApplicationVersionArn", js.undefined)
+    inline def setApplicationVersionArnUndefined: Self = StObject.set(x, "ApplicationVersionArn", js.undefined)
     
-    @scala.inline
-    def setBuildArn(value: String): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
+    inline def setBuildArn(value: String): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
+    inline def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
     
-    @scala.inline
-    def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
+    inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    @scala.inline
-    def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
+    inline def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
+    inline def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setSourceBuildInformation(value: SourceBuildInformation): Self = StObject.set(x, "SourceBuildInformation", value.asInstanceOf[js.Any])
+    inline def setSourceBuildInformation(value: SourceBuildInformation): Self = StObject.set(x, "SourceBuildInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBuildInformationUndefined: Self = StObject.set(x, "SourceBuildInformation", js.undefined)
+    inline def setSourceBuildInformationUndefined: Self = StObject.set(x, "SourceBuildInformation", js.undefined)
     
-    @scala.inline
-    def setSourceBundle(value: S3Location): Self = StObject.set(x, "SourceBundle", value.asInstanceOf[js.Any])
+    inline def setSourceBundle(value: S3Location): Self = StObject.set(x, "SourceBundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBundleUndefined: Self = StObject.set(x, "SourceBundle", js.undefined)
+    inline def setSourceBundleUndefined: Self = StObject.set(x, "SourceBundle", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ApplicationVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ApplicationVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    inline def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
+    inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

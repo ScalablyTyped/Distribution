@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Column")
 @js.native
-class Column protected ()
+/* private */ class Column ()
   extends StObject
      with typings.activexOutlook.Outlook.Column {
   
@@ -20,7 +20,7 @@ class Column protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Column_typekey")
   var OutlookDotColumn_typekey: typings.activexOutlook.Outlook.Column = js.native
   

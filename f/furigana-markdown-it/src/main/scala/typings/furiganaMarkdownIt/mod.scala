@@ -10,10 +10,8 @@ object mod {
   /**
     * A markdown-it plugin which adds furigana support.
     */
-  @scala.inline
-  def apply(): PluginSimple = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[PluginSimple]
-  @scala.inline
-  def apply(options: Options): PluginSimple = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[PluginSimple]
+  inline def apply(): PluginSimple = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[PluginSimple]
+  inline def apply(options: Options): PluginSimple = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[PluginSimple]
   
   @JSImport("furigana-markdown-it", JSImport.Namespace)
   @js.native
@@ -52,32 +50,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtraCombinators(value: String): Self = StObject.set(x, "extraCombinators", value.asInstanceOf[js.Any])
+      inline def setExtraCombinators(value: String): Self = StObject.set(x, "extraCombinators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraCombinatorsUndefined: Self = StObject.set(x, "extraCombinators", js.undefined)
+      inline def setExtraCombinatorsUndefined: Self = StObject.set(x, "extraCombinators", js.undefined)
       
-      @scala.inline
-      def setExtraSeparators(value: String): Self = StObject.set(x, "extraSeparators", value.asInstanceOf[js.Any])
+      inline def setExtraSeparators(value: String): Self = StObject.set(x, "extraSeparators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraSeparatorsUndefined: Self = StObject.set(x, "extraSeparators", js.undefined)
+      inline def setExtraSeparatorsUndefined: Self = StObject.set(x, "extraSeparators", js.undefined)
       
-      @scala.inline
-      def setFallbackParens(value: String): Self = StObject.set(x, "fallbackParens", value.asInstanceOf[js.Any])
+      inline def setFallbackParens(value: String): Self = StObject.set(x, "fallbackParens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackParensUndefined: Self = StObject.set(x, "fallbackParens", js.undefined)
+      inline def setFallbackParensUndefined: Self = StObject.set(x, "fallbackParens", js.undefined)
     }
   }
 }

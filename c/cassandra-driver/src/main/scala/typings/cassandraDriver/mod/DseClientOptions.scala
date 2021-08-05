@@ -22,43 +22,31 @@ trait DseClientOptions
 }
 object DseClientOptions {
   
-  @scala.inline
-  def apply(): DseClientOptions = {
+  inline def apply(): DseClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DseClientOptions]
   }
   
-  @scala.inline
-  implicit class DseClientOptionsMutableBuilder[Self <: DseClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DseClientOptions](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
+    inline def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
-    @scala.inline
-    def setGraphOptions(value: GraphOptions): Self = StObject.set(x, "graphOptions", value.asInstanceOf[js.Any])
+    inline def setGraphOptions(value: GraphOptions): Self = StObject.set(x, "graphOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphOptionsUndefined: Self = StObject.set(x, "graphOptions", js.undefined)
+    inline def setGraphOptionsUndefined: Self = StObject.set(x, "graphOptions", js.undefined)
     
-    @scala.inline
-    def setId(value: Uuid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Uuid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMonitorReporting(value: Enabled): Self = StObject.set(x, "monitorReporting", value.asInstanceOf[js.Any])
+    inline def setMonitorReporting(value: Enabled): Self = StObject.set(x, "monitorReporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorReportingUndefined: Self = StObject.set(x, "monitorReporting", js.undefined)
+    inline def setMonitorReportingUndefined: Self = StObject.set(x, "monitorReporting", js.undefined)
   }
 }

@@ -21,19 +21,15 @@ trait ISize extends StObject {
 }
 object ISize {
   
-  @scala.inline
-  def apply(qcx: Double, qcy: Double): ISize = {
+  inline def apply(qcx: Double, qcy: Double): ISize = {
     val __obj = js.Dynamic.literal(qcx = qcx.asInstanceOf[js.Any], qcy = qcy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISize]
   }
   
-  @scala.inline
-  implicit class ISizeMutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
+  extension [Self <: ISize](x: Self) {
     
-    @scala.inline
-    def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
+    inline def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQcy(value: Double): Self = StObject.set(x, "qcy", value.asInstanceOf[js.Any])
+    inline def setQcy(value: Double): Self = StObject.set(x, "qcy", value.asInstanceOf[js.Any])
   }
 }

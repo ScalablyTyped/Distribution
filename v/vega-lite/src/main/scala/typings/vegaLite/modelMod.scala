@@ -77,7 +77,7 @@ object modelMod {
     
     /* protected */ def assembleDefaultLayout(): VgLayout = js.native
     
-    var assembleEncodeFromView: js.Any = js.native
+    /* private */ var assembleEncodeFromView: js.Any = js.native
     
     /**
       * Assemble the mark group for this model. We accept optional `signals` so that we can include concat top-level signals with the top-level model's local signals.
@@ -149,7 +149,7 @@ object modelMod {
     
     def height: SignalRef = js.native
     
-    var initTitle: js.Any = js.native
+    /* private */ var initTitle: js.Any = js.native
     
     val layout: GenericCompositionLayoutWithColumns = js.native
     
@@ -187,7 +187,7 @@ object modelMod {
     def projectionName(parse: Boolean): String = js.native
     
     /** Name map for projections, which can be renamed by a model's parent. */
-    var projectionNameMap: NameMapInterface = js.native
+    /* protected */ var projectionNameMap: NameMapInterface = js.native
     
     def renameProjection(oldName: String, newName: String): Unit = js.native
     
@@ -200,7 +200,7 @@ object modelMod {
       * This essentially merges the top-level spec's width/height signals with the width/height signals
       * to help us reduce redundant signals declaration.
       */
-    var renameTopLevelLayoutSizeSignal: js.Any = js.native
+    /* private */ var renameTopLevelLayoutSizeSignal: js.Any = js.native
     
     /**
       * Request a data source name for the given data source type and mark that data source as required.
@@ -218,10 +218,10 @@ object modelMod {
     def scaleName(originalScaleName: ScaleChannel, parse: Boolean): String = js.native
     
     /** Name map for scales, which can be renamed by a model's parent. */
-    var scaleNameMap: NameMapInterface = js.native
+    /* protected */ var scaleNameMap: NameMapInterface = js.native
     
     /** Name map for signals, which can be renamed by a model's parent. */
-    var signalNameMap: NameMapInterface = js.native
+    /* protected */ var signalNameMap: NameMapInterface = js.native
     
     var size: LayoutSizeMixins = js.native
     
@@ -285,23 +285,19 @@ object modelMod {
     /* CompleteClass */
     override def has(name: String): Boolean = js.native
     
-    var nameMap: js.Any = js.native
+    /* private */ var nameMap: js.Any = js.native
     
     /* CompleteClass */
     override def rename(oldname: String, newName: String): Unit = js.native
   }
   
-  @scala.inline
-  def isConcatModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/concat.ConcatModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConcatModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/concat.ConcatModel */ Boolean]
+  inline def isConcatModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/concat.ConcatModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConcatModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/concat.ConcatModel */ Boolean]
   
-  @scala.inline
-  def isFacetModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/facet.FacetModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/facet.FacetModel */ Boolean]
+  inline def isFacetModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/facet.FacetModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/facet.FacetModel */ Boolean]
   
-  @scala.inline
-  def isLayerModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/layer.LayerModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/layer.LayerModel */ Boolean]
+  inline def isLayerModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/layer.LayerModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/layer.LayerModel */ Boolean]
   
-  @scala.inline
-  def isUnitModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/unit.UnitModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnitModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/unit.UnitModel */ Boolean]
+  inline def isUnitModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/unit.UnitModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnitModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/unit.UnitModel */ Boolean]
   
   trait Component extends StObject {
     
@@ -329,8 +325,7 @@ object modelMod {
   }
   object Component {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axes: AxisComponentIndex,
       data: DataComponent,
       layoutHeaders: Column,
@@ -346,41 +341,29 @@ object modelMod {
       __obj.asInstanceOf[Component]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+    extension [Self <: Component](x: Self) {
       
-      @scala.inline
-      def setAxes(value: AxisComponentIndex): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: AxisComponentIndex): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: DataComponent): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataComponent): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutHeaders(value: Column): Self = StObject.set(x, "layoutHeaders", value.asInstanceOf[js.Any])
+      inline def setLayoutHeaders(value: Column): Self = StObject.set(x, "layoutHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutSize(value: LayoutSizeComponent): Self = StObject.set(x, "layoutSize", value.asInstanceOf[js.Any])
+      inline def setLayoutSize(value: LayoutSizeComponent): Self = StObject.set(x, "layoutSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegends(value: LegendComponentIndex): Self = StObject.set(x, "legends", value.asInstanceOf[js.Any])
+      inline def setLegends(value: LegendComponentIndex): Self = StObject.set(x, "legends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMark(value: js.Array[VgMarkGroup]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: js.Array[VgMarkGroup]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkVarargs(value: VgMarkGroup*): Self = StObject.set(x, "mark", js.Array(value :_*))
+      inline def setMarkVarargs(value: VgMarkGroup*): Self = StObject.set(x, "mark", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: ProjectionComponent): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: ProjectionComponent): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScales(value: ScaleComponentIndex): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+      inline def setScales(value: ScaleComponentIndex): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelection(value: Dict[SelectionComponent[SelectionType]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Dict[SelectionComponent[SelectionType]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -394,23 +377,18 @@ object modelMod {
   }
   object NameMapInterface {
     
-    @scala.inline
-    def apply(get: String => String, has: String => Boolean, rename: (String, String) => Unit): NameMapInterface = {
+    inline def apply(get: String => String, has: String => Boolean, rename: (String, String) => Unit): NameMapInterface = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), rename = js.Any.fromFunction2(rename))
       __obj.asInstanceOf[NameMapInterface]
     }
     
-    @scala.inline
-    implicit class NameMapInterfaceMutableBuilder[Self <: NameMapInterface] (val x: Self) extends AnyVal {
+    extension [Self <: NameMapInterface](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRename(value: (String, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
+      inline def setRename(value: (String, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
     }
   }
 }

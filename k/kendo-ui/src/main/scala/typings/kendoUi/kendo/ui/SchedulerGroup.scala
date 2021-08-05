@@ -14,31 +14,23 @@ trait SchedulerGroup extends StObject {
 }
 object SchedulerGroup {
   
-  @scala.inline
-  def apply(): SchedulerGroup = {
+  inline def apply(): SchedulerGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerGroup]
   }
   
-  @scala.inline
-  implicit class SchedulerGroupMutableBuilder[Self <: SchedulerGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerGroup](x: Self) {
     
-    @scala.inline
-    def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
   }
 }

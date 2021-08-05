@@ -12,25 +12,19 @@ trait FlushOnChange extends StObject {
 }
 object FlushOnChange {
   
-  @scala.inline
-  def apply(): FlushOnChange = {
+  inline def apply(): FlushOnChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlushOnChange]
   }
   
-  @scala.inline
-  implicit class FlushOnChangeMutableBuilder[Self <: FlushOnChange] (val x: Self) extends AnyVal {
+  extension [Self <: FlushOnChange](x: Self) {
     
-    @scala.inline
-    def setFlushOnChange(value: Boolean): Self = StObject.set(x, "flushOnChange", value.asInstanceOf[js.Any])
+    inline def setFlushOnChange(value: Boolean): Self = StObject.set(x, "flushOnChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlushOnChangeUndefined: Self = StObject.set(x, "flushOnChange", js.undefined)
+    inline def setFlushOnChangeUndefined: Self = StObject.set(x, "flushOnChange", js.undefined)
     
-    @scala.inline
-    def setFlushOnEnd(value: Boolean): Self = StObject.set(x, "flushOnEnd", value.asInstanceOf[js.Any])
+    inline def setFlushOnEnd(value: Boolean): Self = StObject.set(x, "flushOnEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlushOnEndUndefined: Self = StObject.set(x, "flushOnEnd", js.undefined)
+    inline def setFlushOnEndUndefined: Self = StObject.set(x, "flushOnEnd", js.undefined)
   }
 }

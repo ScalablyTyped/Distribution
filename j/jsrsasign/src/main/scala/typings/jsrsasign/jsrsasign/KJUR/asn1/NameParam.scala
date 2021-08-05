@@ -10,16 +10,13 @@ trait NameParam extends StObject {
 }
 object NameParam {
   
-  @scala.inline
-  def apply(name: String): NameParam = {
+  inline def apply(name: String): NameParam = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameParam]
   }
   
-  @scala.inline
-  implicit class NameParamMutableBuilder[Self <: NameParam] (val x: Self) extends AnyVal {
+  extension [Self <: NameParam](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

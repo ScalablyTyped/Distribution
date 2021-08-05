@@ -13,14 +13,10 @@ object getVpcPeeringConnectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVpcPeeringConnection(): js.Promise[GetVpcPeeringConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")().asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
-  @scala.inline
-  def getVpcPeeringConnection(args: Unit, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
-  @scala.inline
-  def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs): js.Promise[GetVpcPeeringConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
-  @scala.inline
-  def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  inline def getVpcPeeringConnection(): js.Promise[GetVpcPeeringConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")().asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  inline def getVpcPeeringConnection(args: Unit, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  inline def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs): js.Promise[GetVpcPeeringConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  inline def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
   
   trait GetVpcPeeringConnectionArgs extends StObject {
     
@@ -87,89 +83,62 @@ object getVpcPeeringConnectionMod {
   }
   object GetVpcPeeringConnectionArgs {
     
-    @scala.inline
-    def apply(): GetVpcPeeringConnectionArgs = {
+    inline def apply(): GetVpcPeeringConnectionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetVpcPeeringConnectionArgs]
     }
     
-    @scala.inline
-    implicit class GetVpcPeeringConnectionArgsMutableBuilder[Self <: GetVpcPeeringConnectionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpcPeeringConnectionArgs](x: Self) {
       
-      @scala.inline
-      def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+      inline def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
+      inline def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[GetVpcPeeringConnectionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetVpcPeeringConnectionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetVpcPeeringConnectionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetVpcPeeringConnectionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
       
-      @scala.inline
-      def setPeerCidrBlock(value: String): Self = StObject.set(x, "peerCidrBlock", value.asInstanceOf[js.Any])
+      inline def setPeerCidrBlock(value: String): Self = StObject.set(x, "peerCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerCidrBlockUndefined: Self = StObject.set(x, "peerCidrBlock", js.undefined)
+      inline def setPeerCidrBlockUndefined: Self = StObject.set(x, "peerCidrBlock", js.undefined)
       
-      @scala.inline
-      def setPeerOwnerId(value: String): Self = StObject.set(x, "peerOwnerId", value.asInstanceOf[js.Any])
+      inline def setPeerOwnerId(value: String): Self = StObject.set(x, "peerOwnerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerOwnerIdUndefined: Self = StObject.set(x, "peerOwnerId", js.undefined)
+      inline def setPeerOwnerIdUndefined: Self = StObject.set(x, "peerOwnerId", js.undefined)
       
-      @scala.inline
-      def setPeerRegion(value: String): Self = StObject.set(x, "peerRegion", value.asInstanceOf[js.Any])
+      inline def setPeerRegion(value: String): Self = StObject.set(x, "peerRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerRegionUndefined: Self = StObject.set(x, "peerRegion", js.undefined)
+      inline def setPeerRegionUndefined: Self = StObject.set(x, "peerRegion", js.undefined)
       
-      @scala.inline
-      def setPeerVpcId(value: String): Self = StObject.set(x, "peerVpcId", value.asInstanceOf[js.Any])
+      inline def setPeerVpcId(value: String): Self = StObject.set(x, "peerVpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerVpcIdUndefined: Self = StObject.set(x, "peerVpcId", js.undefined)
+      inline def setPeerVpcIdUndefined: Self = StObject.set(x, "peerVpcId", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
   
@@ -213,8 +182,7 @@ object getVpcPeeringConnectionMod {
   }
   object GetVpcPeeringConnectionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accepter: StringDictionary[Boolean],
       cidrBlock: String,
       id: String,
@@ -233,56 +201,39 @@ object getVpcPeeringConnectionMod {
       __obj.asInstanceOf[GetVpcPeeringConnectionResult]
     }
     
-    @scala.inline
-    implicit class GetVpcPeeringConnectionResultMutableBuilder[Self <: GetVpcPeeringConnectionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpcPeeringConnectionResult](x: Self) {
       
-      @scala.inline
-      def setAccepter(value: StringDictionary[Boolean]): Self = StObject.set(x, "accepter", value.asInstanceOf[js.Any])
+      inline def setAccepter(value: StringDictionary[Boolean]): Self = StObject.set(x, "accepter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+      inline def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerCidrBlock(value: String): Self = StObject.set(x, "peerCidrBlock", value.asInstanceOf[js.Any])
+      inline def setPeerCidrBlock(value: String): Self = StObject.set(x, "peerCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerOwnerId(value: String): Self = StObject.set(x, "peerOwnerId", value.asInstanceOf[js.Any])
+      inline def setPeerOwnerId(value: String): Self = StObject.set(x, "peerOwnerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerRegion(value: String): Self = StObject.set(x, "peerRegion", value.asInstanceOf[js.Any])
+      inline def setPeerRegion(value: String): Self = StObject.set(x, "peerRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerVpcId(value: String): Self = StObject.set(x, "peerVpcId", value.asInstanceOf[js.Any])
+      inline def setPeerVpcId(value: String): Self = StObject.set(x, "peerVpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequester(value: StringDictionary[Boolean]): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
+      inline def setRequester(value: StringDictionary[Boolean]): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
 }

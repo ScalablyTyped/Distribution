@@ -76,46 +76,33 @@ trait GoogleActionsV2OrdersGoogleProvidedPaymentOptions extends StObject {
 }
 object GoogleActionsV2OrdersGoogleProvidedPaymentOptions {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersGoogleProvidedPaymentOptions = {
+  inline def apply(): GoogleActionsV2OrdersGoogleProvidedPaymentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersGoogleProvidedPaymentOptions]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersGoogleProvidedPaymentOptionsMutableBuilder[Self <: GoogleActionsV2OrdersGoogleProvidedPaymentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersGoogleProvidedPaymentOptions](x: Self) {
     
-    @scala.inline
-    def setBillingAddressRequired(value: Boolean): Self = StObject.set(x, "billingAddressRequired", value.asInstanceOf[js.Any])
+    inline def setBillingAddressRequired(value: Boolean): Self = StObject.set(x, "billingAddressRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressRequiredUndefined: Self = StObject.set(x, "billingAddressRequired", js.undefined)
+    inline def setBillingAddressRequiredUndefined: Self = StObject.set(x, "billingAddressRequired", js.undefined)
     
-    @scala.inline
-    def setFacilitationSpecification(value: String): Self = StObject.set(x, "facilitationSpecification", value.asInstanceOf[js.Any])
+    inline def setFacilitationSpecification(value: String): Self = StObject.set(x, "facilitationSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacilitationSpecificationUndefined: Self = StObject.set(x, "facilitationSpecification", js.undefined)
+    inline def setFacilitationSpecificationUndefined: Self = StObject.set(x, "facilitationSpecification", js.undefined)
     
-    @scala.inline
-    def setPrepaidCardDisallowed(value: Boolean): Self = StObject.set(x, "prepaidCardDisallowed", value.asInstanceOf[js.Any])
+    inline def setPrepaidCardDisallowed(value: Boolean): Self = StObject.set(x, "prepaidCardDisallowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepaidCardDisallowedUndefined: Self = StObject.set(x, "prepaidCardDisallowed", js.undefined)
+    inline def setPrepaidCardDisallowedUndefined: Self = StObject.set(x, "prepaidCardDisallowed", js.undefined)
     
-    @scala.inline
-    def setSupportedCardNetworks(value: js.Array[GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks]): Self = StObject.set(x, "supportedCardNetworks", value.asInstanceOf[js.Any])
+    inline def setSupportedCardNetworks(value: js.Array[GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks]): Self = StObject.set(x, "supportedCardNetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCardNetworksUndefined: Self = StObject.set(x, "supportedCardNetworks", js.undefined)
+    inline def setSupportedCardNetworksUndefined: Self = StObject.set(x, "supportedCardNetworks", js.undefined)
     
-    @scala.inline
-    def setSupportedCardNetworksVarargs(value: GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks*): Self = StObject.set(x, "supportedCardNetworks", js.Array(value :_*))
+    inline def setSupportedCardNetworksVarargs(value: GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks*): Self = StObject.set(x, "supportedCardNetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenizationParameters(value: GoogleActionsV2OrdersPaymentMethodTokenizationParameters): Self = StObject.set(x, "tokenizationParameters", value.asInstanceOf[js.Any])
+    inline def setTokenizationParameters(value: GoogleActionsV2OrdersPaymentMethodTokenizationParameters): Self = StObject.set(x, "tokenizationParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenizationParametersUndefined: Self = StObject.set(x, "tokenizationParameters", js.undefined)
+    inline def setTokenizationParametersUndefined: Self = StObject.set(x, "tokenizationParameters", js.undefined)
   }
 }

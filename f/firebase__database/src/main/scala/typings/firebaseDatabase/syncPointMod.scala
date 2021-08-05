@@ -88,6 +88,6 @@ object syncPointMod {
       *
       * NOTE: This list will be quite small (usually 1, but perhaps 2 or 3; any more is an odd use case).
       */
-    val views: js.Any = js.native
+    /* private */ val views: js.Any = js.native
   }
 }

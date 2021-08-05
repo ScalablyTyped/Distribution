@@ -16,13 +16,13 @@ object subtitlesViewMod {
   trait SubtitlesView
     extends typings.playable.viewMod.default[ISubtitlesViewStyles] {
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    @JSName("_$subtitles")
+    /* private */ @JSName("_$subtitles")
     var _$subtitles: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
     def clearSubtitles(): Unit = js.native
     

@@ -13,19 +13,15 @@ trait CompressImageSuccessCallbackResult extends StObject {
 }
 object CompressImageSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, tempFilePath: String): CompressImageSuccessCallbackResult = {
+  inline def apply(errMsg: String, tempFilePath: String): CompressImageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressImageSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CompressImageSuccessCallbackResultMutableBuilder[Self <: CompressImageSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CompressImageSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

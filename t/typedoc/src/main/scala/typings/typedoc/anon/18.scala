@@ -11,16 +11,13 @@ trait `18` extends StObject {
 }
 object `18` {
   
-  @scala.inline
-  def apply(): `18` = {
+  inline def apply(): `18` = {
     val __obj = js.Dynamic.literal(name = "disableSources")
     __obj.asInstanceOf[`18`]
   }
   
-  @scala.inline
-  implicit class `18MutableBuilder`[Self <: `18`] (val x: Self) extends AnyVal {
+  extension [Self <: `18`](x: Self) {
     
-    @scala.inline
-    def setName(value: disableSources): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: disableSources): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

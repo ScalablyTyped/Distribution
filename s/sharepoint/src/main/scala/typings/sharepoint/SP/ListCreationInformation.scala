@@ -46,8 +46,7 @@ trait ListCreationInformation
 }
 object ListCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -76,61 +75,42 @@ object ListCreationInformation {
     __obj.asInstanceOf[ListCreationInformation]
   }
   
-  @scala.inline
-  implicit class ListCreationInformationMutableBuilder[Self <: ListCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ListCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_customSchemaXml(value: () => String): Self = StObject.set(x, "get_customSchemaXml", js.Any.fromFunction0(value))
+    inline def setGet_customSchemaXml(value: () => String): Self = StObject.set(x, "get_customSchemaXml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_dataSourceProperties(value: () => js.Any): Self = StObject.set(x, "get_dataSourceProperties", js.Any.fromFunction0(value))
+    inline def setGet_dataSourceProperties(value: () => js.Any): Self = StObject.set(x, "get_dataSourceProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
+    inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_documentTemplateType(value: () => Double): Self = StObject.set(x, "get_documentTemplateType", js.Any.fromFunction0(value))
+    inline def setGet_documentTemplateType(value: () => Double): Self = StObject.set(x, "get_documentTemplateType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_quickLaunchOption(value: () => QuickLaunchOptions): Self = StObject.set(x, "get_quickLaunchOption", js.Any.fromFunction0(value))
+    inline def setGet_quickLaunchOption(value: () => QuickLaunchOptions): Self = StObject.set(x, "get_quickLaunchOption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_templateFeatureId(value: () => Guid): Self = StObject.set(x, "get_templateFeatureId", js.Any.fromFunction0(value))
+    inline def setGet_templateFeatureId(value: () => Guid): Self = StObject.set(x, "get_templateFeatureId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_templateType(value: () => Double): Self = StObject.set(x, "get_templateType", js.Any.fromFunction0(value))
+    inline def setGet_templateType(value: () => Double): Self = StObject.set(x, "get_templateType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_customSchemaXml(value: String => Unit): Self = StObject.set(x, "set_customSchemaXml", js.Any.fromFunction1(value))
+    inline def setSet_customSchemaXml(value: String => Unit): Self = StObject.set(x, "set_customSchemaXml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_dataSourceProperties(value: js.Any => Unit): Self = StObject.set(x, "set_dataSourceProperties", js.Any.fromFunction1(value))
+    inline def setSet_dataSourceProperties(value: js.Any => Unit): Self = StObject.set(x, "set_dataSourceProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
+    inline def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_documentTemplateType(value: Double => Unit): Self = StObject.set(x, "set_documentTemplateType", js.Any.fromFunction1(value))
+    inline def setSet_documentTemplateType(value: Double => Unit): Self = StObject.set(x, "set_documentTemplateType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_quickLaunchOption(value: QuickLaunchOptions => Unit): Self = StObject.set(x, "set_quickLaunchOption", js.Any.fromFunction1(value))
+    inline def setSet_quickLaunchOption(value: QuickLaunchOptions => Unit): Self = StObject.set(x, "set_quickLaunchOption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_templateFeatureId(value: Guid => Unit): Self = StObject.set(x, "set_templateFeatureId", js.Any.fromFunction1(value))
+    inline def setSet_templateFeatureId(value: Guid => Unit): Self = StObject.set(x, "set_templateFeatureId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_templateType(value: Double => Unit): Self = StObject.set(x, "set_templateType", js.Any.fromFunction1(value))
+    inline def setSet_templateType(value: Double => Unit): Self = StObject.set(x, "set_templateType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
   }
 }

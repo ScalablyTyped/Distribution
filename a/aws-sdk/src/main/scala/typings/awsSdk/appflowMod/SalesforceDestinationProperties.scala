@@ -28,38 +28,28 @@ trait SalesforceDestinationProperties extends StObject {
 }
 object SalesforceDestinationProperties {
   
-  @scala.inline
-  def apply(`object`: Object): SalesforceDestinationProperties = {
+  inline def apply(`object`: Object): SalesforceDestinationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SalesforceDestinationProperties]
   }
   
-  @scala.inline
-  implicit class SalesforceDestinationPropertiesMutableBuilder[Self <: SalesforceDestinationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SalesforceDestinationProperties](x: Self) {
     
-    @scala.inline
-    def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
+    inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
+    inline def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
     
-    @scala.inline
-    def setIdFieldNames(value: IdFieldNameList): Self = StObject.set(x, "idFieldNames", value.asInstanceOf[js.Any])
+    inline def setIdFieldNames(value: IdFieldNameList): Self = StObject.set(x, "idFieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdFieldNamesUndefined: Self = StObject.set(x, "idFieldNames", js.undefined)
+    inline def setIdFieldNamesUndefined: Self = StObject.set(x, "idFieldNames", js.undefined)
     
-    @scala.inline
-    def setIdFieldNamesVarargs(value: Name*): Self = StObject.set(x, "idFieldNames", js.Array(value :_*))
+    inline def setIdFieldNamesVarargs(value: Name*): Self = StObject.set(x, "idFieldNames", js.Array(value :_*))
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteOperationType(value: WriteOperationType): Self = StObject.set(x, "writeOperationType", value.asInstanceOf[js.Any])
+    inline def setWriteOperationType(value: WriteOperationType): Self = StObject.set(x, "writeOperationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteOperationTypeUndefined: Self = StObject.set(x, "writeOperationType", js.undefined)
+    inline def setWriteOperationTypeUndefined: Self = StObject.set(x, "writeOperationType", js.undefined)
   }
 }

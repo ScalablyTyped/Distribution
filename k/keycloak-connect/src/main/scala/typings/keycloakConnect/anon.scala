@@ -12,20 +12,16 @@ object anon {
   }
   object Grant {
     
-    @scala.inline
-    def apply(): Grant = {
+    inline def apply(): Grant = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Grant]
     }
     
-    @scala.inline
-    implicit class GrantMutableBuilder[Self <: Grant] (val x: Self) extends AnyVal {
+    extension [Self <: Grant](x: Self) {
       
-      @scala.inline
-      def setGrant(value: typings.keycloakConnect.mod.Grant): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
+      inline def setGrant(value: typings.keycloakConnect.mod.Grant): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantUndefined: Self = StObject.set(x, "grant", js.undefined)
+      inline def setGrantUndefined: Self = StObject.set(x, "grant", js.undefined)
     }
   }
   
@@ -35,23 +31,18 @@ object anon {
   }
   object Roles {
     
-    @scala.inline
-    def apply(): Roles = {
+    inline def apply(): Roles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Roles]
     }
     
-    @scala.inline
-    implicit class RolesMutableBuilder[Self <: Roles] (val x: Self) extends AnyVal {
+    extension [Self <: Roles](x: Self) {
       
-      @scala.inline
-      def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
       
-      @scala.inline
-      def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     }
   }
 }

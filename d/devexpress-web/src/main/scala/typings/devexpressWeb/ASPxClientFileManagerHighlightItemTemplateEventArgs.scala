@@ -33,25 +33,19 @@ trait ASPxClientFileManagerHighlightItemTemplateEventArgs
 }
 object ASPxClientFileManagerHighlightItemTemplateEventArgs {
   
-  @scala.inline
-  def apply(filterValue: String, highlightCssClassName: String, itemName: String, templateElement: String): ASPxClientFileManagerHighlightItemTemplateEventArgs = {
+  inline def apply(filterValue: String, highlightCssClassName: String, itemName: String, templateElement: String): ASPxClientFileManagerHighlightItemTemplateEventArgs = {
     val __obj = js.Dynamic.literal(filterValue = filterValue.asInstanceOf[js.Any], highlightCssClassName = highlightCssClassName.asInstanceOf[js.Any], itemName = itemName.asInstanceOf[js.Any], templateElement = templateElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerHighlightItemTemplateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerHighlightItemTemplateEventArgsMutableBuilder[Self <: ASPxClientFileManagerHighlightItemTemplateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerHighlightItemTemplateEventArgs](x: Self) {
     
-    @scala.inline
-    def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
+    inline def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightCssClassName(value: String): Self = StObject.set(x, "highlightCssClassName", value.asInstanceOf[js.Any])
+    inline def setHighlightCssClassName(value: String): Self = StObject.set(x, "highlightCssClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateElement(value: String): Self = StObject.set(x, "templateElement", value.asInstanceOf[js.Any])
+    inline def setTemplateElement(value: String): Self = StObject.set(x, "templateElement", value.asInstanceOf[js.Any])
   }
 }

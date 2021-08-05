@@ -13,19 +13,15 @@ trait OrganizationsDecisionDetail extends StObject {
 }
 object OrganizationsDecisionDetail {
   
-  @scala.inline
-  def apply(): OrganizationsDecisionDetail = {
+  inline def apply(): OrganizationsDecisionDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrganizationsDecisionDetail]
   }
   
-  @scala.inline
-  implicit class OrganizationsDecisionDetailMutableBuilder[Self <: OrganizationsDecisionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationsDecisionDetail](x: Self) {
     
-    @scala.inline
-    def setAllowedByOrganizations(value: booleanType): Self = StObject.set(x, "AllowedByOrganizations", value.asInstanceOf[js.Any])
+    inline def setAllowedByOrganizations(value: booleanType): Self = StObject.set(x, "AllowedByOrganizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedByOrganizationsUndefined: Self = StObject.set(x, "AllowedByOrganizations", js.undefined)
+    inline def setAllowedByOrganizationsUndefined: Self = StObject.set(x, "AllowedByOrganizations", js.undefined)
   }
 }

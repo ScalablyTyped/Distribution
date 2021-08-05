@@ -14,26 +14,20 @@ object routerOptionsMod {
   }
   object RouterOptions {
     
-    @scala.inline
-    def apply(): RouterOptions = {
+    inline def apply(): RouterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouterOptions]
     }
     
-    @scala.inline
-    implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouterOptions](x: Self) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setUnmount(value: Boolean): Self = StObject.set(x, "unmount", value.asInstanceOf[js.Any])
+      inline def setUnmount(value: Boolean): Self = StObject.set(x, "unmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountUndefined: Self = StObject.set(x, "unmount", js.undefined)
+      inline def setUnmountUndefined: Self = StObject.set(x, "unmount", js.undefined)
     }
   }
 }

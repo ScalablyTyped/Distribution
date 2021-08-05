@@ -13,16 +13,13 @@ trait ScrollToOffset
 }
 object ScrollToOffset {
   
-  @scala.inline
-  def apply(scrollToOffset: Animated => Unit): ScrollToOffset = {
+  inline def apply(scrollToOffset: Animated => Unit): ScrollToOffset = {
     val __obj = js.Dynamic.literal(scrollToOffset = js.Any.fromFunction1(scrollToOffset))
     __obj.asInstanceOf[ScrollToOffset]
   }
   
-  @scala.inline
-  implicit class ScrollToOffsetMutableBuilder[Self <: ScrollToOffset] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollToOffset](x: Self) {
     
-    @scala.inline
-    def setScrollToOffset(value: Animated => Unit): Self = StObject.set(x, "scrollToOffset", js.Any.fromFunction1(value))
+    inline def setScrollToOffset(value: Animated => Unit): Self = StObject.set(x, "scrollToOffset", js.Any.fromFunction1(value))
   }
 }

@@ -36,40 +36,29 @@ trait SchemaDomainMapping extends StObject {
 }
 object SchemaDomainMapping {
   
-  @scala.inline
-  def apply(): SchemaDomainMapping = {
+  inline def apply(): SchemaDomainMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomainMapping]
   }
   
-  @scala.inline
-  implicit class SchemaDomainMappingMutableBuilder[Self <: SchemaDomainMapping] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomainMapping](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceRecords(value: js.Array[SchemaResourceRecord]): Self = StObject.set(x, "resourceRecords", value.asInstanceOf[js.Any])
+    inline def setResourceRecords(value: js.Array[SchemaResourceRecord]): Self = StObject.set(x, "resourceRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordsUndefined: Self = StObject.set(x, "resourceRecords", js.undefined)
+    inline def setResourceRecordsUndefined: Self = StObject.set(x, "resourceRecords", js.undefined)
     
-    @scala.inline
-    def setResourceRecordsVarargs(value: SchemaResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value :_*))
+    inline def setResourceRecordsVarargs(value: SchemaResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setSslSettings(value: SchemaSslSettings): Self = StObject.set(x, "sslSettings", value.asInstanceOf[js.Any])
+    inline def setSslSettings(value: SchemaSslSettings): Self = StObject.set(x, "sslSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslSettingsUndefined: Self = StObject.set(x, "sslSettings", js.undefined)
+    inline def setSslSettingsUndefined: Self = StObject.set(x, "sslSettings", js.undefined)
   }
 }

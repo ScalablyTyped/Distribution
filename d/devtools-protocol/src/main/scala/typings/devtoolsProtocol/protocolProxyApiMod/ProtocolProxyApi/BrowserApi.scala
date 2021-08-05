@@ -100,8 +100,7 @@ trait BrowserApi extends StObject {
 }
 object BrowserApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => js.Promise[Unit],
     crash: () => js.Promise[Unit],
     crashGpuProcess: () => js.Promise[Unit],
@@ -122,52 +121,36 @@ object BrowserApi {
     __obj.asInstanceOf[BrowserApi]
   }
   
-  @scala.inline
-  implicit class BrowserApiMutableBuilder[Self <: BrowserApi] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserApi](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCrash(value: () => js.Promise[Unit]): Self = StObject.set(x, "crash", js.Any.fromFunction0(value))
+    inline def setCrash(value: () => js.Promise[Unit]): Self = StObject.set(x, "crash", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCrashGpuProcess(value: () => js.Promise[Unit]): Self = StObject.set(x, "crashGpuProcess", js.Any.fromFunction0(value))
+    inline def setCrashGpuProcess(value: () => js.Promise[Unit]): Self = StObject.set(x, "crashGpuProcess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBrowserCommandLine(value: () => js.Promise[GetBrowserCommandLineResponse]): Self = StObject.set(x, "getBrowserCommandLine", js.Any.fromFunction0(value))
+    inline def setGetBrowserCommandLine(value: () => js.Promise[GetBrowserCommandLineResponse]): Self = StObject.set(x, "getBrowserCommandLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHistogram(value: GetHistogramRequest => js.Promise[GetHistogramResponse]): Self = StObject.set(x, "getHistogram", js.Any.fromFunction1(value))
+    inline def setGetHistogram(value: GetHistogramRequest => js.Promise[GetHistogramResponse]): Self = StObject.set(x, "getHistogram", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHistograms(value: GetHistogramsRequest => js.Promise[GetHistogramsResponse]): Self = StObject.set(x, "getHistograms", js.Any.fromFunction1(value))
+    inline def setGetHistograms(value: GetHistogramsRequest => js.Promise[GetHistogramsResponse]): Self = StObject.set(x, "getHistograms", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVersion(value: () => js.Promise[GetVersionResponse]): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+    inline def setGetVersion(value: () => js.Promise[GetVersionResponse]): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWindowBounds(value: GetWindowBoundsRequest => js.Promise[GetWindowBoundsResponse]): Self = StObject.set(x, "getWindowBounds", js.Any.fromFunction1(value))
+    inline def setGetWindowBounds(value: GetWindowBoundsRequest => js.Promise[GetWindowBoundsResponse]): Self = StObject.set(x, "getWindowBounds", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWindowForTarget(value: GetWindowForTargetRequest => js.Promise[GetWindowForTargetResponse]): Self = StObject.set(x, "getWindowForTarget", js.Any.fromFunction1(value))
+    inline def setGetWindowForTarget(value: GetWindowForTargetRequest => js.Promise[GetWindowForTargetResponse]): Self = StObject.set(x, "getWindowForTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGrantPermissions(value: GrantPermissionsRequest => js.Promise[Unit]): Self = StObject.set(x, "grantPermissions", js.Any.fromFunction1(value))
+    inline def setGrantPermissions(value: GrantPermissionsRequest => js.Promise[Unit]): Self = StObject.set(x, "grantPermissions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetPermissions(value: ResetPermissionsRequest => js.Promise[Unit]): Self = StObject.set(x, "resetPermissions", js.Any.fromFunction1(value))
+    inline def setResetPermissions(value: ResetPermissionsRequest => js.Promise[Unit]): Self = StObject.set(x, "resetPermissions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDockTile(value: SetDockTileRequest => js.Promise[Unit]): Self = StObject.set(x, "setDockTile", js.Any.fromFunction1(value))
+    inline def setSetDockTile(value: SetDockTileRequest => js.Promise[Unit]): Self = StObject.set(x, "setDockTile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDownloadBehavior(value: SetDownloadBehaviorRequest => js.Promise[Unit]): Self = StObject.set(x, "setDownloadBehavior", js.Any.fromFunction1(value))
+    inline def setSetDownloadBehavior(value: SetDownloadBehaviorRequest => js.Promise[Unit]): Self = StObject.set(x, "setDownloadBehavior", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPermission(value: SetPermissionRequest => js.Promise[Unit]): Self = StObject.set(x, "setPermission", js.Any.fromFunction1(value))
+    inline def setSetPermission(value: SetPermissionRequest => js.Promise[Unit]): Self = StObject.set(x, "setPermission", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWindowBounds(value: SetWindowBoundsRequest => js.Promise[Unit]): Self = StObject.set(x, "setWindowBounds", js.Any.fromFunction1(value))
+    inline def setSetWindowBounds(value: SetWindowBoundsRequest => js.Promise[Unit]): Self = StObject.set(x, "setWindowBounds", js.Any.fromFunction1(value))
   }
 }

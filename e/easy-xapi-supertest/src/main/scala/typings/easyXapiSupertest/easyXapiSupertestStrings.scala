@@ -8,11 +8,9 @@ object easyXapiSupertestStrings {
   
   @js.native
   sealed trait buffer extends StObject
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
 }

@@ -24,37 +24,27 @@ trait DialogNodeAction extends StObject {
 }
 object DialogNodeAction {
   
-  @scala.inline
-  def apply(name: String, result_variable: String): DialogNodeAction = {
+  inline def apply(name: String, result_variable: String): DialogNodeAction = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], result_variable = result_variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeAction]
   }
   
-  @scala.inline
-  implicit class DialogNodeActionMutableBuilder[Self <: DialogNodeAction] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodeAction](x: Self) {
     
-    @scala.inline
-    def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
+    inline def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAction_typeUndefined: Self = StObject.set(x, "action_type", js.undefined)
+    inline def setAction_typeUndefined: Self = StObject.set(x, "action_type", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setResult_variable(value: String): Self = StObject.set(x, "result_variable", value.asInstanceOf[js.Any])
+    inline def setResult_variable(value: String): Self = StObject.set(x, "result_variable", value.asInstanceOf[js.Any])
   }
 }

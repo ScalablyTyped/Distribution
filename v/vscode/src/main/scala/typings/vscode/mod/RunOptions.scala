@@ -13,19 +13,15 @@ trait RunOptions extends StObject {
 }
 object RunOptions {
   
-  @scala.inline
-  def apply(): RunOptions = {
+  inline def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunOptions]
   }
   
-  @scala.inline
-  implicit class RunOptionsMutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RunOptions](x: Self) {
     
-    @scala.inline
-    def setReevaluateOnRerun(value: Boolean): Self = StObject.set(x, "reevaluateOnRerun", value.asInstanceOf[js.Any])
+    inline def setReevaluateOnRerun(value: Boolean): Self = StObject.set(x, "reevaluateOnRerun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReevaluateOnRerunUndefined: Self = StObject.set(x, "reevaluateOnRerun", js.undefined)
+    inline def setReevaluateOnRerunUndefined: Self = StObject.set(x, "reevaluateOnRerun", js.undefined)
   }
 }

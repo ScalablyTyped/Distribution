@@ -21,23 +21,18 @@ object coinsJsonMod extends Shortcut {
   }
   object Coin {
     
-    @scala.inline
-    def apply(id: String, name: String, symbol: String): Coin = {
+    inline def apply(id: String, name: String, symbol: String): Coin = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coin]
     }
     
-    @scala.inline
-    implicit class CoinMutableBuilder[Self <: Coin] (val x: Self) extends AnyVal {
+    extension [Self <: Coin](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }
   }
   

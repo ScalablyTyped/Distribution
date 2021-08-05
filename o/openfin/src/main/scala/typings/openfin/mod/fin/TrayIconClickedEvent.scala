@@ -20,8 +20,7 @@ trait TrayIconClickedEvent
 }
 object TrayIconClickedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     button: Double,
     monitorInfo: MonitorInfo,
     topic: String,
@@ -35,19 +34,14 @@ object TrayIconClickedEvent {
     __obj.asInstanceOf[TrayIconClickedEvent]
   }
   
-  @scala.inline
-  implicit class TrayIconClickedEventMutableBuilder[Self <: TrayIconClickedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TrayIconClickedEvent](x: Self) {
     
-    @scala.inline
-    def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorInfo(value: MonitorInfo): Self = StObject.set(x, "monitorInfo", value.asInstanceOf[js.Any])
+    inline def setMonitorInfo(value: MonitorInfo): Self = StObject.set(x, "monitorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

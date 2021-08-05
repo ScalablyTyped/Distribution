@@ -12,16 +12,13 @@ trait UploadControlFilesUploadStartEventArgs
 }
 object UploadControlFilesUploadStartEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, sender: Control): UploadControlFilesUploadStartEventArgs = {
+  inline def apply(cancel: Boolean, sender: Control): UploadControlFilesUploadStartEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadControlFilesUploadStartEventArgs]
   }
   
-  @scala.inline
-  implicit class UploadControlFilesUploadStartEventArgsMutableBuilder[Self <: UploadControlFilesUploadStartEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UploadControlFilesUploadStartEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

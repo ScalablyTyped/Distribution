@@ -22,55 +22,39 @@ trait LinearGradientProps extends StObject {
 }
 object LinearGradientProps {
   
-  @scala.inline
-  def apply(): LinearGradientProps = {
+  inline def apply(): LinearGradientProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearGradientProps]
   }
   
-  @scala.inline
-  implicit class LinearGradientPropsMutableBuilder[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
+  extension [Self <: LinearGradientProps](x: Self) {
     
-    @scala.inline
-    def setGradientTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    inline def setGradientTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
+    inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
     
-    @scala.inline
-    def setGradientUnits(value: Units): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
+    inline def setGradientUnits(value: Units): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
+    inline def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+    inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
     
-    @scala.inline
-    def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+    inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
-    @scala.inline
-    def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+    inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     
-    @scala.inline
-    def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
   }
 }

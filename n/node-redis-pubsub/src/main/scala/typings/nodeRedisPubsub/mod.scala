@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: js.Object): NodeRedisPubSub = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NodeRedisPubSub]
+  inline def apply(options: js.Object): NodeRedisPubSub = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NodeRedisPubSub]
   
   @JSImport("node-redis-pubsub", JSImport.Namespace)
   @js.native
@@ -44,6 +43,5 @@ object mod {
     ): js.Function0[Unit] = js.native
   }
   
-  @scala.inline
-  def initClient(options: js.Object): NodeRedisPubSub = ^.asInstanceOf[js.Dynamic].applyDynamic("initClient")(options.asInstanceOf[js.Any]).asInstanceOf[NodeRedisPubSub]
+  inline def initClient(options: js.Object): NodeRedisPubSub = ^.asInstanceOf[js.Dynamic].applyDynamic("initClient")(options.asInstanceOf[js.Any]).asInstanceOf[NodeRedisPubSub]
 }

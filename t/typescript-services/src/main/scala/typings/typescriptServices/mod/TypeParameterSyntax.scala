@@ -93,10 +93,8 @@ object TypeParameterSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterSyntax]
+  inline def create(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterSyntax]
+  inline def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.TypeParameterSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeParameterSyntax]
 }

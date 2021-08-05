@@ -23,25 +23,19 @@ trait UpdateThingGroupRequest extends StObject {
 }
 object UpdateThingGroupRequest {
   
-  @scala.inline
-  def apply(thingGroupName: ThingGroupName, thingGroupProperties: ThingGroupProperties): UpdateThingGroupRequest = {
+  inline def apply(thingGroupName: ThingGroupName, thingGroupProperties: ThingGroupProperties): UpdateThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName.asInstanceOf[js.Any], thingGroupProperties = thingGroupProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateThingGroupRequestMutableBuilder[Self <: UpdateThingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateThingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
+    inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
+    inline def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
     
-    @scala.inline
-    def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
+    inline def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupProperties(value: ThingGroupProperties): Self = StObject.set(x, "thingGroupProperties", value.asInstanceOf[js.Any])
+    inline def setThingGroupProperties(value: ThingGroupProperties): Self = StObject.set(x, "thingGroupProperties", value.asInstanceOf[js.Any])
   }
 }

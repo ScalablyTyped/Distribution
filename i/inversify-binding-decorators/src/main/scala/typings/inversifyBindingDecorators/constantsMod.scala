@@ -15,7 +15,6 @@ object constantsMod {
     @JSImport("inversify-binding-decorators/dts/constants", "METADATA_KEY.provide")
     @js.native
     def provide: String = js.native
-    @scala.inline
-    def provide_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("provide")(x.asInstanceOf[js.Any])
+    inline def provide_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("provide")(x.asInstanceOf[js.Any])
   }
 }

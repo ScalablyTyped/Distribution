@@ -66,8 +66,7 @@ object mod {
     }
     object KustoResponseDataSet {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         primaryResults: js.Array[KustoResultTable[T]],
         statusTable: KustoResultTable[T],
         tableNames: js.Array[String],
@@ -77,29 +76,21 @@ object mod {
         __obj.asInstanceOf[KustoResponseDataSet[T]]
       }
       
-      @scala.inline
-      implicit class KustoResponseDataSetMutableBuilder[Self <: KustoResponseDataSet[?], T] (val x: Self & KustoResponseDataSet[T]) extends AnyVal {
+      extension [Self <: KustoResponseDataSet[?], T](x: Self & KustoResponseDataSet[T]) {
         
-        @scala.inline
-        def setPrimaryResults(value: js.Array[KustoResultTable[T]]): Self = StObject.set(x, "primaryResults", value.asInstanceOf[js.Any])
+        inline def setPrimaryResults(value: js.Array[KustoResultTable[T]]): Self = StObject.set(x, "primaryResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimaryResultsVarargs(value: KustoResultTable[T]*): Self = StObject.set(x, "primaryResults", js.Array(value :_*))
+        inline def setPrimaryResultsVarargs(value: KustoResultTable[T]*): Self = StObject.set(x, "primaryResults", js.Array(value :_*))
         
-        @scala.inline
-        def setStatusTable(value: KustoResultTable[T]): Self = StObject.set(x, "statusTable", value.asInstanceOf[js.Any])
+        inline def setStatusTable(value: KustoResultTable[T]): Self = StObject.set(x, "statusTable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
+        inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value :_*))
+        inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value :_*))
         
-        @scala.inline
-        def setTables(value: js.Array[KustoResultTable[T]]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+        inline def setTables(value: js.Array[KustoResultTable[T]]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTablesVarargs(value: KustoResultTable[T]*): Self = StObject.set(x, "tables", js.Array(value :_*))
+        inline def setTablesVarargs(value: KustoResultTable[T]*): Self = StObject.set(x, "tables", js.Array(value :_*))
       }
     }
     
@@ -117,8 +108,7 @@ object mod {
     }
     object KustoResponseDataSetV2 {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         getCridColumn: () => String,
         getErrorColumn: () => String,
         getStatusColumn: () => String,
@@ -132,20 +122,15 @@ object mod {
         __obj.asInstanceOf[KustoResponseDataSetV2[T]]
       }
       
-      @scala.inline
-      implicit class KustoResponseDataSetV2MutableBuilder[Self <: KustoResponseDataSetV2[?], T] (val x: Self & KustoResponseDataSetV2[T]) extends AnyVal {
+      extension [Self <: KustoResponseDataSetV2[?], T](x: Self & KustoResponseDataSetV2[T]) {
         
-        @scala.inline
-        def setGetCridColumn(value: () => String): Self = StObject.set(x, "getCridColumn", js.Any.fromFunction0(value))
+        inline def setGetCridColumn(value: () => String): Self = StObject.set(x, "getCridColumn", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetErrorColumn(value: () => String): Self = StObject.set(x, "getErrorColumn", js.Any.fromFunction0(value))
+        inline def setGetErrorColumn(value: () => String): Self = StObject.set(x, "getErrorColumn", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetStatusColumn(value: () => String): Self = StObject.set(x, "getStatusColumn", js.Any.fromFunction0(value))
+        inline def setGetStatusColumn(value: () => String): Self = StObject.set(x, "getStatusColumn", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -169,8 +154,7 @@ object mod {
     }
     object KustoResultTable {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         columns: js.Array[js.Any],
         id: String,
         kind: String,
@@ -182,29 +166,21 @@ object mod {
         __obj.asInstanceOf[KustoResultTable[T]]
       }
       
-      @scala.inline
-      implicit class KustoResultTableMutableBuilder[Self <: KustoResultTable[?], T] (val x: Self & KustoResultTable[T]) extends AnyVal {
+      extension [Self <: KustoResultTable[?], T](x: Self & KustoResultTable[T]) {
         
-        @scala.inline
-        def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+        inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRows(value: () => IterableIterator[KustoResultRow[T]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
+        inline def setRows(value: () => IterableIterator[KustoResultRow[T]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToJson(value: () => js.Any): Self = StObject.set(x, "toJson", js.Any.fromFunction0(value))
+        inline def setToJson(value: () => js.Any): Self = StObject.set(x, "toJson", js.Any.fromFunction0(value))
       }
     }
   }
@@ -263,8 +239,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def withAadApplicationCertificateAuthentication(
+    inline def withAadApplicationCertificateAuthentication(
       connectionString: String,
       aadAppId: String,
       certificate: String,
@@ -272,30 +247,21 @@ object mod {
       authorityId: String
     ): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], thumbprint.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @scala.inline
-    def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationKeyAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationKeyAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @scala.inline
-    def withAadDeviceAuthentication(connectionString: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
-    @scala.inline
-    def withAadDeviceAuthentication(
+    inline def withAadDeviceAuthentication(connectionString: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadDeviceAuthentication(
       connectionString: String,
       authorityId: String,
       authCallback: js.Function1[/* tokenReponse */ UserCodeInfo, Unit]
     ): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], authCallback.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @scala.inline
-    def withAadManagedIdentities(connectionString: String): KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any]).asInstanceOf[KustoConnectionStringBuilder]
-    @scala.inline
-    def withAadManagedIdentities(connectionString: String, msiEndpoint: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
-    @scala.inline
-    def withAadManagedIdentities(connectionString: String, msiEndpoint: String, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
-    @scala.inline
-    def withAadManagedIdentities(connectionString: String, msiEndpoint: Unit, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadManagedIdentities(connectionString: String): KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any]).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadManagedIdentities(connectionString: String, msiEndpoint: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadManagedIdentities(connectionString: String, msiEndpoint: String, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadManagedIdentities(connectionString: String, msiEndpoint: Unit, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @scala.inline
-    def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
-    @scala.inline
-    def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String, authorityId: js.Any): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String, authorityId: js.Any): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
   }
 }

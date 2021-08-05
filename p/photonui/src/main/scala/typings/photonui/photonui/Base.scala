@@ -14,8 +14,7 @@ trait Base extends StObject {
 }
 object Base {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     registerCallback: (String, String, js.Function, js.Any) => Unit,
     removeCallback: String => Unit
@@ -24,16 +23,12 @@ object Base {
     __obj.asInstanceOf[Base]
   }
   
-  @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+  extension [Self <: Base](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterCallback(value: (String, String, js.Function, js.Any) => Unit): Self = StObject.set(x, "registerCallback", js.Any.fromFunction4(value))
+    inline def setRegisterCallback(value: (String, String, js.Function, js.Any) => Unit): Self = StObject.set(x, "registerCallback", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRemoveCallback(value: String => Unit): Self = StObject.set(x, "removeCallback", js.Any.fromFunction1(value))
+    inline def setRemoveCallback(value: String => Unit): Self = StObject.set(x, "removeCallback", js.Any.fromFunction1(value))
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AndroidWorkProfileCrossProfileDataSharingType extends StObject
 object AndroidWorkProfileCrossProfileDataSharingType {
   
-  @scala.inline
-  def allowPersonalToWork: typings.microsoftGraph.microsoftGraphStrings.allowPersonalToWork = "allowPersonalToWork".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowPersonalToWork]
+  inline def allowPersonalToWork: typings.microsoftGraph.microsoftGraphStrings.allowPersonalToWork = "allowPersonalToWork".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowPersonalToWork]
   
-  @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   
-  @scala.inline
-  def noRestrictions: typings.microsoftGraph.microsoftGraphStrings.noRestrictions = "noRestrictions".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noRestrictions]
+  inline def noRestrictions: typings.microsoftGraph.microsoftGraphStrings.noRestrictions = "noRestrictions".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noRestrictions]
   
-  @scala.inline
-  def preventAny: typings.microsoftGraph.microsoftGraphStrings.preventAny = "preventAny".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preventAny]
+  inline def preventAny: typings.microsoftGraph.microsoftGraphStrings.preventAny = "preventAny".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preventAny]
 }

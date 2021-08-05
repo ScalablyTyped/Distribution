@@ -31,32 +31,24 @@ object typesListGlobalTablesOutputMod {
   }
   object ListGlobalTablesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListGlobalTablesOutput = {
+    inline def apply($metadata: ResponseMetadata): ListGlobalTablesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListGlobalTablesOutput]
     }
     
-    @scala.inline
-    implicit class ListGlobalTablesOutputMutableBuilder[Self <: ListGlobalTablesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListGlobalTablesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTables(value: js.Array[UnmarshalledGlobalTable]): Self = StObject.set(x, "GlobalTables", value.asInstanceOf[js.Any])
+      inline def setGlobalTables(value: js.Array[UnmarshalledGlobalTable]): Self = StObject.set(x, "GlobalTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTablesUndefined: Self = StObject.set(x, "GlobalTables", js.undefined)
+      inline def setGlobalTablesUndefined: Self = StObject.set(x, "GlobalTables", js.undefined)
       
-      @scala.inline
-      def setGlobalTablesVarargs(value: UnmarshalledGlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value :_*))
+      inline def setGlobalTablesVarargs(value: UnmarshalledGlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value :_*))
       
-      @scala.inline
-      def setLastEvaluatedGlobalTableName(value: String): Self = StObject.set(x, "LastEvaluatedGlobalTableName", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedGlobalTableName(value: String): Self = StObject.set(x, "LastEvaluatedGlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedGlobalTableNameUndefined: Self = StObject.set(x, "LastEvaluatedGlobalTableName", js.undefined)
+      inline def setLastEvaluatedGlobalTableNameUndefined: Self = StObject.set(x, "LastEvaluatedGlobalTableName", js.undefined)
     }
   }
 }

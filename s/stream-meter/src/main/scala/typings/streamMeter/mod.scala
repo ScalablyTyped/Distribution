@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): StreamMeter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StreamMeter]
-  @scala.inline
-  def apply(maxBytes: Double): StreamMeter = ^.asInstanceOf[js.Dynamic].apply(maxBytes.asInstanceOf[js.Any]).asInstanceOf[StreamMeter]
+  inline def apply(): StreamMeter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StreamMeter]
+  inline def apply(maxBytes: Double): StreamMeter = ^.asInstanceOf[js.Dynamic].apply(maxBytes.asInstanceOf[js.Any]).asInstanceOf[StreamMeter]
   
   @JSImport("stream-meter", JSImport.Namespace)
   @js.native

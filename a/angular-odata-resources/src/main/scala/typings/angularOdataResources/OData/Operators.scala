@@ -11,31 +11,25 @@ trait Operators extends StObject {
   
   var operators: Add
   
-  var rtrim: js.Any
+  /* private */ var rtrim: js.Any
   
   /* private */ def trim(value: js.Any): js.Any
 }
 object Operators {
   
-  @scala.inline
-  def apply(convert: String => js.Any, operators: Add, rtrim: js.Any, trim: js.Any => js.Any): Operators = {
+  inline def apply(convert: String => js.Any, operators: Add, rtrim: js.Any, trim: js.Any => js.Any): Operators = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert), operators = operators.asInstanceOf[js.Any], rtrim = rtrim.asInstanceOf[js.Any], trim = js.Any.fromFunction1(trim))
     __obj.asInstanceOf[Operators]
   }
   
-  @scala.inline
-  implicit class OperatorsMutableBuilder[Self <: Operators] (val x: Self) extends AnyVal {
+  extension [Self <: Operators](x: Self) {
     
-    @scala.inline
-    def setConvert(value: String => js.Any): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
+    inline def setConvert(value: String => js.Any): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOperators(value: Add): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    inline def setOperators(value: Add): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtrim(value: js.Any): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
+    inline def setRtrim(value: js.Any): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrim(value: js.Any => js.Any): Self = StObject.set(x, "trim", js.Any.fromFunction1(value))
+    inline def setTrim(value: js.Any => js.Any): Self = StObject.set(x, "trim", js.Any.fromFunction1(value))
   }
 }

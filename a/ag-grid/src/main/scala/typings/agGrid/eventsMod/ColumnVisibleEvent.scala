@@ -15,8 +15,7 @@ trait ColumnVisibleEvent
 }
 object ColumnVisibleEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     column: Column,
     columnApi: ColumnApi,
@@ -30,10 +29,8 @@ object ColumnVisibleEvent {
     __obj.asInstanceOf[ColumnVisibleEvent]
   }
   
-  @scala.inline
-  implicit class ColumnVisibleEventMutableBuilder[Self <: ColumnVisibleEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnVisibleEvent](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

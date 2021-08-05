@@ -13,31 +13,23 @@ trait `10` extends StObject {
 }
 object `10` {
   
-  @scala.inline
-  def apply(): `10` = {
+  inline def apply(): `10` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`10`]
   }
   
-  @scala.inline
-  implicit class `10MutableBuilder`[Self <: `10`] (val x: Self) extends AnyVal {
+  extension [Self <: `10`](x: Self) {
     
-    @scala.inline
-    def setNewVal(value: js.Array[DownloadPreloadOption]): Self = StObject.set(x, "newVal", value.asInstanceOf[js.Any])
+    inline def setNewVal(value: js.Array[DownloadPreloadOption]): Self = StObject.set(x, "newVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValUndefined: Self = StObject.set(x, "newVal", js.undefined)
+    inline def setNewValUndefined: Self = StObject.set(x, "newVal", js.undefined)
     
-    @scala.inline
-    def setNewValVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "newVal", js.Array(value :_*))
+    inline def setNewValVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "newVal", js.Array(value :_*))
     
-    @scala.inline
-    def setOldVal(value: js.Array[DownloadPreloadOption]): Self = StObject.set(x, "oldVal", value.asInstanceOf[js.Any])
+    inline def setOldVal(value: js.Array[DownloadPreloadOption]): Self = StObject.set(x, "oldVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValUndefined: Self = StObject.set(x, "oldVal", js.undefined)
+    inline def setOldValUndefined: Self = StObject.set(x, "oldVal", js.undefined)
     
-    @scala.inline
-    def setOldValVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "oldVal", js.Array(value :_*))
+    inline def setOldValVarargs(value: DownloadPreloadOption*): Self = StObject.set(x, "oldVal", js.Array(value :_*))
   }
 }

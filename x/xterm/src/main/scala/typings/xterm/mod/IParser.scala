@@ -78,8 +78,7 @@ trait IParser extends StObject {
 }
 object IParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     registerCsiHandler: (IFunctionIdentifier, js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable,
     registerDcsHandler: (IFunctionIdentifier, js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable,
     registerEscHandler: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable,
@@ -89,23 +88,18 @@ object IParser {
     __obj.asInstanceOf[IParser]
   }
   
-  @scala.inline
-  implicit class IParserMutableBuilder[Self <: IParser] (val x: Self) extends AnyVal {
+  extension [Self <: IParser](x: Self) {
     
-    @scala.inline
-    def setRegisterCsiHandler(
+    inline def setRegisterCsiHandler(
       value: (IFunctionIdentifier, js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable
     ): Self = StObject.set(x, "registerCsiHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterDcsHandler(
+    inline def setRegisterDcsHandler(
       value: (IFunctionIdentifier, js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable
     ): Self = StObject.set(x, "registerDcsHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterEscHandler(value: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable): Self = StObject.set(x, "registerEscHandler", js.Any.fromFunction2(value))
+    inline def setRegisterEscHandler(value: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable): Self = StObject.set(x, "registerEscHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterOscHandler(value: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable): Self = StObject.set(x, "registerOscHandler", js.Any.fromFunction2(value))
+    inline def setRegisterOscHandler(value: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable): Self = StObject.set(x, "registerOscHandler", js.Any.fromFunction2(value))
   }
 }

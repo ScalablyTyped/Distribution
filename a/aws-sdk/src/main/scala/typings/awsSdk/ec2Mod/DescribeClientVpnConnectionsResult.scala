@@ -18,28 +18,21 @@ trait DescribeClientVpnConnectionsResult extends StObject {
 }
 object DescribeClientVpnConnectionsResult {
   
-  @scala.inline
-  def apply(): DescribeClientVpnConnectionsResult = {
+  inline def apply(): DescribeClientVpnConnectionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClientVpnConnectionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeClientVpnConnectionsResultMutableBuilder[Self <: DescribeClientVpnConnectionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClientVpnConnectionsResult](x: Self) {
     
-    @scala.inline
-    def setConnections(value: ClientVpnConnectionSet): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: ClientVpnConnectionSet): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: ClientVpnConnection*): Self = StObject.set(x, "Connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: ClientVpnConnection*): Self = StObject.set(x, "Connections", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

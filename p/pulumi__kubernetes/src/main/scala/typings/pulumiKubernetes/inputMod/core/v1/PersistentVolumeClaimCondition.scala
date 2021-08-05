@@ -36,44 +36,32 @@ trait PersistentVolumeClaimCondition extends StObject {
 }
 object PersistentVolumeClaimCondition {
   
-  @scala.inline
-  def apply(status: Input[String], `type`: Input[String]): PersistentVolumeClaimCondition = {
+  inline def apply(status: Input[String], `type`: Input[String]): PersistentVolumeClaimCondition = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentVolumeClaimCondition]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimConditionMutableBuilder[Self <: PersistentVolumeClaimCondition] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimCondition](x: Self) {
     
-    @scala.inline
-    def setLastProbeTime(value: Input[String]): Self = StObject.set(x, "lastProbeTime", value.asInstanceOf[js.Any])
+    inline def setLastProbeTime(value: Input[String]): Self = StObject.set(x, "lastProbeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastProbeTimeUndefined: Self = StObject.set(x, "lastProbeTime", js.undefined)
+    inline def setLastProbeTimeUndefined: Self = StObject.set(x, "lastProbeTime", js.undefined)
     
-    @scala.inline
-    def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+    inline def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
+    inline def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

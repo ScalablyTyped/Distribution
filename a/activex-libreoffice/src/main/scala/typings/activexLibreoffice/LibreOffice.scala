@@ -1873,8 +1873,7 @@ object LibreOffice {
        with StructNameMap
   object InstantiableNameMap {
     
-    @scala.inline
-    def apply(ServicesNameMap: ServicesNameMap, StructNameMap: StructNameMap): InstantiableNameMap = {
+    inline def apply(ServicesNameMap: ServicesNameMap, StructNameMap: StructNameMap): InstantiableNameMap = {
       val __obj = js.Dynamic.literal()
       js.Dynamic.global.Object.assign(__obj, ServicesNameMap)
       js.Dynamic.global.Object.assign(__obj, StructNameMap)
@@ -5980,8 +5979,7 @@ object LibreOffice {
   }
   object ServicesNameMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       comDotsunDotstarDotaccessibilityDotAccessible: Accessible,
       comDotsunDotstarDotaccessibilityDotAccessibleContext: AccessibleContext,
       comDotsunDotstarDotaccessibilityDotMSAAService: MSAAService,
@@ -6495,4100 +6493,2735 @@ object LibreOffice {
       __obj.asInstanceOf[ServicesNameMap]
     }
     
-    @scala.inline
-    implicit class ServicesNameMapMutableBuilder[Self <: ServicesNameMap] (val x: Self) extends AnyVal {
+    extension [Self <: ServicesNameMap](x: Self) {
       
-      @scala.inline
-      def setComDotsunDotstarDotaccessibilityDotAccessible(value: Accessible): Self = StObject.set(x, "com.sun.star.accessibility.Accessible", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotaccessibilityDotAccessible(value: Accessible): Self = StObject.set(x, "com.sun.star.accessibility.Accessible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotaccessibilityDotAccessibleContext(value: AccessibleContext): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleContext", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotaccessibilityDotAccessibleContext(value: AccessibleContext): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotaccessibilityDotMSAAService(value: MSAAService): Self = StObject.set(x, "com.sun.star.accessibility.MSAAService", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotaccessibilityDotMSAAService(value: MSAAService): Self = StObject.set(x, "com.sun.star.accessibility.MSAAService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotAnimateColor(value: AnimateColor): Self = StObject.set(x, "com.sun.star.animations.AnimateColor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotAnimateColor(value: AnimateColor): Self = StObject.set(x, "com.sun.star.animations.AnimateColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotAnimateMotion(value: AnimateMotion): Self = StObject.set(x, "com.sun.star.animations.AnimateMotion", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotAnimateMotion(value: AnimateMotion): Self = StObject.set(x, "com.sun.star.animations.AnimateMotion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotAnimateSet(value: AnimateSet): Self = StObject.set(x, "com.sun.star.animations.AnimateSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotAnimateSet(value: AnimateSet): Self = StObject.set(x, "com.sun.star.animations.AnimateSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotAudio(value: Audio): Self = StObject.set(x, "com.sun.star.animations.Audio", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotAudio(value: Audio): Self = StObject.set(x, "com.sun.star.animations.Audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotCommand(value: Command): Self = StObject.set(x, "com.sun.star.animations.Command", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotCommand(value: Command): Self = StObject.set(x, "com.sun.star.animations.Command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotIterateContainer(value: IterateContainer): Self = StObject.set(x, "com.sun.star.animations.IterateContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotIterateContainer(value: IterateContainer): Self = StObject.set(x, "com.sun.star.animations.IterateContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotParallelTimeContainer(value: ParallelTimeContainer): Self = StObject.set(x, "com.sun.star.animations.ParallelTimeContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotParallelTimeContainer(value: ParallelTimeContainer): Self = StObject.set(x, "com.sun.star.animations.ParallelTimeContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotSequenceTimeContainer(value: SequenceTimeContainer): Self = StObject.set(x, "com.sun.star.animations.SequenceTimeContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotSequenceTimeContainer(value: SequenceTimeContainer): Self = StObject.set(x, "com.sun.star.animations.SequenceTimeContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotauthDotSSOManagerFactory(value: SSOManagerFactory): Self = StObject.set(x, "com.sun.star.auth.SSOManagerFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotauthDotSSOManagerFactory(value: SSOManagerFactory): Self = StObject.set(x, "com.sun.star.auth.SSOManagerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotauthDotSSOPasswordCache(value: SSOPasswordCache): Self = StObject.set(x, "com.sun.star.auth.SSOPasswordCache", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotauthDotSSOPasswordCache(value: SSOPasswordCache): Self = StObject.set(x, "com.sun.star.auth.SSOPasswordCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleButton(value: AccessibleButton): Self = StObject.set(x, "com.sun.star.awt.AccessibleButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleButton(value: AccessibleButton): Self = StObject.set(x, "com.sun.star.awt.AccessibleButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleCheckBox(value: AccessibleCheckBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleCheckBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleCheckBox(value: AccessibleCheckBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleCheckBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleComboBox(value: AccessibleComboBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleComboBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleComboBox(value: AccessibleComboBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleComboBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleDropDownComboBox(value: AccessibleDropDownComboBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleDropDownComboBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleDropDownComboBox(value: AccessibleDropDownComboBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleDropDownComboBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleDropDownListBox(value: AccessibleDropDownListBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleDropDownListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleDropDownListBox(value: AccessibleDropDownListBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleDropDownListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleEdit(value: AccessibleEdit): Self = StObject.set(x, "com.sun.star.awt.AccessibleEdit", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleEdit(value: AccessibleEdit): Self = StObject.set(x, "com.sun.star.awt.AccessibleEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleFixedText(value: AccessibleFixedText): Self = StObject.set(x, "com.sun.star.awt.AccessibleFixedText", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleFixedText(value: AccessibleFixedText): Self = StObject.set(x, "com.sun.star.awt.AccessibleFixedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleIconChoiceControl(value: AccessibleIconChoiceControl): Self = StObject.set(x, "com.sun.star.awt.AccessibleIconChoiceControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleIconChoiceControl(value: AccessibleIconChoiceControl): Self = StObject.set(x, "com.sun.star.awt.AccessibleIconChoiceControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleIconChoiceControlEntry(value: AccessibleIconChoiceControlEntry): Self = StObject.set(x, "com.sun.star.awt.AccessibleIconChoiceControlEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleIconChoiceControlEntry(value: AccessibleIconChoiceControlEntry): Self = StObject.set(x, "com.sun.star.awt.AccessibleIconChoiceControlEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleList(value: AccessibleList): Self = StObject.set(x, "com.sun.star.awt.AccessibleList", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleList(value: AccessibleList): Self = StObject.set(x, "com.sun.star.awt.AccessibleList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleListBox(value: AccessibleListBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleListBox(value: AccessibleListBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleListBoxList(value: AccessibleListBoxList): Self = StObject.set(x, "com.sun.star.awt.AccessibleListBoxList", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleListBoxList(value: AccessibleListBoxList): Self = StObject.set(x, "com.sun.star.awt.AccessibleListBoxList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleListItem(value: AccessibleListItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleListItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleListItem(value: AccessibleListItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleListItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleMenu(value: AccessibleMenu): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenu", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleMenu(value: AccessibleMenu): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleMenuBar(value: AccessibleMenuBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenuBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleMenuBar(value: AccessibleMenuBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenuBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleMenuItem(value: AccessibleMenuItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenuItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleMenuItem(value: AccessibleMenuItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleMenuSeparator(value: AccessibleMenuSeparator): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenuSeparator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleMenuSeparator(value: AccessibleMenuSeparator): Self = StObject.set(x, "com.sun.star.awt.AccessibleMenuSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessiblePopupMenu(value: AccessiblePopupMenu): Self = StObject.set(x, "com.sun.star.awt.AccessiblePopupMenu", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessiblePopupMenu(value: AccessiblePopupMenu): Self = StObject.set(x, "com.sun.star.awt.AccessiblePopupMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleRadioButton(value: AccessibleRadioButton): Self = StObject.set(x, "com.sun.star.awt.AccessibleRadioButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleRadioButton(value: AccessibleRadioButton): Self = StObject.set(x, "com.sun.star.awt.AccessibleRadioButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleScrollBar(value: AccessibleScrollBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleScrollBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleScrollBar(value: AccessibleScrollBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleScrollBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleStatusBar(value: AccessibleStatusBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleStatusBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleStatusBar(value: AccessibleStatusBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleStatusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleStatusBarItem(value: AccessibleStatusBarItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleStatusBarItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleStatusBarItem(value: AccessibleStatusBarItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleStatusBarItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTabBar(value: AccessibleTabBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTabBar(value: AccessibleTabBar): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTabBarPage(value: AccessibleTabBarPage): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabBarPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTabBarPage(value: AccessibleTabBarPage): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabBarPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTabBarPageList(value: AccessibleTabBarPageList): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabBarPageList", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTabBarPageList(value: AccessibleTabBarPageList): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabBarPageList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTabControl(value: AccessibleTabControl): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTabControl(value: AccessibleTabControl): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTabPage(value: AccessibleTabPage): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTabPage(value: AccessibleTabPage): Self = StObject.set(x, "com.sun.star.awt.AccessibleTabPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTextField(value: AccessibleTextField): Self = StObject.set(x, "com.sun.star.awt.AccessibleTextField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTextField(value: AccessibleTextField): Self = StObject.set(x, "com.sun.star.awt.AccessibleTextField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleToolBox(value: AccessibleToolBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleToolBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleToolBox(value: AccessibleToolBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleToolBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleToolBoxItem(value: AccessibleToolBoxItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleToolBoxItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleToolBoxItem(value: AccessibleToolBoxItem): Self = StObject.set(x, "com.sun.star.awt.AccessibleToolBoxItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTreeListBox(value: AccessibleTreeListBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleTreeListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTreeListBox(value: AccessibleTreeListBox): Self = StObject.set(x, "com.sun.star.awt.AccessibleTreeListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleTreeListBoxEntry(value: AccessibleTreeListBoxEntry): Self = StObject.set(x, "com.sun.star.awt.AccessibleTreeListBoxEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleTreeListBoxEntry(value: AccessibleTreeListBoxEntry): Self = StObject.set(x, "com.sun.star.awt.AccessibleTreeListBoxEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAccessibleWindow(value: AccessibleWindow): Self = StObject.set(x, "com.sun.star.awt.AccessibleWindow", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAccessibleWindow(value: AccessibleWindow): Self = StObject.set(x, "com.sun.star.awt.AccessibleWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAnimatedImagesControl(value: AnimatedImagesControl): Self = StObject.set(x, "com.sun.star.awt.AnimatedImagesControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAnimatedImagesControl(value: AnimatedImagesControl): Self = StObject.set(x, "com.sun.star.awt.AnimatedImagesControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAnimatedImagesControlModel(value: AnimatedImagesControlModel): Self = StObject.set(x, "com.sun.star.awt.AnimatedImagesControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAnimatedImagesControlModel(value: AnimatedImagesControlModel): Self = StObject.set(x, "com.sun.star.awt.AnimatedImagesControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAsyncCallback(value: AsyncCallback): Self = StObject.set(x, "com.sun.star.awt.AsyncCallback", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAsyncCallback(value: AsyncCallback): Self = StObject.set(x, "com.sun.star.awt.AsyncCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotContainerWindowProvider(value: ContainerWindowProvider): Self = StObject.set(x, "com.sun.star.awt.ContainerWindowProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotContainerWindowProvider(value: ContainerWindowProvider): Self = StObject.set(x, "com.sun.star.awt.ContainerWindowProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotDialogProvider(value: DialogProvider): Self = StObject.set(x, "com.sun.star.awt.DialogProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotDialogProvider(value: DialogProvider): Self = StObject.set(x, "com.sun.star.awt.DialogProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotDialogProvider2(value: DialogProvider2): Self = StObject.set(x, "com.sun.star.awt.DialogProvider2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotDialogProvider2(value: DialogProvider2): Self = StObject.set(x, "com.sun.star.awt.DialogProvider2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotMenuBar(value: MenuBar): Self = StObject.set(x, "com.sun.star.awt.MenuBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotMenuBar(value: MenuBar): Self = StObject.set(x, "com.sun.star.awt.MenuBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotPointer(value: Pointer): Self = StObject.set(x, "com.sun.star.awt.Pointer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotPointer(value: Pointer): Self = StObject.set(x, "com.sun.star.awt.Pointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotPopupMenu(value: PopupMenu): Self = StObject.set(x, "com.sun.star.awt.PopupMenu", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotPopupMenu(value: PopupMenu): Self = StObject.set(x, "com.sun.star.awt.PopupMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotPrinterServer(value: PrinterServer): Self = StObject.set(x, "com.sun.star.awt.PrinterServer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotPrinterServer(value: PrinterServer): Self = StObject.set(x, "com.sun.star.awt.PrinterServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotRoadmapItem(value: RoadmapItem): Self = StObject.set(x, "com.sun.star.awt.RoadmapItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotRoadmapItem(value: RoadmapItem): Self = StObject.set(x, "com.sun.star.awt.RoadmapItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotSpinningProgressControlModel(value: SpinningProgressControlModel): Self = StObject.set(x, "com.sun.star.awt.SpinningProgressControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotSpinningProgressControlModel(value: SpinningProgressControlModel): Self = StObject.set(x, "com.sun.star.awt.SpinningProgressControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotTabController(value: TabController): Self = StObject.set(x, "com.sun.star.awt.TabController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotTabController(value: TabController): Self = StObject.set(x, "com.sun.star.awt.TabController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotTabControllerModel(value: TabControllerModel): Self = StObject.set(x, "com.sun.star.awt.TabControllerModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotTabControllerModel(value: TabControllerModel): Self = StObject.set(x, "com.sun.star.awt.TabControllerModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotToolkit(value: Toolkit): Self = StObject.set(x, "com.sun.star.awt.Toolkit", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotToolkit(value: Toolkit): Self = StObject.set(x, "com.sun.star.awt.Toolkit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControl(value: UnoControl): Self = StObject.set(x, "com.sun.star.awt.UnoControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControl(value: UnoControl): Self = StObject.set(x, "com.sun.star.awt.UnoControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlButton(value: UnoControlButton): Self = StObject.set(x, "com.sun.star.awt.UnoControlButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlButton(value: UnoControlButton): Self = StObject.set(x, "com.sun.star.awt.UnoControlButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlButtonModel(value: UnoControlButtonModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlButtonModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlButtonModel(value: UnoControlButtonModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlButtonModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlCheckBox(value: UnoControlCheckBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlCheckBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlCheckBox(value: UnoControlCheckBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlCheckBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlCheckBoxModel(value: UnoControlCheckBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlCheckBoxModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlCheckBoxModel(value: UnoControlCheckBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlCheckBoxModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlComboBox(value: UnoControlComboBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlComboBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlComboBox(value: UnoControlComboBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlComboBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlComboBoxModel(value: UnoControlComboBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlComboBoxModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlComboBoxModel(value: UnoControlComboBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlComboBoxModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlContainer(value: UnoControlContainer): Self = StObject.set(x, "com.sun.star.awt.UnoControlContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlContainer(value: UnoControlContainer): Self = StObject.set(x, "com.sun.star.awt.UnoControlContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlContainerModel(value: UnoControlContainerModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlContainerModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlContainerModel(value: UnoControlContainerModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlContainerModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlCurrencyField(value: UnoControlCurrencyField): Self = StObject.set(x, "com.sun.star.awt.UnoControlCurrencyField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlCurrencyField(value: UnoControlCurrencyField): Self = StObject.set(x, "com.sun.star.awt.UnoControlCurrencyField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlCurrencyFieldModel(value: UnoControlCurrencyFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlCurrencyFieldModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlCurrencyFieldModel(value: UnoControlCurrencyFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlCurrencyFieldModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlDateField(value: UnoControlDateField): Self = StObject.set(x, "com.sun.star.awt.UnoControlDateField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlDateField(value: UnoControlDateField): Self = StObject.set(x, "com.sun.star.awt.UnoControlDateField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlDateFieldModel(value: UnoControlDateFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlDateFieldModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlDateFieldModel(value: UnoControlDateFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlDateFieldModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlDialog(value: UnoControlDialog): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlDialog(value: UnoControlDialog): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlDialogElement(value: UnoControlDialogElement): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialogElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlDialogElement(value: UnoControlDialogElement): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialogElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlDialogModel(value: UnoControlDialogModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialogModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlDialogModel(value: UnoControlDialogModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialogModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlDialogModelProvider(value: UnoControlDialogModelProvider): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialogModelProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlDialogModelProvider(value: UnoControlDialogModelProvider): Self = StObject.set(x, "com.sun.star.awt.UnoControlDialogModelProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlEdit(value: UnoControlEdit): Self = StObject.set(x, "com.sun.star.awt.UnoControlEdit", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlEdit(value: UnoControlEdit): Self = StObject.set(x, "com.sun.star.awt.UnoControlEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlEditModel(value: UnoControlEditModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlEditModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlEditModel(value: UnoControlEditModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlEditModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFileControl(value: UnoControlFileControl): Self = StObject.set(x, "com.sun.star.awt.UnoControlFileControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFileControl(value: UnoControlFileControl): Self = StObject.set(x, "com.sun.star.awt.UnoControlFileControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFileControlModel(value: UnoControlFileControlModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFileControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFileControlModel(value: UnoControlFileControlModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFileControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFixedHyperlink(value: UnoControlFixedHyperlink): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedHyperlink", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFixedHyperlink(value: UnoControlFixedHyperlink): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedHyperlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFixedHyperlinkModel(value: UnoControlFixedHyperlinkModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedHyperlinkModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFixedHyperlinkModel(value: UnoControlFixedHyperlinkModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedHyperlinkModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFixedLine(value: UnoControlFixedLine): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedLine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFixedLine(value: UnoControlFixedLine): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFixedLineModel(value: UnoControlFixedLineModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedLineModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFixedLineModel(value: UnoControlFixedLineModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedLineModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFixedText(value: UnoControlFixedText): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedText", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFixedText(value: UnoControlFixedText): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFixedTextModel(value: UnoControlFixedTextModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedTextModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFixedTextModel(value: UnoControlFixedTextModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFixedTextModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFormattedField(value: UnoControlFormattedField): Self = StObject.set(x, "com.sun.star.awt.UnoControlFormattedField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFormattedField(value: UnoControlFormattedField): Self = StObject.set(x, "com.sun.star.awt.UnoControlFormattedField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlFormattedFieldModel(value: UnoControlFormattedFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFormattedFieldModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlFormattedFieldModel(value: UnoControlFormattedFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlFormattedFieldModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlGroupBox(value: UnoControlGroupBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlGroupBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlGroupBox(value: UnoControlGroupBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlGroupBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlGroupBoxModel(value: UnoControlGroupBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlGroupBoxModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlGroupBoxModel(value: UnoControlGroupBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlGroupBoxModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlImageControl(value: UnoControlImageControl): Self = StObject.set(x, "com.sun.star.awt.UnoControlImageControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlImageControl(value: UnoControlImageControl): Self = StObject.set(x, "com.sun.star.awt.UnoControlImageControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlImageControlModel(value: UnoControlImageControlModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlImageControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlImageControlModel(value: UnoControlImageControlModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlImageControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlListBox(value: UnoControlListBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlListBox(value: UnoControlListBox): Self = StObject.set(x, "com.sun.star.awt.UnoControlListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlListBoxModel(value: UnoControlListBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlListBoxModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlListBoxModel(value: UnoControlListBoxModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlListBoxModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlModel(value: UnoControlModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlModel(value: UnoControlModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlNumericField(value: UnoControlNumericField): Self = StObject.set(x, "com.sun.star.awt.UnoControlNumericField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlNumericField(value: UnoControlNumericField): Self = StObject.set(x, "com.sun.star.awt.UnoControlNumericField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlNumericFieldModel(value: UnoControlNumericFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlNumericFieldModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlNumericFieldModel(value: UnoControlNumericFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlNumericFieldModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlPatternField(value: UnoControlPatternField): Self = StObject.set(x, "com.sun.star.awt.UnoControlPatternField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlPatternField(value: UnoControlPatternField): Self = StObject.set(x, "com.sun.star.awt.UnoControlPatternField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlPatternFieldModel(value: UnoControlPatternFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlPatternFieldModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlPatternFieldModel(value: UnoControlPatternFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlPatternFieldModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlProgressBar(value: UnoControlProgressBar): Self = StObject.set(x, "com.sun.star.awt.UnoControlProgressBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlProgressBar(value: UnoControlProgressBar): Self = StObject.set(x, "com.sun.star.awt.UnoControlProgressBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlProgressBarModel(value: UnoControlProgressBarModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlProgressBarModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlProgressBarModel(value: UnoControlProgressBarModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlProgressBarModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlRadioButton(value: UnoControlRadioButton): Self = StObject.set(x, "com.sun.star.awt.UnoControlRadioButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlRadioButton(value: UnoControlRadioButton): Self = StObject.set(x, "com.sun.star.awt.UnoControlRadioButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlRadioButtonModel(value: UnoControlRadioButtonModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlRadioButtonModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlRadioButtonModel(value: UnoControlRadioButtonModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlRadioButtonModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlRoadmap(value: UnoControlRoadmap): Self = StObject.set(x, "com.sun.star.awt.UnoControlRoadmap", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlRoadmap(value: UnoControlRoadmap): Self = StObject.set(x, "com.sun.star.awt.UnoControlRoadmap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlRoadmapModel(value: UnoControlRoadmapModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlRoadmapModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlRoadmapModel(value: UnoControlRoadmapModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlRoadmapModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlScrollBar(value: UnoControlScrollBar): Self = StObject.set(x, "com.sun.star.awt.UnoControlScrollBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlScrollBar(value: UnoControlScrollBar): Self = StObject.set(x, "com.sun.star.awt.UnoControlScrollBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlScrollBarModel(value: UnoControlScrollBarModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlScrollBarModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlScrollBarModel(value: UnoControlScrollBarModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlScrollBarModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlSpinButton(value: UnoControlSpinButton): Self = StObject.set(x, "com.sun.star.awt.UnoControlSpinButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlSpinButton(value: UnoControlSpinButton): Self = StObject.set(x, "com.sun.star.awt.UnoControlSpinButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlSpinButtonModel(value: UnoControlSpinButtonModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlSpinButtonModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlSpinButtonModel(value: UnoControlSpinButtonModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlSpinButtonModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlTimeField(value: UnoControlTimeField): Self = StObject.set(x, "com.sun.star.awt.UnoControlTimeField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlTimeField(value: UnoControlTimeField): Self = StObject.set(x, "com.sun.star.awt.UnoControlTimeField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotUnoControlTimeFieldModel(value: UnoControlTimeFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlTimeFieldModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotUnoControlTimeFieldModel(value: UnoControlTimeFieldModel): Self = StObject.set(x, "com.sun.star.awt.UnoControlTimeFieldModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotDefaultGridColumnModel(value: DefaultGridColumnModel): Self = StObject.set(x, "com.sun.star.awt.grid.DefaultGridColumnModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotDefaultGridColumnModel(value: DefaultGridColumnModel): Self = StObject.set(x, "com.sun.star.awt.grid.DefaultGridColumnModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotDefaultGridDataModel(value: DefaultGridDataModel): Self = StObject.set(x, "com.sun.star.awt.grid.DefaultGridDataModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotDefaultGridDataModel(value: DefaultGridDataModel): Self = StObject.set(x, "com.sun.star.awt.grid.DefaultGridDataModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotGridColumn(value: GridColumn): Self = StObject.set(x, "com.sun.star.awt.grid.GridColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotGridColumn(value: GridColumn): Self = StObject.set(x, "com.sun.star.awt.grid.GridColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotSortableGridDataModel(value: SortableGridDataModel): Self = StObject.set(x, "com.sun.star.awt.grid.SortableGridDataModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotSortableGridDataModel(value: SortableGridDataModel): Self = StObject.set(x, "com.sun.star.awt.grid.SortableGridDataModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotUnoControlGrid(value: UnoControlGrid): Self = StObject.set(x, "com.sun.star.awt.grid.UnoControlGrid", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotUnoControlGrid(value: UnoControlGrid): Self = StObject.set(x, "com.sun.star.awt.grid.UnoControlGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotUnoControlGridModel(value: UnoControlGridModel): Self = StObject.set(x, "com.sun.star.awt.grid.UnoControlGridModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotUnoControlGridModel(value: UnoControlGridModel): Self = StObject.set(x, "com.sun.star.awt.grid.UnoControlGridModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottabDotUnoControlTabPage(value: UnoControlTabPage): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottabDotUnoControlTabPage(value: UnoControlTabPage): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottabDotUnoControlTabPageContainer(value: UnoControlTabPageContainer): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPageContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottabDotUnoControlTabPageContainer(value: UnoControlTabPageContainer): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPageContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottabDotUnoControlTabPageContainerModel(value: UnoControlTabPageContainerModel): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPageContainerModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottabDotUnoControlTabPageContainerModel(value: UnoControlTabPageContainerModel): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPageContainerModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottabDotUnoControlTabPageModel(value: UnoControlTabPageModel): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPageModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottabDotUnoControlTabPageModel(value: UnoControlTabPageModel): Self = StObject.set(x, "com.sun.star.awt.tab.UnoControlTabPageModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottreeDotMutableTreeDataModel(value: MutableTreeDataModel): Self = StObject.set(x, "com.sun.star.awt.tree.MutableTreeDataModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottreeDotMutableTreeDataModel(value: MutableTreeDataModel): Self = StObject.set(x, "com.sun.star.awt.tree.MutableTreeDataModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottreeDotMutableTreeNode(value: MutableTreeNode): Self = StObject.set(x, "com.sun.star.awt.tree.MutableTreeNode", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottreeDotMutableTreeNode(value: MutableTreeNode): Self = StObject.set(x, "com.sun.star.awt.tree.MutableTreeNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottreeDotTreeControl(value: TreeControl): Self = StObject.set(x, "com.sun.star.awt.tree.TreeControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottreeDotTreeControl(value: TreeControl): Self = StObject.set(x, "com.sun.star.awt.tree.TreeControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottreeDotTreeControlModel(value: TreeControlModel): Self = StObject.set(x, "com.sun.star.awt.tree.TreeControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottreeDotTreeControlModel(value: TreeControlModel): Self = StObject.set(x, "com.sun.star.awt.tree.TreeControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotIntrospection(value: Introspection): Self = StObject.set(x, "com.sun.star.beans.Introspection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotIntrospection(value: Introspection): Self = StObject.set(x, "com.sun.star.beans.Introspection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotPropertyBag(value: PropertyBag): Self = StObject.set(x, "com.sun.star.beans.PropertyBag", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotPropertyBag(value: PropertyBag): Self = StObject.set(x, "com.sun.star.beans.PropertyBag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotPropertySet(value: PropertySet): Self = StObject.set(x, "com.sun.star.beans.PropertySet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotPropertySet(value: PropertySet): Self = StObject.set(x, "com.sun.star.beans.PropertySet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotBridge(value: Bridge): Self = StObject.set(x, "com.sun.star.bridge.Bridge", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotBridge(value: Bridge): Self = StObject.set(x, "com.sun.star.bridge.Bridge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotBridgeFactory(value: BridgeFactory): Self = StObject.set(x, "com.sun.star.bridge.BridgeFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotBridgeFactory(value: BridgeFactory): Self = StObject.set(x, "com.sun.star.bridge.BridgeFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotIiopBridge(value: IiopBridge): Self = StObject.set(x, "com.sun.star.bridge.IiopBridge", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotIiopBridge(value: IiopBridge): Self = StObject.set(x, "com.sun.star.bridge.IiopBridge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotOleApplicationRegistration(value: OleApplicationRegistration): Self = StObject.set(x, "com.sun.star.bridge.OleApplicationRegistration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotOleApplicationRegistration(value: OleApplicationRegistration): Self = StObject.set(x, "com.sun.star.bridge.OleApplicationRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotOleBridgeSupplier(value: OleBridgeSupplier): Self = StObject.set(x, "com.sun.star.bridge.OleBridgeSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotOleBridgeSupplier(value: OleBridgeSupplier): Self = StObject.set(x, "com.sun.star.bridge.OleBridgeSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotOleBridgeSupplier2(value: OleBridgeSupplier2): Self = StObject.set(x, "com.sun.star.bridge.OleBridgeSupplier2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotOleBridgeSupplier2(value: OleBridgeSupplier2): Self = StObject.set(x, "com.sun.star.bridge.OleBridgeSupplier2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotOleBridgeSupplierVar1(value: OleBridgeSupplierVar1): Self = StObject.set(x, "com.sun.star.bridge.OleBridgeSupplierVar1", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotOleBridgeSupplierVar1(value: OleBridgeSupplierVar1): Self = StObject.set(x, "com.sun.star.bridge.OleBridgeSupplierVar1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotOleObjectFactory(value: OleObjectFactory): Self = StObject.set(x, "com.sun.star.bridge.OleObjectFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotOleObjectFactory(value: OleObjectFactory): Self = StObject.set(x, "com.sun.star.bridge.OleObjectFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotUnoUrlResolver(value: UnoUrlResolver): Self = StObject.set(x, "com.sun.star.bridge.UnoUrlResolver", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotUnoUrlResolver(value: UnoUrlResolver): Self = StObject.set(x, "com.sun.star.bridge.UnoUrlResolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotUrpBridge(value: UrpBridge): Self = StObject.set(x, "com.sun.star.bridge.UrpBridge", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotUrpBridge(value: UrpBridge): Self = StObject.set(x, "com.sun.star.bridge.UrpBridge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotApplicationRegistration(value: ApplicationRegistration): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.ApplicationRegistration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotApplicationRegistration(value: ApplicationRegistration): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.ApplicationRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotBridgeSupplier(value: BridgeSupplier): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.BridgeSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotBridgeSupplier(value: BridgeSupplier): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.BridgeSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotFactory(value: Factory): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Factory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotFactory(value: Factory): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotAxis(value: Axis): Self = StObject.set(x, "com.sun.star.chart2.Axis", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotAxis(value: Axis): Self = StObject.set(x, "com.sun.star.chart2.Axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotCandleStickChartType(value: CandleStickChartType): Self = StObject.set(x, "com.sun.star.chart2.CandleStickChartType", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotCandleStickChartType(value: CandleStickChartType): Self = StObject.set(x, "com.sun.star.chart2.CandleStickChartType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotCartesianCoordinateSystem2d(value: CartesianCoordinateSystem2d): Self = StObject.set(x, "com.sun.star.chart2.CartesianCoordinateSystem2d", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotCartesianCoordinateSystem2d(value: CartesianCoordinateSystem2d): Self = StObject.set(x, "com.sun.star.chart2.CartesianCoordinateSystem2d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotCartesianCoordinateSystem3d(value: CartesianCoordinateSystem3d): Self = StObject.set(x, "com.sun.star.chart2.CartesianCoordinateSystem3d", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotCartesianCoordinateSystem3d(value: CartesianCoordinateSystem3d): Self = StObject.set(x, "com.sun.star.chart2.CartesianCoordinateSystem3d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotChartDocument(value: ChartDocument): Self = StObject.set(x, "com.sun.star.chart2.ChartDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotChartDocument(value: ChartDocument): Self = StObject.set(x, "com.sun.star.chart2.ChartDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotChartDocumentWrapper(value: ChartDocumentWrapper): Self = StObject.set(x, "com.sun.star.chart2.ChartDocumentWrapper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotChartDocumentWrapper(value: ChartDocumentWrapper): Self = StObject.set(x, "com.sun.star.chart2.ChartDocumentWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotChartType(value: ChartType): Self = StObject.set(x, "com.sun.star.chart2.ChartType", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotChartType(value: ChartType): Self = StObject.set(x, "com.sun.star.chart2.ChartType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotChartTypeManager(value: ChartTypeManager): Self = StObject.set(x, "com.sun.star.chart2.ChartTypeManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotChartTypeManager(value: ChartTypeManager): Self = StObject.set(x, "com.sun.star.chart2.ChartTypeManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotChartTypeTemplate(value: ChartTypeTemplate): Self = StObject.set(x, "com.sun.star.chart2.ChartTypeTemplate", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotChartTypeTemplate(value: ChartTypeTemplate): Self = StObject.set(x, "com.sun.star.chart2.ChartTypeTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotCoordinateSystem(value: CoordinateSystem): Self = StObject.set(x, "com.sun.star.chart2.CoordinateSystem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotCoordinateSystem(value: CoordinateSystem): Self = StObject.set(x, "com.sun.star.chart2.CoordinateSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotCoordinateSystemType(value: CoordinateSystemType): Self = StObject.set(x, "com.sun.star.chart2.CoordinateSystemType", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotCoordinateSystemType(value: CoordinateSystemType): Self = StObject.set(x, "com.sun.star.chart2.CoordinateSystemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotDataPoint(value: DataPoint): Self = StObject.set(x, "com.sun.star.chart2.DataPoint", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotDataPoint(value: DataPoint): Self = StObject.set(x, "com.sun.star.chart2.DataPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotDataPointProperties(value: DataPointProperties): Self = StObject.set(x, "com.sun.star.chart2.DataPointProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotDataPointProperties(value: DataPointProperties): Self = StObject.set(x, "com.sun.star.chart2.DataPointProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotDataSeries(value: DataSeries): Self = StObject.set(x, "com.sun.star.chart2.DataSeries", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotDataSeries(value: DataSeries): Self = StObject.set(x, "com.sun.star.chart2.DataSeries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotDiagram(value: Diagram): Self = StObject.set(x, "com.sun.star.chart2.Diagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotDiagram(value: Diagram): Self = StObject.set(x, "com.sun.star.chart2.Diagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotErrorBar(value: ErrorBar): Self = StObject.set(x, "com.sun.star.chart2.ErrorBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotErrorBar(value: ErrorBar): Self = StObject.set(x, "com.sun.star.chart2.ErrorBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotExponentialRegressionCurve(value: ExponentialRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.ExponentialRegressionCurve", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotExponentialRegressionCurve(value: ExponentialRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.ExponentialRegressionCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotExponentialScaling(value: ExponentialScaling): Self = StObject.set(x, "com.sun.star.chart2.ExponentialScaling", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotExponentialScaling(value: ExponentialScaling): Self = StObject.set(x, "com.sun.star.chart2.ExponentialScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotFormattedString(value: FormattedString): Self = StObject.set(x, "com.sun.star.chart2.FormattedString", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotFormattedString(value: FormattedString): Self = StObject.set(x, "com.sun.star.chart2.FormattedString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotGridProperties(value: GridProperties): Self = StObject.set(x, "com.sun.star.chart2.GridProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotGridProperties(value: GridProperties): Self = StObject.set(x, "com.sun.star.chart2.GridProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotLegend(value: Legend): Self = StObject.set(x, "com.sun.star.chart2.Legend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotLegend(value: Legend): Self = StObject.set(x, "com.sun.star.chart2.Legend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotLinearRegressionCurve(value: LinearRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.LinearRegressionCurve", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotLinearRegressionCurve(value: LinearRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.LinearRegressionCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotLinearScaling(value: LinearScaling): Self = StObject.set(x, "com.sun.star.chart2.LinearScaling", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotLinearScaling(value: LinearScaling): Self = StObject.set(x, "com.sun.star.chart2.LinearScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotLogarithmicRegressionCurve(value: LogarithmicRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.LogarithmicRegressionCurve", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotLogarithmicRegressionCurve(value: LogarithmicRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.LogarithmicRegressionCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotLogarithmicScaling(value: LogarithmicScaling): Self = StObject.set(x, "com.sun.star.chart2.LogarithmicScaling", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotLogarithmicScaling(value: LogarithmicScaling): Self = StObject.set(x, "com.sun.star.chart2.LogarithmicScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotLogicTargetModel(value: LogicTargetModel): Self = StObject.set(x, "com.sun.star.chart2.LogicTargetModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotLogicTargetModel(value: LogicTargetModel): Self = StObject.set(x, "com.sun.star.chart2.LogicTargetModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotMovingAverageRegressionCurve(value: MovingAverageRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.MovingAverageRegressionCurve", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotMovingAverageRegressionCurve(value: MovingAverageRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.MovingAverageRegressionCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotPolarCoordinateSystem2d(value: PolarCoordinateSystem2d): Self = StObject.set(x, "com.sun.star.chart2.PolarCoordinateSystem2d", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotPolarCoordinateSystem2d(value: PolarCoordinateSystem2d): Self = StObject.set(x, "com.sun.star.chart2.PolarCoordinateSystem2d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotPolarCoordinateSystem3d(value: PolarCoordinateSystem3d): Self = StObject.set(x, "com.sun.star.chart2.PolarCoordinateSystem3d", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotPolarCoordinateSystem3d(value: PolarCoordinateSystem3d): Self = StObject.set(x, "com.sun.star.chart2.PolarCoordinateSystem3d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotPolynomialRegressionCurve(value: PolynomialRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.PolynomialRegressionCurve", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotPolynomialRegressionCurve(value: PolynomialRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.PolynomialRegressionCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotPotentialRegressionCurve(value: PotentialRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.PotentialRegressionCurve", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotPotentialRegressionCurve(value: PotentialRegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.PotentialRegressionCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotPowerScaling(value: PowerScaling): Self = StObject.set(x, "com.sun.star.chart2.PowerScaling", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotPowerScaling(value: PowerScaling): Self = StObject.set(x, "com.sun.star.chart2.PowerScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotPropertyPool(value: PropertyPool): Self = StObject.set(x, "com.sun.star.chart2.PropertyPool", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotPropertyPool(value: PropertyPool): Self = StObject.set(x, "com.sun.star.chart2.PropertyPool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotRegressionCurve(value: RegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.RegressionCurve", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotRegressionCurve(value: RegressionCurve): Self = StObject.set(x, "com.sun.star.chart2.RegressionCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotRegressionCurveEquation(value: RegressionCurveEquation): Self = StObject.set(x, "com.sun.star.chart2.RegressionCurveEquation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotRegressionCurveEquation(value: RegressionCurveEquation): Self = StObject.set(x, "com.sun.star.chart2.RegressionCurveEquation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotRegressionEquation(value: RegressionEquation): Self = StObject.set(x, "com.sun.star.chart2.RegressionEquation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotRegressionEquation(value: RegressionEquation): Self = StObject.set(x, "com.sun.star.chart2.RegressionEquation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotScaling(value: Scaling): Self = StObject.set(x, "com.sun.star.chart2.Scaling", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotScaling(value: Scaling): Self = StObject.set(x, "com.sun.star.chart2.Scaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotStandardDiagramCreationParameters(value: StandardDiagramCreationParameters): Self = StObject.set(x, "com.sun.star.chart2.StandardDiagramCreationParameters", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotStandardDiagramCreationParameters(value: StandardDiagramCreationParameters): Self = StObject.set(x, "com.sun.star.chart2.StandardDiagramCreationParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotTitle(value: Title): Self = StObject.set(x, "com.sun.star.chart2.Title", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotTitle(value: Title): Self = StObject.set(x, "com.sun.star.chart2.Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotDataFilter(value: DataFilter): Self = StObject.set(x, "com.sun.star.chart2.data.DataFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotDataFilter(value: DataFilter): Self = StObject.set(x, "com.sun.star.chart2.data.DataFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotDataProvider(value: DataProvider): Self = StObject.set(x, "com.sun.star.chart2.data.DataProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotDataProvider(value: DataProvider): Self = StObject.set(x, "com.sun.star.chart2.data.DataProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotDataSequence(value: DataSequence): Self = StObject.set(x, "com.sun.star.chart2.data.DataSequence", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotDataSequence(value: DataSequence): Self = StObject.set(x, "com.sun.star.chart2.data.DataSequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotDataSink(value: DataSink): Self = StObject.set(x, "com.sun.star.chart2.data.DataSink", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotDataSink(value: DataSink): Self = StObject.set(x, "com.sun.star.chart2.data.DataSink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotDataSource(value: DataSource): Self = StObject.set(x, "com.sun.star.chart2.data.DataSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotDataSource(value: DataSource): Self = StObject.set(x, "com.sun.star.chart2.data.DataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotDatabaseDataProvider(value: DatabaseDataProvider): Self = StObject.set(x, "com.sun.star.chart2.data.DatabaseDataProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotDatabaseDataProvider(value: DatabaseDataProvider): Self = StObject.set(x, "com.sun.star.chart2.data.DatabaseDataProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotLabeledDataSequence(value: LabeledDataSequence): Self = StObject.set(x, "com.sun.star.chart2.data.LabeledDataSequence", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotLabeledDataSequence(value: LabeledDataSequence): Self = StObject.set(x, "com.sun.star.chart2.data.LabeledDataSequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotRangeHighlightListener(value: RangeHighlightListener): Self = StObject.set(x, "com.sun.star.chart2.data.RangeHighlightListener", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotRangeHighlightListener(value: RangeHighlightListener): Self = StObject.set(x, "com.sun.star.chart2.data.RangeHighlightListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotRangeHighlighter(value: RangeHighlighter): Self = StObject.set(x, "com.sun.star.chart2.data.RangeHighlighter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotRangeHighlighter(value: RangeHighlighter): Self = StObject.set(x, "com.sun.star.chart2.data.RangeHighlighter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotTabularDataProviderArguments(value: TabularDataProviderArguments): Self = StObject.set(x, "com.sun.star.chart2.data.TabularDataProviderArguments", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotTabularDataProviderArguments(value: TabularDataProviderArguments): Self = StObject.set(x, "com.sun.star.chart2.data.TabularDataProviderArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotAccessibleChartDocumentView(value: AccessibleChartDocumentView): Self = StObject.set(x, "com.sun.star.chart.AccessibleChartDocumentView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotAccessibleChartDocumentView(value: AccessibleChartDocumentView): Self = StObject.set(x, "com.sun.star.chart.AccessibleChartDocumentView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotAccessibleChartElement(value: AccessibleChartElement): Self = StObject.set(x, "com.sun.star.chart.AccessibleChartElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotAccessibleChartElement(value: AccessibleChartElement): Self = StObject.set(x, "com.sun.star.chart.AccessibleChartElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotAreaDiagram(value: AreaDiagram): Self = StObject.set(x, "com.sun.star.chart.AreaDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotAreaDiagram(value: AreaDiagram): Self = StObject.set(x, "com.sun.star.chart.AreaDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotBarDiagram(value: BarDiagram): Self = StObject.set(x, "com.sun.star.chart.BarDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotBarDiagram(value: BarDiagram): Self = StObject.set(x, "com.sun.star.chart.BarDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotBubbleDiagram(value: BubbleDiagram): Self = StObject.set(x, "com.sun.star.chart.BubbleDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotBubbleDiagram(value: BubbleDiagram): Self = StObject.set(x, "com.sun.star.chart.BubbleDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChart3DBarProperties(value: Chart3DBarProperties): Self = StObject.set(x, "com.sun.star.chart.Chart3DBarProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChart3DBarProperties(value: Chart3DBarProperties): Self = StObject.set(x, "com.sun.star.chart.Chart3DBarProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartArea(value: ChartArea): Self = StObject.set(x, "com.sun.star.chart.ChartArea", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartArea(value: ChartArea): Self = StObject.set(x, "com.sun.star.chart.ChartArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartAxis(value: ChartAxis): Self = StObject.set(x, "com.sun.star.chart.ChartAxis", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartAxis(value: ChartAxis): Self = StObject.set(x, "com.sun.star.chart.ChartAxis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartAxisXSupplier(value: ChartAxisXSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartAxisXSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartAxisXSupplier(value: ChartAxisXSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartAxisXSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartAxisYSupplier(value: ChartAxisYSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartAxisYSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartAxisYSupplier(value: ChartAxisYSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartAxisYSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartAxisZSupplier(value: ChartAxisZSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartAxisZSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartAxisZSupplier(value: ChartAxisZSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartAxisZSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartData(value: ChartData): Self = StObject.set(x, "com.sun.star.chart.ChartData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartData(value: ChartData): Self = StObject.set(x, "com.sun.star.chart.ChartData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartDataArray(value: ChartDataArray): Self = StObject.set(x, "com.sun.star.chart.ChartDataArray", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartDataArray(value: ChartDataArray): Self = StObject.set(x, "com.sun.star.chart.ChartDataArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartDataPointProperties(value: ChartDataPointProperties): Self = StObject.set(x, "com.sun.star.chart.ChartDataPointProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartDataPointProperties(value: ChartDataPointProperties): Self = StObject.set(x, "com.sun.star.chart.ChartDataPointProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartDataRowProperties(value: ChartDataRowProperties): Self = StObject.set(x, "com.sun.star.chart.ChartDataRowProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartDataRowProperties(value: ChartDataRowProperties): Self = StObject.set(x, "com.sun.star.chart.ChartDataRowProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartDocument(value: typings.activexLibreoffice.com_.sun.star.chart.ChartDocument): Self = StObject.set(x, "com.sun.star.chart.ChartDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartDocument(value: typings.activexLibreoffice.com_.sun.star.chart.ChartDocument): Self = StObject.set(x, "com.sun.star.chart.ChartDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartGrid(value: ChartGrid): Self = StObject.set(x, "com.sun.star.chart.ChartGrid", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartGrid(value: ChartGrid): Self = StObject.set(x, "com.sun.star.chart.ChartGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartLegend(value: ChartLegend): Self = StObject.set(x, "com.sun.star.chart.ChartLegend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartLegend(value: ChartLegend): Self = StObject.set(x, "com.sun.star.chart.ChartLegend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartLine(value: ChartLine): Self = StObject.set(x, "com.sun.star.chart.ChartLine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartLine(value: ChartLine): Self = StObject.set(x, "com.sun.star.chart.ChartLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartPieSegmentProperties(value: ChartPieSegmentProperties): Self = StObject.set(x, "com.sun.star.chart.ChartPieSegmentProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartPieSegmentProperties(value: ChartPieSegmentProperties): Self = StObject.set(x, "com.sun.star.chart.ChartPieSegmentProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartStatistics(value: ChartStatistics): Self = StObject.set(x, "com.sun.star.chart.ChartStatistics", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartStatistics(value: ChartStatistics): Self = StObject.set(x, "com.sun.star.chart.ChartStatistics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartTableAddressSupplier(value: ChartTableAddressSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartTableAddressSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartTableAddressSupplier(value: ChartTableAddressSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartTableAddressSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartTitle(value: ChartTitle): Self = StObject.set(x, "com.sun.star.chart.ChartTitle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartTitle(value: ChartTitle): Self = StObject.set(x, "com.sun.star.chart.ChartTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartTwoAxisXSupplier(value: ChartTwoAxisXSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartTwoAxisXSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartTwoAxisXSupplier(value: ChartTwoAxisXSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartTwoAxisXSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartTwoAxisYSupplier(value: ChartTwoAxisYSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartTwoAxisYSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartTwoAxisYSupplier(value: ChartTwoAxisYSupplier): Self = StObject.set(x, "com.sun.star.chart.ChartTwoAxisYSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotDiagram(value: typings.activexLibreoffice.com_.sun.star.chart.Diagram): Self = StObject.set(x, "com.sun.star.chart.Diagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotDiagram(value: typings.activexLibreoffice.com_.sun.star.chart.Diagram): Self = StObject.set(x, "com.sun.star.chart.Diagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotDim3DDiagram(value: Dim3DDiagram): Self = StObject.set(x, "com.sun.star.chart.Dim3DDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotDim3DDiagram(value: Dim3DDiagram): Self = StObject.set(x, "com.sun.star.chart.Dim3DDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotDonutDiagram(value: DonutDiagram): Self = StObject.set(x, "com.sun.star.chart.DonutDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotDonutDiagram(value: DonutDiagram): Self = StObject.set(x, "com.sun.star.chart.DonutDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotFilledNetDiagram(value: FilledNetDiagram): Self = StObject.set(x, "com.sun.star.chart.FilledNetDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotFilledNetDiagram(value: FilledNetDiagram): Self = StObject.set(x, "com.sun.star.chart.FilledNetDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotLineDiagram(value: LineDiagram): Self = StObject.set(x, "com.sun.star.chart.LineDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotLineDiagram(value: LineDiagram): Self = StObject.set(x, "com.sun.star.chart.LineDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotNetDiagram(value: NetDiagram): Self = StObject.set(x, "com.sun.star.chart.NetDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotNetDiagram(value: NetDiagram): Self = StObject.set(x, "com.sun.star.chart.NetDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotPieDiagram(value: PieDiagram): Self = StObject.set(x, "com.sun.star.chart.PieDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotPieDiagram(value: PieDiagram): Self = StObject.set(x, "com.sun.star.chart.PieDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotStackableDiagram(value: StackableDiagram): Self = StObject.set(x, "com.sun.star.chart.StackableDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotStackableDiagram(value: StackableDiagram): Self = StObject.set(x, "com.sun.star.chart.StackableDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotStockDiagram(value: StockDiagram): Self = StObject.set(x, "com.sun.star.chart.StockDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotStockDiagram(value: StockDiagram): Self = StObject.set(x, "com.sun.star.chart.StockDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotXYDiagram(value: XYDiagram): Self = StObject.set(x, "com.sun.star.chart.XYDiagram", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotXYDiagram(value: XYDiagram): Self = StObject.set(x, "com.sun.star.chart.XYDiagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotAccessRootElement(value: AccessRootElement): Self = StObject.set(x, "com.sun.star.configuration.AccessRootElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotAccessRootElement(value: AccessRootElement): Self = StObject.set(x, "com.sun.star.configuration.AccessRootElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotAdministrationProvider(value: AdministrationProvider): Self = StObject.set(x, "com.sun.star.configuration.AdministrationProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotAdministrationProvider(value: AdministrationProvider): Self = StObject.set(x, "com.sun.star.configuration.AdministrationProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotConfigurationAccess(value: ConfigurationAccess): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotConfigurationAccess(value: ConfigurationAccess): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotConfigurationProvider(value: ConfigurationProvider): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotConfigurationProvider(value: ConfigurationProvider): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotConfigurationRegistry(value: ConfigurationRegistry): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationRegistry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotConfigurationRegistry(value: ConfigurationRegistry): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationRegistry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotConfigurationUpdateAccess(value: ConfigurationUpdateAccess): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationUpdateAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotConfigurationUpdateAccess(value: ConfigurationUpdateAccess): Self = StObject.set(x, "com.sun.star.configuration.ConfigurationUpdateAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotDefaultProvider(value: DefaultProvider): Self = StObject.set(x, "com.sun.star.configuration.DefaultProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotDefaultProvider(value: DefaultProvider): Self = StObject.set(x, "com.sun.star.configuration.DefaultProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotGroupAccess(value: GroupAccess): Self = StObject.set(x, "com.sun.star.configuration.GroupAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotGroupAccess(value: GroupAccess): Self = StObject.set(x, "com.sun.star.configuration.GroupAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotGroupElement(value: GroupElement): Self = StObject.set(x, "com.sun.star.configuration.GroupElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotGroupElement(value: GroupElement): Self = StObject.set(x, "com.sun.star.configuration.GroupElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotGroupUpdate(value: GroupUpdate): Self = StObject.set(x, "com.sun.star.configuration.GroupUpdate", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotGroupUpdate(value: GroupUpdate): Self = StObject.set(x, "com.sun.star.configuration.GroupUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotHierarchyAccess(value: HierarchyAccess): Self = StObject.set(x, "com.sun.star.configuration.HierarchyAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotHierarchyAccess(value: HierarchyAccess): Self = StObject.set(x, "com.sun.star.configuration.HierarchyAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotHierarchyElement(value: HierarchyElement): Self = StObject.set(x, "com.sun.star.configuration.HierarchyElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotHierarchyElement(value: HierarchyElement): Self = StObject.set(x, "com.sun.star.configuration.HierarchyElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotPropertyHierarchy(value: PropertyHierarchy): Self = StObject.set(x, "com.sun.star.configuration.PropertyHierarchy", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotPropertyHierarchy(value: PropertyHierarchy): Self = StObject.set(x, "com.sun.star.configuration.PropertyHierarchy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotReadOnlyAccess(value: ReadOnlyAccess): Self = StObject.set(x, "com.sun.star.configuration.ReadOnlyAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotReadOnlyAccess(value: ReadOnlyAccess): Self = StObject.set(x, "com.sun.star.configuration.ReadOnlyAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotReadWriteAccess(value: ReadWriteAccess): Self = StObject.set(x, "com.sun.star.configuration.ReadWriteAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotReadWriteAccess(value: ReadWriteAccess): Self = StObject.set(x, "com.sun.star.configuration.ReadWriteAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotSetAccess(value: SetAccess): Self = StObject.set(x, "com.sun.star.configuration.SetAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotSetAccess(value: SetAccess): Self = StObject.set(x, "com.sun.star.configuration.SetAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotSetElement(value: SetElement): Self = StObject.set(x, "com.sun.star.configuration.SetElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotSetElement(value: SetElement): Self = StObject.set(x, "com.sun.star.configuration.SetElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotSetUpdate(value: SetUpdate): Self = StObject.set(x, "com.sun.star.configuration.SetUpdate", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotSetUpdate(value: SetUpdate): Self = StObject.set(x, "com.sun.star.configuration.SetUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotSimpleSetAccess(value: SimpleSetAccess): Self = StObject.set(x, "com.sun.star.configuration.SimpleSetAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotSimpleSetAccess(value: SimpleSetAccess): Self = StObject.set(x, "com.sun.star.configuration.SimpleSetAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotSimpleSetUpdate(value: SimpleSetUpdate): Self = StObject.set(x, "com.sun.star.configuration.SimpleSetUpdate", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotSimpleSetUpdate(value: SimpleSetUpdate): Self = StObject.set(x, "com.sun.star.configuration.SimpleSetUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotUpdateRootElement(value: UpdateRootElement): Self = StObject.set(x, "com.sun.star.configuration.UpdateRootElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotUpdateRootElement(value: UpdateRootElement): Self = StObject.set(x, "com.sun.star.configuration.UpdateRootElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotBackend(value: Backend): Self = StObject.set(x, "com.sun.star.configuration.backend.Backend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotBackend(value: Backend): Self = StObject.set(x, "com.sun.star.configuration.backend.Backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotBackendAdapter(value: BackendAdapter): Self = StObject.set(x, "com.sun.star.configuration.backend.BackendAdapter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotBackendAdapter(value: BackendAdapter): Self = StObject.set(x, "com.sun.star.configuration.backend.BackendAdapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotCopyImporter(value: CopyImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.CopyImporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotCopyImporter(value: CopyImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.CopyImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotDataImporter(value: DataImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.DataImporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotDataImporter(value: DataImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.DataImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotDefaultBackend(value: DefaultBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.DefaultBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotDefaultBackend(value: DefaultBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.DefaultBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotHierarchyBrowser(value: HierarchyBrowser): Self = StObject.set(x, "com.sun.star.configuration.backend.HierarchyBrowser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotHierarchyBrowser(value: HierarchyBrowser): Self = StObject.set(x, "com.sun.star.configuration.backend.HierarchyBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotImporter(value: Importer): Self = StObject.set(x, "com.sun.star.configuration.backend.Importer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotImporter(value: Importer): Self = StObject.set(x, "com.sun.star.configuration.backend.Importer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotInteractionHandler(value: InteractionHandler): Self = StObject.set(x, "com.sun.star.configuration.backend.InteractionHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotInteractionHandler(value: InteractionHandler): Self = StObject.set(x, "com.sun.star.configuration.backend.InteractionHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLayer(value: Layer): Self = StObject.set(x, "com.sun.star.configuration.backend.Layer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLayer(value: Layer): Self = StObject.set(x, "com.sun.star.configuration.backend.Layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLayerDescriber(value: LayerDescriber): Self = StObject.set(x, "com.sun.star.configuration.backend.LayerDescriber", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLayerDescriber(value: LayerDescriber): Self = StObject.set(x, "com.sun.star.configuration.backend.LayerDescriber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLayerFilter(value: LayerFilter): Self = StObject.set(x, "com.sun.star.configuration.backend.LayerFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLayerFilter(value: LayerFilter): Self = StObject.set(x, "com.sun.star.configuration.backend.LayerFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLayerUpdateMerger(value: LayerUpdateMerger): Self = StObject.set(x, "com.sun.star.configuration.backend.LayerUpdateMerger", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLayerUpdateMerger(value: LayerUpdateMerger): Self = StObject.set(x, "com.sun.star.configuration.backend.LayerUpdateMerger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLdapMultiLayerStratum(value: LdapMultiLayerStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.LdapMultiLayerStratum", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLdapMultiLayerStratum(value: LdapMultiLayerStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.LdapMultiLayerStratum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLdapSingleBackend(value: LdapSingleBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.LdapSingleBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLdapSingleBackend(value: LdapSingleBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.LdapSingleBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLdapSingleStratum(value: LdapSingleStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.LdapSingleStratum", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLdapSingleStratum(value: LdapSingleStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.LdapSingleStratum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLocalDataImporter(value: LocalDataImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalDataImporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLocalDataImporter(value: LocalDataImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalDataImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLocalHierarchyBrowser(value: LocalHierarchyBrowser): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalHierarchyBrowser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLocalHierarchyBrowser(value: LocalHierarchyBrowser): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalHierarchyBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLocalSchemaSupplier(value: LocalSchemaSupplier): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalSchemaSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLocalSchemaSupplier(value: LocalSchemaSupplier): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalSchemaSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLocalSingleBackend(value: LocalSingleBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalSingleBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLocalSingleBackend(value: LocalSingleBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalSingleBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotLocalSingleStratum(value: LocalSingleStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalSingleStratum", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotLocalSingleStratum(value: LocalSingleStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.LocalSingleStratum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotMergeImporter(value: MergeImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.MergeImporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotMergeImporter(value: MergeImporter): Self = StObject.set(x, "com.sun.star.configuration.backend.MergeImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotMultiLayerStratum(value: MultiLayerStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.MultiLayerStratum", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotMultiLayerStratum(value: MultiLayerStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.MultiLayerStratum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotMultiStratumBackend(value: MultiStratumBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.MultiStratumBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotMultiStratumBackend(value: MultiStratumBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.MultiStratumBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotOfflineBackend(value: OfflineBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.OfflineBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotOfflineBackend(value: OfflineBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.OfflineBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotOnlineBackend(value: OnlineBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.OnlineBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotOnlineBackend(value: OnlineBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.OnlineBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotPlatformBackend(value: PlatformBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.PlatformBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotPlatformBackend(value: PlatformBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.PlatformBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotSchema(value: Schema): Self = StObject.set(x, "com.sun.star.configuration.backend.Schema", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotSchema(value: Schema): Self = StObject.set(x, "com.sun.star.configuration.backend.Schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotSchemaSupplier(value: SchemaSupplier): Self = StObject.set(x, "com.sun.star.configuration.backend.SchemaSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotSchemaSupplier(value: SchemaSupplier): Self = StObject.set(x, "com.sun.star.configuration.backend.SchemaSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotSingleBackend(value: SingleBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.SingleBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotSingleBackend(value: SingleBackend): Self = StObject.set(x, "com.sun.star.configuration.backend.SingleBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotSingleBackendAdapter(value: SingleBackendAdapter): Self = StObject.set(x, "com.sun.star.configuration.backend.SingleBackendAdapter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotSingleBackendAdapter(value: SingleBackendAdapter): Self = StObject.set(x, "com.sun.star.configuration.backend.SingleBackendAdapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotSingleLayerStratum(value: SingleLayerStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.SingleLayerStratum", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotSingleLayerStratum(value: SingleLayerStratum): Self = StObject.set(x, "com.sun.star.configuration.backend.SingleLayerStratum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotSystemIntegration(value: SystemIntegration): Self = StObject.set(x, "com.sun.star.configuration.backend.SystemIntegration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotSystemIntegration(value: SystemIntegration): Self = StObject.set(x, "com.sun.star.configuration.backend.SystemIntegration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotUpdatableLayer(value: UpdatableLayer): Self = StObject.set(x, "com.sun.star.configuration.backend.UpdatableLayer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotUpdatableLayer(value: UpdatableLayer): Self = StObject.set(x, "com.sun.star.configuration.backend.UpdatableLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotxmlDotLayerParser(value: LayerParser): Self = StObject.set(x, "com.sun.star.configuration.backend.xml.LayerParser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotxmlDotLayerParser(value: LayerParser): Self = StObject.set(x, "com.sun.star.configuration.backend.xml.LayerParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotxmlDotLayerWriter(value: LayerWriter): Self = StObject.set(x, "com.sun.star.configuration.backend.xml.LayerWriter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotxmlDotLayerWriter(value: LayerWriter): Self = StObject.set(x, "com.sun.star.configuration.backend.xml.LayerWriter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotxmlDotSchemaParser(value: SchemaParser): Self = StObject.set(x, "com.sun.star.configuration.backend.xml.SchemaParser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotxmlDotSchemaParser(value: SchemaParser): Self = StObject.set(x, "com.sun.star.configuration.backend.xml.SchemaParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbootstrapDotBootstrapContext(value: BootstrapContext): Self = StObject.set(x, "com.sun.star.configuration.bootstrap.BootstrapContext", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbootstrapDotBootstrapContext(value: BootstrapContext): Self = StObject.set(x, "com.sun.star.configuration.bootstrap.BootstrapContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconnectionDotAcceptor(value: Acceptor): Self = StObject.set(x, "com.sun.star.connection.Acceptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconnectionDotAcceptor(value: Acceptor): Self = StObject.set(x, "com.sun.star.connection.Acceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconnectionDotConnector(value: Connector): Self = StObject.set(x, "com.sun.star.connection.Connector", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconnectionDotConnector(value: Connector): Self = StObject.set(x, "com.sun.star.connection.Connector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotcontainerDotEnumerableMap(value: EnumerableMap): Self = StObject.set(x, "com.sun.star.container.EnumerableMap", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotcontainerDotEnumerableMap(value: EnumerableMap): Self = StObject.set(x, "com.sun.star.container.EnumerableMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotcuiDotColorPicker(value: ColorPicker): Self = StObject.set(x, "com.sun.star.cui.ColorPicker", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotcuiDotColorPicker(value: ColorPicker): Self = StObject.set(x, "com.sun.star.cui.ColorPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotDataFormatTranslator(value: DataFormatTranslator): Self = StObject.set(x, "com.sun.star.datatransfer.DataFormatTranslator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotDataFormatTranslator(value: DataFormatTranslator): Self = StObject.set(x, "com.sun.star.datatransfer.DataFormatTranslator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotMimeContentTypeFactory(value: MimeContentTypeFactory): Self = StObject.set(x, "com.sun.star.datatransfer.MimeContentTypeFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotMimeContentTypeFactory(value: MimeContentTypeFactory): Self = StObject.set(x, "com.sun.star.datatransfer.MimeContentTypeFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotclipboardDotClipboardManager(value: ClipboardManager): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.ClipboardManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotclipboardDotClipboardManager(value: ClipboardManager): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.ClipboardManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotclipboardDotGenericClipboard(value: GenericClipboard): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.GenericClipboard", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotclipboardDotGenericClipboard(value: GenericClipboard): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.GenericClipboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotclipboardDotSystemClipboard(value: SystemClipboard): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.SystemClipboard", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotclipboardDotSystemClipboard(value: SystemClipboard): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.SystemClipboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotOleDragSource(value: OleDragSource): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.OleDragSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotOleDragSource(value: OleDragSource): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.OleDragSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotOleDropTarget(value: OleDropTarget): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.OleDropTarget", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotOleDropTarget(value: OleDropTarget): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.OleDropTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotX11DragSource(value: X11DragSource): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.X11DragSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotX11DragSource(value: X11DragSource): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.X11DragSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotX11DropTarget(value: X11DropTarget): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.X11DropTarget", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotX11DropTarget(value: X11DropTarget): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.X11DropTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdeploymentDotPackageRegistryBackend(value: PackageRegistryBackend): Self = StObject.set(x, "com.sun.star.deployment.PackageRegistryBackend", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdeploymentDotPackageRegistryBackend(value: PackageRegistryBackend): Self = StObject.set(x, "com.sun.star.deployment.PackageRegistryBackend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdeploymentDotUpdateInformationProvider(value: UpdateInformationProvider): Self = StObject.set(x, "com.sun.star.deployment.UpdateInformationProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdeploymentDotUpdateInformationProvider(value: UpdateInformationProvider): Self = StObject.set(x, "com.sun.star.deployment.UpdateInformationProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdeploymentDottestDotSmoketestCommandEnvironment(value: SmoketestCommandEnvironment): Self = StObject.set(x, "com.sun.star.deployment.test.SmoketestCommandEnvironment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdeploymentDottestDotSmoketestCommandEnvironment(value: SmoketestCommandEnvironment): Self = StObject.set(x, "com.sun.star.deployment.test.SmoketestCommandEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdeploymentDotuiDotLicenseDialog(value: LicenseDialog): Self = StObject.set(x, "com.sun.star.deployment.ui.LicenseDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdeploymentDotuiDotLicenseDialog(value: LicenseDialog): Self = StObject.set(x, "com.sun.star.deployment.ui.LicenseDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdeploymentDotuiDotPackageManagerDialog(value: PackageManagerDialog): Self = StObject.set(x, "com.sun.star.deployment.ui.PackageManagerDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdeploymentDotuiDotPackageManagerDialog(value: PackageManagerDialog): Self = StObject.set(x, "com.sun.star.deployment.ui.PackageManagerDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdeploymentDotuiDotUpdateRequiredDialog(value: UpdateRequiredDialog): Self = StObject.set(x, "com.sun.star.deployment.ui.UpdateRequiredDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdeploymentDotuiDotUpdateRequiredDialog(value: UpdateRequiredDialog): Self = StObject.set(x, "com.sun.star.deployment.ui.UpdateRequiredDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotDocumentProperties(value: DocumentProperties): Self = StObject.set(x, "com.sun.star.document.DocumentProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotDocumentProperties(value: DocumentProperties): Self = StObject.set(x, "com.sun.star.document.DocumentProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotDocumentRevisionListPersistence(value: DocumentRevisionListPersistence): Self = StObject.set(x, "com.sun.star.document.DocumentRevisionListPersistence", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotDocumentRevisionListPersistence(value: DocumentRevisionListPersistence): Self = StObject.set(x, "com.sun.star.document.DocumentRevisionListPersistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotEventDescriptor(value: EventDescriptor): Self = StObject.set(x, "com.sun.star.document.EventDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotEventDescriptor(value: EventDescriptor): Self = StObject.set(x, "com.sun.star.document.EventDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotEvents(value: Events): Self = StObject.set(x, "com.sun.star.document.Events", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotEvents(value: Events): Self = StObject.set(x, "com.sun.star.document.Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotExportFilter(value: ExportFilter): Self = StObject.set(x, "com.sun.star.document.ExportFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotExportFilter(value: ExportFilter): Self = StObject.set(x, "com.sun.star.document.ExportFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotExtendedTypeDetection(value: ExtendedTypeDetection): Self = StObject.set(x, "com.sun.star.document.ExtendedTypeDetection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotExtendedTypeDetection(value: ExtendedTypeDetection): Self = StObject.set(x, "com.sun.star.document.ExtendedTypeDetection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotExtendedTypeDetectionFactory(value: ExtendedTypeDetectionFactory): Self = StObject.set(x, "com.sun.star.document.ExtendedTypeDetectionFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotExtendedTypeDetectionFactory(value: ExtendedTypeDetectionFactory): Self = StObject.set(x, "com.sun.star.document.ExtendedTypeDetectionFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotFilterAdapter(value: FilterAdapter): Self = StObject.set(x, "com.sun.star.document.FilterAdapter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotFilterAdapter(value: FilterAdapter): Self = StObject.set(x, "com.sun.star.document.FilterAdapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotFilterConfigRefresh(value: FilterConfigRefresh): Self = StObject.set(x, "com.sun.star.document.FilterConfigRefresh", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotFilterConfigRefresh(value: FilterConfigRefresh): Self = StObject.set(x, "com.sun.star.document.FilterConfigRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotFilterFactory(value: FilterFactory): Self = StObject.set(x, "com.sun.star.document.FilterFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotFilterFactory(value: FilterFactory): Self = StObject.set(x, "com.sun.star.document.FilterFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotGraphicObjectResolver(value: GraphicObjectResolver): Self = StObject.set(x, "com.sun.star.document.GraphicObjectResolver", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotGraphicObjectResolver(value: GraphicObjectResolver): Self = StObject.set(x, "com.sun.star.document.GraphicObjectResolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotHeaderFooterSettings(value: HeaderFooterSettings): Self = StObject.set(x, "com.sun.star.document.HeaderFooterSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotHeaderFooterSettings(value: HeaderFooterSettings): Self = StObject.set(x, "com.sun.star.document.HeaderFooterSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotImportFilter(value: ImportFilter): Self = StObject.set(x, "com.sun.star.document.ImportFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotImportFilter(value: ImportFilter): Self = StObject.set(x, "com.sun.star.document.ImportFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotIndexedPropertyValues(value: IndexedPropertyValues): Self = StObject.set(x, "com.sun.star.document.IndexedPropertyValues", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotIndexedPropertyValues(value: IndexedPropertyValues): Self = StObject.set(x, "com.sun.star.document.IndexedPropertyValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotLinkTarget(value: LinkTarget): Self = StObject.set(x, "com.sun.star.document.LinkTarget", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotLinkTarget(value: LinkTarget): Self = StObject.set(x, "com.sun.star.document.LinkTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotLinkTargets(value: LinkTargets): Self = StObject.set(x, "com.sun.star.document.LinkTargets", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotLinkTargets(value: LinkTargets): Self = StObject.set(x, "com.sun.star.document.LinkTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotMediaDescriptor(value: MediaDescriptor): Self = StObject.set(x, "com.sun.star.document.MediaDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotMediaDescriptor(value: MediaDescriptor): Self = StObject.set(x, "com.sun.star.document.MediaDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotNamedPropertyValues(value: NamedPropertyValues): Self = StObject.set(x, "com.sun.star.document.NamedPropertyValues", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotNamedPropertyValues(value: NamedPropertyValues): Self = StObject.set(x, "com.sun.star.document.NamedPropertyValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotOOXMLDocumentPropertiesImporter(value: OOXMLDocumentPropertiesImporter): Self = StObject.set(x, "com.sun.star.document.OOXMLDocumentPropertiesImporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotOOXMLDocumentPropertiesImporter(value: OOXMLDocumentPropertiesImporter): Self = StObject.set(x, "com.sun.star.document.OOXMLDocumentPropertiesImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotOfficeDocument(value: OfficeDocument): Self = StObject.set(x, "com.sun.star.document.OfficeDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotOfficeDocument(value: OfficeDocument): Self = StObject.set(x, "com.sun.star.document.OfficeDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotOleEmbeddedServerRegistration(value: OleEmbeddedServerRegistration): Self = StObject.set(x, "com.sun.star.document.OleEmbeddedServerRegistration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotOleEmbeddedServerRegistration(value: OleEmbeddedServerRegistration): Self = StObject.set(x, "com.sun.star.document.OleEmbeddedServerRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotPDFDialog(value: PDFDialog): Self = StObject.set(x, "com.sun.star.document.PDFDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotPDFDialog(value: PDFDialog): Self = StObject.set(x, "com.sun.star.document.PDFDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotSettings(value: Settings): Self = StObject.set(x, "com.sun.star.document.Settings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotSettings(value: Settings): Self = StObject.set(x, "com.sun.star.document.Settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotTypeDetection(value: TypeDetection): Self = StObject.set(x, "com.sun.star.document.TypeDetection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotTypeDetection(value: TypeDetection): Self = StObject.set(x, "com.sun.star.document.TypeDetection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotXMLBasicExporter(value: XMLBasicExporter): Self = StObject.set(x, "com.sun.star.document.XMLBasicExporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotXMLBasicExporter(value: XMLBasicExporter): Self = StObject.set(x, "com.sun.star.document.XMLBasicExporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotXMLBasicImporter(value: XMLBasicImporter): Self = StObject.set(x, "com.sun.star.document.XMLBasicImporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotXMLBasicImporter(value: XMLBasicImporter): Self = StObject.set(x, "com.sun.star.document.XMLBasicImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotXMLOasisBasicExporter(value: XMLOasisBasicExporter): Self = StObject.set(x, "com.sun.star.document.XMLOasisBasicExporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotXMLOasisBasicExporter(value: XMLOasisBasicExporter): Self = StObject.set(x, "com.sun.star.document.XMLOasisBasicExporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotXMLOasisBasicImporter(value: XMLOasisBasicImporter): Self = StObject.set(x, "com.sun.star.document.XMLOasisBasicImporter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotXMLOasisBasicImporter(value: XMLOasisBasicImporter): Self = StObject.set(x, "com.sun.star.document.XMLOasisBasicImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleDrawDocumentView(value: AccessibleDrawDocumentView): Self = StObject.set(x, "com.sun.star.drawing.AccessibleDrawDocumentView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleDrawDocumentView(value: AccessibleDrawDocumentView): Self = StObject.set(x, "com.sun.star.drawing.AccessibleDrawDocumentView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleGraphControl(value: AccessibleGraphControl): Self = StObject.set(x, "com.sun.star.drawing.AccessibleGraphControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleGraphControl(value: AccessibleGraphControl): Self = StObject.set(x, "com.sun.star.drawing.AccessibleGraphControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleGraphicShape(value: AccessibleGraphicShape): Self = StObject.set(x, "com.sun.star.drawing.AccessibleGraphicShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleGraphicShape(value: AccessibleGraphicShape): Self = StObject.set(x, "com.sun.star.drawing.AccessibleGraphicShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleImageBullet(value: AccessibleImageBullet): Self = StObject.set(x, "com.sun.star.drawing.AccessibleImageBullet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleImageBullet(value: AccessibleImageBullet): Self = StObject.set(x, "com.sun.star.drawing.AccessibleImageBullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleOLEShape(value: AccessibleOLEShape): Self = StObject.set(x, "com.sun.star.drawing.AccessibleOLEShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleOLEShape(value: AccessibleOLEShape): Self = StObject.set(x, "com.sun.star.drawing.AccessibleOLEShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleShape(value: AccessibleShape): Self = StObject.set(x, "com.sun.star.drawing.AccessibleShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleShape(value: AccessibleShape): Self = StObject.set(x, "com.sun.star.drawing.AccessibleShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleSlideView(value: AccessibleSlideView): Self = StObject.set(x, "com.sun.star.drawing.AccessibleSlideView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleSlideView(value: AccessibleSlideView): Self = StObject.set(x, "com.sun.star.drawing.AccessibleSlideView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAccessibleSlideViewObject(value: AccessibleSlideViewObject): Self = StObject.set(x, "com.sun.star.drawing.AccessibleSlideViewObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAccessibleSlideViewObject(value: AccessibleSlideViewObject): Self = StObject.set(x, "com.sun.star.drawing.AccessibleSlideViewObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotAppletShape(value: AppletShape): Self = StObject.set(x, "com.sun.star.drawing.AppletShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotAppletShape(value: AppletShape): Self = StObject.set(x, "com.sun.star.drawing.AppletShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotBackground(value: Background): Self = StObject.set(x, "com.sun.star.drawing.Background", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotBackground(value: Background): Self = StObject.set(x, "com.sun.star.drawing.Background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotBitmapTable(value: BitmapTable): Self = StObject.set(x, "com.sun.star.drawing.BitmapTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotBitmapTable(value: BitmapTable): Self = StObject.set(x, "com.sun.star.drawing.BitmapTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotCaptionShape(value: CaptionShape): Self = StObject.set(x, "com.sun.star.drawing.CaptionShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotCaptionShape(value: CaptionShape): Self = StObject.set(x, "com.sun.star.drawing.CaptionShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotClosedBezierShape(value: ClosedBezierShape): Self = StObject.set(x, "com.sun.star.drawing.ClosedBezierShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotClosedBezierShape(value: ClosedBezierShape): Self = StObject.set(x, "com.sun.star.drawing.ClosedBezierShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotColorTable(value: ColorTable): Self = StObject.set(x, "com.sun.star.drawing.ColorTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotColorTable(value: ColorTable): Self = StObject.set(x, "com.sun.star.drawing.ColorTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotConnectorProperties(value: ConnectorProperties): Self = StObject.set(x, "com.sun.star.drawing.ConnectorProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotConnectorProperties(value: ConnectorProperties): Self = StObject.set(x, "com.sun.star.drawing.ConnectorProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotConnectorShape(value: ConnectorShape): Self = StObject.set(x, "com.sun.star.drawing.ConnectorShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotConnectorShape(value: ConnectorShape): Self = StObject.set(x, "com.sun.star.drawing.ConnectorShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotControlShape(value: ControlShape): Self = StObject.set(x, "com.sun.star.drawing.ControlShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotControlShape(value: ControlShape): Self = StObject.set(x, "com.sun.star.drawing.ControlShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotCustomShape(value: CustomShape): Self = StObject.set(x, "com.sun.star.drawing.CustomShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotCustomShape(value: CustomShape): Self = StObject.set(x, "com.sun.star.drawing.CustomShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotCustomShapeEngine(value: CustomShapeEngine): Self = StObject.set(x, "com.sun.star.drawing.CustomShapeEngine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotCustomShapeEngine(value: CustomShapeEngine): Self = StObject.set(x, "com.sun.star.drawing.CustomShapeEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDashTable(value: DashTable): Self = StObject.set(x, "com.sun.star.drawing.DashTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDashTable(value: DashTable): Self = StObject.set(x, "com.sun.star.drawing.DashTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDefaults(value: Defaults): Self = StObject.set(x, "com.sun.star.drawing.Defaults", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDefaults(value: Defaults): Self = StObject.set(x, "com.sun.star.drawing.Defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDocumentSettings(value: DocumentSettings): Self = StObject.set(x, "com.sun.star.drawing.DocumentSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDocumentSettings(value: DocumentSettings): Self = StObject.set(x, "com.sun.star.drawing.DocumentSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDrawPage(value: DrawPage): Self = StObject.set(x, "com.sun.star.drawing.DrawPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDrawPage(value: DrawPage): Self = StObject.set(x, "com.sun.star.drawing.DrawPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDrawPages(value: DrawPages): Self = StObject.set(x, "com.sun.star.drawing.DrawPages", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDrawPages(value: DrawPages): Self = StObject.set(x, "com.sun.star.drawing.DrawPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDrawingDocument(value: DrawingDocument): Self = StObject.set(x, "com.sun.star.drawing.DrawingDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDrawingDocument(value: DrawingDocument): Self = StObject.set(x, "com.sun.star.drawing.DrawingDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDrawingDocumentDrawView(value: DrawingDocumentDrawView): Self = StObject.set(x, "com.sun.star.drawing.DrawingDocumentDrawView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDrawingDocumentDrawView(value: DrawingDocumentDrawView): Self = StObject.set(x, "com.sun.star.drawing.DrawingDocumentDrawView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDrawingDocumentFactory(value: DrawingDocumentFactory): Self = StObject.set(x, "com.sun.star.drawing.DrawingDocumentFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDrawingDocumentFactory(value: DrawingDocumentFactory): Self = StObject.set(x, "com.sun.star.drawing.DrawingDocumentFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEllipseShape(value: EllipseShape): Self = StObject.set(x, "com.sun.star.drawing.EllipseShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEllipseShape(value: EllipseShape): Self = StObject.set(x, "com.sun.star.drawing.EllipseShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeExtrusion(value: EnhancedCustomShapeExtrusion): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeExtrusion", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeExtrusion(value: EnhancedCustomShapeExtrusion): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeExtrusion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeGeometry(value: EnhancedCustomShapeGeometry): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeGeometry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeGeometry(value: EnhancedCustomShapeGeometry): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeGeometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeHandle(value: EnhancedCustomShapeHandle): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeHandle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeHandle(value: EnhancedCustomShapeHandle): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapePath(value: EnhancedCustomShapePath): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapePath", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapePath(value: EnhancedCustomShapePath): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeTextPath(value: EnhancedCustomShapeTextPath): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeTextPath", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeTextPath(value: EnhancedCustomShapeTextPath): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeTextPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotFillProperties(value: FillProperties): Self = StObject.set(x, "com.sun.star.drawing.FillProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotFillProperties(value: FillProperties): Self = StObject.set(x, "com.sun.star.drawing.FillProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGenericDrawPage(value: GenericDrawPage): Self = StObject.set(x, "com.sun.star.drawing.GenericDrawPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGenericDrawPage(value: GenericDrawPage): Self = StObject.set(x, "com.sun.star.drawing.GenericDrawPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGenericDrawingDocument(value: GenericDrawingDocument): Self = StObject.set(x, "com.sun.star.drawing.GenericDrawingDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGenericDrawingDocument(value: GenericDrawingDocument): Self = StObject.set(x, "com.sun.star.drawing.GenericDrawingDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGradientTable(value: GradientTable): Self = StObject.set(x, "com.sun.star.drawing.GradientTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGradientTable(value: GradientTable): Self = StObject.set(x, "com.sun.star.drawing.GradientTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGraphicExportFilter(value: GraphicExportFilter): Self = StObject.set(x, "com.sun.star.drawing.GraphicExportFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGraphicExportFilter(value: GraphicExportFilter): Self = StObject.set(x, "com.sun.star.drawing.GraphicExportFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGraphicObjectShape(value: GraphicObjectShape): Self = StObject.set(x, "com.sun.star.drawing.GraphicObjectShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGraphicObjectShape(value: GraphicObjectShape): Self = StObject.set(x, "com.sun.star.drawing.GraphicObjectShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGroupShape(value: GroupShape): Self = StObject.set(x, "com.sun.star.drawing.GroupShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGroupShape(value: GroupShape): Self = StObject.set(x, "com.sun.star.drawing.GroupShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHatchTable(value: HatchTable): Self = StObject.set(x, "com.sun.star.drawing.HatchTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHatchTable(value: HatchTable): Self = StObject.set(x, "com.sun.star.drawing.HatchTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotLayer(value: typings.activexLibreoffice.com_.sun.star.drawing.Layer): Self = StObject.set(x, "com.sun.star.drawing.Layer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotLayer(value: typings.activexLibreoffice.com_.sun.star.drawing.Layer): Self = StObject.set(x, "com.sun.star.drawing.Layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotLayerManager(value: LayerManager): Self = StObject.set(x, "com.sun.star.drawing.LayerManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotLayerManager(value: LayerManager): Self = StObject.set(x, "com.sun.star.drawing.LayerManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotLineProperties(value: LineProperties): Self = StObject.set(x, "com.sun.star.drawing.LineProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotLineProperties(value: LineProperties): Self = StObject.set(x, "com.sun.star.drawing.LineProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotLineShape(value: LineShape): Self = StObject.set(x, "com.sun.star.drawing.LineShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotLineShape(value: LineShape): Self = StObject.set(x, "com.sun.star.drawing.LineShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotMarkerTable(value: MarkerTable): Self = StObject.set(x, "com.sun.star.drawing.MarkerTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotMarkerTable(value: MarkerTable): Self = StObject.set(x, "com.sun.star.drawing.MarkerTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotMasterPage(value: MasterPage): Self = StObject.set(x, "com.sun.star.drawing.MasterPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotMasterPage(value: MasterPage): Self = StObject.set(x, "com.sun.star.drawing.MasterPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotMasterPages(value: MasterPages): Self = StObject.set(x, "com.sun.star.drawing.MasterPages", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotMasterPages(value: MasterPages): Self = StObject.set(x, "com.sun.star.drawing.MasterPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotMeasureProperties(value: MeasureProperties): Self = StObject.set(x, "com.sun.star.drawing.MeasureProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotMeasureProperties(value: MeasureProperties): Self = StObject.set(x, "com.sun.star.drawing.MeasureProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotMeasureShape(value: MeasureShape): Self = StObject.set(x, "com.sun.star.drawing.MeasureShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotMeasureShape(value: MeasureShape): Self = StObject.set(x, "com.sun.star.drawing.MeasureShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotModuleDispatcher(value: ModuleDispatcher): Self = StObject.set(x, "com.sun.star.drawing.ModuleDispatcher", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotModuleDispatcher(value: ModuleDispatcher): Self = StObject.set(x, "com.sun.star.drawing.ModuleDispatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotOLE2Shape(value: OLE2Shape): Self = StObject.set(x, "com.sun.star.drawing.OLE2Shape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotOLE2Shape(value: OLE2Shape): Self = StObject.set(x, "com.sun.star.drawing.OLE2Shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotOpenBezierShape(value: OpenBezierShape): Self = StObject.set(x, "com.sun.star.drawing.OpenBezierShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotOpenBezierShape(value: OpenBezierShape): Self = StObject.set(x, "com.sun.star.drawing.OpenBezierShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPageShape(value: PageShape): Self = StObject.set(x, "com.sun.star.drawing.PageShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPageShape(value: PageShape): Self = StObject.set(x, "com.sun.star.drawing.PageShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPluginShape(value: PluginShape): Self = StObject.set(x, "com.sun.star.drawing.PluginShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPluginShape(value: PluginShape): Self = StObject.set(x, "com.sun.star.drawing.PluginShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPolyLineShape(value: PolyLineShape): Self = StObject.set(x, "com.sun.star.drawing.PolyLineShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPolyLineShape(value: PolyLineShape): Self = StObject.set(x, "com.sun.star.drawing.PolyLineShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPolyPolygonBezierDescriptor(value: PolyPolygonBezierDescriptor): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonBezierDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPolyPolygonBezierDescriptor(value: PolyPolygonBezierDescriptor): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonBezierDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPolyPolygonBezierShape(value: PolyPolygonBezierShape): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonBezierShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPolyPolygonBezierShape(value: PolyPolygonBezierShape): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonBezierShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPolyPolygonDescriptor(value: PolyPolygonDescriptor): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPolyPolygonDescriptor(value: PolyPolygonDescriptor): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPolyPolygonShape(value: PolyPolygonShape): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPolyPolygonShape(value: PolyPolygonShape): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotRectangleShape(value: RectangleShape): Self = StObject.set(x, "com.sun.star.drawing.RectangleShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotRectangleShape(value: RectangleShape): Self = StObject.set(x, "com.sun.star.drawing.RectangleShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotRotationDescriptor(value: RotationDescriptor): Self = StObject.set(x, "com.sun.star.drawing.RotationDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotRotationDescriptor(value: RotationDescriptor): Self = StObject.set(x, "com.sun.star.drawing.RotationDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotShadowProperties(value: ShadowProperties): Self = StObject.set(x, "com.sun.star.drawing.ShadowProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotShadowProperties(value: ShadowProperties): Self = StObject.set(x, "com.sun.star.drawing.ShadowProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotShape(value: Shape): Self = StObject.set(x, "com.sun.star.drawing.Shape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotShape(value: Shape): Self = StObject.set(x, "com.sun.star.drawing.Shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotShapeCollection(value: ShapeCollection): Self = StObject.set(x, "com.sun.star.drawing.ShapeCollection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotShapeCollection(value: ShapeCollection): Self = StObject.set(x, "com.sun.star.drawing.ShapeCollection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotShapes(value: Shapes): Self = StObject.set(x, "com.sun.star.drawing.Shapes", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotShapes(value: Shapes): Self = StObject.set(x, "com.sun.star.drawing.Shapes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotSlideRenderer(value: SlideRenderer): Self = StObject.set(x, "com.sun.star.drawing.SlideRenderer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotSlideRenderer(value: SlideRenderer): Self = StObject.set(x, "com.sun.star.drawing.SlideRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotSlideSorter(value: SlideSorter): Self = StObject.set(x, "com.sun.star.drawing.SlideSorter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotSlideSorter(value: SlideSorter): Self = StObject.set(x, "com.sun.star.drawing.SlideSorter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotText(value: Text): Self = StObject.set(x, "com.sun.star.drawing.Text", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotText(value: Text): Self = StObject.set(x, "com.sun.star.drawing.Text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotTextProperties(value: TextProperties): Self = StObject.set(x, "com.sun.star.drawing.TextProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotTextProperties(value: TextProperties): Self = StObject.set(x, "com.sun.star.drawing.TextProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotTextShape(value: TextShape): Self = StObject.set(x, "com.sun.star.drawing.TextShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotTextShape(value: TextShape): Self = StObject.set(x, "com.sun.star.drawing.TextShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotTransparencyGradientTable(value: TransparencyGradientTable): Self = StObject.set(x, "com.sun.star.drawing.TransparencyGradientTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotTransparencyGradientTable(value: TransparencyGradientTable): Self = StObject.set(x, "com.sun.star.drawing.TransparencyGradientTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotBasicPaneFactory(value: BasicPaneFactory): Self = StObject.set(x, "com.sun.star.drawing.framework.BasicPaneFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotBasicPaneFactory(value: BasicPaneFactory): Self = StObject.set(x, "com.sun.star.drawing.framework.BasicPaneFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotBasicToolBarFactory(value: BasicToolBarFactory): Self = StObject.set(x, "com.sun.star.drawing.framework.BasicToolBarFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotBasicToolBarFactory(value: BasicToolBarFactory): Self = StObject.set(x, "com.sun.star.drawing.framework.BasicToolBarFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotBasicViewFactory(value: BasicViewFactory): Self = StObject.set(x, "com.sun.star.drawing.framework.BasicViewFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotBasicViewFactory(value: BasicViewFactory): Self = StObject.set(x, "com.sun.star.drawing.framework.BasicViewFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotConfiguration(value: Configuration): Self = StObject.set(x, "com.sun.star.drawing.framework.Configuration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotConfiguration(value: Configuration): Self = StObject.set(x, "com.sun.star.drawing.framework.Configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotConfigurationController(value: ConfigurationController): Self = StObject.set(x, "com.sun.star.drawing.framework.ConfigurationController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotConfigurationController(value: ConfigurationController): Self = StObject.set(x, "com.sun.star.drawing.framework.ConfigurationController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotModuleController(value: ModuleController): Self = StObject.set(x, "com.sun.star.drawing.framework.ModuleController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotModuleController(value: ModuleController): Self = StObject.set(x, "com.sun.star.drawing.framework.ModuleController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotResourceId(value: ResourceId): Self = StObject.set(x, "com.sun.star.drawing.framework.ResourceId", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotResourceId(value: ResourceId): Self = StObject.set(x, "com.sun.star.drawing.framework.ResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotBaseStorage(value: BaseStorage): Self = StObject.set(x, "com.sun.star.embed.BaseStorage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotBaseStorage(value: BaseStorage): Self = StObject.set(x, "com.sun.star.embed.BaseStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotDocumentCloser(value: DocumentCloser): Self = StObject.set(x, "com.sun.star.embed.DocumentCloser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotDocumentCloser(value: DocumentCloser): Self = StObject.set(x, "com.sun.star.embed.DocumentCloser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotEmbeddedObjectCreator(value: EmbeddedObjectCreator): Self = StObject.set(x, "com.sun.star.embed.EmbeddedObjectCreator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotEmbeddedObjectCreator(value: EmbeddedObjectCreator): Self = StObject.set(x, "com.sun.star.embed.EmbeddedObjectCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotEmbeddedObjectDescriptor(value: EmbeddedObjectDescriptor): Self = StObject.set(x, "com.sun.star.embed.EmbeddedObjectDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotEmbeddedObjectDescriptor(value: EmbeddedObjectDescriptor): Self = StObject.set(x, "com.sun.star.embed.EmbeddedObjectDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotFileSystemStorage(value: FileSystemStorage): Self = StObject.set(x, "com.sun.star.embed.FileSystemStorage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotFileSystemStorage(value: FileSystemStorage): Self = StObject.set(x, "com.sun.star.embed.FileSystemStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotFileSystemStorageFactory(value: FileSystemStorageFactory): Self = StObject.set(x, "com.sun.star.embed.FileSystemStorageFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotFileSystemStorageFactory(value: FileSystemStorageFactory): Self = StObject.set(x, "com.sun.star.embed.FileSystemStorageFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotHatchWindowFactory(value: HatchWindowFactory): Self = StObject.set(x, "com.sun.star.embed.HatchWindowFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotHatchWindowFactory(value: HatchWindowFactory): Self = StObject.set(x, "com.sun.star.embed.HatchWindowFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotInstanceLocker(value: InstanceLocker): Self = StObject.set(x, "com.sun.star.embed.InstanceLocker", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotInstanceLocker(value: InstanceLocker): Self = StObject.set(x, "com.sun.star.embed.InstanceLocker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotMSOLEObjectSystemCreator(value: MSOLEObjectSystemCreator): Self = StObject.set(x, "com.sun.star.embed.MSOLEObjectSystemCreator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotMSOLEObjectSystemCreator(value: MSOLEObjectSystemCreator): Self = StObject.set(x, "com.sun.star.embed.MSOLEObjectSystemCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotOLEEmbeddedObjectFactory(value: OLEEmbeddedObjectFactory): Self = StObject.set(x, "com.sun.star.embed.OLEEmbeddedObjectFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotOLEEmbeddedObjectFactory(value: OLEEmbeddedObjectFactory): Self = StObject.set(x, "com.sun.star.embed.OLEEmbeddedObjectFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotOLESimpleStorage(value: OLESimpleStorage): Self = StObject.set(x, "com.sun.star.embed.OLESimpleStorage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotOLESimpleStorage(value: OLESimpleStorage): Self = StObject.set(x, "com.sun.star.embed.OLESimpleStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotOOoEmbeddedObjectFactory(value: OOoEmbeddedObjectFactory): Self = StObject.set(x, "com.sun.star.embed.OOoEmbeddedObjectFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotOOoEmbeddedObjectFactory(value: OOoEmbeddedObjectFactory): Self = StObject.set(x, "com.sun.star.embed.OOoEmbeddedObjectFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotStorage(value: Storage): Self = StObject.set(x, "com.sun.star.embed.Storage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotStorage(value: Storage): Self = StObject.set(x, "com.sun.star.embed.Storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotStorageFactory(value: StorageFactory): Self = StObject.set(x, "com.sun.star.embed.StorageFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotStorageFactory(value: StorageFactory): Self = StObject.set(x, "com.sun.star.embed.StorageFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotStorageStream(value: StorageStream): Self = StObject.set(x, "com.sun.star.embed.StorageStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotStorageStream(value: StorageStream): Self = StObject.set(x, "com.sun.star.embed.StorageStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotControlFontDialog(value: ControlFontDialog): Self = StObject.set(x, "com.sun.star.form.ControlFontDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotControlFontDialog(value: ControlFontDialog): Self = StObject.set(x, "com.sun.star.form.ControlFontDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotDataAwareControlModel(value: DataAwareControlModel): Self = StObject.set(x, "com.sun.star.form.DataAwareControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotDataAwareControlModel(value: DataAwareControlModel): Self = StObject.set(x, "com.sun.star.form.DataAwareControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotFormComponent(value: FormComponent): Self = StObject.set(x, "com.sun.star.form.FormComponent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotFormComponent(value: FormComponent): Self = StObject.set(x, "com.sun.star.form.FormComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotFormComponents(value: FormComponents): Self = StObject.set(x, "com.sun.star.form.FormComponents", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotFormComponents(value: FormComponents): Self = StObject.set(x, "com.sun.star.form.FormComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotFormControlModel(value: FormControlModel): Self = StObject.set(x, "com.sun.star.form.FormControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotFormControlModel(value: FormControlModel): Self = StObject.set(x, "com.sun.star.form.FormControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotFormController(value: FormController): Self = StObject.set(x, "com.sun.star.form.FormController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotFormController(value: FormController): Self = StObject.set(x, "com.sun.star.form.FormController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotFormControllerDispatcher(value: FormControllerDispatcher): Self = StObject.set(x, "com.sun.star.form.FormControllerDispatcher", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotFormControllerDispatcher(value: FormControllerDispatcher): Self = StObject.set(x, "com.sun.star.form.FormControllerDispatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotForms(value: Forms): Self = StObject.set(x, "com.sun.star.form.Forms", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotForms(value: Forms): Self = StObject.set(x, "com.sun.star.form.Forms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotPropertyBrowserController(value: PropertyBrowserController): Self = StObject.set(x, "com.sun.star.form.PropertyBrowserController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotPropertyBrowserController(value: PropertyBrowserController): Self = StObject.set(x, "com.sun.star.form.PropertyBrowserController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotTabOrderDialog(value: TabOrderDialog): Self = StObject.set(x, "com.sun.star.form.TabOrderDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotTabOrderDialog(value: TabOrderDialog): Self = StObject.set(x, "com.sun.star.form.TabOrderDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableControlModel(value: BindableControlModel): Self = StObject.set(x, "com.sun.star.form.binding.BindableControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableControlModel(value: BindableControlModel): Self = StObject.set(x, "com.sun.star.form.binding.BindableControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDataAwareControlModel(value: BindableDataAwareControlModel): Self = StObject.set(x, "com.sun.star.form.binding.BindableDataAwareControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDataAwareControlModel(value: BindableDataAwareControlModel): Self = StObject.set(x, "com.sun.star.form.binding.BindableDataAwareControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseCheckBox(value: BindableDatabaseCheckBox): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseCheckBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseCheckBox(value: BindableDatabaseCheckBox): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseCheckBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseComboBox(value: BindableDatabaseComboBox): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseComboBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseComboBox(value: BindableDatabaseComboBox): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseComboBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseDateField(value: BindableDatabaseDateField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseDateField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseDateField(value: BindableDatabaseDateField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseDateField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseFormattedField(value: BindableDatabaseFormattedField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseFormattedField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseFormattedField(value: BindableDatabaseFormattedField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseFormattedField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseListBox(value: BindableDatabaseListBox): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseListBox(value: BindableDatabaseListBox): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseNumericField(value: BindableDatabaseNumericField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseNumericField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseNumericField(value: BindableDatabaseNumericField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseNumericField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseRadioButton(value: BindableDatabaseRadioButton): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseRadioButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseRadioButton(value: BindableDatabaseRadioButton): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseRadioButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseTextField(value: BindableDatabaseTextField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseTextField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseTextField(value: BindableDatabaseTextField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseTextField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableDatabaseTimeField(value: BindableDatabaseTimeField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseTimeField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableDatabaseTimeField(value: BindableDatabaseTimeField): Self = StObject.set(x, "com.sun.star.form.binding.BindableDatabaseTimeField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotBindableIntegerValueRange(value: BindableIntegerValueRange): Self = StObject.set(x, "com.sun.star.form.binding.BindableIntegerValueRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotBindableIntegerValueRange(value: BindableIntegerValueRange): Self = StObject.set(x, "com.sun.star.form.binding.BindableIntegerValueRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotListEntrySource(value: ListEntrySource): Self = StObject.set(x, "com.sun.star.form.binding.ListEntrySource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotListEntrySource(value: ListEntrySource): Self = StObject.set(x, "com.sun.star.form.binding.ListEntrySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotValueBinding(value: ValueBinding): Self = StObject.set(x, "com.sun.star.form.binding.ValueBinding", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotValueBinding(value: ValueBinding): Self = StObject.set(x, "com.sun.star.form.binding.ValueBinding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotCheckBox(value: CheckBox): Self = StObject.set(x, "com.sun.star.form.component.CheckBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotCheckBox(value: CheckBox): Self = StObject.set(x, "com.sun.star.form.component.CheckBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotComboBox(value: ComboBox): Self = StObject.set(x, "com.sun.star.form.component.ComboBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotComboBox(value: ComboBox): Self = StObject.set(x, "com.sun.star.form.component.ComboBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotCommandButton(value: CommandButton): Self = StObject.set(x, "com.sun.star.form.component.CommandButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotCommandButton(value: CommandButton): Self = StObject.set(x, "com.sun.star.form.component.CommandButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotCurrencyField(value: CurrencyField): Self = StObject.set(x, "com.sun.star.form.component.CurrencyField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotCurrencyField(value: CurrencyField): Self = StObject.set(x, "com.sun.star.form.component.CurrencyField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDataForm(value: DataForm): Self = StObject.set(x, "com.sun.star.form.component.DataForm", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDataForm(value: DataForm): Self = StObject.set(x, "com.sun.star.form.component.DataForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseCheckBox(value: DatabaseCheckBox): Self = StObject.set(x, "com.sun.star.form.component.DatabaseCheckBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseCheckBox(value: DatabaseCheckBox): Self = StObject.set(x, "com.sun.star.form.component.DatabaseCheckBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseComboBox(value: DatabaseComboBox): Self = StObject.set(x, "com.sun.star.form.component.DatabaseComboBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseComboBox(value: DatabaseComboBox): Self = StObject.set(x, "com.sun.star.form.component.DatabaseComboBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseCurrencyField(value: DatabaseCurrencyField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseCurrencyField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseCurrencyField(value: DatabaseCurrencyField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseCurrencyField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseDateField(value: DatabaseDateField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseDateField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseDateField(value: DatabaseDateField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseDateField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseFormattedField(value: DatabaseFormattedField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseFormattedField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseFormattedField(value: DatabaseFormattedField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseFormattedField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseImageControl(value: DatabaseImageControl): Self = StObject.set(x, "com.sun.star.form.component.DatabaseImageControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseImageControl(value: DatabaseImageControl): Self = StObject.set(x, "com.sun.star.form.component.DatabaseImageControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseListBox(value: DatabaseListBox): Self = StObject.set(x, "com.sun.star.form.component.DatabaseListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseListBox(value: DatabaseListBox): Self = StObject.set(x, "com.sun.star.form.component.DatabaseListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseNumericField(value: DatabaseNumericField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseNumericField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseNumericField(value: DatabaseNumericField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseNumericField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabasePatternField(value: DatabasePatternField): Self = StObject.set(x, "com.sun.star.form.component.DatabasePatternField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabasePatternField(value: DatabasePatternField): Self = StObject.set(x, "com.sun.star.form.component.DatabasePatternField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseRadioButton(value: DatabaseRadioButton): Self = StObject.set(x, "com.sun.star.form.component.DatabaseRadioButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseRadioButton(value: DatabaseRadioButton): Self = StObject.set(x, "com.sun.star.form.component.DatabaseRadioButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseTextField(value: DatabaseTextField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseTextField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseTextField(value: DatabaseTextField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseTextField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDatabaseTimeField(value: DatabaseTimeField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseTimeField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDatabaseTimeField(value: DatabaseTimeField): Self = StObject.set(x, "com.sun.star.form.component.DatabaseTimeField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotDateField(value: DateField): Self = StObject.set(x, "com.sun.star.form.component.DateField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotDateField(value: DateField): Self = StObject.set(x, "com.sun.star.form.component.DateField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotFileControl(value: FileControl): Self = StObject.set(x, "com.sun.star.form.component.FileControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotFileControl(value: FileControl): Self = StObject.set(x, "com.sun.star.form.component.FileControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotFixedText(value: FixedText): Self = StObject.set(x, "com.sun.star.form.component.FixedText", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotFixedText(value: FixedText): Self = StObject.set(x, "com.sun.star.form.component.FixedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotForm(value: Form): Self = StObject.set(x, "com.sun.star.form.component.Form", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotForm(value: Form): Self = StObject.set(x, "com.sun.star.form.component.Form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotFormattedField(value: FormattedField): Self = StObject.set(x, "com.sun.star.form.component.FormattedField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotFormattedField(value: FormattedField): Self = StObject.set(x, "com.sun.star.form.component.FormattedField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotGridControl(value: GridControl): Self = StObject.set(x, "com.sun.star.form.component.GridControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotGridControl(value: GridControl): Self = StObject.set(x, "com.sun.star.form.component.GridControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotGroupBox(value: GroupBox): Self = StObject.set(x, "com.sun.star.form.component.GroupBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotGroupBox(value: GroupBox): Self = StObject.set(x, "com.sun.star.form.component.GroupBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotHTMLForm(value: HTMLForm): Self = StObject.set(x, "com.sun.star.form.component.HTMLForm", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotHTMLForm(value: HTMLForm): Self = StObject.set(x, "com.sun.star.form.component.HTMLForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotHiddenControl(value: HiddenControl): Self = StObject.set(x, "com.sun.star.form.component.HiddenControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotHiddenControl(value: HiddenControl): Self = StObject.set(x, "com.sun.star.form.component.HiddenControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotImageButton(value: ImageButton): Self = StObject.set(x, "com.sun.star.form.component.ImageButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotImageButton(value: ImageButton): Self = StObject.set(x, "com.sun.star.form.component.ImageButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotListBox(value: ListBox): Self = StObject.set(x, "com.sun.star.form.component.ListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotListBox(value: ListBox): Self = StObject.set(x, "com.sun.star.form.component.ListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotNavigationToolBar(value: NavigationToolBar): Self = StObject.set(x, "com.sun.star.form.component.NavigationToolBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotNavigationToolBar(value: NavigationToolBar): Self = StObject.set(x, "com.sun.star.form.component.NavigationToolBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotNumericField(value: NumericField): Self = StObject.set(x, "com.sun.star.form.component.NumericField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotNumericField(value: NumericField): Self = StObject.set(x, "com.sun.star.form.component.NumericField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotPatternField(value: PatternField): Self = StObject.set(x, "com.sun.star.form.component.PatternField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotPatternField(value: PatternField): Self = StObject.set(x, "com.sun.star.form.component.PatternField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotRadioButton(value: RadioButton): Self = StObject.set(x, "com.sun.star.form.component.RadioButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotRadioButton(value: RadioButton): Self = StObject.set(x, "com.sun.star.form.component.RadioButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotRichTextControl(value: RichTextControl): Self = StObject.set(x, "com.sun.star.form.component.RichTextControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotRichTextControl(value: RichTextControl): Self = StObject.set(x, "com.sun.star.form.component.RichTextControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotScrollBar(value: ScrollBar): Self = StObject.set(x, "com.sun.star.form.component.ScrollBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotScrollBar(value: ScrollBar): Self = StObject.set(x, "com.sun.star.form.component.ScrollBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotSpinButton(value: SpinButton): Self = StObject.set(x, "com.sun.star.form.component.SpinButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotSpinButton(value: SpinButton): Self = StObject.set(x, "com.sun.star.form.component.SpinButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotSubmitButton(value: SubmitButton): Self = StObject.set(x, "com.sun.star.form.component.SubmitButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotSubmitButton(value: SubmitButton): Self = StObject.set(x, "com.sun.star.form.component.SubmitButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotTextField(value: TextField): Self = StObject.set(x, "com.sun.star.form.component.TextField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotTextField(value: TextField): Self = StObject.set(x, "com.sun.star.form.component.TextField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcomponentDotTimeField(value: TimeField): Self = StObject.set(x, "com.sun.star.form.component.TimeField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcomponentDotTimeField(value: TimeField): Self = StObject.set(x, "com.sun.star.form.component.TimeField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotCheckBox(value: typings.activexLibreoffice.com_.sun.star.form.control.CheckBox): Self = StObject.set(x, "com.sun.star.form.control.CheckBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotCheckBox(value: typings.activexLibreoffice.com_.sun.star.form.control.CheckBox): Self = StObject.set(x, "com.sun.star.form.control.CheckBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotComboBox(value: typings.activexLibreoffice.com_.sun.star.form.control.ComboBox): Self = StObject.set(x, "com.sun.star.form.control.ComboBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotComboBox(value: typings.activexLibreoffice.com_.sun.star.form.control.ComboBox): Self = StObject.set(x, "com.sun.star.form.control.ComboBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotCommandButton(value: typings.activexLibreoffice.com_.sun.star.form.control.CommandButton): Self = StObject.set(x, "com.sun.star.form.control.CommandButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotCommandButton(value: typings.activexLibreoffice.com_.sun.star.form.control.CommandButton): Self = StObject.set(x, "com.sun.star.form.control.CommandButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotCurrencyField(value: typings.activexLibreoffice.com_.sun.star.form.control.CurrencyField): Self = StObject.set(x, "com.sun.star.form.control.CurrencyField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotCurrencyField(value: typings.activexLibreoffice.com_.sun.star.form.control.CurrencyField): Self = StObject.set(x, "com.sun.star.form.control.CurrencyField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotDateField(value: typings.activexLibreoffice.com_.sun.star.form.control.DateField): Self = StObject.set(x, "com.sun.star.form.control.DateField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotDateField(value: typings.activexLibreoffice.com_.sun.star.form.control.DateField): Self = StObject.set(x, "com.sun.star.form.control.DateField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotFilterControl(value: FilterControl): Self = StObject.set(x, "com.sun.star.form.control.FilterControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotFilterControl(value: FilterControl): Self = StObject.set(x, "com.sun.star.form.control.FilterControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotFormattedField(value: typings.activexLibreoffice.com_.sun.star.form.control.FormattedField): Self = StObject.set(x, "com.sun.star.form.control.FormattedField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotFormattedField(value: typings.activexLibreoffice.com_.sun.star.form.control.FormattedField): Self = StObject.set(x, "com.sun.star.form.control.FormattedField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotGridControl(value: typings.activexLibreoffice.com_.sun.star.form.control.GridControl): Self = StObject.set(x, "com.sun.star.form.control.GridControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotGridControl(value: typings.activexLibreoffice.com_.sun.star.form.control.GridControl): Self = StObject.set(x, "com.sun.star.form.control.GridControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotGroupBox(value: typings.activexLibreoffice.com_.sun.star.form.control.GroupBox): Self = StObject.set(x, "com.sun.star.form.control.GroupBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotGroupBox(value: typings.activexLibreoffice.com_.sun.star.form.control.GroupBox): Self = StObject.set(x, "com.sun.star.form.control.GroupBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotImageButton(value: typings.activexLibreoffice.com_.sun.star.form.control.ImageButton): Self = StObject.set(x, "com.sun.star.form.control.ImageButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotImageButton(value: typings.activexLibreoffice.com_.sun.star.form.control.ImageButton): Self = StObject.set(x, "com.sun.star.form.control.ImageButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotImageControl(value: ImageControl): Self = StObject.set(x, "com.sun.star.form.control.ImageControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotImageControl(value: ImageControl): Self = StObject.set(x, "com.sun.star.form.control.ImageControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotInteractionGridControl(value: InteractionGridControl): Self = StObject.set(x, "com.sun.star.form.control.InteractionGridControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotInteractionGridControl(value: InteractionGridControl): Self = StObject.set(x, "com.sun.star.form.control.InteractionGridControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotListBox(value: typings.activexLibreoffice.com_.sun.star.form.control.ListBox): Self = StObject.set(x, "com.sun.star.form.control.ListBox", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotListBox(value: typings.activexLibreoffice.com_.sun.star.form.control.ListBox): Self = StObject.set(x, "com.sun.star.form.control.ListBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotNavigationToolBar(value: typings.activexLibreoffice.com_.sun.star.form.control.NavigationToolBar): Self = StObject.set(x, "com.sun.star.form.control.NavigationToolBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotNavigationToolBar(value: typings.activexLibreoffice.com_.sun.star.form.control.NavigationToolBar): Self = StObject.set(x, "com.sun.star.form.control.NavigationToolBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotNumericField(value: typings.activexLibreoffice.com_.sun.star.form.control.NumericField): Self = StObject.set(x, "com.sun.star.form.control.NumericField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotNumericField(value: typings.activexLibreoffice.com_.sun.star.form.control.NumericField): Self = StObject.set(x, "com.sun.star.form.control.NumericField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotPatternField(value: typings.activexLibreoffice.com_.sun.star.form.control.PatternField): Self = StObject.set(x, "com.sun.star.form.control.PatternField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotPatternField(value: typings.activexLibreoffice.com_.sun.star.form.control.PatternField): Self = StObject.set(x, "com.sun.star.form.control.PatternField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotRadioButton(value: typings.activexLibreoffice.com_.sun.star.form.control.RadioButton): Self = StObject.set(x, "com.sun.star.form.control.RadioButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotRadioButton(value: typings.activexLibreoffice.com_.sun.star.form.control.RadioButton): Self = StObject.set(x, "com.sun.star.form.control.RadioButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotSubmitButton(value: typings.activexLibreoffice.com_.sun.star.form.control.SubmitButton): Self = StObject.set(x, "com.sun.star.form.control.SubmitButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotSubmitButton(value: typings.activexLibreoffice.com_.sun.star.form.control.SubmitButton): Self = StObject.set(x, "com.sun.star.form.control.SubmitButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotTextField(value: typings.activexLibreoffice.com_.sun.star.form.control.TextField): Self = StObject.set(x, "com.sun.star.form.control.TextField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotTextField(value: typings.activexLibreoffice.com_.sun.star.form.control.TextField): Self = StObject.set(x, "com.sun.star.form.control.TextField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotcontrolDotTimeField(value: typings.activexLibreoffice.com_.sun.star.form.control.TimeField): Self = StObject.set(x, "com.sun.star.form.control.TimeField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotcontrolDotTimeField(value: typings.activexLibreoffice.com_.sun.star.form.control.TimeField): Self = StObject.set(x, "com.sun.star.form.control.TimeField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotButtonNavigationHandler(value: ButtonNavigationHandler): Self = StObject.set(x, "com.sun.star.form.inspection.ButtonNavigationHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotButtonNavigationHandler(value: ButtonNavigationHandler): Self = StObject.set(x, "com.sun.star.form.inspection.ButtonNavigationHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotCellBindingPropertyHandler(value: CellBindingPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.CellBindingPropertyHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotCellBindingPropertyHandler(value: CellBindingPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.CellBindingPropertyHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotDefaultFormComponentInspectorModel(value: DefaultFormComponentInspectorModel): Self = StObject.set(x, "com.sun.star.form.inspection.DefaultFormComponentInspectorModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotDefaultFormComponentInspectorModel(value: DefaultFormComponentInspectorModel): Self = StObject.set(x, "com.sun.star.form.inspection.DefaultFormComponentInspectorModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotEditPropertyHandler(value: EditPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.EditPropertyHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotEditPropertyHandler(value: EditPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.EditPropertyHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotEventHandler(value: EventHandler): Self = StObject.set(x, "com.sun.star.form.inspection.EventHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotEventHandler(value: EventHandler): Self = StObject.set(x, "com.sun.star.form.inspection.EventHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotFormComponentPropertyHandler(value: FormComponentPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.FormComponentPropertyHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotFormComponentPropertyHandler(value: FormComponentPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.FormComponentPropertyHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotSubmissionPropertyHandler(value: SubmissionPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.SubmissionPropertyHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotSubmissionPropertyHandler(value: SubmissionPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.SubmissionPropertyHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotXMLFormsPropertyHandler(value: XMLFormsPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.XMLFormsPropertyHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotXMLFormsPropertyHandler(value: XMLFormsPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.XMLFormsPropertyHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotinspectionDotXSDValidationPropertyHandler(value: XSDValidationPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.XSDValidationPropertyHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotinspectionDotXSDValidationPropertyHandler(value: XSDValidationPropertyHandler): Self = StObject.set(x, "com.sun.star.form.inspection.XSDValidationPropertyHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotruntimeDotFormController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.FormController): Self = StObject.set(x, "com.sun.star.form.runtime.FormController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotruntimeDotFormController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.FormController): Self = StObject.set(x, "com.sun.star.form.runtime.FormController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotruntimeDotFormOperations(value: FormOperations): Self = StObject.set(x, "com.sun.star.form.runtime.FormOperations", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotruntimeDotFormOperations(value: FormOperations): Self = StObject.set(x, "com.sun.star.form.runtime.FormOperations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotvalidationDotValidatableBindableControlModel(value: ValidatableBindableControlModel): Self = StObject.set(x, "com.sun.star.form.validation.ValidatableBindableControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotvalidationDotValidatableBindableControlModel(value: ValidatableBindableControlModel): Self = StObject.set(x, "com.sun.star.form.validation.ValidatableBindableControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotvalidationDotValidatableControlModel(value: ValidatableControlModel): Self = StObject.set(x, "com.sun.star.form.validation.ValidatableControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotvalidationDotValidatableControlModel(value: ValidatableControlModel): Self = StObject.set(x, "com.sun.star.form.validation.ValidatableControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformulaDotAccessibleFormulaText(value: AccessibleFormulaText): Self = StObject.set(x, "com.sun.star.formula.AccessibleFormulaText", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformulaDotAccessibleFormulaText(value: AccessibleFormulaText): Self = StObject.set(x, "com.sun.star.formula.AccessibleFormulaText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformulaDotAccessibleFormulaView(value: AccessibleFormulaView): Self = StObject.set(x, "com.sun.star.formula.AccessibleFormulaView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformulaDotAccessibleFormulaView(value: AccessibleFormulaView): Self = StObject.set(x, "com.sun.star.formula.AccessibleFormulaView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformulaDotFormulaProperties(value: FormulaProperties): Self = StObject.set(x, "com.sun.star.formula.FormulaProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformulaDotFormulaProperties(value: FormulaProperties): Self = StObject.set(x, "com.sun.star.formula.FormulaProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotAppDispatchProvider(value: AppDispatchProvider): Self = StObject.set(x, "com.sun.star.frame.AppDispatchProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotAppDispatchProvider(value: AppDispatchProvider): Self = StObject.set(x, "com.sun.star.frame.AppDispatchProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotAutoRecovery(value: AutoRecovery): Self = StObject.set(x, "com.sun.star.frame.AutoRecovery", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotAutoRecovery(value: AutoRecovery): Self = StObject.set(x, "com.sun.star.frame.AutoRecovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotBibliography(value: Bibliography): Self = StObject.set(x, "com.sun.star.frame.Bibliography", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotBibliography(value: Bibliography): Self = StObject.set(x, "com.sun.star.frame.Bibliography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotComponents(value: Components): Self = StObject.set(x, "com.sun.star.frame.Components", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotComponents(value: Components): Self = StObject.set(x, "com.sun.star.frame.Components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotContentHandler(value: ContentHandler): Self = StObject.set(x, "com.sun.star.frame.ContentHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotContentHandler(value: ContentHandler): Self = StObject.set(x, "com.sun.star.frame.ContentHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotContentHandlerFactory(value: ContentHandlerFactory): Self = StObject.set(x, "com.sun.star.frame.ContentHandlerFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotContentHandlerFactory(value: ContentHandlerFactory): Self = StObject.set(x, "com.sun.star.frame.ContentHandlerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotController(value: Controller): Self = StObject.set(x, "com.sun.star.frame.Controller", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotController(value: Controller): Self = StObject.set(x, "com.sun.star.frame.Controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDesktop(value: Desktop): Self = StObject.set(x, "com.sun.star.frame.Desktop", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDesktop(value: Desktop): Self = StObject.set(x, "com.sun.star.frame.Desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDesktopTask(value: DesktopTask): Self = StObject.set(x, "com.sun.star.frame.DesktopTask", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDesktopTask(value: DesktopTask): Self = StObject.set(x, "com.sun.star.frame.DesktopTask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDesktopTasks(value: DesktopTasks): Self = StObject.set(x, "com.sun.star.frame.DesktopTasks", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDesktopTasks(value: DesktopTasks): Self = StObject.set(x, "com.sun.star.frame.DesktopTasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchHelper(value: DispatchHelper): Self = StObject.set(x, "com.sun.star.frame.DispatchHelper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchHelper(value: DispatchHelper): Self = StObject.set(x, "com.sun.star.frame.DispatchHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchProvider(value: DispatchProvider): Self = StObject.set(x, "com.sun.star.frame.DispatchProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchProvider(value: DispatchProvider): Self = StObject.set(x, "com.sun.star.frame.DispatchProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchRecorder(value: DispatchRecorder): Self = StObject.set(x, "com.sun.star.frame.DispatchRecorder", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchRecorder(value: DispatchRecorder): Self = StObject.set(x, "com.sun.star.frame.DispatchRecorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchRecorderSupplier(value: DispatchRecorderSupplier): Self = StObject.set(x, "com.sun.star.frame.DispatchRecorderSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchRecorderSupplier(value: DispatchRecorderSupplier): Self = StObject.set(x, "com.sun.star.frame.DispatchRecorderSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDocumentTemplates(value: DocumentTemplates): Self = StObject.set(x, "com.sun.star.frame.DocumentTemplates", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDocumentTemplates(value: DocumentTemplates): Self = StObject.set(x, "com.sun.star.frame.DocumentTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotFrame(value: Frame): Self = StObject.set(x, "com.sun.star.frame.Frame", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotFrame(value: Frame): Self = StObject.set(x, "com.sun.star.frame.Frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotFrameControl(value: FrameControl): Self = StObject.set(x, "com.sun.star.frame.FrameControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotFrameControl(value: FrameControl): Self = StObject.set(x, "com.sun.star.frame.FrameControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotFrameLoader(value: FrameLoader): Self = StObject.set(x, "com.sun.star.frame.FrameLoader", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotFrameLoader(value: FrameLoader): Self = StObject.set(x, "com.sun.star.frame.FrameLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotFrameLoaderFactory(value: FrameLoaderFactory): Self = StObject.set(x, "com.sun.star.frame.FrameLoaderFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotFrameLoaderFactory(value: FrameLoaderFactory): Self = StObject.set(x, "com.sun.star.frame.FrameLoaderFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotFramesContainer(value: FramesContainer): Self = StObject.set(x, "com.sun.star.frame.FramesContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotFramesContainer(value: FramesContainer): Self = StObject.set(x, "com.sun.star.frame.FramesContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotGlobalEventBroadcaster(value: GlobalEventBroadcaster): Self = StObject.set(x, "com.sun.star.frame.GlobalEventBroadcaster", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotGlobalEventBroadcaster(value: GlobalEventBroadcaster): Self = StObject.set(x, "com.sun.star.frame.GlobalEventBroadcaster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotLayoutManager(value: LayoutManager): Self = StObject.set(x, "com.sun.star.frame.LayoutManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotLayoutManager(value: LayoutManager): Self = StObject.set(x, "com.sun.star.frame.LayoutManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotMediaTypeDetectionHelper(value: MediaTypeDetectionHelper): Self = StObject.set(x, "com.sun.star.frame.MediaTypeDetectionHelper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotMediaTypeDetectionHelper(value: MediaTypeDetectionHelper): Self = StObject.set(x, "com.sun.star.frame.MediaTypeDetectionHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotModuleManager(value: ModuleManager): Self = StObject.set(x, "com.sun.star.frame.ModuleManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotModuleManager(value: ModuleManager): Self = StObject.set(x, "com.sun.star.frame.ModuleManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotOfficeFrameLoader(value: OfficeFrameLoader): Self = StObject.set(x, "com.sun.star.frame.OfficeFrameLoader", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotOfficeFrameLoader(value: OfficeFrameLoader): Self = StObject.set(x, "com.sun.star.frame.OfficeFrameLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotPopupMenuController(value: PopupMenuController): Self = StObject.set(x, "com.sun.star.frame.PopupMenuController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotPopupMenuController(value: PopupMenuController): Self = StObject.set(x, "com.sun.star.frame.PopupMenuController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotPopupMenuControllerFactory(value: PopupMenuControllerFactory): Self = StObject.set(x, "com.sun.star.frame.PopupMenuControllerFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotPopupMenuControllerFactory(value: PopupMenuControllerFactory): Self = StObject.set(x, "com.sun.star.frame.PopupMenuControllerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotProtocolHandler(value: ProtocolHandler): Self = StObject.set(x, "com.sun.star.frame.ProtocolHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotProtocolHandler(value: ProtocolHandler): Self = StObject.set(x, "com.sun.star.frame.ProtocolHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotSessionListener(value: SessionListener): Self = StObject.set(x, "com.sun.star.frame.SessionListener", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotSessionListener(value: SessionListener): Self = StObject.set(x, "com.sun.star.frame.SessionListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotSessionManager(value: SessionManager): Self = StObject.set(x, "com.sun.star.frame.SessionManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotSessionManager(value: SessionManager): Self = StObject.set(x, "com.sun.star.frame.SessionManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotSettings(value: typings.activexLibreoffice.com_.sun.star.frame.Settings): Self = StObject.set(x, "com.sun.star.frame.Settings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotSettings(value: typings.activexLibreoffice.com_.sun.star.frame.Settings): Self = StObject.set(x, "com.sun.star.frame.Settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotStartModule(value: StartModule): Self = StObject.set(x, "com.sun.star.frame.StartModule", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotStartModule(value: StartModule): Self = StObject.set(x, "com.sun.star.frame.StartModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotStatusbarController(value: StatusbarController): Self = StObject.set(x, "com.sun.star.frame.StatusbarController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotStatusbarController(value: StatusbarController): Self = StObject.set(x, "com.sun.star.frame.StatusbarController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotStatusbarControllerFactory(value: StatusbarControllerFactory): Self = StObject.set(x, "com.sun.star.frame.StatusbarControllerFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotStatusbarControllerFactory(value: StatusbarControllerFactory): Self = StObject.set(x, "com.sun.star.frame.StatusbarControllerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotSynchronousFrameLoader(value: SynchronousFrameLoader): Self = StObject.set(x, "com.sun.star.frame.SynchronousFrameLoader", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotSynchronousFrameLoader(value: SynchronousFrameLoader): Self = StObject.set(x, "com.sun.star.frame.SynchronousFrameLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotTask(value: Task): Self = StObject.set(x, "com.sun.star.frame.Task", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotTask(value: Task): Self = StObject.set(x, "com.sun.star.frame.Task", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotTaskCreator(value: TaskCreator): Self = StObject.set(x, "com.sun.star.frame.TaskCreator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotTaskCreator(value: TaskCreator): Self = StObject.set(x, "com.sun.star.frame.TaskCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotTemplateAccess(value: TemplateAccess): Self = StObject.set(x, "com.sun.star.frame.TemplateAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotTemplateAccess(value: TemplateAccess): Self = StObject.set(x, "com.sun.star.frame.TemplateAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotToolbarController(value: ToolbarController): Self = StObject.set(x, "com.sun.star.frame.ToolbarController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotToolbarController(value: ToolbarController): Self = StObject.set(x, "com.sun.star.frame.ToolbarController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotToolbarControllerFactory(value: ToolbarControllerFactory): Self = StObject.set(x, "com.sun.star.frame.ToolbarControllerFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotToolbarControllerFactory(value: ToolbarControllerFactory): Self = StObject.set(x, "com.sun.star.frame.ToolbarControllerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotTransientDocumentsDocumentContentFactory(value: TransientDocumentsDocumentContentFactory): Self = StObject.set(x, "com.sun.star.frame.TransientDocumentsDocumentContentFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotTransientDocumentsDocumentContentFactory(value: TransientDocumentsDocumentContentFactory): Self = StObject.set(x, "com.sun.star.frame.TransientDocumentsDocumentContentFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotUICommandDescription(value: UICommandDescription): Self = StObject.set(x, "com.sun.star.frame.UICommandDescription", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotUICommandDescription(value: UICommandDescription): Self = StObject.set(x, "com.sun.star.frame.UICommandDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgalleryDotGalleryItem(value: GalleryItem): Self = StObject.set(x, "com.sun.star.gallery.GalleryItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgalleryDotGalleryItem(value: GalleryItem): Self = StObject.set(x, "com.sun.star.gallery.GalleryItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgalleryDotGalleryTheme(value: GalleryTheme): Self = StObject.set(x, "com.sun.star.gallery.GalleryTheme", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgalleryDotGalleryTheme(value: GalleryTheme): Self = StObject.set(x, "com.sun.star.gallery.GalleryTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgalleryDotGalleryThemeProvider(value: GalleryThemeProvider): Self = StObject.set(x, "com.sun.star.gallery.GalleryThemeProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgalleryDotGalleryThemeProvider(value: GalleryThemeProvider): Self = StObject.set(x, "com.sun.star.gallery.GalleryThemeProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotGraphic(value: Graphic): Self = StObject.set(x, "com.sun.star.graphic.Graphic", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotGraphic(value: Graphic): Self = StObject.set(x, "com.sun.star.graphic.Graphic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotGraphicDescriptor(value: GraphicDescriptor): Self = StObject.set(x, "com.sun.star.graphic.GraphicDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotGraphicDescriptor(value: GraphicDescriptor): Self = StObject.set(x, "com.sun.star.graphic.GraphicDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotGraphicObject(value: GraphicObject): Self = StObject.set(x, "com.sun.star.graphic.GraphicObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotGraphicObject(value: GraphicObject): Self = StObject.set(x, "com.sun.star.graphic.GraphicObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotGraphicProvider(value: GraphicProvider): Self = StObject.set(x, "com.sun.star.graphic.GraphicProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotGraphicProvider(value: GraphicProvider): Self = StObject.set(x, "com.sun.star.graphic.GraphicProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotGraphicRasterizer(value: GraphicRasterizer): Self = StObject.set(x, "com.sun.star.graphic.GraphicRasterizer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotGraphicRasterizer(value: GraphicRasterizer): Self = StObject.set(x, "com.sun.star.graphic.GraphicRasterizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotGraphicRendererVCL(value: GraphicRendererVCL): Self = StObject.set(x, "com.sun.star.graphic.GraphicRendererVCL", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotGraphicRendererVCL(value: GraphicRendererVCL): Self = StObject.set(x, "com.sun.star.graphic.GraphicRendererVCL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotMediaProperties(value: MediaProperties): Self = StObject.set(x, "com.sun.star.graphic.MediaProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotMediaProperties(value: MediaProperties): Self = StObject.set(x, "com.sun.star.graphic.MediaProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotPrimitive2DTools(value: Primitive2DTools): Self = StObject.set(x, "com.sun.star.graphic.Primitive2DTools", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotPrimitive2DTools(value: Primitive2DTools): Self = StObject.set(x, "com.sun.star.graphic.Primitive2DTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotPrimitiveFactory2D(value: PrimitiveFactory2D): Self = StObject.set(x, "com.sun.star.graphic.PrimitiveFactory2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotPrimitiveFactory2D(value: PrimitiveFactory2D): Self = StObject.set(x, "com.sun.star.graphic.PrimitiveFactory2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgraphicDotSvgTools(value: SvgTools): Self = StObject.set(x, "com.sun.star.graphic.SvgTools", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgraphicDotSvgTools(value: SvgTools): Self = StObject.set(x, "com.sun.star.graphic.SvgTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotBreakIterator(value: BreakIterator): Self = StObject.set(x, "com.sun.star.i18n.BreakIterator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotBreakIterator(value: BreakIterator): Self = StObject.set(x, "com.sun.star.i18n.BreakIterator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotChapterCollator(value: ChapterCollator): Self = StObject.set(x, "com.sun.star.i18n.ChapterCollator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotChapterCollator(value: ChapterCollator): Self = StObject.set(x, "com.sun.star.i18n.ChapterCollator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCharacterClassification(value: CharacterClassification): Self = StObject.set(x, "com.sun.star.i18n.CharacterClassification", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCharacterClassification(value: CharacterClassification): Self = StObject.set(x, "com.sun.star.i18n.CharacterClassification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCollator(value: Collator): Self = StObject.set(x, "com.sun.star.i18n.Collator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCollator(value: Collator): Self = StObject.set(x, "com.sun.star.i18n.Collator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotIndexEntrySupplier(value: IndexEntrySupplier): Self = StObject.set(x, "com.sun.star.i18n.IndexEntrySupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotIndexEntrySupplier(value: IndexEntrySupplier): Self = StObject.set(x, "com.sun.star.i18n.IndexEntrySupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotInputSequenceChecker(value: InputSequenceChecker): Self = StObject.set(x, "com.sun.star.i18n.InputSequenceChecker", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotInputSequenceChecker(value: InputSequenceChecker): Self = StObject.set(x, "com.sun.star.i18n.InputSequenceChecker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLocaleCalendar(value: LocaleCalendar): Self = StObject.set(x, "com.sun.star.i18n.LocaleCalendar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLocaleCalendar(value: LocaleCalendar): Self = StObject.set(x, "com.sun.star.i18n.LocaleCalendar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLocaleCalendar2(value: LocaleCalendar2): Self = StObject.set(x, "com.sun.star.i18n.LocaleCalendar2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLocaleCalendar2(value: LocaleCalendar2): Self = StObject.set(x, "com.sun.star.i18n.LocaleCalendar2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLocaleData(value: LocaleData): Self = StObject.set(x, "com.sun.star.i18n.LocaleData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLocaleData(value: LocaleData): Self = StObject.set(x, "com.sun.star.i18n.LocaleData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotNativeNumberSupplier(value: NativeNumberSupplier): Self = StObject.set(x, "com.sun.star.i18n.NativeNumberSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotNativeNumberSupplier(value: NativeNumberSupplier): Self = StObject.set(x, "com.sun.star.i18n.NativeNumberSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotNumberFormatMapper(value: NumberFormatMapper): Self = StObject.set(x, "com.sun.star.i18n.NumberFormatMapper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotNumberFormatMapper(value: NumberFormatMapper): Self = StObject.set(x, "com.sun.star.i18n.NumberFormatMapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotOrdinalSuffix(value: OrdinalSuffix): Self = StObject.set(x, "com.sun.star.i18n.OrdinalSuffix", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotOrdinalSuffix(value: OrdinalSuffix): Self = StObject.set(x, "com.sun.star.i18n.OrdinalSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotTextConversion(value: TextConversion): Self = StObject.set(x, "com.sun.star.i18n.TextConversion", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotTextConversion(value: TextConversion): Self = StObject.set(x, "com.sun.star.i18n.TextConversion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotTransliteration(value: Transliteration): Self = StObject.set(x, "com.sun.star.i18n.Transliteration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotTransliteration(value: Transliteration): Self = StObject.set(x, "com.sun.star.i18n.Transliteration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotimageDotImageMap(value: ImageMap): Self = StObject.set(x, "com.sun.star.image.ImageMap", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotimageDotImageMap(value: ImageMap): Self = StObject.set(x, "com.sun.star.image.ImageMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotimageDotImageMapCircleObject(value: ImageMapCircleObject): Self = StObject.set(x, "com.sun.star.image.ImageMapCircleObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotimageDotImageMapCircleObject(value: ImageMapCircleObject): Self = StObject.set(x, "com.sun.star.image.ImageMapCircleObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotimageDotImageMapObject(value: ImageMapObject): Self = StObject.set(x, "com.sun.star.image.ImageMapObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotimageDotImageMapObject(value: ImageMapObject): Self = StObject.set(x, "com.sun.star.image.ImageMapObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotimageDotImageMapPolygonObject(value: ImageMapPolygonObject): Self = StObject.set(x, "com.sun.star.image.ImageMapPolygonObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotimageDotImageMapPolygonObject(value: ImageMapPolygonObject): Self = StObject.set(x, "com.sun.star.image.ImageMapPolygonObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotimageDotImageMapRectangleObject(value: ImageMapRectangleObject): Self = StObject.set(x, "com.sun.star.image.ImageMapRectangleObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotimageDotImageMapRectangleObject(value: ImageMapRectangleObject): Self = StObject.set(x, "com.sun.star.image.ImageMapRectangleObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotinspectionDotDefaultHelpProvider(value: DefaultHelpProvider): Self = StObject.set(x, "com.sun.star.inspection.DefaultHelpProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotinspectionDotDefaultHelpProvider(value: DefaultHelpProvider): Self = StObject.set(x, "com.sun.star.inspection.DefaultHelpProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotinspectionDotGenericPropertyHandler(value: GenericPropertyHandler): Self = StObject.set(x, "com.sun.star.inspection.GenericPropertyHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotinspectionDotGenericPropertyHandler(value: GenericPropertyHandler): Self = StObject.set(x, "com.sun.star.inspection.GenericPropertyHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotinspectionDotObjectInspector(value: ObjectInspector): Self = StObject.set(x, "com.sun.star.inspection.ObjectInspector", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotinspectionDotObjectInspector(value: ObjectInspector): Self = StObject.set(x, "com.sun.star.inspection.ObjectInspector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotinspectionDotObjectInspectorModel(value: ObjectInspectorModel): Self = StObject.set(x, "com.sun.star.inspection.ObjectInspectorModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotinspectionDotObjectInspectorModel(value: ObjectInspectorModel): Self = StObject.set(x, "com.sun.star.inspection.ObjectInspectorModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotinspectionDotStringRepresentation(value: StringRepresentation): Self = StObject.set(x, "com.sun.star.inspection.StringRepresentation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotinspectionDotStringRepresentation(value: StringRepresentation): Self = StObject.set(x, "com.sun.star.inspection.StringRepresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotDataInputStream(value: DataInputStream): Self = StObject.set(x, "com.sun.star.io.DataInputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotDataInputStream(value: DataInputStream): Self = StObject.set(x, "com.sun.star.io.DataInputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotDataOutputStream(value: DataOutputStream): Self = StObject.set(x, "com.sun.star.io.DataOutputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotDataOutputStream(value: DataOutputStream): Self = StObject.set(x, "com.sun.star.io.DataOutputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotMarkableInputStream(value: MarkableInputStream): Self = StObject.set(x, "com.sun.star.io.MarkableInputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotMarkableInputStream(value: MarkableInputStream): Self = StObject.set(x, "com.sun.star.io.MarkableInputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotMarkableOutputStream(value: MarkableOutputStream): Self = StObject.set(x, "com.sun.star.io.MarkableOutputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotMarkableOutputStream(value: MarkableOutputStream): Self = StObject.set(x, "com.sun.star.io.MarkableOutputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotObjectInputStream(value: ObjectInputStream): Self = StObject.set(x, "com.sun.star.io.ObjectInputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotObjectInputStream(value: ObjectInputStream): Self = StObject.set(x, "com.sun.star.io.ObjectInputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotObjectOutputStream(value: ObjectOutputStream): Self = StObject.set(x, "com.sun.star.io.ObjectOutputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotObjectOutputStream(value: ObjectOutputStream): Self = StObject.set(x, "com.sun.star.io.ObjectOutputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotPipe(value: Pipe): Self = StObject.set(x, "com.sun.star.io.Pipe", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotPipe(value: Pipe): Self = StObject.set(x, "com.sun.star.io.Pipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotPump(value: Pump): Self = StObject.set(x, "com.sun.star.io.Pump", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotPump(value: Pump): Self = StObject.set(x, "com.sun.star.io.Pump", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotSequenceInputStream(value: SequenceInputStream): Self = StObject.set(x, "com.sun.star.io.SequenceInputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotSequenceInputStream(value: SequenceInputStream): Self = StObject.set(x, "com.sun.star.io.SequenceInputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotSequenceOutputStream(value: SequenceOutputStream): Self = StObject.set(x, "com.sun.star.io.SequenceOutputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotSequenceOutputStream(value: SequenceOutputStream): Self = StObject.set(x, "com.sun.star.io.SequenceOutputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotTempFile(value: TempFile): Self = StObject.set(x, "com.sun.star.io.TempFile", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotTempFile(value: TempFile): Self = StObject.set(x, "com.sun.star.io.TempFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotTextInputStream(value: TextInputStream): Self = StObject.set(x, "com.sun.star.io.TextInputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotTextInputStream(value: TextInputStream): Self = StObject.set(x, "com.sun.star.io.TextInputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotTextOutputStream(value: TextOutputStream): Self = StObject.set(x, "com.sun.star.io.TextOutputStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotTextOutputStream(value: TextOutputStream): Self = StObject.set(x, "com.sun.star.io.TextOutputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotjavaDotJavaVirtualMachine(value: JavaVirtualMachine): Self = StObject.set(x, "com.sun.star.java.JavaVirtualMachine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotjavaDotJavaVirtualMachine(value: JavaVirtualMachine): Self = StObject.set(x, "com.sun.star.java.JavaVirtualMachine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlangDotMultiServiceFactory(value: MultiServiceFactory): Self = StObject.set(x, "com.sun.star.lang.MultiServiceFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlangDotMultiServiceFactory(value: MultiServiceFactory): Self = StObject.set(x, "com.sun.star.lang.MultiServiceFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlangDotRegistryServiceManager(value: RegistryServiceManager): Self = StObject.set(x, "com.sun.star.lang.RegistryServiceManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlangDotRegistryServiceManager(value: RegistryServiceManager): Self = StObject.set(x, "com.sun.star.lang.RegistryServiceManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlangDotServiceManager(value: ServiceManager): Self = StObject.set(x, "com.sun.star.lang.ServiceManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlangDotServiceManager(value: ServiceManager): Self = StObject.set(x, "com.sun.star.lang.ServiceManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotConversionDictionary(value: ConversionDictionary): Self = StObject.set(x, "com.sun.star.linguistic2.ConversionDictionary", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotConversionDictionary(value: ConversionDictionary): Self = StObject.set(x, "com.sun.star.linguistic2.ConversionDictionary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotConversionDictionaryList(value: ConversionDictionaryList): Self = StObject.set(x, "com.sun.star.linguistic2.ConversionDictionaryList", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotConversionDictionaryList(value: ConversionDictionaryList): Self = StObject.set(x, "com.sun.star.linguistic2.ConversionDictionaryList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotDictionary(value: Dictionary): Self = StObject.set(x, "com.sun.star.linguistic2.Dictionary", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotDictionary(value: Dictionary): Self = StObject.set(x, "com.sun.star.linguistic2.Dictionary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotDictionaryList(value: DictionaryList): Self = StObject.set(x, "com.sun.star.linguistic2.DictionaryList", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotDictionaryList(value: DictionaryList): Self = StObject.set(x, "com.sun.star.linguistic2.DictionaryList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotHangulHanjaConversionDictionary(value: HangulHanjaConversionDictionary): Self = StObject.set(x, "com.sun.star.linguistic2.HangulHanjaConversionDictionary", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotHangulHanjaConversionDictionary(value: HangulHanjaConversionDictionary): Self = StObject.set(x, "com.sun.star.linguistic2.HangulHanjaConversionDictionary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotHyphenator(value: Hyphenator): Self = StObject.set(x, "com.sun.star.linguistic2.Hyphenator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotHyphenator(value: Hyphenator): Self = StObject.set(x, "com.sun.star.linguistic2.Hyphenator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotLanguageGuessing(value: LanguageGuessing): Self = StObject.set(x, "com.sun.star.linguistic2.LanguageGuessing", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotLanguageGuessing(value: LanguageGuessing): Self = StObject.set(x, "com.sun.star.linguistic2.LanguageGuessing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotLinguProperties(value: LinguProperties): Self = StObject.set(x, "com.sun.star.linguistic2.LinguProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotLinguProperties(value: LinguProperties): Self = StObject.set(x, "com.sun.star.linguistic2.LinguProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotLinguServiceManager(value: LinguServiceManager): Self = StObject.set(x, "com.sun.star.linguistic2.LinguServiceManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotLinguServiceManager(value: LinguServiceManager): Self = StObject.set(x, "com.sun.star.linguistic2.LinguServiceManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotProofreader(value: Proofreader): Self = StObject.set(x, "com.sun.star.linguistic2.Proofreader", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotProofreader(value: Proofreader): Self = StObject.set(x, "com.sun.star.linguistic2.Proofreader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotProofreadingIterator(value: ProofreadingIterator): Self = StObject.set(x, "com.sun.star.linguistic2.ProofreadingIterator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotProofreadingIterator(value: ProofreadingIterator): Self = StObject.set(x, "com.sun.star.linguistic2.ProofreadingIterator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotSpellChecker(value: SpellChecker): Self = StObject.set(x, "com.sun.star.linguistic2.SpellChecker", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotSpellChecker(value: SpellChecker): Self = StObject.set(x, "com.sun.star.linguistic2.SpellChecker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotThesaurus(value: Thesaurus): Self = StObject.set(x, "com.sun.star.linguistic2.Thesaurus", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotThesaurus(value: Thesaurus): Self = StObject.set(x, "com.sun.star.linguistic2.Thesaurus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloaderDotDynamic(value: Dynamic): Self = StObject.set(x, "com.sun.star.loader.Dynamic", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloaderDotDynamic(value: Dynamic): Self = StObject.set(x, "com.sun.star.loader.Dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloaderDotJava(value: Java): Self = StObject.set(x, "com.sun.star.loader.Java", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloaderDotJava(value: Java): Self = StObject.set(x, "com.sun.star.loader.Java", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloaderDotJava2(value: Java2): Self = StObject.set(x, "com.sun.star.loader.Java2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloaderDotJava2(value: Java2): Self = StObject.set(x, "com.sun.star.loader.Java2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloaderDotSharedLibrary(value: SharedLibrary): Self = StObject.set(x, "com.sun.star.loader.SharedLibrary", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloaderDotSharedLibrary(value: SharedLibrary): Self = StObject.set(x, "com.sun.star.loader.SharedLibrary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloggingDotConsoleHandler(value: ConsoleHandler): Self = StObject.set(x, "com.sun.star.logging.ConsoleHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloggingDotConsoleHandler(value: ConsoleHandler): Self = StObject.set(x, "com.sun.star.logging.ConsoleHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloggingDotCsvLogFormatter(value: CsvLogFormatter): Self = StObject.set(x, "com.sun.star.logging.CsvLogFormatter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloggingDotCsvLogFormatter(value: CsvLogFormatter): Self = StObject.set(x, "com.sun.star.logging.CsvLogFormatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloggingDotFileHandler(value: FileHandler): Self = StObject.set(x, "com.sun.star.logging.FileHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloggingDotFileHandler(value: FileHandler): Self = StObject.set(x, "com.sun.star.logging.FileHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloggingDotPlainTextFormatter(value: PlainTextFormatter): Self = StObject.set(x, "com.sun.star.logging.PlainTextFormatter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloggingDotPlainTextFormatter(value: PlainTextFormatter): Self = StObject.set(x, "com.sun.star.logging.PlainTextFormatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloggingDotSimpleLogRing(value: SimpleLogRing): Self = StObject.set(x, "com.sun.star.logging.SimpleLogRing", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloggingDotSimpleLogRing(value: SimpleLogRing): Self = StObject.set(x, "com.sun.star.logging.SimpleLogRing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmailDotMailMessage(value: MailMessage): Self = StObject.set(x, "com.sun.star.mail.MailMessage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmailDotMailMessage(value: MailMessage): Self = StObject.set(x, "com.sun.star.mail.MailMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmailDotMailServiceProvider(value: MailServiceProvider): Self = StObject.set(x, "com.sun.star.mail.MailServiceProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmailDotMailServiceProvider(value: MailServiceProvider): Self = StObject.set(x, "com.sun.star.mail.MailServiceProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmediaDotManager(value: Manager): Self = StObject.set(x, "com.sun.star.media.Manager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmediaDotManager(value: Manager): Self = StObject.set(x, "com.sun.star.media.Manager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmozillaDotMenuProxy(value: MenuProxy): Self = StObject.set(x, "com.sun.star.mozilla.MenuProxy", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmozillaDotMenuProxy(value: MenuProxy): Self = StObject.set(x, "com.sun.star.mozilla.MenuProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmozillaDotMenuProxyListener(value: MenuProxyListener): Self = StObject.set(x, "com.sun.star.mozilla.MenuProxyListener", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmozillaDotMenuProxyListener(value: MenuProxyListener): Self = StObject.set(x, "com.sun.star.mozilla.MenuProxyListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmozillaDotMozillaBootstrap(value: MozillaBootstrap): Self = StObject.set(x, "com.sun.star.mozilla.MozillaBootstrap", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmozillaDotMozillaBootstrap(value: MozillaBootstrap): Self = StObject.set(x, "com.sun.star.mozilla.MozillaBootstrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotofficeDotQuickstart(value: Quickstart): Self = StObject.set(x, "com.sun.star.office.Quickstart", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotofficeDotQuickstart(value: Quickstart): Self = StObject.set(x, "com.sun.star.office.Quickstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotPackage(value: Package): Self = StObject.set(x, "com.sun.star.packages.Package", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotPackage(value: Package): Self = StObject.set(x, "com.sun.star.packages.Package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotPackageFolder(value: PackageFolder): Self = StObject.set(x, "com.sun.star.packages.PackageFolder", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotPackageFolder(value: PackageFolder): Self = StObject.set(x, "com.sun.star.packages.PackageFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotPackageFolderEnumeration(value: PackageFolderEnumeration): Self = StObject.set(x, "com.sun.star.packages.PackageFolderEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotPackageFolderEnumeration(value: PackageFolderEnumeration): Self = StObject.set(x, "com.sun.star.packages.PackageFolderEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotPackageStream(value: PackageStream): Self = StObject.set(x, "com.sun.star.packages.PackageStream", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotPackageStream(value: PackageStream): Self = StObject.set(x, "com.sun.star.packages.PackageStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotmanifestDotManifestReader(value: ManifestReader): Self = StObject.set(x, "com.sun.star.packages.manifest.ManifestReader", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotmanifestDotManifestReader(value: ManifestReader): Self = StObject.set(x, "com.sun.star.packages.manifest.ManifestReader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotmanifestDotManifestWriter(value: ManifestWriter): Self = StObject.set(x, "com.sun.star.packages.manifest.ManifestWriter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotmanifestDotManifestWriter(value: ManifestWriter): Self = StObject.set(x, "com.sun.star.packages.manifest.ManifestWriter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotzipDotZipFileAccess(value: ZipFileAccess): Self = StObject.set(x, "com.sun.star.packages.zip.ZipFileAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotzipDotZipFileAccess(value: ZipFileAccess): Self = StObject.set(x, "com.sun.star.packages.zip.ZipFileAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotChartShape(value: ChartShape): Self = StObject.set(x, "com.sun.star.presentation.ChartShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotChartShape(value: ChartShape): Self = StObject.set(x, "com.sun.star.presentation.ChartShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotCustomPresentation(value: CustomPresentation): Self = StObject.set(x, "com.sun.star.presentation.CustomPresentation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotCustomPresentation(value: CustomPresentation): Self = StObject.set(x, "com.sun.star.presentation.CustomPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotCustomPresentationAccess(value: CustomPresentationAccess): Self = StObject.set(x, "com.sun.star.presentation.CustomPresentationAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotCustomPresentationAccess(value: CustomPresentationAccess): Self = StObject.set(x, "com.sun.star.presentation.CustomPresentationAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotDateTimeShape(value: DateTimeShape): Self = StObject.set(x, "com.sun.star.presentation.DateTimeShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotDateTimeShape(value: DateTimeShape): Self = StObject.set(x, "com.sun.star.presentation.DateTimeShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotDocumentSettings(value: typings.activexLibreoffice.com_.sun.star.presentation.DocumentSettings): Self = StObject.set(x, "com.sun.star.presentation.DocumentSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotDocumentSettings(value: typings.activexLibreoffice.com_.sun.star.presentation.DocumentSettings): Self = StObject.set(x, "com.sun.star.presentation.DocumentSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotDrawPage(value: typings.activexLibreoffice.com_.sun.star.presentation.DrawPage): Self = StObject.set(x, "com.sun.star.presentation.DrawPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotDrawPage(value: typings.activexLibreoffice.com_.sun.star.presentation.DrawPage): Self = StObject.set(x, "com.sun.star.presentation.DrawPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotFooterShape(value: FooterShape): Self = StObject.set(x, "com.sun.star.presentation.FooterShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotFooterShape(value: FooterShape): Self = StObject.set(x, "com.sun.star.presentation.FooterShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotGraphicObjectShape(value: typings.activexLibreoffice.com_.sun.star.presentation.GraphicObjectShape): Self = StObject.set(x, "com.sun.star.presentation.GraphicObjectShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotGraphicObjectShape(value: typings.activexLibreoffice.com_.sun.star.presentation.GraphicObjectShape): Self = StObject.set(x, "com.sun.star.presentation.GraphicObjectShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotHandoutShape(value: HandoutShape): Self = StObject.set(x, "com.sun.star.presentation.HandoutShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotHandoutShape(value: HandoutShape): Self = StObject.set(x, "com.sun.star.presentation.HandoutShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotHandoutView(value: HandoutView): Self = StObject.set(x, "com.sun.star.presentation.HandoutView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotHandoutView(value: HandoutView): Self = StObject.set(x, "com.sun.star.presentation.HandoutView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotHeaderShape(value: HeaderShape): Self = StObject.set(x, "com.sun.star.presentation.HeaderShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotHeaderShape(value: HeaderShape): Self = StObject.set(x, "com.sun.star.presentation.HeaderShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotNotesShape(value: NotesShape): Self = StObject.set(x, "com.sun.star.presentation.NotesShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotNotesShape(value: NotesShape): Self = StObject.set(x, "com.sun.star.presentation.NotesShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotNotesView(value: NotesView): Self = StObject.set(x, "com.sun.star.presentation.NotesView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotNotesView(value: NotesView): Self = StObject.set(x, "com.sun.star.presentation.NotesView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotOLE2Shape(value: typings.activexLibreoffice.com_.sun.star.presentation.OLE2Shape): Self = StObject.set(x, "com.sun.star.presentation.OLE2Shape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotOLE2Shape(value: typings.activexLibreoffice.com_.sun.star.presentation.OLE2Shape): Self = StObject.set(x, "com.sun.star.presentation.OLE2Shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotOutlineView(value: OutlineView): Self = StObject.set(x, "com.sun.star.presentation.OutlineView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotOutlineView(value: OutlineView): Self = StObject.set(x, "com.sun.star.presentation.OutlineView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotOutlinerShape(value: OutlinerShape): Self = StObject.set(x, "com.sun.star.presentation.OutlinerShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotOutlinerShape(value: OutlinerShape): Self = StObject.set(x, "com.sun.star.presentation.OutlinerShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotPageShape(value: typings.activexLibreoffice.com_.sun.star.presentation.PageShape): Self = StObject.set(x, "com.sun.star.presentation.PageShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotPageShape(value: typings.activexLibreoffice.com_.sun.star.presentation.PageShape): Self = StObject.set(x, "com.sun.star.presentation.PageShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotPresentation(value: Presentation): Self = StObject.set(x, "com.sun.star.presentation.Presentation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotPresentation(value: Presentation): Self = StObject.set(x, "com.sun.star.presentation.Presentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotPresentation2(value: Presentation2): Self = StObject.set(x, "com.sun.star.presentation.Presentation2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotPresentation2(value: Presentation2): Self = StObject.set(x, "com.sun.star.presentation.Presentation2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotPresentationDocument(value: PresentationDocument): Self = StObject.set(x, "com.sun.star.presentation.PresentationDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotPresentationDocument(value: PresentationDocument): Self = StObject.set(x, "com.sun.star.presentation.PresentationDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotPresentationView(value: PresentationView): Self = StObject.set(x, "com.sun.star.presentation.PresentationView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotPresentationView(value: PresentationView): Self = StObject.set(x, "com.sun.star.presentation.PresentationView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotPreviewView(value: PreviewView): Self = StObject.set(x, "com.sun.star.presentation.PreviewView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotPreviewView(value: PreviewView): Self = StObject.set(x, "com.sun.star.presentation.PreviewView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotShape(value: typings.activexLibreoffice.com_.sun.star.presentation.Shape): Self = StObject.set(x, "com.sun.star.presentation.Shape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotShape(value: typings.activexLibreoffice.com_.sun.star.presentation.Shape): Self = StObject.set(x, "com.sun.star.presentation.Shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotSlideNumberShape(value: SlideNumberShape): Self = StObject.set(x, "com.sun.star.presentation.SlideNumberShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotSlideNumberShape(value: SlideNumberShape): Self = StObject.set(x, "com.sun.star.presentation.SlideNumberShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotSlideShow(value: SlideShow): Self = StObject.set(x, "com.sun.star.presentation.SlideShow", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotSlideShow(value: SlideShow): Self = StObject.set(x, "com.sun.star.presentation.SlideShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotSlidesView(value: SlidesView): Self = StObject.set(x, "com.sun.star.presentation.SlidesView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotSlidesView(value: SlidesView): Self = StObject.set(x, "com.sun.star.presentation.SlidesView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotSubtitleShape(value: SubtitleShape): Self = StObject.set(x, "com.sun.star.presentation.SubtitleShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotSubtitleShape(value: SubtitleShape): Self = StObject.set(x, "com.sun.star.presentation.SubtitleShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotTitleTextShape(value: TitleTextShape): Self = StObject.set(x, "com.sun.star.presentation.TitleTextShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotTitleTextShape(value: TitleTextShape): Self = StObject.set(x, "com.sun.star.presentation.TitleTextShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotTransitionFactory(value: TransitionFactory): Self = StObject.set(x, "com.sun.star.presentation.TransitionFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotTransitionFactory(value: TransitionFactory): Self = StObject.set(x, "com.sun.star.presentation.TransitionFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDottextfieldDotDateTime(value: DateTime): Self = StObject.set(x, "com.sun.star.presentation.textfield.DateTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDottextfieldDotDateTime(value: DateTime): Self = StObject.set(x, "com.sun.star.presentation.textfield.DateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDottextfieldDotFooter(value: Footer): Self = StObject.set(x, "com.sun.star.presentation.textfield.Footer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDottextfieldDotFooter(value: Footer): Self = StObject.set(x, "com.sun.star.presentation.textfield.Footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDottextfieldDotHeader(value: Header): Self = StObject.set(x, "com.sun.star.presentation.textfield.Header", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDottextfieldDotHeader(value: Header): Self = StObject.set(x, "com.sun.star.presentation.textfield.Header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrdfDotBlankNode(value: BlankNode): Self = StObject.set(x, "com.sun.star.rdf.BlankNode", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrdfDotBlankNode(value: BlankNode): Self = StObject.set(x, "com.sun.star.rdf.BlankNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrdfDotLiteral(value: Literal): Self = StObject.set(x, "com.sun.star.rdf.Literal", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrdfDotLiteral(value: Literal): Self = StObject.set(x, "com.sun.star.rdf.Literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrdfDotRepository(value: Repository): Self = StObject.set(x, "com.sun.star.rdf.Repository", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrdfDotRepository(value: Repository): Self = StObject.set(x, "com.sun.star.rdf.Repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrdfDotURI(value: URI): Self = StObject.set(x, "com.sun.star.rdf.URI", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrdfDotURI(value: URI): Self = StObject.set(x, "com.sun.star.rdf.URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreflectionDotCoreReflection(value: CoreReflection): Self = StObject.set(x, "com.sun.star.reflection.CoreReflection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreflectionDotCoreReflection(value: CoreReflection): Self = StObject.set(x, "com.sun.star.reflection.CoreReflection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreflectionDotProxyFactory(value: ProxyFactory): Self = StObject.set(x, "com.sun.star.reflection.ProxyFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreflectionDotProxyFactory(value: ProxyFactory): Self = StObject.set(x, "com.sun.star.reflection.ProxyFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreflectionDotTypeDescriptionManager(value: TypeDescriptionManager): Self = StObject.set(x, "com.sun.star.reflection.TypeDescriptionManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreflectionDotTypeDescriptionManager(value: TypeDescriptionManager): Self = StObject.set(x, "com.sun.star.reflection.TypeDescriptionManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreflectionDotTypeDescriptionProvider(value: TypeDescriptionProvider): Self = StObject.set(x, "com.sun.star.reflection.TypeDescriptionProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreflectionDotTypeDescriptionProvider(value: TypeDescriptionProvider): Self = StObject.set(x, "com.sun.star.reflection.TypeDescriptionProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotregistryDotDefaultRegistry(value: DefaultRegistry): Self = StObject.set(x, "com.sun.star.registry.DefaultRegistry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotregistryDotDefaultRegistry(value: DefaultRegistry): Self = StObject.set(x, "com.sun.star.registry.DefaultRegistry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotregistryDotImplementationRegistration(value: ImplementationRegistration): Self = StObject.set(x, "com.sun.star.registry.ImplementationRegistration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotregistryDotImplementationRegistration(value: ImplementationRegistration): Self = StObject.set(x, "com.sun.star.registry.ImplementationRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotregistryDotNestedRegistry(value: NestedRegistry): Self = StObject.set(x, "com.sun.star.registry.NestedRegistry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotregistryDotNestedRegistry(value: NestedRegistry): Self = StObject.set(x, "com.sun.star.registry.NestedRegistry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotregistryDotSimpleRegistry(value: SimpleRegistry): Self = StObject.set(x, "com.sun.star.registry.SimpleRegistry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotregistryDotSimpleRegistry(value: SimpleRegistry): Self = StObject.set(x, "com.sun.star.registry.SimpleRegistry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotBitmapCanvas(value: BitmapCanvas): Self = StObject.set(x, "com.sun.star.rendering.BitmapCanvas", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotBitmapCanvas(value: BitmapCanvas): Self = StObject.set(x, "com.sun.star.rendering.BitmapCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotCanvas(value: Canvas): Self = StObject.set(x, "com.sun.star.rendering.Canvas", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotCanvas(value: Canvas): Self = StObject.set(x, "com.sun.star.rendering.Canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotCanvasFactory(value: CanvasFactory): Self = StObject.set(x, "com.sun.star.rendering.CanvasFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotCanvasFactory(value: CanvasFactory): Self = StObject.set(x, "com.sun.star.rendering.CanvasFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotMtfRenderer(value: MtfRenderer): Self = StObject.set(x, "com.sun.star.rendering.MtfRenderer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotMtfRenderer(value: MtfRenderer): Self = StObject.set(x, "com.sun.star.rendering.MtfRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotFixedLine(value: FixedLine): Self = StObject.set(x, "com.sun.star.report.FixedLine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotFixedLine(value: FixedLine): Self = StObject.set(x, "com.sun.star.report.FixedLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotFixedText(value: typings.activexLibreoffice.com_.sun.star.report.FixedText): Self = StObject.set(x, "com.sun.star.report.FixedText", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotFixedText(value: typings.activexLibreoffice.com_.sun.star.report.FixedText): Self = StObject.set(x, "com.sun.star.report.FixedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotFormatCondition(value: FormatCondition): Self = StObject.set(x, "com.sun.star.report.FormatCondition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotFormatCondition(value: FormatCondition): Self = StObject.set(x, "com.sun.star.report.FormatCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotFormattedField(value: typings.activexLibreoffice.com_.sun.star.report.FormattedField): Self = StObject.set(x, "com.sun.star.report.FormattedField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotFormattedField(value: typings.activexLibreoffice.com_.sun.star.report.FormattedField): Self = StObject.set(x, "com.sun.star.report.FormattedField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotFunction(value: Function): Self = StObject.set(x, "com.sun.star.report.Function", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotFunction(value: Function): Self = StObject.set(x, "com.sun.star.report.Function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotGroup(value: Group): Self = StObject.set(x, "com.sun.star.report.Group", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotGroup(value: Group): Self = StObject.set(x, "com.sun.star.report.Group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotGroups(value: Groups): Self = StObject.set(x, "com.sun.star.report.Groups", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotGroups(value: Groups): Self = StObject.set(x, "com.sun.star.report.Groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotImageControl(value: typings.activexLibreoffice.com_.sun.star.report.ImageControl): Self = StObject.set(x, "com.sun.star.report.ImageControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotImageControl(value: typings.activexLibreoffice.com_.sun.star.report.ImageControl): Self = StObject.set(x, "com.sun.star.report.ImageControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotReportControlFormat(value: ReportControlFormat): Self = StObject.set(x, "com.sun.star.report.ReportControlFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotReportControlFormat(value: ReportControlFormat): Self = StObject.set(x, "com.sun.star.report.ReportControlFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotReportControlModel(value: ReportControlModel): Self = StObject.set(x, "com.sun.star.report.ReportControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotReportControlModel(value: ReportControlModel): Self = StObject.set(x, "com.sun.star.report.ReportControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotReportDefinition(value: ReportDefinition): Self = StObject.set(x, "com.sun.star.report.ReportDefinition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotReportDefinition(value: ReportDefinition): Self = StObject.set(x, "com.sun.star.report.ReportDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotReportEngine(value: ReportEngine): Self = StObject.set(x, "com.sun.star.report.ReportEngine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotReportEngine(value: ReportEngine): Self = StObject.set(x, "com.sun.star.report.ReportEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotSection(value: Section): Self = StObject.set(x, "com.sun.star.report.Section", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotSection(value: Section): Self = StObject.set(x, "com.sun.star.report.Section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotShape(value: typings.activexLibreoffice.com_.sun.star.report.Shape): Self = StObject.set(x, "com.sun.star.report.Shape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotShape(value: typings.activexLibreoffice.com_.sun.star.report.Shape): Self = StObject.set(x, "com.sun.star.report.Shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotinspectionDotDataProviderHandler(value: DataProviderHandler): Self = StObject.set(x, "com.sun.star.report.inspection.DataProviderHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotinspectionDotDataProviderHandler(value: DataProviderHandler): Self = StObject.set(x, "com.sun.star.report.inspection.DataProviderHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotinspectionDotDefaultComponentInspectorModel(value: DefaultComponentInspectorModel): Self = StObject.set(x, "com.sun.star.report.inspection.DefaultComponentInspectorModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotinspectionDotDefaultComponentInspectorModel(value: DefaultComponentInspectorModel): Self = StObject.set(x, "com.sun.star.report.inspection.DefaultComponentInspectorModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreportDotinspectionDotReportComponentHandler(value: ReportComponentHandler): Self = StObject.set(x, "com.sun.star.report.inspection.ReportComponentHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreportDotinspectionDotReportComponentHandler(value: ReportComponentHandler): Self = StObject.set(x, "com.sun.star.report.inspection.ReportComponentHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotresourceDotStringResource(value: StringResource): Self = StObject.set(x, "com.sun.star.resource.StringResource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotresourceDotStringResource(value: StringResource): Self = StObject.set(x, "com.sun.star.resource.StringResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotresourceDotStringResourceWithLocation(value: StringResourceWithLocation): Self = StObject.set(x, "com.sun.star.resource.StringResourceWithLocation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotresourceDotStringResourceWithLocation(value: StringResourceWithLocation): Self = StObject.set(x, "com.sun.star.resource.StringResourceWithLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotresourceDotStringResourceWithStorage(value: StringResourceWithStorage): Self = StObject.set(x, "com.sun.star.resource.StringResourceWithStorage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotresourceDotStringResourceWithStorage(value: StringResourceWithStorage): Self = StObject.set(x, "com.sun.star.resource.StringResourceWithStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscannerDotScannerManager(value: ScannerManager): Self = StObject.set(x, "com.sun.star.scanner.ScannerManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscannerDotScannerManager(value: ScannerManager): Self = StObject.set(x, "com.sun.star.scanner.ScannerManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotAllListenerAdapter(value: AllListenerAdapter): Self = StObject.set(x, "com.sun.star.script.AllListenerAdapter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotAllListenerAdapter(value: AllListenerAdapter): Self = StObject.set(x, "com.sun.star.script.AllListenerAdapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotConverter(value: Converter): Self = StObject.set(x, "com.sun.star.script.Converter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotConverter(value: Converter): Self = StObject.set(x, "com.sun.star.script.Converter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotDocumentDialogLibraryContainer(value: DocumentDialogLibraryContainer): Self = StObject.set(x, "com.sun.star.script.DocumentDialogLibraryContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotDocumentDialogLibraryContainer(value: DocumentDialogLibraryContainer): Self = StObject.set(x, "com.sun.star.script.DocumentDialogLibraryContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotDocumentScriptLibraryContainer(value: DocumentScriptLibraryContainer): Self = StObject.set(x, "com.sun.star.script.DocumentScriptLibraryContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotDocumentScriptLibraryContainer(value: DocumentScriptLibraryContainer): Self = StObject.set(x, "com.sun.star.script.DocumentScriptLibraryContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotEngine(value: Engine): Self = StObject.set(x, "com.sun.star.script.Engine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotEngine(value: Engine): Self = StObject.set(x, "com.sun.star.script.Engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotInvocation(value: Invocation): Self = StObject.set(x, "com.sun.star.script.Invocation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotInvocation(value: Invocation): Self = StObject.set(x, "com.sun.star.script.Invocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotInvocationAdapterFactory(value: InvocationAdapterFactory): Self = StObject.set(x, "com.sun.star.script.InvocationAdapterFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotInvocationAdapterFactory(value: InvocationAdapterFactory): Self = StObject.set(x, "com.sun.star.script.InvocationAdapterFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotJavaScript(value: JavaScript): Self = StObject.set(x, "com.sun.star.script.JavaScript", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotJavaScript(value: JavaScript): Self = StObject.set(x, "com.sun.star.script.JavaScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotbrowseDotBrowseNode(value: BrowseNode): Self = StObject.set(x, "com.sun.star.script.browse.BrowseNode", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotbrowseDotBrowseNode(value: BrowseNode): Self = StObject.set(x, "com.sun.star.script.browse.BrowseNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotbrowseDotBrowseNodeFactory(value: BrowseNodeFactory): Self = StObject.set(x, "com.sun.star.script.browse.BrowseNodeFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotbrowseDotBrowseNodeFactory(value: BrowseNodeFactory): Self = StObject.set(x, "com.sun.star.script.browse.BrowseNodeFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotLanguageScriptProvider(value: LanguageScriptProvider): Self = StObject.set(x, "com.sun.star.script.provider.LanguageScriptProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotLanguageScriptProvider(value: LanguageScriptProvider): Self = StObject.set(x, "com.sun.star.script.provider.LanguageScriptProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotMasterScriptProvider(value: MasterScriptProvider): Self = StObject.set(x, "com.sun.star.script.provider.MasterScriptProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotMasterScriptProvider(value: MasterScriptProvider): Self = StObject.set(x, "com.sun.star.script.provider.MasterScriptProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotMasterScriptProviderFactory(value: MasterScriptProviderFactory): Self = StObject.set(x, "com.sun.star.script.provider.MasterScriptProviderFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotMasterScriptProviderFactory(value: MasterScriptProviderFactory): Self = StObject.set(x, "com.sun.star.script.provider.MasterScriptProviderFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotScriptProvider(value: ScriptProvider): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotScriptProvider(value: ScriptProvider): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForBasic(value: ScriptProviderForBasic): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForBasic", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForBasic(value: ScriptProviderForBasic): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForBasic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForBeanShell(value: ScriptProviderForBeanShell): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForBeanShell", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForBeanShell(value: ScriptProviderForBeanShell): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForBeanShell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForJava(value: ScriptProviderForJava): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForJava", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForJava(value: ScriptProviderForJava): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForJava", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForJavaScript(value: ScriptProviderForJavaScript): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForJavaScript", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotScriptProviderForJavaScript(value: ScriptProviderForJavaScript): Self = StObject.set(x, "com.sun.star.script.provider.ScriptProviderForJavaScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotproviderDotScriptURIHelper(value: ScriptURIHelper): Self = StObject.set(x, "com.sun.star.script.provider.ScriptURIHelper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotproviderDotScriptURIHelper(value: ScriptURIHelper): Self = StObject.set(x, "com.sun.star.script.provider.ScriptURIHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotvbaDotVBAEventProcessor(value: VBAEventProcessor): Self = StObject.set(x, "com.sun.star.script.vba.VBAEventProcessor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotvbaDotVBAEventProcessor(value: VBAEventProcessor): Self = StObject.set(x, "com.sun.star.script.vba.VBAEventProcessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotvbaDotVBAMacroResolver(value: VBAMacroResolver): Self = StObject.set(x, "com.sun.star.script.vba.VBAMacroResolver", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotvbaDotVBAMacroResolver(value: VBAMacroResolver): Self = StObject.set(x, "com.sun.star.script.vba.VBAMacroResolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotvbaDotVBASpreadsheetEventProcessor(value: VBASpreadsheetEventProcessor): Self = StObject.set(x, "com.sun.star.script.vba.VBASpreadsheetEventProcessor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotvbaDotVBASpreadsheetEventProcessor(value: VBASpreadsheetEventProcessor): Self = StObject.set(x, "com.sun.star.script.vba.VBASpreadsheetEventProcessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotvbaDotVBATextEventProcessor(value: VBATextEventProcessor): Self = StObject.set(x, "com.sun.star.script.vba.VBATextEventProcessor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotvbaDotVBATextEventProcessor(value: VBATextEventProcessor): Self = StObject.set(x, "com.sun.star.script.vba.VBATextEventProcessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotCallableStatement(value: CallableStatement): Self = StObject.set(x, "com.sun.star.sdb.CallableStatement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotCallableStatement(value: CallableStatement): Self = StObject.set(x, "com.sun.star.sdb.CallableStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotColumn(value: Column): Self = StObject.set(x, "com.sun.star.sdb.Column", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotColumn(value: Column): Self = StObject.set(x, "com.sun.star.sdb.Column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotColumnDescriptorControl(value: ColumnDescriptorControl): Self = StObject.set(x, "com.sun.star.sdb.ColumnDescriptorControl", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotColumnDescriptorControl(value: ColumnDescriptorControl): Self = StObject.set(x, "com.sun.star.sdb.ColumnDescriptorControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotColumnDescriptorControlModel(value: ColumnDescriptorControlModel): Self = StObject.set(x, "com.sun.star.sdb.ColumnDescriptorControlModel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotColumnDescriptorControlModel(value: ColumnDescriptorControlModel): Self = StObject.set(x, "com.sun.star.sdb.ColumnDescriptorControlModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotColumnSettings(value: ColumnSettings): Self = StObject.set(x, "com.sun.star.sdb.ColumnSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotColumnSettings(value: ColumnSettings): Self = StObject.set(x, "com.sun.star.sdb.ColumnSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotCommandDefinition(value: CommandDefinition): Self = StObject.set(x, "com.sun.star.sdb.CommandDefinition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotCommandDefinition(value: CommandDefinition): Self = StObject.set(x, "com.sun.star.sdb.CommandDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotConnection(value: Connection): Self = StObject.set(x, "com.sun.star.sdb.Connection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotConnection(value: Connection): Self = StObject.set(x, "com.sun.star.sdb.Connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotContentLoader(value: ContentLoader): Self = StObject.set(x, "com.sun.star.sdb.ContentLoader", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotContentLoader(value: ContentLoader): Self = StObject.set(x, "com.sun.star.sdb.ContentLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDataAccessDescriptor(value: DataAccessDescriptor): Self = StObject.set(x, "com.sun.star.sdb.DataAccessDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDataAccessDescriptor(value: DataAccessDescriptor): Self = StObject.set(x, "com.sun.star.sdb.DataAccessDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDataColumn(value: DataColumn): Self = StObject.set(x, "com.sun.star.sdb.DataColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDataColumn(value: DataColumn): Self = StObject.set(x, "com.sun.star.sdb.DataColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDataSettings(value: DataSettings): Self = StObject.set(x, "com.sun.star.sdb.DataSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDataSettings(value: DataSettings): Self = StObject.set(x, "com.sun.star.sdb.DataSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDataSource(value: typings.activexLibreoffice.com_.sun.star.sdb.DataSource): Self = StObject.set(x, "com.sun.star.sdb.DataSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDataSource(value: typings.activexLibreoffice.com_.sun.star.sdb.DataSource): Self = StObject.set(x, "com.sun.star.sdb.DataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDataSourceBrowser(value: DataSourceBrowser): Self = StObject.set(x, "com.sun.star.sdb.DataSourceBrowser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDataSourceBrowser(value: DataSourceBrowser): Self = StObject.set(x, "com.sun.star.sdb.DataSourceBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseAccess(value: DatabaseAccess): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseAccess(value: DatabaseAccess): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseAccessConnection(value: DatabaseAccessConnection): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccessConnection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseAccessConnection(value: DatabaseAccessConnection): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccessConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseAccessContext(value: DatabaseAccessContext): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccessContext", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseAccessContext(value: DatabaseAccessContext): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccessContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseAccessDataSource(value: DatabaseAccessDataSource): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccessDataSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseAccessDataSource(value: DatabaseAccessDataSource): Self = StObject.set(x, "com.sun.star.sdb.DatabaseAccessDataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseContext(value: DatabaseContext): Self = StObject.set(x, "com.sun.star.sdb.DatabaseContext", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseContext(value: DatabaseContext): Self = StObject.set(x, "com.sun.star.sdb.DatabaseContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseDocument(value: DatabaseDocument): Self = StObject.set(x, "com.sun.star.sdb.DatabaseDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseDocument(value: DatabaseDocument): Self = StObject.set(x, "com.sun.star.sdb.DatabaseDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseEnvironment(value: DatabaseEnvironment): Self = StObject.set(x, "com.sun.star.sdb.DatabaseEnvironment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseEnvironment(value: DatabaseEnvironment): Self = StObject.set(x, "com.sun.star.sdb.DatabaseEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseInteractionHandler(value: DatabaseInteractionHandler): Self = StObject.set(x, "com.sun.star.sdb.DatabaseInteractionHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseInteractionHandler(value: DatabaseInteractionHandler): Self = StObject.set(x, "com.sun.star.sdb.DatabaseInteractionHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatasourceAdministrationDialog(value: DatasourceAdministrationDialog): Self = StObject.set(x, "com.sun.star.sdb.DatasourceAdministrationDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatasourceAdministrationDialog(value: DatasourceAdministrationDialog): Self = StObject.set(x, "com.sun.star.sdb.DatasourceAdministrationDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDefinitionContainer(value: DefinitionContainer): Self = StObject.set(x, "com.sun.star.sdb.DefinitionContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDefinitionContainer(value: DefinitionContainer): Self = StObject.set(x, "com.sun.star.sdb.DefinitionContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDefinitionContent(value: DefinitionContent): Self = StObject.set(x, "com.sun.star.sdb.DefinitionContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDefinitionContent(value: DefinitionContent): Self = StObject.set(x, "com.sun.star.sdb.DefinitionContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDocument(value: Document): Self = StObject.set(x, "com.sun.star.sdb.Document", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDocument(value: Document): Self = StObject.set(x, "com.sun.star.sdb.Document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDocumentContainer(value: DocumentContainer): Self = StObject.set(x, "com.sun.star.sdb.DocumentContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDocumentContainer(value: DocumentContainer): Self = StObject.set(x, "com.sun.star.sdb.DocumentContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDocumentDataSource(value: DocumentDataSource): Self = StObject.set(x, "com.sun.star.sdb.DocumentDataSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDocumentDataSource(value: DocumentDataSource): Self = StObject.set(x, "com.sun.star.sdb.DocumentDataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDocumentDefinition(value: DocumentDefinition): Self = StObject.set(x, "com.sun.star.sdb.DocumentDefinition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDocumentDefinition(value: DocumentDefinition): Self = StObject.set(x, "com.sun.star.sdb.DocumentDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotErrorMessageDialog(value: ErrorMessageDialog): Self = StObject.set(x, "com.sun.star.sdb.ErrorMessageDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotErrorMessageDialog(value: ErrorMessageDialog): Self = StObject.set(x, "com.sun.star.sdb.ErrorMessageDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotFilterDialog(value: FilterDialog): Self = StObject.set(x, "com.sun.star.sdb.FilterDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotFilterDialog(value: FilterDialog): Self = StObject.set(x, "com.sun.star.sdb.FilterDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotForms(value: typings.activexLibreoffice.com_.sun.star.sdb.Forms): Self = StObject.set(x, "com.sun.star.sdb.Forms", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotForms(value: typings.activexLibreoffice.com_.sun.star.sdb.Forms): Self = StObject.set(x, "com.sun.star.sdb.Forms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotInteractionHandler(value: typings.activexLibreoffice.com_.sun.star.sdb.InteractionHandler): Self = StObject.set(x, "com.sun.star.sdb.InteractionHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotInteractionHandler(value: typings.activexLibreoffice.com_.sun.star.sdb.InteractionHandler): Self = StObject.set(x, "com.sun.star.sdb.InteractionHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotOfficeDatabaseDocument(value: OfficeDatabaseDocument): Self = StObject.set(x, "com.sun.star.sdb.OfficeDatabaseDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotOfficeDatabaseDocument(value: OfficeDatabaseDocument): Self = StObject.set(x, "com.sun.star.sdb.OfficeDatabaseDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotOrderColumn(value: OrderColumn): Self = StObject.set(x, "com.sun.star.sdb.OrderColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotOrderColumn(value: OrderColumn): Self = StObject.set(x, "com.sun.star.sdb.OrderColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotOrderDialog(value: OrderDialog): Self = StObject.set(x, "com.sun.star.sdb.OrderDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotOrderDialog(value: OrderDialog): Self = StObject.set(x, "com.sun.star.sdb.OrderDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotPreparedStatement(value: PreparedStatement): Self = StObject.set(x, "com.sun.star.sdb.PreparedStatement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotPreparedStatement(value: PreparedStatement): Self = StObject.set(x, "com.sun.star.sdb.PreparedStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotQuery(value: Query): Self = StObject.set(x, "com.sun.star.sdb.Query", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotQuery(value: Query): Self = StObject.set(x, "com.sun.star.sdb.Query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotQueryDefinition(value: QueryDefinition): Self = StObject.set(x, "com.sun.star.sdb.QueryDefinition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotQueryDefinition(value: QueryDefinition): Self = StObject.set(x, "com.sun.star.sdb.QueryDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotQueryDescriptor(value: QueryDescriptor): Self = StObject.set(x, "com.sun.star.sdb.QueryDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotQueryDescriptor(value: QueryDescriptor): Self = StObject.set(x, "com.sun.star.sdb.QueryDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotQueryDesign(value: QueryDesign): Self = StObject.set(x, "com.sun.star.sdb.QueryDesign", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotQueryDesign(value: QueryDesign): Self = StObject.set(x, "com.sun.star.sdb.QueryDesign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotRelationDesign(value: RelationDesign): Self = StObject.set(x, "com.sun.star.sdb.RelationDesign", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotRelationDesign(value: RelationDesign): Self = StObject.set(x, "com.sun.star.sdb.RelationDesign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotReportDesign(value: ReportDesign): Self = StObject.set(x, "com.sun.star.sdb.ReportDesign", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotReportDesign(value: ReportDesign): Self = StObject.set(x, "com.sun.star.sdb.ReportDesign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotReports(value: Reports): Self = StObject.set(x, "com.sun.star.sdb.Reports", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotReports(value: Reports): Self = StObject.set(x, "com.sun.star.sdb.Reports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotResultColumn(value: ResultColumn): Self = StObject.set(x, "com.sun.star.sdb.ResultColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotResultColumn(value: ResultColumn): Self = StObject.set(x, "com.sun.star.sdb.ResultColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotResultSet(value: ResultSet): Self = StObject.set(x, "com.sun.star.sdb.ResultSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotResultSet(value: ResultSet): Self = StObject.set(x, "com.sun.star.sdb.ResultSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotRowSet(value: RowSet): Self = StObject.set(x, "com.sun.star.sdb.RowSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotRowSet(value: RowSet): Self = StObject.set(x, "com.sun.star.sdb.RowSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotSQLQueryComposer(value: SQLQueryComposer): Self = StObject.set(x, "com.sun.star.sdb.SQLQueryComposer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotSQLQueryComposer(value: SQLQueryComposer): Self = StObject.set(x, "com.sun.star.sdb.SQLQueryComposer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotSingleSelectQueryAnalyzer(value: SingleSelectQueryAnalyzer): Self = StObject.set(x, "com.sun.star.sdb.SingleSelectQueryAnalyzer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotSingleSelectQueryAnalyzer(value: SingleSelectQueryAnalyzer): Self = StObject.set(x, "com.sun.star.sdb.SingleSelectQueryAnalyzer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotSingleSelectQueryComposer(value: SingleSelectQueryComposer): Self = StObject.set(x, "com.sun.star.sdb.SingleSelectQueryComposer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotSingleSelectQueryComposer(value: SingleSelectQueryComposer): Self = StObject.set(x, "com.sun.star.sdb.SingleSelectQueryComposer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotTable(value: Table): Self = StObject.set(x, "com.sun.star.sdb.Table", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotTable(value: Table): Self = StObject.set(x, "com.sun.star.sdb.Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotTableDefinition(value: TableDefinition): Self = StObject.set(x, "com.sun.star.sdb.TableDefinition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotTableDefinition(value: TableDefinition): Self = StObject.set(x, "com.sun.star.sdb.TableDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotTableDescriptor(value: TableDescriptor): Self = StObject.set(x, "com.sun.star.sdb.TableDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotTableDescriptor(value: TableDescriptor): Self = StObject.set(x, "com.sun.star.sdb.TableDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotTableDesign(value: TableDesign): Self = StObject.set(x, "com.sun.star.sdb.TableDesign", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotTableDesign(value: TableDesign): Self = StObject.set(x, "com.sun.star.sdb.TableDesign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotTextConnectionSettings(value: TextConnectionSettings): Self = StObject.set(x, "com.sun.star.sdb.TextConnectionSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotTextConnectionSettings(value: TextConnectionSettings): Self = StObject.set(x, "com.sun.star.sdb.TextConnectionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotapplicationDotCopyTableWizard(value: CopyTableWizard): Self = StObject.set(x, "com.sun.star.sdb.application.CopyTableWizard", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotapplicationDotCopyTableWizard(value: CopyTableWizard): Self = StObject.set(x, "com.sun.star.sdb.application.CopyTableWizard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotapplicationDotDefaultViewController(value: DefaultViewController): Self = StObject.set(x, "com.sun.star.sdb.application.DefaultViewController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotapplicationDotDefaultViewController(value: DefaultViewController): Self = StObject.set(x, "com.sun.star.sdb.application.DefaultViewController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotapplicationDotMacroMigrationWizard(value: MacroMigrationWizard): Self = StObject.set(x, "com.sun.star.sdb.application.MacroMigrationWizard", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotapplicationDotMacroMigrationWizard(value: MacroMigrationWizard): Self = StObject.set(x, "com.sun.star.sdb.application.MacroMigrationWizard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDottoolsDotConnectionTools(value: ConnectionTools): Self = StObject.set(x, "com.sun.star.sdb.tools.ConnectionTools", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDottoolsDotConnectionTools(value: ConnectionTools): Self = StObject.set(x, "com.sun.star.sdb.tools.ConnectionTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotCallableStatement(value: typings.activexLibreoffice.com_.sun.star.sdbc.CallableStatement): Self = StObject.set(x, "com.sun.star.sdbc.CallableStatement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotCallableStatement(value: typings.activexLibreoffice.com_.sun.star.sdbc.CallableStatement): Self = StObject.set(x, "com.sun.star.sdbc.CallableStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotConnection(value: typings.activexLibreoffice.com_.sun.star.sdbc.Connection): Self = StObject.set(x, "com.sun.star.sdbc.Connection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotConnection(value: typings.activexLibreoffice.com_.sun.star.sdbc.Connection): Self = StObject.set(x, "com.sun.star.sdbc.Connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotConnectionPool(value: ConnectionPool): Self = StObject.set(x, "com.sun.star.sdbc.ConnectionPool", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotConnectionPool(value: ConnectionPool): Self = StObject.set(x, "com.sun.star.sdbc.ConnectionPool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotConnectionProperties(value: ConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.ConnectionProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotConnectionProperties(value: ConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.ConnectionProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotDBASEConnectionProperties(value: DBASEConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.DBASEConnectionProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotDBASEConnectionProperties(value: DBASEConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.DBASEConnectionProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotDriver(value: Driver): Self = StObject.set(x, "com.sun.star.sdbc.Driver", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotDriver(value: Driver): Self = StObject.set(x, "com.sun.star.sdbc.Driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotDriverManager(value: DriverManager): Self = StObject.set(x, "com.sun.star.sdbc.DriverManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotDriverManager(value: DriverManager): Self = StObject.set(x, "com.sun.star.sdbc.DriverManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotFILEConnectionProperties(value: FILEConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.FILEConnectionProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotFILEConnectionProperties(value: FILEConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.FILEConnectionProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotFLATConnectionProperties(value: FLATConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.FLATConnectionProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotFLATConnectionProperties(value: FLATConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.FLATConnectionProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotJDBCConnectionProperties(value: JDBCConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.JDBCConnectionProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotJDBCConnectionProperties(value: JDBCConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.JDBCConnectionProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotODBCConnectionProperties(value: ODBCConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.ODBCConnectionProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotODBCConnectionProperties(value: ODBCConnectionProperties): Self = StObject.set(x, "com.sun.star.sdbc.ODBCConnectionProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotPreparedStatement(value: typings.activexLibreoffice.com_.sun.star.sdbc.PreparedStatement): Self = StObject.set(x, "com.sun.star.sdbc.PreparedStatement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotPreparedStatement(value: typings.activexLibreoffice.com_.sun.star.sdbc.PreparedStatement): Self = StObject.set(x, "com.sun.star.sdbc.PreparedStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotResultSet(value: typings.activexLibreoffice.com_.sun.star.sdbc.ResultSet): Self = StObject.set(x, "com.sun.star.sdbc.ResultSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotResultSet(value: typings.activexLibreoffice.com_.sun.star.sdbc.ResultSet): Self = StObject.set(x, "com.sun.star.sdbc.ResultSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotRowSet(value: typings.activexLibreoffice.com_.sun.star.sdbc.RowSet): Self = StObject.set(x, "com.sun.star.sdbc.RowSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotRowSet(value: typings.activexLibreoffice.com_.sun.star.sdbc.RowSet): Self = StObject.set(x, "com.sun.star.sdbc.RowSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotStatement(value: Statement): Self = StObject.set(x, "com.sun.star.sdbc.Statement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotStatement(value: Statement): Self = StObject.set(x, "com.sun.star.sdbc.Statement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotColumn(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Column): Self = StObject.set(x, "com.sun.star.sdbcx.Column", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotColumn(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Column): Self = StObject.set(x, "com.sun.star.sdbcx.Column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotColumnDescriptor(value: ColumnDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.ColumnDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotColumnDescriptor(value: ColumnDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.ColumnDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotContainer(value: Container): Self = StObject.set(x, "com.sun.star.sdbcx.Container", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotContainer(value: Container): Self = StObject.set(x, "com.sun.star.sdbcx.Container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotDatabaseDefinition(value: DatabaseDefinition): Self = StObject.set(x, "com.sun.star.sdbcx.DatabaseDefinition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotDatabaseDefinition(value: DatabaseDefinition): Self = StObject.set(x, "com.sun.star.sdbcx.DatabaseDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotDescriptor(value: Descriptor): Self = StObject.set(x, "com.sun.star.sdbcx.Descriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotDescriptor(value: Descriptor): Self = StObject.set(x, "com.sun.star.sdbcx.Descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotDriver(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Driver): Self = StObject.set(x, "com.sun.star.sdbcx.Driver", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotDriver(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Driver): Self = StObject.set(x, "com.sun.star.sdbcx.Driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotGroup(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Group): Self = StObject.set(x, "com.sun.star.sdbcx.Group", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotGroup(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Group): Self = StObject.set(x, "com.sun.star.sdbcx.Group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotGroupDescriptor(value: GroupDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.GroupDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotGroupDescriptor(value: GroupDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.GroupDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotIndex(value: Index): Self = StObject.set(x, "com.sun.star.sdbcx.Index", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotIndex(value: Index): Self = StObject.set(x, "com.sun.star.sdbcx.Index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotIndexColumn(value: IndexColumn): Self = StObject.set(x, "com.sun.star.sdbcx.IndexColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotIndexColumn(value: IndexColumn): Self = StObject.set(x, "com.sun.star.sdbcx.IndexColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotIndexColumnDescriptor(value: IndexColumnDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.IndexColumnDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotIndexColumnDescriptor(value: IndexColumnDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.IndexColumnDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotIndexDescriptor(value: IndexDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.IndexDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotIndexDescriptor(value: IndexDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.IndexDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotKey(value: Key): Self = StObject.set(x, "com.sun.star.sdbcx.Key", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotKey(value: Key): Self = StObject.set(x, "com.sun.star.sdbcx.Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotKeyColumn(value: KeyColumn): Self = StObject.set(x, "com.sun.star.sdbcx.KeyColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotKeyColumn(value: KeyColumn): Self = StObject.set(x, "com.sun.star.sdbcx.KeyColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotKeyColumnDescriptor(value: KeyColumnDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.KeyColumnDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotKeyColumnDescriptor(value: KeyColumnDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.KeyColumnDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotKeyDescriptor(value: KeyDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.KeyDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotKeyDescriptor(value: KeyDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.KeyDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotPreparedStatement(value: typings.activexLibreoffice.com_.sun.star.sdbcx.PreparedStatement): Self = StObject.set(x, "com.sun.star.sdbcx.PreparedStatement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotPreparedStatement(value: typings.activexLibreoffice.com_.sun.star.sdbcx.PreparedStatement): Self = StObject.set(x, "com.sun.star.sdbcx.PreparedStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotReferenceColumn(value: ReferenceColumn): Self = StObject.set(x, "com.sun.star.sdbcx.ReferenceColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotReferenceColumn(value: ReferenceColumn): Self = StObject.set(x, "com.sun.star.sdbcx.ReferenceColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotResultSet(value: typings.activexLibreoffice.com_.sun.star.sdbcx.ResultSet): Self = StObject.set(x, "com.sun.star.sdbcx.ResultSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotResultSet(value: typings.activexLibreoffice.com_.sun.star.sdbcx.ResultSet): Self = StObject.set(x, "com.sun.star.sdbcx.ResultSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotStatement(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Statement): Self = StObject.set(x, "com.sun.star.sdbcx.Statement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotStatement(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Statement): Self = StObject.set(x, "com.sun.star.sdbcx.Statement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotTable(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Table): Self = StObject.set(x, "com.sun.star.sdbcx.Table", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotTable(value: typings.activexLibreoffice.com_.sun.star.sdbcx.Table): Self = StObject.set(x, "com.sun.star.sdbcx.Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotTableDescriptor(value: typings.activexLibreoffice.com_.sun.star.sdbcx.TableDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.TableDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotTableDescriptor(value: typings.activexLibreoffice.com_.sun.star.sdbcx.TableDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.TableDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotUser(value: User): Self = StObject.set(x, "com.sun.star.sdbcx.User", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotUser(value: User): Self = StObject.set(x, "com.sun.star.sdbcx.User", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotUserDescriptor(value: UserDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.UserDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotUserDescriptor(value: UserDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.UserDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotView(value: View): Self = StObject.set(x, "com.sun.star.sdbcx.View", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotView(value: View): Self = StObject.set(x, "com.sun.star.sdbcx.View", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcxDotViewDescriptor(value: ViewDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.ViewDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcxDotViewDescriptor(value: ViewDescriptor): Self = StObject.set(x, "com.sun.star.sdbcx.ViewDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotAccessController(value: AccessController): Self = StObject.set(x, "com.sun.star.security.AccessController", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotAccessController(value: AccessController): Self = StObject.set(x, "com.sun.star.security.AccessController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotCertificateContainer(value: CertificateContainer): Self = StObject.set(x, "com.sun.star.security.CertificateContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotCertificateContainer(value: CertificateContainer): Self = StObject.set(x, "com.sun.star.security.CertificateContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotDocumentDigitalSignatures(value: DocumentDigitalSignatures): Self = StObject.set(x, "com.sun.star.security.DocumentDigitalSignatures", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotDocumentDigitalSignatures(value: DocumentDigitalSignatures): Self = StObject.set(x, "com.sun.star.security.DocumentDigitalSignatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotPolicy(value: Policy): Self = StObject.set(x, "com.sun.star.security.Policy", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotPolicy(value: Policy): Self = StObject.set(x, "com.sun.star.security.Policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotSerialNumberAdapter(value: SerialNumberAdapter): Self = StObject.set(x, "com.sun.star.security.SerialNumberAdapter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotSerialNumberAdapter(value: SerialNumberAdapter): Self = StObject.set(x, "com.sun.star.security.SerialNumberAdapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsetupDotUpdateCheck(value: UpdateCheck): Self = StObject.set(x, "com.sun.star.setup.UpdateCheck", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsetupDotUpdateCheck(value: UpdateCheck): Self = StObject.set(x, "com.sun.star.setup.UpdateCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsetupDotUpdateCheckConfig(value: UpdateCheckConfig): Self = StObject.set(x, "com.sun.star.setup.UpdateCheckConfig", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsetupDotUpdateCheckConfig(value: UpdateCheckConfig): Self = StObject.set(x, "com.sun.star.setup.UpdateCheckConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessibleCell(value: AccessibleCell): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCell", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessibleCell(value: AccessibleCell): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessibleCsvCell(value: AccessibleCsvCell): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCsvCell", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessibleCsvCell(value: AccessibleCsvCell): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCsvCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessibleCsvRuler(value: AccessibleCsvRuler): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCsvRuler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessibleCsvRuler(value: AccessibleCsvRuler): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCsvRuler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessibleCsvTable(value: AccessibleCsvTable): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCsvTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessibleCsvTable(value: AccessibleCsvTable): Self = StObject.set(x, "com.sun.star.sheet.AccessibleCsvTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessiblePageHeaderFooterAreasView(value: AccessiblePageHeaderFooterAreasView): Self = StObject.set(x, "com.sun.star.sheet.AccessiblePageHeaderFooterAreasView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessiblePageHeaderFooterAreasView(value: AccessiblePageHeaderFooterAreasView): Self = StObject.set(x, "com.sun.star.sheet.AccessiblePageHeaderFooterAreasView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessibleSpreadsheet(value: AccessibleSpreadsheet): Self = StObject.set(x, "com.sun.star.sheet.AccessibleSpreadsheet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessibleSpreadsheet(value: AccessibleSpreadsheet): Self = StObject.set(x, "com.sun.star.sheet.AccessibleSpreadsheet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessibleSpreadsheetDocumentView(value: AccessibleSpreadsheetDocumentView): Self = StObject.set(x, "com.sun.star.sheet.AccessibleSpreadsheetDocumentView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessibleSpreadsheetDocumentView(value: AccessibleSpreadsheetDocumentView): Self = StObject.set(x, "com.sun.star.sheet.AccessibleSpreadsheetDocumentView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAccessibleSpreadsheetPageView(value: AccessibleSpreadsheetPageView): Self = StObject.set(x, "com.sun.star.sheet.AccessibleSpreadsheetPageView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAccessibleSpreadsheetPageView(value: AccessibleSpreadsheetPageView): Self = StObject.set(x, "com.sun.star.sheet.AccessibleSpreadsheetPageView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotAddIn(value: AddIn): Self = StObject.set(x, "com.sun.star.sheet.AddIn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotAddIn(value: AddIn): Self = StObject.set(x, "com.sun.star.sheet.AddIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellAnnotation(value: CellAnnotation): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellAnnotation(value: CellAnnotation): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellAnnotationShape(value: CellAnnotationShape): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotationShape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellAnnotationShape(value: CellAnnotationShape): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotationShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellAnnotations(value: CellAnnotations): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotations", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellAnnotations(value: CellAnnotations): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellAnnotationsEnumeration(value: CellAnnotationsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotationsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellAnnotationsEnumeration(value: CellAnnotationsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellAnnotationsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellAreaLink(value: CellAreaLink): Self = StObject.set(x, "com.sun.star.sheet.CellAreaLink", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellAreaLink(value: CellAreaLink): Self = StObject.set(x, "com.sun.star.sheet.CellAreaLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellAreaLinks(value: CellAreaLinks): Self = StObject.set(x, "com.sun.star.sheet.CellAreaLinks", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellAreaLinks(value: CellAreaLinks): Self = StObject.set(x, "com.sun.star.sheet.CellAreaLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellAreaLinksEnumeration(value: CellAreaLinksEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellAreaLinksEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellAreaLinksEnumeration(value: CellAreaLinksEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellAreaLinksEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellFormatRanges(value: CellFormatRanges): Self = StObject.set(x, "com.sun.star.sheet.CellFormatRanges", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellFormatRanges(value: CellFormatRanges): Self = StObject.set(x, "com.sun.star.sheet.CellFormatRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellFormatRangesEnumeration(value: CellFormatRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellFormatRangesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellFormatRangesEnumeration(value: CellFormatRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellFormatRangesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCells(value: Cells): Self = StObject.set(x, "com.sun.star.sheet.Cells", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCells(value: Cells): Self = StObject.set(x, "com.sun.star.sheet.Cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotCellsEnumeration(value: CellsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotCellsEnumeration(value: CellsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.CellsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotColorScale(value: ColorScale): Self = StObject.set(x, "com.sun.star.sheet.ColorScale", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotColorScale(value: ColorScale): Self = StObject.set(x, "com.sun.star.sheet.ColorScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotConditionFormatEntry(value: ConditionFormatEntry): Self = StObject.set(x, "com.sun.star.sheet.ConditionFormatEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotConditionFormatEntry(value: ConditionFormatEntry): Self = StObject.set(x, "com.sun.star.sheet.ConditionFormatEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotConditionalFormat(value: ConditionalFormat): Self = StObject.set(x, "com.sun.star.sheet.ConditionalFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotConditionalFormat(value: ConditionalFormat): Self = StObject.set(x, "com.sun.star.sheet.ConditionalFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotConsolidationDescriptor(value: ConsolidationDescriptor): Self = StObject.set(x, "com.sun.star.sheet.ConsolidationDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotConsolidationDescriptor(value: ConsolidationDescriptor): Self = StObject.set(x, "com.sun.star.sheet.ConsolidationDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDDELink(value: DDELink): Self = StObject.set(x, "com.sun.star.sheet.DDELink", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDDELink(value: DDELink): Self = StObject.set(x, "com.sun.star.sheet.DDELink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDDELinks(value: DDELinks): Self = StObject.set(x, "com.sun.star.sheet.DDELinks", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDDELinks(value: DDELinks): Self = StObject.set(x, "com.sun.star.sheet.DDELinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDDELinksEnumeration(value: DDELinksEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DDELinksEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDDELinksEnumeration(value: DDELinksEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DDELinksEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataBar(value: DataBar): Self = StObject.set(x, "com.sun.star.sheet.DataBar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataBar(value: DataBar): Self = StObject.set(x, "com.sun.star.sheet.DataBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotDescriptor(value: DataPilotDescriptor): Self = StObject.set(x, "com.sun.star.sheet.DataPilotDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotDescriptor(value: DataPilotDescriptor): Self = StObject.set(x, "com.sun.star.sheet.DataPilotDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotField(value: DataPilotField): Self = StObject.set(x, "com.sun.star.sheet.DataPilotField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotField(value: DataPilotField): Self = StObject.set(x, "com.sun.star.sheet.DataPilotField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldGroup(value: DataPilotFieldGroup): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroup", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldGroup(value: DataPilotFieldGroup): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldGroupEnumeration(value: DataPilotFieldGroupEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldGroupEnumeration(value: DataPilotFieldGroupEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldGroupItem(value: DataPilotFieldGroupItem): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldGroupItem(value: DataPilotFieldGroupItem): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldGroups(value: DataPilotFieldGroups): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroups", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldGroups(value: DataPilotFieldGroups): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldGroupsEnumeration(value: DataPilotFieldGroupsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldGroupsEnumeration(value: DataPilotFieldGroupsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFields(value: DataPilotFields): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFields", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFields(value: DataPilotFields): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldsEnumeration(value: DataPilotFieldsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldsEnumeration(value: DataPilotFieldsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotItem(value: DataPilotItem): Self = StObject.set(x, "com.sun.star.sheet.DataPilotItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotItem(value: DataPilotItem): Self = StObject.set(x, "com.sun.star.sheet.DataPilotItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotItems(value: DataPilotItems): Self = StObject.set(x, "com.sun.star.sheet.DataPilotItems", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotItems(value: DataPilotItems): Self = StObject.set(x, "com.sun.star.sheet.DataPilotItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotItemsEnumeration(value: DataPilotItemsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotItemsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotItemsEnumeration(value: DataPilotItemsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotItemsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSource(value: DataPilotSource): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSource(value: DataPilotSource): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceDimension(value: DataPilotSourceDimension): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceDimension", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceDimension(value: DataPilotSourceDimension): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceDimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceDimensions(value: DataPilotSourceDimensions): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceDimensions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceDimensions(value: DataPilotSourceDimensions): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceHierarchies(value: DataPilotSourceHierarchies): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceHierarchies", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceHierarchies(value: DataPilotSourceHierarchies): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceHierarchies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceHierarchy(value: DataPilotSourceHierarchy): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceHierarchy", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceHierarchy(value: DataPilotSourceHierarchy): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceHierarchy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceLevel(value: DataPilotSourceLevel): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceLevel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceLevel(value: DataPilotSourceLevel): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceLevels(value: DataPilotSourceLevels): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceLevels", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceLevels(value: DataPilotSourceLevels): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceLevels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceMember(value: DataPilotSourceMember): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceMember", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceMember(value: DataPilotSourceMember): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotSourceMembers(value: DataPilotSourceMembers): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceMembers", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotSourceMembers(value: DataPilotSourceMembers): Self = StObject.set(x, "com.sun.star.sheet.DataPilotSourceMembers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotTable(value: DataPilotTable): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotTable(value: DataPilotTable): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotTables(value: DataPilotTables): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTables", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotTables(value: DataPilotTables): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotTablesEnumeration(value: DataPilotTablesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTablesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotTablesEnumeration(value: DataPilotTablesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTablesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDatabaseImportDescriptor(value: DatabaseImportDescriptor): Self = StObject.set(x, "com.sun.star.sheet.DatabaseImportDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDatabaseImportDescriptor(value: DatabaseImportDescriptor): Self = StObject.set(x, "com.sun.star.sheet.DatabaseImportDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDatabaseRange(value: DatabaseRange): Self = StObject.set(x, "com.sun.star.sheet.DatabaseRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDatabaseRange(value: DatabaseRange): Self = StObject.set(x, "com.sun.star.sheet.DatabaseRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDatabaseRanges(value: DatabaseRanges): Self = StObject.set(x, "com.sun.star.sheet.DatabaseRanges", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDatabaseRanges(value: DatabaseRanges): Self = StObject.set(x, "com.sun.star.sheet.DatabaseRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDatabaseRangesEnumeration(value: DatabaseRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DatabaseRangesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDatabaseRangesEnumeration(value: DatabaseRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.DatabaseRangesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDateCondition(value: DateCondition): Self = StObject.set(x, "com.sun.star.sheet.DateCondition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDateCondition(value: DateCondition): Self = StObject.set(x, "com.sun.star.sheet.DateCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDocumentSettings(value: typings.activexLibreoffice.com_.sun.star.sheet.DocumentSettings): Self = StObject.set(x, "com.sun.star.sheet.DocumentSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDocumentSettings(value: typings.activexLibreoffice.com_.sun.star.sheet.DocumentSettings): Self = StObject.set(x, "com.sun.star.sheet.DocumentSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotExternalDocLink(value: ExternalDocLink): Self = StObject.set(x, "com.sun.star.sheet.ExternalDocLink", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotExternalDocLink(value: ExternalDocLink): Self = StObject.set(x, "com.sun.star.sheet.ExternalDocLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotExternalDocLinks(value: ExternalDocLinks): Self = StObject.set(x, "com.sun.star.sheet.ExternalDocLinks", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotExternalDocLinks(value: ExternalDocLinks): Self = StObject.set(x, "com.sun.star.sheet.ExternalDocLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotExternalSheetCache(value: ExternalSheetCache): Self = StObject.set(x, "com.sun.star.sheet.ExternalSheetCache", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotExternalSheetCache(value: ExternalSheetCache): Self = StObject.set(x, "com.sun.star.sheet.ExternalSheetCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFilterFormulaParser(value: FilterFormulaParser): Self = StObject.set(x, "com.sun.star.sheet.FilterFormulaParser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFilterFormulaParser(value: FilterFormulaParser): Self = StObject.set(x, "com.sun.star.sheet.FilterFormulaParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFormulaOpCodeMapper(value: FormulaOpCodeMapper): Self = StObject.set(x, "com.sun.star.sheet.FormulaOpCodeMapper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFormulaOpCodeMapper(value: FormulaOpCodeMapper): Self = StObject.set(x, "com.sun.star.sheet.FormulaOpCodeMapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFormulaParser(value: FormulaParser): Self = StObject.set(x, "com.sun.star.sheet.FormulaParser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFormulaParser(value: FormulaParser): Self = StObject.set(x, "com.sun.star.sheet.FormulaParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFunctionAccess(value: FunctionAccess): Self = StObject.set(x, "com.sun.star.sheet.FunctionAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFunctionAccess(value: FunctionAccess): Self = StObject.set(x, "com.sun.star.sheet.FunctionAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFunctionDescription(value: FunctionDescription): Self = StObject.set(x, "com.sun.star.sheet.FunctionDescription", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFunctionDescription(value: FunctionDescription): Self = StObject.set(x, "com.sun.star.sheet.FunctionDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFunctionDescriptionEnumeration(value: FunctionDescriptionEnumeration): Self = StObject.set(x, "com.sun.star.sheet.FunctionDescriptionEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFunctionDescriptionEnumeration(value: FunctionDescriptionEnumeration): Self = StObject.set(x, "com.sun.star.sheet.FunctionDescriptionEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFunctionDescriptions(value: FunctionDescriptions): Self = StObject.set(x, "com.sun.star.sheet.FunctionDescriptions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFunctionDescriptions(value: FunctionDescriptions): Self = StObject.set(x, "com.sun.star.sheet.FunctionDescriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotGlobalSheetSettings(value: GlobalSheetSettings): Self = StObject.set(x, "com.sun.star.sheet.GlobalSheetSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotGlobalSheetSettings(value: GlobalSheetSettings): Self = StObject.set(x, "com.sun.star.sheet.GlobalSheetSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotHeaderFooterContent(value: HeaderFooterContent): Self = StObject.set(x, "com.sun.star.sheet.HeaderFooterContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotHeaderFooterContent(value: HeaderFooterContent): Self = StObject.set(x, "com.sun.star.sheet.HeaderFooterContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotIconSet(value: IconSet): Self = StObject.set(x, "com.sun.star.sheet.IconSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotIconSet(value: IconSet): Self = StObject.set(x, "com.sun.star.sheet.IconSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotLabelRange(value: LabelRange): Self = StObject.set(x, "com.sun.star.sheet.LabelRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotLabelRange(value: LabelRange): Self = StObject.set(x, "com.sun.star.sheet.LabelRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotLabelRanges(value: LabelRanges): Self = StObject.set(x, "com.sun.star.sheet.LabelRanges", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotLabelRanges(value: LabelRanges): Self = StObject.set(x, "com.sun.star.sheet.LabelRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotLabelRangesEnumeration(value: LabelRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.LabelRangesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotLabelRangesEnumeration(value: LabelRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.LabelRangesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotNamedRange(value: NamedRange): Self = StObject.set(x, "com.sun.star.sheet.NamedRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotNamedRange(value: NamedRange): Self = StObject.set(x, "com.sun.star.sheet.NamedRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotNamedRanges(value: NamedRanges): Self = StObject.set(x, "com.sun.star.sheet.NamedRanges", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotNamedRanges(value: NamedRanges): Self = StObject.set(x, "com.sun.star.sheet.NamedRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotNamedRangesEnumeration(value: NamedRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.NamedRangesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotNamedRangesEnumeration(value: NamedRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.NamedRangesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotRangeSelectionArguments(value: RangeSelectionArguments): Self = StObject.set(x, "com.sun.star.sheet.RangeSelectionArguments", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotRangeSelectionArguments(value: RangeSelectionArguments): Self = StObject.set(x, "com.sun.star.sheet.RangeSelectionArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotRecentFunctions(value: RecentFunctions): Self = StObject.set(x, "com.sun.star.sheet.RecentFunctions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotRecentFunctions(value: RecentFunctions): Self = StObject.set(x, "com.sun.star.sheet.RecentFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotScenario(value: Scenario): Self = StObject.set(x, "com.sun.star.sheet.Scenario", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotScenario(value: Scenario): Self = StObject.set(x, "com.sun.star.sheet.Scenario", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotScenarios(value: Scenarios): Self = StObject.set(x, "com.sun.star.sheet.Scenarios", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotScenarios(value: Scenarios): Self = StObject.set(x, "com.sun.star.sheet.Scenarios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotScenariosEnumeration(value: ScenariosEnumeration): Self = StObject.set(x, "com.sun.star.sheet.ScenariosEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotScenariosEnumeration(value: ScenariosEnumeration): Self = StObject.set(x, "com.sun.star.sheet.ScenariosEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotShape(value: typings.activexLibreoffice.com_.sun.star.sheet.Shape): Self = StObject.set(x, "com.sun.star.sheet.Shape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotShape(value: typings.activexLibreoffice.com_.sun.star.sheet.Shape): Self = StObject.set(x, "com.sun.star.sheet.Shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetCell(value: SheetCell): Self = StObject.set(x, "com.sun.star.sheet.SheetCell", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetCell(value: SheetCell): Self = StObject.set(x, "com.sun.star.sheet.SheetCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetCellCursor(value: SheetCellCursor): Self = StObject.set(x, "com.sun.star.sheet.SheetCellCursor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetCellCursor(value: SheetCellCursor): Self = StObject.set(x, "com.sun.star.sheet.SheetCellCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetCellRange(value: SheetCellRange): Self = StObject.set(x, "com.sun.star.sheet.SheetCellRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetCellRange(value: SheetCellRange): Self = StObject.set(x, "com.sun.star.sheet.SheetCellRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetCellRanges(value: SheetCellRanges): Self = StObject.set(x, "com.sun.star.sheet.SheetCellRanges", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetCellRanges(value: SheetCellRanges): Self = StObject.set(x, "com.sun.star.sheet.SheetCellRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetCellRangesEnumeration(value: SheetCellRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SheetCellRangesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetCellRangesEnumeration(value: SheetCellRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SheetCellRangesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetFilterDescriptor(value: SheetFilterDescriptor): Self = StObject.set(x, "com.sun.star.sheet.SheetFilterDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetFilterDescriptor(value: SheetFilterDescriptor): Self = StObject.set(x, "com.sun.star.sheet.SheetFilterDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetLink(value: SheetLink): Self = StObject.set(x, "com.sun.star.sheet.SheetLink", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetLink(value: SheetLink): Self = StObject.set(x, "com.sun.star.sheet.SheetLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetLinks(value: SheetLinks): Self = StObject.set(x, "com.sun.star.sheet.SheetLinks", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetLinks(value: SheetLinks): Self = StObject.set(x, "com.sun.star.sheet.SheetLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetLinksEnumeration(value: SheetLinksEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SheetLinksEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetLinksEnumeration(value: SheetLinksEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SheetLinksEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetRangesQuery(value: SheetRangesQuery): Self = StObject.set(x, "com.sun.star.sheet.SheetRangesQuery", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetRangesQuery(value: SheetRangesQuery): Self = StObject.set(x, "com.sun.star.sheet.SheetRangesQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetSortDescriptor(value: SheetSortDescriptor): Self = StObject.set(x, "com.sun.star.sheet.SheetSortDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetSortDescriptor(value: SheetSortDescriptor): Self = StObject.set(x, "com.sun.star.sheet.SheetSortDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSheetSortDescriptor2(value: SheetSortDescriptor2): Self = StObject.set(x, "com.sun.star.sheet.SheetSortDescriptor2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSheetSortDescriptor2(value: SheetSortDescriptor2): Self = StObject.set(x, "com.sun.star.sheet.SheetSortDescriptor2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSolver(value: Solver): Self = StObject.set(x, "com.sun.star.sheet.Solver", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSolver(value: Solver): Self = StObject.set(x, "com.sun.star.sheet.Solver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheet(value: Spreadsheet): Self = StObject.set(x, "com.sun.star.sheet.Spreadsheet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheet(value: Spreadsheet): Self = StObject.set(x, "com.sun.star.sheet.Spreadsheet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetDocument(value: SpreadsheetDocument): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetDocument(value: SpreadsheetDocument): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetDocumentSettings(value: SpreadsheetDocumentSettings): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetDocumentSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetDocumentSettings(value: SpreadsheetDocumentSettings): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetDocumentSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetDrawPage(value: SpreadsheetDrawPage): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetDrawPage", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetDrawPage(value: SpreadsheetDrawPage): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetDrawPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetView(value: SpreadsheetView): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetView(value: SpreadsheetView): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetViewPane(value: SpreadsheetViewPane): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetViewPane", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetViewPane(value: SpreadsheetViewPane): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetViewPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetViewPanesEnumeration(value: SpreadsheetViewPanesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetViewPanesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetViewPanesEnumeration(value: SpreadsheetViewPanesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetViewPanesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetViewSettings(value: SpreadsheetViewSettings): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetViewSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetViewSettings(value: SpreadsheetViewSettings): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetViewSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheets(value: Spreadsheets): Self = StObject.set(x, "com.sun.star.sheet.Spreadsheets", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheets(value: Spreadsheets): Self = StObject.set(x, "com.sun.star.sheet.Spreadsheets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSpreadsheetsEnumeration(value: SpreadsheetsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSpreadsheetsEnumeration(value: SpreadsheetsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SpreadsheetsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSubTotalDescriptor(value: SubTotalDescriptor): Self = StObject.set(x, "com.sun.star.sheet.SubTotalDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSubTotalDescriptor(value: SubTotalDescriptor): Self = StObject.set(x, "com.sun.star.sheet.SubTotalDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSubTotalField(value: SubTotalField): Self = StObject.set(x, "com.sun.star.sheet.SubTotalField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSubTotalField(value: SubTotalField): Self = StObject.set(x, "com.sun.star.sheet.SubTotalField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSubTotalFieldsEnumeration(value: SubTotalFieldsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SubTotalFieldsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSubTotalFieldsEnumeration(value: SubTotalFieldsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.SubTotalFieldsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableAutoFormat(value: TableAutoFormat): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableAutoFormat(value: TableAutoFormat): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableAutoFormatEnumeration(value: TableAutoFormatEnumeration): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormatEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableAutoFormatEnumeration(value: TableAutoFormatEnumeration): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormatEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableAutoFormatField(value: TableAutoFormatField): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormatField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableAutoFormatField(value: TableAutoFormatField): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormatField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableAutoFormats(value: TableAutoFormats): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormats", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableAutoFormats(value: TableAutoFormats): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableAutoFormatsEnumeration(value: TableAutoFormatsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormatsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableAutoFormatsEnumeration(value: TableAutoFormatsEnumeration): Self = StObject.set(x, "com.sun.star.sheet.TableAutoFormatsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "com.sun.star.sheet.TableCellStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "com.sun.star.sheet.TableCellStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableConditionalEntry(value: TableConditionalEntry): Self = StObject.set(x, "com.sun.star.sheet.TableConditionalEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableConditionalEntry(value: TableConditionalEntry): Self = StObject.set(x, "com.sun.star.sheet.TableConditionalEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableConditionalEntryEnumeration(value: TableConditionalEntryEnumeration): Self = StObject.set(x, "com.sun.star.sheet.TableConditionalEntryEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableConditionalEntryEnumeration(value: TableConditionalEntryEnumeration): Self = StObject.set(x, "com.sun.star.sheet.TableConditionalEntryEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableConditionalFormat(value: TableConditionalFormat): Self = StObject.set(x, "com.sun.star.sheet.TableConditionalFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableConditionalFormat(value: TableConditionalFormat): Self = StObject.set(x, "com.sun.star.sheet.TableConditionalFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTablePageStyle(value: TablePageStyle): Self = StObject.set(x, "com.sun.star.sheet.TablePageStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTablePageStyle(value: TablePageStyle): Self = StObject.set(x, "com.sun.star.sheet.TablePageStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableValidation(value: TableValidation): Self = StObject.set(x, "com.sun.star.sheet.TableValidation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableValidation(value: TableValidation): Self = StObject.set(x, "com.sun.star.sheet.TableValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotUniqueCellFormatRanges(value: UniqueCellFormatRanges): Self = StObject.set(x, "com.sun.star.sheet.UniqueCellFormatRanges", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotUniqueCellFormatRanges(value: UniqueCellFormatRanges): Self = StObject.set(x, "com.sun.star.sheet.UniqueCellFormatRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotUniqueCellFormatRangesEnumeration(value: UniqueCellFormatRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.UniqueCellFormatRangesEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotUniqueCellFormatRangesEnumeration(value: UniqueCellFormatRangesEnumeration): Self = StObject.set(x, "com.sun.star.sheet.UniqueCellFormatRangesEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotVolatileResult(value: VolatileResult): Self = StObject.set(x, "com.sun.star.sheet.VolatileResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotVolatileResult(value: VolatileResult): Self = StObject.set(x, "com.sun.star.sheet.VolatileResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsmarttagsDotSmartTagAction(value: SmartTagAction): Self = StObject.set(x, "com.sun.star.smarttags.SmartTagAction", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsmarttagsDotSmartTagAction(value: SmartTagAction): Self = StObject.set(x, "com.sun.star.smarttags.SmartTagAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsmarttagsDotSmartTagRecognizer(value: SmartTagRecognizer): Self = StObject.set(x, "com.sun.star.smarttags.SmartTagRecognizer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsmarttagsDotSmartTagRecognizer(value: SmartTagRecognizer): Self = StObject.set(x, "com.sun.star.smarttags.SmartTagRecognizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotCellStyle(value: CellStyle): Self = StObject.set(x, "com.sun.star.style.CellStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotCellStyle(value: CellStyle): Self = StObject.set(x, "com.sun.star.style.CellStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotCharacterProperties(value: CharacterProperties): Self = StObject.set(x, "com.sun.star.style.CharacterProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotCharacterProperties(value: CharacterProperties): Self = StObject.set(x, "com.sun.star.style.CharacterProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotCharacterPropertiesAsian(value: CharacterPropertiesAsian): Self = StObject.set(x, "com.sun.star.style.CharacterPropertiesAsian", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotCharacterPropertiesAsian(value: CharacterPropertiesAsian): Self = StObject.set(x, "com.sun.star.style.CharacterPropertiesAsian", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotCharacterPropertiesComplex(value: CharacterPropertiesComplex): Self = StObject.set(x, "com.sun.star.style.CharacterPropertiesComplex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotCharacterPropertiesComplex(value: CharacterPropertiesComplex): Self = StObject.set(x, "com.sun.star.style.CharacterPropertiesComplex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotCharacterStyle(value: CharacterStyle): Self = StObject.set(x, "com.sun.star.style.CharacterStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotCharacterStyle(value: CharacterStyle): Self = StObject.set(x, "com.sun.star.style.CharacterStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotNumberingAlignment(value: NumberingAlignment): Self = StObject.set(x, "com.sun.star.style.NumberingAlignment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotNumberingAlignment(value: NumberingAlignment): Self = StObject.set(x, "com.sun.star.style.NumberingAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotNumberingLevel(value: NumberingLevel): Self = StObject.set(x, "com.sun.star.style.NumberingLevel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotNumberingLevel(value: NumberingLevel): Self = StObject.set(x, "com.sun.star.style.NumberingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotNumberingRule(value: NumberingRule): Self = StObject.set(x, "com.sun.star.style.NumberingRule", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotNumberingRule(value: NumberingRule): Self = StObject.set(x, "com.sun.star.style.NumberingRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotPageProperties(value: PageProperties): Self = StObject.set(x, "com.sun.star.style.PageProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotPageProperties(value: PageProperties): Self = StObject.set(x, "com.sun.star.style.PageProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotPageStyle(value: PageStyle): Self = StObject.set(x, "com.sun.star.style.PageStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotPageStyle(value: PageStyle): Self = StObject.set(x, "com.sun.star.style.PageStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotParagraphProperties(value: ParagraphProperties): Self = StObject.set(x, "com.sun.star.style.ParagraphProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotParagraphProperties(value: ParagraphProperties): Self = StObject.set(x, "com.sun.star.style.ParagraphProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotParagraphPropertiesAsian(value: ParagraphPropertiesAsian): Self = StObject.set(x, "com.sun.star.style.ParagraphPropertiesAsian", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotParagraphPropertiesAsian(value: ParagraphPropertiesAsian): Self = StObject.set(x, "com.sun.star.style.ParagraphPropertiesAsian", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotParagraphPropertiesComplex(value: ParagraphPropertiesComplex): Self = StObject.set(x, "com.sun.star.style.ParagraphPropertiesComplex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotParagraphPropertiesComplex(value: ParagraphPropertiesComplex): Self = StObject.set(x, "com.sun.star.style.ParagraphPropertiesComplex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "com.sun.star.style.ParagraphStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "com.sun.star.style.ParagraphStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotStyle(value: Style): Self = StObject.set(x, "com.sun.star.style.Style", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotStyle(value: Style): Self = StObject.set(x, "com.sun.star.style.Style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotStyleFamilies(value: StyleFamilies): Self = StObject.set(x, "com.sun.star.style.StyleFamilies", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotStyleFamilies(value: StyleFamilies): Self = StObject.set(x, "com.sun.star.style.StyleFamilies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotStyleFamily(value: StyleFamily): Self = StObject.set(x, "com.sun.star.style.StyleFamily", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotStyleFamily(value: StyleFamily): Self = StObject.set(x, "com.sun.star.style.StyleFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsystemDotSimpleCommandMail(value: SimpleCommandMail): Self = StObject.set(x, "com.sun.star.system.SimpleCommandMail", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsystemDotSimpleCommandMail(value: SimpleCommandMail): Self = StObject.set(x, "com.sun.star.system.SimpleCommandMail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsystemDotSimpleSystemMail(value: SimpleSystemMail): Self = StObject.set(x, "com.sun.star.system.SimpleSystemMail", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsystemDotSimpleSystemMail(value: SimpleSystemMail): Self = StObject.set(x, "com.sun.star.system.SimpleSystemMail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsystemDotSystemShellExecute(value: SystemShellExecute): Self = StObject.set(x, "com.sun.star.system.SystemShellExecute", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsystemDotSystemShellExecute(value: SystemShellExecute): Self = StObject.set(x, "com.sun.star.system.SystemShellExecute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotAccessibleCellView(value: AccessibleCellView): Self = StObject.set(x, "com.sun.star.table.AccessibleCellView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotAccessibleCellView(value: AccessibleCellView): Self = StObject.set(x, "com.sun.star.table.AccessibleCellView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotAccessibleTableView(value: AccessibleTableView): Self = StObject.set(x, "com.sun.star.table.AccessibleTableView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotAccessibleTableView(value: AccessibleTableView): Self = StObject.set(x, "com.sun.star.table.AccessibleTableView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCell(value: Cell): Self = StObject.set(x, "com.sun.star.table.Cell", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCell(value: Cell): Self = StObject.set(x, "com.sun.star.table.Cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCellCursor(value: CellCursor): Self = StObject.set(x, "com.sun.star.table.CellCursor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCellCursor(value: CellCursor): Self = StObject.set(x, "com.sun.star.table.CellCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCellProperties(value: CellProperties): Self = StObject.set(x, "com.sun.star.table.CellProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCellProperties(value: CellProperties): Self = StObject.set(x, "com.sun.star.table.CellProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCellRange(value: CellRange): Self = StObject.set(x, "com.sun.star.table.CellRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCellRange(value: CellRange): Self = StObject.set(x, "com.sun.star.table.CellRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCellRangeListSource(value: CellRangeListSource): Self = StObject.set(x, "com.sun.star.table.CellRangeListSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCellRangeListSource(value: CellRangeListSource): Self = StObject.set(x, "com.sun.star.table.CellRangeListSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCellValueBinding(value: CellValueBinding): Self = StObject.set(x, "com.sun.star.table.CellValueBinding", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCellValueBinding(value: CellValueBinding): Self = StObject.set(x, "com.sun.star.table.CellValueBinding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotListPositionCellBinding(value: ListPositionCellBinding): Self = StObject.set(x, "com.sun.star.table.ListPositionCellBinding", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotListPositionCellBinding(value: ListPositionCellBinding): Self = StObject.set(x, "com.sun.star.table.ListPositionCellBinding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableChart(value: TableChart): Self = StObject.set(x, "com.sun.star.table.TableChart", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableChart(value: TableChart): Self = StObject.set(x, "com.sun.star.table.TableChart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableCharts(value: TableCharts): Self = StObject.set(x, "com.sun.star.table.TableCharts", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableCharts(value: TableCharts): Self = StObject.set(x, "com.sun.star.table.TableCharts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableChartsEnumeration(value: TableChartsEnumeration): Self = StObject.set(x, "com.sun.star.table.TableChartsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableChartsEnumeration(value: TableChartsEnumeration): Self = StObject.set(x, "com.sun.star.table.TableChartsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableColumn(value: TableColumn): Self = StObject.set(x, "com.sun.star.table.TableColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableColumn(value: TableColumn): Self = StObject.set(x, "com.sun.star.table.TableColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableColumns(value: TableColumns): Self = StObject.set(x, "com.sun.star.table.TableColumns", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableColumns(value: TableColumns): Self = StObject.set(x, "com.sun.star.table.TableColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableColumnsEnumeration(value: TableColumnsEnumeration): Self = StObject.set(x, "com.sun.star.table.TableColumnsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableColumnsEnumeration(value: TableColumnsEnumeration): Self = StObject.set(x, "com.sun.star.table.TableColumnsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableRow(value: TableRow): Self = StObject.set(x, "com.sun.star.table.TableRow", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableRow(value: TableRow): Self = StObject.set(x, "com.sun.star.table.TableRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableRows(value: TableRows): Self = StObject.set(x, "com.sun.star.table.TableRows", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableRows(value: TableRows): Self = StObject.set(x, "com.sun.star.table.TableRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableRowsEnumeration(value: TableRowsEnumeration): Self = StObject.set(x, "com.sun.star.table.TableRowsEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableRowsEnumeration(value: TableRowsEnumeration): Self = StObject.set(x, "com.sun.star.table.TableRowsEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableSortDescriptor(value: TableSortDescriptor): Self = StObject.set(x, "com.sun.star.table.TableSortDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableSortDescriptor(value: TableSortDescriptor): Self = StObject.set(x, "com.sun.star.table.TableSortDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableSortDescriptor2(value: TableSortDescriptor2): Self = StObject.set(x, "com.sun.star.table.TableSortDescriptor2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableSortDescriptor2(value: TableSortDescriptor2): Self = StObject.set(x, "com.sun.star.table.TableSortDescriptor2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotAsyncJob(value: AsyncJob): Self = StObject.set(x, "com.sun.star.task.AsyncJob", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotAsyncJob(value: AsyncJob): Self = StObject.set(x, "com.sun.star.task.AsyncJob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotInteractionHandler(value: typings.activexLibreoffice.com_.sun.star.task.InteractionHandler): Self = StObject.set(x, "com.sun.star.task.InteractionHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotInteractionHandler(value: typings.activexLibreoffice.com_.sun.star.task.InteractionHandler): Self = StObject.set(x, "com.sun.star.task.InteractionHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotInteractionRequestStringResolver(value: InteractionRequestStringResolver): Self = StObject.set(x, "com.sun.star.task.InteractionRequestStringResolver", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotInteractionRequestStringResolver(value: InteractionRequestStringResolver): Self = StObject.set(x, "com.sun.star.task.InteractionRequestStringResolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotJob(value: Job): Self = StObject.set(x, "com.sun.star.task.Job", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotJob(value: Job): Self = StObject.set(x, "com.sun.star.task.Job", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotJobExecutor(value: JobExecutor): Self = StObject.set(x, "com.sun.star.task.JobExecutor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotJobExecutor(value: JobExecutor): Self = StObject.set(x, "com.sun.star.task.JobExecutor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotPasswordContainer(value: PasswordContainer): Self = StObject.set(x, "com.sun.star.task.PasswordContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotPasswordContainer(value: PasswordContainer): Self = StObject.set(x, "com.sun.star.task.PasswordContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotPasswordContainerInteractionHandler(value: PasswordContainerInteractionHandler): Self = StObject.set(x, "com.sun.star.task.PasswordContainerInteractionHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotPasswordContainerInteractionHandler(value: PasswordContainerInteractionHandler): Self = StObject.set(x, "com.sun.star.task.PasswordContainerInteractionHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotStatusIndicatorFactory(value: StatusIndicatorFactory): Self = StObject.set(x, "com.sun.star.task.StatusIndicatorFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotStatusIndicatorFactory(value: StatusIndicatorFactory): Self = StObject.set(x, "com.sun.star.task.StatusIndicatorFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleEndnoteView(value: AccessibleEndnoteView): Self = StObject.set(x, "com.sun.star.text.AccessibleEndnoteView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleEndnoteView(value: AccessibleEndnoteView): Self = StObject.set(x, "com.sun.star.text.AccessibleEndnoteView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleFootnoteView(value: AccessibleFootnoteView): Self = StObject.set(x, "com.sun.star.text.AccessibleFootnoteView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleFootnoteView(value: AccessibleFootnoteView): Self = StObject.set(x, "com.sun.star.text.AccessibleFootnoteView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleHeaderFooterView(value: AccessibleHeaderFooterView): Self = StObject.set(x, "com.sun.star.text.AccessibleHeaderFooterView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleHeaderFooterView(value: AccessibleHeaderFooterView): Self = StObject.set(x, "com.sun.star.text.AccessibleHeaderFooterView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessiblePageView(value: AccessiblePageView): Self = StObject.set(x, "com.sun.star.text.AccessiblePageView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessiblePageView(value: AccessiblePageView): Self = StObject.set(x, "com.sun.star.text.AccessiblePageView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleParagraphView(value: AccessibleParagraphView): Self = StObject.set(x, "com.sun.star.text.AccessibleParagraphView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleParagraphView(value: AccessibleParagraphView): Self = StObject.set(x, "com.sun.star.text.AccessibleParagraphView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleTextDocumentPageView(value: AccessibleTextDocumentPageView): Self = StObject.set(x, "com.sun.star.text.AccessibleTextDocumentPageView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleTextDocumentPageView(value: AccessibleTextDocumentPageView): Self = StObject.set(x, "com.sun.star.text.AccessibleTextDocumentPageView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleTextDocumentView(value: AccessibleTextDocumentView): Self = StObject.set(x, "com.sun.star.text.AccessibleTextDocumentView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleTextDocumentView(value: AccessibleTextDocumentView): Self = StObject.set(x, "com.sun.star.text.AccessibleTextDocumentView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleTextEmbeddedObject(value: AccessibleTextEmbeddedObject): Self = StObject.set(x, "com.sun.star.text.AccessibleTextEmbeddedObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleTextEmbeddedObject(value: AccessibleTextEmbeddedObject): Self = StObject.set(x, "com.sun.star.text.AccessibleTextEmbeddedObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleTextFrameView(value: AccessibleTextFrameView): Self = StObject.set(x, "com.sun.star.text.AccessibleTextFrameView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleTextFrameView(value: AccessibleTextFrameView): Self = StObject.set(x, "com.sun.star.text.AccessibleTextFrameView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAccessibleTextGraphicObject(value: AccessibleTextGraphicObject): Self = StObject.set(x, "com.sun.star.text.AccessibleTextGraphicObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAccessibleTextGraphicObject(value: AccessibleTextGraphicObject): Self = StObject.set(x, "com.sun.star.text.AccessibleTextGraphicObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAutoTextContainer(value: AutoTextContainer): Self = StObject.set(x, "com.sun.star.text.AutoTextContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAutoTextContainer(value: AutoTextContainer): Self = StObject.set(x, "com.sun.star.text.AutoTextContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAutoTextEntry(value: AutoTextEntry): Self = StObject.set(x, "com.sun.star.text.AutoTextEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAutoTextEntry(value: AutoTextEntry): Self = StObject.set(x, "com.sun.star.text.AutoTextEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotAutoTextGroup(value: AutoTextGroup): Self = StObject.set(x, "com.sun.star.text.AutoTextGroup", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotAutoTextGroup(value: AutoTextGroup): Self = StObject.set(x, "com.sun.star.text.AutoTextGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotBaseFrame(value: BaseFrame): Self = StObject.set(x, "com.sun.star.text.BaseFrame", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotBaseFrame(value: BaseFrame): Self = StObject.set(x, "com.sun.star.text.BaseFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotBaseFrameProperties(value: BaseFrameProperties): Self = StObject.set(x, "com.sun.star.text.BaseFrameProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotBaseFrameProperties(value: BaseFrameProperties): Self = StObject.set(x, "com.sun.star.text.BaseFrameProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotBaseIndex(value: BaseIndex): Self = StObject.set(x, "com.sun.star.text.BaseIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotBaseIndex(value: BaseIndex): Self = StObject.set(x, "com.sun.star.text.BaseIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotBaseIndexMark(value: BaseIndexMark): Self = StObject.set(x, "com.sun.star.text.BaseIndexMark", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotBaseIndexMark(value: BaseIndexMark): Self = StObject.set(x, "com.sun.star.text.BaseIndexMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotBibliography(value: typings.activexLibreoffice.com_.sun.star.text.Bibliography): Self = StObject.set(x, "com.sun.star.text.Bibliography", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotBibliography(value: typings.activexLibreoffice.com_.sun.star.text.Bibliography): Self = StObject.set(x, "com.sun.star.text.Bibliography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotBookmark(value: Bookmark): Self = StObject.set(x, "com.sun.star.text.Bookmark", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotBookmark(value: Bookmark): Self = StObject.set(x, "com.sun.star.text.Bookmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotBookmarks(value: Bookmarks): Self = StObject.set(x, "com.sun.star.text.Bookmarks", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotBookmarks(value: Bookmarks): Self = StObject.set(x, "com.sun.star.text.Bookmarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotCell(value: typings.activexLibreoffice.com_.sun.star.text.Cell): Self = StObject.set(x, "com.sun.star.text.Cell", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotCell(value: typings.activexLibreoffice.com_.sun.star.text.Cell): Self = StObject.set(x, "com.sun.star.text.Cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotCellProperties(value: typings.activexLibreoffice.com_.sun.star.text.CellProperties): Self = StObject.set(x, "com.sun.star.text.CellProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotCellProperties(value: typings.activexLibreoffice.com_.sun.star.text.CellProperties): Self = StObject.set(x, "com.sun.star.text.CellProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotCellRange(value: typings.activexLibreoffice.com_.sun.star.text.CellRange): Self = StObject.set(x, "com.sun.star.text.CellRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotCellRange(value: typings.activexLibreoffice.com_.sun.star.text.CellRange): Self = StObject.set(x, "com.sun.star.text.CellRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotChainedTextFrame(value: ChainedTextFrame): Self = StObject.set(x, "com.sun.star.text.ChainedTextFrame", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotChainedTextFrame(value: ChainedTextFrame): Self = StObject.set(x, "com.sun.star.text.ChainedTextFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotChapterNumberingRule(value: ChapterNumberingRule): Self = StObject.set(x, "com.sun.star.text.ChapterNumberingRule", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotChapterNumberingRule(value: ChapterNumberingRule): Self = StObject.set(x, "com.sun.star.text.ChapterNumberingRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotContentIndex(value: ContentIndex): Self = StObject.set(x, "com.sun.star.text.ContentIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotContentIndex(value: ContentIndex): Self = StObject.set(x, "com.sun.star.text.ContentIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotContentIndexMark(value: ContentIndexMark): Self = StObject.set(x, "com.sun.star.text.ContentIndexMark", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotContentIndexMark(value: ContentIndexMark): Self = StObject.set(x, "com.sun.star.text.ContentIndexMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDefaultNumberingProvider(value: DefaultNumberingProvider): Self = StObject.set(x, "com.sun.star.text.DefaultNumberingProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDefaultNumberingProvider(value: DefaultNumberingProvider): Self = StObject.set(x, "com.sun.star.text.DefaultNumberingProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDefaults(value: typings.activexLibreoffice.com_.sun.star.text.Defaults): Self = StObject.set(x, "com.sun.star.text.Defaults", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDefaults(value: typings.activexLibreoffice.com_.sun.star.text.Defaults): Self = StObject.set(x, "com.sun.star.text.Defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDependentTextField(value: DependentTextField): Self = StObject.set(x, "com.sun.star.text.DependentTextField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDependentTextField(value: DependentTextField): Self = StObject.set(x, "com.sun.star.text.DependentTextField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDocumentIndex(value: DocumentIndex): Self = StObject.set(x, "com.sun.star.text.DocumentIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDocumentIndex(value: DocumentIndex): Self = StObject.set(x, "com.sun.star.text.DocumentIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDocumentIndexLevelFormat(value: DocumentIndexLevelFormat): Self = StObject.set(x, "com.sun.star.text.DocumentIndexLevelFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDocumentIndexLevelFormat(value: DocumentIndexLevelFormat): Self = StObject.set(x, "com.sun.star.text.DocumentIndexLevelFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDocumentIndexMark(value: DocumentIndexMark): Self = StObject.set(x, "com.sun.star.text.DocumentIndexMark", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDocumentIndexMark(value: DocumentIndexMark): Self = StObject.set(x, "com.sun.star.text.DocumentIndexMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDocumentIndexMarkAsian(value: DocumentIndexMarkAsian): Self = StObject.set(x, "com.sun.star.text.DocumentIndexMarkAsian", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDocumentIndexMarkAsian(value: DocumentIndexMarkAsian): Self = StObject.set(x, "com.sun.star.text.DocumentIndexMarkAsian", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDocumentIndexParagraphStyles(value: DocumentIndexParagraphStyles): Self = StObject.set(x, "com.sun.star.text.DocumentIndexParagraphStyles", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDocumentIndexParagraphStyles(value: DocumentIndexParagraphStyles): Self = StObject.set(x, "com.sun.star.text.DocumentIndexParagraphStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDocumentIndexes(value: DocumentIndexes): Self = StObject.set(x, "com.sun.star.text.DocumentIndexes", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDocumentIndexes(value: DocumentIndexes): Self = StObject.set(x, "com.sun.star.text.DocumentIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotDocumentSettings(value: typings.activexLibreoffice.com_.sun.star.text.DocumentSettings): Self = StObject.set(x, "com.sun.star.text.DocumentSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotDocumentSettings(value: typings.activexLibreoffice.com_.sun.star.text.DocumentSettings): Self = StObject.set(x, "com.sun.star.text.DocumentSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotEndnote(value: Endnote): Self = StObject.set(x, "com.sun.star.text.Endnote", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotEndnote(value: Endnote): Self = StObject.set(x, "com.sun.star.text.Endnote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotEndnoteSettings(value: EndnoteSettings): Self = StObject.set(x, "com.sun.star.text.EndnoteSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotEndnoteSettings(value: EndnoteSettings): Self = StObject.set(x, "com.sun.star.text.EndnoteSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotFootnote(value: Footnote): Self = StObject.set(x, "com.sun.star.text.Footnote", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotFootnote(value: Footnote): Self = StObject.set(x, "com.sun.star.text.Footnote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotFootnoteSettings(value: FootnoteSettings): Self = StObject.set(x, "com.sun.star.text.FootnoteSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotFootnoteSettings(value: FootnoteSettings): Self = StObject.set(x, "com.sun.star.text.FootnoteSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotFootnotes(value: Footnotes): Self = StObject.set(x, "com.sun.star.text.Footnotes", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotFootnotes(value: Footnotes): Self = StObject.set(x, "com.sun.star.text.Footnotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotGenericTextDocument(value: GenericTextDocument): Self = StObject.set(x, "com.sun.star.text.GenericTextDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotGenericTextDocument(value: GenericTextDocument): Self = StObject.set(x, "com.sun.star.text.GenericTextDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotGlobalDocument(value: GlobalDocument): Self = StObject.set(x, "com.sun.star.text.GlobalDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotGlobalDocument(value: GlobalDocument): Self = StObject.set(x, "com.sun.star.text.GlobalDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotGlobalSettings(value: GlobalSettings): Self = StObject.set(x, "com.sun.star.text.GlobalSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotGlobalSettings(value: GlobalSettings): Self = StObject.set(x, "com.sun.star.text.GlobalSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotIllustrationsIndex(value: IllustrationsIndex): Self = StObject.set(x, "com.sun.star.text.IllustrationsIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotIllustrationsIndex(value: IllustrationsIndex): Self = StObject.set(x, "com.sun.star.text.IllustrationsIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotInContentMetadata(value: InContentMetadata): Self = StObject.set(x, "com.sun.star.text.InContentMetadata", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotInContentMetadata(value: InContentMetadata): Self = StObject.set(x, "com.sun.star.text.InContentMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotLineNumberingProperties(value: LineNumberingProperties): Self = StObject.set(x, "com.sun.star.text.LineNumberingProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotLineNumberingProperties(value: LineNumberingProperties): Self = StObject.set(x, "com.sun.star.text.LineNumberingProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotMailMerge(value: MailMerge): Self = StObject.set(x, "com.sun.star.text.MailMerge", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotMailMerge(value: MailMerge): Self = StObject.set(x, "com.sun.star.text.MailMerge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotModuleDispatcher(value: typings.activexLibreoffice.com_.sun.star.text.ModuleDispatcher): Self = StObject.set(x, "com.sun.star.text.ModuleDispatcher", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotModuleDispatcher(value: typings.activexLibreoffice.com_.sun.star.text.ModuleDispatcher): Self = StObject.set(x, "com.sun.star.text.ModuleDispatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotNumberingLevel(value: typings.activexLibreoffice.com_.sun.star.text.NumberingLevel): Self = StObject.set(x, "com.sun.star.text.NumberingLevel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotNumberingLevel(value: typings.activexLibreoffice.com_.sun.star.text.NumberingLevel): Self = StObject.set(x, "com.sun.star.text.NumberingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotNumberingRules(value: NumberingRules): Self = StObject.set(x, "com.sun.star.text.NumberingRules", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotNumberingRules(value: NumberingRules): Self = StObject.set(x, "com.sun.star.text.NumberingRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotNumberingStyle(value: NumberingStyle): Self = StObject.set(x, "com.sun.star.text.NumberingStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotNumberingStyle(value: NumberingStyle): Self = StObject.set(x, "com.sun.star.text.NumberingStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotObjectIndex(value: ObjectIndex): Self = StObject.set(x, "com.sun.star.text.ObjectIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotObjectIndex(value: ObjectIndex): Self = StObject.set(x, "com.sun.star.text.ObjectIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotPageFootnoteInfo(value: PageFootnoteInfo): Self = StObject.set(x, "com.sun.star.text.PageFootnoteInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotPageFootnoteInfo(value: PageFootnoteInfo): Self = StObject.set(x, "com.sun.star.text.PageFootnoteInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotPagePrintSettings(value: PagePrintSettings): Self = StObject.set(x, "com.sun.star.text.PagePrintSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotPagePrintSettings(value: PagePrintSettings): Self = StObject.set(x, "com.sun.star.text.PagePrintSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotParagraph(value: Paragraph): Self = StObject.set(x, "com.sun.star.text.Paragraph", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotParagraph(value: Paragraph): Self = StObject.set(x, "com.sun.star.text.Paragraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotParagraphEnumeration(value: ParagraphEnumeration): Self = StObject.set(x, "com.sun.star.text.ParagraphEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotParagraphEnumeration(value: ParagraphEnumeration): Self = StObject.set(x, "com.sun.star.text.ParagraphEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotPrintSettings(value: PrintSettings): Self = StObject.set(x, "com.sun.star.text.PrintSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotPrintSettings(value: PrintSettings): Self = StObject.set(x, "com.sun.star.text.PrintSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotRedlinePortion(value: RedlinePortion): Self = StObject.set(x, "com.sun.star.text.RedlinePortion", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotRedlinePortion(value: RedlinePortion): Self = StObject.set(x, "com.sun.star.text.RedlinePortion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotReferenceMark(value: ReferenceMark): Self = StObject.set(x, "com.sun.star.text.ReferenceMark", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotReferenceMark(value: ReferenceMark): Self = StObject.set(x, "com.sun.star.text.ReferenceMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotReferenceMarks(value: ReferenceMarks): Self = StObject.set(x, "com.sun.star.text.ReferenceMarks", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotReferenceMarks(value: ReferenceMarks): Self = StObject.set(x, "com.sun.star.text.ReferenceMarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotShape(value: typings.activexLibreoffice.com_.sun.star.text.Shape): Self = StObject.set(x, "com.sun.star.text.Shape", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotShape(value: typings.activexLibreoffice.com_.sun.star.text.Shape): Self = StObject.set(x, "com.sun.star.text.Shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTableColumns(value: typings.activexLibreoffice.com_.sun.star.text.TableColumns): Self = StObject.set(x, "com.sun.star.text.TableColumns", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTableColumns(value: typings.activexLibreoffice.com_.sun.star.text.TableColumns): Self = StObject.set(x, "com.sun.star.text.TableColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTableIndex(value: TableIndex): Self = StObject.set(x, "com.sun.star.text.TableIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTableIndex(value: TableIndex): Self = StObject.set(x, "com.sun.star.text.TableIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTableRows(value: typings.activexLibreoffice.com_.sun.star.text.TableRows): Self = StObject.set(x, "com.sun.star.text.TableRows", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTableRows(value: typings.activexLibreoffice.com_.sun.star.text.TableRows): Self = StObject.set(x, "com.sun.star.text.TableRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotText(value: typings.activexLibreoffice.com_.sun.star.text.Text): Self = StObject.set(x, "com.sun.star.text.Text", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotText(value: typings.activexLibreoffice.com_.sun.star.text.Text): Self = StObject.set(x, "com.sun.star.text.Text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextColumns(value: TextColumns): Self = StObject.set(x, "com.sun.star.text.TextColumns", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextColumns(value: TextColumns): Self = StObject.set(x, "com.sun.star.text.TextColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextContent(value: TextContent): Self = StObject.set(x, "com.sun.star.text.TextContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextContent(value: TextContent): Self = StObject.set(x, "com.sun.star.text.TextContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextContentCollection(value: TextContentCollection): Self = StObject.set(x, "com.sun.star.text.TextContentCollection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextContentCollection(value: TextContentCollection): Self = StObject.set(x, "com.sun.star.text.TextContentCollection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextCursor(value: TextCursor): Self = StObject.set(x, "com.sun.star.text.TextCursor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextCursor(value: TextCursor): Self = StObject.set(x, "com.sun.star.text.TextCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextDocument(value: TextDocument): Self = StObject.set(x, "com.sun.star.text.TextDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextDocument(value: TextDocument): Self = StObject.set(x, "com.sun.star.text.TextDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextDocumentView(value: TextDocumentView): Self = StObject.set(x, "com.sun.star.text.TextDocumentView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextDocumentView(value: TextDocumentView): Self = StObject.set(x, "com.sun.star.text.TextDocumentView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextEmbeddedObject(value: TextEmbeddedObject): Self = StObject.set(x, "com.sun.star.text.TextEmbeddedObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextEmbeddedObject(value: TextEmbeddedObject): Self = StObject.set(x, "com.sun.star.text.TextEmbeddedObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextEmbeddedObjects(value: TextEmbeddedObjects): Self = StObject.set(x, "com.sun.star.text.TextEmbeddedObjects", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextEmbeddedObjects(value: TextEmbeddedObjects): Self = StObject.set(x, "com.sun.star.text.TextEmbeddedObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextField(value: TextField_): Self = StObject.set(x, "com.sun.star.text.TextField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextField(value: TextField_): Self = StObject.set(x, "com.sun.star.text.TextField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextFieldEnumeration(value: TextFieldEnumeration): Self = StObject.set(x, "com.sun.star.text.TextFieldEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextFieldEnumeration(value: TextFieldEnumeration): Self = StObject.set(x, "com.sun.star.text.TextFieldEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextFieldMaster(value: TextFieldMaster): Self = StObject.set(x, "com.sun.star.text.TextFieldMaster", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextFieldMaster(value: TextFieldMaster): Self = StObject.set(x, "com.sun.star.text.TextFieldMaster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextFieldMasters(value: TextFieldMasters): Self = StObject.set(x, "com.sun.star.text.TextFieldMasters", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextFieldMasters(value: TextFieldMasters): Self = StObject.set(x, "com.sun.star.text.TextFieldMasters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextFields(value: TextFields): Self = StObject.set(x, "com.sun.star.text.TextFields", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextFields(value: TextFields): Self = StObject.set(x, "com.sun.star.text.TextFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextFrame(value: TextFrame): Self = StObject.set(x, "com.sun.star.text.TextFrame", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextFrame(value: TextFrame): Self = StObject.set(x, "com.sun.star.text.TextFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextFrames(value: TextFrames): Self = StObject.set(x, "com.sun.star.text.TextFrames", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextFrames(value: TextFrames): Self = StObject.set(x, "com.sun.star.text.TextFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextGraphicObject(value: TextGraphicObject): Self = StObject.set(x, "com.sun.star.text.TextGraphicObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextGraphicObject(value: TextGraphicObject): Self = StObject.set(x, "com.sun.star.text.TextGraphicObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextGraphicObjects(value: TextGraphicObjects): Self = StObject.set(x, "com.sun.star.text.TextGraphicObjects", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextGraphicObjects(value: TextGraphicObjects): Self = StObject.set(x, "com.sun.star.text.TextGraphicObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextLayoutCursor(value: TextLayoutCursor): Self = StObject.set(x, "com.sun.star.text.TextLayoutCursor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextLayoutCursor(value: TextLayoutCursor): Self = StObject.set(x, "com.sun.star.text.TextLayoutCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextPageStyle(value: TextPageStyle): Self = StObject.set(x, "com.sun.star.text.TextPageStyle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextPageStyle(value: TextPageStyle): Self = StObject.set(x, "com.sun.star.text.TextPageStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextPortion(value: TextPortion): Self = StObject.set(x, "com.sun.star.text.TextPortion", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextPortion(value: TextPortion): Self = StObject.set(x, "com.sun.star.text.TextPortion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextPortionEnumeration(value: TextPortionEnumeration): Self = StObject.set(x, "com.sun.star.text.TextPortionEnumeration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextPortionEnumeration(value: TextPortionEnumeration): Self = StObject.set(x, "com.sun.star.text.TextPortionEnumeration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextRange(value: TextRange): Self = StObject.set(x, "com.sun.star.text.TextRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextRange(value: TextRange): Self = StObject.set(x, "com.sun.star.text.TextRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextRangeContentProperties(value: TextRangeContentProperties): Self = StObject.set(x, "com.sun.star.text.TextRangeContentProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextRangeContentProperties(value: TextRangeContentProperties): Self = StObject.set(x, "com.sun.star.text.TextRangeContentProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextRanges(value: TextRanges): Self = StObject.set(x, "com.sun.star.text.TextRanges", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextRanges(value: TextRanges): Self = StObject.set(x, "com.sun.star.text.TextRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextSection(value: TextSection): Self = StObject.set(x, "com.sun.star.text.TextSection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextSection(value: TextSection): Self = StObject.set(x, "com.sun.star.text.TextSection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextSections(value: TextSections): Self = StObject.set(x, "com.sun.star.text.TextSections", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextSections(value: TextSections): Self = StObject.set(x, "com.sun.star.text.TextSections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextSortDescriptor(value: TextSortDescriptor): Self = StObject.set(x, "com.sun.star.text.TextSortDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextSortDescriptor(value: TextSortDescriptor): Self = StObject.set(x, "com.sun.star.text.TextSortDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextSortDescriptor2(value: TextSortDescriptor2): Self = StObject.set(x, "com.sun.star.text.TextSortDescriptor2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextSortDescriptor2(value: TextSortDescriptor2): Self = StObject.set(x, "com.sun.star.text.TextSortDescriptor2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextSortable(value: TextSortable): Self = StObject.set(x, "com.sun.star.text.TextSortable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextSortable(value: TextSortable): Self = StObject.set(x, "com.sun.star.text.TextSortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextTable(value: TextTable): Self = StObject.set(x, "com.sun.star.text.TextTable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextTable(value: TextTable): Self = StObject.set(x, "com.sun.star.text.TextTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextTableCursor(value: TextTableCursor): Self = StObject.set(x, "com.sun.star.text.TextTableCursor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextTableCursor(value: TextTableCursor): Self = StObject.set(x, "com.sun.star.text.TextTableCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextTableRow(value: TextTableRow): Self = StObject.set(x, "com.sun.star.text.TextTableRow", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextTableRow(value: TextTableRow): Self = StObject.set(x, "com.sun.star.text.TextTableRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextTables(value: TextTables): Self = StObject.set(x, "com.sun.star.text.TextTables", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextTables(value: TextTables): Self = StObject.set(x, "com.sun.star.text.TextTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextViewCursor(value: TextViewCursor): Self = StObject.set(x, "com.sun.star.text.TextViewCursor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextViewCursor(value: TextViewCursor): Self = StObject.set(x, "com.sun.star.text.TextViewCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotUserDefinedIndex(value: UserDefinedIndex): Self = StObject.set(x, "com.sun.star.text.UserDefinedIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotUserDefinedIndex(value: UserDefinedIndex): Self = StObject.set(x, "com.sun.star.text.UserDefinedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotUserIndex(value: UserIndex): Self = StObject.set(x, "com.sun.star.text.UserIndex", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotUserIndex(value: UserIndex): Self = StObject.set(x, "com.sun.star.text.UserIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotUserIndexMark(value: UserIndexMark): Self = StObject.set(x, "com.sun.star.text.UserIndexMark", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotUserIndexMark(value: UserIndexMark): Self = StObject.set(x, "com.sun.star.text.UserIndexMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotViewSettings(value: ViewSettings): Self = StObject.set(x, "com.sun.star.text.ViewSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotViewSettings(value: ViewSettings): Self = StObject.set(x, "com.sun.star.text.ViewSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotWebDocument(value: WebDocument): Self = StObject.set(x, "com.sun.star.text.WebDocument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotWebDocument(value: WebDocument): Self = StObject.set(x, "com.sun.star.text.WebDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotfieldmasterDotBibliography(value: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography): Self = StObject.set(x, "com.sun.star.text.fieldmaster.Bibliography", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotfieldmasterDotBibliography(value: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography): Self = StObject.set(x, "com.sun.star.text.fieldmaster.Bibliography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotfieldmasterDotDDE(value: DDE): Self = StObject.set(x, "com.sun.star.text.fieldmaster.DDE", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotfieldmasterDotDDE(value: DDE): Self = StObject.set(x, "com.sun.star.text.fieldmaster.DDE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotfieldmasterDotDatabase(value: Database): Self = StObject.set(x, "com.sun.star.text.fieldmaster.Database", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotfieldmasterDotDatabase(value: Database): Self = StObject.set(x, "com.sun.star.text.fieldmaster.Database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotfieldmasterDotSetExpression(value: SetExpression): Self = StObject.set(x, "com.sun.star.text.fieldmaster.SetExpression", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotfieldmasterDotSetExpression(value: SetExpression): Self = StObject.set(x, "com.sun.star.text.fieldmaster.SetExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotfieldmasterDotUser(value: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.User): Self = StObject.set(x, "com.sun.star.text.fieldmaster.User", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotfieldmasterDotUser(value: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.User): Self = StObject.set(x, "com.sun.star.text.fieldmaster.User", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotAnnotation(value: Annotation): Self = StObject.set(x, "com.sun.star.text.textfield.Annotation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotAnnotation(value: Annotation): Self = StObject.set(x, "com.sun.star.text.textfield.Annotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotAuthor(value: Author): Self = StObject.set(x, "com.sun.star.text.textfield.Author", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotAuthor(value: Author): Self = StObject.set(x, "com.sun.star.text.textfield.Author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotBibliography(value: typings.activexLibreoffice.com_.sun.star.text.textfield.Bibliography): Self = StObject.set(x, "com.sun.star.text.textfield.Bibliography", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotBibliography(value: typings.activexLibreoffice.com_.sun.star.text.textfield.Bibliography): Self = StObject.set(x, "com.sun.star.text.textfield.Bibliography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotChapter(value: Chapter): Self = StObject.set(x, "com.sun.star.text.textfield.Chapter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotChapter(value: Chapter): Self = StObject.set(x, "com.sun.star.text.textfield.Chapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotCharacterCount(value: CharacterCount): Self = StObject.set(x, "com.sun.star.text.textfield.CharacterCount", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotCharacterCount(value: CharacterCount): Self = StObject.set(x, "com.sun.star.text.textfield.CharacterCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotCombinedCharacters(value: CombinedCharacters): Self = StObject.set(x, "com.sun.star.text.textfield.CombinedCharacters", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotCombinedCharacters(value: CombinedCharacters): Self = StObject.set(x, "com.sun.star.text.textfield.CombinedCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotConditionalText(value: ConditionalText): Self = StObject.set(x, "com.sun.star.text.textfield.ConditionalText", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotConditionalText(value: ConditionalText): Self = StObject.set(x, "com.sun.star.text.textfield.ConditionalText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDDE(value: typings.activexLibreoffice.com_.sun.star.text.textfield.DDE): Self = StObject.set(x, "com.sun.star.text.textfield.DDE", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDDE(value: typings.activexLibreoffice.com_.sun.star.text.textfield.DDE): Self = StObject.set(x, "com.sun.star.text.textfield.DDE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDatabase(value: typings.activexLibreoffice.com_.sun.star.text.textfield.Database): Self = StObject.set(x, "com.sun.star.text.textfield.Database", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDatabase(value: typings.activexLibreoffice.com_.sun.star.text.textfield.Database): Self = StObject.set(x, "com.sun.star.text.textfield.Database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDatabaseName(value: DatabaseName): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseName", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDatabaseName(value: DatabaseName): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDatabaseNextSet(value: DatabaseNextSet): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseNextSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDatabaseNextSet(value: DatabaseNextSet): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseNextSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDatabaseNumberOfSet(value: DatabaseNumberOfSet): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseNumberOfSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDatabaseNumberOfSet(value: DatabaseNumberOfSet): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseNumberOfSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDatabaseSetNumber(value: DatabaseSetNumber): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseSetNumber", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDatabaseSetNumber(value: DatabaseSetNumber): Self = StObject.set(x, "com.sun.star.text.textfield.DatabaseSetNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDateTime(value: typings.activexLibreoffice.com_.sun.star.text.textfield.DateTime): Self = StObject.set(x, "com.sun.star.text.textfield.DateTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDateTime(value: typings.activexLibreoffice.com_.sun.star.text.textfield.DateTime): Self = StObject.set(x, "com.sun.star.text.textfield.DateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotDropDown(value: DropDown): Self = StObject.set(x, "com.sun.star.text.textfield.DropDown", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotDropDown(value: DropDown): Self = StObject.set(x, "com.sun.star.text.textfield.DropDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotEmbeddedObjectCount(value: EmbeddedObjectCount): Self = StObject.set(x, "com.sun.star.text.textfield.EmbeddedObjectCount", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotEmbeddedObjectCount(value: EmbeddedObjectCount): Self = StObject.set(x, "com.sun.star.text.textfield.EmbeddedObjectCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotExtendedUser(value: ExtendedUser): Self = StObject.set(x, "com.sun.star.text.textfield.ExtendedUser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotExtendedUser(value: ExtendedUser): Self = StObject.set(x, "com.sun.star.text.textfield.ExtendedUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotFileName(value: FileName): Self = StObject.set(x, "com.sun.star.text.textfield.FileName", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotFileName(value: FileName): Self = StObject.set(x, "com.sun.star.text.textfield.FileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotGetExpression(value: GetExpression): Self = StObject.set(x, "com.sun.star.text.textfield.GetExpression", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotGetExpression(value: GetExpression): Self = StObject.set(x, "com.sun.star.text.textfield.GetExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotGetReference(value: GetReference): Self = StObject.set(x, "com.sun.star.text.textfield.GetReference", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotGetReference(value: GetReference): Self = StObject.set(x, "com.sun.star.text.textfield.GetReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotGraphicObjectCount(value: GraphicObjectCount): Self = StObject.set(x, "com.sun.star.text.textfield.GraphicObjectCount", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotGraphicObjectCount(value: GraphicObjectCount): Self = StObject.set(x, "com.sun.star.text.textfield.GraphicObjectCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotHiddenParagraph(value: HiddenParagraph): Self = StObject.set(x, "com.sun.star.text.textfield.HiddenParagraph", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotHiddenParagraph(value: HiddenParagraph): Self = StObject.set(x, "com.sun.star.text.textfield.HiddenParagraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotHiddenText(value: HiddenText): Self = StObject.set(x, "com.sun.star.text.textfield.HiddenText", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotHiddenText(value: HiddenText): Self = StObject.set(x, "com.sun.star.text.textfield.HiddenText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotInput(value: Input): Self = StObject.set(x, "com.sun.star.text.textfield.Input", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotInput(value: Input): Self = StObject.set(x, "com.sun.star.text.textfield.Input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotInputUser(value: InputUser): Self = StObject.set(x, "com.sun.star.text.textfield.InputUser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotInputUser(value: InputUser): Self = StObject.set(x, "com.sun.star.text.textfield.InputUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotJumpEdit(value: JumpEdit): Self = StObject.set(x, "com.sun.star.text.textfield.JumpEdit", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotJumpEdit(value: JumpEdit): Self = StObject.set(x, "com.sun.star.text.textfield.JumpEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotMacro(value: Macro): Self = StObject.set(x, "com.sun.star.text.textfield.Macro", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotMacro(value: Macro): Self = StObject.set(x, "com.sun.star.text.textfield.Macro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotMetadataField(value: MetadataField): Self = StObject.set(x, "com.sun.star.text.textfield.MetadataField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotMetadataField(value: MetadataField): Self = StObject.set(x, "com.sun.star.text.textfield.MetadataField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotPageCount(value: PageCount): Self = StObject.set(x, "com.sun.star.text.textfield.PageCount", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotPageCount(value: PageCount): Self = StObject.set(x, "com.sun.star.text.textfield.PageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotPageNumber(value: PageNumber): Self = StObject.set(x, "com.sun.star.text.textfield.PageNumber", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotPageNumber(value: PageNumber): Self = StObject.set(x, "com.sun.star.text.textfield.PageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotParagraphCount(value: ParagraphCount): Self = StObject.set(x, "com.sun.star.text.textfield.ParagraphCount", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotParagraphCount(value: ParagraphCount): Self = StObject.set(x, "com.sun.star.text.textfield.ParagraphCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotReferencePageGet(value: ReferencePageGet): Self = StObject.set(x, "com.sun.star.text.textfield.ReferencePageGet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotReferencePageGet(value: ReferencePageGet): Self = StObject.set(x, "com.sun.star.text.textfield.ReferencePageGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotReferencePageSet(value: ReferencePageSet): Self = StObject.set(x, "com.sun.star.text.textfield.ReferencePageSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotReferencePageSet(value: ReferencePageSet): Self = StObject.set(x, "com.sun.star.text.textfield.ReferencePageSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotScript(value: Script): Self = StObject.set(x, "com.sun.star.text.textfield.Script", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotScript(value: Script): Self = StObject.set(x, "com.sun.star.text.textfield.Script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotSetExpression(value: typings.activexLibreoffice.com_.sun.star.text.textfield.SetExpression): Self = StObject.set(x, "com.sun.star.text.textfield.SetExpression", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotSetExpression(value: typings.activexLibreoffice.com_.sun.star.text.textfield.SetExpression): Self = StObject.set(x, "com.sun.star.text.textfield.SetExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotTableCount(value: TableCount): Self = StObject.set(x, "com.sun.star.text.textfield.TableCount", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotTableCount(value: TableCount): Self = StObject.set(x, "com.sun.star.text.textfield.TableCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotTableFormula(value: TableFormula): Self = StObject.set(x, "com.sun.star.text.textfield.TableFormula", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotTableFormula(value: TableFormula): Self = StObject.set(x, "com.sun.star.text.textfield.TableFormula", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotTemplateName(value: TemplateName): Self = StObject.set(x, "com.sun.star.text.textfield.TemplateName", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotTemplateName(value: TemplateName): Self = StObject.set(x, "com.sun.star.text.textfield.TemplateName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotURL(value: URL): Self = StObject.set(x, "com.sun.star.text.textfield.URL", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotURL(value: URL): Self = StObject.set(x, "com.sun.star.text.textfield.URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotUser(value: typings.activexLibreoffice.com_.sun.star.text.textfield.User): Self = StObject.set(x, "com.sun.star.text.textfield.User", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotUser(value: typings.activexLibreoffice.com_.sun.star.text.textfield.User): Self = StObject.set(x, "com.sun.star.text.textfield.User", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotWordCount(value: WordCount): Self = StObject.set(x, "com.sun.star.text.textfield.WordCount", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotWordCount(value: WordCount): Self = StObject.set(x, "com.sun.star.text.textfield.WordCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotChangeAuthor(value: ChangeAuthor): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.ChangeAuthor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotChangeAuthor(value: ChangeAuthor): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.ChangeAuthor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotChangeDateTime(value: ChangeDateTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.ChangeDateTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotChangeDateTime(value: ChangeDateTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.ChangeDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotCreateAuthor(value: CreateAuthor): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.CreateAuthor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotCreateAuthor(value: CreateAuthor): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.CreateAuthor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotCreateDateTime(value: CreateDateTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.CreateDateTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotCreateDateTime(value: CreateDateTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.CreateDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotCustom(value: Custom): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Custom", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotCustom(value: Custom): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotDescription(value: Description): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Description", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotDescription(value: Description): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotEditTime(value: EditTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.EditTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotEditTime(value: EditTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.EditTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotKeywords(value: Keywords): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Keywords", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotKeywords(value: Keywords): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotPrintAuthor(value: PrintAuthor): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.PrintAuthor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotPrintAuthor(value: PrintAuthor): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.PrintAuthor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotPrintDateTime(value: PrintDateTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.PrintDateTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotPrintDateTime(value: PrintDateTime): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.PrintDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotRevision(value: Revision): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Revision", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotRevision(value: Revision): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotSubject(value: Subject): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Subject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotSubject(value: Subject): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDottextfieldDotdocinfoDotTitle(value: typings.activexLibreoffice.com_.sun.star.text.textfield.docinfo.Title): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Title", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDottextfieldDotdocinfoDotTitle(value: typings.activexLibreoffice.com_.sun.star.text.textfield.docinfo.Title): Self = StObject.set(x, "com.sun.star.text.textfield.docinfo.Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotAnyCompareFactory(value: AnyCompareFactory): Self = StObject.set(x, "com.sun.star.ucb.AnyCompareFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotAnyCompareFactory(value: AnyCompareFactory): Self = StObject.set(x, "com.sun.star.ucb.AnyCompareFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedContentResultSet(value: CachedContentResultSet): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedContentResultSet(value: CachedContentResultSet): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedContentResultSetFactory(value: CachedContentResultSetFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSetFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedContentResultSetFactory(value: CachedContentResultSetFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSetFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedContentResultSetStub(value: CachedContentResultSetStub): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSetStub", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedContentResultSetStub(value: CachedContentResultSetStub): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSetStub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedContentResultSetStubFactory(value: CachedContentResultSetStubFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSetStubFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedContentResultSetStubFactory(value: CachedContentResultSetStubFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedContentResultSetStubFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedDynamicResultSet(value: CachedDynamicResultSet): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedDynamicResultSet(value: CachedDynamicResultSet): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedDynamicResultSetFactory(value: CachedDynamicResultSetFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSetFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedDynamicResultSetFactory(value: CachedDynamicResultSetFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSetFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedDynamicResultSetStub(value: CachedDynamicResultSetStub): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSetStub", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedDynamicResultSetStub(value: CachedDynamicResultSetStub): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSetStub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCachedDynamicResultSetStubFactory(value: CachedDynamicResultSetStubFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSetStubFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCachedDynamicResultSetStubFactory(value: CachedDynamicResultSetStubFactory): Self = StObject.set(x, "com.sun.star.ucb.CachedDynamicResultSetStubFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCmisContentProvider(value: CmisContentProvider): Self = StObject.set(x, "com.sun.star.ucb.CmisContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCmisContentProvider(value: CmisContentProvider): Self = StObject.set(x, "com.sun.star.ucb.CmisContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCommandEnvironment(value: CommandEnvironment): Self = StObject.set(x, "com.sun.star.ucb.CommandEnvironment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCommandEnvironment(value: CommandEnvironment): Self = StObject.set(x, "com.sun.star.ucb.CommandEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContent(value: Content): Self = StObject.set(x, "com.sun.star.ucb.Content", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContent(value: Content): Self = StObject.set(x, "com.sun.star.ucb.Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentProvider(value: ContentProvider): Self = StObject.set(x, "com.sun.star.ucb.ContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentProvider(value: ContentProvider): Self = StObject.set(x, "com.sun.star.ucb.ContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentProviderProxy(value: ContentProviderProxy): Self = StObject.set(x, "com.sun.star.ucb.ContentProviderProxy", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentProviderProxy(value: ContentProviderProxy): Self = StObject.set(x, "com.sun.star.ucb.ContentProviderProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentProviderProxyFactory(value: ContentProviderProxyFactory): Self = StObject.set(x, "com.sun.star.ucb.ContentProviderProxyFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentProviderProxyFactory(value: ContentProviderProxyFactory): Self = StObject.set(x, "com.sun.star.ucb.ContentProviderProxyFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentResultSet(value: ContentResultSet): Self = StObject.set(x, "com.sun.star.ucb.ContentResultSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentResultSet(value: ContentResultSet): Self = StObject.set(x, "com.sun.star.ucb.ContentResultSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentTransmitter(value: ContentTransmitter): Self = StObject.set(x, "com.sun.star.ucb.ContentTransmitter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentTransmitter(value: ContentTransmitter): Self = StObject.set(x, "com.sun.star.ucb.ContentTransmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotDefaultHierarchyDataSource(value: DefaultHierarchyDataSource): Self = StObject.set(x, "com.sun.star.ucb.DefaultHierarchyDataSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotDefaultHierarchyDataSource(value: DefaultHierarchyDataSource): Self = StObject.set(x, "com.sun.star.ucb.DefaultHierarchyDataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotDynamicResultSet(value: DynamicResultSet): Self = StObject.set(x, "com.sun.star.ucb.DynamicResultSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotDynamicResultSet(value: DynamicResultSet): Self = StObject.set(x, "com.sun.star.ucb.DynamicResultSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotExpandContentProvider(value: ExpandContentProvider): Self = StObject.set(x, "com.sun.star.ucb.ExpandContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotExpandContentProvider(value: ExpandContentProvider): Self = StObject.set(x, "com.sun.star.ucb.ExpandContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotFTPContent(value: FTPContent): Self = StObject.set(x, "com.sun.star.ucb.FTPContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotFTPContent(value: FTPContent): Self = StObject.set(x, "com.sun.star.ucb.FTPContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotFTPContentProvider(value: FTPContentProvider): Self = StObject.set(x, "com.sun.star.ucb.FTPContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotFTPContentProvider(value: FTPContentProvider): Self = StObject.set(x, "com.sun.star.ucb.FTPContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotFileContent(value: FileContent): Self = StObject.set(x, "com.sun.star.ucb.FileContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotFileContent(value: FileContent): Self = StObject.set(x, "com.sun.star.ucb.FileContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotFileContentProvider(value: FileContentProvider): Self = StObject.set(x, "com.sun.star.ucb.FileContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotFileContentProvider(value: FileContentProvider): Self = StObject.set(x, "com.sun.star.ucb.FileContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotGIOContentProvider(value: GIOContentProvider): Self = StObject.set(x, "com.sun.star.ucb.GIOContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotGIOContentProvider(value: GIOContentProvider): Self = StObject.set(x, "com.sun.star.ucb.GIOContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotGnomeVFSContentProvider(value: GnomeVFSContentProvider): Self = StObject.set(x, "com.sun.star.ucb.GnomeVFSContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotGnomeVFSContentProvider(value: GnomeVFSContentProvider): Self = StObject.set(x, "com.sun.star.ucb.GnomeVFSContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotGnomeVFSDocumentContent(value: GnomeVFSDocumentContent): Self = StObject.set(x, "com.sun.star.ucb.GnomeVFSDocumentContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotGnomeVFSDocumentContent(value: GnomeVFSDocumentContent): Self = StObject.set(x, "com.sun.star.ucb.GnomeVFSDocumentContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotGnomeVFSFolderContent(value: GnomeVFSFolderContent): Self = StObject.set(x, "com.sun.star.ucb.GnomeVFSFolderContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotGnomeVFSFolderContent(value: GnomeVFSFolderContent): Self = StObject.set(x, "com.sun.star.ucb.GnomeVFSFolderContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHelpContent(value: HelpContent): Self = StObject.set(x, "com.sun.star.ucb.HelpContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHelpContent(value: HelpContent): Self = StObject.set(x, "com.sun.star.ucb.HelpContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHelpContentProvider(value: HelpContentProvider): Self = StObject.set(x, "com.sun.star.ucb.HelpContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHelpContentProvider(value: HelpContentProvider): Self = StObject.set(x, "com.sun.star.ucb.HelpContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHierarchyContentProvider(value: HierarchyContentProvider): Self = StObject.set(x, "com.sun.star.ucb.HierarchyContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHierarchyContentProvider(value: HierarchyContentProvider): Self = StObject.set(x, "com.sun.star.ucb.HierarchyContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHierarchyDataReadAccess(value: HierarchyDataReadAccess): Self = StObject.set(x, "com.sun.star.ucb.HierarchyDataReadAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHierarchyDataReadAccess(value: HierarchyDataReadAccess): Self = StObject.set(x, "com.sun.star.ucb.HierarchyDataReadAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHierarchyDataReadWriteAccess(value: HierarchyDataReadWriteAccess): Self = StObject.set(x, "com.sun.star.ucb.HierarchyDataReadWriteAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHierarchyDataReadWriteAccess(value: HierarchyDataReadWriteAccess): Self = StObject.set(x, "com.sun.star.ucb.HierarchyDataReadWriteAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHierarchyDataSource(value: HierarchyDataSource): Self = StObject.set(x, "com.sun.star.ucb.HierarchyDataSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHierarchyDataSource(value: HierarchyDataSource): Self = StObject.set(x, "com.sun.star.ucb.HierarchyDataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHierarchyFolderContent(value: HierarchyFolderContent): Self = StObject.set(x, "com.sun.star.ucb.HierarchyFolderContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHierarchyFolderContent(value: HierarchyFolderContent): Self = StObject.set(x, "com.sun.star.ucb.HierarchyFolderContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHierarchyLinkContent(value: HierarchyLinkContent): Self = StObject.set(x, "com.sun.star.ucb.HierarchyLinkContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHierarchyLinkContent(value: HierarchyLinkContent): Self = StObject.set(x, "com.sun.star.ucb.HierarchyLinkContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotHierarchyRootFolderContent(value: HierarchyRootFolderContent): Self = StObject.set(x, "com.sun.star.ucb.HierarchyRootFolderContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotHierarchyRootFolderContent(value: HierarchyRootFolderContent): Self = StObject.set(x, "com.sun.star.ucb.HierarchyRootFolderContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotODMAContent(value: ODMAContent): Self = StObject.set(x, "com.sun.star.ucb.ODMAContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotODMAContent(value: ODMAContent): Self = StObject.set(x, "com.sun.star.ucb.ODMAContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotODMAContentProvider(value: ODMAContentProvider): Self = StObject.set(x, "com.sun.star.ucb.ODMAContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotODMAContentProvider(value: ODMAContentProvider): Self = StObject.set(x, "com.sun.star.ucb.ODMAContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPackageContentProvider(value: PackageContentProvider): Self = StObject.set(x, "com.sun.star.ucb.PackageContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPackageContentProvider(value: PackageContentProvider): Self = StObject.set(x, "com.sun.star.ucb.PackageContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPackageFolderContent(value: PackageFolderContent): Self = StObject.set(x, "com.sun.star.ucb.PackageFolderContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPackageFolderContent(value: PackageFolderContent): Self = StObject.set(x, "com.sun.star.ucb.PackageFolderContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPackageStreamContent(value: PackageStreamContent): Self = StObject.set(x, "com.sun.star.ucb.PackageStreamContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPackageStreamContent(value: PackageStreamContent): Self = StObject.set(x, "com.sun.star.ucb.PackageStreamContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPersistentPropertySet(value: PersistentPropertySet): Self = StObject.set(x, "com.sun.star.ucb.PersistentPropertySet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPersistentPropertySet(value: PersistentPropertySet): Self = StObject.set(x, "com.sun.star.ucb.PersistentPropertySet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPropertiesManager(value: PropertiesManager): Self = StObject.set(x, "com.sun.star.ucb.PropertiesManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPropertiesManager(value: PropertiesManager): Self = StObject.set(x, "com.sun.star.ucb.PropertiesManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPropertySetRegistry(value: PropertySetRegistry): Self = StObject.set(x, "com.sun.star.ucb.PropertySetRegistry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPropertySetRegistry(value: PropertySetRegistry): Self = StObject.set(x, "com.sun.star.ucb.PropertySetRegistry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRemoteAccessContentProvider(value: RemoteAccessContentProvider): Self = StObject.set(x, "com.sun.star.ucb.RemoteAccessContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRemoteAccessContentProvider(value: RemoteAccessContentProvider): Self = StObject.set(x, "com.sun.star.ucb.RemoteAccessContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRemoteContentProviderAcceptor(value: RemoteContentProviderAcceptor): Self = StObject.set(x, "com.sun.star.ucb.RemoteContentProviderAcceptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRemoteContentProviderAcceptor(value: RemoteContentProviderAcceptor): Self = StObject.set(x, "com.sun.star.ucb.RemoteContentProviderAcceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRemoteProxyContentProvider(value: RemoteProxyContentProvider): Self = StObject.set(x, "com.sun.star.ucb.RemoteProxyContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRemoteProxyContentProvider(value: RemoteProxyContentProvider): Self = StObject.set(x, "com.sun.star.ucb.RemoteProxyContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSimpleFileAccess(value: SimpleFileAccess): Self = StObject.set(x, "com.sun.star.ucb.SimpleFileAccess", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSimpleFileAccess(value: SimpleFileAccess): Self = StObject.set(x, "com.sun.star.ucb.SimpleFileAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSortedDynamicResultSetFactory(value: SortedDynamicResultSetFactory): Self = StObject.set(x, "com.sun.star.ucb.SortedDynamicResultSetFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSortedDynamicResultSetFactory(value: SortedDynamicResultSetFactory): Self = StObject.set(x, "com.sun.star.ucb.SortedDynamicResultSetFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotStore(value: Store): Self = StObject.set(x, "com.sun.star.ucb.Store", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotStore(value: Store): Self = StObject.set(x, "com.sun.star.ucb.Store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransientDocumentsContentProvider(value: TransientDocumentsContentProvider): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransientDocumentsContentProvider(value: TransientDocumentsContentProvider): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransientDocumentsDocumentContent(value: TransientDocumentsDocumentContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsDocumentContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransientDocumentsDocumentContent(value: TransientDocumentsDocumentContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsDocumentContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransientDocumentsFolderContent(value: TransientDocumentsFolderContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsFolderContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransientDocumentsFolderContent(value: TransientDocumentsFolderContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsFolderContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransientDocumentsRootContent(value: TransientDocumentsRootContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsRootContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransientDocumentsRootContent(value: TransientDocumentsRootContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsRootContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransientDocumentsStreamContent(value: TransientDocumentsStreamContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsStreamContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransientDocumentsStreamContent(value: TransientDocumentsStreamContent): Self = StObject.set(x, "com.sun.star.ucb.TransientDocumentsStreamContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotUniversalContentBroker(value: UniversalContentBroker): Self = StObject.set(x, "com.sun.star.ucb.UniversalContentBroker", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotUniversalContentBroker(value: UniversalContentBroker): Self = StObject.set(x, "com.sun.star.ucb.UniversalContentBroker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotWebDAVContentProvider(value: WebDAVContentProvider): Self = StObject.set(x, "com.sun.star.ucb.WebDAVContentProvider", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotWebDAVContentProvider(value: WebDAVContentProvider): Self = StObject.set(x, "com.sun.star.ucb.WebDAVContentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotWebDAVDocumentContent(value: WebDAVDocumentContent): Self = StObject.set(x, "com.sun.star.ucb.WebDAVDocumentContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotWebDAVDocumentContent(value: WebDAVDocumentContent): Self = StObject.set(x, "com.sun.star.ucb.WebDAVDocumentContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotWebDAVFolderContent(value: WebDAVFolderContent): Self = StObject.set(x, "com.sun.star.ucb.WebDAVFolderContent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotWebDAVFolderContent(value: WebDAVFolderContent): Self = StObject.set(x, "com.sun.star.ucb.WebDAVFolderContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotActionTrigger(value: ActionTrigger): Self = StObject.set(x, "com.sun.star.ui.ActionTrigger", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotActionTrigger(value: ActionTrigger): Self = StObject.set(x, "com.sun.star.ui.ActionTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotActionTriggerContainer(value: ActionTriggerContainer): Self = StObject.set(x, "com.sun.star.ui.ActionTriggerContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotActionTriggerContainer(value: ActionTriggerContainer): Self = StObject.set(x, "com.sun.star.ui.ActionTriggerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotActionTriggerSeparator(value: ActionTriggerSeparator): Self = StObject.set(x, "com.sun.star.ui.ActionTriggerSeparator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotActionTriggerSeparator(value: ActionTriggerSeparator): Self = StObject.set(x, "com.sun.star.ui.ActionTriggerSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotAddressBookSourceDialog(value: AddressBookSourceDialog): Self = StObject.set(x, "com.sun.star.ui.AddressBookSourceDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotAddressBookSourceDialog(value: AddressBookSourceDialog): Self = StObject.set(x, "com.sun.star.ui.AddressBookSourceDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotConfigurableUIElement(value: ConfigurableUIElement): Self = StObject.set(x, "com.sun.star.ui.ConfigurableUIElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotConfigurableUIElement(value: ConfigurableUIElement): Self = StObject.set(x, "com.sun.star.ui.ConfigurableUIElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotDocumentAcceleratorConfiguration(value: DocumentAcceleratorConfiguration): Self = StObject.set(x, "com.sun.star.ui.DocumentAcceleratorConfiguration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotDocumentAcceleratorConfiguration(value: DocumentAcceleratorConfiguration): Self = StObject.set(x, "com.sun.star.ui.DocumentAcceleratorConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotGlobalAcceleratorConfiguration(value: GlobalAcceleratorConfiguration): Self = StObject.set(x, "com.sun.star.ui.GlobalAcceleratorConfiguration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotGlobalAcceleratorConfiguration(value: GlobalAcceleratorConfiguration): Self = StObject.set(x, "com.sun.star.ui.GlobalAcceleratorConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotImageManager(value: ImageManager): Self = StObject.set(x, "com.sun.star.ui.ImageManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotImageManager(value: ImageManager): Self = StObject.set(x, "com.sun.star.ui.ImageManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotItemDescriptor(value: ItemDescriptor): Self = StObject.set(x, "com.sun.star.ui.ItemDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotItemDescriptor(value: ItemDescriptor): Self = StObject.set(x, "com.sun.star.ui.ItemDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotModuleAcceleratorConfiguration(value: ModuleAcceleratorConfiguration): Self = StObject.set(x, "com.sun.star.ui.ModuleAcceleratorConfiguration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotModuleAcceleratorConfiguration(value: ModuleAcceleratorConfiguration): Self = StObject.set(x, "com.sun.star.ui.ModuleAcceleratorConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotModuleUICategoryDescription(value: ModuleUICategoryDescription): Self = StObject.set(x, "com.sun.star.ui.ModuleUICategoryDescription", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotModuleUICategoryDescription(value: ModuleUICategoryDescription): Self = StObject.set(x, "com.sun.star.ui.ModuleUICategoryDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotModuleUICommandDescription(value: ModuleUICommandDescription): Self = StObject.set(x, "com.sun.star.ui.ModuleUICommandDescription", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotModuleUICommandDescription(value: ModuleUICommandDescription): Self = StObject.set(x, "com.sun.star.ui.ModuleUICommandDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotModuleUIConfigurationManager(value: ModuleUIConfigurationManager): Self = StObject.set(x, "com.sun.star.ui.ModuleUIConfigurationManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotModuleUIConfigurationManager(value: ModuleUIConfigurationManager): Self = StObject.set(x, "com.sun.star.ui.ModuleUIConfigurationManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotModuleWindowStateConfiguration(value: ModuleWindowStateConfiguration): Self = StObject.set(x, "com.sun.star.ui.ModuleWindowStateConfiguration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotModuleWindowStateConfiguration(value: ModuleWindowStateConfiguration): Self = StObject.set(x, "com.sun.star.ui.ModuleWindowStateConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotUICategoryDescription(value: UICategoryDescription): Self = StObject.set(x, "com.sun.star.ui.UICategoryDescription", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotUICategoryDescription(value: UICategoryDescription): Self = StObject.set(x, "com.sun.star.ui.UICategoryDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotUIConfigurationManager(value: UIConfigurationManager): Self = StObject.set(x, "com.sun.star.ui.UIConfigurationManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotUIConfigurationManager(value: UIConfigurationManager): Self = StObject.set(x, "com.sun.star.ui.UIConfigurationManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotUIElement(value: UIElement): Self = StObject.set(x, "com.sun.star.ui.UIElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotUIElement(value: UIElement): Self = StObject.set(x, "com.sun.star.ui.UIElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotUIElementFactory(value: UIElementFactory): Self = StObject.set(x, "com.sun.star.ui.UIElementFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotUIElementFactory(value: UIElementFactory): Self = StObject.set(x, "com.sun.star.ui.UIElementFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotUIElementFactoryManager(value: UIElementFactoryManager): Self = StObject.set(x, "com.sun.star.ui.UIElementFactoryManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotUIElementFactoryManager(value: UIElementFactoryManager): Self = StObject.set(x, "com.sun.star.ui.UIElementFactoryManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotUIElementSettings(value: UIElementSettings): Self = StObject.set(x, "com.sun.star.ui.UIElementSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotUIElementSettings(value: UIElementSettings): Self = StObject.set(x, "com.sun.star.ui.UIElementSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotWindowContentFactory(value: WindowContentFactory): Self = StObject.set(x, "com.sun.star.ui.WindowContentFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotWindowContentFactory(value: WindowContentFactory): Self = StObject.set(x, "com.sun.star.ui.WindowContentFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotWindowContentFactoryManager(value: WindowContentFactoryManager): Self = StObject.set(x, "com.sun.star.ui.WindowContentFactoryManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotWindowContentFactoryManager(value: WindowContentFactoryManager): Self = StObject.set(x, "com.sun.star.ui.WindowContentFactoryManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotWindowStateConfiguration(value: WindowStateConfiguration): Self = StObject.set(x, "com.sun.star.ui.WindowStateConfiguration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotWindowStateConfiguration(value: WindowStateConfiguration): Self = StObject.set(x, "com.sun.star.ui.WindowStateConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotAddressBookSourcePilot(value: AddressBookSourcePilot): Self = StObject.set(x, "com.sun.star.ui.dialogs.AddressBookSourcePilot", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotAddressBookSourcePilot(value: AddressBookSourcePilot): Self = StObject.set(x, "com.sun.star.ui.dialogs.AddressBookSourcePilot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotFilePicker(value: FilePicker): Self = StObject.set(x, "com.sun.star.ui.dialogs.FilePicker", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotFilePicker(value: FilePicker): Self = StObject.set(x, "com.sun.star.ui.dialogs.FilePicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotFilterOptionsDialog(value: FilterOptionsDialog): Self = StObject.set(x, "com.sun.star.ui.dialogs.FilterOptionsDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotFilterOptionsDialog(value: FilterOptionsDialog): Self = StObject.set(x, "com.sun.star.ui.dialogs.FilterOptionsDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotFolderPicker(value: FolderPicker): Self = StObject.set(x, "com.sun.star.ui.dialogs.FolderPicker", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotFolderPicker(value: FolderPicker): Self = StObject.set(x, "com.sun.star.ui.dialogs.FolderPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotWizard(value: Wizard): Self = StObject.set(x, "com.sun.star.ui.dialogs.Wizard", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotWizard(value: Wizard): Self = StObject.set(x, "com.sun.star.ui.dialogs.Wizard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotXSLTFilterDialog(value: XSLTFilterDialog): Self = StObject.set(x, "com.sun.star.ui.dialogs.XSLTFilterDialog", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotXSLTFilterDialog(value: XSLTFilterDialog): Self = StObject.set(x, "com.sun.star.ui.dialogs.XSLTFilterDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDottestDotUITest(value: UITest): Self = StObject.set(x, "com.sun.star.ui.test.UITest", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDottestDotUITest(value: UITest): Self = StObject.set(x, "com.sun.star.ui.test.UITest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotunoDotNamingService(value: NamingService): Self = StObject.set(x, "com.sun.star.uno.NamingService", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotunoDotNamingService(value: NamingService): Self = StObject.set(x, "com.sun.star.uno.NamingService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoturiDotExternalUriReferenceTranslator(value: ExternalUriReferenceTranslator): Self = StObject.set(x, "com.sun.star.uri.ExternalUriReferenceTranslator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoturiDotExternalUriReferenceTranslator(value: ExternalUriReferenceTranslator): Self = StObject.set(x, "com.sun.star.uri.ExternalUriReferenceTranslator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoturiDotUriReferenceFactory(value: UriReferenceFactory): Self = StObject.set(x, "com.sun.star.uri.UriReferenceFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoturiDotUriReferenceFactory(value: UriReferenceFactory): Self = StObject.set(x, "com.sun.star.uri.UriReferenceFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoturiDotUriSchemeParser_vndDOTsunDOTstarDOTexpand(value: UriSchemeParserVndDOTsunDOTstarDOTexpand): Self = StObject.set(x, "com.sun.star.uri.UriSchemeParser_vndDOTsunDOTstarDOTexpand", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoturiDotUriSchemeParser_vndDOTsunDOTstarDOTexpand(value: UriSchemeParserVndDOTsunDOTstarDOTexpand): Self = StObject.set(x, "com.sun.star.uri.UriSchemeParser_vndDOTsunDOTstarDOTexpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoturiDotUriSchemeParser_vndDOTsunDOTstarDOTscript(value: UriSchemeParserVndDOTsunDOTstarDOTscript): Self = StObject.set(x, "com.sun.star.uri.UriSchemeParser_vndDOTsunDOTstarDOTscript", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoturiDotUriSchemeParser_vndDOTsunDOTstarDOTscript(value: UriSchemeParserVndDOTsunDOTstarDOTscript): Self = StObject.set(x, "com.sun.star.uri.UriSchemeParser_vndDOTsunDOTstarDOTscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoturiDotVndSunStarPkgUrlReferenceFactory(value: VndSunStarPkgUrlReferenceFactory): Self = StObject.set(x, "com.sun.star.uri.VndSunStarPkgUrlReferenceFactory", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoturiDotVndSunStarPkgUrlReferenceFactory(value: VndSunStarPkgUrlReferenceFactory): Self = StObject.set(x, "com.sun.star.uri.VndSunStarPkgUrlReferenceFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotBootstrapMacroExpander(value: BootstrapMacroExpander): Self = StObject.set(x, "com.sun.star.util.BootstrapMacroExpander", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotBootstrapMacroExpander(value: BootstrapMacroExpander): Self = StObject.set(x, "com.sun.star.util.BootstrapMacroExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotJobManager(value: JobManager): Self = StObject.set(x, "com.sun.star.util.JobManager", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotJobManager(value: JobManager): Self = StObject.set(x, "com.sun.star.util.JobManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotMacroExpander(value: MacroExpander): Self = StObject.set(x, "com.sun.star.util.MacroExpander", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotMacroExpander(value: MacroExpander): Self = StObject.set(x, "com.sun.star.util.MacroExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotNumberFormatProperties(value: NumberFormatProperties): Self = StObject.set(x, "com.sun.star.util.NumberFormatProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotNumberFormatProperties(value: NumberFormatProperties): Self = StObject.set(x, "com.sun.star.util.NumberFormatProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotNumberFormatSettings(value: NumberFormatSettings): Self = StObject.set(x, "com.sun.star.util.NumberFormatSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotNumberFormatSettings(value: NumberFormatSettings): Self = StObject.set(x, "com.sun.star.util.NumberFormatSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotNumberFormats(value: NumberFormats): Self = StObject.set(x, "com.sun.star.util.NumberFormats", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotNumberFormats(value: NumberFormats): Self = StObject.set(x, "com.sun.star.util.NumberFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotNumberFormatsSupplier(value: NumberFormatsSupplier): Self = StObject.set(x, "com.sun.star.util.NumberFormatsSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotNumberFormatsSupplier(value: NumberFormatsSupplier): Self = StObject.set(x, "com.sun.star.util.NumberFormatsSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotNumberFormatter(value: NumberFormatter): Self = StObject.set(x, "com.sun.star.util.NumberFormatter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotNumberFormatter(value: NumberFormatter): Self = StObject.set(x, "com.sun.star.util.NumberFormatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotOfficeInstallationDirectories(value: OfficeInstallationDirectories): Self = StObject.set(x, "com.sun.star.util.OfficeInstallationDirectories", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotOfficeInstallationDirectories(value: OfficeInstallationDirectories): Self = StObject.set(x, "com.sun.star.util.OfficeInstallationDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotPathSettings(value: PathSettings): Self = StObject.set(x, "com.sun.star.util.PathSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotPathSettings(value: PathSettings): Self = StObject.set(x, "com.sun.star.util.PathSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotPathSubstitution(value: PathSubstitution): Self = StObject.set(x, "com.sun.star.util.PathSubstitution", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotPathSubstitution(value: PathSubstitution): Self = StObject.set(x, "com.sun.star.util.PathSubstitution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotReplaceDescriptor(value: ReplaceDescriptor): Self = StObject.set(x, "com.sun.star.util.ReplaceDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotReplaceDescriptor(value: ReplaceDescriptor): Self = StObject.set(x, "com.sun.star.util.ReplaceDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSearchDescriptor(value: SearchDescriptor): Self = StObject.set(x, "com.sun.star.util.SearchDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSearchDescriptor(value: SearchDescriptor): Self = StObject.set(x, "com.sun.star.util.SearchDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSortDescriptor(value: SortDescriptor): Self = StObject.set(x, "com.sun.star.util.SortDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSortDescriptor(value: SortDescriptor): Self = StObject.set(x, "com.sun.star.util.SortDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSortDescriptor2(value: SortDescriptor2): Self = StObject.set(x, "com.sun.star.util.SortDescriptor2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSortDescriptor2(value: SortDescriptor2): Self = StObject.set(x, "com.sun.star.util.SortDescriptor2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSortable(value: Sortable): Self = StObject.set(x, "com.sun.star.util.Sortable", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSortable(value: Sortable): Self = StObject.set(x, "com.sun.star.util.Sortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotTextSearch(value: TextSearch): Self = StObject.set(x, "com.sun.star.util.TextSearch", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotTextSearch(value: TextSearch): Self = StObject.set(x, "com.sun.star.util.TextSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotTextSearch2(value: TextSearch2): Self = StObject.set(x, "com.sun.star.util.TextSearch2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotTextSearch2(value: TextSearch2): Self = StObject.set(x, "com.sun.star.util.TextSearch2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotURLTransformer(value: URLTransformer): Self = StObject.set(x, "com.sun.star.util.URLTransformer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotURLTransformer(value: URLTransformer): Self = StObject.set(x, "com.sun.star.util.URLTransformer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotUriAbbreviation(value: UriAbbreviation): Self = StObject.set(x, "com.sun.star.util.UriAbbreviation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotUriAbbreviation(value: UriAbbreviation): Self = StObject.set(x, "com.sun.star.util.UriAbbreviation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotOfficeDocumentView(value: OfficeDocumentView): Self = StObject.set(x, "com.sun.star.view.OfficeDocumentView", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotOfficeDocumentView(value: OfficeDocumentView): Self = StObject.set(x, "com.sun.star.view.OfficeDocumentView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotPrintOptions(value: PrintOptions): Self = StObject.set(x, "com.sun.star.view.PrintOptions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotPrintOptions(value: PrintOptions): Self = StObject.set(x, "com.sun.star.view.PrintOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotPrintSettings(value: typings.activexLibreoffice.com_.sun.star.view.PrintSettings): Self = StObject.set(x, "com.sun.star.view.PrintSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotPrintSettings(value: typings.activexLibreoffice.com_.sun.star.view.PrintSettings): Self = StObject.set(x, "com.sun.star.view.PrintSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotPrinterDescriptor(value: PrinterDescriptor): Self = StObject.set(x, "com.sun.star.view.PrinterDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotPrinterDescriptor(value: PrinterDescriptor): Self = StObject.set(x, "com.sun.star.view.PrinterDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotRenderDescriptor(value: RenderDescriptor): Self = StObject.set(x, "com.sun.star.view.RenderDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotRenderDescriptor(value: RenderDescriptor): Self = StObject.set(x, "com.sun.star.view.RenderDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotRenderOptions(value: RenderOptions): Self = StObject.set(x, "com.sun.star.view.RenderOptions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotRenderOptions(value: RenderOptions): Self = StObject.set(x, "com.sun.star.view.RenderOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotViewSettings(value: typings.activexLibreoffice.com_.sun.star.view.ViewSettings): Self = StObject.set(x, "com.sun.star.view.ViewSettings", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotViewSettings(value: typings.activexLibreoffice.com_.sun.star.view.ViewSettings): Self = StObject.set(x, "com.sun.star.view.ViewSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxformsDotBinding(value: Binding): Self = StObject.set(x, "com.sun.star.xforms.Binding", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxformsDotBinding(value: Binding): Self = StObject.set(x, "com.sun.star.xforms.Binding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxformsDotModel(value: Model): Self = StObject.set(x, "com.sun.star.xforms.Model", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxformsDotModel(value: Model): Self = StObject.set(x, "com.sun.star.xforms.Model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxformsDotXForms(value: XForms): Self = StObject.set(x, "com.sun.star.xforms.XForms", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxformsDotXForms(value: XForms): Self = StObject.set(x, "com.sun.star.xforms.XForms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotAttributeContainer(value: AttributeContainer): Self = StObject.set(x, "com.sun.star.xml.AttributeContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotAttributeContainer(value: AttributeContainer): Self = StObject.set(x, "com.sun.star.xml.AttributeContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotExportFilter(value: typings.activexLibreoffice.com_.sun.star.xml.ExportFilter): Self = StObject.set(x, "com.sun.star.xml.ExportFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotExportFilter(value: typings.activexLibreoffice.com_.sun.star.xml.ExportFilter): Self = StObject.set(x, "com.sun.star.xml.ExportFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotImportFilter(value: typings.activexLibreoffice.com_.sun.star.xml.ImportFilter): Self = StObject.set(x, "com.sun.star.xml.ImportFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotImportFilter(value: typings.activexLibreoffice.com_.sun.star.xml.ImportFilter): Self = StObject.set(x, "com.sun.star.xml.ImportFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotNamespaceContainer(value: NamespaceContainer): Self = StObject.set(x, "com.sun.star.xml.NamespaceContainer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotNamespaceContainer(value: NamespaceContainer): Self = StObject.set(x, "com.sun.star.xml.NamespaceContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotParaUserDefinedAttributesSupplier(value: ParaUserDefinedAttributesSupplier): Self = StObject.set(x, "com.sun.star.xml.ParaUserDefinedAttributesSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotParaUserDefinedAttributesSupplier(value: ParaUserDefinedAttributesSupplier): Self = StObject.set(x, "com.sun.star.xml.ParaUserDefinedAttributesSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotTextUserDefinedAttributesSupplier(value: TextUserDefinedAttributesSupplier): Self = StObject.set(x, "com.sun.star.xml.TextUserDefinedAttributesSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotTextUserDefinedAttributesSupplier(value: TextUserDefinedAttributesSupplier): Self = StObject.set(x, "com.sun.star.xml.TextUserDefinedAttributesSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotUserDefinedAttributesSupplier(value: UserDefinedAttributesSupplier): Self = StObject.set(x, "com.sun.star.xml.UserDefinedAttributesSupplier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotUserDefinedAttributesSupplier(value: UserDefinedAttributesSupplier): Self = StObject.set(x, "com.sun.star.xml.UserDefinedAttributesSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotXMLExportFilter(value: XMLExportFilter): Self = StObject.set(x, "com.sun.star.xml.XMLExportFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotXMLExportFilter(value: XMLExportFilter): Self = StObject.set(x, "com.sun.star.xml.XMLExportFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotXMLImportFilter(value: XMLImportFilter): Self = StObject.set(x, "com.sun.star.xml.XMLImportFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotXMLImportFilter(value: XMLImportFilter): Self = StObject.set(x, "com.sun.star.xml.XMLImportFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotNSSInitializer(value: NSSInitializer): Self = StObject.set(x, "com.sun.star.xml.crypto.NSSInitializer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotNSSInitializer(value: NSSInitializer): Self = StObject.set(x, "com.sun.star.xml.crypto.NSSInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotSEInitializer(value: SEInitializer): Self = StObject.set(x, "com.sun.star.xml.crypto.SEInitializer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotSEInitializer(value: SEInitializer): Self = StObject.set(x, "com.sun.star.xml.crypto.SEInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotSecurityEnvironment(value: SecurityEnvironment): Self = StObject.set(x, "com.sun.star.xml.crypto.SecurityEnvironment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotSecurityEnvironment(value: SecurityEnvironment): Self = StObject.set(x, "com.sun.star.xml.crypto.SecurityEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotXMLEncryption(value: XMLEncryption): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLEncryption", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotXMLEncryption(value: XMLEncryption): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotXMLEncryptionTemplate(value: XMLEncryptionTemplate): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLEncryptionTemplate", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotXMLEncryptionTemplate(value: XMLEncryptionTemplate): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLEncryptionTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotXMLSecurityContext(value: XMLSecurityContext): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLSecurityContext", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotXMLSecurityContext(value: XMLSecurityContext): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLSecurityContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotXMLSignature(value: XMLSignature): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLSignature", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotXMLSignature(value: XMLSignature): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotXMLSignatureTemplate(value: XMLSignatureTemplate): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLSignatureTemplate", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotXMLSignatureTemplate(value: XMLSignatureTemplate): Self = StObject.set(x, "com.sun.star.xml.crypto.XMLSignatureTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotsaxDotDecryptor(value: Decryptor): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.Decryptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotsaxDotDecryptor(value: Decryptor): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.Decryptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotsaxDotEncryptor(value: Encryptor): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.Encryptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotsaxDotEncryptor(value: Encryptor): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.Encryptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotsaxDotSAXEventKeeper(value: SAXEventKeeper): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.SAXEventKeeper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotsaxDotSAXEventKeeper(value: SAXEventKeeper): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.SAXEventKeeper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotsaxDotSignatureCreator(value: SignatureCreator): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.SignatureCreator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotsaxDotSignatureCreator(value: SignatureCreator): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.SignatureCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotsaxDotSignatureVerifier(value: SignatureVerifier): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.SignatureVerifier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotsaxDotSignatureVerifier(value: SignatureVerifier): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.SignatureVerifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotdomDotDocumentBuilder(value: DocumentBuilder): Self = StObject.set(x, "com.sun.star.xml.dom.DocumentBuilder", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotdomDotDocumentBuilder(value: DocumentBuilder): Self = StObject.set(x, "com.sun.star.xml.dom.DocumentBuilder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotdomDotSAXDocumentBuilder(value: SAXDocumentBuilder): Self = StObject.set(x, "com.sun.star.xml.dom.SAXDocumentBuilder", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotdomDotSAXDocumentBuilder(value: SAXDocumentBuilder): Self = StObject.set(x, "com.sun.star.xml.dom.SAXDocumentBuilder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotinputDotSaxDocumentHandler(value: SaxDocumentHandler): Self = StObject.set(x, "com.sun.star.xml.input.SaxDocumentHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotinputDotSaxDocumentHandler(value: SaxDocumentHandler): Self = StObject.set(x, "com.sun.star.xml.input.SaxDocumentHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotsaxDotFastParser(value: FastParser): Self = StObject.set(x, "com.sun.star.xml.sax.FastParser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotsaxDotFastParser(value: FastParser): Self = StObject.set(x, "com.sun.star.xml.sax.FastParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotsaxDotFastShapeContextHandler(value: FastShapeContextHandler): Self = StObject.set(x, "com.sun.star.xml.sax.FastShapeContextHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotsaxDotFastShapeContextHandler(value: FastShapeContextHandler): Self = StObject.set(x, "com.sun.star.xml.sax.FastShapeContextHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotsaxDotFastTokenHandler(value: FastTokenHandler): Self = StObject.set(x, "com.sun.star.xml.sax.FastTokenHandler", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotsaxDotFastTokenHandler(value: FastTokenHandler): Self = StObject.set(x, "com.sun.star.xml.sax.FastTokenHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotsaxDotParser(value: Parser): Self = StObject.set(x, "com.sun.star.xml.sax.Parser", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotsaxDotParser(value: Parser): Self = StObject.set(x, "com.sun.star.xml.sax.Parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotsaxDotWriter(value: Writer): Self = StObject.set(x, "com.sun.star.xml.sax.Writer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotsaxDotWriter(value: Writer): Self = StObject.set(x, "com.sun.star.xml.sax.Writer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotwrapperDotXMLDocumentWrapper(value: XMLDocumentWrapper): Self = StObject.set(x, "com.sun.star.xml.wrapper.XMLDocumentWrapper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotwrapperDotXMLDocumentWrapper(value: XMLDocumentWrapper): Self = StObject.set(x, "com.sun.star.xml.wrapper.XMLDocumentWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotwrapperDotXMLElementWrapper(value: XMLElementWrapper): Self = StObject.set(x, "com.sun.star.xml.wrapper.XMLElementWrapper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotwrapperDotXMLElementWrapper(value: XMLElementWrapper): Self = StObject.set(x, "com.sun.star.xml.wrapper.XMLElementWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotxpathDotXPathAPI(value: XPathAPI): Self = StObject.set(x, "com.sun.star.xml.xpath.XPathAPI", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotxpathDotXPathAPI(value: XPathAPI): Self = StObject.set(x, "com.sun.star.xml.xpath.XPathAPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotxpathDotXPathExtension(value: XPathExtension): Self = StObject.set(x, "com.sun.star.xml.xpath.XPathExtension", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotxpathDotXPathExtension(value: XPathExtension): Self = StObject.set(x, "com.sun.star.xml.xpath.XPathExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotxsltDotXSLT2Transformer(value: XSLT2Transformer): Self = StObject.set(x, "com.sun.star.xml.xslt.XSLT2Transformer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotxsltDotXSLT2Transformer(value: XSLT2Transformer): Self = StObject.set(x, "com.sun.star.xml.xslt.XSLT2Transformer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotxsltDotXSLTTransformer(value: XSLTTransformer): Self = StObject.set(x, "com.sun.star.xml.xslt.XSLTTransformer", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotxsltDotXSLTTransformer(value: XSLTTransformer): Self = StObject.set(x, "com.sun.star.xml.xslt.XSLTTransformer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotBoolean(value: Boolean): Self = StObject.set(x, "com.sun.star.xsd.Boolean", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotBoolean(value: Boolean): Self = StObject.set(x, "com.sun.star.xsd.Boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotDate(value: Date): Self = StObject.set(x, "com.sun.star.xsd.Date", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotDate(value: Date): Self = StObject.set(x, "com.sun.star.xsd.Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotDateTime(value: typings.activexLibreoffice.com_.sun.star.xsd.DateTime): Self = StObject.set(x, "com.sun.star.xsd.DateTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotDateTime(value: typings.activexLibreoffice.com_.sun.star.xsd.DateTime): Self = StObject.set(x, "com.sun.star.xsd.DateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotDay(value: Day): Self = StObject.set(x, "com.sun.star.xsd.Day", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotDay(value: Day): Self = StObject.set(x, "com.sun.star.xsd.Day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotDecimal(value: Decimal): Self = StObject.set(x, "com.sun.star.xsd.Decimal", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotDecimal(value: Decimal): Self = StObject.set(x, "com.sun.star.xsd.Decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotMonth(value: Month): Self = StObject.set(x, "com.sun.star.xsd.Month", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotMonth(value: Month): Self = StObject.set(x, "com.sun.star.xsd.Month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotString(value: typings.activexLibreoffice.com_.sun.star.xsd.String): Self = StObject.set(x, "com.sun.star.xsd.String", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotString(value: typings.activexLibreoffice.com_.sun.star.xsd.String): Self = StObject.set(x, "com.sun.star.xsd.String", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotTime(value: Time): Self = StObject.set(x, "com.sun.star.xsd.Time", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotTime(value: Time): Self = StObject.set(x, "com.sun.star.xsd.Time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxsdDotYear(value: Year): Self = StObject.set(x, "com.sun.star.xsd.Year", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxsdDotYear(value: Year): Self = StObject.set(x, "com.sun.star.xsd.Year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrgDotfreedesktopDotPackageKitDotSyncDbusSessionHelper(value: SyncDbusSessionHelper): Self = StObject.set(x, "org.freedesktop.PackageKit.SyncDbusSessionHelper", value.asInstanceOf[js.Any])
+      inline def setOrgDotfreedesktopDotPackageKitDotSyncDbusSessionHelper(value: SyncDbusSessionHelper): Self = StObject.set(x, "org.freedesktop.PackageKit.SyncDbusSessionHelper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -10692,8 +9325,7 @@ object LibreOffice {
   }
   object SingletonsNameMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SlashsingletonSlashcomDotsunDotstarDotbeansDottheIntrospection: theIntrospection,
       SlashsingletonSlashcomDotsunDotstarDotconfigurationDotUpdate: Update,
       SlashsingletonSlashcomDotsunDotstarDotconfigurationDottheDefaultProvider: theDefaultProvider,
@@ -10763,104 +9395,71 @@ object LibreOffice {
       __obj.asInstanceOf[SingletonsNameMap]
     }
     
-    @scala.inline
-    implicit class SingletonsNameMapMutableBuilder[Self <: SingletonsNameMap] (val x: Self) extends AnyVal {
+    extension [Self <: SingletonsNameMap](x: Self) {
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotbeansDottheIntrospection(value: theIntrospection): Self = StObject.set(x, "/singleton/com.sun.star.beans.theIntrospection", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotbeansDottheIntrospection(value: theIntrospection): Self = StObject.set(x, "/singleton/com.sun.star.beans.theIntrospection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotconfigurationDotUpdate(value: Update): Self = StObject.set(x, "/singleton/com.sun.star.configuration.Update", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotconfigurationDotUpdate(value: Update): Self = StObject.set(x, "/singleton/com.sun.star.configuration.Update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotconfigurationDottheDefaultProvider(value: theDefaultProvider): Self = StObject.set(x, "/singleton/com.sun.star.configuration.theDefaultProvider", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotconfigurationDottheDefaultProvider(value: theDefaultProvider): Self = StObject.set(x, "/singleton/com.sun.star.configuration.theDefaultProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotdeploymentDotExtensionManager(value: ExtensionManager): Self = StObject.set(x, "/singleton/com.sun.star.deployment.ExtensionManager", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotdeploymentDotExtensionManager(value: ExtensionManager): Self = StObject.set(x, "/singleton/com.sun.star.deployment.ExtensionManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotdeploymentDotPackageInformationProvider(value: PackageInformationProvider): Self = StObject.set(x, "/singleton/com.sun.star.deployment.PackageInformationProvider", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotdeploymentDotPackageInformationProvider(value: PackageInformationProvider): Self = StObject.set(x, "/singleton/com.sun.star.deployment.PackageInformationProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotdeploymentDotthePackageManagerFactory(value: thePackageManagerFactory): Self = StObject.set(x, "/singleton/com.sun.star.deployment.thePackageManagerFactory", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotdeploymentDotthePackageManagerFactory(value: thePackageManagerFactory): Self = StObject.set(x, "/singleton/com.sun.star.deployment.thePackageManagerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotframeDottheAutoRecovery(value: theAutoRecovery): Self = StObject.set(x, "/singleton/com.sun.star.frame.theAutoRecovery", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotframeDottheAutoRecovery(value: theAutoRecovery): Self = StObject.set(x, "/singleton/com.sun.star.frame.theAutoRecovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotframeDottheDesktop(value: theDesktop): Self = StObject.set(x, "/singleton/com.sun.star.frame.theDesktop", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotframeDottheDesktop(value: theDesktop): Self = StObject.set(x, "/singleton/com.sun.star.frame.theDesktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotframeDottheGlobalEventBroadcaster(value: theGlobalEventBroadcaster): Self = StObject.set(x, "/singleton/com.sun.star.frame.theGlobalEventBroadcaster", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotframeDottheGlobalEventBroadcaster(value: theGlobalEventBroadcaster): Self = StObject.set(x, "/singleton/com.sun.star.frame.theGlobalEventBroadcaster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotframeDotthePopupMenuControllerFactory(value: thePopupMenuControllerFactory): Self = StObject.set(x, "/singleton/com.sun.star.frame.thePopupMenuControllerFactory", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotframeDotthePopupMenuControllerFactory(value: thePopupMenuControllerFactory): Self = StObject.set(x, "/singleton/com.sun.star.frame.thePopupMenuControllerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotframeDottheStatusbarControllerFactory(value: theStatusbarControllerFactory): Self = StObject.set(x, "/singleton/com.sun.star.frame.theStatusbarControllerFactory", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotframeDottheStatusbarControllerFactory(value: theStatusbarControllerFactory): Self = StObject.set(x, "/singleton/com.sun.star.frame.theStatusbarControllerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotframeDottheToolbarControllerFactory(value: theToolbarControllerFactory): Self = StObject.set(x, "/singleton/com.sun.star.frame.theToolbarControllerFactory", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotframeDottheToolbarControllerFactory(value: theToolbarControllerFactory): Self = StObject.set(x, "/singleton/com.sun.star.frame.theToolbarControllerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotframeDottheUICommandDescription(value: theUICommandDescription): Self = StObject.set(x, "/singleton/com.sun.star.frame.theUICommandDescription", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotframeDottheUICommandDescription(value: theUICommandDescription): Self = StObject.set(x, "/singleton/com.sun.star.frame.theUICommandDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotloggingDotDocumentIOLogRing(value: DocumentIOLogRing): Self = StObject.set(x, "/singleton/com.sun.star.logging.DocumentIOLogRing", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotloggingDotDocumentIOLogRing(value: DocumentIOLogRing): Self = StObject.set(x, "/singleton/com.sun.star.logging.DocumentIOLogRing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotloggingDotLoggerPool(value: LoggerPool): Self = StObject.set(x, "/singleton/com.sun.star.logging.LoggerPool", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotloggingDotLoggerPool(value: LoggerPool): Self = StObject.set(x, "/singleton/com.sun.star.logging.LoggerPool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotreflectionDottheCoreReflection(value: theCoreReflection): Self = StObject.set(x, "/singleton/com.sun.star.reflection.theCoreReflection", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotreflectionDottheCoreReflection(value: theCoreReflection): Self = StObject.set(x, "/singleton/com.sun.star.reflection.theCoreReflection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotresourceDotOfficeResourceLoader(value: OfficeResourceLoader): Self = StObject.set(x, "/singleton/com.sun.star.resource.OfficeResourceLoader", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotresourceDotOfficeResourceLoader(value: OfficeResourceLoader): Self = StObject.set(x, "/singleton/com.sun.star.resource.OfficeResourceLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotscriptDotbrowseDottheBrowseNodeFactory(value: theBrowseNodeFactory): Self = StObject.set(x, "/singleton/com.sun.star.script.browse.theBrowseNodeFactory", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotscriptDotbrowseDottheBrowseNodeFactory(value: theBrowseNodeFactory): Self = StObject.set(x, "/singleton/com.sun.star.script.browse.theBrowseNodeFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotscriptDotproviderDottheMasterScriptProviderFactory(value: theMasterScriptProviderFactory): Self = StObject.set(x, "/singleton/com.sun.star.script.provider.theMasterScriptProviderFactory", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotscriptDotproviderDottheMasterScriptProviderFactory(value: theMasterScriptProviderFactory): Self = StObject.set(x, "/singleton/com.sun.star.script.provider.theMasterScriptProviderFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotscriptDottheServiceDocumenter(value: theServiceDocumenter): Self = StObject.set(x, "/singleton/com.sun.star.script.theServiceDocumenter", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotscriptDottheServiceDocumenter(value: theServiceDocumenter): Self = StObject.set(x, "/singleton/com.sun.star.script.theServiceDocumenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotsdbDotDataAccessDescriptorFactory(value: DataAccessDescriptorFactory): Self = StObject.set(x, "/singleton/com.sun.star.sdb.DataAccessDescriptorFactory", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotsdbDotDataAccessDescriptorFactory(value: DataAccessDescriptorFactory): Self = StObject.set(x, "/singleton/com.sun.star.sdb.DataAccessDescriptorFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDottaskDotOfficeRestartManager(value: OfficeRestartManager): Self = StObject.set(x, "/singleton/com.sun.star.task.OfficeRestartManager", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDottaskDotOfficeRestartManager(value: OfficeRestartManager): Self = StObject.set(x, "/singleton/com.sun.star.task.OfficeRestartManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDottaskDottheJobExecutor(value: theJobExecutor): Self = StObject.set(x, "/singleton/com.sun.star.task.theJobExecutor", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDottaskDottheJobExecutor(value: theJobExecutor): Self = StObject.set(x, "/singleton/com.sun.star.task.theJobExecutor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotuiDotContextChangeEventMultiplexer(value: ContextChangeEventMultiplexer): Self = StObject.set(x, "/singleton/com.sun.star.ui.ContextChangeEventMultiplexer", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotuiDotContextChangeEventMultiplexer(value: ContextChangeEventMultiplexer): Self = StObject.set(x, "/singleton/com.sun.star.ui.ContextChangeEventMultiplexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotuiDottheModuleUIConfigurationManagerSupplier(value: theModuleUIConfigurationManagerSupplier): Self = StObject.set(x, "/singleton/com.sun.star.ui.theModuleUIConfigurationManagerSupplier", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotuiDottheModuleUIConfigurationManagerSupplier(value: theModuleUIConfigurationManagerSupplier): Self = StObject.set(x, "/singleton/com.sun.star.ui.theModuleUIConfigurationManagerSupplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotuiDottheUICategoryDescription(value: theUICategoryDescription): Self = StObject.set(x, "/singleton/com.sun.star.ui.theUICategoryDescription", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotuiDottheUICategoryDescription(value: theUICategoryDescription): Self = StObject.set(x, "/singleton/com.sun.star.ui.theUICategoryDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotuiDottheUIElementFactoryManager(value: theUIElementFactoryManager): Self = StObject.set(x, "/singleton/com.sun.star.ui.theUIElementFactoryManager", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotuiDottheUIElementFactoryManager(value: theUIElementFactoryManager): Self = StObject.set(x, "/singleton/com.sun.star.ui.theUIElementFactoryManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotuiDottheWindowContentFactoryManager(value: theWindowContentFactoryManager): Self = StObject.set(x, "/singleton/com.sun.star.ui.theWindowContentFactoryManager", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotuiDottheWindowContentFactoryManager(value: theWindowContentFactoryManager): Self = StObject.set(x, "/singleton/com.sun.star.ui.theWindowContentFactoryManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotuiDottheWindowStateConfiguration(value: theWindowStateConfiguration): Self = StObject.set(x, "/singleton/com.sun.star.ui.theWindowStateConfiguration", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotuiDottheWindowStateConfiguration(value: theWindowStateConfiguration): Self = StObject.set(x, "/singleton/com.sun.star.ui.theWindowStateConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotutilDottheMacroExpander(value: theMacroExpander): Self = StObject.set(x, "/singleton/com.sun.star.util.theMacroExpander", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotutilDottheMacroExpander(value: theMacroExpander): Self = StObject.set(x, "/singleton/com.sun.star.util.theMacroExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotutilDottheOfficeInstallationDirectories(value: theOfficeInstallationDirectories): Self = StObject.set(x, "/singleton/com.sun.star.util.theOfficeInstallationDirectories", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotutilDottheOfficeInstallationDirectories(value: theOfficeInstallationDirectories): Self = StObject.set(x, "/singleton/com.sun.star.util.theOfficeInstallationDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashsingletonSlashcomDotsunDotstarDotutilDotthePathSettings(value: thePathSettings): Self = StObject.set(x, "/singleton/com.sun.star.util.thePathSettings", value.asInstanceOf[js.Any])
+      inline def setSlashsingletonSlashcomDotsunDotstarDotutilDotthePathSettings(value: thePathSettings): Self = StObject.set(x, "/singleton/com.sun.star.util.thePathSettings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -12032,8 +10631,7 @@ object LibreOffice {
   }
   object StructNameMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       comDotsunDotstarDotaccessibilityDotAccessibleEventObject: AccessibleEventObject,
       comDotsunDotstarDotaccessibilityDotAccessibleRelation: AccessibleRelation,
       comDotsunDotstarDotaccessibilityDotAccessibleTableModelChange: AccessibleTableModelChange,
@@ -12547,1172 +11145,783 @@ object LibreOffice {
       __obj.asInstanceOf[StructNameMap]
     }
     
-    @scala.inline
-    implicit class StructNameMapMutableBuilder[Self <: StructNameMap] (val x: Self) extends AnyVal {
+    extension [Self <: StructNameMap](x: Self) {
       
-      @scala.inline
-      def setComDotsunDotstarDotaccessibilityDotAccessibleEventObject(value: AccessibleEventObject): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleEventObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotaccessibilityDotAccessibleEventObject(value: AccessibleEventObject): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleEventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotaccessibilityDotAccessibleRelation(value: AccessibleRelation): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleRelation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotaccessibilityDotAccessibleRelation(value: AccessibleRelation): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleRelation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotaccessibilityDotAccessibleTableModelChange(value: AccessibleTableModelChange): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleTableModelChange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotaccessibilityDotAccessibleTableModelChange(value: AccessibleTableModelChange): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleTableModelChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotaccessibilityDotTextSegment(value: TextSegment): Self = StObject.set(x, "com.sun.star.accessibility.TextSegment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotaccessibilityDotTextSegment(value: TextSegment): Self = StObject.set(x, "com.sun.star.accessibility.TextSegment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotEvent(value: Event): Self = StObject.set(x, "com.sun.star.animations.Event", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotEvent(value: Event): Self = StObject.set(x, "com.sun.star.animations.Event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotTargetProperties(value: TargetProperties): Self = StObject.set(x, "com.sun.star.animations.TargetProperties", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotTargetProperties(value: TargetProperties): Self = StObject.set(x, "com.sun.star.animations.TargetProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotTimeFilterPair(value: TimeFilterPair): Self = StObject.set(x, "com.sun.star.animations.TimeFilterPair", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotTimeFilterPair(value: TimeFilterPair): Self = StObject.set(x, "com.sun.star.animations.TimeFilterPair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotanimationsDotValuePair(value: ValuePair): Self = StObject.set(x, "com.sun.star.animations.ValuePair", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotanimationsDotValuePair(value: ValuePair): Self = StObject.set(x, "com.sun.star.animations.ValuePair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotActionEvent(value: ActionEvent): Self = StObject.set(x, "com.sun.star.awt.ActionEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotActionEvent(value: ActionEvent): Self = StObject.set(x, "com.sun.star.awt.ActionEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotAdjustmentEvent(value: AdjustmentEvent): Self = StObject.set(x, "com.sun.star.awt.AdjustmentEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotAdjustmentEvent(value: AdjustmentEvent): Self = StObject.set(x, "com.sun.star.awt.AdjustmentEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotDeviceInfo(value: DeviceInfo): Self = StObject.set(x, "com.sun.star.awt.DeviceInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotDeviceInfo(value: DeviceInfo): Self = StObject.set(x, "com.sun.star.awt.DeviceInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotDockingData(value: DockingData): Self = StObject.set(x, "com.sun.star.awt.DockingData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotDockingData(value: DockingData): Self = StObject.set(x, "com.sun.star.awt.DockingData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotDockingEvent(value: DockingEvent): Self = StObject.set(x, "com.sun.star.awt.DockingEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotDockingEvent(value: DockingEvent): Self = StObject.set(x, "com.sun.star.awt.DockingEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotEndDockingEvent(value: EndDockingEvent): Self = StObject.set(x, "com.sun.star.awt.EndDockingEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotEndDockingEvent(value: EndDockingEvent): Self = StObject.set(x, "com.sun.star.awt.EndDockingEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotEndPopupModeEvent(value: EndPopupModeEvent): Self = StObject.set(x, "com.sun.star.awt.EndPopupModeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotEndPopupModeEvent(value: EndPopupModeEvent): Self = StObject.set(x, "com.sun.star.awt.EndPopupModeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotEnhancedMouseEvent(value: EnhancedMouseEvent): Self = StObject.set(x, "com.sun.star.awt.EnhancedMouseEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotEnhancedMouseEvent(value: EnhancedMouseEvent): Self = StObject.set(x, "com.sun.star.awt.EnhancedMouseEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotFocusEvent(value: FocusEvent): Self = StObject.set(x, "com.sun.star.awt.FocusEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotFocusEvent(value: FocusEvent): Self = StObject.set(x, "com.sun.star.awt.FocusEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "com.sun.star.awt.FontDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "com.sun.star.awt.FontDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotGradient(value: Gradient): Self = StObject.set(x, "com.sun.star.awt.Gradient", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotGradient(value: Gradient): Self = StObject.set(x, "com.sun.star.awt.Gradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotInputEvent(value: InputEvent): Self = StObject.set(x, "com.sun.star.awt.InputEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotInputEvent(value: InputEvent): Self = StObject.set(x, "com.sun.star.awt.InputEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotItemEvent(value: ItemEvent): Self = StObject.set(x, "com.sun.star.awt.ItemEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotItemEvent(value: ItemEvent): Self = StObject.set(x, "com.sun.star.awt.ItemEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotItemListEvent(value: ItemListEvent): Self = StObject.set(x, "com.sun.star.awt.ItemListEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotItemListEvent(value: ItemListEvent): Self = StObject.set(x, "com.sun.star.awt.ItemListEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotKeyEvent(value: KeyEvent): Self = StObject.set(x, "com.sun.star.awt.KeyEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotKeyEvent(value: KeyEvent): Self = StObject.set(x, "com.sun.star.awt.KeyEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotKeyStroke(value: KeyStroke): Self = StObject.set(x, "com.sun.star.awt.KeyStroke", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotKeyStroke(value: KeyStroke): Self = StObject.set(x, "com.sun.star.awt.KeyStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotMenuEvent(value: MenuEvent): Self = StObject.set(x, "com.sun.star.awt.MenuEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotMenuEvent(value: MenuEvent): Self = StObject.set(x, "com.sun.star.awt.MenuEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotMouseEvent(value: MouseEvent): Self = StObject.set(x, "com.sun.star.awt.MouseEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotMouseEvent(value: MouseEvent): Self = StObject.set(x, "com.sun.star.awt.MouseEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotPaintEvent(value: PaintEvent): Self = StObject.set(x, "com.sun.star.awt.PaintEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotPaintEvent(value: PaintEvent): Self = StObject.set(x, "com.sun.star.awt.PaintEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotPoint(value: Point): Self = StObject.set(x, "com.sun.star.awt.Point", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotPoint(value: Point): Self = StObject.set(x, "com.sun.star.awt.Point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotRectangle(value: Rectangle): Self = StObject.set(x, "com.sun.star.awt.Rectangle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotRectangle(value: Rectangle): Self = StObject.set(x, "com.sun.star.awt.Rectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotSelection(value: Selection): Self = StObject.set(x, "com.sun.star.awt.Selection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotSelection(value: Selection): Self = StObject.set(x, "com.sun.star.awt.Selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotSimpleFontMetric(value: SimpleFontMetric): Self = StObject.set(x, "com.sun.star.awt.SimpleFontMetric", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotSimpleFontMetric(value: SimpleFontMetric): Self = StObject.set(x, "com.sun.star.awt.SimpleFontMetric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotSize(value: Size): Self = StObject.set(x, "com.sun.star.awt.Size", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotSize(value: Size): Self = StObject.set(x, "com.sun.star.awt.Size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotSpinEvent(value: SpinEvent): Self = StObject.set(x, "com.sun.star.awt.SpinEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotSpinEvent(value: SpinEvent): Self = StObject.set(x, "com.sun.star.awt.SpinEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotSystemDependentXWindow(value: SystemDependentXWindow): Self = StObject.set(x, "com.sun.star.awt.SystemDependentXWindow", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotSystemDependentXWindow(value: SystemDependentXWindow): Self = StObject.set(x, "com.sun.star.awt.SystemDependentXWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotTextEvent(value: TextEvent): Self = StObject.set(x, "com.sun.star.awt.TextEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotTextEvent(value: TextEvent): Self = StObject.set(x, "com.sun.star.awt.TextEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotVclContainerEvent(value: VclContainerEvent): Self = StObject.set(x, "com.sun.star.awt.VclContainerEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotVclContainerEvent(value: VclContainerEvent): Self = StObject.set(x, "com.sun.star.awt.VclContainerEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotWindowDescriptor(value: WindowDescriptor): Self = StObject.set(x, "com.sun.star.awt.WindowDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotWindowDescriptor(value: WindowDescriptor): Self = StObject.set(x, "com.sun.star.awt.WindowDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotWindowEvent(value: WindowEvent): Self = StObject.set(x, "com.sun.star.awt.WindowEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotWindowEvent(value: WindowEvent): Self = StObject.set(x, "com.sun.star.awt.WindowEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotGridColumnEvent(value: GridColumnEvent): Self = StObject.set(x, "com.sun.star.awt.grid.GridColumnEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotGridColumnEvent(value: GridColumnEvent): Self = StObject.set(x, "com.sun.star.awt.grid.GridColumnEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotGridDataEvent(value: GridDataEvent): Self = StObject.set(x, "com.sun.star.awt.grid.GridDataEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotGridDataEvent(value: GridDataEvent): Self = StObject.set(x, "com.sun.star.awt.grid.GridDataEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDotgridDotGridSelectionEvent(value: GridSelectionEvent): Self = StObject.set(x, "com.sun.star.awt.grid.GridSelectionEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDotgridDotGridSelectionEvent(value: GridSelectionEvent): Self = StObject.set(x, "com.sun.star.awt.grid.GridSelectionEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottabDotTabPageActivatedEvent(value: TabPageActivatedEvent): Self = StObject.set(x, "com.sun.star.awt.tab.TabPageActivatedEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottabDotTabPageActivatedEvent(value: TabPageActivatedEvent): Self = StObject.set(x, "com.sun.star.awt.tab.TabPageActivatedEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottreeDotTreeDataModelEvent(value: TreeDataModelEvent): Self = StObject.set(x, "com.sun.star.awt.tree.TreeDataModelEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottreeDotTreeDataModelEvent(value: TreeDataModelEvent): Self = StObject.set(x, "com.sun.star.awt.tree.TreeDataModelEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotawtDottreeDotTreeExpansionEvent(value: TreeExpansionEvent): Self = StObject.set(x, "com.sun.star.awt.tree.TreeExpansionEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotawtDottreeDotTreeExpansionEvent(value: TreeExpansionEvent): Self = StObject.set(x, "com.sun.star.awt.tree.TreeExpansionEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotGetDirectPropertyTolerantResult(value: GetDirectPropertyTolerantResult): Self = StObject.set(x, "com.sun.star.beans.GetDirectPropertyTolerantResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotGetDirectPropertyTolerantResult(value: GetDirectPropertyTolerantResult): Self = StObject.set(x, "com.sun.star.beans.GetDirectPropertyTolerantResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotGetPropertyTolerantResult(value: GetPropertyTolerantResult): Self = StObject.set(x, "com.sun.star.beans.GetPropertyTolerantResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotGetPropertyTolerantResult(value: GetPropertyTolerantResult): Self = StObject.set(x, "com.sun.star.beans.GetPropertyTolerantResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotNamedValue(value: NamedValue): Self = StObject.set(x, "com.sun.star.beans.NamedValue", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotNamedValue(value: NamedValue): Self = StObject.set(x, "com.sun.star.beans.NamedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotProperty(value: Property): Self = StObject.set(x, "com.sun.star.beans.Property", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotProperty(value: Property): Self = StObject.set(x, "com.sun.star.beans.Property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotPropertyChangeEvent(value: PropertyChangeEvent): Self = StObject.set(x, "com.sun.star.beans.PropertyChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotPropertyChangeEvent(value: PropertyChangeEvent): Self = StObject.set(x, "com.sun.star.beans.PropertyChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotPropertySetInfoChangeEvent(value: PropertySetInfoChangeEvent): Self = StObject.set(x, "com.sun.star.beans.PropertySetInfoChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotPropertySetInfoChangeEvent(value: PropertySetInfoChangeEvent): Self = StObject.set(x, "com.sun.star.beans.PropertySetInfoChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotPropertyStateChangeEvent(value: PropertyStateChangeEvent): Self = StObject.set(x, "com.sun.star.beans.PropertyStateChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotPropertyStateChangeEvent(value: PropertyStateChangeEvent): Self = StObject.set(x, "com.sun.star.beans.PropertyStateChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotPropertyValue(value: PropertyValue): Self = StObject.set(x, "com.sun.star.beans.PropertyValue", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotPropertyValue(value: PropertyValue): Self = StObject.set(x, "com.sun.star.beans.PropertyValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotSetPropertyTolerantFailed(value: SetPropertyTolerantFailed): Self = StObject.set(x, "com.sun.star.beans.SetPropertyTolerantFailed", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotSetPropertyTolerantFailed(value: SetPropertyTolerantFailed): Self = StObject.set(x, "com.sun.star.beans.SetPropertyTolerantFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbeansDotStringPair(value: StringPair): Self = StObject.set(x, "com.sun.star.beans.StringPair", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbeansDotStringPair(value: StringPair): Self = StObject.set(x, "com.sun.star.beans.StringPair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotProtocolProperty(value: ProtocolProperty): Self = StObject.set(x, "com.sun.star.bridge.ProtocolProperty", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotProtocolProperty(value: ProtocolProperty): Self = StObject.set(x, "com.sun.star.bridge.ProtocolProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotCurrency(value: Currency): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Currency", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotCurrency(value: Currency): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotDate(value: typings.activexLibreoffice.com_.sun.star.bridge.oleautomation.Date): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Date", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotDate(value: typings.activexLibreoffice.com_.sun.star.bridge.oleautomation.Date): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotDecimal(value: typings.activexLibreoffice.com_.sun.star.bridge.oleautomation.Decimal): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Decimal", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotDecimal(value: typings.activexLibreoffice.com_.sun.star.bridge.oleautomation.Decimal): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.Decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotNamedArgument(value: NamedArgument): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.NamedArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotNamedArgument(value: NamedArgument): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.NamedArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotPropertyPutArgument(value: PropertyPutArgument): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.PropertyPutArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotPropertyPutArgument(value: PropertyPutArgument): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.PropertyPutArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotbridgeDotoleautomationDotSCode(value: SCode): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.SCode", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotbridgeDotoleautomationDotSCode(value: SCode): Self = StObject.set(x, "com.sun.star.bridge.oleautomation.SCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotDataPointLabel(value: DataPointLabel): Self = StObject.set(x, "com.sun.star.chart2.DataPointLabel", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotDataPointLabel(value: DataPointLabel): Self = StObject.set(x, "com.sun.star.chart2.DataPointLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotFillBitmap(value: FillBitmap): Self = StObject.set(x, "com.sun.star.chart2.FillBitmap", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotFillBitmap(value: FillBitmap): Self = StObject.set(x, "com.sun.star.chart2.FillBitmap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotIncrementData(value: IncrementData): Self = StObject.set(x, "com.sun.star.chart2.IncrementData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotIncrementData(value: IncrementData): Self = StObject.set(x, "com.sun.star.chart2.IncrementData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotInterpretedData(value: InterpretedData): Self = StObject.set(x, "com.sun.star.chart2.InterpretedData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotInterpretedData(value: InterpretedData): Self = StObject.set(x, "com.sun.star.chart2.InterpretedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotLightSource(value: LightSource): Self = StObject.set(x, "com.sun.star.chart2.LightSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotLightSource(value: LightSource): Self = StObject.set(x, "com.sun.star.chart2.LightSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotRelativePosition(value: RelativePosition): Self = StObject.set(x, "com.sun.star.chart2.RelativePosition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotRelativePosition(value: RelativePosition): Self = StObject.set(x, "com.sun.star.chart2.RelativePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotRelativeSize(value: RelativeSize): Self = StObject.set(x, "com.sun.star.chart2.RelativeSize", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotRelativeSize(value: RelativeSize): Self = StObject.set(x, "com.sun.star.chart2.RelativeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotScaleData(value: ScaleData): Self = StObject.set(x, "com.sun.star.chart2.ScaleData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotScaleData(value: ScaleData): Self = StObject.set(x, "com.sun.star.chart2.ScaleData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotSubIncrement(value: SubIncrement): Self = StObject.set(x, "com.sun.star.chart2.SubIncrement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotSubIncrement(value: SubIncrement): Self = StObject.set(x, "com.sun.star.chart2.SubIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotSymbol(value: Symbol): Self = StObject.set(x, "com.sun.star.chart2.Symbol", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotSymbol(value: Symbol): Self = StObject.set(x, "com.sun.star.chart2.Symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchart2DotdataDotHighlightedRange(value: HighlightedRange): Self = StObject.set(x, "com.sun.star.chart2.data.HighlightedRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchart2DotdataDotHighlightedRange(value: HighlightedRange): Self = StObject.set(x, "com.sun.star.chart2.data.HighlightedRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartDataChangeEvent(value: ChartDataChangeEvent): Self = StObject.set(x, "com.sun.star.chart.ChartDataChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartDataChangeEvent(value: ChartDataChangeEvent): Self = StObject.set(x, "com.sun.star.chart.ChartDataChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartDataRow(value: ChartDataRow): Self = StObject.set(x, "com.sun.star.chart.ChartDataRow", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartDataRow(value: ChartDataRow): Self = StObject.set(x, "com.sun.star.chart.ChartDataRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartDataValue(value: ChartDataValue): Self = StObject.set(x, "com.sun.star.chart.ChartDataValue", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartDataValue(value: ChartDataValue): Self = StObject.set(x, "com.sun.star.chart.ChartDataValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotChartSeriesAddress(value: ChartSeriesAddress): Self = StObject.set(x, "com.sun.star.chart.ChartSeriesAddress", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotChartSeriesAddress(value: ChartSeriesAddress): Self = StObject.set(x, "com.sun.star.chart.ChartSeriesAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotTimeIncrement(value: TimeIncrement): Self = StObject.set(x, "com.sun.star.chart.TimeIncrement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotTimeIncrement(value: TimeIncrement): Self = StObject.set(x, "com.sun.star.chart.TimeIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotchartDotTimeInterval(value: TimeInterval): Self = StObject.set(x, "com.sun.star.chart.TimeInterval", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotchartDotTimeInterval(value: TimeInterval): Self = StObject.set(x, "com.sun.star.chart.TimeInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotComponentChangeEvent(value: ComponentChangeEvent): Self = StObject.set(x, "com.sun.star.configuration.backend.ComponentChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotComponentChangeEvent(value: ComponentChangeEvent): Self = StObject.set(x, "com.sun.star.configuration.backend.ComponentChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotPropertyInfo(value: PropertyInfo): Self = StObject.set(x, "com.sun.star.configuration.backend.PropertyInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotPropertyInfo(value: PropertyInfo): Self = StObject.set(x, "com.sun.star.configuration.backend.PropertyInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconfigurationDotbackendDotTemplateIdentifier(value: TemplateIdentifier): Self = StObject.set(x, "com.sun.star.configuration.backend.TemplateIdentifier", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconfigurationDotbackendDotTemplateIdentifier(value: TemplateIdentifier): Self = StObject.set(x, "com.sun.star.configuration.backend.TemplateIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotconnectionDotSocketPermission(value: SocketPermission): Self = StObject.set(x, "com.sun.star.connection.SocketPermission", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotconnectionDotSocketPermission(value: SocketPermission): Self = StObject.set(x, "com.sun.star.connection.SocketPermission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotcontainerDotContainerEvent(value: ContainerEvent): Self = StObject.set(x, "com.sun.star.container.ContainerEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotcontainerDotContainerEvent(value: ContainerEvent): Self = StObject.set(x, "com.sun.star.container.ContainerEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotDataFlavor(value: DataFlavor): Self = StObject.set(x, "com.sun.star.datatransfer.DataFlavor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotDataFlavor(value: DataFlavor): Self = StObject.set(x, "com.sun.star.datatransfer.DataFlavor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotclipboardDotClipboardEvent(value: ClipboardEvent): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.ClipboardEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotclipboardDotClipboardEvent(value: ClipboardEvent): Self = StObject.set(x, "com.sun.star.datatransfer.clipboard.ClipboardEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDragGestureEvent(value: DragGestureEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragGestureEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDragGestureEvent(value: DragGestureEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragGestureEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDragSourceDragEvent(value: DragSourceDragEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragSourceDragEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDragSourceDragEvent(value: DragSourceDragEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragSourceDragEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDragSourceDropEvent(value: DragSourceDropEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragSourceDropEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDragSourceDropEvent(value: DragSourceDropEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragSourceDropEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDragSourceEvent(value: DragSourceEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragSourceEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDragSourceEvent(value: DragSourceEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DragSourceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDropTargetDragEnterEvent(value: DropTargetDragEnterEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetDragEnterEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDropTargetDragEnterEvent(value: DropTargetDragEnterEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetDragEnterEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDropTargetDragEvent(value: DropTargetDragEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetDragEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDropTargetDragEvent(value: DropTargetDragEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetDragEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDropTargetDropEvent(value: DropTargetDropEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetDropEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDropTargetDropEvent(value: DropTargetDropEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetDropEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdatatransferDotdndDotDropTargetEvent(value: DropTargetEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdatatransferDotdndDotDropTargetEvent(value: DropTargetEvent): Self = StObject.set(x, "com.sun.star.datatransfer.dnd.DropTargetEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdeploymentDotUpdateInformationEntry(value: UpdateInformationEntry): Self = StObject.set(x, "com.sun.star.deployment.UpdateInformationEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdeploymentDotUpdateInformationEntry(value: UpdateInformationEntry): Self = StObject.set(x, "com.sun.star.deployment.UpdateInformationEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotCmisProperty(value: CmisProperty): Self = StObject.set(x, "com.sun.star.document.CmisProperty", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotCmisProperty(value: CmisProperty): Self = StObject.set(x, "com.sun.star.document.CmisProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotCmisVersion(value: CmisVersion): Self = StObject.set(x, "com.sun.star.document.CmisVersion", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotCmisVersion(value: CmisVersion): Self = StObject.set(x, "com.sun.star.document.CmisVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotDocumentEvent(value: DocumentEvent): Self = StObject.set(x, "com.sun.star.document.DocumentEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotDocumentEvent(value: DocumentEvent): Self = StObject.set(x, "com.sun.star.document.DocumentEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotEventObject(value: EventObject): Self = StObject.set(x, "com.sun.star.document.EventObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotEventObject(value: EventObject): Self = StObject.set(x, "com.sun.star.document.EventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdocumentDotUndoManagerEvent(value: UndoManagerEvent): Self = StObject.set(x, "com.sun.star.document.UndoManagerEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdocumentDotUndoManagerEvent(value: UndoManagerEvent): Self = StObject.set(x, "com.sun.star.document.UndoManagerEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotBezierPoint(value: BezierPoint): Self = StObject.set(x, "com.sun.star.drawing.BezierPoint", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotBezierPoint(value: BezierPoint): Self = StObject.set(x, "com.sun.star.drawing.BezierPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotBoundVolume(value: BoundVolume): Self = StObject.set(x, "com.sun.star.drawing.BoundVolume", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotBoundVolume(value: BoundVolume): Self = StObject.set(x, "com.sun.star.drawing.BoundVolume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotCameraGeometry(value: CameraGeometry): Self = StObject.set(x, "com.sun.star.drawing.CameraGeometry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotCameraGeometry(value: CameraGeometry): Self = StObject.set(x, "com.sun.star.drawing.CameraGeometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotDirection3D(value: Direction3D): Self = StObject.set(x, "com.sun.star.drawing.Direction3D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotDirection3D(value: Direction3D): Self = StObject.set(x, "com.sun.star.drawing.Direction3D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeAdjustmentValue(value: EnhancedCustomShapeAdjustmentValue): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeAdjustmentValue", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeAdjustmentValue(value: EnhancedCustomShapeAdjustmentValue): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeAdjustmentValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeParameter(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeParameter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeParameter(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeParameterPair(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeParameterPair", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeParameterPair(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeParameterPair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeSegment(value: EnhancedCustomShapeSegment): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeSegment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeSegment(value: EnhancedCustomShapeSegment): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeSegment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeTextFrame(value: EnhancedCustomShapeTextFrame): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeTextFrame", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotEnhancedCustomShapeTextFrame(value: EnhancedCustomShapeTextFrame): Self = StObject.set(x, "com.sun.star.drawing.EnhancedCustomShapeTextFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGluePoint(value: GluePoint): Self = StObject.set(x, "com.sun.star.drawing.GluePoint", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGluePoint(value: GluePoint): Self = StObject.set(x, "com.sun.star.drawing.GluePoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotGluePoint2(value: GluePoint2): Self = StObject.set(x, "com.sun.star.drawing.GluePoint2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotGluePoint2(value: GluePoint2): Self = StObject.set(x, "com.sun.star.drawing.GluePoint2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHatch(value: Hatch): Self = StObject.set(x, "com.sun.star.drawing.Hatch", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHatch(value: Hatch): Self = StObject.set(x, "com.sun.star.drawing.Hatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHomogenMatrix(value: HomogenMatrix): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrix", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHomogenMatrix(value: HomogenMatrix): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHomogenMatrix3(value: HomogenMatrix3): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrix3", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHomogenMatrix3(value: HomogenMatrix3): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrix3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHomogenMatrix4(value: HomogenMatrix4): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrix4", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHomogenMatrix4(value: HomogenMatrix4): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrix4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHomogenMatrixLine(value: HomogenMatrixLine): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrixLine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHomogenMatrixLine(value: HomogenMatrixLine): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrixLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHomogenMatrixLine3(value: HomogenMatrixLine3): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrixLine3", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHomogenMatrixLine3(value: HomogenMatrixLine3): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrixLine3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotHomogenMatrixLine4(value: HomogenMatrixLine4): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrixLine4", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotHomogenMatrixLine4(value: HomogenMatrixLine4): Self = StObject.set(x, "com.sun.star.drawing.HomogenMatrixLine4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotLineDash(value: LineDash): Self = StObject.set(x, "com.sun.star.drawing.LineDash", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotLineDash(value: LineDash): Self = StObject.set(x, "com.sun.star.drawing.LineDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPolyPolygonBezierCoords(value: PolyPolygonBezierCoords): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonBezierCoords", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPolyPolygonBezierCoords(value: PolyPolygonBezierCoords): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonBezierCoords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPolyPolygonShape3D(value: PolyPolygonShape3D): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonShape3D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPolyPolygonShape3D(value: PolyPolygonShape3D): Self = StObject.set(x, "com.sun.star.drawing.PolyPolygonShape3D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotPosition3D(value: Position3D): Self = StObject.set(x, "com.sun.star.drawing.Position3D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotPosition3D(value: Position3D): Self = StObject.set(x, "com.sun.star.drawing.Position3D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotConfigurationChangeEvent(value: ConfigurationChangeEvent): Self = StObject.set(x, "com.sun.star.drawing.framework.ConfigurationChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotConfigurationChangeEvent(value: ConfigurationChangeEvent): Self = StObject.set(x, "com.sun.star.drawing.framework.ConfigurationChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotdrawingDotframeworkDotTabBarButton(value: TabBarButton): Self = StObject.set(x, "com.sun.star.drawing.framework.TabBarButton", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotdrawingDotframeworkDotTabBarButton(value: TabBarButton): Self = StObject.set(x, "com.sun.star.drawing.framework.TabBarButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotInsertedObjectInfo(value: InsertedObjectInfo): Self = StObject.set(x, "com.sun.star.embed.InsertedObjectInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotInsertedObjectInfo(value: InsertedObjectInfo): Self = StObject.set(x, "com.sun.star.embed.InsertedObjectInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotVerbDescriptor(value: VerbDescriptor): Self = StObject.set(x, "com.sun.star.embed.VerbDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotVerbDescriptor(value: VerbDescriptor): Self = StObject.set(x, "com.sun.star.embed.VerbDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotembedDotVisualRepresentation(value: VisualRepresentation): Self = StObject.set(x, "com.sun.star.embed.VisualRepresentation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotembedDotVisualRepresentation(value: VisualRepresentation): Self = StObject.set(x, "com.sun.star.embed.VisualRepresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotDatabaseDeleteEvent(value: DatabaseDeleteEvent): Self = StObject.set(x, "com.sun.star.form.DatabaseDeleteEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotDatabaseDeleteEvent(value: DatabaseDeleteEvent): Self = StObject.set(x, "com.sun.star.form.DatabaseDeleteEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotDatabaseParameterEvent(value: DatabaseParameterEvent): Self = StObject.set(x, "com.sun.star.form.DatabaseParameterEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotDatabaseParameterEvent(value: DatabaseParameterEvent): Self = StObject.set(x, "com.sun.star.form.DatabaseParameterEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotErrorEvent(value: ErrorEvent): Self = StObject.set(x, "com.sun.star.form.ErrorEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotErrorEvent(value: ErrorEvent): Self = StObject.set(x, "com.sun.star.form.ErrorEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotbindingDotListEntryEvent(value: ListEntryEvent): Self = StObject.set(x, "com.sun.star.form.binding.ListEntryEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotbindingDotListEntryEvent(value: ListEntryEvent): Self = StObject.set(x, "com.sun.star.form.binding.ListEntryEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotruntimeDotFeatureState(value: FeatureState): Self = StObject.set(x, "com.sun.star.form.runtime.FeatureState", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotruntimeDotFeatureState(value: FeatureState): Self = StObject.set(x, "com.sun.star.form.runtime.FeatureState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformDotruntimeDotFilterEvent(value: FilterEvent): Self = StObject.set(x, "com.sun.star.form.runtime.FilterEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformDotruntimeDotFilterEvent(value: FilterEvent): Self = StObject.set(x, "com.sun.star.form.runtime.FilterEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotformulaDotSymbolDescriptor(value: SymbolDescriptor): Self = StObject.set(x, "com.sun.star.formula.SymbolDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotformulaDotSymbolDescriptor(value: SymbolDescriptor): Self = StObject.set(x, "com.sun.star.formula.SymbolDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotBorderWidths(value: BorderWidths): Self = StObject.set(x, "com.sun.star.frame.BorderWidths", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotBorderWidths(value: BorderWidths): Self = StObject.set(x, "com.sun.star.frame.BorderWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotControlCommand(value: ControlCommand): Self = StObject.set(x, "com.sun.star.frame.ControlCommand", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotControlCommand(value: ControlCommand): Self = StObject.set(x, "com.sun.star.frame.ControlCommand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotControlEvent(value: ControlEvent): Self = StObject.set(x, "com.sun.star.frame.ControlEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotControlEvent(value: ControlEvent): Self = StObject.set(x, "com.sun.star.frame.ControlEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchDescriptor(value: DispatchDescriptor): Self = StObject.set(x, "com.sun.star.frame.DispatchDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchDescriptor(value: DispatchDescriptor): Self = StObject.set(x, "com.sun.star.frame.DispatchDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchInformation(value: DispatchInformation): Self = StObject.set(x, "com.sun.star.frame.DispatchInformation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchInformation(value: DispatchInformation): Self = StObject.set(x, "com.sun.star.frame.DispatchInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchResultEvent(value: DispatchResultEvent): Self = StObject.set(x, "com.sun.star.frame.DispatchResultEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchResultEvent(value: DispatchResultEvent): Self = StObject.set(x, "com.sun.star.frame.DispatchResultEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotDispatchStatement(value: DispatchStatement): Self = StObject.set(x, "com.sun.star.frame.DispatchStatement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotDispatchStatement(value: DispatchStatement): Self = StObject.set(x, "com.sun.star.frame.DispatchStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotFeatureStateEvent(value: FeatureStateEvent): Self = StObject.set(x, "com.sun.star.frame.FeatureStateEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotFeatureStateEvent(value: FeatureStateEvent): Self = StObject.set(x, "com.sun.star.frame.FeatureStateEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotFrameActionEvent(value: FrameActionEvent): Self = StObject.set(x, "com.sun.star.frame.FrameActionEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotFrameActionEvent(value: FrameActionEvent): Self = StObject.set(x, "com.sun.star.frame.FrameActionEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotTitleChangedEvent(value: TitleChangedEvent): Self = StObject.set(x, "com.sun.star.frame.TitleChangedEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotTitleChangedEvent(value: TitleChangedEvent): Self = StObject.set(x, "com.sun.star.frame.TitleChangedEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotClipboardFormats(value: ClipboardFormats): Self = StObject.set(x, "com.sun.star.frame.status.ClipboardFormats", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotClipboardFormats(value: ClipboardFormats): Self = StObject.set(x, "com.sun.star.frame.status.ClipboardFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotFontHeight(value: FontHeight): Self = StObject.set(x, "com.sun.star.frame.status.FontHeight", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotFontHeight(value: FontHeight): Self = StObject.set(x, "com.sun.star.frame.status.FontHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotItemStatus(value: ItemStatus): Self = StObject.set(x, "com.sun.star.frame.status.ItemStatus", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotItemStatus(value: ItemStatus): Self = StObject.set(x, "com.sun.star.frame.status.ItemStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotLeftRightMargin(value: LeftRightMargin): Self = StObject.set(x, "com.sun.star.frame.status.LeftRightMargin", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotLeftRightMargin(value: LeftRightMargin): Self = StObject.set(x, "com.sun.star.frame.status.LeftRightMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotLeftRightMarginScale(value: LeftRightMarginScale): Self = StObject.set(x, "com.sun.star.frame.status.LeftRightMarginScale", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotLeftRightMarginScale(value: LeftRightMarginScale): Self = StObject.set(x, "com.sun.star.frame.status.LeftRightMarginScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotTemplate(value: Template): Self = StObject.set(x, "com.sun.star.frame.status.Template", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotTemplate(value: Template): Self = StObject.set(x, "com.sun.star.frame.status.Template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotUpperLowerMargin(value: UpperLowerMargin): Self = StObject.set(x, "com.sun.star.frame.status.UpperLowerMargin", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotUpperLowerMargin(value: UpperLowerMargin): Self = StObject.set(x, "com.sun.star.frame.status.UpperLowerMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotUpperLowerMarginScale(value: UpperLowerMarginScale): Self = StObject.set(x, "com.sun.star.frame.status.UpperLowerMarginScale", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotUpperLowerMarginScale(value: UpperLowerMarginScale): Self = StObject.set(x, "com.sun.star.frame.status.UpperLowerMarginScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotVerb(value: Verb): Self = StObject.set(x, "com.sun.star.frame.status.Verb", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotVerb(value: Verb): Self = StObject.set(x, "com.sun.star.frame.status.Verb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotframeDotstatusDotVisibility(value: Visibility): Self = StObject.set(x, "com.sun.star.frame.status.Visibility", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotframeDotstatusDotVisibility(value: Visibility): Self = StObject.set(x, "com.sun.star.frame.status.Visibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotAffineMatrix2D(value: AffineMatrix2D): Self = StObject.set(x, "com.sun.star.geometry.AffineMatrix2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotAffineMatrix2D(value: AffineMatrix2D): Self = StObject.set(x, "com.sun.star.geometry.AffineMatrix2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotAffineMatrix3D(value: AffineMatrix3D): Self = StObject.set(x, "com.sun.star.geometry.AffineMatrix3D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotAffineMatrix3D(value: AffineMatrix3D): Self = StObject.set(x, "com.sun.star.geometry.AffineMatrix3D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotEllipticalArc(value: EllipticalArc): Self = StObject.set(x, "com.sun.star.geometry.EllipticalArc", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotEllipticalArc(value: EllipticalArc): Self = StObject.set(x, "com.sun.star.geometry.EllipticalArc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotIntegerBezierSegment2D(value: IntegerBezierSegment2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerBezierSegment2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotIntegerBezierSegment2D(value: IntegerBezierSegment2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerBezierSegment2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotIntegerPoint2D(value: IntegerPoint2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerPoint2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotIntegerPoint2D(value: IntegerPoint2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerPoint2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotIntegerRectangle2D(value: IntegerRectangle2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerRectangle2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotIntegerRectangle2D(value: IntegerRectangle2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerRectangle2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotIntegerSize2D(value: IntegerSize2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerSize2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotIntegerSize2D(value: IntegerSize2D): Self = StObject.set(x, "com.sun.star.geometry.IntegerSize2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotMatrix2D(value: Matrix2D): Self = StObject.set(x, "com.sun.star.geometry.Matrix2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotMatrix2D(value: Matrix2D): Self = StObject.set(x, "com.sun.star.geometry.Matrix2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotRealBezierSegment2D(value: RealBezierSegment2D): Self = StObject.set(x, "com.sun.star.geometry.RealBezierSegment2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotRealBezierSegment2D(value: RealBezierSegment2D): Self = StObject.set(x, "com.sun.star.geometry.RealBezierSegment2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotRealPoint2D(value: RealPoint2D): Self = StObject.set(x, "com.sun.star.geometry.RealPoint2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotRealPoint2D(value: RealPoint2D): Self = StObject.set(x, "com.sun.star.geometry.RealPoint2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotRealRectangle2D(value: RealRectangle2D): Self = StObject.set(x, "com.sun.star.geometry.RealRectangle2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotRealRectangle2D(value: RealRectangle2D): Self = StObject.set(x, "com.sun.star.geometry.RealRectangle2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotRealRectangle3D(value: RealRectangle3D): Self = StObject.set(x, "com.sun.star.geometry.RealRectangle3D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotRealRectangle3D(value: RealRectangle3D): Self = StObject.set(x, "com.sun.star.geometry.RealRectangle3D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotgeometryDotRealSize2D(value: RealSize2D): Self = StObject.set(x, "com.sun.star.geometry.RealSize2D", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotgeometryDotRealSize2D(value: RealSize2D): Self = StObject.set(x, "com.sun.star.geometry.RealSize2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotBoundary(value: Boundary): Self = StObject.set(x, "com.sun.star.i18n.Boundary", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotBoundary(value: Boundary): Self = StObject.set(x, "com.sun.star.i18n.Boundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCalendar(value: Calendar): Self = StObject.set(x, "com.sun.star.i18n.Calendar", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCalendar(value: Calendar): Self = StObject.set(x, "com.sun.star.i18n.Calendar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCalendar2(value: Calendar2): Self = StObject.set(x, "com.sun.star.i18n.Calendar2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCalendar2(value: Calendar2): Self = StObject.set(x, "com.sun.star.i18n.Calendar2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCalendarItem(value: CalendarItem): Self = StObject.set(x, "com.sun.star.i18n.CalendarItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCalendarItem(value: CalendarItem): Self = StObject.set(x, "com.sun.star.i18n.CalendarItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCalendarItem2(value: CalendarItem2): Self = StObject.set(x, "com.sun.star.i18n.CalendarItem2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCalendarItem2(value: CalendarItem2): Self = StObject.set(x, "com.sun.star.i18n.CalendarItem2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCurrency(value: typings.activexLibreoffice.com_.sun.star.i18n.Currency): Self = StObject.set(x, "com.sun.star.i18n.Currency", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCurrency(value: typings.activexLibreoffice.com_.sun.star.i18n.Currency): Self = StObject.set(x, "com.sun.star.i18n.Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotCurrency2(value: Currency2): Self = StObject.set(x, "com.sun.star.i18n.Currency2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotCurrency2(value: Currency2): Self = StObject.set(x, "com.sun.star.i18n.Currency2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotForbiddenCharacters(value: ForbiddenCharacters): Self = StObject.set(x, "com.sun.star.i18n.ForbiddenCharacters", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotForbiddenCharacters(value: ForbiddenCharacters): Self = StObject.set(x, "com.sun.star.i18n.ForbiddenCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotFormatElement(value: FormatElement): Self = StObject.set(x, "com.sun.star.i18n.FormatElement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotFormatElement(value: FormatElement): Self = StObject.set(x, "com.sun.star.i18n.FormatElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotImplementation(value: Implementation): Self = StObject.set(x, "com.sun.star.i18n.Implementation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotImplementation(value: Implementation): Self = StObject.set(x, "com.sun.star.i18n.Implementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLanguageCountryInfo(value: LanguageCountryInfo): Self = StObject.set(x, "com.sun.star.i18n.LanguageCountryInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLanguageCountryInfo(value: LanguageCountryInfo): Self = StObject.set(x, "com.sun.star.i18n.LanguageCountryInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLineBreakHyphenationOptions(value: LineBreakHyphenationOptions): Self = StObject.set(x, "com.sun.star.i18n.LineBreakHyphenationOptions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLineBreakHyphenationOptions(value: LineBreakHyphenationOptions): Self = StObject.set(x, "com.sun.star.i18n.LineBreakHyphenationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLineBreakResults(value: LineBreakResults): Self = StObject.set(x, "com.sun.star.i18n.LineBreakResults", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLineBreakResults(value: LineBreakResults): Self = StObject.set(x, "com.sun.star.i18n.LineBreakResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLineBreakUserOptions(value: LineBreakUserOptions): Self = StObject.set(x, "com.sun.star.i18n.LineBreakUserOptions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLineBreakUserOptions(value: LineBreakUserOptions): Self = StObject.set(x, "com.sun.star.i18n.LineBreakUserOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotLocaleDataItem(value: LocaleDataItem): Self = StObject.set(x, "com.sun.star.i18n.LocaleDataItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotLocaleDataItem(value: LocaleDataItem): Self = StObject.set(x, "com.sun.star.i18n.LocaleDataItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotNativeNumberXmlAttributes(value: NativeNumberXmlAttributes): Self = StObject.set(x, "com.sun.star.i18n.NativeNumberXmlAttributes", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotNativeNumberXmlAttributes(value: NativeNumberXmlAttributes): Self = StObject.set(x, "com.sun.star.i18n.NativeNumberXmlAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotNumberFormatCode(value: NumberFormatCode): Self = StObject.set(x, "com.sun.star.i18n.NumberFormatCode", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotNumberFormatCode(value: NumberFormatCode): Self = StObject.set(x, "com.sun.star.i18n.NumberFormatCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotParseResult(value: ParseResult): Self = StObject.set(x, "com.sun.star.i18n.ParseResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotParseResult(value: ParseResult): Self = StObject.set(x, "com.sun.star.i18n.ParseResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDoti18nDotTextConversionResult(value: TextConversionResult): Self = StObject.set(x, "com.sun.star.i18n.TextConversionResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDoti18nDotTextConversionResult(value: TextConversionResult): Self = StObject.set(x, "com.sun.star.i18n.TextConversionResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotinspectionDotLineDescriptor(value: LineDescriptor): Self = StObject.set(x, "com.sun.star.inspection.LineDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotinspectionDotLineDescriptor(value: LineDescriptor): Self = StObject.set(x, "com.sun.star.inspection.LineDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotinspectionDotPropertyCategoryDescriptor(value: PropertyCategoryDescriptor): Self = StObject.set(x, "com.sun.star.inspection.PropertyCategoryDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotinspectionDotPropertyCategoryDescriptor(value: PropertyCategoryDescriptor): Self = StObject.set(x, "com.sun.star.inspection.PropertyCategoryDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotDataTransferEvent(value: DataTransferEvent): Self = StObject.set(x, "com.sun.star.io.DataTransferEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotDataTransferEvent(value: DataTransferEvent): Self = StObject.set(x, "com.sun.star.io.DataTransferEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotioDotFilePermission(value: FilePermission): Self = StObject.set(x, "com.sun.star.io.FilePermission", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotioDotFilePermission(value: FilePermission): Self = StObject.set(x, "com.sun.star.io.FilePermission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlangDotEventObject(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Self = StObject.set(x, "com.sun.star.lang.EventObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlangDotEventObject(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Self = StObject.set(x, "com.sun.star.lang.EventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlangDotLocale(value: Locale): Self = StObject.set(x, "com.sun.star.lang.Locale", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlangDotLocale(value: Locale): Self = StObject.set(x, "com.sun.star.lang.Locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotDictionaryEvent(value: DictionaryEvent): Self = StObject.set(x, "com.sun.star.linguistic2.DictionaryEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotDictionaryEvent(value: DictionaryEvent): Self = StObject.set(x, "com.sun.star.linguistic2.DictionaryEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotDictionaryListEvent(value: DictionaryListEvent): Self = StObject.set(x, "com.sun.star.linguistic2.DictionaryListEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotDictionaryListEvent(value: DictionaryListEvent): Self = StObject.set(x, "com.sun.star.linguistic2.DictionaryListEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotLinguServiceEvent(value: LinguServiceEvent): Self = StObject.set(x, "com.sun.star.linguistic2.LinguServiceEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotLinguServiceEvent(value: LinguServiceEvent): Self = StObject.set(x, "com.sun.star.linguistic2.LinguServiceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotProofreadingResult(value: ProofreadingResult): Self = StObject.set(x, "com.sun.star.linguistic2.ProofreadingResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotProofreadingResult(value: ProofreadingResult): Self = StObject.set(x, "com.sun.star.linguistic2.ProofreadingResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotlinguistic2DotSingleProofreadingError(value: SingleProofreadingError): Self = StObject.set(x, "com.sun.star.linguistic2.SingleProofreadingError", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotlinguistic2DotSingleProofreadingError(value: SingleProofreadingError): Self = StObject.set(x, "com.sun.star.linguistic2.SingleProofreadingError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotloggingDotLogRecord(value: LogRecord): Self = StObject.set(x, "com.sun.star.logging.LogRecord", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotloggingDotLogRecord(value: LogRecord): Self = StObject.set(x, "com.sun.star.logging.LogRecord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmailDotMailAttachment(value: MailAttachment): Self = StObject.set(x, "com.sun.star.mail.MailAttachment", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmailDotMailAttachment(value: MailAttachment): Self = StObject.set(x, "com.sun.star.mail.MailAttachment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmozillaDotMenuMultipleChange(value: MenuMultipleChange): Self = StObject.set(x, "com.sun.star.mozilla.MenuMultipleChange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmozillaDotMenuMultipleChange(value: MenuMultipleChange): Self = StObject.set(x, "com.sun.star.mozilla.MenuMultipleChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotmozillaDotMenuSingleChange(value: MenuSingleChange): Self = StObject.set(x, "com.sun.star.mozilla.MenuSingleChange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotmozillaDotMenuSingleChange(value: MenuSingleChange): Self = StObject.set(x, "com.sun.star.mozilla.MenuSingleChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpackagesDotzipDotZipEntry(value: ZipEntry): Self = StObject.set(x, "com.sun.star.packages.zip.ZipEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpackagesDotzipDotZipEntry(value: ZipEntry): Self = StObject.set(x, "com.sun.star.packages.zip.ZipEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotpresentationDotParagraphTarget(value: ParagraphTarget): Self = StObject.set(x, "com.sun.star.presentation.ParagraphTarget", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotpresentationDotParagraphTarget(value: ParagraphTarget): Self = StObject.set(x, "com.sun.star.presentation.ParagraphTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrdfDotStatement(value: typings.activexLibreoffice.com_.sun.star.rdf.Statement): Self = StObject.set(x, "com.sun.star.rdf.Statement", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrdfDotStatement(value: typings.activexLibreoffice.com_.sun.star.rdf.Statement): Self = StObject.set(x, "com.sun.star.rdf.Statement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotreflectionDotParamInfo(value: ParamInfo): Self = StObject.set(x, "com.sun.star.reflection.ParamInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotreflectionDotParamInfo(value: ParamInfo): Self = StObject.set(x, "com.sun.star.reflection.ParamInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotARGBColor(value: ARGBColor): Self = StObject.set(x, "com.sun.star.rendering.ARGBColor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotARGBColor(value: ARGBColor): Self = StObject.set(x, "com.sun.star.rendering.ARGBColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotAnimationAttributes(value: AnimationAttributes): Self = StObject.set(x, "com.sun.star.rendering.AnimationAttributes", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotAnimationAttributes(value: AnimationAttributes): Self = StObject.set(x, "com.sun.star.rendering.AnimationAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotCaret(value: Caret): Self = StObject.set(x, "com.sun.star.rendering.Caret", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotCaret(value: Caret): Self = StObject.set(x, "com.sun.star.rendering.Caret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotColorProfile(value: ColorProfile): Self = StObject.set(x, "com.sun.star.rendering.ColorProfile", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotColorProfile(value: ColorProfile): Self = StObject.set(x, "com.sun.star.rendering.ColorProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotFloatingPointBitmapLayout(value: FloatingPointBitmapLayout): Self = StObject.set(x, "com.sun.star.rendering.FloatingPointBitmapLayout", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotFloatingPointBitmapLayout(value: FloatingPointBitmapLayout): Self = StObject.set(x, "com.sun.star.rendering.FloatingPointBitmapLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotFontInfo(value: FontInfo): Self = StObject.set(x, "com.sun.star.rendering.FontInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotFontInfo(value: FontInfo): Self = StObject.set(x, "com.sun.star.rendering.FontInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotFontMetrics(value: FontMetrics): Self = StObject.set(x, "com.sun.star.rendering.FontMetrics", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotFontMetrics(value: FontMetrics): Self = StObject.set(x, "com.sun.star.rendering.FontMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotFontRequest(value: FontRequest): Self = StObject.set(x, "com.sun.star.rendering.FontRequest", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotFontRequest(value: FontRequest): Self = StObject.set(x, "com.sun.star.rendering.FontRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotIntegerBitmapLayout(value: IntegerBitmapLayout): Self = StObject.set(x, "com.sun.star.rendering.IntegerBitmapLayout", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotIntegerBitmapLayout(value: IntegerBitmapLayout): Self = StObject.set(x, "com.sun.star.rendering.IntegerBitmapLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotPanose(value: Panose): Self = StObject.set(x, "com.sun.star.rendering.Panose", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotPanose(value: Panose): Self = StObject.set(x, "com.sun.star.rendering.Panose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotRGBColor(value: RGBColor): Self = StObject.set(x, "com.sun.star.rendering.RGBColor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotRGBColor(value: RGBColor): Self = StObject.set(x, "com.sun.star.rendering.RGBColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotRenderState(value: RenderState): Self = StObject.set(x, "com.sun.star.rendering.RenderState", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotRenderState(value: RenderState): Self = StObject.set(x, "com.sun.star.rendering.RenderState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotStringContext(value: StringContext): Self = StObject.set(x, "com.sun.star.rendering.StringContext", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotStringContext(value: StringContext): Self = StObject.set(x, "com.sun.star.rendering.StringContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotStrokeAttributes(value: StrokeAttributes): Self = StObject.set(x, "com.sun.star.rendering.StrokeAttributes", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotStrokeAttributes(value: StrokeAttributes): Self = StObject.set(x, "com.sun.star.rendering.StrokeAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotTextHit(value: TextHit): Self = StObject.set(x, "com.sun.star.rendering.TextHit", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotTextHit(value: TextHit): Self = StObject.set(x, "com.sun.star.rendering.TextHit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotTexture(value: Texture): Self = StObject.set(x, "com.sun.star.rendering.Texture", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotTexture(value: Texture): Self = StObject.set(x, "com.sun.star.rendering.Texture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotrenderingDotViewState(value: ViewState): Self = StObject.set(x, "com.sun.star.rendering.ViewState", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotrenderingDotViewState(value: ViewState): Self = StObject.set(x, "com.sun.star.rendering.ViewState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscannerDotScannerContext(value: ScannerContext): Self = StObject.set(x, "com.sun.star.scanner.ScannerContext", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscannerDotScannerContext(value: ScannerContext): Self = StObject.set(x, "com.sun.star.scanner.ScannerContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotAllEventObject(value: AllEventObject): Self = StObject.set(x, "com.sun.star.script.AllEventObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotAllEventObject(value: AllEventObject): Self = StObject.set(x, "com.sun.star.script.AllEventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotArrayWrapper(value: ArrayWrapper): Self = StObject.set(x, "com.sun.star.script.ArrayWrapper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotArrayWrapper(value: ArrayWrapper): Self = StObject.set(x, "com.sun.star.script.ArrayWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotContextInformation(value: ContextInformation): Self = StObject.set(x, "com.sun.star.script.ContextInformation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotContextInformation(value: ContextInformation): Self = StObject.set(x, "com.sun.star.script.ContextInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotEventListener(value: EventListener): Self = StObject.set(x, "com.sun.star.script.EventListener", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotEventListener(value: EventListener): Self = StObject.set(x, "com.sun.star.script.EventListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotFinishEngineEvent(value: FinishEngineEvent): Self = StObject.set(x, "com.sun.star.script.FinishEngineEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotFinishEngineEvent(value: FinishEngineEvent): Self = StObject.set(x, "com.sun.star.script.FinishEngineEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotInterruptEngineEvent(value: InterruptEngineEvent): Self = StObject.set(x, "com.sun.star.script.InterruptEngineEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotInterruptEngineEvent(value: InterruptEngineEvent): Self = StObject.set(x, "com.sun.star.script.InterruptEngineEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotInvocationInfo(value: InvocationInfo): Self = StObject.set(x, "com.sun.star.script.InvocationInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotInvocationInfo(value: InvocationInfo): Self = StObject.set(x, "com.sun.star.script.InvocationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotModuleInfo(value: ModuleInfo): Self = StObject.set(x, "com.sun.star.script.ModuleInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotModuleInfo(value: ModuleInfo): Self = StObject.set(x, "com.sun.star.script.ModuleInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotNativeObjectWrapper(value: NativeObjectWrapper): Self = StObject.set(x, "com.sun.star.script.NativeObjectWrapper", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotNativeObjectWrapper(value: NativeObjectWrapper): Self = StObject.set(x, "com.sun.star.script.NativeObjectWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotScriptEvent(value: ScriptEvent): Self = StObject.set(x, "com.sun.star.script.ScriptEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotScriptEvent(value: ScriptEvent): Self = StObject.set(x, "com.sun.star.script.ScriptEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotScriptEventDescriptor(value: ScriptEventDescriptor): Self = StObject.set(x, "com.sun.star.script.ScriptEventDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotScriptEventDescriptor(value: ScriptEventDescriptor): Self = StObject.set(x, "com.sun.star.script.ScriptEventDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotscriptDotvbaDotVBAScriptEvent(value: VBAScriptEvent): Self = StObject.set(x, "com.sun.star.script.vba.VBAScriptEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotscriptDotvbaDotVBAScriptEvent(value: VBAScriptEvent): Self = StObject.set(x, "com.sun.star.script.vba.VBAScriptEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotDatabaseRegistrationEvent(value: DatabaseRegistrationEvent): Self = StObject.set(x, "com.sun.star.sdb.DatabaseRegistrationEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotDatabaseRegistrationEvent(value: DatabaseRegistrationEvent): Self = StObject.set(x, "com.sun.star.sdb.DatabaseRegistrationEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotRowChangeEvent(value: RowChangeEvent): Self = StObject.set(x, "com.sun.star.sdb.RowChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotRowChangeEvent(value: RowChangeEvent): Self = StObject.set(x, "com.sun.star.sdb.RowChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotRowsChangeEvent(value: RowsChangeEvent): Self = StObject.set(x, "com.sun.star.sdb.RowsChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotRowsChangeEvent(value: RowsChangeEvent): Self = StObject.set(x, "com.sun.star.sdb.RowsChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotSQLErrorEvent(value: SQLErrorEvent): Self = StObject.set(x, "com.sun.star.sdb.SQLErrorEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotSQLErrorEvent(value: SQLErrorEvent): Self = StObject.set(x, "com.sun.star.sdb.SQLErrorEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotapplicationDotCopyTableRowEvent(value: CopyTableRowEvent): Self = StObject.set(x, "com.sun.star.sdb.application.CopyTableRowEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotapplicationDotCopyTableRowEvent(value: CopyTableRowEvent): Self = StObject.set(x, "com.sun.star.sdb.application.CopyTableRowEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbDotapplicationDotNamedDatabaseObject(value: NamedDatabaseObject): Self = StObject.set(x, "com.sun.star.sdb.application.NamedDatabaseObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbDotapplicationDotNamedDatabaseObject(value: NamedDatabaseObject): Self = StObject.set(x, "com.sun.star.sdb.application.NamedDatabaseObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotChangeEvent(value: ChangeEvent): Self = StObject.set(x, "com.sun.star.sdbc.ChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotChangeEvent(value: ChangeEvent): Self = StObject.set(x, "com.sun.star.sdbc.ChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsdbcDotDriverPropertyInfo(value: DriverPropertyInfo): Self = StObject.set(x, "com.sun.star.sdbc.DriverPropertyInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsdbcDotDriverPropertyInfo(value: DriverPropertyInfo): Self = StObject.set(x, "com.sun.star.sdbc.DriverPropertyInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotAllPermission(value: AllPermission): Self = StObject.set(x, "com.sun.star.security.AllPermission", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotAllPermission(value: AllPermission): Self = StObject.set(x, "com.sun.star.security.AllPermission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotCertAltNameEntry(value: CertAltNameEntry): Self = StObject.set(x, "com.sun.star.security.CertAltNameEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotCertAltNameEntry(value: CertAltNameEntry): Self = StObject.set(x, "com.sun.star.security.CertAltNameEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotDocumentSignatureInformation(value: DocumentSignatureInformation): Self = StObject.set(x, "com.sun.star.security.DocumentSignatureInformation", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotDocumentSignatureInformation(value: DocumentSignatureInformation): Self = StObject.set(x, "com.sun.star.security.DocumentSignatureInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsecurityDotRuntimePermission(value: RuntimePermission): Self = StObject.set(x, "com.sun.star.security.RuntimePermission", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsecurityDotRuntimePermission(value: RuntimePermission): Self = StObject.set(x, "com.sun.star.security.RuntimePermission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotActivationEvent(value: ActivationEvent): Self = StObject.set(x, "com.sun.star.sheet.ActivationEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotActivationEvent(value: ActivationEvent): Self = StObject.set(x, "com.sun.star.sheet.ActivationEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotComplexReference(value: ComplexReference): Self = StObject.set(x, "com.sun.star.sheet.ComplexReference", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotComplexReference(value: ComplexReference): Self = StObject.set(x, "com.sun.star.sheet.ComplexReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDDEItemInfo(value: DDEItemInfo): Self = StObject.set(x, "com.sun.star.sheet.DDEItemInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDDEItemInfo(value: DDEItemInfo): Self = StObject.set(x, "com.sun.star.sheet.DDEItemInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDDELinkInfo(value: DDELinkInfo): Self = StObject.set(x, "com.sun.star.sheet.DDELinkInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDDELinkInfo(value: DDELinkInfo): Self = StObject.set(x, "com.sun.star.sheet.DDELinkInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldAutoShowInfo(value: DataPilotFieldAutoShowInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldAutoShowInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldAutoShowInfo(value: DataPilotFieldAutoShowInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldAutoShowInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldFilter(value: DataPilotFieldFilter): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldFilter", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldFilter(value: DataPilotFieldFilter): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldGroupInfo(value: DataPilotFieldGroupInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldGroupInfo(value: DataPilotFieldGroupInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldGroupInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldLayoutInfo(value: DataPilotFieldLayoutInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldLayoutInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldLayoutInfo(value: DataPilotFieldLayoutInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldLayoutInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldReference(value: DataPilotFieldReference): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldReference", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldReference(value: DataPilotFieldReference): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotFieldSortInfo(value: DataPilotFieldSortInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldSortInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotFieldSortInfo(value: DataPilotFieldSortInfo): Self = StObject.set(x, "com.sun.star.sheet.DataPilotFieldSortInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotTableHeaderData(value: DataPilotTableHeaderData): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTableHeaderData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotTableHeaderData(value: DataPilotTableHeaderData): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTableHeaderData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotTablePositionData(value: DataPilotTablePositionData): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTablePositionData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotTablePositionData(value: DataPilotTablePositionData): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTablePositionData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataPilotTableResultData(value: DataPilotTableResultData): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTableResultData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataPilotTableResultData(value: DataPilotTableResultData): Self = StObject.set(x, "com.sun.star.sheet.DataPilotTableResultData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotDataResult(value: DataResult): Self = StObject.set(x, "com.sun.star.sheet.DataResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotDataResult(value: DataResult): Self = StObject.set(x, "com.sun.star.sheet.DataResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotExternalLinkInfo(value: ExternalLinkInfo): Self = StObject.set(x, "com.sun.star.sheet.ExternalLinkInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotExternalLinkInfo(value: ExternalLinkInfo): Self = StObject.set(x, "com.sun.star.sheet.ExternalLinkInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotExternalReference(value: ExternalReference): Self = StObject.set(x, "com.sun.star.sheet.ExternalReference", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotExternalReference(value: ExternalReference): Self = StObject.set(x, "com.sun.star.sheet.ExternalReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFilterFieldValue(value: FilterFieldValue): Self = StObject.set(x, "com.sun.star.sheet.FilterFieldValue", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFilterFieldValue(value: FilterFieldValue): Self = StObject.set(x, "com.sun.star.sheet.FilterFieldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFormulaOpCodeMapEntry(value: FormulaOpCodeMapEntry): Self = StObject.set(x, "com.sun.star.sheet.FormulaOpCodeMapEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFormulaOpCodeMapEntry(value: FormulaOpCodeMapEntry): Self = StObject.set(x, "com.sun.star.sheet.FormulaOpCodeMapEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFormulaToken(value: FormulaToken): Self = StObject.set(x, "com.sun.star.sheet.FormulaToken", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFormulaToken(value: FormulaToken): Self = StObject.set(x, "com.sun.star.sheet.FormulaToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotFunctionArgument(value: FunctionArgument): Self = StObject.set(x, "com.sun.star.sheet.FunctionArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotFunctionArgument(value: FunctionArgument): Self = StObject.set(x, "com.sun.star.sheet.FunctionArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotGoalResult(value: GoalResult): Self = StObject.set(x, "com.sun.star.sheet.GoalResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotGoalResult(value: GoalResult): Self = StObject.set(x, "com.sun.star.sheet.GoalResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotLocalizedName(value: LocalizedName): Self = StObject.set(x, "com.sun.star.sheet.LocalizedName", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotLocalizedName(value: LocalizedName): Self = StObject.set(x, "com.sun.star.sheet.LocalizedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotMemberResult(value: MemberResult): Self = StObject.set(x, "com.sun.star.sheet.MemberResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotMemberResult(value: MemberResult): Self = StObject.set(x, "com.sun.star.sheet.MemberResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotNameToken(value: NameToken): Self = StObject.set(x, "com.sun.star.sheet.NameToken", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotNameToken(value: NameToken): Self = StObject.set(x, "com.sun.star.sheet.NameToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotRangeSelectionEvent(value: RangeSelectionEvent): Self = StObject.set(x, "com.sun.star.sheet.RangeSelectionEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotRangeSelectionEvent(value: RangeSelectionEvent): Self = StObject.set(x, "com.sun.star.sheet.RangeSelectionEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotResultEvent(value: ResultEvent): Self = StObject.set(x, "com.sun.star.sheet.ResultEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotResultEvent(value: ResultEvent): Self = StObject.set(x, "com.sun.star.sheet.ResultEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSingleReference(value: SingleReference): Self = StObject.set(x, "com.sun.star.sheet.SingleReference", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSingleReference(value: SingleReference): Self = StObject.set(x, "com.sun.star.sheet.SingleReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSolverConstraint(value: SolverConstraint): Self = StObject.set(x, "com.sun.star.sheet.SolverConstraint", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSolverConstraint(value: SolverConstraint): Self = StObject.set(x, "com.sun.star.sheet.SolverConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotSubTotalColumn(value: SubTotalColumn): Self = StObject.set(x, "com.sun.star.sheet.SubTotalColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotSubTotalColumn(value: SubTotalColumn): Self = StObject.set(x, "com.sun.star.sheet.SubTotalColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableFilterField(value: TableFilterField): Self = StObject.set(x, "com.sun.star.sheet.TableFilterField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableFilterField(value: TableFilterField): Self = StObject.set(x, "com.sun.star.sheet.TableFilterField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableFilterField2(value: TableFilterField2): Self = StObject.set(x, "com.sun.star.sheet.TableFilterField2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableFilterField2(value: TableFilterField2): Self = StObject.set(x, "com.sun.star.sheet.TableFilterField2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTableFilterField3(value: TableFilterField3): Self = StObject.set(x, "com.sun.star.sheet.TableFilterField3", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTableFilterField3(value: TableFilterField3): Self = StObject.set(x, "com.sun.star.sheet.TableFilterField3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotTablePageBreakData(value: TablePageBreakData): Self = StObject.set(x, "com.sun.star.sheet.TablePageBreakData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotTablePageBreakData(value: TablePageBreakData): Self = StObject.set(x, "com.sun.star.sheet.TablePageBreakData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotopenclDotOpenCLDevice(value: OpenCLDevice): Self = StObject.set(x, "com.sun.star.sheet.opencl.OpenCLDevice", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotopenclDotOpenCLDevice(value: OpenCLDevice): Self = StObject.set(x, "com.sun.star.sheet.opencl.OpenCLDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotsheetDotopenclDotOpenCLPlatform(value: OpenCLPlatform): Self = StObject.set(x, "com.sun.star.sheet.opencl.OpenCLPlatform", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotsheetDotopenclDotOpenCLPlatform(value: OpenCLPlatform): Self = StObject.set(x, "com.sun.star.sheet.opencl.OpenCLPlatform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotDropCapFormat(value: DropCapFormat): Self = StObject.set(x, "com.sun.star.style.DropCapFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotDropCapFormat(value: DropCapFormat): Self = StObject.set(x, "com.sun.star.style.DropCapFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotLineSpacing(value: LineSpacing): Self = StObject.set(x, "com.sun.star.style.LineSpacing", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotLineSpacing(value: LineSpacing): Self = StObject.set(x, "com.sun.star.style.LineSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotstyleDotTabStop(value: TabStop): Self = StObject.set(x, "com.sun.star.style.TabStop", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotstyleDotTabStop(value: TabStop): Self = StObject.set(x, "com.sun.star.style.TabStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotBorderLine(value: BorderLine): Self = StObject.set(x, "com.sun.star.table.BorderLine", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotBorderLine(value: BorderLine): Self = StObject.set(x, "com.sun.star.table.BorderLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotBorderLine2(value: BorderLine2): Self = StObject.set(x, "com.sun.star.table.BorderLine2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotBorderLine2(value: BorderLine2): Self = StObject.set(x, "com.sun.star.table.BorderLine2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCellAddress(value: CellAddress): Self = StObject.set(x, "com.sun.star.table.CellAddress", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCellAddress(value: CellAddress): Self = StObject.set(x, "com.sun.star.table.CellAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotCellRangeAddress(value: CellRangeAddress): Self = StObject.set(x, "com.sun.star.table.CellRangeAddress", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotCellRangeAddress(value: CellRangeAddress): Self = StObject.set(x, "com.sun.star.table.CellRangeAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotShadowFormat(value: ShadowFormat): Self = StObject.set(x, "com.sun.star.table.ShadowFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotShadowFormat(value: ShadowFormat): Self = StObject.set(x, "com.sun.star.table.ShadowFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableBorder(value: TableBorder): Self = StObject.set(x, "com.sun.star.table.TableBorder", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableBorder(value: TableBorder): Self = StObject.set(x, "com.sun.star.table.TableBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableBorder2(value: TableBorder2): Self = StObject.set(x, "com.sun.star.table.TableBorder2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableBorder2(value: TableBorder2): Self = StObject.set(x, "com.sun.star.table.TableBorder2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableBorderDistances(value: TableBorderDistances): Self = StObject.set(x, "com.sun.star.table.TableBorderDistances", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableBorderDistances(value: TableBorderDistances): Self = StObject.set(x, "com.sun.star.table.TableBorderDistances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottableDotTableSortField(value: TableSortField): Self = StObject.set(x, "com.sun.star.table.TableSortField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottableDotTableSortField(value: TableSortField): Self = StObject.set(x, "com.sun.star.table.TableSortField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotUrlRecord(value: UrlRecord): Self = StObject.set(x, "com.sun.star.task.UrlRecord", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotUrlRecord(value: UrlRecord): Self = StObject.set(x, "com.sun.star.task.UrlRecord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottaskDotUserRecord(value: UserRecord): Self = StObject.set(x, "com.sun.star.task.UserRecord", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottaskDotUserRecord(value: UserRecord): Self = StObject.set(x, "com.sun.star.task.UserRecord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotGraphicCrop(value: GraphicCrop): Self = StObject.set(x, "com.sun.star.text.GraphicCrop", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotGraphicCrop(value: GraphicCrop): Self = StObject.set(x, "com.sun.star.text.GraphicCrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotHoriOrientationFormat(value: HoriOrientationFormat): Self = StObject.set(x, "com.sun.star.text.HoriOrientationFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotHoriOrientationFormat(value: HoriOrientationFormat): Self = StObject.set(x, "com.sun.star.text.HoriOrientationFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotMailMergeEvent(value: MailMergeEvent): Self = StObject.set(x, "com.sun.star.text.MailMergeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotMailMergeEvent(value: MailMergeEvent): Self = StObject.set(x, "com.sun.star.text.MailMergeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotSectionFileLink(value: SectionFileLink): Self = StObject.set(x, "com.sun.star.text.SectionFileLink", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotSectionFileLink(value: SectionFileLink): Self = StObject.set(x, "com.sun.star.text.SectionFileLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTableColumnSeparator(value: TableColumnSeparator): Self = StObject.set(x, "com.sun.star.text.TableColumnSeparator", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTableColumnSeparator(value: TableColumnSeparator): Self = StObject.set(x, "com.sun.star.text.TableColumnSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextColumn(value: TextColumn): Self = StObject.set(x, "com.sun.star.text.TextColumn", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextColumn(value: TextColumn): Self = StObject.set(x, "com.sun.star.text.TextColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextMarkupDescriptor(value: TextMarkupDescriptor): Self = StObject.set(x, "com.sun.star.text.TextMarkupDescriptor", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextMarkupDescriptor(value: TextMarkupDescriptor): Self = StObject.set(x, "com.sun.star.text.TextMarkupDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextPosition(value: TextPosition): Self = StObject.set(x, "com.sun.star.text.TextPosition", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextPosition(value: TextPosition): Self = StObject.set(x, "com.sun.star.text.TextPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotTextRangeSelection(value: TextRangeSelection): Self = StObject.set(x, "com.sun.star.text.TextRangeSelection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotTextRangeSelection(value: TextRangeSelection): Self = StObject.set(x, "com.sun.star.text.TextRangeSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDottextDotVertOrientationFormat(value: VertOrientationFormat): Self = StObject.set(x, "com.sun.star.text.VertOrientationFormat", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDottextDotVertOrientationFormat(value: VertOrientationFormat): Self = StObject.set(x, "com.sun.star.text.VertOrientationFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCheckinArgument(value: CheckinArgument): Self = StObject.set(x, "com.sun.star.ucb.CheckinArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCheckinArgument(value: CheckinArgument): Self = StObject.set(x, "com.sun.star.ucb.CheckinArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCommand(value: typings.activexLibreoffice.com_.sun.star.ucb.Command): Self = StObject.set(x, "com.sun.star.ucb.Command", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCommand(value: typings.activexLibreoffice.com_.sun.star.ucb.Command): Self = StObject.set(x, "com.sun.star.ucb.Command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCommandInfo(value: CommandInfo): Self = StObject.set(x, "com.sun.star.ucb.CommandInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCommandInfo(value: CommandInfo): Self = StObject.set(x, "com.sun.star.ucb.CommandInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCommandInfoChangeEvent(value: CommandInfoChangeEvent): Self = StObject.set(x, "com.sun.star.ucb.CommandInfoChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCommandInfoChangeEvent(value: CommandInfoChangeEvent): Self = StObject.set(x, "com.sun.star.ucb.CommandInfoChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentEvent(value: ContentEvent): Self = StObject.set(x, "com.sun.star.ucb.ContentEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentEvent(value: ContentEvent): Self = StObject.set(x, "com.sun.star.ucb.ContentEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentInfo(value: ContentInfo): Self = StObject.set(x, "com.sun.star.ucb.ContentInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentInfo(value: ContentInfo): Self = StObject.set(x, "com.sun.star.ucb.ContentInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotContentProviderInfo(value: ContentProviderInfo): Self = StObject.set(x, "com.sun.star.ucb.ContentProviderInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotContentProviderInfo(value: ContentProviderInfo): Self = StObject.set(x, "com.sun.star.ucb.ContentProviderInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotCrossReference(value: CrossReference): Self = StObject.set(x, "com.sun.star.ucb.CrossReference", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotCrossReference(value: CrossReference): Self = StObject.set(x, "com.sun.star.ucb.CrossReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotDocumentHeaderField(value: DocumentHeaderField): Self = StObject.set(x, "com.sun.star.ucb.DocumentHeaderField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotDocumentHeaderField(value: DocumentHeaderField): Self = StObject.set(x, "com.sun.star.ucb.DocumentHeaderField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotExportStreamInfo(value: ExportStreamInfo): Self = StObject.set(x, "com.sun.star.ucb.ExportStreamInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotExportStreamInfo(value: ExportStreamInfo): Self = StObject.set(x, "com.sun.star.ucb.ExportStreamInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotFetchResult(value: FetchResult): Self = StObject.set(x, "com.sun.star.ucb.FetchResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotFetchResult(value: FetchResult): Self = StObject.set(x, "com.sun.star.ucb.FetchResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotFolderList(value: FolderList): Self = StObject.set(x, "com.sun.star.ucb.FolderList", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotFolderList(value: FolderList): Self = StObject.set(x, "com.sun.star.ucb.FolderList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotFolderListEntry(value: FolderListEntry): Self = StObject.set(x, "com.sun.star.ucb.FolderListEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotFolderListEntry(value: FolderListEntry): Self = StObject.set(x, "com.sun.star.ucb.FolderListEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotGlobalTransferCommandArgument(value: GlobalTransferCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.GlobalTransferCommandArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotGlobalTransferCommandArgument(value: GlobalTransferCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.GlobalTransferCommandArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotGlobalTransferCommandArgument2(value: GlobalTransferCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.GlobalTransferCommandArgument2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotGlobalTransferCommandArgument2(value: GlobalTransferCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.GlobalTransferCommandArgument2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotInsertCommandArgument(value: InsertCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.InsertCommandArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotInsertCommandArgument(value: InsertCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.InsertCommandArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotInsertCommandArgument2(value: InsertCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.InsertCommandArgument2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotInsertCommandArgument2(value: InsertCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.InsertCommandArgument2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotLink(value: Link): Self = StObject.set(x, "com.sun.star.ucb.Link", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotLink(value: Link): Self = StObject.set(x, "com.sun.star.ucb.Link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotListAction(value: ListAction): Self = StObject.set(x, "com.sun.star.ucb.ListAction", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotListAction(value: ListAction): Self = StObject.set(x, "com.sun.star.ucb.ListAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotListEvent(value: ListEvent): Self = StObject.set(x, "com.sun.star.ucb.ListEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotListEvent(value: ListEvent): Self = StObject.set(x, "com.sun.star.ucb.ListEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotLock(value: Lock): Self = StObject.set(x, "com.sun.star.ucb.Lock", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotLock(value: Lock): Self = StObject.set(x, "com.sun.star.ucb.Lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotLockEntry(value: LockEntry): Self = StObject.set(x, "com.sun.star.ucb.LockEntry", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotLockEntry(value: LockEntry): Self = StObject.set(x, "com.sun.star.ucb.LockEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotNumberedSortingInfo(value: NumberedSortingInfo): Self = StObject.set(x, "com.sun.star.ucb.NumberedSortingInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotNumberedSortingInfo(value: NumberedSortingInfo): Self = StObject.set(x, "com.sun.star.ucb.NumberedSortingInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotOpenCommandArgument(value: OpenCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.OpenCommandArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotOpenCommandArgument(value: OpenCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.OpenCommandArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotOpenCommandArgument2(value: OpenCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.OpenCommandArgument2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotOpenCommandArgument2(value: OpenCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.OpenCommandArgument2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotOpenCommandArgument3(value: OpenCommandArgument3): Self = StObject.set(x, "com.sun.star.ucb.OpenCommandArgument3", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotOpenCommandArgument3(value: OpenCommandArgument3): Self = StObject.set(x, "com.sun.star.ucb.OpenCommandArgument3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPostCommandArgument(value: PostCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.PostCommandArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPostCommandArgument(value: PostCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.PostCommandArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPostCommandArgument2(value: PostCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.PostCommandArgument2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPostCommandArgument2(value: PostCommandArgument2): Self = StObject.set(x, "com.sun.star.ucb.PostCommandArgument2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPropertyCommandArgument(value: PropertyCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.PropertyCommandArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPropertyCommandArgument(value: PropertyCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.PropertyCommandArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotPropertyValueInfo(value: PropertyValueInfo): Self = StObject.set(x, "com.sun.star.ucb.PropertyValueInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotPropertyValueInfo(value: PropertyValueInfo): Self = StObject.set(x, "com.sun.star.ucb.PropertyValueInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRecipientInfo(value: RecipientInfo): Self = StObject.set(x, "com.sun.star.ucb.RecipientInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRecipientInfo(value: RecipientInfo): Self = StObject.set(x, "com.sun.star.ucb.RecipientInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRemoteContentProviderChangeEvent(value: RemoteContentProviderChangeEvent): Self = StObject.set(x, "com.sun.star.ucb.RemoteContentProviderChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRemoteContentProviderChangeEvent(value: RemoteContentProviderChangeEvent): Self = StObject.set(x, "com.sun.star.ucb.RemoteContentProviderChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRule(value: Rule): Self = StObject.set(x, "com.sun.star.ucb.Rule", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRule(value: Rule): Self = StObject.set(x, "com.sun.star.ucb.Rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRuleSet(value: RuleSet): Self = StObject.set(x, "com.sun.star.ucb.RuleSet", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRuleSet(value: RuleSet): Self = StObject.set(x, "com.sun.star.ucb.RuleSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotRuleTerm(value: RuleTerm): Self = StObject.set(x, "com.sun.star.ucb.RuleTerm", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotRuleTerm(value: RuleTerm): Self = StObject.set(x, "com.sun.star.ucb.RuleTerm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSearchCommandArgument(value: SearchCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.SearchCommandArgument", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSearchCommandArgument(value: SearchCommandArgument): Self = StObject.set(x, "com.sun.star.ucb.SearchCommandArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSearchCriterium(value: SearchCriterium): Self = StObject.set(x, "com.sun.star.ucb.SearchCriterium", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSearchCriterium(value: SearchCriterium): Self = StObject.set(x, "com.sun.star.ucb.SearchCriterium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSearchInfo(value: SearchInfo): Self = StObject.set(x, "com.sun.star.ucb.SearchInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSearchInfo(value: SearchInfo): Self = StObject.set(x, "com.sun.star.ucb.SearchInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSendInfo(value: SendInfo): Self = StObject.set(x, "com.sun.star.ucb.SendInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSendInfo(value: SendInfo): Self = StObject.set(x, "com.sun.star.ucb.SendInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSendMediaTypes(value: SendMediaTypes): Self = StObject.set(x, "com.sun.star.ucb.SendMediaTypes", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSendMediaTypes(value: SendMediaTypes): Self = StObject.set(x, "com.sun.star.ucb.SendMediaTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotSortingInfo(value: SortingInfo): Self = StObject.set(x, "com.sun.star.ucb.SortingInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotSortingInfo(value: SortingInfo): Self = StObject.set(x, "com.sun.star.ucb.SortingInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransferInfo(value: TransferInfo): Self = StObject.set(x, "com.sun.star.ucb.TransferInfo", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransferInfo(value: TransferInfo): Self = StObject.set(x, "com.sun.star.ucb.TransferInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransferInfo2(value: TransferInfo2): Self = StObject.set(x, "com.sun.star.ucb.TransferInfo2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransferInfo2(value: TransferInfo2): Self = StObject.set(x, "com.sun.star.ucb.TransferInfo2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotTransferResult(value: TransferResult): Self = StObject.set(x, "com.sun.star.ucb.TransferResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotTransferResult(value: TransferResult): Self = StObject.set(x, "com.sun.star.ucb.TransferResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotucbDotWelcomeDynamicResultSetStruct(value: WelcomeDynamicResultSetStruct): Self = StObject.set(x, "com.sun.star.ucb.WelcomeDynamicResultSetStruct", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotucbDotWelcomeDynamicResultSetStruct(value: WelcomeDynamicResultSetStruct): Self = StObject.set(x, "com.sun.star.ucb.WelcomeDynamicResultSetStruct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotConfigurationEvent(value: ConfigurationEvent): Self = StObject.set(x, "com.sun.star.ui.ConfigurationEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotConfigurationEvent(value: ConfigurationEvent): Self = StObject.set(x, "com.sun.star.ui.ConfigurationEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotContextChangeEventObject(value: ContextChangeEventObject): Self = StObject.set(x, "com.sun.star.ui.ContextChangeEventObject", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotContextChangeEventObject(value: ContextChangeEventObject): Self = StObject.set(x, "com.sun.star.ui.ContextChangeEventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotContextMenuExecuteEvent(value: ContextMenuExecuteEvent): Self = StObject.set(x, "com.sun.star.ui.ContextMenuExecuteEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotContextMenuExecuteEvent(value: ContextMenuExecuteEvent): Self = StObject.set(x, "com.sun.star.ui.ContextMenuExecuteEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotLayoutSize(value: LayoutSize): Self = StObject.set(x, "com.sun.star.ui.LayoutSize", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotLayoutSize(value: LayoutSize): Self = StObject.set(x, "com.sun.star.ui.LayoutSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotDialogClosedEvent(value: DialogClosedEvent): Self = StObject.set(x, "com.sun.star.ui.dialogs.DialogClosedEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotDialogClosedEvent(value: DialogClosedEvent): Self = StObject.set(x, "com.sun.star.ui.dialogs.DialogClosedEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotuiDotdialogsDotFilePickerEvent(value: FilePickerEvent): Self = StObject.set(x, "com.sun.star.ui.dialogs.FilePickerEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotuiDotdialogsDotFilePickerEvent(value: FilePickerEvent): Self = StObject.set(x, "com.sun.star.ui.dialogs.FilePickerEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotunoDotUik(value: Uik): Self = StObject.set(x, "com.sun.star.uno.Uik", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotunoDotUik(value: Uik): Self = StObject.set(x, "com.sun.star.uno.Uik", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotAliasProgrammaticPair(value: AliasProgrammaticPair): Self = StObject.set(x, "com.sun.star.util.AliasProgrammaticPair", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotAliasProgrammaticPair(value: AliasProgrammaticPair): Self = StObject.set(x, "com.sun.star.util.AliasProgrammaticPair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotAtomClassRequest(value: AtomClassRequest): Self = StObject.set(x, "com.sun.star.util.AtomClassRequest", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotAtomClassRequest(value: AtomClassRequest): Self = StObject.set(x, "com.sun.star.util.AtomClassRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotAtomDescription(value: AtomDescription): Self = StObject.set(x, "com.sun.star.util.AtomDescription", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotAtomDescription(value: AtomDescription): Self = StObject.set(x, "com.sun.star.util.AtomDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotCellProtection(value: CellProtection): Self = StObject.set(x, "com.sun.star.util.CellProtection", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotCellProtection(value: CellProtection): Self = StObject.set(x, "com.sun.star.util.CellProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotChangesEvent(value: ChangesEvent): Self = StObject.set(x, "com.sun.star.util.ChangesEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotChangesEvent(value: ChangesEvent): Self = StObject.set(x, "com.sun.star.util.ChangesEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotDataEditorEvent(value: DataEditorEvent): Self = StObject.set(x, "com.sun.star.util.DataEditorEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotDataEditorEvent(value: DataEditorEvent): Self = StObject.set(x, "com.sun.star.util.DataEditorEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "com.sun.star.util.Date", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "com.sun.star.util.Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "com.sun.star.util.DateTime", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "com.sun.star.util.DateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotDateTimeRange(value: DateTimeRange): Self = StObject.set(x, "com.sun.star.util.DateTimeRange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotDateTimeRange(value: DateTimeRange): Self = StObject.set(x, "com.sun.star.util.DateTimeRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotDateTimeWithTimezone(value: DateTimeWithTimezone): Self = StObject.set(x, "com.sun.star.util.DateTimeWithTimezone", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotDateTimeWithTimezone(value: DateTimeWithTimezone): Self = StObject.set(x, "com.sun.star.util.DateTimeWithTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotDateWithTimezone(value: DateWithTimezone): Self = StObject.set(x, "com.sun.star.util.DateWithTimezone", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotDateWithTimezone(value: DateWithTimezone): Self = StObject.set(x, "com.sun.star.util.DateWithTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotDuration(value: Duration): Self = StObject.set(x, "com.sun.star.util.Duration", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotDuration(value: Duration): Self = StObject.set(x, "com.sun.star.util.Duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotElementChange(value: ElementChange): Self = StObject.set(x, "com.sun.star.util.ElementChange", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotElementChange(value: ElementChange): Self = StObject.set(x, "com.sun.star.util.ElementChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotModeChangeEvent(value: ModeChangeEvent): Self = StObject.set(x, "com.sun.star.util.ModeChangeEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotModeChangeEvent(value: ModeChangeEvent): Self = StObject.set(x, "com.sun.star.util.ModeChangeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotRevisionTag(value: RevisionTag): Self = StObject.set(x, "com.sun.star.util.RevisionTag", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotRevisionTag(value: RevisionTag): Self = StObject.set(x, "com.sun.star.util.RevisionTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSearchOptions(value: SearchOptions): Self = StObject.set(x, "com.sun.star.util.SearchOptions", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSearchOptions(value: SearchOptions): Self = StObject.set(x, "com.sun.star.util.SearchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSearchOptions2(value: SearchOptions2): Self = StObject.set(x, "com.sun.star.util.SearchOptions2", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSearchOptions2(value: SearchOptions2): Self = StObject.set(x, "com.sun.star.util.SearchOptions2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSearchResult(value: SearchResult): Self = StObject.set(x, "com.sun.star.util.SearchResult", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSearchResult(value: SearchResult): Self = StObject.set(x, "com.sun.star.util.SearchResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotSortField(value: SortField): Self = StObject.set(x, "com.sun.star.util.SortField", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotSortField(value: SortField): Self = StObject.set(x, "com.sun.star.util.SortField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "com.sun.star.util.Time", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "com.sun.star.util.Time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotTimeWithTimezone(value: TimeWithTimezone): Self = StObject.set(x, "com.sun.star.util.TimeWithTimezone", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotTimeWithTimezone(value: TimeWithTimezone): Self = StObject.set(x, "com.sun.star.util.TimeWithTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotutilDotURL(value: typings.activexLibreoffice.com_.sun.star.util.URL): Self = StObject.set(x, "com.sun.star.util.URL", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotutilDotURL(value: typings.activexLibreoffice.com_.sun.star.util.URL): Self = StObject.set(x, "com.sun.star.util.URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotPrintJobEvent(value: PrintJobEvent): Self = StObject.set(x, "com.sun.star.view.PrintJobEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotPrintJobEvent(value: PrintJobEvent): Self = StObject.set(x, "com.sun.star.view.PrintJobEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotviewDotPrintableStateEvent(value: PrintableStateEvent): Self = StObject.set(x, "com.sun.star.view.PrintableStateEvent", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotviewDotPrintableStateEvent(value: PrintableStateEvent): Self = StObject.set(x, "com.sun.star.view.PrintableStateEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotAttribute(value: Attribute): Self = StObject.set(x, "com.sun.star.xml.Attribute", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotAttribute(value: Attribute): Self = StObject.set(x, "com.sun.star.xml.Attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotAttributeData(value: AttributeData): Self = StObject.set(x, "com.sun.star.xml.AttributeData", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotAttributeData(value: AttributeData): Self = StObject.set(x, "com.sun.star.xml.AttributeData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotFastAttribute(value: FastAttribute): Self = StObject.set(x, "com.sun.star.xml.FastAttribute", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotFastAttribute(value: FastAttribute): Self = StObject.set(x, "com.sun.star.xml.FastAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcryptoDotsaxDotElementStackItem(value: ElementStackItem): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.ElementStackItem", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcryptoDotsaxDotElementStackItem(value: ElementStackItem): Self = StObject.set(x, "com.sun.star.xml.crypto.sax.ElementStackItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotcsaxDotXMLAttribute(value: XMLAttribute): Self = StObject.set(x, "com.sun.star.xml.csax.XMLAttribute", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotcsaxDotXMLAttribute(value: XMLAttribute): Self = StObject.set(x, "com.sun.star.xml.csax.XMLAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotsaxDotInputSource(value: InputSource): Self = StObject.set(x, "com.sun.star.xml.sax.InputSource", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotsaxDotInputSource(value: InputSource): Self = StObject.set(x, "com.sun.star.xml.sax.InputSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComDotsunDotstarDotxmlDotxpathDotLibxml2ExtensionHandle(value: Libxml2ExtensionHandle): Self = StObject.set(x, "com.sun.star.xml.xpath.Libxml2ExtensionHandle", value.asInstanceOf[js.Any])
+      inline def setComDotsunDotstarDotxmlDotxpathDotLibxml2ExtensionHandle(value: Libxml2ExtensionHandle): Self = StObject.set(x, "com.sun.star.xml.xpath.Libxml2ExtensionHandle", value.asInstanceOf[js.Any])
     }
   }
   

@@ -23,19 +23,15 @@ trait Number extends StObject {
 }
 object Number {
   
-  @scala.inline
-  def apply(format: java.lang.String => java.lang.String, localeFormat: java.lang.String => java.lang.String): Number = {
+  inline def apply(format: java.lang.String => java.lang.String, localeFormat: java.lang.String => java.lang.String): Number = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), localeFormat = js.Any.fromFunction1(localeFormat))
     __obj.asInstanceOf[Number]
   }
   
-  @scala.inline
-  implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
+  extension [Self <: Number](x: Self) {
     
-    @scala.inline
-    def setFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocaleFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "localeFormat", js.Any.fromFunction1(value))
+    inline def setLocaleFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "localeFormat", js.Any.fromFunction1(value))
   }
 }

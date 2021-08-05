@@ -38,49 +38,35 @@ trait SSMValidationParameters extends StObject {
 }
 object SSMValidationParameters {
   
-  @scala.inline
-  def apply(): SSMValidationParameters = {
+  inline def apply(): SSMValidationParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSMValidationParameters]
   }
   
-  @scala.inline
-  implicit class SSMValidationParametersMutableBuilder[Self <: SSMValidationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SSMValidationParameters](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setExecutionTimeoutSeconds(value: ExecutionTimeoutSeconds): Self = StObject.set(x, "executionTimeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setExecutionTimeoutSeconds(value: ExecutionTimeoutSeconds): Self = StObject.set(x, "executionTimeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionTimeoutSecondsUndefined: Self = StObject.set(x, "executionTimeoutSeconds", js.undefined)
+    inline def setExecutionTimeoutSecondsUndefined: Self = StObject.set(x, "executionTimeoutSeconds", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
-    @scala.inline
-    def setOutputS3BucketName(value: BucketName): Self = StObject.set(x, "outputS3BucketName", value.asInstanceOf[js.Any])
+    inline def setOutputS3BucketName(value: BucketName): Self = StObject.set(x, "outputS3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3BucketNameUndefined: Self = StObject.set(x, "outputS3BucketName", js.undefined)
+    inline def setOutputS3BucketNameUndefined: Self = StObject.set(x, "outputS3BucketName", js.undefined)
     
-    @scala.inline
-    def setScriptType(value: ScriptType): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
+    inline def setScriptType(value: ScriptType): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptTypeUndefined: Self = StObject.set(x, "scriptType", js.undefined)
+    inline def setScriptTypeUndefined: Self = StObject.set(x, "scriptType", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

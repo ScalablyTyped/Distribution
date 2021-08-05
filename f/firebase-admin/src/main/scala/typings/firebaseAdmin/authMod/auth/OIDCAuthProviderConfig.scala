@@ -41,19 +41,15 @@ trait OIDCAuthProviderConfig
 }
 object OIDCAuthProviderConfig {
   
-  @scala.inline
-  def apply(clientId: String, enabled: Boolean, issuer: String, providerId: String): OIDCAuthProviderConfig = {
+  inline def apply(clientId: String, enabled: Boolean, issuer: String, providerId: String): OIDCAuthProviderConfig = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OIDCAuthProviderConfig]
   }
   
-  @scala.inline
-  implicit class OIDCAuthProviderConfigMutableBuilder[Self <: OIDCAuthProviderConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OIDCAuthProviderConfig](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
   }
 }

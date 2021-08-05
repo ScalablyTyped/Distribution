@@ -41,8 +41,7 @@ object descriptionFilePluginMod {
   }
   object DescriptionFilePlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: typings.enhancedResolve.resolverMod.^ => Unit,
       filenames: js.Array[String],
       source: String,
@@ -52,23 +51,17 @@ object descriptionFilePluginMod {
       __obj.asInstanceOf[DescriptionFilePlugin]
     }
     
-    @scala.inline
-    implicit class DescriptionFilePluginMutableBuilder[Self <: DescriptionFilePlugin] (val x: Self) extends AnyVal {
+    extension [Self <: DescriptionFilePlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
+      inline def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
+      inline def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

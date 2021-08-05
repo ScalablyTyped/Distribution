@@ -10,6 +10,5 @@ object useForceUpdateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useForceUpdate(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceUpdate")().asInstanceOf[js.Function0[Unit]]
+  inline def useForceUpdate(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceUpdate")().asInstanceOf[js.Function0[Unit]]
 }

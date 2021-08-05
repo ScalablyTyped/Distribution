@@ -10,16 +10,13 @@ trait GeoWithinOptions extends StObject {
 }
 object GeoWithinOptions {
   
-  @scala.inline
-  def apply(geometry: Polygon | MultiPolygon): GeoWithinOptions = {
+  inline def apply(geometry: Polygon | MultiPolygon): GeoWithinOptions = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoWithinOptions]
   }
   
-  @scala.inline
-  implicit class GeoWithinOptionsMutableBuilder[Self <: GeoWithinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoWithinOptions](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: Polygon | MultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Polygon | MultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }
 }

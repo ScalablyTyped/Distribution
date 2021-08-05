@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.NewItemAlertRuleAction")
 @js.native
-class NewItemAlertRuleAction protected ()
+/* private */ class NewItemAlertRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.NewItemAlertRuleAction {
   
@@ -24,7 +24,7 @@ class NewItemAlertRuleAction protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.NewItemAlertRuleAction_typekey")
   var OutlookDotNewItemAlertRuleAction_typekey: typings.activexOutlook.Outlook.NewItemAlertRuleAction = js.native
   

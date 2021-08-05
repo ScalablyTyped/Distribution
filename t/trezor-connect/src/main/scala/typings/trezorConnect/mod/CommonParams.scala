@@ -17,37 +17,27 @@ trait CommonParams extends StObject {
 }
 object CommonParams {
   
-  @scala.inline
-  def apply(): CommonParams = {
+  inline def apply(): CommonParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonParams]
   }
   
-  @scala.inline
-  implicit class CommonParamsMutableBuilder[Self <: CommonParams] (val x: Self) extends AnyVal {
+  extension [Self <: CommonParams](x: Self) {
     
-    @scala.inline
-    def setAllowSeedlessDevice(value: Boolean): Self = StObject.set(x, "allowSeedlessDevice", value.asInstanceOf[js.Any])
+    inline def setAllowSeedlessDevice(value: Boolean): Self = StObject.set(x, "allowSeedlessDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSeedlessDeviceUndefined: Self = StObject.set(x, "allowSeedlessDevice", js.undefined)
+    inline def setAllowSeedlessDeviceUndefined: Self = StObject.set(x, "allowSeedlessDevice", js.undefined)
     
-    @scala.inline
-    def setDevice(value: Instance): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Instance): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setKeepSession(value: Boolean): Self = StObject.set(x, "keepSession", value.asInstanceOf[js.Any])
+    inline def setKeepSession(value: Boolean): Self = StObject.set(x, "keepSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepSessionUndefined: Self = StObject.set(x, "keepSession", js.undefined)
+    inline def setKeepSessionUndefined: Self = StObject.set(x, "keepSession", js.undefined)
     
-    @scala.inline
-    def setUseEmptyPassphrase(value: Boolean): Self = StObject.set(x, "useEmptyPassphrase", value.asInstanceOf[js.Any])
+    inline def setUseEmptyPassphrase(value: Boolean): Self = StObject.set(x, "useEmptyPassphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseEmptyPassphraseUndefined: Self = StObject.set(x, "useEmptyPassphrase", js.undefined)
+    inline def setUseEmptyPassphraseUndefined: Self = StObject.set(x, "useEmptyPassphrase", js.undefined)
   }
 }

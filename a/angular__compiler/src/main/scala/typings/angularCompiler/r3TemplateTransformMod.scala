@@ -13,8 +13,7 @@ object r3TemplateTransformMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def htmlAstToRender3Ast(htmlNodes: js.Array[Node], bindingParser: BindingParser): Render3ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlAstToRender3Ast")(htmlNodes.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[Render3ParseResult]
+  inline def htmlAstToRender3Ast(htmlNodes: js.Array[Node], bindingParser: BindingParser): Render3ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlAstToRender3Ast")(htmlNodes.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[Render3ParseResult]
   
   trait Render3ParseResult extends StObject {
     
@@ -30,8 +29,7 @@ object r3TemplateTransformMod {
   }
   object Render3ParseResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errors: js.Array[ParseError],
       ngContentSelectors: js.Array[String],
       nodes: js.Array[typings.angularCompiler.r3AstMod.Node],
@@ -42,38 +40,27 @@ object r3TemplateTransformMod {
       __obj.asInstanceOf[Render3ParseResult]
     }
     
-    @scala.inline
-    implicit class Render3ParseResultMutableBuilder[Self <: Render3ParseResult] (val x: Self) extends AnyVal {
+    extension [Self <: Render3ParseResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[ParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[ParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: ParseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ParseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
+      inline def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
+      inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
       
-      @scala.inline
-      def setNodes(value: js.Array[typings.angularCompiler.r3AstMod.Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[typings.angularCompiler.r3AstMod.Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: typings.angularCompiler.r3AstMod.Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: typings.angularCompiler.r3AstMod.Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
+      inline def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
+      inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     }
   }
 }

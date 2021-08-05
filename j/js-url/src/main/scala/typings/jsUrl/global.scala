@@ -9,6 +9,5 @@ object global {
   @JSGlobal("url")
   @js.native
   def url: UrlStatic = js.native
-  @scala.inline
-  def url_=(x: UrlStatic): Unit = js.Dynamic.global.updateDynamic("url")(x.asInstanceOf[js.Any])
+  inline def url_=(x: UrlStatic): Unit = js.Dynamic.global.updateDynamic("url")(x.asInstanceOf[js.Any])
 }

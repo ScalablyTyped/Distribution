@@ -20,34 +20,25 @@ trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends StObjec
 }
 object PaginatorDeps {
   
-  @scala.inline
-  def apply[T /* <: Response[js.Array[js.Object]] */, S](client: IClient, guard: APIResponseSuccess => /* is T */ Boolean, reqgen: () => js.Promise[Req]): PaginatorDeps[T, S] = {
+  inline def apply[T /* <: Response[js.Array[js.Object]] */, S](client: IClient, guard: APIResponseSuccess => /* is T */ Boolean, reqgen: () => js.Promise[Req]): PaginatorDeps[T, S] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], guard = js.Any.fromFunction1(guard), reqgen = js.Any.fromFunction0(reqgen))
     __obj.asInstanceOf[PaginatorDeps[T, S]]
   }
   
-  @scala.inline
-  implicit class PaginatorDepsMutableBuilder[Self <: PaginatorDeps[?, ?], T /* <: Response[js.Array[js.Object]] */, S] (val x: Self & (PaginatorDeps[T, S])) extends AnyVal {
+  extension [Self <: PaginatorDeps[?, ?], T /* <: Response[js.Array[js.Object]] */, S](x: Self & (PaginatorDeps[T, S])) {
     
-    @scala.inline
-    def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuard(value: APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
+    inline def setGuard(value: APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setReqgen(value: () => js.Promise[Req]): Self = StObject.set(x, "reqgen", js.Any.fromFunction0(value))
+    inline def setReqgen(value: () => js.Promise[Req]): Self = StObject.set(x, "reqgen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setState(value: Partial[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Partial[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

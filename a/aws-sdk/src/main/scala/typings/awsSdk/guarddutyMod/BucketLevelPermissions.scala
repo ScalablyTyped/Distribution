@@ -23,31 +23,23 @@ trait BucketLevelPermissions extends StObject {
 }
 object BucketLevelPermissions {
   
-  @scala.inline
-  def apply(): BucketLevelPermissions = {
+  inline def apply(): BucketLevelPermissions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketLevelPermissions]
   }
   
-  @scala.inline
-  implicit class BucketLevelPermissionsMutableBuilder[Self <: BucketLevelPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: BucketLevelPermissions](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: AccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: AccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
+    inline def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
     
-    @scala.inline
-    def setBlockPublicAccess(value: BlockPublicAccess): Self = StObject.set(x, "BlockPublicAccess", value.asInstanceOf[js.Any])
+    inline def setBlockPublicAccess(value: BlockPublicAccess): Self = StObject.set(x, "BlockPublicAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPublicAccessUndefined: Self = StObject.set(x, "BlockPublicAccess", js.undefined)
+    inline def setBlockPublicAccessUndefined: Self = StObject.set(x, "BlockPublicAccess", js.undefined)
     
-    @scala.inline
-    def setBucketPolicy(value: BucketPolicy): Self = StObject.set(x, "BucketPolicy", value.asInstanceOf[js.Any])
+    inline def setBucketPolicy(value: BucketPolicy): Self = StObject.set(x, "BucketPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPolicyUndefined: Self = StObject.set(x, "BucketPolicy", js.undefined)
+    inline def setBucketPolicyUndefined: Self = StObject.set(x, "BucketPolicy", js.undefined)
   }
 }

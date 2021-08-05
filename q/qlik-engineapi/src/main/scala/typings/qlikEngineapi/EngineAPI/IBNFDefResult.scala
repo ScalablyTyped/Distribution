@@ -21,22 +21,17 @@ trait IBNFDefResult extends StObject {
 }
 object IBNFDefResult {
   
-  @scala.inline
-  def apply(qBnfDefs: js.Array[IBNFDef], qBnfHash: String): IBNFDefResult = {
+  inline def apply(qBnfDefs: js.Array[IBNFDef], qBnfHash: String): IBNFDefResult = {
     val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs.asInstanceOf[js.Any], qBnfHash = qBnfHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBNFDefResult]
   }
   
-  @scala.inline
-  implicit class IBNFDefResultMutableBuilder[Self <: IBNFDefResult] (val x: Self) extends AnyVal {
+  extension [Self <: IBNFDefResult](x: Self) {
     
-    @scala.inline
-    def setQBnfDefs(value: js.Array[IBNFDef]): Self = StObject.set(x, "qBnfDefs", value.asInstanceOf[js.Any])
+    inline def setQBnfDefs(value: js.Array[IBNFDef]): Self = StObject.set(x, "qBnfDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBnfDefsVarargs(value: IBNFDef*): Self = StObject.set(x, "qBnfDefs", js.Array(value :_*))
+    inline def setQBnfDefsVarargs(value: IBNFDef*): Self = StObject.set(x, "qBnfDefs", js.Array(value :_*))
     
-    @scala.inline
-    def setQBnfHash(value: String): Self = StObject.set(x, "qBnfHash", value.asInstanceOf[js.Any])
+    inline def setQBnfHash(value: String): Self = StObject.set(x, "qBnfHash", value.asInstanceOf[js.Any])
   }
 }

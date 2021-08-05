@@ -18,19 +18,15 @@ trait ProvisionByoipCidrRequest extends StObject {
 }
 object ProvisionByoipCidrRequest {
   
-  @scala.inline
-  def apply(Cidr: GenericString, CidrAuthorizationContext: CidrAuthorizationContext): ProvisionByoipCidrRequest = {
+  inline def apply(Cidr: GenericString, CidrAuthorizationContext: CidrAuthorizationContext): ProvisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any], CidrAuthorizationContext = CidrAuthorizationContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionByoipCidrRequest]
   }
   
-  @scala.inline
-  implicit class ProvisionByoipCidrRequestMutableBuilder[Self <: ProvisionByoipCidrRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisionByoipCidrRequest](x: Self) {
     
-    @scala.inline
-    def setCidr(value: GenericString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: GenericString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrAuthorizationContext(value: CidrAuthorizationContext): Self = StObject.set(x, "CidrAuthorizationContext", value.asInstanceOf[js.Any])
+    inline def setCidrAuthorizationContext(value: CidrAuthorizationContext): Self = StObject.set(x, "CidrAuthorizationContext", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait UserBlocks extends StObject {
 }
 object UserBlocks {
   
-  @scala.inline
-  def apply(blocked_for: js.Array[BlockedForEntry]): UserBlocks = {
+  inline def apply(blocked_for: js.Array[BlockedForEntry]): UserBlocks = {
     val __obj = js.Dynamic.literal(blocked_for = blocked_for.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserBlocks]
   }
   
-  @scala.inline
-  implicit class UserBlocksMutableBuilder[Self <: UserBlocks] (val x: Self) extends AnyVal {
+  extension [Self <: UserBlocks](x: Self) {
     
-    @scala.inline
-    def setBlocked_for(value: js.Array[BlockedForEntry]): Self = StObject.set(x, "blocked_for", value.asInstanceOf[js.Any])
+    inline def setBlocked_for(value: js.Array[BlockedForEntry]): Self = StObject.set(x, "blocked_for", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocked_forVarargs(value: BlockedForEntry*): Self = StObject.set(x, "blocked_for", js.Array(value :_*))
+    inline def setBlocked_forVarargs(value: BlockedForEntry*): Self = StObject.set(x, "blocked_for", js.Array(value :_*))
   }
 }

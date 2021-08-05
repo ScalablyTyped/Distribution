@@ -12,19 +12,15 @@ trait MaskedInputDefaults extends StObject {
 }
 object MaskedInputDefaults {
   
-  @scala.inline
-  def apply(aliases: js.Any, definitions: js.Any): MaskedInputDefaults = {
+  inline def apply(aliases: js.Any, definitions: js.Any): MaskedInputDefaults = {
     val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], definitions = definitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskedInputDefaults]
   }
   
-  @scala.inline
-  implicit class MaskedInputDefaultsMutableBuilder[Self <: MaskedInputDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: MaskedInputDefaults](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Any): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Any): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitions(value: js.Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: js.Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
   }
 }

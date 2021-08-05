@@ -275,7 +275,7 @@ trait GameObjectFactory extends StObject {
   /**
     * A reference to the Scene Display List.
     */
-  var displayList: DisplayList = js.native
+  /* protected */ var displayList: DisplayList = js.native
   
   /**
     * DOM Element Game Objects are a way to control and manipulate HTML Elements over the top of your game.
@@ -929,7 +929,7 @@ trait GameObjectFactory extends StObject {
   /**
     * The Scene to which this Game Object Factory belongs.
     */
-  var scene: Scene = js.native
+  /* protected */ var scene: Scene = js.native
   
   /**
     * Creates a new Shader Game Object and adds it to the Scene.
@@ -1018,7 +1018,7 @@ trait GameObjectFactory extends StObject {
   /**
     * A reference to the Scene.Systems.
     */
-  var systems: Systems = js.native
+  /* protected */ var systems: Systems = js.native
   
   /**
     * Creates a new Text Game Object and adds it to the Scene.
@@ -1159,7 +1159,7 @@ trait GameObjectFactory extends StObject {
   /**
     * A reference to the Scene Update List.
     */
-  var updateList: UpdateList = js.native
+  /* protected */ var updateList: UpdateList = js.native
   
   /**
     * Creates a new Video Game Object and adds it to the Scene.

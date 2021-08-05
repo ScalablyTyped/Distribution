@@ -126,8 +126,7 @@ object transformParamsMod {
   }
   object TransformsParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjacency: Options,
       aggregate: typings.antvDataSet.aggregateMod.Options,
       arc: typings.antvDataSet.arcMod.Options,
@@ -205,152 +204,103 @@ object transformParamsMod {
       __obj.asInstanceOf[TransformsParams]
     }
     
-    @scala.inline
-    implicit class TransformsParamsMutableBuilder[Self <: TransformsParams] (val x: Self) extends AnyVal {
+    extension [Self <: TransformsParams](x: Self) {
       
-      @scala.inline
-      def setAdjacency(value: Options): Self = StObject.set(x, "adjacency", value.asInstanceOf[js.Any])
+      inline def setAdjacency(value: Options): Self = StObject.set(x, "adjacency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregate(value: typings.antvDataSet.aggregateMod.Options): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+      inline def setAggregate(value: typings.antvDataSet.aggregateMod.Options): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArc(value: typings.antvDataSet.arcMod.Options): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+      inline def setArc(value: typings.antvDataSet.arcMod.Options): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinDotdot(value: typings.antvDataSet.histogramMod.Options): Self = StObject.set(x, "bin.dot", value.asInstanceOf[js.Any])
+      inline def setBinDotdot(value: typings.antvDataSet.histogramMod.Options): Self = StObject.set(x, "bin.dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinDothex(value: typings.antvDataSet.hexagonMod.Options): Self = StObject.set(x, "bin.hex", value.asInstanceOf[js.Any])
+      inline def setBinDothex(value: typings.antvDataSet.hexagonMod.Options): Self = StObject.set(x, "bin.hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinDothexagon(value: typings.antvDataSet.hexagonMod.Options): Self = StObject.set(x, "bin.hexagon", value.asInstanceOf[js.Any])
+      inline def setBinDothexagon(value: typings.antvDataSet.hexagonMod.Options): Self = StObject.set(x, "bin.hexagon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinDothistogram(value: typings.antvDataSet.histogramMod.Options): Self = StObject.set(x, "bin.histogram", value.asInstanceOf[js.Any])
+      inline def setBinDothistogram(value: typings.antvDataSet.histogramMod.Options): Self = StObject.set(x, "bin.histogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinDotquantile(value: typings.antvDataSet.quantileMod.Options): Self = StObject.set(x, "bin.quantile", value.asInstanceOf[js.Any])
+      inline def setBinDotquantile(value: typings.antvDataSet.quantileMod.Options): Self = StObject.set(x, "bin.quantile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinDotrect(value: typings.antvDataSet.rectangleMod.Options): Self = StObject.set(x, "bin.rect", value.asInstanceOf[js.Any])
+      inline def setBinDotrect(value: typings.antvDataSet.rectangleMod.Options): Self = StObject.set(x, "bin.rect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinDotrectangle(value: typings.antvDataSet.rectangleMod.Options): Self = StObject.set(x, "bin.rectangle", value.asInstanceOf[js.Any])
+      inline def setBinDotrectangle(value: typings.antvDataSet.rectangleMod.Options): Self = StObject.set(x, "bin.rectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagramDotarc(value: typings.antvDataSet.arcMod.Options): Self = StObject.set(x, "diagram.arc", value.asInstanceOf[js.Any])
+      inline def setDiagramDotarc(value: typings.antvDataSet.arcMod.Options): Self = StObject.set(x, "diagram.arc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagramDotsankey(value: typings.antvDataSet.sankeyMod.Options): Self = StObject.set(x, "diagram.sankey", value.asInstanceOf[js.Any])
+      inline def setDiagramDotsankey(value: typings.antvDataSet.sankeyMod.Options): Self = StObject.set(x, "diagram.sankey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagramDotvoronoi(value: typings.antvDataSet.voronoiMod.Options): Self = StObject.set(x, "diagram.voronoi", value.asInstanceOf[js.Any])
+      inline def setDiagramDotvoronoi(value: typings.antvDataSet.voronoiMod.Options): Self = StObject.set(x, "diagram.voronoi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFill-rows`(value: typings.antvDataSet.fillRowsMod.Options): Self = StObject.set(x, "fill-rows", value.asInstanceOf[js.Any])
+      inline def `setFill-rows`(value: typings.antvDataSet.fillRowsMod.Options): Self = StObject.set(x, "fill-rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillRows(value: typings.antvDataSet.fillRowsMod.Options): Self = StObject.set(x, "fillRows", value.asInstanceOf[js.Any])
+      inline def setFillRows(value: typings.antvDataSet.fillRowsMod.Options): Self = StObject.set(x, "fillRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: typings.antvDataSet.filterMod.Options): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: typings.antvDataSet.filterMod.Options): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFold(value: typings.antvDataSet.foldMod.Options): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
+      inline def setFold(value: typings.antvDataSet.foldMod.Options): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoDotcentroid(value: typings.antvDataSet.centroidMod.Options): Self = StObject.set(x, "geo.centroid", value.asInstanceOf[js.Any])
+      inline def setGeoDotcentroid(value: typings.antvDataSet.centroidMod.Options): Self = StObject.set(x, "geo.centroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoDotprojection(value: typings.antvDataSet.projectionMod.Options): Self = StObject.set(x, "geo.projection", value.asInstanceOf[js.Any])
+      inline def setGeoDotprojection(value: typings.antvDataSet.projectionMod.Options): Self = StObject.set(x, "geo.projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoDotregion(value: typings.antvDataSet.regionMod.Options): Self = StObject.set(x, "geo.region", value.asInstanceOf[js.Any])
+      inline def setGeoDotregion(value: typings.antvDataSet.regionMod.Options): Self = StObject.set(x, "geo.region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup(value: typings.antvDataSet.transformPartitionMod.Options): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: typings.antvDataSet.transformPartitionMod.Options): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroups(value: typings.antvDataSet.transformPartitionMod.Options): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: typings.antvDataSet.transformPartitionMod.Options): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexbin(value: typings.antvDataSet.hexagonMod.Options): Self = StObject.set(x, "hexbin", value.asInstanceOf[js.Any])
+      inline def setHexbin(value: typings.antvDataSet.hexagonMod.Options): Self = StObject.set(x, "hexbin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyDotpartition(value: Options): Self = StObject.set(x, "hierarchy.partition", value.asInstanceOf[js.Any])
+      inline def setHierarchyDotpartition(value: Options): Self = StObject.set(x, "hierarchy.partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyDottreemap(value: Options): Self = StObject.set(x, "hierarchy.treemap", value.asInstanceOf[js.Any])
+      inline def setHierarchyDottreemap(value: Options): Self = StObject.set(x, "hierarchy.treemap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpute(value: typings.antvDataSet.imputeMod.Options): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
+      inline def setImpute(value: typings.antvDataSet.imputeMod.Options): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setKernel-smoothDotdensity`(value: typings.antvDataSet.densityMod.Options): Self = StObject.set(x, "kernel-smooth.density", value.asInstanceOf[js.Any])
+      inline def `setKernel-smoothDotdensity`(value: typings.antvDataSet.densityMod.Options): Self = StObject.set(x, "kernel-smooth.density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setKernel-smoothDotregression`(value: typings.antvDataSet.regressionMod.Options): Self = StObject.set(x, "kernel-smooth.regression", value.asInstanceOf[js.Any])
+      inline def `setKernel-smoothDotregression`(value: typings.antvDataSet.regressionMod.Options): Self = StObject.set(x, "kernel-smooth.regression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelDotdensity(value: typings.antvDataSet.densityMod.Options): Self = StObject.set(x, "kernel.density", value.asInstanceOf[js.Any])
+      inline def setKernelDotdensity(value: typings.antvDataSet.densityMod.Options): Self = StObject.set(x, "kernel.density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelDotregression(value: typings.antvDataSet.regressionMod.Options): Self = StObject.set(x, "kernel.regression", value.asInstanceOf[js.Any])
+      inline def setKernelDotregression(value: typings.antvDataSet.regressionMod.Options): Self = StObject.set(x, "kernel.regression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: typings.antvDataSet.mapMod.Options): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: typings.antvDataSet.mapMod.Options): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartition(value: typings.antvDataSet.transformPartitionMod.Options): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: typings.antvDataSet.transformPartitionMod.Options): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: typings.antvDataSet.percentMod.Options): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: typings.antvDataSet.percentMod.Options): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPick(value: typings.antvDataSet.pickMod.Options): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
+      inline def setPick(value: typings.antvDataSet.pickMod.Options): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProportion(value: typings.antvDataSet.proportionMod.Options): Self = StObject.set(x, "proportion", value.asInstanceOf[js.Any])
+      inline def setProportion(value: typings.antvDataSet.proportionMod.Options): Self = StObject.set(x, "proportion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegression(value: typings.antvDataSet.transformRegressionMod.Options): Self = StObject.set(x, "regression", value.asInstanceOf[js.Any])
+      inline def setRegression(value: typings.antvDataSet.transformRegressionMod.Options): Self = StObject.set(x, "regression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRename(value: typings.antvDataSet.renameMod.Options): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+      inline def setRename(value: typings.antvDataSet.renameMod.Options): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRename-fields`(value: typings.antvDataSet.renameMod.Options): Self = StObject.set(x, "rename-fields", value.asInstanceOf[js.Any])
+      inline def `setRename-fields`(value: typings.antvDataSet.renameMod.Options): Self = StObject.set(x, "rename-fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSankey(value: typings.antvDataSet.sankeyMod.Options): Self = StObject.set(x, "sankey", value.asInstanceOf[js.Any])
+      inline def setSankey(value: typings.antvDataSet.sankeyMod.Options): Self = StObject.set(x, "sankey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSort(value: typings.antvDataSet.sortMod.Options): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: typings.antvDataSet.sortMod.Options): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSort-by`(value: typings.antvDataSet.sortByMod.Options): Self = StObject.set(x, "sort-by", value.asInstanceOf[js.Any])
+      inline def `setSort-by`(value: typings.antvDataSet.sortByMod.Options): Self = StObject.set(x, "sort-by", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortBy(value: typings.antvDataSet.sortByMod.Options): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+      inline def setSortBy(value: typings.antvDataSet.sortByMod.Options): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubset(value: typings.antvDataSet.subsetMod.Options): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
+      inline def setSubset(value: typings.antvDataSet.subsetMod.Options): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: typings.antvDataSet.aggregateMod.Options): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: typings.antvDataSet.aggregateMod.Options): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTag-cloud`(value: typings.antvDataSet.transformTagCloudMod.Options): Self = StObject.set(x, "tag-cloud", value.asInstanceOf[js.Any])
+      inline def `setTag-cloud`(value: typings.antvDataSet.transformTagCloudMod.Options): Self = StObject.set(x, "tag-cloud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreemap(value: Options): Self = StObject.set(x, "treemap", value.asInstanceOf[js.Any])
+      inline def setTreemap(value: Options): Self = StObject.set(x, "treemap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoronoi(value: typings.antvDataSet.voronoiMod.Options): Self = StObject.set(x, "voronoi", value.asInstanceOf[js.Any])
+      inline def setVoronoi(value: typings.antvDataSet.voronoiMod.Options): Self = StObject.set(x, "voronoi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWord-cloud`(value: typings.antvDataSet.transformTagCloudMod.Options): Self = StObject.set(x, "word-cloud", value.asInstanceOf[js.Any])
+      inline def `setWord-cloud`(value: typings.antvDataSet.transformTagCloudMod.Options): Self = StObject.set(x, "word-cloud", value.asInstanceOf[js.Any])
     }
   }
 }

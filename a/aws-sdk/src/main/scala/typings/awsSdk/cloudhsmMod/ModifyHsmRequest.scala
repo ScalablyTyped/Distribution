@@ -38,46 +38,33 @@ trait ModifyHsmRequest extends StObject {
 }
 object ModifyHsmRequest {
   
-  @scala.inline
-  def apply(HsmArn: HsmArn): ModifyHsmRequest = {
+  inline def apply(HsmArn: HsmArn): ModifyHsmRequest = {
     val __obj = js.Dynamic.literal(HsmArn = HsmArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyHsmRequest]
   }
   
-  @scala.inline
-  implicit class ModifyHsmRequestMutableBuilder[Self <: ModifyHsmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyHsmRequest](x: Self) {
     
-    @scala.inline
-    def setEniIp(value: IpAddress): Self = StObject.set(x, "EniIp", value.asInstanceOf[js.Any])
+    inline def setEniIp(value: IpAddress): Self = StObject.set(x, "EniIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEniIpUndefined: Self = StObject.set(x, "EniIp", js.undefined)
+    inline def setEniIpUndefined: Self = StObject.set(x, "EniIp", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: ExternalId): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: ExternalId): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
-    @scala.inline
-    def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
+    inline def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
-    @scala.inline
-    def setSyslogIp(value: IpAddress): Self = StObject.set(x, "SyslogIp", value.asInstanceOf[js.Any])
+    inline def setSyslogIp(value: IpAddress): Self = StObject.set(x, "SyslogIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyslogIpUndefined: Self = StObject.set(x, "SyslogIp", js.undefined)
+    inline def setSyslogIpUndefined: Self = StObject.set(x, "SyslogIp", js.undefined)
   }
 }

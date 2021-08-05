@@ -17,25 +17,19 @@ trait AutoscalingPolicyScaleInControl extends StObject {
 }
 object AutoscalingPolicyScaleInControl {
   
-  @scala.inline
-  def apply(): AutoscalingPolicyScaleInControl = {
+  inline def apply(): AutoscalingPolicyScaleInControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoscalingPolicyScaleInControl]
   }
   
-  @scala.inline
-  implicit class AutoscalingPolicyScaleInControlMutableBuilder[Self <: AutoscalingPolicyScaleInControl] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscalingPolicyScaleInControl](x: Self) {
     
-    @scala.inline
-    def setMaxScaledInReplicas(value: FixedOrPercent): Self = StObject.set(x, "maxScaledInReplicas", value.asInstanceOf[js.Any])
+    inline def setMaxScaledInReplicas(value: FixedOrPercent): Self = StObject.set(x, "maxScaledInReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScaledInReplicasUndefined: Self = StObject.set(x, "maxScaledInReplicas", js.undefined)
+    inline def setMaxScaledInReplicasUndefined: Self = StObject.set(x, "maxScaledInReplicas", js.undefined)
     
-    @scala.inline
-    def setTimeWindowSec(value: Double): Self = StObject.set(x, "timeWindowSec", value.asInstanceOf[js.Any])
+    inline def setTimeWindowSec(value: Double): Self = StObject.set(x, "timeWindowSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeWindowSecUndefined: Self = StObject.set(x, "timeWindowSec", js.undefined)
+    inline def setTimeWindowSecUndefined: Self = StObject.set(x, "timeWindowSec", js.undefined)
   }
 }

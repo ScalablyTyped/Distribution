@@ -21,27 +21,23 @@ object EventType {
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventType.Commit")
   @js.native
   def Commit: EventType = js.native
-  @scala.inline
-  def Commit_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Commit")(x.asInstanceOf[js.Any])
+  inline def Commit_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Commit")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventType.Create")
   @js.native
   def Create: EventType = js.native
-  @scala.inline
-  def Create_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Create")(x.asInstanceOf[js.Any])
+  inline def Create_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Create")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventType.Delete")
   @js.native
   def Delete: EventType = js.native
-  @scala.inline
-  def Delete_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Delete")(x.asInstanceOf[js.Any])
+  inline def Delete_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Delete")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventType.RollBack")
   @js.native
   def RollBack: EventType = js.native
-  @scala.inline
-  def RollBack_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RollBack")(x.asInstanceOf[js.Any])
+  inline def RollBack_=(x: EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RollBack")(x.asInstanceOf[js.Any])
 }

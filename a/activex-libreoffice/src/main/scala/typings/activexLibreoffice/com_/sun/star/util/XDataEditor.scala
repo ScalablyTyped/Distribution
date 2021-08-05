@@ -31,8 +31,7 @@ trait XDataEditor
 }
 object XDataEditor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Model: XInterface,
     acquire: () => Unit,
     addDataEditorListener: XDataEditorListener => Unit,
@@ -47,25 +46,18 @@ object XDataEditor {
     __obj.asInstanceOf[XDataEditor]
   }
   
-  @scala.inline
-  implicit class XDataEditorMutableBuilder[Self <: XDataEditor] (val x: Self) extends AnyVal {
+  extension [Self <: XDataEditor](x: Self) {
     
-    @scala.inline
-    def setAddDataEditorListener(value: XDataEditorListener => Unit): Self = StObject.set(x, "addDataEditorListener", js.Any.fromFunction1(value))
+    inline def setAddDataEditorListener(value: XDataEditorListener => Unit): Self = StObject.set(x, "addDataEditorListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetModel(value: () => XInterface): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+    inline def setGetModel(value: () => XInterface): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModel(value: XInterface): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XInterface): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveDataEditorListener(value: XDataEditorListener => Unit): Self = StObject.set(x, "removeDataEditorListener", js.Any.fromFunction1(value))
+    inline def setRemoveDataEditorListener(value: XDataEditorListener => Unit): Self = StObject.set(x, "removeDataEditorListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetModel(value: XInterface => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
+    inline def setSetModel(value: XInterface => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

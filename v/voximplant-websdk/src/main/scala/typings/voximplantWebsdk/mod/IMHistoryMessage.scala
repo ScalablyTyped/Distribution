@@ -31,25 +31,19 @@ trait IMHistoryMessage extends StObject {
 }
 object IMHistoryMessage {
   
-  @scala.inline
-  def apply(body: String, from: String, id: String, time: String): IMHistoryMessage = {
+  inline def apply(body: String, from: String, id: String, time: String): IMHistoryMessage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMHistoryMessage]
   }
   
-  @scala.inline
-  implicit class IMHistoryMessageMutableBuilder[Self <: IMHistoryMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IMHistoryMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

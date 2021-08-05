@@ -12,19 +12,15 @@ trait HtmlurlUrl extends StObject {
 }
 object HtmlurlUrl {
   
-  @scala.inline
-  def apply(html_url: String, url: String): HtmlurlUrl = {
+  inline def apply(html_url: String, url: String): HtmlurlUrl = {
     val __obj = js.Dynamic.literal(html_url = html_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlurlUrl]
   }
   
-  @scala.inline
-  implicit class HtmlurlUrlMutableBuilder[Self <: HtmlurlUrl] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlurlUrl](x: Self) {
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

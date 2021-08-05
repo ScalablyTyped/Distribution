@@ -20,8 +20,7 @@ trait `1034` extends StObject {
 }
 object `1034` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[SearchLabelsEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[SearchLabelsResponseData]
   ): `1034` = {
@@ -29,13 +28,10 @@ object `1034` {
     __obj.asInstanceOf[`1034`]
   }
   
-  @scala.inline
-  implicit class `1034MutableBuilder`[Self <: `1034`] (val x: Self) extends AnyVal {
+  extension [Self <: `1034`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[SearchLabelsEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[SearchLabelsEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[SearchLabelsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[SearchLabelsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

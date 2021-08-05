@@ -22,19 +22,15 @@ trait ChangeTableFormattingCommand extends StObject {
 }
 object ChangeTableFormattingCommand {
   
-  @scala.inline
-  def apply(execute: TableFormattingSettings => Boolean, getState: () => CommandState[TableFormattingSettings]): ChangeTableFormattingCommand = {
+  inline def apply(execute: TableFormattingSettings => Boolean, getState: () => CommandState[TableFormattingSettings]): ChangeTableFormattingCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTableFormattingCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTableFormattingCommandMutableBuilder[Self <: ChangeTableFormattingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTableFormattingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: TableFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: TableFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TableFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TableFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

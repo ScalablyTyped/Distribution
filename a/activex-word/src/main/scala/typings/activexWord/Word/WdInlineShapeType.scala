@@ -39,48 +39,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdInlineShapeType extends StObject
 object WdInlineShapeType {
   
-  @scala.inline
-  def wdInlineShapeChart: `12` = 12.asInstanceOf[`12`]
+  inline def wdInlineShapeChart: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def wdInlineShapeDiagram: `13` = 13.asInstanceOf[`13`]
+  inline def wdInlineShapeDiagram: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def wdInlineShapeEmbeddedOLEObject: `1` = 1.asInstanceOf[`1`]
+  inline def wdInlineShapeEmbeddedOLEObject: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdInlineShapeHorizontalLine: `6` = 6.asInstanceOf[`6`]
+  inline def wdInlineShapeHorizontalLine: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdInlineShapeLinkedOLEObject: `2` = 2.asInstanceOf[`2`]
+  inline def wdInlineShapeLinkedOLEObject: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdInlineShapeLinkedPicture: `4` = 4.asInstanceOf[`4`]
+  inline def wdInlineShapeLinkedPicture: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdInlineShapeLinkedPictureHorizontalLine: `8` = 8.asInstanceOf[`8`]
+  inline def wdInlineShapeLinkedPictureHorizontalLine: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdInlineShapeLockedCanvas: `14` = 14.asInstanceOf[`14`]
+  inline def wdInlineShapeLockedCanvas: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def wdInlineShapeOLEControlObject: `5` = 5.asInstanceOf[`5`]
+  inline def wdInlineShapeOLEControlObject: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdInlineShapeOWSAnchor: `11` = 11.asInstanceOf[`11`]
+  inline def wdInlineShapeOWSAnchor: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def wdInlineShapePicture: `3` = 3.asInstanceOf[`3`]
+  inline def wdInlineShapePicture: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdInlineShapePictureBullet: `9` = 9.asInstanceOf[`9`]
+  inline def wdInlineShapePictureBullet: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdInlineShapePictureHorizontalLine: `7` = 7.asInstanceOf[`7`]
+  inline def wdInlineShapePictureHorizontalLine: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdInlineShapeScriptAnchor: `10` = 10.asInstanceOf[`10`]
+  inline def wdInlineShapeScriptAnchor: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def wdInlineShapeSmartArt: `15` = 15.asInstanceOf[`15`]
+  inline def wdInlineShapeSmartArt: `15` = 15.asInstanceOf[`15`]
 }

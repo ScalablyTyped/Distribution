@@ -12,17 +12,14 @@ object musicRepositoryMoodsResponseMod {
   }
   object MusicRepositoryMoodsResponseItemsItem {
     
-    @scala.inline
-    def apply(mood: MusicRepositoryMoodsResponseMood): MusicRepositoryMoodsResponseItemsItem = {
+    inline def apply(mood: MusicRepositoryMoodsResponseMood): MusicRepositoryMoodsResponseItemsItem = {
       val __obj = js.Dynamic.literal(mood = mood.asInstanceOf[js.Any])
       __obj.asInstanceOf[MusicRepositoryMoodsResponseItemsItem]
     }
     
-    @scala.inline
-    implicit class MusicRepositoryMoodsResponseItemsItemMutableBuilder[Self <: MusicRepositoryMoodsResponseItemsItem] (val x: Self) extends AnyVal {
+    extension [Self <: MusicRepositoryMoodsResponseItemsItem](x: Self) {
       
-      @scala.inline
-      def setMood(value: MusicRepositoryMoodsResponseMood): Self = StObject.set(x, "mood", value.asInstanceOf[js.Any])
+      inline def setMood(value: MusicRepositoryMoodsResponseMood): Self = StObject.set(x, "mood", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,23 +33,18 @@ object musicRepositoryMoodsResponseMod {
   }
   object MusicRepositoryMoodsResponseMood {
     
-    @scala.inline
-    def apply(cover_artwork_uri: String, id: String, name: String): MusicRepositoryMoodsResponseMood = {
+    inline def apply(cover_artwork_uri: String, id: String, name: String): MusicRepositoryMoodsResponseMood = {
       val __obj = js.Dynamic.literal(cover_artwork_uri = cover_artwork_uri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[MusicRepositoryMoodsResponseMood]
     }
     
-    @scala.inline
-    implicit class MusicRepositoryMoodsResponseMoodMutableBuilder[Self <: MusicRepositoryMoodsResponseMood] (val x: Self) extends AnyVal {
+    extension [Self <: MusicRepositoryMoodsResponseMood](x: Self) {
       
-      @scala.inline
-      def setCover_artwork_uri(value: String): Self = StObject.set(x, "cover_artwork_uri", value.asInstanceOf[js.Any])
+      inline def setCover_artwork_uri(value: String): Self = StObject.set(x, "cover_artwork_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,23 +56,18 @@ object musicRepositoryMoodsResponseMod {
   }
   object MusicRepositoryMoodsResponseRootObject {
     
-    @scala.inline
-    def apply(items: js.Array[MusicRepositoryMoodsResponseItemsItem], status: String): MusicRepositoryMoodsResponseRootObject = {
+    inline def apply(items: js.Array[MusicRepositoryMoodsResponseItemsItem], status: String): MusicRepositoryMoodsResponseRootObject = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[MusicRepositoryMoodsResponseRootObject]
     }
     
-    @scala.inline
-    implicit class MusicRepositoryMoodsResponseRootObjectMutableBuilder[Self <: MusicRepositoryMoodsResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: MusicRepositoryMoodsResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[MusicRepositoryMoodsResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[MusicRepositoryMoodsResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: MusicRepositoryMoodsResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: MusicRepositoryMoodsResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

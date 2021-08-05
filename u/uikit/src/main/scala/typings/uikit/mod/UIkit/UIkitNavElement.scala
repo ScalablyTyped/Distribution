@@ -13,19 +13,15 @@ trait UIkitNavElement extends StObject {
 }
 object UIkitNavElement {
   
-  @scala.inline
-  def apply(animate: Boolean, index: String | Double | UIkitNode): UIkitNavElement = {
+  inline def apply(animate: Boolean, index: String | Double | UIkitNode): UIkitNavElement = {
     val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitNavElement]
   }
   
-  @scala.inline
-  implicit class UIkitNavElementMutableBuilder[Self <: UIkitNavElement] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitNavElement](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String | Double | UIkitNode): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String | Double | UIkitNode): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

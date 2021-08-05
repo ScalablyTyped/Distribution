@@ -22,19 +22,15 @@ trait InsertHyperlinkCommand extends StObject {
 }
 object InsertHyperlinkCommand {
   
-  @scala.inline
-  def apply(execute: HyperlinkSettings => Boolean, getState: () => CommandState[HyperlinkSettings]): InsertHyperlinkCommand = {
+  inline def apply(execute: HyperlinkSettings => Boolean, getState: () => CommandState[HyperlinkSettings]): InsertHyperlinkCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertHyperlinkCommand]
   }
   
-  @scala.inline
-  implicit class InsertHyperlinkCommandMutableBuilder[Self <: InsertHyperlinkCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertHyperlinkCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: HyperlinkSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: HyperlinkSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[HyperlinkSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[HyperlinkSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

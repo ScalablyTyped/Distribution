@@ -18,22 +18,17 @@ trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter
 }
 object MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter {
   
-  @scala.inline
-  def apply(name: String, values: js.Array[String]): MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter = {
+  inline def apply(name: String, values: js.Array[String]): MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterMutableBuilder[Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

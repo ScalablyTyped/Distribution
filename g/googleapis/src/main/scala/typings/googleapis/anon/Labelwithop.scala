@@ -14,31 +14,23 @@ trait Labelwithop extends StObject {
 }
 object Labelwithop {
   
-  @scala.inline
-  def apply(): Labelwithop = {
+  inline def apply(): Labelwithop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Labelwithop]
   }
   
-  @scala.inline
-  implicit class LabelwithopMutableBuilder[Self <: Labelwithop] (val x: Self) extends AnyVal {
+  extension [Self <: Labelwithop](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLabel_with_op(value: String): Self = StObject.set(x, "label_with_op", value.asInstanceOf[js.Any])
+    inline def setLabel_with_op(value: String): Self = StObject.set(x, "label_with_op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel_with_opUndefined: Self = StObject.set(x, "label_with_op", js.undefined)
+    inline def setLabel_with_opUndefined: Self = StObject.set(x, "label_with_op", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

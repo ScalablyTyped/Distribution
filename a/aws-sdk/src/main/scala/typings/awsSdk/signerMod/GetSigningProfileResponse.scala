@@ -48,61 +48,43 @@ trait GetSigningProfileResponse extends StObject {
 }
 object GetSigningProfileResponse {
   
-  @scala.inline
-  def apply(): GetSigningProfileResponse = {
+  inline def apply(): GetSigningProfileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSigningProfileResponse]
   }
   
-  @scala.inline
-  implicit class GetSigningProfileResponseMutableBuilder[Self <: GetSigningProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSigningProfileResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: java.lang.String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: java.lang.String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setOverrides(value: SigningPlatformOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: SigningPlatformOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
+    inline def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
+    inline def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
     
-    @scala.inline
-    def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
+    inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
+    inline def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
     
-    @scala.inline
-    def setSigningMaterial(value: SigningMaterial): Self = StObject.set(x, "signingMaterial", value.asInstanceOf[js.Any])
+    inline def setSigningMaterial(value: SigningMaterial): Self = StObject.set(x, "signingMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningMaterialUndefined: Self = StObject.set(x, "signingMaterial", js.undefined)
+    inline def setSigningMaterialUndefined: Self = StObject.set(x, "signingMaterial", js.undefined)
     
-    @scala.inline
-    def setSigningParameters(value: SigningParameters): Self = StObject.set(x, "signingParameters", value.asInstanceOf[js.Any])
+    inline def setSigningParameters(value: SigningParameters): Self = StObject.set(x, "signingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningParametersUndefined: Self = StObject.set(x, "signingParameters", js.undefined)
+    inline def setSigningParametersUndefined: Self = StObject.set(x, "signingParameters", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SigningProfileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SigningProfileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

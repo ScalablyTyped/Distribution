@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowState extends StObject
 object WindowState {
   
-  @scala.inline
-  def fullscreen: typings.devtoolsProtocol.devtoolsProtocolStrings.fullscreen = "fullscreen".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.fullscreen]
+  inline def fullscreen: typings.devtoolsProtocol.devtoolsProtocolStrings.fullscreen = "fullscreen".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.fullscreen]
   
-  @scala.inline
-  def maximized: typings.devtoolsProtocol.devtoolsProtocolStrings.maximized = "maximized".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.maximized]
+  inline def maximized: typings.devtoolsProtocol.devtoolsProtocolStrings.maximized = "maximized".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.maximized]
   
-  @scala.inline
-  def minimized: typings.devtoolsProtocol.devtoolsProtocolStrings.minimized = "minimized".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.minimized]
+  inline def minimized: typings.devtoolsProtocol.devtoolsProtocolStrings.minimized = "minimized".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.minimized]
   
-  @scala.inline
-  def normal: typings.devtoolsProtocol.devtoolsProtocolStrings.normal = "normal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.normal]
+  inline def normal: typings.devtoolsProtocol.devtoolsProtocolStrings.normal = "normal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.normal]
 }

@@ -14,31 +14,23 @@ trait IQuickSuggestionsOptions extends StObject {
 }
 object IQuickSuggestionsOptions {
   
-  @scala.inline
-  def apply(): IQuickSuggestionsOptions = {
+  inline def apply(): IQuickSuggestionsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IQuickSuggestionsOptions]
   }
   
-  @scala.inline
-  implicit class IQuickSuggestionsOptionsMutableBuilder[Self <: IQuickSuggestionsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IQuickSuggestionsOptions](x: Self) {
     
-    @scala.inline
-    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setOther(value: Boolean): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: Boolean): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+    inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
     
-    @scala.inline
-    def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+    inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
   }
 }

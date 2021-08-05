@@ -109,8 +109,7 @@ trait IAccount
 }
 object IAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     charges_enabled: Boolean,
     country: String,
     details_submitted: Boolean,
@@ -125,76 +124,52 @@ object IAccount {
     __obj.asInstanceOf[IAccount]
   }
   
-  @scala.inline
-  implicit class IAccountMutableBuilder[Self <: IAccount] (val x: Self) extends AnyVal {
+  extension [Self <: IAccount](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: Cardpayments): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: Cardpayments): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setCharges_enabled(value: Boolean): Self = StObject.set(x, "charges_enabled", value.asInstanceOf[js.Any])
+    inline def setCharges_enabled(value: Boolean): Self = StObject.set(x, "charges_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompany(value: ICompany): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: ICompany): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setDetails_submitted(value: Boolean): Self = StObject.set(x, "details_submitted", value.asInstanceOf[js.Any])
+    inline def setDetails_submitted(value: Boolean): Self = StObject.set(x, "details_submitted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_accounts(value: IList[IExternalAccount]): Self = StObject.set(x, "external_accounts", value.asInstanceOf[js.Any])
+    inline def setExternal_accounts(value: IList[IExternalAccount]): Self = StObject.set(x, "external_accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_accountsUndefined: Self = StObject.set(x, "external_accounts", js.undefined)
+    inline def setExternal_accountsUndefined: Self = StObject.set(x, "external_accounts", js.undefined)
     
-    @scala.inline
-    def setIndividual(value: IIndividual): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
+    inline def setIndividual(value: IIndividual): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
+    inline def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setObject(value: account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayouts_enabled(value: Boolean): Self = StObject.set(x, "payouts_enabled", value.asInstanceOf[js.Any])
+    inline def setPayouts_enabled(value: Boolean): Self = StObject.set(x, "payouts_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirements(value: IAccountRequirements): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+    inline def setRequirements(value: IAccountRequirements): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+    inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
-    @scala.inline
-    def setType(value: standard | express | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: standard | express | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerification(value: Disabledreason): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Disabledreason): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
+    inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
   }
 }

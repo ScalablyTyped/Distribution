@@ -18,25 +18,19 @@ trait CreateDistributionResult extends StObject {
 }
 object CreateDistributionResult {
   
-  @scala.inline
-  def apply(): CreateDistributionResult = {
+  inline def apply(): CreateDistributionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDistributionResult]
   }
   
-  @scala.inline
-  implicit class CreateDistributionResultMutableBuilder[Self <: CreateDistributionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDistributionResult](x: Self) {
     
-    @scala.inline
-    def setDistribution(value: LightsailDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: LightsailDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

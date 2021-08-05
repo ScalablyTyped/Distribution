@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DroppableMode extends StObject
 object DroppableMode {
   
-  @scala.inline
-  def standard: typings.reactBeautifulDnd.reactBeautifulDndStrings.standard = "standard".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.standard]
+  inline def standard: typings.reactBeautifulDnd.reactBeautifulDndStrings.standard = "standard".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.standard]
   
-  @scala.inline
-  def virtual: typings.reactBeautifulDnd.reactBeautifulDndStrings.virtual = "virtual".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.virtual]
+  inline def virtual: typings.reactBeautifulDnd.reactBeautifulDndStrings.virtual = "virtual".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.virtual]
 }

@@ -10,16 +10,13 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(): `0` = {
+  inline def apply(): `0` = {
     val __obj = js.Dynamic.literal(value = 1)
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setValue(value: typings.storybookUi.storybookUiNumbers.`1`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.storybookUi.storybookUiNumbers.`1`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait UpdateBranchResult extends StObject {
 }
 object UpdateBranchResult {
   
-  @scala.inline
-  def apply(branch: Branch): UpdateBranchResult = {
+  inline def apply(branch: Branch): UpdateBranchResult = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBranchResult]
   }
   
-  @scala.inline
-  implicit class UpdateBranchResultMutableBuilder[Self <: UpdateBranchResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBranchResult](x: Self) {
     
-    @scala.inline
-    def setBranch(value: Branch): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: Branch): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
   }
 }

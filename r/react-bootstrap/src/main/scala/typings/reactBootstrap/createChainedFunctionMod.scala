@@ -10,6 +10,5 @@ object createChainedFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(funcs: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def default(funcs: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

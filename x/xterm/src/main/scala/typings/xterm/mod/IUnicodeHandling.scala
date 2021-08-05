@@ -23,25 +23,19 @@ trait IUnicodeHandling extends StObject {
 }
 object IUnicodeHandling {
   
-  @scala.inline
-  def apply(activeVersion: String, register: IUnicodeVersionProvider => Unit, versions: js.Array[String]): IUnicodeHandling = {
+  inline def apply(activeVersion: String, register: IUnicodeVersionProvider => Unit, versions: js.Array[String]): IUnicodeHandling = {
     val __obj = js.Dynamic.literal(activeVersion = activeVersion.asInstanceOf[js.Any], register = js.Any.fromFunction1(register), versions = versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUnicodeHandling]
   }
   
-  @scala.inline
-  implicit class IUnicodeHandlingMutableBuilder[Self <: IUnicodeHandling] (val x: Self) extends AnyVal {
+  extension [Self <: IUnicodeHandling](x: Self) {
     
-    @scala.inline
-    def setActiveVersion(value: String): Self = StObject.set(x, "activeVersion", value.asInstanceOf[js.Any])
+    inline def setActiveVersion(value: String): Self = StObject.set(x, "activeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegister(value: IUnicodeVersionProvider => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: IUnicodeVersionProvider => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

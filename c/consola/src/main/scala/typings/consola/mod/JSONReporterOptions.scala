@@ -11,19 +11,15 @@ trait JSONReporterOptions extends StObject {
 }
 object JSONReporterOptions {
   
-  @scala.inline
-  def apply(): JSONReporterOptions = {
+  inline def apply(): JSONReporterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONReporterOptions]
   }
   
-  @scala.inline
-  implicit class JSONReporterOptionsMutableBuilder[Self <: JSONReporterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JSONReporterOptions](x: Self) {
     
-    @scala.inline
-    def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

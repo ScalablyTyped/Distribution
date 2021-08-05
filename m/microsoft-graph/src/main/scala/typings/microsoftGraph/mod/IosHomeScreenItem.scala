@@ -11,22 +11,17 @@ trait IosHomeScreenItem extends StObject {
 }
 object IosHomeScreenItem {
   
-  @scala.inline
-  def apply(): IosHomeScreenItem = {
+  inline def apply(): IosHomeScreenItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosHomeScreenItem]
   }
   
-  @scala.inline
-  implicit class IosHomeScreenItemMutableBuilder[Self <: IosHomeScreenItem] (val x: Self) extends AnyVal {
+  extension [Self <: IosHomeScreenItem](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

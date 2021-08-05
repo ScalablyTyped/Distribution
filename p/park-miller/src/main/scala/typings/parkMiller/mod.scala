@@ -54,8 +54,7 @@ object mod {
   }
   object ParkMiller {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       boolean: () => Boolean,
       float: () => Double,
       floatInRange: (Double, Double) => Double,
@@ -66,23 +65,17 @@ object mod {
       __obj.asInstanceOf[ParkMiller]
     }
     
-    @scala.inline
-    implicit class ParkMillerMutableBuilder[Self <: ParkMiller] (val x: Self) extends AnyVal {
+    extension [Self <: ParkMiller](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: () => Boolean): Self = StObject.set(x, "boolean", js.Any.fromFunction0(value))
+      inline def setBoolean(value: () => Boolean): Self = StObject.set(x, "boolean", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFloat(value: () => Double): Self = StObject.set(x, "float", js.Any.fromFunction0(value))
+      inline def setFloat(value: () => Double): Self = StObject.set(x, "float", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFloatInRange(value: (Double, Double) => Double): Self = StObject.set(x, "floatInRange", js.Any.fromFunction2(value))
+      inline def setFloatInRange(value: (Double, Double) => Double): Self = StObject.set(x, "floatInRange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInteger(value: () => Double): Self = StObject.set(x, "integer", js.Any.fromFunction0(value))
+      inline def setInteger(value: () => Double): Self = StObject.set(x, "integer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIntegerInRange(value: (Double, Double) => Double): Self = StObject.set(x, "integerInRange", js.Any.fromFunction2(value))
+      inline def setIntegerInRange(value: (Double, Double) => Double): Self = StObject.set(x, "integerInRange", js.Any.fromFunction2(value))
     }
   }
 }

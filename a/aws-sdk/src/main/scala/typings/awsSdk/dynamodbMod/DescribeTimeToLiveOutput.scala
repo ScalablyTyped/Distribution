@@ -13,19 +13,15 @@ trait DescribeTimeToLiveOutput extends StObject {
 }
 object DescribeTimeToLiveOutput {
   
-  @scala.inline
-  def apply(): DescribeTimeToLiveOutput = {
+  inline def apply(): DescribeTimeToLiveOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTimeToLiveOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTimeToLiveOutputMutableBuilder[Self <: DescribeTimeToLiveOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTimeToLiveOutput](x: Self) {
     
-    @scala.inline
-    def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
+    inline def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
+    inline def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
   }
 }

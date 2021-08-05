@@ -13,6 +13,5 @@ object getFocusedRouteNameFromRouteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(route: (Partial[Route[String, js.UndefOr[js.Object]]]) & State): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(route.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def default(route: (Partial[Route[String, js.UndefOr[js.Object]]]) & State): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(route.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

@@ -39,8 +39,7 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoUpdate: Boolean,
     contentScrollSize: Height,
     destroyed: Boolean,
@@ -59,46 +58,32 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
+    inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentScrollSize(value: Height): Self = StObject.set(x, "contentScrollSize", value.asInstanceOf[js.Any])
+    inline def setContentScrollSize(value: Height): Self = StObject.set(x, "contentScrollSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+    inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentMixed(value: Boolean): Self = StObject.set(x, "documentMixed", value.asInstanceOf[js.Any])
+    inline def setDocumentMixed(value: Boolean): Self = StObject.set(x, "documentMixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasOverflow(value: XBoolean): Self = StObject.set(x, "hasOverflow", value.asInstanceOf[js.Any])
+    inline def setHasOverflow(value: XBoolean): Self = StObject.set(x, "hasOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightAuto(value: Boolean): Self = StObject.set(x, "heightAuto", value.asInstanceOf[js.Any])
+    inline def setHeightAuto(value: Boolean): Self = StObject.set(x, "heightAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOverflow(value: Xs): Self = StObject.set(x, "hideOverflow", value.asInstanceOf[js.Any])
+    inline def setHideOverflow(value: Xs): Self = StObject.set(x, "hideOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostSize(value: Height): Self = StObject.set(x, "hostSize", value.asInstanceOf[js.Any])
+    inline def setHostSize(value: Height): Self = StObject.set(x, "hostSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowAmount(value: XNumber): Self = StObject.set(x, "overflowAmount", value.asInstanceOf[js.Any])
+    inline def setOverflowAmount(value: XNumber): Self = StObject.set(x, "overflowAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: B): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: B): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSleeping(value: Boolean): Self = StObject.set(x, "sleeping", value.asInstanceOf[js.Any])
+    inline def setSleeping(value: Boolean): Self = StObject.set(x, "sleeping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportSize(value: Height): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
+    inline def setViewportSize(value: Height): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthAuto(value: Boolean): Self = StObject.set(x, "widthAuto", value.asInstanceOf[js.Any])
+    inline def setWidthAuto(value: Boolean): Self = StObject.set(x, "widthAuto", value.asInstanceOf[js.Any])
   }
 }

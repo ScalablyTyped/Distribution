@@ -11,16 +11,13 @@ trait PickImpldistanceAway extends StObject {
 }
 object PickImpldistanceAway {
   
-  @scala.inline
-  def apply(distanceAway: Double): PickImpldistanceAway = {
+  inline def apply(distanceAway: Double): PickImpldistanceAway = {
     val __obj = js.Dynamic.literal(distanceAway = distanceAway.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldistanceAway]
   }
   
-  @scala.inline
-  implicit class PickImpldistanceAwayMutableBuilder[Self <: PickImpldistanceAway] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldistanceAway](x: Self) {
     
-    @scala.inline
-    def setDistanceAway(value: Double): Self = StObject.set(x, "distanceAway", value.asInstanceOf[js.Any])
+    inline def setDistanceAway(value: Double): Self = StObject.set(x, "distanceAway", value.asInstanceOf[js.Any])
   }
 }

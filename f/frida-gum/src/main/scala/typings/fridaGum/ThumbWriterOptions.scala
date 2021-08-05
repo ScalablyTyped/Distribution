@@ -17,19 +17,15 @@ trait ThumbWriterOptions extends StObject {
 }
 object ThumbWriterOptions {
   
-  @scala.inline
-  def apply(): ThumbWriterOptions = {
+  inline def apply(): ThumbWriterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThumbWriterOptions]
   }
   
-  @scala.inline
-  implicit class ThumbWriterOptionsMutableBuilder[Self <: ThumbWriterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbWriterOptions](x: Self) {
     
-    @scala.inline
-    def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+    inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
   }
 }

@@ -353,8 +353,7 @@ object Web {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def getStatus(hresult: Double): SyndicationErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SyndicationErrorStatus]
+      inline def getStatus(hresult: Double): SyndicationErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SyndicationErrorStatus]
     }
     
     @JSGlobal("Windows.Web.Syndication.SyndicationErrorStatus")
@@ -813,8 +812,7 @@ object Web {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
+    inline def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
   }
   
   @JSGlobal("Windows.Web.WebErrorStatus")

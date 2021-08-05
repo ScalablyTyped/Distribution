@@ -23,31 +23,23 @@ trait ParallelOptions extends StObject {
 }
 object ParallelOptions {
   
-  @scala.inline
-  def apply(): ParallelOptions = {
+  inline def apply(): ParallelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParallelOptions]
   }
   
-  @scala.inline
-  implicit class ParallelOptionsMutableBuilder[Self <: ParallelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParallelOptions](x: Self) {
     
-    @scala.inline
-    def setEvalPath(value: String): Self = StObject.set(x, "evalPath", value.asInstanceOf[js.Any])
+    inline def setEvalPath(value: String): Self = StObject.set(x, "evalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalPathUndefined: Self = StObject.set(x, "evalPath", js.undefined)
+    inline def setEvalPathUndefined: Self = StObject.set(x, "evalPath", js.undefined)
     
-    @scala.inline
-    def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
+    inline def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
+    inline def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
     
-    @scala.inline
-    def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
+    inline def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
+    inline def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
   }
 }

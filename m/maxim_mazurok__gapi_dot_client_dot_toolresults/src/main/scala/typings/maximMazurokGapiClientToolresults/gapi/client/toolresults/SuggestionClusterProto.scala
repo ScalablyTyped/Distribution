@@ -17,28 +17,21 @@ trait SuggestionClusterProto extends StObject {
 }
 object SuggestionClusterProto {
   
-  @scala.inline
-  def apply(): SuggestionClusterProto = {
+  inline def apply(): SuggestionClusterProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestionClusterProto]
   }
   
-  @scala.inline
-  implicit class SuggestionClusterProtoMutableBuilder[Self <: SuggestionClusterProto] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionClusterProto](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setSuggestions(value: js.Array[SuggestionProto]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[SuggestionProto]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+    inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    @scala.inline
-    def setSuggestionsVarargs(value: SuggestionProto*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: SuggestionProto*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

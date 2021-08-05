@@ -33,37 +33,27 @@ trait EnableSnapshotCopyMessage extends StObject {
 }
 object EnableSnapshotCopyMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String, DestinationRegion: String): EnableSnapshotCopyMessage = {
+  inline def apply(ClusterIdentifier: String, DestinationRegion: String): EnableSnapshotCopyMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], DestinationRegion = DestinationRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableSnapshotCopyMessage]
   }
   
-  @scala.inline
-  implicit class EnableSnapshotCopyMessageMutableBuilder[Self <: EnableSnapshotCopyMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EnableSnapshotCopyMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationRegion(value: String): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
+    inline def setDestinationRegion(value: String): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    inline def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
+    inline def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
     
-    @scala.inline
-    def setRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "RetentionPeriod", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "RetentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodUndefined: Self = StObject.set(x, "RetentionPeriod", js.undefined)
+    inline def setRetentionPeriodUndefined: Self = StObject.set(x, "RetentionPeriod", js.undefined)
     
-    @scala.inline
-    def setSnapshotCopyGrantName(value: String): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
+    inline def setSnapshotCopyGrantName(value: String): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotCopyGrantNameUndefined: Self = StObject.set(x, "SnapshotCopyGrantName", js.undefined)
+    inline def setSnapshotCopyGrantNameUndefined: Self = StObject.set(x, "SnapshotCopyGrantName", js.undefined)
   }
 }

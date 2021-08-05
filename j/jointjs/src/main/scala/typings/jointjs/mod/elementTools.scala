@@ -31,32 +31,24 @@ object elementTools {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setPadding(value: Double | Sides): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+        inline def setPadding(value: Double | Sides): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+        inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
         
-        @scala.inline
-        def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+        inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+        inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
         
-        @scala.inline
-        def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
+        inline def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
+        inline def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
       }
     }
   }
@@ -92,56 +84,40 @@ object elementTools {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.jointjs.mod.elementTools.Button.Options = {
+      inline def apply(): typings.jointjs.mod.elementTools.Button.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jointjs.mod.elementTools.Button.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.jointjs.mod.elementTools.Button.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jointjs.mod.elementTools.Button.Options](x: Self) {
         
-        @scala.inline
-        def setAction(value: (/* evt */ Event, /* view */ LinkView) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+        inline def setAction(value: (/* evt */ Event, /* view */ LinkView) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+        inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
-        @scala.inline
-        def setMarkup(value: MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+        inline def setMarkup(value: MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+        inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
         
-        @scala.inline
-        def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+        inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+        inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
         
-        @scala.inline
-        def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
+        inline def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
+        inline def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
         
-        @scala.inline
-        def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+        inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
         
-        @scala.inline
-        def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+        inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       }
     }
   }

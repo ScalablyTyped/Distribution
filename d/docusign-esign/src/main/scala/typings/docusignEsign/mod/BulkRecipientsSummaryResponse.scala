@@ -32,48 +32,36 @@ trait BulkRecipientsSummaryResponse extends StObject {
 }
 object BulkRecipientsSummaryResponse {
   
-  @scala.inline
-  def apply(): BulkRecipientsSummaryResponse = {
+  inline def apply(): BulkRecipientsSummaryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkRecipientsSummaryResponse]
   }
   
-  @scala.inline
-  implicit class BulkRecipientsSummaryResponseMutableBuilder[Self <: BulkRecipientsSummaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkRecipientsSummaryResponse](x: Self) {
     
-    @scala.inline
-    def setBulkRecipients(value: js.Array[BulkRecipient]): Self = StObject.set(x, "bulkRecipients", value.asInstanceOf[js.Any])
+    inline def setBulkRecipients(value: js.Array[BulkRecipient]): Self = StObject.set(x, "bulkRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkRecipientsCount(value: String): Self = StObject.set(x, "bulkRecipientsCount", value.asInstanceOf[js.Any])
+    inline def setBulkRecipientsCount(value: String): Self = StObject.set(x, "bulkRecipientsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkRecipientsCountUndefined: Self = StObject.set(x, "bulkRecipientsCount", js.undefined)
+    inline def setBulkRecipientsCountUndefined: Self = StObject.set(x, "bulkRecipientsCount", js.undefined)
     
-    @scala.inline
-    def setBulkRecipientsUndefined: Self = StObject.set(x, "bulkRecipients", js.undefined)
+    inline def setBulkRecipientsUndefined: Self = StObject.set(x, "bulkRecipients", js.undefined)
     
-    @scala.inline
-    def setBulkRecipientsUri(value: String): Self = StObject.set(x, "bulkRecipientsUri", value.asInstanceOf[js.Any])
+    inline def setBulkRecipientsUri(value: String): Self = StObject.set(x, "bulkRecipientsUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkRecipientsUriUndefined: Self = StObject.set(x, "bulkRecipientsUri", js.undefined)
+    inline def setBulkRecipientsUriUndefined: Self = StObject.set(x, "bulkRecipientsUri", js.undefined)
     
-    @scala.inline
-    def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value :_*))
+    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: js.Array[
           /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
         ]
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setErrorDetailsVarargs(
+    inline def setErrorDetailsVarargs(
       value: (/* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails)*
     ): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
   }

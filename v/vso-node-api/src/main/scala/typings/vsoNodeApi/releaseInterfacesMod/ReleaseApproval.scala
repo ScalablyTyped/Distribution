@@ -99,8 +99,7 @@ trait ReleaseApproval extends StObject {
 }
 object ReleaseApproval {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approvalType: ApprovalType,
     approvedBy: IdentityRef,
     approver: IdentityRef,
@@ -125,67 +124,46 @@ object ReleaseApproval {
     __obj.asInstanceOf[ReleaseApproval]
   }
   
-  @scala.inline
-  implicit class ReleaseApprovalMutableBuilder[Self <: ReleaseApproval] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseApproval](x: Self) {
     
-    @scala.inline
-    def setApprovalType(value: ApprovalType): Self = StObject.set(x, "approvalType", value.asInstanceOf[js.Any])
+    inline def setApprovalType(value: ApprovalType): Self = StObject.set(x, "approvalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedBy(value: IdentityRef): Self = StObject.set(x, "approvedBy", value.asInstanceOf[js.Any])
+    inline def setApprovedBy(value: IdentityRef): Self = StObject.set(x, "approvedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
+    inline def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
+    inline def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistory(value: js.Array[ReleaseApprovalHistory]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[ReleaseApprovalHistory]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryVarargs(value: ReleaseApprovalHistory*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: ReleaseApprovalHistory*): Self = StObject.set(x, "history", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutomated(value: Boolean): Self = StObject.set(x, "isAutomated", value.asInstanceOf[js.Any])
+    inline def setIsAutomated(value: Boolean): Self = StObject.set(x, "isAutomated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNotificationOn(value: Boolean): Self = StObject.set(x, "isNotificationOn", value.asInstanceOf[js.Any])
+    inline def setIsNotificationOn(value: Boolean): Self = StObject.set(x, "isNotificationOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: ReleaseShallowReference): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: ReleaseShallowReference): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinition", value.asInstanceOf[js.Any])
+    inline def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseEnvironment(value: ReleaseEnvironmentShallowReference): Self = StObject.set(x, "releaseEnvironment", value.asInstanceOf[js.Any])
+    inline def setReleaseEnvironment(value: ReleaseEnvironmentShallowReference): Self = StObject.set(x, "releaseEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ApprovalStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ApprovalStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialNumber(value: Double): Self = StObject.set(x, "trialNumber", value.asInstanceOf[js.Any])
+    inline def setTrialNumber(value: Double): Self = StObject.set(x, "trialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -18,17 +18,14 @@ object typesInvalidRepositoryTriggerBranchNameExceptionMod {
   }
   object InvalidRepositoryTriggerBranchNameException {
     
-    @scala.inline
-    def apply(): InvalidRepositoryTriggerBranchNameException = {
+    inline def apply(): InvalidRepositoryTriggerBranchNameException = {
       val __obj = js.Dynamic.literal(name = "InvalidRepositoryTriggerBranchNameException")
       __obj.asInstanceOf[InvalidRepositoryTriggerBranchNameException]
     }
     
-    @scala.inline
-    implicit class InvalidRepositoryTriggerBranchNameExceptionMutableBuilder[Self <: InvalidRepositoryTriggerBranchNameException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRepositoryTriggerBranchNameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryTriggerBranchNameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

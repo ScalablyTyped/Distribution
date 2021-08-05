@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait textDecoration extends StObject
 object textDecoration {
   
-  @scala.inline
-  def textDecorationBlink: `4` = 4.asInstanceOf[`4`]
+  inline def textDecorationBlink: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def textDecorationLineThrough: `3` = 3.asInstanceOf[`3`]
+  inline def textDecorationLineThrough: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def textDecorationNone: `0` = 0.asInstanceOf[`0`]
+  inline def textDecorationNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def textDecorationOverline: `2` = 2.asInstanceOf[`2`]
+  inline def textDecorationOverline: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def textDecorationUnderline: `1` = 1.asInstanceOf[`1`]
+  inline def textDecorationUnderline: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def textDecoration_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def textDecoration_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

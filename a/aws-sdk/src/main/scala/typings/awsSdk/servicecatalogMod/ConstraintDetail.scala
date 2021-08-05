@@ -38,49 +38,35 @@ trait ConstraintDetail extends StObject {
 }
 object ConstraintDetail {
   
-  @scala.inline
-  def apply(): ConstraintDetail = {
+  inline def apply(): ConstraintDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstraintDetail]
   }
   
-  @scala.inline
-  implicit class ConstraintDetailMutableBuilder[Self <: ConstraintDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ConstraintDetail](x: Self) {
     
-    @scala.inline
-    def setConstraintId(value: Id): Self = StObject.set(x, "ConstraintId", value.asInstanceOf[js.Any])
+    inline def setConstraintId(value: Id): Self = StObject.set(x, "ConstraintId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintIdUndefined: Self = StObject.set(x, "ConstraintId", js.undefined)
+    inline def setConstraintIdUndefined: Self = StObject.set(x, "ConstraintId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: ConstraintDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ConstraintDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setOwner(value: AccountId): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: AccountId): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
-    @scala.inline
-    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioIdUndefined: Self = StObject.set(x, "PortfolioId", js.undefined)
+    inline def setPortfolioIdUndefined: Self = StObject.set(x, "PortfolioId", js.undefined)
     
-    @scala.inline
-    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
     
-    @scala.inline
-    def setType(value: ConstraintType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConstraintType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

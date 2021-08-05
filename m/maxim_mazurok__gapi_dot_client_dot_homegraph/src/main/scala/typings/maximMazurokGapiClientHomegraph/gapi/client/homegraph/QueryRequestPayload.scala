@@ -11,22 +11,17 @@ trait QueryRequestPayload extends StObject {
 }
 object QueryRequestPayload {
   
-  @scala.inline
-  def apply(): QueryRequestPayload = {
+  inline def apply(): QueryRequestPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRequestPayload]
   }
   
-  @scala.inline
-  implicit class QueryRequestPayloadMutableBuilder[Self <: QueryRequestPayload] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRequestPayload](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[AgentDeviceId]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[AgentDeviceId]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: AgentDeviceId*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: AgentDeviceId*): Self = StObject.set(x, "devices", js.Array(value :_*))
   }
 }

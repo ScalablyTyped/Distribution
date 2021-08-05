@@ -28,52 +28,37 @@ trait NotificationMessageTemplate
 }
 object NotificationMessageTemplate {
   
-  @scala.inline
-  def apply(): NotificationMessageTemplate = {
+  inline def apply(): NotificationMessageTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationMessageTemplate]
   }
   
-  @scala.inline
-  implicit class NotificationMessageTemplateMutableBuilder[Self <: NotificationMessageTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationMessageTemplate](x: Self) {
     
-    @scala.inline
-    def setBrandingOptions(value: NotificationTemplateBrandingOptions): Self = StObject.set(x, "brandingOptions", value.asInstanceOf[js.Any])
+    inline def setBrandingOptions(value: NotificationTemplateBrandingOptions): Self = StObject.set(x, "brandingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandingOptionsUndefined: Self = StObject.set(x, "brandingOptions", js.undefined)
+    inline def setBrandingOptionsUndefined: Self = StObject.set(x, "brandingOptions", js.undefined)
     
-    @scala.inline
-    def setDefaultLocale(value: NullableOption[String]): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+    inline def setDefaultLocale(value: NullableOption[String]): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLocaleNull: Self = StObject.set(x, "defaultLocale", null)
+    inline def setDefaultLocaleNull: Self = StObject.set(x, "defaultLocale", null)
     
-    @scala.inline
-    def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+    inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setLocalizedNotificationMessages(value: NullableOption[js.Array[LocalizedNotificationMessage]]): Self = StObject.set(x, "localizedNotificationMessages", value.asInstanceOf[js.Any])
+    inline def setLocalizedNotificationMessages(value: NullableOption[js.Array[LocalizedNotificationMessage]]): Self = StObject.set(x, "localizedNotificationMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedNotificationMessagesNull: Self = StObject.set(x, "localizedNotificationMessages", null)
+    inline def setLocalizedNotificationMessagesNull: Self = StObject.set(x, "localizedNotificationMessages", null)
     
-    @scala.inline
-    def setLocalizedNotificationMessagesUndefined: Self = StObject.set(x, "localizedNotificationMessages", js.undefined)
+    inline def setLocalizedNotificationMessagesUndefined: Self = StObject.set(x, "localizedNotificationMessages", js.undefined)
     
-    @scala.inline
-    def setLocalizedNotificationMessagesVarargs(value: LocalizedNotificationMessage*): Self = StObject.set(x, "localizedNotificationMessages", js.Array(value :_*))
+    inline def setLocalizedNotificationMessagesVarargs(value: LocalizedNotificationMessage*): Self = StObject.set(x, "localizedNotificationMessages", js.Array(value :_*))
   }
 }

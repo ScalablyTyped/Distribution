@@ -18,16 +18,13 @@ trait ASPxClientRatingControlItemClickEventArgs
 }
 object ASPxClientRatingControlItemClickEventArgs {
   
-  @scala.inline
-  def apply(index: Double, processOnServer: Boolean): ASPxClientRatingControlItemClickEventArgs = {
+  inline def apply(index: Double, processOnServer: Boolean): ASPxClientRatingControlItemClickEventArgs = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRatingControlItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRatingControlItemClickEventArgsMutableBuilder[Self <: ASPxClientRatingControlItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRatingControlItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

@@ -20,28 +20,21 @@ trait AppsListInstallationReposForAuthenticatedUserEndpoint extends StObject {
 }
 object AppsListInstallationReposForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(installation_id: Double): AppsListInstallationReposForAuthenticatedUserEndpoint = {
+  inline def apply(installation_id: Double): AppsListInstallationReposForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsListInstallationReposForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsListInstallationReposForAuthenticatedUserEndpointMutableBuilder[Self <: AppsListInstallationReposForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsListInstallationReposForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
+    inline def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
   }
 }

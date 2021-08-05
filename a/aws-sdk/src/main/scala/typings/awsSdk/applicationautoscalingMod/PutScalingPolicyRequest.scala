@@ -45,8 +45,7 @@ trait PutScalingPolicyRequest extends StObject {
 }
 object PutScalingPolicyRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PolicyName: PolicyName,
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
@@ -56,37 +55,26 @@ object PutScalingPolicyRequest {
     __obj.asInstanceOf[PutScalingPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutScalingPolicyRequestMutableBuilder[Self <: PutScalingPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutScalingPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
+    inline def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
+    inline def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepScalingPolicyConfiguration(value: StepScalingPolicyConfiguration): Self = StObject.set(x, "StepScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+    inline def setStepScalingPolicyConfiguration(value: StepScalingPolicyConfiguration): Self = StObject.set(x, "StepScalingPolicyConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepScalingPolicyConfigurationUndefined: Self = StObject.set(x, "StepScalingPolicyConfiguration", js.undefined)
+    inline def setStepScalingPolicyConfigurationUndefined: Self = StObject.set(x, "StepScalingPolicyConfiguration", js.undefined)
     
-    @scala.inline
-    def setTargetTrackingScalingPolicyConfiguration(value: TargetTrackingScalingPolicyConfiguration): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+    inline def setTargetTrackingScalingPolicyConfiguration(value: TargetTrackingScalingPolicyConfiguration): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
+    inline def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
   }
 }

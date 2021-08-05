@@ -22,23 +22,18 @@ object datePickerDriverMod {
   }
   object DatePickerDriver {
     
-    @scala.inline
-    def apply(calendarDriver: CalendarDriver, driver: Exists, exists: () => Boolean, inputDriver: InputDriver): DatePickerDriver = {
+    inline def apply(calendarDriver: CalendarDriver, driver: Exists, exists: () => Boolean, inputDriver: InputDriver): DatePickerDriver = {
       val __obj = js.Dynamic.literal(calendarDriver = calendarDriver.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any], exists = js.Any.fromFunction0(exists), inputDriver = inputDriver.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatePickerDriver]
     }
     
-    @scala.inline
-    implicit class DatePickerDriverMutableBuilder[Self <: DatePickerDriver] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerDriver](x: Self) {
       
-      @scala.inline
-      def setCalendarDriver(value: CalendarDriver): Self = StObject.set(x, "calendarDriver", value.asInstanceOf[js.Any])
+      inline def setCalendarDriver(value: CalendarDriver): Self = StObject.set(x, "calendarDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriver(value: Exists): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: Exists): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
+      inline def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
     }
   }
 }

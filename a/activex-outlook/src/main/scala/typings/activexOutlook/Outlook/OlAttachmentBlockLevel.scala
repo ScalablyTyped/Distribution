@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAttachmentBlockLevel extends StObject
 object OlAttachmentBlockLevel {
   
-  @scala.inline
-  def olAttachmentBlockLevelNone: `0` = 0.asInstanceOf[`0`]
+  inline def olAttachmentBlockLevelNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olAttachmentBlockLevelOpen: `1` = 1.asInstanceOf[`1`]
+  inline def olAttachmentBlockLevelOpen: `1` = 1.asInstanceOf[`1`]
 }

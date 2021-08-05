@@ -26,29 +26,23 @@ trait GoogleCloudSecuritycenterV1p1beta1SecurityMarks extends StObject {
 }
 object GoogleCloudSecuritycenterV1p1beta1SecurityMarks {
   
-  @scala.inline
-  def apply(): GoogleCloudSecuritycenterV1p1beta1SecurityMarks = {
+  inline def apply(): GoogleCloudSecuritycenterV1p1beta1SecurityMarks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1p1beta1SecurityMarks]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSecuritycenterV1p1beta1SecurityMarksMutableBuilder[Self <: GoogleCloudSecuritycenterV1p1beta1SecurityMarks] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSecuritycenterV1p1beta1SecurityMarks](x: Self) {
     
-    @scala.inline
-    def setMarks(
+    inline def setMarks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1SecurityMarks & TopLevel[js.Any]
     ): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+    inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

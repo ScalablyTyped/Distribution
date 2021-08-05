@@ -35,10 +35,8 @@ object mod {
   //=> '35m'
   ```
   */
-  @scala.inline
-  def apply(milliseconds: Double): String = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(milliseconds: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(milliseconds: Double): String = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(milliseconds: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("pretty-ms", JSImport.Namespace)
   @js.native
@@ -111,68 +109,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setColonNotation(value: Boolean): Self = StObject.set(x, "colonNotation", value.asInstanceOf[js.Any])
+      inline def setColonNotation(value: Boolean): Self = StObject.set(x, "colonNotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonNotationUndefined: Self = StObject.set(x, "colonNotation", js.undefined)
+      inline def setColonNotationUndefined: Self = StObject.set(x, "colonNotation", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setFormatSubMilliseconds(value: Boolean): Self = StObject.set(x, "formatSubMilliseconds", value.asInstanceOf[js.Any])
+      inline def setFormatSubMilliseconds(value: Boolean): Self = StObject.set(x, "formatSubMilliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatSubMillisecondsUndefined: Self = StObject.set(x, "formatSubMilliseconds", js.undefined)
+      inline def setFormatSubMillisecondsUndefined: Self = StObject.set(x, "formatSubMilliseconds", js.undefined)
       
-      @scala.inline
-      def setKeepDecimalsOnWholeSeconds(value: Boolean): Self = StObject.set(x, "keepDecimalsOnWholeSeconds", value.asInstanceOf[js.Any])
+      inline def setKeepDecimalsOnWholeSeconds(value: Boolean): Self = StObject.set(x, "keepDecimalsOnWholeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepDecimalsOnWholeSecondsUndefined: Self = StObject.set(x, "keepDecimalsOnWholeSeconds", js.undefined)
+      inline def setKeepDecimalsOnWholeSecondsUndefined: Self = StObject.set(x, "keepDecimalsOnWholeSeconds", js.undefined)
       
-      @scala.inline
-      def setMillisecondsDecimalDigits(value: Double): Self = StObject.set(x, "millisecondsDecimalDigits", value.asInstanceOf[js.Any])
+      inline def setMillisecondsDecimalDigits(value: Double): Self = StObject.set(x, "millisecondsDecimalDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecondsDecimalDigitsUndefined: Self = StObject.set(x, "millisecondsDecimalDigits", js.undefined)
+      inline def setMillisecondsDecimalDigitsUndefined: Self = StObject.set(x, "millisecondsDecimalDigits", js.undefined)
       
-      @scala.inline
-      def setSecondsDecimalDigits(value: Double): Self = StObject.set(x, "secondsDecimalDigits", value.asInstanceOf[js.Any])
+      inline def setSecondsDecimalDigits(value: Double): Self = StObject.set(x, "secondsDecimalDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsDecimalDigitsUndefined: Self = StObject.set(x, "secondsDecimalDigits", js.undefined)
+      inline def setSecondsDecimalDigitsUndefined: Self = StObject.set(x, "secondsDecimalDigits", js.undefined)
       
-      @scala.inline
-      def setSeparateMilliseconds(value: Boolean): Self = StObject.set(x, "separateMilliseconds", value.asInstanceOf[js.Any])
+      inline def setSeparateMilliseconds(value: Boolean): Self = StObject.set(x, "separateMilliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparateMillisecondsUndefined: Self = StObject.set(x, "separateMilliseconds", js.undefined)
+      inline def setSeparateMillisecondsUndefined: Self = StObject.set(x, "separateMilliseconds", js.undefined)
       
-      @scala.inline
-      def setUnitCount(value: Double): Self = StObject.set(x, "unitCount", value.asInstanceOf[js.Any])
+      inline def setUnitCount(value: Double): Self = StObject.set(x, "unitCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitCountUndefined: Self = StObject.set(x, "unitCount", js.undefined)
+      inline def setUnitCountUndefined: Self = StObject.set(x, "unitCount", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

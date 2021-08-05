@@ -16,28 +16,21 @@ trait ViaCity extends StObject {
 }
 object ViaCity {
   
-  @scala.inline
-  def apply(adcode: String, citycode: String, districts: js.Array[District], name: String): ViaCity = {
+  inline def apply(adcode: String, citycode: String, districts: js.Array[District], name: String): ViaCity = {
     val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], districts = districts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViaCity]
   }
   
-  @scala.inline
-  implicit class ViaCityMutableBuilder[Self <: ViaCity] (val x: Self) extends AnyVal {
+  extension [Self <: ViaCity](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+    inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistricts(value: js.Array[District]): Self = StObject.set(x, "districts", value.asInstanceOf[js.Any])
+    inline def setDistricts(value: js.Array[District]): Self = StObject.set(x, "districts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistrictsVarargs(value: District*): Self = StObject.set(x, "districts", js.Array(value :_*))
+    inline def setDistrictsVarargs(value: District*): Self = StObject.set(x, "districts", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

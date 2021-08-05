@@ -33,55 +33,39 @@ trait DescribeProductAsAdminOutput extends StObject {
 }
 object DescribeProductAsAdminOutput {
   
-  @scala.inline
-  def apply(): DescribeProductAsAdminOutput = {
+  inline def apply(): DescribeProductAsAdminOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProductAsAdminOutput]
   }
   
-  @scala.inline
-  implicit class DescribeProductAsAdminOutputMutableBuilder[Self <: DescribeProductAsAdminOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProductAsAdminOutput](x: Self) {
     
-    @scala.inline
-    def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
+    inline def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
+    inline def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
     
-    @scala.inline
-    def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
+    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
     
-    @scala.inline
-    def setProductViewDetail(value: ProductViewDetail): Self = StObject.set(x, "ProductViewDetail", value.asInstanceOf[js.Any])
+    inline def setProductViewDetail(value: ProductViewDetail): Self = StObject.set(x, "ProductViewDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductViewDetailUndefined: Self = StObject.set(x, "ProductViewDetail", js.undefined)
+    inline def setProductViewDetailUndefined: Self = StObject.set(x, "ProductViewDetail", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactSummaries(value: ProvisioningArtifactSummaries): Self = StObject.set(x, "ProvisioningArtifactSummaries", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactSummaries(value: ProvisioningArtifactSummaries): Self = StObject.set(x, "ProvisioningArtifactSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactSummariesUndefined: Self = StObject.set(x, "ProvisioningArtifactSummaries", js.undefined)
+    inline def setProvisioningArtifactSummariesUndefined: Self = StObject.set(x, "ProvisioningArtifactSummaries", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactSummariesVarargs(value: ProvisioningArtifactSummary*): Self = StObject.set(x, "ProvisioningArtifactSummaries", js.Array(value :_*))
+    inline def setProvisioningArtifactSummariesVarargs(value: ProvisioningArtifactSummary*): Self = StObject.set(x, "ProvisioningArtifactSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setTagOptions(value: TagOptionDetails): Self = StObject.set(x, "TagOptions", value.asInstanceOf[js.Any])
+    inline def setTagOptions(value: TagOptionDetails): Self = StObject.set(x, "TagOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagOptionsUndefined: Self = StObject.set(x, "TagOptions", js.undefined)
+    inline def setTagOptionsUndefined: Self = StObject.set(x, "TagOptions", js.undefined)
     
-    @scala.inline
-    def setTagOptionsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptions", js.Array(value :_*))
+    inline def setTagOptionsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

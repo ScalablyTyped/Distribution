@@ -20,19 +20,15 @@ trait Telemetry extends StObject {
 }
 object Telemetry {
   
-  @scala.inline
-  def apply(connection: IConnection, logEvent: js.Any => Unit): Telemetry = {
+  inline def apply(connection: IConnection, logEvent: js.Any => Unit): Telemetry = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], logEvent = js.Any.fromFunction1(logEvent))
     __obj.asInstanceOf[Telemetry]
   }
   
-  @scala.inline
-  implicit class TelemetryMutableBuilder[Self <: Telemetry] (val x: Self) extends AnyVal {
+  extension [Self <: Telemetry](x: Self) {
     
-    @scala.inline
-    def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogEvent(value: js.Any => Unit): Self = StObject.set(x, "logEvent", js.Any.fromFunction1(value))
+    inline def setLogEvent(value: js.Any => Unit): Self = StObject.set(x, "logEvent", js.Any.fromFunction1(value))
   }
 }

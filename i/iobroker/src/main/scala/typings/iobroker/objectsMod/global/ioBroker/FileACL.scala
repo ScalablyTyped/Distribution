@@ -18,22 +18,17 @@ trait FileACL extends StObject {
 }
 object FileACL {
   
-  @scala.inline
-  def apply(owner: String, ownerGroup: String, permissions: Double): FileACL = {
+  inline def apply(owner: String, ownerGroup: String, permissions: Double): FileACL = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ownerGroup = ownerGroup.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileACL]
   }
   
-  @scala.inline
-  implicit class FileACLMutableBuilder[Self <: FileACL] (val x: Self) extends AnyVal {
+  extension [Self <: FileACL](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerGroup(value: String): Self = StObject.set(x, "ownerGroup", value.asInstanceOf[js.Any])
+    inline def setOwnerGroup(value: String): Self = StObject.set(x, "ownerGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: Double): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Double): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
   }
 }

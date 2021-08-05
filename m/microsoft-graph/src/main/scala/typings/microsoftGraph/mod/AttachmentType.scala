@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachmentType extends StObject
 object AttachmentType {
   
-  @scala.inline
-  def file: typings.microsoftGraph.microsoftGraphStrings.file = "file".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.file]
+  inline def file: typings.microsoftGraph.microsoftGraphStrings.file = "file".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.file]
   
-  @scala.inline
-  def item: typings.microsoftGraph.microsoftGraphStrings.item = "item".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.item]
+  inline def item: typings.microsoftGraph.microsoftGraphStrings.item = "item".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.item]
   
-  @scala.inline
-  def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
+  inline def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
 }

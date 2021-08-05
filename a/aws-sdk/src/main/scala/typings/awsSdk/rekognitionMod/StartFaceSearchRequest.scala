@@ -38,43 +38,31 @@ trait StartFaceSearchRequest extends StObject {
 }
 object StartFaceSearchRequest {
   
-  @scala.inline
-  def apply(CollectionId: CollectionId, Video: Video): StartFaceSearchRequest = {
+  inline def apply(CollectionId: CollectionId, Video: Video): StartFaceSearchRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Video = Video.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartFaceSearchRequest]
   }
   
-  @scala.inline
-  implicit class StartFaceSearchRequestMutableBuilder[Self <: StartFaceSearchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartFaceSearchRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
+    inline def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
+    inline def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
     
-    @scala.inline
-    def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
+    inline def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
+    inline def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
     
-    @scala.inline
-    def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
+    inline def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
+    inline def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
     
-    @scala.inline
-    def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
   }
 }

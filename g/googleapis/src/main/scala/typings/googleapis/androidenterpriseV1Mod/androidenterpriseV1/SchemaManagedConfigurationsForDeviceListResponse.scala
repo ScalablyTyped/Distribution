@@ -22,28 +22,21 @@ trait SchemaManagedConfigurationsForDeviceListResponse extends StObject {
 }
 object SchemaManagedConfigurationsForDeviceListResponse {
   
-  @scala.inline
-  def apply(): SchemaManagedConfigurationsForDeviceListResponse = {
+  inline def apply(): SchemaManagedConfigurationsForDeviceListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedConfigurationsForDeviceListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaManagedConfigurationsForDeviceListResponseMutableBuilder[Self <: SchemaManagedConfigurationsForDeviceListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedConfigurationsForDeviceListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurationForDevice(value: js.Array[SchemaManagedConfiguration]): Self = StObject.set(x, "managedConfigurationForDevice", value.asInstanceOf[js.Any])
+    inline def setManagedConfigurationForDevice(value: js.Array[SchemaManagedConfiguration]): Self = StObject.set(x, "managedConfigurationForDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationForDeviceUndefined: Self = StObject.set(x, "managedConfigurationForDevice", js.undefined)
+    inline def setManagedConfigurationForDeviceUndefined: Self = StObject.set(x, "managedConfigurationForDevice", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurationForDeviceVarargs(value: SchemaManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForDevice", js.Array(value :_*))
+    inline def setManagedConfigurationForDeviceVarargs(value: SchemaManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForDevice", js.Array(value :_*))
   }
 }

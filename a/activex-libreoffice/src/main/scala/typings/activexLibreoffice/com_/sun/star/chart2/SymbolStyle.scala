@@ -25,12 +25,10 @@ object SymbolStyle {
     *
     * data series.</p>
     */
-  @scala.inline
-  def AUTO: `1` = 1.asInstanceOf[`1`]
+  inline def AUTO: `1` = 1.asInstanceOf[`1`]
   
   /** uses the graphic given in {@link Symbol.Graphic} as symbol. */
-  @scala.inline
-  def GRAPHIC: `4` = 4.asInstanceOf[`4`]
+  inline def GRAPHIC: `4` = 4.asInstanceOf[`4`]
   
   /**
     * Default, no pies are exploded.
@@ -39,14 +37,11 @@ object SymbolStyle {
     *
     * no transparency attribute is evaluated
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** uses the symbol given in the {@link com.sun.star.drawing.PolyPolygonBezierCoords} given in {@link Symbol.PolygonCoords} . */
-  @scala.inline
-  def POLYGON: `3` = 3.asInstanceOf[`3`]
+  inline def POLYGON: `3` = 3.asInstanceOf[`3`]
   
   /** uses one of the standard symbols. Which standard symbol is given in {@link Symbol.StandardSymbol} . */
-  @scala.inline
-  def STANDARD: `2` = 2.asInstanceOf[`2`]
+  inline def STANDARD: `2` = 2.asInstanceOf[`2`]
 }

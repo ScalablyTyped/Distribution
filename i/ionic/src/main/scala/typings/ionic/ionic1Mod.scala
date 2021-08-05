@@ -20,7 +20,7 @@ object ionic1Mod {
   class Ionic1Project protected () extends Project {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
-    var bowerJsonFile: js.UndefOr[BowerJson] = js.native
+    /* protected */ var bowerJsonFile: js.UndefOr[BowerJson] = js.native
     
     def getFrameworkVersion(): js.Promise[js.UndefOr[String]] = js.native
     
@@ -40,29 +40,22 @@ object ionic1Mod {
   }
   object BowerJson {
     
-    @scala.inline
-    def apply(name: String): BowerJson = {
+    inline def apply(name: String): BowerJson = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BowerJson]
     }
     
-    @scala.inline
-    implicit class BowerJsonMutableBuilder[Self <: BowerJson] (val x: Self) extends AnyVal {
+    extension [Self <: BowerJson](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setDevDependencies(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
+      inline def setDevDependencies(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
+      inline def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

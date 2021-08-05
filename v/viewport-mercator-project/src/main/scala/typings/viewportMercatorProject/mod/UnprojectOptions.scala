@@ -12,19 +12,15 @@ trait UnprojectOptions
 }
 object UnprojectOptions {
   
-  @scala.inline
-  def apply(): UnprojectOptions = {
+  inline def apply(): UnprojectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnprojectOptions]
   }
   
-  @scala.inline
-  implicit class UnprojectOptionsMutableBuilder[Self <: UnprojectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnprojectOptions](x: Self) {
     
-    @scala.inline
-    def setTargetZ(value: Double): Self = StObject.set(x, "targetZ", value.asInstanceOf[js.Any])
+    inline def setTargetZ(value: Double): Self = StObject.set(x, "targetZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetZUndefined: Self = StObject.set(x, "targetZ", js.undefined)
+    inline def setTargetZUndefined: Self = StObject.set(x, "targetZ", js.undefined)
   }
 }

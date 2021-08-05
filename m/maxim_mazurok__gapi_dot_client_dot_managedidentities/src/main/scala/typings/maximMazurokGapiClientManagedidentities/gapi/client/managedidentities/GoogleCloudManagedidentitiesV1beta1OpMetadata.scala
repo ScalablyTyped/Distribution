@@ -29,49 +29,35 @@ trait GoogleCloudManagedidentitiesV1beta1OpMetadata extends StObject {
 }
 object GoogleCloudManagedidentitiesV1beta1OpMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudManagedidentitiesV1beta1OpMetadata = {
+  inline def apply(): GoogleCloudManagedidentitiesV1beta1OpMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudManagedidentitiesV1beta1OpMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudManagedidentitiesV1beta1OpMetadataMutableBuilder[Self <: GoogleCloudManagedidentitiesV1beta1OpMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudManagedidentitiesV1beta1OpMetadata](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setRequestedCancellation(value: Boolean): Self = StObject.set(x, "requestedCancellation", value.asInstanceOf[js.Any])
+    inline def setRequestedCancellation(value: Boolean): Self = StObject.set(x, "requestedCancellation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedCancellationUndefined: Self = StObject.set(x, "requestedCancellation", js.undefined)
+    inline def setRequestedCancellationUndefined: Self = StObject.set(x, "requestedCancellation", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+    inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
   }
 }

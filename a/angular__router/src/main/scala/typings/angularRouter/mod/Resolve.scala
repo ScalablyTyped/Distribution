@@ -11,16 +11,13 @@ trait Resolve[T] extends StObject {
 }
 object Resolve {
   
-  @scala.inline
-  def apply[T](resolve: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Resolve[T] = {
+  inline def apply[T](resolve: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Resolve[T] = {
     val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction2(resolve))
     __obj.asInstanceOf[Resolve[T]]
   }
   
-  @scala.inline
-  implicit class ResolveMutableBuilder[Self <: Resolve[?], T] (val x: Self & Resolve[T]) extends AnyVal {
+  extension [Self <: Resolve[?], T](x: Self & Resolve[T]) {
     
-    @scala.inline
-    def setResolve(value: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+    inline def setResolve(value: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
   }
 }

@@ -47,62 +47,44 @@ object tagMod {
   }
   object TagProps {
     
-    @scala.inline
-    def apply(): TagProps = {
+    inline def apply(): TagProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagProps]
     }
     
-    @scala.inline
-    implicit class TagPropsMutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagProps](x: Self) {
       
-      @scala.inline
-      def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSkin(value: neutral | primary | success | warning | error): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: neutral | primary | success | warning | error): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setStroked(value: Boolean): Self = StObject.set(x, "stroked", value.asInstanceOf[js.Any])
+      inline def setStroked(value: Boolean): Self = StObject.set(x, "stroked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokedUndefined: Self = StObject.set(x, "stroked", js.undefined)
+      inline def setStrokedUndefined: Self = StObject.set(x, "stroked", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ColorsComponentsSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ColorsComponentsSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

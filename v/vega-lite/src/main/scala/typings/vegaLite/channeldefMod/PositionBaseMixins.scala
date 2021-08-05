@@ -29,22 +29,17 @@ trait PositionBaseMixins extends StObject {
 }
 object PositionBaseMixins {
   
-  @scala.inline
-  def apply(): PositionBaseMixins = {
+  inline def apply(): PositionBaseMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositionBaseMixins]
   }
   
-  @scala.inline
-  implicit class PositionBaseMixinsMutableBuilder[Self <: PositionBaseMixins] (val x: Self) extends AnyVal {
+  extension [Self <: PositionBaseMixins](x: Self) {
     
-    @scala.inline
-    def setStack(value: StackOffset | Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: StackOffset | Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNull: Self = StObject.set(x, "stack", null)
+    inline def setStackNull: Self = StObject.set(x, "stack", null)
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

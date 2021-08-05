@@ -10,16 +10,13 @@ trait AdWordsBuilder[E] extends StObject {
 }
 object AdWordsBuilder {
   
-  @scala.inline
-  def apply[E](build: () => AdWordsOperation[E]): AdWordsBuilder[E] = {
+  inline def apply[E](build: () => AdWordsOperation[E]): AdWordsBuilder[E] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build))
     __obj.asInstanceOf[AdWordsBuilder[E]]
   }
   
-  @scala.inline
-  implicit class AdWordsBuilderMutableBuilder[Self <: AdWordsBuilder[?], E] (val x: Self & AdWordsBuilder[E]) extends AnyVal {
+  extension [Self <: AdWordsBuilder[?], E](x: Self & AdWordsBuilder[E]) {
     
-    @scala.inline
-    def setBuild(value: () => AdWordsOperation[E]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => AdWordsOperation[E]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
   }
 }

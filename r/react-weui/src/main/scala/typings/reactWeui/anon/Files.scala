@@ -22,8 +22,7 @@ trait Files extends StObject {
 }
 object Files {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     files: js.Array[js.Any],
     lang: MaxError,
     maxCount: Double,
@@ -36,31 +35,22 @@ object Files {
     __obj.asInstanceOf[Files]
   }
   
-  @scala.inline
-  implicit class FilesMutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
+  extension [Self <: Files](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setLang(value: MaxError): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: MaxError): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+    inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: js.Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: js.Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(value: js.Any): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: js.Any): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

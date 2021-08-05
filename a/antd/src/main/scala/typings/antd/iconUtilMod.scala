@@ -12,6 +12,5 @@ object iconUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultiplePrefixCls: ClearIcon): ItemIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultiplePrefixCls.asInstanceOf[js.Any]).asInstanceOf[ItemIcon]
+  inline def default(hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultiplePrefixCls: ClearIcon): ItemIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultiplePrefixCls.asInstanceOf[js.Any]).asInstanceOf[ItemIcon]
 }

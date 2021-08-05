@@ -8,16 +8,13 @@ object folderHashStrings {
   
   @js.native
   sealed trait base64 extends StObject
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait binary extends StObject
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait hex extends StObject
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
 }

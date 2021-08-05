@@ -17,31 +17,23 @@ trait FireParameters extends StObject {
 }
 object FireParameters {
   
-  @scala.inline
-  def apply(channel: String, message: js.Any): FireParameters = {
+  inline def apply(channel: String, message: js.Any): FireParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[FireParameters]
   }
   
-  @scala.inline
-  implicit class FireParametersMutableBuilder[Self <: FireParameters] (val x: Self) extends AnyVal {
+  extension [Self <: FireParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setSendByPost(value: Boolean): Self = StObject.set(x, "sendByPost", value.asInstanceOf[js.Any])
+    inline def setSendByPost(value: Boolean): Self = StObject.set(x, "sendByPost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendByPostUndefined: Self = StObject.set(x, "sendByPost", js.undefined)
+    inline def setSendByPostUndefined: Self = StObject.set(x, "sendByPost", js.undefined)
   }
 }

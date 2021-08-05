@@ -16,25 +16,19 @@ trait FontSizeLineHeight extends StObject {
 }
 object FontSizeLineHeight {
   
-  @scala.inline
-  def apply(color: String, fontSize: Double, lineHeight: Double, textAlign: String): FontSizeLineHeight = {
+  inline def apply(color: String, fontSize: Double, lineHeight: Double, textAlign: String): FontSizeLineHeight = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSizeLineHeight]
   }
   
-  @scala.inline
-  implicit class FontSizeLineHeightMutableBuilder[Self <: FontSizeLineHeight] (val x: Self) extends AnyVal {
+  extension [Self <: FontSizeLineHeight](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }
 }

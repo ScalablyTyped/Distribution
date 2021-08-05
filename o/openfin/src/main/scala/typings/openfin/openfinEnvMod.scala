@@ -41,10 +41,10 @@ object openfinEnvMod {
     /* CompleteClass */
     override def raiseEvent(eventName: String, eventArgs: js.Any): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var raiseEventAsync: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var resolveUrl: js.Any = js.native
     
     /* CompleteClass */
@@ -58,14 +58,13 @@ object openfinEnvMod {
     extends StObject
        with Environment {
     
-    var raiseEventAsync: js.Any
+    /* private */ var raiseEventAsync: js.Any
     
-    var resolveUrl: js.Any
+    /* private */ var resolveUrl: js.Any
   }
   object OpenFinEnvironment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createChildWindow: js.Any => js.Promise[js.Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
@@ -83,14 +82,11 @@ object openfinEnvMod {
       __obj.asInstanceOf[OpenFinEnvironment]
     }
     
-    @scala.inline
-    implicit class OpenFinEnvironmentMutableBuilder[Self <: OpenFinEnvironment] (val x: Self) extends AnyVal {
+    extension [Self <: OpenFinEnvironment](x: Self) {
       
-      @scala.inline
-      def setRaiseEventAsync(value: js.Any): Self = StObject.set(x, "raiseEventAsync", value.asInstanceOf[js.Any])
+      inline def setRaiseEventAsync(value: js.Any): Self = StObject.set(x, "raiseEventAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveUrl(value: js.Any): Self = StObject.set(x, "resolveUrl", value.asInstanceOf[js.Any])
+      inline def setResolveUrl(value: js.Any): Self = StObject.set(x, "resolveUrl", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -97,10 +97,8 @@ object ContinueStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(continueKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): typings.typescriptServices.TypeScript.ContinueStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(continueKeyword.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ContinueStatementSyntax]
+  inline def create(continueKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): typings.typescriptServices.TypeScript.ContinueStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(continueKeyword.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ContinueStatementSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ContinueStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ContinueStatementSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ContinueStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ContinueStatementSyntax]
 }

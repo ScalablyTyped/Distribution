@@ -42,8 +42,7 @@ object mod {
   }
   object CodeFlask {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addLanguage: (String, Languages_) => Unit,
       getCode: () => String,
       onUpdate: js.Function1[/* code */ String, Unit] => Unit,
@@ -53,20 +52,15 @@ object mod {
       __obj.asInstanceOf[CodeFlask]
     }
     
-    @scala.inline
-    implicit class CodeFlaskMutableBuilder[Self <: CodeFlask] (val x: Self) extends AnyVal {
+    extension [Self <: CodeFlask](x: Self) {
       
-      @scala.inline
-      def setAddLanguage(value: (String, Languages_) => Unit): Self = StObject.set(x, "addLanguage", js.Any.fromFunction2(value))
+      inline def setAddLanguage(value: (String, Languages_) => Unit): Self = StObject.set(x, "addLanguage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+      inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUpdate(value: js.Function1[/* code */ String, Unit] => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: js.Function1[/* code */ String, Unit] => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateCode(value: String => Unit): Self = StObject.set(x, "updateCode", js.Any.fromFunction1(value))
+      inline def setUpdateCode(value: String => Unit): Self = StObject.set(x, "updateCode", js.Any.fromFunction1(value))
     }
   }
   
@@ -100,92 +94,64 @@ object mod {
   }
   object options {
     
-    @scala.inline
-    def apply(): options = {
+    inline def apply(): options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[options]
     }
     
-    @scala.inline
-    implicit class optionsMutableBuilder[Self <: options] (val x: Self) extends AnyVal {
+    extension [Self <: options](x: Self) {
       
-      @scala.inline
-      def setAreaId(value: String): Self = StObject.set(x, "areaId", value.asInstanceOf[js.Any])
+      inline def setAreaId(value: String): Self = StObject.set(x, "areaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAreaIdUndefined: Self = StObject.set(x, "areaId", js.undefined)
+      inline def setAreaIdUndefined: Self = StObject.set(x, "areaId", js.undefined)
       
-      @scala.inline
-      def setAriaLabelledby(value: String): Self = StObject.set(x, "ariaLabelledby", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledby(value: String): Self = StObject.set(x, "ariaLabelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledbyUndefined: Self = StObject.set(x, "ariaLabelledby", js.undefined)
+      inline def setAriaLabelledbyUndefined: Self = StObject.set(x, "ariaLabelledby", js.undefined)
       
-      @scala.inline
-      def setDefaultTheme(value: Boolean): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
+      inline def setDefaultTheme(value: Boolean): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultThemeUndefined: Self = StObject.set(x, "defaultTheme", js.undefined)
+      inline def setDefaultThemeUndefined: Self = StObject.set(x, "defaultTheme", js.undefined)
       
-      @scala.inline
-      def setEnableAutocorrect(value: Boolean): Self = StObject.set(x, "enableAutocorrect", value.asInstanceOf[js.Any])
+      inline def setEnableAutocorrect(value: Boolean): Self = StObject.set(x, "enableAutocorrect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAutocorrectUndefined: Self = StObject.set(x, "enableAutocorrect", js.undefined)
+      inline def setEnableAutocorrectUndefined: Self = StObject.set(x, "enableAutocorrect", js.undefined)
       
-      @scala.inline
-      def setHandleNewLineIndentation(value: Boolean): Self = StObject.set(x, "handleNewLineIndentation", value.asInstanceOf[js.Any])
+      inline def setHandleNewLineIndentation(value: Boolean): Self = StObject.set(x, "handleNewLineIndentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleNewLineIndentationUndefined: Self = StObject.set(x, "handleNewLineIndentation", js.undefined)
+      inline def setHandleNewLineIndentationUndefined: Self = StObject.set(x, "handleNewLineIndentation", js.undefined)
       
-      @scala.inline
-      def setHandleSelfClosingCharacters(value: Boolean): Self = StObject.set(x, "handleSelfClosingCharacters", value.asInstanceOf[js.Any])
+      inline def setHandleSelfClosingCharacters(value: Boolean): Self = StObject.set(x, "handleSelfClosingCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleSelfClosingCharactersUndefined: Self = StObject.set(x, "handleSelfClosingCharacters", js.undefined)
+      inline def setHandleSelfClosingCharactersUndefined: Self = StObject.set(x, "handleSelfClosingCharacters", js.undefined)
       
-      @scala.inline
-      def setHandleTabs(value: Boolean): Self = StObject.set(x, "handleTabs", value.asInstanceOf[js.Any])
+      inline def setHandleTabs(value: Boolean): Self = StObject.set(x, "handleTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleTabsUndefined: Self = StObject.set(x, "handleTabs", js.undefined)
+      inline def setHandleTabsUndefined: Self = StObject.set(x, "handleTabs", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
+      inline def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
+      inline def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
       
-      @scala.inline
-      def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+      inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+      inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setStyleParent(value: ShadowRoot): Self = StObject.set(x, "styleParent", value.asInstanceOf[js.Any])
+      inline def setStyleParent(value: ShadowRoot): Self = StObject.set(x, "styleParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleParentUndefined: Self = StObject.set(x, "styleParent", js.undefined)
+      inline def setStyleParentUndefined: Self = StObject.set(x, "styleParent", js.undefined)
       
-      @scala.inline
-      def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+      inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+      inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     }
   }
 }

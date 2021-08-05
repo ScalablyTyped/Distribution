@@ -14,20 +14,16 @@ object typesMod {
   }
   object Verification {
     
-    @scala.inline
-    def apply(isPotentiallyValid: Boolean, isValid: Boolean): Verification = {
+    inline def apply(isPotentiallyValid: Boolean, isValid: Boolean): Verification = {
       val __obj = js.Dynamic.literal(isPotentiallyValid = isPotentiallyValid.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Verification]
     }
     
-    @scala.inline
-    implicit class VerificationMutableBuilder[Self <: Verification] (val x: Self) extends AnyVal {
+    extension [Self <: Verification](x: Self) {
       
-      @scala.inline
-      def setIsPotentiallyValid(value: Boolean): Self = StObject.set(x, "isPotentiallyValid", value.asInstanceOf[js.Any])
+      inline def setIsPotentiallyValid(value: Boolean): Self = StObject.set(x, "isPotentiallyValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
 }

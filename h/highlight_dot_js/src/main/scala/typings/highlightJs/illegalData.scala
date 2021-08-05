@@ -14,22 +14,17 @@ trait illegalData extends StObject {
 }
 object illegalData {
   
-  @scala.inline
-  def apply(context: String, mode: CompiledMode, msg: String): illegalData = {
+  inline def apply(context: String, mode: CompiledMode, msg: String): illegalData = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
     __obj.asInstanceOf[illegalData]
   }
   
-  @scala.inline
-  implicit class illegalDataMutableBuilder[Self <: illegalData] (val x: Self) extends AnyVal {
+  extension [Self <: illegalData](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: CompiledMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: CompiledMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }
 }

@@ -69,158 +69,108 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdditionalPass(value: () => Unit): Self = StObject.set(x, "additionalPass", js.Any.fromFunction0(value))
+      inline def setAdditionalPass(value: () => Unit): Self = StObject.set(x, "additionalPass", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAdditionalPassUndefined: Self = StObject.set(x, "additionalPass", js.undefined)
+      inline def setAdditionalPassUndefined: Self = StObject.set(x, "additionalPass", js.undefined)
       
-      @scala.inline
-      def setAfterCompile(value: () => Unit): Self = StObject.set(x, "afterCompile", js.Any.fromFunction0(value))
+      inline def setAfterCompile(value: () => Unit): Self = StObject.set(x, "afterCompile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterCompileUndefined: Self = StObject.set(x, "afterCompile", js.undefined)
+      inline def setAfterCompileUndefined: Self = StObject.set(x, "afterCompile", js.undefined)
       
-      @scala.inline
-      def setAfterEmit(value: () => Unit): Self = StObject.set(x, "afterEmit", js.Any.fromFunction0(value))
+      inline def setAfterEmit(value: () => Unit): Self = StObject.set(x, "afterEmit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterEmitUndefined: Self = StObject.set(x, "afterEmit", js.undefined)
+      inline def setAfterEmitUndefined: Self = StObject.set(x, "afterEmit", js.undefined)
       
-      @scala.inline
-      def setAfterEnvironment(value: () => Unit): Self = StObject.set(x, "afterEnvironment", js.Any.fromFunction0(value))
+      inline def setAfterEnvironment(value: () => Unit): Self = StObject.set(x, "afterEnvironment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterEnvironmentUndefined: Self = StObject.set(x, "afterEnvironment", js.undefined)
+      inline def setAfterEnvironmentUndefined: Self = StObject.set(x, "afterEnvironment", js.undefined)
       
-      @scala.inline
-      def setAfterPlugins(value: () => Unit): Self = StObject.set(x, "afterPlugins", js.Any.fromFunction0(value))
+      inline def setAfterPlugins(value: () => Unit): Self = StObject.set(x, "afterPlugins", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterPluginsUndefined: Self = StObject.set(x, "afterPlugins", js.undefined)
+      inline def setAfterPluginsUndefined: Self = StObject.set(x, "afterPlugins", js.undefined)
       
-      @scala.inline
-      def setAfterResolvers(value: () => Unit): Self = StObject.set(x, "afterResolvers", js.Any.fromFunction0(value))
+      inline def setAfterResolvers(value: () => Unit): Self = StObject.set(x, "afterResolvers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterResolversUndefined: Self = StObject.set(x, "afterResolvers", js.undefined)
+      inline def setAfterResolversUndefined: Self = StObject.set(x, "afterResolvers", js.undefined)
       
-      @scala.inline
-      def setBeforeCompile(value: () => Unit): Self = StObject.set(x, "beforeCompile", js.Any.fromFunction0(value))
+      inline def setBeforeCompile(value: () => Unit): Self = StObject.set(x, "beforeCompile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeCompileUndefined: Self = StObject.set(x, "beforeCompile", js.undefined)
+      inline def setBeforeCompileUndefined: Self = StObject.set(x, "beforeCompile", js.undefined)
       
-      @scala.inline
-      def setBeforeRun(value: () => Unit): Self = StObject.set(x, "beforeRun", js.Any.fromFunction0(value))
+      inline def setBeforeRun(value: () => Unit): Self = StObject.set(x, "beforeRun", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeRunUndefined: Self = StObject.set(x, "beforeRun", js.undefined)
+      inline def setBeforeRunUndefined: Self = StObject.set(x, "beforeRun", js.undefined)
       
-      @scala.inline
-      def setCompilation(value: () => Unit): Self = StObject.set(x, "compilation", js.Any.fromFunction0(value))
+      inline def setCompilation(value: () => Unit): Self = StObject.set(x, "compilation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompilationUndefined: Self = StObject.set(x, "compilation", js.undefined)
+      inline def setCompilationUndefined: Self = StObject.set(x, "compilation", js.undefined)
       
-      @scala.inline
-      def setCompile(value: () => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
+      inline def setCompile(value: () => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
+      inline def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
       
-      @scala.inline
-      def setContextModuleFactory(value: () => Unit): Self = StObject.set(x, "contextModuleFactory", js.Any.fromFunction0(value))
+      inline def setContextModuleFactory(value: () => Unit): Self = StObject.set(x, "contextModuleFactory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContextModuleFactoryUndefined: Self = StObject.set(x, "contextModuleFactory", js.undefined)
+      inline def setContextModuleFactoryUndefined: Self = StObject.set(x, "contextModuleFactory", js.undefined)
       
-      @scala.inline
-      def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+      inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setEmit(value: () => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction0(value))
+      inline def setEmit(value: () => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmitUndefined: Self = StObject.set(x, "emit", js.undefined)
+      inline def setEmitUndefined: Self = StObject.set(x, "emit", js.undefined)
       
-      @scala.inline
-      def setEntryOption(value: () => Unit): Self = StObject.set(x, "entryOption", js.Any.fromFunction0(value))
+      inline def setEntryOption(value: () => Unit): Self = StObject.set(x, "entryOption", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEntryOptionUndefined: Self = StObject.set(x, "entryOption", js.undefined)
+      inline def setEntryOptionUndefined: Self = StObject.set(x, "entryOption", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: () => Unit): Self = StObject.set(x, "environment", js.Any.fromFunction0(value))
+      inline def setEnvironment(value: () => Unit): Self = StObject.set(x, "environment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setFailed(value: () => Unit): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
+      inline def setFailed(value: () => Unit): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+      inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: () => Unit): Self = StObject.set(x, "invalid", js.Any.fromFunction0(value))
+      inline def setInvalid(value: () => Unit): Self = StObject.set(x, "invalid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setMake(value: () => Unit): Self = StObject.set(x, "make", js.Any.fromFunction0(value))
+      inline def setMake(value: () => Unit): Self = StObject.set(x, "make", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMakeUndefined: Self = StObject.set(x, "make", js.undefined)
+      inline def setMakeUndefined: Self = StObject.set(x, "make", js.undefined)
       
-      @scala.inline
-      def setNormalModuleFactory(value: () => Unit): Self = StObject.set(x, "normalModuleFactory", js.Any.fromFunction0(value))
+      inline def setNormalModuleFactory(value: () => Unit): Self = StObject.set(x, "normalModuleFactory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNormalModuleFactoryUndefined: Self = StObject.set(x, "normalModuleFactory", js.undefined)
+      inline def setNormalModuleFactoryUndefined: Self = StObject.set(x, "normalModuleFactory", js.undefined)
       
-      @scala.inline
-      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+      inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
       
-      @scala.inline
-      def setShouldEmit(value: () => Unit): Self = StObject.set(x, "shouldEmit", js.Any.fromFunction0(value))
+      inline def setShouldEmit(value: () => Unit): Self = StObject.set(x, "shouldEmit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldEmitUndefined: Self = StObject.set(x, "shouldEmit", js.undefined)
+      inline def setShouldEmitUndefined: Self = StObject.set(x, "shouldEmit", js.undefined)
       
-      @scala.inline
-      def setThisCompilation(value: () => Unit): Self = StObject.set(x, "thisCompilation", js.Any.fromFunction0(value))
+      inline def setThisCompilation(value: () => Unit): Self = StObject.set(x, "thisCompilation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThisCompilationUndefined: Self = StObject.set(x, "thisCompilation", js.undefined)
+      inline def setThisCompilationUndefined: Self = StObject.set(x, "thisCompilation", js.undefined)
       
-      @scala.inline
-      def setWatchClose(value: () => Unit): Self = StObject.set(x, "watchClose", js.Any.fromFunction0(value))
+      inline def setWatchClose(value: () => Unit): Self = StObject.set(x, "watchClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWatchCloseUndefined: Self = StObject.set(x, "watchClose", js.undefined)
+      inline def setWatchCloseUndefined: Self = StObject.set(x, "watchClose", js.undefined)
       
-      @scala.inline
-      def setWatchRun(value: () => Unit): Self = StObject.set(x, "watchRun", js.Any.fromFunction0(value))
+      inline def setWatchRun(value: () => Unit): Self = StObject.set(x, "watchRun", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWatchRunUndefined: Self = StObject.set(x, "watchRun", js.undefined)
+      inline def setWatchRunUndefined: Self = StObject.set(x, "watchRun", js.undefined)
     }
   }
 }

@@ -24,12 +24,9 @@ object httpModuleMod {
   @js.native
   class JsonpModule () extends StObject
   
-  @scala.inline
-  def createDefaultCookieXSRFStrategy(): CookieXSRFStrategy = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultCookieXSRFStrategy")().asInstanceOf[CookieXSRFStrategy]
+  inline def createDefaultCookieXSRFStrategy(): CookieXSRFStrategy = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultCookieXSRFStrategy")().asInstanceOf[CookieXSRFStrategy]
   
-  @scala.inline
-  def httpFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("httpFactory")(xhrBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[Http]
+  inline def httpFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("httpFactory")(xhrBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[Http]
   
-  @scala.inline
-  def jsonpFactory(jsonpBackend: JSONPBackend, requestOptions: RequestOptions): Jsonp = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonpFactory")(jsonpBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[Jsonp]
+  inline def jsonpFactory(jsonpBackend: JSONPBackend, requestOptions: RequestOptions): Jsonp = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonpFactory")(jsonpBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[Jsonp]
 }

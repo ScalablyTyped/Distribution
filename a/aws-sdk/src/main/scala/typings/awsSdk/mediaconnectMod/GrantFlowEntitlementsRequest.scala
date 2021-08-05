@@ -18,22 +18,17 @@ trait GrantFlowEntitlementsRequest extends StObject {
 }
 object GrantFlowEntitlementsRequest {
   
-  @scala.inline
-  def apply(Entitlements: listOfGrantEntitlementRequest, FlowArn: string): GrantFlowEntitlementsRequest = {
+  inline def apply(Entitlements: listOfGrantEntitlementRequest, FlowArn: string): GrantFlowEntitlementsRequest = {
     val __obj = js.Dynamic.literal(Entitlements = Entitlements.asInstanceOf[js.Any], FlowArn = FlowArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantFlowEntitlementsRequest]
   }
   
-  @scala.inline
-  implicit class GrantFlowEntitlementsRequestMutableBuilder[Self <: GrantFlowEntitlementsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GrantFlowEntitlementsRequest](x: Self) {
     
-    @scala.inline
-    def setEntitlements(value: listOfGrantEntitlementRequest): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
+    inline def setEntitlements(value: listOfGrantEntitlementRequest): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementsVarargs(value: GrantEntitlementRequest*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: GrantEntitlementRequest*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
   }
 }

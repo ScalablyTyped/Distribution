@@ -65,32 +65,24 @@ object reflectionsDeclarationMod {
   }
   object DeclarationHierarchy {
     
-    @scala.inline
-    def apply(types: js.Array[Type]): DeclarationHierarchy = {
+    inline def apply(types: js.Array[Type]): DeclarationHierarchy = {
       val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeclarationHierarchy]
     }
     
-    @scala.inline
-    implicit class DeclarationHierarchyMutableBuilder[Self <: DeclarationHierarchy] (val x: Self) extends AnyVal {
+    extension [Self <: DeclarationHierarchy](x: Self) {
       
-      @scala.inline
-      def setIsTarget(value: Boolean): Self = StObject.set(x, "isTarget", value.asInstanceOf[js.Any])
+      inline def setIsTarget(value: Boolean): Self = StObject.set(x, "isTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTargetUndefined: Self = StObject.set(x, "isTarget", js.undefined)
+      inline def setIsTargetUndefined: Self = StObject.set(x, "isTarget", js.undefined)
       
-      @scala.inline
-      def setNext(value: DeclarationHierarchy): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: DeclarationHierarchy): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
 }

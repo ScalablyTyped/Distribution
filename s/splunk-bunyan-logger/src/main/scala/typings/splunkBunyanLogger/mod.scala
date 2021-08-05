@@ -17,8 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createStream(config: Config): SplunkBunyanStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(config.asInstanceOf[js.Any]).asInstanceOf[SplunkBunyanStream]
+  inline def createStream(config: Config): SplunkBunyanStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(config.asInstanceOf[js.Any]).asInstanceOf[SplunkBunyanStream]
   
   @js.native
   trait SplunkBunyanStream

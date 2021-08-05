@@ -28,26 +28,20 @@ trait StateMachineListItem extends StObject {
 }
 object StateMachineListItem {
   
-  @scala.inline
-  def apply(creationDate: Timestamp, name: Name, stateMachineArn: Arn, `type`: StateMachineType): StateMachineListItem = {
+  inline def apply(creationDate: Timestamp, name: Name, stateMachineArn: Arn, `type`: StateMachineType): StateMachineListItem = {
     val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateMachineListItem]
   }
   
-  @scala.inline
-  implicit class StateMachineListItemMutableBuilder[Self <: StateMachineListItem] (val x: Self) extends AnyVal {
+  extension [Self <: StateMachineListItem](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
+    inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: StateMachineType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StateMachineType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

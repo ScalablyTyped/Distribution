@@ -28,8 +28,7 @@ trait IUtilDomEvent extends StObject {
 }
 object IUtilDomEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addListener: (HTMLElement, String, js.Function) => Unit,
     getPointer: (Event, HTMLCanvasElement) => Point,
     removeListener: (HTMLElement, String, js.Function) => Unit
@@ -38,16 +37,12 @@ object IUtilDomEvent {
     __obj.asInstanceOf[IUtilDomEvent]
   }
   
-  @scala.inline
-  implicit class IUtilDomEventMutableBuilder[Self <: IUtilDomEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IUtilDomEvent](x: Self) {
     
-    @scala.inline
-    def setAddListener(value: (HTMLElement, String, js.Function) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction3(value))
+    inline def setAddListener(value: (HTMLElement, String, js.Function) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetPointer(value: (Event, HTMLCanvasElement) => Point): Self = StObject.set(x, "getPointer", js.Any.fromFunction2(value))
+    inline def setGetPointer(value: (Event, HTMLCanvasElement) => Point): Self = StObject.set(x, "getPointer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveListener(value: (HTMLElement, String, js.Function) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+    inline def setRemoveListener(value: (HTMLElement, String, js.Function) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
   }
 }

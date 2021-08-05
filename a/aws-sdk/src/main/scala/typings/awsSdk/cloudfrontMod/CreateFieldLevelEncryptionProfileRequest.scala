@@ -13,16 +13,13 @@ trait CreateFieldLevelEncryptionProfileRequest extends StObject {
 }
 object CreateFieldLevelEncryptionProfileRequest {
   
-  @scala.inline
-  def apply(FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfig): CreateFieldLevelEncryptionProfileRequest = {
+  inline def apply(FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfig): CreateFieldLevelEncryptionProfileRequest = {
     val __obj = js.Dynamic.literal(FieldLevelEncryptionProfileConfig = FieldLevelEncryptionProfileConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFieldLevelEncryptionProfileRequest]
   }
   
-  @scala.inline
-  implicit class CreateFieldLevelEncryptionProfileRequestMutableBuilder[Self <: CreateFieldLevelEncryptionProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFieldLevelEncryptionProfileRequest](x: Self) {
     
-    @scala.inline
-    def setFieldLevelEncryptionProfileConfig(value: FieldLevelEncryptionProfileConfig): Self = StObject.set(x, "FieldLevelEncryptionProfileConfig", value.asInstanceOf[js.Any])
+    inline def setFieldLevelEncryptionProfileConfig(value: FieldLevelEncryptionProfileConfig): Self = StObject.set(x, "FieldLevelEncryptionProfileConfig", value.asInstanceOf[js.Any])
   }
 }

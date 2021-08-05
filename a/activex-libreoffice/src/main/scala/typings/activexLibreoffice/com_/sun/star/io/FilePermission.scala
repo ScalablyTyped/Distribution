@@ -26,19 +26,15 @@ trait FilePermission extends StObject {
 }
 object FilePermission {
   
-  @scala.inline
-  def apply(Actions: String, URL: String): FilePermission = {
+  inline def apply(Actions: String, URL: String): FilePermission = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePermission]
   }
   
-  @scala.inline
-  implicit class FilePermissionMutableBuilder[Self <: FilePermission] (val x: Self) extends AnyVal {
+  extension [Self <: FilePermission](x: Self) {
     
-    @scala.inline
-    def setActions(value: String): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: String): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

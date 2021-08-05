@@ -52,8 +52,7 @@ trait PlayReadyRevocationServiceRequest extends StObject {
 }
 object PlayReadyRevocationServiceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginServiceRequest: () => IAsyncAction,
     challengeCustomData: String,
     generateManualEnablingChallenge: () => PlayReadySoapMessage,
@@ -69,34 +68,24 @@ object PlayReadyRevocationServiceRequest {
     __obj.asInstanceOf[PlayReadyRevocationServiceRequest]
   }
   
-  @scala.inline
-  implicit class PlayReadyRevocationServiceRequestMutableBuilder[Self <: PlayReadyRevocationServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyRevocationServiceRequest](x: Self) {
     
-    @scala.inline
-    def setBeginServiceRequest(value: () => IAsyncAction): Self = StObject.set(x, "beginServiceRequest", js.Any.fromFunction0(value))
+    inline def setBeginServiceRequest(value: () => IAsyncAction): Self = StObject.set(x, "beginServiceRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChallengeCustomData(value: String): Self = StObject.set(x, "challengeCustomData", value.asInstanceOf[js.Any])
+    inline def setChallengeCustomData(value: String): Self = StObject.set(x, "challengeCustomData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateManualEnablingChallenge(value: () => PlayReadySoapMessage): Self = StObject.set(x, "generateManualEnablingChallenge", js.Any.fromFunction0(value))
+    inline def setGenerateManualEnablingChallenge(value: () => PlayReadySoapMessage): Self = StObject.set(x, "generateManualEnablingChallenge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNextServiceRequest(value: () => IPlayReadyServiceRequest): Self = StObject.set(x, "nextServiceRequest", js.Any.fromFunction0(value))
+    inline def setNextServiceRequest(value: () => IPlayReadyServiceRequest): Self = StObject.set(x, "nextServiceRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProcessManualEnablingResponse(value: js.Array[Double] => WinRTError): Self = StObject.set(x, "processManualEnablingResponse", js.Any.fromFunction1(value))
+    inline def setProcessManualEnablingResponse(value: js.Array[Double] => WinRTError): Self = StObject.set(x, "processManualEnablingResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProtectionSystem(value: String): Self = StObject.set(x, "protectionSystem", value.asInstanceOf[js.Any])
+    inline def setProtectionSystem(value: String): Self = StObject.set(x, "protectionSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCustomData(value: String): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
+    inline def setResponseCustomData(value: String): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

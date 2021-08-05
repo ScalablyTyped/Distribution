@@ -14,19 +14,15 @@ trait WebpushFcmOptions extends StObject {
 }
 object WebpushFcmOptions {
   
-  @scala.inline
-  def apply(): WebpushFcmOptions = {
+  inline def apply(): WebpushFcmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebpushFcmOptions]
   }
   
-  @scala.inline
-  implicit class WebpushFcmOptionsMutableBuilder[Self <: WebpushFcmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebpushFcmOptions](x: Self) {
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
   }
 }

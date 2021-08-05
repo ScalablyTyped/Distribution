@@ -342,44 +342,32 @@ object mod {
   }
   object GraylogConfig {
     
-    @scala.inline
-    def apply(servers: js.Array[Readonlyhoststringportnum]): GraylogConfig = {
+    inline def apply(servers: js.Array[Readonlyhoststringportnum]): GraylogConfig = {
       val __obj = js.Dynamic.literal(servers = servers.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraylogConfig]
     }
     
-    @scala.inline
-    implicit class GraylogConfigMutableBuilder[Self <: GraylogConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GraylogConfig](x: Self) {
       
-      @scala.inline
-      def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setDeflate(value: GraylogDeflate): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
+      inline def setDeflate(value: GraylogDeflate): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
+      inline def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
       
-      @scala.inline
-      def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+      inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+      inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setServers(value: js.Array[Readonlyhoststringportnum]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+      inline def setServers(value: js.Array[Readonlyhoststringportnum]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServersVarargs(value: Readonlyhoststringportnum*): Self = StObject.set(x, "servers", js.Array(value :_*))
+      inline def setServersVarargs(value: Readonlyhoststringportnum*): Self = StObject.set(x, "servers", js.Array(value :_*))
     }
   }
   
@@ -391,14 +379,11 @@ object mod {
   trait GraylogDeflate extends StObject
   object GraylogDeflate {
     
-    @scala.inline
-    def always: typings.graylog2.graylog2Strings.always = "always".asInstanceOf[typings.graylog2.graylog2Strings.always]
+    inline def always: typings.graylog2.graylog2Strings.always = "always".asInstanceOf[typings.graylog2.graylog2Strings.always]
     
-    @scala.inline
-    def never: typings.graylog2.graylog2Strings.never = "never".asInstanceOf[typings.graylog2.graylog2Strings.never]
+    inline def never: typings.graylog2.graylog2Strings.never = "never".asInstanceOf[typings.graylog2.graylog2Strings.never]
     
-    @scala.inline
-    def optimal: typings.graylog2.graylog2Strings.optimal = "optimal".asInstanceOf[typings.graylog2.graylog2Strings.optimal]
+    inline def optimal: typings.graylog2.graylog2Strings.optimal = "optimal".asInstanceOf[typings.graylog2.graylog2Strings.optimal]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -416,34 +401,24 @@ object mod {
   trait GraylogLogMethod extends StObject
   object GraylogLogMethod {
     
-    @scala.inline
-    def alert: typings.graylog2.graylog2Strings.alert = "alert".asInstanceOf[typings.graylog2.graylog2Strings.alert]
+    inline def alert: typings.graylog2.graylog2Strings.alert = "alert".asInstanceOf[typings.graylog2.graylog2Strings.alert]
     
-    @scala.inline
-    def critical: typings.graylog2.graylog2Strings.critical = "critical".asInstanceOf[typings.graylog2.graylog2Strings.critical]
+    inline def critical: typings.graylog2.graylog2Strings.critical = "critical".asInstanceOf[typings.graylog2.graylog2Strings.critical]
     
-    @scala.inline
-    def debug: typings.graylog2.graylog2Strings.debug = "debug".asInstanceOf[typings.graylog2.graylog2Strings.debug]
+    inline def debug: typings.graylog2.graylog2Strings.debug = "debug".asInstanceOf[typings.graylog2.graylog2Strings.debug]
     
-    @scala.inline
-    def emergency: typings.graylog2.graylog2Strings.emergency = "emergency".asInstanceOf[typings.graylog2.graylog2Strings.emergency]
+    inline def emergency: typings.graylog2.graylog2Strings.emergency = "emergency".asInstanceOf[typings.graylog2.graylog2Strings.emergency]
     
-    @scala.inline
-    def error: typings.graylog2.graylog2Strings.error = "error".asInstanceOf[typings.graylog2.graylog2Strings.error]
+    inline def error: typings.graylog2.graylog2Strings.error = "error".asInstanceOf[typings.graylog2.graylog2Strings.error]
     
-    @scala.inline
-    def info: typings.graylog2.graylog2Strings.info = "info".asInstanceOf[typings.graylog2.graylog2Strings.info]
+    inline def info: typings.graylog2.graylog2Strings.info = "info".asInstanceOf[typings.graylog2.graylog2Strings.info]
     
-    @scala.inline
-    def log: typings.graylog2.graylog2Strings.log = "log".asInstanceOf[typings.graylog2.graylog2Strings.log]
+    inline def log: typings.graylog2.graylog2Strings.log = "log".asInstanceOf[typings.graylog2.graylog2Strings.log]
     
-    @scala.inline
-    def notice: typings.graylog2.graylog2Strings.notice = "notice".asInstanceOf[typings.graylog2.graylog2Strings.notice]
+    inline def notice: typings.graylog2.graylog2Strings.notice = "notice".asInstanceOf[typings.graylog2.graylog2Strings.notice]
     
-    @scala.inline
-    def warn: typings.graylog2.graylog2Strings.warn = "warn".asInstanceOf[typings.graylog2.graylog2Strings.warn]
+    inline def warn: typings.graylog2.graylog2Strings.warn = "warn".asInstanceOf[typings.graylog2.graylog2Strings.warn]
     
-    @scala.inline
-    def warning: typings.graylog2.graylog2Strings.warning = "warning".asInstanceOf[typings.graylog2.graylog2Strings.warning]
+    inline def warning: typings.graylog2.graylog2Strings.warning = "warning".asInstanceOf[typings.graylog2.graylog2Strings.warning]
   }
 }

@@ -18,28 +18,21 @@ trait GetIntentVersionsResponse extends StObject {
 }
 object GetIntentVersionsResponse {
   
-  @scala.inline
-  def apply(): GetIntentVersionsResponse = {
+  inline def apply(): GetIntentVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIntentVersionsResponse]
   }
   
-  @scala.inline
-  implicit class GetIntentVersionsResponseMutableBuilder[Self <: GetIntentVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIntentVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setIntents(value: IntentMetadataList): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: IntentMetadataList): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+    inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    @scala.inline
-    def setIntentsVarargs(value: IntentMetadata*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: IntentMetadata*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

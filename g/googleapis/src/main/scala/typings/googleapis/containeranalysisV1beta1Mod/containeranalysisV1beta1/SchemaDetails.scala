@@ -16,19 +16,15 @@ trait SchemaDetails extends StObject {
 }
 object SchemaDetails {
   
-  @scala.inline
-  def apply(): SchemaDetails = {
+  inline def apply(): SchemaDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDetails]
   }
   
-  @scala.inline
-  implicit class SchemaDetailsMutableBuilder[Self <: SchemaDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDetails](x: Self) {
     
-    @scala.inline
-    def setAttestation(value: SchemaAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
+    inline def setAttestation(value: SchemaAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
+    inline def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
   }
 }

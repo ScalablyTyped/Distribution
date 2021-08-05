@@ -31,8 +31,7 @@ trait XPackageInformationProvider extends StObject {
 }
 object XPackageInformationProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExtensionList: SafeArray[SafeArray[String]],
     getExtensionList: () => SafeArray[SafeArray[String]],
     getPackageLocation: String => String,
@@ -42,19 +41,14 @@ object XPackageInformationProvider {
     __obj.asInstanceOf[XPackageInformationProvider]
   }
   
-  @scala.inline
-  implicit class XPackageInformationProviderMutableBuilder[Self <: XPackageInformationProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XPackageInformationProvider](x: Self) {
     
-    @scala.inline
-    def setExtensionList(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ExtensionList", value.asInstanceOf[js.Any])
+    inline def setExtensionList(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ExtensionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExtensionList(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getExtensionList", js.Any.fromFunction0(value))
+    inline def setGetExtensionList(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getExtensionList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPackageLocation(value: String => String): Self = StObject.set(x, "getPackageLocation", js.Any.fromFunction1(value))
+    inline def setGetPackageLocation(value: String => String): Self = StObject.set(x, "getPackageLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsUpdateAvailable(value: String => SafeArray[SafeArray[String]]): Self = StObject.set(x, "isUpdateAvailable", js.Any.fromFunction1(value))
+    inline def setIsUpdateAvailable(value: String => SafeArray[SafeArray[String]]): Self = StObject.set(x, "isUpdateAvailable", js.Any.fromFunction1(value))
   }
 }

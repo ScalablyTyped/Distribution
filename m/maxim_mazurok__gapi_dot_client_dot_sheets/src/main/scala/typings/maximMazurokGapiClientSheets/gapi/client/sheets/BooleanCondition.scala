@@ -17,28 +17,21 @@ trait BooleanCondition extends StObject {
 }
 object BooleanCondition {
   
-  @scala.inline
-  def apply(): BooleanCondition = {
+  inline def apply(): BooleanCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BooleanCondition]
   }
   
-  @scala.inline
-  implicit class BooleanConditionMutableBuilder[Self <: BooleanCondition] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanCondition](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[ConditionValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[ConditionValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: ConditionValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ConditionValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

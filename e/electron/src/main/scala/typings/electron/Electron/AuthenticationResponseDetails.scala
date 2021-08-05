@@ -10,16 +10,13 @@ trait AuthenticationResponseDetails extends StObject {
 }
 object AuthenticationResponseDetails {
   
-  @scala.inline
-  def apply(url: String): AuthenticationResponseDetails = {
+  inline def apply(url: String): AuthenticationResponseDetails = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationResponseDetails]
   }
   
-  @scala.inline
-  implicit class AuthenticationResponseDetailsMutableBuilder[Self <: AuthenticationResponseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationResponseDetails](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

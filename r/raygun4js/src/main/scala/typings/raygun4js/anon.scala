@@ -36,8 +36,7 @@ object anon {
   }
   object Browser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Browser: String,
       `Browser-Height`: Double,
       `Browser-Name`: String,
@@ -64,44 +63,31 @@ object anon {
       __obj.asInstanceOf[Browser]
     }
     
-    @scala.inline
-    implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+    extension [Self <: Browser](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBrowser-Height`(value: Double): Self = StObject.set(x, "Browser-Height", value.asInstanceOf[js.Any])
+      inline def `setBrowser-Height`(value: Double): Self = StObject.set(x, "Browser-Height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBrowser-Name`(value: String): Self = StObject.set(x, "Browser-Name", value.asInstanceOf[js.Any])
+      inline def `setBrowser-Name`(value: String): Self = StObject.set(x, "Browser-Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBrowser-Version`(value: String): Self = StObject.set(x, "Browser-Version", value.asInstanceOf[js.Any])
+      inline def `setBrowser-Version`(value: String): Self = StObject.set(x, "Browser-Version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBrowser-Width`(value: Double): Self = StObject.set(x, "Browser-Width", value.asInstanceOf[js.Any])
+      inline def `setBrowser-Width`(value: Double): Self = StObject.set(x, "Browser-Width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColor-Depth`(value: Double): Self = StObject.set(x, "Color-Depth", value.asInstanceOf[js.Any])
+      inline def `setColor-Depth`(value: Double): Self = StObject.set(x, "Color-Depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDocument-Mode`(value: Double): Self = StObject.set(x, "Document-Mode", value.asInstanceOf[js.Any])
+      inline def `setDocument-Mode`(value: Double): Self = StObject.set(x, "Document-Mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setScreen-Height`(value: Double): Self = StObject.set(x, "Screen-Height", value.asInstanceOf[js.Any])
+      inline def `setScreen-Height`(value: Double): Self = StObject.set(x, "Screen-Height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setScreen-Width`(value: Double): Self = StObject.set(x, "Screen-Width", value.asInstanceOf[js.Any])
+      inline def `setScreen-Width`(value: Double): Self = StObject.set(x, "Screen-Width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUser-Language`(value: String): Self = StObject.set(x, "User-Language", value.asInstanceOf[js.Any])
+      inline def `setUser-Language`(value: String): Self = StObject.set(x, "User-Language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcOffset(value: Double): Self = StObject.set(x, "UtcOffset", value.asInstanceOf[js.Any])
+      inline def setUtcOffset(value: Double): Self = StObject.set(x, "UtcOffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,26 +101,20 @@ object anon {
   }
   object ClassName {
     
-    @scala.inline
-    def apply(ClassName: String, Message: String, StackTrace: js.Array[RaygunStackTrace]): ClassName = {
+    inline def apply(ClassName: String, Message: String, StackTrace: js.Array[RaygunStackTrace]): ClassName = {
       val __obj = js.Dynamic.literal(ClassName = ClassName.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], StackTrace = StackTrace.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassName]
     }
     
-    @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+    extension [Self <: ClassName](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackTrace(value: js.Array[RaygunStackTrace]): Self = StObject.set(x, "StackTrace", value.asInstanceOf[js.Any])
+      inline def setStackTrace(value: js.Array[RaygunStackTrace]): Self = StObject.set(x, "StackTrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackTraceVarargs(value: RaygunStackTrace*): Self = StObject.set(x, "StackTrace", js.Array(value :_*))
+      inline def setStackTraceVarargs(value: RaygunStackTrace*): Self = StObject.set(x, "StackTrace", js.Array(value :_*))
     }
   }
   
@@ -160,8 +140,7 @@ object anon {
   }
   object Client {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Client: Version,
       Environment: Browser,
       Error: ClassName,
@@ -175,41 +154,29 @@ object anon {
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setClient(value: Version): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Version): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: Browser): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Browser): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: ClassName): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+      inline def setError(value: ClassName): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingKey(value: String): Self = StObject.set(x, "GroupingKey", value.asInstanceOf[js.Any])
+      inline def setGroupingKey(value: String): Self = StObject.set(x, "GroupingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingKeyUndefined: Self = StObject.set(x, "GroupingKey", js.undefined)
+      inline def setGroupingKeyUndefined: Self = StObject.set(x, "GroupingKey", js.undefined)
       
-      @scala.inline
-      def setRequest(value: Headers): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Headers): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "Tags", js.Array(value :_*))
       
-      @scala.inline
-      def setUser(value: Email): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+      inline def setUser(value: Email): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserCustomData(value: js.Any): Self = StObject.set(x, "UserCustomData", value.asInstanceOf[js.Any])
+      inline def setUserCustomData(value: js.Any): Self = StObject.set(x, "UserCustomData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,20 +188,16 @@ object anon {
   }
   object Duration {
     
-    @scala.inline
-    def apply(duration: Double, name: String): Duration = {
+    inline def apply(duration: Double, name: String): Duration = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Duration]
     }
     
-    @scala.inline
-    implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+    extension [Self <: Duration](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,50 +217,36 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(): Email = {
+    inline def apply(): Email = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
+      inline def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
       
-      @scala.inline
-      def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+      inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullNameUndefined: Self = StObject.set(x, "FullName", js.undefined)
+      inline def setFullNameUndefined: Self = StObject.set(x, "FullName", js.undefined)
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
+      inline def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
       
-      @scala.inline
-      def setIsAnonymous(value: Boolean): Self = StObject.set(x, "IsAnonymous", value.asInstanceOf[js.Any])
+      inline def setIsAnonymous(value: Boolean): Self = StObject.set(x, "IsAnonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAnonymousUndefined: Self = StObject.set(x, "IsAnonymous", js.undefined)
+      inline def setIsAnonymousUndefined: Self = StObject.set(x, "IsAnonymous", js.undefined)
       
-      @scala.inline
-      def setUUID(value: js.Any): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
+      inline def setUUID(value: js.Any): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUUIDUndefined: Self = StObject.set(x, "UUID", js.undefined)
+      inline def setUUIDUndefined: Self = StObject.set(x, "UUID", js.undefined)
     }
   }
   
@@ -311,23 +260,18 @@ object anon {
   }
   object Headers {
     
-    @scala.inline
-    def apply(Headers: Host, QueryString: String, Url: String): Headers = {
+    inline def apply(Headers: Host, QueryString: String, Url: String): Headers = {
       val __obj = js.Dynamic.literal(Headers = Headers.asInstanceOf[js.Any], QueryString = QueryString.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Headers]
     }
     
-    @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+    extension [Self <: Headers](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Host): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Host): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryString(value: String): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
+      inline def setQueryString(value: String): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,24 +285,19 @@ object anon {
   }
   object Host {
     
-    @scala.inline
-    def apply(Host: String, Referer: String, `User-Agent`: String): Host = {
+    inline def apply(Host: String, Referer: String, `User-Agent`: String): Host = {
       val __obj = js.Dynamic.literal(Host = Host.asInstanceOf[js.Any], Referer = Referer.asInstanceOf[js.Any])
       __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferer(value: String): Self = StObject.set(x, "Referer", value.asInstanceOf[js.Any])
+      inline def setReferer(value: String): Self = StObject.set(x, "Referer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+      inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,26 +313,20 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(level: BreadcrumbLevel, location: String, message: String, metadata: js.Any): Level = {
+    inline def apply(level: BreadcrumbLevel, location: String, message: String, metadata: js.Any): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: BreadcrumbLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: BreadcrumbLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -407,24 +340,19 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(duration: Double, name: String, `type`: String): Name = {
+    inline def apply(duration: Double, name: String, `type`: String): Name = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -434,17 +362,14 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(path: String): Path = {
+    inline def apply(path: String): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -456,21 +381,17 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(path: String, `type`: String): Type = {
+    inline def apply(path: String, `type`: String): Type = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -482,20 +403,16 @@ object anon {
   }
   object Version {
     
-    @scala.inline
-    def apply(Name: String, Version: String): Version = {
+    inline def apply(Name: String, Version: String): Version = {
       val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Version]
     }
     
-    @scala.inline
-    implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+    extension [Self <: Version](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
 }

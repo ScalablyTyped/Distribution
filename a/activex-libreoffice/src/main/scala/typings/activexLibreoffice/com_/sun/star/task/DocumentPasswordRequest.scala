@@ -21,8 +21,7 @@ trait DocumentPasswordRequest
 }
 object DocumentPasswordRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     Message: String,
@@ -33,10 +32,8 @@ object DocumentPasswordRequest {
     __obj.asInstanceOf[DocumentPasswordRequest]
   }
   
-  @scala.inline
-  implicit class DocumentPasswordRequestMutableBuilder[Self <: DocumentPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

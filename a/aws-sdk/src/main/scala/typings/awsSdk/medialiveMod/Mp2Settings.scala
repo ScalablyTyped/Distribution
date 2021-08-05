@@ -23,31 +23,23 @@ trait Mp2Settings extends StObject {
 }
 object Mp2Settings {
   
-  @scala.inline
-  def apply(): Mp2Settings = {
+  inline def apply(): Mp2Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mp2Settings]
   }
   
-  @scala.inline
-  implicit class Mp2SettingsMutableBuilder[Self <: Mp2Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Mp2Settings](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: double): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: double): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
-    @scala.inline
-    def setCodingMode(value: Mp2CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
+    inline def setCodingMode(value: Mp2CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
+    inline def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: double): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: double): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

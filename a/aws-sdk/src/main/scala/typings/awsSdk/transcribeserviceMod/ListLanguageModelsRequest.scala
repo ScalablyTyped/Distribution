@@ -28,37 +28,27 @@ trait ListLanguageModelsRequest extends StObject {
 }
 object ListLanguageModelsRequest {
   
-  @scala.inline
-  def apply(): ListLanguageModelsRequest = {
+  inline def apply(): ListLanguageModelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLanguageModelsRequest]
   }
   
-  @scala.inline
-  implicit class ListLanguageModelsRequestMutableBuilder[Self <: ListLanguageModelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLanguageModelsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNameContains(value: ModelName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
+    inline def setNameContains(value: ModelName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
+    inline def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatusEquals(value: ModelStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
+    inline def setStatusEquals(value: ModelStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
+    inline def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
   }
 }

@@ -16,28 +16,21 @@ trait Args extends StObject {
 }
 object Args {
   
-  @scala.inline
-  def apply(Description: String, Name: String, Settable: js.Array[String], Value: String): Args = {
+  inline def apply(Description: String, Name: String, Settable: js.Array[String], Value: String): Args = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Settable = Settable.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
   
-  @scala.inline
-  implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
+  extension [Self <: Args](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettable(value: js.Array[String]): Self = StObject.set(x, "Settable", value.asInstanceOf[js.Any])
+    inline def setSettable(value: js.Array[String]): Self = StObject.set(x, "Settable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettableVarargs(value: String*): Self = StObject.set(x, "Settable", js.Array(value :_*))
+    inline def setSettableVarargs(value: String*): Self = StObject.set(x, "Settable", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

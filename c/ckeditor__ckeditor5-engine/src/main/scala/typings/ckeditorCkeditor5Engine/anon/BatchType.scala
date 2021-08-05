@@ -16,40 +16,29 @@ trait BatchType extends StObject {
 }
 object BatchType {
   
-  @scala.inline
-  def apply(): BatchType = {
+  inline def apply(): BatchType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchType]
   }
   
-  @scala.inline
-  implicit class BatchTypeMutableBuilder[Self <: BatchType] (val x: Self) extends AnyVal {
+  extension [Self <: BatchType](x: Self) {
     
-    @scala.inline
-    def setBatchType(value: String): Self = StObject.set(x, "batchType", value.asInstanceOf[js.Any])
+    inline def setBatchType(value: String): Self = StObject.set(x, "batchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchTypeUndefined: Self = StObject.set(x, "batchType", js.undefined)
+    inline def setBatchTypeUndefined: Self = StObject.set(x, "batchType", js.undefined)
     
-    @scala.inline
-    def setLastRangeBackward(value: Boolean): Self = StObject.set(x, "lastRangeBackward", value.asInstanceOf[js.Any])
+    inline def setLastRangeBackward(value: Boolean): Self = StObject.set(x, "lastRangeBackward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRangeBackwardUndefined: Self = StObject.set(x, "lastRangeBackward", js.undefined)
+    inline def setLastRangeBackwardUndefined: Self = StObject.set(x, "lastRangeBackward", js.undefined)
     
-    @scala.inline
-    def setRootName(value: String): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
+    inline def setRootName(value: String): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
+    inline def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
     
-    @scala.inline
-    def setSelectionAttributes(value: js.Array[js.Object]): Self = StObject.set(x, "selectionAttributes", value.asInstanceOf[js.Any])
+    inline def setSelectionAttributes(value: js.Array[js.Object]): Self = StObject.set(x, "selectionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionAttributesUndefined: Self = StObject.set(x, "selectionAttributes", js.undefined)
+    inline def setSelectionAttributesUndefined: Self = StObject.set(x, "selectionAttributes", js.undefined)
     
-    @scala.inline
-    def setSelectionAttributesVarargs(value: js.Object*): Self = StObject.set(x, "selectionAttributes", js.Array(value :_*))
+    inline def setSelectionAttributesVarargs(value: js.Object*): Self = StObject.set(x, "selectionAttributes", js.Array(value :_*))
   }
 }

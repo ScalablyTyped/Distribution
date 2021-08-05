@@ -21,8 +21,7 @@ trait AddMeasurementToCache extends StObject {
 }
 object AddMeasurementToCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addMeasurementToCache: (js.Any, Double) => scala.Unit,
     getCachedMeasurement: js.Any => js.UndefOr[Double]
   ): AddMeasurementToCache = {
@@ -30,13 +29,10 @@ object AddMeasurementToCache {
     __obj.asInstanceOf[AddMeasurementToCache]
   }
   
-  @scala.inline
-  implicit class AddMeasurementToCacheMutableBuilder[Self <: AddMeasurementToCache] (val x: Self) extends AnyVal {
+  extension [Self <: AddMeasurementToCache](x: Self) {
     
-    @scala.inline
-    def setAddMeasurementToCache(value: (js.Any, Double) => scala.Unit): Self = StObject.set(x, "addMeasurementToCache", js.Any.fromFunction2(value))
+    inline def setAddMeasurementToCache(value: (js.Any, Double) => scala.Unit): Self = StObject.set(x, "addMeasurementToCache", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCachedMeasurement(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "getCachedMeasurement", js.Any.fromFunction1(value))
+    inline def setGetCachedMeasurement(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "getCachedMeasurement", js.Any.fromFunction1(value))
   }
 }

@@ -11,16 +11,13 @@ trait PickImplaccordion extends StObject {
 }
 object PickImplaccordion {
   
-  @scala.inline
-  def apply(accordion: String): PickImplaccordion = {
+  inline def apply(accordion: String): PickImplaccordion = {
     val __obj = js.Dynamic.literal(accordion = accordion.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplaccordion]
   }
   
-  @scala.inline
-  implicit class PickImplaccordionMutableBuilder[Self <: PickImplaccordion] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplaccordion](x: Self) {
     
-    @scala.inline
-    def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
+    inline def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
   }
 }

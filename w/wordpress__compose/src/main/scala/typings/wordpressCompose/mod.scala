@@ -22,8 +22,7 @@ object mod {
   
   // tslint:disable:no-unnecessary-generics
   // prettier-ignore
-  @scala.inline
-  def createHigherOrderComponent[EP](
+  inline def createHigherOrderComponent[EP](
     mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]],
     modifierName: String
   ): js.Function1[
@@ -34,34 +33,26 @@ object mod {
     ComponentType[Omit[js.Any, /* keyof EP */ String]]
   ]]
   
-  @scala.inline
-  def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[/* component */ ComponentType[P], FC[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifCondition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], FC[P]]]
+  inline def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[/* component */ ComponentType[P], FC[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifCondition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], FC[P]]]
   
   // prettier-ignore
-  @scala.inline
-  def pure[T /* <: ComponentType[js.Any] */](component: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def pure[T /* <: ComponentType[js.Any] */](component: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
   
-  @scala.inline
-  def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def useReducedMotion(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useReducedMotion")().asInstanceOf[Boolean]
+  inline def useReducedMotion(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useReducedMotion")().asInstanceOf[Boolean]
   
   // prettier-ignore
-  @scala.inline
-  def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobalEvents")(eventMapper.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]]]
+  inline def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobalEvents")(eventMapper.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]]]
   
   // prettier-ignore
-  @scala.inline
-  def withInstanceId[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, instanceId]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInstanceId")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, instanceId]]]
+  inline def withInstanceId[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, instanceId]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInstanceId")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, instanceId]]]
   
   // prettier-ignore
-  @scala.inline
-  def withSafeTimeout[T /* <: ComponentType[js.Any] */](component: T): ComponentType[Omit[js.Any, setTimeout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, setTimeout]]]
+  inline def withSafeTimeout[T /* <: ComponentType[js.Any] */](component: T): ComponentType[Omit[js.Any, setTimeout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, setTimeout]]]
   
   // prettier-ignore
-  @scala.inline
-  def withState[SP /* <: js.Object */](
+  inline def withState[SP /* <: js.Object */](
     initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof SP ]: SP[k]}
     */ typings.wordpressCompose.wordpressComposeStrings.withState & TopLevel[SP]

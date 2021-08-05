@@ -23,41 +23,30 @@ trait GeoPathTransform
 }
 object GeoPathTransform {
   
-  @scala.inline
-  def apply(): GeoPathTransform = {
+  inline def apply(): GeoPathTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("geopath")
     __obj.asInstanceOf[GeoPathTransform]
   }
   
-  @scala.inline
-  implicit class GeoPathTransformMutableBuilder[Self <: GeoPathTransform] (val x: Self) extends AnyVal {
+  extension [Self <: GeoPathTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setPointRadius(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "pointRadius", value.asInstanceOf[js.Any])
+    inline def setPointRadius(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "pointRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointRadiusUndefined: Self = StObject.set(x, "pointRadius", js.undefined)
+    inline def setPointRadiusUndefined: Self = StObject.set(x, "pointRadius", js.undefined)
     
-    @scala.inline
-    def setProjection(value: ProjectionName): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: ProjectionName): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setType(value: geopath): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: geopath): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

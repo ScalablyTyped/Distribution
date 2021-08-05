@@ -17,31 +17,23 @@ trait ValidationOptional extends StObject {
 }
 object ValidationOptional {
   
-  @scala.inline
-  def apply(): ValidationOptional = {
+  inline def apply(): ValidationOptional = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationOptional]
   }
   
-  @scala.inline
-  implicit class ValidationOptionalMutableBuilder[Self <: ValidationOptional] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationOptional](x: Self) {
     
-    @scala.inline
-    def setErrorFilter(value: (/* errorMsg */ String, /* errorCode */ String, /* type */ String) => Unit): Self = StObject.set(x, "errorFilter", js.Any.fromFunction3(value))
+    inline def setErrorFilter(value: (/* errorMsg */ String, /* errorCode */ String, /* type */ String) => Unit): Self = StObject.set(x, "errorFilter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
+    inline def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
     
-    @scala.inline
-    def setMessages(value: StringDictionary[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: StringDictionary[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setOverrideMessages(value: Boolean): Self = StObject.set(x, "overrideMessages", value.asInstanceOf[js.Any])
+    inline def setOverrideMessages(value: Boolean): Self = StObject.set(x, "overrideMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideMessagesUndefined: Self = StObject.set(x, "overrideMessages", js.undefined)
+    inline def setOverrideMessagesUndefined: Self = StObject.set(x, "overrideMessages", js.undefined)
   }
 }

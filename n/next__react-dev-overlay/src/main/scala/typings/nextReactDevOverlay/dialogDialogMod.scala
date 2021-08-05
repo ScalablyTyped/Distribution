@@ -27,8 +27,7 @@ object dialogDialogMod {
   }
   object DialogProps {
     
-    @scala.inline
-    def apply(`aria-describedby`: String, `aria-labelledby`: String, `type`: error | warning): DialogProps = {
+    inline def apply(`aria-describedby`: String, `aria-labelledby`: String, `type`: error | warning): DialogProps = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
       __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
@@ -36,23 +35,17 @@ object dialogDialogMod {
       __obj.asInstanceOf[DialogProps]
     }
     
-    @scala.inline
-    implicit class DialogPropsMutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogProps](x: Self) {
       
-      @scala.inline
-      def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: /* e */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* e */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setType(value: error | warning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: error | warning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

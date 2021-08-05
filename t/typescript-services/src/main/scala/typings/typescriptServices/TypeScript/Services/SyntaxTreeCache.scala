@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SyntaxTreeCache extends StObject {
   
-  var _currentFileName: js.Any
+  /* private */ var _currentFileName: js.Any
   
-  var _currentFileScriptSnapshot: js.Any
+  /* private */ var _currentFileScriptSnapshot: js.Any
   
-  var _currentFileSyntaxTree: js.Any
+  /* private */ var _currentFileSyntaxTree: js.Any
   
-  var _currentFileVersion: js.Any
+  /* private */ var _currentFileVersion: js.Any
   
-  var _host: js.Any
+  /* private */ var _host: js.Any
   
-  var _hostCache: js.Any
+  /* private */ var _hostCache: js.Any
   
   /* private */ def createSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any): js.Any
   
@@ -35,8 +35,7 @@ trait SyntaxTreeCache extends StObject {
 }
 object SyntaxTreeCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _currentFileName: js.Any,
     _currentFileScriptSnapshot: js.Any,
     _currentFileSyntaxTree: js.Any,
@@ -52,37 +51,26 @@ object SyntaxTreeCache {
     __obj.asInstanceOf[SyntaxTreeCache]
   }
   
-  @scala.inline
-  implicit class SyntaxTreeCacheMutableBuilder[Self <: SyntaxTreeCache] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxTreeCache](x: Self) {
     
-    @scala.inline
-    def setCreateSyntaxTree(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createSyntaxTree", js.Any.fromFunction2(value))
+    inline def setCreateSyntaxTree(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createSyntaxTree", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnsureInvariants(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ensureInvariants", js.Any.fromFunction5(value))
+    inline def setEnsureInvariants(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ensureInvariants", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetCurrentFileSyntaxTree(value: String => SyntaxTree): Self = StObject.set(x, "getCurrentFileSyntaxTree", js.Any.fromFunction1(value))
+    inline def setGetCurrentFileSyntaxTree(value: String => SyntaxTree): Self = StObject.set(x, "getCurrentFileSyntaxTree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateSyntaxTree(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "updateSyntaxTree", js.Any.fromFunction4(value))
+    inline def setUpdateSyntaxTree(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "updateSyntaxTree", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def set_currentFileName(value: js.Any): Self = StObject.set(x, "_currentFileName", value.asInstanceOf[js.Any])
+    inline def set_currentFileName(value: js.Any): Self = StObject.set(x, "_currentFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentFileScriptSnapshot(value: js.Any): Self = StObject.set(x, "_currentFileScriptSnapshot", value.asInstanceOf[js.Any])
+    inline def set_currentFileScriptSnapshot(value: js.Any): Self = StObject.set(x, "_currentFileScriptSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentFileSyntaxTree(value: js.Any): Self = StObject.set(x, "_currentFileSyntaxTree", value.asInstanceOf[js.Any])
+    inline def set_currentFileSyntaxTree(value: js.Any): Self = StObject.set(x, "_currentFileSyntaxTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentFileVersion(value: js.Any): Self = StObject.set(x, "_currentFileVersion", value.asInstanceOf[js.Any])
+    inline def set_currentFileVersion(value: js.Any): Self = StObject.set(x, "_currentFileVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_host(value: js.Any): Self = StObject.set(x, "_host", value.asInstanceOf[js.Any])
+    inline def set_host(value: js.Any): Self = StObject.set(x, "_host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_hostCache(value: js.Any): Self = StObject.set(x, "_hostCache", value.asInstanceOf[js.Any])
+    inline def set_hostCache(value: js.Any): Self = StObject.set(x, "_hostCache", value.asInstanceOf[js.Any])
   }
 }

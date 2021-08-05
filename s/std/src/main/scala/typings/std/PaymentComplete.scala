@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentComplete extends StObject
 object PaymentComplete {
   
-  @scala.inline
-  def fail: typings.std.stdStrings.fail = "fail".asInstanceOf[typings.std.stdStrings.fail]
+  inline def fail: typings.std.stdStrings.fail = "fail".asInstanceOf[typings.std.stdStrings.fail]
   
-  @scala.inline
-  def success: typings.std.stdStrings.success = "success".asInstanceOf[typings.std.stdStrings.success]
+  inline def success: typings.std.stdStrings.success = "success".asInstanceOf[typings.std.stdStrings.success]
   
-  @scala.inline
-  def unknown: typings.std.stdStrings.unknown = "unknown".asInstanceOf[typings.std.stdStrings.unknown]
+  inline def unknown: typings.std.stdStrings.unknown = "unknown".asInstanceOf[typings.std.stdStrings.unknown]
 }

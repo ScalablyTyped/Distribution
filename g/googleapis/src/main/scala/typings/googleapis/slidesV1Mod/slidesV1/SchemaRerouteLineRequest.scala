@@ -19,19 +19,15 @@ trait SchemaRerouteLineRequest extends StObject {
 }
 object SchemaRerouteLineRequest {
   
-  @scala.inline
-  def apply(): SchemaRerouteLineRequest = {
+  inline def apply(): SchemaRerouteLineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRerouteLineRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRerouteLineRequestMutableBuilder[Self <: SchemaRerouteLineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRerouteLineRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

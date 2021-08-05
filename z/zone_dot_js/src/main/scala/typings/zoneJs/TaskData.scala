@@ -25,31 +25,23 @@ trait TaskData extends StObject {
 }
 object TaskData {
   
-  @scala.inline
-  def apply(): TaskData = {
+  inline def apply(): TaskData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskData]
   }
   
-  @scala.inline
-  implicit class TaskDataMutableBuilder[Self <: TaskData] (val x: Self) extends AnyVal {
+  extension [Self <: TaskData](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setHandleId(value: Double): Self = StObject.set(x, "handleId", value.asInstanceOf[js.Any])
+    inline def setHandleId(value: Double): Self = StObject.set(x, "handleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleIdUndefined: Self = StObject.set(x, "handleId", js.undefined)
+    inline def setHandleIdUndefined: Self = StObject.set(x, "handleId", js.undefined)
     
-    @scala.inline
-    def setIsPeriodic(value: Boolean): Self = StObject.set(x, "isPeriodic", value.asInstanceOf[js.Any])
+    inline def setIsPeriodic(value: Boolean): Self = StObject.set(x, "isPeriodic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPeriodicUndefined: Self = StObject.set(x, "isPeriodic", js.undefined)
+    inline def setIsPeriodicUndefined: Self = StObject.set(x, "isPeriodic", js.undefined)
   }
 }

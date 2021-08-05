@@ -72,32 +72,24 @@ object anon {
   }
   object Column {
     
-    @scala.inline
-    def apply(column: String, table: String): Column = {
+    inline def apply(column: String, table: String): Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDelete(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,41 +107,30 @@ object anon {
   }
   object Columns {
     
-    @scala.inline
-    def apply[Row](columns: js.Array[/* keyof Row */ String], refColumns: js.Array[String], table: String): Columns[Row] = {
+    inline def apply[Row](columns: js.Array[/* keyof Row */ String], refColumns: js.Array[String], table: String): Columns[Row] = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], refColumns = refColumns.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[Columns[Row]]
     }
     
-    @scala.inline
-    implicit class ColumnsMutableBuilder[Self <: Columns[?], Row] (val x: Self & Columns[Row]) extends AnyVal {
+    extension [Self <: Columns[?], Row](x: Self & Columns[Row]) {
       
-      @scala.inline
-      def setColumns(value: js.Array[/* keyof Row */ String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[/* keyof Row */ String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: (/* keyof Row */ String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (/* keyof Row */ String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setOnDelete(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: restrict | cascade | (`no action`) | (`set null`) | (`set default`)): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setRefColumns(value: js.Array[String]): Self = StObject.set(x, "refColumns", value.asInstanceOf[js.Any])
+      inline def setRefColumns(value: js.Array[String]): Self = StObject.set(x, "refColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefColumnsVarargs(value: String*): Self = StObject.set(x, "refColumns", js.Array(value :_*))
+      inline def setRefColumnsVarargs(value: String*): Self = StObject.set(x, "refColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,17 +140,14 @@ object anon {
   }
   object LOWER {
     
-    @scala.inline
-    def apply(LOWER: typings.nodeSql2.mod.Column[js.Any, String] => typings.nodeSql2.mod.Column[js.Any, String]): LOWER = {
+    inline def apply(LOWER: typings.nodeSql2.mod.Column[js.Any, String] => typings.nodeSql2.mod.Column[js.Any, String]): LOWER = {
       val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER))
       __obj.asInstanceOf[LOWER]
     }
     
-    @scala.inline
-    implicit class LOWERMutableBuilder[Self <: LOWER] (val x: Self) extends AnyVal {
+    extension [Self <: LOWER](x: Self) {
       
-      @scala.inline
-      def setLOWER(value: typings.nodeSql2.mod.Column[js.Any, String] => typings.nodeSql2.mod.Column[js.Any, String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
+      inline def setLOWER(value: typings.nodeSql2.mod.Column[js.Any, String] => typings.nodeSql2.mod.Column[js.Any, String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
     }
   }
 }

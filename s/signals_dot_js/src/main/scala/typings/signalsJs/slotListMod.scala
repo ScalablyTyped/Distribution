@@ -100,7 +100,6 @@ object slotListMod {
     @JSImport("signals.js/lib/org/osflash/signals/SlotList", "SlotList.NIL")
     @js.native
     def NIL: SlotList = js.native
-    @scala.inline
-    def NIL_=(x: SlotList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NIL")(x.asInstanceOf[js.Any])
+    inline def NIL_=(x: SlotList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NIL")(x.asInstanceOf[js.Any])
   }
 }

@@ -17,37 +17,37 @@ object dragServiceMod {
     def addDragSource(params: DragListenerParams): Unit = js.native
     def addDragSource(params: DragListenerParams, includeTouch: Boolean): Unit = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var currentDragParams: js.Any = js.native
+    /* private */ var currentDragParams: js.Any = js.native
     
     /* private */ def destroy(): js.Any = js.native
     
-    var dragEndFunctions: js.Any = js.native
+    /* private */ var dragEndFunctions: js.Any = js.native
     
-    var dragSources: js.Any = js.native
+    /* private */ var dragSources: js.Any = js.native
     
-    var dragging: js.Any = js.native
+    /* private */ var dragging: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     /* private */ def getFirstActiveTouch(touchList: js.Any): js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
     
     /* private */ def isEventNearStartEvent(currentEvent: js.Any, startEvent: js.Any): js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var loggerFactory: js.Any = js.native
+    /* private */ var loggerFactory: js.Any = js.native
     
-    var mouseEventLastTime: js.Any = js.native
+    /* private */ var mouseEventLastTime: js.Any = js.native
     
-    var mouseStartEvent: js.Any = js.native
+    /* private */ var mouseStartEvent: js.Any = js.native
     
     /* private */ def onCommonMove(currentEvent: js.Any, startEvent: js.Any): js.Any = js.native
     
@@ -55,17 +55,17 @@ object dragServiceMod {
     
     /* private */ def onMouseMove(mouseEvent: js.Any): js.Any = js.native
     
-    var onMouseMoveListener: js.Any = js.native
+    /* private */ var onMouseMoveListener: js.Any = js.native
     
     def onMouseUp(mouseEvent: MouseEvent): Unit = js.native
     
-    var onMouseUpListener: js.Any = js.native
+    /* private */ var onMouseUpListener: js.Any = js.native
     
-    var onTouchEndListener: js.Any = js.native
+    /* private */ var onTouchEndListener: js.Any = js.native
     
     /* private */ def onTouchMove(touchEvent: js.Any): js.Any = js.native
     
-    var onTouchMoveListener: js.Any = js.native
+    /* private */ var onTouchMoveListener: js.Any = js.native
     
     /* private */ def onTouchStart(params: js.Any, touchEvent: js.Any): js.Any = js.native
     
@@ -80,9 +80,9 @@ object dragServiceMod {
     
     /* private */ def setNoSelectToBody(noSelect: js.Any): js.Any = js.native
     
-    var touchLastTime: js.Any = js.native
+    /* private */ var touchLastTime: js.Any = js.native
     
-    var touchStart: js.Any = js.native
+    /* private */ var touchStart: js.Any = js.native
   }
   
   @js.native

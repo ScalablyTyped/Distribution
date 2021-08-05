@@ -11,16 +11,13 @@ trait PEventVersionUpgradeEventObject extends StObject {
 }
 object PEventVersionUpgradeEventObject {
   
-  @scala.inline
-  def apply(pEvent: VersionUpgradeEventObject): PEventVersionUpgradeEventObject = {
+  inline def apply(pEvent: VersionUpgradeEventObject): PEventVersionUpgradeEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PEventVersionUpgradeEventObject]
   }
   
-  @scala.inline
-  implicit class PEventVersionUpgradeEventObjectMutableBuilder[Self <: PEventVersionUpgradeEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PEventVersionUpgradeEventObject](x: Self) {
     
-    @scala.inline
-    def setPEvent(value: VersionUpgradeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
+    inline def setPEvent(value: VersionUpgradeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }
 }

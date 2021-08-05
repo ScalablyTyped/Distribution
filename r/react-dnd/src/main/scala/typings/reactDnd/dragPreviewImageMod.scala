@@ -23,8 +23,7 @@ object dragPreviewImageMod {
   }
   object DragPreviewImageProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null,
       src: String
     ): DragPreviewImageProps = {
@@ -32,16 +31,13 @@ object dragPreviewImageMod {
       __obj.asInstanceOf[DragPreviewImageProps]
     }
     
-    @scala.inline
-    implicit class DragPreviewImagePropsMutableBuilder[Self <: DragPreviewImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: DragPreviewImageProps](x: Self) {
       
-      @scala.inline
-      def setConnect(
+      inline def setConnect(
         value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null
       ): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
 }

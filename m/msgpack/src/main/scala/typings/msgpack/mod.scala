@@ -20,20 +20,16 @@ object mod extends Shortcut {
   }
   object MsgPackCallbackResult {
     
-    @scala.inline
-    def apply(ok: Boolean, status: Double): MsgPackCallbackResult = {
+    inline def apply(ok: Boolean, status: Double): MsgPackCallbackResult = {
       val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[MsgPackCallbackResult]
     }
     
-    @scala.inline
-    implicit class MsgPackCallbackResultMutableBuilder[Self <: MsgPackCallbackResult] (val x: Self) extends AnyVal {
+    extension [Self <: MsgPackCallbackResult](x: Self) {
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,40 +65,30 @@ object mod extends Shortcut {
   }
   object MsgPackDownloadOption {
     
-    @scala.inline
-    def apply(): MsgPackDownloadOption = {
+    inline def apply(): MsgPackDownloadOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MsgPackDownloadOption]
     }
     
-    @scala.inline
-    implicit class MsgPackDownloadOptionMutableBuilder[Self <: MsgPackDownloadOption] (val x: Self) extends AnyVal {
+    extension [Self <: MsgPackDownloadOption](x: Self) {
       
-      @scala.inline
-      def setAfter(
+      inline def setAfter(
         value: (/* xhr */ XMLHttpRequest, MsgPackDownloadOption, /* result */ MsgPackCallbackResult) => Unit
       ): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: (/* xhr */ XMLHttpRequest, MsgPackDownloadOption) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (/* xhr */ XMLHttpRequest, MsgPackDownloadOption) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
+      inline def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
     }
   }
   
@@ -169,41 +155,30 @@ object mod extends Shortcut {
   }
   object MsgPackUploadOption {
     
-    @scala.inline
-    def apply(data: js.Any): MsgPackUploadOption = {
+    inline def apply(data: js.Any): MsgPackUploadOption = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[MsgPackUploadOption]
     }
     
-    @scala.inline
-    implicit class MsgPackUploadOptionMutableBuilder[Self <: MsgPackUploadOption] (val x: Self) extends AnyVal {
+    extension [Self <: MsgPackUploadOption](x: Self) {
       
-      @scala.inline
-      def setAfter(value: (/* xhr */ XMLHttpRequest, MsgPackUploadOption, /* result */ MsgPackCallbackResult) => Unit): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
+      inline def setAfter(value: (/* xhr */ XMLHttpRequest, MsgPackUploadOption, /* result */ MsgPackCallbackResult) => Unit): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: (/* xhr */ XMLHttpRequest, MsgPackUploadOption) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (/* xhr */ XMLHttpRequest, MsgPackUploadOption) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
+      inline def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
     }
   }
   

@@ -13,16 +13,13 @@ trait SetIgnoreInputEventsRequest extends StObject {
 }
 object SetIgnoreInputEventsRequest {
   
-  @scala.inline
-  def apply(ignore: Boolean): SetIgnoreInputEventsRequest = {
+  inline def apply(ignore: Boolean): SetIgnoreInputEventsRequest = {
     val __obj = js.Dynamic.literal(ignore = ignore.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIgnoreInputEventsRequest]
   }
   
-  @scala.inline
-  implicit class SetIgnoreInputEventsRequestMutableBuilder[Self <: SetIgnoreInputEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIgnoreInputEventsRequest](x: Self) {
     
-    @scala.inline
-    def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
   }
 }

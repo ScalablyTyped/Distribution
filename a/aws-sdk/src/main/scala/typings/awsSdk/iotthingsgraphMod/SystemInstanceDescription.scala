@@ -37,58 +37,41 @@ trait SystemInstanceDescription extends StObject {
 }
 object SystemInstanceDescription {
   
-  @scala.inline
-  def apply(): SystemInstanceDescription = {
+  inline def apply(): SystemInstanceDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemInstanceDescription]
   }
   
-  @scala.inline
-  implicit class SystemInstanceDescriptionMutableBuilder[Self <: SystemInstanceDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInstanceDescription](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setFlowActionsRoleArn(value: RoleArn): Self = StObject.set(x, "flowActionsRoleArn", value.asInstanceOf[js.Any])
+    inline def setFlowActionsRoleArn(value: RoleArn): Self = StObject.set(x, "flowActionsRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowActionsRoleArnUndefined: Self = StObject.set(x, "flowActionsRoleArn", js.undefined)
+    inline def setFlowActionsRoleArnUndefined: Self = StObject.set(x, "flowActionsRoleArn", js.undefined)
     
-    @scala.inline
-    def setMetricsConfiguration(value: MetricsConfiguration): Self = StObject.set(x, "metricsConfiguration", value.asInstanceOf[js.Any])
+    inline def setMetricsConfiguration(value: MetricsConfiguration): Self = StObject.set(x, "metricsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsConfigurationUndefined: Self = StObject.set(x, "metricsConfiguration", js.undefined)
+    inline def setMetricsConfigurationUndefined: Self = StObject.set(x, "metricsConfiguration", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
     
-    @scala.inline
-    def setSummary(value: SystemInstanceSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: SystemInstanceSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setValidatedDependencyRevisions(value: DependencyRevisions): Self = StObject.set(x, "validatedDependencyRevisions", value.asInstanceOf[js.Any])
+    inline def setValidatedDependencyRevisions(value: DependencyRevisions): Self = StObject.set(x, "validatedDependencyRevisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedDependencyRevisionsUndefined: Self = StObject.set(x, "validatedDependencyRevisions", js.undefined)
+    inline def setValidatedDependencyRevisionsUndefined: Self = StObject.set(x, "validatedDependencyRevisions", js.undefined)
     
-    @scala.inline
-    def setValidatedDependencyRevisionsVarargs(value: DependencyRevision*): Self = StObject.set(x, "validatedDependencyRevisions", js.Array(value :_*))
+    inline def setValidatedDependencyRevisionsVarargs(value: DependencyRevision*): Self = StObject.set(x, "validatedDependencyRevisions", js.Array(value :_*))
     
-    @scala.inline
-    def setValidatedNamespaceVersion(value: Version): Self = StObject.set(x, "validatedNamespaceVersion", value.asInstanceOf[js.Any])
+    inline def setValidatedNamespaceVersion(value: Version): Self = StObject.set(x, "validatedNamespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedNamespaceVersionUndefined: Self = StObject.set(x, "validatedNamespaceVersion", js.undefined)
+    inline def setValidatedNamespaceVersionUndefined: Self = StObject.set(x, "validatedNamespaceVersion", js.undefined)
   }
 }

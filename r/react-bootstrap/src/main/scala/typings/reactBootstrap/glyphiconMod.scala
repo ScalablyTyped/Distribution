@@ -29,23 +29,18 @@ object glyphiconMod {
   }
   object GlyphiconProps {
     
-    @scala.inline
-    def apply(glyph: String): GlyphiconProps = {
+    inline def apply(glyph: String): GlyphiconProps = {
       val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlyphiconProps]
     }
     
-    @scala.inline
-    implicit class GlyphiconPropsMutableBuilder[Self <: GlyphiconProps] (val x: Self) extends AnyVal {
+    extension [Self <: GlyphiconProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,6 +14,5 @@ object mod {
   @JSImport("@segment/analytics.js-core", JSImport.Default)
   @js.native
   def default: AnalyticsJS = js.native
-  @scala.inline
-  def default_=(x: AnalyticsJS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: AnalyticsJS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

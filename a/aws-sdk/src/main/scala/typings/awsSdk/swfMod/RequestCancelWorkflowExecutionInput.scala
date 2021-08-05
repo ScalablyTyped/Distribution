@@ -23,25 +23,19 @@ trait RequestCancelWorkflowExecutionInput extends StObject {
 }
 object RequestCancelWorkflowExecutionInput {
   
-  @scala.inline
-  def apply(domain: DomainName, workflowId: WorkflowId): RequestCancelWorkflowExecutionInput = {
+  inline def apply(domain: DomainName, workflowId: WorkflowId): RequestCancelWorkflowExecutionInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], workflowId = workflowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestCancelWorkflowExecutionInput]
   }
   
-  @scala.inline
-  implicit class RequestCancelWorkflowExecutionInputMutableBuilder[Self <: RequestCancelWorkflowExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: RequestCancelWorkflowExecutionInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: WorkflowRunIdOptional): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: WorkflowRunIdOptional): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
     
-    @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
   }
 }

@@ -15,17 +15,17 @@ trait SceneRenderer
   extends StObject
      with Disposable {
   
-  var QUAD: js.Any = js.native
+  /* private */ var QUAD: js.Any = js.native
   
-  var QUAD_TRIANGLES: js.Any = js.native
+  /* private */ var QUAD_TRIANGLES: js.Any = js.native
   
-  var WHITE: js.Any = js.native
+  /* private */ var WHITE: js.Any = js.native
   
-  var activeRenderer: js.Any = js.native
+  /* private */ var activeRenderer: js.Any = js.native
   
   var batcher: PolygonBatcher = js.native
   
-  var batcherShader: js.Any = js.native
+  /* private */ var batcherShader: js.Any = js.native
   
   def begin(): Unit = js.native
   
@@ -172,7 +172,7 @@ trait SceneRenderer
     color: Color
   ): Unit = js.native
   
-  var enableRenderer: js.Any = js.native
+  /* private */ var enableRenderer: js.Any = js.native
   
   def end(): Unit = js.native
   
@@ -418,9 +418,9 @@ trait SceneRenderer
   
   def resize(resizeMode: ResizeMode): Unit = js.native
   
-  var shapes: js.Any = js.native
+  /* private */ var shapes: js.Any = js.native
   
-  var shapesShader: js.Any = js.native
+  /* private */ var shapesShader: js.Any = js.native
   
   var skeletonDebugRenderer: SkeletonDebugRenderer = js.native
   
@@ -508,5 +508,5 @@ trait SceneRenderer
     color3: Color
   ): Unit = js.native
   
-  var twoColorTint: js.Any = js.native
+  /* private */ var twoColorTint: js.Any = js.native
 }

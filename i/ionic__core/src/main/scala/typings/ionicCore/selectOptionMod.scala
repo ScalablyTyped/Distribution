@@ -21,7 +21,7 @@ object selectOptionMod {
     
     var el: HTMLElement = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     @JSName("render")
     def render_MSelectOption(): js.Any = js.native

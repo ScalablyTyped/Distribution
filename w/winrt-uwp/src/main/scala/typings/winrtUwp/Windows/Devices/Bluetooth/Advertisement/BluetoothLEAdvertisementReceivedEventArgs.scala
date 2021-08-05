@@ -25,8 +25,7 @@ trait BluetoothLEAdvertisementReceivedEventArgs extends StObject {
 }
 object BluetoothLEAdvertisementReceivedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     advertisement: BluetoothLEAdvertisement,
     advertisementType: BluetoothLEAdvertisementType,
     bluetoothAddress: Double,
@@ -37,22 +36,16 @@ object BluetoothLEAdvertisementReceivedEventArgs {
     __obj.asInstanceOf[BluetoothLEAdvertisementReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementReceivedEventArgsMutableBuilder[Self <: BluetoothLEAdvertisementReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
+    inline def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisementType(value: BluetoothLEAdvertisementType): Self = StObject.set(x, "advertisementType", value.asInstanceOf[js.Any])
+    inline def setAdvertisementType(value: BluetoothLEAdvertisementType): Self = StObject.set(x, "advertisementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluetoothAddress(value: Double): Self = StObject.set(x, "bluetoothAddress", value.asInstanceOf[js.Any])
+    inline def setBluetoothAddress(value: Double): Self = StObject.set(x, "bluetoothAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawSignalStrengthInDBm(value: Double): Self = StObject.set(x, "rawSignalStrengthInDBm", value.asInstanceOf[js.Any])
+    inline def setRawSignalStrengthInDBm(value: Double): Self = StObject.set(x, "rawSignalStrengthInDBm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

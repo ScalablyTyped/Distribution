@@ -18,22 +18,17 @@ trait ConnectionAuthentication extends StObject {
 }
 object ConnectionAuthentication {
   
-  @scala.inline
-  def apply(options: ConnectionAuthenticationOptions): ConnectionAuthentication = {
+  inline def apply(options: ConnectionAuthenticationOptions): ConnectionAuthentication = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAuthentication]
   }
   
-  @scala.inline
-  implicit class ConnectionAuthenticationMutableBuilder[Self <: ConnectionAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionAuthentication](x: Self) {
     
-    @scala.inline
-    def setOptions(value: ConnectionAuthenticationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ConnectionAuthenticationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

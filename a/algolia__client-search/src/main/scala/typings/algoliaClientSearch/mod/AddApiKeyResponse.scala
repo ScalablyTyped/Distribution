@@ -18,19 +18,15 @@ trait AddApiKeyResponse extends StObject {
 }
 object AddApiKeyResponse {
   
-  @scala.inline
-  def apply(createdAt: String, key: String): AddApiKeyResponse = {
+  inline def apply(createdAt: String, key: String): AddApiKeyResponse = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddApiKeyResponse]
   }
   
-  @scala.inline
-  implicit class AddApiKeyResponseMutableBuilder[Self <: AddApiKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddApiKeyResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

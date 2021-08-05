@@ -24,8 +24,7 @@ trait PipeableExtend3[F /* <: /* import warning: transforms.QualifyReferences#re
 }
 object PipeableExtend3 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
     duplicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any => js.Any,
     extend: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* wa */ js.Any, 
@@ -43,16 +42,13 @@ object PipeableExtend3 {
     __obj.asInstanceOf[PipeableExtend3[F]]
   }
   
-  @scala.inline
-  implicit class PipeableExtend3MutableBuilder[Self <: PipeableExtend3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & PipeableExtend3[F]) extends AnyVal {
+  extension [Self <: PipeableExtend3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & PipeableExtend3[F]) {
     
-    @scala.inline
-    def setDuplicate(
+    inline def setDuplicate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any => js.Any
     ): Self = StObject.set(x, "duplicate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtend(
+    inline def setExtend(
       value: js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* wa */ js.Any, 
           js.Any

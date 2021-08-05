@@ -22,28 +22,21 @@ trait SchemaQueryDriveActivityResponse extends StObject {
 }
 object SchemaQueryDriveActivityResponse {
   
-  @scala.inline
-  def apply(): SchemaQueryDriveActivityResponse = {
+  inline def apply(): SchemaQueryDriveActivityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryDriveActivityResponse]
   }
   
-  @scala.inline
-  implicit class SchemaQueryDriveActivityResponseMutableBuilder[Self <: SchemaQueryDriveActivityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryDriveActivityResponse](x: Self) {
     
-    @scala.inline
-    def setActivities(value: js.Array[SchemaDriveActivity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: js.Array[SchemaDriveActivity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+    inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    @scala.inline
-    def setActivitiesVarargs(value: SchemaDriveActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: SchemaDriveActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

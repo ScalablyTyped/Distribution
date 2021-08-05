@@ -22,18 +22,15 @@ object ComposerHeader {
   @JSImport("wix-style-react", "ComposerHeader.Actions")
   @js.native
   def Actions: SFC[ComposerHeaderActionsProps] = js.native
-  @scala.inline
-  def Actions_=(x: SFC[ComposerHeaderActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actions")(x.asInstanceOf[js.Any])
+  inline def Actions_=(x: SFC[ComposerHeaderActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actions")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "ComposerHeader.MainActions")
   @js.native
   def MainActions: SFC[ComposerHeaderMainActionsProps] = js.native
-  @scala.inline
-  def MainActions_=(x: SFC[ComposerHeaderMainActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MainActions")(x.asInstanceOf[js.Any])
+  inline def MainActions_=(x: SFC[ComposerHeaderMainActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MainActions")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "ComposerHeader.SaveStatus")
   @js.native
   def SaveStatus: SFC[ComposerHeaderSaveStatusProps] = js.native
-  @scala.inline
-  def SaveStatus_=(x: SFC[ComposerHeaderSaveStatusProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaveStatus")(x.asInstanceOf[js.Any])
+  inline def SaveStatus_=(x: SFC[ComposerHeaderSaveStatusProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaveStatus")(x.asInstanceOf[js.Any])
 }

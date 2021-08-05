@@ -16,8 +16,7 @@ trait ElementContentEditable extends StObject {
 }
 object ElementContentEditable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentEditable: java.lang.String,
     enterKeyHint: java.lang.String,
     inputMode: java.lang.String,
@@ -27,19 +26,14 @@ object ElementContentEditable {
     __obj.asInstanceOf[ElementContentEditable]
   }
   
-  @scala.inline
-  implicit class ElementContentEditableMutableBuilder[Self <: ElementContentEditable] (val x: Self) extends AnyVal {
+  extension [Self <: ElementContentEditable](x: Self) {
     
-    @scala.inline
-    def setContentEditable(value: java.lang.String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+    inline def setContentEditable(value: java.lang.String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterKeyHint(value: java.lang.String): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
+    inline def setEnterKeyHint(value: java.lang.String): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMode(value: java.lang.String): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+    inline def setInputMode(value: java.lang.String): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsContentEditable(value: scala.Boolean): Self = StObject.set(x, "isContentEditable", value.asInstanceOf[js.Any])
+    inline def setIsContentEditable(value: scala.Boolean): Self = StObject.set(x, "isContentEditable", value.asInstanceOf[js.Any])
   }
 }

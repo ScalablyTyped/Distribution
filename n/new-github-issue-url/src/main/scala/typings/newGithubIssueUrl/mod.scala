@@ -22,8 +22,7 @@ object mod {
   	opn(url);
   	```
   	*/
-  @scala.inline
-  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("new-github-issue-url", JSImport.Namespace)
   @js.native
@@ -35,8 +34,7 @@ object mod {
   @JSImport("new-github-issue-url", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof newGithubIssueUrl */ js.Any = js.native
-  @scala.inline
-  def default_=(
+  inline def default_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof newGithubIssueUrl */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
@@ -88,62 +86,44 @@ object mod {
   }
   object CommonOptions {
     
-    @scala.inline
-    def apply(): CommonOptions = {
+    inline def apply(): CommonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonOptions]
     }
     
-    @scala.inline
-    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonOptions](x: Self) {
       
-      @scala.inline
-      def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+      inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setMilestone(value: String): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+      inline def setMilestone(value: String): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
+      inline def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
       
-      @scala.inline
-      def setProjects(value: js.Array[String]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+      inline def setProjects(value: js.Array[String]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+      inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
       
-      @scala.inline
-      def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value :_*))
+      inline def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -157,14 +137,12 @@ object mod {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def RepoUrlOptions(repoUrl: String): typings.newGithubIssueUrl.mod.RepoUrlOptions = {
+    inline def RepoUrlOptions(repoUrl: String): typings.newGithubIssueUrl.mod.RepoUrlOptions = {
       val __obj = js.Dynamic.literal(repoUrl = repoUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.newGithubIssueUrl.mod.RepoUrlOptions]
     }
     
-    @scala.inline
-    def UserAndRepoOptions(repo: String, user: String): typings.newGithubIssueUrl.mod.UserAndRepoOptions = {
+    inline def UserAndRepoOptions(repo: String, user: String): typings.newGithubIssueUrl.mod.UserAndRepoOptions = {
       val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.newGithubIssueUrl.mod.UserAndRepoOptions]
     }
@@ -182,17 +160,14 @@ object mod {
   }
   object RepoUrlOptions {
     
-    @scala.inline
-    def apply(repoUrl: String): RepoUrlOptions = {
+    inline def apply(repoUrl: String): RepoUrlOptions = {
       val __obj = js.Dynamic.literal(repoUrl = repoUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepoUrlOptions]
     }
     
-    @scala.inline
-    implicit class RepoUrlOptionsMutableBuilder[Self <: RepoUrlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RepoUrlOptions](x: Self) {
       
-      @scala.inline
-      def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
+      inline def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,20 +188,16 @@ object mod {
   }
   object UserAndRepoOptions {
     
-    @scala.inline
-    def apply(repo: String, user: String): UserAndRepoOptions = {
+    inline def apply(repo: String, user: String): UserAndRepoOptions = {
       val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAndRepoOptions]
     }
     
-    @scala.inline
-    implicit class UserAndRepoOptionsMutableBuilder[Self <: UserAndRepoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UserAndRepoOptions](x: Self) {
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

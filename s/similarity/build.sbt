@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "similarity"
-version := "1.2-dt-20201110Z-3d9c4f"
+version := "1.2-dt-20201110Z-cb97fb"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

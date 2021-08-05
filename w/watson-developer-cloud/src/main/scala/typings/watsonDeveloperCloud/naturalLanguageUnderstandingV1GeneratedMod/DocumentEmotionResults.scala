@@ -12,19 +12,15 @@ trait DocumentEmotionResults extends StObject {
 }
 object DocumentEmotionResults {
   
-  @scala.inline
-  def apply(): DocumentEmotionResults = {
+  inline def apply(): DocumentEmotionResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentEmotionResults]
   }
   
-  @scala.inline
-  implicit class DocumentEmotionResultsMutableBuilder[Self <: DocumentEmotionResults] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentEmotionResults](x: Self) {
     
-    @scala.inline
-    def setEmotion(value: EmotionScores): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
+    inline def setEmotion(value: EmotionScores): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
+    inline def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
   }
 }

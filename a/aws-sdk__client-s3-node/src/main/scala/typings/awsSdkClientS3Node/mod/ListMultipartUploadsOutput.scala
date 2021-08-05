@@ -10,8 +10,7 @@ trait ListMultipartUploadsOutput
      with typings.awsSdkClientS3Node.typesListMultipartUploadsOutputMod.ListMultipartUploadsOutput
 object ListMultipartUploadsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListMultipartUploadsOutput = {
+  inline def apply($metadata: ResponseMetadata): ListMultipartUploadsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultipartUploadsOutput]
   }

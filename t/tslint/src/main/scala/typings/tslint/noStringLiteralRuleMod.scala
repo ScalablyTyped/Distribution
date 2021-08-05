@@ -24,16 +24,13 @@ object noStringLiteralRuleMod {
     @JSImport("tslint/lib/rules/noStringLiteralRule", "Rule.FAILURE_STRING")
     @js.native
     def FAILURE_STRING: String = js.native
-    @scala.inline
-    def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def id(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def id(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noStringLiteralRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

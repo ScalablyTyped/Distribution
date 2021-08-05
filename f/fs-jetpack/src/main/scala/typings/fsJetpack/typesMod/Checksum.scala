@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Checksum extends StObject
 object Checksum {
   
-  @scala.inline
-  def md5: typings.fsJetpack.fsJetpackStrings.md5 = "md5".asInstanceOf[typings.fsJetpack.fsJetpackStrings.md5]
+  inline def md5: typings.fsJetpack.fsJetpackStrings.md5 = "md5".asInstanceOf[typings.fsJetpack.fsJetpackStrings.md5]
   
-  @scala.inline
-  def sha1: typings.fsJetpack.fsJetpackStrings.sha1 = "sha1".asInstanceOf[typings.fsJetpack.fsJetpackStrings.sha1]
+  inline def sha1: typings.fsJetpack.fsJetpackStrings.sha1 = "sha1".asInstanceOf[typings.fsJetpack.fsJetpackStrings.sha1]
   
-  @scala.inline
-  def sha256: typings.fsJetpack.fsJetpackStrings.sha256 = "sha256".asInstanceOf[typings.fsJetpack.fsJetpackStrings.sha256]
+  inline def sha256: typings.fsJetpack.fsJetpackStrings.sha256 = "sha256".asInstanceOf[typings.fsJetpack.fsJetpackStrings.sha256]
   
-  @scala.inline
-  def sha512: typings.fsJetpack.fsJetpackStrings.sha512 = "sha512".asInstanceOf[typings.fsJetpack.fsJetpackStrings.sha512]
+  inline def sha512: typings.fsJetpack.fsJetpackStrings.sha512 = "sha512".asInstanceOf[typings.fsJetpack.fsJetpackStrings.sha512]
 }

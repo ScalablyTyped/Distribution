@@ -9,8 +9,7 @@ object global {
   @JSGlobal("context")
   @js.native
   def context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Describe */ js.Any = js.native
-  @scala.inline
-  def context_=(
+  inline def context_=(
     x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Describe */ js.Any
   ): Unit = js.Dynamic.global.updateDynamic("context")(x.asInstanceOf[js.Any])
 }

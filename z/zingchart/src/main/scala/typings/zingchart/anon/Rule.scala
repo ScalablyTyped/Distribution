@@ -17,19 +17,15 @@ trait Rule extends StObject {
 }
 object Rule {
   
-  @scala.inline
-  def apply(): Rule = {
+  inline def apply(): Rule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rule]
   }
   
-  @scala.inline
-  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+  extension [Self <: Rule](x: Self) {
     
-    @scala.inline
-    def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

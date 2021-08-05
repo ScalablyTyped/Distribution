@@ -20,8 +20,7 @@ trait EditingInfo
 }
 object EditingInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     lastEditDate: Date,
@@ -31,10 +30,8 @@ object EditingInfo {
     __obj.asInstanceOf[EditingInfo]
   }
   
-  @scala.inline
-  implicit class EditingInfoMutableBuilder[Self <: EditingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EditingInfo](x: Self) {
     
-    @scala.inline
-    def setLastEditDate(value: Date): Self = StObject.set(x, "lastEditDate", value.asInstanceOf[js.Any])
+    inline def setLastEditDate(value: Date): Self = StObject.set(x, "lastEditDate", value.asInstanceOf[js.Any])
   }
 }

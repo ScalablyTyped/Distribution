@@ -62,14 +62,12 @@ object esCollectionMod {
     @JSImport("react-virtualized/dist/es/Collection", "Collection.defaultProps")
     @js.native
     def defaultProps: CellGroupRenderer = js.native
-    @scala.inline
-    def defaultProps_=(x: CellGroupRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CellGroupRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-virtualized/dist/es/Collection", "Collection.propTypes")
     @js.native
     def propTypes: Arialabel = js.native
-    @scala.inline
-    def propTypes_=(x: Arialabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Arialabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   type CollectionCellGroupRenderer = js.Function1[/* params */ CollectionCellGroupRendererParams, js.Array[ReactNode]]
@@ -84,8 +82,7 @@ object esCollectionMod {
   }
   object CollectionCellGroupRendererParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cellRenderer: /* params */ CollectionCellRendererParams => ReactNode,
       cellSizeAndPositionGetter: /* params */ Index => CollectionCellSizeAndPosition,
       indices: js.Array[Double]
@@ -94,20 +91,15 @@ object esCollectionMod {
       __obj.asInstanceOf[CollectionCellGroupRendererParams]
     }
     
-    @scala.inline
-    implicit class CollectionCellGroupRendererParamsMutableBuilder[Self <: CollectionCellGroupRendererParams] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionCellGroupRendererParams](x: Self) {
       
-      @scala.inline
-      def setCellRenderer(value: /* params */ CollectionCellRendererParams => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
+      inline def setCellRenderer(value: /* params */ CollectionCellRendererParams => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCellSizeAndPositionGetter(value: /* params */ Index => CollectionCellSizeAndPosition): Self = StObject.set(x, "cellSizeAndPositionGetter", js.Any.fromFunction1(value))
+      inline def setCellSizeAndPositionGetter(value: /* params */ Index => CollectionCellSizeAndPosition): Self = StObject.set(x, "cellSizeAndPositionGetter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+      inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
     }
   }
   
@@ -125,26 +117,20 @@ object esCollectionMod {
   }
   object CollectionCellRendererParams {
     
-    @scala.inline
-    def apply(index: Double, isScrolling: Boolean, key: Double, style: CSSProperties): CollectionCellRendererParams = {
+    inline def apply(index: Double, isScrolling: Boolean, key: Double, style: CSSProperties): CollectionCellRendererParams = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollectionCellRendererParams]
     }
     
-    @scala.inline
-    implicit class CollectionCellRendererParamsMutableBuilder[Self <: CollectionCellRendererParams] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionCellRendererParams](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+      inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,26 +146,20 @@ object esCollectionMod {
   }
   object CollectionCellSizeAndPosition {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): CollectionCellSizeAndPosition = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): CollectionCellSizeAndPosition = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollectionCellSizeAndPosition]
     }
     
-    @scala.inline
-    implicit class CollectionCellSizeAndPositionMutableBuilder[Self <: CollectionCellSizeAndPosition] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionCellSizeAndPosition](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,8 +280,7 @@ object esCollectionMod {
   }
   object CollectionProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cellCount: Double,
       cellRenderer: /* params */ CollectionCellRendererParams => ReactNode,
       cellSizeAndPositionGetter: /* params */ Index => CollectionCellSizeAndPosition,
@@ -312,119 +291,81 @@ object esCollectionMod {
       __obj.asInstanceOf[CollectionProps]
     }
     
-    @scala.inline
-    implicit class CollectionPropsMutableBuilder[Self <: CollectionProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionProps](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+      inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
+      inline def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
       
-      @scala.inline
-      def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+      inline def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellGroupRenderer(value: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): Self = StObject.set(x, "cellGroupRenderer", js.Any.fromFunction1(value))
+      inline def setCellGroupRenderer(value: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): Self = StObject.set(x, "cellGroupRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCellGroupRendererUndefined: Self = StObject.set(x, "cellGroupRenderer", js.undefined)
+      inline def setCellGroupRendererUndefined: Self = StObject.set(x, "cellGroupRenderer", js.undefined)
       
-      @scala.inline
-      def setCellRenderer(value: /* params */ CollectionCellRendererParams => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
+      inline def setCellRenderer(value: /* params */ CollectionCellRendererParams => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCellSizeAndPositionGetter(value: /* params */ Index => CollectionCellSizeAndPosition): Self = StObject.set(x, "cellSizeAndPositionGetter", js.Any.fromFunction1(value))
+      inline def setCellSizeAndPositionGetter(value: /* params */ Index => CollectionCellSizeAndPosition): Self = StObject.set(x, "cellSizeAndPositionGetter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalOverscanSize(value: Double): Self = StObject.set(x, "horizontalOverscanSize", value.asInstanceOf[js.Any])
+      inline def setHorizontalOverscanSize(value: Double): Self = StObject.set(x, "horizontalOverscanSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalOverscanSizeUndefined: Self = StObject.set(x, "horizontalOverscanSize", js.undefined)
+      inline def setHorizontalOverscanSizeUndefined: Self = StObject.set(x, "horizontalOverscanSize", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setNoContentRenderer(value: () => Element): Self = StObject.set(x, "noContentRenderer", js.Any.fromFunction0(value))
+      inline def setNoContentRenderer(value: () => Element): Self = StObject.set(x, "noContentRenderer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNoContentRendererUndefined: Self = StObject.set(x, "noContentRenderer", js.undefined)
+      inline def setNoContentRendererUndefined: Self = StObject.set(x, "noContentRenderer", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: /* params */ ScrollParams => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* params */ ScrollParams => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+      inline def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)
+      inline def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+      inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
       
-      @scala.inline
-      def setScrollToAlignment(value: Alignment): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+      inline def setScrollToAlignment(value: Alignment): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
+      inline def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
       
-      @scala.inline
-      def setScrollToCell(value: Double): Self = StObject.set(x, "scrollToCell", value.asInstanceOf[js.Any])
+      inline def setScrollToCell(value: Double): Self = StObject.set(x, "scrollToCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToCellUndefined: Self = StObject.set(x, "scrollToCell", js.undefined)
+      inline def setScrollToCellUndefined: Self = StObject.set(x, "scrollToCell", js.undefined)
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+      inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
       
-      @scala.inline
-      def setSectionSize(value: Double): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
+      inline def setSectionSize(value: Double): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionSizeUndefined: Self = StObject.set(x, "sectionSize", js.undefined)
+      inline def setSectionSizeUndefined: Self = StObject.set(x, "sectionSize", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setVerticalOverscanSize(value: Double): Self = StObject.set(x, "verticalOverscanSize", value.asInstanceOf[js.Any])
+      inline def setVerticalOverscanSize(value: Double): Self = StObject.set(x, "verticalOverscanSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalOverscanSizeUndefined: Self = StObject.set(x, "verticalOverscanSize", js.undefined)
+      inline def setVerticalOverscanSizeUndefined: Self = StObject.set(x, "verticalOverscanSize", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

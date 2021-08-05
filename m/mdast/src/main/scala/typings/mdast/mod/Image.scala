@@ -18,17 +18,14 @@ trait Image
 }
 object Image {
   
-  @scala.inline
-  def apply(url: String): Image = {
+  inline def apply(url: String): Image = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

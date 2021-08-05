@@ -22,28 +22,21 @@ trait GhostAPI extends StObject {
 }
 object GhostAPI {
   
-  @scala.inline
-  def apply(authors: Read, pages: Browse, posts: Browse, settings: BrowseBrowseFunction, tags: BrowseRead): GhostAPI = {
+  inline def apply(authors: Read, pages: Browse, posts: Browse, settings: BrowseBrowseFunction, tags: BrowseRead): GhostAPI = {
     val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], posts = posts.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GhostAPI]
   }
   
-  @scala.inline
-  implicit class GhostAPIMutableBuilder[Self <: GhostAPI] (val x: Self) extends AnyVal {
+  extension [Self <: GhostAPI](x: Self) {
     
-    @scala.inline
-    def setAuthors(value: Read): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+    inline def setAuthors(value: Read): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: Browse): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Browse): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosts(value: Browse): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
+    inline def setPosts(value: Browse): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: BrowseBrowseFunction): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: BrowseBrowseFunction): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: BrowseRead): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: BrowseRead): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

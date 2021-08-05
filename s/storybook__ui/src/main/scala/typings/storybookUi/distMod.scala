@@ -14,8 +14,7 @@ object distMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(domNode: HTMLElement, provider: typings.storybookUi.providerMod.default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(domNode.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(domNode: HTMLElement, provider: typings.storybookUi.providerMod.default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(domNode.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@storybook/ui/dist", "Provider")
   @js.native
@@ -33,23 +32,18 @@ object distMod {
   }
   object RootProps {
     
-    @scala.inline
-    def apply(provider: default): RootProps = {
+    inline def apply(provider: default): RootProps = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[RootProps]
     }
     
-    @scala.inline
-    implicit class RootPropsMutableBuilder[Self <: RootProps] (val x: Self) extends AnyVal {
+    extension [Self <: RootProps](x: Self) {
       
-      @scala.inline
-      def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setProvider(value: default): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: default): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
   }
 }

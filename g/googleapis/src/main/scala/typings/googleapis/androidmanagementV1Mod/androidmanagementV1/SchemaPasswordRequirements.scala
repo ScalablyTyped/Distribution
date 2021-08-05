@@ -82,85 +82,59 @@ trait SchemaPasswordRequirements extends StObject {
 }
 object SchemaPasswordRequirements {
   
-  @scala.inline
-  def apply(): SchemaPasswordRequirements = {
+  inline def apply(): SchemaPasswordRequirements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPasswordRequirements]
   }
   
-  @scala.inline
-  implicit class SchemaPasswordRequirementsMutableBuilder[Self <: SchemaPasswordRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPasswordRequirements](x: Self) {
     
-    @scala.inline
-    def setMaximumFailedPasswordsForWipe(value: Double): Self = StObject.set(x, "maximumFailedPasswordsForWipe", value.asInstanceOf[js.Any])
+    inline def setMaximumFailedPasswordsForWipe(value: Double): Self = StObject.set(x, "maximumFailedPasswordsForWipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumFailedPasswordsForWipeUndefined: Self = StObject.set(x, "maximumFailedPasswordsForWipe", js.undefined)
+    inline def setMaximumFailedPasswordsForWipeUndefined: Self = StObject.set(x, "maximumFailedPasswordsForWipe", js.undefined)
     
-    @scala.inline
-    def setPasswordExpirationTimeout(value: String): Self = StObject.set(x, "passwordExpirationTimeout", value.asInstanceOf[js.Any])
+    inline def setPasswordExpirationTimeout(value: String): Self = StObject.set(x, "passwordExpirationTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordExpirationTimeoutUndefined: Self = StObject.set(x, "passwordExpirationTimeout", js.undefined)
+    inline def setPasswordExpirationTimeoutUndefined: Self = StObject.set(x, "passwordExpirationTimeout", js.undefined)
     
-    @scala.inline
-    def setPasswordHistoryLength(value: Double): Self = StObject.set(x, "passwordHistoryLength", value.asInstanceOf[js.Any])
+    inline def setPasswordHistoryLength(value: Double): Self = StObject.set(x, "passwordHistoryLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordHistoryLengthUndefined: Self = StObject.set(x, "passwordHistoryLength", js.undefined)
+    inline def setPasswordHistoryLengthUndefined: Self = StObject.set(x, "passwordHistoryLength", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumLength(value: Double): Self = StObject.set(x, "passwordMinimumLength", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumLength(value: Double): Self = StObject.set(x, "passwordMinimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumLengthUndefined: Self = StObject.set(x, "passwordMinimumLength", js.undefined)
+    inline def setPasswordMinimumLengthUndefined: Self = StObject.set(x, "passwordMinimumLength", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumLetters(value: Double): Self = StObject.set(x, "passwordMinimumLetters", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumLetters(value: Double): Self = StObject.set(x, "passwordMinimumLetters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumLettersUndefined: Self = StObject.set(x, "passwordMinimumLetters", js.undefined)
+    inline def setPasswordMinimumLettersUndefined: Self = StObject.set(x, "passwordMinimumLetters", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumLowerCase(value: Double): Self = StObject.set(x, "passwordMinimumLowerCase", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumLowerCase(value: Double): Self = StObject.set(x, "passwordMinimumLowerCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumLowerCaseUndefined: Self = StObject.set(x, "passwordMinimumLowerCase", js.undefined)
+    inline def setPasswordMinimumLowerCaseUndefined: Self = StObject.set(x, "passwordMinimumLowerCase", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumNonLetter(value: Double): Self = StObject.set(x, "passwordMinimumNonLetter", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumNonLetter(value: Double): Self = StObject.set(x, "passwordMinimumNonLetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumNonLetterUndefined: Self = StObject.set(x, "passwordMinimumNonLetter", js.undefined)
+    inline def setPasswordMinimumNonLetterUndefined: Self = StObject.set(x, "passwordMinimumNonLetter", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumNumeric(value: Double): Self = StObject.set(x, "passwordMinimumNumeric", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumNumeric(value: Double): Self = StObject.set(x, "passwordMinimumNumeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumNumericUndefined: Self = StObject.set(x, "passwordMinimumNumeric", js.undefined)
+    inline def setPasswordMinimumNumericUndefined: Self = StObject.set(x, "passwordMinimumNumeric", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumSymbols(value: Double): Self = StObject.set(x, "passwordMinimumSymbols", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumSymbols(value: Double): Self = StObject.set(x, "passwordMinimumSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumSymbolsUndefined: Self = StObject.set(x, "passwordMinimumSymbols", js.undefined)
+    inline def setPasswordMinimumSymbolsUndefined: Self = StObject.set(x, "passwordMinimumSymbols", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumUpperCase(value: Double): Self = StObject.set(x, "passwordMinimumUpperCase", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumUpperCase(value: Double): Self = StObject.set(x, "passwordMinimumUpperCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumUpperCaseUndefined: Self = StObject.set(x, "passwordMinimumUpperCase", js.undefined)
+    inline def setPasswordMinimumUpperCaseUndefined: Self = StObject.set(x, "passwordMinimumUpperCase", js.undefined)
     
-    @scala.inline
-    def setPasswordQuality(value: String): Self = StObject.set(x, "passwordQuality", value.asInstanceOf[js.Any])
+    inline def setPasswordQuality(value: String): Self = StObject.set(x, "passwordQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordQualityUndefined: Self = StObject.set(x, "passwordQuality", js.undefined)
+    inline def setPasswordQualityUndefined: Self = StObject.set(x, "passwordQuality", js.undefined)
     
-    @scala.inline
-    def setPasswordScope(value: String): Self = StObject.set(x, "passwordScope", value.asInstanceOf[js.Any])
+    inline def setPasswordScope(value: String): Self = StObject.set(x, "passwordScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordScopeUndefined: Self = StObject.set(x, "passwordScope", js.undefined)
+    inline def setPasswordScopeUndefined: Self = StObject.set(x, "passwordScope", js.undefined)
   }
 }

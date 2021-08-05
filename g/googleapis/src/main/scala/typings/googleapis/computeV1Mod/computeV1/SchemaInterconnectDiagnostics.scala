@@ -30,37 +30,27 @@ trait SchemaInterconnectDiagnostics extends StObject {
 }
 object SchemaInterconnectDiagnostics {
   
-  @scala.inline
-  def apply(): SchemaInterconnectDiagnostics = {
+  inline def apply(): SchemaInterconnectDiagnostics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterconnectDiagnostics]
   }
   
-  @scala.inline
-  implicit class SchemaInterconnectDiagnosticsMutableBuilder[Self <: SchemaInterconnectDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterconnectDiagnostics](x: Self) {
     
-    @scala.inline
-    def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
+    inline def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
+    inline def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
-    @scala.inline
-    def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
+    inline def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
     
-    @scala.inline
-    def setLinks(value: js.Array[SchemaInterconnectDiagnosticsLinkStatus]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[SchemaInterconnectDiagnosticsLinkStatus]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: SchemaInterconnectDiagnosticsLinkStatus*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: SchemaInterconnectDiagnosticsLinkStatus*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
+    inline def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
   }
 }

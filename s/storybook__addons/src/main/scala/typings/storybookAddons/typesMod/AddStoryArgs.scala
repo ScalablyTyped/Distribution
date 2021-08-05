@@ -18,8 +18,7 @@ trait AddStoryArgs[StoryFnReturnType] extends StObject {
 }
 object AddStoryArgs {
   
-  @scala.inline
-  def apply[StoryFnReturnType](
+  inline def apply[StoryFnReturnType](
     id: StoryId,
     kind: StoryKind,
     name: StoryName,
@@ -30,28 +29,20 @@ object AddStoryArgs {
     __obj.asInstanceOf[AddStoryArgs[StoryFnReturnType]]
   }
   
-  @scala.inline
-  implicit class AddStoryArgsMutableBuilder[Self <: AddStoryArgs[?], StoryFnReturnType] (val x: Self & AddStoryArgs[StoryFnReturnType]) extends AnyVal {
+  extension [Self <: AddStoryArgs[?], StoryFnReturnType](x: Self & AddStoryArgs[StoryFnReturnType]) {
     
-    @scala.inline
-    def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryFn(value: StoryFn[StoryFnReturnType]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+    inline def setStoryFn(value: StoryFn[StoryFnReturnType]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => StoryFnReturnType): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
+    inline def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => StoryFnReturnType): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => StoryFnReturnType): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
+    inline def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => StoryFnReturnType): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
   }
 }

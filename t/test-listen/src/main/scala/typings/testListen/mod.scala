@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(srv: Server): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(srv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(srv: Server, hostname: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(srv.asInstanceOf[js.Any], hostname.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(srv: Server): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(srv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(srv: Server, hostname: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(srv.asInstanceOf[js.Any], hostname.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("test-listen", JSImport.Namespace)
   @js.native

@@ -19,8 +19,7 @@ trait HistorySource extends StObject {
 }
 object HistorySource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: (String, js.Function1[/* event */ Event, Unit]) => Unit,
     history: PushState,
     location: WindowLocation[LocationState],
@@ -30,19 +29,14 @@ object HistorySource {
     __obj.asInstanceOf[HistorySource]
   }
   
-  @scala.inline
-  implicit class HistorySourceMutableBuilder[Self <: HistorySource] (val x: Self) extends AnyVal {
+  extension [Self <: HistorySource](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    inline def setAddEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHistory(value: PushState): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: PushState): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+    inline def setRemoveEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
   }
 }

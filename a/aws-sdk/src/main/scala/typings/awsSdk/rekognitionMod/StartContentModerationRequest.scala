@@ -33,40 +33,29 @@ trait StartContentModerationRequest extends StObject {
 }
 object StartContentModerationRequest {
   
-  @scala.inline
-  def apply(Video: Video): StartContentModerationRequest = {
+  inline def apply(Video: Video): StartContentModerationRequest = {
     val __obj = js.Dynamic.literal(Video = Video.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartContentModerationRequest]
   }
   
-  @scala.inline
-  implicit class StartContentModerationRequestMutableBuilder[Self <: StartContentModerationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartContentModerationRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
+    inline def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
+    inline def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
     
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
+    inline def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
+    inline def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
     
-    @scala.inline
-    def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
+    inline def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
+    inline def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
     
-    @scala.inline
-    def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
   }
 }

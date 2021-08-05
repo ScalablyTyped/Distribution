@@ -26,28 +26,21 @@ trait PeerInformation extends StObject {
 }
 object PeerInformation {
   
-  @scala.inline
-  def apply(discoveryData: IBuffer, displayName: String, hostName: HostName, id: String, serviceName: String): PeerInformation = {
+  inline def apply(discoveryData: IBuffer, displayName: String, hostName: HostName, id: String, serviceName: String): PeerInformation = {
     val __obj = js.Dynamic.literal(discoveryData = discoveryData.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerInformation]
   }
   
-  @scala.inline
-  implicit class PeerInformationMutableBuilder[Self <: PeerInformation] (val x: Self) extends AnyVal {
+  extension [Self <: PeerInformation](x: Self) {
     
-    @scala.inline
-    def setDiscoveryData(value: IBuffer): Self = StObject.set(x, "discoveryData", value.asInstanceOf[js.Any])
+    inline def setDiscoveryData(value: IBuffer): Self = StObject.set(x, "discoveryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostName(value: HostName): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
+    inline def setHostName(value: HostName): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

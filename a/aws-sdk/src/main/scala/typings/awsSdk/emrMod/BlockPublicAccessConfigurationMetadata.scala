@@ -18,19 +18,15 @@ trait BlockPublicAccessConfigurationMetadata extends StObject {
 }
 object BlockPublicAccessConfigurationMetadata {
   
-  @scala.inline
-  def apply(CreatedByArn: ArnType, CreationDateTime: Date): BlockPublicAccessConfigurationMetadata = {
+  inline def apply(CreatedByArn: ArnType, CreationDateTime: Date): BlockPublicAccessConfigurationMetadata = {
     val __obj = js.Dynamic.literal(CreatedByArn = CreatedByArn.asInstanceOf[js.Any], CreationDateTime = CreationDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockPublicAccessConfigurationMetadata]
   }
   
-  @scala.inline
-  implicit class BlockPublicAccessConfigurationMetadataMutableBuilder[Self <: BlockPublicAccessConfigurationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BlockPublicAccessConfigurationMetadata](x: Self) {
     
-    @scala.inline
-    def setCreatedByArn(value: ArnType): Self = StObject.set(x, "CreatedByArn", value.asInstanceOf[js.Any])
+    inline def setCreatedByArn(value: ArnType): Self = StObject.set(x, "CreatedByArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
   }
 }

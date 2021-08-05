@@ -27,25 +27,19 @@ trait PlusNet extends StObject {
 }
 object PlusNet {
   
-  @scala.inline
-  def apply(): PlusNet = {
+  inline def apply(): PlusNet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNet]
   }
   
-  @scala.inline
-  implicit class PlusNetMutableBuilder[Self <: PlusNet] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNet](x: Self) {
     
-    @scala.inline
-    def setProgressEvent(value: PlusNetProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
+    inline def setProgressEvent(value: PlusNetProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressEventUndefined: Self = StObject.set(x, "ProgressEvent", js.undefined)
+    inline def setProgressEventUndefined: Self = StObject.set(x, "ProgressEvent", js.undefined)
     
-    @scala.inline
-    def setXMLHttpRequest(value: PlusNetXMLHttpRequest): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
+    inline def setXMLHttpRequest(value: PlusNetXMLHttpRequest): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
+    inline def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
   }
 }

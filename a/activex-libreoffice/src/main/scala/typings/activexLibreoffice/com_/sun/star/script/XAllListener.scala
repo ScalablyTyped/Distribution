@@ -28,8 +28,7 @@ trait XAllListener
 }
 object XAllListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveFiring: AllEventObject => js.Any,
     disposing: EventObject => Unit,
@@ -41,13 +40,10 @@ object XAllListener {
     __obj.asInstanceOf[XAllListener]
   }
   
-  @scala.inline
-  implicit class XAllListenerMutableBuilder[Self <: XAllListener] (val x: Self) extends AnyVal {
+  extension [Self <: XAllListener](x: Self) {
     
-    @scala.inline
-    def setApproveFiring(value: AllEventObject => js.Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
+    inline def setApproveFiring(value: AllEventObject => js.Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFiring(value: AllEventObject => Unit): Self = StObject.set(x, "firing", js.Any.fromFunction1(value))
+    inline def setFiring(value: AllEventObject => Unit): Self = StObject.set(x, "firing", js.Any.fromFunction1(value))
   }
 }

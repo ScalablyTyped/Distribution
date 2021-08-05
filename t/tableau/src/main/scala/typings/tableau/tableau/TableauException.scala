@@ -14,16 +14,13 @@ trait TableauException
 }
 object TableauException {
   
-  @scala.inline
-  def apply(message: String, name: String, tableauSoftwareErrorCode: ErrorCode): TableauException = {
+  inline def apply(message: String, name: String, tableauSoftwareErrorCode: ErrorCode): TableauException = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tableauSoftwareErrorCode = tableauSoftwareErrorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableauException]
   }
   
-  @scala.inline
-  implicit class TableauExceptionMutableBuilder[Self <: TableauException] (val x: Self) extends AnyVal {
+  extension [Self <: TableauException](x: Self) {
     
-    @scala.inline
-    def setTableauSoftwareErrorCode(value: ErrorCode): Self = StObject.set(x, "tableauSoftwareErrorCode", value.asInstanceOf[js.Any])
+    inline def setTableauSoftwareErrorCode(value: ErrorCode): Self = StObject.set(x, "tableauSoftwareErrorCode", value.asInstanceOf[js.Any])
   }
 }

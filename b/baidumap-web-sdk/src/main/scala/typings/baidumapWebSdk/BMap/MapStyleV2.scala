@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapStyleV2 extends StObject
 object MapStyleV2 {
   
-  @scala.inline
-  def StyleId(styleId: String): typings.baidumapWebSdk.anon.StyleId = {
+  inline def StyleId(styleId: String): typings.baidumapWebSdk.anon.StyleId = {
     val __obj = js.Dynamic.literal(styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.baidumapWebSdk.anon.StyleId]
   }
   
-  @scala.inline
-  def StyleJson(styleJson: js.Array[MapStyleItem]): typings.baidumapWebSdk.anon.StyleJson = {
+  inline def StyleJson(styleJson: js.Array[MapStyleItem]): typings.baidumapWebSdk.anon.StyleJson = {
     val __obj = js.Dynamic.literal(styleJson = styleJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.baidumapWebSdk.anon.StyleJson]
   }

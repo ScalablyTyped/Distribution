@@ -17,8 +17,6 @@ object valueUtilMod {
   @js.native
   val QUOTED_KEYS: /* "$quoted$" */ String = js.native
   
-  @scala.inline
-  def convertValueToOutputAst(ctx: OutputContext, value: js.Any): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("convertValueToOutputAst")(ctx.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Expression]
-  @scala.inline
-  def convertValueToOutputAst(ctx: OutputContext, value: js.Any, `type`: Type): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("convertValueToOutputAst")(ctx.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  inline def convertValueToOutputAst(ctx: OutputContext, value: js.Any): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("convertValueToOutputAst")(ctx.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  inline def convertValueToOutputAst(ctx: OutputContext, value: js.Any, `type`: Type): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("convertValueToOutputAst")(ctx.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Expression]
 }

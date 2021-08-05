@@ -16,9 +16,9 @@ object subjectSubjectMod {
     extends StObject
        with IObserver {
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /* CompleteClass */
     override def completed(): js.Any = js.native
@@ -58,7 +58,6 @@ object subjectSubjectMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Subject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Subject]
+    inline def create(): Subject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Subject]
   }
 }

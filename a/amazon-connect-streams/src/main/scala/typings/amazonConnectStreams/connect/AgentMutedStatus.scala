@@ -11,16 +11,13 @@ trait AgentMutedStatus extends StObject {
 }
 object AgentMutedStatus {
   
-  @scala.inline
-  def apply(muted: Boolean): AgentMutedStatus = {
+  inline def apply(muted: Boolean): AgentMutedStatus = {
     val __obj = js.Dynamic.literal(muted = muted.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentMutedStatus]
   }
   
-  @scala.inline
-  implicit class AgentMutedStatusMutableBuilder[Self <: AgentMutedStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AgentMutedStatus](x: Self) {
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
   }
 }

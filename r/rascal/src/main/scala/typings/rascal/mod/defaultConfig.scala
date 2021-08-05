@@ -14,6 +14,5 @@ object defaultConfig {
   @JSImport("rascal", "defaultConfig.defaults")
   @js.native
   def defaults: Publications = js.native
-  @scala.inline
-  def defaults_=(x: Publications): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  inline def defaults_=(x: Publications): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
 }

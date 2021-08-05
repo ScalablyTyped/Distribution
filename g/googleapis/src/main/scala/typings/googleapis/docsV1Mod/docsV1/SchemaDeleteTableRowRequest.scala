@@ -19,19 +19,15 @@ trait SchemaDeleteTableRowRequest extends StObject {
 }
 object SchemaDeleteTableRowRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteTableRowRequest = {
+  inline def apply(): SchemaDeleteTableRowRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteTableRowRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteTableRowRequestMutableBuilder[Self <: SchemaDeleteTableRowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteTableRowRequest](x: Self) {
     
-    @scala.inline
-    def setTableCellLocation(value: SchemaTableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
+    inline def setTableCellLocation(value: SchemaTableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
+    inline def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
   }
 }

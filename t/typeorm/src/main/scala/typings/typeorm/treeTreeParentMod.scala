@@ -11,6 +11,5 @@ object treeTreeParentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TreeParent(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeParent")().asInstanceOf[PropertyDecorator]
+  inline def TreeParent(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeParent")().asInstanceOf[PropertyDecorator]
 }

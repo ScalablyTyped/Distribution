@@ -23,34 +23,25 @@ trait ListWorldsRequest extends StObject {
 }
 object ListWorldsRequest {
   
-  @scala.inline
-  def apply(): ListWorldsRequest = {
+  inline def apply(): ListWorldsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWorldsRequest]
   }
   
-  @scala.inline
-  implicit class ListWorldsRequestMutableBuilder[Self <: ListWorldsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorldsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

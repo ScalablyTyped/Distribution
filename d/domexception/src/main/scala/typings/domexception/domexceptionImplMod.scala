@@ -32,8 +32,7 @@ object domexceptionImplMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def init(impl: DOMExceptionImpl): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(impl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(impl: DOMExceptionImpl): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(impl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait DOMExceptionImpl extends StObject {
     
@@ -45,23 +44,18 @@ object domexceptionImplMod {
   }
   object DOMExceptionImpl {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String): DOMExceptionImpl = {
+    inline def apply(code: String, message: String, name: String): DOMExceptionImpl = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[DOMExceptionImpl]
     }
     
-    @scala.inline
-    implicit class DOMExceptionImplMutableBuilder[Self <: DOMExceptionImpl] (val x: Self) extends AnyVal {
+    extension [Self <: DOMExceptionImpl](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

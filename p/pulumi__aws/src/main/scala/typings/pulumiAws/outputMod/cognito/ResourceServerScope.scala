@@ -18,19 +18,15 @@ trait ResourceServerScope extends StObject {
 }
 object ResourceServerScope {
   
-  @scala.inline
-  def apply(scopeDescription: String, scopeName: String): ResourceServerScope = {
+  inline def apply(scopeDescription: String, scopeName: String): ResourceServerScope = {
     val __obj = js.Dynamic.literal(scopeDescription = scopeDescription.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceServerScope]
   }
   
-  @scala.inline
-  implicit class ResourceServerScopeMutableBuilder[Self <: ResourceServerScope] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceServerScope](x: Self) {
     
-    @scala.inline
-    def setScopeDescription(value: String): Self = StObject.set(x, "scopeDescription", value.asInstanceOf[js.Any])
+    inline def setScopeDescription(value: String): Self = StObject.set(x, "scopeDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
+    inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
   }
 }

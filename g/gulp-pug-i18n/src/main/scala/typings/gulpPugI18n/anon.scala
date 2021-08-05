@@ -18,41 +18,30 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply(locales: String | js.Array[String]): Default = {
+    inline def apply(locales: String | js.Array[String]): Default = {
       val __obj = js.Dynamic.literal(locales = locales.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceNull: Self = StObject.set(x, "namespace", null)
+      inline def setNamespaceNull: Self = StObject.set(x, "namespace", null)
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     }
   }
 }

@@ -40,16 +40,16 @@ object commonTargetMod {
       defaultViewport: Viewport
     ) = this()
     
-    var _browserContext: js.Any = js.native
+    /* private */ var _browserContext: js.Any = js.native
     
     /**
       * @internal
       */
     def _closedCallback(): Unit = js.native
     
-    var _defaultViewport: js.Any = js.native
+    /* private */ var _defaultViewport: js.Any = js.native
     
-    var _ignoreHTTPSErrors: js.Any = js.native
+    /* private */ var _ignoreHTTPSErrors: js.Any = js.native
     
     /**
       * @internal
@@ -71,23 +71,23 @@ object commonTargetMod {
       */
     var _isInitialized: Boolean = js.native
     
-    var _pagePromise: js.Any = js.native
+    /* private */ var _pagePromise: js.Any = js.native
     
-    var _sessionFactory: js.Any = js.native
+    /* private */ var _sessionFactory: js.Any = js.native
     
     /**
       * @internal
       */
     var _targetId: String = js.native
     
-    var _targetInfo: js.Any = js.native
+    /* private */ var _targetInfo: js.Any = js.native
     
     /**
       * @internal
       */
     def _targetInfoChanged(targetInfo: TargetInfo): Unit = js.native
     
-    var _workerPromise: js.Any = js.native
+    /* private */ var _workerPromise: js.Any = js.native
     
     /**
       * Get the browser the target belongs to.

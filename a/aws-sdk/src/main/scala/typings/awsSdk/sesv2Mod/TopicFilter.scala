@@ -18,25 +18,19 @@ trait TopicFilter extends StObject {
 }
 object TopicFilter {
   
-  @scala.inline
-  def apply(): TopicFilter = {
+  inline def apply(): TopicFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicFilter]
   }
   
-  @scala.inline
-  implicit class TopicFilterMutableBuilder[Self <: TopicFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TopicFilter](x: Self) {
     
-    @scala.inline
-    def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
     
-    @scala.inline
-    def setUseDefaultIfPreferenceUnavailable(value: UseDefaultIfPreferenceUnavailable): Self = StObject.set(x, "UseDefaultIfPreferenceUnavailable", value.asInstanceOf[js.Any])
+    inline def setUseDefaultIfPreferenceUnavailable(value: UseDefaultIfPreferenceUnavailable): Self = StObject.set(x, "UseDefaultIfPreferenceUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDefaultIfPreferenceUnavailableUndefined: Self = StObject.set(x, "UseDefaultIfPreferenceUnavailable", js.undefined)
+    inline def setUseDefaultIfPreferenceUnavailableUndefined: Self = StObject.set(x, "UseDefaultIfPreferenceUnavailable", js.undefined)
   }
 }

@@ -17,25 +17,19 @@ trait SignDefinition extends StObject {
 }
 object SignDefinition {
   
-  @scala.inline
-  def apply(datetime: Date, text: String, time: Double, username: String): SignDefinition = {
+  inline def apply(datetime: Date, text: String, time: Double, username: String): SignDefinition = {
     val __obj = js.Dynamic.literal(datetime = datetime.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignDefinition]
   }
   
-  @scala.inline
-  implicit class SignDefinitionMutableBuilder[Self <: SignDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SignDefinition](x: Self) {
     
-    @scala.inline
-    def setDatetime(value: Date): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: Date): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

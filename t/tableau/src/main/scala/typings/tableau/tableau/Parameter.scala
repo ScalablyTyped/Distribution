@@ -44,8 +44,7 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAllowableValues: () => js.Array[DataValue],
     getAllowableValuesType: () => ParameterAllowableValuesType,
     getCurrentValue: () => DataValue,
@@ -60,34 +59,24 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setGetAllowableValues(value: () => js.Array[DataValue]): Self = StObject.set(x, "getAllowableValues", js.Any.fromFunction0(value))
+    inline def setGetAllowableValues(value: () => js.Array[DataValue]): Self = StObject.set(x, "getAllowableValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllowableValuesType(value: () => ParameterAllowableValuesType): Self = StObject.set(x, "getAllowableValuesType", js.Any.fromFunction0(value))
+    inline def setGetAllowableValuesType(value: () => ParameterAllowableValuesType): Self = StObject.set(x, "getAllowableValuesType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentValue(value: () => DataValue): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
+    inline def setGetCurrentValue(value: () => DataValue): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataType(value: () => ParameterDataType): Self = StObject.set(x, "getDataType", js.Any.fromFunction0(value))
+    inline def setGetDataType(value: () => ParameterDataType): Self = StObject.set(x, "getDataType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDateStepPeriod(value: () => PeriodType): Self = StObject.set(x, "getDateStepPeriod", js.Any.fromFunction0(value))
+    inline def setGetDateStepPeriod(value: () => PeriodType): Self = StObject.set(x, "getDateStepPeriod", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxValue(value: () => DataValue): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
+    inline def setGetMaxValue(value: () => DataValue): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinValue(value: () => DataValue): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
+    inline def setGetMinValue(value: () => DataValue): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStepSize(value: () => Double): Self = StObject.set(x, "getStepSize", js.Any.fromFunction0(value))
+    inline def setGetStepSize(value: () => Double): Self = StObject.set(x, "getStepSize", js.Any.fromFunction0(value))
   }
 }

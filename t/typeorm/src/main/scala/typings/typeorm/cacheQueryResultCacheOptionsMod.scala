@@ -36,35 +36,26 @@ object cacheQueryResultCacheOptionsMod {
   }
   object QueryResultCacheOptions {
     
-    @scala.inline
-    def apply(duration: Double, identifier: String, query: String): QueryResultCacheOptions = {
+    inline def apply(duration: Double, identifier: String, query: String): QueryResultCacheOptions = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryResultCacheOptions]
     }
     
-    @scala.inline
-    implicit class QueryResultCacheOptionsMutableBuilder[Self <: QueryResultCacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryResultCacheOptions](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
 }

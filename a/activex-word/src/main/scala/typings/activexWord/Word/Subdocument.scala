@@ -30,13 +30,12 @@ trait Subdocument extends StObject {
   
   def Split(Range: typings.activexWord.Word.Range): Unit
   
-  @JSName("Word.Subdocument_typekey")
+  /* private */ @JSName("Word.Subdocument_typekey")
   var WordDotSubdocument_typekey: Subdocument
 }
 object Subdocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -56,46 +55,32 @@ object Subdocument {
     __obj.asInstanceOf[Subdocument]
   }
   
-  @scala.inline
-  implicit class SubdocumentMutableBuilder[Self <: Subdocument] (val x: Self) extends AnyVal {
+  extension [Self <: Subdocument](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasFile(value: Boolean): Self = StObject.set(x, "HasFile", value.asInstanceOf[js.Any])
+    inline def setHasFile(value: Boolean): Self = StObject.set(x, "HasFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplit(value: Range => Unit): Self = StObject.set(x, "Split", js.Any.fromFunction1(value))
+    inline def setSplit(value: Range => Unit): Self = StObject.set(x, "Split", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWordDotSubdocument_typekey(value: Subdocument): Self = StObject.set(x, "Word.Subdocument_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSubdocument_typekey(value: Subdocument): Self = StObject.set(x, "Word.Subdocument_typekey", value.asInstanceOf[js.Any])
   }
 }

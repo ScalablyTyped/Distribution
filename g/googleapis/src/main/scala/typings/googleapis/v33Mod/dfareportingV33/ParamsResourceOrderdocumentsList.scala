@@ -80,94 +80,65 @@ trait ParamsResourceOrderdocumentsList
 }
 object ParamsResourceOrderdocumentsList {
   
-  @scala.inline
-  def apply(): ParamsResourceOrderdocumentsList = {
+  inline def apply(): ParamsResourceOrderdocumentsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrderdocumentsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrderdocumentsListMutableBuilder[Self <: ParamsResourceOrderdocumentsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrderdocumentsList](x: Self) {
     
-    @scala.inline
-    def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+    inline def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
+    inline def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: js.Array[String]): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: js.Array[String]): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setOrderIdVarargs(value: String*): Self = StObject.set(x, "orderId", js.Array(value :_*))
+    inline def setOrderIdVarargs(value: String*): Self = StObject.set(x, "orderId", js.Array(value :_*))
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
+    inline def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
     
-    @scala.inline
-    def setSiteId(value: js.Array[String]): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: js.Array[String]): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
+    inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
-    @scala.inline
-    def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value :_*))
+    inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value :_*))
     
-    @scala.inline
-    def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
+    inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
+    inline def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

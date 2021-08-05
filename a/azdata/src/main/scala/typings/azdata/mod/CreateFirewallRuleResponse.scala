@@ -12,19 +12,15 @@ trait CreateFirewallRuleResponse extends StObject {
 }
 object CreateFirewallRuleResponse {
   
-  @scala.inline
-  def apply(errorMessage: String, result: Boolean): CreateFirewallRuleResponse = {
+  inline def apply(errorMessage: String, result: Boolean): CreateFirewallRuleResponse = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFirewallRuleResponse]
   }
   
-  @scala.inline
-  implicit class CreateFirewallRuleResponseMutableBuilder[Self <: CreateFirewallRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFirewallRuleResponse](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

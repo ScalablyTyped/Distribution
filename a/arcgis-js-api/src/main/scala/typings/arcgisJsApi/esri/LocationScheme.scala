@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocationScheme extends StObject
 object LocationScheme {
   
-  @scala.inline
-  def LocationSchemeForMesh(
+  inline def LocationSchemeForMesh(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -26,8 +25,7 @@ object LocationScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.LocationSchemeForMesh]
   }
   
-  @scala.inline
-  def LocationSchemeForPoint(
+  inline def LocationSchemeForPoint(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -40,8 +38,7 @@ object LocationScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.LocationSchemeForPoint]
   }
   
-  @scala.inline
-  def LocationSchemeForPolygon(
+  inline def LocationSchemeForPolygon(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -53,8 +50,7 @@ object LocationScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.LocationSchemeForPolygon]
   }
   
-  @scala.inline
-  def LocationSchemeForPolyline(
+  inline def LocationSchemeForPolyline(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,

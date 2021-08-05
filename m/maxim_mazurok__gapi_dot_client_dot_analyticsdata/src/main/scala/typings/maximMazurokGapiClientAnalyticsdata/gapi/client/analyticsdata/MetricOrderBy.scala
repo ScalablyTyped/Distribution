@@ -11,19 +11,15 @@ trait MetricOrderBy extends StObject {
 }
 object MetricOrderBy {
   
-  @scala.inline
-  def apply(): MetricOrderBy = {
+  inline def apply(): MetricOrderBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricOrderBy]
   }
   
-  @scala.inline
-  implicit class MetricOrderByMutableBuilder[Self <: MetricOrderBy] (val x: Self) extends AnyVal {
+  extension [Self <: MetricOrderBy](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
   }
 }

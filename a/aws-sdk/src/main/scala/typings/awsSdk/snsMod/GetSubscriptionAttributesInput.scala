@@ -13,16 +13,13 @@ trait GetSubscriptionAttributesInput extends StObject {
 }
 object GetSubscriptionAttributesInput {
   
-  @scala.inline
-  def apply(SubscriptionArn: subscriptionARN): GetSubscriptionAttributesInput = {
+  inline def apply(SubscriptionArn: subscriptionARN): GetSubscriptionAttributesInput = {
     val __obj = js.Dynamic.literal(SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSubscriptionAttributesInput]
   }
   
-  @scala.inline
-  implicit class GetSubscriptionAttributesInputMutableBuilder[Self <: GetSubscriptionAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSubscriptionAttributesInput](x: Self) {
     
-    @scala.inline
-    def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMXmlSerializer")
 @js.native
-class IDOMXmlSerializer protected ()
+/* private */ class IDOMXmlSerializer ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMXmlSerializer {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IDOMXmlSerializer_typekey")
   var MSHTMLDotIDOMXmlSerializer_typekey: typings.activexMshtml.MSHTML.IDOMXmlSerializer = js.native
   

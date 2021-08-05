@@ -16,23 +16,18 @@ trait SourceUnit
 }
 object SourceUnit {
   
-  @scala.inline
-  def apply(children: js.Array[ASTNode]): SourceUnit = {
+  inline def apply(children: js.Array[ASTNode]): SourceUnit = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SourceUnit")
     __obj.asInstanceOf[SourceUnit]
   }
   
-  @scala.inline
-  implicit class SourceUnitMutableBuilder[Self <: SourceUnit] (val x: Self) extends AnyVal {
+  extension [Self <: SourceUnit](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[ASTNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ASTNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: ASTNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ASTNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.SourceUnit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.SourceUnit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

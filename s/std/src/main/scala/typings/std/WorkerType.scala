@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkerType extends StObject
 object WorkerType {
   
-  @scala.inline
-  def classic: typings.std.stdStrings.classic = "classic".asInstanceOf[typings.std.stdStrings.classic]
+  inline def classic: typings.std.stdStrings.classic = "classic".asInstanceOf[typings.std.stdStrings.classic]
   
-  @scala.inline
-  def module: typings.std.stdStrings.module = "module".asInstanceOf[typings.std.stdStrings.module]
+  inline def module: typings.std.stdStrings.module = "module".asInstanceOf[typings.std.stdStrings.module]
 }

@@ -23,8 +23,7 @@ trait IndicesRolloverResponse extends StObject {
 }
 object IndicesRolloverResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acknowledged: Boolean,
     conditions: StringDictionary[Boolean],
     dry_run: Boolean,
@@ -37,28 +36,20 @@ object IndicesRolloverResponse {
     __obj.asInstanceOf[IndicesRolloverResponse]
   }
   
-  @scala.inline
-  implicit class IndicesRolloverResponseMutableBuilder[Self <: IndicesRolloverResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesRolloverResponse](x: Self) {
     
-    @scala.inline
-    def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
+    inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditions(value: StringDictionary[Boolean]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: StringDictionary[Boolean]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
+    inline def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_index(value: String): Self = StObject.set(x, "new_index", value.asInstanceOf[js.Any])
+    inline def setNew_index(value: String): Self = StObject.set(x, "new_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOld_index(value: String): Self = StObject.set(x, "old_index", value.asInstanceOf[js.Any])
+    inline def setOld_index(value: String): Self = StObject.set(x, "old_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolled_over(value: Boolean): Self = StObject.set(x, "rolled_over", value.asInstanceOf[js.Any])
+    inline def setRolled_over(value: Boolean): Self = StObject.set(x, "rolled_over", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShards_acknowledged(value: Boolean): Self = StObject.set(x, "shards_acknowledged", value.asInstanceOf[js.Any])
+    inline def setShards_acknowledged(value: Boolean): Self = StObject.set(x, "shards_acknowledged", value.asInstanceOf[js.Any])
   }
 }

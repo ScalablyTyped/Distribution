@@ -10,16 +10,13 @@ trait Props[T /* <: js.Object */] extends StObject {
 }
 object Props {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](props: Data[T]): Props[T] = {
+  inline def apply[T /* <: js.Object */](props: Data[T]): Props[T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[T]]
   }
   
-  @scala.inline
-  implicit class PropsMutableBuilder[Self <: Props[?], T /* <: js.Object */] (val x: Self & Props[T]) extends AnyVal {
+  extension [Self <: Props[?], T /* <: js.Object */](x: Self & Props[T]) {
     
-    @scala.inline
-    def setProps(value: Data[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Data[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

@@ -41,26 +41,19 @@ object gcm {
   trait DisallowedKeys extends StObject
   object DisallowedKeys {
     
-    @scala.inline
-    def GOOG: typings.chromeApps.chromeAppsStrings.GOOG = "GOOG".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOG]
+    inline def GOOG: typings.chromeApps.chromeAppsStrings.GOOG = "GOOG".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOG]
     
-    @scala.inline
-    def GOOGDot: typings.chromeApps.chromeAppsStrings.GOOGDot = "GOOG.".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOGDot]
+    inline def GOOGDot: typings.chromeApps.chromeAppsStrings.GOOGDot = "GOOG.".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOGDot]
     
-    @scala.inline
-    def GOOGLE: typings.chromeApps.chromeAppsStrings.GOOGLE = "GOOGLE".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOGLE]
+    inline def GOOGLE: typings.chromeApps.chromeAppsStrings.GOOGLE = "GOOGLE".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOGLE]
     
-    @scala.inline
-    def collapse_key: typings.chromeApps.chromeAppsStrings.collapse_key = "collapse_key".asInstanceOf[typings.chromeApps.chromeAppsStrings.collapse_key]
+    inline def collapse_key: typings.chromeApps.chromeAppsStrings.collapse_key = "collapse_key".asInstanceOf[typings.chromeApps.chromeAppsStrings.collapse_key]
     
-    @scala.inline
-    def goog: goog_ = "goog".asInstanceOf[goog_]
+    inline def goog: goog_ = "goog".asInstanceOf[goog_]
     
-    @scala.inline
-    def googDot: typings.chromeApps.chromeAppsStrings.googDot = "goog.".asInstanceOf[typings.chromeApps.chromeAppsStrings.googDot]
+    inline def googDot: typings.chromeApps.chromeAppsStrings.googDot = "goog.".asInstanceOf[typings.chromeApps.chromeAppsStrings.googDot]
     
-    @scala.inline
-    def google: google_ = "google".asInstanceOf[google_]
+    inline def google: google_ = "google".asInstanceOf[google_]
   }
   
   trait GcmError extends StObject {
@@ -76,26 +69,20 @@ object gcm {
   }
   object GcmError {
     
-    @scala.inline
-    def apply(detail: js.Object, errorMessage: String): GcmError = {
+    inline def apply(detail: js.Object, errorMessage: String): GcmError = {
       val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
       __obj.asInstanceOf[GcmError]
     }
     
-    @scala.inline
-    implicit class GcmErrorMutableBuilder[Self <: GcmError] (val x: Self) extends AnyVal {
+    extension [Self <: GcmError](x: Self) {
       
-      @scala.inline
-      def setDetail(value: js.Object): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: js.Object): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+      inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     }
   }
   
@@ -123,29 +110,22 @@ object gcm {
   }
   object IncomingMessage {
     
-    @scala.inline
-    def apply(data: IGCMDataReceive): IncomingMessage = {
+    inline def apply(data: IGCMDataReceive): IncomingMessage = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncomingMessage]
     }
     
-    @scala.inline
-    implicit class IncomingMessageMutableBuilder[Self <: IncomingMessage] (val x: Self) extends AnyVal {
+    extension [Self <: IncomingMessage](x: Self) {
       
-      @scala.inline
-      def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
+      inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
+      inline def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
       
-      @scala.inline
-      def setData(value: IGCMDataReceive): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: IGCMDataReceive): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     }
   }
   
@@ -173,29 +153,22 @@ object gcm {
   }
   object OutgoingMessage {
     
-    @scala.inline
-    def apply(data: IGCMDataSend, destinationId: String, messageId: String): OutgoingMessage = {
+    inline def apply(data: IGCMDataSend, destinationId: String, messageId: String): OutgoingMessage = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], destinationId = destinationId.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutgoingMessage]
     }
     
-    @scala.inline
-    implicit class OutgoingMessageMutableBuilder[Self <: OutgoingMessage] (val x: Self) extends AnyVal {
+    extension [Self <: OutgoingMessage](x: Self) {
       
-      @scala.inline
-      def setData(value: IGCMDataSend): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: IGCMDataSend): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
+      inline def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLive(value: integer): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
+      inline def setTimeToLive(value: integer): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
+      inline def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
     }
   }
 }

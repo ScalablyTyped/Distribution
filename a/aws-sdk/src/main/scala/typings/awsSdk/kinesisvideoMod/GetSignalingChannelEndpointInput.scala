@@ -18,22 +18,17 @@ trait GetSignalingChannelEndpointInput extends StObject {
 }
 object GetSignalingChannelEndpointInput {
   
-  @scala.inline
-  def apply(ChannelARN: ResourceARN): GetSignalingChannelEndpointInput = {
+  inline def apply(ChannelARN: ResourceARN): GetSignalingChannelEndpointInput = {
     val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSignalingChannelEndpointInput]
   }
   
-  @scala.inline
-  implicit class GetSignalingChannelEndpointInputMutableBuilder[Self <: GetSignalingChannelEndpointInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSignalingChannelEndpointInput](x: Self) {
     
-    @scala.inline
-    def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
+    inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleMasterChannelEndpointConfiguration(value: SingleMasterChannelEndpointConfiguration): Self = StObject.set(x, "SingleMasterChannelEndpointConfiguration", value.asInstanceOf[js.Any])
+    inline def setSingleMasterChannelEndpointConfiguration(value: SingleMasterChannelEndpointConfiguration): Self = StObject.set(x, "SingleMasterChannelEndpointConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleMasterChannelEndpointConfigurationUndefined: Self = StObject.set(x, "SingleMasterChannelEndpointConfiguration", js.undefined)
+    inline def setSingleMasterChannelEndpointConfigurationUndefined: Self = StObject.set(x, "SingleMasterChannelEndpointConfiguration", js.undefined)
   }
 }

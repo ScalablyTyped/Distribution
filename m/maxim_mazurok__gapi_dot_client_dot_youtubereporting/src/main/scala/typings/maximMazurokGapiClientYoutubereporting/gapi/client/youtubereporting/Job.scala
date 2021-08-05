@@ -26,49 +26,35 @@ trait Job extends StObject {
 }
 object Job {
   
-  @scala.inline
-  def apply(): Job = {
+  inline def apply(): Job = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Job]
   }
   
-  @scala.inline
-  implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+  extension [Self <: Job](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReportTypeId(value: String): Self = StObject.set(x, "reportTypeId", value.asInstanceOf[js.Any])
+    inline def setReportTypeId(value: String): Self = StObject.set(x, "reportTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTypeIdUndefined: Self = StObject.set(x, "reportTypeId", js.undefined)
+    inline def setReportTypeIdUndefined: Self = StObject.set(x, "reportTypeId", js.undefined)
     
-    @scala.inline
-    def setSystemManaged(value: Boolean): Self = StObject.set(x, "systemManaged", value.asInstanceOf[js.Any])
+    inline def setSystemManaged(value: Boolean): Self = StObject.set(x, "systemManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemManagedUndefined: Self = StObject.set(x, "systemManaged", js.undefined)
+    inline def setSystemManagedUndefined: Self = StObject.set(x, "systemManaged", js.undefined)
   }
 }

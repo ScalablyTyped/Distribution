@@ -10,16 +10,13 @@ trait RowIndexNumber extends StObject {
 }
 object RowIndexNumber {
   
-  @scala.inline
-  def apply(rowIndex: Double): RowIndexNumber = {
+  inline def apply(rowIndex: Double): RowIndexNumber = {
     val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowIndexNumber]
   }
   
-  @scala.inline
-  implicit class RowIndexNumberMutableBuilder[Self <: RowIndexNumber] (val x: Self) extends AnyVal {
+  extension [Self <: RowIndexNumber](x: Self) {
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

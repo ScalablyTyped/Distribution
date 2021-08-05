@@ -28,37 +28,27 @@ trait EnableNetworkEmulationOptions extends StObject {
 }
 object EnableNetworkEmulationOptions {
   
-  @scala.inline
-  def apply(): EnableNetworkEmulationOptions = {
+  inline def apply(): EnableNetworkEmulationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableNetworkEmulationOptions]
   }
   
-  @scala.inline
-  implicit class EnableNetworkEmulationOptionsMutableBuilder[Self <: EnableNetworkEmulationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnableNetworkEmulationOptions](x: Self) {
     
-    @scala.inline
-    def setDownloadThroughput(value: Double): Self = StObject.set(x, "downloadThroughput", value.asInstanceOf[js.Any])
+    inline def setDownloadThroughput(value: Double): Self = StObject.set(x, "downloadThroughput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadThroughputUndefined: Self = StObject.set(x, "downloadThroughput", js.undefined)
+    inline def setDownloadThroughputUndefined: Self = StObject.set(x, "downloadThroughput", js.undefined)
     
-    @scala.inline
-    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
-    @scala.inline
-    def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
+    inline def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfflineUndefined: Self = StObject.set(x, "offline", js.undefined)
+    inline def setOfflineUndefined: Self = StObject.set(x, "offline", js.undefined)
     
-    @scala.inline
-    def setUploadThroughput(value: Double): Self = StObject.set(x, "uploadThroughput", value.asInstanceOf[js.Any])
+    inline def setUploadThroughput(value: Double): Self = StObject.set(x, "uploadThroughput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadThroughputUndefined: Self = StObject.set(x, "uploadThroughput", js.undefined)
+    inline def setUploadThroughputUndefined: Self = StObject.set(x, "uploadThroughput", js.undefined)
   }
 }

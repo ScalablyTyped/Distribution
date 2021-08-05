@@ -26,31 +26,23 @@ trait IEditorHoverOptions extends StObject {
 }
 object IEditorHoverOptions {
   
-  @scala.inline
-  def apply(): IEditorHoverOptions = {
+  inline def apply(): IEditorHoverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditorHoverOptions]
   }
   
-  @scala.inline
-  implicit class IEditorHoverOptionsMutableBuilder[Self <: IEditorHoverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorHoverOptions](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+    inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
   }
 }

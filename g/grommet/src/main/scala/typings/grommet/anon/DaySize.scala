@@ -16,37 +16,27 @@ trait DaySize extends StObject {
 }
 object DaySize {
   
-  @scala.inline
-  def apply(): DaySize = {
+  inline def apply(): DaySize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DaySize]
   }
   
-  @scala.inline
-  implicit class DaySizeMutableBuilder[Self <: DaySize] (val x: Self) extends AnyVal {
+  extension [Self <: DaySize](x: Self) {
     
-    @scala.inline
-    def setDaySize(value: String): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
+    inline def setDaySize(value: String): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
+    inline def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    @scala.inline
-    def setSlideDuration(value: String): Self = StObject.set(x, "slideDuration", value.asInstanceOf[js.Any])
+    inline def setSlideDuration(value: String): Self = StObject.set(x, "slideDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideDurationUndefined: Self = StObject.set(x, "slideDuration", js.undefined)
+    inline def setSlideDurationUndefined: Self = StObject.set(x, "slideDuration", js.undefined)
   }
 }

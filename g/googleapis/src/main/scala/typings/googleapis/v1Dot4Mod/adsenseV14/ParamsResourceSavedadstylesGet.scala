@@ -24,25 +24,19 @@ trait ParamsResourceSavedadstylesGet
 }
 object ParamsResourceSavedadstylesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceSavedadstylesGet = {
+  inline def apply(): ParamsResourceSavedadstylesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSavedadstylesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSavedadstylesGetMutableBuilder[Self <: ParamsResourceSavedadstylesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSavedadstylesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setSavedAdStyleId(value: String): Self = StObject.set(x, "savedAdStyleId", value.asInstanceOf[js.Any])
+    inline def setSavedAdStyleId(value: String): Self = StObject.set(x, "savedAdStyleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedAdStyleIdUndefined: Self = StObject.set(x, "savedAdStyleId", js.undefined)
+    inline def setSavedAdStyleIdUndefined: Self = StObject.set(x, "savedAdStyleId", js.undefined)
   }
 }

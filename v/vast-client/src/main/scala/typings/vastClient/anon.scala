@@ -24,17 +24,14 @@ object anon {
   }
   object PickVastErrorERRORCODE {
     
-    @scala.inline
-    def apply(ERRORCODE: String | Double): PickVastErrorERRORCODE = {
+    inline def apply(ERRORCODE: String | Double): PickVastErrorERRORCODE = {
       val __obj = js.Dynamic.literal(ERRORCODE = ERRORCODE.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickVastErrorERRORCODE]
     }
     
-    @scala.inline
-    implicit class PickVastErrorERRORCODEMutableBuilder[Self <: PickVastErrorERRORCODE] (val x: Self) extends AnyVal {
+    extension [Self <: PickVastErrorERRORCODE](x: Self) {
       
-      @scala.inline
-      def setERRORCODE(value: String | Double): Self = StObject.set(x, "ERRORCODE", value.asInstanceOf[js.Any])
+      inline def setERRORCODE(value: String | Double): Self = StObject.set(x, "ERRORCODE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,38 +46,28 @@ object anon {
   }
   object PickVastErrorExcludekeyof {
     
-    @scala.inline
-    def apply(): PickVastErrorExcludekeyof = {
+    inline def apply(): PickVastErrorExcludekeyof = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickVastErrorExcludekeyof]
     }
     
-    @scala.inline
-    implicit class PickVastErrorExcludekeyofMutableBuilder[Self <: PickVastErrorExcludekeyof] (val x: Self) extends AnyVal {
+    extension [Self <: PickVastErrorExcludekeyof](x: Self) {
       
-      @scala.inline
-      def setERRORMESSAGE(value: String): Self = StObject.set(x, "ERRORMESSAGE", value.asInstanceOf[js.Any])
+      inline def setERRORMESSAGE(value: String): Self = StObject.set(x, "ERRORMESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERRORMESSAGEUndefined: Self = StObject.set(x, "ERRORMESSAGE", js.undefined)
+      inline def setERRORMESSAGEUndefined: Self = StObject.set(x, "ERRORMESSAGE", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[VastAdExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[VastAdExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setSystem(value: VastSystem | String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: VastSystem | String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemNull: Self = StObject.set(x, "system", null)
+      inline def setSystemNull: Self = StObject.set(x, "system", null)
       
-      @scala.inline
-      def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+      inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     }
   }
   
@@ -92,20 +79,16 @@ object anon {
   }
   object Timeout {
     
-    @scala.inline
-    def apply(timeout: Double, withCredentials: Boolean): Timeout = {
+    inline def apply(timeout: Double, withCredentials: Boolean): Timeout = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
       __obj.asInstanceOf[Timeout]
     }
     
-    @scala.inline
-    implicit class TimeoutMutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
+    extension [Self <: Timeout](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,11 +18,9 @@ object repeatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isLayerRepeatSpec(spec: RepeatSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.LayerRepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.LayerRepeatSpec */ Boolean]
+  inline def isLayerRepeatSpec(spec: RepeatSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.LayerRepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.LayerRepeatSpec */ Boolean]
   
-  @scala.inline
-  def isRepeatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean]
+  inline def isRepeatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean]
   
   trait LayerRepeatMapping
     extends StObject
@@ -35,20 +33,16 @@ object repeatMod {
   }
   object LayerRepeatMapping {
     
-    @scala.inline
-    def apply(layer: js.Array[String]): LayerRepeatMapping = {
+    inline def apply(layer: js.Array[String]): LayerRepeatMapping = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayerRepeatMapping]
     }
     
-    @scala.inline
-    implicit class LayerRepeatMappingMutableBuilder[Self <: LayerRepeatMapping] (val x: Self) extends AnyVal {
+    extension [Self <: LayerRepeatMapping](x: Self) {
       
-      @scala.inline
-      def setLayer(value: js.Array[String]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: js.Array[String]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerVarargs(value: String*): Self = StObject.set(x, "layer", js.Array(value :_*))
+      inline def setLayerVarargs(value: String*): Self = StObject.set(x, "layer", js.Array(value :_*))
     }
   }
   
@@ -73,20 +67,16 @@ object repeatMod {
   }
   object LayerRepeatSpec {
     
-    @scala.inline
-    def apply(repeat: LayerRepeatMapping, spec: LayerSpec | UnitSpec): LayerRepeatSpec = {
+    inline def apply(repeat: LayerRepeatMapping, spec: LayerSpec | UnitSpec): LayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayerRepeatSpec]
     }
     
-    @scala.inline
-    implicit class LayerRepeatSpecMutableBuilder[Self <: LayerRepeatSpec] (val x: Self) extends AnyVal {
+    extension [Self <: LayerRepeatSpec](x: Self) {
       
-      @scala.inline
-      def setRepeat(value: LayerRepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: LayerRepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: LayerSpec | UnitSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: LayerSpec | UnitSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,8 +101,7 @@ object repeatMod {
   }
   object NonLayerRepeatSpec {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       repeat: js.Array[String] | RepeatMapping,
       spec: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]
     ): NonLayerRepeatSpec = {
@@ -120,17 +109,13 @@ object repeatMod {
       __obj.asInstanceOf[NonLayerRepeatSpec]
     }
     
-    @scala.inline
-    implicit class NonLayerRepeatSpecMutableBuilder[Self <: NonLayerRepeatSpec] (val x: Self) extends AnyVal {
+    extension [Self <: NonLayerRepeatSpec](x: Self) {
       
-      @scala.inline
-      def setRepeat(value: js.Array[String] | RepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: js.Array[String] | RepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatVarargs(value: String*): Self = StObject.set(x, "repeat", js.Array(value :_*))
+      inline def setRepeatVarargs(value: String*): Self = StObject.set(x, "repeat", js.Array(value :_*))
       
-      @scala.inline
-      def setSpec(value: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,32 +133,24 @@ object repeatMod {
   }
   object RepeatMapping {
     
-    @scala.inline
-    def apply(): RepeatMapping = {
+    inline def apply(): RepeatMapping = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepeatMapping]
     }
     
-    @scala.inline
-    implicit class RepeatMappingMutableBuilder[Self <: RepeatMapping] (val x: Self) extends AnyVal {
+    extension [Self <: RepeatMapping](x: Self) {
       
-      @scala.inline
-      def setColumn(value: js.Array[String]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: js.Array[String]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setColumnVarargs(value: String*): Self = StObject.set(x, "column", js.Array(value :_*))
+      inline def setColumnVarargs(value: String*): Self = StObject.set(x, "column", js.Array(value :_*))
       
-      @scala.inline
-      def setRow(value: js.Array[String]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: js.Array[String]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      @scala.inline
-      def setRowVarargs(value: String*): Self = StObject.set(x, "row", js.Array(value :_*))
+      inline def setRowVarargs(value: String*): Self = StObject.set(x, "row", js.Array(value :_*))
     }
   }
   
@@ -184,14 +161,12 @@ object repeatMod {
   trait RepeatSpec extends StObject
   object RepeatSpec {
     
-    @scala.inline
-    def LayerRepeatSpec(repeat: LayerRepeatMapping, spec: LayerSpec | UnitSpec): typings.vegaLite.repeatMod.LayerRepeatSpec = {
+    inline def LayerRepeatSpec(repeat: LayerRepeatMapping, spec: LayerSpec | UnitSpec): typings.vegaLite.repeatMod.LayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.repeatMod.LayerRepeatSpec]
     }
     
-    @scala.inline
-    def NonLayerRepeatSpec(
+    inline def NonLayerRepeatSpec(
       repeat: js.Array[String] | RepeatMapping,
       spec: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]
     ): typings.vegaLite.repeatMod.NonLayerRepeatSpec = {

@@ -15,31 +15,23 @@ trait ActionSubscribersObject[P, S] extends StObject {
 }
 object ActionSubscribersObject {
   
-  @scala.inline
-  def apply[P, S](): ActionSubscribersObject[P, S] = {
+  inline def apply[P, S](): ActionSubscribersObject[P, S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionSubscribersObject[P, S]]
   }
   
-  @scala.inline
-  implicit class ActionSubscribersObjectMutableBuilder[Self <: ActionSubscribersObject[?, ?], P, S] (val x: Self & (ActionSubscribersObject[P, S])) extends AnyVal {
+  extension [Self <: ActionSubscribersObject[?, ?], P, S](x: Self & (ActionSubscribersObject[P, S])) {
     
-    @scala.inline
-    def setAfter(value: (P, S) => js.Any): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+    inline def setAfter(value: (P, S) => js.Any): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: (P, S) => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+    inline def setBefore(value: (P, S) => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setError(value: (P, S, /* error */ Error) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (P, S, /* error */ Error) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
   }
 }

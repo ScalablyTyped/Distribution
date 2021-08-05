@@ -24,8 +24,7 @@ trait IBackgroundTransferOperation extends StObject {
 }
 object IBackgroundTransferOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     costPolicy: BackgroundTransferCostPolicy,
     getResponseInformation: () => ResponseInformation,
     getResultStreamAt: Double => IInputStream,
@@ -38,28 +37,20 @@ object IBackgroundTransferOperation {
     __obj.asInstanceOf[IBackgroundTransferOperation]
   }
   
-  @scala.inline
-  implicit class IBackgroundTransferOperationMutableBuilder[Self <: IBackgroundTransferOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTransferOperation](x: Self) {
     
-    @scala.inline
-    def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
+    inline def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetResponseInformation(value: () => ResponseInformation): Self = StObject.set(x, "getResponseInformation", js.Any.fromFunction0(value))
+    inline def setGetResponseInformation(value: () => ResponseInformation): Self = StObject.set(x, "getResponseInformation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResultStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getResultStreamAt", js.Any.fromFunction1(value))
+    inline def setGetResultStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getResultStreamAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
+    inline def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
   }
 }

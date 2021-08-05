@@ -18,25 +18,19 @@ trait LabelingJobStoppingConditions extends StObject {
 }
 object LabelingJobStoppingConditions {
   
-  @scala.inline
-  def apply(): LabelingJobStoppingConditions = {
+  inline def apply(): LabelingJobStoppingConditions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelingJobStoppingConditions]
   }
   
-  @scala.inline
-  implicit class LabelingJobStoppingConditionsMutableBuilder[Self <: LabelingJobStoppingConditions] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobStoppingConditions](x: Self) {
     
-    @scala.inline
-    def setMaxHumanLabeledObjectCount(value: MaxHumanLabeledObjectCount): Self = StObject.set(x, "MaxHumanLabeledObjectCount", value.asInstanceOf[js.Any])
+    inline def setMaxHumanLabeledObjectCount(value: MaxHumanLabeledObjectCount): Self = StObject.set(x, "MaxHumanLabeledObjectCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHumanLabeledObjectCountUndefined: Self = StObject.set(x, "MaxHumanLabeledObjectCount", js.undefined)
+    inline def setMaxHumanLabeledObjectCountUndefined: Self = StObject.set(x, "MaxHumanLabeledObjectCount", js.undefined)
     
-    @scala.inline
-    def setMaxPercentageOfInputDatasetLabeled(value: MaxPercentageOfInputDatasetLabeled): Self = StObject.set(x, "MaxPercentageOfInputDatasetLabeled", value.asInstanceOf[js.Any])
+    inline def setMaxPercentageOfInputDatasetLabeled(value: MaxPercentageOfInputDatasetLabeled): Self = StObject.set(x, "MaxPercentageOfInputDatasetLabeled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPercentageOfInputDatasetLabeledUndefined: Self = StObject.set(x, "MaxPercentageOfInputDatasetLabeled", js.undefined)
+    inline def setMaxPercentageOfInputDatasetLabeledUndefined: Self = StObject.set(x, "MaxPercentageOfInputDatasetLabeled", js.undefined)
   }
 }

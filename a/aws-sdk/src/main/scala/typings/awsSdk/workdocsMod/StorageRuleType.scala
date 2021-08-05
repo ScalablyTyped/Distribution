@@ -18,25 +18,19 @@ trait StorageRuleType extends StObject {
 }
 object StorageRuleType {
   
-  @scala.inline
-  def apply(): StorageRuleType = {
+  inline def apply(): StorageRuleType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageRuleType]
   }
   
-  @scala.inline
-  implicit class StorageRuleTypeMutableBuilder[Self <: StorageRuleType] (val x: Self) extends AnyVal {
+  extension [Self <: StorageRuleType](x: Self) {
     
-    @scala.inline
-    def setStorageAllocatedInBytes(value: PositiveSizeType): Self = StObject.set(x, "StorageAllocatedInBytes", value.asInstanceOf[js.Any])
+    inline def setStorageAllocatedInBytes(value: PositiveSizeType): Self = StObject.set(x, "StorageAllocatedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAllocatedInBytesUndefined: Self = StObject.set(x, "StorageAllocatedInBytes", js.undefined)
+    inline def setStorageAllocatedInBytesUndefined: Self = StObject.set(x, "StorageAllocatedInBytes", js.undefined)
     
-    @scala.inline
-    def setStorageType(value: StorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
+    inline def setStorageType(value: StorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
   }
 }

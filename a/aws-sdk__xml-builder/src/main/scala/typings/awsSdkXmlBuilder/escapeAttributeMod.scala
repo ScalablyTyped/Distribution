@@ -10,6 +10,5 @@ object escapeAttributeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escapeAttribute(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAttribute")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeAttribute(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAttribute")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

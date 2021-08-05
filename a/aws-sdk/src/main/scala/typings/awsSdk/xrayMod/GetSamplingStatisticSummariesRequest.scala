@@ -13,19 +13,15 @@ trait GetSamplingStatisticSummariesRequest extends StObject {
 }
 object GetSamplingStatisticSummariesRequest {
   
-  @scala.inline
-  def apply(): GetSamplingStatisticSummariesRequest = {
+  inline def apply(): GetSamplingStatisticSummariesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSamplingStatisticSummariesRequest]
   }
   
-  @scala.inline
-  implicit class GetSamplingStatisticSummariesRequestMutableBuilder[Self <: GetSamplingStatisticSummariesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSamplingStatisticSummariesRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

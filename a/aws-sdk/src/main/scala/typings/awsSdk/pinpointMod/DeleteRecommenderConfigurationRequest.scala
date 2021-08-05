@@ -13,16 +13,13 @@ trait DeleteRecommenderConfigurationRequest extends StObject {
 }
 object DeleteRecommenderConfigurationRequest {
   
-  @scala.inline
-  def apply(RecommenderId: string): DeleteRecommenderConfigurationRequest = {
+  inline def apply(RecommenderId: string): DeleteRecommenderConfigurationRequest = {
     val __obj = js.Dynamic.literal(RecommenderId = RecommenderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRecommenderConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRecommenderConfigurationRequestMutableBuilder[Self <: DeleteRecommenderConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRecommenderConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
+    inline def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
   }
 }

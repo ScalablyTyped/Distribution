@@ -67,62 +67,44 @@ object ReactFlexr {
   }
   object CellProps {
     
-    @scala.inline
-    def apply(): CellProps = {
+    inline def apply(): CellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellProps]
     }
     
-    @scala.inline
-    implicit class CellPropsMutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
+    extension [Self <: CellProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setDesk(value: String | Double): Self = StObject.set(x, "desk", value.asInstanceOf[js.Any])
+      inline def setDesk(value: String | Double): Self = StObject.set(x, "desk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeskUndefined: Self = StObject.set(x, "desk", js.undefined)
+      inline def setDeskUndefined: Self = StObject.set(x, "desk", js.undefined)
       
-      @scala.inline
-      def setFlex(value: Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+      inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      @scala.inline
-      def setGutter(value: String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setLap(value: String | Double): Self = StObject.set(x, "lap", value.asInstanceOf[js.Any])
+      inline def setLap(value: String | Double): Self = StObject.set(x, "lap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLapUndefined: Self = StObject.set(x, "lap", js.undefined)
+      inline def setLapUndefined: Self = StObject.set(x, "lap", js.undefined)
       
-      @scala.inline
-      def setPalm(value: String | Double): Self = StObject.set(x, "palm", value.asInstanceOf[js.Any])
+      inline def setPalm(value: String | Double): Self = StObject.set(x, "palm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPalmUndefined: Self = StObject.set(x, "palm", js.undefined)
+      inline def setPalmUndefined: Self = StObject.set(x, "palm", js.undefined)
       
-      @scala.inline
-      def setPortable(value: String | Double): Self = StObject.set(x, "portable", value.asInstanceOf[js.Any])
+      inline def setPortable(value: String | Double): Self = StObject.set(x, "portable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortableUndefined: Self = StObject.set(x, "portable", js.undefined)
+      inline def setPortableUndefined: Self = StObject.set(x, "portable", js.undefined)
       
-      @scala.inline
-      def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -135,17 +117,13 @@ object ReactFlexr {
   trait ErgonomicType extends StObject
   object ErgonomicType {
     
-    @scala.inline
-    def desk: typings.reactFlexr.reactFlexrStrings.desk = "desk".asInstanceOf[typings.reactFlexr.reactFlexrStrings.desk]
+    inline def desk: typings.reactFlexr.reactFlexrStrings.desk = "desk".asInstanceOf[typings.reactFlexr.reactFlexrStrings.desk]
     
-    @scala.inline
-    def lap: typings.reactFlexr.reactFlexrStrings.lap = "lap".asInstanceOf[typings.reactFlexr.reactFlexrStrings.lap]
+    inline def lap: typings.reactFlexr.reactFlexrStrings.lap = "lap".asInstanceOf[typings.reactFlexr.reactFlexrStrings.lap]
     
-    @scala.inline
-    def palm: typings.reactFlexr.reactFlexrStrings.palm = "palm".asInstanceOf[typings.reactFlexr.reactFlexrStrings.palm]
+    inline def palm: typings.reactFlexr.reactFlexrStrings.palm = "palm".asInstanceOf[typings.reactFlexr.reactFlexrStrings.palm]
     
-    @scala.inline
-    def portable: typings.reactFlexr.reactFlexrStrings.portable = "portable".asInstanceOf[typings.reactFlexr.reactFlexrStrings.portable]
+    inline def portable: typings.reactFlexr.reactFlexrStrings.portable = "portable".asInstanceOf[typings.reactFlexr.reactFlexrStrings.portable]
   }
   
   @js.native
@@ -180,38 +158,28 @@ object ReactFlexr {
   }
   object GridProps {
     
-    @scala.inline
-    def apply(): GridProps = {
+    inline def apply(): GridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridProps]
     }
     
-    @scala.inline
-    implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setFlexCells(value: Boolean): Self = StObject.set(x, "flexCells", value.asInstanceOf[js.Any])
+      inline def setFlexCells(value: Boolean): Self = StObject.set(x, "flexCells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexCellsUndefined: Self = StObject.set(x, "flexCells", js.undefined)
+      inline def setFlexCellsUndefined: Self = StObject.set(x, "flexCells", js.undefined)
       
-      @scala.inline
-      def setGutter(value: String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setHAlign(value: left | center | right): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: left | center | right): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
     }
   }
   
@@ -226,17 +194,14 @@ object ReactFlexr {
   }
   object OptimizedResize {
     
-    @scala.inline
-    def apply(init: js.Function0[Unit] => Unit): OptimizedResize = {
+    inline def apply(init: js.Function0[Unit] => Unit): OptimizedResize = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
       __obj.asInstanceOf[OptimizedResize]
     }
     
-    @scala.inline
-    implicit class OptimizedResizeMutableBuilder[Self <: OptimizedResize] (val x: Self) extends AnyVal {
+    extension [Self <: OptimizedResize](x: Self) {
       
-      @scala.inline
-      def setInit(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
 }

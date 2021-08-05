@@ -17,15 +17,11 @@ object encodingMod {
   @js.native
   val ENCODING_UTF8: BufferEncoding = js.native
   
-  @scala.inline
-  def assertEncoding(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertEncoding")().asInstanceOf[Unit]
-  @scala.inline
-  def assertEncoding(encoding: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertEncoding")(encoding.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assertEncoding(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertEncoding")().asInstanceOf[Unit]
+  inline def assertEncoding(encoding: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertEncoding")(encoding.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def strToEncoding(str: String): TDataOut = ^.asInstanceOf[js.Dynamic].applyDynamic("strToEncoding")(str.asInstanceOf[js.Any]).asInstanceOf[TDataOut]
-  @scala.inline
-  def strToEncoding(str: String, encoding: TEncodingExtended): TDataOut = (^.asInstanceOf[js.Dynamic].applyDynamic("strToEncoding")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TDataOut]
+  inline def strToEncoding(str: String): TDataOut = ^.asInstanceOf[js.Dynamic].applyDynamic("strToEncoding")(str.asInstanceOf[js.Any]).asInstanceOf[TDataOut]
+  inline def strToEncoding(str: String, encoding: TEncodingExtended): TDataOut = (^.asInstanceOf[js.Dynamic].applyDynamic("strToEncoding")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TDataOut]
   
   type TDataOut = String | Buffer
   

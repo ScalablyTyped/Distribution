@@ -13,22 +13,17 @@ trait SchemaGetDataSourceIndexStatsResponse extends StObject {
 }
 object SchemaGetDataSourceIndexStatsResponse {
   
-  @scala.inline
-  def apply(): SchemaGetDataSourceIndexStatsResponse = {
+  inline def apply(): SchemaGetDataSourceIndexStatsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetDataSourceIndexStatsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetDataSourceIndexStatsResponseMutableBuilder[Self <: SchemaGetDataSourceIndexStatsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetDataSourceIndexStatsResponse](x: Self) {
     
-    @scala.inline
-    def setStats(value: js.Array[SchemaDataSourceIndexStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: js.Array[SchemaDataSourceIndexStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    @scala.inline
-    def setStatsVarargs(value: SchemaDataSourceIndexStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
+    inline def setStatsVarargs(value: SchemaDataSourceIndexStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
   }
 }

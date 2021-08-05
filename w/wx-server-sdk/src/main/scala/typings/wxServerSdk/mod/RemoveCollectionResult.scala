@@ -11,16 +11,13 @@ trait RemoveCollectionResult extends StObject {
 }
 object RemoveCollectionResult {
   
-  @scala.inline
-  def apply(stats: Removed): RemoveCollectionResult = {
+  inline def apply(stats: Removed): RemoveCollectionResult = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveCollectionResult]
   }
   
-  @scala.inline
-  implicit class RemoveCollectionResultMutableBuilder[Self <: RemoveCollectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveCollectionResult](x: Self) {
     
-    @scala.inline
-    def setStats(value: Removed): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Removed): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

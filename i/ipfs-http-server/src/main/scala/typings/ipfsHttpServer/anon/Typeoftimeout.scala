@@ -10,16 +10,13 @@ trait Typeoftimeout extends StObject {
 }
 object Typeoftimeout {
   
-  @scala.inline
-  def apply(socket: Boolean): Typeoftimeout = {
+  inline def apply(socket: Boolean): Typeoftimeout = {
     val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeoftimeout]
   }
   
-  @scala.inline
-  implicit class TypeoftimeoutMutableBuilder[Self <: Typeoftimeout] (val x: Self) extends AnyVal {
+  extension [Self <: Typeoftimeout](x: Self) {
     
-    @scala.inline
-    def setSocket(value: Boolean): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: Boolean): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }
 }

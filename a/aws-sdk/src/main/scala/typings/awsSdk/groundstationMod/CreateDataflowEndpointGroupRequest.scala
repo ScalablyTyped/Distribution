@@ -18,25 +18,19 @@ trait CreateDataflowEndpointGroupRequest extends StObject {
 }
 object CreateDataflowEndpointGroupRequest {
   
-  @scala.inline
-  def apply(endpointDetails: EndpointDetailsList): CreateDataflowEndpointGroupRequest = {
+  inline def apply(endpointDetails: EndpointDetailsList): CreateDataflowEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(endpointDetails = endpointDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataflowEndpointGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateDataflowEndpointGroupRequestMutableBuilder[Self <: CreateDataflowEndpointGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataflowEndpointGroupRequest](x: Self) {
     
-    @scala.inline
-    def setEndpointDetails(value: EndpointDetailsList): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
+    inline def setEndpointDetails(value: EndpointDetailsList): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointDetailsVarargs(value: EndpointDetails*): Self = StObject.set(x, "endpointDetails", js.Array(value :_*))
+    inline def setEndpointDetailsVarargs(value: EndpointDetails*): Self = StObject.set(x, "endpointDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

@@ -12,20 +12,16 @@ object anon {
   }
   object Mode {
     
-    @scala.inline
-    def apply(): Mode = {
+    inline def apply(): Mode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mode]
     }
     
-    @scala.inline
-    implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+    extension [Self <: Mode](x: Self) {
       
-      @scala.inline
-      def setMode(value: typings.wordwrap.mod.Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: typings.wordwrap.mod.Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
 }

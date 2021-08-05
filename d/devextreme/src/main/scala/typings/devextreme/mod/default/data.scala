@@ -120,23 +120,16 @@ object data {
     def this(options: XmlaStoreOptions) = this()
   }
   
-  @scala.inline
-  def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any], options: Immutable): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any], options: Immutable): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def base64Encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def base64Encode(input: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def base64Encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def base64Encode(input: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def errorHandler(e: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def errorHandler(e: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def query(array: js.Array[js.Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(array.asInstanceOf[js.Any]).asInstanceOf[Query]
-  @scala.inline
-  def query(url: String, queryOptions: js.Any): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(url.asInstanceOf[js.Any], queryOptions.asInstanceOf[js.Any])).asInstanceOf[Query]
+  inline def query(array: js.Array[js.Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(array.asInstanceOf[js.Any]).asInstanceOf[Query]
+  inline def query(url: String, queryOptions: js.Any): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(url.asInstanceOf[js.Any], queryOptions.asInstanceOf[js.Any])).asInstanceOf[Query]
   
   object utils {
     
@@ -144,15 +137,11 @@ object data {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def compileGetter(expr: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileGetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-    @scala.inline
-    def compileGetter(expr: js.Array[String]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileGetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def compileGetter(expr: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileGetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def compileGetter(expr: js.Array[String]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileGetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
-    @scala.inline
-    def compileSetter(expr: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileSetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-    @scala.inline
-    def compileSetter(expr: js.Array[String]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileSetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def compileSetter(expr: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileSetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def compileSetter(expr: js.Array[String]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileSetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
     object odata {
       
@@ -163,8 +152,7 @@ object data {
       @JSImport("devextreme", "default.data.utils.odata.keyConverters")
       @js.native
       def keyConverters: js.Any = js.native
-      @scala.inline
-      def keyConverters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyConverters")(x.asInstanceOf[js.Any])
+      inline def keyConverters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyConverters")(x.asInstanceOf[js.Any])
     }
   }
 }

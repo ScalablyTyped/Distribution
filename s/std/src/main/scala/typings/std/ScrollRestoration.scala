@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollRestoration extends StObject
 object ScrollRestoration {
   
-  @scala.inline
-  def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
+  inline def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
   
-  @scala.inline
-  def manual: typings.std.stdStrings.manual = "manual".asInstanceOf[typings.std.stdStrings.manual]
+  inline def manual: typings.std.stdStrings.manual = "manual".asInstanceOf[typings.std.stdStrings.manual]
 }

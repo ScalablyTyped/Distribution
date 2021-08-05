@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "just-map-values"
-version := "1.1-dt-20200305Z-46983e"
+version := "1.1-dt-20200305Z-ddeae0"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

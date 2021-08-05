@@ -18,22 +18,15 @@ object PolygonGeometry {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createGeometry(polygonGeometry: PolygonGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(polygonGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def createGeometry(polygonGeometry: PolygonGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(polygonGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
   /* static member */
-  @scala.inline
-  def fromPositions(): PolygonGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")().asInstanceOf[PolygonGeometry]
-  @scala.inline
-  def fromPositions(options: CloseBottom): PolygonGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(options.asInstanceOf[js.Any]).asInstanceOf[PolygonGeometry]
+  inline def fromPositions(): PolygonGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")().asInstanceOf[PolygonGeometry]
+  inline def fromPositions(options: CloseBottom): PolygonGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(options.asInstanceOf[js.Any]).asInstanceOf[PolygonGeometry]
   
   /* static member */
-  @scala.inline
-  def unpack(array: js.Array[Double]): PolygonGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[PolygonGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double): PolygonGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[PolygonGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double, result: PolygonGeometry): PolygonGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PolygonGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Unit, result: PolygonGeometry): PolygonGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PolygonGeometry]
+  inline def unpack(array: js.Array[Double]): PolygonGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[PolygonGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): PolygonGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[PolygonGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: PolygonGeometry): PolygonGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PolygonGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: PolygonGeometry): PolygonGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[PolygonGeometry]
 }

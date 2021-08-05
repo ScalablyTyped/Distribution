@@ -13,19 +13,15 @@ trait DeleteInterconnectResponse extends StObject {
 }
 object DeleteInterconnectResponse {
   
-  @scala.inline
-  def apply(): DeleteInterconnectResponse = {
+  inline def apply(): DeleteInterconnectResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteInterconnectResponse]
   }
   
-  @scala.inline
-  implicit class DeleteInterconnectResponseMutableBuilder[Self <: DeleteInterconnectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInterconnectResponse](x: Self) {
     
-    @scala.inline
-    def setInterconnectState(value: InterconnectState): Self = StObject.set(x, "interconnectState", value.asInstanceOf[js.Any])
+    inline def setInterconnectState(value: InterconnectState): Self = StObject.set(x, "interconnectState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectStateUndefined: Self = StObject.set(x, "interconnectState", js.undefined)
+    inline def setInterconnectStateUndefined: Self = StObject.set(x, "interconnectState", js.undefined)
   }
 }

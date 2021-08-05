@@ -36,88 +36,61 @@ trait FillPaint
 }
 object FillPaint {
   
-  @scala.inline
-  def apply(): FillPaint = {
+  inline def apply(): FillPaint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillPaint]
   }
   
-  @scala.inline
-  implicit class FillPaintMutableBuilder[Self <: FillPaint] (val x: Self) extends AnyVal {
+  extension [Self <: FillPaint](x: Self) {
     
-    @scala.inline
-    def `setFill-antialias`(value: Boolean | Expression): Self = StObject.set(x, "fill-antialias", value.asInstanceOf[js.Any])
+    inline def `setFill-antialias`(value: Boolean | Expression): Self = StObject.set(x, "fill-antialias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-antialiasUndefined`: Self = StObject.set(x, "fill-antialias", js.undefined)
+    inline def `setFill-antialiasUndefined`: Self = StObject.set(x, "fill-antialias", js.undefined)
     
-    @scala.inline
-    def `setFill-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "fill-color", value.asInstanceOf[js.Any])
+    inline def `setFill-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "fill-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-color-transition`(value: Transition): Self = StObject.set(x, "fill-color-transition", value.asInstanceOf[js.Any])
+    inline def `setFill-color-transition`(value: Transition): Self = StObject.set(x, "fill-color-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-color-transitionUndefined`: Self = StObject.set(x, "fill-color-transition", js.undefined)
+    inline def `setFill-color-transitionUndefined`: Self = StObject.set(x, "fill-color-transition", js.undefined)
     
-    @scala.inline
-    def `setFill-colorUndefined`: Self = StObject.set(x, "fill-color", js.undefined)
+    inline def `setFill-colorUndefined`: Self = StObject.set(x, "fill-color", js.undefined)
     
-    @scala.inline
-    def `setFill-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "fill-opacity", value.asInstanceOf[js.Any])
+    inline def `setFill-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "fill-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-opacity-transition`(value: Transition): Self = StObject.set(x, "fill-opacity-transition", value.asInstanceOf[js.Any])
+    inline def `setFill-opacity-transition`(value: Transition): Self = StObject.set(x, "fill-opacity-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-opacity-transitionUndefined`: Self = StObject.set(x, "fill-opacity-transition", js.undefined)
+    inline def `setFill-opacity-transitionUndefined`: Self = StObject.set(x, "fill-opacity-transition", js.undefined)
     
-    @scala.inline
-    def `setFill-opacityUndefined`: Self = StObject.set(x, "fill-opacity", js.undefined)
+    inline def `setFill-opacityUndefined`: Self = StObject.set(x, "fill-opacity", js.undefined)
     
-    @scala.inline
-    def `setFill-outline-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "fill-outline-color", value.asInstanceOf[js.Any])
+    inline def `setFill-outline-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "fill-outline-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-outline-color-transition`(value: Transition): Self = StObject.set(x, "fill-outline-color-transition", value.asInstanceOf[js.Any])
+    inline def `setFill-outline-color-transition`(value: Transition): Self = StObject.set(x, "fill-outline-color-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-outline-color-transitionUndefined`: Self = StObject.set(x, "fill-outline-color-transition", js.undefined)
+    inline def `setFill-outline-color-transitionUndefined`: Self = StObject.set(x, "fill-outline-color-transition", js.undefined)
     
-    @scala.inline
-    def `setFill-outline-colorUndefined`: Self = StObject.set(x, "fill-outline-color", js.undefined)
+    inline def `setFill-outline-colorUndefined`: Self = StObject.set(x, "fill-outline-color", js.undefined)
     
-    @scala.inline
-    def `setFill-pattern`(value: String | Expression): Self = StObject.set(x, "fill-pattern", value.asInstanceOf[js.Any])
+    inline def `setFill-pattern`(value: String | Expression): Self = StObject.set(x, "fill-pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-pattern-transition`(value: Transition): Self = StObject.set(x, "fill-pattern-transition", value.asInstanceOf[js.Any])
+    inline def `setFill-pattern-transition`(value: Transition): Self = StObject.set(x, "fill-pattern-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-pattern-transitionUndefined`: Self = StObject.set(x, "fill-pattern-transition", js.undefined)
+    inline def `setFill-pattern-transitionUndefined`: Self = StObject.set(x, "fill-pattern-transition", js.undefined)
     
-    @scala.inline
-    def `setFill-patternUndefined`: Self = StObject.set(x, "fill-pattern", js.undefined)
+    inline def `setFill-patternUndefined`: Self = StObject.set(x, "fill-pattern", js.undefined)
     
-    @scala.inline
-    def `setFill-translate`(value: js.Array[Double]): Self = StObject.set(x, "fill-translate", value.asInstanceOf[js.Any])
+    inline def `setFill-translate`(value: js.Array[Double]): Self = StObject.set(x, "fill-translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-translate-anchor`(value: map | viewport): Self = StObject.set(x, "fill-translate-anchor", value.asInstanceOf[js.Any])
+    inline def `setFill-translate-anchor`(value: map | viewport): Self = StObject.set(x, "fill-translate-anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-translate-anchorUndefined`: Self = StObject.set(x, "fill-translate-anchor", js.undefined)
+    inline def `setFill-translate-anchorUndefined`: Self = StObject.set(x, "fill-translate-anchor", js.undefined)
     
-    @scala.inline
-    def `setFill-translate-transition`(value: Transition): Self = StObject.set(x, "fill-translate-transition", value.asInstanceOf[js.Any])
+    inline def `setFill-translate-transition`(value: Transition): Self = StObject.set(x, "fill-translate-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-translate-transitionUndefined`: Self = StObject.set(x, "fill-translate-transition", js.undefined)
+    inline def `setFill-translate-transitionUndefined`: Self = StObject.set(x, "fill-translate-transition", js.undefined)
     
-    @scala.inline
-    def `setFill-translateUndefined`: Self = StObject.set(x, "fill-translate", js.undefined)
+    inline def `setFill-translateUndefined`: Self = StObject.set(x, "fill-translate", js.undefined)
     
-    @scala.inline
-    def `setFill-translateVarargs`(value: Double*): Self = StObject.set(x, "fill-translate", js.Array(value :_*))
+    inline def `setFill-translateVarargs`(value: Double*): Self = StObject.set(x, "fill-translate", js.Array(value :_*))
   }
 }

@@ -21,8 +21,7 @@ object libGridMod {
     @JSImport("antd/lib/grid", "default.useBreakpoint")
     @js.native
     def useBreakpoint: js.Function0[ScreenMap] = js.native
-    @scala.inline
-    def useBreakpoint_=(x: js.Function0[ScreenMap]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useBreakpoint")(x.asInstanceOf[js.Any])
+    inline def useBreakpoint_=(x: js.Function0[ScreenMap]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useBreakpoint")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("antd/lib/grid", "Col")

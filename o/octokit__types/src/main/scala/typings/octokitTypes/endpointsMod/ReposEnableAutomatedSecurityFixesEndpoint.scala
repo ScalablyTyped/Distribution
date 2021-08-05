@@ -16,19 +16,15 @@ trait ReposEnableAutomatedSecurityFixesEndpoint
 }
 object ReposEnableAutomatedSecurityFixesEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[london], owner: String, repo: String): ReposEnableAutomatedSecurityFixesEndpoint = {
+  inline def apply(mediaType: `0`[london], owner: String, repo: String): ReposEnableAutomatedSecurityFixesEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposEnableAutomatedSecurityFixesEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposEnableAutomatedSecurityFixesEndpointMutableBuilder[Self <: ReposEnableAutomatedSecurityFixesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposEnableAutomatedSecurityFixesEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

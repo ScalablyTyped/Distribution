@@ -40,46 +40,33 @@ trait ParamsResourceUsersMessagesGet
 }
 object ParamsResourceUsersMessagesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceUsersMessagesGet = {
+  inline def apply(): ParamsResourceUsersMessagesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUsersMessagesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUsersMessagesGetMutableBuilder[Self <: ParamsResourceUsersMessagesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUsersMessagesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMetadataHeaders(value: js.Array[String]): Self = StObject.set(x, "metadataHeaders", value.asInstanceOf[js.Any])
+    inline def setMetadataHeaders(value: js.Array[String]): Self = StObject.set(x, "metadataHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataHeadersUndefined: Self = StObject.set(x, "metadataHeaders", js.undefined)
+    inline def setMetadataHeadersUndefined: Self = StObject.set(x, "metadataHeaders", js.undefined)
     
-    @scala.inline
-    def setMetadataHeadersVarargs(value: String*): Self = StObject.set(x, "metadataHeaders", js.Array(value :_*))
+    inline def setMetadataHeadersVarargs(value: String*): Self = StObject.set(x, "metadataHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

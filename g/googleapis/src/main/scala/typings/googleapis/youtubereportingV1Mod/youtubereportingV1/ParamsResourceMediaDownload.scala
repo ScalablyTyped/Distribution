@@ -24,25 +24,19 @@ trait ParamsResourceMediaDownload
 }
 object ParamsResourceMediaDownload {
   
-  @scala.inline
-  def apply(): ParamsResourceMediaDownload = {
+  inline def apply(): ParamsResourceMediaDownload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMediaDownload]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMediaDownloadMutableBuilder[Self <: ParamsResourceMediaDownload] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMediaDownload](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

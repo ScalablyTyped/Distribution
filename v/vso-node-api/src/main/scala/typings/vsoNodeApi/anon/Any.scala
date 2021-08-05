@@ -14,22 +14,17 @@ trait Any extends StObject {
 }
 object Any {
   
-  @scala.inline
-  def apply(any: scala.Double, file: scala.Double, folder: scala.Double): Any = {
+  inline def apply(any: scala.Double, file: scala.Double, folder: scala.Double): Any = {
     val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Any]
   }
   
-  @scala.inline
-  implicit class AnyMutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
+  extension [Self <: Any](x: Self) {
     
-    @scala.inline
-    def setAny(value: scala.Double): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    inline def setAny(value: scala.Double): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: scala.Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: scala.Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolder(value: scala.Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: scala.Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
   }
 }

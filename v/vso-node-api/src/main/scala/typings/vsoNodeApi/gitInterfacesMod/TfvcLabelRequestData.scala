@@ -23,8 +23,7 @@ trait TfvcLabelRequestData extends StObject {
 }
 object TfvcLabelRequestData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeLinks: Boolean,
     itemLabelFilter: String,
     labelScope: String,
@@ -36,25 +35,18 @@ object TfvcLabelRequestData {
     __obj.asInstanceOf[TfvcLabelRequestData]
   }
   
-  @scala.inline
-  implicit class TfvcLabelRequestDataMutableBuilder[Self <: TfvcLabelRequestData] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcLabelRequestData](x: Self) {
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemLabelFilter(value: String): Self = StObject.set(x, "itemLabelFilter", value.asInstanceOf[js.Any])
+    inline def setItemLabelFilter(value: String): Self = StObject.set(x, "itemLabelFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelScope(value: String): Self = StObject.set(x, "labelScope", value.asInstanceOf[js.Any])
+    inline def setLabelScope(value: String): Self = StObject.set(x, "labelScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
+    inline def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
   }
 }

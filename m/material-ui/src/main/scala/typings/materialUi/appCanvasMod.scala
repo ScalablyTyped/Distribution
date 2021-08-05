@@ -22,8 +22,7 @@ object appCanvasMod {
        with Props[AppCanvas]
   object AppCanvasProps {
     
-    @scala.inline
-    def apply(): AppCanvasProps = {
+    inline def apply(): AppCanvasProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppCanvasProps]
     }

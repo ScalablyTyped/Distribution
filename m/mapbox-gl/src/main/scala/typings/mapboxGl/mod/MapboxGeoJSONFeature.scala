@@ -22,8 +22,7 @@ trait MapboxGeoJSONFeature
 }
 object MapboxGeoJSONFeature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     geometry: Geometry,
     layer: Layer,
     source: String,
@@ -35,19 +34,14 @@ object MapboxGeoJSONFeature {
     __obj.asInstanceOf[MapboxGeoJSONFeature]
   }
   
-  @scala.inline
-  implicit class MapboxGeoJSONFeatureMutableBuilder[Self <: MapboxGeoJSONFeature] (val x: Self) extends AnyVal {
+  extension [Self <: MapboxGeoJSONFeature](x: Self) {
     
-    @scala.inline
-    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLayer(value: String): Self = StObject.set(x, "sourceLayer", value.asInstanceOf[js.Any])
+    inline def setSourceLayer(value: String): Self = StObject.set(x, "sourceLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlBinsType extends StObject
 object XlBinsType {
   
-  @scala.inline
-  def xlBinsTypeAutomatic: `0` = 0.asInstanceOf[`0`]
+  inline def xlBinsTypeAutomatic: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlBinsTypeBinCount: `4` = 4.asInstanceOf[`4`]
+  inline def xlBinsTypeBinCount: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlBinsTypeBinSize: `3` = 3.asInstanceOf[`3`]
+  inline def xlBinsTypeBinSize: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlBinsTypeCategorical: `1` = 1.asInstanceOf[`1`]
+  inline def xlBinsTypeCategorical: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlBinsTypeManual: `2` = 2.asInstanceOf[`2`]
+  inline def xlBinsTypeManual: `2` = 2.asInstanceOf[`2`]
 }

@@ -10,16 +10,13 @@ trait EnumValuesKeepBothFiles extends StObject {
 }
 object EnumValuesKeepBothFiles {
   
-  @scala.inline
-  def apply(enumValues: KeepBothFiles): EnumValuesKeepBothFiles = {
+  inline def apply(enumValues: KeepBothFiles): EnumValuesKeepBothFiles = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesKeepBothFiles]
   }
   
-  @scala.inline
-  implicit class EnumValuesKeepBothFilesMutableBuilder[Self <: EnumValuesKeepBothFiles] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesKeepBothFiles](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: KeepBothFiles): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: KeepBothFiles): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait CreateStackInstancesOutput extends StObject {
 }
 object CreateStackInstancesOutput {
   
-  @scala.inline
-  def apply(): CreateStackInstancesOutput = {
+  inline def apply(): CreateStackInstancesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStackInstancesOutput]
   }
   
-  @scala.inline
-  implicit class CreateStackInstancesOutputMutableBuilder[Self <: CreateStackInstancesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStackInstancesOutput](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

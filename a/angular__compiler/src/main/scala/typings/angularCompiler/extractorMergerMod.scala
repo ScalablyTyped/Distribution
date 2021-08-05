@@ -27,16 +27,14 @@ object extractorMergerMod {
     var messages: js.Array[Message] = js.native
   }
   
-  @scala.inline
-  def extractMessages(
+  inline def extractMessages(
     nodes: js.Array[Node],
     interpolationConfig: InterpolationConfig,
     implicitTags: js.Array[String],
     implicitAttrs: StringDictionary[js.Array[String]]
   ): ExtractionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMessages")(nodes.asInstanceOf[js.Any], interpolationConfig.asInstanceOf[js.Any], implicitTags.asInstanceOf[js.Any], implicitAttrs.asInstanceOf[js.Any])).asInstanceOf[ExtractionResult]
   
-  @scala.inline
-  def mergeTranslations(
+  inline def mergeTranslations(
     nodes: js.Array[Node],
     translations: TranslationBundle,
     interpolationConfig: InterpolationConfig,

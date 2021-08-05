@@ -13,22 +13,17 @@ trait AreaEncodeEntry
 }
 object AreaEncodeEntry {
   
-  @scala.inline
-  def apply(): AreaEncodeEntry = {
+  inline def apply(): AreaEncodeEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreaEncodeEntry]
   }
   
-  @scala.inline
-  implicit class AreaEncodeEntryMutableBuilder[Self <: AreaEncodeEntry] (val x: Self) extends AnyVal {
+  extension [Self <: AreaEncodeEntry](x: Self) {
     
-    @scala.inline
-    def setOrient(value: ProductionRule[ScaledValueRef[Orientation]]): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    inline def setOrient(value: ProductionRule[ScaledValueRef[Orientation]]): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+    inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
-    @scala.inline
-    def setOrientVarargs(value: (Test & ScaledValueRef[Orientation])*): Self = StObject.set(x, "orient", js.Array(value :_*))
+    inline def setOrientVarargs(value: (Test & ScaledValueRef[Orientation])*): Self = StObject.set(x, "orient", js.Array(value :_*))
   }
 }

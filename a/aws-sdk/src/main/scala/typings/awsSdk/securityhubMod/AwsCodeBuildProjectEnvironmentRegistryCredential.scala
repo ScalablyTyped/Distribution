@@ -18,25 +18,19 @@ trait AwsCodeBuildProjectEnvironmentRegistryCredential extends StObject {
 }
 object AwsCodeBuildProjectEnvironmentRegistryCredential {
   
-  @scala.inline
-  def apply(): AwsCodeBuildProjectEnvironmentRegistryCredential = {
+  inline def apply(): AwsCodeBuildProjectEnvironmentRegistryCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCodeBuildProjectEnvironmentRegistryCredential]
   }
   
-  @scala.inline
-  implicit class AwsCodeBuildProjectEnvironmentRegistryCredentialMutableBuilder[Self <: AwsCodeBuildProjectEnvironmentRegistryCredential] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCodeBuildProjectEnvironmentRegistryCredential](x: Self) {
     
-    @scala.inline
-    def setCredential(value: NonEmptyString): Self = StObject.set(x, "Credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: NonEmptyString): Self = StObject.set(x, "Credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialProvider(value: NonEmptyString): Self = StObject.set(x, "CredentialProvider", value.asInstanceOf[js.Any])
+    inline def setCredentialProvider(value: NonEmptyString): Self = StObject.set(x, "CredentialProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialProviderUndefined: Self = StObject.set(x, "CredentialProvider", js.undefined)
+    inline def setCredentialProviderUndefined: Self = StObject.set(x, "CredentialProvider", js.undefined)
     
-    @scala.inline
-    def setCredentialUndefined: Self = StObject.set(x, "Credential", js.undefined)
+    inline def setCredentialUndefined: Self = StObject.set(x, "Credential", js.undefined)
   }
 }

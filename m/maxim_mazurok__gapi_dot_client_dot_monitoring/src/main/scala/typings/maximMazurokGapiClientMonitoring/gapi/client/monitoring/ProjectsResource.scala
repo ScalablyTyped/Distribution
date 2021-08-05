@@ -26,8 +26,7 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alertPolicies: AlertPoliciesResource,
     collectdTimeSeries: CollectdTimeSeriesResource,
     groups: GroupsResource,
@@ -42,34 +41,24 @@ object ProjectsResource {
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setAlertPolicies(value: AlertPoliciesResource): Self = StObject.set(x, "alertPolicies", value.asInstanceOf[js.Any])
+    inline def setAlertPolicies(value: AlertPoliciesResource): Self = StObject.set(x, "alertPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectdTimeSeries(value: CollectdTimeSeriesResource): Self = StObject.set(x, "collectdTimeSeries", value.asInstanceOf[js.Any])
+    inline def setCollectdTimeSeries(value: CollectdTimeSeriesResource): Self = StObject.set(x, "collectdTimeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: GroupsResource): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: GroupsResource): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDescriptors(value: MetricDescriptorsResource): Self = StObject.set(x, "metricDescriptors", value.asInstanceOf[js.Any])
+    inline def setMetricDescriptors(value: MetricDescriptorsResource): Self = StObject.set(x, "metricDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourceDescriptors(value: MonitoredResourceDescriptorsResource): Self = StObject.set(x, "monitoredResourceDescriptors", value.asInstanceOf[js.Any])
+    inline def setMonitoredResourceDescriptors(value: MonitoredResourceDescriptorsResource): Self = StObject.set(x, "monitoredResourceDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationChannelDescriptors(value: NotificationChannelDescriptorsResource): Self = StObject.set(x, "notificationChannelDescriptors", value.asInstanceOf[js.Any])
+    inline def setNotificationChannelDescriptors(value: NotificationChannelDescriptorsResource): Self = StObject.set(x, "notificationChannelDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationChannels(value: NotificationChannelsResource): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
+    inline def setNotificationChannels(value: NotificationChannelsResource): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeries(value: TimeSeriesResource): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
+    inline def setTimeSeries(value: TimeSeriesResource): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptimeCheckConfigs(value: UptimeCheckConfigsResource): Self = StObject.set(x, "uptimeCheckConfigs", value.asInstanceOf[js.Any])
+    inline def setUptimeCheckConfigs(value: UptimeCheckConfigsResource): Self = StObject.set(x, "uptimeCheckConfigs", value.asInstanceOf[js.Any])
   }
 }

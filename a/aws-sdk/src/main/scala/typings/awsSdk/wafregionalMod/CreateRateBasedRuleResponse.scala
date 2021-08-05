@@ -18,25 +18,19 @@ trait CreateRateBasedRuleResponse extends StObject {
 }
 object CreateRateBasedRuleResponse {
   
-  @scala.inline
-  def apply(): CreateRateBasedRuleResponse = {
+  inline def apply(): CreateRateBasedRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRateBasedRuleResponse]
   }
   
-  @scala.inline
-  implicit class CreateRateBasedRuleResponseMutableBuilder[Self <: CreateRateBasedRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRateBasedRuleResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setRule(value: RateBasedRule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: RateBasedRule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "Rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "Rule", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AddCommunicationToCaseResponse extends StObject {
 }
 object AddCommunicationToCaseResponse {
   
-  @scala.inline
-  def apply(): AddCommunicationToCaseResponse = {
+  inline def apply(): AddCommunicationToCaseResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddCommunicationToCaseResponse]
   }
   
-  @scala.inline
-  implicit class AddCommunicationToCaseResponseMutableBuilder[Self <: AddCommunicationToCaseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddCommunicationToCaseResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

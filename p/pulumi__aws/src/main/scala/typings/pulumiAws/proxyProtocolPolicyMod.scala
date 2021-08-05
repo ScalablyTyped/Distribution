@@ -52,21 +52,16 @@ object proxyProtocolPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState, opts: CustomResourceOptions): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
+    inline def get(name: String, id: Input[ID]): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
+    inline def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
+    inline def get(name: String, id: Input[ID], state: ProxyProtocolPolicyState, opts: CustomResourceOptions): ProxyProtocolPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyProtocolPolicy]
     
     /**
       * Returns true if the given object is an instance of ProxyProtocolPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ Boolean]
   }
   
   trait ProxyProtocolPolicyArgs extends StObject {
@@ -85,23 +80,18 @@ object proxyProtocolPolicyMod {
   }
   object ProxyProtocolPolicyArgs {
     
-    @scala.inline
-    def apply(instancePorts: Input[js.Array[Input[String]]], loadBalancer: Input[String]): ProxyProtocolPolicyArgs = {
+    inline def apply(instancePorts: Input[js.Array[Input[String]]], loadBalancer: Input[String]): ProxyProtocolPolicyArgs = {
       val __obj = js.Dynamic.literal(instancePorts = instancePorts.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyProtocolPolicyArgs]
     }
     
-    @scala.inline
-    implicit class ProxyProtocolPolicyArgsMutableBuilder[Self <: ProxyProtocolPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyProtocolPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setInstancePorts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instancePorts", value.asInstanceOf[js.Any])
+      inline def setInstancePorts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instancePorts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancePortsVarargs(value: Input[String]*): Self = StObject.set(x, "instancePorts", js.Array(value :_*))
+      inline def setInstancePortsVarargs(value: Input[String]*): Self = StObject.set(x, "instancePorts", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+      inline def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,29 +111,22 @@ object proxyProtocolPolicyMod {
   }
   object ProxyProtocolPolicyState {
     
-    @scala.inline
-    def apply(): ProxyProtocolPolicyState = {
+    inline def apply(): ProxyProtocolPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyProtocolPolicyState]
     }
     
-    @scala.inline
-    implicit class ProxyProtocolPolicyStateMutableBuilder[Self <: ProxyProtocolPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyProtocolPolicyState](x: Self) {
       
-      @scala.inline
-      def setInstancePorts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instancePorts", value.asInstanceOf[js.Any])
+      inline def setInstancePorts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instancePorts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancePortsUndefined: Self = StObject.set(x, "instancePorts", js.undefined)
+      inline def setInstancePortsUndefined: Self = StObject.set(x, "instancePorts", js.undefined)
       
-      @scala.inline
-      def setInstancePortsVarargs(value: Input[String]*): Self = StObject.set(x, "instancePorts", js.Array(value :_*))
+      inline def setInstancePortsVarargs(value: Input[String]*): Self = StObject.set(x, "instancePorts", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+      inline def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
+      inline def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
     }
   }
 }

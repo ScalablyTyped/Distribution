@@ -68,8 +68,7 @@ object anon {
   }
   object ApertureValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ApertureValue: Double,
       ColorSpace: Double,
       CreateDate: String,
@@ -103,92 +102,63 @@ object anon {
       __obj.asInstanceOf[ApertureValue]
     }
     
-    @scala.inline
-    implicit class ApertureValueMutableBuilder[Self <: ApertureValue] (val x: Self) extends AnyVal {
+    extension [Self <: ApertureValue](x: Self) {
       
-      @scala.inline
-      def setApertureValue(value: Double): Self = StObject.set(x, "ApertureValue", value.asInstanceOf[js.Any])
+      inline def setApertureValue(value: Double): Self = StObject.set(x, "ApertureValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorSpace(value: Double): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+      inline def setColorSpace(value: Double): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDate(value: String): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: String): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRendered(value: Double): Self = StObject.set(x, "CustomRendered", value.asInstanceOf[js.Any])
+      inline def setCustomRendered(value: Double): Self = StObject.set(x, "CustomRendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeOriginal(value: String): Self = StObject.set(x, "DateTimeOriginal", value.asInstanceOf[js.Any])
+      inline def setDateTimeOriginal(value: String): Self = StObject.set(x, "DateTimeOriginal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExifImageHeight(value: Double): Self = StObject.set(x, "ExifImageHeight", value.asInstanceOf[js.Any])
+      inline def setExifImageHeight(value: Double): Self = StObject.set(x, "ExifImageHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExifImageWidth(value: Double): Self = StObject.set(x, "ExifImageWidth", value.asInstanceOf[js.Any])
+      inline def setExifImageWidth(value: Double): Self = StObject.set(x, "ExifImageWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExifVersion(value: String): Self = StObject.set(x, "ExifVersion", value.asInstanceOf[js.Any])
+      inline def setExifVersion(value: String): Self = StObject.set(x, "ExifVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposureCompensation(value: Double): Self = StObject.set(x, "ExposureCompensation", value.asInstanceOf[js.Any])
+      inline def setExposureCompensation(value: Double): Self = StObject.set(x, "ExposureCompensation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposureMode(value: Double): Self = StObject.set(x, "ExposureMode", value.asInstanceOf[js.Any])
+      inline def setExposureMode(value: Double): Self = StObject.set(x, "ExposureMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposureProgram(value: Double): Self = StObject.set(x, "ExposureProgram", value.asInstanceOf[js.Any])
+      inline def setExposureProgram(value: Double): Self = StObject.set(x, "ExposureProgram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposureTime(value: Double): Self = StObject.set(x, "ExposureTime", value.asInstanceOf[js.Any])
+      inline def setExposureTime(value: Double): Self = StObject.set(x, "ExposureTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFNumber(value: Double): Self = StObject.set(x, "FNumber", value.asInstanceOf[js.Any])
+      inline def setFNumber(value: Double): Self = StObject.set(x, "FNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlash(value: Double): Self = StObject.set(x, "Flash", value.asInstanceOf[js.Any])
+      inline def setFlash(value: Double): Self = StObject.set(x, "Flash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashpixVersion(value: String): Self = StObject.set(x, "FlashpixVersion", value.asInstanceOf[js.Any])
+      inline def setFlashpixVersion(value: String): Self = StObject.set(x, "FlashpixVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocalLength(value: Double): Self = StObject.set(x, "FocalLength", value.asInstanceOf[js.Any])
+      inline def setFocalLength(value: Double): Self = StObject.set(x, "FocalLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocalPlaneResolutionUnit(value: Double): Self = StObject.set(x, "FocalPlaneResolutionUnit", value.asInstanceOf[js.Any])
+      inline def setFocalPlaneResolutionUnit(value: Double): Self = StObject.set(x, "FocalPlaneResolutionUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocalPlaneXResolution(value: Double): Self = StObject.set(x, "FocalPlaneXResolution", value.asInstanceOf[js.Any])
+      inline def setFocalPlaneXResolution(value: Double): Self = StObject.set(x, "FocalPlaneXResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocalPlaneYResolution(value: Double): Self = StObject.set(x, "FocalPlaneYResolution", value.asInstanceOf[js.Any])
+      inline def setFocalPlaneYResolution(value: Double): Self = StObject.set(x, "FocalPlaneYResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setISO(value: Double): Self = StObject.set(x, "ISO", value.asInstanceOf[js.Any])
+      inline def setISO(value: Double): Self = StObject.set(x, "ISO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteropOffset(value: Double): Self = StObject.set(x, "InteropOffset", value.asInstanceOf[js.Any])
+      inline def setInteropOffset(value: Double): Self = StObject.set(x, "InteropOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeteringMode(value: Double): Self = StObject.set(x, "MeteringMode", value.asInstanceOf[js.Any])
+      inline def setMeteringMode(value: Double): Self = StObject.set(x, "MeteringMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSceneCaptureType(value: Double): Self = StObject.set(x, "SceneCaptureType", value.asInstanceOf[js.Any])
+      inline def setSceneCaptureType(value: Double): Self = StObject.set(x, "SceneCaptureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShutterSpeedValue(value: Double): Self = StObject.set(x, "ShutterSpeedValue", value.asInstanceOf[js.Any])
+      inline def setShutterSpeedValue(value: Double): Self = StObject.set(x, "ShutterSpeedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubSecTime(value: String): Self = StObject.set(x, "SubSecTime", value.asInstanceOf[js.Any])
+      inline def setSubSecTime(value: String): Self = StObject.set(x, "SubSecTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubSecTimeDigitized(value: String): Self = StObject.set(x, "SubSecTimeDigitized", value.asInstanceOf[js.Any])
+      inline def setSubSecTimeDigitized(value: String): Self = StObject.set(x, "SubSecTimeDigitized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubSecTimeOriginal(value: String): Self = StObject.set(x, "SubSecTimeOriginal", value.asInstanceOf[js.Any])
+      inline def setSubSecTimeOriginal(value: String): Self = StObject.set(x, "SubSecTimeOriginal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBalance(value: Double): Self = StObject.set(x, "WhiteBalance", value.asInstanceOf[js.Any])
+      inline def setWhiteBalance(value: Double): Self = StObject.set(x, "WhiteBalance", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,8 +178,7 @@ object anon {
   }
   object Compression {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Compression: Double,
       ResolutionUnit: Double,
       ThumbnailLength: Double,
@@ -221,26 +190,19 @@ object anon {
       __obj.asInstanceOf[Compression]
     }
     
-    @scala.inline
-    implicit class CompressionMutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
+    extension [Self <: Compression](x: Self) {
       
-      @scala.inline
-      def setCompression(value: Double): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Double): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUnit(value: Double): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
+      inline def setResolutionUnit(value: Double): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailLength(value: Double): Self = StObject.set(x, "ThumbnailLength", value.asInstanceOf[js.Any])
+      inline def setThumbnailLength(value: Double): Self = StObject.set(x, "ThumbnailLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailOffset(value: Double): Self = StObject.set(x, "ThumbnailOffset", value.asInstanceOf[js.Any])
+      inline def setThumbnailOffset(value: Double): Self = StObject.set(x, "ThumbnailOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXResolution(value: Double): Self = StObject.set(x, "XResolution", value.asInstanceOf[js.Any])
+      inline def setXResolution(value: Double): Self = StObject.set(x, "XResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYResolution(value: Double): Self = StObject.set(x, "YResolution", value.asInstanceOf[js.Any])
+      inline def setYResolution(value: Double): Self = StObject.set(x, "YResolution", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,8 +222,7 @@ object anon {
   }
   object Exif {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exif: ApertureValue,
       gps: GPSVersionID,
       image: ExifOffset,
@@ -273,26 +234,19 @@ object anon {
       __obj.asInstanceOf[Exif]
     }
     
-    @scala.inline
-    implicit class ExifMutableBuilder[Self <: Exif] (val x: Self) extends AnyVal {
+    extension [Self <: Exif](x: Self) {
       
-      @scala.inline
-      def setExif(value: ApertureValue): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+      inline def setExif(value: ApertureValue): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGps(value: GPSVersionID): Self = StObject.set(x, "gps", value.asInstanceOf[js.Any])
+      inline def setGps(value: GPSVersionID): Self = StObject.set(x, "gps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: ExifOffset): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ExifOffset): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteroperability(value: InteropIndex): Self = StObject.set(x, "interoperability", value.asInstanceOf[js.Any])
+      inline def setInteroperability(value: InteropIndex): Self = StObject.set(x, "interoperability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMakernote(value: StringDictionary[String]): Self = StObject.set(x, "makernote", value.asInstanceOf[js.Any])
+      inline def setMakernote(value: StringDictionary[String]): Self = StObject.set(x, "makernote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: Compression): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: Compression): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,8 +276,7 @@ object anon {
   }
   object ExifOffset {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ExifOffset: Double,
       GPSInfo: Double,
       Make: String,
@@ -340,41 +293,29 @@ object anon {
       __obj.asInstanceOf[ExifOffset]
     }
     
-    @scala.inline
-    implicit class ExifOffsetMutableBuilder[Self <: ExifOffset] (val x: Self) extends AnyVal {
+    extension [Self <: ExifOffset](x: Self) {
       
-      @scala.inline
-      def setExifOffset(value: Double): Self = StObject.set(x, "ExifOffset", value.asInstanceOf[js.Any])
+      inline def setExifOffset(value: Double): Self = StObject.set(x, "ExifOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGPSInfo(value: Double): Self = StObject.set(x, "GPSInfo", value.asInstanceOf[js.Any])
+      inline def setGPSInfo(value: Double): Self = StObject.set(x, "GPSInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMake(value: String): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
+      inline def setMake(value: String): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyDate(value: String): Self = StObject.set(x, "ModifyDate", value.asInstanceOf[js.Any])
+      inline def setModifyDate(value: String): Self = StObject.set(x, "ModifyDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUnit(value: Double): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
+      inline def setResolutionUnit(value: Double): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoftware(value: String): Self = StObject.set(x, "Software", value.asInstanceOf[js.Any])
+      inline def setSoftware(value: String): Self = StObject.set(x, "Software", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXResolution(value: Double): Self = StObject.set(x, "XResolution", value.asInstanceOf[js.Any])
+      inline def setXResolution(value: Double): Self = StObject.set(x, "XResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYCbCrPositioning(value: Double): Self = StObject.set(x, "YCbCrPositioning", value.asInstanceOf[js.Any])
+      inline def setYCbCrPositioning(value: Double): Self = StObject.set(x, "YCbCrPositioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYResolution(value: Double): Self = StObject.set(x, "YResolution", value.asInstanceOf[js.Any])
+      inline def setYResolution(value: Double): Self = StObject.set(x, "YResolution", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,23 +329,18 @@ object anon {
   }
   object Expire {
     
-    @scala.inline
-    def apply(expire: Double, signature: String, token: String): Expire = {
+    inline def apply(expire: Double, signature: String, token: String): Expire = {
       val __obj = js.Dynamic.literal(expire = expire.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expire]
     }
     
-    @scala.inline
-    implicit class ExpireMutableBuilder[Self <: Expire] (val x: Self) extends AnyVal {
+    extension [Self <: Expire](x: Self) {
       
-      @scala.inline
-      def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -414,20 +350,16 @@ object anon {
   }
   object GPSVersionID {
     
-    @scala.inline
-    def apply(GPSVersionID: js.Array[Double]): GPSVersionID = {
+    inline def apply(GPSVersionID: js.Array[Double]): GPSVersionID = {
       val __obj = js.Dynamic.literal(GPSVersionID = GPSVersionID.asInstanceOf[js.Any])
       __obj.asInstanceOf[GPSVersionID]
     }
     
-    @scala.inline
-    implicit class GPSVersionIDMutableBuilder[Self <: GPSVersionID] (val x: Self) extends AnyVal {
+    extension [Self <: GPSVersionID](x: Self) {
       
-      @scala.inline
-      def setGPSVersionID(value: js.Array[Double]): Self = StObject.set(x, "GPSVersionID", value.asInstanceOf[js.Any])
+      inline def setGPSVersionID(value: js.Array[Double]): Self = StObject.set(x, "GPSVersionID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGPSVersionIDVarargs(value: Double*): Self = StObject.set(x, "GPSVersionID", js.Array(value :_*))
+      inline def setGPSVersionIDVarargs(value: Double*): Self = StObject.set(x, "GPSVersionID", js.Array(value :_*))
     }
   }
   
@@ -439,20 +371,16 @@ object anon {
   }
   object InteropIndex {
     
-    @scala.inline
-    def apply(InteropIndex: String, InteropVersion: String): InteropIndex = {
+    inline def apply(InteropIndex: String, InteropVersion: String): InteropIndex = {
       val __obj = js.Dynamic.literal(InteropIndex = InteropIndex.asInstanceOf[js.Any], InteropVersion = InteropVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[InteropIndex]
     }
     
-    @scala.inline
-    implicit class InteropIndexMutableBuilder[Self <: InteropIndex] (val x: Self) extends AnyVal {
+    extension [Self <: InteropIndex](x: Self) {
       
-      @scala.inline
-      def setInteropIndex(value: String): Self = StObject.set(x, "InteropIndex", value.asInstanceOf[js.Any])
+      inline def setInteropIndex(value: String): Self = StObject.set(x, "InteropIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteropVersion(value: String): Self = StObject.set(x, "InteropVersion", value.asInstanceOf[js.Any])
+      inline def setInteropVersion(value: String): Self = StObject.set(x, "InteropVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -468,29 +396,22 @@ object anon {
   }
   object PrivateKey {
     
-    @scala.inline
-    def apply(privateKey: String, publicKey: String, urlEndpoint: String): PrivateKey = {
+    inline def apply(privateKey: String, publicKey: String, urlEndpoint: String): PrivateKey = {
       val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], urlEndpoint = urlEndpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrivateKey]
     }
     
-    @scala.inline
-    implicit class PrivateKeyMutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateKey](x: Self) {
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationPosition(value: TransformationPosition): Self = StObject.set(x, "transformationPosition", value.asInstanceOf[js.Any])
+      inline def setTransformationPosition(value: TransformationPosition): Self = StObject.set(x, "transformationPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationPositionUndefined: Self = StObject.set(x, "transformationPosition", js.undefined)
+      inline def setTransformationPositionUndefined: Self = StObject.set(x, "transformationPosition", js.undefined)
       
-      @scala.inline
-      def setUrlEndpoint(value: String): Self = StObject.set(x, "urlEndpoint", value.asInstanceOf[js.Any])
+      inline def setUrlEndpoint(value: String): Self = StObject.set(x, "urlEndpoint", value.asInstanceOf[js.Any])
     }
   }
 }

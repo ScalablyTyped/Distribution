@@ -47,16 +47,12 @@ object singleResponseMod {
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @scala.inline
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait SingleResponse extends StObject {
@@ -79,8 +75,7 @@ object singleResponseMod {
   }
   object SingleResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       certID: typings.pkijs.certIDMod.default,
       certStatus: js.Any,
       fromSchema: js.Any => Unit,
@@ -93,38 +88,27 @@ object singleResponseMod {
       __obj.asInstanceOf[SingleResponse]
     }
     
-    @scala.inline
-    implicit class SingleResponseMutableBuilder[Self <: SingleResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SingleResponse](x: Self) {
       
-      @scala.inline
-      def setCertID(value: typings.pkijs.certIDMod.default): Self = StObject.set(x, "certID", value.asInstanceOf[js.Any])
+      inline def setCertID(value: typings.pkijs.certIDMod.default): Self = StObject.set(x, "certID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertStatus(value: js.Any): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
+      inline def setCertStatus(value: js.Any): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextUpdate(value: Date): Self = StObject.set(x, "nextUpdate", value.asInstanceOf[js.Any])
+      inline def setNextUpdate(value: Date): Self = StObject.set(x, "nextUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUpdateUndefined: Self = StObject.set(x, "nextUpdate", js.undefined)
+      inline def setNextUpdateUndefined: Self = StObject.set(x, "nextUpdate", js.undefined)
       
-      @scala.inline
-      def setSingleExtensions(value: js.Array[typings.pkijs.extensionMod.default]): Self = StObject.set(x, "singleExtensions", value.asInstanceOf[js.Any])
+      inline def setSingleExtensions(value: js.Array[typings.pkijs.extensionMod.default]): Self = StObject.set(x, "singleExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleExtensionsVarargs(value: typings.pkijs.extensionMod.default*): Self = StObject.set(x, "singleExtensions", js.Array(value :_*))
+      inline def setSingleExtensionsVarargs(value: typings.pkijs.extensionMod.default*): Self = StObject.set(x, "singleExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setThisUpdate(value: Date): Self = StObject.set(x, "thisUpdate", value.asInstanceOf[js.Any])
+      inline def setThisUpdate(value: Date): Self = StObject.set(x, "thisUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

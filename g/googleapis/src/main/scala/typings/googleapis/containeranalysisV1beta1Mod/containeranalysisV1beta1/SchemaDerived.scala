@@ -37,40 +37,29 @@ trait SchemaDerived extends StObject {
 }
 object SchemaDerived {
   
-  @scala.inline
-  def apply(): SchemaDerived = {
+  inline def apply(): SchemaDerived = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDerived]
   }
   
-  @scala.inline
-  implicit class SchemaDerivedMutableBuilder[Self <: SchemaDerived] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDerived](x: Self) {
     
-    @scala.inline
-    def setBaseResourceUrl(value: String): Self = StObject.set(x, "baseResourceUrl", value.asInstanceOf[js.Any])
+    inline def setBaseResourceUrl(value: String): Self = StObject.set(x, "baseResourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseResourceUrlUndefined: Self = StObject.set(x, "baseResourceUrl", js.undefined)
+    inline def setBaseResourceUrlUndefined: Self = StObject.set(x, "baseResourceUrl", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: SchemaFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: SchemaFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setLayerInfo(value: js.Array[SchemaLayer]): Self = StObject.set(x, "layerInfo", value.asInstanceOf[js.Any])
+    inline def setLayerInfo(value: js.Array[SchemaLayer]): Self = StObject.set(x, "layerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerInfoUndefined: Self = StObject.set(x, "layerInfo", js.undefined)
+    inline def setLayerInfoUndefined: Self = StObject.set(x, "layerInfo", js.undefined)
     
-    @scala.inline
-    def setLayerInfoVarargs(value: SchemaLayer*): Self = StObject.set(x, "layerInfo", js.Array(value :_*))
+    inline def setLayerInfoVarargs(value: SchemaLayer*): Self = StObject.set(x, "layerInfo", js.Array(value :_*))
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IPVersion extends StObject
 object IPVersion {
   
-  @scala.inline
-  def `4`: typings.validator.validatorNumbers.`4` = 4.asInstanceOf[typings.validator.validatorNumbers.`4`]
+  inline def `4`: typings.validator.validatorNumbers.`4` = 4.asInstanceOf[typings.validator.validatorNumbers.`4`]
   
-  @scala.inline
-  def `6`: typings.validator.validatorNumbers.`6` = 6.asInstanceOf[typings.validator.validatorNumbers.`6`]
+  inline def `6`: typings.validator.validatorNumbers.`6` = 6.asInstanceOf[typings.validator.validatorNumbers.`6`]
 }

@@ -11,9 +11,7 @@ object erroRecoveryStoreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRecoveryPropsToSave(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecoveryPropsToSave")().asInstanceOf[String | Null]
+  inline def getRecoveryPropsToSave(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecoveryPropsToSave")().asInstanceOf[String | Null]
   
-  @scala.inline
-  def setRecoveryPropsToSave(props: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecoveryPropsToSave")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRecoveryPropsToSave(props: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecoveryPropsToSave")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

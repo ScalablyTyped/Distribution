@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.GroupObject")
 @js.native
-class GroupObject protected ()
+/* private */ class GroupObject ()
   extends StObject
      with typings.activexExcel.Excel.GroupObject

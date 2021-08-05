@@ -29,31 +29,22 @@ object EmphasisMark {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ACCENT_ABOVE: `7` = 7.asInstanceOf[`7`]
+    inline def ACCENT_ABOVE: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def ACCENT_BELOW: `8` = 8.asInstanceOf[`8`]
+    inline def ACCENT_BELOW: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def CIRCLE_ABOVE: `3` = 3.asInstanceOf[`3`]
+    inline def CIRCLE_ABOVE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def CIRCLE_BELOW: `4` = 4.asInstanceOf[`4`]
+    inline def CIRCLE_BELOW: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def DISC_ABOVE: `5` = 5.asInstanceOf[`5`]
+    inline def DISC_ABOVE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def DISC_BELOW: `6` = 6.asInstanceOf[`6`]
+    inline def DISC_BELOW: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def DOT_ABOVE: `1` = 1.asInstanceOf[`1`]
+    inline def DOT_ABOVE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DOT_BELOW: `2` = 2.asInstanceOf[`2`]
+    inline def DOT_BELOW: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

@@ -24,19 +24,15 @@ trait ChangeFloatingObjectOutlineColorCommand
 }
 object ChangeFloatingObjectOutlineColorCommand {
   
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => CommandState[String]): ChangeFloatingObjectOutlineColorCommand = {
+  inline def apply(execute: String => Boolean, getState: () => CommandState[String]): ChangeFloatingObjectOutlineColorCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeFloatingObjectOutlineColorCommand]
   }
   
-  @scala.inline
-  implicit class ChangeFloatingObjectOutlineColorCommandMutableBuilder[Self <: ChangeFloatingObjectOutlineColorCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeFloatingObjectOutlineColorCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

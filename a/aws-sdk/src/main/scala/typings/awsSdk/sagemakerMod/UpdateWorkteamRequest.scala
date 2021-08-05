@@ -28,37 +28,27 @@ trait UpdateWorkteamRequest extends StObject {
 }
 object UpdateWorkteamRequest {
   
-  @scala.inline
-  def apply(WorkteamName: WorkteamName): UpdateWorkteamRequest = {
+  inline def apply(WorkteamName: WorkteamName): UpdateWorkteamRequest = {
     val __obj = js.Dynamic.literal(WorkteamName = WorkteamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkteamRequest]
   }
   
-  @scala.inline
-  implicit class UpdateWorkteamRequestMutableBuilder[Self <: UpdateWorkteamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWorkteamRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String200): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String200): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setMemberDefinitions(value: MemberDefinitions): Self = StObject.set(x, "MemberDefinitions", value.asInstanceOf[js.Any])
+    inline def setMemberDefinitions(value: MemberDefinitions): Self = StObject.set(x, "MemberDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberDefinitionsUndefined: Self = StObject.set(x, "MemberDefinitions", js.undefined)
+    inline def setMemberDefinitionsUndefined: Self = StObject.set(x, "MemberDefinitions", js.undefined)
     
-    @scala.inline
-    def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value :_*))
+    inline def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
+    inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigurationUndefined: Self = StObject.set(x, "NotificationConfiguration", js.undefined)
+    inline def setNotificationConfigurationUndefined: Self = StObject.set(x, "NotificationConfiguration", js.undefined)
     
-    @scala.inline
-    def setWorkteamName(value: WorkteamName): Self = StObject.set(x, "WorkteamName", value.asInstanceOf[js.Any])
+    inline def setWorkteamName(value: WorkteamName): Self = StObject.set(x, "WorkteamName", value.asInstanceOf[js.Any])
   }
 }

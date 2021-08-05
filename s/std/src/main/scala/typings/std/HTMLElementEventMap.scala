@@ -11,8 +11,7 @@ trait HTMLElementEventMap
      with DocumentAndElementEventHandlersEventMap
 object HTMLElementEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

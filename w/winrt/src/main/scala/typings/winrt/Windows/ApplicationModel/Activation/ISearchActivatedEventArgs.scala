@@ -14,8 +14,7 @@ trait ISearchActivatedEventArgs
 }
 object ISearchActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     language: String,
     previousExecutionState: ApplicationExecutionState,
@@ -26,13 +25,10 @@ object ISearchActivatedEventArgs {
     __obj.asInstanceOf[ISearchActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ISearchActivatedEventArgsMutableBuilder[Self <: ISearchActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+    inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
   }
 }

@@ -20,40 +20,29 @@ trait Style extends StObject {
 }
 object Style {
   
-  @scala.inline
-  def apply(): Style = {
+  inline def apply(): Style = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Style]
   }
   
-  @scala.inline
-  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+  extension [Self <: Style](x: Self) {
     
-    @scala.inline
-    def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setImage(value: ImageValue): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageValue): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageNull: Self = StObject.set(x, "image", null)
+    inline def setImageNull: Self = StObject.set(x, "image", null)
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setStyle(value: default | cancel | destructive): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: default | cancel | destructive): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

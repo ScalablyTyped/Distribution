@@ -11,10 +11,8 @@ object getArnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getArn(args: GetArnArgs): js.Promise[GetArnResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArn")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetArnResult]]
-  @scala.inline
-  def getArn(args: GetArnArgs, opts: InvokeOptions): js.Promise[GetArnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArn")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetArnResult]]
+  inline def getArn(args: GetArnArgs): js.Promise[GetArnResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArn")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetArnResult]]
+  inline def getArn(args: GetArnArgs, opts: InvokeOptions): js.Promise[GetArnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArn")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetArnResult]]
   
   trait GetArnArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getArnMod {
   }
   object GetArnArgs {
     
-    @scala.inline
-    def apply(arn: String): GetArnArgs = {
+    inline def apply(arn: String): GetArnArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetArnArgs]
     }
     
-    @scala.inline
-    implicit class GetArnArgsMutableBuilder[Self <: GetArnArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetArnArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,8 +72,7 @@ object getArnMod {
   }
   object GetArnResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       account: String,
       arn: String,
       id: String,
@@ -91,29 +85,21 @@ object getArnMod {
       __obj.asInstanceOf[GetArnResult]
     }
     
-    @scala.inline
-    implicit class GetArnResultMutableBuilder[Self <: GetArnResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetArnResult](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
 }

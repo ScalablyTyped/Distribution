@@ -42,26 +42,20 @@ object toggleControlMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+        inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+        inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
         
-        @scala.inline
-        def setOnChange(value: /* isChecked */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: /* isChecked */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+        inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       }
     }
   }

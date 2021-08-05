@@ -13,16 +13,13 @@ trait HideLoadingOptions extends StObject {
 }
 object HideLoadingOptions {
   
-  @scala.inline
-  def apply(page: js.Any): HideLoadingOptions = {
+  inline def apply(page: js.Any): HideLoadingOptions = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
     __obj.asInstanceOf[HideLoadingOptions]
   }
   
-  @scala.inline
-  implicit class HideLoadingOptionsMutableBuilder[Self <: HideLoadingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HideLoadingOptions](x: Self) {
     
-    @scala.inline
-    def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
   }
 }

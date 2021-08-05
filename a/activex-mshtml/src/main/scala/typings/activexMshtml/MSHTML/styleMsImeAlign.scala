@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsImeAlign extends StObject
 object styleMsImeAlign {
   
-  @scala.inline
-  def styleMsImeAlignAfter: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsImeAlignAfter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsImeAlignAuto: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsImeAlignAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsImeAlignNotSet: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsImeAlignNotSet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsImeAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsImeAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

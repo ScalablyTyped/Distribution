@@ -26,8 +26,7 @@ trait LocationRepositoryStoryResponseOwner extends StObject {
 }
 object LocationRepositoryStoryResponseOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lat: Double,
     lng: String,
     location_dict: LocationRepositoryStoryResponseLocationDict,
@@ -43,34 +42,24 @@ object LocationRepositoryStoryResponseOwner {
     __obj.asInstanceOf[LocationRepositoryStoryResponseOwner]
   }
   
-  @scala.inline
-  implicit class LocationRepositoryStoryResponseOwnerMutableBuilder[Self <: LocationRepositoryStoryResponseOwner] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRepositoryStoryResponseOwner](x: Self) {
     
-    @scala.inline
-    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation_dict(value: LocationRepositoryStoryResponseLocationDict): Self = StObject.set(x, "location_dict", value.asInstanceOf[js.Any])
+    inline def setLocation_dict(value: LocationRepositoryStoryResponseLocationDict): Self = StObject.set(x, "location_dict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+    inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_pic_username(value: String): Self = StObject.set(x, "profile_pic_username", value.asInstanceOf[js.Any])
+    inline def setProfile_pic_username(value: String): Self = StObject.set(x, "profile_pic_username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+    inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

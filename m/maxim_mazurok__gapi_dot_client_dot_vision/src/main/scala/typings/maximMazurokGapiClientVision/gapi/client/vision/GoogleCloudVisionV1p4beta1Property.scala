@@ -17,31 +17,23 @@ trait GoogleCloudVisionV1p4beta1Property extends StObject {
 }
 object GoogleCloudVisionV1p4beta1Property {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1Property = {
+  inline def apply(): GoogleCloudVisionV1p4beta1Property = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1Property]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1PropertyMutableBuilder[Self <: GoogleCloudVisionV1p4beta1Property] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1Property](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUint64Value(value: String): Self = StObject.set(x, "uint64Value", value.asInstanceOf[js.Any])
+    inline def setUint64Value(value: String): Self = StObject.set(x, "uint64Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUint64ValueUndefined: Self = StObject.set(x, "uint64Value", js.undefined)
+    inline def setUint64ValueUndefined: Self = StObject.set(x, "uint64Value", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

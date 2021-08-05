@@ -18,28 +18,21 @@ trait DescribeLocalGatewayVirtualInterfaceGroupsResult extends StObject {
 }
 object DescribeLocalGatewayVirtualInterfaceGroupsResult {
   
-  @scala.inline
-  def apply(): DescribeLocalGatewayVirtualInterfaceGroupsResult = {
+  inline def apply(): DescribeLocalGatewayVirtualInterfaceGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocalGatewayVirtualInterfaceGroupsResult]
   }
   
-  @scala.inline
-  implicit class DescribeLocalGatewayVirtualInterfaceGroupsResultMutableBuilder[Self <: DescribeLocalGatewayVirtualInterfaceGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocalGatewayVirtualInterfaceGroupsResult](x: Self) {
     
-    @scala.inline
-    def setLocalGatewayVirtualInterfaceGroups(value: LocalGatewayVirtualInterfaceGroupSet): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayVirtualInterfaceGroups(value: LocalGatewayVirtualInterfaceGroupSet): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayVirtualInterfaceGroupsUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", js.undefined)
+    inline def setLocalGatewayVirtualInterfaceGroupsUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", js.undefined)
     
-    @scala.inline
-    def setLocalGatewayVirtualInterfaceGroupsVarargs(value: LocalGatewayVirtualInterfaceGroup*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", js.Array(value :_*))
+    inline def setLocalGatewayVirtualInterfaceGroupsVarargs(value: LocalGatewayVirtualInterfaceGroup*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

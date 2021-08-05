@@ -46,16 +46,13 @@ trait UpdateDraftActionResponse extends StObject {
 }
 object UpdateDraftActionResponse {
   
-  @scala.inline
-  def apply(printJson: () => String): UpdateDraftActionResponse = {
+  inline def apply(printJson: () => String): UpdateDraftActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
     __obj.asInstanceOf[UpdateDraftActionResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDraftActionResponseMutableBuilder[Self <: UpdateDraftActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDraftActionResponse](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

@@ -8,31 +8,25 @@ object crossDomainUtilsStrings {
   
   @js.native
   sealed trait Asterisk extends StObject
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait aboutColon extends StObject
-  @scala.inline
-  def aboutColon: aboutColon = "about:".asInstanceOf[aboutColon]
+  inline def aboutColon: aboutColon = "about:".asInstanceOf[aboutColon]
   
   @js.native
   sealed trait fileColon extends StObject
-  @scala.inline
-  def fileColon: fileColon = "file:".asInstanceOf[fileColon]
+  inline def fileColon: fileColon = "file:".asInstanceOf[fileColon]
   
   @js.native
   sealed trait iframe extends StObject
-  @scala.inline
-  def iframe: iframe = "iframe".asInstanceOf[iframe]
+  inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
   sealed trait mockColon extends StObject
-  @scala.inline
-  def mockColon: mockColon = "mock:".asInstanceOf[mockColon]
+  inline def mockColon: mockColon = "mock:".asInstanceOf[mockColon]
   
   @js.native
   sealed trait popup extends StObject
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
+  inline def popup: popup = "popup".asInstanceOf[popup]
 }

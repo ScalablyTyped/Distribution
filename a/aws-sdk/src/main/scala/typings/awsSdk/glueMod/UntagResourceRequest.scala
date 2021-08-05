@@ -18,22 +18,17 @@ trait UntagResourceRequest extends StObject {
 }
 object UntagResourceRequest {
   
-  @scala.inline
-  def apply(ResourceArn: GlueResourceArn, TagsToRemove: TagKeysList): UntagResourceRequest = {
+  inline def apply(ResourceArn: GlueResourceArn, TagsToRemove: TagKeysList): UntagResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagsToRemove = TagsToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceRequest]
   }
   
-  @scala.inline
-  implicit class UntagResourceRequestMutableBuilder[Self <: UntagResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UntagResourceRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToRemove(value: TagKeysList): Self = StObject.set(x, "TagsToRemove", value.asInstanceOf[js.Any])
+    inline def setTagsToRemove(value: TagKeysList): Self = StObject.set(x, "TagsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value :_*))
+    inline def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value :_*))
   }
 }

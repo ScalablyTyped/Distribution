@@ -12,19 +12,15 @@ trait PartialStyleRulesCssBasel extends StObject {
 }
 object PartialStyleRulesCssBasel {
   
-  @scala.inline
-  def apply(): PartialStyleRulesCssBasel = {
+  inline def apply(): PartialStyleRulesCssBasel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesCssBasel]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesCssBaselMutableBuilder[Self <: PartialStyleRulesCssBasel] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesCssBasel](x: Self) {
     
-    @scala.inline
-    def `set@global`(value: CSSProperties): Self = StObject.set(x, "@global", value.asInstanceOf[js.Any])
+    inline def `set@global`(value: CSSProperties): Self = StObject.set(x, "@global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set@globalUndefined`: Self = StObject.set(x, "@global", js.undefined)
+    inline def `set@globalUndefined`: Self = StObject.set(x, "@global", js.undefined)
   }
 }

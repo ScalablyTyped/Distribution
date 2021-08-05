@@ -39,15 +39,12 @@ object electronMod {
     @JSImport("menubar/lib/@/mocks/electron", "app.getAppPath")
     @js.native
     def getAppPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<string, []> */ js.Any = js.native
-    @scala.inline
-    def getAppPath_=(
+    inline def getAppPath_=(
       x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<string, []> */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAppPath")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isReady(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[js.Promise[Unit]]
+    inline def isReady(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def on(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[Unit]
+    inline def on(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[Unit]
   }
 }

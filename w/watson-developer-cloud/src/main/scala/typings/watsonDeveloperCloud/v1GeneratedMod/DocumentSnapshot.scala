@@ -15,25 +15,19 @@ trait DocumentSnapshot extends StObject {
 }
 object DocumentSnapshot {
   
-  @scala.inline
-  def apply(): DocumentSnapshot = {
+  inline def apply(): DocumentSnapshot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentSnapshot]
   }
   
-  @scala.inline
-  implicit class DocumentSnapshotMutableBuilder[Self <: DocumentSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSnapshot](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: js.Object): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: js.Object): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
-    @scala.inline
-    def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

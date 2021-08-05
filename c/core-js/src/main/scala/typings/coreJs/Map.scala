@@ -10,16 +10,13 @@ trait Map[K, V] extends StObject {
 }
 object Map {
   
-  @scala.inline
-  def apply[K, V](toJSON: () => js.Any): Map[K, V] = {
+  inline def apply[K, V](toJSON: () => js.Any): Map[K, V] = {
     val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[Map[K, V]]
   }
   
-  @scala.inline
-  implicit class MapMutableBuilder[Self <: Map[?, ?], K, V] (val x: Self & (Map[K, V])) extends AnyVal {
+  extension [Self <: Map[?, ?], K, V](x: Self & (Map[K, V])) {
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

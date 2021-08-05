@@ -10,16 +10,13 @@ trait GetFunctionDeadLetterConfig extends StObject {
 }
 object GetFunctionDeadLetterConfig {
   
-  @scala.inline
-  def apply(targetArn: String): GetFunctionDeadLetterConfig = {
+  inline def apply(targetArn: String): GetFunctionDeadLetterConfig = {
     val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionDeadLetterConfig]
   }
   
-  @scala.inline
-  implicit class GetFunctionDeadLetterConfigMutableBuilder[Self <: GetFunctionDeadLetterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionDeadLetterConfig](x: Self) {
     
-    @scala.inline
-    def setTargetArn(value: String): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: String): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

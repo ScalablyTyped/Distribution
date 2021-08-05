@@ -14,25 +14,19 @@ trait ClaimDeviceResponse extends StObject {
 }
 object ClaimDeviceResponse {
   
-  @scala.inline
-  def apply(): ClaimDeviceResponse = {
+  inline def apply(): ClaimDeviceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClaimDeviceResponse]
   }
   
-  @scala.inline
-  implicit class ClaimDeviceResponseMutableBuilder[Self <: ClaimDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
   }
 }

@@ -43,42 +43,32 @@ object typesGetSamplingTargetsInputMod {
   }
   object GetSamplingTargetsInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SamplingStatisticsDocuments: js.Array[SamplingStatisticsDocument] | Iterable[SamplingStatisticsDocument]
     ): GetSamplingTargetsInput = {
       val __obj = js.Dynamic.literal(SamplingStatisticsDocuments = SamplingStatisticsDocuments.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSamplingTargetsInput]
     }
     
-    @scala.inline
-    implicit class GetSamplingTargetsInputMutableBuilder[Self <: GetSamplingTargetsInput] (val x: Self) extends AnyVal {
+    extension [Self <: GetSamplingTargetsInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setSamplingStatisticsDocuments(value: js.Array[SamplingStatisticsDocument] | Iterable[SamplingStatisticsDocument]): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
+      inline def setSamplingStatisticsDocuments(value: js.Array[SamplingStatisticsDocument] | Iterable[SamplingStatisticsDocument]): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value :_*))
+      inline def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value :_*))
     }
   }
 }

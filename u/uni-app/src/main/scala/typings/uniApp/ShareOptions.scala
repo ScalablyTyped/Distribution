@@ -86,85 +86,59 @@ trait ShareOptions extends StObject {
 }
 object ShareOptions {
   
-  @scala.inline
-  def apply(): ShareOptions = {
+  inline def apply(): ShareOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShareOptions]
   }
   
-  @scala.inline
-  implicit class ShareOptionsMutableBuilder[Self <: ShareOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShareOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setMediaUrl(value: String): Self = StObject.set(x, "mediaUrl", value.asInstanceOf[js.Any])
+    inline def setMediaUrl(value: String): Self = StObject.set(x, "mediaUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUrlUndefined: Self = StObject.set(x, "mediaUrl", js.undefined)
+    inline def setMediaUrlUndefined: Self = StObject.set(x, "mediaUrl", js.undefined)
     
-    @scala.inline
-    def setMiniProgram(value: MiniProgramShareOptions): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
+    inline def setMiniProgram(value: MiniProgramShareOptions): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniProgramUndefined: Self = StObject.set(x, "miniProgram", js.undefined)
+    inline def setMiniProgramUndefined: Self = StObject.set(x, "miniProgram", js.undefined)
     
-    @scala.inline
-    def setProvider(value: sinaweibo | qq | weixin): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: sinaweibo | qq | weixin): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: `0` | `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `0` | `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

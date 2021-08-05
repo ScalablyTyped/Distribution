@@ -38,40 +38,29 @@ trait ConfirmHold extends StObject {
 }
 object ConfirmHold {
   
-  @scala.inline
-  def apply(defaultValue: String): ConfirmHold = {
+  inline def apply(defaultValue: String): ConfirmHold = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmHold]
   }
   
-  @scala.inline
-  implicit class ConfirmHoldMutableBuilder[Self <: ConfirmHold] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmHold](x: Self) {
     
-    @scala.inline
-    def setConfirmHold(value: Boolean): Self = StObject.set(x, "confirmHold", value.asInstanceOf[js.Any])
+    inline def setConfirmHold(value: Boolean): Self = StObject.set(x, "confirmHold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmHoldUndefined: Self = StObject.set(x, "confirmHold", js.undefined)
+    inline def setConfirmHoldUndefined: Self = StObject.set(x, "confirmHold", js.undefined)
     
-    @scala.inline
-    def setConfirmType(value: done | next | search | go | send): Self = StObject.set(x, "confirmType", value.asInstanceOf[js.Any])
+    inline def setConfirmType(value: done | next | search | go | send): Self = StObject.set(x, "confirmType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmTypeUndefined: Self = StObject.set(x, "confirmType", js.undefined)
+    inline def setConfirmTypeUndefined: Self = StObject.set(x, "confirmType", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

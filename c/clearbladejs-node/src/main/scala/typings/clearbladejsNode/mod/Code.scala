@@ -22,8 +22,7 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     URIPrefix: String,
     callTimeout: Double,
@@ -36,28 +35,20 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
+    inline def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecute(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURIPrefix(value: String): Self = StObject.set(x, "URIPrefix", value.asInstanceOf[js.Any])
+    inline def setURIPrefix(value: String): Self = StObject.set(x, "URIPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

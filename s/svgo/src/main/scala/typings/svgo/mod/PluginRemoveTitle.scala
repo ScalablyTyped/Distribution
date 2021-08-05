@@ -12,16 +12,13 @@ trait PluginRemoveTitle
 }
 object PluginRemoveTitle {
   
-  @scala.inline
-  def apply(removeTitle: Boolean | js.Object): PluginRemoveTitle = {
+  inline def apply(removeTitle: Boolean | js.Object): PluginRemoveTitle = {
     val __obj = js.Dynamic.literal(removeTitle = removeTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveTitle]
   }
   
-  @scala.inline
-  implicit class PluginRemoveTitleMutableBuilder[Self <: PluginRemoveTitle] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveTitle](x: Self) {
     
-    @scala.inline
-    def setRemoveTitle(value: Boolean | js.Object): Self = StObject.set(x, "removeTitle", value.asInstanceOf[js.Any])
+    inline def setRemoveTitle(value: Boolean | js.Object): Self = StObject.set(x, "removeTitle", value.asInstanceOf[js.Any])
   }
 }

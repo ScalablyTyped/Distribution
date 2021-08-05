@@ -23,31 +23,23 @@ trait ListLayersRequest extends StObject {
 }
 object ListLayersRequest {
   
-  @scala.inline
-  def apply(): ListLayersRequest = {
+  inline def apply(): ListLayersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLayersRequest]
   }
   
-  @scala.inline
-  implicit class ListLayersRequestMutableBuilder[Self <: ListLayersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLayersRequest](x: Self) {
     
-    @scala.inline
-    def setCompatibleRuntime(value: Runtime): Self = StObject.set(x, "CompatibleRuntime", value.asInstanceOf[js.Any])
+    inline def setCompatibleRuntime(value: Runtime): Self = StObject.set(x, "CompatibleRuntime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleRuntimeUndefined: Self = StObject.set(x, "CompatibleRuntime", js.undefined)
+    inline def setCompatibleRuntimeUndefined: Self = StObject.set(x, "CompatibleRuntime", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: MaxLayerListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxLayerListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

@@ -23,14 +23,12 @@ object tabsIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tabs/index.native", "default.DefaultTabBar")
     @js.native
     def DefaultTabBar: TypeofRMCDefaultTabBar = js.native
-    @scala.inline
-    def DefaultTabBar_=(x: TypeofRMCDefaultTabBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTabBar")(x.asInstanceOf[js.Any])
+    inline def DefaultTabBar_=(x: TypeofRMCDefaultTabBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTabBar")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tabs/index.native", "default.defaultProps")
     @js.native
     def defaultProps: js.Object = js.native
-    @scala.inline
-    def defaultProps_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

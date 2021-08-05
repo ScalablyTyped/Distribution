@@ -12,25 +12,19 @@ trait DiagramConnectionPoint extends StObject {
 }
 object DiagramConnectionPoint {
   
-  @scala.inline
-  def apply(): DiagramConnectionPoint = {
+  inline def apply(): DiagramConnectionPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramConnectionPoint]
   }
   
-  @scala.inline
-  implicit class DiagramConnectionPointMutableBuilder[Self <: DiagramConnectionPoint] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramConnectionPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

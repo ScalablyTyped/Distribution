@@ -18,25 +18,19 @@ trait ElasticIpStatus extends StObject {
 }
 object ElasticIpStatus {
   
-  @scala.inline
-  def apply(): ElasticIpStatus = {
+  inline def apply(): ElasticIpStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticIpStatus]
   }
   
-  @scala.inline
-  implicit class ElasticIpStatusMutableBuilder[Self <: ElasticIpStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticIpStatus](x: Self) {
     
-    @scala.inline
-    def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
+    inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
+    inline def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -86,21 +86,16 @@ object environmentEC2Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EnvironmentEC2State): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EnvironmentEC2State, opts: CustomResourceOptions): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
+    inline def get(name: String, id: Input[ID]): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
+    inline def get(name: String, id: Input[ID], state: EnvironmentEC2State): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
+    inline def get(name: String, id: Input[ID], state: EnvironmentEC2State, opts: CustomResourceOptions): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
     
     /**
       * Returns true if the given object is an instance of EnvironmentEC2.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean]
   }
   
   trait EnvironmentEC2Args extends StObject {
@@ -142,53 +137,38 @@ object environmentEC2Mod {
   }
   object EnvironmentEC2Args {
     
-    @scala.inline
-    def apply(instanceType: Input[String]): EnvironmentEC2Args = {
+    inline def apply(instanceType: Input[String]): EnvironmentEC2Args = {
       val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentEC2Args]
     }
     
-    @scala.inline
-    implicit class EnvironmentEC2ArgsMutableBuilder[Self <: EnvironmentEC2Args] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentEC2Args](x: Self) {
       
-      @scala.inline
-      def setAutomaticStopTimeMinutes(value: Input[Double]): Self = StObject.set(x, "automaticStopTimeMinutes", value.asInstanceOf[js.Any])
+      inline def setAutomaticStopTimeMinutes(value: Input[Double]): Self = StObject.set(x, "automaticStopTimeMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticStopTimeMinutesUndefined: Self = StObject.set(x, "automaticStopTimeMinutes", js.undefined)
+      inline def setAutomaticStopTimeMinutesUndefined: Self = StObject.set(x, "automaticStopTimeMinutes", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerArn(value: Input[String]): Self = StObject.set(x, "ownerArn", value.asInstanceOf[js.Any])
+      inline def setOwnerArn(value: Input[String]): Self = StObject.set(x, "ownerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerArnUndefined: Self = StObject.set(x, "ownerArn", js.undefined)
+      inline def setOwnerArnUndefined: Self = StObject.set(x, "ownerArn", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -241,68 +221,48 @@ object environmentEC2Mod {
   }
   object EnvironmentEC2State {
     
-    @scala.inline
-    def apply(): EnvironmentEC2State = {
+    inline def apply(): EnvironmentEC2State = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnvironmentEC2State]
     }
     
-    @scala.inline
-    implicit class EnvironmentEC2StateMutableBuilder[Self <: EnvironmentEC2State] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentEC2State](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAutomaticStopTimeMinutes(value: Input[Double]): Self = StObject.set(x, "automaticStopTimeMinutes", value.asInstanceOf[js.Any])
+      inline def setAutomaticStopTimeMinutes(value: Input[Double]): Self = StObject.set(x, "automaticStopTimeMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticStopTimeMinutesUndefined: Self = StObject.set(x, "automaticStopTimeMinutes", js.undefined)
+      inline def setAutomaticStopTimeMinutesUndefined: Self = StObject.set(x, "automaticStopTimeMinutes", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerArn(value: Input[String]): Self = StObject.set(x, "ownerArn", value.asInstanceOf[js.Any])
+      inline def setOwnerArn(value: Input[String]): Self = StObject.set(x, "ownerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerArnUndefined: Self = StObject.set(x, "ownerArn", js.undefined)
+      inline def setOwnerArnUndefined: Self = StObject.set(x, "ownerArn", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

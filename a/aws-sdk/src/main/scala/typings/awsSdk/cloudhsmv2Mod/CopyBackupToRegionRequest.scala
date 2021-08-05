@@ -23,28 +23,21 @@ trait CopyBackupToRegionRequest extends StObject {
 }
 object CopyBackupToRegionRequest {
   
-  @scala.inline
-  def apply(BackupId: BackupId, DestinationRegion: Region): CopyBackupToRegionRequest = {
+  inline def apply(BackupId: BackupId, DestinationRegion: Region): CopyBackupToRegionRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any], DestinationRegion = DestinationRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyBackupToRegionRequest]
   }
   
-  @scala.inline
-  implicit class CopyBackupToRegionRequestMutableBuilder[Self <: CopyBackupToRegionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopyBackupToRegionRequest](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationRegion(value: Region): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
+    inline def setDestinationRegion(value: Region): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
+    inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
   }
 }

@@ -10,8 +10,7 @@ object simplifyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def douglasPeucker(
+  inline def douglasPeucker(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -21,8 +20,7 @@ object simplifyMod {
     simplifiedOffset: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("douglasPeucker")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def douglasPeuckerArray(
+  inline def douglasPeuckerArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -33,8 +31,7 @@ object simplifyMod {
     simplifiedEnds: js.Array[Double]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("douglasPeuckerArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEnds.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def douglasPeuckerMultiArray(
+  inline def douglasPeuckerMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
@@ -45,8 +42,7 @@ object simplifyMod {
     simplifiedEndss: js.Array[js.Array[Double]]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("douglasPeuckerMultiArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEndss.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def quantize(
+  inline def quantize(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -56,8 +52,7 @@ object simplifyMod {
     simplifiedOffset: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def quantizeArray(
+  inline def quantizeArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -68,8 +63,7 @@ object simplifyMod {
     simplifiedEnds: js.Array[Double]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEnds.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def quantizeMultiArray(
+  inline def quantizeMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
@@ -80,8 +74,7 @@ object simplifyMod {
     simplifiedEndss: js.Array[js.Array[Double]]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeMultiArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEndss.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def radialDistance(
+  inline def radialDistance(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -91,8 +84,7 @@ object simplifyMod {
     simplifiedOffset: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radialDistance")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def simplifyLineString(
+  inline def simplifyLineString(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -100,8 +92,7 @@ object simplifyMod {
     squaredTolerance: Double,
     highQuality: Boolean
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyLineString")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], highQuality.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def simplifyLineString(
+  inline def simplifyLineString(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -111,6 +102,5 @@ object simplifyMod {
     opt_simplifiedFlatCoordinates: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyLineString")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], highQuality.asInstanceOf[js.Any], opt_simplifiedFlatCoordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def snap(value: Double, tolerance: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snap")(value.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def snap(value: Double, tolerance: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snap")(value.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

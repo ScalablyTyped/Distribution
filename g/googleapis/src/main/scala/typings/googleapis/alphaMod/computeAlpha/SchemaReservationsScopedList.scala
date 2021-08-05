@@ -20,28 +20,21 @@ trait SchemaReservationsScopedList extends StObject {
 }
 object SchemaReservationsScopedList {
   
-  @scala.inline
-  def apply(): SchemaReservationsScopedList = {
+  inline def apply(): SchemaReservationsScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReservationsScopedList]
   }
   
-  @scala.inline
-  implicit class SchemaReservationsScopedListMutableBuilder[Self <: SchemaReservationsScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReservationsScopedList](x: Self) {
     
-    @scala.inline
-    def setReservations(value: js.Array[SchemaReservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
+    inline def setReservations(value: js.Array[SchemaReservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
+    inline def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
-    @scala.inline
-    def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

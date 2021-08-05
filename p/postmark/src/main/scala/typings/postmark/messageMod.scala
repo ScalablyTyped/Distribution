@@ -78,41 +78,30 @@ object messageMod {
   }
   object MessageSendingResponse {
     
-    @scala.inline
-    def apply(ErrorCode: Double, Message: String, SubmittedAt: String): MessageSendingResponse = {
+    inline def apply(ErrorCode: Double, Message: String, SubmittedAt: String): MessageSendingResponse = {
       val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], SubmittedAt = SubmittedAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageSendingResponse]
     }
     
-    @scala.inline
-    implicit class MessageSendingResponseMutableBuilder[Self <: MessageSendingResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MessageSendingResponse](x: Self) {
       
-      @scala.inline
-      def setBcc(value: String): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: String): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccUndefined: Self = StObject.set(x, "Bcc", js.undefined)
+      inline def setBccUndefined: Self = StObject.set(x, "Bcc", js.undefined)
       
-      @scala.inline
-      def setCc(value: String): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
+      inline def setCc(value: String): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcUndefined: Self = StObject.set(x, "Cc", js.undefined)
+      inline def setCcUndefined: Self = StObject.set(x, "Cc", js.undefined)
       
-      @scala.inline
-      def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
+      inline def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageIDUndefined: Self = StObject.set(x, "MessageID", js.undefined)
+      inline def setMessageIDUndefined: Self = StObject.set(x, "MessageID", js.undefined)
       
-      @scala.inline
-      def setSubmittedAt(value: String): Self = StObject.set(x, "SubmittedAt", value.asInstanceOf[js.Any])
+      inline def setSubmittedAt(value: String): Self = StObject.set(x, "SubmittedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "To", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
     }
   }
 }

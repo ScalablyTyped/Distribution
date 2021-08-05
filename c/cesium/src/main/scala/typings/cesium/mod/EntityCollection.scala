@@ -47,8 +47,7 @@ object EntityCollection {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def collectionChangedEventCallback(
+  inline def collectionChangedEventCallback(
     collection: EntityCollection,
     added: js.Array[Entity],
     removed: js.Array[Entity],

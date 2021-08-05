@@ -10,16 +10,13 @@ trait ContentControl extends StObject {
 }
 object ContentControl {
   
-  @scala.inline
-  def apply(ContentControl: typings.activexWord.Word.ContentControl): ContentControl = {
+  inline def apply(ContentControl: typings.activexWord.Word.ContentControl): ContentControl = {
     val __obj = js.Dynamic.literal(ContentControl = ContentControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentControl]
   }
   
-  @scala.inline
-  implicit class ContentControlMutableBuilder[Self <: ContentControl] (val x: Self) extends AnyVal {
+  extension [Self <: ContentControl](x: Self) {
     
-    @scala.inline
-    def setContentControl(value: typings.activexWord.Word.ContentControl): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
+    inline def setContentControl(value: typings.activexWord.Word.ContentControl): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
   }
 }

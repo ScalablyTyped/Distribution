@@ -16,23 +16,18 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: Double, start: Double, weight: Double): End = {
+    inline def apply(end: Double, start: Double, weight: Double): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,17 +37,14 @@ object anon {
   }
   object ExtractUrlsWithoutProtocol {
     
-    @scala.inline
-    def apply(extractUrlsWithoutProtocol: Boolean): ExtractUrlsWithoutProtocol = {
+    inline def apply(extractUrlsWithoutProtocol: Boolean): ExtractUrlsWithoutProtocol = {
       val __obj = js.Dynamic.literal(extractUrlsWithoutProtocol = extractUrlsWithoutProtocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtractUrlsWithoutProtocol]
     }
     
-    @scala.inline
-    implicit class ExtractUrlsWithoutProtocolMutableBuilder[Self <: ExtractUrlsWithoutProtocol] (val x: Self) extends AnyVal {
+    extension [Self <: ExtractUrlsWithoutProtocol](x: Self) {
       
-      @scala.inline
-      def setExtractUrlsWithoutProtocol(value: Boolean): Self = StObject.set(x, "extractUrlsWithoutProtocol", value.asInstanceOf[js.Any])
+      inline def setExtractUrlsWithoutProtocol(value: Boolean): Self = StObject.set(x, "extractUrlsWithoutProtocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,17 +54,14 @@ object anon {
   }
   object Tag {
     
-    @scala.inline
-    def apply(tag: String): Tag = {
+    inline def apply(tag: String): Tag = {
       val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
 }

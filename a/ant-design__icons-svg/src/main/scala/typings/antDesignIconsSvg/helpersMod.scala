@@ -13,10 +13,8 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderIconDefinitionToSVGElement(icond: IconDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIconDefinitionToSVGElement")(icond.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def renderIconDefinitionToSVGElement(icond: IconDefinition, options: HelperRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderIconDefinitionToSVGElement")(icond.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def renderIconDefinitionToSVGElement(icond: IconDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIconDefinitionToSVGElement")(icond.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderIconDefinitionToSVGElement(icond: IconDefinition, options: HelperRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderIconDefinitionToSVGElement")(icond.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait HelperRenderOptions extends StObject {
     
@@ -26,26 +24,20 @@ object helpersMod {
   }
   object HelperRenderOptions {
     
-    @scala.inline
-    def apply(): HelperRenderOptions = {
+    inline def apply(): HelperRenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelperRenderOptions]
     }
     
-    @scala.inline
-    implicit class HelperRenderOptionsMutableBuilder[Self <: HelperRenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HelperRenderOptions](x: Self) {
       
-      @scala.inline
-      def setExtraSVGAttrs(value: StringDictionary[String]): Self = StObject.set(x, "extraSVGAttrs", value.asInstanceOf[js.Any])
+      inline def setExtraSVGAttrs(value: StringDictionary[String]): Self = StObject.set(x, "extraSVGAttrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraSVGAttrsUndefined: Self = StObject.set(x, "extraSVGAttrs", js.undefined)
+      inline def setExtraSVGAttrsUndefined: Self = StObject.set(x, "extraSVGAttrs", js.undefined)
       
-      @scala.inline
-      def setPlaceholders(value: PrimaryColor): Self = StObject.set(x, "placeholders", value.asInstanceOf[js.Any])
+      inline def setPlaceholders(value: PrimaryColor): Self = StObject.set(x, "placeholders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholdersUndefined: Self = StObject.set(x, "placeholders", js.undefined)
+      inline def setPlaceholdersUndefined: Self = StObject.set(x, "placeholders", js.undefined)
     }
   }
 }

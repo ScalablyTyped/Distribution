@@ -107,7 +107,7 @@ trait DialogSheet
   
   def Evaluate(Name: js.Any): js.Any = js.native
   
-  @JSName("Excel.DialogSheet_typekey")
+  /* private */ @JSName("Excel.DialogSheet_typekey")
   var ExcelDotDialogSheet_typekey: DialogSheet = js.native
   
   def ExportAsFixedFormat(

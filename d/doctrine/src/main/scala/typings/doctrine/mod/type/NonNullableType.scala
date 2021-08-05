@@ -17,23 +17,18 @@ trait NonNullableType
 }
 object NonNullableType {
   
-  @scala.inline
-  def apply(expression: Type_, prefix: Boolean): NonNullableType = {
+  inline def apply(expression: Type_, prefix: Boolean): NonNullableType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NonNullableType")
     __obj.asInstanceOf[NonNullableType]
   }
   
-  @scala.inline
-  implicit class NonNullableTypeMutableBuilder[Self <: NonNullableType] (val x: Self) extends AnyVal {
+  extension [Self <: NonNullableType](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.NonNullableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.NonNullableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

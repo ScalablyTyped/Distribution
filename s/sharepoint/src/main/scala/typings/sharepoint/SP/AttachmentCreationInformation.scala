@@ -18,8 +18,7 @@ trait AttachmentCreationInformation
 }
 object AttachmentCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -34,19 +33,14 @@ object AttachmentCreationInformation {
     __obj.asInstanceOf[AttachmentCreationInformation]
   }
   
-  @scala.inline
-  implicit class AttachmentCreationInformationMutableBuilder[Self <: AttachmentCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_contentStream(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_contentStream", js.Any.fromFunction0(value))
+    inline def setGet_contentStream(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_contentStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fileName(value: () => String): Self = StObject.set(x, "get_fileName", js.Any.fromFunction0(value))
+    inline def setGet_fileName(value: () => String): Self = StObject.set(x, "get_fileName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_contentStream(value: Base64EncodedByteArray => Unit): Self = StObject.set(x, "set_contentStream", js.Any.fromFunction1(value))
+    inline def setSet_contentStream(value: Base64EncodedByteArray => Unit): Self = StObject.set(x, "set_contentStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fileName(value: String => Unit): Self = StObject.set(x, "set_fileName", js.Any.fromFunction1(value))
+    inline def setSet_fileName(value: String => Unit): Self = StObject.set(x, "set_fileName", js.Any.fromFunction1(value))
   }
 }

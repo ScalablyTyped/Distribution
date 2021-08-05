@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def returnAsHTML(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("returnAsHTML")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def returnAsHTML(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("returnAsHTML")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def returnAsString(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("returnAsString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def returnAsString(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("returnAsString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

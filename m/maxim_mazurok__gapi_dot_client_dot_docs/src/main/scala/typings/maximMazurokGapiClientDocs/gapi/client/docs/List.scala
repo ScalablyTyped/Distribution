@@ -25,44 +25,33 @@ trait List extends StObject {
 }
 object List {
   
-  @scala.inline
-  def apply(): List = {
+  inline def apply(): List = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[List]
   }
   
-  @scala.inline
-  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+  extension [Self <: List](x: Self) {
     
-    @scala.inline
-    def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
+    inline def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
+    inline def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
     
-    @scala.inline
-    def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+    inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+    inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
-    @scala.inline
-    def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
+    inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
+    inline def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
     
-    @scala.inline
-    def setSuggestedListPropertiesChanges(
+    inline def setSuggestedListPropertiesChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedListProperties}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.List & TopLevel[js.Any]
     ): Self = StObject.set(x, "suggestedListPropertiesChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedListPropertiesChangesUndefined: Self = StObject.set(x, "suggestedListPropertiesChanges", js.undefined)
+    inline def setSuggestedListPropertiesChangesUndefined: Self = StObject.set(x, "suggestedListPropertiesChanges", js.undefined)
   }
 }

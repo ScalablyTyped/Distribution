@@ -22,8 +22,7 @@ trait ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
 }
 object ResponsiveDisplayAdBuilder {
   
-  @scala.inline
-  def apply[ResponsiveDisplayAd](
+  inline def apply[ResponsiveDisplayAd](
     build: () => AdWordsOperation[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]],
     withBusinessName: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
     withCustomParameters: js.Object => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd],
@@ -40,25 +39,18 @@ object ResponsiveDisplayAdBuilder {
     __obj.asInstanceOf[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
   }
   
-  @scala.inline
-  implicit class ResponsiveDisplayAdBuilderMutableBuilder[Self <: ResponsiveDisplayAdBuilder[?], ResponsiveDisplayAd] (val x: Self & ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) extends AnyVal {
+  extension [Self <: ResponsiveDisplayAdBuilder[?], ResponsiveDisplayAd](x: Self & ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) {
     
-    @scala.inline
-    def setWithBusinessName(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withBusinessName", js.Any.fromFunction1(value))
+    inline def setWithBusinessName(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withBusinessName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithDescription(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
+    inline def setWithDescription(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithLogoImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withLogoImage", js.Any.fromFunction1(value))
+    inline def setWithLogoImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withLogoImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithLongHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withLongHeadline", js.Any.fromFunction1(value))
+    inline def setWithLongHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withLongHeadline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithMarketingImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withMarketingImage", js.Any.fromFunction1(value))
+    inline def setWithMarketingImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withMarketingImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithShortHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withShortHeadline", js.Any.fromFunction1(value))
+    inline def setWithShortHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withShortHeadline", js.Any.fromFunction1(value))
   }
 }

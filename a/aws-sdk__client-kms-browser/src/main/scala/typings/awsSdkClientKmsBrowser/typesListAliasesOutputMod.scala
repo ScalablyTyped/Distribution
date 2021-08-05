@@ -36,38 +36,28 @@ object typesListAliasesOutputMod {
   }
   object ListAliasesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListAliasesOutput = {
+    inline def apply($metadata: ResponseMetadata): ListAliasesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListAliasesOutput]
     }
     
-    @scala.inline
-    implicit class ListAliasesOutputMutableBuilder[Self <: ListAliasesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListAliasesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliases(value: js.Array[UnmarshalledAliasListEntry]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[UnmarshalledAliasListEntry]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: UnmarshalledAliasListEntry*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: UnmarshalledAliasListEntry*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+      inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+      inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
       
-      @scala.inline
-      def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
+      inline def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
+      inline def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
     }
   }
 }

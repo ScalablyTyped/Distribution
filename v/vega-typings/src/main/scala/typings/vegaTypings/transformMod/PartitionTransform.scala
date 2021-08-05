@@ -29,53 +29,38 @@ trait PartitionTransform
 }
 object PartitionTransform {
   
-  @scala.inline
-  def apply(): PartitionTransform = {
+  inline def apply(): PartitionTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("partition")
     __obj.asInstanceOf[PartitionTransform]
   }
   
-  @scala.inline
-  implicit class PartitionTransformMutableBuilder[Self <: PartitionTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (Vector6[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (Vector6[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRound(value: Boolean | SignalRef): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: Boolean | SignalRef): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
-    @scala.inline
-    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setType(value: partition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: partition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

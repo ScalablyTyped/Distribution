@@ -25,23 +25,18 @@ object typesGetShardIteratorOutputMod {
   }
   object GetShardIteratorOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetShardIteratorOutput = {
+    inline def apply($metadata: ResponseMetadata): GetShardIteratorOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetShardIteratorOutput]
     }
     
-    @scala.inline
-    implicit class GetShardIteratorOutputMutableBuilder[Self <: GetShardIteratorOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetShardIteratorOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardIterator(value: String): Self = StObject.set(x, "ShardIterator", value.asInstanceOf[js.Any])
+      inline def setShardIterator(value: String): Self = StObject.set(x, "ShardIterator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardIteratorUndefined: Self = StObject.set(x, "ShardIterator", js.undefined)
+      inline def setShardIteratorUndefined: Self = StObject.set(x, "ShardIterator", js.undefined)
     }
   }
 }

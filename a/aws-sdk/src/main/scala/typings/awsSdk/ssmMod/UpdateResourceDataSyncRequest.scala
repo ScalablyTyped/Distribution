@@ -23,22 +23,17 @@ trait UpdateResourceDataSyncRequest extends StObject {
 }
 object UpdateResourceDataSyncRequest {
   
-  @scala.inline
-  def apply(SyncName: ResourceDataSyncName, SyncSource: ResourceDataSyncSource, SyncType: ResourceDataSyncType): UpdateResourceDataSyncRequest = {
+  inline def apply(SyncName: ResourceDataSyncName, SyncSource: ResourceDataSyncSource, SyncType: ResourceDataSyncType): UpdateResourceDataSyncRequest = {
     val __obj = js.Dynamic.literal(SyncName = SyncName.asInstanceOf[js.Any], SyncSource = SyncSource.asInstanceOf[js.Any], SyncType = SyncType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResourceDataSyncRequest]
   }
   
-  @scala.inline
-  implicit class UpdateResourceDataSyncRequestMutableBuilder[Self <: UpdateResourceDataSyncRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateResourceDataSyncRequest](x: Self) {
     
-    @scala.inline
-    def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
+    inline def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncSource(value: ResourceDataSyncSource): Self = StObject.set(x, "SyncSource", value.asInstanceOf[js.Any])
+    inline def setSyncSource(value: ResourceDataSyncSource): Self = StObject.set(x, "SyncSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
+    inline def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait Ify extends StObject {
 }
 object Ify {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ify: js.Any => js.Any,
     is: js.Any => /* is gun.gun.Gun.ChainReference<any, any, false> */ Boolean,
     soul: ChainReference[js.Any, js.Any, `false`] => String
@@ -34,16 +33,12 @@ object Ify {
     __obj.asInstanceOf[Ify]
   }
   
-  @scala.inline
-  implicit class IfyMutableBuilder[Self <: Ify] (val x: Self) extends AnyVal {
+  extension [Self <: Ify](x: Self) {
     
-    @scala.inline
-    def setIfy(value: js.Any => js.Any): Self = StObject.set(x, "ify", js.Any.fromFunction1(value))
+    inline def setIfy(value: js.Any => js.Any): Self = StObject.set(x, "ify", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIs(value: js.Any => /* is gun.gun.Gun.ChainReference<any, any, false> */ Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
+    inline def setIs(value: js.Any => /* is gun.gun.Gun.ChainReference<any, any, false> */ Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSoul(value: ChainReference[js.Any, js.Any, `false`] => String): Self = StObject.set(x, "soul", js.Any.fromFunction1(value))
+    inline def setSoul(value: ChainReference[js.Any, js.Any, `false`] => String): Self = StObject.set(x, "soul", js.Any.fromFunction1(value))
   }
 }

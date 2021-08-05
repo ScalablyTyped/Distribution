@@ -68,74 +68,52 @@ object mod {
   }
   object SyslogTransportOptions {
     
-    @scala.inline
-    def apply(): SyslogTransportOptions = {
+    inline def apply(): SyslogTransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyslogTransportOptions]
     }
     
-    @scala.inline
-    implicit class SyslogTransportOptionsMutableBuilder[Self <: SyslogTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SyslogTransportOptions](x: Self) {
       
-      @scala.inline
-      def setApp_name(value: String): Self = StObject.set(x, "app_name", value.asInstanceOf[js.Any])
+      inline def setApp_name(value: String): Self = StObject.set(x, "app_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp_nameUndefined: Self = StObject.set(x, "app_name", js.undefined)
+      inline def setApp_nameUndefined: Self = StObject.set(x, "app_name", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+      inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+      inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLocalhost(value: String): Self = StObject.set(x, "localhost", value.asInstanceOf[js.Any])
+      inline def setLocalhost(value: String): Self = StObject.set(x, "localhost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalhostUndefined: Self = StObject.set(x, "localhost", js.undefined)
+      inline def setLocalhostUndefined: Self = StObject.set(x, "localhost", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
+      inline def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

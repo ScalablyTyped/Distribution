@@ -25,7 +25,6 @@ object basicShaderLibMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): BasicShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicShaderLib]
+    inline def create(): BasicShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicShaderLib]
   }
 }

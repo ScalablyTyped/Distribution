@@ -28,8 +28,7 @@ trait HeaderFooterSettings
 }
 object HeaderFooterSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsPrintDate: Boolean,
     IsPrintPageName: Boolean,
     IsPrintTime: Boolean,
@@ -49,16 +48,12 @@ object HeaderFooterSettings {
     __obj.asInstanceOf[HeaderFooterSettings]
   }
   
-  @scala.inline
-  implicit class HeaderFooterSettingsMutableBuilder[Self <: HeaderFooterSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderFooterSettings](x: Self) {
     
-    @scala.inline
-    def setIsPrintDate(value: Boolean): Self = StObject.set(x, "IsPrintDate", value.asInstanceOf[js.Any])
+    inline def setIsPrintDate(value: Boolean): Self = StObject.set(x, "IsPrintDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintPageName(value: Boolean): Self = StObject.set(x, "IsPrintPageName", value.asInstanceOf[js.Any])
+    inline def setIsPrintPageName(value: Boolean): Self = StObject.set(x, "IsPrintPageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintTime(value: Boolean): Self = StObject.set(x, "IsPrintTime", value.asInstanceOf[js.Any])
+    inline def setIsPrintTime(value: Boolean): Self = StObject.set(x, "IsPrintTime", value.asInstanceOf[js.Any])
   }
 }

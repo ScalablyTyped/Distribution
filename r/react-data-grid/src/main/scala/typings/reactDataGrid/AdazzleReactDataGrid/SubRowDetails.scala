@@ -39,58 +39,41 @@ trait SubRowDetails[T] extends StObject {
 }
 object SubRowDetails {
   
-  @scala.inline
-  def apply[T](expanded: Boolean, field: String): SubRowDetails[T] = {
+  inline def apply[T](expanded: Boolean, field: String): SubRowDetails[T] = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubRowDetails[T]]
   }
   
-  @scala.inline
-  implicit class SubRowDetailsMutableBuilder[Self <: SubRowDetails[?], T] (val x: Self & SubRowDetails[T]) extends AnyVal {
+  extension [Self <: SubRowDetails[?], T](x: Self & SubRowDetails[T]) {
     
-    @scala.inline
-    def setCanExpand(value: Boolean): Self = StObject.set(x, "canExpand", value.asInstanceOf[js.Any])
+    inline def setCanExpand(value: Boolean): Self = StObject.set(x, "canExpand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanExpandUndefined: Self = StObject.set(x, "canExpand", js.undefined)
+    inline def setCanExpandUndefined: Self = StObject.set(x, "canExpand", js.undefined)
     
-    @scala.inline
-    def setChildren(value: js.Array[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: T*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: T*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setNumberSiblings(value: Double): Self = StObject.set(x, "numberSiblings", value.asInstanceOf[js.Any])
+    inline def setNumberSiblings(value: Double): Self = StObject.set(x, "numberSiblings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberSiblingsUndefined: Self = StObject.set(x, "numberSiblings", js.undefined)
+    inline def setNumberSiblingsUndefined: Self = StObject.set(x, "numberSiblings", js.undefined)
     
-    @scala.inline
-    def setSiblingIndex(value: Double): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
+    inline def setSiblingIndex(value: Double): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
+    inline def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
     
-    @scala.inline
-    def setTreeDepth(value: Double): Self = StObject.set(x, "treeDepth", value.asInstanceOf[js.Any])
+    inline def setTreeDepth(value: Double): Self = StObject.set(x, "treeDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDepthUndefined: Self = StObject.set(x, "treeDepth", js.undefined)
+    inline def setTreeDepthUndefined: Self = StObject.set(x, "treeDepth", js.undefined)
   }
 }

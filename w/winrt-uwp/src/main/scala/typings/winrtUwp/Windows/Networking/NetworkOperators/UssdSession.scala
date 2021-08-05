@@ -20,8 +20,7 @@ trait UssdSession extends StObject {
 }
 object UssdSession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     sendMessageAndGetReplyAsync: UssdMessage => IPromiseWithIAsyncOperation[UssdReply]
   ): UssdSession = {
@@ -29,13 +28,10 @@ object UssdSession {
     __obj.asInstanceOf[UssdSession]
   }
   
-  @scala.inline
-  implicit class UssdSessionMutableBuilder[Self <: UssdSession] (val x: Self) extends AnyVal {
+  extension [Self <: UssdSession](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSendMessageAndGetReplyAsync(value: UssdMessage => IPromiseWithIAsyncOperation[UssdReply]): Self = StObject.set(x, "sendMessageAndGetReplyAsync", js.Any.fromFunction1(value))
+    inline def setSendMessageAndGetReplyAsync(value: UssdMessage => IPromiseWithIAsyncOperation[UssdReply]): Self = StObject.set(x, "sendMessageAndGetReplyAsync", js.Any.fromFunction1(value))
   }
 }

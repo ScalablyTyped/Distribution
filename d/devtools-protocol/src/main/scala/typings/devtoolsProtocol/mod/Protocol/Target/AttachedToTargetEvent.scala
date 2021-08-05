@@ -17,22 +17,17 @@ trait AttachedToTargetEvent extends StObject {
 }
 object AttachedToTargetEvent {
   
-  @scala.inline
-  def apply(sessionId: SessionID, targetInfo: TargetInfo, waitingForDebugger: Boolean): AttachedToTargetEvent = {
+  inline def apply(sessionId: SessionID, targetInfo: TargetInfo, waitingForDebugger: Boolean): AttachedToTargetEvent = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any], targetInfo = targetInfo.asInstanceOf[js.Any], waitingForDebugger = waitingForDebugger.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachedToTargetEvent]
   }
   
-  @scala.inline
-  implicit class AttachedToTargetEventMutableBuilder[Self <: AttachedToTargetEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AttachedToTargetEvent](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetInfo(value: TargetInfo): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
+    inline def setTargetInfo(value: TargetInfo): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingForDebugger(value: Boolean): Self = StObject.set(x, "waitingForDebugger", value.asInstanceOf[js.Any])
+    inline def setWaitingForDebugger(value: Boolean): Self = StObject.set(x, "waitingForDebugger", value.asInstanceOf[js.Any])
   }
 }

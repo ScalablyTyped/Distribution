@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint 
 }
 object ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint,
     request: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions,
     response: OctokitResponse[EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint
     __obj.asInstanceOf[ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

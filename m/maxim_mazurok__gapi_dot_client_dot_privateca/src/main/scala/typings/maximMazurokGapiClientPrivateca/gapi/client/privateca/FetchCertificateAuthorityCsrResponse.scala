@@ -11,19 +11,15 @@ trait FetchCertificateAuthorityCsrResponse extends StObject {
 }
 object FetchCertificateAuthorityCsrResponse {
   
-  @scala.inline
-  def apply(): FetchCertificateAuthorityCsrResponse = {
+  inline def apply(): FetchCertificateAuthorityCsrResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FetchCertificateAuthorityCsrResponse]
   }
   
-  @scala.inline
-  implicit class FetchCertificateAuthorityCsrResponseMutableBuilder[Self <: FetchCertificateAuthorityCsrResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FetchCertificateAuthorityCsrResponse](x: Self) {
     
-    @scala.inline
-    def setPemCsr(value: String): Self = StObject.set(x, "pemCsr", value.asInstanceOf[js.Any])
+    inline def setPemCsr(value: String): Self = StObject.set(x, "pemCsr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemCsrUndefined: Self = StObject.set(x, "pemCsr", js.undefined)
+    inline def setPemCsrUndefined: Self = StObject.set(x, "pemCsr", js.undefined)
   }
 }

@@ -19,28 +19,21 @@ trait Title extends StObject {
 }
 object Title {
   
-  @scala.inline
-  def apply(id: String, left: String | Element, onClick: () => Unit, right: Element, title: String): Title = {
+  inline def apply(id: String, left: String | Element, onClick: () => Unit, right: Element, title: String): Title = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), right = right.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Title]
   }
   
-  @scala.inline
-  implicit class TitleMutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
+  extension [Self <: Title](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: String | Element): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String | Element): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+    inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRight(value: Element): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Element): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

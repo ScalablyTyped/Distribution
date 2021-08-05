@@ -12,9 +12,7 @@ object concatAllMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def concatAll[T](): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[OperatorFunction[ObservableInput[T], T]]
+  inline def concatAll[T](): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[OperatorFunction[ObservableInput[T], T]]
   
-  @scala.inline
-  def concatAll_R[R](): OperatorFunction[js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[OperatorFunction[js.Any, R]]
+  inline def concatAll_R[R](): OperatorFunction[js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[OperatorFunction[js.Any, R]]
 }

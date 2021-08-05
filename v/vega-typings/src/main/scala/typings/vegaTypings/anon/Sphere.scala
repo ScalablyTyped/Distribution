@@ -14,16 +14,13 @@ trait Sphere
 }
 object Sphere {
   
-  @scala.inline
-  def apply(sphere: String | SignalRef): Sphere = {
+  inline def apply(sphere: String | SignalRef): Sphere = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sphere]
   }
   
-  @scala.inline
-  implicit class SphereMutableBuilder[Self <: Sphere] (val x: Self) extends AnyVal {
+  extension [Self <: Sphere](x: Self) {
     
-    @scala.inline
-    def setSphere(value: String | SignalRef): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+    inline def setSphere(value: String | SignalRef): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
   }
 }

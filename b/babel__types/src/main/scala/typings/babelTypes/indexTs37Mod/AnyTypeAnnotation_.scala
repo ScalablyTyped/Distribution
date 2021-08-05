@@ -18,17 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object AnyTypeAnnotation_ {
   
-  @scala.inline
-  def apply(): AnyTypeAnnotation_ = {
+  inline def apply(): AnyTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("AnyTypeAnnotation")
     __obj.asInstanceOf[AnyTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class AnyTypeAnnotation_MutableBuilder[Self <: AnyTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: AnyTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: AnyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AnyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

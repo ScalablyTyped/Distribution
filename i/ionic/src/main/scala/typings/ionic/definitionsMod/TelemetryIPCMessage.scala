@@ -16,20 +16,16 @@ trait TelemetryIPCMessage
 }
 object TelemetryIPCMessage {
   
-  @scala.inline
-  def apply(data: Args): TelemetryIPCMessage = {
+  inline def apply(data: Args): TelemetryIPCMessage = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("telemetry")
     __obj.asInstanceOf[TelemetryIPCMessage]
   }
   
-  @scala.inline
-  implicit class TelemetryIPCMessageMutableBuilder[Self <: TelemetryIPCMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TelemetryIPCMessage](x: Self) {
     
-    @scala.inline
-    def setData(value: Args): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Args): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: telemetry): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: telemetry): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

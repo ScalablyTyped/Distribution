@@ -14,16 +14,13 @@ trait SymbolConstructor extends StObject {
 }
 object SymbolConstructor {
   
-  @scala.inline
-  def apply(toStringTag: js.Symbol): SymbolConstructor = {
+  inline def apply(toStringTag: js.Symbol): SymbolConstructor = {
     val __obj = js.Dynamic.literal(toStringTag = toStringTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolConstructor]
   }
   
-  @scala.inline
-  implicit class SymbolConstructorMutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolConstructor](x: Self) {
     
-    @scala.inline
-    def setToStringTag(value: js.Symbol): Self = StObject.set(x, "toStringTag", value.asInstanceOf[js.Any])
+    inline def setToStringTag(value: js.Symbol): Self = StObject.set(x, "toStringTag", value.asInstanceOf[js.Any])
   }
 }

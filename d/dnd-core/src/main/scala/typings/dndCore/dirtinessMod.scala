@@ -18,8 +18,6 @@ object dirtinessMod {
   @js.native
   val NONE: js.Array[String] = js.native
   
-  @scala.inline
-  def areDirty(dirtyIds: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areDirty")(dirtyIds.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def areDirty(dirtyIds: js.Array[String], handlerIds: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areDirty")(dirtyIds.asInstanceOf[js.Any], handlerIds.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areDirty(dirtyIds: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areDirty")(dirtyIds.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def areDirty(dirtyIds: js.Array[String], handlerIds: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areDirty")(dirtyIds.asInstanceOf[js.Any], handlerIds.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -972,14 +972,12 @@ object mod {
     @JSImport("@elastic/elasticsearch", "Connection.roles")
     @js.native
     def roles: DATA_ = js.native
-    @scala.inline
-    def roles_=(x: DATA_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
+    inline def roles_=(x: DATA_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
     
     @JSImport("@elastic/elasticsearch", "Connection.statuses")
     @js.native
     def statuses: ALIVE = js.native
-    @scala.inline
-    def statuses_=(x: ALIVE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statuses")(x.asInstanceOf[js.Any])
+    inline def statuses_=(x: ALIVE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statuses")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@elastic/elasticsearch", "ConnectionPool")
@@ -1000,20 +998,17 @@ object mod {
       @JSImport("@elastic/elasticsearch", "ConnectionPool.resurrectStrategies.none")
       @js.native
       def none: Double = js.native
-      @scala.inline
-      def none_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+      inline def none_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
       
       @JSImport("@elastic/elasticsearch", "ConnectionPool.resurrectStrategies.optimistic")
       @js.native
       def optimistic: Double = js.native
-      @scala.inline
-      def optimistic_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optimistic")(x.asInstanceOf[js.Any])
+      inline def optimistic_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optimistic")(x.asInstanceOf[js.Any])
       
       @JSImport("@elastic/elasticsearch", "ConnectionPool.resurrectStrategies.ping")
       @js.native
       def ping: Double = js.native
-      @scala.inline
-      def ping_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ping")(x.asInstanceOf[js.Any])
+      inline def ping_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ping")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -1038,8 +1033,7 @@ object mod {
     @JSImport("@elastic/elasticsearch", "Transport.sniffReasons")
     @js.native
     def sniffReasons: DEFAULT = js.native
-    @scala.inline
-    def sniffReasons_=(x: DEFAULT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sniffReasons")(x.asInstanceOf[js.Any])
+    inline def sniffReasons_=(x: DEFAULT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sniffReasons")(x.asInstanceOf[js.Any])
   }
   
   object errors {
@@ -1115,26 +1109,22 @@ object mod {
     @JSImport("@elastic/elasticsearch", "events.REQUEST")
     @js.native
     def REQUEST: String = js.native
-    @scala.inline
-    def REQUEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
+    inline def REQUEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
     
     @JSImport("@elastic/elasticsearch", "events.RESPONSE")
     @js.native
     def RESPONSE: String = js.native
-    @scala.inline
-    def RESPONSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESPONSE")(x.asInstanceOf[js.Any])
+    inline def RESPONSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESPONSE")(x.asInstanceOf[js.Any])
     
     @JSImport("@elastic/elasticsearch", "events.RESURRECT")
     @js.native
     def RESURRECT: String = js.native
-    @scala.inline
-    def RESURRECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESURRECT")(x.asInstanceOf[js.Any])
+    inline def RESURRECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESURRECT")(x.asInstanceOf[js.Any])
     
     @JSImport("@elastic/elasticsearch", "events.SNIFF")
     @js.native
     def SNIFF: String = js.native
-    @scala.inline
-    def SNIFF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNIFF")(x.asInstanceOf[js.Any])
+    inline def SNIFF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNIFF")(x.asInstanceOf[js.Any])
   }
   
   // Extend API
@@ -1214,204 +1204,141 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: AgentOptions | agentFn | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: AgentOptions | agentFn | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentFunction1(value: /* opts */ ConnectionOptions => js.Any): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
+      inline def setAgentFunction1(value: /* opts */ ConnectionOptions => js.Any): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setAuth(value: BasicAuth | ApiKeyAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: BasicAuth | ApiKeyAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setCloud(value: Id): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
+      inline def setCloud(value: Id): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudUndefined: Self = StObject.set(x, "cloud", js.undefined)
+      inline def setCloudUndefined: Self = StObject.set(x, "cloud", js.undefined)
       
-      @scala.inline
-      def setCompression(value: gzip): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: gzip): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setConnection(value: TypeofConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: TypeofConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPool(
+      inline def setConnectionPool(
         value: (Instantiable1[
               /* opts */ js.UndefOr[ConnectionPoolOptions], 
               typings.elasticElasticsearch.poolMod.ConnectionPool
             ]) & TypeofConnectionPool
       ): Self = StObject.set(x, "ConnectionPool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPoolUndefined: Self = StObject.set(x, "ConnectionPool", js.undefined)
+      inline def setConnectionPoolUndefined: Self = StObject.set(x, "ConnectionPool", js.undefined)
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextNull: Self = StObject.set(x, "context", null)
+      inline def setContextNull: Self = StObject.set(x, "context", null)
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setGenerateRequestId(value: (/* params */ TransportRequestParams, /* options */ TransportRequestOptions) => js.Any): Self = StObject.set(x, "generateRequestId", js.Any.fromFunction2(value))
+      inline def setGenerateRequestId(value: (/* params */ TransportRequestParams, /* options */ TransportRequestOptions) => js.Any): Self = StObject.set(x, "generateRequestId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateRequestIdUndefined: Self = StObject.set(x, "generateRequestId", js.undefined)
+      inline def setGenerateRequestIdUndefined: Self = StObject.set(x, "generateRequestId", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setName(value: String | js.Symbol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | js.Symbol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNode(value: String | (js.Array[NodeOptions | String]) | NodeOptions): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: String | (js.Array[NodeOptions | String]) | NodeOptions): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeFilter(value: /* connection */ typings.elasticElasticsearch.connectionMod.default => Boolean): Self = StObject.set(x, "nodeFilter", js.Any.fromFunction1(value))
+      inline def setNodeFilter(value: /* connection */ typings.elasticElasticsearch.connectionMod.default => Boolean): Self = StObject.set(x, "nodeFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNodeFilterUndefined: Self = StObject.set(x, "nodeFilter", js.undefined)
+      inline def setNodeFilterUndefined: Self = StObject.set(x, "nodeFilter", js.undefined)
       
-      @scala.inline
-      def setNodeSelector(value: nodeSelectorFn | String): Self = StObject.set(x, "nodeSelector", value.asInstanceOf[js.Any])
+      inline def setNodeSelector(value: nodeSelectorFn | String): Self = StObject.set(x, "nodeSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeSelectorFunction1(
+      inline def setNodeSelectorFunction1(
         value: /* connections */ js.Array[typings.elasticElasticsearch.connectionMod.default] => typings.elasticElasticsearch.connectionMod.default
       ): Self = StObject.set(x, "nodeSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNodeSelectorUndefined: Self = StObject.set(x, "nodeSelector", js.undefined)
+      inline def setNodeSelectorUndefined: Self = StObject.set(x, "nodeSelector", js.undefined)
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setNodeVarargs(value: (NodeOptions | String)*): Self = StObject.set(x, "node", js.Array(value :_*))
+      inline def setNodeVarargs(value: (NodeOptions | String)*): Self = StObject.set(x, "node", js.Array(value :_*))
       
-      @scala.inline
-      def setNodes(value: String | (js.Array[NodeOptions | String]) | NodeOptions): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: String | (js.Array[NodeOptions | String]) | NodeOptions): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      @scala.inline
-      def setNodesVarargs(value: (NodeOptions | String)*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: (NodeOptions | String)*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setOpaqueIdPrefix(value: String): Self = StObject.set(x, "opaqueIdPrefix", value.asInstanceOf[js.Any])
+      inline def setOpaqueIdPrefix(value: String): Self = StObject.set(x, "opaqueIdPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpaqueIdPrefixUndefined: Self = StObject.set(x, "opaqueIdPrefix", js.undefined)
+      inline def setOpaqueIdPrefixUndefined: Self = StObject.set(x, "opaqueIdPrefix", js.undefined)
       
-      @scala.inline
-      def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
+      inline def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
+      inline def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
       
-      @scala.inline
-      def setResurrectStrategy(value: ping | optimistic | none): Self = StObject.set(x, "resurrectStrategy", value.asInstanceOf[js.Any])
+      inline def setResurrectStrategy(value: ping | optimistic | none): Self = StObject.set(x, "resurrectStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResurrectStrategyUndefined: Self = StObject.set(x, "resurrectStrategy", js.undefined)
+      inline def setResurrectStrategyUndefined: Self = StObject.set(x, "resurrectStrategy", js.undefined)
       
-      @scala.inline
-      def setSerializer(value: Instantiable0[typings.elasticElasticsearch.serializerMod.default]): Self = StObject.set(x, "Serializer", value.asInstanceOf[js.Any])
+      inline def setSerializer(value: Instantiable0[typings.elasticElasticsearch.serializerMod.default]): Self = StObject.set(x, "Serializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializerUndefined: Self = StObject.set(x, "Serializer", js.undefined)
+      inline def setSerializerUndefined: Self = StObject.set(x, "Serializer", js.undefined)
       
-      @scala.inline
-      def setSniffEndpoint(value: String): Self = StObject.set(x, "sniffEndpoint", value.asInstanceOf[js.Any])
+      inline def setSniffEndpoint(value: String): Self = StObject.set(x, "sniffEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSniffEndpointUndefined: Self = StObject.set(x, "sniffEndpoint", js.undefined)
+      inline def setSniffEndpointUndefined: Self = StObject.set(x, "sniffEndpoint", js.undefined)
       
-      @scala.inline
-      def setSniffInterval(value: Double | Boolean): Self = StObject.set(x, "sniffInterval", value.asInstanceOf[js.Any])
+      inline def setSniffInterval(value: Double | Boolean): Self = StObject.set(x, "sniffInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSniffIntervalUndefined: Self = StObject.set(x, "sniffInterval", js.undefined)
+      inline def setSniffIntervalUndefined: Self = StObject.set(x, "sniffInterval", js.undefined)
       
-      @scala.inline
-      def setSniffOnConnectionFault(value: Boolean): Self = StObject.set(x, "sniffOnConnectionFault", value.asInstanceOf[js.Any])
+      inline def setSniffOnConnectionFault(value: Boolean): Self = StObject.set(x, "sniffOnConnectionFault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSniffOnConnectionFaultUndefined: Self = StObject.set(x, "sniffOnConnectionFault", js.undefined)
+      inline def setSniffOnConnectionFaultUndefined: Self = StObject.set(x, "sniffOnConnectionFault", js.undefined)
       
-      @scala.inline
-      def setSniffOnStart(value: Boolean): Self = StObject.set(x, "sniffOnStart", value.asInstanceOf[js.Any])
+      inline def setSniffOnStart(value: Boolean): Self = StObject.set(x, "sniffOnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSniffOnStartUndefined: Self = StObject.set(x, "sniffOnStart", js.undefined)
+      inline def setSniffOnStartUndefined: Self = StObject.set(x, "sniffOnStart", js.undefined)
       
-      @scala.inline
-      def setSsl(value: typings.node.tlsMod.ConnectionOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: typings.node.tlsMod.ConnectionOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
-      @scala.inline
-      def setSuggestCompression(value: Boolean): Self = StObject.set(x, "suggestCompression", value.asInstanceOf[js.Any])
+      inline def setSuggestCompression(value: Boolean): Self = StObject.set(x, "suggestCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestCompressionUndefined: Self = StObject.set(x, "suggestCompression", js.undefined)
+      inline def setSuggestCompressionUndefined: Self = StObject.set(x, "suggestCompression", js.undefined)
       
-      @scala.inline
-      def setTransport(value: TypeofTransport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: TypeofTransport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "Transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "Transport", js.undefined)
     }
   }
   
@@ -1432,47 +1359,34 @@ object mod {
   }
   object NodeOptions {
     
-    @scala.inline
-    def apply(url: URL_): NodeOptions = {
+    inline def apply(url: URL_): NodeOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeOptions]
     }
     
-    @scala.inline
-    implicit class NodeOptionsMutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NodeOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: AgentOptions): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: AgentOptions): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setRoles(value: Data): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: Data): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
       
-      @scala.inline
-      def setSsl(value: typings.node.tlsMod.ConnectionOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: typings.node.tlsMod.ConnectionOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
-      @scala.inline
-      def setUrl(value: URL_): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: URL_): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

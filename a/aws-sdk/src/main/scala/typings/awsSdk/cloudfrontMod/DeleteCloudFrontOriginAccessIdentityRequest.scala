@@ -18,22 +18,17 @@ trait DeleteCloudFrontOriginAccessIdentityRequest extends StObject {
 }
 object DeleteCloudFrontOriginAccessIdentityRequest {
   
-  @scala.inline
-  def apply(Id: String): DeleteCloudFrontOriginAccessIdentityRequest = {
+  inline def apply(Id: String): DeleteCloudFrontOriginAccessIdentityRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCloudFrontOriginAccessIdentityRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCloudFrontOriginAccessIdentityRequestMutableBuilder[Self <: DeleteCloudFrontOriginAccessIdentityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCloudFrontOriginAccessIdentityRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

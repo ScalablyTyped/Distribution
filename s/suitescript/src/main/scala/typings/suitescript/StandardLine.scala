@@ -26,8 +26,7 @@ trait StandardLine extends StObject {
 }
 object StandardLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEntityId: () => Double,
     getId: () => Double,
     getSubsidiaryId: () => Double,
@@ -42,34 +41,24 @@ object StandardLine {
     __obj.asInstanceOf[StandardLine]
   }
   
-  @scala.inline
-  implicit class StandardLineMutableBuilder[Self <: StandardLine] (val x: Self) extends AnyVal {
+  extension [Self <: StandardLine](x: Self) {
     
-    @scala.inline
-    def setGetEntityId(value: () => Double): Self = StObject.set(x, "getEntityId", js.Any.fromFunction0(value))
+    inline def setGetEntityId(value: () => Double): Self = StObject.set(x, "getEntityId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubsidiaryId(value: () => Double): Self = StObject.set(x, "getSubsidiaryId", js.Any.fromFunction0(value))
+    inline def setGetSubsidiaryId(value: () => Double): Self = StObject.set(x, "getSubsidiaryId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTaxAmount(value: () => String): Self = StObject.set(x, "getTaxAmount", js.Any.fromFunction0(value))
+    inline def setGetTaxAmount(value: () => String): Self = StObject.set(x, "getTaxAmount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTaxItemId(value: () => Double): Self = StObject.set(x, "getTaxItemId", js.Any.fromFunction0(value))
+    inline def setGetTaxItemId(value: () => Double): Self = StObject.set(x, "getTaxItemId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTaxType(value: () => String): Self = StObject.set(x, "getTaxType", js.Any.fromFunction0(value))
+    inline def setGetTaxType(value: () => String): Self = StObject.set(x, "getTaxType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTaxableAmount(value: () => String): Self = StObject.set(x, "getTaxableAmount", js.Any.fromFunction0(value))
+    inline def setGetTaxableAmount(value: () => String): Self = StObject.set(x, "getTaxableAmount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPosting(value: () => Boolean): Self = StObject.set(x, "isPosting", js.Any.fromFunction0(value))
+    inline def setIsPosting(value: () => Boolean): Self = StObject.set(x, "isPosting", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTaxable(value: () => Boolean): Self = StObject.set(x, "isTaxable", js.Any.fromFunction0(value))
+    inline def setIsTaxable(value: () => Boolean): Self = StObject.set(x, "isTaxable", js.Any.fromFunction0(value))
   }
 }

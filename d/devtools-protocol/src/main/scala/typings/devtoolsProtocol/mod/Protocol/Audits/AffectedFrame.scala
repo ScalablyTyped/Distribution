@@ -11,16 +11,13 @@ trait AffectedFrame extends StObject {
 }
 object AffectedFrame {
   
-  @scala.inline
-  def apply(frameId: FrameId): AffectedFrame = {
+  inline def apply(frameId: FrameId): AffectedFrame = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AffectedFrame]
   }
   
-  @scala.inline
-  implicit class AffectedFrameMutableBuilder[Self <: AffectedFrame] (val x: Self) extends AnyVal {
+  extension [Self <: AffectedFrame](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }
 }

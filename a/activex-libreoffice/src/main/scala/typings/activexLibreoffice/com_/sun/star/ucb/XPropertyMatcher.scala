@@ -24,8 +24,7 @@ trait XPropertyMatcher
 }
 object XPropertyMatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     matches: (XCommandProcessor, XCommandEnvironment) => Boolean,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XPropertyMatcher {
     __obj.asInstanceOf[XPropertyMatcher]
   }
   
-  @scala.inline
-  implicit class XPropertyMatcherMutableBuilder[Self <: XPropertyMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyMatcher](x: Self) {
     
-    @scala.inline
-    def setMatches(value: (XCommandProcessor, XCommandEnvironment) => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction2(value))
+    inline def setMatches(value: (XCommandProcessor, XCommandEnvironment) => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction2(value))
   }
 }

@@ -17,8 +17,7 @@ trait StreamedFileDataRequest
 }
 object StreamedFileDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     dispose: () => Unit,
     failAndClose: StreamedFileFailureMode => Unit,
@@ -29,10 +28,8 @@ object StreamedFileDataRequest {
     __obj.asInstanceOf[StreamedFileDataRequest]
   }
   
-  @scala.inline
-  implicit class StreamedFileDataRequestMutableBuilder[Self <: StreamedFileDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StreamedFileDataRequest](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

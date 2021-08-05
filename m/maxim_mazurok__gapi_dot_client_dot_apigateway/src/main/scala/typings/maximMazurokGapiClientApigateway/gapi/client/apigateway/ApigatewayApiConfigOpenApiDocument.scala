@@ -11,19 +11,15 @@ trait ApigatewayApiConfigOpenApiDocument extends StObject {
 }
 object ApigatewayApiConfigOpenApiDocument {
   
-  @scala.inline
-  def apply(): ApigatewayApiConfigOpenApiDocument = {
+  inline def apply(): ApigatewayApiConfigOpenApiDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayApiConfigOpenApiDocument]
   }
   
-  @scala.inline
-  implicit class ApigatewayApiConfigOpenApiDocumentMutableBuilder[Self <: ApigatewayApiConfigOpenApiDocument] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayApiConfigOpenApiDocument](x: Self) {
     
-    @scala.inline
-    def setDocument(value: ApigatewayApiConfigFile): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: ApigatewayApiConfigFile): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
   }
 }

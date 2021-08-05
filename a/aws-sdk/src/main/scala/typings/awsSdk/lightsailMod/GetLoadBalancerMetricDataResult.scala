@@ -18,28 +18,21 @@ trait GetLoadBalancerMetricDataResult extends StObject {
 }
 object GetLoadBalancerMetricDataResult {
   
-  @scala.inline
-  def apply(): GetLoadBalancerMetricDataResult = {
+  inline def apply(): GetLoadBalancerMetricDataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLoadBalancerMetricDataResult]
   }
   
-  @scala.inline
-  implicit class GetLoadBalancerMetricDataResultMutableBuilder[Self <: GetLoadBalancerMetricDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoadBalancerMetricDataResult](x: Self) {
     
-    @scala.inline
-    def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
+    inline def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
+    inline def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
     
-    @scala.inline
-    def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
+    inline def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: LoadBalancerMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: LoadBalancerMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
   }
 }

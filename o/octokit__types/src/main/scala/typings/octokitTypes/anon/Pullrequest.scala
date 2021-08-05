@@ -12,19 +12,15 @@ trait Pullrequest extends StObject {
 }
 object Pullrequest {
   
-  @scala.inline
-  def apply(html: HrefString, pull_request: HrefString): Pullrequest = {
+  inline def apply(html: HrefString, pull_request: HrefString): Pullrequest = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], pull_request = pull_request.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pullrequest]
   }
   
-  @scala.inline
-  implicit class PullrequestMutableBuilder[Self <: Pullrequest] (val x: Self) extends AnyVal {
+  extension [Self <: Pullrequest](x: Self) {
     
-    @scala.inline
-    def setHtml(value: HrefString): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: HrefString): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull_request(value: HrefString): Self = StObject.set(x, "pull_request", value.asInstanceOf[js.Any])
+    inline def setPull_request(value: HrefString): Self = StObject.set(x, "pull_request", value.asInstanceOf[js.Any])
   }
 }

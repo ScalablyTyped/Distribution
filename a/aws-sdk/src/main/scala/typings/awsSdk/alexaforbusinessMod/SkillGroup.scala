@@ -23,31 +23,23 @@ trait SkillGroup extends StObject {
 }
 object SkillGroup {
   
-  @scala.inline
-  def apply(): SkillGroup = {
+  inline def apply(): SkillGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SkillGroup]
   }
   
-  @scala.inline
-  implicit class SkillGroupMutableBuilder[Self <: SkillGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SkillGroup](x: Self) {
     
-    @scala.inline
-    def setDescription(value: SkillGroupDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: SkillGroupDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
+    inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
+    inline def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
     
-    @scala.inline
-    def setSkillGroupName(value: SkillGroupName): Self = StObject.set(x, "SkillGroupName", value.asInstanceOf[js.Any])
+    inline def setSkillGroupName(value: SkillGroupName): Self = StObject.set(x, "SkillGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupNameUndefined: Self = StObject.set(x, "SkillGroupName", js.undefined)
+    inline def setSkillGroupNameUndefined: Self = StObject.set(x, "SkillGroupName", js.undefined)
   }
 }

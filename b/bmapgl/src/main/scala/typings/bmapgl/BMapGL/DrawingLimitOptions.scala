@@ -12,25 +12,19 @@ trait DrawingLimitOptions extends StObject {
 }
 object DrawingLimitOptions {
   
-  @scala.inline
-  def apply(): DrawingLimitOptions = {
+  inline def apply(): DrawingLimitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrawingLimitOptions]
   }
   
-  @scala.inline
-  implicit class DrawingLimitOptionsMutableBuilder[Self <: DrawingLimitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DrawingLimitOptions](x: Self) {
     
-    @scala.inline
-    def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
   }
 }

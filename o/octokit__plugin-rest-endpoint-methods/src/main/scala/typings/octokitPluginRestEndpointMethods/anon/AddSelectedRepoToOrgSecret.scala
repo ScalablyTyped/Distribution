@@ -1419,8 +1419,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
 }
 object AddSelectedRepoToOrgSecret {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSelectedRepoToOrgSecret: Call,
     cancelWorkflowRun: Defaults,
     createOrUpdateOrgSecret: Endpoint,
@@ -1473,148 +1472,100 @@ object AddSelectedRepoToOrgSecret {
     __obj.asInstanceOf[AddSelectedRepoToOrgSecret]
   }
   
-  @scala.inline
-  implicit class AddSelectedRepoToOrgSecretMutableBuilder[Self <: AddSelectedRepoToOrgSecret] (val x: Self) extends AnyVal {
+  extension [Self <: AddSelectedRepoToOrgSecret](x: Self) {
     
-    @scala.inline
-    def setAddSelectedRepoToOrgSecret(value: Call): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
+    inline def setAddSelectedRepoToOrgSecret(value: Call): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelWorkflowRun(value: Defaults): Self = StObject.set(x, "cancelWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setCancelWorkflowRun(value: Defaults): Self = StObject.set(x, "cancelWorkflowRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateOrUpdateOrgSecret(value: Endpoint): Self = StObject.set(x, "createOrUpdateOrgSecret", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateOrgSecret(value: Endpoint): Self = StObject.set(x, "createOrUpdateOrgSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateOrUpdateRepoSecret(value: CallDefaults): Self = StObject.set(x, "createOrUpdateRepoSecret", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateRepoSecret(value: CallDefaults): Self = StObject.set(x, "createOrUpdateRepoSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateRegistrationTokenForOrg(value: DefaultsEndpoint): Self = StObject.set(x, "createRegistrationTokenForOrg", value.asInstanceOf[js.Any])
+    inline def setCreateRegistrationTokenForOrg(value: DefaultsEndpoint): Self = StObject.set(x, "createRegistrationTokenForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateRegistrationTokenForRepo(value: CallDefaultsEndpoint): Self = StObject.set(x, "createRegistrationTokenForRepo", value.asInstanceOf[js.Any])
+    inline def setCreateRegistrationTokenForRepo(value: CallDefaultsEndpoint): Self = StObject.set(x, "createRegistrationTokenForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateRemoveTokenForOrg(value: CallParams): Self = StObject.set(x, "createRemoveTokenForOrg", value.asInstanceOf[js.Any])
+    inline def setCreateRemoveTokenForOrg(value: CallParams): Self = StObject.set(x, "createRemoveTokenForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateRemoveTokenForRepo(value: EndpointEndpointInterface): Self = StObject.set(x, "createRemoveTokenForRepo", value.asInstanceOf[js.Any])
+    inline def setCreateRemoveTokenForRepo(value: EndpointEndpointInterface): Self = StObject.set(x, "createRemoveTokenForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateWorkflowDispatch(value: CallParamsDefaults): Self = StObject.set(x, "createWorkflowDispatch", value.asInstanceOf[js.Any])
+    inline def setCreateWorkflowDispatch(value: CallParamsDefaults): Self = StObject.set(x, "createWorkflowDispatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteArtifact(value: DefaultsEndpointEndpointInterface): Self = StObject.set(x, "deleteArtifact", value.asInstanceOf[js.Any])
+    inline def setDeleteArtifact(value: DefaultsEndpointEndpointInterface): Self = StObject.set(x, "deleteArtifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOrgSecret(value: CallParamsDefaultsEndpointEndpointInterface): Self = StObject.set(x, "deleteOrgSecret", value.asInstanceOf[js.Any])
+    inline def setDeleteOrgSecret(value: CallParamsDefaultsEndpointEndpointInterface): Self = StObject.set(x, "deleteOrgSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRepoSecret(value: `0`): Self = StObject.set(x, "deleteRepoSecret", value.asInstanceOf[js.Any])
+    inline def setDeleteRepoSecret(value: `0`): Self = StObject.set(x, "deleteRepoSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteSelfHostedRunnerFromOrg(value: `1`): Self = StObject.set(x, "deleteSelfHostedRunnerFromOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteSelfHostedRunnerFromOrg(value: `1`): Self = StObject.set(x, "deleteSelfHostedRunnerFromOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteSelfHostedRunnerFromRepo(value: `2`): Self = StObject.set(x, "deleteSelfHostedRunnerFromRepo", value.asInstanceOf[js.Any])
+    inline def setDeleteSelfHostedRunnerFromRepo(value: `2`): Self = StObject.set(x, "deleteSelfHostedRunnerFromRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteWorkflowRun(value: `3`): Self = StObject.set(x, "deleteWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setDeleteWorkflowRun(value: `3`): Self = StObject.set(x, "deleteWorkflowRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteWorkflowRunLogs(value: `4`): Self = StObject.set(x, "deleteWorkflowRunLogs", value.asInstanceOf[js.Any])
+    inline def setDeleteWorkflowRunLogs(value: `4`): Self = StObject.set(x, "deleteWorkflowRunLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadArtifact(value: `5`): Self = StObject.set(x, "downloadArtifact", value.asInstanceOf[js.Any])
+    inline def setDownloadArtifact(value: `5`): Self = StObject.set(x, "downloadArtifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadJobLogsForWorkflowRun(value: `6`): Self = StObject.set(x, "downloadJobLogsForWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setDownloadJobLogsForWorkflowRun(value: `6`): Self = StObject.set(x, "downloadJobLogsForWorkflowRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadWorkflowRunLogs(value: `7`): Self = StObject.set(x, "downloadWorkflowRunLogs", value.asInstanceOf[js.Any])
+    inline def setDownloadWorkflowRunLogs(value: `7`): Self = StObject.set(x, "downloadWorkflowRunLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetArtifact(value: `8`): Self = StObject.set(x, "getArtifact", value.asInstanceOf[js.Any])
+    inline def setGetArtifact(value: `8`): Self = StObject.set(x, "getArtifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetJobForWorkflowRun(value: `9`): Self = StObject.set(x, "getJobForWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setGetJobForWorkflowRun(value: `9`): Self = StObject.set(x, "getJobForWorkflowRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOrgPublicKey(value: `10`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetOrgPublicKey(value: `10`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOrgSecret(value: `11`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
+    inline def setGetOrgSecret(value: `11`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRepoPublicKey(value: `12`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetRepoPublicKey(value: `12`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRepoSecret(value: `13`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
+    inline def setGetRepoSecret(value: `13`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSelfHostedRunnerForOrg(value: `14`): Self = StObject.set(x, "getSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
+    inline def setGetSelfHostedRunnerForOrg(value: `14`): Self = StObject.set(x, "getSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSelfHostedRunnerForRepo(value: `15`): Self = StObject.set(x, "getSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
+    inline def setGetSelfHostedRunnerForRepo(value: `15`): Self = StObject.set(x, "getSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWorkflow(value: `16`): Self = StObject.set(x, "getWorkflow", value.asInstanceOf[js.Any])
+    inline def setGetWorkflow(value: `16`): Self = StObject.set(x, "getWorkflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWorkflowRun(value: `17`): Self = StObject.set(x, "getWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowRun(value: `17`): Self = StObject.set(x, "getWorkflowRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWorkflowRunUsage(value: `18`): Self = StObject.set(x, "getWorkflowRunUsage", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowRunUsage(value: `18`): Self = StObject.set(x, "getWorkflowRunUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWorkflowUsage(value: `19`): Self = StObject.set(x, "getWorkflowUsage", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowUsage(value: `19`): Self = StObject.set(x, "getWorkflowUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListArtifactsForRepo(value: `20`): Self = StObject.set(x, "listArtifactsForRepo", value.asInstanceOf[js.Any])
+    inline def setListArtifactsForRepo(value: `20`): Self = StObject.set(x, "listArtifactsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListJobsForWorkflowRun(value: `21`): Self = StObject.set(x, "listJobsForWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setListJobsForWorkflowRun(value: `21`): Self = StObject.set(x, "listJobsForWorkflowRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListOrgSecrets(value: `22`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
+    inline def setListOrgSecrets(value: `22`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListRepoSecrets(value: `23`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
+    inline def setListRepoSecrets(value: `23`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListRepoWorkflows(value: `24`): Self = StObject.set(x, "listRepoWorkflows", value.asInstanceOf[js.Any])
+    inline def setListRepoWorkflows(value: `24`): Self = StObject.set(x, "listRepoWorkflows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListRunnerApplicationsForOrg(value: `25`): Self = StObject.set(x, "listRunnerApplicationsForOrg", value.asInstanceOf[js.Any])
+    inline def setListRunnerApplicationsForOrg(value: `25`): Self = StObject.set(x, "listRunnerApplicationsForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListRunnerApplicationsForRepo(value: `26`): Self = StObject.set(x, "listRunnerApplicationsForRepo", value.asInstanceOf[js.Any])
+    inline def setListRunnerApplicationsForRepo(value: `26`): Self = StObject.set(x, "listRunnerApplicationsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSelectedReposForOrgSecret(value: `27`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setListSelectedReposForOrgSecret(value: `27`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSelfHostedRunnersForOrg(value: `28`): Self = StObject.set(x, "listSelfHostedRunnersForOrg", value.asInstanceOf[js.Any])
+    inline def setListSelfHostedRunnersForOrg(value: `28`): Self = StObject.set(x, "listSelfHostedRunnersForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSelfHostedRunnersForRepo(value: `29`): Self = StObject.set(x, "listSelfHostedRunnersForRepo", value.asInstanceOf[js.Any])
+    inline def setListSelfHostedRunnersForRepo(value: `29`): Self = StObject.set(x, "listSelfHostedRunnersForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListWorkflowRunArtifacts(value: `30`): Self = StObject.set(x, "listWorkflowRunArtifacts", value.asInstanceOf[js.Any])
+    inline def setListWorkflowRunArtifacts(value: `30`): Self = StObject.set(x, "listWorkflowRunArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListWorkflowRuns(value: `31`): Self = StObject.set(x, "listWorkflowRuns", value.asInstanceOf[js.Any])
+    inline def setListWorkflowRuns(value: `31`): Self = StObject.set(x, "listWorkflowRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListWorkflowRunsForRepo(value: `32`): Self = StObject.set(x, "listWorkflowRunsForRepo", value.asInstanceOf[js.Any])
+    inline def setListWorkflowRunsForRepo(value: `32`): Self = StObject.set(x, "listWorkflowRunsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReRunWorkflow(value: `33`): Self = StObject.set(x, "reRunWorkflow", value.asInstanceOf[js.Any])
+    inline def setReRunWorkflow(value: `33`): Self = StObject.set(x, "reRunWorkflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveSelectedRepoFromOrgSecret(value: `34`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
+    inline def setRemoveSelectedRepoFromOrgSecret(value: `34`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSelectedReposForOrgSecret(value: `35`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setSetSelectedReposForOrgSecret(value: `35`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait ComputationDescriptor[T /* <: Ractive[T] */] extends StObject {
 }
 object ComputationDescriptor {
   
-  @scala.inline
-  def apply[T /* <: Ractive[T] */](get: ComputationFn[T]): ComputationDescriptor[T] = {
+  inline def apply[T /* <: Ractive[T] */](get: ComputationFn[T]): ComputationDescriptor[T] = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputationDescriptor[T]]
   }
   
-  @scala.inline
-  implicit class ComputationDescriptorMutableBuilder[Self <: ComputationDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ComputationDescriptor[T]) extends AnyVal {
+  extension [Self <: ComputationDescriptor[?], T /* <: Ractive[T] */](x: Self & ComputationDescriptor[T]) {
     
-    @scala.inline
-    def setGet(value: ComputationFn[T]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ComputationFn[T]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: /* value */ js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: /* value */ js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

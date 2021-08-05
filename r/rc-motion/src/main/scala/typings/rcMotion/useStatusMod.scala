@@ -15,8 +15,7 @@ object useStatusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     supportMotion: Boolean,
     visible: Boolean,
     getElement: js.Function0[HTMLElement],

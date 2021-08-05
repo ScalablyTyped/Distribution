@@ -15,31 +15,23 @@ trait FullRequest extends StObject {
 }
 object FullRequest {
   
-  @scala.inline
-  def apply(): FullRequest = {
+  inline def apply(): FullRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FullRequest]
   }
   
-  @scala.inline
-  implicit class FullRequestMutableBuilder[Self <: FullRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FullRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def `setJob-attributes-tag`(value: JobTemplateAttributes): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setJob-attributes-tag`(value: JobTemplateAttributes): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-attributes-tagUndefined`: Self = StObject.set(x, "job-attributes-tag", js.undefined)
+    inline def `setJob-attributes-tagUndefined`: Self = StObject.set(x, "job-attributes-tag", js.undefined)
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: OperationAttributes): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: OperationAttributes): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOperation-attributes-tagUndefined`: Self = StObject.set(x, "operation-attributes-tag", js.undefined)
+    inline def `setOperation-attributes-tagUndefined`: Self = StObject.set(x, "operation-attributes-tag", js.undefined)
   }
 }

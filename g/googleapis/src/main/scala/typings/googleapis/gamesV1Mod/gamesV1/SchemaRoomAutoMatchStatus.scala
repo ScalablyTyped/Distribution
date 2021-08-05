@@ -24,25 +24,19 @@ trait SchemaRoomAutoMatchStatus extends StObject {
 }
 object SchemaRoomAutoMatchStatus {
   
-  @scala.inline
-  def apply(): SchemaRoomAutoMatchStatus = {
+  inline def apply(): SchemaRoomAutoMatchStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoomAutoMatchStatus]
   }
   
-  @scala.inline
-  implicit class SchemaRoomAutoMatchStatusMutableBuilder[Self <: SchemaRoomAutoMatchStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoomAutoMatchStatus](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setWaitEstimateSeconds(value: Double): Self = StObject.set(x, "waitEstimateSeconds", value.asInstanceOf[js.Any])
+    inline def setWaitEstimateSeconds(value: Double): Self = StObject.set(x, "waitEstimateSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitEstimateSecondsUndefined: Self = StObject.set(x, "waitEstimateSeconds", js.undefined)
+    inline def setWaitEstimateSecondsUndefined: Self = StObject.set(x, "waitEstimateSeconds", js.undefined)
   }
 }

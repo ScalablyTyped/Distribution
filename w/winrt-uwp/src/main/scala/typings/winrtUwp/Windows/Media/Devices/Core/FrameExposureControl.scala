@@ -15,19 +15,15 @@ trait FrameExposureControl extends StObject {
 }
 object FrameExposureControl {
   
-  @scala.inline
-  def apply(auto: Boolean, value: Double): FrameExposureControl = {
+  inline def apply(auto: Boolean, value: Double): FrameExposureControl = {
     val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameExposureControl]
   }
   
-  @scala.inline
-  implicit class FrameExposureControlMutableBuilder[Self <: FrameExposureControl] (val x: Self) extends AnyVal {
+  extension [Self <: FrameExposureControl](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

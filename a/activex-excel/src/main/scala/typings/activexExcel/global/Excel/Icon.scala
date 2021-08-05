@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Icon")
 @js.native
-class Icon protected ()
+/* private */ class Icon ()
   extends StObject
      with typings.activexExcel.Excel.Icon {
   
@@ -18,7 +18,7 @@ class Icon protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Icon_typekey")
   var ExcelDotIcon_typekey: typings.activexExcel.Excel.Icon = js.native
   

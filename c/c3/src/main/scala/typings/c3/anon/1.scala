@@ -12,16 +12,13 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(format: StringDictionary[Boolean | FormatFunction]): `1` = {
+  inline def apply(format: StringDictionary[Boolean | FormatFunction]): `1` = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def setFormat(value: StringDictionary[Boolean | FormatFunction]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: StringDictionary[Boolean | FormatFunction]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

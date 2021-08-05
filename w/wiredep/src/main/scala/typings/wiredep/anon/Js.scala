@@ -21,20 +21,16 @@ trait Js extends StObject {
 }
 object Js {
   
-  @scala.inline
-  def apply(css: String, js_ : String): Js = {
+  inline def apply(css: String, js_ : String): Js = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any])
     __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Js]
   }
   
-  @scala.inline
-  implicit class JsMutableBuilder[Self <: Js] (val x: Self) extends AnyVal {
+  extension [Self <: Js](x: Self) {
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJs_(value: String): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+    inline def setJs_(value: String): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
   }
 }

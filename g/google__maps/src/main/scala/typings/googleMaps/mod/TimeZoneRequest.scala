@@ -29,28 +29,21 @@ trait TimeZoneRequest extends StObject {
 }
 object TimeZoneRequest {
   
-  @scala.inline
-  def apply(location: LatLng): TimeZoneRequest = {
+  inline def apply(location: LatLng): TimeZoneRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZoneRequest]
   }
   
-  @scala.inline
-  implicit class TimeZoneRequestMutableBuilder[Self <: TimeZoneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TimeZoneRequest](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

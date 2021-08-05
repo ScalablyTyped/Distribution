@@ -20,26 +20,20 @@ object typesPartListElementMod {
   }
   object PartListElement {
     
-    @scala.inline
-    def apply(): PartListElement = {
+    inline def apply(): PartListElement = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartListElement]
     }
     
-    @scala.inline
-    implicit class PartListElementMutableBuilder[Self <: PartListElement] (val x: Self) extends AnyVal {
+    extension [Self <: PartListElement](x: Self) {
       
-      @scala.inline
-      def setRangeInBytes(value: String): Self = StObject.set(x, "RangeInBytes", value.asInstanceOf[js.Any])
+      inline def setRangeInBytes(value: String): Self = StObject.set(x, "RangeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeInBytesUndefined: Self = StObject.set(x, "RangeInBytes", js.undefined)
+      inline def setRangeInBytesUndefined: Self = StObject.set(x, "RangeInBytes", js.undefined)
       
-      @scala.inline
-      def setSHA256TreeHash(value: String): Self = StObject.set(x, "SHA256TreeHash", value.asInstanceOf[js.Any])
+      inline def setSHA256TreeHash(value: String): Self = StObject.set(x, "SHA256TreeHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHA256TreeHashUndefined: Self = StObject.set(x, "SHA256TreeHash", js.undefined)
+      inline def setSHA256TreeHashUndefined: Self = StObject.set(x, "SHA256TreeHash", js.undefined)
     }
   }
   

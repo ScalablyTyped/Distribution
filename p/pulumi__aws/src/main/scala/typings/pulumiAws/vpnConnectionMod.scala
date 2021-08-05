@@ -162,21 +162,16 @@ object vpnConnectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpnConnectionState): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpnConnectionState, opts: CustomResourceOptions): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
+    inline def get(name: String, id: Input[ID]): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
+    inline def get(name: String, id: Input[ID], state: VpnConnectionState): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
+    inline def get(name: String, id: Input[ID], state: VpnConnectionState, opts: CustomResourceOptions): VpnConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnection]
     
     /**
       * Returns true if the given object is an instance of VpnConnection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnConnection.VpnConnection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnConnection.VpnConnection */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnConnection.VpnConnection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnConnection.VpnConnection */ Boolean]
   }
   
   trait VpnConnectionArgs extends StObject {
@@ -233,69 +228,49 @@ object vpnConnectionMod {
   }
   object VpnConnectionArgs {
     
-    @scala.inline
-    def apply(customerGatewayId: Input[String], `type`: Input[String]): VpnConnectionArgs = {
+    inline def apply(customerGatewayId: Input[String], `type`: Input[String]): VpnConnectionArgs = {
       val __obj = js.Dynamic.literal(customerGatewayId = customerGatewayId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpnConnectionArgs]
     }
     
-    @scala.inline
-    implicit class VpnConnectionArgsMutableBuilder[Self <: VpnConnectionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpnConnectionArgs](x: Self) {
       
-      @scala.inline
-      def setCustomerGatewayId(value: Input[String]): Self = StObject.set(x, "customerGatewayId", value.asInstanceOf[js.Any])
+      inline def setCustomerGatewayId(value: Input[String]): Self = StObject.set(x, "customerGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticRoutesOnly(value: Input[Boolean]): Self = StObject.set(x, "staticRoutesOnly", value.asInstanceOf[js.Any])
+      inline def setStaticRoutesOnly(value: Input[Boolean]): Self = StObject.set(x, "staticRoutesOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticRoutesOnlyUndefined: Self = StObject.set(x, "staticRoutesOnly", js.undefined)
+      inline def setStaticRoutesOnlyUndefined: Self = StObject.set(x, "staticRoutesOnly", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
       
-      @scala.inline
-      def setTunnel1InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel1InsideCidr", value.asInstanceOf[js.Any])
+      inline def setTunnel1InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel1InsideCidr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1InsideCidrUndefined: Self = StObject.set(x, "tunnel1InsideCidr", js.undefined)
+      inline def setTunnel1InsideCidrUndefined: Self = StObject.set(x, "tunnel1InsideCidr", js.undefined)
       
-      @scala.inline
-      def setTunnel1PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel1PresharedKey", value.asInstanceOf[js.Any])
+      inline def setTunnel1PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel1PresharedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1PresharedKeyUndefined: Self = StObject.set(x, "tunnel1PresharedKey", js.undefined)
+      inline def setTunnel1PresharedKeyUndefined: Self = StObject.set(x, "tunnel1PresharedKey", js.undefined)
       
-      @scala.inline
-      def setTunnel2InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel2InsideCidr", value.asInstanceOf[js.Any])
+      inline def setTunnel2InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel2InsideCidr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2InsideCidrUndefined: Self = StObject.set(x, "tunnel2InsideCidr", js.undefined)
+      inline def setTunnel2InsideCidrUndefined: Self = StObject.set(x, "tunnel2InsideCidr", js.undefined)
       
-      @scala.inline
-      def setTunnel2PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel2PresharedKey", value.asInstanceOf[js.Any])
+      inline def setTunnel2PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel2PresharedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2PresharedKeyUndefined: Self = StObject.set(x, "tunnel2PresharedKey", js.undefined)
+      inline def setTunnel2PresharedKeyUndefined: Self = StObject.set(x, "tunnel2PresharedKey", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
+      inline def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnGatewayIdUndefined: Self = StObject.set(x, "vpnGatewayId", js.undefined)
+      inline def setVpnGatewayIdUndefined: Self = StObject.set(x, "vpnGatewayId", js.undefined)
     }
   }
   
@@ -422,170 +397,116 @@ object vpnConnectionMod {
   }
   object VpnConnectionState {
     
-    @scala.inline
-    def apply(): VpnConnectionState = {
+    inline def apply(): VpnConnectionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpnConnectionState]
     }
     
-    @scala.inline
-    implicit class VpnConnectionStateMutableBuilder[Self <: VpnConnectionState] (val x: Self) extends AnyVal {
+    extension [Self <: VpnConnectionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCustomerGatewayConfiguration(value: Input[String]): Self = StObject.set(x, "customerGatewayConfiguration", value.asInstanceOf[js.Any])
+      inline def setCustomerGatewayConfiguration(value: Input[String]): Self = StObject.set(x, "customerGatewayConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerGatewayConfigurationUndefined: Self = StObject.set(x, "customerGatewayConfiguration", js.undefined)
+      inline def setCustomerGatewayConfigurationUndefined: Self = StObject.set(x, "customerGatewayConfiguration", js.undefined)
       
-      @scala.inline
-      def setCustomerGatewayId(value: Input[String]): Self = StObject.set(x, "customerGatewayId", value.asInstanceOf[js.Any])
+      inline def setCustomerGatewayId(value: Input[String]): Self = StObject.set(x, "customerGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerGatewayIdUndefined: Self = StObject.set(x, "customerGatewayId", js.undefined)
+      inline def setCustomerGatewayIdUndefined: Self = StObject.set(x, "customerGatewayId", js.undefined)
       
-      @scala.inline
-      def setRoutes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.VpnConnectionRoute]]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.VpnConnectionRoute]]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      @scala.inline
-      def setRoutesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.VpnConnectionRoute]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.VpnConnectionRoute]*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setStaticRoutesOnly(value: Input[Boolean]): Self = StObject.set(x, "staticRoutesOnly", value.asInstanceOf[js.Any])
+      inline def setStaticRoutesOnly(value: Input[Boolean]): Self = StObject.set(x, "staticRoutesOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticRoutesOnlyUndefined: Self = StObject.set(x, "staticRoutesOnly", js.undefined)
+      inline def setStaticRoutesOnlyUndefined: Self = StObject.set(x, "staticRoutesOnly", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayAttachmentId(value: Input[String]): Self = StObject.set(x, "transitGatewayAttachmentId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayAttachmentId(value: Input[String]): Self = StObject.set(x, "transitGatewayAttachmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "transitGatewayAttachmentId", js.undefined)
+      inline def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "transitGatewayAttachmentId", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
       
-      @scala.inline
-      def setTunnel1Address(value: Input[String]): Self = StObject.set(x, "tunnel1Address", value.asInstanceOf[js.Any])
+      inline def setTunnel1Address(value: Input[String]): Self = StObject.set(x, "tunnel1Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1AddressUndefined: Self = StObject.set(x, "tunnel1Address", js.undefined)
+      inline def setTunnel1AddressUndefined: Self = StObject.set(x, "tunnel1Address", js.undefined)
       
-      @scala.inline
-      def setTunnel1BgpAsn(value: Input[String]): Self = StObject.set(x, "tunnel1BgpAsn", value.asInstanceOf[js.Any])
+      inline def setTunnel1BgpAsn(value: Input[String]): Self = StObject.set(x, "tunnel1BgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1BgpAsnUndefined: Self = StObject.set(x, "tunnel1BgpAsn", js.undefined)
+      inline def setTunnel1BgpAsnUndefined: Self = StObject.set(x, "tunnel1BgpAsn", js.undefined)
       
-      @scala.inline
-      def setTunnel1BgpHoldtime(value: Input[Double]): Self = StObject.set(x, "tunnel1BgpHoldtime", value.asInstanceOf[js.Any])
+      inline def setTunnel1BgpHoldtime(value: Input[Double]): Self = StObject.set(x, "tunnel1BgpHoldtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1BgpHoldtimeUndefined: Self = StObject.set(x, "tunnel1BgpHoldtime", js.undefined)
+      inline def setTunnel1BgpHoldtimeUndefined: Self = StObject.set(x, "tunnel1BgpHoldtime", js.undefined)
       
-      @scala.inline
-      def setTunnel1CgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel1CgwInsideAddress", value.asInstanceOf[js.Any])
+      inline def setTunnel1CgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel1CgwInsideAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1CgwInsideAddressUndefined: Self = StObject.set(x, "tunnel1CgwInsideAddress", js.undefined)
+      inline def setTunnel1CgwInsideAddressUndefined: Self = StObject.set(x, "tunnel1CgwInsideAddress", js.undefined)
       
-      @scala.inline
-      def setTunnel1InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel1InsideCidr", value.asInstanceOf[js.Any])
+      inline def setTunnel1InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel1InsideCidr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1InsideCidrUndefined: Self = StObject.set(x, "tunnel1InsideCidr", js.undefined)
+      inline def setTunnel1InsideCidrUndefined: Self = StObject.set(x, "tunnel1InsideCidr", js.undefined)
       
-      @scala.inline
-      def setTunnel1PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel1PresharedKey", value.asInstanceOf[js.Any])
+      inline def setTunnel1PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel1PresharedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1PresharedKeyUndefined: Self = StObject.set(x, "tunnel1PresharedKey", js.undefined)
+      inline def setTunnel1PresharedKeyUndefined: Self = StObject.set(x, "tunnel1PresharedKey", js.undefined)
       
-      @scala.inline
-      def setTunnel1VgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel1VgwInsideAddress", value.asInstanceOf[js.Any])
+      inline def setTunnel1VgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel1VgwInsideAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel1VgwInsideAddressUndefined: Self = StObject.set(x, "tunnel1VgwInsideAddress", js.undefined)
+      inline def setTunnel1VgwInsideAddressUndefined: Self = StObject.set(x, "tunnel1VgwInsideAddress", js.undefined)
       
-      @scala.inline
-      def setTunnel2Address(value: Input[String]): Self = StObject.set(x, "tunnel2Address", value.asInstanceOf[js.Any])
+      inline def setTunnel2Address(value: Input[String]): Self = StObject.set(x, "tunnel2Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2AddressUndefined: Self = StObject.set(x, "tunnel2Address", js.undefined)
+      inline def setTunnel2AddressUndefined: Self = StObject.set(x, "tunnel2Address", js.undefined)
       
-      @scala.inline
-      def setTunnel2BgpAsn(value: Input[String]): Self = StObject.set(x, "tunnel2BgpAsn", value.asInstanceOf[js.Any])
+      inline def setTunnel2BgpAsn(value: Input[String]): Self = StObject.set(x, "tunnel2BgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2BgpAsnUndefined: Self = StObject.set(x, "tunnel2BgpAsn", js.undefined)
+      inline def setTunnel2BgpAsnUndefined: Self = StObject.set(x, "tunnel2BgpAsn", js.undefined)
       
-      @scala.inline
-      def setTunnel2BgpHoldtime(value: Input[Double]): Self = StObject.set(x, "tunnel2BgpHoldtime", value.asInstanceOf[js.Any])
+      inline def setTunnel2BgpHoldtime(value: Input[Double]): Self = StObject.set(x, "tunnel2BgpHoldtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2BgpHoldtimeUndefined: Self = StObject.set(x, "tunnel2BgpHoldtime", js.undefined)
+      inline def setTunnel2BgpHoldtimeUndefined: Self = StObject.set(x, "tunnel2BgpHoldtime", js.undefined)
       
-      @scala.inline
-      def setTunnel2CgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel2CgwInsideAddress", value.asInstanceOf[js.Any])
+      inline def setTunnel2CgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel2CgwInsideAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2CgwInsideAddressUndefined: Self = StObject.set(x, "tunnel2CgwInsideAddress", js.undefined)
+      inline def setTunnel2CgwInsideAddressUndefined: Self = StObject.set(x, "tunnel2CgwInsideAddress", js.undefined)
       
-      @scala.inline
-      def setTunnel2InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel2InsideCidr", value.asInstanceOf[js.Any])
+      inline def setTunnel2InsideCidr(value: Input[String]): Self = StObject.set(x, "tunnel2InsideCidr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2InsideCidrUndefined: Self = StObject.set(x, "tunnel2InsideCidr", js.undefined)
+      inline def setTunnel2InsideCidrUndefined: Self = StObject.set(x, "tunnel2InsideCidr", js.undefined)
       
-      @scala.inline
-      def setTunnel2PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel2PresharedKey", value.asInstanceOf[js.Any])
+      inline def setTunnel2PresharedKey(value: Input[String]): Self = StObject.set(x, "tunnel2PresharedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2PresharedKeyUndefined: Self = StObject.set(x, "tunnel2PresharedKey", js.undefined)
+      inline def setTunnel2PresharedKeyUndefined: Self = StObject.set(x, "tunnel2PresharedKey", js.undefined)
       
-      @scala.inline
-      def setTunnel2VgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel2VgwInsideAddress", value.asInstanceOf[js.Any])
+      inline def setTunnel2VgwInsideAddress(value: Input[String]): Self = StObject.set(x, "tunnel2VgwInsideAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnel2VgwInsideAddressUndefined: Self = StObject.set(x, "tunnel2VgwInsideAddress", js.undefined)
+      inline def setTunnel2VgwInsideAddressUndefined: Self = StObject.set(x, "tunnel2VgwInsideAddress", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVgwTelemetries(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.VpnConnectionVgwTelemetry]]]): Self = StObject.set(x, "vgwTelemetries", value.asInstanceOf[js.Any])
+      inline def setVgwTelemetries(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.VpnConnectionVgwTelemetry]]]): Self = StObject.set(x, "vgwTelemetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVgwTelemetriesUndefined: Self = StObject.set(x, "vgwTelemetries", js.undefined)
+      inline def setVgwTelemetriesUndefined: Self = StObject.set(x, "vgwTelemetries", js.undefined)
       
-      @scala.inline
-      def setVgwTelemetriesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.VpnConnectionVgwTelemetry]*): Self = StObject.set(x, "vgwTelemetries", js.Array(value :_*))
+      inline def setVgwTelemetriesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.VpnConnectionVgwTelemetry]*): Self = StObject.set(x, "vgwTelemetries", js.Array(value :_*))
       
-      @scala.inline
-      def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
+      inline def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnGatewayIdUndefined: Self = StObject.set(x, "vpnGatewayId", js.undefined)
+      inline def setVpnGatewayIdUndefined: Self = StObject.set(x, "vpnGatewayId", js.undefined)
     }
   }
 }

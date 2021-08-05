@@ -23,22 +23,17 @@ trait DsvDataFormat
 }
 object DsvDataFormat {
   
-  @scala.inline
-  def apply(delimiter: String): DsvDataFormat = {
+  inline def apply(delimiter: String): DsvDataFormat = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DsvDataFormat]
   }
   
-  @scala.inline
-  implicit class DsvDataFormatMutableBuilder[Self <: DsvDataFormat] (val x: Self) extends AnyVal {
+  extension [Self <: DsvDataFormat](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: dsv): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dsv): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

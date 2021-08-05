@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Cover = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Cover]
+  inline def default(): Cover = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Cover]
   
   @js.native
   trait Cover extends StObject {

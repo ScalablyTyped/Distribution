@@ -30,8 +30,7 @@ object mod {
     def this(props: SortableGridProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def default_=(x: SortableGridStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: SortableGridStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait ItemOrder extends StObject {
     
@@ -39,20 +38,16 @@ object mod {
   }
   object ItemOrder {
     
-    @scala.inline
-    def apply(itemOrder: js.Array[OrderedItem]): ItemOrder = {
+    inline def apply(itemOrder: js.Array[OrderedItem]): ItemOrder = {
       val __obj = js.Dynamic.literal(itemOrder = itemOrder.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemOrder]
     }
     
-    @scala.inline
-    implicit class ItemOrderMutableBuilder[Self <: ItemOrder] (val x: Self) extends AnyVal {
+    extension [Self <: ItemOrder](x: Self) {
       
-      @scala.inline
-      def setItemOrder(value: js.Array[OrderedItem]): Self = StObject.set(x, "itemOrder", value.asInstanceOf[js.Any])
+      inline def setItemOrder(value: js.Array[OrderedItem]): Self = StObject.set(x, "itemOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemOrderVarargs(value: OrderedItem*): Self = StObject.set(x, "itemOrder", js.Array(value :_*))
+      inline def setItemOrderVarargs(value: OrderedItem*): Self = StObject.set(x, "itemOrder", js.Array(value :_*))
     }
   }
   
@@ -66,26 +61,20 @@ object mod {
   }
   object OrderedItem {
     
-    @scala.inline
-    def apply(key: String, order: Double): OrderedItem = {
+    inline def apply(key: String, order: Double): OrderedItem = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], ref = null)
       __obj.asInstanceOf[OrderedItem]
     }
     
-    @scala.inline
-    implicit class OrderedItemMutableBuilder[Self <: OrderedItem] (val x: Self) extends AnyVal {
+    extension [Self <: OrderedItem](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: SortableGridItem): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: SortableGridItem): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
     }
   }
   
@@ -119,35 +108,26 @@ object mod {
   }
   object SortableGridItemProps {
     
-    @scala.inline
-    def apply(key: String): SortableGridItemProps = {
+    inline def apply(key: String): SortableGridItemProps = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortableGridItemProps]
     }
     
-    @scala.inline
-    implicit class SortableGridItemPropsMutableBuilder[Self <: SortableGridItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortableGridItemProps](x: Self) {
       
-      @scala.inline
-      def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+      inline def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+      inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDoubleTap(value: () => Unit): Self = StObject.set(x, "onDoubleTap", js.Any.fromFunction0(value))
+      inline def setOnDoubleTap(value: () => Unit): Self = StObject.set(x, "onDoubleTap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDoubleTapUndefined: Self = StObject.set(x, "onDoubleTap", js.undefined)
+      inline def setOnDoubleTapUndefined: Self = StObject.set(x, "onDoubleTap", js.undefined)
       
-      @scala.inline
-      def setOnTap(value: () => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction0(value))
+      inline def setOnTap(value: () => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
+      inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
     }
   }
   
@@ -232,98 +212,68 @@ object mod {
   }
   object SortableGridProps {
     
-    @scala.inline
-    def apply(): SortableGridProps = {
+    inline def apply(): SortableGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SortableGridProps]
     }
     
-    @scala.inline
-    implicit class SortableGridPropsMutableBuilder[Self <: SortableGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortableGridProps](x: Self) {
       
-      @scala.inline
-      def setActiveBlockCenteringDuration(value: Double): Self = StObject.set(x, "activeBlockCenteringDuration", value.asInstanceOf[js.Any])
+      inline def setActiveBlockCenteringDuration(value: Double): Self = StObject.set(x, "activeBlockCenteringDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveBlockCenteringDurationUndefined: Self = StObject.set(x, "activeBlockCenteringDuration", js.undefined)
+      inline def setActiveBlockCenteringDurationUndefined: Self = StObject.set(x, "activeBlockCenteringDuration", js.undefined)
       
-      @scala.inline
-      def setBlockTransitionDuration(value: Double): Self = StObject.set(x, "blockTransitionDuration", value.asInstanceOf[js.Any])
+      inline def setBlockTransitionDuration(value: Double): Self = StObject.set(x, "blockTransitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockTransitionDurationUndefined: Self = StObject.set(x, "blockTransitionDuration", js.undefined)
+      inline def setBlockTransitionDurationUndefined: Self = StObject.set(x, "blockTransitionDuration", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[SortableGridItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[SortableGridItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: SortableGridItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: SortableGridItem*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDoubleTapTreshold(value: Double): Self = StObject.set(x, "doubleTapTreshold", value.asInstanceOf[js.Any])
+      inline def setDoubleTapTreshold(value: Double): Self = StObject.set(x, "doubleTapTreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleTapTresholdUndefined: Self = StObject.set(x, "doubleTapTreshold", js.undefined)
+      inline def setDoubleTapTresholdUndefined: Self = StObject.set(x, "doubleTapTreshold", js.undefined)
       
-      @scala.inline
-      def setDragActivationThreshold(value: Double): Self = StObject.set(x, "dragActivationThreshold", value.asInstanceOf[js.Any])
+      inline def setDragActivationThreshold(value: Double): Self = StObject.set(x, "dragActivationThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragActivationThresholdUndefined: Self = StObject.set(x, "dragActivationThreshold", js.undefined)
+      inline def setDragActivationThresholdUndefined: Self = StObject.set(x, "dragActivationThreshold", js.undefined)
       
-      @scala.inline
-      def setDragStartAnimation(value: Transform): Self = StObject.set(x, "dragStartAnimation", value.asInstanceOf[js.Any])
+      inline def setDragStartAnimation(value: Transform): Self = StObject.set(x, "dragStartAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragStartAnimationUndefined: Self = StObject.set(x, "dragStartAnimation", js.undefined)
+      inline def setDragStartAnimationUndefined: Self = StObject.set(x, "dragStartAnimation", js.undefined)
       
-      @scala.inline
-      def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+      inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+      inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
       
-      @scala.inline
-      def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
+      inline def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
+      inline def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
       
-      @scala.inline
-      def setItemsPerRow(value: Double): Self = StObject.set(x, "itemsPerRow", value.asInstanceOf[js.Any])
+      inline def setItemsPerRow(value: Double): Self = StObject.set(x, "itemsPerRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsPerRowUndefined: Self = StObject.set(x, "itemsPerRow", js.undefined)
+      inline def setItemsPerRowUndefined: Self = StObject.set(x, "itemsPerRow", js.undefined)
       
-      @scala.inline
-      def setOnDeleteItem(value: /* deletedItem */ OrderedItem => Unit): Self = StObject.set(x, "onDeleteItem", js.Any.fromFunction1(value))
+      inline def setOnDeleteItem(value: /* deletedItem */ OrderedItem => Unit): Self = StObject.set(x, "onDeleteItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeleteItemUndefined: Self = StObject.set(x, "onDeleteItem", js.undefined)
+      inline def setOnDeleteItemUndefined: Self = StObject.set(x, "onDeleteItem", js.undefined)
       
-      @scala.inline
-      def setOnDragRelease(value: /* itemOrder */ ItemOrder => Unit): Self = StObject.set(x, "onDragRelease", js.Any.fromFunction1(value))
+      inline def setOnDragRelease(value: /* itemOrder */ ItemOrder => Unit): Self = StObject.set(x, "onDragRelease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragReleaseUndefined: Self = StObject.set(x, "onDragRelease", js.undefined)
+      inline def setOnDragReleaseUndefined: Self = StObject.set(x, "onDragRelease", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: /* item */ OrderedItem => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* item */ OrderedItem => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

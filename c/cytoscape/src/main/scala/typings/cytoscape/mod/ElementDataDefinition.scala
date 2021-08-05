@@ -15,25 +15,19 @@ trait ElementDataDefinition extends StObject {
 }
 object ElementDataDefinition {
   
-  @scala.inline
-  def apply(): ElementDataDefinition = {
+  inline def apply(): ElementDataDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElementDataDefinition]
   }
   
-  @scala.inline
-  implicit class ElementDataDefinitionMutableBuilder[Self <: ElementDataDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ElementDataDefinition](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

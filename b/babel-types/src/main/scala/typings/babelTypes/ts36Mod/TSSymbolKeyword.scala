@@ -18,10 +18,8 @@ object TSSymbolKeyword {
   @js.native
   def apply(): TSSymbolKeyword = js.native
   
-  @scala.inline
-  implicit class TSSymbolKeywordMutableBuilder[Self <: TSSymbolKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: TSSymbolKeyword](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSSymbolKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSSymbolKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,16 @@ trait Registration_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] *
 }
 object Registration_ {
   
-  @scala.inline
-  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+  inline def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
     registerResolver: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], DependencyCtorOrFunctor[TBase, TImpl, TArgs]) => Resolver_
   ): Registration_[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(registerResolver = js.Any.fromFunction3(registerResolver))
     __obj.asInstanceOf[Registration_[TBase, TImpl, TArgs]]
   }
   
-  @scala.inline
-  implicit class Registration_MutableBuilder[Self <: Registration_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (Registration_[TBase, TImpl, TArgs])) extends AnyVal {
+  extension [Self <: Registration_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](x: Self & (Registration_[TBase, TImpl, TArgs])) {
     
-    @scala.inline
-    def setRegisterResolver(
+    inline def setRegisterResolver(
       value: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], DependencyCtorOrFunctor[TBase, TImpl, TArgs]) => Resolver_
     ): Self = StObject.set(x, "registerResolver", js.Any.fromFunction3(value))
   }

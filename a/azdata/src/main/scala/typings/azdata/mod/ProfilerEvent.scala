@@ -18,19 +18,15 @@ trait ProfilerEvent extends StObject {
 }
 object ProfilerEvent {
   
-  @scala.inline
-  def apply(name: String, timestamp: String): ProfilerEvent = {
+  inline def apply(name: String, timestamp: String): ProfilerEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilerEvent]
   }
   
-  @scala.inline
-  implicit class ProfilerEventMutableBuilder[Self <: ProfilerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilerEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

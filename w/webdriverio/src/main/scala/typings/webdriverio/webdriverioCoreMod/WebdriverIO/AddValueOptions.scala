@@ -10,19 +10,15 @@ trait AddValueOptions extends StObject {
 }
 object AddValueOptions {
   
-  @scala.inline
-  def apply(): AddValueOptions = {
+  inline def apply(): AddValueOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddValueOptions]
   }
   
-  @scala.inline
-  implicit class AddValueOptionsMutableBuilder[Self <: AddValueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddValueOptions](x: Self) {
     
-    @scala.inline
-    def setTranslateToUnicode(value: Boolean): Self = StObject.set(x, "translateToUnicode", value.asInstanceOf[js.Any])
+    inline def setTranslateToUnicode(value: Boolean): Self = StObject.set(x, "translateToUnicode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateToUnicodeUndefined: Self = StObject.set(x, "translateToUnicode", js.undefined)
+    inline def setTranslateToUnicodeUndefined: Self = StObject.set(x, "translateToUnicode", js.undefined)
   }
 }

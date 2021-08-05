@@ -12,25 +12,19 @@ trait DefsOptions extends StObject {
 }
 object DefsOptions {
   
-  @scala.inline
-  def apply(): DefsOptions = {
+  inline def apply(): DefsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefsOptions]
   }
   
-  @scala.inline
-  implicit class DefsOptionsMutableBuilder[Self <: DefsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefsOptions](x: Self) {
     
-    @scala.inline
-    def setArrow(value: DefsArrowOptions | SVGDefinitionObject): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: DefsArrowOptions | SVGDefinitionObject): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+    inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
-    @scala.inline
-    def `setReverse-arrow`(value: DefsReverseArrowOptions | SVGDefinitionObject): Self = StObject.set(x, "reverse-arrow", value.asInstanceOf[js.Any])
+    inline def `setReverse-arrow`(value: DefsReverseArrowOptions | SVGDefinitionObject): Self = StObject.set(x, "reverse-arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setReverse-arrowUndefined`: Self = StObject.set(x, "reverse-arrow", js.undefined)
+    inline def `setReverse-arrowUndefined`: Self = StObject.set(x, "reverse-arrow", js.undefined)
   }
 }

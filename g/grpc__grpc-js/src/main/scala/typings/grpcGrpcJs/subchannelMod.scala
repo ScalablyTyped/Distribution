@@ -47,47 +47,47 @@ object subchannelMod {
     
     def addDisconnectListener(listener: js.Function0[Unit]): Unit = js.native
     
-    var backoffTimeout: js.Any = js.native
+    /* private */ var backoffTimeout: js.Any = js.native
     
     def callRef(): Unit = js.native
     
     /**
       * Tracks calls with references to this subchannel
       */
-    var callRefcount: js.Any = js.native
+    /* private */ var callRefcount: js.Any = js.native
     
     def callUnref(): Unit = js.native
     
-    var channelTarget: js.Any = js.native
+    /* private */ var channelTarget: js.Any = js.native
     
     /**
       * Check if the subchannel associated with zero calls and with zero channels.
       * If so, shut it down.
       */
-    var checkBothRefcounts: js.Any = js.native
+    /* private */ var checkBothRefcounts: js.Any = js.native
     
     /**
       * The subchannel's current connectivity state. Invariant: `session` === `null`
       * if and only if `connectivityState` is IDLE or TRANSIENT_FAILURE.
       */
-    var connectivityState: js.Any = js.native
+    /* private */ var connectivityState: js.Any = js.native
     
     /**
       * Indicates that the subchannel should transition from TRANSIENT_FAILURE to
       * CONNECTING instead of IDLE when the backoff timeout ends.
       */
-    var continueConnecting: js.Any = js.native
+    /* private */ var continueConnecting: js.Any = js.native
     
-    var createSession: js.Any = js.native
+    /* private */ var createSession: js.Any = js.native
     
-    var credentials: js.Any = js.native
+    /* private */ var credentials: js.Any = js.native
     
     /**
       * A list of listener functions that will be called when the underlying
       * socket disconnects. Used for ending active calls with an UNAVAILABLE
       * status.
       */
-    var disconnectListeners: js.Any = js.native
+    /* private */ var disconnectListeners: js.Any = js.native
     
     def getAddress(): String = js.native
     
@@ -96,36 +96,36 @@ object subchannelMod {
       */
     def getConnectivityState(): ConnectivityState = js.native
     
-    var handleBackoffTimer: js.Any = js.native
+    /* private */ var handleBackoffTimer: js.Any = js.native
     
     /**
       * Timer reference for timeout that indicates when to send the next ping
       */
-    var keepaliveIntervalId: js.Any = js.native
+    /* private */ var keepaliveIntervalId: js.Any = js.native
     
     /**
       * The amount of time in between sending pings
       */
-    var keepaliveTimeMs: js.Any = js.native
+    /* private */ var keepaliveTimeMs: js.Any = js.native
     
     /**
       * Timer reference tracking when the most recent ping will be considered lost
       */
-    var keepaliveTimeoutId: js.Any = js.native
+    /* private */ var keepaliveTimeoutId: js.Any = js.native
     
     /**
       * The amount of time to wait for an acknowledgement after sending a ping
       */
-    var keepaliveTimeoutMs: js.Any = js.native
+    /* private */ var keepaliveTimeoutMs: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def ref(): Unit = js.native
     
     /**
       * Tracks channels and subchannel pools with references to this subchannel
       */
-    var refcount: js.Any = js.native
+    /* private */ var refcount: js.Any = js.native
     
     /**
       * Remove a listener previously added with `addConnectivityStateListener`
@@ -141,17 +141,17 @@ object subchannelMod {
       */
     def resetBackoff(): Unit = js.native
     
-    var sendPing: js.Any = js.native
+    /* private */ var sendPing: js.Any = js.native
     
     /**
       * The underlying http2 session used to make requests.
       */
-    var session: js.Any = js.native
+    /* private */ var session: js.Any = js.native
     
     /**
       * Start a backoff timer with the current nextBackoff timeout
       */
-    var startBackoff: js.Any = js.native
+    /* private */ var startBackoff: js.Any = js.native
     
     /**
       * Start a stream on the current session with the given `metadata` as headers
@@ -171,27 +171,27 @@ object subchannelMod {
       */
     def startConnecting(): Unit = js.native
     
-    var startConnectingInternal: js.Any = js.native
+    /* private */ var startConnectingInternal: js.Any = js.native
     
-    var startKeepalivePings: js.Any = js.native
+    /* private */ var startKeepalivePings: js.Any = js.native
     
     /**
       * A list of listener functions that will be called whenever the connectivity
       * state changes. Will be modified by `addConnectivityStateListener` and
       * `removeConnectivityStateListener`
       */
-    var stateListeners: js.Any = js.native
+    /* private */ var stateListeners: js.Any = js.native
     
-    var stopBackoff: js.Any = js.native
+    /* private */ var stopBackoff: js.Any = js.native
     
-    var stopKeepalivePings: js.Any = js.native
+    /* private */ var stopKeepalivePings: js.Any = js.native
     
-    var subchannelAddress: js.Any = js.native
+    /* private */ var subchannelAddress: js.Any = js.native
     
     /**
       * A string representation of the subchannel address, for logging/tracing
       */
-    var subchannelAddressString: js.Any = js.native
+    /* private */ var subchannelAddressString: js.Any = js.native
     
     /**
       * Initiate a state transition from any element of oldStates to the new
@@ -200,7 +200,7 @@ object subchannelMod {
       * @param newState The state to transition to
       * @returns True if the state changed, false otherwise
       */
-    var transitionToState: js.Any = js.native
+    /* private */ var transitionToState: js.Any = js.native
     
     def unref(): Unit = js.native
     
@@ -209,17 +209,14 @@ object subchannelMod {
     /**
       * The complete user agent string constructed using channel args.
       */
-    var userAgent: js.Any = js.native
+    /* private */ var userAgent: js.Any = js.native
   }
   
-  @scala.inline
-  def isTcpSubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTcpSubchannelAddress")(address.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean]
+  inline def isTcpSubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTcpSubchannelAddress")(address.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean]
   
-  @scala.inline
-  def subchannelAddressEqual(address1: SubchannelAddress, address2: SubchannelAddress): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")(address1.asInstanceOf[js.Any], address2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def subchannelAddressEqual(address1: SubchannelAddress, address2: SubchannelAddress): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")(address1.asInstanceOf[js.Any], address2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def subchannelAddressToString(address: SubchannelAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressToString")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def subchannelAddressToString(address: SubchannelAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressToString")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ConnectivityStateListener = js.Function3[
     /* subchannel */ Subchannel, 
@@ -236,17 +233,14 @@ object subchannelMod {
   }
   object IpcSubchannelAddress {
     
-    @scala.inline
-    def apply(path: String): IpcSubchannelAddress = {
+    inline def apply(path: String): IpcSubchannelAddress = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[IpcSubchannelAddress]
     }
     
-    @scala.inline
-    implicit class IpcSubchannelAddressMutableBuilder[Self <: IpcSubchannelAddress] (val x: Self) extends AnyVal {
+    extension [Self <: IpcSubchannelAddress](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,14 +251,12 @@ object subchannelMod {
   trait SubchannelAddress extends StObject
   object SubchannelAddress {
     
-    @scala.inline
-    def IpcSubchannelAddress(path: String): typings.grpcGrpcJs.subchannelMod.IpcSubchannelAddress = {
+    inline def IpcSubchannelAddress(path: String): typings.grpcGrpcJs.subchannelMod.IpcSubchannelAddress = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.grpcGrpcJs.subchannelMod.IpcSubchannelAddress]
     }
     
-    @scala.inline
-    def TcpSubchannelAddress(host: String, port: Double): typings.grpcGrpcJs.subchannelMod.TcpSubchannelAddress = {
+    inline def TcpSubchannelAddress(host: String, port: Double): typings.grpcGrpcJs.subchannelMod.TcpSubchannelAddress = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.grpcGrpcJs.subchannelMod.TcpSubchannelAddress]
     }
@@ -280,20 +272,16 @@ object subchannelMod {
   }
   object TcpSubchannelAddress {
     
-    @scala.inline
-    def apply(host: String, port: Double): TcpSubchannelAddress = {
+    inline def apply(host: String, port: Double): TcpSubchannelAddress = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[TcpSubchannelAddress]
     }
     
-    @scala.inline
-    implicit class TcpSubchannelAddressMutableBuilder[Self <: TcpSubchannelAddress] (val x: Self) extends AnyVal {
+    extension [Self <: TcpSubchannelAddress](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,8 +18,7 @@ trait Overlay extends StObject {
 }
 object Overlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     overlay: typings.bmapgl.BMapGL.Overlay,
     pixel: typings.bmapgl.BMapGL.Pixel,
     point: typings.bmapgl.BMapGL.Point,
@@ -31,22 +30,16 @@ object Overlay {
     __obj.asInstanceOf[Overlay]
   }
   
-  @scala.inline
-  implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
+  extension [Self <: Overlay](x: Self) {
     
-    @scala.inline
-    def setOverlay(value: typings.bmapgl.BMapGL.Overlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: typings.bmapgl.BMapGL.Overlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixel(value: typings.bmapgl.BMapGL.Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
+    inline def setPixel(value: typings.bmapgl.BMapGL.Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: typings.bmapgl.BMapGL.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: typings.bmapgl.BMapGL.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

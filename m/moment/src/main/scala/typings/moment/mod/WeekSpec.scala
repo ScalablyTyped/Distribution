@@ -12,22 +12,17 @@ trait WeekSpec extends StObject {
 }
 object WeekSpec {
   
-  @scala.inline
-  def apply(dow: Double): WeekSpec = {
+  inline def apply(dow: Double): WeekSpec = {
     val __obj = js.Dynamic.literal(dow = dow.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeekSpec]
   }
   
-  @scala.inline
-  implicit class WeekSpecMutableBuilder[Self <: WeekSpec] (val x: Self) extends AnyVal {
+  extension [Self <: WeekSpec](x: Self) {
     
-    @scala.inline
-    def setDow(value: Double): Self = StObject.set(x, "dow", value.asInstanceOf[js.Any])
+    inline def setDow(value: Double): Self = StObject.set(x, "dow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoy(value: Double): Self = StObject.set(x, "doy", value.asInstanceOf[js.Any])
+    inline def setDoy(value: Double): Self = StObject.set(x, "doy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoyUndefined: Self = StObject.set(x, "doy", js.undefined)
+    inline def setDoyUndefined: Self = StObject.set(x, "doy", js.undefined)
   }
 }

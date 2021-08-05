@@ -18,25 +18,19 @@ trait Body extends StObject {
 }
 object Body {
   
-  @scala.inline
-  def apply(): Body = {
+  inline def apply(): Body = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Body]
   }
   
-  @scala.inline
-  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+  extension [Self <: Body](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

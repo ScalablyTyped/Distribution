@@ -43,16 +43,13 @@ trait XPublished extends StObject {
 }
 object XPublished {
   
-  @scala.inline
-  def apply(isPublished: () => Boolean): XPublished = {
+  inline def apply(isPublished: () => Boolean): XPublished = {
     val __obj = js.Dynamic.literal(isPublished = js.Any.fromFunction0(isPublished))
     __obj.asInstanceOf[XPublished]
   }
   
-  @scala.inline
-  implicit class XPublishedMutableBuilder[Self <: XPublished] (val x: Self) extends AnyVal {
+  extension [Self <: XPublished](x: Self) {
     
-    @scala.inline
-    def setIsPublished(value: () => Boolean): Self = StObject.set(x, "isPublished", js.Any.fromFunction0(value))
+    inline def setIsPublished(value: () => Boolean): Self = StObject.set(x, "isPublished", js.Any.fromFunction0(value))
   }
 }

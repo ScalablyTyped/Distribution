@@ -12,16 +12,13 @@ trait MidiMessageReceivedEventArgs extends StObject {
 }
 object MidiMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(message: IMidiMessage): MidiMessageReceivedEventArgs = {
+  inline def apply(message: IMidiMessage): MidiMessageReceivedEventArgs = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MidiMessageReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class MidiMessageReceivedEventArgsMutableBuilder[Self <: MidiMessageReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MidiMessageReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setMessage(value: IMidiMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: IMidiMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

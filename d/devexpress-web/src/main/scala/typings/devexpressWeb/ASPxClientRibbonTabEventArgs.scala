@@ -18,16 +18,13 @@ trait ASPxClientRibbonTabEventArgs
 }
 object ASPxClientRibbonTabEventArgs {
   
-  @scala.inline
-  def apply(tab: ASPxClientRibbonTab): ASPxClientRibbonTabEventArgs = {
+  inline def apply(tab: ASPxClientRibbonTab): ASPxClientRibbonTabEventArgs = {
     val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRibbonTabEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRibbonTabEventArgsMutableBuilder[Self <: ASPxClientRibbonTabEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRibbonTabEventArgs](x: Self) {
     
-    @scala.inline
-    def setTab(value: ASPxClientRibbonTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: ASPxClientRibbonTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

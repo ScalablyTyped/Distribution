@@ -25,23 +25,18 @@ object MeasureTextVertPos {
     *
     * Set this to have the application select the best horizontal position for the text.
     */
-  @scala.inline
-  def AUTO: `0` = 0.asInstanceOf[`0`]
+  inline def AUTO: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def BREAKEDLINE: `2` = 2.asInstanceOf[`2`]
+  inline def BREAKEDLINE: `2` = 2.asInstanceOf[`2`]
   
   /**
     * The text is positioned at the center.
     *
     * The text is positioned over the main line.
     */
-  @scala.inline
-  def CENTERED: `4` = 4.asInstanceOf[`4`]
+  inline def CENTERED: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def EAST: `1` = 1.asInstanceOf[`1`]
+  inline def EAST: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def WEST: `3` = 3.asInstanceOf[`3`]
+  inline def WEST: `3` = 3.asInstanceOf[`3`]
 }

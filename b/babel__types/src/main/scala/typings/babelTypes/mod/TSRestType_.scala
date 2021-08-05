@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSRestType_ {
   
-  @scala.inline
-  def apply(typeAnnotation: TSType): TSRestType_ = {
+  inline def apply(typeAnnotation: TSType): TSRestType_ = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSRestType")
     __obj.asInstanceOf[TSRestType_]
   }
   
-  @scala.inline
-  implicit class TSRestType_MutableBuilder[Self <: TSRestType_] (val x: Self) extends AnyVal {
+  extension [Self <: TSRestType_](x: Self) {
     
-    @scala.inline
-    def setType(value: TSRestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSRestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait FlashShape
 }
 object FlashShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginEdit: () => Unit,
     closePath: Boolean,
     contours: js.Array[FlashContour],
@@ -67,58 +66,40 @@ object FlashShape {
     __obj.asInstanceOf[FlashShape]
   }
   
-  @scala.inline
-  implicit class FlashShapeMutableBuilder[Self <: FlashShape] (val x: Self) extends AnyVal {
+  extension [Self <: FlashShape](x: Self) {
     
-    @scala.inline
-    def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
+    inline def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContours(value: js.Array[FlashContour]): Self = StObject.set(x, "contours", value.asInstanceOf[js.Any])
+    inline def setContours(value: js.Array[FlashContour]): Self = StObject.set(x, "contours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContoursVarargs(value: FlashContour*): Self = StObject.set(x, "contours", js.Array(value :_*))
+    inline def setContoursVarargs(value: FlashContour*): Self = StObject.set(x, "contours", js.Array(value :_*))
     
-    @scala.inline
-    def setDeleteEdge(value: Double => Unit): Self = StObject.set(x, "deleteEdge", js.Any.fromFunction1(value))
+    inline def setDeleteEdge(value: Double => Unit): Self = StObject.set(x, "deleteEdge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEdges(value: js.Array[FlashEdge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: js.Array[FlashEdge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesVarargs(value: FlashEdge*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: FlashEdge*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
-    @scala.inline
-    def setEndEdit(value: () => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction0(value))
+    inline def setEndEdit(value: () => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCubicSegmentPoints(value: Double => js.Array[FlashPoint]): Self = StObject.set(x, "getCubicSegmentPoints", js.Any.fromFunction1(value))
+    inline def setGetCubicSegmentPoints(value: Double => js.Array[FlashPoint]): Self = StObject.set(x, "getCubicSegmentPoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDrawingObject(value: Boolean): Self = StObject.set(x, "isDrawingObject", value.asInstanceOf[js.Any])
+    inline def setIsDrawingObject(value: Boolean): Self = StObject.set(x, "isDrawingObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroup(value: Boolean): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
+    inline def setIsGroup(value: Boolean): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOvalObject(value: Boolean): Self = StObject.set(x, "isOvalObject", value.asInstanceOf[js.Any])
+    inline def setIsOvalObject(value: Boolean): Self = StObject.set(x, "isOvalObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRectangleObject(value: Boolean): Self = StObject.set(x, "isRectangleObject", value.asInstanceOf[js.Any])
+    inline def setIsRectangleObject(value: Boolean): Self = StObject.set(x, "isRectangleObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[FlashShape]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[FlashShape]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: FlashShape*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: FlashShape*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setNumCubicSegments(value: Double): Self = StObject.set(x, "numCubicSegments", value.asInstanceOf[js.Any])
+    inline def setNumCubicSegments(value: Double): Self = StObject.set(x, "numCubicSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertices(value: js.Array[FlashVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[FlashVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesVarargs(value: FlashVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: FlashVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

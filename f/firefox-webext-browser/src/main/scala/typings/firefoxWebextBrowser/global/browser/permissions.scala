@@ -19,13 +19,11 @@ object permissions {
   val ^ : js.Any = js.native
   
   /** Check if the extension has the given permissions. */
-  @scala.inline
-  def contains(permissions: AnyPermissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def contains(permissions: AnyPermissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   /* permissions functions */
   /** Get a list of all the extension's permissions. */
-  @scala.inline
-  def getAll(): js.Promise[AnyPermissions] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[AnyPermissions]]
+  inline def getAll(): js.Promise[AnyPermissions] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[AnyPermissions]]
   
   /* permissions events */
   /** Fired when the extension acquires new permissions. */
@@ -39,14 +37,12 @@ object permissions {
   val onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = js.native
   
   /** Relinquish the given permissions. */
-  @scala.inline
-  def remove(permissions: Permissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def remove(permissions: Permissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Request the given permissions.
     *
     * Not allowed in: Devtools pages
     */
-  @scala.inline
-  def request(permissions: Permissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def request(permissions: Permissions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

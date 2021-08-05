@@ -10,19 +10,15 @@ trait SvnWorkspace extends StObject {
 }
 object SvnWorkspace {
   
-  @scala.inline
-  def apply(mappings: js.Array[SvnMappingDetails]): SvnWorkspace = {
+  inline def apply(mappings: js.Array[SvnMappingDetails]): SvnWorkspace = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvnWorkspace]
   }
   
-  @scala.inline
-  implicit class SvnWorkspaceMutableBuilder[Self <: SvnWorkspace] (val x: Self) extends AnyVal {
+  extension [Self <: SvnWorkspace](x: Self) {
     
-    @scala.inline
-    def setMappings(value: js.Array[SvnMappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: js.Array[SvnMappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingsVarargs(value: SvnMappingDetails*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: SvnMappingDetails*): Self = StObject.set(x, "mappings", js.Array(value :_*))
   }
 }

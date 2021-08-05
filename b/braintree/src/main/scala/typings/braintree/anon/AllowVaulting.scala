@@ -15,31 +15,23 @@ trait AllowVaulting extends StObject {
 }
 object AllowVaulting {
   
-  @scala.inline
-  def apply(): AllowVaulting = {
+  inline def apply(): AllowVaulting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowVaulting]
   }
   
-  @scala.inline
-  implicit class AllowVaultingMutableBuilder[Self <: AllowVaulting] (val x: Self) extends AnyVal {
+  extension [Self <: AllowVaulting](x: Self) {
     
-    @scala.inline
-    def setAllowVaulting(value: Boolean): Self = StObject.set(x, "allowVaulting", value.asInstanceOf[js.Any])
+    inline def setAllowVaulting(value: Boolean): Self = StObject.set(x, "allowVaulting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowVaultingUndefined: Self = StObject.set(x, "allowVaulting", js.undefined)
+    inline def setAllowVaultingUndefined: Self = StObject.set(x, "allowVaulting", js.undefined)
     
-    @scala.inline
-    def setIncludeBillingPostalCode(value: Boolean): Self = StObject.set(x, "includeBillingPostalCode", value.asInstanceOf[js.Any])
+    inline def setIncludeBillingPostalCode(value: Boolean): Self = StObject.set(x, "includeBillingPostalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBillingPostalCodeUndefined: Self = StObject.set(x, "includeBillingPostalCode", js.undefined)
+    inline def setIncludeBillingPostalCodeUndefined: Self = StObject.set(x, "includeBillingPostalCode", js.undefined)
     
-    @scala.inline
-    def setRevokeAfter(value: Date): Self = StObject.set(x, "revokeAfter", value.asInstanceOf[js.Any])
+    inline def setRevokeAfter(value: Date): Self = StObject.set(x, "revokeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokeAfterUndefined: Self = StObject.set(x, "revokeAfter", js.undefined)
+    inline def setRevokeAfterUndefined: Self = StObject.set(x, "revokeAfter", js.undefined)
   }
 }

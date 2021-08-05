@@ -20,25 +20,19 @@ trait CADESCOM_ATTRIBUTE extends StObject {
 }
 object CADESCOM_ATTRIBUTE {
   
-  @scala.inline
-  def apply(): CADESCOM_ATTRIBUTE = {
+  inline def apply(): CADESCOM_ATTRIBUTE = {
     val __obj = js.Dynamic.literal(CADESCOM_ATTRIBUTE_OTHER = -1, CADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION = 2, CADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME = 1, CADESCOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME = 0)
     __obj.asInstanceOf[CADESCOM_ATTRIBUTE]
   }
   
-  @scala.inline
-  implicit class CADESCOM_ATTRIBUTEMutableBuilder[Self <: CADESCOM_ATTRIBUTE] (val x: Self) extends AnyVal {
+  extension [Self <: CADESCOM_ATTRIBUTE](x: Self) {
     
-    @scala.inline
-    def setCADESCOM_ATTRIBUTE_OTHER(value: `-1`): Self = StObject.set(x, "CADESCOM_ATTRIBUTE_OTHER", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_ATTRIBUTE_OTHER(value: `-1`): Self = StObject.set(x, "CADESCOM_ATTRIBUTE_OTHER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION(value: `2`): Self = StObject.set(x, "CADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION(value: `2`): Self = StObject.set(x, "CADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME(value: `1`): Self = StObject.set(x, "CADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME(value: `1`): Self = StObject.set(x, "CADESCOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_NAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME(value: `0`): Self = StObject.set(x, "CADESCOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME(value: `0`): Self = StObject.set(x, "CADESCOM_AUTHENTICATED_ATTRIBUTE_SIGNING_TIME", value.asInstanceOf[js.Any])
   }
 }

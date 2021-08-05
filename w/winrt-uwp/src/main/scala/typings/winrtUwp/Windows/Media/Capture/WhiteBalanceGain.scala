@@ -18,22 +18,17 @@ trait WhiteBalanceGain extends StObject {
 }
 object WhiteBalanceGain {
   
-  @scala.inline
-  def apply(b: Double, g: Double, r: Double): WhiteBalanceGain = {
+  inline def apply(b: Double, g: Double, r: Double): WhiteBalanceGain = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhiteBalanceGain]
   }
   
-  @scala.inline
-  implicit class WhiteBalanceGainMutableBuilder[Self <: WhiteBalanceGain] (val x: Self) extends AnyVal {
+  extension [Self <: WhiteBalanceGain](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

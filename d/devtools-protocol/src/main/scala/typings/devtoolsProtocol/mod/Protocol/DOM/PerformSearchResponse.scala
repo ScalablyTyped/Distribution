@@ -19,19 +19,15 @@ trait PerformSearchResponse extends StObject {
 }
 object PerformSearchResponse {
   
-  @scala.inline
-  def apply(resultCount: integer, searchId: String): PerformSearchResponse = {
+  inline def apply(resultCount: integer, searchId: String): PerformSearchResponse = {
     val __obj = js.Dynamic.literal(resultCount = resultCount.asInstanceOf[js.Any], searchId = searchId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformSearchResponse]
   }
   
-  @scala.inline
-  implicit class PerformSearchResponseMutableBuilder[Self <: PerformSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PerformSearchResponse](x: Self) {
     
-    @scala.inline
-    def setResultCount(value: integer): Self = StObject.set(x, "resultCount", value.asInstanceOf[js.Any])
+    inline def setResultCount(value: integer): Self = StObject.set(x, "resultCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
+    inline def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
   }
 }

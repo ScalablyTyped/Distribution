@@ -15,29 +15,25 @@ trait MultiSelector
      with SubjectSelector
 object MultiSelector {
   
-  @scala.inline
-  def Has(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Has = {
+  inline def Has(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Has = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("has")
     __obj.asInstanceOf[typings.esquery.mod.Has]
   }
   
-  @scala.inline
-  def Matches_(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Matches_ = {
+  inline def Matches_(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Matches_ = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("matches")
     __obj.asInstanceOf[typings.esquery.mod.Matches_]
   }
   
-  @scala.inline
-  def Negation(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Negation = {
+  inline def Negation(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Negation = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("not")
     __obj.asInstanceOf[typings.esquery.mod.Negation]
   }
   
-  @scala.inline
-  def Sequence(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Sequence = {
+  inline def Sequence(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Sequence = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("compound")
     __obj.asInstanceOf[typings.esquery.mod.Sequence]

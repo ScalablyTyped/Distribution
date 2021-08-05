@@ -12,6 +12,5 @@ object initMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initLayoutSize(hasEncodingSize: Size): LayoutSizeMixins = ^.asInstanceOf[js.Dynamic].applyDynamic("initLayoutSize")(hasEncodingSize.asInstanceOf[js.Any]).asInstanceOf[LayoutSizeMixins]
+  inline def initLayoutSize(hasEncodingSize: Size): LayoutSizeMixins = ^.asInstanceOf[js.Dynamic].applyDynamic("initLayoutSize")(hasEncodingSize.asInstanceOf[js.Any]).asInstanceOf[LayoutSizeMixins]
 }

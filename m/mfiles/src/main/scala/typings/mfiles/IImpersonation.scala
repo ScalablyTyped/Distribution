@@ -17,8 +17,7 @@ trait IImpersonation extends StObject {
 }
 object IImpersonation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Account: String,
     Clone: () => IImpersonation,
     ImpersonationType: MFImpersonationType,
@@ -28,19 +27,14 @@ object IImpersonation {
     __obj.asInstanceOf[IImpersonation]
   }
   
-  @scala.inline
-  implicit class IImpersonationMutableBuilder[Self <: IImpersonation] (val x: Self) extends AnyVal {
+  extension [Self <: IImpersonation](x: Self) {
     
-    @scala.inline
-    def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IImpersonation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IImpersonation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImpersonationType(value: MFImpersonationType): Self = StObject.set(x, "ImpersonationType", value.asInstanceOf[js.Any])
+    inline def setImpersonationType(value: MFImpersonationType): Self = StObject.set(x, "ImpersonationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

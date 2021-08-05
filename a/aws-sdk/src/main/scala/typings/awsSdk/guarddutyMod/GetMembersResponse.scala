@@ -18,25 +18,19 @@ trait GetMembersResponse extends StObject {
 }
 object GetMembersResponse {
   
-  @scala.inline
-  def apply(Members: Members, UnprocessedAccounts: UnprocessedAccounts): GetMembersResponse = {
+  inline def apply(Members: Members, UnprocessedAccounts: UnprocessedAccounts): GetMembersResponse = {
     val __obj = js.Dynamic.literal(Members = Members.asInstanceOf[js.Any], UnprocessedAccounts = UnprocessedAccounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembersResponse]
   }
   
-  @scala.inline
-  implicit class GetMembersResponseMutableBuilder[Self <: GetMembersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMembersResponse](x: Self) {
     
-    @scala.inline
-    def setMembers(value: Members): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: Members): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
+    inline def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
   }
 }

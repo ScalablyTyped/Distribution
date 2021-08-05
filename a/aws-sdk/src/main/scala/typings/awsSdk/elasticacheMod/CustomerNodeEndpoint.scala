@@ -18,25 +18,19 @@ trait CustomerNodeEndpoint extends StObject {
 }
 object CustomerNodeEndpoint {
   
-  @scala.inline
-  def apply(): CustomerNodeEndpoint = {
+  inline def apply(): CustomerNodeEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerNodeEndpoint]
   }
   
-  @scala.inline
-  implicit class CustomerNodeEndpointMutableBuilder[Self <: CustomerNodeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerNodeEndpoint](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

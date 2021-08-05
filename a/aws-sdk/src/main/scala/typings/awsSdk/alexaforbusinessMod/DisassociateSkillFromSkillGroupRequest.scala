@@ -18,22 +18,17 @@ trait DisassociateSkillFromSkillGroupRequest extends StObject {
 }
 object DisassociateSkillFromSkillGroupRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId): DisassociateSkillFromSkillGroupRequest = {
+  inline def apply(SkillId: SkillId): DisassociateSkillFromSkillGroupRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateSkillFromSkillGroupRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateSkillFromSkillGroupRequestMutableBuilder[Self <: DisassociateSkillFromSkillGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateSkillFromSkillGroupRequest](x: Self) {
     
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
+    inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
+    inline def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

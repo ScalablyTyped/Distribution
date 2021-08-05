@@ -13,19 +13,15 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(event: SyntheticEvent[typings.std.Element, typings.std.Event], page: Double): Event = {
+  inline def apply(event: SyntheticEvent[typings.std.Element, typings.std.Event], page: Double): Event = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setEvent(value: SyntheticEvent[typings.std.Element, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: SyntheticEvent[typings.std.Element, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLRenderStyle")
 @js.native
-class HTMLRenderStyle protected ()
+/* private */ class HTMLRenderStyle ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLRenderStyle {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLRenderStyle_typekey")
   var MSHTMLDotHTMLRenderStyle_typekey: typings.activexMshtml.MSHTML.HTMLRenderStyle = js.native
   

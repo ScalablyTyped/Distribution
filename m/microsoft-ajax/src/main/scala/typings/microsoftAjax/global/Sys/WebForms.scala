@@ -322,8 +322,7 @@ object WebForms {
       * @return The current instance of the PageRequestManager class. You do not create a new instance of the PageRequestManager class directly. Instead, an instance is available when partial-page rendering is enabled.
       */
     /* static member */
-    @scala.inline
-    def getInstance(): typings.microsoftAjax.Sys.WebForms.PageRequestManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.microsoftAjax.Sys.WebForms.PageRequestManager]
+    inline def getInstance(): typings.microsoftAjax.Sys.WebForms.PageRequestManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.microsoftAjax.Sys.WebForms.PageRequestManager]
   }
   
   //#region Exceptions: Defines exceptions that can occur during partial-page updates.

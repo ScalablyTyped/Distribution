@@ -13,16 +13,13 @@ trait DescribeRxNormInferenceJobRequest extends StObject {
 }
 object DescribeRxNormInferenceJobRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): DescribeRxNormInferenceJobRequest = {
+  inline def apply(JobId: JobId): DescribeRxNormInferenceJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRxNormInferenceJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRxNormInferenceJobRequestMutableBuilder[Self <: DescribeRxNormInferenceJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRxNormInferenceJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

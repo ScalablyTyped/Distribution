@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlFillWith extends StObject
 object XlFillWith {
   
-  @scala.inline
-  def xlFillWithAll: `-4104` = -4104.asInstanceOf[`-4104`]
+  inline def xlFillWithAll: `-4104` = -4104.asInstanceOf[`-4104`]
   
-  @scala.inline
-  def xlFillWithContents: `2` = 2.asInstanceOf[`2`]
+  inline def xlFillWithContents: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlFillWithFormats: `-4122` = -4122.asInstanceOf[`-4122`]
+  inline def xlFillWithFormats: `-4122` = -4122.asInstanceOf[`-4122`]
 }

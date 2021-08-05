@@ -87,94 +87,65 @@ trait EvaluateRequest extends StObject {
 }
 object EvaluateRequest {
   
-  @scala.inline
-  def apply(expression: String): EvaluateRequest = {
+  inline def apply(expression: String): EvaluateRequest = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluateRequest]
   }
   
-  @scala.inline
-  implicit class EvaluateRequestMutableBuilder[Self <: EvaluateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluateRequest](x: Self) {
     
-    @scala.inline
-    def setAllowUnsafeEvalBlockedByCSP(value: Boolean): Self = StObject.set(x, "allowUnsafeEvalBlockedByCSP", value.asInstanceOf[js.Any])
+    inline def setAllowUnsafeEvalBlockedByCSP(value: Boolean): Self = StObject.set(x, "allowUnsafeEvalBlockedByCSP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnsafeEvalBlockedByCSPUndefined: Self = StObject.set(x, "allowUnsafeEvalBlockedByCSP", js.undefined)
+    inline def setAllowUnsafeEvalBlockedByCSPUndefined: Self = StObject.set(x, "allowUnsafeEvalBlockedByCSP", js.undefined)
     
-    @scala.inline
-    def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
+    inline def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwaitPromiseUndefined: Self = StObject.set(x, "awaitPromise", js.undefined)
+    inline def setAwaitPromiseUndefined: Self = StObject.set(x, "awaitPromise", js.undefined)
     
-    @scala.inline
-    def setContextId(value: ExecutionContextId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: ExecutionContextId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
+    inline def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
     
-    @scala.inline
-    def setDisableBreaks(value: Boolean): Self = StObject.set(x, "disableBreaks", value.asInstanceOf[js.Any])
+    inline def setDisableBreaks(value: Boolean): Self = StObject.set(x, "disableBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableBreaksUndefined: Self = StObject.set(x, "disableBreaks", js.undefined)
+    inline def setDisableBreaksUndefined: Self = StObject.set(x, "disableBreaks", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
+    inline def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
+    inline def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
-    @scala.inline
-    def setIncludeCommandLineAPI(value: Boolean): Self = StObject.set(x, "includeCommandLineAPI", value.asInstanceOf[js.Any])
+    inline def setIncludeCommandLineAPI(value: Boolean): Self = StObject.set(x, "includeCommandLineAPI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCommandLineAPIUndefined: Self = StObject.set(x, "includeCommandLineAPI", js.undefined)
+    inline def setIncludeCommandLineAPIUndefined: Self = StObject.set(x, "includeCommandLineAPI", js.undefined)
     
-    @scala.inline
-    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
+    inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
+    inline def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
     
-    @scala.inline
-    def setReplMode(value: Boolean): Self = StObject.set(x, "replMode", value.asInstanceOf[js.Any])
+    inline def setReplMode(value: Boolean): Self = StObject.set(x, "replMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplModeUndefined: Self = StObject.set(x, "replMode", js.undefined)
+    inline def setReplModeUndefined: Self = StObject.set(x, "replMode", js.undefined)
     
-    @scala.inline
-    def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
+    inline def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
+    inline def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setThrowOnSideEffect(value: Boolean): Self = StObject.set(x, "throwOnSideEffect", value.asInstanceOf[js.Any])
+    inline def setThrowOnSideEffect(value: Boolean): Self = StObject.set(x, "throwOnSideEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrowOnSideEffectUndefined: Self = StObject.set(x, "throwOnSideEffect", js.undefined)
+    inline def setThrowOnSideEffectUndefined: Self = StObject.set(x, "throwOnSideEffect", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: TimeDelta): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: TimeDelta): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
+    inline def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGestureUndefined: Self = StObject.set(x, "userGesture", js.undefined)
+    inline def setUserGestureUndefined: Self = StObject.set(x, "userGesture", js.undefined)
   }
 }

@@ -59,8 +59,7 @@ trait IfAssignmentError extends StObject {
 }
 object IfAssignmentError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ifAssignmentError: Boolean,
     maxLoopIterations: Double,
     typeSkipKey: String,
@@ -70,19 +69,14 @@ object IfAssignmentError {
     __obj.asInstanceOf[IfAssignmentError]
   }
   
-  @scala.inline
-  implicit class IfAssignmentErrorMutableBuilder[Self <: IfAssignmentError] (val x: Self) extends AnyVal {
+  extension [Self <: IfAssignmentError](x: Self) {
     
-    @scala.inline
-    def setIfAssignmentError(value: Boolean): Self = StObject.set(x, "ifAssignmentError", value.asInstanceOf[js.Any])
+    inline def setIfAssignmentError(value: Boolean): Self = StObject.set(x, "ifAssignmentError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLoopIterations(value: Double): Self = StObject.set(x, "maxLoopIterations", value.asInstanceOf[js.Any])
+    inline def setMaxLoopIterations(value: Double): Self = StObject.set(x, "maxLoopIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeSkipKey(value: String): Self = StObject.set(x, "typeSkipKey", value.asInstanceOf[js.Any])
+    inline def setTypeSkipKey(value: String): Self = StObject.set(x, "typeSkipKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVisitedPassages(value: Boolean): Self = StObject.set(x, "typeVisitedPassages", value.asInstanceOf[js.Any])
+    inline def setTypeVisitedPassages(value: Boolean): Self = StObject.set(x, "typeVisitedPassages", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait UpdateItemOutput
      with typings.awsSdkClientDynamodbBrowser.typesUpdateItemOutputMod.UpdateItemOutput
 object UpdateItemOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UpdateItemOutput = {
+  inline def apply($metadata: ResponseMetadata): UpdateItemOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateItemOutput]
   }

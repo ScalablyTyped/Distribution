@@ -23,27 +23,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdWrapType extends StObject
 object WdWrapType {
   
-  @scala.inline
-  def wdWrapBehind: `5` = 5.asInstanceOf[`5`]
+  inline def wdWrapBehind: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdWrapFront: `3` = 3.asInstanceOf[`3`]
+  inline def wdWrapFront: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdWrapInline: `7` = 7.asInstanceOf[`7`]
+  inline def wdWrapInline: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdWrapNone: `3` = 3.asInstanceOf[`3`]
+  inline def wdWrapNone: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdWrapSquare: `0` = 0.asInstanceOf[`0`]
+  inline def wdWrapSquare: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdWrapThrough: `2` = 2.asInstanceOf[`2`]
+  inline def wdWrapThrough: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdWrapTight: `1` = 1.asInstanceOf[`1`]
+  inline def wdWrapTight: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdWrapTopBottom: `4` = 4.asInstanceOf[`4`]
+  inline def wdWrapTopBottom: `4` = 4.asInstanceOf[`4`]
 }

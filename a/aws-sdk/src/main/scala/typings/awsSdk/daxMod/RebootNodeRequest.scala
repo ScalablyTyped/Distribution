@@ -18,19 +18,15 @@ trait RebootNodeRequest extends StObject {
 }
 object RebootNodeRequest {
   
-  @scala.inline
-  def apply(ClusterName: String, NodeId: String): RebootNodeRequest = {
+  inline def apply(ClusterName: String, NodeId: String): RebootNodeRequest = {
     val __obj = js.Dynamic.literal(ClusterName = ClusterName.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootNodeRequest]
   }
   
-  @scala.inline
-  implicit class RebootNodeRequestMutableBuilder[Self <: RebootNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RebootNodeRequest](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: String): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: String): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait History extends StObject {
 }
 object History {
   
-  @scala.inline
-  def apply(): History = {
+  inline def apply(): History = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[History]
   }
   
-  @scala.inline
-  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+  extension [Self <: History](x: Self) {
     
-    @scala.inline
-    def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setMarkerLayers(value: Boolean): Self = StObject.set(x, "markerLayers", value.asInstanceOf[js.Any])
+    inline def setMarkerLayers(value: Boolean): Self = StObject.set(x, "markerLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerLayersUndefined: Self = StObject.set(x, "markerLayers", js.undefined)
+    inline def setMarkerLayersUndefined: Self = StObject.set(x, "markerLayers", js.undefined)
   }
 }

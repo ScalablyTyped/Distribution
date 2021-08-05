@@ -76,85 +76,59 @@ trait ParamsResourceConversionGet
 }
 object ParamsResourceConversionGet {
   
-  @scala.inline
-  def apply(): ParamsResourceConversionGet = {
+  inline def apply(): ParamsResourceConversionGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceConversionGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceConversionGetMutableBuilder[Self <: ParamsResourceConversionGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceConversionGet](x: Self) {
     
-    @scala.inline
-    def setAdGroupId(value: String): Self = StObject.set(x, "adGroupId", value.asInstanceOf[js.Any])
+    inline def setAdGroupId(value: String): Self = StObject.set(x, "adGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdGroupIdUndefined: Self = StObject.set(x, "adGroupId", js.undefined)
+    inline def setAdGroupIdUndefined: Self = StObject.set(x, "adGroupId", js.undefined)
     
-    @scala.inline
-    def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
+    inline def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdIdUndefined: Self = StObject.set(x, "adId", js.undefined)
+    inline def setAdIdUndefined: Self = StObject.set(x, "adId", js.undefined)
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
+    inline def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
+    inline def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
+    inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
-    @scala.inline
-    def setCriterionId(value: String): Self = StObject.set(x, "criterionId", value.asInstanceOf[js.Any])
+    inline def setCriterionId(value: String): Self = StObject.set(x, "criterionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriterionIdUndefined: Self = StObject.set(x, "criterionId", js.undefined)
+    inline def setCriterionIdUndefined: Self = StObject.set(x, "criterionId", js.undefined)
     
-    @scala.inline
-    def setEndDate(value: Double): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Double): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setEngineAccountId(value: String): Self = StObject.set(x, "engineAccountId", value.asInstanceOf[js.Any])
+    inline def setEngineAccountId(value: String): Self = StObject.set(x, "engineAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineAccountIdUndefined: Self = StObject.set(x, "engineAccountId", js.undefined)
+    inline def setEngineAccountIdUndefined: Self = StObject.set(x, "engineAccountId", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: Double): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Double): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+    inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
+    inline def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
   }
 }

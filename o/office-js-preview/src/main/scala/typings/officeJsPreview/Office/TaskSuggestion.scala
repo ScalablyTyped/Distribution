@@ -30,22 +30,17 @@ trait TaskSuggestion extends StObject {
 }
 object TaskSuggestion {
   
-  @scala.inline
-  def apply(assignees: js.Array[EmailUser], taskString: String): TaskSuggestion = {
+  inline def apply(assignees: js.Array[EmailUser], taskString: String): TaskSuggestion = {
     val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], taskString = taskString.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskSuggestion]
   }
   
-  @scala.inline
-  implicit class TaskSuggestionMutableBuilder[Self <: TaskSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: TaskSuggestion](x: Self) {
     
-    @scala.inline
-    def setAssignees(value: js.Array[EmailUser]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+    inline def setAssignees(value: js.Array[EmailUser]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigneesVarargs(value: EmailUser*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+    inline def setAssigneesVarargs(value: EmailUser*): Self = StObject.set(x, "assignees", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskString(value: String): Self = StObject.set(x, "taskString", value.asInstanceOf[js.Any])
+    inline def setTaskString(value: String): Self = StObject.set(x, "taskString", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ object constantsMod {
     @JSImport("@storybook/addon-backgrounds/dist/constants", "EVENTS.UPDATE")
     @js.native
     def UPDATE: String = js.native
-    @scala.inline
-    def UPDATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPDATE")(x.asInstanceOf[js.Any])
+    inline def UPDATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPDATE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/addon-backgrounds/dist/constants", "GRID_PARAM_KEY")

@@ -16,23 +16,18 @@ object anon {
   }
   object ARIACHECKEDATTR {
     
-    @scala.inline
-    def apply(ARIA_CHECKED_ATTR: String, NATIVE_CONTROL_SELECTOR: String, RIPPLE_SURFACE_SELECTOR: String): ARIACHECKEDATTR = {
+    inline def apply(ARIA_CHECKED_ATTR: String, NATIVE_CONTROL_SELECTOR: String, RIPPLE_SURFACE_SELECTOR: String): ARIACHECKEDATTR = {
       val __obj = js.Dynamic.literal(ARIA_CHECKED_ATTR = ARIA_CHECKED_ATTR.asInstanceOf[js.Any], NATIVE_CONTROL_SELECTOR = NATIVE_CONTROL_SELECTOR.asInstanceOf[js.Any], RIPPLE_SURFACE_SELECTOR = RIPPLE_SURFACE_SELECTOR.asInstanceOf[js.Any])
       __obj.asInstanceOf[ARIACHECKEDATTR]
     }
     
-    @scala.inline
-    implicit class ARIACHECKEDATTRMutableBuilder[Self <: ARIACHECKEDATTR] (val x: Self) extends AnyVal {
+    extension [Self <: ARIACHECKEDATTR](x: Self) {
       
-      @scala.inline
-      def setARIA_CHECKED_ATTR(value: String): Self = StObject.set(x, "ARIA_CHECKED_ATTR", value.asInstanceOf[js.Any])
+      inline def setARIA_CHECKED_ATTR(value: String): Self = StObject.set(x, "ARIA_CHECKED_ATTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNATIVE_CONTROL_SELECTOR(value: String): Self = StObject.set(x, "NATIVE_CONTROL_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setNATIVE_CONTROL_SELECTOR(value: String): Self = StObject.set(x, "NATIVE_CONTROL_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRIPPLE_SURFACE_SELECTOR(value: String): Self = StObject.set(x, "RIPPLE_SURFACE_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setRIPPLE_SURFACE_SELECTOR(value: String): Self = StObject.set(x, "RIPPLE_SURFACE_SELECTOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,20 +39,16 @@ object anon {
   }
   object CHECKED {
     
-    @scala.inline
-    def apply(CHECKED: String, DISABLED: String): CHECKED = {
+    inline def apply(CHECKED: String, DISABLED: String): CHECKED = {
       val __obj = js.Dynamic.literal(CHECKED = CHECKED.asInstanceOf[js.Any], DISABLED = DISABLED.asInstanceOf[js.Any])
       __obj.asInstanceOf[CHECKED]
     }
     
-    @scala.inline
-    implicit class CHECKEDMutableBuilder[Self <: CHECKED] (val x: Self) extends AnyVal {
+    extension [Self <: CHECKED](x: Self) {
       
-      @scala.inline
-      def setCHECKED(value: String): Self = StObject.set(x, "CHECKED", value.asInstanceOf[js.Any])
+      inline def setCHECKED(value: String): Self = StObject.set(x, "CHECKED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDISABLED(value: String): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
+      inline def setDISABLED(value: String): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,44 +67,32 @@ object anon {
   }
   object PartialMDCSwitchAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCSwitchAdapter = {
+    inline def apply(): PartialMDCSwitchAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCSwitchAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCSwitchAdapterMutableBuilder[Self <: PartialMDCSwitchAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCSwitchAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setSetNativeControlAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setNativeControlAttr", js.Any.fromFunction2(value))
+      inline def setSetNativeControlAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setNativeControlAttr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetNativeControlAttrUndefined: Self = StObject.set(x, "setNativeControlAttr", js.undefined)
+      inline def setSetNativeControlAttrUndefined: Self = StObject.set(x, "setNativeControlAttr", js.undefined)
       
-      @scala.inline
-      def setSetNativeControlChecked(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "setNativeControlChecked", js.Any.fromFunction1(value))
+      inline def setSetNativeControlChecked(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "setNativeControlChecked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNativeControlCheckedUndefined: Self = StObject.set(x, "setNativeControlChecked", js.undefined)
+      inline def setSetNativeControlCheckedUndefined: Self = StObject.set(x, "setNativeControlChecked", js.undefined)
       
-      @scala.inline
-      def setSetNativeControlDisabled(value: /* disabled */ Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
+      inline def setSetNativeControlDisabled(value: /* disabled */ Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNativeControlDisabledUndefined: Self = StObject.set(x, "setNativeControlDisabled", js.undefined)
+      inline def setSetNativeControlDisabledUndefined: Self = StObject.set(x, "setNativeControlDisabled", js.undefined)
     }
   }
 }

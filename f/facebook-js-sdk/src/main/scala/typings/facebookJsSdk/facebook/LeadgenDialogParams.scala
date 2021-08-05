@@ -21,25 +21,19 @@ trait LeadgenDialogParams
 }
 object LeadgenDialogParams {
   
-  @scala.inline
-  def apply(account_id: String, page_id: String): LeadgenDialogParams = {
+  inline def apply(account_id: String, page_id: String): LeadgenDialogParams = {
     val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = "popup", method = "lead_gen", page_id = page_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeadgenDialogParams]
   }
   
-  @scala.inline
-  implicit class LeadgenDialogParamsMutableBuilder[Self <: LeadgenDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: LeadgenDialogParams](x: Self) {
     
-    @scala.inline
-    def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    inline def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: lead_gen): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: lead_gen): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
+    inline def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait `0`[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: T
 }
 object `0` {
   
-  @scala.inline
-  def apply[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](): `0`[A, U, S, VR] = {
+  inline def apply[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](): `0`[A, U, S, VR] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`0`[A, U, S, VR]]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] (val x: Self & (`0`[A, U, S, VR])) extends AnyVal {
+  extension [Self <: `0`[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](x: Self & (`0`[A, U, S, VR])) {
     
-    @scala.inline
-    def setModels(value: Session[A, U, S, VR]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: Session[A, U, S, VR]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
   }
 }

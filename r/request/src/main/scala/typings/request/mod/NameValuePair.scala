@@ -12,19 +12,15 @@ trait NameValuePair extends StObject {
 }
 object NameValuePair {
   
-  @scala.inline
-  def apply(name: String, value: String): NameValuePair = {
+  inline def apply(name: String, value: String): NameValuePair = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameValuePair]
   }
   
-  @scala.inline
-  implicit class NameValuePairMutableBuilder[Self <: NameValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: NameValuePair](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

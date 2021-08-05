@@ -31,25 +31,19 @@ trait SchemaGoogleSheetsOptions extends StObject {
 }
 object SchemaGoogleSheetsOptions {
   
-  @scala.inline
-  def apply(): SchemaGoogleSheetsOptions = {
+  inline def apply(): SchemaGoogleSheetsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleSheetsOptions]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleSheetsOptionsMutableBuilder[Self <: SchemaGoogleSheetsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleSheetsOptions](x: Self) {
     
-    @scala.inline
-    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSkipLeadingRows(value: String): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
+    inline def setSkipLeadingRows(value: String): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
+    inline def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
   }
 }

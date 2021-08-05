@@ -16,7 +16,7 @@ object componentsClickOutsideClickOutsideMod {
     extends PureComponent[ClickOutsideProps, js.Object, js.Any] {
     def this(props: js.Any) = this()
     
-    val _boundEvents: js.Any = js.native
+    /* private */ val _boundEvents: js.Any = js.native
     
     /**
       * Check whether the click is inside the element or excluded
@@ -66,38 +66,28 @@ object componentsClickOutsideClickOutsideMod {
   }
   object ClickOutsideProps {
     
-    @scala.inline
-    def apply(rootRef: RefObject[HTMLElement]): ClickOutsideProps = {
+    inline def apply(rootRef: RefObject[HTMLElement]): ClickOutsideProps = {
       val __obj = js.Dynamic.literal(rootRef = rootRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClickOutsideProps]
     }
     
-    @scala.inline
-    implicit class ClickOutsidePropsMutableBuilder[Self <: ClickOutsideProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClickOutsideProps](x: Self) {
       
-      @scala.inline
-      def setExcludeClass(value: String | js.Array[String]): Self = StObject.set(x, "excludeClass", value.asInstanceOf[js.Any])
+      inline def setExcludeClass(value: String | js.Array[String]): Self = StObject.set(x, "excludeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeClassUndefined: Self = StObject.set(x, "excludeClass", js.undefined)
+      inline def setExcludeClassUndefined: Self = StObject.set(x, "excludeClass", js.undefined)
       
-      @scala.inline
-      def setExcludeClassVarargs(value: String*): Self = StObject.set(x, "excludeClass", js.Array(value :_*))
+      inline def setExcludeClassVarargs(value: String*): Self = StObject.set(x, "excludeClass", js.Array(value :_*))
       
-      @scala.inline
-      def setOnClickOutside(value: js.Function): Self = StObject.set(x, "onClickOutside", value.asInstanceOf[js.Any])
+      inline def setOnClickOutside(value: js.Function): Self = StObject.set(x, "onClickOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
+      inline def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Boolean | AddEventListenerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Boolean | AddEventListenerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRootRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
+      inline def setRootRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
     }
   }
 }

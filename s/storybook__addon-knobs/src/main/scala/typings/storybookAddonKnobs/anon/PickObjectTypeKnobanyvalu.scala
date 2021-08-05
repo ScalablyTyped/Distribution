@@ -11,16 +11,13 @@ trait PickObjectTypeKnobanyvalu extends StObject {
 }
 object PickObjectTypeKnobanyvalu {
   
-  @scala.inline
-  def apply(value: js.Any): PickObjectTypeKnobanyvalu = {
+  inline def apply(value: js.Any): PickObjectTypeKnobanyvalu = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickObjectTypeKnobanyvalu]
   }
   
-  @scala.inline
-  implicit class PickObjectTypeKnobanyvaluMutableBuilder[Self <: PickObjectTypeKnobanyvalu] (val x: Self) extends AnyVal {
+  extension [Self <: PickObjectTypeKnobanyvalu](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

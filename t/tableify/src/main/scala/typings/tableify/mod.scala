@@ -9,39 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: T): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: T, columns: Unit, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: Unit, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: T): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: Unit, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: Unit, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("tableify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaults(config: Config): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(config.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  inline def defaults(config: Config): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(config.asInstanceOf[js.Any]).asInstanceOf[FnCall]
   
   trait Config extends StObject {
     
@@ -51,26 +37,20 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
+      inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassPrefixUndefined: Self = StObject.set(x, "classPrefix", js.undefined)
+      inline def setClassPrefixUndefined: Self = StObject.set(x, "classPrefix", js.undefined)
       
-      @scala.inline
-      def setClasses(value: Boolean): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Boolean): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     }
   }
 }

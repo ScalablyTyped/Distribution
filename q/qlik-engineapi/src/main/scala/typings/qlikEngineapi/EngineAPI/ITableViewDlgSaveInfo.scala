@@ -30,22 +30,17 @@ trait ITableViewDlgSaveInfo extends StObject {
 }
 object ITableViewDlgSaveInfo {
   
-  @scala.inline
-  def apply(qCtlInfo: ITableViewCtlSaveInfo, qMode: Double, qPos: IRect): ITableViewDlgSaveInfo = {
+  inline def apply(qCtlInfo: ITableViewCtlSaveInfo, qMode: Double, qPos: IRect): ITableViewDlgSaveInfo = {
     val __obj = js.Dynamic.literal(qCtlInfo = qCtlInfo.asInstanceOf[js.Any], qMode = qMode.asInstanceOf[js.Any], qPos = qPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableViewDlgSaveInfo]
   }
   
-  @scala.inline
-  implicit class ITableViewDlgSaveInfoMutableBuilder[Self <: ITableViewDlgSaveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ITableViewDlgSaveInfo](x: Self) {
     
-    @scala.inline
-    def setQCtlInfo(value: ITableViewCtlSaveInfo): Self = StObject.set(x, "qCtlInfo", value.asInstanceOf[js.Any])
+    inline def setQCtlInfo(value: ITableViewCtlSaveInfo): Self = StObject.set(x, "qCtlInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMode(value: Double): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
+    inline def setQMode(value: Double): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPos(value: IRect): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
+    inline def setQPos(value: IRect): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait TrialComponentStatus extends StObject {
 }
 object TrialComponentStatus {
   
-  @scala.inline
-  def apply(): TrialComponentStatus = {
+  inline def apply(): TrialComponentStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrialComponentStatus]
   }
   
-  @scala.inline
-  implicit class TrialComponentStatusMutableBuilder[Self <: TrialComponentStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TrialComponentStatus](x: Self) {
     
-    @scala.inline
-    def setMessage(value: TrialComponentStatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: TrialComponentStatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setPrimaryStatus(value: TrialComponentPrimaryStatus): Self = StObject.set(x, "PrimaryStatus", value.asInstanceOf[js.Any])
+    inline def setPrimaryStatus(value: TrialComponentPrimaryStatus): Self = StObject.set(x, "PrimaryStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryStatusUndefined: Self = StObject.set(x, "PrimaryStatus", js.undefined)
+    inline def setPrimaryStatusUndefined: Self = StObject.set(x, "PrimaryStatus", js.undefined)
   }
 }

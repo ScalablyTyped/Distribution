@@ -46,50 +46,36 @@ trait SelectFilter
 }
 object SelectFilter {
   
-  @scala.inline
-  def apply(options: SelectFilterOptionsType): SelectFilter = {
+  inline def apply(options: SelectFilterOptionsType): SelectFilter = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SelectFilter")
     __obj.asInstanceOf[SelectFilter]
   }
   
-  @scala.inline
-  implicit class SelectFilterMutableBuilder[Self <: SelectFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SelectFilter](x: Self) {
     
-    @scala.inline
-    def setCondition(value: FilterCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: FilterCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: String | Double | Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String | Double | Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setOptions(value: SelectFilterOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SelectFilterOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectText(value: String): Self = StObject.set(x, "selectText", value.asInstanceOf[js.Any])
+    inline def setSelectText(value: String): Self = StObject.set(x, "selectText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectTextUndefined: Self = StObject.set(x, "selectText", js.undefined)
+    inline def setSelectTextUndefined: Self = StObject.set(x, "selectText", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
+    inline def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
+    inline def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
   }
 }

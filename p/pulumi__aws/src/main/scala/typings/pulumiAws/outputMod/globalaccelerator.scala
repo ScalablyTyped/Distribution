@@ -25,32 +25,24 @@ object globalaccelerator {
   }
   object AcceleratorAttributes {
     
-    @scala.inline
-    def apply(): AcceleratorAttributes = {
+    inline def apply(): AcceleratorAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AcceleratorAttributes]
     }
     
-    @scala.inline
-    implicit class AcceleratorAttributesMutableBuilder[Self <: AcceleratorAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: AcceleratorAttributes](x: Self) {
       
-      @scala.inline
-      def setFlowLogsEnabled(value: Boolean): Self = StObject.set(x, "flowLogsEnabled", value.asInstanceOf[js.Any])
+      inline def setFlowLogsEnabled(value: Boolean): Self = StObject.set(x, "flowLogsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowLogsEnabledUndefined: Self = StObject.set(x, "flowLogsEnabled", js.undefined)
+      inline def setFlowLogsEnabledUndefined: Self = StObject.set(x, "flowLogsEnabled", js.undefined)
       
-      @scala.inline
-      def setFlowLogsS3Bucket(value: String): Self = StObject.set(x, "flowLogsS3Bucket", value.asInstanceOf[js.Any])
+      inline def setFlowLogsS3Bucket(value: String): Self = StObject.set(x, "flowLogsS3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowLogsS3BucketUndefined: Self = StObject.set(x, "flowLogsS3Bucket", js.undefined)
+      inline def setFlowLogsS3BucketUndefined: Self = StObject.set(x, "flowLogsS3Bucket", js.undefined)
       
-      @scala.inline
-      def setFlowLogsS3Prefix(value: String): Self = StObject.set(x, "flowLogsS3Prefix", value.asInstanceOf[js.Any])
+      inline def setFlowLogsS3Prefix(value: String): Self = StObject.set(x, "flowLogsS3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowLogsS3PrefixUndefined: Self = StObject.set(x, "flowLogsS3Prefix", js.undefined)
+      inline def setFlowLogsS3PrefixUndefined: Self = StObject.set(x, "flowLogsS3Prefix", js.undefined)
     }
   }
   
@@ -68,23 +60,18 @@ object globalaccelerator {
   }
   object AcceleratorIpSet {
     
-    @scala.inline
-    def apply(ipAddresses: js.Array[String], ipFamily: String): AcceleratorIpSet = {
+    inline def apply(ipAddresses: js.Array[String], ipFamily: String): AcceleratorIpSet = {
       val __obj = js.Dynamic.literal(ipAddresses = ipAddresses.asInstanceOf[js.Any], ipFamily = ipFamily.asInstanceOf[js.Any])
       __obj.asInstanceOf[AcceleratorIpSet]
     }
     
-    @scala.inline
-    implicit class AcceleratorIpSetMutableBuilder[Self <: AcceleratorIpSet] (val x: Self) extends AnyVal {
+    extension [Self <: AcceleratorIpSet](x: Self) {
       
-      @scala.inline
-      def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
+      inline def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
+      inline def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
       
-      @scala.inline
-      def setIpFamily(value: String): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
+      inline def setIpFamily(value: String): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,29 +91,22 @@ object globalaccelerator {
   }
   object EndpointGroupEndpointConfiguration {
     
-    @scala.inline
-    def apply(clientIpPreservationEnabled: Boolean): EndpointGroupEndpointConfiguration = {
+    inline def apply(clientIpPreservationEnabled: Boolean): EndpointGroupEndpointConfiguration = {
       val __obj = js.Dynamic.literal(clientIpPreservationEnabled = clientIpPreservationEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointGroupEndpointConfiguration]
     }
     
-    @scala.inline
-    implicit class EndpointGroupEndpointConfigurationMutableBuilder[Self <: EndpointGroupEndpointConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointGroupEndpointConfiguration](x: Self) {
       
-      @scala.inline
-      def setClientIpPreservationEnabled(value: Boolean): Self = StObject.set(x, "clientIpPreservationEnabled", value.asInstanceOf[js.Any])
+      inline def setClientIpPreservationEnabled(value: Boolean): Self = StObject.set(x, "clientIpPreservationEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
+      inline def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointIdUndefined: Self = StObject.set(x, "endpointId", js.undefined)
+      inline def setEndpointIdUndefined: Self = StObject.set(x, "endpointId", js.undefined)
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
   
@@ -144,20 +124,16 @@ object globalaccelerator {
   }
   object EndpointGroupPortOverride {
     
-    @scala.inline
-    def apply(endpointPort: Double, listenerPort: Double): EndpointGroupPortOverride = {
+    inline def apply(endpointPort: Double, listenerPort: Double): EndpointGroupPortOverride = {
       val __obj = js.Dynamic.literal(endpointPort = endpointPort.asInstanceOf[js.Any], listenerPort = listenerPort.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointGroupPortOverride]
     }
     
-    @scala.inline
-    implicit class EndpointGroupPortOverrideMutableBuilder[Self <: EndpointGroupPortOverride] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointGroupPortOverride](x: Self) {
       
-      @scala.inline
-      def setEndpointPort(value: Double): Self = StObject.set(x, "endpointPort", value.asInstanceOf[js.Any])
+      inline def setEndpointPort(value: Double): Self = StObject.set(x, "endpointPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerPort(value: Double): Self = StObject.set(x, "listenerPort", value.asInstanceOf[js.Any])
+      inline def setListenerPort(value: Double): Self = StObject.set(x, "listenerPort", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,26 +151,20 @@ object globalaccelerator {
   }
   object ListenerPortRange {
     
-    @scala.inline
-    def apply(): ListenerPortRange = {
+    inline def apply(): ListenerPortRange = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListenerPortRange]
     }
     
-    @scala.inline
-    implicit class ListenerPortRangeMutableBuilder[Self <: ListenerPortRange] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerPortRange](x: Self) {
       
-      @scala.inline
-      def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
+      inline def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
+      inline def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
       
-      @scala.inline
-      def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
+      inline def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
+      inline def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
     }
   }
 }

@@ -13,22 +13,17 @@ trait DocumentHtmlDefinitions extends StObject {
 }
 object DocumentHtmlDefinitions {
   
-  @scala.inline
-  def apply(): DocumentHtmlDefinitions = {
+  inline def apply(): DocumentHtmlDefinitions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentHtmlDefinitions]
   }
   
-  @scala.inline
-  implicit class DocumentHtmlDefinitionsMutableBuilder[Self <: DocumentHtmlDefinitions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHtmlDefinitions](x: Self) {
     
-    @scala.inline
-    def setHtmlDefinitions(value: js.Array[String]): Self = StObject.set(x, "htmlDefinitions", value.asInstanceOf[js.Any])
+    inline def setHtmlDefinitions(value: js.Array[String]): Self = StObject.set(x, "htmlDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlDefinitionsUndefined: Self = StObject.set(x, "htmlDefinitions", js.undefined)
+    inline def setHtmlDefinitionsUndefined: Self = StObject.set(x, "htmlDefinitions", js.undefined)
     
-    @scala.inline
-    def setHtmlDefinitionsVarargs(value: String*): Self = StObject.set(x, "htmlDefinitions", js.Array(value :_*))
+    inline def setHtmlDefinitionsVarargs(value: String*): Self = StObject.set(x, "htmlDefinitions", js.Array(value :_*))
   }
 }

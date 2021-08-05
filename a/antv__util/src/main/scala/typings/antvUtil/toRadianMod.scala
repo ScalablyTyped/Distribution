@@ -10,6 +10,5 @@ object toRadianMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

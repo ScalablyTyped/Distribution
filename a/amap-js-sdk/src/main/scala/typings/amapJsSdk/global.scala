@@ -1095,14 +1095,12 @@ object global {
       ): Unit = js.native
     }
     
-    @scala.inline
-    def convertFrom(
+    inline def convertFrom(
       lnglat: js.Array[typings.amapJsSdk.AMap.LngLat],
       `type`: String,
       result: js.Function2[/* status */ String, /* result */ ConvertorResult, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFrom")(lnglat.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def convertFrom(
+    inline def convertFrom(
       lnglat: js.Tuple2[Double, Double],
       `type`: String,
       result: js.Function2[/* status */ String, /* result */ ConvertorResult, Unit]
@@ -1110,8 +1108,7 @@ object global {
     /**
       * 坐标转换
       */
-    @scala.inline
-    def convertFrom(
+    inline def convertFrom(
       lnglat: typings.amapJsSdk.AMap.LngLat,
       `type`: String,
       result: js.Function2[/* status */ String, /* result */ ConvertorResult, Unit]
@@ -1130,10 +1127,8 @@ object global {
         * @param handler：事件功能函数（必填）
         * @param context：事件上下文（可选，缺省时，handler中this指向参数instance引用的对象，否则this指向context引用的对象）
         */
-      @scala.inline
-      def addDomListener(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
-      @scala.inline
-      def addDomListener(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addDomListener(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addDomListener(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
       
       /**
         * 注册对象事件：给对象注册事件，并返回eventListener。运行AMap.event.removeListener(eventListener)可以删除该事件的监听器。
@@ -1142,30 +1137,24 @@ object global {
         * @param handler：事件功能函数（必填）
         * @param context：事件上下文（可选，缺省时，handler中this指向参数instance引用的对象，否则this指向context引用的对象）
         */
-      @scala.inline
-      def addListener(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
-      @scala.inline
-      def addListener(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListener(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListener(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
       
       /**
         * 类似于addListener，但处理程序会在处理完第一个事件后将自已移除。
         */
-      @scala.inline
-      def addListenerOnce(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
-      @scala.inline
-      def addListenerOnce(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListenerOnce(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListenerOnce(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
       
       /**
         * 删除由上述 event.addDomListener 和 event.addListener 传回的指定侦听器。
         */
-      @scala.inline
-      def removeListener(listener: EventListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def removeListener(listener: EventListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * 触发非DOM事件：触发非DOM事件eventName，extArgs将扩展到事件监听函数（handler）接受到的event参数中。如:在extArgs内写入{m:10,p:2}，eventName监听函数（handler）可以接收到包含m,p两个key值的event对象。
         */
-      @scala.inline
-      def trigger(instance: js.Any, eventName: String, extArgs: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], extArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def trigger(instance: js.Any, eventName: String, extArgs: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], extArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /**
@@ -1173,19 +1162,15 @@ object global {
       * @param pluginNames
       * @param ready
       */
-    @scala.inline
-    def plugin(pluginNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(pluginNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def plugin(pluginNames: js.Array[String], ready: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(pluginNames.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def plugin(pluginNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(pluginNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def plugin(pluginNames: js.Array[String], ready: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(pluginNames.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * 加载服务
       * @param serviceName
       * @param ready
       */
-    @scala.inline
-    def service(serviceName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("service")(serviceName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def service(serviceName: String, ready: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("service")(serviceName.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def service(serviceName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("service")(serviceName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def service(serviceName: String, ready: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("service")(serviceName.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

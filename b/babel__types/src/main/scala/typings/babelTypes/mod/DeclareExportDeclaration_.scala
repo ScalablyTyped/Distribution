@@ -27,44 +27,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DeclareExportDeclaration_ {
   
-  @scala.inline
-  def apply(): DeclareExportDeclaration_ = {
+  inline def apply(): DeclareExportDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, source = null, specifiers = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DeclareExportDeclaration")
     __obj.asInstanceOf[DeclareExportDeclaration_]
   }
   
-  @scala.inline
-  implicit class DeclareExportDeclaration_MutableBuilder[Self <: DeclareExportDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareExportDeclaration_](x: Self) {
     
-    @scala.inline
-    def setDeclaration(value: Flow): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    inline def setDeclaration(value: Flow): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationNull: Self = StObject.set(x, "declaration", null)
+    inline def setDeclarationNull: Self = StObject.set(x, "declaration", null)
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSpecifiers(value: js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
+    inline def setSpecifiers(value: js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecifiersNull: Self = StObject.set(x, "specifiers", null)
+    inline def setSpecifiersNull: Self = StObject.set(x, "specifiers", null)
     
-    @scala.inline
-    def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+    inline def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: DeclareExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclareExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

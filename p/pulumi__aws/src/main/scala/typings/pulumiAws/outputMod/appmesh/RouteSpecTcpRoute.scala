@@ -18,22 +18,17 @@ trait RouteSpecTcpRoute extends StObject {
 }
 object RouteSpecTcpRoute {
   
-  @scala.inline
-  def apply(action: RouteSpecTcpRouteAction): RouteSpecTcpRoute = {
+  inline def apply(action: RouteSpecTcpRouteAction): RouteSpecTcpRoute = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecTcpRoute]
   }
   
-  @scala.inline
-  implicit class RouteSpecTcpRouteMutableBuilder[Self <: RouteSpecTcpRoute] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecTcpRoute](x: Self) {
     
-    @scala.inline
-    def setAction(value: RouteSpecTcpRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RouteSpecTcpRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: RouteSpecTcpRouteTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: RouteSpecTcpRouteTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

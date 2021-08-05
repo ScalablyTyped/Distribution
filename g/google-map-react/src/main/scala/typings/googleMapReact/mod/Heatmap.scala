@@ -13,22 +13,17 @@ trait Heatmap extends StObject {
 }
 object Heatmap {
   
-  @scala.inline
-  def apply(options: Opacity, positions: js.Array[Position]): Heatmap = {
+  inline def apply(options: Opacity, positions: js.Array[Position]): Heatmap = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], positions = positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Heatmap]
   }
   
-  @scala.inline
-  implicit class HeatmapMutableBuilder[Self <: Heatmap] (val x: Self) extends AnyVal {
+  extension [Self <: Heatmap](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Opacity): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Opacity): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositions(value: js.Array[Position]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[Position]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value :_*))
   }
 }

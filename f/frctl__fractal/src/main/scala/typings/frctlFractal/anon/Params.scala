@@ -12,19 +12,15 @@ trait Params extends StObject {
 }
 object Params {
   
-  @scala.inline
-  def apply(params: js.Any, route: View): Params = {
+  inline def apply(params: js.Any, route: View): Params = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
   
-  @scala.inline
-  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+  extension [Self <: Params](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute(value: View): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: View): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

@@ -22,31 +22,23 @@ trait SchemaAggregationInfo extends StObject {
 }
 object SchemaAggregationInfo {
   
-  @scala.inline
-  def apply(): SchemaAggregationInfo = {
+  inline def apply(): SchemaAggregationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAggregationInfo]
   }
   
-  @scala.inline
-  implicit class SchemaAggregationInfoMutableBuilder[Self <: SchemaAggregationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAggregationInfo](x: Self) {
     
-    @scala.inline
-    def setAggregationCount(value: Double): Self = StObject.set(x, "aggregationCount", value.asInstanceOf[js.Any])
+    inline def setAggregationCount(value: Double): Self = StObject.set(x, "aggregationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationCountUndefined: Self = StObject.set(x, "aggregationCount", js.undefined)
+    inline def setAggregationCountUndefined: Self = StObject.set(x, "aggregationCount", js.undefined)
     
-    @scala.inline
-    def setAggregationInterval(value: String): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
+    inline def setAggregationInterval(value: String): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationIntervalUndefined: Self = StObject.set(x, "aggregationInterval", js.undefined)
+    inline def setAggregationIntervalUndefined: Self = StObject.set(x, "aggregationInterval", js.undefined)
     
-    @scala.inline
-    def setAggregationLevel(value: String): Self = StObject.set(x, "aggregationLevel", value.asInstanceOf[js.Any])
+    inline def setAggregationLevel(value: String): Self = StObject.set(x, "aggregationLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationLevelUndefined: Self = StObject.set(x, "aggregationLevel", js.undefined)
+    inline def setAggregationLevelUndefined: Self = StObject.set(x, "aggregationLevel", js.undefined)
   }
 }

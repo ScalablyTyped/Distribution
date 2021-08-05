@@ -18,22 +18,17 @@ trait DescribeServiceActionInput extends StObject {
 }
 object DescribeServiceActionInput {
   
-  @scala.inline
-  def apply(Id: Id): DescribeServiceActionInput = {
+  inline def apply(Id: Id): DescribeServiceActionInput = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeServiceActionInput]
   }
   
-  @scala.inline
-  implicit class DescribeServiceActionInputMutableBuilder[Self <: DescribeServiceActionInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServiceActionInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

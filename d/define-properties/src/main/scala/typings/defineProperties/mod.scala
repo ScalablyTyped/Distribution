@@ -17,10 +17,8 @@ object mod {
     * @param map The map of newly defined properties.
     * @param predicates The optional predicates map, return `true` to override existing properties on `object`.
     */
-  @scala.inline
-  def apply[M /* <: js.Object */](`object`: js.Object, map: M & ThisType[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply[M /* <: js.Object */](
+  inline def apply[M /* <: js.Object */](`object`: js.Object, map: M & ThisType[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[M /* <: js.Object */](
     `object`: js.Object,
     map: M & ThisType[js.Any],
     predicates: Partial[Record[/* keyof M */ String, js.Function0[Boolean]]]

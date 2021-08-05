@@ -40,73 +40,51 @@ trait UpdateItemOptions extends StObject {
 }
 object UpdateItemOptions {
   
-  @scala.inline
-  def apply(): UpdateItemOptions = {
+  inline def apply(): UpdateItemOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateItemOptions]
   }
   
-  @scala.inline
-  implicit class UpdateItemOptionsMutableBuilder[Self <: UpdateItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateItemOptions](x: Self) {
     
-    @scala.inline
-    def setAttributeUpdates(value: AttributeUpdates): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
+    inline def setAttributeUpdates(value: AttributeUpdates): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
+    inline def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
     
-    @scala.inline
-    def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+    inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+    inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
     
-    @scala.inline
-    def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+    inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+    inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
     
-    @scala.inline
-    def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+    inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
     
-    @scala.inline
-    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+    inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
     
-    @scala.inline
-    def setExpressionAttributeValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    inline def setExpressionAttributeValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+    inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
     
-    @scala.inline
-    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+    inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
     
-    @scala.inline
-    def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+    inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+    inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
     
-    @scala.inline
-    def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
+    inline def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
+    inline def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
     
-    @scala.inline
-    def setUpdateExpression(value: UpdateExpression): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+    inline def setUpdateExpression(value: UpdateExpression): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
+    inline def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommandState extends StObject
 object CommandState {
   
-  @scala.inline
-  def Active: `1` = 1.asInstanceOf[`1`]
+  inline def Active: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Hidden: `3` = 3.asInstanceOf[`3`]
+  inline def Hidden: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Inactive: `2` = 2.asInstanceOf[`2`]
+  inline def Inactive: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Undefined: `0` = 0.asInstanceOf[`0`]
+  inline def Undefined: `0` = 0.asInstanceOf[`0`]
 }

@@ -10,8 +10,7 @@ trait UpdateContinuousBackupsOutput
      with typings.awsSdkClientDynamodbNode.typesUpdateContinuousBackupsOutputMod.UpdateContinuousBackupsOutput
 object UpdateContinuousBackupsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UpdateContinuousBackupsOutput = {
+  inline def apply($metadata: ResponseMetadata): UpdateContinuousBackupsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateContinuousBackupsOutput]
   }

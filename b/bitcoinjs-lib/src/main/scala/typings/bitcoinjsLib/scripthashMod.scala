@@ -11,14 +11,10 @@ object scripthashMod {
     
     object check {
       
-      @scala.inline
-      def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: js.Array[Double | Buffer], allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: js.Array[Double | Buffer], allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       @JSImport("bitcoinjs-lib/types/templates/scripthash", "input.check")
       @js.native
@@ -27,8 +23,7 @@ object scripthashMod {
       @JSImport("bitcoinjs-lib/types/templates/scripthash", "input.check.toJSON")
       @js.native
       def toJSON: js.Function0[String] = js.native
-      @scala.inline
-      def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
+      inline def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -36,10 +31,8 @@ object scripthashMod {
     
     object check {
       
-      @scala.inline
-      def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       @JSImport("bitcoinjs-lib/types/templates/scripthash", "output.check")
       @js.native
@@ -48,8 +41,7 @@ object scripthashMod {
       @JSImport("bitcoinjs-lib/types/templates/scripthash", "output.check.toJSON")
       @js.native
       def toJSON: js.Function0[String] = js.native
-      @scala.inline
-      def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
+      inline def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
     }
   }
 }

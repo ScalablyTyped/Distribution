@@ -18,25 +18,19 @@ trait RecipeStep extends StObject {
 }
 object RecipeStep {
   
-  @scala.inline
-  def apply(Action: RecipeAction): RecipeStep = {
+  inline def apply(Action: RecipeAction): RecipeStep = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipeStep]
   }
   
-  @scala.inline
-  implicit class RecipeStepMutableBuilder[Self <: RecipeStep] (val x: Self) extends AnyVal {
+  extension [Self <: RecipeStep](x: Self) {
     
-    @scala.inline
-    def setAction(value: RecipeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RecipeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionExpressions(value: ConditionExpressionList): Self = StObject.set(x, "ConditionExpressions", value.asInstanceOf[js.Any])
+    inline def setConditionExpressions(value: ConditionExpressionList): Self = StObject.set(x, "ConditionExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionExpressionsUndefined: Self = StObject.set(x, "ConditionExpressions", js.undefined)
+    inline def setConditionExpressionsUndefined: Self = StObject.set(x, "ConditionExpressions", js.undefined)
     
-    @scala.inline
-    def setConditionExpressionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "ConditionExpressions", js.Array(value :_*))
+    inline def setConditionExpressionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "ConditionExpressions", js.Array(value :_*))
   }
 }

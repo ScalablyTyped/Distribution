@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Rectangle")
 @js.native
-class Rectangle protected ()
+/* private */ class Rectangle ()
   extends StObject
      with typings.activexWord.Word.Rectangle {
   
@@ -41,7 +41,7 @@ class Rectangle protected ()
   /* CompleteClass */
   override val Width: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Rectangle_typekey")
   var WordDotRectangle_typekey: typings.activexWord.Word.Rectangle = js.native
 }

@@ -10,16 +10,13 @@ trait Unreliable extends StObject {
 }
 object Unreliable {
   
-  @scala.inline
-  def apply(unreliable: Boolean): Unreliable = {
+  inline def apply(unreliable: Boolean): Unreliable = {
     val __obj = js.Dynamic.literal(unreliable = unreliable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Unreliable]
   }
   
-  @scala.inline
-  implicit class UnreliableMutableBuilder[Self <: Unreliable] (val x: Self) extends AnyVal {
+  extension [Self <: Unreliable](x: Self) {
     
-    @scala.inline
-    def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
+    inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
   }
 }

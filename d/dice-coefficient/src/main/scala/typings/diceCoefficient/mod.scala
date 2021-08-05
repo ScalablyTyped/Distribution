@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: String, alternative: String): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], alternative.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(value: String, alternative: String): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], alternative.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("dice-coefficient", JSImport.Namespace)
   @js.native

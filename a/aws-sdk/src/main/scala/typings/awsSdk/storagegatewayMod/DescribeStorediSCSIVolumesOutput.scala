@@ -13,22 +13,17 @@ trait DescribeStorediSCSIVolumesOutput extends StObject {
 }
 object DescribeStorediSCSIVolumesOutput {
   
-  @scala.inline
-  def apply(): DescribeStorediSCSIVolumesOutput = {
+  inline def apply(): DescribeStorediSCSIVolumesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStorediSCSIVolumesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStorediSCSIVolumesOutputMutableBuilder[Self <: DescribeStorediSCSIVolumesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStorediSCSIVolumesOutput](x: Self) {
     
-    @scala.inline
-    def setStorediSCSIVolumes(value: StorediSCSIVolumes): Self = StObject.set(x, "StorediSCSIVolumes", value.asInstanceOf[js.Any])
+    inline def setStorediSCSIVolumes(value: StorediSCSIVolumes): Self = StObject.set(x, "StorediSCSIVolumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorediSCSIVolumesUndefined: Self = StObject.set(x, "StorediSCSIVolumes", js.undefined)
+    inline def setStorediSCSIVolumesUndefined: Self = StObject.set(x, "StorediSCSIVolumes", js.undefined)
     
-    @scala.inline
-    def setStorediSCSIVolumesVarargs(value: StorediSCSIVolume*): Self = StObject.set(x, "StorediSCSIVolumes", js.Array(value :_*))
+    inline def setStorediSCSIVolumesVarargs(value: StorediSCSIVolume*): Self = StObject.set(x, "StorediSCSIVolumes", js.Array(value :_*))
   }
 }

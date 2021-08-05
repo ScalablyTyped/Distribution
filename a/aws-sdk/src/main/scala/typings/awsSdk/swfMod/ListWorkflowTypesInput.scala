@@ -38,43 +38,31 @@ trait ListWorkflowTypesInput extends StObject {
 }
 object ListWorkflowTypesInput {
   
-  @scala.inline
-  def apply(domain: DomainName, registrationStatus: RegistrationStatus): ListWorkflowTypesInput = {
+  inline def apply(domain: DomainName, registrationStatus: RegistrationStatus): ListWorkflowTypesInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkflowTypesInput]
   }
   
-  @scala.inline
-  implicit class ListWorkflowTypesInputMutableBuilder[Self <: ListWorkflowTypesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorkflowTypesInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
+    inline def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPageSizeUndefined: Self = StObject.set(x, "maximumPageSize", js.undefined)
+    inline def setMaximumPageSizeUndefined: Self = StObject.set(x, "maximumPageSize", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
+    inline def setRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
+    inline def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
+    inline def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
   }
 }

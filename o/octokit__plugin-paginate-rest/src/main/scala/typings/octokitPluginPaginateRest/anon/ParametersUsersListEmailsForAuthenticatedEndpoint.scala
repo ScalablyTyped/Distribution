@@ -15,8 +15,7 @@ trait ParametersUsersListEmailsForAuthenticatedEndpoint extends StObject {
 }
 object ParametersUsersListEmailsForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersListEmailsForAuthenticatedEndpoint,
     response: OctokitResponse[UsersListEmailsForAuthenticatedResponseData]
   ): ParametersUsersListEmailsForAuthenticatedEndpoint = {
@@ -24,13 +23,10 @@ object ParametersUsersListEmailsForAuthenticatedEndpoint {
     __obj.asInstanceOf[ParametersUsersListEmailsForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersListEmailsForAuthenticatedEndpointMutableBuilder[Self <: ParametersUsersListEmailsForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersListEmailsForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersListEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersListEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersListEmailsForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersListEmailsForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

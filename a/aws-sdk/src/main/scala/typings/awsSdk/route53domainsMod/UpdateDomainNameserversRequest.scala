@@ -23,28 +23,21 @@ trait UpdateDomainNameserversRequest extends StObject {
 }
 object UpdateDomainNameserversRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, Nameservers: NameserverList): UpdateDomainNameserversRequest = {
+  inline def apply(DomainName: DomainName, Nameservers: NameserverList): UpdateDomainNameserversRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Nameservers = Nameservers.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainNameserversRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDomainNameserversRequestMutableBuilder[Self <: UpdateDomainNameserversRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDomainNameserversRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFIAuthKey(value: FIAuthKey): Self = StObject.set(x, "FIAuthKey", value.asInstanceOf[js.Any])
+    inline def setFIAuthKey(value: FIAuthKey): Self = StObject.set(x, "FIAuthKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFIAuthKeyUndefined: Self = StObject.set(x, "FIAuthKey", js.undefined)
+    inline def setFIAuthKeyUndefined: Self = StObject.set(x, "FIAuthKey", js.undefined)
     
-    @scala.inline
-    def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
+    inline def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
+    inline def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
   }
 }

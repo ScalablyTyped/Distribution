@@ -12,22 +12,17 @@ trait IListVoicesRequest extends StObject {
 }
 object IListVoicesRequest {
   
-  @scala.inline
-  def apply(): IListVoicesRequest = {
+  inline def apply(): IListVoicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListVoicesRequest]
   }
   
-  @scala.inline
-  implicit class IListVoicesRequestMutableBuilder[Self <: IListVoicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IListVoicesRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

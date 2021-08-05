@@ -52,8 +52,7 @@ object Language {
   @JSGlobal("Windows.Globalization.Language.currentInputMethodLanguageTag")
   @js.native
   def currentInputMethodLanguageTag: String = js.native
-  @scala.inline
-  def currentInputMethodLanguageTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentInputMethodLanguageTag")(x.asInstanceOf[js.Any])
+  inline def currentInputMethodLanguageTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentInputMethodLanguageTag")(x.asInstanceOf[js.Any])
   
   /**
     * Determines whether a BCP-47 language tag is well-formed.
@@ -61,8 +60,7 @@ object Language {
     * @return True if the language tag is well-formed as defined by BCP-47, except when the language tag can never be valid according to BCP-47. Otherwise it returns false. If this method returns true, an application can safely construct a language by using this tag. If it returns false, attempting to construct a language for the given tag will throw an exception.
     */
   /* static member */
-  @scala.inline
-  def isWellFormed(languageTag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWellFormed")(languageTag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWellFormed(languageTag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWellFormed")(languageTag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Tries to set the normalized BCP-47 language tag of this language.
@@ -70,6 +68,5 @@ object Language {
     * @return true if the value is successfully set, otherwise false.
     */
   /* static member */
-  @scala.inline
-  def trySetInputMethodLanguageTag(languageTag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("trySetInputMethodLanguageTag")(languageTag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def trySetInputMethodLanguageTag(languageTag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("trySetInputMethodLanguageTag")(languageTag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -21,49 +21,35 @@ trait PartialPickImplkeyofImplField extends StObject {
 }
 object PartialPickImplkeyofImplField {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplField = {
+  inline def apply(): PartialPickImplkeyofImplField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplField]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplFieldMutableBuilder[Self <: PartialPickImplkeyofImplField] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplField](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    @scala.inline
-    def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+    inline def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
+    inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
   }
 }

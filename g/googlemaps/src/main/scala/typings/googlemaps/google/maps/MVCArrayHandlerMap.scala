@@ -29,22 +29,17 @@ trait MVCArrayHandlerMap[C /* <: MVCArray[T] */, T] extends StObject {
 }
 object MVCArrayHandlerMap {
   
-  @scala.inline
-  def apply[C /* <: MVCArray[T] */, T](insert_at: Double => Unit, remove_at: (Double, T) => Unit, set_at: (Double, T) => Unit): MVCArrayHandlerMap[C, T] = {
+  inline def apply[C /* <: MVCArray[T] */, T](insert_at: Double => Unit, remove_at: (Double, T) => Unit, set_at: (Double, T) => Unit): MVCArrayHandlerMap[C, T] = {
     val __obj = js.Dynamic.literal(insert_at = js.Any.fromFunction1(insert_at), remove_at = js.Any.fromFunction2(remove_at), set_at = js.Any.fromFunction2(set_at))
     __obj.asInstanceOf[MVCArrayHandlerMap[C, T]]
   }
   
-  @scala.inline
-  implicit class MVCArrayHandlerMapMutableBuilder[Self <: MVCArrayHandlerMap[?, ?], C /* <: MVCArray[T] */, T] (val x: Self & (MVCArrayHandlerMap[C, T])) extends AnyVal {
+  extension [Self <: MVCArrayHandlerMap[?, ?], C /* <: MVCArray[T] */, T](x: Self & (MVCArrayHandlerMap[C, T])) {
     
-    @scala.inline
-    def setInsert_at(value: Double => Unit): Self = StObject.set(x, "insert_at", js.Any.fromFunction1(value))
+    inline def setInsert_at(value: Double => Unit): Self = StObject.set(x, "insert_at", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_at(value: (Double, T) => Unit): Self = StObject.set(x, "remove_at", js.Any.fromFunction2(value))
+    inline def setRemove_at(value: (Double, T) => Unit): Self = StObject.set(x, "remove_at", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet_at(value: (Double, T) => Unit): Self = StObject.set(x, "set_at", js.Any.fromFunction2(value))
+    inline def setSet_at(value: (Double, T) => Unit): Self = StObject.set(x, "set_at", js.Any.fromFunction2(value))
   }
 }

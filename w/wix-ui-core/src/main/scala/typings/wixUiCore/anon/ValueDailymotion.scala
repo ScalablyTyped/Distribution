@@ -12,19 +12,15 @@ trait ValueDailymotion extends StObject {
 }
 object ValueDailymotion {
   
-  @scala.inline
-  def apply(label: String, value: Dailymotion): ValueDailymotion = {
+  inline def apply(label: String, value: Dailymotion): ValueDailymotion = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueDailymotion]
   }
   
-  @scala.inline
-  implicit class ValueDailymotionMutableBuilder[Self <: ValueDailymotion] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDailymotion](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Dailymotion): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Dailymotion): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute extends
 }
 object DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute {
   
-  @scala.inline
-  def apply(listenerArns: Input[js.Array[Input[String]]]): DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute = {
+  inline def apply(listenerArns: Input[js.Array[Input[String]]]): DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute = {
     val __obj = js.Dynamic.literal(listenerArns = listenerArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteMutableBuilder[Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute](x: Self) {
     
-    @scala.inline
-    def setListenerArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "listenerArns", value.asInstanceOf[js.Any])
+    inline def setListenerArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "listenerArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerArnsVarargs(value: Input[String]*): Self = StObject.set(x, "listenerArns", js.Array(value :_*))
+    inline def setListenerArnsVarargs(value: Input[String]*): Self = StObject.set(x, "listenerArns", js.Array(value :_*))
   }
 }

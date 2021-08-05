@@ -23,20 +23,16 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Height = {
+    inline def apply(height: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,44 +50,32 @@ object anon {
   }
   object Orientation {
     
-    @scala.inline
-    def apply(url: String): Orientation = {
+    inline def apply(url: String): Orientation = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Orientation]
     }
     
-    @scala.inline
-    implicit class OrientationMutableBuilder[Self <: Orientation] (val x: Self) extends AnyVal {
+    extension [Self <: Orientation](x: Self) {
       
-      @scala.inline
-      def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+      inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      @scala.inline
-      def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCanvas(value: Boolean): Self = StObject.set(x, "useCanvas", value.asInstanceOf[js.Any])
+      inline def setUseCanvas(value: Boolean): Self = StObject.set(x, "useCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCanvasUndefined: Self = StObject.set(x, "useCanvas", js.undefined)
+      inline def setUseCanvasUndefined: Self = StObject.set(x, "useCanvas", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -110,42 +94,31 @@ object anon {
   }
   object ResultOptionstypebase64ca {
     
-    @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): ResultOptionstypebase64ca = {
+    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): ResultOptionstypebase64ca = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypebase64ca]
     }
     
-    @scala.inline
-    implicit class ResultOptionstypebase64caMutableBuilder[Self <: ResultOptionstypebase64ca] (val x: Self) extends AnyVal {
+    extension [Self <: ResultOptionstypebase64ca](x: Self) {
       
-      @scala.inline
-      def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,42 +137,31 @@ object anon {
   }
   object ResultOptionstypeblob {
     
-    @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & blob): ResultOptionstypeblob = {
+    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & blob): ResultOptionstypeblob = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypeblob]
     }
     
-    @scala.inline
-    implicit class ResultOptionstypeblobMutableBuilder[Self <: ResultOptionstypeblob] (val x: Self) extends AnyVal {
+    extension [Self <: ResultOptionstypeblob](x: Self) {
       
-      @scala.inline
-      def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] & blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,42 +180,31 @@ object anon {
   }
   object ResultOptionstypehtml {
     
-    @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & html): ResultOptionstypehtml = {
+    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & html): ResultOptionstypehtml = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypehtml]
     }
     
-    @scala.inline
-    implicit class ResultOptionstypehtmlMutableBuilder[Self <: ResultOptionstypehtml] (val x: Self) extends AnyVal {
+    extension [Self <: ResultOptionstypehtml](x: Self) {
       
-      @scala.inline
-      def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] & html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,42 +223,31 @@ object anon {
   }
   object ResultOptionstyperawcanva {
     
-    @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): ResultOptionstyperawcanva = {
+    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): ResultOptionstyperawcanva = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstyperawcanva]
     }
     
-    @scala.inline
-    implicit class ResultOptionstyperawcanvaMutableBuilder[Self <: ResultOptionstyperawcanva] (val x: Self) extends AnyVal {
+    extension [Self <: ResultOptionstyperawcanva](x: Self) {
       
-      @scala.inline
-      def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: viewport | original | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,26 +261,20 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Type = {
+    inline def apply(height: Double, width: Double): Type = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: CropType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CropType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

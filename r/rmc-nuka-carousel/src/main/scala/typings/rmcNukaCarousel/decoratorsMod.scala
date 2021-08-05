@@ -39,8 +39,7 @@ object decoratorsMod extends Shortcut {
   }
   object IDecoratorProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentSlide: Double,
       frameWidth: Double | String,
       previousSlide: () => Unit,
@@ -52,56 +51,39 @@ object decoratorsMod extends Shortcut {
       __obj.asInstanceOf[IDecoratorProps]
     }
     
-    @scala.inline
-    implicit class IDecoratorPropsMutableBuilder[Self <: IDecoratorProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDecoratorProps](x: Self) {
       
-      @scala.inline
-      def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+      inline def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
+      inline def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
       
-      @scala.inline
-      def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
+      inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameWidth(value: Double | String): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
+      inline def setFrameWidth(value: Double | String): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoToSlide(value: /* index */ Double => Unit): Self = StObject.set(x, "goToSlide", js.Any.fromFunction1(value))
+      inline def setGoToSlide(value: /* index */ Double => Unit): Self = StObject.set(x, "goToSlide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoToSlideUndefined: Self = StObject.set(x, "goToSlide", js.undefined)
+      inline def setGoToSlideUndefined: Self = StObject.set(x, "goToSlide", js.undefined)
       
-      @scala.inline
-      def setNextSlide(value: () => Unit): Self = StObject.set(x, "nextSlide", js.Any.fromFunction0(value))
+      inline def setNextSlide(value: () => Unit): Self = StObject.set(x, "nextSlide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextSlideUndefined: Self = StObject.set(x, "nextSlide", js.undefined)
+      inline def setNextSlideUndefined: Self = StObject.set(x, "nextSlide", js.undefined)
       
-      @scala.inline
-      def setPreviousSlide(value: () => Unit): Self = StObject.set(x, "previousSlide", js.Any.fromFunction0(value))
+      inline def setPreviousSlide(value: () => Unit): Self = StObject.set(x, "previousSlide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
+      inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideWidth(value: Double | String): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
+      inline def setSlideWidth(value: Double | String): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToScroll(value: Double): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
+      inline def setSlidesToScroll(value: Double): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      inline def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
+      inline def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
       
-      @scala.inline
-      def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+      inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
+      inline def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
     }
   }
   

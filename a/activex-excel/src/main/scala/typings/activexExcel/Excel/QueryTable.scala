@@ -38,7 +38,7 @@ trait QueryTable extends StObject {
   
   var EnableRefresh: Boolean = js.native
   
-  @JSName("Excel.QueryTable_typekey")
+  /* private */ @JSName("Excel.QueryTable_typekey")
   var ExcelDotQueryTable_typekey: QueryTable = js.native
   
   val FetchedRowOverflow: Boolean = js.native

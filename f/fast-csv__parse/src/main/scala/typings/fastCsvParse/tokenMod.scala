@@ -25,23 +25,17 @@ object tokenMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isTokenCarriageReturn(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenCarriageReturn")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTokenCarriageReturn(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenCarriageReturn")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTokenComment(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenComment")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTokenComment(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenComment")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTokenDelimiter(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenDelimiter")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTokenDelimiter(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenDelimiter")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTokenEscapeCharacter(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenEscapeCharacter")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTokenEscapeCharacter(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenEscapeCharacter")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTokenQuote(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenQuote")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTokenQuote(token: Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenQuote")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTokenRowDelimiter(token: Token): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenRowDelimiter")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTokenRowDelimiter(token: Token): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenRowDelimiter")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   type MaybeToken = Token | Null
@@ -56,23 +50,18 @@ object tokenMod {
   }
   object TokenArgs {
     
-    @scala.inline
-    def apply(endCursor: Double, startCursor: Double, token: String): TokenArgs = {
+    inline def apply(endCursor: Double, startCursor: Double, token: String): TokenArgs = {
       val __obj = js.Dynamic.literal(endCursor = endCursor.asInstanceOf[js.Any], startCursor = startCursor.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenArgs]
     }
     
-    @scala.inline
-    implicit class TokenArgsMutableBuilder[Self <: TokenArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TokenArgs](x: Self) {
       
-      @scala.inline
-      def setEndCursor(value: Double): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
+      inline def setEndCursor(value: Double): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCursor(value: Double): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
+      inline def setStartCursor(value: Double): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,22 +28,17 @@ trait ASPxClientVerticalGridBatchEditStartEditingEventArgs
 }
 object ASPxClientVerticalGridBatchEditStartEditingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, focusedRow: ASPxClientVerticalGridRow, recordValues: js.Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditStartEditingEventArgs = {
+  inline def apply(cancel: Boolean, focusedRow: ASPxClientVerticalGridRow, recordValues: js.Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditStartEditingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], focusedRow = focusedRow.asInstanceOf[js.Any], recordValues = recordValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditStartEditingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridBatchEditStartEditingEventArgsMutableBuilder[Self <: ASPxClientVerticalGridBatchEditStartEditingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridBatchEditStartEditingEventArgs](x: Self) {
     
-    @scala.inline
-    def setFocusedRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "focusedRow", value.asInstanceOf[js.Any])
+    inline def setFocusedRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "focusedRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordValues(value: js.Any): Self = StObject.set(x, "recordValues", value.asInstanceOf[js.Any])
+    inline def setRecordValues(value: js.Any): Self = StObject.set(x, "recordValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

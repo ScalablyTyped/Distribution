@@ -47,8 +47,7 @@ trait AjaxSettingsObject extends StObject {
 }
 object AjaxSettingsObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: String | Dictionary[js.Any],
     dataType: json | octet | text | xml,
     error: js.Function,
@@ -62,28 +61,20 @@ object AjaxSettingsObject {
     __obj.asInstanceOf[AjaxSettingsObject]
   }
   
-  @scala.inline
-  implicit class AjaxSettingsObjectMutableBuilder[Self <: AjaxSettingsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxSettingsObject](x: Self) {
     
-    @scala.inline
-    def setData(value: String | Dictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Dictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataType(value: json | octet | text | xml): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: json | octet | text | xml): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Dictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Dictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

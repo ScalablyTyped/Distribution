@@ -12,9 +12,7 @@ object wonkaOperatorSwitchMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def switchAll[A](source: Source[Source[A]]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchAll")(source.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
+  inline def switchAll[A](source: Source[Source[A]]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchAll")(source.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
   
-  @scala.inline
-  def switchMap[A, B](f: js.Function1[/* value */ A, Source[B]]): Operator[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, B]]
+  inline def switchMap[A, B](f: js.Function1[/* value */ A, Source[B]]): Operator[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, B]]
 }

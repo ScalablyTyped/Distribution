@@ -15,14 +15,12 @@ object constantsMod {
     @JSImport("@material/radio/constants", "cssClasses.DISABLED")
     @js.native
     def DISABLED: String = js.native
-    @scala.inline
-    def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
+    inline def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/radio/constants", "cssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -56,7 +54,6 @@ object constantsMod {
     @JSImport("@material/radio/constants", "strings.NATIVE_CONTROL_SELECTOR")
     @js.native
     def NATIVE_CONTROL_SELECTOR: String = js.native
-    @scala.inline
-    def NATIVE_CONTROL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NATIVE_CONTROL_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def NATIVE_CONTROL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NATIVE_CONTROL_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait GetAssociatedEnclaveCertificateIamRolesResult extends StObject {
 }
 object GetAssociatedEnclaveCertificateIamRolesResult {
   
-  @scala.inline
-  def apply(): GetAssociatedEnclaveCertificateIamRolesResult = {
+  inline def apply(): GetAssociatedEnclaveCertificateIamRolesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAssociatedEnclaveCertificateIamRolesResult]
   }
   
-  @scala.inline
-  implicit class GetAssociatedEnclaveCertificateIamRolesResultMutableBuilder[Self <: GetAssociatedEnclaveCertificateIamRolesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssociatedEnclaveCertificateIamRolesResult](x: Self) {
     
-    @scala.inline
-    def setAssociatedRoles(value: AssociatedRolesList): Self = StObject.set(x, "AssociatedRoles", value.asInstanceOf[js.Any])
+    inline def setAssociatedRoles(value: AssociatedRolesList): Self = StObject.set(x, "AssociatedRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
+    inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    @scala.inline
-    def setAssociatedRolesVarargs(value: AssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: AssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
   }
 }

@@ -28,28 +28,21 @@ trait AccountCoverage
 }
 object AccountCoverage {
   
-  @scala.inline
-  def apply(coverage: Reference): AccountCoverage = {
+  inline def apply(coverage: Reference): AccountCoverage = {
     val __obj = js.Dynamic.literal(coverage = coverage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountCoverage]
   }
   
-  @scala.inline
-  implicit class AccountCoverageMutableBuilder[Self <: AccountCoverage] (val x: Self) extends AnyVal {
+  extension [Self <: AccountCoverage](x: Self) {
     
-    @scala.inline
-    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: positiveInt): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: positiveInt): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
+    inline def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
+    inline def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
   }
 }

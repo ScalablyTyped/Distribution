@@ -28,12 +28,10 @@ object Tag {
   @JSImport("wix-ui-core/src", "Tag.displayName")
   @js.native
   def displayName: DisplayNames = js.native
-  @scala.inline
-  def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "Tag.propTypes")
   @js.native
   def propTypes: CompId = js.native
-  @scala.inline
-  def propTypes_=(x: CompId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: CompId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

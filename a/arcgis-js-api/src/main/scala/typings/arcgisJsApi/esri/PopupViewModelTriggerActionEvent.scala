@@ -10,16 +10,13 @@ trait PopupViewModelTriggerActionEvent extends StObject {
 }
 object PopupViewModelTriggerActionEvent {
   
-  @scala.inline
-  def apply(action: ActionButton | ActionToggle): PopupViewModelTriggerActionEvent = {
+  inline def apply(action: ActionButton | ActionToggle): PopupViewModelTriggerActionEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupViewModelTriggerActionEvent]
   }
   
-  @scala.inline
-  implicit class PopupViewModelTriggerActionEventMutableBuilder[Self <: PopupViewModelTriggerActionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PopupViewModelTriggerActionEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

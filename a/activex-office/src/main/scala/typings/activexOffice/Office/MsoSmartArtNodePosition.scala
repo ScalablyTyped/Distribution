@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSmartArtNodePosition extends StObject
 object MsoSmartArtNodePosition {
   
-  @scala.inline
-  def msoSmartArtNodeAbove: `4` = 4.asInstanceOf[`4`]
+  inline def msoSmartArtNodeAbove: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoSmartArtNodeAfter: `2` = 2.asInstanceOf[`2`]
+  inline def msoSmartArtNodeAfter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoSmartArtNodeBefore: `3` = 3.asInstanceOf[`3`]
+  inline def msoSmartArtNodeBefore: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoSmartArtNodeBelow: `5` = 5.asInstanceOf[`5`]
+  inline def msoSmartArtNodeBelow: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoSmartArtNodeDefault: `1` = 1.asInstanceOf[`1`]
+  inline def msoSmartArtNodeDefault: `1` = 1.asInstanceOf[`1`]
 }

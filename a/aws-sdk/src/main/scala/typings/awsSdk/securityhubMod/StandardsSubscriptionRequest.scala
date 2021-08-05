@@ -18,22 +18,17 @@ trait StandardsSubscriptionRequest extends StObject {
 }
 object StandardsSubscriptionRequest {
   
-  @scala.inline
-  def apply(StandardsArn: NonEmptyString): StandardsSubscriptionRequest = {
+  inline def apply(StandardsArn: NonEmptyString): StandardsSubscriptionRequest = {
     val __obj = js.Dynamic.literal(StandardsArn = StandardsArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardsSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class StandardsSubscriptionRequestMutableBuilder[Self <: StandardsSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StandardsSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
+    inline def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsInput(value: StandardsInputParameterMap): Self = StObject.set(x, "StandardsInput", value.asInstanceOf[js.Any])
+    inline def setStandardsInput(value: StandardsInputParameterMap): Self = StObject.set(x, "StandardsInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsInputUndefined: Self = StObject.set(x, "StandardsInput", js.undefined)
+    inline def setStandardsInputUndefined: Self = StObject.set(x, "StandardsInput", js.undefined)
   }
 }

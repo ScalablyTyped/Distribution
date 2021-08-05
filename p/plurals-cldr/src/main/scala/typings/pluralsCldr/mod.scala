@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined plurals-cldr.plurals-cldr.Plural & {  ordinal :plurals-cldr.plurals-cldr.Plural} */
 object mod {
   
-  @scala.inline
-  def apply(locale: String, number: String): Form | Null = (^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
+  inline def apply(locale: String, number: String): Form | Null = (^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
   /**
     * Returns the form name for a given number. If the locale is not
     * supported, returns `null`.
@@ -20,8 +19,7 @@ object mod {
     * @param number The number to check. May be passed as a string to keep
     *     trailing zeroes.
     */
-  @scala.inline
-  def apply(locale: String, number: Double): Form | Null = (^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
+  inline def apply(locale: String, number: Double): Form | Null = (^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
   
   @JSImport("plurals-cldr", JSImport.Namespace)
   @js.native
@@ -33,11 +31,9 @@ object mod {
     *
     * @param locale The locale code.
     */
-  @scala.inline
-  def forms(locale: String): js.Array[Form] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("forms")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Form] | Null]
+  inline def forms(locale: String): js.Array[Form] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("forms")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Form] | Null]
   
-  @scala.inline
-  def indexOf(locale: String, number: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def indexOf(locale: String, number: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Double]
   /**
     * Returns the index of the form for a given number. If the locale is
     * not supported, returns `-1`.
@@ -51,8 +47,7 @@ object mod {
     * @param number The number to check. May be passed as a string to keep
     *     trailing zeroes.
     */
-  @scala.inline
-  def indexOf(locale: String, number: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def indexOf(locale: String, number: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Gets the CLDR ordinal plural forms for numbers in different locales.
@@ -60,8 +55,7 @@ object mod {
   @JSImport("plurals-cldr", "ordinal")
   @js.native
   def ordinal: Plural = js.native
-  @scala.inline
-  def ordinal(locale: String, number: String): Form | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
+  inline def ordinal(locale: String, number: String): Form | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
   /**
     * Returns the form name for a given number. If the locale is not
     * supported, returns `null`.
@@ -73,10 +67,8 @@ object mod {
   /**
     * Gets the CLDR ordinal plural forms for numbers in different locales.
     */
-  @scala.inline
-  def ordinal(locale: String, number: Double): Form | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
-  @scala.inline
-  def ordinal_=(x: Plural): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ordinal")(x.asInstanceOf[js.Any])
+  inline def ordinal(locale: String, number: Double): Form | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(locale.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Form | Null]
+  inline def ordinal_=(x: Plural): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ordinal")(x.asInstanceOf[js.Any])
   
   /* Rewritten from type alias, can be one of: 
     - typings.pluralsCldr.pluralsCldrStrings.zero
@@ -89,23 +81,17 @@ object mod {
   trait Form extends StObject
   object Form {
     
-    @scala.inline
-    def few: typings.pluralsCldr.pluralsCldrStrings.few = "few".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.few]
+    inline def few: typings.pluralsCldr.pluralsCldrStrings.few = "few".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.few]
     
-    @scala.inline
-    def many: typings.pluralsCldr.pluralsCldrStrings.many = "many".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.many]
+    inline def many: typings.pluralsCldr.pluralsCldrStrings.many = "many".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.many]
     
-    @scala.inline
-    def one: typings.pluralsCldr.pluralsCldrStrings.one = "one".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.one]
+    inline def one: typings.pluralsCldr.pluralsCldrStrings.one = "one".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.one]
     
-    @scala.inline
-    def other: typings.pluralsCldr.pluralsCldrStrings.other = "other".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.other]
+    inline def other: typings.pluralsCldr.pluralsCldrStrings.other = "other".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.other]
     
-    @scala.inline
-    def two: typings.pluralsCldr.pluralsCldrStrings.two = "two".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.two]
+    inline def two: typings.pluralsCldr.pluralsCldrStrings.two = "two".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.two]
     
-    @scala.inline
-    def zero: typings.pluralsCldr.pluralsCldrStrings.zero = "zero".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.zero]
+    inline def zero: typings.pluralsCldr.pluralsCldrStrings.zero = "zero".asInstanceOf[typings.pluralsCldr.pluralsCldrStrings.zero]
   }
   
   @js.native

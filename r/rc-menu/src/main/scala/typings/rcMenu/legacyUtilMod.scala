@@ -14,8 +14,7 @@ object legacyUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getMotion(
+  inline def getMotion(
     hasPrefixClsMotionDefaultMotionsOpenAnimationOpenTransitionName: GetMotionProps,
     hasSwitchingModeFromInline: GetMotionState,
     menuMode: MenuMode
@@ -35,44 +34,32 @@ object legacyUtilMod {
   }
   object GetMotionProps {
     
-    @scala.inline
-    def apply(): GetMotionProps = {
+    inline def apply(): GetMotionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetMotionProps]
     }
     
-    @scala.inline
-    implicit class GetMotionPropsMutableBuilder[Self <: GetMotionProps] (val x: Self) extends AnyVal {
+    extension [Self <: GetMotionProps](x: Self) {
       
-      @scala.inline
-      def setDefaultMotions(value: PartialkeyinMenuModeother): Self = StObject.set(x, "defaultMotions", value.asInstanceOf[js.Any])
+      inline def setDefaultMotions(value: PartialkeyinMenuModeother): Self = StObject.set(x, "defaultMotions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMotionsUndefined: Self = StObject.set(x, "defaultMotions", js.undefined)
+      inline def setDefaultMotionsUndefined: Self = StObject.set(x, "defaultMotions", js.undefined)
       
-      @scala.inline
-      def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
+      inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
       
-      @scala.inline
-      def setOpenAnimation(value: OpenAnimation): Self = StObject.set(x, "openAnimation", value.asInstanceOf[js.Any])
+      inline def setOpenAnimation(value: OpenAnimation): Self = StObject.set(x, "openAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenAnimationUndefined: Self = StObject.set(x, "openAnimation", js.undefined)
+      inline def setOpenAnimationUndefined: Self = StObject.set(x, "openAnimation", js.undefined)
       
-      @scala.inline
-      def setOpenTransitionName(value: String): Self = StObject.set(x, "openTransitionName", value.asInstanceOf[js.Any])
+      inline def setOpenTransitionName(value: String): Self = StObject.set(x, "openTransitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenTransitionNameUndefined: Self = StObject.set(x, "openTransitionName", js.undefined)
+      inline def setOpenTransitionNameUndefined: Self = StObject.set(x, "openTransitionName", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
   
@@ -82,17 +69,14 @@ object legacyUtilMod {
   }
   object GetMotionState {
     
-    @scala.inline
-    def apply(switchingModeFromInline: Boolean): GetMotionState = {
+    inline def apply(switchingModeFromInline: Boolean): GetMotionState = {
       val __obj = js.Dynamic.literal(switchingModeFromInline = switchingModeFromInline.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetMotionState]
     }
     
-    @scala.inline
-    implicit class GetMotionStateMutableBuilder[Self <: GetMotionState] (val x: Self) extends AnyVal {
+    extension [Self <: GetMotionState](x: Self) {
       
-      @scala.inline
-      def setSwitchingModeFromInline(value: Boolean): Self = StObject.set(x, "switchingModeFromInline", value.asInstanceOf[js.Any])
+      inline def setSwitchingModeFromInline(value: Boolean): Self = StObject.set(x, "switchingModeFromInline", value.asInstanceOf[js.Any])
     }
   }
 }

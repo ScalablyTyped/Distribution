@@ -23,8 +23,7 @@ trait BillingGetGithubPackagesBillingUserResponseData extends StObject {
 }
 object BillingGetGithubPackagesBillingUserResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     included_gigabytes_bandwidth: Double,
     total_gigabytes_bandwidth_used: Double,
     total_paid_gigabytes_bandwidth_used: Double
@@ -33,16 +32,12 @@ object BillingGetGithubPackagesBillingUserResponseData {
     __obj.asInstanceOf[BillingGetGithubPackagesBillingUserResponseData]
   }
   
-  @scala.inline
-  implicit class BillingGetGithubPackagesBillingUserResponseDataMutableBuilder[Self <: BillingGetGithubPackagesBillingUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGetGithubPackagesBillingUserResponseData](x: Self) {
     
-    @scala.inline
-    def setIncluded_gigabytes_bandwidth(value: Double): Self = StObject.set(x, "included_gigabytes_bandwidth", value.asInstanceOf[js.Any])
+    inline def setIncluded_gigabytes_bandwidth(value: Double): Self = StObject.set(x, "included_gigabytes_bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_gigabytes_bandwidth_used(value: Double): Self = StObject.set(x, "total_gigabytes_bandwidth_used", value.asInstanceOf[js.Any])
+    inline def setTotal_gigabytes_bandwidth_used(value: Double): Self = StObject.set(x, "total_gigabytes_bandwidth_used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_paid_gigabytes_bandwidth_used(value: Double): Self = StObject.set(x, "total_paid_gigabytes_bandwidth_used", value.asInstanceOf[js.Any])
+    inline def setTotal_paid_gigabytes_bandwidth_used(value: Double): Self = StObject.set(x, "total_paid_gigabytes_bandwidth_used", value.asInstanceOf[js.Any])
   }
 }

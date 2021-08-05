@@ -14,13 +14,12 @@ trait ActionSettings extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ActionSettings_typekey")
+  /* private */ @JSName("PowerPoint.ActionSettings_typekey")
   var PowerPointDotActionSettings_typekey: ActionSettings
 }
 object ActionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Item: PpMouseActivation => ActionSetting,
@@ -32,22 +31,16 @@ object ActionSettings {
     __obj.asInstanceOf[ActionSettings]
   }
   
-  @scala.inline
-  implicit class ActionSettingsMutableBuilder[Self <: ActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ActionSettings](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: PpMouseActivation => ActionSetting): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: PpMouseActivation => ActionSetting): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotActionSettings_typekey(value: ActionSettings): Self = StObject.set(x, "PowerPoint.ActionSettings_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotActionSettings_typekey(value: ActionSettings): Self = StObject.set(x, "PowerPoint.ActionSettings_typekey", value.asInstanceOf[js.Any])
   }
 }

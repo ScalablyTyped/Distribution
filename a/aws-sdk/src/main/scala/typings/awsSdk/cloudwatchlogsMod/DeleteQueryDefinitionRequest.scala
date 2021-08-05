@@ -13,16 +13,13 @@ trait DeleteQueryDefinitionRequest extends StObject {
 }
 object DeleteQueryDefinitionRequest {
   
-  @scala.inline
-  def apply(queryDefinitionId: QueryId): DeleteQueryDefinitionRequest = {
+  inline def apply(queryDefinitionId: QueryId): DeleteQueryDefinitionRequest = {
     val __obj = js.Dynamic.literal(queryDefinitionId = queryDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteQueryDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteQueryDefinitionRequestMutableBuilder[Self <: DeleteQueryDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteQueryDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setQueryDefinitionId(value: QueryId): Self = StObject.set(x, "queryDefinitionId", value.asInstanceOf[js.Any])
+    inline def setQueryDefinitionId(value: QueryId): Self = StObject.set(x, "queryDefinitionId", value.asInstanceOf[js.Any])
   }
 }

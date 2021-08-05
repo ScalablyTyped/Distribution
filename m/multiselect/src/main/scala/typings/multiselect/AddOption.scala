@@ -16,31 +16,23 @@ trait AddOption extends StObject {
 }
 object AddOption {
   
-  @scala.inline
-  def apply(text: String, value: String): AddOption = {
+  inline def apply(text: String, value: String): AddOption = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOption]
   }
   
-  @scala.inline
-  implicit class AddOptionMutableBuilder[Self <: AddOption] (val x: Self) extends AnyVal {
+  extension [Self <: AddOption](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setNested(value: String): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+    inline def setNested(value: String): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
+    inline def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

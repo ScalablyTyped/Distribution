@@ -28,10 +28,8 @@ object datasetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): DatasetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[DatasetsService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): DatasetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[DatasetsService]
+  inline def default(config: SdkConfig): DatasetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[DatasetsService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): DatasetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[DatasetsService]
   
   /**
     * All GeoJSON types except for FeatureCollection.
@@ -87,8 +85,7 @@ object datasetsMod {
   }
   object Dataset {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: js.Array[Double],
       created: String,
       description: String,
@@ -103,38 +100,27 @@ object datasetsMod {
       __obj.asInstanceOf[Dataset]
     }
     
-    @scala.inline
-    implicit class DatasetMutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
+    extension [Self <: Dataset](x: Self) {
       
-      @scala.inline
-      def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+      inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatures(value: Double): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: Double): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,8 +185,7 @@ object datasetsMod {
   }
   object DatasetsService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createDataset: Description => MapiRequest,
       deleteDataset: `0` => MapiRequest,
       deleteFeature: FeatureId => js.Any,
@@ -215,35 +200,25 @@ object datasetsMod {
       __obj.asInstanceOf[DatasetsService]
     }
     
-    @scala.inline
-    implicit class DatasetsServiceMutableBuilder[Self <: DatasetsService] (val x: Self) extends AnyVal {
+    extension [Self <: DatasetsService](x: Self) {
       
-      @scala.inline
-      def setCreateDataset(value: Description => MapiRequest): Self = StObject.set(x, "createDataset", js.Any.fromFunction1(value))
+      inline def setCreateDataset(value: Description => MapiRequest): Self = StObject.set(x, "createDataset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteDataset(value: `0` => MapiRequest): Self = StObject.set(x, "deleteDataset", js.Any.fromFunction1(value))
+      inline def setDeleteDataset(value: `0` => MapiRequest): Self = StObject.set(x, "deleteDataset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteFeature(value: FeatureId => js.Any): Self = StObject.set(x, "deleteFeature", js.Any.fromFunction1(value))
+      inline def setDeleteFeature(value: FeatureId => js.Any): Self = StObject.set(x, "deleteFeature", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFeature(value: FeatureId => js.Any): Self = StObject.set(x, "getFeature", js.Any.fromFunction1(value))
+      inline def setGetFeature(value: FeatureId => js.Any): Self = StObject.set(x, "getFeature", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMetadata(value: DatasetId => MapiRequest): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
+      inline def setGetMetadata(value: DatasetId => MapiRequest): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListDatasets(value: () => MapiRequest): Self = StObject.set(x, "listDatasets", js.Any.fromFunction0(value))
+      inline def setListDatasets(value: () => MapiRequest): Self = StObject.set(x, "listDatasets", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListFeatures(value: Limit => js.Any): Self = StObject.set(x, "listFeatures", js.Any.fromFunction1(value))
+      inline def setListFeatures(value: Limit => js.Any): Self = StObject.set(x, "listFeatures", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPutFeature(value: typings.mapboxMapboxSdk.anon.Feature => MapiRequest): Self = StObject.set(x, "putFeature", js.Any.fromFunction1(value))
+      inline def setPutFeature(value: typings.mapboxMapboxSdk.anon.Feature => MapiRequest): Self = StObject.set(x, "putFeature", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateMetadata(value: Name => MapiRequest): Self = StObject.set(x, "updateMetadata", js.Any.fromFunction1(value))
+      inline def setUpdateMetadata(value: Name => MapiRequest): Self = StObject.set(x, "updateMetadata", js.Any.fromFunction1(value))
     }
   }
 }

@@ -40,43 +40,31 @@ trait SchemaMarketplaceTargeting extends StObject {
 }
 object SchemaMarketplaceTargeting {
   
-  @scala.inline
-  def apply(): SchemaMarketplaceTargeting = {
+  inline def apply(): SchemaMarketplaceTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMarketplaceTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaMarketplaceTargetingMutableBuilder[Self <: SchemaMarketplaceTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMarketplaceTargeting](x: Self) {
     
-    @scala.inline
-    def setGeoTargeting(value: SchemaCriteriaTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
+    inline def setGeoTargeting(value: SchemaCriteriaTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoTargetingUndefined: Self = StObject.set(x, "geoTargeting", js.undefined)
+    inline def setGeoTargetingUndefined: Self = StObject.set(x, "geoTargeting", js.undefined)
     
-    @scala.inline
-    def setInventorySizeTargeting(value: SchemaInventorySizeTargeting): Self = StObject.set(x, "inventorySizeTargeting", value.asInstanceOf[js.Any])
+    inline def setInventorySizeTargeting(value: SchemaInventorySizeTargeting): Self = StObject.set(x, "inventorySizeTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySizeTargetingUndefined: Self = StObject.set(x, "inventorySizeTargeting", js.undefined)
+    inline def setInventorySizeTargetingUndefined: Self = StObject.set(x, "inventorySizeTargeting", js.undefined)
     
-    @scala.inline
-    def setPlacementTargeting(value: SchemaPlacementTargeting): Self = StObject.set(x, "placementTargeting", value.asInstanceOf[js.Any])
+    inline def setPlacementTargeting(value: SchemaPlacementTargeting): Self = StObject.set(x, "placementTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementTargetingUndefined: Self = StObject.set(x, "placementTargeting", js.undefined)
+    inline def setPlacementTargetingUndefined: Self = StObject.set(x, "placementTargeting", js.undefined)
     
-    @scala.inline
-    def setTechnologyTargeting(value: SchemaTechnologyTargeting): Self = StObject.set(x, "technologyTargeting", value.asInstanceOf[js.Any])
+    inline def setTechnologyTargeting(value: SchemaTechnologyTargeting): Self = StObject.set(x, "technologyTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTechnologyTargetingUndefined: Self = StObject.set(x, "technologyTargeting", js.undefined)
+    inline def setTechnologyTargetingUndefined: Self = StObject.set(x, "technologyTargeting", js.undefined)
     
-    @scala.inline
-    def setVideoTargeting(value: SchemaVideoTargeting): Self = StObject.set(x, "videoTargeting", value.asInstanceOf[js.Any])
+    inline def setVideoTargeting(value: SchemaVideoTargeting): Self = StObject.set(x, "videoTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoTargetingUndefined: Self = StObject.set(x, "videoTargeting", js.undefined)
+    inline def setVideoTargetingUndefined: Self = StObject.set(x, "videoTargeting", js.undefined)
   }
 }

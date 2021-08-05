@@ -12,20 +12,16 @@ object anon {
   }
   object Header {
     
-    @scala.inline
-    def apply(): Header = {
+    inline def apply(): Header = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
 }

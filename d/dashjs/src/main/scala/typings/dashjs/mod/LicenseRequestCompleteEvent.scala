@@ -19,26 +19,20 @@ trait LicenseRequestCompleteEvent
 }
 object LicenseRequestCompleteEvent {
   
-  @scala.inline
-  def apply(data: MessageType): LicenseRequestCompleteEvent = {
+  inline def apply(data: MessageType): LicenseRequestCompleteEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public_licenseRequestComplete")
     __obj.asInstanceOf[LicenseRequestCompleteEvent]
   }
   
-  @scala.inline
-  implicit class LicenseRequestCompleteEventMutableBuilder[Self <: LicenseRequestCompleteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseRequestCompleteEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: MessageType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: MessageType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setType(value: public_licenseRequestComplete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_licenseRequestComplete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

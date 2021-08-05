@@ -18,28 +18,21 @@ trait GetLinkAssociationsResponse extends StObject {
 }
 object GetLinkAssociationsResponse {
   
-  @scala.inline
-  def apply(): GetLinkAssociationsResponse = {
+  inline def apply(): GetLinkAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLinkAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class GetLinkAssociationsResponseMutableBuilder[Self <: GetLinkAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLinkAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setLinkAssociations(value: LinkAssociationList): Self = StObject.set(x, "LinkAssociations", value.asInstanceOf[js.Any])
+    inline def setLinkAssociations(value: LinkAssociationList): Self = StObject.set(x, "LinkAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkAssociationsUndefined: Self = StObject.set(x, "LinkAssociations", js.undefined)
+    inline def setLinkAssociationsUndefined: Self = StObject.set(x, "LinkAssociations", js.undefined)
     
-    @scala.inline
-    def setLinkAssociationsVarargs(value: LinkAssociation*): Self = StObject.set(x, "LinkAssociations", js.Array(value :_*))
+    inline def setLinkAssociationsVarargs(value: LinkAssociation*): Self = StObject.set(x, "LinkAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

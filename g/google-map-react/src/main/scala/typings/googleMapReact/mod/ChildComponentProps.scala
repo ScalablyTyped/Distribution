@@ -13,19 +13,15 @@ trait ChildComponentProps
 }
 object ChildComponentProps {
   
-  @scala.inline
-  def apply(lat: Double, lng: Double): ChildComponentProps = {
+  inline def apply(lat: Double, lng: Double): ChildComponentProps = {
     val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildComponentProps]
   }
   
-  @scala.inline
-  implicit class ChildComponentPropsMutableBuilder[Self <: ChildComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ChildComponentProps](x: Self) {
     
-    @scala.inline
-    def set$hover(value: Boolean): Self = StObject.set(x, "$hover", value.asInstanceOf[js.Any])
+    inline def set$hover(value: Boolean): Self = StObject.set(x, "$hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$hoverUndefined: Self = StObject.set(x, "$hover", js.undefined)
+    inline def set$hoverUndefined: Self = StObject.set(x, "$hover", js.undefined)
   }
 }

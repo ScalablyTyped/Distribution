@@ -29,31 +29,23 @@ trait ParamsResourceProjectsInstancesDatabasesSessionsRollback
 }
 object ParamsResourceProjectsInstancesDatabasesSessionsRollback {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsInstancesDatabasesSessionsRollback = {
+  inline def apply(): ParamsResourceProjectsInstancesDatabasesSessionsRollback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsInstancesDatabasesSessionsRollback]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsInstancesDatabasesSessionsRollbackMutableBuilder[Self <: ParamsResourceProjectsInstancesDatabasesSessionsRollback] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsInstancesDatabasesSessionsRollback](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaRollbackRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaRollbackRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

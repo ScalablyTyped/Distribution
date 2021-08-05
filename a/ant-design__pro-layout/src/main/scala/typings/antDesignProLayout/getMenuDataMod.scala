@@ -15,45 +15,37 @@ object getMenuDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(routes: js.Array[Route]): Breadcrumb = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(routes: js.Array[Route]): Breadcrumb = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[Breadcrumb]
+  inline def default(
     routes: js.Array[Route],
     menu: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(
     routes: js.Array[Route],
     menu: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(
     routes: js.Array[Route],
     menu: Unit,
     formatMessage: Unit,
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(routes: js.Array[Route], menu: Locale): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(routes: js.Array[Route], menu: Locale): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  inline def default(
     routes: js.Array[Route],
     menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(
     routes: js.Array[Route],
     menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(
     routes: js.Array[Route],
     menu: Locale,
     formatMessage: Unit,

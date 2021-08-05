@@ -22,28 +22,21 @@ trait NamespaceStatus extends StObject {
 }
 object NamespaceStatus {
   
-  @scala.inline
-  def apply(): NamespaceStatus = {
+  inline def apply(): NamespaceStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamespaceStatus]
   }
   
-  @scala.inline
-  implicit class NamespaceStatusMutableBuilder[Self <: NamespaceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NamespaceStatus](x: Self) {
     
-    @scala.inline
-    def setConditions(value: Input[js.Array[Input[NamespaceCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Input[js.Array[Input[NamespaceCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Input[NamespaceCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Input[NamespaceCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
   }
 }

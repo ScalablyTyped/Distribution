@@ -17,30 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLDlgCenter extends StObject
 object HTMLDlgCenter {
   
-  @scala.inline
-  def HTMLDlgCenter0: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgCenter0: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgCenter1: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLDlgCenter1: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLDlgCenterDesktop: `2` = 2.asInstanceOf[`2`]
+  inline def HTMLDlgCenterDesktop: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def HTMLDlgCenterNo: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgCenterNo: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgCenterOff: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgCenterOff: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgCenterOn: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLDlgCenterOn: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLDlgCenterParent: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLDlgCenterParent: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLDlgCenterYes: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLDlgCenterYes: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLDlgCenter_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLDlgCenter_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

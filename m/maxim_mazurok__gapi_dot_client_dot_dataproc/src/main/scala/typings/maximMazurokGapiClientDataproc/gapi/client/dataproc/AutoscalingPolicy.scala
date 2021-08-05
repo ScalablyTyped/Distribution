@@ -29,43 +29,31 @@ trait AutoscalingPolicy extends StObject {
 }
 object AutoscalingPolicy {
   
-  @scala.inline
-  def apply(): AutoscalingPolicy = {
+  inline def apply(): AutoscalingPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoscalingPolicy]
   }
   
-  @scala.inline
-  implicit class AutoscalingPolicyMutableBuilder[Self <: AutoscalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscalingPolicy](x: Self) {
     
-    @scala.inline
-    def setBasicAlgorithm(value: BasicAutoscalingAlgorithm): Self = StObject.set(x, "basicAlgorithm", value.asInstanceOf[js.Any])
+    inline def setBasicAlgorithm(value: BasicAutoscalingAlgorithm): Self = StObject.set(x, "basicAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicAlgorithmUndefined: Self = StObject.set(x, "basicAlgorithm", js.undefined)
+    inline def setBasicAlgorithmUndefined: Self = StObject.set(x, "basicAlgorithm", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSecondaryWorkerConfig(value: InstanceGroupAutoscalingPolicyConfig): Self = StObject.set(x, "secondaryWorkerConfig", value.asInstanceOf[js.Any])
+    inline def setSecondaryWorkerConfig(value: InstanceGroupAutoscalingPolicyConfig): Self = StObject.set(x, "secondaryWorkerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryWorkerConfigUndefined: Self = StObject.set(x, "secondaryWorkerConfig", js.undefined)
+    inline def setSecondaryWorkerConfigUndefined: Self = StObject.set(x, "secondaryWorkerConfig", js.undefined)
     
-    @scala.inline
-    def setWorkerConfig(value: InstanceGroupAutoscalingPolicyConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
+    inline def setWorkerConfig(value: InstanceGroupAutoscalingPolicyConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
+    inline def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
   }
 }

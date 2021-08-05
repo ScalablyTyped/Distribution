@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(zipPath: String, opts: Options, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(zipPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(zipPath: String, opts: Options, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(zipPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("extract-zip", JSImport.Namespace)
   @js.native
@@ -26,38 +25,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultDirMode(value: Double): Self = StObject.set(x, "defaultDirMode", value.asInstanceOf[js.Any])
+      inline def setDefaultDirMode(value: Double): Self = StObject.set(x, "defaultDirMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDirModeUndefined: Self = StObject.set(x, "defaultDirMode", js.undefined)
+      inline def setDefaultDirModeUndefined: Self = StObject.set(x, "defaultDirMode", js.undefined)
       
-      @scala.inline
-      def setDefaultFileMode(value: Double): Self = StObject.set(x, "defaultFileMode", value.asInstanceOf[js.Any])
+      inline def setDefaultFileMode(value: Double): Self = StObject.set(x, "defaultFileMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFileModeUndefined: Self = StObject.set(x, "defaultFileMode", js.undefined)
+      inline def setDefaultFileModeUndefined: Self = StObject.set(x, "defaultFileMode", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setOnEntry(value: (/* entry */ js.Any, /* zipfile */ js.Any) => Unit): Self = StObject.set(x, "onEntry", js.Any.fromFunction2(value))
+      inline def setOnEntry(value: (/* entry */ js.Any, /* zipfile */ js.Any) => Unit): Self = StObject.set(x, "onEntry", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEntryUndefined: Self = StObject.set(x, "onEntry", js.undefined)
+      inline def setOnEntryUndefined: Self = StObject.set(x, "onEntry", js.undefined)
     }
   }
 }

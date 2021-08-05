@@ -12,8 +12,7 @@ object weekSelectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugin[PlusWeeks] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[PlusWeeks]]
+  inline def default(): Plugin[PlusWeeks] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[PlusWeeks]]
   
   trait PlusWeeks extends StObject {
     
@@ -23,20 +22,16 @@ object weekSelectMod {
   }
   object PlusWeeks {
     
-    @scala.inline
-    def apply(weekEndDay: Date, weekStartDay: Date): PlusWeeks = {
+    inline def apply(weekEndDay: Date, weekStartDay: Date): PlusWeeks = {
       val __obj = js.Dynamic.literal(weekEndDay = weekEndDay.asInstanceOf[js.Any], weekStartDay = weekStartDay.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlusWeeks]
     }
     
-    @scala.inline
-    implicit class PlusWeeksMutableBuilder[Self <: PlusWeeks] (val x: Self) extends AnyVal {
+    extension [Self <: PlusWeeks](x: Self) {
       
-      @scala.inline
-      def setWeekEndDay(value: Date): Self = StObject.set(x, "weekEndDay", value.asInstanceOf[js.Any])
+      inline def setWeekEndDay(value: Date): Self = StObject.set(x, "weekEndDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekStartDay(value: Date): Self = StObject.set(x, "weekStartDay", value.asInstanceOf[js.Any])
+      inline def setWeekStartDay(value: Date): Self = StObject.set(x, "weekStartDay", value.asInstanceOf[js.Any])
     }
   }
 }

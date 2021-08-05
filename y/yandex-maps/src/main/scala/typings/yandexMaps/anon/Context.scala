@@ -16,34 +16,25 @@ trait Context extends StObject {
 }
 object Context {
   
-  @scala.inline
-  def apply(): Context = {
+  inline def apply(): Context = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Context]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+  extension [Self <: Context](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setControllers(value: js.Array[IEventWorkflowController]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
+    inline def setControllers(value: js.Array[IEventWorkflowController]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
+    inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
     
-    @scala.inline
-    def setControllersVarargs(value: IEventWorkflowController*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+    inline def setControllersVarargs(value: IEventWorkflowController*): Self = StObject.set(x, "controllers", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: IEventManager[js.Object]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: IEventManager[js.Object]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

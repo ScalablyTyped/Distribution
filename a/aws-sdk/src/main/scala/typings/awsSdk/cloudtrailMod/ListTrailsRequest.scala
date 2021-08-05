@@ -13,19 +13,15 @@ trait ListTrailsRequest extends StObject {
 }
 object ListTrailsRequest {
   
-  @scala.inline
-  def apply(): ListTrailsRequest = {
+  inline def apply(): ListTrailsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTrailsRequest]
   }
   
-  @scala.inline
-  implicit class ListTrailsRequestMutableBuilder[Self <: ListTrailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTrailsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

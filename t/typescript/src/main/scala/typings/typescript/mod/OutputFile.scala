@@ -14,22 +14,17 @@ trait OutputFile extends StObject {
 }
 object OutputFile {
   
-  @scala.inline
-  def apply(name: java.lang.String, text: java.lang.String, writeByteOrderMark: Boolean): OutputFile = {
+  inline def apply(name: java.lang.String, text: java.lang.String, writeByteOrderMark: Boolean): OutputFile = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], writeByteOrderMark = writeByteOrderMark.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputFile]
   }
   
-  @scala.inline
-  implicit class OutputFileMutableBuilder[Self <: OutputFile] (val x: Self) extends AnyVal {
+  extension [Self <: OutputFile](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteByteOrderMark(value: Boolean): Self = StObject.set(x, "writeByteOrderMark", value.asInstanceOf[js.Any])
+    inline def setWriteByteOrderMark(value: Boolean): Self = StObject.set(x, "writeByteOrderMark", value.asInstanceOf[js.Any])
   }
 }

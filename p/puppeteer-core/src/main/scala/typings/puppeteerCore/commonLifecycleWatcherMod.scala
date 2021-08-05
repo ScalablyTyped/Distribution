@@ -99,17 +99,13 @@ object commonLifecycleWatcherMod {
   trait ProtocolLifeCycleEvent extends StObject
   object ProtocolLifeCycleEvent {
     
-    @scala.inline
-    def DOMContentLoaded: typings.puppeteerCore.puppeteerCoreStrings.DOMContentLoaded = "DOMContentLoaded".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.DOMContentLoaded]
+    inline def DOMContentLoaded: typings.puppeteerCore.puppeteerCoreStrings.DOMContentLoaded = "DOMContentLoaded".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.DOMContentLoaded]
     
-    @scala.inline
-    def load: typings.puppeteerCore.puppeteerCoreStrings.load = "load".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.load]
+    inline def load: typings.puppeteerCore.puppeteerCoreStrings.load = "load".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.load]
     
-    @scala.inline
-    def networkAlmostIdle: typings.puppeteerCore.puppeteerCoreStrings.networkAlmostIdle = "networkAlmostIdle".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkAlmostIdle]
+    inline def networkAlmostIdle: typings.puppeteerCore.puppeteerCoreStrings.networkAlmostIdle = "networkAlmostIdle".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkAlmostIdle]
     
-    @scala.inline
-    def networkIdle: typings.puppeteerCore.puppeteerCoreStrings.networkIdle = "networkIdle".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkIdle]
+    inline def networkIdle: typings.puppeteerCore.puppeteerCoreStrings.networkIdle = "networkIdle".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkIdle]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -121,16 +117,12 @@ object commonLifecycleWatcherMod {
   trait PuppeteerLifeCycleEvent extends StObject
   object PuppeteerLifeCycleEvent {
     
-    @scala.inline
-    def domcontentloaded: domcontentloaded_ = "domcontentloaded".asInstanceOf[domcontentloaded_]
+    inline def domcontentloaded: domcontentloaded_ = "domcontentloaded".asInstanceOf[domcontentloaded_]
     
-    @scala.inline
-    def load: typings.puppeteerCore.puppeteerCoreStrings.load = "load".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.load]
+    inline def load: typings.puppeteerCore.puppeteerCoreStrings.load = "load".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.load]
     
-    @scala.inline
-    def networkidle0: typings.puppeteerCore.puppeteerCoreStrings.networkidle0 = "networkidle0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkidle0]
+    inline def networkidle0: typings.puppeteerCore.puppeteerCoreStrings.networkidle0 = "networkidle0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkidle0]
     
-    @scala.inline
-    def networkidle2: typings.puppeteerCore.puppeteerCoreStrings.networkidle2 = "networkidle2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkidle2]
+    inline def networkidle2: typings.puppeteerCore.puppeteerCoreStrings.networkidle2 = "networkidle2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.networkidle2]
   }
 }

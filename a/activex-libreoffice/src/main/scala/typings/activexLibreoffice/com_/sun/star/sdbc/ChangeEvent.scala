@@ -22,19 +22,15 @@ trait ChangeEvent
 }
 object ChangeEvent {
   
-  @scala.inline
-  def apply(Action: Double, Rows: Double, Source: XInterface): ChangeEvent = {
+  inline def apply(Action: Double, Rows: Double, Source: XInterface): ChangeEvent = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Rows = Rows.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent]
   }
   
-  @scala.inline
-  implicit class ChangeEventMutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
   }
 }

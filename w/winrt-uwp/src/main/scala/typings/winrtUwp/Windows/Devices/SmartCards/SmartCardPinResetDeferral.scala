@@ -12,16 +12,13 @@ trait SmartCardPinResetDeferral extends StObject {
 }
 object SmartCardPinResetDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): SmartCardPinResetDeferral = {
+  inline def apply(complete: () => Unit): SmartCardPinResetDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[SmartCardPinResetDeferral]
   }
   
-  @scala.inline
-  implicit class SmartCardPinResetDeferralMutableBuilder[Self <: SmartCardPinResetDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: SmartCardPinResetDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

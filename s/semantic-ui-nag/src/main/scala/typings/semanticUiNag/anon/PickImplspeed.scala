@@ -11,16 +11,13 @@ trait PickImplspeed extends StObject {
 }
 object PickImplspeed {
   
-  @scala.inline
-  def apply(speed: Double): PickImplspeed = {
+  inline def apply(speed: Double): PickImplspeed = {
     val __obj = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplspeed]
   }
   
-  @scala.inline
-  implicit class PickImplspeedMutableBuilder[Self <: PickImplspeed] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplspeed](x: Self) {
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ object typographyUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     originEle: HTMLElement,
     option: Option,
     content: ReactNode,
@@ -30,23 +29,18 @@ object typographyUtilMod {
   }
   object Option {
     
-    @scala.inline
-    def apply(rows: Double): Option = {
+    inline def apply(rows: Double): Option = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
 }

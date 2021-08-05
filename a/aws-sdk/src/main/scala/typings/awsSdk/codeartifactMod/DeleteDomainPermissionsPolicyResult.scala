@@ -13,19 +13,15 @@ trait DeleteDomainPermissionsPolicyResult extends StObject {
 }
 object DeleteDomainPermissionsPolicyResult {
   
-  @scala.inline
-  def apply(): DeleteDomainPermissionsPolicyResult = {
+  inline def apply(): DeleteDomainPermissionsPolicyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDomainPermissionsPolicyResult]
   }
   
-  @scala.inline
-  implicit class DeleteDomainPermissionsPolicyResultMutableBuilder[Self <: DeleteDomainPermissionsPolicyResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDomainPermissionsPolicyResult](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: ResourcePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ResourcePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

@@ -140,50 +140,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAfterJSON(value: /* body */ js.Any => Unit): Self = StObject.set(x, "afterJSON", js.Any.fromFunction1(value))
+      inline def setAfterJSON(value: /* body */ js.Any => Unit): Self = StObject.set(x, "afterJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterJSONUndefined: Self = StObject.set(x, "afterJSON", js.undefined)
+      inline def setAfterJSONUndefined: Self = StObject.set(x, "afterJSON", js.undefined)
       
-      @scala.inline
-      def setAfterResponse(value: /* res */ Response => Unit): Self = StObject.set(x, "afterResponse", js.Any.fromFunction1(value))
+      inline def setAfterResponse(value: /* res */ Response => Unit): Self = StObject.set(x, "afterResponse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterResponseUndefined: Self = StObject.set(x, "afterResponse", js.undefined)
+      inline def setAfterResponseUndefined: Self = StObject.set(x, "afterResponse", js.undefined)
       
-      @scala.inline
-      def setBeforeRequest(value: (/* url */ TUrl, /* body */ BodyInit) => Boolean | Unit): Self = StObject.set(x, "beforeRequest", js.Any.fromFunction2(value))
+      inline def setBeforeRequest(value: (/* url */ TUrl, /* body */ BodyInit) => Boolean | Unit): Self = StObject.set(x, "beforeRequest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
+      inline def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
@@ -200,23 +186,17 @@ object mod {
   trait TMethod extends StObject
   object TMethod {
     
-    @scala.inline
-    def delete: typings.fetchIo.fetchIoStrings.delete = "delete".asInstanceOf[typings.fetchIo.fetchIoStrings.delete]
+    inline def delete: typings.fetchIo.fetchIoStrings.delete = "delete".asInstanceOf[typings.fetchIo.fetchIoStrings.delete]
     
-    @scala.inline
-    def get: typings.fetchIo.fetchIoStrings.get = "get".asInstanceOf[typings.fetchIo.fetchIoStrings.get]
+    inline def get: typings.fetchIo.fetchIoStrings.get = "get".asInstanceOf[typings.fetchIo.fetchIoStrings.get]
     
-    @scala.inline
-    def head: typings.fetchIo.fetchIoStrings.head = "head".asInstanceOf[typings.fetchIo.fetchIoStrings.head]
+    inline def head: typings.fetchIo.fetchIoStrings.head = "head".asInstanceOf[typings.fetchIo.fetchIoStrings.head]
     
-    @scala.inline
-    def options: typings.fetchIo.fetchIoStrings.options = "options".asInstanceOf[typings.fetchIo.fetchIoStrings.options]
+    inline def options: typings.fetchIo.fetchIoStrings.options = "options".asInstanceOf[typings.fetchIo.fetchIoStrings.options]
     
-    @scala.inline
-    def post: typings.fetchIo.fetchIoStrings.post = "post".asInstanceOf[typings.fetchIo.fetchIoStrings.post]
+    inline def post: typings.fetchIo.fetchIoStrings.post = "post".asInstanceOf[typings.fetchIo.fetchIoStrings.post]
     
-    @scala.inline
-    def put: typings.fetchIo.fetchIoStrings.put = "put".asInstanceOf[typings.fetchIo.fetchIoStrings.put]
+    inline def put: typings.fetchIo.fetchIoStrings.put = "put".asInstanceOf[typings.fetchIo.fetchIoStrings.put]
   }
   
   type TUrl = String

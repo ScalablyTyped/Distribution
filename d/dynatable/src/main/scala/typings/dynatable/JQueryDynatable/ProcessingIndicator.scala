@@ -35,8 +35,7 @@ trait ProcessingIndicator extends StObject {
 }
 object ProcessingIndicator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attach: () => Unit,
     create: () => JQuery,
     hide: () => Unit,
@@ -48,25 +47,18 @@ object ProcessingIndicator {
     __obj.asInstanceOf[ProcessingIndicator]
   }
   
-  @scala.inline
-  implicit class ProcessingIndicatorMutableBuilder[Self <: ProcessingIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingIndicator](x: Self) {
     
-    @scala.inline
-    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
+    inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreate(value: () => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosition(value: () => JQuery): Self = StObject.set(x, "position", js.Any.fromFunction0(value))
+    inline def setPosition(value: () => JQuery): Self = StObject.set(x, "position", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

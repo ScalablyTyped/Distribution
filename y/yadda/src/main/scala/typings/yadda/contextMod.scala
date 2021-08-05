@@ -29,20 +29,16 @@ object contextMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(merge: Properties => Context, properties: Properties): Context = {
+    inline def apply(merge: Properties => Context, properties: Properties): Context = {
       val __obj = js.Dynamic.literal(merge = js.Any.fromFunction1(merge), properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setMerge(value: Properties => Context): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
+      inline def setMerge(value: Properties => Context): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   

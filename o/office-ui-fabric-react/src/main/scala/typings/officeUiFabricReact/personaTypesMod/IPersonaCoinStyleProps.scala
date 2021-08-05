@@ -35,40 +35,29 @@ trait IPersonaCoinStyleProps extends StObject {
 }
 object IPersonaCoinStyleProps {
   
-  @scala.inline
-  def apply(theme: ITheme): IPersonaCoinStyleProps = {
+  inline def apply(theme: ITheme): IPersonaCoinStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaCoinStyleProps]
   }
   
-  @scala.inline
-  implicit class IPersonaCoinStylePropsMutableBuilder[Self <: IPersonaCoinStyleProps] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonaCoinStyleProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCoinSize(value: Double): Self = StObject.set(x, "coinSize", value.asInstanceOf[js.Any])
+    inline def setCoinSize(value: Double): Self = StObject.set(x, "coinSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoinSizeUndefined: Self = StObject.set(x, "coinSize", js.undefined)
+    inline def setCoinSizeUndefined: Self = StObject.set(x, "coinSize", js.undefined)
     
-    @scala.inline
-    def setShowUnknownPersonaCoin(value: Boolean): Self = StObject.set(x, "showUnknownPersonaCoin", value.asInstanceOf[js.Any])
+    inline def setShowUnknownPersonaCoin(value: Boolean): Self = StObject.set(x, "showUnknownPersonaCoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUnknownPersonaCoinUndefined: Self = StObject.set(x, "showUnknownPersonaCoin", js.undefined)
+    inline def setShowUnknownPersonaCoinUndefined: Self = StObject.set(x, "showUnknownPersonaCoin", js.undefined)
     
-    @scala.inline
-    def setSize(value: PersonaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: PersonaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

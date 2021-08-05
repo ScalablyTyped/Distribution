@@ -13,16 +13,14 @@ object schemaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](S: Schemable1[S]): js.Function1[
+  inline def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](S: Schemable1[S]): js.Function1[
     /* schema */ Schema[js.Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpreter")(S.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* schema */ Schema[js.Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any
   ]]
-  @scala.inline
-  def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](S: Schemable2C[S, js.Any]): js.Function1[
+  inline def interpreter[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](S: Schemable2C[S, js.Any]): js.Function1[
     /* schema */ Schema[js.Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, unknown, A> */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpreter")(S.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -30,8 +28,7 @@ object schemaMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, unknown, A> */ js.Any
   ]]
   
-  @scala.inline
-  def make[A](schema: Schema[A]): Schema[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(schema.asInstanceOf[js.Any]).asInstanceOf[Schema[A]]
+  inline def make[A](schema: Schema[A]): Schema[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(schema.asInstanceOf[js.Any]).asInstanceOf[Schema[A]]
   
   type Schema[A] = js.Function1[
     /* S */ Schemable[js.Any], 

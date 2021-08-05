@@ -18,22 +18,17 @@ trait TaskAgentSessionKey extends StObject {
 }
 object TaskAgentSessionKey {
   
-  @scala.inline
-  def apply(encrypted: Boolean, value: js.Array[Double]): TaskAgentSessionKey = {
+  inline def apply(encrypted: Boolean, value: js.Array[Double]): TaskAgentSessionKey = {
     val __obj = js.Dynamic.literal(encrypted = encrypted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskAgentSessionKey]
   }
   
-  @scala.inline
-  implicit class TaskAgentSessionKeyMutableBuilder[Self <: TaskAgentSessionKey] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentSessionKey](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

@@ -18,8 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextAnimationDirection extends StObject
 object TextAnimationDirection {
   
-  @scala.inline
-  def DOWN: `3` = 3.asInstanceOf[`3`]
+  inline def DOWN: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the connection line leaves the connected object to the left,
@@ -28,8 +27,7 @@ object TextAnimationDirection {
     *
     * The left edge of the text is adjusted to the left edge of the shape.
     */
-  @scala.inline
-  def LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def LEFT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the connection line leaves the connected object to the right,
@@ -38,9 +36,7 @@ object TextAnimationDirection {
     *
     * The right edge of the text is adjusted to the right edge of the shape.
     */
-  @scala.inline
-  def RIGHT: `1` = 1.asInstanceOf[`1`]
+  inline def RIGHT: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def UP: `2` = 2.asInstanceOf[`2`]
+  inline def UP: `2` = 2.asInstanceOf[`2`]
 }

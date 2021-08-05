@@ -13,8 +13,7 @@ object tagStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): TagStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TagStyle]
+  inline def default(theme: Theme): TagStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TagStyle]
   
   trait TagStyle extends StObject {
     
@@ -52,8 +51,7 @@ object tagStyleMod {
   }
   object TagStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeText: TextStyle,
       activeWrap: ViewStyle,
       close: ViewStyle,
@@ -75,56 +73,39 @@ object tagStyleMod {
       __obj.asInstanceOf[TagStyle]
     }
     
-    @scala.inline
-    implicit class TagStyleMutableBuilder[Self <: TagStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TagStyle](x: Self) {
       
-      @scala.inline
-      def setActiveText(value: TextStyle): Self = StObject.set(x, "activeText", value.asInstanceOf[js.Any])
+      inline def setActiveText(value: TextStyle): Self = StObject.set(x, "activeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveWrap(value: ViewStyle): Self = StObject.set(x, "activeWrap", value.asInstanceOf[js.Any])
+      inline def setActiveWrap(value: ViewStyle): Self = StObject.set(x, "activeWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: ViewStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: ViewStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseAndroid(value: ViewStyle): Self = StObject.set(x, "closeAndroid", value.asInstanceOf[js.Any])
+      inline def setCloseAndroid(value: ViewStyle): Self = StObject.set(x, "closeAndroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIOS(value: ViewStyle): Self = StObject.set(x, "closeIOS", value.asInstanceOf[js.Any])
+      inline def setCloseIOS(value: ViewStyle): Self = StObject.set(x, "closeIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
+      inline def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTransform(value: ViewStyle): Self = StObject.set(x, "closeTransform", value.asInstanceOf[js.Any])
+      inline def setCloseTransform(value: ViewStyle): Self = StObject.set(x, "closeTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledText(value: TextStyle): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
+      inline def setDisabledText(value: TextStyle): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledWrap(value: ViewStyle): Self = StObject.set(x, "disabledWrap", value.asInstanceOf[js.Any])
+      inline def setDisabledWrap(value: ViewStyle): Self = StObject.set(x, "disabledWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalText(value: TextStyle): Self = StObject.set(x, "normalText", value.asInstanceOf[js.Any])
+      inline def setNormalText(value: TextStyle): Self = StObject.set(x, "normalText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalWrap(value: ViewStyle): Self = StObject.set(x, "normalWrap", value.asInstanceOf[js.Any])
+      inline def setNormalWrap(value: ViewStyle): Self = StObject.set(x, "normalWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: ViewStyle): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ViewStyle): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSmall(value: TextStyle): Self = StObject.set(x, "textSmall", value.asInstanceOf[js.Any])
+      inline def setTextSmall(value: TextStyle): Self = StObject.set(x, "textSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapSmall(value: ViewStyle): Self = StObject.set(x, "wrapSmall", value.asInstanceOf[js.Any])
+      inline def setWrapSmall(value: ViewStyle): Self = StObject.set(x, "wrapSmall", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,37 +28,27 @@ trait S3Location extends StObject {
 }
 object S3Location {
   
-  @scala.inline
-  def apply(): S3Location = {
+  inline def apply(): S3Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Location]
   }
   
-  @scala.inline
-  implicit class S3LocationMutableBuilder[Self <: S3Location] (val x: Self) extends AnyVal {
+  extension [Self <: S3Location](x: Self) {
     
-    @scala.inline
-    def setBucket(value: NonEmptyString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: NonEmptyString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setKey(value: NonEmptyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: NonEmptyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setObjectVersion(value: NonEmptyString): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: NonEmptyString): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionUndefined: Self = StObject.set(x, "ObjectVersion", js.undefined)
+    inline def setObjectVersionUndefined: Self = StObject.set(x, "ObjectVersion", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: NonEmptyString): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: NonEmptyString): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

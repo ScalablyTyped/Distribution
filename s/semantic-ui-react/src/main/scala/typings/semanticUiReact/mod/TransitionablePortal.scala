@@ -19,6 +19,5 @@ class TransitionablePortal protected ()
 }
 object TransitionablePortal {
   
-  @scala.inline
-  def apply: ComponentClass[TransitionablePortalProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("TransitionablePortal").asInstanceOf[ComponentClass[TransitionablePortalProps, ComponentState]]
+  inline def apply: ComponentClass[TransitionablePortalProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("TransitionablePortal").asInstanceOf[ComponentClass[TransitionablePortalProps, ComponentState]]
 }

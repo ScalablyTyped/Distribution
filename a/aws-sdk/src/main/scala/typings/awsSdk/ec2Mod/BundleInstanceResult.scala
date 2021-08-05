@@ -13,19 +13,15 @@ trait BundleInstanceResult extends StObject {
 }
 object BundleInstanceResult {
   
-  @scala.inline
-  def apply(): BundleInstanceResult = {
+  inline def apply(): BundleInstanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BundleInstanceResult]
   }
   
-  @scala.inline
-  implicit class BundleInstanceResultMutableBuilder[Self <: BundleInstanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: BundleInstanceResult](x: Self) {
     
-    @scala.inline
-    def setBundleTask(value: BundleTask): Self = StObject.set(x, "BundleTask", value.asInstanceOf[js.Any])
+    inline def setBundleTask(value: BundleTask): Self = StObject.set(x, "BundleTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleTaskUndefined: Self = StObject.set(x, "BundleTask", js.undefined)
+    inline def setBundleTaskUndefined: Self = StObject.set(x, "BundleTask", js.undefined)
   }
 }

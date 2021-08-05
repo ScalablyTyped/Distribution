@@ -15,9 +15,9 @@ object baseMod {
   abstract class CapacitorCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
-    var _integration: js.Any = js.native
+    /* private */ var _integration: js.Any = js.native
     
-    var _runCapacitor: js.Any = js.native
+    /* private */ var _runCapacitor: js.Any = js.native
     
     def checkCapacitor(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     
@@ -27,7 +27,7 @@ object baseMod {
     
     def preRunChecks(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     
-    var promptToInstallCapacitor: js.Any = js.native
+    /* private */ var promptToInstallCapacitor: js.Any = js.native
     
     def runCapacitor(argList: js.Array[String]): js.Promise[Unit] = js.native
   }

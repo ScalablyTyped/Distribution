@@ -28,8 +28,7 @@ trait LocationRepositoryStoryResponseStoryHashtagsItem extends StObject {
 }
 object LocationRepositoryStoryResponseStoryHashtagsItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hashtag: LocationRepositoryStoryResponseHashtag,
     height: String,
     is_hidden: Double,
@@ -45,37 +44,26 @@ object LocationRepositoryStoryResponseStoryHashtagsItem {
     __obj.asInstanceOf[LocationRepositoryStoryResponseStoryHashtagsItem]
   }
   
-  @scala.inline
-  implicit class LocationRepositoryStoryResponseStoryHashtagsItemMutableBuilder[Self <: LocationRepositoryStoryResponseStoryHashtagsItem] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRepositoryStoryResponseStoryHashtagsItem](x: Self) {
     
-    @scala.inline
-    def setHashtag(value: LocationRepositoryStoryResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+    inline def setHashtag(value: LocationRepositoryStoryResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_hidden(value: Double): Self = StObject.set(x, "is_hidden", value.asInstanceOf[js.Any])
+    inline def setIs_hidden(value: Double): Self = StObject.set(x, "is_hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_pinned(value: Double): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
+    inline def setIs_pinned(value: Double): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_sticker(value: Double): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: Double): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

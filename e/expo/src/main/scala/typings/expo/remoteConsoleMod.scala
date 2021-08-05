@@ -16,7 +16,6 @@ object remoteConsoleMod {
     @JSImport("expo/build/logs/RemoteConsole", "default.createRemoteConsole")
     @js.native
     def createRemoteConsole: js.Function1[/* originalConsole */ Console, Console] = js.native
-    @scala.inline
-    def createRemoteConsole_=(x: js.Function1[/* originalConsole */ Console, Console]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRemoteConsole")(x.asInstanceOf[js.Any])
+    inline def createRemoteConsole_=(x: js.Function1[/* originalConsole */ Console, Console]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRemoteConsole")(x.asInstanceOf[js.Any])
   }
 }

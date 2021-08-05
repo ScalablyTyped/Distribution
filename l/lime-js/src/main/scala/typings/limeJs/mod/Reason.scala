@@ -12,22 +12,17 @@ trait Reason extends StObject {
 }
 object Reason {
   
-  @scala.inline
-  def apply(code: Double): Reason = {
+  inline def apply(code: Double): Reason = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }
   
-  @scala.inline
-  implicit class ReasonMutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
+  extension [Self <: Reason](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

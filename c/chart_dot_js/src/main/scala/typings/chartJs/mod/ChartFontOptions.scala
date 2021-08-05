@@ -16,40 +16,29 @@ trait ChartFontOptions extends StObject {
 }
 object ChartFontOptions {
   
-  @scala.inline
-  def apply(): ChartFontOptions = {
+  inline def apply(): ChartFontOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartFontOptions]
   }
   
-  @scala.inline
-  implicit class ChartFontOptionsMutableBuilder[Self <: ChartFontOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartFontOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultFontColor(value: ChartColor): Self = StObject.set(x, "defaultFontColor", value.asInstanceOf[js.Any])
+    inline def setDefaultFontColor(value: ChartColor): Self = StObject.set(x, "defaultFontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFontColorUndefined: Self = StObject.set(x, "defaultFontColor", js.undefined)
+    inline def setDefaultFontColorUndefined: Self = StObject.set(x, "defaultFontColor", js.undefined)
     
-    @scala.inline
-    def setDefaultFontColorVarargs(value: String*): Self = StObject.set(x, "defaultFontColor", js.Array(value :_*))
+    inline def setDefaultFontColorVarargs(value: String*): Self = StObject.set(x, "defaultFontColor", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultFontFamily(value: String): Self = StObject.set(x, "defaultFontFamily", value.asInstanceOf[js.Any])
+    inline def setDefaultFontFamily(value: String): Self = StObject.set(x, "defaultFontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFontFamilyUndefined: Self = StObject.set(x, "defaultFontFamily", js.undefined)
+    inline def setDefaultFontFamilyUndefined: Self = StObject.set(x, "defaultFontFamily", js.undefined)
     
-    @scala.inline
-    def setDefaultFontSize(value: Double): Self = StObject.set(x, "defaultFontSize", value.asInstanceOf[js.Any])
+    inline def setDefaultFontSize(value: Double): Self = StObject.set(x, "defaultFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFontSizeUndefined: Self = StObject.set(x, "defaultFontSize", js.undefined)
+    inline def setDefaultFontSizeUndefined: Self = StObject.set(x, "defaultFontSize", js.undefined)
     
-    @scala.inline
-    def setDefaultFontStyle(value: String): Self = StObject.set(x, "defaultFontStyle", value.asInstanceOf[js.Any])
+    inline def setDefaultFontStyle(value: String): Self = StObject.set(x, "defaultFontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFontStyleUndefined: Self = StObject.set(x, "defaultFontStyle", js.undefined)
+    inline def setDefaultFontStyleUndefined: Self = StObject.set(x, "defaultFontStyle", js.undefined)
   }
 }

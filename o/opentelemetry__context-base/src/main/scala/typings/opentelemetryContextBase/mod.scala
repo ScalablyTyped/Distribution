@@ -13,7 +13,7 @@ object mod {
     *
     * @param parentContext a context from which to inherit values
     */
-  class Context protected ()
+  /* private */ class Context ()
     extends typings.opentelemetryContextBase.contextMod.Context
   /* static members */
   object Context {
@@ -38,8 +38,7 @@ object mod {
     val TODO: typings.opentelemetryContextBase.contextMod.Context = js.native
     
     /** Get a key to uniquely identify a context value */
-    @scala.inline
-    def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
+    inline def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
   }
   
   @JSImport("@opentelemetry/context-base", "NoopContextManager")

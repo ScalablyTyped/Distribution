@@ -108,8 +108,7 @@ trait DataIntersection extends StObject {
 }
 object DataIntersection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ABA: String,
     AccountNumber: String,
     Active: Boolean,
@@ -132,70 +131,48 @@ object DataIntersection {
     __obj.asInstanceOf[DataIntersection]
   }
   
-  @scala.inline
-  implicit class DataIntersectionMutableBuilder[Self <: DataIntersection] (val x: Self) extends AnyVal {
+  extension [Self <: DataIntersection](x: Self) {
     
-    @scala.inline
-    def setABA(value: String): Self = StObject.set(x, "ABA", value.asInstanceOf[js.Any])
+    inline def setABA(value: String): Self = StObject.set(x, "ABA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBIC(value: String & js.UndefOr[String]): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
+    inline def setBIC(value: String & js.UndefOr[String]): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankName(value: String): Self = StObject.set(x, "BankName", value.asInstanceOf[js.Any])
+    inline def setBankName(value: String): Self = StObject.set(x, "BankName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchCode(value: String): Self = StObject.set(x, "BranchCode", value.asInstanceOf[js.Any])
+    inline def setBranchCode(value: String): Self = StObject.set(x, "BranchCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositAccountType(value: DepositAccountType): Self = StObject.set(x, "DepositAccountType", value.asInstanceOf[js.Any])
+    inline def setDepositAccountType(value: DepositAccountType): Self = StObject.set(x, "DepositAccountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositAccountTypeUndefined: Self = StObject.set(x, "DepositAccountType", js.undefined)
+    inline def setDepositAccountTypeUndefined: Self = StObject.set(x, "DepositAccountType", js.undefined)
     
-    @scala.inline
-    def setDetails(value: BankAccountDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: BankAccountDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    @scala.inline
-    def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
+    inline def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstitutionNumber(value: String): Self = StObject.set(x, "InstitutionNumber", value.asInstanceOf[js.Any])
+    inline def setInstitutionNumber(value: String): Self = StObject.set(x, "InstitutionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
+    inline def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCode(value: String): Self = StObject.set(x, "SortCode", value.asInstanceOf[js.Any])
+    inline def setSortCode(value: String): Self = StObject.set(x, "SortCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BankAccountType & OTHER & CA & GB & IBAN & US): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: BankAccountType & OTHER & CA & GB & IBAN & US): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def env(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(content.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def env(content: String, variables: Dict[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("env")(content.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def env(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def env(content: String, variables: Dict[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("env")(content.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Dict[T] = StringDictionary[js.UndefOr[T]]
 }

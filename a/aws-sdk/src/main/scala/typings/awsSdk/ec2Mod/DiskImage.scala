@@ -23,31 +23,23 @@ trait DiskImage extends StObject {
 }
 object DiskImage {
   
-  @scala.inline
-  def apply(): DiskImage = {
+  inline def apply(): DiskImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskImage]
   }
   
-  @scala.inline
-  implicit class DiskImageMutableBuilder[Self <: DiskImage] (val x: Self) extends AnyVal {
+  extension [Self <: DiskImage](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setImage(value: DiskImageDetail): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: DiskImageDetail): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
-    @scala.inline
-    def setVolume(value: VolumeDetail): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: VolumeDetail): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "Volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "Volume", js.undefined)
   }
 }

@@ -32,13 +32,10 @@ object altNameMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait AltName extends StObject {
@@ -53,8 +50,7 @@ object altNameMod {
   }
   object AltName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altNames: js.Array[typings.pkijs.generalNameMod.default],
       fromSchema: js.Any => Unit,
       toJSON: () => js.Any,
@@ -64,23 +60,17 @@ object altNameMod {
       __obj.asInstanceOf[AltName]
     }
     
-    @scala.inline
-    implicit class AltNameMutableBuilder[Self <: AltName] (val x: Self) extends AnyVal {
+    extension [Self <: AltName](x: Self) {
       
-      @scala.inline
-      def setAltNames(value: js.Array[typings.pkijs.generalNameMod.default]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
+      inline def setAltNames(value: js.Array[typings.pkijs.generalNameMod.default]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltNamesVarargs(value: typings.pkijs.generalNameMod.default*): Self = StObject.set(x, "altNames", js.Array(value :_*))
+      inline def setAltNamesVarargs(value: typings.pkijs.generalNameMod.default*): Self = StObject.set(x, "altNames", js.Array(value :_*))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

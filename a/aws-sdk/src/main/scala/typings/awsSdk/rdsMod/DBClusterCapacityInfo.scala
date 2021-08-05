@@ -33,43 +33,31 @@ trait DBClusterCapacityInfo extends StObject {
 }
 object DBClusterCapacityInfo {
   
-  @scala.inline
-  def apply(): DBClusterCapacityInfo = {
+  inline def apply(): DBClusterCapacityInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterCapacityInfo]
   }
   
-  @scala.inline
-  implicit class DBClusterCapacityInfoMutableBuilder[Self <: DBClusterCapacityInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterCapacityInfo](x: Self) {
     
-    @scala.inline
-    def setCurrentCapacity(value: IntegerOptional): Self = StObject.set(x, "CurrentCapacity", value.asInstanceOf[js.Any])
+    inline def setCurrentCapacity(value: IntegerOptional): Self = StObject.set(x, "CurrentCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentCapacityUndefined: Self = StObject.set(x, "CurrentCapacity", js.undefined)
+    inline def setCurrentCapacityUndefined: Self = StObject.set(x, "CurrentCapacity", js.undefined)
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
+    inline def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setPendingCapacity(value: IntegerOptional): Self = StObject.set(x, "PendingCapacity", value.asInstanceOf[js.Any])
+    inline def setPendingCapacity(value: IntegerOptional): Self = StObject.set(x, "PendingCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingCapacityUndefined: Self = StObject.set(x, "PendingCapacity", js.undefined)
+    inline def setPendingCapacityUndefined: Self = StObject.set(x, "PendingCapacity", js.undefined)
     
-    @scala.inline
-    def setSecondsBeforeTimeout(value: IntegerOptional): Self = StObject.set(x, "SecondsBeforeTimeout", value.asInstanceOf[js.Any])
+    inline def setSecondsBeforeTimeout(value: IntegerOptional): Self = StObject.set(x, "SecondsBeforeTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsBeforeTimeoutUndefined: Self = StObject.set(x, "SecondsBeforeTimeout", js.undefined)
+    inline def setSecondsBeforeTimeoutUndefined: Self = StObject.set(x, "SecondsBeforeTimeout", js.undefined)
     
-    @scala.inline
-    def setTimeoutAction(value: String): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
+    inline def setTimeoutAction(value: String): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutActionUndefined: Self = StObject.set(x, "TimeoutAction", js.undefined)
+    inline def setTimeoutActionUndefined: Self = StObject.set(x, "TimeoutAction", js.undefined)
   }
 }

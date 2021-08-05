@@ -10,19 +10,15 @@ trait ModifySnapshotCopyRetentionPeriodResult extends StObject {
 }
 object ModifySnapshotCopyRetentionPeriodResult {
   
-  @scala.inline
-  def apply(): ModifySnapshotCopyRetentionPeriodResult = {
+  inline def apply(): ModifySnapshotCopyRetentionPeriodResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifySnapshotCopyRetentionPeriodResult]
   }
   
-  @scala.inline
-  implicit class ModifySnapshotCopyRetentionPeriodResultMutableBuilder[Self <: ModifySnapshotCopyRetentionPeriodResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifySnapshotCopyRetentionPeriodResult](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
   }
 }

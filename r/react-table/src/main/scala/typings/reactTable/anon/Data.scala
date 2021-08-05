@@ -14,28 +14,21 @@ trait Data[D /* <: js.Object */] extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](data: js.Array[D], depth: Double, subRows: js.Array[D]): Data[D] = {
+  inline def apply[D /* <: js.Object */](data: js.Array[D], depth: Double, subRows: js.Array[D]): Data[D] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], subRows = subRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[D]]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data[?], D /* <: js.Object */] (val x: Self & Data[D]) extends AnyVal {
+  extension [Self <: Data[?], D /* <: js.Object */](x: Self & Data[D]) {
     
-    @scala.inline
-    def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubRows(value: js.Array[D]): Self = StObject.set(x, "subRows", value.asInstanceOf[js.Any])
+    inline def setSubRows(value: js.Array[D]): Self = StObject.set(x, "subRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubRowsVarargs(value: D*): Self = StObject.set(x, "subRows", js.Array(value :_*))
+    inline def setSubRowsVarargs(value: D*): Self = StObject.set(x, "subRows", js.Array(value :_*))
   }
 }

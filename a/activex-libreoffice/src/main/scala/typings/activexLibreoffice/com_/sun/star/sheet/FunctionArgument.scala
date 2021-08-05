@@ -21,22 +21,17 @@ trait FunctionArgument extends StObject {
 }
 object FunctionArgument {
   
-  @scala.inline
-  def apply(Description: String, IsOptional: Boolean, Name: String): FunctionArgument = {
+  inline def apply(Description: String, IsOptional: Boolean, Name: String): FunctionArgument = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], IsOptional = IsOptional.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionArgument]
   }
   
-  @scala.inline
-  implicit class FunctionArgumentMutableBuilder[Self <: FunctionArgument] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionArgument](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOptional(value: Boolean): Self = StObject.set(x, "IsOptional", value.asInstanceOf[js.Any])
+    inline def setIsOptional(value: Boolean): Self = StObject.set(x, "IsOptional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

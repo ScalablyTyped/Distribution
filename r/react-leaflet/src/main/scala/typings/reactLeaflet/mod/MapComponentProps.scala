@@ -12,25 +12,19 @@ trait MapComponentProps extends StObject {
 }
 object MapComponentProps {
   
-  @scala.inline
-  def apply(): MapComponentProps = {
+  inline def apply(): MapComponentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapComponentProps]
   }
   
-  @scala.inline
-  implicit class MapComponentPropsMutableBuilder[Self <: MapComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapComponentProps](x: Self) {
     
-    @scala.inline
-    def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
     
-    @scala.inline
-    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
   }
 }

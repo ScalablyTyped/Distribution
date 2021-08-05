@@ -63,65 +63,45 @@ object mod extends Shortcut {
   trait Events extends StObject
   object Events {
     
-    @scala.inline
-    def buildDotafter: typings.glidejsGlide.glidejsGlideStrings.buildDotafter = "build.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.buildDotafter]
+    inline def buildDotafter: typings.glidejsGlide.glidejsGlideStrings.buildDotafter = "build.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.buildDotafter]
     
-    @scala.inline
-    def buildDotbefore: typings.glidejsGlide.glidejsGlideStrings.buildDotbefore = "build.before".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.buildDotbefore]
+    inline def buildDotbefore: typings.glidejsGlide.glidejsGlideStrings.buildDotbefore = "build.before".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.buildDotbefore]
     
-    @scala.inline
-    def mountDotafter: typings.glidejsGlide.glidejsGlideStrings.mountDotafter = "mount.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.mountDotafter]
+    inline def mountDotafter: typings.glidejsGlide.glidejsGlideStrings.mountDotafter = "mount.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.mountDotafter]
     
-    @scala.inline
-    def mountDotbefore: typings.glidejsGlide.glidejsGlideStrings.mountDotbefore = "mount.before".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.mountDotbefore]
+    inline def mountDotbefore: typings.glidejsGlide.glidejsGlideStrings.mountDotbefore = "mount.before".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.mountDotbefore]
     
-    @scala.inline
-    def move: typings.glidejsGlide.glidejsGlideStrings.move = "move".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.move]
+    inline def move: typings.glidejsGlide.glidejsGlideStrings.move = "move".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.move]
     
-    @scala.inline
-    def moveDotafter: typings.glidejsGlide.glidejsGlideStrings.moveDotafter = "move.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.moveDotafter]
+    inline def moveDotafter: typings.glidejsGlide.glidejsGlideStrings.moveDotafter = "move.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.moveDotafter]
     
-    @scala.inline
-    def pause: typings.glidejsGlide.glidejsGlideStrings.pause = "pause".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.pause]
+    inline def pause: typings.glidejsGlide.glidejsGlideStrings.pause = "pause".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.pause]
     
-    @scala.inline
-    def play: typings.glidejsGlide.glidejsGlideStrings.play = "play".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.play]
+    inline def play: typings.glidejsGlide.glidejsGlideStrings.play = "play".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.play]
     
-    @scala.inline
-    def resize: typings.glidejsGlide.glidejsGlideStrings.resize = "resize".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.resize]
+    inline def resize: typings.glidejsGlide.glidejsGlideStrings.resize = "resize".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.resize]
     
-    @scala.inline
-    def run: typings.glidejsGlide.glidejsGlideStrings.run = "run".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.run]
+    inline def run: typings.glidejsGlide.glidejsGlideStrings.run = "run".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.run]
     
-    @scala.inline
-    def runDotafter: typings.glidejsGlide.glidejsGlideStrings.runDotafter = "run.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotafter]
+    inline def runDotafter: typings.glidejsGlide.glidejsGlideStrings.runDotafter = "run.after".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotafter]
     
-    @scala.inline
-    def runDotbefore: typings.glidejsGlide.glidejsGlideStrings.runDotbefore = "run.before".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotbefore]
+    inline def runDotbefore: typings.glidejsGlide.glidejsGlideStrings.runDotbefore = "run.before".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotbefore]
     
-    @scala.inline
-    def runDotend: typings.glidejsGlide.glidejsGlideStrings.runDotend = "run.end".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotend]
+    inline def runDotend: typings.glidejsGlide.glidejsGlideStrings.runDotend = "run.end".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotend]
     
-    @scala.inline
-    def runDotoffset: typings.glidejsGlide.glidejsGlideStrings.runDotoffset = "run.offset".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotoffset]
+    inline def runDotoffset: typings.glidejsGlide.glidejsGlideStrings.runDotoffset = "run.offset".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotoffset]
     
-    @scala.inline
-    def runDotstart: typings.glidejsGlide.glidejsGlideStrings.runDotstart = "run.start".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotstart]
+    inline def runDotstart: typings.glidejsGlide.glidejsGlideStrings.runDotstart = "run.start".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.runDotstart]
     
-    @scala.inline
-    def swipeDotend: typings.glidejsGlide.glidejsGlideStrings.swipeDotend = "swipe.end".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.swipeDotend]
+    inline def swipeDotend: typings.glidejsGlide.glidejsGlideStrings.swipeDotend = "swipe.end".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.swipeDotend]
     
-    @scala.inline
-    def swipeDotmove: typings.glidejsGlide.glidejsGlideStrings.swipeDotmove = "swipe.move".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.swipeDotmove]
+    inline def swipeDotmove: typings.glidejsGlide.glidejsGlideStrings.swipeDotmove = "swipe.move".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.swipeDotmove]
     
-    @scala.inline
-    def swipeDotstart: typings.glidejsGlide.glidejsGlideStrings.swipeDotstart = "swipe.start".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.swipeDotstart]
+    inline def swipeDotstart: typings.glidejsGlide.glidejsGlideStrings.swipeDotstart = "swipe.start".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.swipeDotstart]
     
-    @scala.inline
-    def translateDotjump: typings.glidejsGlide.glidejsGlideStrings.translateDotjump = "translate.jump".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.translateDotjump]
+    inline def translateDotjump: typings.glidejsGlide.glidejsGlideStrings.translateDotjump = "translate.jump".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.translateDotjump]
     
-    @scala.inline
-    def update: typings.glidejsGlide.glidejsGlideStrings.update = "update".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.update]
+    inline def update: typings.glidejsGlide.glidejsGlideStrings.update = "update".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.update]
   }
   
   trait Options extends StObject {
@@ -288,152 +268,104 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setAnimationTimingFunc(value: String): Self = StObject.set(x, "animationTimingFunc", value.asInstanceOf[js.Any])
+      inline def setAnimationTimingFunc(value: String): Self = StObject.set(x, "animationTimingFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationTimingFuncUndefined: Self = StObject.set(x, "animationTimingFunc", js.undefined)
+      inline def setAnimationTimingFuncUndefined: Self = StObject.set(x, "animationTimingFunc", js.undefined)
       
-      @scala.inline
-      def setAutoplay(value: `false` | Double): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: `false` | Double): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setBound(value: Boolean): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
+      inline def setBound(value: Boolean): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
+      inline def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
       
-      @scala.inline
-      def setBreakpoints(value: Record[Double, Options]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+      inline def setBreakpoints(value: Record[Double, Options]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+      inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
       
-      @scala.inline
-      def setClasses(value: ActiveNav): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: ActiveNav): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setDirection(value: ltr | rtr): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ltr | rtr): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDragThreshold(value: Double | `false`): Self = StObject.set(x, "dragThreshold", value.asInstanceOf[js.Any])
+      inline def setDragThreshold(value: Double | `false`): Self = StObject.set(x, "dragThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragThresholdUndefined: Self = StObject.set(x, "dragThreshold", js.undefined)
+      inline def setDragThresholdUndefined: Self = StObject.set(x, "dragThreshold", js.undefined)
       
-      @scala.inline
-      def setFocusAt(value: Double | String): Self = StObject.set(x, "focusAt", value.asInstanceOf[js.Any])
+      inline def setFocusAt(value: Double | String): Self = StObject.set(x, "focusAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusAtUndefined: Self = StObject.set(x, "focusAt", js.undefined)
+      inline def setFocusAtUndefined: Self = StObject.set(x, "focusAt", js.undefined)
       
-      @scala.inline
-      def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+      inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+      inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
       
-      @scala.inline
-      def setHoverpause(value: Boolean): Self = StObject.set(x, "hoverpause", value.asInstanceOf[js.Any])
+      inline def setHoverpause(value: Boolean): Self = StObject.set(x, "hoverpause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverpauseUndefined: Self = StObject.set(x, "hoverpause", js.undefined)
+      inline def setHoverpauseUndefined: Self = StObject.set(x, "hoverpause", js.undefined)
       
-      @scala.inline
-      def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      @scala.inline
-      def setPeek(value: Double | After): Self = StObject.set(x, "peek", value.asInstanceOf[js.Any])
+      inline def setPeek(value: Double | After): Self = StObject.set(x, "peek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeekUndefined: Self = StObject.set(x, "peek", js.undefined)
+      inline def setPeekUndefined: Self = StObject.set(x, "peek", js.undefined)
       
-      @scala.inline
-      def setPerTouch(value: Double | `false`): Self = StObject.set(x, "perTouch", value.asInstanceOf[js.Any])
+      inline def setPerTouch(value: Double | `false`): Self = StObject.set(x, "perTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerTouchUndefined: Self = StObject.set(x, "perTouch", js.undefined)
+      inline def setPerTouchUndefined: Self = StObject.set(x, "perTouch", js.undefined)
       
-      @scala.inline
-      def setPerView(value: Double): Self = StObject.set(x, "perView", value.asInstanceOf[js.Any])
+      inline def setPerView(value: Double): Self = StObject.set(x, "perView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerViewUndefined: Self = StObject.set(x, "perView", js.undefined)
+      inline def setPerViewUndefined: Self = StObject.set(x, "perView", js.undefined)
       
-      @scala.inline
-      def setRewind(value: Boolean): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
+      inline def setRewind(value: Boolean): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewindDuration(value: Double): Self = StObject.set(x, "rewindDuration", value.asInstanceOf[js.Any])
+      inline def setRewindDuration(value: Double): Self = StObject.set(x, "rewindDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewindDurationUndefined: Self = StObject.set(x, "rewindDuration", js.undefined)
+      inline def setRewindDurationUndefined: Self = StObject.set(x, "rewindDuration", js.undefined)
       
-      @scala.inline
-      def setRewindUndefined: Self = StObject.set(x, "rewind", js.undefined)
+      inline def setRewindUndefined: Self = StObject.set(x, "rewind", js.undefined)
       
-      @scala.inline
-      def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+      inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
-      @scala.inline
-      def setSwipeThreshold(value: Double | `false`): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeThreshold(value: Double | `false`): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
+      inline def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
       
-      @scala.inline
-      def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+      inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+      inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
       
-      @scala.inline
-      def setTouchAngle(value: Double): Self = StObject.set(x, "touchAngle", value.asInstanceOf[js.Any])
+      inline def setTouchAngle(value: Double): Self = StObject.set(x, "touchAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchAngleUndefined: Self = StObject.set(x, "touchAngle", js.undefined)
+      inline def setTouchAngleUndefined: Self = StObject.set(x, "touchAngle", js.undefined)
       
-      @scala.inline
-      def setTouchRatio(value: Double): Self = StObject.set(x, "touchRatio", value.asInstanceOf[js.Any])
+      inline def setTouchRatio(value: Double): Self = StObject.set(x, "touchRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchRatioUndefined: Self = StObject.set(x, "touchRatio", js.undefined)
+      inline def setTouchRatioUndefined: Self = StObject.set(x, "touchRatio", js.undefined)
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -549,11 +481,9 @@ object mod extends Shortcut {
   trait Type extends StObject
   object Type {
     
-    @scala.inline
-    def carousel: typings.glidejsGlide.glidejsGlideStrings.carousel = "carousel".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.carousel]
+    inline def carousel: typings.glidejsGlide.glidejsGlideStrings.carousel = "carousel".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.carousel]
     
-    @scala.inline
-    def slider: typings.glidejsGlide.glidejsGlideStrings.slider = "slider".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.slider]
+    inline def slider: typings.glidejsGlide.glidejsGlideStrings.slider = "slider".asInstanceOf[typings.glidejsGlide.glidejsGlideStrings.slider]
   }
   
   trait _Pattern extends StObject

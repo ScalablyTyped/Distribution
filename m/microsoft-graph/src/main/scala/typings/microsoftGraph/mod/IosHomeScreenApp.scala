@@ -13,19 +13,15 @@ trait IosHomeScreenApp
 }
 object IosHomeScreenApp {
   
-  @scala.inline
-  def apply(): IosHomeScreenApp = {
+  inline def apply(): IosHomeScreenApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosHomeScreenApp]
   }
   
-  @scala.inline
-  implicit class IosHomeScreenAppMutableBuilder[Self <: IosHomeScreenApp] (val x: Self) extends AnyVal {
+  extension [Self <: IosHomeScreenApp](x: Self) {
     
-    @scala.inline
-    def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
+    inline def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
+    inline def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
   }
 }

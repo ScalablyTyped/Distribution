@@ -33,8 +33,7 @@ trait InstanceEntry extends StObject {
 }
 object InstanceEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availabilityZone: String,
     instanceType: NonEmptyString,
     portInfoSource: PortInfoSourceType,
@@ -44,25 +43,18 @@ object InstanceEntry {
     __obj.asInstanceOf[InstanceEntry]
   }
   
-  @scala.inline
-  implicit class InstanceEntryMutableBuilder[Self <: InstanceEntry] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceEntry](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: NonEmptyString): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: NonEmptyString): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortInfoSource(value: PortInfoSourceType): Self = StObject.set(x, "portInfoSource", value.asInstanceOf[js.Any])
+    inline def setPortInfoSource(value: PortInfoSourceType): Self = StObject.set(x, "portInfoSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: ResourceName): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: ResourceName): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+    inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

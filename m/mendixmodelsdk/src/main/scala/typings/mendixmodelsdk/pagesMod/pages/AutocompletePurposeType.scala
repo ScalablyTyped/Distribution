@@ -21,71 +21,61 @@ object AutocompletePurposeType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.AdditionalName")
   @js.native
   def AdditionalName: AutocompletePurposeType = js.native
-  @scala.inline
-  def AdditionalName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AdditionalName")(x.asInstanceOf[js.Any])
+  inline def AdditionalName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AdditionalName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.AddressLevel1")
   @js.native
   def AddressLevel1: AutocompletePurposeType = js.native
-  @scala.inline
-  def AddressLevel1_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel1")(x.asInstanceOf[js.Any])
+  inline def AddressLevel1_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel1")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.AddressLevel2")
   @js.native
   def AddressLevel2: AutocompletePurposeType = js.native
-  @scala.inline
-  def AddressLevel2_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel2")(x.asInstanceOf[js.Any])
+  inline def AddressLevel2_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel2")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.AddressLevel3")
   @js.native
   def AddressLevel3: AutocompletePurposeType = js.native
-  @scala.inline
-  def AddressLevel3_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel3")(x.asInstanceOf[js.Any])
+  inline def AddressLevel3_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel3")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.AddressLevel4")
   @js.native
   def AddressLevel4: AutocompletePurposeType = js.native
-  @scala.inline
-  def AddressLevel4_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel4")(x.asInstanceOf[js.Any])
+  inline def AddressLevel4_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressLevel4")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Birthday")
   @js.native
   def Birthday: AutocompletePurposeType = js.native
-  @scala.inline
-  def Birthday_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Birthday")(x.asInstanceOf[js.Any])
+  inline def Birthday_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Birthday")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CompanyName")
   @js.native
   def CompanyName: AutocompletePurposeType = js.native
-  @scala.inline
-  def CompanyName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompanyName")(x.asInstanceOf[js.Any])
+  inline def CompanyName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompanyName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CountryCode")
   @js.native
   def CountryCode: AutocompletePurposeType = js.native
-  @scala.inline
-  def CountryCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CountryCode")(x.asInstanceOf[js.Any])
+  inline def CountryCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CountryCode")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CountryName")
   @js.native
   def CountryName: AutocompletePurposeType = js.native
-  @scala.inline
-  def CountryName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CountryName")(x.asInstanceOf[js.Any])
+  inline def CountryName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CountryName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardAdditionalName")
   @js.native
   def CreditCardAdditionalName: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardAdditionalName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardAdditionalName")(x.asInstanceOf[js.Any])
+  inline def CreditCardAdditionalName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardAdditionalName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardExpiration")
@@ -96,193 +86,165 @@ object AutocompletePurposeType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardExpirationMonth")
   @js.native
   def CreditCardExpirationMonth: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardExpirationMonth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardExpirationMonth")(x.asInstanceOf[js.Any])
+  inline def CreditCardExpirationMonth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardExpirationMonth")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardExpirationYear")
   @js.native
   def CreditCardExpirationYear: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardExpirationYear_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardExpirationYear")(x.asInstanceOf[js.Any])
+  inline def CreditCardExpirationYear_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardExpirationYear")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def CreditCardExpiration_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardExpiration")(x.asInstanceOf[js.Any])
+  inline def CreditCardExpiration_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardExpiration")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardFamilyName")
   @js.native
   def CreditCardFamilyName: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardFamilyName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardFamilyName")(x.asInstanceOf[js.Any])
+  inline def CreditCardFamilyName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardFamilyName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardFullName")
   @js.native
   def CreditCardFullName: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardFullName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardFullName")(x.asInstanceOf[js.Any])
+  inline def CreditCardFullName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardFullName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardGivenName")
   @js.native
   def CreditCardGivenName: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardGivenName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardGivenName")(x.asInstanceOf[js.Any])
+  inline def CreditCardGivenName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardGivenName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardNumber")
   @js.native
   def CreditCardNumber: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardNumber_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardNumber")(x.asInstanceOf[js.Any])
+  inline def CreditCardNumber_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardNumber")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardSecurityCode")
   @js.native
   def CreditCardSecurityCode: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardSecurityCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardSecurityCode")(x.asInstanceOf[js.Any])
+  inline def CreditCardSecurityCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardSecurityCode")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CreditCardType")
   @js.native
   def CreditCardType: AutocompletePurposeType = js.native
-  @scala.inline
-  def CreditCardType_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardType")(x.asInstanceOf[js.Any])
+  inline def CreditCardType_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreditCardType")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.CurrentPassword")
   @js.native
   def CurrentPassword: AutocompletePurposeType = js.native
-  @scala.inline
-  def CurrentPassword_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurrentPassword")(x.asInstanceOf[js.Any])
+  inline def CurrentPassword_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurrentPassword")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.DayOfBirth")
   @js.native
   def DayOfBirth: AutocompletePurposeType = js.native
-  @scala.inline
-  def DayOfBirth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DayOfBirth")(x.asInstanceOf[js.Any])
+  inline def DayOfBirth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DayOfBirth")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Email")
   @js.native
   def Email: AutocompletePurposeType = js.native
-  @scala.inline
-  def Email_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Email")(x.asInstanceOf[js.Any])
+  inline def Email_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Email")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.FamilyName")
   @js.native
   def FamilyName: AutocompletePurposeType = js.native
-  @scala.inline
-  def FamilyName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FamilyName")(x.asInstanceOf[js.Any])
+  inline def FamilyName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FamilyName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.FullName")
   @js.native
   def FullName: AutocompletePurposeType = js.native
-  @scala.inline
-  def FullName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullName")(x.asInstanceOf[js.Any])
+  inline def FullName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.GivenName")
   @js.native
   def GivenName: AutocompletePurposeType = js.native
-  @scala.inline
-  def GivenName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GivenName")(x.asInstanceOf[js.Any])
+  inline def GivenName_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GivenName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.HonorificPrefix")
   @js.native
   def HonorificPrefix: AutocompletePurposeType = js.native
-  @scala.inline
-  def HonorificPrefix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HonorificPrefix")(x.asInstanceOf[js.Any])
+  inline def HonorificPrefix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HonorificPrefix")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.HonorificSuffix")
   @js.native
   def HonorificSuffix: AutocompletePurposeType = js.native
-  @scala.inline
-  def HonorificSuffix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HonorificSuffix")(x.asInstanceOf[js.Any])
+  inline def HonorificSuffix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HonorificSuffix")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.InstantMessageProtocol")
   @js.native
   def InstantMessageProtocol: AutocompletePurposeType = js.native
-  @scala.inline
-  def InstantMessageProtocol_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstantMessageProtocol")(x.asInstanceOf[js.Any])
+  inline def InstantMessageProtocol_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstantMessageProtocol")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.JobTitle")
   @js.native
   def JobTitle: AutocompletePurposeType = js.native
-  @scala.inline
-  def JobTitle_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JobTitle")(x.asInstanceOf[js.Any])
+  inline def JobTitle_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JobTitle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Language")
   @js.native
   def Language: AutocompletePurposeType = js.native
-  @scala.inline
-  def Language_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Language")(x.asInstanceOf[js.Any])
+  inline def Language_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Language")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.MonthOfBirth")
   @js.native
   def MonthOfBirth: AutocompletePurposeType = js.native
-  @scala.inline
-  def MonthOfBirth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthOfBirth")(x.asInstanceOf[js.Any])
+  inline def MonthOfBirth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthOfBirth")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.NewPassword")
   @js.native
   def NewPassword: AutocompletePurposeType = js.native
-  @scala.inline
-  def NewPassword_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NewPassword")(x.asInstanceOf[js.Any])
+  inline def NewPassword_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NewPassword")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Nickname")
   @js.native
   def Nickname: AutocompletePurposeType = js.native
-  @scala.inline
-  def Nickname_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Nickname")(x.asInstanceOf[js.Any])
+  inline def Nickname_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Nickname")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Off")
   @js.native
   def Off: AutocompletePurposeType = js.native
-  @scala.inline
-  def Off_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Off")(x.asInstanceOf[js.Any])
+  inline def Off_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Off")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.On")
   @js.native
   def On: AutocompletePurposeType = js.native
-  @scala.inline
-  def On_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("On")(x.asInstanceOf[js.Any])
+  inline def On_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("On")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Photo")
   @js.native
   def Photo: AutocompletePurposeType = js.native
-  @scala.inline
-  def Photo_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Photo")(x.asInstanceOf[js.Any])
+  inline def Photo_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Photo")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.PostalCode")
   @js.native
   def PostalCode: AutocompletePurposeType = js.native
-  @scala.inline
-  def PostalCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PostalCode")(x.asInstanceOf[js.Any])
+  inline def PostalCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PostalCode")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Sex")
   @js.native
   def Sex: AutocompletePurposeType = js.native
-  @scala.inline
-  def Sex_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sex")(x.asInstanceOf[js.Any])
+  inline def Sex_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sex")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.StreetAddress")
@@ -293,46 +255,39 @@ object AutocompletePurposeType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.StreetAddressLine1")
   @js.native
   def StreetAddressLine1: AutocompletePurposeType = js.native
-  @scala.inline
-  def StreetAddressLine1_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddressLine1")(x.asInstanceOf[js.Any])
+  inline def StreetAddressLine1_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddressLine1")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.StreetAddressLine2")
   @js.native
   def StreetAddressLine2: AutocompletePurposeType = js.native
-  @scala.inline
-  def StreetAddressLine2_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddressLine2")(x.asInstanceOf[js.Any])
+  inline def StreetAddressLine2_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddressLine2")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.StreetAddressLine3")
   @js.native
   def StreetAddressLine3: AutocompletePurposeType = js.native
-  @scala.inline
-  def StreetAddressLine3_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddressLine3")(x.asInstanceOf[js.Any])
+  inline def StreetAddressLine3_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddressLine3")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def StreetAddress_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddress")(x.asInstanceOf[js.Any])
+  inline def StreetAddress_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StreetAddress")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneAreaCode")
   @js.native
   def TelephoneAreaCode: AutocompletePurposeType = js.native
-  @scala.inline
-  def TelephoneAreaCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneAreaCode")(x.asInstanceOf[js.Any])
+  inline def TelephoneAreaCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneAreaCode")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneCountryCode")
   @js.native
   def TelephoneCountryCode: AutocompletePurposeType = js.native
-  @scala.inline
-  def TelephoneCountryCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneCountryCode")(x.asInstanceOf[js.Any])
+  inline def TelephoneCountryCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneCountryCode")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneExtension")
   @js.native
   def TelephoneExtension: AutocompletePurposeType = js.native
-  @scala.inline
-  def TelephoneExtension_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneExtension")(x.asInstanceOf[js.Any])
+  inline def TelephoneExtension_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneExtension")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneLocal")
@@ -343,65 +298,55 @@ object AutocompletePurposeType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneLocalPrefix")
   @js.native
   def TelephoneLocalPrefix: AutocompletePurposeType = js.native
-  @scala.inline
-  def TelephoneLocalPrefix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneLocalPrefix")(x.asInstanceOf[js.Any])
+  inline def TelephoneLocalPrefix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneLocalPrefix")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneLocalSuffix")
   @js.native
   def TelephoneLocalSuffix: AutocompletePurposeType = js.native
-  @scala.inline
-  def TelephoneLocalSuffix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneLocalSuffix")(x.asInstanceOf[js.Any])
+  inline def TelephoneLocalSuffix_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneLocalSuffix")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def TelephoneLocal_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneLocal")(x.asInstanceOf[js.Any])
+  inline def TelephoneLocal_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneLocal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneNumber")
   @js.native
   def TelephoneNumber: AutocompletePurposeType = js.native
-  @scala.inline
-  def TelephoneNumber_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneNumber")(x.asInstanceOf[js.Any])
+  inline def TelephoneNumber_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneNumber")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TelephoneWithoutCountryCode")
   @js.native
   def TelephoneWithoutCountryCode: AutocompletePurposeType = js.native
-  @scala.inline
-  def TelephoneWithoutCountryCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneWithoutCountryCode")(x.asInstanceOf[js.Any])
+  inline def TelephoneWithoutCountryCode_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TelephoneWithoutCountryCode")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TransactionAmount")
   @js.native
   def TransactionAmount: AutocompletePurposeType = js.native
-  @scala.inline
-  def TransactionAmount_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransactionAmount")(x.asInstanceOf[js.Any])
+  inline def TransactionAmount_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransactionAmount")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.TransactionCurrency")
   @js.native
   def TransactionCurrency: AutocompletePurposeType = js.native
-  @scala.inline
-  def TransactionCurrency_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransactionCurrency")(x.asInstanceOf[js.Any])
+  inline def TransactionCurrency_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransactionCurrency")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Url")
   @js.native
   def Url: AutocompletePurposeType = js.native
-  @scala.inline
-  def Url_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Url")(x.asInstanceOf[js.Any])
+  inline def Url_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Url")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.Username")
   @js.native
   def Username: AutocompletePurposeType = js.native
-  @scala.inline
-  def Username_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Username")(x.asInstanceOf[js.Any])
+  inline def Username_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Username")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AutocompletePurposeType.YearOfBirth")
   @js.native
   def YearOfBirth: AutocompletePurposeType = js.native
-  @scala.inline
-  def YearOfBirth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearOfBirth")(x.asInstanceOf[js.Any])
+  inline def YearOfBirth_=(x: AutocompletePurposeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearOfBirth")(x.asInstanceOf[js.Any])
 }

@@ -13,25 +13,19 @@ trait IKnowledgeAnswers extends StObject {
 }
 object IKnowledgeAnswers {
   
-  @scala.inline
-  def apply(): IKnowledgeAnswers = {
+  inline def apply(): IKnowledgeAnswers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IKnowledgeAnswers]
   }
   
-  @scala.inline
-  implicit class IKnowledgeAnswersMutableBuilder[Self <: IKnowledgeAnswers] (val x: Self) extends AnyVal {
+  extension [Self <: IKnowledgeAnswers](x: Self) {
     
-    @scala.inline
-    def setAnswers(value: js.Array[IAnswer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
+    inline def setAnswers(value: js.Array[IAnswer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswersNull: Self = StObject.set(x, "answers", null)
+    inline def setAnswersNull: Self = StObject.set(x, "answers", null)
     
-    @scala.inline
-    def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
+    inline def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
     
-    @scala.inline
-    def setAnswersVarargs(value: IAnswer*): Self = StObject.set(x, "answers", js.Array(value :_*))
+    inline def setAnswersVarargs(value: IAnswer*): Self = StObject.set(x, "answers", js.Array(value :_*))
   }
 }

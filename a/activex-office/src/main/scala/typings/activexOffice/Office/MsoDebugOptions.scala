@@ -14,7 +14,7 @@ trait MsoDebugOptions extends StObject {
   
   var FeatureReports: Double
   
-  @JSName("Office.MsoDebugOptions_typekey")
+  /* private */ @JSName("Office.MsoDebugOptions_typekey")
   var OfficeDotMsoDebugOptions_typekey: MsoDebugOptions
   
   var OutputToDebugger: Boolean
@@ -29,8 +29,7 @@ trait MsoDebugOptions extends StObject {
 }
 object MsoDebugOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddIgnoredAssertTag: String => Unit,
     Application: js.Any,
     Creator: Double,
@@ -47,37 +46,26 @@ object MsoDebugOptions {
     __obj.asInstanceOf[MsoDebugOptions]
   }
   
-  @scala.inline
-  implicit class MsoDebugOptionsMutableBuilder[Self <: MsoDebugOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MsoDebugOptions](x: Self) {
     
-    @scala.inline
-    def setAddIgnoredAssertTag(value: String => Unit): Self = StObject.set(x, "AddIgnoredAssertTag", js.Any.fromFunction1(value))
+    inline def setAddIgnoredAssertTag(value: String => Unit): Self = StObject.set(x, "AddIgnoredAssertTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureReports(value: Double): Self = StObject.set(x, "FeatureReports", value.asInstanceOf[js.Any])
+    inline def setFeatureReports(value: Double): Self = StObject.set(x, "FeatureReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotMsoDebugOptions_typekey(value: MsoDebugOptions): Self = StObject.set(x, "Office.MsoDebugOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotMsoDebugOptions_typekey(value: MsoDebugOptions): Self = StObject.set(x, "Office.MsoDebugOptions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputToDebugger(value: Boolean): Self = StObject.set(x, "OutputToDebugger", value.asInstanceOf[js.Any])
+    inline def setOutputToDebugger(value: Boolean): Self = StObject.set(x, "OutputToDebugger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputToFile(value: Boolean): Self = StObject.set(x, "OutputToFile", value.asInstanceOf[js.Any])
+    inline def setOutputToFile(value: Boolean): Self = StObject.set(x, "OutputToFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputToMessageBox(value: Boolean): Self = StObject.set(x, "OutputToMessageBox", value.asInstanceOf[js.Any])
+    inline def setOutputToMessageBox(value: Boolean): Self = StObject.set(x, "OutputToMessageBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveIgnoredAssertTag(value: String => Unit): Self = StObject.set(x, "RemoveIgnoredAssertTag", js.Any.fromFunction1(value))
+    inline def setRemoveIgnoredAssertTag(value: String => Unit): Self = StObject.set(x, "RemoveIgnoredAssertTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnitTestManager(value: js.Any): Self = StObject.set(x, "UnitTestManager", value.asInstanceOf[js.Any])
+    inline def setUnitTestManager(value: js.Any): Self = StObject.set(x, "UnitTestManager", value.asInstanceOf[js.Any])
   }
 }

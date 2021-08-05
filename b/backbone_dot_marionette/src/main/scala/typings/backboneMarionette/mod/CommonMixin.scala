@@ -18,8 +18,7 @@ trait CommonMixin extends StObject {
 }
 object CommonMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindEvents: js.Any,
     getOption: js.Any,
     mergeOptions: js.Any,
@@ -30,22 +29,16 @@ object CommonMixin {
     __obj.asInstanceOf[CommonMixin]
   }
   
-  @scala.inline
-  implicit class CommonMixinMutableBuilder[Self <: CommonMixin] (val x: Self) extends AnyVal {
+  extension [Self <: CommonMixin](x: Self) {
     
-    @scala.inline
-    def setBindEvents(value: js.Any): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
+    inline def setBindEvents(value: js.Any): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOption(value: js.Any): Self = StObject.set(x, "getOption", value.asInstanceOf[js.Any])
+    inline def setGetOption(value: js.Any): Self = StObject.set(x, "getOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOptions(value: js.Any): Self = StObject.set(x, "mergeOptions", value.asInstanceOf[js.Any])
+    inline def setMergeOptions(value: js.Any): Self = StObject.set(x, "mergeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeMethods(value: js.Any): Self = StObject.set(x, "normalizeMethods", value.asInstanceOf[js.Any])
+    inline def setNormalizeMethods(value: js.Any): Self = StObject.set(x, "normalizeMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnbindEvents(value: js.Any): Self = StObject.set(x, "unbindEvents", value.asInstanceOf[js.Any])
+    inline def setUnbindEvents(value: js.Any): Self = StObject.set(x, "unbindEvents", value.asInstanceOf[js.Any])
   }
 }

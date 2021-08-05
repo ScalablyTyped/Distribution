@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Property extends StObject
 object Property {
   
-  @scala.inline
-  def ClassProperty_(end: Double, key: Identifier_, loc: SourceLocation, start: Double, value: Expression): typings.babelTypes.ts36Mod.ClassProperty_ = {
+  inline def ClassProperty_(end: Double, key: Identifier_, loc: SourceLocation, start: Double, value: Expression): typings.babelTypes.ts36Mod.ClassProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassProperty")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassProperty_]
   }
   
-  @scala.inline
-  def ObjectProperty_(
+  inline def ObjectProperty_(
     computed: Boolean,
     end: Double,
     key: Expression,

@@ -17,34 +17,25 @@ trait StructuredMessage extends StObject {
 }
 object StructuredMessage {
   
-  @scala.inline
-  def apply(): StructuredMessage = {
+  inline def apply(): StructuredMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructuredMessage]
   }
   
-  @scala.inline
-  implicit class StructuredMessageMutableBuilder[Self <: StructuredMessage] (val x: Self) extends AnyVal {
+  extension [Self <: StructuredMessage](x: Self) {
     
-    @scala.inline
-    def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
+    inline def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
+    inline def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
+    inline def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[Parameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[Parameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

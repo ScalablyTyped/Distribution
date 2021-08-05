@@ -44,7 +44,7 @@ trait Workspace extends StObject {
   def CreateUser(Name: Unit, PID: String, Password: String): User = js.native
   def CreateUser(Name: Unit, PID: Unit, Password: String): User = js.native
   
-  @JSName("DAO.Workspace_typekey")
+  /* private */ @JSName("DAO.Workspace_typekey")
   var DAODotWorkspace_typekey: Workspace = js.native
   
   def Databases(Item: String): Database = js.native

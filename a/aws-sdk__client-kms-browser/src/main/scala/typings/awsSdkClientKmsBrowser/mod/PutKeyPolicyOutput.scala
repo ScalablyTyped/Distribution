@@ -10,8 +10,7 @@ trait PutKeyPolicyOutput
      with typings.awsSdkClientKmsBrowser.typesPutKeyPolicyOutputMod.PutKeyPolicyOutput
 object PutKeyPolicyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): PutKeyPolicyOutput = {
+  inline def apply($metadata: ResponseMetadata): PutKeyPolicyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutKeyPolicyOutput]
   }

@@ -13,19 +13,15 @@ trait GetManagedScalingPolicyOutput extends StObject {
 }
 object GetManagedScalingPolicyOutput {
   
-  @scala.inline
-  def apply(): GetManagedScalingPolicyOutput = {
+  inline def apply(): GetManagedScalingPolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetManagedScalingPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetManagedScalingPolicyOutputMutableBuilder[Self <: GetManagedScalingPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetManagedScalingPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = StObject.set(x, "ManagedScalingPolicy", value.asInstanceOf[js.Any])
+    inline def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = StObject.set(x, "ManagedScalingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedScalingPolicyUndefined: Self = StObject.set(x, "ManagedScalingPolicy", js.undefined)
+    inline def setManagedScalingPolicyUndefined: Self = StObject.set(x, "ManagedScalingPolicy", js.undefined)
   }
 }

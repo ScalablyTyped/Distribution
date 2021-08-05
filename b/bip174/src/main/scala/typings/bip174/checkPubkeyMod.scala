@@ -12,6 +12,5 @@ object checkPubkeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeChecker(pubkeyTypes: js.Array[Double]): js.Function1[/* keyVal */ KeyValue, js.UndefOr[Buffer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeChecker")(pubkeyTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* keyVal */ KeyValue, js.UndefOr[Buffer]]]
+  inline def makeChecker(pubkeyTypes: js.Array[Double]): js.Function1[/* keyVal */ KeyValue, js.UndefOr[Buffer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeChecker")(pubkeyTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* keyVal */ KeyValue, js.UndefOr[Buffer]]]
 }

@@ -18,25 +18,19 @@ trait UiConfig extends StObject {
 }
 object UiConfig {
   
-  @scala.inline
-  def apply(): UiConfig = {
+  inline def apply(): UiConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UiConfig]
   }
   
-  @scala.inline
-  implicit class UiConfigMutableBuilder[Self <: UiConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UiConfig](x: Self) {
     
-    @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanTaskUiArnUndefined: Self = StObject.set(x, "HumanTaskUiArn", js.undefined)
+    inline def setHumanTaskUiArnUndefined: Self = StObject.set(x, "HumanTaskUiArn", js.undefined)
     
-    @scala.inline
-    def setUiTemplateS3Uri(value: S3Uri): Self = StObject.set(x, "UiTemplateS3Uri", value.asInstanceOf[js.Any])
+    inline def setUiTemplateS3Uri(value: S3Uri): Self = StObject.set(x, "UiTemplateS3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiTemplateS3UriUndefined: Self = StObject.set(x, "UiTemplateS3Uri", js.undefined)
+    inline def setUiTemplateS3UriUndefined: Self = StObject.set(x, "UiTemplateS3Uri", js.undefined)
   }
 }

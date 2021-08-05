@@ -39,8 +39,7 @@ trait Mineral[T /* <: MineralConstant */]
 }
 object Mineral {
   
-  @scala.inline
-  def apply[T /* <: MineralConstant */](
+  inline def apply[T /* <: MineralConstant */](
     density: Double,
     effects: js.Array[RoomObjectEffect],
     id: Id[Mineral[T]],
@@ -53,22 +52,16 @@ object Mineral {
     __obj.asInstanceOf[Mineral[T]]
   }
   
-  @scala.inline
-  implicit class MineralMutableBuilder[Self <: Mineral[?], T /* <: MineralConstant */] (val x: Self & Mineral[T]) extends AnyVal {
+  extension [Self <: Mineral[?], T /* <: MineralConstant */](x: Self & Mineral[T]) {
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id[Mineral[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[Mineral[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMineralAmount(value: Double): Self = StObject.set(x, "mineralAmount", value.asInstanceOf[js.Any])
+    inline def setMineralAmount(value: Double): Self = StObject.set(x, "mineralAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMineralType(value: T): Self = StObject.set(x, "mineralType", value.asInstanceOf[js.Any])
+    inline def setMineralType(value: T): Self = StObject.set(x, "mineralType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToRegeneration(value: Double): Self = StObject.set(x, "ticksToRegeneration", value.asInstanceOf[js.Any])
+    inline def setTicksToRegeneration(value: Double): Self = StObject.set(x, "ticksToRegeneration", value.asInstanceOf[js.Any])
   }
 }

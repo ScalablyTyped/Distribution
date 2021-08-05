@@ -28,7 +28,6 @@ object directorTimeControllerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): DirectorTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DirectorTimeController]
+    inline def create(): DirectorTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DirectorTimeController]
   }
 }

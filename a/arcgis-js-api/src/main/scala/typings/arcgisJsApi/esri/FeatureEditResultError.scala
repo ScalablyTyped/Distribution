@@ -26,8 +26,7 @@ trait FeatureEditResultError
 }
 object FeatureEditResultError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     message: String,
@@ -38,13 +37,10 @@ object FeatureEditResultError {
     __obj.asInstanceOf[FeatureEditResultError]
   }
   
-  @scala.inline
-  implicit class FeatureEditResultErrorMutableBuilder[Self <: FeatureEditResultError] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureEditResultError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

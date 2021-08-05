@@ -163,14 +163,10 @@ object Publisher {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @scala.inline
-  def create(rpcImpl: RPCImpl): Publisher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Publisher]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
+  inline def create(rpcImpl: RPCImpl): Publisher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Publisher]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
   
   /**
     * Callback as used by {@link google.pubsub.v1.Publisher#createTopic}.

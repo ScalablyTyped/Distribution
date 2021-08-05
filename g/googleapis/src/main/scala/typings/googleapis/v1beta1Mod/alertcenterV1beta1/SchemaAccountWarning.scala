@@ -24,25 +24,19 @@ trait SchemaAccountWarning extends StObject {
 }
 object SchemaAccountWarning {
   
-  @scala.inline
-  def apply(): SchemaAccountWarning = {
+  inline def apply(): SchemaAccountWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountWarning]
   }
   
-  @scala.inline
-  implicit class SchemaAccountWarningMutableBuilder[Self <: SchemaAccountWarning] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountWarning](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setLoginDetails(value: SchemaLoginDetails): Self = StObject.set(x, "loginDetails", value.asInstanceOf[js.Any])
+    inline def setLoginDetails(value: SchemaLoginDetails): Self = StObject.set(x, "loginDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginDetailsUndefined: Self = StObject.set(x, "loginDetails", js.undefined)
+    inline def setLoginDetailsUndefined: Self = StObject.set(x, "loginDetails", js.undefined)
   }
 }

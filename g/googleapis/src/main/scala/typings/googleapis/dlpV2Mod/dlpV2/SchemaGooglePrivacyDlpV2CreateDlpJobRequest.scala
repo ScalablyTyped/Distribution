@@ -24,31 +24,23 @@ trait SchemaGooglePrivacyDlpV2CreateDlpJobRequest extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CreateDlpJobRequest {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CreateDlpJobRequest = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CreateDlpJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CreateDlpJobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CreateDlpJobRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CreateDlpJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CreateDlpJobRequest](x: Self) {
     
-    @scala.inline
-    def setInspectJob(value: SchemaGooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "inspectJob", value.asInstanceOf[js.Any])
+    inline def setInspectJob(value: SchemaGooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "inspectJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectJobUndefined: Self = StObject.set(x, "inspectJob", js.undefined)
+    inline def setInspectJobUndefined: Self = StObject.set(x, "inspectJob", js.undefined)
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setRiskJob(value: SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig): Self = StObject.set(x, "riskJob", value.asInstanceOf[js.Any])
+    inline def setRiskJob(value: SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig): Self = StObject.set(x, "riskJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiskJobUndefined: Self = StObject.set(x, "riskJob", js.undefined)
+    inline def setRiskJobUndefined: Self = StObject.set(x, "riskJob", js.undefined)
   }
 }

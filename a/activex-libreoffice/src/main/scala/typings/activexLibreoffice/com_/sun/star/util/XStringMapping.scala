@@ -17,8 +17,7 @@ trait XStringMapping
 }
 object XStringMapping {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     mapStrings: js.Array[SeqEquiv[String]] => Boolean,
     queryInterface: `type` => js.Any,
@@ -28,10 +27,8 @@ object XStringMapping {
     __obj.asInstanceOf[XStringMapping]
   }
   
-  @scala.inline
-  implicit class XStringMappingMutableBuilder[Self <: XStringMapping] (val x: Self) extends AnyVal {
+  extension [Self <: XStringMapping](x: Self) {
     
-    @scala.inline
-    def setMapStrings(value: js.Array[SeqEquiv[String]] => Boolean): Self = StObject.set(x, "mapStrings", js.Any.fromFunction1(value))
+    inline def setMapStrings(value: js.Array[SeqEquiv[String]] => Boolean): Self = StObject.set(x, "mapStrings", js.Any.fromFunction1(value))
   }
 }

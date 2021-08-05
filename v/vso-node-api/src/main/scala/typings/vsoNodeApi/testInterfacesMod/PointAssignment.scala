@@ -13,19 +13,15 @@ trait PointAssignment extends StObject {
 }
 object PointAssignment {
   
-  @scala.inline
-  def apply(configuration: ShallowReference, tester: IdentityRef): PointAssignment = {
+  inline def apply(configuration: ShallowReference, tester: IdentityRef): PointAssignment = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], tester = tester.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointAssignment]
   }
   
-  @scala.inline
-  implicit class PointAssignmentMutableBuilder[Self <: PointAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: PointAssignment](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ShallowReference): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ShallowReference): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTester(value: IdentityRef): Self = StObject.set(x, "tester", value.asInstanceOf[js.Any])
+    inline def setTester(value: IdentityRef): Self = StObject.set(x, "tester", value.asInstanceOf[js.Any])
   }
 }

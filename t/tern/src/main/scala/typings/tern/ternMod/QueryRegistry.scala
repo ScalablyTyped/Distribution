@@ -31,8 +31,7 @@ trait QueryRegistry extends StObject {
 }
 object QueryRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completions: Result,
     definition: QueryDefinitionQuery,
     documentation: QueryDocumentationQuery,
@@ -47,31 +46,22 @@ object QueryRegistry {
     __obj.asInstanceOf[QueryRegistry]
   }
   
-  @scala.inline
-  implicit class QueryRegistryMutableBuilder[Self <: QueryRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRegistry](x: Self) {
     
-    @scala.inline
-    def setCompletions(value: Result): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
+    inline def setCompletions(value: Result): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: QueryDefinitionQuery): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: QueryDefinitionQuery): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentation(value: QueryDocumentationQuery): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: QueryDocumentationQuery): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: QueryFilesQuery): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: QueryFilesQuery): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: QueryPropertiesQuery): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: QueryPropertiesQuery): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefs(value: QueryRefsQuery): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+    inline def setRefs(value: QueryRefsQuery): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRename(value: QueryRenameQuery): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setRename(value: QueryRenameQuery): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.tern.anon.QueryResult): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.tern.anon.QueryResult): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

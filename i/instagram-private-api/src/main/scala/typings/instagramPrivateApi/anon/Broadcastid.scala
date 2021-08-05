@@ -12,19 +12,15 @@ trait Broadcastid extends StObject {
 }
 object Broadcastid {
   
-  @scala.inline
-  def apply(broadcast_id: String, upload_url: String): Broadcastid = {
+  inline def apply(broadcast_id: String, upload_url: String): Broadcastid = {
     val __obj = js.Dynamic.literal(broadcast_id = broadcast_id.asInstanceOf[js.Any], upload_url = upload_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Broadcastid]
   }
   
-  @scala.inline
-  implicit class BroadcastidMutableBuilder[Self <: Broadcastid] (val x: Self) extends AnyVal {
+  extension [Self <: Broadcastid](x: Self) {
     
-    @scala.inline
-    def setBroadcast_id(value: String): Self = StObject.set(x, "broadcast_id", value.asInstanceOf[js.Any])
+    inline def setBroadcast_id(value: String): Self = StObject.set(x, "broadcast_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload_url(value: String): Self = StObject.set(x, "upload_url", value.asInstanceOf[js.Any])
+    inline def setUpload_url(value: String): Self = StObject.set(x, "upload_url", value.asInstanceOf[js.Any])
   }
 }

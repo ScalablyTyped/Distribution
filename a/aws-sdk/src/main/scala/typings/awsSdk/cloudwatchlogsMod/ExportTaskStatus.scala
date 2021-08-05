@@ -18,25 +18,19 @@ trait ExportTaskStatus extends StObject {
 }
 object ExportTaskStatus {
   
-  @scala.inline
-  def apply(): ExportTaskStatus = {
+  inline def apply(): ExportTaskStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTaskStatus]
   }
   
-  @scala.inline
-  implicit class ExportTaskStatusMutableBuilder[Self <: ExportTaskStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTaskStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: ExportTaskStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ExportTaskStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: ExportTaskStatusMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ExportTaskStatusMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

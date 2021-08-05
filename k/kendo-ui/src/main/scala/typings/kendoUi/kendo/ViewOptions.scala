@@ -22,55 +22,39 @@ trait ViewOptions extends StObject {
 }
 object ViewOptions {
   
-  @scala.inline
-  def apply(): ViewOptions = {
+  inline def apply(): ViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewOptions]
   }
   
-  @scala.inline
-  implicit class ViewOptionsMutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ViewOptions](x: Self) {
     
-    @scala.inline
-    def setEvalTemplate(value: Boolean): Self = StObject.set(x, "evalTemplate", value.asInstanceOf[js.Any])
+    inline def setEvalTemplate(value: Boolean): Self = StObject.set(x, "evalTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalTemplateUndefined: Self = StObject.set(x, "evalTemplate", js.undefined)
+    inline def setEvalTemplateUndefined: Self = StObject.set(x, "evalTemplate", js.undefined)
     
-    @scala.inline
-    def setHide(value: /* e */ ViewEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: /* e */ ViewEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setInit(value: /* e */ ViewEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* e */ ViewEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Object): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Object): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setShow(value: /* e */ ViewEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* e */ ViewEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
-    @scala.inline
-    def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

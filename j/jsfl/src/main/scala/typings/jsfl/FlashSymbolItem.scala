@@ -28,8 +28,7 @@ trait FlashSymbolItem extends StObject {
 }
 object FlashSymbolItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     convertToCompiledClip: () => Unit,
     exportSWC: String => Unit,
     exportSWF: String => Unit,
@@ -45,37 +44,26 @@ object FlashSymbolItem {
     __obj.asInstanceOf[FlashSymbolItem]
   }
   
-  @scala.inline
-  implicit class FlashSymbolItemMutableBuilder[Self <: FlashSymbolItem] (val x: Self) extends AnyVal {
+  extension [Self <: FlashSymbolItem](x: Self) {
     
-    @scala.inline
-    def setConvertToCompiledClip(value: () => Unit): Self = StObject.set(x, "convertToCompiledClip", js.Any.fromFunction0(value))
+    inline def setConvertToCompiledClip(value: () => Unit): Self = StObject.set(x, "convertToCompiledClip", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportSWC(value: String => Unit): Self = StObject.set(x, "exportSWC", js.Any.fromFunction1(value))
+    inline def setExportSWC(value: String => Unit): Self = StObject.set(x, "exportSWC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExportSWF(value: String => Unit): Self = StObject.set(x, "exportSWF", js.Any.fromFunction1(value))
+    inline def setExportSWF(value: String => Unit): Self = StObject.set(x, "exportSWF", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScalingGrid(value: Boolean): Self = StObject.set(x, "scalingGrid", value.asInstanceOf[js.Any])
+    inline def setScalingGrid(value: Boolean): Self = StObject.set(x, "scalingGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingGridRect(value: FlashRectangle): Self = StObject.set(x, "scalingGridRect", value.asInstanceOf[js.Any])
+    inline def setScalingGridRect(value: FlashRectangle): Self = StObject.set(x, "scalingGridRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAutoUpdate(value: Boolean): Self = StObject.set(x, "sourceAutoUpdate", value.asInstanceOf[js.Any])
+    inline def setSourceAutoUpdate(value: Boolean): Self = StObject.set(x, "sourceAutoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
+    inline def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLibraryName(value: String): Self = StObject.set(x, "sourceLibraryName", value.asInstanceOf[js.Any])
+    inline def setSourceLibraryName(value: String): Self = StObject.set(x, "sourceLibraryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeline(value: FlashTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: FlashTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

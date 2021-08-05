@@ -52,28 +52,21 @@ trait Ingress extends StObject {
 }
 object Ingress {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: IngressSpec, status: IngressStatus): Ingress = {
+  inline def apply(metadata: ObjectMeta, spec: IngressSpec, status: IngressStatus): Ingress = {
     val __obj = js.Dynamic.literal(apiVersion = "networking.k8s.io/v1", kind = "Ingress", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ingress]
   }
   
-  @scala.inline
-  implicit class IngressMutableBuilder[Self <: Ingress] (val x: Self) extends AnyVal {
+  extension [Self <: Ingress](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: networkingDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: networkingDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Ingress): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Ingress): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: IngressSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: IngressSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: IngressStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: IngressStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

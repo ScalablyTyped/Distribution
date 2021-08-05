@@ -314,8 +314,7 @@ object mod {
     * @param url A URL within a REST API-enabled WordPress website
     */
   /* static member */
-  @scala.inline
-  def discover(url: String): js.Promise[WPAPI] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WPAPI]]
+  inline def discover(url: String): js.Promise[WPAPI] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WPAPI]]
   
   /** Authentication credentials */
   trait Credentials extends StObject {
@@ -331,32 +330,24 @@ object mod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(): Credentials = {
+    inline def apply(): Credentials = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -376,50 +367,36 @@ object mod {
   }
   object HTTPArgument {
     
-    @scala.inline
-    def apply(required: Boolean): HTTPArgument = {
+    inline def apply(required: Boolean): HTTPArgument = {
       val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTTPArgument]
     }
     
-    @scala.inline
-    implicit class HTTPArgumentMutableBuilder[Self <: HTTPArgument] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPArgument](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String | Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String | Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+      inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      @scala.inline
-      def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
       
-      @scala.inline
-      def setItems(value: Type): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Type): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: HTTPArgumentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTTPArgumentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -434,23 +411,17 @@ object mod {
   trait HTTPArgumentType extends StObject
   object HTTPArgumentType {
     
-    @scala.inline
-    def array: typings.wpapi.wpapiStrings.array = "array".asInstanceOf[typings.wpapi.wpapiStrings.array]
+    inline def array: typings.wpapi.wpapiStrings.array = "array".asInstanceOf[typings.wpapi.wpapiStrings.array]
     
-    @scala.inline
-    def boolean: typings.wpapi.wpapiStrings.boolean = "boolean".asInstanceOf[typings.wpapi.wpapiStrings.boolean]
+    inline def boolean: typings.wpapi.wpapiStrings.boolean = "boolean".asInstanceOf[typings.wpapi.wpapiStrings.boolean]
     
-    @scala.inline
-    def integer: typings.wpapi.wpapiStrings.integer = "integer".asInstanceOf[typings.wpapi.wpapiStrings.integer]
+    inline def integer: typings.wpapi.wpapiStrings.integer = "integer".asInstanceOf[typings.wpapi.wpapiStrings.integer]
     
-    @scala.inline
-    def number: typings.wpapi.wpapiStrings.number = "number".asInstanceOf[typings.wpapi.wpapiStrings.number]
+    inline def number: typings.wpapi.wpapiStrings.number = "number".asInstanceOf[typings.wpapi.wpapiStrings.number]
     
-    @scala.inline
-    def `object`: typings.wpapi.wpapiStrings.`object` = "object".asInstanceOf[typings.wpapi.wpapiStrings.`object`]
+    inline def `object`: typings.wpapi.wpapiStrings.`object` = "object".asInstanceOf[typings.wpapi.wpapiStrings.`object`]
     
-    @scala.inline
-    def string: typings.wpapi.wpapiStrings.string = "string".asInstanceOf[typings.wpapi.wpapiStrings.string]
+    inline def string: typings.wpapi.wpapiStrings.string = "string".asInstanceOf[typings.wpapi.wpapiStrings.string]
   }
   
   trait HTTPEndpoint extends StObject {
@@ -461,23 +432,18 @@ object mod {
   }
   object HTTPEndpoint {
     
-    @scala.inline
-    def apply(args: StringDictionary[HTTPArgument], methods: js.Array[HTTPMethod]): HTTPEndpoint = {
+    inline def apply(args: StringDictionary[HTTPArgument], methods: js.Array[HTTPMethod]): HTTPEndpoint = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTTPEndpoint]
     }
     
-    @scala.inline
-    implicit class HTTPEndpointMutableBuilder[Self <: HTTPEndpoint] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPEndpoint](x: Self) {
       
-      @scala.inline
-      def setArgs(value: StringDictionary[HTTPArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: StringDictionary[HTTPArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
     }
   }
   
@@ -493,20 +459,15 @@ object mod {
   trait HTTPMethod extends StObject
   object HTTPMethod {
     
-    @scala.inline
-    def DELETE: typings.wpapi.wpapiStrings.DELETE = "DELETE".asInstanceOf[typings.wpapi.wpapiStrings.DELETE]
+    inline def DELETE: typings.wpapi.wpapiStrings.DELETE = "DELETE".asInstanceOf[typings.wpapi.wpapiStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.wpapi.wpapiStrings.GET = "GET".asInstanceOf[typings.wpapi.wpapiStrings.GET]
+    inline def GET: typings.wpapi.wpapiStrings.GET = "GET".asInstanceOf[typings.wpapi.wpapiStrings.GET]
     
-    @scala.inline
-    def PATCH: typings.wpapi.wpapiStrings.PATCH = "PATCH".asInstanceOf[typings.wpapi.wpapiStrings.PATCH]
+    inline def PATCH: typings.wpapi.wpapiStrings.PATCH = "PATCH".asInstanceOf[typings.wpapi.wpapiStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.wpapi.wpapiStrings.POST = "POST".asInstanceOf[typings.wpapi.wpapiStrings.POST]
+    inline def POST: typings.wpapi.wpapiStrings.POST = "POST".asInstanceOf[typings.wpapi.wpapiStrings.POST]
     
-    @scala.inline
-    def PUT: typings.wpapi.wpapiStrings.PUT = "PUT".asInstanceOf[typings.wpapi.wpapiStrings.PUT]
+    inline def PUT: typings.wpapi.wpapiStrings.PUT = "PUT".asInstanceOf[typings.wpapi.wpapiStrings.PUT]
   }
   
   trait RegisterRouteOptions extends StObject {
@@ -519,38 +480,28 @@ object mod {
   }
   object RegisterRouteOptions {
     
-    @scala.inline
-    def apply(): RegisterRouteOptions = {
+    inline def apply(): RegisterRouteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegisterRouteOptions]
     }
     
-    @scala.inline
-    implicit class RegisterRouteOptionsMutableBuilder[Self <: RegisterRouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterRouteOptions](x: Self) {
       
-      @scala.inline
-      def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setMixins(value: StringDictionary[js.Function1[/* val */ js.Any, js.Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      inline def setMixins(value: StringDictionary[js.Function1[/* val */ js.Any, js.Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+      inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
     }
   }
   
@@ -566,35 +517,26 @@ object mod {
   }
   object Route {
     
-    @scala.inline
-    def apply(endpoints: js.Array[HTTPEndpoint], methods: js.Array[HTTPMethod], namespace: String): Route = {
+    inline def apply(endpoints: js.Array[HTTPEndpoint], methods: js.Array[HTTPMethod], namespace: String): Route = {
       val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[Route]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+    extension [Self <: Route](x: Self) {
       
-      @scala.inline
-      def setEndpoints(value: js.Array[HTTPEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: js.Array[HTTPEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: HTTPEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: HTTPEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_links(value: Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_linksUndefined: Self = StObject.set(x, "_links", js.undefined)
+      inline def set_linksUndefined: Self = StObject.set(x, "_links", js.undefined)
     }
   }
   
@@ -614,44 +556,32 @@ object mod {
   }
   object Transport {
     
-    @scala.inline
-    def apply(): Transport = {
+    inline def apply(): Transport = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Transport]
     }
     
-    @scala.inline
-    implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+    extension [Self <: Transport](x: Self) {
       
-      @scala.inline
-      def setDelete(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+      inline def setDelete(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      @scala.inline
-      def setGet(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      @scala.inline
-      def setHead(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction2(value))
+      inline def setHead(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setPost(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
+      inline def setPost(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      @scala.inline
-      def setPut(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
+      inline def setPut(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
+      inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
     }
   }
   
@@ -828,29 +758,22 @@ object mod {
   }
   object WPAPIOptions {
     
-    @scala.inline
-    def apply(endpoint: String): WPAPIOptions = {
+    inline def apply(endpoint: String): WPAPIOptions = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[WPAPIOptions]
     }
     
-    @scala.inline
-    implicit class WPAPIOptionsMutableBuilder[Self <: WPAPIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WPAPIOptions](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutes(value: Routes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: Routes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      @scala.inline
-      def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   
@@ -874,23 +797,18 @@ object mod {
   }
   object WPRequestOptions {
     
-    @scala.inline
-    def apply(endpoint: String): WPRequestOptions = {
+    inline def apply(endpoint: String): WPRequestOptions = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[WPRequestOptions]
     }
     
-    @scala.inline
-    implicit class WPRequestOptionsMutableBuilder[Self <: WPRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WPRequestOptions](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
 }

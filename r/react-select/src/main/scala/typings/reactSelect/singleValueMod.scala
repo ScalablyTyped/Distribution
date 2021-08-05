@@ -13,11 +13,9 @@ object singleValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[SingleValueProps[OptionType]]): ComponentType[AnimatedSingleValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedSingleValueProps[OptionType]]]
+  inline def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[SingleValueProps[OptionType]]): ComponentType[AnimatedSingleValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedSingleValueProps[OptionType]]]
   
-  @scala.inline
-  def AnimatedSingleValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[SingleValueProps[OptionType]]): ComponentType[AnimatedSingleValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedSingleValue")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedSingleValueProps[OptionType]]]
+  inline def AnimatedSingleValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[SingleValueProps[OptionType]]): ComponentType[AnimatedSingleValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedSingleValue")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedSingleValueProps[OptionType]]]
   
   type AnimatedSingleValueProps[OptionType /* <: OptionTypeBase */] = SingleValueProps[OptionType]
 }

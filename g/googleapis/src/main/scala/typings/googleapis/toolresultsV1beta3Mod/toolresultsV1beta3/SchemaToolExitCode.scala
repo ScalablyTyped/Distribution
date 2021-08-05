@@ -18,19 +18,15 @@ trait SchemaToolExitCode extends StObject {
 }
 object SchemaToolExitCode {
   
-  @scala.inline
-  def apply(): SchemaToolExitCode = {
+  inline def apply(): SchemaToolExitCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaToolExitCode]
   }
   
-  @scala.inline
-  implicit class SchemaToolExitCodeMutableBuilder[Self <: SchemaToolExitCode] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaToolExitCode](x: Self) {
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait OpenedFileOffsetRequestedEventOptions
 }
 object OpenedFileOffsetRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, length: Double, offset: Double, openRequestId: Double, requestId: Double): OpenedFileOffsetRequestedEventOptions = {
+  inline def apply(fileSystemId: String, length: Double, offset: Double, openRequestId: Double, requestId: Double): OpenedFileOffsetRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenedFileOffsetRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class OpenedFileOffsetRequestedEventOptionsMutableBuilder[Self <: OpenedFileOffsetRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenedFileOffsetRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

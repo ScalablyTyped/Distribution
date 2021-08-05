@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AsyncPluginHooks extends StObject
 object AsyncPluginHooks {
   
-  @scala.inline
-  def buildEnd: typings.rollup.rollupStrings.buildEnd = "buildEnd".asInstanceOf[typings.rollup.rollupStrings.buildEnd]
+  inline def buildEnd: typings.rollup.rollupStrings.buildEnd = "buildEnd".asInstanceOf[typings.rollup.rollupStrings.buildEnd]
   
-  @scala.inline
-  def buildStart: typings.rollup.rollupStrings.buildStart = "buildStart".asInstanceOf[typings.rollup.rollupStrings.buildStart]
+  inline def buildStart: typings.rollup.rollupStrings.buildStart = "buildStart".asInstanceOf[typings.rollup.rollupStrings.buildStart]
   
-  @scala.inline
-  def generateBundle: typings.rollup.rollupStrings.generateBundle = "generateBundle".asInstanceOf[typings.rollup.rollupStrings.generateBundle]
+  inline def generateBundle: typings.rollup.rollupStrings.generateBundle = "generateBundle".asInstanceOf[typings.rollup.rollupStrings.generateBundle]
   
-  @scala.inline
-  def load: typings.rollup.rollupStrings.load = "load".asInstanceOf[typings.rollup.rollupStrings.load]
+  inline def load: typings.rollup.rollupStrings.load = "load".asInstanceOf[typings.rollup.rollupStrings.load]
   
-  @scala.inline
-  def moduleParsed: typings.rollup.rollupStrings.moduleParsed = "moduleParsed".asInstanceOf[typings.rollup.rollupStrings.moduleParsed]
+  inline def moduleParsed: typings.rollup.rollupStrings.moduleParsed = "moduleParsed".asInstanceOf[typings.rollup.rollupStrings.moduleParsed]
   
-  @scala.inline
-  def options: typings.rollup.rollupStrings.options = "options".asInstanceOf[typings.rollup.rollupStrings.options]
+  inline def options: typings.rollup.rollupStrings.options = "options".asInstanceOf[typings.rollup.rollupStrings.options]
   
-  @scala.inline
-  def renderChunk: typings.rollup.rollupStrings.renderChunk = "renderChunk".asInstanceOf[typings.rollup.rollupStrings.renderChunk]
+  inline def renderChunk: typings.rollup.rollupStrings.renderChunk = "renderChunk".asInstanceOf[typings.rollup.rollupStrings.renderChunk]
   
-  @scala.inline
-  def renderError: typings.rollup.rollupStrings.renderError = "renderError".asInstanceOf[typings.rollup.rollupStrings.renderError]
+  inline def renderError: typings.rollup.rollupStrings.renderError = "renderError".asInstanceOf[typings.rollup.rollupStrings.renderError]
   
-  @scala.inline
-  def renderStart: typings.rollup.rollupStrings.renderStart = "renderStart".asInstanceOf[typings.rollup.rollupStrings.renderStart]
+  inline def renderStart: typings.rollup.rollupStrings.renderStart = "renderStart".asInstanceOf[typings.rollup.rollupStrings.renderStart]
   
-  @scala.inline
-  def resolveDynamicImport: typings.rollup.rollupStrings.resolveDynamicImport = "resolveDynamicImport".asInstanceOf[typings.rollup.rollupStrings.resolveDynamicImport]
+  inline def resolveDynamicImport: typings.rollup.rollupStrings.resolveDynamicImport = "resolveDynamicImport".asInstanceOf[typings.rollup.rollupStrings.resolveDynamicImport]
   
-  @scala.inline
-  def resolveId: typings.rollup.rollupStrings.resolveId = "resolveId".asInstanceOf[typings.rollup.rollupStrings.resolveId]
+  inline def resolveId: typings.rollup.rollupStrings.resolveId = "resolveId".asInstanceOf[typings.rollup.rollupStrings.resolveId]
   
-  @scala.inline
-  def transform: typings.rollup.rollupStrings.transform = "transform".asInstanceOf[typings.rollup.rollupStrings.transform]
+  inline def transform: typings.rollup.rollupStrings.transform = "transform".asInstanceOf[typings.rollup.rollupStrings.transform]
   
-  @scala.inline
-  def writeBundle: typings.rollup.rollupStrings.writeBundle = "writeBundle".asInstanceOf[typings.rollup.rollupStrings.writeBundle]
+  inline def writeBundle: typings.rollup.rollupStrings.writeBundle = "writeBundle".asInstanceOf[typings.rollup.rollupStrings.writeBundle]
 }

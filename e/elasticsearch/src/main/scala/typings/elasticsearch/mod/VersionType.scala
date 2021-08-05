@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VersionType extends StObject
 object VersionType {
   
-  @scala.inline
-  def external: typings.elasticsearch.elasticsearchStrings.external = "external".asInstanceOf[typings.elasticsearch.elasticsearchStrings.external]
+  inline def external: typings.elasticsearch.elasticsearchStrings.external = "external".asInstanceOf[typings.elasticsearch.elasticsearchStrings.external]
   
-  @scala.inline
-  def external_gte: typings.elasticsearch.elasticsearchStrings.external_gte = "external_gte".asInstanceOf[typings.elasticsearch.elasticsearchStrings.external_gte]
+  inline def external_gte: typings.elasticsearch.elasticsearchStrings.external_gte = "external_gte".asInstanceOf[typings.elasticsearch.elasticsearchStrings.external_gte]
   
-  @scala.inline
-  def force: typings.elasticsearch.elasticsearchStrings.force = "force".asInstanceOf[typings.elasticsearch.elasticsearchStrings.force]
+  inline def force: typings.elasticsearch.elasticsearchStrings.force = "force".asInstanceOf[typings.elasticsearch.elasticsearchStrings.force]
   
-  @scala.inline
-  def internal: typings.elasticsearch.elasticsearchStrings.internal = "internal".asInstanceOf[typings.elasticsearch.elasticsearchStrings.internal]
+  inline def internal: typings.elasticsearch.elasticsearchStrings.internal = "internal".asInstanceOf[typings.elasticsearch.elasticsearchStrings.internal]
 }

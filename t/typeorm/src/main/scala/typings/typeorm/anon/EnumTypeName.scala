@@ -12,19 +12,15 @@ trait EnumTypeName extends StObject {
 }
 object EnumTypeName {
   
-  @scala.inline
-  def apply(enumTypeName: js.Any, enumTypeSchema: js.Any): EnumTypeName = {
+  inline def apply(enumTypeName: js.Any, enumTypeSchema: js.Any): EnumTypeName = {
     val __obj = js.Dynamic.literal(enumTypeName = enumTypeName.asInstanceOf[js.Any], enumTypeSchema = enumTypeSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumTypeName]
   }
   
-  @scala.inline
-  implicit class EnumTypeNameMutableBuilder[Self <: EnumTypeName] (val x: Self) extends AnyVal {
+  extension [Self <: EnumTypeName](x: Self) {
     
-    @scala.inline
-    def setEnumTypeName(value: js.Any): Self = StObject.set(x, "enumTypeName", value.asInstanceOf[js.Any])
+    inline def setEnumTypeName(value: js.Any): Self = StObject.set(x, "enumTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumTypeSchema(value: js.Any): Self = StObject.set(x, "enumTypeSchema", value.asInstanceOf[js.Any])
+    inline def setEnumTypeSchema(value: js.Any): Self = StObject.set(x, "enumTypeSchema", value.asInstanceOf[js.Any])
   }
 }

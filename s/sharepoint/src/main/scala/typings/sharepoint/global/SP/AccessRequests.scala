@@ -16,8 +16,7 @@ object AccessRequests {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def changeRequestStatus(
+  inline def changeRequestStatus(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     itemId: Double,
     newStatus: Double,
@@ -27,8 +26,7 @@ object AccessRequests {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changeRequestStatus")(context.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], newStatus.asInstanceOf[js.Any], convStr.asInstanceOf[js.Any], permType.asInstanceOf[js.Any], permissionLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def changeRequestStatusBulk(
+  inline def changeRequestStatusBulk(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     requestIds: js.Array[Double],
     newStatus: Double

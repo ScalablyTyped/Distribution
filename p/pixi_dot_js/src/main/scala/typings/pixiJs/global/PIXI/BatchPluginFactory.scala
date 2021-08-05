@@ -51,10 +51,8 @@ object BatchPluginFactory {
     * @return {*} New batch renderer plugin
     */
   /* static member */
-  @scala.inline
-  def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
-  @scala.inline
-  def create(options: Fragment): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+  inline def create(options: Fragment): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * The default fragment shader source

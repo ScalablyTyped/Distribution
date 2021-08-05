@@ -18,19 +18,15 @@ trait GoogleActionsV2Device extends StObject {
 }
 object GoogleActionsV2Device {
   
-  @scala.inline
-  def apply(): GoogleActionsV2Device = {
+  inline def apply(): GoogleActionsV2Device = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2Device]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DeviceMutableBuilder[Self <: GoogleActionsV2Device] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2Device](x: Self) {
     
-    @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait PutSchemaFromJsonRequest extends StObject {
 }
 object PutSchemaFromJsonRequest {
   
-  @scala.inline
-  def apply(Document: SchemaJsonDocument, SchemaArn: Arn): PutSchemaFromJsonRequest = {
+  inline def apply(Document: SchemaJsonDocument, SchemaArn: Arn): PutSchemaFromJsonRequest = {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSchemaFromJsonRequest]
   }
   
-  @scala.inline
-  implicit class PutSchemaFromJsonRequestMutableBuilder[Self <: PutSchemaFromJsonRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutSchemaFromJsonRequest](x: Self) {
     
-    @scala.inline
-    def setDocument(value: SchemaJsonDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: SchemaJsonDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

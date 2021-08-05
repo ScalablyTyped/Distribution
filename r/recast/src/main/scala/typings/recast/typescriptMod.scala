@@ -12,8 +12,6 @@ object typescriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(source: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[File_]
-  @scala.inline
-  def parse(source: String, options: Overrides): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
+  inline def parse(source: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[File_]
+  inline def parse(source: String, options: Overrides): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
 }

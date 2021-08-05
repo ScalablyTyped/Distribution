@@ -68,91 +68,63 @@ trait UpdateEnvironmentMessage extends StObject {
 }
 object UpdateEnvironmentMessage {
   
-  @scala.inline
-  def apply(): UpdateEnvironmentMessage = {
+  inline def apply(): UpdateEnvironmentMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateEnvironmentMessage]
   }
   
-  @scala.inline
-  implicit class UpdateEnvironmentMessageMutableBuilder[Self <: UpdateEnvironmentMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEnvironmentMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = StObject.set(x, "OptionSettings", value.asInstanceOf[js.Any])
+    inline def setOptionSettings(value: ConfigurationOptionSettingsList): Self = StObject.set(x, "OptionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
+    inline def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
     
-    @scala.inline
-    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
+    inline def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setOptionsToRemove(value: OptionsSpecifierList): Self = StObject.set(x, "OptionsToRemove", value.asInstanceOf[js.Any])
+    inline def setOptionsToRemove(value: OptionsSpecifierList): Self = StObject.set(x, "OptionsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsToRemoveUndefined: Self = StObject.set(x, "OptionsToRemove", js.undefined)
+    inline def setOptionsToRemoveUndefined: Self = StObject.set(x, "OptionsToRemove", js.undefined)
     
-    @scala.inline
-    def setOptionsToRemoveVarargs(value: OptionSpecification*): Self = StObject.set(x, "OptionsToRemove", js.Array(value :_*))
+    inline def setOptionsToRemoveVarargs(value: OptionSpecification*): Self = StObject.set(x, "OptionsToRemove", js.Array(value :_*))
     
-    @scala.inline
-    def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
+    inline def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformArnUndefined: Self = StObject.set(x, "PlatformArn", js.undefined)
+    inline def setPlatformArnUndefined: Self = StObject.set(x, "PlatformArn", js.undefined)
     
-    @scala.inline
-    def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
+    inline def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionStackNameUndefined: Self = StObject.set(x, "SolutionStackName", js.undefined)
+    inline def setSolutionStackNameUndefined: Self = StObject.set(x, "SolutionStackName", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
-    @scala.inline
-    def setTier(value: EnvironmentTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: EnvironmentTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
     
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    inline def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
+    inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

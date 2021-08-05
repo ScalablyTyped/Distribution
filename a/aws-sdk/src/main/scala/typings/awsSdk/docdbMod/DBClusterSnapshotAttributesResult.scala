@@ -18,28 +18,21 @@ trait DBClusterSnapshotAttributesResult extends StObject {
 }
 object DBClusterSnapshotAttributesResult {
   
-  @scala.inline
-  def apply(): DBClusterSnapshotAttributesResult = {
+  inline def apply(): DBClusterSnapshotAttributesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterSnapshotAttributesResult]
   }
   
-  @scala.inline
-  implicit class DBClusterSnapshotAttributesResultMutableBuilder[Self <: DBClusterSnapshotAttributesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterSnapshotAttributesResult](x: Self) {
     
-    @scala.inline
-    def setDBClusterSnapshotAttributes(value: DBClusterSnapshotAttributeList): Self = StObject.set(x, "DBClusterSnapshotAttributes", value.asInstanceOf[js.Any])
+    inline def setDBClusterSnapshotAttributes(value: DBClusterSnapshotAttributeList): Self = StObject.set(x, "DBClusterSnapshotAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterSnapshotAttributesUndefined: Self = StObject.set(x, "DBClusterSnapshotAttributes", js.undefined)
+    inline def setDBClusterSnapshotAttributesUndefined: Self = StObject.set(x, "DBClusterSnapshotAttributes", js.undefined)
     
-    @scala.inline
-    def setDBClusterSnapshotAttributesVarargs(value: DBClusterSnapshotAttribute*): Self = StObject.set(x, "DBClusterSnapshotAttributes", js.Array(value :_*))
+    inline def setDBClusterSnapshotAttributesVarargs(value: DBClusterSnapshotAttribute*): Self = StObject.set(x, "DBClusterSnapshotAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "DBClusterSnapshotIdentifier", js.undefined)
+    inline def setDBClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "DBClusterSnapshotIdentifier", js.undefined)
   }
 }

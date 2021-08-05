@@ -16,8 +16,7 @@ trait GetMeshMixin extends StObject {
 }
 object GetMeshMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getMeshMixin: () => DefaultComponents,
     primitives: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]
   ): GetMeshMixin = {
@@ -25,13 +24,10 @@ object GetMeshMixin {
     __obj.asInstanceOf[GetMeshMixin]
   }
   
-  @scala.inline
-  implicit class GetMeshMixinMutableBuilder[Self <: GetMeshMixin] (val x: Self) extends AnyVal {
+  extension [Self <: GetMeshMixin](x: Self) {
     
-    @scala.inline
-    def setGetMeshMixin(value: () => DefaultComponents): Self = StObject.set(x, "getMeshMixin", js.Any.fromFunction0(value))
+    inline def setGetMeshMixin(value: () => DefaultComponents): Self = StObject.set(x, "getMeshMixin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrimitives(value: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
+    inline def setPrimitives(value: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
   }
 }

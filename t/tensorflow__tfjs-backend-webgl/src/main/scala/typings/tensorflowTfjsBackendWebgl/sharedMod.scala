@@ -14,8 +14,7 @@ object sharedMod {
   val ^ : js.Any = js.native
   
   /* was `typeof shared.simpleAbsImpl` */
-  @scala.inline
-  def simpleAbsImplCPU(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImplCPU")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
+  inline def simpleAbsImplCPU(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImplCPU")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
   
   type SimpleBinaryKernelImplCPU = SimpleBinaryKernelImpl
 }

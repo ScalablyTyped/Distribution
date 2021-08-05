@@ -96,52 +96,38 @@ object mod extends Shortcut {
   }
   object SpinnerProps {
     
-    @scala.inline
-    def apply(): SpinnerProps = {
+    inline def apply(): SpinnerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinnerProps]
     }
     
-    @scala.inline
-    implicit class SpinnerPropsMutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpinnerProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFadeIn(value: full | half | quarter | none): Self = StObject.set(x, "fadeIn", value.asInstanceOf[js.Any])
+      inline def setFadeIn(value: full | half | quarter | none): Self = StObject.set(x, "fadeIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
+      inline def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: `three-bounce` | `double-bounce` | `rotating-plane` | `folding-cube` | wave | `wandering-cubes` | pulse | `chasing-dots` | circle | `cube-grid` | wordpress | `ball-grid-beat` | `ball-grid-pulse` | `line-spin-fade-loader` | `ball-spin-fade-loader` | `ball-pulse-rise` | `line-scale` | `line-scale-pulse-out` | `line-scale-pulse-out-rapid` | `line-scale-party` | `ball-triangle-path` | `ball-scale-ripple-multiple` | `ball-pulse-sync` | `ball-beat` | `ball-scale-multiple` | `ball-zig-zag` | `ball-zig-zag-deflect` | `ball-clip-rotate` | `ball-clip-rotate-pulse` | `ball-clip-rotate-multiple` | `ball-scale-ripple` | `triangle-skew-spin` | pacman
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOverrideSpinnerClassName(value: String): Self = StObject.set(x, "overrideSpinnerClassName", value.asInstanceOf[js.Any])
+      inline def setOverrideSpinnerClassName(value: String): Self = StObject.set(x, "overrideSpinnerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideSpinnerClassNameUndefined: Self = StObject.set(x, "overrideSpinnerClassName", js.undefined)
+      inline def setOverrideSpinnerClassNameUndefined: Self = StObject.set(x, "overrideSpinnerClassName", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

@@ -26,34 +26,25 @@ trait ocrVehicleLicenseOptions
 }
 object ocrVehicleLicenseOptions {
   
-  @scala.inline
-  def apply(image: String): ocrVehicleLicenseOptions = {
+  inline def apply(image: String): ocrVehicleLicenseOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrVehicleLicenseOptions]
   }
   
-  @scala.inline
-  implicit class ocrVehicleLicenseOptionsMutableBuilder[Self <: ocrVehicleLicenseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ocrVehicleLicenseOptions](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: String): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: String): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
-    @scala.inline
-    def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
+    inline def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetect_directionUndefined: Self = StObject.set(x, "detect_direction", js.undefined)
+    inline def setDetect_directionUndefined: Self = StObject.set(x, "detect_direction", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ ocrVehicleLicenseResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ocrVehicleLicenseResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object esLintReporterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createEsLintReporter(configuration: EsLintReporterConfiguration): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporter")(configuration.asInstanceOf[js.Any]).asInstanceOf[Reporter]
+  inline def createEsLintReporter(configuration: EsLintReporterConfiguration): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporter")(configuration.asInstanceOf[js.Any]).asInstanceOf[Reporter]
 }

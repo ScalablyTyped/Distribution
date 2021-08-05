@@ -31,10 +31,8 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement]): js.Promise[js.Array[NewElement]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NewElement]]]
-  @scala.inline
-  def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement], options: Options): js.Promise[js.Array[NewElement]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NewElement]]]
+  inline def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement]): js.Promise[js.Array[NewElement]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NewElement]]]
+  inline def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement], options: Options): js.Promise[js.Array[NewElement]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NewElement]]]
   
   @JSImport("p-map", JSImport.Namespace)
   @js.native
@@ -64,26 +62,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setStopOnError(value: Boolean): Self = StObject.set(x, "stopOnError", value.asInstanceOf[js.Any])
+      inline def setStopOnError(value: Boolean): Self = StObject.set(x, "stopOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnErrorUndefined: Self = StObject.set(x, "stopOnError", js.undefined)
+      inline def setStopOnErrorUndefined: Self = StObject.set(x, "stopOnError", js.undefined)
     }
   }
 }

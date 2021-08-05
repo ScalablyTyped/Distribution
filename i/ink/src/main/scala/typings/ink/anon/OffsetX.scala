@@ -17,37 +17,27 @@ trait OffsetX extends StObject {
 }
 object OffsetX {
   
-  @scala.inline
-  def apply(skipStaticElements: Boolean): OffsetX = {
+  inline def apply(skipStaticElements: Boolean): OffsetX = {
     val __obj = js.Dynamic.literal(skipStaticElements = skipStaticElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetX]
   }
   
-  @scala.inline
-  implicit class OffsetXMutableBuilder[Self <: OffsetX] (val x: Self) extends AnyVal {
+  extension [Self <: OffsetX](x: Self) {
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setSkipStaticElements(value: Boolean): Self = StObject.set(x, "skipStaticElements", value.asInstanceOf[js.Any])
+    inline def setSkipStaticElements(value: Boolean): Self = StObject.set(x, "skipStaticElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformers(value: js.Array[OutputTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+    inline def setTransformers(value: js.Array[OutputTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
+    inline def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
     
-    @scala.inline
-    def setTransformersVarargs(value: OutputTransformer*): Self = StObject.set(x, "transformers", js.Array(value :_*))
+    inline def setTransformersVarargs(value: OutputTransformer*): Self = StObject.set(x, "transformers", js.Array(value :_*))
   }
 }

@@ -27,8 +27,7 @@ object AppService {
     @JSGlobal("Windows.ApplicationModel.AppService.AppServiceCatalog.findAppServiceProvidersAsync")
     @js.native
     def findAppServiceProvidersAsync: js.Any = js.native
-    @scala.inline
-    def findAppServiceProvidersAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAppServiceProvidersAsync")(x.asInstanceOf[js.Any])
+    inline def findAppServiceProvidersAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAppServiceProvidersAsync")(x.asInstanceOf[js.Any])
   }
   
   /** Provides data for the AppServiceConnection.ServiceClosed event that occurs when the other endpoint closes connection to the app service. */

@@ -38,8 +38,7 @@ trait AbstractEventObject extends StObject {
 }
 object AbstractEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cy: Core,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -57,40 +56,28 @@ object AbstractEventObject {
     __obj.asInstanceOf[AbstractEventObject]
   }
   
-  @scala.inline
-  implicit class AbstractEventObjectMutableBuilder[Self <: AbstractEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractEventObject](x: Self) {
     
-    @scala.inline
-    def setCy(value: Core): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: Core): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
+    inline def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+    inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+    inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UserInputDeviceEventName | UserInputDeviceEventNameExt): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UserInputDeviceEventName | UserInputDeviceEventNameExt): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

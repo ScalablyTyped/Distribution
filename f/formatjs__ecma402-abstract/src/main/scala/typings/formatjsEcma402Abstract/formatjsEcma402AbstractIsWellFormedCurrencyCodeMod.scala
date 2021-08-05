@@ -10,6 +10,5 @@ object formatjsEcma402AbstractIsWellFormedCurrencyCodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def IsWellFormedCurrencyCode(currency: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWellFormedCurrencyCode")(currency.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsWellFormedCurrencyCode(currency: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWellFormedCurrencyCode")(currency.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -18,31 +18,31 @@ class SyntaxIndenter protected ()
      with typings.typescriptServices.TypeScript.SyntaxIndenter {
   def this(indentFirstToken: Boolean, indentationAmount: Double, options: FormattingOptions) = this()
   
-  /* CompleteClass */
-  /* private */ override def indentMultiLineComment(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def indentMultiLineComment(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def indentSegment(segment: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def indentSegment(segment: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def indentSingleLineOrSkippedText(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def indentSingleLineOrSkippedText(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def indentTriviaList(triviaList: ISyntaxTriviaList): ISyntaxTriviaList = js.native
   
-  /* CompleteClass */
-  /* private */ override def indentWhitespace(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def indentWhitespace(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var indentationAmount: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var indentationTrivia: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var lastTriviaWasNewLine: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var options: js.Any = js.native
   
   /* CompleteClass */
@@ -322,12 +322,10 @@ object SyntaxIndenter {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def indentNode(node: ISyntaxNode, indentFirstToken: Boolean, indentAmount: Double, options: FormattingOptions): typings.typescriptServices.TypeScript.SyntaxNode = (^.asInstanceOf[js.Dynamic].applyDynamic("indentNode")(node.asInstanceOf[js.Any], indentFirstToken.asInstanceOf[js.Any], indentAmount.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxNode]
+  inline def indentNode(node: ISyntaxNode, indentFirstToken: Boolean, indentAmount: Double, options: FormattingOptions): typings.typescriptServices.TypeScript.SyntaxNode = (^.asInstanceOf[js.Dynamic].applyDynamic("indentNode")(node.asInstanceOf[js.Any], indentFirstToken.asInstanceOf[js.Any], indentAmount.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxNode]
   
   /* static member */
-  @scala.inline
-  def indentNodes(
+  inline def indentNodes(
     nodes: js.Array[typings.typescriptServices.TypeScript.SyntaxNode],
     indentFirstToken: Boolean,
     indentAmount: Double,

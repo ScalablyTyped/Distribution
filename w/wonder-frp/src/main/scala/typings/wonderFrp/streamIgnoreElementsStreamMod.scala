@@ -13,7 +13,7 @@ object streamIgnoreElementsStreamMod {
   class IgnoreElementsStream protected () extends BaseStream {
     def this(source: Stream) = this()
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
   }
   /* static members */
   object IgnoreElementsStream {
@@ -22,7 +22,6 @@ object streamIgnoreElementsStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(source: Stream): IgnoreElementsStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[IgnoreElementsStream]
+    inline def create(source: Stream): IgnoreElementsStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[IgnoreElementsStream]
   }
 }

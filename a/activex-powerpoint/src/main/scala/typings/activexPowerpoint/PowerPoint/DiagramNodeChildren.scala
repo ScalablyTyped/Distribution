@@ -31,7 +31,7 @@ trait DiagramNodeChildren extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.DiagramNodeChildren_typekey")
+  /* private */ @JSName("PowerPoint.DiagramNodeChildren_typekey")
   var PowerPointDotDiagramNodeChildren_typekey: DiagramNodeChildren = js.native
   
   def SelectAll(): Unit = js.native

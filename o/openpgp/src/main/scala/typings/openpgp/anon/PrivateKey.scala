@@ -16,8 +16,7 @@ trait PrivateKey extends StObject {
 }
 object PrivateKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     privateKey: typings.openpgp.mod.key.Key,
     privateKeyArmored: String,
     publicKey: typings.openpgp.mod.key.Key,
@@ -27,19 +26,14 @@ object PrivateKey {
     __obj.asInstanceOf[PrivateKey]
   }
   
-  @scala.inline
-  implicit class PrivateKeyMutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateKey](x: Self) {
     
-    @scala.inline
-    def setPrivateKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyArmored(value: String): Self = StObject.set(x, "privateKeyArmored", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyArmored(value: String): Self = StObject.set(x, "privateKeyArmored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyArmored(value: String): Self = StObject.set(x, "publicKeyArmored", value.asInstanceOf[js.Any])
+    inline def setPublicKeyArmored(value: String): Self = StObject.set(x, "publicKeyArmored", value.asInstanceOf[js.Any])
   }
 }

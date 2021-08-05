@@ -64,6 +64,5 @@ object ElementEvents {
   @JSImport("aurelia-templating", "ElementEvents.defaultListenerOptions")
   @js.native
   def defaultListenerOptions: Boolean | AddEventListenerOptions = js.native
-  @scala.inline
-  def defaultListenerOptions_=(x: Boolean | AddEventListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultListenerOptions")(x.asInstanceOf[js.Any])
+  inline def defaultListenerOptions_=(x: Boolean | AddEventListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultListenerOptions")(x.asInstanceOf[js.Any])
 }

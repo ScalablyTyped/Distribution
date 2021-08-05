@@ -7,17 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(moji: String): Moji = ^.asInstanceOf[js.Dynamic].apply(moji.asInstanceOf[js.Any]).asInstanceOf[Moji]
+  inline def apply(moji: String): Moji = ^.asInstanceOf[js.Dynamic].apply(moji.asInstanceOf[js.Any]).asInstanceOf[Moji]
   
   @JSImport("moji", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addMojisyu(`type`: String, mojisyu: MojisyuRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMojisyu")(`type`.asInstanceOf[js.Any], mojisyu.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addMojisyu(`type`: String, mojisyu: MojisyuRegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMojisyu")(`type`.asInstanceOf[js.Any], mojisyu.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMojisyu(`type`: String, mojisyu: MojisyuRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMojisyu")(`type`.asInstanceOf[js.Any], mojisyu.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMojisyu(`type`: String, mojisyu: MojisyuRegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMojisyu")(`type`.asInstanceOf[js.Any], mojisyu.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Moji extends StObject {
     
@@ -31,8 +28,7 @@ object mod {
   }
   object Moji {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       convert: (Mojisyu, Mojisyu) => Moji,
       filter: Mojisyu => Moji,
       reject: Mojisyu => Moji,
@@ -42,20 +38,15 @@ object mod {
       __obj.asInstanceOf[Moji]
     }
     
-    @scala.inline
-    implicit class MojiMutableBuilder[Self <: Moji] (val x: Self) extends AnyVal {
+    extension [Self <: Moji](x: Self) {
       
-      @scala.inline
-      def setConvert(value: (Mojisyu, Mojisyu) => Moji): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
+      inline def setConvert(value: (Mojisyu, Mojisyu) => Moji): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilter(value: Mojisyu => Moji): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: Mojisyu => Moji): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReject(value: Mojisyu => Moji): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: Mojisyu => Moji): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrim(value: () => Moji): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
+      inline def setTrim(value: () => Moji): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
     }
   }
   
@@ -72,29 +63,21 @@ object mod {
   trait Mojisyu extends StObject
   object Mojisyu {
     
-    @scala.inline
-    def HE: typings.moji.mojiStrings.HE = "HE".asInstanceOf[typings.moji.mojiStrings.HE]
+    inline def HE: typings.moji.mojiStrings.HE = "HE".asInstanceOf[typings.moji.mojiStrings.HE]
     
-    @scala.inline
-    def HG: typings.moji.mojiStrings.HG = "HG".asInstanceOf[typings.moji.mojiStrings.HG]
+    inline def HG: typings.moji.mojiStrings.HG = "HG".asInstanceOf[typings.moji.mojiStrings.HG]
     
-    @scala.inline
-    def HK: typings.moji.mojiStrings.HK = "HK".asInstanceOf[typings.moji.mojiStrings.HK]
+    inline def HK: typings.moji.mojiStrings.HK = "HK".asInstanceOf[typings.moji.mojiStrings.HK]
     
-    @scala.inline
-    def HS: typings.moji.mojiStrings.HS = "HS".asInstanceOf[typings.moji.mojiStrings.HS]
+    inline def HS: typings.moji.mojiStrings.HS = "HS".asInstanceOf[typings.moji.mojiStrings.HS]
     
-    @scala.inline
-    def KK: typings.moji.mojiStrings.KK = "KK".asInstanceOf[typings.moji.mojiStrings.KK]
+    inline def KK: typings.moji.mojiStrings.KK = "KK".asInstanceOf[typings.moji.mojiStrings.KK]
     
-    @scala.inline
-    def ZE: typings.moji.mojiStrings.ZE = "ZE".asInstanceOf[typings.moji.mojiStrings.ZE]
+    inline def ZE: typings.moji.mojiStrings.ZE = "ZE".asInstanceOf[typings.moji.mojiStrings.ZE]
     
-    @scala.inline
-    def ZK: typings.moji.mojiStrings.ZK = "ZK".asInstanceOf[typings.moji.mojiStrings.ZK]
+    inline def ZK: typings.moji.mojiStrings.ZK = "ZK".asInstanceOf[typings.moji.mojiStrings.ZK]
     
-    @scala.inline
-    def ZS: typings.moji.mojiStrings.ZS = "ZS".asInstanceOf[typings.moji.mojiStrings.ZS]
+    inline def ZS: typings.moji.mojiStrings.ZS = "ZS".asInstanceOf[typings.moji.mojiStrings.ZS]
   }
   
   trait MojisyuRange extends StObject {
@@ -105,20 +88,16 @@ object mod {
   }
   object MojisyuRange {
     
-    @scala.inline
-    def apply(end: Double, start: Double): MojisyuRange = {
+    inline def apply(end: Double, start: Double): MojisyuRange = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[MojisyuRange]
     }
     
-    @scala.inline
-    implicit class MojisyuRangeMutableBuilder[Self <: MojisyuRange] (val x: Self) extends AnyVal {
+    extension [Self <: MojisyuRange](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,23 +109,18 @@ object mod {
   }
   object MojisyuRegExp {
     
-    @scala.inline
-    def apply(list: js.Array[String], regexp: RegExp): MojisyuRegExp = {
+    inline def apply(list: js.Array[String], regexp: RegExp): MojisyuRegExp = {
       val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
       __obj.asInstanceOf[MojisyuRegExp]
     }
     
-    @scala.inline
-    implicit class MojisyuRegExpMutableBuilder[Self <: MojisyuRegExp] (val x: Self) extends AnyVal {
+    extension [Self <: MojisyuRegExp](x: Self) {
       
-      @scala.inline
-      def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     }
   }
 }

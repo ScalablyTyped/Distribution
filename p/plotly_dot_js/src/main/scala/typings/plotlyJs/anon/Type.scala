@@ -16,26 +16,20 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(`type`: constant | percent, value: Double): Type = {
+  inline def apply(`type`: constant | percent, value: Double): Type = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setType(value: constant | percent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: constant | percent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueminus(value: Double): Self = StObject.set(x, "valueminus", value.asInstanceOf[js.Any])
+    inline def setValueminus(value: Double): Self = StObject.set(x, "valueminus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueminusUndefined: Self = StObject.set(x, "valueminus", js.undefined)
+    inline def setValueminusUndefined: Self = StObject.set(x, "valueminus", js.undefined)
   }
 }

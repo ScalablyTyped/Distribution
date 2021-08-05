@@ -15,25 +15,19 @@ trait ListHITsRequest extends StObject {
 }
 object ListHITsRequest {
   
-  @scala.inline
-  def apply(): ListHITsRequest = {
+  inline def apply(): ListHITsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHITsRequest]
   }
   
-  @scala.inline
-  implicit class ListHITsRequestMutableBuilder[Self <: ListHITsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListHITsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait ASPxClientPanelBase
 }
 object ASPxClientPanelBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetContentHtml: () => String,
@@ -61,19 +60,14 @@ object ASPxClientPanelBase {
     __obj.asInstanceOf[ASPxClientPanelBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientPanelBaseMutableBuilder[Self <: ASPxClientPanelBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPanelBase](x: Self) {
     
-    @scala.inline
-    def setGetContentHtml(value: () => String): Self = StObject.set(x, "GetContentHtml", js.Any.fromFunction0(value))
+    inline def setGetContentHtml(value: () => String): Self = StObject.set(x, "GetContentHtml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
+    inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContentHtml(value: String => Unit): Self = StObject.set(x, "SetContentHtml", js.Any.fromFunction1(value))
+    inline def setSetContentHtml(value: String => Unit): Self = StObject.set(x, "SetContentHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
   }
 }

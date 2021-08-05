@@ -29,8 +29,7 @@ trait Foldable4[F /* <: /* import warning: transforms.QualifyReferences#resolveT
 }
 object Foldable4 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
     URI: F,
     foldMap: Monoid[js.Any] => js.Function2[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fa */ js.Any, 
@@ -44,11 +43,9 @@ object Foldable4 {
     __obj.asInstanceOf[Foldable4[F]]
   }
   
-  @scala.inline
-  implicit class Foldable4MutableBuilder[Self <: Foldable4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Foldable4[F]) extends AnyVal {
+  extension [Self <: Foldable4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Foldable4[F]) {
     
-    @scala.inline
-    def setFoldMap(
+    inline def setFoldMap(
       value: Monoid[js.Any] => js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fa */ js.Any, 
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
@@ -56,17 +53,14 @@ object Foldable4 {
         ]
     ): Self = StObject.set(x, "foldMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }
 }

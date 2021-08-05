@@ -21,6 +21,5 @@ object SystemMediaTransportControls {
     * @return The system transport controls for the current view.
     */
   /* static member */
-  @scala.inline
-  def getForCurrentView(): typings.winrtUwp.Windows.Media.SystemMediaTransportControls = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Media.SystemMediaTransportControls]
+  inline def getForCurrentView(): typings.winrtUwp.Windows.Media.SystemMediaTransportControls = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Media.SystemMediaTransportControls]
 }

@@ -129,8 +129,7 @@ object mod {
     @JSImport("cookiejar", "CookieAccessInfo.All")
     @js.native
     def All: CookieAccessInfo = js.native
-    @scala.inline
-    def All_=(x: CookieAccessInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
+    inline def All_=(x: CookieAccessInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("cookiejar", "CookieJar")

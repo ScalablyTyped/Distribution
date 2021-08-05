@@ -13,23 +13,18 @@ trait `10`[EventName /* <: Extract[/* keyof {} */ String, String] */] extends St
 }
 object `10` {
   
-  @scala.inline
-  def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](`type`: EventName): `10`[EventName] = {
+  inline def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](`type`: EventName): `10`[EventName] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`10`[EventName]]
   }
   
-  @scala.inline
-  implicit class `10MutableBuilder`[Self <: `10`[?], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self & `10`[EventName]) extends AnyVal {
+  extension [Self <: `10`[?], EventName /* <: Extract[/* keyof {} */ String, String] */](x: Self & `10`[EventName]) {
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: EventName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

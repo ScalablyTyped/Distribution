@@ -14,25 +14,19 @@ trait ListenOptions extends StObject {
 }
 object ListenOptions {
   
-  @scala.inline
-  def apply(): ListenOptions = {
+  inline def apply(): ListenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListenOptions]
   }
   
-  @scala.inline
-  implicit class ListenOptionsMutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListenOptions](x: Self) {
     
-    @scala.inline
-    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

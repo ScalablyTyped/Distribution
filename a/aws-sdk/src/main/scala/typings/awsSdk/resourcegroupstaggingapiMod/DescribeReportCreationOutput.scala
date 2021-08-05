@@ -23,31 +23,23 @@ trait DescribeReportCreationOutput extends StObject {
 }
 object DescribeReportCreationOutput {
   
-  @scala.inline
-  def apply(): DescribeReportCreationOutput = {
+  inline def apply(): DescribeReportCreationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReportCreationOutput]
   }
   
-  @scala.inline
-  implicit class DescribeReportCreationOutputMutableBuilder[Self <: DescribeReportCreationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReportCreationOutput](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setS3Location(value: S3Location): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3Location): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "S3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "S3Location", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

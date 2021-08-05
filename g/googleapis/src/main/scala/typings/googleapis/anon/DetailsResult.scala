@@ -13,28 +13,21 @@ trait DetailsResult extends StObject {
 }
 object DetailsResult {
   
-  @scala.inline
-  def apply(): DetailsResult = {
+  inline def apply(): DetailsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetailsResult]
   }
   
-  @scala.inline
-  implicit class DetailsResultMutableBuilder[Self <: DetailsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DetailsResult](x: Self) {
     
-    @scala.inline
-    def setDetails(value: js.Array[SchemaPagespeedApiFormatStringV2]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[SchemaPagespeedApiFormatStringV2]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: SchemaPagespeedApiFormatStringV2*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: SchemaPagespeedApiFormatStringV2*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: SchemaPagespeedApiFormatStringV2): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaPagespeedApiFormatStringV2): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

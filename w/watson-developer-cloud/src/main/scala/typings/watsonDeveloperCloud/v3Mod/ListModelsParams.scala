@@ -22,43 +22,31 @@ trait ListModelsParams extends StObject {
 }
 object ListModelsParams {
   
-  @scala.inline
-  def apply(): ListModelsParams = {
+  inline def apply(): ListModelsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListModelsParams]
   }
   
-  @scala.inline
-  implicit class ListModelsParamsMutableBuilder[Self <: ListModelsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ListModelsParams](x: Self) {
     
-    @scala.inline
-    def setDefault_models(value: Boolean): Self = StObject.set(x, "default_models", value.asInstanceOf[js.Any])
+    inline def setDefault_models(value: Boolean): Self = StObject.set(x, "default_models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_modelsUndefined: Self = StObject.set(x, "default_models", js.undefined)
+    inline def setDefault_modelsUndefined: Self = StObject.set(x, "default_models", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait DeleteTableInput
      with typings.awsSdkClientDynamodbBrowser.typesDeleteTableInputMod.DeleteTableInput
 object DeleteTableInput {
   
-  @scala.inline
-  def apply(TableName: String): DeleteTableInput = {
+  inline def apply(TableName: String): DeleteTableInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTableInput]
   }

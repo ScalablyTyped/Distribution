@@ -12,25 +12,19 @@ trait MjmlProps extends StObject {
 }
 object MjmlProps {
   
-  @scala.inline
-  def apply(): MjmlProps = {
+  inline def apply(): MjmlProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MjmlProps]
   }
   
-  @scala.inline
-  implicit class MjmlPropsMutableBuilder[Self <: MjmlProps] (val x: Self) extends AnyVal {
+  extension [Self <: MjmlProps](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setOwa(value: String): Self = StObject.set(x, "owa", value.asInstanceOf[js.Any])
+    inline def setOwa(value: String): Self = StObject.set(x, "owa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwaUndefined: Self = StObject.set(x, "owa", js.undefined)
+    inline def setOwaUndefined: Self = StObject.set(x, "owa", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait ExportResponse extends StObject {
 }
 object ExportResponse {
   
-  @scala.inline
-  def apply(): ExportResponse = {
+  inline def apply(): ExportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportResponse]
   }
   
-  @scala.inline
-  implicit class ExportResponseMutableBuilder[Self <: ExportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+    inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+    inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
   }
 }

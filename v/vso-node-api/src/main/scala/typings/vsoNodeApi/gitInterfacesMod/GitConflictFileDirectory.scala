@@ -18,8 +18,7 @@ trait GitConflictFileDirectory
 }
 object GitConflictFileDirectory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     conflictId: Double,
     conflictPath: String,
@@ -41,16 +40,12 @@ object GitConflictFileDirectory {
     __obj.asInstanceOf[GitConflictFileDirectory]
   }
   
-  @scala.inline
-  implicit class GitConflictFileDirectoryMutableBuilder[Self <: GitConflictFileDirectory] (val x: Self) extends AnyVal {
+  extension [Self <: GitConflictFileDirectory](x: Self) {
     
-    @scala.inline
-    def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBlob(value: GitBlobRef): Self = StObject.set(x, "sourceBlob", value.asInstanceOf[js.Any])
+    inline def setSourceBlob(value: GitBlobRef): Self = StObject.set(x, "sourceBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTree(value: GitTreeRef): Self = StObject.set(x, "targetTree", value.asInstanceOf[js.Any])
+    inline def setTargetTree(value: GitTreeRef): Self = StObject.set(x, "targetTree", value.asInstanceOf[js.Any])
   }
 }

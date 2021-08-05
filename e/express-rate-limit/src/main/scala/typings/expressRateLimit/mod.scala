@@ -15,10 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RateLimit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RateLimit]
-  @scala.inline
-  def apply(options: Options): RateLimit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RateLimit]
+  inline def apply(): RateLimit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RateLimit]
+  inline def apply(options: Options): RateLimit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RateLimit]
   
   @JSImport("express-rate-limit", JSImport.Namespace)
   @js.native
@@ -36,20 +34,16 @@ object mod {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: String, status: Double): Message = {
+    inline def apply(message: String, status: Double): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,103 +163,74 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDraft_polli_ratelimit_headers(value: Boolean): Self = StObject.set(x, "draft_polli_ratelimit_headers", value.asInstanceOf[js.Any])
+      inline def setDraft_polli_ratelimit_headers(value: Boolean): Self = StObject.set(x, "draft_polli_ratelimit_headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraft_polli_ratelimit_headersUndefined: Self = StObject.set(x, "draft_polli_ratelimit_headers", js.undefined)
+      inline def setDraft_polli_ratelimit_headersUndefined: Self = StObject.set(x, "draft_polli_ratelimit_headers", js.undefined)
       
-      @scala.inline
-      def setHandler(
+      inline def setHandler(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Boolean): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Boolean): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setKeyGenerator(
+      inline def setKeyGenerator(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
       ): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
+      inline def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double | MaxValueFn): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double | MaxValueFn): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFunction0(value: () => Double | js.Promise[Double]): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
+      inline def setMaxFunction0(value: () => Double | js.Promise[Double]): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String | Buffer | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | Buffer | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnLimitReached(
+      inline def setOnLimitReached(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], Options) => Unit
       ): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
+      inline def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
       
-      @scala.inline
-      def setSkip(
+      inline def setSkip(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
       ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
+      inline def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipFailedRequestsUndefined: Self = StObject.set(x, "skipFailedRequests", js.undefined)
+      inline def setSkipFailedRequestsUndefined: Self = StObject.set(x, "skipFailedRequests", js.undefined)
       
-      @scala.inline
-      def setSkipSuccessfulRequests(value: Boolean): Self = StObject.set(x, "skipSuccessfulRequests", value.asInstanceOf[js.Any])
+      inline def setSkipSuccessfulRequests(value: Boolean): Self = StObject.set(x, "skipSuccessfulRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipSuccessfulRequestsUndefined: Self = StObject.set(x, "skipSuccessfulRequests", js.undefined)
+      inline def setSkipSuccessfulRequestsUndefined: Self = StObject.set(x, "skipSuccessfulRequests", js.undefined)
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setWindowMs(value: Double): Self = StObject.set(x, "windowMs", value.asInstanceOf[js.Any])
+      inline def setWindowMs(value: Double): Self = StObject.set(x, "windowMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowMsUndefined: Self = StObject.set(x, "windowMs", js.undefined)
+      inline def setWindowMsUndefined: Self = StObject.set(x, "windowMs", js.undefined)
     }
   }
   
@@ -290,29 +255,22 @@ object mod {
   }
   object RateLimitInfo {
     
-    @scala.inline
-    def apply(current: Double, limit: Double, remaining: Double): RateLimitInfo = {
+    inline def apply(current: Double, limit: Double, remaining: Double): RateLimitInfo = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], remaining = remaining.asInstanceOf[js.Any])
       __obj.asInstanceOf[RateLimitInfo]
     }
     
-    @scala.inline
-    implicit class RateLimitInfoMutableBuilder[Self <: RateLimitInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RateLimitInfo](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+      inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTime(value: Date): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
+      inline def setResetTime(value: Date): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
+      inline def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
     }
   }
   
@@ -328,8 +286,7 @@ object mod {
   }
   object Store {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decrement: String => Unit,
       incr: (String, StoreIncrementCallback) => Unit,
       resetAll: () => Unit,
@@ -339,20 +296,15 @@ object mod {
       __obj.asInstanceOf[Store]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+    extension [Self <: Store](x: Self) {
       
-      @scala.inline
-      def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
+      inline def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncr(value: (String, StoreIncrementCallback) => Unit): Self = StObject.set(x, "incr", js.Any.fromFunction2(value))
+      inline def setIncr(value: (String, StoreIncrementCallback) => Unit): Self = StObject.set(x, "incr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetKey(value: String => Unit): Self = StObject.set(x, "resetKey", js.Any.fromFunction1(value))
+      inline def setResetKey(value: String => Unit): Self = StObject.set(x, "resetKey", js.Any.fromFunction1(value))
     }
   }
   
@@ -378,17 +330,14 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(rateLimit: RateLimitInfo): Request = {
+        inline def apply(rateLimit: RateLimitInfo): Request = {
           val __obj = js.Dynamic.literal(rateLimit = rateLimit.asInstanceOf[js.Any])
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setRateLimit(value: RateLimitInfo): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+          inline def setRateLimit(value: RateLimitInfo): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
         }
       }
     }

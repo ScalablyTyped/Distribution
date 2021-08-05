@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VideoSourceType extends StObject
 object VideoSourceType {
   
-  @scala.inline
-  def album: typings.jweixin.jweixinStrings.album = "album".asInstanceOf[typings.jweixin.jweixinStrings.album]
+  inline def album: typings.jweixin.jweixinStrings.album = "album".asInstanceOf[typings.jweixin.jweixinStrings.album]
   
-  @scala.inline
-  def camera: typings.jweixin.jweixinStrings.camera = "camera".asInstanceOf[typings.jweixin.jweixinStrings.camera]
+  inline def camera: typings.jweixin.jweixinStrings.camera = "camera".asInstanceOf[typings.jweixin.jweixinStrings.camera]
 }

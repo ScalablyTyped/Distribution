@@ -23,25 +23,18 @@ object AnimationFill {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTO: `5` = 5.asInstanceOf[`5`]
+    inline def AUTO: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def DEFAULT: `0` = 0.asInstanceOf[`0`]
+    inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def FREEZE: `2` = 2.asInstanceOf[`2`]
+    inline def FREEZE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def HOLD: `3` = 3.asInstanceOf[`3`]
+    inline def HOLD: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def INHERIT: `0` = 0.asInstanceOf[`0`]
+    inline def INHERIT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def REMOVE: `1` = 1.asInstanceOf[`1`]
+    inline def REMOVE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TRANSITION: `4` = 4.asInstanceOf[`4`]
+    inline def TRANSITION: `4` = 4.asInstanceOf[`4`]
   }
 }

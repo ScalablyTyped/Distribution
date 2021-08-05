@@ -314,29 +314,22 @@ object GoogleAppsScriptOAuth2 {
   }
   object TokenPayload {
     
-    @scala.inline
-    def apply(client_id: String, client_secret: String, code: String, grant_type: String, redirect_uri: String): TokenPayload = {
+    inline def apply(client_id: String, client_secret: String, code: String, grant_type: String, redirect_uri: String): TokenPayload = {
       val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], grant_type = grant_type.asInstanceOf[js.Any], redirect_uri = redirect_uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenPayload]
     }
     
-    @scala.inline
-    implicit class TokenPayloadMutableBuilder[Self <: TokenPayload] (val x: Self) extends AnyVal {
+    extension [Self <: TokenPayload](x: Self) {
       
-      @scala.inline
-      def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+      inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+      inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
+      inline def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+      inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     }
   }
 }

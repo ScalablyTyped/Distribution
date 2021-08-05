@@ -22,28 +22,21 @@ trait SchemaListReportsResponse extends StObject {
 }
 object SchemaListReportsResponse {
   
-  @scala.inline
-  def apply(): SchemaListReportsResponse = {
+  inline def apply(): SchemaListReportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListReportsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListReportsResponseMutableBuilder[Self <: SchemaListReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListReportsResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setReports(value: js.Array[SchemaReport]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+    inline def setReports(value: js.Array[SchemaReport]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
+    inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    @scala.inline
-    def setReportsVarargs(value: SchemaReport*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: SchemaReport*): Self = StObject.set(x, "reports", js.Array(value :_*))
   }
 }

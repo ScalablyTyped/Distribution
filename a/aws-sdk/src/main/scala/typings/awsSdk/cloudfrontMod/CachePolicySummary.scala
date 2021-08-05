@@ -18,19 +18,15 @@ trait CachePolicySummary extends StObject {
 }
 object CachePolicySummary {
   
-  @scala.inline
-  def apply(CachePolicy: CachePolicy, Type: CachePolicyType): CachePolicySummary = {
+  inline def apply(CachePolicy: CachePolicy, Type: CachePolicyType): CachePolicySummary = {
     val __obj = js.Dynamic.literal(CachePolicy = CachePolicy.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachePolicySummary]
   }
   
-  @scala.inline
-  implicit class CachePolicySummaryMutableBuilder[Self <: CachePolicySummary] (val x: Self) extends AnyVal {
+  extension [Self <: CachePolicySummary](x: Self) {
     
-    @scala.inline
-    def setCachePolicy(value: CachePolicy): Self = StObject.set(x, "CachePolicy", value.asInstanceOf[js.Any])
+    inline def setCachePolicy(value: CachePolicy): Self = StObject.set(x, "CachePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CachePolicyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: CachePolicyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

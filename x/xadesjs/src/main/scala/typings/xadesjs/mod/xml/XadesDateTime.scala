@@ -13,6 +13,5 @@ class XadesDateTime ()
   extends typings.xadesjs.xmlMod.XadesDateTime
 object XadesDateTime {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.XadesDateTime] = ^.asInstanceOf[js.Dynamic].selectDynamic("XadesDateTime").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.XadesDateTime]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.XadesDateTime] = ^.asInstanceOf[js.Dynamic].selectDynamic("XadesDateTime").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.XadesDateTime]]
 }

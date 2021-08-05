@@ -11,16 +11,13 @@ trait RoughnessMap extends StObject {
 }
 object RoughnessMap {
   
-  @scala.inline
-  def apply(roughnessMap: IUniform): RoughnessMap = {
+  inline def apply(roughnessMap: IUniform): RoughnessMap = {
     val __obj = js.Dynamic.literal(roughnessMap = roughnessMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoughnessMap]
   }
   
-  @scala.inline
-  implicit class RoughnessMapMutableBuilder[Self <: RoughnessMap] (val x: Self) extends AnyVal {
+  extension [Self <: RoughnessMap](x: Self) {
     
-    @scala.inline
-    def setRoughnessMap(value: IUniform): Self = StObject.set(x, "roughnessMap", value.asInstanceOf[js.Any])
+    inline def setRoughnessMap(value: IUniform): Self = StObject.set(x, "roughnessMap", value.asInstanceOf[js.Any])
   }
 }

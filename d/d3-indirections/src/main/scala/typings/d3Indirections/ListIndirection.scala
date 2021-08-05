@@ -17,16 +17,13 @@ trait ListIndirection
 }
 object ListIndirection {
   
-  @scala.inline
-  def apply(listIndirection: ResourceIndex, name: String, resourceType: ResourceType, uid: String): ListIndirection = {
+  inline def apply(listIndirection: ResourceIndex, name: String, resourceType: ResourceType, uid: String): ListIndirection = {
     val __obj = js.Dynamic.literal(listIndirection = listIndirection.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIndirection]
   }
   
-  @scala.inline
-  implicit class ListIndirectionMutableBuilder[Self <: ListIndirection] (val x: Self) extends AnyVal {
+  extension [Self <: ListIndirection](x: Self) {
     
-    @scala.inline
-    def setListIndirection(value: ResourceIndex): Self = StObject.set(x, "listIndirection", value.asInstanceOf[js.Any])
+    inline def setListIndirection(value: ResourceIndex): Self = StObject.set(x, "listIndirection", value.asInstanceOf[js.Any])
   }
 }

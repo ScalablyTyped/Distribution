@@ -118,17 +118,14 @@ object mod {
     }
     object IScrollDatasource {
       
-      @scala.inline
-      def apply[T](get: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): IScrollDatasource[T] = {
+      inline def apply[T](get: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): IScrollDatasource[T] = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
         __obj.asInstanceOf[IScrollDatasource[T]]
       }
       
-      @scala.inline
-      implicit class IScrollDatasourceMutableBuilder[Self <: IScrollDatasource[?], T] (val x: Self & IScrollDatasource[T]) extends AnyVal {
+      extension [Self <: IScrollDatasource[?], T](x: Self & IScrollDatasource[T]) {
         
-        @scala.inline
-        def setGet(value: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+        inline def setGet(value: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       }
     }
   }

@@ -27,8 +27,7 @@ trait UIElement
      with XComponent
 object UIElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     RealInterface: XInterface,
     ResourceURL: String,

@@ -24,25 +24,19 @@ trait GoogleApiYouTubeVideoGetRatingResponse extends StObject {
 }
 object GoogleApiYouTubeVideoGetRatingResponse {
   
-  @scala.inline
-  def apply(etag: String, items: js.Array[Rating], kind: String): GoogleApiYouTubeVideoGetRatingResponse = {
+  inline def apply(etag: String, items: js.Array[Rating], kind: String): GoogleApiYouTubeVideoGetRatingResponse = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiYouTubeVideoGetRatingResponse]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubeVideoGetRatingResponseMutableBuilder[Self <: GoogleApiYouTubeVideoGetRatingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubeVideoGetRatingResponse](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Rating]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Rating]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Rating*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Rating*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

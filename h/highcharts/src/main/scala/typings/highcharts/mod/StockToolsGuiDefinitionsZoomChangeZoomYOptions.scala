@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsZoomChangeZoomYOptions extends StObject {
 }
 object StockToolsGuiDefinitionsZoomChangeZoomYOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsZoomChangeZoomYOptions = {
+  inline def apply(): StockToolsGuiDefinitionsZoomChangeZoomYOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsZoomChangeZoomYOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsZoomChangeZoomYOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsZoomChangeZoomYOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsZoomChangeZoomYOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

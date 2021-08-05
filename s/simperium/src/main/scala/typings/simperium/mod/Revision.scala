@@ -14,22 +14,17 @@ trait Revision[T] extends StObject {
 }
 object Revision {
   
-  @scala.inline
-  def apply[T](data: T, id: EntityId, version: Double): Revision[T] = {
+  inline def apply[T](data: T, id: EntityId, version: Double): Revision[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Revision[T]]
   }
   
-  @scala.inline
-  implicit class RevisionMutableBuilder[Self <: Revision[?], T] (val x: Self & Revision[T]) extends AnyVal {
+  extension [Self <: Revision[?], T](x: Self & Revision[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: EntityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: EntityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait PutResourcePolicyRequest extends StObject {
 }
 object PutResourcePolicyRequest {
   
-  @scala.inline
-  def apply(Policy: string): PutResourcePolicyRequest = {
+  inline def apply(Policy: string): PutResourcePolicyRequest = {
     val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResourcePolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutResourcePolicyRequestMutableBuilder[Self <: PutResourcePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutResourcePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: string): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: string): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
+    inline def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
   }
 }

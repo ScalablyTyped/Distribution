@@ -94,61 +94,43 @@ trait ParamsResourceLivebroadcastsControl
 }
 object ParamsResourceLivebroadcastsControl {
   
-  @scala.inline
-  def apply(): ParamsResourceLivebroadcastsControl = {
+  inline def apply(): ParamsResourceLivebroadcastsControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceLivebroadcastsControl]
   }
   
-  @scala.inline
-  implicit class ParamsResourceLivebroadcastsControlMutableBuilder[Self <: ParamsResourceLivebroadcastsControl] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceLivebroadcastsControl](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDisplaySlate(value: Boolean): Self = StObject.set(x, "displaySlate", value.asInstanceOf[js.Any])
+    inline def setDisplaySlate(value: Boolean): Self = StObject.set(x, "displaySlate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaySlateUndefined: Self = StObject.set(x, "displaySlate", js.undefined)
+    inline def setDisplaySlateUndefined: Self = StObject.set(x, "displaySlate", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOffsetTimeMs(value: String): Self = StObject.set(x, "offsetTimeMs", value.asInstanceOf[js.Any])
+    inline def setOffsetTimeMs(value: String): Self = StObject.set(x, "offsetTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetTimeMsUndefined: Self = StObject.set(x, "offsetTimeMs", js.undefined)
+    inline def setOffsetTimeMsUndefined: Self = StObject.set(x, "offsetTimeMs", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerChannel(value: String): Self = StObject.set(x, "onBehalfOfContentOwnerChannel", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwnerChannel(value: String): Self = StObject.set(x, "onBehalfOfContentOwnerChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerChannelUndefined: Self = StObject.set(x, "onBehalfOfContentOwnerChannel", js.undefined)
+    inline def setOnBehalfOfContentOwnerChannelUndefined: Self = StObject.set(x, "onBehalfOfContentOwnerChannel", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
-    @scala.inline
-    def setWalltime(value: String): Self = StObject.set(x, "walltime", value.asInstanceOf[js.Any])
+    inline def setWalltime(value: String): Self = StObject.set(x, "walltime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalltimeUndefined: Self = StObject.set(x, "walltime", js.undefined)
+    inline def setWalltimeUndefined: Self = StObject.set(x, "walltime", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ trait IDirect
      with IObservable
 object IDirect {
   
-  @scala.inline
-  def apply(): IDirect = {
+  inline def apply(): IDirect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDirect]
   }

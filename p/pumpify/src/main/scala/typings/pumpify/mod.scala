@@ -19,8 +19,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ctor(opts: PumpifyFactoryOptions): Instantiable1[/* streams (repeated) */ Stream, Pumpify] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* streams (repeated) */ Stream, Pumpify]]
+  inline def ctor(opts: PumpifyFactoryOptions): Instantiable1[/* streams (repeated) */ Stream, Pumpify] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* streams (repeated) */ Stream, Pumpify]]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pumpify", "obj")
@@ -31,8 +30,7 @@ object mod {
   @JSImport("pumpify", "obj")
   @js.native
   def obj: Instantiable1[/* streams (repeated) */ Stream, Pumpify] = js.native
-  @scala.inline
-  def obj_=(x: Instantiable1[/* streams (repeated) */ Stream, Pumpify]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("obj")(x.asInstanceOf[js.Any])
+  inline def obj_=(x: Instantiable1[/* streams (repeated) */ Stream, Pumpify]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("obj")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Pumpify extends Duplexify {
@@ -53,26 +51,20 @@ object mod {
   }
   object PumpifyFactoryOptions {
     
-    @scala.inline
-    def apply(autoDestroy: Boolean, destroy: Boolean, highWaterMark: Double, objectMode: Boolean): PumpifyFactoryOptions = {
+    inline def apply(autoDestroy: Boolean, destroy: Boolean, highWaterMark: Double, objectMode: Boolean): PumpifyFactoryOptions = {
       val __obj = js.Dynamic.literal(autoDestroy = autoDestroy.asInstanceOf[js.Any], destroy = destroy.asInstanceOf[js.Any], highWaterMark = highWaterMark.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[PumpifyFactoryOptions]
     }
     
-    @scala.inline
-    implicit class PumpifyFactoryOptionsMutableBuilder[Self <: PumpifyFactoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PumpifyFactoryOptions](x: Self) {
       
-      @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+      inline def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     }
   }
 }

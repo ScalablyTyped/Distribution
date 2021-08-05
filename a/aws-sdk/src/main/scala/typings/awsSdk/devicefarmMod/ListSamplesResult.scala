@@ -18,28 +18,21 @@ trait ListSamplesResult extends StObject {
 }
 object ListSamplesResult {
   
-  @scala.inline
-  def apply(): ListSamplesResult = {
+  inline def apply(): ListSamplesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSamplesResult]
   }
   
-  @scala.inline
-  implicit class ListSamplesResultMutableBuilder[Self <: ListSamplesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListSamplesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSamples(value: Samples): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+    inline def setSamples(value: Samples): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
+    inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
-    @scala.inline
-    def setSamplesVarargs(value: Sample*): Self = StObject.set(x, "samples", js.Array(value :_*))
+    inline def setSamplesVarargs(value: Sample*): Self = StObject.set(x, "samples", js.Array(value :_*))
   }
 }

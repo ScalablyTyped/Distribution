@@ -13,19 +13,15 @@ trait BatchGetBuildsInput extends StObject {
 }
 object BatchGetBuildsInput {
   
-  @scala.inline
-  def apply(ids: BuildIds): BatchGetBuildsInput = {
+  inline def apply(ids: BuildIds): BatchGetBuildsInput = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetBuildsInput]
   }
   
-  @scala.inline
-  implicit class BatchGetBuildsInputMutableBuilder[Self <: BatchGetBuildsInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetBuildsInput](x: Self) {
     
-    @scala.inline
-    def setIds(value: BuildIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: BuildIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

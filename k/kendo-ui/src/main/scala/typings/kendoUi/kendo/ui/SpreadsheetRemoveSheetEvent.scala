@@ -13,19 +13,15 @@ trait SpreadsheetRemoveSheetEvent
 }
 object SpreadsheetRemoveSheetEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetRemoveSheetEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetRemoveSheetEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetRemoveSheetEvent]
   }
   
-  @scala.inline
-  implicit class SpreadsheetRemoveSheetEventMutableBuilder[Self <: SpreadsheetRemoveSheetEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetRemoveSheetEvent](x: Self) {
     
-    @scala.inline
-    def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
+    inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
   }
 }

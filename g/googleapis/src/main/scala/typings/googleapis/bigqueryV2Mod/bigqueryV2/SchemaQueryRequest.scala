@@ -96,88 +96,61 @@ trait SchemaQueryRequest extends StObject {
 }
 object SchemaQueryRequest {
   
-  @scala.inline
-  def apply(): SchemaQueryRequest = {
+  inline def apply(): SchemaQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryRequest]
   }
   
-  @scala.inline
-  implicit class SchemaQueryRequestMutableBuilder[Self <: SchemaQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultDataset(value: SchemaDatasetReference): Self = StObject.set(x, "defaultDataset", value.asInstanceOf[js.Any])
+    inline def setDefaultDataset(value: SchemaDatasetReference): Self = StObject.set(x, "defaultDataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDatasetUndefined: Self = StObject.set(x, "defaultDataset", js.undefined)
+    inline def setDefaultDatasetUndefined: Self = StObject.set(x, "defaultDataset", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setParameterMode(value: String): Self = StObject.set(x, "parameterMode", value.asInstanceOf[js.Any])
+    inline def setParameterMode(value: String): Self = StObject.set(x, "parameterMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterModeUndefined: Self = StObject.set(x, "parameterMode", js.undefined)
+    inline def setParameterModeUndefined: Self = StObject.set(x, "parameterMode", js.undefined)
     
-    @scala.inline
-    def setPreserveNulls(value: Boolean): Self = StObject.set(x, "preserveNulls", value.asInstanceOf[js.Any])
+    inline def setPreserveNulls(value: Boolean): Self = StObject.set(x, "preserveNulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveNullsUndefined: Self = StObject.set(x, "preserveNulls", js.undefined)
+    inline def setPreserveNullsUndefined: Self = StObject.set(x, "preserveNulls", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParameters(value: js.Array[SchemaQueryParameter]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: js.Array[SchemaQueryParameter]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+    inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
-    @scala.inline
-    def setQueryParametersVarargs(value: SchemaQueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value :_*))
+    inline def setQueryParametersVarargs(value: SchemaQueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
+    inline def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutMsUndefined: Self = StObject.set(x, "timeoutMs", js.undefined)
+    inline def setTimeoutMsUndefined: Self = StObject.set(x, "timeoutMs", js.undefined)
     
-    @scala.inline
-    def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
+    inline def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
+    inline def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
     
-    @scala.inline
-    def setUseQueryCache(value: Boolean): Self = StObject.set(x, "useQueryCache", value.asInstanceOf[js.Any])
+    inline def setUseQueryCache(value: Boolean): Self = StObject.set(x, "useQueryCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseQueryCacheUndefined: Self = StObject.set(x, "useQueryCache", js.undefined)
+    inline def setUseQueryCacheUndefined: Self = StObject.set(x, "useQueryCache", js.undefined)
   }
 }

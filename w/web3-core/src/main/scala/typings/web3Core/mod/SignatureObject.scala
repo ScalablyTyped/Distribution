@@ -16,25 +16,19 @@ trait SignatureObject extends StObject {
 }
 object SignatureObject {
   
-  @scala.inline
-  def apply(messageHash: String, r: String, s: String, v: String): SignatureObject = {
+  inline def apply(messageHash: String, r: String, s: String, v: String): SignatureObject = {
     val __obj = js.Dynamic.literal(messageHash = messageHash.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureObject]
   }
   
-  @scala.inline
-  implicit class SignatureObjectMutableBuilder[Self <: SignatureObject] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureObject](x: Self) {
     
-    @scala.inline
-    def setMessageHash(value: String): Self = StObject.set(x, "messageHash", value.asInstanceOf[js.Any])
+    inline def setMessageHash(value: String): Self = StObject.set(x, "messageHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

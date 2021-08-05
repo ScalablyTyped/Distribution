@@ -44,37 +44,27 @@ trait ShapeFillLoadOptions extends StObject {
 }
 object ShapeFillLoadOptions {
   
-  @scala.inline
-  def apply(): ShapeFillLoadOptions = {
+  inline def apply(): ShapeFillLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeFillLoadOptions]
   }
   
-  @scala.inline
-  implicit class ShapeFillLoadOptionsMutableBuilder[Self <: ShapeFillLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeFillLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setForegroundColor(value: Boolean): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: Boolean): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+    inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
-    @scala.inline
-    def setTransparency(value: Boolean): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Boolean): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+    inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -58,26 +58,20 @@ object mod {
   }
   object HttpsOptions {
     
-    @scala.inline
-    def apply(): HttpsOptions = {
+    inline def apply(): HttpsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpsOptions]
     }
     
-    @scala.inline
-    implicit class HttpsOptionsMutableBuilder[Self <: HttpsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpsOptions](x: Self) {
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -132,8 +126,7 @@ object mod {
   }
   object ParcelBundle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assets: Set[js.Any],
       childBundles: Set[js.Any],
       entryAsset: js.Any,
@@ -148,38 +141,27 @@ object mod {
       __obj.asInstanceOf[ParcelBundle]
     }
     
-    @scala.inline
-    implicit class ParcelBundleMutableBuilder[Self <: ParcelBundle] (val x: Self) extends AnyVal {
+    extension [Self <: ParcelBundle](x: Self) {
       
-      @scala.inline
-      def setAssets(value: Set[js.Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: Set[js.Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildBundles(value: Set[js.Any]): Self = StObject.set(x, "childBundles", value.asInstanceOf[js.Any])
+      inline def setChildBundles(value: Set[js.Any]): Self = StObject.set(x, "childBundles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryAsset(value: js.Any): Self = StObject.set(x, "entryAsset", value.asInstanceOf[js.Any])
+      inline def setEntryAsset(value: js.Any): Self = StObject.set(x, "entryAsset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsets(value: Map[ParcelAsset, Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+      inline def setOffsets(value: Map[ParcelAsset, Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentBundle(value: js.Any): Self = StObject.set(x, "parentBundle", value.asInstanceOf[js.Any])
+      inline def setParentBundle(value: js.Any): Self = StObject.set(x, "parentBundle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentBundleUndefined: Self = StObject.set(x, "parentBundle", js.undefined)
+      inline def setParentBundleUndefined: Self = StObject.set(x, "parentBundle", js.undefined)
       
-      @scala.inline
-      def setSiblingBundles(value: Set[js.Any]): Self = StObject.set(x, "siblingBundles", value.asInstanceOf[js.Any])
+      inline def setSiblingBundles(value: Set[js.Any]): Self = StObject.set(x, "siblingBundles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiblingBundlesMap(value: Map[String, ParcelBundle]): Self = StObject.set(x, "siblingBundlesMap", value.asInstanceOf[js.Any])
+      inline def setSiblingBundlesMap(value: Map[String, ParcelBundle]): Self = StObject.set(x, "siblingBundlesMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -384,128 +366,88 @@ object mod {
   }
   object ParcelOptions {
     
-    @scala.inline
-    def apply(): ParcelOptions = {
+    inline def apply(): ParcelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParcelOptions]
     }
     
-    @scala.inline
-    implicit class ParcelOptionsMutableBuilder[Self <: ParcelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParcelOptions](x: Self) {
       
-      @scala.inline
-      def setBundleNodeModules(value: `true` | `false`): Self = StObject.set(x, "bundleNodeModules", value.asInstanceOf[js.Any])
+      inline def setBundleNodeModules(value: `true` | `false`): Self = StObject.set(x, "bundleNodeModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleNodeModulesUndefined: Self = StObject.set(x, "bundleNodeModules", js.undefined)
+      inline def setBundleNodeModulesUndefined: Self = StObject.set(x, "bundleNodeModules", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheDir(value: String): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
+      inline def setCacheDir(value: String): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheDirUndefined: Self = StObject.set(x, "cacheDir", js.undefined)
+      inline def setCacheDirUndefined: Self = StObject.set(x, "cacheDir", js.undefined)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setContentHash(value: Boolean): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
+      inline def setContentHash(value: Boolean): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
+      inline def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
       
-      @scala.inline
-      def setDetailedReport(value: Boolean): Self = StObject.set(x, "detailedReport", value.asInstanceOf[js.Any])
+      inline def setDetailedReport(value: Boolean): Self = StObject.set(x, "detailedReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailedReportUndefined: Self = StObject.set(x, "detailedReport", js.undefined)
+      inline def setDetailedReportUndefined: Self = StObject.set(x, "detailedReport", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: String): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: String): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setHmr(value: `true` | `false`): Self = StObject.set(x, "hmr", value.asInstanceOf[js.Any])
+      inline def setHmr(value: `true` | `false`): Self = StObject.set(x, "hmr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHmrHostname(value: String): Self = StObject.set(x, "hmrHostname", value.asInstanceOf[js.Any])
+      inline def setHmrHostname(value: String): Self = StObject.set(x, "hmrHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHmrHostnameUndefined: Self = StObject.set(x, "hmrHostname", js.undefined)
+      inline def setHmrHostnameUndefined: Self = StObject.set(x, "hmrHostname", js.undefined)
       
-      @scala.inline
-      def setHmrPort(value: `0` | Double): Self = StObject.set(x, "hmrPort", value.asInstanceOf[js.Any])
+      inline def setHmrPort(value: `0` | Double): Self = StObject.set(x, "hmrPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHmrPortUndefined: Self = StObject.set(x, "hmrPort", js.undefined)
+      inline def setHmrPortUndefined: Self = StObject.set(x, "hmrPort", js.undefined)
       
-      @scala.inline
-      def setHmrUndefined: Self = StObject.set(x, "hmr", js.undefined)
+      inline def setHmrUndefined: Self = StObject.set(x, "hmr", js.undefined)
       
-      @scala.inline
-      def setHttps(value: `true` | `false` | HttpsOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: `true` | `false` | HttpsOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: `3` | `2` | `1`): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: `3` | `2` | `1`): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
+      inline def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutDirUndefined: Self = StObject.set(x, "outDir", js.undefined)
+      inline def setOutDirUndefined: Self = StObject.set(x, "outDir", js.undefined)
       
-      @scala.inline
-      def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
+      inline def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
+      inline def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
       
-      @scala.inline
-      def setPublicUrl(value: String): Self = StObject.set(x, "publicUrl", value.asInstanceOf[js.Any])
+      inline def setPublicUrl(value: String): Self = StObject.set(x, "publicUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUrlUndefined: Self = StObject.set(x, "publicUrl", js.undefined)
+      inline def setPublicUrlUndefined: Self = StObject.set(x, "publicUrl", js.undefined)
       
-      @scala.inline
-      def setScopeHoist(value: Boolean): Self = StObject.set(x, "scopeHoist", value.asInstanceOf[js.Any])
+      inline def setScopeHoist(value: Boolean): Self = StObject.set(x, "scopeHoist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeHoistUndefined: Self = StObject.set(x, "scopeHoist", js.undefined)
+      inline def setScopeHoistUndefined: Self = StObject.set(x, "scopeHoist", js.undefined)
       
-      @scala.inline
-      def setSourceMaps(value: Boolean): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
+      inline def setSourceMaps(value: Boolean): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapsUndefined: Self = StObject.set(x, "sourceMaps", js.undefined)
+      inline def setSourceMapsUndefined: Self = StObject.set(x, "sourceMaps", js.undefined)
       
-      @scala.inline
-      def setTarget(value: browser | node | electron): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: browser | node | electron): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
 }

@@ -36,47 +36,34 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(dkLen: Double, p: Double, r: Double): Options = {
+    inline def apply(dkLen: Double, p: Double, r: Double): Options = {
       val __obj = js.Dynamic.literal(dkLen = dkLen.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDkLen(value: Double): Self = StObject.set(x, "dkLen", value.asInstanceOf[js.Any])
+      inline def setDkLen(value: Double): Self = StObject.set(x, "dkLen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setInterruptStep(value: Double): Self = StObject.set(x, "interruptStep", value.asInstanceOf[js.Any])
+      inline def setInterruptStep(value: Double): Self = StObject.set(x, "interruptStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterruptStepUndefined: Self = StObject.set(x, "interruptStep", js.undefined)
+      inline def setInterruptStepUndefined: Self = StObject.set(x, "interruptStep", js.undefined)
       
-      @scala.inline
-      def setLogN(value: Double): Self = StObject.set(x, "logN", value.asInstanceOf[js.Any])
+      inline def setLogN(value: Double): Self = StObject.set(x, "logN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogNUndefined: Self = StObject.set(x, "logN", js.undefined)
+      inline def setLogNUndefined: Self = StObject.set(x, "logN", js.undefined)
       
-      @scala.inline
-      def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+      inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
       
-      @scala.inline
-      def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   

@@ -18,43 +18,31 @@ trait ChatId extends StObject {
 }
 object ChatId {
   
-  @scala.inline
-  def apply(): ChatId = {
+  inline def apply(): ChatId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatId]
   }
   
-  @scala.inline
-  implicit class ChatIdMutableBuilder[Self <: ChatId] (val x: Self) extends AnyVal {
+  extension [Self <: ChatId](x: Self) {
     
-    @scala.inline
-    def setChatId(value: Double): Self = StObject.set(x, "chatId", value.asInstanceOf[js.Any])
+    inline def setChatId(value: Double): Self = StObject.set(x, "chatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChatIdUndefined: Self = StObject.set(x, "chatId", js.undefined)
+    inline def setChatIdUndefined: Self = StObject.set(x, "chatId", js.undefined)
     
-    @scala.inline
-    def setDisableEditMessage(value: Boolean): Self = StObject.set(x, "disableEditMessage", value.asInstanceOf[js.Any])
+    inline def setDisableEditMessage(value: Boolean): Self = StObject.set(x, "disableEditMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableEditMessageUndefined: Self = StObject.set(x, "disableEditMessage", js.undefined)
+    inline def setDisableEditMessageUndefined: Self = StObject.set(x, "disableEditMessage", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setInlineMessageId(value: String): Self = StObject.set(x, "inlineMessageId", value.asInstanceOf[js.Any])
+    inline def setInlineMessageId(value: String): Self = StObject.set(x, "inlineMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineMessageIdUndefined: Self = StObject.set(x, "inlineMessageId", js.undefined)
+    inline def setInlineMessageIdUndefined: Self = StObject.set(x, "inlineMessageId", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
   }
 }

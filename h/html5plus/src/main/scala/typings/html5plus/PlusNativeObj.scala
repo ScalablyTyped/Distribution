@@ -164,127 +164,87 @@ trait PlusNativeObj extends StObject {
 }
 object PlusNativeObj {
   
-  @scala.inline
-  def apply(): PlusNativeObj = {
+  inline def apply(): PlusNativeObj = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObj]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjMutableBuilder[Self <: PlusNativeObj] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObj](x: Self) {
     
-    @scala.inline
-    def setAnimationOptions(value: PlusNativeObjAnimationOptions): Self = StObject.set(x, "AnimationOptions", value.asInstanceOf[js.Any])
+    inline def setAnimationOptions(value: PlusNativeObjAnimationOptions): Self = StObject.set(x, "AnimationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOptionsUndefined: Self = StObject.set(x, "AnimationOptions", js.undefined)
+    inline def setAnimationOptionsUndefined: Self = StObject.set(x, "AnimationOptions", js.undefined)
     
-    @scala.inline
-    def setAnimationViewStyles(value: PlusNativeObjAnimationViewStyles): Self = StObject.set(x, "AnimationViewStyles", value.asInstanceOf[js.Any])
+    inline def setAnimationViewStyles(value: PlusNativeObjAnimationViewStyles): Self = StObject.set(x, "AnimationViewStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationViewStylesUndefined: Self = StObject.set(x, "AnimationViewStyles", js.undefined)
+    inline def setAnimationViewStylesUndefined: Self = StObject.set(x, "AnimationViewStyles", js.undefined)
     
-    @scala.inline
-    def setBitmap(value: PlusNativeObjBitmap): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
+    inline def setBitmap(value: PlusNativeObjBitmap): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmapSaveOptions(value: PlusNativeObjBitmapSaveOptions): Self = StObject.set(x, "BitmapSaveOptions", value.asInstanceOf[js.Any])
+    inline def setBitmapSaveOptions(value: PlusNativeObjBitmapSaveOptions): Self = StObject.set(x, "BitmapSaveOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmapSaveOptionsUndefined: Self = StObject.set(x, "BitmapSaveOptions", js.undefined)
+    inline def setBitmapSaveOptionsUndefined: Self = StObject.set(x, "BitmapSaveOptions", js.undefined)
     
-    @scala.inline
-    def setBitmapUndefined: Self = StObject.set(x, "Bitmap", js.undefined)
+    inline def setBitmapUndefined: Self = StObject.set(x, "Bitmap", js.undefined)
     
-    @scala.inline
-    def setImageSlider(value: PlusNativeObjImageSlider): Self = StObject.set(x, "ImageSlider", value.asInstanceOf[js.Any])
+    inline def setImageSlider(value: PlusNativeObjImageSlider): Self = StObject.set(x, "ImageSlider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSliderImageStyles(value: PlusNativeObjImageSliderImageStyles): Self = StObject.set(x, "ImageSliderImageStyles", value.asInstanceOf[js.Any])
+    inline def setImageSliderImageStyles(value: PlusNativeObjImageSliderImageStyles): Self = StObject.set(x, "ImageSliderImageStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSliderImageStylesUndefined: Self = StObject.set(x, "ImageSliderImageStyles", js.undefined)
+    inline def setImageSliderImageStylesUndefined: Self = StObject.set(x, "ImageSliderImageStyles", js.undefined)
     
-    @scala.inline
-    def setImageSliderStyles(value: PlusNativeObjImageSliderStyles): Self = StObject.set(x, "ImageSliderStyles", value.asInstanceOf[js.Any])
+    inline def setImageSliderStyles(value: PlusNativeObjImageSliderStyles): Self = StObject.set(x, "ImageSliderStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSliderStylesUndefined: Self = StObject.set(x, "ImageSliderStyles", js.undefined)
+    inline def setImageSliderStylesUndefined: Self = StObject.set(x, "ImageSliderStyles", js.undefined)
     
-    @scala.inline
-    def setImageSliderUndefined: Self = StObject.set(x, "ImageSlider", js.undefined)
+    inline def setImageSliderUndefined: Self = StObject.set(x, "ImageSlider", js.undefined)
     
-    @scala.inline
-    def setInputStyles(value: PlusNativeObjInputStyles): Self = StObject.set(x, "InputStyles", value.asInstanceOf[js.Any])
+    inline def setInputStyles(value: PlusNativeObjInputStyles): Self = StObject.set(x, "InputStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStylesUndefined: Self = StObject.set(x, "InputStyles", js.undefined)
+    inline def setInputStylesUndefined: Self = StObject.set(x, "InputStyles", js.undefined)
     
-    @scala.inline
-    def setPosition(value: PlusNativeObjPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PlusNativeObjPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
     
-    @scala.inline
-    def setRect(value: PlusNativeObjRect): Self = StObject.set(x, "Rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: PlusNativeObjRect): Self = StObject.set(x, "Rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectStyles(value: PlusNativeObjRectStyles): Self = StObject.set(x, "RectStyles", value.asInstanceOf[js.Any])
+    inline def setRectStyles(value: PlusNativeObjRectStyles): Self = StObject.set(x, "RectStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectStylesUndefined: Self = StObject.set(x, "RectStyles", js.undefined)
+    inline def setRectStylesUndefined: Self = StObject.set(x, "RectStyles", js.undefined)
     
-    @scala.inline
-    def setRectUndefined: Self = StObject.set(x, "Rect", js.undefined)
+    inline def setRectUndefined: Self = StObject.set(x, "Rect", js.undefined)
     
-    @scala.inline
-    def setRichTextStyles(value: PlusNativeObjRichTextStyles): Self = StObject.set(x, "RichTextStyles", value.asInstanceOf[js.Any])
+    inline def setRichTextStyles(value: PlusNativeObjRichTextStyles): Self = StObject.set(x, "RichTextStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRichTextStylesUndefined: Self = StObject.set(x, "RichTextStyles", js.undefined)
+    inline def setRichTextStylesUndefined: Self = StObject.set(x, "RichTextStyles", js.undefined)
     
-    @scala.inline
-    def setTextStyles(value: PlusNativeObjTextStyles): Self = StObject.set(x, "TextStyles", value.asInstanceOf[js.Any])
+    inline def setTextStyles(value: PlusNativeObjTextStyles): Self = StObject.set(x, "TextStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStylesUndefined: Self = StObject.set(x, "TextStyles", js.undefined)
+    inline def setTextStylesUndefined: Self = StObject.set(x, "TextStyles", js.undefined)
     
-    @scala.inline
-    def setView(value: PlusNativeObjView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: PlusNativeObjView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewAnimationOptions(value: PlusNativeObjViewAnimationOptions): Self = StObject.set(x, "ViewAnimationOptions", value.asInstanceOf[js.Any])
+    inline def setViewAnimationOptions(value: PlusNativeObjViewAnimationOptions): Self = StObject.set(x, "ViewAnimationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewAnimationOptionsUndefined: Self = StObject.set(x, "ViewAnimationOptions", js.undefined)
+    inline def setViewAnimationOptionsUndefined: Self = StObject.set(x, "ViewAnimationOptions", js.undefined)
     
-    @scala.inline
-    def setViewDrawTagStyles(value: PlusNativeObjViewDrawTagStyles): Self = StObject.set(x, "ViewDrawTagStyles", value.asInstanceOf[js.Any])
+    inline def setViewDrawTagStyles(value: PlusNativeObjViewDrawTagStyles): Self = StObject.set(x, "ViewDrawTagStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewDrawTagStylesUndefined: Self = StObject.set(x, "ViewDrawTagStyles", js.undefined)
+    inline def setViewDrawTagStylesUndefined: Self = StObject.set(x, "ViewDrawTagStyles", js.undefined)
     
-    @scala.inline
-    def setViewEvents(value: PlusNativeObjViewEvents): Self = StObject.set(x, "ViewEvents", value.asInstanceOf[js.Any])
+    inline def setViewEvents(value: PlusNativeObjViewEvents): Self = StObject.set(x, "ViewEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewEventsUndefined: Self = StObject.set(x, "ViewEvents", js.undefined)
+    inline def setViewEventsUndefined: Self = StObject.set(x, "ViewEvents", js.undefined)
     
-    @scala.inline
-    def setViewStatusbarStyles(value: PlusNativeObjViewStatusbarStyles): Self = StObject.set(x, "ViewStatusbarStyles", value.asInstanceOf[js.Any])
+    inline def setViewStatusbarStyles(value: PlusNativeObjViewStatusbarStyles): Self = StObject.set(x, "ViewStatusbarStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewStatusbarStylesUndefined: Self = StObject.set(x, "ViewStatusbarStyles", js.undefined)
+    inline def setViewStatusbarStylesUndefined: Self = StObject.set(x, "ViewStatusbarStyles", js.undefined)
     
-    @scala.inline
-    def setViewStyles(value: PlusNativeObjViewStyles): Self = StObject.set(x, "ViewStyles", value.asInstanceOf[js.Any])
+    inline def setViewStyles(value: PlusNativeObjViewStyles): Self = StObject.set(x, "ViewStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewStylesUndefined: Self = StObject.set(x, "ViewStyles", js.undefined)
+    inline def setViewStylesUndefined: Self = StObject.set(x, "ViewStyles", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
   }
 }

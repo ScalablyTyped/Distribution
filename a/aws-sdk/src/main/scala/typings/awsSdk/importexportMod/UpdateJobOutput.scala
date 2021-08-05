@@ -14,34 +14,25 @@ trait UpdateJobOutput extends StObject {
 }
 object UpdateJobOutput {
   
-  @scala.inline
-  def apply(): UpdateJobOutput = {
+  inline def apply(): UpdateJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateJobOutput]
   }
   
-  @scala.inline
-  implicit class UpdateJobOutputMutableBuilder[Self <: UpdateJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobOutput](x: Self) {
     
-    @scala.inline
-    def setArtifactList(value: ArtifactList): Self = StObject.set(x, "ArtifactList", value.asInstanceOf[js.Any])
+    inline def setArtifactList(value: ArtifactList): Self = StObject.set(x, "ArtifactList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
+    inline def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
     
-    @scala.inline
-    def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
+    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
     
-    @scala.inline
-    def setWarningMessage(value: WarningMessage): Self = StObject.set(x, "WarningMessage", value.asInstanceOf[js.Any])
+    inline def setWarningMessage(value: WarningMessage): Self = StObject.set(x, "WarningMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningMessageUndefined: Self = StObject.set(x, "WarningMessage", js.undefined)
+    inline def setWarningMessageUndefined: Self = StObject.set(x, "WarningMessage", js.undefined)
   }
 }

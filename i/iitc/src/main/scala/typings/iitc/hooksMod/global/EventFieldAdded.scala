@@ -11,16 +11,13 @@ trait EventFieldAdded extends StObject {
 }
 object EventFieldAdded {
   
-  @scala.inline
-  def apply(field: Field): EventFieldAdded = {
+  inline def apply(field: Field): EventFieldAdded = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventFieldAdded]
   }
   
-  @scala.inline
-  implicit class EventFieldAddedMutableBuilder[Self <: EventFieldAdded] (val x: Self) extends AnyVal {
+  extension [Self <: EventFieldAdded](x: Self) {
     
-    @scala.inline
-    def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

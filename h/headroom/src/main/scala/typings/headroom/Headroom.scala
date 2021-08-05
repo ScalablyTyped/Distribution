@@ -26,8 +26,7 @@ trait Headroom extends StObject {
 }
 object Headroom {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     freeze: () => Unit,
     init: () => Unit,
@@ -39,25 +38,18 @@ object Headroom {
     __obj.asInstanceOf[Headroom]
   }
   
-  @scala.inline
-  implicit class HeadroomMutableBuilder[Self <: Headroom] (val x: Self) extends AnyVal {
+  extension [Self <: Headroom](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFreeze(value: () => Unit): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
+    inline def setFreeze(value: () => Unit): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPin(value: () => Unit): Self = StObject.set(x, "pin", js.Any.fromFunction0(value))
+    inline def setPin(value: () => Unit): Self = StObject.set(x, "pin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnfreeze(value: () => Unit): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
+    inline def setUnfreeze(value: () => Unit): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnpin(value: () => Unit): Self = StObject.set(x, "unpin", js.Any.fromFunction0(value))
+    inline def setUnpin(value: () => Unit): Self = StObject.set(x, "unpin", js.Any.fromFunction0(value))
   }
 }

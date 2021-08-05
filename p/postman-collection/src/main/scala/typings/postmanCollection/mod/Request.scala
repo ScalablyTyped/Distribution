@@ -69,6 +69,5 @@ object Request {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isRequest(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequest")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRequest(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequest")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -29,31 +29,23 @@ trait ParamsResourceProjectsIndexesGet
 }
 object ParamsResourceProjectsIndexesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsIndexesGet = {
+  inline def apply(): ParamsResourceProjectsIndexesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsIndexesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsIndexesGetMutableBuilder[Self <: ParamsResourceProjectsIndexesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsIndexesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
+    inline def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

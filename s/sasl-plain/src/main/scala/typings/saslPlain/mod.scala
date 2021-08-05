@@ -65,8 +65,7 @@ object mod {
   @JSImport("sasl-plain", "Mechanism")
   @js.native
   def Mechanism: Instantiable0[PlainMechanism] = js.native
-  @scala.inline
-  def Mechanism_=(x: Instantiable0[PlainMechanism]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mechanism")(x.asInstanceOf[js.Any])
+  inline def Mechanism_=(x: Instantiable0[PlainMechanism]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mechanism")(x.asInstanceOf[js.Any])
   
   /* static member */
   object prototype {
@@ -78,14 +77,12 @@ object mod {
     @JSImport("sasl-plain", "prototype.clientFirst")
     @js.native
     def clientFirst: `true` = js.native
-    @scala.inline
-    def clientFirst_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientFirst")(x.asInstanceOf[js.Any])
+    inline def clientFirst_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientFirst")(x.asInstanceOf[js.Any])
     
     @JSImport("sasl-plain", "prototype.name")
     @js.native
     def name: PLAIN = js.native
-    @scala.inline
-    def name_=(x: PLAIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: PLAIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
   trait Credentials extends StObject {
@@ -98,26 +95,20 @@ object mod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(password: String, username: String): Credentials = {
+    inline def apply(password: String, username: String): Credentials = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
+      inline def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthzidUndefined: Self = StObject.set(x, "authzid", js.undefined)
+      inline def setAuthzidUndefined: Self = StObject.set(x, "authzid", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,23 +125,18 @@ object mod {
   }
   object PlainMechanism {
     
-    @scala.inline
-    def apply(challenge: String => Unit, response: Credentials => String): PlainMechanism = {
+    inline def apply(challenge: String => Unit, response: Credentials => String): PlainMechanism = {
       val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = true, name = "PLAIN", response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[PlainMechanism]
     }
     
-    @scala.inline
-    implicit class PlainMechanismMutableBuilder[Self <: PlainMechanism] (val x: Self) extends AnyVal {
+    extension [Self <: PlainMechanism](x: Self) {
       
-      @scala.inline
-      def setClientFirst(value: `true`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
+      inline def setClientFirst(value: `true`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: PLAIN): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: PLAIN): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Credentials => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+      inline def setResponse(value: Credentials => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     }
   }
 }

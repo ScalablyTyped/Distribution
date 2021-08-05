@@ -16,37 +16,27 @@ trait ChartChartAreaMargin extends StObject {
 }
 object ChartChartAreaMargin {
   
-  @scala.inline
-  def apply(): ChartChartAreaMargin = {
+  inline def apply(): ChartChartAreaMargin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartChartAreaMargin]
   }
   
-  @scala.inline
-  implicit class ChartChartAreaMarginMutableBuilder[Self <: ChartChartAreaMargin] (val x: Self) extends AnyVal {
+  extension [Self <: ChartChartAreaMargin](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

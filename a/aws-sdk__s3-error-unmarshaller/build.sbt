@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__s3-error-unmarshaller"
-version := "0.1.0-preview.2-25d4f2"
+version := "0.1.0-preview.2-2ee6d8"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

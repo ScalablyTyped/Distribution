@@ -33,8 +33,7 @@ trait Query
      with XColumnsSupplier
 object Query {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplyFilter: Boolean,
     Columns: XNameAccess,
     ContentType: String,

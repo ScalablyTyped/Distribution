@@ -8,16 +8,13 @@ object heftJestStrings {
   
   @js.native
   sealed trait MockedFunction extends StObject
-  @scala.inline
-  def MockedFunction: MockedFunction = "MockedFunction".asInstanceOf[MockedFunction]
+  inline def MockedFunction: MockedFunction = "MockedFunction".asInstanceOf[MockedFunction]
   
   @js.native
   sealed trait MockedObject extends StObject
-  @scala.inline
-  def MockedObject: MockedObject = "MockedObject".asInstanceOf[MockedObject]
+  inline def MockedObject: MockedObject = "MockedObject".asInstanceOf[MockedObject]
   
   @js.native
   sealed trait MockedObjectDeep extends StObject
-  @scala.inline
-  def MockedObjectDeep: MockedObjectDeep = "MockedObjectDeep".asInstanceOf[MockedObjectDeep]
+  inline def MockedObjectDeep: MockedObjectDeep = "MockedObjectDeep".asInstanceOf[MockedObjectDeep]
 }

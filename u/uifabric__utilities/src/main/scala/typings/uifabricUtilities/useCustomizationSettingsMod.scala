@@ -11,8 +11,6 @@ object useCustomizationSettingsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useCustomizationSettings(properties: js.Array[String]): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[ISettings]
-  @scala.inline
-  def useCustomizationSettings(properties: js.Array[String], scopeName: String): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+  inline def useCustomizationSettings(properties: js.Array[String]): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[ISettings]
+  inline def useCustomizationSettings(properties: js.Array[String], scopeName: String): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[ISettings]
 }

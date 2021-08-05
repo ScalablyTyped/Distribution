@@ -18,20 +18,16 @@ trait JSXClosingElement_
 }
 object JSXClosingElement_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, name: JSXIdentifier_ | JSXMemberExpression_, start: Double): JSXClosingElement_ = {
+  inline def apply(end: Double, loc: SourceLocation, name: JSXIdentifier_ | JSXMemberExpression_, start: Double): JSXClosingElement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXClosingElement")
     __obj.asInstanceOf[JSXClosingElement_]
   }
   
-  @scala.inline
-  implicit class JSXClosingElement_MutableBuilder[Self <: JSXClosingElement_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXClosingElement_](x: Self) {
     
-    @scala.inline
-    def setName(value: JSXIdentifier_ | JSXMemberExpression_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: JSXIdentifier_ | JSXMemberExpression_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: JSXClosingElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXClosingElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

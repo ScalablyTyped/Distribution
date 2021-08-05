@@ -18,25 +18,19 @@ trait CreateHsmClientCertificateMessage extends StObject {
 }
 object CreateHsmClientCertificateMessage {
   
-  @scala.inline
-  def apply(HsmClientCertificateIdentifier: String): CreateHsmClientCertificateMessage = {
+  inline def apply(HsmClientCertificateIdentifier: String): CreateHsmClientCertificateMessage = {
     val __obj = js.Dynamic.literal(HsmClientCertificateIdentifier = HsmClientCertificateIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHsmClientCertificateMessage]
   }
   
-  @scala.inline
-  implicit class CreateHsmClientCertificateMessageMutableBuilder[Self <: CreateHsmClientCertificateMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHsmClientCertificateMessage](x: Self) {
     
-    @scala.inline
-    def setHsmClientCertificateIdentifier(value: String): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setHsmClientCertificateIdentifier(value: String): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

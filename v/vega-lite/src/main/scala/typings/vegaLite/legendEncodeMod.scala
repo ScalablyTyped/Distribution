@@ -28,19 +28,14 @@ object legendEncodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def entries(entriesSpec: js.Any, hasLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(entriesSpec.asInstanceOf[js.Any], hasLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def entries(entriesSpec: js.Any, hasLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(entriesSpec.asInstanceOf[js.Any], hasLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")().asInstanceOf[V]
-  @scala.inline
-  def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](channelDef: ColorDef[String] | ShapeDef[String]): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")(channelDef.asInstanceOf[js.Any]).asInstanceOf[V]
+  inline def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")().asInstanceOf[V]
+  inline def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](channelDef: ColorDef[String] | ShapeDef[String]): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")(channelDef.asInstanceOf[js.Any]).asInstanceOf[V]
   
-  @scala.inline
-  def gradient(gradientSpec: js.Any, hasModelLegendTypeLegendCmpt: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("gradient")(gradientSpec.asInstanceOf[js.Any], hasModelLegendTypeLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
+  inline def gradient(gradientSpec: js.Any, hasModelLegendTypeLegendCmpt: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("gradient")(gradientSpec.asInstanceOf[js.Any], hasModelLegendTypeLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
   
-  @scala.inline
-  def labels(specifiedlabelsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(specifiedlabelsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def labels(specifiedlabelsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(specifiedlabelsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* Inlined {[ part in keyof vega.vega.LegendEncode ]:? (spec : vega.vega.EncodeEntry, params : vega-lite.vega-lite/build/src/compile/legend/encode.LegendEncodeParams): vega.vega.EncodeEntry} */
   object legendEncodeRules {
@@ -54,8 +49,7 @@ object legendEncodeMod {
     def entries: js.UndefOr[
         js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
       ] = js.native
-    @scala.inline
-    def entries_=(
+    inline def entries_=(
       x: js.UndefOr[
           js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
         ]
@@ -66,8 +60,7 @@ object legendEncodeMod {
     def gradient: js.UndefOr[
         js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
       ] = js.native
-    @scala.inline
-    def gradient_=(
+    inline def gradient_=(
       x: js.UndefOr[
           js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
         ]
@@ -78,8 +71,7 @@ object legendEncodeMod {
     def labels: js.UndefOr[
         js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
       ] = js.native
-    @scala.inline
-    def labels_=(
+    inline def labels_=(
       x: js.UndefOr[
           js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
         ]
@@ -90,8 +82,7 @@ object legendEncodeMod {
     def legend: js.UndefOr[
         js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
       ] = js.native
-    @scala.inline
-    def legend_=(
+    inline def legend_=(
       x: js.UndefOr[
           js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
         ]
@@ -102,8 +93,7 @@ object legendEncodeMod {
     def symbols: js.UndefOr[
         js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
       ] = js.native
-    @scala.inline
-    def symbols_=(
+    inline def symbols_=(
       x: js.UndefOr[
           js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
         ]
@@ -114,16 +104,14 @@ object legendEncodeMod {
     def title: js.UndefOr[
         js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
       ] = js.native
-    @scala.inline
-    def title_=(
+    inline def title_=(
       x: js.UndefOr[
           js.Function2[/* spec */ EncodeEntry, /* params */ LegendEncodeParams, EncodeEntry]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def symbols(symbolsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmptLegendType: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("symbols")(symbolsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmptLegendType.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
+  inline def symbols(symbolsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmptLegendType: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("symbols")(symbolsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmptLegendType.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
   
   trait LegendEncodeParams extends StObject {
     
@@ -139,8 +127,7 @@ object legendEncodeMod {
   }
   object LegendEncodeParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       channel: NonPositionScaleChannel,
       fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
       legendCmpt: LegendComponent,
@@ -151,25 +138,19 @@ object legendEncodeMod {
       __obj.asInstanceOf[LegendEncodeParams]
     }
     
-    @scala.inline
-    implicit class LegendEncodeParamsMutableBuilder[Self <: LegendEncodeParams] (val x: Self) extends AnyVal {
+    extension [Self <: LegendEncodeParams](x: Self) {
       
-      @scala.inline
-      def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldOrDatumDef(
+      inline def setFieldOrDatumDef(
         value: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
       ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendCmpt(value: LegendComponent): Self = StObject.set(x, "legendCmpt", value.asInstanceOf[js.Any])
+      inline def setLegendCmpt(value: LegendComponent): Self = StObject.set(x, "legendCmpt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendType(value: LegendType): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
+      inline def setLegendType(value: LegendType): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: UnitModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: UnitModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }
   }
 }

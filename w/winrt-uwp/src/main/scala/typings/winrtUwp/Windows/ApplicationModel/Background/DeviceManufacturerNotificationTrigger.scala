@@ -15,19 +15,15 @@ trait DeviceManufacturerNotificationTrigger extends StObject {
 }
 object DeviceManufacturerNotificationTrigger {
   
-  @scala.inline
-  def apply(oneShot: Boolean, triggerQualifier: String): DeviceManufacturerNotificationTrigger = {
+  inline def apply(oneShot: Boolean, triggerQualifier: String): DeviceManufacturerNotificationTrigger = {
     val __obj = js.Dynamic.literal(oneShot = oneShot.asInstanceOf[js.Any], triggerQualifier = triggerQualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManufacturerNotificationTrigger]
   }
   
-  @scala.inline
-  implicit class DeviceManufacturerNotificationTriggerMutableBuilder[Self <: DeviceManufacturerNotificationTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceManufacturerNotificationTrigger](x: Self) {
     
-    @scala.inline
-    def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
+    inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerQualifier(value: String): Self = StObject.set(x, "triggerQualifier", value.asInstanceOf[js.Any])
+    inline def setTriggerQualifier(value: String): Self = StObject.set(x, "triggerQualifier", value.asInstanceOf[js.Any])
   }
 }

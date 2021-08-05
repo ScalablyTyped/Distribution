@@ -22,26 +22,20 @@ object mod extends Shortcut {
   }
   object GulpHtmlPrettifyOptions {
     
-    @scala.inline
-    def apply(): GulpHtmlPrettifyOptions = {
+    inline def apply(): GulpHtmlPrettifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GulpHtmlPrettifyOptions]
     }
     
-    @scala.inline
-    implicit class GulpHtmlPrettifyOptionsMutableBuilder[Self <: GulpHtmlPrettifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GulpHtmlPrettifyOptions](x: Self) {
       
-      @scala.inline
-      def setIndent_char(value: String): Self = StObject.set(x, "indent_char", value.asInstanceOf[js.Any])
+      inline def setIndent_char(value: String): Self = StObject.set(x, "indent_char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent_charUndefined: Self = StObject.set(x, "indent_char", js.undefined)
+      inline def setIndent_charUndefined: Self = StObject.set(x, "indent_char", js.undefined)
       
-      @scala.inline
-      def setIndent_size(value: Double): Self = StObject.set(x, "indent_size", value.asInstanceOf[js.Any])
+      inline def setIndent_size(value: Double): Self = StObject.set(x, "indent_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent_sizeUndefined: Self = StObject.set(x, "indent_size", js.undefined)
+      inline def setIndent_sizeUndefined: Self = StObject.set(x, "indent_size", js.undefined)
     }
   }
   

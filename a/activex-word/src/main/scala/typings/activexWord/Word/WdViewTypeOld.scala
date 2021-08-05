@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdViewTypeOld extends StObject
 object WdViewTypeOld {
   
-  @scala.inline
-  def wdOnlineView: `6` = 6.asInstanceOf[`6`]
+  inline def wdOnlineView: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdPageView: `3` = 3.asInstanceOf[`3`]
+  inline def wdPageView: `3` = 3.asInstanceOf[`3`]
 }

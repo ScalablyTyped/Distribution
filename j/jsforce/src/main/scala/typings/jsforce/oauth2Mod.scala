@@ -76,92 +76,64 @@ object oauth2Mod {
   }
   object OAuth2Options {
     
-    @scala.inline
-    def apply(): OAuth2Options = {
+    inline def apply(): OAuth2Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OAuth2Options]
     }
     
-    @scala.inline
-    implicit class OAuth2OptionsMutableBuilder[Self <: OAuth2Options] (val x: Self) extends AnyVal {
+    extension [Self <: OAuth2Options](x: Self) {
       
-      @scala.inline
-      def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
+      inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
+      inline def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
       
-      @scala.inline
-      def setAuthzServiceUrl(value: String): Self = StObject.set(x, "authzServiceUrl", value.asInstanceOf[js.Any])
+      inline def setAuthzServiceUrl(value: String): Self = StObject.set(x, "authzServiceUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthzServiceUrlUndefined: Self = StObject.set(x, "authzServiceUrl", js.undefined)
+      inline def setAuthzServiceUrlUndefined: Self = StObject.set(x, "authzServiceUrl", js.undefined)
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+      inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
       
-      @scala.inline
-      def setHttpProxy(value: String): Self = StObject.set(x, "httpProxy", value.asInstanceOf[js.Any])
+      inline def setHttpProxy(value: String): Self = StObject.set(x, "httpProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpProxyUndefined: Self = StObject.set(x, "httpProxy", js.undefined)
+      inline def setHttpProxyUndefined: Self = StObject.set(x, "httpProxy", js.undefined)
       
-      @scala.inline
-      def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
+      inline def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
+      inline def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyFile(value: String): Self = StObject.set(x, "privateKeyFile", value.asInstanceOf[js.Any])
+      inline def setPrivateKeyFile(value: String): Self = StObject.set(x, "privateKeyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyFileUndefined: Self = StObject.set(x, "privateKeyFile", js.undefined)
+      inline def setPrivateKeyFileUndefined: Self = StObject.set(x, "privateKeyFile", js.undefined)
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+      inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+      inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+      inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
       
-      @scala.inline
-      def setRevokeServiceUrl(value: String): Self = StObject.set(x, "revokeServiceUrl", value.asInstanceOf[js.Any])
+      inline def setRevokeServiceUrl(value: String): Self = StObject.set(x, "revokeServiceUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevokeServiceUrlUndefined: Self = StObject.set(x, "revokeServiceUrl", js.undefined)
+      inline def setRevokeServiceUrlUndefined: Self = StObject.set(x, "revokeServiceUrl", js.undefined)
       
-      @scala.inline
-      def setTokenServiceUrl(value: String): Self = StObject.set(x, "tokenServiceUrl", value.asInstanceOf[js.Any])
+      inline def setTokenServiceUrl(value: String): Self = StObject.set(x, "tokenServiceUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenServiceUrlUndefined: Self = StObject.set(x, "tokenServiceUrl", js.undefined)
+      inline def setTokenServiceUrlUndefined: Self = StObject.set(x, "tokenServiceUrl", js.undefined)
     }
   }
   
@@ -173,20 +145,16 @@ object oauth2Mod {
   }
   object TokenResponse {
     
-    @scala.inline
-    def apply(access_token: String, refresh_token: String): TokenResponse = {
+    inline def apply(access_token: String, refresh_token: String): TokenResponse = {
       val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenResponse]
     }
     
-    @scala.inline
-    implicit class TokenResponseMutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
+    extension [Self <: TokenResponse](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+      inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
     }
   }
 }

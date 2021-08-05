@@ -8,11 +8,9 @@ object jsonRulesEngineStrings {
   
   @js.native
   sealed trait failure extends StObject
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
 }

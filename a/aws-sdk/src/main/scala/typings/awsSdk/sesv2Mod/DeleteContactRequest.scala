@@ -18,19 +18,15 @@ trait DeleteContactRequest extends StObject {
 }
 object DeleteContactRequest {
   
-  @scala.inline
-  def apply(ContactListName: ContactListName, EmailAddress: EmailAddress): DeleteContactRequest = {
+  inline def apply(ContactListName: ContactListName, EmailAddress: EmailAddress): DeleteContactRequest = {
     val __obj = js.Dynamic.literal(ContactListName = ContactListName.asInstanceOf[js.Any], EmailAddress = EmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteContactRequest]
   }
   
-  @scala.inline
-  implicit class DeleteContactRequestMutableBuilder[Self <: DeleteContactRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteContactRequest](x: Self) {
     
-    @scala.inline
-    def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
+    inline def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait XActionsApproval
 }
 object XActionsApproval {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveAction: Double => Boolean,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XActionsApproval {
     __obj.asInstanceOf[XActionsApproval]
   }
   
-  @scala.inline
-  implicit class XActionsApprovalMutableBuilder[Self <: XActionsApproval] (val x: Self) extends AnyVal {
+  extension [Self <: XActionsApproval](x: Self) {
     
-    @scala.inline
-    def setApproveAction(value: Double => Boolean): Self = StObject.set(x, "approveAction", js.Any.fromFunction1(value))
+    inline def setApproveAction(value: Double => Boolean): Self = StObject.set(x, "approveAction", js.Any.fromFunction1(value))
   }
 }

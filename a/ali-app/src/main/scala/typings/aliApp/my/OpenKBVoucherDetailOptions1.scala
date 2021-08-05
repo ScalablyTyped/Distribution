@@ -12,16 +12,13 @@ trait OpenKBVoucherDetailOptions1
 }
 object OpenKBVoucherDetailOptions1 {
   
-  @scala.inline
-  def apply(passId: String): OpenKBVoucherDetailOptions1 = {
+  inline def apply(passId: String): OpenKBVoucherDetailOptions1 = {
     val __obj = js.Dynamic.literal(passId = passId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenKBVoucherDetailOptions1]
   }
   
-  @scala.inline
-  implicit class OpenKBVoucherDetailOptions1MutableBuilder[Self <: OpenKBVoucherDetailOptions1] (val x: Self) extends AnyVal {
+  extension [Self <: OpenKBVoucherDetailOptions1](x: Self) {
     
-    @scala.inline
-    def setPassId(value: String): Self = StObject.set(x, "passId", value.asInstanceOf[js.Any])
+    inline def setPassId(value: String): Self = StObject.set(x, "passId", value.asInstanceOf[js.Any])
   }
 }

@@ -31,40 +31,29 @@ trait SchemaConfigurableService extends StObject {
 }
 object SchemaConfigurableService {
   
-  @scala.inline
-  def apply(): SchemaConfigurableService = {
+  inline def apply(): SchemaConfigurableService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigurableService]
   }
   
-  @scala.inline
-  implicit class SchemaConfigurableServiceMutableBuilder[Self <: SchemaConfigurableService] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfigurableService](x: Self) {
     
-    @scala.inline
-    def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = StObject.set(x, "collectionOverrides", value.asInstanceOf[js.Any])
+    inline def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = StObject.set(x, "collectionOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionOverridesUndefined: Self = StObject.set(x, "collectionOverrides", js.undefined)
+    inline def setCollectionOverridesUndefined: Self = StObject.set(x, "collectionOverrides", js.undefined)
     
-    @scala.inline
-    def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = StObject.set(x, "collectionOverrides", js.Array(value :_*))
+    inline def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = StObject.set(x, "collectionOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setCredential(value: SchemaCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: SchemaCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
+    inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
-    @scala.inline
-    def setDescriptorUrl(value: String): Self = StObject.set(x, "descriptorUrl", value.asInstanceOf[js.Any])
+    inline def setDescriptorUrl(value: String): Self = StObject.set(x, "descriptorUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptorUrlUndefined: Self = StObject.set(x, "descriptorUrl", js.undefined)
+    inline def setDescriptorUrlUndefined: Self = StObject.set(x, "descriptorUrl", js.undefined)
     
-    @scala.inline
-    def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait MonitorErrorDetails extends StObject {
 }
 object MonitorErrorDetails {
   
-  @scala.inline
-  def apply(): MonitorErrorDetails = {
+  inline def apply(): MonitorErrorDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitorErrorDetails]
   }
   
-  @scala.inline
-  implicit class MonitorErrorDetailsMutableBuilder[Self <: MonitorErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MonitorErrorDetails](x: Self) {
     
-    @scala.inline
-    def setCode(value: MonitorErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: MonitorErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: MonitorErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MonitorErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

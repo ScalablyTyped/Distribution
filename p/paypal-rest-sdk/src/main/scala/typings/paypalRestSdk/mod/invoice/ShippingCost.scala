@@ -13,25 +13,19 @@ trait ShippingCost extends StObject {
 }
 object ShippingCost {
   
-  @scala.inline
-  def apply(): ShippingCost = {
+  inline def apply(): ShippingCost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShippingCost]
   }
   
-  @scala.inline
-  implicit class ShippingCostMutableBuilder[Self <: ShippingCost] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingCost](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setTax(value: Tax): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    inline def setTax(value: Tax): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
+    inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
   }
 }

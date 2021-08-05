@@ -23,34 +23,25 @@ trait FinishedWorldsSummary extends StObject {
 }
 object FinishedWorldsSummary {
   
-  @scala.inline
-  def apply(): FinishedWorldsSummary = {
+  inline def apply(): FinishedWorldsSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinishedWorldsSummary]
   }
   
-  @scala.inline
-  implicit class FinishedWorldsSummaryMutableBuilder[Self <: FinishedWorldsSummary] (val x: Self) extends AnyVal {
+  extension [Self <: FinishedWorldsSummary](x: Self) {
     
-    @scala.inline
-    def setFailureSummary(value: FailureSummary): Self = StObject.set(x, "failureSummary", value.asInstanceOf[js.Any])
+    inline def setFailureSummary(value: FailureSummary): Self = StObject.set(x, "failureSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureSummaryUndefined: Self = StObject.set(x, "failureSummary", js.undefined)
+    inline def setFailureSummaryUndefined: Self = StObject.set(x, "failureSummary", js.undefined)
     
-    @scala.inline
-    def setFinishedCount(value: Integer): Self = StObject.set(x, "finishedCount", value.asInstanceOf[js.Any])
+    inline def setFinishedCount(value: Integer): Self = StObject.set(x, "finishedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedCountUndefined: Self = StObject.set(x, "finishedCount", js.undefined)
+    inline def setFinishedCountUndefined: Self = StObject.set(x, "finishedCount", js.undefined)
     
-    @scala.inline
-    def setSucceededWorlds(value: Arns): Self = StObject.set(x, "succeededWorlds", value.asInstanceOf[js.Any])
+    inline def setSucceededWorlds(value: Arns): Self = StObject.set(x, "succeededWorlds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededWorldsUndefined: Self = StObject.set(x, "succeededWorlds", js.undefined)
+    inline def setSucceededWorldsUndefined: Self = StObject.set(x, "succeededWorlds", js.undefined)
     
-    @scala.inline
-    def setSucceededWorldsVarargs(value: Arn*): Self = StObject.set(x, "succeededWorlds", js.Array(value :_*))
+    inline def setSucceededWorldsVarargs(value: Arn*): Self = StObject.set(x, "succeededWorlds", js.Array(value :_*))
   }
 }

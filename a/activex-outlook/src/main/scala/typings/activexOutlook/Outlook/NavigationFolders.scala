@@ -16,7 +16,7 @@ trait NavigationFolders extends StObject {
   
   def Item(Index: js.Any): NavigationFolder
   
-  @JSName("Outlook.NavigationFolders_typekey")
+  /* private */ @JSName("Outlook.NavigationFolders_typekey")
   var OutlookDotNavigationFolders_typekey: NavigationFolders
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait NavigationFolders extends StObject {
 }
 object NavigationFolders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: Folder => NavigationFolder,
     Application: Application,
     Class: OlObjectClass,
@@ -44,34 +43,24 @@ object NavigationFolders {
     __obj.asInstanceOf[NavigationFolders]
   }
   
-  @scala.inline
-  implicit class NavigationFoldersMutableBuilder[Self <: NavigationFolders] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationFolders](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Folder => NavigationFolder): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Folder => NavigationFolder): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => NavigationFolder): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => NavigationFolder): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotNavigationFolders_typekey(value: NavigationFolders): Self = StObject.set(x, "Outlook.NavigationFolders_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotNavigationFolders_typekey(value: NavigationFolders): Self = StObject.set(x, "Outlook.NavigationFolders_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: NavigationFolder => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: NavigationFolder => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

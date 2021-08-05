@@ -26,8 +26,7 @@ object devtoolsdriverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def requireCommand(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireCommand")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def requireCommand(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireCommand")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @js.native

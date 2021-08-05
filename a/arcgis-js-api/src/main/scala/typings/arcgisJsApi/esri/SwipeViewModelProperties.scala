@@ -45,49 +45,35 @@ trait SwipeViewModelProperties extends StObject {
 }
 object SwipeViewModelProperties {
   
-  @scala.inline
-  def apply(): SwipeViewModelProperties = {
+  inline def apply(): SwipeViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwipeViewModelProperties]
   }
   
-  @scala.inline
-  implicit class SwipeViewModelPropertiesMutableBuilder[Self <: SwipeViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SwipeViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setLeadingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "leadingLayers", value.asInstanceOf[js.Any])
+    inline def setLeadingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "leadingLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingLayersUndefined: Self = StObject.set(x, "leadingLayers", js.undefined)
+    inline def setLeadingLayersUndefined: Self = StObject.set(x, "leadingLayers", js.undefined)
     
-    @scala.inline
-    def setLeadingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "leadingLayers", js.Array(value :_*))
+    inline def setLeadingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "leadingLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTrailingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "trailingLayers", value.asInstanceOf[js.Any])
+    inline def setTrailingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "trailingLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingLayersUndefined: Self = StObject.set(x, "trailingLayers", js.undefined)
+    inline def setTrailingLayersUndefined: Self = StObject.set(x, "trailingLayers", js.undefined)
     
-    @scala.inline
-    def setTrailingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "trailingLayers", js.Array(value :_*))
+    inline def setTrailingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "trailingLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

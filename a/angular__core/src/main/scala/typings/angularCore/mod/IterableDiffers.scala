@@ -23,10 +23,8 @@ object IterableDiffers {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(factories: js.Array[IterableDifferFactory]): IterableDiffers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any]).asInstanceOf[IterableDiffers]
-  @scala.inline
-  def create(factories: js.Array[IterableDifferFactory], parent: IterableDiffers): IterableDiffers = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[IterableDiffers]
+  inline def create(factories: js.Array[IterableDifferFactory]): IterableDiffers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any]).asInstanceOf[IterableDiffers]
+  inline def create(factories: js.Array[IterableDifferFactory], parent: IterableDiffers): IterableDiffers = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[IterableDiffers]
   
   /**
     * Takes an array of {@link IterableDifferFactory} and returns a provider used to extend the
@@ -48,6 +46,5 @@ object IterableDiffers {
     * })
     * ```
     */
-  @scala.inline
-  def extend(factories: js.Array[IterableDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
+  inline def extend(factories: js.Array[IterableDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
 }

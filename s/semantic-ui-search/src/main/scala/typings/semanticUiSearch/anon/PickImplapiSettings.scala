@@ -12,16 +12,13 @@ trait PickImplapiSettings extends StObject {
 }
 object PickImplapiSettings {
   
-  @scala.inline
-  def apply(apiSettings: ApiSettings): PickImplapiSettings = {
+  inline def apply(apiSettings: ApiSettings): PickImplapiSettings = {
     val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapiSettings]
   }
   
-  @scala.inline
-  implicit class PickImplapiSettingsMutableBuilder[Self <: PickImplapiSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplapiSettings](x: Self) {
     
-    @scala.inline
-    def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
+    inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
   }
 }

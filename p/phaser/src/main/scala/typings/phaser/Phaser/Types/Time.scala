@@ -55,71 +55,50 @@ object Time {
   }
   object TimerEventConfig {
     
-    @scala.inline
-    def apply(): TimerEventConfig = {
+    inline def apply(): TimerEventConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimerEventConfig]
     }
     
-    @scala.inline
-    implicit class TimerEventConfigMutableBuilder[Self <: TimerEventConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TimerEventConfig](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
+      inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+      inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
-      @scala.inline
-      def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+      inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
+      inline def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
     }
   }
 }

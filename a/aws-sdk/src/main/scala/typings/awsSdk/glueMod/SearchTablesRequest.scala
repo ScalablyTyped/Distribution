@@ -43,61 +43,43 @@ trait SearchTablesRequest extends StObject {
 }
 object SearchTablesRequest {
   
-  @scala.inline
-  def apply(): SearchTablesRequest = {
+  inline def apply(): SearchTablesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchTablesRequest]
   }
   
-  @scala.inline
-  implicit class SearchTablesRequestMutableBuilder[Self <: SearchTablesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchTablesRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setFilters(value: SearchPropertyPredicates): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: SearchPropertyPredicates): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: PropertyPredicate*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: PropertyPredicate*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareType(value: ResourceShareType): Self = StObject.set(x, "ResourceShareType", value.asInstanceOf[js.Any])
+    inline def setResourceShareType(value: ResourceShareType): Self = StObject.set(x, "ResourceShareType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareTypeUndefined: Self = StObject.set(x, "ResourceShareType", js.undefined)
+    inline def setResourceShareTypeUndefined: Self = StObject.set(x, "ResourceShareType", js.undefined)
     
-    @scala.inline
-    def setSearchText(value: ValueString): Self = StObject.set(x, "SearchText", value.asInstanceOf[js.Any])
+    inline def setSearchText(value: ValueString): Self = StObject.set(x, "SearchText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTextUndefined: Self = StObject.set(x, "SearchText", js.undefined)
+    inline def setSearchTextUndefined: Self = StObject.set(x, "SearchText", js.undefined)
     
-    @scala.inline
-    def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "SortCriteria", value.asInstanceOf[js.Any])
+    inline def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "SortCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
+    inline def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
     
-    @scala.inline
-    def setSortCriteriaVarargs(value: SortCriterion*): Self = StObject.set(x, "SortCriteria", js.Array(value :_*))
+    inline def setSortCriteriaVarargs(value: SortCriterion*): Self = StObject.set(x, "SortCriteria", js.Array(value :_*))
   }
 }

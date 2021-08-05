@@ -25,19 +25,15 @@ trait ErrorHandler extends StObject {
 }
 object ErrorHandler {
   
-  @scala.inline
-  def apply(closed: () => CloseAction, error: (Error, Message, Double) => ErrorAction): ErrorHandler = {
+  inline def apply(closed: () => CloseAction, error: (Error, Message, Double) => ErrorAction): ErrorHandler = {
     val __obj = js.Dynamic.literal(closed = js.Any.fromFunction0(closed), error = js.Any.fromFunction3(error))
     __obj.asInstanceOf[ErrorHandler]
   }
   
-  @scala.inline
-  implicit class ErrorHandlerMutableBuilder[Self <: ErrorHandler] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorHandler](x: Self) {
     
-    @scala.inline
-    def setClosed(value: () => CloseAction): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+    inline def setClosed(value: () => CloseAction): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: (Error, Message, Double) => ErrorAction): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (Error, Message, Double) => ErrorAction): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
   }
 }

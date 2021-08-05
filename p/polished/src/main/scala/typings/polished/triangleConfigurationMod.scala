@@ -21,8 +21,7 @@ object triangleConfigurationMod {
   }
   object TriangleConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       foregroundColor: String,
       height: Double | String,
       pointingDirection: SideKeyword,
@@ -32,26 +31,19 @@ object triangleConfigurationMod {
       __obj.asInstanceOf[TriangleConfiguration]
     }
     
-    @scala.inline
-    implicit class TriangleConfigurationMutableBuilder[Self <: TriangleConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TriangleConfiguration](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+      inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointingDirection(value: SideKeyword): Self = StObject.set(x, "pointingDirection", value.asInstanceOf[js.Any])
+      inline def setPointingDirection(value: SideKeyword): Self = StObject.set(x, "pointingDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

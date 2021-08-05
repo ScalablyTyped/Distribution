@@ -14,22 +14,17 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(aggregated: AggregatedResource, locations: LocationsResource, zones: ZonesResource): ProjectsResource = {
+  inline def apply(aggregated: AggregatedResource, locations: LocationsResource, zones: ZonesResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(aggregated = aggregated.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setAggregated(value: AggregatedResource): Self = StObject.set(x, "aggregated", value.asInstanceOf[js.Any])
+    inline def setAggregated(value: AggregatedResource): Self = StObject.set(x, "aggregated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZones(value: ZonesResource): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: ZonesResource): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
   }
 }

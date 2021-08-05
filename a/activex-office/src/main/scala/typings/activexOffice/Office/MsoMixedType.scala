@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoMixedType extends StObject
 object MsoMixedType {
   
-  @scala.inline
-  def msoIntegerMixed: `32768` = 32768.asInstanceOf[`32768`]
+  inline def msoIntegerMixed: `32768` = 32768.asInstanceOf[`32768`]
   
-  @scala.inline
-  def msoSingleMixed: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+  inline def msoSingleMixed: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
 }

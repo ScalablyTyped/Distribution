@@ -10,6 +10,5 @@ object optionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validate(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validate(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

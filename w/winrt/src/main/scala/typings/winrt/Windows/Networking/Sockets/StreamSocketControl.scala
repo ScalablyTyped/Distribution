@@ -9,8 +9,7 @@ trait StreamSocketControl
      with IStreamSocketControl
 object StreamSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     keepAlive: Boolean,
     noDelay: Boolean,
     outboundBufferSizeInBytes: Double,

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcSearchDirection extends StObject
 object AcSearchDirection {
   
-  @scala.inline
-  def acDown: `1` = 1.asInstanceOf[`1`]
+  inline def acDown: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acSearchAll: `2` = 2.asInstanceOf[`2`]
+  inline def acSearchAll: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acUp: `0` = 0.asInstanceOf[`0`]
+  inline def acUp: `0` = 0.asInstanceOf[`0`]
 }

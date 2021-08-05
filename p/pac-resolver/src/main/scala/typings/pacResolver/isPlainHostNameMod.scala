@@ -10,6 +10,5 @@ object isPlainHostNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

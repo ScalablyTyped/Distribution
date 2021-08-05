@@ -51,49 +51,36 @@ object typesListRetirableGrantsInputMod {
   }
   object ListRetirableGrantsInput {
     
-    @scala.inline
-    def apply(RetiringPrincipal: String): ListRetirableGrantsInput = {
+    inline def apply(RetiringPrincipal: String): ListRetirableGrantsInput = {
       val __obj = js.Dynamic.literal(RetiringPrincipal = RetiringPrincipal.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListRetirableGrantsInput]
     }
     
-    @scala.inline
-    implicit class ListRetirableGrantsInputMutableBuilder[Self <: ListRetirableGrantsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListRetirableGrantsInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
       
-      @scala.inline
-      def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+      inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
       
-      @scala.inline
-      def setRetiringPrincipal(value: String): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
+      inline def setRetiringPrincipal(value: String): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
     }
   }
 }

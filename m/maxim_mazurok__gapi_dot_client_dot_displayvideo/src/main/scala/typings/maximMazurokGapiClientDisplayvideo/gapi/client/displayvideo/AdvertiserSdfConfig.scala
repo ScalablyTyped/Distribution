@@ -17,25 +17,19 @@ trait AdvertiserSdfConfig extends StObject {
 }
 object AdvertiserSdfConfig {
   
-  @scala.inline
-  def apply(): AdvertiserSdfConfig = {
+  inline def apply(): AdvertiserSdfConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserSdfConfig]
   }
   
-  @scala.inline
-  implicit class AdvertiserSdfConfigMutableBuilder[Self <: AdvertiserSdfConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserSdfConfig](x: Self) {
     
-    @scala.inline
-    def setOverridePartnerSdfConfig(value: Boolean): Self = StObject.set(x, "overridePartnerSdfConfig", value.asInstanceOf[js.Any])
+    inline def setOverridePartnerSdfConfig(value: Boolean): Self = StObject.set(x, "overridePartnerSdfConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridePartnerSdfConfigUndefined: Self = StObject.set(x, "overridePartnerSdfConfig", js.undefined)
+    inline def setOverridePartnerSdfConfigUndefined: Self = StObject.set(x, "overridePartnerSdfConfig", js.undefined)
     
-    @scala.inline
-    def setSdfConfig(value: SdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
+    inline def setSdfConfig(value: SdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdfConfigUndefined: Self = StObject.set(x, "sdfConfig", js.undefined)
+    inline def setSdfConfigUndefined: Self = StObject.set(x, "sdfConfig", js.undefined)
   }
 }

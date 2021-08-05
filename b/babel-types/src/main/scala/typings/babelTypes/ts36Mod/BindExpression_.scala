@@ -19,24 +19,19 @@ trait BindExpression_
 }
 object BindExpression_ {
   
-  @scala.inline
-  def apply(callee: Expression, end: Double, loc: SourceLocation, `object`: Expression, start: Double): BindExpression_ = {
+  inline def apply(callee: Expression, end: Double, loc: SourceLocation, `object`: Expression, start: Double): BindExpression_ = {
     val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BindExpression")
     __obj.asInstanceOf[BindExpression_]
   }
   
-  @scala.inline
-  implicit class BindExpression_MutableBuilder[Self <: BindExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: BindExpression_](x: Self) {
     
-    @scala.inline
-    def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BindExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BindExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

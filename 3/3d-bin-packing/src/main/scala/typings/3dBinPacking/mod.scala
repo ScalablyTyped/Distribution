@@ -39,8 +39,8 @@ object mod {
     /* CompleteClass */
     override def TAG(): String = js.native
     
-    /* CompleteClass */
-    /* private */ override def constructResult(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def constructResult(): js.Any = js.native
     
     /**
       * @inheritdoc
@@ -70,22 +70,22 @@ object mod {
     /* CompleteClass */
     override def getUtilization(): Double = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var instanceArray: typings.`3dBinPacking`.bws.packer.InstanceArray = js.native
     
     /* CompleteClass */
     override def less(obj: typings.`3dBinPacking`.bws.packer.GAWrapperArray): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var price: js.Any = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any = js.native
     
     /**
       * @brief Validity of this sequence list.
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var valid: js.Any = js.native
   }
   
@@ -181,11 +181,11 @@ object mod {
     /**
       * Repeated count of the {@link instance}.
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var count: js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def createInstance(xml: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def createInstance(xml: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def getCount(): Double = js.native
@@ -196,7 +196,7 @@ object mod {
     /**
       * A duplicated Instance.
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var instance: js.Any = js.native
     
     /* CompleteClass */
@@ -348,13 +348,13 @@ object mod {
       *
       * @return Initial sequence list.
       */
-    /* CompleteClass */
-    /* protected */ override def initGenes(): typings.`3dBinPacking`.bws.packer.GAWrapperArray = js.native
+    /* protected */ /* CompleteClass */
+    override def initGenes(): typings.`3dBinPacking`.bws.packer.GAWrapperArray = js.native
     
     /**
       * Instances trying to pack into the wrapper.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var instanceArray: typings.`3dBinPacking`.bws.packer.InstanceArray = js.native
     
     /**
@@ -370,8 +370,8 @@ object mod {
       * @param $wrappers Wrappers to repack.
       * @return Re-packed wrappers.
       */
-    /* CompleteClass */
-    /* protected */ override def repack($wrappers: typings.`3dBinPacking`.bws.packer.WrapperArray): typings.`3dBinPacking`.bws.packer.WrapperArray = js.native
+    /* protected */ /* CompleteClass */
+    override def repack($wrappers: typings.`3dBinPacking`.bws.packer.WrapperArray): typings.`3dBinPacking`.bws.packer.WrapperArray = js.native
     
     /**
       * @inheritdoc
@@ -382,7 +382,7 @@ object mod {
     /**
       * Candidate wrappers who can contain instances.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var wrapperArray: typings.`3dBinPacking`.bws.packer.WrapperArray = js.native
   }
   
@@ -427,7 +427,7 @@ object mod {
     /**
       * Form of Instances to pack.
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var instanceFormArray: js.Any = js.native
     
     /* CompleteClass */
@@ -442,7 +442,7 @@ object mod {
     /**
       * Type of Wrappers to be used.
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var wrapperArray: js.Any = js.native
   }
   
@@ -522,7 +522,7 @@ object mod {
     /**
       * Height of the Product, length on the Y-axis in 3D.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var height: Double = js.native
     
     /**
@@ -534,7 +534,7 @@ object mod {
     /**
       * Length of the Product, length on the Z-axis in 3D.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var length: Double = js.native
     
     /**
@@ -542,7 +542,7 @@ object mod {
       *
       * <p> The name must be unique because a name identifies a {@link Product}. </p>
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var name: String = js.native
     
     /**
@@ -578,12 +578,11 @@ object mod {
     /**
       * Width of the Product, length on the X-axis in 3D.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var width: Double = js.native
   }
   
-  @scala.inline
-  def Test(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_Test")().asInstanceOf[Unit]
+  inline def Test(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_Test")().asInstanceOf[Unit]
   
   /**
     * <p> Wrap represents an act wrap(ping). </p>
@@ -682,8 +681,8 @@ object mod {
       *
       * @param type Type of contained Instance's type.
       */
-    /* CompleteClass */
-    /* protected */ override def createInstance(`type`: String): Instance = js.native
+    /* protected */ /* CompleteClass */
+    override def createInstance(`type`: String): Instance = js.native
     
     /**
       * @brief Estimate orientation by given size.
@@ -758,13 +757,13 @@ object mod {
     /**
       * An instance wrapped into the {@link wrapper}.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var instance: Instance = js.native
     
     /**
       * Placement orientation of wrapped {@link instance}.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var orientation: Double = js.native
     
     /**
@@ -794,25 +793,25 @@ object mod {
     /**
       * A wrapper wrapping the {@link instance}.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var wrapper: typings.`3dBinPacking`.bws.packer.Wrapper = js.native
     
     /**
       * Coordinate-X of the instance placement in the wrapper.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var x: Double = js.native
     
     /**
       * Coordinate-Y of the instance placement in the wrapper.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var y: Double = js.native
     
     /**
       * Coordinate-Z of the instance placement in the wrapper.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var z: Double = js.native
   }
   
@@ -1018,7 +1017,7 @@ object mod {
     /**
       * Height of the Wrapper, length on the Y-axis in 3D.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var height: Double = js.native
     
     /**
@@ -1030,7 +1029,7 @@ object mod {
     /**
       * Length of the Wrapper, length on the Z-axis in 3D.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var length: Double = js.native
     
     /**
@@ -1038,13 +1037,13 @@ object mod {
       *
       * <p> The name represents a type of Wrapper and identifies the Wrapper. </p>
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var name: String = js.native
     
     /**
       * Price, cost of using an Wrapper.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var price: Double = js.native
     
     /**
@@ -1089,7 +1088,7 @@ object mod {
       * <p> The thickness reduces each dimension's containable size (dimension - 2*thickness),
       * so finally, it reduces total containable volume (-8 * thickness^3). </p>
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var thickness: Double = js.native
     
     /**
@@ -1101,7 +1100,7 @@ object mod {
     /**
       * Width of the Wrapper, length on the X-axis in 3D.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var width: Double = js.native
   }
   

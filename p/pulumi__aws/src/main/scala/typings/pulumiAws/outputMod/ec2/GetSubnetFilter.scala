@@ -21,22 +21,17 @@ trait GetSubnetFilter extends StObject {
 }
 object GetSubnetFilter {
   
-  @scala.inline
-  def apply(name: String, values: js.Array[String]): GetSubnetFilter = {
+  inline def apply(name: String, values: js.Array[String]): GetSubnetFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSubnetFilter]
   }
   
-  @scala.inline
-  implicit class GetSubnetFilterMutableBuilder[Self <: GetSubnetFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GetSubnetFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.PlaySoundRuleAction")
 @js.native
-class PlaySoundRuleAction protected ()
+/* private */ class PlaySoundRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.PlaySoundRuleAction {
   
@@ -27,7 +27,7 @@ class PlaySoundRuleAction protected ()
   /* CompleteClass */
   var FilePath: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.PlaySoundRuleAction_typekey")
   var OutlookDotPlaySoundRuleAction_typekey: typings.activexOutlook.Outlook.PlaySoundRuleAction = js.native
   

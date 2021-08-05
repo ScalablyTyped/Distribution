@@ -16,7 +16,7 @@ object xrayclientMod {
   class XRayClient protected () extends StObject {
     def this(configuration: XRayConfiguration) = this()
     
-    val config: XRayResolvedConfiguration = js.native
+    /* protected */ val config: XRayResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

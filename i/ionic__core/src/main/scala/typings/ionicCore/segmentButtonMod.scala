@@ -45,14 +45,14 @@ object segmentButtonMod {
     @JSName("render")
     def render_MSegmentButton(): js.Any = js.native
     
-    var segmentEl: js.Any = js.native
+    /* private */ var segmentEl: js.Any = js.native
     
     /* CompleteClass */
     var `type`: submit | reset | button = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
     
-    var updateStyle: js.Any = js.native
+    /* private */ var updateStyle: js.Any = js.native
     
     /**
       * The value of the segment button.

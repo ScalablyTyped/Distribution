@@ -138,131 +138,90 @@ object documentMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(file: js.Any): Props = {
+    inline def apply(file: js.Any): Props = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFunction0(value: () => Element): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+      inline def setErrorFunction0(value: () => Element): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExternalLinkTarget(value: _self | _blank | _parent | _top): Self = StObject.set(x, "externalLinkTarget", value.asInstanceOf[js.Any])
+      inline def setExternalLinkTarget(value: _self | _blank | _parent | _top): Self = StObject.set(x, "externalLinkTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalLinkTargetUndefined: Self = StObject.set(x, "externalLinkTarget", js.undefined)
+      inline def setExternalLinkTargetUndefined: Self = StObject.set(x, "externalLinkTarget", js.undefined)
       
-      @scala.inline
-      def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRef(value: LegacyRef[HTMLDivElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: LegacyRef[HTMLDivElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setLoading(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingFunction0(value: () => Element): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
+      inline def setLoadingFunction0(value: () => Element): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setNoData(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+      inline def setNoData(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDataFunction0(value: () => Element): Self = StObject.set(x, "noData", js.Any.fromFunction0(value))
+      inline def setNoDataFunction0(value: () => Element): Self = StObject.set(x, "noData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
+      inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
       
-      @scala.inline
-      def setOnItemClick(value: /* hasPageNumber */ PageNumber => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      inline def setOnItemClick(value: /* hasPageNumber */ PageNumber => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+      inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
-      @scala.inline
-      def setOnLoadError(value: /* error */ Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+      inline def setOnLoadError(value: /* error */ Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
+      inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
       
-      @scala.inline
-      def setOnLoadSuccess(value: /* pdf */ PDFDocumentProxy => Unit): Self = StObject.set(x, "onLoadSuccess", js.Any.fromFunction1(value))
+      inline def setOnLoadSuccess(value: /* pdf */ PDFDocumentProxy => Unit): Self = StObject.set(x, "onLoadSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadSuccessUndefined: Self = StObject.set(x, "onLoadSuccess", js.undefined)
+      inline def setOnLoadSuccessUndefined: Self = StObject.set(x, "onLoadSuccess", js.undefined)
       
-      @scala.inline
-      def setOnPassword(value: /* callback */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onPassword", js.Any.fromFunction1(value))
+      inline def setOnPassword(value: /* callback */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onPassword", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPasswordUndefined: Self = StObject.set(x, "onPassword", js.undefined)
+      inline def setOnPasswordUndefined: Self = StObject.set(x, "onPassword", js.undefined)
       
-      @scala.inline
-      def setOnSourceError(value: /* error */ Error => Unit): Self = StObject.set(x, "onSourceError", js.Any.fromFunction1(value))
+      inline def setOnSourceError(value: /* error */ Error => Unit): Self = StObject.set(x, "onSourceError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSourceErrorUndefined: Self = StObject.set(x, "onSourceError", js.undefined)
+      inline def setOnSourceErrorUndefined: Self = StObject.set(x, "onSourceError", js.undefined)
       
-      @scala.inline
-      def setOnSourceSuccess(value: () => Unit): Self = StObject.set(x, "onSourceSuccess", js.Any.fromFunction0(value))
+      inline def setOnSourceSuccess(value: () => Unit): Self = StObject.set(x, "onSourceSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSourceSuccessUndefined: Self = StObject.set(x, "onSourceSuccess", js.undefined)
+      inline def setOnSourceSuccessUndefined: Self = StObject.set(x, "onSourceSuccess", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRenderMode(value: canvas | svg | none): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+      inline def setRenderMode(value: canvas | svg | none): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
+      inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     }
   }
   

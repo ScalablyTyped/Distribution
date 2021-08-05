@@ -23,31 +23,23 @@ trait TileMinimizingEventUIParam extends StObject {
 }
 object TileMinimizingEventUIParam {
   
-  @scala.inline
-  def apply(): TileMinimizingEventUIParam = {
+  inline def apply(): TileMinimizingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileMinimizingEventUIParam]
   }
   
-  @scala.inline
-  implicit class TileMinimizingEventUIParamMutableBuilder[Self <: TileMinimizingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: TileMinimizingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setMaximizingTile(value: js.Any): Self = StObject.set(x, "maximizingTile", value.asInstanceOf[js.Any])
+    inline def setMaximizingTile(value: js.Any): Self = StObject.set(x, "maximizingTile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximizingTileUndefined: Self = StObject.set(x, "maximizingTile", js.undefined)
+    inline def setMaximizingTileUndefined: Self = StObject.set(x, "maximizingTile", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTile(value: js.Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: js.Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

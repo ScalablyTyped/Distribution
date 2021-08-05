@@ -17,25 +17,19 @@ trait EventNotificationConfig extends StObject {
 }
 object EventNotificationConfig {
   
-  @scala.inline
-  def apply(): EventNotificationConfig = {
+  inline def apply(): EventNotificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventNotificationConfig]
   }
   
-  @scala.inline
-  implicit class EventNotificationConfigMutableBuilder[Self <: EventNotificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EventNotificationConfig](x: Self) {
     
-    @scala.inline
-    def setPubsubTopicName(value: String): Self = StObject.set(x, "pubsubTopicName", value.asInstanceOf[js.Any])
+    inline def setPubsubTopicName(value: String): Self = StObject.set(x, "pubsubTopicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubTopicNameUndefined: Self = StObject.set(x, "pubsubTopicName", js.undefined)
+    inline def setPubsubTopicNameUndefined: Self = StObject.set(x, "pubsubTopicName", js.undefined)
     
-    @scala.inline
-    def setSubfolderMatches(value: String): Self = StObject.set(x, "subfolderMatches", value.asInstanceOf[js.Any])
+    inline def setSubfolderMatches(value: String): Self = StObject.set(x, "subfolderMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubfolderMatchesUndefined: Self = StObject.set(x, "subfolderMatches", js.undefined)
+    inline def setSubfolderMatchesUndefined: Self = StObject.set(x, "subfolderMatches", js.undefined)
   }
 }

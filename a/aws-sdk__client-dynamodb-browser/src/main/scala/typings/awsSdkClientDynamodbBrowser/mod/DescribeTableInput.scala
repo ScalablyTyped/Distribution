@@ -9,8 +9,7 @@ trait DescribeTableInput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeTableInputMod.DescribeTableInput
 object DescribeTableInput {
   
-  @scala.inline
-  def apply(TableName: String): DescribeTableInput = {
+  inline def apply(TableName: String): DescribeTableInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableInput]
   }

@@ -15,23 +15,18 @@ object relationIdLoadResultMod {
   }
   object RelationIdLoadResult {
     
-    @scala.inline
-    def apply(relationIdAttribute: RelationIdAttribute, results: js.Array[js.Any]): RelationIdLoadResult = {
+    inline def apply(relationIdAttribute: RelationIdAttribute, results: js.Array[js.Any]): RelationIdLoadResult = {
       val __obj = js.Dynamic.literal(relationIdAttribute = relationIdAttribute.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelationIdLoadResult]
     }
     
-    @scala.inline
-    implicit class RelationIdLoadResultMutableBuilder[Self <: RelationIdLoadResult] (val x: Self) extends AnyVal {
+    extension [Self <: RelationIdLoadResult](x: Self) {
       
-      @scala.inline
-      def setRelationIdAttribute(value: RelationIdAttribute): Self = StObject.set(x, "relationIdAttribute", value.asInstanceOf[js.Any])
+      inline def setRelationIdAttribute(value: RelationIdAttribute): Self = StObject.set(x, "relationIdAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
 }

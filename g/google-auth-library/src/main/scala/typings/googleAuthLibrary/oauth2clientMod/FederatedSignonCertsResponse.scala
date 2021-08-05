@@ -15,28 +15,21 @@ trait FederatedSignonCertsResponse extends StObject {
 }
 object FederatedSignonCertsResponse {
   
-  @scala.inline
-  def apply(certs: Certificates, format: CertificateFormat): FederatedSignonCertsResponse = {
+  inline def apply(certs: Certificates, format: CertificateFormat): FederatedSignonCertsResponse = {
     val __obj = js.Dynamic.literal(certs = certs.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[FederatedSignonCertsResponse]
   }
   
-  @scala.inline
-  implicit class FederatedSignonCertsResponseMutableBuilder[Self <: FederatedSignonCertsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedSignonCertsResponse](x: Self) {
     
-    @scala.inline
-    def setCerts(value: Certificates): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
+    inline def setCerts(value: Certificates): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: CertificateFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CertificateFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: GaxiosResponse[Unit]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: GaxiosResponse[Unit]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResNull: Self = StObject.set(x, "res", null)
+    inline def setResNull: Self = StObject.set(x, "res", null)
     
-    @scala.inline
-    def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+    inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
   }
 }

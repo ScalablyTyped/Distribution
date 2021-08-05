@@ -16,17 +16,14 @@ object mod {
   }
   object SinonStub {
     
-    @scala.inline
-    def apply(chain: String => SinonStub): SinonStub = {
+    inline def apply(chain: String => SinonStub): SinonStub = {
       val __obj = js.Dynamic.literal(chain = js.Any.fromFunction1(chain))
       __obj.asInstanceOf[SinonStub]
     }
     
-    @scala.inline
-    implicit class SinonStubMutableBuilder[Self <: SinonStub] (val x: Self) extends AnyVal {
+    extension [Self <: SinonStub](x: Self) {
       
-      @scala.inline
-      def setChain(value: String => SinonStub): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
+      inline def setChain(value: String => SinonStub): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
     }
   }
 }

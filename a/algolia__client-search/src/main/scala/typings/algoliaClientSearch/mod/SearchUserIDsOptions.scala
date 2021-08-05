@@ -23,31 +23,23 @@ trait SearchUserIDsOptions extends StObject {
 }
 object SearchUserIDsOptions {
   
-  @scala.inline
-  def apply(): SearchUserIDsOptions = {
+  inline def apply(): SearchUserIDsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchUserIDsOptions]
   }
   
-  @scala.inline
-  implicit class SearchUserIDsOptionsMutableBuilder[Self <: SearchUserIDsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchUserIDsOptions](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
+    inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
+    inline def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

@@ -10,12 +10,8 @@ object rangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def range(): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
-  @scala.inline
-  def range(min: Double): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
-  @scala.inline
-  def range(min: Double, max: Double): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
-  @scala.inline
-  def range(min: Unit, max: Double): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
+  inline def range(): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
+  inline def range(min: Double): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
+  inline def range(min: Double, max: Double): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
+  inline def range(min: Unit, max: Double): js.Function2[/* proto */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* proto */ js.Any, /* key */ String, Unit]]
 }

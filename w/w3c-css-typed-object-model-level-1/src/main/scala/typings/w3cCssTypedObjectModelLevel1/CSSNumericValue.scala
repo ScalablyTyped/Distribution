@@ -30,8 +30,7 @@ trait CSSNumericValue
 }
 object CSSNumericValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: /* repeated */ CSSNumberish => CSSNumericValue,
     div: /* repeated */ CSSNumberish => CSSNumericValue,
     equals_ : /* repeated */ CSSNumberish => Boolean,
@@ -49,37 +48,26 @@ object CSSNumericValue {
     __obj.asInstanceOf[CSSNumericValue]
   }
   
-  @scala.inline
-  implicit class CSSNumericValueMutableBuilder[Self <: CSSNumericValue] (val x: Self) extends AnyVal {
+  extension [Self <: CSSNumericValue](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDiv(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "div", js.Any.fromFunction1(value))
+    inline def setDiv(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "div", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquals_(value: /* repeated */ CSSNumberish => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: /* repeated */ CSSNumberish => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMax(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    inline def setMax(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMin(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    inline def setMin(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMul(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "mul", js.Any.fromFunction1(value))
+    inline def setMul(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "mul", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSub(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "sub", js.Any.fromFunction1(value))
+    inline def setSub(value: /* repeated */ CSSNumberish => CSSNumericValue): Self = StObject.set(x, "sub", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTo(value: String => CSSUnitValue): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
+    inline def setTo(value: String => CSSUnitValue): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToSum(value: /* repeated */ String => CSSMathSum): Self = StObject.set(x, "toSum", js.Any.fromFunction1(value))
+    inline def setToSum(value: /* repeated */ String => CSSMathSum): Self = StObject.set(x, "toSum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: () => CSSNumericType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setType(value: () => CSSNumericType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
   }
 }

@@ -32,37 +32,27 @@ trait SchemaInstanceGroupManagerPendingActionsSummary extends StObject {
 }
 object SchemaInstanceGroupManagerPendingActionsSummary {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagerPendingActionsSummary = {
+  inline def apply(): SchemaInstanceGroupManagerPendingActionsSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagerPendingActionsSummary]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagerPendingActionsSummaryMutableBuilder[Self <: SchemaInstanceGroupManagerPendingActionsSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagerPendingActionsSummary](x: Self) {
     
-    @scala.inline
-    def setCreating(value: Double): Self = StObject.set(x, "creating", value.asInstanceOf[js.Any])
+    inline def setCreating(value: Double): Self = StObject.set(x, "creating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatingUndefined: Self = StObject.set(x, "creating", js.undefined)
+    inline def setCreatingUndefined: Self = StObject.set(x, "creating", js.undefined)
     
-    @scala.inline
-    def setDeleting(value: Double): Self = StObject.set(x, "deleting", value.asInstanceOf[js.Any])
+    inline def setDeleting(value: Double): Self = StObject.set(x, "deleting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletingUndefined: Self = StObject.set(x, "deleting", js.undefined)
+    inline def setDeletingUndefined: Self = StObject.set(x, "deleting", js.undefined)
     
-    @scala.inline
-    def setRecreating(value: Double): Self = StObject.set(x, "recreating", value.asInstanceOf[js.Any])
+    inline def setRecreating(value: Double): Self = StObject.set(x, "recreating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecreatingUndefined: Self = StObject.set(x, "recreating", js.undefined)
+    inline def setRecreatingUndefined: Self = StObject.set(x, "recreating", js.undefined)
     
-    @scala.inline
-    def setRestarting(value: Double): Self = StObject.set(x, "restarting", value.asInstanceOf[js.Any])
+    inline def setRestarting(value: Double): Self = StObject.set(x, "restarting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartingUndefined: Self = StObject.set(x, "restarting", js.undefined)
+    inline def setRestartingUndefined: Self = StObject.set(x, "restarting", js.undefined)
   }
 }

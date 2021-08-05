@@ -21,8 +21,7 @@ object useSelectValuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     rawValues: js.Array[RawValueType],
     hasValueGetEntityByValueGetEntityByKeyTreeConductionShowCheckedStrategyConductKeyEntitiesGetLabelProp: Config
   ): js.Array[LabelValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawValues.asInstanceOf[js.Any], hasValueGetEntityByValueGetEntityByKeyTreeConductionShowCheckedStrategyConductKeyEntitiesGetLabelProp.asInstanceOf[js.Any])).asInstanceOf[js.Array[LabelValueType]]

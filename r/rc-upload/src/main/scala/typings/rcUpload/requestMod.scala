@@ -12,6 +12,5 @@ object requestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(option: UploadRequestOption[js.Any]): Abort = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(option.asInstanceOf[js.Any]).asInstanceOf[Abort]
+  inline def default(option: UploadRequestOption[js.Any]): Abort = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(option.asInstanceOf[js.Any]).asInstanceOf[Abort]
 }

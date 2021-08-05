@@ -119,111 +119,78 @@ object typesUpdateFunctionConfigurationInputMod {
   }
   object UpdateFunctionConfigurationInput {
     
-    @scala.inline
-    def apply(FunctionName: String): UpdateFunctionConfigurationInput = {
+    inline def apply(FunctionName: String): UpdateFunctionConfigurationInput = {
       val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateFunctionConfigurationInput]
     }
     
-    @scala.inline
-    implicit class UpdateFunctionConfigurationInputMutableBuilder[Self <: UpdateFunctionConfigurationInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateFunctionConfigurationInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setDeadLetterConfig(value: DeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
+      inline def setDeadLetterConfig(value: DeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
+      inline def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: Environment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Environment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
       
-      @scala.inline
-      def setKMSKeyArn(value: String): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
+      inline def setKMSKeyArn(value: String): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
+      inline def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
       
-      @scala.inline
-      def setMemorySize(value: Double): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
+      inline def setMemorySize(value: Double): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
+      inline def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
       
-      @scala.inline
-      def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+      inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+      inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
       
-      @scala.inline
-      def setRuntime(
+      inline def setRuntime(
         value: nodejs | nodejs4Dot3 | nodejs6Dot10 | nodejs8Dot10 | java8 | python2Dot7 | python3Dot6 | dotnetcore1Dot0 | dotnetcore2Dot0 | dotnetcore2Dot1 | `nodejs4Dot3-edge` | go1Dotx | String
       ): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
       
-      @scala.inline
-      def setTracingConfig(value: TracingConfig): Self = StObject.set(x, "TracingConfig", value.asInstanceOf[js.Any])
+      inline def setTracingConfig(value: TracingConfig): Self = StObject.set(x, "TracingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingConfigUndefined: Self = StObject.set(x, "TracingConfig", js.undefined)
+      inline def setTracingConfigUndefined: Self = StObject.set(x, "TracingConfig", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
     }
   }
 }

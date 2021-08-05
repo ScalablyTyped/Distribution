@@ -28,25 +28,19 @@ trait BitrateBps extends StObject {
 }
 object BitrateBps {
   
-  @scala.inline
-  def apply(bitrateBps: Double, channelCount: Double, codec: String, vendor: String): BitrateBps = {
+  inline def apply(bitrateBps: Double, channelCount: Double, codec: String, vendor: String): BitrateBps = {
     val __obj = js.Dynamic.literal(bitrateBps = bitrateBps.asInstanceOf[js.Any], channelCount = channelCount.asInstanceOf[js.Any], codec = codec.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitrateBps]
   }
   
-  @scala.inline
-  implicit class BitrateBpsMutableBuilder[Self <: BitrateBps] (val x: Self) extends AnyVal {
+  extension [Self <: BitrateBps](x: Self) {
     
-    @scala.inline
-    def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
+    inline def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait CcrPutAutoFollowPattern[T]
 }
 object CcrPutAutoFollowPattern {
   
-  @scala.inline
-  def apply[T](body: T, name: String): CcrPutAutoFollowPattern[T] = {
+  inline def apply[T](body: T, name: String): CcrPutAutoFollowPattern[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrPutAutoFollowPattern[T]]
   }
   
-  @scala.inline
-  implicit class CcrPutAutoFollowPatternMutableBuilder[Self <: CcrPutAutoFollowPattern[?], T] (val x: Self & CcrPutAutoFollowPattern[T]) extends AnyVal {
+  extension [Self <: CcrPutAutoFollowPattern[?], T](x: Self & CcrPutAutoFollowPattern[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

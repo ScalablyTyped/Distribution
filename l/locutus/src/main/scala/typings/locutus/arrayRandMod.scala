@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayRandMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(input: js.Any, numReq: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], numReq.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(input: Unit, numReq: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], numReq.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(input: js.Any, numReq: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], numReq.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(input: Unit, numReq: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], numReq.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/array/array_rand", JSImport.Namespace)
   @js.native

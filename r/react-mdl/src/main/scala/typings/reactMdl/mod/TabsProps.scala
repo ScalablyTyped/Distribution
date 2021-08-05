@@ -26,49 +26,35 @@ trait TabsProps
 }
 object TabsProps {
   
-  @scala.inline
-  def apply(): TabsProps = {
+  inline def apply(): TabsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabsProps]
   }
   
-  @scala.inline
-  implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabsProps](x: Self) {
     
-    @scala.inline
-    def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+    inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+    inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[Tabs, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[Tabs, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setTabBarProps(value: TabBarProps): Self = StObject.set(x, "tabBarProps", value.asInstanceOf[js.Any])
+    inline def setTabBarProps(value: TabBarProps): Self = StObject.set(x, "tabBarProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabBarPropsUndefined: Self = StObject.set(x, "tabBarProps", js.undefined)
+    inline def setTabBarPropsUndefined: Self = StObject.set(x, "tabBarProps", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

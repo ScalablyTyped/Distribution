@@ -38,43 +38,31 @@ trait CreatePresetRequest extends StObject {
 }
 object CreatePresetRequest {
   
-  @scala.inline
-  def apply(Container: PresetContainer, Name: Name): CreatePresetRequest = {
+  inline def apply(Container: PresetContainer, Name: Name): CreatePresetRequest = {
     val __obj = js.Dynamic.literal(Container = Container.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresetRequest]
   }
   
-  @scala.inline
-  implicit class CreatePresetRequestMutableBuilder[Self <: CreatePresetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePresetRequest](x: Self) {
     
-    @scala.inline
-    def setAudio(value: AudioParameters): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: AudioParameters): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "Audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "Audio", js.undefined)
     
-    @scala.inline
-    def setContainer(value: PresetContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: PresetContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnails(value: Thumbnails): Self = StObject.set(x, "Thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: Thumbnails): Self = StObject.set(x, "Thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailsUndefined: Self = StObject.set(x, "Thumbnails", js.undefined)
+    inline def setThumbnailsUndefined: Self = StObject.set(x, "Thumbnails", js.undefined)
     
-    @scala.inline
-    def setVideo(value: VideoParameters): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: VideoParameters): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
   }
 }

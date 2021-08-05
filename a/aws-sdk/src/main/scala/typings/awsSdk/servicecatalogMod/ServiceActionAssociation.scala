@@ -23,22 +23,17 @@ trait ServiceActionAssociation extends StObject {
 }
 object ServiceActionAssociation {
   
-  @scala.inline
-  def apply(ProductId: Id, ProvisioningArtifactId: Id, ServiceActionId: Id): ServiceActionAssociation = {
+  inline def apply(ProductId: Id, ProvisioningArtifactId: Id, ServiceActionId: Id): ServiceActionAssociation = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any], ProvisioningArtifactId = ProvisioningArtifactId.asInstanceOf[js.Any], ServiceActionId = ServiceActionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceActionAssociation]
   }
   
-  @scala.inline
-  implicit class ServiceActionAssociationMutableBuilder[Self <: ServiceActionAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceActionAssociation](x: Self) {
     
-    @scala.inline
-    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceActionId(value: Id): Self = StObject.set(x, "ServiceActionId", value.asInstanceOf[js.Any])
+    inline def setServiceActionId(value: Id): Self = StObject.set(x, "ServiceActionId", value.asInstanceOf[js.Any])
   }
 }

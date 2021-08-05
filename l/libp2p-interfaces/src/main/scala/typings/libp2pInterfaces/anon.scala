@@ -23,44 +23,32 @@ object anon {
   }
   object CanRelayMessage {
     
-    @scala.inline
-    def apply(debugName: String, libp2p: js.Any, multicodecs: String | js.Array[String]): CanRelayMessage = {
+    inline def apply(debugName: String, libp2p: js.Any, multicodecs: String | js.Array[String]): CanRelayMessage = {
       val __obj = js.Dynamic.literal(debugName = debugName.asInstanceOf[js.Any], libp2p = libp2p.asInstanceOf[js.Any], multicodecs = multicodecs.asInstanceOf[js.Any])
       __obj.asInstanceOf[CanRelayMessage]
     }
     
-    @scala.inline
-    implicit class CanRelayMessageMutableBuilder[Self <: CanRelayMessage] (val x: Self) extends AnyVal {
+    extension [Self <: CanRelayMessage](x: Self) {
       
-      @scala.inline
-      def setCanRelayMessage(value: Boolean): Self = StObject.set(x, "canRelayMessage", value.asInstanceOf[js.Any])
+      inline def setCanRelayMessage(value: Boolean): Self = StObject.set(x, "canRelayMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanRelayMessageUndefined: Self = StObject.set(x, "canRelayMessage", js.undefined)
+      inline def setCanRelayMessageUndefined: Self = StObject.set(x, "canRelayMessage", js.undefined)
       
-      @scala.inline
-      def setDebugName(value: String): Self = StObject.set(x, "debugName", value.asInstanceOf[js.Any])
+      inline def setDebugName(value: String): Self = StObject.set(x, "debugName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
+      inline def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitSelfUndefined: Self = StObject.set(x, "emitSelf", js.undefined)
+      inline def setEmitSelfUndefined: Self = StObject.set(x, "emitSelf", js.undefined)
       
-      @scala.inline
-      def setGlobalSignaturePolicy(value: js.Any): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
+      inline def setGlobalSignaturePolicy(value: js.Any): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSignaturePolicyUndefined: Self = StObject.set(x, "globalSignaturePolicy", js.undefined)
+      inline def setGlobalSignaturePolicyUndefined: Self = StObject.set(x, "globalSignaturePolicy", js.undefined)
       
-      @scala.inline
-      def setLibp2p(value: js.Any): Self = StObject.set(x, "libp2p", value.asInstanceOf[js.Any])
+      inline def setLibp2p(value: js.Any): Self = StObject.set(x, "libp2p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulticodecs(value: String | js.Array[String]): Self = StObject.set(x, "multicodecs", value.asInstanceOf[js.Any])
+      inline def setMulticodecs(value: String | js.Array[String]): Self = StObject.set(x, "multicodecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulticodecsVarargs(value: String*): Self = StObject.set(x, "multicodecs", js.Array(value :_*))
+      inline def setMulticodecsVarargs(value: String*): Self = StObject.set(x, "multicodecs", js.Array(value :_*))
     }
   }
   
@@ -84,8 +72,7 @@ object anon {
   }
   object Close {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: js.Function,
       getStreams: () => js.Array[js.Any],
       localPeer: typings.peerId.mod.^,
@@ -97,38 +84,27 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    @scala.inline
-    implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+    extension [Self <: Close](x: Self) {
       
-      @scala.inline
-      def setClose(value: js.Function): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: js.Function): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetStreams(value: () => js.Array[js.Any]): Self = StObject.set(x, "getStreams", js.Any.fromFunction0(value))
+      inline def setGetStreams(value: () => js.Array[js.Any]): Self = StObject.set(x, "getStreams", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLocalAddr(value: ^): Self = StObject.set(x, "localAddr", value.asInstanceOf[js.Any])
+      inline def setLocalAddr(value: ^): Self = StObject.set(x, "localAddr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddrUndefined: Self = StObject.set(x, "localAddr", js.undefined)
+      inline def setLocalAddrUndefined: Self = StObject.set(x, "localAddr", js.undefined)
       
-      @scala.inline
-      def setLocalPeer(value: typings.peerId.mod.^): Self = StObject.set(x, "localPeer", value.asInstanceOf[js.Any])
+      inline def setLocalPeer(value: typings.peerId.mod.^): Self = StObject.set(x, "localPeer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewStream(value: js.Function): Self = StObject.set(x, "newStream", value.asInstanceOf[js.Any])
+      inline def setNewStream(value: js.Function): Self = StObject.set(x, "newStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteAddr(value: ^): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
+      inline def setRemoteAddr(value: ^): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteAddrUndefined: Self = StObject.set(x, "remoteAddr", js.undefined)
+      inline def setRemoteAddrUndefined: Self = StObject.set(x, "remoteAddr", js.undefined)
       
-      @scala.inline
-      def setRemotePeer(value: typings.peerId.mod.^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
+      inline def setRemotePeer(value: typings.peerId.mod.^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStat(value: Direction): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Direction): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,23 +118,18 @@ object anon {
   }
   object Connection {
     
-    @scala.inline
-    def apply(connection: js.Any, protocol: String, stream: js.Any): Connection = {
+    inline def apply(connection: js.Any, protocol: String, stream: js.Any): Connection = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connection]
     }
     
-    @scala.inline
-    implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+    extension [Self <: Connection](x: Self) {
       
-      @scala.inline
-      def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,32 +145,24 @@ object anon {
   }
   object Direction {
     
-    @scala.inline
-    def apply(direction: String, timeline: Open): Direction = {
+    inline def apply(direction: String, timeline: Open): Direction = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direction]
     }
     
-    @scala.inline
-    implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+    extension [Self <: Direction](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+      inline def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+      inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
       
-      @scala.inline
-      def setMultiplexer(value: String): Self = StObject.set(x, "multiplexer", value.asInstanceOf[js.Any])
+      inline def setMultiplexer(value: String): Self = StObject.set(x, "multiplexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplexerUndefined: Self = StObject.set(x, "multiplexer", js.undefined)
+      inline def setMultiplexerUndefined: Self = StObject.set(x, "multiplexer", js.undefined)
       
-      @scala.inline
-      def setTimeline(value: Open): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+      inline def setTimeline(value: Open): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     }
   }
   
@@ -217,35 +180,26 @@ object anon {
   }
   object Encryption {
     
-    @scala.inline
-    def apply(direction: String, status: String, timeline: Open): Encryption = {
+    inline def apply(direction: String, status: String, timeline: Open): Encryption = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
       __obj.asInstanceOf[Encryption]
     }
     
-    @scala.inline
-    implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
+    extension [Self <: Encryption](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+      inline def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+      inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
       
-      @scala.inline
-      def setMultiplexer(value: String): Self = StObject.set(x, "multiplexer", value.asInstanceOf[js.Any])
+      inline def setMultiplexer(value: String): Self = StObject.set(x, "multiplexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplexerUndefined: Self = StObject.set(x, "multiplexer", js.undefined)
+      inline def setMultiplexerUndefined: Self = StObject.set(x, "multiplexer", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeline(value: Open): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+      inline def setTimeline(value: Open): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,20 +211,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: typings.peerId.mod.^, protocol: String): Id = {
+    inline def apply(id: typings.peerId.mod.^, protocol: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: typings.peerId.mod.^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: typings.peerId.mod.^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,20 +232,16 @@ object anon {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(metadata: js.Any, protocol: String): Metadata = {
+    inline def apply(metadata: js.Any, protocol: String): Metadata = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -309,29 +255,22 @@ object anon {
   }
   object Multiaddrs {
     
-    @scala.inline
-    def apply(id: js.Any, multiaddrs: js.Array[js.Any], protocols: js.Array[String]): Multiaddrs = {
+    inline def apply(id: js.Any, multiaddrs: js.Array[js.Any], protocols: js.Array[String]): Multiaddrs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], multiaddrs = multiaddrs.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
       __obj.asInstanceOf[Multiaddrs]
     }
     
-    @scala.inline
-    implicit class MultiaddrsMutableBuilder[Self <: Multiaddrs] (val x: Self) extends AnyVal {
+    extension [Self <: Multiaddrs](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiaddrs(value: js.Array[js.Any]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
+      inline def setMultiaddrs(value: js.Array[js.Any]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiaddrsVarargs(value: js.Any*): Self = StObject.set(x, "multiaddrs", js.Array(value :_*))
+      inline def setMultiaddrsVarargs(value: js.Any*): Self = StObject.set(x, "multiaddrs", js.Array(value :_*))
       
-      @scala.inline
-      def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     }
   }
   
@@ -343,20 +282,16 @@ object anon {
   }
   object Open {
     
-    @scala.inline
-    def apply(open: String, upgraded: String): Open = {
+    inline def apply(open: String, upgraded: String): Open = {
       val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], upgraded = upgraded.asInstanceOf[js.Any])
       __obj.asInstanceOf[Open]
     }
     
-    @scala.inline
-    implicit class OpenMutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
+    extension [Self <: Open](x: Self) {
       
-      @scala.inline
-      def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpgraded(value: String): Self = StObject.set(x, "upgraded", value.asInstanceOf[js.Any])
+      inline def setUpgraded(value: String): Self = StObject.set(x, "upgraded", value.asInstanceOf[js.Any])
     }
   }
   
@@ -368,23 +303,18 @@ object anon {
   }
   object PeerId {
     
-    @scala.inline
-    def apply(peerId: js.Any, protocols: js.Array[String]): PeerId = {
+    inline def apply(peerId: js.Any, protocols: js.Array[String]): PeerId = {
       val __obj = js.Dynamic.literal(peerId = peerId.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
       __obj.asInstanceOf[PeerId]
     }
     
-    @scala.inline
-    implicit class PeerIdMutableBuilder[Self <: PeerId] (val x: Self) extends AnyVal {
+    extension [Self <: PeerId](x: Self) {
       
-      @scala.inline
-      def setPeerId(value: js.Any): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      inline def setPeerId(value: js.Any): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     }
   }
   
@@ -396,20 +326,16 @@ object anon {
   }
   object Protocol {
     
-    @scala.inline
-    def apply(protocol: String, stream: js.Any): Protocol = {
+    inline def apply(protocol: String, stream: js.Any): Protocol = {
       val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Protocol]
     }
     
-    @scala.inline
-    implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
+    extension [Self <: Protocol](x: Self) {
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

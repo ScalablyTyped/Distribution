@@ -16,8 +16,7 @@ trait IELangDBDelegates extends StObject {
 }
 object IELangDBDelegates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     insertHandler: js.Function,
     modifyHandler: js.Function,
     removeHandler: js.Function,
@@ -27,19 +26,14 @@ object IELangDBDelegates {
     __obj.asInstanceOf[IELangDBDelegates]
   }
   
-  @scala.inline
-  implicit class IELangDBDelegatesMutableBuilder[Self <: IELangDBDelegates] (val x: Self) extends AnyVal {
+  extension [Self <: IELangDBDelegates](x: Self) {
     
-    @scala.inline
-    def setInsertHandler(value: js.Function): Self = StObject.set(x, "insertHandler", value.asInstanceOf[js.Any])
+    inline def setInsertHandler(value: js.Function): Self = StObject.set(x, "insertHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyHandler(value: js.Function): Self = StObject.set(x, "modifyHandler", value.asInstanceOf[js.Any])
+    inline def setModifyHandler(value: js.Function): Self = StObject.set(x, "modifyHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveHandler(value: js.Function): Self = StObject.set(x, "removeHandler", value.asInstanceOf[js.Any])
+    inline def setRemoveHandler(value: js.Function): Self = StObject.set(x, "removeHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
+    inline def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteMedicalVocabularyRequest extends StObject {
 }
 object DeleteMedicalVocabularyRequest {
   
-  @scala.inline
-  def apply(VocabularyName: VocabularyName): DeleteMedicalVocabularyRequest = {
+  inline def apply(VocabularyName: VocabularyName): DeleteMedicalVocabularyRequest = {
     val __obj = js.Dynamic.literal(VocabularyName = VocabularyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMedicalVocabularyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMedicalVocabularyRequestMutableBuilder[Self <: DeleteMedicalVocabularyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMedicalVocabularyRequest](x: Self) {
     
-    @scala.inline
-    def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
+    inline def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
   }
 }

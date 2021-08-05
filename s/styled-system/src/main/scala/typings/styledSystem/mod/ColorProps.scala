@@ -11,8 +11,7 @@ trait ColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
      with OpacityProps[RequiredTheme]
 object ColorProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): ColorProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): ColorProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorProps[ThemeType, TVal]]
   }

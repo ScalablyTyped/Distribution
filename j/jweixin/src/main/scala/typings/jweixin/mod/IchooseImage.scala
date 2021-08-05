@@ -28,43 +28,31 @@ trait IchooseImage
 }
 object IchooseImage {
   
-  @scala.inline
-  def apply(cancel: () => Unit, success: LocalIds => Unit): IchooseImage = {
+  inline def apply(cancel: () => Unit, success: LocalIds => Unit): IchooseImage = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[IchooseImage]
   }
   
-  @scala.inline
-  implicit class IchooseImageMutableBuilder[Self <: IchooseImage] (val x: Self) extends AnyVal {
+  extension [Self <: IchooseImage](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setSizeType(value: js.Array[ImageSizeType]): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
+    inline def setSizeType(value: js.Array[ImageSizeType]): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
+    inline def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
-    @scala.inline
-    def setSizeTypeVarargs(value: ImageSizeType*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
+    inline def setSizeTypeVarargs(value: ImageSizeType*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceType(value: js.Array[ImageSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: js.Array[ImageSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    @scala.inline
-    def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: LocalIds => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: LocalIds => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

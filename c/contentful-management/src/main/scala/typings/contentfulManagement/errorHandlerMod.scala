@@ -11,6 +11,5 @@ object errorHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(errorResponse: AxiosError[js.Any]): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(errorResponse.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def default(errorResponse: AxiosError[js.Any]): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(errorResponse.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 }

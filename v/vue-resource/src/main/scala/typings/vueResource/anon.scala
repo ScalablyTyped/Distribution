@@ -39,22 +39,18 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setHeaders(
+      inline def setHeaders(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpHeaders */ js.Any
       ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     }
   }
 }

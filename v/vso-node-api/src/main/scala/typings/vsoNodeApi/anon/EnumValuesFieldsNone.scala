@@ -10,16 +10,13 @@ trait EnumValuesFieldsNone extends StObject {
 }
 object EnumValuesFieldsNone {
   
-  @scala.inline
-  def apply(enumValues: FieldsNone): EnumValuesFieldsNone = {
+  inline def apply(enumValues: FieldsNone): EnumValuesFieldsNone = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFieldsNone]
   }
   
-  @scala.inline
-  implicit class EnumValuesFieldsNoneMutableBuilder[Self <: EnumValuesFieldsNone] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFieldsNone](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FieldsNone): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FieldsNone): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

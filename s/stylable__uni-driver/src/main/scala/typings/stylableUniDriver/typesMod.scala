@@ -15,20 +15,16 @@ object typesMod {
   }
   object ElementRemoteApi {
     
-    @scala.inline
-    def apply(attr: String => js.Promise[String | Null], hasClass: String => js.Promise[Boolean]): ElementRemoteApi = {
+    inline def apply(attr: String => js.Promise[String | Null], hasClass: String => js.Promise[Boolean]): ElementRemoteApi = {
       val __obj = js.Dynamic.literal(attr = js.Any.fromFunction1(attr), hasClass = js.Any.fromFunction1(hasClass))
       __obj.asInstanceOf[ElementRemoteApi]
     }
     
-    @scala.inline
-    implicit class ElementRemoteApiMutableBuilder[Self <: ElementRemoteApi] (val x: Self) extends AnyVal {
+    extension [Self <: ElementRemoteApi](x: Self) {
       
-      @scala.inline
-      def setAttr(value: String => js.Promise[String | Null]): Self = StObject.set(x, "attr", js.Any.fromFunction1(value))
+      inline def setAttr(value: String => js.Promise[String | Null]): Self = StObject.set(x, "attr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClass(value: String => js.Promise[Boolean]): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => js.Promise[Boolean]): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
     }
   }
   
@@ -38,17 +34,14 @@ object typesMod {
   }
   object MinimalStylesheet {
     
-    @scala.inline
-    def apply(cssStates: Record[String, StateValue] => String): MinimalStylesheet = {
+    inline def apply(cssStates: Record[String, StateValue] => String): MinimalStylesheet = {
       val __obj = js.Dynamic.literal(cssStates = js.Any.fromFunction1(cssStates))
       __obj.asInstanceOf[MinimalStylesheet]
     }
     
-    @scala.inline
-    implicit class MinimalStylesheetMutableBuilder[Self <: MinimalStylesheet] (val x: Self) extends AnyVal {
+    extension [Self <: MinimalStylesheet](x: Self) {
       
-      @scala.inline
-      def setCssStates(value: Record[String, StateValue] => String): Self = StObject.set(x, "cssStates", js.Any.fromFunction1(value))
+      inline def setCssStates(value: Record[String, StateValue] => String): Self = StObject.set(x, "cssStates", js.Any.fromFunction1(value))
     }
   }
   

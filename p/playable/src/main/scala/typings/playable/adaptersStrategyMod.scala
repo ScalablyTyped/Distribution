@@ -27,23 +27,23 @@ object adaptersStrategyMod {
   @js.native
   trait AdaptersStrategy extends StObject {
     
-    var _attachedAdapter: js.Any = js.native
+    /* private */ var _attachedAdapter: js.Any = js.native
     
-    var _autoDetectSourceTypes: js.Any = js.native
+    /* private */ var _autoDetectSourceTypes: js.Any = js.native
     
-    var _availableAdapters: js.Any = js.native
+    /* private */ var _availableAdapters: js.Any = js.native
     
-    var _connectAdapterToVideo: js.Any = js.native
+    /* private */ var _connectAdapterToVideo: js.Any = js.native
     
-    var _detachCurrentAdapter: js.Any = js.native
+    /* private */ var _detachCurrentAdapter: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _playableAdapters: js.Any = js.native
+    /* private */ var _playableAdapters: js.Any = js.native
     
-    var _resolvePlayableAdapters: js.Any = js.native
+    /* private */ var _resolvePlayableAdapters: js.Any = js.native
     
-    var _video: js.Any = js.native
+    /* private */ var _video: js.Any = js.native
     
     def attachedAdapter: IPlaybackAdapter = js.native
     

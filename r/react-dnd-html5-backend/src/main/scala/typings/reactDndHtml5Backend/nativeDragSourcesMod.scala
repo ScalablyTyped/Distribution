@@ -12,13 +12,9 @@ object nativeDragSourcesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createNativeDragSource(`type`: String): NativeDragSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createNativeDragSource")(`type`.asInstanceOf[js.Any]).asInstanceOf[NativeDragSource]
-  @scala.inline
-  def createNativeDragSource(`type`: String, dataTransfer: DataTransfer): NativeDragSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createNativeDragSource")(`type`.asInstanceOf[js.Any], dataTransfer.asInstanceOf[js.Any])).asInstanceOf[NativeDragSource]
+  inline def createNativeDragSource(`type`: String): NativeDragSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createNativeDragSource")(`type`.asInstanceOf[js.Any]).asInstanceOf[NativeDragSource]
+  inline def createNativeDragSource(`type`: String, dataTransfer: DataTransfer): NativeDragSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createNativeDragSource")(`type`.asInstanceOf[js.Any], dataTransfer.asInstanceOf[js.Any])).asInstanceOf[NativeDragSource]
   
-  @scala.inline
-  def matchNativeItemType(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNativeItemType")().asInstanceOf[String | Null]
-  @scala.inline
-  def matchNativeItemType(dataTransfer: DataTransfer): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNativeItemType")(dataTransfer.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def matchNativeItemType(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNativeItemType")().asInstanceOf[String | Null]
+  inline def matchNativeItemType(dataTransfer: DataTransfer): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNativeItemType")(dataTransfer.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

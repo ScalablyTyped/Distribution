@@ -36,8 +36,7 @@ trait XProgressBar
 }
 object XProgressBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Value: Double,
     acquire: () => Unit,
     getValue: () => Double,
@@ -52,25 +51,18 @@ object XProgressBar {
     __obj.asInstanceOf[XProgressBar]
   }
   
-  @scala.inline
-  implicit class XProgressBarMutableBuilder[Self <: XProgressBar] (val x: Self) extends AnyVal {
+  extension [Self <: XProgressBar](x: Self) {
     
-    @scala.inline
-    def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBackgroundColor(value: Color => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
+    inline def setSetBackgroundColor(value: Color => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetForegroundColor(value: Color => Unit): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
+    inline def setSetForegroundColor(value: Color => Unit): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction2(value))
+    inline def setSetRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

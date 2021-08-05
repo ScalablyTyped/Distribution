@@ -56,37 +56,29 @@ trait OverwriteCSSProperties extends StObject {
 }
 object OverwriteCSSProperties {
   
-  @scala.inline
-  def apply(): OverwriteCSSProperties = {
+  inline def apply(): OverwriteCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverwriteCSSProperties]
   }
   
-  @scala.inline
-  implicit class OverwriteCSSPropertiesMutableBuilder[Self <: OverwriteCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OverwriteCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBoxShadow(
+    inline def setBoxShadow(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
     ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+    inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
-    @scala.inline
-    def setFontWeight(
+    inline def setFontWeight(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setZIndex(
+    inline def setZIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

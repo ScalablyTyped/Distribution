@@ -15,16 +15,13 @@ trait ArrayBuffer extends StObject {
 }
 object ArrayBuffer {
   
-  @scala.inline
-  def apply(unwrap: () => NativePointer): ArrayBuffer = {
+  inline def apply(unwrap: () => NativePointer): ArrayBuffer = {
     val __obj = js.Dynamic.literal(unwrap = js.Any.fromFunction0(unwrap))
     __obj.asInstanceOf[ArrayBuffer]
   }
   
-  @scala.inline
-  implicit class ArrayBufferMutableBuilder[Self <: ArrayBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayBuffer](x: Self) {
     
-    @scala.inline
-    def setUnwrap(value: () => NativePointer): Self = StObject.set(x, "unwrap", js.Any.fromFunction0(value))
+    inline def setUnwrap(value: () => NativePointer): Self = StObject.set(x, "unwrap", js.Any.fromFunction0(value))
   }
 }

@@ -13,19 +13,15 @@ trait ControlOptions
 }
 object ControlOptions {
   
-  @scala.inline
-  def apply(): ControlOptions = {
+  inline def apply(): ControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControlOptions]
   }
   
-  @scala.inline
-  implicit class ControlOptionsMutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ControlOptions](x: Self) {
     
-    @scala.inline
-    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
   }
 }

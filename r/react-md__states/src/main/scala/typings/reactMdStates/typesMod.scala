@@ -33,32 +33,23 @@ object typesMod {
   trait MergableRippleHandlerNames extends StObject
   object MergableRippleHandlerNames {
     
-    @scala.inline
-    def onClick: typings.reactMdStates.reactMdStatesStrings.onClick = "onClick".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onClick]
+    inline def onClick: typings.reactMdStates.reactMdStatesStrings.onClick = "onClick".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onClick]
     
-    @scala.inline
-    def onKeyDown: typings.reactMdStates.reactMdStatesStrings.onKeyDown = "onKeyDown".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onKeyDown]
+    inline def onKeyDown: typings.reactMdStates.reactMdStatesStrings.onKeyDown = "onKeyDown".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onKeyDown]
     
-    @scala.inline
-    def onKeyUp: typings.reactMdStates.reactMdStatesStrings.onKeyUp = "onKeyUp".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onKeyUp]
+    inline def onKeyUp: typings.reactMdStates.reactMdStatesStrings.onKeyUp = "onKeyUp".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onKeyUp]
     
-    @scala.inline
-    def onMouseDown: typings.reactMdStates.reactMdStatesStrings.onMouseDown = "onMouseDown".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onMouseDown]
+    inline def onMouseDown: typings.reactMdStates.reactMdStatesStrings.onMouseDown = "onMouseDown".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onMouseDown]
     
-    @scala.inline
-    def onMouseLeave: typings.reactMdStates.reactMdStatesStrings.onMouseLeave = "onMouseLeave".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onMouseLeave]
+    inline def onMouseLeave: typings.reactMdStates.reactMdStatesStrings.onMouseLeave = "onMouseLeave".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onMouseLeave]
     
-    @scala.inline
-    def onMouseUp: typings.reactMdStates.reactMdStatesStrings.onMouseUp = "onMouseUp".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onMouseUp]
+    inline def onMouseUp: typings.reactMdStates.reactMdStatesStrings.onMouseUp = "onMouseUp".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onMouseUp]
     
-    @scala.inline
-    def onTouchEnd: typings.reactMdStates.reactMdStatesStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onTouchEnd]
+    inline def onTouchEnd: typings.reactMdStates.reactMdStatesStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onTouchEnd]
     
-    @scala.inline
-    def onTouchMove: typings.reactMdStates.reactMdStatesStrings.onTouchMove = "onTouchMove".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onTouchMove]
+    inline def onTouchMove: typings.reactMdStates.reactMdStatesStrings.onTouchMove = "onTouchMove".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onTouchMove]
     
-    @scala.inline
-    def onTouchStart: typings.reactMdStates.reactMdStatesStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onTouchStart]
+    inline def onTouchStart: typings.reactMdStates.reactMdStatesStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.onTouchStart]
   }
   
   /* Inlined std.Pick<react.react.HTMLAttributes<E>, @react-md/states.@react-md/states/types/ripples/types.MergableRippleHandlerNames> */
@@ -84,68 +75,48 @@ object typesMod {
   }
   object MergableRippleHandlers {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](): MergableRippleHandlers[E] = {
+    inline def apply[E /* <: HTMLElement */](): MergableRippleHandlers[E] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MergableRippleHandlers[E]]
     }
     
-    @scala.inline
-    implicit class MergableRippleHandlersMutableBuilder[Self <: MergableRippleHandlers[?], E /* <: HTMLElement */] (val x: Self & MergableRippleHandlers[E]) extends AnyVal {
+    extension [Self <: MergableRippleHandlers[?], E /* <: HTMLElement */](x: Self & MergableRippleHandlers[E]) {
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[E] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[E] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: KeyboardEvent[E] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[E] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnMouseUp(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      @scala.inline
-      def setOnTouchEnd(value: TouchEvent[E] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[E] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+      inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[E] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[E] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[E] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[E] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     }
   }
   
@@ -170,54 +141,39 @@ object typesMod {
   }
   object RippleEvent {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](currentTarget: EventTarget & E, target: EventTarget, `type`: String): RippleEvent[E] = {
+    inline def apply[E /* <: HTMLElement */](currentTarget: EventTarget & E, target: EventTarget, `type`: String): RippleEvent[E] = {
       val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RippleEvent[E]]
     }
     
-    @scala.inline
-    implicit class RippleEventMutableBuilder[Self <: RippleEvent[?], E /* <: HTMLElement */] (val x: Self & RippleEvent[E]) extends AnyVal {
+    extension [Self <: RippleEvent[?], E /* <: HTMLElement */](x: Self & RippleEvent[E]) {
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setCurrentTarget(value: EventTarget & E): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: EventTarget & E): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
+      inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
+      inline def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
       
-      @scala.inline
-      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
+      inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +193,7 @@ object typesMod {
   }
   object RippleState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entered: Boolean,
       exiting: Boolean,
       holding: Boolean,
@@ -251,26 +206,19 @@ object typesMod {
       __obj.asInstanceOf[RippleState]
     }
     
-    @scala.inline
-    implicit class RippleStateMutableBuilder[Self <: RippleState] (val x: Self) extends AnyVal {
+    extension [Self <: RippleState](x: Self) {
       
-      @scala.inline
-      def setEntered(value: Boolean): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
+      inline def setEntered(value: Boolean): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExiting(value: Boolean): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
+      inline def setExiting(value: Boolean): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHolding(value: Boolean): Self = StObject.set(x, "holding", value.asInstanceOf[js.Any])
+      inline def setHolding(value: Boolean): Self = StObject.set(x, "holding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSPropertiesleftnumberto): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesleftnumberto): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: RippleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RippleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,17 +231,13 @@ object typesMod {
   trait RippleType extends StObject
   object RippleType {
     
-    @scala.inline
-    def keyboard: typings.reactMdStates.reactMdStatesStrings.keyboard = "keyboard".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.keyboard]
+    inline def keyboard: typings.reactMdStates.reactMdStatesStrings.keyboard = "keyboard".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.keyboard]
     
-    @scala.inline
-    def mouse: typings.reactMdStates.reactMdStatesStrings.mouse = "mouse".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.mouse]
+    inline def mouse: typings.reactMdStates.reactMdStatesStrings.mouse = "mouse".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.mouse]
     
-    @scala.inline
-    def programmatic: typings.reactMdStates.reactMdStatesStrings.programmatic = "programmatic".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.programmatic]
+    inline def programmatic: typings.reactMdStates.reactMdStatesStrings.programmatic = "programmatic".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.programmatic]
     
-    @scala.inline
-    def touch: typings.reactMdStates.reactMdStatesStrings.touch = "touch".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.touch]
+    inline def touch: typings.reactMdStates.reactMdStatesStrings.touch = "touch".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.touch]
   }
   
   trait RipplesOptions[E /* <: HTMLElement */] extends StObject {
@@ -354,68 +298,48 @@ object typesMod {
   }
   object RipplesOptions {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](): RipplesOptions[E] = {
+    inline def apply[E /* <: HTMLElement */](): RipplesOptions[E] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RipplesOptions[E]]
     }
     
-    @scala.inline
-    implicit class RipplesOptionsMutableBuilder[Self <: RipplesOptions[?], E /* <: HTMLElement */] (val x: Self & RipplesOptions[E]) extends AnyVal {
+    extension [Self <: RipplesOptions[?], E /* <: HTMLElement */](x: Self & RipplesOptions[E]) {
       
-      @scala.inline
-      def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
+      inline def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
+      inline def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
       
-      @scala.inline
-      def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
+      inline def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
+      inline def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
       
-      @scala.inline
-      def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
+      inline def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSpacebarClickUndefined: Self = StObject.set(x, "disableSpacebarClick", js.undefined)
+      inline def setDisableSpacebarClickUndefined: Self = StObject.set(x, "disableSpacebarClick", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+      inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
       
-      @scala.inline
-      def setRippleClassName(value: String): Self = StObject.set(x, "rippleClassName", value.asInstanceOf[js.Any])
+      inline def setRippleClassName(value: String): Self = StObject.set(x, "rippleClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleClassNameUndefined: Self = StObject.set(x, "rippleClassName", js.undefined)
+      inline def setRippleClassNameUndefined: Self = StObject.set(x, "rippleClassName", js.undefined)
       
-      @scala.inline
-      def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
+      inline def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleClassNamesUndefined: Self = StObject.set(x, "rippleClassNames", js.undefined)
+      inline def setRippleClassNamesUndefined: Self = StObject.set(x, "rippleClassNames", js.undefined)
       
-      @scala.inline
-      def setRippleContainerClassName(value: String): Self = StObject.set(x, "rippleContainerClassName", value.asInstanceOf[js.Any])
+      inline def setRippleContainerClassName(value: String): Self = StObject.set(x, "rippleContainerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleContainerClassNameUndefined: Self = StObject.set(x, "rippleContainerClassName", js.undefined)
+      inline def setRippleContainerClassNameUndefined: Self = StObject.set(x, "rippleContainerClassName", js.undefined)
       
-      @scala.inline
-      def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
+      inline def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleTimeoutUndefined: Self = StObject.set(x, "rippleTimeout", js.undefined)
+      inline def setRippleTimeoutUndefined: Self = StObject.set(x, "rippleTimeout", js.undefined)
     }
   }
   

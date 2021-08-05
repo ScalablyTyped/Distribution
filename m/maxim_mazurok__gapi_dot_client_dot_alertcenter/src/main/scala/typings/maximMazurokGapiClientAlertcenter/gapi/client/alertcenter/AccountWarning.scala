@@ -17,25 +17,19 @@ trait AccountWarning extends StObject {
 }
 object AccountWarning {
   
-  @scala.inline
-  def apply(): AccountWarning = {
+  inline def apply(): AccountWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountWarning]
   }
   
-  @scala.inline
-  implicit class AccountWarningMutableBuilder[Self <: AccountWarning] (val x: Self) extends AnyVal {
+  extension [Self <: AccountWarning](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setLoginDetails(value: LoginDetails): Self = StObject.set(x, "loginDetails", value.asInstanceOf[js.Any])
+    inline def setLoginDetails(value: LoginDetails): Self = StObject.set(x, "loginDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginDetailsUndefined: Self = StObject.set(x, "loginDetails", js.undefined)
+    inline def setLoginDetailsUndefined: Self = StObject.set(x, "loginDetails", js.undefined)
   }
 }

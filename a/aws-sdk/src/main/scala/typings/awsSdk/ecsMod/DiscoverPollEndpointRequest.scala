@@ -18,25 +18,19 @@ trait DiscoverPollEndpointRequest extends StObject {
 }
 object DiscoverPollEndpointRequest {
   
-  @scala.inline
-  def apply(): DiscoverPollEndpointRequest = {
+  inline def apply(): DiscoverPollEndpointRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiscoverPollEndpointRequest]
   }
   
-  @scala.inline
-  implicit class DiscoverPollEndpointRequestMutableBuilder[Self <: DiscoverPollEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoverPollEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
+    inline def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
+    inline def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
   }
 }

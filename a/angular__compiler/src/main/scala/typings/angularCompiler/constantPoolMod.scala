@@ -21,15 +21,15 @@ object constantPoolMod {
   class ConstantPool () extends StObject {
     def this(isClosureCompilerEnabled: Boolean) = this()
     
-    var _getLiteralFactory: js.Any = js.native
+    /* private */ var _getLiteralFactory: js.Any = js.native
     
-    var componentDefinitions: js.Any = js.native
+    /* private */ var componentDefinitions: js.Any = js.native
     
-    var definitionsOf: js.Any = js.native
+    /* private */ var definitionsOf: js.Any = js.native
     
-    var directiveDefinitions: js.Any = js.native
+    /* private */ var directiveDefinitions: js.Any = js.native
     
-    var freshName: js.Any = js.native
+    /* private */ var freshName: js.Any = js.native
     
     def getConstLiteral(literal: Expression): Expression = js.native
     def getConstLiteral(literal: Expression, forceShared: Boolean): Expression = js.native
@@ -40,19 +40,19 @@ object constantPoolMod {
     def getLiteralFactory(literal: LiteralArrayExpr): LiteralFactory = js.native
     def getLiteralFactory(literal: LiteralMapExpr): LiteralFactory = js.native
     
-    var injectorDefinitions: js.Any = js.native
+    /* private */ var injectorDefinitions: js.Any = js.native
     
-    val isClosureCompilerEnabled: js.Any = js.native
+    /* private */ val isClosureCompilerEnabled: js.Any = js.native
     
-    var keyOf: js.Any = js.native
+    /* private */ var keyOf: js.Any = js.native
     
-    var literalFactories: js.Any = js.native
+    /* private */ var literalFactories: js.Any = js.native
     
-    var literals: js.Any = js.native
+    /* private */ var literals: js.Any = js.native
     
-    var nextNameIndex: js.Any = js.native
+    /* private */ var nextNameIndex: js.Any = js.native
     
-    var pipeDefinitions: js.Any = js.native
+    /* private */ var pipeDefinitions: js.Any = js.native
     
     def propertyNameOf(kind: DefinitionKind): String = js.native
     
@@ -77,16 +77,12 @@ object constantPoolMod {
   trait DefinitionKind extends StObject
   object DefinitionKind {
     
-    @scala.inline
-    def Component: `2` = 2.asInstanceOf[`2`]
+    inline def Component: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Directive: `1` = 1.asInstanceOf[`1`]
+    inline def Directive: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Injector: `0` = 0.asInstanceOf[`0`]
+    inline def Injector: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Pipe: `3` = 3.asInstanceOf[`3`]
+    inline def Pipe: `3` = 3.asInstanceOf[`3`]
   }
 }

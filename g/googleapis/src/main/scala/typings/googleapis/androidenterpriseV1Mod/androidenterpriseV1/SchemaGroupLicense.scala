@@ -81,55 +81,39 @@ trait SchemaGroupLicense extends StObject {
 }
 object SchemaGroupLicense {
   
-  @scala.inline
-  def apply(): SchemaGroupLicense = {
+  inline def apply(): SchemaGroupLicense = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupLicense]
   }
   
-  @scala.inline
-  implicit class SchemaGroupLicenseMutableBuilder[Self <: SchemaGroupLicense] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroupLicense](x: Self) {
     
-    @scala.inline
-    def setAcquisitionKind(value: String): Self = StObject.set(x, "acquisitionKind", value.asInstanceOf[js.Any])
+    inline def setAcquisitionKind(value: String): Self = StObject.set(x, "acquisitionKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquisitionKindUndefined: Self = StObject.set(x, "acquisitionKind", js.undefined)
+    inline def setAcquisitionKindUndefined: Self = StObject.set(x, "acquisitionKind", js.undefined)
     
-    @scala.inline
-    def setApproval(value: String): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
+    inline def setApproval(value: String): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalUndefined: Self = StObject.set(x, "approval", js.undefined)
+    inline def setApprovalUndefined: Self = StObject.set(x, "approval", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNumProvisioned(value: Double): Self = StObject.set(x, "numProvisioned", value.asInstanceOf[js.Any])
+    inline def setNumProvisioned(value: Double): Self = StObject.set(x, "numProvisioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumProvisionedUndefined: Self = StObject.set(x, "numProvisioned", js.undefined)
+    inline def setNumProvisionedUndefined: Self = StObject.set(x, "numProvisioned", js.undefined)
     
-    @scala.inline
-    def setNumPurchased(value: Double): Self = StObject.set(x, "numPurchased", value.asInstanceOf[js.Any])
+    inline def setNumPurchased(value: Double): Self = StObject.set(x, "numPurchased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPurchasedUndefined: Self = StObject.set(x, "numPurchased", js.undefined)
+    inline def setNumPurchasedUndefined: Self = StObject.set(x, "numPurchased", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

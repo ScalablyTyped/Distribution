@@ -22,20 +22,16 @@ trait Class
 }
 object Class {
   
-  @scala.inline
-  def apply(name: declaration | expression | function | pattern | statement): Class = {
+  inline def apply(name: declaration | expression | function | pattern | statement): Class = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("class")
     __obj.asInstanceOf[Class]
   }
   
-  @scala.inline
-  implicit class ClassMutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
+  extension [Self <: Class](x: Self) {
     
-    @scala.inline
-    def setName(value: declaration | expression | function | pattern | statement): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: declaration | expression | function | pattern | statement): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

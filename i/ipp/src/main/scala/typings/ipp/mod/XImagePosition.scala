@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XImagePosition extends StObject
 object XImagePosition {
   
-  @scala.inline
-  def center: typings.ipp.ippStrings.center = "center".asInstanceOf[typings.ipp.ippStrings.center]
+  inline def center: typings.ipp.ippStrings.center = "center".asInstanceOf[typings.ipp.ippStrings.center]
   
-  @scala.inline
-  def left: typings.ipp.ippStrings.left = "left".asInstanceOf[typings.ipp.ippStrings.left]
+  inline def left: typings.ipp.ippStrings.left = "left".asInstanceOf[typings.ipp.ippStrings.left]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def right: typings.ipp.ippStrings.right = "right".asInstanceOf[typings.ipp.ippStrings.right]
+  inline def right: typings.ipp.ippStrings.right = "right".asInstanceOf[typings.ipp.ippStrings.right]
 }

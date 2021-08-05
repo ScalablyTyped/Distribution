@@ -28,8 +28,7 @@ object anchorLinkMod {
     @JSImport("antd/lib/anchor/AnchorLink", "default.contextType")
     @js.native
     def contextType: Context[AntAnchor] = js.native
-    @scala.inline
-    def contextType_=(x: Context[AntAnchor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[AntAnchor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -41,8 +40,7 @@ object anchorLinkMod {
       @JSImport("antd/lib/anchor/AnchorLink", "default.defaultProps.href")
       @js.native
       def href: String = js.native
-      @scala.inline
-      def href_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("href")(x.asInstanceOf[js.Any])
+      inline def href_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("href")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -83,47 +81,34 @@ object anchorLinkMod {
   }
   object AnchorLinkProps {
     
-    @scala.inline
-    def apply(href: String): AnchorLinkProps = {
+    inline def apply(href: String): AnchorLinkProps = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnchorLinkProps]
     }
     
-    @scala.inline
-    implicit class AnchorLinkPropsMutableBuilder[Self <: AnchorLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: AnchorLinkProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

@@ -15,31 +15,23 @@ trait ColorPickerMessages extends StObject {
 }
 object ColorPickerMessages {
   
-  @scala.inline
-  def apply(): ColorPickerMessages = {
+  inline def apply(): ColorPickerMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorPickerMessages]
   }
   
-  @scala.inline
-  implicit class ColorPickerMessagesMutableBuilder[Self <: ColorPickerMessages] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPickerMessages](x: Self) {
     
-    @scala.inline
-    def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setPreviewInput(value: String): Self = StObject.set(x, "previewInput", value.asInstanceOf[js.Any])
+    inline def setPreviewInput(value: String): Self = StObject.set(x, "previewInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewInputUndefined: Self = StObject.set(x, "previewInput", js.undefined)
+    inline def setPreviewInputUndefined: Self = StObject.set(x, "previewInput", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ trait APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.
 }
 object APIBaseContract {
   
-  @scala.inline
-  def apply[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT](
+  inline def apply[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT](
     getCallbackReturn: (PARAM, CONTEXT) => CALLBACK_RETURN,
     getContext: PARAM => CONTEXT,
     getFinalParam: (PARAM, CONTEXT) => js.Any,
@@ -32,19 +31,14 @@ object APIBaseContract {
     __obj.asInstanceOf[APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT]]
   }
   
-  @scala.inline
-  implicit class APIBaseContractMutableBuilder[Self <: APIBaseContract[?, ?, ?, ?], PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT] (val x: Self & (APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT])) extends AnyVal {
+  extension [Self <: APIBaseContract[?, ?, ?, ?], PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT](x: Self & (APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT])) {
     
-    @scala.inline
-    def setGetCallbackReturn(value: (PARAM, CONTEXT) => CALLBACK_RETURN): Self = StObject.set(x, "getCallbackReturn", js.Any.fromFunction2(value))
+    inline def setGetCallbackReturn(value: (PARAM, CONTEXT) => CALLBACK_RETURN): Self = StObject.set(x, "getCallbackReturn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetContext(value: PARAM => CONTEXT): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+    inline def setGetContext(value: PARAM => CONTEXT): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFinalParam(value: (PARAM, CONTEXT) => js.Any): Self = StObject.set(x, "getFinalParam", js.Any.fromFunction2(value))
+    inline def setGetFinalParam(value: (PARAM, CONTEXT) => js.Any): Self = StObject.set(x, "getFinalParam", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRun(value: js.Any => Promise[PROMISE_RETURN]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: js.Any => Promise[PROMISE_RETURN]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

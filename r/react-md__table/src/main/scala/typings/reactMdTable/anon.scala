@@ -26,8 +26,7 @@ object anon {
   }
   object RequiredTableConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableBorders: Boolean,
       disableHover: Boolean,
       hAlign: TableCellHorizontalAlignment,
@@ -39,26 +38,19 @@ object anon {
       __obj.asInstanceOf[RequiredTableConfig]
     }
     
-    @scala.inline
-    implicit class RequiredTableConfigMutableBuilder[Self <: RequiredTableConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredTableConfig](x: Self) {
       
-      @scala.inline
-      def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
+      inline def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
+      inline def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWrap(value: Boolean | padded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
+      inline def setLineWrap(value: Boolean | padded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlign(value: TableCellVerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: TableCellVerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
     }
   }
 }

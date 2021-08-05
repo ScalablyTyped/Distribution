@@ -14,25 +14,19 @@ trait SpecSource extends StObject {
 }
 object SpecSource {
   
-  @scala.inline
-  def apply(): SpecSource = {
+  inline def apply(): SpecSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpecSource]
   }
   
-  @scala.inline
-  implicit class SpecSourceMutableBuilder[Self <: SpecSource] (val x: Self) extends AnyVal {
+  extension [Self <: SpecSource](x: Self) {
     
-    @scala.inline
-    def setGameServerConfigName(value: String): Self = StObject.set(x, "gameServerConfigName", value.asInstanceOf[js.Any])
+    inline def setGameServerConfigName(value: String): Self = StObject.set(x, "gameServerConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerConfigNameUndefined: Self = StObject.set(x, "gameServerConfigName", js.undefined)
+    inline def setGameServerConfigNameUndefined: Self = StObject.set(x, "gameServerConfigName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

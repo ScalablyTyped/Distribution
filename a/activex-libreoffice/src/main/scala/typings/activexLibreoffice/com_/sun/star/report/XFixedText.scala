@@ -29,8 +29,7 @@ trait XFixedText
 }
 object XFixedText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharCaseMap: Double,
     CharColor: Color,
@@ -150,10 +149,8 @@ object XFixedText {
     __obj.asInstanceOf[XFixedText]
   }
   
-  @scala.inline
-  implicit class XFixedTextMutableBuilder[Self <: XFixedText] (val x: Self) extends AnyVal {
+  extension [Self <: XFixedText](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
   }
 }

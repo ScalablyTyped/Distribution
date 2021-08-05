@@ -12,16 +12,13 @@ trait OmitEnvironmentAliasProps extends StObject {
 }
 object OmitEnvironmentAliasProps {
   
-  @scala.inline
-  def apply(environment: MetaLinkProps): OmitEnvironmentAliasProps = {
+  inline def apply(environment: MetaLinkProps): OmitEnvironmentAliasProps = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitEnvironmentAliasProps]
   }
   
-  @scala.inline
-  implicit class OmitEnvironmentAliasPropsMutableBuilder[Self <: OmitEnvironmentAliasProps] (val x: Self) extends AnyVal {
+  extension [Self <: OmitEnvironmentAliasProps](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: MetaLinkProps): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: MetaLinkProps): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
   }
 }

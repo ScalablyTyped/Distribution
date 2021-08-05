@@ -16,18 +16,18 @@ object nodeBrowserFetcherMod {
     def this(projectRoot: String) = this()
     def this(projectRoot: String, options: BrowserFetcherOptions) = this()
     
-    var _downloadHost: js.Any = js.native
+    /* private */ var _downloadHost: js.Any = js.native
     
-    var _downloadsFolder: js.Any = js.native
+    /* private */ var _downloadsFolder: js.Any = js.native
     
     /**
       * @internal
       */
     def _getFolderPath(revision: String): String = js.native
     
-    var _platform: js.Any = js.native
+    /* private */ var _platform: js.Any = js.native
     
-    var _product: js.Any = js.native
+    /* private */ var _product: js.Any = js.native
     
     /**
       * Initiates a HEAD request to check if the revision is available.
@@ -90,7 +90,7 @@ object nodeBrowserFetcherMod {
       */
     def revisionInfo(revision: String): BrowserFetcherRevisionInfo = js.native
     
-    var setPlatform: js.Any = js.native
+    /* private */ var setPlatform: js.Any = js.native
   }
   
   trait BrowserFetcherOptions extends StObject {
@@ -105,38 +105,28 @@ object nodeBrowserFetcherMod {
   }
   object BrowserFetcherOptions {
     
-    @scala.inline
-    def apply(): BrowserFetcherOptions = {
+    inline def apply(): BrowserFetcherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserFetcherOptions]
     }
     
-    @scala.inline
-    implicit class BrowserFetcherOptionsMutableBuilder[Self <: BrowserFetcherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserFetcherOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+      inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     }
   }
   
@@ -156,8 +146,7 @@ object nodeBrowserFetcherMod {
   }
   object BrowserFetcherRevisionInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       executablePath: String,
       folderPath: String,
       local: Boolean,
@@ -169,26 +158,19 @@ object nodeBrowserFetcherMod {
       __obj.asInstanceOf[BrowserFetcherRevisionInfo]
     }
     
-    @scala.inline
-    implicit class BrowserFetcherRevisionInfoMutableBuilder[Self <: BrowserFetcherRevisionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserFetcherRevisionInfo](x: Self) {
       
-      @scala.inline
-      def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
+      inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
+      inline def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,16 +183,12 @@ object nodeBrowserFetcherMod {
   trait Platform extends StObject
   object Platform {
     
-    @scala.inline
-    def linux: typings.puppeteerCore.puppeteerCoreStrings.linux = "linux".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.linux]
+    inline def linux: typings.puppeteerCore.puppeteerCoreStrings.linux = "linux".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.linux]
     
-    @scala.inline
-    def mac: typings.puppeteerCore.puppeteerCoreStrings.mac = "mac".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.mac]
+    inline def mac: typings.puppeteerCore.puppeteerCoreStrings.mac = "mac".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.mac]
     
-    @scala.inline
-    def win32: typings.puppeteerCore.puppeteerCoreStrings.win32 = "win32".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.win32]
+    inline def win32: typings.puppeteerCore.puppeteerCoreStrings.win32 = "win32".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.win32]
     
-    @scala.inline
-    def win64: typings.puppeteerCore.puppeteerCoreStrings.win64 = "win64".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.win64]
+    inline def win64: typings.puppeteerCore.puppeteerCoreStrings.win64 = "win64".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.win64]
   }
 }

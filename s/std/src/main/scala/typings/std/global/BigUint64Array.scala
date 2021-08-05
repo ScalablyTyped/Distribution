@@ -22,6 +22,5 @@ class BigUint64Array ()
 }
 object BigUint64Array {
   
-  @scala.inline
-  def apply: BigUint64ArrayConstructor = js.Dynamic.global.selectDynamic("BigUint64Array").asInstanceOf[BigUint64ArrayConstructor]
+  inline def apply: BigUint64ArrayConstructor = js.Dynamic.global.selectDynamic("BigUint64Array").asInstanceOf[BigUint64ArrayConstructor]
 }

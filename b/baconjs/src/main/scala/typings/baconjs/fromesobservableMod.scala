@@ -11,6 +11,5 @@ object fromesobservableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](_observable: js.Any): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_observable.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def default[V](_observable: js.Any): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_observable.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
 }

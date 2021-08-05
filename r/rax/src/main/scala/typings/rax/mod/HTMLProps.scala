@@ -13,8 +13,7 @@ trait HTMLProps[T]
      with ClassAttributes[T]
 object HTMLProps {
   
-  @scala.inline
-  def apply[T](): HTMLProps[T] = {
+  inline def apply[T](): HTMLProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTMLProps[T]]
   }

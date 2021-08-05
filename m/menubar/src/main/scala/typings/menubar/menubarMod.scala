@@ -49,21 +49,21 @@ object menubarMod {
     def this(app: App) = this()
     def this(app: App, options: PartialOptions) = this()
     
-    var _app: js.Any = js.native
+    /* private */ var _app: js.Any = js.native
     
-    var _blurTimeout: js.Any = js.native
+    /* private */ var _blurTimeout: js.Any = js.native
     
-    var _browserWindow: js.Any = js.native
+    /* private */ var _browserWindow: js.Any = js.native
     
-    var _cachedBounds: js.Any = js.native
+    /* private */ var _cachedBounds: js.Any = js.native
     
-    var _isVisible: js.Any = js.native
+    /* private */ var _isVisible: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _positioner: js.Any = js.native
+    /* private */ var _positioner: js.Any = js.native
     
-    var _tray: js.Any = js.native
+    /* private */ var _tray: js.Any = js.native
     
     /**
       * The Electron [App](https://electronjs.org/docs/api/app)
@@ -71,7 +71,7 @@ object menubarMod {
       */
     def app: App = js.native
     
-    var appReady: js.Any = js.native
+    /* private */ var appReady: js.Any = js.native
     
     /**
       * Callback on tray icon click or double-click.
@@ -79,9 +79,9 @@ object menubarMod {
       * @param e
       * @param bounds
       */
-    var clicked: js.Any = js.native
+    /* private */ var clicked: js.Any = js.native
     
-    var createWindow: js.Any = js.native
+    /* private */ var createWindow: js.Any = js.native
     
     /**
       * Retrieve a menubar option.
@@ -208,6 +208,6 @@ object menubarMod {
       */
     def window: js.UndefOr[BrowserWindow] = js.native
     
-    var windowClear: js.Any = js.native
+    /* private */ var windowClear: js.Any = js.native
   }
 }

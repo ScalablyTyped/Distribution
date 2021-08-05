@@ -27,15 +27,15 @@ object rangeMod {
       */
     def this(start: Double, stop: Double, step: Double) = this()
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _length: js.Any = js.native
+    /* private */ var _length: js.Any = js.native
     
-    var _start: js.Any = js.native
+    /* private */ var _start: js.Any = js.native
     
-    var _step: js.Any = js.native
+    /* private */ var _step: js.Any = js.native
     
-    var _stop: js.Any = js.native
+    /* private */ var _stop: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -70,12 +70,8 @@ object rangeMod {
     override def next(): js.UndefOr[Double] = js.native
   }
   
-  @scala.inline
-  def range(start: Double): IIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[IIterator[Double]]
-  @scala.inline
-  def range(start: Double, stop: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
-  @scala.inline
-  def range(start: Double, stop: Double, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
-  @scala.inline
-  def range(start: Double, stop: Unit, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
+  inline def range(start: Double): IIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[IIterator[Double]]
+  inline def range(start: Double, stop: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
+  inline def range(start: Double, stop: Double, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
+  inline def range(start: Double, stop: Unit, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
 }

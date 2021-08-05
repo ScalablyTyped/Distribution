@@ -20,20 +20,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setSummaryReporter(value: SummaryReporterConfig): Self = StObject.set(x, "summaryReporter", value.asInstanceOf[js.Any])
+      inline def setSummaryReporter(value: SummaryReporterConfig): Self = StObject.set(x, "summaryReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryReporterUndefined: Self = StObject.set(x, "summaryReporter", js.undefined)
+      inline def setSummaryReporterUndefined: Self = StObject.set(x, "summaryReporter", js.undefined)
     }
   }
   
@@ -60,32 +56,24 @@ object mod {
   }
   object SummaryReporterConfig {
     
-    @scala.inline
-    def apply(): SummaryReporterConfig = {
+    inline def apply(): SummaryReporterConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SummaryReporterConfig]
     }
     
-    @scala.inline
-    implicit class SummaryReporterConfigMutableBuilder[Self <: SummaryReporterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SummaryReporterConfig](x: Self) {
       
-      @scala.inline
-      def setOverviewColumn(value: Boolean): Self = StObject.set(x, "overviewColumn", value.asInstanceOf[js.Any])
+      inline def setOverviewColumn(value: Boolean): Self = StObject.set(x, "overviewColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverviewColumnUndefined: Self = StObject.set(x, "overviewColumn", js.undefined)
+      inline def setOverviewColumnUndefined: Self = StObject.set(x, "overviewColumn", js.undefined)
       
-      @scala.inline
-      def setShow(value: failed | skipped | all): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: failed | skipped | all): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setSpecLength(value: Double): Self = StObject.set(x, "specLength", value.asInstanceOf[js.Any])
+      inline def setSpecLength(value: Double): Self = StObject.set(x, "specLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecLengthUndefined: Self = StObject.set(x, "specLength", js.undefined)
+      inline def setSpecLengthUndefined: Self = StObject.set(x, "specLength", js.undefined)
     }
   }
 }

@@ -18,8 +18,7 @@ trait parseDateTimeOptions extends StObject {
 }
 object parseDateTimeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dateFormat: String,
     dateSettings: String,
     dateTimeString: String,
@@ -30,22 +29,16 @@ object parseDateTimeOptions {
     __obj.asInstanceOf[parseDateTimeOptions]
   }
   
-  @scala.inline
-  implicit class parseDateTimeOptionsMutableBuilder[Self <: parseDateTimeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: parseDateTimeOptions](x: Self) {
     
-    @scala.inline
-    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateSettings(value: String): Self = StObject.set(x, "dateSettings", value.asInstanceOf[js.Any])
+    inline def setDateSettings(value: String): Self = StObject.set(x, "dateSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeString(value: String): Self = StObject.set(x, "dateTimeString", value.asInstanceOf[js.Any])
+    inline def setDateTimeString(value: String): Self = StObject.set(x, "dateTimeString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+    inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSettings(value: String): Self = StObject.set(x, "timeSettings", value.asInstanceOf[js.Any])
+    inline def setTimeSettings(value: String): Self = StObject.set(x, "timeSettings", value.asInstanceOf[js.Any])
   }
 }

@@ -30,7 +30,7 @@ object retryingClientMod {
       */
     def attemptFetch(request: FetchRequest, hasThrottleEndTimeMillisBackoffCount: ThrottleMetadata): js.Promise[FetchResponse] = js.native
     
-    val client: js.Any = js.native
+    /* private */ val client: js.Any = js.native
     
     /**
       * @throws if response status is not 200 or 304.
@@ -38,9 +38,8 @@ object retryingClientMod {
     /* CompleteClass */
     override def fetch(request: FetchRequest): js.Promise[FetchResponse] = js.native
     
-    val storage: js.Any = js.native
+    /* private */ val storage: js.Any = js.native
   }
   
-  @scala.inline
-  def setAbortableTimeout(signal: RemoteConfigAbortSignal, throttleEndTimeMillis: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAbortableTimeout")(signal.asInstanceOf[js.Any], throttleEndTimeMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setAbortableTimeout(signal: RemoteConfigAbortSignal, throttleEndTimeMillis: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAbortableTimeout")(signal.asInstanceOf[js.Any], throttleEndTimeMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

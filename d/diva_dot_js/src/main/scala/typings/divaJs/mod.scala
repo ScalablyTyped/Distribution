@@ -36,8 +36,7 @@ object mod {
     @JSImport("diva.js", "default.Events")
     @js.native
     def Events: DivaEvent = js.native
-    @scala.inline
-    def Events_=(x: DivaEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Events")(x.asInstanceOf[js.Any])
+    inline def Events_=(x: DivaEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Events")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("diva.js", "Diva")
@@ -463,8 +462,7 @@ object mod {
     @JSImport("diva.js", "Diva.Events")
     @js.native
     def Events: DivaEvent = js.native
-    @scala.inline
-    def Events_=(x: DivaEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Events")(x.asInstanceOf[js.Any])
+    inline def Events_=(x: DivaEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Events")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("diva.js", "DivaEvent")
@@ -491,20 +489,16 @@ object mod {
   }
   object DivaState {
     
-    @scala.inline
-    def apply(toolbar: Null, viewerCore: typings.divaJs.viewerCoreMod.default): DivaState = {
+    inline def apply(toolbar: Null, viewerCore: typings.divaJs.viewerCoreMod.default): DivaState = {
       val __obj = js.Dynamic.literal(toolbar = toolbar.asInstanceOf[js.Any], viewerCore = viewerCore.asInstanceOf[js.Any])
       __obj.asInstanceOf[DivaState]
     }
     
-    @scala.inline
-    implicit class DivaStateMutableBuilder[Self <: DivaState] (val x: Self) extends AnyVal {
+    extension [Self <: DivaState](x: Self) {
       
-      @scala.inline
-      def setToolbar(value: Null): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: Null): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewerCore(value: typings.divaJs.viewerCoreMod.default): Self = StObject.set(x, "viewerCore", value.asInstanceOf[js.Any])
+      inline def setViewerCore(value: typings.divaJs.viewerCoreMod.default): Self = StObject.set(x, "viewerCore", value.asInstanceOf[js.Any])
     }
   }
 }

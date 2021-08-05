@@ -175,14 +175,11 @@ object mod {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def registerDatasource(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_datasource")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerDatasource(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_datasource")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerDefaultFonts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_default_fonts")().asInstanceOf[Unit]
+  inline def registerDefaultFonts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_default_fonts")().asInstanceOf[Unit]
   
-  @scala.inline
-  def registerDefaultInputPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_default_input_plugins")().asInstanceOf[Unit]
+  inline def registerDefaultInputPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_default_input_plugins")().asInstanceOf[Unit]
   
   @JSImport("mapnik", "settings")
   @js.native

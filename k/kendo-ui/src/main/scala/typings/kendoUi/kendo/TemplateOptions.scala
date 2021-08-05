@@ -12,25 +12,19 @@ trait TemplateOptions extends StObject {
 }
 object TemplateOptions {
   
-  @scala.inline
-  def apply(): TemplateOptions = {
+  inline def apply(): TemplateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateOptions]
   }
   
-  @scala.inline
-  implicit class TemplateOptionsMutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateOptions](x: Self) {
     
-    @scala.inline
-    def setParamName(value: String): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
+    inline def setParamName(value: String): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamNameUndefined: Self = StObject.set(x, "paramName", js.undefined)
+    inline def setParamNameUndefined: Self = StObject.set(x, "paramName", js.undefined)
     
-    @scala.inline
-    def setUseWithBlock(value: Boolean): Self = StObject.set(x, "useWithBlock", value.asInstanceOf[js.Any])
+    inline def setUseWithBlock(value: Boolean): Self = StObject.set(x, "useWithBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseWithBlockUndefined: Self = StObject.set(x, "useWithBlock", js.undefined)
+    inline def setUseWithBlockUndefined: Self = StObject.set(x, "useWithBlock", js.undefined)
   }
 }

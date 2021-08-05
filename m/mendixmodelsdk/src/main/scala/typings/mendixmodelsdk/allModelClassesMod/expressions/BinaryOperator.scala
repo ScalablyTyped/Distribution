@@ -21,29 +21,25 @@ object BinaryOperator {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.And")
   @js.native
   def And: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def And_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("And")(x.asInstanceOf[js.Any])
+  inline def And_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("And")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Div")
   @js.native
   def Div: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Div_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Div")(x.asInstanceOf[js.Any])
+  inline def Div_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Div")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Divide")
   @js.native
   def Divide: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Divide_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divide")(x.asInstanceOf[js.Any])
+  inline def Divide_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divide")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Equals")
   @js.native
   def Equals: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Equals_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Equals")(x.asInstanceOf[js.Any])
+  inline def Equals_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Equals")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.GreaterThan")
@@ -54,11 +50,9 @@ object BinaryOperator {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.GreaterThanOrEqual")
   @js.native
   def GreaterThanOrEqual: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def GreaterThanOrEqual_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThanOrEqual")(x.asInstanceOf[js.Any])
+  inline def GreaterThanOrEqual_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThanOrEqual")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GreaterThan_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThan")(x.asInstanceOf[js.Any])
+  inline def GreaterThan_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThan")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.LessThan")
@@ -69,58 +63,49 @@ object BinaryOperator {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.LessThanOrEqual")
   @js.native
   def LessThanOrEqual: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def LessThanOrEqual_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThanOrEqual")(x.asInstanceOf[js.Any])
+  inline def LessThanOrEqual_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThanOrEqual")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def LessThan_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThan")(x.asInstanceOf[js.Any])
+  inline def LessThan_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThan")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Minus")
   @js.native
   def Minus: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Minus_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minus")(x.asInstanceOf[js.Any])
+  inline def Minus_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minus")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Mod")
   @js.native
   def Mod: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Mod_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mod")(x.asInstanceOf[js.Any])
+  inline def Mod_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mod")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Multiply")
   @js.native
   def Multiply: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Multiply_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multiply")(x.asInstanceOf[js.Any])
+  inline def Multiply_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multiply")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.None")
   @js.native
   def None: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def None_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.NotEquals")
   @js.native
   def NotEquals: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def NotEquals_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotEquals")(x.asInstanceOf[js.Any])
+  inline def NotEquals_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotEquals")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Or")
   @js.native
   def Or: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Or_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Or")(x.asInstanceOf[js.Any])
+  inline def Or_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Or")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.BinaryOperator.Plus")
   @js.native
   def Plus: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator = js.native
-  @scala.inline
-  def Plus_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Plus")(x.asInstanceOf[js.Any])
+  inline def Plus_=(x: typings.mendixmodelsdk.expressionsMod.expressions.BinaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Plus")(x.asInstanceOf[js.Any])
 }

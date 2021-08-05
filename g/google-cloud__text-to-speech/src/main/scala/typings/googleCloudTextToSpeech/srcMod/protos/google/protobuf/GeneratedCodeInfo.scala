@@ -51,10 +51,8 @@ object GeneratedCodeInfo {
       * @returns Annotation instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
-    @scala.inline
-    def create(properties: IAnnotation): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def create(properties: IAnnotation): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
     
     /**
       * Decodes an Annotation message from the specified reader or buffer.
@@ -65,14 +63,10 @@ object GeneratedCodeInfo {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
     
     /**
       * Decodes an Annotation message from the specified reader or buffer, length delimited.
@@ -82,10 +76,8 @@ object GeneratedCodeInfo {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
     
     /**
       * Encodes the specified Annotation message. Does not implicitly {@link google.protobuf.GeneratedCodeInfo.Annotation.verify|verify} messages.
@@ -94,10 +86,8 @@ object GeneratedCodeInfo {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IAnnotation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IAnnotation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IAnnotation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IAnnotation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Annotation message, length delimited. Does not implicitly {@link google.protobuf.GeneratedCodeInfo.Annotation.verify|verify} messages.
@@ -106,10 +96,8 @@ object GeneratedCodeInfo {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IAnnotation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IAnnotation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IAnnotation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IAnnotation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an Annotation message from a plain object. Also converts values to their respective internal types.
@@ -117,8 +105,7 @@ object GeneratedCodeInfo {
       * @returns Annotation
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation]
     
     /**
       * Creates a plain object from an Annotation message. Also converts values to other types if specified.
@@ -127,10 +114,8 @@ object GeneratedCodeInfo {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.Annotation,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -141,8 +126,7 @@ object GeneratedCodeInfo {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -151,10 +135,8 @@ object GeneratedCodeInfo {
     * @returns GeneratedCodeInfo instance
     */
   /* static member */
-  @scala.inline
-  def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
-  @scala.inline
-  def create(properties: IGeneratedCodeInfo): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def create(properties: IGeneratedCodeInfo): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
   
   /**
     * Decodes a GeneratedCodeInfo message from the specified reader or buffer.
@@ -165,14 +147,10 @@ object GeneratedCodeInfo {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
-  @scala.inline
-  def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
-  @scala.inline
-  def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
   
   /**
     * Decodes a GeneratedCodeInfo message from the specified reader or buffer, length delimited.
@@ -182,10 +160,8 @@ object GeneratedCodeInfo {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
   
   /**
     * Encodes the specified GeneratedCodeInfo message. Does not implicitly {@link google.protobuf.GeneratedCodeInfo.verify|verify} messages.
@@ -194,10 +170,8 @@ object GeneratedCodeInfo {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IGeneratedCodeInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IGeneratedCodeInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IGeneratedCodeInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IGeneratedCodeInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GeneratedCodeInfo message, length delimited. Does not implicitly {@link google.protobuf.GeneratedCodeInfo.verify|verify} messages.
@@ -206,10 +180,8 @@ object GeneratedCodeInfo {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IGeneratedCodeInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IGeneratedCodeInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IGeneratedCodeInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IGeneratedCodeInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GeneratedCodeInfo message from a plain object. Also converts values to their respective internal types.
@@ -217,8 +189,7 @@ object GeneratedCodeInfo {
     * @returns GeneratedCodeInfo
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
+  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo]
   
   /**
     * Creates a plain object from a GeneratedCodeInfo message. Also converts values to other types if specified.
@@ -227,10 +198,8 @@ object GeneratedCodeInfo {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(
+  inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(
     message: typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo,
     options: IConversionOptions
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -241,6 +210,5 @@ object GeneratedCodeInfo {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

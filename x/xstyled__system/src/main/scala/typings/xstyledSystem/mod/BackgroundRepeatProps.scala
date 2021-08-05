@@ -14,27 +14,22 @@ trait BackgroundRepeatProps extends StObject {
 }
 object BackgroundRepeatProps {
   
-  @scala.inline
-  def apply(): BackgroundRepeatProps = {
+  inline def apply(): BackgroundRepeatProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundRepeatProps]
   }
   
-  @scala.inline
-  implicit class BackgroundRepeatPropsMutableBuilder[Self <: BackgroundRepeatProps] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundRepeatProps](x: Self) {
     
-    @scala.inline
-    def setBackgroundRepeat(
+    inline def setBackgroundRepeat(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any
         ]
     ): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
+    inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
-    @scala.inline
-    def setBackgroundRepeatVarargs(
+    inline def setBackgroundRepeatVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any)*
     ): Self = StObject.set(x, "backgroundRepeat", js.Array(value :_*))
   }

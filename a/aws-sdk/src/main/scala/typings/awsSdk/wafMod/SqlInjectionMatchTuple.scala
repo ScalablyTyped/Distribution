@@ -18,19 +18,15 @@ trait SqlInjectionMatchTuple extends StObject {
 }
 object SqlInjectionMatchTuple {
   
-  @scala.inline
-  def apply(FieldToMatch: FieldToMatch, TextTransformation: TextTransformation): SqlInjectionMatchTuple = {
+  inline def apply(FieldToMatch: FieldToMatch, TextTransformation: TextTransformation): SqlInjectionMatchTuple = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], TextTransformation = TextTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlInjectionMatchTuple]
   }
   
-  @scala.inline
-  implicit class SqlInjectionMatchTupleMutableBuilder[Self <: SqlInjectionMatchTuple] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInjectionMatchTuple](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformation(value: TextTransformation): Self = StObject.set(x, "TextTransformation", value.asInstanceOf[js.Any])
+    inline def setTextTransformation(value: TextTransformation): Self = StObject.set(x, "TextTransformation", value.asInstanceOf[js.Any])
   }
 }

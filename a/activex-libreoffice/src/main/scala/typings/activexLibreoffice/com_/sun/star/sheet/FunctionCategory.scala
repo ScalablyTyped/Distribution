@@ -33,37 +33,26 @@ object FunctionCategory {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ADDIN: `11` = 11.asInstanceOf[`11`]
+    inline def ADDIN: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def DATABASE: `1` = 1.asInstanceOf[`1`]
+    inline def DATABASE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DATETIME: `2` = 2.asInstanceOf[`2`]
+    inline def DATETIME: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FINANCIAL: `3` = 3.asInstanceOf[`3`]
+    inline def FINANCIAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def INFORMATION: `4` = 4.asInstanceOf[`4`]
+    inline def INFORMATION: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def LOGICAL: `5` = 5.asInstanceOf[`5`]
+    inline def LOGICAL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MATHEMATICAL: `6` = 6.asInstanceOf[`6`]
+    inline def MATHEMATICAL: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def MATRIX: `7` = 7.asInstanceOf[`7`]
+    inline def MATRIX: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def SPREADSHEET: `9` = 9.asInstanceOf[`9`]
+    inline def SPREADSHEET: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def STATISTICAL: `8` = 8.asInstanceOf[`8`]
+    inline def STATISTICAL: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def TEXT: `10` = 10.asInstanceOf[`10`]
+    inline def TEXT: `10` = 10.asInstanceOf[`10`]
   }
 }

@@ -17,31 +17,23 @@ trait ExportStats extends StObject {
 }
 object ExportStats {
   
-  @scala.inline
-  def apply(): ExportStats = {
+  inline def apply(): ExportStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportStats]
   }
   
-  @scala.inline
-  implicit class ExportStatsMutableBuilder[Self <: ExportStats] (val x: Self) extends AnyVal {
+  extension [Self <: ExportStats](x: Self) {
     
-    @scala.inline
-    def setExportedArtifactCount(value: String): Self = StObject.set(x, "exportedArtifactCount", value.asInstanceOf[js.Any])
+    inline def setExportedArtifactCount(value: String): Self = StObject.set(x, "exportedArtifactCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportedArtifactCountUndefined: Self = StObject.set(x, "exportedArtifactCount", js.undefined)
+    inline def setExportedArtifactCountUndefined: Self = StObject.set(x, "exportedArtifactCount", js.undefined)
     
-    @scala.inline
-    def setSizeInBytes(value: String): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: String): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytesUndefined: Self = StObject.set(x, "sizeInBytes", js.undefined)
+    inline def setSizeInBytesUndefined: Self = StObject.set(x, "sizeInBytes", js.undefined)
     
-    @scala.inline
-    def setTotalArtifactCount(value: String): Self = StObject.set(x, "totalArtifactCount", value.asInstanceOf[js.Any])
+    inline def setTotalArtifactCount(value: String): Self = StObject.set(x, "totalArtifactCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalArtifactCountUndefined: Self = StObject.set(x, "totalArtifactCount", js.undefined)
+    inline def setTotalArtifactCountUndefined: Self = StObject.set(x, "totalArtifactCount", js.undefined)
   }
 }

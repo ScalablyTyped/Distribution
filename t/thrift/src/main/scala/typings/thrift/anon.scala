@@ -20,17 +20,14 @@ object anon {
   }
   object Client {
     
-    @scala.inline
-    def apply[TClient](Client: InstantiableTClient[TClient]): Client[TClient] = {
+    inline def apply[TClient](Client: InstantiableTClient[TClient]): Client[TClient] = {
       val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Client[TClient]]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client[?], TClient] (val x: Self & Client[TClient]) extends AnyVal {
+    extension [Self <: Client[?], TClient](x: Self & Client[TClient]) {
       
-      @scala.inline
-      def setClient(value: InstantiableTClient[TClient]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+      inline def setClient(value: InstantiableTClient[TClient]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +39,16 @@ object anon {
   }
   object Handler {
     
-    @scala.inline
-    def apply[TProcessor, THandler](handler: THandler, processor: TProcessorConstructor[TProcessor, THandler]): Handler[TProcessor, THandler] = {
+    inline def apply[TProcessor, THandler](handler: THandler, processor: TProcessorConstructor[TProcessor, THandler]): Handler[TProcessor, THandler] = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], processor = processor.asInstanceOf[js.Any])
       __obj.asInstanceOf[Handler[TProcessor, THandler]]
     }
     
-    @scala.inline
-    implicit class HandlerMutableBuilder[Self <: Handler[?, ?], TProcessor, THandler] (val x: Self & (Handler[TProcessor, THandler])) extends AnyVal {
+    extension [Self <: Handler[?, ?], TProcessor, THandler](x: Self & (Handler[TProcessor, THandler])) {
       
-      @scala.inline
-      def setHandler(value: THandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: THandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessor(value: TProcessorConstructor[TProcessor, THandler]): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
+      inline def setProcessor(value: TProcessorConstructor[TProcessor, THandler]): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +77,14 @@ object anon {
   }
   object Processor {
     
-    @scala.inline
-    def apply[THandler, TProcessor](Processor: Instantiable[THandler, TProcessor]): Processor[THandler, TProcessor] = {
+    inline def apply[THandler, TProcessor](Processor: Instantiable[THandler, TProcessor]): Processor[THandler, TProcessor] = {
       val __obj = js.Dynamic.literal(Processor = Processor.asInstanceOf[js.Any])
       __obj.asInstanceOf[Processor[THandler, TProcessor]]
     }
     
-    @scala.inline
-    implicit class ProcessorMutableBuilder[Self <: Processor[?, ?], THandler, TProcessor] (val x: Self & (Processor[THandler, TProcessor])) extends AnyVal {
+    extension [Self <: Processor[?, ?], THandler, TProcessor](x: Self & (Processor[THandler, TProcessor])) {
       
-      @scala.inline
-      def setProcessor(value: Instantiable[THandler, TProcessor]): Self = StObject.set(x, "Processor", value.asInstanceOf[js.Any])
+      inline def setProcessor(value: Instantiable[THandler, TProcessor]): Self = StObject.set(x, "Processor", value.asInstanceOf[js.Any])
     }
   }
 }

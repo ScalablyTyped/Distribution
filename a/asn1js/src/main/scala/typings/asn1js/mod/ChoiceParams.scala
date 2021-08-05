@@ -12,28 +12,21 @@ trait ChoiceParams extends StObject {
 }
 object ChoiceParams {
   
-  @scala.inline
-  def apply(): ChoiceParams = {
+  inline def apply(): ChoiceParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChoiceParams]
   }
   
-  @scala.inline
-  implicit class ChoiceParamsMutableBuilder[Self <: ChoiceParams] (val x: Self) extends AnyVal {
+  extension [Self <: ChoiceParams](x: Self) {
     
-    @scala.inline
-    def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Array[LocalValueBlock]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[LocalValueBlock]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: LocalValueBlock*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: LocalValueBlock*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

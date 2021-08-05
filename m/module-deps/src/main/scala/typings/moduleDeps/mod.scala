@@ -25,10 +25,8 @@ object mod {
     * Return an object transform stream 'd' that expects entry filenames or '{ id: ..., file: ... }' objects
     * as input and produces objects for every dependency from a recursive module traversal as output.
     */
-  @scala.inline
-  def apply(): ModuleDepsObject = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ModuleDepsObject]
-  @scala.inline
-  def apply(opts: Options): ModuleDepsObject = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ModuleDepsObject]
+  inline def apply(): ModuleDepsObject = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ModuleDepsObject]
+  inline def apply(opts: Options): ModuleDepsObject = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ModuleDepsObject]
   
   @JSImport("module-deps", JSImport.Namespace)
   @js.native
@@ -50,35 +48,26 @@ object mod {
   }
   object InputRow {
     
-    @scala.inline
-    def apply(expose: String, file: String, id: String): InputRow = {
+    inline def apply(expose: String, file: String, id: String): InputRow = {
       val __obj = js.Dynamic.literal(expose = expose.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputRow]
     }
     
-    @scala.inline
-    implicit class InputRowMutableBuilder[Self <: InputRow] (val x: Self) extends AnyVal {
+    extension [Self <: InputRow](x: Self) {
       
-      @scala.inline
-      def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+      inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
-      @scala.inline
-      def setExpose(value: String): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
+      inline def setExpose(value: String): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoparse(value: Boolean): Self = StObject.set(x, "noparse", value.asInstanceOf[js.Any])
+      inline def setNoparse(value: Boolean): Self = StObject.set(x, "noparse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoparseUndefined: Self = StObject.set(x, "noparse", js.undefined)
+      inline def setNoparseUndefined: Self = StObject.set(x, "noparse", js.undefined)
     }
   }
   
@@ -92,29 +81,22 @@ object mod {
   }
   object InputTransform {
     
-    @scala.inline
-    def apply(options: js.Any, transform: String | js.Function0[js.Any]): InputTransform = {
+    inline def apply(options: js.Any, transform: String | js.Function0[js.Any]): InputTransform = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputTransform]
     }
     
-    @scala.inline
-    implicit class InputTransformMutableBuilder[Self <: InputTransform] (val x: Self) extends AnyVal {
+    extension [Self <: InputTransform](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: String | js.Function0[js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: String | js.Function0[js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformFunction0(value: () => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
+      inline def setTransformFunction0(value: () => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
     }
   }
   
@@ -309,127 +291,88 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      @scala.inline
-      def setCache(value: StringDictionary[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: StringDictionary[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setDetect(value: /* source */ String => js.Array[String]): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
+      inline def setDetect(value: /* source */ String => js.Array[String]): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDetectUndefined: Self = StObject.set(x, "detect", js.undefined)
+      inline def setDetectUndefined: Self = StObject.set(x, "detect", js.undefined)
       
-      @scala.inline
-      def setExpose(value: StringDictionary[String]): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
+      inline def setExpose(value: StringDictionary[String]): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
+      inline def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFileCache(value: StringDictionary[String]): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
+      inline def setFileCache(value: StringDictionary[String]): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
+      inline def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* id */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* id */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setGlobalTransform(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransform", value.asInstanceOf[js.Any])
+      inline def setGlobalTransform(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTransformUndefined: Self = StObject.set(x, "globalTransform", js.undefined)
+      inline def setGlobalTransformUndefined: Self = StObject.set(x, "globalTransform", js.undefined)
       
-      @scala.inline
-      def setGlobalTransformVarargs(value: js.Any*): Self = StObject.set(x, "globalTransform", js.Array(value :_*))
+      inline def setGlobalTransformVarargs(value: js.Any*): Self = StObject.set(x, "globalTransform", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreMissing(value: Boolean): Self = StObject.set(x, "ignoreMissing", value.asInstanceOf[js.Any])
+      inline def setIgnoreMissing(value: Boolean): Self = StObject.set(x, "ignoreMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreMissingUndefined: Self = StObject.set(x, "ignoreMissing", js.undefined)
+      inline def setIgnoreMissingUndefined: Self = StObject.set(x, "ignoreMissing", js.undefined)
       
-      @scala.inline
-      def setModules(value: StringDictionary[js.Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: StringDictionary[js.Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setNoParse(value: Boolean | js.Array[String]): Self = StObject.set(x, "noParse", value.asInstanceOf[js.Any])
+      inline def setNoParse(value: Boolean | js.Array[String]): Self = StObject.set(x, "noParse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoParseUndefined: Self = StObject.set(x, "noParse", js.undefined)
+      inline def setNoParseUndefined: Self = StObject.set(x, "noParse", js.undefined)
       
-      @scala.inline
-      def setNoParseVarargs(value: String*): Self = StObject.set(x, "noParse", js.Array(value :_*))
+      inline def setNoParseVarargs(value: String*): Self = StObject.set(x, "noParse", js.Array(value :_*))
       
-      @scala.inline
-      def setPackageCache(value: StringDictionary[js.Any]): Self = StObject.set(x, "packageCache", value.asInstanceOf[js.Any])
+      inline def setPackageCache(value: StringDictionary[js.Any]): Self = StObject.set(x, "packageCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageCacheUndefined: Self = StObject.set(x, "packageCache", js.undefined)
+      inline def setPackageCacheUndefined: Self = StObject.set(x, "packageCache", js.undefined)
       
-      @scala.inline
-      def setPackageFilter(value: (/* pkg */ PackageObject, /* dir */ String) => PackageObject): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
+      inline def setPackageFilter(value: (/* pkg */ PackageObject, /* dir */ String) => PackageObject): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
+      inline def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setPersistentCache(
+      inline def setPersistentCache(
         value: (/* file */ String, /* id */ String, /* pkg */ PackageObject, /* fallback */ js.Function2[/* dataAsString */ String, /* cb */ CacheCallback, Unit], /* cb */ CacheCallback) => Unit
       ): Self = StObject.set(x, "persistentCache", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setPersistentCacheUndefined: Self = StObject.set(x, "persistentCache", js.undefined)
+      inline def setPersistentCacheUndefined: Self = StObject.set(x, "persistentCache", js.undefined)
       
-      @scala.inline
-      def setPostFilter(value: (/* id */ String, /* file */ String, /* pkg */ PackageObject) => Unit | Boolean): Self = StObject.set(x, "postFilter", js.Any.fromFunction3(value))
+      inline def setPostFilter(value: (/* id */ String, /* file */ String, /* pkg */ PackageObject) => Unit | Boolean): Self = StObject.set(x, "postFilter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostFilterUndefined: Self = StObject.set(x, "postFilter", js.undefined)
+      inline def setPostFilterUndefined: Self = StObject.set(x, "postFilter", js.undefined)
       
-      @scala.inline
-      def setResolve(
+      inline def setResolve(
         value: (/* id */ String, /* opts */ SyncOpts, /* cb */ js.Function4[
               /* err */ js.UndefOr[Error | Null], 
               /* file */ js.UndefOr[String], 
@@ -439,26 +382,19 @@ object mod {
             ]) => Unit
       ): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      @scala.inline
-      def setTransform(value: String | js.Array[String]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: String | js.Array[String]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformKey(value: js.Array[String]): Self = StObject.set(x, "transformKey", value.asInstanceOf[js.Any])
+      inline def setTransformKey(value: js.Array[String]): Self = StObject.set(x, "transformKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformKeyUndefined: Self = StObject.set(x, "transformKey", js.undefined)
+      inline def setTransformKeyUndefined: Self = StObject.set(x, "transformKey", js.undefined)
       
-      @scala.inline
-      def setTransformKeyVarargs(value: String*): Self = StObject.set(x, "transformKey", js.Array(value :_*))
+      inline def setTransformKeyVarargs(value: String*): Self = StObject.set(x, "transformKey", js.Array(value :_*))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransformVarargs(value: String*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: String*): Self = StObject.set(x, "transform", js.Array(value :_*))
     }
   }
   
@@ -483,8 +419,7 @@ object mod {
   }
   object TransformObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deps: StringDictionary[js.Any],
       entry: Boolean,
       expose: String,
@@ -496,26 +431,19 @@ object mod {
       __obj.asInstanceOf[TransformObject]
     }
     
-    @scala.inline
-    implicit class TransformObjectMutableBuilder[Self <: TransformObject] (val x: Self) extends AnyVal {
+    extension [Self <: TransformObject](x: Self) {
       
-      @scala.inline
-      def setDeps(value: StringDictionary[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: StringDictionary[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpose(value: String): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
+      inline def setExpose(value: String): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

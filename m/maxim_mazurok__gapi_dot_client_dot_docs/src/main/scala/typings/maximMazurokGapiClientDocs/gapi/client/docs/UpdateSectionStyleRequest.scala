@@ -23,31 +23,23 @@ trait UpdateSectionStyleRequest extends StObject {
 }
 object UpdateSectionStyleRequest {
   
-  @scala.inline
-  def apply(): UpdateSectionStyleRequest = {
+  inline def apply(): UpdateSectionStyleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSectionStyleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSectionStyleRequestMutableBuilder[Self <: UpdateSectionStyleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSectionStyleRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSectionStyle(value: SectionStyle): Self = StObject.set(x, "sectionStyle", value.asInstanceOf[js.Any])
+    inline def setSectionStyle(value: SectionStyle): Self = StObject.set(x, "sectionStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionStyleUndefined: Self = StObject.set(x, "sectionStyle", js.undefined)
+    inline def setSectionStyleUndefined: Self = StObject.set(x, "sectionStyle", js.undefined)
   }
 }

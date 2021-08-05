@@ -32,8 +32,7 @@ object listItemSectionMod {
   @js.native
   val default: ComponentClass[ListItemSectionProps, ComponentState] = js.native
   
-  @scala.inline
-  def listItemSectionBuilder(data: Suffix): OverrideOptionStyleValue = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemSectionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[OverrideOptionStyleValue]
+  inline def listItemSectionBuilder(data: Suffix): OverrideOptionStyleValue = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemSectionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[OverrideOptionStyleValue]
   
   trait ListItemSectionProps extends StObject {
     
@@ -53,56 +52,40 @@ object listItemSectionMod {
   }
   object ListItemSectionProps {
     
-    @scala.inline
-    def apply(): ListItemSectionProps = {
+    inline def apply(): ListItemSectionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListItemSectionProps]
     }
     
-    @scala.inline
-    implicit class ListItemSectionPropsMutableBuilder[Self <: ListItemSectionProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemSectionProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: ListItemSectionTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ListItemSectionTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -115,16 +98,12 @@ object listItemSectionMod {
   trait ListItemSectionTypes extends StObject
   object ListItemSectionTypes {
     
-    @scala.inline
-    def divider: typings.wixStyleReact.wixStyleReactStrings.divider = "divider".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.divider]
+    inline def divider: typings.wixStyleReact.wixStyleReactStrings.divider = "divider".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.divider]
     
-    @scala.inline
-    def subheader: typings.wixStyleReact.wixStyleReactStrings.subheader = "subheader".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.subheader]
+    inline def subheader: typings.wixStyleReact.wixStyleReactStrings.subheader = "subheader".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.subheader]
     
-    @scala.inline
-    def title: typings.wixStyleReact.wixStyleReactStrings.title = "title".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.title]
+    inline def title: typings.wixStyleReact.wixStyleReactStrings.title = "title".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.title]
     
-    @scala.inline
-    def whitespace: typings.wixStyleReact.wixStyleReactStrings.whitespace = "whitespace".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.whitespace]
+    inline def whitespace: typings.wixStyleReact.wixStyleReactStrings.whitespace = "whitespace".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.whitespace]
   }
 }

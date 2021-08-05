@@ -12,19 +12,15 @@ trait PointCloudLayerLayerviewCreateErrorEvent extends StObject {
 }
 object PointCloudLayerLayerviewCreateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, view: View): PointCloudLayerLayerviewCreateErrorEvent = {
+  inline def apply(error: Error, view: View): PointCloudLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudLayerLayerviewCreateErrorEvent]
   }
   
-  @scala.inline
-  implicit class PointCloudLayerLayerviewCreateErrorEventMutableBuilder[Self <: PointCloudLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudLayerLayerviewCreateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -13,10 +13,8 @@ object scrollToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(y: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(y.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(y: Double, options: ScrollToOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(y.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(y: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(y.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(y: Double, options: ScrollToOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(y.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ScrollToOptions extends StObject {
     
@@ -31,32 +29,24 @@ object scrollToMod {
   }
   object ScrollToOptions {
     
-    @scala.inline
-    def apply(): ScrollToOptions = {
+    inline def apply(): ScrollToOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollToOptions]
     }
     
-    @scala.inline
-    implicit class ScrollToOptionsMutableBuilder[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollToOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: () => HTMLElement | Window | Document): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => HTMLElement | Window | Document): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
     }
   }
 }

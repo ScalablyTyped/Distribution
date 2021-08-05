@@ -14,20 +14,16 @@ object mapMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (/* item */ js.Any, /* index */ Double, /* arr */ js.Array[js.Any]) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      inline def setCallback(value: (/* item */ js.Any, /* index */ Double, /* arr */ js.Array[js.Any]) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     }
   }
 }

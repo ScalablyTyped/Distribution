@@ -33,35 +33,25 @@ object raceMod {
     
     /* protected */ def _next(observable: js.Any): Unit = js.native
     
-    var hasFirst: js.Any = js.native
+    /* private */ var hasFirst: js.Any = js.native
     
     def notifyNext(_outerValue: T, innerValue: T, outerIndex: Double): Unit = js.native
     
-    var observables: js.Any = js.native
+    /* private */ var observables: js.Any = js.native
     
-    var subscriptions: js.Any = js.native
+    /* private */ var subscriptions: js.Any = js.native
   }
   
-  @scala.inline
-  def race(arg: js.Array[ObservableInput[js.Any]]): Observable[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Object]]
-  @scala.inline
-  def race(observables: ObservableInput[js.Any]*): Observable[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Object]]
-  @scala.inline
-  def race[A](a: ObservableInput[A]): Observable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any]).asInstanceOf[Observable[A]]
-  @scala.inline
-  def race[A, B](arg: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[A | B] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B]]
-  @scala.inline
-  def race[A, B](a: ObservableInput[A], b: ObservableInput[B]): Observable[A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B]]
-  @scala.inline
-  def race[A, B, C](arg: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[A | B | C] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C]]
-  @scala.inline
-  def race[A, B, C](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C]): Observable[A | B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C]]
-  @scala.inline
-  def race[A, B, C, D](arg: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[A | B | C | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C | D]]
-  @scala.inline
-  def race[A, B, C, D](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C], d: ObservableInput[D]): Observable[A | B | C | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C | D]]
-  @scala.inline
-  def race[A, B, C, D, E](
+  inline def race(arg: js.Array[ObservableInput[js.Any]]): Observable[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Object]]
+  inline def race(observables: ObservableInput[js.Any]*): Observable[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Object]]
+  inline def race[A](a: ObservableInput[A]): Observable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any]).asInstanceOf[Observable[A]]
+  inline def race[A, B](arg: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[A | B] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B]]
+  inline def race[A, B](a: ObservableInput[A], b: ObservableInput[B]): Observable[A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B]]
+  inline def race[A, B, C](arg: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[A | B | C] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C]]
+  inline def race[A, B, C](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C]): Observable[A | B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C]]
+  inline def race[A, B, C, D](arg: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[A | B | C | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C | D]]
+  inline def race[A, B, C, D](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C], d: ObservableInput[D]): Observable[A | B | C | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C | D]]
+  inline def race[A, B, C, D, E](
     arg: js.Tuple5[
       ObservableInput[A], 
       ObservableInput[B], 
@@ -70,8 +60,7 @@ object raceMod {
       ObservableInput[E]
     ]
   ): Observable[A | B | C | D | E] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C | D | E]]
-  @scala.inline
-  def race[A, B, C, D, E](
+  inline def race[A, B, C, D, E](
     a: ObservableInput[A],
     b: ObservableInput[B],
     c: ObservableInput[C],
@@ -79,11 +68,8 @@ object raceMod {
     e: ObservableInput[E]
   ): Observable[A | B | C | D | E] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C | D | E]]
   
-  @scala.inline
-  def race_A[A](arg: js.Array[ObservableInput[A]]): Observable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A]]
+  inline def race_A[A](arg: js.Array[ObservableInput[A]]): Observable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A]]
   
-  @scala.inline
-  def race_T[T](arg: js.Array[ObservableInput[T]]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
-  @scala.inline
-  def race_T[T](observables: ObservableInput[T]*): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def race_T[T](arg: js.Array[ObservableInput[T]]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def race_T[T](observables: ObservableInput[T]*): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
 }

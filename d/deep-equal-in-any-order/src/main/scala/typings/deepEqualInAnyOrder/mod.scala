@@ -16,19 +16,16 @@ object mod {
       }
       object Deep {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           equalInAnyOrder: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Equal */ js.Any
         ): Deep = {
           val __obj = js.Dynamic.literal(equalInAnyOrder = equalInAnyOrder.asInstanceOf[js.Any])
           __obj.asInstanceOf[Deep]
         }
         
-        @scala.inline
-        implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+        extension [Self <: Deep](x: Self) {
           
-          @scala.inline
-          def setEqualInAnyOrder(
+          inline def setEqualInAnyOrder(
             value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Equal */ js.Any
           ): Self = StObject.set(x, "equalInAnyOrder", value.asInstanceOf[js.Any])
         }

@@ -9,8 +9,7 @@ trait CoreWindowEventArgs
      with ICoreWindowEventArgs
 object CoreWindowEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean): CoreWindowEventArgs = {
+  inline def apply(handled: Boolean): CoreWindowEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreWindowEventArgs]
   }

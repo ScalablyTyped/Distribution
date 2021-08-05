@@ -10,16 +10,13 @@ trait RefObject extends StObject {
 }
 object RefObject {
   
-  @scala.inline
-  def apply(current: js.Any): RefObject = {
+  inline def apply(current: js.Any): RefObject = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefObject]
   }
   
-  @scala.inline
-  implicit class RefObjectMutableBuilder[Self <: RefObject] (val x: Self) extends AnyVal {
+  extension [Self <: RefObject](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }
 }

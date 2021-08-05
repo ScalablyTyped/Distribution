@@ -36,43 +36,31 @@ trait ApigatewayPolicy extends StObject {
 }
 object ApigatewayPolicy {
   
-  @scala.inline
-  def apply(): ApigatewayPolicy = {
+  inline def apply(): ApigatewayPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayPolicy]
   }
   
-  @scala.inline
-  implicit class ApigatewayPolicyMutableBuilder[Self <: ApigatewayPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayPolicy](x: Self) {
     
-    @scala.inline
-    def setAuditConfigs(value: js.Array[ApigatewayAuditConfig]): Self = StObject.set(x, "auditConfigs", value.asInstanceOf[js.Any])
+    inline def setAuditConfigs(value: js.Array[ApigatewayAuditConfig]): Self = StObject.set(x, "auditConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditConfigsUndefined: Self = StObject.set(x, "auditConfigs", js.undefined)
+    inline def setAuditConfigsUndefined: Self = StObject.set(x, "auditConfigs", js.undefined)
     
-    @scala.inline
-    def setAuditConfigsVarargs(value: ApigatewayAuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value :_*))
+    inline def setAuditConfigsVarargs(value: ApigatewayAuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setBindings(value: js.Array[ApigatewayBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: js.Array[ApigatewayBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    @scala.inline
-    def setBindingsVarargs(value: ApigatewayBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: ApigatewayBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

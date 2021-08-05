@@ -18,8 +18,7 @@ trait PlaylistObjectFull
 }
 object PlaylistObjectFull {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collaborative: Boolean,
     external_urls: ExternalUrlObject,
     followers: FollowersObject,
@@ -38,13 +37,10 @@ object PlaylistObjectFull {
     __obj.asInstanceOf[PlaylistObjectFull]
   }
   
-  @scala.inline
-  implicit class PlaylistObjectFullMutableBuilder[Self <: PlaylistObjectFull] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistObjectFull](x: Self) {
     
-    @scala.inline
-    def setFollowers(value: FollowersObject): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+    inline def setFollowers(value: FollowersObject): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracks(value: PagingObject[PlaylistTrackObject]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: PagingObject[PlaylistTrackObject]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait ExternalData extends StObject {
 }
 object ExternalData {
   
-  @scala.inline
-  def apply(): ExternalData = {
+  inline def apply(): ExternalData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalData]
   }
   
-  @scala.inline
-  implicit class ExternalDataMutableBuilder[Self <: ExternalData] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalData](x: Self) {
     
-    @scala.inline
-    def setSha256Hash(value: String): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
+    inline def setSha256Hash(value: String): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
+    inline def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

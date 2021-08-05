@@ -19,8 +19,7 @@ trait XTransactedObject
 }
 object XTransactedObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     commit: () => Unit,
     queryInterface: `type` => js.Any,
@@ -31,13 +30,10 @@ object XTransactedObject {
     __obj.asInstanceOf[XTransactedObject]
   }
   
-  @scala.inline
-  implicit class XTransactedObjectMutableBuilder[Self <: XTransactedObject] (val x: Self) extends AnyVal {
+  extension [Self <: XTransactedObject](x: Self) {
     
-    @scala.inline
-    def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+    inline def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRevert(value: () => Unit): Self = StObject.set(x, "revert", js.Any.fromFunction0(value))
+    inline def setRevert(value: () => Unit): Self = StObject.set(x, "revert", js.Any.fromFunction0(value))
   }
 }

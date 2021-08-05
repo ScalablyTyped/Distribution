@@ -70,8 +70,7 @@ trait Skeleton extends StObject {
 }
 object Skeleton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTime: Double => Unit,
     animation: Animation,
     blend: (Skeleton, Skeleton, Double) => Unit,
@@ -85,31 +84,22 @@ object Skeleton {
     __obj.asInstanceOf[Skeleton]
   }
   
-  @scala.inline
-  implicit class SkeletonMutableBuilder[Self <: Skeleton] (val x: Self) extends AnyVal {
+  extension [Self <: Skeleton](x: Self) {
     
-    @scala.inline
-    def setAddTime(value: Double => Unit): Self = StObject.set(x, "addTime", js.Any.fromFunction1(value))
+    inline def setAddTime(value: Double => Unit): Self = StObject.set(x, "addTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlend(value: (Skeleton, Skeleton, Double) => Unit): Self = StObject.set(x, "blend", js.Any.fromFunction3(value))
+    inline def setBlend(value: (Skeleton, Skeleton, Double) => Unit): Self = StObject.set(x, "blend", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+    inline def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumNodes(value: Double): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
+    inline def setNumNodes(value: Double): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetGraph(value: GraphNode => Unit): Self = StObject.set(x, "setGraph", js.Any.fromFunction1(value))
+    inline def setSetGraph(value: GraphNode => Unit): Self = StObject.set(x, "setGraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateGraph(value: () => Unit): Self = StObject.set(x, "updateGraph", js.Any.fromFunction0(value))
+    inline def setUpdateGraph(value: () => Unit): Self = StObject.set(x, "updateGraph", js.Any.fromFunction0(value))
   }
 }

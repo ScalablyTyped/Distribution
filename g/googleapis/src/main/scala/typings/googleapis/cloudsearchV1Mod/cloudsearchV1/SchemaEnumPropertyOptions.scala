@@ -46,34 +46,25 @@ trait SchemaEnumPropertyOptions extends StObject {
 }
 object SchemaEnumPropertyOptions {
   
-  @scala.inline
-  def apply(): SchemaEnumPropertyOptions = {
+  inline def apply(): SchemaEnumPropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnumPropertyOptions]
   }
   
-  @scala.inline
-  implicit class SchemaEnumPropertyOptionsMutableBuilder[Self <: SchemaEnumPropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnumPropertyOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorOptions(value: SchemaEnumOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
+    inline def setOperatorOptions(value: SchemaEnumOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
+    inline def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
     
-    @scala.inline
-    def setOrderedRanking(value: String): Self = StObject.set(x, "orderedRanking", value.asInstanceOf[js.Any])
+    inline def setOrderedRanking(value: String): Self = StObject.set(x, "orderedRanking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderedRankingUndefined: Self = StObject.set(x, "orderedRanking", js.undefined)
+    inline def setOrderedRankingUndefined: Self = StObject.set(x, "orderedRanking", js.undefined)
     
-    @scala.inline
-    def setPossibleValues(value: js.Array[SchemaEnumValuePair]): Self = StObject.set(x, "possibleValues", value.asInstanceOf[js.Any])
+    inline def setPossibleValues(value: js.Array[SchemaEnumValuePair]): Self = StObject.set(x, "possibleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleValuesUndefined: Self = StObject.set(x, "possibleValues", js.undefined)
+    inline def setPossibleValuesUndefined: Self = StObject.set(x, "possibleValues", js.undefined)
     
-    @scala.inline
-    def setPossibleValuesVarargs(value: SchemaEnumValuePair*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
+    inline def setPossibleValuesVarargs(value: SchemaEnumValuePair*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
   }
 }

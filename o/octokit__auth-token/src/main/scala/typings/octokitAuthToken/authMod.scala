@@ -12,6 +12,5 @@ object authMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def auth(token: Token): js.Promise[Authentication] = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Authentication]]
+  inline def auth(token: Token): js.Promise[Authentication] = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Authentication]]
 }

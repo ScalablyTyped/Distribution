@@ -12,19 +12,15 @@ trait InsertTableMaxSizeOptions extends StObject {
 }
 object InsertTableMaxSizeOptions {
   
-  @scala.inline
-  def apply(col: Double, row: Double): InsertTableMaxSizeOptions = {
+  inline def apply(col: Double, row: Double): InsertTableMaxSizeOptions = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertTableMaxSizeOptions]
   }
   
-  @scala.inline
-  implicit class InsertTableMaxSizeOptionsMutableBuilder[Self <: InsertTableMaxSizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTableMaxSizeOptions](x: Self) {
     
-    @scala.inline
-    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

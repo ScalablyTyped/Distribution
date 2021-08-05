@@ -18,25 +18,19 @@ trait Operation extends StObject {
 }
 object Operation {
   
-  @scala.inline
-  def apply(): Operation = {
+  inline def apply(): Operation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Operation]
   }
   
-  @scala.inline
-  implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+  extension [Self <: Operation](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

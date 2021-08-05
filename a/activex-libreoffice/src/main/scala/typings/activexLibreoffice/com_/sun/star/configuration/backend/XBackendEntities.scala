@@ -68,8 +68,7 @@ trait XBackendEntities
 }
 object XBackendEntities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdminEntity: String,
     OwnerEntity: String,
     acquire: () => Unit,
@@ -84,25 +83,18 @@ object XBackendEntities {
     __obj.asInstanceOf[XBackendEntities]
   }
   
-  @scala.inline
-  implicit class XBackendEntitiesMutableBuilder[Self <: XBackendEntities] (val x: Self) extends AnyVal {
+  extension [Self <: XBackendEntities](x: Self) {
     
-    @scala.inline
-    def setAdminEntity(value: String): Self = StObject.set(x, "AdminEntity", value.asInstanceOf[js.Any])
+    inline def setAdminEntity(value: String): Self = StObject.set(x, "AdminEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAdminEntity(value: () => String): Self = StObject.set(x, "getAdminEntity", js.Any.fromFunction0(value))
+    inline def setGetAdminEntity(value: () => String): Self = StObject.set(x, "getAdminEntity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerEntity(value: () => String): Self = StObject.set(x, "getOwnerEntity", js.Any.fromFunction0(value))
+    inline def setGetOwnerEntity(value: () => String): Self = StObject.set(x, "getOwnerEntity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEqualEntity(value: (String, String) => Boolean): Self = StObject.set(x, "isEqualEntity", js.Any.fromFunction2(value))
+    inline def setIsEqualEntity(value: (String, String) => Boolean): Self = StObject.set(x, "isEqualEntity", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOwnerEntity(value: String): Self = StObject.set(x, "OwnerEntity", value.asInstanceOf[js.Any])
+    inline def setOwnerEntity(value: String): Self = StObject.set(x, "OwnerEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsEntity(value: String => Boolean): Self = StObject.set(x, "supportsEntity", js.Any.fromFunction1(value))
+    inline def setSupportsEntity(value: String => Boolean): Self = StObject.set(x, "supportsEntity", js.Any.fromFunction1(value))
   }
 }

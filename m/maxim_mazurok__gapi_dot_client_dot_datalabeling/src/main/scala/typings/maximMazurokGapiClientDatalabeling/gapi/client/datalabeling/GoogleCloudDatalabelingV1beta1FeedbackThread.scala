@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1FeedbackThread extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1FeedbackThread {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1FeedbackThread = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1FeedbackThread = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1FeedbackThread]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1FeedbackThreadMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1FeedbackThread] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1FeedbackThread](x: Self) {
     
-    @scala.inline
-    def setFeedbackThreadMetadata(value: GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata): Self = StObject.set(x, "feedbackThreadMetadata", value.asInstanceOf[js.Any])
+    inline def setFeedbackThreadMetadata(value: GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata): Self = StObject.set(x, "feedbackThreadMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackThreadMetadataUndefined: Self = StObject.set(x, "feedbackThreadMetadata", js.undefined)
+    inline def setFeedbackThreadMetadataUndefined: Self = StObject.set(x, "feedbackThreadMetadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

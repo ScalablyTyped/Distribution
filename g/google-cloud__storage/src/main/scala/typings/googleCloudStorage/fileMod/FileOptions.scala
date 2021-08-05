@@ -17,37 +17,27 @@ trait FileOptions extends StObject {
 }
 object FileOptions {
   
-  @scala.inline
-  def apply(): FileOptions = {
+  inline def apply(): FileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileOptions]
   }
   
-  @scala.inline
-  implicit class FileOptionsMutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileOptions](x: Self) {
     
-    @scala.inline
-    def setEncryptionKey(value: String | Buffer): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: String | Buffer): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+    inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    @scala.inline
-    def setGeneration(value: Double | String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: Double | String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

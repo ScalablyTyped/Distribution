@@ -14,16 +14,13 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(editable: KnockoutEditableStatic): KnockoutStatic = {
+  inline def apply(editable: KnockoutEditableStatic): KnockoutStatic = {
     val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setEditable(value: KnockoutEditableStatic): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: KnockoutEditableStatic): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
   }
 }

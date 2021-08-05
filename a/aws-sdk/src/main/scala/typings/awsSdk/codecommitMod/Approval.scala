@@ -18,25 +18,19 @@ trait Approval extends StObject {
 }
 object Approval {
   
-  @scala.inline
-  def apply(): Approval = {
+  inline def apply(): Approval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Approval]
   }
   
-  @scala.inline
-  implicit class ApprovalMutableBuilder[Self <: Approval] (val x: Self) extends AnyVal {
+  extension [Self <: Approval](x: Self) {
     
-    @scala.inline
-    def setApprovalState(value: ApprovalState): Self = StObject.set(x, "approvalState", value.asInstanceOf[js.Any])
+    inline def setApprovalState(value: ApprovalState): Self = StObject.set(x, "approvalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalStateUndefined: Self = StObject.set(x, "approvalState", js.undefined)
+    inline def setApprovalStateUndefined: Self = StObject.set(x, "approvalState", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: Arn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: Arn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
   }
 }

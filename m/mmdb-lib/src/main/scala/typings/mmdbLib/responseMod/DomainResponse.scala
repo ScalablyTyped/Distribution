@@ -14,22 +14,17 @@ trait DomainResponse
 }
 object DomainResponse {
   
-  @scala.inline
-  def apply(domain: String): DomainResponse = {
+  inline def apply(domain: String): DomainResponse = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainResponse]
   }
   
-  @scala.inline
-  implicit class DomainResponseMutableBuilder[Self <: DomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DomainResponse](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
+    inline def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp_addressUndefined: Self = StObject.set(x, "ip_address", js.undefined)
+    inline def setIp_addressUndefined: Self = StObject.set(x, "ip_address", js.undefined)
   }
 }

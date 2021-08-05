@@ -25,8 +25,7 @@ trait PlaylistSearchResult extends StObject {
 }
 object PlaylistSearchResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Author,
     image: String,
     listId: String,
@@ -40,31 +39,22 @@ object PlaylistSearchResult {
     __obj.asInstanceOf[PlaylistSearchResult]
   }
   
-  @scala.inline
-  implicit class PlaylistSearchResultMutableBuilder[Self <: PlaylistSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistSearchResult](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Author): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Author): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCount(value: Double): Self = StObject.set(x, "videoCount", value.asInstanceOf[js.Any])
+    inline def setVideoCount(value: Double): Self = StObject.set(x, "videoCount", value.asInstanceOf[js.Any])
   }
 }

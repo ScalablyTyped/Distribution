@@ -13,16 +13,13 @@ trait GetDeviceDefinitionRequest extends StObject {
 }
 object GetDeviceDefinitionRequest {
   
-  @scala.inline
-  def apply(DeviceDefinitionId: string): GetDeviceDefinitionRequest = {
+  inline def apply(DeviceDefinitionId: string): GetDeviceDefinitionRequest = {
     val __obj = js.Dynamic.literal(DeviceDefinitionId = DeviceDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeviceDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class GetDeviceDefinitionRequestMutableBuilder[Self <: GetDeviceDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeviceDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
   }
 }

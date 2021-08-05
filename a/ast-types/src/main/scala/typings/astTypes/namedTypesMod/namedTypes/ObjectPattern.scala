@@ -47,64 +47,46 @@ object ObjectPattern {
   @js.native
   val ^ : Type[ObjectPattern] = js.native
   
-  @scala.inline
-  implicit class ObjectPatternMutableBuilder[Self <: ObjectPattern] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectPattern](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setDecorators(value: js.Array[DecoratorKind]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    inline def setDecorators(value: js.Array[DecoratorKind]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
+    inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
-    @scala.inline
-    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
-    @scala.inline
-    def setDecoratorsVarargs(value: DecoratorKind*): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: DecoratorKind*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setProperties(
+    inline def setProperties(
       value: js.Array[
           PropertyKind | PropertyPatternKind | SpreadPropertyPatternKind | SpreadPropertyKind | ObjectPropertyKind | RestPropertyKind
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(
+    inline def setPropertiesVarargs(
       value: (PropertyKind | PropertyPatternKind | SpreadPropertyPatternKind | SpreadPropertyKind | ObjectPropertyKind | RestPropertyKind)*
     ): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotationKind | TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotationKind | TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
   }
 }

@@ -11,13 +11,11 @@ object momentHijriStrings {
   sealed trait iMonth
     extends StObject
        with IUnitOfTime
-  @scala.inline
-  def iMonth: iMonth = "iMonth".asInstanceOf[iMonth]
+  inline def iMonth: iMonth = "iMonth".asInstanceOf[iMonth]
   
   @js.native
   sealed trait iYear
     extends StObject
        with IUnitOfTime
-  @scala.inline
-  def iYear: iYear = "iYear".asInstanceOf[iYear]
+  inline def iYear: iYear = "iYear".asInstanceOf[iYear]
 }

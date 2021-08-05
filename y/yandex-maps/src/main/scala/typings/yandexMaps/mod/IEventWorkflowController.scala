@@ -28,29 +28,23 @@ trait IEventWorkflowController
 }
 object IEventWorkflowController {
   
-  @scala.inline
-  def apply(): IEventWorkflowController = {
+  inline def apply(): IEventWorkflowController = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEventWorkflowController]
   }
   
-  @scala.inline
-  implicit class IEventWorkflowControllerMutableBuilder[Self <: IEventWorkflowController] (val x: Self) extends AnyVal {
+  extension [Self <: IEventWorkflowController](x: Self) {
     
-    @scala.inline
-    def setOnAfterEventFiring(
+    inline def setOnAfterEventFiring(
       value: (/* events */ IEventManager[js.Object], /* type */ String, /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => Unit
     ): Self = StObject.set(x, "onAfterEventFiring", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnAfterEventFiringUndefined: Self = StObject.set(x, "onAfterEventFiring", js.undefined)
+    inline def setOnAfterEventFiringUndefined: Self = StObject.set(x, "onAfterEventFiring", js.undefined)
     
-    @scala.inline
-    def setOnBeforeEventFiring(
+    inline def setOnBeforeEventFiring(
       value: (/* events */ IEventManager[js.Object], /* type */ String, /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => Unit
     ): Self = StObject.set(x, "onBeforeEventFiring", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnBeforeEventFiringUndefined: Self = StObject.set(x, "onBeforeEventFiring", js.undefined)
+    inline def setOnBeforeEventFiringUndefined: Self = StObject.set(x, "onBeforeEventFiring", js.undefined)
   }
 }

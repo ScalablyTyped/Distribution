@@ -9,8 +9,7 @@ trait UpdateGlobalTableSettingsInput
      with typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableSettingsInputMod.UpdateGlobalTableSettingsInput
 object UpdateGlobalTableSettingsInput {
   
-  @scala.inline
-  def apply(GlobalTableName: String): UpdateGlobalTableSettingsInput = {
+  inline def apply(GlobalTableName: String): UpdateGlobalTableSettingsInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGlobalTableSettingsInput]
   }

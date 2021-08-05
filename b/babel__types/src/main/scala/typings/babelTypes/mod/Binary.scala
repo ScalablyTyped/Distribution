@@ -37,8 +37,7 @@ trait Binary
      with _Node
 object Binary {
   
-  @scala.inline
-  def BinaryExpression_(
+  inline def BinaryExpression_(
     left: Expression | PrivateName_,
     operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression
@@ -48,8 +47,7 @@ object Binary {
     __obj.asInstanceOf[typings.babelTypes.mod.BinaryExpression_]
   }
   
-  @scala.inline
-  def LogicalExpression_(
+  inline def LogicalExpression_(
     left: Expression,
     operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
     right: Expression

@@ -19,8 +19,7 @@ object componentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("typedoc/dist/lib/converter/components", "ConverterComponent")
   @js.native

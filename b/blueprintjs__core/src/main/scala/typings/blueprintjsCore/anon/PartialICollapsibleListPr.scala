@@ -27,55 +27,39 @@ trait PartialICollapsibleListPr extends StObject {
 }
 object PartialICollapsibleListPr {
   
-  @scala.inline
-  def apply(): PartialICollapsibleListPr = {
+  inline def apply(): PartialICollapsibleListPr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialICollapsibleListPr]
   }
   
-  @scala.inline
-  implicit class PartialICollapsibleListPrMutableBuilder[Self <: PartialICollapsibleListPr] (val x: Self) extends AnyVal {
+  extension [Self <: PartialICollapsibleListPr](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
+    inline def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseFromUndefined: Self = StObject.set(x, "collapseFrom", js.undefined)
+    inline def setCollapseFromUndefined: Self = StObject.set(x, "collapseFrom", js.undefined)
     
-    @scala.inline
-    def setDropdownProps(value: IPopoverProps): Self = StObject.set(x, "dropdownProps", value.asInstanceOf[js.Any])
+    inline def setDropdownProps(value: IPopoverProps): Self = StObject.set(x, "dropdownProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownPropsUndefined: Self = StObject.set(x, "dropdownProps", js.undefined)
+    inline def setDropdownPropsUndefined: Self = StObject.set(x, "dropdownProps", js.undefined)
     
-    @scala.inline
-    def setDropdownTarget(value: Element): Self = StObject.set(x, "dropdownTarget", value.asInstanceOf[js.Any])
+    inline def setDropdownTarget(value: Element): Self = StObject.set(x, "dropdownTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownTargetUndefined: Self = StObject.set(x, "dropdownTarget", js.undefined)
+    inline def setDropdownTargetUndefined: Self = StObject.set(x, "dropdownTarget", js.undefined)
     
-    @scala.inline
-    def setVisibleItemClassName(value: String): Self = StObject.set(x, "visibleItemClassName", value.asInstanceOf[js.Any])
+    inline def setVisibleItemClassName(value: String): Self = StObject.set(x, "visibleItemClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleItemClassNameUndefined: Self = StObject.set(x, "visibleItemClassName", js.undefined)
+    inline def setVisibleItemClassNameUndefined: Self = StObject.set(x, "visibleItemClassName", js.undefined)
     
-    @scala.inline
-    def setVisibleItemCount(value: Double): Self = StObject.set(x, "visibleItemCount", value.asInstanceOf[js.Any])
+    inline def setVisibleItemCount(value: Double): Self = StObject.set(x, "visibleItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleItemCountUndefined: Self = StObject.set(x, "visibleItemCount", js.undefined)
+    inline def setVisibleItemCountUndefined: Self = StObject.set(x, "visibleItemCount", js.undefined)
     
-    @scala.inline
-    def setVisibleItemRenderer(value: (/* props */ IMenuItemProps, /* index */ Double) => Element): Self = StObject.set(x, "visibleItemRenderer", js.Any.fromFunction2(value))
+    inline def setVisibleItemRenderer(value: (/* props */ IMenuItemProps, /* index */ Double) => Element): Self = StObject.set(x, "visibleItemRenderer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisibleItemRendererUndefined: Self = StObject.set(x, "visibleItemRenderer", js.undefined)
+    inline def setVisibleItemRendererUndefined: Self = StObject.set(x, "visibleItemRenderer", js.undefined)
   }
 }

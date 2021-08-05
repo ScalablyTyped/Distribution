@@ -10,8 +10,6 @@ object useLockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]]]
-  @scala.inline
-  def default(duration: Double): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]]]
+  inline def default(): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]]]
+  inline def default(duration: Double): js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Function0[Boolean], js.Function1[/* lock */ Boolean, Unit]]]
 }

@@ -26,37 +26,27 @@ trait IssuerSubjectPattern extends StObject {
 }
 object IssuerSubjectPattern {
   
-  @scala.inline
-  def apply(): IssuerSubjectPattern = {
+  inline def apply(): IssuerSubjectPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IssuerSubjectPattern]
   }
   
-  @scala.inline
-  implicit class IssuerSubjectPatternMutableBuilder[Self <: IssuerSubjectPattern] (val x: Self) extends AnyVal {
+  extension [Self <: IssuerSubjectPattern](x: Self) {
     
-    @scala.inline
-    def setCommonName(value: String): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
+    inline def setCommonName(value: String): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
+    inline def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "Locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "Locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalityUndefined: Self = StObject.set(x, "Locality", js.undefined)
+    inline def setLocalityUndefined: Self = StObject.set(x, "Locality", js.undefined)
     
-    @scala.inline
-    def setOrganization(value: String): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: String): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "Organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "Organization", js.undefined)
     
-    @scala.inline
-    def setOrganizationalUnit(value: String): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnit(value: String): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
+    inline def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
   }
 }

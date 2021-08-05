@@ -70,55 +70,39 @@ trait ChartBinOptionsUpdateData extends StObject {
 }
 object ChartBinOptionsUpdateData {
   
-  @scala.inline
-  def apply(): ChartBinOptionsUpdateData = {
+  inline def apply(): ChartBinOptionsUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartBinOptionsUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartBinOptionsUpdateDataMutableBuilder[Self <: ChartBinOptionsUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBinOptionsUpdateData](x: Self) {
     
-    @scala.inline
-    def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
+    inline def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowOverflowUndefined: Self = StObject.set(x, "allowOverflow", js.undefined)
+    inline def setAllowOverflowUndefined: Self = StObject.set(x, "allowOverflow", js.undefined)
     
-    @scala.inline
-    def setAllowUnderflow(value: Boolean): Self = StObject.set(x, "allowUnderflow", value.asInstanceOf[js.Any])
+    inline def setAllowUnderflow(value: Boolean): Self = StObject.set(x, "allowUnderflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnderflowUndefined: Self = StObject.set(x, "allowUnderflow", js.undefined)
+    inline def setAllowUnderflowUndefined: Self = StObject.set(x, "allowUnderflow", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setOverflowValue(value: Double): Self = StObject.set(x, "overflowValue", value.asInstanceOf[js.Any])
+    inline def setOverflowValue(value: Double): Self = StObject.set(x, "overflowValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowValueUndefined: Self = StObject.set(x, "overflowValue", js.undefined)
+    inline def setOverflowValueUndefined: Self = StObject.set(x, "overflowValue", js.undefined)
     
-    @scala.inline
-    def setType(value: ChartBinType | Category | Auto | BinWidth | BinCount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartBinType | Category | Auto | BinWidth | BinCount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnderflowValue(value: Double): Self = StObject.set(x, "underflowValue", value.asInstanceOf[js.Any])
+    inline def setUnderflowValue(value: Double): Self = StObject.set(x, "underflowValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderflowValueUndefined: Self = StObject.set(x, "underflowValue", js.undefined)
+    inline def setUnderflowValueUndefined: Self = StObject.set(x, "underflowValue", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

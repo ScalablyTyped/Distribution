@@ -17,19 +17,15 @@ trait QueryTaskProperties
 }
 object QueryTaskProperties {
   
-  @scala.inline
-  def apply(): QueryTaskProperties = {
+  inline def apply(): QueryTaskProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryTaskProperties]
   }
   
-  @scala.inline
-  implicit class QueryTaskPropertiesMutableBuilder[Self <: QueryTaskProperties] (val x: Self) extends AnyVal {
+  extension [Self <: QueryTaskProperties](x: Self) {
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
   }
 }

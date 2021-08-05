@@ -30,7 +30,7 @@ object docklayoutMod {
       */
     def this(options: IOptions) = this()
     
-    var _box: js.Any = js.native
+    /* private */ var _box: js.Any = js.native
     
     /**
       * Create a new handle for the dock layout.
@@ -38,7 +38,7 @@ object docklayoutMod {
       * #### Notes
       * The handle will be attached to the parent if it exists.
       */
-    var _createHandle: js.Any = js.native
+    /* private */ var _createHandle: js.Any = js.native
     
     /**
       * Create a new tab bar for use by the dock layout.
@@ -46,14 +46,14 @@ object docklayoutMod {
       * #### Notes
       * The tab bar will be attached to the parent if it exists.
       */
-    var _createTabBar: js.Any = js.native
+    /* private */ var _createTabBar: js.Any = js.native
     
-    var _dirty: js.Any = js.native
+    /* private */ var _dirty: js.Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    var _fit: js.Any = js.native
+    /* private */ var _fit: js.Any = js.native
     
     /**
       * Insert a widget as a new split area.
@@ -61,7 +61,7 @@ object docklayoutMod {
       * #### Notes
       * This does not attach the widget to the parent widget.
       */
-    var _insertSplit: js.Any = js.native
+    /* private */ var _insertSplit: js.Any = js.native
     
     /**
       * Insert a widget next to an existing tab.
@@ -69,9 +69,9 @@ object docklayoutMod {
       * #### Notes
       * This does not attach the widget to the parent widget.
       */
-    var _insertTab: js.Any = js.native
+    /* private */ var _insertTab: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
     /**
       * Remove the specified widget from the layout structure.
@@ -81,23 +81,23 @@ object docklayoutMod {
       *
       * This does not detach the widget from the parent node.
       */
-    var _removeWidget: js.Any = js.native
+    /* private */ var _removeWidget: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _spacing: js.Any = js.native
+    /* private */ var _spacing: js.Any = js.native
     
     /**
       * Ensure the root is a split node with the given orientation.
       */
-    var _splitRoot: js.Any = js.native
+    /* private */ var _splitRoot: js.Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    var _update: js.Any = js.native
+    /* private */ var _update: js.Any = js.native
     
     /**
       * Add a widget to the dock layout.
@@ -258,15 +258,13 @@ object docklayoutMod {
     trait AreaConfig extends StObject
     object AreaConfig {
       
-      @scala.inline
-      def ISplitAreaConfig(children: js.Array[AreaConfig], orientation: horizontal | vertical, sizes: js.Array[Double]): typings.luminoWidgets.docklayoutMod.DockLayout.ISplitAreaConfig = {
+      inline def ISplitAreaConfig(children: js.Array[AreaConfig], orientation: horizontal | vertical, sizes: js.Array[Double]): typings.luminoWidgets.docklayoutMod.DockLayout.ISplitAreaConfig = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("split-area")
         __obj.asInstanceOf[typings.luminoWidgets.docklayoutMod.DockLayout.ISplitAreaConfig]
       }
       
-      @scala.inline
-      def ITabAreaConfig(currentIndex: Double, widgets: js.Array[Widget]): typings.luminoWidgets.docklayoutMod.DockLayout.ITabAreaConfig = {
+      inline def ITabAreaConfig(currentIndex: Double, widgets: js.Array[Widget]): typings.luminoWidgets.docklayoutMod.DockLayout.ITabAreaConfig = {
         val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("tab-area")
         __obj.asInstanceOf[typings.luminoWidgets.docklayoutMod.DockLayout.ITabAreaConfig]
@@ -294,29 +292,22 @@ object docklayoutMod {
     }
     object IAddOptions {
       
-      @scala.inline
-      def apply(): IAddOptions = {
+      inline def apply(): IAddOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IAddOptions]
       }
       
-      @scala.inline
-      implicit class IAddOptionsMutableBuilder[Self <: IAddOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IAddOptions](x: Self) {
         
-        @scala.inline
-        def setMode(value: InsertMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: InsertMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setRef(value: Widget): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+        inline def setRef(value: Widget): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefNull: Self = StObject.set(x, "ref", null)
+        inline def setRefNull: Self = StObject.set(x, "ref", null)
         
-        @scala.inline
-        def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+        inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       }
     }
     
@@ -332,20 +323,16 @@ object docklayoutMod {
     }
     object ILayoutConfig {
       
-      @scala.inline
-      def apply(): ILayoutConfig = {
+      inline def apply(): ILayoutConfig = {
         val __obj = js.Dynamic.literal(main = null)
         __obj.asInstanceOf[ILayoutConfig]
       }
       
-      @scala.inline
-      implicit class ILayoutConfigMutableBuilder[Self <: ILayoutConfig] (val x: Self) extends AnyVal {
+      extension [Self <: ILayoutConfig](x: Self) {
         
-        @scala.inline
-        def setMain(value: AreaConfig): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+        inline def setMain(value: AreaConfig): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMainNull: Self = StObject.set(x, "main", null)
+        inline def setMainNull: Self = StObject.set(x, "main", null)
       }
     }
     
@@ -368,23 +355,18 @@ object docklayoutMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(renderer: IRenderer): IOptions = {
+      inline def apply(renderer: IRenderer): IOptions = {
         val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+        inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       }
     }
     
@@ -409,20 +391,16 @@ object docklayoutMod {
     }
     object IRenderer {
       
-      @scala.inline
-      def apply(createHandle: () => HTMLDivElement, createTabBar: () => TabBar[Widget]): IRenderer = {
+      inline def apply(createHandle: () => HTMLDivElement, createTabBar: () => TabBar[Widget]): IRenderer = {
         val __obj = js.Dynamic.literal(createHandle = js.Any.fromFunction0(createHandle), createTabBar = js.Any.fromFunction0(createTabBar))
         __obj.asInstanceOf[IRenderer]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderer](x: Self) {
         
-        @scala.inline
-        def setCreateHandle(value: () => HTMLDivElement): Self = StObject.set(x, "createHandle", js.Any.fromFunction0(value))
+        inline def setCreateHandle(value: () => HTMLDivElement): Self = StObject.set(x, "createHandle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCreateTabBar(value: () => TabBar[Widget]): Self = StObject.set(x, "createTabBar", js.Any.fromFunction0(value))
+        inline def setCreateTabBar(value: () => TabBar[Widget]): Self = StObject.set(x, "createTabBar", js.Any.fromFunction0(value))
       }
     }
     
@@ -455,33 +433,25 @@ object docklayoutMod {
     }
     object ISplitAreaConfig {
       
-      @scala.inline
-      def apply(children: js.Array[AreaConfig], orientation: horizontal | vertical, sizes: js.Array[Double]): ISplitAreaConfig = {
+      inline def apply(children: js.Array[AreaConfig], orientation: horizontal | vertical, sizes: js.Array[Double]): ISplitAreaConfig = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("split-area")
         __obj.asInstanceOf[ISplitAreaConfig]
       }
       
-      @scala.inline
-      implicit class ISplitAreaConfigMutableBuilder[Self <: ISplitAreaConfig] (val x: Self) extends AnyVal {
+      extension [Self <: ISplitAreaConfig](x: Self) {
         
-        @scala.inline
-        def setChildren(value: js.Array[AreaConfig]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: js.Array[AreaConfig]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenVarargs(value: AreaConfig*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: AreaConfig*): Self = StObject.set(x, "children", js.Array(value :_*))
         
-        @scala.inline
-        def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+        inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+        inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+        inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
         
-        @scala.inline
-        def setType(value: `split-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `split-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -509,27 +479,21 @@ object docklayoutMod {
     }
     object ITabAreaConfig {
       
-      @scala.inline
-      def apply(currentIndex: Double, widgets: js.Array[Widget]): ITabAreaConfig = {
+      inline def apply(currentIndex: Double, widgets: js.Array[Widget]): ITabAreaConfig = {
         val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("tab-area")
         __obj.asInstanceOf[ITabAreaConfig]
       }
       
-      @scala.inline
-      implicit class ITabAreaConfigMutableBuilder[Self <: ITabAreaConfig] (val x: Self) extends AnyVal {
+      extension [Self <: ITabAreaConfig](x: Self) {
         
-        @scala.inline
-        def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+        inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `tab-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `tab-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+        inline def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+        inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
       }
     }
     
@@ -615,8 +579,7 @@ object docklayoutMod {
     }
     object ITabAreaGeometry {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bottom: Double,
         height: Double,
         left: Double,
@@ -631,35 +594,25 @@ object docklayoutMod {
         __obj.asInstanceOf[ITabAreaGeometry]
       }
       
-      @scala.inline
-      implicit class ITabAreaGeometryMutableBuilder[Self <: ITabAreaGeometry] (val x: Self) extends AnyVal {
+      extension [Self <: ITabAreaGeometry](x: Self) {
         
-        @scala.inline
-        def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+        inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabBar(value: TabBar[Widget]): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
+        inline def setTabBar(value: TabBar[Widget]): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
     
@@ -680,23 +633,17 @@ object docklayoutMod {
     trait InsertMode extends StObject
     object InsertMode {
       
-      @scala.inline
-      def `split-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`split-bottom` = "split-bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-bottom`]
+      inline def `split-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`split-bottom` = "split-bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-bottom`]
       
-      @scala.inline
-      def `split-left`: typings.luminoWidgets.luminoWidgetsStrings.`split-left` = "split-left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-left`]
+      inline def `split-left`: typings.luminoWidgets.luminoWidgetsStrings.`split-left` = "split-left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-left`]
       
-      @scala.inline
-      def `split-right`: typings.luminoWidgets.luminoWidgetsStrings.`split-right` = "split-right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-right`]
+      inline def `split-right`: typings.luminoWidgets.luminoWidgetsStrings.`split-right` = "split-right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-right`]
       
-      @scala.inline
-      def `split-top`: typings.luminoWidgets.luminoWidgetsStrings.`split-top` = "split-top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-top`]
+      inline def `split-top`: typings.luminoWidgets.luminoWidgetsStrings.`split-top` = "split-top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-top`]
       
-      @scala.inline
-      def `tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`tab-after` = "tab-after".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-after`]
+      inline def `tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`tab-after` = "tab-after".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-after`]
       
-      @scala.inline
-      def `tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`tab-before` = "tab-before".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-before`]
+      inline def `tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`tab-before` = "tab-before".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-before`]
     }
   }
 }

@@ -13,19 +13,15 @@ trait ITargetFileRequest extends StObject {
 }
 object ITargetFileRequest {
   
-  @scala.inline
-  def apply(getDeferral: () => TargetFileRequestDeferral, targetFile: IStorageFile): ITargetFileRequest = {
+  inline def apply(getDeferral: () => TargetFileRequestDeferral, targetFile: IStorageFile): ITargetFileRequest = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), targetFile = targetFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITargetFileRequest]
   }
   
-  @scala.inline
-  implicit class ITargetFileRequestMutableBuilder[Self <: ITargetFileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITargetFileRequest](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => TargetFileRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => TargetFileRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTargetFile(value: IStorageFile): Self = StObject.set(x, "targetFile", value.asInstanceOf[js.Any])
+    inline def setTargetFile(value: IStorageFile): Self = StObject.set(x, "targetFile", value.asInstanceOf[js.Any])
   }
 }

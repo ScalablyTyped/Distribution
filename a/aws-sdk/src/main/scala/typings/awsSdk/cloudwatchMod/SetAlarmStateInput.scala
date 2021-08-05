@@ -28,28 +28,21 @@ trait SetAlarmStateInput extends StObject {
 }
 object SetAlarmStateInput {
   
-  @scala.inline
-  def apply(AlarmName: AlarmName, StateReason: StateReason, StateValue: StateValue): SetAlarmStateInput = {
+  inline def apply(AlarmName: AlarmName, StateReason: StateReason, StateValue: StateValue): SetAlarmStateInput = {
     val __obj = js.Dynamic.literal(AlarmName = AlarmName.asInstanceOf[js.Any], StateReason = StateReason.asInstanceOf[js.Any], StateValue = StateValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAlarmStateInput]
   }
   
-  @scala.inline
-  implicit class SetAlarmStateInputMutableBuilder[Self <: SetAlarmStateInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetAlarmStateInput](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonData(value: StateReasonData): Self = StObject.set(x, "StateReasonData", value.asInstanceOf[js.Any])
+    inline def setStateReasonData(value: StateReasonData): Self = StObject.set(x, "StateReasonData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonDataUndefined: Self = StObject.set(x, "StateReasonData", js.undefined)
+    inline def setStateReasonDataUndefined: Self = StObject.set(x, "StateReasonData", js.undefined)
     
-    @scala.inline
-    def setStateValue(value: StateValue): Self = StObject.set(x, "StateValue", value.asInstanceOf[js.Any])
+    inline def setStateValue(value: StateValue): Self = StObject.set(x, "StateValue", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait FinishTime extends StObject {
 }
 object FinishTime {
   
-  @scala.inline
-  def apply(finishTime: String, messages: js.Array[Message], pluginName: String, success: Boolean): FinishTime = {
+  inline def apply(finishTime: String, messages: js.Array[Message], pluginName: String, success: Boolean): FinishTime = {
     val __obj = js.Dynamic.literal(finishTime = finishTime.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], pluginName = pluginName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinishTime]
   }
   
-  @scala.inline
-  implicit class FinishTimeMutableBuilder[Self <: FinishTime] (val x: Self) extends AnyVal {
+  extension [Self <: FinishTime](x: Self) {
     
-    @scala.inline
-    def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
+    inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

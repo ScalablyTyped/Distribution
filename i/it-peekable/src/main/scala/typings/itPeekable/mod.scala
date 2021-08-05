@@ -44,8 +44,7 @@ object mod {
     *  : never
     * }
     */
-  @scala.inline
-  def apply[I /* <: Iterable[js.Any] | AsyncIterable[js.Any] */](iterable: I): (AsyncIterable[js.Any] & AsyncPeek[js.Any] & Push[js.Any] & (AsyncIterator[js.Any, js.Any, Unit])) | (Iterable[js.Any] & Peek[js.Any] & Push[js.Any] & (Iterator[js.Any, js.Any, Unit])) = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[(AsyncIterable[js.Any] & AsyncPeek[js.Any] & Push[js.Any] & (AsyncIterator[js.Any, js.Any, Unit])) | (Iterable[js.Any] & Peek[js.Any] & Push[js.Any] & (Iterator[js.Any, js.Any, Unit]))]
+  inline def apply[I /* <: Iterable[js.Any] | AsyncIterable[js.Any] */](iterable: I): (AsyncIterable[js.Any] & AsyncPeek[js.Any] & Push[js.Any] & (AsyncIterator[js.Any, js.Any, Unit])) | (Iterable[js.Any] & Peek[js.Any] & Push[js.Any] & (Iterator[js.Any, js.Any, Unit])) = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[(AsyncIterable[js.Any] & AsyncPeek[js.Any] & Push[js.Any] & (AsyncIterator[js.Any, js.Any, Unit])) | (Iterable[js.Any] & Peek[js.Any] & Push[js.Any] & (Iterator[js.Any, js.Any, Unit]))]
   
   @JSImport("it-peekable/dist", JSImport.Namespace)
   @js.native
@@ -57,17 +56,14 @@ object mod {
   }
   object AsyncPeek {
     
-    @scala.inline
-    def apply[T](peek: () => js.Promise[IteratorResult[T, Unit]]): AsyncPeek[T] = {
+    inline def apply[T](peek: () => js.Promise[IteratorResult[T, Unit]]): AsyncPeek[T] = {
       val __obj = js.Dynamic.literal(peek = js.Any.fromFunction0(peek))
       __obj.asInstanceOf[AsyncPeek[T]]
     }
     
-    @scala.inline
-    implicit class AsyncPeekMutableBuilder[Self <: AsyncPeek[?], T] (val x: Self & AsyncPeek[T]) extends AnyVal {
+    extension [Self <: AsyncPeek[?], T](x: Self & AsyncPeek[T]) {
       
-      @scala.inline
-      def setPeek(value: () => js.Promise[IteratorResult[T, Unit]]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => js.Promise[IteratorResult[T, Unit]]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     }
   }
   
@@ -88,17 +84,14 @@ object mod {
   }
   object Peek {
     
-    @scala.inline
-    def apply[T](peek: () => IteratorResult[T, Unit]): Peek[T] = {
+    inline def apply[T](peek: () => IteratorResult[T, Unit]): Peek[T] = {
       val __obj = js.Dynamic.literal(peek = js.Any.fromFunction0(peek))
       __obj.asInstanceOf[Peek[T]]
     }
     
-    @scala.inline
-    implicit class PeekMutableBuilder[Self <: Peek[?], T] (val x: Self & Peek[T]) extends AnyVal {
+    extension [Self <: Peek[?], T](x: Self & Peek[T]) {
       
-      @scala.inline
-      def setPeek(value: () => IteratorResult[T, Unit]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => IteratorResult[T, Unit]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     }
   }
   
@@ -119,17 +112,14 @@ object mod {
   }
   object Push {
     
-    @scala.inline
-    def apply[T](push: T => Unit): Push[T] = {
+    inline def apply[T](push: T => Unit): Push[T] = {
       val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
       __obj.asInstanceOf[Push[T]]
     }
     
-    @scala.inline
-    implicit class PushMutableBuilder[Self <: Push[?], T] (val x: Self & Push[T]) extends AnyVal {
+    extension [Self <: Push[?], T](x: Self & Push[T]) {
       
-      @scala.inline
-      def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
 }

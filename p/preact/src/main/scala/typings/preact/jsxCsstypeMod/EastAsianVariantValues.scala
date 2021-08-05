@@ -19,21 +19,15 @@ trait EastAsianVariantValues
      with _FontVariantProperty
 object EastAsianVariantValues {
   
-  @scala.inline
-  def jis04: typings.preact.preactStrings.jis04 = "jis04".asInstanceOf[typings.preact.preactStrings.jis04]
+  inline def jis04: typings.preact.preactStrings.jis04 = "jis04".asInstanceOf[typings.preact.preactStrings.jis04]
   
-  @scala.inline
-  def jis78: typings.preact.preactStrings.jis78 = "jis78".asInstanceOf[typings.preact.preactStrings.jis78]
+  inline def jis78: typings.preact.preactStrings.jis78 = "jis78".asInstanceOf[typings.preact.preactStrings.jis78]
   
-  @scala.inline
-  def jis83: typings.preact.preactStrings.jis83 = "jis83".asInstanceOf[typings.preact.preactStrings.jis83]
+  inline def jis83: typings.preact.preactStrings.jis83 = "jis83".asInstanceOf[typings.preact.preactStrings.jis83]
   
-  @scala.inline
-  def jis90: typings.preact.preactStrings.jis90 = "jis90".asInstanceOf[typings.preact.preactStrings.jis90]
+  inline def jis90: typings.preact.preactStrings.jis90 = "jis90".asInstanceOf[typings.preact.preactStrings.jis90]
   
-  @scala.inline
-  def simplified: typings.preact.preactStrings.simplified = "simplified".asInstanceOf[typings.preact.preactStrings.simplified]
+  inline def simplified: typings.preact.preactStrings.simplified = "simplified".asInstanceOf[typings.preact.preactStrings.simplified]
   
-  @scala.inline
-  def traditional: typings.preact.preactStrings.traditional = "traditional".asInstanceOf[typings.preact.preactStrings.traditional]
+  inline def traditional: typings.preact.preactStrings.traditional = "traditional".asInstanceOf[typings.preact.preactStrings.traditional]
 }

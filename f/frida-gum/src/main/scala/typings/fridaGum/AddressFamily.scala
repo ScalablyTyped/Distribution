@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddressFamily extends StObject
 object AddressFamily {
   
-  @scala.inline
-  def ipv4: typings.fridaGum.fridaGumStrings.ipv4 = "ipv4".asInstanceOf[typings.fridaGum.fridaGumStrings.ipv4]
+  inline def ipv4: typings.fridaGum.fridaGumStrings.ipv4 = "ipv4".asInstanceOf[typings.fridaGum.fridaGumStrings.ipv4]
   
-  @scala.inline
-  def ipv6: typings.fridaGum.fridaGumStrings.ipv6 = "ipv6".asInstanceOf[typings.fridaGum.fridaGumStrings.ipv6]
+  inline def ipv6: typings.fridaGum.fridaGumStrings.ipv6 = "ipv6".asInstanceOf[typings.fridaGum.fridaGumStrings.ipv6]
   
-  @scala.inline
-  def unix: typings.fridaGum.fridaGumStrings.unix = "unix".asInstanceOf[typings.fridaGum.fridaGumStrings.unix]
+  inline def unix: typings.fridaGum.fridaGumStrings.unix = "unix".asInstanceOf[typings.fridaGum.fridaGumStrings.unix]
 }

@@ -18,28 +18,21 @@ trait AutoMLConfig extends StObject {
 }
 object AutoMLConfig {
   
-  @scala.inline
-  def apply(): AutoMLConfig = {
+  inline def apply(): AutoMLConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoMLConfig]
   }
   
-  @scala.inline
-  implicit class AutoMLConfigMutableBuilder[Self <: AutoMLConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLConfig](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
-    @scala.inline
-    def setRecipeList(value: ArnList): Self = StObject.set(x, "recipeList", value.asInstanceOf[js.Any])
+    inline def setRecipeList(value: ArnList): Self = StObject.set(x, "recipeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeListUndefined: Self = StObject.set(x, "recipeList", js.undefined)
+    inline def setRecipeListUndefined: Self = StObject.set(x, "recipeList", js.undefined)
     
-    @scala.inline
-    def setRecipeListVarargs(value: Arn*): Self = StObject.set(x, "recipeList", js.Array(value :_*))
+    inline def setRecipeListVarargs(value: Arn*): Self = StObject.set(x, "recipeList", js.Array(value :_*))
   }
 }

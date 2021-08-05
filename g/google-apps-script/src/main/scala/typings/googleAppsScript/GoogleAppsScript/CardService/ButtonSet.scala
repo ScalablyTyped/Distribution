@@ -23,16 +23,13 @@ trait ButtonSet extends StObject {
 }
 object ButtonSet {
   
-  @scala.inline
-  def apply(addButton: Button => ButtonSet): ButtonSet = {
+  inline def apply(addButton: Button => ButtonSet): ButtonSet = {
     val __obj = js.Dynamic.literal(addButton = js.Any.fromFunction1(addButton))
     __obj.asInstanceOf[ButtonSet]
   }
   
-  @scala.inline
-  implicit class ButtonSetMutableBuilder[Self <: ButtonSet] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonSet](x: Self) {
     
-    @scala.inline
-    def setAddButton(value: Button => ButtonSet): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
+    inline def setAddButton(value: Button => ButtonSet): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
   }
 }

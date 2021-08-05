@@ -18,19 +18,15 @@ trait MetricPolicyRule extends StObject {
 }
 object MetricPolicyRule {
   
-  @scala.inline
-  def apply(ObjectGroup: ObjectGroup, ObjectGroupName: ObjectGroupName): MetricPolicyRule = {
+  inline def apply(ObjectGroup: ObjectGroup, ObjectGroupName: ObjectGroupName): MetricPolicyRule = {
     val __obj = js.Dynamic.literal(ObjectGroup = ObjectGroup.asInstanceOf[js.Any], ObjectGroupName = ObjectGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricPolicyRule]
   }
   
-  @scala.inline
-  implicit class MetricPolicyRuleMutableBuilder[Self <: MetricPolicyRule] (val x: Self) extends AnyVal {
+  extension [Self <: MetricPolicyRule](x: Self) {
     
-    @scala.inline
-    def setObjectGroup(value: ObjectGroup): Self = StObject.set(x, "ObjectGroup", value.asInstanceOf[js.Any])
+    inline def setObjectGroup(value: ObjectGroup): Self = StObject.set(x, "ObjectGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectGroupName(value: ObjectGroupName): Self = StObject.set(x, "ObjectGroupName", value.asInstanceOf[js.Any])
+    inline def setObjectGroupName(value: ObjectGroupName): Self = StObject.set(x, "ObjectGroupName", value.asInstanceOf[js.Any])
   }
 }

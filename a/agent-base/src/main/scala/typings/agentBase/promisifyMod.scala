@@ -14,8 +14,7 @@ object promisifyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fn: LegacyCallback): AgentCallbackPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[AgentCallbackPromise]
+  inline def default(fn: LegacyCallback): AgentCallbackPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[AgentCallbackPromise]
   
   type LegacyCallback = js.Function3[
     /* req */ ClientRequest, 

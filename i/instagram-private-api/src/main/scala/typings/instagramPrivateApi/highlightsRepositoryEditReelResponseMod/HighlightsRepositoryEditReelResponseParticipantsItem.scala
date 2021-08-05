@@ -14,22 +14,17 @@ trait HighlightsRepositoryEditReelResponseParticipantsItem extends StObject {
 }
 object HighlightsRepositoryEditReelResponseParticipantsItem {
   
-  @scala.inline
-  def apply(answer: Double, ts: Double, user: HighlightsRepositoryEditReelResponseUser): HighlightsRepositoryEditReelResponseParticipantsItem = {
+  inline def apply(answer: Double, ts: Double, user: HighlightsRepositoryEditReelResponseUser): HighlightsRepositoryEditReelResponseParticipantsItem = {
     val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseParticipantsItem]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseParticipantsItemMutableBuilder[Self <: HighlightsRepositoryEditReelResponseParticipantsItem] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseParticipantsItem](x: Self) {
     
-    @scala.inline
-    def setAnswer(value: Double): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+    inline def setAnswer(value: Double): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: HighlightsRepositoryEditReelResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: HighlightsRepositoryEditReelResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -51,86 +51,60 @@ object mod extends Shortcut {
   }
   object HelloJSAuthResponse {
     
-    @scala.inline
-    def apply(): HelloJSAuthResponse = {
+    inline def apply(): HelloJSAuthResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelloJSAuthResponse]
     }
     
-    @scala.inline
-    implicit class HelloJSAuthResponseMutableBuilder[Self <: HelloJSAuthResponse] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSAuthResponse](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
       
-      @scala.inline
-      def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+      inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+      inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: HelloJSDisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: HelloJSDisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+      inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
+      inline def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
       
-      @scala.inline
-      def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
+      inline def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId_tokenUndefined: Self = StObject.set(x, "id_token", js.undefined)
+      inline def setId_tokenUndefined: Self = StObject.set(x, "id_token", js.undefined)
       
-      @scala.inline
-      def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+      inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
       
-      @scala.inline
-      def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+      inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+      inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSession_state(value: String): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
+      inline def setSession_state(value: String): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession_stateUndefined: Self = StObject.set(x, "session_state", js.undefined)
+      inline def setSession_stateUndefined: Self = StObject.set(x, "session_state", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
+      inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
+      inline def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
     }
   }
   
@@ -142,14 +116,11 @@ object mod extends Shortcut {
   trait HelloJSDisplayType extends StObject
   object HelloJSDisplayType {
     
-    @scala.inline
-    def none: typings.hellojs.hellojsStrings.none = "none".asInstanceOf[typings.hellojs.hellojsStrings.none]
+    inline def none: typings.hellojs.hellojsStrings.none = "none".asInstanceOf[typings.hellojs.hellojsStrings.none]
     
-    @scala.inline
-    def page: typings.hellojs.hellojsStrings.page = "page".asInstanceOf[typings.hellojs.hellojsStrings.page]
+    inline def page: typings.hellojs.hellojsStrings.page = "page".asInstanceOf[typings.hellojs.hellojsStrings.page]
     
-    @scala.inline
-    def popup: typings.hellojs.hellojsStrings.popup = "popup".asInstanceOf[typings.hellojs.hellojsStrings.popup]
+    inline def popup: typings.hellojs.hellojsStrings.popup = "popup".asInstanceOf[typings.hellojs.hellojsStrings.popup]
   }
   
   trait HelloJSEvent extends StObject {
@@ -166,8 +137,7 @@ object mod extends Shortcut {
   }
   object HelloJSEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emit: (String, js.Any) => HelloJSStatic,
       emitAfter: () => HelloJSStatic,
       findEvents: (String, js.Function2[/* name */ String, /* index */ Double, Unit]) => Unit,
@@ -178,23 +148,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSEvent]
     }
     
-    @scala.inline
-    implicit class HelloJSEventMutableBuilder[Self <: HelloJSEvent] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSEvent](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (String, js.Any) => HelloJSStatic): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, js.Any) => HelloJSStatic): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmitAfter(value: () => HelloJSStatic): Self = StObject.set(x, "emitAfter", js.Any.fromFunction0(value))
+      inline def setEmitAfter(value: () => HelloJSStatic): Self = StObject.set(x, "emitAfter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindEvents(value: (String, js.Function2[/* name */ String, /* index */ Double, Unit]) => Unit): Self = StObject.set(x, "findEvents", js.Any.fromFunction2(value))
+      inline def setFindEvents(value: (String, js.Function2[/* name */ String, /* index */ Double, Unit]) => Unit): Self = StObject.set(x, "findEvents", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOff(value: (String, js.Function1[/* auth */ HelloJSEventArgument, Unit]) => HelloJSStatic): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, js.Function1[/* auth */ HelloJSEventArgument, Unit]) => HelloJSStatic): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function1[/* auth */ HelloJSEventArgument, Unit]) => HelloJSStatic): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* auth */ HelloJSEventArgument, Unit]) => HelloJSStatic): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
   
@@ -206,23 +170,18 @@ object mod extends Shortcut {
   }
   object HelloJSEventArgument {
     
-    @scala.inline
-    def apply(network: String): HelloJSEventArgument = {
+    inline def apply(network: String): HelloJSEventArgument = {
       val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelloJSEventArgument]
     }
     
-    @scala.inline
-    implicit class HelloJSEventArgumentMutableBuilder[Self <: HelloJSEventArgument] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSEventArgument](x: Self) {
       
-      @scala.inline
-      def setAuthResponse(value: HelloJSAuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
+      inline def setAuthResponse(value: HelloJSAuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthResponseUndefined: Self = StObject.set(x, "authResponse", js.undefined)
+      inline def setAuthResponseUndefined: Self = StObject.set(x, "authResponse", js.undefined)
       
-      @scala.inline
-      def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,29 +195,22 @@ object mod extends Shortcut {
   }
   object HelloJSLoginEventArguement {
     
-    @scala.inline
-    def apply(network: String): HelloJSLoginEventArguement = {
+    inline def apply(network: String): HelloJSLoginEventArguement = {
       val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelloJSLoginEventArguement]
     }
     
-    @scala.inline
-    implicit class HelloJSLoginEventArguementMutableBuilder[Self <: HelloJSLoginEventArguement] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSLoginEventArguement](x: Self) {
       
-      @scala.inline
-      def setAuthResponse(value: HelloJSAuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
+      inline def setAuthResponse(value: HelloJSAuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthResponseUndefined: Self = StObject.set(x, "authResponse", js.undefined)
+      inline def setAuthResponseUndefined: Self = StObject.set(x, "authResponse", js.undefined)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,77 +238,54 @@ object mod extends Shortcut {
   }
   object HelloJSLoginOptions {
     
-    @scala.inline
-    def apply(): HelloJSLoginOptions = {
+    inline def apply(): HelloJSLoginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelloJSLoginOptions]
     }
     
-    @scala.inline
-    implicit class HelloJSLoginOptionsMutableBuilder[Self <: HelloJSLoginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSLoginOptions](x: Self) {
       
-      @scala.inline
-      def setDefault_service(value: String): Self = StObject.set(x, "default_service", value.asInstanceOf[js.Any])
+      inline def setDefault_service(value: String): Self = StObject.set(x, "default_service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_serviceUndefined: Self = StObject.set(x, "default_service", js.undefined)
+      inline def setDefault_serviceUndefined: Self = StObject.set(x, "default_service", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: HelloJSDisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: HelloJSDisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceNull: Self = StObject.set(x, "force", null)
+      inline def setForceNull: Self = StObject.set(x, "force", null)
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setOauth_proxy(value: String): Self = StObject.set(x, "oauth_proxy", value.asInstanceOf[js.Any])
+      inline def setOauth_proxy(value: String): Self = StObject.set(x, "oauth_proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOauth_proxyUndefined: Self = StObject.set(x, "oauth_proxy", js.undefined)
+      inline def setOauth_proxyUndefined: Self = StObject.set(x, "oauth_proxy", js.undefined)
       
-      @scala.inline
-      def setPopup(value: HelloJSPopupOptions): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: HelloJSPopupOptions): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+      inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
       
-      @scala.inline
-      def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+      inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+      inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
       
-      @scala.inline
-      def setResponse_type(value: HelloJSTokenResponseType): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+      inline def setResponse_type(value: HelloJSTokenResponseType): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+      inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -366,20 +295,16 @@ object mod extends Shortcut {
   }
   object HelloJSLogoutOptions {
     
-    @scala.inline
-    def apply(): HelloJSLogoutOptions = {
+    inline def apply(): HelloJSLogoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelloJSLogoutOptions]
     }
     
-    @scala.inline
-    implicit class HelloJSLogoutOptionsMutableBuilder[Self <: HelloJSLogoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSLogoutOptions](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     }
   }
   
@@ -393,26 +318,20 @@ object mod extends Shortcut {
   }
   object HelloJSOAuth1Def {
     
-    @scala.inline
-    def apply(version: String | Double): HelloJSOAuth1Def = {
+    inline def apply(version: String | Double): HelloJSOAuth1Def = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelloJSOAuth1Def]
     }
     
-    @scala.inline
-    implicit class HelloJSOAuth1DefMutableBuilder[Self <: HelloJSOAuth1Def] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSOAuth1Def](x: Self) {
       
-      @scala.inline
-      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
   
@@ -426,26 +345,20 @@ object mod extends Shortcut {
   }
   object HelloJSOAuth2Def {
     
-    @scala.inline
-    def apply(version: String | Double): HelloJSOAuth2Def = {
+    inline def apply(version: String | Double): HelloJSOAuth2Def = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelloJSOAuth2Def]
     }
     
-    @scala.inline
-    implicit class HelloJSOAuth2DefMutableBuilder[Self <: HelloJSOAuth2Def] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSOAuth2Def](x: Self) {
       
-      @scala.inline
-      def setGrant(value: String): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
+      inline def setGrant(value: String): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantUndefined: Self = StObject.set(x, "grant", js.undefined)
+      inline def setGrantUndefined: Self = StObject.set(x, "grant", js.undefined)
       
-      @scala.inline
-      def setResponse_type(value: HelloJSTokenResponseType): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+      inline def setResponse_type(value: HelloJSTokenResponseType): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+      inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     }
   }
   
@@ -457,23 +370,18 @@ object mod extends Shortcut {
   }
   object HelloJSOAuthDef {
     
-    @scala.inline
-    def apply(version: String | Double): HelloJSOAuthDef = {
+    inline def apply(version: String | Double): HelloJSOAuthDef = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelloJSOAuthDef]
     }
     
-    @scala.inline
-    implicit class HelloJSOAuthDefMutableBuilder[Self <: HelloJSOAuthDef] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSOAuthDef](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String | Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String | Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -489,26 +397,20 @@ object mod extends Shortcut {
   }
   object HelloJSPopupOptions {
     
-    @scala.inline
-    def apply(height: Double, resizable: Double, scrollbars: Double, width: Double): HelloJSPopupOptions = {
+    inline def apply(height: Double, resizable: Double, scrollbars: Double, width: Double): HelloJSPopupOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any], scrollbars = scrollbars.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelloJSPopupOptions]
     }
     
-    @scala.inline
-    implicit class HelloJSPopupOptionsMutableBuilder[Self <: HelloJSPopupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSPopupOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable(value: Double): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: Double): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollbars(value: Double): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
+      inline def setScrollbars(value: Double): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -556,128 +458,88 @@ object mod extends Shortcut {
   }
   object HelloJSServiceDef {
     
-    @scala.inline
-    def apply(oauth: HelloJSOAuth2Def | HelloJSOAuth1Def): HelloJSServiceDef = {
+    inline def apply(oauth: HelloJSOAuth2Def | HelloJSOAuth1Def): HelloJSServiceDef = {
       val __obj = js.Dynamic.literal(oauth = oauth.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelloJSServiceDef]
     }
     
-    @scala.inline
-    implicit class HelloJSServiceDefMutableBuilder[Self <: HelloJSServiceDef] (val x: Self) extends AnyVal {
+    extension [Self <: HelloJSServiceDef](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setDel(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+      inline def setDel(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
+      inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
       
-      @scala.inline
-      def setForm(value: (js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: (js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormFunction2(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction2(value))
+      inline def setFormFunction2(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      @scala.inline
-      def setGet(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      @scala.inline
-      def setJsonp(value: (js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+      inline def setJsonp(value: (js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonpFunction2(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "jsonp", js.Any.fromFunction2(value))
+      inline def setJsonpFunction2(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "jsonp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+      inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
       
-      @scala.inline
-      def setLogin(value: /* p */ js.Any => Unit): Self = StObject.set(x, "login", js.Any.fromFunction1(value))
+      inline def setLogin(value: /* p */ js.Any => Unit): Self = StObject.set(x, "login", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
+      inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
       
-      @scala.inline
-      def setLogout(value: (js.Function1[/* callback */ js.Function0[Unit | String], Unit]) | String): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
+      inline def setLogout(value: (js.Function1[/* callback */ js.Function0[Unit | String], Unit]) | String): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoutFunction1(value: /* callback */ js.Function0[Unit | String] => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
+      inline def setLogoutFunction1(value: /* callback */ js.Function0[Unit | String] => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
+      inline def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOauth(value: HelloJSOAuth2Def | HelloJSOAuth1Def): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
+      inline def setOauth(value: HelloJSOAuth2Def | HelloJSOAuth1Def): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatch(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+      inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
       
-      @scala.inline
-      def setPost(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+      inline def setPost(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      @scala.inline
-      def setPut(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+      inline def setPut(value: StringDictionary[String | HelloJSUrlMappingFunction]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
+      inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
       
-      @scala.inline
-      def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+      inline def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+      inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setScope(value: StringDictionary[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: StringDictionary[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScope_delim(value: String): Self = StObject.set(x, "scope_delim", value.asInstanceOf[js.Any])
+      inline def setScope_delim(value: String): Self = StObject.set(x, "scope_delim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope_delimUndefined: Self = StObject.set(x, "scope_delim", js.undefined)
+      inline def setScope_delimUndefined: Self = StObject.set(x, "scope_delim", js.undefined)
       
-      @scala.inline
-      def setWrap(value: StringDictionary[js.Function3[/* r */ js.Any, /* headers */ js.Any, /* p */ js.Any, Unit]]): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: StringDictionary[js.Function3[/* r */ js.Any, /* headers */ js.Any, /* p */ js.Any, Unit]]): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
       
-      @scala.inline
-      def setXhr(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "xhr", js.Any.fromFunction2(value))
+      inline def setXhr(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "xhr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
@@ -764,29 +626,21 @@ object mod extends Shortcut {
   trait HelloJSTokenResponseType extends StObject
   object HelloJSTokenResponseType {
     
-    @scala.inline
-    def code: typings.hellojs.hellojsStrings.code = "code".asInstanceOf[typings.hellojs.hellojsStrings.code]
+    inline def code: typings.hellojs.hellojsStrings.code = "code".asInstanceOf[typings.hellojs.hellojsStrings.code]
     
-    @scala.inline
-    def `code id_token`: typings.hellojs.hellojsStrings.`code id_token` = ("code id_token").asInstanceOf[typings.hellojs.hellojsStrings.`code id_token`]
+    inline def `code id_token`: typings.hellojs.hellojsStrings.`code id_token` = ("code id_token").asInstanceOf[typings.hellojs.hellojsStrings.`code id_token`]
     
-    @scala.inline
-    def `code id_token token`: typings.hellojs.hellojsStrings.`code id_token token` = ("code id_token token").asInstanceOf[typings.hellojs.hellojsStrings.`code id_token token`]
+    inline def `code id_token token`: typings.hellojs.hellojsStrings.`code id_token token` = ("code id_token token").asInstanceOf[typings.hellojs.hellojsStrings.`code id_token token`]
     
-    @scala.inline
-    def `code token`: typings.hellojs.hellojsStrings.`code token` = ("code token").asInstanceOf[typings.hellojs.hellojsStrings.`code token`]
+    inline def `code token`: typings.hellojs.hellojsStrings.`code token` = ("code token").asInstanceOf[typings.hellojs.hellojsStrings.`code token`]
     
-    @scala.inline
-    def id_token: typings.hellojs.hellojsStrings.id_token = "id_token".asInstanceOf[typings.hellojs.hellojsStrings.id_token]
+    inline def id_token: typings.hellojs.hellojsStrings.id_token = "id_token".asInstanceOf[typings.hellojs.hellojsStrings.id_token]
     
-    @scala.inline
-    def `id_token token`: typings.hellojs.hellojsStrings.`id_token token` = ("id_token token").asInstanceOf[typings.hellojs.hellojsStrings.`id_token token`]
+    inline def `id_token token`: typings.hellojs.hellojsStrings.`id_token token` = ("id_token token").asInstanceOf[typings.hellojs.hellojsStrings.`id_token token`]
     
-    @scala.inline
-    def none: typings.hellojs.hellojsStrings.none = "none".asInstanceOf[typings.hellojs.hellojsStrings.none]
+    inline def none: typings.hellojs.hellojsStrings.none = "none".asInstanceOf[typings.hellojs.hellojsStrings.none]
     
-    @scala.inline
-    def token: typings.hellojs.hellojsStrings.token = "token".asInstanceOf[typings.hellojs.hellojsStrings.token]
+    inline def token: typings.hellojs.hellojsStrings.token = "token".asInstanceOf[typings.hellojs.hellojsStrings.token]
   }
   
   type HelloJSUrlMappingFunction = js.Function2[/* p */ js.Any, /* callback */ js.Function1[/* url */ String, Unit], Unit]

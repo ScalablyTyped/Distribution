@@ -39,8 +39,7 @@ trait TransformConstraint
 }
 object TransformConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     apply: () => Unit,
     applyAbsoluteLocal: () => Unit,
@@ -62,52 +61,36 @@ object TransformConstraint {
     __obj.asInstanceOf[TransformConstraint]
   }
   
-  @scala.inline
-  implicit class TransformConstraintMutableBuilder[Self <: TransformConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: TransformConstraint](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyAbsoluteLocal(value: () => Unit): Self = StObject.set(x, "applyAbsoluteLocal", js.Any.fromFunction0(value))
+    inline def setApplyAbsoluteLocal(value: () => Unit): Self = StObject.set(x, "applyAbsoluteLocal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyAbsoluteWorld(value: () => Unit): Self = StObject.set(x, "applyAbsoluteWorld", js.Any.fromFunction0(value))
+    inline def setApplyAbsoluteWorld(value: () => Unit): Self = StObject.set(x, "applyAbsoluteWorld", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyRelativeLocal(value: () => Unit): Self = StObject.set(x, "applyRelativeLocal", js.Any.fromFunction0(value))
+    inline def setApplyRelativeLocal(value: () => Unit): Self = StObject.set(x, "applyRelativeLocal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyRelativeWorld(value: () => Unit): Self = StObject.set(x, "applyRelativeWorld", js.Any.fromFunction0(value))
+    inline def setApplyRelativeWorld(value: () => Unit): Self = StObject.set(x, "applyRelativeWorld", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBones(value: js.Array[Bone]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
+    inline def setBones(value: js.Array[Bone]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonesVarargs(value: Bone*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: Bone*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: TransformConstraintData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: TransformConstraintData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
+    inline def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleMix(value: Double): Self = StObject.set(x, "scaleMix", value.asInstanceOf[js.Any])
+    inline def setScaleMix(value: Double): Self = StObject.set(x, "scaleMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShearMix(value: Double): Self = StObject.set(x, "shearMix", value.asInstanceOf[js.Any])
+    inline def setShearMix(value: Double): Self = StObject.set(x, "shearMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Bone): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Bone): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemp(value: Vector2): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
+    inline def setTemp(value: Vector2): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
+    inline def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
   }
 }

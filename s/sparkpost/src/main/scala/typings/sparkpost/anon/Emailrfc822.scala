@@ -10,16 +10,13 @@ trait Emailrfc822 extends StObject {
 }
 object Emailrfc822 {
   
-  @scala.inline
-  def apply(email_rfc822: String): Emailrfc822 = {
+  inline def apply(email_rfc822: String): Emailrfc822 = {
     val __obj = js.Dynamic.literal(email_rfc822 = email_rfc822.asInstanceOf[js.Any])
     __obj.asInstanceOf[Emailrfc822]
   }
   
-  @scala.inline
-  implicit class Emailrfc822MutableBuilder[Self <: Emailrfc822] (val x: Self) extends AnyVal {
+  extension [Self <: Emailrfc822](x: Self) {
     
-    @scala.inline
-    def setEmail_rfc822(value: String): Self = StObject.set(x, "email_rfc822", value.asInstanceOf[js.Any])
+    inline def setEmail_rfc822(value: String): Self = StObject.set(x, "email_rfc822", value.asInstanceOf[js.Any])
   }
 }

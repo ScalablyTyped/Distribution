@@ -53,67 +53,47 @@ trait PushNotificationTemplateRequest extends StObject {
 }
 object PushNotificationTemplateRequest {
   
-  @scala.inline
-  def apply(): PushNotificationTemplateRequest = {
+  inline def apply(): PushNotificationTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushNotificationTemplateRequest]
   }
   
-  @scala.inline
-  implicit class PushNotificationTemplateRequestMutableBuilder[Self <: PushNotificationTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PushNotificationTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setADM(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "ADM", value.asInstanceOf[js.Any])
+    inline def setADM(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "ADM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADMUndefined: Self = StObject.set(x, "ADM", js.undefined)
+    inline def setADMUndefined: Self = StObject.set(x, "ADM", js.undefined)
     
-    @scala.inline
-    def setAPNS(value: APNSPushNotificationTemplate): Self = StObject.set(x, "APNS", value.asInstanceOf[js.Any])
+    inline def setAPNS(value: APNSPushNotificationTemplate): Self = StObject.set(x, "APNS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPNSUndefined: Self = StObject.set(x, "APNS", js.undefined)
+    inline def setAPNSUndefined: Self = StObject.set(x, "APNS", js.undefined)
     
-    @scala.inline
-    def setBaidu(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "Baidu", value.asInstanceOf[js.Any])
+    inline def setBaidu(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "Baidu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaiduUndefined: Self = StObject.set(x, "Baidu", js.undefined)
+    inline def setBaiduUndefined: Self = StObject.set(x, "Baidu", js.undefined)
     
-    @scala.inline
-    def setDefault(value: DefaultPushNotificationTemplate): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: DefaultPushNotificationTemplate): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
+    inline def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSubstitutionsUndefined: Self = StObject.set(x, "DefaultSubstitutions", js.undefined)
+    inline def setDefaultSubstitutionsUndefined: Self = StObject.set(x, "DefaultSubstitutions", js.undefined)
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "Default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "Default", js.undefined)
     
-    @scala.inline
-    def setGCM(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "GCM", value.asInstanceOf[js.Any])
+    inline def setGCM(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "GCM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGCMUndefined: Self = StObject.set(x, "GCM", js.undefined)
+    inline def setGCMUndefined: Self = StObject.set(x, "GCM", js.undefined)
     
-    @scala.inline
-    def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
+    inline def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommenderIdUndefined: Self = StObject.set(x, "RecommenderId", js.undefined)
+    inline def setRecommenderIdUndefined: Self = StObject.set(x, "RecommenderId", js.undefined)
     
-    @scala.inline
-    def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTemplateDescription(value: string): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
+    inline def setTemplateDescription(value: string): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
+    inline def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
   }
 }

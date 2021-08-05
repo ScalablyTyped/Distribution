@@ -13,19 +13,15 @@ trait CreatePatchBaselineResult extends StObject {
 }
 object CreatePatchBaselineResult {
   
-  @scala.inline
-  def apply(): CreatePatchBaselineResult = {
+  inline def apply(): CreatePatchBaselineResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePatchBaselineResult]
   }
   
-  @scala.inline
-  implicit class CreatePatchBaselineResultMutableBuilder[Self <: CreatePatchBaselineResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePatchBaselineResult](x: Self) {
     
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
+    inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
+    inline def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
   }
 }

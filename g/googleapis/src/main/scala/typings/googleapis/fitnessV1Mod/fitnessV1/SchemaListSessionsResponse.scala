@@ -33,43 +33,31 @@ trait SchemaListSessionsResponse extends StObject {
 }
 object SchemaListSessionsResponse {
   
-  @scala.inline
-  def apply(): SchemaListSessionsResponse = {
+  inline def apply(): SchemaListSessionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListSessionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListSessionsResponseMutableBuilder[Self <: SchemaListSessionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListSessionsResponse](x: Self) {
     
-    @scala.inline
-    def setDeletedSession(value: js.Array[SchemaSession]): Self = StObject.set(x, "deletedSession", value.asInstanceOf[js.Any])
+    inline def setDeletedSession(value: js.Array[SchemaSession]): Self = StObject.set(x, "deletedSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedSessionUndefined: Self = StObject.set(x, "deletedSession", js.undefined)
+    inline def setDeletedSessionUndefined: Self = StObject.set(x, "deletedSession", js.undefined)
     
-    @scala.inline
-    def setDeletedSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "deletedSession", js.Array(value :_*))
+    inline def setDeletedSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "deletedSession", js.Array(value :_*))
     
-    @scala.inline
-    def setHasMoreData(value: Boolean): Self = StObject.set(x, "hasMoreData", value.asInstanceOf[js.Any])
+    inline def setHasMoreData(value: Boolean): Self = StObject.set(x, "hasMoreData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMoreDataUndefined: Self = StObject.set(x, "hasMoreData", js.undefined)
+    inline def setHasMoreDataUndefined: Self = StObject.set(x, "hasMoreData", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSession(value: js.Array[SchemaSession]): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: js.Array[SchemaSession]): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    @scala.inline
-    def setSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "session", js.Array(value :_*))
+    inline def setSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "session", js.Array(value :_*))
   }
 }

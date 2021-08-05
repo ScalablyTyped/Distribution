@@ -15,16 +15,13 @@ trait Module extends StObject {
 }
 object Module {
   
-  @scala.inline
-  def apply(run: () => Unit): Module = {
+  inline def apply(run: () => Unit): Module = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction0(run))
     __obj.asInstanceOf[Module]
   }
   
-  @scala.inline
-  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+  extension [Self <: Module](x: Self) {
     
-    @scala.inline
-    def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }
 }

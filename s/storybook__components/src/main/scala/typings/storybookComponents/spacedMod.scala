@@ -21,32 +21,24 @@ object spacedMod {
   }
   object ContainerProps {
     
-    @scala.inline
-    def apply(): ContainerProps = {
+    inline def apply(): ContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerProps]
     }
     
-    @scala.inline
-    implicit class ContainerPropsMutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerProps](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+      inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
       
-      @scala.inline
-      def setOuter(value: Double): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
+      inline def setOuter(value: Double): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterUndefined: Self = StObject.set(x, "outer", js.undefined)
+      inline def setOuterUndefined: Self = StObject.set(x, "outer", js.undefined)
       
-      @scala.inline
-      def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     }
   }
   
@@ -60,32 +52,24 @@ object spacedMod {
   }
   object SpacedProps {
     
-    @scala.inline
-    def apply(): SpacedProps = {
+    inline def apply(): SpacedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpacedProps]
     }
     
-    @scala.inline
-    implicit class SpacedPropsMutableBuilder[Self <: SpacedProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpacedProps](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+      inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
       
-      @scala.inline
-      def setOuter(value: Double | Boolean): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
+      inline def setOuter(value: Double | Boolean): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterUndefined: Self = StObject.set(x, "outer", js.undefined)
+      inline def setOuterUndefined: Self = StObject.set(x, "outer", js.undefined)
       
-      @scala.inline
-      def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     }
   }
 }

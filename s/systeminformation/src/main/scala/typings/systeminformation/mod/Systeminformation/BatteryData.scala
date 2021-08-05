@@ -38,8 +38,7 @@ trait BatteryData extends StObject {
 }
 object BatteryData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acconnected: Boolean,
     capacityUnit: String,
     currentcapacity: Double,
@@ -61,52 +60,36 @@ object BatteryData {
     __obj.asInstanceOf[BatteryData]
   }
   
-  @scala.inline
-  implicit class BatteryDataMutableBuilder[Self <: BatteryData] (val x: Self) extends AnyVal {
+  extension [Self <: BatteryData](x: Self) {
     
-    @scala.inline
-    def setAcconnected(value: Boolean): Self = StObject.set(x, "acconnected", value.asInstanceOf[js.Any])
+    inline def setAcconnected(value: Boolean): Self = StObject.set(x, "acconnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUnit(value: String): Self = StObject.set(x, "capacityUnit", value.asInstanceOf[js.Any])
+    inline def setCapacityUnit(value: String): Self = StObject.set(x, "capacityUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentcapacity(value: Double): Self = StObject.set(x, "currentcapacity", value.asInstanceOf[js.Any])
+    inline def setCurrentcapacity(value: Double): Self = StObject.set(x, "currentcapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyclecount(value: Double): Self = StObject.set(x, "cyclecount", value.asInstanceOf[js.Any])
+    inline def setCyclecount(value: Double): Self = StObject.set(x, "cyclecount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesignedcapacity(value: Double): Self = StObject.set(x, "designedcapacity", value.asInstanceOf[js.Any])
+    inline def setDesignedcapacity(value: Double): Self = StObject.set(x, "designedcapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasbattery(value: Boolean): Self = StObject.set(x, "hasbattery", value.asInstanceOf[js.Any])
+    inline def setHasbattery(value: Boolean): Self = StObject.set(x, "hasbattery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIscharging(value: Boolean): Self = StObject.set(x, "ischarging", value.asInstanceOf[js.Any])
+    inline def setIscharging(value: Boolean): Self = StObject.set(x, "ischarging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxcapacity(value: Double): Self = StObject.set(x, "maxcapacity", value.asInstanceOf[js.Any])
+    inline def setMaxcapacity(value: Double): Self = StObject.set(x, "maxcapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeremaining(value: Double): Self = StObject.set(x, "timeremaining", value.asInstanceOf[js.Any])
+    inline def setTimeremaining(value: Double): Self = StObject.set(x, "timeremaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoltage(value: Double): Self = StObject.set(x, "voltage", value.asInstanceOf[js.Any])
+    inline def setVoltage(value: Double): Self = StObject.set(x, "voltage", value.asInstanceOf[js.Any])
   }
 }

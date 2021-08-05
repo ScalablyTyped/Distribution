@@ -13,8 +13,7 @@ trait RibbonComponent
 }
 object RibbonComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _lastHeightUpdate: Double,
     _lastLeftUpdate: Double,
     _lastTopUpdate: Double,
@@ -61,10 +60,8 @@ object RibbonComponent {
     __obj.asInstanceOf[RibbonComponent]
   }
   
-  @scala.inline
-  implicit class RibbonComponentMutableBuilder[Self <: RibbonComponent] (val x: Self) extends AnyVal {
+  extension [Self <: RibbonComponent](x: Self) {
     
-    @scala.inline
-    def setGet_ribbon(value: () => Ribbon): Self = StObject.set(x, "get_ribbon", js.Any.fromFunction0(value))
+    inline def setGet_ribbon(value: () => Ribbon): Self = StObject.set(x, "get_ribbon", js.Any.fromFunction0(value))
   }
 }

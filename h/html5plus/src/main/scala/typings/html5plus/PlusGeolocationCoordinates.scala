@@ -69,55 +69,39 @@ trait PlusGeolocationCoordinates extends StObject {
 }
 object PlusGeolocationCoordinates {
   
-  @scala.inline
-  def apply(): PlusGeolocationCoordinates = {
+  inline def apply(): PlusGeolocationCoordinates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusGeolocationCoordinates]
   }
   
-  @scala.inline
-  implicit class PlusGeolocationCoordinatesMutableBuilder[Self <: PlusGeolocationCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: PlusGeolocationCoordinates](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
-    @scala.inline
-    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
+    inline def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeAccuracyUndefined: Self = StObject.set(x, "altitudeAccuracy", js.undefined)
+    inline def setAltitudeAccuracyUndefined: Self = StObject.set(x, "altitudeAccuracy", js.undefined)
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
   }
 }

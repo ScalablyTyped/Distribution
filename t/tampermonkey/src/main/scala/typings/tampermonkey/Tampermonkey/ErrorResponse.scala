@@ -12,8 +12,7 @@ trait ErrorResponse
 }
 object ErrorResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error: String,
     readyState: ReadyState,
     response: js.Any,
@@ -26,10 +25,8 @@ object ErrorResponse {
     __obj.asInstanceOf[ErrorResponse]
   }
   
-  @scala.inline
-  implicit class ErrorResponseMutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

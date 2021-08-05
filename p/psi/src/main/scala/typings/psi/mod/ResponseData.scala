@@ -10,16 +10,13 @@ trait ResponseData extends StObject {
 }
 object ResponseData {
   
-  @scala.inline
-  def apply(data: Result): ResponseData = {
+  inline def apply(data: Result): ResponseData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseData]
   }
   
-  @scala.inline
-  implicit class ResponseDataMutableBuilder[Self <: ResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseData](x: Self) {
     
-    @scala.inline
-    def setData(value: Result): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Result): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

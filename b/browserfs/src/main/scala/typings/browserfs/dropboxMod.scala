@@ -46,8 +46,7 @@ object dropboxMod {
       * Creates a new DropboxFileSystem instance with the given options.
       * Must be given an *authenticated* DropboxJS client from the old v0.10 version of the Dropbox JS SDK.
       */
-    @scala.inline
-    def Create(opts: DropboxFileSystemOptions, cb: BFSCallback[DropboxFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: DropboxFileSystemOptions, cb: BFSCallback[DropboxFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/Dropbox", "default.Name")
     @js.native
@@ -57,8 +56,7 @@ object dropboxMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/Dropbox", "DropboxFile")
@@ -246,7 +244,7 @@ object dropboxMod {
     extends BaseFileSystem
        with FileSystem {
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
     /**
       * Private
@@ -407,17 +405,14 @@ object dropboxMod {
   }
   object DropboxFileSystemOptions {
     
-    @scala.inline
-    def apply(client: Client): DropboxFileSystemOptions = {
+    inline def apply(client: Client): DropboxFileSystemOptions = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropboxFileSystemOptions]
     }
     
-    @scala.inline
-    implicit class DropboxFileSystemOptionsMutableBuilder[Self <: DropboxFileSystemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DropboxFileSystemOptions](x: Self) {
       
-      @scala.inline
-      def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
 }

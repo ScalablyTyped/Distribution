@@ -29,8 +29,7 @@ trait FieldType
 }
 object FieldType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
@@ -42,28 +41,20 @@ object FieldType {
     __obj.asInstanceOf[FieldType]
   }
   
-  @scala.inline
-  implicit class FieldTypeMutableBuilder[Self <: FieldType] (val x: Self) extends AnyVal {
+  extension [Self <: FieldType](x: Self) {
     
-    @scala.inline
-    def setDefault(value: ValueDescription): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: ValueDescription): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: DictionaryType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: DictionaryType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

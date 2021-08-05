@@ -10,16 +10,13 @@ trait WebExtensionManifestOmnibox extends StObject {
 }
 object WebExtensionManifestOmnibox {
   
-  @scala.inline
-  def apply(keyword: String): WebExtensionManifestOmnibox = {
+  inline def apply(keyword: String): WebExtensionManifestOmnibox = {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebExtensionManifestOmnibox]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestOmniboxMutableBuilder[Self <: WebExtensionManifestOmnibox] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestOmnibox](x: Self) {
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
   }
 }

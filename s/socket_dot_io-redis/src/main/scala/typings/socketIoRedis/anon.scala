@@ -17,38 +17,28 @@ object anon {
   }
   object Except {
     
-    @scala.inline
-    def apply(): Except = {
+    inline def apply(): Except = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Except]
     }
     
-    @scala.inline
-    implicit class ExceptMutableBuilder[Self <: Except] (val x: Self) extends AnyVal {
+    extension [Self <: Except](x: Self) {
       
-      @scala.inline
-      def setExcept(value: js.Array[String]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+      inline def setExcept(value: js.Array[String]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
+      inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
       
-      @scala.inline
-      def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
+      inline def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
       
-      @scala.inline
-      def setFlags(value: StringDictionary[Boolean]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: StringDictionary[Boolean]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setRooms(value: js.Array[String]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+      inline def setRooms(value: js.Array[String]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
+      inline def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
       
-      @scala.inline
-      def setRoomsVarargs(value: String*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+      inline def setRoomsVarargs(value: String*): Self = StObject.set(x, "rooms", js.Array(value :_*))
     }
   }
 }

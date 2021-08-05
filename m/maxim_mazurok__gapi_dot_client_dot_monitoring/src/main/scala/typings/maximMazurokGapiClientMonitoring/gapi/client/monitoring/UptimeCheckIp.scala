@@ -23,31 +23,23 @@ trait UptimeCheckIp extends StObject {
 }
 object UptimeCheckIp {
   
-  @scala.inline
-  def apply(): UptimeCheckIp = {
+  inline def apply(): UptimeCheckIp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UptimeCheckIp]
   }
   
-  @scala.inline
-  implicit class UptimeCheckIpMutableBuilder[Self <: UptimeCheckIp] (val x: Self) extends AnyVal {
+  extension [Self <: UptimeCheckIp](x: Self) {
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

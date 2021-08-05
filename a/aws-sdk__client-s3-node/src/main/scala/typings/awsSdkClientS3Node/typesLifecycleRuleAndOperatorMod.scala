@@ -23,29 +23,22 @@ object typesLifecycleRuleAndOperatorMod {
   }
   object LifecycleRuleAndOperator {
     
-    @scala.inline
-    def apply(): LifecycleRuleAndOperator = {
+    inline def apply(): LifecycleRuleAndOperator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LifecycleRuleAndOperator]
     }
     
-    @scala.inline
-    implicit class LifecycleRuleAndOperatorMutableBuilder[Self <: LifecycleRuleAndOperator] (val x: Self) extends AnyVal {
+    extension [Self <: LifecycleRuleAndOperator](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
   
@@ -61,23 +54,18 @@ object typesLifecycleRuleAndOperatorMod {
   }
   object UnmarshalledLifecycleRuleAndOperator {
     
-    @scala.inline
-    def apply(): UnmarshalledLifecycleRuleAndOperator = {
+    inline def apply(): UnmarshalledLifecycleRuleAndOperator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledLifecycleRuleAndOperator]
     }
     
-    @scala.inline
-    implicit class UnmarshalledLifecycleRuleAndOperatorMutableBuilder[Self <: UnmarshalledLifecycleRuleAndOperator] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledLifecycleRuleAndOperator](x: Self) {
       
-      @scala.inline
-      def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
 }

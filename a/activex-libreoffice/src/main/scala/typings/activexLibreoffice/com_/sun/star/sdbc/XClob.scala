@@ -76,8 +76,7 @@ trait XClob
 }
 object XClob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharacterStream: XInputStream,
     acquire: () => Unit,
     getCharacterStream: () => XInputStream,
@@ -92,25 +91,18 @@ object XClob {
     __obj.asInstanceOf[XClob]
   }
   
-  @scala.inline
-  implicit class XClobMutableBuilder[Self <: XClob] (val x: Self) extends AnyVal {
+  extension [Self <: XClob](x: Self) {
     
-    @scala.inline
-    def setCharacterStream(value: XInputStream): Self = StObject.set(x, "CharacterStream", value.asInstanceOf[js.Any])
+    inline def setCharacterStream(value: XInputStream): Self = StObject.set(x, "CharacterStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCharacterStream(value: () => XInputStream): Self = StObject.set(x, "getCharacterStream", js.Any.fromFunction0(value))
+    inline def setGetCharacterStream(value: () => XInputStream): Self = StObject.set(x, "getCharacterStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubString(value: (Double, Double) => String): Self = StObject.set(x, "getSubString", js.Any.fromFunction2(value))
+    inline def setGetSubString(value: (Double, Double) => String): Self = StObject.set(x, "getSubString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosition(value: (String, Double) => Double): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+    inline def setPosition(value: (String, Double) => Double): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPositionOfClob(value: (XClob, Double) => Double): Self = StObject.set(x, "positionOfClob", js.Any.fromFunction2(value))
+    inline def setPositionOfClob(value: (XClob, Double) => Double): Self = StObject.set(x, "positionOfClob", js.Any.fromFunction2(value))
   }
 }

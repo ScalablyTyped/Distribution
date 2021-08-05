@@ -16,25 +16,19 @@ trait TypeDefinition extends StObject {
 }
 object TypeDefinition {
   
-  @scala.inline
-  def apply(): TypeDefinition = {
+  inline def apply(): TypeDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypeDefinition]
   }
   
-  @scala.inline
-  implicit class TypeDefinitionMutableBuilder[Self <: TypeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TypeDefinition](x: Self) {
     
-    @scala.inline
-    def setForClient(value: /* body */ js.Any => Data): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
+    inline def setForClient(value: /* body */ js.Any => Data): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForClientUndefined: Self = StObject.set(x, "forClient", js.undefined)
+    inline def setForClientUndefined: Self = StObject.set(x, "forClient", js.undefined)
     
-    @scala.inline
-    def setFromClient(value: (/* body */ String | Buffer, /* req */ Request, /* type */ MediaType) => js.Any): Self = StObject.set(x, "fromClient", js.Any.fromFunction3(value))
+    inline def setFromClient(value: (/* body */ String | Buffer, /* req */ Request, /* type */ MediaType) => js.Any): Self = StObject.set(x, "fromClient", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFromClientUndefined: Self = StObject.set(x, "fromClient", js.undefined)
+    inline def setFromClientUndefined: Self = StObject.set(x, "fromClient", js.undefined)
   }
 }

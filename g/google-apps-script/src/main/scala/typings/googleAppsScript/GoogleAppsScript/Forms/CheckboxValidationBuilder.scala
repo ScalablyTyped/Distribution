@@ -32,8 +32,7 @@ trait CheckboxValidationBuilder extends StObject {
 }
 object CheckboxValidationBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     requireSelectAtLeast: Integer => CheckboxValidationBuilder,
     requireSelectAtMost: Integer => CheckboxValidationBuilder,
     requireSelectExactly: Integer => CheckboxValidationBuilder
@@ -42,16 +41,12 @@ object CheckboxValidationBuilder {
     __obj.asInstanceOf[CheckboxValidationBuilder]
   }
   
-  @scala.inline
-  implicit class CheckboxValidationBuilderMutableBuilder[Self <: CheckboxValidationBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxValidationBuilder](x: Self) {
     
-    @scala.inline
-    def setRequireSelectAtLeast(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtLeast", js.Any.fromFunction1(value))
+    inline def setRequireSelectAtLeast(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtLeast", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireSelectAtMost(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtMost", js.Any.fromFunction1(value))
+    inline def setRequireSelectAtMost(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtMost", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireSelectExactly(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectExactly", js.Any.fromFunction1(value))
+    inline def setRequireSelectExactly(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectExactly", js.Any.fromFunction1(value))
   }
 }

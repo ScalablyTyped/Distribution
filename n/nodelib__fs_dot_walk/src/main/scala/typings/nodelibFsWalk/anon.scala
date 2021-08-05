@@ -48,50 +48,36 @@ object anon {
   }
   object PartialFileSystemAdapter {
     
-    @scala.inline
-    def apply(): PartialFileSystemAdapter = {
+    inline def apply(): PartialFileSystemAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFileSystemAdapter]
     }
     
-    @scala.inline
-    implicit class PartialFileSystemAdapterMutableBuilder[Self <: PartialFileSystemAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFileSystemAdapter](x: Self) {
       
-      @scala.inline
-      def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
+      inline def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
+      inline def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLstatSyncUndefined: Self = StObject.set(x, "lstatSync", js.undefined)
+      inline def setLstatSyncUndefined: Self = StObject.set(x, "lstatSync", js.undefined)
       
-      @scala.inline
-      def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
+      inline def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
       
-      @scala.inline
-      def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
+      inline def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReaddirSync(value: (/* path */ PathLike, /* options */ BaseEncodingOptionswithFiEncoding) => js.Array[Dirent]): Self = StObject.set(x, "readdirSync", js.Any.fromFunction2(value))
+      inline def setReaddirSync(value: (/* path */ PathLike, /* options */ BaseEncodingOptionswithFiEncoding) => js.Array[Dirent]): Self = StObject.set(x, "readdirSync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReaddirSyncUndefined: Self = StObject.set(x, "readdirSync", js.undefined)
+      inline def setReaddirSyncUndefined: Self = StObject.set(x, "readdirSync", js.undefined)
       
-      @scala.inline
-      def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
+      inline def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
       
-      @scala.inline
-      def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "statSync", js.Any.fromFunction1(value))
+      inline def setStatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "statSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatSyncUndefined: Self = StObject.set(x, "statSync", js.undefined)
+      inline def setStatSyncUndefined: Self = StObject.set(x, "statSync", js.undefined)
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
   }
   

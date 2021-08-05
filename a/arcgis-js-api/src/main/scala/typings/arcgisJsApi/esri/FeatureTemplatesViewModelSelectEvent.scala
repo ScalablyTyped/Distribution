@@ -12,19 +12,15 @@ trait FeatureTemplatesViewModelSelectEvent extends StObject {
 }
 object FeatureTemplatesViewModelSelectEvent {
   
-  @scala.inline
-  def apply(item: TemplateItem, template: FeatureTemplate): FeatureTemplatesViewModelSelectEvent = {
+  inline def apply(item: TemplateItem, template: FeatureTemplate): FeatureTemplatesViewModelSelectEvent = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplatesViewModelSelectEvent]
   }
   
-  @scala.inline
-  implicit class FeatureTemplatesViewModelSelectEventMutableBuilder[Self <: FeatureTemplatesViewModelSelectEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTemplatesViewModelSelectEvent](x: Self) {
     
-    @scala.inline
-    def setItem(value: TemplateItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: TemplateItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: FeatureTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: FeatureTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

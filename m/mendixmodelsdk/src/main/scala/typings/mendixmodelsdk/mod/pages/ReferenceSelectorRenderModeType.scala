@@ -21,13 +21,11 @@ object ReferenceSelectorRenderModeType {
   @JSImport("mendixmodelsdk", "pages.ReferenceSelectorRenderModeType.DropDown")
   @js.native
   def DropDown: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelectorRenderModeType = js.native
-  @scala.inline
-  def DropDown_=(x: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelectorRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropDown")(x.asInstanceOf[js.Any])
+  inline def DropDown_=(x: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelectorRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropDown")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ReferenceSelectorRenderModeType.Form")
   @js.native
   def Form: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelectorRenderModeType = js.native
-  @scala.inline
-  def Form_=(x: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelectorRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
+  inline def Form_=(x: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelectorRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
 }

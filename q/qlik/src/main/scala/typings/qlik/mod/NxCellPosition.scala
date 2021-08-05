@@ -12,19 +12,15 @@ trait NxCellPosition extends StObject {
 }
 object NxCellPosition {
   
-  @scala.inline
-  def apply(qx: Double, qy: Double): NxCellPosition = {
+  inline def apply(qx: Double, qy: Double): NxCellPosition = {
     val __obj = js.Dynamic.literal(qx = qx.asInstanceOf[js.Any], qy = qy.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxCellPosition]
   }
   
-  @scala.inline
-  implicit class NxCellPositionMutableBuilder[Self <: NxCellPosition] (val x: Self) extends AnyVal {
+  extension [Self <: NxCellPosition](x: Self) {
     
-    @scala.inline
-    def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
+    inline def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQy(value: Double): Self = StObject.set(x, "qy", value.asInstanceOf[js.Any])
+    inline def setQy(value: Double): Self = StObject.set(x, "qy", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait ReleaseTaskAttachment extends StObject {
 }
 object ReleaseTaskAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     createdOn: Date,
     modifiedBy: String,
@@ -41,31 +40,22 @@ object ReleaseTaskAttachment {
     __obj.asInstanceOf[ReleaseTaskAttachment]
   }
   
-  @scala.inline
-  implicit class ReleaseTaskAttachmentMutableBuilder[Self <: ReleaseTaskAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseTaskAttachment](x: Self) {
     
-    @scala.inline
-    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedBy(value: String): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
+    inline def setModifiedBy(value: String): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
+    inline def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineId(value: String): Self = StObject.set(x, "timelineId", value.asInstanceOf[js.Any])
+    inline def setTimelineId(value: String): Self = StObject.set(x, "timelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

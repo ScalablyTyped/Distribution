@@ -33,49 +33,35 @@ trait BuildGroup extends StObject {
 }
 object BuildGroup {
   
-  @scala.inline
-  def apply(): BuildGroup = {
+  inline def apply(): BuildGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildGroup]
   }
   
-  @scala.inline
-  implicit class BuildGroupMutableBuilder[Self <: BuildGroup] (val x: Self) extends AnyVal {
+  extension [Self <: BuildGroup](x: Self) {
     
-    @scala.inline
-    def setCurrentBuildSummary(value: BuildSummary): Self = StObject.set(x, "currentBuildSummary", value.asInstanceOf[js.Any])
+    inline def setCurrentBuildSummary(value: BuildSummary): Self = StObject.set(x, "currentBuildSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentBuildSummaryUndefined: Self = StObject.set(x, "currentBuildSummary", js.undefined)
+    inline def setCurrentBuildSummaryUndefined: Self = StObject.set(x, "currentBuildSummary", js.undefined)
     
-    @scala.inline
-    def setDependsOn(value: Identifiers): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
+    inline def setDependsOn(value: Identifiers): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
+    inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    @scala.inline
-    def setDependsOnVarargs(value: NonEmptyString*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: NonEmptyString*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIgnoreFailure(value: Boolean): Self = StObject.set(x, "ignoreFailure", value.asInstanceOf[js.Any])
+    inline def setIgnoreFailure(value: Boolean): Self = StObject.set(x, "ignoreFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreFailureUndefined: Self = StObject.set(x, "ignoreFailure", js.undefined)
+    inline def setIgnoreFailureUndefined: Self = StObject.set(x, "ignoreFailure", js.undefined)
     
-    @scala.inline
-    def setPriorBuildSummaryList(value: BuildSummaries): Self = StObject.set(x, "priorBuildSummaryList", value.asInstanceOf[js.Any])
+    inline def setPriorBuildSummaryList(value: BuildSummaries): Self = StObject.set(x, "priorBuildSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorBuildSummaryListUndefined: Self = StObject.set(x, "priorBuildSummaryList", js.undefined)
+    inline def setPriorBuildSummaryListUndefined: Self = StObject.set(x, "priorBuildSummaryList", js.undefined)
     
-    @scala.inline
-    def setPriorBuildSummaryListVarargs(value: BuildSummary*): Self = StObject.set(x, "priorBuildSummaryList", js.Array(value :_*))
+    inline def setPriorBuildSummaryListVarargs(value: BuildSummary*): Self = StObject.set(x, "priorBuildSummaryList", js.Array(value :_*))
   }
 }

@@ -16,37 +16,27 @@ trait ItemDefinition
 }
 object ItemDefinition {
   
-  @scala.inline
-  def apply(): ItemDefinition = {
+  inline def apply(): ItemDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemDefinition]
   }
   
-  @scala.inline
-  implicit class ItemDefinitionMutableBuilder[Self <: ItemDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ItemDefinition](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Array[EventDefinition]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[EventDefinition]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: EventDefinition*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: EventDefinition*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setRequest(value: RequestDefinition): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestDefinition): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResponse(value: js.Array[ResponseDefinition]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: js.Array[ResponseDefinition]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setResponseVarargs(value: ResponseDefinition*): Self = StObject.set(x, "response", js.Array(value :_*))
+    inline def setResponseVarargs(value: ResponseDefinition*): Self = StObject.set(x, "response", js.Array(value :_*))
   }
 }

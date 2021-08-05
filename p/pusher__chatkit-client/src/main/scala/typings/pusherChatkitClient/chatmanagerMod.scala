@@ -65,32 +65,24 @@ object chatmanagerMod {
   }
   object ChatManagerConstructorArgs {
     
-    @scala.inline
-    def apply(instanceLocator: String, userId: String): ChatManagerConstructorArgs = {
+    inline def apply(instanceLocator: String, userId: String): ChatManagerConstructorArgs = {
       val __obj = js.Dynamic.literal(instanceLocator = instanceLocator.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChatManagerConstructorArgs]
     }
     
-    @scala.inline
-    implicit class ChatManagerConstructorArgsMutableBuilder[Self <: ChatManagerConstructorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ChatManagerConstructorArgs](x: Self) {
       
-      @scala.inline
-      def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+      inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
       
-      @scala.inline
-      def setInstanceLocator(value: String): Self = StObject.set(x, "instanceLocator", value.asInstanceOf[js.Any])
+      inline def setInstanceLocator(value: String): Self = StObject.set(x, "instanceLocator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,8 +130,7 @@ object chatmanagerMod {
   }
   object GlobalHooks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onAddedToRoom: /* room */ PusherRoom => Unit,
       onNewReadCursor: (/* room */ PusherRoom, /* user */ PusherUser) => Unit,
       onPresenceChanged: (/* state */ UserPresenceState, /* user */ PusherUser) => Unit,
@@ -155,38 +146,27 @@ object chatmanagerMod {
       __obj.asInstanceOf[GlobalHooks]
     }
     
-    @scala.inline
-    implicit class GlobalHooksMutableBuilder[Self <: GlobalHooks] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalHooks](x: Self) {
       
-      @scala.inline
-      def setOnAddedToRoom(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onAddedToRoom", js.Any.fromFunction1(value))
+      inline def setOnAddedToRoom(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onAddedToRoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNewReadCursor(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onNewReadCursor", js.Any.fromFunction2(value))
+      inline def setOnNewReadCursor(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onNewReadCursor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPresenceChanged(value: (/* state */ UserPresenceState, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onPresenceChanged", js.Any.fromFunction2(value))
+      inline def setOnPresenceChanged(value: (/* state */ UserPresenceState, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onPresenceChanged", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRemovedFromRoom(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRemovedFromRoom", js.Any.fromFunction1(value))
+      inline def setOnRemovedFromRoom(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRemovedFromRoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRoomDeleted(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRoomDeleted", js.Any.fromFunction1(value))
+      inline def setOnRoomDeleted(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRoomDeleted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRoomUpdated(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRoomUpdated", js.Any.fromFunction1(value))
+      inline def setOnRoomUpdated(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRoomUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUserJoinedRoom(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserJoinedRoom", js.Any.fromFunction2(value))
+      inline def setOnUserJoinedRoom(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserJoinedRoom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUserLeftRoom(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserLeftRoom", js.Any.fromFunction2(value))
+      inline def setOnUserLeftRoom(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserLeftRoom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUserStartedTyping(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserStartedTyping", js.Any.fromFunction2(value))
+      inline def setOnUserStartedTyping(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserStartedTyping", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUserStoppedTyping(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserStoppedTyping", js.Any.fromFunction2(value))
+      inline def setOnUserStoppedTyping(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserStoppedTyping", js.Any.fromFunction2(value))
     }
   }
   
@@ -224,8 +204,7 @@ object chatmanagerMod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: /* args */ js.Any => Unit,
       error: /* args */ js.Any => Unit,
       info: /* args */ js.Any => Unit,
@@ -236,23 +215,17 @@ object chatmanagerMod {
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* args */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* args */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* args */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* args */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: /* args */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* args */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerbose(value: /* args */ js.Any => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction1(value))
+      inline def setVerbose(value: /* args */ js.Any => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: /* args */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* args */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -275,35 +248,26 @@ object chatmanagerMod {
   }
   object TokenProviderConstructorArgs {
     
-    @scala.inline
-    def apply(url: String): TokenProviderConstructorArgs = {
+    inline def apply(url: String): TokenProviderConstructorArgs = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenProviderConstructorArgs]
     }
     
-    @scala.inline
-    implicit class TokenProviderConstructorArgsMutableBuilder[Self <: TokenProviderConstructorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TokenProviderConstructorArgs](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setQueryParams(value: js.Any): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: js.Any): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
 }

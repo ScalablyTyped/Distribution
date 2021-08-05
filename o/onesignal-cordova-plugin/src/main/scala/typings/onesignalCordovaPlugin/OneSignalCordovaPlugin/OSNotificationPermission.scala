@@ -18,12 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OSNotificationPermission extends StObject
 object OSNotificationPermission {
   
-  @scala.inline
-  def Authorized: `2` = 2.asInstanceOf[`2`]
+  inline def Authorized: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Denied: `1` = 1.asInstanceOf[`1`]
+  inline def Denied: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def NotDetermined: `0` = 0.asInstanceOf[`0`]
+  inline def NotDetermined: `0` = 0.asInstanceOf[`0`]
 }

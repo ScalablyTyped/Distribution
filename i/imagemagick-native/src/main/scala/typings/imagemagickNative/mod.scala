@@ -16,8 +16,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def convert(options: IStreamConvertOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+    inline def convert(options: IStreamConvertOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   }
   
   trait ICompositeOptions extends StObject {
@@ -34,38 +33,28 @@ object mod {
   }
   object ICompositeOptions {
     
-    @scala.inline
-    def apply(compositeData: Buffer, srcData: Buffer): ICompositeOptions = {
+    inline def apply(compositeData: Buffer, srcData: Buffer): ICompositeOptions = {
       val __obj = js.Dynamic.literal(compositeData = compositeData.asInstanceOf[js.Any], srcData = srcData.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICompositeOptions]
     }
     
-    @scala.inline
-    implicit class ICompositeOptionsMutableBuilder[Self <: ICompositeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICompositeOptions](x: Self) {
       
-      @scala.inline
-      def setCompositeData(value: Buffer): Self = StObject.set(x, "compositeData", value.asInstanceOf[js.Any])
+      inline def setCompositeData(value: Buffer): Self = StObject.set(x, "compositeData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+      inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
-      @scala.inline
-      def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+      inline def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+      inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
       
-      @scala.inline
-      def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
+      inline def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,26 +70,20 @@ object mod {
   }
   object IConstPixelsItem {
     
-    @scala.inline
-    def apply(blue: Double, green: Double, opacity: Double, red: Double): IConstPixelsItem = {
+    inline def apply(blue: Double, green: Double, opacity: Double, red: Double): IConstPixelsItem = {
       val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConstPixelsItem]
     }
     
-    @scala.inline
-    implicit class IConstPixelsItemMutableBuilder[Self <: IConstPixelsItem] (val x: Self) extends AnyVal {
+    extension [Self <: IConstPixelsItem](x: Self) {
       
-      @scala.inline
-      def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,29 +101,22 @@ object mod {
   }
   object IConstPixelsOptions {
     
-    @scala.inline
-    def apply(columns: Double, rows: Double, srcData: Buffer, x: Double, y: Double): IConstPixelsOptions = {
+    inline def apply(columns: Double, rows: Double, srcData: Buffer, x: Double, y: Double): IConstPixelsOptions = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], srcData = srcData.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConstPixelsOptions]
     }
     
-    @scala.inline
-    implicit class IConstPixelsOptionsMutableBuilder[Self <: IConstPixelsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IConstPixelsOptions](x: Self) {
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
+      inline def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,119 +160,82 @@ object mod {
   }
   object IConvertOptions {
     
-    @scala.inline
-    def apply(srcData: Buffer): IConvertOptions = {
+    inline def apply(srcData: Buffer): IConvertOptions = {
       val __obj = js.Dynamic.literal(srcData = srcData.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConvertOptions]
     }
     
-    @scala.inline
-    implicit class IConvertOptionsMutableBuilder[Self <: IConvertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IConvertOptions](x: Self) {
       
-      @scala.inline
-      def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+      inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+      inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+      inline def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+      inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setResizeStyle(value: String): Self = StObject.set(x, "resizeStyle", value.asInstanceOf[js.Any])
+      inline def setResizeStyle(value: String): Self = StObject.set(x, "resizeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeStyleUndefined: Self = StObject.set(x, "resizeStyle", js.undefined)
+      inline def setResizeStyleUndefined: Self = StObject.set(x, "resizeStyle", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
+      inline def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcFormat(value: String): Self = StObject.set(x, "srcFormat", value.asInstanceOf[js.Any])
+      inline def setSrcFormat(value: String): Self = StObject.set(x, "srcFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcFormatUndefined: Self = StObject.set(x, "srcFormat", js.undefined)
+      inline def setSrcFormatUndefined: Self = StObject.set(x, "srcFormat", js.undefined)
       
-      @scala.inline
-      def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+      inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
+      inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimFuzz(value: Double): Self = StObject.set(x, "trimFuzz", value.asInstanceOf[js.Any])
+      inline def setTrimFuzz(value: Double): Self = StObject.set(x, "trimFuzz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimFuzzUndefined: Self = StObject.set(x, "trimFuzz", js.undefined)
+      inline def setTrimFuzzUndefined: Self = StObject.set(x, "trimFuzz", js.undefined)
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -310,29 +249,22 @@ object mod {
   }
   object IIdentifyOptions {
     
-    @scala.inline
-    def apply(srcData: Buffer): IIdentifyOptions = {
+    inline def apply(srcData: Buffer): IIdentifyOptions = {
       val __obj = js.Dynamic.literal(srcData = srcData.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIdentifyOptions]
     }
     
-    @scala.inline
-    implicit class IIdentifyOptionsMutableBuilder[Self <: IIdentifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIdentifyOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+      inline def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+      inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
       
-      @scala.inline
-      def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
+      inline def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -352,32 +284,24 @@ object mod {
   }
   object IIdentifyResult {
     
-    @scala.inline
-    def apply(density: Height, depth: Double, exif: Orientation, format: String, height: Double, width: Double): IIdentifyResult = {
+    inline def apply(density: Height, depth: Double, exif: Orientation, format: String, height: Double, width: Double): IIdentifyResult = {
       val __obj = js.Dynamic.literal(density = density.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], exif = exif.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIdentifyResult]
     }
     
-    @scala.inline
-    implicit class IIdentifyResultMutableBuilder[Self <: IIdentifyResult] (val x: Self) extends AnyVal {
+    extension [Self <: IIdentifyResult](x: Self) {
       
-      @scala.inline
-      def setDensity(value: Height): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: Height): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExif(value: Orientation): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+      inline def setExif(value: Orientation): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -393,26 +317,20 @@ object mod {
   }
   object IQuantizeColorsItem {
     
-    @scala.inline
-    def apply(b: Double, g: Double, hex: String, r: Double): IQuantizeColorsItem = {
+    inline def apply(b: Double, g: Double, hex: String, r: Double): IQuantizeColorsItem = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[IQuantizeColorsItem]
     }
     
-    @scala.inline
-    implicit class IQuantizeColorsItemMutableBuilder[Self <: IQuantizeColorsItem] (val x: Self) extends AnyVal {
+    extension [Self <: IQuantizeColorsItem](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -428,32 +346,24 @@ object mod {
   }
   object IQuantizeColorsOptions {
     
-    @scala.inline
-    def apply(colors: Double, srcData: Buffer): IQuantizeColorsOptions = {
+    inline def apply(colors: Double, srcData: Buffer): IQuantizeColorsOptions = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], srcData = srcData.asInstanceOf[js.Any])
       __obj.asInstanceOf[IQuantizeColorsOptions]
     }
     
-    @scala.inline
-    implicit class IQuantizeColorsOptionsMutableBuilder[Self <: IQuantizeColorsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IQuantizeColorsOptions](x: Self) {
       
-      @scala.inline
-      def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+      inline def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+      inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
       
-      @scala.inline
-      def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
+      inline def setSrcData(value: Buffer): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -495,116 +405,80 @@ object mod {
   }
   object IStreamConvertOptions {
     
-    @scala.inline
-    def apply(): IStreamConvertOptions = {
+    inline def apply(): IStreamConvertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStreamConvertOptions]
     }
     
-    @scala.inline
-    implicit class IStreamConvertOptionsMutableBuilder[Self <: IStreamConvertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IStreamConvertOptions](x: Self) {
       
-      @scala.inline
-      def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+      inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+      inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+      inline def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+      inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setResizeStyle(value: String): Self = StObject.set(x, "resizeStyle", value.asInstanceOf[js.Any])
+      inline def setResizeStyle(value: String): Self = StObject.set(x, "resizeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeStyleUndefined: Self = StObject.set(x, "resizeStyle", js.undefined)
+      inline def setResizeStyleUndefined: Self = StObject.set(x, "resizeStyle", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setSrcFormat(value: String): Self = StObject.set(x, "srcFormat", value.asInstanceOf[js.Any])
+      inline def setSrcFormat(value: String): Self = StObject.set(x, "srcFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcFormatUndefined: Self = StObject.set(x, "srcFormat", js.undefined)
+      inline def setSrcFormatUndefined: Self = StObject.set(x, "srcFormat", js.undefined)
       
-      @scala.inline
-      def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+      inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
+      inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimFuzz(value: Double): Self = StObject.set(x, "trimFuzz", value.asInstanceOf[js.Any])
+      inline def setTrimFuzz(value: Double): Self = StObject.set(x, "trimFuzz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimFuzzUndefined: Self = StObject.set(x, "trimFuzz", js.undefined)
+      inline def setTrimFuzzUndefined: Self = StObject.set(x, "trimFuzz", js.undefined)
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

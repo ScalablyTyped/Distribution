@@ -10,16 +10,13 @@ trait ToArray[T] extends StObject {
 }
 object ToArray {
   
-  @scala.inline
-  def apply[T](toArray: () => js.Array[T]): ToArray[T] = {
+  inline def apply[T](toArray: () => js.Array[T]): ToArray[T] = {
     val __obj = js.Dynamic.literal(toArray = js.Any.fromFunction0(toArray))
     __obj.asInstanceOf[ToArray[T]]
   }
   
-  @scala.inline
-  implicit class ToArrayMutableBuilder[Self <: ToArray[?], T] (val x: Self & ToArray[T]) extends AnyVal {
+  extension [Self <: ToArray[?], T](x: Self & ToArray[T]) {
     
-    @scala.inline
-    def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

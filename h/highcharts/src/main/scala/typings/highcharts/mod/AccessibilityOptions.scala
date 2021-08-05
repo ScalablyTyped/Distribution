@@ -140,85 +140,59 @@ trait AccessibilityOptions extends StObject {
 }
 object AccessibilityOptions {
   
-  @scala.inline
-  def apply(): AccessibilityOptions = {
+  inline def apply(): AccessibilityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilityOptions]
   }
   
-  @scala.inline
-  implicit class AccessibilityOptionsMutableBuilder[Self <: AccessibilityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityOptions](x: Self) {
     
-    @scala.inline
-    def setAnnounceNewData(value: AccessibilityAnnounceNewDataOptionsObject): Self = StObject.set(x, "announceNewData", value.asInstanceOf[js.Any])
+    inline def setAnnounceNewData(value: AccessibilityAnnounceNewDataOptionsObject): Self = StObject.set(x, "announceNewData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnounceNewDataUndefined: Self = StObject.set(x, "announceNewData", js.undefined)
+    inline def setAnnounceNewDataUndefined: Self = StObject.set(x, "announceNewData", js.undefined)
     
-    @scala.inline
-    def setCustomComponents(value: js.Any): Self = StObject.set(x, "customComponents", value.asInstanceOf[js.Any])
+    inline def setCustomComponents(value: js.Any): Self = StObject.set(x, "customComponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomComponentsUndefined: Self = StObject.set(x, "customComponents", js.undefined)
+    inline def setCustomComponentsUndefined: Self = StObject.set(x, "customComponents", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHighContrastTheme(value: js.Any): Self = StObject.set(x, "highContrastTheme", value.asInstanceOf[js.Any])
+    inline def setHighContrastTheme(value: js.Any): Self = StObject.set(x, "highContrastTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighContrastThemeUndefined: Self = StObject.set(x, "highContrastTheme", js.undefined)
+    inline def setHighContrastThemeUndefined: Self = StObject.set(x, "highContrastTheme", js.undefined)
     
-    @scala.inline
-    def setKeyboardNavigation(value: KeyboardNavigationOptionsObject): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+    inline def setKeyboardNavigation(value: KeyboardNavigationOptionsObject): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
+    inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
-    @scala.inline
-    def setLandmarkVerbosity(value: OptionsLandmarkVerbosityValue): Self = StObject.set(x, "landmarkVerbosity", value.asInstanceOf[js.Any])
+    inline def setLandmarkVerbosity(value: OptionsLandmarkVerbosityValue): Self = StObject.set(x, "landmarkVerbosity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandmarkVerbosityUndefined: Self = StObject.set(x, "landmarkVerbosity", js.undefined)
+    inline def setLandmarkVerbosityUndefined: Self = StObject.set(x, "landmarkVerbosity", js.undefined)
     
-    @scala.inline
-    def setLinkedDescription(value: String | HTMLDOMElement): Self = StObject.set(x, "linkedDescription", value.asInstanceOf[js.Any])
+    inline def setLinkedDescription(value: String | HTMLDOMElement): Self = StObject.set(x, "linkedDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedDescriptionUndefined: Self = StObject.set(x, "linkedDescription", js.undefined)
+    inline def setLinkedDescriptionUndefined: Self = StObject.set(x, "linkedDescription", js.undefined)
     
-    @scala.inline
-    def setPoint(value: AccessibilityPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: AccessibilityPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    @scala.inline
-    def setScreenReaderSection(value: AccessibilityScreenReaderSectionOptions): Self = StObject.set(x, "screenReaderSection", value.asInstanceOf[js.Any])
+    inline def setScreenReaderSection(value: AccessibilityScreenReaderSectionOptions): Self = StObject.set(x, "screenReaderSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenReaderSectionUndefined: Self = StObject.set(x, "screenReaderSection", js.undefined)
+    inline def setScreenReaderSectionUndefined: Self = StObject.set(x, "screenReaderSection", js.undefined)
     
-    @scala.inline
-    def setSeries(value: AccessibilitySeriesOptions): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: AccessibilitySeriesOptions): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setTypeDescription(value: String): Self = StObject.set(x, "typeDescription", value.asInstanceOf[js.Any])
+    inline def setTypeDescription(value: String): Self = StObject.set(x, "typeDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeDescriptionUndefined: Self = StObject.set(x, "typeDescription", js.undefined)
+    inline def setTypeDescriptionUndefined: Self = StObject.set(x, "typeDescription", js.undefined)
   }
 }

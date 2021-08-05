@@ -21,25 +21,19 @@ trait SchemaPerfSample extends StObject {
 }
 object SchemaPerfSample {
   
-  @scala.inline
-  def apply(): SchemaPerfSample = {
+  inline def apply(): SchemaPerfSample = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPerfSample]
   }
   
-  @scala.inline
-  implicit class SchemaPerfSampleMutableBuilder[Self <: SchemaPerfSample] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPerfSample](x: Self) {
     
-    @scala.inline
-    def setSampleTime(value: SchemaTimestamp): Self = StObject.set(x, "sampleTime", value.asInstanceOf[js.Any])
+    inline def setSampleTime(value: SchemaTimestamp): Self = StObject.set(x, "sampleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleTimeUndefined: Self = StObject.set(x, "sampleTime", js.undefined)
+    inline def setSampleTimeUndefined: Self = StObject.set(x, "sampleTime", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

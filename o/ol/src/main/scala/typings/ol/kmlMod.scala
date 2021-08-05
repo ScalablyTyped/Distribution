@@ -21,26 +21,19 @@ object kmlMod {
     def this(opt_options: Options) = this()
   }
   
-  @scala.inline
-  def getDefaultFillStyle(): typings.ol.fillMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFillStyle")().asInstanceOf[typings.ol.fillMod.default]
+  inline def getDefaultFillStyle(): typings.ol.fillMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFillStyle")().asInstanceOf[typings.ol.fillMod.default]
   
-  @scala.inline
-  def getDefaultImageStyle(): typings.ol.styleImageMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultImageStyle")().asInstanceOf[typings.ol.styleImageMod.default]
+  inline def getDefaultImageStyle(): typings.ol.styleImageMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultImageStyle")().asInstanceOf[typings.ol.styleImageMod.default]
   
-  @scala.inline
-  def getDefaultStrokeStyle(): typings.ol.strokeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStrokeStyle")().asInstanceOf[typings.ol.strokeMod.default]
+  inline def getDefaultStrokeStyle(): typings.ol.strokeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStrokeStyle")().asInstanceOf[typings.ol.strokeMod.default]
   
-  @scala.inline
-  def getDefaultStyle(): typings.ol.styleStyleMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyle")().asInstanceOf[typings.ol.styleStyleMod.default]
+  inline def getDefaultStyle(): typings.ol.styleStyleMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyle")().asInstanceOf[typings.ol.styleStyleMod.default]
   
-  @scala.inline
-  def getDefaultStyleArray(): js.Array[typings.ol.styleStyleMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyleArray")().asInstanceOf[js.Array[typings.ol.styleStyleMod.default]]
+  inline def getDefaultStyleArray(): js.Array[typings.ol.styleStyleMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyleArray")().asInstanceOf[js.Array[typings.ol.styleStyleMod.default]]
   
-  @scala.inline
-  def getDefaultTextStyle(): typings.ol.textMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTextStyle")().asInstanceOf[typings.ol.textMod.default]
+  inline def getDefaultTextStyle(): typings.ol.textMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTextStyle")().asInstanceOf[typings.ol.textMod.default]
   
-  @scala.inline
-  def readFlatCoordinates(node: Node): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFlatCoordinates")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
+  inline def readFlatCoordinates(node: Node): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFlatCoordinates")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
   
   trait GxTrackObject extends StObject {
     
@@ -50,26 +43,20 @@ object kmlMod {
   }
   object GxTrackObject {
     
-    @scala.inline
-    def apply(flatCoordinates: js.Array[Double], whens: js.Array[Double]): GxTrackObject = {
+    inline def apply(flatCoordinates: js.Array[Double], whens: js.Array[Double]): GxTrackObject = {
       val __obj = js.Dynamic.literal(flatCoordinates = flatCoordinates.asInstanceOf[js.Any], whens = whens.asInstanceOf[js.Any])
       __obj.asInstanceOf[GxTrackObject]
     }
     
-    @scala.inline
-    implicit class GxTrackObjectMutableBuilder[Self <: GxTrackObject] (val x: Self) extends AnyVal {
+    extension [Self <: GxTrackObject](x: Self) {
       
-      @scala.inline
-      def setFlatCoordinates(value: js.Array[Double]): Self = StObject.set(x, "flatCoordinates", value.asInstanceOf[js.Any])
+      inline def setFlatCoordinates(value: js.Array[Double]): Self = StObject.set(x, "flatCoordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatCoordinatesVarargs(value: Double*): Self = StObject.set(x, "flatCoordinates", js.Array(value :_*))
+      inline def setFlatCoordinatesVarargs(value: Double*): Self = StObject.set(x, "flatCoordinates", js.Array(value :_*))
       
-      @scala.inline
-      def setWhens(value: js.Array[Double]): Self = StObject.set(x, "whens", value.asInstanceOf[js.Any])
+      inline def setWhens(value: js.Array[Double]): Self = StObject.set(x, "whens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhensVarargs(value: Double*): Self = StObject.set(x, "whens", js.Array(value :_*))
+      inline def setWhensVarargs(value: Double*): Self = StObject.set(x, "whens", js.Array(value :_*))
     }
   }
   
@@ -125,47 +112,34 @@ object kmlMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setDefaultStyle(value: js.Array[typings.ol.styleStyleMod.default]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+      inline def setDefaultStyle(value: js.Array[typings.ol.styleStyleMod.default]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
+      inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
       
-      @scala.inline
-      def setDefaultStyleVarargs(value: typings.ol.styleStyleMod.default*): Self = StObject.set(x, "defaultStyle", js.Array(value :_*))
+      inline def setDefaultStyleVarargs(value: typings.ol.styleStyleMod.default*): Self = StObject.set(x, "defaultStyle", js.Array(value :_*))
       
-      @scala.inline
-      def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
+      inline def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractStylesUndefined: Self = StObject.set(x, "extractStyles", js.undefined)
+      inline def setExtractStylesUndefined: Self = StObject.set(x, "extractStyles", js.undefined)
       
-      @scala.inline
-      def setShowPointNames(value: Boolean): Self = StObject.set(x, "showPointNames", value.asInstanceOf[js.Any])
+      inline def setShowPointNames(value: Boolean): Self = StObject.set(x, "showPointNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPointNamesUndefined: Self = StObject.set(x, "showPointNames", js.undefined)
+      inline def setShowPointNamesUndefined: Self = StObject.set(x, "showPointNames", js.undefined)
       
-      @scala.inline
-      def setWriteStyles(value: Boolean): Self = StObject.set(x, "writeStyles", value.asInstanceOf[js.Any])
+      inline def setWriteStyles(value: Boolean): Self = StObject.set(x, "writeStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteStylesUndefined: Self = StObject.set(x, "writeStyles", js.undefined)
+      inline def setWriteStylesUndefined: Self = StObject.set(x, "writeStyles", js.undefined)
     }
   }
   
@@ -183,29 +157,22 @@ object kmlMod {
   }
   object Vec2 {
     
-    @scala.inline
-    def apply(origin: IconOrigin, x: Double, xunits: IconAnchorUnits, y: Double, yunits: IconAnchorUnits): Vec2 = {
+    inline def apply(origin: IconOrigin, x: Double, xunits: IconAnchorUnits, y: Double, yunits: IconAnchorUnits): Vec2 = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xunits = xunits.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yunits = yunits.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vec2]
     }
     
-    @scala.inline
-    implicit class Vec2MutableBuilder[Self <: Vec2] (val x: Self) extends AnyVal {
+    extension [Self <: Vec2](x: Self) {
       
-      @scala.inline
-      def setOrigin(value: IconOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: IconOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXunits(value: IconAnchorUnits): Self = StObject.set(x, "xunits", value.asInstanceOf[js.Any])
+      inline def setXunits(value: IconAnchorUnits): Self = StObject.set(x, "xunits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYunits(value: IconAnchorUnits): Self = StObject.set(x, "yunits", value.asInstanceOf[js.Any])
+      inline def setYunits(value: IconAnchorUnits): Self = StObject.set(x, "yunits", value.asInstanceOf[js.Any])
     }
   }
 }

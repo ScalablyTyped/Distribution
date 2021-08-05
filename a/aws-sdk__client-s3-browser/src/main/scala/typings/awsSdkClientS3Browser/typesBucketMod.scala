@@ -21,26 +21,20 @@ object typesBucketMod {
   }
   object Bucket {
     
-    @scala.inline
-    def apply(): Bucket = {
+    inline def apply(): Bucket = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bucket]
     }
     
-    @scala.inline
-    implicit class BucketMutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
+    extension [Self <: Bucket](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     }
   }
   
@@ -56,20 +50,16 @@ object typesBucketMod {
   }
   object UnmarshalledBucket {
     
-    @scala.inline
-    def apply(): UnmarshalledBucket = {
+    inline def apply(): UnmarshalledBucket = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledBucket]
     }
     
-    @scala.inline
-    implicit class UnmarshalledBucketMutableBuilder[Self <: UnmarshalledBucket] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledBucket](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     }
   }
 }

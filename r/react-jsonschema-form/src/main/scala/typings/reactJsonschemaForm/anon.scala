@@ -19,20 +19,16 @@ object anon {
   }
   object Blob {
     
-    @scala.inline
-    def apply(blob: typings.std.Blob, name: String): Blob = {
+    inline def apply(blob: typings.std.Blob, name: String): Blob = {
       val __obj = js.Dynamic.literal(blob = blob.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Blob]
     }
     
-    @scala.inline
-    implicit class BlobMutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
+    extension [Self <: Blob](x: Self) {
       
-      @scala.inline
-      def setBlob(value: typings.std.Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+      inline def setBlob(value: typings.std.Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,8 +60,7 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: ReactElement,
       className: String,
       disabled: Boolean,
@@ -83,44 +78,31 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoveDown(value: Boolean): Self = StObject.set(x, "hasMoveDown", value.asInstanceOf[js.Any])
+      inline def setHasMoveDown(value: Boolean): Self = StObject.set(x, "hasMoveDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoveUp(value: Boolean): Self = StObject.set(x, "hasMoveUp", value.asInstanceOf[js.Any])
+      inline def setHasMoveUp(value: Boolean): Self = StObject.set(x, "hasMoveUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasRemove(value: Boolean): Self = StObject.set(x, "hasRemove", value.asInstanceOf[js.Any])
+      inline def setHasRemove(value: Boolean): Self = StObject.set(x, "hasRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasToolbar(value: Boolean): Self = StObject.set(x, "hasToolbar", value.asInstanceOf[js.Any])
+      inline def setHasToolbar(value: Boolean): Self = StObject.set(x, "hasToolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDropIndexClick(value: Double => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onDropIndexClick", js.Any.fromFunction1(value))
+      inline def setOnDropIndexClick(value: Double => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onDropIndexClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReorderClick(value: (Double, Double) => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onReorderClick", js.Any.fromFunction2(value))
+      inline def setOnReorderClick(value: (Double, Double) => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onReorderClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+      inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,26 +118,20 @@ object anon {
   }
   object Content {
     
-    @scala.inline
-    def apply(content: ReactElement, disabled: Boolean, name: String, readonly: Boolean): Content = {
+    inline def apply(content: ReactElement, disabled: Boolean, name: String, readonly: Boolean): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+      inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,8 +147,7 @@ object anon {
   }
   object Definitions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       definitions: StringDictionary[js.Any],
       fields: StringDictionary[Field],
       formContext: js.Any,
@@ -182,20 +157,15 @@ object anon {
       __obj.asInstanceOf[Definitions]
     }
     
-    @scala.inline
-    implicit class DefinitionsMutableBuilder[Self <: Definitions] (val x: Self) extends AnyVal {
+    extension [Self <: Definitions](x: Self) {
       
-      @scala.inline
-      def setDefinitions(value: StringDictionary[js.Any]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+      inline def setDefinitions(value: StringDictionary[js.Any]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: StringDictionary[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: StringDictionary[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+      inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgets(value: StringDictionary[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+      inline def setWidgets(value: StringDictionary[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,20 +177,16 @@ object anon {
   }
   object Description {
     
-    @scala.inline
-    def apply(description: String | ReactElement, id: String): Description = {
+    inline def apply(description: String | ReactElement, id: String): Description = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String | ReactElement): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String | ReactElement): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,23 +198,18 @@ object anon {
   }
   object ErrorSchema {
     
-    @scala.inline
-    def apply(errorSchema: typings.reactJsonschemaForm.mod.ErrorSchema, errors: js.Array[AjvError]): ErrorSchema = {
+    inline def apply(errorSchema: typings.reactJsonschemaForm.mod.ErrorSchema, errors: js.Array[AjvError]): ErrorSchema = {
       val __obj = js.Dynamic.literal(errorSchema = errorSchema.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorSchema]
     }
     
-    @scala.inline
-    implicit class ErrorSchemaMutableBuilder[Self <: ErrorSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorSchema](x: Self) {
       
-      @scala.inline
-      def setErrorSchema(value: typings.reactJsonschemaForm.mod.ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
+      inline def setErrorSchema(value: typings.reactJsonschemaForm.mod.ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
@@ -262,23 +223,18 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String, required: Boolean, title: String): Id = {
+    inline def apply(id: String, required: Boolean, title: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,20 +246,16 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String, value: String): Label = {
+    inline def apply(label: String, value: String): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

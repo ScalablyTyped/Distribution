@@ -28,8 +28,7 @@ trait AddApplicationInputProcessingConfigurationRequest extends StObject {
 }
 object AddApplicationInputProcessingConfigurationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationName: ApplicationName,
     CurrentApplicationVersionId: ApplicationVersionId,
     InputId: Id,
@@ -39,19 +38,14 @@ object AddApplicationInputProcessingConfigurationRequest {
     __obj.asInstanceOf[AddApplicationInputProcessingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class AddApplicationInputProcessingConfigurationRequestMutableBuilder[Self <: AddApplicationInputProcessingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationInputProcessingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
   }
 }

@@ -62,23 +62,18 @@ object typesMod {
   }
   object IMarkProps {
     
-    @scala.inline
-    def apply(key: String, ref: RefObject[js.Any], style: CSSProperties): IMarkProps = {
+    inline def apply(key: String, ref: RefObject[js.Any], style: CSSProperties): IMarkProps = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMarkProps]
     }
     
-    @scala.inline
-    implicit class IMarkPropsMutableBuilder[Self <: IMarkProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMarkProps](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,8 +109,7 @@ object typesMod {
   }
   object IProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowOverlap: Boolean,
       direction: Direction,
       disabled: Boolean,
@@ -133,59 +127,41 @@ object typesMod {
       __obj.asInstanceOf[IProps]
     }
     
-    @scala.inline
-    implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+    extension [Self <: IProps](x: Self) {
       
-      @scala.inline
-      def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+      inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableTrack(value: Boolean): Self = StObject.set(x, "draggableTrack", value.asInstanceOf[js.Any])
+      inline def setDraggableTrack(value: Boolean): Self = StObject.set(x, "draggableTrack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: js.Array[Double] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: js.Array[Double] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFinalChange(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
+      inline def setOnFinalChange(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
+      inline def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
       
-      @scala.inline
-      def setRenderMark(value: /* params */ Index => ReactNode): Self = StObject.set(x, "renderMark", js.Any.fromFunction1(value))
+      inline def setRenderMark(value: /* params */ Index => ReactNode): Self = StObject.set(x, "renderMark", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderMarkUndefined: Self = StObject.set(x, "renderMark", js.undefined)
+      inline def setRenderMarkUndefined: Self = StObject.set(x, "renderMark", js.undefined)
       
-      @scala.inline
-      def setRenderThumb(value: IsDragged => ReactNode): Self = StObject.set(x, "renderThumb", js.Any.fromFunction1(value))
+      inline def setRenderThumb(value: IsDragged => ReactNode): Self = StObject.set(x, "renderThumb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTrack(value: Children => ReactNode): Self = StObject.set(x, "renderTrack", js.Any.fromFunction1(value))
+      inline def setRenderTrack(value: Children => ReactNode): Self = StObject.set(x, "renderTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -215,8 +191,7 @@ object typesMod {
   }
   object IThumbProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `aria-valuemax`: Double,
       `aria-valuemin`: Double,
       `aria-valuenow`: Double,
@@ -235,44 +210,31 @@ object typesMod {
       __obj.asInstanceOf[IThumbProps]
     }
     
-    @scala.inline
-    implicit class IThumbPropsMutableBuilder[Self <: IThumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: IThumbProps](x: Self) {
       
-      @scala.inline
-      def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      inline def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUp(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
   
@@ -292,44 +254,32 @@ object typesMod {
   }
   object ITrackBackground {
     
-    @scala.inline
-    def apply(colors: js.Array[String], max: Double, min: Double, values: js.Array[Double]): ITrackBackground = {
+    inline def apply(colors: js.Array[String], max: Double, min: Double, values: js.Array[Double]): ITrackBackground = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITrackBackground]
     }
     
-    @scala.inline
-    implicit class ITrackBackgroundMutableBuilder[Self <: ITrackBackground] (val x: Self) extends AnyVal {
+    extension [Self <: ITrackBackground](x: Self) {
       
-      @scala.inline
-      def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -345,8 +295,7 @@ object typesMod {
   }
   object ITrackProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,
       onTouchStart: TouchEvent[Element] => Unit,
       ref: RefObject[js.Any],
@@ -356,20 +305,15 @@ object typesMod {
       __obj.asInstanceOf[ITrackProps]
     }
     
-    @scala.inline
-    implicit class ITrackPropsMutableBuilder[Self <: ITrackProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITrackProps](x: Self) {
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[Element] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[Element] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   

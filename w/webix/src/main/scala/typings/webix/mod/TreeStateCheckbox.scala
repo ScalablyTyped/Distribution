@@ -27,6 +27,5 @@ trait TreeStateCheckbox extends StObject {
 }
 object TreeStateCheckbox {
   
-  @scala.inline
-  def apply: TreeStateCheckbox = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStateCheckbox").asInstanceOf[TreeStateCheckbox]
+  inline def apply: TreeStateCheckbox = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStateCheckbox").asInstanceOf[TreeStateCheckbox]
 }

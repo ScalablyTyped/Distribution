@@ -57,8 +57,7 @@ trait XAnyDescriptionAccess
 }
 object XAnyDescriptionAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnyColumnDescriptions: SafeArray[SafeArray[js.Any]],
     AnyRowDescriptions: SafeArray[SafeArray[js.Any]],
     ColumnDescriptions: SafeArray[String],
@@ -93,25 +92,18 @@ object XAnyDescriptionAccess {
     __obj.asInstanceOf[XAnyDescriptionAccess]
   }
   
-  @scala.inline
-  implicit class XAnyDescriptionAccessMutableBuilder[Self <: XAnyDescriptionAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XAnyDescriptionAccess](x: Self) {
     
-    @scala.inline
-    def setAnyColumnDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyColumnDescriptions", value.asInstanceOf[js.Any])
+    inline def setAnyColumnDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyColumnDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyRowDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyRowDescriptions", value.asInstanceOf[js.Any])
+    inline def setAnyRowDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyRowDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAnyColumnDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyColumnDescriptions", js.Any.fromFunction0(value))
+    inline def setGetAnyColumnDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyColumnDescriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnyRowDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyRowDescriptions", js.Any.fromFunction0(value))
+    inline def setGetAnyRowDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyRowDescriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAnyColumnDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyColumnDescriptions", js.Any.fromFunction1(value))
+    inline def setSetAnyColumnDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyColumnDescriptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAnyRowDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyRowDescriptions", js.Any.fromFunction1(value))
+    inline def setSetAnyRowDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyRowDescriptions", js.Any.fromFunction1(value))
   }
 }

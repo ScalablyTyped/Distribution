@@ -108,139 +108,95 @@ trait Instance extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply(): Instance = {
+  inline def apply(): Instance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instance]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+  extension [Self <: Instance](x: Self) {
     
-    @scala.inline
-    def setAddOns(value: AddOnList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
+    inline def setAddOns(value: AddOnList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
+    inline def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
-    @scala.inline
-    def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
+    inline def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setBlueprintId(value: NonEmptyString): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
+    inline def setBlueprintId(value: NonEmptyString): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
+    inline def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
     
-    @scala.inline
-    def setBlueprintName(value: NonEmptyString): Self = StObject.set(x, "blueprintName", value.asInstanceOf[js.Any])
+    inline def setBlueprintName(value: NonEmptyString): Self = StObject.set(x, "blueprintName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueprintNameUndefined: Self = StObject.set(x, "blueprintName", js.undefined)
+    inline def setBlueprintNameUndefined: Self = StObject.set(x, "blueprintName", js.undefined)
     
-    @scala.inline
-    def setBundleId(value: NonEmptyString): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: NonEmptyString): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setHardware(value: InstanceHardware): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
+    inline def setHardware(value: InstanceHardware): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
+    inline def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
     
-    @scala.inline
-    def setIpv6Address(value: IpV6Address): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: IpV6Address): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
+    inline def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
     
-    @scala.inline
-    def setIsStaticIp(value: Boolean): Self = StObject.set(x, "isStaticIp", value.asInstanceOf[js.Any])
+    inline def setIsStaticIp(value: Boolean): Self = StObject.set(x, "isStaticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStaticIpUndefined: Self = StObject.set(x, "isStaticIp", js.undefined)
+    inline def setIsStaticIpUndefined: Self = StObject.set(x, "isStaticIp", js.undefined)
     
-    @scala.inline
-    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetworking(value: InstanceNetworking): Self = StObject.set(x, "networking", value.asInstanceOf[js.Any])
+    inline def setNetworking(value: InstanceNetworking): Self = StObject.set(x, "networking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkingUndefined: Self = StObject.set(x, "networking", js.undefined)
+    inline def setNetworkingUndefined: Self = StObject.set(x, "networking", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddress(value: IpAddress): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddress(value: IpAddress): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
     
-    @scala.inline
-    def setPublicIpAddress(value: IpAddress): Self = StObject.set(x, "publicIpAddress", value.asInstanceOf[js.Any])
+    inline def setPublicIpAddress(value: IpAddress): Self = StObject.set(x, "publicIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpAddressUndefined: Self = StObject.set(x, "publicIpAddress", js.undefined)
+    inline def setPublicIpAddressUndefined: Self = StObject.set(x, "publicIpAddress", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setSshKeyName(value: ResourceName): Self = StObject.set(x, "sshKeyName", value.asInstanceOf[js.Any])
+    inline def setSshKeyName(value: ResourceName): Self = StObject.set(x, "sshKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshKeyNameUndefined: Self = StObject.set(x, "sshKeyName", js.undefined)
+    inline def setSshKeyNameUndefined: Self = StObject.set(x, "sshKeyName", js.undefined)
     
-    @scala.inline
-    def setState(value: InstanceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: InstanceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
+    inline def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
+    inline def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUsername(value: NonEmptyString): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: NonEmptyString): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

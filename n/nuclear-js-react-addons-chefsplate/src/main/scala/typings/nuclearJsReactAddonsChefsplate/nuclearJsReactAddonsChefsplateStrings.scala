@@ -8,6 +8,5 @@ object nuclearJsReactAddonsChefsplateStrings {
   
   @js.native
   sealed trait MapStateToProps extends StObject
-  @scala.inline
-  def MapStateToProps: MapStateToProps = "MapStateToProps".asInstanceOf[MapStateToProps]
+  inline def MapStateToProps: MapStateToProps = "MapStateToProps".asInstanceOf[MapStateToProps]
 }

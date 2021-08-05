@@ -17,20 +17,16 @@ trait Url
 }
 object Url {
   
-  @scala.inline
-  def apply(value: StringNode | Raw): Url = {
+  inline def apply(value: StringNode | Raw): Url = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Url")
     __obj.asInstanceOf[Url]
   }
   
-  @scala.inline
-  implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+  extension [Self <: Url](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: StringNode | Raw): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StringNode | Raw): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

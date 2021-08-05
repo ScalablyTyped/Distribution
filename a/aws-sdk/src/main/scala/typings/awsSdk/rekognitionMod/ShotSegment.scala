@@ -18,25 +18,19 @@ trait ShotSegment extends StObject {
 }
 object ShotSegment {
   
-  @scala.inline
-  def apply(): ShotSegment = {
+  inline def apply(): ShotSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShotSegment]
   }
   
-  @scala.inline
-  implicit class ShotSegmentMutableBuilder[Self <: ShotSegment] (val x: Self) extends AnyVal {
+  extension [Self <: ShotSegment](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: SegmentConfidence): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: SegmentConfidence): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setIndex(value: ULong): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: ULong): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
   }
 }

@@ -22,29 +22,23 @@ trait RunPipelineRequest extends StObject {
 }
 object RunPipelineRequest {
   
-  @scala.inline
-  def apply(): RunPipelineRequest = {
+  inline def apply(): RunPipelineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunPipelineRequest]
   }
   
-  @scala.inline
-  implicit class RunPipelineRequestMutableBuilder[Self <: RunPipelineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunPipelineRequest](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setPipeline(value: Pipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: Pipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
   }
 }

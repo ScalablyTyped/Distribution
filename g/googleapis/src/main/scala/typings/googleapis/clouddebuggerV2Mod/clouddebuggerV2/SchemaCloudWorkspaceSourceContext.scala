@@ -22,25 +22,19 @@ trait SchemaCloudWorkspaceSourceContext extends StObject {
 }
 object SchemaCloudWorkspaceSourceContext {
   
-  @scala.inline
-  def apply(): SchemaCloudWorkspaceSourceContext = {
+  inline def apply(): SchemaCloudWorkspaceSourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCloudWorkspaceSourceContext]
   }
   
-  @scala.inline
-  implicit class SchemaCloudWorkspaceSourceContextMutableBuilder[Self <: SchemaCloudWorkspaceSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCloudWorkspaceSourceContext](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: SchemaCloudWorkspaceId): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: SchemaCloudWorkspaceId): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

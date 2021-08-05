@@ -98,8 +98,7 @@ trait XReportComponent
 }
 object XReportComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ControlBorder: Double,
     ControlBorderColor: Double,
     DetailFields: SafeArray[String],
@@ -142,40 +141,28 @@ object XReportComponent {
     __obj.asInstanceOf[XReportComponent]
   }
   
-  @scala.inline
-  implicit class XReportComponentMutableBuilder[Self <: XReportComponent] (val x: Self) extends AnyVal {
+  extension [Self <: XReportComponent](x: Self) {
     
-    @scala.inline
-    def setControlBorder(value: Double): Self = StObject.set(x, "ControlBorder", value.asInstanceOf[js.Any])
+    inline def setControlBorder(value: Double): Self = StObject.set(x, "ControlBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlBorderColor(value: Double): Self = StObject.set(x, "ControlBorderColor", value.asInstanceOf[js.Any])
+    inline def setControlBorderColor(value: Double): Self = StObject.set(x, "ControlBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailFields(value: SafeArray[String]): Self = StObject.set(x, "DetailFields", value.asInstanceOf[js.Any])
+    inline def setDetailFields(value: SafeArray[String]): Self = StObject.set(x, "DetailFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterFields(value: SafeArray[String]): Self = StObject.set(x, "MasterFields", value.asInstanceOf[js.Any])
+    inline def setMasterFields(value: SafeArray[String]): Self = StObject.set(x, "MasterFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionX(value: Double): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
+    inline def setPositionX(value: Double): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionY(value: Double): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
+    inline def setPositionY(value: Double): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintRepeatedValues(value: Boolean): Self = StObject.set(x, "PrintRepeatedValues", value.asInstanceOf[js.Any])
+    inline def setPrintRepeatedValues(value: Boolean): Self = StObject.set(x, "PrintRepeatedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection(value: XSection): Self = StObject.set(x, "Section", value.asInstanceOf[js.Any])
+    inline def setSection(value: XSection): Self = StObject.set(x, "Section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

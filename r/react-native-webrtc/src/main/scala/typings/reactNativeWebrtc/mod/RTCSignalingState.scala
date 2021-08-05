@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCSignalingState extends StObject
 object RTCSignalingState {
   
-  @scala.inline
-  def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = "closed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed]
+  inline def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = "closed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed]
   
-  @scala.inline
-  def `have-local-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-offer` = "have-local-offer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-offer`]
+  inline def `have-local-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-offer` = "have-local-offer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-offer`]
   
-  @scala.inline
-  def `have-local-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-pranswer` = "have-local-pranswer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-pranswer`]
+  inline def `have-local-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-pranswer` = "have-local-pranswer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-pranswer`]
   
-  @scala.inline
-  def `have-remote-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-offer` = "have-remote-offer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-offer`]
+  inline def `have-remote-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-offer` = "have-remote-offer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-offer`]
   
-  @scala.inline
-  def `have-remote-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer`]
+  inline def `have-remote-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer`]
   
-  @scala.inline
-  def stable: typings.reactNativeWebrtc.reactNativeWebrtcStrings.stable = "stable".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.stable]
+  inline def stable: typings.reactNativeWebrtc.reactNativeWebrtcStrings.stable = "stable".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.stable]
 }

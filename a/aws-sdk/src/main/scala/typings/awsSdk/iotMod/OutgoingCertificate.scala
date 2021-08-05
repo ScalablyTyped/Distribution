@@ -38,49 +38,35 @@ trait OutgoingCertificate extends StObject {
 }
 object OutgoingCertificate {
   
-  @scala.inline
-  def apply(): OutgoingCertificate = {
+  inline def apply(): OutgoingCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutgoingCertificate]
   }
   
-  @scala.inline
-  implicit class OutgoingCertificateMutableBuilder[Self <: OutgoingCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: OutgoingCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setTransferDate(value: DateType): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
+    inline def setTransferDate(value: DateType): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
+    inline def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
     
-    @scala.inline
-    def setTransferMessage(value: Message): Self = StObject.set(x, "transferMessage", value.asInstanceOf[js.Any])
+    inline def setTransferMessage(value: Message): Self = StObject.set(x, "transferMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferMessageUndefined: Self = StObject.set(x, "transferMessage", js.undefined)
+    inline def setTransferMessageUndefined: Self = StObject.set(x, "transferMessage", js.undefined)
     
-    @scala.inline
-    def setTransferredTo(value: AwsAccountId): Self = StObject.set(x, "transferredTo", value.asInstanceOf[js.Any])
+    inline def setTransferredTo(value: AwsAccountId): Self = StObject.set(x, "transferredTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferredToUndefined: Self = StObject.set(x, "transferredTo", js.undefined)
+    inline def setTransferredToUndefined: Self = StObject.set(x, "transferredTo", js.undefined)
   }
 }

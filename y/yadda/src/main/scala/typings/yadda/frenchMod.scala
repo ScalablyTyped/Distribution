@@ -1432,8 +1432,7 @@ object frenchMod extends Shortcut {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _steps: js.Array[String],
       alors: String,
       background: String,
@@ -1458,29 +1457,21 @@ object frenchMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def setAlors(value: String): Self = StObject.set(x, "alors", value.asInstanceOf[js.Any])
+      inline def setAlors(value: String): Self = StObject.set(x, "alors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtantdonnalors(value: String): Self = StObject.set(x, "etantdonnalors", value.asInstanceOf[js.Any])
+      inline def setEtantdonnalors(value: String): Self = StObject.set(x, "etantdonnalors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtantdonnalorss(value: String): Self = StObject.set(x, "etantdonnalorss", value.asInstanceOf[js.Any])
+      inline def setEtantdonnalorss(value: String): Self = StObject.set(x, "etantdonnalorss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtantdonne(value: String): Self = StObject.set(x, "etantdonne", value.asInstanceOf[js.Any])
+      inline def setEtantdonne(value: String): Self = StObject.set(x, "etantdonne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLorsque(value: String): Self = StObject.set(x, "lorsque", value.asInstanceOf[js.Any])
+      inline def setLorsque(value: String): Self = StObject.set(x, "lorsque", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuand(value: String): Self = StObject.set(x, "quand", value.asInstanceOf[js.Any])
+      inline def setQuand(value: String): Self = StObject.set(x, "quand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoit(value: String): Self = StObject.set(x, "soit", value.asInstanceOf[js.Any])
+      inline def setSoit(value: String): Self = StObject.set(x, "soit", value.asInstanceOf[js.Any])
     }
   }
   

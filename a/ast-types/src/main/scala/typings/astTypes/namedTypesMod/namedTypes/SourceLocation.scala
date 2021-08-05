@@ -20,22 +20,16 @@ object SourceLocation {
   @js.native
   val ^ : Type[SourceLocation] = js.native
   
-  @scala.inline
-  implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SourceLocation](x: Self) {
     
-    @scala.inline
-    def setEnd(value: PositionKind): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: PositionKind): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStart(value: PositionKind): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: PositionKind): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ object anon {
   }
   object RequiredLoaderHeightWidth {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       css: String | PrecompiledCss,
       height: LengthType,
@@ -35,23 +34,17 @@ object anon {
       __obj.asInstanceOf[RequiredLoaderHeightWidth]
     }
     
-    @scala.inline
-    implicit class RequiredLoaderHeightWidthMutableBuilder[Self <: RequiredLoaderHeightWidth] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredLoaderHeightWidth](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: LengthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: LengthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,8 +67,7 @@ object anon {
   }
   object RequiredLoaderHeightWidthColor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       css: String | PrecompiledCss,
       height: LengthType,
@@ -88,29 +80,21 @@ object anon {
       __obj.asInstanceOf[RequiredLoaderHeightWidthColor]
     }
     
-    @scala.inline
-    implicit class RequiredLoaderHeightWidthColorMutableBuilder[Self <: RequiredLoaderHeightWidthColor] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredLoaderHeightWidthColor](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: LengthType): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: LengthType): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: LengthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: LengthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,8 +113,7 @@ object anon {
   }
   object RequiredLoaderSizeMarginP {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       css: String | PrecompiledCss,
       loading: Boolean,
@@ -141,23 +124,17 @@ object anon {
       __obj.asInstanceOf[RequiredLoaderSizeMarginP]
     }
     
-    @scala.inline
-    implicit class RequiredLoaderSizeMarginPMutableBuilder[Self <: RequiredLoaderSizeMarginP] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredLoaderSizeMarginP](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: LengthType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: LengthType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,26 +151,20 @@ object anon {
   }
   object RequiredLoaderSizeProps {
     
-    @scala.inline
-    def apply(color: String, css: String | PrecompiledCss, loading: Boolean, size: LengthType): RequiredLoaderSizeProps = {
+    inline def apply(color: String, css: String | PrecompiledCss, loading: Boolean, size: LengthType): RequiredLoaderSizeProps = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredLoaderSizeProps]
     }
     
-    @scala.inline
-    implicit class RequiredLoaderSizePropsMutableBuilder[Self <: RequiredLoaderSizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredLoaderSizeProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: LengthType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: LengthType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

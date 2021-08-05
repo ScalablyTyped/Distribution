@@ -14,7 +14,7 @@ trait SmartTagAction extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.SmartTagAction_typekey")
+  /* private */ @JSName("Excel.SmartTagAction_typekey")
   var ExcelDotSmartTagAction_typekey: SmartTagAction
   
   def Execute(): Unit
@@ -39,8 +39,7 @@ trait SmartTagAction extends StObject {
 }
 object SmartTagAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveXControl: js.Any,
     Application: Application,
     CheckboxState: Boolean,
@@ -62,52 +61,36 @@ object SmartTagAction {
     __obj.asInstanceOf[SmartTagAction]
   }
   
-  @scala.inline
-  implicit class SmartTagActionMutableBuilder[Self <: SmartTagAction] (val x: Self) extends AnyVal {
+  extension [Self <: SmartTagAction](x: Self) {
     
-    @scala.inline
-    def setActiveXControl(value: js.Any): Self = StObject.set(x, "ActiveXControl", value.asInstanceOf[js.Any])
+    inline def setActiveXControl(value: js.Any): Self = StObject.set(x, "ActiveXControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxState(value: Boolean): Self = StObject.set(x, "CheckboxState", value.asInstanceOf[js.Any])
+    inline def setCheckboxState(value: Boolean): Self = StObject.set(x, "CheckboxState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSmartTagAction_typekey(value: SmartTagAction): Self = StObject.set(x, "Excel.SmartTagAction_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSmartTagAction_typekey(value: SmartTagAction): Self = StObject.set(x, "Excel.SmartTagAction_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecute(value: () => Unit): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Unit): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandHelp(value: Boolean): Self = StObject.set(x, "ExpandHelp", value.asInstanceOf[js.Any])
+    inline def setExpandHelp(value: Boolean): Self = StObject.set(x, "ExpandHelp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSelection(value: Double): Self = StObject.set(x, "ListSelection", value.asInstanceOf[js.Any])
+    inline def setListSelection(value: Double): Self = StObject.set(x, "ListSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentInPane(value: Boolean): Self = StObject.set(x, "PresentInPane", value.asInstanceOf[js.Any])
+    inline def setPresentInPane(value: Boolean): Self = StObject.set(x, "PresentInPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioGroupSelection(value: Double): Self = StObject.set(x, "RadioGroupSelection", value.asInstanceOf[js.Any])
+    inline def setRadioGroupSelection(value: Double): Self = StObject.set(x, "RadioGroupSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextboxText(value: String): Self = StObject.set(x, "TextboxText", value.asInstanceOf[js.Any])
+    inline def setTextboxText(value: String): Self = StObject.set(x, "TextboxText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlSmartTagControlType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlSmartTagControlType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

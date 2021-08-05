@@ -23,28 +23,21 @@ trait CreateMembersRequest extends StObject {
 }
 object CreateMembersRequest {
   
-  @scala.inline
-  def apply(Accounts: AccountList, GraphArn: GraphArn): CreateMembersRequest = {
+  inline def apply(Accounts: AccountList, GraphArn: GraphArn): CreateMembersRequest = {
     val __obj = js.Dynamic.literal(Accounts = Accounts.asInstanceOf[js.Any], GraphArn = GraphArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMembersRequest]
   }
   
-  @scala.inline
-  implicit class CreateMembersRequestMutableBuilder[Self <: CreateMembersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMembersRequest](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: EmailMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: EmailMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

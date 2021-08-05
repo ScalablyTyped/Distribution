@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Direction extends StObject
 object Direction {
   
-  @scala.inline
-  def both: typings.dfVisible.dfVisibleStrings.both = "both".asInstanceOf[typings.dfVisible.dfVisibleStrings.both]
+  inline def both: typings.dfVisible.dfVisibleStrings.both = "both".asInstanceOf[typings.dfVisible.dfVisibleStrings.both]
   
-  @scala.inline
-  def horizontal: typings.dfVisible.dfVisibleStrings.horizontal = "horizontal".asInstanceOf[typings.dfVisible.dfVisibleStrings.horizontal]
+  inline def horizontal: typings.dfVisible.dfVisibleStrings.horizontal = "horizontal".asInstanceOf[typings.dfVisible.dfVisibleStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.dfVisible.dfVisibleStrings.vertical = "vertical".asInstanceOf[typings.dfVisible.dfVisibleStrings.vertical]
+  inline def vertical: typings.dfVisible.dfVisibleStrings.vertical = "vertical".asInstanceOf[typings.dfVisible.dfVisibleStrings.vertical]
 }

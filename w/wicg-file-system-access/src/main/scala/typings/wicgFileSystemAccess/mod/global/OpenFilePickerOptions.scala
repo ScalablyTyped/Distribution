@@ -12,19 +12,15 @@ trait OpenFilePickerOptions
 }
 object OpenFilePickerOptions {
   
-  @scala.inline
-  def apply(): OpenFilePickerOptions = {
+  inline def apply(): OpenFilePickerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenFilePickerOptions]
   }
   
-  @scala.inline
-  implicit class OpenFilePickerOptionsMutableBuilder[Self <: OpenFilePickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenFilePickerOptions](x: Self) {
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

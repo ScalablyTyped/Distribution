@@ -61,8 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CoseLayoutOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     componentSpacing: Double,
     coolingFactor: Double,
     edgeElasticity: js.Any => Double,
@@ -84,52 +83,36 @@ object CoseLayoutOptions {
     __obj.asInstanceOf[CoseLayoutOptions]
   }
   
-  @scala.inline
-  implicit class CoseLayoutOptionsMutableBuilder[Self <: CoseLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CoseLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setComponentSpacing(value: Double): Self = StObject.set(x, "componentSpacing", value.asInstanceOf[js.Any])
+    inline def setComponentSpacing(value: Double): Self = StObject.set(x, "componentSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoolingFactor(value: Double): Self = StObject.set(x, "coolingFactor", value.asInstanceOf[js.Any])
+    inline def setCoolingFactor(value: Double): Self = StObject.set(x, "coolingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeElasticity(value: js.Any => Double): Self = StObject.set(x, "edgeElasticity", js.Any.fromFunction1(value))
+    inline def setEdgeElasticity(value: js.Any => Double): Self = StObject.set(x, "edgeElasticity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdealEdgeLength(value: js.Any => Double): Self = StObject.set(x, "idealEdgeLength", js.Any.fromFunction1(value))
+    inline def setIdealEdgeLength(value: js.Any => Double): Self = StObject.set(x, "idealEdgeLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitialTemp(value: Double): Self = StObject.set(x, "initialTemp", value.asInstanceOf[js.Any])
+    inline def setInitialTemp(value: Double): Self = StObject.set(x, "initialTemp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTemp(value: Double): Self = StObject.set(x, "minTemp", value.asInstanceOf[js.Any])
+    inline def setMinTemp(value: Double): Self = StObject.set(x, "minTemp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: cose): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: cose): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingFactor(value: Double): Self = StObject.set(x, "nestingFactor", value.asInstanceOf[js.Any])
+    inline def setNestingFactor(value: Double): Self = StObject.set(x, "nestingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeOverlap(value: Double): Self = StObject.set(x, "nodeOverlap", value.asInstanceOf[js.Any])
+    inline def setNodeOverlap(value: Double): Self = StObject.set(x, "nodeOverlap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRepulsion(value: js.Any => Double): Self = StObject.set(x, "nodeRepulsion", js.Any.fromFunction1(value))
+    inline def setNodeRepulsion(value: js.Any => Double): Self = StObject.set(x, "nodeRepulsion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNumIter(value: Double): Self = StObject.set(x, "numIter", value.asInstanceOf[js.Any])
+    inline def setNumIter(value: Double): Self = StObject.set(x, "numIter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+    inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeaver(value: Boolean): Self = StObject.set(x, "weaver", value.asInstanceOf[js.Any])
+    inline def setWeaver(value: Boolean): Self = StObject.set(x, "weaver", value.asInstanceOf[js.Any])
   }
 }

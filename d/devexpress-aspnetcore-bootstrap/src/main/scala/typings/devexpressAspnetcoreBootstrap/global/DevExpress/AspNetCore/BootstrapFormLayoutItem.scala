@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BootstrapFormLayoutItem protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapFormLayoutItem {
-  protected def this(instance: js.Any) = this()
+  /* protected */ def this(instance: js.Any) = this()
   
   /* CompleteClass */
   override val formLayout: typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapFormLayout | Null = js.native
@@ -23,7 +23,7 @@ class BootstrapFormLayoutItem protected ()
   /* CompleteClass */
   override def getVisible(): Boolean = js.native
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   override val instance: js.Any = js.native
   
   /* CompleteClass */

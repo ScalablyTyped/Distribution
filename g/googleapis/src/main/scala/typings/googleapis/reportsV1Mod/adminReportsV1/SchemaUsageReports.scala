@@ -37,49 +37,35 @@ trait SchemaUsageReports extends StObject {
 }
 object SchemaUsageReports {
   
-  @scala.inline
-  def apply(): SchemaUsageReports = {
+  inline def apply(): SchemaUsageReports = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUsageReports]
   }
   
-  @scala.inline
-  implicit class SchemaUsageReportsMutableBuilder[Self <: SchemaUsageReports] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUsageReports](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setUsageReports(value: js.Array[SchemaUsageReport]): Self = StObject.set(x, "usageReports", value.asInstanceOf[js.Any])
+    inline def setUsageReports(value: js.Array[SchemaUsageReport]): Self = StObject.set(x, "usageReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageReportsUndefined: Self = StObject.set(x, "usageReports", js.undefined)
+    inline def setUsageReportsUndefined: Self = StObject.set(x, "usageReports", js.undefined)
     
-    @scala.inline
-    def setUsageReportsVarargs(value: SchemaUsageReport*): Self = StObject.set(x, "usageReports", js.Array(value :_*))
+    inline def setUsageReportsVarargs(value: SchemaUsageReport*): Self = StObject.set(x, "usageReports", js.Array(value :_*))
     
-    @scala.inline
-    def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

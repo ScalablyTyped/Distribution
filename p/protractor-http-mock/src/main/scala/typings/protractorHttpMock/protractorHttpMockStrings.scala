@@ -11,48 +11,41 @@ object protractorHttpMockStrings {
   sealed trait DELETE
     extends StObject
        with Method
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
   sealed trait GET
     extends StObject
        with Method
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait HEAD
     extends StObject
        with Method
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
   sealed trait JSONP
     extends StObject
        with Method
-  @scala.inline
-  def JSONP: JSONP = "JSONP".asInstanceOf[JSONP]
+  inline def JSONP: JSONP = "JSONP".asInstanceOf[JSONP]
   
   @js.native
   sealed trait PATCH
     extends StObject
        with Method
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
   sealed trait POST
     extends StObject
        with Method
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait PUT
     extends StObject
        with Method
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
 }

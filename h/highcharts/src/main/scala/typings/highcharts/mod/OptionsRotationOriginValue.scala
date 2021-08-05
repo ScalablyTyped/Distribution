@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsRotationOriginValue extends StObject
 object OptionsRotationOriginValue {
   
-  @scala.inline
-  def center: typings.highcharts.highchartsStrings.center = "center".asInstanceOf[typings.highcharts.highchartsStrings.center]
+  inline def center: typings.highcharts.highchartsStrings.center = "center".asInstanceOf[typings.highcharts.highchartsStrings.center]
   
-  @scala.inline
-  def end: typings.highcharts.highchartsStrings.end = "end".asInstanceOf[typings.highcharts.highchartsStrings.end]
+  inline def end: typings.highcharts.highchartsStrings.end = "end".asInstanceOf[typings.highcharts.highchartsStrings.end]
   
-  @scala.inline
-  def start: typings.highcharts.highchartsStrings.start = "start".asInstanceOf[typings.highcharts.highchartsStrings.start]
+  inline def start: typings.highcharts.highchartsStrings.start = "start".asInstanceOf[typings.highcharts.highchartsStrings.start]
 }

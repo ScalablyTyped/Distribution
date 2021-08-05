@@ -14,20 +14,16 @@ object anon {
   }
   object Column {
     
-    @scala.inline
-    def apply(column: Double, line: Double): Column = {
+    inline def apply(column: Double, line: Double): Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,26 +35,20 @@ object anon {
   }
   object Cooked {
     
-    @scala.inline
-    def apply(): Cooked = {
+    inline def apply(): Cooked = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cooked]
     }
     
-    @scala.inline
-    implicit class CookedMutableBuilder[Self <: Cooked] (val x: Self) extends AnyVal {
+    extension [Self <: Cooked](x: Self) {
       
-      @scala.inline
-      def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
+      inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookedUndefined: Self = StObject.set(x, "cooked", js.undefined)
+      inline def setCookedUndefined: Self = StObject.set(x, "cooked", js.undefined)
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -70,20 +60,16 @@ object anon {
   }
   object Raw {
     
-    @scala.inline
-    def apply(cooked: String, raw: String): Raw = {
+    inline def apply(cooked: String, raw: String): Raw = {
       val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Raw]
     }
     
-    @scala.inline
-    implicit class RawMutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
+    extension [Self <: Raw](x: Self) {
       
-      @scala.inline
-      def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
+      inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
 }

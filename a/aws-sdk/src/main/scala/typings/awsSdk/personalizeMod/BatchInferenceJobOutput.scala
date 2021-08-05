@@ -13,16 +13,13 @@ trait BatchInferenceJobOutput extends StObject {
 }
 object BatchInferenceJobOutput {
   
-  @scala.inline
-  def apply(s3DataDestination: S3DataConfig): BatchInferenceJobOutput = {
+  inline def apply(s3DataDestination: S3DataConfig): BatchInferenceJobOutput = {
     val __obj = js.Dynamic.literal(s3DataDestination = s3DataDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchInferenceJobOutput]
   }
   
-  @scala.inline
-  implicit class BatchInferenceJobOutputMutableBuilder[Self <: BatchInferenceJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchInferenceJobOutput](x: Self) {
     
-    @scala.inline
-    def setS3DataDestination(value: S3DataConfig): Self = StObject.set(x, "s3DataDestination", value.asInstanceOf[js.Any])
+    inline def setS3DataDestination(value: S3DataConfig): Self = StObject.set(x, "s3DataDestination", value.asInstanceOf[js.Any])
   }
 }

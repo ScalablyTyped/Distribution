@@ -8,11 +8,9 @@ object recomposeStrings {
   
   @js.native
   sealed trait HandleCreatorsHandlers extends StObject
-  @scala.inline
-  def HandleCreatorsHandlers: HandleCreatorsHandlers = "HandleCreatorsHandlers".asInstanceOf[HandleCreatorsHandlers]
+  inline def HandleCreatorsHandlers: HandleCreatorsHandlers = "HandleCreatorsHandlers".asInstanceOf[HandleCreatorsHandlers]
   
   @js.native
   sealed trait StateUpdaters extends StObject
-  @scala.inline
-  def StateUpdaters: StateUpdaters = "StateUpdaters".asInstanceOf[StateUpdaters]
+  inline def StateUpdaters: StateUpdaters = "StateUpdaters".asInstanceOf[StateUpdaters]
 }

@@ -21,25 +21,19 @@ trait ConsoleProfileStartedEventDataType extends StObject {
 }
 object ConsoleProfileStartedEventDataType {
   
-  @scala.inline
-  def apply(id: String, location: Location): ConsoleProfileStartedEventDataType = {
+  inline def apply(id: String, location: Location): ConsoleProfileStartedEventDataType = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleProfileStartedEventDataType]
   }
   
-  @scala.inline
-  implicit class ConsoleProfileStartedEventDataTypeMutableBuilder[Self <: ConsoleProfileStartedEventDataType] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleProfileStartedEventDataType](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

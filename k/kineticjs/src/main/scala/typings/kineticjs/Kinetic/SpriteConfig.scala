@@ -19,34 +19,25 @@ trait SpriteConfig
 }
 object SpriteConfig {
   
-  @scala.inline
-  def apply(image: js.Any): SpriteConfig = {
+  inline def apply(image: js.Any): SpriteConfig = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteConfig]
   }
   
-  @scala.inline
-  implicit class SpriteConfigMutableBuilder[Self <: SpriteConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteConfig](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAnimations(value: js.Any): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Any): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
+    inline def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }
 }

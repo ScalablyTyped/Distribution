@@ -103,144 +103,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFOCRLanguage extends StObject
 object MFOCRLanguage {
   
-  @scala.inline
-  def Afrikaans: `39` = 39.asInstanceOf[`39`]
+  inline def Afrikaans: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def Albanian: `40` = 40.asInstanceOf[`40`]
+  inline def Albanian: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def Basque: `45` = 45.asInstanceOf[`45`]
+  inline def Basque: `45` = 45.asInstanceOf[`45`]
   
-  @scala.inline
-  def Brazilian: `19` = 19.asInstanceOf[`19`]
+  inline def Brazilian: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def Bulgarian: `38` = 38.asInstanceOf[`38`]
+  inline def Bulgarian: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def ByeloRussian: `35` = 35.asInstanceOf[`35`]
+  inline def ByeloRussian: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def Catalan: `41` = 41.asInstanceOf[`41`]
+  inline def Catalan: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def Croatian: `28` = 28.asInstanceOf[`28`]
+  inline def Croatian: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def Czech: `23` = 23.asInstanceOf[`23`]
+  inline def Czech: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def Danish: `11` = 11.asInstanceOf[`11`]
+  inline def Danish: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def Dutch: `17` = 17.asInstanceOf[`17`]
+  inline def Dutch: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def EnglishBr: `4` = 4.asInstanceOf[`4`]
+  inline def EnglishBr: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def EnglishUS: `3` = 3.asInstanceOf[`3`]
+  inline def EnglishUS: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Estonian: `14` = 14.asInstanceOf[`14`]
+  inline def Estonian: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def Finnish: `9` = 9.asInstanceOf[`9`]
+  inline def Finnish: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def French: `6` = 6.asInstanceOf[`6`]
+  inline def French: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def Galician: `20` = 20.asInstanceOf[`20`]
+  inline def Galician: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def German: `5` = 5.asInstanceOf[`5`]
+  inline def German: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def Greek: `22` = 22.asInstanceOf[`22`]
+  inline def Greek: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def Hungarian: `24` = 24.asInstanceOf[`24`]
+  inline def Hungarian: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def Icelandic: `21` = 21.asInstanceOf[`21`]
+  inline def Icelandic: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def IrishGaelic: `42` = 42.asInstanceOf[`42`]
+  inline def IrishGaelic: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def Italian: `8` = 8.asInstanceOf[`8`]
+  inline def Italian: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Latvian: `15` = 15.asInstanceOf[`15`]
+  inline def Latvian: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def Lithuanian: `16` = 16.asInstanceOf[`16`]
+  inline def Lithuanian: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def Luxembourgish: `31` = 31.asInstanceOf[`31`]
+  inline def Luxembourgish: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def Macedonian: `37` = 37.asInstanceOf[`37`]
+  inline def Macedonian: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def Mexican: `46` = 46.asInstanceOf[`46`]
+  inline def Mexican: `46` = 46.asInstanceOf[`46`]
   
-  @scala.inline
-  def Neutral: `1` = 1.asInstanceOf[`1`]
+  inline def Neutral: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Norwegian: `12` = 12.asInstanceOf[`12`]
+  inline def Norwegian: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def NumbersOnly: `2` = 2.asInstanceOf[`2`]
+  inline def NumbersOnly: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Nynorsk: `13` = 13.asInstanceOf[`13`]
+  inline def Nynorsk: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def Polish: `25` = 25.asInstanceOf[`25`]
+  inline def Polish: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def Portuguese: `18` = 18.asInstanceOf[`18`]
+  inline def Portuguese: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def Romanian: `26` = 26.asInstanceOf[`26`]
+  inline def Romanian: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def Russian: `34` = 34.asInstanceOf[`34`]
+  inline def Russian: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def ScottishGaelic: `43` = 43.asInstanceOf[`43`]
+  inline def ScottishGaelic: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def Serbian: `29` = 29.asInstanceOf[`29`]
+  inline def Serbian: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def Slovak: `27` = 27.asInstanceOf[`27`]
+  inline def Slovak: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def Slovenian: `30` = 30.asInstanceOf[`30`]
+  inline def Slovenian: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def Spanish: `7` = 7.asInstanceOf[`7`]
+  inline def Spanish: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def Swedish: `10` = 10.asInstanceOf[`10`]
+  inline def Swedish: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def SwissGerman: `32` = 32.asInstanceOf[`32`]
+  inline def SwissGerman: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def Turkish: `33` = 33.asInstanceOf[`33`]
+  inline def Turkish: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def Ukrainian: `36` = 36.asInstanceOf[`36`]
+  inline def Ukrainian: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def Welsh: `44` = 44.asInstanceOf[`44`]
+  inline def Welsh: `44` = 44.asInstanceOf[`44`]
 }

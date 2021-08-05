@@ -41,37 +41,28 @@ object typesDescribeTimeToLiveInputMod {
   }
   object DescribeTimeToLiveInput {
     
-    @scala.inline
-    def apply(TableName: String): DescribeTimeToLiveInput = {
+    inline def apply(TableName: String): DescribeTimeToLiveInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeTimeToLiveInput]
     }
     
-    @scala.inline
-    implicit class DescribeTimeToLiveInputMutableBuilder[Self <: DescribeTimeToLiveInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeTimeToLiveInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,7 +10,7 @@ trait AccountSelector extends StObject {
   
   val Class: OlObjectClass
   
-  @JSName("Outlook.AccountSelector_typekey")
+  /* private */ @JSName("Outlook.AccountSelector_typekey")
   var OutlookDotAccountSelector_typekey: AccountSelector
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait AccountSelector extends StObject {
 }
 object AccountSelector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     OutlookDotAccountSelector_typekey: AccountSelector,
@@ -35,25 +34,18 @@ object AccountSelector {
     __obj.asInstanceOf[AccountSelector]
   }
   
-  @scala.inline
-  implicit class AccountSelectorMutableBuilder[Self <: AccountSelector] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSelector](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotAccountSelector_typekey(value: AccountSelector): Self = StObject.set(x, "Outlook.AccountSelector_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotAccountSelector_typekey(value: AccountSelector): Self = StObject.set(x, "Outlook.AccountSelector_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedAccount(value: Account): Self = StObject.set(x, "SelectedAccount", value.asInstanceOf[js.Any])
+    inline def setSelectedAccount(value: Account): Self = StObject.set(x, "SelectedAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

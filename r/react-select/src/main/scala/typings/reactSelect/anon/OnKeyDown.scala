@@ -13,16 +13,13 @@ trait OnKeyDown extends StObject {
 }
 object OnKeyDown {
   
-  @scala.inline
-  def apply(onKeyDown: /* event */ KeyboardEvent[HTMLElement] => Unit): OnKeyDown = {
+  inline def apply(onKeyDown: /* event */ KeyboardEvent[HTMLElement] => Unit): OnKeyDown = {
     val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown))
     __obj.asInstanceOf[OnKeyDown]
   }
   
-  @scala.inline
-  implicit class OnKeyDownMutableBuilder[Self <: OnKeyDown] (val x: Self) extends AnyVal {
+  extension [Self <: OnKeyDown](x: Self) {
     
-    @scala.inline
-    def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
   }
 }

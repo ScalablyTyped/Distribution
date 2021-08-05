@@ -10,16 +10,13 @@ trait ExpandEnabled extends StObject {
 }
 object ExpandEnabled {
   
-  @scala.inline
-  def apply(expand: Enabled): ExpandEnabled = {
+  inline def apply(expand: Enabled): ExpandEnabled = {
     val __obj = js.Dynamic.literal(expand = expand.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandEnabled]
   }
   
-  @scala.inline
-  implicit class ExpandEnabledMutableBuilder[Self <: ExpandEnabled] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandEnabled](x: Self) {
     
-    @scala.inline
-    def setExpand(value: Enabled): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Enabled): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
   }
 }

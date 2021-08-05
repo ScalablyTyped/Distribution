@@ -11,6 +11,5 @@ object pathsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMinimatch(patterns: js.Array[String]): js.Array[IMinimatch] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMinimatch")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[IMinimatch]]
+  inline def createMinimatch(patterns: js.Array[String]): js.Array[IMinimatch] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMinimatch")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[IMinimatch]]
 }

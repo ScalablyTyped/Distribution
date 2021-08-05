@@ -11,16 +11,13 @@ trait SketchMSUserDocument extends StObject {
 }
 object SketchMSUserDocument {
   
-  @scala.inline
-  def apply(document: PageListCollapsed): SketchMSUserDocument = {
+  inline def apply(document: PageListCollapsed): SketchMSUserDocument = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSUserDocument]
   }
   
-  @scala.inline
-  implicit class SketchMSUserDocumentMutableBuilder[Self <: SketchMSUserDocument] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSUserDocument](x: Self) {
     
-    @scala.inline
-    def setDocument(value: PageListCollapsed): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: PageListCollapsed): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }
 }

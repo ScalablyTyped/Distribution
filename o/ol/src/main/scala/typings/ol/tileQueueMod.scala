@@ -18,8 +18,7 @@ object tileQueueMod {
     def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[js.Any]) = this()
   }
   
-  @scala.inline
-  def getTilePriority(
+  inline def getTilePriority(
     frameState: FrameState,
     tile: typings.ol.olTileMod.default,
     tileSourceKey: String,

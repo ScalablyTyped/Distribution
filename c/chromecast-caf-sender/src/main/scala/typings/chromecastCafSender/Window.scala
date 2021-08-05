@@ -16,19 +16,15 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(__onGCastApiAvailable: Boolean => Unit, cast: Typeofcast): Window = {
+  inline def apply(__onGCastApiAvailable: Boolean => Unit, cast: Typeofcast): Window = {
     val __obj = js.Dynamic.literal(__onGCastApiAvailable = js.Any.fromFunction1(__onGCastApiAvailable), cast = cast.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setCast(value: Typeofcast): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+    inline def setCast(value: Typeofcast): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__onGCastApiAvailable(value: Boolean => Unit): Self = StObject.set(x, "__onGCastApiAvailable", js.Any.fromFunction1(value))
+    inline def set__onGCastApiAvailable(value: Boolean => Unit): Self = StObject.set(x, "__onGCastApiAvailable", js.Any.fromFunction1(value))
   }
 }

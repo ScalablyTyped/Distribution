@@ -12,25 +12,19 @@ trait ISetting extends StObject {
 }
 object ISetting {
   
-  @scala.inline
-  def apply(): ISetting = {
+  inline def apply(): ISetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISetting]
   }
   
-  @scala.inline
-  implicit class ISettingMutableBuilder[Self <: ISetting] (val x: Self) extends AnyVal {
+  extension [Self <: ISetting](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[IEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[IEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesNull: Self = StObject.set(x, "entries", null)
+    inline def setEntriesNull: Self = StObject.set(x, "entries", null)
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: IEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: IEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

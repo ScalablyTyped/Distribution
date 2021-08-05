@@ -48,61 +48,43 @@ trait DocumentReferenceContext
 }
 object DocumentReferenceContext {
   
-  @scala.inline
-  def apply(): DocumentReferenceContext = {
+  inline def apply(): DocumentReferenceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentReferenceContext]
   }
   
-  @scala.inline
-  implicit class DocumentReferenceContextMutableBuilder[Self <: DocumentReferenceContext] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentReferenceContext](x: Self) {
     
-    @scala.inline
-    def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
+    inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
+    inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Array[CodeableConcept]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Array[CodeableConcept]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setEventVarargs(value: CodeableConcept*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: CodeableConcept*): Self = StObject.set(x, "event", js.Array(value :_*))
     
-    @scala.inline
-    def setFacilityType(value: CodeableConcept): Self = StObject.set(x, "facilityType", value.asInstanceOf[js.Any])
+    inline def setFacilityType(value: CodeableConcept): Self = StObject.set(x, "facilityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacilityTypeUndefined: Self = StObject.set(x, "facilityType", js.undefined)
+    inline def setFacilityTypeUndefined: Self = StObject.set(x, "facilityType", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setPracticeSetting(value: CodeableConcept): Self = StObject.set(x, "practiceSetting", value.asInstanceOf[js.Any])
+    inline def setPracticeSetting(value: CodeableConcept): Self = StObject.set(x, "practiceSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPracticeSettingUndefined: Self = StObject.set(x, "practiceSetting", js.undefined)
+    inline def setPracticeSettingUndefined: Self = StObject.set(x, "practiceSetting", js.undefined)
     
-    @scala.inline
-    def setRelated(value: js.Array[DocumentReferenceContextRelated]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+    inline def setRelated(value: js.Array[DocumentReferenceContextRelated]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+    inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
-    @scala.inline
-    def setRelatedVarargs(value: DocumentReferenceContextRelated*): Self = StObject.set(x, "related", js.Array(value :_*))
+    inline def setRelatedVarargs(value: DocumentReferenceContextRelated*): Self = StObject.set(x, "related", js.Array(value :_*))
     
-    @scala.inline
-    def setSourcePatientInfo(value: Reference): Self = StObject.set(x, "sourcePatientInfo", value.asInstanceOf[js.Any])
+    inline def setSourcePatientInfo(value: Reference): Self = StObject.set(x, "sourcePatientInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePatientInfoUndefined: Self = StObject.set(x, "sourcePatientInfo", js.undefined)
+    inline def setSourcePatientInfoUndefined: Self = StObject.set(x, "sourcePatientInfo", js.undefined)
   }
 }

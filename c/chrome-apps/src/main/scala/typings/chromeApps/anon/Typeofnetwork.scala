@@ -12,18 +12,15 @@ trait Typeofnetwork extends StObject {
 }
 object Typeofnetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNetworkInterfaces: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit] => Unit
   ): Typeofnetwork = {
     val __obj = js.Dynamic.literal(getNetworkInterfaces = js.Any.fromFunction1(getNetworkInterfaces))
     __obj.asInstanceOf[Typeofnetwork]
   }
   
-  @scala.inline
-  implicit class TypeofnetworkMutableBuilder[Self <: Typeofnetwork] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofnetwork](x: Self) {
     
-    @scala.inline
-    def setGetNetworkInterfaces(value: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit] => Unit): Self = StObject.set(x, "getNetworkInterfaces", js.Any.fromFunction1(value))
+    inline def setGetNetworkInterfaces(value: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit] => Unit): Self = StObject.set(x, "getNetworkInterfaces", js.Any.fromFunction1(value))
   }
 }

@@ -18,38 +18,28 @@ object anon {
   }
   object Folder {
     
-    @scala.inline
-    def apply(): Folder = {
+    inline def apply(): Folder = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Folder]
     }
     
-    @scala.inline
-    implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+    extension [Self <: Folder](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSnapshotPath(value: String): Self = StObject.set(x, "snapshotPath", value.asInstanceOf[js.Any])
+      inline def setSnapshotPath(value: String): Self = StObject.set(x, "snapshotPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotPathUndefined: Self = StObject.set(x, "snapshotPath", js.undefined)
+      inline def setSnapshotPathUndefined: Self = StObject.set(x, "snapshotPath", js.undefined)
     }
   }
 }

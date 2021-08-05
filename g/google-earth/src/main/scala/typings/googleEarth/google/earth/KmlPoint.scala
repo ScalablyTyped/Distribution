@@ -62,8 +62,7 @@ trait KmlPoint
 }
 object KmlPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -99,34 +98,24 @@ object KmlPoint {
     __obj.asInstanceOf[KmlPoint]
   }
   
-  @scala.inline
-  implicit class KmlPointMutableBuilder[Self <: KmlPoint] (val x: Self) extends AnyVal {
+  extension [Self <: KmlPoint](x: Self) {
     
-    @scala.inline
-    def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
+    inline def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
+    inline def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLongitude(value: () => Double): Self = StObject.set(x, "getLongitude", js.Any.fromFunction0(value))
+    inline def setGetLongitude(value: () => Double): Self = StObject.set(x, "getLongitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, Double, Double, KmlAltitudeModeEnum, Boolean, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction6(value))
+    inline def setSet(value: (Double, Double, Double, KmlAltitudeModeEnum, Boolean, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setSetAltitude(value: Double => Unit): Self = StObject.set(x, "setAltitude", js.Any.fromFunction1(value))
+    inline def setSetAltitude(value: Double => Unit): Self = StObject.set(x, "setAltitude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLatLng(value: (Double, Double) => Unit): Self = StObject.set(x, "setLatLng", js.Any.fromFunction2(value))
+    inline def setSetLatLng(value: (Double, Double) => Unit): Self = StObject.set(x, "setLatLng", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setLatLngAlt", js.Any.fromFunction3(value))
+    inline def setSetLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setLatLngAlt", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetLatitude(value: Double => Unit): Self = StObject.set(x, "setLatitude", js.Any.fromFunction1(value))
+    inline def setSetLatitude(value: Double => Unit): Self = StObject.set(x, "setLatitude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLongitude(value: Double => Unit): Self = StObject.set(x, "setLongitude", js.Any.fromFunction1(value))
+    inline def setSetLongitude(value: Double => Unit): Self = StObject.set(x, "setLongitude", js.Any.fromFunction1(value))
   }
 }

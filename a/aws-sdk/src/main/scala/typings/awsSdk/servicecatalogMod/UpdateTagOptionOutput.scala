@@ -13,19 +13,15 @@ trait UpdateTagOptionOutput extends StObject {
 }
 object UpdateTagOptionOutput {
   
-  @scala.inline
-  def apply(): UpdateTagOptionOutput = {
+  inline def apply(): UpdateTagOptionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTagOptionOutput]
   }
   
-  @scala.inline
-  implicit class UpdateTagOptionOutputMutableBuilder[Self <: UpdateTagOptionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTagOptionOutput](x: Self) {
     
-    @scala.inline
-    def setTagOptionDetail(value: TagOptionDetail): Self = StObject.set(x, "TagOptionDetail", value.asInstanceOf[js.Any])
+    inline def setTagOptionDetail(value: TagOptionDetail): Self = StObject.set(x, "TagOptionDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagOptionDetailUndefined: Self = StObject.set(x, "TagOptionDetail", js.undefined)
+    inline def setTagOptionDetailUndefined: Self = StObject.set(x, "TagOptionDetail", js.undefined)
   }
 }

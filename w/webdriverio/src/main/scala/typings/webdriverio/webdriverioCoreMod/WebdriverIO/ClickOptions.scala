@@ -14,31 +14,23 @@ trait ClickOptions extends StObject {
 }
 object ClickOptions {
   
-  @scala.inline
-  def apply(): ClickOptions = {
+  inline def apply(): ClickOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClickOptions]
   }
   
-  @scala.inline
-  implicit class ClickOptionsMutableBuilder[Self <: ClickOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClickOptions](x: Self) {
     
-    @scala.inline
-    def setButton(value: Double | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Double | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

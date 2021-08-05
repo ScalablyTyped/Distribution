@@ -23,23 +23,18 @@ trait BuildReportMetadata extends StObject {
 }
 object BuildReportMetadata {
   
-  @scala.inline
-  def apply(buildId: Double, content: String, `type`: String): BuildReportMetadata = {
+  inline def apply(buildId: Double, content: String, `type`: String): BuildReportMetadata = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildReportMetadata]
   }
   
-  @scala.inline
-  implicit class BuildReportMetadataMutableBuilder[Self <: BuildReportMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BuildReportMetadata](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

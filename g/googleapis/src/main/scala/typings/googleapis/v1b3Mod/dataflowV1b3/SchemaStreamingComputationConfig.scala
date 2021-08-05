@@ -38,46 +38,33 @@ trait SchemaStreamingComputationConfig extends StObject {
 }
 object SchemaStreamingComputationConfig {
   
-  @scala.inline
-  def apply(): SchemaStreamingComputationConfig = {
+  inline def apply(): SchemaStreamingComputationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStreamingComputationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaStreamingComputationConfigMutableBuilder[Self <: SchemaStreamingComputationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStreamingComputationConfig](x: Self) {
     
-    @scala.inline
-    def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
+    inline def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
+    inline def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
-    @scala.inline
-    def setInstructions(value: js.Array[SchemaParallelInstruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+    inline def setInstructions(value: js.Array[SchemaParallelInstruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
+    inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
-    @scala.inline
-    def setInstructionsVarargs(value: SchemaParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+    inline def setInstructionsVarargs(value: SchemaParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+    inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
-    @scala.inline
-    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
+    inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
-    @scala.inline
-    def setTransformUserNameToStateFamily(value: StringDictionary[String]): Self = StObject.set(x, "transformUserNameToStateFamily", value.asInstanceOf[js.Any])
+    inline def setTransformUserNameToStateFamily(value: StringDictionary[String]): Self = StObject.set(x, "transformUserNameToStateFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUserNameToStateFamilyUndefined: Self = StObject.set(x, "transformUserNameToStateFamily", js.undefined)
+    inline def setTransformUserNameToStateFamilyUndefined: Self = StObject.set(x, "transformUserNameToStateFamily", js.undefined)
   }
 }

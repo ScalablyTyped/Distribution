@@ -23,31 +23,23 @@ trait TableMember extends StObject {
 }
 object TableMember {
   
-  @scala.inline
-  def apply(): TableMember = {
+  inline def apply(): TableMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableMember]
   }
   
-  @scala.inline
-  implicit class TableMemberMutableBuilder[Self <: TableMember] (val x: Self) extends AnyVal {
+  extension [Self <: TableMember](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

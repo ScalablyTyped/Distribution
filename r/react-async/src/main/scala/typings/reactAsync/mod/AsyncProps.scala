@@ -13,22 +13,17 @@ trait AsyncProps[T]
 }
 object AsyncProps {
   
-  @scala.inline
-  def apply[T](): AsyncProps[T] = {
+  inline def apply[T](): AsyncProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncProps[T]]
   }
   
-  @scala.inline
-  implicit class AsyncPropsMutableBuilder[Self <: AsyncProps[?], T] (val x: Self & AsyncProps[T]) extends AnyVal {
+  extension [Self <: AsyncProps[?], T](x: Self & AsyncProps[T]) {
     
-    @scala.inline
-    def setChildren(value: AsyncChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: AsyncChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenFunction1(value: /* state */ AsyncState[T, AbstractState[T]] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildrenFunction1(value: /* state */ AsyncState[T, AbstractState[T]] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

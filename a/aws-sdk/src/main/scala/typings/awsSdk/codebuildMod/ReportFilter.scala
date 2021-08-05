@@ -13,19 +13,15 @@ trait ReportFilter extends StObject {
 }
 object ReportFilter {
   
-  @scala.inline
-  def apply(): ReportFilter = {
+  inline def apply(): ReportFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportFilter]
   }
   
-  @scala.inline
-  implicit class ReportFilterMutableBuilder[Self <: ReportFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ReportFilter](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ReportStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReportStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

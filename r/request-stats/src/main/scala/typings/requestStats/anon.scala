@@ -44,8 +44,7 @@ object anon {
   }
   object Bytes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytes: Double,
       headers: IncomingHttpHeaders,
       ip: String,
@@ -57,26 +56,19 @@ object anon {
       __obj.asInstanceOf[Bytes]
     }
     
-    @scala.inline
-    implicit class BytesMutableBuilder[Self <: Bytes] (val x: Self) extends AnyVal {
+    extension [Self <: Bytes](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: IncomingMessage): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: IncomingMessage): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,29 +101,22 @@ object anon {
   }
   object BytesDelta {
     
-    @scala.inline
-    def apply(bytes: Double, bytesDelta: Double, bytesLeft: Double, speed: Double, timeLeft: Double): BytesDelta = {
+    inline def apply(bytes: Double, bytesDelta: Double, bytesLeft: Double, speed: Double, timeLeft: Double): BytesDelta = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], bytesDelta = bytesDelta.asInstanceOf[js.Any], bytesLeft = bytesLeft.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timeLeft = timeLeft.asInstanceOf[js.Any])
       __obj.asInstanceOf[BytesDelta]
     }
     
-    @scala.inline
-    implicit class BytesDeltaMutableBuilder[Self <: BytesDelta] (val x: Self) extends AnyVal {
+    extension [Self <: BytesDelta](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesDelta(value: Double): Self = StObject.set(x, "bytesDelta", value.asInstanceOf[js.Any])
+      inline def setBytesDelta(value: Double): Self = StObject.set(x, "bytesDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesLeft(value: Double): Self = StObject.set(x, "bytesLeft", value.asInstanceOf[js.Any])
+      inline def setBytesLeft(value: Double): Self = StObject.set(x, "bytesLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
+      inline def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,26 +144,20 @@ object anon {
   }
   object Headers {
     
-    @scala.inline
-    def apply(bytes: Double, headers: OutgoingHttpHeaders, raw: ServerResponse, status: Double): Headers = {
+    inline def apply(bytes: Double, headers: OutgoingHttpHeaders, raw: ServerResponse, status: Double): Headers = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Headers]
     }
     
-    @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+    extension [Self <: Headers](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: ServerResponse): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: ServerResponse): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,23 +180,18 @@ object anon {
   }
   object Speed {
     
-    @scala.inline
-    def apply(bytes: Double, bytesDelta: Double, speed: Double): Speed = {
+    inline def apply(bytes: Double, bytesDelta: Double, speed: Double): Speed = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], bytesDelta = bytesDelta.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Speed]
     }
     
-    @scala.inline
-    implicit class SpeedMutableBuilder[Self <: Speed] (val x: Self) extends AnyVal {
+    extension [Self <: Speed](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesDelta(value: Double): Self = StObject.set(x, "bytesDelta", value.asInstanceOf[js.Any])
+      inline def setBytesDelta(value: Double): Self = StObject.set(x, "bytesDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     }
   }
 }

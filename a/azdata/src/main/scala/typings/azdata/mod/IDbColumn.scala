@@ -66,8 +66,7 @@ trait IDbColumn extends StObject {
 }
 object IDbColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseCatalogName: String,
     baseColumnName: String,
     baseSchemaName: String,
@@ -82,154 +81,104 @@ object IDbColumn {
     __obj.asInstanceOf[IDbColumn]
   }
   
-  @scala.inline
-  implicit class IDbColumnMutableBuilder[Self <: IDbColumn] (val x: Self) extends AnyVal {
+  extension [Self <: IDbColumn](x: Self) {
     
-    @scala.inline
-    def setAllowDBNull(value: Boolean): Self = StObject.set(x, "allowDBNull", value.asInstanceOf[js.Any])
+    inline def setAllowDBNull(value: Boolean): Self = StObject.set(x, "allowDBNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDBNullUndefined: Self = StObject.set(x, "allowDBNull", js.undefined)
+    inline def setAllowDBNullUndefined: Self = StObject.set(x, "allowDBNull", js.undefined)
     
-    @scala.inline
-    def setBaseCatalogName(value: String): Self = StObject.set(x, "baseCatalogName", value.asInstanceOf[js.Any])
+    inline def setBaseCatalogName(value: String): Self = StObject.set(x, "baseCatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseColumnName(value: String): Self = StObject.set(x, "baseColumnName", value.asInstanceOf[js.Any])
+    inline def setBaseColumnName(value: String): Self = StObject.set(x, "baseColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseSchemaName(value: String): Self = StObject.set(x, "baseSchemaName", value.asInstanceOf[js.Any])
+    inline def setBaseSchemaName(value: String): Self = StObject.set(x, "baseSchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseServerName(value: String): Self = StObject.set(x, "baseServerName", value.asInstanceOf[js.Any])
+    inline def setBaseServerName(value: String): Self = StObject.set(x, "baseServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseTableName(value: String): Self = StObject.set(x, "baseTableName", value.asInstanceOf[js.Any])
+    inline def setBaseTableName(value: String): Self = StObject.set(x, "baseTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnOrdinal(value: Double): Self = StObject.set(x, "columnOrdinal", value.asInstanceOf[js.Any])
+    inline def setColumnOrdinal(value: Double): Self = StObject.set(x, "columnOrdinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnOrdinalUndefined: Self = StObject.set(x, "columnOrdinal", js.undefined)
+    inline def setColumnOrdinalUndefined: Self = StObject.set(x, "columnOrdinal", js.undefined)
     
-    @scala.inline
-    def setColumnSize(value: Double): Self = StObject.set(x, "columnSize", value.asInstanceOf[js.Any])
+    inline def setColumnSize(value: Double): Self = StObject.set(x, "columnSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSizeUndefined: Self = StObject.set(x, "columnSize", js.undefined)
+    inline def setColumnSizeUndefined: Self = StObject.set(x, "columnSize", js.undefined)
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
+    inline def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAliased(value: Boolean): Self = StObject.set(x, "isAliased", value.asInstanceOf[js.Any])
+    inline def setIsAliased(value: Boolean): Self = StObject.set(x, "isAliased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAliasedUndefined: Self = StObject.set(x, "isAliased", js.undefined)
+    inline def setIsAliasedUndefined: Self = StObject.set(x, "isAliased", js.undefined)
     
-    @scala.inline
-    def setIsAutoIncrement(value: Boolean): Self = StObject.set(x, "isAutoIncrement", value.asInstanceOf[js.Any])
+    inline def setIsAutoIncrement(value: Boolean): Self = StObject.set(x, "isAutoIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoIncrementUndefined: Self = StObject.set(x, "isAutoIncrement", js.undefined)
+    inline def setIsAutoIncrementUndefined: Self = StObject.set(x, "isAutoIncrement", js.undefined)
     
-    @scala.inline
-    def setIsBytes(value: Boolean): Self = StObject.set(x, "isBytes", value.asInstanceOf[js.Any])
+    inline def setIsBytes(value: Boolean): Self = StObject.set(x, "isBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBytesUndefined: Self = StObject.set(x, "isBytes", js.undefined)
+    inline def setIsBytesUndefined: Self = StObject.set(x, "isBytes", js.undefined)
     
-    @scala.inline
-    def setIsChars(value: Boolean): Self = StObject.set(x, "isChars", value.asInstanceOf[js.Any])
+    inline def setIsChars(value: Boolean): Self = StObject.set(x, "isChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCharsUndefined: Self = StObject.set(x, "isChars", js.undefined)
+    inline def setIsCharsUndefined: Self = StObject.set(x, "isChars", js.undefined)
     
-    @scala.inline
-    def setIsExpression(value: Boolean): Self = StObject.set(x, "isExpression", value.asInstanceOf[js.Any])
+    inline def setIsExpression(value: Boolean): Self = StObject.set(x, "isExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpressionUndefined: Self = StObject.set(x, "isExpression", js.undefined)
+    inline def setIsExpressionUndefined: Self = StObject.set(x, "isExpression", js.undefined)
     
-    @scala.inline
-    def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+    inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
+    inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
     
-    @scala.inline
-    def setIsIdentity(value: Boolean): Self = StObject.set(x, "isIdentity", value.asInstanceOf[js.Any])
+    inline def setIsIdentity(value: Boolean): Self = StObject.set(x, "isIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIdentityUndefined: Self = StObject.set(x, "isIdentity", js.undefined)
+    inline def setIsIdentityUndefined: Self = StObject.set(x, "isIdentity", js.undefined)
     
-    @scala.inline
-    def setIsJson(value: Boolean): Self = StObject.set(x, "isJson", value.asInstanceOf[js.Any])
+    inline def setIsJson(value: Boolean): Self = StObject.set(x, "isJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsJsonUndefined: Self = StObject.set(x, "isJson", js.undefined)
+    inline def setIsJsonUndefined: Self = StObject.set(x, "isJson", js.undefined)
     
-    @scala.inline
-    def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
+    inline def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKeyUndefined: Self = StObject.set(x, "isKey", js.undefined)
+    inline def setIsKeyUndefined: Self = StObject.set(x, "isKey", js.undefined)
     
-    @scala.inline
-    def setIsLong(value: Boolean): Self = StObject.set(x, "isLong", value.asInstanceOf[js.Any])
+    inline def setIsLong(value: Boolean): Self = StObject.set(x, "isLong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLongUndefined: Self = StObject.set(x, "isLong", js.undefined)
+    inline def setIsLongUndefined: Self = StObject.set(x, "isLong", js.undefined)
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnlyUndefined: Self = StObject.set(x, "isReadOnly", js.undefined)
+    inline def setIsReadOnlyUndefined: Self = StObject.set(x, "isReadOnly", js.undefined)
     
-    @scala.inline
-    def setIsSqlVariant(value: Boolean): Self = StObject.set(x, "isSqlVariant", value.asInstanceOf[js.Any])
+    inline def setIsSqlVariant(value: Boolean): Self = StObject.set(x, "isSqlVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSqlVariantUndefined: Self = StObject.set(x, "isSqlVariant", js.undefined)
+    inline def setIsSqlVariantUndefined: Self = StObject.set(x, "isSqlVariant", js.undefined)
     
-    @scala.inline
-    def setIsUdt(value: Boolean): Self = StObject.set(x, "isUdt", value.asInstanceOf[js.Any])
+    inline def setIsUdt(value: Boolean): Self = StObject.set(x, "isUdt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUdtUndefined: Self = StObject.set(x, "isUdt", js.undefined)
+    inline def setIsUdtUndefined: Self = StObject.set(x, "isUdt", js.undefined)
     
-    @scala.inline
-    def setIsUnique(value: Boolean): Self = StObject.set(x, "isUnique", value.asInstanceOf[js.Any])
+    inline def setIsUnique(value: Boolean): Self = StObject.set(x, "isUnique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUniqueUndefined: Self = StObject.set(x, "isUnique", js.undefined)
+    inline def setIsUniqueUndefined: Self = StObject.set(x, "isUnique", js.undefined)
     
-    @scala.inline
-    def setIsXml(value: Boolean): Self = StObject.set(x, "isXml", value.asInstanceOf[js.Any])
+    inline def setIsXml(value: Boolean): Self = StObject.set(x, "isXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsXmlUndefined: Self = StObject.set(x, "isXml", js.undefined)
+    inline def setIsXmlUndefined: Self = StObject.set(x, "isXml", js.undefined)
     
-    @scala.inline
-    def setNumericPrecision(value: Double): Self = StObject.set(x, "numericPrecision", value.asInstanceOf[js.Any])
+    inline def setNumericPrecision(value: Double): Self = StObject.set(x, "numericPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericPrecisionUndefined: Self = StObject.set(x, "numericPrecision", js.undefined)
+    inline def setNumericPrecisionUndefined: Self = StObject.set(x, "numericPrecision", js.undefined)
     
-    @scala.inline
-    def setNumericScale(value: Double): Self = StObject.set(x, "numericScale", value.asInstanceOf[js.Any])
+    inline def setNumericScale(value: Double): Self = StObject.set(x, "numericScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericScaleUndefined: Self = StObject.set(x, "numericScale", js.undefined)
+    inline def setNumericScaleUndefined: Self = StObject.set(x, "numericScale", js.undefined)
     
-    @scala.inline
-    def setUdtAssemblyQualifiedName(value: String): Self = StObject.set(x, "udtAssemblyQualifiedName", value.asInstanceOf[js.Any])
+    inline def setUdtAssemblyQualifiedName(value: String): Self = StObject.set(x, "udtAssemblyQualifiedName", value.asInstanceOf[js.Any])
   }
 }

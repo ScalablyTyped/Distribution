@@ -17,28 +17,21 @@ trait GoogleCloudVideointelligenceV1TextDetectionConfig extends StObject {
 }
 object GoogleCloudVideointelligenceV1TextDetectionConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1TextDetectionConfig = {
+  inline def apply(): GoogleCloudVideointelligenceV1TextDetectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1TextDetectionConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1TextDetectionConfigMutableBuilder[Self <: GoogleCloudVideointelligenceV1TextDetectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1TextDetectionConfig](x: Self) {
     
-    @scala.inline
-    def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
+    inline def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
+    inline def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
-    @scala.inline
-    def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
+    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

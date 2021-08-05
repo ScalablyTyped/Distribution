@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnitType extends StObject
 object UnitType {
   
-  @scala.inline
-  def PixelsPerCentimeter: typings.gm.gmStrings.PixelsPerCentimeter = "PixelsPerCentimeter".asInstanceOf[typings.gm.gmStrings.PixelsPerCentimeter]
+  inline def PixelsPerCentimeter: typings.gm.gmStrings.PixelsPerCentimeter = "PixelsPerCentimeter".asInstanceOf[typings.gm.gmStrings.PixelsPerCentimeter]
   
-  @scala.inline
-  def PixelsPerInch: typings.gm.gmStrings.PixelsPerInch = "PixelsPerInch".asInstanceOf[typings.gm.gmStrings.PixelsPerInch]
+  inline def PixelsPerInch: typings.gm.gmStrings.PixelsPerInch = "PixelsPerInch".asInstanceOf[typings.gm.gmStrings.PixelsPerInch]
   
-  @scala.inline
-  def Undefined: typings.gm.gmStrings.Undefined = "Undefined".asInstanceOf[typings.gm.gmStrings.Undefined]
+  inline def Undefined: typings.gm.gmStrings.Undefined = "Undefined".asInstanceOf[typings.gm.gmStrings.Undefined]
 }

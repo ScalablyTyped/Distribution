@@ -33,8 +33,7 @@ trait ProcessProperties extends StObject {
 }
 object ProcessProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `class`: ProcessClass,
     isDefault: Boolean,
     isEnabled: Boolean,
@@ -46,22 +45,16 @@ object ProcessProperties {
     __obj.asInstanceOf[ProcessProperties]
   }
   
-  @scala.inline
-  implicit class ProcessPropertiesMutableBuilder[Self <: ProcessProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessProperties](x: Self) {
     
-    @scala.inline
-    def setClass(value: ProcessClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: ProcessClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentProcessTypeId(value: String): Self = StObject.set(x, "parentProcessTypeId", value.asInstanceOf[js.Any])
+    inline def setParentProcessTypeId(value: String): Self = StObject.set(x, "parentProcessTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

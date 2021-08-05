@@ -29,25 +29,21 @@ object e2EMod {
     @JSImport("wix-ui-core/dist/standalone/stories/AddressInput/E2E", "DataHooks.fillStub")
     @js.native
     def fillStub: String = js.native
-    @scala.inline
-    def fillStub_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fillStub")(x.asInstanceOf[js.Any])
+    inline def fillStub_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fillStub")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/stories/AddressInput/E2E", "DataHooks.input")
     @js.native
     def input: String = js.native
-    @scala.inline
-    def input_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
+    inline def input_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/stories/AddressInput/E2E", "DataHooks.latLng")
     @js.native
     def latLng: String = js.native
-    @scala.inline
-    def latLng_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("latLng")(x.asInstanceOf[js.Any])
+    inline def latLng_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("latLng")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/stories/AddressInput/E2E", "DataHooks.resetStub")
     @js.native
     def resetStub: String = js.native
-    @scala.inline
-    def resetStub_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resetStub")(x.asInstanceOf[js.Any])
+    inline def resetStub_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resetStub")(x.asInstanceOf[js.Any])
   }
 }

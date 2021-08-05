@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InputParameterObject extends StObject {
   
-  @JSName("InfoPath.InputParameterObject_typekey")
+  /* private */ @JSName("InfoPath.InputParameterObject_typekey")
   var InfoPathDotInputParameterObject_typekey: InputParameterObject
   
   val Name: String
@@ -15,23 +15,18 @@ trait InputParameterObject extends StObject {
 }
 object InputParameterObject {
   
-  @scala.inline
-  def apply(InfoPathDotInputParameterObject_typekey: InputParameterObject, Name: String, Value: String): InputParameterObject = {
+  inline def apply(InfoPathDotInputParameterObject_typekey: InputParameterObject, Name: String, Value: String): InputParameterObject = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("InfoPath.InputParameterObject_typekey")(InfoPathDotInputParameterObject_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputParameterObject]
   }
   
-  @scala.inline
-  implicit class InputParameterObjectMutableBuilder[Self <: InputParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: InputParameterObject](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotInputParameterObject_typekey(value: InputParameterObject): Self = StObject.set(x, "InfoPath.InputParameterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotInputParameterObject_typekey(value: InputParameterObject): Self = StObject.set(x, "InfoPath.InputParameterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

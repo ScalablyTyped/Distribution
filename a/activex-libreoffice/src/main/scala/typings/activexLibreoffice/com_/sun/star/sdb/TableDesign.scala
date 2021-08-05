@@ -29,8 +29,7 @@ trait TableDesign
      with XInitialization
 object TableDesign {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     Model: XModel,
     ViewData: js.Any,

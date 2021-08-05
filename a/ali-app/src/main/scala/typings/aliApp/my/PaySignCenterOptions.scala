@@ -14,16 +14,13 @@ trait PaySignCenterOptions
 }
 object PaySignCenterOptions {
   
-  @scala.inline
-  def apply(signStr: String): PaySignCenterOptions = {
+  inline def apply(signStr: String): PaySignCenterOptions = {
     val __obj = js.Dynamic.literal(signStr = signStr.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaySignCenterOptions]
   }
   
-  @scala.inline
-  implicit class PaySignCenterOptionsMutableBuilder[Self <: PaySignCenterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaySignCenterOptions](x: Self) {
     
-    @scala.inline
-    def setSignStr(value: String): Self = StObject.set(x, "signStr", value.asInstanceOf[js.Any])
+    inline def setSignStr(value: String): Self = StObject.set(x, "signStr", value.asInstanceOf[js.Any])
   }
 }

@@ -12,15 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inspect(thing: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def inspect(thing: js.Any, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def inspect(thing: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def inspect(thing: js.Any, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def inspector(): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")().asInstanceOf[InspectorFunction]
-  @scala.inline
-  def inspector(options: EyesOptions): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")(options.asInstanceOf[js.Any]).asInstanceOf[InspectorFunction]
+  inline def inspector(): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")().asInstanceOf[InspectorFunction]
+  inline def inspector(options: EyesOptions): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")(options.asInstanceOf[js.Any]).asInstanceOf[InspectorFunction]
   
   trait EyesOptions extends StObject {
     
@@ -41,44 +37,32 @@ object mod {
   }
   object EyesOptions {
     
-    @scala.inline
-    def apply(): EyesOptions = {
+    inline def apply(): EyesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EyesOptions]
     }
     
-    @scala.inline
-    implicit class EyesOptionsMutableBuilder[Self <: EyesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EyesOptions](x: Self) {
       
-      @scala.inline
-      def setHideFunctions(value: Boolean): Self = StObject.set(x, "hideFunctions", value.asInstanceOf[js.Any])
+      inline def setHideFunctions(value: Boolean): Self = StObject.set(x, "hideFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideFunctionsUndefined: Self = StObject.set(x, "hideFunctions", js.undefined)
+      inline def setHideFunctionsUndefined: Self = StObject.set(x, "hideFunctions", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+      inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+      inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setStyles(value: All): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: All): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   

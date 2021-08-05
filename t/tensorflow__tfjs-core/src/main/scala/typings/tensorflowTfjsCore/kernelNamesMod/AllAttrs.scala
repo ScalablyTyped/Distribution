@@ -12,22 +12,17 @@ trait AllAttrs extends StObject {
 }
 object AllAttrs {
   
-  @scala.inline
-  def apply(axis: Double | js.Array[Double], keepDims: Boolean): AllAttrs = {
+  inline def apply(axis: Double | js.Array[Double], keepDims: Boolean): AllAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], keepDims = keepDims.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllAttrs]
   }
   
-  @scala.inline
-  implicit class AllAttrsMutableBuilder[Self <: AllAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AllAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double | js.Array[Double]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double | js.Array[Double]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisVarargs(value: Double*): Self = StObject.set(x, "axis", js.Array(value :_*))
+    inline def setAxisVarargs(value: Double*): Self = StObject.set(x, "axis", js.Array(value :_*))
     
-    @scala.inline
-    def setKeepDims(value: Boolean): Self = StObject.set(x, "keepDims", value.asInstanceOf[js.Any])
+    inline def setKeepDims(value: Boolean): Self = StObject.set(x, "keepDims", value.asInstanceOf[js.Any])
   }
 }

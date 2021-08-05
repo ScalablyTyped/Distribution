@@ -43,43 +43,31 @@ trait IComponent
 }
 object IComponent {
   
-  @scala.inline
-  def apply(): IComponent = {
+  inline def apply(): IComponent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IComponent]
   }
   
-  @scala.inline
-  implicit class IComponentMutableBuilder[Self <: IComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IComponent](x: Self) {
     
-    @scala.inline
-    def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction2(value))
+    inline def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
+    inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
-    @scala.inline
-    def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
+    inline def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
+    inline def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
     
-    @scala.inline
-    def setGetRenderTarget(value: () => IElement): Self = StObject.set(x, "getRenderTarget", js.Any.fromFunction0(value))
+    inline def setGetRenderTarget(value: () => IElement): Self = StObject.set(x, "getRenderTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRenderTargetUndefined: Self = StObject.set(x, "getRenderTarget", js.undefined)
+    inline def setGetRenderTargetUndefined: Self = StObject.set(x, "getRenderTarget", js.undefined)
     
-    @scala.inline
-    def setGetTarget(value: () => IElement): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => IElement): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
+    inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
     
-    @scala.inline
-    def setNotifyOwner(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "notifyOwner", js.Any.fromFunction1(value))
+    inline def setNotifyOwner(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "notifyOwner", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotifyOwnerUndefined: Self = StObject.set(x, "notifyOwner", js.undefined)
+    inline def setNotifyOwnerUndefined: Self = StObject.set(x, "notifyOwner", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait IDatepickerCellArgs extends StObject {
 }
 object IDatepickerCellArgs {
   
-  @scala.inline
-  def apply(date: Date, mode: DatepickerMode): IDatepickerCellArgs = {
+  inline def apply(date: Date, mode: DatepickerMode): IDatepickerCellArgs = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatepickerCellArgs]
   }
   
-  @scala.inline
-  implicit class IDatepickerCellArgsMutableBuilder[Self <: IDatepickerCellArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IDatepickerCellArgs](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: DatepickerMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: DatepickerMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

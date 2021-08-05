@@ -11,6 +11,5 @@ object throttleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def throttle(func: js.Function, wait: Number): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def throttle(func: js.Function, wait: Number): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }

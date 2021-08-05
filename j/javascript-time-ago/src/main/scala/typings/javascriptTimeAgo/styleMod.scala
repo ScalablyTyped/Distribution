@@ -26,32 +26,24 @@ object styleMod {
   }
   object CustomFormatterOptions {
     
-    @scala.inline
-    def apply(elapsed: Double, locale: Locale, now: Double, time: Double): CustomFormatterOptions = {
+    inline def apply(elapsed: Double, locale: Locale, now: Double, time: Double): CustomFormatterOptions = {
       val __obj = js.Dynamic.literal(elapsed = elapsed.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomFormatterOptions]
     }
     
-    @scala.inline
-    implicit class CustomFormatterOptionsMutableBuilder[Self <: CustomFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+      inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,20 +57,15 @@ object styleMod {
   trait Flavour extends StObject
   object Flavour {
     
-    @scala.inline
-    def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
+    inline def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
     
-    @scala.inline
-    def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
+    inline def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
     
-    @scala.inline
-    def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
+    inline def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
     
-    @scala.inline
-    def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
+    inline def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
     
-    @scala.inline
-    def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
+    inline def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
   }
   
   trait FormatStyle extends StObject {
@@ -95,50 +82,36 @@ object styleMod {
   }
   object FormatStyle {
     
-    @scala.inline
-    def apply(): FormatStyle = {
+    inline def apply(): FormatStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatStyle]
     }
     
-    @scala.inline
-    implicit class FormatStyleMutableBuilder[Self <: FormatStyle] (val x: Self) extends AnyVal {
+    extension [Self <: FormatStyle](x: Self) {
       
-      @scala.inline
-      def setCustom(value: /* options */ CustomFormatterOptions => js.UndefOr[String]): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
+      inline def setCustom(value: /* options */ CustomFormatterOptions => js.UndefOr[String]): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setFlavour(value: js.Array[Flavour]): Self = StObject.set(x, "flavour", value.asInstanceOf[js.Any])
+      inline def setFlavour(value: js.Array[Flavour]): Self = StObject.set(x, "flavour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlavourUndefined: Self = StObject.set(x, "flavour", js.undefined)
+      inline def setFlavourUndefined: Self = StObject.set(x, "flavour", js.undefined)
       
-      @scala.inline
-      def setFlavourVarargs(value: Flavour*): Self = StObject.set(x, "flavour", js.Array(value :_*))
+      inline def setFlavourVarargs(value: Flavour*): Self = StObject.set(x, "flavour", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: (/* date */ Date | Double, /* locale */ Locale) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (/* date */ Date | Double, /* locale */ Locale) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setGradation(value: js.Array[Gradation]): Self = StObject.set(x, "gradation", value.asInstanceOf[js.Any])
+      inline def setGradation(value: js.Array[Gradation]): Self = StObject.set(x, "gradation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradationUndefined: Self = StObject.set(x, "gradation", js.undefined)
+      inline def setGradationUndefined: Self = StObject.set(x, "gradation", js.undefined)
       
-      @scala.inline
-      def setGradationVarargs(value: Gradation*): Self = StObject.set(x, "gradation", js.Array(value :_*))
+      inline def setGradationVarargs(value: Gradation*): Self = StObject.set(x, "gradation", js.Array(value :_*))
       
-      @scala.inline
-      def setUnits(value: Unit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: Unit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     }
   }
 }

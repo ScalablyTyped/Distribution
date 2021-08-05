@@ -18,28 +18,21 @@ trait ChooseImageSuccessCallbackResult extends StObject {
 }
 object ChooseImageSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, tempFilePaths: js.Array[String], tempFiles: js.Array[ImageFile]): ChooseImageSuccessCallbackResult = {
+  inline def apply(errMsg: String, tempFilePaths: js.Array[String], tempFiles: js.Array[ImageFile]): ChooseImageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], tempFilePaths = tempFilePaths.asInstanceOf[js.Any], tempFiles = tempFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseImageSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ChooseImageSuccessCallbackResultMutableBuilder[Self <: ChooseImageSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseImageSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePaths(value: js.Array[String]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
+    inline def setTempFilePaths(value: js.Array[String]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePathsVarargs(value: String*): Self = StObject.set(x, "tempFilePaths", js.Array(value :_*))
+    inline def setTempFilePathsVarargs(value: String*): Self = StObject.set(x, "tempFilePaths", js.Array(value :_*))
     
-    @scala.inline
-    def setTempFiles(value: js.Array[ImageFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
+    inline def setTempFiles(value: js.Array[ImageFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilesVarargs(value: ImageFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: ImageFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait UnmountBatchSize extends StObject {
 }
 object UnmountBatchSize {
   
-  @scala.inline
-  def apply(): UnmountBatchSize = {
+  inline def apply(): UnmountBatchSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnmountBatchSize]
   }
   
-  @scala.inline
-  implicit class UnmountBatchSizeMutableBuilder[Self <: UnmountBatchSize] (val x: Self) extends AnyVal {
+  extension [Self <: UnmountBatchSize](x: Self) {
     
-    @scala.inline
-    def setUnmountBatchSize(value: Double): Self = StObject.set(x, "unmountBatchSize", value.asInstanceOf[js.Any])
+    inline def setUnmountBatchSize(value: Double): Self = StObject.set(x, "unmountBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmountBatchSizeUndefined: Self = StObject.set(x, "unmountBatchSize", js.undefined)
+    inline def setUnmountBatchSizeUndefined: Self = StObject.set(x, "unmountBatchSize", js.undefined)
   }
 }

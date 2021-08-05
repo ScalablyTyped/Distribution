@@ -14,22 +14,17 @@ trait ServerStateFormat extends StObject {
 }
 object ServerStateFormat {
   
-  @scala.inline
-  def apply(name: String, options: ServerStateCookieOptions, value: String): ServerStateFormat = {
+  inline def apply(name: String, options: ServerStateCookieOptions, value: String): ServerStateFormat = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerStateFormat]
   }
   
-  @scala.inline
-  implicit class ServerStateFormatMutableBuilder[Self <: ServerStateFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ServerStateFormat](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: ServerStateCookieOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ServerStateCookieOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

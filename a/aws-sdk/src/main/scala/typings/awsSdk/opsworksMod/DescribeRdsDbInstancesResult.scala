@@ -13,22 +13,17 @@ trait DescribeRdsDbInstancesResult extends StObject {
 }
 object DescribeRdsDbInstancesResult {
   
-  @scala.inline
-  def apply(): DescribeRdsDbInstancesResult = {
+  inline def apply(): DescribeRdsDbInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRdsDbInstancesResult]
   }
   
-  @scala.inline
-  implicit class DescribeRdsDbInstancesResultMutableBuilder[Self <: DescribeRdsDbInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRdsDbInstancesResult](x: Self) {
     
-    @scala.inline
-    def setRdsDbInstances(value: RdsDbInstances): Self = StObject.set(x, "RdsDbInstances", value.asInstanceOf[js.Any])
+    inline def setRdsDbInstances(value: RdsDbInstances): Self = StObject.set(x, "RdsDbInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdsDbInstancesUndefined: Self = StObject.set(x, "RdsDbInstances", js.undefined)
+    inline def setRdsDbInstancesUndefined: Self = StObject.set(x, "RdsDbInstances", js.undefined)
     
-    @scala.inline
-    def setRdsDbInstancesVarargs(value: RdsDbInstance*): Self = StObject.set(x, "RdsDbInstances", js.Array(value :_*))
+    inline def setRdsDbInstancesVarargs(value: RdsDbInstance*): Self = StObject.set(x, "RdsDbInstances", js.Array(value :_*))
   }
 }

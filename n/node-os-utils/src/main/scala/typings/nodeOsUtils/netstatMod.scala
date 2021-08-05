@@ -33,23 +33,18 @@ object netstatMod {
   }
   object NetStatInfo {
     
-    @scala.inline
-    def apply(inputBytes: String, interface: String, outputBytes: String): NetStatInfo = {
+    inline def apply(inputBytes: String, interface: String, outputBytes: String): NetStatInfo = {
       val __obj = js.Dynamic.literal(inputBytes = inputBytes.asInstanceOf[js.Any], interface = interface.asInstanceOf[js.Any], outputBytes = outputBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetStatInfo]
     }
     
-    @scala.inline
-    implicit class NetStatInfoMutableBuilder[Self <: NetStatInfo] (val x: Self) extends AnyVal {
+    extension [Self <: NetStatInfo](x: Self) {
       
-      @scala.inline
-      def setInputBytes(value: String): Self = StObject.set(x, "inputBytes", value.asInstanceOf[js.Any])
+      inline def setInputBytes(value: String): Self = StObject.set(x, "inputBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+      inline def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputBytes(value: String): Self = StObject.set(x, "outputBytes", value.asInstanceOf[js.Any])
+      inline def setOutputBytes(value: String): Self = StObject.set(x, "outputBytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,17 +56,14 @@ object netstatMod {
   }
   object NetStatMetrics {
     
-    @scala.inline
-    def apply(total: InputMb): NetStatMetrics = {
+    inline def apply(total: InputMb): NetStatMetrics = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetStatMetrics]
     }
     
-    @scala.inline
-    implicit class NetStatMetricsMutableBuilder[Self <: NetStatMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: NetStatMetrics](x: Self) {
       
-      @scala.inline
-      def setTotal(value: InputMb): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: InputMb): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

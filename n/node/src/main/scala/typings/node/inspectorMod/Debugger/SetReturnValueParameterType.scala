@@ -14,16 +14,13 @@ trait SetReturnValueParameterType extends StObject {
 }
 object SetReturnValueParameterType {
   
-  @scala.inline
-  def apply(newValue: CallArgument): SetReturnValueParameterType = {
+  inline def apply(newValue: CallArgument): SetReturnValueParameterType = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetReturnValueParameterType]
   }
   
-  @scala.inline
-  implicit class SetReturnValueParameterTypeMutableBuilder[Self <: SetReturnValueParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: SetReturnValueParameterType](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }
 }

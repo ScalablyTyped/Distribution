@@ -24,49 +24,35 @@ trait RoughEaseConfig extends StObject {
 }
 object RoughEaseConfig {
   
-  @scala.inline
-  def apply(): RoughEaseConfig = {
+  inline def apply(): RoughEaseConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoughEaseConfig]
   }
   
-  @scala.inline
-  implicit class RoughEaseConfigMutableBuilder[Self <: RoughEaseConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RoughEaseConfig](x: Self) {
     
-    @scala.inline
-    def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+    inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
+    inline def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
     
-    @scala.inline
-    def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+    inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
+    inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
     
-    @scala.inline
-    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     
-    @scala.inline
-    def setTaper(value: in | out | both | none): Self = StObject.set(x, "taper", value.asInstanceOf[js.Any])
+    inline def setTaper(value: in | out | both | none): Self = StObject.set(x, "taper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaperUndefined: Self = StObject.set(x, "taper", js.undefined)
+    inline def setTaperUndefined: Self = StObject.set(x, "taper", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Ease): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Ease): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

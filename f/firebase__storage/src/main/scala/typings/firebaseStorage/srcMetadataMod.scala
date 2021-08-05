@@ -49,8 +49,7 @@ object srcMetadataMod {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bucket: String,
       fullPath: String,
       generation: String,
@@ -64,71 +63,49 @@ object srcMetadataMod {
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
       
-      @scala.inline
-      def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+      inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
       
-      @scala.inline
-      def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+      inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
       
-      @scala.inline
-      def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+      inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
+      inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setCustomMetadata(value: StringDictionary[String]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
+      inline def setCustomMetadata(value: StringDictionary[String]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
+      inline def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
       
-      @scala.inline
-      def setDownloadTokens(value: js.Array[String]): Self = StObject.set(x, "downloadTokens", value.asInstanceOf[js.Any])
+      inline def setDownloadTokens(value: js.Array[String]): Self = StObject.set(x, "downloadTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadTokensUndefined: Self = StObject.set(x, "downloadTokens", js.undefined)
+      inline def setDownloadTokensUndefined: Self = StObject.set(x, "downloadTokens", js.undefined)
       
-      @scala.inline
-      def setDownloadTokensVarargs(value: String*): Self = StObject.set(x, "downloadTokens", js.Array(value :_*))
+      inline def setDownloadTokensVarargs(value: String*): Self = StObject.set(x, "downloadTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+      inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+      inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
       
-      @scala.inline
-      def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

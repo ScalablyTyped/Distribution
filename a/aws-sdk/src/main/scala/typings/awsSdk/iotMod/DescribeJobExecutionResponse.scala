@@ -13,19 +13,15 @@ trait DescribeJobExecutionResponse extends StObject {
 }
 object DescribeJobExecutionResponse {
   
-  @scala.inline
-  def apply(): DescribeJobExecutionResponse = {
+  inline def apply(): DescribeJobExecutionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeJobExecutionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeJobExecutionResponseMutableBuilder[Self <: DescribeJobExecutionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJobExecutionResponse](x: Self) {
     
-    @scala.inline
-    def setExecution(value: JobExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: JobExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
+    inline def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
   }
 }

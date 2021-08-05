@@ -14,17 +14,17 @@ object sematicTokensProposedMod {
   @js.native
   class SemanticTokensBuilder () extends StObject {
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var _dataLen: js.Any = js.native
+    /* private */ var _dataLen: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _prevChar: js.Any = js.native
+    /* private */ var _prevChar: js.Any = js.native
     
-    var _prevData: js.Any = js.native
+    /* private */ var _prevData: js.Any = js.native
     
-    var _prevLine: js.Any = js.native
+    /* private */ var _prevLine: js.Any = js.native
     
     def build(): typings.vscodeLanguageserverProtocol.mod.Proposed.SemanticTokens = js.native
     
@@ -34,7 +34,7 @@ object sematicTokensProposedMod {
     
     def id: String = js.native
     
-    var initialize: js.Any = js.native
+    /* private */ var initialize: js.Any = js.native
     
     def previousResult(id: String): Unit = js.native
     
@@ -51,17 +51,14 @@ object sematicTokensProposedMod {
   }
   object SemanticTokens {
     
-    @scala.inline
-    def apply(semanticTokens: On): SemanticTokens = {
+    inline def apply(semanticTokens: On): SemanticTokens = {
       val __obj = js.Dynamic.literal(semanticTokens = semanticTokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[SemanticTokens]
     }
     
-    @scala.inline
-    implicit class SemanticTokensMutableBuilder[Self <: SemanticTokens] (val x: Self) extends AnyVal {
+    extension [Self <: SemanticTokens](x: Self) {
       
-      @scala.inline
-      def setSemanticTokens(value: On): Self = StObject.set(x, "semanticTokens", value.asInstanceOf[js.Any])
+      inline def setSemanticTokens(value: On): Self = StObject.set(x, "semanticTokens", value.asInstanceOf[js.Any])
     }
   }
 }

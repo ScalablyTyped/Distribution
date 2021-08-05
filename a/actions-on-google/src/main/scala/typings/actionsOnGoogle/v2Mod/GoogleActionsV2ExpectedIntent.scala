@@ -41,31 +41,23 @@ trait GoogleActionsV2ExpectedIntent extends StObject {
 }
 object GoogleActionsV2ExpectedIntent {
   
-  @scala.inline
-  def apply(): GoogleActionsV2ExpectedIntent = {
+  inline def apply(): GoogleActionsV2ExpectedIntent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2ExpectedIntent]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2ExpectedIntentMutableBuilder[Self <: GoogleActionsV2ExpectedIntent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2ExpectedIntent](x: Self) {
     
-    @scala.inline
-    def setInputValueData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
+    inline def setInputValueData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputValueDataUndefined: Self = StObject.set(x, "inputValueData", js.undefined)
+    inline def setInputValueDataUndefined: Self = StObject.set(x, "inputValueData", js.undefined)
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
+    inline def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
   }
 }

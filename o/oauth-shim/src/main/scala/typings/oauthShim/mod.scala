@@ -30,26 +30,20 @@ object mod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(client_id: String, client_secret: String, domain: String, grant_url: String): Config = {
+    inline def apply(client_id: String, client_secret: String, domain: String, grant_url: String): Config = {
       val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], grant_url = grant_url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+      inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+      inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrant_url(value: String): Self = StObject.set(x, "grant_url", value.asInstanceOf[js.Any])
+      inline def setGrant_url(value: String): Self = StObject.set(x, "grant_url", value.asInstanceOf[js.Any])
     }
   }
   

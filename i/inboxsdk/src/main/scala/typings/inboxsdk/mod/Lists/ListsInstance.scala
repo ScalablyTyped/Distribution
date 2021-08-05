@@ -14,8 +14,7 @@ trait ListsInstance extends StObject {
 }
 object ListsInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getSelectedThreadRowViews: () => js.Array[ThreadRowView],
     registerThreadRowViewHandler: js.Function1[/* threadRowView */ ThreadRowView, js.Any] => js.Function0[Unit],
     registerThreadRowViewSelectionHandler: js.Function0[js.Any] => js.Function0[Unit]
@@ -24,16 +23,12 @@ object ListsInstance {
     __obj.asInstanceOf[ListsInstance]
   }
   
-  @scala.inline
-  implicit class ListsInstanceMutableBuilder[Self <: ListsInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ListsInstance](x: Self) {
     
-    @scala.inline
-    def setGetSelectedThreadRowViews(value: () => js.Array[ThreadRowView]): Self = StObject.set(x, "getSelectedThreadRowViews", js.Any.fromFunction0(value))
+    inline def setGetSelectedThreadRowViews(value: () => js.Array[ThreadRowView]): Self = StObject.set(x, "getSelectedThreadRowViews", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterThreadRowViewHandler(value: js.Function1[/* threadRowView */ ThreadRowView, js.Any] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadRowViewHandler", js.Any.fromFunction1(value))
+    inline def setRegisterThreadRowViewHandler(value: js.Function1[/* threadRowView */ ThreadRowView, js.Any] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadRowViewHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterThreadRowViewSelectionHandler(value: js.Function0[js.Any] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadRowViewSelectionHandler", js.Any.fromFunction1(value))
+    inline def setRegisterThreadRowViewSelectionHandler(value: js.Function0[js.Any] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadRowViewSelectionHandler", js.Any.fromFunction1(value))
   }
 }

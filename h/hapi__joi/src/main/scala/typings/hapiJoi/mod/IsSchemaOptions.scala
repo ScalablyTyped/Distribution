@@ -15,16 +15,13 @@ trait IsSchemaOptions extends StObject {
 }
 object IsSchemaOptions {
   
-  @scala.inline
-  def apply(legacy: Boolean): IsSchemaOptions = {
+  inline def apply(legacy: Boolean): IsSchemaOptions = {
     val __obj = js.Dynamic.literal(legacy = legacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsSchemaOptions]
   }
   
-  @scala.inline
-  implicit class IsSchemaOptionsMutableBuilder[Self <: IsSchemaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsSchemaOptions](x: Self) {
     
-    @scala.inline
-    def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+    inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
   }
 }

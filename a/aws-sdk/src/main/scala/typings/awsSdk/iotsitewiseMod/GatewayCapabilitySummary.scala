@@ -18,19 +18,15 @@ trait GatewayCapabilitySummary extends StObject {
 }
 object GatewayCapabilitySummary {
   
-  @scala.inline
-  def apply(capabilityNamespace: CapabilityNamespace, capabilitySyncStatus: CapabilitySyncStatus): GatewayCapabilitySummary = {
+  inline def apply(capabilityNamespace: CapabilityNamespace, capabilitySyncStatus: CapabilitySyncStatus): GatewayCapabilitySummary = {
     val __obj = js.Dynamic.literal(capabilityNamespace = capabilityNamespace.asInstanceOf[js.Any], capabilitySyncStatus = capabilitySyncStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayCapabilitySummary]
   }
   
-  @scala.inline
-  implicit class GatewayCapabilitySummaryMutableBuilder[Self <: GatewayCapabilitySummary] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayCapabilitySummary](x: Self) {
     
-    @scala.inline
-    def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
+    inline def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitySyncStatus(value: CapabilitySyncStatus): Self = StObject.set(x, "capabilitySyncStatus", value.asInstanceOf[js.Any])
+    inline def setCapabilitySyncStatus(value: CapabilitySyncStatus): Self = StObject.set(x, "capabilitySyncStatus", value.asInstanceOf[js.Any])
   }
 }

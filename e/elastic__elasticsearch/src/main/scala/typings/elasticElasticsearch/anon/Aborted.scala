@@ -23,8 +23,7 @@ trait Aborted[TContext] extends StObject {
 }
 object Aborted {
   
-  @scala.inline
-  def apply[TContext](
+  inline def apply[TContext](
     aborted: Boolean,
     attempts: Double,
     connection: default,
@@ -36,31 +35,22 @@ object Aborted {
     __obj.asInstanceOf[Aborted[TContext]]
   }
   
-  @scala.inline
-  implicit class AbortedMutableBuilder[Self <: Aborted[?], TContext] (val x: Self & Aborted[TContext]) extends AnyVal {
+  extension [Self <: Aborted[?], TContext](x: Self & Aborted[TContext]) {
     
-    @scala.inline
-    def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+    inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+    inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection(value: default): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: default): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String | js.Symbol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | js.Symbol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSniff(value: Hosts): Self = StObject.set(x, "sniff", value.asInstanceOf[js.Any])
+    inline def setSniff(value: Hosts): Self = StObject.set(x, "sniff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSniffUndefined: Self = StObject.set(x, "sniff", js.undefined)
+    inline def setSniffUndefined: Self = StObject.set(x, "sniff", js.undefined)
   }
 }

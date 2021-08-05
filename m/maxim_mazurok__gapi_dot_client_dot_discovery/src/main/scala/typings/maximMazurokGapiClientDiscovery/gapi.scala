@@ -47,35 +47,26 @@ object gapi {
       }
       object DirectoryList {
         
-        @scala.inline
-        def apply(): DirectoryList = {
+        inline def apply(): DirectoryList = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[DirectoryList]
         }
         
-        @scala.inline
-        implicit class DirectoryListMutableBuilder[Self <: DirectoryList] (val x: Self) extends AnyVal {
+        extension [Self <: DirectoryList](x: Self) {
           
-          @scala.inline
-          def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
+          inline def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDiscoveryVersionUndefined: Self = StObject.set(x, "discoveryVersion", js.undefined)
+          inline def setDiscoveryVersionUndefined: Self = StObject.set(x, "discoveryVersion", js.undefined)
           
-          @scala.inline
-          def setItems(value: js.Array[Description]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[Description]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+          inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          @scala.inline
-          def setItemsVarargs(value: Description*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: Description*): Self = StObject.set(x, "items", js.Array(value :_*))
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         }
       }
       
@@ -151,144 +142,100 @@ object gapi {
       }
       object JsonSchema {
         
-        @scala.inline
-        def apply(): JsonSchema = {
+        inline def apply(): JsonSchema = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[JsonSchema]
         }
         
-        @scala.inline
-        implicit class JsonSchemaMutableBuilder[Self <: JsonSchema] (val x: Self) extends AnyVal {
+        extension [Self <: JsonSchema](x: Self) {
           
-          @scala.inline
-          def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+          inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
+          inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
           
-          @scala.inline
-          def setAdditionalProperties(value: JsonSchema): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+          inline def setAdditionalProperties(value: JsonSchema): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+          inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
           
-          @scala.inline
-          def setAnnotations(value: Required): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+          inline def setAnnotations(value: Required): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+          inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
           
-          @scala.inline
-          def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+          inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+          inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+          inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEnumDescriptions(value: js.Array[String]): Self = StObject.set(x, "enumDescriptions", value.asInstanceOf[js.Any])
+          inline def setEnumDescriptions(value: js.Array[String]): Self = StObject.set(x, "enumDescriptions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEnumDescriptionsUndefined: Self = StObject.set(x, "enumDescriptions", js.undefined)
+          inline def setEnumDescriptionsUndefined: Self = StObject.set(x, "enumDescriptions", js.undefined)
           
-          @scala.inline
-          def setEnumDescriptionsVarargs(value: String*): Self = StObject.set(x, "enumDescriptions", js.Array(value :_*))
+          inline def setEnumDescriptionsVarargs(value: String*): Self = StObject.set(x, "enumDescriptions", js.Array(value :_*))
           
-          @scala.inline
-          def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+          inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
           
-          @scala.inline
-          def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+          inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
           
-          @scala.inline
-          def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+          inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+          inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setItems(value: JsonSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: JsonSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+          inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          @scala.inline
-          def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+          inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+          inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
           
-          @scala.inline
-          def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+          inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+          inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
           
-          @scala.inline
-          def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+          inline def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+          inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
           
-          @scala.inline
-          def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+          inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+          inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
           
-          @scala.inline
-          def setProperties(
+          inline def setProperties(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.JsonSchema & TopLevel[js.Any]
           ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+          inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
           
-          @scala.inline
-          def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+          inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+          inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
           
-          @scala.inline
-          def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
+          inline def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
+          inline def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
           
-          @scala.inline
-          def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+          inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+          inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
           
-          @scala.inline
-          def setVariant(value: Discriminant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+          inline def setVariant(value: Discriminant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+          inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
         }
       }
       
@@ -404,216 +351,152 @@ object gapi {
       }
       object RestDescription {
         
-        @scala.inline
-        def apply(): RestDescription = {
+        inline def apply(): RestDescription = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[RestDescription]
         }
         
-        @scala.inline
-        implicit class RestDescriptionMutableBuilder[Self <: RestDescription] (val x: Self) extends AnyVal {
+        extension [Self <: RestDescription](x: Self) {
           
-          @scala.inline
-          def setAuth(value: Oauth2): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+          inline def setAuth(value: Oauth2): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+          inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
           
-          @scala.inline
-          def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+          inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+          inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
           
-          @scala.inline
-          def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+          inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+          inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
           
-          @scala.inline
-          def setBatchPath(value: String): Self = StObject.set(x, "batchPath", value.asInstanceOf[js.Any])
+          inline def setBatchPath(value: String): Self = StObject.set(x, "batchPath", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBatchPathUndefined: Self = StObject.set(x, "batchPath", js.undefined)
+          inline def setBatchPathUndefined: Self = StObject.set(x, "batchPath", js.undefined)
           
-          @scala.inline
-          def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
+          inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
+          inline def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
+          inline def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDiscoveryVersionUndefined: Self = StObject.set(x, "discoveryVersion", js.undefined)
+          inline def setDiscoveryVersionUndefined: Self = StObject.set(x, "discoveryVersion", js.undefined)
           
-          @scala.inline
-          def setDocumentationLink(value: String): Self = StObject.set(x, "documentationLink", value.asInstanceOf[js.Any])
+          inline def setDocumentationLink(value: String): Self = StObject.set(x, "documentationLink", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDocumentationLinkUndefined: Self = StObject.set(x, "documentationLink", js.undefined)
+          inline def setDocumentationLinkUndefined: Self = StObject.set(x, "documentationLink", js.undefined)
           
-          @scala.inline
-          def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+          inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+          inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
           
-          @scala.inline
-          def setExponentialBackoffDefault(value: Boolean): Self = StObject.set(x, "exponentialBackoffDefault", value.asInstanceOf[js.Any])
+          inline def setExponentialBackoffDefault(value: Boolean): Self = StObject.set(x, "exponentialBackoffDefault", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExponentialBackoffDefaultUndefined: Self = StObject.set(x, "exponentialBackoffDefault", js.undefined)
+          inline def setExponentialBackoffDefaultUndefined: Self = StObject.set(x, "exponentialBackoffDefault", js.undefined)
           
-          @scala.inline
-          def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+          inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+          inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
           
-          @scala.inline
-          def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+          inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
           
-          @scala.inline
-          def setIcons(value: X16): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+          inline def setIcons(value: X16): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+          inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+          inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+          inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          @scala.inline
-          def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+          inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
           
-          @scala.inline
-          def setMethods(
+          inline def setMethods(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[js.Any]
           ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+          inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setOwnerDomain(value: String): Self = StObject.set(x, "ownerDomain", value.asInstanceOf[js.Any])
+          inline def setOwnerDomain(value: String): Self = StObject.set(x, "ownerDomain", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOwnerDomainUndefined: Self = StObject.set(x, "ownerDomain", js.undefined)
+          inline def setOwnerDomainUndefined: Self = StObject.set(x, "ownerDomain", js.undefined)
           
-          @scala.inline
-          def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
+          inline def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
+          inline def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
           
-          @scala.inline
-          def setPackagePath(value: String): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
+          inline def setPackagePath(value: String): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPackagePathUndefined: Self = StObject.set(x, "packagePath", js.undefined)
+          inline def setPackagePathUndefined: Self = StObject.set(x, "packagePath", js.undefined)
           
-          @scala.inline
-          def setParameters(
+          inline def setParameters(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[js.Any]
           ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+          inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
           
-          @scala.inline
-          def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+          inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+          inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
           
-          @scala.inline
-          def setResources(
+          inline def setResources(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[js.Any]
           ): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+          inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
           
-          @scala.inline
-          def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+          inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+          inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
           
-          @scala.inline
-          def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
+          inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
+          inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
           
-          @scala.inline
-          def setSchemas(
+          inline def setSchemas(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[js.Any]
           ): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+          inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
           
-          @scala.inline
-          def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+          inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
+          inline def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
           
-          @scala.inline
-          def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+          inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+          inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
           
-          @scala.inline
-          def setVersion_module(value: Boolean): Self = StObject.set(x, "version_module", value.asInstanceOf[js.Any])
+          inline def setVersion_module(value: Boolean): Self = StObject.set(x, "version_module", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVersion_moduleUndefined: Self = StObject.set(x, "version_module", js.undefined)
+          inline def setVersion_moduleUndefined: Self = StObject.set(x, "version_module", js.undefined)
         }
       }
       
@@ -673,114 +556,80 @@ object gapi {
       }
       object RestMethod {
         
-        @scala.inline
-        def apply(): RestMethod = {
+        inline def apply(): RestMethod = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[RestMethod]
         }
         
-        @scala.inline
-        implicit class RestMethodMutableBuilder[Self <: RestMethod] (val x: Self) extends AnyVal {
+        extension [Self <: RestMethod](x: Self) {
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setEtagRequired(value: Boolean): Self = StObject.set(x, "etagRequired", value.asInstanceOf[js.Any])
+          inline def setEtagRequired(value: Boolean): Self = StObject.set(x, "etagRequired", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEtagRequiredUndefined: Self = StObject.set(x, "etagRequired", js.undefined)
+          inline def setEtagRequiredUndefined: Self = StObject.set(x, "etagRequired", js.undefined)
           
-          @scala.inline
-          def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+          inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+          inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setMediaUpload(value: Accept): Self = StObject.set(x, "mediaUpload", value.asInstanceOf[js.Any])
+          inline def setMediaUpload(value: Accept): Self = StObject.set(x, "mediaUpload", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMediaUploadUndefined: Self = StObject.set(x, "mediaUpload", js.undefined)
+          inline def setMediaUploadUndefined: Self = StObject.set(x, "mediaUpload", js.undefined)
           
-          @scala.inline
-          def setParameterOrder(value: js.Array[String]): Self = StObject.set(x, "parameterOrder", value.asInstanceOf[js.Any])
+          inline def setParameterOrder(value: js.Array[String]): Self = StObject.set(x, "parameterOrder", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParameterOrderUndefined: Self = StObject.set(x, "parameterOrder", js.undefined)
+          inline def setParameterOrderUndefined: Self = StObject.set(x, "parameterOrder", js.undefined)
           
-          @scala.inline
-          def setParameterOrderVarargs(value: String*): Self = StObject.set(x, "parameterOrder", js.Array(value :_*))
+          inline def setParameterOrderVarargs(value: String*): Self = StObject.set(x, "parameterOrder", js.Array(value :_*))
           
-          @scala.inline
-          def setParameters(
+          inline def setParameters(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestMethod & TopLevel[js.Any]
           ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+          inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
           
-          @scala.inline
-          def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+          inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+          inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
           
-          @scala.inline
-          def setRequest(value: ParameterName): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+          inline def setRequest(value: ParameterName): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+          inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
           
-          @scala.inline
-          def setResponse(value: `0`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+          inline def setResponse(value: `0`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+          inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
           
-          @scala.inline
-          def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+          inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+          inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
           
-          @scala.inline
-          def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+          inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
           
-          @scala.inline
-          def setSupportsMediaDownload(value: Boolean): Self = StObject.set(x, "supportsMediaDownload", value.asInstanceOf[js.Any])
+          inline def setSupportsMediaDownload(value: Boolean): Self = StObject.set(x, "supportsMediaDownload", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSupportsMediaDownloadUndefined: Self = StObject.set(x, "supportsMediaDownload", js.undefined)
+          inline def setSupportsMediaDownloadUndefined: Self = StObject.set(x, "supportsMediaDownload", js.undefined)
           
-          @scala.inline
-          def setSupportsMediaUpload(value: Boolean): Self = StObject.set(x, "supportsMediaUpload", value.asInstanceOf[js.Any])
+          inline def setSupportsMediaUpload(value: Boolean): Self = StObject.set(x, "supportsMediaUpload", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSupportsMediaUploadUndefined: Self = StObject.set(x, "supportsMediaUpload", js.undefined)
+          inline def setSupportsMediaUploadUndefined: Self = StObject.set(x, "supportsMediaUpload", js.undefined)
           
-          @scala.inline
-          def setSupportsSubscription(value: Boolean): Self = StObject.set(x, "supportsSubscription", value.asInstanceOf[js.Any])
+          inline def setSupportsSubscription(value: Boolean): Self = StObject.set(x, "supportsSubscription", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSupportsSubscriptionUndefined: Self = StObject.set(x, "supportsSubscription", js.undefined)
+          inline def setSupportsSubscriptionUndefined: Self = StObject.set(x, "supportsSubscription", js.undefined)
           
-          @scala.inline
-          def setUseMediaDownloadService(value: Boolean): Self = StObject.set(x, "useMediaDownloadService", value.asInstanceOf[js.Any])
+          inline def setUseMediaDownloadService(value: Boolean): Self = StObject.set(x, "useMediaDownloadService", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUseMediaDownloadServiceUndefined: Self = StObject.set(x, "useMediaDownloadService", js.undefined)
+          inline def setUseMediaDownloadServiceUndefined: Self = StObject.set(x, "useMediaDownloadService", js.undefined)
         }
       }
       
@@ -802,34 +651,28 @@ object gapi {
       }
       object RestResource {
         
-        @scala.inline
-        def apply(): RestResource = {
+        inline def apply(): RestResource = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[RestResource]
         }
         
-        @scala.inline
-        implicit class RestResourceMutableBuilder[Self <: RestResource] (val x: Self) extends AnyVal {
+        extension [Self <: RestResource](x: Self) {
           
-          @scala.inline
-          def setMethods(
+          inline def setMethods(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestResource & TopLevel[js.Any]
           ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+          inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
           
-          @scala.inline
-          def setResources(
+          inline def setResources(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource}
             */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestResource & TopLevel[js.Any]
           ): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+          inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
         }
       }
     }

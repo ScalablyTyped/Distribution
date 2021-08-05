@@ -14,22 +14,17 @@ trait RepricingRuleEligibleOfferMatcherStringMatcher extends StObject {
 }
 object RepricingRuleEligibleOfferMatcherStringMatcher {
   
-  @scala.inline
-  def apply(): RepricingRuleEligibleOfferMatcherStringMatcher = {
+  inline def apply(): RepricingRuleEligibleOfferMatcherStringMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepricingRuleEligibleOfferMatcherStringMatcher]
   }
   
-  @scala.inline
-  implicit class RepricingRuleEligibleOfferMatcherStringMatcherMutableBuilder[Self <: RepricingRuleEligibleOfferMatcherStringMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: RepricingRuleEligibleOfferMatcherStringMatcher](x: Self) {
     
-    @scala.inline
-    def setStrAttributes(value: js.Array[String]): Self = StObject.set(x, "strAttributes", value.asInstanceOf[js.Any])
+    inline def setStrAttributes(value: js.Array[String]): Self = StObject.set(x, "strAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrAttributesUndefined: Self = StObject.set(x, "strAttributes", js.undefined)
+    inline def setStrAttributesUndefined: Self = StObject.set(x, "strAttributes", js.undefined)
     
-    @scala.inline
-    def setStrAttributesVarargs(value: String*): Self = StObject.set(x, "strAttributes", js.Array(value :_*))
+    inline def setStrAttributesVarargs(value: String*): Self = StObject.set(x, "strAttributes", js.Array(value :_*))
   }
 }

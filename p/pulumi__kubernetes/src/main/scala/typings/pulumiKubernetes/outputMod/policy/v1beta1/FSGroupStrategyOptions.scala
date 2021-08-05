@@ -21,22 +21,17 @@ trait FSGroupStrategyOptions extends StObject {
 }
 object FSGroupStrategyOptions {
   
-  @scala.inline
-  def apply(ranges: js.Array[IDRange], rule: String): FSGroupStrategyOptions = {
+  inline def apply(ranges: js.Array[IDRange], rule: String): FSGroupStrategyOptions = {
     val __obj = js.Dynamic.literal(ranges = ranges.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[FSGroupStrategyOptions]
   }
   
-  @scala.inline
-  implicit class FSGroupStrategyOptionsMutableBuilder[Self <: FSGroupStrategyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FSGroupStrategyOptions](x: Self) {
     
-    @scala.inline
-    def setRanges(value: js.Array[IDRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[IDRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesVarargs(value: IDRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: IDRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
-    @scala.inline
-    def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

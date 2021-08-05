@@ -14,19 +14,15 @@ trait AppEngine extends StObject {
 }
 object AppEngine {
   
-  @scala.inline
-  def apply(): AppEngine = {
+  inline def apply(): AppEngine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppEngine]
   }
   
-  @scala.inline
-  implicit class AppEngineMutableBuilder[Self <: AppEngine] (val x: Self) extends AnyVal {
+  extension [Self <: AppEngine](x: Self) {
     
-    @scala.inline
-    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleIdUndefined: Self = StObject.set(x, "moduleId", js.undefined)
+    inline def setModuleIdUndefined: Self = StObject.set(x, "moduleId", js.undefined)
   }
 }

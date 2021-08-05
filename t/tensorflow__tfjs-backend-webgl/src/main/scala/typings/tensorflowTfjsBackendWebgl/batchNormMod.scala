@@ -13,8 +13,7 @@ object batchNormMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def batchNorm(params: Inputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(params.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def batchNorm(params: Inputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(params.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/BatchNorm", "batchNormConfig")
   @js.native

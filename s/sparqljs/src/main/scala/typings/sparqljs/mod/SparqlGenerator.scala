@@ -12,19 +12,15 @@ trait SparqlGenerator extends StObject {
 }
 object SparqlGenerator {
   
-  @scala.inline
-  def apply(createGenerator: () => js.Any, stringify: SparqlQuery => String): SparqlGenerator = {
+  inline def apply(createGenerator: () => js.Any, stringify: SparqlQuery => String): SparqlGenerator = {
     val __obj = js.Dynamic.literal(createGenerator = js.Any.fromFunction0(createGenerator), stringify = js.Any.fromFunction1(stringify))
     __obj.asInstanceOf[SparqlGenerator]
   }
   
-  @scala.inline
-  implicit class SparqlGeneratorMutableBuilder[Self <: SparqlGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: SparqlGenerator](x: Self) {
     
-    @scala.inline
-    def setCreateGenerator(value: () => js.Any): Self = StObject.set(x, "createGenerator", js.Any.fromFunction0(value))
+    inline def setCreateGenerator(value: () => js.Any): Self = StObject.set(x, "createGenerator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStringify(value: SparqlQuery => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    inline def setStringify(value: SparqlQuery => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
   }
 }

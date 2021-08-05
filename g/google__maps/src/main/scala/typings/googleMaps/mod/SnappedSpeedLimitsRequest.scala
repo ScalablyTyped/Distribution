@@ -27,25 +27,19 @@ trait SnappedSpeedLimitsRequest extends StObject {
 }
 object SnappedSpeedLimitsRequest {
   
-  @scala.inline
-  def apply(path: js.Array[LatLng]): SnappedSpeedLimitsRequest = {
+  inline def apply(path: js.Array[LatLng]): SnappedSpeedLimitsRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnappedSpeedLimitsRequest]
   }
   
-  @scala.inline
-  implicit class SnappedSpeedLimitsRequestMutableBuilder[Self <: SnappedSpeedLimitsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SnappedSpeedLimitsRequest](x: Self) {
     
-    @scala.inline
-    def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

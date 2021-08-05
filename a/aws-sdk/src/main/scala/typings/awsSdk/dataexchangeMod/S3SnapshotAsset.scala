@@ -13,16 +13,13 @@ trait S3SnapshotAsset extends StObject {
 }
 object S3SnapshotAsset {
   
-  @scala.inline
-  def apply(Size: doubleMin0): S3SnapshotAsset = {
+  inline def apply(Size: doubleMin0): S3SnapshotAsset = {
     val __obj = js.Dynamic.literal(Size = Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3SnapshotAsset]
   }
   
-  @scala.inline
-  implicit class S3SnapshotAssetMutableBuilder[Self <: S3SnapshotAsset] (val x: Self) extends AnyVal {
+  extension [Self <: S3SnapshotAsset](x: Self) {
     
-    @scala.inline
-    def setSize(value: doubleMin0): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: doubleMin0): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait SetFileMetadataOptions extends StObject {
 }
 object SetFileMetadataOptions {
   
-  @scala.inline
-  def apply(): SetFileMetadataOptions = {
+  inline def apply(): SetFileMetadataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetFileMetadataOptions]
   }
   
-  @scala.inline
-  implicit class SetFileMetadataOptionsMutableBuilder[Self <: SetFileMetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetFileMetadataOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

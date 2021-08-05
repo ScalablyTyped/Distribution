@@ -12,22 +12,17 @@ trait FileBase extends StObject {
 }
 object FileBase {
   
-  @scala.inline
-  def apply(file_id: String): FileBase = {
+  inline def apply(file_id: String): FileBase = {
     val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileBase]
   }
   
-  @scala.inline
-  implicit class FileBaseMutableBuilder[Self <: FileBase] (val x: Self) extends AnyVal {
+  extension [Self <: FileBase](x: Self) {
     
-    @scala.inline
-    def setFile_id(value: String): Self = StObject.set(x, "file_id", value.asInstanceOf[js.Any])
+    inline def setFile_id(value: String): Self = StObject.set(x, "file_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_size(value: Double): Self = StObject.set(x, "file_size", value.asInstanceOf[js.Any])
+    inline def setFile_size(value: Double): Self = StObject.set(x, "file_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_sizeUndefined: Self = StObject.set(x, "file_size", js.undefined)
+    inline def setFile_sizeUndefined: Self = StObject.set(x, "file_size", js.undefined)
   }
 }

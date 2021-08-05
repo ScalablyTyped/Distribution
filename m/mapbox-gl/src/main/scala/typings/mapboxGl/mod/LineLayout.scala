@@ -26,43 +26,31 @@ trait LineLayout
 }
 object LineLayout {
   
-  @scala.inline
-  def apply(): LineLayout = {
+  inline def apply(): LineLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineLayout]
   }
   
-  @scala.inline
-  implicit class LineLayoutMutableBuilder[Self <: LineLayout] (val x: Self) extends AnyVal {
+  extension [Self <: LineLayout](x: Self) {
     
-    @scala.inline
-    def `setLine-cap`(value: butt | round | square): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
+    inline def `setLine-cap`(value: butt | round | square): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-capUndefined`: Self = StObject.set(x, "line-cap", js.undefined)
+    inline def `setLine-capUndefined`: Self = StObject.set(x, "line-cap", js.undefined)
     
-    @scala.inline
-    def `setLine-join`(value: bevel | round | miter | Expression): Self = StObject.set(x, "line-join", value.asInstanceOf[js.Any])
+    inline def `setLine-join`(value: bevel | round | miter | Expression): Self = StObject.set(x, "line-join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-joinUndefined`: Self = StObject.set(x, "line-join", js.undefined)
+    inline def `setLine-joinUndefined`: Self = StObject.set(x, "line-join", js.undefined)
     
-    @scala.inline
-    def `setLine-miter-limit`(value: Double | Expression): Self = StObject.set(x, "line-miter-limit", value.asInstanceOf[js.Any])
+    inline def `setLine-miter-limit`(value: Double | Expression): Self = StObject.set(x, "line-miter-limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-miter-limitUndefined`: Self = StObject.set(x, "line-miter-limit", js.undefined)
+    inline def `setLine-miter-limitUndefined`: Self = StObject.set(x, "line-miter-limit", js.undefined)
     
-    @scala.inline
-    def `setLine-round-limit`(value: Double | Expression): Self = StObject.set(x, "line-round-limit", value.asInstanceOf[js.Any])
+    inline def `setLine-round-limit`(value: Double | Expression): Self = StObject.set(x, "line-round-limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-round-limitUndefined`: Self = StObject.set(x, "line-round-limit", js.undefined)
+    inline def `setLine-round-limitUndefined`: Self = StObject.set(x, "line-round-limit", js.undefined)
     
-    @scala.inline
-    def `setLine-sort-key`(value: Double | Expression): Self = StObject.set(x, "line-sort-key", value.asInstanceOf[js.Any])
+    inline def `setLine-sort-key`(value: Double | Expression): Self = StObject.set(x, "line-sort-key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-sort-keyUndefined`: Self = StObject.set(x, "line-sort-key", js.undefined)
+    inline def `setLine-sort-keyUndefined`: Self = StObject.set(x, "line-sort-key", js.undefined)
   }
 }

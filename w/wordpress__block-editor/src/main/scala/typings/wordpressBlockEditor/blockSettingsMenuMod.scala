@@ -31,20 +31,16 @@ object blockSettingsMenuMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(clientIds: js.Array[String]): Props = {
+      inline def apply(clientIds: js.Array[String]): Props = {
         val __obj = js.Dynamic.literal(clientIds = clientIds.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClientIds(value: js.Array[String]): Self = StObject.set(x, "clientIds", value.asInstanceOf[js.Any])
+        inline def setClientIds(value: js.Array[String]): Self = StObject.set(x, "clientIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientIdsVarargs(value: String*): Self = StObject.set(x, "clientIds", js.Array(value :_*))
+        inline def setClientIdsVarargs(value: String*): Self = StObject.set(x, "clientIds", js.Array(value :_*))
       }
     }
   }

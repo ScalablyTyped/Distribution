@@ -16,23 +16,18 @@ object cookieMod {
   }
   object CookieInfo {
     
-    @scala.inline
-    def apply(domain: String, name: String, path: String): CookieInfo = {
+    inline def apply(domain: String, name: String, path: String): CookieInfo = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[CookieInfo]
     }
     
-    @scala.inline
-    implicit class CookieInfoMutableBuilder[Self <: CookieInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CookieInfo](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,17 +37,14 @@ object cookieMod {
   }
   object CookieOption {
     
-    @scala.inline
-    def apply(name: String): CookieOption = {
+    inline def apply(name: String): CookieOption = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CookieOption]
     }
     
-    @scala.inline
-    implicit class CookieOptionMutableBuilder[Self <: CookieOption] (val x: Self) extends AnyVal {
+    extension [Self <: CookieOption](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

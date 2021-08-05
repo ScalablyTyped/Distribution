@@ -23,28 +23,21 @@ trait ReportTaskRunnerHeartbeatInput extends StObject {
 }
 object ReportTaskRunnerHeartbeatInput {
   
-  @scala.inline
-  def apply(taskrunnerId: id): ReportTaskRunnerHeartbeatInput = {
+  inline def apply(taskrunnerId: id): ReportTaskRunnerHeartbeatInput = {
     val __obj = js.Dynamic.literal(taskrunnerId = taskrunnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportTaskRunnerHeartbeatInput]
   }
   
-  @scala.inline
-  implicit class ReportTaskRunnerHeartbeatInputMutableBuilder[Self <: ReportTaskRunnerHeartbeatInput] (val x: Self) extends AnyVal {
+  extension [Self <: ReportTaskRunnerHeartbeatInput](x: Self) {
     
-    @scala.inline
-    def setHostname(value: id): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: id): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setTaskrunnerId(value: id): Self = StObject.set(x, "taskrunnerId", value.asInstanceOf[js.Any])
+    inline def setTaskrunnerId(value: id): Self = StObject.set(x, "taskrunnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerGroup(value: String): Self = StObject.set(x, "workerGroup", value.asInstanceOf[js.Any])
+    inline def setWorkerGroup(value: String): Self = StObject.set(x, "workerGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerGroupUndefined: Self = StObject.set(x, "workerGroup", js.undefined)
+    inline def setWorkerGroupUndefined: Self = StObject.set(x, "workerGroup", js.undefined)
   }
 }

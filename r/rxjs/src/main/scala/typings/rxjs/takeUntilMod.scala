@@ -12,6 +12,5 @@ object takeUntilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def takeUntil[T](notifier: Observable[js.Any]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeUntil")(notifier.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def takeUntil[T](notifier: Observable[js.Any]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeUntil")(notifier.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
 }

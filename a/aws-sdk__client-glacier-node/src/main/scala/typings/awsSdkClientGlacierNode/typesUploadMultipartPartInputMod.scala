@@ -65,61 +65,44 @@ object typesUploadMultipartPartInputMod {
   }
   object UploadMultipartPartInput {
     
-    @scala.inline
-    def apply[StreamType](accountId: String, uploadId: String, vaultName: String): UploadMultipartPartInput[StreamType] = {
+    inline def apply[StreamType](accountId: String, uploadId: String, vaultName: String): UploadMultipartPartInput[StreamType] = {
       val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadMultipartPartInput[StreamType]]
     }
     
-    @scala.inline
-    implicit class UploadMultipartPartInputMutableBuilder[Self <: UploadMultipartPartInput[?], StreamType] (val x: Self & UploadMultipartPartInput[StreamType]) extends AnyVal {
+    extension [Self <: UploadMultipartPartInput[?], StreamType](x: Self & UploadMultipartPartInput[StreamType]) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: ArrayBuffer | ArrayBufferView | String | StreamType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ArrayBuffer | ArrayBufferView | String | StreamType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+      inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
     }
   }
 }

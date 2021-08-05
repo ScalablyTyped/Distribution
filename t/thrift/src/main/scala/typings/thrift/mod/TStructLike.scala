@@ -12,19 +12,15 @@ trait TStructLike extends StObject {
 }
 object TStructLike {
   
-  @scala.inline
-  def apply(read: TProtocol => Unit, write: TProtocol => Unit): TStructLike = {
+  inline def apply(read: TProtocol => Unit, write: TProtocol => Unit): TStructLike = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[TStructLike]
   }
   
-  @scala.inline
-  implicit class TStructLikeMutableBuilder[Self <: TStructLike] (val x: Self) extends AnyVal {
+  extension [Self <: TStructLike](x: Self) {
     
-    @scala.inline
-    def setRead(value: TProtocol => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: TProtocol => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: TProtocol => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: TProtocol => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

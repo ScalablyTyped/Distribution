@@ -55,6 +55,5 @@ object PageManager {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getInstance(): typings.sharepoint.SP.Ribbon.PageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("get_instance")().asInstanceOf[typings.sharepoint.SP.Ribbon.PageManager]
+  inline def getInstance(): typings.sharepoint.SP.Ribbon.PageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("get_instance")().asInstanceOf[typings.sharepoint.SP.Ribbon.PageManager]
 }

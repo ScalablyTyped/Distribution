@@ -33,26 +33,22 @@ object skeletonMod {
     @JSImport("@catho/quantum/Skeleton", "default.Button")
     @js.native
     def Button: SkeletonButton = js.native
-    @scala.inline
-    def Button_=(x: SkeletonButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+    inline def Button_=(x: SkeletonButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Skeleton", "default.Circle")
     @js.native
     def Circle: SkeletonCircle = js.native
-    @scala.inline
-    def Circle_=(x: SkeletonCircle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
+    inline def Circle_=(x: SkeletonCircle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Skeleton", "default.Tag")
     @js.native
     def Tag: SkeletonTag = js.native
-    @scala.inline
-    def Tag_=(x: SkeletonTag): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tag")(x.asInstanceOf[js.Any])
+    inline def Tag_=(x: SkeletonTag): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tag")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Skeleton", "default.Text")
     @js.native
     def Text: SkeletonText = js.native
-    @scala.inline
-    def Text_=(x: SkeletonText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+    inline def Text_=(x: SkeletonText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
   }
   
   type Skeleton = Component[SkeletonProps, js.Object, js.Any]
@@ -67,20 +63,16 @@ object skeletonMod {
   }
   object SkeletonButtonProps {
     
-    @scala.inline
-    def apply(size: xsmall | small | medium | large, theme: `1`): SkeletonButtonProps = {
+    inline def apply(size: xsmall | small | medium | large, theme: `1`): SkeletonButtonProps = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonButtonProps]
     }
     
-    @scala.inline
-    implicit class SkeletonButtonPropsMutableBuilder[Self <: SkeletonButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonButtonProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: `1`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `1`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,44 +92,32 @@ object skeletonMod {
   }
   object SkeletonProps {
     
-    @scala.inline
-    def apply(): SkeletonProps = {
+    inline def apply(): SkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkeletonProps]
     }
     
-    @scala.inline
-    implicit class SkeletonPropsMutableBuilder[Self <: SkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTheme(value: `13`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `13`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setType(value: rect | circle | text | button | tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: rect | circle | text | button | tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -151,20 +131,16 @@ object skeletonMod {
   }
   object SkeletonTagProps {
     
-    @scala.inline
-    def apply(size: xsmall | small | medium | large, theme: `13`): SkeletonTagProps = {
+    inline def apply(size: xsmall | small | medium | large, theme: `13`): SkeletonTagProps = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonTagProps]
     }
     
-    @scala.inline
-    implicit class SkeletonTagPropsMutableBuilder[Self <: SkeletonTagProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonTagProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: `13`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `13`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   

@@ -71,67 +71,47 @@ trait PlaceAutocompleteRequest extends StObject {
 }
 object PlaceAutocompleteRequest {
   
-  @scala.inline
-  def apply(input: String): PlaceAutocompleteRequest = {
+  inline def apply(input: String): PlaceAutocompleteRequest = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAutocompleteRequest]
   }
   
-  @scala.inline
-  implicit class PlaceAutocompleteRequestMutableBuilder[Self <: PlaceAutocompleteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceAutocompleteRequest](x: Self) {
     
-    @scala.inline
-    def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    @scala.inline
-    def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSessiontoken(value: String): Self = StObject.set(x, "sessiontoken", value.asInstanceOf[js.Any])
+    inline def setSessiontoken(value: String): Self = StObject.set(x, "sessiontoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessiontokenUndefined: Self = StObject.set(x, "sessiontoken", js.undefined)
+    inline def setSessiontokenUndefined: Self = StObject.set(x, "sessiontoken", js.undefined)
     
-    @scala.inline
-    def setStrictbounds(value: Boolean): Self = StObject.set(x, "strictbounds", value.asInstanceOf[js.Any])
+    inline def setStrictbounds(value: Boolean): Self = StObject.set(x, "strictbounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictboundsUndefined: Self = StObject.set(x, "strictbounds", js.undefined)
+    inline def setStrictboundsUndefined: Self = StObject.set(x, "strictbounds", js.undefined)
     
-    @scala.inline
-    def setTypes(value: PlaceAutocompleteType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: PlaceAutocompleteType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }
 }

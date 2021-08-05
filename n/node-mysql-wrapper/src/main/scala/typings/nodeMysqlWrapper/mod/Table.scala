@@ -9,26 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Table[T] protected () extends StObject {
   def this(tableName: String, connection: Connection) = this()
   
-  var _columns: js.Array[String] = js.native
+  /* private */ var _columns: js.Array[String] = js.native
   
-  var _connection: Connection = js.native
+  /* private */ var _connection: Connection = js.native
   
-  var _criteriaDivider: CriteriaDivider[T] = js.native
+  /* private */ var _criteriaDivider: CriteriaDivider[T] = js.native
   
-  var _deleteQuery: DeleteQuery[T] = js.native
+  /* private */ var _deleteQuery: DeleteQuery[T] = js.native
   
   /** Private keywords here are useless but I put them.
     * If the developer wants to see the properties of the Table class, they just come here.
     */
-  var _name: String = js.native
+  /* private */ var _name: String = js.native
   
-  var _primaryKey: String = js.native
+  /* private */ var _primaryKey: String = js.native
   
-  var _rules: SelectQueryRules = js.native
+  /* private */ var _rules: SelectQueryRules = js.native
   
-  var _saveQuery: SaveQuery[T] = js.native
+  /* private */ var _saveQuery: SaveQuery[T] = js.native
   
-  var _selectQuery: SelectQuery[T] = js.native
+  /* private */ var _selectQuery: SelectQuery[T] = js.native
   
   /**
     * An array of all columns' names inside this table.

@@ -23,8 +23,7 @@ trait Twitter
 }
 object Twitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: TwitterEvents,
     ready: js.Function1[/* twttr */ Twitter, Unit] => Unit,
     widgets: TwitterWidgets
@@ -33,13 +32,10 @@ object Twitter {
     __obj.asInstanceOf[Twitter]
   }
   
-  @scala.inline
-  implicit class TwitterMutableBuilder[Self <: Twitter] (val x: Self) extends AnyVal {
+  extension [Self <: Twitter](x: Self) {
     
-    @scala.inline
-    def setEvents(value: TwitterEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: TwitterEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgets(value: TwitterWidgets): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+    inline def setWidgets(value: TwitterWidgets): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
   }
 }

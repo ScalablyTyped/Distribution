@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _DEV_CONSOLE_MESSAGE_LEVEL extends StObject
 object _DEV_CONSOLE_MESSAGE_LEVEL {
   
-  @scala.inline
-  def DCML_ERROR: `2` = 2.asInstanceOf[`2`]
+  inline def DCML_ERROR: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def DCML_INFORMATIONAL: `0` = 0.asInstanceOf[`0`]
+  inline def DCML_INFORMATIONAL: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def DCML_WARNING: `1` = 1.asInstanceOf[`1`]
+  inline def DCML_WARNING: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def DEV_CONSOLE_MESSAGE_LEVEL_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def DEV_CONSOLE_MESSAGE_LEVEL_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -16,37 +16,27 @@ trait HighlightLuminosity extends StObject {
 }
 object HighlightLuminosity {
   
-  @scala.inline
-  def apply(): HighlightLuminosity = {
+  inline def apply(): HighlightLuminosity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HighlightLuminosity]
   }
   
-  @scala.inline
-  implicit class HighlightLuminosityMutableBuilder[Self <: HighlightLuminosity] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightLuminosity](x: Self) {
     
-    @scala.inline
-    def setHighlightLuminosity(value: Double): Self = StObject.set(x, "highlightLuminosity", value.asInstanceOf[js.Any])
+    inline def setHighlightLuminosity(value: Double): Self = StObject.set(x, "highlightLuminosity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightLuminosityUndefined: Self = StObject.set(x, "highlightLuminosity", js.undefined)
+    inline def setHighlightLuminosityUndefined: Self = StObject.set(x, "highlightLuminosity", js.undefined)
     
-    @scala.inline
-    def setHighlightSegmentOnMouseover(value: Boolean): Self = StObject.set(x, "highlightSegmentOnMouseover", value.asInstanceOf[js.Any])
+    inline def setHighlightSegmentOnMouseover(value: Boolean): Self = StObject.set(x, "highlightSegmentOnMouseover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightSegmentOnMouseoverUndefined: Self = StObject.set(x, "highlightSegmentOnMouseover", js.undefined)
+    inline def setHighlightSegmentOnMouseoverUndefined: Self = StObject.set(x, "highlightSegmentOnMouseover", js.undefined)
     
-    @scala.inline
-    def setLoad(value: Effect): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: Effect): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setPullOutSegmentOnClick(value: Size): Self = StObject.set(x, "pullOutSegmentOnClick", value.asInstanceOf[js.Any])
+    inline def setPullOutSegmentOnClick(value: Size): Self = StObject.set(x, "pullOutSegmentOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullOutSegmentOnClickUndefined: Self = StObject.set(x, "pullOutSegmentOnClick", js.undefined)
+    inline def setPullOutSegmentOnClickUndefined: Self = StObject.set(x, "pullOutSegmentOnClick", js.undefined)
   }
 }

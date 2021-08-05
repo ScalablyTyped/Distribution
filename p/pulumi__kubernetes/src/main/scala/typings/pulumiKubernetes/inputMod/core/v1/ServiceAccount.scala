@@ -43,55 +43,39 @@ trait ServiceAccount extends StObject {
 }
 object ServiceAccount {
   
-  @scala.inline
-  def apply(): ServiceAccount = {
+  inline def apply(): ServiceAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceAccount]
   }
   
-  @scala.inline
-  implicit class ServiceAccountMutableBuilder[Self <: ServiceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccount](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setAutomountServiceAccountToken(value: Input[Boolean]): Self = StObject.set(x, "automountServiceAccountToken", value.asInstanceOf[js.Any])
+    inline def setAutomountServiceAccountToken(value: Input[Boolean]): Self = StObject.set(x, "automountServiceAccountToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomountServiceAccountTokenUndefined: Self = StObject.set(x, "automountServiceAccountToken", js.undefined)
+    inline def setAutomountServiceAccountTokenUndefined: Self = StObject.set(x, "automountServiceAccountToken", js.undefined)
     
-    @scala.inline
-    def setImagePullSecrets(value: Input[js.Array[Input[LocalObjectReference]]]): Self = StObject.set(x, "imagePullSecrets", value.asInstanceOf[js.Any])
+    inline def setImagePullSecrets(value: Input[js.Array[Input[LocalObjectReference]]]): Self = StObject.set(x, "imagePullSecrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePullSecretsUndefined: Self = StObject.set(x, "imagePullSecrets", js.undefined)
+    inline def setImagePullSecretsUndefined: Self = StObject.set(x, "imagePullSecrets", js.undefined)
     
-    @scala.inline
-    def setImagePullSecretsVarargs(value: Input[LocalObjectReference]*): Self = StObject.set(x, "imagePullSecrets", js.Array(value :_*))
+    inline def setImagePullSecretsVarargs(value: Input[LocalObjectReference]*): Self = StObject.set(x, "imagePullSecrets", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ServiceAccount]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ServiceAccount]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSecrets(value: Input[js.Array[Input[ObjectReference]]]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setSecrets(value: Input[js.Array[Input[ObjectReference]]]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
+    inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
     
-    @scala.inline
-    def setSecretsVarargs(value: Input[ObjectReference]*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: Input[ObjectReference]*): Self = StObject.set(x, "secrets", js.Array(value :_*))
   }
 }

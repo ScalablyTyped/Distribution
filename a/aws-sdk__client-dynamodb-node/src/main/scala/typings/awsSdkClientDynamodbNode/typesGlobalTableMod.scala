@@ -23,29 +23,22 @@ object typesGlobalTableMod {
   }
   object GlobalTable {
     
-    @scala.inline
-    def apply(): GlobalTable = {
+    inline def apply(): GlobalTable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalTable]
     }
     
-    @scala.inline
-    implicit class GlobalTableMutableBuilder[Self <: GlobalTable] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTable](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+      inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      @scala.inline
-      def setReplicationGroup(value: js.Array[Replica] | Iterable[Replica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: js.Array[Replica] | Iterable[Replica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+      inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
     }
   }
   
@@ -61,23 +54,18 @@ object typesGlobalTableMod {
   }
   object UnmarshalledGlobalTable {
     
-    @scala.inline
-    def apply(): UnmarshalledGlobalTable = {
+    inline def apply(): UnmarshalledGlobalTable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledGlobalTable]
     }
     
-    @scala.inline
-    implicit class UnmarshalledGlobalTableMutableBuilder[Self <: UnmarshalledGlobalTable] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledGlobalTable](x: Self) {
       
-      @scala.inline
-      def setReplicationGroup(value: js.Array[UnmarshalledReplica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: js.Array[UnmarshalledReplica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+      inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupVarargs(value: UnmarshalledReplica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: UnmarshalledReplica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
     }
   }
 }

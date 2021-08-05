@@ -16,22 +16,17 @@ trait IosHomeScreenFolder
 }
 object IosHomeScreenFolder {
   
-  @scala.inline
-  def apply(): IosHomeScreenFolder = {
+  inline def apply(): IosHomeScreenFolder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosHomeScreenFolder]
   }
   
-  @scala.inline
-  implicit class IosHomeScreenFolderMutableBuilder[Self <: IosHomeScreenFolder] (val x: Self) extends AnyVal {
+  extension [Self <: IosHomeScreenFolder](x: Self) {
     
-    @scala.inline
-    def setPages(value: js.Array[IosHomeScreenFolderPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[IosHomeScreenFolderPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: IosHomeScreenFolderPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: IosHomeScreenFolderPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
   }
 }

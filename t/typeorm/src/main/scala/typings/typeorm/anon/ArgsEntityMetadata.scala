@@ -13,19 +13,15 @@ trait ArgsEntityMetadata extends StObject {
 }
 object ArgsEntityMetadata {
   
-  @scala.inline
-  def apply(args: EmbeddedMetadataArgs, entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata): ArgsEntityMetadata = {
+  inline def apply(args: EmbeddedMetadataArgs, entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata): ArgsEntityMetadata = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], entityMetadata = entityMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgsEntityMetadata]
   }
   
-  @scala.inline
-  implicit class ArgsEntityMetadataMutableBuilder[Self <: ArgsEntityMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ArgsEntityMetadata](x: Self) {
     
-    @scala.inline
-    def setArgs(value: EmbeddedMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: EmbeddedMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
+    inline def setEntityMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

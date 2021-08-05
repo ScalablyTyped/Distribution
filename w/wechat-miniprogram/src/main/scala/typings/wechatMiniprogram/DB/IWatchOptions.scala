@@ -14,19 +14,15 @@ trait IWatchOptions extends StObject {
 }
 object IWatchOptions {
   
-  @scala.inline
-  def apply(onChange: ISnapshot => Unit, onError: js.Any => Unit): IWatchOptions = {
+  inline def apply(onChange: ISnapshot => Unit, onError: js.Any => Unit): IWatchOptions = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), onError = js.Any.fromFunction1(onError))
     __obj.asInstanceOf[IWatchOptions]
   }
   
-  @scala.inline
-  implicit class IWatchOptionsMutableBuilder[Self <: IWatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IWatchOptions](x: Self) {
     
-    @scala.inline
-    def setOnChange(value: ISnapshot => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: ISnapshot => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnError(value: js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
   }
 }

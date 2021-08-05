@@ -12,22 +12,17 @@ trait Naclarch extends StObject {
 }
 object Naclarch {
   
-  @scala.inline
-  def apply(sub_package_path: String): Naclarch = {
+  inline def apply(sub_package_path: String): Naclarch = {
     val __obj = js.Dynamic.literal(sub_package_path = sub_package_path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Naclarch]
   }
   
-  @scala.inline
-  implicit class NaclarchMutableBuilder[Self <: Naclarch] (val x: Self) extends AnyVal {
+  extension [Self <: Naclarch](x: Self) {
     
-    @scala.inline
-    def setNacl_arch(value: String): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
+    inline def setNacl_arch(value: String): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNacl_archUndefined: Self = StObject.set(x, "nacl_arch", js.undefined)
+    inline def setNacl_archUndefined: Self = StObject.set(x, "nacl_arch", js.undefined)
     
-    @scala.inline
-    def setSub_package_path(value: String): Self = StObject.set(x, "sub_package_path", value.asInstanceOf[js.Any])
+    inline def setSub_package_path(value: String): Self = StObject.set(x, "sub_package_path", value.asInstanceOf[js.Any])
   }
 }

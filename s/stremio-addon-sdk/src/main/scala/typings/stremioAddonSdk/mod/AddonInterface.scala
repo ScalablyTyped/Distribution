@@ -16,19 +16,15 @@ trait AddonInterface extends StObject {
 }
 object AddonInterface {
   
-  @scala.inline
-  def apply(get: resourceShortManifestReso => js.Promise[js.Any], manifest: Manifest): AddonInterface = {
+  inline def apply(get: resourceShortManifestReso => js.Promise[js.Any], manifest: Manifest): AddonInterface = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), manifest = manifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddonInterface]
   }
   
-  @scala.inline
-  implicit class AddonInterfaceMutableBuilder[Self <: AddonInterface] (val x: Self) extends AnyVal {
+  extension [Self <: AddonInterface](x: Self) {
     
-    @scala.inline
-    def setGet(value: resourceShortManifestReso => js.Promise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: resourceShortManifestReso => js.Promise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setManifest(value: Manifest): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: Manifest): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
   }
 }

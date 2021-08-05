@@ -11,6 +11,5 @@ object scriptsGetElementAttributeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(_underscore: HTMLElement, elem: HTMLElement, attr: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any], elem.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def default(_underscore: HTMLElement, elem: HTMLElement, attr: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any], elem.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

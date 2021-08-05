@@ -21,19 +21,15 @@ trait IFolderItem extends StObject {
 }
 object IFolderItem {
   
-  @scala.inline
-  def apply(qName: String, qType: FolderItemType): IFolderItem = {
+  inline def apply(qName: String, qType: FolderItemType): IFolderItem = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFolderItem]
   }
   
-  @scala.inline
-  implicit class IFolderItemMutableBuilder[Self <: IFolderItem] (val x: Self) extends AnyVal {
+  extension [Self <: IFolderItem](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: FolderItemType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: FolderItemType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait SignedExchangeReceivedEvent extends StObject {
 }
 object SignedExchangeReceivedEvent {
   
-  @scala.inline
-  def apply(info: SignedExchangeInfo, requestId: RequestId): SignedExchangeReceivedEvent = {
+  inline def apply(info: SignedExchangeInfo, requestId: RequestId): SignedExchangeReceivedEvent = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedExchangeReceivedEvent]
   }
   
-  @scala.inline
-  implicit class SignedExchangeReceivedEventMutableBuilder[Self <: SignedExchangeReceivedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SignedExchangeReceivedEvent](x: Self) {
     
-    @scala.inline
-    def setInfo(value: SignedExchangeInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: SignedExchangeInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

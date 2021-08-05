@@ -38,8 +38,7 @@ trait XPreparedBatchExecution
 }
 object XPreparedBatchExecution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addBatch: () => Unit,
     clearBatch: () => Unit,
@@ -51,16 +50,12 @@ object XPreparedBatchExecution {
     __obj.asInstanceOf[XPreparedBatchExecution]
   }
   
-  @scala.inline
-  implicit class XPreparedBatchExecutionMutableBuilder[Self <: XPreparedBatchExecution] (val x: Self) extends AnyVal {
+  extension [Self <: XPreparedBatchExecution](x: Self) {
     
-    @scala.inline
-    def setAddBatch(value: () => Unit): Self = StObject.set(x, "addBatch", js.Any.fromFunction0(value))
+    inline def setAddBatch(value: () => Unit): Self = StObject.set(x, "addBatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearBatch(value: () => Unit): Self = StObject.set(x, "clearBatch", js.Any.fromFunction0(value))
+    inline def setClearBatch(value: () => Unit): Self = StObject.set(x, "clearBatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecuteBatch(value: () => SafeArray[Double]): Self = StObject.set(x, "executeBatch", js.Any.fromFunction0(value))
+    inline def setExecuteBatch(value: () => SafeArray[Double]): Self = StObject.set(x, "executeBatch", js.Any.fromFunction0(value))
   }
 }

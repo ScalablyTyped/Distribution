@@ -29,8 +29,7 @@ object datePickerBaseMod {
     @JSImport("rmc-calendar/lib/DatePicker.base", "default.defaultProps")
     @js.native
     def defaultProps: PropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -89,20 +88,16 @@ object datePickerBaseMod {
   }
   object StateType {
     
-    @scala.inline
-    def apply(months: js.Array[MonthData]): StateType = {
+    inline def apply(months: js.Array[MonthData]): StateType = {
       val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateType]
     }
     
-    @scala.inline
-    implicit class StateTypeMutableBuilder[Self <: StateType] (val x: Self) extends AnyVal {
+    extension [Self <: StateType](x: Self) {
       
-      @scala.inline
-      def setMonths(value: js.Array[MonthData]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: js.Array[MonthData]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsVarargs(value: MonthData*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: MonthData*): Self = StObject.set(x, "months", js.Array(value :_*))
     }
   }
 }

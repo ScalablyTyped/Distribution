@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(md: MarkdownIt, config: Config): Unit = (^.asInstanceOf[js.Dynamic].apply(md.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(md: MarkdownIt, config: Config): Unit = (^.asInstanceOf[js.Dynamic].apply(md.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("markdown-it-link-attributes", JSImport.Namespace)
   @js.native
@@ -21,17 +20,14 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(attrs: StringDictionary[String]): Config = {
+    inline def apply(attrs: StringDictionary[String]): Config = {
       val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }
   }
 }

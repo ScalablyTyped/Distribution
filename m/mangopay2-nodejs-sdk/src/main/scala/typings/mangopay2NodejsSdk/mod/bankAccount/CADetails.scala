@@ -44,8 +44,7 @@ trait CADetails
 }
 object CADetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountNumber: String,
     BankName: String,
     BranchCode: String,
@@ -57,28 +56,20 @@ object CADetails {
     __obj.asInstanceOf[CADetails]
   }
   
-  @scala.inline
-  implicit class CADetailsMutableBuilder[Self <: CADetails] (val x: Self) extends AnyVal {
+  extension [Self <: CADetails](x: Self) {
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankName(value: String): Self = StObject.set(x, "BankName", value.asInstanceOf[js.Any])
+    inline def setBankName(value: String): Self = StObject.set(x, "BankName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchCode(value: String): Self = StObject.set(x, "BranchCode", value.asInstanceOf[js.Any])
+    inline def setBranchCode(value: String): Self = StObject.set(x, "BranchCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstitutionNumber(value: String): Self = StObject.set(x, "InstitutionNumber", value.asInstanceOf[js.Any])
+    inline def setInstitutionNumber(value: String): Self = StObject.set(x, "InstitutionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
+    inline def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CA): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: CA): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ trait ParametersProjectsDeleteCardEndpoint extends StObject {
 }
 object ParametersProjectsDeleteCardEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ProjectsDeleteCardEndpoint,
     request: ProjectsDeleteCardRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersProjectsDeleteCardEndpoint {
     __obj.asInstanceOf[ParametersProjectsDeleteCardEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersProjectsDeleteCardEndpointMutableBuilder[Self <: ParametersProjectsDeleteCardEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersProjectsDeleteCardEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ProjectsDeleteCardEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ProjectsDeleteCardEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ProjectsDeleteCardRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ProjectsDeleteCardRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

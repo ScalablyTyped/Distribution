@@ -21,34 +21,25 @@ trait MapTypeControlOptions extends StObject {
 }
 object MapTypeControlOptions {
   
-  @scala.inline
-  def apply(): MapTypeControlOptions = {
+  inline def apply(): MapTypeControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapTypeControlOptions]
   }
   
-  @scala.inline
-  implicit class MapTypeControlOptionsMutableBuilder[Self <: MapTypeControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapTypeControlOptions](x: Self) {
     
-    @scala.inline
-    def setMapTypeIds(value: js.Array[MapTypeId | String]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
+    inline def setMapTypeIds(value: js.Array[MapTypeId | String]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapTypeIdsUndefined: Self = StObject.set(x, "mapTypeIds", js.undefined)
+    inline def setMapTypeIdsUndefined: Self = StObject.set(x, "mapTypeIds", js.undefined)
     
-    @scala.inline
-    def setMapTypeIdsVarargs(value: (MapTypeId | String)*): Self = StObject.set(x, "mapTypeIds", js.Array(value :_*))
+    inline def setMapTypeIdsVarargs(value: (MapTypeId | String)*): Self = StObject.set(x, "mapTypeIds", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setStyle(value: MapTypeControlStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: MapTypeControlStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

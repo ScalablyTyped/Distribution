@@ -8,11 +8,9 @@ object maximMazurokGapiClientAbusiveexperiencereportStrings {
   
   @js.native
   sealed trait abusiveexperiencereport extends StObject
-  @scala.inline
-  def abusiveexperiencereport: abusiveexperiencereport = "abusiveexperiencereport".asInstanceOf[abusiveexperiencereport]
+  inline def abusiveexperiencereport: abusiveexperiencereport = "abusiveexperiencereport".asInstanceOf[abusiveexperiencereport]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

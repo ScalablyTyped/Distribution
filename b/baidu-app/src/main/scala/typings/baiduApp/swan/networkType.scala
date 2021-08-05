@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait networkType extends StObject
 object networkType {
   
-  @scala.inline
-  def `2g`: typings.baiduApp.baiduAppStrings.`2g` = "2g".asInstanceOf[typings.baiduApp.baiduAppStrings.`2g`]
+  inline def `2g`: typings.baiduApp.baiduAppStrings.`2g` = "2g".asInstanceOf[typings.baiduApp.baiduAppStrings.`2g`]
   
-  @scala.inline
-  def `3g`: typings.baiduApp.baiduAppStrings.`3g` = "3g".asInstanceOf[typings.baiduApp.baiduAppStrings.`3g`]
+  inline def `3g`: typings.baiduApp.baiduAppStrings.`3g` = "3g".asInstanceOf[typings.baiduApp.baiduAppStrings.`3g`]
   
-  @scala.inline
-  def `4g`: typings.baiduApp.baiduAppStrings.`4g` = "4g".asInstanceOf[typings.baiduApp.baiduAppStrings.`4g`]
+  inline def `4g`: typings.baiduApp.baiduAppStrings.`4g` = "4g".asInstanceOf[typings.baiduApp.baiduAppStrings.`4g`]
   
-  @scala.inline
-  def none: typings.baiduApp.baiduAppStrings.none = "none".asInstanceOf[typings.baiduApp.baiduAppStrings.none]
+  inline def none: typings.baiduApp.baiduAppStrings.none = "none".asInstanceOf[typings.baiduApp.baiduAppStrings.none]
   
-  @scala.inline
-  def unknown: typings.baiduApp.baiduAppStrings.unknown = "unknown".asInstanceOf[typings.baiduApp.baiduAppStrings.unknown]
+  inline def unknown: typings.baiduApp.baiduAppStrings.unknown = "unknown".asInstanceOf[typings.baiduApp.baiduAppStrings.unknown]
   
-  @scala.inline
-  def wifi: typings.baiduApp.baiduAppStrings.wifi = "wifi".asInstanceOf[typings.baiduApp.baiduAppStrings.wifi]
+  inline def wifi: typings.baiduApp.baiduAppStrings.wifi = "wifi".asInstanceOf[typings.baiduApp.baiduAppStrings.wifi]
 }

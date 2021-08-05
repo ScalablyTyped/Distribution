@@ -23,31 +23,23 @@ trait PurchaseOfferingRequest extends StObject {
 }
 object PurchaseOfferingRequest {
   
-  @scala.inline
-  def apply(): PurchaseOfferingRequest = {
+  inline def apply(): PurchaseOfferingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurchaseOfferingRequest]
   }
   
-  @scala.inline
-  implicit class PurchaseOfferingRequestMutableBuilder[Self <: PurchaseOfferingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseOfferingRequest](x: Self) {
     
-    @scala.inline
-    def setOfferingId(value: OfferingIdentifier): Self = StObject.set(x, "offeringId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: OfferingIdentifier): Self = StObject.set(x, "offeringId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingIdUndefined: Self = StObject.set(x, "offeringId", js.undefined)
+    inline def setOfferingIdUndefined: Self = StObject.set(x, "offeringId", js.undefined)
     
-    @scala.inline
-    def setOfferingPromotionId(value: OfferingPromotionIdentifier): Self = StObject.set(x, "offeringPromotionId", value.asInstanceOf[js.Any])
+    inline def setOfferingPromotionId(value: OfferingPromotionIdentifier): Self = StObject.set(x, "offeringPromotionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingPromotionIdUndefined: Self = StObject.set(x, "offeringPromotionId", js.undefined)
+    inline def setOfferingPromotionIdUndefined: Self = StObject.set(x, "offeringPromotionId", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

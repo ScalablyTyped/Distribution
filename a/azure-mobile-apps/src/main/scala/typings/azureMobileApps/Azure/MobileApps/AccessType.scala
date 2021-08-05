@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessType extends StObject
 object AccessType {
   
-  @scala.inline
-  def anonymous: typings.azureMobileApps.azureMobileAppsStrings.anonymous = "anonymous".asInstanceOf[typings.azureMobileApps.azureMobileAppsStrings.anonymous]
+  inline def anonymous: typings.azureMobileApps.azureMobileAppsStrings.anonymous = "anonymous".asInstanceOf[typings.azureMobileApps.azureMobileAppsStrings.anonymous]
   
-  @scala.inline
-  def authenticated: typings.azureMobileApps.azureMobileAppsStrings.authenticated = "authenticated".asInstanceOf[typings.azureMobileApps.azureMobileAppsStrings.authenticated]
+  inline def authenticated: typings.azureMobileApps.azureMobileAppsStrings.authenticated = "authenticated".asInstanceOf[typings.azureMobileApps.azureMobileAppsStrings.authenticated]
   
-  @scala.inline
-  def disabled: typings.azureMobileApps.azureMobileAppsStrings.disabled = "disabled".asInstanceOf[typings.azureMobileApps.azureMobileAppsStrings.disabled]
+  inline def disabled: typings.azureMobileApps.azureMobileAppsStrings.disabled = "disabled".asInstanceOf[typings.azureMobileApps.azureMobileAppsStrings.disabled]
 }

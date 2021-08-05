@@ -14,19 +14,15 @@ trait Rsaprvkey extends StObject {
 }
 object Rsaprvkey {
   
-  @scala.inline
-  def apply(rsaprvkey: RSAKey, tbsobj: TBSCertList): Rsaprvkey = {
+  inline def apply(rsaprvkey: RSAKey, tbsobj: TBSCertList): Rsaprvkey = {
     val __obj = js.Dynamic.literal(rsaprvkey = rsaprvkey.asInstanceOf[js.Any], tbsobj = tbsobj.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rsaprvkey]
   }
   
-  @scala.inline
-  implicit class RsaprvkeyMutableBuilder[Self <: Rsaprvkey] (val x: Self) extends AnyVal {
+  extension [Self <: Rsaprvkey](x: Self) {
     
-    @scala.inline
-    def setRsaprvkey(value: RSAKey): Self = StObject.set(x, "rsaprvkey", value.asInstanceOf[js.Any])
+    inline def setRsaprvkey(value: RSAKey): Self = StObject.set(x, "rsaprvkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTbsobj(value: TBSCertList): Self = StObject.set(x, "tbsobj", value.asInstanceOf[js.Any])
+    inline def setTbsobj(value: TBSCertList): Self = StObject.set(x, "tbsobj", value.asInstanceOf[js.Any])
   }
 }

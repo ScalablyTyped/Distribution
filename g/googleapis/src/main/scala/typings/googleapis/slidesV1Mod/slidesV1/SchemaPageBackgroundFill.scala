@@ -30,31 +30,23 @@ trait SchemaPageBackgroundFill extends StObject {
 }
 object SchemaPageBackgroundFill {
   
-  @scala.inline
-  def apply(): SchemaPageBackgroundFill = {
+  inline def apply(): SchemaPageBackgroundFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPageBackgroundFill]
   }
   
-  @scala.inline
-  implicit class SchemaPageBackgroundFillMutableBuilder[Self <: SchemaPageBackgroundFill] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPageBackgroundFill](x: Self) {
     
-    @scala.inline
-    def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+    inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+    inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
     
-    @scala.inline
-    def setSolidFill(value: SchemaSolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+    inline def setSolidFill(value: SchemaSolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+    inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
     
-    @scala.inline
-    def setStretchedPictureFill(value: SchemaStretchedPictureFill): Self = StObject.set(x, "stretchedPictureFill", value.asInstanceOf[js.Any])
+    inline def setStretchedPictureFill(value: SchemaStretchedPictureFill): Self = StObject.set(x, "stretchedPictureFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchedPictureFillUndefined: Self = StObject.set(x, "stretchedPictureFill", js.undefined)
+    inline def setStretchedPictureFillUndefined: Self = StObject.set(x, "stretchedPictureFill", js.undefined)
   }
 }

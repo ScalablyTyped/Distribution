@@ -18,31 +18,23 @@ trait KernelCapabilities extends StObject {
 }
 object KernelCapabilities {
   
-  @scala.inline
-  def apply(): KernelCapabilities = {
+  inline def apply(): KernelCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KernelCapabilities]
   }
   
-  @scala.inline
-  implicit class KernelCapabilitiesMutableBuilder[Self <: KernelCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: KernelCapabilities](x: Self) {
     
-    @scala.inline
-    def setAdd(value: StringList): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: StringList): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value :_*))
+    inline def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value :_*))
     
-    @scala.inline
-    def setDrop(value: StringList): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: StringList): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setDropVarargs(value: String*): Self = StObject.set(x, "drop", js.Array(value :_*))
+    inline def setDropVarargs(value: String*): Self = StObject.set(x, "drop", js.Array(value :_*))
   }
 }

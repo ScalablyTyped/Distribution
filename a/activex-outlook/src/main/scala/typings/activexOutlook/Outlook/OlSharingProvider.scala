@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSharingProvider extends StObject
 object OlSharingProvider {
   
-  @scala.inline
-  def olProviderExchange: `1` = 1.asInstanceOf[`1`]
+  inline def olProviderExchange: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olProviderFederate: `7` = 7.asInstanceOf[`7`]
+  inline def olProviderFederate: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def olProviderICal: `4` = 4.asInstanceOf[`4`]
+  inline def olProviderICal: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olProviderPubCal: `3` = 3.asInstanceOf[`3`]
+  inline def olProviderPubCal: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olProviderRSS: `6` = 6.asInstanceOf[`6`]
+  inline def olProviderRSS: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def olProviderSharePoint: `5` = 5.asInstanceOf[`5`]
+  inline def olProviderSharePoint: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olProviderUnknown: `0` = 0.asInstanceOf[`0`]
+  inline def olProviderUnknown: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olProviderWebCal: `2` = 2.asInstanceOf[`2`]
+  inline def olProviderWebCal: `2` = 2.asInstanceOf[`2`]
 }

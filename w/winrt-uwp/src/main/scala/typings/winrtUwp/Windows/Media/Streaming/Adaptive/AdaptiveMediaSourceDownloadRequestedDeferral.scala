@@ -12,16 +12,13 @@ trait AdaptiveMediaSourceDownloadRequestedDeferral extends StObject {
 }
 object AdaptiveMediaSourceDownloadRequestedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): AdaptiveMediaSourceDownloadRequestedDeferral = {
+  inline def apply(complete: () => Unit): AdaptiveMediaSourceDownloadRequestedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadRequestedDeferral]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourceDownloadRequestedDeferralMutableBuilder[Self <: AdaptiveMediaSourceDownloadRequestedDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourceDownloadRequestedDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

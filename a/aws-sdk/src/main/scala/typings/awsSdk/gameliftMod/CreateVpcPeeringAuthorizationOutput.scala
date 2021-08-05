@@ -13,19 +13,15 @@ trait CreateVpcPeeringAuthorizationOutput extends StObject {
 }
 object CreateVpcPeeringAuthorizationOutput {
   
-  @scala.inline
-  def apply(): CreateVpcPeeringAuthorizationOutput = {
+  inline def apply(): CreateVpcPeeringAuthorizationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVpcPeeringAuthorizationOutput]
   }
   
-  @scala.inline
-  implicit class CreateVpcPeeringAuthorizationOutputMutableBuilder[Self <: CreateVpcPeeringAuthorizationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVpcPeeringAuthorizationOutput](x: Self) {
     
-    @scala.inline
-    def setVpcPeeringAuthorization(value: VpcPeeringAuthorization): Self = StObject.set(x, "VpcPeeringAuthorization", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringAuthorization(value: VpcPeeringAuthorization): Self = StObject.set(x, "VpcPeeringAuthorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringAuthorizationUndefined: Self = StObject.set(x, "VpcPeeringAuthorization", js.undefined)
+    inline def setVpcPeeringAuthorizationUndefined: Self = StObject.set(x, "VpcPeeringAuthorization", js.undefined)
   }
 }

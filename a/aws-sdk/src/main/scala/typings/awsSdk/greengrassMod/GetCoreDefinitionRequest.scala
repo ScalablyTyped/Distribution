@@ -13,16 +13,13 @@ trait GetCoreDefinitionRequest extends StObject {
 }
 object GetCoreDefinitionRequest {
   
-  @scala.inline
-  def apply(CoreDefinitionId: string): GetCoreDefinitionRequest = {
+  inline def apply(CoreDefinitionId: string): GetCoreDefinitionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCoreDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class GetCoreDefinitionRequestMutableBuilder[Self <: GetCoreDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCoreDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
+    inline def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
   }
 }

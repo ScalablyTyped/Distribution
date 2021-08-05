@@ -19,8 +19,7 @@ trait SearchBetweennessResult extends StObject {
 }
 object SearchBetweennessResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     betweenness: NodeSingular => Double,
     betweennessNormalised: NodeSingular => Double,
     betweennessNormalized: NodeSingular => Double
@@ -29,16 +28,12 @@ object SearchBetweennessResult {
     __obj.asInstanceOf[SearchBetweennessResult]
   }
   
-  @scala.inline
-  implicit class SearchBetweennessResultMutableBuilder[Self <: SearchBetweennessResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBetweennessResult](x: Self) {
     
-    @scala.inline
-    def setBetweenness(value: NodeSingular => Double): Self = StObject.set(x, "betweenness", js.Any.fromFunction1(value))
+    inline def setBetweenness(value: NodeSingular => Double): Self = StObject.set(x, "betweenness", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBetweennessNormalised(value: NodeSingular => Double): Self = StObject.set(x, "betweennessNormalised", js.Any.fromFunction1(value))
+    inline def setBetweennessNormalised(value: NodeSingular => Double): Self = StObject.set(x, "betweennessNormalised", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBetweennessNormalized(value: NodeSingular => Double): Self = StObject.set(x, "betweennessNormalized", js.Any.fromFunction1(value))
+    inline def setBetweennessNormalized(value: NodeSingular => Double): Self = StObject.set(x, "betweennessNormalized", js.Any.fromFunction1(value))
   }
 }

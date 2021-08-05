@@ -425,8 +425,7 @@ object mod {
   @js.native
   val ActionBar: FunctionComponent[ActionBarProps] = js.native
   
-  @scala.inline
-  def AddonPanel(hasActiveChildren: AddonPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AddonPanel")(hasActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AddonPanel(hasActiveChildren: AddonPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AddonPanel")(hasActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/components", "ArgsTable")
   @js.native
@@ -519,10 +518,8 @@ object mod {
   /* Inlined @emotion/styled-base.@emotion/styled-base.StyledComponent<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, std.Pick<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'name' | 'method' | 'target' | 'acceptCharset' | 'action' | 'autoComplete' | 'encType' | 'noValidate'>, @storybook/theming.@storybook/theming.Theme> & {  Field :react.react.FunctionComponent<@storybook/components.@storybook/components/dist/form/field/field.FieldProps>,   Input :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<std.Pick<react.react.HTMLProps<std.HTMLInputElement>, 'color' | 'content' | 'translate' | 'width' | 'default' | 'hidden' | 'ref' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, 'color' | 'content' | 'height' | 'translate' | 'width' | 'default' | 'hidden' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'size' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'valid' | 'align' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & react.react.RefAttributes<any>, @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Select :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'multiple' | 'autoComplete' | 'required'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, std.Pick<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'multiple' | 'autoComplete' | 'required'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Textarea :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Button :react.react.FunctionComponent<any>} */
   object Form {
     
-    @scala.inline
-    def apply(props: PropsWithChildrenDetailed): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildrenDetailed, context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildrenDetailed): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildrenDetailed, context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/components", "Form")
     @js.native
@@ -531,72 +528,60 @@ object mod {
     @JSImport("@storybook/components", "Form.Button")
     @js.native
     def Button: FunctionComponent[js.Any] = js.native
-    @scala.inline
-    def Button_=(x: FunctionComponent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+    inline def Button_=(x: FunctionComponent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.Field")
     @js.native
     def Field: FunctionComponent[FieldProps] = js.native
-    @scala.inline
-    def Field_=(x: FunctionComponent[FieldProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Field")(x.asInstanceOf[js.Any])
+    inline def Field_=(x: FunctionComponent[FieldProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Field")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.Input")
     @js.native
     def Input: StyledComponentPickPickHT = js.native
-    @scala.inline
-    def Input_=(x: StyledComponentPickPickHT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
+    inline def Input_=(x: StyledComponentPickPickHT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.Select")
     @js.native
     def Select: StyledComponentPickSelect = js.native
-    @scala.inline
-    def Select_=(x: StyledComponentPickSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Select")(x.asInstanceOf[js.Any])
+    inline def Select_=(x: StyledComponentPickSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Select")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.Textarea")
     @js.native
     def Textarea: StyledComponentPickanycol = js.native
-    @scala.inline
-    def Textarea_=(x: StyledComponentPickanycol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Textarea")(x.asInstanceOf[js.Any])
+    inline def Textarea_=(x: StyledComponentPickanycol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Textarea")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialDetailedHTMLPropsF] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialDetailedHTMLPropsF]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialDetailedHTMLPropsF]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.__emotion_styles")
     @js.native
     def emotionStyles: js.Any = js.native
     
-    @scala.inline
-    def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
+    inline def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Form.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapDetailed] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapDetailed]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapDetailed]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme]]
     
     /**
       * @desc this method is type-unsafe
       */
-    @scala.inline
-    def withComponent_a(tag: a): StyledComponent[
+    inline def withComponent_a(tag: a): StyledComponent[
         DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -606,8 +591,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_abbr(tag: abbr): StyledComponent[
+    inline def withComponent_abbr(tag: abbr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -617,8 +601,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_address(tag: address): StyledComponent[
+    inline def withComponent_address(tag: address): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -628,17 +611,13 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_area(tag: area): StyledComponent[
+    inline def withComponent_area(tag: area): StyledComponent[
         DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -648,8 +627,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_article(tag: article): StyledComponent[
+    inline def withComponent_article(tag: article): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -659,8 +637,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_aside(tag: aside): StyledComponent[
+    inline def withComponent_aside(tag: aside): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -670,8 +647,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_audio(tag: audio): StyledComponent[
+    inline def withComponent_audio(tag: audio): StyledComponent[
         DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -681,8 +657,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_b(tag: b): StyledComponent[
+    inline def withComponent_b(tag: b): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -692,8 +667,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_base(tag: base): StyledComponent[
+    inline def withComponent_base(tag: base): StyledComponent[
         DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -703,8 +677,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_bdi(tag: bdi): StyledComponent[
+    inline def withComponent_bdi(tag: bdi): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -714,8 +687,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_bdo(tag: bdo): StyledComponent[
+    inline def withComponent_bdo(tag: bdo): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -725,8 +697,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_big(tag: big): StyledComponent[
+    inline def withComponent_big(tag: big): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -736,8 +707,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_blockquote(tag: blockquote): StyledComponent[
+    inline def withComponent_blockquote(tag: blockquote): StyledComponent[
         DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -747,8 +717,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_body(tag: body): StyledComponent[
+    inline def withComponent_body(tag: body): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -758,8 +727,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_br(tag: br): StyledComponent[
+    inline def withComponent_br(tag: br): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -769,8 +737,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_button(tag: button): StyledComponent[
+    inline def withComponent_button(tag: button): StyledComponent[
         DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -780,8 +747,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_canvas(tag: canvas): StyledComponent[
+    inline def withComponent_canvas(tag: canvas): StyledComponent[
         DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -791,8 +757,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_caption(tag: caption): StyledComponent[
+    inline def withComponent_caption(tag: caption): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -802,11 +767,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_cite(tag: cite): StyledComponent[
+    inline def withComponent_cite(tag: cite): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -816,11 +779,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_code(tag: code): StyledComponent[
+    inline def withComponent_code(tag: code): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -830,8 +791,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_col(tag: col): StyledComponent[
+    inline def withComponent_col(tag: col): StyledComponent[
         DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -841,8 +801,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_colgroup(tag: colgroup): StyledComponent[
+    inline def withComponent_colgroup(tag: colgroup): StyledComponent[
         DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -852,8 +811,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_data(tag: data): StyledComponent[
+    inline def withComponent_data(tag: data): StyledComponent[
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -863,8 +821,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_datalist(tag: datalist): StyledComponent[
+    inline def withComponent_datalist(tag: datalist): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -874,8 +831,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dd(tag: dd): StyledComponent[
+    inline def withComponent_dd(tag: dd): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -885,11 +841,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_del(tag: del): StyledComponent[
+    inline def withComponent_del(tag: del): StyledComponent[
         DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -899,11 +853,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_details(tag: details): StyledComponent[
+    inline def withComponent_details(tag: details): StyledComponent[
         DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -913,8 +865,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dfn(tag: dfn): StyledComponent[
+    inline def withComponent_dfn(tag: dfn): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -924,8 +875,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dialog(tag: dialog): StyledComponent[
+    inline def withComponent_dialog(tag: dialog): StyledComponent[
         DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -935,8 +885,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_div(tag: div): StyledComponent[
+    inline def withComponent_div(tag: div): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -946,8 +895,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dl(tag: dl): StyledComponent[
+    inline def withComponent_dl(tag: dl): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -957,8 +905,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dt(tag: dt): StyledComponent[
+    inline def withComponent_dt(tag: dt): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -968,11 +915,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_em(tag: em): StyledComponent[
+    inline def withComponent_em(tag: em): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -982,8 +927,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_embed(tag: embed): StyledComponent[
+    inline def withComponent_embed(tag: embed): StyledComponent[
         DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -993,83 +937,57 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_fieldset(tag: fieldset): StyledComponent[
+    inline def withComponent_fieldset(tag: fieldset): StyledComponent[
         DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1079,8 +997,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_figcaption(tag: figcaption): StyledComponent[
+    inline def withComponent_figcaption(tag: figcaption): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1090,8 +1007,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_figure(tag: figure): StyledComponent[
+    inline def withComponent_figure(tag: figure): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1101,11 +1017,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_footer(tag: footer): StyledComponent[
+    inline def withComponent_footer(tag: footer): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1115,11 +1029,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_form(tag: form): StyledComponent[
+    inline def withComponent_form(tag: form): StyledComponent[
         DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1129,11 +1041,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_h1(tag: h1): StyledComponent[
+    inline def withComponent_h1(tag: h1): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1143,8 +1053,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h2(tag: h2): StyledComponent[
+    inline def withComponent_h2(tag: h2): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1154,8 +1063,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h3(tag: h3): StyledComponent[
+    inline def withComponent_h3(tag: h3): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1165,8 +1073,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h4(tag: h4): StyledComponent[
+    inline def withComponent_h4(tag: h4): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1176,8 +1083,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h5(tag: h5): StyledComponent[
+    inline def withComponent_h5(tag: h5): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1187,8 +1093,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h6(tag: h6): StyledComponent[
+    inline def withComponent_h6(tag: h6): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1198,8 +1103,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_head(tag: head): StyledComponent[
+    inline def withComponent_head(tag: head): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1209,8 +1113,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_header(tag: header): StyledComponent[
+    inline def withComponent_header(tag: header): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1220,8 +1123,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_hgroup(tag: hgroup): StyledComponent[
+    inline def withComponent_hgroup(tag: hgroup): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1231,8 +1133,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_hr(tag: hr): StyledComponent[
+    inline def withComponent_hr(tag: hr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1242,8 +1143,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_html(tag: html): StyledComponent[
+    inline def withComponent_html(tag: html): StyledComponent[
         DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1253,8 +1153,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_i(tag: i): StyledComponent[
+    inline def withComponent_i(tag: i): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1264,8 +1163,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_iframe(tag: iframe): StyledComponent[
+    inline def withComponent_iframe(tag: iframe): StyledComponent[
         DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1275,11 +1173,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_img(tag: img): StyledComponent[
+    inline def withComponent_img(tag: img): StyledComponent[
         DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1289,8 +1185,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_input(tag: input): StyledComponent[
+    inline def withComponent_input(tag: input): StyledComponent[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1300,8 +1195,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ins(tag: ins): StyledComponent[
+    inline def withComponent_ins(tag: ins): StyledComponent[
         DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1311,8 +1205,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_kbd(tag: kbd): StyledComponent[
+    inline def withComponent_kbd(tag: kbd): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1322,8 +1215,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_keygen(tag: keygen): StyledComponent[
+    inline def withComponent_keygen(tag: keygen): StyledComponent[
         DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1333,8 +1225,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_label(tag: label): StyledComponent[
+    inline def withComponent_label(tag: label): StyledComponent[
         DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1344,8 +1235,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_legend(tag: legend): StyledComponent[
+    inline def withComponent_legend(tag: legend): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1355,8 +1245,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_li(tag: li): StyledComponent[
+    inline def withComponent_li(tag: li): StyledComponent[
         DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1366,14 +1255,11 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_link(tag: link): StyledComponent[
+    inline def withComponent_link(tag: link): StyledComponent[
         DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1383,8 +1269,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_main(tag: main): StyledComponent[
+    inline def withComponent_main(tag: main): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1394,8 +1279,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_map(tag: map): StyledComponent[
+    inline def withComponent_map(tag: map): StyledComponent[
         DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1405,8 +1289,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_mark(tag: mark): StyledComponent[
+    inline def withComponent_mark(tag: mark): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1416,14 +1299,11 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_menu(tag: menu): StyledComponent[
+    inline def withComponent_menu(tag: menu): StyledComponent[
         DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1433,8 +1313,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_menuitem(tag: menuitem): StyledComponent[
+    inline def withComponent_menuitem(tag: menuitem): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1444,8 +1323,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_meta(tag: meta): StyledComponent[
+    inline def withComponent_meta(tag: meta): StyledComponent[
         DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1455,11 +1333,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_meter(tag: meter): StyledComponent[
+    inline def withComponent_meter(tag: meter): StyledComponent[
         DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1469,11 +1345,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_nav(tag: nav): StyledComponent[
+    inline def withComponent_nav(tag: nav): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1483,8 +1357,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_noindex(tag: noindex): StyledComponent[
+    inline def withComponent_noindex(tag: noindex): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1494,8 +1367,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_noscript(tag: noscript): StyledComponent[
+    inline def withComponent_noscript(tag: noscript): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1505,8 +1377,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_object(tag: `object`): StyledComponent[
+    inline def withComponent_object(tag: `object`): StyledComponent[
         DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1516,8 +1387,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ol(tag: ol): StyledComponent[
+    inline def withComponent_ol(tag: ol): StyledComponent[
         DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1527,8 +1397,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_optgroup(tag: optgroup): StyledComponent[
+    inline def withComponent_optgroup(tag: optgroup): StyledComponent[
         DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1538,8 +1407,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_option(tag: option): StyledComponent[
+    inline def withComponent_option(tag: option): StyledComponent[
         DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1549,8 +1417,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_output(tag: output): StyledComponent[
+    inline def withComponent_output(tag: output): StyledComponent[
         DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1560,8 +1427,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_p(tag: p): StyledComponent[
+    inline def withComponent_p(tag: p): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1571,8 +1437,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_param(tag: param): StyledComponent[
+    inline def withComponent_param(tag: param): StyledComponent[
         DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1582,14 +1447,11 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_picture(tag: picture): StyledComponent[
+    inline def withComponent_picture(tag: picture): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1599,14 +1461,11 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_pre(tag: pre): StyledComponent[
+    inline def withComponent_pre(tag: pre): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1616,8 +1475,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_progress(tag: progress): StyledComponent[
+    inline def withComponent_progress(tag: progress): StyledComponent[
         DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1627,8 +1485,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_q(tag: q): StyledComponent[
+    inline def withComponent_q(tag: q): StyledComponent[
         DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1638,14 +1495,11 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_rp(tag: rp): StyledComponent[
+    inline def withComponent_rp(tag: rp): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1655,8 +1509,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_rt(tag: rt): StyledComponent[
+    inline def withComponent_rt(tag: rt): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1666,8 +1519,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ruby(tag: ruby): StyledComponent[
+    inline def withComponent_ruby(tag: ruby): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1677,8 +1529,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_s(tag: s): StyledComponent[
+    inline def withComponent_s(tag: s): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1688,8 +1539,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_samp(tag: samp): StyledComponent[
+    inline def withComponent_samp(tag: samp): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1699,8 +1549,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_script(tag: script): StyledComponent[
+    inline def withComponent_script(tag: script): StyledComponent[
         DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1710,8 +1559,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_section(tag: section): StyledComponent[
+    inline def withComponent_section(tag: section): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1721,8 +1569,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_select(tag: select): StyledComponent[
+    inline def withComponent_select(tag: select): StyledComponent[
         DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1732,8 +1579,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_slot(tag: slot): StyledComponent[
+    inline def withComponent_slot(tag: slot): StyledComponent[
         DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1743,8 +1589,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_small(tag: small): StyledComponent[
+    inline def withComponent_small(tag: small): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1754,8 +1599,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_source(tag: source): StyledComponent[
+    inline def withComponent_source(tag: source): StyledComponent[
         DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1765,8 +1609,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_span(tag: span): StyledComponent[
+    inline def withComponent_span(tag: span): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1776,11 +1619,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_strong(tag: strong): StyledComponent[
+    inline def withComponent_strong(tag: strong): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1790,8 +1631,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_style(tag: style): StyledComponent[
+    inline def withComponent_style(tag: style): StyledComponent[
         DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1801,8 +1641,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_sub(tag: sub): StyledComponent[
+    inline def withComponent_sub(tag: sub): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1812,8 +1651,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_summary(tag: summary): StyledComponent[
+    inline def withComponent_summary(tag: summary): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1823,8 +1661,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_sup(tag: sup): StyledComponent[
+    inline def withComponent_sup(tag: sup): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1834,17 +1671,13 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_table(tag: table): StyledComponent[
+    inline def withComponent_table(tag: table): StyledComponent[
         DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1854,8 +1687,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tbody(tag: tbody): StyledComponent[
+    inline def withComponent_tbody(tag: tbody): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1865,8 +1697,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_td(tag: td): StyledComponent[
+    inline def withComponent_td(tag: td): StyledComponent[
         DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1876,8 +1707,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_template(tag: template): StyledComponent[
+    inline def withComponent_template(tag: template): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1887,14 +1717,11 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_textarea(tag: textarea): StyledComponent[
+    inline def withComponent_textarea(tag: textarea): StyledComponent[
         DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1904,8 +1731,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tfoot(tag: tfoot): StyledComponent[
+    inline def withComponent_tfoot(tag: tfoot): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1915,8 +1741,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_th(tag: th): StyledComponent[
+    inline def withComponent_th(tag: th): StyledComponent[
         DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1926,8 +1751,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_thead(tag: thead): StyledComponent[
+    inline def withComponent_thead(tag: thead): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1937,8 +1761,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_time(tag: time): StyledComponent[
+    inline def withComponent_time(tag: time): StyledComponent[
         DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1948,8 +1771,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_title(tag: title): StyledComponent[
+    inline def withComponent_title(tag: title): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1959,8 +1781,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tr(tag: tr): StyledComponent[
+    inline def withComponent_tr(tag: tr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1970,8 +1791,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_track(tag: track): StyledComponent[
+    inline def withComponent_track(tag: track): StyledComponent[
         DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1981,11 +1801,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_u(tag: u): StyledComponent[
+    inline def withComponent_u(tag: u): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -1995,8 +1813,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ul(tag: ul): StyledComponent[
+    inline def withComponent_ul(tag: ul): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -2006,11 +1823,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_var(tag: `var`): StyledComponent[
+    inline def withComponent_var(tag: `var`): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -2020,8 +1835,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_video(tag: video): StyledComponent[
+    inline def withComponent_video(tag: video): StyledComponent[
         DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -2031,11 +1845,9 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme]]
+    inline def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme]]
     
-    @scala.inline
-    def withComponent_wbr(tag: wbr): StyledComponent[
+    inline def withComponent_wbr(tag: wbr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -2045,8 +1857,7 @@ object mod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_webview(tag: webview): StyledComponent[
+    inline def withComponent_webview(tag: webview): StyledComponent[
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         PickDetailedHTMLPropsForm, 
         Theme
@@ -2101,8 +1912,7 @@ object mod {
     ]
   ] = js.native
   
-  @scala.inline
-  def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
+  inline def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
   
   @JSImport("@storybook/components", "NumberControl")
   @js.native
@@ -2254,8 +2064,7 @@ object mod {
     @JSImport("@storybook/components", "TabsState.defaultProps")
     @js.native
     def defaultProps: TabsStateProps = js.native
-    @scala.inline
-    def defaultProps_=(x: TabsStateProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: TabsStateProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/components", "TextControl")
@@ -2299,8 +2108,7 @@ object mod {
     @JSImport("@storybook/components", "Zoom.Element")
     @js.native
     def Element: js.Function1[/* hasScaleChildren */ ZoomProps, typings.react.mod.global.JSX.Element] = js.native
-    @scala.inline
-    def Element_=(x: js.Function1[/* hasScaleChildren */ ZoomProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
+    inline def Element_=(x: js.Function1[/* hasScaleChildren */ ZoomProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components", "Zoom.IFrame")
     @js.native
@@ -2311,16 +2119,12 @@ object mod {
     @js.native
     class IFrameCls () extends ZoomIFrame
     
-    @scala.inline
-    def IFrame_=(x: Instantiable0[ZoomIFrame]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IFrame")(x.asInstanceOf[js.Any])
+    inline def IFrame_=(x: Instantiable0[ZoomIFrame]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IFrame")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def format(value: NumberValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(value: NumberValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interleaveSeparators(list: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interleaveSeparators")(list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def interleaveSeparators(list: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interleaveSeparators")(list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parse(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def parse(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

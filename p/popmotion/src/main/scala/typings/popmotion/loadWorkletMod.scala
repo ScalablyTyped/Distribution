@@ -10,9 +10,7 @@ object loadWorkletMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def whenWorkletReady(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenWorkletReady")().asInstanceOf[js.Promise[js.Any]]
+  inline def whenWorkletReady(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenWorkletReady")().asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def workletReady(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("workletReady")().asInstanceOf[Unit]
+  inline def workletReady(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("workletReady")().asInstanceOf[Unit]
 }

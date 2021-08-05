@@ -18,8 +18,7 @@ trait ParametersGistsUpdateEndpoint extends StObject {
 }
 object ParametersGistsUpdateEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GistsUpdateEndpoint,
     request: GistsUpdateRequestOptions,
     response: OctokitResponse[GistsUpdateResponseData]
@@ -28,16 +27,12 @@ object ParametersGistsUpdateEndpoint {
     __obj.asInstanceOf[ParametersGistsUpdateEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGistsUpdateEndpointMutableBuilder[Self <: ParametersGistsUpdateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGistsUpdateEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GistsUpdateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GistsUpdateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GistsUpdateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GistsUpdateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GistsUpdateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GistsUpdateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

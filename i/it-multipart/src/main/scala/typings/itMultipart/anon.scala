@@ -18,20 +18,16 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: AsyncIterable[Buffer] & (AsyncIterator[Buffer, js.Any, Unit]), headers: IncomingHttpHeaders): Body = {
+    inline def apply(body: AsyncIterable[Buffer] & (AsyncIterator[Buffer, js.Any, Unit]), headers: IncomingHttpHeaders): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: AsyncIterable[Buffer] & (AsyncIterator[Buffer, js.Any, Unit])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: AsyncIterable[Buffer] & (AsyncIterator[Buffer, js.Any, Unit])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -46,49 +46,35 @@ trait ParamsResourceRoleassignmentsList
 }
 object ParamsResourceRoleassignmentsList {
   
-  @scala.inline
-  def apply(): ParamsResourceRoleassignmentsList = {
+  inline def apply(): ParamsResourceRoleassignmentsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRoleassignmentsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRoleassignmentsListMutableBuilder[Self <: ParamsResourceRoleassignmentsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRoleassignmentsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+    inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
+    inline def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
-    @scala.inline
-    def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
+    inline def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
+    inline def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
   }
 }

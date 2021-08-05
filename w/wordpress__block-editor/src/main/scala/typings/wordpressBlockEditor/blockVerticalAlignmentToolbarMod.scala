@@ -33,23 +33,18 @@ object blockVerticalAlignmentToolbarMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onChange: Value => Unit): Props = {
+      inline def apply(onChange: Value => Unit): Props = {
         val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setOnChange(value: Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     

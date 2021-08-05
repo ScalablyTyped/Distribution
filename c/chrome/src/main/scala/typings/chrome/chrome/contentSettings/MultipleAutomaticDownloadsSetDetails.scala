@@ -16,16 +16,13 @@ trait MultipleAutomaticDownloadsSetDetails
 }
 object MultipleAutomaticDownloadsSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | ask): MultipleAutomaticDownloadsSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | ask): MultipleAutomaticDownloadsSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleAutomaticDownloadsSetDetails]
   }
   
-  @scala.inline
-  implicit class MultipleAutomaticDownloadsSetDetailsMutableBuilder[Self <: MultipleAutomaticDownloadsSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleAutomaticDownloadsSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

@@ -33,46 +33,33 @@ trait DeviceType extends StObject {
 }
 object DeviceType {
   
-  @scala.inline
-  def apply(): DeviceType = {
+  inline def apply(): DeviceType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceType]
   }
   
-  @scala.inline
-  implicit class DeviceTypeMutableBuilder[Self <: DeviceType] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceType](x: Self) {
     
-    @scala.inline
-    def setDeviceAttributes(value: AttributeListType): Self = StObject.set(x, "DeviceAttributes", value.asInstanceOf[js.Any])
+    inline def setDeviceAttributes(value: AttributeListType): Self = StObject.set(x, "DeviceAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceAttributesUndefined: Self = StObject.set(x, "DeviceAttributes", js.undefined)
+    inline def setDeviceAttributesUndefined: Self = StObject.set(x, "DeviceAttributes", js.undefined)
     
-    @scala.inline
-    def setDeviceAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "DeviceAttributes", js.Array(value :_*))
+    inline def setDeviceAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "DeviceAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDeviceCreateDate(value: DateType): Self = StObject.set(x, "DeviceCreateDate", value.asInstanceOf[js.Any])
+    inline def setDeviceCreateDate(value: DateType): Self = StObject.set(x, "DeviceCreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceCreateDateUndefined: Self = StObject.set(x, "DeviceCreateDate", js.undefined)
+    inline def setDeviceCreateDateUndefined: Self = StObject.set(x, "DeviceCreateDate", js.undefined)
     
-    @scala.inline
-    def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
+    inline def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceKeyUndefined: Self = StObject.set(x, "DeviceKey", js.undefined)
+    inline def setDeviceKeyUndefined: Self = StObject.set(x, "DeviceKey", js.undefined)
     
-    @scala.inline
-    def setDeviceLastAuthenticatedDate(value: DateType): Self = StObject.set(x, "DeviceLastAuthenticatedDate", value.asInstanceOf[js.Any])
+    inline def setDeviceLastAuthenticatedDate(value: DateType): Self = StObject.set(x, "DeviceLastAuthenticatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceLastAuthenticatedDateUndefined: Self = StObject.set(x, "DeviceLastAuthenticatedDate", js.undefined)
+    inline def setDeviceLastAuthenticatedDateUndefined: Self = StObject.set(x, "DeviceLastAuthenticatedDate", js.undefined)
     
-    @scala.inline
-    def setDeviceLastModifiedDate(value: DateType): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setDeviceLastModifiedDate(value: DateType): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
+    inline def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
   }
 }

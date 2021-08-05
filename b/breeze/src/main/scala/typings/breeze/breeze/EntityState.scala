@@ -22,8 +22,7 @@ trait EntityState
 }
 object EntityState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Added: EntityStateSymbol,
     Deleted: EntityStateSymbol,
     Detached: EntityStateSymbol,
@@ -38,22 +37,16 @@ object EntityState {
     __obj.asInstanceOf[EntityState]
   }
   
-  @scala.inline
-  implicit class EntityStateMutableBuilder[Self <: EntityState] (val x: Self) extends AnyVal {
+  extension [Self <: EntityState](x: Self) {
     
-    @scala.inline
-    def setAdded(value: EntityStateSymbol): Self = StObject.set(x, "Added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: EntityStateSymbol): Self = StObject.set(x, "Added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleted(value: EntityStateSymbol): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: EntityStateSymbol): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetached(value: EntityStateSymbol): Self = StObject.set(x, "Detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: EntityStateSymbol): Self = StObject.set(x, "Detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModified(value: EntityStateSymbol): Self = StObject.set(x, "Modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: EntityStateSymbol): Self = StObject.set(x, "Modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnchanged(value: EntityStateSymbol): Self = StObject.set(x, "Unchanged", value.asInstanceOf[js.Any])
+    inline def setUnchanged(value: EntityStateSymbol): Self = StObject.set(x, "Unchanged", value.asInstanceOf[js.Any])
   }
 }

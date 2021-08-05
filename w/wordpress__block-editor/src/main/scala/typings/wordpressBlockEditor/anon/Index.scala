@@ -12,22 +12,17 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(index: Double): Index = {
+  inline def apply(index: Double): Index = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootClientId(value: String): Self = StObject.set(x, "rootClientId", value.asInstanceOf[js.Any])
+    inline def setRootClientId(value: String): Self = StObject.set(x, "rootClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootClientIdUndefined: Self = StObject.set(x, "rootClientId", js.undefined)
+    inline def setRootClientIdUndefined: Self = StObject.set(x, "rootClientId", js.undefined)
   }
 }

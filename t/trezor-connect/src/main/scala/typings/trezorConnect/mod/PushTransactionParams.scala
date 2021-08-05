@@ -14,19 +14,15 @@ trait PushTransactionParams
 }
 object PushTransactionParams {
   
-  @scala.inline
-  def apply(coin: String, tx: String): PushTransactionParams = {
+  inline def apply(coin: String, tx: String): PushTransactionParams = {
     val __obj = js.Dynamic.literal(coin = coin.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushTransactionParams]
   }
   
-  @scala.inline
-  implicit class PushTransactionParamsMutableBuilder[Self <: PushTransactionParams] (val x: Self) extends AnyVal {
+  extension [Self <: PushTransactionParams](x: Self) {
     
-    @scala.inline
-    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
+    inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx(value: String): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
+    inline def setTx(value: String): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
   }
 }

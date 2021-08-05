@@ -26,20 +26,16 @@ object clearFixMod {
   }
   object ClearFixProps {
     
-    @scala.inline
-    def apply(): ClearFixProps = {
+    inline def apply(): ClearFixProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearFixProps]
     }
     
-    @scala.inline
-    implicit class ClearFixPropsMutableBuilder[Self <: ClearFixProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClearFixProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

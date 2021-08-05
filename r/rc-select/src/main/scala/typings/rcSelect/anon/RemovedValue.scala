@@ -13,22 +13,17 @@ trait RemovedValue[P /* <: RawValueType | js.Object */] extends StObject {
 }
 object RemovedValue {
   
-  @scala.inline
-  def apply[P /* <: RawValueType | js.Object */](removedValue: P, values: js.Array[P]): RemovedValue[P] = {
+  inline def apply[P /* <: RawValueType | js.Object */](removedValue: P, values: js.Array[P]): RemovedValue[P] = {
     val __obj = js.Dynamic.literal(removedValue = removedValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovedValue[P]]
   }
   
-  @scala.inline
-  implicit class RemovedValueMutableBuilder[Self <: RemovedValue[?], P /* <: RawValueType | js.Object */] (val x: Self & RemovedValue[P]) extends AnyVal {
+  extension [Self <: RemovedValue[?], P /* <: RawValueType | js.Object */](x: Self & RemovedValue[P]) {
     
-    @scala.inline
-    def setRemovedValue(value: P): Self = StObject.set(x, "removedValue", value.asInstanceOf[js.Any])
+    inline def setRemovedValue(value: P): Self = StObject.set(x, "removedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[P]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[P]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: P*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: P*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -24,25 +24,19 @@ trait SchemaSuggestedBullet extends StObject {
 }
 object SchemaSuggestedBullet {
   
-  @scala.inline
-  def apply(): SchemaSuggestedBullet = {
+  inline def apply(): SchemaSuggestedBullet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestedBullet]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestedBulletMutableBuilder[Self <: SchemaSuggestedBullet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestedBullet](x: Self) {
     
-    @scala.inline
-    def setBullet(value: SchemaBullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+    inline def setBullet(value: SchemaBullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletSuggestionState(value: SchemaBulletSuggestionState): Self = StObject.set(x, "bulletSuggestionState", value.asInstanceOf[js.Any])
+    inline def setBulletSuggestionState(value: SchemaBulletSuggestionState): Self = StObject.set(x, "bulletSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletSuggestionStateUndefined: Self = StObject.set(x, "bulletSuggestionState", js.undefined)
+    inline def setBulletSuggestionStateUndefined: Self = StObject.set(x, "bulletSuggestionState", js.undefined)
     
-    @scala.inline
-    def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+    inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
   }
 }

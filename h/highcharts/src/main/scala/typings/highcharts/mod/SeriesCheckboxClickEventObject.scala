@@ -29,26 +29,20 @@ trait SeriesCheckboxClickEventObject extends StObject {
 }
 object SeriesCheckboxClickEventObject {
   
-  @scala.inline
-  def apply(checked: Boolean, item: Series, target: Series): SeriesCheckboxClickEventObject = {
+  inline def apply(checked: Boolean, item: Series, target: Series): SeriesCheckboxClickEventObject = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("checkboxClick")
     __obj.asInstanceOf[SeriesCheckboxClickEventObject]
   }
   
-  @scala.inline
-  implicit class SeriesCheckboxClickEventObjectMutableBuilder[Self <: SeriesCheckboxClickEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesCheckboxClickEventObject](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Series): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Series): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Series): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Series): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: checkboxClick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: checkboxClick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

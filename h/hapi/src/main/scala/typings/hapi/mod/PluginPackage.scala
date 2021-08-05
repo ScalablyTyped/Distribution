@@ -13,16 +13,13 @@ trait PluginPackage extends StObject {
 }
 object PluginPackage {
   
-  @scala.inline
-  def apply(pkg: js.Any): PluginPackage = {
+  inline def apply(pkg: js.Any): PluginPackage = {
     val __obj = js.Dynamic.literal(pkg = pkg.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginPackage]
   }
   
-  @scala.inline
-  implicit class PluginPackageMutableBuilder[Self <: PluginPackage] (val x: Self) extends AnyVal {
+  extension [Self <: PluginPackage](x: Self) {
     
-    @scala.inline
-    def setPkg(value: js.Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+    inline def setPkg(value: js.Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
   }
 }

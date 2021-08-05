@@ -12,19 +12,15 @@ trait point extends StObject {
 }
 object point {
   
-  @scala.inline
-  def apply(x: Double, y: Double): point = {
+  inline def apply(x: Double, y: Double): point = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[point]
   }
   
-  @scala.inline
-  implicit class pointMutableBuilder[Self <: point] (val x: Self) extends AnyVal {
+  extension [Self <: point](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

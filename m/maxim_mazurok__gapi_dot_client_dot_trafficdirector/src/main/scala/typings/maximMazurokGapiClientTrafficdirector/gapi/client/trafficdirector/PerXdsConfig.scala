@@ -18,43 +18,31 @@ trait PerXdsConfig extends StObject {
 }
 object PerXdsConfig {
   
-  @scala.inline
-  def apply(): PerXdsConfig = {
+  inline def apply(): PerXdsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerXdsConfig]
   }
   
-  @scala.inline
-  implicit class PerXdsConfigMutableBuilder[Self <: PerXdsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PerXdsConfig](x: Self) {
     
-    @scala.inline
-    def setClusterConfig(value: ClustersConfigDump): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
+    inline def setClusterConfig(value: ClustersConfigDump): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterConfigUndefined: Self = StObject.set(x, "clusterConfig", js.undefined)
+    inline def setClusterConfigUndefined: Self = StObject.set(x, "clusterConfig", js.undefined)
     
-    @scala.inline
-    def setListenerConfig(value: ListenersConfigDump): Self = StObject.set(x, "listenerConfig", value.asInstanceOf[js.Any])
+    inline def setListenerConfig(value: ListenersConfigDump): Self = StObject.set(x, "listenerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerConfigUndefined: Self = StObject.set(x, "listenerConfig", js.undefined)
+    inline def setListenerConfigUndefined: Self = StObject.set(x, "listenerConfig", js.undefined)
     
-    @scala.inline
-    def setRouteConfig(value: RoutesConfigDump): Self = StObject.set(x, "routeConfig", value.asInstanceOf[js.Any])
+    inline def setRouteConfig(value: RoutesConfigDump): Self = StObject.set(x, "routeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteConfigUndefined: Self = StObject.set(x, "routeConfig", js.undefined)
+    inline def setRouteConfigUndefined: Self = StObject.set(x, "routeConfig", js.undefined)
     
-    @scala.inline
-    def setScopedRouteConfig(value: ScopedRoutesConfigDump): Self = StObject.set(x, "scopedRouteConfig", value.asInstanceOf[js.Any])
+    inline def setScopedRouteConfig(value: ScopedRoutesConfigDump): Self = StObject.set(x, "scopedRouteConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopedRouteConfigUndefined: Self = StObject.set(x, "scopedRouteConfig", js.undefined)
+    inline def setScopedRouteConfigUndefined: Self = StObject.set(x, "scopedRouteConfig", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

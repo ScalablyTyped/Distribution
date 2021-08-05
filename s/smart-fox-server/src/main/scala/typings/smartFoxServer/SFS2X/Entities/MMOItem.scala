@@ -36,8 +36,7 @@ trait MMOItem extends StObject {
 }
 object MMOItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aoiEnteryPoint: Vec3D,
     containsVariable: String => Boolean,
     getVariable: String => MMOItemVariable,
@@ -48,22 +47,16 @@ object MMOItem {
     __obj.asInstanceOf[MMOItem]
   }
   
-  @scala.inline
-  implicit class MMOItemMutableBuilder[Self <: MMOItem] (val x: Self) extends AnyVal {
+  extension [Self <: MMOItem](x: Self) {
     
-    @scala.inline
-    def setAoiEnteryPoint(value: Vec3D): Self = StObject.set(x, "aoiEnteryPoint", value.asInstanceOf[js.Any])
+    inline def setAoiEnteryPoint(value: Vec3D): Self = StObject.set(x, "aoiEnteryPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
+    inline def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVariable(value: String => MMOItemVariable): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
+    inline def setGetVariable(value: String => MMOItemVariable): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVariables(value: () => js.Array[MMOItemVariable]): Self = StObject.set(x, "getVariables", js.Any.fromFunction0(value))
+    inline def setGetVariables(value: () => js.Array[MMOItemVariable]): Self = StObject.set(x, "getVariables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

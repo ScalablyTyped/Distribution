@@ -26,20 +26,16 @@ object typesDeleteApnsVoipChannelOutputMod {
   }
   object DeleteApnsVoipChannelOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, APNSVoipChannelResponse: UnmarshalledAPNSVoipChannelResponse): DeleteApnsVoipChannelOutput = {
+    inline def apply($metadata: ResponseMetadata, APNSVoipChannelResponse: UnmarshalledAPNSVoipChannelResponse): DeleteApnsVoipChannelOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSVoipChannelResponse = APNSVoipChannelResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteApnsVoipChannelOutput]
     }
     
-    @scala.inline
-    implicit class DeleteApnsVoipChannelOutputMutableBuilder[Self <: DeleteApnsVoipChannelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteApnsVoipChannelOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPNSVoipChannelResponse(value: UnmarshalledAPNSVoipChannelResponse): Self = StObject.set(x, "APNSVoipChannelResponse", value.asInstanceOf[js.Any])
+      inline def setAPNSVoipChannelResponse(value: UnmarshalledAPNSVoipChannelResponse): Self = StObject.set(x, "APNSVoipChannelResponse", value.asInstanceOf[js.Any])
     }
   }
 }

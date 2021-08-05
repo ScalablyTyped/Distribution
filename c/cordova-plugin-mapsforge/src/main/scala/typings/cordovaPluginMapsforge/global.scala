@@ -9,6 +9,5 @@ object global {
   @JSGlobal("mapsforge")
   @js.native
   def mapsforge: MapsforgePlugin = js.native
-  @scala.inline
-  def mapsforge_=(x: MapsforgePlugin): Unit = js.Dynamic.global.updateDynamic("mapsforge")(x.asInstanceOf[js.Any])
+  inline def mapsforge_=(x: MapsforgePlugin): Unit = js.Dynamic.global.updateDynamic("mapsforge")(x.asInstanceOf[js.Any])
 }

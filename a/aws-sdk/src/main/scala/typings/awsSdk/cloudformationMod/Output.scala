@@ -28,37 +28,27 @@ trait Output extends StObject {
 }
 object Output {
   
-  @scala.inline
-  def apply(): Output = {
+  inline def apply(): Output = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Output]
   }
   
-  @scala.inline
-  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+  extension [Self <: Output](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExportName(value: ExportName): Self = StObject.set(x, "ExportName", value.asInstanceOf[js.Any])
+    inline def setExportName(value: ExportName): Self = StObject.set(x, "ExportName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportNameUndefined: Self = StObject.set(x, "ExportName", js.undefined)
+    inline def setExportNameUndefined: Self = StObject.set(x, "ExportName", js.undefined)
     
-    @scala.inline
-    def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
+    inline def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
+    inline def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
     
-    @scala.inline
-    def setOutputValue(value: OutputValue): Self = StObject.set(x, "OutputValue", value.asInstanceOf[js.Any])
+    inline def setOutputValue(value: OutputValue): Self = StObject.set(x, "OutputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputValueUndefined: Self = StObject.set(x, "OutputValue", js.undefined)
+    inline def setOutputValueUndefined: Self = StObject.set(x, "OutputValue", js.undefined)
   }
 }

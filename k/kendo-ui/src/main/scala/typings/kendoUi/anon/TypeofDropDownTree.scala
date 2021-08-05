@@ -15,19 +15,15 @@ trait TypeofDropDownTree extends StObject {
 }
 object TypeofDropDownTree {
   
-  @scala.inline
-  def apply(extend: js.Object => DropDownTree, fn: DropDownTree): TypeofDropDownTree = {
+  inline def apply(extend: js.Object => DropDownTree, fn: DropDownTree): TypeofDropDownTree = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDropDownTree]
   }
   
-  @scala.inline
-  implicit class TypeofDropDownTreeMutableBuilder[Self <: TypeofDropDownTree] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDropDownTree](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => DropDownTree): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => DropDownTree): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: DropDownTree): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: DropDownTree): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

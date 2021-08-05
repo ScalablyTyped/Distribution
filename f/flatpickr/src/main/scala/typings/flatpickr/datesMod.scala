@@ -14,19 +14,14 @@ object datesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compareDates(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def compareDates(date1: Date, date2: Date, timeless: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], timeless.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareDates(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareDates(date1: Date, date2: Date, timeless: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], timeless.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def compareTimes(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareTimes")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareTimes(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareTimes")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def createDateFormatter(hasConfigL10nIsMobile: FormatterArgs): js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateFormatter")(hasConfigL10nIsMobile.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String]]
+  inline def createDateFormatter(hasConfigL10nIsMobile: FormatterArgs): js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateFormatter")(hasConfigL10nIsMobile.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String]]
   
-  @scala.inline
-  def createDateParser(hasConfigL10n: Config): js.Function4[
+  inline def createDateParser(hasConfigL10n: Config): js.Function4[
     /* date */ Date | String | Double, 
     /* givenFormat */ js.UndefOr[String], 
     /* timeless */ js.UndefOr[Boolean], 
@@ -49,12 +44,10 @@ object datesMod {
     @JSImport("flatpickr/dist/utils/dates", "duration.DAY")
     @js.native
     def DAY: Double = js.native
-    @scala.inline
-    def DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAY")(x.asInstanceOf[js.Any])
+    inline def DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAY")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def isBetween(ts: Double, ts1: Double, ts2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBetween")(ts.asInstanceOf[js.Any], ts1.asInstanceOf[js.Any], ts2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isBetween(ts: Double, ts1: Double, ts2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBetween")(ts.asInstanceOf[js.Any], ts1.asInstanceOf[js.Any], ts2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait FormatterArgs extends StObject {
     
@@ -66,32 +59,24 @@ object datesMod {
   }
   object FormatterArgs {
     
-    @scala.inline
-    def apply(): FormatterArgs = {
+    inline def apply(): FormatterArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatterArgs]
     }
     
-    @scala.inline
-    implicit class FormatterArgsMutableBuilder[Self <: FormatterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FormatterArgs](x: Self) {
       
-      @scala.inline
-      def setConfig(value: ParsedOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ParsedOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+      inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
       
-      @scala.inline
-      def setL10n(value: Locale): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
+      inline def setL10n(value: Locale): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL10nUndefined: Self = StObject.set(x, "l10n", js.undefined)
+      inline def setL10nUndefined: Self = StObject.set(x, "l10n", js.undefined)
     }
   }
 }

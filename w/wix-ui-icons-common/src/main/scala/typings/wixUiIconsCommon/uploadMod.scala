@@ -22,20 +22,16 @@ object uploadMod extends Shortcut {
   }
   object UploadProps {
     
-    @scala.inline
-    def apply(): UploadProps = {
+    inline def apply(): UploadProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UploadProps]
     }
     
-    @scala.inline
-    implicit class UploadPropsMutableBuilder[Self <: UploadProps] (val x: Self) extends AnyVal {
+    extension [Self <: UploadProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

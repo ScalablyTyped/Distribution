@@ -18,28 +18,21 @@ trait DescribeAccountAttributesRequest extends StObject {
 }
 object DescribeAccountAttributesRequest {
   
-  @scala.inline
-  def apply(): DescribeAccountAttributesRequest = {
+  inline def apply(): DescribeAccountAttributesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountAttributesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAccountAttributesRequestMutableBuilder[Self <: DescribeAccountAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeNames(value: AccountAttributeNameStringList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
+    inline def setAttributeNames(value: AccountAttributeNameStringList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
+    inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
-    @scala.inline
-    def setAttributeNamesVarargs(value: AccountAttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: AccountAttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

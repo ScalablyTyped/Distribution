@@ -16,22 +16,17 @@ trait SchemaResultCounts extends StObject {
 }
 object SchemaResultCounts {
   
-  @scala.inline
-  def apply(): SchemaResultCounts = {
+  inline def apply(): SchemaResultCounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultCounts]
   }
   
-  @scala.inline
-  implicit class SchemaResultCountsMutableBuilder[Self <: SchemaResultCounts] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResultCounts](x: Self) {
     
-    @scala.inline
-    def setSourceResultCounts(value: js.Array[SchemaSourceResultCount]): Self = StObject.set(x, "sourceResultCounts", value.asInstanceOf[js.Any])
+    inline def setSourceResultCounts(value: js.Array[SchemaSourceResultCount]): Self = StObject.set(x, "sourceResultCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceResultCountsUndefined: Self = StObject.set(x, "sourceResultCounts", js.undefined)
+    inline def setSourceResultCountsUndefined: Self = StObject.set(x, "sourceResultCounts", js.undefined)
     
-    @scala.inline
-    def setSourceResultCountsVarargs(value: SchemaSourceResultCount*): Self = StObject.set(x, "sourceResultCounts", js.Array(value :_*))
+    inline def setSourceResultCountsVarargs(value: SchemaSourceResultCount*): Self = StObject.set(x, "sourceResultCounts", js.Array(value :_*))
   }
 }

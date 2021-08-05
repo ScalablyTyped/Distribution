@@ -28,8 +28,7 @@ trait HttpContentDispositionHeaderValue extends StObject {
 }
 object HttpContentDispositionHeaderValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispositionType: String,
     fileName: String,
     fileNameStar: String,
@@ -41,25 +40,18 @@ object HttpContentDispositionHeaderValue {
     __obj.asInstanceOf[HttpContentDispositionHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpContentDispositionHeaderValueMutableBuilder[Self <: HttpContentDispositionHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpContentDispositionHeaderValue](x: Self) {
     
-    @scala.inline
-    def setDispositionType(value: String): Self = StObject.set(x, "dispositionType", value.asInstanceOf[js.Any])
+    inline def setDispositionType(value: String): Self = StObject.set(x, "dispositionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameStar(value: String): Self = StObject.set(x, "fileNameStar", value.asInstanceOf[js.Any])
+    inline def setFileNameStar(value: String): Self = StObject.set(x, "fileNameStar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

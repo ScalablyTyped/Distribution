@@ -13,16 +13,13 @@ trait DeleteApplicationInput extends StObject {
 }
 object DeleteApplicationInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName): DeleteApplicationInput = {
+  inline def apply(applicationName: ApplicationName): DeleteApplicationInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationInput]
   }
   
-  @scala.inline
-  implicit class DeleteApplicationInputMutableBuilder[Self <: DeleteApplicationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApplicationInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
   }
 }

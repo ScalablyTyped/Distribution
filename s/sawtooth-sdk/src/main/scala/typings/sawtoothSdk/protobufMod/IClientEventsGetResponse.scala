@@ -15,34 +15,25 @@ trait IClientEventsGetResponse extends StObject {
 }
 object IClientEventsGetResponse {
   
-  @scala.inline
-  def apply(): IClientEventsGetResponse = {
+  inline def apply(): IClientEventsGetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientEventsGetResponse]
   }
   
-  @scala.inline
-  implicit class IClientEventsGetResponseMutableBuilder[Self <: IClientEventsGetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientEventsGetResponse](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsNull: Self = StObject.set(x, "events", null)
+    inline def setEventsNull: Self = StObject.set(x, "events", null)
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

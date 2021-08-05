@@ -10,6 +10,5 @@ object velocityPerSecondMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def velocityPerSecond(velocity: Double, frameDuration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("velocityPerSecond")(velocity.asInstanceOf[js.Any], frameDuration.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def velocityPerSecond(velocity: Double, frameDuration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("velocityPerSecond")(velocity.asInstanceOf[js.Any], frameDuration.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

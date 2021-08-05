@@ -79,104 +79,72 @@ object header {
   }
   object IContainer {
     
-    @scala.inline
-    def apply(): IContainer = {
+    inline def apply(): IContainer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IContainer]
     }
     
-    @scala.inline
-    implicit class IContainerMutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
+    extension [Self <: IContainer](x: Self) {
       
-      @scala.inline
-      def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
+      inline def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
+      inline def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
       
-      @scala.inline
-      def setEnableColumnHide(value: Boolean): Self = StObject.set(x, "enableColumnHide", value.asInstanceOf[js.Any])
+      inline def setEnableColumnHide(value: Boolean): Self = StObject.set(x, "enableColumnHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableColumnHideUndefined: Self = StObject.set(x, "enableColumnHide", js.undefined)
+      inline def setEnableColumnHideUndefined: Self = StObject.set(x, "enableColumnHide", js.undefined)
       
-      @scala.inline
-      def setGetColumnCount(value: () => Unit): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
+      inline def setGetColumnCount(value: () => Unit): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetColumnCountUndefined: Self = StObject.set(x, "getColumnCount", js.undefined)
+      inline def setGetColumnCountUndefined: Self = StObject.set(x, "getColumnCount", js.undefined)
       
-      @scala.inline
-      def setGetColumnMenu(value: /* headerContainer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getColumnMenu", js.Any.fromFunction1(value))
+      inline def setGetColumnMenu(value: /* headerContainer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getColumnMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetColumnMenuUndefined: Self = StObject.set(x, "getColumnMenu", js.undefined)
+      inline def setGetColumnMenuUndefined: Self = StObject.set(x, "getColumnMenu", js.undefined)
       
-      @scala.inline
-      def setGetFullWidth(value: () => Unit): Self = StObject.set(x, "getFullWidth", js.Any.fromFunction0(value))
+      inline def setGetFullWidth(value: () => Unit): Self = StObject.set(x, "getFullWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFullWidthUndefined: Self = StObject.set(x, "getFullWidth", js.undefined)
+      inline def setGetFullWidthUndefined: Self = StObject.set(x, "getFullWidth", js.undefined)
       
-      @scala.inline
-      def setGetGridColumns(value: (/* inResult */ js.UndefOr[js.Any], /* hiddenAncestor */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getGridColumns", js.Any.fromFunction2(value))
+      inline def setGetGridColumns(value: (/* inResult */ js.UndefOr[js.Any], /* hiddenAncestor */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getGridColumns", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetGridColumnsUndefined: Self = StObject.set(x, "getGridColumns", js.undefined)
+      inline def setGetGridColumnsUndefined: Self = StObject.set(x, "getGridColumns", js.undefined)
       
-      @scala.inline
-      def setGetHeaderAtIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "getHeaderAtIndex", js.Any.fromFunction1(value))
+      inline def setGetHeaderAtIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "getHeaderAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeaderAtIndexUndefined: Self = StObject.set(x, "getHeaderAtIndex", js.undefined)
+      inline def setGetHeaderAtIndexUndefined: Self = StObject.set(x, "getHeaderAtIndex", js.undefined)
       
-      @scala.inline
-      def setGetHeaderIndex(value: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double): Self = StObject.set(x, "getHeaderIndex", js.Any.fromFunction1(value))
+      inline def setGetHeaderIndex(value: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double): Self = StObject.set(x, "getHeaderIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeaderIndexUndefined: Self = StObject.set(x, "getHeaderIndex", js.undefined)
+      inline def setGetHeaderIndexUndefined: Self = StObject.set(x, "getHeaderIndex", js.undefined)
       
-      @scala.inline
-      def setGetMenuItems(value: () => Array): Self = StObject.set(x, "getMenuItems", js.Any.fromFunction0(value))
+      inline def setGetMenuItems(value: () => Array): Self = StObject.set(x, "getMenuItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMenuItemsUndefined: Self = StObject.set(x, "getMenuItems", js.undefined)
+      inline def setGetMenuItemsUndefined: Self = StObject.set(x, "getMenuItems", js.undefined)
       
-      @scala.inline
-      def setGetVisibleGridColumns(value: () => Array): Self = StObject.set(x, "getVisibleGridColumns", js.Any.fromFunction0(value))
+      inline def setGetVisibleGridColumns(value: () => Array): Self = StObject.set(x, "getVisibleGridColumns", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVisibleGridColumnsUndefined: Self = StObject.set(x, "getVisibleGridColumns", js.undefined)
+      inline def setGetVisibleGridColumnsUndefined: Self = StObject.set(x, "getVisibleGridColumns", js.undefined)
       
-      @scala.inline
-      def setGetVisibleHeaderClosestToIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.Any.fromFunction1(value))
+      inline def setGetVisibleHeaderClosestToIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVisibleHeaderClosestToIndexUndefined: Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.undefined)
+      inline def setGetVisibleHeaderClosestToIndexUndefined: Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.undefined)
       
-      @scala.inline
-      def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
+      inline def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
+      inline def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
       
-      @scala.inline
-      def setSealed(value: Boolean): Self = StObject.set(x, "sealed", value.asInstanceOf[js.Any])
+      inline def setSealed(value: Boolean): Self = StObject.set(x, "sealed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSealedUndefined: Self = StObject.set(x, "sealed", js.undefined)
+      inline def setSealedUndefined: Self = StObject.set(x, "sealed", js.undefined)
       
-      @scala.inline
-      def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+      inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
   
@@ -185,8 +153,7 @@ object header {
        with typings.extjs.Ext.dd.IDragZone
   object IDragZone {
     
-    @scala.inline
-    def apply(): IDragZone = {
+    inline def apply(): IDragZone = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDragZone]
     }
@@ -197,8 +164,7 @@ object header {
        with typings.extjs.Ext.dd.IDropZone
   object IDropZone {
     
-    @scala.inline
-    def apply(): IDropZone = {
+    inline def apply(): IDropZone = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDropZone]
     }

@@ -13,25 +13,19 @@ trait PartialPageLifetimes extends StObject {
 }
 object PartialPageLifetimes {
   
-  @scala.inline
-  def apply(): PartialPageLifetimes = {
+  inline def apply(): PartialPageLifetimes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPageLifetimes]
   }
   
-  @scala.inline
-  implicit class PartialPageLifetimesMutableBuilder[Self <: PartialPageLifetimes] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPageLifetimes](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

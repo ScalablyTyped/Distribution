@@ -27,28 +27,20 @@ object ErrorBarStyle {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ABSOLUTE: `3` = 3.asInstanceOf[`3`]
+    inline def ABSOLUTE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def ERROR_MARGIN: `5` = 5.asInstanceOf[`5`]
+    inline def ERROR_MARGIN: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def FROM_DATA: `7` = 7.asInstanceOf[`7`]
+    inline def FROM_DATA: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def RELATIVE: `4` = 4.asInstanceOf[`4`]
+    inline def RELATIVE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def STANDARD_DEVIATION: `2` = 2.asInstanceOf[`2`]
+    inline def STANDARD_DEVIATION: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def STANDARD_ERROR: `6` = 6.asInstanceOf[`6`]
+    inline def STANDARD_ERROR: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def VARIANCE: `1` = 1.asInstanceOf[`1`]
+    inline def VARIANCE: `1` = 1.asInstanceOf[`1`]
   }
 }

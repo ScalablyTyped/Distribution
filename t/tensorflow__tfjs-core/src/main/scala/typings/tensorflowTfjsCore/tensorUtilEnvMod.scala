@@ -15,24 +15,16 @@ object tensorUtilEnvMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertToTensor[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def convertToTensor[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String, parseAsDtype: DataType): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def convertToTensor[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def convertToTensor[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String, parseAsDtype: DataType): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: DataType): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: DataType): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def convertToTensorArray_numeric[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: numeric): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def convertToTensorArray_numeric[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: numeric): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def convertToTensor_numeric[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String, parseAsDtype: numeric): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def convertToTensor_numeric[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String, parseAsDtype: numeric): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def inferShape(`val`: TensorLike): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def inferShape(`val`: TensorLike, dtype: DataType): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def inferShape(`val`: TensorLike): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def inferShape(`val`: TensorLike, dtype: DataType): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

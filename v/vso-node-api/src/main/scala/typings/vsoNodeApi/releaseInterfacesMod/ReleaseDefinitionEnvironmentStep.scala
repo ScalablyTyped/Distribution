@@ -10,16 +10,13 @@ trait ReleaseDefinitionEnvironmentStep extends StObject {
 }
 object ReleaseDefinitionEnvironmentStep {
   
-  @scala.inline
-  def apply(id: Double): ReleaseDefinitionEnvironmentStep = {
+  inline def apply(id: Double): ReleaseDefinitionEnvironmentStep = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentStep]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionEnvironmentStepMutableBuilder[Self <: ReleaseDefinitionEnvironmentStep] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionEnvironmentStep](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

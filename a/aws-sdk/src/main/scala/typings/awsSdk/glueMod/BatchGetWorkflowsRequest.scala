@@ -18,25 +18,19 @@ trait BatchGetWorkflowsRequest extends StObject {
 }
 object BatchGetWorkflowsRequest {
   
-  @scala.inline
-  def apply(Names: WorkflowNames): BatchGetWorkflowsRequest = {
+  inline def apply(Names: WorkflowNames): BatchGetWorkflowsRequest = {
     val __obj = js.Dynamic.literal(Names = Names.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetWorkflowsRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetWorkflowsRequestMutableBuilder[Self <: BatchGetWorkflowsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetWorkflowsRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeGraph(value: NullableBoolean): Self = StObject.set(x, "IncludeGraph", value.asInstanceOf[js.Any])
+    inline def setIncludeGraph(value: NullableBoolean): Self = StObject.set(x, "IncludeGraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGraphUndefined: Self = StObject.set(x, "IncludeGraph", js.undefined)
+    inline def setIncludeGraphUndefined: Self = StObject.set(x, "IncludeGraph", js.undefined)
     
-    @scala.inline
-    def setNames(value: WorkflowNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: WorkflowNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: NameString*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: NameString*): Self = StObject.set(x, "Names", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait IInkRecognizer extends StObject {
 }
 object IInkRecognizer {
   
-  @scala.inline
-  def apply(name: String): IInkRecognizer = {
+  inline def apply(name: String): IInkRecognizer = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInkRecognizer]
   }
   
-  @scala.inline
-  implicit class IInkRecognizerMutableBuilder[Self <: IInkRecognizer] (val x: Self) extends AnyVal {
+  extension [Self <: IInkRecognizer](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

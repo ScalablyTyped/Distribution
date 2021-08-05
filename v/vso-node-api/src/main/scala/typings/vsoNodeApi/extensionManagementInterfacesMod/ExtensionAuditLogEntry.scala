@@ -30,25 +30,19 @@ trait ExtensionAuditLogEntry extends StObject {
 }
 object ExtensionAuditLogEntry {
   
-  @scala.inline
-  def apply(auditAction: String, auditDate: Date, comment: String, updatedBy: IdentityRef): ExtensionAuditLogEntry = {
+  inline def apply(auditAction: String, auditDate: Date, comment: String, updatedBy: IdentityRef): ExtensionAuditLogEntry = {
     val __obj = js.Dynamic.literal(auditAction = auditAction.asInstanceOf[js.Any], auditDate = auditDate.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], updatedBy = updatedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionAuditLogEntry]
   }
   
-  @scala.inline
-  implicit class ExtensionAuditLogEntryMutableBuilder[Self <: ExtensionAuditLogEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionAuditLogEntry](x: Self) {
     
-    @scala.inline
-    def setAuditAction(value: String): Self = StObject.set(x, "auditAction", value.asInstanceOf[js.Any])
+    inline def setAuditAction(value: String): Self = StObject.set(x, "auditAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditDate(value: Date): Self = StObject.set(x, "auditDate", value.asInstanceOf[js.Any])
+    inline def setAuditDate(value: Date): Self = StObject.set(x, "auditDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedBy(value: IdentityRef): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
+    inline def setUpdatedBy(value: IdentityRef): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait ActionHistory extends StObject {
 }
 object ActionHistory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionHistoryDetails: ActionHistoryDetails,
     EventType: EventType,
     Status: ActionStatus,
@@ -36,19 +35,14 @@ object ActionHistory {
     __obj.asInstanceOf[ActionHistory]
   }
   
-  @scala.inline
-  implicit class ActionHistoryMutableBuilder[Self <: ActionHistory] (val x: Self) extends AnyVal {
+  extension [Self <: ActionHistory](x: Self) {
     
-    @scala.inline
-    def setActionHistoryDetails(value: ActionHistoryDetails): Self = StObject.set(x, "ActionHistoryDetails", value.asInstanceOf[js.Any])
+    inline def setActionHistoryDetails(value: ActionHistoryDetails): Self = StObject.set(x, "ActionHistoryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ActionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ActionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: GenericTimestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: GenericTimestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

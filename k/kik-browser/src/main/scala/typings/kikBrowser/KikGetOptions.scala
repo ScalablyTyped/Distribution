@@ -18,43 +18,31 @@ trait KikGetOptions extends StObject {
 }
 object KikGetOptions {
   
-  @scala.inline
-  def apply(): KikGetOptions = {
+  inline def apply(): KikGetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KikGetOptions]
   }
   
-  @scala.inline
-  implicit class KikGetOptionsMutableBuilder[Self <: KikGetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KikGetOptions](x: Self) {
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMinResults(value: Double): Self = StObject.set(x, "minResults", value.asInstanceOf[js.Any])
+    inline def setMinResults(value: Double): Self = StObject.set(x, "minResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinResultsUndefined: Self = StObject.set(x, "minResults", js.undefined)
+    inline def setMinResultsUndefined: Self = StObject.set(x, "minResults", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

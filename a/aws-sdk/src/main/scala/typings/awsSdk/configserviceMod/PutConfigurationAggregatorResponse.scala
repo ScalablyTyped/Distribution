@@ -13,19 +13,15 @@ trait PutConfigurationAggregatorResponse extends StObject {
 }
 object PutConfigurationAggregatorResponse {
   
-  @scala.inline
-  def apply(): PutConfigurationAggregatorResponse = {
+  inline def apply(): PutConfigurationAggregatorResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutConfigurationAggregatorResponse]
   }
   
-  @scala.inline
-  implicit class PutConfigurationAggregatorResponseMutableBuilder[Self <: PutConfigurationAggregatorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutConfigurationAggregatorResponse](x: Self) {
     
-    @scala.inline
-    def setConfigurationAggregator(value: ConfigurationAggregator): Self = StObject.set(x, "ConfigurationAggregator", value.asInstanceOf[js.Any])
+    inline def setConfigurationAggregator(value: ConfigurationAggregator): Self = StObject.set(x, "ConfigurationAggregator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationAggregatorUndefined: Self = StObject.set(x, "ConfigurationAggregator", js.undefined)
+    inline def setConfigurationAggregatorUndefined: Self = StObject.set(x, "ConfigurationAggregator", js.undefined)
   }
 }

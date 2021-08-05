@@ -26,8 +26,7 @@ trait TableConditionalFormat
      with XEnumerationAccess
 object TableConditionalFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,

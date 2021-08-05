@@ -11,19 +11,15 @@ trait PartialClassNameMapGridLi extends StObject {
 }
 object PartialClassNameMapGridLi {
   
-  @scala.inline
-  def apply(): PartialClassNameMapGridLi = {
+  inline def apply(): PartialClassNameMapGridLi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapGridLi]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapGridLiMutableBuilder[Self <: PartialClassNameMapGridLi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapGridLi](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

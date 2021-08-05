@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateErrorAction extends StObject
 object CertificateErrorAction {
   
-  @scala.inline
-  def cancel: typings.devtoolsProtocol.devtoolsProtocolStrings.cancel = "cancel".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cancel]
+  inline def cancel: typings.devtoolsProtocol.devtoolsProtocolStrings.cancel = "cancel".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cancel]
   
-  @scala.inline
-  def continue: typings.devtoolsProtocol.devtoolsProtocolStrings.continue = "continue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.continue]
+  inline def continue: typings.devtoolsProtocol.devtoolsProtocolStrings.continue = "continue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.continue]
 }

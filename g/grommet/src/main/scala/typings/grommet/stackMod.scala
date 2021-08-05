@@ -52,64 +52,46 @@ object stackMod {
   }
   object StackProps {
     
-    @scala.inline
-    def apply(): StackProps = {
+    inline def apply(): StackProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackProps]
     }
     
-    @scala.inline
-    implicit class StackPropsMutableBuilder[Self <: StackProps] (val x: Self) extends AnyVal {
+    extension [Self <: StackProps](x: Self) {
       
-      @scala.inline
-      def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
+      inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
+      inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
       
-      @scala.inline
-      def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      @scala.inline
-      def setAnchor(
+      inline def setAnchor(
         value: center | left | right | top | bottom | `top-left` | `bottom-left` | `top-right` | `bottom-right`
       ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setFill(value: FillType): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: FillType): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+      inline def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+      inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      @scala.inline
-      def setGuidingChild(value: Double | first | last): Self = StObject.set(x, "guidingChild", value.asInstanceOf[js.Any])
+      inline def setGuidingChild(value: Double | first | last): Self = StObject.set(x, "guidingChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuidingChildUndefined: Self = StObject.set(x, "guidingChild", js.undefined)
+      inline def setGuidingChildUndefined: Self = StObject.set(x, "guidingChild", js.undefined)
       
-      @scala.inline
-      def setInteractiveChild(value: Double | first | last): Self = StObject.set(x, "interactiveChild", value.asInstanceOf[js.Any])
+      inline def setInteractiveChild(value: Double | first | last): Self = StObject.set(x, "interactiveChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractiveChildUndefined: Self = StObject.set(x, "interactiveChild", js.undefined)
+      inline def setInteractiveChildUndefined: Self = StObject.set(x, "interactiveChild", js.undefined)
       
-      @scala.inline
-      def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     }
   }
 }

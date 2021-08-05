@@ -32,23 +32,18 @@ object basicLayoutMod extends Shortcut {
   }
   object BasicLayoutContext {
     
-    @scala.inline
-    def apply(breadcrumb: StringDictionary[MenuDataItem]): BasicLayoutContext = {
+    inline def apply(breadcrumb: StringDictionary[MenuDataItem]): BasicLayoutContext = {
       val __obj = js.Dynamic.literal(breadcrumb = breadcrumb.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasicLayoutContext]
     }
     
-    @scala.inline
-    implicit class BasicLayoutContextMutableBuilder[Self <: BasicLayoutContext] (val x: Self) extends AnyVal {
+    extension [Self <: BasicLayoutContext](x: Self) {
       
-      @scala.inline
-      def setBreadcrumb(value: StringDictionary[MenuDataItem]): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
+      inline def setBreadcrumb(value: StringDictionary[MenuDataItem]): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
   

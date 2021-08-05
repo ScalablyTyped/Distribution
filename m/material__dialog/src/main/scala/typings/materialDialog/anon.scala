@@ -43,8 +43,7 @@ object anon {
   }
   object ACTIONATTRIBUTE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACTION_ATTRIBUTE: String,
       BUTTON_DEFAULT_ATTRIBUTE: String,
       BUTTON_SELECTOR: String,
@@ -65,53 +64,37 @@ object anon {
       __obj.asInstanceOf[ACTIONATTRIBUTE]
     }
     
-    @scala.inline
-    implicit class ACTIONATTRIBUTEMutableBuilder[Self <: ACTIONATTRIBUTE] (val x: Self) extends AnyVal {
+    extension [Self <: ACTIONATTRIBUTE](x: Self) {
       
-      @scala.inline
-      def setACTION_ATTRIBUTE(value: String): Self = StObject.set(x, "ACTION_ATTRIBUTE", value.asInstanceOf[js.Any])
+      inline def setACTION_ATTRIBUTE(value: String): Self = StObject.set(x, "ACTION_ATTRIBUTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBUTTON_DEFAULT_ATTRIBUTE(value: String): Self = StObject.set(x, "BUTTON_DEFAULT_ATTRIBUTE", value.asInstanceOf[js.Any])
+      inline def setBUTTON_DEFAULT_ATTRIBUTE(value: String): Self = StObject.set(x, "BUTTON_DEFAULT_ATTRIBUTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBUTTON_SELECTOR(value: String): Self = StObject.set(x, "BUTTON_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setBUTTON_SELECTOR(value: String): Self = StObject.set(x, "BUTTON_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLOSED_EVENT(value: String): Self = StObject.set(x, "CLOSED_EVENT", value.asInstanceOf[js.Any])
+      inline def setCLOSED_EVENT(value: String): Self = StObject.set(x, "CLOSED_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLOSE_ACTION(value: String): Self = StObject.set(x, "CLOSE_ACTION", value.asInstanceOf[js.Any])
+      inline def setCLOSE_ACTION(value: String): Self = StObject.set(x, "CLOSE_ACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLOSING_EVENT(value: String): Self = StObject.set(x, "CLOSING_EVENT", value.asInstanceOf[js.Any])
+      inline def setCLOSING_EVENT(value: String): Self = StObject.set(x, "CLOSING_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTAINER_SELECTOR(value: String): Self = StObject.set(x, "CONTAINER_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setCONTAINER_SELECTOR(value: String): Self = StObject.set(x, "CONTAINER_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTENT_SELECTOR(value: String): Self = StObject.set(x, "CONTENT_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setCONTENT_SELECTOR(value: String): Self = StObject.set(x, "CONTENT_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESTROY_ACTION(value: String): Self = StObject.set(x, "DESTROY_ACTION", value.asInstanceOf[js.Any])
+      inline def setDESTROY_ACTION(value: String): Self = StObject.set(x, "DESTROY_ACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINITIAL_FOCUS_ATTRIBUTE(value: String): Self = StObject.set(x, "INITIAL_FOCUS_ATTRIBUTE", value.asInstanceOf[js.Any])
+      inline def setINITIAL_FOCUS_ATTRIBUTE(value: String): Self = StObject.set(x, "INITIAL_FOCUS_ATTRIBUTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPENED_EVENT(value: String): Self = StObject.set(x, "OPENED_EVENT", value.asInstanceOf[js.Any])
+      inline def setOPENED_EVENT(value: String): Self = StObject.set(x, "OPENED_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPENING_EVENT(value: String): Self = StObject.set(x, "OPENING_EVENT", value.asInstanceOf[js.Any])
+      inline def setOPENING_EVENT(value: String): Self = StObject.set(x, "OPENING_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCRIM_SELECTOR(value: String): Self = StObject.set(x, "SCRIM_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setSCRIM_SELECTOR(value: String): Self = StObject.set(x, "SCRIM_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUPPRESS_DEFAULT_PRESS_SELECTOR(value: String): Self = StObject.set(x, "SUPPRESS_DEFAULT_PRESS_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setSUPPRESS_DEFAULT_PRESS_SELECTOR(value: String): Self = StObject.set(x, "SUPPRESS_DEFAULT_PRESS_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSURFACE_SELECTOR(value: String): Self = StObject.set(x, "SURFACE_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setSURFACE_SELECTOR(value: String): Self = StObject.set(x, "SURFACE_SELECTOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,8 +114,7 @@ object anon {
   }
   object CLOSING {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CLOSING: String,
       OPEN: String,
       OPENING: String,
@@ -144,26 +126,19 @@ object anon {
       __obj.asInstanceOf[CLOSING]
     }
     
-    @scala.inline
-    implicit class CLOSINGMutableBuilder[Self <: CLOSING] (val x: Self) extends AnyVal {
+    extension [Self <: CLOSING](x: Self) {
       
-      @scala.inline
-      def setCLOSING(value: String): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
+      inline def setCLOSING(value: String): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN(value: String): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
+      inline def setOPEN(value: String): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPENING(value: String): Self = StObject.set(x, "OPENING", value.asInstanceOf[js.Any])
+      inline def setOPENING(value: String): Self = StObject.set(x, "OPENING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCROLLABLE(value: String): Self = StObject.set(x, "SCROLLABLE", value.asInstanceOf[js.Any])
+      inline def setSCROLLABLE(value: String): Self = StObject.set(x, "SCROLLABLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCROLL_LOCK(value: String): Self = StObject.set(x, "SCROLL_LOCK", value.asInstanceOf[js.Any])
+      inline def setSCROLL_LOCK(value: String): Self = StObject.set(x, "SCROLL_LOCK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTACKED(value: String): Self = StObject.set(x, "STACKED", value.asInstanceOf[js.Any])
+      inline def setSTACKED(value: String): Self = StObject.set(x, "STACKED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,20 +150,16 @@ object anon {
   }
   object DIALOGANIMATIONCLOSETIMEMS {
     
-    @scala.inline
-    def apply(DIALOG_ANIMATION_CLOSE_TIME_MS: Double, DIALOG_ANIMATION_OPEN_TIME_MS: Double): DIALOGANIMATIONCLOSETIMEMS = {
+    inline def apply(DIALOG_ANIMATION_CLOSE_TIME_MS: Double, DIALOG_ANIMATION_OPEN_TIME_MS: Double): DIALOGANIMATIONCLOSETIMEMS = {
       val __obj = js.Dynamic.literal(DIALOG_ANIMATION_CLOSE_TIME_MS = DIALOG_ANIMATION_CLOSE_TIME_MS.asInstanceOf[js.Any], DIALOG_ANIMATION_OPEN_TIME_MS = DIALOG_ANIMATION_OPEN_TIME_MS.asInstanceOf[js.Any])
       __obj.asInstanceOf[DIALOGANIMATIONCLOSETIMEMS]
     }
     
-    @scala.inline
-    implicit class DIALOGANIMATIONCLOSETIMEMSMutableBuilder[Self <: DIALOGANIMATIONCLOSETIMEMS] (val x: Self) extends AnyVal {
+    extension [Self <: DIALOGANIMATIONCLOSETIMEMS](x: Self) {
       
-      @scala.inline
-      def setDIALOG_ANIMATION_CLOSE_TIME_MS(value: Double): Self = StObject.set(x, "DIALOG_ANIMATION_CLOSE_TIME_MS", value.asInstanceOf[js.Any])
+      inline def setDIALOG_ANIMATION_CLOSE_TIME_MS(value: Double): Self = StObject.set(x, "DIALOG_ANIMATION_CLOSE_TIME_MS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDIALOG_ANIMATION_OPEN_TIME_MS(value: Double): Self = StObject.set(x, "DIALOG_ANIMATION_OPEN_TIME_MS", value.asInstanceOf[js.Any])
+      inline def setDIALOG_ANIMATION_OPEN_TIME_MS(value: Double): Self = StObject.set(x, "DIALOG_ANIMATION_OPEN_TIME_MS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,122 +204,84 @@ object anon {
   }
   object PartialMDCDialogAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCDialogAdapter = {
+    inline def apply(): PartialMDCDialogAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCDialogAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCDialogAdapterMutableBuilder[Self <: PartialMDCDialogAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCDialogAdapter](x: Self) {
       
-      @scala.inline
-      def setAddBodyClass(value: /* className */ String => Unit): Self = StObject.set(x, "addBodyClass", js.Any.fromFunction1(value))
+      inline def setAddBodyClass(value: /* className */ String => Unit): Self = StObject.set(x, "addBodyClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddBodyClassUndefined: Self = StObject.set(x, "addBodyClass", js.undefined)
+      inline def setAddBodyClassUndefined: Self = StObject.set(x, "addBodyClass", js.undefined)
       
-      @scala.inline
-      def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      @scala.inline
-      def setAreButtonsStacked(value: () => Boolean): Self = StObject.set(x, "areButtonsStacked", js.Any.fromFunction0(value))
+      inline def setAreButtonsStacked(value: () => Boolean): Self = StObject.set(x, "areButtonsStacked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAreButtonsStackedUndefined: Self = StObject.set(x, "areButtonsStacked", js.undefined)
+      inline def setAreButtonsStackedUndefined: Self = StObject.set(x, "areButtonsStacked", js.undefined)
       
-      @scala.inline
-      def setClickDefaultButton(value: () => Unit): Self = StObject.set(x, "clickDefaultButton", js.Any.fromFunction0(value))
+      inline def setClickDefaultButton(value: () => Unit): Self = StObject.set(x, "clickDefaultButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickDefaultButtonUndefined: Self = StObject.set(x, "clickDefaultButton", js.undefined)
+      inline def setClickDefaultButtonUndefined: Self = StObject.set(x, "clickDefaultButton", js.undefined)
       
-      @scala.inline
-      def setEventTargetMatches(value: (/* target */ EventTarget | Null, /* selector */ String) => Boolean): Self = StObject.set(x, "eventTargetMatches", js.Any.fromFunction2(value))
+      inline def setEventTargetMatches(value: (/* target */ EventTarget | Null, /* selector */ String) => Boolean): Self = StObject.set(x, "eventTargetMatches", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEventTargetMatchesUndefined: Self = StObject.set(x, "eventTargetMatches", js.undefined)
+      inline def setEventTargetMatchesUndefined: Self = StObject.set(x, "eventTargetMatches", js.undefined)
       
-      @scala.inline
-      def setGetActionFromEvent(value: /* evt */ Event => String | Null): Self = StObject.set(x, "getActionFromEvent", js.Any.fromFunction1(value))
+      inline def setGetActionFromEvent(value: /* evt */ Event => String | Null): Self = StObject.set(x, "getActionFromEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetActionFromEventUndefined: Self = StObject.set(x, "getActionFromEvent", js.undefined)
+      inline def setGetActionFromEventUndefined: Self = StObject.set(x, "getActionFromEvent", js.undefined)
       
-      @scala.inline
-      def setGetInitialFocusEl(value: () => HTMLElement | Null): Self = StObject.set(x, "getInitialFocusEl", js.Any.fromFunction0(value))
+      inline def setGetInitialFocusEl(value: () => HTMLElement | Null): Self = StObject.set(x, "getInitialFocusEl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInitialFocusElUndefined: Self = StObject.set(x, "getInitialFocusEl", js.undefined)
+      inline def setGetInitialFocusElUndefined: Self = StObject.set(x, "getInitialFocusEl", js.undefined)
       
-      @scala.inline
-      def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
+      inline def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
       
-      @scala.inline
-      def setIsContentScrollable(value: () => Boolean): Self = StObject.set(x, "isContentScrollable", js.Any.fromFunction0(value))
+      inline def setIsContentScrollable(value: () => Boolean): Self = StObject.set(x, "isContentScrollable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsContentScrollableUndefined: Self = StObject.set(x, "isContentScrollable", js.undefined)
+      inline def setIsContentScrollableUndefined: Self = StObject.set(x, "isContentScrollable", js.undefined)
       
-      @scala.inline
-      def setNotifyClosed(value: /* action */ String => Unit): Self = StObject.set(x, "notifyClosed", js.Any.fromFunction1(value))
+      inline def setNotifyClosed(value: /* action */ String => Unit): Self = StObject.set(x, "notifyClosed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyClosedUndefined: Self = StObject.set(x, "notifyClosed", js.undefined)
+      inline def setNotifyClosedUndefined: Self = StObject.set(x, "notifyClosed", js.undefined)
       
-      @scala.inline
-      def setNotifyClosing(value: /* action */ String => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction1(value))
+      inline def setNotifyClosing(value: /* action */ String => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyClosingUndefined: Self = StObject.set(x, "notifyClosing", js.undefined)
+      inline def setNotifyClosingUndefined: Self = StObject.set(x, "notifyClosing", js.undefined)
       
-      @scala.inline
-      def setNotifyOpened(value: () => Unit): Self = StObject.set(x, "notifyOpened", js.Any.fromFunction0(value))
+      inline def setNotifyOpened(value: () => Unit): Self = StObject.set(x, "notifyOpened", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyOpenedUndefined: Self = StObject.set(x, "notifyOpened", js.undefined)
+      inline def setNotifyOpenedUndefined: Self = StObject.set(x, "notifyOpened", js.undefined)
       
-      @scala.inline
-      def setNotifyOpening(value: () => Unit): Self = StObject.set(x, "notifyOpening", js.Any.fromFunction0(value))
+      inline def setNotifyOpening(value: () => Unit): Self = StObject.set(x, "notifyOpening", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyOpeningUndefined: Self = StObject.set(x, "notifyOpening", js.undefined)
+      inline def setNotifyOpeningUndefined: Self = StObject.set(x, "notifyOpening", js.undefined)
       
-      @scala.inline
-      def setReleaseFocus(value: () => Unit): Self = StObject.set(x, "releaseFocus", js.Any.fromFunction0(value))
+      inline def setReleaseFocus(value: () => Unit): Self = StObject.set(x, "releaseFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReleaseFocusUndefined: Self = StObject.set(x, "releaseFocus", js.undefined)
+      inline def setReleaseFocusUndefined: Self = StObject.set(x, "releaseFocus", js.undefined)
       
-      @scala.inline
-      def setRemoveBodyClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeBodyClass", js.Any.fromFunction1(value))
+      inline def setRemoveBodyClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeBodyClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveBodyClassUndefined: Self = StObject.set(x, "removeBodyClass", js.undefined)
+      inline def setRemoveBodyClassUndefined: Self = StObject.set(x, "removeBodyClass", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setReverseButtons(value: () => Unit): Self = StObject.set(x, "reverseButtons", js.Any.fromFunction0(value))
+      inline def setReverseButtons(value: () => Unit): Self = StObject.set(x, "reverseButtons", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReverseButtonsUndefined: Self = StObject.set(x, "reverseButtons", js.undefined)
+      inline def setReverseButtonsUndefined: Self = StObject.set(x, "reverseButtons", js.undefined)
       
-      @scala.inline
-      def setTrapFocus(value: /* focusElement */ HTMLElement | Null => Unit): Self = StObject.set(x, "trapFocus", js.Any.fromFunction1(value))
+      inline def setTrapFocus(value: /* focusElement */ HTMLElement | Null => Unit): Self = StObject.set(x, "trapFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
+      inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
     }
   }
 }

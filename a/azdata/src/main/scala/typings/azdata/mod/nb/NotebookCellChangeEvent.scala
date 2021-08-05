@@ -24,28 +24,21 @@ trait NotebookCellChangeEvent extends StObject {
 }
 object NotebookCellChangeEvent {
   
-  @scala.inline
-  def apply(cells: js.Array[NotebookCell], notebook: NotebookDocument): NotebookCellChangeEvent = {
+  inline def apply(cells: js.Array[NotebookCell], notebook: NotebookDocument): NotebookCellChangeEvent = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], notebook = notebook.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookCellChangeEvent]
   }
   
-  @scala.inline
-  implicit class NotebookCellChangeEventMutableBuilder[Self <: NotebookCellChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookCellChangeEvent](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[NotebookCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[NotebookCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsVarargs(value: NotebookCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: NotebookCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: NotebookChangeKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: NotebookChangeKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNotebook(value: NotebookDocument): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
+    inline def setNotebook(value: NotebookDocument): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait ContentType extends StObject {
 }
 object ContentType {
   
-  @scala.inline
-  def apply(): ContentType = {
+  inline def apply(): ContentType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentType]
   }
   
-  @scala.inline
-  implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+  extension [Self <: ContentType](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
   }
 }

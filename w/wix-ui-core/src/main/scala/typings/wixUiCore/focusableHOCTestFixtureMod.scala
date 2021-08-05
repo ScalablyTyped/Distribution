@@ -35,10 +35,10 @@ object focusableHOCTestFixtureMod {
     extends Component[js.Object, js.Object, js.Any] {
     def this(props: js.Any) = this()
     
-    val _onFirstButtonClick: js.Any = js.native
+    /* private */ val _onFirstButtonClick: js.Any = js.native
     
-    val firstButtonRef: js.Any = js.native
+    /* private */ val firstButtonRef: js.Any = js.native
     
-    val secondButtonRef: js.Any = js.native
+    /* private */ val secondButtonRef: js.Any = js.native
   }
 }

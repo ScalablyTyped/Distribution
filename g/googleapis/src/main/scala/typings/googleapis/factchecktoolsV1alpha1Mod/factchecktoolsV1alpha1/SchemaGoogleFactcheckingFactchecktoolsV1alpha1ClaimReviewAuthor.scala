@@ -22,25 +22,19 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor extends St
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor {
   
-  @scala.inline
-  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor = {
+  inline def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthorMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor](x: Self) {
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ object By {
     * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
     * @see http://www.w3.org/TR/CSS2/selector.html#class-html
     */
-  @scala.inline
-  def className(name: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def className(name: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
   
   /**
     * Locates elements using a CSS selector.
@@ -39,8 +38,7 @@ object By {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/CSS2/selector.html
     */
-  @scala.inline
-  def css(selector: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def css(selector: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
   
   /**
     * Locates eleemnts by the ID attribute. This locator uses the CSS selector
@@ -49,8 +47,7 @@ object By {
     * @param {string} id The ID to search for.
     * @return {!By} The new locator.
     */
-  @scala.inline
-  def id(id: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def id(id: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
   
   /**
     * Locates an elements by evaluating a
@@ -62,10 +59,8 @@ object By {
     * @return {function(!./WebDriver): !./Promise}
     *     A new JavaScript-based locator function.
     */
-  @scala.inline
-  def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
-  @scala.inline
-  def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
+  inline def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
+  inline def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
   
   /**
     * Locates link elements whose
@@ -75,8 +70,7 @@ object By {
     * @param {string} text The link text to search for.
     * @return {!By} The new locator.
     */
-  @scala.inline
-  def linkText(text: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("linkText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def linkText(text: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("linkText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
   
   /**
     * Locates elements whose `name` attribute has the given value.
@@ -84,8 +78,7 @@ object By {
     * @param {string} name The name attribute to search for.
     * @return {!By} The new locator.
     */
-  @scala.inline
-  def name(name: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(name.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def name(name: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(name.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
   
   /**
     * Locates link elements whose
@@ -95,8 +88,7 @@ object By {
     * @param {string} text The substring to check for in a link's visible text.
     * @return {!By} The new locator.
     */
-  @scala.inline
-  def partialLinkText(text: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("partialLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def partialLinkText(text: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("partialLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
   
   /**
     * Locates elements with a given tag name.
@@ -105,8 +97,7 @@ object By {
     * @return {!By} The new locator.
     * @deprecated Use {@link By.css() By.css(tagName)} instead.
     */
-  @scala.inline
-  def tagName(name: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("tagName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def tagName(name: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("tagName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
   
   /**
     * Locates elements matching a XPath selector. Care should be taken when
@@ -119,6 +110,5 @@ object By {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/xpath/
     */
-  @scala.inline
-  def xpath(xpath: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
+  inline def xpath(xpath: String): typings.seleniumWebdriver.byMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.byMod.By]
 }

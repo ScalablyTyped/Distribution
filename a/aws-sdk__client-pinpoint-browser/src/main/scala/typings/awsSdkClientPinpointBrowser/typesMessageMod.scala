@@ -80,86 +80,60 @@ object typesMessageMod {
   }
   object Message {
     
-    @scala.inline
-    def apply(): Message = {
+    inline def apply(): Message = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setImageIconUrl(value: String): Self = StObject.set(x, "ImageIconUrl", value.asInstanceOf[js.Any])
+      inline def setImageIconUrl(value: String): Self = StObject.set(x, "ImageIconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageIconUrlUndefined: Self = StObject.set(x, "ImageIconUrl", js.undefined)
+      inline def setImageIconUrlUndefined: Self = StObject.set(x, "ImageIconUrl", js.undefined)
       
-      @scala.inline
-      def setImageSmallIconUrl(value: String): Self = StObject.set(x, "ImageSmallIconUrl", value.asInstanceOf[js.Any])
+      inline def setImageSmallIconUrl(value: String): Self = StObject.set(x, "ImageSmallIconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSmallIconUrlUndefined: Self = StObject.set(x, "ImageSmallIconUrl", js.undefined)
+      inline def setImageSmallIconUrlUndefined: Self = StObject.set(x, "ImageSmallIconUrl", js.undefined)
       
-      @scala.inline
-      def setImageUrl(value: String): Self = StObject.set(x, "ImageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: String): Self = StObject.set(x, "ImageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUrlUndefined: Self = StObject.set(x, "ImageUrl", js.undefined)
+      inline def setImageUrlUndefined: Self = StObject.set(x, "ImageUrl", js.undefined)
       
-      @scala.inline
-      def setJsonBody(value: String): Self = StObject.set(x, "JsonBody", value.asInstanceOf[js.Any])
+      inline def setJsonBody(value: String): Self = StObject.set(x, "JsonBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonBodyUndefined: Self = StObject.set(x, "JsonBody", js.undefined)
+      inline def setJsonBodyUndefined: Self = StObject.set(x, "JsonBody", js.undefined)
       
-      @scala.inline
-      def setMediaUrl(value: String): Self = StObject.set(x, "MediaUrl", value.asInstanceOf[js.Any])
+      inline def setMediaUrl(value: String): Self = StObject.set(x, "MediaUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUrlUndefined: Self = StObject.set(x, "MediaUrl", js.undefined)
+      inline def setMediaUrlUndefined: Self = StObject.set(x, "MediaUrl", js.undefined)
       
-      @scala.inline
-      def setRawContent(value: String): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
+      inline def setRawContent(value: String): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
+      inline def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
       
-      @scala.inline
-      def setSilentPush(value: Boolean): Self = StObject.set(x, "SilentPush", value.asInstanceOf[js.Any])
+      inline def setSilentPush(value: Boolean): Self = StObject.set(x, "SilentPush", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentPushUndefined: Self = StObject.set(x, "SilentPush", js.undefined)
+      inline def setSilentPushUndefined: Self = StObject.set(x, "SilentPush", js.undefined)
       
-      @scala.inline
-      def setTimeToLive(value: Double): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
+      inline def setTimeToLive(value: Double): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
+      inline def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     }
   }
   

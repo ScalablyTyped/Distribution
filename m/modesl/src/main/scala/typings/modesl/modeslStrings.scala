@@ -8,16 +8,13 @@ object modeslStrings {
   
   @js.native
   sealed trait json extends StObject
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait plain extends StObject
-  @scala.inline
-  def plain: plain = "plain".asInstanceOf[plain]
+  inline def plain: plain = "plain".asInstanceOf[plain]
   
   @js.native
   sealed trait xml extends StObject
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
+  inline def xml: xml = "xml".asInstanceOf[xml]
 }

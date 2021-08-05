@@ -13,25 +13,19 @@ trait IntegrationAddHandlers extends StObject {
 }
 object IntegrationAddHandlers {
   
-  @scala.inline
-  def apply(): IntegrationAddHandlers = {
+  inline def apply(): IntegrationAddHandlers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegrationAddHandlers]
   }
   
-  @scala.inline
-  implicit class IntegrationAddHandlersMutableBuilder[Self <: IntegrationAddHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: IntegrationAddHandlers](x: Self) {
     
-    @scala.inline
-    def setConflictHandler(value: (/* f */ String, /* stats */ Stats) => js.Promise[Boolean]): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction2(value))
+    inline def setConflictHandler(value: (/* f */ String, /* stats */ Stats) => js.Promise[Boolean]): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
+    inline def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
     
-    @scala.inline
-    def setOnFileCreate(value: /* f */ String => Unit): Self = StObject.set(x, "onFileCreate", js.Any.fromFunction1(value))
+    inline def setOnFileCreate(value: /* f */ String => Unit): Self = StObject.set(x, "onFileCreate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFileCreateUndefined: Self = StObject.set(x, "onFileCreate", js.undefined)
+    inline def setOnFileCreateUndefined: Self = StObject.set(x, "onFileCreate", js.undefined)
   }
 }

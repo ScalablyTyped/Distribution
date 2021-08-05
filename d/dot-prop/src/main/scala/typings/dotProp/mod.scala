@@ -29,8 +29,7 @@ object mod {
   	//=> {foo: {bar: {y: 'x'}}}
   	```
   	*/
-  @scala.inline
-  def delete(`object`: StringDictionary[js.Any], path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def delete(`object`: StringDictionary[js.Any], path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
   	Get the value of the property at the given path.
@@ -50,14 +49,10 @@ object mod {
   	//=> 'unicorn'
   	```
   	*/
-  @scala.inline
-  def get[T](`object`: StringDictionary[js.Any], path: String): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-  @scala.inline
-  def get[T](`object`: StringDictionary[js.Any], path: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def get[T](`object`: Unit, path: String): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-  @scala.inline
-  def get[T](`object`: Unit, path: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def get[T](`object`: StringDictionary[js.Any], path: String): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  inline def get[T](`object`: StringDictionary[js.Any], path: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def get[T](`object`: Unit, path: String): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  inline def get[T](`object`: Unit, path: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
   	Check whether the property at the given path exists.
@@ -70,10 +65,8 @@ object mod {
   	//=> true
   	```
   	*/
-  @scala.inline
-  def has(`object`: StringDictionary[js.Any], path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def has(`object`: Unit, path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has(`object`: StringDictionary[js.Any], path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has(`object`: Unit, path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
   	Set the property at the given path to the given value.
@@ -96,6 +89,5 @@ object mod {
   	//=> {foo: {bar: 'b', baz: 'x'}}
   	```
   	*/
-  @scala.inline
-  def set[T /* <: StringDictionary[js.Any] */](`object`: T, path: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def set[T /* <: StringDictionary[js.Any] */](`object`: T, path: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
 }

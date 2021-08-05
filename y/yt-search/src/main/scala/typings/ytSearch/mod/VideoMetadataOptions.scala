@@ -10,16 +10,13 @@ trait VideoMetadataOptions extends StObject {
 }
 object VideoMetadataOptions {
   
-  @scala.inline
-  def apply(videoId: String): VideoMetadataOptions = {
+  inline def apply(videoId: String): VideoMetadataOptions = {
     val __obj = js.Dynamic.literal(videoId = videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoMetadataOptions]
   }
   
-  @scala.inline
-  implicit class VideoMetadataOptionsMutableBuilder[Self <: VideoMetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VideoMetadataOptions](x: Self) {
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

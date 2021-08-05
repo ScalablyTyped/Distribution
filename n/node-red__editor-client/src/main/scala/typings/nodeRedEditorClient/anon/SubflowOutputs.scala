@@ -12,25 +12,19 @@ trait SubflowOutputs extends StObject {
 }
 object SubflowOutputs {
   
-  @scala.inline
-  def apply(links: js.Array[js.Object], subflowOutputs: js.Array[js.Object]): SubflowOutputs = {
+  inline def apply(links: js.Array[js.Object], subflowOutputs: js.Array[js.Object]): SubflowOutputs = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], subflowOutputs = subflowOutputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubflowOutputs]
   }
   
-  @scala.inline
-  implicit class SubflowOutputsMutableBuilder[Self <: SubflowOutputs] (val x: Self) extends AnyVal {
+  extension [Self <: SubflowOutputs](x: Self) {
     
-    @scala.inline
-    def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksVarargs(value: js.Object*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: js.Object*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setSubflowOutputs(value: js.Array[js.Object]): Self = StObject.set(x, "subflowOutputs", value.asInstanceOf[js.Any])
+    inline def setSubflowOutputs(value: js.Array[js.Object]): Self = StObject.set(x, "subflowOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubflowOutputsVarargs(value: js.Object*): Self = StObject.set(x, "subflowOutputs", js.Array(value :_*))
+    inline def setSubflowOutputsVarargs(value: js.Object*): Self = StObject.set(x, "subflowOutputs", js.Array(value :_*))
   }
 }

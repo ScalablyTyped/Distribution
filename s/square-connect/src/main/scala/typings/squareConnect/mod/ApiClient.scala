@@ -53,6 +53,5 @@ object ApiClient {
   @JSImport("square-connect", "ApiClient.instance")
   @js.native
   def instance: ApiClient = js.native
-  @scala.inline
-  def instance_=(x: ApiClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+  inline def instance_=(x: ApiClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

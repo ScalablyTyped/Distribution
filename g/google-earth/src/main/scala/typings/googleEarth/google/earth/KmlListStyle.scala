@@ -30,8 +30,7 @@ trait KmlListStyle
 }
 object KmlListStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -56,19 +55,14 @@ object KmlListStyle {
     __obj.asInstanceOf[KmlListStyle]
   }
   
-  @scala.inline
-  implicit class KmlListStyleMutableBuilder[Self <: KmlListStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlListStyle](x: Self) {
     
-    @scala.inline
-    def setGetBgColor(value: () => KmlColor): Self = StObject.set(x, "getBgColor", js.Any.fromFunction0(value))
+    inline def setGetBgColor(value: () => KmlColor): Self = StObject.set(x, "getBgColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetListItemType(value: () => KmlListItemTypeEnum): Self = StObject.set(x, "getListItemType", js.Any.fromFunction0(value))
+    inline def setGetListItemType(value: () => KmlListItemTypeEnum): Self = StObject.set(x, "getListItemType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxSnippetLines(value: () => Double): Self = StObject.set(x, "getMaxSnippetLines", js.Any.fromFunction0(value))
+    inline def setGetMaxSnippetLines(value: () => Double): Self = StObject.set(x, "getMaxSnippetLines", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetMaxSnippetLines(value: Double => Unit): Self = StObject.set(x, "setMaxSnippetLines", js.Any.fromFunction1(value))
+    inline def setSetMaxSnippetLines(value: Double => Unit): Self = StObject.set(x, "setMaxSnippetLines", js.Any.fromFunction1(value))
   }
 }

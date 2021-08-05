@@ -22,25 +22,19 @@ trait SchemaGoogleCloudVisionV1p2beta1Vertex extends StObject {
 }
 object SchemaGoogleCloudVisionV1p2beta1Vertex {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1Vertex = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1Vertex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1Vertex]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1VertexMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1Vertex] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1Vertex](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

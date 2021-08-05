@@ -25,73 +25,51 @@ trait ILanguageExtensionPoint extends StObject {
 }
 object ILanguageExtensionPoint {
   
-  @scala.inline
-  def apply(id: String): ILanguageExtensionPoint = {
+  inline def apply(id: String): ILanguageExtensionPoint = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanguageExtensionPoint]
   }
   
-  @scala.inline
-  implicit class ILanguageExtensionPointMutableBuilder[Self <: ILanguageExtensionPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageExtensionPoint](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setConfiguration(value: Uri): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: Uri): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setFilenamePatterns(value: js.Array[String]): Self = StObject.set(x, "filenamePatterns", value.asInstanceOf[js.Any])
+    inline def setFilenamePatterns(value: js.Array[String]): Self = StObject.set(x, "filenamePatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenamePatternsUndefined: Self = StObject.set(x, "filenamePatterns", js.undefined)
+    inline def setFilenamePatternsUndefined: Self = StObject.set(x, "filenamePatterns", js.undefined)
     
-    @scala.inline
-    def setFilenamePatternsVarargs(value: String*): Self = StObject.set(x, "filenamePatterns", js.Array(value :_*))
+    inline def setFilenamePatternsVarargs(value: String*): Self = StObject.set(x, "filenamePatterns", js.Array(value :_*))
     
-    @scala.inline
-    def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
+    inline def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenamesUndefined: Self = StObject.set(x, "filenames", js.undefined)
+    inline def setFilenamesUndefined: Self = StObject.set(x, "filenames", js.undefined)
     
-    @scala.inline
-    def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
+    inline def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstLine(value: String): Self = StObject.set(x, "firstLine", value.asInstanceOf[js.Any])
+    inline def setFirstLine(value: String): Self = StObject.set(x, "firstLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLineUndefined: Self = StObject.set(x, "firstLine", js.undefined)
+    inline def setFirstLineUndefined: Self = StObject.set(x, "firstLine", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimetypes(value: js.Array[String]): Self = StObject.set(x, "mimetypes", value.asInstanceOf[js.Any])
+    inline def setMimetypes(value: js.Array[String]): Self = StObject.set(x, "mimetypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimetypesUndefined: Self = StObject.set(x, "mimetypes", js.undefined)
+    inline def setMimetypesUndefined: Self = StObject.set(x, "mimetypes", js.undefined)
     
-    @scala.inline
-    def setMimetypesVarargs(value: String*): Self = StObject.set(x, "mimetypes", js.Array(value :_*))
+    inline def setMimetypesVarargs(value: String*): Self = StObject.set(x, "mimetypes", js.Array(value :_*))
   }
 }

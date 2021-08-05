@@ -12,7 +12,7 @@ class ObservableCollection[T] protected () extends StObject {
   def this(table: Table[T], fetchAllFromDatabase: Boolean, callbackWhenReady: js.Function) = this()
   def this(table: Table[T], fetchAllFromDatabase: Unit, callbackWhenReady: js.Function) = this()
   
-  var _items: js.Array[T & ObservableObject] = js.native
+  /* private */ var _items: js.Array[T & ObservableObject] = js.native
   
   def delete(criteriaOrID: String): typings.bluebird.mod.^[DeleteAnswer] = js.native
   def delete(criteriaOrID: String, callback: js.Function1[/* _result */ DeleteAnswer, js.Any]): typings.bluebird.mod.^[DeleteAnswer] = js.native

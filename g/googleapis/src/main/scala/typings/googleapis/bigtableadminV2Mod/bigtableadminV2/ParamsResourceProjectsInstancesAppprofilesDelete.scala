@@ -30,31 +30,23 @@ trait ParamsResourceProjectsInstancesAppprofilesDelete
 }
 object ParamsResourceProjectsInstancesAppprofilesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsInstancesAppprofilesDelete = {
+  inline def apply(): ParamsResourceProjectsInstancesAppprofilesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsInstancesAppprofilesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsInstancesAppprofilesDeleteMutableBuilder[Self <: ParamsResourceProjectsInstancesAppprofilesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsInstancesAppprofilesDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+    inline def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+    inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

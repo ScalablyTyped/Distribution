@@ -30,20 +30,16 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(hide: Event_[hide, Unit], show: Event_[show, Unit]): EventMap = {
+      inline def apply(hide: Event_[hide, Unit], show: Event_[show, Unit]): EventMap = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        inline def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        inline def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
     
@@ -66,32 +62,24 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setShowControlButton(value: Boolean): Self = StObject.set(x, "showControlButton", value.asInstanceOf[js.Any])
+        inline def setShowControlButton(value: Boolean): Self = StObject.set(x, "showControlButton", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowControlButtonUndefined: Self = StObject.set(x, "showControlButton", js.undefined)
+        inline def setShowControlButtonUndefined: Self = StObject.set(x, "showControlButton", js.undefined)
         
-        @scala.inline
-        def setShowZoomBar(value: Boolean): Self = StObject.set(x, "showZoomBar", value.asInstanceOf[js.Any])
+        inline def setShowZoomBar(value: Boolean): Self = StObject.set(x, "showZoomBar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowZoomBarUndefined: Self = StObject.set(x, "showZoomBar", js.undefined)
+        inline def setShowZoomBarUndefined: Self = StObject.set(x, "showZoomBar", js.undefined)
       }
     }
     
@@ -107,38 +95,28 @@ object AMap {
     }
     object Position {
       
-      @scala.inline
-      def apply(): Position = {
+      inline def apply(): Position = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Position]
       }
       
-      @scala.inline
-      implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+      extension [Self <: Position](x: Self) {
         
-        @scala.inline
-        def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+        inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+        inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
         
-        @scala.inline
-        def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+        inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
         
-        @scala.inline
-        def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+        inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
         
-        @scala.inline
-        def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+        inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       }
     }
   }

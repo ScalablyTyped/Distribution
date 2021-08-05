@@ -22,31 +22,23 @@ trait WorkbookFormatProtection
 }
 object WorkbookFormatProtection {
   
-  @scala.inline
-  def apply(): WorkbookFormatProtection = {
+  inline def apply(): WorkbookFormatProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookFormatProtection]
   }
   
-  @scala.inline
-  implicit class WorkbookFormatProtectionMutableBuilder[Self <: WorkbookFormatProtection] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookFormatProtection](x: Self) {
     
-    @scala.inline
-    def setFormulaHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
+    inline def setFormulaHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaHiddenNull: Self = StObject.set(x, "formulaHidden", null)
+    inline def setFormulaHiddenNull: Self = StObject.set(x, "formulaHidden", null)
     
-    @scala.inline
-    def setFormulaHiddenUndefined: Self = StObject.set(x, "formulaHidden", js.undefined)
+    inline def setFormulaHiddenUndefined: Self = StObject.set(x, "formulaHidden", js.undefined)
     
-    @scala.inline
-    def setLocked(value: NullableOption[Boolean]): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: NullableOption[Boolean]): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedNull: Self = StObject.set(x, "locked", null)
+    inline def setLockedNull: Self = StObject.set(x, "locked", null)
     
-    @scala.inline
-    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
   }
 }

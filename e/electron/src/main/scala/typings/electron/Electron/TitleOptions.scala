@@ -17,19 +17,15 @@ trait TitleOptions extends StObject {
 }
 object TitleOptions {
   
-  @scala.inline
-  def apply(): TitleOptions = {
+  inline def apply(): TitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TitleOptions]
   }
   
-  @scala.inline
-  implicit class TitleOptionsMutableBuilder[Self <: TitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TitleOptions](x: Self) {
     
-    @scala.inline
-    def setFontType(value: monospaced | monospacedDigit): Self = StObject.set(x, "fontType", value.asInstanceOf[js.Any])
+    inline def setFontType(value: monospaced | monospacedDigit): Self = StObject.set(x, "fontType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontTypeUndefined: Self = StObject.set(x, "fontType", js.undefined)
+    inline def setFontTypeUndefined: Self = StObject.set(x, "fontType", js.undefined)
   }
 }

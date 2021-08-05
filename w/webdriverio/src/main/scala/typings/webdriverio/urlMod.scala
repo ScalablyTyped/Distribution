@@ -10,6 +10,5 @@ object urlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

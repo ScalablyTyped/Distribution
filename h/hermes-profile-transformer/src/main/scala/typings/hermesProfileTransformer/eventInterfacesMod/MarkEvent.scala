@@ -15,16 +15,13 @@ trait MarkEvent
 }
 object MarkEvent {
   
-  @scala.inline
-  def apply(ph: MARK_EVENTS): MarkEvent = {
+  inline def apply(ph: MARK_EVENTS): MarkEvent = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkEvent]
   }
   
-  @scala.inline
-  implicit class MarkEventMutableBuilder[Self <: MarkEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MarkEvent](x: Self) {
     
-    @scala.inline
-    def setPh(value: MARK_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: MARK_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait WiFiAvailableNetwork extends StObject {
 }
 object WiFiAvailableNetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beaconInterval: Double,
     bssid: String,
     channelCenterFrequencyInKilohertz: Double,
@@ -61,40 +60,28 @@ object WiFiAvailableNetwork {
     __obj.asInstanceOf[WiFiAvailableNetwork]
   }
   
-  @scala.inline
-  implicit class WiFiAvailableNetworkMutableBuilder[Self <: WiFiAvailableNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiAvailableNetwork](x: Self) {
     
-    @scala.inline
-    def setBeaconInterval(value: Double): Self = StObject.set(x, "beaconInterval", value.asInstanceOf[js.Any])
+    inline def setBeaconInterval(value: Double): Self = StObject.set(x, "beaconInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
+    inline def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCenterFrequencyInKilohertz(value: Double): Self = StObject.set(x, "channelCenterFrequencyInKilohertz", value.asInstanceOf[js.Any])
+    inline def setChannelCenterFrequencyInKilohertz(value: Double): Self = StObject.set(x, "channelCenterFrequencyInKilohertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWiFiDirect(value: Boolean): Self = StObject.set(x, "isWiFiDirect", value.asInstanceOf[js.Any])
+    inline def setIsWiFiDirect(value: Boolean): Self = StObject.set(x, "isWiFiDirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkKind(value: WiFiNetworkKind): Self = StObject.set(x, "networkKind", value.asInstanceOf[js.Any])
+    inline def setNetworkKind(value: WiFiNetworkKind): Self = StObject.set(x, "networkKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkRssiInDecibelMilliwatts(value: Double): Self = StObject.set(x, "networkRssiInDecibelMilliwatts", value.asInstanceOf[js.Any])
+    inline def setNetworkRssiInDecibelMilliwatts(value: Double): Self = StObject.set(x, "networkRssiInDecibelMilliwatts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhyKind(value: WiFiPhyKind): Self = StObject.set(x, "phyKind", value.asInstanceOf[js.Any])
+    inline def setPhyKind(value: WiFiPhyKind): Self = StObject.set(x, "phyKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecuritySettings(value: NetworkSecuritySettings): Self = StObject.set(x, "securitySettings", value.asInstanceOf[js.Any])
+    inline def setSecuritySettings(value: NetworkSecuritySettings): Self = StObject.set(x, "securitySettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalBars(value: Double): Self = StObject.set(x, "signalBars", value.asInstanceOf[js.Any])
+    inline def setSignalBars(value: Double): Self = StObject.set(x, "signalBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
+    inline def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptime(value: Double): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
+    inline def setUptime(value: Double): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
   }
 }

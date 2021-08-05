@@ -13,16 +13,13 @@ trait ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification extend
 }
 object ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification {
   
-  @scala.inline
-  def apply(allocationStrategy: String): ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification = {
+  inline def apply(allocationStrategy: String): ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification = {
     val __obj = js.Dynamic.literal(allocationStrategy = allocationStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification]
   }
   
-  @scala.inline
-  implicit class ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationMutableBuilder[Self <: ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
   }
 }

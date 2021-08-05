@@ -17,8 +17,7 @@ object Intl {
   }
   object Collator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compare: (java.lang.String, java.lang.String) => Double,
       resolvedOptions: () => ResolvedCollatorOptions
     ): Collator = {
@@ -26,14 +25,11 @@ object Intl {
       __obj.asInstanceOf[Collator]
     }
     
-    @scala.inline
-    implicit class CollatorMutableBuilder[Self <: Collator] (val x: Self) extends AnyVal {
+    extension [Self <: Collator](x: Self) {
       
-      @scala.inline
-      def setCompare(value: (java.lang.String, java.lang.String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+      inline def setCompare(value: (java.lang.String, java.lang.String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolvedOptions(value: () => ResolvedCollatorOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
+      inline def setResolvedOptions(value: () => ResolvedCollatorOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     }
   }
   
@@ -53,50 +49,36 @@ object Intl {
   }
   object CollatorOptions {
     
-    @scala.inline
-    def apply(): CollatorOptions = {
+    inline def apply(): CollatorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollatorOptions]
     }
     
-    @scala.inline
-    implicit class CollatorOptionsMutableBuilder[Self <: CollatorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CollatorOptions](x: Self) {
       
-      @scala.inline
-      def setCaseFirst(value: java.lang.String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
+      inline def setCaseFirst(value: java.lang.String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseFirstUndefined: Self = StObject.set(x, "caseFirst", js.undefined)
+      inline def setCaseFirstUndefined: Self = StObject.set(x, "caseFirst", js.undefined)
       
-      @scala.inline
-      def setIgnorePunctuation(value: scala.Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
+      inline def setIgnorePunctuation(value: scala.Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorePunctuationUndefined: Self = StObject.set(x, "ignorePunctuation", js.undefined)
+      inline def setIgnorePunctuationUndefined: Self = StObject.set(x, "ignorePunctuation", js.undefined)
       
-      @scala.inline
-      def setLocaleMatcher(value: java.lang.String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: java.lang.String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setNumeric(value: scala.Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: scala.Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
       
-      @scala.inline
-      def setSensitivity(value: java.lang.String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+      inline def setSensitivity(value: java.lang.String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
+      inline def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
       
-      @scala.inline
-      def setUsage(value: java.lang.String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: java.lang.String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     }
   }
   
@@ -140,92 +122,64 @@ object Intl {
   }
   object DateTimeFormatOptions {
     
-    @scala.inline
-    def apply(): DateTimeFormatOptions = {
+    inline def apply(): DateTimeFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTimeFormatOptions]
     }
     
-    @scala.inline
-    implicit class DateTimeFormatOptionsMutableBuilder[Self <: DateTimeFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeFormatOptions](x: Self) {
       
-      @scala.inline
-      def setDay(value: java.lang.String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: java.lang.String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setEra(value: java.lang.String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: java.lang.String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
+      inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      @scala.inline
-      def setFormatMatcher(value: java.lang.String): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+      inline def setFormatMatcher(value: java.lang.String): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
+      inline def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
       
-      @scala.inline
-      def setHour(value: java.lang.String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: java.lang.String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12(value: scala.Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
+      inline def setHour12(value: scala.Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
+      inline def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
       
-      @scala.inline
-      def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      @scala.inline
-      def setLocaleMatcher(value: java.lang.String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: java.lang.String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setMinute(value: java.lang.String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: java.lang.String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setMonth(value: java.lang.String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: java.lang.String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setSecond(value: java.lang.String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: java.lang.String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: java.lang.String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: java.lang.String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneName(value: java.lang.String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: java.lang.String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
+      inline def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
       
-      @scala.inline
-      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+      inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
       
-      @scala.inline
-      def setWeekday(value: java.lang.String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: java.lang.String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
+      inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
       
-      @scala.inline
-      def setYear(value: java.lang.String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: java.lang.String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -237,20 +191,16 @@ object Intl {
   }
   object NumberFormat {
     
-    @scala.inline
-    def apply(format: Double => java.lang.String, resolvedOptions: () => ResolvedNumberFormatOptions): NumberFormat = {
+    inline def apply(format: Double => java.lang.String, resolvedOptions: () => ResolvedNumberFormatOptions): NumberFormat = {
       val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
       __obj.asInstanceOf[NumberFormat]
     }
     
-    @scala.inline
-    implicit class NumberFormatMutableBuilder[Self <: NumberFormat] (val x: Self) extends AnyVal {
+    extension [Self <: NumberFormat](x: Self) {
       
-      @scala.inline
-      def setFormat(value: Double => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: Double => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolvedOptions(value: () => ResolvedNumberFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
+      inline def setResolvedOptions(value: () => ResolvedNumberFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     }
   }
   
@@ -278,74 +228,52 @@ object Intl {
   }
   object NumberFormatOptions {
     
-    @scala.inline
-    def apply(): NumberFormatOptions = {
+    inline def apply(): NumberFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberFormatOptions]
     }
     
-    @scala.inline
-    implicit class NumberFormatOptionsMutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NumberFormatOptions](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyDisplay(value: java.lang.String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
+      inline def setCurrencyDisplay(value: java.lang.String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+      inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setLocaleMatcher(value: java.lang.String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: java.lang.String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
+      inline def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
+      inline def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
       
-      @scala.inline
-      def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
+      inline def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
+      inline def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
       
-      @scala.inline
-      def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
+      inline def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
       
-      @scala.inline
-      def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
+      inline def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
       
-      @scala.inline
-      def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
+      inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
       
-      @scala.inline
-      def setStyle(value: java.lang.String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: java.lang.String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUseGrouping(value: scala.Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+      inline def setUseGrouping(value: scala.Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
+      inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
     }
   }
   
@@ -367,8 +295,7 @@ object Intl {
   }
   object ResolvedCollatorOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       caseFirst: java.lang.String,
       collation: java.lang.String,
       ignorePunctuation: scala.Boolean,
@@ -381,29 +308,21 @@ object Intl {
       __obj.asInstanceOf[ResolvedCollatorOptions]
     }
     
-    @scala.inline
-    implicit class ResolvedCollatorOptionsMutableBuilder[Self <: ResolvedCollatorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedCollatorOptions](x: Self) {
       
-      @scala.inline
-      def setCaseFirst(value: java.lang.String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
+      inline def setCaseFirst(value: java.lang.String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollation(value: java.lang.String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+      inline def setCollation(value: java.lang.String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorePunctuation(value: scala.Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
+      inline def setIgnorePunctuation(value: scala.Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeric(value: scala.Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: scala.Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitivity(value: java.lang.String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+      inline def setSensitivity(value: java.lang.String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(value: java.lang.String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: java.lang.String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -439,8 +358,7 @@ object Intl {
   }
   object ResolvedDateTimeFormatOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calendar: java.lang.String,
       locale: java.lang.String,
       numberingSystem: java.lang.String,
@@ -450,80 +368,55 @@ object Intl {
       __obj.asInstanceOf[ResolvedDateTimeFormatOptions]
     }
     
-    @scala.inline
-    implicit class ResolvedDateTimeFormatOptionsMutableBuilder[Self <: ResolvedDateTimeFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedDateTimeFormatOptions](x: Self) {
       
-      @scala.inline
-      def setCalendar(value: java.lang.String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+      inline def setCalendar(value: java.lang.String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDay(value: java.lang.String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: java.lang.String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setEra(value: java.lang.String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: java.lang.String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
+      inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      @scala.inline
-      def setHour(value: java.lang.String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: java.lang.String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12(value: scala.Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
+      inline def setHour12(value: scala.Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
+      inline def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
       
-      @scala.inline
-      def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      @scala.inline
-      def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: java.lang.String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: java.lang.String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setMonth(value: java.lang.String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: java.lang.String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setNumberingSystem(value: java.lang.String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+      inline def setNumberingSystem(value: java.lang.String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: java.lang.String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: java.lang.String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: java.lang.String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: java.lang.String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneName(value: java.lang.String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: java.lang.String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
+      inline def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
       
-      @scala.inline
-      def setWeekday(value: java.lang.String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: java.lang.String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
+      inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
       
-      @scala.inline
-      def setYear(value: java.lang.String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: java.lang.String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -553,8 +446,7 @@ object Intl {
   }
   object ResolvedNumberFormatOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       locale: java.lang.String,
       maximumFractionDigits: Double,
       minimumFractionDigits: Double,
@@ -567,53 +459,37 @@ object Intl {
       __obj.asInstanceOf[ResolvedNumberFormatOptions]
     }
     
-    @scala.inline
-    implicit class ResolvedNumberFormatOptionsMutableBuilder[Self <: ResolvedNumberFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedNumberFormatOptions](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyDisplay(value: java.lang.String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
+      inline def setCurrencyDisplay(value: java.lang.String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+      inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
+      inline def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
+      inline def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
+      inline def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
       
-      @scala.inline
-      def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
+      inline def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
+      inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
       
-      @scala.inline
-      def setNumberingSystem(value: java.lang.String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+      inline def setNumberingSystem(value: java.lang.String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: java.lang.String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: java.lang.String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseGrouping(value: scala.Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+      inline def setUseGrouping(value: scala.Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
     }
   }
 }

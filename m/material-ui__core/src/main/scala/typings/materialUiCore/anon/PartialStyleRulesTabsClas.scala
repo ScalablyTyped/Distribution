@@ -28,67 +28,47 @@ trait PartialStyleRulesTabsClas extends StObject {
 }
 object PartialStyleRulesTabsClas {
   
-  @scala.inline
-  def apply(): PartialStyleRulesTabsClas = {
+  inline def apply(): PartialStyleRulesTabsClas = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesTabsClas]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesTabsClasMutableBuilder[Self <: PartialStyleRulesTabsClas] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesTabsClas](x: Self) {
     
-    @scala.inline
-    def setCentered(value: CSSProperties): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+    inline def setCentered(value: CSSProperties): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+    inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
-    @scala.inline
-    def setFixed(value: CSSProperties): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: CSSProperties): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setFlexContainer(value: CSSProperties): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+    inline def setFlexContainer(value: CSSProperties): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
+    inline def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
     
-    @scala.inline
-    def setIndicator(value: CSSProperties): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: CSSProperties): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setScrollButtons(value: CSSProperties): Self = StObject.set(x, "scrollButtons", value.asInstanceOf[js.Any])
+    inline def setScrollButtons(value: CSSProperties): Self = StObject.set(x, "scrollButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollButtonsAuto(value: CSSProperties): Self = StObject.set(x, "scrollButtonsAuto", value.asInstanceOf[js.Any])
+    inline def setScrollButtonsAuto(value: CSSProperties): Self = StObject.set(x, "scrollButtonsAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollButtonsAutoUndefined: Self = StObject.set(x, "scrollButtonsAuto", js.undefined)
+    inline def setScrollButtonsAutoUndefined: Self = StObject.set(x, "scrollButtonsAuto", js.undefined)
     
-    @scala.inline
-    def setScrollButtonsUndefined: Self = StObject.set(x, "scrollButtons", js.undefined)
+    inline def setScrollButtonsUndefined: Self = StObject.set(x, "scrollButtons", js.undefined)
     
-    @scala.inline
-    def setScrollable(value: CSSProperties): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    inline def setScrollable(value: CSSProperties): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
-    @scala.inline
-    def setScroller(value: CSSProperties): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
+    inline def setScroller(value: CSSProperties): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
+    inline def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
   }
 }

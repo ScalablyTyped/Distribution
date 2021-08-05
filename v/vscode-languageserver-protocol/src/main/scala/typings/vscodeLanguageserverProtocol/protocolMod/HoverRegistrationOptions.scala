@@ -10,8 +10,7 @@ trait HoverRegistrationOptions
      with WorkDoneProgressOptions
 object HoverRegistrationOptions {
   
-  @scala.inline
-  def apply(): HoverRegistrationOptions = {
+  inline def apply(): HoverRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[HoverRegistrationOptions]
   }

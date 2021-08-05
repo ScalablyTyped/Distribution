@@ -13,19 +13,15 @@ trait ExecutionControls extends StObject {
 }
 object ExecutionControls {
   
-  @scala.inline
-  def apply(): ExecutionControls = {
+  inline def apply(): ExecutionControls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionControls]
   }
   
-  @scala.inline
-  implicit class ExecutionControlsMutableBuilder[Self <: ExecutionControls] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionControls](x: Self) {
     
-    @scala.inline
-    def setSsmControls(value: SsmControls): Self = StObject.set(x, "SsmControls", value.asInstanceOf[js.Any])
+    inline def setSsmControls(value: SsmControls): Self = StObject.set(x, "SsmControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmControlsUndefined: Self = StObject.set(x, "SsmControls", js.undefined)
+    inline def setSsmControlsUndefined: Self = StObject.set(x, "SsmControls", js.undefined)
   }
 }

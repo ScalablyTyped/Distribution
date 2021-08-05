@@ -396,20 +396,16 @@ object Map_ {
   }
   object BackgroundRange {
     
-    @scala.inline
-    def apply(higher: Double, lower: Double): BackgroundRange = {
+    inline def apply(higher: Double, lower: Double): BackgroundRange = {
       val __obj = js.Dynamic.literal(higher = higher.asInstanceOf[js.Any], lower = lower.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackgroundRange]
     }
     
-    @scala.inline
-    implicit class BackgroundRangeMutableBuilder[Self <: BackgroundRange] (val x: Self) extends AnyVal {
+    extension [Self <: BackgroundRange](x: Self) {
       
-      @scala.inline
-      def setHigher(value: Double): Self = StObject.set(x, "higher", value.asInstanceOf[js.Any])
+      inline def setHigher(value: Double): Self = StObject.set(x, "higher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLower(value: Double): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+      inline def setLower(value: Double): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     }
   }
   
@@ -461,95 +457,66 @@ object Map_ {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutoColor(value: Boolean): Self = StObject.set(x, "autoColor", value.asInstanceOf[js.Any])
+      inline def setAutoColor(value: Boolean): Self = StObject.set(x, "autoColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoColorUndefined: Self = StObject.set(x, "autoColor", js.undefined)
+      inline def setAutoColorUndefined: Self = StObject.set(x, "autoColor", js.undefined)
       
-      @scala.inline
-      def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setCenter(value: IPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: IPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setEngineType(value: EngineType): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
+      inline def setEngineType(value: EngineType): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineTypeUndefined: Self = StObject.set(x, "engineType", js.undefined)
+      inline def setEngineTypeUndefined: Self = StObject.set(x, "engineType", js.undefined)
       
-      @scala.inline
-      def setFixedCenter(value: Boolean): Self = StObject.set(x, "fixedCenter", value.asInstanceOf[js.Any])
+      inline def setFixedCenter(value: Boolean): Self = StObject.set(x, "fixedCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedCenterUndefined: Self = StObject.set(x, "fixedCenter", js.undefined)
+      inline def setFixedCenterUndefined: Self = StObject.set(x, "fixedCenter", js.undefined)
       
-      @scala.inline
-      def setImprint(value: typings.heremaps.H.map.Imprint.Options): Self = StObject.set(x, "imprint", value.asInstanceOf[js.Any])
+      inline def setImprint(value: typings.heremaps.H.map.Imprint.Options): Self = StObject.set(x, "imprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImprintUndefined: Self = StObject.set(x, "imprint", js.undefined)
+      inline def setImprintUndefined: Self = StObject.set(x, "imprint", js.undefined)
       
-      @scala.inline
-      def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+      inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+      inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setRenderBaseBackground(value: BackgroundRange): Self = StObject.set(x, "renderBaseBackground", value.asInstanceOf[js.Any])
+      inline def setRenderBaseBackground(value: BackgroundRange): Self = StObject.set(x, "renderBaseBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderBaseBackgroundUndefined: Self = StObject.set(x, "renderBaseBackground", js.undefined)
+      inline def setRenderBaseBackgroundUndefined: Self = StObject.set(x, "renderBaseBackground", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
 }

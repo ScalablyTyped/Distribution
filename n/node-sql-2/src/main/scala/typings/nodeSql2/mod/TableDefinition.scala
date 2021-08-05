@@ -23,8 +23,7 @@ trait TableDefinition[Name /* <: String */, Row] extends StObject {
 }
 object TableDefinition {
   
-  @scala.inline
-  def apply[Name /* <: String */, Row](
+  inline def apply[Name /* <: String */, Row](
     columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
     */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row],
@@ -35,38 +34,28 @@ object TableDefinition {
     __obj.asInstanceOf[TableDefinition[Name, Row]]
   }
   
-  @scala.inline
-  implicit class TableDefinitionMutableBuilder[Self <: TableDefinition[?, ?], Name /* <: String */, Row] (val x: Self & (TableDefinition[Name, Row])) extends AnyVal {
+  extension [Self <: TableDefinition[?, ?], Name /* <: String */, Row](x: Self & (TableDefinition[Name, Row])) {
     
-    @scala.inline
-    def setColumns(
+    inline def setColumns(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
       */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row]
     ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialect(value: SQLDialects): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
+    inline def setDialect(value: SQLDialects): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
+    inline def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
     
-    @scala.inline
-    def setForeignKeys(value: typings.nodeSql2.anon.Columns[Row]): Self = StObject.set(x, "foreignKeys", value.asInstanceOf[js.Any])
+    inline def setForeignKeys(value: typings.nodeSql2.anon.Columns[Row]): Self = StObject.set(x, "foreignKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
+    inline def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
     
-    @scala.inline
-    def setIsTemporary(value: Boolean): Self = StObject.set(x, "isTemporary", value.asInstanceOf[js.Any])
+    inline def setIsTemporary(value: Boolean): Self = StObject.set(x, "isTemporary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTemporaryUndefined: Self = StObject.set(x, "isTemporary", js.undefined)
+    inline def setIsTemporaryUndefined: Self = StObject.set(x, "isTemporary", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

@@ -29,55 +29,39 @@ trait ResultsOptions extends StObject {
 }
 object ResultsOptions {
   
-  @scala.inline
-  def apply(): ResultsOptions = {
+  inline def apply(): ResultsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultsOptions]
   }
   
-  @scala.inline
-  implicit class ResultsOptionsMutableBuilder[Self <: ResultsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResultsOptions](x: Self) {
     
-    @scala.inline
-    def setBreakDown(value: Boolean): Self = StObject.set(x, "breakDown", value.asInstanceOf[js.Any])
+    inline def setBreakDown(value: Boolean): Self = StObject.set(x, "breakDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakDownUndefined: Self = StObject.set(x, "breakDown", js.undefined)
+    inline def setBreakDownUndefined: Self = StObject.set(x, "breakDown", js.undefined)
     
-    @scala.inline
-    def setDomains(value: Boolean): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: Boolean): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setMedianMetric(value: String): Self = StObject.set(x, "medianMetric", value.asInstanceOf[js.Any])
+    inline def setMedianMetric(value: String): Self = StObject.set(x, "medianMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianMetricUndefined: Self = StObject.set(x, "medianMetric", js.undefined)
+    inline def setMedianMetricUndefined: Self = StObject.set(x, "medianMetric", js.undefined)
     
-    @scala.inline
-    def setPageSpeed(value: Boolean): Self = StObject.set(x, "pageSpeed", value.asInstanceOf[js.Any])
+    inline def setPageSpeed(value: Boolean): Self = StObject.set(x, "pageSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSpeedUndefined: Self = StObject.set(x, "pageSpeed", js.undefined)
+    inline def setPageSpeedUndefined: Self = StObject.set(x, "pageSpeed", js.undefined)
     
-    @scala.inline
-    def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
-    @scala.inline
-    def setRequests(value: Boolean): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: Boolean): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setSpecs(value: String): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+    inline def setSpecs(value: String): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
+    inline def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
   }
 }

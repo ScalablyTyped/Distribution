@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DiscreteScaleType extends StObject
 object DiscreteScaleType {
   
-  @scala.inline
-  def band: typings.vegaTypings.vegaTypingsStrings.band = "band".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.band]
+  inline def band: typings.vegaTypings.vegaTypingsStrings.band = "band".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.band]
   
-  @scala.inline
-  def ordinal: typings.vegaTypings.vegaTypingsStrings.ordinal = "ordinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ordinal]
+  inline def ordinal: typings.vegaTypings.vegaTypingsStrings.ordinal = "ordinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ordinal]
   
-  @scala.inline
-  def point: typings.vegaTypings.vegaTypingsStrings.point = "point".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.point]
+  inline def point: typings.vegaTypings.vegaTypingsStrings.point = "point".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.point]
 }

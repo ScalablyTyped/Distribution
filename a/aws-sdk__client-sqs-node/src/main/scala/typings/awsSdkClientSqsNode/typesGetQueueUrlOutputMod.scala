@@ -25,23 +25,18 @@ object typesGetQueueUrlOutputMod {
   }
   object GetQueueUrlOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetQueueUrlOutput = {
+    inline def apply($metadata: ResponseMetadata): GetQueueUrlOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetQueueUrlOutput]
     }
     
-    @scala.inline
-    implicit class GetQueueUrlOutputMutableBuilder[Self <: GetQueueUrlOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetQueueUrlOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+      inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUrlUndefined: Self = StObject.set(x, "QueueUrl", js.undefined)
+      inline def setQueueUrlUndefined: Self = StObject.set(x, "QueueUrl", js.undefined)
     }
   }
 }

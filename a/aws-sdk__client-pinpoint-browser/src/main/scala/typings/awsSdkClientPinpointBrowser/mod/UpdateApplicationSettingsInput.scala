@@ -10,8 +10,7 @@ trait UpdateApplicationSettingsInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateApplicationSettingsInputMod.UpdateApplicationSettingsInput
 object UpdateApplicationSettingsInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, WriteApplicationSettingsRequest: WriteApplicationSettingsRequest): UpdateApplicationSettingsInput = {
+  inline def apply(ApplicationId: String, WriteApplicationSettingsRequest: WriteApplicationSettingsRequest): UpdateApplicationSettingsInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteApplicationSettingsRequest = WriteApplicationSettingsRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationSettingsInput]
   }

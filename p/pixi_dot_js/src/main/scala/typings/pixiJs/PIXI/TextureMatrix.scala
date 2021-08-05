@@ -30,14 +30,14 @@ trait TextureMatrix extends StObject {
     * @member {number} PIXI.TextureMatrix#_textureID
     * @protected
     */
-  var _textureID: Double = js.native
+  /* protected */ var _textureID: Double = js.native
   
   /**
     * Tracks Texture frame changes
     * @member {number} PIXI.TextureMatrix#_updateID
     * @protected
     */
-  var _updateID: Double = js.native
+  /* protected */ var _updateID: Double = js.native
   
   /**
     * Changes frame clamping

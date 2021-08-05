@@ -53,61 +53,43 @@ trait MedicationAdministrationDosage
 }
 object MedicationAdministrationDosage {
   
-  @scala.inline
-  def apply(): MedicationAdministrationDosage = {
+  inline def apply(): MedicationAdministrationDosage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicationAdministrationDosage]
   }
   
-  @scala.inline
-  implicit class MedicationAdministrationDosageMutableBuilder[Self <: MedicationAdministrationDosage] (val x: Self) extends AnyVal {
+  extension [Self <: MedicationAdministrationDosage](x: Self) {
     
-    @scala.inline
-    def setDose(value: Quantity): Self = StObject.set(x, "dose", value.asInstanceOf[js.Any])
+    inline def setDose(value: Quantity): Self = StObject.set(x, "dose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoseUndefined: Self = StObject.set(x, "dose", js.undefined)
+    inline def setDoseUndefined: Self = StObject.set(x, "dose", js.undefined)
     
-    @scala.inline
-    def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setRateQuantity(value: Quantity): Self = StObject.set(x, "rateQuantity", value.asInstanceOf[js.Any])
+    inline def setRateQuantity(value: Quantity): Self = StObject.set(x, "rateQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateQuantityUndefined: Self = StObject.set(x, "rateQuantity", js.undefined)
+    inline def setRateQuantityUndefined: Self = StObject.set(x, "rateQuantity", js.undefined)
     
-    @scala.inline
-    def setRateRatio(value: Ratio): Self = StObject.set(x, "rateRatio", value.asInstanceOf[js.Any])
+    inline def setRateRatio(value: Ratio): Self = StObject.set(x, "rateRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateRatioUndefined: Self = StObject.set(x, "rateRatio", js.undefined)
+    inline def setRateRatioUndefined: Self = StObject.set(x, "rateRatio", js.undefined)
     
-    @scala.inline
-    def setRoute(value: CodeableConcept): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: CodeableConcept): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
-    @scala.inline
-    def setSite(value: CodeableConcept): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: CodeableConcept): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+    inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
+    inline def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
   }
 }

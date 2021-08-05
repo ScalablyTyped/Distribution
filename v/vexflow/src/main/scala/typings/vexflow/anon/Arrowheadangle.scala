@@ -34,8 +34,7 @@ trait Arrowheadangle extends StObject {
 }
 object Arrowheadangle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrowhead_angle: Double,
     arrowhead_length: Double,
     color: String,
@@ -53,46 +52,32 @@ object Arrowheadangle {
     __obj.asInstanceOf[Arrowheadangle]
   }
   
-  @scala.inline
-  implicit class ArrowheadangleMutableBuilder[Self <: Arrowheadangle] (val x: Self) extends AnyVal {
+  extension [Self <: Arrowheadangle](x: Self) {
     
-    @scala.inline
-    def setArrowhead_angle(value: Double): Self = StObject.set(x, "arrowhead_angle", value.asInstanceOf[js.Any])
+    inline def setArrowhead_angle(value: Double): Self = StObject.set(x, "arrowhead_angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowhead_length(value: Double): Self = StObject.set(x, "arrowhead_length", value.asInstanceOf[js.Any])
+    inline def setArrowhead_length(value: Double): Self = StObject.set(x, "arrowhead_length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraw_end_arrow(value: Boolean): Self = StObject.set(x, "draw_end_arrow", value.asInstanceOf[js.Any])
+    inline def setDraw_end_arrow(value: Boolean): Self = StObject.set(x, "draw_end_arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraw_start_arrow(value: Boolean): Self = StObject.set(x, "draw_start_arrow", value.asInstanceOf[js.Any])
+    inline def setDraw_start_arrow(value: Boolean): Self = StObject.set(x, "draw_start_arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine_dash(value: js.Array[Double]): Self = StObject.set(x, "line_dash", value.asInstanceOf[js.Any])
+    inline def setLine_dash(value: js.Array[Double]): Self = StObject.set(x, "line_dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine_dashVarargs(value: Double*): Self = StObject.set(x, "line_dash", js.Array(value :_*))
+    inline def setLine_dashVarargs(value: Double*): Self = StObject.set(x, "line_dash", js.Array(value :_*))
     
-    @scala.inline
-    def setLine_width(value: Double): Self = StObject.set(x, "line_width", value.asInstanceOf[js.Any])
+    inline def setLine_width(value: Double): Self = StObject.set(x, "line_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding_left(value: Double): Self = StObject.set(x, "padding_left", value.asInstanceOf[js.Any])
+    inline def setPadding_left(value: Double): Self = StObject.set(x, "padding_left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding_right(value: Double): Self = StObject.set(x, "padding_right", value.asInstanceOf[js.Any])
+    inline def setPadding_right(value: Double): Self = StObject.set(x, "padding_right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRounded_end(value: Boolean): Self = StObject.set(x, "rounded_end", value.asInstanceOf[js.Any])
+    inline def setRounded_end(value: Boolean): Self = StObject.set(x, "rounded_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_justification(value: TextJustification): Self = StObject.set(x, "text_justification", value.asInstanceOf[js.Any])
+    inline def setText_justification(value: TextJustification): Self = StObject.set(x, "text_justification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_position_vertical(value: TextVerticalPosition): Self = StObject.set(x, "text_position_vertical", value.asInstanceOf[js.Any])
+    inline def setText_position_vertical(value: TextVerticalPosition): Self = StObject.set(x, "text_position_vertical", value.asInstanceOf[js.Any])
   }
 }

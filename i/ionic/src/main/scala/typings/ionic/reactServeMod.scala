@@ -15,7 +15,7 @@ object reactServeMod {
   class ReactServeCLI protected () extends ServeCLI[ReactServeOptions] {
     def this(e: ServeRunnerDeps) = this()
     
-    var chunks: Double = js.native
+    /* protected */ var chunks: Double = js.native
     
     @JSName("script")
     val script_ReactServeCLI: /* "ionic:serve" */ String = js.native

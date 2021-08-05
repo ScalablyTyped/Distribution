@@ -22,25 +22,19 @@ trait IPersonDocumentCreateUpdateOptions extends StObject {
 }
 object IPersonDocumentCreateUpdateOptions {
   
-  @scala.inline
-  def apply(): IPersonDocumentCreateUpdateOptions = {
+  inline def apply(): IPersonDocumentCreateUpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPersonDocumentCreateUpdateOptions]
   }
   
-  @scala.inline
-  implicit class IPersonDocumentCreateUpdateOptionsMutableBuilder[Self <: IPersonDocumentCreateUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonDocumentCreateUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
+    inline def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
     
-    @scala.inline
-    def setFront(value: String): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+    inline def setFront(value: String): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
+    inline def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
   }
 }

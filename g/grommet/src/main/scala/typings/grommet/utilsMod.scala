@@ -30,20 +30,14 @@ object utilsMod {
   @js.native
   val deepMerge: DeepMerge_ = js.native
   
-  @scala.inline
-  def isObject(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isObject(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def normalizeColor(color: String, theme: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def normalizeColor(color: String, theme: js.Object, required: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def normalizeColor(color: Dark, theme: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def normalizeColor(color: Dark, theme: js.Object, required: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def normalizeColor(color: String, theme: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def normalizeColor(color: String, theme: js.Object, required: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def normalizeColor(color: Dark, theme: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def normalizeColor(color: Dark, theme: js.Object, required: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def removeUndefined[T /* <: js.Object */](obj: T): NonUndefinedProps[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[NonUndefinedProps[T]]
+  inline def removeUndefined[T /* <: js.Object */](obj: T): NonUndefinedProps[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[NonUndefinedProps[T]]
   
   type A11yTitleType = String
   
@@ -58,23 +52,17 @@ object utilsMod {
   trait AlignContentType extends StObject
   object AlignContentType {
     
-    @scala.inline
-    def around: typings.grommet.grommetStrings.around = "around".asInstanceOf[typings.grommet.grommetStrings.around]
+    inline def around: typings.grommet.grommetStrings.around = "around".asInstanceOf[typings.grommet.grommetStrings.around]
     
-    @scala.inline
-    def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
+    inline def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
     
-    @scala.inline
-    def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
+    inline def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
     
-    @scala.inline
-    def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
+    inline def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
     
-    @scala.inline
-    def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
+    inline def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
     
-    @scala.inline
-    def stretch: typings.grommet.grommetStrings.stretch = "stretch".asInstanceOf[typings.grommet.grommetStrings.stretch]
+    inline def stretch: typings.grommet.grommetStrings.stretch = "stretch".asInstanceOf[typings.grommet.grommetStrings.stretch]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -86,17 +74,13 @@ object utilsMod {
   trait AlignSelfType extends StObject
   object AlignSelfType {
     
-    @scala.inline
-    def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
+    inline def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
     
-    @scala.inline
-    def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
+    inline def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
     
-    @scala.inline
-    def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
+    inline def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
     
-    @scala.inline
-    def stretch: typings.grommet.grommetStrings.stretch = "stretch".asInstanceOf[typings.grommet.grommetStrings.stretch]
+    inline def stretch: typings.grommet.grommetStrings.stretch = "stretch".asInstanceOf[typings.grommet.grommetStrings.stretch]
   }
   
   type AnimateType = Boolean
@@ -149,35 +133,25 @@ object utilsMod {
        with _BorderType
   object BoxSideType {
     
-    @scala.inline
-    def all: typings.grommet.grommetStrings.all = "all".asInstanceOf[typings.grommet.grommetStrings.all]
+    inline def all: typings.grommet.grommetStrings.all = "all".asInstanceOf[typings.grommet.grommetStrings.all]
     
-    @scala.inline
-    def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
+    inline def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
     
-    @scala.inline
-    def bottom: typings.grommet.grommetStrings.bottom = "bottom".asInstanceOf[typings.grommet.grommetStrings.bottom]
+    inline def bottom: typings.grommet.grommetStrings.bottom = "bottom".asInstanceOf[typings.grommet.grommetStrings.bottom]
     
-    @scala.inline
-    def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
+    inline def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
     
-    @scala.inline
-    def horizontal: typings.grommet.grommetStrings.horizontal = "horizontal".asInstanceOf[typings.grommet.grommetStrings.horizontal]
+    inline def horizontal: typings.grommet.grommetStrings.horizontal = "horizontal".asInstanceOf[typings.grommet.grommetStrings.horizontal]
     
-    @scala.inline
-    def left: typings.grommet.grommetStrings.left = "left".asInstanceOf[typings.grommet.grommetStrings.left]
+    inline def left: typings.grommet.grommetStrings.left = "left".asInstanceOf[typings.grommet.grommetStrings.left]
     
-    @scala.inline
-    def right: typings.grommet.grommetStrings.right = "right".asInstanceOf[typings.grommet.grommetStrings.right]
+    inline def right: typings.grommet.grommetStrings.right = "right".asInstanceOf[typings.grommet.grommetStrings.right]
     
-    @scala.inline
-    def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
+    inline def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
     
-    @scala.inline
-    def top: typings.grommet.grommetStrings.top = "top".asInstanceOf[typings.grommet.grommetStrings.top]
+    inline def top: typings.grommet.grommetStrings.top = "top".asInstanceOf[typings.grommet.grommetStrings.top]
     
-    @scala.inline
-    def vertical: typings.grommet.grommetStrings.vertical = "vertical".asInstanceOf[typings.grommet.grommetStrings.vertical]
+    inline def vertical: typings.grommet.grommetStrings.vertical = "vertical".asInstanceOf[typings.grommet.grommetStrings.vertical]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -204,32 +178,23 @@ object utilsMod {
   trait BoxStyleType extends StObject
   object BoxStyleType {
     
-    @scala.inline
-    def dashed: typings.grommet.grommetStrings.dashed = "dashed".asInstanceOf[typings.grommet.grommetStrings.dashed]
+    inline def dashed: typings.grommet.grommetStrings.dashed = "dashed".asInstanceOf[typings.grommet.grommetStrings.dashed]
     
-    @scala.inline
-    def dotted: typings.grommet.grommetStrings.dotted = "dotted".asInstanceOf[typings.grommet.grommetStrings.dotted]
+    inline def dotted: typings.grommet.grommetStrings.dotted = "dotted".asInstanceOf[typings.grommet.grommetStrings.dotted]
     
-    @scala.inline
-    def double: typings.grommet.grommetStrings.double = "double".asInstanceOf[typings.grommet.grommetStrings.double]
+    inline def double: typings.grommet.grommetStrings.double = "double".asInstanceOf[typings.grommet.grommetStrings.double]
     
-    @scala.inline
-    def groove: typings.grommet.grommetStrings.groove = "groove".asInstanceOf[typings.grommet.grommetStrings.groove]
+    inline def groove: typings.grommet.grommetStrings.groove = "groove".asInstanceOf[typings.grommet.grommetStrings.groove]
     
-    @scala.inline
-    def hidden: typings.grommet.grommetStrings.hidden = "hidden".asInstanceOf[typings.grommet.grommetStrings.hidden]
+    inline def hidden: typings.grommet.grommetStrings.hidden = "hidden".asInstanceOf[typings.grommet.grommetStrings.hidden]
     
-    @scala.inline
-    def inset: typings.grommet.grommetStrings.inset = "inset".asInstanceOf[typings.grommet.grommetStrings.inset]
+    inline def inset: typings.grommet.grommetStrings.inset = "inset".asInstanceOf[typings.grommet.grommetStrings.inset]
     
-    @scala.inline
-    def outset: typings.grommet.grommetStrings.outset = "outset".asInstanceOf[typings.grommet.grommetStrings.outset]
+    inline def outset: typings.grommet.grommetStrings.outset = "outset".asInstanceOf[typings.grommet.grommetStrings.outset]
     
-    @scala.inline
-    def ridge: typings.grommet.grommetStrings.ridge = "ridge".asInstanceOf[typings.grommet.grommetStrings.ridge]
+    inline def ridge: typings.grommet.grommetStrings.ridge = "ridge".asInstanceOf[typings.grommet.grommetStrings.ridge]
     
-    @scala.inline
-    def solid: typings.grommet.grommetStrings.solid = "solid".asInstanceOf[typings.grommet.grommetStrings.solid]
+    inline def solid: typings.grommet.grommetStrings.solid = "solid".asInstanceOf[typings.grommet.grommetStrings.solid]
   }
   
   trait BreakpointBorderSize extends StObject {
@@ -246,44 +211,32 @@ object utilsMod {
   }
   object BreakpointBorderSize {
     
-    @scala.inline
-    def apply(): BreakpointBorderSize = {
+    inline def apply(): BreakpointBorderSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreakpointBorderSize]
     }
     
-    @scala.inline
-    implicit class BreakpointBorderSizeMutableBuilder[Self <: BreakpointBorderSize] (val x: Self) extends AnyVal {
+    extension [Self <: BreakpointBorderSize](x: Self) {
       
-      @scala.inline
-      def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+      inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
       
-      @scala.inline
-      def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+      inline def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
+      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
       
-      @scala.inline
-      def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+      inline def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
+      inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
     }
   }
   
@@ -307,62 +260,44 @@ object utilsMod {
   }
   object BreakpointEdgeSize {
     
-    @scala.inline
-    def apply(): BreakpointEdgeSize = {
+    inline def apply(): BreakpointEdgeSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreakpointEdgeSize]
     }
     
-    @scala.inline
-    implicit class BreakpointEdgeSizeMutableBuilder[Self <: BreakpointEdgeSize] (val x: Self) extends AnyVal {
+    extension [Self <: BreakpointEdgeSize](x: Self) {
       
-      @scala.inline
-      def setHair(value: String): Self = StObject.set(x, "hair", value.asInstanceOf[js.Any])
+      inline def setHair(value: String): Self = StObject.set(x, "hair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHairUndefined: Self = StObject.set(x, "hair", js.undefined)
+      inline def setHairUndefined: Self = StObject.set(x, "hair", js.undefined)
       
-      @scala.inline
-      def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+      inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
       
-      @scala.inline
-      def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+      inline def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
+      inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
       
-      @scala.inline
-      def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+      inline def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
+      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
       
-      @scala.inline
-      def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+      inline def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
+      inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
       
-      @scala.inline
-      def setXxsmall(value: String): Self = StObject.set(x, "xxsmall", value.asInstanceOf[js.Any])
+      inline def setXxsmall(value: String): Self = StObject.set(x, "xxsmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxsmallUndefined: Self = StObject.set(x, "xxsmall", js.undefined)
+      inline def setXxsmallUndefined: Self = StObject.set(x, "xxsmall", js.undefined)
     }
   }
   
@@ -384,56 +319,40 @@ object utilsMod {
   }
   object BreakpointSize {
     
-    @scala.inline
-    def apply(): BreakpointSize = {
+    inline def apply(): BreakpointSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreakpointSize]
     }
     
-    @scala.inline
-    implicit class BreakpointSizeMutableBuilder[Self <: BreakpointSize] (val x: Self) extends AnyVal {
+    extension [Self <: BreakpointSize](x: Self) {
       
-      @scala.inline
-      def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+      inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
       
-      @scala.inline
-      def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+      inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
       
-      @scala.inline
-      def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+      inline def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
+      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
       
-      @scala.inline
-      def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+      inline def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
+      inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
       
-      @scala.inline
-      def setXxsmall(value: String): Self = StObject.set(x, "xxsmall", value.asInstanceOf[js.Any])
+      inline def setXxsmall(value: String): Self = StObject.set(x, "xxsmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxsmallUndefined: Self = StObject.set(x, "xxsmall", js.undefined)
+      inline def setXxsmallUndefined: Self = StObject.set(x, "xxsmall", js.undefined)
     }
   }
   
@@ -465,23 +384,17 @@ object utilsMod {
        with _GapType
   object EdgeSizeType {
     
-    @scala.inline
-    def large: typings.grommet.grommetStrings.large = "large".asInstanceOf[typings.grommet.grommetStrings.large]
+    inline def large: typings.grommet.grommetStrings.large = "large".asInstanceOf[typings.grommet.grommetStrings.large]
     
-    @scala.inline
-    def medium: typings.grommet.grommetStrings.medium = "medium".asInstanceOf[typings.grommet.grommetStrings.medium]
+    inline def medium: typings.grommet.grommetStrings.medium = "medium".asInstanceOf[typings.grommet.grommetStrings.medium]
     
-    @scala.inline
-    def small: typings.grommet.grommetStrings.small = "small".asInstanceOf[typings.grommet.grommetStrings.small]
+    inline def small: typings.grommet.grommetStrings.small = "small".asInstanceOf[typings.grommet.grommetStrings.small]
     
-    @scala.inline
-    def xlarge: typings.grommet.grommetStrings.xlarge = "xlarge".asInstanceOf[typings.grommet.grommetStrings.xlarge]
+    inline def xlarge: typings.grommet.grommetStrings.xlarge = "xlarge".asInstanceOf[typings.grommet.grommetStrings.xlarge]
     
-    @scala.inline
-    def xsmall: typings.grommet.grommetStrings.xsmall = "xsmall".asInstanceOf[typings.grommet.grommetStrings.xsmall]
+    inline def xsmall: typings.grommet.grommetStrings.xsmall = "xsmall".asInstanceOf[typings.grommet.grommetStrings.xsmall]
     
-    @scala.inline
-    def xxsmall: typings.grommet.grommetStrings.xxsmall = "xxsmall".asInstanceOf[typings.grommet.grommetStrings.xxsmall]
+    inline def xxsmall: typings.grommet.grommetStrings.xxsmall = "xxsmall".asInstanceOf[typings.grommet.grommetStrings.xxsmall]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -532,23 +445,17 @@ object utilsMod {
   trait JustifyContentType extends StObject
   object JustifyContentType {
     
-    @scala.inline
-    def around: typings.grommet.grommetStrings.around = "around".asInstanceOf[typings.grommet.grommetStrings.around]
+    inline def around: typings.grommet.grommetStrings.around = "around".asInstanceOf[typings.grommet.grommetStrings.around]
     
-    @scala.inline
-    def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
+    inline def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
     
-    @scala.inline
-    def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
+    inline def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
     
-    @scala.inline
-    def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
+    inline def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
     
-    @scala.inline
-    def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
+    inline def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
     
-    @scala.inline
-    def stretch: typings.grommet.grommetStrings.stretch = "stretch".asInstanceOf[typings.grommet.grommetStrings.stretch]
+    inline def stretch: typings.grommet.grommetStrings.stretch = "stretch".asInstanceOf[typings.grommet.grommetStrings.stretch]
   }
   
   type KeyboardType = js.Function1[/* event */ KeyboardEvent[HTMLElement], Unit]
@@ -781,14 +688,11 @@ object utilsMod {
   trait TextAlignType extends StObject
   object TextAlignType {
     
-    @scala.inline
-    def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
+    inline def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
     
-    @scala.inline
-    def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
+    inline def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
     
-    @scala.inline
-    def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
+    inline def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
   }
   
   /* Rewritten from type alias, can be one of: 

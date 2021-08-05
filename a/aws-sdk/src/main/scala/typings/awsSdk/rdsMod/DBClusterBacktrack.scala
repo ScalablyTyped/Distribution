@@ -38,49 +38,35 @@ trait DBClusterBacktrack extends StObject {
 }
 object DBClusterBacktrack {
   
-  @scala.inline
-  def apply(): DBClusterBacktrack = {
+  inline def apply(): DBClusterBacktrack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterBacktrack]
   }
   
-  @scala.inline
-  implicit class DBClusterBacktrackMutableBuilder[Self <: DBClusterBacktrack] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterBacktrack](x: Self) {
     
-    @scala.inline
-    def setBacktrackIdentifier(value: String): Self = StObject.set(x, "BacktrackIdentifier", value.asInstanceOf[js.Any])
+    inline def setBacktrackIdentifier(value: String): Self = StObject.set(x, "BacktrackIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacktrackIdentifierUndefined: Self = StObject.set(x, "BacktrackIdentifier", js.undefined)
+    inline def setBacktrackIdentifierUndefined: Self = StObject.set(x, "BacktrackIdentifier", js.undefined)
     
-    @scala.inline
-    def setBacktrackRequestCreationTime(value: TStamp): Self = StObject.set(x, "BacktrackRequestCreationTime", value.asInstanceOf[js.Any])
+    inline def setBacktrackRequestCreationTime(value: TStamp): Self = StObject.set(x, "BacktrackRequestCreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacktrackRequestCreationTimeUndefined: Self = StObject.set(x, "BacktrackRequestCreationTime", js.undefined)
+    inline def setBacktrackRequestCreationTimeUndefined: Self = StObject.set(x, "BacktrackRequestCreationTime", js.undefined)
     
-    @scala.inline
-    def setBacktrackTo(value: TStamp): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
+    inline def setBacktrackTo(value: TStamp): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacktrackToUndefined: Self = StObject.set(x, "BacktrackTo", js.undefined)
+    inline def setBacktrackToUndefined: Self = StObject.set(x, "BacktrackTo", js.undefined)
     
-    @scala.inline
-    def setBacktrackedFrom(value: TStamp): Self = StObject.set(x, "BacktrackedFrom", value.asInstanceOf[js.Any])
+    inline def setBacktrackedFrom(value: TStamp): Self = StObject.set(x, "BacktrackedFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacktrackedFromUndefined: Self = StObject.set(x, "BacktrackedFrom", js.undefined)
+    inline def setBacktrackedFromUndefined: Self = StObject.set(x, "BacktrackedFrom", js.undefined)
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
+    inline def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

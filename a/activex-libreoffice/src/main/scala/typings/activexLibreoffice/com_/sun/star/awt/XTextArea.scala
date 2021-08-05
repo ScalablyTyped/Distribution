@@ -19,8 +19,7 @@ trait XTextArea
 }
 object XTextArea {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TextLines: String,
     acquire: () => Unit,
     getTextLines: () => String,
@@ -31,13 +30,10 @@ object XTextArea {
     __obj.asInstanceOf[XTextArea]
   }
   
-  @scala.inline
-  implicit class XTextAreaMutableBuilder[Self <: XTextArea] (val x: Self) extends AnyVal {
+  extension [Self <: XTextArea](x: Self) {
     
-    @scala.inline
-    def setGetTextLines(value: () => String): Self = StObject.set(x, "getTextLines", js.Any.fromFunction0(value))
+    inline def setGetTextLines(value: () => String): Self = StObject.set(x, "getTextLines", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextLines(value: String): Self = StObject.set(x, "TextLines", value.asInstanceOf[js.Any])
+    inline def setTextLines(value: String): Self = StObject.set(x, "TextLines", value.asInstanceOf[js.Any])
   }
 }

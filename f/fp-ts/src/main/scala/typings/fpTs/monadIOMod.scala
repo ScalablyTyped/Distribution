@@ -22,8 +22,7 @@ object monadIOMod {
   }
   object MonadIO {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[
@@ -38,11 +37,9 @@ object monadIOMod {
       __obj.asInstanceOf[MonadIO[M]]
     }
     
-    @scala.inline
-    implicit class MonadIOMutableBuilder[Self <: MonadIO[?], M] (val x: Self & MonadIO[M]) extends AnyVal {
+    extension [Self <: MonadIO[?], M](x: Self & MonadIO[M]) {
       
-      @scala.inline
-      def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
+      inline def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
     }
   }
   
@@ -54,8 +51,7 @@ object monadIOMod {
   }
   object MonadIO1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[
@@ -70,11 +66,9 @@ object monadIOMod {
       __obj.asInstanceOf[MonadIO1[M]]
     }
     
-    @scala.inline
-    implicit class MonadIO1MutableBuilder[Self <: MonadIO1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & MonadIO1[M]) extends AnyVal {
+    extension [Self <: MonadIO1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & MonadIO1[M]) {
       
-      @scala.inline
-      def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
+      inline def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
     }
   }
   
@@ -86,8 +80,7 @@ object monadIOMod {
   }
   object MonadIO2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[
@@ -102,11 +95,9 @@ object monadIOMod {
       __obj.asInstanceOf[MonadIO2[M]]
     }
     
-    @scala.inline
-    implicit class MonadIO2MutableBuilder[Self <: MonadIO2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & MonadIO2[M]) extends AnyVal {
+    extension [Self <: MonadIO2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & MonadIO2[M]) {
       
-      @scala.inline
-      def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
+      inline def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
     }
   }
   
@@ -118,8 +109,7 @@ object monadIOMod {
   }
   object MonadIO2C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: M,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
@@ -135,11 +125,9 @@ object monadIOMod {
       __obj.asInstanceOf[MonadIO2C[M, E]]
     }
     
-    @scala.inline
-    implicit class MonadIO2CMutableBuilder[Self <: MonadIO2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (MonadIO2C[M, E])) extends AnyVal {
+    extension [Self <: MonadIO2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (MonadIO2C[M, E])) {
       
-      @scala.inline
-      def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
+      inline def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
     }
   }
   
@@ -151,8 +139,7 @@ object monadIOMod {
   }
   object MonadIO3 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[
@@ -167,11 +154,9 @@ object monadIOMod {
       __obj.asInstanceOf[MonadIO3[M]]
     }
     
-    @scala.inline
-    implicit class MonadIO3MutableBuilder[Self <: MonadIO3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & MonadIO3[M]) extends AnyVal {
+    extension [Self <: MonadIO3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & MonadIO3[M]) {
       
-      @scala.inline
-      def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
+      inline def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
     }
   }
   
@@ -183,8 +168,7 @@ object monadIOMod {
   }
   object MonadIO3C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       URI: M,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
@@ -200,11 +184,9 @@ object monadIOMod {
       __obj.asInstanceOf[MonadIO3C[M, E]]
     }
     
-    @scala.inline
-    implicit class MonadIO3CMutableBuilder[Self <: MonadIO3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (MonadIO3C[M, E])) extends AnyVal {
+    extension [Self <: MonadIO3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (MonadIO3C[M, E])) {
       
-      @scala.inline
-      def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
+      inline def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
     }
   }
   
@@ -216,8 +198,7 @@ object monadIOMod {
   }
   object MonadIO4 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[
@@ -232,11 +213,9 @@ object monadIOMod {
       __obj.asInstanceOf[MonadIO4[M]]
     }
     
-    @scala.inline
-    implicit class MonadIO4MutableBuilder[Self <: MonadIO4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & MonadIO4[M]) extends AnyVal {
+    extension [Self <: MonadIO4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & MonadIO4[M]) {
       
-      @scala.inline
-      def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
+      inline def setFromIO(value: IO_[js.Any] => js.Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
     }
   }
 }

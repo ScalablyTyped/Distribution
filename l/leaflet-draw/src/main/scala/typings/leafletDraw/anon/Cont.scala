@@ -14,22 +14,17 @@ trait Cont extends StObject {
 }
 object Cont {
   
-  @scala.inline
-  def apply(cont: String, end: String, start: String): Cont = {
+  inline def apply(cont: String, end: String, start: String): Cont = {
     val __obj = js.Dynamic.literal(cont = cont.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cont]
   }
   
-  @scala.inline
-  implicit class ContMutableBuilder[Self <: Cont] (val x: Self) extends AnyVal {
+  extension [Self <: Cont](x: Self) {
     
-    @scala.inline
-    def setCont(value: String): Self = StObject.set(x, "cont", value.asInstanceOf[js.Any])
+    inline def setCont(value: String): Self = StObject.set(x, "cont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

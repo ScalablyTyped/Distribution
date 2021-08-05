@@ -23,40 +23,29 @@ trait DomainState extends StObject {
 }
 object DomainState {
   
-  @scala.inline
-  def apply(): DomainState = {
+  inline def apply(): DomainState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainState]
   }
   
-  @scala.inline
-  implicit class DomainStateMutableBuilder[Self <: DomainState] (val x: Self) extends AnyVal {
+  extension [Self <: DomainState](x: Self) {
     
-    @scala.inline
-    def setLastActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
+    inline def setLastActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastActionDateTimeNull: Self = StObject.set(x, "lastActionDateTime", null)
+    inline def setLastActionDateTimeNull: Self = StObject.set(x, "lastActionDateTime", null)
     
-    @scala.inline
-    def setLastActionDateTimeUndefined: Self = StObject.set(x, "lastActionDateTime", js.undefined)
+    inline def setLastActionDateTimeUndefined: Self = StObject.set(x, "lastActionDateTime", js.undefined)
     
-    @scala.inline
-    def setOperation(value: NullableOption[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: NullableOption[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationNull: Self = StObject.set(x, "operation", null)
+    inline def setOperationNull: Self = StObject.set(x, "operation", null)
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NullableOption[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NullableOption[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

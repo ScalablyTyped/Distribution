@@ -14,25 +14,19 @@ trait ResourceInfo extends StObject {
 }
 object ResourceInfo {
   
-  @scala.inline
-  def apply(): ResourceInfo = {
+  inline def apply(): ResourceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceInfo]
   }
   
-  @scala.inline
-  implicit class ResourceInfoMutableBuilder[Self <: ResourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceInfo](x: Self) {
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
-    @scala.inline
-    def setResourceTitle(value: String): Self = StObject.set(x, "resourceTitle", value.asInstanceOf[js.Any])
+    inline def setResourceTitle(value: String): Self = StObject.set(x, "resourceTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTitleUndefined: Self = StObject.set(x, "resourceTitle", js.undefined)
+    inline def setResourceTitleUndefined: Self = StObject.set(x, "resourceTitle", js.undefined)
   }
 }

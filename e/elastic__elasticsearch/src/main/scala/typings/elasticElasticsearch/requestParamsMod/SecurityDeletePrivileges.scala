@@ -17,25 +17,19 @@ trait SecurityDeletePrivileges
 }
 object SecurityDeletePrivileges {
   
-  @scala.inline
-  def apply(application: String, name: String): SecurityDeletePrivileges = {
+  inline def apply(application: String, name: String): SecurityDeletePrivileges = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityDeletePrivileges]
   }
   
-  @scala.inline
-  implicit class SecurityDeletePrivilegesMutableBuilder[Self <: SecurityDeletePrivileges] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityDeletePrivileges](x: Self) {
     
-    @scala.inline
-    def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

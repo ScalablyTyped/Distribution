@@ -14,8 +14,7 @@ object mod {
   @JSImport("nodeunit", "testCase")
   @js.native
   def testCase: ITestCase = js.native
-  @scala.inline
-  def testCase_=(x: ITestCase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("testCase")(x.asInstanceOf[js.Any])
+  inline def testCase_=(x: ITestCase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("testCase")(x.asInstanceOf[js.Any])
   
   type ICallbackFunction = js.Function1[/* err */ js.UndefOr[js.Any], Unit]
   
@@ -37,26 +36,20 @@ object mod {
   }
   object ITestGroup {
     
-    @scala.inline
-    def apply(): ITestGroup = {
+    inline def apply(): ITestGroup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITestGroup]
     }
     
-    @scala.inline
-    implicit class ITestGroupMutableBuilder[Self <: ITestGroup] (val x: Self) extends AnyVal {
+    extension [Self <: ITestGroup](x: Self) {
       
-      @scala.inline
-      def setSetUp(value: /* callback */ ICallbackFunction => Unit): Self = StObject.set(x, "setUp", js.Any.fromFunction1(value))
+      inline def setSetUp(value: /* callback */ ICallbackFunction => Unit): Self = StObject.set(x, "setUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUpUndefined: Self = StObject.set(x, "setUp", js.undefined)
+      inline def setSetUpUndefined: Self = StObject.set(x, "setUp", js.undefined)
       
-      @scala.inline
-      def setTearDown(value: /* callback */ ICallbackFunction => Unit): Self = StObject.set(x, "tearDown", js.Any.fromFunction1(value))
+      inline def setTearDown(value: /* callback */ ICallbackFunction => Unit): Self = StObject.set(x, "tearDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTearDownUndefined: Self = StObject.set(x, "tearDown", js.undefined)
+      inline def setTearDownUndefined: Self = StObject.set(x, "tearDown", js.undefined)
     }
   }
   

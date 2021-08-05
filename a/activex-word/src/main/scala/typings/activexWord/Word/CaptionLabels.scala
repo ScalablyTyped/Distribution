@@ -18,13 +18,12 @@ trait CaptionLabels extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.CaptionLabels_typekey")
+  /* private */ @JSName("Word.CaptionLabels_typekey")
   var WordDotCaptionLabels_typekey: CaptionLabels
 }
 object CaptionLabels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: String => CaptionLabel,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object CaptionLabels {
     __obj.asInstanceOf[CaptionLabels]
   }
   
-  @scala.inline
-  implicit class CaptionLabelsMutableBuilder[Self <: CaptionLabels] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionLabels](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => CaptionLabel): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => CaptionLabel): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => CaptionLabel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => CaptionLabel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCaptionLabels_typekey(value: CaptionLabels): Self = StObject.set(x, "Word.CaptionLabels_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCaptionLabels_typekey(value: CaptionLabels): Self = StObject.set(x, "Word.CaptionLabels_typekey", value.asInstanceOf[js.Any])
   }
 }

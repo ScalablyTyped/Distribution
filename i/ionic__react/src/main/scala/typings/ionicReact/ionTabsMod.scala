@@ -48,29 +48,22 @@ object ionTabsMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ChildFunction | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ChildFunction | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* ionTabContext */ IonTabsContextState => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* ionTabContext */ IonTabsContextState => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -84,18 +77,15 @@ object ionTabsMod {
       }
       object IntrinsicElements {
         
-        @scala.inline
-        def apply(`ion-tabs`: js.Any): IntrinsicElements = {
+        inline def apply(`ion-tabs`: js.Any): IntrinsicElements = {
           val __obj = js.Dynamic.literal()
           __obj.updateDynamic("ion-tabs")(`ion-tabs`.asInstanceOf[js.Any])
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        @scala.inline
-        implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+        extension [Self <: IntrinsicElements](x: Self) {
           
-          @scala.inline
-          def `setIon-tabs`(value: js.Any): Self = StObject.set(x, "ion-tabs", value.asInstanceOf[js.Any])
+          inline def `setIon-tabs`(value: js.Any): Self = StObject.set(x, "ion-tabs", value.asInstanceOf[js.Any])
         }
       }
     }

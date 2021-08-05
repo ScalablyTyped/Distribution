@@ -18,19 +18,15 @@ trait PropertyGroup extends StObject {
 }
 object PropertyGroup {
   
-  @scala.inline
-  def apply(PropertyGroupId: Id, PropertyMap: PropertyMap): PropertyGroup = {
+  inline def apply(PropertyGroupId: Id, PropertyMap: PropertyMap): PropertyGroup = {
     val __obj = js.Dynamic.literal(PropertyGroupId = PropertyGroupId.asInstanceOf[js.Any], PropertyMap = PropertyMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyGroup]
   }
   
-  @scala.inline
-  implicit class PropertyGroupMutableBuilder[Self <: PropertyGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyGroup](x: Self) {
     
-    @scala.inline
-    def setPropertyGroupId(value: Id): Self = StObject.set(x, "PropertyGroupId", value.asInstanceOf[js.Any])
+    inline def setPropertyGroupId(value: Id): Self = StObject.set(x, "PropertyGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyMap(value: PropertyMap): Self = StObject.set(x, "PropertyMap", value.asInstanceOf[js.Any])
+    inline def setPropertyMap(value: PropertyMap): Self = StObject.set(x, "PropertyMap", value.asInstanceOf[js.Any])
   }
 }

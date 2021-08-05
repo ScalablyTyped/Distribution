@@ -23,34 +23,25 @@ trait TableAutoScalingDescription extends StObject {
 }
 object TableAutoScalingDescription {
   
-  @scala.inline
-  def apply(): TableAutoScalingDescription = {
+  inline def apply(): TableAutoScalingDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableAutoScalingDescription]
   }
   
-  @scala.inline
-  implicit class TableAutoScalingDescriptionMutableBuilder[Self <: TableAutoScalingDescription] (val x: Self) extends AnyVal {
+  extension [Self <: TableAutoScalingDescription](x: Self) {
     
-    @scala.inline
-    def setReplicas(value: ReplicaAutoScalingDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: ReplicaAutoScalingDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
     
-    @scala.inline
-    def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
-    @scala.inline
-    def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
+    inline def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
+    inline def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
   }
 }

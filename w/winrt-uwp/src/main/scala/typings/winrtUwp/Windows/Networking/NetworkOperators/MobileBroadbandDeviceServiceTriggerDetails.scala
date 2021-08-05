@@ -19,22 +19,17 @@ trait MobileBroadbandDeviceServiceTriggerDetails extends StObject {
 }
 object MobileBroadbandDeviceServiceTriggerDetails {
   
-  @scala.inline
-  def apply(deviceId: String, deviceServiceId: String, receivedData: IBuffer): MobileBroadbandDeviceServiceTriggerDetails = {
+  inline def apply(deviceId: String, deviceServiceId: String, receivedData: IBuffer): MobileBroadbandDeviceServiceTriggerDetails = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], deviceServiceId = deviceServiceId.asInstanceOf[js.Any], receivedData = receivedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandDeviceServiceTriggerDetails]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandDeviceServiceTriggerDetailsMutableBuilder[Self <: MobileBroadbandDeviceServiceTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandDeviceServiceTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
+    inline def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedData(value: IBuffer): Self = StObject.set(x, "receivedData", value.asInstanceOf[js.Any])
+    inline def setReceivedData(value: IBuffer): Self = StObject.set(x, "receivedData", value.asInstanceOf[js.Any])
   }
 }

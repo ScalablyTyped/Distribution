@@ -12,19 +12,15 @@ trait HasChangesChangedEventArgs extends StObject {
 }
 object HasChangesChangedEventArgs {
   
-  @scala.inline
-  def apply(entityManager: EntityManager, hasChanges: Boolean): HasChangesChangedEventArgs = {
+  inline def apply(entityManager: EntityManager, hasChanges: Boolean): HasChangesChangedEventArgs = {
     val __obj = js.Dynamic.literal(entityManager = entityManager.asInstanceOf[js.Any], hasChanges = hasChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasChangesChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class HasChangesChangedEventArgsMutableBuilder[Self <: HasChangesChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: HasChangesChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
+    inline def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasChanges(value: Boolean): Self = StObject.set(x, "hasChanges", value.asInstanceOf[js.Any])
+    inline def setHasChanges(value: Boolean): Self = StObject.set(x, "hasChanges", value.asInstanceOf[js.Any])
   }
 }

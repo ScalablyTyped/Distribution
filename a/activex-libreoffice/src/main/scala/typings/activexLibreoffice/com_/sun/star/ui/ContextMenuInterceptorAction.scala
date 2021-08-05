@@ -19,18 +19,14 @@ trait ContextMenuInterceptorAction extends StObject
 object ContextMenuInterceptorAction {
   
   /** the context menu must not be executed. The next registered {@link XContextMenuInterceptor} should not be notified. */
-  @scala.inline
-  def CANCELLED: `1` = 1.asInstanceOf[`1`]
+  inline def CANCELLED: `1` = 1.asInstanceOf[`1`]
   
   /** the menu has been modified and the next registered {@link XContextMenuInterceptor} should be notified. */
-  @scala.inline
-  def CONTINUE_MODIFIED: `3` = 3.asInstanceOf[`3`]
+  inline def CONTINUE_MODIFIED: `3` = 3.asInstanceOf[`3`]
   
   /** the menu has been modified and should be executed without notifying the next registered {@link XContextMenuInterceptor} . */
-  @scala.inline
-  def EXECUTE_MODIFIED: `2` = 2.asInstanceOf[`2`]
+  inline def EXECUTE_MODIFIED: `2` = 2.asInstanceOf[`2`]
   
   /** the {@link XContextMenuInterceptor} has ignored the call. The next registered {@link XContextMenuInterceptor} should be notified. */
-  @scala.inline
-  def IGNORED: `0` = 0.asInstanceOf[`0`]
+  inline def IGNORED: `0` = 0.asInstanceOf[`0`]
 }

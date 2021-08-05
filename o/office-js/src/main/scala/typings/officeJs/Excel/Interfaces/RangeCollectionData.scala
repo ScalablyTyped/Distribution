@@ -11,22 +11,17 @@ trait RangeCollectionData extends StObject {
 }
 object RangeCollectionData {
   
-  @scala.inline
-  def apply(): RangeCollectionData = {
+  inline def apply(): RangeCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeCollectionData]
   }
   
-  @scala.inline
-  implicit class RangeCollectionDataMutableBuilder[Self <: RangeCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: RangeCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[RangeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[RangeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: RangeData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: RangeData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

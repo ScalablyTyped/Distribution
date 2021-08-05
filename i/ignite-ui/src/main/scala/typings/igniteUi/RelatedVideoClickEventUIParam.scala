@@ -18,25 +18,19 @@ trait RelatedVideoClickEventUIParam extends StObject {
 }
 object RelatedVideoClickEventUIParam {
   
-  @scala.inline
-  def apply(): RelatedVideoClickEventUIParam = {
+  inline def apply(): RelatedVideoClickEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelatedVideoClickEventUIParam]
   }
   
-  @scala.inline
-  implicit class RelatedVideoClickEventUIParamMutableBuilder[Self <: RelatedVideoClickEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: RelatedVideoClickEventUIParam](x: Self) {
     
-    @scala.inline
-    def setRelatedVideo(value: js.Any): Self = StObject.set(x, "relatedVideo", value.asInstanceOf[js.Any])
+    inline def setRelatedVideo(value: js.Any): Self = StObject.set(x, "relatedVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedVideoElement(value: js.Any): Self = StObject.set(x, "relatedVideoElement", value.asInstanceOf[js.Any])
+    inline def setRelatedVideoElement(value: js.Any): Self = StObject.set(x, "relatedVideoElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedVideoElementUndefined: Self = StObject.set(x, "relatedVideoElement", js.undefined)
+    inline def setRelatedVideoElementUndefined: Self = StObject.set(x, "relatedVideoElement", js.undefined)
     
-    @scala.inline
-    def setRelatedVideoUndefined: Self = StObject.set(x, "relatedVideo", js.undefined)
+    inline def setRelatedVideoUndefined: Self = StObject.set(x, "relatedVideo", js.undefined)
   }
 }

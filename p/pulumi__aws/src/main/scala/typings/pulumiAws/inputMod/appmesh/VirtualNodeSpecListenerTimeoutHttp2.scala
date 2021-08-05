@@ -19,25 +19,19 @@ trait VirtualNodeSpecListenerTimeoutHttp2 extends StObject {
 }
 object VirtualNodeSpecListenerTimeoutHttp2 {
   
-  @scala.inline
-  def apply(): VirtualNodeSpecListenerTimeoutHttp2 = {
+  inline def apply(): VirtualNodeSpecListenerTimeoutHttp2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualNodeSpecListenerTimeoutHttp2]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerTimeoutHttp2MutableBuilder[Self <: VirtualNodeSpecListenerTimeoutHttp2] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListenerTimeoutHttp2](x: Self) {
     
-    @scala.inline
-    def setIdle(value: Input[VirtualNodeSpecListenerTimeoutHttp2Idle]): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: Input[VirtualNodeSpecListenerTimeoutHttp2Idle]): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
-    @scala.inline
-    def setPerRequest(value: Input[VirtualNodeSpecListenerTimeoutHttp2PerRequest]): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
+    inline def setPerRequest(value: Input[VirtualNodeSpecListenerTimeoutHttp2PerRequest]): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
+    inline def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
   }
 }

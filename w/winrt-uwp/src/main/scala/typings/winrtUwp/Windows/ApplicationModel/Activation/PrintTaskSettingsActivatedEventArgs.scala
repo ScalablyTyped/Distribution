@@ -22,8 +22,7 @@ trait PrintTaskSettingsActivatedEventArgs extends StObject {
 }
 object PrintTaskSettingsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configuration: PrintTaskConfiguration,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -33,19 +32,14 @@ object PrintTaskSettingsActivatedEventArgs {
     __obj.asInstanceOf[PrintTaskSettingsActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class PrintTaskSettingsActivatedEventArgsMutableBuilder[Self <: PrintTaskSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTaskSettingsActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: PrintTaskConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: PrintTaskConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

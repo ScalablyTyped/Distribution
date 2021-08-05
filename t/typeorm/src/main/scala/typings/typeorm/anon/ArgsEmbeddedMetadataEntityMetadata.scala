@@ -15,8 +15,7 @@ trait ArgsEmbeddedMetadataEntityMetadata extends StObject {
 }
 object ArgsEmbeddedMetadataEntityMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: RelationMetadataArgs,
     entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata
   ): ArgsEmbeddedMetadataEntityMetadata = {
@@ -24,19 +23,14 @@ object ArgsEmbeddedMetadataEntityMetadata {
     __obj.asInstanceOf[ArgsEmbeddedMetadataEntityMetadata]
   }
   
-  @scala.inline
-  implicit class ArgsEmbeddedMetadataEntityMetadataMutableBuilder[Self <: ArgsEmbeddedMetadataEntityMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ArgsEmbeddedMetadataEntityMetadata](x: Self) {
     
-    @scala.inline
-    def setArgs(value: RelationMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: RelationMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedMetadata(value: typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata): Self = StObject.set(x, "embeddedMetadata", value.asInstanceOf[js.Any])
+    inline def setEmbeddedMetadata(value: typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata): Self = StObject.set(x, "embeddedMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedMetadataUndefined: Self = StObject.set(x, "embeddedMetadata", js.undefined)
+    inline def setEmbeddedMetadataUndefined: Self = StObject.set(x, "embeddedMetadata", js.undefined)
     
-    @scala.inline
-    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
+    inline def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

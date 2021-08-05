@@ -23,31 +23,23 @@ trait DelegationSet extends StObject {
 }
 object DelegationSet {
   
-  @scala.inline
-  def apply(NameServers: DelegationSetNameServers): DelegationSet = {
+  inline def apply(NameServers: DelegationSetNameServers): DelegationSet = {
     val __obj = js.Dynamic.literal(NameServers = NameServers.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelegationSet]
   }
   
-  @scala.inline
-  implicit class DelegationSetMutableBuilder[Self <: DelegationSet] (val x: Self) extends AnyVal {
+  extension [Self <: DelegationSet](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerReferenceUndefined: Self = StObject.set(x, "CallerReference", js.undefined)
+    inline def setCallerReferenceUndefined: Self = StObject.set(x, "CallerReference", js.undefined)
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setNameServers(value: DelegationSetNameServers): Self = StObject.set(x, "NameServers", value.asInstanceOf[js.Any])
+    inline def setNameServers(value: DelegationSetNameServers): Self = StObject.set(x, "NameServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameServersVarargs(value: DNSName*): Self = StObject.set(x, "NameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: DNSName*): Self = StObject.set(x, "NameServers", js.Array(value :_*))
   }
 }

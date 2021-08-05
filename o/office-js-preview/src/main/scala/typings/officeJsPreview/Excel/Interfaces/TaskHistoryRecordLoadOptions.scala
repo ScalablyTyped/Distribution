@@ -133,91 +133,63 @@ trait TaskHistoryRecordLoadOptions extends StObject {
 }
 object TaskHistoryRecordLoadOptions {
   
-  @scala.inline
-  def apply(): TaskHistoryRecordLoadOptions = {
+  inline def apply(): TaskHistoryRecordLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskHistoryRecordLoadOptions]
   }
   
-  @scala.inline
-  implicit class TaskHistoryRecordLoadOptionsMutableBuilder[Self <: TaskHistoryRecordLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TaskHistoryRecordLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAnchorId(value: Boolean): Self = StObject.set(x, "anchorId", value.asInstanceOf[js.Any])
+    inline def setAnchorId(value: Boolean): Self = StObject.set(x, "anchorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorIdUndefined: Self = StObject.set(x, "anchorId", js.undefined)
+    inline def setAnchorIdUndefined: Self = StObject.set(x, "anchorId", js.undefined)
     
-    @scala.inline
-    def setAssignee(value: Boolean): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+    inline def setAssignee(value: Boolean): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+    inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
     
-    @scala.inline
-    def setAttributionUser(value: Boolean): Self = StObject.set(x, "attributionUser", value.asInstanceOf[js.Any])
+    inline def setAttributionUser(value: Boolean): Self = StObject.set(x, "attributionUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionUserUndefined: Self = StObject.set(x, "attributionUser", js.undefined)
+    inline def setAttributionUserUndefined: Self = StObject.set(x, "attributionUser", js.undefined)
     
-    @scala.inline
-    def setDueDate(value: Boolean): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
+    inline def setDueDate(value: Boolean): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
+    inline def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
     
-    @scala.inline
-    def setHistoryRecordCreatedDate(value: Boolean): Self = StObject.set(x, "historyRecordCreatedDate", value.asInstanceOf[js.Any])
+    inline def setHistoryRecordCreatedDate(value: Boolean): Self = StObject.set(x, "historyRecordCreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryRecordCreatedDateUndefined: Self = StObject.set(x, "historyRecordCreatedDate", js.undefined)
+    inline def setHistoryRecordCreatedDateUndefined: Self = StObject.set(x, "historyRecordCreatedDate", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPercentComplete(value: Boolean): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: Boolean): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
+    inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: Boolean): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Boolean): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUndoHistoryId(value: Boolean): Self = StObject.set(x, "undoHistoryId", value.asInstanceOf[js.Any])
+    inline def setUndoHistoryId(value: Boolean): Self = StObject.set(x, "undoHistoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoHistoryIdUndefined: Self = StObject.set(x, "undoHistoryId", js.undefined)
+    inline def setUndoHistoryIdUndefined: Self = StObject.set(x, "undoHistoryId", js.undefined)
   }
 }

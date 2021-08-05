@@ -13,16 +13,13 @@ trait DeleteLanguageModelRequest extends StObject {
 }
 object DeleteLanguageModelRequest {
   
-  @scala.inline
-  def apply(ModelName: ModelName): DeleteLanguageModelRequest = {
+  inline def apply(ModelName: ModelName): DeleteLanguageModelRequest = {
     val __obj = js.Dynamic.literal(ModelName = ModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLanguageModelRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLanguageModelRequestMutableBuilder[Self <: DeleteLanguageModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLanguageModelRequest](x: Self) {
     
-    @scala.inline
-    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }
 }

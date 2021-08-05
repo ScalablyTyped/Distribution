@@ -25,25 +25,19 @@ trait ChartDataLabelFormatData extends StObject {
 }
 object ChartDataLabelFormatData {
   
-  @scala.inline
-  def apply(): ChartDataLabelFormatData = {
+  inline def apply(): ChartDataLabelFormatData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartDataLabelFormatData]
   }
   
-  @scala.inline
-  implicit class ChartDataLabelFormatDataMutableBuilder[Self <: ChartDataLabelFormatData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDataLabelFormatData](x: Self) {
     
-    @scala.inline
-    def setBorder(value: ChartBorderData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ChartBorderData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setFont(value: ChartFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: ChartFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
   }
 }

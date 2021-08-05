@@ -17,25 +17,19 @@ trait CreateHeaderRequest extends StObject {
 }
 object CreateHeaderRequest {
   
-  @scala.inline
-  def apply(): CreateHeaderRequest = {
+  inline def apply(): CreateHeaderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateHeaderRequest]
   }
   
-  @scala.inline
-  implicit class CreateHeaderRequestMutableBuilder[Self <: CreateHeaderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHeaderRequest](x: Self) {
     
-    @scala.inline
-    def setSectionBreakLocation(value: Location): Self = StObject.set(x, "sectionBreakLocation", value.asInstanceOf[js.Any])
+    inline def setSectionBreakLocation(value: Location): Self = StObject.set(x, "sectionBreakLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionBreakLocationUndefined: Self = StObject.set(x, "sectionBreakLocation", js.undefined)
+    inline def setSectionBreakLocationUndefined: Self = StObject.set(x, "sectionBreakLocation", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait NavigationPopToTopActionPayload extends StObject {
 }
 object NavigationPopToTopActionPayload {
   
-  @scala.inline
-  def apply(): NavigationPopToTopActionPayload = {
+  inline def apply(): NavigationPopToTopActionPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationPopToTopActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationPopToTopActionPayloadMutableBuilder[Self <: NavigationPopToTopActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationPopToTopActionPayload](x: Self) {
     
-    @scala.inline
-    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+    inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+    inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ReadBLECharacteristicValueSuccess extends StObject {
 }
 object ReadBLECharacteristicValueSuccess {
   
-  @scala.inline
-  def apply(): ReadBLECharacteristicValueSuccess = {
+  inline def apply(): ReadBLECharacteristicValueSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadBLECharacteristicValueSuccess]
   }
   
-  @scala.inline
-  implicit class ReadBLECharacteristicValueSuccessMutableBuilder[Self <: ReadBLECharacteristicValueSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: ReadBLECharacteristicValueSuccess](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: String): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: String): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrCodeUndefined: Self = StObject.set(x, "errCode", js.undefined)
+    inline def setErrCodeUndefined: Self = StObject.set(x, "errCode", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

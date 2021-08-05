@@ -38,8 +38,7 @@ trait IgHtmlEditorPopoverMethods extends StObject {
 }
 object IgHtmlEditorPopoverMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: js.Object => Unit,
@@ -51,25 +50,18 @@ object IgHtmlEditorPopoverMethods {
     __obj.asInstanceOf[IgHtmlEditorPopoverMethods]
   }
   
-  @scala.inline
-  implicit class IgHtmlEditorPopoverMethodsMutableBuilder[Self <: IgHtmlEditorPopoverMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgHtmlEditorPopoverMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
+    inline def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: js.Object => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: js.Object => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

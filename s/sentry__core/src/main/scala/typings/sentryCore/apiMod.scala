@@ -17,16 +17,16 @@ object apiMod {
     def this(dsn: DsnLike) = this()
     
     /** The internally used Dsn object. */
-    val _dsnObject: js.Any = js.native
+    /* private */ val _dsnObject: js.Any = js.native
     
     /** Returns a URL-encoded string with auth config suitable for a query string. */
-    var _encodedAuth: js.Any = js.native
+    /* private */ var _encodedAuth: js.Any = js.native
     
     /** Returns the envelope endpoint URL. */
-    var _getEnvelopeEndpoint: js.Any = js.native
+    /* private */ var _getEnvelopeEndpoint: js.Any = js.native
     
     /** Returns the ingest API endpoint for target. */
-    var _getIngestEndpoint: js.Any = js.native
+    /* private */ var _getIngestEndpoint: js.Any = js.native
     
     var dsn: DsnLike = js.native
     

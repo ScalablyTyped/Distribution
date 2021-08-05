@@ -11,22 +11,17 @@ trait ObjectLocale extends StObject {
 }
 object ObjectLocale {
   
-  @scala.inline
-  def apply(): ObjectLocale = {
+  inline def apply(): ObjectLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectLocale]
   }
   
-  @scala.inline
-  implicit class ObjectLocaleMutableBuilder[Self <: ObjectLocale] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectLocale](x: Self) {
     
-    @scala.inline
-    def setNoUnknown(value: TestOptionsMessage[js.Object, js.Any]): Self = StObject.set(x, "noUnknown", value.asInstanceOf[js.Any])
+    inline def setNoUnknown(value: TestOptionsMessage[js.Object, js.Any]): Self = StObject.set(x, "noUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoUnknownFunction1(value: /* params */ js.Object & PartialTestMessageParams => js.Any): Self = StObject.set(x, "noUnknown", js.Any.fromFunction1(value))
+    inline def setNoUnknownFunction1(value: /* params */ js.Object & PartialTestMessageParams => js.Any): Self = StObject.set(x, "noUnknown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNoUnknownUndefined: Self = StObject.set(x, "noUnknown", js.undefined)
+    inline def setNoUnknownUndefined: Self = StObject.set(x, "noUnknown", js.undefined)
   }
 }

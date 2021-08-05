@@ -17,24 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkType extends StObject
 object NetworkType {
   
-  @scala.inline
-  def All: All_ = "All".asInstanceOf[All_]
+  inline def All: All_ = "All".asInstanceOf[All_]
   
-  @scala.inline
-  def Cellular: typings.chromeApps.chromeAppsStrings.Cellular = "Cellular".asInstanceOf[typings.chromeApps.chromeAppsStrings.Cellular]
+  inline def Cellular: typings.chromeApps.chromeAppsStrings.Cellular = "Cellular".asInstanceOf[typings.chromeApps.chromeAppsStrings.Cellular]
   
-  @scala.inline
-  def Ethernet: typings.chromeApps.chromeAppsStrings.Ethernet = "Ethernet".asInstanceOf[typings.chromeApps.chromeAppsStrings.Ethernet]
+  inline def Ethernet: typings.chromeApps.chromeAppsStrings.Ethernet = "Ethernet".asInstanceOf[typings.chromeApps.chromeAppsStrings.Ethernet]
   
-  @scala.inline
-  def VPN: typings.chromeApps.chromeAppsStrings.VPN = "VPN".asInstanceOf[typings.chromeApps.chromeAppsStrings.VPN]
+  inline def VPN: typings.chromeApps.chromeAppsStrings.VPN = "VPN".asInstanceOf[typings.chromeApps.chromeAppsStrings.VPN]
   
-  @scala.inline
-  def WiFi: typings.chromeApps.chromeAppsStrings.WiFi = "WiFi".asInstanceOf[typings.chromeApps.chromeAppsStrings.WiFi]
+  inline def WiFi: typings.chromeApps.chromeAppsStrings.WiFi = "WiFi".asInstanceOf[typings.chromeApps.chromeAppsStrings.WiFi]
   
-  @scala.inline
-  def WiMAX: typings.chromeApps.chromeAppsStrings.WiMAX = "WiMAX".asInstanceOf[typings.chromeApps.chromeAppsStrings.WiMAX]
+  inline def WiMAX: typings.chromeApps.chromeAppsStrings.WiMAX = "WiMAX".asInstanceOf[typings.chromeApps.chromeAppsStrings.WiMAX]
   
-  @scala.inline
-  def Wireless: typings.chromeApps.chromeAppsStrings.Wireless = "Wireless".asInstanceOf[typings.chromeApps.chromeAppsStrings.Wireless]
+  inline def Wireless: typings.chromeApps.chromeAppsStrings.Wireless = "Wireless".asInstanceOf[typings.chromeApps.chromeAppsStrings.Wireless]
 }

@@ -10,6 +10,5 @@ object global {
   @JSGlobal("spies")
   @js.native
   def spies: Spy = js.native
-  @scala.inline
-  def spies_=(x: Spy): Unit = js.Dynamic.global.updateDynamic("spies")(x.asInstanceOf[js.Any])
+  inline def spies_=(x: Spy): Unit = js.Dynamic.global.updateDynamic("spies")(x.asInstanceOf[js.Any])
 }

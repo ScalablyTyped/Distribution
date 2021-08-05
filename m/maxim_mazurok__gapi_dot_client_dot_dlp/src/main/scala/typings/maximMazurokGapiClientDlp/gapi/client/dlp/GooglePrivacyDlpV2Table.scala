@@ -14,31 +14,23 @@ trait GooglePrivacyDlpV2Table extends StObject {
 }
 object GooglePrivacyDlpV2Table {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Table = {
+  inline def apply(): GooglePrivacyDlpV2Table = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Table]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2TableMutableBuilder[Self <: GooglePrivacyDlpV2Table] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Table](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: js.Array[GooglePrivacyDlpV2Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[GooglePrivacyDlpV2Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: GooglePrivacyDlpV2Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: GooglePrivacyDlpV2Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

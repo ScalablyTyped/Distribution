@@ -13,19 +13,15 @@ trait ImportInstanceResult extends StObject {
 }
 object ImportInstanceResult {
   
-  @scala.inline
-  def apply(): ImportInstanceResult = {
+  inline def apply(): ImportInstanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportInstanceResult]
   }
   
-  @scala.inline
-  implicit class ImportInstanceResultMutableBuilder[Self <: ImportInstanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: ImportInstanceResult](x: Self) {
     
-    @scala.inline
-    def setConversionTask(value: ConversionTask): Self = StObject.set(x, "ConversionTask", value.asInstanceOf[js.Any])
+    inline def setConversionTask(value: ConversionTask): Self = StObject.set(x, "ConversionTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionTaskUndefined: Self = StObject.set(x, "ConversionTask", js.undefined)
+    inline def setConversionTaskUndefined: Self = StObject.set(x, "ConversionTask", js.undefined)
   }
 }

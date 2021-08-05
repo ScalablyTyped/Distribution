@@ -13,16 +13,13 @@ trait GroupPriority extends StObject {
 }
 object GroupPriority {
   
-  @scala.inline
-  def apply(groupPriority: Double): GroupPriority = {
+  inline def apply(groupPriority: Double): GroupPriority = {
     val __obj = js.Dynamic.literal(groupPriority = groupPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupPriority]
   }
   
-  @scala.inline
-  implicit class GroupPriorityMutableBuilder[Self <: GroupPriority] (val x: Self) extends AnyVal {
+  extension [Self <: GroupPriority](x: Self) {
     
-    @scala.inline
-    def setGroupPriority(value: Double): Self = StObject.set(x, "groupPriority", value.asInstanceOf[js.Any])
+    inline def setGroupPriority(value: Double): Self = StObject.set(x, "groupPriority", value.asInstanceOf[js.Any])
   }
 }

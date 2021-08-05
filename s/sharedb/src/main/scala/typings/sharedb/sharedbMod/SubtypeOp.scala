@@ -16,25 +16,19 @@ trait SubtypeOp
 }
 object SubtypeOp {
   
-  @scala.inline
-  def apply(o: js.Any, p: Path, t: String): SubtypeOp = {
+  inline def apply(o: js.Any, p: Path, t: String): SubtypeOp = {
     val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeOp]
   }
   
-  @scala.inline
-  implicit class SubtypeOpMutableBuilder[Self <: SubtypeOp] (val x: Self) extends AnyVal {
+  extension [Self <: SubtypeOp](x: Self) {
     
-    @scala.inline
-    def setO(value: js.Any): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
+    inline def setO(value: js.Any): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
     
-    @scala.inline
-    def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

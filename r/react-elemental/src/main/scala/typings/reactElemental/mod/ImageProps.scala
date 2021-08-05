@@ -28,46 +28,33 @@ trait ImageProps
 }
 object ImageProps {
   
-  @scala.inline
-  def apply(alt: String): ImageProps = {
+  inline def apply(alt: String): ImageProps = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }
   
-  @scala.inline
-  implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
+  extension [Self <: ImageProps](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setImgStyle(value: CSSProperties): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
+    inline def setImgStyle(value: CSSProperties): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgStyleUndefined: Self = StObject.set(x, "imgStyle", js.undefined)
+    inline def setImgStyleUndefined: Self = StObject.set(x, "imgStyle", js.undefined)
     
-    @scala.inline
-    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+    inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+    inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     
-    @scala.inline
-    def setShowIntermediate(value: Boolean): Self = StObject.set(x, "showIntermediate", value.asInstanceOf[js.Any])
+    inline def setShowIntermediate(value: Boolean): Self = StObject.set(x, "showIntermediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowIntermediateUndefined: Self = StObject.set(x, "showIntermediate", js.undefined)
+    inline def setShowIntermediateUndefined: Self = StObject.set(x, "showIntermediate", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

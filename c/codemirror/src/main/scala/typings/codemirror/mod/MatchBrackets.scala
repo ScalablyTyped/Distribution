@@ -33,43 +33,31 @@ trait MatchBrackets extends StObject {
 }
 object MatchBrackets {
   
-  @scala.inline
-  def apply(): MatchBrackets = {
+  inline def apply(): MatchBrackets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchBrackets]
   }
   
-  @scala.inline
-  implicit class MatchBracketsMutableBuilder[Self <: MatchBrackets] (val x: Self) extends AnyVal {
+  extension [Self <: MatchBrackets](x: Self) {
     
-    @scala.inline
-    def setAfterCursor(value: Boolean): Self = StObject.set(x, "afterCursor", value.asInstanceOf[js.Any])
+    inline def setAfterCursor(value: Boolean): Self = StObject.set(x, "afterCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterCursorUndefined: Self = StObject.set(x, "afterCursor", js.undefined)
+    inline def setAfterCursorUndefined: Self = StObject.set(x, "afterCursor", js.undefined)
     
-    @scala.inline
-    def setMaxHighlightLineLength(value: Double): Self = StObject.set(x, "maxHighlightLineLength", value.asInstanceOf[js.Any])
+    inline def setMaxHighlightLineLength(value: Double): Self = StObject.set(x, "maxHighlightLineLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHighlightLineLengthUndefined: Self = StObject.set(x, "maxHighlightLineLength", js.undefined)
+    inline def setMaxHighlightLineLengthUndefined: Self = StObject.set(x, "maxHighlightLineLength", js.undefined)
     
-    @scala.inline
-    def setMaxScanLineLength(value: Double): Self = StObject.set(x, "maxScanLineLength", value.asInstanceOf[js.Any])
+    inline def setMaxScanLineLength(value: Double): Self = StObject.set(x, "maxScanLineLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScanLineLengthUndefined: Self = StObject.set(x, "maxScanLineLength", js.undefined)
+    inline def setMaxScanLineLengthUndefined: Self = StObject.set(x, "maxScanLineLength", js.undefined)
     
-    @scala.inline
-    def setMaxScanLines(value: Double): Self = StObject.set(x, "maxScanLines", value.asInstanceOf[js.Any])
+    inline def setMaxScanLines(value: Double): Self = StObject.set(x, "maxScanLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScanLinesUndefined: Self = StObject.set(x, "maxScanLines", js.undefined)
+    inline def setMaxScanLinesUndefined: Self = StObject.set(x, "maxScanLines", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecordStatusEnum extends StObject
 object RecordStatusEnum {
   
-  @scala.inline
-  def dbRecordDBDeleted: `4` = 4.asInstanceOf[`4`]
+  inline def dbRecordDBDeleted: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def dbRecordDeleted: `3` = 3.asInstanceOf[`3`]
+  inline def dbRecordDeleted: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def dbRecordModified: `1` = 1.asInstanceOf[`1`]
+  inline def dbRecordModified: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbRecordNew: `2` = 2.asInstanceOf[`2`]
+  inline def dbRecordNew: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def dbRecordUnmodified: `0` = 0.asInstanceOf[`0`]
+  inline def dbRecordUnmodified: `0` = 0.asInstanceOf[`0`]
 }

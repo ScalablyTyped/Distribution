@@ -17,31 +17,23 @@ trait PullRequestFilter extends StObject {
 }
 object PullRequestFilter {
   
-  @scala.inline
-  def apply(): PullRequestFilter = {
+  inline def apply(): PullRequestFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullRequestFilter]
   }
   
-  @scala.inline
-  implicit class PullRequestFilterMutableBuilder[Self <: PullRequestFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequestFilter](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setCommentControl(value: String): Self = StObject.set(x, "commentControl", value.asInstanceOf[js.Any])
+    inline def setCommentControl(value: String): Self = StObject.set(x, "commentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentControlUndefined: Self = StObject.set(x, "commentControl", js.undefined)
+    inline def setCommentControlUndefined: Self = StObject.set(x, "commentControl", js.undefined)
     
-    @scala.inline
-    def setInvertRegex(value: Boolean): Self = StObject.set(x, "invertRegex", value.asInstanceOf[js.Any])
+    inline def setInvertRegex(value: Boolean): Self = StObject.set(x, "invertRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertRegexUndefined: Self = StObject.set(x, "invertRegex", js.undefined)
+    inline def setInvertRegexUndefined: Self = StObject.set(x, "invertRegex", js.undefined)
   }
 }

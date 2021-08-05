@@ -34,44 +34,32 @@ object Httpi {
   }
   object HttpiPayload {
     
-    @scala.inline
-    def apply(): HttpiPayload = {
+    inline def apply(): HttpiPayload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpiPayload]
     }
     
-    @scala.inline
-    implicit class HttpiPayloadMutableBuilder[Self <: HttpiPayload] (val x: Self) extends AnyVal {
+    extension [Self <: HttpiPayload](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setKeepTrailingSlash(value: Boolean): Self = StObject.set(x, "keepTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setKeepTrailingSlash(value: Boolean): Self = StObject.set(x, "keepTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepTrailingSlashUndefined: Self = StObject.set(x, "keepTrailingSlash", js.undefined)
+      inline def setKeepTrailingSlashUndefined: Self = StObject.set(x, "keepTrailingSlash", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -93,8 +81,7 @@ object Httpi {
   }
   object HttpiResource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: HttpiPayload => IHttpPromise[js.Any],
       get: HttpiPayload => IHttpPromise[js.Any],
       head: HttpiPayload => IHttpPromise[js.Any],
@@ -107,29 +94,21 @@ object Httpi {
       __obj.asInstanceOf[HttpiResource]
     }
     
-    @scala.inline
-    implicit class HttpiResourceMutableBuilder[Self <: HttpiResource] (val x: Self) extends AnyVal {
+    extension [Self <: HttpiResource](x: Self) {
       
-      @scala.inline
-      def setDelete(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHead(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
+      inline def setHead(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJsonp(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
+      inline def setJsonp(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPost(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
+      inline def setPost(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetKeepTrailingSlash(value: Boolean => HttpiResource): Self = StObject.set(x, "setKeepTrailingSlash", js.Any.fromFunction1(value))
+      inline def setSetKeepTrailingSlash(value: Boolean => HttpiResource): Self = StObject.set(x, "setKeepTrailingSlash", js.Any.fromFunction1(value))
     }
   }
 }

@@ -12,19 +12,15 @@ trait InsightsServicePostResponseHashtagsImpressions extends StObject {
 }
 object InsightsServicePostResponseHashtagsImpressions {
   
-  @scala.inline
-  def apply(hashtags: InsightsServicePostResponseHashtags, organic: InsightsServicePostResponseOrganic): InsightsServicePostResponseHashtagsImpressions = {
+  inline def apply(hashtags: InsightsServicePostResponseHashtags, organic: InsightsServicePostResponseOrganic): InsightsServicePostResponseHashtagsImpressions = {
     val __obj = js.Dynamic.literal(hashtags = hashtags.asInstanceOf[js.Any], organic = organic.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseHashtagsImpressions]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseHashtagsImpressionsMutableBuilder[Self <: InsightsServicePostResponseHashtagsImpressions] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseHashtagsImpressions](x: Self) {
     
-    @scala.inline
-    def setHashtags(value: InsightsServicePostResponseHashtags): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
+    inline def setHashtags(value: InsightsServicePostResponseHashtags): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganic(value: InsightsServicePostResponseOrganic): Self = StObject.set(x, "organic", value.asInstanceOf[js.Any])
+    inline def setOrganic(value: InsightsServicePostResponseOrganic): Self = StObject.set(x, "organic", value.asInstanceOf[js.Any])
   }
 }

@@ -5,14 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(options: typings.htmlValidator.mod.OptionsForExternalUrlAsValidationTargetAndObjectAsResult): js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults]]
-@scala.inline
-def apply(options: typings.htmlValidator.mod.OptionsForExternalUrlAsValidationTargetAndTextAsResults): js.Promise[java.lang.String] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
-@scala.inline
-def apply(options: typings.htmlValidator.mod.OptionsForHtmlFileAsValidationTargetAndObjectAsResult): js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults]]
-@scala.inline
-def apply(options: typings.htmlValidator.mod.OptionsForHtmlFileAsValidationTargetAndTextAsResults): js.Promise[java.lang.String] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
+inline def apply(options: typings.htmlValidator.mod.OptionsForExternalUrlAsValidationTargetAndObjectAsResult): js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults]]
+inline def apply(options: typings.htmlValidator.mod.OptionsForExternalUrlAsValidationTargetAndTextAsResults): js.Promise[java.lang.String] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
+inline def apply(options: typings.htmlValidator.mod.OptionsForHtmlFileAsValidationTargetAndObjectAsResult): js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults]]
+inline def apply(options: typings.htmlValidator.mod.OptionsForHtmlFileAsValidationTargetAndTextAsResults): js.Promise[java.lang.String] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
 
 type ValidationMessageLocationObject = typings.htmlValidator.mod.ValidationMessageSimpleObject & typings.htmlValidator.mod.ValidationMessageBasicLocationObject
 

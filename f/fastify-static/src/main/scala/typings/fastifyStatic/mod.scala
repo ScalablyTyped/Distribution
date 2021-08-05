@@ -57,131 +57,90 @@ object mod extends Shortcut {
   }
   object FastifyStaticOptions {
     
-    @scala.inline
-    def apply(root: String): FastifyStaticOptions = {
+    inline def apply(root: String): FastifyStaticOptions = {
       val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastifyStaticOptions]
     }
     
-    @scala.inline
-    implicit class FastifyStaticOptionsMutableBuilder[Self <: FastifyStaticOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyStaticOptions](x: Self) {
       
-      @scala.inline
-      def setAcceptRanges(value: Boolean): Self = StObject.set(x, "acceptRanges", value.asInstanceOf[js.Any])
+      inline def setAcceptRanges(value: Boolean): Self = StObject.set(x, "acceptRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptRangesUndefined: Self = StObject.set(x, "acceptRanges", js.undefined)
+      inline def setAcceptRangesUndefined: Self = StObject.set(x, "acceptRanges", js.undefined)
       
-      @scala.inline
-      def setCacheControl(value: Boolean): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      inline def setCacheControl(value: Boolean): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
       
-      @scala.inline
-      def setDecorateReply(value: Boolean): Self = StObject.set(x, "decorateReply", value.asInstanceOf[js.Any])
+      inline def setDecorateReply(value: Boolean): Self = StObject.set(x, "decorateReply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorateReplyUndefined: Self = StObject.set(x, "decorateReply", js.undefined)
+      inline def setDecorateReplyUndefined: Self = StObject.set(x, "decorateReply", js.undefined)
       
-      @scala.inline
-      def setDotfiles(value: Boolean): Self = StObject.set(x, "dotfiles", value.asInstanceOf[js.Any])
+      inline def setDotfiles(value: Boolean): Self = StObject.set(x, "dotfiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotfilesUndefined: Self = StObject.set(x, "dotfiles", js.undefined)
+      inline def setDotfilesUndefined: Self = StObject.set(x, "dotfiles", js.undefined)
       
-      @scala.inline
-      def setEtag(value: Boolean): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: Boolean): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+      inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+      inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
       
-      @scala.inline
-      def setIndex(value: js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
       
-      @scala.inline
-      def setLastModified(value: Boolean): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Boolean): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
       
-      @scala.inline
-      def setList(value: Boolean | ListOptions): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: Boolean | ListOptions): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: String | Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: String | Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixAvoidTrailingSlash(value: Boolean): Self = StObject.set(x, "prefixAvoidTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setPrefixAvoidTrailingSlash(value: Boolean): Self = StObject.set(x, "prefixAvoidTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixAvoidTrailingSlashUndefined: Self = StObject.set(x, "prefixAvoidTrailingSlash", js.undefined)
+      inline def setPrefixAvoidTrailingSlashUndefined: Self = StObject.set(x, "prefixAvoidTrailingSlash", js.undefined)
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaHide(value: Boolean): Self = StObject.set(x, "schemaHide", value.asInstanceOf[js.Any])
+      inline def setSchemaHide(value: Boolean): Self = StObject.set(x, "schemaHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaHideUndefined: Self = StObject.set(x, "schemaHide", js.undefined)
+      inline def setSchemaHideUndefined: Self = StObject.set(x, "schemaHide", js.undefined)
       
-      @scala.inline
-      def setServe(value: Boolean): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
+      inline def setServe(value: Boolean): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServeUndefined: Self = StObject.set(x, "serve", js.undefined)
+      inline def setServeUndefined: Self = StObject.set(x, "serve", js.undefined)
       
-      @scala.inline
-      def setSetHeaders(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+      inline def setSetHeaders(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
+      inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
       
-      @scala.inline
-      def setWildcard(value: Boolean | String): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
+      inline def setWildcard(value: Boolean | String): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
+      inline def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
     }
   }
   
@@ -193,20 +152,16 @@ object mod extends Shortcut {
   }
   object ListDir {
     
-    @scala.inline
-    def apply(href: String, name: String): ListDir = {
+    inline def apply(href: String, name: String): ListDir = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListDir]
     }
     
-    @scala.inline
-    implicit class ListDirMutableBuilder[Self <: ListDir] (val x: Self) extends AnyVal {
+    extension [Self <: ListDir](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,20 +173,16 @@ object mod extends Shortcut {
   }
   object ListFile {
     
-    @scala.inline
-    def apply(href: String, name: String): ListFile = {
+    inline def apply(href: String, name: String): ListFile = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListFile]
     }
     
-    @scala.inline
-    implicit class ListFileMutableBuilder[Self <: ListFile] (val x: Self) extends AnyVal {
+    extension [Self <: ListFile](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,8 +198,7 @@ object mod extends Shortcut {
   }
   object ListOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       format: json | html,
       names: js.Array[String],
       render: (/* dirs */ js.Array[ListDir], /* files */ js.Array[ListFile]) => String
@@ -257,20 +207,15 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ListOptions]
     }
     
-    @scala.inline
-    implicit class ListOptionsMutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(value: json | html): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: json | html): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setRender(value: (/* dirs */ js.Array[ListDir], /* files */ js.Array[ListFile]) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* dirs */ js.Array[ListDir], /* files */ js.Array[ListFile]) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
   }
   

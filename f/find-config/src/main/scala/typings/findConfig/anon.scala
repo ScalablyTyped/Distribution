@@ -16,23 +16,18 @@ object anon {
   }
   object Cwd {
     
-    @scala.inline
-    def apply(cwd: String, dir: String, path: String): Cwd = {
+    inline def apply(cwd: String, dir: String, path: String): Cwd = {
       val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cwd]
     }
     
-    @scala.inline
-    implicit class CwdMutableBuilder[Self <: Cwd] (val x: Self) extends AnyVal {
+    extension [Self <: Cwd](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

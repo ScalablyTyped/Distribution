@@ -28,31 +28,23 @@ trait ParamsResourceInterconnectlocationsGet
 }
 object ParamsResourceInterconnectlocationsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceInterconnectlocationsGet = {
+  inline def apply(): ParamsResourceInterconnectlocationsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceInterconnectlocationsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceInterconnectlocationsGetMutableBuilder[Self <: ParamsResourceInterconnectlocationsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceInterconnectlocationsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setInterconnectLocation(value: String): Self = StObject.set(x, "interconnectLocation", value.asInstanceOf[js.Any])
+    inline def setInterconnectLocation(value: String): Self = StObject.set(x, "interconnectLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectLocationUndefined: Self = StObject.set(x, "interconnectLocation", js.undefined)
+    inline def setInterconnectLocationUndefined: Self = StObject.set(x, "interconnectLocation", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

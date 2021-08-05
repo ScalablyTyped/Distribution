@@ -16,23 +16,18 @@ object anon {
   }
   object Ack {
     
-    @scala.inline
-    def apply(ack: Boolean, emit: Boolean, listen: Boolean): Ack = {
+    inline def apply(ack: Boolean, emit: Boolean, listen: Boolean): Ack = {
       val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], emit = emit.asInstanceOf[js.Any], listen = listen.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ack]
     }
     
-    @scala.inline
-    implicit class AckMutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
+    extension [Self <: Ack](x: Self) {
       
-      @scala.inline
-      def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+      inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmit(value: Boolean): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
+      inline def setEmit(value: Boolean): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+      inline def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,44 +49,32 @@ object anon {
   }
   object Async {
     
-    @scala.inline
-    def apply(async: js.Any, eventObject: js.Any, fn: js.Any, once: js.Any): Async = {
+    inline def apply(async: js.Any, eventObject: js.Any, fn: js.Any, once: js.Any): Async = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], once = once.asInstanceOf[js.Any])
       __obj.asInstanceOf[Async]
     }
     
-    @scala.inline
-    implicit class AsyncMutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
+    extension [Self <: Async](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.Any): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.Any): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEventObject(value: js.Any): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
+      inline def setEventObject(value: js.Any): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFn(value: js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setNice(value: Double): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+      inline def setNice(value: Double): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+      inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
       
-      @scala.inline
-      def setOnce(value: js.Any): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: js.Any): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     }
   }
 }

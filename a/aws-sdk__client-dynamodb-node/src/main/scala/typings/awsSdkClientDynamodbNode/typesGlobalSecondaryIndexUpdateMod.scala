@@ -31,32 +31,24 @@ object typesGlobalSecondaryIndexUpdateMod {
   }
   object GlobalSecondaryIndexUpdate {
     
-    @scala.inline
-    def apply(): GlobalSecondaryIndexUpdate = {
+    inline def apply(): GlobalSecondaryIndexUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalSecondaryIndexUpdate]
     }
     
-    @scala.inline
-    implicit class GlobalSecondaryIndexUpdateMutableBuilder[Self <: GlobalSecondaryIndexUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalSecondaryIndexUpdate](x: Self) {
       
-      @scala.inline
-      def setCreate(value: CreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: CreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: DeleteGlobalSecondaryIndexAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: DeleteGlobalSecondaryIndexAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: UpdateGlobalSecondaryIndexAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: UpdateGlobalSecondaryIndexAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
     }
   }
   
@@ -84,32 +76,24 @@ object typesGlobalSecondaryIndexUpdateMod {
   }
   object UnmarshalledGlobalSecondaryIndexUpdate {
     
-    @scala.inline
-    def apply(): UnmarshalledGlobalSecondaryIndexUpdate = {
+    inline def apply(): UnmarshalledGlobalSecondaryIndexUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledGlobalSecondaryIndexUpdate]
     }
     
-    @scala.inline
-    implicit class UnmarshalledGlobalSecondaryIndexUpdateMutableBuilder[Self <: UnmarshalledGlobalSecondaryIndexUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledGlobalSecondaryIndexUpdate](x: Self) {
       
-      @scala.inline
-      def setCreate(value: UnmarshalledCreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: UnmarshalledCreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: UnmarshalledDeleteGlobalSecondaryIndexAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: UnmarshalledDeleteGlobalSecondaryIndexAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: UnmarshalledUpdateGlobalSecondaryIndexAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: UnmarshalledUpdateGlobalSecondaryIndexAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
     }
   }
 }

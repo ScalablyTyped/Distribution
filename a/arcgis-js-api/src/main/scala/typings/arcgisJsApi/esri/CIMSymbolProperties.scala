@@ -18,19 +18,15 @@ trait CIMSymbolProperties
 }
 object CIMSymbolProperties {
   
-  @scala.inline
-  def apply(): CIMSymbolProperties = {
+  inline def apply(): CIMSymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CIMSymbolProperties]
   }
   
-  @scala.inline
-  implicit class CIMSymbolPropertiesMutableBuilder[Self <: CIMSymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CIMSymbolProperties](x: Self) {
     
-    @scala.inline
-    def setData(value: CIMSymbolReference): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CIMSymbolReference): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

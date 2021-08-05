@@ -102,18 +102,15 @@ object componentsMod {
     }
     object HTMLElementTagNameMap {
       
-      @scala.inline
-      def apply(`ion-icon`: HTMLIonIconElement): HTMLElementTagNameMap = {
+      inline def apply(`ion-icon`: HTMLIonIconElement): HTMLElementTagNameMap = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("ion-icon")(`ion-icon`.asInstanceOf[js.Any])
         __obj.asInstanceOf[HTMLElementTagNameMap]
       }
       
-      @scala.inline
-      implicit class HTMLElementTagNameMapMutableBuilder[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
+      extension [Self <: HTMLElementTagNameMap](x: Self) {
         
-        @scala.inline
-        def `setIon-icon`(value: HTMLIonIconElement): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
+        inline def `setIon-icon`(value: HTMLIonIconElement): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
       }
     }
     
@@ -261,84 +258,59 @@ object componentsMod {
     }
     object IonIcon {
       
-      @scala.inline
-      def apply(`lazy`: Boolean, mode: String, sanitize: Boolean): IonIcon = {
+      inline def apply(`lazy`: Boolean, mode: String, sanitize: Boolean): IonIcon = {
         val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any])
         __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IonIcon]
       }
       
-      @scala.inline
-      implicit class IonIconMutableBuilder[Self <: IonIcon] (val x: Self) extends AnyVal {
+      extension [Self <: IonIcon](x: Self) {
         
-        @scala.inline
-        def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+        inline def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+        inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
         
-        @scala.inline
-        def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+        inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+        inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
         
-        @scala.inline
-        def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setFlipRtl(value: Boolean): Self = StObject.set(x, "flipRtl", value.asInstanceOf[js.Any])
+        inline def setFlipRtl(value: Boolean): Self = StObject.set(x, "flipRtl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlipRtlUndefined: Self = StObject.set(x, "flipRtl", js.undefined)
+        inline def setFlipRtlUndefined: Self = StObject.set(x, "flipRtl", js.undefined)
         
-        @scala.inline
-        def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+        inline def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+        inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
         
-        @scala.inline
-        def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+        inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMd(value: String): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+        inline def setMd(value: String): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+        inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
         
-        @scala.inline
-        def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+        inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+        inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+        inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       }
     }
   }
@@ -351,18 +323,15 @@ object componentsMod {
     }
     object IntrinsicElements {
       
-      @scala.inline
-      def apply(`ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon): IntrinsicElements = {
+      inline def apply(`ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon): IntrinsicElements = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("ion-icon")(`ion-icon`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IntrinsicElements]
       }
       
-      @scala.inline
-      implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+      extension [Self <: IntrinsicElements](x: Self) {
         
-        @scala.inline
-        def `setIon-icon`(value: typings.ionicons.componentsMod.LocalJSX.IonIcon): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
+        inline def `setIon-icon`(value: typings.ionicons.componentsMod.LocalJSX.IonIcon): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
       }
     }
     
@@ -436,92 +405,64 @@ object componentsMod {
     }
     object IonIcon {
       
-      @scala.inline
-      def apply(): typings.ionicons.componentsMod.LocalJSX.IonIcon = {
+      inline def apply(): typings.ionicons.componentsMod.LocalJSX.IonIcon = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.ionicons.componentsMod.LocalJSX.IonIcon]
       }
       
-      @scala.inline
-      implicit class IonIconMutableBuilder[Self <: typings.ionicons.componentsMod.LocalJSX.IonIcon] (val x: Self) extends AnyVal {
+      extension [Self <: typings.ionicons.componentsMod.LocalJSX.IonIcon](x: Self) {
         
-        @scala.inline
-        def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+        inline def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+        inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
         
-        @scala.inline
-        def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+        inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+        inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
         
-        @scala.inline
-        def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setFlipRtl(value: Boolean): Self = StObject.set(x, "flipRtl", value.asInstanceOf[js.Any])
+        inline def setFlipRtl(value: Boolean): Self = StObject.set(x, "flipRtl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlipRtlUndefined: Self = StObject.set(x, "flipRtl", js.undefined)
+        inline def setFlipRtlUndefined: Self = StObject.set(x, "flipRtl", js.undefined)
         
-        @scala.inline
-        def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+        inline def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+        inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
         
-        @scala.inline
-        def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+        inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+        inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
         
-        @scala.inline
-        def setMd(value: String): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+        inline def setMd(value: String): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+        inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
         
-        @scala.inline
-        def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+        inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+        inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
         
-        @scala.inline
-        def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+        inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+        inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       }
     }
   }
@@ -536,18 +477,15 @@ object componentsMod {
       }
       object IntrinsicElements {
         
-        @scala.inline
-        def apply(`ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]): IntrinsicElements = {
+        inline def apply(`ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]): IntrinsicElements = {
           val __obj = js.Dynamic.literal()
           __obj.updateDynamic("ion-icon")(`ion-icon`.asInstanceOf[js.Any])
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        @scala.inline
-        implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+        extension [Self <: IntrinsicElements](x: Self) {
           
-          @scala.inline
-          def `setIon-icon`(value: typings.ionicons.componentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
+          inline def `setIon-icon`(value: typings.ionicons.componentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
         }
       }
     }

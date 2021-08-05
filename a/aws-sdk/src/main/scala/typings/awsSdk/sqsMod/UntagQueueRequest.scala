@@ -18,22 +18,17 @@ trait UntagQueueRequest extends StObject {
 }
 object UntagQueueRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String, TagKeys: TagKeyList): UntagQueueRequest = {
+  inline def apply(QueueUrl: String, TagKeys: TagKeyList): UntagQueueRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagQueueRequest]
   }
   
-  @scala.inline
-  implicit class UntagQueueRequestMutableBuilder[Self <: UntagQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UntagQueueRequest](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

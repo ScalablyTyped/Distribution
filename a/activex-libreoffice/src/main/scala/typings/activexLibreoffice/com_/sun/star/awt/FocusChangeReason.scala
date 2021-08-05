@@ -25,25 +25,18 @@ object FocusChangeReason {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AROUND: `64` = 64.asInstanceOf[`64`]
+    inline def AROUND: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def BACKWARD: `32` = 32.asInstanceOf[`32`]
+    inline def BACKWARD: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def CURSOR: `2` = 2.asInstanceOf[`2`]
+    inline def CURSOR: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FORWARD: `16` = 16.asInstanceOf[`16`]
+    inline def FORWARD: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def MNEMONIC: `4` = 4.asInstanceOf[`4`]
+    inline def MNEMONIC: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def TAB: `1` = 1.asInstanceOf[`1`]
+    inline def TAB: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UNIQUEMNEMONIC: `256` = 256.asInstanceOf[`256`]
+    inline def UNIQUEMNEMONIC: `256` = 256.asInstanceOf[`256`]
   }
 }

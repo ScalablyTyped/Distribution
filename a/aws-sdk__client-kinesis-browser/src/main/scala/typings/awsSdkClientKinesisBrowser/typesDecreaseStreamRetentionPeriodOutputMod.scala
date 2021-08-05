@@ -20,17 +20,14 @@ object typesDecreaseStreamRetentionPeriodOutputMod {
   }
   object DecreaseStreamRetentionPeriodOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DecreaseStreamRetentionPeriodOutput = {
+    inline def apply($metadata: ResponseMetadata): DecreaseStreamRetentionPeriodOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecreaseStreamRetentionPeriodOutput]
     }
     
-    @scala.inline
-    implicit class DecreaseStreamRetentionPeriodOutputMutableBuilder[Self <: DecreaseStreamRetentionPeriodOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DecreaseStreamRetentionPeriodOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

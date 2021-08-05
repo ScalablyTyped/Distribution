@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def VictoryTheme: typings.victory.mod.VictoryThemeInterface = typings.victory.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VictoryTheme").asInstanceOf[typings.victory.mod.VictoryThemeInterface]
+inline def VictoryTheme: typings.victory.mod.VictoryThemeInterface = typings.victory.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VictoryTheme").asInstanceOf[typings.victory.mod.VictoryThemeInterface]
 
-@scala.inline
-def createContainer[V, W](c1: typings.victory.mod.ContainerType, c2: typings.victory.mod.ContainerType): typings.react.mod.ComponentType[V & W] = (typings.victory.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ComponentType[V & W]]
+inline def createContainer[V, W](c1: typings.victory.mod.ContainerType, c2: typings.victory.mod.ContainerType): typings.react.mod.ComponentType[V & W] = (typings.victory.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ComponentType[V & W]]
 
 type AnimationData = typings.victory.mod.AnimationStyle | js.Array[typings.victory.mod.AnimationStyle]
 

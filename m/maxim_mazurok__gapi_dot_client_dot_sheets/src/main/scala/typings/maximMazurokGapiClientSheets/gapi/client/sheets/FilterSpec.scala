@@ -17,31 +17,23 @@ trait FilterSpec extends StObject {
 }
 object FilterSpec {
   
-  @scala.inline
-  def apply(): FilterSpec = {
+  inline def apply(): FilterSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterSpec]
   }
   
-  @scala.inline
-  implicit class FilterSpecMutableBuilder[Self <: FilterSpec] (val x: Self) extends AnyVal {
+  extension [Self <: FilterSpec](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
+    inline def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
+    inline def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
-    @scala.inline
-    def setFilterCriteria(value: FilterCriteria): Self = StObject.set(x, "filterCriteria", value.asInstanceOf[js.Any])
+    inline def setFilterCriteria(value: FilterCriteria): Self = StObject.set(x, "filterCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterCriteriaUndefined: Self = StObject.set(x, "filterCriteria", js.undefined)
+    inline def setFilterCriteriaUndefined: Self = StObject.set(x, "filterCriteria", js.undefined)
   }
 }

@@ -14,6 +14,5 @@ object streamsubscribetopropertysubscribeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](initValue: Option[V], streamSubscribe: Subscribe[V]): js.Function1[/* sink */ EventSink[V], Unsub] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initValue.asInstanceOf[js.Any], streamSubscribe.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* sink */ EventSink[V], Unsub]]
+  inline def default[V](initValue: Option[V], streamSubscribe: Subscribe[V]): js.Function1[/* sink */ EventSink[V], Unsub] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initValue.asInstanceOf[js.Any], streamSubscribe.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* sink */ EventSink[V], Unsub]]
 }

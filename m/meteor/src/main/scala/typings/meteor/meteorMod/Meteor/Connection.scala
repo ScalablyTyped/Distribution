@@ -19,8 +19,7 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientAddress: String,
     close: () => Unit,
     httpHeaders: js.Object,
@@ -31,22 +30,16 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
+    inline def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHttpHeaders(value: js.Object): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
+    inline def setHttpHeaders(value: js.Object): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClose(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
   }
 }

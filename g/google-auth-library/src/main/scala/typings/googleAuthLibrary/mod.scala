@@ -92,8 +92,7 @@ object mod {
     @JSImport("google-auth-library", "GoogleAuth.DefaultTransporter")
     @js.native
     def DefaultTransporter: TypeofDefaultTransporter = js.native
-    @scala.inline
-    def DefaultTransporter_=(x: TypeofDefaultTransporter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTransporter")(x.asInstanceOf[js.Any])
+    inline def DefaultTransporter_=(x: TypeofDefaultTransporter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTransporter")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("google-auth-library", "IAMAuth")
@@ -187,8 +186,7 @@ object mod {
     @JSImport("google-auth-library", "JWTAccess.getExpirationTime")
     @js.native
     def getExpirationTime: js.Any = js.native
-    @scala.inline
-    def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
+    inline def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("google-auth-library", "LoginTicket")
@@ -308,8 +306,7 @@ object mod {
       * Generates an URL to revoke the given token.
       * @param token The existing token to be revoked.
       */
-    @scala.inline
-    def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("google-auth-library", "UserRefreshClient")
@@ -354,8 +351,7 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     type _To = typings.googleAuthLibrary.googleauthMod.GoogleAuth

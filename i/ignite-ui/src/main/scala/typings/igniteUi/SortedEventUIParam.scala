@@ -23,37 +23,27 @@ trait SortedEventUIParam extends StObject {
 }
 object SortedEventUIParam {
   
-  @scala.inline
-  def apply(): SortedEventUIParam = {
+  inline def apply(): SortedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SortedEventUIParam]
   }
   
-  @scala.inline
-  implicit class SortedEventUIParamMutableBuilder[Self <: SortedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SortedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setAppliedSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "appliedSortDirections", value.asInstanceOf[js.Any])
+    inline def setAppliedSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "appliedSortDirections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliedSortDirectionsUndefined: Self = StObject.set(x, "appliedSortDirections", js.undefined)
+    inline def setAppliedSortDirectionsUndefined: Self = StObject.set(x, "appliedSortDirections", js.undefined)
     
-    @scala.inline
-    def setAppliedSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "appliedSortDirections", js.Array(value :_*))
+    inline def setAppliedSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "appliedSortDirections", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "sortDirections", value.asInstanceOf[js.Any])
+    inline def setSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "sortDirections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirectionsUndefined: Self = StObject.set(x, "sortDirections", js.undefined)
+    inline def setSortDirectionsUndefined: Self = StObject.set(x, "sortDirections", js.undefined)
     
-    @scala.inline
-    def setSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "sortDirections", js.Array(value :_*))
+    inline def setSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "sortDirections", js.Array(value :_*))
   }
 }

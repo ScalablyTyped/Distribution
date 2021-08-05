@@ -29,28 +29,21 @@ trait ReposAddCollaboratorEndpoint extends StObject {
 }
 object ReposAddCollaboratorEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, username: String): ReposAddCollaboratorEndpoint = {
+  inline def apply(owner: String, repo: String, username: String): ReposAddCollaboratorEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposAddCollaboratorEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposAddCollaboratorEndpointMutableBuilder[Self <: ReposAddCollaboratorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposAddCollaboratorEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermission(value: pull | push | admin | maintain | triage): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: pull | push | admin | maintain | triage): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

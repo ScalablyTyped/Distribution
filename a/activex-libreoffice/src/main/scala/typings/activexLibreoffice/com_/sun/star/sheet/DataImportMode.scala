@@ -31,18 +31,14 @@ object DataImportMode {
     *
     * sheet is not linked.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** the name of a database query is supplied. */
-  @scala.inline
-  def QUERY: `3` = 3.asInstanceOf[`3`]
+  inline def QUERY: `3` = 3.asInstanceOf[`3`]
   
   /** a SQL query string is supplied. */
-  @scala.inline
-  def SQL: `1` = 1.asInstanceOf[`1`]
+  inline def SQL: `1` = 1.asInstanceOf[`1`]
   
   /** the name of a database table is supplied. */
-  @scala.inline
-  def TABLE: `2` = 2.asInstanceOf[`2`]
+  inline def TABLE: `2` = 2.asInstanceOf[`2`]
 }

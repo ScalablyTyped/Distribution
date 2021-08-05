@@ -10,8 +10,6 @@ object convertAreaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(squareMeters: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(squareMeters.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default(squareMeters: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(squareMeters.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(squareMeters: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(squareMeters.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(squareMeters: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(squareMeters.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

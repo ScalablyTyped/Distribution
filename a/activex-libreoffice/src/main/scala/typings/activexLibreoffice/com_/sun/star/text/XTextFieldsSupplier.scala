@@ -31,8 +31,7 @@ trait XTextFieldsSupplier
 }
 object XTextFieldsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TextFieldMasters: XNameAccess,
     TextFields: XEnumerationAccess,
     acquire: () => Unit,
@@ -45,19 +44,14 @@ object XTextFieldsSupplier {
     __obj.asInstanceOf[XTextFieldsSupplier]
   }
   
-  @scala.inline
-  implicit class XTextFieldsSupplierMutableBuilder[Self <: XTextFieldsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextFieldsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetTextFieldMasters(value: () => XNameAccess): Self = StObject.set(x, "getTextFieldMasters", js.Any.fromFunction0(value))
+    inline def setGetTextFieldMasters(value: () => XNameAccess): Self = StObject.set(x, "getTextFieldMasters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextFields(value: () => XEnumerationAccess): Self = StObject.set(x, "getTextFields", js.Any.fromFunction0(value))
+    inline def setGetTextFields(value: () => XEnumerationAccess): Self = StObject.set(x, "getTextFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextFieldMasters(value: XNameAccess): Self = StObject.set(x, "TextFieldMasters", value.asInstanceOf[js.Any])
+    inline def setTextFieldMasters(value: XNameAccess): Self = StObject.set(x, "TextFieldMasters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFields(value: XEnumerationAccess): Self = StObject.set(x, "TextFields", value.asInstanceOf[js.Any])
+    inline def setTextFields(value: XEnumerationAccess): Self = StObject.set(x, "TextFields", value.asInstanceOf[js.Any])
   }
 }

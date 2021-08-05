@@ -16,17 +16,14 @@ trait DateAttribute
 }
 object DateAttribute {
   
-  @scala.inline
-  def apply(): DateAttribute = {
+  inline def apply(): DateAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("date")
     __obj.asInstanceOf[DateAttribute]
   }
   
-  @scala.inline
-  implicit class DateAttributeMutableBuilder[Self <: DateAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: DateAttribute](x: Self) {
     
-    @scala.inline
-    def setType(value: date): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: date): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

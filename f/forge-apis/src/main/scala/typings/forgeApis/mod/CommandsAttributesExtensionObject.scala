@@ -14,26 +14,20 @@ trait CommandsAttributesExtensionObject extends StObject {
 }
 object CommandsAttributesExtensionObject {
   
-  @scala.inline
-  def apply(`type`: String, version: String): CommandsAttributesExtensionObject = {
+  inline def apply(`type`: String, version: String): CommandsAttributesExtensionObject = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandsAttributesExtensionObject]
   }
   
-  @scala.inline
-  implicit class CommandsAttributesExtensionObjectMutableBuilder[Self <: CommandsAttributesExtensionObject] (val x: Self) extends AnyVal {
+  extension [Self <: CommandsAttributesExtensionObject](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

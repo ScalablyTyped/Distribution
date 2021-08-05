@@ -44,8 +44,6 @@ object OrientDBClient {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def connect(): js.Promise[OrientDBClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Promise[OrientDBClient]]
-  @scala.inline
-  def connect(options: OrientDBClientConfig): js.Promise[OrientDBClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OrientDBClient]]
+  inline def connect(): js.Promise[OrientDBClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Promise[OrientDBClient]]
+  inline def connect(options: OrientDBClientConfig): js.Promise[OrientDBClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OrientDBClient]]
 }

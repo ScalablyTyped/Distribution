@@ -10,19 +10,15 @@ trait GanttCurrentTimeMarker extends StObject {
 }
 object GanttCurrentTimeMarker {
   
-  @scala.inline
-  def apply(): GanttCurrentTimeMarker = {
+  inline def apply(): GanttCurrentTimeMarker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GanttCurrentTimeMarker]
   }
   
-  @scala.inline
-  implicit class GanttCurrentTimeMarkerMutableBuilder[Self <: GanttCurrentTimeMarker] (val x: Self) extends AnyVal {
+  extension [Self <: GanttCurrentTimeMarker](x: Self) {
     
-    @scala.inline
-    def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+    inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
+    inline def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
   }
 }

@@ -26,67 +26,47 @@ trait DraggableOption extends StObject {
 }
 object DraggableOption {
   
-  @scala.inline
-  def apply(): DraggableOption = {
+  inline def apply(): DraggableOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DraggableOption]
   }
   
-  @scala.inline
-  implicit class DraggableOptionMutableBuilder[Self <: DraggableOption] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableOption](x: Self) {
     
-    @scala.inline
-    def setBefore(value: /* e */ js.UndefOr[DraggableEvent] => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* e */ js.UndefOr[DraggableEvent] => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDrag(value: /* e */ DraggableEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
+    inline def setDrag(value: /* e */ DraggableEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    @scala.inline
-    def setFinish(value: /* e */ DraggableEvent => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
+    inline def setFinish(value: /* e */ DraggableEvent => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+    inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
-    @scala.inline
-    def setMouseButton(value: String): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
+    inline def setMouseButton(value: String): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseButtonUndefined: Self = StObject.set(x, "mouseButton", js.undefined)
+    inline def setMouseButtonUndefined: Self = StObject.set(x, "mouseButton", js.undefined)
     
-    @scala.inline
-    def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
   }
 }

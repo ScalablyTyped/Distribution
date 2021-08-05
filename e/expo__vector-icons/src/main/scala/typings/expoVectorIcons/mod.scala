@@ -397,22 +397,15 @@ object mod {
     override def _to: Icon[String, zocial] = ^
   }
   
-  @scala.inline
-  def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
-  @scala.inline
-  def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any, fontStyle: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any], fontStyle.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
+  inline def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
+  inline def createIconSet[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any, fontStyle: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSet")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any], fontStyle.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
   
-  @scala.inline
-  def createIconSetFromFontello(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromFontello")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createIconSetFromFontello(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromFontello")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def createIconSetFromIcoMoon(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromIcoMoon")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
+  inline def createIconSetFromIcoMoon(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconSetFromIcoMoon")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
   
-  @scala.inline
-  def createMu(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMu")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
+  inline def createMu(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMu")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
   
-  @scala.inline
-  def createMultiStyleIconSet(styles: FontStyles): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiStyleIconSet")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def createMultiStyleIconSet(styles: FontStyles, optionsInput: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiStyleIconSet")(styles.asInstanceOf[js.Any], optionsInput.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createMultiStyleIconSet(styles: FontStyles): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiStyleIconSet")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createMultiStyleIconSet(styles: FontStyles, optionsInput: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiStyleIconSet")(styles.asInstanceOf[js.Any], optionsInput.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

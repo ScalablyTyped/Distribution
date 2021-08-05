@@ -10,6 +10,5 @@ object cliMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(args: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(args: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

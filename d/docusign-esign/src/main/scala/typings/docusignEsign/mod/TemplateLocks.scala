@@ -56,63 +56,45 @@ trait TemplateLocks extends StObject {
 }
 object TemplateLocks {
   
-  @scala.inline
-  def apply(): TemplateLocks = {
+  inline def apply(): TemplateLocks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateLocks]
   }
   
-  @scala.inline
-  implicit class TemplateLocksMutableBuilder[Self <: TemplateLocks] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateLocks](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setLockDurationInSeconds(value: String): Self = StObject.set(x, "lockDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setLockDurationInSeconds(value: String): Self = StObject.set(x, "lockDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockDurationInSecondsUndefined: Self = StObject.set(x, "lockDurationInSeconds", js.undefined)
+    inline def setLockDurationInSecondsUndefined: Self = StObject.set(x, "lockDurationInSeconds", js.undefined)
     
-    @scala.inline
-    def setLockToken(value: String): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
+    inline def setLockToken(value: String): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockTokenUndefined: Self = StObject.set(x, "lockToken", js.undefined)
+    inline def setLockTokenUndefined: Self = StObject.set(x, "lockToken", js.undefined)
     
-    @scala.inline
-    def setLockType(value: String): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
+    inline def setLockType(value: String): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockTypeUndefined: Self = StObject.set(x, "lockType", js.undefined)
+    inline def setLockTypeUndefined: Self = StObject.set(x, "lockType", js.undefined)
     
-    @scala.inline
-    def setLockedByApp(value: String): Self = StObject.set(x, "lockedByApp", value.asInstanceOf[js.Any])
+    inline def setLockedByApp(value: String): Self = StObject.set(x, "lockedByApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedByAppUndefined: Self = StObject.set(x, "lockedByApp", js.undefined)
+    inline def setLockedByAppUndefined: Self = StObject.set(x, "lockedByApp", js.undefined)
     
-    @scala.inline
-    def setLockedByUser(value: UserInfo): Self = StObject.set(x, "lockedByUser", value.asInstanceOf[js.Any])
+    inline def setLockedByUser(value: UserInfo): Self = StObject.set(x, "lockedByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedByUserUndefined: Self = StObject.set(x, "lockedByUser", js.undefined)
+    inline def setLockedByUserUndefined: Self = StObject.set(x, "lockedByUser", js.undefined)
     
-    @scala.inline
-    def setLockedUntilDateTime(value: String): Self = StObject.set(x, "lockedUntilDateTime", value.asInstanceOf[js.Any])
+    inline def setLockedUntilDateTime(value: String): Self = StObject.set(x, "lockedUntilDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUntilDateTimeUndefined: Self = StObject.set(x, "lockedUntilDateTime", js.undefined)
+    inline def setLockedUntilDateTimeUndefined: Self = StObject.set(x, "lockedUntilDateTime", js.undefined)
     
-    @scala.inline
-    def setUseScratchPad(value: String): Self = StObject.set(x, "useScratchPad", value.asInstanceOf[js.Any])
+    inline def setUseScratchPad(value: String): Self = StObject.set(x, "useScratchPad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseScratchPadUndefined: Self = StObject.set(x, "useScratchPad", js.undefined)
+    inline def setUseScratchPadUndefined: Self = StObject.set(x, "useScratchPad", js.undefined)
   }
 }

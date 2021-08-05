@@ -150,8 +150,7 @@ object mod {
   @JSImport("lokijs", "LokiOps")
   @js.native
   def LokiOps: typings.lokijs.LokiOps = js.native
-  @scala.inline
-  def LokiOps_=(x: LokiOps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LokiOps")(x.asInstanceOf[js.Any])
+  inline def LokiOps_=(x: LokiOps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LokiOps")(x.asInstanceOf[js.Any])
   
   @JSImport("lokijs", "LokiPartitioningAdapter")
   @js.native
@@ -227,18 +226,13 @@ object mod {
     override def saveNextPartition(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   }
   
-  @scala.inline
-  def aeq(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aeq")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def aeq(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aeq")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def gt(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def gt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def gt(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def gt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def lt(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def lt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lt(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   object persistenceAdapters {
     
@@ -249,13 +243,11 @@ object mod {
     @JSImport("lokijs", "persistenceAdapters.fs")
     @js.native
     def fs: _LokiFsAdapter = js.native
-    @scala.inline
-    def fs_=(x: _LokiFsAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fs")(x.asInstanceOf[js.Any])
+    inline def fs_=(x: _LokiFsAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fs")(x.asInstanceOf[js.Any])
     
     @JSImport("lokijs", "persistenceAdapters.localStorage")
     @js.native
     def localStorage: _LokiLocalStorageAdapter = js.native
-    @scala.inline
-    def localStorage_=(x: _LokiLocalStorageAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localStorage")(x.asInstanceOf[js.Any])
+    inline def localStorage_=(x: _LokiLocalStorageAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localStorage")(x.asInstanceOf[js.Any])
   }
 }

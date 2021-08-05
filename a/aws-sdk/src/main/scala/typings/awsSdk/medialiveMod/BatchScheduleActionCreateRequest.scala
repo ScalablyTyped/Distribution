@@ -13,19 +13,15 @@ trait BatchScheduleActionCreateRequest extends StObject {
 }
 object BatchScheduleActionCreateRequest {
   
-  @scala.inline
-  def apply(ScheduleActions: listOfScheduleAction): BatchScheduleActionCreateRequest = {
+  inline def apply(ScheduleActions: listOfScheduleAction): BatchScheduleActionCreateRequest = {
     val __obj = js.Dynamic.literal(ScheduleActions = ScheduleActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchScheduleActionCreateRequest]
   }
   
-  @scala.inline
-  implicit class BatchScheduleActionCreateRequestMutableBuilder[Self <: BatchScheduleActionCreateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchScheduleActionCreateRequest](x: Self) {
     
-    @scala.inline
-    def setScheduleActions(value: listOfScheduleAction): Self = StObject.set(x, "ScheduleActions", value.asInstanceOf[js.Any])
+    inline def setScheduleActions(value: listOfScheduleAction): Self = StObject.set(x, "ScheduleActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleActionsVarargs(value: ScheduleAction*): Self = StObject.set(x, "ScheduleActions", js.Array(value :_*))
+    inline def setScheduleActionsVarargs(value: ScheduleAction*): Self = StObject.set(x, "ScheduleActions", js.Array(value :_*))
   }
 }

@@ -35,40 +35,29 @@ trait GridBaseCfg
 }
 object GridBaseCfg {
   
-  @scala.inline
-  def apply(container: IGroup, items: js.Array[GridItem]): GridBaseCfg = {
+  inline def apply(container: IGroup, items: js.Array[GridItem]): GridBaseCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridBaseCfg]
   }
   
-  @scala.inline
-  implicit class GridBaseCfgMutableBuilder[Self <: GridBaseCfg] (val x: Self) extends AnyVal {
+  extension [Self <: GridBaseCfg](x: Self) {
     
-    @scala.inline
-    def setAlternateColor(value: String | js.Array[String]): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
+    inline def setAlternateColor(value: String | js.Array[String]): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateColorUndefined: Self = StObject.set(x, "alternateColor", js.undefined)
+    inline def setAlternateColorUndefined: Self = StObject.set(x, "alternateColor", js.undefined)
     
-    @scala.inline
-    def setAlternateColorVarargs(value: String*): Self = StObject.set(x, "alternateColor", js.Array(value :_*))
+    inline def setAlternateColorVarargs(value: String*): Self = StObject.set(x, "alternateColor", js.Array(value :_*))
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+    inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[GridItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[GridItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: GridItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GridItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLine(value: GridLineCfg): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: GridLineCfg): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

@@ -21,6 +21,5 @@ object Magnetometer {
     * @return The default magnetometer.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Magnetometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Magnetometer]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Magnetometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Magnetometer]
 }

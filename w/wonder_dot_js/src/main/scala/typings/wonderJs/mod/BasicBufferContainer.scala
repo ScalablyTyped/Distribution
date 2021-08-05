@@ -17,6 +17,5 @@ object BasicBufferContainer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(entityObject: typings.wonderJs.gameObjectMod.GameObject): typings.wonderJs.basicBufferContainerMod.BasicBufferContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.basicBufferContainerMod.BasicBufferContainer]
+  inline def create(entityObject: typings.wonderJs.gameObjectMod.GameObject): typings.wonderJs.basicBufferContainerMod.BasicBufferContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.basicBufferContainerMod.BasicBufferContainer]
 }

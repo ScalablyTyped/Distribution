@@ -16,25 +16,19 @@ trait ErrorVal extends StObject {
 }
 object ErrorVal {
   
-  @scala.inline
-  def apply(errorVal: js.Any, value: js.Any, x: Double, y: Double): ErrorVal = {
+  inline def apply(errorVal: js.Any, value: js.Any, x: Double, y: Double): ErrorVal = {
     val __obj = js.Dynamic.literal(errorVal = errorVal.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorVal]
   }
   
-  @scala.inline
-  implicit class ErrorValMutableBuilder[Self <: ErrorVal] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorVal](x: Self) {
     
-    @scala.inline
-    def setErrorVal(value: js.Any): Self = StObject.set(x, "errorVal", value.asInstanceOf[js.Any])
+    inline def setErrorVal(value: js.Any): Self = StObject.set(x, "errorVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

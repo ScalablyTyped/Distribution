@@ -14,10 +14,8 @@ object mod {
     * @param opts options for URL parser
     * @returns GitHub URL
     */
-  @scala.inline
-  def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(url: String, opts: githubUrlFromGitOptions): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(url: String, opts: githubUrlFromGitOptions): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("github-url-from-git", JSImport.Namespace)
   @js.native
@@ -28,10 +26,8 @@ object mod {
     *
     * @param opts options for regular expression generator
     */
-  @scala.inline
-  def re(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")().asInstanceOf[RegExp]
-  @scala.inline
-  def re(opts: githubUrlFromGitOptions): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")(opts.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def re(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")().asInstanceOf[RegExp]
+  inline def re(opts: githubUrlFromGitOptions): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")(opts.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   trait githubUrlFromGitOptions extends StObject {
     
@@ -42,23 +38,18 @@ object mod {
   }
   object githubUrlFromGitOptions {
     
-    @scala.inline
-    def apply(): githubUrlFromGitOptions = {
+    inline def apply(): githubUrlFromGitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[githubUrlFromGitOptions]
     }
     
-    @scala.inline
-    implicit class githubUrlFromGitOptionsMutableBuilder[Self <: githubUrlFromGitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: githubUrlFromGitOptions](x: Self) {
       
-      @scala.inline
-      def setExtraBaseUrls(value: js.Array[String]): Self = StObject.set(x, "extraBaseUrls", value.asInstanceOf[js.Any])
+      inline def setExtraBaseUrls(value: js.Array[String]): Self = StObject.set(x, "extraBaseUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraBaseUrlsUndefined: Self = StObject.set(x, "extraBaseUrls", js.undefined)
+      inline def setExtraBaseUrlsUndefined: Self = StObject.set(x, "extraBaseUrls", js.undefined)
       
-      @scala.inline
-      def setExtraBaseUrlsVarargs(value: String*): Self = StObject.set(x, "extraBaseUrls", js.Array(value :_*))
+      inline def setExtraBaseUrlsVarargs(value: String*): Self = StObject.set(x, "extraBaseUrls", js.Array(value :_*))
     }
   }
 }

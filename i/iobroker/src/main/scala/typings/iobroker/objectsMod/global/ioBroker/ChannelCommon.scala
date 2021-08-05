@@ -16,22 +16,17 @@ trait ChannelCommon
 }
 object ChannelCommon {
   
-  @scala.inline
-  def apply(custom: Unit, name: StringOrTranslated): ChannelCommon = {
+  inline def apply(custom: Unit, name: StringOrTranslated): ChannelCommon = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelCommon]
   }
   
-  @scala.inline
-  implicit class ChannelCommonMutableBuilder[Self <: ChannelCommon] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelCommon](x: Self) {
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+    inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
   }
 }

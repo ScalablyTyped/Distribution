@@ -12,22 +12,17 @@ trait MetricResponse extends StObject {
 }
 object MetricResponse {
   
-  @scala.inline
-  def apply(): MetricResponse = {
+  inline def apply(): MetricResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricResponse]
   }
   
-  @scala.inline
-  implicit class MetricResponseMutableBuilder[Self <: MetricResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MetricResponse](x: Self) {
     
-    @scala.inline
-    def setAggregations(value: js.Array[MetricAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
+    inline def setAggregations(value: js.Array[MetricAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
+    inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     
-    @scala.inline
-    def setAggregationsVarargs(value: MetricAggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
+    inline def setAggregationsVarargs(value: MetricAggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
   }
 }

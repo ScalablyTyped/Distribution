@@ -14,19 +14,15 @@ trait ExecutionResponse extends StObject {
 }
 object ExecutionResponse {
   
-  @scala.inline
-  def apply(): ExecutionResponse = {
+  inline def apply(): ExecutionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionResponse]
   }
   
-  @scala.inline
-  implicit class ExecutionResponseMutableBuilder[Self <: ExecutionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

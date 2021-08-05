@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.AutoCorrect")
 @js.native
-class AutoCorrect protected ()
+/* private */ class AutoCorrect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.AutoCorrect {
   
@@ -16,7 +16,7 @@ class AutoCorrect protected ()
   /* CompleteClass */
   var DisplayAutoLayoutOptions: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.AutoCorrect_typekey")
   var PowerPointDotAutoCorrect_typekey: typings.activexPowerpoint.PowerPoint.AutoCorrect = js.native
 }

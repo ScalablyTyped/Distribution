@@ -10,16 +10,13 @@ trait IPING_PONG extends StObject {
 }
 object IPING_PONG {
   
-  @scala.inline
-  def apply(lagValue: Double): IPING_PONG = {
+  inline def apply(lagValue: Double): IPING_PONG = {
     val __obj = js.Dynamic.literal(lagValue = lagValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPING_PONG]
   }
   
-  @scala.inline
-  implicit class IPING_PONGMutableBuilder[Self <: IPING_PONG] (val x: Self) extends AnyVal {
+  extension [Self <: IPING_PONG](x: Self) {
     
-    @scala.inline
-    def setLagValue(value: Double): Self = StObject.set(x, "lagValue", value.asInstanceOf[js.Any])
+    inline def setLagValue(value: Double): Self = StObject.set(x, "lagValue", value.asInstanceOf[js.Any])
   }
 }

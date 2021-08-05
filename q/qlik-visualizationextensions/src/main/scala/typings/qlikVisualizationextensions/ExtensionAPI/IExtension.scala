@@ -21,49 +21,35 @@ trait IExtension extends StObject {
 }
 object IExtension {
   
-  @scala.inline
-  def apply(): IExtension = {
+  inline def apply(): IExtension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IExtension]
   }
   
-  @scala.inline
-  implicit class IExtensionMutableBuilder[Self <: IExtension] (val x: Self) extends AnyVal {
+  extension [Self <: IExtension](x: Self) {
     
-    @scala.inline
-    def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: IDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: IDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setInitialProperties(value: IInitialProperties): Self = StObject.set(x, "initialProperties", value.asInstanceOf[js.Any])
+    inline def setInitialProperties(value: IInitialProperties): Self = StObject.set(x, "initialProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPropertiesUndefined: Self = StObject.set(x, "initialProperties", js.undefined)
+    inline def setInitialPropertiesUndefined: Self = StObject.set(x, "initialProperties", js.undefined)
     
-    @scala.inline
-    def setPaint(value: (/* $element */ HTMLElement, /* layout */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "paint", js.Any.fromFunction2(value))
+    inline def setPaint(value: (/* $element */ HTMLElement, /* layout */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "paint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
+    inline def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
     
-    @scala.inline
-    def setSupport(value: ISupport): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
+    inline def setSupport(value: ISupport): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
+    inline def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

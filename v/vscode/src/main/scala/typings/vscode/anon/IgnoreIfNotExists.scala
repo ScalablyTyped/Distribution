@@ -12,25 +12,19 @@ trait IgnoreIfNotExists extends StObject {
 }
 object IgnoreIfNotExists {
   
-  @scala.inline
-  def apply(): IgnoreIfNotExists = {
+  inline def apply(): IgnoreIfNotExists = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreIfNotExists]
   }
   
-  @scala.inline
-  implicit class IgnoreIfNotExistsMutableBuilder[Self <: IgnoreIfNotExists] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreIfNotExists](x: Self) {
     
-    @scala.inline
-    def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
+    inline def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIfNotExistsUndefined: Self = StObject.set(x, "ignoreIfNotExists", js.undefined)
+    inline def setIgnoreIfNotExistsUndefined: Self = StObject.set(x, "ignoreIfNotExists", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

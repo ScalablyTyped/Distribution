@@ -15,19 +15,15 @@ trait MobileBroadbandNetworkRegistrationStateChange extends StObject {
 }
 object MobileBroadbandNetworkRegistrationStateChange {
   
-  @scala.inline
-  def apply(deviceId: String, network: MobileBroadbandNetwork): MobileBroadbandNetworkRegistrationStateChange = {
+  inline def apply(deviceId: String, network: MobileBroadbandNetwork): MobileBroadbandNetworkRegistrationStateChange = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandNetworkRegistrationStateChange]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandNetworkRegistrationStateChangeMutableBuilder[Self <: MobileBroadbandNetworkRegistrationStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandNetworkRegistrationStateChange](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
   }
 }

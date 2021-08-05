@@ -29,8 +29,7 @@ object anon {
   }
   object AllDay {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allDay: Boolean,
       date: Date,
       dayEl: HTMLElement,
@@ -44,38 +43,27 @@ object anon {
       __obj.asInstanceOf[AllDay]
     }
     
-    @scala.inline
-    implicit class AllDayMutableBuilder[Self <: AllDay] (val x: Self) extends AnyVal {
+    extension [Self <: AllDay](x: Self) {
       
-      @scala.inline
-      def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+      inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayEl(value: HTMLElement): Self = StObject.set(x, "dayEl", value.asInstanceOf[js.Any])
+      inline def setDayEl(value: HTMLElement): Self = StObject.set(x, "dayEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenSegs(value: js.Array[js.Any]): Self = StObject.set(x, "hiddenSegs", value.asInstanceOf[js.Any])
+      inline def setHiddenSegs(value: js.Array[js.Any]): Self = StObject.set(x, "hiddenSegs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenSegsVarargs(value: js.Any*): Self = StObject.set(x, "hiddenSegs", js.Array(value :_*))
+      inline def setHiddenSegsVarargs(value: js.Any*): Self = StObject.set(x, "hiddenSegs", js.Array(value :_*))
       
-      @scala.inline
-      def setJsEvent(value: MouseEvent): Self = StObject.set(x, "jsEvent", value.asInstanceOf[js.Any])
+      inline def setJsEvent(value: MouseEvent): Self = StObject.set(x, "jsEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoreEl(value: HTMLElement): Self = StObject.set(x, "moreEl", value.asInstanceOf[js.Any])
+      inline def setMoreEl(value: HTMLElement): Self = StObject.set(x, "moreEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegs(value: js.Array[js.Any]): Self = StObject.set(x, "segs", value.asInstanceOf[js.Any])
+      inline def setSegs(value: js.Array[js.Any]): Self = StObject.set(x, "segs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegsVarargs(value: js.Any*): Self = StObject.set(x, "segs", js.Array(value :_*))
+      inline def setSegsVarargs(value: js.Any*): Self = StObject.set(x, "segs", js.Array(value :_*))
       
-      @scala.inline
-      def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
 }

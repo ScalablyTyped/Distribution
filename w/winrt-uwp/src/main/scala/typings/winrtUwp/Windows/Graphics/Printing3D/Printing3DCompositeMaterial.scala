@@ -13,16 +13,13 @@ trait Printing3DCompositeMaterial extends StObject {
 }
 object Printing3DCompositeMaterial {
   
-  @scala.inline
-  def apply(values: IVector[Double]): Printing3DCompositeMaterial = {
+  inline def apply(values: IVector[Double]): Printing3DCompositeMaterial = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DCompositeMaterial]
   }
   
-  @scala.inline
-  implicit class Printing3DCompositeMaterialMutableBuilder[Self <: Printing3DCompositeMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DCompositeMaterial](x: Self) {
     
-    @scala.inline
-    def setValues(value: IVector[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: IVector[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

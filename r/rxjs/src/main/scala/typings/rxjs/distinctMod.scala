@@ -26,23 +26,19 @@ object distinctMod {
     ) = this()
     def this(destination: Subscriber[T], keySelector: Unit, flushes: Observable[js.Any]) = this()
     
-    var _finalizeNext: js.Any = js.native
+    /* private */ var _finalizeNext: js.Any = js.native
     
-    var _useKeySelector: js.Any = js.native
+    /* private */ var _useKeySelector: js.Any = js.native
     
-    var keySelector: js.Any = js.native
+    /* private */ var keySelector: js.Any = js.native
     
     def notifyNext(): Unit = js.native
     
-    var values: js.Any = js.native
+    /* private */ var values: js.Any = js.native
   }
   
-  @scala.inline
-  def distinct[T, K](): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")().asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def distinct[T, K](keySelector: js.Function1[/* value */ T, K], flushes: Observable[js.Any]): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def distinct[T, K](keySelector: Unit, flushes: Observable[js.Any]): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def distinct[T, K](): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")().asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def distinct[T, K](keySelector: js.Function1[/* value */ T, K], flushes: Observable[js.Any]): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def distinct[T, K](keySelector: Unit, flushes: Observable[js.Any]): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
 }

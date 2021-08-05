@@ -12,25 +12,19 @@ trait Size extends StObject {
 }
 object Size {
   
-  @scala.inline
-  def apply(): Size = {
+  inline def apply(): Size = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Size]
   }
   
-  @scala.inline
-  implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+  extension [Self <: Size](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

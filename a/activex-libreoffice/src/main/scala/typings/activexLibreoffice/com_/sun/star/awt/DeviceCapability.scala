@@ -15,10 +15,8 @@ object DeviceCapability {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def GETBITS: `2` = 2.asInstanceOf[`2`]
+    inline def GETBITS: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def RASTEROPERATIONS: `1` = 1.asInstanceOf[`1`]
+    inline def RASTEROPERATIONS: `1` = 1.asInstanceOf[`1`]
   }
 }

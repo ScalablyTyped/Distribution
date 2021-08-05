@@ -15,25 +15,19 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(key: String, node: Node): Index = {
+  inline def apply(key: String, node: Node): Index = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

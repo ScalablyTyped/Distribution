@@ -14,12 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionStateType extends StObject
 object ConnectionStateType {
   
-  @scala.inline
-  def Connected: Connected_ = "Connected".asInstanceOf[Connected_]
+  inline def Connected: Connected_ = "Connected".asInstanceOf[Connected_]
   
-  @scala.inline
-  def Connecting: Connecting_ = "Connecting".asInstanceOf[Connecting_]
+  inline def Connecting: Connecting_ = "Connecting".asInstanceOf[Connecting_]
   
-  @scala.inline
-  def NotConnected: typings.chromeApps.chromeAppsStrings.NotConnected = "NotConnected".asInstanceOf[typings.chromeApps.chromeAppsStrings.NotConnected]
+  inline def NotConnected: typings.chromeApps.chromeAppsStrings.NotConnected = "NotConnected".asInstanceOf[typings.chromeApps.chromeAppsStrings.NotConnected]
 }

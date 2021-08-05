@@ -24,23 +24,18 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply(config: ProjectConfig, testPaths: js.Array[Path]): Config = {
+    inline def apply(config: ProjectConfig, testPaths: js.Array[Path]): Config = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], testPaths = testPaths.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestPaths(value: js.Array[Path]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
+      inline def setTestPaths(value: js.Array[Path]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestPathsVarargs(value: Path*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
+      inline def setTestPathsVarargs(value: Path*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
     }
   }
   
@@ -54,23 +49,18 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: Double, index: Double, start: Double): End = {
+    inline def apply(end: Double, index: Double, start: Double): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,17 +70,14 @@ object anon {
   }
   object Header {
     
-    @scala.inline
-    def apply(header: String): Header = {
+    inline def apply(header: String): Header = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +92,7 @@ object anon {
   }
   object ReadonlyJestHookEmitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onFileChange: JestHookExposedFS => Unit,
       onTestRunComplete: AggregatedResult => Unit,
       shouldRunTestSuite: TestSuiteInfo => js.Promise[Boolean] | Boolean
@@ -115,17 +101,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyJestHookEmitter]
     }
     
-    @scala.inline
-    implicit class ReadonlyJestHookEmitterMutableBuilder[Self <: ReadonlyJestHookEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyJestHookEmitter](x: Self) {
       
-      @scala.inline
-      def setOnFileChange(value: JestHookExposedFS => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
+      inline def setOnFileChange(value: JestHookExposedFS => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTestRunComplete(value: AggregatedResult => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
+      inline def setOnTestRunComplete(value: AggregatedResult => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldRunTestSuite(value: TestSuiteInfo => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
+      inline def setShouldRunTestSuite(value: TestSuiteInfo => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
     }
   }
   
@@ -140,8 +122,7 @@ object anon {
   }
   object ReadonlyJestHookSubscribe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onFileChange: FileChange => Unit,
       onTestRunComplete: TestRunComplete => Unit,
       shouldRunTestSuite: ShouldRunTestSuite => Unit
@@ -150,17 +131,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyJestHookSubscribe]
     }
     
-    @scala.inline
-    implicit class ReadonlyJestHookSubscribeMutableBuilder[Self <: ReadonlyJestHookSubscribe] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyJestHookSubscribe](x: Self) {
       
-      @scala.inline
-      def setOnFileChange(value: FileChange => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
+      inline def setOnFileChange(value: FileChange => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTestRunComplete(value: TestRunComplete => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
+      inline def setOnTestRunComplete(value: TestRunComplete => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldRunTestSuite(value: ShouldRunTestSuite => Unit): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
+      inline def setShouldRunTestSuite(value: ShouldRunTestSuite => Unit): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
     }
   }
   
@@ -172,20 +149,16 @@ object anon {
   }
   object Stdin {
     
-    @scala.inline
-    def apply(stdin: ReadStream, stdout: WriteStream): Stdin = {
+    inline def apply(stdin: ReadStream, stdout: WriteStream): Stdin = {
       val __obj = js.Dynamic.literal(stdin = stdin.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stdin]
     }
     
-    @scala.inline
-    implicit class StdinMutableBuilder[Self <: Stdin] (val x: Self) extends AnyVal {
+    extension [Self <: Stdin](x: Self) {
       
-      @scala.inline
-      def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
 }

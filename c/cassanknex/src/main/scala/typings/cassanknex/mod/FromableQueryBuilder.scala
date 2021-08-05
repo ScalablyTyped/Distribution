@@ -10,16 +10,13 @@ trait FromableQueryBuilder extends StObject {
 }
 object FromableQueryBuilder {
   
-  @scala.inline
-  def apply(from: String => FromableQueryBuilder): FromableQueryBuilder = {
+  inline def apply(from: String => FromableQueryBuilder): FromableQueryBuilder = {
     val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from))
     __obj.asInstanceOf[FromableQueryBuilder]
   }
   
-  @scala.inline
-  implicit class FromableQueryBuilderMutableBuilder[Self <: FromableQueryBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: FromableQueryBuilder](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String => FromableQueryBuilder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+    inline def setFrom(value: String => FromableQueryBuilder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
   }
 }

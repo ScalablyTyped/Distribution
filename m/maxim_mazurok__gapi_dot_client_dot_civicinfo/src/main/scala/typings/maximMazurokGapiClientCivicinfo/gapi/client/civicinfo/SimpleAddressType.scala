@@ -29,55 +29,39 @@ trait SimpleAddressType extends StObject {
 }
 object SimpleAddressType {
   
-  @scala.inline
-  def apply(): SimpleAddressType = {
+  inline def apply(): SimpleAddressType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleAddressType]
   }
   
-  @scala.inline
-  implicit class SimpleAddressTypeMutableBuilder[Self <: SimpleAddressType] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleAddressType](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
-    @scala.inline
-    def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
+    inline def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine1Undefined: Self = StObject.set(x, "line1", js.undefined)
+    inline def setLine1Undefined: Self = StObject.set(x, "line1", js.undefined)
     
-    @scala.inline
-    def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
+    inline def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine2Undefined: Self = StObject.set(x, "line2", js.undefined)
+    inline def setLine2Undefined: Self = StObject.set(x, "line2", js.undefined)
     
-    @scala.inline
-    def setLine3(value: String): Self = StObject.set(x, "line3", value.asInstanceOf[js.Any])
+    inline def setLine3(value: String): Self = StObject.set(x, "line3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine3Undefined: Self = StObject.set(x, "line3", js.undefined)
+    inline def setLine3Undefined: Self = StObject.set(x, "line3", js.undefined)
     
-    @scala.inline
-    def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
+    inline def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
+    inline def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    inline def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
+    inline def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

@@ -26,22 +26,17 @@ trait CommandInfo extends StObject {
 }
 object CommandInfo {
   
-  @scala.inline
-  def apply(ArgType: `type`, Handle: Double, Name: String): CommandInfo = {
+  inline def apply(ArgType: `type`, Handle: Double, Name: String): CommandInfo = {
     val __obj = js.Dynamic.literal(ArgType = ArgType.asInstanceOf[js.Any], Handle = Handle.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandInfo]
   }
   
-  @scala.inline
-  implicit class CommandInfoMutableBuilder[Self <: CommandInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CommandInfo](x: Self) {
     
-    @scala.inline
-    def setArgType(value: `type`): Self = StObject.set(x, "ArgType", value.asInstanceOf[js.Any])
+    inline def setArgType(value: `type`): Self = StObject.set(x, "ArgType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

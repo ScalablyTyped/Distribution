@@ -20,20 +20,16 @@ trait MarkerShapeRect
 }
 object MarkerShapeRect {
   
-  @scala.inline
-  def apply(coords: js.Tuple4[Double, Double, Double, Double]): MarkerShapeRect = {
+  inline def apply(coords: js.Tuple4[Double, Double, Double, Double]): MarkerShapeRect = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("rect")
     __obj.asInstanceOf[MarkerShapeRect]
   }
   
-  @scala.inline
-  implicit class MarkerShapeRectMutableBuilder[Self <: MarkerShapeRect] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerShapeRect](x: Self) {
     
-    @scala.inline
-    def setCoords(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

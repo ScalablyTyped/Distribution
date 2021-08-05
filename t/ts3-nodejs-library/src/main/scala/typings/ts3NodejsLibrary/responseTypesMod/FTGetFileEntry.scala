@@ -24,32 +24,24 @@ trait FTGetFileEntry
 }
 object FTGetFileEntry {
   
-  @scala.inline
-  def apply(cid: String, datetime: Double, name: String, path: String, size: Double, `type`: Double): FTGetFileEntry = {
+  inline def apply(cid: String, datetime: Double, name: String, path: String, size: Double, `type`: Double): FTGetFileEntry = {
     val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FTGetFileEntry]
   }
   
-  @scala.inline
-  implicit class FTGetFileEntryMutableBuilder[Self <: FTGetFileEntry] (val x: Self) extends AnyVal {
+  extension [Self <: FTGetFileEntry](x: Self) {
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

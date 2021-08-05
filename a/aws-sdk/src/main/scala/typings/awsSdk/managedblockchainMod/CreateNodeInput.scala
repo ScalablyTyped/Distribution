@@ -28,8 +28,7 @@ trait CreateNodeInput extends StObject {
 }
 object CreateNodeInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientRequestToken: ClientRequestTokenString,
     MemberId: ResourceIdString,
     NetworkId: ResourceIdString,
@@ -39,19 +38,14 @@ object CreateNodeInput {
     __obj.asInstanceOf[CreateNodeInput]
   }
   
-  @scala.inline
-  implicit class CreateNodeInputMutableBuilder[Self <: CreateNodeInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNodeInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeConfiguration(value: NodeConfiguration): Self = StObject.set(x, "NodeConfiguration", value.asInstanceOf[js.Any])
+    inline def setNodeConfiguration(value: NodeConfiguration): Self = StObject.set(x, "NodeConfiguration", value.asInstanceOf[js.Any])
   }
 }

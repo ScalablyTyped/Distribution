@@ -18,23 +18,18 @@ trait ProtectionCreatedEvent
 }
 object ProtectionCreatedEvent {
   
-  @scala.inline
-  def apply(controller: js.Object, manifest: js.Object): ProtectionCreatedEvent = {
+  inline def apply(controller: js.Object, manifest: js.Object): ProtectionCreatedEvent = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public_protectioncreated")
     __obj.asInstanceOf[ProtectionCreatedEvent]
   }
   
-  @scala.inline
-  implicit class ProtectionCreatedEventMutableBuilder[Self <: ProtectionCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setController(value: js.Object): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: js.Object): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifest(value: js.Object): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: js.Object): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: public_protectioncreated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_protectioncreated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,25 +15,19 @@ trait DeviceView
 }
 object DeviceView {
   
-  @scala.inline
-  def apply(): DeviceView = {
+  inline def apply(): DeviceView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceView]
   }
   
-  @scala.inline
-  implicit class DeviceViewMutableBuilder[Self <: DeviceView] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceView](x: Self) {
     
-    @scala.inline
-    def setDataCenterId(value: Id): Self = StObject.set(x, "dataCenterId", value.asInstanceOf[js.Any])
+    inline def setDataCenterId(value: Id): Self = StObject.set(x, "dataCenterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCenterIdUndefined: Self = StObject.set(x, "dataCenterId", js.undefined)
+    inline def setDataCenterIdUndefined: Self = StObject.set(x, "dataCenterId", js.undefined)
     
-    @scala.inline
-    def setDeviceDescriptor(value: DeviceDescriptor): Self = StObject.set(x, "deviceDescriptor", value.asInstanceOf[js.Any])
+    inline def setDeviceDescriptor(value: DeviceDescriptor): Self = StObject.set(x, "deviceDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceDescriptorUndefined: Self = StObject.set(x, "deviceDescriptor", js.undefined)
+    inline def setDeviceDescriptorUndefined: Self = StObject.set(x, "deviceDescriptor", js.undefined)
   }
 }

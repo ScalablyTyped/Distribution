@@ -14,25 +14,19 @@ trait RestrictionChange extends StObject {
 }
 object RestrictionChange {
   
-  @scala.inline
-  def apply(): RestrictionChange = {
+  inline def apply(): RestrictionChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestrictionChange]
   }
   
-  @scala.inline
-  implicit class RestrictionChangeMutableBuilder[Self <: RestrictionChange] (val x: Self) extends AnyVal {
+  extension [Self <: RestrictionChange](x: Self) {
     
-    @scala.inline
-    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    @scala.inline
-    def setNewRestriction(value: String): Self = StObject.set(x, "newRestriction", value.asInstanceOf[js.Any])
+    inline def setNewRestriction(value: String): Self = StObject.set(x, "newRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRestrictionUndefined: Self = StObject.set(x, "newRestriction", js.undefined)
+    inline def setNewRestrictionUndefined: Self = StObject.set(x, "newRestriction", js.undefined)
   }
 }

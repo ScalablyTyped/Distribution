@@ -60,17 +60,14 @@ object receiverStructuredMod {
   }
   object CloudEvent {
     
-    @scala.inline
-    def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
+    inline def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
       val __obj = js.Dynamic.literal(CloudEvent = CloudEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudEvent]
     }
     
-    @scala.inline
-    implicit class CloudEventMutableBuilder[Self <: CloudEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudEvent](x: Self) {
       
-      @scala.inline
-      def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
+      inline def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,8 +104,7 @@ object receiverStructuredMod {
   }
   object StructuredHTTPReceiver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       check: (js.Object, js.Object) => Boolean,
       parse: (js.Object, js.Object) => CloudEvent,
       receiver: typings.cloudeventsSdk.receiverStructured1Mod.^ | typings.cloudeventsSdk.receiverStructured03Mod.^
@@ -117,17 +113,13 @@ object receiverStructuredMod {
       __obj.asInstanceOf[StructuredHTTPReceiver]
     }
     
-    @scala.inline
-    implicit class StructuredHTTPReceiverMutableBuilder[Self <: StructuredHTTPReceiver] (val x: Self) extends AnyVal {
+    extension [Self <: StructuredHTTPReceiver](x: Self) {
       
-      @scala.inline
-      def setCheck(value: (js.Object, js.Object) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
+      inline def setCheck(value: (js.Object, js.Object) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParse(value: (js.Object, js.Object) => CloudEvent): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (js.Object, js.Object) => CloudEvent): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReceiver(
+      inline def setReceiver(
         value: typings.cloudeventsSdk.receiverStructured1Mod.^ | typings.cloudeventsSdk.receiverStructured03Mod.^
       ): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     }

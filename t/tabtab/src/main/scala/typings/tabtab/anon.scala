@@ -15,23 +15,18 @@ object anon {
   }
   object ReadonlyCompletionItem {
     
-    @scala.inline
-    def apply(name: String): ReadonlyCompletionItem = {
+    inline def apply(name: String): ReadonlyCompletionItem = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyCompletionItem]
     }
     
-    @scala.inline
-    implicit class ReadonlyCompletionItemMutableBuilder[Self <: ReadonlyCompletionItem] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyCompletionItem](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

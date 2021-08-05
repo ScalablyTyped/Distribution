@@ -44,37 +44,27 @@ trait WorkbookUpdateData extends StObject {
 }
 object WorkbookUpdateData {
   
-  @scala.inline
-  def apply(): WorkbookUpdateData = {
+  inline def apply(): WorkbookUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookUpdateData]
   }
   
-  @scala.inline
-  implicit class WorkbookUpdateDataMutableBuilder[Self <: WorkbookUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookUpdateData](x: Self) {
     
-    @scala.inline
-    def setChartDataPointTrack(value: Boolean): Self = StObject.set(x, "chartDataPointTrack", value.asInstanceOf[js.Any])
+    inline def setChartDataPointTrack(value: Boolean): Self = StObject.set(x, "chartDataPointTrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartDataPointTrackUndefined: Self = StObject.set(x, "chartDataPointTrack", js.undefined)
+    inline def setChartDataPointTrackUndefined: Self = StObject.set(x, "chartDataPointTrack", js.undefined)
     
-    @scala.inline
-    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
+    inline def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
+    inline def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
-    @scala.inline
-    def setProperties(value: DocumentPropertiesUpdateData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: DocumentPropertiesUpdateData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setUsePrecisionAsDisplayed(value: Boolean): Self = StObject.set(x, "usePrecisionAsDisplayed", value.asInstanceOf[js.Any])
+    inline def setUsePrecisionAsDisplayed(value: Boolean): Self = StObject.set(x, "usePrecisionAsDisplayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePrecisionAsDisplayedUndefined: Self = StObject.set(x, "usePrecisionAsDisplayed", js.undefined)
+    inline def setUsePrecisionAsDisplayedUndefined: Self = StObject.set(x, "usePrecisionAsDisplayed", js.undefined)
   }
 }

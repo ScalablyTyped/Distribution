@@ -17,34 +17,25 @@ trait Button extends StObject {
 }
 object Button {
   
-  @scala.inline
-  def apply(): Button = {
+  inline def apply(): Button = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Button]
   }
   
-  @scala.inline
-  implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+  extension [Self <: Button](x: Self) {
     
-    @scala.inline
-    def setButton(value: Close): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Close): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[Fontcolor]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Fontcolor]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Fontcolor*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Fontcolor*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

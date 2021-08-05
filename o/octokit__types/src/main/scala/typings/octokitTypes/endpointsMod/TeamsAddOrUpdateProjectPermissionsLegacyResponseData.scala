@@ -12,19 +12,15 @@ trait TeamsAddOrUpdateProjectPermissionsLegacyResponseData extends StObject {
 }
 object TeamsAddOrUpdateProjectPermissionsLegacyResponseData {
   
-  @scala.inline
-  def apply(documentation_url: String, message: String): TeamsAddOrUpdateProjectPermissionsLegacyResponseData = {
+  inline def apply(documentation_url: String, message: String): TeamsAddOrUpdateProjectPermissionsLegacyResponseData = {
     val __obj = js.Dynamic.literal(documentation_url = documentation_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateProjectPermissionsLegacyResponseData]
   }
   
-  @scala.inline
-  implicit class TeamsAddOrUpdateProjectPermissionsLegacyResponseDataMutableBuilder[Self <: TeamsAddOrUpdateProjectPermissionsLegacyResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAddOrUpdateProjectPermissionsLegacyResponseData](x: Self) {
     
-    @scala.inline
-    def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
+    inline def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

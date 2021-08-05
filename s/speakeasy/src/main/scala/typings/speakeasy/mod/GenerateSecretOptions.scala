@@ -51,55 +51,39 @@ trait GenerateSecretOptions extends StObject {
 }
 object GenerateSecretOptions {
   
-  @scala.inline
-  def apply(): GenerateSecretOptions = {
+  inline def apply(): GenerateSecretOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateSecretOptions]
   }
   
-  @scala.inline
-  implicit class GenerateSecretOptionsMutableBuilder[Self <: GenerateSecretOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateSecretOptions](x: Self) {
     
-    @scala.inline
-    def setGoogle_auth_qr(value: Boolean): Self = StObject.set(x, "google_auth_qr", value.asInstanceOf[js.Any])
+    inline def setGoogle_auth_qr(value: Boolean): Self = StObject.set(x, "google_auth_qr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogle_auth_qrUndefined: Self = StObject.set(x, "google_auth_qr", js.undefined)
+    inline def setGoogle_auth_qrUndefined: Self = StObject.set(x, "google_auth_qr", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOtpauth_url(value: Boolean): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
+    inline def setOtpauth_url(value: Boolean): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtpauth_urlUndefined: Self = StObject.set(x, "otpauth_url", js.undefined)
+    inline def setOtpauth_urlUndefined: Self = StObject.set(x, "otpauth_url", js.undefined)
     
-    @scala.inline
-    def setQr_codes(value: Boolean): Self = StObject.set(x, "qr_codes", value.asInstanceOf[js.Any])
+    inline def setQr_codes(value: Boolean): Self = StObject.set(x, "qr_codes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQr_codesUndefined: Self = StObject.set(x, "qr_codes", js.undefined)
+    inline def setQr_codesUndefined: Self = StObject.set(x, "qr_codes", js.undefined)
     
-    @scala.inline
-    def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+    inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
   }
 }

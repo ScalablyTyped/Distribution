@@ -78,8 +78,7 @@ object transaction {
   }
   object TransactionData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AuthorId: String,
       CreationDate: Double,
       CreditedFunds: MoneyData,
@@ -101,47 +100,33 @@ object transaction {
       __obj.asInstanceOf[TransactionData]
     }
     
-    @scala.inline
-    implicit class TransactionDataMutableBuilder[Self <: TransactionData] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionData](x: Self) {
       
-      @scala.inline
-      def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
+      inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditedFunds(value: MoneyData): Self = StObject.set(x, "CreditedFunds", value.asInstanceOf[js.Any])
+      inline def setCreditedFunds(value: MoneyData): Self = StObject.set(x, "CreditedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditedUserId(value: String): Self = StObject.set(x, "CreditedUserId", value.asInstanceOf[js.Any])
+      inline def setCreditedUserId(value: String): Self = StObject.set(x, "CreditedUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditedWalletId(value: String): Self = StObject.set(x, "CreditedWalletId", value.asInstanceOf[js.Any])
+      inline def setCreditedWalletId(value: String): Self = StObject.set(x, "CreditedWalletId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
+      inline def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedWalletId(value: String): Self = StObject.set(x, "DebitedWalletId", value.asInstanceOf[js.Any])
+      inline def setDebitedWalletId(value: String): Self = StObject.set(x, "DebitedWalletId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionDate(value: Timestamp): Self = StObject.set(x, "ExecutionDate", value.asInstanceOf[js.Any])
+      inline def setExecutionDate(value: Timestamp): Self = StObject.set(x, "ExecutionDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
+      inline def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNature(value: TransactionNature): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
+      inline def setNature(value: TransactionNature): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
+      inline def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: TransactionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: TransactionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TransactionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: TransactionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,17 +139,13 @@ object transaction {
   trait TransactionNature extends StObject
   object TransactionNature {
     
-    @scala.inline
-    def REFUND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND = "REFUND".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND]
+    inline def REFUND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND = "REFUND".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND]
     
-    @scala.inline
-    def REGULAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR = "REGULAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR]
+    inline def REGULAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR = "REGULAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR]
     
-    @scala.inline
-    def REPUDIATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REPUDIATION = "REPUDIATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REPUDIATION]
+    inline def REPUDIATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REPUDIATION = "REPUDIATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REPUDIATION]
     
-    @scala.inline
-    def SETTLEMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SETTLEMENT = "SETTLEMENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SETTLEMENT]
+    inline def SETTLEMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SETTLEMENT = "SETTLEMENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SETTLEMENT]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -175,14 +156,11 @@ object transaction {
   trait TransactionStatus extends StObject
   object TransactionStatus {
     
-    @scala.inline
-    def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
+    inline def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
     
-    @scala.inline
-    def FAILED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FAILED = "FAILED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FAILED]
+    inline def FAILED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FAILED = "FAILED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FAILED]
     
-    @scala.inline
-    def SUCCEEDED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUCCEEDED = "SUCCEEDED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUCCEEDED]
+    inline def SUCCEEDED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUCCEEDED = "SUCCEEDED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUCCEEDED]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -193,13 +171,10 @@ object transaction {
   trait TransactionType extends StObject
   object TransactionType {
     
-    @scala.inline
-    def PAYIN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYIN = "PAYIN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYIN]
+    inline def PAYIN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYIN = "PAYIN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYIN]
     
-    @scala.inline
-    def PAYOUT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYOUT = "PAYOUT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYOUT]
+    inline def PAYOUT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYOUT = "PAYOUT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYOUT]
     
-    @scala.inline
-    def TRANSFER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSFER = "TRANSFER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSFER]
+    inline def TRANSFER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSFER = "TRANSFER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSFER]
   }
 }

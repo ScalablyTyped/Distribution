@@ -12,16 +12,13 @@ trait AppointmentToolTipShowingEventArgs
 }
 object AppointmentToolTipShowingEventArgs {
   
-  @scala.inline
-  def apply(appointment: BootstrapSchedulerAppointment, cancel: Boolean, sender: Control): AppointmentToolTipShowingEventArgs = {
+  inline def apply(appointment: BootstrapSchedulerAppointment, cancel: Boolean, sender: Control): AppointmentToolTipShowingEventArgs = {
     val __obj = js.Dynamic.literal(appointment = appointment.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentToolTipShowingEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentToolTipShowingEventArgsMutableBuilder[Self <: AppointmentToolTipShowingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentToolTipShowingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAppointment(value: BootstrapSchedulerAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+    inline def setAppointment(value: BootstrapSchedulerAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
   }
 }

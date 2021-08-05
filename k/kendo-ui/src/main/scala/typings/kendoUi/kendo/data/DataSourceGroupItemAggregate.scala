@@ -12,25 +12,19 @@ trait DataSourceGroupItemAggregate extends StObject {
 }
 object DataSourceGroupItemAggregate {
   
-  @scala.inline
-  def apply(): DataSourceGroupItemAggregate = {
+  inline def apply(): DataSourceGroupItemAggregate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceGroupItemAggregate]
   }
   
-  @scala.inline
-  implicit class DataSourceGroupItemAggregateMutableBuilder[Self <: DataSourceGroupItemAggregate] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceGroupItemAggregate](x: Self) {
     
-    @scala.inline
-    def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

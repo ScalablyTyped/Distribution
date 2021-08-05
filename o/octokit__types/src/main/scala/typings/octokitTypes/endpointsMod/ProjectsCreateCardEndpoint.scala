@@ -30,34 +30,25 @@ trait ProjectsCreateCardEndpoint
 }
 object ProjectsCreateCardEndpoint {
   
-  @scala.inline
-  def apply(column_id: Double, mediaType: `0`[inertia]): ProjectsCreateCardEndpoint = {
+  inline def apply(column_id: Double, mediaType: `0`[inertia]): ProjectsCreateCardEndpoint = {
     val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateCardEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsCreateCardEndpointMutableBuilder[Self <: ProjectsCreateCardEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsCreateCardEndpoint](x: Self) {
     
-    @scala.inline
-    def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
+    inline def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_id(value: Double): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
+    inline def setContent_id(value: Double): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
+    inline def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
     
-    @scala.inline
-    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+    inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

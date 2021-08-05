@@ -14,31 +14,23 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAddBOM(value: Boolean): Self = StObject.set(x, "addBOM", value.asInstanceOf[js.Any])
+    inline def setAddBOM(value: Boolean): Self = StObject.set(x, "addBOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddBOMUndefined: Self = StObject.set(x, "addBOM", js.undefined)
+    inline def setAddBOMUndefined: Self = StObject.set(x, "addBOM", js.undefined)
     
-    @scala.inline
-    def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+    inline def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+    inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
-    @scala.inline
-    def setStripBOM(value: Boolean): Self = StObject.set(x, "stripBOM", value.asInstanceOf[js.Any])
+    inline def setStripBOM(value: Boolean): Self = StObject.set(x, "stripBOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripBOMUndefined: Self = StObject.set(x, "stripBOM", js.undefined)
+    inline def setStripBOMUndefined: Self = StObject.set(x, "stripBOM", js.undefined)
   }
 }

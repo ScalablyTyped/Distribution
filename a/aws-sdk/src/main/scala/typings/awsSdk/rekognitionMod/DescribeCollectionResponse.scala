@@ -28,37 +28,27 @@ trait DescribeCollectionResponse extends StObject {
 }
 object DescribeCollectionResponse {
   
-  @scala.inline
-  def apply(): DescribeCollectionResponse = {
+  inline def apply(): DescribeCollectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCollectionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCollectionResponseMutableBuilder[Self <: DescribeCollectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCollectionResponse](x: Self) {
     
-    @scala.inline
-    def setCollectionARN(value: String): Self = StObject.set(x, "CollectionARN", value.asInstanceOf[js.Any])
+    inline def setCollectionARN(value: String): Self = StObject.set(x, "CollectionARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionARNUndefined: Self = StObject.set(x, "CollectionARN", js.undefined)
+    inline def setCollectionARNUndefined: Self = StObject.set(x, "CollectionARN", js.undefined)
     
-    @scala.inline
-    def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
-    @scala.inline
-    def setFaceCount(value: ULong): Self = StObject.set(x, "FaceCount", value.asInstanceOf[js.Any])
+    inline def setFaceCount(value: ULong): Self = StObject.set(x, "FaceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceCountUndefined: Self = StObject.set(x, "FaceCount", js.undefined)
+    inline def setFaceCountUndefined: Self = StObject.set(x, "FaceCount", js.undefined)
     
-    @scala.inline
-    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
+    inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
+    inline def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
   }
 }

@@ -22,12 +22,10 @@ object FileInput {
   @JSImport("@blueprintjs/core", "FileInput.defaultProps")
   @js.native
   def defaultProps: IFileInputProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IFileInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IFileInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "FileInput.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

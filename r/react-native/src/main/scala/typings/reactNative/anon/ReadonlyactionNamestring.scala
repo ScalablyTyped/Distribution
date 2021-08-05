@@ -11,16 +11,13 @@ trait ReadonlyactionNamestring extends StObject {
 }
 object ReadonlyactionNamestring {
   
-  @scala.inline
-  def apply(actionName: String): ReadonlyactionNamestring = {
+  inline def apply(actionName: String): ReadonlyactionNamestring = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyactionNamestring]
   }
   
-  @scala.inline
-  implicit class ReadonlyactionNamestringMutableBuilder[Self <: ReadonlyactionNamestring] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyactionNamestring](x: Self) {
     
-    @scala.inline
-    def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
   }
 }

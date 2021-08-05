@@ -11,22 +11,17 @@ trait BusinessDayConfig extends StObject {
 }
 object BusinessDayConfig {
   
-  @scala.inline
-  def apply(): BusinessDayConfig = {
+  inline def apply(): BusinessDayConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BusinessDayConfig]
   }
   
-  @scala.inline
-  implicit class BusinessDayConfigMutableBuilder[Self <: BusinessDayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessDayConfig](x: Self) {
     
-    @scala.inline
-    def setBusinessDays(value: js.Array[String]): Self = StObject.set(x, "businessDays", value.asInstanceOf[js.Any])
+    inline def setBusinessDays(value: js.Array[String]): Self = StObject.set(x, "businessDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessDaysUndefined: Self = StObject.set(x, "businessDays", js.undefined)
+    inline def setBusinessDaysUndefined: Self = StObject.set(x, "businessDays", js.undefined)
     
-    @scala.inline
-    def setBusinessDaysVarargs(value: String*): Self = StObject.set(x, "businessDays", js.Array(value :_*))
+    inline def setBusinessDaysVarargs(value: String*): Self = StObject.set(x, "businessDays", js.Array(value :_*))
   }
 }

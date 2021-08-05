@@ -15,19 +15,15 @@ trait UpdateAdmChannelRequest extends StObject {
 }
 object UpdateAdmChannelRequest {
   
-  @scala.inline
-  def apply(ADMChannelRequest: ADMChannelRequest, ApplicationId: string): UpdateAdmChannelRequest = {
+  inline def apply(ADMChannelRequest: ADMChannelRequest, ApplicationId: string): UpdateAdmChannelRequest = {
     val __obj = js.Dynamic.literal(ADMChannelRequest = ADMChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAdmChannelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAdmChannelRequestMutableBuilder[Self <: UpdateAdmChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAdmChannelRequest](x: Self) {
     
-    @scala.inline
-    def setADMChannelRequest(value: ADMChannelRequest): Self = StObject.set(x, "ADMChannelRequest", value.asInstanceOf[js.Any])
+    inline def setADMChannelRequest(value: ADMChannelRequest): Self = StObject.set(x, "ADMChannelRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

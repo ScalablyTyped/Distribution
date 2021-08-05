@@ -10,19 +10,15 @@ trait RestoreDBInstanceToPointInTimeResult extends StObject {
 }
 object RestoreDBInstanceToPointInTimeResult {
   
-  @scala.inline
-  def apply(): RestoreDBInstanceToPointInTimeResult = {
+  inline def apply(): RestoreDBInstanceToPointInTimeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreDBInstanceToPointInTimeResult]
   }
   
-  @scala.inline
-  implicit class RestoreDBInstanceToPointInTimeResultMutableBuilder[Self <: RestoreDBInstanceToPointInTimeResult] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreDBInstanceToPointInTimeResult](x: Self) {
     
-    @scala.inline
-    def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
+    inline def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
+    inline def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
   }
 }

@@ -20,16 +20,12 @@ object TSTypeLiteral {
   @js.native
   def apply(members: js.Array[TSTypeElement]): TSTypeLiteral = js.native
   
-  @scala.inline
-  implicit class TSTypeLiteralMutableBuilder[Self <: TSTypeLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeLiteral](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: TSTypeElement*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: TSTypeElement*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSTypeLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSTypeLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

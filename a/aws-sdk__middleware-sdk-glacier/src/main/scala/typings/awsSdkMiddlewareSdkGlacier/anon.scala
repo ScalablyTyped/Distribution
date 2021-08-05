@@ -19,20 +19,16 @@ object anon {
   }
   object Sha256 {
     
-    @scala.inline
-    def apply(sha256: HashConstructor, utf8Decoder: /* input */ String => Uint8Array): Sha256 = {
+    inline def apply(sha256: HashConstructor, utf8Decoder: /* input */ String => Uint8Array): Sha256 = {
       val __obj = js.Dynamic.literal(sha256 = sha256.asInstanceOf[js.Any], utf8Decoder = js.Any.fromFunction1(utf8Decoder))
       __obj.asInstanceOf[Sha256]
     }
     
-    @scala.inline
-    implicit class Sha256MutableBuilder[Self <: Sha256] (val x: Self) extends AnyVal {
+    extension [Self <: Sha256](x: Self) {
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
     }
   }
 }

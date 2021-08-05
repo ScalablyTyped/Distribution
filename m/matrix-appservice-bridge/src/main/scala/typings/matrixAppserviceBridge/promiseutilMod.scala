@@ -10,11 +10,9 @@ object promiseutilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defer[T](): Defer_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Defer_[T]]
+  inline def defer[T](): Defer_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Defer_[T]]
   
-  @scala.inline
-  def delay(delayMs: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def delay(delayMs: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   @js.native
   trait Defer_[T] extends StObject {

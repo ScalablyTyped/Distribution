@@ -13,16 +13,13 @@ trait SetShowFPSCounterRequest extends StObject {
 }
 object SetShowFPSCounterRequest {
   
-  @scala.inline
-  def apply(show: Boolean): SetShowFPSCounterRequest = {
+  inline def apply(show: Boolean): SetShowFPSCounterRequest = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowFPSCounterRequest]
   }
   
-  @scala.inline
-  implicit class SetShowFPSCounterRequestMutableBuilder[Self <: SetShowFPSCounterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowFPSCounterRequest](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

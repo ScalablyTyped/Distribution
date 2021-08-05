@@ -11,19 +11,15 @@ trait GoogleIdentityAccesscontextmanagerV1CustomLevel extends StObject {
 }
 object GoogleIdentityAccesscontextmanagerV1CustomLevel {
   
-  @scala.inline
-  def apply(): GoogleIdentityAccesscontextmanagerV1CustomLevel = {
+  inline def apply(): GoogleIdentityAccesscontextmanagerV1CustomLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1CustomLevel]
   }
   
-  @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1CustomLevelMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1CustomLevel] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIdentityAccesscontextmanagerV1CustomLevel](x: Self) {
     
-    @scala.inline
-    def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+    inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
   }
 }

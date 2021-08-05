@@ -12,25 +12,19 @@ trait EventStartCondition extends StObject {
 }
 object EventStartCondition {
   
-  @scala.inline
-  def apply(): EventStartCondition = {
+  inline def apply(): EventStartCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventStartCondition]
   }
   
-  @scala.inline
-  implicit class EventStartConditionMutableBuilder[Self <: EventStartCondition] (val x: Self) extends AnyVal {
+  extension [Self <: EventStartCondition](x: Self) {
     
-    @scala.inline
-    def setEventFilter(value: EventFilter): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
+    inline def setEventFilter(value: EventFilter): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
+    inline def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
     
-    @scala.inline
-    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
   }
 }

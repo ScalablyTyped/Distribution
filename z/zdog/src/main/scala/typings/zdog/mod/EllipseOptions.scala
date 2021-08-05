@@ -20,37 +20,27 @@ trait EllipseOptions
 }
 object EllipseOptions {
   
-  @scala.inline
-  def apply(): EllipseOptions = {
+  inline def apply(): EllipseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EllipseOptions]
   }
   
-  @scala.inline
-  implicit class EllipseOptionsMutableBuilder[Self <: EllipseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EllipseOptions](x: Self) {
     
-    @scala.inline
-    def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
+    inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
+    inline def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setQuarters(value: QuartersValue): Self = StObject.set(x, "quarters", value.asInstanceOf[js.Any])
+    inline def setQuarters(value: QuartersValue): Self = StObject.set(x, "quarters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuartersUndefined: Self = StObject.set(x, "quarters", js.undefined)
+    inline def setQuartersUndefined: Self = StObject.set(x, "quarters", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

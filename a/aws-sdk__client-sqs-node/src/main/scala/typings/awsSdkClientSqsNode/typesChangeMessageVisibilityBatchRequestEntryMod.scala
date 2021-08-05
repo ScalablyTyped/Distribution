@@ -25,26 +25,20 @@ object typesChangeMessageVisibilityBatchRequestEntryMod {
   }
   object ChangeMessageVisibilityBatchRequestEntry {
     
-    @scala.inline
-    def apply(Id: String, ReceiptHandle: String): ChangeMessageVisibilityBatchRequestEntry = {
+    inline def apply(Id: String, ReceiptHandle: String): ChangeMessageVisibilityBatchRequestEntry = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangeMessageVisibilityBatchRequestEntry]
     }
     
-    @scala.inline
-    implicit class ChangeMessageVisibilityBatchRequestEntryMutableBuilder[Self <: ChangeMessageVisibilityBatchRequestEntry] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeMessageVisibilityBatchRequestEntry](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
+      inline def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityTimeout(value: Double): Self = StObject.set(x, "VisibilityTimeout", value.asInstanceOf[js.Any])
+      inline def setVisibilityTimeout(value: Double): Self = StObject.set(x, "VisibilityTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityTimeoutUndefined: Self = StObject.set(x, "VisibilityTimeout", js.undefined)
+      inline def setVisibilityTimeoutUndefined: Self = StObject.set(x, "VisibilityTimeout", js.undefined)
     }
   }
   

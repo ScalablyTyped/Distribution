@@ -16,19 +16,15 @@ trait SchemaAsymmetricDecryptResponse extends StObject {
 }
 object SchemaAsymmetricDecryptResponse {
   
-  @scala.inline
-  def apply(): SchemaAsymmetricDecryptResponse = {
+  inline def apply(): SchemaAsymmetricDecryptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsymmetricDecryptResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAsymmetricDecryptResponseMutableBuilder[Self <: SchemaAsymmetricDecryptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsymmetricDecryptResponse](x: Self) {
     
-    @scala.inline
-    def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+    inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
+    inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
   }
 }

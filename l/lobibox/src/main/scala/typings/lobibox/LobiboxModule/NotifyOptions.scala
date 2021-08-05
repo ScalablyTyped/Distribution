@@ -31,55 +31,39 @@ trait NotifyOptions
 }
 object NotifyOptions {
   
-  @scala.inline
-  def apply(): NotifyOptions = {
+  inline def apply(): NotifyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifyOptions]
   }
   
-  @scala.inline
-  implicit class NotifyOptionsMutableBuilder[Self <: NotifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyOptions](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setError(value: Icon): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Icon): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInfo(value: Icon): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Icon): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setLarge(value: Width): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: Width): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+    inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
-    @scala.inline
-    def setMini(value: `0`): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    inline def setMini(value: `0`): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: Icon): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Icon): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setWarning(value: Icon): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Icon): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

@@ -24,15 +24,14 @@ trait Tags extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Tags_typekey")
+  /* private */ @JSName("PowerPoint.Tags_typekey")
   var PowerPointDotTags_typekey: Tags
   
   def Value(Index: Double): String
 }
 object Tags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (String, String) => Unit,
     AddBinary: (String, String) => Unit,
     Application: Application,
@@ -50,40 +49,28 @@ object Tags {
     __obj.asInstanceOf[Tags]
   }
   
-  @scala.inline
-  implicit class TagsMutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
+  extension [Self <: Tags](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddBinary(value: (String, String) => Unit): Self = StObject.set(x, "AddBinary", js.Any.fromFunction2(value))
+    inline def setAddBinary(value: (String, String) => Unit): Self = StObject.set(x, "AddBinary", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryValue(value: String => Double): Self = StObject.set(x, "BinaryValue", js.Any.fromFunction1(value))
+    inline def setBinaryValue(value: String => Double): Self = StObject.set(x, "BinaryValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: String => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: String => String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: String => String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: Double => String): Self = StObject.set(x, "Name", js.Any.fromFunction1(value))
+    inline def setName(value: Double => String): Self = StObject.set(x, "Name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTags_typekey(value: Tags): Self = StObject.set(x, "PowerPoint.Tags_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTags_typekey(value: Tags): Self = StObject.set(x, "PowerPoint.Tags_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double => String): Self = StObject.set(x, "Value", js.Any.fromFunction1(value))
+    inline def setValue(value: Double => String): Self = StObject.set(x, "Value", js.Any.fromFunction1(value))
   }
 }

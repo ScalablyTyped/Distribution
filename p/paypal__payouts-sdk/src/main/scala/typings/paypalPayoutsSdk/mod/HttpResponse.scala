@@ -17,31 +17,23 @@ trait HttpResponse[R] extends StObject {
 }
 object HttpResponse {
   
-  @scala.inline
-  def apply[R](headers: StringDictionary[String], statusCode: Double): HttpResponse[R] = {
+  inline def apply[R](headers: StringDictionary[String], statusCode: Double): HttpResponse[R] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponse[R]]
   }
   
-  @scala.inline
-  implicit class HttpResponseMutableBuilder[Self <: HttpResponse[?], R] (val x: Self & HttpResponse[R]) extends AnyVal {
+  extension [Self <: HttpResponse[?], R](x: Self & HttpResponse[R]) {
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResult(value: R): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: R): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

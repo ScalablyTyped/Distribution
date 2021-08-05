@@ -18,8 +18,7 @@ trait ResourceRole
 }
 object ResourceRole {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     ResourceParameterBindings: js.Array[ResourceParameterBinding],
@@ -32,22 +31,16 @@ object ResourceRole {
     __obj.asInstanceOf[ResourceRole]
   }
   
-  @scala.inline
-  implicit class ResourceRoleMutableBuilder[Self <: ResourceRole] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceRole](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAssignmentExpression(value: ResourceAssignmentExpression): Self = StObject.set(x, "resourceAssignmentExpression", value.asInstanceOf[js.Any])
+    inline def setResourceAssignmentExpression(value: ResourceAssignmentExpression): Self = StObject.set(x, "resourceAssignmentExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceParameterBindings(value: js.Array[ResourceParameterBinding]): Self = StObject.set(x, "ResourceParameterBindings", value.asInstanceOf[js.Any])
+    inline def setResourceParameterBindings(value: js.Array[ResourceParameterBinding]): Self = StObject.set(x, "ResourceParameterBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceParameterBindingsVarargs(value: ResourceParameterBinding*): Self = StObject.set(x, "ResourceParameterBindings", js.Array(value :_*))
+    inline def setResourceParameterBindingsVarargs(value: ResourceParameterBinding*): Self = StObject.set(x, "ResourceParameterBindings", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceRef(value: Resource): Self = StObject.set(x, "resourceRef", value.asInstanceOf[js.Any])
+    inline def setResourceRef(value: Resource): Self = StObject.set(x, "resourceRef", value.asInstanceOf[js.Any])
   }
 }

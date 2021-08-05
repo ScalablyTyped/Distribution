@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.DoCmd")
 @js.native
-class DoCmd protected ()
+/* private */ class DoCmd ()
   extends StObject
      with typings.activexAccess.Access.DoCmd

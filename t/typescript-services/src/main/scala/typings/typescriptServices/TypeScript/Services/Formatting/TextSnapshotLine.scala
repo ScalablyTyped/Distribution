@@ -8,20 +8,19 @@ trait TextSnapshotLine
   extends StObject
      with ITextSnapshotLine {
   
-  var _end: js.Any
+  /* private */ var _end: js.Any
   
-  var _lineBreak: js.Any
+  /* private */ var _lineBreak: js.Any
   
-  var _lineNumber: js.Any
+  /* private */ var _lineNumber: js.Any
   
-  var _snapshot: js.Any
+  /* private */ var _snapshot: js.Any
   
-  var _start: js.Any
+  /* private */ var _start: js.Any
 }
 object TextSnapshotLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _end: js.Any,
     _lineBreak: js.Any,
     _lineNumber: js.Any,
@@ -42,22 +41,16 @@ object TextSnapshotLine {
     __obj.asInstanceOf[TextSnapshotLine]
   }
   
-  @scala.inline
-  implicit class TextSnapshotLineMutableBuilder[Self <: TextSnapshotLine] (val x: Self) extends AnyVal {
+  extension [Self <: TextSnapshotLine](x: Self) {
     
-    @scala.inline
-    def set_end(value: js.Any): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
+    inline def set_end(value: js.Any): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lineBreak(value: js.Any): Self = StObject.set(x, "_lineBreak", value.asInstanceOf[js.Any])
+    inline def set_lineBreak(value: js.Any): Self = StObject.set(x, "_lineBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lineNumber(value: js.Any): Self = StObject.set(x, "_lineNumber", value.asInstanceOf[js.Any])
+    inline def set_lineNumber(value: js.Any): Self = StObject.set(x, "_lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_snapshot(value: js.Any): Self = StObject.set(x, "_snapshot", value.asInstanceOf[js.Any])
+    inline def set_snapshot(value: js.Any): Self = StObject.set(x, "_snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

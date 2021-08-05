@@ -14,31 +14,23 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(): Category = {
+  inline def apply(): Category = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

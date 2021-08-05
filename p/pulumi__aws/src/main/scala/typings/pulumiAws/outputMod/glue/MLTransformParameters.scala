@@ -18,19 +18,15 @@ trait MLTransformParameters extends StObject {
 }
 object MLTransformParameters {
   
-  @scala.inline
-  def apply(findMatchesParameters: MLTransformParametersFindMatchesParameters, transformType: String): MLTransformParameters = {
+  inline def apply(findMatchesParameters: MLTransformParametersFindMatchesParameters, transformType: String): MLTransformParameters = {
     val __obj = js.Dynamic.literal(findMatchesParameters = findMatchesParameters.asInstanceOf[js.Any], transformType = transformType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MLTransformParameters]
   }
   
-  @scala.inline
-  implicit class MLTransformParametersMutableBuilder[Self <: MLTransformParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MLTransformParameters](x: Self) {
     
-    @scala.inline
-    def setFindMatchesParameters(value: MLTransformParametersFindMatchesParameters): Self = StObject.set(x, "findMatchesParameters", value.asInstanceOf[js.Any])
+    inline def setFindMatchesParameters(value: MLTransformParametersFindMatchesParameters): Self = StObject.set(x, "findMatchesParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformType(value: String): Self = StObject.set(x, "transformType", value.asInstanceOf[js.Any])
+    inline def setTransformType(value: String): Self = StObject.set(x, "transformType", value.asInstanceOf[js.Any])
   }
 }

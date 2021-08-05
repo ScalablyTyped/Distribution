@@ -18,22 +18,17 @@ trait ConsumptionPreferences extends StObject {
 }
 object ConsumptionPreferences {
   
-  @scala.inline
-  def apply(consumption_preference_id: String, name: String, score: Double): ConsumptionPreferences = {
+  inline def apply(consumption_preference_id: String, name: String, score: Double): ConsumptionPreferences = {
     val __obj = js.Dynamic.literal(consumption_preference_id = consumption_preference_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumptionPreferences]
   }
   
-  @scala.inline
-  implicit class ConsumptionPreferencesMutableBuilder[Self <: ConsumptionPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumptionPreferences](x: Self) {
     
-    @scala.inline
-    def setConsumption_preference_id(value: String): Self = StObject.set(x, "consumption_preference_id", value.asInstanceOf[js.Any])
+    inline def setConsumption_preference_id(value: String): Self = StObject.set(x, "consumption_preference_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait RevertTriggerResponse extends StObject {
 }
 object RevertTriggerResponse {
   
-  @scala.inline
-  def apply(): RevertTriggerResponse = {
+  inline def apply(): RevertTriggerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevertTriggerResponse]
   }
   
-  @scala.inline
-  implicit class RevertTriggerResponseMutableBuilder[Self <: RevertTriggerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RevertTriggerResponse](x: Self) {
     
-    @scala.inline
-    def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

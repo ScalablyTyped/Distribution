@@ -23,43 +23,31 @@ trait Lang extends StObject {
 }
 object Lang {
   
-  @scala.inline
-  def apply(): Lang = {
+  inline def apply(): Lang = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lang]
   }
   
-  @scala.inline
-  implicit class LangMutableBuilder[Self <: Lang] (val x: Self) extends AnyVal {
+  extension [Self <: Lang](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setPreviewImageUrl(value: String): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
+    inline def setPreviewImageUrl(value: String): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
+    inline def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setSnippetUrl(value: String): Self = StObject.set(x, "snippetUrl", value.asInstanceOf[js.Any])
+    inline def setSnippetUrl(value: String): Self = StObject.set(x, "snippetUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUrlUndefined: Self = StObject.set(x, "snippetUrl", js.undefined)
+    inline def setSnippetUrlUndefined: Self = StObject.set(x, "snippetUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

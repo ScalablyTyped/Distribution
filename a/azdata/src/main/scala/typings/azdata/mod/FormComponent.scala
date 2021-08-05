@@ -16,34 +16,25 @@ trait FormComponent extends StObject {
 }
 object FormComponent {
   
-  @scala.inline
-  def apply(component: Component, title: String): FormComponent = {
+  inline def apply(component: Component, title: String): FormComponent = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormComponent]
   }
   
-  @scala.inline
-  implicit class FormComponentMutableBuilder[Self <: FormComponent] (val x: Self) extends AnyVal {
+  extension [Self <: FormComponent](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[Component]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[Component]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: Component*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Component*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait ChangeList[T] extends StObject {
 }
 object ChangeList {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     allChangesIncluded: Boolean,
     changeCounts: NumberDictionary[Double],
     changes: js.Array[Change[T]],
@@ -53,49 +52,34 @@ object ChangeList {
     __obj.asInstanceOf[ChangeList[T]]
   }
   
-  @scala.inline
-  implicit class ChangeListMutableBuilder[Self <: ChangeList[?], T] (val x: Self & ChangeList[T]) extends AnyVal {
+  extension [Self <: ChangeList[?], T](x: Self & ChangeList[T]) {
     
-    @scala.inline
-    def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])
+    inline def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeCounts(value: NumberDictionary[Double]): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
+    inline def setChangeCounts(value: NumberDictionary[Double]): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChanges(value: js.Array[Change[T]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[Change[T]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: Change[T]*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change[T]*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
+    inline def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotes(value: js.Array[CheckinNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: js.Array[CheckinNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerDisplayName(value: String): Self = StObject.set(x, "ownerDisplayName", value.asInstanceOf[js.Any])
+    inline def setOwnerDisplayName(value: String): Self = StObject.set(x, "ownerDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDate(value: Date): Self = StObject.set(x, "sortDate", value.asInstanceOf[js.Any])
+    inline def setSortDate(value: Date): Self = StObject.set(x, "sortDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

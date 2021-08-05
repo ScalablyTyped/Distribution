@@ -13,16 +13,13 @@ trait DeleteEventSourceMappingRequest extends StObject {
 }
 object DeleteEventSourceMappingRequest {
   
-  @scala.inline
-  def apply(UUID: String): DeleteEventSourceMappingRequest = {
+  inline def apply(UUID: String): DeleteEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(UUID = UUID.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventSourceMappingRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEventSourceMappingRequestMutableBuilder[Self <: DeleteEventSourceMappingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventSourceMappingRequest](x: Self) {
     
-    @scala.inline
-    def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
+    inline def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
   }
 }

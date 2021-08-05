@@ -13,19 +13,15 @@ trait IKeyDerivationParameters extends StObject {
 }
 object IKeyDerivationParameters {
   
-  @scala.inline
-  def apply(iterationCount: Double, kdfGenericBinary: IBuffer): IKeyDerivationParameters = {
+  inline def apply(iterationCount: Double, kdfGenericBinary: IBuffer): IKeyDerivationParameters = {
     val __obj = js.Dynamic.literal(iterationCount = iterationCount.asInstanceOf[js.Any], kdfGenericBinary = kdfGenericBinary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyDerivationParameters]
   }
   
-  @scala.inline
-  implicit class IKeyDerivationParametersMutableBuilder[Self <: IKeyDerivationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyDerivationParameters](x: Self) {
     
-    @scala.inline
-    def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
+    inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKdfGenericBinary(value: IBuffer): Self = StObject.set(x, "kdfGenericBinary", value.asInstanceOf[js.Any])
+    inline def setKdfGenericBinary(value: IBuffer): Self = StObject.set(x, "kdfGenericBinary", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait TotpVerifyOptionsInterface extends StObject {
 }
 object TotpVerifyOptionsInterface {
   
-  @scala.inline
-  def apply(): TotpVerifyOptionsInterface = {
+  inline def apply(): TotpVerifyOptionsInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TotpVerifyOptionsInterface]
   }
   
-  @scala.inline
-  implicit class TotpVerifyOptionsInterfaceMutableBuilder[Self <: TotpVerifyOptionsInterface] (val x: Self) extends AnyVal {
+  extension [Self <: TotpVerifyOptionsInterface](x: Self) {
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

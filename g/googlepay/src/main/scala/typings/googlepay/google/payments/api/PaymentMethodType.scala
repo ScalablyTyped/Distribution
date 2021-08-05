@@ -32,9 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentMethodType extends StObject
 object PaymentMethodType {
   
-  @scala.inline
-  def CARD: typings.googlepay.googlepayStrings.CARD = "CARD".asInstanceOf[typings.googlepay.googlepayStrings.CARD]
+  inline def CARD: typings.googlepay.googlepayStrings.CARD = "CARD".asInstanceOf[typings.googlepay.googlepayStrings.CARD]
   
-  @scala.inline
-  def PAYPAL: typings.googlepay.googlepayStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.googlepay.googlepayStrings.PAYPAL]
+  inline def PAYPAL: typings.googlepay.googlepayStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.googlepay.googlepayStrings.PAYPAL]
 }

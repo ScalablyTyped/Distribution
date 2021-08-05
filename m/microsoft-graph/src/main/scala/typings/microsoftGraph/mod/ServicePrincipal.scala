@@ -200,448 +200,301 @@ trait ServicePrincipal
 }
 object ServicePrincipal {
   
-  @scala.inline
-  def apply(): ServicePrincipal = {
+  inline def apply(): ServicePrincipal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServicePrincipal]
   }
   
-  @scala.inline
-  implicit class ServicePrincipalMutableBuilder[Self <: ServicePrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: ServicePrincipal](x: Self) {
     
-    @scala.inline
-    def setAccountEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "accountEnabled", value.asInstanceOf[js.Any])
+    inline def setAccountEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "accountEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountEnabledNull: Self = StObject.set(x, "accountEnabled", null)
+    inline def setAccountEnabledNull: Self = StObject.set(x, "accountEnabled", null)
     
-    @scala.inline
-    def setAccountEnabledUndefined: Self = StObject.set(x, "accountEnabled", js.undefined)
+    inline def setAccountEnabledUndefined: Self = StObject.set(x, "accountEnabled", js.undefined)
     
-    @scala.inline
-    def setAddIns(value: js.Array[AddIn]): Self = StObject.set(x, "addIns", value.asInstanceOf[js.Any])
+    inline def setAddIns(value: js.Array[AddIn]): Self = StObject.set(x, "addIns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddInsUndefined: Self = StObject.set(x, "addIns", js.undefined)
+    inline def setAddInsUndefined: Self = StObject.set(x, "addIns", js.undefined)
     
-    @scala.inline
-    def setAddInsVarargs(value: AddIn*): Self = StObject.set(x, "addIns", js.Array(value :_*))
+    inline def setAddInsVarargs(value: AddIn*): Self = StObject.set(x, "addIns", js.Array(value :_*))
     
-    @scala.inline
-    def setAlternativeNames(value: js.Array[String]): Self = StObject.set(x, "alternativeNames", value.asInstanceOf[js.Any])
+    inline def setAlternativeNames(value: js.Array[String]): Self = StObject.set(x, "alternativeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativeNamesUndefined: Self = StObject.set(x, "alternativeNames", js.undefined)
+    inline def setAlternativeNamesUndefined: Self = StObject.set(x, "alternativeNames", js.undefined)
     
-    @scala.inline
-    def setAlternativeNamesVarargs(value: String*): Self = StObject.set(x, "alternativeNames", js.Array(value :_*))
+    inline def setAlternativeNamesVarargs(value: String*): Self = StObject.set(x, "alternativeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setAppDescription(value: NullableOption[String]): Self = StObject.set(x, "appDescription", value.asInstanceOf[js.Any])
+    inline def setAppDescription(value: NullableOption[String]): Self = StObject.set(x, "appDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppDescriptionNull: Self = StObject.set(x, "appDescription", null)
+    inline def setAppDescriptionNull: Self = StObject.set(x, "appDescription", null)
     
-    @scala.inline
-    def setAppDescriptionUndefined: Self = StObject.set(x, "appDescription", js.undefined)
+    inline def setAppDescriptionUndefined: Self = StObject.set(x, "appDescription", js.undefined)
     
-    @scala.inline
-    def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
+    inline def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppDisplayNameNull: Self = StObject.set(x, "appDisplayName", null)
+    inline def setAppDisplayNameNull: Self = StObject.set(x, "appDisplayName", null)
     
-    @scala.inline
-    def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
+    inline def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
     
-    @scala.inline
-    def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdNull: Self = StObject.set(x, "appId", null)
+    inline def setAppIdNull: Self = StObject.set(x, "appId", null)
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setAppOwnerOrganizationId(value: NullableOption[String]): Self = StObject.set(x, "appOwnerOrganizationId", value.asInstanceOf[js.Any])
+    inline def setAppOwnerOrganizationId(value: NullableOption[String]): Self = StObject.set(x, "appOwnerOrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppOwnerOrganizationIdNull: Self = StObject.set(x, "appOwnerOrganizationId", null)
+    inline def setAppOwnerOrganizationIdNull: Self = StObject.set(x, "appOwnerOrganizationId", null)
     
-    @scala.inline
-    def setAppOwnerOrganizationIdUndefined: Self = StObject.set(x, "appOwnerOrganizationId", js.undefined)
+    inline def setAppOwnerOrganizationIdUndefined: Self = StObject.set(x, "appOwnerOrganizationId", js.undefined)
     
-    @scala.inline
-    def setAppRoleAssignedTo(value: NullableOption[js.Array[AppRoleAssignment]]): Self = StObject.set(x, "appRoleAssignedTo", value.asInstanceOf[js.Any])
+    inline def setAppRoleAssignedTo(value: NullableOption[js.Array[AppRoleAssignment]]): Self = StObject.set(x, "appRoleAssignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppRoleAssignedToNull: Self = StObject.set(x, "appRoleAssignedTo", null)
+    inline def setAppRoleAssignedToNull: Self = StObject.set(x, "appRoleAssignedTo", null)
     
-    @scala.inline
-    def setAppRoleAssignedToUndefined: Self = StObject.set(x, "appRoleAssignedTo", js.undefined)
+    inline def setAppRoleAssignedToUndefined: Self = StObject.set(x, "appRoleAssignedTo", js.undefined)
     
-    @scala.inline
-    def setAppRoleAssignedToVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignedTo", js.Array(value :_*))
+    inline def setAppRoleAssignedToVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignedTo", js.Array(value :_*))
     
-    @scala.inline
-    def setAppRoleAssignmentRequired(value: Boolean): Self = StObject.set(x, "appRoleAssignmentRequired", value.asInstanceOf[js.Any])
+    inline def setAppRoleAssignmentRequired(value: Boolean): Self = StObject.set(x, "appRoleAssignmentRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppRoleAssignmentRequiredUndefined: Self = StObject.set(x, "appRoleAssignmentRequired", js.undefined)
+    inline def setAppRoleAssignmentRequiredUndefined: Self = StObject.set(x, "appRoleAssignmentRequired", js.undefined)
     
-    @scala.inline
-    def setAppRoleAssignments(value: NullableOption[js.Array[AppRoleAssignment]]): Self = StObject.set(x, "appRoleAssignments", value.asInstanceOf[js.Any])
+    inline def setAppRoleAssignments(value: NullableOption[js.Array[AppRoleAssignment]]): Self = StObject.set(x, "appRoleAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppRoleAssignmentsNull: Self = StObject.set(x, "appRoleAssignments", null)
+    inline def setAppRoleAssignmentsNull: Self = StObject.set(x, "appRoleAssignments", null)
     
-    @scala.inline
-    def setAppRoleAssignmentsUndefined: Self = StObject.set(x, "appRoleAssignments", js.undefined)
+    inline def setAppRoleAssignmentsUndefined: Self = StObject.set(x, "appRoleAssignments", js.undefined)
     
-    @scala.inline
-    def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignments", js.Array(value :_*))
+    inline def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignments", js.Array(value :_*))
     
-    @scala.inline
-    def setAppRoles(value: js.Array[AppRole]): Self = StObject.set(x, "appRoles", value.asInstanceOf[js.Any])
+    inline def setAppRoles(value: js.Array[AppRole]): Self = StObject.set(x, "appRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppRolesUndefined: Self = StObject.set(x, "appRoles", js.undefined)
+    inline def setAppRolesUndefined: Self = StObject.set(x, "appRoles", js.undefined)
     
-    @scala.inline
-    def setAppRolesVarargs(value: AppRole*): Self = StObject.set(x, "appRoles", js.Array(value :_*))
+    inline def setAppRolesVarargs(value: AppRole*): Self = StObject.set(x, "appRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setApplicationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "applicationTemplateId", value.asInstanceOf[js.Any])
+    inline def setApplicationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "applicationTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationTemplateIdNull: Self = StObject.set(x, "applicationTemplateId", null)
+    inline def setApplicationTemplateIdNull: Self = StObject.set(x, "applicationTemplateId", null)
     
-    @scala.inline
-    def setApplicationTemplateIdUndefined: Self = StObject.set(x, "applicationTemplateId", js.undefined)
+    inline def setApplicationTemplateIdUndefined: Self = StObject.set(x, "applicationTemplateId", js.undefined)
     
-    @scala.inline
-    def setClaimsMappingPolicies(value: NullableOption[js.Array[ClaimsMappingPolicy]]): Self = StObject.set(x, "claimsMappingPolicies", value.asInstanceOf[js.Any])
+    inline def setClaimsMappingPolicies(value: NullableOption[js.Array[ClaimsMappingPolicy]]): Self = StObject.set(x, "claimsMappingPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimsMappingPoliciesNull: Self = StObject.set(x, "claimsMappingPolicies", null)
+    inline def setClaimsMappingPoliciesNull: Self = StObject.set(x, "claimsMappingPolicies", null)
     
-    @scala.inline
-    def setClaimsMappingPoliciesUndefined: Self = StObject.set(x, "claimsMappingPolicies", js.undefined)
+    inline def setClaimsMappingPoliciesUndefined: Self = StObject.set(x, "claimsMappingPolicies", js.undefined)
     
-    @scala.inline
-    def setClaimsMappingPoliciesVarargs(value: ClaimsMappingPolicy*): Self = StObject.set(x, "claimsMappingPolicies", js.Array(value :_*))
+    inline def setClaimsMappingPoliciesVarargs(value: ClaimsMappingPolicy*): Self = StObject.set(x, "claimsMappingPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedObjects(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "createdObjects", value.asInstanceOf[js.Any])
+    inline def setCreatedObjects(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "createdObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedObjectsNull: Self = StObject.set(x, "createdObjects", null)
+    inline def setCreatedObjectsNull: Self = StObject.set(x, "createdObjects", null)
     
-    @scala.inline
-    def setCreatedObjectsUndefined: Self = StObject.set(x, "createdObjects", js.undefined)
+    inline def setCreatedObjectsUndefined: Self = StObject.set(x, "createdObjects", js.undefined)
     
-    @scala.inline
-    def setCreatedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "createdObjects", js.Array(value :_*))
+    inline def setCreatedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "createdObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setDelegatedPermissionClassifications(value: NullableOption[js.Array[DelegatedPermissionClassification]]): Self = StObject.set(x, "delegatedPermissionClassifications", value.asInstanceOf[js.Any])
+    inline def setDelegatedPermissionClassifications(value: NullableOption[js.Array[DelegatedPermissionClassification]]): Self = StObject.set(x, "delegatedPermissionClassifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedPermissionClassificationsNull: Self = StObject.set(x, "delegatedPermissionClassifications", null)
+    inline def setDelegatedPermissionClassificationsNull: Self = StObject.set(x, "delegatedPermissionClassifications", null)
     
-    @scala.inline
-    def setDelegatedPermissionClassificationsUndefined: Self = StObject.set(x, "delegatedPermissionClassifications", js.undefined)
+    inline def setDelegatedPermissionClassificationsUndefined: Self = StObject.set(x, "delegatedPermissionClassifications", js.undefined)
     
-    @scala.inline
-    def setDelegatedPermissionClassificationsVarargs(value: DelegatedPermissionClassification*): Self = StObject.set(x, "delegatedPermissionClassifications", js.Array(value :_*))
+    inline def setDelegatedPermissionClassificationsVarargs(value: DelegatedPermissionClassification*): Self = StObject.set(x, "delegatedPermissionClassifications", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEndpoints(value: NullableOption[js.Array[Endpoint]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: NullableOption[js.Array[Endpoint]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsNull: Self = StObject.set(x, "endpoints", null)
+    inline def setEndpointsNull: Self = StObject.set(x, "endpoints", null)
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
-    @scala.inline
-    def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setHomeRealmDiscoveryPolicies(value: NullableOption[js.Array[HomeRealmDiscoveryPolicy]]): Self = StObject.set(x, "homeRealmDiscoveryPolicies", value.asInstanceOf[js.Any])
+    inline def setHomeRealmDiscoveryPolicies(value: NullableOption[js.Array[HomeRealmDiscoveryPolicy]]): Self = StObject.set(x, "homeRealmDiscoveryPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeRealmDiscoveryPoliciesNull: Self = StObject.set(x, "homeRealmDiscoveryPolicies", null)
+    inline def setHomeRealmDiscoveryPoliciesNull: Self = StObject.set(x, "homeRealmDiscoveryPolicies", null)
     
-    @scala.inline
-    def setHomeRealmDiscoveryPoliciesUndefined: Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.undefined)
+    inline def setHomeRealmDiscoveryPoliciesUndefined: Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.undefined)
     
-    @scala.inline
-    def setHomeRealmDiscoveryPoliciesVarargs(value: HomeRealmDiscoveryPolicy*): Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.Array(value :_*))
+    inline def setHomeRealmDiscoveryPoliciesVarargs(value: HomeRealmDiscoveryPolicy*): Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setHomepage(value: NullableOption[String]): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+    inline def setHomepage(value: NullableOption[String]): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomepageNull: Self = StObject.set(x, "homepage", null)
+    inline def setHomepageNull: Self = StObject.set(x, "homepage", null)
     
-    @scala.inline
-    def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+    inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
     
-    @scala.inline
-    def setInfo(value: NullableOption[InformationalUrl]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: NullableOption[InformationalUrl]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoNull: Self = StObject.set(x, "info", null)
+    inline def setInfoNull: Self = StObject.set(x, "info", null)
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setKeyCredentials(value: js.Array[KeyCredential]): Self = StObject.set(x, "keyCredentials", value.asInstanceOf[js.Any])
+    inline def setKeyCredentials(value: js.Array[KeyCredential]): Self = StObject.set(x, "keyCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCredentialsUndefined: Self = StObject.set(x, "keyCredentials", js.undefined)
+    inline def setKeyCredentialsUndefined: Self = StObject.set(x, "keyCredentials", js.undefined)
     
-    @scala.inline
-    def setKeyCredentialsVarargs(value: KeyCredential*): Self = StObject.set(x, "keyCredentials", js.Array(value :_*))
+    inline def setKeyCredentialsVarargs(value: KeyCredential*): Self = StObject.set(x, "keyCredentials", js.Array(value :_*))
     
-    @scala.inline
-    def setLoginUrl(value: NullableOption[String]): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
+    inline def setLoginUrl(value: NullableOption[String]): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUrlNull: Self = StObject.set(x, "loginUrl", null)
+    inline def setLoginUrlNull: Self = StObject.set(x, "loginUrl", null)
     
-    @scala.inline
-    def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
+    inline def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
     
-    @scala.inline
-    def setLogoutUrl(value: NullableOption[String]): Self = StObject.set(x, "logoutUrl", value.asInstanceOf[js.Any])
+    inline def setLogoutUrl(value: NullableOption[String]): Self = StObject.set(x, "logoutUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoutUrlNull: Self = StObject.set(x, "logoutUrl", null)
+    inline def setLogoutUrlNull: Self = StObject.set(x, "logoutUrl", null)
     
-    @scala.inline
-    def setLogoutUrlUndefined: Self = StObject.set(x, "logoutUrl", js.undefined)
+    inline def setLogoutUrlUndefined: Self = StObject.set(x, "logoutUrl", js.undefined)
     
-    @scala.inline
-    def setMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
+    inline def setMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberOfNull: Self = StObject.set(x, "memberOf", null)
+    inline def setMemberOfNull: Self = StObject.set(x, "memberOf", null)
     
-    @scala.inline
-    def setMemberOfUndefined: Self = StObject.set(x, "memberOf", js.undefined)
+    inline def setMemberOfUndefined: Self = StObject.set(x, "memberOf", js.undefined)
     
-    @scala.inline
-    def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
+    inline def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
     
-    @scala.inline
-    def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesNull: Self = StObject.set(x, "notes", null)
+    inline def setNotesNull: Self = StObject.set(x, "notes", null)
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setNotificationEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "notificationEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setNotificationEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "notificationEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEmailAddressesUndefined: Self = StObject.set(x, "notificationEmailAddresses", js.undefined)
+    inline def setNotificationEmailAddressesUndefined: Self = StObject.set(x, "notificationEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setNotificationEmailAddressesVarargs(value: String*): Self = StObject.set(x, "notificationEmailAddresses", js.Array(value :_*))
+    inline def setNotificationEmailAddressesVarargs(value: String*): Self = StObject.set(x, "notificationEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setOauth2PermissionGrants(value: NullableOption[js.Array[OAuth2PermissionGrant]]): Self = StObject.set(x, "oauth2PermissionGrants", value.asInstanceOf[js.Any])
+    inline def setOauth2PermissionGrants(value: NullableOption[js.Array[OAuth2PermissionGrant]]): Self = StObject.set(x, "oauth2PermissionGrants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2PermissionGrantsNull: Self = StObject.set(x, "oauth2PermissionGrants", null)
+    inline def setOauth2PermissionGrantsNull: Self = StObject.set(x, "oauth2PermissionGrants", null)
     
-    @scala.inline
-    def setOauth2PermissionGrantsUndefined: Self = StObject.set(x, "oauth2PermissionGrants", js.undefined)
+    inline def setOauth2PermissionGrantsUndefined: Self = StObject.set(x, "oauth2PermissionGrants", js.undefined)
     
-    @scala.inline
-    def setOauth2PermissionGrantsVarargs(value: OAuth2PermissionGrant*): Self = StObject.set(x, "oauth2PermissionGrants", js.Array(value :_*))
+    inline def setOauth2PermissionGrantsVarargs(value: OAuth2PermissionGrant*): Self = StObject.set(x, "oauth2PermissionGrants", js.Array(value :_*))
     
-    @scala.inline
-    def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = StObject.set(x, "oauth2PermissionScopes", value.asInstanceOf[js.Any])
+    inline def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = StObject.set(x, "oauth2PermissionScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2PermissionScopesUndefined: Self = StObject.set(x, "oauth2PermissionScopes", js.undefined)
+    inline def setOauth2PermissionScopesUndefined: Self = StObject.set(x, "oauth2PermissionScopes", js.undefined)
     
-    @scala.inline
-    def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value :_*))
+    inline def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnedObjects(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "ownedObjects", value.asInstanceOf[js.Any])
+    inline def setOwnedObjects(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "ownedObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnedObjectsNull: Self = StObject.set(x, "ownedObjects", null)
+    inline def setOwnedObjectsNull: Self = StObject.set(x, "ownedObjects", null)
     
-    @scala.inline
-    def setOwnedObjectsUndefined: Self = StObject.set(x, "ownedObjects", js.undefined)
+    inline def setOwnedObjectsUndefined: Self = StObject.set(x, "ownedObjects", js.undefined)
     
-    @scala.inline
-    def setOwnedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "ownedObjects", js.Array(value :_*))
+    inline def setOwnedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "ownedObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setOwners(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersNull: Self = StObject.set(x, "owners", null)
+    inline def setOwnersNull: Self = StObject.set(x, "owners", null)
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
-    @scala.inline
-    def setPasswordCredentials(value: js.Array[PasswordCredential]): Self = StObject.set(x, "passwordCredentials", value.asInstanceOf[js.Any])
+    inline def setPasswordCredentials(value: js.Array[PasswordCredential]): Self = StObject.set(x, "passwordCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordCredentialsUndefined: Self = StObject.set(x, "passwordCredentials", js.undefined)
+    inline def setPasswordCredentialsUndefined: Self = StObject.set(x, "passwordCredentials", js.undefined)
     
-    @scala.inline
-    def setPasswordCredentialsVarargs(value: PasswordCredential*): Self = StObject.set(x, "passwordCredentials", js.Array(value :_*))
+    inline def setPasswordCredentialsVarargs(value: PasswordCredential*): Self = StObject.set(x, "passwordCredentials", js.Array(value :_*))
     
-    @scala.inline
-    def setPreferredSingleSignOnMode(value: NullableOption[String]): Self = StObject.set(x, "preferredSingleSignOnMode", value.asInstanceOf[js.Any])
+    inline def setPreferredSingleSignOnMode(value: NullableOption[String]): Self = StObject.set(x, "preferredSingleSignOnMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredSingleSignOnModeNull: Self = StObject.set(x, "preferredSingleSignOnMode", null)
+    inline def setPreferredSingleSignOnModeNull: Self = StObject.set(x, "preferredSingleSignOnMode", null)
     
-    @scala.inline
-    def setPreferredSingleSignOnModeUndefined: Self = StObject.set(x, "preferredSingleSignOnMode", js.undefined)
+    inline def setPreferredSingleSignOnModeUndefined: Self = StObject.set(x, "preferredSingleSignOnMode", js.undefined)
     
-    @scala.inline
-    def setPreferredTokenSigningKeyThumbprint(value: NullableOption[String]): Self = StObject.set(x, "preferredTokenSigningKeyThumbprint", value.asInstanceOf[js.Any])
+    inline def setPreferredTokenSigningKeyThumbprint(value: NullableOption[String]): Self = StObject.set(x, "preferredTokenSigningKeyThumbprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredTokenSigningKeyThumbprintNull: Self = StObject.set(x, "preferredTokenSigningKeyThumbprint", null)
+    inline def setPreferredTokenSigningKeyThumbprintNull: Self = StObject.set(x, "preferredTokenSigningKeyThumbprint", null)
     
-    @scala.inline
-    def setPreferredTokenSigningKeyThumbprintUndefined: Self = StObject.set(x, "preferredTokenSigningKeyThumbprint", js.undefined)
+    inline def setPreferredTokenSigningKeyThumbprintUndefined: Self = StObject.set(x, "preferredTokenSigningKeyThumbprint", js.undefined)
     
-    @scala.inline
-    def setReplyUrls(value: js.Array[String]): Self = StObject.set(x, "replyUrls", value.asInstanceOf[js.Any])
+    inline def setReplyUrls(value: js.Array[String]): Self = StObject.set(x, "replyUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyUrlsUndefined: Self = StObject.set(x, "replyUrls", js.undefined)
+    inline def setReplyUrlsUndefined: Self = StObject.set(x, "replyUrls", js.undefined)
     
-    @scala.inline
-    def setReplyUrlsVarargs(value: String*): Self = StObject.set(x, "replyUrls", js.Array(value :_*))
+    inline def setReplyUrlsVarargs(value: String*): Self = StObject.set(x, "replyUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setSamlSingleSignOnSettings(value: NullableOption[SamlSingleSignOnSettings]): Self = StObject.set(x, "samlSingleSignOnSettings", value.asInstanceOf[js.Any])
+    inline def setSamlSingleSignOnSettings(value: NullableOption[SamlSingleSignOnSettings]): Self = StObject.set(x, "samlSingleSignOnSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamlSingleSignOnSettingsNull: Self = StObject.set(x, "samlSingleSignOnSettings", null)
+    inline def setSamlSingleSignOnSettingsNull: Self = StObject.set(x, "samlSingleSignOnSettings", null)
     
-    @scala.inline
-    def setSamlSingleSignOnSettingsUndefined: Self = StObject.set(x, "samlSingleSignOnSettings", js.undefined)
+    inline def setSamlSingleSignOnSettingsUndefined: Self = StObject.set(x, "samlSingleSignOnSettings", js.undefined)
     
-    @scala.inline
-    def setServicePrincipalNames(value: js.Array[String]): Self = StObject.set(x, "servicePrincipalNames", value.asInstanceOf[js.Any])
+    inline def setServicePrincipalNames(value: js.Array[String]): Self = StObject.set(x, "servicePrincipalNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePrincipalNamesUndefined: Self = StObject.set(x, "servicePrincipalNames", js.undefined)
+    inline def setServicePrincipalNamesUndefined: Self = StObject.set(x, "servicePrincipalNames", js.undefined)
     
-    @scala.inline
-    def setServicePrincipalNamesVarargs(value: String*): Self = StObject.set(x, "servicePrincipalNames", js.Array(value :_*))
+    inline def setServicePrincipalNamesVarargs(value: String*): Self = StObject.set(x, "servicePrincipalNames", js.Array(value :_*))
     
-    @scala.inline
-    def setServicePrincipalType(value: NullableOption[String]): Self = StObject.set(x, "servicePrincipalType", value.asInstanceOf[js.Any])
+    inline def setServicePrincipalType(value: NullableOption[String]): Self = StObject.set(x, "servicePrincipalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePrincipalTypeNull: Self = StObject.set(x, "servicePrincipalType", null)
+    inline def setServicePrincipalTypeNull: Self = StObject.set(x, "servicePrincipalType", null)
     
-    @scala.inline
-    def setServicePrincipalTypeUndefined: Self = StObject.set(x, "servicePrincipalType", js.undefined)
+    inline def setServicePrincipalTypeUndefined: Self = StObject.set(x, "servicePrincipalType", js.undefined)
     
-    @scala.inline
-    def setSignInAudience(value: NullableOption[String]): Self = StObject.set(x, "signInAudience", value.asInstanceOf[js.Any])
+    inline def setSignInAudience(value: NullableOption[String]): Self = StObject.set(x, "signInAudience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignInAudienceNull: Self = StObject.set(x, "signInAudience", null)
+    inline def setSignInAudienceNull: Self = StObject.set(x, "signInAudience", null)
     
-    @scala.inline
-    def setSignInAudienceUndefined: Self = StObject.set(x, "signInAudience", js.undefined)
+    inline def setSignInAudienceUndefined: Self = StObject.set(x, "signInAudience", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenEncryptionKeyId(value: NullableOption[String]): Self = StObject.set(x, "tokenEncryptionKeyId", value.asInstanceOf[js.Any])
+    inline def setTokenEncryptionKeyId(value: NullableOption[String]): Self = StObject.set(x, "tokenEncryptionKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenEncryptionKeyIdNull: Self = StObject.set(x, "tokenEncryptionKeyId", null)
+    inline def setTokenEncryptionKeyIdNull: Self = StObject.set(x, "tokenEncryptionKeyId", null)
     
-    @scala.inline
-    def setTokenEncryptionKeyIdUndefined: Self = StObject.set(x, "tokenEncryptionKeyId", js.undefined)
+    inline def setTokenEncryptionKeyIdUndefined: Self = StObject.set(x, "tokenEncryptionKeyId", js.undefined)
     
-    @scala.inline
-    def setTokenIssuancePolicies(value: NullableOption[js.Array[TokenIssuancePolicy]]): Self = StObject.set(x, "tokenIssuancePolicies", value.asInstanceOf[js.Any])
+    inline def setTokenIssuancePolicies(value: NullableOption[js.Array[TokenIssuancePolicy]]): Self = StObject.set(x, "tokenIssuancePolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenIssuancePoliciesNull: Self = StObject.set(x, "tokenIssuancePolicies", null)
+    inline def setTokenIssuancePoliciesNull: Self = StObject.set(x, "tokenIssuancePolicies", null)
     
-    @scala.inline
-    def setTokenIssuancePoliciesUndefined: Self = StObject.set(x, "tokenIssuancePolicies", js.undefined)
+    inline def setTokenIssuancePoliciesUndefined: Self = StObject.set(x, "tokenIssuancePolicies", js.undefined)
     
-    @scala.inline
-    def setTokenIssuancePoliciesVarargs(value: TokenIssuancePolicy*): Self = StObject.set(x, "tokenIssuancePolicies", js.Array(value :_*))
+    inline def setTokenIssuancePoliciesVarargs(value: TokenIssuancePolicy*): Self = StObject.set(x, "tokenIssuancePolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenLifetimePolicies(value: NullableOption[js.Array[TokenLifetimePolicy]]): Self = StObject.set(x, "tokenLifetimePolicies", value.asInstanceOf[js.Any])
+    inline def setTokenLifetimePolicies(value: NullableOption[js.Array[TokenLifetimePolicy]]): Self = StObject.set(x, "tokenLifetimePolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenLifetimePoliciesNull: Self = StObject.set(x, "tokenLifetimePolicies", null)
+    inline def setTokenLifetimePoliciesNull: Self = StObject.set(x, "tokenLifetimePolicies", null)
     
-    @scala.inline
-    def setTokenLifetimePoliciesUndefined: Self = StObject.set(x, "tokenLifetimePolicies", js.undefined)
+    inline def setTokenLifetimePoliciesUndefined: Self = StObject.set(x, "tokenLifetimePolicies", js.undefined)
     
-    @scala.inline
-    def setTokenLifetimePoliciesVarargs(value: TokenLifetimePolicy*): Self = StObject.set(x, "tokenLifetimePolicies", js.Array(value :_*))
+    inline def setTokenLifetimePoliciesVarargs(value: TokenLifetimePolicy*): Self = StObject.set(x, "tokenLifetimePolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMemberOf", value.asInstanceOf[js.Any])
+    inline def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMemberOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitiveMemberOfNull: Self = StObject.set(x, "transitiveMemberOf", null)
+    inline def setTransitiveMemberOfNull: Self = StObject.set(x, "transitiveMemberOf", null)
     
-    @scala.inline
-    def setTransitiveMemberOfUndefined: Self = StObject.set(x, "transitiveMemberOf", js.undefined)
+    inline def setTransitiveMemberOfUndefined: Self = StObject.set(x, "transitiveMemberOf", js.undefined)
     
-    @scala.inline
-    def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value :_*))
+    inline def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value :_*))
   }
 }

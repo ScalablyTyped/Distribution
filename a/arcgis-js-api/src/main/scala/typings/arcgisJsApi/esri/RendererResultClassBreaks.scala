@@ -26,8 +26,7 @@ trait RendererResultClassBreaks
 }
 object RendererResultClassBreaks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field1: ClassBreaksResult,
     field2: ClassBreaksResult,
@@ -38,13 +37,10 @@ object RendererResultClassBreaks {
     __obj.asInstanceOf[RendererResultClassBreaks]
   }
   
-  @scala.inline
-  implicit class RendererResultClassBreaksMutableBuilder[Self <: RendererResultClassBreaks] (val x: Self) extends AnyVal {
+  extension [Self <: RendererResultClassBreaks](x: Self) {
     
-    @scala.inline
-    def setField1(value: ClassBreaksResult): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
+    inline def setField1(value: ClassBreaksResult): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField2(value: ClassBreaksResult): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
+    inline def setField2(value: ClassBreaksResult): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
   }
 }

@@ -32,32 +32,24 @@ object typesSsedescriptionMod {
   }
   object SSEDescription {
     
-    @scala.inline
-    def apply(): SSEDescription = {
+    inline def apply(): SSEDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SSEDescription]
     }
     
-    @scala.inline
-    implicit class SSEDescriptionMutableBuilder[Self <: SSEDescription] (val x: Self) extends AnyVal {
+    extension [Self <: SSEDescription](x: Self) {
       
-      @scala.inline
-      def setKMSMasterKeyArn(value: String): Self = StObject.set(x, "KMSMasterKeyArn", value.asInstanceOf[js.Any])
+      inline def setKMSMasterKeyArn(value: String): Self = StObject.set(x, "KMSMasterKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSMasterKeyArnUndefined: Self = StObject.set(x, "KMSMasterKeyArn", js.undefined)
+      inline def setKMSMasterKeyArnUndefined: Self = StObject.set(x, "KMSMasterKeyArn", js.undefined)
       
-      @scala.inline
-      def setSSEType(value: AES256 | KMS | String): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
+      inline def setSSEType(value: AES256 | KMS | String): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
+      inline def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
       
-      @scala.inline
-      def setStatus(value: ENABLING | ENABLED | DISABLING | DISABLED | UPDATING | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ENABLING | ENABLED | DISABLING | DISABLED | UPDATING | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     }
   }
   

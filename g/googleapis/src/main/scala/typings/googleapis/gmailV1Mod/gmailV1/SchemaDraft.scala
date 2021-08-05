@@ -21,25 +21,19 @@ trait SchemaDraft extends StObject {
 }
 object SchemaDraft {
   
-  @scala.inline
-  def apply(): SchemaDraft = {
+  inline def apply(): SchemaDraft = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDraft]
   }
   
-  @scala.inline
-  implicit class SchemaDraftMutableBuilder[Self <: SchemaDraft] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDraft](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

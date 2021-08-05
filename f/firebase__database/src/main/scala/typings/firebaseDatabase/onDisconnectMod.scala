@@ -26,7 +26,7 @@ object onDisconnectMod {
     def cancel(): js.Promise[Unit] = js.native
     def cancel(onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[Unit] = js.native
     
-    var path_ : js.Any = js.native
+    /* private */ var path_ : js.Any = js.native
     
     /**
       * @param {function(?Error)=} onComplete
@@ -35,7 +35,7 @@ object onDisconnectMod {
     def remove(): js.Promise[Unit] = js.native
     def remove(onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[Unit] = js.native
     
-    var repo_ : js.Any = js.native
+    /* private */ var repo_ : js.Any = js.native
     
     /**
       * @param {*} value

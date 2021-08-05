@@ -56,61 +56,43 @@ trait JQueryMenuAimOptions extends StObject {
 }
 object JQueryMenuAimOptions {
   
-  @scala.inline
-  def apply(): JQueryMenuAimOptions = {
+  inline def apply(): JQueryMenuAimOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryMenuAimOptions]
   }
   
-  @scala.inline
-  implicit class JQueryMenuAimOptionsMutableBuilder[Self <: JQueryMenuAimOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryMenuAimOptions](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
+    inline def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
+    inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
     
-    @scala.inline
-    def setEnter(value: () => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
+    inline def setEnter(value: () => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+    inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExitMenu(value: () => Unit): Self = StObject.set(x, "exitMenu", js.Any.fromFunction0(value))
+    inline def setExitMenu(value: () => Unit): Self = StObject.set(x, "exitMenu", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExitMenuUndefined: Self = StObject.set(x, "exitMenu", js.undefined)
+    inline def setExitMenuUndefined: Self = StObject.set(x, "exitMenu", js.undefined)
     
-    @scala.inline
-    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+    inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
-    @scala.inline
-    def setRowSelector(value: String): Self = StObject.set(x, "rowSelector", value.asInstanceOf[js.Any])
+    inline def setRowSelector(value: String): Self = StObject.set(x, "rowSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelectorUndefined: Self = StObject.set(x, "rowSelector", js.undefined)
+    inline def setRowSelectorUndefined: Self = StObject.set(x, "rowSelector", js.undefined)
     
-    @scala.inline
-    def setSubmenuDirection(value: String): Self = StObject.set(x, "submenuDirection", value.asInstanceOf[js.Any])
+    inline def setSubmenuDirection(value: String): Self = StObject.set(x, "submenuDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmenuDirectionUndefined: Self = StObject.set(x, "submenuDirection", js.undefined)
+    inline def setSubmenuDirectionUndefined: Self = StObject.set(x, "submenuDirection", js.undefined)
     
-    @scala.inline
-    def setSubmenuSelector(value: String): Self = StObject.set(x, "submenuSelector", value.asInstanceOf[js.Any])
+    inline def setSubmenuSelector(value: String): Self = StObject.set(x, "submenuSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmenuSelectorUndefined: Self = StObject.set(x, "submenuSelector", js.undefined)
+    inline def setSubmenuSelectorUndefined: Self = StObject.set(x, "submenuSelector", js.undefined)
   }
 }

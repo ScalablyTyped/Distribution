@@ -24,14 +24,14 @@ object disposablesMod {
       */
     def clear(): Unit = js.native
     
-    var disposables: js.Any = js.native
+    /* private */ var disposables: js.Any = js.native
     
     /**
       *  Disposes all disposables in the group and removes them from the group.
       */
     def dispose(): Unit = js.native
     
-    var isDisposed: js.Any = js.native
+    /* private */ var isDisposed: js.Any = js.native
     
     /**
       * Removes and disposes the first occurrence of a disposable from the CompositeDisposable.
@@ -46,12 +46,12 @@ object disposablesMod {
   class Disposable protected () extends StObject {
     def this(action: js.Any) = this()
     
-    var action: js.Any = js.native
+    /* private */ var action: js.Any = js.native
     
     /** Performs the task of cleaning up resources. */
     def dispose(): Unit = js.native
     
-    var isDisposed: js.Any = js.native
+    /* private */ var isDisposed: js.Any = js.native
   }
   /* static members */
   object Disposable {
@@ -60,8 +60,7 @@ object disposablesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _fixup(result: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_fixup")(result.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def _fixup(result: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_fixup")(result.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Creates a disposable object that invokes the specified action when disposed.
@@ -69,8 +68,7 @@ object disposablesMod {
       * The action is guaranteed to be run at most once.
       * @return {Disposable} The disposable object that runs the given action upon disposal.
       */
-    @scala.inline
-    def create(action: js.Any): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(action.asInstanceOf[js.Any]).asInstanceOf[Disposable]
+    inline def create(action: js.Any): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(action.asInstanceOf[js.Any]).asInstanceOf[Disposable]
     
     /**
       * Gets the disposable that does nothing when disposed.
@@ -78,23 +76,21 @@ object disposablesMod {
     @JSImport("react-dnd/lib/decorators/disposables", "Disposable.empty")
     @js.native
     def empty: Dispose = js.native
-    @scala.inline
-    def empty_=(x: Dispose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
+    inline def empty_=(x: Dispose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
     
     /**
       * Validates whether the given object is a disposable
       * @param {Object} Object to test whether it has a dispose method
       * @returns {Boolean} true if a disposable object, else false.
       */
-    @scala.inline
-    def isDisposable(d: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDisposable(d: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("react-dnd/lib/decorators/disposables", "SerialDisposable")
   @js.native
   class SerialDisposable () extends StObject {
     
-    var current: js.Any = js.native
+    /* private */ var current: js.Any = js.native
     
     /** Performs the task of cleaning up resources. */
     def dispose(): Unit = js.native
@@ -105,7 +101,7 @@ object disposablesMod {
       */
     def getDisposable(): js.UndefOr[Disposable] = js.native
     
-    var isDisposed: js.Any = js.native
+    /* private */ var isDisposed: js.Any = js.native
     
     def setDisposable(value: Disposable): Unit = js.native
   }

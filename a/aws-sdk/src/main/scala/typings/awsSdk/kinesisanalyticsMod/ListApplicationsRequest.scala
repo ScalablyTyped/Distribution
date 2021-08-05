@@ -18,25 +18,19 @@ trait ListApplicationsRequest extends StObject {
 }
 object ListApplicationsRequest {
   
-  @scala.inline
-  def apply(): ListApplicationsRequest = {
+  inline def apply(): ListApplicationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApplicationsRequest]
   }
   
-  @scala.inline
-  implicit class ListApplicationsRequestMutableBuilder[Self <: ListApplicationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationsRequest](x: Self) {
     
-    @scala.inline
-    def setExclusiveStartApplicationName(value: ApplicationName): Self = StObject.set(x, "ExclusiveStartApplicationName", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartApplicationName(value: ApplicationName): Self = StObject.set(x, "ExclusiveStartApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartApplicationNameUndefined: Self = StObject.set(x, "ExclusiveStartApplicationName", js.undefined)
+    inline def setExclusiveStartApplicationNameUndefined: Self = StObject.set(x, "ExclusiveStartApplicationName", js.undefined)
     
-    @scala.inline
-    def setLimit(value: ListApplicationsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: ListApplicationsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

@@ -67,8 +67,7 @@ object typesInventoryConfigurationMod {
   }
   object InventoryConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Destination: InventoryDestination,
       Id: String,
       IncludedObjectVersions: All | Current | String,
@@ -79,29 +78,21 @@ object typesInventoryConfigurationMod {
       __obj.asInstanceOf[InventoryConfiguration]
     }
     
-    @scala.inline
-    implicit class InventoryConfigurationMutableBuilder[Self <: InventoryConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: InventoryConfiguration](x: Self) {
       
-      @scala.inline
-      def setDestination(value: InventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: InventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: InventoryFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: InventoryFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludedObjectVersions(value: All | Current | String): Self = StObject.set(x, "IncludedObjectVersions", value.asInstanceOf[js.Any])
+      inline def setIncludedObjectVersions(value: All | Current | String): Self = StObject.set(x, "IncludedObjectVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalFields(
+      inline def setOptionalFields(
         value: (js.Array[
               Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
             ]) | (Iterable[
@@ -109,16 +100,13 @@ object typesInventoryConfigurationMod {
             ])
       ): Self = StObject.set(x, "OptionalFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
+      inline def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
       
-      @scala.inline
-      def setOptionalFieldsVarargs(
+      inline def setOptionalFieldsVarargs(
         value: (Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String)*
       ): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedule(value: InventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: InventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,8 +144,7 @@ object typesInventoryConfigurationMod {
   }
   object UnmarshalledInventoryConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Destination: UnmarshalledInventoryDestination,
       Id: String,
       IncludedObjectVersions: All | Current | String,
@@ -168,35 +155,27 @@ object typesInventoryConfigurationMod {
       __obj.asInstanceOf[UnmarshalledInventoryConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledInventoryConfigurationMutableBuilder[Self <: UnmarshalledInventoryConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledInventoryConfiguration](x: Self) {
       
-      @scala.inline
-      def setDestination(value: UnmarshalledInventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: UnmarshalledInventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: UnmarshalledInventoryFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: UnmarshalledInventoryFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
       
-      @scala.inline
-      def setOptionalFields(
+      inline def setOptionalFields(
         value: js.Array[
               Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
             ]
       ): Self = StObject.set(x, "OptionalFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
+      inline def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
       
-      @scala.inline
-      def setOptionalFieldsVarargs(
+      inline def setOptionalFieldsVarargs(
         value: (Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String)*
       ): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedule(value: UnmarshalledInventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: UnmarshalledInventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     }
   }
 }

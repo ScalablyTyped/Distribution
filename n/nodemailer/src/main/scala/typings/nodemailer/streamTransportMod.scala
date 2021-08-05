@@ -69,29 +69,22 @@ object streamTransportMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal(streamTransport = true)
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
+      inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
+      inline def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
       
-      @scala.inline
-      def setStreamTransport(value: `true`): Self = StObject.set(x, "streamTransport", value.asInstanceOf[js.Any])
+      inline def setStreamTransport(value: `true`): Self = StObject.set(x, "streamTransport", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,23 +101,18 @@ object streamTransportMod {
   }
   object SentMessageInfo {
     
-    @scala.inline
-    def apply(envelope: Envelope, message: Buffer | Readable, messageId: String): SentMessageInfo = {
+    inline def apply(envelope: Envelope, message: Buffer | Readable, messageId: String): SentMessageInfo = {
       val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    @scala.inline
-    implicit class SentMessageInfoMutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SentMessageInfo](x: Self) {
       
-      @scala.inline
-      def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
+      inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: Buffer | Readable): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Buffer | Readable): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,8 +131,7 @@ object streamTransportMod {
   }
   object StreamTransport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       logger: Logger,
       mailer: typings.nodemailer.mailerMod.^,
       name: String,
@@ -160,20 +147,15 @@ object streamTransportMod {
       __obj.asInstanceOf[StreamTransport]
     }
     
-    @scala.inline
-    implicit class StreamTransportMutableBuilder[Self <: StreamTransport] (val x: Self) extends AnyVal {
+    extension [Self <: StreamTransport](x: Self) {
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailer(value: typings.nodemailer.mailerMod.^): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
+      inline def setMailer(value: typings.nodemailer.mailerMod.^): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWinbreak(value: Boolean): Self = StObject.set(x, "winbreak", value.asInstanceOf[js.Any])
+      inline def setWinbreak(value: Boolean): Self = StObject.set(x, "winbreak", value.asInstanceOf[js.Any])
     }
   }
 }

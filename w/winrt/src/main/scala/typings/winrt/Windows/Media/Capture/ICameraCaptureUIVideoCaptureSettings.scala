@@ -16,8 +16,7 @@ trait ICameraCaptureUIVideoCaptureSettings extends StObject {
 }
 object ICameraCaptureUIVideoCaptureSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowTrimming: Boolean,
     format: CameraCaptureUIVideoFormat,
     maxDurationInSeconds: Double,
@@ -27,19 +26,14 @@ object ICameraCaptureUIVideoCaptureSettings {
     __obj.asInstanceOf[ICameraCaptureUIVideoCaptureSettings]
   }
   
-  @scala.inline
-  implicit class ICameraCaptureUIVideoCaptureSettingsMutableBuilder[Self <: ICameraCaptureUIVideoCaptureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ICameraCaptureUIVideoCaptureSettings](x: Self) {
     
-    @scala.inline
-    def setAllowTrimming(value: Boolean): Self = StObject.set(x, "allowTrimming", value.asInstanceOf[js.Any])
+    inline def setAllowTrimming(value: Boolean): Self = StObject.set(x, "allowTrimming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: CameraCaptureUIVideoFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CameraCaptureUIVideoFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationInSeconds(value: Double): Self = StObject.set(x, "maxDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxDurationInSeconds(value: Double): Self = StObject.set(x, "maxDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResolution(value: CameraCaptureUIMaxVideoResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
+    inline def setMaxResolution(value: CameraCaptureUIMaxVideoResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
   }
 }

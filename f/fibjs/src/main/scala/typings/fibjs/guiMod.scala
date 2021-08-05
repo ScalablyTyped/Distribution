@@ -39,11 +39,8 @@ object guiMod {
   @js.native
   val IE9: /* 9000 */ Double = js.native
   
-  @scala.inline
-  def open(url: String): ClassWebView = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[ClassWebView]
-  @scala.inline
-  def open(url: String, opt: js.Object): ClassWebView = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ClassWebView]
+  inline def open(url: String): ClassWebView = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[ClassWebView]
+  inline def open(url: String, opt: js.Object): ClassWebView = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ClassWebView]
   
-  @scala.inline
-  def setVersion(ver: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVersion")(ver.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setVersion(ver: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVersion")(ver.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

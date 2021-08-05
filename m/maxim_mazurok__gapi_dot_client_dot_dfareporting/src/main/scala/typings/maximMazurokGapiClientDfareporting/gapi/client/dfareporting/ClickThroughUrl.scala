@@ -24,37 +24,27 @@ trait ClickThroughUrl extends StObject {
 }
 object ClickThroughUrl {
   
-  @scala.inline
-  def apply(): ClickThroughUrl = {
+  inline def apply(): ClickThroughUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClickThroughUrl]
   }
   
-  @scala.inline
-  implicit class ClickThroughUrlMutableBuilder[Self <: ClickThroughUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ClickThroughUrl](x: Self) {
     
-    @scala.inline
-    def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedClickThroughUrlUndefined: Self = StObject.set(x, "computedClickThroughUrl", js.undefined)
+    inline def setComputedClickThroughUrlUndefined: Self = StObject.set(x, "computedClickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setCustomClickThroughUrl(value: String): Self = StObject.set(x, "customClickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setCustomClickThroughUrl(value: String): Self = StObject.set(x, "customClickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomClickThroughUrlUndefined: Self = StObject.set(x, "customClickThroughUrl", js.undefined)
+    inline def setCustomClickThroughUrlUndefined: Self = StObject.set(x, "customClickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setDefaultLandingPage(value: Boolean): Self = StObject.set(x, "defaultLandingPage", value.asInstanceOf[js.Any])
+    inline def setDefaultLandingPage(value: Boolean): Self = StObject.set(x, "defaultLandingPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLandingPageUndefined: Self = StObject.set(x, "defaultLandingPage", js.undefined)
+    inline def setDefaultLandingPageUndefined: Self = StObject.set(x, "defaultLandingPage", js.undefined)
     
-    @scala.inline
-    def setLandingPageId(value: String): Self = StObject.set(x, "landingPageId", value.asInstanceOf[js.Any])
+    inline def setLandingPageId(value: String): Self = StObject.set(x, "landingPageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandingPageIdUndefined: Self = StObject.set(x, "landingPageId", js.undefined)
+    inline def setLandingPageIdUndefined: Self = StObject.set(x, "landingPageId", js.undefined)
   }
 }

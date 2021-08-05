@@ -12,19 +12,15 @@ trait DatepickerBeforeShowDayResponse
 }
 object DatepickerBeforeShowDayResponse {
   
-  @scala.inline
-  def apply(): DatepickerBeforeShowDayResponse = {
+  inline def apply(): DatepickerBeforeShowDayResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatepickerBeforeShowDayResponse]
   }
   
-  @scala.inline
-  implicit class DatepickerBeforeShowDayResponseMutableBuilder[Self <: DatepickerBeforeShowDayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatepickerBeforeShowDayResponse](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait BrowserViewConstructorOptions extends StObject {
 }
 object BrowserViewConstructorOptions {
   
-  @scala.inline
-  def apply(): BrowserViewConstructorOptions = {
+  inline def apply(): BrowserViewConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrowserViewConstructorOptions]
   }
   
-  @scala.inline
-  implicit class BrowserViewConstructorOptionsMutableBuilder[Self <: BrowserViewConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserViewConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setWebPreferences(value: WebPreferences): Self = StObject.set(x, "webPreferences", value.asInstanceOf[js.Any])
+    inline def setWebPreferences(value: WebPreferences): Self = StObject.set(x, "webPreferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPreferencesUndefined: Self = StObject.set(x, "webPreferences", js.undefined)
+    inline def setWebPreferencesUndefined: Self = StObject.set(x, "webPreferences", js.undefined)
   }
 }

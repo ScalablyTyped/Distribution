@@ -24,8 +24,7 @@ trait DeliveryPreferencesEditable extends StObject {
 }
 object DeliveryPreferencesEditable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deliveryPreferencesEditable: scala.Double,
     isGroup: scala.Double,
     isTeam: scala.Double,
@@ -39,31 +38,22 @@ object DeliveryPreferencesEditable {
     __obj.asInstanceOf[DeliveryPreferencesEditable]
   }
   
-  @scala.inline
-  implicit class DeliveryPreferencesEditableMutableBuilder[Self <: DeliveryPreferencesEditable] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryPreferencesEditable](x: Self) {
     
-    @scala.inline
-    def setDeliveryPreferencesEditable(value: scala.Double): Self = StObject.set(x, "deliveryPreferencesEditable", value.asInstanceOf[js.Any])
+    inline def setDeliveryPreferencesEditable(value: scala.Double): Self = StObject.set(x, "deliveryPreferencesEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroup(value: scala.Double): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
+    inline def setIsGroup(value: scala.Double): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTeam(value: scala.Double): Self = StObject.set(x, "isTeam", value.asInstanceOf[js.Any])
+    inline def setIsTeam(value: scala.Double): Self = StObject.set(x, "isTeam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUser(value: scala.Double): Self = StObject.set(x, "isUser", value.asInstanceOf[js.Any])
+    inline def setIsUser(value: scala.Double): Self = StObject.set(x, "isUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsEachMemberDelivery(value: scala.Double): Self = StObject.set(x, "supportsEachMemberDelivery", value.asInstanceOf[js.Any])
+    inline def setSupportsEachMemberDelivery(value: scala.Double): Self = StObject.set(x, "supportsEachMemberDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsNoDelivery(value: scala.Double): Self = StObject.set(x, "supportsNoDelivery", value.asInstanceOf[js.Any])
+    inline def setSupportsNoDelivery(value: scala.Double): Self = StObject.set(x, "supportsNoDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsPreferredEmailAddressDelivery(value: scala.Double): Self = StObject.set(x, "supportsPreferredEmailAddressDelivery", value.asInstanceOf[js.Any])
+    inline def setSupportsPreferredEmailAddressDelivery(value: scala.Double): Self = StObject.set(x, "supportsPreferredEmailAddressDelivery", value.asInstanceOf[js.Any])
   }
 }

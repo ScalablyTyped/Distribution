@@ -212,20 +212,16 @@ object Casting {
   }
   object CastingConnectionErrorOccurredEventArgs {
     
-    @scala.inline
-    def apply(errorStatus: CastingConnectionErrorStatus, message: String): CastingConnectionErrorOccurredEventArgs = {
+    inline def apply(errorStatus: CastingConnectionErrorStatus, message: String): CastingConnectionErrorOccurredEventArgs = {
       val __obj = js.Dynamic.literal(errorStatus = errorStatus.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[CastingConnectionErrorOccurredEventArgs]
     }
     
-    @scala.inline
-    implicit class CastingConnectionErrorOccurredEventArgsMutableBuilder[Self <: CastingConnectionErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CastingConnectionErrorOccurredEventArgs](x: Self) {
       
-      @scala.inline
-      def setErrorStatus(value: CastingConnectionErrorStatus): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
+      inline def setErrorStatus(value: CastingConnectionErrorStatus): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,8 +251,7 @@ object Casting {
   }
   object CastingDevice {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createCastingConnection: () => CastingConnection,
       friendlyName: String,
       getSupportedCastingPlaybackTypesAsync: () => IPromiseWithIAsyncOperation[CastingPlaybackTypes],
@@ -267,23 +262,17 @@ object Casting {
       __obj.asInstanceOf[CastingDevice]
     }
     
-    @scala.inline
-    implicit class CastingDeviceMutableBuilder[Self <: CastingDevice] (val x: Self) extends AnyVal {
+    extension [Self <: CastingDevice](x: Self) {
       
-      @scala.inline
-      def setCreateCastingConnection(value: () => CastingConnection): Self = StObject.set(x, "createCastingConnection", js.Any.fromFunction0(value))
+      inline def setCreateCastingConnection(value: () => CastingConnection): Self = StObject.set(x, "createCastingConnection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetSupportedCastingPlaybackTypesAsync(value: () => IPromiseWithIAsyncOperation[CastingPlaybackTypes]): Self = StObject.set(x, "getSupportedCastingPlaybackTypesAsync", js.Any.fromFunction0(value))
+      inline def setGetSupportedCastingPlaybackTypesAsync(value: () => IPromiseWithIAsyncOperation[CastingPlaybackTypes]): Self = StObject.set(x, "getSupportedCastingPlaybackTypesAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIcon(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,8 +349,7 @@ object Casting {
   }
   object CastingDevicePickerFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       supportedCastingSources: IVector[CastingSource],
       supportsAudio: Boolean,
       supportsPictures: Boolean,
@@ -371,20 +359,15 @@ object Casting {
       __obj.asInstanceOf[CastingDevicePickerFilter]
     }
     
-    @scala.inline
-    implicit class CastingDevicePickerFilterMutableBuilder[Self <: CastingDevicePickerFilter] (val x: Self) extends AnyVal {
+    extension [Self <: CastingDevicePickerFilter](x: Self) {
       
-      @scala.inline
-      def setSupportedCastingSources(value: IVector[CastingSource]): Self = StObject.set(x, "supportedCastingSources", value.asInstanceOf[js.Any])
+      inline def setSupportedCastingSources(value: IVector[CastingSource]): Self = StObject.set(x, "supportedCastingSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsAudio(value: Boolean): Self = StObject.set(x, "supportsAudio", value.asInstanceOf[js.Any])
+      inline def setSupportsAudio(value: Boolean): Self = StObject.set(x, "supportsAudio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsPictures(value: Boolean): Self = StObject.set(x, "supportsPictures", value.asInstanceOf[js.Any])
+      inline def setSupportsPictures(value: Boolean): Self = StObject.set(x, "supportsPictures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsVideo(value: Boolean): Self = StObject.set(x, "supportsVideo", value.asInstanceOf[js.Any])
+      inline def setSupportsVideo(value: Boolean): Self = StObject.set(x, "supportsVideo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -396,17 +379,14 @@ object Casting {
   }
   object CastingDeviceSelectedEventArgs {
     
-    @scala.inline
-    def apply(selectedCastingDevice: CastingDevice): CastingDeviceSelectedEventArgs = {
+    inline def apply(selectedCastingDevice: CastingDevice): CastingDeviceSelectedEventArgs = {
       val __obj = js.Dynamic.literal(selectedCastingDevice = selectedCastingDevice.asInstanceOf[js.Any])
       __obj.asInstanceOf[CastingDeviceSelectedEventArgs]
     }
     
-    @scala.inline
-    implicit class CastingDeviceSelectedEventArgsMutableBuilder[Self <: CastingDeviceSelectedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CastingDeviceSelectedEventArgs](x: Self) {
       
-      @scala.inline
-      def setSelectedCastingDevice(value: CastingDevice): Self = StObject.set(x, "selectedCastingDevice", value.asInstanceOf[js.Any])
+      inline def setSelectedCastingDevice(value: CastingDevice): Self = StObject.set(x, "selectedCastingDevice", value.asInstanceOf[js.Any])
     }
   }
   
@@ -418,17 +398,14 @@ object Casting {
   }
   object CastingSource {
     
-    @scala.inline
-    def apply(preferredSourceUri: Uri): CastingSource = {
+    inline def apply(preferredSourceUri: Uri): CastingSource = {
       val __obj = js.Dynamic.literal(preferredSourceUri = preferredSourceUri.asInstanceOf[js.Any])
       __obj.asInstanceOf[CastingSource]
     }
     
-    @scala.inline
-    implicit class CastingSourceMutableBuilder[Self <: CastingSource] (val x: Self) extends AnyVal {
+    extension [Self <: CastingSource](x: Self) {
       
-      @scala.inline
-      def setPreferredSourceUri(value: Uri): Self = StObject.set(x, "preferredSourceUri", value.asInstanceOf[js.Any])
+      inline def setPreferredSourceUri(value: Uri): Self = StObject.set(x, "preferredSourceUri", value.asInstanceOf[js.Any])
     }
   }
 }

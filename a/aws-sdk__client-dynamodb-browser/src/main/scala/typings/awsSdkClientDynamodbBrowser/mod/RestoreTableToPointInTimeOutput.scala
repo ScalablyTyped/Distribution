@@ -10,8 +10,7 @@ trait RestoreTableToPointInTimeOutput
      with typings.awsSdkClientDynamodbBrowser.typesRestoreTableToPointInTimeOutputMod.RestoreTableToPointInTimeOutput
 object RestoreTableToPointInTimeOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): RestoreTableToPointInTimeOutput = {
+  inline def apply($metadata: ResponseMetadata): RestoreTableToPointInTimeOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreTableToPointInTimeOutput]
   }

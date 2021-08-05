@@ -10,19 +10,15 @@ trait Definition[DF /* <: DefinitionFactory[js.Any] */] extends StObject {
 }
 object Definition {
   
-  @scala.inline
-  def apply[DF /* <: DefinitionFactory[js.Any] */](): Definition[DF] = {
+  inline def apply[DF /* <: DefinitionFactory[js.Any] */](): Definition[DF] = {
     val __obj = js.Dynamic.literal(factory = null)
     __obj.asInstanceOf[Definition[DF]]
   }
   
-  @scala.inline
-  implicit class DefinitionMutableBuilder[Self <: Definition[?], DF /* <: DefinitionFactory[js.Any] */] (val x: Self & Definition[DF]) extends AnyVal {
+  extension [Self <: Definition[?], DF /* <: DefinitionFactory[js.Any] */](x: Self & Definition[DF]) {
     
-    @scala.inline
-    def setFactory(value: DF): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: DF): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoryNull: Self = StObject.set(x, "factory", null)
+    inline def setFactoryNull: Self = StObject.set(x, "factory", null)
   }
 }

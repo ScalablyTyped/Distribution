@@ -10,10 +10,8 @@ object operatorsGroupByMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy[T, K](
+  inline def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def groupBy[T, K](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: Unit,
     durationSelector: js.Function1[
@@ -21,10 +19,8 @@ object operatorsGroupByMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
     ]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy[T, K, R](
+  inline def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
     durationSelector: js.Function1[
@@ -32,8 +28,7 @@ object operatorsGroupByMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
     ]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy[T, K, R](
+  inline def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
     durationSelector: js.Function1[
@@ -44,8 +39,7 @@ object operatorsGroupByMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ js.Any
     ]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy[T, K, R](
+  inline def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
     durationSelector: Unit,
@@ -53,8 +47,7 @@ object operatorsGroupByMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ js.Any
     ]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy[T, K, R](
+  inline def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: Unit,
     durationSelector: js.Function1[
@@ -65,8 +58,7 @@ object operatorsGroupByMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ js.Any
     ]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy[T, K, R](
+  inline def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: Unit,
     durationSelector: Unit,
@@ -75,10 +67,8 @@ object operatorsGroupByMod {
     ]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def groupBy_TKR[T, K, R](
+  inline def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def groupBy_TKR[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: Unit,
     durationSelector: js.Function1[

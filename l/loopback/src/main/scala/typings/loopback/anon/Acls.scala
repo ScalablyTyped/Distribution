@@ -16,25 +16,19 @@ trait Acls extends StObject {
 }
 object Acls {
   
-  @scala.inline
-  def apply(acls: js.Array[ACL], http: Path): Acls = {
+  inline def apply(acls: js.Array[ACL], http: Path): Acls = {
     val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], defaultPermission = "DENY", http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[Acls]
   }
   
-  @scala.inline
-  implicit class AclsMutableBuilder[Self <: Acls] (val x: Self) extends AnyVal {
+  extension [Self <: Acls](x: Self) {
     
-    @scala.inline
-    def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
+    inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
+    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultPermission(value: DENY): Self = StObject.set(x, "defaultPermission", value.asInstanceOf[js.Any])
+    inline def setDefaultPermission(value: DENY): Self = StObject.set(x, "defaultPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

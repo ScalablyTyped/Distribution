@@ -16,37 +16,27 @@ trait Hidden extends StObject {
 }
 object Hidden {
   
-  @scala.inline
-  def apply(): Hidden = {
+  inline def apply(): Hidden = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hidden]
   }
   
-  @scala.inline
-  implicit class HiddenMutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
+  extension [Self <: Hidden](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+    inline def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
+    inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

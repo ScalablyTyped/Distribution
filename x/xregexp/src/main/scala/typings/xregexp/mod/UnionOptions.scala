@@ -18,22 +18,17 @@ trait UnionOptions extends StObject {
 }
 object UnionOptions {
   
-  @scala.inline
-  def apply(): UnionOptions = {
+  inline def apply(): UnionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnionOptions]
   }
   
-  @scala.inline
-  implicit class UnionOptionsMutableBuilder[Self <: UnionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnionOptions](x: Self) {
     
-    @scala.inline
-    def setConjunction(value: or | none): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
+    inline def setConjunction(value: or | none): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConjunctionNull: Self = StObject.set(x, "conjunction", null)
+    inline def setConjunctionNull: Self = StObject.set(x, "conjunction", null)
     
-    @scala.inline
-    def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
+    inline def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
   }
 }

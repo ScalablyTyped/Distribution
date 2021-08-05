@@ -42,19 +42,14 @@ object mod {
     var `type`: playlist | segment = js.native
   }
   
-  @scala.inline
-  def getOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[Options]
+  inline def getOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[Options]
   
-  @scala.inline
-  def parse(manifest: String): MasterPlaylist | MediaPlaylist = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(manifest.asInstanceOf[js.Any]).asInstanceOf[MasterPlaylist | MediaPlaylist]
+  inline def parse(manifest: String): MasterPlaylist | MediaPlaylist = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(manifest.asInstanceOf[js.Any]).asInstanceOf[MasterPlaylist | MediaPlaylist]
   
-  @scala.inline
-  def setOptions(overrides: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(overrides.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setOptions(overrides: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(overrides.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def stringify(playlist: MasterPlaylist): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(playlist.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(playlist: MediaPlaylist): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(playlist.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(playlist: MasterPlaylist): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(playlist.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(playlist: MediaPlaylist): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(playlist.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object types {
     
@@ -276,44 +271,32 @@ object mod {
     }
     object BasePlaylistConstructorProperties {
       
-      @scala.inline
-      def apply(): BasePlaylistConstructorProperties = {
+      inline def apply(): BasePlaylistConstructorProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BasePlaylistConstructorProperties]
       }
       
-      @scala.inline
-      implicit class BasePlaylistConstructorPropertiesMutableBuilder[Self <: BasePlaylistConstructorProperties] (val x: Self) extends AnyVal {
+      extension [Self <: BasePlaylistConstructorProperties](x: Self) {
         
-        @scala.inline
-        def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
+        inline def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
+        inline def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
         
-        @scala.inline
-        def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+        inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
         
-        @scala.inline
-        def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+        inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         
-        @scala.inline
-        def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+        inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+        inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
         
-        @scala.inline
-        def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
   }
@@ -326,20 +309,16 @@ object mod {
   }
   object Byterange {
     
-    @scala.inline
-    def apply(length: Double, offset: Double): Byterange = {
+    inline def apply(length: Double, offset: Double): Byterange = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Byterange]
     }
     
-    @scala.inline
-    implicit class ByterangeMutableBuilder[Self <: Byterange] (val x: Self) extends AnyVal {
+    extension [Self <: Byterange](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -349,17 +328,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(strictMode: Boolean): Options = {
+    inline def apply(strictMode: Boolean): Options = {
       val __obj = js.Dynamic.literal(strictMode = strictMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     }
   }
 }

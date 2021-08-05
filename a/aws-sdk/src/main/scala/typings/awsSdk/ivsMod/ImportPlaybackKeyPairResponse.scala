@@ -10,19 +10,15 @@ trait ImportPlaybackKeyPairResponse extends StObject {
 }
 object ImportPlaybackKeyPairResponse {
   
-  @scala.inline
-  def apply(): ImportPlaybackKeyPairResponse = {
+  inline def apply(): ImportPlaybackKeyPairResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportPlaybackKeyPairResponse]
   }
   
-  @scala.inline
-  implicit class ImportPlaybackKeyPairResponseMutableBuilder[Self <: ImportPlaybackKeyPairResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ImportPlaybackKeyPairResponse](x: Self) {
     
-    @scala.inline
-    def setKeyPair(value: PlaybackKeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
+    inline def setKeyPair(value: PlaybackKeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
+    inline def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
   }
 }

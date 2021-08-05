@@ -8,26 +8,21 @@ object pdf2imageStrings {
   
   @js.native
   sealed trait Asterisk extends StObject
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait Dotjpg extends StObject
-  @scala.inline
-  def Dotjpg: Dotjpg = ".jpg".asInstanceOf[Dotjpg]
+  inline def Dotjpg: Dotjpg = ".jpg".asInstanceOf[Dotjpg]
   
   @js.native
   sealed trait Dotpng extends StObject
-  @scala.inline
-  def Dotpng: Dotpng = ".png".asInstanceOf[Dotpng]
+  inline def Dotpng: Dotpng = ".png".asInstanceOf[Dotpng]
   
   @js.native
   sealed trait jpg extends StObject
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
   
   @js.native
   sealed trait png extends StObject
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
+  inline def png: png = "png".asInstanceOf[png]
 }

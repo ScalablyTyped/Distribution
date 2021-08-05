@@ -14,22 +14,17 @@ trait TypeofpayloadMaxBytes extends StObject {
 }
 object TypeofpayloadMaxBytes {
   
-  @scala.inline
-  def apply(maxBytes: Double, output: String, parse: Boolean): TypeofpayloadMaxBytes = {
+  inline def apply(maxBytes: Double, output: String, parse: Boolean): TypeofpayloadMaxBytes = {
     val __obj = js.Dynamic.literal(maxBytes = maxBytes.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofpayloadMaxBytes]
   }
   
-  @scala.inline
-  implicit class TypeofpayloadMaxBytesMutableBuilder[Self <: TypeofpayloadMaxBytes] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpayloadMaxBytes](x: Self) {
     
-    @scala.inline
-    def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
+    inline def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
   }
 }

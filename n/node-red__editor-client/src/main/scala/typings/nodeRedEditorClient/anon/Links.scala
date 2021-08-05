@@ -19,46 +19,33 @@ trait Links extends StObject {
 }
 object Links {
   
-  @scala.inline
-  def apply(subflow: js.Object): Links = {
+  inline def apply(subflow: js.Object): Links = {
     val __obj = js.Dynamic.literal(subflow = subflow.asInstanceOf[js.Any], t = "createSubflow")
     __obj.asInstanceOf[Links]
   }
   
-  @scala.inline
-  implicit class LinksMutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
+  extension [Self <: Links](x: Self) {
     
-    @scala.inline
-    def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: js.Object*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: js.Object*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[js.Object]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[js.Object]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: js.Object*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: js.Object*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovedLinks(value: js.Array[js.Object]): Self = StObject.set(x, "removedLinks", value.asInstanceOf[js.Any])
+    inline def setRemovedLinks(value: js.Array[js.Object]): Self = StObject.set(x, "removedLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedLinksUndefined: Self = StObject.set(x, "removedLinks", js.undefined)
+    inline def setRemovedLinksUndefined: Self = StObject.set(x, "removedLinks", js.undefined)
     
-    @scala.inline
-    def setRemovedLinksVarargs(value: js.Object*): Self = StObject.set(x, "removedLinks", js.Array(value :_*))
+    inline def setRemovedLinksVarargs(value: js.Object*): Self = StObject.set(x, "removedLinks", js.Array(value :_*))
     
-    @scala.inline
-    def setSubflow(value: js.Object): Self = StObject.set(x, "subflow", value.asInstanceOf[js.Any])
+    inline def setSubflow(value: js.Object): Self = StObject.set(x, "subflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: createSubflow): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: createSubflow): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

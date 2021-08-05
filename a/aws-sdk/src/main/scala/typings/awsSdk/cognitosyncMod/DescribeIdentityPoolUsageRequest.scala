@@ -13,16 +13,13 @@ trait DescribeIdentityPoolUsageRequest extends StObject {
 }
 object DescribeIdentityPoolUsageRequest {
   
-  @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId): DescribeIdentityPoolUsageRequest = {
+  inline def apply(IdentityPoolId: IdentityPoolId): DescribeIdentityPoolUsageRequest = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIdentityPoolUsageRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityPoolUsageRequestMutableBuilder[Self <: DescribeIdentityPoolUsageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityPoolUsageRequest](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }
 }

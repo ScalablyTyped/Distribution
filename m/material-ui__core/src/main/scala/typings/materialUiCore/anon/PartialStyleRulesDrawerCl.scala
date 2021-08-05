@@ -32,79 +32,55 @@ trait PartialStyleRulesDrawerCl extends StObject {
 }
 object PartialStyleRulesDrawerCl {
   
-  @scala.inline
-  def apply(): PartialStyleRulesDrawerCl = {
+  inline def apply(): PartialStyleRulesDrawerCl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesDrawerCl]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesDrawerClMutableBuilder[Self <: PartialStyleRulesDrawerCl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesDrawerCl](x: Self) {
     
-    @scala.inline
-    def setDocked(value: CSSProperties): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
+    inline def setDocked(value: CSSProperties): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
+    inline def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
     
-    @scala.inline
-    def setModal(value: CSSProperties): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: CSSProperties): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    @scala.inline
-    def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+    inline def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorBottom(value: CSSProperties): Self = StObject.set(x, "paperAnchorBottom", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorBottom(value: CSSProperties): Self = StObject.set(x, "paperAnchorBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorBottomUndefined: Self = StObject.set(x, "paperAnchorBottom", js.undefined)
+    inline def setPaperAnchorBottomUndefined: Self = StObject.set(x, "paperAnchorBottom", js.undefined)
     
-    @scala.inline
-    def setPaperAnchorDockedBottom(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedBottom", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorDockedBottom(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorDockedBottomUndefined: Self = StObject.set(x, "paperAnchorDockedBottom", js.undefined)
+    inline def setPaperAnchorDockedBottomUndefined: Self = StObject.set(x, "paperAnchorDockedBottom", js.undefined)
     
-    @scala.inline
-    def setPaperAnchorDockedLeft(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedLeft", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorDockedLeft(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorDockedLeftUndefined: Self = StObject.set(x, "paperAnchorDockedLeft", js.undefined)
+    inline def setPaperAnchorDockedLeftUndefined: Self = StObject.set(x, "paperAnchorDockedLeft", js.undefined)
     
-    @scala.inline
-    def setPaperAnchorDockedRight(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedRight", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorDockedRight(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorDockedRightUndefined: Self = StObject.set(x, "paperAnchorDockedRight", js.undefined)
+    inline def setPaperAnchorDockedRightUndefined: Self = StObject.set(x, "paperAnchorDockedRight", js.undefined)
     
-    @scala.inline
-    def setPaperAnchorDockedTop(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedTop", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorDockedTop(value: CSSProperties): Self = StObject.set(x, "paperAnchorDockedTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorDockedTopUndefined: Self = StObject.set(x, "paperAnchorDockedTop", js.undefined)
+    inline def setPaperAnchorDockedTopUndefined: Self = StObject.set(x, "paperAnchorDockedTop", js.undefined)
     
-    @scala.inline
-    def setPaperAnchorLeft(value: CSSProperties): Self = StObject.set(x, "paperAnchorLeft", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorLeft(value: CSSProperties): Self = StObject.set(x, "paperAnchorLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorLeftUndefined: Self = StObject.set(x, "paperAnchorLeft", js.undefined)
+    inline def setPaperAnchorLeftUndefined: Self = StObject.set(x, "paperAnchorLeft", js.undefined)
     
-    @scala.inline
-    def setPaperAnchorRight(value: CSSProperties): Self = StObject.set(x, "paperAnchorRight", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorRight(value: CSSProperties): Self = StObject.set(x, "paperAnchorRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorRightUndefined: Self = StObject.set(x, "paperAnchorRight", js.undefined)
+    inline def setPaperAnchorRightUndefined: Self = StObject.set(x, "paperAnchorRight", js.undefined)
     
-    @scala.inline
-    def setPaperAnchorTop(value: CSSProperties): Self = StObject.set(x, "paperAnchorTop", value.asInstanceOf[js.Any])
+    inline def setPaperAnchorTop(value: CSSProperties): Self = StObject.set(x, "paperAnchorTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperAnchorTopUndefined: Self = StObject.set(x, "paperAnchorTop", js.undefined)
+    inline def setPaperAnchorTopUndefined: Self = StObject.set(x, "paperAnchorTop", js.undefined)
     
-    @scala.inline
-    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait `4` extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply(newValue: default | srgb): `4` = {
+  inline def apply(newValue: default | srgb): `4` = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`4`]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+  extension [Self <: `4`](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: default | srgb): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: default | srgb): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: default | srgb): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: default | srgb): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

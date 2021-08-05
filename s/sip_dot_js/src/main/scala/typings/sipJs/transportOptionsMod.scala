@@ -39,41 +39,30 @@ object transportOptionsMod {
   }
   object TransportOptions {
     
-    @scala.inline
-    def apply(server: String): TransportOptions = {
+    inline def apply(server: String): TransportOptions = {
       val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransportOptions]
     }
     
-    @scala.inline
-    implicit class TransportOptionsMutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransportOptions](x: Self) {
       
-      @scala.inline
-      def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+      inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
       
-      @scala.inline
-      def setKeepAliveDebounce(value: Double): Self = StObject.set(x, "keepAliveDebounce", value.asInstanceOf[js.Any])
+      inline def setKeepAliveDebounce(value: Double): Self = StObject.set(x, "keepAliveDebounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveDebounceUndefined: Self = StObject.set(x, "keepAliveDebounce", js.undefined)
+      inline def setKeepAliveDebounceUndefined: Self = StObject.set(x, "keepAliveDebounce", js.undefined)
       
-      @scala.inline
-      def setKeepAliveInterval(value: Double): Self = StObject.set(x, "keepAliveInterval", value.asInstanceOf[js.Any])
+      inline def setKeepAliveInterval(value: Double): Self = StObject.set(x, "keepAliveInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveIntervalUndefined: Self = StObject.set(x, "keepAliveInterval", js.undefined)
+      inline def setKeepAliveIntervalUndefined: Self = StObject.set(x, "keepAliveInterval", js.undefined)
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceSip(value: Boolean): Self = StObject.set(x, "traceSip", value.asInstanceOf[js.Any])
+      inline def setTraceSip(value: Boolean): Self = StObject.set(x, "traceSip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceSipUndefined: Self = StObject.set(x, "traceSip", js.undefined)
+      inline def setTraceSipUndefined: Self = StObject.set(x, "traceSip", js.undefined)
     }
   }
 }

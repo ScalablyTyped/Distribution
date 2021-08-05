@@ -24,20 +24,16 @@ object anon {
   }
   object Cancel {
     
-    @scala.inline
-    def apply(Cancel: Boolean, Pres: Presentation): Cancel = {
+    inline def apply(Cancel: Boolean, Pres: Presentation): Cancel = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Pres = Pres.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cancel]
     }
     
-    @scala.inline
-    implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+    extension [Self <: Cancel](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
+      inline def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +45,16 @@ object anon {
   }
   object CancelProtViewWindow {
     
-    @scala.inline
-    def apply(Cancel: Boolean, ProtViewWindow: ProtectedViewWindow): CancelProtViewWindow = {
+    inline def apply(Cancel: Boolean, ProtViewWindow: ProtectedViewWindow): CancelProtViewWindow = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ProtViewWindow = ProtViewWindow.asInstanceOf[js.Any])
       __obj.asInstanceOf[CancelProtViewWindow]
     }
     
-    @scala.inline
-    implicit class CancelProtViewWindowMutableBuilder[Self <: CancelProtViewWindow] (val x: Self) extends AnyVal {
+    extension [Self <: CancelProtViewWindow](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ProtViewWindow", value.asInstanceOf[js.Any])
+      inline def setProtViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ProtViewWindow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,20 +66,16 @@ object anon {
   }
   object NEffect {
     
-    @scala.inline
-    def apply(Wn: SlideShowWindow, nEffect: Effect): NEffect = {
+    inline def apply(Wn: SlideShowWindow, nEffect: Effect): NEffect = {
       val __obj = js.Dynamic.literal(Wn = Wn.asInstanceOf[js.Any], nEffect = nEffect.asInstanceOf[js.Any])
       __obj.asInstanceOf[NEffect]
     }
     
-    @scala.inline
-    implicit class NEffectMutableBuilder[Self <: NEffect] (val x: Self) extends AnyVal {
+    extension [Self <: NEffect](x: Self) {
       
-      @scala.inline
-      def setNEffect(value: Effect): Self = StObject.set(x, "nEffect", value.asInstanceOf[js.Any])
+      inline def setNEffect(value: Effect): Self = StObject.set(x, "nEffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWn(value: SlideShowWindow): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
+      inline def setWn(value: SlideShowWindow): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,17 +85,14 @@ object anon {
   }
   object Pres {
     
-    @scala.inline
-    def apply(Pres: Presentation): Pres = {
+    inline def apply(Pres: Presentation): Pres = {
       val __obj = js.Dynamic.literal(Pres = Pres.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pres]
     }
     
-    @scala.inline
-    implicit class PresMutableBuilder[Self <: Pres] (val x: Self) extends AnyVal {
+    extension [Self <: Pres](x: Self) {
       
-      @scala.inline
-      def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
+      inline def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,20 +104,16 @@ object anon {
   }
   object PresWn {
     
-    @scala.inline
-    def apply(Pres: Presentation, Wn: DocumentWindow): PresWn = {
+    inline def apply(Pres: Presentation, Wn: DocumentWindow): PresWn = {
       val __obj = js.Dynamic.literal(Pres = Pres.asInstanceOf[js.Any], Wn = Wn.asInstanceOf[js.Any])
       __obj.asInstanceOf[PresWn]
     }
     
-    @scala.inline
-    implicit class PresWnMutableBuilder[Self <: PresWn] (val x: Self) extends AnyVal {
+    extension [Self <: PresWn](x: Self) {
       
-      @scala.inline
-      def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
+      inline def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWn(value: DocumentWindow): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
+      inline def setWn(value: DocumentWindow): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,17 +123,14 @@ object anon {
   }
   object ProtViewWindow {
     
-    @scala.inline
-    def apply(ProtViewWindow: ProtectedViewWindow): ProtViewWindow = {
+    inline def apply(ProtViewWindow: ProtectedViewWindow): ProtViewWindow = {
       val __obj = js.Dynamic.literal(ProtViewWindow = ProtViewWindow.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProtViewWindow]
     }
     
-    @scala.inline
-    implicit class ProtViewWindowMutableBuilder[Self <: ProtViewWindow] (val x: Self) extends AnyVal {
+    extension [Self <: ProtViewWindow](x: Self) {
       
-      @scala.inline
-      def setProtViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ProtViewWindow", value.asInstanceOf[js.Any])
+      inline def setProtViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ProtViewWindow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,8 +144,7 @@ object anon {
   }
   object ProtectedViewCloseReason {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Cancel: Boolean,
       ProtViewWindow: ProtectedViewWindow,
       ProtectedViewCloseReason: PpProtectedViewCloseReason
@@ -176,17 +153,13 @@ object anon {
       __obj.asInstanceOf[ProtectedViewCloseReason]
     }
     
-    @scala.inline
-    implicit class ProtectedViewCloseReasonMutableBuilder[Self <: ProtectedViewCloseReason] (val x: Self) extends AnyVal {
+    extension [Self <: ProtectedViewCloseReason](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ProtViewWindow", value.asInstanceOf[js.Any])
+      inline def setProtViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ProtViewWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtectedViewCloseReason(value: PpProtectedViewCloseReason): Self = StObject.set(x, "ProtectedViewCloseReason", value.asInstanceOf[js.Any])
+      inline def setProtectedViewCloseReason(value: PpProtectedViewCloseReason): Self = StObject.set(x, "ProtectedViewCloseReason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,20 +171,16 @@ object anon {
   }
   object Sel {
     
-    @scala.inline
-    def apply(Cancel: Boolean, Sel: Selection): Sel = {
+    inline def apply(Cancel: Boolean, Sel: Selection): Sel = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Sel = Sel.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sel]
     }
     
-    @scala.inline
-    implicit class SelMutableBuilder[Self <: Sel] (val x: Self) extends AnyVal {
+    extension [Self <: Sel](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
+      inline def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,17 +190,14 @@ object anon {
   }
   object SelSelection {
     
-    @scala.inline
-    def apply(Sel: Selection): SelSelection = {
+    inline def apply(Sel: Selection): SelSelection = {
       val __obj = js.Dynamic.literal(Sel = Sel.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelSelection]
     }
     
-    @scala.inline
-    implicit class SelSelectionMutableBuilder[Self <: SelSelection] (val x: Self) extends AnyVal {
+    extension [Self <: SelSelection](x: Self) {
       
-      @scala.inline
-      def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
+      inline def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,17 +207,14 @@ object anon {
   }
   object Sld {
     
-    @scala.inline
-    def apply(Sld: Slide): Sld = {
+    inline def apply(Sld: Slide): Sld = {
       val __obj = js.Dynamic.literal(Sld = Sld.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sld]
     }
     
-    @scala.inline
-    implicit class SldMutableBuilder[Self <: Sld] (val x: Self) extends AnyVal {
+    extension [Self <: Sld](x: Self) {
       
-      @scala.inline
-      def setSld(value: Slide): Self = StObject.set(x, "Sld", value.asInstanceOf[js.Any])
+      inline def setSld(value: Slide): Self = StObject.set(x, "Sld", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,17 +224,14 @@ object anon {
   }
   object SldRange {
     
-    @scala.inline
-    def apply(SldRange: SlideRange): SldRange = {
+    inline def apply(SldRange: SlideRange): SldRange = {
       val __obj = js.Dynamic.literal(SldRange = SldRange.asInstanceOf[js.Any])
       __obj.asInstanceOf[SldRange]
     }
     
-    @scala.inline
-    implicit class SldRangeMutableBuilder[Self <: SldRange] (val x: Self) extends AnyVal {
+    extension [Self <: SldRange](x: Self) {
       
-      @scala.inline
-      def setSldRange(value: SlideRange): Self = StObject.set(x, "SldRange", value.asInstanceOf[js.Any])
+      inline def setSldRange(value: SlideRange): Self = StObject.set(x, "SldRange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,20 +243,16 @@ object anon {
   }
   object SyncEventType {
     
-    @scala.inline
-    def apply(Pres: Presentation, SyncEventType: MsoSyncEventType): SyncEventType = {
+    inline def apply(Pres: Presentation, SyncEventType: MsoSyncEventType): SyncEventType = {
       val __obj = js.Dynamic.literal(Pres = Pres.asInstanceOf[js.Any], SyncEventType = SyncEventType.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncEventType]
     }
     
-    @scala.inline
-    implicit class SyncEventTypeMutableBuilder[Self <: SyncEventType] (val x: Self) extends AnyVal {
+    extension [Self <: SyncEventType](x: Self) {
       
-      @scala.inline
-      def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
+      inline def setPres(value: Presentation): Self = StObject.set(x, "Pres", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncEventType(value: MsoSyncEventType): Self = StObject.set(x, "SyncEventType", value.asInstanceOf[js.Any])
+      inline def setSyncEventType(value: MsoSyncEventType): Self = StObject.set(x, "SyncEventType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -306,17 +262,14 @@ object anon {
   }
   object Wn {
     
-    @scala.inline
-    def apply(Wn: SlideShowWindow): Wn = {
+    inline def apply(Wn: SlideShowWindow): Wn = {
       val __obj = js.Dynamic.literal(Wn = Wn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Wn]
     }
     
-    @scala.inline
-    implicit class WnMutableBuilder[Self <: Wn] (val x: Self) extends AnyVal {
+    extension [Self <: Wn](x: Self) {
       
-      @scala.inline
-      def setWn(value: SlideShowWindow): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
+      inline def setWn(value: SlideShowWindow): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
     }
   }
 }

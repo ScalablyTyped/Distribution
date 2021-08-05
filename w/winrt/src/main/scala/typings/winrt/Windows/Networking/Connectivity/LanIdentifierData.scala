@@ -10,8 +10,7 @@ trait LanIdentifierData
      with ILanIdentifierData
 object LanIdentifierData {
   
-  @scala.inline
-  def apply(`type`: Double, value: IVectorView[Double]): LanIdentifierData = {
+  inline def apply(`type`: Double, value: IVectorView[Double]): LanIdentifierData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanIdentifierData]

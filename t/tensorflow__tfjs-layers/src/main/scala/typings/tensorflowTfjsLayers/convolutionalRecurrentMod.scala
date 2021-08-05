@@ -44,12 +44,10 @@ object convolutionalRecurrentMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_recurrent", "ConvLSTM2D.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -93,8 +91,7 @@ object convolutionalRecurrentMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_recurrent", "ConvLSTM2DCell.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined parent std.Omit<@tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/layers/recurrent.LSTMLayerArgs, 'units' | 'cell'> */
@@ -327,257 +324,174 @@ object convolutionalRecurrentMod {
   }
   object ConvLSTM2DArgs {
     
-    @scala.inline
-    def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvLSTM2DArgs = {
+    inline def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvLSTM2DArgs = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], kernelSize = kernelSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvLSTM2DArgs]
     }
     
-    @scala.inline
-    implicit class ConvLSTM2DArgsMutableBuilder[Self <: ConvLSTM2DArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConvLSTM2DArgs](x: Self) {
       
-      @scala.inline
-      def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+      inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
       
-      @scala.inline
-      def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
+      inline def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
+      inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      @scala.inline
-      def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
+      inline def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
+      inline def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
       
-      @scala.inline
-      def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
+      inline def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
+      inline def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
       
-      @scala.inline
-      def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
+      inline def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
+      inline def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
       
-      @scala.inline
-      def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+      inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      @scala.inline
-      def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
+      inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
       
-      @scala.inline
-      def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+      inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
       
-      @scala.inline
-      def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
+      inline def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
+      inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      @scala.inline
-      def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
       
-      @scala.inline
-      def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
+      inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoBackwards(value: Boolean): Self = StObject.set(x, "goBackwards", value.asInstanceOf[js.Any])
+      inline def setGoBackwards(value: Boolean): Self = StObject.set(x, "goBackwards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoBackwardsUndefined: Self = StObject.set(x, "goBackwards", js.undefined)
+      inline def setGoBackwardsUndefined: Self = StObject.set(x, "goBackwards", js.undefined)
       
-      @scala.inline
-      def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+      inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
       
-      @scala.inline
-      def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
+      inline def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
+      inline def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
       
-      @scala.inline
-      def setInputDim(value: Double): Self = StObject.set(x, "inputDim", value.asInstanceOf[js.Any])
+      inline def setInputDim(value: Double): Self = StObject.set(x, "inputDim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDimUndefined: Self = StObject.set(x, "inputDim", js.undefined)
+      inline def setInputDimUndefined: Self = StObject.set(x, "inputDim", js.undefined)
       
-      @scala.inline
-      def setInputLength(value: Double): Self = StObject.set(x, "inputLength", value.asInstanceOf[js.Any])
+      inline def setInputLength(value: Double): Self = StObject.set(x, "inputLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
+      inline def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
       
-      @scala.inline
-      def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
+      inline def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
+      inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      @scala.inline
-      def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
+      inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
+      inline def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
       
-      @scala.inline
-      def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
+      inline def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
+      inline def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
       
-      @scala.inline
-      def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
+      inline def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
+      inline def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
       
-      @scala.inline
-      def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
+      inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
+      inline def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
+      inline def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
       
-      @scala.inline
-      def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
+      inline def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
+      inline def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
       
-      @scala.inline
-      def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
+      inline def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
+      inline def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
       
-      @scala.inline
-      def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
+      inline def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
+      inline def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
       
-      @scala.inline
-      def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
+      inline def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
+      inline def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
       
-      @scala.inline
-      def setReturnSequences(value: Boolean): Self = StObject.set(x, "returnSequences", value.asInstanceOf[js.Any])
+      inline def setReturnSequences(value: Boolean): Self = StObject.set(x, "returnSequences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnSequencesUndefined: Self = StObject.set(x, "returnSequences", js.undefined)
+      inline def setReturnSequencesUndefined: Self = StObject.set(x, "returnSequences", js.undefined)
       
-      @scala.inline
-      def setReturnState(value: Boolean): Self = StObject.set(x, "returnState", value.asInstanceOf[js.Any])
+      inline def setReturnState(value: Boolean): Self = StObject.set(x, "returnState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnStateUndefined: Self = StObject.set(x, "returnState", js.undefined)
+      inline def setReturnStateUndefined: Self = StObject.set(x, "returnState", js.undefined)
       
-      @scala.inline
-      def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
+      inline def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
+      inline def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
       
-      @scala.inline
-      def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+      inline def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
+      inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      @scala.inline
-      def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
       
-      @scala.inline
-      def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
+      inline def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
+      inline def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
       
-      @scala.inline
-      def setUnitForgetBias(value: Boolean): Self = StObject.set(x, "unitForgetBias", value.asInstanceOf[js.Any])
+      inline def setUnitForgetBias(value: Boolean): Self = StObject.set(x, "unitForgetBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitForgetBiasUndefined: Self = StObject.set(x, "unitForgetBias", js.undefined)
+      inline def setUnitForgetBiasUndefined: Self = StObject.set(x, "unitForgetBias", js.undefined)
       
-      @scala.inline
-      def setUnroll(value: Boolean): Self = StObject.set(x, "unroll", value.asInstanceOf[js.Any])
+      inline def setUnroll(value: Boolean): Self = StObject.set(x, "unroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnrollUndefined: Self = StObject.set(x, "unroll", js.undefined)
+      inline def setUnrollUndefined: Self = StObject.set(x, "unroll", js.undefined)
       
-      @scala.inline
-      def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
+      inline def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
+      inline def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
       
-      @scala.inline
-      def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+      inline def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
+      inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      @scala.inline
-      def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
     }
   }
   
@@ -684,206 +598,140 @@ object convolutionalRecurrentMod {
   }
   object ConvLSTM2DCellArgs {
     
-    @scala.inline
-    def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvLSTM2DCellArgs = {
+    inline def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvLSTM2DCellArgs = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], kernelSize = kernelSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvLSTM2DCellArgs]
     }
     
-    @scala.inline
-    implicit class ConvLSTM2DCellArgsMutableBuilder[Self <: ConvLSTM2DCellArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConvLSTM2DCellArgs](x: Self) {
       
-      @scala.inline
-      def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+      inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
       
-      @scala.inline
-      def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
+      inline def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
+      inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      @scala.inline
-      def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
+      inline def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
+      inline def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
       
-      @scala.inline
-      def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
+      inline def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
+      inline def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
       
-      @scala.inline
-      def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
+      inline def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
+      inline def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
       
-      @scala.inline
-      def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+      inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
       
-      @scala.inline
-      def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
+      inline def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
+      inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      @scala.inline
-      def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
       
-      @scala.inline
-      def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
+      inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+      inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
       
-      @scala.inline
-      def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
+      inline def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
+      inline def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
       
-      @scala.inline
-      def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
+      inline def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
+      inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      @scala.inline
-      def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
+      inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
+      inline def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
       
-      @scala.inline
-      def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
+      inline def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
+      inline def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
       
-      @scala.inline
-      def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
+      inline def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
+      inline def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
       
-      @scala.inline
-      def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
+      inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
+      inline def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
+      inline def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
       
-      @scala.inline
-      def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
+      inline def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
+      inline def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
       
-      @scala.inline
-      def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
+      inline def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
+      inline def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
       
-      @scala.inline
-      def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
+      inline def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
+      inline def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
       
-      @scala.inline
-      def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
+      inline def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
+      inline def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
       
-      @scala.inline
-      def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+      inline def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
+      inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      @scala.inline
-      def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
       
-      @scala.inline
-      def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
+      inline def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
+      inline def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
       
-      @scala.inline
-      def setUnitForgetBias(value: Boolean): Self = StObject.set(x, "unitForgetBias", value.asInstanceOf[js.Any])
+      inline def setUnitForgetBias(value: Boolean): Self = StObject.set(x, "unitForgetBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitForgetBiasUndefined: Self = StObject.set(x, "unitForgetBias", js.undefined)
+      inline def setUnitForgetBiasUndefined: Self = StObject.set(x, "unitForgetBias", js.undefined)
       
-      @scala.inline
-      def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
+      inline def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
+      inline def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
       
-      @scala.inline
-      def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+      inline def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
+      inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      @scala.inline
-      def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
     }
   }
   
@@ -1037,188 +885,128 @@ object convolutionalRecurrentMod {
   }
   object ConvRNN2DCellArgs {
     
-    @scala.inline
-    def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvRNN2DCellArgs = {
+    inline def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvRNN2DCellArgs = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], kernelSize = kernelSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvRNN2DCellArgs]
     }
     
-    @scala.inline
-    implicit class ConvRNN2DCellArgsMutableBuilder[Self <: ConvRNN2DCellArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConvRNN2DCellArgs](x: Self) {
       
-      @scala.inline
-      def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+      inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
       
-      @scala.inline
-      def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
+      inline def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
+      inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      @scala.inline
-      def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
+      inline def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
+      inline def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
       
-      @scala.inline
-      def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
+      inline def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
+      inline def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
       
-      @scala.inline
-      def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
+      inline def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
+      inline def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
       
-      @scala.inline
-      def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+      inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
       
-      @scala.inline
-      def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
+      inline def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
+      inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      @scala.inline
-      def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
       
-      @scala.inline
-      def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
+      inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
+      inline def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
+      inline def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
       
-      @scala.inline
-      def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
+      inline def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
+      inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      @scala.inline
-      def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
+      inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
+      inline def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
       
-      @scala.inline
-      def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
+      inline def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
+      inline def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
       
-      @scala.inline
-      def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
+      inline def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
+      inline def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
       
-      @scala.inline
-      def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
+      inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
+      inline def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
+      inline def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
       
-      @scala.inline
-      def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
+      inline def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
+      inline def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
       
-      @scala.inline
-      def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
+      inline def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
+      inline def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
       
-      @scala.inline
-      def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
+      inline def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
+      inline def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
       
-      @scala.inline
-      def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+      inline def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
+      inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      @scala.inline
-      def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
       
-      @scala.inline
-      def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
+      inline def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
+      inline def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
       
-      @scala.inline
-      def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
+      inline def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
+      inline def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
       
-      @scala.inline
-      def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+      inline def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
+      inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      @scala.inline
-      def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
     }
   }
   
@@ -1304,131 +1092,90 @@ object convolutionalRecurrentMod {
   }
   object ConvRNN2DLayerArgs {
     
-    @scala.inline
-    def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvRNN2DLayerArgs = {
+    inline def apply(filters: Double, kernelSize: Double | js.Array[Double]): ConvRNN2DLayerArgs = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], kernelSize = kernelSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvRNN2DLayerArgs]
     }
     
-    @scala.inline
-    implicit class ConvRNN2DLayerArgsMutableBuilder[Self <: ConvRNN2DLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConvRNN2DLayerArgs](x: Self) {
       
-      @scala.inline
-      def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+      inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
       
-      @scala.inline
-      def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
+      inline def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
+      inline def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
       
-      @scala.inline
-      def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
+      inline def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
+      inline def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
       
-      @scala.inline
-      def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
+      inline def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
+      inline def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
       
-      @scala.inline
-      def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+      inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
       
-      @scala.inline
-      def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
+      inline def setDilationRate(value: Double | js.Array[Double] | (js.Tuple2[Double, Double])): Self = StObject.set(x, "dilationRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
+      inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      @scala.inline
-      def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
       
-      @scala.inline
-      def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
+      inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
+      inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
+      inline def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
       
-      @scala.inline
-      def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
+      inline def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
+      inline def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
       
-      @scala.inline
-      def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
+      inline def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
+      inline def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
       
-      @scala.inline
-      def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
+      inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
       
-      @scala.inline
-      def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
+      inline def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
+      inline def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
       
-      @scala.inline
-      def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
+      inline def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
+      inline def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
       
-      @scala.inline
-      def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
+      inline def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
+      inline def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
       
-      @scala.inline
-      def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
+      inline def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
+      inline def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
       
-      @scala.inline
-      def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+      inline def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
+      inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      @scala.inline
-      def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
       
-      @scala.inline
-      def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
+      inline def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
+      inline def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
     }
   }
 }

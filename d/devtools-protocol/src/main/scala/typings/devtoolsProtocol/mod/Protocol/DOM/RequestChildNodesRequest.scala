@@ -26,28 +26,21 @@ trait RequestChildNodesRequest extends StObject {
 }
 object RequestChildNodesRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): RequestChildNodesRequest = {
+  inline def apply(nodeId: NodeId): RequestChildNodesRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestChildNodesRequest]
   }
   
-  @scala.inline
-  implicit class RequestChildNodesRequestMutableBuilder[Self <: RequestChildNodesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RequestChildNodesRequest](x: Self) {
     
-    @scala.inline
-    def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
+    inline def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
+    inline def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
   }
 }

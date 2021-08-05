@@ -10,9 +10,7 @@ object operatorsConcatAllMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def concatAll[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[js.Any]
+  inline def concatAll[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def concatAll_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[js.Any]
+  inline def concatAll_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[js.Any]
 }

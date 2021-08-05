@@ -12,22 +12,17 @@ trait IGetSessionEntityTypeRequest extends StObject {
 }
 object IGetSessionEntityTypeRequest {
   
-  @scala.inline
-  def apply(): IGetSessionEntityTypeRequest = {
+  inline def apply(): IGetSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetSessionEntityTypeRequest]
   }
   
-  @scala.inline
-  implicit class IGetSessionEntityTypeRequestMutableBuilder[Self <: IGetSessionEntityTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IGetSessionEntityTypeRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

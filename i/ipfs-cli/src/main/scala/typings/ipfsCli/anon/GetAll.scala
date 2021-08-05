@@ -18,8 +18,7 @@ trait GetAll extends StObject {
 }
 object GetAll {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<imported_config.Get, imported_src.HttpOptions> */ js.Any,
     getAll: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<imported_config.GetAll, imported_src.HttpOptions> */ js.Any,
     profiles: Apply,
@@ -30,29 +29,23 @@ object GetAll {
     __obj.asInstanceOf[GetAll]
   }
   
-  @scala.inline
-  implicit class GetAllMutableBuilder[Self <: GetAll] (val x: Self) extends AnyVal {
+  extension [Self <: GetAll](x: Self) {
     
-    @scala.inline
-    def setGet(
+    inline def setGet(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<imported_config.Get, imported_src.HttpOptions> */ js.Any
     ): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAll(
+    inline def setGetAll(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<imported_config.GetAll, imported_src.HttpOptions> */ js.Any
     ): Self = StObject.set(x, "getAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfiles(value: Apply): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
+    inline def setProfiles(value: Apply): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(
+    inline def setReplace(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<imported_config.Replace, imported_src.HttpOptions> */ js.Any
     ): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(
+    inline def setSet(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<imported_config.Set, imported_src.HttpOptions> */ js.Any
     ): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
   }

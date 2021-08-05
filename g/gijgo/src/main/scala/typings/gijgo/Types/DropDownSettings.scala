@@ -33,85 +33,59 @@ trait DropDownSettings extends StObject {
 }
 object DropDownSettings {
   
-  @scala.inline
-  def apply(): DropDownSettings = {
+  inline def apply(): DropDownSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropDownSettings]
   }
   
-  @scala.inline
-  implicit class DropDownSettingsMutableBuilder[Self <: DropDownSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownSettings](x: Self) {
     
-    @scala.inline
-    def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setDataBound(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    inline def setDataBound(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setIcons(value: DropDownIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: DropDownIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsLibrary(value: String): Self = StObject.set(x, "iconsLibrary", value.asInstanceOf[js.Any])
+    inline def setIconsLibrary(value: String): Self = StObject.set(x, "iconsLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsLibraryUndefined: Self = StObject.set(x, "iconsLibrary", js.undefined)
+    inline def setIconsLibraryUndefined: Self = StObject.set(x, "iconsLibrary", js.undefined)
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: js.Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: js.Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setSelectedField(value: String): Self = StObject.set(x, "selectedField", value.asInstanceOf[js.Any])
+    inline def setSelectedField(value: String): Self = StObject.set(x, "selectedField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedFieldUndefined: Self = StObject.set(x, "selectedField", js.undefined)
+    inline def setSelectedFieldUndefined: Self = StObject.set(x, "selectedField", js.undefined)
     
-    @scala.inline
-    def setTextField(value: String): Self = StObject.set(x, "textField", value.asInstanceOf[js.Any])
+    inline def setTextField(value: String): Self = StObject.set(x, "textField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
+    inline def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
     
-    @scala.inline
-    def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
+    inline def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
+    inline def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
     
-    @scala.inline
-    def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+    inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
+    inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

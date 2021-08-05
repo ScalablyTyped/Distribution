@@ -13,22 +13,17 @@ trait PutTraceSegmentsResult extends StObject {
 }
 object PutTraceSegmentsResult {
   
-  @scala.inline
-  def apply(): PutTraceSegmentsResult = {
+  inline def apply(): PutTraceSegmentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutTraceSegmentsResult]
   }
   
-  @scala.inline
-  implicit class PutTraceSegmentsResultMutableBuilder[Self <: PutTraceSegmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: PutTraceSegmentsResult](x: Self) {
     
-    @scala.inline
-    def setUnprocessedTraceSegments(value: UnprocessedTraceSegmentList): Self = StObject.set(x, "UnprocessedTraceSegments", value.asInstanceOf[js.Any])
+    inline def setUnprocessedTraceSegments(value: UnprocessedTraceSegmentList): Self = StObject.set(x, "UnprocessedTraceSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedTraceSegmentsUndefined: Self = StObject.set(x, "UnprocessedTraceSegments", js.undefined)
+    inline def setUnprocessedTraceSegmentsUndefined: Self = StObject.set(x, "UnprocessedTraceSegments", js.undefined)
     
-    @scala.inline
-    def setUnprocessedTraceSegmentsVarargs(value: UnprocessedTraceSegment*): Self = StObject.set(x, "UnprocessedTraceSegments", js.Array(value :_*))
+    inline def setUnprocessedTraceSegmentsVarargs(value: UnprocessedTraceSegment*): Self = StObject.set(x, "UnprocessedTraceSegments", js.Array(value :_*))
   }
 }

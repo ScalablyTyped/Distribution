@@ -52,58 +52,42 @@ object typesDefaultPushNotificationMessageMod {
   }
   object DefaultPushNotificationMessage {
     
-    @scala.inline
-    def apply(): DefaultPushNotificationMessage = {
+    inline def apply(): DefaultPushNotificationMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultPushNotificationMessage]
     }
     
-    @scala.inline
-    implicit class DefaultPushNotificationMessageMutableBuilder[Self <: DefaultPushNotificationMessage] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultPushNotificationMessage](x: Self) {
       
-      @scala.inline
-      def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setData(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      @scala.inline
-      def setSilentPush(value: Boolean): Self = StObject.set(x, "SilentPush", value.asInstanceOf[js.Any])
+      inline def setSilentPush(value: Boolean): Self = StObject.set(x, "SilentPush", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentPushUndefined: Self = StObject.set(x, "SilentPush", js.undefined)
+      inline def setSilentPushUndefined: Self = StObject.set(x, "SilentPush", js.undefined)
       
-      @scala.inline
-      def setSubstitutions(
+      inline def setSubstitutions(
         value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
       ): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+      inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     }
   }
   
@@ -125,26 +109,20 @@ object typesDefaultPushNotificationMessageMod {
   }
   object UnmarshalledDefaultPushNotificationMessage {
     
-    @scala.inline
-    def apply(): UnmarshalledDefaultPushNotificationMessage = {
+    inline def apply(): UnmarshalledDefaultPushNotificationMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledDefaultPushNotificationMessage]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDefaultPushNotificationMessageMutableBuilder[Self <: UnmarshalledDefaultPushNotificationMessage] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDefaultPushNotificationMessage](x: Self) {
       
-      @scala.inline
-      def setData(value: StringDictionary[String]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      @scala.inline
-      def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
+      inline def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+      inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     }
   }
 }

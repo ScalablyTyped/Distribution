@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFileOpenMethod extends StObject
 object MFFileOpenMethod {
   
-  @scala.inline
-  def Edit: `3` = 3.asInstanceOf[`3`]
+  inline def Edit: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Open: `1` = 1.asInstanceOf[`1`]
+  inline def Open: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ShowInShell: `0` = 0.asInstanceOf[`0`]
+  inline def ShowInShell: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def View: `2` = 2.asInstanceOf[`2`]
+  inline def View: `2` = 2.asInstanceOf[`2`]
 }

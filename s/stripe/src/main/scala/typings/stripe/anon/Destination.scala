@@ -20,25 +20,19 @@ trait Destination extends StObject {
 }
 object Destination {
   
-  @scala.inline
-  def apply(destination: String): Destination = {
+  inline def apply(destination: String): Destination = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[Destination]
   }
   
-  @scala.inline
-  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+  extension [Self <: Destination](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountNull: Self = StObject.set(x, "amount", null)
+    inline def setAmountNull: Self = StObject.set(x, "amount", null)
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

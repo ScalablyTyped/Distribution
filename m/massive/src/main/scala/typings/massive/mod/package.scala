@@ -5,22 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(connection: java.lang.String): js.Promise[typings.massive.mod.Database] = typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.massive.mod.Database]]
-@scala.inline
-def apply(connection: java.lang.String, loaderConfig: scala.Unit, driverConfig: js.Object): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any], driverConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
-@scala.inline
-def apply(connection: java.lang.String, loaderConfig: typings.massive.mod.Loader): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
-@scala.inline
-def apply(connection: java.lang.String, loaderConfig: typings.massive.mod.Loader, driverConfig: js.Object): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any], driverConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
-@scala.inline
-def apply(connection: typings.massive.mod.ConnectionInfo): js.Promise[typings.massive.mod.Database] = typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.massive.mod.Database]]
-@scala.inline
-def apply(connection: typings.massive.mod.ConnectionInfo, loaderConfig: scala.Unit, driverConfig: js.Object): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any], driverConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
-@scala.inline
-def apply(connection: typings.massive.mod.ConnectionInfo, loaderConfig: typings.massive.mod.Loader): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
-@scala.inline
-def apply(
+inline def apply(connection: java.lang.String): js.Promise[typings.massive.mod.Database] = typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.massive.mod.Database]]
+inline def apply(connection: java.lang.String, loaderConfig: scala.Unit, driverConfig: js.Object): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any], driverConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
+inline def apply(connection: java.lang.String, loaderConfig: typings.massive.mod.Loader): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
+inline def apply(connection: java.lang.String, loaderConfig: typings.massive.mod.Loader, driverConfig: js.Object): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any], driverConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
+inline def apply(connection: typings.massive.mod.ConnectionInfo): js.Promise[typings.massive.mod.Database] = typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.massive.mod.Database]]
+inline def apply(connection: typings.massive.mod.ConnectionInfo, loaderConfig: scala.Unit, driverConfig: js.Object): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any], driverConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
+inline def apply(connection: typings.massive.mod.ConnectionInfo, loaderConfig: typings.massive.mod.Loader): js.Promise[typings.massive.mod.Database] = (typings.massive.mod.^.asInstanceOf[js.Dynamic].apply(connection.asInstanceOf[js.Any], loaderConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.massive.mod.Database]]
+inline def apply(
   connection: typings.massive.mod.ConnectionInfo,
   loaderConfig: typings.massive.mod.Loader,
   driverConfig: js.Object

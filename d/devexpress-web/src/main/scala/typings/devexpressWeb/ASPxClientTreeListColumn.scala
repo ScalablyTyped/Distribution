@@ -26,22 +26,17 @@ trait ASPxClientTreeListColumn extends StObject {
 }
 object ASPxClientTreeListColumn {
   
-  @scala.inline
-  def apply(fieldName: String, index: Double, name: String): ASPxClientTreeListColumn = {
+  inline def apply(fieldName: String, index: Double, name: String): ASPxClientTreeListColumn = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListColumn]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListColumnMutableBuilder[Self <: ASPxClientTreeListColumn] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListColumn](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

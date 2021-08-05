@@ -12,8 +12,7 @@ object listItemChildrenMod {
   
   object ListItemChildren {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -30,14 +29,12 @@ object listItemChildrenMod {
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.forceAddonWrap")
       @js.native
       def forceAddonWrap: js.Any = js.native
-      @scala.inline
-      def forceAddonWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAddonWrap")(x.asInstanceOf[js.Any])
+      inline def forceAddonWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAddonWrap")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.leftAddon")
       @js.native
@@ -46,23 +43,19 @@ object listItemChildrenMod {
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.leftAddonPosition")
       @js.native
       def leftAddonPosition: js.Any = js.native
-      @scala.inline
-      def leftAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonPosition")(x.asInstanceOf[js.Any])
+      inline def leftAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonPosition")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.leftAddonType")
       @js.native
       def leftAddonType: js.Any = js.native
-      @scala.inline
-      def leftAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonType")(x.asInstanceOf[js.Any])
+      inline def leftAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonType")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def leftAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddon")(x.asInstanceOf[js.Any])
+      inline def leftAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddon")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.primaryText")
       @js.native
       def primaryText: js.Any = js.native
-      @scala.inline
-      def primaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryText")(x.asInstanceOf[js.Any])
+      inline def primaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryText")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.rightAddon")
       @js.native
@@ -71,17 +64,14 @@ object listItemChildrenMod {
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.rightAddonPosition")
       @js.native
       def rightAddonPosition: js.Any = js.native
-      @scala.inline
-      def rightAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonPosition")(x.asInstanceOf[js.Any])
+      inline def rightAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonPosition")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.rightAddonType")
       @js.native
       def rightAddonType: js.Any = js.native
-      @scala.inline
-      def rightAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonType")(x.asInstanceOf[js.Any])
+      inline def rightAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonType")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def rightAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddon")(x.asInstanceOf[js.Any])
+      inline def rightAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddon")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.secondaryText")
       @js.native
@@ -90,23 +80,19 @@ object listItemChildrenMod {
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.secondaryTextClassName")
       @js.native
       def secondaryTextClassName: js.Any = js.native
-      @scala.inline
-      def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
+      inline def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
+      inline def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.textChildren")
       @js.native
       def textChildren: js.Any = js.native
-      @scala.inline
-      def textChildren_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textChildren")(x.asInstanceOf[js.Any])
+      inline def textChildren_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textChildren")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren.propTypes.textClassName")
       @js.native
       def textClassName: js.Any = js.native
-      @scala.inline
-      def textClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textClassName")(x.asInstanceOf[js.Any])
+      inline def textClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textClassName")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -208,92 +194,64 @@ object listItemChildrenMod {
   }
   object ListItemChildrenProps {
     
-    @scala.inline
-    def apply(): ListItemChildrenProps = {
+    inline def apply(): ListItemChildrenProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListItemChildrenProps]
     }
     
-    @scala.inline
-    implicit class ListItemChildrenPropsMutableBuilder[Self <: ListItemChildrenProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemChildrenProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setForceAddonWrap(value: Boolean): Self = StObject.set(x, "forceAddonWrap", value.asInstanceOf[js.Any])
+      inline def setForceAddonWrap(value: Boolean): Self = StObject.set(x, "forceAddonWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceAddonWrapUndefined: Self = StObject.set(x, "forceAddonWrap", js.undefined)
+      inline def setForceAddonWrapUndefined: Self = StObject.set(x, "forceAddonWrap", js.undefined)
       
-      @scala.inline
-      def setLeftAddon(value: ReactNode): Self = StObject.set(x, "leftAddon", value.asInstanceOf[js.Any])
+      inline def setLeftAddon(value: ReactNode): Self = StObject.set(x, "leftAddon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftAddonPosition(value: ListItemAddonPosition): Self = StObject.set(x, "leftAddonPosition", value.asInstanceOf[js.Any])
+      inline def setLeftAddonPosition(value: ListItemAddonPosition): Self = StObject.set(x, "leftAddonPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftAddonPositionUndefined: Self = StObject.set(x, "leftAddonPosition", js.undefined)
+      inline def setLeftAddonPositionUndefined: Self = StObject.set(x, "leftAddonPosition", js.undefined)
       
-      @scala.inline
-      def setLeftAddonType(value: ListItemAddonType): Self = StObject.set(x, "leftAddonType", value.asInstanceOf[js.Any])
+      inline def setLeftAddonType(value: ListItemAddonType): Self = StObject.set(x, "leftAddonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftAddonTypeUndefined: Self = StObject.set(x, "leftAddonType", js.undefined)
+      inline def setLeftAddonTypeUndefined: Self = StObject.set(x, "leftAddonType", js.undefined)
       
-      @scala.inline
-      def setLeftAddonUndefined: Self = StObject.set(x, "leftAddon", js.undefined)
+      inline def setLeftAddonUndefined: Self = StObject.set(x, "leftAddon", js.undefined)
       
-      @scala.inline
-      def setPrimaryText(value: ReactNode): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
+      inline def setPrimaryText(value: ReactNode): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
+      inline def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
       
-      @scala.inline
-      def setRightAddon(value: ReactNode): Self = StObject.set(x, "rightAddon", value.asInstanceOf[js.Any])
+      inline def setRightAddon(value: ReactNode): Self = StObject.set(x, "rightAddon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightAddonPosition(value: ListItemAddonPosition): Self = StObject.set(x, "rightAddonPosition", value.asInstanceOf[js.Any])
+      inline def setRightAddonPosition(value: ListItemAddonPosition): Self = StObject.set(x, "rightAddonPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightAddonPositionUndefined: Self = StObject.set(x, "rightAddonPosition", js.undefined)
+      inline def setRightAddonPositionUndefined: Self = StObject.set(x, "rightAddonPosition", js.undefined)
       
-      @scala.inline
-      def setRightAddonType(value: ListItemAddonType): Self = StObject.set(x, "rightAddonType", value.asInstanceOf[js.Any])
+      inline def setRightAddonType(value: ListItemAddonType): Self = StObject.set(x, "rightAddonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightAddonTypeUndefined: Self = StObject.set(x, "rightAddonType", js.undefined)
+      inline def setRightAddonTypeUndefined: Self = StObject.set(x, "rightAddonType", js.undefined)
       
-      @scala.inline
-      def setRightAddonUndefined: Self = StObject.set(x, "rightAddon", js.undefined)
+      inline def setRightAddonUndefined: Self = StObject.set(x, "rightAddon", js.undefined)
       
-      @scala.inline
-      def setSecondaryText(value: ReactNode): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
+      inline def setSecondaryText(value: ReactNode): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryTextClassName(value: String): Self = StObject.set(x, "secondaryTextClassName", value.asInstanceOf[js.Any])
+      inline def setSecondaryTextClassName(value: String): Self = StObject.set(x, "secondaryTextClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryTextClassNameUndefined: Self = StObject.set(x, "secondaryTextClassName", js.undefined)
+      inline def setSecondaryTextClassNameUndefined: Self = StObject.set(x, "secondaryTextClassName", js.undefined)
       
-      @scala.inline
-      def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
+      inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
       
-      @scala.inline
-      def setTextChildren(value: Boolean): Self = StObject.set(x, "textChildren", value.asInstanceOf[js.Any])
+      inline def setTextChildren(value: Boolean): Self = StObject.set(x, "textChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextChildrenUndefined: Self = StObject.set(x, "textChildren", js.undefined)
+      inline def setTextChildrenUndefined: Self = StObject.set(x, "textChildren", js.undefined)
       
-      @scala.inline
-      def setTextClassName(value: String): Self = StObject.set(x, "textClassName", value.asInstanceOf[js.Any])
+      inline def setTextClassName(value: String): Self = StObject.set(x, "textClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextClassNameUndefined: Self = StObject.set(x, "textClassName", js.undefined)
+      inline def setTextClassNameUndefined: Self = StObject.set(x, "textClassName", js.undefined)
     }
   }
 }

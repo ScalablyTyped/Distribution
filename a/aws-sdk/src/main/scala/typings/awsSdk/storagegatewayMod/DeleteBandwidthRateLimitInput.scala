@@ -15,19 +15,15 @@ trait DeleteBandwidthRateLimitInput extends StObject {
 }
 object DeleteBandwidthRateLimitInput {
   
-  @scala.inline
-  def apply(BandwidthType: BandwidthType, GatewayARN: GatewayARN): DeleteBandwidthRateLimitInput = {
+  inline def apply(BandwidthType: BandwidthType, GatewayARN: GatewayARN): DeleteBandwidthRateLimitInput = {
     val __obj = js.Dynamic.literal(BandwidthType = BandwidthType.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBandwidthRateLimitInput]
   }
   
-  @scala.inline
-  implicit class DeleteBandwidthRateLimitInputMutableBuilder[Self <: DeleteBandwidthRateLimitInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBandwidthRateLimitInput](x: Self) {
     
-    @scala.inline
-    def setBandwidthType(value: BandwidthType): Self = StObject.set(x, "BandwidthType", value.asInstanceOf[js.Any])
+    inline def setBandwidthType(value: BandwidthType): Self = StObject.set(x, "BandwidthType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

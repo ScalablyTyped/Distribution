@@ -74,8 +74,7 @@ trait ASN1Util extends StObject {
 }
 object ASN1Util {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bigIntToMinTwosComplementsHex: BigInteger => String,
     integerToByteHex: Double => String,
     jsonToASN1HEX: ASNObject => String,
@@ -85,19 +84,14 @@ object ASN1Util {
     __obj.asInstanceOf[ASN1Util]
   }
   
-  @scala.inline
-  implicit class ASN1UtilMutableBuilder[Self <: ASN1Util] (val x: Self) extends AnyVal {
+  extension [Self <: ASN1Util](x: Self) {
     
-    @scala.inline
-    def setBigIntToMinTwosComplementsHex(value: BigInteger => String): Self = StObject.set(x, "bigIntToMinTwosComplementsHex", js.Any.fromFunction1(value))
+    inline def setBigIntToMinTwosComplementsHex(value: BigInteger => String): Self = StObject.set(x, "bigIntToMinTwosComplementsHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntegerToByteHex(value: Double => String): Self = StObject.set(x, "integerToByteHex", js.Any.fromFunction1(value))
+    inline def setIntegerToByteHex(value: Double => String): Self = StObject.set(x, "integerToByteHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJsonToASN1HEX(value: ASNObject => String): Self = StObject.set(x, "jsonToASN1HEX", js.Any.fromFunction1(value))
+    inline def setJsonToASN1HEX(value: ASNObject => String): Self = StObject.set(x, "jsonToASN1HEX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewObject(value: ASNObject => ASN1Object): Self = StObject.set(x, "newObject", js.Any.fromFunction1(value))
+    inline def setNewObject(value: ASNObject => ASN1Object): Self = StObject.set(x, "newObject", js.Any.fromFunction1(value))
   }
 }

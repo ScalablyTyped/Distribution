@@ -13,16 +13,13 @@ trait DescribeApplicationRequest extends StObject {
 }
 object DescribeApplicationRequest {
   
-  @scala.inline
-  def apply(ResourceGroupName: ResourceGroupName): DescribeApplicationRequest = {
+  inline def apply(ResourceGroupName: ResourceGroupName): DescribeApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeApplicationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeApplicationRequestMutableBuilder[Self <: DescribeApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

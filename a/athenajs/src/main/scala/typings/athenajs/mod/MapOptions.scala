@@ -25,46 +25,33 @@ trait MapOptions extends StObject {
 }
 object MapOptions {
   
-  @scala.inline
-  def apply(height: Double, src: String, tileHeight: Double, tileWidth: Double, width: Double): MapOptions = {
+  inline def apply(height: Double, src: String, tileHeight: Double, tileWidth: Double, width: Double): MapOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], tileHeight = tileHeight.asInstanceOf[js.Any], tileWidth = tileWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
   
-  @scala.inline
-  implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapOptions](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+    inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+    inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportH(value: Double): Self = StObject.set(x, "viewportH", value.asInstanceOf[js.Any])
+    inline def setViewportH(value: Double): Self = StObject.set(x, "viewportH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportHUndefined: Self = StObject.set(x, "viewportH", js.undefined)
+    inline def setViewportHUndefined: Self = StObject.set(x, "viewportH", js.undefined)
     
-    @scala.inline
-    def setViewportW(value: Double): Self = StObject.set(x, "viewportW", value.asInstanceOf[js.Any])
+    inline def setViewportW(value: Double): Self = StObject.set(x, "viewportW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportWUndefined: Self = StObject.set(x, "viewportW", js.undefined)
+    inline def setViewportWUndefined: Self = StObject.set(x, "viewportW", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

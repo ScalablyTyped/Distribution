@@ -17,23 +17,18 @@ trait INotificationArgs extends StObject {
 }
 object INotificationArgs {
   
-  @scala.inline
-  def apply(header: String, message: String, `type`: NotificationType): INotificationArgs = {
+  inline def apply(header: String, message: String, `type`: NotificationType): INotificationArgs = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotificationArgs]
   }
   
-  @scala.inline
-  implicit class INotificationArgsMutableBuilder[Self <: INotificationArgs] (val x: Self) extends AnyVal {
+  extension [Self <: INotificationArgs](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

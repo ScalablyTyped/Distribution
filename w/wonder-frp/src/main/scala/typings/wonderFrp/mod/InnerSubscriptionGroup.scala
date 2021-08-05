@@ -15,6 +15,5 @@ object InnerSubscriptionGroup {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup]
+  inline def create(): typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup]
 }

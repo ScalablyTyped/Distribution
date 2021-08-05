@@ -15,31 +15,23 @@ trait PartialInputState extends StObject {
 }
 object PartialInputState {
   
-  @scala.inline
-  def apply(): PartialInputState = {
+  inline def apply(): PartialInputState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialInputState]
   }
   
-  @scala.inline
-  implicit class PartialInputStateMutableBuilder[Self <: PartialInputState] (val x: Self) extends AnyVal {
+  extension [Self <: PartialInputState](x: Self) {
     
-    @scala.inline
-    def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+    inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
-    @scala.inline
-    def setPrevValue(value: js.Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
+    inline def setPrevValue(value: js.Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevValueUndefined: Self = StObject.set(x, "prevValue", js.undefined)
+    inline def setPrevValueUndefined: Self = StObject.set(x, "prevValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

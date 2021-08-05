@@ -18,25 +18,19 @@ trait AnalyticsProperty extends StObject {
 }
 object AnalyticsProperty {
   
-  @scala.inline
-  def apply(): AnalyticsProperty = {
+  inline def apply(): AnalyticsProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsProperty]
   }
   
-  @scala.inline
-  implicit class AnalyticsPropertyMutableBuilder[Self <: AnalyticsProperty] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsProperty](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

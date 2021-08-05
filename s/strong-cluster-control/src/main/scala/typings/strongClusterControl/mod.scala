@@ -32,17 +32,14 @@ object mod extends Shortcut {
     }
     object CMD {
       
-      @scala.inline
-      def apply(): CMD = {
+      inline def apply(): CMD = {
         val __obj = js.Dynamic.literal(SHUTDOWN = "CLUSTER_CONTROL_shutdown")
         __obj.asInstanceOf[CMD]
       }
       
-      @scala.inline
-      implicit class CMDMutableBuilder[Self <: CMD] (val x: Self) extends AnyVal {
+      extension [Self <: CMD](x: Self) {
         
-        @scala.inline
-        def setSHUTDOWN(value: CLUSTER_CONTROL_shutdown): Self = StObject.set(x, "SHUTDOWN", value.asInstanceOf[js.Any])
+        inline def setSHUTDOWN(value: CLUSTER_CONTROL_shutdown): Self = StObject.set(x, "SHUTDOWN", value.asInstanceOf[js.Any])
       }
     }
     
@@ -56,26 +53,20 @@ object mod extends Shortcut {
     }
     object ClusterMaster {
       
-      @scala.inline
-      def apply(pid: Double, startTime: Double): ClusterMaster = {
+      inline def apply(pid: Double, startTime: Double): ClusterMaster = {
         val __obj = js.Dynamic.literal(pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClusterMaster]
       }
       
-      @scala.inline
-      implicit class ClusterMasterMutableBuilder[Self <: ClusterMaster] (val x: Self) extends AnyVal {
+      extension [Self <: ClusterMaster](x: Self) {
         
-        @scala.inline
-        def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+        inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetSize(value: Double): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
+        inline def setSetSize(value: Double): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
+        inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
         
-        @scala.inline
-        def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+        inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       }
     }
     
@@ -87,23 +78,18 @@ object mod extends Shortcut {
     }
     object ClusterStatus {
       
-      @scala.inline
-      def apply(master: ClusterMaster, workers: js.Array[ClusterWorker]): ClusterStatus = {
+      inline def apply(master: ClusterMaster, workers: js.Array[ClusterWorker]): ClusterStatus = {
         val __obj = js.Dynamic.literal(master = master.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClusterStatus]
       }
       
-      @scala.inline
-      implicit class ClusterStatusMutableBuilder[Self <: ClusterStatus] (val x: Self) extends AnyVal {
+      extension [Self <: ClusterStatus](x: Self) {
         
-        @scala.inline
-        def setMaster(value: ClusterMaster): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+        inline def setMaster(value: ClusterMaster): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkers(value: js.Array[ClusterWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+        inline def setWorkers(value: js.Array[ClusterWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkersVarargs(value: ClusterWorker*): Self = StObject.set(x, "workers", js.Array(value :_*))
+        inline def setWorkersVarargs(value: ClusterWorker*): Self = StObject.set(x, "workers", js.Array(value :_*))
       }
     }
     
@@ -115,17 +101,14 @@ object mod extends Shortcut {
     }
     object ClusterWorker {
       
-      @scala.inline
-      def apply(id: Double, pid: Double, startTime: Double): ClusterWorker = {
+      inline def apply(id: Double, pid: Double, startTime: Double): ClusterWorker = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClusterWorker]
       }
       
-      @scala.inline
-      implicit class ClusterWorkerMutableBuilder[Self <: ClusterWorker] (val x: Self) extends AnyVal {
+      extension [Self <: ClusterWorker](x: Self) {
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
     
@@ -227,44 +210,32 @@ object mod extends Shortcut {
     }
     object StartOptions {
       
-      @scala.inline
-      def apply(): StartOptions = {
+      inline def apply(): StartOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StartOptions]
       }
       
-      @scala.inline
-      implicit class StartOptionsMutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
+      extension [Self <: StartOptions](x: Self) {
         
-        @scala.inline
-        def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+        inline def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+        inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
         
-        @scala.inline
-        def setShutdownTimeout(value: Double): Self = StObject.set(x, "shutdownTimeout", value.asInstanceOf[js.Any])
+        inline def setShutdownTimeout(value: Double): Self = StObject.set(x, "shutdownTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShutdownTimeoutUndefined: Self = StObject.set(x, "shutdownTimeout", js.undefined)
+        inline def setShutdownTimeoutUndefined: Self = StObject.set(x, "shutdownTimeout", js.undefined)
         
-        @scala.inline
-        def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setTerminateTimeout(value: Double): Self = StObject.set(x, "terminateTimeout", value.asInstanceOf[js.Any])
+        inline def setTerminateTimeout(value: Double): Self = StObject.set(x, "terminateTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTerminateTimeoutUndefined: Self = StObject.set(x, "terminateTimeout", js.undefined)
+        inline def setTerminateTimeoutUndefined: Self = StObject.set(x, "terminateTimeout", js.undefined)
         
-        @scala.inline
-        def setThrottleDelay(value: Double): Self = StObject.set(x, "throttleDelay", value.asInstanceOf[js.Any])
+        inline def setThrottleDelay(value: Double): Self = StObject.set(x, "throttleDelay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrottleDelayUndefined: Self = StObject.set(x, "throttleDelay", js.undefined)
+        inline def setThrottleDelayUndefined: Self = StObject.set(x, "throttleDelay", js.undefined)
       }
     }
     

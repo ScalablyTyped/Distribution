@@ -18,22 +18,17 @@ trait GetFunctionEventInvokeConfigRequest extends StObject {
 }
 object GetFunctionEventInvokeConfigRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName): GetFunctionEventInvokeConfigRequest = {
+  inline def apply(FunctionName: FunctionName): GetFunctionEventInvokeConfigRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionEventInvokeConfigRequest]
   }
   
-  @scala.inline
-  implicit class GetFunctionEventInvokeConfigRequestMutableBuilder[Self <: GetFunctionEventInvokeConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionEventInvokeConfigRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
   }
 }

@@ -91,82 +91,57 @@ trait ClassBreaksRendererProperties
 }
 object ClassBreaksRendererProperties {
   
-  @scala.inline
-  def apply(): ClassBreaksRendererProperties = {
+  inline def apply(): ClassBreaksRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassBreaksRendererProperties]
   }
   
-  @scala.inline
-  implicit class ClassBreaksRendererPropertiesMutableBuilder[Self <: ClassBreaksRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClassBreaksRendererProperties](x: Self) {
     
-    @scala.inline
-    def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
+    inline def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundFillSymbolUndefined: Self = StObject.set(x, "backgroundFillSymbol", js.undefined)
+    inline def setBackgroundFillSymbolUndefined: Self = StObject.set(x, "backgroundFillSymbol", js.undefined)
     
-    @scala.inline
-    def setClassBreakInfos(value: js.Array[ClassBreakInfoProperties]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
+    inline def setClassBreakInfos(value: js.Array[ClassBreakInfoProperties]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassBreakInfosUndefined: Self = StObject.set(x, "classBreakInfos", js.undefined)
+    inline def setClassBreakInfosUndefined: Self = StObject.set(x, "classBreakInfos", js.undefined)
     
-    @scala.inline
-    def setClassBreakInfosVarargs(value: ClassBreakInfoProperties*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
+    inline def setClassBreakInfosVarargs(value: ClassBreakInfoProperties*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultLabel(value: String): Self = StObject.set(x, "defaultLabel", value.asInstanceOf[js.Any])
+    inline def setDefaultLabel(value: String): Self = StObject.set(x, "defaultLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLabelUndefined: Self = StObject.set(x, "defaultLabel", js.undefined)
+    inline def setDefaultLabelUndefined: Self = StObject.set(x, "defaultLabel", js.undefined)
     
-    @scala.inline
-    def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
+    inline def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
+    inline def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLegendOptions(value: ClassBreaksRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: ClassBreaksRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    @scala.inline
-    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
-    @scala.inline
-    def setNormalizationTotal(value: Double): Self = StObject.set(x, "normalizationTotal", value.asInstanceOf[js.Any])
+    inline def setNormalizationTotal(value: Double): Self = StObject.set(x, "normalizationTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationTotalUndefined: Self = StObject.set(x, "normalizationTotal", js.undefined)
+    inline def setNormalizationTotalUndefined: Self = StObject.set(x, "normalizationTotal", js.undefined)
     
-    @scala.inline
-    def setNormalizationType(value: field | log | `percent-of-total`): Self = StObject.set(x, "normalizationType", value.asInstanceOf[js.Any])
+    inline def setNormalizationType(value: field | log | `percent-of-total`): Self = StObject.set(x, "normalizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationTypeUndefined: Self = StObject.set(x, "normalizationType", js.undefined)
+    inline def setNormalizationTypeUndefined: Self = StObject.set(x, "normalizationType", js.undefined)
     
-    @scala.inline
-    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
-    @scala.inline
-    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

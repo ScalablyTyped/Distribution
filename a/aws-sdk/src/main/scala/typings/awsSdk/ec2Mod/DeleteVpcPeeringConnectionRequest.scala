@@ -18,22 +18,17 @@ trait DeleteVpcPeeringConnectionRequest extends StObject {
 }
 object DeleteVpcPeeringConnectionRequest {
   
-  @scala.inline
-  def apply(VpcPeeringConnectionId: VpcPeeringConnectionId): DeleteVpcPeeringConnectionRequest = {
+  inline def apply(VpcPeeringConnectionId: VpcPeeringConnectionId): DeleteVpcPeeringConnectionRequest = {
     val __obj = js.Dynamic.literal(VpcPeeringConnectionId = VpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcPeeringConnectionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVpcPeeringConnectionRequestMutableBuilder[Self <: DeleteVpcPeeringConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpcPeeringConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionId(value: VpcPeeringConnectionId): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectionId(value: VpcPeeringConnectionId): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
   }
 }

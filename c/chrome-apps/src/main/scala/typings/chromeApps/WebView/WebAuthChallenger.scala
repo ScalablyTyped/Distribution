@@ -13,19 +13,15 @@ trait WebAuthChallenger extends StObject {
 }
 object WebAuthChallenger {
   
-  @scala.inline
-  def apply(host: String, port: integer): WebAuthChallenger = {
+  inline def apply(host: String, port: integer): WebAuthChallenger = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAuthChallenger]
   }
   
-  @scala.inline
-  implicit class WebAuthChallengerMutableBuilder[Self <: WebAuthChallenger] (val x: Self) extends AnyVal {
+  extension [Self <: WebAuthChallenger](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

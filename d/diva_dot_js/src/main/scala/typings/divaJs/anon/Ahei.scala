@@ -24,8 +24,7 @@ trait Ahei extends StObject {
 }
 object Ahei {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a_hei: Double,
     a_wid: Double,
     max_h: Double,
@@ -39,31 +38,22 @@ object Ahei {
     __obj.asInstanceOf[Ahei]
   }
   
-  @scala.inline
-  implicit class AheiMutableBuilder[Self <: Ahei] (val x: Self) extends AnyVal {
+  extension [Self <: Ahei](x: Self) {
     
-    @scala.inline
-    def setA_hei(value: Double): Self = StObject.set(x, "a_hei", value.asInstanceOf[js.Any])
+    inline def setA_hei(value: Double): Self = StObject.set(x, "a_hei", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA_wid(value: Double): Self = StObject.set(x, "a_wid", value.asInstanceOf[js.Any])
+    inline def setA_wid(value: Double): Self = StObject.set(x, "a_wid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_h(value: Double): Self = StObject.set(x, "max_h", value.asInstanceOf[js.Any])
+    inline def setMax_h(value: Double): Self = StObject.set(x, "max_h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_ratio(value: Double): Self = StObject.set(x, "max_ratio", value.asInstanceOf[js.Any])
+    inline def setMax_ratio(value: Double): Self = StObject.set(x, "max_ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_w(value: Double): Self = StObject.set(x, "max_w", value.asInstanceOf[js.Any])
+    inline def setMax_w(value: Double): Self = StObject.set(x, "max_w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_ratio(value: Double): Self = StObject.set(x, "min_ratio", value.asInstanceOf[js.Any])
+    inline def setMin_ratio(value: Double): Self = StObject.set(x, "min_ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT_hei(value: Double): Self = StObject.set(x, "t_hei", value.asInstanceOf[js.Any])
+    inline def setT_hei(value: Double): Self = StObject.set(x, "t_hei", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT_wid(value: Double): Self = StObject.set(x, "t_wid", value.asInstanceOf[js.Any])
+    inline def setT_wid(value: Double): Self = StObject.set(x, "t_wid", value.asInstanceOf[js.Any])
   }
 }

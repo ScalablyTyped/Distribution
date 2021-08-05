@@ -18,25 +18,19 @@ trait StoppingCondition extends StObject {
 }
 object StoppingCondition {
   
-  @scala.inline
-  def apply(): StoppingCondition = {
+  inline def apply(): StoppingCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StoppingCondition]
   }
   
-  @scala.inline
-  implicit class StoppingConditionMutableBuilder[Self <: StoppingCondition] (val x: Self) extends AnyVal {
+  extension [Self <: StoppingCondition](x: Self) {
     
-    @scala.inline
-    def setMaxRuntimeInSeconds(value: MaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxRuntimeInSeconds(value: MaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRuntimeInSecondsUndefined: Self = StObject.set(x, "MaxRuntimeInSeconds", js.undefined)
+    inline def setMaxRuntimeInSecondsUndefined: Self = StObject.set(x, "MaxRuntimeInSeconds", js.undefined)
     
-    @scala.inline
-    def setMaxWaitTimeInSeconds(value: MaxWaitTimeInSeconds): Self = StObject.set(x, "MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxWaitTimeInSeconds(value: MaxWaitTimeInSeconds): Self = StObject.set(x, "MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWaitTimeInSecondsUndefined: Self = StObject.set(x, "MaxWaitTimeInSeconds", js.undefined)
+    inline def setMaxWaitTimeInSecondsUndefined: Self = StObject.set(x, "MaxWaitTimeInSeconds", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait S3SignedObject extends StObject {
 }
 object S3SignedObject {
   
-  @scala.inline
-  def apply(): S3SignedObject = {
+  inline def apply(): S3SignedObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3SignedObject]
   }
   
-  @scala.inline
-  implicit class S3SignedObjectMutableBuilder[Self <: S3SignedObject] (val x: Self) extends AnyVal {
+  extension [Self <: S3SignedObject](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setKey(value: key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

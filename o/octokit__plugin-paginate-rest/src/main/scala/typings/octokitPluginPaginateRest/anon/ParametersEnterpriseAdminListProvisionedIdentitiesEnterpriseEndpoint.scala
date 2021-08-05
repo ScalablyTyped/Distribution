@@ -15,8 +15,7 @@ trait ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint exten
 }
 object ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
     response: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`
   ): ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint = {
@@ -24,13 +23,10 @@ object ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

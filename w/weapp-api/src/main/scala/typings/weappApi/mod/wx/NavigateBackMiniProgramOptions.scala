@@ -13,16 +13,13 @@ trait NavigateBackMiniProgramOptions
 }
 object NavigateBackMiniProgramOptions {
   
-  @scala.inline
-  def apply(extraData: js.Object): NavigateBackMiniProgramOptions = {
+  inline def apply(extraData: js.Object): NavigateBackMiniProgramOptions = {
     val __obj = js.Dynamic.literal(extraData = extraData.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateBackMiniProgramOptions]
   }
   
-  @scala.inline
-  implicit class NavigateBackMiniProgramOptionsMutableBuilder[Self <: NavigateBackMiniProgramOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateBackMiniProgramOptions](x: Self) {
     
-    @scala.inline
-    def setExtraData(value: js.Object): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: js.Object): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
   }
 }

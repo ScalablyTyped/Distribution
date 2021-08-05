@@ -40,8 +40,7 @@ trait Source
 }
 object Source {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     effects: js.Array[RoomObjectEffect],
     energy: Double,
     energyCapacity: Double,
@@ -54,22 +53,16 @@ object Source {
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+    inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
+    inline def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id[Source]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[Source]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: Room): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: Room): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToRegeneration(value: Double): Self = StObject.set(x, "ticksToRegeneration", value.asInstanceOf[js.Any])
+    inline def setTicksToRegeneration(value: Double): Self = StObject.set(x, "ticksToRegeneration", value.asInstanceOf[js.Any])
   }
 }

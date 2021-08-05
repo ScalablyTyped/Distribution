@@ -34,8 +34,7 @@ trait XCipherContext
 }
 object XCipherContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertWithCipherContext: SeqEquiv[Double] => SafeArray[Double],
     finalizeCipherContextAndDispose: () => SafeArray[Double],
@@ -46,13 +45,10 @@ object XCipherContext {
     __obj.asInstanceOf[XCipherContext]
   }
   
-  @scala.inline
-  implicit class XCipherContextMutableBuilder[Self <: XCipherContext] (val x: Self) extends AnyVal {
+  extension [Self <: XCipherContext](x: Self) {
     
-    @scala.inline
-    def setConvertWithCipherContext(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "convertWithCipherContext", js.Any.fromFunction1(value))
+    inline def setConvertWithCipherContext(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "convertWithCipherContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinalizeCipherContextAndDispose(value: () => SafeArray[Double]): Self = StObject.set(x, "finalizeCipherContextAndDispose", js.Any.fromFunction0(value))
+    inline def setFinalizeCipherContextAndDispose(value: () => SafeArray[Double]): Self = StObject.set(x, "finalizeCipherContextAndDispose", js.Any.fromFunction0(value))
   }
 }

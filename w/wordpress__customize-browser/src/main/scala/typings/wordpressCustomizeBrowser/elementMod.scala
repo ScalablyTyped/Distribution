@@ -40,8 +40,7 @@ object elementMod {
     @JSImport("@wordpress/customize-browser/Element", "Element.synchronizer")
     @js.native
     def synchronizer: ElementSynchronizer = js.native
-    @scala.inline
-    def synchronizer_=(x: ElementSynchronizer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("synchronizer")(x.asInstanceOf[js.Any])
+    inline def synchronizer_=(x: ElementSynchronizer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("synchronizer")(x.asInstanceOf[js.Any])
   }
   
   trait ElementSynchronizer extends StObject {
@@ -56,8 +55,7 @@ object elementMod {
   }
   object ElementSynchronizer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checkbox: ElementSynchronizerMethod[Boolean],
       html: ElementSynchronizerMethod[String],
       radio: ElementSynchronizerMethod[Boolean],
@@ -68,20 +66,15 @@ object elementMod {
       __obj.asInstanceOf[ElementSynchronizer]
     }
     
-    @scala.inline
-    implicit class ElementSynchronizerMutableBuilder[Self <: ElementSynchronizer] (val x: Self) extends AnyVal {
+    extension [Self <: ElementSynchronizer](x: Self) {
       
-      @scala.inline
-      def setCheckbox(value: ElementSynchronizerMethod[Boolean]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+      inline def setCheckbox(value: ElementSynchronizerMethod[Boolean]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: ElementSynchronizerMethod[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: ElementSynchronizerMethod[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadio(value: ElementSynchronizerMethod[Boolean]): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+      inline def setRadio(value: ElementSynchronizerMethod[Boolean]): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: ElementSynchronizerMethod[String]): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: ElementSynchronizerMethod[String]): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   

@@ -12,19 +12,15 @@ trait LookupId extends StObject {
 }
 object LookupId {
   
-  @scala.inline
-  def apply(LookupId: Double, LookupValue: String): LookupId = {
+  inline def apply(LookupId: Double, LookupValue: String): LookupId = {
     val __obj = js.Dynamic.literal(LookupId = LookupId.asInstanceOf[js.Any], LookupValue = LookupValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupId]
   }
   
-  @scala.inline
-  implicit class LookupIdMutableBuilder[Self <: LookupId] (val x: Self) extends AnyVal {
+  extension [Self <: LookupId](x: Self) {
     
-    @scala.inline
-    def setLookupId(value: Double): Self = StObject.set(x, "LookupId", value.asInstanceOf[js.Any])
+    inline def setLookupId(value: Double): Self = StObject.set(x, "LookupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupValue(value: String): Self = StObject.set(x, "LookupValue", value.asInstanceOf[js.Any])
+    inline def setLookupValue(value: String): Self = StObject.set(x, "LookupValue", value.asInstanceOf[js.Any])
   }
 }

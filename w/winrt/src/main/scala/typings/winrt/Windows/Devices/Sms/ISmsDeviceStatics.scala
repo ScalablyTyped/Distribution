@@ -15,8 +15,7 @@ trait ISmsDeviceStatics extends StObject {
 }
 object ISmsDeviceStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromIdAsync: String => IAsyncOperation[SmsDevice],
     getDefaultAsync: () => IAsyncOperation[SmsDevice],
     getDeviceSelector: () => String
@@ -25,16 +24,12 @@ object ISmsDeviceStatics {
     __obj.asInstanceOf[ISmsDeviceStatics]
   }
   
-  @scala.inline
-  implicit class ISmsDeviceStaticsMutableBuilder[Self <: ISmsDeviceStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsDeviceStatics](x: Self) {
     
-    @scala.inline
-    def setFromIdAsync(value: String => IAsyncOperation[SmsDevice]): Self = StObject.set(x, "fromIdAsync", js.Any.fromFunction1(value))
+    inline def setFromIdAsync(value: String => IAsyncOperation[SmsDevice]): Self = StObject.set(x, "fromIdAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultAsync(value: () => IAsyncOperation[SmsDevice]): Self = StObject.set(x, "getDefaultAsync", js.Any.fromFunction0(value))
+    inline def setGetDefaultAsync(value: () => IAsyncOperation[SmsDevice]): Self = StObject.set(x, "getDefaultAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDeviceSelector(value: () => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction0(value))
+    inline def setGetDeviceSelector(value: () => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction0(value))
   }
 }

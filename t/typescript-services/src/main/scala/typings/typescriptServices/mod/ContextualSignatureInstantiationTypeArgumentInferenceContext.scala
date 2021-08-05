@@ -42,7 +42,7 @@ class ContextualSignatureInstantiationTypeArgumentInferenceContext protected ()
   /* CompleteClass */
   var context: typings.typescriptServices.TypeScript.PullTypeResolutionContext = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var contextualSignature: js.Any = js.native
   
   /* CompleteClass */
@@ -66,7 +66,7 @@ class ContextualSignatureInstantiationTypeArgumentInferenceContext protected ()
   /* CompleteClass */
   var resolver: typings.typescriptServices.TypeScript.PullTypeResolver = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var shouldFixContextualSignatureParameterTypes: js.Any = js.native
   
   /* CompleteClass */

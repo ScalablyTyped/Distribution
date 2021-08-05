@@ -22,37 +22,29 @@ object DoStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(source: typings.wonderFrp.coreStreamMod.Stream): typings.wonderFrp.streamDoStreamMod.DoStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
-  @scala.inline
-  def create(source: typings.wonderFrp.coreStreamMod.Stream, onNext: js.Function): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
-  @scala.inline
-  def create(source: typings.wonderFrp.coreStreamMod.Stream, onNext: js.Function, onError: js.Function): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
-  @scala.inline
-  def create(
+  inline def create(source: typings.wonderFrp.coreStreamMod.Stream): typings.wonderFrp.streamDoStreamMod.DoStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
+  inline def create(source: typings.wonderFrp.coreStreamMod.Stream, onNext: js.Function): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
+  inline def create(source: typings.wonderFrp.coreStreamMod.Stream, onNext: js.Function, onError: js.Function): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
+  inline def create(
     source: typings.wonderFrp.coreStreamMod.Stream,
     onNext: js.Function,
     onError: js.Function,
     onCompleted: js.Function
   ): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
-  @scala.inline
-  def create(
+  inline def create(
     source: typings.wonderFrp.coreStreamMod.Stream,
     onNext: js.Function,
     onError: Unit,
     onCompleted: js.Function
   ): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
-  @scala.inline
-  def create(source: typings.wonderFrp.coreStreamMod.Stream, onNext: Unit, onError: js.Function): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
-  @scala.inline
-  def create(
+  inline def create(source: typings.wonderFrp.coreStreamMod.Stream, onNext: Unit, onError: js.Function): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
+  inline def create(
     source: typings.wonderFrp.coreStreamMod.Stream,
     onNext: Unit,
     onError: js.Function,
     onCompleted: js.Function
   ): typings.wonderFrp.streamDoStreamMod.DoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamDoStreamMod.DoStream]
-  @scala.inline
-  def create(
+  inline def create(
     source: typings.wonderFrp.coreStreamMod.Stream,
     onNext: Unit,
     onError: Unit,

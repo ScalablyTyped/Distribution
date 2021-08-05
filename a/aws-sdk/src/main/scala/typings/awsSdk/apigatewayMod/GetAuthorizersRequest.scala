@@ -23,28 +23,21 @@ trait GetAuthorizersRequest extends StObject {
 }
 object GetAuthorizersRequest {
   
-  @scala.inline
-  def apply(restApiId: String): GetAuthorizersRequest = {
+  inline def apply(restApiId: String): GetAuthorizersRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAuthorizersRequest]
   }
   
-  @scala.inline
-  implicit class GetAuthorizersRequestMutableBuilder[Self <: GetAuthorizersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthorizersRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

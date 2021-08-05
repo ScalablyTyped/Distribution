@@ -78,86 +78,60 @@ trait ParameterDefinition
 }
 object ParameterDefinition {
   
-  @scala.inline
-  def apply(`type`: code, use: code): ParameterDefinition = {
+  inline def apply(`type`: code, use: code): ParameterDefinition = {
     val __obj = js.Dynamic.literal(use = use.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterDefinition]
   }
   
-  @scala.inline
-  implicit class ParameterDefinitionMutableBuilder[Self <: ParameterDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterDefinition](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setName(value: code): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: code): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProfile(value: Reference): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Reference): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse(value: code): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: code): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
+    inline def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
+    inline def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
-    @scala.inline
-    def set_max(value: Element): Self = StObject.set(x, "_max", value.asInstanceOf[js.Any])
+    inline def set_max(value: Element): Self = StObject.set(x, "_max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_maxUndefined: Self = StObject.set(x, "_max", js.undefined)
+    inline def set_maxUndefined: Self = StObject.set(x, "_max", js.undefined)
     
-    @scala.inline
-    def set_min(value: Element): Self = StObject.set(x, "_min", value.asInstanceOf[js.Any])
+    inline def set_min(value: Element): Self = StObject.set(x, "_min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_minUndefined: Self = StObject.set(x, "_min", js.undefined)
+    inline def set_minUndefined: Self = StObject.set(x, "_min", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
-    @scala.inline
-    def set_use(value: Element): Self = StObject.set(x, "_use", value.asInstanceOf[js.Any])
+    inline def set_use(value: Element): Self = StObject.set(x, "_use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_useUndefined: Self = StObject.set(x, "_use", js.undefined)
+    inline def set_useUndefined: Self = StObject.set(x, "_use", js.undefined)
   }
 }

@@ -18,26 +18,20 @@ object anon {
   }
   object Mask {
     
-    @scala.inline
-    def apply(mask: Double, path: String, sheet: String, sheet_size: Double): Mask = {
+    inline def apply(mask: Double, path: String, sheet: String, sheet_size: Double): Mask = {
       val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any], sheet_size = sheet_size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mask]
     }
     
-    @scala.inline
-    implicit class MaskMutableBuilder[Self <: Mask] (val x: Self) extends AnyVal {
+    extension [Self <: Mask](x: Self) {
       
-      @scala.inline
-      def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheet(value: String): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+      inline def setSheet(value: String): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheet_size(value: Double): Self = StObject.set(x, "sheet_size", value.asInstanceOf[js.Any])
+      inline def setSheet_size(value: Double): Self = StObject.set(x, "sheet_size", value.asInstanceOf[js.Any])
     }
   }
 }

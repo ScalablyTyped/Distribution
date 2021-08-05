@@ -20,49 +20,35 @@ trait SecurityVendorInformation extends StObject {
 }
 object SecurityVendorInformation {
   
-  @scala.inline
-  def apply(): SecurityVendorInformation = {
+  inline def apply(): SecurityVendorInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityVendorInformation]
   }
   
-  @scala.inline
-  implicit class SecurityVendorInformationMutableBuilder[Self <: SecurityVendorInformation] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityVendorInformation](x: Self) {
     
-    @scala.inline
-    def setProvider(value: NullableOption[String]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: NullableOption[String]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNull: Self = StObject.set(x, "provider", null)
+    inline def setProviderNull: Self = StObject.set(x, "provider", null)
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setProviderVersion(value: NullableOption[String]): Self = StObject.set(x, "providerVersion", value.asInstanceOf[js.Any])
+    inline def setProviderVersion(value: NullableOption[String]): Self = StObject.set(x, "providerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderVersionNull: Self = StObject.set(x, "providerVersion", null)
+    inline def setProviderVersionNull: Self = StObject.set(x, "providerVersion", null)
     
-    @scala.inline
-    def setProviderVersionUndefined: Self = StObject.set(x, "providerVersion", js.undefined)
+    inline def setProviderVersionUndefined: Self = StObject.set(x, "providerVersion", js.undefined)
     
-    @scala.inline
-    def setSubProvider(value: NullableOption[String]): Self = StObject.set(x, "subProvider", value.asInstanceOf[js.Any])
+    inline def setSubProvider(value: NullableOption[String]): Self = StObject.set(x, "subProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubProviderNull: Self = StObject.set(x, "subProvider", null)
+    inline def setSubProviderNull: Self = StObject.set(x, "subProvider", null)
     
-    @scala.inline
-    def setSubProviderUndefined: Self = StObject.set(x, "subProvider", js.undefined)
+    inline def setSubProviderUndefined: Self = StObject.set(x, "subProvider", js.undefined)
     
-    @scala.inline
-    def setVendor(value: NullableOption[String]): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: NullableOption[String]): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorNull: Self = StObject.set(x, "vendor", null)
+    inline def setVendorNull: Self = StObject.set(x, "vendor", null)
     
-    @scala.inline
-    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+    inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

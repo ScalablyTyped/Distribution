@@ -48,70 +48,49 @@ trait ConnectorConfiguration extends StObject {
 }
 object ConnectorConfiguration {
   
-  @scala.inline
-  def apply(): ConnectorConfiguration = {
+  inline def apply(): ConnectorConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorConfiguration]
   }
   
-  @scala.inline
-  implicit class ConnectorConfigurationMutableBuilder[Self <: ConnectorConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorConfiguration](x: Self) {
     
-    @scala.inline
-    def setCanUseAsDestination(value: Boolean): Self = StObject.set(x, "canUseAsDestination", value.asInstanceOf[js.Any])
+    inline def setCanUseAsDestination(value: Boolean): Self = StObject.set(x, "canUseAsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanUseAsDestinationUndefined: Self = StObject.set(x, "canUseAsDestination", js.undefined)
+    inline def setCanUseAsDestinationUndefined: Self = StObject.set(x, "canUseAsDestination", js.undefined)
     
-    @scala.inline
-    def setCanUseAsSource(value: Boolean): Self = StObject.set(x, "canUseAsSource", value.asInstanceOf[js.Any])
+    inline def setCanUseAsSource(value: Boolean): Self = StObject.set(x, "canUseAsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanUseAsSourceUndefined: Self = StObject.set(x, "canUseAsSource", js.undefined)
+    inline def setCanUseAsSourceUndefined: Self = StObject.set(x, "canUseAsSource", js.undefined)
     
-    @scala.inline
-    def setConnectorMetadata(value: ConnectorMetadata): Self = StObject.set(x, "connectorMetadata", value.asInstanceOf[js.Any])
+    inline def setConnectorMetadata(value: ConnectorMetadata): Self = StObject.set(x, "connectorMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorMetadataUndefined: Self = StObject.set(x, "connectorMetadata", js.undefined)
+    inline def setConnectorMetadataUndefined: Self = StObject.set(x, "connectorMetadata", js.undefined)
     
-    @scala.inline
-    def setIsPrivateLinkEnabled(value: Boolean): Self = StObject.set(x, "isPrivateLinkEnabled", value.asInstanceOf[js.Any])
+    inline def setIsPrivateLinkEnabled(value: Boolean): Self = StObject.set(x, "isPrivateLinkEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrivateLinkEnabledUndefined: Self = StObject.set(x, "isPrivateLinkEnabled", js.undefined)
+    inline def setIsPrivateLinkEnabledUndefined: Self = StObject.set(x, "isPrivateLinkEnabled", js.undefined)
     
-    @scala.inline
-    def setIsPrivateLinkEndpointUrlRequired(value: Boolean): Self = StObject.set(x, "isPrivateLinkEndpointUrlRequired", value.asInstanceOf[js.Any])
+    inline def setIsPrivateLinkEndpointUrlRequired(value: Boolean): Self = StObject.set(x, "isPrivateLinkEndpointUrlRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrivateLinkEndpointUrlRequiredUndefined: Self = StObject.set(x, "isPrivateLinkEndpointUrlRequired", js.undefined)
+    inline def setIsPrivateLinkEndpointUrlRequiredUndefined: Self = StObject.set(x, "isPrivateLinkEndpointUrlRequired", js.undefined)
     
-    @scala.inline
-    def setSupportedDestinationConnectors(value: ConnectorTypeList): Self = StObject.set(x, "supportedDestinationConnectors", value.asInstanceOf[js.Any])
+    inline def setSupportedDestinationConnectors(value: ConnectorTypeList): Self = StObject.set(x, "supportedDestinationConnectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedDestinationConnectorsUndefined: Self = StObject.set(x, "supportedDestinationConnectors", js.undefined)
+    inline def setSupportedDestinationConnectorsUndefined: Self = StObject.set(x, "supportedDestinationConnectors", js.undefined)
     
-    @scala.inline
-    def setSupportedDestinationConnectorsVarargs(value: ConnectorType*): Self = StObject.set(x, "supportedDestinationConnectors", js.Array(value :_*))
+    inline def setSupportedDestinationConnectorsVarargs(value: ConnectorType*): Self = StObject.set(x, "supportedDestinationConnectors", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedSchedulingFrequencies(value: SchedulingFrequencyTypeList): Self = StObject.set(x, "supportedSchedulingFrequencies", value.asInstanceOf[js.Any])
+    inline def setSupportedSchedulingFrequencies(value: SchedulingFrequencyTypeList): Self = StObject.set(x, "supportedSchedulingFrequencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedSchedulingFrequenciesUndefined: Self = StObject.set(x, "supportedSchedulingFrequencies", js.undefined)
+    inline def setSupportedSchedulingFrequenciesUndefined: Self = StObject.set(x, "supportedSchedulingFrequencies", js.undefined)
     
-    @scala.inline
-    def setSupportedSchedulingFrequenciesVarargs(value: ScheduleFrequencyType*): Self = StObject.set(x, "supportedSchedulingFrequencies", js.Array(value :_*))
+    inline def setSupportedSchedulingFrequenciesVarargs(value: ScheduleFrequencyType*): Self = StObject.set(x, "supportedSchedulingFrequencies", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedTriggerTypes(value: TriggerTypeList): Self = StObject.set(x, "supportedTriggerTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedTriggerTypes(value: TriggerTypeList): Self = StObject.set(x, "supportedTriggerTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTriggerTypesUndefined: Self = StObject.set(x, "supportedTriggerTypes", js.undefined)
+    inline def setSupportedTriggerTypesUndefined: Self = StObject.set(x, "supportedTriggerTypes", js.undefined)
     
-    @scala.inline
-    def setSupportedTriggerTypesVarargs(value: TriggerType*): Self = StObject.set(x, "supportedTriggerTypes", js.Array(value :_*))
+    inline def setSupportedTriggerTypesVarargs(value: TriggerType*): Self = StObject.set(x, "supportedTriggerTypes", js.Array(value :_*))
   }
 }

@@ -23,49 +23,35 @@ trait SymbolDictionary
 }
 object SymbolDictionary {
   
-  @scala.inline
-  def apply(): SymbolDictionary = {
+  inline def apply(): SymbolDictionary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SymbolDictionary]
   }
   
-  @scala.inline
-  implicit class SymbolDictionaryMutableBuilder[Self <: SymbolDictionary] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolDictionary](x: Self) {
     
-    @scala.inline
-    def setArc(value: js.Function): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: js.Function): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
+    inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
-    @scala.inline
-    def setCallout(value: js.Function): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+    inline def setCallout(value: js.Function): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
+    inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
-    @scala.inline
-    def setCircle(value: js.Function): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: js.Function): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    @scala.inline
-    def setDiamond(value: js.Function): Self = StObject.set(x, "diamond", value.asInstanceOf[js.Any])
+    inline def setDiamond(value: js.Function): Self = StObject.set(x, "diamond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiamondUndefined: Self = StObject.set(x, "diamond", js.undefined)
+    inline def setDiamondUndefined: Self = StObject.set(x, "diamond", js.undefined)
     
-    @scala.inline
-    def setSquare(value: js.Function): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+    inline def setSquare(value: js.Function): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+    inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
     
-    @scala.inline
-    def setTriangle(value: js.Function): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
+    inline def setTriangle(value: js.Function): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
+    inline def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
   }
 }

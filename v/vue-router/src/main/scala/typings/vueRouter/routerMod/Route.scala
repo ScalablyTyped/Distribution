@@ -26,8 +26,7 @@ trait Route extends StObject {
 }
 object Route {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fullPath: String,
     hash: String,
     matched: js.Array[RouteRecord],
@@ -39,49 +38,34 @@ object Route {
     __obj.asInstanceOf[Route]
   }
   
-  @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+  extension [Self <: Route](x: Self) {
     
-    @scala.inline
-    def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+    inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatched(value: js.Array[RouteRecord]): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
+    inline def setMatched(value: js.Array[RouteRecord]): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedVarargs(value: RouteRecord*): Self = StObject.set(x, "matched", js.Array(value :_*))
+    inline def setMatchedVarargs(value: RouteRecord*): Self = StObject.set(x, "matched", js.Array(value :_*))
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParams(value: Dictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Dictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Dictionary[String | (js.Array[String | Null])]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Dictionary[String | (js.Array[String | Null])]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectedFrom(value: String): Self = StObject.set(x, "redirectedFrom", value.asInstanceOf[js.Any])
+    inline def setRedirectedFrom(value: String): Self = StObject.set(x, "redirectedFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectedFromUndefined: Self = StObject.set(x, "redirectedFrom", js.undefined)
+    inline def setRedirectedFromUndefined: Self = StObject.set(x, "redirectedFrom", js.undefined)
   }
 }

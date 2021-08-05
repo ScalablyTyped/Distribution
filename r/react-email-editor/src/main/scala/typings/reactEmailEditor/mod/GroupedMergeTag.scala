@@ -14,22 +14,17 @@ trait GroupedMergeTag
 }
 object GroupedMergeTag {
   
-  @scala.inline
-  def apply(mergeTags: js.Array[SimpleMergeTag | GroupedMergeTag], name: String): GroupedMergeTag = {
+  inline def apply(mergeTags: js.Array[SimpleMergeTag | GroupedMergeTag], name: String): GroupedMergeTag = {
     val __obj = js.Dynamic.literal(mergeTags = mergeTags.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupedMergeTag]
   }
   
-  @scala.inline
-  implicit class GroupedMergeTagMutableBuilder[Self <: GroupedMergeTag] (val x: Self) extends AnyVal {
+  extension [Self <: GroupedMergeTag](x: Self) {
     
-    @scala.inline
-    def setMergeTags(value: js.Array[SimpleMergeTag | GroupedMergeTag]): Self = StObject.set(x, "mergeTags", value.asInstanceOf[js.Any])
+    inline def setMergeTags(value: js.Array[SimpleMergeTag | GroupedMergeTag]): Self = StObject.set(x, "mergeTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeTagsVarargs(value: (SimpleMergeTag | GroupedMergeTag)*): Self = StObject.set(x, "mergeTags", js.Array(value :_*))
+    inline def setMergeTagsVarargs(value: (SimpleMergeTag | GroupedMergeTag)*): Self = StObject.set(x, "mergeTags", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

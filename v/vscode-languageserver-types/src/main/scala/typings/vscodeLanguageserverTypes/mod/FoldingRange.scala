@@ -35,8 +35,7 @@ trait FoldingRange extends StObject {
 }
 object FoldingRange {
   
-  @scala.inline
-  def apply(endLine: Double, startLine: Double): FoldingRange = {
+  inline def apply(endLine: Double, startLine: Double): FoldingRange = {
     val __obj = js.Dynamic.literal(endLine = endLine.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldingRange]
   }
@@ -48,54 +47,36 @@ object FoldingRange {
   /**
     * Creates a new FoldingRange literal.
     */
-  @scala.inline
-  def create(startLine: Double, endLine: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
-  @scala.inline
-  def create(startLine: Double, endLine: Double, startCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
-  @scala.inline
-  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
-  @scala.inline
-  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
-  @scala.inline
-  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Unit, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
-  @scala.inline
-  def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
-  @scala.inline
-  def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Double, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
-  @scala.inline
-  def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Unit, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double, startCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Unit, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Double, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  inline def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Unit, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
   
   /**
     * Checks whether the given literal conforms to the [FoldingRange](#FoldingRange) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean]
   
-  @scala.inline
-  implicit class FoldingRangeMutableBuilder[Self <: FoldingRange] (val x: Self) extends AnyVal {
+  extension [Self <: FoldingRange](x: Self) {
     
-    @scala.inline
-    def setEndCharacter(value: Double): Self = StObject.set(x, "endCharacter", value.asInstanceOf[js.Any])
+    inline def setEndCharacter(value: Double): Self = StObject.set(x, "endCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCharacterUndefined: Self = StObject.set(x, "endCharacter", js.undefined)
+    inline def setEndCharacterUndefined: Self = StObject.set(x, "endCharacter", js.undefined)
     
-    @scala.inline
-    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setStartCharacter(value: Double): Self = StObject.set(x, "startCharacter", value.asInstanceOf[js.Any])
+    inline def setStartCharacter(value: Double): Self = StObject.set(x, "startCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCharacterUndefined: Self = StObject.set(x, "startCharacter", js.undefined)
+    inline def setStartCharacterUndefined: Self = StObject.set(x, "startCharacter", js.undefined)
     
-    @scala.inline
-    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
   }
 }

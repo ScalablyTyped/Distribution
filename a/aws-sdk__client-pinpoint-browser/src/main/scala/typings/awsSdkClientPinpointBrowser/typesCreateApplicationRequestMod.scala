@@ -15,20 +15,16 @@ object typesCreateApplicationRequestMod {
   }
   object CreateApplicationRequest {
     
-    @scala.inline
-    def apply(): CreateApplicationRequest = {
+    inline def apply(): CreateApplicationRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateApplicationRequest]
     }
     
-    @scala.inline
-    implicit class CreateApplicationRequestMutableBuilder[Self <: CreateApplicationRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CreateApplicationRequest](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     }
   }
   

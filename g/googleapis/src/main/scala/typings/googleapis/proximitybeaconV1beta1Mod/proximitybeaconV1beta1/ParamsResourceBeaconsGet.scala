@@ -36,31 +36,23 @@ trait ParamsResourceBeaconsGet
 }
 object ParamsResourceBeaconsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceBeaconsGet = {
+  inline def apply(): ParamsResourceBeaconsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBeaconsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBeaconsGetMutableBuilder[Self <: ParamsResourceBeaconsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBeaconsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
+    inline def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
+    inline def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

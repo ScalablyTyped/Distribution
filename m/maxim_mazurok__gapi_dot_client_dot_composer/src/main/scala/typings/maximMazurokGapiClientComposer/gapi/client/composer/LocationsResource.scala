@@ -14,8 +14,7 @@ trait LocationsResource extends StObject {
 }
 object LocationsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     environments: EnvironmentsResource,
     imageVersions: ImageVersionsResource,
     operations: OperationsResource
@@ -24,16 +23,12 @@ object LocationsResource {
     __obj.asInstanceOf[LocationsResource]
   }
   
-  @scala.inline
-  implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsResource](x: Self) {
     
-    @scala.inline
-    def setEnvironments(value: EnvironmentsResource): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+    inline def setEnvironments(value: EnvironmentsResource): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVersions(value: ImageVersionsResource): Self = StObject.set(x, "imageVersions", value.asInstanceOf[js.Any])
+    inline def setImageVersions(value: ImageVersionsResource): Self = StObject.set(x, "imageVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

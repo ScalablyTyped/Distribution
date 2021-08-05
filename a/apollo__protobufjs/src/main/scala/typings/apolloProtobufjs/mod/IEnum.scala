@@ -17,22 +17,17 @@ trait IEnum
 }
 object IEnum {
   
-  @scala.inline
-  def apply(values: StringDictionary[js.UndefOr[Double]]): IEnum = {
+  inline def apply(values: StringDictionary[js.UndefOr[Double]]): IEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnum]
   }
   
-  @scala.inline
-  implicit class IEnumMutableBuilder[Self <: IEnum] (val x: Self) extends AnyVal {
+  extension [Self <: IEnum](x: Self) {
     
-    @scala.inline
-    def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setValues(value: StringDictionary[js.UndefOr[Double]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StringDictionary[js.UndefOr[Double]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

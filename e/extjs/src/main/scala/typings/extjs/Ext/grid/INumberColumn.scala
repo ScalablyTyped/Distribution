@@ -13,19 +13,15 @@ trait INumberColumn
 }
 object INumberColumn {
   
-  @scala.inline
-  def apply(): INumberColumn = {
+  inline def apply(): INumberColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INumberColumn]
   }
   
-  @scala.inline
-  implicit class INumberColumnMutableBuilder[Self <: INumberColumn] (val x: Self) extends AnyVal {
+  extension [Self <: INumberColumn](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

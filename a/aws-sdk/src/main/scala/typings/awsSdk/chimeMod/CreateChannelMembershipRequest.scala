@@ -23,22 +23,17 @@ trait CreateChannelMembershipRequest extends StObject {
 }
 object CreateChannelMembershipRequest {
   
-  @scala.inline
-  def apply(ChannelArn: ChimeArn, MemberArn: ChimeArn, Type: ChannelMembershipType): CreateChannelMembershipRequest = {
+  inline def apply(ChannelArn: ChimeArn, MemberArn: ChimeArn, Type: ChannelMembershipType): CreateChannelMembershipRequest = {
     val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any], MemberArn = MemberArn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateChannelMembershipRequest]
   }
   
-  @scala.inline
-  implicit class CreateChannelMembershipRequestMutableBuilder[Self <: CreateChannelMembershipRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelMembershipRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberArn(value: ChimeArn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
+    inline def setMemberArn(value: ChimeArn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ChannelMembershipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChannelMembershipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

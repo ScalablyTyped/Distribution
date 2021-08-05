@@ -268,14 +268,10 @@ object distMod {
     def triad(): js.Array[TinyColor_] = js.native
   }
   
-  @scala.inline
-  def tinycolor(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")().asInstanceOf[TinyColor_]
-  @scala.inline
-  def tinycolor(color: Unit, opts: PartialTinyColorOptions): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
-  @scala.inline
-  def tinycolor(color: ColorInput): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
-  @scala.inline
-  def tinycolor(color: ColorInput, opts: PartialTinyColorOptions): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
+  inline def tinycolor(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")().asInstanceOf[TinyColor_]
+  inline def tinycolor(color: Unit, opts: PartialTinyColorOptions): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
+  inline def tinycolor(color: ColorInput): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
+  inline def tinycolor(color: ColorInput, opts: PartialTinyColorOptions): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ctrlTinycolor.ctrlTinycolorStrings.rgb
@@ -292,35 +288,25 @@ object distMod {
   trait ColorFormats extends StObject
   object ColorFormats {
     
-    @scala.inline
-    def hex: typings.ctrlTinycolor.ctrlTinycolorStrings.hex = "hex".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex]
+    inline def hex: typings.ctrlTinycolor.ctrlTinycolorStrings.hex = "hex".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex]
     
-    @scala.inline
-    def hex3: typings.ctrlTinycolor.ctrlTinycolorStrings.hex3 = "hex3".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex3]
+    inline def hex3: typings.ctrlTinycolor.ctrlTinycolorStrings.hex3 = "hex3".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex3]
     
-    @scala.inline
-    def hex4: typings.ctrlTinycolor.ctrlTinycolorStrings.hex4 = "hex4".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex4]
+    inline def hex4: typings.ctrlTinycolor.ctrlTinycolorStrings.hex4 = "hex4".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex4]
     
-    @scala.inline
-    def hex6: typings.ctrlTinycolor.ctrlTinycolorStrings.hex6 = "hex6".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex6]
+    inline def hex6: typings.ctrlTinycolor.ctrlTinycolorStrings.hex6 = "hex6".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex6]
     
-    @scala.inline
-    def hex8: typings.ctrlTinycolor.ctrlTinycolorStrings.hex8 = "hex8".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex8]
+    inline def hex8: typings.ctrlTinycolor.ctrlTinycolorStrings.hex8 = "hex8".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hex8]
     
-    @scala.inline
-    def hsl: typings.ctrlTinycolor.ctrlTinycolorStrings.hsl = "hsl".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hsl]
+    inline def hsl: typings.ctrlTinycolor.ctrlTinycolorStrings.hsl = "hsl".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hsl]
     
-    @scala.inline
-    def hsv: typings.ctrlTinycolor.ctrlTinycolorStrings.hsv = "hsv".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hsv]
+    inline def hsv: typings.ctrlTinycolor.ctrlTinycolorStrings.hsv = "hsv".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.hsv]
     
-    @scala.inline
-    def name: typings.ctrlTinycolor.ctrlTinycolorStrings.name = "name".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.name]
+    inline def name: typings.ctrlTinycolor.ctrlTinycolorStrings.name = "name".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.name]
     
-    @scala.inline
-    def prgb: typings.ctrlTinycolor.ctrlTinycolorStrings.prgb = "prgb".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.prgb]
+    inline def prgb: typings.ctrlTinycolor.ctrlTinycolorStrings.prgb = "prgb".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.prgb]
     
-    @scala.inline
-    def rgb: typings.ctrlTinycolor.ctrlTinycolorStrings.rgb = "rgb".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.rgb]
+    inline def rgb: typings.ctrlTinycolor.ctrlTinycolorStrings.rgb = "rgb".asInstanceOf[typings.ctrlTinycolor.ctrlTinycolorStrings.rgb]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -344,20 +330,16 @@ object distMod {
   }
   object TinyColorOptions {
     
-    @scala.inline
-    def apply(format: String, gradientType: String): TinyColorOptions = {
+    inline def apply(format: String, gradientType: String): TinyColorOptions = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], gradientType = gradientType.asInstanceOf[js.Any])
       __obj.asInstanceOf[TinyColorOptions]
     }
     
-    @scala.inline
-    implicit class TinyColorOptionsMutableBuilder[Self <: TinyColorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TinyColorOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientType(value: String): Self = StObject.set(x, "gradientType", value.asInstanceOf[js.Any])
+      inline def setGradientType(value: String): Self = StObject.set(x, "gradientType", value.asInstanceOf[js.Any])
     }
   }
   

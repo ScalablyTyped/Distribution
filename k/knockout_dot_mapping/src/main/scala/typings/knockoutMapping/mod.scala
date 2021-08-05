@@ -183,20 +183,16 @@ object mod extends Shortcut {
     }
     object KnockoutMappingCreateOptions {
       
-      @scala.inline
-      def apply(data: js.Any, parent: js.Any): KnockoutMappingCreateOptions = {
+      inline def apply(data: js.Any, parent: js.Any): KnockoutMappingCreateOptions = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
         __obj.asInstanceOf[KnockoutMappingCreateOptions]
       }
       
-      @scala.inline
-      implicit class KnockoutMappingCreateOptionsMutableBuilder[Self <: KnockoutMappingCreateOptions] (val x: Self) extends AnyVal {
+      extension [Self <: KnockoutMappingCreateOptions](x: Self) {
         
-        @scala.inline
-        def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       }
     }
     
@@ -223,65 +219,46 @@ object mod extends Shortcut {
     }
     object KnockoutMappingStandardOptions {
       
-      @scala.inline
-      def apply(): KnockoutMappingStandardOptions = {
+      inline def apply(): KnockoutMappingStandardOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[KnockoutMappingStandardOptions]
       }
       
-      @scala.inline
-      implicit class KnockoutMappingStandardOptionsMutableBuilder[Self <: KnockoutMappingStandardOptions] (val x: Self) extends AnyVal {
+      extension [Self <: KnockoutMappingStandardOptions](x: Self) {
         
-        @scala.inline
-        def setCopy(value: js.Array[String]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+        inline def setCopy(value: js.Array[String]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+        inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
         
-        @scala.inline
-        def setCopyVarargs(value: String*): Self = StObject.set(x, "copy", js.Array(value :_*))
+        inline def setCopyVarargs(value: String*): Self = StObject.set(x, "copy", js.Array(value :_*))
         
-        @scala.inline
-        def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])
+        inline def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeferEvaluationUndefined: Self = StObject.set(x, "deferEvaluation", js.undefined)
+        inline def setDeferEvaluationUndefined: Self = StObject.set(x, "deferEvaluation", js.undefined)
         
-        @scala.inline
-        def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+        inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+        inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        @scala.inline
-        def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+        inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
         
-        @scala.inline
-        def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+        inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+        inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
         
-        @scala.inline
-        def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+        inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
         
-        @scala.inline
-        def setMappedProperties(value: js.Array[String]): Self = StObject.set(x, "mappedProperties", value.asInstanceOf[js.Any])
+        inline def setMappedProperties(value: js.Array[String]): Self = StObject.set(x, "mappedProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMappedPropertiesUndefined: Self = StObject.set(x, "mappedProperties", js.undefined)
+        inline def setMappedPropertiesUndefined: Self = StObject.set(x, "mappedProperties", js.undefined)
         
-        @scala.inline
-        def setMappedPropertiesVarargs(value: String*): Self = StObject.set(x, "mappedProperties", js.Array(value :_*))
+        inline def setMappedPropertiesVarargs(value: String*): Self = StObject.set(x, "mappedProperties", js.Array(value :_*))
         
-        @scala.inline
-        def setObserve(value: js.Array[String]): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
+        inline def setObserve(value: js.Array[String]): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
+        inline def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
         
-        @scala.inline
-        def setObserveVarargs(value: String*): Self = StObject.set(x, "observe", js.Array(value :_*))
+        inline def setObserveVarargs(value: String*): Self = StObject.set(x, "observe", js.Array(value :_*))
       }
     }
     
@@ -299,31 +276,24 @@ object mod extends Shortcut {
     }
     object KnockoutMappingUpdateOptions {
       
-      @scala.inline
-      def apply(data: js.Any, parent: js.Any, target: js.Any): KnockoutMappingUpdateOptions = {
+      inline def apply(data: js.Any, parent: js.Any, target: js.Any): KnockoutMappingUpdateOptions = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[KnockoutMappingUpdateOptions]
       }
       
-      @scala.inline
-      implicit class KnockoutMappingUpdateOptionsMutableBuilder[Self <: KnockoutMappingUpdateOptions] (val x: Self) extends AnyVal {
+      extension [Self <: KnockoutMappingUpdateOptions](x: Self) {
         
-        @scala.inline
-        def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObservable(
+        inline def setObservable(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
         ): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObservableUndefined: Self = StObject.set(x, "observable", js.undefined)
+        inline def setObservableUndefined: Self = StObject.set(x, "observable", js.undefined)
         
-        @scala.inline
-        def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -362,32 +332,24 @@ object mod extends Shortcut {
     }
     object KnockoutPropertyMappingCallBack {
       
-      @scala.inline
-      def apply(): KnockoutPropertyMappingCallBack = {
+      inline def apply(): KnockoutPropertyMappingCallBack = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[KnockoutPropertyMappingCallBack]
       }
       
-      @scala.inline
-      implicit class KnockoutPropertyMappingCallBackMutableBuilder[Self <: KnockoutPropertyMappingCallBack] (val x: Self) extends AnyVal {
+      extension [Self <: KnockoutPropertyMappingCallBack](x: Self) {
         
-        @scala.inline
-        def setCreate(value: /* options */ KnockoutMappingCreateOptions => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+        inline def setCreate(value: /* options */ KnockoutMappingCreateOptions => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+        inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
         
-        @scala.inline
-        def setKey(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+        inline def setKey(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setUpdate(value: /* options */ KnockoutMappingUpdateOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+        inline def setUpdate(value: /* options */ KnockoutMappingUpdateOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+        inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       }
     }
     
@@ -400,17 +362,14 @@ object mod extends Shortcut {
     }
     object KnockoutStatic {
       
-      @scala.inline
-      def apply(mapping: KnockoutMapping): KnockoutStatic = {
+      inline def apply(mapping: KnockoutMapping): KnockoutStatic = {
         val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any])
         __obj.asInstanceOf[KnockoutStatic]
       }
       
-      @scala.inline
-      implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+      extension [Self <: KnockoutStatic](x: Self) {
         
-        @scala.inline
-        def setMapping(value: KnockoutMapping): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+        inline def setMapping(value: KnockoutMapping): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       }
     }
     

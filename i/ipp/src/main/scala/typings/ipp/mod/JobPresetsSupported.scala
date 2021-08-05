@@ -10,19 +10,15 @@ trait JobPresetsSupported extends StObject {
 }
 object JobPresetsSupported {
   
-  @scala.inline
-  def apply(): JobPresetsSupported = {
+  inline def apply(): JobPresetsSupported = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobPresetsSupported]
   }
   
-  @scala.inline
-  implicit class JobPresetsSupportedMutableBuilder[Self <: JobPresetsSupported] (val x: Self) extends AnyVal {
+  extension [Self <: JobPresetsSupported](x: Self) {
     
-    @scala.inline
-    def `setPreset-name`(value: String): Self = StObject.set(x, "preset-name", value.asInstanceOf[js.Any])
+    inline def `setPreset-name`(value: String): Self = StObject.set(x, "preset-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPreset-nameUndefined`: Self = StObject.set(x, "preset-name", js.undefined)
+    inline def `setPreset-nameUndefined`: Self = StObject.set(x, "preset-name", js.undefined)
   }
 }

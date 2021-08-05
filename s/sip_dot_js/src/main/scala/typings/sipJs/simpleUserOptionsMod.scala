@@ -30,32 +30,24 @@ object simpleUserOptionsMod {
   }
   object SimpleUserMedia {
     
-    @scala.inline
-    def apply(): SimpleUserMedia = {
+    inline def apply(): SimpleUserMedia = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SimpleUserMedia]
     }
     
-    @scala.inline
-    implicit class SimpleUserMediaMutableBuilder[Self <: SimpleUserMedia] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleUserMedia](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: SimpleUserMediaConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: SimpleUserMediaConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      @scala.inline
-      def setLocal(value: SimpleUserMediaLocal): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: SimpleUserMediaLocal): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+      inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
       
-      @scala.inline
-      def setRemote(value: SimpleUserMediaRemote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: SimpleUserMediaRemote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     }
   }
   
@@ -69,20 +61,16 @@ object simpleUserOptionsMod {
   }
   object SimpleUserMediaConstraints {
     
-    @scala.inline
-    def apply(audio: Boolean, video: Boolean): SimpleUserMediaConstraints = {
+    inline def apply(audio: Boolean, video: Boolean): SimpleUserMediaConstraints = {
       val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleUserMediaConstraints]
     }
     
-    @scala.inline
-    implicit class SimpleUserMediaConstraintsMutableBuilder[Self <: SimpleUserMediaConstraints] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleUserMediaConstraints](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,20 +81,16 @@ object simpleUserOptionsMod {
   }
   object SimpleUserMediaLocal {
     
-    @scala.inline
-    def apply(): SimpleUserMediaLocal = {
+    inline def apply(): SimpleUserMediaLocal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SimpleUserMediaLocal]
     }
     
-    @scala.inline
-    implicit class SimpleUserMediaLocalMutableBuilder[Self <: SimpleUserMediaLocal] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleUserMediaLocal](x: Self) {
       
-      @scala.inline
-      def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
   
@@ -120,26 +104,20 @@ object simpleUserOptionsMod {
   }
   object SimpleUserMediaRemote {
     
-    @scala.inline
-    def apply(): SimpleUserMediaRemote = {
+    inline def apply(): SimpleUserMediaRemote = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SimpleUserMediaRemote]
     }
     
-    @scala.inline
-    implicit class SimpleUserMediaRemoteMutableBuilder[Self <: SimpleUserMediaRemote] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleUserMediaRemote](x: Self) {
       
-      @scala.inline
-      def setAudio(value: HTMLAudioElement): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: HTMLAudioElement): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
   
@@ -188,50 +166,36 @@ object simpleUserOptionsMod {
   }
   object SimpleUserOptions {
     
-    @scala.inline
-    def apply(): SimpleUserOptions = {
+    inline def apply(): SimpleUserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SimpleUserOptions]
     }
     
-    @scala.inline
-    implicit class SimpleUserOptionsMutableBuilder[Self <: SimpleUserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleUserOptions](x: Self) {
       
-      @scala.inline
-      def setAor(value: String): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
+      inline def setAor(value: String): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAorUndefined: Self = StObject.set(x, "aor", js.undefined)
+      inline def setAorUndefined: Self = StObject.set(x, "aor", js.undefined)
       
-      @scala.inline
-      def setDelegate(value: SimpleUserDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: SimpleUserDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+      inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
       
-      @scala.inline
-      def setMedia(value: SimpleUserMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: SimpleUserMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setReconnectionAttempts(value: Double): Self = StObject.set(x, "reconnectionAttempts", value.asInstanceOf[js.Any])
+      inline def setReconnectionAttempts(value: Double): Self = StObject.set(x, "reconnectionAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectionAttemptsUndefined: Self = StObject.set(x, "reconnectionAttempts", js.undefined)
+      inline def setReconnectionAttemptsUndefined: Self = StObject.set(x, "reconnectionAttempts", js.undefined)
       
-      @scala.inline
-      def setReconnectionDelay(value: Double): Self = StObject.set(x, "reconnectionDelay", value.asInstanceOf[js.Any])
+      inline def setReconnectionDelay(value: Double): Self = StObject.set(x, "reconnectionDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectionDelayUndefined: Self = StObject.set(x, "reconnectionDelay", js.undefined)
+      inline def setReconnectionDelayUndefined: Self = StObject.set(x, "reconnectionDelay", js.undefined)
       
-      @scala.inline
-      def setUserAgentOptions(value: UserAgentOptions): Self = StObject.set(x, "userAgentOptions", value.asInstanceOf[js.Any])
+      inline def setUserAgentOptions(value: UserAgentOptions): Self = StObject.set(x, "userAgentOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentOptionsUndefined: Self = StObject.set(x, "userAgentOptions", js.undefined)
+      inline def setUserAgentOptionsUndefined: Self = StObject.set(x, "userAgentOptions", js.undefined)
     }
   }
 }

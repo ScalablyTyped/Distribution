@@ -23,8 +23,7 @@ trait IUserOrUserGroupIDs extends StObject {
 }
 object IUserOrUserGroupIDs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, IUserOrUserGroupID) => Unit,
     Clone: () => IUserOrUserGroupIDs,
     Count: Double,
@@ -37,28 +36,20 @@ object IUserOrUserGroupIDs {
     __obj.asInstanceOf[IUserOrUserGroupIDs]
   }
   
-  @scala.inline
-  implicit class IUserOrUserGroupIDsMutableBuilder[Self <: IUserOrUserGroupIDs] (val x: Self) extends AnyVal {
+  extension [Self <: IUserOrUserGroupIDs](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, IUserOrUserGroupID) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, IUserOrUserGroupID) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClone(value: () => IUserOrUserGroupIDs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IUserOrUserGroupIDs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUserOrUserGroupID(value: (Double, MFUserOrUserGroupType) => IUserOrUserGroupID): Self = StObject.set(x, "GetUserOrUserGroupID", js.Any.fromFunction2(value))
+    inline def setGetUserOrUserGroupID(value: (Double, MFUserOrUserGroupType) => IUserOrUserGroupID): Self = StObject.set(x, "GetUserOrUserGroupID", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUserOrUserGroupIDIndex(value: (Double, MFUserOrUserGroupType) => Double): Self = StObject.set(x, "GetUserOrUserGroupIDIndex", js.Any.fromFunction2(value))
+    inline def setGetUserOrUserGroupIDIndex(value: (Double, MFUserOrUserGroupType) => Double): Self = StObject.set(x, "GetUserOrUserGroupIDIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItem(value: Double => IUserOrUserGroupID): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IUserOrUserGroupID): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

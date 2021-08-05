@@ -27,8 +27,7 @@ object googleMapsIframeClientDotProtractorDriverMod {
   }
   object GoogleMapsIframeClientDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: () => ElementFinder,
       enterText: String => js.Promise[Unit],
       getParsedResults: () => js.Promise[js.Any],
@@ -39,20 +38,15 @@ object googleMapsIframeClientDotProtractorDriverMod {
       __obj.asInstanceOf[GoogleMapsIframeClientDriver]
     }
     
-    @scala.inline
-    implicit class GoogleMapsIframeClientDriverMutableBuilder[Self <: GoogleMapsIframeClientDriver] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleMapsIframeClientDriver](x: Self) {
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetParsedResults(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getParsedResults", js.Any.fromFunction0(value))
+      inline def setGetParsedResults(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getParsedResults", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResultsElementWrapper(value: () => ElementFinder): Self = StObject.set(x, "getResultsElementWrapper", js.Any.fromFunction0(value))
+      inline def setGetResultsElementWrapper(value: () => ElementFinder): Self = StObject.set(x, "getResultsElementWrapper", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectByValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "selectByValue", js.Any.fromFunction1(value))
+      inline def setSelectByValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "selectByValue", js.Any.fromFunction1(value))
     }
   }
 }

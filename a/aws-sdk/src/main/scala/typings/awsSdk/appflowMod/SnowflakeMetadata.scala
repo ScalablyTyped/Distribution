@@ -13,22 +13,17 @@ trait SnowflakeMetadata extends StObject {
 }
 object SnowflakeMetadata {
   
-  @scala.inline
-  def apply(): SnowflakeMetadata = {
+  inline def apply(): SnowflakeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnowflakeMetadata]
   }
   
-  @scala.inline
-  implicit class SnowflakeMetadataMutableBuilder[Self <: SnowflakeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SnowflakeMetadata](x: Self) {
     
-    @scala.inline
-    def setSupportedRegions(value: RegionList): Self = StObject.set(x, "supportedRegions", value.asInstanceOf[js.Any])
+    inline def setSupportedRegions(value: RegionList): Self = StObject.set(x, "supportedRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedRegionsUndefined: Self = StObject.set(x, "supportedRegions", js.undefined)
+    inline def setSupportedRegionsUndefined: Self = StObject.set(x, "supportedRegions", js.undefined)
     
-    @scala.inline
-    def setSupportedRegionsVarargs(value: Region*): Self = StObject.set(x, "supportedRegions", js.Array(value :_*))
+    inline def setSupportedRegionsVarargs(value: Region*): Self = StObject.set(x, "supportedRegions", js.Array(value :_*))
   }
 }

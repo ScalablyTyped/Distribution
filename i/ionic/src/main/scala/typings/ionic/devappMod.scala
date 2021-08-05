@@ -19,12 +19,9 @@ object devappMod {
     def this(namespace: String, name: String, port: Double, commPort: Double) = this()
   }
   
-  @scala.inline
-  def computeBroadcastAddress(address: String, netmask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBroadcastAddress")(address.asInstanceOf[js.Any], netmask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def computeBroadcastAddress(address: String, netmask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBroadcastAddress")(address.asInstanceOf[js.Any], netmask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createCommServer(id: String, port: Double): js.Promise[CommServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCommServer")(id.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CommServer]]
+  inline def createCommServer(id: String, port: Double): js.Promise[CommServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCommServer")(id.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CommServer]]
   
-  @scala.inline
-  def createPublisher(name: String, port: Double, commPort: Double): js.Promise[Publisher] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPublisher")(name.asInstanceOf[js.Any], port.asInstanceOf[js.Any], commPort.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Publisher]]
+  inline def createPublisher(name: String, port: Double, commPort: Double): js.Promise[Publisher] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPublisher")(name.asInstanceOf[js.Any], port.asInstanceOf[js.Any], commPort.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Publisher]]
 }

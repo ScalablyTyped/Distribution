@@ -16,8 +16,7 @@ trait Number extends StObject {
 }
 object Number {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: (Double, js.Any) => String,
     getConfig: String => js.Any,
     numToStr: js.Any => WebixCallback,
@@ -27,19 +26,14 @@ object Number {
     __obj.asInstanceOf[Number]
   }
   
-  @scala.inline
-  implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
+  extension [Self <: Number](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (Double, js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (Double, js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetConfig(value: String => js.Any): Self = StObject.set(x, "getConfig", js.Any.fromFunction1(value))
+    inline def setGetConfig(value: String => js.Any): Self = StObject.set(x, "getConfig", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNumToStr(value: js.Any => WebixCallback): Self = StObject.set(x, "numToStr", js.Any.fromFunction1(value))
+    inline def setNumToStr(value: js.Any => WebixCallback): Self = StObject.set(x, "numToStr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParse(value: (String, js.Any) => Double): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    inline def setParse(value: (String, js.Any) => Double): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
   }
 }

@@ -60,8 +60,7 @@ trait QueryTableDataSource
 }
 object QueryTableDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     geometryType: point | multipoint | polyline | polygon | multipatch,
     hasOwnProperty: PropertyKey => Boolean,
@@ -76,25 +75,18 @@ object QueryTableDataSource {
     __obj.asInstanceOf[QueryTableDataSource]
   }
   
-  @scala.inline
-  implicit class QueryTableDataSourceMutableBuilder[Self <: QueryTableDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: QueryTableDataSource](x: Self) {
     
-    @scala.inline
-    def setGeometryType(value: point | multipoint | polyline | polygon | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: point | multipoint | polyline | polygon | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidFields(value: String): Self = StObject.set(x, "oidFields", value.asInstanceOf[js.Any])
+    inline def setOidFields(value: String): Self = StObject.set(x, "oidFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `query-table`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `query-table`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }
 }

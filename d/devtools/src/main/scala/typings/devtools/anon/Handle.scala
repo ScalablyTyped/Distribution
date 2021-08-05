@@ -14,20 +14,16 @@ trait Handle extends StObject {
 }
 object Handle {
   
-  @scala.inline
-  def apply(handle: String, `type`: tab | window): Handle = {
+  inline def apply(handle: String, `type`: tab | window): Handle = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handle]
   }
   
-  @scala.inline
-  implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+  extension [Self <: Handle](x: Self) {
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: tab | window): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: tab | window): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

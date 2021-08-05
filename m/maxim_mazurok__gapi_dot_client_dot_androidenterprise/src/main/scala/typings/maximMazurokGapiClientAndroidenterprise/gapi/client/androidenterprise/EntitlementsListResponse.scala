@@ -11,22 +11,17 @@ trait EntitlementsListResponse extends StObject {
 }
 object EntitlementsListResponse {
   
-  @scala.inline
-  def apply(): EntitlementsListResponse = {
+  inline def apply(): EntitlementsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntitlementsListResponse]
   }
   
-  @scala.inline
-  implicit class EntitlementsListResponseMutableBuilder[Self <: EntitlementsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EntitlementsListResponse](x: Self) {
     
-    @scala.inline
-    def setEntitlement(value: js.Array[Entitlement]): Self = StObject.set(x, "entitlement", value.asInstanceOf[js.Any])
+    inline def setEntitlement(value: js.Array[Entitlement]): Self = StObject.set(x, "entitlement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementUndefined: Self = StObject.set(x, "entitlement", js.undefined)
+    inline def setEntitlementUndefined: Self = StObject.set(x, "entitlement", js.undefined)
     
-    @scala.inline
-    def setEntitlementVarargs(value: Entitlement*): Self = StObject.set(x, "entitlement", js.Array(value :_*))
+    inline def setEntitlementVarargs(value: Entitlement*): Self = StObject.set(x, "entitlement", js.Array(value :_*))
   }
 }

@@ -15,31 +15,23 @@ trait IClientBatchGetResponse extends StObject {
 }
 object IClientBatchGetResponse {
   
-  @scala.inline
-  def apply(): IClientBatchGetResponse = {
+  inline def apply(): IClientBatchGetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBatchGetResponse]
   }
   
-  @scala.inline
-  implicit class IClientBatchGetResponseMutableBuilder[Self <: IClientBatchGetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBatchGetResponse](x: Self) {
     
-    @scala.inline
-    def setBatch(value: IBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: IBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchNull: Self = StObject.set(x, "batch", null)
+    inline def setBatchNull: Self = StObject.set(x, "batch", null)
     
-    @scala.inline
-    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

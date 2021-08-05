@@ -31,8 +31,7 @@ trait LegendStyle
 }
 object LegendStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -43,16 +42,12 @@ object LegendStyle {
     __obj.asInstanceOf[LegendStyle]
   }
   
-  @scala.inline
-  implicit class LegendStyleMutableBuilder[Self <: LegendStyle] (val x: Self) extends AnyVal {
+  extension [Self <: LegendStyle](x: Self) {
     
-    @scala.inline
-    def setLayout(value: auto | `side-by-side` | stack): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: auto | `side-by-side` | stack): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setType(value: classic | card): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: classic | card): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

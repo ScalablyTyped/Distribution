@@ -22,8 +22,7 @@ trait XPackageStructureCreator
 }
 object XPackageStructureCreator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertToPackage: (String, XOutputStream) => Unit,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XPackageStructureCreator {
     __obj.asInstanceOf[XPackageStructureCreator]
   }
   
-  @scala.inline
-  implicit class XPackageStructureCreatorMutableBuilder[Self <: XPackageStructureCreator] (val x: Self) extends AnyVal {
+  extension [Self <: XPackageStructureCreator](x: Self) {
     
-    @scala.inline
-    def setConvertToPackage(value: (String, XOutputStream) => Unit): Self = StObject.set(x, "convertToPackage", js.Any.fromFunction2(value))
+    inline def setConvertToPackage(value: (String, XOutputStream) => Unit): Self = StObject.set(x, "convertToPackage", js.Any.fromFunction2(value))
   }
 }

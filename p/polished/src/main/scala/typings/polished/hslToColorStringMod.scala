@@ -12,10 +12,7 @@ object hslToColorStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(color: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(color: HslColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(color: HslaColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(color: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(color: HslColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(color: HslaColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
 }

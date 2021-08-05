@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsMarkerEndValue extends StObject
 object OptionsMarkerEndValue {
   
-  @scala.inline
-  def arrow: typings.highcharts.highchartsStrings.arrow = "arrow".asInstanceOf[typings.highcharts.highchartsStrings.arrow]
+  inline def arrow: typings.highcharts.highchartsStrings.arrow = "arrow".asInstanceOf[typings.highcharts.highchartsStrings.arrow]
   
-  @scala.inline
-  def none: typings.highcharts.highchartsStrings.none = "none".asInstanceOf[typings.highcharts.highchartsStrings.none]
+  inline def none: typings.highcharts.highchartsStrings.none = "none".asInstanceOf[typings.highcharts.highchartsStrings.none]
 }

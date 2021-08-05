@@ -10,16 +10,13 @@ trait levelSwitchedData extends StObject {
 }
 object levelSwitchedData {
   
-  @scala.inline
-  def apply(level: Double): levelSwitchedData = {
+  inline def apply(level: Double): levelSwitchedData = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[levelSwitchedData]
   }
   
-  @scala.inline
-  implicit class levelSwitchedDataMutableBuilder[Self <: levelSwitchedData] (val x: Self) extends AnyVal {
+  extension [Self <: levelSwitchedData](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

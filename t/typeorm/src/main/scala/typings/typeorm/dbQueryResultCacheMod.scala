@@ -16,7 +16,7 @@ object dbQueryResultCacheMod {
        with QueryResultCache {
     def this(connection: Connection) = this()
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Gets a query runner to work with.
@@ -24,6 +24,6 @@ object dbQueryResultCacheMod {
     /* protected */ def getQueryRunner(): QueryRunner = js.native
     /* protected */ def getQueryRunner(queryRunner: QueryRunner): QueryRunner = js.native
     
-    var queryResultCacheTable: js.Any = js.native
+    /* private */ var queryResultCacheTable: js.Any = js.native
   }
 }

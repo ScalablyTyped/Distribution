@@ -40,8 +40,7 @@ trait Theme
 }
 object Theme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basemaps: js.Array[String],
     constructor: js.Function,
     description: String,
@@ -54,22 +53,16 @@ object Theme {
     __obj.asInstanceOf[Theme]
   }
   
-  @scala.inline
-  implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+  extension [Self <: Theme](x: Self) {
     
-    @scala.inline
-    def setBasemaps(value: js.Array[String]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
+    inline def setBasemaps(value: js.Array[String]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapsVarargs(value: String*): Self = StObject.set(x, "basemaps", js.Array(value :_*))
+    inline def setBasemapsVarargs(value: String*): Self = StObject.set(x, "basemaps", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

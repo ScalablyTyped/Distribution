@@ -12,19 +12,15 @@ trait RadioProps extends StObject {
 }
 object RadioProps {
   
-  @scala.inline
-  def apply(listPrefixCls: String, prefixCls: String): RadioProps = {
+  inline def apply(listPrefixCls: String, prefixCls: String): RadioProps = {
     val __obj = js.Dynamic.literal(listPrefixCls = listPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioProps]
   }
   
-  @scala.inline
-  implicit class RadioPropsMutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
+  extension [Self <: RadioProps](x: Self) {
     
-    @scala.inline
-    def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
+    inline def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

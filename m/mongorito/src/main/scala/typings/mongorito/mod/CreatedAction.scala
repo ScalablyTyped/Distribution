@@ -15,20 +15,16 @@ trait CreatedAction
 }
 object CreatedAction {
   
-  @scala.inline
-  def apply(id: js.Object, `type`: CREATED): CreatedAction = {
+  inline def apply(id: js.Object, `type`: CREATED): CreatedAction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatedAction]
   }
   
-  @scala.inline
-  implicit class CreatedActionMutableBuilder[Self <: CreatedAction] (val x: Self) extends AnyVal {
+  extension [Self <: CreatedAction](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Object): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Object): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CREATED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CREATED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

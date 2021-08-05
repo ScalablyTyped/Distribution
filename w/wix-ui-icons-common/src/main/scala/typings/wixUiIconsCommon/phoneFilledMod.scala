@@ -22,20 +22,16 @@ object phoneFilledMod extends Shortcut {
   }
   object PhoneFilledProps {
     
-    @scala.inline
-    def apply(): PhoneFilledProps = {
+    inline def apply(): PhoneFilledProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PhoneFilledProps]
     }
     
-    @scala.inline
-    implicit class PhoneFilledPropsMutableBuilder[Self <: PhoneFilledProps] (val x: Self) extends AnyVal {
+    extension [Self <: PhoneFilledProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -61,7 +61,7 @@ object distPullRequestMod {
     /* CompleteClass */
     var id: Double = js.native
     
-    var issueUri: js.Any = js.native
+    /* private */ var issueUri: js.Any = js.native
     
     /* CompleteClass */
     override def loadAsync(): js.Promise[PullRequest | Null] = js.native
@@ -87,7 +87,7 @@ object distPullRequestMod {
     /* CompleteClass */
     override val number: Double = js.native
     
-    var reviewCommentsUri: js.Any = js.native
+    /* private */ var reviewCommentsUri: js.Any = js.native
     
     /* CompleteClass */
     var state: open | closed = js.native

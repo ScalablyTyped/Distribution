@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(sql: String): String = ^.asInstanceOf[js.Dynamic].apply(sql.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(sql: String, options: IMinifyOptions): String = (^.asInstanceOf[js.Dynamic].apply(sql.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(sql: String): String = ^.asInstanceOf[js.Dynamic].apply(sql.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(sql: String, options: IMinifyOptions): String = (^.asInstanceOf[js.Dynamic].apply(sql.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("pg-minify", JSImport.Namespace)
   @js.native
@@ -83,20 +81,16 @@ object mod {
   }
   object IErrorPosition {
     
-    @scala.inline
-    def apply(column: Double, line: Double): IErrorPosition = {
+    inline def apply(column: Double, line: Double): IErrorPosition = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[IErrorPosition]
     }
     
-    @scala.inline
-    implicit class IErrorPositionMutableBuilder[Self <: IErrorPosition] (val x: Self) extends AnyVal {
+    extension [Self <: IErrorPosition](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,26 +102,20 @@ object mod {
   }
   object IMinifyOptions {
     
-    @scala.inline
-    def apply(): IMinifyOptions = {
+    inline def apply(): IMinifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMinifyOptions]
     }
     
-    @scala.inline
-    implicit class IMinifyOptionsMutableBuilder[Self <: IMinifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IMinifyOptions](x: Self) {
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setRemoveAll(value: Boolean): Self = StObject.set(x, "removeAll", value.asInstanceOf[js.Any])
+      inline def setRemoveAll(value: Boolean): Self = StObject.set(x, "removeAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
+      inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     }
   }
 }

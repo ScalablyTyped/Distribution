@@ -34,8 +34,7 @@ trait ClassExpression_
 }
 object ClassExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: ClassBody_,
     end: Double,
     id: Identifier_,
@@ -48,58 +47,40 @@ object ClassExpression_ {
     __obj.asInstanceOf[ClassExpression_]
   }
   
-  @scala.inline
-  implicit class ClassExpression_MutableBuilder[Self <: ClassExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: ClassExpression_](x: Self) {
     
-    @scala.inline
-    def setBody(value: ClassBody_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ClassBody_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
-    @scala.inline
-    def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplements(value: js.Array[ClassImplements_]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
+    inline def setImplements(value: js.Array[ClassImplements_]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementsUndefined: Self = StObject.set(x, "implements", js.undefined)
+    inline def setImplementsUndefined: Self = StObject.set(x, "implements", js.undefined)
     
-    @scala.inline
-    def setImplementsVarargs(value: ClassImplements_ *): Self = StObject.set(x, "implements", js.Array(value :_*))
+    inline def setImplementsVarargs(value: ClassImplements_ *): Self = StObject.set(x, "implements", js.Array(value :_*))
     
-    @scala.inline
-    def setMixins(value: js.Array[js.Any]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+    inline def setMixins(value: js.Array[js.Any]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+    inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
     
-    @scala.inline
-    def setMixinsVarargs(value: js.Any*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+    inline def setMixinsVarargs(value: js.Any*): Self = StObject.set(x, "mixins", js.Array(value :_*))
     
-    @scala.inline
-    def setSuperClass(value: Expression): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
+    inline def setSuperClass(value: Expression): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "superTypeParameters", value.asInstanceOf[js.Any])
+    inline def setSuperTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "superTypeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperTypeParametersUndefined: Self = StObject.set(x, "superTypeParameters", js.undefined)
+    inline def setSuperTypeParametersUndefined: Self = StObject.set(x, "superTypeParameters", js.undefined)
     
-    @scala.inline
-    def setType(value: ClassExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClassExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
+    inline def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

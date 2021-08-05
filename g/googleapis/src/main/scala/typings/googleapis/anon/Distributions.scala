@@ -14,34 +14,25 @@ trait Distributions extends StObject {
 }
 object Distributions {
   
-  @scala.inline
-  def apply(): Distributions = {
+  inline def apply(): Distributions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Distributions]
   }
   
-  @scala.inline
-  implicit class DistributionsMutableBuilder[Self <: Distributions] (val x: Self) extends AnyVal {
+  extension [Self <: Distributions](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setDistributions(value: js.Array[Max]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
+    inline def setDistributions(value: js.Array[Max]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
+    inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
-    @scala.inline
-    def setDistributionsVarargs(value: Max*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: Max*): Self = StObject.set(x, "distributions", js.Array(value :_*))
     
-    @scala.inline
-    def setMedian(value: Double): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
+    inline def setMedian(value: Double): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
+    inline def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
   }
 }

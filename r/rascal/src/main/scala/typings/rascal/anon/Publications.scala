@@ -16,25 +16,19 @@ trait Publications extends StObject {
 }
 object Publications {
   
-  @scala.inline
-  def apply(publications: Confirm, redeliveries: Counters, subscriptions: DeferCloseChannel, vhosts: Bindings): Publications = {
+  inline def apply(publications: Confirm, redeliveries: Counters, subscriptions: DeferCloseChannel, vhosts: Bindings): Publications = {
     val __obj = js.Dynamic.literal(publications = publications.asInstanceOf[js.Any], redeliveries = redeliveries.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], vhosts = vhosts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Publications]
   }
   
-  @scala.inline
-  implicit class PublicationsMutableBuilder[Self <: Publications] (val x: Self) extends AnyVal {
+  extension [Self <: Publications](x: Self) {
     
-    @scala.inline
-    def setPublications(value: Confirm): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
+    inline def setPublications(value: Confirm): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedeliveries(value: Counters): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
+    inline def setRedeliveries(value: Counters): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptions(value: DeferCloseChannel): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: DeferCloseChannel): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhosts(value: Bindings): Self = StObject.set(x, "vhosts", value.asInstanceOf[js.Any])
+    inline def setVhosts(value: Bindings): Self = StObject.set(x, "vhosts", value.asInstanceOf[js.Any])
   }
 }

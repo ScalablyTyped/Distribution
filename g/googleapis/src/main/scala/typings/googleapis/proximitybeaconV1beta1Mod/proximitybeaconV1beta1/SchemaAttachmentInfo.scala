@@ -40,31 +40,23 @@ trait SchemaAttachmentInfo extends StObject {
 }
 object SchemaAttachmentInfo {
   
-  @scala.inline
-  def apply(): SchemaAttachmentInfo = {
+  inline def apply(): SchemaAttachmentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttachmentInfo]
   }
   
-  @scala.inline
-  implicit class SchemaAttachmentInfoMutableBuilder[Self <: SchemaAttachmentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttachmentInfo](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMaxDistanceMeters(value: Double): Self = StObject.set(x, "maxDistanceMeters", value.asInstanceOf[js.Any])
+    inline def setMaxDistanceMeters(value: Double): Self = StObject.set(x, "maxDistanceMeters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDistanceMetersUndefined: Self = StObject.set(x, "maxDistanceMeters", js.undefined)
+    inline def setMaxDistanceMetersUndefined: Self = StObject.set(x, "maxDistanceMeters", js.undefined)
     
-    @scala.inline
-    def setNamespacedType(value: String): Self = StObject.set(x, "namespacedType", value.asInstanceOf[js.Any])
+    inline def setNamespacedType(value: String): Self = StObject.set(x, "namespacedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacedTypeUndefined: Self = StObject.set(x, "namespacedType", js.undefined)
+    inline def setNamespacedTypeUndefined: Self = StObject.set(x, "namespacedType", js.undefined)
   }
 }

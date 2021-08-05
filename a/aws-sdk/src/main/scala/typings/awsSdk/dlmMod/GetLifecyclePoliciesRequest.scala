@@ -33,55 +33,39 @@ trait GetLifecyclePoliciesRequest extends StObject {
 }
 object GetLifecyclePoliciesRequest {
   
-  @scala.inline
-  def apply(): GetLifecyclePoliciesRequest = {
+  inline def apply(): GetLifecyclePoliciesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLifecyclePoliciesRequest]
   }
   
-  @scala.inline
-  implicit class GetLifecyclePoliciesRequestMutableBuilder[Self <: GetLifecyclePoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLifecyclePoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyIds(value: PolicyIdList): Self = StObject.set(x, "PolicyIds", value.asInstanceOf[js.Any])
+    inline def setPolicyIds(value: PolicyIdList): Self = StObject.set(x, "PolicyIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdsUndefined: Self = StObject.set(x, "PolicyIds", js.undefined)
+    inline def setPolicyIdsUndefined: Self = StObject.set(x, "PolicyIds", js.undefined)
     
-    @scala.inline
-    def setPolicyIdsVarargs(value: PolicyId*): Self = StObject.set(x, "PolicyIds", js.Array(value :_*))
+    inline def setPolicyIdsVarargs(value: PolicyId*): Self = StObject.set(x, "PolicyIds", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceTypes(value: ResourceTypeValuesList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: ResourceTypeValuesList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: ResourceTypeValues*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ResourceTypeValues*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: GettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: GettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTagsToAdd(value: TagsToAddFilterList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
+    inline def setTagsToAdd(value: TagsToAddFilterList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
+    inline def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
-    @scala.inline
-    def setTagsToAddVarargs(value: TagFilter*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
+    inline def setTagsToAddVarargs(value: TagFilter*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetTags(value: TargetTagsFilterList): Self = StObject.set(x, "TargetTags", value.asInstanceOf[js.Any])
+    inline def setTargetTags(value: TargetTagsFilterList): Self = StObject.set(x, "TargetTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTagsUndefined: Self = StObject.set(x, "TargetTags", js.undefined)
+    inline def setTargetTagsUndefined: Self = StObject.set(x, "TargetTags", js.undefined)
     
-    @scala.inline
-    def setTargetTagsVarargs(value: TagFilter*): Self = StObject.set(x, "TargetTags", js.Array(value :_*))
+    inline def setTargetTagsVarargs(value: TagFilter*): Self = StObject.set(x, "TargetTags", js.Array(value :_*))
   }
 }

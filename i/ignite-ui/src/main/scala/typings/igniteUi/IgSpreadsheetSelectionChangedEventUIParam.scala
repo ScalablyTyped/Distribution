@@ -18,25 +18,19 @@ trait IgSpreadsheetSelectionChangedEventUIParam extends StObject {
 }
 object IgSpreadsheetSelectionChangedEventUIParam {
   
-  @scala.inline
-  def apply(): IgSpreadsheetSelectionChangedEventUIParam = {
+  inline def apply(): IgSpreadsheetSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgSpreadsheetSelectionChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class IgSpreadsheetSelectionChangedEventUIParamMutableBuilder[Self <: IgSpreadsheetSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: IgSpreadsheetSelectionChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPane(value: js.Any): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: js.Any): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
   }
 }

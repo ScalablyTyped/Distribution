@@ -11,16 +11,13 @@ trait ProxyInstance extends StObject {
 }
 object ProxyInstance {
   
-  @scala.inline
-  def apply(handle: NativePointer): ProxyInstance = {
+  inline def apply(handle: NativePointer): ProxyInstance = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyInstance]
   }
   
-  @scala.inline
-  implicit class ProxyInstanceMutableBuilder[Self <: ProxyInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyInstance](x: Self) {
     
-    @scala.inline
-    def setHandle(value: NativePointer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: NativePointer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }
 }

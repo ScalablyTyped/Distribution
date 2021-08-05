@@ -13,16 +13,13 @@ trait DeleteFunctionConcurrencyRequest extends StObject {
 }
 object DeleteFunctionConcurrencyRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName): DeleteFunctionConcurrencyRequest = {
+  inline def apply(FunctionName: FunctionName): DeleteFunctionConcurrencyRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFunctionConcurrencyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFunctionConcurrencyRequestMutableBuilder[Self <: DeleteFunctionConcurrencyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFunctionConcurrencyRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait MinimalPluginContext extends StObject {
 }
 object MinimalPluginContext {
   
-  @scala.inline
-  def apply(meta: PluginContextMeta): MinimalPluginContext = {
+  inline def apply(meta: PluginContextMeta): MinimalPluginContext = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinimalPluginContext]
   }
   
-  @scala.inline
-  implicit class MinimalPluginContextMutableBuilder[Self <: MinimalPluginContext] (val x: Self) extends AnyVal {
+  extension [Self <: MinimalPluginContext](x: Self) {
     
-    @scala.inline
-    def setMeta(value: PluginContextMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: PluginContextMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

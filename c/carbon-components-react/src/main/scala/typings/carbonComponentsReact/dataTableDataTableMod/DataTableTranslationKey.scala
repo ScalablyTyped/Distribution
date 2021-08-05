@@ -20,27 +20,19 @@ trait DataTableTranslationKey
      with _CarbonTranslationKey
 object DataTableTranslationKey {
   
-  @scala.inline
-  def carbonDottableDotallDotcollapse: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotcollapse = "carbon.table.all.collapse".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotcollapse]
+  inline def carbonDottableDotallDotcollapse: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotcollapse = "carbon.table.all.collapse".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotcollapse]
   
-  @scala.inline
-  def carbonDottableDotallDotexpand: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotexpand = "carbon.table.all.expand".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotexpand]
+  inline def carbonDottableDotallDotexpand: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotexpand = "carbon.table.all.expand".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotexpand]
   
-  @scala.inline
-  def carbonDottableDotallDotselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotselect = "carbon.table.all.select".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotselect]
+  inline def carbonDottableDotallDotselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotselect = "carbon.table.all.select".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotselect]
   
-  @scala.inline
-  def carbonDottableDotallDotunselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotunselect = "carbon.table.all.unselect".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotunselect]
+  inline def carbonDottableDotallDotunselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotunselect = "carbon.table.all.unselect".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotallDotunselect]
   
-  @scala.inline
-  def carbonDottableDotrowDotcollapse: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotcollapse = "carbon.table.row.collapse".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotcollapse]
+  inline def carbonDottableDotrowDotcollapse: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotcollapse = "carbon.table.row.collapse".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotcollapse]
   
-  @scala.inline
-  def carbonDottableDotrowDotexpand: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotexpand = "carbon.table.row.expand".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotexpand]
+  inline def carbonDottableDotrowDotexpand: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotexpand = "carbon.table.row.expand".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotexpand]
   
-  @scala.inline
-  def carbonDottableDotrowDotselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotselect = "carbon.table.row.select".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotselect]
+  inline def carbonDottableDotrowDotselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotselect = "carbon.table.row.select".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotselect]
   
-  @scala.inline
-  def carbonDottableDotrowDotunselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotunselect = "carbon.table.row.unselect".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotunselect]
+  inline def carbonDottableDotrowDotunselect: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotunselect = "carbon.table.row.unselect".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotrowDotunselect]
 }

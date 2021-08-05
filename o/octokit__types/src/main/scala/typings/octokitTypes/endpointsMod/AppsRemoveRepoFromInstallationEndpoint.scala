@@ -12,19 +12,15 @@ trait AppsRemoveRepoFromInstallationEndpoint extends StObject {
 }
 object AppsRemoveRepoFromInstallationEndpoint {
   
-  @scala.inline
-  def apply(installation_id: Double, repository_id: Double): AppsRemoveRepoFromInstallationEndpoint = {
+  inline def apply(installation_id: Double, repository_id: Double): AppsRemoveRepoFromInstallationEndpoint = {
     val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any], repository_id = repository_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsRemoveRepoFromInstallationEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsRemoveRepoFromInstallationEndpointMutableBuilder[Self <: AppsRemoveRepoFromInstallationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsRemoveRepoFromInstallationEndpoint](x: Self) {
     
-    @scala.inline
-    def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
+    inline def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
   }
 }

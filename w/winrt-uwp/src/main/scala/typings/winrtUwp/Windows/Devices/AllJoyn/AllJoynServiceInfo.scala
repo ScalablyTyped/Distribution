@@ -18,22 +18,17 @@ trait AllJoynServiceInfo extends StObject {
 }
 object AllJoynServiceInfo {
   
-  @scala.inline
-  def apply(objectPath: String, sessionPort: Double, uniqueName: String): AllJoynServiceInfo = {
+  inline def apply(objectPath: String, sessionPort: Double, uniqueName: String): AllJoynServiceInfo = {
     val __obj = js.Dynamic.literal(objectPath = objectPath.asInstanceOf[js.Any], sessionPort = sessionPort.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynServiceInfo]
   }
   
-  @scala.inline
-  implicit class AllJoynServiceInfoMutableBuilder[Self <: AllJoynServiceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynServiceInfo](x: Self) {
     
-    @scala.inline
-    def setObjectPath(value: String): Self = StObject.set(x, "objectPath", value.asInstanceOf[js.Any])
+    inline def setObjectPath(value: String): Self = StObject.set(x, "objectPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionPort(value: Double): Self = StObject.set(x, "sessionPort", value.asInstanceOf[js.Any])
+    inline def setSessionPort(value: Double): Self = StObject.set(x, "sessionPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
   }
 }

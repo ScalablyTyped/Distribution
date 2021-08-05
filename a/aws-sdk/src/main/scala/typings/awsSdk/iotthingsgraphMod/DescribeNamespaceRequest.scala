@@ -13,19 +13,15 @@ trait DescribeNamespaceRequest extends StObject {
 }
 object DescribeNamespaceRequest {
   
-  @scala.inline
-  def apply(): DescribeNamespaceRequest = {
+  inline def apply(): DescribeNamespaceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNamespaceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeNamespaceRequestMutableBuilder[Self <: DescribeNamespaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNamespaceRequest](x: Self) {
     
-    @scala.inline
-    def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
+    inline def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
   }
 }

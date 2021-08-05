@@ -40,8 +40,7 @@ object abusiveexperiencereportMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Abusiveexperiencereport
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -50,11 +49,9 @@ object abusiveexperiencereportMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def abusiveexperiencereport(options: Options): Abusiveexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("abusiveexperiencereport")(options.asInstanceOf[js.Any]).asInstanceOf[Abusiveexperiencereport]
+  inline def abusiveexperiencereport(options: Options): Abusiveexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("abusiveexperiencereport")(options.asInstanceOf[js.Any]).asInstanceOf[Abusiveexperiencereport]
   
-  @scala.inline
-  def abusiveexperiencereport_v1(version: v1): Abusiveexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("abusiveexperiencereport")(version.asInstanceOf[js.Any]).asInstanceOf[Abusiveexperiencereport]
+  inline def abusiveexperiencereport_v1(version: v1): Abusiveexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("abusiveexperiencereport")(version.asInstanceOf[js.Any]).asInstanceOf[Abusiveexperiencereport]
   
   object auth extends Shortcut {
     
@@ -89,8 +86,7 @@ object abusiveexperiencereportMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

@@ -12,25 +12,19 @@ trait BackgroundRadius extends StObject {
 }
 object BackgroundRadius {
   
-  @scala.inline
-  def apply(): BackgroundRadius = {
+  inline def apply(): BackgroundRadius = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundRadius]
   }
   
-  @scala.inline
-  implicit class BackgroundRadiusMutableBuilder[Self <: BackgroundRadius] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundRadius](x: Self) {
     
-    @scala.inline
-    def setBackground(value: `3`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: `3`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

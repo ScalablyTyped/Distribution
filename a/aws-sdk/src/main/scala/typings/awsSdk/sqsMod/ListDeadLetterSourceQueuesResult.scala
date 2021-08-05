@@ -18,25 +18,19 @@ trait ListDeadLetterSourceQueuesResult extends StObject {
 }
 object ListDeadLetterSourceQueuesResult {
   
-  @scala.inline
-  def apply(queueUrls: QueueUrlList): ListDeadLetterSourceQueuesResult = {
+  inline def apply(queueUrls: QueueUrlList): ListDeadLetterSourceQueuesResult = {
     val __obj = js.Dynamic.literal(queueUrls = queueUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeadLetterSourceQueuesResult]
   }
   
-  @scala.inline
-  implicit class ListDeadLetterSourceQueuesResultMutableBuilder[Self <: ListDeadLetterSourceQueuesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeadLetterSourceQueuesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueueUrls(value: QueueUrlList): Self = StObject.set(x, "queueUrls", value.asInstanceOf[js.Any])
+    inline def setQueueUrls(value: QueueUrlList): Self = StObject.set(x, "queueUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "queueUrls", js.Array(value :_*))
+    inline def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "queueUrls", js.Array(value :_*))
   }
 }

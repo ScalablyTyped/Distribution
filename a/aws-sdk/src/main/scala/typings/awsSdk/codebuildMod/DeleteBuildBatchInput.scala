@@ -13,16 +13,13 @@ trait DeleteBuildBatchInput extends StObject {
 }
 object DeleteBuildBatchInput {
   
-  @scala.inline
-  def apply(id: NonEmptyString): DeleteBuildBatchInput = {
+  inline def apply(id: NonEmptyString): DeleteBuildBatchInput = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBuildBatchInput]
   }
   
-  @scala.inline
-  implicit class DeleteBuildBatchInputMutableBuilder[Self <: DeleteBuildBatchInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBuildBatchInput](x: Self) {
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

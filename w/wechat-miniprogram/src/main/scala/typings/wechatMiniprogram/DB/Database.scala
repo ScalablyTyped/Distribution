@@ -26,8 +26,7 @@ trait Database extends StObject {
 }
 object Database {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Geo: IGeo,
     RegExp: IRegExpConstructor,
     collection: String => CollectionReference,
@@ -39,25 +38,18 @@ object Database {
     __obj.asInstanceOf[Database]
   }
   
-  @scala.inline
-  implicit class DatabaseMutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
+  extension [Self <: Database](x: Self) {
     
-    @scala.inline
-    def setCollection(value: String => CollectionReference): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
+    inline def setCollection(value: String => CollectionReference): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommand(value: DatabaseCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: DatabaseCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeo(value: IGeo): Self = StObject.set(x, "Geo", value.asInstanceOf[js.Any])
+    inline def setGeo(value: IGeo): Self = StObject.set(x, "Geo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegExp(value: IRegExpConstructor): Self = StObject.set(x, "RegExp", value.asInstanceOf[js.Any])
+    inline def setRegExp(value: IRegExpConstructor): Self = StObject.set(x, "RegExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerDate(value: () => ServerDate): Self = StObject.set(x, "serverDate", js.Any.fromFunction0(value))
+    inline def setServerDate(value: () => ServerDate): Self = StObject.set(x, "serverDate", js.Any.fromFunction0(value))
   }
 }

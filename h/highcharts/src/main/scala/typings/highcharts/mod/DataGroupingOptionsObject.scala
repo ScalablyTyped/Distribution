@@ -108,64 +108,45 @@ trait DataGroupingOptionsObject extends StObject {
 }
 object DataGroupingOptionsObject {
   
-  @scala.inline
-  def apply(): DataGroupingOptionsObject = {
+  inline def apply(): DataGroupingOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataGroupingOptionsObject]
   }
   
-  @scala.inline
-  implicit class DataGroupingOptionsObjectMutableBuilder[Self <: DataGroupingOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataGroupingOptionsObject](x: Self) {
     
-    @scala.inline
-    def setApproximation(value: String | DataGroupingApproximationValue | js.Function): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
+    inline def setApproximation(value: String | DataGroupingApproximationValue | js.Function): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
+    inline def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
     
-    @scala.inline
-    def setDateTimeLabelFormats(value: js.Object): Self = StObject.set(x, "dateTimeLabelFormats", value.asInstanceOf[js.Any])
+    inline def setDateTimeLabelFormats(value: js.Object): Self = StObject.set(x, "dateTimeLabelFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeLabelFormatsUndefined: Self = StObject.set(x, "dateTimeLabelFormats", js.undefined)
+    inline def setDateTimeLabelFormatsUndefined: Self = StObject.set(x, "dateTimeLabelFormats", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
+    inline def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForcedUndefined: Self = StObject.set(x, "forced", js.undefined)
+    inline def setForcedUndefined: Self = StObject.set(x, "forced", js.undefined)
     
-    @scala.inline
-    def setGroupAll(value: Boolean): Self = StObject.set(x, "groupAll", value.asInstanceOf[js.Any])
+    inline def setGroupAll(value: Boolean): Self = StObject.set(x, "groupAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupAllUndefined: Self = StObject.set(x, "groupAll", js.undefined)
+    inline def setGroupAllUndefined: Self = StObject.set(x, "groupAll", js.undefined)
     
-    @scala.inline
-    def setGroupPixelWidth(value: Double): Self = StObject.set(x, "groupPixelWidth", value.asInstanceOf[js.Any])
+    inline def setGroupPixelWidth(value: Double): Self = StObject.set(x, "groupPixelWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupPixelWidthUndefined: Self = StObject.set(x, "groupPixelWidth", js.undefined)
+    inline def setGroupPixelWidthUndefined: Self = StObject.set(x, "groupPixelWidth", js.undefined)
     
-    @scala.inline
-    def setSmoothed(value: Boolean): Self = StObject.set(x, "smoothed", value.asInstanceOf[js.Any])
+    inline def setSmoothed(value: Boolean): Self = StObject.set(x, "smoothed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothedUndefined: Self = StObject.set(x, "smoothed", js.undefined)
+    inline def setSmoothedUndefined: Self = StObject.set(x, "smoothed", js.undefined)
     
-    @scala.inline
-    def setUnits(value: js.Array[js.Tuple2[String, js.Array[Double] | Null]]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: js.Array[js.Tuple2[String, js.Array[Double] | Null]]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    @scala.inline
-    def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value :_*))
   }
 }

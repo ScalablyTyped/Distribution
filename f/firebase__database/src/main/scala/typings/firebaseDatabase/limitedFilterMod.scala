@@ -27,34 +27,34 @@ object limitedFilterMod {
       * @return {!Node}
       * @private
       */
-    var fullLimitUpdateChild_ : js.Any = js.native
+    /* private */ var fullLimitUpdateChild_ : js.Any = js.native
     
     /**
       * @const
       * @type {!Index}
       * @private
       */
-    val index_ : js.Any = js.native
+    /* private */ val index_ : js.Any = js.native
     
     /**
       * @const
       * @type {number}
       * @private
       */
-    val limit_ : js.Any = js.native
+    /* private */ val limit_ : js.Any = js.native
     
     /**
       * @const
       * @type {RangedFilter}
       * @private
       */
-    val rangedFilter_ : js.Any = js.native
+    /* private */ val rangedFilter_ : js.Any = js.native
     
     /**
       * @const
       * @type {boolean}
       * @private
       */
-    val reverse_ : js.Any = js.native
+    /* private */ val reverse_ : js.Any = js.native
   }
 }

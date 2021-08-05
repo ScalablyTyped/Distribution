@@ -13,19 +13,15 @@ trait RestoreTableFromBackupOutput extends StObject {
 }
 object RestoreTableFromBackupOutput {
   
-  @scala.inline
-  def apply(): RestoreTableFromBackupOutput = {
+  inline def apply(): RestoreTableFromBackupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreTableFromBackupOutput]
   }
   
-  @scala.inline
-  implicit class RestoreTableFromBackupOutputMutableBuilder[Self <: RestoreTableFromBackupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreTableFromBackupOutput](x: Self) {
     
-    @scala.inline
-    def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+    inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+    inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
   }
 }

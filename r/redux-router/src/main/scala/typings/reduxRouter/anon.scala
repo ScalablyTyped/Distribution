@@ -28,41 +28,30 @@ object anon {
   }
   object ReadonlyMemoryRouterProps {
     
-    @scala.inline
-    def apply(): ReadonlyMemoryRouterProps = {
+    inline def apply(): ReadonlyMemoryRouterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyMemoryRouterProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyMemoryRouterPropsMutableBuilder[Self <: ReadonlyMemoryRouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyMemoryRouterProps](x: Self) {
       
-      @scala.inline
-      def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setInitialEntries(value: js.Array[LocationDescriptor[LocationState]]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+      inline def setInitialEntries(value: js.Array[LocationDescriptor[LocationState]]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
+      inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
       
-      @scala.inline
-      def setInitialEntriesVarargs(value: LocationDescriptor[LocationState]*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
+      inline def setInitialEntriesVarargs(value: LocationDescriptor[LocationState]*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
+      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
+      inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
-      @scala.inline
-      def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+      inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
     }
   }
   
@@ -75,30 +64,24 @@ object anon {
   }
   object ReadonlyPromptProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
     ): ReadonlyPromptProps = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyPromptProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromptPropsMutableBuilder[Self <: ReadonlyPromptProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromptProps](x: Self) {
       
-      @scala.inline
-      def setMessage(
+      inline def setMessage(
         value: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
       ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFunction2(value: (/* location */ Location[LocationState], /* action */ Action) => String | Boolean): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+      inline def setMessageFunction2(value: (/* location */ Location[LocationState], /* action */ Action) => String | Boolean): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWhen(value: Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      inline def setWhen(value: Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+      inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
     }
   }
   
@@ -119,47 +102,34 @@ object anon {
   }
   object ReadonlyRedirectProps {
     
-    @scala.inline
-    def apply(to: LocationDescriptor[LocationState]): ReadonlyRedirectProps = {
+    inline def apply(to: LocationDescriptor[LocationState]): ReadonlyRedirectProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyRedirectProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyRedirectPropsMutableBuilder[Self <: ReadonlyRedirectProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyRedirectProps](x: Self) {
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,17 +140,14 @@ object anon {
   }
   object ReadonlyRouterProps {
     
-    @scala.inline
-    def apply(history: History[LocationState]): ReadonlyRouterProps = {
+    inline def apply(history: History[LocationState]): ReadonlyRouterProps = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyRouterProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyRouterPropsMutableBuilder[Self <: ReadonlyRouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyRouterProps](x: Self) {
       
-      @scala.inline
-      def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,32 +162,24 @@ object anon {
   }
   object ReadonlyStaticRouterProps {
     
-    @scala.inline
-    def apply(): ReadonlyStaticRouterProps = {
+    inline def apply(): ReadonlyStaticRouterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyStaticRouterProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyStaticRouterPropsMutableBuilder[Self <: ReadonlyStaticRouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyStaticRouterProps](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setContext(value: StaticRouterContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StaticRouterContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String | js.Object): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String | js.Object): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
   
@@ -233,26 +192,20 @@ object anon {
   }
   object ReadonlySwitchProps {
     
-    @scala.inline
-    def apply(): ReadonlySwitchProps = {
+    inline def apply(): ReadonlySwitchProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlySwitchProps]
     }
     
-    @scala.inline
-    implicit class ReadonlySwitchPropsMutableBuilder[Self <: ReadonlySwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlySwitchProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
 }

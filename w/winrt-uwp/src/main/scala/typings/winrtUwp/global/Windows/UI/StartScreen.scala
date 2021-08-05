@@ -65,16 +65,14 @@ object StartScreen {
       * @return A boolean value that is True if jump lists are supported. Otherwise, False.
       */
     /* static member */
-    @scala.inline
-    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+    inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
     
     /**
       * Asynchronously retrieves the current jump list and its items.
       * @return When this method completes successfully, it returns the current JumpList . If the system does not support jump lists, this method returns an empty jump list and the SaveAsync method has no effect. Apps can check for this case using the isSupported method.
       */
     /* static member */
-    @scala.inline
-    def loadCurrentAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.UI.StartScreen.JumpList] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCurrentAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.UI.StartScreen.JumpList]]
+    inline def loadCurrentAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.UI.StartScreen.JumpList] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCurrentAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.UI.StartScreen.JumpList]]
   }
   
   /** Provides functionality for creating and defining jump list items for an app's jump list. */
@@ -123,8 +121,7 @@ object StartScreen {
       * @return A jump list item that can be added to an app's jump list through the items property.
       */
     /* static member */
-    @scala.inline
-    def createSeparator(): typings.winrtUwp.Windows.UI.StartScreen.JumpListItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createSeparator")().asInstanceOf[typings.winrtUwp.Windows.UI.StartScreen.JumpListItem]
+    inline def createSeparator(): typings.winrtUwp.Windows.UI.StartScreen.JumpListItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createSeparator")().asInstanceOf[typings.winrtUwp.Windows.UI.StartScreen.JumpListItem]
     
     /**
       * Creates a new jump list item for an app's jump list.
@@ -133,8 +130,7 @@ object StartScreen {
       * @return A jump list item with the specified parameters that can be added to an app's jump list through the items property.
       */
     /* static member */
-    @scala.inline
-    def createWithArguments(args: String, displayName: String): typings.winrtUwp.Windows.UI.StartScreen.JumpListItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithArguments")(args.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.UI.StartScreen.JumpListItem]
+    inline def createWithArguments(args: String, displayName: String): typings.winrtUwp.Windows.UI.StartScreen.JumpListItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithArguments")(args.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.UI.StartScreen.JumpListItem]
   }
   
   /** Specifies the kind of jump list item. */
@@ -235,32 +231,28 @@ object StartScreen {
       * @return True if the tile exists in the calling application; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def exists(tileId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(tileId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def exists(tileId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(tileId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Retrieves a list of secondary tiles created for the calling app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
     /* static member */
-    @scala.inline
-    def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     /**
       * Retrieves a list of secondary tiles created for another app in the same package as the calling app.
       * @param applicationId The Package Relative Application ID (PRAID) of the app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
     /* static member */
-    @scala.inline
-    def findAllAsync(applicationId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(applicationId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Retrieves a list of secondary tiles created for all of the apps in the package of the calling app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
     /* static member */
-    @scala.inline
-    def findAllForPackageAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllForPackageAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllForPackageAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllForPackageAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
   }
   
   /** Contains properties through which you can get or set a secondary tile's background color, foreground text, tile images, and app name display options. The properties in this class replace these SecondaryTile properties: */

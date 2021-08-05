@@ -23,34 +23,25 @@ trait TriggerConfig extends StObject {
 }
 object TriggerConfig {
   
-  @scala.inline
-  def apply(): TriggerConfig = {
+  inline def apply(): TriggerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriggerConfig]
   }
   
-  @scala.inline
-  implicit class TriggerConfigMutableBuilder[Self <: TriggerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerConfig](x: Self) {
     
-    @scala.inline
-    def setTriggerEvents(value: TriggerEventTypeList): Self = StObject.set(x, "triggerEvents", value.asInstanceOf[js.Any])
+    inline def setTriggerEvents(value: TriggerEventTypeList): Self = StObject.set(x, "triggerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerEventsUndefined: Self = StObject.set(x, "triggerEvents", js.undefined)
+    inline def setTriggerEventsUndefined: Self = StObject.set(x, "triggerEvents", js.undefined)
     
-    @scala.inline
-    def setTriggerEventsVarargs(value: TriggerEventType*): Self = StObject.set(x, "triggerEvents", js.Array(value :_*))
+    inline def setTriggerEventsVarargs(value: TriggerEventType*): Self = StObject.set(x, "triggerEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggerName(value: TriggerName): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: TriggerName): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
+    inline def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
     
-    @scala.inline
-    def setTriggerTargetArn(value: TriggerTargetArn): Self = StObject.set(x, "triggerTargetArn", value.asInstanceOf[js.Any])
+    inline def setTriggerTargetArn(value: TriggerTargetArn): Self = StObject.set(x, "triggerTargetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerTargetArnUndefined: Self = StObject.set(x, "triggerTargetArn", js.undefined)
+    inline def setTriggerTargetArnUndefined: Self = StObject.set(x, "triggerTargetArn", js.undefined)
   }
 }

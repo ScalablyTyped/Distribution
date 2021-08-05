@@ -22,8 +22,7 @@ trait AdTimeParam extends StObject {
 }
 object AdTimeParam {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client: vast | googima,
     creativetype: String,
     duration: Double,
@@ -35,25 +34,18 @@ object AdTimeParam {
     __obj.asInstanceOf[AdTimeParam]
   }
   
-  @scala.inline
-  implicit class AdTimeParamMutableBuilder[Self <: AdTimeParam] (val x: Self) extends AnyVal {
+  extension [Self <: AdTimeParam](x: Self) {
     
-    @scala.inline
-    def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativetype(value: String): Self = StObject.set(x, "creativetype", value.asInstanceOf[js.Any])
+    inline def setCreativetype(value: String): Self = StObject.set(x, "creativetype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

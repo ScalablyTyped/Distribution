@@ -10,16 +10,13 @@ trait UrlTestingToolsResource extends StObject {
 }
 object UrlTestingToolsResource {
   
-  @scala.inline
-  def apply(mobileFriendlyTest: MobileFriendlyTestResource): UrlTestingToolsResource = {
+  inline def apply(mobileFriendlyTest: MobileFriendlyTestResource): UrlTestingToolsResource = {
     val __obj = js.Dynamic.literal(mobileFriendlyTest = mobileFriendlyTest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlTestingToolsResource]
   }
   
-  @scala.inline
-  implicit class UrlTestingToolsResourceMutableBuilder[Self <: UrlTestingToolsResource] (val x: Self) extends AnyVal {
+  extension [Self <: UrlTestingToolsResource](x: Self) {
     
-    @scala.inline
-    def setMobileFriendlyTest(value: MobileFriendlyTestResource): Self = StObject.set(x, "mobileFriendlyTest", value.asInstanceOf[js.Any])
+    inline def setMobileFriendlyTest(value: MobileFriendlyTestResource): Self = StObject.set(x, "mobileFriendlyTest", value.asInstanceOf[js.Any])
   }
 }

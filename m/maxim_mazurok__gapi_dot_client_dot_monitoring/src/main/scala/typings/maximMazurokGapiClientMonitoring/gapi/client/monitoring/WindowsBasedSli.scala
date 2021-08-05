@@ -23,43 +23,31 @@ trait WindowsBasedSli extends StObject {
 }
 object WindowsBasedSli {
   
-  @scala.inline
-  def apply(): WindowsBasedSli = {
+  inline def apply(): WindowsBasedSli = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsBasedSli]
   }
   
-  @scala.inline
-  implicit class WindowsBasedSliMutableBuilder[Self <: WindowsBasedSli] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsBasedSli](x: Self) {
     
-    @scala.inline
-    def setGoodBadMetricFilter(value: String): Self = StObject.set(x, "goodBadMetricFilter", value.asInstanceOf[js.Any])
+    inline def setGoodBadMetricFilter(value: String): Self = StObject.set(x, "goodBadMetricFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoodBadMetricFilterUndefined: Self = StObject.set(x, "goodBadMetricFilter", js.undefined)
+    inline def setGoodBadMetricFilterUndefined: Self = StObject.set(x, "goodBadMetricFilter", js.undefined)
     
-    @scala.inline
-    def setGoodTotalRatioThreshold(value: PerformanceThreshold): Self = StObject.set(x, "goodTotalRatioThreshold", value.asInstanceOf[js.Any])
+    inline def setGoodTotalRatioThreshold(value: PerformanceThreshold): Self = StObject.set(x, "goodTotalRatioThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoodTotalRatioThresholdUndefined: Self = StObject.set(x, "goodTotalRatioThreshold", js.undefined)
+    inline def setGoodTotalRatioThresholdUndefined: Self = StObject.set(x, "goodTotalRatioThreshold", js.undefined)
     
-    @scala.inline
-    def setMetricMeanInRange(value: MetricRange): Self = StObject.set(x, "metricMeanInRange", value.asInstanceOf[js.Any])
+    inline def setMetricMeanInRange(value: MetricRange): Self = StObject.set(x, "metricMeanInRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricMeanInRangeUndefined: Self = StObject.set(x, "metricMeanInRange", js.undefined)
+    inline def setMetricMeanInRangeUndefined: Self = StObject.set(x, "metricMeanInRange", js.undefined)
     
-    @scala.inline
-    def setMetricSumInRange(value: MetricRange): Self = StObject.set(x, "metricSumInRange", value.asInstanceOf[js.Any])
+    inline def setMetricSumInRange(value: MetricRange): Self = StObject.set(x, "metricSumInRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricSumInRangeUndefined: Self = StObject.set(x, "metricSumInRange", js.undefined)
+    inline def setMetricSumInRangeUndefined: Self = StObject.set(x, "metricSumInRange", js.undefined)
     
-    @scala.inline
-    def setWindowPeriod(value: String): Self = StObject.set(x, "windowPeriod", value.asInstanceOf[js.Any])
+    inline def setWindowPeriod(value: String): Self = StObject.set(x, "windowPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowPeriodUndefined: Self = StObject.set(x, "windowPeriod", js.undefined)
+    inline def setWindowPeriodUndefined: Self = StObject.set(x, "windowPeriod", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(FormsDotImage: Image): ActiveXObjectNameMap = {
+  inline def apply(FormsDotImage: Image): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("Forms.Image")(FormsDotImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setFormsDotImage(value: Image): Self = StObject.set(x, "Forms.Image", value.asInstanceOf[js.Any])
+    inline def setFormsDotImage(value: Image): Self = StObject.set(x, "Forms.Image", value.asInstanceOf[js.Any])
   }
 }

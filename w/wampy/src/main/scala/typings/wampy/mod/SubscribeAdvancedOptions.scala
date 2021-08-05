@@ -12,19 +12,15 @@ trait SubscribeAdvancedOptions extends StObject {
 }
 object SubscribeAdvancedOptions {
   
-  @scala.inline
-  def apply(): SubscribeAdvancedOptions = {
+  inline def apply(): SubscribeAdvancedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscribeAdvancedOptions]
   }
   
-  @scala.inline
-  implicit class SubscribeAdvancedOptionsMutableBuilder[Self <: SubscribeAdvancedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeAdvancedOptions](x: Self) {
     
-    @scala.inline
-    def setMatch(value: prefix | wildcard): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: prefix | wildcard): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
   }
 }

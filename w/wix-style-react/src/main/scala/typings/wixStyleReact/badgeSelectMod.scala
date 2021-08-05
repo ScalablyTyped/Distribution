@@ -48,62 +48,44 @@ object badgeSelectMod {
   }
   object BadgeSelectProps {
     
-    @scala.inline
-    def apply(options: js.Array[BadgeSelectItem]): BadgeSelectProps = {
+    inline def apply(options: js.Array[BadgeSelectItem]): BadgeSelectProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadgeSelectProps]
     }
     
-    @scala.inline
-    implicit class BadgeSelectPropsMutableBuilder[Self <: BadgeSelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeSelectProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* option */ BadgeSelectItem => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* option */ BadgeSelectItem => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[BadgeSelectItem]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[BadgeSelectItem]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: BadgeSelectItem*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: BadgeSelectItem*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPopoverProps(value: PopoverCommonProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: PopoverCommonProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
+      inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      @scala.inline
-      def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+      inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
+      inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
       
-      @scala.inline
-      def setSize(value: BadgeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: BadgeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: BadgeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BadgeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
+      inline def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
+      inline def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
     }
   }
 }

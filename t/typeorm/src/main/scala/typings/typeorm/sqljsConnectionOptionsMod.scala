@@ -59,54 +59,39 @@ object sqljsConnectionOptionsMod {
   }
   object SqljsConnectionOptions {
     
-    @scala.inline
-    def apply(): SqljsConnectionOptions = {
+    inline def apply(): SqljsConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("sqljs")
       __obj.asInstanceOf[SqljsConnectionOptions]
     }
     
-    @scala.inline
-    implicit class SqljsConnectionOptionsMutableBuilder[Self <: SqljsConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SqljsConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      inline def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveCallback(value: js.Function): Self = StObject.set(x, "autoSaveCallback", value.asInstanceOf[js.Any])
+      inline def setAutoSaveCallback(value: js.Function): Self = StObject.set(x, "autoSaveCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveCallbackUndefined: Self = StObject.set(x, "autoSaveCallback", js.undefined)
+      inline def setAutoSaveCallbackUndefined: Self = StObject.set(x, "autoSaveCallback", js.undefined)
       
-      @scala.inline
-      def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: Uint8Array): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Uint8Array): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setSqlJsConfig(value: js.Any): Self = StObject.set(x, "sqlJsConfig", value.asInstanceOf[js.Any])
+      inline def setSqlJsConfig(value: js.Any): Self = StObject.set(x, "sqlJsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlJsConfigUndefined: Self = StObject.set(x, "sqlJsConfig", js.undefined)
+      inline def setSqlJsConfigUndefined: Self = StObject.set(x, "sqlJsConfig", js.undefined)
       
-      @scala.inline
-      def setType(value: sqljs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: sqljs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLocalForage(value: Boolean): Self = StObject.set(x, "useLocalForage", value.asInstanceOf[js.Any])
+      inline def setUseLocalForage(value: Boolean): Self = StObject.set(x, "useLocalForage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLocalForageUndefined: Self = StObject.set(x, "useLocalForage", js.undefined)
+      inline def setUseLocalForageUndefined: Self = StObject.set(x, "useLocalForage", js.undefined)
     }
   }
 }

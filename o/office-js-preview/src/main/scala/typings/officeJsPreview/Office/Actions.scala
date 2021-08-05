@@ -16,16 +16,13 @@ trait Actions extends StObject {
 }
 object Actions {
   
-  @scala.inline
-  def apply(associate: (String, js.Function1[/* arg */ js.UndefOr[js.Any], Unit]) => Unit): Actions = {
+  inline def apply(associate: (String, js.Function1[/* arg */ js.UndefOr[js.Any], Unit]) => Unit): Actions = {
     val __obj = js.Dynamic.literal(associate = js.Any.fromFunction2(associate))
     __obj.asInstanceOf[Actions]
   }
   
-  @scala.inline
-  implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+  extension [Self <: Actions](x: Self) {
     
-    @scala.inline
-    def setAssociate(value: (String, js.Function1[/* arg */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "associate", js.Any.fromFunction2(value))
+    inline def setAssociate(value: (String, js.Function1[/* arg */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "associate", js.Any.fromFunction2(value))
   }
 }

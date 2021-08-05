@@ -48,61 +48,43 @@ trait GetMemberResponse extends StObject {
 }
 object GetMemberResponse {
   
-  @scala.inline
-  def apply(): GetMemberResponse = {
+  inline def apply(): GetMemberResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMemberResponse]
   }
   
-  @scala.inline
-  implicit class GetMemberResponseMutableBuilder[Self <: GetMemberResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMemberResponse](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setEmail(value: string): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: string): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
+    inline def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
     
-    @scala.inline
-    def setMasterAccountId(value: string): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
+    inline def setMasterAccountId(value: string): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterAccountIdUndefined: Self = StObject.set(x, "masterAccountId", js.undefined)
+    inline def setMasterAccountIdUndefined: Self = StObject.set(x, "masterAccountId", js.undefined)
     
-    @scala.inline
-    def setRelationshipStatus(value: RelationshipStatus): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
+    inline def setRelationshipStatus(value: RelationshipStatus): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
+    inline def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }
 }

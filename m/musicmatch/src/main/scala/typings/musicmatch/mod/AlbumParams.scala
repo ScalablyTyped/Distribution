@@ -10,16 +10,13 @@ trait AlbumParams extends StObject {
 }
 object AlbumParams {
   
-  @scala.inline
-  def apply(album_id: Double): AlbumParams = {
+  inline def apply(album_id: Double): AlbumParams = {
     val __obj = js.Dynamic.literal(album_id = album_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumParams]
   }
   
-  @scala.inline
-  implicit class AlbumParamsMutableBuilder[Self <: AlbumParams] (val x: Self) extends AnyVal {
+  extension [Self <: AlbumParams](x: Self) {
     
-    @scala.inline
-    def setAlbum_id(value: Double): Self = StObject.set(x, "album_id", value.asInstanceOf[js.Any])
+    inline def setAlbum_id(value: Double): Self = StObject.set(x, "album_id", value.asInstanceOf[js.Any])
   }
 }

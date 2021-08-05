@@ -22,8 +22,7 @@ trait XQueryDefinition
      with XComponent
 object XQueryDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     PropertySetInfo: XPropertySetInfo,

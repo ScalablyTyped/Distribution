@@ -14,7 +14,7 @@ object global {
     /** Automation interface for DiskQuotaUser */
     @JSGlobal("DiskQuotaTypeLibrary.DIDiskQuotaUser")
     @js.native
-    class DIDiskQuotaUser protected ()
+    /* private */ class DIDiskQuotaUser ()
       extends StObject
          with typings.activexDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser {
       
@@ -26,7 +26,7 @@ object global {
       /* CompleteClass */
       override val AccountStatus: AccountStatusConstants = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey")
       var DiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey: typings.activexDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser = js.native
       
@@ -74,7 +74,7 @@ object global {
     /** Microsoft Disk Quota */
     @JSGlobal("DiskQuotaTypeLibrary.DiskQuotaControl")
     @js.native
-    class DiskQuotaControl protected ()
+    /* private */ class DiskQuotaControl ()
       extends StObject
          with typings.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl {
       
@@ -102,7 +102,7 @@ object global {
       /* CompleteClass */
       override def DeleteUser(pUser: typings.activexDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser): Unit = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("DiskQuotaTypeLibrary.DiskQuotaControl_typekey")
       var DiskQuotaTypeLibraryDotDiskQuotaControl_typekey: typings.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl = js.native
       

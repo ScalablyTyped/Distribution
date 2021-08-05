@@ -57,67 +57,47 @@ trait SchemaCustomTemplate extends StObject {
 }
 object SchemaCustomTemplate {
   
-  @scala.inline
-  def apply(): SchemaCustomTemplate = {
+  inline def apply(): SchemaCustomTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomTemplate]
   }
   
-  @scala.inline
-  implicit class SchemaCustomTemplateMutableBuilder[Self <: SchemaCustomTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomTemplate](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+    inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+    inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
     
-    @scala.inline
-    def setTemplateData(value: String): Self = StObject.set(x, "templateData", value.asInstanceOf[js.Any])
+    inline def setTemplateData(value: String): Self = StObject.set(x, "templateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateDataUndefined: Self = StObject.set(x, "templateData", js.undefined)
+    inline def setTemplateDataUndefined: Self = StObject.set(x, "templateData", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait ReturnpolicyCustomBatchResponse extends StObject {
 }
 object ReturnpolicyCustomBatchResponse {
   
-  @scala.inline
-  def apply(): ReturnpolicyCustomBatchResponse = {
+  inline def apply(): ReturnpolicyCustomBatchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnpolicyCustomBatchResponse]
   }
   
-  @scala.inline
-  implicit class ReturnpolicyCustomBatchResponseMutableBuilder[Self <: ReturnpolicyCustomBatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnpolicyCustomBatchResponse](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[ReturnpolicyCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[ReturnpolicyCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: ReturnpolicyCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ReturnpolicyCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

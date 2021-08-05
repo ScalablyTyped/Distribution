@@ -14,22 +14,17 @@ trait MediaSourceEventMap extends StObject {
 }
 object MediaSourceEventMap {
   
-  @scala.inline
-  def apply(sourceclose: Event, sourceended: Event, sourceopen: Event): MediaSourceEventMap = {
+  inline def apply(sourceclose: Event, sourceended: Event, sourceopen: Event): MediaSourceEventMap = {
     val __obj = js.Dynamic.literal(sourceclose = sourceclose.asInstanceOf[js.Any], sourceended = sourceended.asInstanceOf[js.Any], sourceopen = sourceopen.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaSourceEventMap]
   }
   
-  @scala.inline
-  implicit class MediaSourceEventMapMutableBuilder[Self <: MediaSourceEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSourceEventMap](x: Self) {
     
-    @scala.inline
-    def setSourceclose(value: Event): Self = StObject.set(x, "sourceclose", value.asInstanceOf[js.Any])
+    inline def setSourceclose(value: Event): Self = StObject.set(x, "sourceclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceended(value: Event): Self = StObject.set(x, "sourceended", value.asInstanceOf[js.Any])
+    inline def setSourceended(value: Event): Self = StObject.set(x, "sourceended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceopen(value: Event): Self = StObject.set(x, "sourceopen", value.asInstanceOf[js.Any])
+    inline def setSourceopen(value: Event): Self = StObject.set(x, "sourceopen", value.asInstanceOf[js.Any])
   }
 }

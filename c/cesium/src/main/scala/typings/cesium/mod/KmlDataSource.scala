@@ -32,21 +32,13 @@ object KmlDataSource {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def load(data: String): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
-  @scala.inline
-  def load(data: String, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: String): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: String, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
   /* static member */
-  @scala.inline
-  def load(data: Resource): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
-  @scala.inline
-  def load(data: Resource, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
-  @scala.inline
-  def load(data: Blob): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
-  @scala.inline
-  def load(data: Blob, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
-  @scala.inline
-  def load(data: Document): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
-  @scala.inline
-  def load(data: Document, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: Resource): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: Resource, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: Blob): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: Blob, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: Document): js.Promise[KmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KmlDataSource]]
+  inline def load(data: Document, options: Canvas): js.Promise[KmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KmlDataSource]]
 }

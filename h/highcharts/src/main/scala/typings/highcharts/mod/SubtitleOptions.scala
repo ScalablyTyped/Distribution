@@ -67,67 +67,47 @@ trait SubtitleOptions extends StObject {
 }
 object SubtitleOptions {
   
-  @scala.inline
-  def apply(): SubtitleOptions = {
+  inline def apply(): SubtitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubtitleOptions]
   }
   
-  @scala.inline
-  implicit class SubtitleOptionsMutableBuilder[Self <: SubtitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubtitleOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+    inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
+    inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
     
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    @scala.inline
-    def setWidthAdjust(value: Double): Self = StObject.set(x, "widthAdjust", value.asInstanceOf[js.Any])
+    inline def setWidthAdjust(value: Double): Self = StObject.set(x, "widthAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthAdjustUndefined: Self = StObject.set(x, "widthAdjust", js.undefined)
+    inline def setWidthAdjustUndefined: Self = StObject.set(x, "widthAdjust", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

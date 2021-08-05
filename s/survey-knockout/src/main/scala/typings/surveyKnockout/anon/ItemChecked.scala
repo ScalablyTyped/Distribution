@@ -34,8 +34,7 @@ trait ItemChecked extends StObject {
 }
 object ItemChecked {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearButton: String,
     column: String,
     controlLabel: String,
@@ -54,46 +53,32 @@ object ItemChecked {
     __obj.asInstanceOf[ItemChecked]
   }
   
-  @scala.inline
-  implicit class ItemCheckedMutableBuilder[Self <: ItemChecked] (val x: Self) extends AnyVal {
+  extension [Self <: ItemChecked](x: Self) {
     
-    @scala.inline
-    def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
+    inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlLabel(value: String): Self = StObject.set(x, "controlLabel", value.asInstanceOf[js.Any])
+    inline def setControlLabel(value: String): Self = StObject.set(x, "controlLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
+    inline def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
+    inline def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
+    inline def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
+    inline def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelChecked(value: String): Self = StObject.set(x, "labelChecked", value.asInstanceOf[js.Any])
+    inline def setLabelChecked(value: String): Self = StObject.set(x, "labelChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialDecorator(value: String): Self = StObject.set(x, "materialDecorator", value.asInstanceOf[js.Any])
+    inline def setMaterialDecorator(value: String): Self = StObject.set(x, "materialDecorator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

@@ -45,35 +45,28 @@ object JWK {
   @js.native
   val MODE_WRAP: String = js.native
   
-  @scala.inline
-  def asKey(
+  inline def asKey(
     key: String | Buffer | js.Object | RawKey,
     form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
     extras: js.UndefOr[Record[String, js.Any]]
   ): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
-  @scala.inline
-  def asKeyStore(ks: String): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
+  inline def asKeyStore(ks: String): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
   /**
     * To import a JWK-set as a keystore
     */
-  @scala.inline
-  def asKeyStore(ks: js.Object): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
+  inline def asKeyStore(ks: js.Object): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
   
-  @scala.inline
-  def createKey(kty: js.Any, size: js.Any, props: js.Any): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(kty.asInstanceOf[js.Any], size.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def createKey(kty: js.Any, size: js.Any, props: js.Any): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(kty.asInstanceOf[js.Any], size.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
   /**
     * To create an empty keystore
     */
-  @scala.inline
-  def createKeyStore(): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyStore")().asInstanceOf[KeyStore]
+  inline def createKeyStore(): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyStore")().asInstanceOf[KeyStore]
   
-  @scala.inline
-  def isKey(input: js.Any): /* is node-jose.node-jose.JWK.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.Key */ Boolean]
+  inline def isKey(input: js.Any): /* is node-jose.node-jose.JWK.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.Key */ Boolean]
   
-  @scala.inline
-  def isKeyStore(input: js.Any): /* is node-jose.node-jose.JWK.KeyStore */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyStore")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.KeyStore */ Boolean]
+  inline def isKeyStore(input: js.Any): /* is node-jose.node-jose.JWK.KeyStore */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyStore")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.KeyStore */ Boolean]
   
   trait JWEEncryptor extends StObject {
     
@@ -83,21 +76,17 @@ object JWK {
   }
   object JWEEncryptor {
     
-    @scala.inline
-    def apply(`final`: () => js.Promise[String], update: js.Any => JWEEncryptor): JWEEncryptor = {
+    inline def apply(`final`: () => js.Promise[String], update: js.Any => JWEEncryptor): JWEEncryptor = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
       __obj.updateDynamic("final")(js.Any.fromFunction0(`final`))
       __obj.asInstanceOf[JWEEncryptor]
     }
     
-    @scala.inline
-    implicit class JWEEncryptorMutableBuilder[Self <: JWEEncryptor] (val x: Self) extends AnyVal {
+    extension [Self <: JWEEncryptor](x: Self) {
       
-      @scala.inline
-      def setFinal(value: () => js.Promise[String]): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
+      inline def setFinal(value: () => js.Promise[String]): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: js.Any => JWEEncryptor): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: js.Any => JWEEncryptor): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -206,32 +195,24 @@ object JWK {
   }
   object KeyStoreGetFilter {
     
-    @scala.inline
-    def apply(): KeyStoreGetFilter = {
+    inline def apply(): KeyStoreGetFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyStoreGetFilter]
     }
     
-    @scala.inline
-    implicit class KeyStoreGetFilterMutableBuilder[Self <: KeyStoreGetFilter] (val x: Self) extends AnyVal {
+    extension [Self <: KeyStoreGetFilter](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
       
-      @scala.inline
-      def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+      inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
+      inline def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
       
-      @scala.inline
-      def setUse(value: KeyUse): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: KeyUse): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     }
   }
   
@@ -243,17 +224,14 @@ object JWK {
   }
   object KeyStoreGetOptions {
     
-    @scala.inline
-    def apply(kid: String): KeyStoreGetOptions = {
+    inline def apply(kid: String): KeyStoreGetOptions = {
       val __obj = js.Dynamic.literal(kid = kid.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyStoreGetOptions]
     }
     
-    @scala.inline
-    implicit class KeyStoreGetOptionsMutableBuilder[Self <: KeyStoreGetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeyStoreGetOptions](x: Self) {
       
-      @scala.inline
-      def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
+      inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,14 +243,11 @@ object JWK {
   trait KeyUse extends StObject
   object KeyUse {
     
-    @scala.inline
-    def desc: typings.nodeJose.nodeJoseStrings.desc = "desc".asInstanceOf[typings.nodeJose.nodeJoseStrings.desc]
+    inline def desc: typings.nodeJose.nodeJoseStrings.desc = "desc".asInstanceOf[typings.nodeJose.nodeJoseStrings.desc]
     
-    @scala.inline
-    def enc: typings.nodeJose.nodeJoseStrings.enc = "enc".asInstanceOf[typings.nodeJose.nodeJoseStrings.enc]
+    inline def enc: typings.nodeJose.nodeJoseStrings.enc = "enc".asInstanceOf[typings.nodeJose.nodeJoseStrings.enc]
     
-    @scala.inline
-    def sig: typings.nodeJose.nodeJoseStrings.sig = "sig".asInstanceOf[typings.nodeJose.nodeJoseStrings.sig]
+    inline def sig: typings.nodeJose.nodeJoseStrings.sig = "sig".asInstanceOf[typings.nodeJose.nodeJoseStrings.sig]
   }
   
   trait RawKey extends StObject {
@@ -292,32 +267,24 @@ object JWK {
   }
   object RawKey {
     
-    @scala.inline
-    def apply(alg: String, e: String, kid: String, kty: String, n: String, use: KeyUse): RawKey = {
+    inline def apply(alg: String, e: String, kid: String, kty: String, n: String, use: KeyUse): RawKey = {
       val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], kid = kid.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawKey]
     }
     
-    @scala.inline
-    implicit class RawKeyMutableBuilder[Self <: RawKey] (val x: Self) extends AnyVal {
+    extension [Self <: RawKey](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
+      inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+      inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse(value: KeyUse): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: KeyUse): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     }
   }
 }

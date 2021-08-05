@@ -10,10 +10,8 @@ object mod {
   /**
     * Imagemin plugin for {@link https://www.lcdf.org/gifsicle/|Gifsicle}
     */
-  @scala.inline
-  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  @scala.inline
-  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  inline def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   @JSImport("imagemin-gifsicle", JSImport.Namespace)
   @js.native
@@ -42,32 +40,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
+      inline def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterlacedUndefined: Self = StObject.set(x, "interlaced", js.undefined)
+      inline def setInterlacedUndefined: Self = StObject.set(x, "interlaced", js.undefined)
       
-      @scala.inline
-      def setOptimizationLevel(value: Double): Self = StObject.set(x, "optimizationLevel", value.asInstanceOf[js.Any])
+      inline def setOptimizationLevel(value: Double): Self = StObject.set(x, "optimizationLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizationLevelUndefined: Self = StObject.set(x, "optimizationLevel", js.undefined)
+      inline def setOptimizationLevelUndefined: Self = StObject.set(x, "optimizationLevel", js.undefined)
     }
   }
 }

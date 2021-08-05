@@ -18,19 +18,15 @@ trait ASPxClientAppointmentDeletingEventArgs
 }
 object ASPxClientAppointmentDeletingEventArgs {
   
-  @scala.inline
-  def apply(appointmentIds: js.Array[String], cancel: Boolean): ASPxClientAppointmentDeletingEventArgs = {
+  inline def apply(appointmentIds: js.Array[String], cancel: Boolean): ASPxClientAppointmentDeletingEventArgs = {
     val __obj = js.Dynamic.literal(appointmentIds = appointmentIds.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientAppointmentDeletingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentDeletingEventArgsMutableBuilder[Self <: ASPxClientAppointmentDeletingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointmentDeletingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAppointmentIds(value: js.Array[String]): Self = StObject.set(x, "appointmentIds", value.asInstanceOf[js.Any])
+    inline def setAppointmentIds(value: js.Array[String]): Self = StObject.set(x, "appointmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentIdsVarargs(value: String*): Self = StObject.set(x, "appointmentIds", js.Array(value :_*))
+    inline def setAppointmentIdsVarargs(value: String*): Self = StObject.set(x, "appointmentIds", js.Array(value :_*))
   }
 }

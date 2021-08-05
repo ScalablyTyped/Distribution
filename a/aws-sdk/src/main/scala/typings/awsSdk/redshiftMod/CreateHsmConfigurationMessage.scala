@@ -43,8 +43,7 @@ trait CreateHsmConfigurationMessage extends StObject {
 }
 object CreateHsmConfigurationMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     HsmConfigurationIdentifier: String,
     HsmIpAddress: String,
@@ -56,34 +55,24 @@ object CreateHsmConfigurationMessage {
     __obj.asInstanceOf[CreateHsmConfigurationMessage]
   }
   
-  @scala.inline
-  implicit class CreateHsmConfigurationMessageMutableBuilder[Self <: CreateHsmConfigurationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHsmConfigurationMessage](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmConfigurationIdentifier(value: String): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
+    inline def setHsmConfigurationIdentifier(value: String): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmIpAddress(value: String): Self = StObject.set(x, "HsmIpAddress", value.asInstanceOf[js.Any])
+    inline def setHsmIpAddress(value: String): Self = StObject.set(x, "HsmIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmPartitionName(value: String): Self = StObject.set(x, "HsmPartitionName", value.asInstanceOf[js.Any])
+    inline def setHsmPartitionName(value: String): Self = StObject.set(x, "HsmPartitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmPartitionPassword(value: String): Self = StObject.set(x, "HsmPartitionPassword", value.asInstanceOf[js.Any])
+    inline def setHsmPartitionPassword(value: String): Self = StObject.set(x, "HsmPartitionPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmServerPublicCertificate(value: String): Self = StObject.set(x, "HsmServerPublicCertificate", value.asInstanceOf[js.Any])
+    inline def setHsmServerPublicCertificate(value: String): Self = StObject.set(x, "HsmServerPublicCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

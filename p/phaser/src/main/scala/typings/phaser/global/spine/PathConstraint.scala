@@ -104,27 +104,23 @@ object PathConstraint {
   @JSGlobal("spine.PathConstraint.AFTER")
   @js.native
   def AFTER: Double = js.native
-  @scala.inline
-  def AFTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AFTER")(x.asInstanceOf[js.Any])
+  inline def AFTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AFTER")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.PathConstraint.BEFORE")
   @js.native
   def BEFORE: Double = js.native
-  @scala.inline
-  def BEFORE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEFORE")(x.asInstanceOf[js.Any])
+  inline def BEFORE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEFORE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.PathConstraint.NONE")
   @js.native
   def NONE: Double = js.native
-  @scala.inline
-  def NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
+  inline def NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.PathConstraint.epsilon")
   @js.native
   def epsilon: Double = js.native
-  @scala.inline
-  def epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epsilon")(x.asInstanceOf[js.Any])
+  inline def epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epsilon")(x.asInstanceOf[js.Any])
 }

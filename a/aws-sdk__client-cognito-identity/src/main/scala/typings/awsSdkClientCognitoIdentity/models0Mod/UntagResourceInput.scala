@@ -19,8 +19,7 @@ trait UntagResourceInput extends StObject {
 }
 object UntagResourceInput {
   
-  @scala.inline
-  def apply(): UntagResourceInput = {
+  inline def apply(): UntagResourceInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UntagResourceInput]
   }
@@ -29,25 +28,18 @@ object UntagResourceInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: UntagResourceInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: UntagResourceInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class UntagResourceInputMutableBuilder[Self <: UntagResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: UntagResourceInput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
-    @scala.inline
-    def setTagKeys(value: js.Array[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: js.Array[String]): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
+    inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    @scala.inline
-    def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

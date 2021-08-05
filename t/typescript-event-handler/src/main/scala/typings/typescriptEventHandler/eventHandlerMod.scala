@@ -16,7 +16,7 @@ object eventHandlerMod {
     
     def handleAsync(value: TInput): js.Promise[Unit] = js.native
     
-    val handlers: js.Any = js.native
+    /* private */ val handlers: js.Any = js.native
     
     def register(pred: Predicate[TInput], handler: Action[TInput]): Unit = js.native
     

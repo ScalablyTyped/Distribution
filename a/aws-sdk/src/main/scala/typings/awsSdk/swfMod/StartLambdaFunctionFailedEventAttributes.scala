@@ -23,31 +23,23 @@ trait StartLambdaFunctionFailedEventAttributes extends StObject {
 }
 object StartLambdaFunctionFailedEventAttributes {
   
-  @scala.inline
-  def apply(): StartLambdaFunctionFailedEventAttributes = {
+  inline def apply(): StartLambdaFunctionFailedEventAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartLambdaFunctionFailedEventAttributes]
   }
   
-  @scala.inline
-  implicit class StartLambdaFunctionFailedEventAttributesMutableBuilder[Self <: StartLambdaFunctionFailedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: StartLambdaFunctionFailedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setCause(value: StartLambdaFunctionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: StartLambdaFunctionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setMessage(value: CauseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: CauseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
+    inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledEventIdUndefined: Self = StObject.set(x, "scheduledEventId", js.undefined)
+    inline def setScheduledEventIdUndefined: Self = StObject.set(x, "scheduledEventId", js.undefined)
   }
 }

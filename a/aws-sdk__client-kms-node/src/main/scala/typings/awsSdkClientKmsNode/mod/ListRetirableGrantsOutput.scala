@@ -10,8 +10,7 @@ trait ListRetirableGrantsOutput
      with typings.awsSdkClientKmsNode.typesListRetirableGrantsOutputMod.ListRetirableGrantsOutput
 object ListRetirableGrantsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListRetirableGrantsOutput = {
+  inline def apply($metadata: ResponseMetadata): ListRetirableGrantsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRetirableGrantsOutput]
   }

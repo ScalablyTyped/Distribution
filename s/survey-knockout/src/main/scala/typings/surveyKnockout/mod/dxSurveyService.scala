@@ -87,6 +87,5 @@ object dxSurveyService {
   @JSImport("survey-knockout", "dxSurveyService.serviceUrl")
   @js.native
   def serviceUrl: String = js.native
-  @scala.inline
-  def serviceUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceUrl")(x.asInstanceOf[js.Any])
+  inline def serviceUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceUrl")(x.asInstanceOf[js.Any])
 }

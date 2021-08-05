@@ -23,28 +23,21 @@ trait SchemaManagedConfigurationsSettingsListResponse extends StObject {
 }
 object SchemaManagedConfigurationsSettingsListResponse {
   
-  @scala.inline
-  def apply(): SchemaManagedConfigurationsSettingsListResponse = {
+  inline def apply(): SchemaManagedConfigurationsSettingsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedConfigurationsSettingsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaManagedConfigurationsSettingsListResponseMutableBuilder[Self <: SchemaManagedConfigurationsSettingsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedConfigurationsSettingsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurationsSettings(value: js.Array[SchemaManagedConfigurationsSettings]): Self = StObject.set(x, "managedConfigurationsSettings", value.asInstanceOf[js.Any])
+    inline def setManagedConfigurationsSettings(value: js.Array[SchemaManagedConfigurationsSettings]): Self = StObject.set(x, "managedConfigurationsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationsSettingsUndefined: Self = StObject.set(x, "managedConfigurationsSettings", js.undefined)
+    inline def setManagedConfigurationsSettingsUndefined: Self = StObject.set(x, "managedConfigurationsSettings", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurationsSettingsVarargs(value: SchemaManagedConfigurationsSettings*): Self = StObject.set(x, "managedConfigurationsSettings", js.Array(value :_*))
+    inline def setManagedConfigurationsSettingsVarargs(value: SchemaManagedConfigurationsSettings*): Self = StObject.set(x, "managedConfigurationsSettings", js.Array(value :_*))
   }
 }

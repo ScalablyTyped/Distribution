@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pathCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def pathCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pathCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pathCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

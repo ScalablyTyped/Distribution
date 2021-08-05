@@ -32,8 +32,7 @@ object stepperUniDriverMod {
   }
   object StepperUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickStep: Double => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -50,32 +49,23 @@ object stepperUniDriverMod {
       __obj.asInstanceOf[StepperUniDriver]
     }
     
-    @scala.inline
-    implicit class StepperUniDriverMutableBuilder[Self <: StepperUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: StepperUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickStep(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickStep", js.Any.fromFunction1(value))
+      inline def setClickStep(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickStep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFit(value: () => js.Promise[StepperFit]): Self = StObject.set(x, "getFit", js.Any.fromFunction0(value))
+      inline def setGetFit(value: () => js.Promise[StepperFit]): Self = StObject.set(x, "getFit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumberOfSteps(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfSteps", js.Any.fromFunction0(value))
+      inline def setGetNumberOfSteps(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfSteps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStepText(value: Double => js.Promise[String]): Self = StObject.set(x, "getStepText", js.Any.fromFunction1(value))
+      inline def setGetStepText(value: Double => js.Promise[String]): Self = StObject.set(x, "getStepText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStepType(value: Double => js.Promise[StepperStepType]): Self = StObject.set(x, "getStepType", js.Any.fromFunction1(value))
+      inline def setGetStepType(value: Double => js.Promise[StepperStepType]): Self = StObject.set(x, "getStepType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetType(value: () => js.Promise[StepperType]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => js.Promise[StepperType]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHoverStep(value: Double => js.Promise[Unit]): Self = StObject.set(x, "hoverStep", js.Any.fromFunction1(value))
+      inline def setHoverStep(value: Double => js.Promise[Unit]): Self = StObject.set(x, "hoverStep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsStepActive(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isStepActive", js.Any.fromFunction1(value))
+      inline def setIsStepActive(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isStepActive", js.Any.fromFunction1(value))
     }
   }
 }

@@ -15,16 +15,13 @@ trait Text
 }
 object Text {
   
-  @scala.inline
-  def apply(models: IModelMap): Text = {
+  inline def apply(models: IModelMap): Text = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait PickImplurlUrl extends StObject {
 }
 object PickImplurlUrl {
   
-  @scala.inline
-  def apply(url: String): PickImplurlUrl = {
+  inline def apply(url: String): PickImplurlUrl = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplurlUrl]
   }
   
-  @scala.inline
-  implicit class PickImplurlUrlMutableBuilder[Self <: PickImplurlUrl] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplurlUrl](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

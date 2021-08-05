@@ -5,43 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def clearCustomQueryHandlers(): scala.Unit = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearCustomQueryHandlers")().asInstanceOf[scala.Unit]
+inline def clearCustomQueryHandlers(): scala.Unit = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearCustomQueryHandlers")().asInstanceOf[scala.Unit]
 
-@scala.inline
-def connect(): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
-@scala.inline
-def connect(options: typings.puppeteer.mod.ConnectOptions): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
+inline def connect(): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
+inline def connect(options: typings.puppeteer.mod.ConnectOptions): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
 
-@scala.inline
-def createBrowserFetcher(): typings.puppeteer.mod.BrowserFetcher = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")().asInstanceOf[typings.puppeteer.mod.BrowserFetcher]
-@scala.inline
-def createBrowserFetcher(options: typings.puppeteer.mod.FetcherOptions): typings.puppeteer.mod.BrowserFetcher = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")(options.asInstanceOf[js.Any]).asInstanceOf[typings.puppeteer.mod.BrowserFetcher]
+inline def createBrowserFetcher(): typings.puppeteer.mod.BrowserFetcher = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")().asInstanceOf[typings.puppeteer.mod.BrowserFetcher]
+inline def createBrowserFetcher(options: typings.puppeteer.mod.FetcherOptions): typings.puppeteer.mod.BrowserFetcher = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")(options.asInstanceOf[js.Any]).asInstanceOf[typings.puppeteer.mod.BrowserFetcher]
 
-@scala.inline
-def customQueryHandlerNames(): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[java.lang.String]]
+inline def customQueryHandlerNames(): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[java.lang.String]]
 
-@scala.inline
-def defaultArgs(): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")().asInstanceOf[js.Array[java.lang.String]]
-@scala.inline
-def defaultArgs(options: typings.puppeteer.mod.ChromeArgOptions): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
+inline def defaultArgs(): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")().asInstanceOf[js.Array[java.lang.String]]
+inline def defaultArgs(options: typings.puppeteer.mod.ChromeArgOptions): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
 
-@scala.inline
-def executablePath(): java.lang.String = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")().asInstanceOf[java.lang.String]
+inline def executablePath(): java.lang.String = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")().asInstanceOf[java.lang.String]
 
-@scala.inline
-def launch(): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
-@scala.inline
-def launch(options: typings.puppeteer.mod.LaunchOptions): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("launch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
+inline def launch(): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
+inline def launch(options: typings.puppeteer.mod.LaunchOptions): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("launch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
 
-@scala.inline
-def product: typings.puppeteer.mod.Product_ = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].selectDynamic("product").asInstanceOf[typings.puppeteer.mod.Product_]
+inline def product: typings.puppeteer.mod.Product_ = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].selectDynamic("product").asInstanceOf[typings.puppeteer.mod.Product_]
 
-@scala.inline
-def registerCustomQueryHandler(name: java.lang.String, queryHandler: typings.puppeteer.mod.CustomQueryHandler): scala.Unit = (typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomQueryHandler")(name.asInstanceOf[js.Any], queryHandler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerCustomQueryHandler(name: java.lang.String, queryHandler: typings.puppeteer.mod.CustomQueryHandler): scala.Unit = (typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomQueryHandler")(name.asInstanceOf[js.Any], queryHandler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def unregisterCustomQueryHandler(name: java.lang.String): scala.Unit = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCustomQueryHandler")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def unregisterCustomQueryHandler(name: java.lang.String): scala.Unit = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCustomQueryHandler")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 type CustomError = typings.std.Error
 

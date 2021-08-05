@@ -16,8 +16,7 @@ trait ContinuousIntegration extends StObject {
 }
 object ContinuousIntegration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     continuousIntegration: scala.Double,
     manual: scala.Double,
     none: scala.Double,
@@ -27,19 +26,14 @@ object ContinuousIntegration {
     __obj.asInstanceOf[ContinuousIntegration]
   }
   
-  @scala.inline
-  implicit class ContinuousIntegrationMutableBuilder[Self <: ContinuousIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousIntegration](x: Self) {
     
-    @scala.inline
-    def setContinuousIntegration(value: scala.Double): Self = StObject.set(x, "continuousIntegration", value.asInstanceOf[js.Any])
+    inline def setContinuousIntegration(value: scala.Double): Self = StObject.set(x, "continuousIntegration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManual(value: scala.Double): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+    inline def setManual(value: scala.Double): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait PrintCustomTextOptionDetails extends StObject {
 }
 object PrintCustomTextOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     errorText: String,
     maxCharacters: Double,
@@ -52,31 +51,22 @@ object PrintCustomTextOptionDetails {
     __obj.asInstanceOf[PrintCustomTextOptionDetails]
   }
   
-  @scala.inline
-  implicit class PrintCustomTextOptionDetailsMutableBuilder[Self <: PrintCustomTextOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PrintCustomTextOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCharacters(value: Double): Self = StObject.set(x, "maxCharacters", value.asInstanceOf[js.Any])
+    inline def setMaxCharacters(value: Double): Self = StObject.set(x, "maxCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionId(value: String): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
+    inline def setOptionId(value: String): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionType(value: PrintOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
+    inline def setOptionType(value: PrintOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: PrintOptionStates): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PrintOptionStates): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrySetValue(value: js.Any => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
+    inline def setTrySetValue(value: js.Any => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

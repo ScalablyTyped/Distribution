@@ -22,19 +22,14 @@ object Number {
   @js.native
   val ^ : NumberConstructor = js.native
   
-  @scala.inline
-  implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
+  extension [Self <: Number](x: Self) {
     
-    @scala.inline
-    def setGetUnit(value: () => java.lang.String): Self = StObject.set(x, "getUnit", js.Any.fromFunction0(value))
+    inline def setGetUnit(value: () => java.lang.String): Self = StObject.set(x, "getUnit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetUnit(value: java.lang.String => Unit): Self = StObject.set(x, "setUnit", js.Any.fromFunction1(value))
+    inline def setSetUnit(value: java.lang.String => Unit): Self = StObject.set(x, "setUnit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

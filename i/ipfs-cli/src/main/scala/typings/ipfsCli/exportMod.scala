@@ -73,6 +73,5 @@ object exportMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxNamePassoutOutputTimeout: Name): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxNamePassoutOutputTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxNamePassoutOutputTimeout: Name): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxNamePassoutOutputTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

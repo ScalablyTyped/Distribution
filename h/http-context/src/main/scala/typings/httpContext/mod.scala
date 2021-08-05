@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Context = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Context]
+  inline def apply(): Context = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Context]
   
   @JSImport("http-context", JSImport.Namespace)
   @js.native
@@ -115,23 +114,18 @@ object mod {
   }
   object RequestJSON {
     
-    @scala.inline
-    def apply(header: IncomingHttpHeaders, method: String, url: String): RequestJSON = {
+    inline def apply(header: IncomingHttpHeaders, method: String, url: String): RequestJSON = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestJSON]
     }
     
-    @scala.inline
-    implicit class RequestJSONMutableBuilder[Self <: RequestJSON] (val x: Self) extends AnyVal {
+    extension [Self <: RequestJSON](x: Self) {
       
-      @scala.inline
-      def setHeader(value: IncomingHttpHeaders): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: IncomingHttpHeaders): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,23 +193,18 @@ object mod {
   }
   object ResponseJSON {
     
-    @scala.inline
-    def apply(header: OutgoingHttpHeaders, message: String, status: Double): ResponseJSON = {
+    inline def apply(header: OutgoingHttpHeaders, message: String, status: Double): ResponseJSON = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseJSON]
     }
     
-    @scala.inline
-    implicit class ResponseJSONMutableBuilder[Self <: ResponseJSON] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseJSON](x: Self) {
       
-      @scala.inline
-      def setHeader(value: OutgoingHttpHeaders): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: OutgoingHttpHeaders): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

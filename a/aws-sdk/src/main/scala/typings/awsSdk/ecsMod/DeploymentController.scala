@@ -13,17 +13,14 @@ trait DeploymentController extends StObject {
 }
 object DeploymentController {
   
-  @scala.inline
-  def apply(`type`: DeploymentControllerType): DeploymentController = {
+  inline def apply(`type`: DeploymentControllerType): DeploymentController = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentController]
   }
   
-  @scala.inline
-  implicit class DeploymentControllerMutableBuilder[Self <: DeploymentController] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentController](x: Self) {
     
-    @scala.inline
-    def setType(value: DeploymentControllerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeploymentControllerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait EventPortalSelected extends StObject {
 }
 object EventPortalSelected {
   
-  @scala.inline
-  def apply(selectedPortalGuid: String, unselectedPortalGuid: String): EventPortalSelected = {
+  inline def apply(selectedPortalGuid: String, unselectedPortalGuid: String): EventPortalSelected = {
     val __obj = js.Dynamic.literal(selectedPortalGuid = selectedPortalGuid.asInstanceOf[js.Any], unselectedPortalGuid = unselectedPortalGuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPortalSelected]
   }
   
-  @scala.inline
-  implicit class EventPortalSelectedMutableBuilder[Self <: EventPortalSelected] (val x: Self) extends AnyVal {
+  extension [Self <: EventPortalSelected](x: Self) {
     
-    @scala.inline
-    def setSelectedPortalGuid(value: String): Self = StObject.set(x, "selectedPortalGuid", value.asInstanceOf[js.Any])
+    inline def setSelectedPortalGuid(value: String): Self = StObject.set(x, "selectedPortalGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectedPortalGuid(value: String): Self = StObject.set(x, "unselectedPortalGuid", value.asInstanceOf[js.Any])
+    inline def setUnselectedPortalGuid(value: String): Self = StObject.set(x, "unselectedPortalGuid", value.asInstanceOf[js.Any])
   }
 }

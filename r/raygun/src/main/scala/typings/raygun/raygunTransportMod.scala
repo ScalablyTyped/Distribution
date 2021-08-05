@@ -11,6 +11,5 @@ object raygunTransportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def send(options: SendOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def send(options: SendOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

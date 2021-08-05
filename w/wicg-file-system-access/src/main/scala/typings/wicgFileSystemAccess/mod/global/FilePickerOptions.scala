@@ -12,28 +12,21 @@ trait FilePickerOptions extends StObject {
 }
 object FilePickerOptions {
   
-  @scala.inline
-  def apply(): FilePickerOptions = {
+  inline def apply(): FilePickerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilePickerOptions]
   }
   
-  @scala.inline
-  implicit class FilePickerOptionsMutableBuilder[Self <: FilePickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilePickerOptions](x: Self) {
     
-    @scala.inline
-    def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
+    inline def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeAcceptAllOptionUndefined: Self = StObject.set(x, "excludeAcceptAllOption", js.undefined)
+    inline def setExcludeAcceptAllOptionUndefined: Self = StObject.set(x, "excludeAcceptAllOption", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[FilePickerAcceptType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[FilePickerAcceptType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: FilePickerAcceptType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: FilePickerAcceptType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

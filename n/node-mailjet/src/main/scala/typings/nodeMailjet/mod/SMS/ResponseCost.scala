@@ -12,19 +12,15 @@ trait ResponseCost extends StObject {
 }
 object ResponseCost {
   
-  @scala.inline
-  def apply(Currency: String, Value: Double): ResponseCost = {
+  inline def apply(Currency: String, Value: Double): ResponseCost = {
     val __obj = js.Dynamic.literal(Currency = Currency.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseCost]
   }
   
-  @scala.inline
-  implicit class ResponseCostMutableBuilder[Self <: ResponseCost] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseCost](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GamepadInputConfig extends StObject {
 }
 object GamepadInputConfig {
   
-  @scala.inline
-  def apply(): GamepadInputConfig = {
+  inline def apply(): GamepadInputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GamepadInputConfig]
   }
   
-  @scala.inline
-  implicit class GamepadInputConfigMutableBuilder[Self <: GamepadInputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GamepadInputConfig](x: Self) {
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

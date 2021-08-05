@@ -10,16 +10,13 @@ trait EndResult extends StObject {
 }
 object EndResult {
   
-  @scala.inline
-  def apply(finished: Boolean): EndResult = {
+  inline def apply(finished: Boolean): EndResult = {
     val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndResult]
   }
   
-  @scala.inline
-  implicit class EndResultMutableBuilder[Self <: EndResult] (val x: Self) extends AnyVal {
+  extension [Self <: EndResult](x: Self) {
     
-    @scala.inline
-    def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
   }
 }

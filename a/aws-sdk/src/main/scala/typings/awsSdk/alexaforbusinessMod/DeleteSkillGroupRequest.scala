@@ -13,19 +13,15 @@ trait DeleteSkillGroupRequest extends StObject {
 }
 object DeleteSkillGroupRequest {
   
-  @scala.inline
-  def apply(): DeleteSkillGroupRequest = {
+  inline def apply(): DeleteSkillGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSkillGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSkillGroupRequestMutableBuilder[Self <: DeleteSkillGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSkillGroupRequest](x: Self) {
     
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
+    inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
+    inline def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
   }
 }

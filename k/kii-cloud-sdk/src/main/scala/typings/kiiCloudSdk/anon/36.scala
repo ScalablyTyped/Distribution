@@ -14,8 +14,7 @@ trait `36` extends StObject {
 }
 object `36` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     failure: (KiiUser, KiiSocialNetworkName, String) => js.Any,
     success: (KiiUser, KiiSocialNetworkName) => js.Any
   ): `36` = {
@@ -23,13 +22,10 @@ object `36` {
     __obj.asInstanceOf[`36`]
   }
   
-  @scala.inline
-  implicit class `36MutableBuilder`[Self <: `36`] (val x: Self) extends AnyVal {
+  extension [Self <: `36`](x: Self) {
     
-    @scala.inline
-    def setFailure(value: (KiiUser, KiiSocialNetworkName, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction3(value))
+    inline def setFailure(value: (KiiUser, KiiSocialNetworkName, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSuccess(value: (KiiUser, KiiSocialNetworkName) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+    inline def setSuccess(value: (KiiUser, KiiSocialNetworkName) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
   }
 }

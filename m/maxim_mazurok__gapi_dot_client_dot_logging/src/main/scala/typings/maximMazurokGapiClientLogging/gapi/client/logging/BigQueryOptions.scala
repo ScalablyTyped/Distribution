@@ -22,25 +22,19 @@ trait BigQueryOptions extends StObject {
 }
 object BigQueryOptions {
   
-  @scala.inline
-  def apply(): BigQueryOptions = {
+  inline def apply(): BigQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BigQueryOptions]
   }
   
-  @scala.inline
-  implicit class BigQueryOptionsMutableBuilder[Self <: BigQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BigQueryOptions](x: Self) {
     
-    @scala.inline
-    def setUsePartitionedTables(value: Boolean): Self = StObject.set(x, "usePartitionedTables", value.asInstanceOf[js.Any])
+    inline def setUsePartitionedTables(value: Boolean): Self = StObject.set(x, "usePartitionedTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePartitionedTablesUndefined: Self = StObject.set(x, "usePartitionedTables", js.undefined)
+    inline def setUsePartitionedTablesUndefined: Self = StObject.set(x, "usePartitionedTables", js.undefined)
     
-    @scala.inline
-    def setUsesTimestampColumnPartitioning(value: Boolean): Self = StObject.set(x, "usesTimestampColumnPartitioning", value.asInstanceOf[js.Any])
+    inline def setUsesTimestampColumnPartitioning(value: Boolean): Self = StObject.set(x, "usesTimestampColumnPartitioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesTimestampColumnPartitioningUndefined: Self = StObject.set(x, "usesTimestampColumnPartitioning", js.undefined)
+    inline def setUsesTimestampColumnPartitioningUndefined: Self = StObject.set(x, "usesTimestampColumnPartitioning", js.undefined)
   }
 }

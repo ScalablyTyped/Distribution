@@ -30,21 +30,17 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def subclass(exports: js.Any, name: String): SuperErrorI = (^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(exports.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[SuperErrorI]
+  inline def subclass(exports: js.Any, name: String): SuperErrorI = (^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(exports.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[SuperErrorI]
   /* static member */
-  @scala.inline
-  def subclass(
+  inline def subclass(
     exports: js.Any,
     name: String,
     subclass_constructor: js.ThisFunction1[/* this */ SuperError, /* repeated */ js.Any, Unit]
   ): SuperErrorI = (^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(exports.asInstanceOf[js.Any], name.asInstanceOf[js.Any], subclass_constructor.asInstanceOf[js.Any])).asInstanceOf[SuperErrorI]
   /* static member */
-  @scala.inline
-  def subclass(name: String): SuperErrorI = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(name.asInstanceOf[js.Any]).asInstanceOf[SuperErrorI]
+  inline def subclass(name: String): SuperErrorI = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(name.asInstanceOf[js.Any]).asInstanceOf[SuperErrorI]
   /* static member */
-  @scala.inline
-  def subclass(
+  inline def subclass(
     name: String,
     subclass_constructor: js.ThisFunction1[/* this */ SuperError, /* repeated */ js.Any, Unit]
   ): SuperErrorI = (^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(name.asInstanceOf[js.Any], subclass_constructor.asInstanceOf[js.Any])).asInstanceOf[SuperErrorI]
@@ -58,17 +54,14 @@ object mod {
   }
   object SuperError {
     
-    @scala.inline
-    def apply(causedBy: Error => SuperError, message: String, name: String): SuperError = {
+    inline def apply(causedBy: Error => SuperError, message: String, name: String): SuperError = {
       val __obj = js.Dynamic.literal(causedBy = js.Any.fromFunction1(causedBy), message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuperError]
     }
     
-    @scala.inline
-    implicit class SuperErrorMutableBuilder[Self <: SuperError] (val x: Self) extends AnyVal {
+    extension [Self <: SuperError](x: Self) {
       
-      @scala.inline
-      def setCausedBy(value: Error => SuperError): Self = StObject.set(x, "causedBy", js.Any.fromFunction1(value))
+      inline def setCausedBy(value: Error => SuperError): Self = StObject.set(x, "causedBy", js.Any.fromFunction1(value))
     }
   }
   

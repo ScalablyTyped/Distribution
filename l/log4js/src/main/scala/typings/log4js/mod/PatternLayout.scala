@@ -20,26 +20,20 @@ trait PatternLayout
 }
 object PatternLayout {
   
-  @scala.inline
-  def apply(pattern: String): PatternLayout = {
+  inline def apply(pattern: String): PatternLayout = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[PatternLayout]
   }
   
-  @scala.inline
-  implicit class PatternLayoutMutableBuilder[Self <: PatternLayout] (val x: Self) extends AnyVal {
+  extension [Self <: PatternLayout](x: Self) {
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokens(value: StringDictionary[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: StringDictionary[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+    inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
-    @scala.inline
-    def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

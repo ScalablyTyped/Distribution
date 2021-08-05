@@ -10,6 +10,5 @@ object isResolvableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(host: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def default(host: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

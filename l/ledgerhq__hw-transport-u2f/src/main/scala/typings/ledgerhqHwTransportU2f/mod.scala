@@ -17,10 +17,8 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def open(_underscore: js.Any): js.Promise[TransportU2F] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransportU2F]]
-    @scala.inline
-    def open(_underscore: js.Any, _openTimeout: Double): js.Promise[TransportU2F] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(_underscore.asInstanceOf[js.Any], _openTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportU2F]]
+    inline def open(_underscore: js.Any): js.Promise[TransportU2F] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransportU2F]]
+    inline def open(_underscore: js.Any, _openTimeout: Double): js.Promise[TransportU2F] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(_underscore.asInstanceOf[js.Any], _openTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportU2F]]
   }
   
   type TransportU2F = typings.ledgerhqHwTransport.mod.default[String]

@@ -29,8 +29,7 @@ trait Screen extends StObject {
 }
 object Screen {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottomBlock: IBottomBlock,
     config: IPlayerConfig,
     eventEmitter: IEventEmitter,
@@ -43,28 +42,20 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  @scala.inline
-  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
+  extension [Self <: Screen](x: Self) {
     
-    @scala.inline
-    def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
+    inline def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
+    inline def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen(value: IScreen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: IScreen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopBlock(value: ITopBlock): Self = StObject.set(x, "topBlock", value.asInstanceOf[js.Any])
+    inline def setTopBlock(value: ITopBlock): Self = StObject.set(x, "topBlock", value.asInstanceOf[js.Any])
   }
 }

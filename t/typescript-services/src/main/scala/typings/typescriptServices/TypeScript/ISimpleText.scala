@@ -20,8 +20,7 @@ trait ISimpleText extends StObject {
 }
 object ISimpleText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     charCodeAt: Double => Double,
     copyTo: (Double, js.Array[Double], Double, Double) => Unit,
     length: () => Double,
@@ -33,25 +32,18 @@ object ISimpleText {
     __obj.asInstanceOf[ISimpleText]
   }
   
-  @scala.inline
-  implicit class ISimpleTextMutableBuilder[Self <: ISimpleText] (val x: Self) extends AnyVal {
+  extension [Self <: ISimpleText](x: Self) {
     
-    @scala.inline
-    def setCharCodeAt(value: Double => Double): Self = StObject.set(x, "charCodeAt", js.Any.fromFunction1(value))
+    inline def setCharCodeAt(value: Double => Double): Self = StObject.set(x, "charCodeAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyTo(value: (Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction4(value))
+    inline def setCopyTo(value: (Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
+    inline def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubText(value: TextSpan => ISimpleText): Self = StObject.set(x, "subText", js.Any.fromFunction1(value))
+    inline def setSubText(value: TextSpan => ISimpleText): Self = StObject.set(x, "subText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubstr(value: (Double, Double, Boolean) => String): Self = StObject.set(x, "substr", js.Any.fromFunction3(value))
+    inline def setSubstr(value: (Double, Double, Boolean) => String): Self = StObject.set(x, "substr", js.Any.fromFunction3(value))
   }
 }

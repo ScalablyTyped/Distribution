@@ -14,31 +14,23 @@ trait AuthorizationId extends StObject {
 }
 object AuthorizationId {
   
-  @scala.inline
-  def apply(): AuthorizationId = {
+  inline def apply(): AuthorizationId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizationId]
   }
   
-  @scala.inline
-  implicit class AuthorizationIdMutableBuilder[Self <: AuthorizationId] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationId](x: Self) {
     
-    @scala.inline
-    def setAuthorizationId(value: String): Self = StObject.set(x, "authorizationId", value.asInstanceOf[js.Any])
+    inline def setAuthorizationId(value: String): Self = StObject.set(x, "authorizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationIdUndefined: Self = StObject.set(x, "authorizationId", js.undefined)
+    inline def setAuthorizationIdUndefined: Self = StObject.set(x, "authorizationId", js.undefined)
     
-    @scala.inline
-    def setHostNameResolver(value: js.Function): Self = StObject.set(x, "hostNameResolver", value.asInstanceOf[js.Any])
+    inline def setHostNameResolver(value: js.Function): Self = StObject.set(x, "hostNameResolver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostNameResolverUndefined: Self = StObject.set(x, "hostNameResolver", js.undefined)
+    inline def setHostNameResolverUndefined: Self = StObject.set(x, "hostNameResolver", js.undefined)
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

@@ -44,70 +44,49 @@ trait RecurrencePattern extends StObject {
 }
 object RecurrencePattern {
   
-  @scala.inline
-  def apply(): RecurrencePattern = {
+  inline def apply(): RecurrencePattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecurrencePattern]
   }
   
-  @scala.inline
-  implicit class RecurrencePatternMutableBuilder[Self <: RecurrencePattern] (val x: Self) extends AnyVal {
+  extension [Self <: RecurrencePattern](x: Self) {
     
-    @scala.inline
-    def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
+    inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
+    inline def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
     
-    @scala.inline
-    def setDaysOfWeek(value: NullableOption[js.Array[DayOfWeek]]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
+    inline def setDaysOfWeek(value: NullableOption[js.Array[DayOfWeek]]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOfWeekNull: Self = StObject.set(x, "daysOfWeek", null)
+    inline def setDaysOfWeekNull: Self = StObject.set(x, "daysOfWeek", null)
     
-    @scala.inline
-    def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
+    inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
-    @scala.inline
-    def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstDayOfWeek(value: NullableOption[DayOfWeek]): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+    inline def setFirstDayOfWeek(value: NullableOption[DayOfWeek]): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDayOfWeekNull: Self = StObject.set(x, "firstDayOfWeek", null)
+    inline def setFirstDayOfWeekNull: Self = StObject.set(x, "firstDayOfWeek", null)
     
-    @scala.inline
-    def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
+    inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
     
-    @scala.inline
-    def setIndex(value: NullableOption[WeekIndex]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: NullableOption[WeekIndex]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNull: Self = StObject.set(x, "index", null)
+    inline def setIndexNull: Self = StObject.set(x, "index", null)
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[RecurrencePatternType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[RecurrencePatternType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

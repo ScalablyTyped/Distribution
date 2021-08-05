@@ -66,50 +66,36 @@ object shaderChunkMod {
   }
   object GLSLChunk {
     
-    @scala.inline
-    def apply(): GLSLChunk = {
+    inline def apply(): GLSLChunk = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GLSLChunk]
     }
     
-    @scala.inline
-    implicit class GLSLChunkMutableBuilder[Self <: GLSLChunk] (val x: Self) extends AnyVal {
+    extension [Self <: GLSLChunk](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setDefine(value: String): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
+      inline def setDefine(value: String): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefineUndefined: Self = StObject.set(x, "define", js.undefined)
+      inline def setDefineUndefined: Self = StObject.set(x, "define", js.undefined)
       
-      @scala.inline
-      def setFuncDeclare(value: String): Self = StObject.set(x, "funcDeclare", value.asInstanceOf[js.Any])
+      inline def setFuncDeclare(value: String): Self = StObject.set(x, "funcDeclare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuncDeclareUndefined: Self = StObject.set(x, "funcDeclare", js.undefined)
+      inline def setFuncDeclareUndefined: Self = StObject.set(x, "funcDeclare", js.undefined)
       
-      @scala.inline
-      def setFuncDefine(value: String): Self = StObject.set(x, "funcDefine", value.asInstanceOf[js.Any])
+      inline def setFuncDefine(value: String): Self = StObject.set(x, "funcDefine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuncDefineUndefined: Self = StObject.set(x, "funcDefine", js.undefined)
+      inline def setFuncDefineUndefined: Self = StObject.set(x, "funcDefine", js.undefined)
       
-      @scala.inline
-      def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setVarDeclare(value: String): Self = StObject.set(x, "varDeclare", value.asInstanceOf[js.Any])
+      inline def setVarDeclare(value: String): Self = StObject.set(x, "varDeclare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarDeclareUndefined: Self = StObject.set(x, "varDeclare", js.undefined)
+      inline def setVarDeclareUndefined: Self = StObject.set(x, "varDeclare", js.undefined)
     }
   }
 }

@@ -18,19 +18,15 @@ trait DeleteRegexMatchSetRequest extends StObject {
 }
 object DeleteRegexMatchSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, RegexMatchSetId: ResourceId): DeleteRegexMatchSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, RegexMatchSetId: ResourceId): DeleteRegexMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RegexMatchSetId = RegexMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRegexMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRegexMatchSetRequestMutableBuilder[Self <: DeleteRegexMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRegexMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
+    inline def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
   }
 }

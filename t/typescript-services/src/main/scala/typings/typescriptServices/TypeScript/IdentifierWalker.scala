@@ -12,8 +12,7 @@ trait IdentifierWalker
 }
 object IdentifierWalker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     list: IIndexable[Boolean],
     visitArgumentList: ArgumentListSyntax => js.Any,
     visitArrayLiteralExpression: ArrayLiteralExpressionSyntax => js.Any,
@@ -113,10 +112,8 @@ object IdentifierWalker {
     __obj.asInstanceOf[IdentifierWalker]
   }
   
-  @scala.inline
-  implicit class IdentifierWalkerMutableBuilder[Self <: IdentifierWalker] (val x: Self) extends AnyVal {
+  extension [Self <: IdentifierWalker](x: Self) {
     
-    @scala.inline
-    def setList(value: IIndexable[Boolean]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: IIndexable[Boolean]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
   }
 }

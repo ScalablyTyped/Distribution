@@ -16,32 +16,24 @@ trait MarkerSymbol
 }
 object MarkerSymbol {
   
-  @scala.inline
-  def apply(`type`: SymbolType): MarkerSymbol = {
+  inline def apply(`type`: SymbolType): MarkerSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerSymbol]
   }
   
-  @scala.inline
-  implicit class MarkerSymbolMutableBuilder[Self <: MarkerSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerSymbol](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    inline def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
+    inline def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
-    @scala.inline
-    def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    inline def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
+    inline def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
   }
 }

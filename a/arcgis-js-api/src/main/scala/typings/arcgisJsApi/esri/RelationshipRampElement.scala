@@ -69,8 +69,7 @@ trait RelationshipRampElement
 }
 object RelationshipRampElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colors: js.Array[js.Array[Color_]],
     constructor: js.Function,
     focus: String,
@@ -86,43 +85,30 @@ object RelationshipRampElement {
     __obj.asInstanceOf[RelationshipRampElement]
   }
   
-  @scala.inline
-  implicit class RelationshipRampElementMutableBuilder[Self <: RelationshipRampElement] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipRampElement](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: js.Array[Color_]*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: js.Array[Color_]*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfos(value: js.Array[js.Any]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: js.Array[js.Any]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfosUndefined: Self = StObject.set(x, "infos", js.undefined)
+    inline def setInfosUndefined: Self = StObject.set(x, "infos", js.undefined)
     
-    @scala.inline
-    def setInfosVarargs(value: js.Any*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: js.Any*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: RelationshipLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: RelationshipLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
+    inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

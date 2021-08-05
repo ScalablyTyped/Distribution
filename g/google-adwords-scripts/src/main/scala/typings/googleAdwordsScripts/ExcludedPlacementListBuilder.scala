@@ -12,8 +12,7 @@ trait ExcludedPlacementListBuilder[ExcludedPlacementList]
 }
 object ExcludedPlacementListBuilder {
   
-  @scala.inline
-  def apply[ExcludedPlacementList](
+  inline def apply[ExcludedPlacementList](
     build: () => AdWordsOperation[ExcludedPlacementList],
     withName: String => ExcludedPlacementListBuilder[ExcludedPlacementList]
   ): ExcludedPlacementListBuilder[ExcludedPlacementList] = {
@@ -21,10 +20,8 @@ object ExcludedPlacementListBuilder {
     __obj.asInstanceOf[ExcludedPlacementListBuilder[ExcludedPlacementList]]
   }
   
-  @scala.inline
-  implicit class ExcludedPlacementListBuilderMutableBuilder[Self <: ExcludedPlacementListBuilder[?], ExcludedPlacementList] (val x: Self & ExcludedPlacementListBuilder[ExcludedPlacementList]) extends AnyVal {
+  extension [Self <: ExcludedPlacementListBuilder[?], ExcludedPlacementList](x: Self & ExcludedPlacementListBuilder[ExcludedPlacementList]) {
     
-    @scala.inline
-    def setWithName(value: String => ExcludedPlacementListBuilder[ExcludedPlacementList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => ExcludedPlacementListBuilder[ExcludedPlacementList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

@@ -120,8 +120,7 @@ object setupIntents {
   }
   object ISetupIntent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client_secret: String,
       created: Double,
       id: String,
@@ -137,97 +136,67 @@ object setupIntents {
       __obj.asInstanceOf[ISetupIntent]
     }
     
-    @scala.inline
-    implicit class ISetupIntentMutableBuilder[Self <: ISetupIntent] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntent](x: Self) {
       
-      @scala.inline
-      def setApplication(value: String | IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String | IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationNull: Self = StObject.set(x, "application", null)
+      inline def setApplicationNull: Self = StObject.set(x, "application", null)
       
-      @scala.inline
-      def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      @scala.inline
-      def setCancelation_reason(value: SetupIntentCancelationReason): Self = StObject.set(x, "cancelation_reason", value.asInstanceOf[js.Any])
+      inline def setCancelation_reason(value: SetupIntentCancelationReason): Self = StObject.set(x, "cancelation_reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelation_reasonNull: Self = StObject.set(x, "cancelation_reason", null)
+      inline def setCancelation_reasonNull: Self = StObject.set(x, "cancelation_reason", null)
       
-      @scala.inline
-      def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+      inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerNull: Self = StObject.set(x, "customer", null)
+      inline def setCustomerNull: Self = StObject.set(x, "customer", null)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLast_setup_error(value: IStripeError): Self = StObject.set(x, "last_setup_error", value.asInstanceOf[js.Any])
+      inline def setLast_setup_error(value: IStripeError): Self = StObject.set(x, "last_setup_error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_setup_errorNull: Self = StObject.set(x, "last_setup_error", null)
+      inline def setLast_setup_errorNull: Self = StObject.set(x, "last_setup_error", null)
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_action(value: ISetupIntentNextActionUseStripeSdk | ISetupIntentNextActionRedirectToUrl): Self = StObject.set(x, "next_action", value.asInstanceOf[js.Any])
+      inline def setNext_action(value: ISetupIntentNextActionUseStripeSdk | ISetupIntentNextActionRedirectToUrl): Self = StObject.set(x, "next_action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: setup_intent): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: setup_intent): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
+      inline def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn_behalf_ofNull: Self = StObject.set(x, "on_behalf_of", null)
+      inline def setOn_behalf_ofNull: Self = StObject.set(x, "on_behalf_of", null)
       
-      @scala.inline
-      def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
+      inline def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
       
-      @scala.inline
-      def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+      inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_methodNull: Self = StObject.set(x, "payment_method", null)
+      inline def setPayment_methodNull: Self = StObject.set(x, "payment_method", null)
       
-      @scala.inline
-      def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+      inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
       
-      @scala.inline
-      def setPayment_method_options(value: ISetupIntentPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
+      inline def setPayment_method_options(value: ISetupIntentPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
+      inline def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
       
-      @scala.inline
-      def setPayment_method_types(value: js.Array[SetupIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
+      inline def setPayment_method_types(value: js.Array[SetupIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_method_typesVarargs(value: SetupIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
+      inline def setPayment_method_typesVarargs(value: SetupIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(
+      inline def setStatus(
         value: requires_payment_method | requires_confirmation | requires_action | processing | canceled | succeeded
       ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(value: SetupIntentUsageType): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: SetupIntentUsageType): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,38 +228,28 @@ object setupIntents {
   }
   object ISetupIntentConfirmOptions {
     
-    @scala.inline
-    def apply(): ISetupIntentConfirmOptions = {
+    inline def apply(): ISetupIntentConfirmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetupIntentConfirmOptions]
     }
     
-    @scala.inline
-    implicit class ISetupIntentConfirmOptionsMutableBuilder[Self <: ISetupIntentConfirmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentConfirmOptions](x: Self) {
       
-      @scala.inline
-      def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+      inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
+      inline def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
       
-      @scala.inline
-      def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+      inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+      inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
       
-      @scala.inline
-      def setPayment_method_options(value: ISetupIntentPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
+      inline def setPayment_method_options(value: ISetupIntentPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
+      inline def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
       
-      @scala.inline
-      def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
+      inline def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturn_urlUndefined: Self = StObject.set(x, "return_url", js.undefined)
+      inline def setReturn_urlUndefined: Self = StObject.set(x, "return_url", js.undefined)
     }
   }
   
@@ -362,80 +321,56 @@ object setupIntents {
   }
   object ISetupIntentCreationOptions {
     
-    @scala.inline
-    def apply(): ISetupIntentCreationOptions = {
+    inline def apply(): ISetupIntentCreationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetupIntentCreationOptions]
     }
     
-    @scala.inline
-    implicit class ISetupIntentCreationOptionsMutableBuilder[Self <: ISetupIntentCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentCreationOptions](x: Self) {
       
-      @scala.inline
-      def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+      inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
+      inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionNull: Self = StObject.set(x, "description", null)
+      inline def setDescriptionNull: Self = StObject.set(x, "description", null)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
+      inline def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
+      inline def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
       
-      @scala.inline
-      def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+      inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+      inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
       
-      @scala.inline
-      def setPayment_method_options(value: ISetupIntentPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
+      inline def setPayment_method_options(value: ISetupIntentPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
+      inline def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
       
-      @scala.inline
-      def setPayment_method_types(value: js.Array[SetupIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
+      inline def setPayment_method_types(value: js.Array[SetupIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
+      inline def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
       
-      @scala.inline
-      def setPayment_method_typesVarargs(value: SetupIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
+      inline def setPayment_method_typesVarargs(value: SetupIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
       
-      @scala.inline
-      def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
+      inline def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturn_urlUndefined: Self = StObject.set(x, "return_url", js.undefined)
+      inline def setReturn_urlUndefined: Self = StObject.set(x, "return_url", js.undefined)
       
-      @scala.inline
-      def setUsage(value: SetupIntentUsageType): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: SetupIntentUsageType): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     }
   }
   
@@ -455,26 +390,20 @@ object setupIntents {
   }
   object ISetupIntentListOptions {
     
-    @scala.inline
-    def apply(): ISetupIntentListOptions = {
+    inline def apply(): ISetupIntentListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetupIntentListOptions]
     }
     
-    @scala.inline
-    implicit class ISetupIntentListOptionsMutableBuilder[Self <: ISetupIntentListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentListOptions](x: Self) {
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+      inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+      inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     }
   }
   
@@ -489,21 +418,17 @@ object setupIntents {
   }
   object ISetupIntentNextActionRedirectToUrl {
     
-    @scala.inline
-    def apply(redirect_to_url: Returnurl): ISetupIntentNextActionRedirectToUrl = {
+    inline def apply(redirect_to_url: Returnurl): ISetupIntentNextActionRedirectToUrl = {
       val __obj = js.Dynamic.literal(redirect_to_url = redirect_to_url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("redirect_to_url")
       __obj.asInstanceOf[ISetupIntentNextActionRedirectToUrl]
     }
     
-    @scala.inline
-    implicit class ISetupIntentNextActionRedirectToUrlMutableBuilder[Self <: ISetupIntentNextActionRedirectToUrl] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentNextActionRedirectToUrl](x: Self) {
       
-      @scala.inline
-      def setRedirect_to_url(value: Returnurl): Self = StObject.set(x, "redirect_to_url", value.asInstanceOf[js.Any])
+      inline def setRedirect_to_url(value: Returnurl): Self = StObject.set(x, "redirect_to_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: redirect_to_url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: redirect_to_url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,21 +443,17 @@ object setupIntents {
   }
   object ISetupIntentNextActionUseStripeSdk {
     
-    @scala.inline
-    def apply(use_stripe_sdk: js.Any): ISetupIntentNextActionUseStripeSdk = {
+    inline def apply(use_stripe_sdk: js.Any): ISetupIntentNextActionUseStripeSdk = {
       val __obj = js.Dynamic.literal(use_stripe_sdk = use_stripe_sdk.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("use_stripe_sdk")
       __obj.asInstanceOf[ISetupIntentNextActionUseStripeSdk]
     }
     
-    @scala.inline
-    implicit class ISetupIntentNextActionUseStripeSdkMutableBuilder[Self <: ISetupIntentNextActionUseStripeSdk] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentNextActionUseStripeSdk](x: Self) {
       
-      @scala.inline
-      def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse_stripe_sdk(value: js.Any): Self = StObject.set(x, "use_stripe_sdk", value.asInstanceOf[js.Any])
+      inline def setUse_stripe_sdk(value: js.Any): Self = StObject.set(x, "use_stripe_sdk", value.asInstanceOf[js.Any])
     }
   }
   
@@ -545,20 +466,16 @@ object setupIntents {
   }
   object ISetupIntentPaymentMethodOptions {
     
-    @scala.inline
-    def apply(): ISetupIntentPaymentMethodOptions = {
+    inline def apply(): ISetupIntentPaymentMethodOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetupIntentPaymentMethodOptions]
     }
     
-    @scala.inline
-    implicit class ISetupIntentPaymentMethodOptionsMutableBuilder[Self <: ISetupIntentPaymentMethodOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentPaymentMethodOptions](x: Self) {
       
-      @scala.inline
-      def setCard(value: Requestthreedsecure): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: Requestthreedsecure): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     }
   }
   
@@ -572,20 +489,16 @@ object setupIntents {
   }
   object ISetupIntentRetrieveOptions {
     
-    @scala.inline
-    def apply(): ISetupIntentRetrieveOptions = {
+    inline def apply(): ISetupIntentRetrieveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetupIntentRetrieveOptions]
     }
     
-    @scala.inline
-    implicit class ISetupIntentRetrieveOptionsMutableBuilder[Self <: ISetupIntentRetrieveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentRetrieveOptions](x: Self) {
       
-      @scala.inline
-      def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+      inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
+      inline def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
     }
   }
   
@@ -608,32 +521,24 @@ object setupIntents {
   }
   object ISetupIntentSessionSubset {
     
-    @scala.inline
-    def apply(): ISetupIntentSessionSubset = {
+    inline def apply(): ISetupIntentSessionSubset = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetupIntentSessionSubset]
     }
     
-    @scala.inline
-    implicit class ISetupIntentSessionSubsetMutableBuilder[Self <: ISetupIntentSessionSubset] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentSessionSubset](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
+      inline def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
+      inline def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
     }
   }
   
@@ -646,19 +551,16 @@ object setupIntents {
   }
   object ISetupIntentTransferData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destination: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccountCreationOptions
     ): ISetupIntentTransferData = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISetupIntentTransferData]
     }
     
-    @scala.inline
-    implicit class ISetupIntentTransferDataMutableBuilder[Self <: ISetupIntentTransferData] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentTransferData](x: Self) {
       
-      @scala.inline
-      def setDestination(value: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccountCreationOptions): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccountCreationOptions): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     }
   }
   
@@ -694,50 +596,36 @@ object setupIntents {
   }
   object ISetupIntentUpdateOptions {
     
-    @scala.inline
-    def apply(): ISetupIntentUpdateOptions = {
+    inline def apply(): ISetupIntentUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetupIntentUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ISetupIntentUpdateOptionsMutableBuilder[Self <: ISetupIntentUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISetupIntentUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionNull: Self = StObject.set(x, "description", null)
+      inline def setDescriptionNull: Self = StObject.set(x, "description", null)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+      inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+      inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
       
-      @scala.inline
-      def setPayment_method_types(value: js.Array[SetupIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
+      inline def setPayment_method_types(value: js.Array[SetupIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
+      inline def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
       
-      @scala.inline
-      def setPayment_method_typesVarargs(value: SetupIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
+      inline def setPayment_method_typesVarargs(value: SetupIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
     }
   }
   
@@ -749,14 +637,11 @@ object setupIntents {
   trait SetupIntentCancelationReason extends StObject
   object SetupIntentCancelationReason {
     
-    @scala.inline
-    def abandoned: typings.stripe.stripeStrings.abandoned = "abandoned".asInstanceOf[typings.stripe.stripeStrings.abandoned]
+    inline def abandoned: typings.stripe.stripeStrings.abandoned = "abandoned".asInstanceOf[typings.stripe.stripeStrings.abandoned]
     
-    @scala.inline
-    def duplicate: typings.stripe.stripeStrings.duplicate = "duplicate".asInstanceOf[typings.stripe.stripeStrings.duplicate]
+    inline def duplicate: typings.stripe.stripeStrings.duplicate = "duplicate".asInstanceOf[typings.stripe.stripeStrings.duplicate]
     
-    @scala.inline
-    def requested_by_customer: typings.stripe.stripeStrings.requested_by_customer = "requested_by_customer".asInstanceOf[typings.stripe.stripeStrings.requested_by_customer]
+    inline def requested_by_customer: typings.stripe.stripeStrings.requested_by_customer = "requested_by_customer".asInstanceOf[typings.stripe.stripeStrings.requested_by_customer]
   }
   
   /** Payment methods supported by Payment Intents. This is a subsetset of all Payment Method types. See https://stripe.com/docs/api/payment_methods/create#create_payment_method-type */
@@ -769,10 +654,8 @@ object setupIntents {
   trait SetupIntentUsageType extends StObject
   object SetupIntentUsageType {
     
-    @scala.inline
-    def off_session: typings.stripe.stripeStrings.off_session = "off_session".asInstanceOf[typings.stripe.stripeStrings.off_session]
+    inline def off_session: typings.stripe.stripeStrings.off_session = "off_session".asInstanceOf[typings.stripe.stripeStrings.off_session]
     
-    @scala.inline
-    def on_session: typings.stripe.stripeStrings.on_session = "on_session".asInstanceOf[typings.stripe.stripeStrings.on_session]
+    inline def on_session: typings.stripe.stripeStrings.on_session = "on_session".asInstanceOf[typings.stripe.stripeStrings.on_session]
   }
 }

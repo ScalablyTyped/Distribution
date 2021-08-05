@@ -23,19 +23,15 @@ trait RemoteContentProviderChangeEvent
 }
 object RemoteContentProviderChangeEvent {
   
-  @scala.inline
-  def apply(Action: RemoteContentProviderChangeAction, Identifier: String, Source: XInterface): RemoteContentProviderChangeEvent = {
+  inline def apply(Action: RemoteContentProviderChangeAction, Identifier: String, Source: XInterface): RemoteContentProviderChangeEvent = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Identifier = Identifier.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteContentProviderChangeEvent]
   }
   
-  @scala.inline
-  implicit class RemoteContentProviderChangeEventMutableBuilder[Self <: RemoteContentProviderChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteContentProviderChangeEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: RemoteContentProviderChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RemoteContentProviderChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
   }
 }

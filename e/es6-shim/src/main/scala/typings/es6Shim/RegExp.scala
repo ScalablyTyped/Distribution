@@ -22,16 +22,13 @@ trait RegExp extends StObject {
 }
 object RegExp {
   
-  @scala.inline
-  def apply(flags: java.lang.String): RegExp = {
+  inline def apply(flags: java.lang.String): RegExp = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegExp]
   }
   
-  @scala.inline
-  implicit class RegExpMutableBuilder[Self <: RegExp] (val x: Self) extends AnyVal {
+  extension [Self <: RegExp](x: Self) {
     
-    @scala.inline
-    def setFlags(value: java.lang.String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: java.lang.String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }
 }

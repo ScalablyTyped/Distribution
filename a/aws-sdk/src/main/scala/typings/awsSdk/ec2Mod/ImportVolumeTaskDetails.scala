@@ -33,43 +33,31 @@ trait ImportVolumeTaskDetails extends StObject {
 }
 object ImportVolumeTaskDetails {
   
-  @scala.inline
-  def apply(): ImportVolumeTaskDetails = {
+  inline def apply(): ImportVolumeTaskDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportVolumeTaskDetails]
   }
   
-  @scala.inline
-  implicit class ImportVolumeTaskDetailsMutableBuilder[Self <: ImportVolumeTaskDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ImportVolumeTaskDetails](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setBytesConverted(value: Long): Self = StObject.set(x, "BytesConverted", value.asInstanceOf[js.Any])
+    inline def setBytesConverted(value: Long): Self = StObject.set(x, "BytesConverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesConvertedUndefined: Self = StObject.set(x, "BytesConverted", js.undefined)
+    inline def setBytesConvertedUndefined: Self = StObject.set(x, "BytesConverted", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setImage(value: DiskImageDescription): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: DiskImageDescription): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
-    @scala.inline
-    def setVolume(value: DiskImageVolumeDescription): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: DiskImageVolumeDescription): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "Volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "Volume", js.undefined)
   }
 }

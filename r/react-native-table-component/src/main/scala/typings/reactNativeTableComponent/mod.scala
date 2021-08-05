@@ -116,56 +116,40 @@ object mod {
   }
   object CellProps {
     
-    @scala.inline
-    def apply(): CellProps = {
+    inline def apply(): CellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellProps]
     }
     
-    @scala.inline
-    implicit class CellPropsMutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
+    extension [Self <: CellProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+      inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -183,50 +167,36 @@ object mod {
   }
   object ColProps {
     
-    @scala.inline
-    def apply(): ColProps = {
+    inline def apply(): ColProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColProps]
     }
     
-    @scala.inline
-    implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
+      inline def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
+      inline def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
       
-      @scala.inline
-      def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
+      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -246,62 +216,44 @@ object mod {
   }
   object ColsProps {
     
-    @scala.inline
-    def apply(): ColsProps = {
+    inline def apply(): ColsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColsProps]
     }
     
-    @scala.inline
-    implicit class ColsPropsMutableBuilder[Self <: ColsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColsProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
+      inline def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
+      inline def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
       
-      @scala.inline
-      def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
+      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
       
-      @scala.inline
-      def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
+      inline def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
+      inline def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
       
-      @scala.inline
-      def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
+      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setWidthArr(value: js.Array[Double]): Self = StObject.set(x, "widthArr", value.asInstanceOf[js.Any])
+      inline def setWidthArr(value: js.Array[Double]): Self = StObject.set(x, "widthArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
+      inline def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
       
-      @scala.inline
-      def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
+      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
     }
   }
   
@@ -321,59 +273,42 @@ object mod {
   }
   object RowProps {
     
-    @scala.inline
-    def apply(): RowProps = {
+    inline def apply(): RowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowProps]
     }
     
-    @scala.inline
-    implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
+    extension [Self <: RowProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
+      inline def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
+      inline def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
       
-      @scala.inline
-      def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
+      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setWidthArr(value: js.Array[Double]): Self = StObject.set(x, "widthArr", value.asInstanceOf[js.Any])
+      inline def setWidthArr(value: js.Array[Double]): Self = StObject.set(x, "widthArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
+      inline def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
       
-      @scala.inline
-      def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
+      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
     }
   }
   
@@ -393,62 +328,44 @@ object mod {
   }
   object RowsProps {
     
-    @scala.inline
-    def apply(): RowsProps = {
+    inline def apply(): RowsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowsProps]
     }
     
-    @scala.inline
-    implicit class RowsPropsMutableBuilder[Self <: RowsProps] (val x: Self) extends AnyVal {
+    extension [Self <: RowsProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
+      inline def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
+      inline def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
       
-      @scala.inline
-      def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
+      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
       
-      @scala.inline
-      def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
+      inline def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
+      inline def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
       
-      @scala.inline
-      def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
+      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setWidthArr(value: js.Array[Double]): Self = StObject.set(x, "widthArr", value.asInstanceOf[js.Any])
+      inline def setWidthArr(value: js.Array[Double]): Self = StObject.set(x, "widthArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
+      inline def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
       
-      @scala.inline
-      def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
+      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
     }
   }
   
@@ -460,26 +377,20 @@ object mod {
   }
   object TableProps {
     
-    @scala.inline
-    def apply(): TableProps = {
+    inline def apply(): TableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableProps]
     }
     
-    @scala.inline
-    implicit class TablePropsMutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -491,26 +402,20 @@ object mod {
   }
   object TableWrapperProps {
     
-    @scala.inline
-    def apply(): TableWrapperProps = {
+    inline def apply(): TableWrapperProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableWrapperProps]
     }
     
-    @scala.inline
-    implicit class TableWrapperPropsMutableBuilder[Self <: TableWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableWrapperProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

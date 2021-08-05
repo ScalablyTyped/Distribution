@@ -12,22 +12,17 @@ trait Compatible extends StObject {
 }
 object Compatible {
   
-  @scala.inline
-  def apply(compatible: Boolean): Compatible = {
+  inline def apply(compatible: Boolean): Compatible = {
     val __obj = js.Dynamic.literal(compatible = compatible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Compatible]
   }
   
-  @scala.inline
-  implicit class CompatibleMutableBuilder[Self <: Compatible] (val x: Self) extends AnyVal {
+  extension [Self <: Compatible](x: Self) {
     
-    @scala.inline
-    def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
+    inline def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

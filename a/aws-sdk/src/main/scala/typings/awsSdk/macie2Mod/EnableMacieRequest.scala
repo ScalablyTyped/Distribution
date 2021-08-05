@@ -23,31 +23,23 @@ trait EnableMacieRequest extends StObject {
 }
 object EnableMacieRequest {
   
-  @scala.inline
-  def apply(): EnableMacieRequest = {
+  inline def apply(): EnableMacieRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableMacieRequest]
   }
   
-  @scala.inline
-  implicit class EnableMacieRequestMutableBuilder[Self <: EnableMacieRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableMacieRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
+    inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "findingPublishingFrequency", js.undefined)
+    inline def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "findingPublishingFrequency", js.undefined)
     
-    @scala.inline
-    def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

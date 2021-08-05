@@ -39,92 +39,64 @@ trait Chat extends StObject {
 }
 object Chat {
   
-  @scala.inline
-  def apply(id: Double, `type`: ChatType): Chat = {
+  inline def apply(id: Double, `type`: ChatType): Chat = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chat]
   }
   
-  @scala.inline
-  implicit class ChatMutableBuilder[Self <: Chat] (val x: Self) extends AnyVal {
+  extension [Self <: Chat](x: Self) {
     
-    @scala.inline
-    def setAll_members_are_administrators(value: Boolean): Self = StObject.set(x, "all_members_are_administrators", value.asInstanceOf[js.Any])
+    inline def setAll_members_are_administrators(value: Boolean): Self = StObject.set(x, "all_members_are_administrators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll_members_are_administratorsUndefined: Self = StObject.set(x, "all_members_are_administrators", js.undefined)
+    inline def setAll_members_are_administratorsUndefined: Self = StObject.set(x, "all_members_are_administrators", js.undefined)
     
-    @scala.inline
-    def setCan_set_sticker_set(value: Boolean): Self = StObject.set(x, "can_set_sticker_set", value.asInstanceOf[js.Any])
+    inline def setCan_set_sticker_set(value: Boolean): Self = StObject.set(x, "can_set_sticker_set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_set_sticker_setUndefined: Self = StObject.set(x, "can_set_sticker_set", js.undefined)
+    inline def setCan_set_sticker_setUndefined: Self = StObject.set(x, "can_set_sticker_set", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
+    inline def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvite_link(value: String): Self = StObject.set(x, "invite_link", value.asInstanceOf[js.Any])
+    inline def setInvite_link(value: String): Self = StObject.set(x, "invite_link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvite_linkUndefined: Self = StObject.set(x, "invite_link", js.undefined)
+    inline def setInvite_linkUndefined: Self = StObject.set(x, "invite_link", js.undefined)
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
+    inline def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: ChatPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: ChatPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPhoto(value: ChatPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    inline def setPhoto(value: ChatPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
-    @scala.inline
-    def setPinned_message(value: Message): Self = StObject.set(x, "pinned_message", value.asInstanceOf[js.Any])
+    inline def setPinned_message(value: Message): Self = StObject.set(x, "pinned_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinned_messageUndefined: Self = StObject.set(x, "pinned_message", js.undefined)
+    inline def setPinned_messageUndefined: Self = StObject.set(x, "pinned_message", js.undefined)
     
-    @scala.inline
-    def setSticker_set_name(value: String): Self = StObject.set(x, "sticker_set_name", value.asInstanceOf[js.Any])
+    inline def setSticker_set_name(value: String): Self = StObject.set(x, "sticker_set_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSticker_set_nameUndefined: Self = StObject.set(x, "sticker_set_name", js.undefined)
+    inline def setSticker_set_nameUndefined: Self = StObject.set(x, "sticker_set_name", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: ChatType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChatType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

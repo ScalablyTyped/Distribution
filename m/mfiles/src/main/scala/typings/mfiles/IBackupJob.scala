@@ -23,8 +23,7 @@ trait IBackupJob extends StObject {
 }
 object IBackupJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackupType: MFBackupType,
     Clone: () => IBackupJob,
     FileSizeLimitInMB: Double,
@@ -37,28 +36,20 @@ object IBackupJob {
     __obj.asInstanceOf[IBackupJob]
   }
   
-  @scala.inline
-  implicit class IBackupJobMutableBuilder[Self <: IBackupJob] (val x: Self) extends AnyVal {
+  extension [Self <: IBackupJob](x: Self) {
     
-    @scala.inline
-    def setBackupType(value: MFBackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
+    inline def setBackupType(value: MFBackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IBackupJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IBackupJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFileSizeLimitInMB(value: Double): Self = StObject.set(x, "FileSizeLimitInMB", value.asInstanceOf[js.Any])
+    inline def setFileSizeLimitInMB(value: Double): Self = StObject.set(x, "FileSizeLimitInMB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
+    inline def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteExistingFiles(value: Boolean): Self = StObject.set(x, "OverwriteExistingFiles", value.asInstanceOf[js.Any])
+    inline def setOverwriteExistingFiles(value: Boolean): Self = StObject.set(x, "OverwriteExistingFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFile(value: String): Self = StObject.set(x, "TargetFile", value.asInstanceOf[js.Any])
+    inline def setTargetFile(value: String): Self = StObject.set(x, "TargetFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
+    inline def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
   }
 }

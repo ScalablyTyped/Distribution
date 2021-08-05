@@ -20,8 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Paint extends StObject
 object Paint {
   
-  @scala.inline
-  def GradientPaint(
+  inline def GradientPaint(
     gradientStops: js.Array[ColorStop],
     gradientTransform: Transform,
     `type`: GRADIENT_LINEAR | GRADIENT_RADIAL | GRADIENT_ANGULAR | GRADIENT_DIAMOND
@@ -31,15 +30,13 @@ object Paint {
     __obj.asInstanceOf[typings.figma.mod.global.GradientPaint]
   }
   
-  @scala.inline
-  def ImagePaint(scaleMode: FILL | FIT | CROP | TILE): typings.figma.mod.global.ImagePaint = {
+  inline def ImagePaint(scaleMode: FILL | FIT | CROP | TILE): typings.figma.mod.global.ImagePaint = {
     val __obj = js.Dynamic.literal(scaleMode = scaleMode.asInstanceOf[js.Any], imageHash = null)
     __obj.updateDynamic("type")("IMAGE")
     __obj.asInstanceOf[typings.figma.mod.global.ImagePaint]
   }
   
-  @scala.inline
-  def SolidPaint(color: RGB): typings.figma.mod.global.SolidPaint = {
+  inline def SolidPaint(color: RGB): typings.figma.mod.global.SolidPaint = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SOLID")
     __obj.asInstanceOf[typings.figma.mod.global.SolidPaint]

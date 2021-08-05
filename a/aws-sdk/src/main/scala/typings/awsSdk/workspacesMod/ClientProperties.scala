@@ -13,19 +13,15 @@ trait ClientProperties extends StObject {
 }
 object ClientProperties {
   
-  @scala.inline
-  def apply(): ClientProperties = {
+  inline def apply(): ClientProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientProperties]
   }
   
-  @scala.inline
-  implicit class ClientPropertiesMutableBuilder[Self <: ClientProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClientProperties](x: Self) {
     
-    @scala.inline
-    def setReconnectEnabled(value: ReconnectEnum): Self = StObject.set(x, "ReconnectEnabled", value.asInstanceOf[js.Any])
+    inline def setReconnectEnabled(value: ReconnectEnum): Self = StObject.set(x, "ReconnectEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReconnectEnabledUndefined: Self = StObject.set(x, "ReconnectEnabled", js.undefined)
+    inline def setReconnectEnabledUndefined: Self = StObject.set(x, "ReconnectEnabled", js.undefined)
   }
 }

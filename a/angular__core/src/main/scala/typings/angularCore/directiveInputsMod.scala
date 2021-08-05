@@ -12,6 +12,5 @@ object directiveInputsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInputNamesOfClass(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputNamesOfClass")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getInputNamesOfClass(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputNamesOfClass")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

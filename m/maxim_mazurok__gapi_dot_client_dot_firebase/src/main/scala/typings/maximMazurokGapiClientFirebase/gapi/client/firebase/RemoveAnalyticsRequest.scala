@@ -15,19 +15,15 @@ trait RemoveAnalyticsRequest extends StObject {
 }
 object RemoveAnalyticsRequest {
   
-  @scala.inline
-  def apply(): RemoveAnalyticsRequest = {
+  inline def apply(): RemoveAnalyticsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveAnalyticsRequest]
   }
   
-  @scala.inline
-  implicit class RemoveAnalyticsRequestMutableBuilder[Self <: RemoveAnalyticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveAnalyticsRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyticsPropertyId(value: String): Self = StObject.set(x, "analyticsPropertyId", value.asInstanceOf[js.Any])
+    inline def setAnalyticsPropertyId(value: String): Self = StObject.set(x, "analyticsPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsPropertyIdUndefined: Self = StObject.set(x, "analyticsPropertyId", js.undefined)
+    inline def setAnalyticsPropertyIdUndefined: Self = StObject.set(x, "analyticsPropertyId", js.undefined)
   }
 }

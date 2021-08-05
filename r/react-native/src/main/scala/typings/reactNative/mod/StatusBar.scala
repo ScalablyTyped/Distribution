@@ -30,16 +30,14 @@ object StatusBar {
   @JSImport("react-native", "StatusBar.currentHeight")
   @js.native
   def currentHeight: js.UndefOr[Double] = js.native
-  @scala.inline
-  def currentHeight_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentHeight")(x.asInstanceOf[js.Any])
+  inline def currentHeight_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentHeight")(x.asInstanceOf[js.Any])
   
   /**
     * Pop a StatusBar entry from the stack.
     *
     * @param entry Entry returned from `pushStackEntry`.
     */
-  @scala.inline
-  def popStackEntry(entry: StatusBarProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("popStackEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def popStackEntry(entry: StatusBarProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("popStackEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Push a StatusBar entry onto the stack.
@@ -47,8 +45,7 @@ object StatusBar {
     *
     * @param props Object containing the StatusBar props to use in the stack entry.
     */
-  @scala.inline
-  def pushStackEntry(props: StatusBarProps): StatusBarProps = ^.asInstanceOf[js.Dynamic].applyDynamic("pushStackEntry")(props.asInstanceOf[js.Any]).asInstanceOf[StatusBarProps]
+  inline def pushStackEntry(props: StatusBarProps): StatusBarProps = ^.asInstanceOf[js.Dynamic].applyDynamic("pushStackEntry")(props.asInstanceOf[js.Any]).asInstanceOf[StatusBarProps]
   
   /**
     * Replace an existing StatusBar stack entry with new props.
@@ -56,28 +53,23 @@ object StatusBar {
     * @param entry Entry returned from `pushStackEntry` to replace.
     * @param props Object containing the StatusBar props to use in the replacement stack entry.
     */
-  @scala.inline
-  def replaceStackEntry(entry: StatusBarProps, props: StatusBarProps): StatusBarProps = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStackEntry")(entry.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[StatusBarProps]
+  inline def replaceStackEntry(entry: StatusBarProps, props: StatusBarProps): StatusBarProps = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStackEntry")(entry.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[StatusBarProps]
   
   /**
     * Set the background color for the status bar
     * @param color Background color.
     * @param animated Animate the style change.
     */
-  @scala.inline
-  def setBackgroundColor(color: ColorValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBackgroundColor")(color.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setBackgroundColor(color: ColorValue, animated: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBackgroundColor")(color.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setBackgroundColor(color: ColorValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBackgroundColor")(color.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBackgroundColor(color: ColorValue, animated: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBackgroundColor")(color.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set the status bar style
     * @param style Status bar style to set
     * @param animated Animate the style change.
     */
-  @scala.inline
-  def setBarStyle(style: StatusBarStyle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBarStyle")(style.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setBarStyle(style: StatusBarStyle, animated: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBarStyle")(style.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setBarStyle(style: StatusBarStyle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBarStyle")(style.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBarStyle(style: StatusBarStyle, animated: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBarStyle")(style.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Show or hide the status bar
@@ -85,22 +77,18 @@ object StatusBar {
     * @param animation Optional animation when
     *    changing the status bar hidden property.
     */
-  @scala.inline
-  def setHidden(hidden: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(hidden.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setHidden(hidden: Boolean, animation: StatusBarAnimation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(hidden.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setHidden(hidden: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(hidden.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHidden(hidden: Boolean, animation: StatusBarAnimation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(hidden.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Control the visibility of the network activity indicator
     * @param visible Show the indicator.
     */
-  @scala.inline
-  def setNetworkActivityIndicatorVisible(visible: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNetworkActivityIndicatorVisible")(visible.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setNetworkActivityIndicatorVisible(visible: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNetworkActivityIndicatorVisible")(visible.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Control the translucency of the status bar
     * @param translucent Set as translucent.
     */
-  @scala.inline
-  def setTranslucent(translucent: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTranslucent")(translucent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTranslucent(translucent: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTranslucent")(translucent.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

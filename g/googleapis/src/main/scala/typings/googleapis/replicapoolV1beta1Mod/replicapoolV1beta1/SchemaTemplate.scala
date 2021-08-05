@@ -39,40 +39,29 @@ trait SchemaTemplate extends StObject {
 }
 object SchemaTemplate {
   
-  @scala.inline
-  def apply(): SchemaTemplate = {
+  inline def apply(): SchemaTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTemplate]
   }
   
-  @scala.inline
-  implicit class SchemaTemplateMutableBuilder[Self <: SchemaTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTemplate](x: Self) {
     
-    @scala.inline
-    def setAction(value: SchemaAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: SchemaAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
+    inline def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
+    inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
-    @scala.inline
-    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVmParams(value: SchemaVmParams): Self = StObject.set(x, "vmParams", value.asInstanceOf[js.Any])
+    inline def setVmParams(value: SchemaVmParams): Self = StObject.set(x, "vmParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmParamsUndefined: Self = StObject.set(x, "vmParams", js.undefined)
+    inline def setVmParamsUndefined: Self = StObject.set(x, "vmParams", js.undefined)
   }
 }

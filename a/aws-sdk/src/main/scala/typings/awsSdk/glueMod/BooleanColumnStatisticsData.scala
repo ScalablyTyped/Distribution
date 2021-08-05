@@ -23,22 +23,17 @@ trait BooleanColumnStatisticsData extends StObject {
 }
 object BooleanColumnStatisticsData {
   
-  @scala.inline
-  def apply(NumberOfFalses: NonNegativeLong, NumberOfNulls: NonNegativeLong, NumberOfTrues: NonNegativeLong): BooleanColumnStatisticsData = {
+  inline def apply(NumberOfFalses: NonNegativeLong, NumberOfNulls: NonNegativeLong, NumberOfTrues: NonNegativeLong): BooleanColumnStatisticsData = {
     val __obj = js.Dynamic.literal(NumberOfFalses = NumberOfFalses.asInstanceOf[js.Any], NumberOfNulls = NumberOfNulls.asInstanceOf[js.Any], NumberOfTrues = NumberOfTrues.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooleanColumnStatisticsData]
   }
   
-  @scala.inline
-  implicit class BooleanColumnStatisticsDataMutableBuilder[Self <: BooleanColumnStatisticsData] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanColumnStatisticsData](x: Self) {
     
-    @scala.inline
-    def setNumberOfFalses(value: NonNegativeLong): Self = StObject.set(x, "NumberOfFalses", value.asInstanceOf[js.Any])
+    inline def setNumberOfFalses(value: NonNegativeLong): Self = StObject.set(x, "NumberOfFalses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
+    inline def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTrues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfTrues", value.asInstanceOf[js.Any])
+    inline def setNumberOfTrues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfTrues", value.asInstanceOf[js.Any])
   }
 }

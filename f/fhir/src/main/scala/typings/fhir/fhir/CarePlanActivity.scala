@@ -38,52 +38,37 @@ trait CarePlanActivity
 }
 object CarePlanActivity {
   
-  @scala.inline
-  def apply(): CarePlanActivity = {
+  inline def apply(): CarePlanActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CarePlanActivity]
   }
   
-  @scala.inline
-  implicit class CarePlanActivityMutableBuilder[Self <: CarePlanActivity] (val x: Self) extends AnyVal {
+  extension [Self <: CarePlanActivity](x: Self) {
     
-    @scala.inline
-    def setDetail(value: CarePlanActivityDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: CarePlanActivityDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setOutcomeCodeableConcept(value: js.Array[CodeableConcept]): Self = StObject.set(x, "outcomeCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setOutcomeCodeableConcept(value: js.Array[CodeableConcept]): Self = StObject.set(x, "outcomeCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeCodeableConceptUndefined: Self = StObject.set(x, "outcomeCodeableConcept", js.undefined)
+    inline def setOutcomeCodeableConceptUndefined: Self = StObject.set(x, "outcomeCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setOutcomeCodeableConceptVarargs(value: CodeableConcept*): Self = StObject.set(x, "outcomeCodeableConcept", js.Array(value :_*))
+    inline def setOutcomeCodeableConceptVarargs(value: CodeableConcept*): Self = StObject.set(x, "outcomeCodeableConcept", js.Array(value :_*))
     
-    @scala.inline
-    def setOutcomeReference(value: js.Array[Reference]): Self = StObject.set(x, "outcomeReference", value.asInstanceOf[js.Any])
+    inline def setOutcomeReference(value: js.Array[Reference]): Self = StObject.set(x, "outcomeReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeReferenceUndefined: Self = StObject.set(x, "outcomeReference", js.undefined)
+    inline def setOutcomeReferenceUndefined: Self = StObject.set(x, "outcomeReference", js.undefined)
     
-    @scala.inline
-    def setOutcomeReferenceVarargs(value: Reference*): Self = StObject.set(x, "outcomeReference", js.Array(value :_*))
+    inline def setOutcomeReferenceVarargs(value: Reference*): Self = StObject.set(x, "outcomeReference", js.Array(value :_*))
     
-    @scala.inline
-    def setProgress(value: js.Array[Annotation]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: js.Array[Annotation]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setProgressVarargs(value: Annotation*): Self = StObject.set(x, "progress", js.Array(value :_*))
+    inline def setProgressVarargs(value: Annotation*): Self = StObject.set(x, "progress", js.Array(value :_*))
     
-    @scala.inline
-    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
   }
 }

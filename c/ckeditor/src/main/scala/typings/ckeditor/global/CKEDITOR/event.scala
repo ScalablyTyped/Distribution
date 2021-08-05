@@ -17,13 +17,11 @@ object event {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def implementOn(targetObject: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("implementOn")(targetObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def implementOn(targetObject: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("implementOn")(targetObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
   @JSGlobal("CKEDITOR.event.useCapture")
   @js.native
   def useCapture: Boolean = js.native
-  @scala.inline
-  def useCapture_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useCapture")(x.asInstanceOf[js.Any])
+  inline def useCapture_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useCapture")(x.asInstanceOf[js.Any])
 }

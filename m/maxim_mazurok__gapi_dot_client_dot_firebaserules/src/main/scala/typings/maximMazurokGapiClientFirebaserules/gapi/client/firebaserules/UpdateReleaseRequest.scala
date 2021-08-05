@@ -14,25 +14,19 @@ trait UpdateReleaseRequest extends StObject {
 }
 object UpdateReleaseRequest {
   
-  @scala.inline
-  def apply(): UpdateReleaseRequest = {
+  inline def apply(): UpdateReleaseRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateReleaseRequest]
   }
   
-  @scala.inline
-  implicit class UpdateReleaseRequestMutableBuilder[Self <: UpdateReleaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateReleaseRequest](x: Self) {
     
-    @scala.inline
-    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+    inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -21,21 +21,17 @@ object composedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def composed[TComponentProps /* <: ValidProps & ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
+  inline def composed[TComponentProps /* <: ValidProps & ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
     baseComponent: FunctionComponent[js.Object],
     options: IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]
   ): (IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics = (^.asInstanceOf[js.Dynamic].applyDynamic("composed")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics]
-  @scala.inline
-  def composed[TComponentProps /* <: ValidProps & ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
+  inline def composed[TComponentProps /* <: ValidProps & ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics](
     options: IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]
   ): (IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics = ^.asInstanceOf[js.Dynamic].applyDynamic("composed")(options.asInstanceOf[js.Any]).asInstanceOf[(IFoundationComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]) & TStatics]
   
-  @scala.inline
-  def resolveSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](
+  inline def resolveSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](
     slots: (IPartialSlotComponent[TComponentProps, TComponentSlots]) | (ISlotComponent[TComponentProps, TComponentSlots]),
     data: TComponentProps
   ): ISlotDefinition[Required[TComponentSlots]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSlots")(slots.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ISlotDefinition[Required[TComponentSlots]]]
-  @scala.inline
-  def resolveSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](slots: Unit, data: TComponentProps): ISlotDefinition[Required[TComponentSlots]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSlots")(slots.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ISlotDefinition[Required[TComponentSlots]]]
+  inline def resolveSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](slots: Unit, data: TComponentProps): ISlotDefinition[Required[TComponentSlots]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSlots")(slots.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ISlotDefinition[Required[TComponentSlots]]]
 }

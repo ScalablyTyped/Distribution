@@ -18,16 +18,13 @@ trait ASPxClientUploadControlTextChangedEventArgs
 }
 object ASPxClientUploadControlTextChangedEventArgs {
   
-  @scala.inline
-  def apply(inputIndex: Double): ASPxClientUploadControlTextChangedEventArgs = {
+  inline def apply(inputIndex: Double): ASPxClientUploadControlTextChangedEventArgs = {
     val __obj = js.Dynamic.literal(inputIndex = inputIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientUploadControlTextChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientUploadControlTextChangedEventArgsMutableBuilder[Self <: ASPxClientUploadControlTextChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientUploadControlTextChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
+    inline def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
   }
 }

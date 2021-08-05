@@ -14,31 +14,23 @@ trait FailOnDuplicatePaymentMethod extends StObject {
 }
 object FailOnDuplicatePaymentMethod {
   
-  @scala.inline
-  def apply(): FailOnDuplicatePaymentMethod = {
+  inline def apply(): FailOnDuplicatePaymentMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailOnDuplicatePaymentMethod]
   }
   
-  @scala.inline
-  implicit class FailOnDuplicatePaymentMethodMutableBuilder[Self <: FailOnDuplicatePaymentMethod] (val x: Self) extends AnyVal {
+  extension [Self <: FailOnDuplicatePaymentMethod](x: Self) {
     
-    @scala.inline
-    def setFailOnDuplicatePaymentMethod(value: Boolean): Self = StObject.set(x, "failOnDuplicatePaymentMethod", value.asInstanceOf[js.Any])
+    inline def setFailOnDuplicatePaymentMethod(value: Boolean): Self = StObject.set(x, "failOnDuplicatePaymentMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnDuplicatePaymentMethodUndefined: Self = StObject.set(x, "failOnDuplicatePaymentMethod", js.undefined)
+    inline def setFailOnDuplicatePaymentMethodUndefined: Self = StObject.set(x, "failOnDuplicatePaymentMethod", js.undefined)
     
-    @scala.inline
-    def setMakeDefault(value: Boolean): Self = StObject.set(x, "makeDefault", value.asInstanceOf[js.Any])
+    inline def setMakeDefault(value: Boolean): Self = StObject.set(x, "makeDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeDefaultUndefined: Self = StObject.set(x, "makeDefault", js.undefined)
+    inline def setMakeDefaultUndefined: Self = StObject.set(x, "makeDefault", js.undefined)
     
-    @scala.inline
-    def setVerifyCard(value: Boolean): Self = StObject.set(x, "verifyCard", value.asInstanceOf[js.Any])
+    inline def setVerifyCard(value: Boolean): Self = StObject.set(x, "verifyCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyCardUndefined: Self = StObject.set(x, "verifyCard", js.undefined)
+    inline def setVerifyCardUndefined: Self = StObject.set(x, "verifyCard", js.undefined)
   }
 }

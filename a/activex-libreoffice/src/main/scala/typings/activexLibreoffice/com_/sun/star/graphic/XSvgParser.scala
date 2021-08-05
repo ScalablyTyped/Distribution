@@ -26,8 +26,7 @@ trait XSvgParser
 }
 object XSvgParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDecomposition: (XInputStream, String) => SafeArray[XPrimitive2D],
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XSvgParser {
     __obj.asInstanceOf[XSvgParser]
   }
   
-  @scala.inline
-  implicit class XSvgParserMutableBuilder[Self <: XSvgParser] (val x: Self) extends AnyVal {
+  extension [Self <: XSvgParser](x: Self) {
     
-    @scala.inline
-    def setGetDecomposition(value: (XInputStream, String) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "getDecomposition", js.Any.fromFunction2(value))
+    inline def setGetDecomposition(value: (XInputStream, String) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "getDecomposition", js.Any.fromFunction2(value))
   }
 }

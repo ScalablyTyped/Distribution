@@ -14,28 +14,21 @@ trait GoogleCloudAssuredworkloadsV1ListWorkloadsResponse extends StObject {
 }
 object GoogleCloudAssuredworkloadsV1ListWorkloadsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudAssuredworkloadsV1ListWorkloadsResponse = {
+  inline def apply(): GoogleCloudAssuredworkloadsV1ListWorkloadsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1ListWorkloadsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssuredworkloadsV1ListWorkloadsResponseMutableBuilder[Self <: GoogleCloudAssuredworkloadsV1ListWorkloadsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssuredworkloadsV1ListWorkloadsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setWorkloads(value: js.Array[GoogleCloudAssuredworkloadsV1Workload]): Self = StObject.set(x, "workloads", value.asInstanceOf[js.Any])
+    inline def setWorkloads(value: js.Array[GoogleCloudAssuredworkloadsV1Workload]): Self = StObject.set(x, "workloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkloadsUndefined: Self = StObject.set(x, "workloads", js.undefined)
+    inline def setWorkloadsUndefined: Self = StObject.set(x, "workloads", js.undefined)
     
-    @scala.inline
-    def setWorkloadsVarargs(value: GoogleCloudAssuredworkloadsV1Workload*): Self = StObject.set(x, "workloads", js.Array(value :_*))
+    inline def setWorkloadsVarargs(value: GoogleCloudAssuredworkloadsV1Workload*): Self = StObject.set(x, "workloads", js.Array(value :_*))
   }
 }

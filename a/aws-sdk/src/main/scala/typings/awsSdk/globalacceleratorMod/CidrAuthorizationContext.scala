@@ -18,19 +18,15 @@ trait CidrAuthorizationContext extends StObject {
 }
 object CidrAuthorizationContext {
   
-  @scala.inline
-  def apply(Message: GenericString, Signature: GenericString): CidrAuthorizationContext = {
+  inline def apply(Message: GenericString, Signature: GenericString): CidrAuthorizationContext = {
     val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[CidrAuthorizationContext]
   }
   
-  @scala.inline
-  implicit class CidrAuthorizationContextMutableBuilder[Self <: CidrAuthorizationContext] (val x: Self) extends AnyVal {
+  extension [Self <: CidrAuthorizationContext](x: Self) {
     
-    @scala.inline
-    def setMessage(value: GenericString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: GenericString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: GenericString): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: GenericString): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
   }
 }

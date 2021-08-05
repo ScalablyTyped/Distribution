@@ -23,31 +23,23 @@ trait EntityTypesEvaluationMetrics extends StObject {
 }
 object EntityTypesEvaluationMetrics {
   
-  @scala.inline
-  def apply(): EntityTypesEvaluationMetrics = {
+  inline def apply(): EntityTypesEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityTypesEvaluationMetrics]
   }
   
-  @scala.inline
-  implicit class EntityTypesEvaluationMetricsMutableBuilder[Self <: EntityTypesEvaluationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: EntityTypesEvaluationMetrics](x: Self) {
     
-    @scala.inline
-    def setF1Score(value: Double): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
+    inline def setF1Score(value: Double): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1ScoreUndefined: Self = StObject.set(x, "F1Score", js.undefined)
+    inline def setF1ScoreUndefined: Self = StObject.set(x, "F1Score", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
     
-    @scala.inline
-    def setRecall(value: Double): Self = StObject.set(x, "Recall", value.asInstanceOf[js.Any])
+    inline def setRecall(value: Double): Self = StObject.set(x, "Recall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecallUndefined: Self = StObject.set(x, "Recall", js.undefined)
+    inline def setRecallUndefined: Self = StObject.set(x, "Recall", js.undefined)
   }
 }

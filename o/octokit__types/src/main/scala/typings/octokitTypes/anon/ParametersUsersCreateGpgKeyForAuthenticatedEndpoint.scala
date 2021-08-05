@@ -18,8 +18,7 @@ trait ParametersUsersCreateGpgKeyForAuthenticatedEndpoint extends StObject {
 }
 object ParametersUsersCreateGpgKeyForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersCreateGpgKeyForAuthenticatedEndpoint,
     request: UsersCreateGpgKeyForAuthenticatedRequestOptions,
     response: OctokitResponse[UsersCreateGpgKeyForAuthenticatedResponseData]
@@ -28,16 +27,12 @@ object ParametersUsersCreateGpgKeyForAuthenticatedEndpoint {
     __obj.asInstanceOf[ParametersUsersCreateGpgKeyForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersCreateGpgKeyForAuthenticatedEndpointMutableBuilder[Self <: ParametersUsersCreateGpgKeyForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersCreateGpgKeyForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersCreateGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersCreateGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: UsersCreateGpgKeyForAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: UsersCreateGpgKeyForAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersCreateGpgKeyForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersCreateGpgKeyForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -13,25 +13,19 @@ trait IgnoreVgConfig extends StObject {
 }
 object IgnoreVgConfig {
   
-  @scala.inline
-  def apply(): IgnoreVgConfig = {
+  inline def apply(): IgnoreVgConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreVgConfig]
   }
   
-  @scala.inline
-  implicit class IgnoreVgConfigMutableBuilder[Self <: IgnoreVgConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreVgConfig](x: Self) {
     
-    @scala.inline
-    def setIgnoreVgConfig(value: Boolean): Self = StObject.set(x, "ignoreVgConfig", value.asInstanceOf[js.Any])
+    inline def setIgnoreVgConfig(value: Boolean): Self = StObject.set(x, "ignoreVgConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreVgConfigUndefined: Self = StObject.set(x, "ignoreVgConfig", js.undefined)
+    inline def setIgnoreVgConfigUndefined: Self = StObject.set(x, "ignoreVgConfig", js.undefined)
     
-    @scala.inline
-    def setVgChannel(value: VgEncodeChannel): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
+    inline def setVgChannel(value: VgEncodeChannel): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
+    inline def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
   }
 }

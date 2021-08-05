@@ -54,7 +54,6 @@ object componentManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(entityObject: EntityObject): ComponentManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[ComponentManager]
+    inline def create(entityObject: EntityObject): ComponentManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[ComponentManager]
   }
 }

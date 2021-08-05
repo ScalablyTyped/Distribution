@@ -23,31 +23,23 @@ trait ListEntityRecognizersRequest extends StObject {
 }
 object ListEntityRecognizersRequest {
   
-  @scala.inline
-  def apply(): ListEntityRecognizersRequest = {
+  inline def apply(): ListEntityRecognizersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEntityRecognizersRequest]
   }
   
-  @scala.inline
-  implicit class ListEntityRecognizersRequestMutableBuilder[Self <: ListEntityRecognizersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListEntityRecognizersRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: EntityRecognizerFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: EntityRecognizerFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait NetworkErrorInfo
 }
 object NetworkErrorInfo {
   
-  @scala.inline
-  def apply(message: String, networkErrorCode: Double, stack: String): NetworkErrorInfo = {
+  inline def apply(message: String, networkErrorCode: Double, stack: String): NetworkErrorInfo = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], networkErrorCode = networkErrorCode.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkErrorInfo]
   }
   
-  @scala.inline
-  implicit class NetworkErrorInfoMutableBuilder[Self <: NetworkErrorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkErrorInfo](x: Self) {
     
-    @scala.inline
-    def setNetworkErrorCode(value: Double): Self = StObject.set(x, "networkErrorCode", value.asInstanceOf[js.Any])
+    inline def setNetworkErrorCode(value: Double): Self = StObject.set(x, "networkErrorCode", value.asInstanceOf[js.Any])
   }
 }

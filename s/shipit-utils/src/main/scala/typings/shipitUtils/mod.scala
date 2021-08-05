@@ -11,19 +11,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def equalValues(value: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equalValues")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def equalValues(value: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equalValues")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getShipit(gruntOrShipit: GruntOrShipit): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShipit")(gruntOrShipit.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
+  inline def getShipit(gruntOrShipit: GruntOrShipit): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShipit")(gruntOrShipit.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
   
-  @scala.inline
-  def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: js.Array[String]): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTask")(gruntOrShipit.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dependenciesOrTask.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
-  @scala.inline
-  def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: EmptyCallback): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTask")(gruntOrShipit.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dependenciesOrTask.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
+  inline def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: js.Array[String]): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTask")(gruntOrShipit.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dependenciesOrTask.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
+  inline def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: EmptyCallback): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTask")(gruntOrShipit.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dependenciesOrTask.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
   
-  @scala.inline
-  def runTask(gruntOrShipit: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runTask")(gruntOrShipit.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def runTask(gruntOrShipit: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runTask")(gruntOrShipit.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type EmptyCallback = js.Function0[Unit]
   

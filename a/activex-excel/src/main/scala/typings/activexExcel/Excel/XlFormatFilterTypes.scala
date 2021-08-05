@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlFormatFilterTypes extends StObject
 object XlFormatFilterTypes {
   
-  @scala.inline
-  def xlFilterBottom: `0` = 0.asInstanceOf[`0`]
+  inline def xlFilterBottom: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlFilterBottomPercent: `2` = 2.asInstanceOf[`2`]
+  inline def xlFilterBottomPercent: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlFilterTop: `1` = 1.asInstanceOf[`1`]
+  inline def xlFilterTop: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlFilterTopPercent: `3` = 3.asInstanceOf[`3`]
+  inline def xlFilterTopPercent: `3` = 3.asInstanceOf[`3`]
 }

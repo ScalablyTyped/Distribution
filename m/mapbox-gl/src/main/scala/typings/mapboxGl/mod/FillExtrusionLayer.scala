@@ -18,29 +18,22 @@ trait FillExtrusionLayer
 }
 object FillExtrusionLayer {
   
-  @scala.inline
-  def apply(id: String): FillExtrusionLayer = {
+  inline def apply(id: String): FillExtrusionLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fill-extrusion")
     __obj.asInstanceOf[FillExtrusionLayer]
   }
   
-  @scala.inline
-  implicit class FillExtrusionLayerMutableBuilder[Self <: FillExtrusionLayer] (val x: Self) extends AnyVal {
+  extension [Self <: FillExtrusionLayer](x: Self) {
     
-    @scala.inline
-    def setLayout(value: FillExtrusionLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: FillExtrusionLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setPaint(value: FillExtrusionPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: FillExtrusionPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
+    inline def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
     
-    @scala.inline
-    def setType(value: `fill-extrusion`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `fill-extrusion`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

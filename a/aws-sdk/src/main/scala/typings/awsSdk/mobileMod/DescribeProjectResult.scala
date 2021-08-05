@@ -10,19 +10,15 @@ trait DescribeProjectResult extends StObject {
 }
 object DescribeProjectResult {
   
-  @scala.inline
-  def apply(): DescribeProjectResult = {
+  inline def apply(): DescribeProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProjectResult]
   }
   
-  @scala.inline
-  implicit class DescribeProjectResultMutableBuilder[Self <: DescribeProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProjectResult](x: Self) {
     
-    @scala.inline
-    def setDetails(value: ProjectDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: ProjectDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

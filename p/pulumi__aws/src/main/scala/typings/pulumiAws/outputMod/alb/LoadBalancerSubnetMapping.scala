@@ -25,31 +25,23 @@ trait LoadBalancerSubnetMapping extends StObject {
 }
 object LoadBalancerSubnetMapping {
   
-  @scala.inline
-  def apply(outpostId: String, subnetId: String): LoadBalancerSubnetMapping = {
+  inline def apply(outpostId: String, subnetId: String): LoadBalancerSubnetMapping = {
     val __obj = js.Dynamic.literal(outpostId = outpostId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerSubnetMapping]
   }
   
-  @scala.inline
-  implicit class LoadBalancerSubnetMappingMutableBuilder[Self <: LoadBalancerSubnetMapping] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerSubnetMapping](x: Self) {
     
-    @scala.inline
-    def setAllocationId(value: String): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
+    inline def setAllocationId(value: String): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
+    inline def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
     
-    @scala.inline
-    def setOutpostId(value: String): Self = StObject.set(x, "outpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: String): Self = StObject.set(x, "outpostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpv4Address(value: String): Self = StObject.set(x, "privateIpv4Address", value.asInstanceOf[js.Any])
+    inline def setPrivateIpv4Address(value: String): Self = StObject.set(x, "privateIpv4Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpv4AddressUndefined: Self = StObject.set(x, "privateIpv4Address", js.undefined)
+    inline def setPrivateIpv4AddressUndefined: Self = StObject.set(x, "privateIpv4Address", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
   }
 }

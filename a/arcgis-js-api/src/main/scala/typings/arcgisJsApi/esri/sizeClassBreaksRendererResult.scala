@@ -54,8 +54,7 @@ trait sizeClassBreaksRendererResult
 }
 object sizeClassBreaksRendererResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basemapId: String,
     basemapTheme: String,
     classBreaksResult: ClassBreaksResult,
@@ -70,25 +69,18 @@ object sizeClassBreaksRendererResult {
     __obj.asInstanceOf[sizeClassBreaksRendererResult]
   }
   
-  @scala.inline
-  implicit class sizeClassBreaksRendererResultMutableBuilder[Self <: sizeClassBreaksRendererResult] (val x: Self) extends AnyVal {
+  extension [Self <: sizeClassBreaksRendererResult](x: Self) {
     
-    @scala.inline
-    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
+    inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassBreaksResult(value: ClassBreaksResult): Self = StObject.set(x, "classBreaksResult", value.asInstanceOf[js.Any])
+    inline def setClassBreaksResult(value: ClassBreaksResult): Self = StObject.set(x, "classBreaksResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
+    inline def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: ClassBreaksRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: ClassBreaksRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
+    inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
   }
 }

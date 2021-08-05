@@ -13,19 +13,15 @@ trait AttachObjectResponse extends StObject {
 }
 object AttachObjectResponse {
   
-  @scala.inline
-  def apply(): AttachObjectResponse = {
+  inline def apply(): AttachObjectResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachObjectResponse]
   }
   
-  @scala.inline
-  implicit class AttachObjectResponseMutableBuilder[Self <: AttachObjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AttachObjectResponse](x: Self) {
     
-    @scala.inline
-    def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "AttachedObjectIdentifier", value.asInstanceOf[js.Any])
+    inline def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "AttachedObjectIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedObjectIdentifierUndefined: Self = StObject.set(x, "AttachedObjectIdentifier", js.undefined)
+    inline def setAttachedObjectIdentifierUndefined: Self = StObject.set(x, "AttachedObjectIdentifier", js.undefined)
   }
 }

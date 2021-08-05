@@ -23,31 +23,23 @@ trait SchemaProductAspect extends StObject {
 }
 object SchemaProductAspect {
   
-  @scala.inline
-  def apply(): SchemaProductAspect = {
+  inline def apply(): SchemaProductAspect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductAspect]
   }
   
-  @scala.inline
-  implicit class SchemaProductAspectMutableBuilder[Self <: SchemaProductAspect] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductAspect](x: Self) {
     
-    @scala.inline
-    def setAspectName(value: String): Self = StObject.set(x, "aspectName", value.asInstanceOf[js.Any])
+    inline def setAspectName(value: String): Self = StObject.set(x, "aspectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectNameUndefined: Self = StObject.set(x, "aspectName", js.undefined)
+    inline def setAspectNameUndefined: Self = StObject.set(x, "aspectName", js.undefined)
     
-    @scala.inline
-    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+    inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+    inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
-    @scala.inline
-    def setIntention(value: String): Self = StObject.set(x, "intention", value.asInstanceOf[js.Any])
+    inline def setIntention(value: String): Self = StObject.set(x, "intention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentionUndefined: Self = StObject.set(x, "intention", js.undefined)
+    inline def setIntentionUndefined: Self = StObject.set(x, "intention", js.undefined)
   }
 }

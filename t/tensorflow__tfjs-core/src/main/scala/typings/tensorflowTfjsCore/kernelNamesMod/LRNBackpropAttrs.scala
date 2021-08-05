@@ -16,25 +16,19 @@ trait LRNBackpropAttrs extends StObject {
 }
 object LRNBackpropAttrs {
   
-  @scala.inline
-  def apply(alpha: Double, beta: Double, bias: Double, depthRadius: Double): LRNBackpropAttrs = {
+  inline def apply(alpha: Double, beta: Double, bias: Double, depthRadius: Double): LRNBackpropAttrs = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], bias = bias.asInstanceOf[js.Any], depthRadius = depthRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[LRNBackpropAttrs]
   }
   
-  @scala.inline
-  implicit class LRNBackpropAttrsMutableBuilder[Self <: LRNBackpropAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: LRNBackpropAttrs](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+    inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthRadius(value: Double): Self = StObject.set(x, "depthRadius", value.asInstanceOf[js.Any])
+    inline def setDepthRadius(value: Double): Self = StObject.set(x, "depthRadius", value.asInstanceOf[js.Any])
   }
 }

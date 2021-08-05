@@ -28,25 +28,19 @@ trait IngressBackend extends StObject {
 }
 object IngressBackend {
   
-  @scala.inline
-  def apply(serviceName: Input[String], servicePort: Input[Double | String]): IngressBackend = {
+  inline def apply(serviceName: Input[String], servicePort: Input[Double | String]): IngressBackend = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], servicePort = servicePort.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngressBackend]
   }
   
-  @scala.inline
-  implicit class IngressBackendMutableBuilder[Self <: IngressBackend] (val x: Self) extends AnyVal {
+  extension [Self <: IngressBackend](x: Self) {
     
-    @scala.inline
-    def setResource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePort(value: Input[Double | String]): Self = StObject.set(x, "servicePort", value.asInstanceOf[js.Any])
+    inline def setServicePort(value: Input[Double | String]): Self = StObject.set(x, "servicePort", value.asInstanceOf[js.Any])
   }
 }

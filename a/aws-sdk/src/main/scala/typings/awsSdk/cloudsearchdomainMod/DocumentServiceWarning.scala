@@ -13,19 +13,15 @@ trait DocumentServiceWarning extends StObject {
 }
 object DocumentServiceWarning {
   
-  @scala.inline
-  def apply(): DocumentServiceWarning = {
+  inline def apply(): DocumentServiceWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentServiceWarning]
   }
   
-  @scala.inline
-  implicit class DocumentServiceWarningMutableBuilder[Self <: DocumentServiceWarning] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentServiceWarning](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

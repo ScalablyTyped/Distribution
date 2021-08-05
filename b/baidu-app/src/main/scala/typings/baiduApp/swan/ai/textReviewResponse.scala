@@ -14,19 +14,15 @@ trait textReviewResponse extends StObject {
 }
 object textReviewResponse {
   
-  @scala.inline
-  def apply(log_id: String, result: Pass): textReviewResponse = {
+  inline def apply(log_id: String, result: Pass): textReviewResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[textReviewResponse]
   }
   
-  @scala.inline
-  implicit class textReviewResponseMutableBuilder[Self <: textReviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: textReviewResponse](x: Self) {
     
-    @scala.inline
-    def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Pass): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Pass): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

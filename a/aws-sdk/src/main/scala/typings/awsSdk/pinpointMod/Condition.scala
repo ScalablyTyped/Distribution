@@ -18,28 +18,21 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(): Condition = {
+  inline def apply(): Condition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setConditions(value: ListOfSimpleCondition): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: ListOfSimpleCondition): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: SimpleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: SimpleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
   }
 }

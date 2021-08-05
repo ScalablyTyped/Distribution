@@ -36,8 +36,7 @@ trait HTTPGetAction extends StObject {
 }
 object HTTPGetAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     host: String,
     httpHeaders: js.Array[HTTPHeader],
     path: String,
@@ -48,25 +47,18 @@ object HTTPGetAction {
     __obj.asInstanceOf[HTTPGetAction]
   }
   
-  @scala.inline
-  implicit class HTTPGetActionMutableBuilder[Self <: HTTPGetAction] (val x: Self) extends AnyVal {
+  extension [Self <: HTTPGetAction](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeaders(value: js.Array[HTTPHeader]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
+    inline def setHttpHeaders(value: js.Array[HTTPHeader]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeadersVarargs(value: HTTPHeader*): Self = StObject.set(x, "httpHeaders", js.Array(value :_*))
+    inline def setHttpHeadersVarargs(value: HTTPHeader*): Self = StObject.set(x, "httpHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait SocketForwardingConfig extends StObject {
 }
 object SocketForwardingConfig {
   
-  @scala.inline
-  def apply(socketPath: String): SocketForwardingConfig = {
+  inline def apply(socketPath: String): SocketForwardingConfig = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketForwardingConfig]
   }
   
-  @scala.inline
-  implicit class SocketForwardingConfigMutableBuilder[Self <: SocketForwardingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SocketForwardingConfig](x: Self) {
     
-    @scala.inline
-    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+    inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }
 }

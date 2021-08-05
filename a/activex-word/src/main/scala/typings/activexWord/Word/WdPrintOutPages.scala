@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdPrintOutPages extends StObject
 object WdPrintOutPages {
   
-  @scala.inline
-  def wdPrintAllPages: `0` = 0.asInstanceOf[`0`]
+  inline def wdPrintAllPages: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdPrintEvenPagesOnly: `2` = 2.asInstanceOf[`2`]
+  inline def wdPrintEvenPagesOnly: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdPrintOddPagesOnly: `1` = 1.asInstanceOf[`1`]
+  inline def wdPrintOddPagesOnly: `1` = 1.asInstanceOf[`1`]
 }

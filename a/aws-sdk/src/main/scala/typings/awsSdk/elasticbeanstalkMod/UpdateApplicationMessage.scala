@@ -18,22 +18,17 @@ trait UpdateApplicationMessage extends StObject {
 }
 object UpdateApplicationMessage {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName): UpdateApplicationMessage = {
+  inline def apply(ApplicationName: ApplicationName): UpdateApplicationMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationMessage]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationMessageMutableBuilder[Self <: UpdateApplicationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AssociateNodeResponse extends StObject {
 }
 object AssociateNodeResponse {
   
-  @scala.inline
-  def apply(): AssociateNodeResponse = {
+  inline def apply(): AssociateNodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateNodeResponse]
   }
   
-  @scala.inline
-  implicit class AssociateNodeResponseMutableBuilder[Self <: AssociateNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateNodeResponse](x: Self) {
     
-    @scala.inline
-    def setNodeAssociationStatusToken(value: NodeAssociationStatusToken): Self = StObject.set(x, "NodeAssociationStatusToken", value.asInstanceOf[js.Any])
+    inline def setNodeAssociationStatusToken(value: NodeAssociationStatusToken): Self = StObject.set(x, "NodeAssociationStatusToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeAssociationStatusTokenUndefined: Self = StObject.set(x, "NodeAssociationStatusToken", js.undefined)
+    inline def setNodeAssociationStatusTokenUndefined: Self = StObject.set(x, "NodeAssociationStatusToken", js.undefined)
   }
 }

@@ -136,20 +136,16 @@ object jo {
   }
   object Concat {
     
-    @scala.inline
-    def apply(LeftSide: String | Concat, RightSide: String | Concat): Concat = {
+    inline def apply(LeftSide: String | Concat, RightSide: String | Concat): Concat = {
       val __obj = js.Dynamic.literal(LeftSide = LeftSide.asInstanceOf[js.Any], RightSide = RightSide.asInstanceOf[js.Any])
       __obj.asInstanceOf[Concat]
     }
     
-    @scala.inline
-    implicit class ConcatMutableBuilder[Self <: Concat] (val x: Self) extends AnyVal {
+    extension [Self <: Concat](x: Self) {
       
-      @scala.inline
-      def setLeftSide(value: String | Concat): Self = StObject.set(x, "LeftSide", value.asInstanceOf[js.Any])
+      inline def setLeftSide(value: String | Concat): Self = StObject.set(x, "LeftSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightSide(value: String | Concat): Self = StObject.set(x, "RightSide", value.asInstanceOf[js.Any])
+      inline def setRightSide(value: String | Concat): Self = StObject.set(x, "RightSide", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,20 +159,16 @@ object jo {
   }
   object ExpandSettings {
     
-    @scala.inline
-    def apply(DefaultExpand: String, Expand: String, isSet: () => Boolean, reset: () => Unit): ExpandSettings = {
+    inline def apply(DefaultExpand: String, Expand: String, isSet: () => Boolean, reset: () => Unit): ExpandSettings = {
       val __obj = js.Dynamic.literal(DefaultExpand = DefaultExpand.asInstanceOf[js.Any], Expand = Expand.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[ExpandSettings]
     }
     
-    @scala.inline
-    implicit class ExpandSettingsMutableBuilder[Self <: ExpandSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultExpand(value: String): Self = StObject.set(x, "DefaultExpand", value.asInstanceOf[js.Any])
+      inline def setDefaultExpand(value: String): Self = StObject.set(x, "DefaultExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpand(value: String): Self = StObject.set(x, "Expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: String): Self = StObject.set(x, "Expand", value.asInstanceOf[js.Any])
     }
   }
   
@@ -301,8 +293,7 @@ object jo {
   }
   object FilterSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CapturedFilter: js.Array[FilterClause],
       DefaultFilters: js.Array[FilterClause],
       Filters: js.Array[FilterClause],
@@ -315,32 +306,23 @@ object jo {
       __obj.asInstanceOf[FilterSettings]
     }
     
-    @scala.inline
-    implicit class FilterSettingsMutableBuilder[Self <: FilterSettings] (val x: Self) extends AnyVal {
+    extension [Self <: FilterSettings](x: Self) {
       
-      @scala.inline
-      def setCapturedFilter(value: js.Array[FilterClause]): Self = StObject.set(x, "CapturedFilter", value.asInstanceOf[js.Any])
+      inline def setCapturedFilter(value: js.Array[FilterClause]): Self = StObject.set(x, "CapturedFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapturedFilterVarargs(value: FilterClause*): Self = StObject.set(x, "CapturedFilter", js.Array(value :_*))
+      inline def setCapturedFilterVarargs(value: FilterClause*): Self = StObject.set(x, "CapturedFilter", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultFilters(value: js.Array[FilterClause]): Self = StObject.set(x, "DefaultFilters", value.asInstanceOf[js.Any])
+      inline def setDefaultFilters(value: js.Array[FilterClause]): Self = StObject.set(x, "DefaultFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "DefaultFilters", js.Array(value :_*))
+      inline def setDefaultFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "DefaultFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[FilterClause]): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[FilterClause]): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "Filters", js.Array(value :_*))
       
-      @scala.inline
-      def setFullReset(value: () => Unit): Self = StObject.set(x, "fullReset", js.Any.fromFunction0(value))
+      inline def setFullReset(value: () => Unit): Self = StObject.set(x, "fullReset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadFromJson(value: js.Any => Unit): Self = StObject.set(x, "loadFromJson", js.Any.fromFunction1(value))
+      inline def setLoadFromJson(value: js.Any => Unit): Self = StObject.set(x, "loadFromJson", js.Any.fromFunction1(value))
     }
   }
   
@@ -356,26 +338,20 @@ object jo {
   }
   object FormatOptions {
     
-    @scala.inline
-    def apply(atom: () => jo, custom: String => jo, json: () => jo, xml: () => jo): FormatOptions = {
+    inline def apply(atom: () => jo, custom: String => jo, json: () => jo, xml: () => jo): FormatOptions = {
       val __obj = js.Dynamic.literal(atom = js.Any.fromFunction0(atom), custom = js.Any.fromFunction1(custom), json = js.Any.fromFunction0(json), xml = js.Any.fromFunction0(xml))
       __obj.asInstanceOf[FormatOptions]
     }
     
-    @scala.inline
-    implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormatOptions](x: Self) {
       
-      @scala.inline
-      def setAtom(value: () => jo): Self = StObject.set(x, "atom", js.Any.fromFunction0(value))
+      inline def setAtom(value: () => jo): Self = StObject.set(x, "atom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCustom(value: String => jo): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
+      inline def setCustom(value: String => jo): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJson(value: () => jo): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => jo): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setXml(value: () => jo): Self = StObject.set(x, "xml", js.Any.fromFunction0(value))
+      inline def setXml(value: () => jo): Self = StObject.set(x, "xml", js.Any.fromFunction0(value))
     }
   }
   
@@ -389,20 +365,16 @@ object jo {
   }
   object FormatSettings {
     
-    @scala.inline
-    def apply(DefaultFormat: String, Format: String, isSet: () => Boolean, reset: () => Unit): FormatSettings = {
+    inline def apply(DefaultFormat: String, Format: String, isSet: () => Boolean, reset: () => Unit): FormatSettings = {
       val __obj = js.Dynamic.literal(DefaultFormat = DefaultFormat.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[FormatSettings]
     }
     
-    @scala.inline
-    implicit class FormatSettingsMutableBuilder[Self <: FormatSettings] (val x: Self) extends AnyVal {
+    extension [Self <: FormatSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultFormat(value: String): Self = StObject.set(x, "DefaultFormat", value.asInstanceOf[js.Any])
+      inline def setDefaultFormat(value: String): Self = StObject.set(x, "DefaultFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -416,20 +388,16 @@ object jo {
   }
   object ISettings {
     
-    @scala.inline
-    def apply(isSet: () => Boolean, reset: () => Unit): ISettings = {
+    inline def apply(isSet: () => Boolean, reset: () => Unit): ISettings = {
       val __obj = js.Dynamic.literal(isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[ISettings]
     }
     
-    @scala.inline
-    implicit class ISettingsMutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
+    extension [Self <: ISettings](x: Self) {
       
-      @scala.inline
-      def setIsSet(value: () => Boolean): Self = StObject.set(x, "isSet", js.Any.fromFunction0(value))
+      inline def setIsSet(value: () => Boolean): Self = StObject.set(x, "isSet", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -441,20 +409,16 @@ object jo {
   }
   object InlineCountOptions {
     
-    @scala.inline
-    def apply(allPages: () => jo, none: () => jo): InlineCountOptions = {
+    inline def apply(allPages: () => jo, none: () => jo): InlineCountOptions = {
       val __obj = js.Dynamic.literal(allPages = js.Any.fromFunction0(allPages), none = js.Any.fromFunction0(none))
       __obj.asInstanceOf[InlineCountOptions]
     }
     
-    @scala.inline
-    implicit class InlineCountOptionsMutableBuilder[Self <: InlineCountOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InlineCountOptions](x: Self) {
       
-      @scala.inline
-      def setAllPages(value: () => jo): Self = StObject.set(x, "allPages", js.Any.fromFunction0(value))
+      inline def setAllPages(value: () => jo): Self = StObject.set(x, "allPages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNone(value: () => jo): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
+      inline def setNone(value: () => jo): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
     }
   }
   
@@ -468,20 +432,16 @@ object jo {
   }
   object InlineCountSettings {
     
-    @scala.inline
-    def apply(DefaultInlineCount: String, InlineCount: String, isSet: () => Boolean, reset: () => Unit): InlineCountSettings = {
+    inline def apply(DefaultInlineCount: String, InlineCount: String, isSet: () => Boolean, reset: () => Unit): InlineCountSettings = {
       val __obj = js.Dynamic.literal(DefaultInlineCount = DefaultInlineCount.asInstanceOf[js.Any], InlineCount = InlineCount.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[InlineCountSettings]
     }
     
-    @scala.inline
-    implicit class InlineCountSettingsMutableBuilder[Self <: InlineCountSettings] (val x: Self) extends AnyVal {
+    extension [Self <: InlineCountSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultInlineCount(value: String): Self = StObject.set(x, "DefaultInlineCount", value.asInstanceOf[js.Any])
+      inline def setDefaultInlineCount(value: String): Self = StObject.set(x, "DefaultInlineCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineCount(value: String): Self = StObject.set(x, "InlineCount", value.asInstanceOf[js.Any])
+      inline def setInlineCount(value: String): Self = StObject.set(x, "InlineCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -499,8 +459,7 @@ object jo {
   }
   object OrderBySettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DefaultOrder: String,
       DefaultProperty: String,
       Order: String,
@@ -512,20 +471,15 @@ object jo {
       __obj.asInstanceOf[OrderBySettings]
     }
     
-    @scala.inline
-    implicit class OrderBySettingsMutableBuilder[Self <: OrderBySettings] (val x: Self) extends AnyVal {
+    extension [Self <: OrderBySettings](x: Self) {
       
-      @scala.inline
-      def setDefaultOrder(value: String): Self = StObject.set(x, "DefaultOrder", value.asInstanceOf[js.Any])
+      inline def setDefaultOrder(value: String): Self = StObject.set(x, "DefaultOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultProperty(value: String): Self = StObject.set(x, "DefaultProperty", value.asInstanceOf[js.Any])
+      inline def setDefaultProperty(value: String): Self = StObject.set(x, "DefaultProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     }
   }
   
@@ -537,20 +491,16 @@ object jo {
   }
   object PrecedenceGroup {
     
-    @scala.inline
-    def apply(andFilter: FilterClause => FilterClause, orFilter: FilterClause => FilterClause): PrecedenceGroup = {
+    inline def apply(andFilter: FilterClause => FilterClause, orFilter: FilterClause => FilterClause): PrecedenceGroup = {
       val __obj = js.Dynamic.literal(andFilter = js.Any.fromFunction1(andFilter), orFilter = js.Any.fromFunction1(orFilter))
       __obj.asInstanceOf[PrecedenceGroup]
     }
     
-    @scala.inline
-    implicit class PrecedenceGroupMutableBuilder[Self <: PrecedenceGroup] (val x: Self) extends AnyVal {
+    extension [Self <: PrecedenceGroup](x: Self) {
       
-      @scala.inline
-      def setAndFilter(value: FilterClause => FilterClause): Self = StObject.set(x, "andFilter", js.Any.fromFunction1(value))
+      inline def setAndFilter(value: FilterClause => FilterClause): Self = StObject.set(x, "andFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrFilter(value: FilterClause => FilterClause): Self = StObject.set(x, "orFilter", js.Any.fromFunction1(value))
+      inline def setOrFilter(value: FilterClause => FilterClause): Self = StObject.set(x, "orFilter", js.Any.fromFunction1(value))
     }
   }
   
@@ -564,26 +514,20 @@ object jo {
   }
   object SelectSettings {
     
-    @scala.inline
-    def apply(DefaultSelect: js.Array[String], Select: js.Array[String], isSet: () => Boolean, reset: () => Unit): SelectSettings = {
+    inline def apply(DefaultSelect: js.Array[String], Select: js.Array[String], isSet: () => Boolean, reset: () => Unit): SelectSettings = {
       val __obj = js.Dynamic.literal(DefaultSelect = DefaultSelect.asInstanceOf[js.Any], Select = Select.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[SelectSettings]
     }
     
-    @scala.inline
-    implicit class SelectSettingsMutableBuilder[Self <: SelectSettings] (val x: Self) extends AnyVal {
+    extension [Self <: SelectSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultSelect(value: js.Array[String]): Self = StObject.set(x, "DefaultSelect", value.asInstanceOf[js.Any])
+      inline def setDefaultSelect(value: js.Array[String]): Self = StObject.set(x, "DefaultSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectVarargs(value: String*): Self = StObject.set(x, "DefaultSelect", js.Array(value :_*))
+      inline def setDefaultSelectVarargs(value: String*): Self = StObject.set(x, "DefaultSelect", js.Array(value :_*))
       
-      @scala.inline
-      def setSelect(value: js.Array[String]): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: js.Array[String]): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectVarargs(value: String*): Self = StObject.set(x, "Select", js.Array(value :_*))
+      inline def setSelectVarargs(value: String*): Self = StObject.set(x, "Select", js.Array(value :_*))
     }
   }
   
@@ -597,20 +541,16 @@ object jo {
   }
   object SkipSettings {
     
-    @scala.inline
-    def apply(DefaultSkip: Double, Skip: Double, isSet: () => Boolean, reset: () => Unit): SkipSettings = {
+    inline def apply(DefaultSkip: Double, Skip: Double, isSet: () => Boolean, reset: () => Unit): SkipSettings = {
       val __obj = js.Dynamic.literal(DefaultSkip = DefaultSkip.asInstanceOf[js.Any], Skip = Skip.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[SkipSettings]
     }
     
-    @scala.inline
-    implicit class SkipSettingsMutableBuilder[Self <: SkipSettings] (val x: Self) extends AnyVal {
+    extension [Self <: SkipSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultSkip(value: Double): Self = StObject.set(x, "DefaultSkip", value.asInstanceOf[js.Any])
+      inline def setDefaultSkip(value: Double): Self = StObject.set(x, "DefaultSkip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "Skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "Skip", value.asInstanceOf[js.Any])
     }
   }
   
@@ -624,20 +564,16 @@ object jo {
   }
   object TopSettings {
     
-    @scala.inline
-    def apply(DefaultTop: Double, Top: Double, isSet: () => Boolean, reset: () => Unit): TopSettings = {
+    inline def apply(DefaultTop: Double, Top: Double, isSet: () => Boolean, reset: () => Unit): TopSettings = {
       val __obj = js.Dynamic.literal(DefaultTop = DefaultTop.asInstanceOf[js.Any], Top = Top.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[TopSettings]
     }
     
-    @scala.inline
-    implicit class TopSettingsMutableBuilder[Self <: TopSettings] (val x: Self) extends AnyVal {
+    extension [Self <: TopSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultTop(value: Double): Self = StObject.set(x, "DefaultTop", value.asInstanceOf[js.Any])
+      inline def setDefaultTop(value: Double): Self = StObject.set(x, "DefaultTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     }
   }
 }

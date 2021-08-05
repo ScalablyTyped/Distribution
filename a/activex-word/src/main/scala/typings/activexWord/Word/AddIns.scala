@@ -22,6 +22,6 @@ trait AddIns extends StObject {
   
   def Unload(RemoveFromList: Boolean): Unit = js.native
   
-  @JSName("Word.AddIns_typekey")
+  /* private */ @JSName("Word.AddIns_typekey")
   var WordDotAddIns_typekey: AddIns = js.native
 }

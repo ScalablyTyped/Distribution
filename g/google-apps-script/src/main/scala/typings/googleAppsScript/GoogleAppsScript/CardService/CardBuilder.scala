@@ -21,8 +21,7 @@ trait CardBuilder extends StObject {
 }
 object CardBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCardAction: CardAction => CardBuilder,
     addSection: CardSection => CardBuilder,
     build: () => Card,
@@ -33,22 +32,16 @@ object CardBuilder {
     __obj.asInstanceOf[CardBuilder]
   }
   
-  @scala.inline
-  implicit class CardBuilderMutableBuilder[Self <: CardBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: CardBuilder](x: Self) {
     
-    @scala.inline
-    def setAddCardAction(value: CardAction => CardBuilder): Self = StObject.set(x, "addCardAction", js.Any.fromFunction1(value))
+    inline def setAddCardAction(value: CardAction => CardBuilder): Self = StObject.set(x, "addCardAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddSection(value: CardSection => CardBuilder): Self = StObject.set(x, "addSection", js.Any.fromFunction1(value))
+    inline def setAddSection(value: CardSection => CardBuilder): Self = StObject.set(x, "addSection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuild(value: () => Card): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => Card): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHeader(value: CardHeader => CardBuilder): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
+    inline def setSetHeader(value: CardHeader => CardBuilder): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetName(value: String => CardBuilder): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => CardBuilder): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

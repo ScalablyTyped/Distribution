@@ -17,37 +17,27 @@ trait InitMultipartUploadOptions extends StObject {
 }
 object InitMultipartUploadOptions {
   
-  @scala.inline
-  def apply(): InitMultipartUploadOptions = {
+  inline def apply(): InitMultipartUploadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitMultipartUploadOptions]
   }
   
-  @scala.inline
-  implicit class InitMultipartUploadOptionsMutableBuilder[Self <: InitMultipartUploadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitMultipartUploadOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

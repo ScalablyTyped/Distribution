@@ -21,16 +21,13 @@ trait DatabaseDeleteEvent
 }
 object DatabaseDeleteEvent {
   
-  @scala.inline
-  def apply(Bookmarks: SafeArray[js.Any], Source: XInterface): DatabaseDeleteEvent = {
+  inline def apply(Bookmarks: SafeArray[js.Any], Source: XInterface): DatabaseDeleteEvent = {
     val __obj = js.Dynamic.literal(Bookmarks = Bookmarks.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseDeleteEvent]
   }
   
-  @scala.inline
-  implicit class DatabaseDeleteEventMutableBuilder[Self <: DatabaseDeleteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseDeleteEvent](x: Self) {
     
-    @scala.inline
-    def setBookmarks(value: SafeArray[js.Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: SafeArray[js.Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
   }
 }

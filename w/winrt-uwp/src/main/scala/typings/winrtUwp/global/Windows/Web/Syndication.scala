@@ -256,8 +256,7 @@ object Syndication {
       * @return The error encountered.
       */
     /* static member */
-    @scala.inline
-    def getStatus(hresult: Double): SyndicationErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SyndicationErrorStatus]
+    inline def getStatus(hresult: Double): SyndicationErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SyndicationErrorStatus]
   }
   
   /** Defines errors encountered during a Syndication operation. */

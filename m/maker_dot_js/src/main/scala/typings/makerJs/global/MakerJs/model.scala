@@ -29,18 +29,15 @@ object model {
     * @param modelToBreak The model containing paths to be broken.
     * @param modelToIntersect Optional model containing paths to look for intersection, or else the modelToBreak will be used.
     */
-  @scala.inline
-  def breakPathsAtIntersections(modelToBreak: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("breakPathsAtIntersections")(modelToBreak.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def breakPathsAtIntersections(modelToBreak: IModel, modelToIntersect: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("breakPathsAtIntersections")(modelToBreak.asInstanceOf[js.Any], modelToIntersect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def breakPathsAtIntersections(modelToBreak: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("breakPathsAtIntersections")(modelToBreak.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def breakPathsAtIntersections(modelToBreak: IModel, modelToIntersect: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("breakPathsAtIntersections")(modelToBreak.asInstanceOf[js.Any], modelToIntersect.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Center a model at [0, 0].
     *
     * @param modelToCenter The model to center.
     */
-  @scala.inline
-  def center(modelToCenter: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(modelToCenter.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  inline def center(modelToCenter: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(modelToCenter.asInstanceOf[js.Any]).asInstanceOf[IModel]
   
   /**
     * Combine 2 models.
@@ -54,22 +51,17 @@ object model {
     * @param keepDuplicates Flag to include paths which are duplicate in both models.
     * @param farPoint Optional point of reference which is outside the bounds of both models.
     */
-  @scala.inline
-  def combine(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean, includeAOutsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean, includeAOutsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
     includeAOutsideB: Boolean,
     includeBInsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -77,8 +69,7 @@ object model {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -87,8 +78,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -97,8 +87,7 @@ object model {
     includeBOutsideA: Unit,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -106,8 +95,7 @@ object model {
     includeBInsideA: Unit,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -116,8 +104,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -126,16 +113,14 @@ object model {
     includeBOutsideA: Unit,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
     includeAOutsideB: Unit,
     includeBInsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -143,8 +128,7 @@ object model {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -153,8 +137,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -163,8 +146,7 @@ object model {
     includeBOutsideA: Unit,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -172,8 +154,7 @@ object model {
     includeBInsideA: Unit,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -182,8 +163,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
@@ -192,18 +172,15 @@ object model {
     includeBOutsideA: Unit,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Unit, includeAOutsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(modelA: IModel, modelB: IModel, includeAInsideB: Unit, includeAOutsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
     includeAOutsideB: Boolean,
     includeBInsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -211,8 +188,7 @@ object model {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -221,8 +197,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -231,8 +206,7 @@ object model {
     includeBOutsideA: Unit,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -240,8 +214,7 @@ object model {
     includeBInsideA: Unit,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -250,8 +223,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -260,16 +232,14 @@ object model {
     includeBOutsideA: Unit,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
     includeAOutsideB: Unit,
     includeBInsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -277,8 +247,7 @@ object model {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -287,8 +256,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -297,8 +265,7 @@ object model {
     includeBOutsideA: Unit,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -306,8 +273,7 @@ object model {
     includeBInsideA: Unit,
     includeBOutsideA: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -316,8 +282,7 @@ object model {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def combine(
+  inline def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Unit,
@@ -333,8 +298,7 @@ object model {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
-  @scala.inline
-  def combineIntersection(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineIntersection")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def combineIntersection(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineIntersection")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Combine 2 models, resulting in a subtraction of B from A.
@@ -342,8 +306,7 @@ object model {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
-  @scala.inline
-  def combineSubtraction(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineSubtraction")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def combineSubtraction(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineSubtraction")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Combine 2 models, resulting in a union.
@@ -351,8 +314,7 @@ object model {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
-  @scala.inline
-  def combineUnion(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineUnion")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def combineUnion(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineUnion")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Convert a model to match a different unit system.
@@ -361,8 +323,7 @@ object model {
     * @param destUnitType The unit system.
     * @returns The scaled model (for cascading).
     */
-  @scala.inline
-  def convertUnits(modeltoConvert: IModel, destUnitType: String): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnits")(modeltoConvert.asInstanceOf[js.Any], destUnitType.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def convertUnits(modeltoConvert: IModel, destUnitType: String): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnits")(modeltoConvert.asInstanceOf[js.Any], destUnitType.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Count the number of child models within a given model.
@@ -370,16 +331,14 @@ object model {
     * @param modelContext The model containing other models.
     * @returns Number of child models.
     */
-  @scala.inline
-  def countChildModels(modelContext: IModel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countChildModels")(modelContext.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def countChildModels(modelContext: IModel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countChildModels")(modelContext.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Remove all paths in a loop model from the model(s) which contained them.
     *
     * @param loopToDetach The model to search for loops.
     */
-  @scala.inline
-  def detachLoop(loopToDetach: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachLoop")(loopToDetach.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def detachLoop(loopToDetach: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachLoop")(loopToDetach.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Expand all paths in a model, then combine the resulting expansions.
@@ -389,14 +348,10 @@ object model {
     * @param joints Number of points at a joint between paths. Use 0 for round joints, 1 for pointed joints, 2 for beveled joints.
     * @returns Model which surrounds the paths of the original model.
     */
-  @scala.inline
-  def expandPaths(modelToExpand: IModel, distance: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def expandPaths(modelToExpand: IModel, distance: Double, joints: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def expandPaths(modelToExpand: IModel, distance: Double, joints: Double, combineOptions: ICombineOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], combineOptions.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def expandPaths(modelToExpand: IModel, distance: Double, joints: Unit, combineOptions: ICombineOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], combineOptions.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def expandPaths(modelToExpand: IModel, distance: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def expandPaths(modelToExpand: IModel, distance: Double, joints: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def expandPaths(modelToExpand: IModel, distance: Double, joints: Double, combineOptions: ICombineOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], combineOptions.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def expandPaths(modelToExpand: IModel, distance: Double, joints: Unit, combineOptions: ICombineOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], combineOptions.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Find paths that have common endpoints and form chains.
@@ -404,10 +359,8 @@ object model {
     * @param modelContext The model to search for chains.
     * @param options Optional options object.
     */
-  @scala.inline
-  def findChains(modelContext: IModel, callback: IChainCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findChains")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def findChains(modelContext: IModel, callback: IChainCallback, options: IFindChainsOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findChains")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findChains(modelContext: IModel, callback: IChainCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findChains")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findChains(modelContext: IModel, callback: IChainCallback, options: IFindChainsOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findChains")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find paths that have common endpoints and form loops.
@@ -416,10 +369,8 @@ object model {
     * @param options Optional options object.
     * @returns A new model with child models ranked according to their containment within other found loops. The paths of models will be IPathDirectionalWithPrimeContext.
     */
-  @scala.inline
-  def findLoops(modelContext: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("findLoops")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IModel]
-  @scala.inline
-  def findLoops(modelContext: IModel, options: IFindLoopsOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("findLoops")(modelContext.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def findLoops(modelContext: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("findLoops")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  inline def findLoops(modelContext: IModel, options: IFindLoopsOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("findLoops")(modelContext.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Find a single chain within a model, across all layers. Shorthand of findChains; useful when you know there is only one chain to find in your model.
@@ -427,8 +378,7 @@ object model {
     * @param modelContext The model to search for a chain.
     * @returns A chain object or null if chains were not found.
     */
-  @scala.inline
-  def findSingleChain(modelContext: IModel): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("findSingleChain")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IChain]
+  inline def findSingleChain(modelContext: IModel): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("findSingleChain")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IChain]
   
   /**
     * Get an unused id in the models map with the same prefix.
@@ -436,8 +386,7 @@ object model {
     * @param modelContext The model containing the models map.
     * @param modelId The id to use directly (if unused), or as a prefix.
     */
-  @scala.inline
-  def getSimilarModelId(modelContext: IModel, modelId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSimilarModelId")(modelContext.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getSimilarModelId(modelContext: IModel, modelId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSimilarModelId")(modelContext.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Get an unused id in the paths map with the same prefix.
@@ -445,8 +394,7 @@ object model {
     * @param modelContext The model containing the paths map.
     * @param pathId The id to use directly (if unused), or as a prefix.
     */
-  @scala.inline
-  def getSimilarPathId(modelContext: IModel, pathId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSimilarPathId")(modelContext.asInstanceOf[js.Any], pathId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getSimilarPathId(modelContext: IModel, pathId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSimilarPathId")(modelContext.asInstanceOf[js.Any], pathId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Check to see if a path is inside of a model.
@@ -456,22 +404,14 @@ object model {
     * @param farPoint Optional point of reference which is outside the bounds of the modelContext.
     * @returns Boolean true if the path is inside of the modelContext.
     */
-  @scala.inline
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: Unit, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: IPoint, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: Unit, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isPathInsideModel(
+  inline def isPathInsideModel(pathContext: IPath, modelContext: IModel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: Unit, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: IPoint, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: Unit, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPathInsideModel(
     pathContext: IPath,
     modelContext: IModel,
     pathOffset: IPoint,
@@ -487,8 +427,7 @@ object model {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored model.
     */
-  @scala.inline
-  def mirror(modelToMirror: IModel, mirrorX: Boolean, mirrorY: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(modelToMirror.asInstanceOf[js.Any], mirrorX.asInstanceOf[js.Any], mirrorY.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def mirror(modelToMirror: IModel, mirrorX: Boolean, mirrorY: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(modelToMirror.asInstanceOf[js.Any], mirrorX.asInstanceOf[js.Any], mirrorY.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Move a model to an absolute point. Note that this is also accomplished by directly setting the origin property. This function exists for cascading.
@@ -497,8 +436,7 @@ object model {
     * @param origin The new position of the model.
     * @returns The original model (for cascading).
     */
-  @scala.inline
-  def move(modelToMove: IModel, origin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(modelToMove.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def move(modelToMove: IModel, origin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(modelToMove.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Move a model's origin by a relative amount.
@@ -507,8 +445,7 @@ object model {
     * @param delta The x & y adjustments as a point object.
     * @returns The original model (for cascading).
     */
-  @scala.inline
-  def moveRelative(modelToMove: IModel, delta: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("moveRelative")(modelToMove.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def moveRelative(modelToMove: IModel, delta: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("moveRelative")(modelToMove.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Moves all of a model's children (models and paths, recursively) in reference to a single common origin. Useful when points between children need to connect to each other.
@@ -516,10 +453,8 @@ object model {
     * @param modelToOriginate The model to originate.
     * @param origin Optional offset reference point.
     */
-  @scala.inline
-  def originate(modelToOriginate: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("originate")(modelToOriginate.asInstanceOf[js.Any]).asInstanceOf[IModel]
-  @scala.inline
-  def originate(modelToOriginate: IModel, origin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("originate")(modelToOriginate.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def originate(modelToOriginate: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("originate")(modelToOriginate.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  inline def originate(modelToOriginate: IModel, origin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("originate")(modelToOriginate.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Outline a model by a specified distance. Useful for accommodating for kerf.
@@ -530,14 +465,10 @@ object model {
     * @param inside Optional boolean to draw lines inside the model instead of outside.
     * @returns Model which surrounds the paths outside of the original model.
     */
-  @scala.inline
-  def outline(modelToOutline: IModel, distance: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def outline(modelToOutline: IModel, distance: Double, joints: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def outline(modelToOutline: IModel, distance: Double, joints: Double, inside: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], inside.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def outline(modelToOutline: IModel, distance: Double, joints: Unit, inside: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], inside.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def outline(modelToOutline: IModel, distance: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def outline(modelToOutline: IModel, distance: Double, joints: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def outline(modelToOutline: IModel, distance: Double, joints: Double, inside: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], inside.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def outline(modelToOutline: IModel, distance: Double, joints: Unit, inside: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], inside.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Prefix the ids of paths in a model.
@@ -546,8 +477,7 @@ object model {
     * @param prefix The prefix to prepend on paths ids.
     * @returns The original model (for cascading).
     */
-  @scala.inline
-  def prefixPathIds(modelToPrefix: IModel, prefix: String): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixPathIds")(modelToPrefix.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def prefixPathIds(modelToPrefix: IModel, prefix: String): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixPathIds")(modelToPrefix.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Remove paths from a model which have endpoints that do not connect to other paths.
@@ -556,14 +486,10 @@ object model {
     * @param options Optional options object.
     * @returns The input model (for cascading).
     */
-  @scala.inline
-  def removeDeadEnds(modelContext: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IModel]
-  @scala.inline
-  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any, keep: IWalkPathBooleanCallback): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any], keep.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: Unit, keep: IWalkPathBooleanCallback): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any], keep.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def removeDeadEnds(modelContext: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  inline def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any, keep: IWalkPathBooleanCallback): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any], keep.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def removeDeadEnds(modelContext: IModel, pointMatchingDistance: Unit, keep: IWalkPathBooleanCallback): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any], keep.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Rotate a model.
@@ -573,10 +499,8 @@ object model {
     * @param rotationOrigin The center point of rotation.
     * @returns The original model (for cascading).
     */
-  @scala.inline
-  def rotate(modelToRotate: IModel, angleInDegrees: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(modelToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def rotate(modelToRotate: IModel, angleInDegrees: Double, rotationOrigin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(modelToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any], rotationOrigin.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def rotate(modelToRotate: IModel, angleInDegrees: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(modelToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def rotate(modelToRotate: IModel, angleInDegrees: Double, rotationOrigin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(modelToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any], rotationOrigin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Scale a model.
@@ -586,10 +510,8 @@ object model {
     * @param scaleOrigin Optional boolean to scale the origin point. Typically false for the root model.
     * @returns The original model (for cascading).
     */
-  @scala.inline
-  def scale(modelToScale: IModel, scaleValue: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(modelToScale.asInstanceOf[js.Any], scaleValue.asInstanceOf[js.Any])).asInstanceOf[IModel]
-  @scala.inline
-  def scale(modelToScale: IModel, scaleValue: Double, scaleOrigin: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(modelToScale.asInstanceOf[js.Any], scaleValue.asInstanceOf[js.Any], scaleOrigin.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def scale(modelToScale: IModel, scaleValue: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(modelToScale.asInstanceOf[js.Any], scaleValue.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def scale(modelToScale: IModel, scaleValue: Double, scaleOrigin: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(modelToScale.asInstanceOf[js.Any], scaleValue.asInstanceOf[js.Any], scaleOrigin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Simplify a model's paths by reducing redundancy: combine multiple overlapping paths into a single path. The model must be originated.
@@ -598,10 +520,8 @@ object model {
     * @param options Optional options object.
     * @returns The simplified model (for cascading).
     */
-  @scala.inline
-  def simplify(modelToSimplify: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(modelToSimplify.asInstanceOf[js.Any]).asInstanceOf[IModel]
-  @scala.inline
-  def simplify(modelToSimplify: IModel, options: ISimplifyOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(modelToSimplify.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def simplify(modelToSimplify: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(modelToSimplify.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  inline def simplify(modelToSimplify: IModel, options: ISimplifyOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(modelToSimplify.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Recursively walk through all paths for a given model.
@@ -611,8 +531,7 @@ object model {
     * @param modelCallbackBeforeWalk Callback for each model prior to recursion, which can cancel the recursion if it returns false.
     * @param modelCallbackAfterWalk Callback for each model after recursion.
     */
-  @scala.inline
-  def walk(modelContext: IModel, options: IWalkOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(modelContext.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def walk(modelContext: IModel, options: IWalkOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(modelContext.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Recursively walk through all paths for a given model.
@@ -620,14 +539,12 @@ object model {
     * @param modelContext The model to walk.
     * @param callback Callback for each path.
     */
-  @scala.inline
-  def walkPaths(modelContext: IModel, callback: IModelPathCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPaths")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def walkPaths(modelContext: IModel, callback: IModelPathCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPaths")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Move a model so its bounding box begins at [0, 0].
     *
     * @param modelToZero The model to zero.
     */
-  @scala.inline
-  def zero(modelToZero: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")(modelToZero.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  inline def zero(modelToZero: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")(modelToZero.asInstanceOf[js.Any]).asInstanceOf[IModel]
 }

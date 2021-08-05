@@ -43,55 +43,39 @@ trait VideoPreprocessor extends StObject {
 }
 object VideoPreprocessor {
   
-  @scala.inline
-  def apply(): VideoPreprocessor = {
+  inline def apply(): VideoPreprocessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoPreprocessor]
   }
   
-  @scala.inline
-  implicit class VideoPreprocessorMutableBuilder[Self <: VideoPreprocessor] (val x: Self) extends AnyVal {
+  extension [Self <: VideoPreprocessor](x: Self) {
     
-    @scala.inline
-    def setColorCorrector(value: ColorCorrector): Self = StObject.set(x, "ColorCorrector", value.asInstanceOf[js.Any])
+    inline def setColorCorrector(value: ColorCorrector): Self = StObject.set(x, "ColorCorrector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorCorrectorUndefined: Self = StObject.set(x, "ColorCorrector", js.undefined)
+    inline def setColorCorrectorUndefined: Self = StObject.set(x, "ColorCorrector", js.undefined)
     
-    @scala.inline
-    def setDeinterlacer(value: Deinterlacer): Self = StObject.set(x, "Deinterlacer", value.asInstanceOf[js.Any])
+    inline def setDeinterlacer(value: Deinterlacer): Self = StObject.set(x, "Deinterlacer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeinterlacerUndefined: Self = StObject.set(x, "Deinterlacer", js.undefined)
+    inline def setDeinterlacerUndefined: Self = StObject.set(x, "Deinterlacer", js.undefined)
     
-    @scala.inline
-    def setDolbyVision(value: DolbyVision): Self = StObject.set(x, "DolbyVision", value.asInstanceOf[js.Any])
+    inline def setDolbyVision(value: DolbyVision): Self = StObject.set(x, "DolbyVision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDolbyVisionUndefined: Self = StObject.set(x, "DolbyVision", js.undefined)
+    inline def setDolbyVisionUndefined: Self = StObject.set(x, "DolbyVision", js.undefined)
     
-    @scala.inline
-    def setImageInserter(value: ImageInserter): Self = StObject.set(x, "ImageInserter", value.asInstanceOf[js.Any])
+    inline def setImageInserter(value: ImageInserter): Self = StObject.set(x, "ImageInserter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageInserterUndefined: Self = StObject.set(x, "ImageInserter", js.undefined)
+    inline def setImageInserterUndefined: Self = StObject.set(x, "ImageInserter", js.undefined)
     
-    @scala.inline
-    def setNoiseReducer(value: NoiseReducer): Self = StObject.set(x, "NoiseReducer", value.asInstanceOf[js.Any])
+    inline def setNoiseReducer(value: NoiseReducer): Self = StObject.set(x, "NoiseReducer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoiseReducerUndefined: Self = StObject.set(x, "NoiseReducer", js.undefined)
+    inline def setNoiseReducerUndefined: Self = StObject.set(x, "NoiseReducer", js.undefined)
     
-    @scala.inline
-    def setPartnerWatermarking(value: PartnerWatermarking): Self = StObject.set(x, "PartnerWatermarking", value.asInstanceOf[js.Any])
+    inline def setPartnerWatermarking(value: PartnerWatermarking): Self = StObject.set(x, "PartnerWatermarking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerWatermarkingUndefined: Self = StObject.set(x, "PartnerWatermarking", js.undefined)
+    inline def setPartnerWatermarkingUndefined: Self = StObject.set(x, "PartnerWatermarking", js.undefined)
     
-    @scala.inline
-    def setTimecodeBurnin(value: TimecodeBurnin): Self = StObject.set(x, "TimecodeBurnin", value.asInstanceOf[js.Any])
+    inline def setTimecodeBurnin(value: TimecodeBurnin): Self = StObject.set(x, "TimecodeBurnin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeBurninUndefined: Self = StObject.set(x, "TimecodeBurnin", js.undefined)
+    inline def setTimecodeBurninUndefined: Self = StObject.set(x, "TimecodeBurnin", js.undefined)
   }
 }

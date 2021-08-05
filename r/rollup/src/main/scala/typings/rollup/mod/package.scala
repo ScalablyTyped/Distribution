@@ -5,16 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def VERSION: java.lang.String = typings.rollup.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: java.lang.String = typings.rollup.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
 
-@scala.inline
-def rollup(options: typings.rollup.mod.RollupOptions): js.Promise[typings.rollup.mod.RollupBuild] = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rollup.mod.RollupBuild]]
+inline def rollup(options: typings.rollup.mod.RollupOptions): js.Promise[typings.rollup.mod.RollupBuild] = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rollup.mod.RollupBuild]]
 
-@scala.inline
-def watch(config: js.Array[typings.rollup.mod.RollupWatchOptions]): typings.rollup.mod.RollupWatcher = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rollup.mod.RollupWatcher]
-@scala.inline
-def watch(config: typings.rollup.mod.RollupWatchOptions): typings.rollup.mod.RollupWatcher = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rollup.mod.RollupWatcher]
+inline def watch(config: js.Array[typings.rollup.mod.RollupWatchOptions]): typings.rollup.mod.RollupWatcher = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rollup.mod.RollupWatcher]
+inline def watch(config: typings.rollup.mod.RollupWatchOptions): typings.rollup.mod.RollupWatcher = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rollup.mod.RollupWatcher]
 
 type AddonHook = java.lang.String | typings.rollup.mod.AddonHookFunction
 

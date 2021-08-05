@@ -18,8 +18,7 @@ trait UploadControlValidationErrorOccurredEventArgs
 }
 object UploadControlValidationErrorOccurredEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     invalidFiles: js.Array[BootstrapUploadControlInvalidFileInfo],
     sender: Control,
@@ -30,22 +29,16 @@ object UploadControlValidationErrorOccurredEventArgs {
     __obj.asInstanceOf[UploadControlValidationErrorOccurredEventArgs]
   }
   
-  @scala.inline
-  implicit class UploadControlValidationErrorOccurredEventArgsMutableBuilder[Self <: UploadControlValidationErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UploadControlValidationErrorOccurredEventArgs](x: Self) {
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidFiles(value: js.Array[BootstrapUploadControlInvalidFileInfo]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
+    inline def setInvalidFiles(value: js.Array[BootstrapUploadControlInvalidFileInfo]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidFilesVarargs(value: BootstrapUploadControlInvalidFileInfo*): Self = StObject.set(x, "invalidFiles", js.Array(value :_*))
+    inline def setInvalidFilesVarargs(value: BootstrapUploadControlInvalidFileInfo*): Self = StObject.set(x, "invalidFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
+    inline def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationSettings(value: BootstrapUploadControlValidationSettings): Self = StObject.set(x, "validationSettings", value.asInstanceOf[js.Any])
+    inline def setValidationSettings(value: BootstrapUploadControlValidationSettings): Self = StObject.set(x, "validationSettings", value.asInstanceOf[js.Any])
   }
 }

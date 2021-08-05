@@ -43,8 +43,7 @@ object paginationPaginationMod {
        with /* key */ StringDictionary[js.Any]
   object PaginationProps {
     
-    @scala.inline
-    def apply(totalPages: Double | String): PaginationProps = {
+    inline def apply(totalPages: Double | String): PaginationProps = {
       val __obj = js.Dynamic.literal(totalPages = totalPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
@@ -107,127 +106,92 @@ object paginationPaginationMod {
   }
   object StrictPaginationProps {
     
-    @scala.inline
-    def apply(totalPages: Double | String): StrictPaginationProps = {
+    inline def apply(totalPages: Double | String): StrictPaginationProps = {
       val __obj = js.Dynamic.literal(totalPages = totalPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictPaginationProps]
     }
     
-    @scala.inline
-    implicit class StrictPaginationPropsMutableBuilder[Self <: StrictPaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictPaginationProps](x: Self) {
       
-      @scala.inline
-      def setActivePage(value: Double | String): Self = StObject.set(x, "activePage", value.asInstanceOf[js.Any])
+      inline def setActivePage(value: Double | String): Self = StObject.set(x, "activePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivePageUndefined: Self = StObject.set(x, "activePage", js.undefined)
+      inline def setActivePageUndefined: Self = StObject.set(x, "activePage", js.undefined)
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setBoundaryRange(value: Double | String): Self = StObject.set(x, "boundaryRange", value.asInstanceOf[js.Any])
+      inline def setBoundaryRange(value: Double | String): Self = StObject.set(x, "boundaryRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryRangeUndefined: Self = StObject.set(x, "boundaryRange", js.undefined)
+      inline def setBoundaryRangeUndefined: Self = StObject.set(x, "boundaryRange", js.undefined)
       
-      @scala.inline
-      def setDefaultActivePage(value: Double | String): Self = StObject.set(x, "defaultActivePage", value.asInstanceOf[js.Any])
+      inline def setDefaultActivePage(value: Double | String): Self = StObject.set(x, "defaultActivePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActivePageUndefined: Self = StObject.set(x, "defaultActivePage", js.undefined)
+      inline def setDefaultActivePageUndefined: Self = StObject.set(x, "defaultActivePage", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEllipsisItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "ellipsisItem", value.asInstanceOf[js.Any])
+      inline def setEllipsisItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "ellipsisItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisItemFunction3(
+      inline def setEllipsisItemFunction3(
         value: (/* component */ ElementType[PaginationItemProps], PaginationItemProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "ellipsisItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEllipsisItemUndefined: Self = StObject.set(x, "ellipsisItem", js.undefined)
+      inline def setEllipsisItemUndefined: Self = StObject.set(x, "ellipsisItem", js.undefined)
       
-      @scala.inline
-      def setFirstItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "firstItem", value.asInstanceOf[js.Any])
+      inline def setFirstItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "firstItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstItemFunction3(
+      inline def setFirstItemFunction3(
         value: (/* component */ ElementType[PaginationItemProps], PaginationItemProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "firstItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFirstItemUndefined: Self = StObject.set(x, "firstItem", js.undefined)
+      inline def setFirstItemUndefined: Self = StObject.set(x, "firstItem", js.undefined)
       
-      @scala.inline
-      def setLastItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "lastItem", value.asInstanceOf[js.Any])
+      inline def setLastItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "lastItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastItemFunction3(
+      inline def setLastItemFunction3(
         value: (/* component */ ElementType[PaginationItemProps], PaginationItemProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "lastItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLastItemUndefined: Self = StObject.set(x, "lastItem", js.undefined)
+      inline def setLastItemUndefined: Self = StObject.set(x, "lastItem", js.undefined)
       
-      @scala.inline
-      def setNextItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "nextItem", value.asInstanceOf[js.Any])
+      inline def setNextItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "nextItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextItemFunction3(
+      inline def setNextItemFunction3(
         value: (/* component */ ElementType[PaginationItemProps], PaginationItemProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "nextItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNextItemUndefined: Self = StObject.set(x, "nextItem", js.undefined)
+      inline def setNextItemUndefined: Self = StObject.set(x, "nextItem", js.undefined)
       
-      @scala.inline
-      def setOnPageChange(
+      inline def setOnPageChange(
         value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ PaginationProps) => Unit
       ): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
+      inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
       
-      @scala.inline
-      def setPageItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "pageItem", value.asInstanceOf[js.Any])
+      inline def setPageItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "pageItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageItemFunction3(
+      inline def setPageItemFunction3(
         value: (/* component */ ElementType[PaginationItemProps], PaginationItemProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "pageItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPageItemUndefined: Self = StObject.set(x, "pageItem", js.undefined)
+      inline def setPageItemUndefined: Self = StObject.set(x, "pageItem", js.undefined)
       
-      @scala.inline
-      def setPrevItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "prevItem", value.asInstanceOf[js.Any])
+      inline def setPrevItem(value: SemanticShorthandItem[PaginationItemProps]): Self = StObject.set(x, "prevItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevItemFunction3(
+      inline def setPrevItemFunction3(
         value: (/* component */ ElementType[PaginationItemProps], PaginationItemProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "prevItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPrevItemUndefined: Self = StObject.set(x, "prevItem", js.undefined)
+      inline def setPrevItemUndefined: Self = StObject.set(x, "prevItem", js.undefined)
       
-      @scala.inline
-      def setSiblingRange(value: Double | String): Self = StObject.set(x, "siblingRange", value.asInstanceOf[js.Any])
+      inline def setSiblingRange(value: Double | String): Self = StObject.set(x, "siblingRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiblingRangeUndefined: Self = StObject.set(x, "siblingRange", js.undefined)
+      inline def setSiblingRangeUndefined: Self = StObject.set(x, "siblingRange", js.undefined)
       
-      @scala.inline
-      def setTotalPages(value: Double | String): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double | String): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     }
   }
 }

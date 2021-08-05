@@ -20,19 +20,15 @@ trait BoundsMixins extends StObject {
 }
 object BoundsMixins {
   
-  @scala.inline
-  def apply(): BoundsMixins = {
+  inline def apply(): BoundsMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoundsMixins]
   }
   
-  @scala.inline
-  implicit class BoundsMixinsMutableBuilder[Self <: BoundsMixins] (val x: Self) extends AnyVal {
+  extension [Self <: BoundsMixins](x: Self) {
     
-    @scala.inline
-    def setBounds(value: full | flush): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: full | flush): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
   }
 }

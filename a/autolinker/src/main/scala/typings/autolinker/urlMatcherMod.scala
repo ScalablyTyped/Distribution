@@ -25,7 +25,7 @@ object urlMatcherMod {
       * @cfg {Boolean} decodePercentEncoding (required)
       * @inheritdoc Autolinker#decodePercentEncoding
       */
-    var decodePercentEncoding: Boolean = js.native
+    /* protected */ var decodePercentEncoding: Boolean = js.native
     
     /**
       * Determine if there's an invalid character after the TLD in a URL. Valid
@@ -106,20 +106,20 @@ object urlMatcherMod {
       *     URL. Will be an empty string if it is not a protocol-relative match.
       *     See #3 for more info.
       */
-    var matcherRegex: RegExp = js.native
+    /* protected */ var matcherRegex: RegExp = js.native
     
     /**
       * @cfg {Object} stripPrefix (required)
       *
       * The Object form of {@link Autolinker#cfg-stripPrefix}.
       */
-    var stripPrefix: RequiredStripPrefixConfig = js.native
+    /* protected */ var stripPrefix: RequiredStripPrefixConfig = js.native
     
     /**
       * @cfg {Boolean} stripTrailingSlash (required)
       * @inheritdoc Autolinker#stripTrailingSlash
       */
-    var stripTrailingSlash: Boolean = js.native
+    /* protected */ var stripTrailingSlash: Boolean = js.native
     
     /**
       * A regular expression to use to check the character before a protocol-relative
@@ -134,7 +134,7 @@ object urlMatcherMod {
       * @protected
       * @type {RegExp} wordCharRegExp
       */
-    var wordCharRegExp: RegExp = js.native
+    /* protected */ var wordCharRegExp: RegExp = js.native
   }
   
   trait UrlMatcherConfig
@@ -149,8 +149,7 @@ object urlMatcherMod {
   }
   object UrlMatcherConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decodePercentEncoding: Boolean,
       stripPrefix: RequiredStripPrefixConfig,
       stripTrailingSlash: Boolean,
@@ -160,17 +159,13 @@ object urlMatcherMod {
       __obj.asInstanceOf[UrlMatcherConfig]
     }
     
-    @scala.inline
-    implicit class UrlMatcherConfigMutableBuilder[Self <: UrlMatcherConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UrlMatcherConfig](x: Self) {
       
-      @scala.inline
-      def setDecodePercentEncoding(value: Boolean): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
+      inline def setDecodePercentEncoding(value: Boolean): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripPrefix(value: RequiredStripPrefixConfig): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
+      inline def setStripPrefix(value: RequiredStripPrefixConfig): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripTrailingSlash(value: Boolean): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setStripTrailingSlash(value: Boolean): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
     }
   }
 }

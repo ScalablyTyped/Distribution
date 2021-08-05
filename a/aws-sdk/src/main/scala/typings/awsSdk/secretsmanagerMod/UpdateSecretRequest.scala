@@ -38,46 +38,33 @@ trait UpdateSecretRequest extends StObject {
 }
 object UpdateSecretRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): UpdateSecretRequest = {
+  inline def apply(SecretId: SecretIdType): UpdateSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecretRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSecretRequestMutableBuilder[Self <: UpdateSecretRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSecretRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenType): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenType): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyIdType): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyIdType): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setSecretBinary(value: SecretBinaryType): Self = StObject.set(x, "SecretBinary", value.asInstanceOf[js.Any])
+    inline def setSecretBinary(value: SecretBinaryType): Self = StObject.set(x, "SecretBinary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretBinaryUndefined: Self = StObject.set(x, "SecretBinary", js.undefined)
+    inline def setSecretBinaryUndefined: Self = StObject.set(x, "SecretBinary", js.undefined)
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretString(value: SecretStringType): Self = StObject.set(x, "SecretString", value.asInstanceOf[js.Any])
+    inline def setSecretString(value: SecretStringType): Self = StObject.set(x, "SecretString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretStringUndefined: Self = StObject.set(x, "SecretString", js.undefined)
+    inline def setSecretStringUndefined: Self = StObject.set(x, "SecretString", js.undefined)
   }
 }

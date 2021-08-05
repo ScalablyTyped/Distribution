@@ -18,8 +18,7 @@ trait ParametersReposGetPullRequestReviewProtectionEndpoint extends StObject {
 }
 object ParametersReposGetPullRequestReviewProtectionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetPullRequestReviewProtectionEndpoint,
     request: ReposGetPullRequestReviewProtectionRequestOptions,
     response: OctokitResponse[ReposGetPullRequestReviewProtectionResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetPullRequestReviewProtectionEndpoint {
     __obj.asInstanceOf[ParametersReposGetPullRequestReviewProtectionEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetPullRequestReviewProtectionEndpointMutableBuilder[Self <: ParametersReposGetPullRequestReviewProtectionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetPullRequestReviewProtectionEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetPullRequestReviewProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetPullRequestReviewProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetPullRequestReviewProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetPullRequestReviewProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetPullRequestReviewProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetPullRequestReviewProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

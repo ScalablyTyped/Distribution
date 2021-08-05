@@ -12,19 +12,15 @@ trait PutBucketOptions extends StObject {
 }
 object PutBucketOptions {
   
-  @scala.inline
-  def apply(storageClass: StorageType, timeout: Double): PutBucketOptions = {
+  inline def apply(storageClass: StorageType, timeout: Double): PutBucketOptions = {
     val __obj = js.Dynamic.literal(storageClass = storageClass.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketOptions]
   }
   
-  @scala.inline
-  implicit class PutBucketOptionsMutableBuilder[Self <: PutBucketOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketOptions](x: Self) {
     
-    @scala.inline
-    def setStorageClass(value: StorageType): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: StorageType): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

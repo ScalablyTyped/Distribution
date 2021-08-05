@@ -14,22 +14,17 @@ trait Assigned extends StObject {
 }
 object Assigned {
   
-  @scala.inline
-  def apply(active: scala.Double, assigned: scala.Double, moving: scala.Double): Assigned = {
+  inline def apply(active: scala.Double, assigned: scala.Double, moving: scala.Double): Assigned = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], assigned = assigned.asInstanceOf[js.Any], moving = moving.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assigned]
   }
   
-  @scala.inline
-  implicit class AssignedMutableBuilder[Self <: Assigned] (val x: Self) extends AnyVal {
+  extension [Self <: Assigned](x: Self) {
     
-    @scala.inline
-    def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigned(value: scala.Double): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
+    inline def setAssigned(value: scala.Double): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoving(value: scala.Double): Self = StObject.set(x, "moving", value.asInstanceOf[js.Any])
+    inline def setMoving(value: scala.Double): Self = StObject.set(x, "moving", value.asInstanceOf[js.Any])
   }
 }

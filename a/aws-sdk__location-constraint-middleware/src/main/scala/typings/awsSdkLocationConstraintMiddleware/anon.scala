@@ -12,20 +12,16 @@ object anon {
   }
   object LocationConstraint {
     
-    @scala.inline
-    def apply(): LocationConstraint = {
+    inline def apply(): LocationConstraint = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationConstraint]
     }
     
-    @scala.inline
-    implicit class LocationConstraintMutableBuilder[Self <: LocationConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: LocationConstraint](x: Self) {
       
-      @scala.inline
-      def setLocationConstraint(value: String): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
+      inline def setLocationConstraint(value: String): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
+      inline def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
     }
   }
 }

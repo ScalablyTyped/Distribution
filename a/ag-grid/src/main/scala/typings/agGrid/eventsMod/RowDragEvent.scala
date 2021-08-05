@@ -26,8 +26,7 @@ trait RowDragEvent
 }
 object RowDragEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     columnApi: ColumnApi,
     event: MouseEvent,
@@ -43,25 +42,18 @@ object RowDragEvent {
     __obj.asInstanceOf[RowDragEvent]
   }
   
-  @scala.inline
-  implicit class RowDragEventMutableBuilder[Self <: RowDragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RowDragEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverIndex(value: Double): Self = StObject.set(x, "overIndex", value.asInstanceOf[js.Any])
+    inline def setOverIndex(value: Double): Self = StObject.set(x, "overIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverNode(value: RowNode): Self = StObject.set(x, "overNode", value.asInstanceOf[js.Any])
+    inline def setOverNode(value: RowNode): Self = StObject.set(x, "overNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVDirection(value: String): Self = StObject.set(x, "vDirection", value.asInstanceOf[js.Any])
+    inline def setVDirection(value: String): Self = StObject.set(x, "vDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

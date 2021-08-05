@@ -19,25 +19,19 @@ trait ReposGetViewsEndpoint extends StObject {
 }
 object ReposGetViewsEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposGetViewsEndpoint = {
+  inline def apply(owner: String, repo: String): ReposGetViewsEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetViewsEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetViewsEndpointMutableBuilder[Self <: ReposGetViewsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetViewsEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer(value: day | week): Self = StObject.set(x, "per", value.asInstanceOf[js.Any])
+    inline def setPer(value: day | week): Self = StObject.set(x, "per", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerUndefined: Self = StObject.set(x, "per", js.undefined)
+    inline def setPerUndefined: Self = StObject.set(x, "per", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

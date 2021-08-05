@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PositionType extends StObject
 object PositionType {
   
-  @scala.inline
-  def bottom: typings.bizcharts.bizchartsStrings.bottom = "bottom".asInstanceOf[typings.bizcharts.bizchartsStrings.bottom]
+  inline def bottom: typings.bizcharts.bizchartsStrings.bottom = "bottom".asInstanceOf[typings.bizcharts.bizchartsStrings.bottom]
   
-  @scala.inline
-  def left: typings.bizcharts.bizchartsStrings.left = "left".asInstanceOf[typings.bizcharts.bizchartsStrings.left]
+  inline def left: typings.bizcharts.bizchartsStrings.left = "left".asInstanceOf[typings.bizcharts.bizchartsStrings.left]
   
-  @scala.inline
-  def right: typings.bizcharts.bizchartsStrings.right = "right".asInstanceOf[typings.bizcharts.bizchartsStrings.right]
+  inline def right: typings.bizcharts.bizchartsStrings.right = "right".asInstanceOf[typings.bizcharts.bizchartsStrings.right]
   
-  @scala.inline
-  def top: typings.bizcharts.bizchartsStrings.top = "top".asInstanceOf[typings.bizcharts.bizchartsStrings.top]
+  inline def top: typings.bizcharts.bizchartsStrings.top = "top".asInstanceOf[typings.bizcharts.bizchartsStrings.top]
 }

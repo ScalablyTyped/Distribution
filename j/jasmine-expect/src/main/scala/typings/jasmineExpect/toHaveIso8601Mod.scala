@@ -22,17 +22,14 @@ object toHaveIso8601Mod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toHaveIso8601: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
+        inline def apply[T](toHaveIso8601: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveIso8601 = js.Any.fromFunction2(toHaveIso8601))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveIso8601(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveIso8601", js.Any.fromFunction2(value))
+          inline def setToHaveIso8601(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveIso8601", js.Any.fromFunction2(value))
         }
       }
     }

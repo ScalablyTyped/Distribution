@@ -14,19 +14,15 @@ trait NumberFilterValue
 }
 object NumberFilterValue {
   
-  @scala.inline
-  def apply(comparator: FilterComparator, number: Double | String): NumberFilterValue = {
+  inline def apply(comparator: FilterComparator, number: Double | String): NumberFilterValue = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFilterValue]
   }
   
-  @scala.inline
-  implicit class NumberFilterValueMutableBuilder[Self <: NumberFilterValue] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFilterValue](x: Self) {
     
-    @scala.inline
-    def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double | String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double | String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait PagerRenderedEventUIParam extends StObject {
 }
 object PagerRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): PagerRenderedEventUIParam = {
+  inline def apply(): PagerRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PagerRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class PagerRenderedEventUIParamMutableBuilder[Self <: PagerRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: PagerRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

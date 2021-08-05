@@ -14,25 +14,19 @@ trait OnScreenPositionAssignedTargetingOptionDetails extends StObject {
 }
 object OnScreenPositionAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): OnScreenPositionAssignedTargetingOptionDetails = {
+  inline def apply(): OnScreenPositionAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnScreenPositionAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class OnScreenPositionAssignedTargetingOptionDetailsMutableBuilder[Self <: OnScreenPositionAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnScreenPositionAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setOnScreenPosition(value: String): Self = StObject.set(x, "onScreenPosition", value.asInstanceOf[js.Any])
+    inline def setOnScreenPosition(value: String): Self = StObject.set(x, "onScreenPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnScreenPositionUndefined: Self = StObject.set(x, "onScreenPosition", js.undefined)
+    inline def setOnScreenPositionUndefined: Self = StObject.set(x, "onScreenPosition", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

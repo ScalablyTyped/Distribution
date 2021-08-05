@@ -23,28 +23,21 @@ trait UpdateUsageRequest extends StObject {
 }
 object UpdateUsageRequest {
   
-  @scala.inline
-  def apply(keyId: String, usagePlanId: String): UpdateUsageRequest = {
+  inline def apply(keyId: String, usagePlanId: String): UpdateUsageRequest = {
     val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], usagePlanId = usagePlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUsageRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUsageRequestMutableBuilder[Self <: UpdateUsageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUsageRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
-    @scala.inline
-    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+    inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }
 }

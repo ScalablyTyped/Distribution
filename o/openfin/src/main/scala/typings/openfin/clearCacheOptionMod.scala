@@ -18,38 +18,28 @@ object clearCacheOptionMod {
   }
   object ClearCacheOption {
     
-    @scala.inline
-    def apply(): ClearCacheOption = {
+    inline def apply(): ClearCacheOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearCacheOption]
     }
     
-    @scala.inline
-    implicit class ClearCacheOptionMutableBuilder[Self <: ClearCacheOption] (val x: Self) extends AnyVal {
+    extension [Self <: ClearCacheOption](x: Self) {
       
-      @scala.inline
-      def setAppcache(value: Boolean): Self = StObject.set(x, "appcache", value.asInstanceOf[js.Any])
+      inline def setAppcache(value: Boolean): Self = StObject.set(x, "appcache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppcacheUndefined: Self = StObject.set(x, "appcache", js.undefined)
+      inline def setAppcacheUndefined: Self = StObject.set(x, "appcache", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
     }
   }
 }

@@ -43,8 +43,7 @@ trait MeshRef extends StObject {
 }
 object MeshRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arn: Arn,
     createdAt: Timestamp,
     lastUpdatedAt: Timestamp,
@@ -57,28 +56,20 @@ object MeshRef {
     __obj.asInstanceOf[MeshRef]
   }
   
-  @scala.inline
-  implicit class MeshRefMutableBuilder[Self <: MeshRef] (val x: Self) extends AnyVal {
+  extension [Self <: MeshRef](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAt(value: Timestamp): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: Timestamp): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+    inline def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOwner(value: AccountId): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
+    inline def setResourceOwner(value: AccountId): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Long): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Long): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

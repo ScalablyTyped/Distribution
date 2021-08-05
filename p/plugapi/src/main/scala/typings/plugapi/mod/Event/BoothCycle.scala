@@ -12,19 +12,15 @@ trait BoothCycle extends StObject {
 }
 object BoothCycle {
   
-  @scala.inline
-  def apply(cycle: Boolean, moderator: String): BoothCycle = {
+  inline def apply(cycle: Boolean, moderator: String): BoothCycle = {
     val __obj = js.Dynamic.literal(cycle = cycle.asInstanceOf[js.Any], moderator = moderator.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoothCycle]
   }
   
-  @scala.inline
-  implicit class BoothCycleMutableBuilder[Self <: BoothCycle] (val x: Self) extends AnyVal {
+  extension [Self <: BoothCycle](x: Self) {
     
-    @scala.inline
-    def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
+    inline def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
   }
 }

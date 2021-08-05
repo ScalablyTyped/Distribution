@@ -23,31 +23,23 @@ trait DescribeLogGroupsRequest extends StObject {
 }
 object DescribeLogGroupsRequest {
   
-  @scala.inline
-  def apply(): DescribeLogGroupsRequest = {
+  inline def apply(): DescribeLogGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLogGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLogGroupsRequestMutableBuilder[Self <: DescribeLogGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLogGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: DescribeLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: DescribeLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setLogGroupNamePrefix(value: LogGroupName): Self = StObject.set(x, "logGroupNamePrefix", value.asInstanceOf[js.Any])
+    inline def setLogGroupNamePrefix(value: LogGroupName): Self = StObject.set(x, "logGroupNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNamePrefixUndefined: Self = StObject.set(x, "logGroupNamePrefix", js.undefined)
+    inline def setLogGroupNamePrefixUndefined: Self = StObject.set(x, "logGroupNamePrefix", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

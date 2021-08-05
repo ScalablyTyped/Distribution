@@ -49,52 +49,37 @@ trait SchemaTestResult extends StObject {
 }
 object SchemaTestResult {
   
-  @scala.inline
-  def apply(): SchemaTestResult = {
+  inline def apply(): SchemaTestResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestResult]
   }
   
-  @scala.inline
-  implicit class SchemaTestResultMutableBuilder[Self <: SchemaTestResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestResult](x: Self) {
     
-    @scala.inline
-    def setDebugMessages(value: js.Array[String]): Self = StObject.set(x, "debugMessages", value.asInstanceOf[js.Any])
+    inline def setDebugMessages(value: js.Array[String]): Self = StObject.set(x, "debugMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugMessagesUndefined: Self = StObject.set(x, "debugMessages", js.undefined)
+    inline def setDebugMessagesUndefined: Self = StObject.set(x, "debugMessages", js.undefined)
     
-    @scala.inline
-    def setDebugMessagesVarargs(value: String*): Self = StObject.set(x, "debugMessages", js.Array(value :_*))
+    inline def setDebugMessagesVarargs(value: String*): Self = StObject.set(x, "debugMessages", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorPosition(value: SchemaSourcePosition): Self = StObject.set(x, "errorPosition", value.asInstanceOf[js.Any])
+    inline def setErrorPosition(value: SchemaSourcePosition): Self = StObject.set(x, "errorPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorPositionUndefined: Self = StObject.set(x, "errorPosition", js.undefined)
+    inline def setErrorPositionUndefined: Self = StObject.set(x, "errorPosition", js.undefined)
     
-    @scala.inline
-    def setFunctionCalls(value: js.Array[SchemaFunctionCall]): Self = StObject.set(x, "functionCalls", value.asInstanceOf[js.Any])
+    inline def setFunctionCalls(value: js.Array[SchemaFunctionCall]): Self = StObject.set(x, "functionCalls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionCallsUndefined: Self = StObject.set(x, "functionCalls", js.undefined)
+    inline def setFunctionCallsUndefined: Self = StObject.set(x, "functionCalls", js.undefined)
     
-    @scala.inline
-    def setFunctionCallsVarargs(value: SchemaFunctionCall*): Self = StObject.set(x, "functionCalls", js.Array(value :_*))
+    inline def setFunctionCallsVarargs(value: SchemaFunctionCall*): Self = StObject.set(x, "functionCalls", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setVisitedExpressions(value: js.Array[SchemaVisitedExpression]): Self = StObject.set(x, "visitedExpressions", value.asInstanceOf[js.Any])
+    inline def setVisitedExpressions(value: js.Array[SchemaVisitedExpression]): Self = StObject.set(x, "visitedExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitedExpressionsUndefined: Self = StObject.set(x, "visitedExpressions", js.undefined)
+    inline def setVisitedExpressionsUndefined: Self = StObject.set(x, "visitedExpressions", js.undefined)
     
-    @scala.inline
-    def setVisitedExpressionsVarargs(value: SchemaVisitedExpression*): Self = StObject.set(x, "visitedExpressions", js.Array(value :_*))
+    inline def setVisitedExpressionsVarargs(value: SchemaVisitedExpression*): Self = StObject.set(x, "visitedExpressions", js.Array(value :_*))
   }
 }

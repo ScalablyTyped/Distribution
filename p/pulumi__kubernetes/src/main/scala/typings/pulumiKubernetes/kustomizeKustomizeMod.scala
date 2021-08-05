@@ -66,32 +66,24 @@ object kustomizeKustomizeMod {
   }
   object DirectoryOpts {
     
-    @scala.inline
-    def apply(directory: String): DirectoryOpts = {
+    inline def apply(directory: String): DirectoryOpts = {
       val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectoryOpts]
     }
     
-    @scala.inline
-    implicit class DirectoryOptsMutableBuilder[Self <: DirectoryOpts] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryOpts](x: Self) {
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
+      inline def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
+      inline def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
-      @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      inline def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+      inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
-      @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
     }
   }
 }

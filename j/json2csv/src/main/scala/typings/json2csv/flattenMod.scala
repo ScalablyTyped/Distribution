@@ -11,10 +11,8 @@ object flattenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def flatten(): Json2CsvTransform[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[Json2CsvTransform[js.Any, js.Any]]
-  @scala.inline
-  def flatten(options: FlattenOptions): Json2CsvTransform[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(options.asInstanceOf[js.Any]).asInstanceOf[Json2CsvTransform[js.Any, js.Any]]
+  inline def flatten(): Json2CsvTransform[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[Json2CsvTransform[js.Any, js.Any]]
+  inline def flatten(options: FlattenOptions): Json2CsvTransform[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(options.asInstanceOf[js.Any]).asInstanceOf[Json2CsvTransform[js.Any, js.Any]]
   
   trait FlattenOptions extends StObject {
     
@@ -26,32 +24,24 @@ object flattenMod {
   }
   object FlattenOptions {
     
-    @scala.inline
-    def apply(): FlattenOptions = {
+    inline def apply(): FlattenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlattenOptions]
     }
     
-    @scala.inline
-    implicit class FlattenOptionsMutableBuilder[Self <: FlattenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FlattenOptions](x: Self) {
       
-      @scala.inline
-      def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
+      inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
+      inline def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
       
-      @scala.inline
-      def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+      inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
 }

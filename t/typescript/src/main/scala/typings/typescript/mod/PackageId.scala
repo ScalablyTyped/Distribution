@@ -24,22 +24,17 @@ trait PackageId extends StObject {
 }
 object PackageId {
   
-  @scala.inline
-  def apply(name: java.lang.String, subModuleName: java.lang.String, version: java.lang.String): PackageId = {
+  inline def apply(name: java.lang.String, subModuleName: java.lang.String, version: java.lang.String): PackageId = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subModuleName = subModuleName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageId]
   }
   
-  @scala.inline
-  implicit class PackageIdMutableBuilder[Self <: PackageId] (val x: Self) extends AnyVal {
+  extension [Self <: PackageId](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubModuleName(value: java.lang.String): Self = StObject.set(x, "subModuleName", value.asInstanceOf[js.Any])
+    inline def setSubModuleName(value: java.lang.String): Self = StObject.set(x, "subModuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: java.lang.String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: java.lang.String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

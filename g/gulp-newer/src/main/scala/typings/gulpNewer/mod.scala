@@ -47,29 +47,22 @@ object mod extends Shortcut {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(dest: String): IOptions = {
+    inline def apply(dest: String): IOptions = {
       val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setMap(value: /* relativePath */ String => String): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* relativePath */ String => String): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     }
   }
   

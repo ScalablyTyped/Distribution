@@ -53,21 +53,16 @@ object regexMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RegexMatchSetState): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RegexMatchSetState, opts: CustomResourceOptions): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
+    inline def get(name: String, id: Input[ID]): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
+    inline def get(name: String, id: Input[ID], state: RegexMatchSetState): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
+    inline def get(name: String, id: Input[ID], state: RegexMatchSetState, opts: CustomResourceOptions): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
     
     /**
       * Returns true if the given object is an instance of RegexMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/regexMatchSet.RegexMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/regexMatchSet.RegexMatchSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/regexMatchSet.RegexMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/regexMatchSet.RegexMatchSet */ Boolean]
   }
   
   trait RegexMatchSetArgs extends StObject {
@@ -88,33 +83,26 @@ object regexMatchSetMod {
   }
   object RegexMatchSetArgs {
     
-    @scala.inline
-    def apply(): RegexMatchSetArgs = {
+    inline def apply(): RegexMatchSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegexMatchSetArgs]
     }
     
-    @scala.inline
-    implicit class RegexMatchSetArgsMutableBuilder[Self <: RegexMatchSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RegexMatchSetArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegexMatchTuples(
+      inline def setRegexMatchTuples(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafregional.RegexMatchSetRegexMatchTuple]]
             ]
       ): Self = StObject.set(x, "regexMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexMatchTuplesUndefined: Self = StObject.set(x, "regexMatchTuples", js.undefined)
+      inline def setRegexMatchTuplesUndefined: Self = StObject.set(x, "regexMatchTuples", js.undefined)
       
-      @scala.inline
-      def setRegexMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.RegexMatchSetRegexMatchTuple]*): Self = StObject.set(x, "regexMatchTuples", js.Array(value :_*))
+      inline def setRegexMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.RegexMatchSetRegexMatchTuple]*): Self = StObject.set(x, "regexMatchTuples", js.Array(value :_*))
     }
   }
   
@@ -136,33 +124,26 @@ object regexMatchSetMod {
   }
   object RegexMatchSetState {
     
-    @scala.inline
-    def apply(): RegexMatchSetState = {
+    inline def apply(): RegexMatchSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegexMatchSetState]
     }
     
-    @scala.inline
-    implicit class RegexMatchSetStateMutableBuilder[Self <: RegexMatchSetState] (val x: Self) extends AnyVal {
+    extension [Self <: RegexMatchSetState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegexMatchTuples(
+      inline def setRegexMatchTuples(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafregional.RegexMatchSetRegexMatchTuple]]
             ]
       ): Self = StObject.set(x, "regexMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexMatchTuplesUndefined: Self = StObject.set(x, "regexMatchTuples", js.undefined)
+      inline def setRegexMatchTuplesUndefined: Self = StObject.set(x, "regexMatchTuples", js.undefined)
       
-      @scala.inline
-      def setRegexMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.RegexMatchSetRegexMatchTuple]*): Self = StObject.set(x, "regexMatchTuples", js.Array(value :_*))
+      inline def setRegexMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.RegexMatchSetRegexMatchTuple]*): Self = StObject.set(x, "regexMatchTuples", js.Array(value :_*))
     }
   }
 }

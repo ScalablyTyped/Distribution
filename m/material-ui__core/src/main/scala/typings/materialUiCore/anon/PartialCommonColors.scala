@@ -13,25 +13,19 @@ trait PartialCommonColors extends StObject {
 }
 object PartialCommonColors {
   
-  @scala.inline
-  def apply(): PartialCommonColors = {
+  inline def apply(): PartialCommonColors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCommonColors]
   }
   
-  @scala.inline
-  implicit class PartialCommonColorsMutableBuilder[Self <: PartialCommonColors] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCommonColors](x: Self) {
     
-    @scala.inline
-    def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+    inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlackUndefined: Self = StObject.set(x, "black", js.undefined)
+    inline def setBlackUndefined: Self = StObject.set(x, "black", js.undefined)
     
-    @scala.inline
-    def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+    inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
+    inline def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
   }
 }

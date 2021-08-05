@@ -89,103 +89,71 @@ trait SchemaCalendarResource extends StObject {
 }
 object SchemaCalendarResource {
   
-  @scala.inline
-  def apply(): SchemaCalendarResource = {
+  inline def apply(): SchemaCalendarResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCalendarResource]
   }
   
-  @scala.inline
-  implicit class SchemaCalendarResourceMutableBuilder[Self <: SchemaCalendarResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCalendarResource](x: Self) {
     
-    @scala.inline
-    def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
+    inline def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
+    inline def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
     
-    @scala.inline
-    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+    inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
     
-    @scala.inline
-    def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
+    inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
+    inline def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
     
-    @scala.inline
-    def setFeatureInstances(value: js.Any): Self = StObject.set(x, "featureInstances", value.asInstanceOf[js.Any])
+    inline def setFeatureInstances(value: js.Any): Self = StObject.set(x, "featureInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureInstancesUndefined: Self = StObject.set(x, "featureInstances", js.undefined)
+    inline def setFeatureInstancesUndefined: Self = StObject.set(x, "featureInstances", js.undefined)
     
-    @scala.inline
-    def setFloorName(value: String): Self = StObject.set(x, "floorName", value.asInstanceOf[js.Any])
+    inline def setFloorName(value: String): Self = StObject.set(x, "floorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorNameUndefined: Self = StObject.set(x, "floorName", js.undefined)
+    inline def setFloorNameUndefined: Self = StObject.set(x, "floorName", js.undefined)
     
-    @scala.inline
-    def setFloorSection(value: String): Self = StObject.set(x, "floorSection", value.asInstanceOf[js.Any])
+    inline def setFloorSection(value: String): Self = StObject.set(x, "floorSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorSectionUndefined: Self = StObject.set(x, "floorSection", js.undefined)
+    inline def setFloorSectionUndefined: Self = StObject.set(x, "floorSection", js.undefined)
     
-    @scala.inline
-    def setGeneratedResourceName(value: String): Self = StObject.set(x, "generatedResourceName", value.asInstanceOf[js.Any])
+    inline def setGeneratedResourceName(value: String): Self = StObject.set(x, "generatedResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratedResourceNameUndefined: Self = StObject.set(x, "generatedResourceName", js.undefined)
+    inline def setGeneratedResourceNameUndefined: Self = StObject.set(x, "generatedResourceName", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setResourceCategory(value: String): Self = StObject.set(x, "resourceCategory", value.asInstanceOf[js.Any])
+    inline def setResourceCategory(value: String): Self = StObject.set(x, "resourceCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceCategoryUndefined: Self = StObject.set(x, "resourceCategory", js.undefined)
+    inline def setResourceCategoryUndefined: Self = StObject.set(x, "resourceCategory", js.undefined)
     
-    @scala.inline
-    def setResourceDescription(value: String): Self = StObject.set(x, "resourceDescription", value.asInstanceOf[js.Any])
+    inline def setResourceDescription(value: String): Self = StObject.set(x, "resourceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDescriptionUndefined: Self = StObject.set(x, "resourceDescription", js.undefined)
+    inline def setResourceDescriptionUndefined: Self = StObject.set(x, "resourceDescription", js.undefined)
     
-    @scala.inline
-    def setResourceEmail(value: String): Self = StObject.set(x, "resourceEmail", value.asInstanceOf[js.Any])
+    inline def setResourceEmail(value: String): Self = StObject.set(x, "resourceEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceEmailUndefined: Self = StObject.set(x, "resourceEmail", js.undefined)
+    inline def setResourceEmailUndefined: Self = StObject.set(x, "resourceEmail", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setUserVisibleDescription(value: String): Self = StObject.set(x, "userVisibleDescription", value.asInstanceOf[js.Any])
+    inline def setUserVisibleDescription(value: String): Self = StObject.set(x, "userVisibleDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleDescriptionUndefined: Self = StObject.set(x, "userVisibleDescription", js.undefined)
+    inline def setUserVisibleDescriptionUndefined: Self = StObject.set(x, "userVisibleDescription", js.undefined)
   }
 }

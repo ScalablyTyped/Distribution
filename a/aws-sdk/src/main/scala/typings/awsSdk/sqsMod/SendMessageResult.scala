@@ -33,43 +33,31 @@ trait SendMessageResult extends StObject {
 }
 object SendMessageResult {
   
-  @scala.inline
-  def apply(): SendMessageResult = {
+  inline def apply(): SendMessageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendMessageResult]
   }
   
-  @scala.inline
-  implicit class SendMessageResultMutableBuilder[Self <: SendMessageResult] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageResult](x: Self) {
     
-    @scala.inline
-    def setMD5OfMessageAttributes(value: String): Self = StObject.set(x, "MD5OfMessageAttributes", value.asInstanceOf[js.Any])
+    inline def setMD5OfMessageAttributes(value: String): Self = StObject.set(x, "MD5OfMessageAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5OfMessageAttributesUndefined: Self = StObject.set(x, "MD5OfMessageAttributes", js.undefined)
+    inline def setMD5OfMessageAttributesUndefined: Self = StObject.set(x, "MD5OfMessageAttributes", js.undefined)
     
-    @scala.inline
-    def setMD5OfMessageBody(value: String): Self = StObject.set(x, "MD5OfMessageBody", value.asInstanceOf[js.Any])
+    inline def setMD5OfMessageBody(value: String): Self = StObject.set(x, "MD5OfMessageBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5OfMessageBodyUndefined: Self = StObject.set(x, "MD5OfMessageBody", js.undefined)
+    inline def setMD5OfMessageBodyUndefined: Self = StObject.set(x, "MD5OfMessageBody", js.undefined)
     
-    @scala.inline
-    def setMD5OfMessageSystemAttributes(value: String): Self = StObject.set(x, "MD5OfMessageSystemAttributes", value.asInstanceOf[js.Any])
+    inline def setMD5OfMessageSystemAttributes(value: String): Self = StObject.set(x, "MD5OfMessageSystemAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5OfMessageSystemAttributesUndefined: Self = StObject.set(x, "MD5OfMessageSystemAttributes", js.undefined)
+    inline def setMD5OfMessageSystemAttributesUndefined: Self = StObject.set(x, "MD5OfMessageSystemAttributes", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
-    @scala.inline
-    def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+    inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
   }
 }

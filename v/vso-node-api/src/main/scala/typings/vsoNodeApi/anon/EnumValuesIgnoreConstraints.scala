@@ -10,16 +10,13 @@ trait EnumValuesIgnoreConstraints extends StObject {
 }
 object EnumValuesIgnoreConstraints {
   
-  @scala.inline
-  def apply(enumValues: IgnoreConstraints): EnumValuesIgnoreConstraints = {
+  inline def apply(enumValues: IgnoreConstraints): EnumValuesIgnoreConstraints = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesIgnoreConstraints]
   }
   
-  @scala.inline
-  implicit class EnumValuesIgnoreConstraintsMutableBuilder[Self <: EnumValuesIgnoreConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesIgnoreConstraints](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: IgnoreConstraints): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: IgnoreConstraints): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

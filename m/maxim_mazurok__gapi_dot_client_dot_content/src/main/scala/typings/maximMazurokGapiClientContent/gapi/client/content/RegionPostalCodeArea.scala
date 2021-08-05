@@ -14,28 +14,21 @@ trait RegionPostalCodeArea extends StObject {
 }
 object RegionPostalCodeArea {
   
-  @scala.inline
-  def apply(): RegionPostalCodeArea = {
+  inline def apply(): RegionPostalCodeArea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionPostalCodeArea]
   }
   
-  @scala.inline
-  implicit class RegionPostalCodeAreaMutableBuilder[Self <: RegionPostalCodeArea] (val x: Self) extends AnyVal {
+  extension [Self <: RegionPostalCodeArea](x: Self) {
     
-    @scala.inline
-    def setPostalCodes(value: js.Array[RegionPostalCodeAreaPostalCodeRange]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
+    inline def setPostalCodes(value: js.Array[RegionPostalCodeAreaPostalCodeRange]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
+    inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
-    @scala.inline
-    def setPostalCodesVarargs(value: RegionPostalCodeAreaPostalCodeRange*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+    inline def setPostalCodesVarargs(value: RegionPostalCodeAreaPostalCodeRange*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

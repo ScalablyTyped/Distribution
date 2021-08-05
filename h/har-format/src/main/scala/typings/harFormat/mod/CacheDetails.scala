@@ -33,34 +33,25 @@ trait CacheDetails extends StObject {
 }
 object CacheDetails {
   
-  @scala.inline
-  def apply(eTag: String, hitCount: Double, lastAccess: String): CacheDetails = {
+  inline def apply(eTag: String, hitCount: Double, lastAccess: String): CacheDetails = {
     val __obj = js.Dynamic.literal(eTag = eTag.asInstanceOf[js.Any], hitCount = hitCount.asInstanceOf[js.Any], lastAccess = lastAccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheDetails]
   }
   
-  @scala.inline
-  implicit class CacheDetailsMutableBuilder[Self <: CacheDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CacheDetails](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setHitCount(value: Double): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
+    inline def setHitCount(value: Double): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccess(value: String): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
+    inline def setLastAccess(value: String): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
   }
 }

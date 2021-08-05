@@ -11,19 +11,15 @@ trait CeilInputs extends StObject {
 }
 object CeilInputs {
   
-  @scala.inline
-  def apply(): CeilInputs = {
+  inline def apply(): CeilInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CeilInputs]
   }
   
-  @scala.inline
-  implicit class CeilInputsMutableBuilder[Self <: CeilInputs] (val x: Self) extends AnyVal {
+  extension [Self <: CeilInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

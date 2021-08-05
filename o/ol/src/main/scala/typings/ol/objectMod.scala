@@ -37,8 +37,7 @@ object objectMod {
     var oldValue: js.Any = js.native
   }
   
-  @scala.inline
-  def getChangeEventType(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getChangeEventType")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getChangeEventType(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getChangeEventType")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait BaseObject

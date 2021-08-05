@@ -11,29 +11,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
-  @scala.inline
-  def default(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(pattern: String, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(pattern: Unit, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(pattern: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(pattern: Date, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(pattern: String, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(pattern: Unit, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(pattern: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(pattern: Date, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def utc(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[String]
-  @scala.inline
-  def utc(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def utc(pattern: String, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def utc(pattern: Unit, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def utc(pattern: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def utc(pattern: Date, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def utc(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[String]
+  inline def utc(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def utc(pattern: String, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def utc(pattern: Unit, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def utc(pattern: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def utc(pattern: Date, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
 }

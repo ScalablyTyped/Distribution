@@ -29,31 +29,23 @@ trait ParamsResourceContactgroupsDelete
 }
 object ParamsResourceContactgroupsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceContactgroupsDelete = {
+  inline def apply(): ParamsResourceContactgroupsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceContactgroupsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceContactgroupsDeleteMutableBuilder[Self <: ParamsResourceContactgroupsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceContactgroupsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDeleteContacts(value: Boolean): Self = StObject.set(x, "deleteContacts", value.asInstanceOf[js.Any])
+    inline def setDeleteContacts(value: Boolean): Self = StObject.set(x, "deleteContacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteContactsUndefined: Self = StObject.set(x, "deleteContacts", js.undefined)
+    inline def setDeleteContactsUndefined: Self = StObject.set(x, "deleteContacts", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

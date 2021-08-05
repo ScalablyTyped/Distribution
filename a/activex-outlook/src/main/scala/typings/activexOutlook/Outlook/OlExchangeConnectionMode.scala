@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlExchangeConnectionMode extends StObject
 object OlExchangeConnectionMode {
   
-  @scala.inline
-  def olCachedConnectedDrizzle: `600` = 600.asInstanceOf[`600`]
+  inline def olCachedConnectedDrizzle: `600` = 600.asInstanceOf[`600`]
   
-  @scala.inline
-  def olCachedConnectedFull: `700` = 700.asInstanceOf[`700`]
+  inline def olCachedConnectedFull: `700` = 700.asInstanceOf[`700`]
   
-  @scala.inline
-  def olCachedConnectedHeaders: `500` = 500.asInstanceOf[`500`]
+  inline def olCachedConnectedHeaders: `500` = 500.asInstanceOf[`500`]
   
-  @scala.inline
-  def olCachedDisconnected: `400` = 400.asInstanceOf[`400`]
+  inline def olCachedDisconnected: `400` = 400.asInstanceOf[`400`]
   
-  @scala.inline
-  def olCachedOffline: `200` = 200.asInstanceOf[`200`]
+  inline def olCachedOffline: `200` = 200.asInstanceOf[`200`]
   
-  @scala.inline
-  def olDisconnected: `300` = 300.asInstanceOf[`300`]
+  inline def olDisconnected: `300` = 300.asInstanceOf[`300`]
   
-  @scala.inline
-  def olNoExchange: `0` = 0.asInstanceOf[`0`]
+  inline def olNoExchange: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olOffline: `100` = 100.asInstanceOf[`100`]
+  inline def olOffline: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def olOnline: `800` = 800.asInstanceOf[`800`]
+  inline def olOnline: `800` = 800.asInstanceOf[`800`]
 }

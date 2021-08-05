@@ -14,22 +14,17 @@ trait BoxSizingHeight extends StObject {
 }
 object BoxSizingHeight {
   
-  @scala.inline
-  def apply(boxSizing: String, height: Double, overflow: String): BoxSizingHeight = {
+  inline def apply(boxSizing: String, height: Double, overflow: String): BoxSizingHeight = {
     val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxSizingHeight]
   }
   
-  @scala.inline
-  implicit class BoxSizingHeightMutableBuilder[Self <: BoxSizingHeight] (val x: Self) extends AnyVal {
+  extension [Self <: BoxSizingHeight](x: Self) {
     
-    @scala.inline
-    def setBoxSizing(value: String): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
+    inline def setBoxSizing(value: String): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
   }
 }

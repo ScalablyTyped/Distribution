@@ -143,8 +143,7 @@ object mod {
     @JSImport("colorette", "options.enabled")
     @js.native
     def enabled: Boolean = js.native
-    @scala.inline
-    def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
+    inline def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("colorette", "red")

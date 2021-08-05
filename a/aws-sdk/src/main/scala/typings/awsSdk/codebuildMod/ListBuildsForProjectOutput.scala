@@ -18,28 +18,21 @@ trait ListBuildsForProjectOutput extends StObject {
 }
 object ListBuildsForProjectOutput {
   
-  @scala.inline
-  def apply(): ListBuildsForProjectOutput = {
+  inline def apply(): ListBuildsForProjectOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBuildsForProjectOutput]
   }
   
-  @scala.inline
-  implicit class ListBuildsForProjectOutputMutableBuilder[Self <: ListBuildsForProjectOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBuildsForProjectOutput](x: Self) {
     
-    @scala.inline
-    def setIds(value: BuildIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: BuildIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

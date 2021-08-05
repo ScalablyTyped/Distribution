@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  @scala.inline
-  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  inline def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   @JSImport("imagemin-optipng", JSImport.Namespace)
   @js.native
@@ -28,38 +26,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBitDepthReduction(value: Boolean): Self = StObject.set(x, "bitDepthReduction", value.asInstanceOf[js.Any])
+      inline def setBitDepthReduction(value: Boolean): Self = StObject.set(x, "bitDepthReduction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitDepthReductionUndefined: Self = StObject.set(x, "bitDepthReduction", js.undefined)
+      inline def setBitDepthReductionUndefined: Self = StObject.set(x, "bitDepthReduction", js.undefined)
       
-      @scala.inline
-      def setColorTypeReduction(value: Boolean): Self = StObject.set(x, "colorTypeReduction", value.asInstanceOf[js.Any])
+      inline def setColorTypeReduction(value: Boolean): Self = StObject.set(x, "colorTypeReduction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorTypeReductionUndefined: Self = StObject.set(x, "colorTypeReduction", js.undefined)
+      inline def setColorTypeReductionUndefined: Self = StObject.set(x, "colorTypeReduction", js.undefined)
       
-      @scala.inline
-      def setOptimizationLevel(value: Double): Self = StObject.set(x, "optimizationLevel", value.asInstanceOf[js.Any])
+      inline def setOptimizationLevel(value: Double): Self = StObject.set(x, "optimizationLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizationLevelUndefined: Self = StObject.set(x, "optimizationLevel", js.undefined)
+      inline def setOptimizationLevelUndefined: Self = StObject.set(x, "optimizationLevel", js.undefined)
       
-      @scala.inline
-      def setPaletteReduction(value: Boolean): Self = StObject.set(x, "paletteReduction", value.asInstanceOf[js.Any])
+      inline def setPaletteReduction(value: Boolean): Self = StObject.set(x, "paletteReduction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaletteReductionUndefined: Self = StObject.set(x, "paletteReduction", js.undefined)
+      inline def setPaletteReductionUndefined: Self = StObject.set(x, "paletteReduction", js.undefined)
     }
   }
 }

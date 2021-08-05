@@ -13,16 +13,13 @@ trait MobileBroadbandNetworkRegistrationStateChangeTriggerDetails extends StObje
 }
 object MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
   
-  @scala.inline
-  def apply(networkRegistrationStateChanges: IVectorView[MobileBroadbandNetworkRegistrationStateChange]): MobileBroadbandNetworkRegistrationStateChangeTriggerDetails = {
+  inline def apply(networkRegistrationStateChanges: IVectorView[MobileBroadbandNetworkRegistrationStateChange]): MobileBroadbandNetworkRegistrationStateChangeTriggerDetails = {
     val __obj = js.Dynamic.literal(networkRegistrationStateChanges = networkRegistrationStateChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandNetworkRegistrationStateChangeTriggerDetails]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandNetworkRegistrationStateChangeTriggerDetailsMutableBuilder[Self <: MobileBroadbandNetworkRegistrationStateChangeTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandNetworkRegistrationStateChangeTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setNetworkRegistrationStateChanges(value: IVectorView[MobileBroadbandNetworkRegistrationStateChange]): Self = StObject.set(x, "networkRegistrationStateChanges", value.asInstanceOf[js.Any])
+    inline def setNetworkRegistrationStateChanges(value: IVectorView[MobileBroadbandNetworkRegistrationStateChange]): Self = StObject.set(x, "networkRegistrationStateChanges", value.asInstanceOf[js.Any])
   }
 }

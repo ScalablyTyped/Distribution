@@ -22,20 +22,16 @@ object intersectSmallMod extends Shortcut {
   }
   object IntersectSmallProps {
     
-    @scala.inline
-    def apply(): IntersectSmallProps = {
+    inline def apply(): IntersectSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntersectSmallProps]
     }
     
-    @scala.inline
-    implicit class IntersectSmallPropsMutableBuilder[Self <: IntersectSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: IntersectSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

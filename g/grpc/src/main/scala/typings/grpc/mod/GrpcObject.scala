@@ -18,8 +18,7 @@ trait GrpcObject
     ]
 object GrpcObject {
   
-  @scala.inline
-  def apply(): GrpcObject = {
+  inline def apply(): GrpcObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrpcObject]
   }

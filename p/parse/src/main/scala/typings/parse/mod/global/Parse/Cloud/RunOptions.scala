@@ -12,8 +12,7 @@ trait RunOptions
      with ScopeOptions
 object RunOptions {
   
-  @scala.inline
-  def apply(): RunOptions = {
+  inline def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunOptions]
   }

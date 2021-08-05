@@ -14,19 +14,15 @@ trait AzureCredentials extends StObject {
 }
 object AzureCredentials {
   
-  @scala.inline
-  def apply(): AzureCredentials = {
+  inline def apply(): AzureCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AzureCredentials]
   }
   
-  @scala.inline
-  implicit class AzureCredentialsMutableBuilder[Self <: AzureCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: AzureCredentials](x: Self) {
     
-    @scala.inline
-    def setSasToken(value: String): Self = StObject.set(x, "sasToken", value.asInstanceOf[js.Any])
+    inline def setSasToken(value: String): Self = StObject.set(x, "sasToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSasTokenUndefined: Self = StObject.set(x, "sasToken", js.undefined)
+    inline def setSasTokenUndefined: Self = StObject.set(x, "sasToken", js.undefined)
   }
 }

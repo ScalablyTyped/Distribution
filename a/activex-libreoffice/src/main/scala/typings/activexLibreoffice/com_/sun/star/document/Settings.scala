@@ -158,8 +158,7 @@ trait Settings
 }
 object Settings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddExternalLeading: Boolean,
     ApplyUserData: Boolean,
     AutoCalculate: Boolean,
@@ -205,94 +204,64 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setAddExternalLeading(value: Boolean): Self = StObject.set(x, "AddExternalLeading", value.asInstanceOf[js.Any])
+    inline def setAddExternalLeading(value: Boolean): Self = StObject.set(x, "AddExternalLeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyUserData(value: Boolean): Self = StObject.set(x, "ApplyUserData", value.asInstanceOf[js.Any])
+    inline def setApplyUserData(value: Boolean): Self = StObject.set(x, "ApplyUserData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCalculate(value: Boolean): Self = StObject.set(x, "AutoCalculate", value.asInstanceOf[js.Any])
+    inline def setAutoCalculate(value: Boolean): Self = StObject.set(x, "AutoCalculate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmapTableURL(value: String): Self = StObject.set(x, "BitmapTableURL", value.asInstanceOf[js.Any])
+    inline def setBitmapTableURL(value: String): Self = StObject.set(x, "BitmapTableURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterCompressionType(value: Double): Self = StObject.set(x, "CharacterCompressionType", value.asInstanceOf[js.Any])
+    inline def setCharacterCompressionType(value: Double): Self = StObject.set(x, "CharacterCompressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorTableURL(value: String): Self = StObject.set(x, "ColorTableURL", value.asInstanceOf[js.Any])
+    inline def setColorTableURL(value: String): Self = StObject.set(x, "ColorTableURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDatabaseCommand(value: String): Self = StObject.set(x, "CurrentDatabaseCommand", value.asInstanceOf[js.Any])
+    inline def setCurrentDatabaseCommand(value: String): Self = StObject.set(x, "CurrentDatabaseCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDatabaseCommandType(value: Double): Self = StObject.set(x, "CurrentDatabaseCommandType", value.asInstanceOf[js.Any])
+    inline def setCurrentDatabaseCommandType(value: Double): Self = StObject.set(x, "CurrentDatabaseCommandType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDatabaseDataSource(value: String): Self = StObject.set(x, "CurrentDatabaseDataSource", value.asInstanceOf[js.Any])
+    inline def setCurrentDatabaseDataSource(value: String): Self = StObject.set(x, "CurrentDatabaseDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashTableURL(value: String): Self = StObject.set(x, "DashTableURL", value.asInstanceOf[js.Any])
+    inline def setDashTableURL(value: String): Self = StObject.set(x, "DashTableURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTabStop(value: Double): Self = StObject.set(x, "DefaultTabStop", value.asInstanceOf[js.Any])
+    inline def setDefaultTabStop(value: Double): Self = StObject.set(x, "DefaultTabStop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedFonts(value: Boolean): Self = StObject.set(x, "EmbedFonts", value.asInstanceOf[js.Any])
+    inline def setEmbedFonts(value: Boolean): Self = StObject.set(x, "EmbedFonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedSystemFonts(value: Boolean): Self = StObject.set(x, "EmbedSystemFonts", value.asInstanceOf[js.Any])
+    inline def setEmbedSystemFonts(value: Boolean): Self = StObject.set(x, "EmbedSystemFonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldAutoUpdate(value: Boolean): Self = StObject.set(x, "FieldAutoUpdate", value.asInstanceOf[js.Any])
+    inline def setFieldAutoUpdate(value: Boolean): Self = StObject.set(x, "FieldAutoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForbiddenCharacters(value: XForbiddenCharacters): Self = StObject.set(x, "ForbiddenCharacters", value.asInstanceOf[js.Any])
+    inline def setForbiddenCharacters(value: XForbiddenCharacters): Self = StObject.set(x, "ForbiddenCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientTableURL(value: String): Self = StObject.set(x, "GradientTableURL", value.asInstanceOf[js.Any])
+    inline def setGradientTableURL(value: String): Self = StObject.set(x, "GradientTableURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHatchTableURL(value: String): Self = StObject.set(x, "HatchTableURL", value.asInstanceOf[js.Any])
+    inline def setHatchTableURL(value: String): Self = StObject.set(x, "HatchTableURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKernAsianPunctuation(value: Boolean): Self = StObject.set(x, "IsKernAsianPunctuation", value.asInstanceOf[js.Any])
+    inline def setIsKernAsianPunctuation(value: Boolean): Self = StObject.set(x, "IsKernAsianPunctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintBooklet(value: Boolean): Self = StObject.set(x, "IsPrintBooklet", value.asInstanceOf[js.Any])
+    inline def setIsPrintBooklet(value: Boolean): Self = StObject.set(x, "IsPrintBooklet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintBookletBack(value: Boolean): Self = StObject.set(x, "IsPrintBookletBack", value.asInstanceOf[js.Any])
+    inline def setIsPrintBookletBack(value: Boolean): Self = StObject.set(x, "IsPrintBookletBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintBookletFront(value: Boolean): Self = StObject.set(x, "IsPrintBookletFront", value.asInstanceOf[js.Any])
+    inline def setIsPrintBookletFront(value: Boolean): Self = StObject.set(x, "IsPrintBookletFront", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineEndTableURL(value: String): Self = StObject.set(x, "LineEndTableURL", value.asInstanceOf[js.Any])
+    inline def setLineEndTableURL(value: String): Self = StObject.set(x, "LineEndTableURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUpdateMode(value: Double): Self = StObject.set(x, "LinkUpdateMode", value.asInstanceOf[js.Any])
+    inline def setLinkUpdateMode(value: Double): Self = StObject.set(x, "LinkUpdateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintQuality(value: Double): Self = StObject.set(x, "PrintQuality", value.asInstanceOf[js.Any])
+    inline def setPrintQuality(value: Double): Self = StObject.set(x, "PrintQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrinterIndependentLayout(value: Double): Self = StObject.set(x, "PrinterIndependentLayout", value.asInstanceOf[js.Any])
+    inline def setPrinterIndependentLayout(value: Double): Self = StObject.set(x, "PrinterIndependentLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrinterName(value: String): Self = StObject.set(x, "PrinterName", value.asInstanceOf[js.Any])
+    inline def setPrinterName(value: String): Self = StObject.set(x, "PrinterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrinterSetup(value: SafeArray[Double]): Self = StObject.set(x, "PrinterSetup", value.asInstanceOf[js.Any])
+    inline def setPrinterSetup(value: SafeArray[Double]): Self = StObject.set(x, "PrinterSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveVersionOnClose(value: Boolean): Self = StObject.set(x, "SaveVersionOnClose", value.asInstanceOf[js.Any])
+    inline def setSaveVersionOnClose(value: Boolean): Self = StObject.set(x, "SaveVersionOnClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateFromTemplate(value: Boolean): Self = StObject.set(x, "UpdateFromTemplate", value.asInstanceOf[js.Any])
+    inline def setUpdateFromTemplate(value: Boolean): Self = StObject.set(x, "UpdateFromTemplate", value.asInstanceOf[js.Any])
   }
 }

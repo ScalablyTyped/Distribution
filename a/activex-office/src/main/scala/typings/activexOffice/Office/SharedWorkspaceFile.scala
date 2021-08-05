@@ -21,7 +21,7 @@ trait SharedWorkspaceFile extends StObject {
   
   val ModifiedDate: VarDate
   
-  @JSName("Office.SharedWorkspaceFile_typekey")
+  /* private */ @JSName("Office.SharedWorkspaceFile_typekey")
   var OfficeDotSharedWorkspaceFile_typekey: SharedWorkspaceFile
   
   val Parent: js.Any
@@ -30,8 +30,7 @@ trait SharedWorkspaceFile extends StObject {
 }
 object SharedWorkspaceFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     CreatedBy: String,
     CreatedDate: VarDate,
@@ -48,37 +47,26 @@ object SharedWorkspaceFile {
     __obj.asInstanceOf[SharedWorkspaceFile]
   }
   
-  @scala.inline
-  implicit class SharedWorkspaceFileMutableBuilder[Self <: SharedWorkspaceFile] (val x: Self) extends AnyVal {
+  extension [Self <: SharedWorkspaceFile](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
+    inline def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDate(value: VarDate): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: VarDate): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotSharedWorkspaceFile_typekey(value: SharedWorkspaceFile): Self = StObject.set(x, "Office.SharedWorkspaceFile_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotSharedWorkspaceFile_typekey(value: SharedWorkspaceFile): Self = StObject.set(x, "Office.SharedWorkspaceFile_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

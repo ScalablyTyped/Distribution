@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BarCornerRadiusMixins[ES]
 object BarConfig {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): BarConfig[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): BarConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarConfig[ES]]
   }

@@ -24,20 +24,16 @@ object downloadMod {
   }
   object DownloadPropTypes {
     
-    @scala.inline
-    def apply(data: String | Data): DownloadPropTypes = {
+    inline def apply(data: String | Data): DownloadPropTypes = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadPropTypes]
     }
     
-    @scala.inline
-    implicit class DownloadPropTypesMutableBuilder[Self <: DownloadPropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadPropTypes](x: Self) {
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

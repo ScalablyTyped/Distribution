@@ -14,28 +14,21 @@ trait IPropertyValidator extends StObject {
 }
 object IPropertyValidator {
   
-  @scala.inline
-  def apply(isAcceptable: js.Any => Boolean): IPropertyValidator = {
+  inline def apply(isAcceptable: js.Any => Boolean): IPropertyValidator = {
     val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable))
     __obj.asInstanceOf[IPropertyValidator]
   }
   
-  @scala.inline
-  implicit class IPropertyValidatorMutableBuilder[Self <: IPropertyValidator] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValidator](x: Self) {
     
-    @scala.inline
-    def setCustomMessage(value: (/* config */ js.Any, /* args */ js.Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
+    inline def setCustomMessage(value: (/* config */ js.Any, /* args */ js.Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
+    inline def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
-    @scala.inline
-    def setIsAcceptable(value: js.Any => Boolean): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
+    inline def setIsAcceptable(value: js.Any => Boolean): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

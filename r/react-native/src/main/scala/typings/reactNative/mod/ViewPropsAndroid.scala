@@ -45,37 +45,27 @@ trait ViewPropsAndroid extends StObject {
 }
 object ViewPropsAndroid {
   
-  @scala.inline
-  def apply(): ViewPropsAndroid = {
+  inline def apply(): ViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewPropsAndroid]
   }
   
-  @scala.inline
-  implicit class ViewPropsAndroidMutableBuilder[Self <: ViewPropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: ViewPropsAndroid](x: Self) {
     
-    @scala.inline
-    def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
+    inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
+    inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
     
-    @scala.inline
-    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
-    @scala.inline
-    def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    inline def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
+    inline def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
     
-    @scala.inline
-    def setRenderToHardwareTextureAndroid(value: Boolean): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    inline def setRenderToHardwareTextureAndroid(value: Boolean): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
+    inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
   }
 }

@@ -47,32 +47,24 @@ object mod {
   }
   object AnimatedProps {
     
-    @scala.inline
-    def apply(id: String): AnimatedProps = {
+    inline def apply(id: String): AnimatedProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimatedProps]
     }
     
-    @scala.inline
-    implicit class AnimatedPropsMutableBuilder[Self <: AnimatedProps] (val x: Self) extends AnyVal {
+    extension [Self <: AnimatedProps](x: Self) {
       
-      @scala.inline
-      def setAdditional(value: js.Object): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
+      inline def setAdditional(value: js.Object): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
+      inline def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode | ReactNodeArray): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | ReactNodeArray): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,8 +80,7 @@ object mod {
   }
   object ConductorProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animations: Animations,
       config: StringDictionary[Config] | (js.Function2[/* id */ String, /* additional */ js.Object, Config])
     ): ConductorProps = {
@@ -97,25 +88,19 @@ object mod {
       __obj.asInstanceOf[ConductorProps]
     }
     
-    @scala.inline
-    implicit class ConductorPropsMutableBuilder[Self <: ConductorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConductorProps](x: Self) {
       
-      @scala.inline
-      def setAnimations(value: Animations): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+      inline def setAnimations(value: Animations): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode | ReactNodeArray): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | ReactNodeArray): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setConfig(
+      inline def setConfig(
         value: StringDictionary[Config] | (js.Function2[/* id */ String, /* additional */ js.Object, Config])
       ): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFunction2(value: (/* id */ String, /* additional */ js.Object) => Config): Self = StObject.set(x, "config", js.Any.fromFunction2(value))
+      inline def setConfigFunction2(value: (/* id */ String, /* additional */ js.Object) => Config): Self = StObject.set(x, "config", js.Any.fromFunction2(value))
     }
   }
   
@@ -125,17 +110,14 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(animation: String): Config = {
+    inline def apply(animation: String): Config = {
       val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     }
   }
 }

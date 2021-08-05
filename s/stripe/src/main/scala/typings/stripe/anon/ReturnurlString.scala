@@ -10,16 +10,13 @@ trait ReturnurlString extends StObject {
 }
 object ReturnurlString {
   
-  @scala.inline
-  def apply(return_url: String): ReturnurlString = {
+  inline def apply(return_url: String): ReturnurlString = {
     val __obj = js.Dynamic.literal(return_url = return_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnurlString]
   }
   
-  @scala.inline
-  implicit class ReturnurlStringMutableBuilder[Self <: ReturnurlString] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnurlString](x: Self) {
     
-    @scala.inline
-    def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
+    inline def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
   }
 }

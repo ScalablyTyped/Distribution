@@ -23,22 +23,17 @@ trait ASPxClientFileManagerItemsCopiedEventArgs
 }
 object ASPxClientFileManagerItemsCopiedEventArgs {
   
-  @scala.inline
-  def apply(items: js.Array[ASPxClientFileManagerItem], oldFolderFullName: String): ASPxClientFileManagerItemsCopiedEventArgs = {
+  inline def apply(items: js.Array[ASPxClientFileManagerItem], oldFolderFullName: String): ASPxClientFileManagerItemsCopiedEventArgs = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], oldFolderFullName = oldFolderFullName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerItemsCopiedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerItemsCopiedEventArgsMutableBuilder[Self <: ASPxClientFileManagerItemsCopiedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerItemsCopiedEventArgs](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ASPxClientFileManagerItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ASPxClientFileManagerItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ASPxClientFileManagerItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ASPxClientFileManagerItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setOldFolderFullName(value: String): Self = StObject.set(x, "oldFolderFullName", value.asInstanceOf[js.Any])
+    inline def setOldFolderFullName(value: String): Self = StObject.set(x, "oldFolderFullName", value.asInstanceOf[js.Any])
   }
 }

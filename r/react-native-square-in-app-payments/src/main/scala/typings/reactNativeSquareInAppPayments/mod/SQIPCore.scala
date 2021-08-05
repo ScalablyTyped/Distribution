@@ -15,6 +15,5 @@ object SQIPCore {
     * Used to set a Square Application ID on the InAppPaymentsSDK object.
     * @param applicationId - The Square Application ID obtained from the developer portal
     */
-  @scala.inline
-  def setSquareApplicationId(applicationId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSquareApplicationId")(applicationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setSquareApplicationId(applicationId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSquareApplicationId")(applicationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

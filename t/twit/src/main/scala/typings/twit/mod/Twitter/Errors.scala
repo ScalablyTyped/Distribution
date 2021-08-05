@@ -11,19 +11,15 @@ trait Errors extends StObject {
 }
 object Errors {
   
-  @scala.inline
-  def apply(errors: js.Array[Code]): Errors = {
+  inline def apply(errors: js.Array[Code]): Errors = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Errors]
   }
   
-  @scala.inline
-  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+  extension [Self <: Errors](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[Code]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Code]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: Code*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Code*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

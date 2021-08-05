@@ -28,52 +28,37 @@ trait Pricing extends StObject {
 }
 object Pricing {
   
-  @scala.inline
-  def apply(): Pricing = {
+  inline def apply(): Pricing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pricing]
   }
   
-  @scala.inline
-  implicit class PricingMutableBuilder[Self <: Pricing] (val x: Self) extends AnyVal {
+  extension [Self <: Pricing](x: Self) {
     
-    @scala.inline
-    def setCapCostType(value: String): Self = StObject.set(x, "capCostType", value.asInstanceOf[js.Any])
+    inline def setCapCostType(value: String): Self = StObject.set(x, "capCostType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapCostTypeUndefined: Self = StObject.set(x, "capCostType", js.undefined)
+    inline def setCapCostTypeUndefined: Self = StObject.set(x, "capCostType", js.undefined)
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setFlights(value: js.Array[Flight]): Self = StObject.set(x, "flights", value.asInstanceOf[js.Any])
+    inline def setFlights(value: js.Array[Flight]): Self = StObject.set(x, "flights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlightsUndefined: Self = StObject.set(x, "flights", js.undefined)
+    inline def setFlightsUndefined: Self = StObject.set(x, "flights", js.undefined)
     
-    @scala.inline
-    def setFlightsVarargs(value: Flight*): Self = StObject.set(x, "flights", js.Array(value :_*))
+    inline def setFlightsVarargs(value: Flight*): Self = StObject.set(x, "flights", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
+    inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
+    inline def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
     
-    @scala.inline
-    def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
+    inline def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingTypeUndefined: Self = StObject.set(x, "pricingType", js.undefined)
+    inline def setPricingTypeUndefined: Self = StObject.set(x, "pricingType", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object RequestId {
     
-    @scala.inline
-    def apply(requestId: String): RequestId = {
+    inline def apply(requestId: String): RequestId = {
       val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestId]
     }
     
-    @scala.inline
-    implicit class RequestIdMutableBuilder[Self <: RequestId] (val x: Self) extends AnyVal {
+    extension [Self <: RequestId](x: Self) {
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }
   }
 }

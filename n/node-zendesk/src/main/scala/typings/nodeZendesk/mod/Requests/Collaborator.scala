@@ -12,22 +12,17 @@ trait Collaborator extends StObject {
 }
 object Collaborator {
   
-  @scala.inline
-  def apply(email: String): Collaborator = {
+  inline def apply(email: String): Collaborator = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collaborator]
   }
   
-  @scala.inline
-  implicit class CollaboratorMutableBuilder[Self <: Collaborator] (val x: Self) extends AnyVal {
+  extension [Self <: Collaborator](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

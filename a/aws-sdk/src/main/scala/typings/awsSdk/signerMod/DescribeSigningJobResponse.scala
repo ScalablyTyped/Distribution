@@ -73,91 +73,63 @@ trait DescribeSigningJobResponse extends StObject {
 }
 object DescribeSigningJobResponse {
   
-  @scala.inline
-  def apply(): DescribeSigningJobResponse = {
+  inline def apply(): DescribeSigningJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSigningJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSigningJobResponseMutableBuilder[Self <: DescribeSigningJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSigningJobResponse](x: Self) {
     
-    @scala.inline
-    def setCompletedAt(value: CompletedAt): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
+    inline def setCompletedAt(value: CompletedAt): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedAtUndefined: Self = StObject.set(x, "completedAt", js.undefined)
+    inline def setCompletedAtUndefined: Self = StObject.set(x, "completedAt", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setOverrides(value: SigningPlatformOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: SigningPlatformOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
+    inline def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
+    inline def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
     
-    @scala.inline
-    def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
+    inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
+    inline def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
     
-    @scala.inline
-    def setRequestedBy(value: RequestedBy): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
+    inline def setRequestedBy(value: RequestedBy): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedByUndefined: Self = StObject.set(x, "requestedBy", js.undefined)
+    inline def setRequestedByUndefined: Self = StObject.set(x, "requestedBy", js.undefined)
     
-    @scala.inline
-    def setSignedObject(value: SignedObject): Self = StObject.set(x, "signedObject", value.asInstanceOf[js.Any])
+    inline def setSignedObject(value: SignedObject): Self = StObject.set(x, "signedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedObjectUndefined: Self = StObject.set(x, "signedObject", js.undefined)
+    inline def setSignedObjectUndefined: Self = StObject.set(x, "signedObject", js.undefined)
     
-    @scala.inline
-    def setSigningMaterial(value: SigningMaterial): Self = StObject.set(x, "signingMaterial", value.asInstanceOf[js.Any])
+    inline def setSigningMaterial(value: SigningMaterial): Self = StObject.set(x, "signingMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningMaterialUndefined: Self = StObject.set(x, "signingMaterial", js.undefined)
+    inline def setSigningMaterialUndefined: Self = StObject.set(x, "signingMaterial", js.undefined)
     
-    @scala.inline
-    def setSigningParameters(value: SigningParameters): Self = StObject.set(x, "signingParameters", value.asInstanceOf[js.Any])
+    inline def setSigningParameters(value: SigningParameters): Self = StObject.set(x, "signingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningParametersUndefined: Self = StObject.set(x, "signingParameters", js.undefined)
+    inline def setSigningParametersUndefined: Self = StObject.set(x, "signingParameters", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SigningStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SigningStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

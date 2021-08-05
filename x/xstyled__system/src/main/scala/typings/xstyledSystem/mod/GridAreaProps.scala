@@ -12,22 +12,17 @@ trait GridAreaProps extends StObject {
 }
 object GridAreaProps {
   
-  @scala.inline
-  def apply(): GridAreaProps = {
+  inline def apply(): GridAreaProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridAreaProps]
   }
   
-  @scala.inline
-  implicit class GridAreaPropsMutableBuilder[Self <: GridAreaProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridAreaProps](x: Self) {
     
-    @scala.inline
-    def setGridArea(value: ResponsiveValue[String]): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+    inline def setGridArea(value: ResponsiveValue[String]): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+    inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
-    @scala.inline
-    def setGridAreaVarargs(value: String*): Self = StObject.set(x, "gridArea", js.Array(value :_*))
+    inline def setGridAreaVarargs(value: String*): Self = StObject.set(x, "gridArea", js.Array(value :_*))
   }
 }

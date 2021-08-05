@@ -10,16 +10,13 @@ trait ISuspendingDeferral extends StObject {
 }
 object ISuspendingDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): ISuspendingDeferral = {
+  inline def apply(complete: () => Unit): ISuspendingDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[ISuspendingDeferral]
   }
   
-  @scala.inline
-  implicit class ISuspendingDeferralMutableBuilder[Self <: ISuspendingDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: ISuspendingDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

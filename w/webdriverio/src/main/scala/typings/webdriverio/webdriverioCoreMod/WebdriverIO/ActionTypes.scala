@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActionTypes extends StObject
 object ActionTypes {
   
-  @scala.inline
-  def longPress: typings.webdriverio.webdriverioStrings.longPress = "longPress".asInstanceOf[typings.webdriverio.webdriverioStrings.longPress]
+  inline def longPress: typings.webdriverio.webdriverioStrings.longPress = "longPress".asInstanceOf[typings.webdriverio.webdriverioStrings.longPress]
   
-  @scala.inline
-  def moveTo: typings.webdriverio.webdriverioStrings.moveTo = "moveTo".asInstanceOf[typings.webdriverio.webdriverioStrings.moveTo]
+  inline def moveTo: typings.webdriverio.webdriverioStrings.moveTo = "moveTo".asInstanceOf[typings.webdriverio.webdriverioStrings.moveTo]
   
-  @scala.inline
-  def press: typings.webdriverio.webdriverioStrings.press = "press".asInstanceOf[typings.webdriverio.webdriverioStrings.press]
+  inline def press: typings.webdriverio.webdriverioStrings.press = "press".asInstanceOf[typings.webdriverio.webdriverioStrings.press]
   
-  @scala.inline
-  def release: typings.webdriverio.webdriverioStrings.release = "release".asInstanceOf[typings.webdriverio.webdriverioStrings.release]
+  inline def release: typings.webdriverio.webdriverioStrings.release = "release".asInstanceOf[typings.webdriverio.webdriverioStrings.release]
   
-  @scala.inline
-  def tap: typings.webdriverio.webdriverioStrings.tap = "tap".asInstanceOf[typings.webdriverio.webdriverioStrings.tap]
+  inline def tap: typings.webdriverio.webdriverioStrings.tap = "tap".asInstanceOf[typings.webdriverio.webdriverioStrings.tap]
 }

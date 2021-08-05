@@ -26,8 +26,7 @@ trait RenderTarget
 }
 object RenderTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     framebuffer: js.Any,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,16 +37,12 @@ object RenderTarget {
     __obj.asInstanceOf[RenderTarget]
   }
   
-  @scala.inline
-  implicit class RenderTargetMutableBuilder[Self <: RenderTarget] (val x: Self) extends AnyVal {
+  extension [Self <: RenderTarget](x: Self) {
     
-    @scala.inline
-    def setFramebuffer(value: js.Any): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
+    inline def setFramebuffer(value: js.Any): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: js.Array[Double]): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: js.Array[Double]): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportVarargs(value: Double*): Self = StObject.set(x, "viewport", js.Array(value :_*))
+    inline def setViewportVarargs(value: Double*): Self = StObject.set(x, "viewport", js.Array(value :_*))
   }
 }

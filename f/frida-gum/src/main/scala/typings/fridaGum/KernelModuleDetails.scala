@@ -23,22 +23,17 @@ trait KernelModuleDetails extends StObject {
 }
 object KernelModuleDetails {
   
-  @scala.inline
-  def apply(base: UInt64, name: String, size: Double): KernelModuleDetails = {
+  inline def apply(base: UInt64, name: String, size: Double): KernelModuleDetails = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[KernelModuleDetails]
   }
   
-  @scala.inline
-  implicit class KernelModuleDetailsMutableBuilder[Self <: KernelModuleDetails] (val x: Self) extends AnyVal {
+  extension [Self <: KernelModuleDetails](x: Self) {
     
-    @scala.inline
-    def setBase(value: UInt64): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: UInt64): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

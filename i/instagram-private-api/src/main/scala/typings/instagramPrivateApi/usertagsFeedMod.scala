@@ -17,7 +17,7 @@ object usertagsFeedMod {
     
     var id: Double | String = js.native
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[UsertagsFeedResponseRootObject] = js.native
   }

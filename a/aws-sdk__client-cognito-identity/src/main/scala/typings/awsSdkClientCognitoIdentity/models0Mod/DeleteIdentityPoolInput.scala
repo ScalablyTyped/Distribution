@@ -13,8 +13,7 @@ trait DeleteIdentityPoolInput extends StObject {
 }
 object DeleteIdentityPoolInput {
   
-  @scala.inline
-  def apply(): DeleteIdentityPoolInput = {
+  inline def apply(): DeleteIdentityPoolInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteIdentityPoolInput]
   }
@@ -23,16 +22,12 @@ object DeleteIdentityPoolInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: DeleteIdentityPoolInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: DeleteIdentityPoolInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class DeleteIdentityPoolInputMutableBuilder[Self <: DeleteIdentityPoolInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIdentityPoolInput](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
   }
 }

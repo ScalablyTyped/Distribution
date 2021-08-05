@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScriptRuntime extends StObject
 object ScriptRuntime {
   
-  @scala.inline
-  def DUK: typings.fridaGum.fridaGumStrings.DUK = "DUK".asInstanceOf[typings.fridaGum.fridaGumStrings.DUK]
+  inline def DUK: typings.fridaGum.fridaGumStrings.DUK = "DUK".asInstanceOf[typings.fridaGum.fridaGumStrings.DUK]
   
-  @scala.inline
-  def V8: typings.fridaGum.fridaGumStrings.V8 = "V8".asInstanceOf[typings.fridaGum.fridaGumStrings.V8]
+  inline def V8: typings.fridaGum.fridaGumStrings.V8 = "V8".asInstanceOf[typings.fridaGum.fridaGumStrings.V8]
 }

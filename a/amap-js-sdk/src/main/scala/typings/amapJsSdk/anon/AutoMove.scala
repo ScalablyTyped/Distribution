@@ -28,61 +28,43 @@ trait AutoMove extends StObject {
 }
 object AutoMove {
   
-  @scala.inline
-  def apply(): AutoMove = {
+  inline def apply(): AutoMove = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoMove]
   }
   
-  @scala.inline
-  implicit class AutoMoveMutableBuilder[Self <: AutoMove] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMove](x: Self) {
     
-    @scala.inline
-    def setAutoMove(value: Boolean): Self = StObject.set(x, "autoMove", value.asInstanceOf[js.Any])
+    inline def setAutoMove(value: Boolean): Self = StObject.set(x, "autoMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMoveUndefined: Self = StObject.set(x, "autoMove", js.undefined)
+    inline def setAutoMoveUndefined: Self = StObject.set(x, "autoMove", js.undefined)
     
-    @scala.inline
-    def setCloseWhenClickMap(value: Boolean): Self = StObject.set(x, "closeWhenClickMap", value.asInstanceOf[js.Any])
+    inline def setCloseWhenClickMap(value: Boolean): Self = StObject.set(x, "closeWhenClickMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseWhenClickMapUndefined: Self = StObject.set(x, "closeWhenClickMap", js.undefined)
+    inline def setCloseWhenClickMapUndefined: Self = StObject.set(x, "closeWhenClickMap", js.undefined)
     
-    @scala.inline
-    def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setIsCustom(value: Boolean): Self = StObject.set(x, "isCustom", value.asInstanceOf[js.Any])
+    inline def setIsCustom(value: Boolean): Self = StObject.set(x, "isCustom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCustomUndefined: Self = StObject.set(x, "isCustom", js.undefined)
+    inline def setIsCustomUndefined: Self = StObject.set(x, "isCustom", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShowShadow(value: Boolean): Self = StObject.set(x, "showShadow", value.asInstanceOf[js.Any])
+    inline def setShowShadow(value: Boolean): Self = StObject.set(x, "showShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowShadowUndefined: Self = StObject.set(x, "showShadow", js.undefined)
+    inline def setShowShadowUndefined: Self = StObject.set(x, "showShadow", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

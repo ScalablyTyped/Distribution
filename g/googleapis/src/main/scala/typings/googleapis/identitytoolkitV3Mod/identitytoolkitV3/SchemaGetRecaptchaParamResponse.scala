@@ -27,31 +27,23 @@ trait SchemaGetRecaptchaParamResponse extends StObject {
 }
 object SchemaGetRecaptchaParamResponse {
   
-  @scala.inline
-  def apply(): SchemaGetRecaptchaParamResponse = {
+  inline def apply(): SchemaGetRecaptchaParamResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetRecaptchaParamResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetRecaptchaParamResponseMutableBuilder[Self <: SchemaGetRecaptchaParamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetRecaptchaParamResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRecaptchaSiteKey(value: String): Self = StObject.set(x, "recaptchaSiteKey", value.asInstanceOf[js.Any])
+    inline def setRecaptchaSiteKey(value: String): Self = StObject.set(x, "recaptchaSiteKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecaptchaSiteKeyUndefined: Self = StObject.set(x, "recaptchaSiteKey", js.undefined)
+    inline def setRecaptchaSiteKeyUndefined: Self = StObject.set(x, "recaptchaSiteKey", js.undefined)
     
-    @scala.inline
-    def setRecaptchaStoken(value: String): Self = StObject.set(x, "recaptchaStoken", value.asInstanceOf[js.Any])
+    inline def setRecaptchaStoken(value: String): Self = StObject.set(x, "recaptchaStoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecaptchaStokenUndefined: Self = StObject.set(x, "recaptchaStoken", js.undefined)
+    inline def setRecaptchaStokenUndefined: Self = StObject.set(x, "recaptchaStoken", js.undefined)
   }
 }

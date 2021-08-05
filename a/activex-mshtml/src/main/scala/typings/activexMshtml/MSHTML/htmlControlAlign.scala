@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlControlAlign extends StObject
 object htmlControlAlign {
   
-  @scala.inline
-  def htmlControlAlignAbsBottom: `7` = 7.asInstanceOf[`7`]
+  inline def htmlControlAlignAbsBottom: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def htmlControlAlignAbsMiddle: `5` = 5.asInstanceOf[`5`]
+  inline def htmlControlAlignAbsMiddle: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def htmlControlAlignBaseline: `6` = 6.asInstanceOf[`6`]
+  inline def htmlControlAlignBaseline: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def htmlControlAlignBottom: `8` = 8.asInstanceOf[`8`]
+  inline def htmlControlAlignBottom: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def htmlControlAlignCenter: `2` = 2.asInstanceOf[`2`]
+  inline def htmlControlAlignCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlControlAlignLeft: `1` = 1.asInstanceOf[`1`]
+  inline def htmlControlAlignLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlControlAlignMiddle: `9` = 9.asInstanceOf[`9`]
+  inline def htmlControlAlignMiddle: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def htmlControlAlignNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def htmlControlAlignNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlControlAlignRight: `3` = 3.asInstanceOf[`3`]
+  inline def htmlControlAlignRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlControlAlignTextTop: `4` = 4.asInstanceOf[`4`]
+  inline def htmlControlAlignTextTop: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def htmlControlAlignTop: `10` = 10.asInstanceOf[`10`]
+  inline def htmlControlAlignTop: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def htmlControlAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlControlAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

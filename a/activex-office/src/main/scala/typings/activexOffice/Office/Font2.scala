@@ -50,7 +50,7 @@ trait Font2 extends StObject {
   
   var NameOther: String
   
-  @JSName("Office.Font2_typekey")
+  /* private */ @JSName("Office.Font2_typekey")
   var OfficeDotFont2_typekey: Font2
   
   val Parent: js.Any
@@ -83,8 +83,7 @@ trait Font2 extends StObject {
 }
 object Font2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Allcaps: MsoTriState,
     Application: js.Any,
     AutorotateNumbers: MsoTriState,
@@ -128,118 +127,80 @@ object Font2 {
     __obj.asInstanceOf[Font2]
   }
   
-  @scala.inline
-  implicit class Font2MutableBuilder[Self <: Font2] (val x: Self) extends AnyVal {
+  extension [Self <: Font2](x: Self) {
     
-    @scala.inline
-    def setAllcaps(value: MsoTriState): Self = StObject.set(x, "Allcaps", value.asInstanceOf[js.Any])
+    inline def setAllcaps(value: MsoTriState): Self = StObject.set(x, "Allcaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutorotateNumbers(value: MsoTriState): Self = StObject.set(x, "AutorotateNumbers", value.asInstanceOf[js.Any])
+    inline def setAutorotateNumbers(value: MsoTriState): Self = StObject.set(x, "AutorotateNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineOffset(value: Double): Self = StObject.set(x, "BaselineOffset", value.asInstanceOf[js.Any])
+    inline def setBaselineOffset(value: Double): Self = StObject.set(x, "BaselineOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBold(value: MsoTriState): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: MsoTriState): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaps(value: MsoTextCaps): Self = StObject.set(x, "Caps", value.asInstanceOf[js.Any])
+    inline def setCaps(value: MsoTextCaps): Self = StObject.set(x, "Caps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleStrikeThrough(value: MsoTriState): Self = StObject.set(x, "DoubleStrikeThrough", value.asInstanceOf[js.Any])
+    inline def setDoubleStrikeThrough(value: MsoTriState): Self = StObject.set(x, "DoubleStrikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddable(value: MsoTriState): Self = StObject.set(x, "Embeddable", value.asInstanceOf[js.Any])
+    inline def setEmbeddable(value: MsoTriState): Self = StObject.set(x, "Embeddable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedded(value: MsoTriState): Self = StObject.set(x, "Embedded", value.asInstanceOf[js.Any])
+    inline def setEmbedded(value: MsoTriState): Self = StObject.set(x, "Embedded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualize(value: MsoTriState): Self = StObject.set(x, "Equalize", value.asInstanceOf[js.Any])
+    inline def setEqualize(value: MsoTriState): Self = StObject.set(x, "Equalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
+    inline def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlight(value: ColorFormat): Self = StObject.set(x, "Highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: ColorFormat): Self = StObject.set(x, "Highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalic(value: MsoTriState): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: MsoTriState): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKerning(value: Double): Self = StObject.set(x, "Kerning", value.asInstanceOf[js.Any])
+    inline def setKerning(value: Double): Self = StObject.set(x, "Kerning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+    inline def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameAscii(value: String): Self = StObject.set(x, "NameAscii", value.asInstanceOf[js.Any])
+    inline def setNameAscii(value: String): Self = StObject.set(x, "NameAscii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameComplexScript(value: String): Self = StObject.set(x, "NameComplexScript", value.asInstanceOf[js.Any])
+    inline def setNameComplexScript(value: String): Self = StObject.set(x, "NameComplexScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFarEast(value: String): Self = StObject.set(x, "NameFarEast", value.asInstanceOf[js.Any])
+    inline def setNameFarEast(value: String): Self = StObject.set(x, "NameFarEast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameOther(value: String): Self = StObject.set(x, "NameOther", value.asInstanceOf[js.Any])
+    inline def setNameOther(value: String): Self = StObject.set(x, "NameOther", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotFont2_typekey(value: Font2): Self = StObject.set(x, "Office.Font2_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotFont2_typekey(value: Font2): Self = StObject.set(x, "Office.Font2_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
+    inline def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallcaps(value: MsoTriState): Self = StObject.set(x, "Smallcaps", value.asInstanceOf[js.Any])
+    inline def setSmallcaps(value: MsoTriState): Self = StObject.set(x, "Smallcaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftEdgeFormat(value: MsoSoftEdgeType): Self = StObject.set(x, "SoftEdgeFormat", value.asInstanceOf[js.Any])
+    inline def setSoftEdgeFormat(value: MsoSoftEdgeType): Self = StObject.set(x, "SoftEdgeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "Spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "Spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrike(value: MsoTextStrike): Self = StObject.set(x, "Strike", value.asInstanceOf[js.Any])
+    inline def setStrike(value: MsoTextStrike): Self = StObject.set(x, "Strike", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeThrough(value: MsoTriState): Self = StObject.set(x, "StrikeThrough", value.asInstanceOf[js.Any])
+    inline def setStrikeThrough(value: MsoTriState): Self = StObject.set(x, "StrikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscript(value: MsoTriState): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
+    inline def setSubscript(value: MsoTriState): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperscript(value: MsoTriState): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
+    inline def setSuperscript(value: MsoTriState): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineColor(value: ColorFormat): Self = StObject.set(x, "UnderlineColor", value.asInstanceOf[js.Any])
+    inline def setUnderlineColor(value: ColorFormat): Self = StObject.set(x, "UnderlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineStyle(value: MsoTextUnderlineType): Self = StObject.set(x, "UnderlineStyle", value.asInstanceOf[js.Any])
+    inline def setUnderlineStyle(value: MsoTextUnderlineType): Self = StObject.set(x, "UnderlineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordArtformat(value: MsoPresetTextEffect): Self = StObject.set(x, "WordArtformat", value.asInstanceOf[js.Any])
+    inline def setWordArtformat(value: MsoPresetTextEffect): Self = StObject.set(x, "WordArtformat", value.asInstanceOf[js.Any])
   }
 }

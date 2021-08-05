@@ -29,26 +29,22 @@ object testSignatureInputTestFixtureMod {
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/test/SignatureInputTestFixture", "TEST_IDS.CLEAR_BUTTON")
     @js.native
     def CLEAR_BUTTON: String = js.native
-    @scala.inline
-    def CLEAR_BUTTON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLEAR_BUTTON")(x.asInstanceOf[js.Any])
+    inline def CLEAR_BUTTON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLEAR_BUTTON")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/test/SignatureInputTestFixture", "TEST_IDS.PAD")
     @js.native
     def PAD: String = js.native
-    @scala.inline
-    def PAD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAD")(x.asInstanceOf[js.Any])
+    inline def PAD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAD")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/test/SignatureInputTestFixture", "TEST_IDS.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/test/SignatureInputTestFixture", "TEST_IDS.TITLE")
     @js.native
     def TITLE: String = js.native
-    @scala.inline
-    def TITLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE")(x.asInstanceOf[js.Any])
+    inline def TITLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE")(x.asInstanceOf[js.Any])
   }
   
   trait SignatureInputTestFixtureProps
@@ -61,26 +57,20 @@ object testSignatureInputTestFixtureMod {
   }
   object SignatureInputTestFixtureProps {
     
-    @scala.inline
-    def apply(): SignatureInputTestFixtureProps = {
+    inline def apply(): SignatureInputTestFixtureProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignatureInputTestFixtureProps]
     }
     
-    @scala.inline
-    implicit class SignatureInputTestFixturePropsMutableBuilder[Self <: SignatureInputTestFixtureProps] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureInputTestFixtureProps](x: Self) {
       
-      @scala.inline
-      def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+      inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+      inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      @scala.inline
-      def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+      inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
+      inline def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
     }
   }
 }

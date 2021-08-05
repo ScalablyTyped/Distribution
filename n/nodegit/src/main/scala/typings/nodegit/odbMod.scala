@@ -35,8 +35,7 @@ object odbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def open(objectsDir: String): js.Promise[Odb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(objectsDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Odb]]
+    inline def open(objectsDir: String): js.Promise[Odb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(objectsDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Odb]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`2`
@@ -46,14 +45,11 @@ object odbMod {
     trait STREAM extends StObject
     object STREAM {
       
-      @scala.inline
-      def RDONLY: `2` = 2.asInstanceOf[`2`]
+      inline def RDONLY: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def RW: `6` = 6.asInstanceOf[`6`]
+      inline def RW: `6` = 6.asInstanceOf[`6`]
       
-      @scala.inline
-      def WRONLY: `4` = 4.asInstanceOf[`4`]
+      inline def WRONLY: `4` = 4.asInstanceOf[`4`]
     }
   }
 }

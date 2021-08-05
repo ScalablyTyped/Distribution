@@ -47,17 +47,13 @@ object sizeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def empty(): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Size]
+    inline def empty(): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Size]
     
-    @scala.inline
-    def equals(a: ISize, b: ISize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(a: ISize, b: ISize): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def fromNumber(num: Double): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[Size]
+    inline def fromNumber(num: Double): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[Size]
     
-    @scala.inline
-    def initByCommonAction(
+    inline def initByCommonAction(
       action: js.Function2[
           /* directAdp */ js.Function1[/* s */ ISize, Double], 
           /* reverseAdp */ js.Function1[/* s */ ISize, Double], 

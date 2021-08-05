@@ -23,26 +23,20 @@ object typesDeleteMod {
   }
   object Delete {
     
-    @scala.inline
-    def apply(Objects: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]): Delete = {
+    inline def apply(Objects: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]): Delete = {
       val __obj = js.Dynamic.literal(Objects = Objects.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delete]
     }
     
-    @scala.inline
-    implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+    extension [Self <: Delete](x: Self) {
       
-      @scala.inline
-      def setObjects(value: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "Quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "Quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "Quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "Quiet", js.undefined)
     }
   }
   
@@ -58,20 +52,16 @@ object typesDeleteMod {
   }
   object UnmarshalledDelete {
     
-    @scala.inline
-    def apply(Objects: js.Array[UnmarshalledObjectIdentifier]): UnmarshalledDelete = {
+    inline def apply(Objects: js.Array[UnmarshalledObjectIdentifier]): UnmarshalledDelete = {
       val __obj = js.Dynamic.literal(Objects = Objects.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledDelete]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDeleteMutableBuilder[Self <: UnmarshalledDelete] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDelete](x: Self) {
       
-      @scala.inline
-      def setObjects(value: js.Array[UnmarshalledObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[UnmarshalledObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsVarargs(value: UnmarshalledObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: UnmarshalledObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
     }
   }
 }

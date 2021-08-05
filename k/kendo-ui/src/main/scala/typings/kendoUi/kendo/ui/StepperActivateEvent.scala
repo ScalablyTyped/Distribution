@@ -15,31 +15,23 @@ trait StepperActivateEvent extends StObject {
 }
 object StepperActivateEvent {
   
-  @scala.inline
-  def apply(): StepperActivateEvent = {
+  inline def apply(): StepperActivateEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StepperActivateEvent]
   }
   
-  @scala.inline
-  implicit class StepperActivateEventMutableBuilder[Self <: StepperActivateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StepperActivateEvent](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     
-    @scala.inline
-    def setSender(value: Stepper): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Stepper): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
-    @scala.inline
-    def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

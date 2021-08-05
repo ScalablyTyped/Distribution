@@ -13,8 +13,7 @@ trait ActorNotificationReason
 }
 object ActorNotificationReason {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     matchedRoles: js.Array[String],
     notificationReasonType: NotificationReasonType,
     targetIdentities: js.Array[IdentityRef]
@@ -23,13 +22,10 @@ object ActorNotificationReason {
     __obj.asInstanceOf[ActorNotificationReason]
   }
   
-  @scala.inline
-  implicit class ActorNotificationReasonMutableBuilder[Self <: ActorNotificationReason] (val x: Self) extends AnyVal {
+  extension [Self <: ActorNotificationReason](x: Self) {
     
-    @scala.inline
-    def setMatchedRoles(value: js.Array[String]): Self = StObject.set(x, "matchedRoles", value.asInstanceOf[js.Any])
+    inline def setMatchedRoles(value: js.Array[String]): Self = StObject.set(x, "matchedRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedRolesVarargs(value: String*): Self = StObject.set(x, "matchedRoles", js.Array(value :_*))
+    inline def setMatchedRolesVarargs(value: String*): Self = StObject.set(x, "matchedRoles", js.Array(value :_*))
   }
 }

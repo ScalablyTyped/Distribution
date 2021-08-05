@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdEditionType extends StObject
 object WdEditionType {
   
-  @scala.inline
-  def wdPublisher: `0` = 0.asInstanceOf[`0`]
+  inline def wdPublisher: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdSubscriber: `1` = 1.asInstanceOf[`1`]
+  inline def wdSubscriber: `1` = 1.asInstanceOf[`1`]
 }

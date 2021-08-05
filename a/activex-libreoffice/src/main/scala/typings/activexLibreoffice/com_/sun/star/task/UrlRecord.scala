@@ -13,19 +13,15 @@ trait UrlRecord extends StObject {
 }
 object UrlRecord {
   
-  @scala.inline
-  def apply(Url: String, UserList: SafeArray[UserRecord]): UrlRecord = {
+  inline def apply(Url: String, UserList: SafeArray[UserRecord]): UrlRecord = {
     val __obj = js.Dynamic.literal(Url = Url.asInstanceOf[js.Any], UserList = UserList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlRecord]
   }
   
-  @scala.inline
-  implicit class UrlRecordMutableBuilder[Self <: UrlRecord] (val x: Self) extends AnyVal {
+  extension [Self <: UrlRecord](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserList(value: SafeArray[UserRecord]): Self = StObject.set(x, "UserList", value.asInstanceOf[js.Any])
+    inline def setUserList(value: SafeArray[UserRecord]): Self = StObject.set(x, "UserList", value.asInstanceOf[js.Any])
   }
 }

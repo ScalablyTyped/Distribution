@@ -11,8 +11,6 @@ object useDebounceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](value: T, delay: Double): js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]]]
-  @scala.inline
-  def default[T](value: T, delay: Double, options: EqualityFn[T]): js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]]]
+  inline def default[T](value: T, delay: Double): js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]]]
+  inline def default[T](value: T, delay: Double, options: EqualityFn[T]): js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function0[Unit], js.Function0[Unit]]]
 }

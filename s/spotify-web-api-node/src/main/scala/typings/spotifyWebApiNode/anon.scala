@@ -12,17 +12,14 @@ object anon {
   }
   object Position {
     
-    @scala.inline
-    def apply(position: Double): Position = {
+    inline def apply(position: Double): Position = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object Uri {
     
-    @scala.inline
-    def apply(uri: String): Uri = {
+    inline def apply(uri: String): Uri = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Uri]
     }
     
-    @scala.inline
-    implicit class UriMutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
+    extension [Self <: Uri](x: Self) {
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

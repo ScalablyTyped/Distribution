@@ -33,8 +33,7 @@ trait EndpointSubset extends StObject {
 }
 object EndpointSubset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addresses: js.Array[EndpointAddress],
     notReadyAddresses: js.Array[EndpointAddress],
     ports: js.Array[EndpointPort]
@@ -43,25 +42,18 @@ object EndpointSubset {
     __obj.asInstanceOf[EndpointSubset]
   }
   
-  @scala.inline
-  implicit class EndpointSubsetMutableBuilder[Self <: EndpointSubset] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointSubset](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[EndpointAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[EndpointAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesVarargs(value: EndpointAddress*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: EndpointAddress*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setNotReadyAddresses(value: js.Array[EndpointAddress]): Self = StObject.set(x, "notReadyAddresses", value.asInstanceOf[js.Any])
+    inline def setNotReadyAddresses(value: js.Array[EndpointAddress]): Self = StObject.set(x, "notReadyAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotReadyAddressesVarargs(value: EndpointAddress*): Self = StObject.set(x, "notReadyAddresses", js.Array(value :_*))
+    inline def setNotReadyAddressesVarargs(value: EndpointAddress*): Self = StObject.set(x, "notReadyAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setPorts(value: js.Array[EndpointPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[EndpointPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsVarargs(value: EndpointPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: EndpointPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

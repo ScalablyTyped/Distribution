@@ -48,22 +48,15 @@ object CFB {
     /* 1 */ val minifat: typings.cfb.mod.CFBStorageType.minifat & Double = js.native
   }
   
-  @scala.inline
-  def find(cfb: CFBContainer, path: String): CFBEntry | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(cfb.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CFBEntry | Null]
+  inline def find(cfb: CFBContainer, path: String): CFBEntry | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(cfb.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CFBEntry | Null]
   
-  @scala.inline
-  def parse(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
-  @scala.inline
-  def parse(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
+  inline def parse(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  inline def parse(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
   
-  @scala.inline
-  def read(f: String): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
-  @scala.inline
-  def read(f: String, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
-  @scala.inline
-  def read(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
-  @scala.inline
-  def read(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
+  inline def read(f: String): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  inline def read(f: String, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
+  inline def read(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  inline def read(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
   
   @JSImport("xlsx", "CFB.utils")
   @js.native
@@ -73,13 +66,9 @@ object CFB {
   @js.native
   val version: String = js.native
   
-  @scala.inline
-  def write(cfb: CFBContainer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def write(cfb: CFBContainer, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def write(cfb: CFBContainer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def write(cfb: CFBContainer, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def writeFile(cfb: CFBContainer, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def writeFile(cfb: CFBContainer, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

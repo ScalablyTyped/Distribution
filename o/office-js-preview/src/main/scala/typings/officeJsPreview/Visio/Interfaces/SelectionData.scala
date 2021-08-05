@@ -17,22 +17,17 @@ trait SelectionData extends StObject {
 }
 object SelectionData {
   
-  @scala.inline
-  def apply(): SelectionData = {
+  inline def apply(): SelectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectionData]
   }
   
-  @scala.inline
-  implicit class SelectionDataMutableBuilder[Self <: SelectionData] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionData](x: Self) {
     
-    @scala.inline
-    def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+    inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    @scala.inline
-    def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
   }
 }

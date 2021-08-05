@@ -75,85 +75,59 @@ trait SchemaUserOrganization extends StObject {
 }
 object SchemaUserOrganization {
   
-  @scala.inline
-  def apply(): SchemaUserOrganization = {
+  inline def apply(): SchemaUserOrganization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserOrganization]
   }
   
-  @scala.inline
-  implicit class SchemaUserOrganizationMutableBuilder[Self <: SchemaUserOrganization] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserOrganization](x: Self) {
     
-    @scala.inline
-    def setCostCenter(value: String): Self = StObject.set(x, "costCenter", value.asInstanceOf[js.Any])
+    inline def setCostCenter(value: String): Self = StObject.set(x, "costCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostCenterUndefined: Self = StObject.set(x, "costCenter", js.undefined)
+    inline def setCostCenterUndefined: Self = StObject.set(x, "costCenter", js.undefined)
     
-    @scala.inline
-    def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
+    inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
+    inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
-    @scala.inline
-    def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
+    inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
+    inline def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setFullTimeEquivalent(value: Double): Self = StObject.set(x, "fullTimeEquivalent", value.asInstanceOf[js.Any])
+    inline def setFullTimeEquivalent(value: Double): Self = StObject.set(x, "fullTimeEquivalent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullTimeEquivalentUndefined: Self = StObject.set(x, "fullTimeEquivalent", js.undefined)
+    inline def setFullTimeEquivalentUndefined: Self = StObject.set(x, "fullTimeEquivalent", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

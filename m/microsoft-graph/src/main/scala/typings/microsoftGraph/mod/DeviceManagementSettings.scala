@@ -17,31 +17,23 @@ trait DeviceManagementSettings extends StObject {
 }
 object DeviceManagementSettings {
   
-  @scala.inline
-  def apply(): DeviceManagementSettings = {
+  inline def apply(): DeviceManagementSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceManagementSettings]
   }
   
-  @scala.inline
-  implicit class DeviceManagementSettingsMutableBuilder[Self <: DeviceManagementSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceManagementSettings](x: Self) {
     
-    @scala.inline
-    def setDeviceComplianceCheckinThresholdDays(value: Double): Self = StObject.set(x, "deviceComplianceCheckinThresholdDays", value.asInstanceOf[js.Any])
+    inline def setDeviceComplianceCheckinThresholdDays(value: Double): Self = StObject.set(x, "deviceComplianceCheckinThresholdDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceComplianceCheckinThresholdDaysUndefined: Self = StObject.set(x, "deviceComplianceCheckinThresholdDays", js.undefined)
+    inline def setDeviceComplianceCheckinThresholdDaysUndefined: Self = StObject.set(x, "deviceComplianceCheckinThresholdDays", js.undefined)
     
-    @scala.inline
-    def setIsScheduledActionEnabled(value: Boolean): Self = StObject.set(x, "isScheduledActionEnabled", value.asInstanceOf[js.Any])
+    inline def setIsScheduledActionEnabled(value: Boolean): Self = StObject.set(x, "isScheduledActionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScheduledActionEnabledUndefined: Self = StObject.set(x, "isScheduledActionEnabled", js.undefined)
+    inline def setIsScheduledActionEnabledUndefined: Self = StObject.set(x, "isScheduledActionEnabled", js.undefined)
     
-    @scala.inline
-    def setSecureByDefault(value: Boolean): Self = StObject.set(x, "secureByDefault", value.asInstanceOf[js.Any])
+    inline def setSecureByDefault(value: Boolean): Self = StObject.set(x, "secureByDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureByDefaultUndefined: Self = StObject.set(x, "secureByDefault", js.undefined)
+    inline def setSecureByDefaultUndefined: Self = StObject.set(x, "secureByDefault", js.undefined)
   }
 }

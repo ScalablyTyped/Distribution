@@ -23,28 +23,21 @@ trait EnableSsoRequest extends StObject {
 }
 object EnableSsoRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): EnableSsoRequest = {
+  inline def apply(DirectoryId: DirectoryId): EnableSsoRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableSsoRequest]
   }
   
-  @scala.inline
-  implicit class EnableSsoRequestMutableBuilder[Self <: EnableSsoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableSsoRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: ConnectPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: ConnectPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

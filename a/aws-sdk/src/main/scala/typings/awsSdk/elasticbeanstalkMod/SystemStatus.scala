@@ -18,28 +18,21 @@ trait SystemStatus extends StObject {
 }
 object SystemStatus {
   
-  @scala.inline
-  def apply(): SystemStatus = {
+  inline def apply(): SystemStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemStatus]
   }
   
-  @scala.inline
-  implicit class SystemStatusMutableBuilder[Self <: SystemStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SystemStatus](x: Self) {
     
-    @scala.inline
-    def setCPUUtilization(value: CPUUtilization): Self = StObject.set(x, "CPUUtilization", value.asInstanceOf[js.Any])
+    inline def setCPUUtilization(value: CPUUtilization): Self = StObject.set(x, "CPUUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCPUUtilizationUndefined: Self = StObject.set(x, "CPUUtilization", js.undefined)
+    inline def setCPUUtilizationUndefined: Self = StObject.set(x, "CPUUtilization", js.undefined)
     
-    @scala.inline
-    def setLoadAverage(value: LoadAverage): Self = StObject.set(x, "LoadAverage", value.asInstanceOf[js.Any])
+    inline def setLoadAverage(value: LoadAverage): Self = StObject.set(x, "LoadAverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadAverageUndefined: Self = StObject.set(x, "LoadAverage", js.undefined)
+    inline def setLoadAverageUndefined: Self = StObject.set(x, "LoadAverage", js.undefined)
     
-    @scala.inline
-    def setLoadAverageVarargs(value: LoadAverageValue*): Self = StObject.set(x, "LoadAverage", js.Array(value :_*))
+    inline def setLoadAverageVarargs(value: LoadAverageValue*): Self = StObject.set(x, "LoadAverage", js.Array(value :_*))
   }
 }

@@ -29,8 +29,7 @@ object anon {
   }
   object AddToast {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addToast: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit,
       removeAllToasts: () => Unit,
       removeToast: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit,
@@ -41,28 +40,21 @@ object anon {
       __obj.asInstanceOf[AddToast]
     }
     
-    @scala.inline
-    implicit class AddToastMutableBuilder[Self <: AddToast] (val x: Self) extends AnyVal {
+    extension [Self <: AddToast](x: Self) {
       
-      @scala.inline
-      def setAddToast(
+      inline def setAddToast(
         value: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
       ): Self = StObject.set(x, "addToast", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemoveAllToasts(value: () => Unit): Self = StObject.set(x, "removeAllToasts", js.Any.fromFunction0(value))
+      inline def setRemoveAllToasts(value: () => Unit): Self = StObject.set(x, "removeAllToasts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveToast(value: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "removeToast", js.Any.fromFunction2(value))
+      inline def setRemoveToast(value: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "removeToast", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToastStack(value: js.Array[Appearance]): Self = StObject.set(x, "toastStack", value.asInstanceOf[js.Any])
+      inline def setToastStack(value: js.Array[Appearance]): Self = StObject.set(x, "toastStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastStackVarargs(value: Appearance*): Self = StObject.set(x, "toastStack", js.Array(value :_*))
+      inline def setToastStackVarargs(value: Appearance*): Self = StObject.set(x, "toastStack", js.Array(value :_*))
       
-      @scala.inline
-      def setUpdateToast(
+      inline def setUpdateToast(
         value: (/* id */ String, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
       ): Self = StObject.set(x, "updateToast", js.Any.fromFunction3(value))
     }
@@ -78,26 +70,20 @@ object anon {
   }
   object Appearance {
     
-    @scala.inline
-    def apply(appearance: AppearanceTypes, id: String): Appearance = {
+    inline def apply(appearance: AppearanceTypes, id: String): Appearance = {
       val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Appearance]
     }
     
-    @scala.inline
-    implicit class AppearanceMutableBuilder[Self <: Appearance] (val x: Self) extends AnyVal {
+    extension [Self <: Appearance](x: Self) {
       
-      @scala.inline
-      def setAppearance(value: AppearanceTypes): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+      inline def setAppearance(value: AppearanceTypes): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,26 +95,20 @@ object anon {
   }
   object Toast {
     
-    @scala.inline
-    def apply(): Toast = {
+    inline def apply(): Toast = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Toast]
     }
     
-    @scala.inline
-    implicit class ToastMutableBuilder[Self <: Toast] (val x: Self) extends AnyVal {
+    extension [Self <: Toast](x: Self) {
       
-      @scala.inline
-      def setToast(value: ComponentType[ToastProps]): Self = StObject.set(x, "Toast", value.asInstanceOf[js.Any])
+      inline def setToast(value: ComponentType[ToastProps]): Self = StObject.set(x, "Toast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastContainer(value: ComponentType[ToastContainerProps]): Self = StObject.set(x, "ToastContainer", value.asInstanceOf[js.Any])
+      inline def setToastContainer(value: ComponentType[ToastContainerProps]): Self = StObject.set(x, "ToastContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastContainerUndefined: Self = StObject.set(x, "ToastContainer", js.undefined)
+      inline def setToastContainerUndefined: Self = StObject.set(x, "ToastContainer", js.undefined)
       
-      @scala.inline
-      def setToastUndefined: Self = StObject.set(x, "Toast", js.undefined)
+      inline def setToastUndefined: Self = StObject.set(x, "Toast", js.undefined)
     }
   }
 }

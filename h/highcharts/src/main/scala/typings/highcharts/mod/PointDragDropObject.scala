@@ -18,19 +18,15 @@ trait PointDragDropObject extends StObject {
 }
 object PointDragDropObject {
   
-  @scala.inline
-  def apply(newValues: Dictionary[Double], point: Point): PointDragDropObject = {
+  inline def apply(newValues: Dictionary[Double], point: Point): PointDragDropObject = {
     val __obj = js.Dynamic.literal(newValues = newValues.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDragDropObject]
   }
   
-  @scala.inline
-  implicit class PointDragDropObjectMutableBuilder[Self <: PointDragDropObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointDragDropObject](x: Self) {
     
-    @scala.inline
-    def setNewValues(value: Dictionary[Double]): Self = StObject.set(x, "newValues", value.asInstanceOf[js.Any])
+    inline def setNewValues(value: Dictionary[Double]): Self = StObject.set(x, "newValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }
 }

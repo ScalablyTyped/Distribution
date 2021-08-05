@@ -18,22 +18,17 @@ trait DeleteFolderRequest extends StObject {
 }
 object DeleteFolderRequest {
   
-  @scala.inline
-  def apply(FolderId: ResourceIdType): DeleteFolderRequest = {
+  inline def apply(FolderId: ResourceIdType): DeleteFolderRequest = {
     val __obj = js.Dynamic.literal(FolderId = FolderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFolderRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFolderRequestMutableBuilder[Self <: DeleteFolderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFolderRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setFolderId(value: ResourceIdType): Self = StObject.set(x, "FolderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: ResourceIdType): Self = StObject.set(x, "FolderId", value.asInstanceOf[js.Any])
   }
 }

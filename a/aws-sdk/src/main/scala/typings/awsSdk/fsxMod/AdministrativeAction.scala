@@ -32,49 +32,35 @@ trait AdministrativeAction extends StObject {
 }
 object AdministrativeAction {
   
-  @scala.inline
-  def apply(): AdministrativeAction = {
+  inline def apply(): AdministrativeAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdministrativeAction]
   }
   
-  @scala.inline
-  implicit class AdministrativeActionMutableBuilder[Self <: AdministrativeAction] (val x: Self) extends AnyVal {
+  extension [Self <: AdministrativeAction](x: Self) {
     
-    @scala.inline
-    def setAdministrativeActionType(value: AdministrativeActionType): Self = StObject.set(x, "AdministrativeActionType", value.asInstanceOf[js.Any])
+    inline def setAdministrativeActionType(value: AdministrativeActionType): Self = StObject.set(x, "AdministrativeActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministrativeActionTypeUndefined: Self = StObject.set(x, "AdministrativeActionType", js.undefined)
+    inline def setAdministrativeActionTypeUndefined: Self = StObject.set(x, "AdministrativeActionType", js.undefined)
     
-    @scala.inline
-    def setFailureDetails(value: AdministrativeActionFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
+    inline def setFailureDetails(value: AdministrativeActionFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
+    inline def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
-    @scala.inline
-    def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
-    @scala.inline
-    def setRequestTime(value: RequestTime): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: RequestTime): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
+    inline def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargetFileSystemValues(value: FileSystem): Self = StObject.set(x, "TargetFileSystemValues", value.asInstanceOf[js.Any])
+    inline def setTargetFileSystemValues(value: FileSystem): Self = StObject.set(x, "TargetFileSystemValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFileSystemValuesUndefined: Self = StObject.set(x, "TargetFileSystemValues", js.undefined)
+    inline def setTargetFileSystemValuesUndefined: Self = StObject.set(x, "TargetFileSystemValues", js.undefined)
   }
 }

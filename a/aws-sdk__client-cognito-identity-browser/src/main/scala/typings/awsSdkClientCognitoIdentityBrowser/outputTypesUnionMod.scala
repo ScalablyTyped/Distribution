@@ -30,8 +30,7 @@ object outputTypesUnionMod {
   trait OutputTypesUnion extends StObject
   object OutputTypesUnion {
     
-    @scala.inline
-    def CreateIdentityPoolOutput(
+    inline def CreateIdentityPoolOutput(
       $metadata: ResponseMetadata,
       AllowUnauthenticatedIdentities: Boolean,
       IdentityPoolId: String,
@@ -41,26 +40,22 @@ object outputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesCreateIdentityPoolOutputMod.CreateIdentityPoolOutput]
     }
     
-    @scala.inline
-    def DeleteIdentitiesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentitiesOutputMod.DeleteIdentitiesOutput = {
+    inline def DeleteIdentitiesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentitiesOutputMod.DeleteIdentitiesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentitiesOutputMod.DeleteIdentitiesOutput]
     }
     
-    @scala.inline
-    def DeleteIdentityPoolOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentityPoolOutputMod.DeleteIdentityPoolOutput = {
+    inline def DeleteIdentityPoolOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentityPoolOutputMod.DeleteIdentityPoolOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentityPoolOutputMod.DeleteIdentityPoolOutput]
     }
     
-    @scala.inline
-    def DescribeIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesDescribeIdentityOutputMod.DescribeIdentityOutput = {
+    inline def DescribeIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesDescribeIdentityOutputMod.DescribeIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesDescribeIdentityOutputMod.DescribeIdentityOutput]
     }
     
-    @scala.inline
-    def DescribeIdentityPoolOutput(
+    inline def DescribeIdentityPoolOutput(
       $metadata: ResponseMetadata,
       AllowUnauthenticatedIdentities: Boolean,
       IdentityPoolId: String,
@@ -70,80 +65,67 @@ object outputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesDescribeIdentityPoolOutputMod.DescribeIdentityPoolOutput]
     }
     
-    @scala.inline
-    def GetCredentialsForIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetCredentialsForIdentityOutputMod.GetCredentialsForIdentityOutput = {
+    inline def GetCredentialsForIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetCredentialsForIdentityOutputMod.GetCredentialsForIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesGetCredentialsForIdentityOutputMod.GetCredentialsForIdentityOutput]
     }
     
-    @scala.inline
-    def GetIdOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetIdOutputMod.GetIdOutput = {
+    inline def GetIdOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetIdOutputMod.GetIdOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesGetIdOutputMod.GetIdOutput]
     }
     
-    @scala.inline
-    def GetIdentityPoolRolesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetIdentityPoolRolesOutputMod.GetIdentityPoolRolesOutput = {
+    inline def GetIdentityPoolRolesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetIdentityPoolRolesOutputMod.GetIdentityPoolRolesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesGetIdentityPoolRolesOutputMod.GetIdentityPoolRolesOutput]
     }
     
-    @scala.inline
-    def GetOpenIdTokenForDeveloperIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenForDeveloperIdentityOutputMod.GetOpenIdTokenForDeveloperIdentityOutput = {
+    inline def GetOpenIdTokenForDeveloperIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenForDeveloperIdentityOutputMod.GetOpenIdTokenForDeveloperIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenForDeveloperIdentityOutputMod.GetOpenIdTokenForDeveloperIdentityOutput]
     }
     
-    @scala.inline
-    def GetOpenIdTokenOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenOutputMod.GetOpenIdTokenOutput = {
+    inline def GetOpenIdTokenOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenOutputMod.GetOpenIdTokenOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenOutputMod.GetOpenIdTokenOutput]
     }
     
-    @scala.inline
-    def ListIdentitiesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesListIdentitiesOutputMod.ListIdentitiesOutput = {
+    inline def ListIdentitiesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesListIdentitiesOutputMod.ListIdentitiesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesListIdentitiesOutputMod.ListIdentitiesOutput]
     }
     
-    @scala.inline
-    def ListIdentityPoolsOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesListIdentityPoolsOutputMod.ListIdentityPoolsOutput = {
+    inline def ListIdentityPoolsOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesListIdentityPoolsOutputMod.ListIdentityPoolsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesListIdentityPoolsOutputMod.ListIdentityPoolsOutput]
     }
     
-    @scala.inline
-    def LookupDeveloperIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesLookupDeveloperIdentityOutputMod.LookupDeveloperIdentityOutput = {
+    inline def LookupDeveloperIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesLookupDeveloperIdentityOutputMod.LookupDeveloperIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesLookupDeveloperIdentityOutputMod.LookupDeveloperIdentityOutput]
     }
     
-    @scala.inline
-    def MergeDeveloperIdentitiesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesMergeDeveloperIdentitiesOutputMod.MergeDeveloperIdentitiesOutput = {
+    inline def MergeDeveloperIdentitiesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesMergeDeveloperIdentitiesOutputMod.MergeDeveloperIdentitiesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesMergeDeveloperIdentitiesOutputMod.MergeDeveloperIdentitiesOutput]
     }
     
-    @scala.inline
-    def SetIdentityPoolRolesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesSetIdentityPoolRolesOutputMod.SetIdentityPoolRolesOutput = {
+    inline def SetIdentityPoolRolesOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesSetIdentityPoolRolesOutputMod.SetIdentityPoolRolesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesSetIdentityPoolRolesOutputMod.SetIdentityPoolRolesOutput]
     }
     
-    @scala.inline
-    def UnlinkDeveloperIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkDeveloperIdentityOutputMod.UnlinkDeveloperIdentityOutput = {
+    inline def UnlinkDeveloperIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkDeveloperIdentityOutputMod.UnlinkDeveloperIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkDeveloperIdentityOutputMod.UnlinkDeveloperIdentityOutput]
     }
     
-    @scala.inline
-    def UnlinkIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkIdentityOutputMod.UnlinkIdentityOutput = {
+    inline def UnlinkIdentityOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkIdentityOutputMod.UnlinkIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkIdentityOutputMod.UnlinkIdentityOutput]
     }
     
-    @scala.inline
-    def UpdateIdentityPoolOutput(
+    inline def UpdateIdentityPoolOutput(
       $metadata: ResponseMetadata,
       AllowUnauthenticatedIdentities: Boolean,
       IdentityPoolId: String,

@@ -16,22 +16,17 @@ trait SchemaListTagsResponse extends StObject {
 }
 object SchemaListTagsResponse {
   
-  @scala.inline
-  def apply(): SchemaListTagsResponse = {
+  inline def apply(): SchemaListTagsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListTagsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListTagsResponseMutableBuilder[Self <: SchemaListTagsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListTagsResponse](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[SchemaTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[SchemaTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: SchemaTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: SchemaTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

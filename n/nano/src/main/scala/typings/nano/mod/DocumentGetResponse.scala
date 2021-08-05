@@ -37,70 +37,49 @@ trait DocumentGetResponse extends StObject {
 }
 object DocumentGetResponse {
   
-  @scala.inline
-  def apply(_id: String, _rev: String): DocumentGetResponse = {
+  inline def apply(_id: String, _rev: String): DocumentGetResponse = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentGetResponse]
   }
   
-  @scala.inline
-  implicit class DocumentGetResponseMutableBuilder[Self <: DocumentGetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentGetResponse](x: Self) {
     
-    @scala.inline
-    def set_attachments(value: js.Any): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
+    inline def set_attachments(value: js.Any): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_attachmentsUndefined: Self = StObject.set(x, "_attachments", js.undefined)
+    inline def set_attachmentsUndefined: Self = StObject.set(x, "_attachments", js.undefined)
     
-    @scala.inline
-    def set_conflicts(value: js.Array[js.Any]): Self = StObject.set(x, "_conflicts", value.asInstanceOf[js.Any])
+    inline def set_conflicts(value: js.Array[js.Any]): Self = StObject.set(x, "_conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_conflictsUndefined: Self = StObject.set(x, "_conflicts", js.undefined)
+    inline def set_conflictsUndefined: Self = StObject.set(x, "_conflicts", js.undefined)
     
-    @scala.inline
-    def set_conflictsVarargs(value: js.Any*): Self = StObject.set(x, "_conflicts", js.Array(value :_*))
+    inline def set_conflictsVarargs(value: js.Any*): Self = StObject.set(x, "_conflicts", js.Array(value :_*))
     
-    @scala.inline
-    def set_deleted(value: Boolean): Self = StObject.set(x, "_deleted", value.asInstanceOf[js.Any])
+    inline def set_deleted(value: Boolean): Self = StObject.set(x, "_deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_deletedUndefined: Self = StObject.set(x, "_deleted", js.undefined)
+    inline def set_deletedUndefined: Self = StObject.set(x, "_deleted", js.undefined)
     
-    @scala.inline
-    def set_deleted_conflicts(value: js.Array[js.Any]): Self = StObject.set(x, "_deleted_conflicts", value.asInstanceOf[js.Any])
+    inline def set_deleted_conflicts(value: js.Array[js.Any]): Self = StObject.set(x, "_deleted_conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_deleted_conflictsUndefined: Self = StObject.set(x, "_deleted_conflicts", js.undefined)
+    inline def set_deleted_conflictsUndefined: Self = StObject.set(x, "_deleted_conflicts", js.undefined)
     
-    @scala.inline
-    def set_deleted_conflictsVarargs(value: js.Any*): Self = StObject.set(x, "_deleted_conflicts", js.Array(value :_*))
+    inline def set_deleted_conflictsVarargs(value: js.Any*): Self = StObject.set(x, "_deleted_conflicts", js.Array(value :_*))
     
-    @scala.inline
-    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_local_seq(value: String): Self = StObject.set(x, "_local_seq", value.asInstanceOf[js.Any])
+    inline def set_local_seq(value: String): Self = StObject.set(x, "_local_seq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_local_seqUndefined: Self = StObject.set(x, "_local_seq", js.undefined)
+    inline def set_local_seqUndefined: Self = StObject.set(x, "_local_seq", js.undefined)
     
-    @scala.inline
-    def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
+    inline def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_revisions(value: js.Any): Self = StObject.set(x, "_revisions", value.asInstanceOf[js.Any])
+    inline def set_revisions(value: js.Any): Self = StObject.set(x, "_revisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_revisionsUndefined: Self = StObject.set(x, "_revisions", js.undefined)
+    inline def set_revisionsUndefined: Self = StObject.set(x, "_revisions", js.undefined)
     
-    @scala.inline
-    def set_revs_info(value: js.Array[js.Any]): Self = StObject.set(x, "_revs_info", value.asInstanceOf[js.Any])
+    inline def set_revs_info(value: js.Array[js.Any]): Self = StObject.set(x, "_revs_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_revs_infoUndefined: Self = StObject.set(x, "_revs_info", js.undefined)
+    inline def set_revs_infoUndefined: Self = StObject.set(x, "_revs_info", js.undefined)
     
-    @scala.inline
-    def set_revs_infoVarargs(value: js.Any*): Self = StObject.set(x, "_revs_info", js.Array(value :_*))
+    inline def set_revs_infoVarargs(value: js.Any*): Self = StObject.set(x, "_revs_info", js.Array(value :_*))
   }
 }

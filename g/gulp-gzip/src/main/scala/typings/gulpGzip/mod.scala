@@ -47,44 +47,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setGzipOptions(value: ZlibOptions): Self = StObject.set(x, "gzipOptions", value.asInstanceOf[js.Any])
+      inline def setGzipOptions(value: ZlibOptions): Self = StObject.set(x, "gzipOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGzipOptionsUndefined: Self = StObject.set(x, "gzipOptions", js.undefined)
+      inline def setGzipOptionsUndefined: Self = StObject.set(x, "gzipOptions", js.undefined)
       
-      @scala.inline
-      def setPreExtension(value: String): Self = StObject.set(x, "preExtension", value.asInstanceOf[js.Any])
+      inline def setPreExtension(value: String): Self = StObject.set(x, "preExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreExtensionUndefined: Self = StObject.set(x, "preExtension", js.undefined)
+      inline def setPreExtensionUndefined: Self = StObject.set(x, "preExtension", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double | String | Boolean): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double | String | Boolean): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
   

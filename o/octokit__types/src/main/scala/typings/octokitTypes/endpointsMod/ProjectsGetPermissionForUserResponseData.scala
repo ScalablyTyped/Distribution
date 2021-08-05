@@ -13,19 +13,15 @@ trait ProjectsGetPermissionForUserResponseData extends StObject {
 }
 object ProjectsGetPermissionForUserResponseData {
   
-  @scala.inline
-  def apply(permission: String, user: Avatarurl): ProjectsGetPermissionForUserResponseData = {
+  inline def apply(permission: String, user: Avatarurl): ProjectsGetPermissionForUserResponseData = {
     val __obj = js.Dynamic.literal(permission = permission.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsGetPermissionForUserResponseData]
   }
   
-  @scala.inline
-  implicit class ProjectsGetPermissionForUserResponseDataMutableBuilder[Self <: ProjectsGetPermissionForUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsGetPermissionForUserResponseData](x: Self) {
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

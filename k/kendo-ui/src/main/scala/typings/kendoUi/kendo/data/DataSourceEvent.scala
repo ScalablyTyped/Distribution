@@ -10,19 +10,15 @@ trait DataSourceEvent extends StObject {
 }
 object DataSourceEvent {
   
-  @scala.inline
-  def apply(): DataSourceEvent = {
+  inline def apply(): DataSourceEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceEvent]
   }
   
-  @scala.inline
-  implicit class DataSourceEventMutableBuilder[Self <: DataSourceEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceEvent](x: Self) {
     
-    @scala.inline
-    def setSender(value: DataSource): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: DataSource): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
   }
 }

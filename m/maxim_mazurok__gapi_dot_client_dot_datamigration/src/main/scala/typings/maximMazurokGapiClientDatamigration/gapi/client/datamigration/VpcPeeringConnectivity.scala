@@ -11,19 +11,15 @@ trait VpcPeeringConnectivity extends StObject {
 }
 object VpcPeeringConnectivity {
   
-  @scala.inline
-  def apply(): VpcPeeringConnectivity = {
+  inline def apply(): VpcPeeringConnectivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcPeeringConnectivity]
   }
   
-  @scala.inline
-  implicit class VpcPeeringConnectivityMutableBuilder[Self <: VpcPeeringConnectivity] (val x: Self) extends AnyVal {
+  extension [Self <: VpcPeeringConnectivity](x: Self) {
     
-    @scala.inline
-    def setVpc(value: String): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
+    inline def setVpc(value: String): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
+    inline def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
   }
 }

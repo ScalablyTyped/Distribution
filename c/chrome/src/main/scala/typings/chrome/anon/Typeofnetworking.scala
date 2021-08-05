@@ -19,16 +19,13 @@ trait Typeofnetworking extends StObject {
 }
 object Typeofnetworking {
   
-  @scala.inline
-  def apply(config: Typeofconfig): Typeofnetworking = {
+  inline def apply(config: Typeofconfig): Typeofnetworking = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofnetworking]
   }
   
-  @scala.inline
-  implicit class TypeofnetworkingMutableBuilder[Self <: Typeofnetworking] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofnetworking](x: Self) {
     
-    @scala.inline
-    def setConfig(value: Typeofconfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Typeofconfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }
 }

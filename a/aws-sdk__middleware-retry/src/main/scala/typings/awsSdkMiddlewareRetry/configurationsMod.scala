@@ -37,8 +37,7 @@ object configurationsMod {
   @js.native
   val NODE_RETRY_MODE_CONFIG_OPTIONS: LoadedConfigSelectors[String] = js.native
   
-  @scala.inline
-  def resolveRetryConfig[T](input: T & PreviouslyResolved & RetryInputConfig): T & RetryResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRetryConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RetryResolvedConfig]
+  inline def resolveRetryConfig[T](input: T & PreviouslyResolved & RetryInputConfig): T & RetryResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRetryConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RetryResolvedConfig]
   
   trait PreviouslyResolved extends StObject
   
@@ -56,29 +55,22 @@ object configurationsMod {
   }
   object RetryInputConfig {
     
-    @scala.inline
-    def apply(): RetryInputConfig = {
+    inline def apply(): RetryInputConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RetryInputConfig]
     }
     
-    @scala.inline
-    implicit class RetryInputConfigMutableBuilder[Self <: RetryInputConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RetryInputConfig](x: Self) {
       
-      @scala.inline
-      def setMaxAttempts(value: Double | Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double | Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsFunction0(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
+      inline def setMaxAttemptsFunction0(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+      inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     }
   }
   
@@ -92,20 +84,16 @@ object configurationsMod {
   }
   object RetryResolvedConfig {
     
-    @scala.inline
-    def apply(maxAttempts: () => js.Promise[Double], retryStrategy: RetryStrategy): RetryResolvedConfig = {
+    inline def apply(maxAttempts: () => js.Promise[Double], retryStrategy: RetryStrategy): RetryResolvedConfig = {
       val __obj = js.Dynamic.literal(maxAttempts = js.Any.fromFunction0(maxAttempts), retryStrategy = retryStrategy.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetryResolvedConfig]
     }
     
-    @scala.inline
-    implicit class RetryResolvedConfigMutableBuilder[Self <: RetryResolvedConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RetryResolvedConfig](x: Self) {
       
-      @scala.inline
-      def setMaxAttempts(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
+      inline def setMaxAttempts(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait DeliveryOptions extends StObject {
 }
 object DeliveryOptions {
   
-  @scala.inline
-  def apply(): DeliveryOptions = {
+  inline def apply(): DeliveryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliveryOptions]
   }
   
-  @scala.inline
-  implicit class DeliveryOptionsMutableBuilder[Self <: DeliveryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryOptions](x: Self) {
     
-    @scala.inline
-    def setSendingPoolName(value: PoolName): Self = StObject.set(x, "SendingPoolName", value.asInstanceOf[js.Any])
+    inline def setSendingPoolName(value: PoolName): Self = StObject.set(x, "SendingPoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingPoolNameUndefined: Self = StObject.set(x, "SendingPoolName", js.undefined)
+    inline def setSendingPoolNameUndefined: Self = StObject.set(x, "SendingPoolName", js.undefined)
     
-    @scala.inline
-    def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
+    inline def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
+    inline def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
   }
 }

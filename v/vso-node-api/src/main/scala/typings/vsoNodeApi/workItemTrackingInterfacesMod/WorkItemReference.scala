@@ -18,19 +18,15 @@ trait WorkItemReference extends StObject {
 }
 object WorkItemReference {
   
-  @scala.inline
-  def apply(id: Double, url: String): WorkItemReference = {
+  inline def apply(id: Double, url: String): WorkItemReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemReference]
   }
   
-  @scala.inline
-  implicit class WorkItemReferenceMutableBuilder[Self <: WorkItemReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

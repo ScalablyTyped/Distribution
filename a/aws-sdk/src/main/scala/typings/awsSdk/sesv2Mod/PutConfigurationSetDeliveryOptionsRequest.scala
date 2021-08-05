@@ -23,28 +23,21 @@ trait PutConfigurationSetDeliveryOptionsRequest extends StObject {
 }
 object PutConfigurationSetDeliveryOptionsRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetDeliveryOptionsRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetDeliveryOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConfigurationSetDeliveryOptionsRequest]
   }
   
-  @scala.inline
-  implicit class PutConfigurationSetDeliveryOptionsRequestMutableBuilder[Self <: PutConfigurationSetDeliveryOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutConfigurationSetDeliveryOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingPoolName(value: SendingPoolName): Self = StObject.set(x, "SendingPoolName", value.asInstanceOf[js.Any])
+    inline def setSendingPoolName(value: SendingPoolName): Self = StObject.set(x, "SendingPoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingPoolNameUndefined: Self = StObject.set(x, "SendingPoolName", js.undefined)
+    inline def setSendingPoolNameUndefined: Self = StObject.set(x, "SendingPoolName", js.undefined)
     
-    @scala.inline
-    def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
+    inline def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
+    inline def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
   }
 }

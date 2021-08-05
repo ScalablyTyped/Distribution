@@ -18,22 +18,17 @@ trait CmsSignerInfo extends StObject {
 }
 object CmsSignerInfo {
   
-  @scala.inline
-  def apply(certificate: Certificate, hashAlgorithmName: String, timestampInfo: CmsTimestampInfo): CmsSignerInfo = {
+  inline def apply(certificate: Certificate, hashAlgorithmName: String, timestampInfo: CmsTimestampInfo): CmsSignerInfo = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], hashAlgorithmName = hashAlgorithmName.asInstanceOf[js.Any], timestampInfo = timestampInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmsSignerInfo]
   }
   
-  @scala.inline
-  implicit class CmsSignerInfoMutableBuilder[Self <: CmsSignerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CmsSignerInfo](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashAlgorithmName(value: String): Self = StObject.set(x, "hashAlgorithmName", value.asInstanceOf[js.Any])
+    inline def setHashAlgorithmName(value: String): Self = StObject.set(x, "hashAlgorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampInfo(value: CmsTimestampInfo): Self = StObject.set(x, "timestampInfo", value.asInstanceOf[js.Any])
+    inline def setTimestampInfo(value: CmsTimestampInfo): Self = StObject.set(x, "timestampInfo", value.asInstanceOf[js.Any])
   }
 }

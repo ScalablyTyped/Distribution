@@ -23,43 +23,31 @@ trait Workspace extends StObject {
 }
 object Workspace {
   
-  @scala.inline
-  def apply(): Workspace = {
+  inline def apply(): Workspace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Workspace]
   }
   
-  @scala.inline
-  implicit class WorkspaceMutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
+  extension [Self <: Workspace](x: Self) {
     
-    @scala.inline
-    def setCollection_count(value: Double): Self = StObject.set(x, "collection_count", value.asInstanceOf[js.Any])
+    inline def setCollection_count(value: Double): Self = StObject.set(x, "collection_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection_countUndefined: Self = StObject.set(x, "collection_count", js.undefined)
+    inline def setCollection_countUndefined: Self = StObject.set(x, "collection_count", js.undefined)
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    @scala.inline
-    def setCreated_by(value: String): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
+    inline def setCreated_by(value: String): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_byUndefined: Self = StObject.set(x, "created_by", js.undefined)
+    inline def setCreated_byUndefined: Self = StObject.set(x, "created_by", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

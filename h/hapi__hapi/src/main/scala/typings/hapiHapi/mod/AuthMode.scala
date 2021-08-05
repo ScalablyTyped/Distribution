@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthMode extends StObject
 object AuthMode {
   
-  @scala.inline
-  def optional: typings.hapiHapi.hapiHapiStrings.optional = "optional".asInstanceOf[typings.hapiHapi.hapiHapiStrings.optional]
+  inline def optional: typings.hapiHapi.hapiHapiStrings.optional = "optional".asInstanceOf[typings.hapiHapi.hapiHapiStrings.optional]
   
-  @scala.inline
-  def required: typings.hapiHapi.hapiHapiStrings.required = "required".asInstanceOf[typings.hapiHapi.hapiHapiStrings.required]
+  inline def required: typings.hapiHapi.hapiHapiStrings.required = "required".asInstanceOf[typings.hapiHapi.hapiHapiStrings.required]
   
-  @scala.inline
-  def `try`: typings.hapiHapi.hapiHapiStrings.`try` = "try".asInstanceOf[typings.hapiHapi.hapiHapiStrings.`try`]
+  inline def `try`: typings.hapiHapi.hapiHapiStrings.`try` = "try".asInstanceOf[typings.hapiHapi.hapiHapiStrings.`try`]
 }

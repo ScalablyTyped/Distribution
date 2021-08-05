@@ -19,24 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * view.setUint8(2, 0x01);
   * ArrayBuffertohex(buffer) → "fafb01"
   */
-@scala.inline
-def ArrayBuffertohex(buffer: typings.std.ArrayBuffer): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffertohex")(buffer.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def ArrayBuffertohex(buffer: typings.std.ArrayBuffer): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffertohex")(buffer.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert an array of bytes(Number) to hexadecimal string.
   * @param a array of bytes
   * @return hexadecimal string
   */
-@scala.inline
-def BAtohex(a: js.Array[scala.Double]): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("BAtohex")(a.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def BAtohex(a: js.Array[scala.Double]): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("BAtohex")(a.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert an array of character codes to a string
   * @param a array of character codes
   * @return s
   */
-@scala.inline
-def BAtos(a: js.Array[scala.Double]): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("BAtos")(a.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def BAtos(a: js.Array[scala.Double]): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("BAtos")(a.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a Base64 encoded string with new lines to a hexadecimal string
@@ -55,16 +52,14 @@ def BAtos(a: js.Array[scala.Double]): java.lang.String = typings.jsrsasign.globa
   * →
   * "123456789012345678901234567890123456789012345678901234567890"
   */
-@scala.inline
-def b64nltohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64nltohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64nltohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64nltohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a base64 string to a byte/number array.
   * @param s Base64URL encoded string
   * @return byte/number array
   */
-@scala.inline
-def b64toBA(s: java.lang.String): js.Array[scala.Double] = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64toBA")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[scala.Double]]
+inline def b64toBA(s: java.lang.String): js.Array[scala.Double] = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64toBA")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[scala.Double]]
 
 /**
   * convert a Base64 encoded string to a Base64URL encoded string.
@@ -73,24 +68,21 @@ def b64toBA(s: java.lang.String): js.Array[scala.Double] = typings.jsrsasign.glo
   * @example
   * b64tob64u("ab+c3f/==") → "ab-c3f_"
   */
-@scala.inline
-def b64tob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64tob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64tob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64tob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a Base64URL encoded string to a hexadecimal string.
   * @param s Base64URL encoded string
   * @return hexadecimal string
   */
-@scala.inline
-def b64tohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64tohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64tohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64tohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a Base64 encoded string to a UTF-8 encoded string including CJK or Latin.
   * @param s Base64 encoded string
   * @return UTF-8 encoded string
   */
-@scala.inline
-def b64toutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64toutf8")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64toutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64toutf8")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a Base64URL encoded string to a Base64 encoded string.
@@ -99,16 +91,14 @@ def b64toutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.
   * @example
   * b64utob64("ab-c3f_") → "ab+c3f/=="
   */
-@scala.inline
-def b64utob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64utob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a Base64URL encoded string to a hexadecimal string.
   * @param s Base64URL encoded string
   * @return hexadecimal string
   */
-@scala.inline
-def b64utohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64utohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a Base64URL encoded string to a ASCII string.
@@ -116,16 +106,14 @@ def b64utohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.
   * @param s Base64URL encoded string
   * @return ASCII string
   */
-@scala.inline
-def b64utos(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utos")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64utos(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utos")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a Base64URL encoded string to a UTF-8 encoded string including CJK or Latin.
   * @param s Base64URL encoded string
   * @return UTF-8 encoded string
   */
-@scala.inline
-def b64utoutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utoutf8")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def b64utoutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("b64utoutf8")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * Date object to zulu time string
@@ -146,8 +134,7 @@ def b64utoutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global
   * datetozulu(d, true) → "170520235959Z"
   * datetozulu(d, false, true) → "20170520235959.67Z"
   */
-@scala.inline
-def datetozulu(d: typings.std.Date, flagUTCTime: scala.Boolean, flagMilli: scala.Boolean): java.lang.String = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("datetozulu")(d.asInstanceOf[js.Any], flagUTCTime.asInstanceOf[js.Any], flagMilli.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def datetozulu(d: typings.std.Date, flagUTCTime: scala.Boolean, flagMilli: scala.Boolean): java.lang.String = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("datetozulu")(d.asInstanceOf[js.Any], flagUTCTime.asInstanceOf[js.Any], flagMilli.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
 /**
   * convert UTFa hexadecimal string to a URLComponent string such like "%67%68".
@@ -158,8 +145,7 @@ def datetozulu(d: typings.std.Date, flagUTCTime: scala.Boolean, flagMilli: scala
   * @param s hexadecimal string
   * @return URIComponent string such like "%67%68"
   */
-@scala.inline
-def encodeURIComponentAll(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("encodeURIComponentAll")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def encodeURIComponentAll(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("encodeURIComponentAll")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a hexadecimal string to an ArrayBuffer
@@ -170,8 +156,7 @@ def encodeURIComponentAll(s: java.lang.String): java.lang.String = typings.jsrsa
   * @example
   * hextoArrayBuffer("fffa01") → ArrayBuffer of [255, 250, 1]
   */
-@scala.inline
-def hextoArrayBuffer(hex: java.lang.String): typings.std.ArrayBuffer = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextoArrayBuffer")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.std.ArrayBuffer]
+inline def hextoArrayBuffer(hex: java.lang.String): typings.std.ArrayBuffer = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextoArrayBuffer")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.std.ArrayBuffer]
 
 /**
   * convert a hexadecimal string to a Base64URL encoded string.
@@ -182,8 +167,7 @@ def hextoArrayBuffer(hex: java.lang.String): typings.std.ArrayBuffer = typings.j
   * NOTE: If leading "0" is omitted and odd number length for
   * hexadecimal leading "0" is automatically added.
   */
-@scala.inline
-def hextob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def hextob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a hexadecimal string to Base64 encoded string with new lines
@@ -199,8 +183,7 @@ def hextob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.j
   * MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4 // new line
   * OTAxMjM0NTY3ODkwCg==
   */
-@scala.inline
-def hextob64nl(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextob64nl")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def hextob64nl(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextob64nl")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a hexadecimal string to a Base64URL encoded string.
@@ -211,8 +194,7 @@ def hextob64nl(s: java.lang.String): java.lang.String = typings.jsrsasign.global
   * NOTE: If leading "0" is omitted and odd number length for
   * hexadecimal leading "0" is automatically added.
   */
-@scala.inline
-def hextob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def hextob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * get PEM string from hexadecimal data and header string
@@ -228,8 +210,7 @@ def hextob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.
   * YWFh
   * -----END PRIVATE KEY-----
   */
-@scala.inline
-def hextopem(dataHex: java.lang.String, pemHeader: java.lang.String): java.lang.String = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextopem")(dataHex.asInstanceOf[js.Any], pemHeader.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def hextopem(dataHex: java.lang.String, pemHeader: java.lang.String): java.lang.String = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextopem")(dataHex.asInstanceOf[js.Any], pemHeader.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
 /**
   * canonicalize hexadecimal string of positive integer
@@ -248,8 +229,7 @@ def hextopem(dataHex: java.lang.String, pemHeader: java.lang.String): java.lang.
   * hextoposhex("1234") → "1234"
   * hextoposhex("12345") → "012345"
   */
-@scala.inline
-def hextoposhex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextoposhex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def hextoposhex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextoposhex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a hexadecimal encoded string to raw string including non printable characters.
@@ -258,16 +238,14 @@ def hextoposhex(s: java.lang.String): java.lang.String = typings.jsrsasign.globa
   * @example
   * hextorstr("610061") → "a\x00a"
   */
-@scala.inline
-def hextorstr(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextorstr")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def hextorstr(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextorstr")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a hexadecimal string to a URLComponent string such like "%67%68".
   * @param s hexadecimal string
   * @return URIComponent string such like "%67%68"
   */
-@scala.inline
-def hextouricmp(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextouricmp")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def hextouricmp(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextouricmp")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a hexadecimal encoded string to a UTF-8 encoded string including CJK or Latin.
@@ -276,8 +254,7 @@ def hextouricmp(s: java.lang.String): java.lang.String = typings.jsrsasign.globa
   * @param s hexadecimal encoded string
   * @return UTF-8 encoded string or null
   */
-@scala.inline
-def hextoutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextoutf8")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def hextoutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("hextoutf8")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert string of integer array to hexadecimal string.
@@ -294,8 +271,7 @@ def hextoutf8(s: java.lang.String): java.lang.String = typings.jsrsasign.global.
   * intarystrtohex(" [123, 34, 101, 34, 58] ")
   * → 7b2265223a (i.e. '{"e":' as string)
   */
-@scala.inline
-def intarystrtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("intarystrtohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def intarystrtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("intarystrtohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert all UNIX new line("\r\n") to DOS new line("\n") in
@@ -303,8 +279,7 @@ def intarystrtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.gl
   * @param s string
   * @return converted string
   */
-@scala.inline
-def newlineToDos(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("newline_toDos")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def newlineToDos(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("newline_toDos")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert all DOS new line("\r\n") to UNIX new line("\n") in
@@ -312,8 +287,7 @@ def newlineToDos(s: java.lang.String): java.lang.String = typings.jsrsasign.glob
   * @param s string
   * @return converted string
   */
-@scala.inline
-def newlineToUnix(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("newline_toUnix")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def newlineToUnix(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("newline_toUnix")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * get hexadecimal string from PEM format data
@@ -334,10 +308,8 @@ def newlineToUnix(s: java.lang.String): java.lang.String = typings.jsrsasign.glo
   * pemtohex("-----BEGIN CERTIFICATE...", "CERTIFICATE") → "3082..."
   * pemtohex(" \r\n-----BEGIN DSA PRIVATE KEY...") → "3082..."
   */
-@scala.inline
-def pemtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("pemtohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def pemtohex(s: java.lang.String, sHead: java.lang.String): java.lang.String = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("pemtohex")(s.asInstanceOf[js.Any], sHead.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def pemtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("pemtohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def pemtohex(s: java.lang.String, sHead: java.lang.String): java.lang.String = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("pemtohex")(s.asInstanceOf[js.Any], sHead.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
 /**
   * read file and return file contents
@@ -346,8 +318,7 @@ def pemtohex(s: java.lang.String, sHead: java.lang.String): java.lang.String = (
   * @description
   * This function only works in Node.js.
   */
-@scala.inline
-def readFile(binFile: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(binFile.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def readFile(binFile: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(binFile.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * read binary file and return file contents as hexadecimal string
@@ -356,8 +327,7 @@ def readFile(binFile: java.lang.String): java.lang.String = typings.jsrsasign.gl
   * @description
   * This function only works in Node.js.
   */
-@scala.inline
-def readFileHexByBin(binFile: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("readFileHexByBin")(binFile.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def readFileHexByBin(binFile: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("readFileHexByBin")(binFile.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * read file and return file contents as utf-8 string
@@ -366,8 +336,7 @@ def readFileHexByBin(binFile: java.lang.String): java.lang.String = typings.jsrs
   * @description
   * This function only works in Node.js.
   */
-@scala.inline
-def readFileUTF8(utf8File: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("readFileUTF8")(utf8File.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def readFileUTF8(utf8File: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("readFileUTF8")(utf8File.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a raw string including non printable characters to hexadecimal encoded string.
@@ -376,8 +345,7 @@ def readFileUTF8(utf8File: java.lang.String): java.lang.String = typings.jsrsasi
   * @example
   * rstrtohex("a\x00a") → "610061"
   */
-@scala.inline
-def rstrtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("rstrtohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def rstrtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("rstrtohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * save raw string to file
@@ -386,8 +354,7 @@ def rstrtohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.
   * @description
   * This function only works in Node.js.
   */
-@scala.inline
-def saveFile(binFile: java.lang.String, rawString: java.lang.String): scala.Unit = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("saveFile")(binFile.asInstanceOf[js.Any], rawString.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def saveFile(binFile: java.lang.String, rawString: java.lang.String): scala.Unit = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("saveFile")(binFile.asInstanceOf[js.Any], rawString.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 /**
   * save data represented by hexadecimal string to file
@@ -396,14 +363,12 @@ def saveFile(binFile: java.lang.String, rawString: java.lang.String): scala.Unit
   * @description
   * This function only works in Node.js.
   */
-@scala.inline
-def saveFileBinByHex(binFile: java.lang.String, hexString: java.lang.String): scala.Unit = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("saveFileBinByHex")(binFile.asInstanceOf[js.Any], hexString.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def saveFileBinByHex(binFile: java.lang.String, hexString: java.lang.String): scala.Unit = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("saveFileBinByHex")(binFile.asInstanceOf[js.Any], hexString.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 /**
   * convert a string to an array of character codes
   */
-@scala.inline
-def stoBA(s: java.lang.String): js.Array[scala.Double] = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stoBA")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[scala.Double]]
+inline def stoBA(s: java.lang.String): js.Array[scala.Double] = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stoBA")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[scala.Double]]
 
 /**
   * convert a ASCII string to a Base64 encoded string.
@@ -411,8 +376,7 @@ def stoBA(s: java.lang.String): js.Array[scala.Double] = typings.jsrsasign.globa
   * @param s ASCII string
   * @return Base64 encoded string
   */
-@scala.inline
-def stob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def stob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a ASCII string to a Base64URL encoded string.
@@ -420,8 +384,7 @@ def stob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsr
   * @param s ASCII string
   * @return Base64URL encoded string
   */
-@scala.inline
-def stob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def stob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a ASCII string to a hexadecimal string of ASCII codes.
@@ -429,8 +392,7 @@ def stob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.js
   * @param s ASCII string
   * @return hexadecimal string
   */
-@scala.inline
-def stohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def stohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("stohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * find index of string where two string differs
@@ -443,40 +405,35 @@ def stohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsr
   * strdiffidx("abcdefg", "abcdef") -> 6
   * strdiffidx("abcdefgh", "abcdef") -> 6
   */
-@scala.inline
-def strdiffidx(s1: java.lang.String, s2: java.lang.String): scala.Double = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("strdiffidx")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def strdiffidx(s1: java.lang.String, s2: java.lang.String): scala.Double = (typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("strdiffidx")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 
 /**
   * convert a URLComponent string such like "%67%68" to a hexadecimal string.
   * @param s URIComponent string such like "%67%68"
   * @return hexadecimal string
   */
-@scala.inline
-def uricmptohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("uricmptohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def uricmptohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("uricmptohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a UTF-8 encoded string including CJK or Latin to a Base64 encoded string.
   * @param s UTF-8 encoded string
   * @return Base64 encoded string
   */
-@scala.inline
-def utf8tob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("utf8tob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def utf8tob64(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("utf8tob64")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a UTF-8 encoded string including CJK or Latin to a Base64URL encoded string.
   * @param s UTF-8 encoded string
   * @return Base64URL encoded string
   */
-@scala.inline
-def utf8tob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("utf8tob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def utf8tob64u(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("utf8tob64u")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * convert a UTF-8 encoded string including CJK or Latin to a hexadecimal encoded string.
   * @param s UTF-8 encoded string
   * @return hexadecimal encoded string
   */
-@scala.inline
-def utf8tohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("utf8tohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def utf8tohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("utf8tohex")(s.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * GeneralizedTime or UTCTime string to Date object
@@ -495,8 +452,7 @@ def utf8tohex(s: java.lang.String): java.lang.String = typings.jsrsasign.global.
   * zulutodate("20071231235959Z").toUTCString()   → "Mon, 31 Dec 2007 23:59:59 GMT"
   * zulutodate(  "071231235959.34").getMilliseconds() → 340
   */
-@scala.inline
-def zulutodate(s: java.lang.String): typings.std.Date = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("zulutodate")(s.asInstanceOf[js.Any]).asInstanceOf[typings.std.Date]
+inline def zulutodate(s: java.lang.String): typings.std.Date = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("zulutodate")(s.asInstanceOf[js.Any]).asInstanceOf[typings.std.Date]
 
 /**
   * GeneralizedTime or UTCTime string to milliseconds from Unix origin
@@ -517,8 +473,7 @@ def zulutodate(s: java.lang.String): typings.std.Date = typings.jsrsasign.global
   * zulutomsec("20071231235959Z")     → 1199145599000 #Mon, 31 Dec 2007 23:59:59 GMT
   * zulutomsec("931231235959Z")       → -410227201000 #Mon, 31 Dec 1956 23:59:59 GMT
   */
-@scala.inline
-def zulutomsec(s: java.lang.String): scala.Double = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("zulutomsec")(s.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def zulutomsec(s: java.lang.String): scala.Double = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("zulutomsec")(s.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
 
 /**
   * GeneralizedTime or UTCTime string to seconds from Unix origin
@@ -536,5 +491,4 @@ def zulutomsec(s: java.lang.String): scala.Double = typings.jsrsasign.global.jsr
   * zulutosec("071231235959.1Z") → 1199145599 #Mon, 31 Dec 2007 23:59:59 GMT
   * zulutosec("20071231235959Z") → 1199145599 #Mon, 31 Dec 2007 23:59:59 GMT
   */
-@scala.inline
-def zulutosec(s: java.lang.String): scala.Double = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("zulutosec")(s.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def zulutosec(s: java.lang.String): scala.Double = typings.jsrsasign.global.jsrsasign.^.asInstanceOf[js.Dynamic].applyDynamic("zulutosec")(s.asInstanceOf[js.Any]).asInstanceOf[scala.Double]

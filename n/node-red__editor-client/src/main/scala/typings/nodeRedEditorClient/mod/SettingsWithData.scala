@@ -12,8 +12,7 @@ trait SettingsWithData
      with LocalSettings
 object SettingsWithData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: (String, js.Any) => js.Any,
     init: (ApiRootUrl, js.Function0[Unit]) => Unit,
     load: js.Function0[Unit] => Unit,

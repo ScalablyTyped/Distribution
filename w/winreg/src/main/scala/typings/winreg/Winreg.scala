@@ -31,38 +31,28 @@ object Winreg {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
+      inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
       
-      @scala.inline
-      def setHive(value: String): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
+      inline def setHive(value: String): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiveUndefined: Self = StObject.set(x, "hive", js.undefined)
+      inline def setHiveUndefined: Self = StObject.set(x, "hive", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -208,8 +198,7 @@ object Winreg {
   }
   object Registry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arch: String,
       clear: js.Function1[/* err */ Error, Unit] => Registry,
       create: js.Function1[/* err */ Error, Unit] => Registry,
@@ -232,59 +221,41 @@ object Winreg {
       __obj.asInstanceOf[Registry]
     }
     
-    @scala.inline
-    implicit class RegistryMutableBuilder[Self <: Registry] (val x: Self) extends AnyVal {
+    extension [Self <: Registry](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClear(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreate(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErase(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "erase", js.Any.fromFunction1(value))
+      inline def setErase(value: js.Function1[/* err */ Error, Unit] => Registry): Self = StObject.set(x, "erase", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: (String, js.Function2[/* err */ Error, /* result */ RegistryItem, Unit]) => Registry): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (String, js.Function2[/* err */ Error, /* result */ RegistryItem, Unit]) => Registry): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHive(value: String): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
+      inline def setHive(value: String): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyExists(value: js.Function2[/* err */ Error, /* exists */ Boolean, Unit] => Registry): Self = StObject.set(x, "keyExists", js.Any.fromFunction1(value))
+      inline def setKeyExists(value: js.Function2[/* err */ Error, /* exists */ Boolean, Unit] => Registry): Self = StObject.set(x, "keyExists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: js.Function2[/* err */ Error, /* result */ js.Array[Registry], Unit] => Registry): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+      inline def setKeys(value: js.Function2[/* err */ Error, /* result */ js.Array[Registry], Unit] => Registry): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParent(value: Registry): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Registry): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: (String, js.Function1[/* err */ Error, Unit]) => Registry): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (String, js.Function1[/* err */ Error, Unit]) => Registry): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(value: (String, String, String, js.Function1[/* err */ Error, Unit]) => Registry): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+      inline def setSet(value: (String, String, String, js.Function1[/* err */ Error, Unit]) => Registry): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setValueExists(value: (String, js.Function2[/* err */ Error, /* exists */ Boolean, Unit]) => Registry): Self = StObject.set(x, "valueExists", js.Any.fromFunction2(value))
+      inline def setValueExists(value: (String, js.Function2[/* err */ Error, /* exists */ Boolean, Unit]) => Registry): Self = StObject.set(x, "valueExists", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValues(value: js.Function2[/* err */ Error, /* result */ js.Array[RegistryItem], Unit] => Registry): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
+      inline def setValues(value: js.Function2[/* err */ Error, /* result */ js.Array[RegistryItem], Unit] => Registry): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
     }
   }
   
@@ -334,36 +305,27 @@ object Winreg {
   }
   object RegistryItem {
     
-    @scala.inline
-    def apply(arch: String, hive: String, host: String, key: String, name: String, `type`: String, value: String): RegistryItem = {
+    inline def apply(arch: String, hive: String, host: String, key: String, name: String, `type`: String, value: String): RegistryItem = {
       val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], hive = hive.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegistryItem]
     }
     
-    @scala.inline
-    implicit class RegistryItemMutableBuilder[Self <: RegistryItem] (val x: Self) extends AnyVal {
+    extension [Self <: RegistryItem](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHive(value: String): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
+      inline def setHive(value: String): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

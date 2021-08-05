@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcWebBrowserState extends StObject
 object AcWebBrowserState {
   
-  @scala.inline
-  def acComplete: `4` = 4.asInstanceOf[`4`]
+  inline def acComplete: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def acInteractive: `3` = 3.asInstanceOf[`3`]
+  inline def acInteractive: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acLoaded: `2` = 2.asInstanceOf[`2`]
+  inline def acLoaded: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acLoading: `1` = 1.asInstanceOf[`1`]
+  inline def acLoading: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acUnintialized: `0` = 0.asInstanceOf[`0`]
+  inline def acUnintialized: `0` = 0.asInstanceOf[`0`]
 }

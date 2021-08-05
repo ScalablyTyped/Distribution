@@ -18,28 +18,21 @@ trait DescribePackagesFilter extends StObject {
 }
 object DescribePackagesFilter {
   
-  @scala.inline
-  def apply(): DescribePackagesFilter = {
+  inline def apply(): DescribePackagesFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePackagesFilter]
   }
   
-  @scala.inline
-  implicit class DescribePackagesFilterMutableBuilder[Self <: DescribePackagesFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePackagesFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: DescribePackagesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DescribePackagesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: DescribePackagesFilterValues): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DescribePackagesFilterValues): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: DescribePackagesFilterValue*): Self = StObject.set(x, "Value", js.Array(value :_*))
+    inline def setValueVarargs(value: DescribePackagesFilterValue*): Self = StObject.set(x, "Value", js.Array(value :_*))
   }
 }

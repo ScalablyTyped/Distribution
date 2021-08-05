@@ -38,8 +38,7 @@ trait FileDependencies extends StObject {
 }
 object FileDependencies {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fileDependencies: Set[String],
     isImportedByNonStylable: Boolean,
     optimize: ClassNameOptimizations,
@@ -56,46 +55,32 @@ object FileDependencies {
     __obj.asInstanceOf[FileDependencies]
   }
   
-  @scala.inline
-  implicit class FileDependenciesMutableBuilder[Self <: FileDependencies] (val x: Self) extends AnyVal {
+  extension [Self <: FileDependencies](x: Self) {
     
-    @scala.inline
-    def setFileDependencies(value: Set[String]): Self = StObject.set(x, "fileDependencies", value.asInstanceOf[js.Any])
+    inline def setFileDependencies(value: Set[String]): Self = StObject.set(x, "fileDependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImportedByNonStylable(value: Boolean): Self = StObject.set(x, "isImportedByNonStylable", value.asInstanceOf[js.Any])
+    inline def setIsImportedByNonStylable(value: Boolean): Self = StObject.set(x, "isImportedByNonStylable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimize(value: ClassNameOptimizations): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
+    inline def setOptimize(value: ClassNameOptimizations): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeInfo(value: CalcResult): Self = StObject.set(x, "runtimeInfo", value.asInstanceOf[js.Any])
+    inline def setRuntimeInfo(value: CalcResult): Self = StObject.set(x, "runtimeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylableAssetReplacement(value: js.Array[WebpackAssetModule]): Self = StObject.set(x, "stylableAssetReplacement", value.asInstanceOf[js.Any])
+    inline def setStylableAssetReplacement(value: js.Array[WebpackAssetModule]): Self = StObject.set(x, "stylableAssetReplacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylableAssetReplacementVarargs(value: WebpackAssetModule*): Self = StObject.set(x, "stylableAssetReplacement", js.Array(value :_*))
+    inline def setStylableAssetReplacementVarargs(value: WebpackAssetModule*): Self = StObject.set(x, "stylableAssetReplacement", js.Array(value :_*))
     
-    @scala.inline
-    def setStylableMeta(value: StylableMeta): Self = StObject.set(x, "stylableMeta", value.asInstanceOf[js.Any])
+    inline def setStylableMeta(value: StylableMeta): Self = StObject.set(x, "stylableMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylableTransformed(value: Boolean): Self = StObject.set(x, "stylableTransformed", value.asInstanceOf[js.Any])
+    inline def setStylableTransformed(value: Boolean): Self = StObject.set(x, "stylableTransformed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylableTransformedAst(value: Root_): Self = StObject.set(x, "stylableTransformedAst", value.asInstanceOf[js.Any])
+    inline def setStylableTransformedAst(value: Root_): Self = StObject.set(x, "stylableTransformedAst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylableTransformedExports(value: StylableExports): Self = StObject.set(x, "stylableTransformedExports", value.asInstanceOf[js.Any])
+    inline def setStylableTransformedExports(value: StylableExports): Self = StObject.set(x, "stylableTransformedExports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageMapping(value: Record[String, Boolean]): Self = StObject.set(x, "usageMapping", value.asInstanceOf[js.Any])
+    inline def setUsageMapping(value: Record[String, Boolean]): Self = StObject.set(x, "usageMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedStylableModules(value: js.Array[StylableModule]): Self = StObject.set(x, "usedStylableModules", value.asInstanceOf[js.Any])
+    inline def setUsedStylableModules(value: js.Array[StylableModule]): Self = StObject.set(x, "usedStylableModules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedStylableModulesVarargs(value: StylableModule*): Self = StObject.set(x, "usedStylableModules", js.Array(value :_*))
+    inline def setUsedStylableModulesVarargs(value: StylableModule*): Self = StObject.set(x, "usedStylableModules", js.Array(value :_*))
   }
 }

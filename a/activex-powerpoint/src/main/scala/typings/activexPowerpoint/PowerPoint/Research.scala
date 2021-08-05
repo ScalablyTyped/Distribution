@@ -13,7 +13,7 @@ trait Research extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.Research_typekey")
+  /* private */ @JSName("PowerPoint.Research_typekey")
   var PowerPointDotResearch_typekey: Research = js.native
   
   /**

@@ -12,16 +12,13 @@ trait DhKeyDeriveParams
 }
 object DhKeyDeriveParams {
   
-  @scala.inline
-  def apply(name: java.lang.String, public: CryptoKey): DhKeyDeriveParams = {
+  inline def apply(name: java.lang.String, public: CryptoKey): DhKeyDeriveParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any])
     __obj.asInstanceOf[DhKeyDeriveParams]
   }
   
-  @scala.inline
-  implicit class DhKeyDeriveParamsMutableBuilder[Self <: DhKeyDeriveParams] (val x: Self) extends AnyVal {
+  extension [Self <: DhKeyDeriveParams](x: Self) {
     
-    @scala.inline
-    def setPublic(value: CryptoKey): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: CryptoKey): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
   }
 }

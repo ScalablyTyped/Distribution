@@ -46,43 +46,31 @@ trait TokenOptions extends StObject {
 }
 object TokenOptions {
   
-  @scala.inline
-  def apply(): TokenOptions = {
+  inline def apply(): TokenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenOptions]
   }
   
-  @scala.inline
-  implicit class TokenOptionsMutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TokenOptions](x: Self) {
     
-    @scala.inline
-    def setFlag(value: TokenFlag): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: TokenFlag): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
-    @scala.inline
-    def setLeadChar(value: String): Self = StObject.set(x, "leadChar", value.asInstanceOf[js.Any])
+    inline def setLeadChar(value: String): Self = StObject.set(x, "leadChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadCharUndefined: Self = StObject.set(x, "leadChar", js.undefined)
+    inline def setLeadCharUndefined: Self = StObject.set(x, "leadChar", js.undefined)
     
-    @scala.inline
-    def setOptionalFlags(value: String): Self = StObject.set(x, "optionalFlags", value.asInstanceOf[js.Any])
+    inline def setOptionalFlags(value: String): Self = StObject.set(x, "optionalFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalFlagsUndefined: Self = StObject.set(x, "optionalFlags", js.undefined)
+    inline def setOptionalFlagsUndefined: Self = StObject.set(x, "optionalFlags", js.undefined)
     
-    @scala.inline
-    def setReparse(value: Boolean): Self = StObject.set(x, "reparse", value.asInstanceOf[js.Any])
+    inline def setReparse(value: Boolean): Self = StObject.set(x, "reparse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReparseUndefined: Self = StObject.set(x, "reparse", js.undefined)
+    inline def setReparseUndefined: Self = StObject.set(x, "reparse", js.undefined)
     
-    @scala.inline
-    def setScope(value: TokenScopeOption): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: TokenScopeOption): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait GetTreeItemChildren extends StObject {
 }
 object GetTreeItemChildren {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     done: js.Array[TreeItem] => Unit,
     lowerSiblingCounts: js.Array[Double],
     node: TreeItem,
@@ -30,28 +29,20 @@ object GetTreeItemChildren {
     __obj.asInstanceOf[GetTreeItemChildren]
   }
   
-  @scala.inline
-  implicit class GetTreeItemChildrenMutableBuilder[Self <: GetTreeItemChildren] (val x: Self) extends AnyVal {
+  extension [Self <: GetTreeItemChildren](x: Self) {
     
-    @scala.inline
-    def setDone(value: js.Array[TreeItem] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+    inline def setDone(value: js.Array[TreeItem] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
+    inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
+    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
+    inline def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
   }
 }

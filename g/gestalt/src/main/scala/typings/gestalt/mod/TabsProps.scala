@@ -21,8 +21,7 @@ trait TabsProps extends StObject {
 }
 object TabsProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeTabIndex: Double,
     onChange: ActiveTabIndex => Unit,
     tabs: js.Array[typings.gestalt.anon.Text]
@@ -31,31 +30,22 @@ object TabsProps {
     __obj.asInstanceOf[TabsProps]
   }
   
-  @scala.inline
-  implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabsProps](x: Self) {
     
-    @scala.inline
-    def setActiveTabIndex(value: Double): Self = StObject.set(x, "activeTabIndex", value.asInstanceOf[js.Any])
+    inline def setActiveTabIndex(value: Double): Self = StObject.set(x, "activeTabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: ActiveTabIndex => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: ActiveTabIndex => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTabs(value: js.Array[typings.gestalt.anon.Text]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: js.Array[typings.gestalt.anon.Text]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsVarargs(value: typings.gestalt.anon.Text*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: typings.gestalt.anon.Text*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     
-    @scala.inline
-    def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait DateTimeShape
      with TextShape
 object DateTimeShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

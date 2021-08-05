@@ -12,17 +12,14 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(PowerPointDotApplication: Application): ActiveXObjectNameMap = {
+  inline def apply(PowerPointDotApplication: Application): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("PowerPoint.Application")(PowerPointDotApplication.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setPowerPointDotApplication(value: Application): Self = StObject.set(x, "PowerPoint.Application", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotApplication(value: Application): Self = StObject.set(x, "PowerPoint.Application", value.asInstanceOf[js.Any])
   }
 }

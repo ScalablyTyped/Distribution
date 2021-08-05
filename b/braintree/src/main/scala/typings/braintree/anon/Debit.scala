@@ -34,8 +34,7 @@ trait Debit extends StObject {
 }
 object Debit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Commercial: String,
     CountryOfIssuance: String,
     Debit: String,
@@ -54,46 +53,32 @@ object Debit {
     __obj.asInstanceOf[Debit]
   }
   
-  @scala.inline
-  implicit class DebitMutableBuilder[Self <: Debit] (val x: Self) extends AnyVal {
+  extension [Self <: Debit](x: Self) {
     
-    @scala.inline
-    def setCommercial(value: String): Self = StObject.set(x, "Commercial", value.asInstanceOf[js.Any])
+    inline def setCommercial(value: String): Self = StObject.set(x, "Commercial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryOfIssuance(value: String): Self = StObject.set(x, "CountryOfIssuance", value.asInstanceOf[js.Any])
+    inline def setCountryOfIssuance(value: String): Self = StObject.set(x, "CountryOfIssuance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebit(value: String): Self = StObject.set(x, "Debit", value.asInstanceOf[js.Any])
+    inline def setDebit(value: String): Self = StObject.set(x, "Debit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurbinRegulated(value: String): Self = StObject.set(x, "DurbinRegulated", value.asInstanceOf[js.Any])
+    inline def setDurbinRegulated(value: String): Self = StObject.set(x, "DurbinRegulated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFraud(value: String): Self = StObject.set(x, "Fraud", value.asInstanceOf[js.Any])
+    inline def setFraud(value: String): Self = StObject.set(x, "Fraud", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthcare(value: String): Self = StObject.set(x, "Healthcare", value.asInstanceOf[js.Any])
+    inline def setHealthcare(value: String): Self = StObject.set(x, "Healthcare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiper(value: String): Self = StObject.set(x, "Hiper", value.asInstanceOf[js.Any])
+    inline def setHiper(value: String): Self = StObject.set(x, "Hiper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiperCard(value: String): Self = StObject.set(x, "HiperCard", value.asInstanceOf[js.Any])
+    inline def setHiperCard(value: String): Self = StObject.set(x, "HiperCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuingBank(value: String): Self = StObject.set(x, "IssuingBank", value.asInstanceOf[js.Any])
+    inline def setIssuingBank(value: String): Self = StObject.set(x, "IssuingBank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNo(value: String): Self = StObject.set(x, "No", value.asInstanceOf[js.Any])
+    inline def setNo(value: String): Self = StObject.set(x, "No", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayroll(value: String): Self = StObject.set(x, "Payroll", value.asInstanceOf[js.Any])
+    inline def setPayroll(value: String): Self = StObject.set(x, "Payroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepaid(value: String): Self = StObject.set(x, "Prepaid", value.asInstanceOf[js.Any])
+    inline def setPrepaid(value: String): Self = StObject.set(x, "Prepaid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: String): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: String): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
   }
 }

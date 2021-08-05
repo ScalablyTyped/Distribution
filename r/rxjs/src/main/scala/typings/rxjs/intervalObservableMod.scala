@@ -18,17 +18,13 @@ object intervalObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
-    @scala.inline
-    def create(period: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(period.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create(
+    inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+    inline def create(period: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(period.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create(
       period: Double,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(period.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create(
+    inline def create(
       period: Unit,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(period.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dice-coefficient"
-version := "1.0-dt-20200406Z-b6ec10"
+version := "1.0-dt-20200406Z-945824"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

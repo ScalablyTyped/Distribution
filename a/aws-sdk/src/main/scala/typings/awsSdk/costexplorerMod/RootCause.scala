@@ -28,37 +28,27 @@ trait RootCause extends StObject {
 }
 object RootCause {
   
-  @scala.inline
-  def apply(): RootCause = {
+  inline def apply(): RootCause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RootCause]
   }
   
-  @scala.inline
-  implicit class RootCauseMutableBuilder[Self <: RootCause] (val x: Self) extends AnyVal {
+  extension [Self <: RootCause](x: Self) {
     
-    @scala.inline
-    def setLinkedAccount(value: GenericString): Self = StObject.set(x, "LinkedAccount", value.asInstanceOf[js.Any])
+    inline def setLinkedAccount(value: GenericString): Self = StObject.set(x, "LinkedAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedAccountUndefined: Self = StObject.set(x, "LinkedAccount", js.undefined)
+    inline def setLinkedAccountUndefined: Self = StObject.set(x, "LinkedAccount", js.undefined)
     
-    @scala.inline
-    def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setService(value: GenericString): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+    inline def setService(value: GenericString): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
     
-    @scala.inline
-    def setUsageType(value: GenericString): Self = StObject.set(x, "UsageType", value.asInstanceOf[js.Any])
+    inline def setUsageType(value: GenericString): Self = StObject.set(x, "UsageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageTypeUndefined: Self = StObject.set(x, "UsageType", js.undefined)
+    inline def setUsageTypeUndefined: Self = StObject.set(x, "UsageType", js.undefined)
   }
 }

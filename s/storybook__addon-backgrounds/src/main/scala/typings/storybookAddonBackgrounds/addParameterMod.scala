@@ -16,7 +16,6 @@ object addParameterMod {
     @JSImport("@storybook/addon-backgrounds/dist/preset/addParameter", "parameters.backgrounds")
     @js.native
     def backgrounds: Grid = js.native
-    @scala.inline
-    def backgrounds_=(x: Grid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgrounds")(x.asInstanceOf[js.Any])
+    inline def backgrounds_=(x: Grid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgrounds")(x.asInstanceOf[js.Any])
   }
 }

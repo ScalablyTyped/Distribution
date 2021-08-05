@@ -13,19 +13,15 @@ trait RoomRetentionSettings extends StObject {
 }
 object RoomRetentionSettings {
   
-  @scala.inline
-  def apply(): RoomRetentionSettings = {
+  inline def apply(): RoomRetentionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoomRetentionSettings]
   }
   
-  @scala.inline
-  implicit class RoomRetentionSettingsMutableBuilder[Self <: RoomRetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RoomRetentionSettings](x: Self) {
     
-    @scala.inline
-    def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
+    inline def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
+    inline def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
   }
 }

@@ -24,31 +24,23 @@ trait IMemoryProxy
 }
 object IMemoryProxy {
   
-  @scala.inline
-  def apply(): IMemoryProxy = {
+  inline def apply(): IMemoryProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMemoryProxy]
   }
   
-  @scala.inline
-  implicit class IMemoryProxyMutableBuilder[Self <: IMemoryProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IMemoryProxy](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
+    inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
-    @scala.inline
-    def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
+    inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
   }
 }

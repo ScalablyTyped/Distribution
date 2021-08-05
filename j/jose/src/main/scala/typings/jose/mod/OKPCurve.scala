@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OKPCurve extends StObject
 object OKPCurve {
   
-  @scala.inline
-  def Ed25519: typings.jose.joseStrings.Ed25519 = "Ed25519".asInstanceOf[typings.jose.joseStrings.Ed25519]
+  inline def Ed25519: typings.jose.joseStrings.Ed25519 = "Ed25519".asInstanceOf[typings.jose.joseStrings.Ed25519]
   
-  @scala.inline
-  def Ed448: typings.jose.joseStrings.Ed448 = "Ed448".asInstanceOf[typings.jose.joseStrings.Ed448]
+  inline def Ed448: typings.jose.joseStrings.Ed448 = "Ed448".asInstanceOf[typings.jose.joseStrings.Ed448]
   
-  @scala.inline
-  def X25519: typings.jose.joseStrings.X25519 = "X25519".asInstanceOf[typings.jose.joseStrings.X25519]
+  inline def X25519: typings.jose.joseStrings.X25519 = "X25519".asInstanceOf[typings.jose.joseStrings.X25519]
   
-  @scala.inline
-  def X448: typings.jose.joseStrings.X448 = "X448".asInstanceOf[typings.jose.joseStrings.X448]
+  inline def X448: typings.jose.joseStrings.X448 = "X448".asInstanceOf[typings.jose.joseStrings.X448]
 }

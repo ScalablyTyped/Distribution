@@ -16,19 +16,16 @@ object progressThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/progress/progress.theme", "default.progressPlayed")
     @js.native
     def progressPlayed: BackgroundColor = js.native
-    @scala.inline
-    def progressPlayed_=(x: BackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressPlayed")(x.asInstanceOf[js.Any])
+    inline def progressPlayed_=(x: BackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressPlayed")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/progress/progress.theme", "default.progressSeekBtn")
     @js.native
     def progressSeekBtn: BackgroundColor = js.native
-    @scala.inline
-    def progressSeekBtn_=(x: BackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressSeekBtn")(x.asInstanceOf[js.Any])
+    inline def progressSeekBtn_=(x: BackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressSeekBtn")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/progress/progress.theme", "default.progressSeekTo")
     @js.native
     def progressSeekTo: BackgroundColor = js.native
-    @scala.inline
-    def progressSeekTo_=(x: BackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressSeekTo")(x.asInstanceOf[js.Any])
+    inline def progressSeekTo_=(x: BackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressSeekTo")(x.asInstanceOf[js.Any])
   }
 }

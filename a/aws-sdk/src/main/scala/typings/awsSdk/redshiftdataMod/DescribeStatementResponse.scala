@@ -83,100 +83,69 @@ trait DescribeStatementResponse extends StObject {
 }
 object DescribeStatementResponse {
   
-  @scala.inline
-  def apply(Id: UUID): DescribeStatementResponse = {
+  inline def apply(Id: UUID): DescribeStatementResponse = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStatementResponse]
   }
   
-  @scala.inline
-  implicit class DescribeStatementResponseMutableBuilder[Self <: DescribeStatementResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStatementResponse](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
     
-    @scala.inline
-    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
+    inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Long): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Long): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: StatementString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: StatementString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringUndefined: Self = StObject.set(x, "QueryString", js.undefined)
+    inline def setQueryStringUndefined: Self = StObject.set(x, "QueryString", js.undefined)
     
-    @scala.inline
-    def setRedshiftPid(value: Long): Self = StObject.set(x, "RedshiftPid", value.asInstanceOf[js.Any])
+    inline def setRedshiftPid(value: Long): Self = StObject.set(x, "RedshiftPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftPidUndefined: Self = StObject.set(x, "RedshiftPid", js.undefined)
+    inline def setRedshiftPidUndefined: Self = StObject.set(x, "RedshiftPid", js.undefined)
     
-    @scala.inline
-    def setRedshiftQueryId(value: Long): Self = StObject.set(x, "RedshiftQueryId", value.asInstanceOf[js.Any])
+    inline def setRedshiftQueryId(value: Long): Self = StObject.set(x, "RedshiftQueryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftQueryIdUndefined: Self = StObject.set(x, "RedshiftQueryId", js.undefined)
+    inline def setRedshiftQueryIdUndefined: Self = StObject.set(x, "RedshiftQueryId", js.undefined)
     
-    @scala.inline
-    def setResultRows(value: Long): Self = StObject.set(x, "ResultRows", value.asInstanceOf[js.Any])
+    inline def setResultRows(value: Long): Self = StObject.set(x, "ResultRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultRowsUndefined: Self = StObject.set(x, "ResultRows", js.undefined)
+    inline def setResultRowsUndefined: Self = StObject.set(x, "ResultRows", js.undefined)
     
-    @scala.inline
-    def setResultSize(value: Long): Self = StObject.set(x, "ResultSize", value.asInstanceOf[js.Any])
+    inline def setResultSize(value: Long): Self = StObject.set(x, "ResultSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSizeUndefined: Self = StObject.set(x, "ResultSize", js.undefined)
+    inline def setResultSizeUndefined: Self = StObject.set(x, "ResultSize", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

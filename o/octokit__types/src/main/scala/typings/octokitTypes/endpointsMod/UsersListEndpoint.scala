@@ -13,19 +13,15 @@ trait UsersListEndpoint extends StObject {
 }
 object UsersListEndpoint {
   
-  @scala.inline
-  def apply(): UsersListEndpoint = {
+  inline def apply(): UsersListEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsersListEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersListEndpointMutableBuilder[Self <: UsersListEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersListEndpoint](x: Self) {
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

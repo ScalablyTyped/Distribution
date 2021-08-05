@@ -13,20 +13,16 @@ trait NetworkChangeResult extends StObject {
 }
 object NetworkChangeResult {
   
-  @scala.inline
-  def apply(isConnected: Boolean, `type`: Double): NetworkChangeResult = {
+  inline def apply(isConnected: Boolean, `type`: Double): NetworkChangeResult = {
     val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkChangeResult]
   }
   
-  @scala.inline
-  implicit class NetworkChangeResultMutableBuilder[Self <: NetworkChangeResult] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkChangeResult](x: Self) {
     
-    @scala.inline
-    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

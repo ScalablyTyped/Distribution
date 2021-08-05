@@ -104,15 +104,15 @@ object mod {
   class Image () extends Duplex {
     def this(option: IImageOptions) = this()
     
-    var _gamma: js.Any = js.native
+    /* private */ var _gamma: js.Any = js.native
     
-    var _handleClose: js.Any = js.native
+    /* private */ var _handleClose: js.Any = js.native
     
-    var _metadata: js.Any = js.native
+    /* private */ var _metadata: js.Any = js.native
     
-    var _packer: js.Any = js.native
+    /* private */ var _packer: js.Any = js.native
     
-    var _parser: js.Any = js.native
+    /* private */ var _parser: js.Any = js.native
     
     def _read(): Unit = js.native
     
@@ -134,10 +134,8 @@ object mod {
     var width: Double = js.native
   }
   
-  @scala.inline
-  def createImage(): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createImage")().asInstanceOf[Image]
-  @scala.inline
-  def createImage(option: IImageOptions): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createImage")(option.asInstanceOf[js.Any]).asInstanceOf[Image]
+  inline def createImage(): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createImage")().asInstanceOf[Image]
+  inline def createImage(option: IImageOptions): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createImage")(option.asInstanceOf[js.Any]).asInstanceOf[Image]
   
   trait IImageOptions extends StObject {
     
@@ -159,62 +157,44 @@ object mod {
   }
   object IImageOptions {
     
-    @scala.inline
-    def apply(): IImageOptions = {
+    inline def apply(): IImageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IImageOptions]
     }
     
-    @scala.inline
-    implicit class IImageOptionsMutableBuilder[Self <: IImageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IImageOptions](x: Self) {
       
-      @scala.inline
-      def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
+      inline def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckCRCUndefined: Self = StObject.set(x, "checkCRC", js.undefined)
+      inline def setCheckCRCUndefined: Self = StObject.set(x, "checkCRC", js.undefined)
       
-      @scala.inline
-      def setDeflateChunkSize(value: Double): Self = StObject.set(x, "deflateChunkSize", value.asInstanceOf[js.Any])
+      inline def setDeflateChunkSize(value: Double): Self = StObject.set(x, "deflateChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateChunkSizeUndefined: Self = StObject.set(x, "deflateChunkSize", js.undefined)
+      inline def setDeflateChunkSizeUndefined: Self = StObject.set(x, "deflateChunkSize", js.undefined)
       
-      @scala.inline
-      def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
+      inline def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
+      inline def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
       
-      @scala.inline
-      def setDeflateStrategy(value: EDeflateStrategy): Self = StObject.set(x, "deflateStrategy", value.asInstanceOf[js.Any])
+      inline def setDeflateStrategy(value: EDeflateStrategy): Self = StObject.set(x, "deflateStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateStrategyUndefined: Self = StObject.set(x, "deflateStrategy", js.undefined)
+      inline def setDeflateStrategyUndefined: Self = StObject.set(x, "deflateStrategy", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFilterType(value: EFilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+      inline def setFilterType(value: EFilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+      inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

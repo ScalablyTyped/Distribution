@@ -10,19 +10,15 @@ trait GanttColumnFilterable extends StObject {
 }
 object GanttColumnFilterable {
   
-  @scala.inline
-  def apply(): GanttColumnFilterable = {
+  inline def apply(): GanttColumnFilterable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GanttColumnFilterable]
   }
   
-  @scala.inline
-  implicit class GanttColumnFilterableMutableBuilder[Self <: GanttColumnFilterable] (val x: Self) extends AnyVal {
+  extension [Self <: GanttColumnFilterable](x: Self) {
     
-    @scala.inline
-    def setUi(value: String | js.Function): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: String | js.Function): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

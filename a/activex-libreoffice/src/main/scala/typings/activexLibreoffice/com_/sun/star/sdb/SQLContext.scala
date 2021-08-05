@@ -25,8 +25,7 @@ trait SQLContext
 }
 object SQLContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XInterface,
     Details: String,
     ErrorCode: Double,
@@ -38,10 +37,8 @@ object SQLContext {
     __obj.asInstanceOf[SQLContext]
   }
   
-  @scala.inline
-  implicit class SQLContextMutableBuilder[Self <: SQLContext] (val x: Self) extends AnyVal {
+  extension [Self <: SQLContext](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
   }
 }

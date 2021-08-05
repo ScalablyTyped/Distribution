@@ -13,19 +13,15 @@ trait GetSearchResultsResponse extends StObject {
 }
 object GetSearchResultsResponse {
   
-  @scala.inline
-  def apply(nodeIds: js.Array[NodeId]): GetSearchResultsResponse = {
+  inline def apply(nodeIds: js.Array[NodeId]): GetSearchResultsResponse = {
     val __obj = js.Dynamic.literal(nodeIds = nodeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSearchResultsResponse]
   }
   
-  @scala.inline
-  implicit class GetSearchResultsResponseMutableBuilder[Self <: GetSearchResultsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSearchResultsResponse](x: Self) {
     
-    @scala.inline
-    def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
   }
 }

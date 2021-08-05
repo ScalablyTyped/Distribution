@@ -18,19 +18,15 @@ trait SchemaScanRunWarningTrace extends StObject {
 }
 object SchemaScanRunWarningTrace {
   
-  @scala.inline
-  def apply(): SchemaScanRunWarningTrace = {
+  inline def apply(): SchemaScanRunWarningTrace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScanRunWarningTrace]
   }
   
-  @scala.inline
-  implicit class SchemaScanRunWarningTraceMutableBuilder[Self <: SchemaScanRunWarningTrace] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaScanRunWarningTrace](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

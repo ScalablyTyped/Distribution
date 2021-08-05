@@ -14,31 +14,23 @@ trait CancelButtonLabel extends StObject {
 }
 object CancelButtonLabel {
   
-  @scala.inline
-  def apply(): CancelButtonLabel = {
+  inline def apply(): CancelButtonLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelButtonLabel]
   }
   
-  @scala.inline
-  implicit class CancelButtonLabelMutableBuilder[Self <: CancelButtonLabel] (val x: Self) extends AnyVal {
+  extension [Self <: CancelButtonLabel](x: Self) {
     
-    @scala.inline
-    def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
+    inline def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
+    inline def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
     
-    @scala.inline
-    def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
+    inline def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
+    inline def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
     
-    @scala.inline
-    def setLink(value: TextInputPlaceholder): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: TextInputPlaceholder): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
   }
 }

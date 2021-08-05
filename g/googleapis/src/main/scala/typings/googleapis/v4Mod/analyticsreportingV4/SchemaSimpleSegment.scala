@@ -18,22 +18,17 @@ trait SchemaSimpleSegment extends StObject {
 }
 object SchemaSimpleSegment {
   
-  @scala.inline
-  def apply(): SchemaSimpleSegment = {
+  inline def apply(): SchemaSimpleSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSimpleSegment]
   }
   
-  @scala.inline
-  implicit class SchemaSimpleSegmentMutableBuilder[Self <: SchemaSimpleSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSimpleSegment](x: Self) {
     
-    @scala.inline
-    def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
+    inline def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
+    inline def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
     
-    @scala.inline
-    def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
+    inline def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
   }
 }

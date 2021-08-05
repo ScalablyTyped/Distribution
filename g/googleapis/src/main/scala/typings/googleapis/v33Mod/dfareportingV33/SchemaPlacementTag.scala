@@ -21,28 +21,21 @@ trait SchemaPlacementTag extends StObject {
 }
 object SchemaPlacementTag {
   
-  @scala.inline
-  def apply(): SchemaPlacementTag = {
+  inline def apply(): SchemaPlacementTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlacementTag]
   }
   
-  @scala.inline
-  implicit class SchemaPlacementTagMutableBuilder[Self <: SchemaPlacementTag] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlacementTag](x: Self) {
     
-    @scala.inline
-    def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
+    inline def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
+    inline def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
     
-    @scala.inline
-    def setTagDatas(value: js.Array[SchemaTagData]): Self = StObject.set(x, "tagDatas", value.asInstanceOf[js.Any])
+    inline def setTagDatas(value: js.Array[SchemaTagData]): Self = StObject.set(x, "tagDatas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
+    inline def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
     
-    @scala.inline
-    def setTagDatasVarargs(value: SchemaTagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
+    inline def setTagDatasVarargs(value: SchemaTagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
   }
 }

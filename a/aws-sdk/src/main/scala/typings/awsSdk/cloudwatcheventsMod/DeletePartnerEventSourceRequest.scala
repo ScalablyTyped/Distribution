@@ -18,19 +18,15 @@ trait DeletePartnerEventSourceRequest extends StObject {
 }
 object DeletePartnerEventSourceRequest {
   
-  @scala.inline
-  def apply(Account: AccountId, Name: EventSourceName): DeletePartnerEventSourceRequest = {
+  inline def apply(Account: AccountId, Name: EventSourceName): DeletePartnerEventSourceRequest = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePartnerEventSourceRequest]
   }
   
-  @scala.inline
-  implicit class DeletePartnerEventSourceRequestMutableBuilder[Self <: DeletePartnerEventSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePartnerEventSourceRequest](x: Self) {
     
-    @scala.inline
-    def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

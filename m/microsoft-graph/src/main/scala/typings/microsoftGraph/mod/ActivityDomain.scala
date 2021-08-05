@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActivityDomain extends StObject
 object ActivityDomain {
   
-  @scala.inline
-  def personal: typings.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.personal]
+  inline def personal: typings.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.personal]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unrestricted: typings.microsoftGraph.microsoftGraphStrings.unrestricted = "unrestricted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unrestricted]
+  inline def unrestricted: typings.microsoftGraph.microsoftGraphStrings.unrestricted = "unrestricted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unrestricted]
   
-  @scala.inline
-  def work: typings.microsoftGraph.microsoftGraphStrings.work = "work".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.work]
+  inline def work: typings.microsoftGraph.microsoftGraphStrings.work = "work".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.work]
 }

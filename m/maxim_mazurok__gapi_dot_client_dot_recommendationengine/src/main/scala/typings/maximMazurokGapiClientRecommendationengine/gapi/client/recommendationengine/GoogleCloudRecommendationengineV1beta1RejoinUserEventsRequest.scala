@@ -11,19 +11,15 @@ trait GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest extends StOb
 }
 object GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequestMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1RejoinUserEventsRequest](x: Self) {
     
-    @scala.inline
-    def setUserEventRejoinScope(value: String): Self = StObject.set(x, "userEventRejoinScope", value.asInstanceOf[js.Any])
+    inline def setUserEventRejoinScope(value: String): Self = StObject.set(x, "userEventRejoinScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEventRejoinScopeUndefined: Self = StObject.set(x, "userEventRejoinScope", js.undefined)
+    inline def setUserEventRejoinScopeUndefined: Self = StObject.set(x, "userEventRejoinScope", js.undefined)
   }
 }

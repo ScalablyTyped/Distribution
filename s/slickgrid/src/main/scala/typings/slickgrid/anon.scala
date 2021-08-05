@@ -14,20 +14,16 @@ object anon {
   }
   object CancelCurrentEdit {
     
-    @scala.inline
-    def apply(cancelCurrentEdit: () => Boolean, commitCurrentEdit: () => Boolean): CancelCurrentEdit = {
+    inline def apply(cancelCurrentEdit: () => Boolean, commitCurrentEdit: () => Boolean): CancelCurrentEdit = {
       val __obj = js.Dynamic.literal(cancelCurrentEdit = js.Any.fromFunction0(cancelCurrentEdit), commitCurrentEdit = js.Any.fromFunction0(commitCurrentEdit))
       __obj.asInstanceOf[CancelCurrentEdit]
     }
     
-    @scala.inline
-    implicit class CancelCurrentEditMutableBuilder[Self <: CancelCurrentEdit] (val x: Self) extends AnyVal {
+    extension [Self <: CancelCurrentEdit](x: Self) {
       
-      @scala.inline
-      def setCancelCurrentEdit(value: () => Boolean): Self = StObject.set(x, "cancelCurrentEdit", js.Any.fromFunction0(value))
+      inline def setCancelCurrentEdit(value: () => Boolean): Self = StObject.set(x, "cancelCurrentEdit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCommitCurrentEdit(value: () => Boolean): Self = StObject.set(x, "commitCurrentEdit", js.Any.fromFunction0(value))
+      inline def setCommitCurrentEdit(value: () => Boolean): Self = StObject.set(x, "commitCurrentEdit", js.Any.fromFunction0(value))
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object ColumnId {
     
-    @scala.inline
-    def apply(columnId: String, sortAsc: Boolean): ColumnId = {
+    inline def apply(columnId: String, sortAsc: Boolean): ColumnId = {
       val __obj = js.Dynamic.literal(columnId = columnId.asInstanceOf[js.Any], sortAsc = sortAsc.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnId]
     }
     
-    @scala.inline
-    implicit class ColumnIdMutableBuilder[Self <: ColumnId] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnId](x: Self) {
       
-      @scala.inline
-      def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+      inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAsc(value: Boolean): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
+      inline def setSortAsc(value: Boolean): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,17 +54,14 @@ object anon {
   }
   object SelectActiveRow {
     
-    @scala.inline
-    def apply(selectActiveRow: Boolean): SelectActiveRow = {
+    inline def apply(selectActiveRow: Boolean): SelectActiveRow = {
       val __obj = js.Dynamic.literal(selectActiveRow = selectActiveRow.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectActiveRow]
     }
     
-    @scala.inline
-    implicit class SelectActiveRowMutableBuilder[Self <: SelectActiveRow] (val x: Self) extends AnyVal {
+    extension [Self <: SelectActiveRow](x: Self) {
       
-      @scala.inline
-      def setSelectActiveRow(value: Boolean): Self = StObject.set(x, "selectActiveRow", value.asInstanceOf[js.Any])
+      inline def setSelectActiveRow(value: Boolean): Self = StObject.set(x, "selectActiveRow", value.asInstanceOf[js.Any])
     }
   }
 }

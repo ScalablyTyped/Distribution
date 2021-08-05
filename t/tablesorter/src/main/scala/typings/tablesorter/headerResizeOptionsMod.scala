@@ -15,17 +15,14 @@ object headerResizeOptionsMod {
   }
   object HeaderResizeOptions {
     
-    @scala.inline
-    def apply(timer: Double): HeaderResizeOptions = {
+    inline def apply(timer: Double): HeaderResizeOptions = {
       val __obj = js.Dynamic.literal(timer = timer.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeaderResizeOptions]
     }
     
-    @scala.inline
-    implicit class HeaderResizeOptionsMutableBuilder[Self <: HeaderResizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderResizeOptions](x: Self) {
       
-      @scala.inline
-      def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+      inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     }
   }
 }

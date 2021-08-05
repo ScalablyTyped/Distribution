@@ -12,25 +12,19 @@ trait UseTrash extends StObject {
 }
 object UseTrash {
   
-  @scala.inline
-  def apply(): UseTrash = {
+  inline def apply(): UseTrash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseTrash]
   }
   
-  @scala.inline
-  implicit class UseTrashMutableBuilder[Self <: UseTrash] (val x: Self) extends AnyVal {
+  extension [Self <: UseTrash](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
-    @scala.inline
-    def setUseTrash(value: Boolean): Self = StObject.set(x, "useTrash", value.asInstanceOf[js.Any])
+    inline def setUseTrash(value: Boolean): Self = StObject.set(x, "useTrash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTrashUndefined: Self = StObject.set(x, "useTrash", js.undefined)
+    inline def setUseTrashUndefined: Self = StObject.set(x, "useTrash", js.undefined)
   }
 }

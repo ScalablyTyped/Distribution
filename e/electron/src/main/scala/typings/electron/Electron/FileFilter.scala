@@ -13,22 +13,17 @@ trait FileFilter extends StObject {
 }
 object FileFilter {
   
-  @scala.inline
-  def apply(extensions: js.Array[String], name: String): FileFilter = {
+  inline def apply(extensions: js.Array[String], name: String): FileFilter = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileFilter]
   }
   
-  @scala.inline
-  implicit class FileFilterMutableBuilder[Self <: FileFilter] (val x: Self) extends AnyVal {
+  extension [Self <: FileFilter](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

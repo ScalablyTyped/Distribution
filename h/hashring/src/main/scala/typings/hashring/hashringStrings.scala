@@ -8,11 +8,9 @@ object hashringStrings {
   
   @js.native
   sealed trait hash_ring extends StObject
-  @scala.inline
-  def hash_ring: hash_ring = "hash_ring".asInstanceOf[hash_ring]
+  inline def hash_ring: hash_ring = "hash_ring".asInstanceOf[hash_ring]
   
   @js.native
   sealed trait ketama extends StObject
-  @scala.inline
-  def ketama: ketama = "ketama".asInstanceOf[ketama]
+  inline def ketama: ketama = "ketama".asInstanceOf[ketama]
 }

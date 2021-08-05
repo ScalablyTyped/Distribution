@@ -43,55 +43,39 @@ trait DescribeAgentResponse extends StObject {
 }
 object DescribeAgentResponse {
   
-  @scala.inline
-  def apply(): DescribeAgentResponse = {
+  inline def apply(): DescribeAgentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAgentResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAgentResponseMutableBuilder[Self <: DescribeAgentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAgentResponse](x: Self) {
     
-    @scala.inline
-    def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
+    inline def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentArnUndefined: Self = StObject.set(x, "AgentArn", js.undefined)
+    inline def setAgentArnUndefined: Self = StObject.set(x, "AgentArn", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
+    inline def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
-    @scala.inline
-    def setLastConnectionTime(value: Time): Self = StObject.set(x, "LastConnectionTime", value.asInstanceOf[js.Any])
+    inline def setLastConnectionTime(value: Time): Self = StObject.set(x, "LastConnectionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastConnectionTimeUndefined: Self = StObject.set(x, "LastConnectionTime", js.undefined)
+    inline def setLastConnectionTimeUndefined: Self = StObject.set(x, "LastConnectionTime", js.undefined)
     
-    @scala.inline
-    def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPrivateLinkConfig(value: PrivateLinkConfig): Self = StObject.set(x, "PrivateLinkConfig", value.asInstanceOf[js.Any])
+    inline def setPrivateLinkConfig(value: PrivateLinkConfig): Self = StObject.set(x, "PrivateLinkConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateLinkConfigUndefined: Self = StObject.set(x, "PrivateLinkConfig", js.undefined)
+    inline def setPrivateLinkConfigUndefined: Self = StObject.set(x, "PrivateLinkConfig", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AgentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AgentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

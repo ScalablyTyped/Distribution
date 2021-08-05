@@ -14,8 +14,7 @@ object useMenuClickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useMenuClick(hasOnClickOnRequestClose: MenuClickOptions): MouseEventHandler[HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuClick")(hasOnClickOnRequestClose.asInstanceOf[js.Any]).asInstanceOf[MouseEventHandler[HTMLDivElement]]
+  inline def useMenuClick(hasOnClickOnRequestClose: MenuClickOptions): MouseEventHandler[HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuClick")(hasOnClickOnRequestClose.asInstanceOf[js.Any]).asInstanceOf[MouseEventHandler[HTMLDivElement]]
   
   trait MenuClickOptions extends StObject {
     
@@ -25,23 +24,18 @@ object useMenuClickMod {
   }
   object MenuClickOptions {
     
-    @scala.inline
-    def apply(onRequestClose: () => Unit): MenuClickOptions = {
+    inline def apply(onRequestClose: () => Unit): MenuClickOptions = {
       val __obj = js.Dynamic.literal(onRequestClose = js.Any.fromFunction0(onRequestClose))
       __obj.asInstanceOf[MenuClickOptions]
     }
     
-    @scala.inline
-    implicit class MenuClickOptionsMutableBuilder[Self <: MenuClickOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MenuClickOptions](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+      inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
     }
   }
 }

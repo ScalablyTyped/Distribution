@@ -35,20 +35,17 @@ object Globalization {
     @JSGlobal("Windows.Globalization.ApplicationLanguages.languages")
     @js.native
     def languages: IVectorView[String] = js.native
-    @scala.inline
-    def languages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
+    inline def languages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.ApplicationLanguages.manifestLanguages")
     @js.native
     def manifestLanguages: IVectorView[String] = js.native
-    @scala.inline
-    def manifestLanguages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manifestLanguages")(x.asInstanceOf[js.Any])
+    inline def manifestLanguages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manifestLanguages")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.ApplicationLanguages.primaryLanguageOverride")
     @js.native
     def primaryLanguageOverride: String = js.native
-    @scala.inline
-    def primaryLanguageOverride_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryLanguageOverride")(x.asInstanceOf[js.Any])
+    inline def primaryLanguageOverride_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryLanguageOverride")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Globalization.Calendar")
@@ -75,56 +72,47 @@ object Globalization {
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.gregorian")
     @js.native
     def gregorian: String = js.native
-    @scala.inline
-    def gregorian_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gregorian")(x.asInstanceOf[js.Any])
+    inline def gregorian_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gregorian")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.hebrew")
     @js.native
     def hebrew: String = js.native
-    @scala.inline
-    def hebrew_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hebrew")(x.asInstanceOf[js.Any])
+    inline def hebrew_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hebrew")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.hijri")
     @js.native
     def hijri: String = js.native
-    @scala.inline
-    def hijri_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hijri")(x.asInstanceOf[js.Any])
+    inline def hijri_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hijri")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.japanese")
     @js.native
     def japanese: String = js.native
-    @scala.inline
-    def japanese_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("japanese")(x.asInstanceOf[js.Any])
+    inline def japanese_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("japanese")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.julian")
     @js.native
     def julian: String = js.native
-    @scala.inline
-    def julian_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("julian")(x.asInstanceOf[js.Any])
+    inline def julian_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("julian")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.korean")
     @js.native
     def korean: String = js.native
-    @scala.inline
-    def korean_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("korean")(x.asInstanceOf[js.Any])
+    inline def korean_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("korean")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.taiwan")
     @js.native
     def taiwan: String = js.native
-    @scala.inline
-    def taiwan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("taiwan")(x.asInstanceOf[js.Any])
+    inline def taiwan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("taiwan")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.thai")
     @js.native
     def thai: String = js.native
-    @scala.inline
-    def thai_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thai")(x.asInstanceOf[js.Any])
+    inline def thai_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thai")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.CalendarIdentifiers.umAlQura")
     @js.native
     def umAlQura: String = js.native
-    @scala.inline
-    def umAlQura_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("umAlQura")(x.asInstanceOf[js.Any])
+    inline def umAlQura_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("umAlQura")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Globalization.ClockIdentifiers")
@@ -142,14 +130,12 @@ object Globalization {
     @JSGlobal("Windows.Globalization.ClockIdentifiers.twelveHour")
     @js.native
     def twelveHour: String = js.native
-    @scala.inline
-    def twelveHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twelveHour")(x.asInstanceOf[js.Any])
+    inline def twelveHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twelveHour")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Globalization.ClockIdentifiers.twentyFourHour")
     @js.native
     def twentyFourHour: String = js.native
-    @scala.inline
-    def twentyFourHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twentyFourHour")(x.asInstanceOf[js.Any])
+    inline def twentyFourHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twentyFourHour")(x.asInstanceOf[js.Any])
   }
   
   object Collation {
@@ -286,26 +272,22 @@ object Globalization {
       @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.longDate")
       @js.native
       def longDate: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-      @scala.inline
-      def longDate_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longDate")(x.asInstanceOf[js.Any])
+      inline def longDate_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longDate")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.longTime")
       @js.native
       def longTime: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-      @scala.inline
-      def longTime_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longTime")(x.asInstanceOf[js.Any])
+      inline def longTime_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longTime")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.shortDate")
       @js.native
       def shortDate: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-      @scala.inline
-      def shortDate_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortDate")(x.asInstanceOf[js.Any])
+      inline def shortDate_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortDate")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.shortTime")
       @js.native
       def shortTime: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-      @scala.inline
-      def shortTime_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortTime")(x.asInstanceOf[js.Any])
+      inline def shortTime_=(x: typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortTime")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DayFormat")
@@ -530,8 +512,7 @@ object Globalization {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isSupported(geographicRegionCode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(geographicRegionCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSupported(geographicRegionCode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(geographicRegionCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("Windows.Globalization.Language")
@@ -563,11 +544,9 @@ object Globalization {
     @JSGlobal("Windows.Globalization.Language.currentInputMethodLanguageTag")
     @js.native
     def currentInputMethodLanguageTag: String = js.native
-    @scala.inline
-    def currentInputMethodLanguageTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentInputMethodLanguageTag")(x.asInstanceOf[js.Any])
+    inline def currentInputMethodLanguageTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentInputMethodLanguageTag")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isWellFormed(languageTag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWellFormed")(languageTag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isWellFormed(languageTag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWellFormed")(languageTag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object NumberFormatting {

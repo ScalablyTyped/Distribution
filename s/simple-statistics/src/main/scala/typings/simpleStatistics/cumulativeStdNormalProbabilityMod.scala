@@ -10,6 +10,5 @@ object cumulativeStdNormalProbabilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(z: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(z.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(z: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(z.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

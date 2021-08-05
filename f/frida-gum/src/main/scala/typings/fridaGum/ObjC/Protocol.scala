@@ -36,8 +36,7 @@ trait Protocol
 }
 object Protocol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handle: NativePointer,
     methods: StringDictionary[ProtocolMethodDescription],
     name: String,
@@ -48,19 +47,14 @@ object Protocol {
     __obj.asInstanceOf[Protocol]
   }
   
-  @scala.inline
-  implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
+  extension [Self <: Protocol](x: Self) {
     
-    @scala.inline
-    def setMethods(value: StringDictionary[ProtocolMethodDescription]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: StringDictionary[ProtocolMethodDescription]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: StringDictionary[ProtocolPropertyAttributes]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[ProtocolPropertyAttributes]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocols(value: StringDictionary[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: StringDictionary[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
   }
 }

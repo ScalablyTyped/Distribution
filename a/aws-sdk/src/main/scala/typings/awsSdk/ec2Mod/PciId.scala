@@ -28,37 +28,27 @@ trait PciId extends StObject {
 }
 object PciId {
   
-  @scala.inline
-  def apply(): PciId = {
+  inline def apply(): PciId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PciId]
   }
   
-  @scala.inline
-  implicit class PciIdMutableBuilder[Self <: PciId] (val x: Self) extends AnyVal {
+  extension [Self <: PciId](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    @scala.inline
-    def setSubsystemId(value: String): Self = StObject.set(x, "SubsystemId", value.asInstanceOf[js.Any])
+    inline def setSubsystemId(value: String): Self = StObject.set(x, "SubsystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsystemIdUndefined: Self = StObject.set(x, "SubsystemId", js.undefined)
+    inline def setSubsystemIdUndefined: Self = StObject.set(x, "SubsystemId", js.undefined)
     
-    @scala.inline
-    def setSubsystemVendorId(value: String): Self = StObject.set(x, "SubsystemVendorId", value.asInstanceOf[js.Any])
+    inline def setSubsystemVendorId(value: String): Self = StObject.set(x, "SubsystemVendorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsystemVendorIdUndefined: Self = StObject.set(x, "SubsystemVendorId", js.undefined)
+    inline def setSubsystemVendorIdUndefined: Self = StObject.set(x, "SubsystemVendorId", js.undefined)
     
-    @scala.inline
-    def setVendorId(value: String): Self = StObject.set(x, "VendorId", value.asInstanceOf[js.Any])
+    inline def setVendorId(value: String): Self = StObject.set(x, "VendorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorIdUndefined: Self = StObject.set(x, "VendorId", js.undefined)
+    inline def setVendorIdUndefined: Self = StObject.set(x, "VendorId", js.undefined)
   }
 }

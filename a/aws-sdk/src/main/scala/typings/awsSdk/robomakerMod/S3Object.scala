@@ -23,25 +23,19 @@ trait S3Object extends StObject {
 }
 object S3Object {
   
-  @scala.inline
-  def apply(bucket: S3Bucket, key: S3Key): S3Object = {
+  inline def apply(bucket: S3Bucket, key: S3Key): S3Object = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Object]
   }
   
-  @scala.inline
-  implicit class S3ObjectMutableBuilder[Self <: S3Object] (val x: Self) extends AnyVal {
+  extension [Self <: S3Object](x: Self) {
     
-    @scala.inline
-    def setBucket(value: S3Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: S3Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: S3Etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: S3Etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKey(value: S3Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: S3Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

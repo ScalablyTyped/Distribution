@@ -58,8 +58,7 @@ object eventUpdateEventMod {
   }
   object UpdateEvent {
     
-    @scala.inline
-    def apply[Entity](
+    inline def apply[Entity](
       connection: Connection,
       databaseEntity: Entity,
       entity: Entity,
@@ -73,38 +72,27 @@ object eventUpdateEventMod {
       __obj.asInstanceOf[UpdateEvent[Entity]]
     }
     
-    @scala.inline
-    implicit class UpdateEventMutableBuilder[Self <: UpdateEvent[?], Entity] (val x: Self & UpdateEvent[Entity]) extends AnyVal {
+    extension [Self <: UpdateEvent[?], Entity](x: Self & UpdateEvent[Entity]) {
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseEntity(value: Entity): Self = StObject.set(x, "databaseEntity", value.asInstanceOf[js.Any])
+      inline def setDatabaseEntity(value: Entity): Self = StObject.set(x, "databaseEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
+      inline def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedColumns(value: js.Array[ColumnMetadata]): Self = StObject.set(x, "updatedColumns", value.asInstanceOf[js.Any])
+      inline def setUpdatedColumns(value: js.Array[ColumnMetadata]): Self = StObject.set(x, "updatedColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedColumnsVarargs(value: ColumnMetadata*): Self = StObject.set(x, "updatedColumns", js.Array(value :_*))
+      inline def setUpdatedColumnsVarargs(value: ColumnMetadata*): Self = StObject.set(x, "updatedColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setUpdatedRelations(value: js.Array[RelationMetadata]): Self = StObject.set(x, "updatedRelations", value.asInstanceOf[js.Any])
+      inline def setUpdatedRelations(value: js.Array[RelationMetadata]): Self = StObject.set(x, "updatedRelations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedRelationsVarargs(value: RelationMetadata*): Self = StObject.set(x, "updatedRelations", js.Array(value :_*))
+      inline def setUpdatedRelationsVarargs(value: RelationMetadata*): Self = StObject.set(x, "updatedRelations", js.Array(value :_*))
     }
   }
 }

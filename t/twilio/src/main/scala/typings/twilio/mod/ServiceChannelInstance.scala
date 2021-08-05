@@ -14,8 +14,7 @@ trait ServiceChannelInstance
 }
 object ServiceChannelInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     get: RestMethod,
     members: ServiceChannelMemberResource,
@@ -27,13 +26,10 @@ object ServiceChannelInstance {
     __obj.asInstanceOf[ServiceChannelInstance]
   }
   
-  @scala.inline
-  implicit class ServiceChannelInstanceMutableBuilder[Self <: ServiceChannelInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceChannelInstance](x: Self) {
     
-    @scala.inline
-    def setMembers(value: ServiceChannelMemberResource): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: ServiceChannelMemberResource): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: ServiceChannelMessageResource): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: ServiceChannelMessageResource): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }
 }

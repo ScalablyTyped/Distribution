@@ -19,25 +19,19 @@ trait AsyncEventInstant
 }
 object AsyncEventInstant {
   
-  @scala.inline
-  def apply(id: Double, ph: ASYNC_EVENTS_NESTABLE_INSTANT): AsyncEventInstant = {
+  inline def apply(id: Double, ph: ASYNC_EVENTS_NESTABLE_INSTANT): AsyncEventInstant = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncEventInstant]
   }
   
-  @scala.inline
-  implicit class AsyncEventInstantMutableBuilder[Self <: AsyncEventInstant] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncEventInstant](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPh(value: ASYNC_EVENTS_NESTABLE_INSTANT): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: ASYNC_EVENTS_NESTABLE_INSTANT): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

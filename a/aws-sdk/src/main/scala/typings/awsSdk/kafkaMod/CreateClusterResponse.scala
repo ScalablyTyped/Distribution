@@ -29,31 +29,23 @@ trait CreateClusterResponse extends StObject {
 }
 object CreateClusterResponse {
   
-  @scala.inline
-  def apply(): CreateClusterResponse = {
+  inline def apply(): CreateClusterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClusterResponse]
   }
   
-  @scala.inline
-  implicit class CreateClusterResponseMutableBuilder[Self <: CreateClusterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterResponse](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
+    inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
-    @scala.inline
-    def setClusterName(value: string): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: string): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "ClusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "ClusterName", js.undefined)
     
-    @scala.inline
-    def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

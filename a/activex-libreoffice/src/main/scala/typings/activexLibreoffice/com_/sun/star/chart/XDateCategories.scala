@@ -34,8 +34,7 @@ trait XDateCategories extends StObject {
 }
 object XDateCategories {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DateCategories: SafeArray[Double],
     getDateCategories: () => SafeArray[Double],
     setDateCategories: SeqEquiv[Double] => Unit
@@ -44,16 +43,12 @@ object XDateCategories {
     __obj.asInstanceOf[XDateCategories]
   }
   
-  @scala.inline
-  implicit class XDateCategoriesMutableBuilder[Self <: XDateCategories] (val x: Self) extends AnyVal {
+  extension [Self <: XDateCategories](x: Self) {
     
-    @scala.inline
-    def setDateCategories(value: SafeArray[Double]): Self = StObject.set(x, "DateCategories", value.asInstanceOf[js.Any])
+    inline def setDateCategories(value: SafeArray[Double]): Self = StObject.set(x, "DateCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDateCategories(value: () => SafeArray[Double]): Self = StObject.set(x, "getDateCategories", js.Any.fromFunction0(value))
+    inline def setGetDateCategories(value: () => SafeArray[Double]): Self = StObject.set(x, "getDateCategories", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDateCategories(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setDateCategories", js.Any.fromFunction1(value))
+    inline def setSetDateCategories(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setDateCategories", js.Any.fromFunction1(value))
   }
 }

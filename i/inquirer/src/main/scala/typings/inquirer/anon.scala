@@ -35,8 +35,7 @@ object anon {
   }
   object BottomBar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BottomBar: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^],
       Prompt: Instantiable2[
           /* prompts */ PromptCollection, 
@@ -48,14 +47,11 @@ object anon {
       __obj.asInstanceOf[BottomBar]
     }
     
-    @scala.inline
-    implicit class BottomBarMutableBuilder[Self <: BottomBar] (val x: Self) extends AnyVal {
+    extension [Self <: BottomBar](x: Self) {
       
-      @scala.inline
-      def setBottomBar(value: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^]): Self = StObject.set(x, "BottomBar", value.asInstanceOf[js.Any])
+      inline def setBottomBar(value: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^]): Self = StObject.set(x, "BottomBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt(
+      inline def setPrompt(
         value: Instantiable2[
               /* prompts */ PromptCollection, 
               /* options */ js.UndefOr[StreamOptions], 
@@ -74,17 +70,14 @@ object anon {
   }
   object Choices {
     
-    @scala.inline
-    def apply(choices: typings.inquirer.choicesMod.^[Answers]): Choices = {
+    inline def apply(choices: typings.inquirer.choicesMod.^[Answers]): Choices = {
       val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any])
       __obj.asInstanceOf[Choices]
     }
     
-    @scala.inline
-    implicit class ChoicesMutableBuilder[Self <: Choices] (val x: Self) extends AnyVal {
+    extension [Self <: Choices](x: Self) {
       
-      @scala.inline
-      def setChoices(value: typings.inquirer.choicesMod.^[Answers]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: typings.inquirer.choicesMod.^[Answers]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,30 +105,23 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply[T /* <: Answers */](choices: ChoiceCollection[T], default: js.Any, message: String, `type`: String): Default[T] = {
+    inline def apply[T /* <: Answers */](choices: ChoiceCollection[T], default: js.Any, message: String, `type`: String): Default[T] = {
       val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default[T]]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[?], T /* <: Answers */] (val x: Self & Default[T]) extends AnyVal {
+    extension [Self <: Default[?], T /* <: Answers */](x: Self & Default[T]) {
       
-      @scala.inline
-      def setChoices(value: ChoiceCollection[T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: ChoiceCollection[T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoicesVarargs(value: DistinctChoice[AllChoiceMap[Answers]]*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: DistinctChoice[AllChoiceMap[Answers]]*): Self = StObject.set(x, "choices", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,20 +131,16 @@ object anon {
   }
   object IsFinal {
     
-    @scala.inline
-    def apply(): IsFinal = {
+    inline def apply(): IsFinal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsFinal]
     }
     
-    @scala.inline
-    implicit class IsFinalMutableBuilder[Self <: IsFinal] (val x: Self) extends AnyVal {
+    extension [Self <: IsFinal](x: Self) {
       
-      @scala.inline
-      def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
+      inline def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFinalUndefined: Self = StObject.set(x, "isFinal", js.undefined)
+      inline def setIsFinalUndefined: Self = StObject.set(x, "isFinal", js.undefined)
     }
   }
   
@@ -168,18 +150,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(): Type = {
+    inline def apply(): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("separator")
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,17 +178,14 @@ object anon {
   }
   object TypeofSeparator {
     
-    @scala.inline
-    def apply(exclude: js.Any => Boolean): TypeofSeparator = {
+    inline def apply(exclude: js.Any => Boolean): TypeofSeparator = {
       val __obj = js.Dynamic.literal(exclude = js.Any.fromFunction1(exclude))
       __obj.asInstanceOf[TypeofSeparator]
     }
     
-    @scala.inline
-    implicit class TypeofSeparatorMutableBuilder[Self <: TypeofSeparator] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofSeparator](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Any => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
+      inline def setExclude(value: js.Any => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
     }
   }
   
@@ -219,17 +195,14 @@ object anon {
   }
   object Ui {
     
-    @scala.inline
-    def apply(ui: typings.inquirer.promptMod.^): Ui = {
+    inline def apply(ui: typings.inquirer.promptMod.^): Ui = {
       val __obj = js.Dynamic.literal(ui = ui.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ui]
     }
     
-    @scala.inline
-    implicit class UiMutableBuilder[Self <: Ui] (val x: Self) extends AnyVal {
+    extension [Self <: Ui](x: Self) {
       
-      @scala.inline
-      def setUi(value: typings.inquirer.promptMod.^): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: typings.inquirer.promptMod.^): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     }
   }
 }

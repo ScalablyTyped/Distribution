@@ -12,25 +12,19 @@ trait IsShown extends StObject {
 }
 object IsShown {
   
-  @scala.inline
-  def apply(): IsShown = {
+  inline def apply(): IsShown = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsShown]
   }
   
-  @scala.inline
-  implicit class IsShownMutableBuilder[Self <: IsShown] (val x: Self) extends AnyVal {
+  extension [Self <: IsShown](x: Self) {
     
-    @scala.inline
-    def setIsShown(value: Boolean): Self = StObject.set(x, "isShown", value.asInstanceOf[js.Any])
+    inline def setIsShown(value: Boolean): Self = StObject.set(x, "isShown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsShownUndefined: Self = StObject.set(x, "isShown", js.undefined)
+    inline def setIsShownUndefined: Self = StObject.set(x, "isShown", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

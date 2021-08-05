@@ -11,20 +11,17 @@ object rcVirtualListStrings {
   sealed trait auto
     extends StObject
        with ScrollAlign
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait bottom
     extends StObject
        with ScrollAlign
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait top
     extends StObject
        with ScrollAlign
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
 }

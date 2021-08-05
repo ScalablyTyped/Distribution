@@ -16,26 +16,20 @@ object anon {
   }
   object IncludeAA {
     
-    @scala.inline
-    def apply(): IncludeAA = {
+    inline def apply(): IncludeAA = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IncludeAA]
     }
     
-    @scala.inline
-    implicit class IncludeAAMutableBuilder[Self <: IncludeAA] (val x: Self) extends AnyVal {
+    extension [Self <: IncludeAA](x: Self) {
       
-      @scala.inline
-      def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
+      inline def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAAUndefined: Self = StObject.set(x, "includeAA", js.undefined)
+      inline def setIncludeAAUndefined: Self = StObject.set(x, "includeAA", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

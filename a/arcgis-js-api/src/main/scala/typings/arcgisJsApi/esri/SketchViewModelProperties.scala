@@ -64,61 +64,43 @@ trait SketchViewModelProperties extends StObject {
 }
 object SketchViewModelProperties {
   
-  @scala.inline
-  def apply(): SketchViewModelProperties = {
+  inline def apply(): SketchViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SketchViewModelProperties]
   }
   
-  @scala.inline
-  implicit class SketchViewModelPropertiesMutableBuilder[Self <: SketchViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SketchViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setDefaultCreateOptions(value: SketchViewModelDefaultCreateOptions): Self = StObject.set(x, "defaultCreateOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultCreateOptions(value: SketchViewModelDefaultCreateOptions): Self = StObject.set(x, "defaultCreateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCreateOptionsUndefined: Self = StObject.set(x, "defaultCreateOptions", js.undefined)
+    inline def setDefaultCreateOptionsUndefined: Self = StObject.set(x, "defaultCreateOptions", js.undefined)
     
-    @scala.inline
-    def setDefaultUpdateOptions(value: SketchViewModelDefaultUpdateOptions): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultUpdateOptions(value: SketchViewModelDefaultUpdateOptions): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
+    inline def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
     
-    @scala.inline
-    def setLayer(value: GraphicsLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: GraphicsLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setPointSymbol(value: SimpleMarkerSymbolProperties | PointSymbol3DProperties): Self = StObject.set(x, "pointSymbol", value.asInstanceOf[js.Any])
+    inline def setPointSymbol(value: SimpleMarkerSymbolProperties | PointSymbol3DProperties): Self = StObject.set(x, "pointSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointSymbolUndefined: Self = StObject.set(x, "pointSymbol", js.undefined)
+    inline def setPointSymbolUndefined: Self = StObject.set(x, "pointSymbol", js.undefined)
     
-    @scala.inline
-    def setPolygonSymbol(value: SimpleFillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
+    inline def setPolygonSymbol(value: SimpleFillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
+    inline def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
     
-    @scala.inline
-    def setPolylineSymbol(value: SimpleLineSymbolProperties | LineSymbol3DProperties): Self = StObject.set(x, "polylineSymbol", value.asInstanceOf[js.Any])
+    inline def setPolylineSymbol(value: SimpleLineSymbolProperties | LineSymbol3DProperties): Self = StObject.set(x, "polylineSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineSymbolUndefined: Self = StObject.set(x, "polylineSymbol", js.undefined)
+    inline def setPolylineSymbolUndefined: Self = StObject.set(x, "polylineSymbol", js.undefined)
     
-    @scala.inline
-    def setUpdateOnGraphicClick(value: Boolean): Self = StObject.set(x, "updateOnGraphicClick", value.asInstanceOf[js.Any])
+    inline def setUpdateOnGraphicClick(value: Boolean): Self = StObject.set(x, "updateOnGraphicClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateOnGraphicClickUndefined: Self = StObject.set(x, "updateOnGraphicClick", js.undefined)
+    inline def setUpdateOnGraphicClickUndefined: Self = StObject.set(x, "updateOnGraphicClick", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -20,43 +20,31 @@ trait ListDataPointChangesResponse extends StObject {
 }
 object ListDataPointChangesResponse {
   
-  @scala.inline
-  def apply(): ListDataPointChangesResponse = {
+  inline def apply(): ListDataPointChangesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDataPointChangesResponse]
   }
   
-  @scala.inline
-  implicit class ListDataPointChangesResponseMutableBuilder[Self <: ListDataPointChangesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataPointChangesResponse](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setDeletedDataPoint(value: js.Array[DataPoint]): Self = StObject.set(x, "deletedDataPoint", value.asInstanceOf[js.Any])
+    inline def setDeletedDataPoint(value: js.Array[DataPoint]): Self = StObject.set(x, "deletedDataPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedDataPointUndefined: Self = StObject.set(x, "deletedDataPoint", js.undefined)
+    inline def setDeletedDataPointUndefined: Self = StObject.set(x, "deletedDataPoint", js.undefined)
     
-    @scala.inline
-    def setDeletedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "deletedDataPoint", js.Array(value :_*))
+    inline def setDeletedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "deletedDataPoint", js.Array(value :_*))
     
-    @scala.inline
-    def setInsertedDataPoint(value: js.Array[DataPoint]): Self = StObject.set(x, "insertedDataPoint", value.asInstanceOf[js.Any])
+    inline def setInsertedDataPoint(value: js.Array[DataPoint]): Self = StObject.set(x, "insertedDataPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedDataPointUndefined: Self = StObject.set(x, "insertedDataPoint", js.undefined)
+    inline def setInsertedDataPointUndefined: Self = StObject.set(x, "insertedDataPoint", js.undefined)
     
-    @scala.inline
-    def setInsertedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "insertedDataPoint", js.Array(value :_*))
+    inline def setInsertedDataPointVarargs(value: DataPoint*): Self = StObject.set(x, "insertedDataPoint", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

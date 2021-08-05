@@ -42,16 +42,13 @@ trait PanResponderStatic extends StObject {
 }
 object PanResponderStatic {
   
-  @scala.inline
-  def apply(create: PanResponderCallbacks => PanResponderInstance): PanResponderStatic = {
+  inline def apply(create: PanResponderCallbacks => PanResponderInstance): PanResponderStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[PanResponderStatic]
   }
   
-  @scala.inline
-  implicit class PanResponderStaticMutableBuilder[Self <: PanResponderStatic] (val x: Self) extends AnyVal {
+  extension [Self <: PanResponderStatic](x: Self) {
     
-    @scala.inline
-    def setCreate(value: PanResponderCallbacks => PanResponderInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: PanResponderCallbacks => PanResponderInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

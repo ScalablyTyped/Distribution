@@ -13,16 +13,13 @@ trait DeleteUsagePlanRequest extends StObject {
 }
 object DeleteUsagePlanRequest {
   
-  @scala.inline
-  def apply(usagePlanId: String): DeleteUsagePlanRequest = {
+  inline def apply(usagePlanId: String): DeleteUsagePlanRequest = {
     val __obj = js.Dynamic.literal(usagePlanId = usagePlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUsagePlanRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUsagePlanRequestMutableBuilder[Self <: DeleteUsagePlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUsagePlanRequest](x: Self) {
     
-    @scala.inline
-    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+    inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }
 }

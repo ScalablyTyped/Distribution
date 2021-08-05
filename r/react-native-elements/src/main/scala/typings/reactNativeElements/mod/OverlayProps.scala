@@ -53,55 +53,39 @@ trait OverlayProps
 }
 object OverlayProps {
   
-  @scala.inline
-  def apply(children: ReactElement, isVisible: Boolean): OverlayProps = {
+  inline def apply(children: ReactElement, isVisible: Boolean): OverlayProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayProps]
   }
   
-  @scala.inline
-  implicit class OverlayPropsMutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayProps](x: Self) {
     
-    @scala.inline
-    def setBackdropStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backdropStyle", value.asInstanceOf[js.Any])
+    inline def setBackdropStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backdropStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackdropStyleNull: Self = StObject.set(x, "backdropStyle", null)
+    inline def setBackdropStyleNull: Self = StObject.set(x, "backdropStyle", null)
     
-    @scala.inline
-    def setBackdropStyleUndefined: Self = StObject.set(x, "backdropStyle", js.undefined)
+    inline def setBackdropStyleUndefined: Self = StObject.set(x, "backdropStyle", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "ModalComponent", value.asInstanceOf[js.Any])
+    inline def setModalComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "ModalComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalComponentUndefined: Self = StObject.set(x, "ModalComponent", js.undefined)
+    inline def setModalComponentUndefined: Self = StObject.set(x, "ModalComponent", js.undefined)
     
-    @scala.inline
-    def setOnBackdropPress(value: () => Unit): Self = StObject.set(x, "onBackdropPress", js.Any.fromFunction0(value))
+    inline def setOnBackdropPress(value: () => Unit): Self = StObject.set(x, "onBackdropPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnBackdropPressUndefined: Self = StObject.set(x, "onBackdropPress", js.undefined)
+    inline def setOnBackdropPressUndefined: Self = StObject.set(x, "onBackdropPress", js.undefined)
     
-    @scala.inline
-    def setOverlayStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayStyleNull: Self = StObject.set(x, "overlayStyle", null)
+    inline def setOverlayStyleNull: Self = StObject.set(x, "overlayStyle", null)
     
-    @scala.inline
-    def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+    inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
   }
 }

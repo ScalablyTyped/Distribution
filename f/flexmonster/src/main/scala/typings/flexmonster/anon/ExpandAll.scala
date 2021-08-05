@@ -14,37 +14,27 @@ trait ExpandAll extends StObject {
 }
 object ExpandAll {
   
-  @scala.inline
-  def apply(): ExpandAll = {
+  inline def apply(): ExpandAll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpandAll]
   }
   
-  @scala.inline
-  implicit class ExpandAllMutableBuilder[Self <: ExpandAll] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandAll](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[Measure]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Measure]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: Measure*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Measure*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setExpandAll(value: Boolean): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
+    inline def setExpandAll(value: Boolean): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
+    inline def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[Measure]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Measure]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: Measure*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Measure*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

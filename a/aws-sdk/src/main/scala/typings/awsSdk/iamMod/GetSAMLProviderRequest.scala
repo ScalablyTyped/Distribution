@@ -13,16 +13,13 @@ trait GetSAMLProviderRequest extends StObject {
 }
 object GetSAMLProviderRequest {
   
-  @scala.inline
-  def apply(SAMLProviderArn: arnType): GetSAMLProviderRequest = {
+  inline def apply(SAMLProviderArn: arnType): GetSAMLProviderRequest = {
     val __obj = js.Dynamic.literal(SAMLProviderArn = SAMLProviderArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSAMLProviderRequest]
   }
   
-  @scala.inline
-  implicit class GetSAMLProviderRequestMutableBuilder[Self <: GetSAMLProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSAMLProviderRequest](x: Self) {
     
-    @scala.inline
-    def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
+    inline def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
   }
 }

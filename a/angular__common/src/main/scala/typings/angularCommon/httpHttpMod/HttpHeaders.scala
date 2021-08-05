@@ -24,12 +24,12 @@ class HttpHeaders () extends StObject {
   def append(name: String, value: String): HttpHeaders = js.native
   def append(name: String, value: js.Array[String]): HttpHeaders = js.native
   
-  var applyUpdate: js.Any = js.native
+  /* private */ var applyUpdate: js.Any = js.native
   
-  @JSName("clone")
+  /* private */ @JSName("clone")
   var clone_FHttpHeaders: js.Any = js.native
   
-  var copyFrom: js.Any = js.native
+  /* private */ var copyFrom: js.Any = js.native
   
   /**
     * Deletes values for a given header in a clone of the original instance.
@@ -73,9 +73,9 @@ class HttpHeaders () extends StObject {
   /**
     * Internal map of lowercase header names to values.
     */
-  var headers: js.Any = js.native
+  /* private */ var headers: js.Any = js.native
   
-  var init: js.Any = js.native
+  /* private */ var init: js.Any = js.native
   
   /**
     * Retrieves the names of the headers.
@@ -87,20 +87,20 @@ class HttpHeaders () extends StObject {
   /**
     * Complete the lazy initialization of this object (needed before reading).
     */
-  var lazyInit: js.Any = js.native
+  /* private */ var lazyInit: js.Any = js.native
   
   /**
     * Queued updates to be materialized the next initialization.
     */
-  var lazyUpdate: js.Any = js.native
+  /* private */ var lazyUpdate: js.Any = js.native
   
-  var maybeSetNormalizedName: js.Any = js.native
+  /* private */ var maybeSetNormalizedName: js.Any = js.native
   
   /**
     * Internal map of lowercased header names to the normalized
     * form of the name (the form seen first).
     */
-  var normalizedNames: js.Any = js.native
+  /* private */ var normalizedNames: js.Any = js.native
   
   /**
     * Sets or modifies a value for a given header in a clone of the original instance.

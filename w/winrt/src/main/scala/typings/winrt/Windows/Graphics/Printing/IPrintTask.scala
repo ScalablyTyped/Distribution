@@ -23,8 +23,7 @@ trait IPrintTask extends StObject {
 }
 object IPrintTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     oncompleted: js.Any,
     onpreviewing: js.Any,
     onprogressing: js.Any,
@@ -37,28 +36,20 @@ object IPrintTask {
     __obj.asInstanceOf[IPrintTask]
   }
   
-  @scala.inline
-  implicit class IPrintTaskMutableBuilder[Self <: IPrintTask] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTask](x: Self) {
     
-    @scala.inline
-    def setOncompleted(value: js.Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
+    inline def setOncompleted(value: js.Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnpreviewing(value: js.Any): Self = StObject.set(x, "onpreviewing", value.asInstanceOf[js.Any])
+    inline def setOnpreviewing(value: js.Any): Self = StObject.set(x, "onpreviewing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnprogressing(value: js.Any): Self = StObject.set(x, "onprogressing", value.asInstanceOf[js.Any])
+    inline def setOnprogressing(value: js.Any): Self = StObject.set(x, "onprogressing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsubmitting(value: js.Any): Self = StObject.set(x, "onsubmitting", value.asInstanceOf[js.Any])
+    inline def setOnsubmitting(value: js.Any): Self = StObject.set(x, "onsubmitting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: PrintTaskOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PrintTaskOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: DataPackagePropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: DataPackagePropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: IPrintDocumentSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: IPrintDocumentSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

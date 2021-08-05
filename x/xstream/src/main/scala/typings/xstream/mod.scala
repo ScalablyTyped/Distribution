@@ -46,8 +46,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine(): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[js.Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -73,8 +72,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine(stream: Stream[js.Any]*): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(stream: Stream[js.Any]*): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[js.Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -100,8 +98,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1](s1: Stream[T1]): Stream[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T1]]]
+    inline def combine[T1](s1: Stream[T1]): Stream[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T1]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -127,8 +124,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[js.Tuple2[T1, T2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple2[T1, T2]]]
+    inline def combine[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[js.Tuple2[T1, T2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple2[T1, T2]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -154,8 +150,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[js.Tuple3[T1, T2, T3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple3[T1, T2, T3]]]
+    inline def combine[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[js.Tuple3[T1, T2, T3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple3[T1, T2, T3]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -181,8 +176,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[js.Tuple4[T1, T2, T3, T4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple4[T1, T2, T3, T4]]]
+    inline def combine[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[js.Tuple4[T1, T2, T3, T4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple4[T1, T2, T3, T4]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -208,8 +202,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[js.Tuple5[T1, T2, T3, T4, T5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple5[T1, T2, T3, T4, T5]]]
+    inline def combine[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[js.Tuple5[T1, T2, T3, T4, T5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple5[T1, T2, T3, T4, T5]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -235,8 +228,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]]]
+    inline def combine[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -262,8 +254,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -297,8 +288,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7, T8](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7, T8](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -333,8 +323,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -370,8 +359,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -412,8 +400,7 @@ object mod {
     @js.native
     def combine_Fdefault: CombineSignature = js.native
     
-    @scala.inline
-    def combine_Fdefault_=(x: CombineSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
+    inline def combine_Fdefault_=(x: CombineSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
     
     /**
       * Combines multiple input streams together to return a stream whose events
@@ -440,8 +427,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T]]]
+    inline def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T]]]
     
     /**
       * Creates a new Stream given a Producer.
@@ -451,10 +437,8 @@ object mod {
       * start, generate events, and stop the Stream.
       * @return {Stream}
       */
-    @scala.inline
-    def create[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Stream[T]]
-    @scala.inline
-    def create[T](producer: Producer[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(producer.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def create[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Stream[T]]
+    inline def create[T](producer: Producer[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(producer.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Creates a new MemoryStream given a Producer.
@@ -464,10 +448,8 @@ object mod {
       * start, generate events, and stop the Stream.
       * @return {MemoryStream}
       */
-    @scala.inline
-    def createWithMemory[T](): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")().asInstanceOf[MemoryStream[T]]
-    @scala.inline
-    def createWithMemory[T](producer: Producer[T]): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")(producer.asInstanceOf[js.Any]).asInstanceOf[MemoryStream[T]]
+    inline def createWithMemory[T](): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")().asInstanceOf[MemoryStream[T]]
+    inline def createWithMemory[T](producer: Producer[T]): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")(producer.asInstanceOf[js.Any]).asInstanceOf[MemoryStream[T]]
     
     /**
       * Creates a Stream that immediately emits the "complete" notification when
@@ -483,11 +465,9 @@ object mod {
       * @factory true
       * @return {Stream}
       */
-    @scala.inline
-    def empty[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Stream[T]]
+    inline def empty[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Stream[T]]
     
-    @scala.inline
-    def from[T](input: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     /**
       * Creates a stream from an Array, Promise, or an Observable.
       *
@@ -495,12 +475,9 @@ object mod {
       * @param {Array|PromiseLike|Observable} input The input to make a stream from.
       * @return {Stream}
       */
-    @scala.inline
-    def from[T](input: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
-    @scala.inline
-    def from[T](input: Observable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
-    @scala.inline
-    def from[T](input: Stream[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: Observable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: Stream[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Converts an array to a stream. The returned stream will emit synchronously
@@ -517,8 +494,7 @@ object mod {
       * @param {Array} array The array to be converted as a stream.
       * @return {Stream}
       */
-    @scala.inline
-    def fromArray[T](array: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromArray[T](array: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Converts an Observable into a Stream.
@@ -527,8 +503,7 @@ object mod {
       * @param {any} observable The observable to be converted as a stream.
       * @return {Stream}
       */
-    @scala.inline
-    def fromObservable[T](obs: Subscribe): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(obs.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromObservable[T](obs: Subscribe): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(obs.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Converts a promise to a stream. The returned stream will emit the resolved
@@ -546,8 +521,7 @@ object mod {
       * @param {PromiseLike} promise The promise to be converted as a stream.
       * @return {Stream}
       */
-    @scala.inline
-    def fromPromise[T](promise: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromPromise[T](promise: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Blends multiple streams together, emitting events from all of them
@@ -571,8 +545,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge(): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[js.Any]]
+    inline def merge(): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[js.Any]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -595,8 +568,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1](s1: Stream[T1]): Stream[T1] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[T1]]
+    inline def merge[T1](s1: Stream[T1]): Stream[T1] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[T1]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -619,8 +591,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -643,8 +614,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2]]
+    inline def merge[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -667,8 +637,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[T1 | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3]]
+    inline def merge[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[T1 | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -691,8 +660,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[T1 | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4]]
+    inline def merge[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[T1 | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -715,8 +683,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[T1 | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5]]
+    inline def merge[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[T1 | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -739,8 +706,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[T1 | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5 | T6]]
+    inline def merge[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[T1 | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5 | T6]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -763,8 +729,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -795,8 +760,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7, T8](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7, T8](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -828,8 +792,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -862,8 +825,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -901,8 +863,7 @@ object mod {
     @js.native
     def merge_Fdefault: MergeSignature = js.native
     
-    @scala.inline
-    def merge_Fdefault_=(x: MergeSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
+    inline def merge_Fdefault_=(x: MergeSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a Stream that does nothing when started. It never emits any event.
@@ -917,8 +878,7 @@ object mod {
       * @factory true
       * @return {Stream}
       */
-    @scala.inline
-    def never[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Stream[T]]
+    inline def never[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Stream[T]]
     
     /**
       * Creates a Stream that immediately emits the arguments that you give to
@@ -937,8 +897,7 @@ object mod {
       * or more of these values may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Creates a stream that periodically emits incremental numbers, every
@@ -956,8 +915,7 @@ object mod {
       * emission.
       * @return {Stream}
       */
-    @scala.inline
-    def periodic(period: Double): Stream[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("periodic")(period.asInstanceOf[js.Any]).asInstanceOf[Stream[Double]]
+    inline def periodic(period: Double): Stream[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("periodic")(period.asInstanceOf[js.Any]).asInstanceOf[Stream[Double]]
     
     /**
       * Creates a Stream that immediately emits an "error" notification with the
@@ -975,8 +933,7 @@ object mod {
       * @param error The error event to emit on the created stream.
       * @return {Stream}
       */
-    @scala.inline
-    def `throw`(error: js.Any): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
+    inline def `throw`(error: js.Any): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
   }
   
   @JSImport("xstream", "MemoryStream")
@@ -984,9 +941,9 @@ object mod {
   class MemoryStream[T] protected () extends Stream[T] {
     def this(producer: InternalProducer[T]) = this()
     
-    var _has: js.Any = js.native
+    /* private */ var _has: js.Any = js.native
     
-    var _v: js.Any = js.native
+    /* private */ var _v: js.Any = js.native
   }
   
   @JSImport("xstream", "NO_IL")
@@ -1005,18 +962,18 @@ object mod {
     /* CompleteClass */
     override def _c(): Unit = js.native
     
-    var _d: Boolean = js.native
+    /* protected */ var _d: Boolean = js.native
     
-    var _dl: InternalListener[T] = js.native
+    /* protected */ var _dl: InternalListener[T] = js.native
     
     /* CompleteClass */
     override def _e(err: js.Any): Unit = js.native
     
-    var _err: js.Any = js.native
+    /* protected */ var _err: js.Any = js.native
     
     def _hasNoSinks(x: InternalListener[js.Any], trace: js.Array[js.Any]): Boolean = js.native
     
-    var _ils: js.Array[InternalListener[T]] = js.native
+    /* protected */ var _ils: js.Array[InternalListener[T]] = js.native
     
     /* protected */ def _map[U](project: js.Function1[/* t */ T, U]): Stream[U] | MemoryStream[U] = js.native
     
@@ -1029,11 +986,11 @@ object mod {
     
     def _remove(il: InternalListener[T]): Unit = js.native
     
-    var _stopID: js.Any = js.native
+    /* protected */ var _stopID: js.Any = js.native
     
     def _stopNow(): Unit = js.native
     
-    var _target: Stream[T] | Null = js.native
+    /* protected */ var _target: Stream[T] | Null = js.native
     
     def _x(): Unit = js.native
     
@@ -1057,7 +1014,7 @@ object mod {
       */
     def compose[U](operator: js.Function1[/* stream */ Stream[T], U]): U = js.native
     
-    var ctor: js.Any = js.native
+    /* private */ var ctor: js.Any = js.native
     
     def debug(): Stream[T] = js.native
     def debug(labelOrSpy: String): Stream[T] = js.native
@@ -1458,8 +1415,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine(): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[js.Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1485,8 +1441,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine(stream: Stream[js.Any]*): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(stream: Stream[js.Any]*): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[js.Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1512,8 +1467,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1](s1: Stream[T1]): Stream[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T1]]]
+    inline def combine[T1](s1: Stream[T1]): Stream[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T1]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1539,8 +1493,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[js.Tuple2[T1, T2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple2[T1, T2]]]
+    inline def combine[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[js.Tuple2[T1, T2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple2[T1, T2]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1566,8 +1519,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[js.Tuple3[T1, T2, T3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple3[T1, T2, T3]]]
+    inline def combine[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[js.Tuple3[T1, T2, T3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple3[T1, T2, T3]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1593,8 +1545,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[js.Tuple4[T1, T2, T3, T4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple4[T1, T2, T3, T4]]]
+    inline def combine[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[js.Tuple4[T1, T2, T3, T4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple4[T1, T2, T3, T4]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1620,8 +1571,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[js.Tuple5[T1, T2, T3, T4, T5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple5[T1, T2, T3, T4, T5]]]
+    inline def combine[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[js.Tuple5[T1, T2, T3, T4, T5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple5[T1, T2, T3, T4, T5]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1647,8 +1597,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]]]
+    inline def combine[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Tuple6[T1, T2, T3, T4, T5, T6]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1674,8 +1623,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -1709,8 +1657,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7, T8](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7, T8](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -1745,8 +1692,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -1782,8 +1728,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+    inline def combine[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -1824,8 +1769,7 @@ object mod {
     @js.native
     def combine_FStream: CombineSignature = js.native
     
-    @scala.inline
-    def combine_FStream_=(x: CombineSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
+    inline def combine_FStream_=(x: CombineSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
     
     /**
       * Combines multiple input streams together to return a stream whose events
@@ -1852,8 +1796,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T]]]
+    inline def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T]]]
     
     /**
       * Creates a new Stream given a Producer.
@@ -1863,10 +1806,8 @@ object mod {
       * start, generate events, and stop the Stream.
       * @return {Stream}
       */
-    @scala.inline
-    def create[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Stream[T]]
-    @scala.inline
-    def create[T](producer: Producer[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(producer.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def create[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Stream[T]]
+    inline def create[T](producer: Producer[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(producer.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Creates a new MemoryStream given a Producer.
@@ -1876,10 +1817,8 @@ object mod {
       * start, generate events, and stop the Stream.
       * @return {MemoryStream}
       */
-    @scala.inline
-    def createWithMemory[T](): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")().asInstanceOf[MemoryStream[T]]
-    @scala.inline
-    def createWithMemory[T](producer: Producer[T]): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")(producer.asInstanceOf[js.Any]).asInstanceOf[MemoryStream[T]]
+    inline def createWithMemory[T](): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")().asInstanceOf[MemoryStream[T]]
+    inline def createWithMemory[T](producer: Producer[T]): MemoryStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithMemory")(producer.asInstanceOf[js.Any]).asInstanceOf[MemoryStream[T]]
     
     /**
       * Creates a Stream that immediately emits the "complete" notification when
@@ -1895,11 +1834,9 @@ object mod {
       * @factory true
       * @return {Stream}
       */
-    @scala.inline
-    def empty[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Stream[T]]
+    inline def empty[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Stream[T]]
     
-    @scala.inline
-    def from[T](input: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     /**
       * Creates a stream from an Array, Promise, or an Observable.
       *
@@ -1907,12 +1844,9 @@ object mod {
       * @param {Array|PromiseLike|Observable} input The input to make a stream from.
       * @return {Stream}
       */
-    @scala.inline
-    def from[T](input: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
-    @scala.inline
-    def from[T](input: Observable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
-    @scala.inline
-    def from[T](input: Stream[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: Observable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: Stream[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Converts an array to a stream. The returned stream will emit synchronously
@@ -1929,8 +1863,7 @@ object mod {
       * @param {Array} array The array to be converted as a stream.
       * @return {Stream}
       */
-    @scala.inline
-    def fromArray[T](array: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromArray[T](array: js.Array[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Converts an Observable into a Stream.
@@ -1939,8 +1872,7 @@ object mod {
       * @param {any} observable The observable to be converted as a stream.
       * @return {Stream}
       */
-    @scala.inline
-    def fromObservable[T](obs: Subscribe): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(obs.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromObservable[T](obs: Subscribe): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(obs.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Converts a promise to a stream. The returned stream will emit the resolved
@@ -1958,8 +1890,7 @@ object mod {
       * @param {PromiseLike} promise The promise to be converted as a stream.
       * @return {Stream}
       */
-    @scala.inline
-    def fromPromise[T](promise: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromPromise[T](promise: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Blends multiple streams together, emitting events from all of them
@@ -1983,8 +1914,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge(): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[js.Any]]
+    inline def merge(): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[js.Any]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2007,8 +1937,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1](s1: Stream[T1]): Stream[T1] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[T1]]
+    inline def merge[T1](s1: Stream[T1]): Stream[T1] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any]).asInstanceOf[Stream[T1]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2031,8 +1960,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2055,8 +1983,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2]]
+    inline def merge[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2079,8 +2006,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[T1 | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3]]
+    inline def merge[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[T1 | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2103,8 +2029,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[T1 | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4]]
+    inline def merge[T1, T2, T3, T4](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4]): Stream[T1 | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2127,8 +2052,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[T1 | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5]]
+    inline def merge[T1, T2, T3, T4, T5](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5]): Stream[T1 | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2151,8 +2075,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[T1 | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5 | T6]]
+    inline def merge[T1, T2, T3, T4, T5, T6](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3], s4: Stream[T4], s5: Stream[T5], s6: Stream[T6]): Stream[T1 | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], s4.asInstanceOf[js.Any], s5.asInstanceOf[js.Any], s6.asInstanceOf[js.Any])).asInstanceOf[Stream[T1 | T2 | T3 | T4 | T5 | T6]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2175,8 +2098,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -2207,8 +2129,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7, T8](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7, T8](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -2240,8 +2161,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -2274,8 +2194,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+    inline def merge[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
       s1: Stream[T1],
       s2: Stream[T2],
       s3: Stream[T3],
@@ -2313,8 +2232,7 @@ object mod {
     @js.native
     def merge_FStream: MergeSignature = js.native
     
-    @scala.inline
-    def merge_FStream_=(x: MergeSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
+    inline def merge_FStream_=(x: MergeSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a Stream that does nothing when started. It never emits any event.
@@ -2329,8 +2247,7 @@ object mod {
       * @factory true
       * @return {Stream}
       */
-    @scala.inline
-    def never[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Stream[T]]
+    inline def never[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Stream[T]]
     
     /**
       * Creates a Stream that immediately emits the arguments that you give to
@@ -2349,8 +2266,7 @@ object mod {
       * or more of these values may be given as arguments.
       * @return {Stream}
       */
-    @scala.inline
-    def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Creates a stream that periodically emits incremental numbers, every
@@ -2368,8 +2284,7 @@ object mod {
       * emission.
       * @return {Stream}
       */
-    @scala.inline
-    def periodic(period: Double): Stream[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("periodic")(period.asInstanceOf[js.Any]).asInstanceOf[Stream[Double]]
+    inline def periodic(period: Double): Stream[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("periodic")(period.asInstanceOf[js.Any]).asInstanceOf[Stream[Double]]
     
     /**
       * Creates a Stream that immediately emits an "error" notification with the
@@ -2387,8 +2302,7 @@ object mod {
       * @param error The error event to emit on the created stream.
       * @return {Stream}
       */
-    @scala.inline
-    def `throw`(error: js.Any): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
+    inline def `throw`(error: js.Any): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
   }
   
   trait Aggregator[T, U]
@@ -2404,8 +2318,7 @@ object mod {
   }
   object Aggregator {
     
-    @scala.inline
-    def apply[T, U](
+    inline def apply[T, U](
       _start: Stream[U] => Unit,
       _stop: () => Unit,
       insArr: js.Array[Stream[T]],
@@ -2417,20 +2330,15 @@ object mod {
       __obj.asInstanceOf[Aggregator[T, U]]
     }
     
-    @scala.inline
-    implicit class AggregatorMutableBuilder[Self <: Aggregator[?, ?], T, U] (val x: Self & (Aggregator[T, U])) extends AnyVal {
+    extension [Self <: Aggregator[?, ?], T, U](x: Self & (Aggregator[T, U])) {
       
-      @scala.inline
-      def setInsArr(value: js.Array[Stream[T]]): Self = StObject.set(x, "insArr", value.asInstanceOf[js.Any])
+      inline def setInsArr(value: js.Array[Stream[T]]): Self = StObject.set(x, "insArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsArrVarargs(value: Stream[T]*): Self = StObject.set(x, "insArr", js.Array(value :_*))
+      inline def setInsArrVarargs(value: Stream[T]*): Self = StObject.set(x, "insArr", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_start(value: Stream[U] => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction1(value))
+      inline def set_start(value: Stream[U] => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction1(value))
     }
   }
   
@@ -2499,23 +2407,18 @@ object mod {
   }
   object InternalListener {
     
-    @scala.inline
-    def apply[T](_c: () => Unit, _e: js.Any => Unit, _n: T => Unit): InternalListener[T] = {
+    inline def apply[T](_c: () => Unit, _e: js.Any => Unit, _n: T => Unit): InternalListener[T] = {
       val __obj = js.Dynamic.literal(_c = js.Any.fromFunction0(_c), _e = js.Any.fromFunction1(_e), _n = js.Any.fromFunction1(_n))
       __obj.asInstanceOf[InternalListener[T]]
     }
     
-    @scala.inline
-    implicit class InternalListenerMutableBuilder[Self <: InternalListener[?], T] (val x: Self & InternalListener[T]) extends AnyVal {
+    extension [Self <: InternalListener[?], T](x: Self & InternalListener[T]) {
       
-      @scala.inline
-      def set_c(value: () => Unit): Self = StObject.set(x, "_c", js.Any.fromFunction0(value))
+      inline def set_c(value: () => Unit): Self = StObject.set(x, "_c", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_e(value: js.Any => Unit): Self = StObject.set(x, "_e", js.Any.fromFunction1(value))
+      inline def set_e(value: js.Any => Unit): Self = StObject.set(x, "_e", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_n(value: T => Unit): Self = StObject.set(x, "_n", js.Any.fromFunction1(value))
+      inline def set_n(value: T => Unit): Self = StObject.set(x, "_n", js.Any.fromFunction1(value))
     }
   }
   
@@ -2527,20 +2430,16 @@ object mod {
   }
   object InternalProducer {
     
-    @scala.inline
-    def apply[T](_start: InternalListener[T] => Unit, _stop: () => Unit): InternalProducer[T] = {
+    inline def apply[T](_start: InternalListener[T] => Unit, _stop: () => Unit): InternalProducer[T] = {
       val __obj = js.Dynamic.literal(_start = js.Any.fromFunction1(_start), _stop = js.Any.fromFunction0(_stop))
       __obj.asInstanceOf[InternalProducer[T]]
     }
     
-    @scala.inline
-    implicit class InternalProducerMutableBuilder[Self <: InternalProducer[?], T] (val x: Self & InternalProducer[T]) extends AnyVal {
+    extension [Self <: InternalProducer[?], T](x: Self & InternalProducer[T]) {
       
-      @scala.inline
-      def set_start(value: InternalListener[T] => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction1(value))
+      inline def set_start(value: InternalListener[T] => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_stop(value: () => Unit): Self = StObject.set(x, "_stop", js.Any.fromFunction0(value))
+      inline def set_stop(value: () => Unit): Self = StObject.set(x, "_stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -2554,23 +2453,18 @@ object mod {
   }
   object Listener {
     
-    @scala.inline
-    def apply[T](complete: () => Unit, error: js.Any => Unit, next: T => Unit): Listener[T] = {
+    inline def apply[T](complete: () => Unit, error: js.Any => Unit, next: T => Unit): Listener[T] = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Listener[T]]
     }
     
-    @scala.inline
-    implicit class ListenerMutableBuilder[Self <: Listener[?], T] (val x: Self & Listener[T]) extends AnyVal {
+    extension [Self <: Listener[?], T](x: Self & Listener[T]) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -2635,17 +2529,14 @@ object mod {
   }
   object Observable {
     
-    @scala.inline
-    def apply[T](subscribe: Listener[T] => Subscription): Observable[T] = {
+    inline def apply[T](subscribe: Listener[T] => Subscription): Observable[T] = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[Observable[T]]
     }
     
-    @scala.inline
-    implicit class ObservableMutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
+    extension [Self <: Observable[?], T](x: Self & Observable[T]) {
       
-      @scala.inline
-      def setSubscribe(value: Listener[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: Listener[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -2663,8 +2554,7 @@ object mod {
   }
   object Operator {
     
-    @scala.inline
-    def apply[T, R](
+    inline def apply[T, R](
       _c: () => Unit,
       _e: js.Any => Unit,
       _n: T => Unit,
@@ -2679,17 +2569,13 @@ object mod {
       __obj.asInstanceOf[Operator[T, R]]
     }
     
-    @scala.inline
-    implicit class OperatorMutableBuilder[Self <: Operator[?, ?], T, R] (val x: Self & (Operator[T, R])) extends AnyVal {
+    extension [Self <: Operator[?, ?], T, R](x: Self & (Operator[T, R])) {
       
-      @scala.inline
-      def setIns(value: Stream[T]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
+      inline def setIns(value: Stream[T]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_start(value: Stream[R] => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction1(value))
+      inline def set_start(value: Stream[R] => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction1(value))
     }
   }
   
@@ -2699,17 +2585,14 @@ object mod {
   }
   object OutSender {
     
-    @scala.inline
-    def apply[T](out: Stream[T]): OutSender[T] = {
+    inline def apply[T](out: Stream[T]): OutSender[T] = {
       val __obj = js.Dynamic.literal(out = out.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutSender[T]]
     }
     
-    @scala.inline
-    implicit class OutSenderMutableBuilder[Self <: OutSender[?], T] (val x: Self & OutSender[T]) extends AnyVal {
+    extension [Self <: OutSender[?], T](x: Self & OutSender[T]) {
       
-      @scala.inline
-      def setOut(value: Stream[T]): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+      inline def setOut(value: Stream[T]): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2721,20 +2604,16 @@ object mod {
   }
   object Producer {
     
-    @scala.inline
-    def apply[T](start: Listener[T] => Unit, stop: () => Unit): Producer[T] = {
+    inline def apply[T](start: Listener[T] => Unit, stop: () => Unit): Producer[T] = {
       val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[Producer[T]]
     }
     
-    @scala.inline
-    implicit class ProducerMutableBuilder[Self <: Producer[?], T] (val x: Self & Producer[T]) extends AnyVal {
+    extension [Self <: Producer[?], T](x: Self & Producer[T]) {
       
-      @scala.inline
-      def setStart(value: Listener[T] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: Listener[T] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -2744,17 +2623,14 @@ object mod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(unsubscribe: () => Unit): Subscription = {
+    inline def apply(unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   

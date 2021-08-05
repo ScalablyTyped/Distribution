@@ -24,8 +24,7 @@ trait IMobileBroadbandAccountWatcher extends StObject {
 }
 object IMobileBroadbandAccountWatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onaccountadded: js.Any,
     onaccountremoved: js.Any,
     onaccountupdated: js.Any,
@@ -39,31 +38,22 @@ object IMobileBroadbandAccountWatcher {
     __obj.asInstanceOf[IMobileBroadbandAccountWatcher]
   }
   
-  @scala.inline
-  implicit class IMobileBroadbandAccountWatcherMutableBuilder[Self <: IMobileBroadbandAccountWatcher] (val x: Self) extends AnyVal {
+  extension [Self <: IMobileBroadbandAccountWatcher](x: Self) {
     
-    @scala.inline
-    def setOnaccountadded(value: js.Any): Self = StObject.set(x, "onaccountadded", value.asInstanceOf[js.Any])
+    inline def setOnaccountadded(value: js.Any): Self = StObject.set(x, "onaccountadded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnaccountremoved(value: js.Any): Self = StObject.set(x, "onaccountremoved", value.asInstanceOf[js.Any])
+    inline def setOnaccountremoved(value: js.Any): Self = StObject.set(x, "onaccountremoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnaccountupdated(value: js.Any): Self = StObject.set(x, "onaccountupdated", value.asInstanceOf[js.Any])
+    inline def setOnaccountupdated(value: js.Any): Self = StObject.set(x, "onaccountupdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
+    inline def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
+    inline def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatus(value: MobileBroadbandAccountWatcherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MobileBroadbandAccountWatcherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

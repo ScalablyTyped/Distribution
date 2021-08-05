@@ -10,11 +10,8 @@ object stateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNextUniqueTensorId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextUniqueTensorId")().asInstanceOf[Double]
+  inline def getNextUniqueTensorId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextUniqueTensorId")().asInstanceOf[Double]
   
-  @scala.inline
-  def getUid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")().asInstanceOf[String]
-  @scala.inline
-  def getUid(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")().asInstanceOf[String]
+  inline def getUid(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
 }

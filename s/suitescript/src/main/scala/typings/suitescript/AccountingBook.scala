@@ -12,19 +12,15 @@ trait AccountingBook extends StObject {
 }
 object AccountingBook {
   
-  @scala.inline
-  def apply(getId: () => Double, isPrimary: () => Boolean): AccountingBook = {
+  inline def apply(getId: () => Double, isPrimary: () => Boolean): AccountingBook = {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), isPrimary = js.Any.fromFunction0(isPrimary))
     __obj.asInstanceOf[AccountingBook]
   }
   
-  @scala.inline
-  implicit class AccountingBookMutableBuilder[Self <: AccountingBook] (val x: Self) extends AnyVal {
+  extension [Self <: AccountingBook](x: Self) {
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPrimary(value: () => Boolean): Self = StObject.set(x, "isPrimary", js.Any.fromFunction0(value))
+    inline def setIsPrimary(value: () => Boolean): Self = StObject.set(x, "isPrimary", js.Any.fromFunction0(value))
   }
 }

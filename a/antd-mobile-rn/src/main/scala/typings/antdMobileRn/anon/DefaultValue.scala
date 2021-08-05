@@ -20,8 +20,7 @@ trait DefaultValue extends StObject {
 }
 object DefaultValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: Double,
     disabled: Boolean,
     maximumTrackTintColor: String,
@@ -33,25 +32,18 @@ object DefaultValue {
     __obj.asInstanceOf[DefaultValue]
   }
   
-  @scala.inline
-  implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultValue](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
+    inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumTrackTintColor(value: String): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
+    inline def setMinimumTrackTintColor(value: String): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAfterChange(value: () => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction0(value))
+    inline def setOnAfterChange(value: () => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
   }
 }

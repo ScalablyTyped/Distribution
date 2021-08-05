@@ -27,8 +27,7 @@ trait XStorable2
 }
 object XStorable2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Location: String,
     acquire: () => Unit,
     getLocation: () => String,
@@ -45,10 +44,8 @@ object XStorable2 {
     __obj.asInstanceOf[XStorable2]
   }
   
-  @scala.inline
-  implicit class XStorable2MutableBuilder[Self <: XStorable2] (val x: Self) extends AnyVal {
+  extension [Self <: XStorable2](x: Self) {
     
-    @scala.inline
-    def setStoreSelf(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "storeSelf", js.Any.fromFunction1(value))
+    inline def setStoreSelf(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "storeSelf", js.Any.fromFunction1(value))
   }
 }

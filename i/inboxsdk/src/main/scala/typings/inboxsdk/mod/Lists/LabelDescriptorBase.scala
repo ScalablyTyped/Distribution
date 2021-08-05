@@ -16,34 +16,25 @@ trait LabelDescriptorBase extends StObject {
 }
 object LabelDescriptorBase {
   
-  @scala.inline
-  def apply(title: String): LabelDescriptorBase = {
+  inline def apply(title: String): LabelDescriptorBase = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelDescriptorBase]
   }
   
-  @scala.inline
-  implicit class LabelDescriptorBaseMutableBuilder[Self <: LabelDescriptorBase] (val x: Self) extends AnyVal {
+  extension [Self <: LabelDescriptorBase](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+    inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
-    @scala.inline
-    def setIconBackgroundColor(value: String): Self = StObject.set(x, "iconBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setIconBackgroundColor(value: String): Self = StObject.set(x, "iconBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconBackgroundColorUndefined: Self = StObject.set(x, "iconBackgroundColor", js.undefined)
+    inline def setIconBackgroundColorUndefined: Self = StObject.set(x, "iconBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

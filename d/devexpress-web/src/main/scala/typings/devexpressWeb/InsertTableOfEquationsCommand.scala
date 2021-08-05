@@ -18,16 +18,13 @@ trait InsertTableOfEquationsCommand
 }
 object InsertTableOfEquationsCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableOfEquationsCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableOfEquationsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertTableOfEquationsCommand]
   }
   
-  @scala.inline
-  implicit class InsertTableOfEquationsCommandMutableBuilder[Self <: InsertTableOfEquationsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTableOfEquationsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

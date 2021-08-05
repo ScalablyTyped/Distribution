@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DropLines")
 @js.native
-class DropLines protected ()
+/* private */ class DropLines ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DropLines {
   
@@ -31,7 +31,7 @@ class DropLines protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.DropLines_typekey")
   var PowerPointDotDropLines_typekey: typings.activexPowerpoint.PowerPoint.DropLines = js.native
   

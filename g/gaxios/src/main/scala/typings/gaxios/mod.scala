@@ -34,6 +34,5 @@ object mod {
   @js.native
   val instance: typings.gaxios.gaxiosMod.Gaxios = js.native
   
-  @scala.inline
-  def request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GaxiosResponse[T]]]
+  inline def request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GaxiosResponse[T]]]
 }

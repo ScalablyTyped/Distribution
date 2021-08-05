@@ -28,41 +28,30 @@ object portalPortalMod {
   }
   object PortalProps {
     
-    @scala.inline
-    def apply(children: ReactElement): PortalProps = {
+    inline def apply(children: ReactElement): PortalProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortalProps]
     }
     
-    @scala.inline
-    implicit class PortalPropsMutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ReactInstance | js.Function0[ReactInstance]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ReactInstance | js.Function0[ReactInstance]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerFunction0(value: () => ReactInstance): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
+      inline def setContainerFunction0(value: () => ReactInstance): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDisablePortal(value: Boolean): Self = StObject.set(x, "disablePortal", value.asInstanceOf[js.Any])
+      inline def setDisablePortal(value: Boolean): Self = StObject.set(x, "disablePortal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePortalUndefined: Self = StObject.set(x, "disablePortal", js.undefined)
+      inline def setDisablePortalUndefined: Self = StObject.set(x, "disablePortal", js.undefined)
       
-      @scala.inline
-      def setOnRendered(value: () => Unit): Self = StObject.set(x, "onRendered", js.Any.fromFunction0(value))
+      inline def setOnRendered(value: () => Unit): Self = StObject.set(x, "onRendered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRenderedUndefined: Self = StObject.set(x, "onRendered", js.undefined)
+      inline def setOnRenderedUndefined: Self = StObject.set(x, "onRendered", js.undefined)
     }
   }
 }

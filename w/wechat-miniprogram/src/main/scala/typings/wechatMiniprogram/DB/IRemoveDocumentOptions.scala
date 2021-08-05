@@ -13,16 +13,13 @@ trait IRemoveDocumentOptions
 }
 object IRemoveDocumentOptions {
   
-  @scala.inline
-  def apply(query: IQueryCondition): IRemoveDocumentOptions = {
+  inline def apply(query: IQueryCondition): IRemoveDocumentOptions = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemoveDocumentOptions]
   }
   
-  @scala.inline
-  implicit class IRemoveDocumentOptionsMutableBuilder[Self <: IRemoveDocumentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRemoveDocumentOptions](x: Self) {
     
-    @scala.inline
-    def setQuery(value: IQueryCondition): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: IQueryCondition): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

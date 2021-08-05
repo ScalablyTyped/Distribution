@@ -23,7 +23,7 @@ trait Hyperlink extends StObject {
   
   var EmailSubject: String = js.native
   
-  @JSName("Excel.Hyperlink_typekey")
+  /* private */ @JSName("Excel.Hyperlink_typekey")
   var ExcelDotHyperlink_typekey: Hyperlink = js.native
   
   def Follow(): Unit = js.native

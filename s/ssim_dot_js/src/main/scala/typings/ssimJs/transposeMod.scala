@@ -11,6 +11,5 @@ object transposeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transpose(hasRefWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(hasRefWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def transpose(hasRefWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(hasRefWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
 }

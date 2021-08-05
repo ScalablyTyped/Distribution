@@ -25,19 +25,16 @@ object srcComponentsHorizontalMenuMod {
     @JSImport("wix-ui-core/src/components/horizontal-menu", "HorizontalMenu.Item")
     @js.native
     def Item: TypeofHorizontalMenuItemInstantiableDefaultProps = js.native
-    @scala.inline
-    def Item_=(x: TypeofHorizontalMenuItemInstantiableDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: TypeofHorizontalMenuItemInstantiableDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/horizontal-menu", "HorizontalMenu.Layout")
     @js.native
     def Layout: GridFC = js.native
-    @scala.inline
-    def Layout_=(x: GridFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layout")(x.asInstanceOf[js.Any])
+    inline def Layout_=(x: GridFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layout")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/horizontal-menu", "HorizontalMenu.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

@@ -18,15 +18,14 @@ trait SmartArtLayout extends StObject {
   
   val Name: String
   
-  @JSName("Office.SmartArtLayout_typekey")
+  /* private */ @JSName("Office.SmartArtLayout_typekey")
   var OfficeDotSmartArtLayout_typekey: SmartArtLayout
   
   val Parent: js.Any
 }
 object SmartArtLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Category: String,
     Creator: Double,
@@ -41,31 +40,22 @@ object SmartArtLayout {
     __obj.asInstanceOf[SmartArtLayout]
   }
   
-  @scala.inline
-  implicit class SmartArtLayoutMutableBuilder[Self <: SmartArtLayout] (val x: Self) extends AnyVal {
+  extension [Self <: SmartArtLayout](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotSmartArtLayout_typekey(value: SmartArtLayout): Self = StObject.set(x, "Office.SmartArtLayout_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotSmartArtLayout_typekey(value: SmartArtLayout): Self = StObject.set(x, "Office.SmartArtLayout_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

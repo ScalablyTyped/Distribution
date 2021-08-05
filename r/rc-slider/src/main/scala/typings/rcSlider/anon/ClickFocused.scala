@@ -10,16 +10,13 @@ trait ClickFocused extends StObject {
 }
 object ClickFocused {
   
-  @scala.inline
-  def apply(clickFocused: Boolean): ClickFocused = {
+  inline def apply(clickFocused: Boolean): ClickFocused = {
     val __obj = js.Dynamic.literal(clickFocused = clickFocused.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickFocused]
   }
   
-  @scala.inline
-  implicit class ClickFocusedMutableBuilder[Self <: ClickFocused] (val x: Self) extends AnyVal {
+  extension [Self <: ClickFocused](x: Self) {
     
-    @scala.inline
-    def setClickFocused(value: Boolean): Self = StObject.set(x, "clickFocused", value.asInstanceOf[js.Any])
+    inline def setClickFocused(value: Boolean): Self = StObject.set(x, "clickFocused", value.asInstanceOf[js.Any])
   }
 }

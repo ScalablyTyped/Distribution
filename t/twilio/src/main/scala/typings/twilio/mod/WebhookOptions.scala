@@ -16,37 +16,27 @@ trait WebhookOptions extends StObject {
 }
 object WebhookOptions {
   
-  @scala.inline
-  def apply(): WebhookOptions = {
+  inline def apply(): WebhookOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebhookOptions]
   }
   
-  @scala.inline
-  implicit class WebhookOptionsMutableBuilder[Self <: WebhookOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookOptions](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setIncludeHelpers(value: Boolean): Self = StObject.set(x, "includeHelpers", value.asInstanceOf[js.Any])
+    inline def setIncludeHelpers(value: Boolean): Self = StObject.set(x, "includeHelpers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeHelpersUndefined: Self = StObject.set(x, "includeHelpers", js.undefined)
+    inline def setIncludeHelpersUndefined: Self = StObject.set(x, "includeHelpers", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

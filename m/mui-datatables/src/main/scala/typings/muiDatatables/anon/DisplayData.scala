@@ -10,19 +10,15 @@ trait DisplayData extends StObject {
 }
 object DisplayData {
   
-  @scala.inline
-  def apply(displayData: typings.muiDatatables.mod.DisplayData): DisplayData = {
+  inline def apply(displayData: typings.muiDatatables.mod.DisplayData): DisplayData = {
     val __obj = js.Dynamic.literal(displayData = displayData.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayData]
   }
   
-  @scala.inline
-  implicit class DisplayDataMutableBuilder[Self <: DisplayData] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayData](x: Self) {
     
-    @scala.inline
-    def setDisplayData(value: typings.muiDatatables.mod.DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
+    inline def setDisplayData(value: typings.muiDatatables.mod.DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
+    inline def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
   }
 }

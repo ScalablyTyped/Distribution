@@ -23,34 +23,25 @@ trait ComposeEnvironmentsMessage extends StObject {
 }
 object ComposeEnvironmentsMessage {
   
-  @scala.inline
-  def apply(): ComposeEnvironmentsMessage = {
+  inline def apply(): ComposeEnvironmentsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComposeEnvironmentsMessage]
   }
   
-  @scala.inline
-  implicit class ComposeEnvironmentsMessageMutableBuilder[Self <: ComposeEnvironmentsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ComposeEnvironmentsMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setVersionLabels(value: VersionLabels): Self = StObject.set(x, "VersionLabels", value.asInstanceOf[js.Any])
+    inline def setVersionLabels(value: VersionLabels): Self = StObject.set(x, "VersionLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionLabelsUndefined: Self = StObject.set(x, "VersionLabels", js.undefined)
+    inline def setVersionLabelsUndefined: Self = StObject.set(x, "VersionLabels", js.undefined)
     
-    @scala.inline
-    def setVersionLabelsVarargs(value: VersionLabel*): Self = StObject.set(x, "VersionLabels", js.Array(value :_*))
+    inline def setVersionLabelsVarargs(value: VersionLabel*): Self = StObject.set(x, "VersionLabels", js.Array(value :_*))
   }
 }

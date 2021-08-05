@@ -25,38 +25,28 @@ trait SyncfileAppender
 }
 object SyncfileAppender {
   
-  @scala.inline
-  def apply(filename: String): SyncfileAppender = {
+  inline def apply(filename: String): SyncfileAppender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fileSync")
     __obj.asInstanceOf[SyncfileAppender]
   }
   
-  @scala.inline
-  implicit class SyncfileAppenderMutableBuilder[Self <: SyncfileAppender] (val x: Self) extends AnyVal {
+  extension [Self <: SyncfileAppender](x: Self) {
     
-    @scala.inline
-    def setBackups(value: Double): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
+    inline def setBackups(value: Double): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
+    inline def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setMaxLogSize(value: Double | String): Self = StObject.set(x, "maxLogSize", value.asInstanceOf[js.Any])
+    inline def setMaxLogSize(value: Double | String): Self = StObject.set(x, "maxLogSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLogSizeUndefined: Self = StObject.set(x, "maxLogSize", js.undefined)
+    inline def setMaxLogSizeUndefined: Self = StObject.set(x, "maxLogSize", js.undefined)
     
-    @scala.inline
-    def setType(value: fileSync): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: fileSync): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

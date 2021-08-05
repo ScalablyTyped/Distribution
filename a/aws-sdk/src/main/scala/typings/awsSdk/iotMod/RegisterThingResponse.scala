@@ -18,25 +18,19 @@ trait RegisterThingResponse extends StObject {
 }
 object RegisterThingResponse {
   
-  @scala.inline
-  def apply(): RegisterThingResponse = {
+  inline def apply(): RegisterThingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterThingResponse]
   }
   
-  @scala.inline
-  implicit class RegisterThingResponseMutableBuilder[Self <: RegisterThingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterThingResponse](x: Self) {
     
-    @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
+    inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
     
-    @scala.inline
-    def setResourceArns(value: ResourceArns): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
+    inline def setResourceArns(value: ResourceArns): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
+    inline def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
   }
 }

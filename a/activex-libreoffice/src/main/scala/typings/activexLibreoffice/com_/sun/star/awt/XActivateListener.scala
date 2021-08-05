@@ -34,8 +34,7 @@ trait XActivateListener
 }
 object XActivateListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -47,13 +46,10 @@ object XActivateListener {
     __obj.asInstanceOf[XActivateListener]
   }
   
-  @scala.inline
-  implicit class XActivateListenerMutableBuilder[Self <: XActivateListener] (val x: Self) extends AnyVal {
+  extension [Self <: XActivateListener](x: Self) {
     
-    @scala.inline
-    def setWindowActivated(value: EventObject => Unit): Self = StObject.set(x, "windowActivated", js.Any.fromFunction1(value))
+    inline def setWindowActivated(value: EventObject => Unit): Self = StObject.set(x, "windowActivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowDeactivated(value: EventObject => Unit): Self = StObject.set(x, "windowDeactivated", js.Any.fromFunction1(value))
+    inline def setWindowDeactivated(value: EventObject => Unit): Self = StObject.set(x, "windowDeactivated", js.Any.fromFunction1(value))
   }
 }

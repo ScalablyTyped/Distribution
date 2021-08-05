@@ -80,73 +80,51 @@ trait WebSceneProperties
 }
 object WebSceneProperties {
   
-  @scala.inline
-  def apply(): WebSceneProperties = {
+  inline def apply(): WebSceneProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebSceneProperties]
   }
   
-  @scala.inline
-  implicit class WebScenePropertiesMutableBuilder[Self <: WebSceneProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WebSceneProperties](x: Self) {
     
-    @scala.inline
-    def setApplicationProperties(value: websceneApplicationPropertiesProperties): Self = StObject.set(x, "applicationProperties", value.asInstanceOf[js.Any])
+    inline def setApplicationProperties(value: websceneApplicationPropertiesProperties): Self = StObject.set(x, "applicationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationPropertiesUndefined: Self = StObject.set(x, "applicationProperties", js.undefined)
+    inline def setApplicationPropertiesUndefined: Self = StObject.set(x, "applicationProperties", js.undefined)
     
-    @scala.inline
-    def setAuthoringApp(value: String): Self = StObject.set(x, "authoringApp", value.asInstanceOf[js.Any])
+    inline def setAuthoringApp(value: String): Self = StObject.set(x, "authoringApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthoringAppUndefined: Self = StObject.set(x, "authoringApp", js.undefined)
+    inline def setAuthoringAppUndefined: Self = StObject.set(x, "authoringApp", js.undefined)
     
-    @scala.inline
-    def setAuthoringAppVersion(value: String): Self = StObject.set(x, "authoringAppVersion", value.asInstanceOf[js.Any])
+    inline def setAuthoringAppVersion(value: String): Self = StObject.set(x, "authoringAppVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthoringAppVersionUndefined: Self = StObject.set(x, "authoringAppVersion", js.undefined)
+    inline def setAuthoringAppVersionUndefined: Self = StObject.set(x, "authoringAppVersion", js.undefined)
     
-    @scala.inline
-    def setClippingArea(value: ExtentProperties): Self = StObject.set(x, "clippingArea", value.asInstanceOf[js.Any])
+    inline def setClippingArea(value: ExtentProperties): Self = StObject.set(x, "clippingArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClippingAreaUndefined: Self = StObject.set(x, "clippingArea", js.undefined)
+    inline def setClippingAreaUndefined: Self = StObject.set(x, "clippingArea", js.undefined)
     
-    @scala.inline
-    def setClippingEnabled(value: Boolean): Self = StObject.set(x, "clippingEnabled", value.asInstanceOf[js.Any])
+    inline def setClippingEnabled(value: Boolean): Self = StObject.set(x, "clippingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClippingEnabledUndefined: Self = StObject.set(x, "clippingEnabled", js.undefined)
+    inline def setClippingEnabledUndefined: Self = StObject.set(x, "clippingEnabled", js.undefined)
     
-    @scala.inline
-    def setHeightModelInfo(value: HeightModelInfoProperties): Self = StObject.set(x, "heightModelInfo", value.asInstanceOf[js.Any])
+    inline def setHeightModelInfo(value: HeightModelInfoProperties): Self = StObject.set(x, "heightModelInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightModelInfoUndefined: Self = StObject.set(x, "heightModelInfo", js.undefined)
+    inline def setHeightModelInfoUndefined: Self = StObject.set(x, "heightModelInfo", js.undefined)
     
-    @scala.inline
-    def setInitialViewProperties(value: websceneInitialViewPropertiesProperties): Self = StObject.set(x, "initialViewProperties", value.asInstanceOf[js.Any])
+    inline def setInitialViewProperties(value: websceneInitialViewPropertiesProperties): Self = StObject.set(x, "initialViewProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialViewPropertiesUndefined: Self = StObject.set(x, "initialViewProperties", js.undefined)
+    inline def setInitialViewPropertiesUndefined: Self = StObject.set(x, "initialViewProperties", js.undefined)
     
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
-    @scala.inline
-    def setPresentation(value: PresentationProperties): Self = StObject.set(x, "presentation", value.asInstanceOf[js.Any])
+    inline def setPresentation(value: PresentationProperties): Self = StObject.set(x, "presentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationUndefined: Self = StObject.set(x, "presentation", js.undefined)
+    inline def setPresentationUndefined: Self = StObject.set(x, "presentation", js.undefined)
     
-    @scala.inline
-    def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+    inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
+    inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
   }
 }

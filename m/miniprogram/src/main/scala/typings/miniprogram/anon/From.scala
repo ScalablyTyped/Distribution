@@ -16,25 +16,19 @@ trait From extends StObject {
 }
 object From {
   
-  @scala.inline
-  def apply(from: String, index: Double, pagePath: String, text: String): From = {
+  inline def apply(from: String, index: Double, pagePath: String, text: String): From = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], pagePath = pagePath.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[From]
   }
   
-  @scala.inline
-  implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+  extension [Self <: From](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
+    inline def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

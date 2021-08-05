@@ -10,19 +10,15 @@ trait AccentColor extends StObject {
 }
 object AccentColor {
   
-  @scala.inline
-  def apply(): AccentColor = {
+  inline def apply(): AccentColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccentColor]
   }
   
-  @scala.inline
-  implicit class AccentColorMutableBuilder[Self <: AccentColor] (val x: Self) extends AnyVal {
+  extension [Self <: AccentColor](x: Self) {
     
-    @scala.inline
-    def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+    inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+    inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
   }
 }

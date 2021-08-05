@@ -20,28 +20,21 @@ trait CreateCollectdTimeSeriesResponse extends StObject {
 }
 object CreateCollectdTimeSeriesResponse {
   
-  @scala.inline
-  def apply(): CreateCollectdTimeSeriesResponse = {
+  inline def apply(): CreateCollectdTimeSeriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCollectdTimeSeriesResponse]
   }
   
-  @scala.inline
-  implicit class CreateCollectdTimeSeriesResponseMutableBuilder[Self <: CreateCollectdTimeSeriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCollectdTimeSeriesResponse](x: Self) {
     
-    @scala.inline
-    def setPayloadErrors(value: js.Array[CollectdPayloadError]): Self = StObject.set(x, "payloadErrors", value.asInstanceOf[js.Any])
+    inline def setPayloadErrors(value: js.Array[CollectdPayloadError]): Self = StObject.set(x, "payloadErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadErrorsUndefined: Self = StObject.set(x, "payloadErrors", js.undefined)
+    inline def setPayloadErrorsUndefined: Self = StObject.set(x, "payloadErrors", js.undefined)
     
-    @scala.inline
-    def setPayloadErrorsVarargs(value: CollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value :_*))
+    inline def setPayloadErrorsVarargs(value: CollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: CreateTimeSeriesSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: CreateTimeSeriesSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

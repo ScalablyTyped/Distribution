@@ -186,14 +186,11 @@ object JWKS {
       * @deprecated in favor of JWKS.asKeyStore
       */
     /* static member */
-    @scala.inline
-    def fromJWKS(jwks: JSONWebKeySet): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJWKS")(jwks.asInstanceOf[js.Any]).asInstanceOf[KeyStore]
+    inline def fromJWKS(jwks: JSONWebKeySet): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJWKS")(jwks.asInstanceOf[js.Any]).asInstanceOf[KeyStore]
   }
   
-  @scala.inline
-  def asKeyStore(jwks: JSONWebKeySet): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(jwks.asInstanceOf[js.Any]).asInstanceOf[KeyStore]
-  @scala.inline
-  def asKeyStore(jwks: JSONWebKeySet, options: JWKSImportOptions): KeyStore = (^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(jwks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyStore]
+  inline def asKeyStore(jwks: JSONWebKeySet): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(jwks.asInstanceOf[js.Any]).asInstanceOf[KeyStore]
+  inline def asKeyStore(jwks: JSONWebKeySet, options: JWKSImportOptions): KeyStore = (^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(jwks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyStore]
   
   trait JWKSImportOptions
     extends StObject
@@ -203,20 +200,16 @@ object JWKS {
   }
   object JWKSImportOptions {
     
-    @scala.inline
-    def apply(): JWKSImportOptions = {
+    inline def apply(): JWKSImportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JWKSImportOptions]
     }
     
-    @scala.inline
-    implicit class JWKSImportOptionsMutableBuilder[Self <: JWKSImportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JWKSImportOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
     }
   }
   
@@ -237,44 +230,32 @@ object JWKS {
   }
   object KeyQuery {
     
-    @scala.inline
-    def apply(): KeyQuery = {
+    inline def apply(): KeyQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyQuery]
     }
     
-    @scala.inline
-    implicit class KeyQueryMutableBuilder[Self <: KeyQuery] (val x: Self) extends AnyVal {
+    extension [Self <: KeyQuery](x: Self) {
       
-      @scala.inline
-      def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
+      inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrvUndefined: Self = StObject.set(x, "crv", js.undefined)
+      inline def setCrvUndefined: Self = StObject.set(x, "crv", js.undefined)
       
-      @scala.inline
-      def setKty(value: keyType): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+      inline def setKty(value: keyType): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
+      inline def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
       
-      @scala.inline
-      def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
+      inline def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbprintUndefined: Self = StObject.set(x, "thumbprint", js.undefined)
+      inline def setThumbprintUndefined: Self = StObject.set(x, "thumbprint", js.undefined)
       
-      @scala.inline
-      def setX5t(value: String): Self = StObject.set(x, "x5t", value.asInstanceOf[js.Any])
+      inline def setX5t(value: String): Self = StObject.set(x, "x5t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX5tNumbersignS256(value: String): Self = StObject.set(x, "x5t#S256", value.asInstanceOf[js.Any])
+      inline def setX5tNumbersignS256(value: String): Self = StObject.set(x, "x5t#S256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX5tNumbersignS256Undefined: Self = StObject.set(x, "x5t#S256", js.undefined)
+      inline def setX5tNumbersignS256Undefined: Self = StObject.set(x, "x5t#S256", js.undefined)
       
-      @scala.inline
-      def setX5tUndefined: Self = StObject.set(x, "x5t", js.undefined)
+      inline def setX5tUndefined: Self = StObject.set(x, "x5t", js.undefined)
     }
   }
 }

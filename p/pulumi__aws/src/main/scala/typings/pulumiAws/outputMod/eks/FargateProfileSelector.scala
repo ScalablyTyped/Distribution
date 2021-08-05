@@ -19,22 +19,17 @@ trait FargateProfileSelector extends StObject {
 }
 object FargateProfileSelector {
   
-  @scala.inline
-  def apply(namespace: String): FargateProfileSelector = {
+  inline def apply(namespace: String): FargateProfileSelector = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[FargateProfileSelector]
   }
   
-  @scala.inline
-  implicit class FargateProfileSelectorMutableBuilder[Self <: FargateProfileSelector] (val x: Self) extends AnyVal {
+  extension [Self <: FargateProfileSelector](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
   }
 }

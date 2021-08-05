@@ -12,19 +12,15 @@ trait Command extends StObject {
 }
 object Command {
   
-  @scala.inline
-  def apply(command: String, keys: String): Command = {
+  inline def apply(command: String, keys: String): Command = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
   
-  @scala.inline
-  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+  extension [Self <: Command](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
   }
 }

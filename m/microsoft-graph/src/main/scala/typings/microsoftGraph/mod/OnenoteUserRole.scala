@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnenoteUserRole extends StObject
 object OnenoteUserRole {
   
-  @scala.inline
-  def Contributor: typings.microsoftGraph.microsoftGraphStrings.Contributor = "Contributor".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Contributor]
+  inline def Contributor: typings.microsoftGraph.microsoftGraphStrings.Contributor = "Contributor".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Contributor]
   
-  @scala.inline
-  def None: typings.microsoftGraph.microsoftGraphStrings.None = "None".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.None]
+  inline def None: typings.microsoftGraph.microsoftGraphStrings.None = "None".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.None]
   
-  @scala.inline
-  def Owner: typings.microsoftGraph.microsoftGraphStrings.Owner = "Owner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Owner]
+  inline def Owner: typings.microsoftGraph.microsoftGraphStrings.Owner = "Owner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Owner]
   
-  @scala.inline
-  def Reader: typings.microsoftGraph.microsoftGraphStrings.Reader = "Reader".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Reader]
+  inline def Reader: typings.microsoftGraph.microsoftGraphStrings.Reader = "Reader".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Reader]
 }

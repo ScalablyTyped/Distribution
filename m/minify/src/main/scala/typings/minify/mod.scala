@@ -12,10 +12,8 @@ object mod {
     * A minifier of js, css, html and img files.
     * @async
     */
-  @scala.inline
-  def apply(name: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(name: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(name: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(name: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("minify", JSImport.Namespace)
   @js.native
@@ -50,38 +48,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCss(value: typings.cleanCss.mod.Options): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: typings.cleanCss.mod.Options): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setHtml(value: typings.htmlMinifierTerser.mod.Options): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: typings.htmlMinifierTerser.mod.Options): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setImg(value: MaxSize): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: MaxSize): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+      inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
       
-      @scala.inline
-      def setJs_(value: MinifyOptions): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+      inline def setJs_(value: MinifyOptions): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
+      inline def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
     }
   }
 }

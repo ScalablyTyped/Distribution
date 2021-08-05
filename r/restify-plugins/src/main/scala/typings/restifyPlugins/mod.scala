@@ -21,61 +21,40 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def acceptParser(accepts: js.Array[String]): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptParser")(accepts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def acceptParser(accepts: js.Array[String]): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptParser")(accepts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("auditLogger")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("auditLogger")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   
-  @scala.inline
-  def authorizationParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def authorizationParser(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def authorizationParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")().asInstanceOf[RequestHandler]
+  inline def authorizationParser(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def bodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")().asInstanceOf[js.Array[RequestHandler]]
-  @scala.inline
-  def bodyParser(options: BodyParserOptions): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
+  inline def bodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")().asInstanceOf[js.Array[RequestHandler]]
+  inline def bodyParser(options: BodyParserOptions): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
   
-  @scala.inline
-  def bodyReader(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def bodyReader(options: MaxBodySize): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def bodyReader(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")().asInstanceOf[RequestHandler]
+  inline def bodyReader(options: MaxBodySize): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def conditionalRequest(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalRequest")().asInstanceOf[js.Array[RequestHandler]]
+  inline def conditionalRequest(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalRequest")().asInstanceOf[js.Array[RequestHandler]]
   
-  @scala.inline
-  def dateParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def dateParser(delta: Double): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")(delta.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def dateParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")().asInstanceOf[RequestHandler]
+  inline def dateParser(delta: Double): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")(delta.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def fullResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fullResponse")().asInstanceOf[RequestHandler]
+  inline def fullResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fullResponse")().asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def gzipResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def gzipResponse(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def gzipResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")().asInstanceOf[RequestHandler]
+  inline def gzipResponse(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def jsonBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")().asInstanceOf[js.Array[RequestHandler]]
-  @scala.inline
-  def jsonBodyParser(options: MapParams): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
+  inline def jsonBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")().asInstanceOf[js.Array[RequestHandler]]
+  inline def jsonBodyParser(options: MapParams): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
   
-  @scala.inline
-  def jsonp(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")().asInstanceOf[RequestHandler]
+  inline def jsonp(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")().asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def metrics(opts: Server, callback: js.Function1[/* options */ MetricsCallback, js.Any]): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def metrics(opts: Server, callback: js.Function1[/* options */ MetricsCallback, js.Any]): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   
-  @scala.inline
-  def multipartBodyParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def multipartBodyParser(options: MultipartBodyParser_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def multipartBodyParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")().asInstanceOf[RequestHandler]
+  inline def multipartBodyParser(options: MultipartBodyParser_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def oauth2TokenParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2TokenParser")().asInstanceOf[RequestHandler]
+  inline def oauth2TokenParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2TokenParser")().asInstanceOf[RequestHandler]
   
   object pre {
     
@@ -86,76 +65,55 @@ object mod {
     /**
       * Provide req.set(key, val) and req.get(key) methods for setting and retrieving context to a specific request.
       */
-    @scala.inline
-    def context(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("context")().asInstanceOf[RequestHandler]
+    inline def context(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("context")().asInstanceOf[RequestHandler]
     
-    @scala.inline
-    def dedupeSlashes(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dedupeSlashes")().asInstanceOf[RequestHandler]
+    inline def dedupeSlashes(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dedupeSlashes")().asInstanceOf[RequestHandler]
     
     /**
       * This pre handler fixes issues with node hanging when an asyncHandler is used prior to bodyParser.
       */
-    @scala.inline
-    def pause(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[RequestHandler]
+    inline def pause(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[RequestHandler]
     
     /**
       * Automatically reuse incoming request header as the request id.
       */
-    @scala.inline
-    def reqIdHeaders(options: Headers): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("reqIdHeaders")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+    inline def reqIdHeaders(options: Headers): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("reqIdHeaders")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
     
     /**
       * Cleans up duplicate or trailing / on the URL
       */
-    @scala.inline
-    def sanitizePath(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizePath")().asInstanceOf[RequestHandler]
+    inline def sanitizePath(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizePath")().asInstanceOf[RequestHandler]
     
     /**
       * Checks req.urls query params with strict key/val format and rejects non-strict requests with status code 400.
       */
-    @scala.inline
-    def strictQueryParams(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")().asInstanceOf[RequestHandler]
-    @scala.inline
-    def strictQueryParams(options: Message): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+    inline def strictQueryParams(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")().asInstanceOf[RequestHandler]
+    inline def strictQueryParams(options: Message): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
     
     /**
       * Regexp to capture curl user-agents
       */
-    @scala.inline
-    def userAgentConnection(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")().asInstanceOf[RequestHandler]
-    @scala.inline
-    def userAgentConnection(options: UserAgentRegExp): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+    inline def userAgentConnection(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")().asInstanceOf[RequestHandler]
+    inline def userAgentConnection(options: UserAgentRegExp): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   }
   
-  @scala.inline
-  def queryParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def queryParser(options: QueryParserOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def queryParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")().asInstanceOf[RequestHandler]
+  inline def queryParser(options: QueryParserOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def requestExpiry(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def requestExpiry(options: RequestExpiryOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def requestExpiry(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")().asInstanceOf[RequestHandler]
+  inline def requestExpiry(options: RequestExpiryOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def requestLogger(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def requestLogger(options: RequestLogger_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def requestLogger(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[RequestHandler]
+  inline def requestLogger(options: RequestLogger_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def serveStatic(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def serveStatic(options: ServeStatic_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def serveStatic(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")().asInstanceOf[RequestHandler]
+  inline def serveStatic(options: ServeStatic_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def throttle(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")().asInstanceOf[RequestHandler]
-  @scala.inline
-  def throttle(options: ThrottleOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def throttle(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")().asInstanceOf[RequestHandler]
+  inline def throttle(options: ThrottleOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def urlEncodedBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")().asInstanceOf[js.Array[RequestHandler]]
-  @scala.inline
-  def urlEncodedBodyParser(options: UrlEncodedBodyParser_): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
+  inline def urlEncodedBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")().asInstanceOf[js.Array[RequestHandler]]
+  inline def urlEncodedBodyParser(options: UrlEncodedBodyParser_): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
   
   trait AuditLoggerOptions extends StObject {
     
@@ -183,41 +141,30 @@ object mod {
   }
   object AuditLoggerOptions {
     
-    @scala.inline
-    def apply(log: typings.bunyan.mod.^): AuditLoggerOptions = {
+    inline def apply(log: typings.bunyan.mod.^): AuditLoggerOptions = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuditLoggerOptions]
     }
     
-    @scala.inline
-    implicit class AuditLoggerOptionsMutableBuilder[Self <: AuditLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuditLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: Boolean): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Boolean): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogBuffer(value: js.Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
+      inline def setLogBuffer(value: js.Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogBufferUndefined: Self = StObject.set(x, "logBuffer", js.undefined)
+      inline def setLogBufferUndefined: Self = StObject.set(x, "logBuffer", js.undefined)
       
-      @scala.inline
-      def setPrintLog(value: Boolean): Self = StObject.set(x, "printLog", value.asInstanceOf[js.Any])
+      inline def setPrintLog(value: Boolean): Self = StObject.set(x, "printLog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintLogUndefined: Self = StObject.set(x, "printLog", js.undefined)
+      inline def setPrintLogUndefined: Self = StObject.set(x, "printLog", js.undefined)
       
-      @scala.inline
-      def setServer(value: typings.restify.mod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: typings.restify.mod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     }
   }
   
@@ -292,92 +239,64 @@ object mod {
   }
   object BodyParserOptions {
     
-    @scala.inline
-    def apply(): BodyParserOptions = {
+    inline def apply(): BodyParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BodyParserOptions]
     }
     
-    @scala.inline
-    implicit class BodyParserOptionsMutableBuilder[Self <: BodyParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BodyParserOptions](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setKeepExtensions(value: Boolean): Self = StObject.set(x, "keepExtensions", value.asInstanceOf[js.Any])
+      inline def setKeepExtensions(value: Boolean): Self = StObject.set(x, "keepExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepExtensionsUndefined: Self = StObject.set(x, "keepExtensions", js.undefined)
+      inline def setKeepExtensionsUndefined: Self = StObject.set(x, "keepExtensions", js.undefined)
       
-      @scala.inline
-      def setMapFiles(value: Boolean): Self = StObject.set(x, "mapFiles", value.asInstanceOf[js.Any])
+      inline def setMapFiles(value: Boolean): Self = StObject.set(x, "mapFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapFilesUndefined: Self = StObject.set(x, "mapFiles", js.undefined)
+      inline def setMapFilesUndefined: Self = StObject.set(x, "mapFiles", js.undefined)
       
-      @scala.inline
-      def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
+      inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
+      inline def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
       
-      @scala.inline
-      def setMaxBodySize(value: Double): Self = StObject.set(x, "maxBodySize", value.asInstanceOf[js.Any])
+      inline def setMaxBodySize(value: Double): Self = StObject.set(x, "maxBodySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBodySizeUndefined: Self = StObject.set(x, "maxBodySize", js.undefined)
+      inline def setMaxBodySizeUndefined: Self = StObject.set(x, "maxBodySize", js.undefined)
       
-      @scala.inline
-      def setMaxFieldsSize(value: Double): Self = StObject.set(x, "maxFieldsSize", value.asInstanceOf[js.Any])
+      inline def setMaxFieldsSize(value: Double): Self = StObject.set(x, "maxFieldsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
+      inline def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
       
-      @scala.inline
-      def setMultipartFileHandler(value: () => Unit): Self = StObject.set(x, "multipartFileHandler", js.Any.fromFunction0(value))
+      inline def setMultipartFileHandler(value: () => Unit): Self = StObject.set(x, "multipartFileHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMultipartFileHandlerUndefined: Self = StObject.set(x, "multipartFileHandler", js.undefined)
+      inline def setMultipartFileHandlerUndefined: Self = StObject.set(x, "multipartFileHandler", js.undefined)
       
-      @scala.inline
-      def setMultipartHandler(value: () => Unit): Self = StObject.set(x, "multipartHandler", js.Any.fromFunction0(value))
+      inline def setMultipartHandler(value: () => Unit): Self = StObject.set(x, "multipartHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMultipartHandlerUndefined: Self = StObject.set(x, "multipartHandler", js.undefined)
+      inline def setMultipartHandlerUndefined: Self = StObject.set(x, "multipartHandler", js.undefined)
       
-      @scala.inline
-      def setMultiples(value: Boolean): Self = StObject.set(x, "multiples", value.asInstanceOf[js.Any])
+      inline def setMultiples(value: Boolean): Self = StObject.set(x, "multiples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplesUndefined: Self = StObject.set(x, "multiples", js.undefined)
+      inline def setMultiplesUndefined: Self = StObject.set(x, "multiples", js.undefined)
       
-      @scala.inline
-      def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
+      inline def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
+      inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
       
-      @scala.inline
-      def setRejectUnknown(value: Boolean): Self = StObject.set(x, "rejectUnknown", value.asInstanceOf[js.Any])
+      inline def setRejectUnknown(value: Boolean): Self = StObject.set(x, "rejectUnknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnknownUndefined: Self = StObject.set(x, "rejectUnknown", js.undefined)
+      inline def setRejectUnknownUndefined: Self = StObject.set(x, "rejectUnknown", js.undefined)
       
-      @scala.inline
-      def setReviver(value: js.Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
+      inline def setReviver(value: js.Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+      inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
       
-      @scala.inline
-      def setUploadDir(value: String): Self = StObject.set(x, "uploadDir", value.asInstanceOf[js.Any])
+      inline def setUploadDir(value: String): Self = StObject.set(x, "uploadDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadDirUndefined: Self = StObject.set(x, "uploadDir", js.undefined)
+      inline def setUploadDirUndefined: Self = StObject.set(x, "uploadDir", js.undefined)
     }
   }
   
@@ -401,29 +320,22 @@ object mod {
   }
   object MetricsCallback {
     
-    @scala.inline
-    def apply(err: Error, metrics: MetricsCallbackOptions, req: Request, res: Response, route: Route): MetricsCallback = {
+    inline def apply(err: Error, metrics: MetricsCallbackOptions, req: Request, res: Response, route: Route): MetricsCallback = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricsCallback]
     }
     
-    @scala.inline
-    implicit class MetricsCallbackMutableBuilder[Self <: MetricsCallback] (val x: Self) extends AnyVal {
+    extension [Self <: MetricsCallback](x: Self) {
       
-      @scala.inline
-      def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetrics(value: MetricsCallbackOptions): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: MetricsCallbackOptions): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRes(value: Response): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Response): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -459,32 +371,24 @@ object mod {
   }
   object MetricsCallbackOptions {
     
-    @scala.inline
-    def apply(latency: Double, method: String, path: String, statusCode: Double): MetricsCallbackOptions = {
+    inline def apply(latency: Double, method: String, path: String, statusCode: Double): MetricsCallbackOptions = {
       val __obj = js.Dynamic.literal(latency = latency.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricsCallbackOptions]
     }
     
-    @scala.inline
-    implicit class MetricsCallbackOptionsMutableBuilder[Self <: MetricsCallbackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetricsCallbackOptions](x: Self) {
       
-      @scala.inline
-      def setConnectionState(value: TMetricsCallback): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
+      inline def setConnectionState(value: TMetricsCallback): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionStateUndefined: Self = StObject.set(x, "connectionState", js.undefined)
+      inline def setConnectionStateUndefined: Self = StObject.set(x, "connectionState", js.undefined)
       
-      @scala.inline
-      def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+      inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -512,74 +416,52 @@ object mod {
   }
   object MultipartBodyParser_ {
     
-    @scala.inline
-    def apply(): MultipartBodyParser_ = {
+    inline def apply(): MultipartBodyParser_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MultipartBodyParser_]
     }
     
-    @scala.inline
-    implicit class MultipartBodyParser_MutableBuilder[Self <: MultipartBodyParser_] (val x: Self) extends AnyVal {
+    extension [Self <: MultipartBodyParser_](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setKeepExtensions(value: Boolean): Self = StObject.set(x, "keepExtensions", value.asInstanceOf[js.Any])
+      inline def setKeepExtensions(value: Boolean): Self = StObject.set(x, "keepExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepExtensionsUndefined: Self = StObject.set(x, "keepExtensions", js.undefined)
+      inline def setKeepExtensionsUndefined: Self = StObject.set(x, "keepExtensions", js.undefined)
       
-      @scala.inline
-      def setMapFiles(value: Boolean): Self = StObject.set(x, "mapFiles", value.asInstanceOf[js.Any])
+      inline def setMapFiles(value: Boolean): Self = StObject.set(x, "mapFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapFilesUndefined: Self = StObject.set(x, "mapFiles", js.undefined)
+      inline def setMapFilesUndefined: Self = StObject.set(x, "mapFiles", js.undefined)
       
-      @scala.inline
-      def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
+      inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
+      inline def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
       
-      @scala.inline
-      def setMaxFieldsSize(value: Double): Self = StObject.set(x, "maxFieldsSize", value.asInstanceOf[js.Any])
+      inline def setMaxFieldsSize(value: Double): Self = StObject.set(x, "maxFieldsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
+      inline def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
       
-      @scala.inline
-      def setMultipartFileHandler(value: js.Any): Self = StObject.set(x, "multipartFileHandler", value.asInstanceOf[js.Any])
+      inline def setMultipartFileHandler(value: js.Any): Self = StObject.set(x, "multipartFileHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipartFileHandlerUndefined: Self = StObject.set(x, "multipartFileHandler", js.undefined)
+      inline def setMultipartFileHandlerUndefined: Self = StObject.set(x, "multipartFileHandler", js.undefined)
       
-      @scala.inline
-      def setMultipartHandler(value: js.Any): Self = StObject.set(x, "multipartHandler", value.asInstanceOf[js.Any])
+      inline def setMultipartHandler(value: js.Any): Self = StObject.set(x, "multipartHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipartHandlerUndefined: Self = StObject.set(x, "multipartHandler", js.undefined)
+      inline def setMultipartHandlerUndefined: Self = StObject.set(x, "multipartHandler", js.undefined)
       
-      @scala.inline
-      def setMultiples(value: Boolean): Self = StObject.set(x, "multiples", value.asInstanceOf[js.Any])
+      inline def setMultiples(value: Boolean): Self = StObject.set(x, "multiples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplesUndefined: Self = StObject.set(x, "multiples", js.undefined)
+      inline def setMultiplesUndefined: Self = StObject.set(x, "multiples", js.undefined)
       
-      @scala.inline
-      def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
+      inline def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
+      inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
       
-      @scala.inline
-      def setUploadDir(value: String): Self = StObject.set(x, "uploadDir", value.asInstanceOf[js.Any])
+      inline def setUploadDir(value: String): Self = StObject.set(x, "uploadDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadDirUndefined: Self = StObject.set(x, "uploadDir", js.undefined)
+      inline def setUploadDirUndefined: Self = StObject.set(x, "uploadDir", js.undefined)
     }
   }
   
@@ -633,68 +515,48 @@ object mod {
   }
   object QueryParserOptions {
     
-    @scala.inline
-    def apply(): QueryParserOptions = {
+    inline def apply(): QueryParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryParserOptions]
     }
     
-    @scala.inline
-    implicit class QueryParserOptionsMutableBuilder[Self <: QueryParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryParserOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDots(value: Boolean): Self = StObject.set(x, "allowDots", value.asInstanceOf[js.Any])
+      inline def setAllowDots(value: Boolean): Self = StObject.set(x, "allowDots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDotsUndefined: Self = StObject.set(x, "allowDots", js.undefined)
+      inline def setAllowDotsUndefined: Self = StObject.set(x, "allowDots", js.undefined)
       
-      @scala.inline
-      def setArrayLimit(value: Double): Self = StObject.set(x, "arrayLimit", value.asInstanceOf[js.Any])
+      inline def setArrayLimit(value: Double): Self = StObject.set(x, "arrayLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayLimitUndefined: Self = StObject.set(x, "arrayLimit", js.undefined)
+      inline def setArrayLimitUndefined: Self = StObject.set(x, "arrayLimit", js.undefined)
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
+      inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
+      inline def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
       
-      @scala.inline
-      def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
+      inline def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
+      inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
       
-      @scala.inline
-      def setParameterLimit(value: Double): Self = StObject.set(x, "parameterLimit", value.asInstanceOf[js.Any])
+      inline def setParameterLimit(value: Double): Self = StObject.set(x, "parameterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterLimitUndefined: Self = StObject.set(x, "parameterLimit", js.undefined)
+      inline def setParameterLimitUndefined: Self = StObject.set(x, "parameterLimit", js.undefined)
       
-      @scala.inline
-      def setParseArrays(value: Boolean): Self = StObject.set(x, "parseArrays", value.asInstanceOf[js.Any])
+      inline def setParseArrays(value: Boolean): Self = StObject.set(x, "parseArrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseArraysUndefined: Self = StObject.set(x, "parseArrays", js.undefined)
+      inline def setParseArraysUndefined: Self = StObject.set(x, "parseArrays", js.undefined)
       
-      @scala.inline
-      def setPlainObjects(value: Boolean): Self = StObject.set(x, "plainObjects", value.asInstanceOf[js.Any])
+      inline def setPlainObjects(value: Boolean): Self = StObject.set(x, "plainObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlainObjectsUndefined: Self = StObject.set(x, "plainObjects", js.undefined)
+      inline def setPlainObjectsUndefined: Self = StObject.set(x, "plainObjects", js.undefined)
       
-      @scala.inline
-      def setStrictNullHandling(value: Boolean): Self = StObject.set(x, "strictNullHandling", value.asInstanceOf[js.Any])
+      inline def setStrictNullHandling(value: Boolean): Self = StObject.set(x, "strictNullHandling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictNullHandlingUndefined: Self = StObject.set(x, "strictNullHandling", js.undefined)
+      inline def setStrictNullHandlingUndefined: Self = StObject.set(x, "strictNullHandling", js.undefined)
     }
   }
   
@@ -717,32 +579,24 @@ object mod {
   }
   object RequestExpiryOptions {
     
-    @scala.inline
-    def apply(): RequestExpiryOptions = {
+    inline def apply(): RequestExpiryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestExpiryOptions]
     }
     
-    @scala.inline
-    implicit class RequestExpiryOptionsMutableBuilder[Self <: RequestExpiryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestExpiryOptions](x: Self) {
       
-      @scala.inline
-      def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
+      inline def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteHeaderUndefined: Self = StObject.set(x, "absoluteHeader", js.undefined)
+      inline def setAbsoluteHeaderUndefined: Self = StObject.set(x, "absoluteHeader", js.undefined)
       
-      @scala.inline
-      def setStartHeader(value: String): Self = StObject.set(x, "startHeader", value.asInstanceOf[js.Any])
+      inline def setStartHeader(value: String): Self = StObject.set(x, "startHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartHeaderUndefined: Self = StObject.set(x, "startHeader", js.undefined)
+      inline def setStartHeaderUndefined: Self = StObject.set(x, "startHeader", js.undefined)
       
-      @scala.inline
-      def setTimeoutHeader(value: String): Self = StObject.set(x, "timeoutHeader", value.asInstanceOf[js.Any])
+      inline def setTimeoutHeader(value: String): Self = StObject.set(x, "timeoutHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutHeaderUndefined: Self = StObject.set(x, "timeoutHeader", js.undefined)
+      inline def setTimeoutHeaderUndefined: Self = StObject.set(x, "timeoutHeader", js.undefined)
     }
   }
   
@@ -758,38 +612,28 @@ object mod {
   }
   object RequestLogger_ {
     
-    @scala.inline
-    def apply(): RequestLogger_ = {
+    inline def apply(): RequestLogger_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestLogger_]
     }
     
-    @scala.inline
-    implicit class RequestLogger_MutableBuilder[Self <: RequestLogger_] (val x: Self) extends AnyVal {
+    extension [Self <: RequestLogger_](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setSerializers(value: js.Any): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: js.Any): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
     }
   }
   
@@ -815,68 +659,48 @@ object mod {
   }
   object ServeStatic_ {
     
-    @scala.inline
-    def apply(): ServeStatic_ = {
+    inline def apply(): ServeStatic_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServeStatic_]
     }
     
-    @scala.inline
-    implicit class ServeStatic_MutableBuilder[Self <: ServeStatic_] (val x: Self) extends AnyVal {
+    extension [Self <: ServeStatic_](x: Self) {
       
-      @scala.inline
-      def setAppendRequestPath(value: Boolean): Self = StObject.set(x, "appendRequestPath", value.asInstanceOf[js.Any])
+      inline def setAppendRequestPath(value: Boolean): Self = StObject.set(x, "appendRequestPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendRequestPathUndefined: Self = StObject.set(x, "appendRequestPath", js.undefined)
+      inline def setAppendRequestPathUndefined: Self = StObject.set(x, "appendRequestPath", js.undefined)
       
-      @scala.inline
-      def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+      inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
+      inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+      inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+      inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
       
-      @scala.inline
-      def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     }
   }
   
@@ -907,62 +731,44 @@ object mod {
   }
   object ThrottleOptions {
     
-    @scala.inline
-    def apply(): ThrottleOptions = {
+    inline def apply(): ThrottleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThrottleOptions]
     }
     
-    @scala.inline
-    implicit class ThrottleOptionsMutableBuilder[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ThrottleOptions](x: Self) {
       
-      @scala.inline
-      def setBurst(value: Double): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
+      inline def setBurst(value: Double): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
+      inline def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
       
-      @scala.inline
-      def setIp(value: Boolean): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: Boolean): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      @scala.inline
-      def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
+      inline def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
+      inline def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: js.Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: js.Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setTokensTable(value: js.Any): Self = StObject.set(x, "tokensTable", value.asInstanceOf[js.Any])
+      inline def setTokensTable(value: js.Any): Self = StObject.set(x, "tokensTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensTableUndefined: Self = StObject.set(x, "tokensTable", js.undefined)
+      inline def setTokensTableUndefined: Self = StObject.set(x, "tokensTable", js.undefined)
       
-      @scala.inline
-      def setUsername(value: Boolean): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Boolean): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      @scala.inline
-      def setXff(value: Boolean): Self = StObject.set(x, "xff", value.asInstanceOf[js.Any])
+      inline def setXff(value: Boolean): Self = StObject.set(x, "xff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXffUndefined: Self = StObject.set(x, "xff", js.undefined)
+      inline def setXffUndefined: Self = StObject.set(x, "xff", js.undefined)
     }
   }
   
@@ -974,26 +780,20 @@ object mod {
   }
   object UrlEncodedBodyParser_ {
     
-    @scala.inline
-    def apply(): UrlEncodedBodyParser_ = {
+    inline def apply(): UrlEncodedBodyParser_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UrlEncodedBodyParser_]
     }
     
-    @scala.inline
-    implicit class UrlEncodedBodyParser_MutableBuilder[Self <: UrlEncodedBodyParser_] (val x: Self) extends AnyVal {
+    extension [Self <: UrlEncodedBodyParser_](x: Self) {
       
-      @scala.inline
-      def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
+      inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
+      inline def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
       
-      @scala.inline
-      def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
+      inline def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
+      inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
     }
   }
   

@@ -10,16 +10,13 @@ trait PageId extends StObject {
 }
 object PageId {
   
-  @scala.inline
-  def apply(pageId: String): PageId = {
+  inline def apply(pageId: String): PageId = {
     val __obj = js.Dynamic.literal(pageId = pageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageId]
   }
   
-  @scala.inline
-  implicit class PageIdMutableBuilder[Self <: PageId] (val x: Self) extends AnyVal {
+  extension [Self <: PageId](x: Self) {
     
-    @scala.inline
-    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
+    inline def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
   }
 }

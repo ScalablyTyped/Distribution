@@ -37,8 +37,7 @@ trait ElementTouchEvent
 }
 object ElementTouchEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     camera: CameraComponent,
     changedTouches: js.Array[Touch],
     element: ElementComponent,
@@ -51,22 +50,16 @@ object ElementTouchEvent {
     __obj.asInstanceOf[ElementTouchEvent]
   }
   
-  @scala.inline
-  implicit class ElementTouchEventMutableBuilder[Self <: ElementTouchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ElementTouchEvent](x: Self) {
     
-    @scala.inline
-    def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    inline def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+    inline def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
     
-    @scala.inline
-    def setTouch(value: Touch): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Touch): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    inline def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value :_*))
+    inline def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value :_*))
   }
 }

@@ -27,9 +27,9 @@ object mod {
     /**
       * Default option base on @type IAskmethatRatingOptions
       */
-    var _defaultOptions: js.Any = js.native
+    /* private */ var _defaultOptions: js.Any = js.native
     
-    var changeEvent: js.Any = js.native
+    /* private */ var changeEvent: js.Any = js.native
     
     /**
       * @function get the default option for the rating
@@ -55,7 +55,7 @@ object mod {
       */
     /* private */ def initPopover(): js.Any = js.native
     
-    var mouseMove: js.Any = js.native
+    /* private */ var mouseMove: js.Any = js.native
     
     /**
       * This is fired by mutation observer when an attribute changed in the hidden input
@@ -89,11 +89,11 @@ object mod {
       */
     /* private */ def onRatingClick(event: js.Any): js.Any = js.native
     
-    var pValue: js.Any = js.native
+    /* private */ var pValue: js.Any = js.native
     
-    var parentElement: js.Any = js.native
+    /* private */ var parentElement: js.Any = js.native
     
-    var ratingClick: js.Any = js.native
+    /* private */ var ratingClick: js.Any = js.native
     
     /**
       * render a new rating, by default value is the minRating
@@ -110,7 +110,7 @@ object mod {
       */
     /* protected */ def setOrUnsetActive(value: Double): Unit = js.native
     
-    var styleSheet: js.Any = js.native
+    /* private */ var styleSheet: js.Any = js.native
     
     /**
       * @function get the current value for the rating
@@ -135,8 +135,7 @@ object mod {
       * @param  {string} identifier: string container identifier
       * @return {number} current rating
       */
-    @scala.inline
-    def value(identifier: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(identifier.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def value(identifier: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(identifier.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @js.native
@@ -222,68 +221,48 @@ object mod {
   }
   object AskmethatRatingOptions {
     
-    @scala.inline
-    def apply(): AskmethatRatingOptions = {
+    inline def apply(): AskmethatRatingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AskmethatRatingOptions]
     }
     
-    @scala.inline
-    implicit class AskmethatRatingOptionsMutableBuilder[Self <: AskmethatRatingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AskmethatRatingOptions](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setFontClass(value: String): Self = StObject.set(x, "fontClass", value.asInstanceOf[js.Any])
+      inline def setFontClass(value: String): Self = StObject.set(x, "fontClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontClassUndefined: Self = StObject.set(x, "fontClass", js.undefined)
+      inline def setFontClassUndefined: Self = StObject.set(x, "fontClass", js.undefined)
       
-      @scala.inline
-      def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
+      inline def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
+      inline def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
       
-      @scala.inline
-      def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+      inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
+      inline def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
       
-      @scala.inline
-      def setMaxRating(value: Double): Self = StObject.set(x, "maxRating", value.asInstanceOf[js.Any])
+      inline def setMaxRating(value: Double): Self = StObject.set(x, "maxRating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRatingUndefined: Self = StObject.set(x, "maxRating", js.undefined)
+      inline def setMaxRatingUndefined: Self = StObject.set(x, "maxRating", js.undefined)
       
-      @scala.inline
-      def setMinRating(value: Double): Self = StObject.set(x, "minRating", value.asInstanceOf[js.Any])
+      inline def setMinRating(value: Double): Self = StObject.set(x, "minRating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinRatingUndefined: Self = StObject.set(x, "minRating", js.undefined)
+      inline def setMinRatingUndefined: Self = StObject.set(x, "minRating", js.undefined)
       
-      @scala.inline
-      def setPopover(value: AskmethatRatingPopoverOptions): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+      inline def setPopover(value: AskmethatRatingPopoverOptions): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
+      inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
       
-      @scala.inline
-      def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+      inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+      inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
       
-      @scala.inline
-      def setStep(value: AskmethatRatingSteps): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: AskmethatRatingSteps): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
 }

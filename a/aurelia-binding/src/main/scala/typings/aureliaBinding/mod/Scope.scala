@@ -20,19 +20,15 @@ trait Scope extends StObject {
 }
 object Scope {
   
-  @scala.inline
-  def apply(bindingContext: js.Any, overrideContext: OverrideContext): Scope = {
+  inline def apply(bindingContext: js.Any, overrideContext: OverrideContext): Scope = {
     val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], overrideContext = overrideContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
   
-  @scala.inline
-  implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+  extension [Self <: Scope](x: Self) {
     
-    @scala.inline
-    def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    inline def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideContext(value: OverrideContext): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
+    inline def setOverrideContext(value: OverrideContext): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
   }
 }

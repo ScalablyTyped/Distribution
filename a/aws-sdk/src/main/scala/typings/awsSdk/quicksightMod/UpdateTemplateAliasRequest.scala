@@ -28,8 +28,7 @@ trait UpdateTemplateAliasRequest extends StObject {
 }
 object UpdateTemplateAliasRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AliasName: AliasName,
     AwsAccountId: AwsAccountId,
     TemplateId: RestrictiveResourceId,
@@ -39,19 +38,14 @@ object UpdateTemplateAliasRequest {
     __obj.asInstanceOf[UpdateTemplateAliasRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTemplateAliasRequestMutableBuilder[Self <: UpdateTemplateAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTemplateAliasRequest](x: Self) {
     
-    @scala.inline
-    def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
+    inline def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateVersionNumber(value: VersionNumber): Self = StObject.set(x, "TemplateVersionNumber", value.asInstanceOf[js.Any])
+    inline def setTemplateVersionNumber(value: VersionNumber): Self = StObject.set(x, "TemplateVersionNumber", value.asInstanceOf[js.Any])
   }
 }

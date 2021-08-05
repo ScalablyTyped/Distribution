@@ -11,15 +11,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAsset[T](fn: PromiseFn): Clear[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsset")(fn.asInstanceOf[js.Any]).asInstanceOf[Clear[T]]
-  @scala.inline
-  def createAsset[T](fn: PromiseFn, lifespan: Double): Clear[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsset")(fn.asInstanceOf[js.Any], lifespan.asInstanceOf[js.Any])).asInstanceOf[Clear[T]]
+  inline def createAsset[T](fn: PromiseFn): Clear[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsset")(fn.asInstanceOf[js.Any]).asInstanceOf[Clear[T]]
+  inline def createAsset[T](fn: PromiseFn, lifespan: Double): Clear[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsset")(fn.asInstanceOf[js.Any], lifespan.asInstanceOf[js.Any])).asInstanceOf[Clear[T]]
   
   object useAsset {
     
-    @scala.inline
-    def apply(fn: PromiseFn, args: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(fn: PromiseFn, args: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("use-asset", "useAsset")
     @js.native
@@ -28,26 +25,22 @@ object mod {
     @JSImport("use-asset", "useAsset.clear")
     @js.native
     def clear: js.Function1[/* repeated */ js.Any, Unit] = js.native
-    @scala.inline
-    def clear_=(x: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clear")(x.asInstanceOf[js.Any])
+    inline def clear_=(x: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clear")(x.asInstanceOf[js.Any])
     
     @JSImport("use-asset", "useAsset.lifespan")
     @js.native
     def lifespan: Double = js.native
-    @scala.inline
-    def lifespan_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lifespan")(x.asInstanceOf[js.Any])
+    inline def lifespan_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lifespan")(x.asInstanceOf[js.Any])
     
     @JSImport("use-asset", "useAsset.peek")
     @js.native
     def peek: js.Function1[/* repeated */ js.Any, js.Any] = js.native
-    @scala.inline
-    def peek_=(x: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("peek")(x.asInstanceOf[js.Any])
+    inline def peek_=(x: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("peek")(x.asInstanceOf[js.Any])
     
     @JSImport("use-asset", "useAsset.preload")
     @js.native
     def preload: js.Function2[/* fn */ PromiseFn, /* repeated */ js.Any, Unit] = js.native
-    @scala.inline
-    def preload_=(x: js.Function2[/* fn */ PromiseFn, /* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preload")(x.asInstanceOf[js.Any])
+    inline def preload_=(x: js.Function2[/* fn */ PromiseFn, /* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preload")(x.asInstanceOf[js.Any])
   }
   
   type PromiseFn = js.Function1[/* args */ js.Any, js.Promise[js.Any]]

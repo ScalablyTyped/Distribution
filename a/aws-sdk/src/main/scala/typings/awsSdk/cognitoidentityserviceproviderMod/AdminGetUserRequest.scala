@@ -18,19 +18,15 @@ trait AdminGetUserRequest extends StObject {
 }
 object AdminGetUserRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminGetUserRequest = {
+  inline def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminGetUserRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminGetUserRequest]
   }
   
-  @scala.inline
-  implicit class AdminGetUserRequestMutableBuilder[Self <: AdminGetUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminGetUserRequest](x: Self) {
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

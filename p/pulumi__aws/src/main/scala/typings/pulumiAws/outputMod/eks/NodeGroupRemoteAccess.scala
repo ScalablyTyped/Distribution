@@ -18,28 +18,21 @@ trait NodeGroupRemoteAccess extends StObject {
 }
 object NodeGroupRemoteAccess {
   
-  @scala.inline
-  def apply(): NodeGroupRemoteAccess = {
+  inline def apply(): NodeGroupRemoteAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupRemoteAccess]
   }
   
-  @scala.inline
-  implicit class NodeGroupRemoteAccessMutableBuilder[Self <: NodeGroupRemoteAccess] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupRemoteAccess](x: Self) {
     
-    @scala.inline
-    def setEc2SshKey(value: String): Self = StObject.set(x, "ec2SshKey", value.asInstanceOf[js.Any])
+    inline def setEc2SshKey(value: String): Self = StObject.set(x, "ec2SshKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2SshKeyUndefined: Self = StObject.set(x, "ec2SshKey", js.undefined)
+    inline def setEc2SshKeyUndefined: Self = StObject.set(x, "ec2SshKey", js.undefined)
     
-    @scala.inline
-    def setSourceSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "sourceSecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSourceSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "sourceSecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSecurityGroupIdsUndefined: Self = StObject.set(x, "sourceSecurityGroupIds", js.undefined)
+    inline def setSourceSecurityGroupIdsUndefined: Self = StObject.set(x, "sourceSecurityGroupIds", js.undefined)
     
-    @scala.inline
-    def setSourceSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "sourceSecurityGroupIds", js.Array(value :_*))
+    inline def setSourceSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "sourceSecurityGroupIds", js.Array(value :_*))
   }
 }

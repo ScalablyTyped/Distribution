@@ -13,19 +13,15 @@ trait SchemaConferenceParameters extends StObject {
 }
 object SchemaConferenceParameters {
   
-  @scala.inline
-  def apply(): SchemaConferenceParameters = {
+  inline def apply(): SchemaConferenceParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConferenceParameters]
   }
   
-  @scala.inline
-  implicit class SchemaConferenceParametersMutableBuilder[Self <: SchemaConferenceParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConferenceParameters](x: Self) {
     
-    @scala.inline
-    def setAddOnParameters(value: SchemaConferenceParametersAddOnParameters): Self = StObject.set(x, "addOnParameters", value.asInstanceOf[js.Any])
+    inline def setAddOnParameters(value: SchemaConferenceParametersAddOnParameters): Self = StObject.set(x, "addOnParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnParametersUndefined: Self = StObject.set(x, "addOnParameters", js.undefined)
+    inline def setAddOnParametersUndefined: Self = StObject.set(x, "addOnParameters", js.undefined)
   }
 }

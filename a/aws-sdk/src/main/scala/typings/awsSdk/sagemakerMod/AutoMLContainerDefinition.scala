@@ -23,25 +23,19 @@ trait AutoMLContainerDefinition extends StObject {
 }
 object AutoMLContainerDefinition {
   
-  @scala.inline
-  def apply(Image: ContainerImage, ModelDataUrl: Url): AutoMLContainerDefinition = {
+  inline def apply(Image: ContainerImage, ModelDataUrl: Url): AutoMLContainerDefinition = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any], ModelDataUrl = ModelDataUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLContainerDefinition]
   }
   
-  @scala.inline
-  implicit class AutoMLContainerDefinitionMutableBuilder[Self <: AutoMLContainerDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLContainerDefinition](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: EnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: EnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
-    @scala.inline
-    def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
+    inline def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
   }
 }

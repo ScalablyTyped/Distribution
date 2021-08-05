@@ -16,37 +16,27 @@ trait ScryptOptions extends StObject {
 }
 object ScryptOptions {
   
-  @scala.inline
-  def apply(): ScryptOptions = {
+  inline def apply(): ScryptOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScryptOptions]
   }
   
-  @scala.inline
-  implicit class ScryptOptionsMutableBuilder[Self <: ScryptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScryptOptions](x: Self) {
     
-    @scala.inline
-    def setMaxmem(value: Double): Self = StObject.set(x, "maxmem", value.asInstanceOf[js.Any])
+    inline def setMaxmem(value: Double): Self = StObject.set(x, "maxmem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxmemUndefined: Self = StObject.set(x, "maxmem", js.undefined)
+    inline def setMaxmemUndefined: Self = StObject.set(x, "maxmem", js.undefined)
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
-    @scala.inline
-    def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
   }
 }

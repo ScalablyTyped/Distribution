@@ -12,19 +12,15 @@ trait SocialSignInOptions extends StObject {
 }
 object SocialSignInOptions {
   
-  @scala.inline
-  def apply(access_token: String, connection: String): SocialSignInOptions = {
+  inline def apply(access_token: String, connection: String): SocialSignInOptions = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialSignInOptions]
   }
   
-  @scala.inline
-  implicit class SocialSignInOptionsMutableBuilder[Self <: SocialSignInOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SocialSignInOptions](x: Self) {
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
   }
 }

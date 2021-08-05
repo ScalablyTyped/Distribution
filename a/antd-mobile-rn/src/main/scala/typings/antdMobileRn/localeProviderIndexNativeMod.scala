@@ -22,13 +22,11 @@ object localeProviderIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/locale-provider/index.native", "default.childContextTypes")
     @js.native
     def childContextTypes: AntLocale = js.native
-    @scala.inline
-    def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    inline def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/locale-provider/index.native", "default.propTypes")
     @js.native
     def propTypes: Locale = js.native
-    @scala.inline
-    def propTypes_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

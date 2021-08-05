@@ -23,22 +23,17 @@ trait DeleteAssetRequest extends StObject {
 }
 object DeleteAssetRequest {
   
-  @scala.inline
-  def apply(AssetId: string, DataSetId: string, RevisionId: string): DeleteAssetRequest = {
+  inline def apply(AssetId: string, DataSetId: string, RevisionId: string): DeleteAssetRequest = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAssetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAssetRequestMutableBuilder[Self <: DeleteAssetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAssetRequest](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: string): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: string): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

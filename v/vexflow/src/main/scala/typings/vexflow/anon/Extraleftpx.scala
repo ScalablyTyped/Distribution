@@ -16,25 +16,19 @@ trait Extraleftpx extends StObject {
 }
 object Extraleftpx {
   
-  @scala.inline
-  def apply(extra_left_px: Double, extra_right_px: Double, spacing: Double, width: Double): Extraleftpx = {
+  inline def apply(extra_left_px: Double, extra_right_px: Double, spacing: Double, width: Double): Extraleftpx = {
     val __obj = js.Dynamic.literal(extra_left_px = extra_left_px.asInstanceOf[js.Any], extra_right_px = extra_right_px.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extraleftpx]
   }
   
-  @scala.inline
-  implicit class ExtraleftpxMutableBuilder[Self <: Extraleftpx] (val x: Self) extends AnyVal {
+  extension [Self <: Extraleftpx](x: Self) {
     
-    @scala.inline
-    def setExtra_left_px(value: Double): Self = StObject.set(x, "extra_left_px", value.asInstanceOf[js.Any])
+    inline def setExtra_left_px(value: Double): Self = StObject.set(x, "extra_left_px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra_right_px(value: Double): Self = StObject.set(x, "extra_right_px", value.asInstanceOf[js.Any])
+    inline def setExtra_right_px(value: Double): Self = StObject.set(x, "extra_right_px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

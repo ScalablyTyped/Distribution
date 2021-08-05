@@ -26,52 +26,37 @@ trait LiasettingsCustomBatchResponseEntry extends StObject {
 }
 object LiasettingsCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): LiasettingsCustomBatchResponseEntry = {
+  inline def apply(): LiasettingsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiasettingsCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class LiasettingsCustomBatchResponseEntryMutableBuilder[Self <: LiasettingsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: LiasettingsCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setGmbAccounts(value: GmbAccounts): Self = StObject.set(x, "gmbAccounts", value.asInstanceOf[js.Any])
+    inline def setGmbAccounts(value: GmbAccounts): Self = StObject.set(x, "gmbAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
+    inline def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLiaSettings(value: LiaSettings): Self = StObject.set(x, "liaSettings", value.asInstanceOf[js.Any])
+    inline def setLiaSettings(value: LiaSettings): Self = StObject.set(x, "liaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiaSettingsUndefined: Self = StObject.set(x, "liaSettings", js.undefined)
+    inline def setLiaSettingsUndefined: Self = StObject.set(x, "liaSettings", js.undefined)
     
-    @scala.inline
-    def setPosDataProviders(value: js.Array[PosDataProviders]): Self = StObject.set(x, "posDataProviders", value.asInstanceOf[js.Any])
+    inline def setPosDataProviders(value: js.Array[PosDataProviders]): Self = StObject.set(x, "posDataProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
+    inline def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
-    @scala.inline
-    def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
+    inline def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
   }
 }

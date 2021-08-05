@@ -36,8 +36,7 @@ object argsTableMod {
     /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT & String = js.native
   }
   
-  @scala.inline
-  def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
+  inline def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
   
   @JSImport("@storybook/components/dist/blocks/ArgsTable", "TabbedArgsTable")
   @js.native

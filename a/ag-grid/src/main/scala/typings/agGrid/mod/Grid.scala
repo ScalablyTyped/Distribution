@@ -24,33 +24,26 @@ object Grid {
   @JSImport("ag-grid", "Grid.RowModelClasses")
   @js.native
   def RowModelClasses: js.Any = js.native
-  @scala.inline
-  def RowModelClasses_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowModelClasses")(x.asInstanceOf[js.Any])
+  inline def RowModelClasses_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowModelClasses")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid", "Grid.enterpriseBeans")
   @js.native
   def enterpriseBeans: js.Any = js.native
-  @scala.inline
-  def enterpriseBeans_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterpriseBeans")(x.asInstanceOf[js.Any])
+  inline def enterpriseBeans_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterpriseBeans")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid", "Grid.enterpriseComponents")
   @js.native
   def enterpriseComponents: js.Any = js.native
-  @scala.inline
-  def enterpriseComponents_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterpriseComponents")(x.asInstanceOf[js.Any])
+  inline def enterpriseComponents_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterpriseComponents")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid", "Grid.frameworkBeans")
   @js.native
   def frameworkBeans: js.Any = js.native
-  @scala.inline
-  def frameworkBeans_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameworkBeans")(x.asInstanceOf[js.Any])
+  inline def frameworkBeans_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameworkBeans")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def setEnterpriseBeans(enterpriseBeans: js.Array[js.Any], rowModelClasses: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseBeans")(enterpriseBeans.asInstanceOf[js.Any], rowModelClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setEnterpriseBeans(enterpriseBeans: js.Array[js.Any], rowModelClasses: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseBeans")(enterpriseBeans.asInstanceOf[js.Any], rowModelClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setEnterpriseComponents(components: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEnterpriseComponents(components: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setFrameworkBeans(frameworkBeans: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrameworkBeans")(frameworkBeans.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFrameworkBeans(frameworkBeans: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrameworkBeans")(frameworkBeans.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

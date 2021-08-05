@@ -28,8 +28,7 @@ trait ListTrafficPolicyVersionsResponse extends StObject {
 }
 object ListTrafficPolicyVersionsResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsTruncated: PageTruncated,
     MaxItems: PageMaxItems,
     TrafficPolicies: TrafficPolicies,
@@ -39,22 +38,16 @@ object ListTrafficPolicyVersionsResponse {
     __obj.asInstanceOf[ListTrafficPolicyVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListTrafficPolicyVersionsResponseMutableBuilder[Self <: ListTrafficPolicyVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTrafficPolicyVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicies(value: TrafficPolicies): Self = StObject.set(x, "TrafficPolicies", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicies(value: TrafficPolicies): Self = StObject.set(x, "TrafficPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPoliciesVarargs(value: TrafficPolicy*): Self = StObject.set(x, "TrafficPolicies", js.Array(value :_*))
+    inline def setTrafficPoliciesVarargs(value: TrafficPolicy*): Self = StObject.set(x, "TrafficPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setTrafficPolicyVersionMarker(value: TrafficPolicyVersionMarker): Self = StObject.set(x, "TrafficPolicyVersionMarker", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyVersionMarker(value: TrafficPolicyVersionMarker): Self = StObject.set(x, "TrafficPolicyVersionMarker", value.asInstanceOf[js.Any])
   }
 }

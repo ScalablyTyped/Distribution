@@ -25,8 +25,7 @@ trait IMediaEncodingProfileStatics extends StObject {
 }
 object IMediaEncodingProfileStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createFromFileAsync: IStorageFile => IAsyncOperation[MediaEncodingProfile],
     createFromStreamAsync: IRandomAccessStream => IAsyncOperation[MediaEncodingProfile],
     createM4a: AudioEncodingQuality => MediaEncodingProfile,
@@ -39,28 +38,20 @@ object IMediaEncodingProfileStatics {
     __obj.asInstanceOf[IMediaEncodingProfileStatics]
   }
   
-  @scala.inline
-  implicit class IMediaEncodingProfileStaticsMutableBuilder[Self <: IMediaEncodingProfileStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaEncodingProfileStatics](x: Self) {
     
-    @scala.inline
-    def setCreateFromFileAsync(value: IStorageFile => IAsyncOperation[MediaEncodingProfile]): Self = StObject.set(x, "createFromFileAsync", js.Any.fromFunction1(value))
+    inline def setCreateFromFileAsync(value: IStorageFile => IAsyncOperation[MediaEncodingProfile]): Self = StObject.set(x, "createFromFileAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFromStreamAsync(value: IRandomAccessStream => IAsyncOperation[MediaEncodingProfile]): Self = StObject.set(x, "createFromStreamAsync", js.Any.fromFunction1(value))
+    inline def setCreateFromStreamAsync(value: IRandomAccessStream => IAsyncOperation[MediaEncodingProfile]): Self = StObject.set(x, "createFromStreamAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateM4a(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createM4a", js.Any.fromFunction1(value))
+    inline def setCreateM4a(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createM4a", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateMp3(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createMp3", js.Any.fromFunction1(value))
+    inline def setCreateMp3(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createMp3", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateMp4(value: VideoEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createMp4", js.Any.fromFunction1(value))
+    inline def setCreateMp4(value: VideoEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createMp4", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWma(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createWma", js.Any.fromFunction1(value))
+    inline def setCreateWma(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createWma", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWmv(value: VideoEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createWmv", js.Any.fromFunction1(value))
+    inline def setCreateWmv(value: VideoEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createWmv", js.Any.fromFunction1(value))
   }
 }

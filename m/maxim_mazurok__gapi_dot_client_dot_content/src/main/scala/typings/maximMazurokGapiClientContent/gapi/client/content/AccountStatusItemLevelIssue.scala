@@ -32,61 +32,43 @@ trait AccountStatusItemLevelIssue extends StObject {
 }
 object AccountStatusItemLevelIssue {
   
-  @scala.inline
-  def apply(): AccountStatusItemLevelIssue = {
+  inline def apply(): AccountStatusItemLevelIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountStatusItemLevelIssue]
   }
   
-  @scala.inline
-  implicit class AccountStatusItemLevelIssueMutableBuilder[Self <: AccountStatusItemLevelIssue] (val x: Self) extends AnyVal {
+  extension [Self <: AccountStatusItemLevelIssue](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setNumItems(value: String): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
+    inline def setNumItems(value: String): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
+    inline def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
     
-    @scala.inline
-    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
-    @scala.inline
-    def setServability(value: String): Self = StObject.set(x, "servability", value.asInstanceOf[js.Any])
+    inline def setServability(value: String): Self = StObject.set(x, "servability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServabilityUndefined: Self = StObject.set(x, "servability", js.undefined)
+    inline def setServabilityUndefined: Self = StObject.set(x, "servability", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetGeoMatchSetRequest extends StObject {
 }
 object GetGeoMatchSetRequest {
   
-  @scala.inline
-  def apply(GeoMatchSetId: ResourceId): GetGeoMatchSetRequest = {
+  inline def apply(GeoMatchSetId: ResourceId): GetGeoMatchSetRequest = {
     val __obj = js.Dynamic.literal(GeoMatchSetId = GeoMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGeoMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class GetGeoMatchSetRequestMutableBuilder[Self <: GetGeoMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGeoMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
+    inline def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait GetBucketCorsInput
      with typings.awsSdkClientS3Browser.typesGetBucketCorsInputMod.GetBucketCorsInput
 object GetBucketCorsInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketCorsInput = {
+  inline def apply(Bucket: String): GetBucketCorsInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketCorsInput]
   }

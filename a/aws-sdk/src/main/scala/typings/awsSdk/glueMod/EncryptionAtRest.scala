@@ -18,22 +18,17 @@ trait EncryptionAtRest extends StObject {
 }
 object EncryptionAtRest {
   
-  @scala.inline
-  def apply(CatalogEncryptionMode: CatalogEncryptionMode): EncryptionAtRest = {
+  inline def apply(CatalogEncryptionMode: CatalogEncryptionMode): EncryptionAtRest = {
     val __obj = js.Dynamic.literal(CatalogEncryptionMode = CatalogEncryptionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionAtRest]
   }
   
-  @scala.inline
-  implicit class EncryptionAtRestMutableBuilder[Self <: EncryptionAtRest] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionAtRest](x: Self) {
     
-    @scala.inline
-    def setCatalogEncryptionMode(value: CatalogEncryptionMode): Self = StObject.set(x, "CatalogEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setCatalogEncryptionMode(value: CatalogEncryptionMode): Self = StObject.set(x, "CatalogEncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseAwsKmsKeyId(value: NameString): Self = StObject.set(x, "SseAwsKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setSseAwsKmsKeyId(value: NameString): Self = StObject.set(x, "SseAwsKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseAwsKmsKeyIdUndefined: Self = StObject.set(x, "SseAwsKmsKeyId", js.undefined)
+    inline def setSseAwsKmsKeyIdUndefined: Self = StObject.set(x, "SseAwsKmsKeyId", js.undefined)
   }
 }

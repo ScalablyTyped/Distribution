@@ -22,8 +22,7 @@ trait ContractDefinition
 }
 object ContractDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseContracts: js.Array[InheritanceSpecifier],
     kind: String,
     name: String,
@@ -34,28 +33,20 @@ object ContractDefinition {
     __obj.asInstanceOf[ContractDefinition]
   }
   
-  @scala.inline
-  implicit class ContractDefinitionMutableBuilder[Self <: ContractDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ContractDefinition](x: Self) {
     
-    @scala.inline
-    def setBaseContracts(value: js.Array[InheritanceSpecifier]): Self = StObject.set(x, "baseContracts", value.asInstanceOf[js.Any])
+    inline def setBaseContracts(value: js.Array[InheritanceSpecifier]): Self = StObject.set(x, "baseContracts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseContractsVarargs(value: InheritanceSpecifier*): Self = StObject.set(x, "baseContracts", js.Array(value :_*))
+    inline def setBaseContractsVarargs(value: InheritanceSpecifier*): Self = StObject.set(x, "baseContracts", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubNodes(value: js.Array[ASTNode]): Self = StObject.set(x, "subNodes", value.asInstanceOf[js.Any])
+    inline def setSubNodes(value: js.Array[ASTNode]): Self = StObject.set(x, "subNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubNodesVarargs(value: ASTNode*): Self = StObject.set(x, "subNodes", js.Array(value :_*))
+    inline def setSubNodesVarargs(value: ASTNode*): Self = StObject.set(x, "subNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

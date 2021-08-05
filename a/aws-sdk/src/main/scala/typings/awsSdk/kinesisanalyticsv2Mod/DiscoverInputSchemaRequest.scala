@@ -33,40 +33,29 @@ trait DiscoverInputSchemaRequest extends StObject {
 }
 object DiscoverInputSchemaRequest {
   
-  @scala.inline
-  def apply(ServiceExecutionRole: RoleARN): DiscoverInputSchemaRequest = {
+  inline def apply(ServiceExecutionRole: RoleARN): DiscoverInputSchemaRequest = {
     val __obj = js.Dynamic.literal(ServiceExecutionRole = ServiceExecutionRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoverInputSchemaRequest]
   }
   
-  @scala.inline
-  implicit class DiscoverInputSchemaRequestMutableBuilder[Self <: DiscoverInputSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoverInputSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "InputProcessingConfiguration", js.undefined)
+    inline def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "InputProcessingConfiguration", js.undefined)
     
-    @scala.inline
-    def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = StObject.set(x, "InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = StObject.set(x, "InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStartingPositionConfigurationUndefined: Self = StObject.set(x, "InputStartingPositionConfiguration", js.undefined)
+    inline def setInputStartingPositionConfigurationUndefined: Self = StObject.set(x, "InputStartingPositionConfiguration", js.undefined)
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
-    @scala.inline
-    def setS3Configuration(value: S3Configuration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
+    inline def setS3Configuration(value: S3Configuration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ConfigurationUndefined: Self = StObject.set(x, "S3Configuration", js.undefined)
+    inline def setS3ConfigurationUndefined: Self = StObject.set(x, "S3Configuration", js.undefined)
     
-    @scala.inline
-    def setServiceExecutionRole(value: RoleARN): Self = StObject.set(x, "ServiceExecutionRole", value.asInstanceOf[js.Any])
+    inline def setServiceExecutionRole(value: RoleARN): Self = StObject.set(x, "ServiceExecutionRole", value.asInstanceOf[js.Any])
   }
 }

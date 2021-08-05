@@ -15,25 +15,19 @@ trait Cancel extends StObject {
 }
 object Cancel {
   
-  @scala.inline
-  def apply(cancel: () => Unit, runPeriodically: (js.Function0[Unit], Double) => Unit): Cancel = {
+  inline def apply(cancel: () => Unit, runPeriodically: (js.Function0[Unit], Double) => Unit): Cancel = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), runPeriodically = js.Any.fromFunction2(runPeriodically))
     __obj.asInstanceOf[Cancel]
   }
   
-  @scala.inline
-  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+  extension [Self <: Cancel](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRunPeriodically(value: (js.Function0[Unit], Double) => Unit): Self = StObject.set(x, "runPeriodically", js.Any.fromFunction2(value))
+    inline def setRunPeriodically(value: (js.Function0[Unit], Double) => Unit): Self = StObject.set(x, "runPeriodically", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_intervalId(value: Timeout): Self = StObject.set(x, "_intervalId", value.asInstanceOf[js.Any])
+    inline def set_intervalId(value: Timeout): Self = StObject.set(x, "_intervalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_intervalIdUndefined: Self = StObject.set(x, "_intervalId", js.undefined)
+    inline def set_intervalIdUndefined: Self = StObject.set(x, "_intervalId", js.undefined)
   }
 }

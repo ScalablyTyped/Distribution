@@ -24,23 +24,18 @@ trait SeccompProfile extends StObject {
 }
 object SeccompProfile {
   
-  @scala.inline
-  def apply(`type`: Input[String]): SeccompProfile = {
+  inline def apply(`type`: Input[String]): SeccompProfile = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeccompProfile]
   }
   
-  @scala.inline
-  implicit class SeccompProfileMutableBuilder[Self <: SeccompProfile] (val x: Self) extends AnyVal {
+  extension [Self <: SeccompProfile](x: Self) {
     
-    @scala.inline
-    def setLocalhostProfile(value: Input[String]): Self = StObject.set(x, "localhostProfile", value.asInstanceOf[js.Any])
+    inline def setLocalhostProfile(value: Input[String]): Self = StObject.set(x, "localhostProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalhostProfileUndefined: Self = StObject.set(x, "localhostProfile", js.undefined)
+    inline def setLocalhostProfileUndefined: Self = StObject.set(x, "localhostProfile", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

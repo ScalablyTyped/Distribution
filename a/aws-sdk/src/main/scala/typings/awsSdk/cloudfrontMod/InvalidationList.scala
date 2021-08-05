@@ -38,40 +38,29 @@ trait InvalidationList extends StObject {
 }
 object InvalidationList {
   
-  @scala.inline
-  def apply(IsTruncated: Boolean, Marker: String, MaxItems: integer, Quantity: integer): InvalidationList = {
+  inline def apply(IsTruncated: Boolean, Marker: String, MaxItems: integer, Quantity: integer): InvalidationList = {
     val __obj = js.Dynamic.literal(IsTruncated = IsTruncated.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidationList]
   }
   
-  @scala.inline
-  implicit class InvalidationListMutableBuilder[Self <: InvalidationList] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidationList](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: InvalidationSummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: InvalidationSummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: InvalidationSummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InvalidationSummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

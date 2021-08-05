@@ -23,31 +23,23 @@ trait WorkflowExecutionCancelRequestedEventAttributes extends StObject {
 }
 object WorkflowExecutionCancelRequestedEventAttributes {
   
-  @scala.inline
-  def apply(): WorkflowExecutionCancelRequestedEventAttributes = {
+  inline def apply(): WorkflowExecutionCancelRequestedEventAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkflowExecutionCancelRequestedEventAttributes]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionCancelRequestedEventAttributesMutableBuilder[Self <: WorkflowExecutionCancelRequestedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionCancelRequestedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setCause(value: WorkflowExecutionCancelRequestedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: WorkflowExecutionCancelRequestedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setExternalInitiatedEventId(value: EventId): Self = StObject.set(x, "externalInitiatedEventId", value.asInstanceOf[js.Any])
+    inline def setExternalInitiatedEventId(value: EventId): Self = StObject.set(x, "externalInitiatedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalInitiatedEventIdUndefined: Self = StObject.set(x, "externalInitiatedEventId", js.undefined)
+    inline def setExternalInitiatedEventIdUndefined: Self = StObject.set(x, "externalInitiatedEventId", js.undefined)
     
-    @scala.inline
-    def setExternalWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "externalWorkflowExecution", value.asInstanceOf[js.Any])
+    inline def setExternalWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "externalWorkflowExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalWorkflowExecutionUndefined: Self = StObject.set(x, "externalWorkflowExecution", js.undefined)
+    inline def setExternalWorkflowExecutionUndefined: Self = StObject.set(x, "externalWorkflowExecution", js.undefined)
   }
 }

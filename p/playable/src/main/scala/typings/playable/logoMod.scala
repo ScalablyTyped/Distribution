@@ -35,22 +35,19 @@ object logoMod {
     @JSImport("playable/dist/src/modules/ui/controls/logo/logo", "default.View")
     @js.native
     def View: Instantiable1[/* config */ ILogoViewConfig, typings.playable.logoViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ ILogoViewConfig, typings.playable.logoViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ ILogoViewConfig, typings.playable.logoViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/controls/logo/logo", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/controls/logo/logo", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -58,31 +55,31 @@ object logoMod {
     extends StObject
        with ILogoControl {
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _callback: js.Any = js.native
+    /* private */ var _callback: js.Any = js.native
     
-    var _destroyInterceptor: js.Any = js.native
+    /* private */ var _destroyInterceptor: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _initInterceptor: js.Any = js.native
+    /* private */ var _initInterceptor: js.Any = js.native
     
-    var _initUI: js.Any = js.native
+    /* private */ var _initUI: js.Any = js.native
     
-    var _interceptor: js.Any = js.native
+    /* private */ var _interceptor: js.Any = js.native
     
-    var _logoSrc: js.Any = js.native
+    /* private */ var _logoSrc: js.Any = js.native
     
-    var _setProperDisplayState: js.Any = js.native
+    /* private */ var _setProperDisplayState: js.Any = js.native
     
-    var _textMap: js.Any = js.native
+    /* private */ var _textMap: js.Any = js.native
     
-    var _theme: js.Any = js.native
+    /* private */ var _theme: js.Any = js.native
     
-    var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: js.Any = js.native
     
-    var _triggerCallback: js.Any = js.native
+    /* private */ var _triggerCallback: js.Any = js.native
     
     var isHidden: Boolean = js.native
     

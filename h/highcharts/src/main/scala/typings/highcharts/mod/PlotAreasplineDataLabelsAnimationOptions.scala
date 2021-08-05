@@ -15,19 +15,15 @@ trait PlotAreasplineDataLabelsAnimationOptions extends StObject {
 }
 object PlotAreasplineDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotAreasplineDataLabelsAnimationOptions = {
+  inline def apply(): PlotAreasplineDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotAreasplineDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotAreasplineDataLabelsAnimationOptionsMutableBuilder[Self <: PlotAreasplineDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotAreasplineDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

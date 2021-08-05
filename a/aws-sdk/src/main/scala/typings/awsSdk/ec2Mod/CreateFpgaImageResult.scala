@@ -18,25 +18,19 @@ trait CreateFpgaImageResult extends StObject {
 }
 object CreateFpgaImageResult {
   
-  @scala.inline
-  def apply(): CreateFpgaImageResult = {
+  inline def apply(): CreateFpgaImageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFpgaImageResult]
   }
   
-  @scala.inline
-  implicit class CreateFpgaImageResultMutableBuilder[Self <: CreateFpgaImageResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFpgaImageResult](x: Self) {
     
-    @scala.inline
-    def setFpgaImageGlobalId(value: String): Self = StObject.set(x, "FpgaImageGlobalId", value.asInstanceOf[js.Any])
+    inline def setFpgaImageGlobalId(value: String): Self = StObject.set(x, "FpgaImageGlobalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpgaImageGlobalIdUndefined: Self = StObject.set(x, "FpgaImageGlobalId", js.undefined)
+    inline def setFpgaImageGlobalIdUndefined: Self = StObject.set(x, "FpgaImageGlobalId", js.undefined)
     
-    @scala.inline
-    def setFpgaImageId(value: String): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
+    inline def setFpgaImageId(value: String): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpgaImageIdUndefined: Self = StObject.set(x, "FpgaImageId", js.undefined)
+    inline def setFpgaImageIdUndefined: Self = StObject.set(x, "FpgaImageId", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait UpdatedArgs extends StObject {
 }
 object UpdatedArgs {
   
-  @scala.inline
-  def apply(forced: Boolean): UpdatedArgs = {
+  inline def apply(forced: Boolean): UpdatedArgs = {
     val __obj = js.Dynamic.literal(forced = forced.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatedArgs]
   }
   
-  @scala.inline
-  implicit class UpdatedArgsMutableBuilder[Self <: UpdatedArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatedArgs](x: Self) {
     
-    @scala.inline
-    def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
+    inline def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
   }
 }

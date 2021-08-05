@@ -23,31 +23,23 @@ trait DeleteFleetSuccessItem extends StObject {
 }
 object DeleteFleetSuccessItem {
   
-  @scala.inline
-  def apply(): DeleteFleetSuccessItem = {
+  inline def apply(): DeleteFleetSuccessItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFleetSuccessItem]
   }
   
-  @scala.inline
-  implicit class DeleteFleetSuccessItemMutableBuilder[Self <: DeleteFleetSuccessItem] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFleetSuccessItem](x: Self) {
     
-    @scala.inline
-    def setCurrentFleetState(value: FleetStateCode): Self = StObject.set(x, "CurrentFleetState", value.asInstanceOf[js.Any])
+    inline def setCurrentFleetState(value: FleetStateCode): Self = StObject.set(x, "CurrentFleetState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFleetStateUndefined: Self = StObject.set(x, "CurrentFleetState", js.undefined)
+    inline def setCurrentFleetStateUndefined: Self = StObject.set(x, "CurrentFleetState", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setPreviousFleetState(value: FleetStateCode): Self = StObject.set(x, "PreviousFleetState", value.asInstanceOf[js.Any])
+    inline def setPreviousFleetState(value: FleetStateCode): Self = StObject.set(x, "PreviousFleetState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousFleetStateUndefined: Self = StObject.set(x, "PreviousFleetState", js.undefined)
+    inline def setPreviousFleetStateUndefined: Self = StObject.set(x, "PreviousFleetState", js.undefined)
   }
 }

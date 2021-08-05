@@ -23,8 +23,7 @@ trait PersistentPropertySet
      with XPropertyAccess
 object PersistentPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Key: String,
     Name: String,
     PropertySetInfo: XPropertySetInfo,

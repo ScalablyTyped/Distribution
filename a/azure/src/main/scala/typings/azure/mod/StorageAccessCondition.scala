@@ -17,8 +17,7 @@ trait StorageAccessCondition extends StObject {
 }
 object StorageAccessCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `If-Match`: String,
     `If-Modified-Since`: Date,
     `If-None-Match`: String,
@@ -32,19 +31,14 @@ object StorageAccessCondition {
     __obj.asInstanceOf[StorageAccessCondition]
   }
   
-  @scala.inline
-  implicit class StorageAccessConditionMutableBuilder[Self <: StorageAccessCondition] (val x: Self) extends AnyVal {
+  extension [Self <: StorageAccessCondition](x: Self) {
     
-    @scala.inline
-    def `setIf-Match`(value: String): Self = StObject.set(x, "If-Match", value.asInstanceOf[js.Any])
+    inline def `setIf-Match`(value: String): Self = StObject.set(x, "If-Match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIf-Modified-Since`(value: Date): Self = StObject.set(x, "If-Modified-Since", value.asInstanceOf[js.Any])
+    inline def `setIf-Modified-Since`(value: Date): Self = StObject.set(x, "If-Modified-Since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIf-None-Match`(value: String): Self = StObject.set(x, "If-None-Match", value.asInstanceOf[js.Any])
+    inline def `setIf-None-Match`(value: String): Self = StObject.set(x, "If-None-Match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIf-Unmodified-Since`(value: Date): Self = StObject.set(x, "If-Unmodified-Since", value.asInstanceOf[js.Any])
+    inline def `setIf-Unmodified-Since`(value: Date): Self = StObject.set(x, "If-Unmodified-Since", value.asInstanceOf[js.Any])
   }
 }

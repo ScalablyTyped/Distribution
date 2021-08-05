@@ -11,22 +11,17 @@ trait ListBrandsResponse extends StObject {
 }
 object ListBrandsResponse {
   
-  @scala.inline
-  def apply(): ListBrandsResponse = {
+  inline def apply(): ListBrandsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBrandsResponse]
   }
   
-  @scala.inline
-  implicit class ListBrandsResponseMutableBuilder[Self <: ListBrandsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListBrandsResponse](x: Self) {
     
-    @scala.inline
-    def setBrands(value: js.Array[Brand]): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
+    inline def setBrands(value: js.Array[Brand]): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandsUndefined: Self = StObject.set(x, "brands", js.undefined)
+    inline def setBrandsUndefined: Self = StObject.set(x, "brands", js.undefined)
     
-    @scala.inline
-    def setBrandsVarargs(value: Brand*): Self = StObject.set(x, "brands", js.Array(value :_*))
+    inline def setBrandsVarargs(value: Brand*): Self = StObject.set(x, "brands", js.Array(value :_*))
   }
 }

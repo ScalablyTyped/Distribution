@@ -18,28 +18,21 @@ trait ListContactFlowsResponse extends StObject {
 }
 object ListContactFlowsResponse {
   
-  @scala.inline
-  def apply(): ListContactFlowsResponse = {
+  inline def apply(): ListContactFlowsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListContactFlowsResponse]
   }
   
-  @scala.inline
-  implicit class ListContactFlowsResponseMutableBuilder[Self <: ListContactFlowsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListContactFlowsResponse](x: Self) {
     
-    @scala.inline
-    def setContactFlowSummaryList(value: ContactFlowSummaryList): Self = StObject.set(x, "ContactFlowSummaryList", value.asInstanceOf[js.Any])
+    inline def setContactFlowSummaryList(value: ContactFlowSummaryList): Self = StObject.set(x, "ContactFlowSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactFlowSummaryListUndefined: Self = StObject.set(x, "ContactFlowSummaryList", js.undefined)
+    inline def setContactFlowSummaryListUndefined: Self = StObject.set(x, "ContactFlowSummaryList", js.undefined)
     
-    @scala.inline
-    def setContactFlowSummaryListVarargs(value: ContactFlowSummary*): Self = StObject.set(x, "ContactFlowSummaryList", js.Array(value :_*))
+    inline def setContactFlowSummaryListVarargs(value: ContactFlowSummary*): Self = StObject.set(x, "ContactFlowSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

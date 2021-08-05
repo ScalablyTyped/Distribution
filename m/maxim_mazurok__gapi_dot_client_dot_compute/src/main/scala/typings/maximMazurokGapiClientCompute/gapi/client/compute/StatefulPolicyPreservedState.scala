@@ -16,23 +16,19 @@ trait StatefulPolicyPreservedState extends StObject {
 }
 object StatefulPolicyPreservedState {
   
-  @scala.inline
-  def apply(): StatefulPolicyPreservedState = {
+  inline def apply(): StatefulPolicyPreservedState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulPolicyPreservedState]
   }
   
-  @scala.inline
-  implicit class StatefulPolicyPreservedStateMutableBuilder[Self <: StatefulPolicyPreservedState] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulPolicyPreservedState](x: Self) {
     
-    @scala.inline
-    def setDisks(
+    inline def setDisks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.StatefulPolicyPreservedStateDiskDevice}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.StatefulPolicyPreservedState & TopLevel[js.Any]
     ): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
   }
 }

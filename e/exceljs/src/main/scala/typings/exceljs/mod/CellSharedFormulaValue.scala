@@ -20,31 +20,23 @@ trait CellSharedFormulaValue
 }
 object CellSharedFormulaValue {
   
-  @scala.inline
-  def apply(date1904: Boolean, sharedFormula: String): CellSharedFormulaValue = {
+  inline def apply(date1904: Boolean, sharedFormula: String): CellSharedFormulaValue = {
     val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any], sharedFormula = sharedFormula.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellSharedFormulaValue]
   }
   
-  @scala.inline
-  implicit class CellSharedFormulaValueMutableBuilder[Self <: CellSharedFormulaValue] (val x: Self) extends AnyVal {
+  extension [Self <: CellSharedFormulaValue](x: Self) {
     
-    @scala.inline
-    def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
+    inline def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setResult(value: Double | String | Date | Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double | String | Date | Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setSharedFormula(value: String): Self = StObject.set(x, "sharedFormula", value.asInstanceOf[js.Any])
+    inline def setSharedFormula(value: String): Self = StObject.set(x, "sharedFormula", value.asInstanceOf[js.Any])
   }
 }

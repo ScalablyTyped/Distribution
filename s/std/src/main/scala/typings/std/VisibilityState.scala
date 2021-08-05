@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisibilityState extends StObject
 object VisibilityState {
   
-  @scala.inline
-  def hidden: typings.std.stdStrings.hidden = "hidden".asInstanceOf[typings.std.stdStrings.hidden]
+  inline def hidden: typings.std.stdStrings.hidden = "hidden".asInstanceOf[typings.std.stdStrings.hidden]
   
-  @scala.inline
-  def visible: typings.std.stdStrings.visible = "visible".asInstanceOf[typings.std.stdStrings.visible]
+  inline def visible: typings.std.stdStrings.visible = "visible".asInstanceOf[typings.std.stdStrings.visible]
 }

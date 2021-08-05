@@ -22,8 +22,7 @@ trait CarouselMaxRow extends StObject {
 }
 object CarouselMaxRow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     carouselMaxRow: Double,
     columnNum: Double,
     data: js.Array[scala.Nothing],
@@ -36,31 +35,22 @@ object CarouselMaxRow {
     __obj.asInstanceOf[CarouselMaxRow]
   }
   
-  @scala.inline
-  implicit class CarouselMaxRowMutableBuilder[Self <: CarouselMaxRow] (val x: Self) extends AnyVal {
+  extension [Self <: CarouselMaxRow](x: Self) {
     
-    @scala.inline
-    def setCarouselMaxRow(value: Double): Self = StObject.set(x, "carouselMaxRow", value.asInstanceOf[js.Any])
+    inline def setCarouselMaxRow(value: Double): Self = StObject.set(x, "carouselMaxRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNum(value: Double): Self = StObject.set(x, "columnNum", value.asInstanceOf[js.Any])
+    inline def setColumnNum(value: Double): Self = StObject.set(x, "columnNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[scala.Nothing]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[scala.Nothing]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: scala.Nothing*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: scala.Nothing*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setHasLine(value: Boolean): Self = StObject.set(x, "hasLine", value.asInstanceOf[js.Any])
+    inline def setHasLine(value: Boolean): Self = StObject.set(x, "hasLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCarousel(value: Boolean): Self = StObject.set(x, "isCarousel", value.asInstanceOf[js.Any])
+    inline def setIsCarousel(value: Boolean): Self = StObject.set(x, "isCarousel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+    inline def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
   }
 }

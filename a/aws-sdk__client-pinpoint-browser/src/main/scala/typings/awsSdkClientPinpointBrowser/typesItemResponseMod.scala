@@ -30,26 +30,20 @@ object typesItemResponseMod {
   }
   object ItemResponse {
     
-    @scala.inline
-    def apply(): ItemResponse = {
+    inline def apply(): ItemResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemResponse]
     }
     
-    @scala.inline
-    implicit class ItemResponseMutableBuilder[Self <: ItemResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ItemResponse](x: Self) {
       
-      @scala.inline
-      def setEndpointItemResponse(value: EndpointItemResponse): Self = StObject.set(x, "EndpointItemResponse", value.asInstanceOf[js.Any])
+      inline def setEndpointItemResponse(value: EndpointItemResponse): Self = StObject.set(x, "EndpointItemResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointItemResponseUndefined: Self = StObject.set(x, "EndpointItemResponse", js.undefined)
+      inline def setEndpointItemResponseUndefined: Self = StObject.set(x, "EndpointItemResponse", js.undefined)
       
-      @scala.inline
-      def setEventsItemResponse(value: StringDictionary[EventItemResponse] | (Iterable[js.Tuple2[String, EventItemResponse]])): Self = StObject.set(x, "EventsItemResponse", value.asInstanceOf[js.Any])
+      inline def setEventsItemResponse(value: StringDictionary[EventItemResponse] | (Iterable[js.Tuple2[String, EventItemResponse]])): Self = StObject.set(x, "EventsItemResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsItemResponseUndefined: Self = StObject.set(x, "EventsItemResponse", js.undefined)
+      inline def setEventsItemResponseUndefined: Self = StObject.set(x, "EventsItemResponse", js.undefined)
     }
   }
   
@@ -71,26 +65,20 @@ object typesItemResponseMod {
   }
   object UnmarshalledItemResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledItemResponse = {
+    inline def apply(): UnmarshalledItemResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledItemResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledItemResponseMutableBuilder[Self <: UnmarshalledItemResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledItemResponse](x: Self) {
       
-      @scala.inline
-      def setEndpointItemResponse(value: UnmarshalledEndpointItemResponse): Self = StObject.set(x, "EndpointItemResponse", value.asInstanceOf[js.Any])
+      inline def setEndpointItemResponse(value: UnmarshalledEndpointItemResponse): Self = StObject.set(x, "EndpointItemResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointItemResponseUndefined: Self = StObject.set(x, "EndpointItemResponse", js.undefined)
+      inline def setEndpointItemResponseUndefined: Self = StObject.set(x, "EndpointItemResponse", js.undefined)
       
-      @scala.inline
-      def setEventsItemResponse(value: StringDictionary[UnmarshalledEventItemResponse]): Self = StObject.set(x, "EventsItemResponse", value.asInstanceOf[js.Any])
+      inline def setEventsItemResponse(value: StringDictionary[UnmarshalledEventItemResponse]): Self = StObject.set(x, "EventsItemResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsItemResponseUndefined: Self = StObject.set(x, "EventsItemResponse", js.undefined)
+      inline def setEventsItemResponseUndefined: Self = StObject.set(x, "EventsItemResponse", js.undefined)
     }
   }
 }

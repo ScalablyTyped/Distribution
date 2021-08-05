@@ -33,28 +33,21 @@ trait IExecuteResult
 }
 object IExecuteResult {
   
-  @scala.inline
-  def apply(data: IMimeBundle, metadata: OutputMetadata): IExecuteResult = {
+  inline def apply(data: IMimeBundle, metadata: OutputMetadata): IExecuteResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = "execute_result", execution_count = null)
     __obj.asInstanceOf[IExecuteResult]
   }
   
-  @scala.inline
-  implicit class IExecuteResultMutableBuilder[Self <: IExecuteResult] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteResult](x: Self) {
     
-    @scala.inline
-    def setData(value: IMimeBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IMimeBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_count(value: ExecutionCount): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
+    inline def setExecution_count(value: ExecutionCount): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_countNull: Self = StObject.set(x, "execution_count", null)
+    inline def setExecution_countNull: Self = StObject.set(x, "execution_count", null)
     
-    @scala.inline
-    def setMetadata(value: OutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: OutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_type(value: execute_result): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: execute_result): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

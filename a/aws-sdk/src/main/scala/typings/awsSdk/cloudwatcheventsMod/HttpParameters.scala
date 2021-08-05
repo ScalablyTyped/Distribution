@@ -23,34 +23,25 @@ trait HttpParameters extends StObject {
 }
 object HttpParameters {
   
-  @scala.inline
-  def apply(): HttpParameters = {
+  inline def apply(): HttpParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpParameters]
   }
   
-  @scala.inline
-  implicit class HttpParametersMutableBuilder[Self <: HttpParameters] (val x: Self) extends AnyVal {
+  extension [Self <: HttpParameters](x: Self) {
     
-    @scala.inline
-    def setHeaderParameters(value: HeaderParametersMap): Self = StObject.set(x, "HeaderParameters", value.asInstanceOf[js.Any])
+    inline def setHeaderParameters(value: HeaderParametersMap): Self = StObject.set(x, "HeaderParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderParametersUndefined: Self = StObject.set(x, "HeaderParameters", js.undefined)
+    inline def setHeaderParametersUndefined: Self = StObject.set(x, "HeaderParameters", js.undefined)
     
-    @scala.inline
-    def setPathParameterValues(value: PathParameterList): Self = StObject.set(x, "PathParameterValues", value.asInstanceOf[js.Any])
+    inline def setPathParameterValues(value: PathParameterList): Self = StObject.set(x, "PathParameterValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathParameterValuesUndefined: Self = StObject.set(x, "PathParameterValues", js.undefined)
+    inline def setPathParameterValuesUndefined: Self = StObject.set(x, "PathParameterValues", js.undefined)
     
-    @scala.inline
-    def setPathParameterValuesVarargs(value: PathParameter*): Self = StObject.set(x, "PathParameterValues", js.Array(value :_*))
+    inline def setPathParameterValuesVarargs(value: PathParameter*): Self = StObject.set(x, "PathParameterValues", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryStringParameters(value: QueryStringParametersMap): Self = StObject.set(x, "QueryStringParameters", value.asInstanceOf[js.Any])
+    inline def setQueryStringParameters(value: QueryStringParametersMap): Self = StObject.set(x, "QueryStringParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringParametersUndefined: Self = StObject.set(x, "QueryStringParameters", js.undefined)
+    inline def setQueryStringParametersUndefined: Self = StObject.set(x, "QueryStringParameters", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait SchemaInstancesFailoverRequest extends StObject {
 }
 object SchemaInstancesFailoverRequest {
   
-  @scala.inline
-  def apply(): SchemaInstancesFailoverRequest = {
+  inline def apply(): SchemaInstancesFailoverRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstancesFailoverRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstancesFailoverRequestMutableBuilder[Self <: SchemaInstancesFailoverRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstancesFailoverRequest](x: Self) {
     
-    @scala.inline
-    def setFailoverContext(value: SchemaFailoverContext): Self = StObject.set(x, "failoverContext", value.asInstanceOf[js.Any])
+    inline def setFailoverContext(value: SchemaFailoverContext): Self = StObject.set(x, "failoverContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailoverContextUndefined: Self = StObject.set(x, "failoverContext", js.undefined)
+    inline def setFailoverContextUndefined: Self = StObject.set(x, "failoverContext", js.undefined)
   }
 }

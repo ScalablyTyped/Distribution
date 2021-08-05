@@ -18,17 +18,14 @@ object typesTitleRequiredExceptionMod {
   }
   object TitleRequiredException {
     
-    @scala.inline
-    def apply(): TitleRequiredException = {
+    inline def apply(): TitleRequiredException = {
       val __obj = js.Dynamic.literal(name = "TitleRequiredException")
       __obj.asInstanceOf[TitleRequiredException]
     }
     
-    @scala.inline
-    implicit class TitleRequiredExceptionMutableBuilder[Self <: TitleRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: TitleRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TitleRequiredException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TitleRequiredException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

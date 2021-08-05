@@ -27,25 +27,19 @@ trait IntegratedMeshLayerProperties
 }
 object IntegratedMeshLayerProperties {
   
-  @scala.inline
-  def apply(): IntegratedMeshLayerProperties = {
+  inline def apply(): IntegratedMeshLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegratedMeshLayerProperties]
   }
   
-  @scala.inline
-  implicit class IntegratedMeshLayerPropertiesMutableBuilder[Self <: IntegratedMeshLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IntegratedMeshLayerProperties](x: Self) {
     
-    @scala.inline
-    def setElevationInfo(value: IntegratedMeshLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    inline def setElevationInfo(value: IntegratedMeshLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
+    inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    @scala.inline
-    def setModifications(value: SceneModificationsProperties): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
+    inline def setModifications(value: SceneModificationsProperties): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
+    inline def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
   }
 }

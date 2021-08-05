@@ -13,16 +13,13 @@ trait Inherit
 }
 object Inherit {
   
-  @scala.inline
-  def apply(inherit: Boolean): Inherit = {
+  inline def apply(inherit: Boolean): Inherit = {
     val __obj = js.Dynamic.literal(inherit = inherit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inherit]
   }
   
-  @scala.inline
-  implicit class InheritMutableBuilder[Self <: Inherit] (val x: Self) extends AnyVal {
+  extension [Self <: Inherit](x: Self) {
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
   }
 }

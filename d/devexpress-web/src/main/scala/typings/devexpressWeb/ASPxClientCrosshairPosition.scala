@@ -21,19 +21,15 @@ trait ASPxClientCrosshairPosition extends StObject {
 }
 object ASPxClientCrosshairPosition {
   
-  @scala.inline
-  def apply(offsetX: Double, offsetY: Double): ASPxClientCrosshairPosition = {
+  inline def apply(offsetX: Double, offsetY: Double): ASPxClientCrosshairPosition = {
     val __obj = js.Dynamic.literal(offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCrosshairPosition]
   }
   
-  @scala.inline
-  implicit class ASPxClientCrosshairPositionMutableBuilder[Self <: ASPxClientCrosshairPosition] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCrosshairPosition](x: Self) {
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
   }
 }

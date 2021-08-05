@@ -24,25 +24,19 @@ trait ClassifierGrokClassifier extends StObject {
 }
 object ClassifierGrokClassifier {
   
-  @scala.inline
-  def apply(classification: Input[String], grokPattern: Input[String]): ClassifierGrokClassifier = {
+  inline def apply(classification: Input[String], grokPattern: Input[String]): ClassifierGrokClassifier = {
     val __obj = js.Dynamic.literal(classification = classification.asInstanceOf[js.Any], grokPattern = grokPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierGrokClassifier]
   }
   
-  @scala.inline
-  implicit class ClassifierGrokClassifierMutableBuilder[Self <: ClassifierGrokClassifier] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifierGrokClassifier](x: Self) {
     
-    @scala.inline
-    def setClassification(value: Input[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: Input[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPatterns(value: Input[String]): Self = StObject.set(x, "customPatterns", value.asInstanceOf[js.Any])
+    inline def setCustomPatterns(value: Input[String]): Self = StObject.set(x, "customPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPatternsUndefined: Self = StObject.set(x, "customPatterns", js.undefined)
+    inline def setCustomPatternsUndefined: Self = StObject.set(x, "customPatterns", js.undefined)
     
-    @scala.inline
-    def setGrokPattern(value: Input[String]): Self = StObject.set(x, "grokPattern", value.asInstanceOf[js.Any])
+    inline def setGrokPattern(value: Input[String]): Self = StObject.set(x, "grokPattern", value.asInstanceOf[js.Any])
   }
 }

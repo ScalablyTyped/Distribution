@@ -12,16 +12,13 @@ trait UpdateAgentNotebookResult
 }
 object UpdateAgentNotebookResult {
   
-  @scala.inline
-  def apply(errorMessage: String, notebook: AgentNotebookInfo, success: Boolean): UpdateAgentNotebookResult = {
+  inline def apply(errorMessage: String, notebook: AgentNotebookInfo, success: Boolean): UpdateAgentNotebookResult = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], notebook = notebook.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAgentNotebookResult]
   }
   
-  @scala.inline
-  implicit class UpdateAgentNotebookResultMutableBuilder[Self <: UpdateAgentNotebookResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAgentNotebookResult](x: Self) {
     
-    @scala.inline
-    def setNotebook(value: AgentNotebookInfo): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
+    inline def setNotebook(value: AgentNotebookInfo): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
   }
 }

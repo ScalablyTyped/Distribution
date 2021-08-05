@@ -34,79 +34,55 @@ trait IosVppEBook
 }
 object IosVppEBook {
   
-  @scala.inline
-  def apply(): IosVppEBook = {
+  inline def apply(): IosVppEBook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosVppEBook]
   }
   
-  @scala.inline
-  implicit class IosVppEBookMutableBuilder[Self <: IosVppEBook] (val x: Self) extends AnyVal {
+  extension [Self <: IosVppEBook](x: Self) {
     
-    @scala.inline
-    def setAppleId(value: NullableOption[String]): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
+    inline def setAppleId(value: NullableOption[String]): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppleIdNull: Self = StObject.set(x, "appleId", null)
+    inline def setAppleIdNull: Self = StObject.set(x, "appleId", null)
     
-    @scala.inline
-    def setAppleIdUndefined: Self = StObject.set(x, "appleId", js.undefined)
+    inline def setAppleIdUndefined: Self = StObject.set(x, "appleId", js.undefined)
     
-    @scala.inline
-    def setGenres(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenresNull: Self = StObject.set(x, "genres", null)
+    inline def setGenresNull: Self = StObject.set(x, "genres", null)
     
-    @scala.inline
-    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
+    inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
-    @scala.inline
-    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: NullableOption[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: NullableOption[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNull: Self = StObject.set(x, "language", null)
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setSeller(value: NullableOption[String]): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
+    inline def setSeller(value: NullableOption[String]): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerNull: Self = StObject.set(x, "seller", null)
+    inline def setSellerNull: Self = StObject.set(x, "seller", null)
     
-    @scala.inline
-    def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
+    inline def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
     
-    @scala.inline
-    def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
+    inline def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalLicenseCountUndefined: Self = StObject.set(x, "totalLicenseCount", js.undefined)
+    inline def setTotalLicenseCountUndefined: Self = StObject.set(x, "totalLicenseCount", js.undefined)
     
-    @scala.inline
-    def setUsedLicenseCount(value: Double): Self = StObject.set(x, "usedLicenseCount", value.asInstanceOf[js.Any])
+    inline def setUsedLicenseCount(value: Double): Self = StObject.set(x, "usedLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedLicenseCountUndefined: Self = StObject.set(x, "usedLicenseCount", js.undefined)
+    inline def setUsedLicenseCountUndefined: Self = StObject.set(x, "usedLicenseCount", js.undefined)
     
-    @scala.inline
-    def setVppOrganizationName(value: NullableOption[String]): Self = StObject.set(x, "vppOrganizationName", value.asInstanceOf[js.Any])
+    inline def setVppOrganizationName(value: NullableOption[String]): Self = StObject.set(x, "vppOrganizationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVppOrganizationNameNull: Self = StObject.set(x, "vppOrganizationName", null)
+    inline def setVppOrganizationNameNull: Self = StObject.set(x, "vppOrganizationName", null)
     
-    @scala.inline
-    def setVppOrganizationNameUndefined: Self = StObject.set(x, "vppOrganizationName", js.undefined)
+    inline def setVppOrganizationNameUndefined: Self = StObject.set(x, "vppOrganizationName", js.undefined)
     
-    @scala.inline
-    def setVppTokenId(value: String): Self = StObject.set(x, "vppTokenId", value.asInstanceOf[js.Any])
+    inline def setVppTokenId(value: String): Self = StObject.set(x, "vppTokenId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVppTokenIdUndefined: Self = StObject.set(x, "vppTokenId", js.undefined)
+    inline def setVppTokenIdUndefined: Self = StObject.set(x, "vppTokenId", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetUserPoolMfaConfigRequest extends StObject {
 }
 object GetUserPoolMfaConfigRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType): GetUserPoolMfaConfigRequest = {
+  inline def apply(UserPoolId: UserPoolIdType): GetUserPoolMfaConfigRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserPoolMfaConfigRequest]
   }
   
-  @scala.inline
-  implicit class GetUserPoolMfaConfigRequestMutableBuilder[Self <: GetUserPoolMfaConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserPoolMfaConfigRequest](x: Self) {
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

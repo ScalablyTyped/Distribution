@@ -21,9 +21,7 @@ object optimizeMod {
   @js.native
   val MAX_OPTIMIZATION_RUNS: /* 5 */ Double = js.native
   
-  @scala.inline
-  def checkLinks(nodes: js.Array[DataFlowNode]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLinks")(nodes.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkLinks(nodes: js.Array[DataFlowNode]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLinks")(nodes.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def optimizeDataflow(data: DataComponent, model: Model): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optimizeDataflow")(data.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def optimizeDataflow(data: DataComponent, model: Model): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optimizeDataflow")(data.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

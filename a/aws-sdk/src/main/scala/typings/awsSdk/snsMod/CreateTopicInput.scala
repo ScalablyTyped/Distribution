@@ -23,31 +23,23 @@ trait CreateTopicInput extends StObject {
 }
 object CreateTopicInput {
   
-  @scala.inline
-  def apply(Name: topicName): CreateTopicInput = {
+  inline def apply(Name: topicName): CreateTopicInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTopicInput]
   }
   
-  @scala.inline
-  implicit class CreateTopicInputMutableBuilder[Self <: CreateTopicInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTopicInput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: TopicAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: TopicAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setName(value: topicName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: topicName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -20,16 +20,12 @@ object TSUnionType {
   @js.native
   def apply(types: js.Array[TSType]): TSUnionType = js.native
   
-  @scala.inline
-  implicit class TSUnionTypeMutableBuilder[Self <: TSUnionType] (val x: Self) extends AnyVal {
+  extension [Self <: TSUnionType](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSUnionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSUnionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

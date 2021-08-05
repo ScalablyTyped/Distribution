@@ -12,25 +12,19 @@ trait StorageEstimate extends StObject {
 }
 object StorageEstimate {
   
-  @scala.inline
-  def apply(): StorageEstimate = {
+  inline def apply(): StorageEstimate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageEstimate]
   }
   
-  @scala.inline
-  implicit class StorageEstimateMutableBuilder[Self <: StorageEstimate] (val x: Self) extends AnyVal {
+  extension [Self <: StorageEstimate](x: Self) {
     
-    @scala.inline
-    def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
+    inline def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
+    inline def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
-    @scala.inline
-    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

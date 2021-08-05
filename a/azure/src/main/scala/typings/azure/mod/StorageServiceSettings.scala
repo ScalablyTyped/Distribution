@@ -38,8 +38,7 @@ object StorageServiceSettings {
   /**
     * Creates StorageServiceSettings object given endpoints uri.
     */
-  @scala.inline
-  def _createStorageServiceSettings(
+  inline def _createStorageServiceSettings(
     settings: Dictionary[String],
     blobEndpointUri: String,
     queueEndpointUri: String,
@@ -50,46 +49,36 @@ object StorageServiceSettings {
     * Gets the default service endpoint using the specified protocol and account
     * name.
     */
-  @scala.inline
-  def _getDefaultServiceEndpoint(settings: Dictionary[String], dns: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_getDefaultServiceEndpoint")(settings.asInstanceOf[js.Any], dns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _getDefaultServiceEndpoint(settings: Dictionary[String], dns: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_getDefaultServiceEndpoint")(settings.asInstanceOf[js.Any], dns.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Returns a StorageServiceSettings with development storage credentials using
     * the specified proxy Uri.
     */
-  @scala.inline
-  def _getDevelopmentStorageAccount(): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("_getDevelopmentStorageAccount")().asInstanceOf[StorageServiceSettings]
-  @scala.inline
-  def _getDevelopmentStorageAccount(proxy: String): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("_getDevelopmentStorageAccount")(proxy.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
+  inline def _getDevelopmentStorageAccount(): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("_getDevelopmentStorageAccount")().asInstanceOf[StorageServiceSettings]
+  inline def _getDevelopmentStorageAccount(proxy: String): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("_getDevelopmentStorageAccount")(proxy.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
-  @scala.inline
-  def createExplicitlyOrFromEnvironment(storageAccount: String, storageAccessKey: String, host: String): StorageServiceSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createExplicitlyOrFromEnvironment")(storageAccount.asInstanceOf[js.Any], storageAccessKey.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[StorageServiceSettings]
+  inline def createExplicitlyOrFromEnvironment(storageAccount: String, storageAccessKey: String, host: String): StorageServiceSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createExplicitlyOrFromEnvironment")(storageAccount.asInstanceOf[js.Any], storageAccessKey.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[StorageServiceSettings]
   
-  @scala.inline
-  def createFromConfig(config: js.Any): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(config.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
+  inline def createFromConfig(config: js.Any): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(config.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
   /**
     * Creates a StorageServiceSettings object from the given connection string.
     */
-  @scala.inline
-  def createFromConnectionString(connectionString: String): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConnectionString")(connectionString.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
+  inline def createFromConnectionString(connectionString: String): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConnectionString")(connectionString.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
   /**
     * Creates a ServiceBusSettings object from a set of settings.
     */
-  @scala.inline
-  def createFromSettings(settings: Dictionary[String]): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
+  inline def createFromSettings(settings: Dictionary[String]): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[StorageServiceSettings]
   
-  @scala.inline
-  def customizeConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("customizeConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def customizeConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("customizeConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Gets a StorageServiceSettings object that references the development storage
     * account.
     */
-  @scala.inline
-  def getDevelopmentStorageAccountSettings(): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevelopmentStorageAccountSettings")().asInstanceOf[StorageServiceSettings]
+  inline def getDevelopmentStorageAccountSettings(): StorageServiceSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevelopmentStorageAccountSettings")().asInstanceOf[StorageServiceSettings]
   
-  @scala.inline
-  def isDevelopmentStorage(storageAccount: String, storageAccessKey: String, parsedHost: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDevelopmentStorage")(storageAccount.asInstanceOf[js.Any], storageAccessKey.asInstanceOf[js.Any], parsedHost.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isDevelopmentStorage(storageAccount: String, storageAccessKey: String, parsedHost: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDevelopmentStorage")(storageAccount.asInstanceOf[js.Any], storageAccessKey.asInstanceOf[js.Any], parsedHost.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

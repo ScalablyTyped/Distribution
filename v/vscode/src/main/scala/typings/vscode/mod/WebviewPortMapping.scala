@@ -18,19 +18,15 @@ trait WebviewPortMapping extends StObject {
 }
 object WebviewPortMapping {
   
-  @scala.inline
-  def apply(extensionHostPort: Double, webviewPort: Double): WebviewPortMapping = {
+  inline def apply(extensionHostPort: Double, webviewPort: Double): WebviewPortMapping = {
     val __obj = js.Dynamic.literal(extensionHostPort = extensionHostPort.asInstanceOf[js.Any], webviewPort = webviewPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebviewPortMapping]
   }
   
-  @scala.inline
-  implicit class WebviewPortMappingMutableBuilder[Self <: WebviewPortMapping] (val x: Self) extends AnyVal {
+  extension [Self <: WebviewPortMapping](x: Self) {
     
-    @scala.inline
-    def setExtensionHostPort(value: Double): Self = StObject.set(x, "extensionHostPort", value.asInstanceOf[js.Any])
+    inline def setExtensionHostPort(value: Double): Self = StObject.set(x, "extensionHostPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebviewPort(value: Double): Self = StObject.set(x, "webviewPort", value.asInstanceOf[js.Any])
+    inline def setWebviewPort(value: Double): Self = StObject.set(x, "webviewPort", value.asInstanceOf[js.Any])
   }
 }

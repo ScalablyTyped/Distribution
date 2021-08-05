@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTableFormatApply extends StObject
 object WdTableFormatApply {
   
-  @scala.inline
-  def wdTableFormatApplyAutoFit: `16` = 16.asInstanceOf[`16`]
+  inline def wdTableFormatApplyAutoFit: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def wdTableFormatApplyBorders: `1` = 1.asInstanceOf[`1`]
+  inline def wdTableFormatApplyBorders: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTableFormatApplyColor: `8` = 8.asInstanceOf[`8`]
+  inline def wdTableFormatApplyColor: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdTableFormatApplyFirstColumn: `128` = 128.asInstanceOf[`128`]
+  inline def wdTableFormatApplyFirstColumn: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def wdTableFormatApplyFont: `4` = 4.asInstanceOf[`4`]
+  inline def wdTableFormatApplyFont: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdTableFormatApplyHeadingRows: `32` = 32.asInstanceOf[`32`]
+  inline def wdTableFormatApplyHeadingRows: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def wdTableFormatApplyLastColumn: `256` = 256.asInstanceOf[`256`]
+  inline def wdTableFormatApplyLastColumn: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def wdTableFormatApplyLastRow: `64` = 64.asInstanceOf[`64`]
+  inline def wdTableFormatApplyLastRow: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def wdTableFormatApplyShading: `2` = 2.asInstanceOf[`2`]
+  inline def wdTableFormatApplyShading: `2` = 2.asInstanceOf[`2`]
 }

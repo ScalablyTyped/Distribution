@@ -42,46 +42,33 @@ trait ParamsResourceProductstatusesGet
 }
 object ParamsResourceProductstatusesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProductstatusesGet = {
+  inline def apply(): ParamsResourceProductstatusesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProductstatusesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProductstatusesGetMutableBuilder[Self <: ParamsResourceProductstatusesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProductstatusesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDestinations(value: js.Array[String]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: js.Array[String]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    @scala.inline
-    def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
+    inline def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAttributesUndefined: Self = StObject.set(x, "includeAttributes", js.undefined)
+    inline def setIncludeAttributesUndefined: Self = StObject.set(x, "includeAttributes", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

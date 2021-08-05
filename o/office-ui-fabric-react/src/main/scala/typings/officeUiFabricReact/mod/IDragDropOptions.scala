@@ -10,8 +10,7 @@ trait IDragDropOptions
      with typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropOptions
 object IDragDropOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropContext,
     selectionIndex: Double,
     updateDropState: (Boolean, DragEvent) => Unit

@@ -17,28 +17,21 @@ trait SasPortalAssignment extends StObject {
 }
 object SasPortalAssignment {
   
-  @scala.inline
-  def apply(): SasPortalAssignment = {
+  inline def apply(): SasPortalAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalAssignment]
   }
   
-  @scala.inline
-  implicit class SasPortalAssignmentMutableBuilder[Self <: SasPortalAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalAssignment](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

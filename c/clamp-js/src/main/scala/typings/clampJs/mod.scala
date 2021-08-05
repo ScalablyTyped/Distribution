@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(element: HTMLElement): ClampResponse = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[ClampResponse]
-  @scala.inline
-  def apply(element: HTMLElement, options: ClampOptions): ClampResponse = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClampResponse]
+  inline def apply(element: HTMLElement): ClampResponse = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[ClampResponse]
+  inline def apply(element: HTMLElement, options: ClampOptions): ClampResponse = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClampResponse]
   
   @JSImport("clamp-js", JSImport.Namespace)
   @js.native
@@ -32,56 +30,40 @@ object mod {
   }
   object ClampOptions {
     
-    @scala.inline
-    def apply(): ClampOptions = {
+    inline def apply(): ClampOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClampOptions]
     }
     
-    @scala.inline
-    implicit class ClampOptionsMutableBuilder[Self <: ClampOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClampOptions](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setClamp(value: Double | String): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+      inline def setClamp(value: Double | String): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
+      inline def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
       
-      @scala.inline
-      def setSplitOnChars(value: js.Array[String]): Self = StObject.set(x, "splitOnChars", value.asInstanceOf[js.Any])
+      inline def setSplitOnChars(value: js.Array[String]): Self = StObject.set(x, "splitOnChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitOnCharsUndefined: Self = StObject.set(x, "splitOnChars", js.undefined)
+      inline def setSplitOnCharsUndefined: Self = StObject.set(x, "splitOnChars", js.undefined)
       
-      @scala.inline
-      def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value :_*))
+      inline def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value :_*))
       
-      @scala.inline
-      def setTruncationChar(value: String): Self = StObject.set(x, "truncationChar", value.asInstanceOf[js.Any])
+      inline def setTruncationChar(value: String): Self = StObject.set(x, "truncationChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncationCharUndefined: Self = StObject.set(x, "truncationChar", js.undefined)
+      inline def setTruncationCharUndefined: Self = StObject.set(x, "truncationChar", js.undefined)
       
-      @scala.inline
-      def setTruncationHTML(value: String): Self = StObject.set(x, "truncationHTML", value.asInstanceOf[js.Any])
+      inline def setTruncationHTML(value: String): Self = StObject.set(x, "truncationHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncationHTMLNull: Self = StObject.set(x, "truncationHTML", null)
+      inline def setTruncationHTMLNull: Self = StObject.set(x, "truncationHTML", null)
       
-      @scala.inline
-      def setTruncationHTMLUndefined: Self = StObject.set(x, "truncationHTML", js.undefined)
+      inline def setTruncationHTMLUndefined: Self = StObject.set(x, "truncationHTML", js.undefined)
       
-      @scala.inline
-      def setUseNativeClamp(value: Boolean): Self = StObject.set(x, "useNativeClamp", value.asInstanceOf[js.Any])
+      inline def setUseNativeClamp(value: Boolean): Self = StObject.set(x, "useNativeClamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeClampUndefined: Self = StObject.set(x, "useNativeClamp", js.undefined)
+      inline def setUseNativeClampUndefined: Self = StObject.set(x, "useNativeClamp", js.undefined)
     }
   }
   
@@ -93,20 +75,16 @@ object mod {
   }
   object ClampResponse {
     
-    @scala.inline
-    def apply(clamped: String, original: String): ClampResponse = {
+    inline def apply(clamped: String, original: String): ClampResponse = {
       val __obj = js.Dynamic.literal(clamped = clamped.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClampResponse]
     }
     
-    @scala.inline
-    implicit class ClampResponseMutableBuilder[Self <: ClampResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ClampResponse](x: Self) {
       
-      @scala.inline
-      def setClamped(value: String): Self = StObject.set(x, "clamped", value.asInstanceOf[js.Any])
+      inline def setClamped(value: String): Self = StObject.set(x, "clamped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     }
   }
 }

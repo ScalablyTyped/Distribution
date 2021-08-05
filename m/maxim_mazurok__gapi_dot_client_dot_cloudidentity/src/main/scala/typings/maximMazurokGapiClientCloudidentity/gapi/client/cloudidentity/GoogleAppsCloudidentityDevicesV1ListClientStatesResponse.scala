@@ -14,28 +14,21 @@ trait GoogleAppsCloudidentityDevicesV1ListClientStatesResponse extends StObject 
 }
 object GoogleAppsCloudidentityDevicesV1ListClientStatesResponse {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1ListClientStatesResponse = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1ListClientStatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1ListClientStatesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1ListClientStatesResponseMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ListClientStatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1ListClientStatesResponse](x: Self) {
     
-    @scala.inline
-    def setClientStates(value: js.Array[GoogleAppsCloudidentityDevicesV1ClientState]): Self = StObject.set(x, "clientStates", value.asInstanceOf[js.Any])
+    inline def setClientStates(value: js.Array[GoogleAppsCloudidentityDevicesV1ClientState]): Self = StObject.set(x, "clientStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientStatesUndefined: Self = StObject.set(x, "clientStates", js.undefined)
+    inline def setClientStatesUndefined: Self = StObject.set(x, "clientStates", js.undefined)
     
-    @scala.inline
-    def setClientStatesVarargs(value: GoogleAppsCloudidentityDevicesV1ClientState*): Self = StObject.set(x, "clientStates", js.Array(value :_*))
+    inline def setClientStatesVarargs(value: GoogleAppsCloudidentityDevicesV1ClientState*): Self = StObject.set(x, "clientStates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

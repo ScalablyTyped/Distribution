@@ -26,8 +26,7 @@ object Styles {
   @JSGlobal("__MaterialUI.Styles.Colors")
   @js.native
   def Colors: typings.materialUi.MaterialUI.Styles.Colors = js.native
-  @scala.inline
-  def Colors_=(x: Colors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Colors")(x.asInstanceOf[js.Any])
+  inline def Colors_=(x: Colors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Colors")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__MaterialUI.Styles.MuiThemeProvider")
   @js.native
@@ -37,44 +36,36 @@ object Styles {
   @JSGlobal("__MaterialUI.Styles.Spacing")
   @js.native
   def Spacing: typings.materialUi.MaterialUI.Styles.Spacing = js.native
-  @scala.inline
-  def Spacing_=(x: Spacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spacing")(x.asInstanceOf[js.Any])
+  inline def Spacing_=(x: Spacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spacing")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__MaterialUI.Styles.ThemePalette")
   @js.native
   def ThemePalette: typings.materialUi.MaterialUI.Styles.ThemePalette = js.native
-  @scala.inline
-  def ThemePalette_=(x: ThemePalette): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThemePalette")(x.asInstanceOf[js.Any])
+  inline def ThemePalette_=(x: ThemePalette): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThemePalette")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__MaterialUI.Styles.Transitions")
   @js.native
   def Transitions: typings.materialUi.MaterialUI.Styles.Transitions = js.native
-  @scala.inline
-  def Transitions_=(x: Transitions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transitions")(x.asInstanceOf[js.Any])
+  inline def Transitions_=(x: Transitions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transitions")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__MaterialUI.Styles.Typography")
   @js.native
   def Typography: typings.materialUi.MaterialUI.Styles.Typography = js.native
-  @scala.inline
-  def Typography_=(x: Typography): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Typography")(x.asInstanceOf[js.Any])
+  inline def Typography_=(x: Typography): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Typography")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__MaterialUI.Styles.darkBaseTheme")
   @js.native
   def darkBaseTheme: RawTheme = js.native
-  @scala.inline
-  def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
+  inline def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
+  inline def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
   
   @JSGlobal("__MaterialUI.Styles.lightBaseTheme")
   @js.native
   def lightBaseTheme: RawTheme = js.native
-  @scala.inline
-  def lightBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightBaseTheme")(x.asInstanceOf[js.Any])
+  inline def lightBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightBaseTheme")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def muiThemeable(): js.Function1[
+  inline def muiThemeable(): js.Function1[
     /* component */ (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme], 
     (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("muiThemeable")().asInstanceOf[js.Function1[
@@ -85,6 +76,5 @@ object Styles {
   @JSGlobal("__MaterialUI.Styles.zIndex")
   @js.native
   def zIndex: typings.materialUi.MaterialUI.Styles.zIndex = js.native
-  @scala.inline
-  def zIndex_=(x: zIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zIndex")(x.asInstanceOf[js.Any])
+  inline def zIndex_=(x: zIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zIndex")(x.asInstanceOf[js.Any])
 }

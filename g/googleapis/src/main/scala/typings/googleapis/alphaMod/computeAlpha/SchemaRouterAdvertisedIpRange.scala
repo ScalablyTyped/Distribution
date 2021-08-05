@@ -21,25 +21,19 @@ trait SchemaRouterAdvertisedIpRange extends StObject {
 }
 object SchemaRouterAdvertisedIpRange {
   
-  @scala.inline
-  def apply(): SchemaRouterAdvertisedIpRange = {
+  inline def apply(): SchemaRouterAdvertisedIpRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouterAdvertisedIpRange]
   }
   
-  @scala.inline
-  implicit class SchemaRouterAdvertisedIpRangeMutableBuilder[Self <: SchemaRouterAdvertisedIpRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouterAdvertisedIpRange](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

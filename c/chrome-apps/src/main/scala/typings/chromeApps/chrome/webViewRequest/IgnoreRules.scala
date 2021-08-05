@@ -13,23 +13,19 @@ trait IgnoreRules
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules
 }
 object IgnoreRules {
   
-  @scala.inline
-  def apply(instanceType: String): IgnoreRules = {
+  inline def apply(instanceType: String): IgnoreRules = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "IgnoreRules")
     __obj.asInstanceOf[IgnoreRules]
   }
   
-  @scala.inline
-  implicit class IgnoreRulesMutableBuilder[Self <: IgnoreRules] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreRules](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.IgnoreRules): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.IgnoreRules): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

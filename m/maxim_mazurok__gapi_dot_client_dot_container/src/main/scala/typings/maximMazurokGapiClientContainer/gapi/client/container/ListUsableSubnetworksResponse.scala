@@ -17,28 +17,21 @@ trait ListUsableSubnetworksResponse extends StObject {
 }
 object ListUsableSubnetworksResponse {
   
-  @scala.inline
-  def apply(): ListUsableSubnetworksResponse = {
+  inline def apply(): ListUsableSubnetworksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUsableSubnetworksResponse]
   }
   
-  @scala.inline
-  implicit class ListUsableSubnetworksResponseMutableBuilder[Self <: ListUsableSubnetworksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUsableSubnetworksResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSubnetworks(value: js.Array[UsableSubnetwork]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
+    inline def setSubnetworks(value: js.Array[UsableSubnetwork]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
+    inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    @scala.inline
-    def setSubnetworksVarargs(value: UsableSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: UsableSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
   }
 }

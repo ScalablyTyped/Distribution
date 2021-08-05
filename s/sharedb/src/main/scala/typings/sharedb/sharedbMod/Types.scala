@@ -13,19 +13,15 @@ trait Types extends StObject {
 }
 object Types {
   
-  @scala.inline
-  def apply(map: StringDictionary[Type], register: Type => Unit): Types = {
+  inline def apply(map: StringDictionary[Type], register: Type => Unit): Types = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], register = js.Any.fromFunction1(register))
     __obj.asInstanceOf[Types]
   }
   
-  @scala.inline
-  implicit class TypesMutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
+  extension [Self <: Types](x: Self) {
     
-    @scala.inline
-    def setMap(value: StringDictionary[Type]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: StringDictionary[Type]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegister(value: Type => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: Type => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }
 }

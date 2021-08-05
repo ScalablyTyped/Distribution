@@ -23,31 +23,23 @@ trait OpusSettings extends StObject {
 }
 object OpusSettings {
   
-  @scala.inline
-  def apply(): OpusSettings = {
+  inline def apply(): OpusSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpusSettings]
   }
   
-  @scala.inline
-  implicit class OpusSettingsMutableBuilder[Self <: OpusSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OpusSettings](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: integerMin32000Max192000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin32000Max192000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
-    @scala.inline
-    def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin16000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin16000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait DeleteNotificationConfigurationType extends StObject {
 }
 object DeleteNotificationConfigurationType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName, TopicARN: ResourceName): DeleteNotificationConfigurationType = {
+  inline def apply(AutoScalingGroupName: ResourceName, TopicARN: ResourceName): DeleteNotificationConfigurationType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], TopicARN = TopicARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNotificationConfigurationType]
   }
   
-  @scala.inline
-  implicit class DeleteNotificationConfigurationTypeMutableBuilder[Self <: DeleteNotificationConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNotificationConfigurationType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
+    inline def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
   }
 }

@@ -39,41 +39,30 @@ object mod extends Shortcut {
   }
   object MimeEntry {
     
-    @scala.inline
-    def apply(): MimeEntry = {
+    inline def apply(): MimeEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MimeEntry]
     }
     
-    @scala.inline
-    implicit class MimeEntryMutableBuilder[Self <: MimeEntry] (val x: Self) extends AnyVal {
+    extension [Self <: MimeEntry](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setCompressible(value: Boolean): Self = StObject.set(x, "compressible", value.asInstanceOf[js.Any])
+      inline def setCompressible(value: Boolean): Self = StObject.set(x, "compressible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressibleUndefined: Self = StObject.set(x, "compressible", js.undefined)
+      inline def setCompressibleUndefined: Self = StObject.set(x, "compressible", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: MimeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: MimeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -91,14 +80,11 @@ object mod extends Shortcut {
   trait MimeSource extends StObject
   object MimeSource {
     
-    @scala.inline
-    def apache: typings.mimeDb.mimeDbStrings.apache = "apache".asInstanceOf[typings.mimeDb.mimeDbStrings.apache]
+    inline def apache: typings.mimeDb.mimeDbStrings.apache = "apache".asInstanceOf[typings.mimeDb.mimeDbStrings.apache]
     
-    @scala.inline
-    def iana: typings.mimeDb.mimeDbStrings.iana = "iana".asInstanceOf[typings.mimeDb.mimeDbStrings.iana]
+    inline def iana: typings.mimeDb.mimeDbStrings.iana = "iana".asInstanceOf[typings.mimeDb.mimeDbStrings.iana]
     
-    @scala.inline
-    def nginx: typings.mimeDb.mimeDbStrings.nginx = "nginx".asInstanceOf[typings.mimeDb.mimeDbStrings.nginx]
+    inline def nginx: typings.mimeDb.mimeDbStrings.nginx = "nginx".asInstanceOf[typings.mimeDb.mimeDbStrings.nginx]
   }
   
   type _To = js.Object & MimeDatabase

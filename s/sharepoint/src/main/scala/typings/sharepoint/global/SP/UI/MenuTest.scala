@@ -17,6 +17,5 @@ object MenuTest {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def setup(relativeElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(relativeElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(relativeElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(relativeElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

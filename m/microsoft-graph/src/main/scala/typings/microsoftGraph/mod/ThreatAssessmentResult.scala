@@ -22,40 +22,29 @@ trait ThreatAssessmentResult
 }
 object ThreatAssessmentResult {
   
-  @scala.inline
-  def apply(): ThreatAssessmentResult = {
+  inline def apply(): ThreatAssessmentResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatAssessmentResult]
   }
   
-  @scala.inline
-  implicit class ThreatAssessmentResultMutableBuilder[Self <: ThreatAssessmentResult] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatAssessmentResult](x: Self) {
     
-    @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResultType(value: NullableOption[ThreatAssessmentResultType]): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+    inline def setResultType(value: NullableOption[ThreatAssessmentResultType]): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultTypeNull: Self = StObject.set(x, "resultType", null)
+    inline def setResultTypeNull: Self = StObject.set(x, "resultType", null)
     
-    @scala.inline
-    def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
+    inline def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
   }
 }

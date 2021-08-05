@@ -18,25 +18,19 @@ trait MongoClientCommonOption extends StObject {
 }
 object MongoClientCommonOption {
   
-  @scala.inline
-  def apply(): MongoClientCommonOption = {
+  inline def apply(): MongoClientCommonOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MongoClientCommonOption]
   }
   
-  @scala.inline
-  implicit class MongoClientCommonOptionMutableBuilder[Self <: MongoClientCommonOption] (val x: Self) extends AnyVal {
+  extension [Self <: MongoClientCommonOption](x: Self) {
     
-    @scala.inline
-    def setNoListener(value: Boolean): Self = StObject.set(x, "noListener", value.asInstanceOf[js.Any])
+    inline def setNoListener(value: Boolean): Self = StObject.set(x, "noListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoListenerUndefined: Self = StObject.set(x, "noListener", js.undefined)
+    inline def setNoListenerUndefined: Self = StObject.set(x, "noListener", js.undefined)
     
-    @scala.inline
-    def setReturnNonCachedInstance(value: Boolean): Self = StObject.set(x, "returnNonCachedInstance", value.asInstanceOf[js.Any])
+    inline def setReturnNonCachedInstance(value: Boolean): Self = StObject.set(x, "returnNonCachedInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnNonCachedInstanceUndefined: Self = StObject.set(x, "returnNonCachedInstance", js.undefined)
+    inline def setReturnNonCachedInstanceUndefined: Self = StObject.set(x, "returnNonCachedInstance", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait PrivateKeyBinaryBuffer extends StObject {
 }
 object PrivateKeyBinaryBuffer {
   
-  @scala.inline
-  def apply(privateKey: BinaryBuffer): PrivateKeyBinaryBuffer = {
+  inline def apply(privateKey: BinaryBuffer): PrivateKeyBinaryBuffer = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateKeyBinaryBuffer]
   }
   
-  @scala.inline
-  implicit class PrivateKeyBinaryBufferMutableBuilder[Self <: PrivateKeyBinaryBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateKeyBinaryBuffer](x: Self) {
     
-    @scala.inline
-    def setPrivateKey(value: BinaryBuffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: BinaryBuffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }
 }

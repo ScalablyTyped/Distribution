@@ -74,122 +74,84 @@ object avatarMod extends Shortcut {
   }
   object AvatarProps {
     
-    @scala.inline
-    def apply(): AvatarProps = {
+    inline def apply(): AvatarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AvatarProps]
     }
     
-    @scala.inline
-    implicit class AvatarPropsMutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: A1 | A2 | A3 | A4 | A5 | A6): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: A1 | A2 | A3 | A4 | A5 | A6): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCustomIndication(value: ReactNode): Self = StObject.set(x, "customIndication", value.asInstanceOf[js.Any])
+      inline def setCustomIndication(value: ReactNode): Self = StObject.set(x, "customIndication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomIndicationUndefined: Self = StObject.set(x, "customIndication", js.undefined)
+      inline def setCustomIndicationUndefined: Self = StObject.set(x, "customIndication", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setImgProps(value: ImgHTMLAttributes[HTMLImageElement]): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
+      inline def setImgProps(value: ImgHTMLAttributes[HTMLImageElement]): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
+      inline def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
       
-      @scala.inline
-      def setIndication(value: ReactNode): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
+      inline def setIndication(value: ReactNode): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicationUndefined: Self = StObject.set(x, "indication", js.undefined)
+      inline def setIndicationUndefined: Self = StObject.set(x, "indication", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnIndicationClick(value: () => Unit): Self = StObject.set(x, "onIndicationClick", js.Any.fromFunction0(value))
+      inline def setOnIndicationClick(value: () => Unit): Self = StObject.set(x, "onIndicationClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnIndicationClickUndefined: Self = StObject.set(x, "onIndicationClick", js.undefined)
+      inline def setOnIndicationClickUndefined: Self = StObject.set(x, "onIndicationClick", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPresence(value: online | offline | busy): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+      inline def setPresence(value: online | offline | busy): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
+      inline def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
       
-      @scala.inline
-      def setShape(value: circle | square): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: circle | square): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setShowIndicationOnHover(value: Boolean): Self = StObject.set(x, "showIndicationOnHover", value.asInstanceOf[js.Any])
+      inline def setShowIndicationOnHover(value: Boolean): Self = StObject.set(x, "showIndicationOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowIndicationOnHoverUndefined: Self = StObject.set(x, "showIndicationOnHover", js.undefined)
+      inline def setShowIndicationOnHoverUndefined: Self = StObject.set(x, "showIndicationOnHover", js.undefined)
       
-      @scala.inline
-      def setSize(value: size90 | size72 | size60 | size48 | size36 | size30 | size24 | size18): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: size90 | size72 | size60 | size48 | size36 | size30 | size24 | size18): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

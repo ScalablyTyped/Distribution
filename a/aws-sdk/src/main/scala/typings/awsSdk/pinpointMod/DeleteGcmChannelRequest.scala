@@ -13,16 +13,13 @@ trait DeleteGcmChannelRequest extends StObject {
 }
 object DeleteGcmChannelRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): DeleteGcmChannelRequest = {
+  inline def apply(ApplicationId: string): DeleteGcmChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGcmChannelRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGcmChannelRequestMutableBuilder[Self <: DeleteGcmChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGcmChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

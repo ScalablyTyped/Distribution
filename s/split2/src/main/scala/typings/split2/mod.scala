@@ -9,22 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(mapper: Mapper): Transform = ^.asInstanceOf[js.Dynamic].apply(mapper.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(mapper: Mapper, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(matcher: Matcher): Transform = ^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(matcher: Matcher, mapper: Mapper): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(matcher: Matcher, mapper: Mapper, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(matcher: Matcher, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(mapper: Mapper): Transform = ^.asInstanceOf[js.Dynamic].apply(mapper.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(mapper: Mapper, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(matcher: Matcher): Transform = ^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(matcher: Matcher, mapper: Mapper): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(matcher: Matcher, mapper: Mapper, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(matcher: Matcher, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("split2", JSImport.Namespace)
   @js.native
@@ -42,20 +34,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     }
   }
 }

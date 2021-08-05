@@ -28,37 +28,27 @@ trait ListReviewableHITsRequest extends StObject {
 }
 object ListReviewableHITsRequest {
   
-  @scala.inline
-  def apply(): ListReviewableHITsRequest = {
+  inline def apply(): ListReviewableHITsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReviewableHITsRequest]
   }
   
-  @scala.inline
-  implicit class ListReviewableHITsRequestMutableBuilder[Self <: ListReviewableHITsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListReviewableHITsRequest](x: Self) {
     
-    @scala.inline
-    def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
+    inline def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITTypeIdUndefined: Self = StObject.set(x, "HITTypeId", js.undefined)
+    inline def setHITTypeIdUndefined: Self = StObject.set(x, "HITTypeId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReviewableHITStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReviewableHITStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

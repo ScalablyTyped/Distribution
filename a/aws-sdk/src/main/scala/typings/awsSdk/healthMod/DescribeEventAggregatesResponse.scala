@@ -18,28 +18,21 @@ trait DescribeEventAggregatesResponse extends StObject {
 }
 object DescribeEventAggregatesResponse {
   
-  @scala.inline
-  def apply(): DescribeEventAggregatesResponse = {
+  inline def apply(): DescribeEventAggregatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventAggregatesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEventAggregatesResponseMutableBuilder[Self <: DescribeEventAggregatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventAggregatesResponse](x: Self) {
     
-    @scala.inline
-    def setEventAggregates(value: EventAggregateList): Self = StObject.set(x, "eventAggregates", value.asInstanceOf[js.Any])
+    inline def setEventAggregates(value: EventAggregateList): Self = StObject.set(x, "eventAggregates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventAggregatesUndefined: Self = StObject.set(x, "eventAggregates", js.undefined)
+    inline def setEventAggregatesUndefined: Self = StObject.set(x, "eventAggregates", js.undefined)
     
-    @scala.inline
-    def setEventAggregatesVarargs(value: EventAggregate*): Self = StObject.set(x, "eventAggregates", js.Array(value :_*))
+    inline def setEventAggregatesVarargs(value: EventAggregate*): Self = StObject.set(x, "eventAggregates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

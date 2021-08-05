@@ -37,8 +37,7 @@ trait LQueries extends StObject {
 }
 object LQueries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createEmbeddedView: TView => LQueries | Null,
     detachView: TView => Unit,
     insertView: TView => Unit,
@@ -48,22 +47,16 @@ object LQueries {
     __obj.asInstanceOf[LQueries]
   }
   
-  @scala.inline
-  implicit class LQueriesMutableBuilder[Self <: LQueries] (val x: Self) extends AnyVal {
+  extension [Self <: LQueries](x: Self) {
     
-    @scala.inline
-    def setCreateEmbeddedView(value: TView => LQueries | Null): Self = StObject.set(x, "createEmbeddedView", js.Any.fromFunction1(value))
+    inline def setCreateEmbeddedView(value: TView => LQueries | Null): Self = StObject.set(x, "createEmbeddedView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDetachView(value: TView => Unit): Self = StObject.set(x, "detachView", js.Any.fromFunction1(value))
+    inline def setDetachView(value: TView => Unit): Self = StObject.set(x, "detachView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertView(value: TView => Unit): Self = StObject.set(x, "insertView", js.Any.fromFunction1(value))
+    inline def setInsertView(value: TView => Unit): Self = StObject.set(x, "insertView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueries(value: js.Array[LQuery[js.Any]]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[LQuery[js.Any]]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesVarargs(value: LQuery[js.Any]*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: LQuery[js.Any]*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

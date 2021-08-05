@@ -18,19 +18,15 @@ trait DescribeActivityTypeInput extends StObject {
 }
 object DescribeActivityTypeInput {
   
-  @scala.inline
-  def apply(activityType: ActivityType, domain: DomainName): DescribeActivityTypeInput = {
+  inline def apply(activityType: ActivityType, domain: DomainName): DescribeActivityTypeInput = {
     val __obj = js.Dynamic.literal(activityType = activityType.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeActivityTypeInput]
   }
   
-  @scala.inline
-  implicit class DescribeActivityTypeInputMutableBuilder[Self <: DescribeActivityTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeActivityTypeInput](x: Self) {
     
-    @scala.inline
-    def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }
 }

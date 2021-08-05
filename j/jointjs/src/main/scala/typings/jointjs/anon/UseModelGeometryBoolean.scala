@@ -10,16 +10,13 @@ trait UseModelGeometryBoolean extends StObject {
 }
 object UseModelGeometryBoolean {
   
-  @scala.inline
-  def apply(useModelGeometry: Boolean): UseModelGeometryBoolean = {
+  inline def apply(useModelGeometry: Boolean): UseModelGeometryBoolean = {
     val __obj = js.Dynamic.literal(useModelGeometry = useModelGeometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseModelGeometryBoolean]
   }
   
-  @scala.inline
-  implicit class UseModelGeometryBooleanMutableBuilder[Self <: UseModelGeometryBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: UseModelGeometryBoolean](x: Self) {
     
-    @scala.inline
-    def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
+    inline def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
   }
 }

@@ -30,14 +30,11 @@ object tabsMod {
     @js.native
     val ^ : ORIENTATION = js.native
     
-    @scala.inline
-    implicit class ORIENTATIONMutableBuilder[Self <: ORIENTATION] (val x: Self) extends AnyVal {
+    extension [Self <: ORIENTATION](x: Self) {
       
-      @scala.inline
-      def setHorizontal(value: horizontal): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: horizontal): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertical(value: vertical): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: vertical): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,11 +48,9 @@ object tabsMod {
     @js.native
     val ^ : STATE_CHANGE_TYPE = js.native
     
-    @scala.inline
-    implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+    extension [Self <: STATE_CHANGE_TYPE](x: Self) {
       
-      @scala.inline
-      def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,32 +124,24 @@ object tabsMod {
   }
   object SharedProps {
     
-    @scala.inline
-    def apply(): SharedProps = {
+    inline def apply(): SharedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SharedProps]
     }
     
-    @scala.inline
-    implicit class SharedPropsMutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
+    extension [Self <: SharedProps](x: Self) {
       
-      @scala.inline
-      def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
+      inline def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$activeUndefined: Self = StObject.set(x, "$active", js.undefined)
+      inline def set$activeUndefined: Self = StObject.set(x, "$active", js.undefined)
       
-      @scala.inline
-      def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+      inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
+      inline def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
       
-      @scala.inline
-      def set$orientation(value: horizontal | vertical): Self = StObject.set(x, "$orientation", value.asInstanceOf[js.Any])
+      inline def set$orientation(value: horizontal | vertical): Self = StObject.set(x, "$orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$orientationUndefined: Self = StObject.set(x, "$orientation", js.undefined)
+      inline def set$orientationUndefined: Self = StObject.set(x, "$orientation", js.undefined)
     }
   }
   
@@ -164,17 +151,14 @@ object tabsMod {
   }
   object State {
     
-    @scala.inline
-    def apply(activeKey: Key): State = {
+    inline def apply(activeKey: Key): State = {
       val __obj = js.Dynamic.literal(activeKey = activeKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,26 +177,20 @@ object tabsMod {
   }
   object StatefulTabsProps {
     
-    @scala.inline
-    def apply(): StatefulTabsProps = {
+    inline def apply(): StatefulTabsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulTabsProps]
     }
     
-    @scala.inline
-    implicit class StatefulTabsPropsMutableBuilder[Self <: StatefulTabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulTabsProps](x: Self) {
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
   
@@ -224,22 +202,18 @@ object tabsMod {
   }
   object TabOverrides {
     
-    @scala.inline
-    def apply[T](): TabOverrides[T] = {
+    inline def apply[T](): TabOverrides[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabOverrides[T]]
     }
     
-    @scala.inline
-    implicit class TabOverridesMutableBuilder[Self <: TabOverrides[?], T] (val x: Self & TabOverrides[T]) extends AnyVal {
+    extension [Self <: TabOverrides[?], T](x: Self & TabOverrides[T]) {
       
-      @scala.inline
-      def setTab(
+      inline def setTab(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Tab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabUndefined: Self = StObject.set(x, "Tab", js.undefined)
+      inline def setTabUndefined: Self = StObject.set(x, "Tab", js.undefined)
     }
   }
   
@@ -270,80 +244,56 @@ object tabsMod {
   }
   object TabProps {
     
-    @scala.inline
-    def apply(): TabProps = {
+    inline def apply(): TabProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabProps]
     }
     
-    @scala.inline
-    implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabProps](x: Self) {
       
-      @scala.inline
-      def set$orientation(value: horizontal | vertical): Self = StObject.set(x, "$orientation", value.asInstanceOf[js.Any])
+      inline def set$orientation(value: horizontal | vertical): Self = StObject.set(x, "$orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$orientationUndefined: Self = StObject.set(x, "$orientation", js.undefined)
+      inline def set$orientationUndefined: Self = StObject.set(x, "$orientation", js.undefined)
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* e */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: () => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
+      inline def setOnSelect(value: () => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: TabOverrides[SharedProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TabOverrides[SharedProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -367,46 +317,36 @@ object tabsMod {
   }
   object TabsOverrides {
     
-    @scala.inline
-    def apply[T](): TabsOverrides[T] = {
+    inline def apply[T](): TabsOverrides[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabsOverrides[T]]
     }
     
-    @scala.inline
-    implicit class TabsOverridesMutableBuilder[Self <: TabsOverrides[?], T] (val x: Self & TabsOverrides[T]) extends AnyVal {
+    extension [Self <: TabsOverrides[?], T](x: Self & TabsOverrides[T]) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setTab(
+      inline def setTab(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Tab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBar(
+      inline def setTabBar(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "TabBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarUndefined: Self = StObject.set(x, "TabBar", js.undefined)
+      inline def setTabBarUndefined: Self = StObject.set(x, "TabBar", js.undefined)
       
-      @scala.inline
-      def setTabContent(
+      inline def setTabContent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "TabContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabContentUndefined: Self = StObject.set(x, "TabContent", js.undefined)
+      inline def setTabContentUndefined: Self = StObject.set(x, "TabContent", js.undefined)
       
-      @scala.inline
-      def setTabUndefined: Self = StObject.set(x, "Tab", js.undefined)
+      inline def setTabUndefined: Self = StObject.set(x, "Tab", js.undefined)
     }
   }
   
@@ -428,56 +368,40 @@ object tabsMod {
   }
   object TabsProps {
     
-    @scala.inline
-    def apply(): TabsProps = {
+    inline def apply(): TabsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabsProps]
     }
     
-    @scala.inline
-    implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsProps](x: Self) {
       
-      @scala.inline
-      def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
+      inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* args */ ActiveKey => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* args */ ActiveKey => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: TabsOverrides[SharedPropsactivebooleanu]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TabsOverrides[SharedPropsactivebooleanu]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
+      inline def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
+      inline def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
     }
   }
 }

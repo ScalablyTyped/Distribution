@@ -13,16 +13,13 @@ trait DeleteHsmClientCertificateMessage extends StObject {
 }
 object DeleteHsmClientCertificateMessage {
   
-  @scala.inline
-  def apply(HsmClientCertificateIdentifier: String): DeleteHsmClientCertificateMessage = {
+  inline def apply(HsmClientCertificateIdentifier: String): DeleteHsmClientCertificateMessage = {
     val __obj = js.Dynamic.literal(HsmClientCertificateIdentifier = HsmClientCertificateIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHsmClientCertificateMessage]
   }
   
-  @scala.inline
-  implicit class DeleteHsmClientCertificateMessageMutableBuilder[Self <: DeleteHsmClientCertificateMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHsmClientCertificateMessage](x: Self) {
     
-    @scala.inline
-    def setHsmClientCertificateIdentifier(value: String): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setHsmClientCertificateIdentifier(value: String): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait XEventHandler
 }
 object XEventHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     handleEvent: js.Any => Boolean,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XEventHandler {
     __obj.asInstanceOf[XEventHandler]
   }
   
-  @scala.inline
-  implicit class XEventHandlerMutableBuilder[Self <: XEventHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XEventHandler](x: Self) {
     
-    @scala.inline
-    def setHandleEvent(value: js.Any => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+    inline def setHandleEvent(value: js.Any => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }
 }

@@ -22,18 +22,15 @@ object usageRecordSummaries {
   }
   object IUsageRecordSummaries {
     
-    @scala.inline
-    def apply(data: js.Array[IUsageRecordSummariesItem], has_more: Boolean, url: String): IUsageRecordSummaries = {
+    inline def apply(data: js.Array[IUsageRecordSummariesItem], has_more: Boolean, url: String): IUsageRecordSummaries = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("object")("list")
       __obj.asInstanceOf[IUsageRecordSummaries]
     }
     
-    @scala.inline
-    implicit class IUsageRecordSummariesMutableBuilder[Self <: IUsageRecordSummaries] (val x: Self) extends AnyVal {
+    extension [Self <: IUsageRecordSummaries](x: Self) {
       
-      @scala.inline
-      def setObject(value: list): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: list): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,8 +52,7 @@ object usageRecordSummaries {
   }
   object IUsageRecordSummariesItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       invoice: String,
       livemode: Boolean,
@@ -70,29 +66,21 @@ object usageRecordSummaries {
       __obj.asInstanceOf[IUsageRecordSummariesItem]
     }
     
-    @scala.inline
-    implicit class IUsageRecordSummariesItemMutableBuilder[Self <: IUsageRecordSummariesItem] (val x: Self) extends AnyVal {
+    extension [Self <: IUsageRecordSummariesItem](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoice(value: String): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
+      inline def setInvoice(value: String): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriod(value: IPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: IPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscription_item(value: String): Self = StObject.set(x, "subscription_item", value.asInstanceOf[js.Any])
+      inline def setSubscription_item(value: String): Self = StObject.set(x, "subscription_item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_usage(value: Double): Self = StObject.set(x, "total_usage", value.asInstanceOf[js.Any])
+      inline def setTotal_usage(value: Double): Self = StObject.set(x, "total_usage", value.asInstanceOf[js.Any])
     }
   }
 }

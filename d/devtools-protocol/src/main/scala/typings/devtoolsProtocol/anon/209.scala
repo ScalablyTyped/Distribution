@@ -13,22 +13,17 @@ trait `209` extends StObject {
 }
 object `209` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[RemoveCredentialRequest], returnType: Unit): `209` = {
+  inline def apply(paramsType: js.Array[RemoveCredentialRequest], returnType: Unit): `209` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`209`]
   }
   
-  @scala.inline
-  implicit class `209MutableBuilder`[Self <: `209`] (val x: Self) extends AnyVal {
+  extension [Self <: `209`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[RemoveCredentialRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[RemoveCredentialRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: RemoveCredentialRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: RemoveCredentialRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

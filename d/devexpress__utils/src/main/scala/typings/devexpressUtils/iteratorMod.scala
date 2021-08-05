@@ -13,13 +13,13 @@ object iteratorMod {
   class SparseIntervalsIterator[T /* <: ConstInterval */] protected () extends StObject {
     def this(sparseIntervals: SparseIntervals[T]) = this()
     
-    var curr: js.Any = js.native
+    /* private */ var curr: js.Any = js.native
     
     var index: Double = js.native
     
     /* protected */ def initObject(): Unit = js.native
     
-    var intervalIndex: js.Any = js.native
+    /* private */ var intervalIndex: js.Any = js.native
     
     val isStarted: Boolean = js.native
     
@@ -27,8 +27,8 @@ object iteratorMod {
     
     def movePrev(): Boolean = js.native
     
-    var posInInterval: js.Any = js.native
+    /* private */ var posInInterval: js.Any = js.native
     
-    var sparseIntervals: js.Any = js.native
+    /* private */ var sparseIntervals: js.Any = js.native
   }
 }

@@ -20,8 +20,7 @@ trait PathWatcher
 }
 object PathWatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     getStartPromise: () => js.Promise[Unit],
     onDidError: js.Function1[/* error */ Error, Unit] => Disposable
@@ -30,13 +29,10 @@ object PathWatcher {
     __obj.asInstanceOf[PathWatcher]
   }
   
-  @scala.inline
-  implicit class PathWatcherMutableBuilder[Self <: PathWatcher] (val x: Self) extends AnyVal {
+  extension [Self <: PathWatcher](x: Self) {
     
-    @scala.inline
-    def setGetStartPromise(value: () => js.Promise[Unit]): Self = StObject.set(x, "getStartPromise", js.Any.fromFunction0(value))
+    inline def setGetStartPromise(value: () => js.Promise[Unit]): Self = StObject.set(x, "getStartPromise", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDidError(value: js.Function1[/* error */ Error, Unit] => Disposable): Self = StObject.set(x, "onDidError", js.Any.fromFunction1(value))
+    inline def setOnDidError(value: js.Function1[/* error */ Error, Unit] => Disposable): Self = StObject.set(x, "onDidError", js.Any.fromFunction1(value))
   }
 }

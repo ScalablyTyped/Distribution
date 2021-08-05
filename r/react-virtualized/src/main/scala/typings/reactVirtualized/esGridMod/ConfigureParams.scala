@@ -12,19 +12,15 @@ trait ConfigureParams extends StObject {
 }
 object ConfigureParams {
   
-  @scala.inline
-  def apply(cellCount: Double, estimatedCellSize: Double): ConfigureParams = {
+  inline def apply(cellCount: Double, estimatedCellSize: Double): ConfigureParams = {
     val __obj = js.Dynamic.literal(cellCount = cellCount.asInstanceOf[js.Any], estimatedCellSize = estimatedCellSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureParams]
   }
   
-  @scala.inline
-  implicit class ConfigureParamsMutableBuilder[Self <: ConfigureParams] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigureParams](x: Self) {
     
-    @scala.inline
-    def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+    inline def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedCellSize(value: Double): Self = StObject.set(x, "estimatedCellSize", value.asInstanceOf[js.Any])
+    inline def setEstimatedCellSize(value: Double): Self = StObject.set(x, "estimatedCellSize", value.asInstanceOf[js.Any])
   }
 }

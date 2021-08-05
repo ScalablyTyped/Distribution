@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDLNamespaceMemberType extends StObject
 object IDLNamespaceMemberType {
   
-  @scala.inline
-  def AttributeMemberType(
+  inline def AttributeMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     inherit: Boolean,
@@ -25,8 +24,7 @@ object IDLNamespaceMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.AttributeMemberType]
   }
   
-  @scala.inline
-  def OperationMemberType(
+  inline def OperationMemberType(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType

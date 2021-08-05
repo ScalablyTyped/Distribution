@@ -51,73 +51,51 @@ object connection {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createFrom(options: StringDictionary[js.Any]): ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrom")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectionProfile]
+    inline def createFrom(options: StringDictionary[js.Any]): ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrom")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectionProfile]
   }
   
-  @scala.inline
-  def connect(connectionProfile: IConnectionProfile): Thenable[ConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any]).asInstanceOf[Thenable[ConnectionResult]]
-  @scala.inline
-  def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
-  @scala.inline
-  def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean, showDashboard: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any], showDashboard.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
-  @scala.inline
-  def connect(connectionProfile: IConnectionProfile, saveConnection: Unit, showDashboard: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any], showDashboard.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
+  inline def connect(connectionProfile: IConnectionProfile): Thenable[ConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any]).asInstanceOf[Thenable[ConnectionResult]]
+  inline def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
+  inline def connect(connectionProfile: IConnectionProfile, saveConnection: Boolean, showDashboard: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any], showDashboard.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
+  inline def connect(connectionProfile: IConnectionProfile, saveConnection: Unit, showDashboard: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any], showDashboard.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
   
-  @scala.inline
-  def getActiveConnections(): Thenable[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveConnections")().asInstanceOf[Thenable[js.Array[Connection]]]
+  inline def getActiveConnections(): Thenable[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveConnections")().asInstanceOf[Thenable[js.Array[Connection]]]
   
-  @scala.inline
-  def getConnectionString(connectionId: String, includePassword: Boolean): Thenable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionString")(connectionId.asInstanceOf[js.Any], includePassword.asInstanceOf[js.Any])).asInstanceOf[Thenable[String]]
+  inline def getConnectionString(connectionId: String, includePassword: Boolean): Thenable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionString")(connectionId.asInstanceOf[js.Any], includePassword.asInstanceOf[js.Any])).asInstanceOf[Thenable[String]]
   
-  @scala.inline
-  def getConnections(): Thenable[js.Array[ConnectionProfile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")().asInstanceOf[Thenable[js.Array[ConnectionProfile]]]
-  @scala.inline
-  def getConnections(activeConnectionsOnly: Boolean): Thenable[js.Array[ConnectionProfile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(activeConnectionsOnly.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[ConnectionProfile]]]
+  inline def getConnections(): Thenable[js.Array[ConnectionProfile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")().asInstanceOf[Thenable[js.Array[ConnectionProfile]]]
+  inline def getConnections(activeConnectionsOnly: Boolean): Thenable[js.Array[ConnectionProfile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(activeConnectionsOnly.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[ConnectionProfile]]]
   
-  @scala.inline
-  def getCredentials(connectionId: String): Thenable[StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[StringDictionary[String]]]
+  inline def getCredentials(connectionId: String): Thenable[StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[StringDictionary[String]]]
   
-  @scala.inline
-  def getCurrentConnection(): Thenable[ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentConnection")().asInstanceOf[Thenable[ConnectionProfile]]
+  inline def getCurrentConnection(): Thenable[ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentConnection")().asInstanceOf[Thenable[ConnectionProfile]]
   
-  @scala.inline
-  def getServerInfo(connectionId: String): Thenable[ServerInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerInfo")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[ServerInfo]]
+  inline def getServerInfo(connectionId: String): Thenable[ServerInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerInfo")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[ServerInfo]]
   
-  @scala.inline
-  def getUriForConnection(connectionId: String): Thenable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUriForConnection")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[String]]
+  inline def getUriForConnection(connectionId: String): Thenable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUriForConnection")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[String]]
   
-  @scala.inline
-  def listDatabases(connectionId: String): Thenable[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDatabases")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[String]]]
+  inline def listDatabases(connectionId: String): Thenable[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDatabases")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[String]]]
   
-  @scala.inline
-  def openConnectionDialog(): Thenable[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")().asInstanceOf[Thenable[Connection]]
-  @scala.inline
-  def openConnectionDialog(providers: js.Array[String]): Thenable[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any]).asInstanceOf[Thenable[Connection]]
-  @scala.inline
-  def openConnectionDialog(
+  inline def openConnectionDialog(): Thenable[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")().asInstanceOf[Thenable[Connection]]
+  inline def openConnectionDialog(providers: js.Array[String]): Thenable[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any]).asInstanceOf[Thenable[Connection]]
+  inline def openConnectionDialog(
     providers: js.Array[String],
     initialConnectionProfile: Unit,
     connectionCompletionOptions: IConnectionCompletionOptions
   ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
-  @scala.inline
-  def openConnectionDialog(providers: js.Array[String], initialConnectionProfile: IConnectionProfile): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
-  @scala.inline
-  def openConnectionDialog(
+  inline def openConnectionDialog(providers: js.Array[String], initialConnectionProfile: IConnectionProfile): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
+  inline def openConnectionDialog(
     providers: js.Array[String],
     initialConnectionProfile: IConnectionProfile,
     connectionCompletionOptions: IConnectionCompletionOptions
   ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
-  @scala.inline
-  def openConnectionDialog(
+  inline def openConnectionDialog(
     providers: Unit,
     initialConnectionProfile: Unit,
     connectionCompletionOptions: IConnectionCompletionOptions
   ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
-  @scala.inline
-  def openConnectionDialog(providers: Unit, initialConnectionProfile: IConnectionProfile): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
-  @scala.inline
-  def openConnectionDialog(
+  inline def openConnectionDialog(providers: Unit, initialConnectionProfile: IConnectionProfile): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
+  inline def openConnectionDialog(
     providers: Unit,
     initialConnectionProfile: IConnectionProfile,
     connectionCompletionOptions: IConnectionCompletionOptions
@@ -139,20 +117,16 @@ object connection {
   }
   object Connection {
     
-    @scala.inline
-    def apply(connectionId: String, options: StringDictionary[js.Any], providerName: String): Connection = {
+    inline def apply(connectionId: String, options: StringDictionary[js.Any], providerName: String): Connection = {
       val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connection]
     }
     
-    @scala.inline
-    implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+    extension [Self <: Connection](x: Self) {
       
-      @scala.inline
-      def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+      inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     }
   }
 }

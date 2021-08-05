@@ -14,22 +14,17 @@ trait Manage extends StObject {
 }
 object Manage {
   
-  @scala.inline
-  def apply(manage: scala.Double, none: scala.Double, use: scala.Double): Manage = {
+  inline def apply(manage: scala.Double, none: scala.Double, use: scala.Double): Manage = {
     val __obj = js.Dynamic.literal(manage = manage.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manage]
   }
   
-  @scala.inline
-  implicit class ManageMutableBuilder[Self <: Manage] (val x: Self) extends AnyVal {
+  extension [Self <: Manage](x: Self) {
     
-    @scala.inline
-    def setManage(value: scala.Double): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
+    inline def setManage(value: scala.Double): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse(value: scala.Double): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: scala.Double): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
   }
 }

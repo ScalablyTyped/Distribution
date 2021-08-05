@@ -14,31 +14,23 @@ trait HrefProps extends StObject {
 }
 object HrefProps {
   
-  @scala.inline
-  def apply(): HrefProps = {
+  inline def apply(): HrefProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HrefProps]
   }
   
-  @scala.inline
-  implicit class HrefPropsMutableBuilder[Self <: HrefProps] (val x: Self) extends AnyVal {
+  extension [Self <: HrefProps](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

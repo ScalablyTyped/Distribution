@@ -17,37 +17,27 @@ trait ShadowStyleIOS extends StObject {
 }
 object ShadowStyleIOS {
   
-  @scala.inline
-  def apply(): ShadowStyleIOS = {
+  inline def apply(): ShadowStyleIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowStyleIOS]
   }
   
-  @scala.inline
-  implicit class ShadowStyleIOSMutableBuilder[Self <: ShadowStyleIOS] (val x: Self) extends AnyVal {
+  extension [Self <: ShadowStyleIOS](x: Self) {
     
-    @scala.inline
-    def setShadowColor(value: ColorValue): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: ColorValue): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    @scala.inline
-    def setShadowOffset(value: Height): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Height): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
+    inline def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
-    @scala.inline
-    def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
+    inline def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOpacityUndefined: Self = StObject.set(x, "shadowOpacity", js.undefined)
+    inline def setShadowOpacityUndefined: Self = StObject.set(x, "shadowOpacity", js.undefined)
     
-    @scala.inline
-    def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
+    inline def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowRadiusUndefined: Self = StObject.set(x, "shadowRadius", js.undefined)
+    inline def setShadowRadiusUndefined: Self = StObject.set(x, "shadowRadius", js.undefined)
   }
 }

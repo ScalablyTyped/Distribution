@@ -48,8 +48,7 @@ trait ISearchGroup extends StObject {
 }
 object ISearchGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qGroupType: SearchObjectsGroupType,
     qId: Double,
     qItems: js.Array[ISearchGroupItem],
@@ -60,28 +59,20 @@ object ISearchGroup {
     __obj.asInstanceOf[ISearchGroup]
   }
   
-  @scala.inline
-  implicit class ISearchGroupMutableBuilder[Self <: ISearchGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchGroup](x: Self) {
     
-    @scala.inline
-    def setQGroupType(value: SearchObjectsGroupType): Self = StObject.set(x, "qGroupType", value.asInstanceOf[js.Any])
+    inline def setQGroupType(value: SearchObjectsGroupType): Self = StObject.set(x, "qGroupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQId(value: Double): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    inline def setQId(value: Double): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQItems(value: js.Array[ISearchGroupItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: js.Array[ISearchGroupItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQItemsVarargs(value: ISearchGroupItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: ISearchGroupItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
     
-    @scala.inline
-    def setQSearchTermsMatched(value: js.Array[Double]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
+    inline def setQSearchTermsMatched(value: js.Array[Double]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSearchTermsMatchedVarargs(value: Double*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
+    inline def setQSearchTermsMatchedVarargs(value: Double*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
     
-    @scala.inline
-    def setQTotalNumberOfItems(value: Double): Self = StObject.set(x, "qTotalNumberOfItems", value.asInstanceOf[js.Any])
+    inline def setQTotalNumberOfItems(value: Double): Self = StObject.set(x, "qTotalNumberOfItems", value.asInstanceOf[js.Any])
   }
 }

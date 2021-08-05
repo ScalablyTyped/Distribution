@@ -25,25 +25,19 @@ trait SchemaSingleClusterRouting extends StObject {
 }
 object SchemaSingleClusterRouting {
   
-  @scala.inline
-  def apply(): SchemaSingleClusterRouting = {
+  inline def apply(): SchemaSingleClusterRouting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSingleClusterRouting]
   }
   
-  @scala.inline
-  implicit class SchemaSingleClusterRoutingMutableBuilder[Self <: SchemaSingleClusterRouting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSingleClusterRouting](x: Self) {
     
-    @scala.inline
-    def setAllowTransactionalWrites(value: Boolean): Self = StObject.set(x, "allowTransactionalWrites", value.asInstanceOf[js.Any])
+    inline def setAllowTransactionalWrites(value: Boolean): Self = StObject.set(x, "allowTransactionalWrites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTransactionalWritesUndefined: Self = StObject.set(x, "allowTransactionalWrites", js.undefined)
+    inline def setAllowTransactionalWritesUndefined: Self = StObject.set(x, "allowTransactionalWrites", js.undefined)
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
   }
 }

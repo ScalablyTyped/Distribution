@@ -26,8 +26,7 @@ trait ContinuousRendererResultColor
 }
 object ContinuousRendererResultColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colorScheme: ColorScheme,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object ContinuousRendererResultColor {
     __obj.asInstanceOf[ContinuousRendererResultColor]
   }
   
-  @scala.inline
-  implicit class ContinuousRendererResultColorMutableBuilder[Self <: ContinuousRendererResultColor] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousRendererResultColor](x: Self) {
     
-    @scala.inline
-    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariable(value: ColorVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
+    inline def setVisualVariable(value: ColorVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
   }
 }

@@ -20,22 +20,17 @@ trait `12` extends StObject {
 }
 object `12` {
   
-  @scala.inline
-  def apply(newValue: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): `12` = {
+  inline def apply(newValue: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): `12` = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`12`]
   }
   
-  @scala.inline
-  implicit class `12MutableBuilder`[Self <: `12`] (val x: Self) extends AnyVal {
+  extension [Self <: `12`](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

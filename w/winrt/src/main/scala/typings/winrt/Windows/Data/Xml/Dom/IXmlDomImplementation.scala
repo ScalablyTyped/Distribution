@@ -10,16 +10,13 @@ trait IXmlDomImplementation extends StObject {
 }
 object IXmlDomImplementation {
   
-  @scala.inline
-  def apply(hasFeature: (String, js.Any) => Boolean): IXmlDomImplementation = {
+  inline def apply(hasFeature: (String, js.Any) => Boolean): IXmlDomImplementation = {
     val __obj = js.Dynamic.literal(hasFeature = js.Any.fromFunction2(hasFeature))
     __obj.asInstanceOf[IXmlDomImplementation]
   }
   
-  @scala.inline
-  implicit class IXmlDomImplementationMutableBuilder[Self <: IXmlDomImplementation] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlDomImplementation](x: Self) {
     
-    @scala.inline
-    def setHasFeature(value: (String, js.Any) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
+    inline def setHasFeature(value: (String, js.Any) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
   }
 }

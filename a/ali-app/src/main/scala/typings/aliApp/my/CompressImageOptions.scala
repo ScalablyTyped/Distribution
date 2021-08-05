@@ -37,31 +37,23 @@ trait CompressImageOptions
 }
 object CompressImageOptions {
   
-  @scala.inline
-  def apply(apFilePaths: js.Array[String]): CompressImageOptions = {
+  inline def apply(apFilePaths: js.Array[String]): CompressImageOptions = {
     val __obj = js.Dynamic.literal(apFilePaths = apFilePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressImageOptions]
   }
   
-  @scala.inline
-  implicit class CompressImageOptionsMutableBuilder[Self <: CompressImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CompressImageOptions](x: Self) {
     
-    @scala.inline
-    def setApFilePaths(value: js.Array[String]): Self = StObject.set(x, "apFilePaths", value.asInstanceOf[js.Any])
+    inline def setApFilePaths(value: js.Array[String]): Self = StObject.set(x, "apFilePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApFilePathsVarargs(value: String*): Self = StObject.set(x, "apFilePaths", js.Array(value :_*))
+    inline def setApFilePathsVarargs(value: String*): Self = StObject.set(x, "apFilePaths", js.Array(value :_*))
     
-    @scala.inline
-    def setCompressLevel(value: `0` | `1` | `2` | `3` | `4`): Self = StObject.set(x, "compressLevel", value.asInstanceOf[js.Any])
+    inline def setCompressLevel(value: `0` | `1` | `2` | `3` | `4`): Self = StObject.set(x, "compressLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressLevelUndefined: Self = StObject.set(x, "compressLevel", js.undefined)
+    inline def setCompressLevelUndefined: Self = StObject.set(x, "compressLevel", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ ApFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ApFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spdx-satisfies"
-version := "0.1-dt-20200515Z-bee4b5"
+version := "0.1-dt-20200515Z-f8c209"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

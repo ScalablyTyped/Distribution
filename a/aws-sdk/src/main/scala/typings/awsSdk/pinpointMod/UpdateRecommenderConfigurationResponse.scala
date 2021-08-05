@@ -10,16 +10,13 @@ trait UpdateRecommenderConfigurationResponse extends StObject {
 }
 object UpdateRecommenderConfigurationResponse {
   
-  @scala.inline
-  def apply(RecommenderConfigurationResponse: RecommenderConfigurationResponse): UpdateRecommenderConfigurationResponse = {
+  inline def apply(RecommenderConfigurationResponse: RecommenderConfigurationResponse): UpdateRecommenderConfigurationResponse = {
     val __obj = js.Dynamic.literal(RecommenderConfigurationResponse = RecommenderConfigurationResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRecommenderConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class UpdateRecommenderConfigurationResponseMutableBuilder[Self <: UpdateRecommenderConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRecommenderConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setRecommenderConfigurationResponse(value: RecommenderConfigurationResponse): Self = StObject.set(x, "RecommenderConfigurationResponse", value.asInstanceOf[js.Any])
+    inline def setRecommenderConfigurationResponse(value: RecommenderConfigurationResponse): Self = StObject.set(x, "RecommenderConfigurationResponse", value.asInstanceOf[js.Any])
   }
 }

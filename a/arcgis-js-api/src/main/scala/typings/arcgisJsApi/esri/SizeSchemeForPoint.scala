@@ -69,8 +69,7 @@ trait SizeSchemeForPoint
 }
 object SizeSchemeForPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -87,31 +86,22 @@ object SizeSchemeForPoint {
     __obj.asInstanceOf[SizeSchemeForPoint]
   }
   
-  @scala.inline
-  implicit class SizeSchemeForPointMutableBuilder[Self <: SizeSchemeForPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SizeSchemeForPoint](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataColor(value: Color_): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
+    inline def setNoDataColor(value: Color_): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataSize(value: Double): Self = StObject.set(x, "noDataSize", value.asInstanceOf[js.Any])
+    inline def setNoDataSize(value: Double): Self = StObject.set(x, "noDataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutline(value: SizeSchemeForPointOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: SizeSchemeForPointOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

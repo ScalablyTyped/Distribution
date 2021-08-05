@@ -35,8 +35,7 @@ object breadcrumbsDriverMod {
   }
   object BreadcrumbsDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       breadcrumbContentAt: Double => String | Null,
       breadcrumbsLength: () => Double,
       clickBreadcrumbAt: Double => js.Any,
@@ -54,41 +53,29 @@ object breadcrumbsDriverMod {
       __obj.asInstanceOf[BreadcrumbsDriver]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsDriverMutableBuilder[Self <: BreadcrumbsDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsDriver](x: Self) {
       
-      @scala.inline
-      def setBreadcrumbContentAt(value: Double => String | Null): Self = StObject.set(x, "breadcrumbContentAt", js.Any.fromFunction1(value))
+      inline def setBreadcrumbContentAt(value: Double => String | Null): Self = StObject.set(x, "breadcrumbContentAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBreadcrumbsLength(value: () => Double): Self = StObject.set(x, "breadcrumbsLength", js.Any.fromFunction0(value))
+      inline def setBreadcrumbsLength(value: () => Double): Self = StObject.set(x, "breadcrumbsLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickBreadcrumbAt(value: Double => js.Any): Self = StObject.set(x, "clickBreadcrumbAt", js.Any.fromFunction1(value))
+      inline def setClickBreadcrumbAt(value: Double => js.Any): Self = StObject.set(x, "clickBreadcrumbAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetActiveItemId(value: () => Double | Null): Self = StObject.set(x, "getActiveItemId", js.Any.fromFunction0(value))
+      inline def setGetActiveItemId(value: () => Double | Null): Self = StObject.set(x, "getActiveItemId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelClassList(value: Double => String): Self = StObject.set(x, "getLabelClassList", js.Any.fromFunction1(value))
+      inline def setGetLabelClassList(value: Double => String): Self = StObject.set(x, "getLabelClassList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsActiveLinkAt(value: Double => Boolean): Self = StObject.set(x, "isActiveLinkAt", js.Any.fromFunction1(value))
+      inline def setIsActiveLinkAt(value: Double => Boolean): Self = StObject.set(x, "isActiveLinkAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLarge(value: () => Boolean): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
+      inline def setIsLarge(value: () => Boolean): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMedium(value: () => Boolean): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
+      inline def setIsMedium(value: () => Boolean): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOnDarkBackground(value: () => Boolean): Self = StObject.set(x, "isOnDarkBackground", js.Any.fromFunction0(value))
+      inline def setIsOnDarkBackground(value: () => Boolean): Self = StObject.set(x, "isOnDarkBackground", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOnGrayBackground(value: () => Boolean): Self = StObject.set(x, "isOnGrayBackground", js.Any.fromFunction0(value))
+      inline def setIsOnGrayBackground(value: () => Boolean): Self = StObject.set(x, "isOnGrayBackground", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOnWhiteBackground(value: () => Boolean): Self = StObject.set(x, "isOnWhiteBackground", js.Any.fromFunction0(value))
+      inline def setIsOnWhiteBackground(value: () => Boolean): Self = StObject.set(x, "isOnWhiteBackground", js.Any.fromFunction0(value))
     }
   }
 }

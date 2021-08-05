@@ -11,20 +11,17 @@ object deathStrings {
   sealed trait SIGINT
     extends StObject
        with Signal
-  @scala.inline
-  def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
+  inline def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
   
   @js.native
   sealed trait SIGQUIT
     extends StObject
        with Signal
-  @scala.inline
-  def SIGQUIT: SIGQUIT = "SIGQUIT".asInstanceOf[SIGQUIT]
+  inline def SIGQUIT: SIGQUIT = "SIGQUIT".asInstanceOf[SIGQUIT]
   
   @js.native
   sealed trait SIGTERM
     extends StObject
        with Signal
-  @scala.inline
-  def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
+  inline def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
 }

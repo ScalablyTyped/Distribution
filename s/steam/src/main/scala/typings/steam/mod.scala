@@ -112,8 +112,7 @@ object mod {
   @JSImport("steam", "servers")
   @js.native
   def servers: js.Any = js.native
-  @scala.inline
-  def servers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("servers")(x.asInstanceOf[js.Any])
+  inline def servers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("servers")(x.asInstanceOf[js.Any])
   
   trait LogonOptions extends StObject {
     
@@ -127,32 +126,24 @@ object mod {
   }
   object LogonOptions {
     
-    @scala.inline
-    def apply(accountName: String, password: String): LogonOptions = {
+    inline def apply(accountName: String, password: String): LogonOptions = {
       val __obj = js.Dynamic.literal(accountName = accountName.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogonOptions]
     }
     
-    @scala.inline
-    implicit class LogonOptionsMutableBuilder[Self <: LogonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LogonOptions](x: Self) {
       
-      @scala.inline
-      def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+      inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
+      inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
+      inline def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShaSentryfile(value: String): Self = StObject.set(x, "shaSentryfile", value.asInstanceOf[js.Any])
+      inline def setShaSentryfile(value: String): Self = StObject.set(x, "shaSentryfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShaSentryfileUndefined: Self = StObject.set(x, "shaSentryfile", js.undefined)
+      inline def setShaSentryfileUndefined: Self = StObject.set(x, "shaSentryfile", js.undefined)
     }
   }
 }

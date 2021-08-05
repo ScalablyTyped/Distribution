@@ -12,25 +12,19 @@ trait DiagramEditableResizeHandlesHover extends StObject {
 }
 object DiagramEditableResizeHandlesHover {
   
-  @scala.inline
-  def apply(): DiagramEditableResizeHandlesHover = {
+  inline def apply(): DiagramEditableResizeHandlesHover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramEditableResizeHandlesHover]
   }
   
-  @scala.inline
-  implicit class DiagramEditableResizeHandlesHoverMutableBuilder[Self <: DiagramEditableResizeHandlesHover] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramEditableResizeHandlesHover](x: Self) {
     
-    @scala.inline
-    def setFill(value: String | DiagramEditableResizeHandlesHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String | DiagramEditableResizeHandlesHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: DiagramEditableResizeHandlesHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: DiagramEditableResizeHandlesHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

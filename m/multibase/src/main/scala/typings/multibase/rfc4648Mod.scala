@@ -11,8 +11,7 @@ object rfc4648Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rfc4648(bitsPerChar: Double): CodecFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("rfc4648")(bitsPerChar.asInstanceOf[js.Any]).asInstanceOf[CodecFactory]
+  inline def rfc4648(bitsPerChar: Double): CodecFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("rfc4648")(bitsPerChar.asInstanceOf[js.Any]).asInstanceOf[CodecFactory]
   
   type CodecFactory = js.Function1[/* input */ String, Codec]
 }

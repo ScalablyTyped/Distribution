@@ -19,8 +19,7 @@ trait InitUpdate extends StObject {
 }
 object InitUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     init: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit,
     update: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]]) => Unit
   ): InitUpdate = {
@@ -28,13 +27,10 @@ object InitUpdate {
     __obj.asInstanceOf[InitUpdate]
   }
   
-  @scala.inline
-  implicit class InitUpdateMutableBuilder[Self <: InitUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: InitUpdate](x: Self) {
     
-    @scala.inline
-    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

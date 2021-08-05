@@ -13,22 +13,17 @@ trait TimedMetadataInsertion extends StObject {
 }
 object TimedMetadataInsertion {
   
-  @scala.inline
-  def apply(): TimedMetadataInsertion = {
+  inline def apply(): TimedMetadataInsertion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimedMetadataInsertion]
   }
   
-  @scala.inline
-  implicit class TimedMetadataInsertionMutableBuilder[Self <: TimedMetadataInsertion] (val x: Self) extends AnyVal {
+  extension [Self <: TimedMetadataInsertion](x: Self) {
     
-    @scala.inline
-    def setId3Insertions(value: listOfId3Insertion): Self = StObject.set(x, "Id3Insertions", value.asInstanceOf[js.Any])
+    inline def setId3Insertions(value: listOfId3Insertion): Self = StObject.set(x, "Id3Insertions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId3InsertionsUndefined: Self = StObject.set(x, "Id3Insertions", js.undefined)
+    inline def setId3InsertionsUndefined: Self = StObject.set(x, "Id3Insertions", js.undefined)
     
-    @scala.inline
-    def setId3InsertionsVarargs(value: Id3Insertion*): Self = StObject.set(x, "Id3Insertions", js.Array(value :_*))
+    inline def setId3InsertionsVarargs(value: Id3Insertion*): Self = StObject.set(x, "Id3Insertions", js.Array(value :_*))
   }
 }

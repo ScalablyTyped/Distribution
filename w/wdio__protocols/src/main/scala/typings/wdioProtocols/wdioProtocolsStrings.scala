@@ -13,60 +13,51 @@ object wdioProtocolsStrings {
   sealed trait DELETE
     extends StObject
        with CommandMethod
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
   sealed trait GET
     extends StObject
        with CommandMethod
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait POST
     extends StObject
        with CommandMethod
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait UIAutomation
     extends StObject
        with Environments
-  @scala.inline
-  def UIAutomation: UIAutomation = "UIAutomation".asInstanceOf[UIAutomation]
+  inline def UIAutomation: UIAutomation = "UIAutomation".asInstanceOf[UIAutomation]
   
   @js.native
   sealed trait UiAutomator
     extends StObject
        with Environments
-  @scala.inline
-  def UiAutomator: UiAutomator = "UiAutomator".asInstanceOf[UiAutomator]
+  inline def UiAutomator: UiAutomator = "UiAutomator".asInstanceOf[UiAutomator]
   
   @js.native
   sealed trait XCUITest
     extends StObject
        with Environments
-  @scala.inline
-  def XCUITest: XCUITest = "XCUITest".asInstanceOf[XCUITest]
+  inline def XCUITest: XCUITest = "XCUITest".asInstanceOf[XCUITest]
   
   @js.native
   sealed trait android
     extends StObject
        with Platform
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
   sealed trait ios
     extends StObject
        with Platform
-  @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
+  inline def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
 }

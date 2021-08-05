@@ -23,31 +23,23 @@ trait GetMappingRequest extends StObject {
 }
 object GetMappingRequest {
   
-  @scala.inline
-  def apply(Source: CatalogEntry): GetMappingRequest = {
+  inline def apply(Source: CatalogEntry): GetMappingRequest = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMappingRequest]
   }
   
-  @scala.inline
-  implicit class GetMappingRequestMutableBuilder[Self <: GetMappingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMappingRequest](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setSinks(value: CatalogEntries): Self = StObject.set(x, "Sinks", value.asInstanceOf[js.Any])
+    inline def setSinks(value: CatalogEntries): Self = StObject.set(x, "Sinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinksUndefined: Self = StObject.set(x, "Sinks", js.undefined)
+    inline def setSinksUndefined: Self = StObject.set(x, "Sinks", js.undefined)
     
-    @scala.inline
-    def setSinksVarargs(value: CatalogEntry*): Self = StObject.set(x, "Sinks", js.Array(value :_*))
+    inline def setSinksVarargs(value: CatalogEntry*): Self = StObject.set(x, "Sinks", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: CatalogEntry): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: CatalogEntry): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

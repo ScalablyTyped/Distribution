@@ -49,14 +49,12 @@ object BackgroundTransfer {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getCurrentDownloadsAsync(): IAsyncOperation[
+    inline def getCurrentDownloadsAsync(): IAsyncOperation[
         IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")().asInstanceOf[IAsyncOperation[
         IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
       ]]
-    @scala.inline
-    def getCurrentDownloadsAsync(group: String): IAsyncOperation[
+    inline def getCurrentDownloadsAsync(group: String): IAsyncOperation[
         IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[
         IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation]
@@ -109,8 +107,7 @@ object BackgroundTransfer {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
+    inline def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferStatus")
@@ -170,10 +167,8 @@ object BackgroundTransfer {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getCurrentUploadsAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")().asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]]]
-    @scala.inline
-    def getCurrentUploadsAsync(group: String): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]]]
+    inline def getCurrentUploadsAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")().asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]]]
+    inline def getCurrentUploadsAsync(group: String): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation]]]
   }
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.DownloadOperation")

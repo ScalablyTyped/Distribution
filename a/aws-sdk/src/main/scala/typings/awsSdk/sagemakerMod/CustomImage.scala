@@ -23,25 +23,19 @@ trait CustomImage extends StObject {
 }
 object CustomImage {
   
-  @scala.inline
-  def apply(AppImageConfigName: AppImageConfigName, ImageName: ImageName): CustomImage = {
+  inline def apply(AppImageConfigName: AppImageConfigName, ImageName: ImageName): CustomImage = {
     val __obj = js.Dynamic.literal(AppImageConfigName = AppImageConfigName.asInstanceOf[js.Any], ImageName = ImageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomImage]
   }
   
-  @scala.inline
-  implicit class CustomImageMutableBuilder[Self <: CustomImage] (val x: Self) extends AnyVal {
+  extension [Self <: CustomImage](x: Self) {
     
-    @scala.inline
-    def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
+    inline def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVersionNumber(value: ImageVersionNumber): Self = StObject.set(x, "ImageVersionNumber", value.asInstanceOf[js.Any])
+    inline def setImageVersionNumber(value: ImageVersionNumber): Self = StObject.set(x, "ImageVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVersionNumberUndefined: Self = StObject.set(x, "ImageVersionNumber", js.undefined)
+    inline def setImageVersionNumberUndefined: Self = StObject.set(x, "ImageVersionNumber", js.undefined)
   }
 }

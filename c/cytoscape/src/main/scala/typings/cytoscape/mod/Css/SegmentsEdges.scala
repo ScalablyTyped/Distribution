@@ -39,8 +39,7 @@ trait SegmentsEdges extends StObject {
 }
 object SegmentsEdges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `edge-distances`: PropertyValueEdge[intersection | `node-position`],
     `segment-distances`: PropertyValueEdge[String],
     `segment-weights`: PropertyValueEdge[String]
@@ -52,25 +51,18 @@ object SegmentsEdges {
     __obj.asInstanceOf[SegmentsEdges]
   }
   
-  @scala.inline
-  implicit class SegmentsEdgesMutableBuilder[Self <: SegmentsEdges] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentsEdges](x: Self) {
     
-    @scala.inline
-    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
+    inline def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
+    inline def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSegment-distances`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-distances", value.asInstanceOf[js.Any])
+    inline def `setSegment-distances`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-distances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSegment-distancesFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-distances", js.Any.fromFunction1(value))
+    inline def `setSegment-distancesFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-distances", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSegment-weights`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-weights", value.asInstanceOf[js.Any])
+    inline def `setSegment-weights`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-weights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSegment-weightsFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-weights", js.Any.fromFunction1(value))
+    inline def `setSegment-weightsFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-weights", js.Any.fromFunction1(value))
   }
 }

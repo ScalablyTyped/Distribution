@@ -14,22 +14,17 @@ trait Disabled extends StObject {
 }
 object Disabled {
   
-  @scala.inline
-  def apply(disabled: scala.Double, enabled: scala.Double, paused: scala.Double): Disabled = {
+  inline def apply(disabled: scala.Double, enabled: scala.Double, paused: scala.Double): Disabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any])
     __obj.asInstanceOf[Disabled]
   }
   
-  @scala.inline
-  implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+  extension [Self <: Disabled](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: scala.Double): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: scala.Double): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaused(value: scala.Double): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: scala.Double): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
   }
 }

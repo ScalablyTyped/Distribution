@@ -10,16 +10,13 @@ trait IMFDocListCtrl extends StObject {
 }
 object IMFDocListCtrl {
   
-  @scala.inline
-  def apply(AttachToListingWindow: js.Any => Unit): IMFDocListCtrl = {
+  inline def apply(AttachToListingWindow: js.Any => Unit): IMFDocListCtrl = {
     val __obj = js.Dynamic.literal(AttachToListingWindow = js.Any.fromFunction1(AttachToListingWindow))
     __obj.asInstanceOf[IMFDocListCtrl]
   }
   
-  @scala.inline
-  implicit class IMFDocListCtrlMutableBuilder[Self <: IMFDocListCtrl] (val x: Self) extends AnyVal {
+  extension [Self <: IMFDocListCtrl](x: Self) {
     
-    @scala.inline
-    def setAttachToListingWindow(value: js.Any => Unit): Self = StObject.set(x, "AttachToListingWindow", js.Any.fromFunction1(value))
+    inline def setAttachToListingWindow(value: js.Any => Unit): Self = StObject.set(x, "AttachToListingWindow", js.Any.fromFunction1(value))
   }
 }

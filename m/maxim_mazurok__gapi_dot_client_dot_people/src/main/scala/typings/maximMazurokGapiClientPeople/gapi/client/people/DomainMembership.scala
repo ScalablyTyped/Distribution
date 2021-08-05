@@ -11,19 +11,15 @@ trait DomainMembership extends StObject {
 }
 object DomainMembership {
   
-  @scala.inline
-  def apply(): DomainMembership = {
+  inline def apply(): DomainMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainMembership]
   }
   
-  @scala.inline
-  implicit class DomainMembershipMutableBuilder[Self <: DomainMembership] (val x: Self) extends AnyVal {
+  extension [Self <: DomainMembership](x: Self) {
     
-    @scala.inline
-    def setInViewerDomain(value: Boolean): Self = StObject.set(x, "inViewerDomain", value.asInstanceOf[js.Any])
+    inline def setInViewerDomain(value: Boolean): Self = StObject.set(x, "inViewerDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInViewerDomainUndefined: Self = StObject.set(x, "inViewerDomain", js.undefined)
+    inline def setInViewerDomainUndefined: Self = StObject.set(x, "inViewerDomain", js.undefined)
   }
 }

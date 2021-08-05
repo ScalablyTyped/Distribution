@@ -10,16 +10,13 @@ trait IsMain extends StObject {
 }
 object IsMain {
   
-  @scala.inline
-  def apply(isMain: Boolean): IsMain = {
+  inline def apply(isMain: Boolean): IsMain = {
     val __obj = js.Dynamic.literal(isMain = isMain.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsMain]
   }
   
-  @scala.inline
-  implicit class IsMainMutableBuilder[Self <: IsMain] (val x: Self) extends AnyVal {
+  extension [Self <: IsMain](x: Self) {
     
-    @scala.inline
-    def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
+    inline def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
   }
 }

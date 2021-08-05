@@ -13,16 +13,13 @@ trait GetMissionProfileRequest extends StObject {
 }
 object GetMissionProfileRequest {
   
-  @scala.inline
-  def apply(missionProfileId: String): GetMissionProfileRequest = {
+  inline def apply(missionProfileId: String): GetMissionProfileRequest = {
     val __obj = js.Dynamic.literal(missionProfileId = missionProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMissionProfileRequest]
   }
   
-  @scala.inline
-  implicit class GetMissionProfileRequestMutableBuilder[Self <: GetMissionProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMissionProfileRequest](x: Self) {
     
-    @scala.inline
-    def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
   }
 }

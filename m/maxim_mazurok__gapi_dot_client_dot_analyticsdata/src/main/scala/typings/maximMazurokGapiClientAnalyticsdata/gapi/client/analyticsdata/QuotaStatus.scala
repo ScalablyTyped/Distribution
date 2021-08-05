@@ -14,25 +14,19 @@ trait QuotaStatus extends StObject {
 }
 object QuotaStatus {
   
-  @scala.inline
-  def apply(): QuotaStatus = {
+  inline def apply(): QuotaStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuotaStatus]
   }
   
-  @scala.inline
-  implicit class QuotaStatusMutableBuilder[Self <: QuotaStatus] (val x: Self) extends AnyVal {
+  extension [Self <: QuotaStatus](x: Self) {
     
-    @scala.inline
-    def setConsumed(value: Double): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
+    inline def setConsumed(value: Double): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedUndefined: Self = StObject.set(x, "consumed", js.undefined)
+    inline def setConsumedUndefined: Self = StObject.set(x, "consumed", js.undefined)
     
-    @scala.inline
-    def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+    inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
+    inline def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
   }
 }

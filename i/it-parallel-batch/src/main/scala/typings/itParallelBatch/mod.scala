@@ -21,12 +21,9 @@ object mod {
     * @param {number|string} [size=1]
     * @returns {AsyncIterable<T>}
     */
-  @scala.inline
-  def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]], size: String): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]], size: Double): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
+  inline def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]], size: String): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]], size: Double): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
   
   @JSImport("it-parallel-batch/dist", JSImport.Namespace)
   @js.native

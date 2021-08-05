@@ -43,13 +43,13 @@ object numericAxisMod {
     
     /* private */ def _hideOverlappingTickLabels(): js.Any = js.native
     
-    var _measurer: js.Any = js.native
+    /* private */ var _measurer: js.Any = js.native
     
-    var _tickLabelPositioning: js.Any = js.native
+    /* private */ var _tickLabelPositioning: js.Any = js.native
     
-    var _usesTextWidthApproximation: js.Any = js.native
+    /* private */ var _usesTextWidthApproximation: js.Any = js.native
     
-    var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: js.Any = js.native
     
     /**
       * Gets the tick label position relative to the tick marks.

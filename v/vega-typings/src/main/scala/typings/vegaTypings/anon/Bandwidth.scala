@@ -28,62 +28,44 @@ trait Bandwidth extends StObject {
 }
 object Bandwidth {
   
-  @scala.inline
-  def apply(size: (js.Array[Double | SignalRef]) | SignalRef): Bandwidth = {
+  inline def apply(size: (js.Array[Double | SignalRef]) | SignalRef): Bandwidth = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("contour")
     __obj.asInstanceOf[Bandwidth]
   }
   
-  @scala.inline
-  implicit class BandwidthMutableBuilder[Self <: Bandwidth] (val x: Self) extends AnyVal {
+  extension [Self <: Bandwidth](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    @scala.inline
-    def setCellSize(value: Double | SignalRef): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
+    inline def setCellSize(value: Double | SignalRef): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
+    inline def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
     
-    @scala.inline
-    def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSize(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "size", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: contour): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: contour): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "values", js.Array(value :_*))
     
-    @scala.inline
-    def setX(value: FieldRef): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: FieldRef): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: FieldRef): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: FieldRef): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

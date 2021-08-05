@@ -16,22 +16,17 @@ trait Section extends StObject {
 }
 object Section {
   
-  @scala.inline
-  def apply(label: String, section: outer | inner, value: Double): Section = {
+  inline def apply(label: String, section: outer | inner, value: Double): Section = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Section]
   }
   
-  @scala.inline
-  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
+  extension [Self <: Section](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection(value: outer | inner): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: outer | inner): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

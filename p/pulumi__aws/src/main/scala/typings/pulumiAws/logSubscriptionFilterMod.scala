@@ -71,21 +71,16 @@ object logSubscriptionFilterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogSubscriptionFilterState): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogSubscriptionFilterState, opts: CustomResourceOptions): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
+    inline def get(name: String, id: Input[ID]): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
+    inline def get(name: String, id: Input[ID], state: LogSubscriptionFilterState): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
+    inline def get(name: String, id: Input[ID], state: LogSubscriptionFilterState, opts: CustomResourceOptions): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
     
     /**
       * Returns true if the given object is an instance of LogSubscriptionFilter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean]
   }
   
   trait LogSubscriptionFilterArgs extends StObject {
@@ -122,41 +117,30 @@ object logSubscriptionFilterMod {
   }
   object LogSubscriptionFilterArgs {
     
-    @scala.inline
-    def apply(destinationArn: Input[String], filterPattern: Input[String], logGroup: Input[String | LogGroup]): LogSubscriptionFilterArgs = {
+    inline def apply(destinationArn: Input[String], filterPattern: Input[String], logGroup: Input[String | LogGroup]): LogSubscriptionFilterArgs = {
       val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], filterPattern = filterPattern.asInstanceOf[js.Any], logGroup = logGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogSubscriptionFilterArgs]
     }
     
-    @scala.inline
-    implicit class LogSubscriptionFilterArgsMutableBuilder[Self <: LogSubscriptionFilterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LogSubscriptionFilterArgs](x: Self) {
       
-      @scala.inline
-      def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistribution(value: Input[String]): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+      inline def setDistribution(value: Input[String]): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+      inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
       
-      @scala.inline
-      def setFilterPattern(value: Input[String]): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+      inline def setFilterPattern(value: Input[String]): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroup(value: Input[String | LogGroup]): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
+      inline def setLogGroup(value: Input[String | LogGroup]): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
   
@@ -194,50 +178,36 @@ object logSubscriptionFilterMod {
   }
   object LogSubscriptionFilterState {
     
-    @scala.inline
-    def apply(): LogSubscriptionFilterState = {
+    inline def apply(): LogSubscriptionFilterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogSubscriptionFilterState]
     }
     
-    @scala.inline
-    implicit class LogSubscriptionFilterStateMutableBuilder[Self <: LogSubscriptionFilterState] (val x: Self) extends AnyVal {
+    extension [Self <: LogSubscriptionFilterState](x: Self) {
       
-      @scala.inline
-      def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
+      inline def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
       
-      @scala.inline
-      def setDistribution(value: Input[String]): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+      inline def setDistribution(value: Input[String]): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+      inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
       
-      @scala.inline
-      def setFilterPattern(value: Input[String]): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+      inline def setFilterPattern(value: Input[String]): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
+      inline def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
       
-      @scala.inline
-      def setLogGroup(value: Input[String | LogGroup]): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
+      inline def setLogGroup(value: Input[String | LogGroup]): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroupUndefined: Self = StObject.set(x, "logGroup", js.undefined)
+      inline def setLogGroupUndefined: Self = StObject.set(x, "logGroup", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
 }

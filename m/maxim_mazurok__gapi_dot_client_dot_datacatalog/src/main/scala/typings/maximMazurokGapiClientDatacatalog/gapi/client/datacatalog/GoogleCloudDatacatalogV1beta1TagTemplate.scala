@@ -29,35 +29,27 @@ trait GoogleCloudDatacatalogV1beta1TagTemplate extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1TagTemplate {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1TagTemplate = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1TagTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1TagTemplate]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1TagTemplateMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1TagTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1TagTemplate](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFields(
+    inline def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1TagTemplateField}
       */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1beta1TagTemplate & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

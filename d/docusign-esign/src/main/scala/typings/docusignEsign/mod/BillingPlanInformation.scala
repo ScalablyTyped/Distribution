@@ -117,127 +117,89 @@ trait BillingPlanInformation extends StObject {
 }
 object BillingPlanInformation {
   
-  @scala.inline
-  def apply(): BillingPlanInformation = {
+  inline def apply(): BillingPlanInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingPlanInformation]
   }
   
-  @scala.inline
-  implicit class BillingPlanInformationMutableBuilder[Self <: BillingPlanInformation] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPlanInformation](x: Self) {
     
-    @scala.inline
-    def setAppStoreReceipt(value: /* Contains information about an APP store receipt. */ AppStoreReceipt): Self = StObject.set(x, "appStoreReceipt", value.asInstanceOf[js.Any])
+    inline def setAppStoreReceipt(value: /* Contains information about an APP store receipt. */ AppStoreReceipt): Self = StObject.set(x, "appStoreReceipt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStoreReceiptUndefined: Self = StObject.set(x, "appStoreReceipt", js.undefined)
+    inline def setAppStoreReceiptUndefined: Self = StObject.set(x, "appStoreReceipt", js.undefined)
     
-    @scala.inline
-    def setBillingAddress(value: /* Contains information about the address associated with the account. */ AccountAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: /* Contains information about the address associated with the account. */ AccountAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
-    @scala.inline
-    def setCreditCardInformation(
+    inline def setCreditCardInformation(
       value: /* This object contains information about a credit card that is associated with an account. */ CreditCardInformation
     ): Self = StObject.set(x, "creditCardInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditCardInformationUndefined: Self = StObject.set(x, "creditCardInformation", js.undefined)
+    inline def setCreditCardInformationUndefined: Self = StObject.set(x, "creditCardInformation", js.undefined)
     
-    @scala.inline
-    def setDirectDebitProcessorInformation(
+    inline def setDirectDebitProcessorInformation(
       value: /* Contains information about a bank that processes a customer's direct debit payments. */ DirectDebitProcessorInformation
     ): Self = StObject.set(x, "directDebitProcessorInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectDebitProcessorInformationUndefined: Self = StObject.set(x, "directDebitProcessorInformation", js.undefined)
+    inline def setDirectDebitProcessorInformationUndefined: Self = StObject.set(x, "directDebitProcessorInformation", js.undefined)
     
-    @scala.inline
-    def setDowngradeReason(value: String): Self = StObject.set(x, "downgradeReason", value.asInstanceOf[js.Any])
+    inline def setDowngradeReason(value: String): Self = StObject.set(x, "downgradeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDowngradeReasonUndefined: Self = StObject.set(x, "downgradeReason", js.undefined)
+    inline def setDowngradeReasonUndefined: Self = StObject.set(x, "downgradeReason", js.undefined)
     
-    @scala.inline
-    def setEnableSupport(value: String): Self = StObject.set(x, "enableSupport", value.asInstanceOf[js.Any])
+    inline def setEnableSupport(value: String): Self = StObject.set(x, "enableSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSupportUndefined: Self = StObject.set(x, "enableSupport", js.undefined)
+    inline def setEnableSupportUndefined: Self = StObject.set(x, "enableSupport", js.undefined)
     
-    @scala.inline
-    def setIncludedSeats(value: String): Self = StObject.set(x, "includedSeats", value.asInstanceOf[js.Any])
+    inline def setIncludedSeats(value: String): Self = StObject.set(x, "includedSeats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedSeatsUndefined: Self = StObject.set(x, "includedSeats", js.undefined)
+    inline def setIncludedSeatsUndefined: Self = StObject.set(x, "includedSeats", js.undefined)
     
-    @scala.inline
-    def setIncrementalSeats(value: String): Self = StObject.set(x, "incrementalSeats", value.asInstanceOf[js.Any])
+    inline def setIncrementalSeats(value: String): Self = StObject.set(x, "incrementalSeats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementalSeatsUndefined: Self = StObject.set(x, "incrementalSeats", js.undefined)
+    inline def setIncrementalSeatsUndefined: Self = StObject.set(x, "incrementalSeats", js.undefined)
     
-    @scala.inline
-    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
+    inline def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
+    inline def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
-    @scala.inline
-    def setPaymentProcessorInformation(value: PaymentProcessorInformation): Self = StObject.set(x, "paymentProcessorInformation", value.asInstanceOf[js.Any])
+    inline def setPaymentProcessorInformation(value: PaymentProcessorInformation): Self = StObject.set(x, "paymentProcessorInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentProcessorInformationUndefined: Self = StObject.set(x, "paymentProcessorInformation", js.undefined)
+    inline def setPaymentProcessorInformationUndefined: Self = StObject.set(x, "paymentProcessorInformation", js.undefined)
     
-    @scala.inline
-    def setPlanInformation(
+    inline def setPlanInformation(
       value: /* An object used to identify the features and attributes of the account being created. */ PlanInformation
     ): Self = StObject.set(x, "planInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanInformationUndefined: Self = StObject.set(x, "planInformation", js.undefined)
+    inline def setPlanInformationUndefined: Self = StObject.set(x, "planInformation", js.undefined)
     
-    @scala.inline
-    def setReferralInformation(value: ReferralInformation): Self = StObject.set(x, "referralInformation", value.asInstanceOf[js.Any])
+    inline def setReferralInformation(value: ReferralInformation): Self = StObject.set(x, "referralInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferralInformationUndefined: Self = StObject.set(x, "referralInformation", js.undefined)
+    inline def setReferralInformationUndefined: Self = StObject.set(x, "referralInformation", js.undefined)
     
-    @scala.inline
-    def setRenewalStatus(value: String): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
+    inline def setRenewalStatus(value: String): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalStatusUndefined: Self = StObject.set(x, "renewalStatus", js.undefined)
+    inline def setRenewalStatusUndefined: Self = StObject.set(x, "renewalStatus", js.undefined)
     
-    @scala.inline
-    def setSaleDiscountAmount(value: String): Self = StObject.set(x, "saleDiscountAmount", value.asInstanceOf[js.Any])
+    inline def setSaleDiscountAmount(value: String): Self = StObject.set(x, "saleDiscountAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleDiscountAmountUndefined: Self = StObject.set(x, "saleDiscountAmount", js.undefined)
+    inline def setSaleDiscountAmountUndefined: Self = StObject.set(x, "saleDiscountAmount", js.undefined)
     
-    @scala.inline
-    def setSaleDiscountFixedAmount(value: String): Self = StObject.set(x, "saleDiscountFixedAmount", value.asInstanceOf[js.Any])
+    inline def setSaleDiscountFixedAmount(value: String): Self = StObject.set(x, "saleDiscountFixedAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleDiscountFixedAmountUndefined: Self = StObject.set(x, "saleDiscountFixedAmount", js.undefined)
+    inline def setSaleDiscountFixedAmountUndefined: Self = StObject.set(x, "saleDiscountFixedAmount", js.undefined)
     
-    @scala.inline
-    def setSaleDiscountPercent(value: String): Self = StObject.set(x, "saleDiscountPercent", value.asInstanceOf[js.Any])
+    inline def setSaleDiscountPercent(value: String): Self = StObject.set(x, "saleDiscountPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleDiscountPercentUndefined: Self = StObject.set(x, "saleDiscountPercent", js.undefined)
+    inline def setSaleDiscountPercentUndefined: Self = StObject.set(x, "saleDiscountPercent", js.undefined)
     
-    @scala.inline
-    def setSaleDiscountPeriods(value: String): Self = StObject.set(x, "saleDiscountPeriods", value.asInstanceOf[js.Any])
+    inline def setSaleDiscountPeriods(value: String): Self = StObject.set(x, "saleDiscountPeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleDiscountPeriodsUndefined: Self = StObject.set(x, "saleDiscountPeriods", js.undefined)
+    inline def setSaleDiscountPeriodsUndefined: Self = StObject.set(x, "saleDiscountPeriods", js.undefined)
     
-    @scala.inline
-    def setSaleDiscountSeatPriceOverride(value: String): Self = StObject.set(x, "saleDiscountSeatPriceOverride", value.asInstanceOf[js.Any])
+    inline def setSaleDiscountSeatPriceOverride(value: String): Self = StObject.set(x, "saleDiscountSeatPriceOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleDiscountSeatPriceOverrideUndefined: Self = StObject.set(x, "saleDiscountSeatPriceOverride", js.undefined)
+    inline def setSaleDiscountSeatPriceOverrideUndefined: Self = StObject.set(x, "saleDiscountSeatPriceOverride", js.undefined)
   }
 }

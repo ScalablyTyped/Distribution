@@ -8,16 +8,13 @@ object shelljsExecProxyStrings {
   
   @js.native
   sealed trait `-N` extends StObject
-  @scala.inline
-  def `-N`: `-N` = "-N".asInstanceOf[`-N`]
+  inline def `-N`: `-N` = "-N".asInstanceOf[`-N`]
   
   @js.native
   sealed trait `-c` extends StObject
-  @scala.inline
-  def `-c`: `-c` = "-c".asInstanceOf[`-c`]
+  inline def `-c`: `-c` = "-c".asInstanceOf[`-c`]
   
   @js.native
   sealed trait PlussignN extends StObject
-  @scala.inline
-  def PlussignN: PlussignN = "+N".asInstanceOf[PlussignN]
+  inline def PlussignN: PlussignN = "+N".asInstanceOf[PlussignN]
 }

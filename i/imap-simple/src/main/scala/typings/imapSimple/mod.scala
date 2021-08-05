@@ -105,10 +105,8 @@ object mod {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def connect(options: ImapSimpleOptions): js.Promise[ImapSimple] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImapSimple]]
-  @scala.inline
-  def connect(
+  inline def connect(options: ImapSimpleOptions): js.Promise[ImapSimple] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImapSimple]]
+  inline def connect(
     options: ImapSimpleOptions,
     callback: js.Function2[/* err */ Error, /* connection */ ImapSimple, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -132,8 +130,7 @@ object mod {
     }
   }
   
-  @scala.inline
-  def getParts(struct: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(struct.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getParts(struct: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(struct.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   trait ImapSimpleOptions extends StObject {
     
@@ -154,41 +151,30 @@ object mod {
   }
   object ImapSimpleOptions {
     
-    @scala.inline
-    def apply(imap: Config): ImapSimpleOptions = {
+    inline def apply(imap: Config): ImapSimpleOptions = {
       val __obj = js.Dynamic.literal(imap = imap.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImapSimpleOptions]
     }
     
-    @scala.inline
-    implicit class ImapSimpleOptionsMutableBuilder[Self <: ImapSimpleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ImapSimpleOptions](x: Self) {
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
       
-      @scala.inline
-      def setImap(value: Config): Self = StObject.set(x, "imap", value.asInstanceOf[js.Any])
+      inline def setImap(value: Config): Self = StObject.set(x, "imap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnexpunge(value: /* seqno */ Double => Unit): Self = StObject.set(x, "onexpunge", js.Any.fromFunction1(value))
+      inline def setOnexpunge(value: /* seqno */ Double => Unit): Self = StObject.set(x, "onexpunge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnexpungeUndefined: Self = StObject.set(x, "onexpunge", js.undefined)
+      inline def setOnexpungeUndefined: Self = StObject.set(x, "onexpunge", js.undefined)
       
-      @scala.inline
-      def setOnmail(value: /* numNewMail */ Double => Unit): Self = StObject.set(x, "onmail", js.Any.fromFunction1(value))
+      inline def setOnmail(value: /* numNewMail */ Double => Unit): Self = StObject.set(x, "onmail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnmailUndefined: Self = StObject.set(x, "onmail", js.undefined)
+      inline def setOnmailUndefined: Self = StObject.set(x, "onmail", js.undefined)
       
-      @scala.inline
-      def setOnupdate(value: (/* seqno */ Double, /* info */ js.Any) => Unit): Self = StObject.set(x, "onupdate", js.Any.fromFunction2(value))
+      inline def setOnupdate(value: (/* seqno */ Double, /* info */ js.Any) => Unit): Self = StObject.set(x, "onupdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
+      inline def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
     }
   }
   
@@ -202,26 +188,20 @@ object mod {
   }
   object Message {
     
-    @scala.inline
-    def apply(attributes: ImapMessageAttributes, parts: js.Array[MessageBodyPart], seqno: Double): Message = {
+    inline def apply(attributes: ImapMessageAttributes, parts: js.Array[MessageBodyPart], seqno: Double): Message = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], seqno = seqno.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: ImapMessageAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: ImapMessageAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParts(value: js.Array[MessageBodyPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[MessageBodyPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsVarargs(value: MessageBodyPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: MessageBodyPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
       
-      @scala.inline
-      def setSeqno(value: Double): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
+      inline def setSeqno(value: Double): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,17 +214,14 @@ object mod {
   }
   object MessageBodyPart {
     
-    @scala.inline
-    def apply(body: js.Any, size: Double, which: String): MessageBodyPart = {
+    inline def apply(body: js.Any, size: Double, which: String): MessageBodyPart = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageBodyPart]
     }
     
-    @scala.inline
-    implicit class MessageBodyPartMutableBuilder[Self <: MessageBodyPart] (val x: Self) extends AnyVal {
+    extension [Self <: MessageBodyPart](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
 }

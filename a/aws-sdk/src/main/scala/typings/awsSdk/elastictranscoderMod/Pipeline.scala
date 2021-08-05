@@ -63,79 +63,55 @@ trait Pipeline extends StObject {
 }
 object Pipeline {
   
-  @scala.inline
-  def apply(): Pipeline = {
+  inline def apply(): Pipeline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pipeline]
   }
   
-  @scala.inline
-  implicit class PipelineMutableBuilder[Self <: Pipeline] (val x: Self) extends AnyVal {
+  extension [Self <: Pipeline](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setAwsKmsKeyArn(value: KeyArn): Self = StObject.set(x, "AwsKmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setAwsKmsKeyArn(value: KeyArn): Self = StObject.set(x, "AwsKmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "AwsKmsKeyArn", js.undefined)
+    inline def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "AwsKmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setContentConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ContentConfig", value.asInstanceOf[js.Any])
+    inline def setContentConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ContentConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentConfigUndefined: Self = StObject.set(x, "ContentConfig", js.undefined)
+    inline def setContentConfigUndefined: Self = StObject.set(x, "ContentConfig", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setInputBucket(value: BucketName): Self = StObject.set(x, "InputBucket", value.asInstanceOf[js.Any])
+    inline def setInputBucket(value: BucketName): Self = StObject.set(x, "InputBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputBucketUndefined: Self = StObject.set(x, "InputBucket", js.undefined)
+    inline def setInputBucketUndefined: Self = StObject.set(x, "InputBucket", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
-    @scala.inline
-    def setOutputBucket(value: BucketName): Self = StObject.set(x, "OutputBucket", value.asInstanceOf[js.Any])
+    inline def setOutputBucket(value: BucketName): Self = StObject.set(x, "OutputBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputBucketUndefined: Self = StObject.set(x, "OutputBucket", js.undefined)
+    inline def setOutputBucketUndefined: Self = StObject.set(x, "OutputBucket", js.undefined)
     
-    @scala.inline
-    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
-    @scala.inline
-    def setStatus(value: PipelineStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PipelineStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setThumbnailConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ThumbnailConfig", value.asInstanceOf[js.Any])
+    inline def setThumbnailConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ThumbnailConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailConfigUndefined: Self = StObject.set(x, "ThumbnailConfig", js.undefined)
+    inline def setThumbnailConfigUndefined: Self = StObject.set(x, "ThumbnailConfig", js.undefined)
   }
 }

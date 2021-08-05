@@ -15,15 +15,13 @@ object typeScriptConfigurationParserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDependenciesFromTypeScriptConfiguration(
+  inline def getDependenciesFromTypeScriptConfiguration(
     typescript: Typeofts,
     parsedConfiguration: ParsedCommandLine,
     configFileContext: String,
     parseConfigFileHost: ParseConfigFileHost
   ): Dependencies = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependenciesFromTypeScriptConfiguration")(typescript.asInstanceOf[js.Any], parsedConfiguration.asInstanceOf[js.Any], configFileContext.asInstanceOf[js.Any], parseConfigFileHost.asInstanceOf[js.Any])).asInstanceOf[Dependencies]
-  @scala.inline
-  def getDependenciesFromTypeScriptConfiguration(
+  inline def getDependenciesFromTypeScriptConfiguration(
     typescript: Typeofts,
     parsedConfiguration: ParsedCommandLine,
     configFileContext: String,
@@ -31,8 +29,7 @@ object typeScriptConfigurationParserMod {
     processedConfigFiles: js.Array[String]
   ): Dependencies = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependenciesFromTypeScriptConfiguration")(typescript.asInstanceOf[js.Any], parsedConfiguration.asInstanceOf[js.Any], configFileContext.asInstanceOf[js.Any], parseConfigFileHost.asInstanceOf[js.Any], processedConfigFiles.asInstanceOf[js.Any])).asInstanceOf[Dependencies]
   
-  @scala.inline
-  def parseTypeScriptConfiguration(
+  inline def parseTypeScriptConfiguration(
     typescript: Typeofts,
     configFileName: String,
     configFileContext: String,

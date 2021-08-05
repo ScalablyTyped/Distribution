@@ -24,29 +24,22 @@ trait InlineScopedRouteConfigs extends StObject {
 }
 object InlineScopedRouteConfigs {
   
-  @scala.inline
-  def apply(): InlineScopedRouteConfigs = {
+  inline def apply(): InlineScopedRouteConfigs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InlineScopedRouteConfigs]
   }
   
-  @scala.inline
-  implicit class InlineScopedRouteConfigsMutableBuilder[Self <: InlineScopedRouteConfigs] (val x: Self) extends AnyVal {
+  extension [Self <: InlineScopedRouteConfigs](x: Self) {
     
-    @scala.inline
-    def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScopedRouteConfigs(
+    inline def setScopedRouteConfigs(
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
@@ -54,11 +47,9 @@ object InlineScopedRouteConfigs {
         ]
     ): Self = StObject.set(x, "scopedRouteConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopedRouteConfigsUndefined: Self = StObject.set(x, "scopedRouteConfigs", js.undefined)
+    inline def setScopedRouteConfigsUndefined: Self = StObject.set(x, "scopedRouteConfigs", js.undefined)
     
-    @scala.inline
-    def setScopedRouteConfigsVarargs(
+    inline def setScopedRouteConfigsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.InlineScopedRouteConfigs & TopLevel[js.Any])*

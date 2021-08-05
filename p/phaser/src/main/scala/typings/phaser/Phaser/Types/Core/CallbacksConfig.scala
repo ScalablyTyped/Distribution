@@ -19,25 +19,19 @@ trait CallbacksConfig extends StObject {
 }
 object CallbacksConfig {
   
-  @scala.inline
-  def apply(): CallbacksConfig = {
+  inline def apply(): CallbacksConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallbacksConfig]
   }
   
-  @scala.inline
-  implicit class CallbacksConfigMutableBuilder[Self <: CallbacksConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CallbacksConfig](x: Self) {
     
-    @scala.inline
-    def setPostBoot(value: /* game */ Game => Unit): Self = StObject.set(x, "postBoot", js.Any.fromFunction1(value))
+    inline def setPostBoot(value: /* game */ Game => Unit): Self = StObject.set(x, "postBoot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPostBootUndefined: Self = StObject.set(x, "postBoot", js.undefined)
+    inline def setPostBootUndefined: Self = StObject.set(x, "postBoot", js.undefined)
     
-    @scala.inline
-    def setPreBoot(value: /* game */ Game => Unit): Self = StObject.set(x, "preBoot", js.Any.fromFunction1(value))
+    inline def setPreBoot(value: /* game */ Game => Unit): Self = StObject.set(x, "preBoot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreBootUndefined: Self = StObject.set(x, "preBoot", js.undefined)
+    inline def setPreBootUndefined: Self = StObject.set(x, "preBoot", js.undefined)
   }
 }

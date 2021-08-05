@@ -18,19 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ExportJpgBlobOptions {
   
-  @scala.inline
-  def apply(): ExportJpgBlobOptions = {
+  inline def apply(): ExportJpgBlobOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportJpgBlobOptions]
   }
   
-  @scala.inline
-  implicit class ExportJpgBlobOptionsMutableBuilder[Self <: ExportJpgBlobOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportJpgBlobOptions](x: Self) {
     
-    @scala.inline
-    def setOutput(value: blob): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: blob): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

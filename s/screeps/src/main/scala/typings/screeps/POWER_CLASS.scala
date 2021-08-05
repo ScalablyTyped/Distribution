@@ -11,16 +11,13 @@ trait POWER_CLASS extends StObject {
 }
 object POWER_CLASS {
   
-  @scala.inline
-  def apply(): POWER_CLASS = {
+  inline def apply(): POWER_CLASS = {
     val __obj = js.Dynamic.literal(OPERATOR = "operator")
     __obj.asInstanceOf[POWER_CLASS]
   }
   
-  @scala.inline
-  implicit class POWER_CLASSMutableBuilder[Self <: POWER_CLASS] (val x: Self) extends AnyVal {
+  extension [Self <: POWER_CLASS](x: Self) {
     
-    @scala.inline
-    def setOPERATOR(value: operator): Self = StObject.set(x, "OPERATOR", value.asInstanceOf[js.Any])
+    inline def setOPERATOR(value: operator): Self = StObject.set(x, "OPERATOR", value.asInstanceOf[js.Any])
   }
 }

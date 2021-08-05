@@ -23,29 +23,25 @@ object loginMod {
     @JSImport("ant-design-pro/lib/Login", "default.Captcha")
     @js.native
     def Captcha: FC[LoginItemProps] = js.native
-    @scala.inline
-    def Captcha_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Captcha")(x.asInstanceOf[js.Any])
+    inline def Captcha_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Captcha")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("ant-design-pro/lib/Login", "default.Mobile")
     @js.native
     def Mobile: FC[LoginItemProps] = js.native
-    @scala.inline
-    def Mobile_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mobile")(x.asInstanceOf[js.Any])
+    inline def Mobile_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mobile")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("ant-design-pro/lib/Login", "default.Password")
     @js.native
     def Password: FC[LoginItemProps] = js.native
-    @scala.inline
-    def Password_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Password")(x.asInstanceOf[js.Any])
+    inline def Password_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Password")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("ant-design-pro/lib/Login", "default.Submit")
     @js.native
     def Submit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any = js.native
-    @scala.inline
-    def Submit_=(
+    inline def Submit_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Submit")(x.asInstanceOf[js.Any])
     
@@ -59,8 +55,7 @@ object loginMod {
     @JSImport("ant-design-pro/lib/Login", "default.UserName")
     @js.native
     def UserName: FC[LoginItemProps] = js.native
-    @scala.inline
-    def UserName_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserName")(x.asInstanceOf[js.Any])
+    inline def UserName_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserName")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -87,44 +82,32 @@ object loginMod {
   }
   object LoginProps {
     
-    @scala.inline
-    def apply(): LoginProps = {
+    inline def apply(): LoginProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoginProps]
     }
     
-    @scala.inline
-    implicit class LoginPropsMutableBuilder[Self <: LoginProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoginProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveKey(value: String): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveKey(value: String): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
+      inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: (/* error */ js.Any, /* values */ js.Any) => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
+      inline def setOnSubmit(value: (/* error */ js.Any, /* values */ js.Any) => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setOnTabChange(value: /* key */ String => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
+      inline def setOnTabChange(value: /* key */ String => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
+      inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

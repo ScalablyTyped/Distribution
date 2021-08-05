@@ -13,19 +13,15 @@ trait ChannelStatistics extends StObject {
 }
 object ChannelStatistics {
   
-  @scala.inline
-  def apply(): ChannelStatistics = {
+  inline def apply(): ChannelStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelStatistics]
   }
   
-  @scala.inline
-  implicit class ChannelStatisticsMutableBuilder[Self <: ChannelStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelStatistics](x: Self) {
     
-    @scala.inline
-    def setSize(value: EstimatedResourceSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: EstimatedResourceSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

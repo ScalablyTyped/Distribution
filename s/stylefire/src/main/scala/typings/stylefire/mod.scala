@@ -20,36 +20,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(nodeOrSelector: String): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any]).asInstanceOf[Styler]
-  @scala.inline
-  def default(nodeOrSelector: String, props: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Styler]
-  @scala.inline
-  def default(nodeOrSelector: Element): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any]).asInstanceOf[Styler]
-  @scala.inline
-  def default(nodeOrSelector: Element, props: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Styler]
-  @scala.inline
-  def default(nodeOrSelector: Window): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any]).asInstanceOf[Styler]
-  @scala.inline
-  def default(nodeOrSelector: Window, props: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Styler]
+  inline def default(nodeOrSelector: String): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any]).asInstanceOf[Styler]
+  inline def default(nodeOrSelector: String, props: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Styler]
+  inline def default(nodeOrSelector: Element): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any]).asInstanceOf[Styler]
+  inline def default(nodeOrSelector: Element, props: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Styler]
+  inline def default(nodeOrSelector: Window): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any]).asInstanceOf[Styler]
+  inline def default(nodeOrSelector: Window, props: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeOrSelector.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Styler]
   
-  @scala.inline
-  def buildSVGAttrs(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState): SVGAttrs = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any]).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState): SVGAttrs = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any]).asInstanceOf[SVGAttrs]
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double,
     cssBuilder: js.Function1[/* state */ State, ResolvedState]
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double,
@@ -57,16 +47,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double,
     cssBuilder: js.Function1[/* state */ State, ResolvedState],
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double,
@@ -74,8 +62,7 @@ object mod {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double,
@@ -83,16 +70,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double,
     cssBuilder: Unit,
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Double,
@@ -100,15 +85,13 @@ object mod {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Unit,
     cssBuilder: js.Function1[/* state */ State, ResolvedState]
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Unit,
@@ -116,16 +99,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Unit,
     cssBuilder: js.Function1[/* state */ State, ResolvedState],
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Unit,
@@ -133,8 +114,7 @@ object mod {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Unit,
@@ -142,16 +122,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Unit,
     cssBuilder: Unit,
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Unit,
     totalPathLength: Unit,
@@ -159,26 +137,22 @@ object mod {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
     cssBuilder: js.Function1[/* state */ State, ResolvedState]
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
@@ -186,16 +160,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
     cssBuilder: js.Function1[/* state */ State, ResolvedState],
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
@@ -203,8 +175,7 @@ object mod {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
@@ -212,16 +183,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
     cssBuilder: Unit,
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
@@ -229,15 +198,13 @@ object mod {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Unit,
     cssBuilder: js.Function1[/* state */ State, ResolvedState]
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Unit,
@@ -245,16 +212,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Unit,
     cssBuilder: js.Function1[/* state */ State, ResolvedState],
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Unit,
@@ -262,8 +227,7 @@ object mod {
     attrs: SVGAttrs,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Unit,
@@ -271,16 +235,14 @@ object mod {
     attrs: Unit,
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Unit,
     cssBuilder: Unit,
     attrs: SVGAttrs
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
-  @scala.inline
-  def buildSVGAttrs(
+  inline def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State & SVGState,
     dimensions: Dimensions,
     totalPathLength: Unit,
@@ -289,8 +251,7 @@ object mod {
     isDashCase: Boolean
   ): SVGAttrs = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSVGAttrs")(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], totalPathLength.asInstanceOf[js.Any], cssBuilder.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any])).asInstanceOf[SVGAttrs]
   
-  @scala.inline
-  def buildStyleProperty(
+  inline def buildStyleProperty(
     state: State,
     enableHardwareAcceleration: js.UndefOr[Boolean],
     styles: js.UndefOr[ResolvedState],
@@ -301,11 +262,9 @@ object mod {
     allowTransformNone: js.UndefOr[Boolean]
   ): ResolvedState = (^.asInstanceOf[js.Dynamic].applyDynamic("buildStyleProperty")(state.asInstanceOf[js.Any], enableHardwareAcceleration.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], transformOrigin.asInstanceOf[js.Any], transformKeys.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any], allowTransformNone.asInstanceOf[js.Any])).asInstanceOf[ResolvedState]
   
-  @scala.inline
-  def createStylerFactory(hasOnReadOnRenderUncachedValuesUseCache: Config): js.Function1[/* hasProps */ js.UndefOr[Props], Styler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStylerFactory")(hasOnReadOnRenderUncachedValuesUseCache.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasProps */ js.UndefOr[Props], Styler]]
+  inline def createStylerFactory(hasOnReadOnRenderUncachedValuesUseCache: Config): js.Function1[/* hasProps */ js.UndefOr[Props], Styler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStylerFactory")(hasOnReadOnRenderUncachedValuesUseCache.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasProps */ js.UndefOr[Props], Styler]]
   
-  @scala.inline
-  def isTransformProp(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformProp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTransformProp(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformProp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("stylefire", "transformProps")
   @js.native

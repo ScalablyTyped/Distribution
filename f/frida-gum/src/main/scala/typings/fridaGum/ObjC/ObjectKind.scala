@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectKind extends StObject
 object ObjectKind {
   
-  @scala.inline
-  def `class`: typings.fridaGum.fridaGumStrings.`class` = "class".asInstanceOf[typings.fridaGum.fridaGumStrings.`class`]
+  inline def `class`: typings.fridaGum.fridaGumStrings.`class` = "class".asInstanceOf[typings.fridaGum.fridaGumStrings.`class`]
   
-  @scala.inline
-  def instance: typings.fridaGum.fridaGumStrings.instance = "instance".asInstanceOf[typings.fridaGum.fridaGumStrings.instance]
+  inline def instance: typings.fridaGum.fridaGumStrings.instance = "instance".asInstanceOf[typings.fridaGum.fridaGumStrings.instance]
   
-  @scala.inline
-  def `meta-class`: typings.fridaGum.fridaGumStrings.`meta-class` = "meta-class".asInstanceOf[typings.fridaGum.fridaGumStrings.`meta-class`]
+  inline def `meta-class`: typings.fridaGum.fridaGumStrings.`meta-class` = "meta-class".asInstanceOf[typings.fridaGum.fridaGumStrings.`meta-class`]
 }

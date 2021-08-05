@@ -14,8 +14,7 @@ trait FormatDiagnosticsHost extends StObject {
 }
 object FormatDiagnosticsHost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCanonicalFileName: java.lang.String => java.lang.String,
     getCurrentDirectory: () => java.lang.String,
     getNewLine: () => java.lang.String
@@ -24,16 +23,12 @@ object FormatDiagnosticsHost {
     __obj.asInstanceOf[FormatDiagnosticsHost]
   }
   
-  @scala.inline
-  implicit class FormatDiagnosticsHostMutableBuilder[Self <: FormatDiagnosticsHost] (val x: Self) extends AnyVal {
+  extension [Self <: FormatDiagnosticsHost](x: Self) {
     
-    @scala.inline
-    def setGetCanonicalFileName(value: java.lang.String => java.lang.String): Self = StObject.set(x, "getCanonicalFileName", js.Any.fromFunction1(value))
+    inline def setGetCanonicalFileName(value: java.lang.String => java.lang.String): Self = StObject.set(x, "getCanonicalFileName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
+    inline def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNewLine(value: () => java.lang.String): Self = StObject.set(x, "getNewLine", js.Any.fromFunction0(value))
+    inline def setGetNewLine(value: () => java.lang.String): Self = StObject.set(x, "getNewLine", js.Any.fromFunction0(value))
   }
 }

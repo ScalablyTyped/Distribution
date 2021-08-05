@@ -12,15 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnyRecordWithTtl extends StObject
 object AnyRecordWithTtl {
   
-  @scala.inline
-  def AnyARecord(address: String, ttl: Double): typings.node.dnsMod.AnyARecord = {
+  inline def AnyARecord(address: String, ttl: Double): typings.node.dnsMod.AnyARecord = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("A")
     __obj.asInstanceOf[typings.node.dnsMod.AnyARecord]
   }
   
-  @scala.inline
-  def AnyAaaaRecord(address: String, ttl: Double): typings.node.dnsMod.AnyAaaaRecord = {
+  inline def AnyAaaaRecord(address: String, ttl: Double): typings.node.dnsMod.AnyAaaaRecord = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AAAA")
     __obj.asInstanceOf[typings.node.dnsMod.AnyAaaaRecord]

@@ -29,34 +29,25 @@ trait SchemaNetworkInterface extends StObject {
 }
 object SchemaNetworkInterface {
   
-  @scala.inline
-  def apply(): SchemaNetworkInterface = {
+  inline def apply(): SchemaNetworkInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworkInterface]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkInterfaceMutableBuilder[Self <: SchemaNetworkInterface] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetworkInterface](x: Self) {
     
-    @scala.inline
-    def setAccessConfigs(value: js.Array[SchemaAccessConfig]): Self = StObject.set(x, "accessConfigs", value.asInstanceOf[js.Any])
+    inline def setAccessConfigs(value: js.Array[SchemaAccessConfig]): Self = StObject.set(x, "accessConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessConfigsUndefined: Self = StObject.set(x, "accessConfigs", js.undefined)
+    inline def setAccessConfigsUndefined: Self = StObject.set(x, "accessConfigs", js.undefined)
     
-    @scala.inline
-    def setAccessConfigsVarargs(value: SchemaAccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value :_*))
+    inline def setAccessConfigsVarargs(value: SchemaAccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIp(value: String): Self = StObject.set(x, "networkIp", value.asInstanceOf[js.Any])
+    inline def setNetworkIp(value: String): Self = StObject.set(x, "networkIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIpUndefined: Self = StObject.set(x, "networkIp", js.undefined)
+    inline def setNetworkIpUndefined: Self = StObject.set(x, "networkIp", js.undefined)
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

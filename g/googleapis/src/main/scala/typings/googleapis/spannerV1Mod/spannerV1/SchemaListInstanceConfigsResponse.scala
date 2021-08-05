@@ -22,28 +22,21 @@ trait SchemaListInstanceConfigsResponse extends StObject {
 }
 object SchemaListInstanceConfigsResponse {
   
-  @scala.inline
-  def apply(): SchemaListInstanceConfigsResponse = {
+  inline def apply(): SchemaListInstanceConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListInstanceConfigsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListInstanceConfigsResponseMutableBuilder[Self <: SchemaListInstanceConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListInstanceConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setInstanceConfigs(value: js.Array[SchemaInstanceConfig]): Self = StObject.set(x, "instanceConfigs", value.asInstanceOf[js.Any])
+    inline def setInstanceConfigs(value: js.Array[SchemaInstanceConfig]): Self = StObject.set(x, "instanceConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceConfigsUndefined: Self = StObject.set(x, "instanceConfigs", js.undefined)
+    inline def setInstanceConfigsUndefined: Self = StObject.set(x, "instanceConfigs", js.undefined)
     
-    @scala.inline
-    def setInstanceConfigsVarargs(value: SchemaInstanceConfig*): Self = StObject.set(x, "instanceConfigs", js.Array(value :_*))
+    inline def setInstanceConfigsVarargs(value: SchemaInstanceConfig*): Self = StObject.set(x, "instanceConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

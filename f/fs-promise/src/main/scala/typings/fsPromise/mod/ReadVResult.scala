@@ -10,8 +10,7 @@ trait ReadVResult
      with typings.node.fsMod.ReadVResult
 object ReadVResult {
   
-  @scala.inline
-  def apply(buffers: js.Array[ArrayBufferView], bytesRead: Double): ReadVResult = {
+  inline def apply(buffers: js.Array[ArrayBufferView], bytesRead: Double): ReadVResult = {
     val __obj = js.Dynamic.literal(buffers = buffers.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadVResult]
   }

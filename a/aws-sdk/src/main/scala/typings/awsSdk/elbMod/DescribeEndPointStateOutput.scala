@@ -13,22 +13,17 @@ trait DescribeEndPointStateOutput extends StObject {
 }
 object DescribeEndPointStateOutput {
   
-  @scala.inline
-  def apply(): DescribeEndPointStateOutput = {
+  inline def apply(): DescribeEndPointStateOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEndPointStateOutput]
   }
   
-  @scala.inline
-  implicit class DescribeEndPointStateOutputMutableBuilder[Self <: DescribeEndPointStateOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEndPointStateOutput](x: Self) {
     
-    @scala.inline
-    def setInstanceStates(value: InstanceStates): Self = StObject.set(x, "InstanceStates", value.asInstanceOf[js.Any])
+    inline def setInstanceStates(value: InstanceStates): Self = StObject.set(x, "InstanceStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStatesUndefined: Self = StObject.set(x, "InstanceStates", js.undefined)
+    inline def setInstanceStatesUndefined: Self = StObject.set(x, "InstanceStates", js.undefined)
     
-    @scala.inline
-    def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value :_*))
+    inline def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value :_*))
   }
 }

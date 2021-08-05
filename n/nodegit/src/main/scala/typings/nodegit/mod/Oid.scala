@@ -15,6 +15,5 @@ object Oid {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromString(str: String): typings.nodegit.oidMod.Oid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.oidMod.Oid]
+  inline def fromString(str: String): typings.nodegit.oidMod.Oid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.oidMod.Oid]
 }

@@ -20,8 +20,7 @@ trait ITextLine extends StObject {
 }
 object ITextLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: () => Double,
     endIncludingLineBreak: () => Double,
     extent: () => TextSpan,
@@ -33,25 +32,18 @@ object ITextLine {
     __obj.asInstanceOf[ITextLine]
   }
   
-  @scala.inline
-  implicit class ITextLineMutableBuilder[Self <: ITextLine] (val x: Self) extends AnyVal {
+  extension [Self <: ITextLine](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndIncludingLineBreak(value: () => Double): Self = StObject.set(x, "endIncludingLineBreak", js.Any.fromFunction0(value))
+    inline def setEndIncludingLineBreak(value: () => Double): Self = StObject.set(x, "endIncludingLineBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtent(value: () => TextSpan): Self = StObject.set(x, "extent", js.Any.fromFunction0(value))
+    inline def setExtent(value: () => TextSpan): Self = StObject.set(x, "extent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtentIncludingLineBreak(value: () => TextSpan): Self = StObject.set(x, "extentIncludingLineBreak", js.Any.fromFunction0(value))
+    inline def setExtentIncludingLineBreak(value: () => TextSpan): Self = StObject.set(x, "extentIncludingLineBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineNumber(value: () => Double): Self = StObject.set(x, "lineNumber", js.Any.fromFunction0(value))
+    inline def setLineNumber(value: () => Double): Self = StObject.set(x, "lineNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
   }
 }

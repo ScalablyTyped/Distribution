@@ -16,8 +16,7 @@ trait EditOp
 }
 object EditOp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     c: String,
     create: Unit,
     d: String,
@@ -32,19 +31,14 @@ object EditOp {
     __obj.asInstanceOf[EditOp]
   }
   
-  @scala.inline
-  implicit class EditOpMutableBuilder[Self <: EditOp] (val x: Self) extends AnyVal {
+  extension [Self <: EditOp](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Unit): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Unit): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDel(value: Unit): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+    inline def setDel(value: Unit): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: js.Array[Op]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: js.Array[Op]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpVarargs(value: Op*): Self = StObject.set(x, "op", js.Array(value :_*))
+    inline def setOpVarargs(value: Op*): Self = StObject.set(x, "op", js.Array(value :_*))
   }
 }

@@ -18,22 +18,17 @@ trait ParagraphPropertiesAsian extends StObject {
 }
 object ParagraphPropertiesAsian {
   
-  @scala.inline
-  def apply(ParaIsCharacterDistance: Boolean, ParaIsForbiddenRules: Boolean, ParaIsHangingPunctuation: Boolean): ParagraphPropertiesAsian = {
+  inline def apply(ParaIsCharacterDistance: Boolean, ParaIsForbiddenRules: Boolean, ParaIsHangingPunctuation: Boolean): ParagraphPropertiesAsian = {
     val __obj = js.Dynamic.literal(ParaIsCharacterDistance = ParaIsCharacterDistance.asInstanceOf[js.Any], ParaIsForbiddenRules = ParaIsForbiddenRules.asInstanceOf[js.Any], ParaIsHangingPunctuation = ParaIsHangingPunctuation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphPropertiesAsian]
   }
   
-  @scala.inline
-  implicit class ParagraphPropertiesAsianMutableBuilder[Self <: ParagraphPropertiesAsian] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphPropertiesAsian](x: Self) {
     
-    @scala.inline
-    def setParaIsCharacterDistance(value: Boolean): Self = StObject.set(x, "ParaIsCharacterDistance", value.asInstanceOf[js.Any])
+    inline def setParaIsCharacterDistance(value: Boolean): Self = StObject.set(x, "ParaIsCharacterDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaIsForbiddenRules(value: Boolean): Self = StObject.set(x, "ParaIsForbiddenRules", value.asInstanceOf[js.Any])
+    inline def setParaIsForbiddenRules(value: Boolean): Self = StObject.set(x, "ParaIsForbiddenRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaIsHangingPunctuation(value: Boolean): Self = StObject.set(x, "ParaIsHangingPunctuation", value.asInstanceOf[js.Any])
+    inline def setParaIsHangingPunctuation(value: Boolean): Self = StObject.set(x, "ParaIsHangingPunctuation", value.asInstanceOf[js.Any])
   }
 }

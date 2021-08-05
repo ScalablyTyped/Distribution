@@ -51,44 +51,32 @@ object discovery {
     }
     object Endpoint {
       
-      @scala.inline
-      def apply(addresses: Input[js.Array[Input[String]]]): Endpoint = {
+      inline def apply(addresses: Input[js.Array[Input[String]]]): Endpoint = {
         val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any])
         __obj.asInstanceOf[Endpoint]
       }
       
-      @scala.inline
-      implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+      extension [Self <: Endpoint](x: Self) {
         
-        @scala.inline
-        def setAddresses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+        inline def setAddresses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddressesVarargs(value: Input[String]*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+        inline def setAddressesVarargs(value: Input[String]*): Self = StObject.set(x, "addresses", js.Array(value :_*))
         
-        @scala.inline
-        def setConditions(value: Input[EndpointConditions]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: Input[EndpointConditions]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+        inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
         
-        @scala.inline
-        def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+        inline def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+        inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
         
-        @scala.inline
-        def setTargetRef(value: Input[ObjectReference]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+        inline def setTargetRef(value: Input[ObjectReference]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+        inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
         
-        @scala.inline
-        def setTopology(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+        inline def setTopology(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopologyUndefined: Self = StObject.set(x, "topology", js.undefined)
+        inline def setTopologyUndefined: Self = StObject.set(x, "topology", js.undefined)
       }
     }
     
@@ -104,20 +92,16 @@ object discovery {
     }
     object EndpointConditions {
       
-      @scala.inline
-      def apply(): EndpointConditions = {
+      inline def apply(): EndpointConditions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EndpointConditions]
       }
       
-      @scala.inline
-      implicit class EndpointConditionsMutableBuilder[Self <: EndpointConditions] (val x: Self) extends AnyVal {
+      extension [Self <: EndpointConditions](x: Self) {
         
-        @scala.inline
-        def setReady(value: Input[Boolean]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+        inline def setReady(value: Input[Boolean]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+        inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       }
     }
     
@@ -148,38 +132,28 @@ object discovery {
     }
     object EndpointPort {
       
-      @scala.inline
-      def apply(): EndpointPort = {
+      inline def apply(): EndpointPort = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EndpointPort]
       }
       
-      @scala.inline
-      implicit class EndpointPortMutableBuilder[Self <: EndpointPort] (val x: Self) extends AnyVal {
+      extension [Self <: EndpointPort](x: Self) {
         
-        @scala.inline
-        def setAppProtocol(value: Input[String]): Self = StObject.set(x, "appProtocol", value.asInstanceOf[js.Any])
+        inline def setAppProtocol(value: Input[String]): Self = StObject.set(x, "appProtocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppProtocolUndefined: Self = StObject.set(x, "appProtocol", js.undefined)
+        inline def setAppProtocolUndefined: Self = StObject.set(x, "appProtocol", js.undefined)
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
         
-        @scala.inline
-        def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+        inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+        inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       }
     }
     
@@ -220,50 +194,36 @@ object discovery {
     }
     object EndpointSlice {
       
-      @scala.inline
-      def apply(addressType: Input[String], endpoints: Input[js.Array[Input[Endpoint]]]): EndpointSlice = {
+      inline def apply(addressType: Input[String], endpoints: Input[js.Array[Input[Endpoint]]]): EndpointSlice = {
         val __obj = js.Dynamic.literal(addressType = addressType.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any])
         __obj.asInstanceOf[EndpointSlice]
       }
       
-      @scala.inline
-      implicit class EndpointSliceMutableBuilder[Self <: EndpointSlice] (val x: Self) extends AnyVal {
+      extension [Self <: EndpointSlice](x: Self) {
         
-        @scala.inline
-        def setAddressType(value: Input[String]): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
+        inline def setAddressType(value: Input[String]): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersion(value: Input[discoveryDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[discoveryDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setEndpoints(value: Input[js.Array[Input[Endpoint]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+        inline def setEndpoints(value: Input[js.Array[Input[Endpoint]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndpointsVarargs(value: Input[Endpoint]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+        inline def setEndpointsVarargs(value: Input[Endpoint]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSlice]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSlice]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setPorts(value: Input[js.Array[Input[EndpointPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+        inline def setPorts(value: Input[js.Array[Input[EndpointPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+        inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
         
-        @scala.inline
-        def setPortsVarargs(value: Input[EndpointPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
+        inline def setPortsVarargs(value: Input[EndpointPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
       }
     }
   }

@@ -13,22 +13,17 @@ trait TrainingData extends StObject {
 }
 object TrainingData {
   
-  @scala.inline
-  def apply(): TrainingData = {
+  inline def apply(): TrainingData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingData]
   }
   
-  @scala.inline
-  implicit class TrainingDataMutableBuilder[Self <: TrainingData] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingData](x: Self) {
     
-    @scala.inline
-    def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
+    inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
-    @scala.inline
-    def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
   }
 }

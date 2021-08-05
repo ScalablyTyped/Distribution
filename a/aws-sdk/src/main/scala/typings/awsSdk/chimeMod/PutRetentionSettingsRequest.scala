@@ -18,19 +18,15 @@ trait PutRetentionSettingsRequest extends StObject {
 }
 object PutRetentionSettingsRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, RetentionSettings: RetentionSettings): PutRetentionSettingsRequest = {
+  inline def apply(AccountId: NonEmptyString, RetentionSettings: RetentionSettings): PutRetentionSettingsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], RetentionSettings = RetentionSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRetentionSettingsRequest]
   }
   
-  @scala.inline
-  implicit class PutRetentionSettingsRequestMutableBuilder[Self <: PutRetentionSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutRetentionSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionSettings(value: RetentionSettings): Self = StObject.set(x, "RetentionSettings", value.asInstanceOf[js.Any])
+    inline def setRetentionSettings(value: RetentionSettings): Self = StObject.set(x, "RetentionSettings", value.asInstanceOf[js.Any])
   }
 }

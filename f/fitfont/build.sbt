@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fitfont"
-version := "1.3-dt-20201020Z-a4d8e6"
+version := "1.3-dt-20201020Z-30b424"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

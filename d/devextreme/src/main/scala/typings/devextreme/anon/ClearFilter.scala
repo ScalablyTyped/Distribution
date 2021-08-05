@@ -14,31 +14,23 @@ trait ClearFilter extends StObject {
 }
 object ClearFilter {
   
-  @scala.inline
-  def apply(): ClearFilter = {
+  inline def apply(): ClearFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearFilter]
   }
   
-  @scala.inline
-  implicit class ClearFilterMutableBuilder[Self <: ClearFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ClearFilter](x: Self) {
     
-    @scala.inline
-    def setClearFilter(value: String): Self = StObject.set(x, "clearFilter", value.asInstanceOf[js.Any])
+    inline def setClearFilter(value: String): Self = StObject.set(x, "clearFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFilterUndefined: Self = StObject.set(x, "clearFilter", js.undefined)
+    inline def setClearFilterUndefined: Self = StObject.set(x, "clearFilter", js.undefined)
     
-    @scala.inline
-    def setCreateFilter(value: String): Self = StObject.set(x, "createFilter", value.asInstanceOf[js.Any])
+    inline def setCreateFilter(value: String): Self = StObject.set(x, "createFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFilterUndefined: Self = StObject.set(x, "createFilter", js.undefined)
+    inline def setCreateFilterUndefined: Self = StObject.set(x, "createFilter", js.undefined)
     
-    @scala.inline
-    def setFilterEnabledHint(value: String): Self = StObject.set(x, "filterEnabledHint", value.asInstanceOf[js.Any])
+    inline def setFilterEnabledHint(value: String): Self = StObject.set(x, "filterEnabledHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterEnabledHintUndefined: Self = StObject.set(x, "filterEnabledHint", js.undefined)
+    inline def setFilterEnabledHintUndefined: Self = StObject.set(x, "filterEnabledHint", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait NxAutoSortByStateDef extends StObject {
 }
 object NxAutoSortByStateDef {
   
-  @scala.inline
-  def apply(qDisplayNumberOfRows: Double): NxAutoSortByStateDef = {
+  inline def apply(qDisplayNumberOfRows: Double): NxAutoSortByStateDef = {
     val __obj = js.Dynamic.literal(qDisplayNumberOfRows = qDisplayNumberOfRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxAutoSortByStateDef]
   }
   
-  @scala.inline
-  implicit class NxAutoSortByStateDefMutableBuilder[Self <: NxAutoSortByStateDef] (val x: Self) extends AnyVal {
+  extension [Self <: NxAutoSortByStateDef](x: Self) {
     
-    @scala.inline
-    def setQDisplayNumberOfRows(value: Double): Self = StObject.set(x, "qDisplayNumberOfRows", value.asInstanceOf[js.Any])
+    inline def setQDisplayNumberOfRows(value: Double): Self = StObject.set(x, "qDisplayNumberOfRows", value.asInstanceOf[js.Any])
   }
 }

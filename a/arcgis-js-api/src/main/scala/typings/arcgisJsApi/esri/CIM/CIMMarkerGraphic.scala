@@ -30,41 +30,30 @@ trait CIMMarkerGraphic extends StObject {
 }
 object CIMMarkerGraphic {
   
-  @scala.inline
-  def apply(): CIMMarkerGraphic = {
+  inline def apply(): CIMMarkerGraphic = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerGraphic")
     __obj.asInstanceOf[CIMMarkerGraphic]
   }
   
-  @scala.inline
-  implicit class CIMMarkerGraphicMutableBuilder[Self <: CIMMarkerGraphic] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerGraphic](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: ExternalReferenceGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: ExternalReferenceGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
+    inline def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
+    inline def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: CIMSymbolType): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: CIMSymbolType): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setTextString(value: String): Self = StObject.set(x, "textString", value.asInstanceOf[js.Any])
+    inline def setTextString(value: String): Self = StObject.set(x, "textString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStringUndefined: Self = StObject.set(x, "textString", js.undefined)
+    inline def setTextStringUndefined: Self = StObject.set(x, "textString", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

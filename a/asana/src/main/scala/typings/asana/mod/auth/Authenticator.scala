@@ -33,8 +33,7 @@ trait Authenticator extends StObject {
 }
 object Authenticator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     establishCredentials: () => typings.bluebird.mod.^[Unit],
     refreshCredentials: () => typings.bluebird.mod.^[Boolean]
   ): Authenticator = {
@@ -42,13 +41,10 @@ object Authenticator {
     __obj.asInstanceOf[Authenticator]
   }
   
-  @scala.inline
-  implicit class AuthenticatorMutableBuilder[Self <: Authenticator] (val x: Self) extends AnyVal {
+  extension [Self <: Authenticator](x: Self) {
     
-    @scala.inline
-    def setEstablishCredentials(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "establishCredentials", js.Any.fromFunction0(value))
+    inline def setEstablishCredentials(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "establishCredentials", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshCredentials(value: () => typings.bluebird.mod.^[Boolean]): Self = StObject.set(x, "refreshCredentials", js.Any.fromFunction0(value))
+    inline def setRefreshCredentials(value: () => typings.bluebird.mod.^[Boolean]): Self = StObject.set(x, "refreshCredentials", js.Any.fromFunction0(value))
   }
 }

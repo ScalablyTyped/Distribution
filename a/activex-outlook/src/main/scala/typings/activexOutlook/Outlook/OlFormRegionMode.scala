@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlFormRegionMode extends StObject
 object OlFormRegionMode {
   
-  @scala.inline
-  def olFormRegionCompose: `1` = 1.asInstanceOf[`1`]
+  inline def olFormRegionCompose: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olFormRegionPreview: `2` = 2.asInstanceOf[`2`]
+  inline def olFormRegionPreview: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olFormRegionRead: `0` = 0.asInstanceOf[`0`]
+  inline def olFormRegionRead: `0` = 0.asInstanceOf[`0`]
 }

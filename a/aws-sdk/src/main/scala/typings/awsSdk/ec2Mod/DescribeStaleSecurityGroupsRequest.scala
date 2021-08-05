@@ -28,34 +28,25 @@ trait DescribeStaleSecurityGroupsRequest extends StObject {
 }
 object DescribeStaleSecurityGroupsRequest {
   
-  @scala.inline
-  def apply(VpcId: VpcId): DescribeStaleSecurityGroupsRequest = {
+  inline def apply(VpcId: VpcId): DescribeStaleSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStaleSecurityGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeStaleSecurityGroupsRequestMutableBuilder[Self <: DescribeStaleSecurityGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStaleSecurityGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: DescribeStaleSecurityGroupsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeStaleSecurityGroupsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: DescribeStaleSecurityGroupsNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: DescribeStaleSecurityGroupsNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

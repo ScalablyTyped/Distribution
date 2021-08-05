@@ -13,19 +13,15 @@ trait DisassociateCustomerGatewayResponse extends StObject {
 }
 object DisassociateCustomerGatewayResponse {
   
-  @scala.inline
-  def apply(): DisassociateCustomerGatewayResponse = {
+  inline def apply(): DisassociateCustomerGatewayResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateCustomerGatewayResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateCustomerGatewayResponseMutableBuilder[Self <: DisassociateCustomerGatewayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateCustomerGatewayResponse](x: Self) {
     
-    @scala.inline
-    def setCustomerGatewayAssociation(value: CustomerGatewayAssociation): Self = StObject.set(x, "CustomerGatewayAssociation", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayAssociation(value: CustomerGatewayAssociation): Self = StObject.set(x, "CustomerGatewayAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerGatewayAssociationUndefined: Self = StObject.set(x, "CustomerGatewayAssociation", js.undefined)
+    inline def setCustomerGatewayAssociationUndefined: Self = StObject.set(x, "CustomerGatewayAssociation", js.undefined)
   }
 }

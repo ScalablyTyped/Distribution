@@ -13,6 +13,5 @@ object withDefaultsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(oldEndpoint: EndpointInterface[js.Object], newDefaults: RequestParameters): RequestInterface[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oldEndpoint.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[RequestInterface[js.Object]]
+  inline def default(oldEndpoint: EndpointInterface[js.Object], newDefaults: RequestParameters): RequestInterface[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oldEndpoint.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[RequestInterface[js.Object]]
 }

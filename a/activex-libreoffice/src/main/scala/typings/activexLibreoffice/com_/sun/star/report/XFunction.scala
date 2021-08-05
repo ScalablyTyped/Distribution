@@ -38,8 +38,7 @@ trait XFunction
 }
 object XFunction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DeepTraversing: Boolean,
     Formula: String,
     InitialFormula: Optional[String],
@@ -67,22 +66,16 @@ object XFunction {
     __obj.asInstanceOf[XFunction]
   }
   
-  @scala.inline
-  implicit class XFunctionMutableBuilder[Self <: XFunction] (val x: Self) extends AnyVal {
+  extension [Self <: XFunction](x: Self) {
     
-    @scala.inline
-    def setDeepTraversing(value: Boolean): Self = StObject.set(x, "DeepTraversing", value.asInstanceOf[js.Any])
+    inline def setDeepTraversing(value: Boolean): Self = StObject.set(x, "DeepTraversing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialFormula(value: Optional[String]): Self = StObject.set(x, "InitialFormula", value.asInstanceOf[js.Any])
+    inline def setInitialFormula(value: Optional[String]): Self = StObject.set(x, "InitialFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreEvaluated(value: Boolean): Self = StObject.set(x, "PreEvaluated", value.asInstanceOf[js.Any])
+    inline def setPreEvaluated(value: Boolean): Self = StObject.set(x, "PreEvaluated", value.asInstanceOf[js.Any])
   }
 }

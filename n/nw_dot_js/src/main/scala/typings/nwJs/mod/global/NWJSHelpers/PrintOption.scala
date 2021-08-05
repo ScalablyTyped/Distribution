@@ -42,8 +42,7 @@ trait PrintOption extends StObject {
 }
 object PrintOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerFooterEnabled: Boolean,
     landscape: Boolean,
     mediaSize: js.Any,
@@ -55,25 +54,18 @@ object PrintOption {
     __obj.asInstanceOf[PrintOption]
   }
   
-  @scala.inline
-  implicit class PrintOptionMutableBuilder[Self <: PrintOption] (val x: Self) extends AnyVal {
+  extension [Self <: PrintOption](x: Self) {
     
-    @scala.inline
-    def setHeaderFooterEnabled(value: Boolean): Self = StObject.set(x, "headerFooterEnabled", value.asInstanceOf[js.Any])
+    inline def setHeaderFooterEnabled(value: Boolean): Self = StObject.set(x, "headerFooterEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+    inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSize(value: js.Any): Self = StObject.set(x, "mediaSize", value.asInstanceOf[js.Any])
+    inline def setMediaSize(value: js.Any): Self = StObject.set(x, "mediaSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdf_path(value: String): Self = StObject.set(x, "pdf_path", value.asInstanceOf[js.Any])
+    inline def setPdf_path(value: String): Self = StObject.set(x, "pdf_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrinter(value: String): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
+    inline def setPrinter(value: String): Self = StObject.set(x, "printer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldPrintBackgrounds(value: Boolean): Self = StObject.set(x, "shouldPrintBackgrounds", value.asInstanceOf[js.Any])
+    inline def setShouldPrintBackgrounds(value: Boolean): Self = StObject.set(x, "shouldPrintBackgrounds", value.asInstanceOf[js.Any])
   }
 }

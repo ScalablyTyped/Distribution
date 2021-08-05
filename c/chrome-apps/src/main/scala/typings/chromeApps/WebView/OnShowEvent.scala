@@ -11,16 +11,13 @@ trait OnShowEvent extends StObject {
 }
 object OnShowEvent {
   
-  @scala.inline
-  def apply(preventDefault: () => Unit): OnShowEvent = {
+  inline def apply(preventDefault: () => Unit): OnShowEvent = {
     val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault))
     __obj.asInstanceOf[OnShowEvent]
   }
   
-  @scala.inline
-  implicit class OnShowEventMutableBuilder[Self <: OnShowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: OnShowEvent](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
   }
 }

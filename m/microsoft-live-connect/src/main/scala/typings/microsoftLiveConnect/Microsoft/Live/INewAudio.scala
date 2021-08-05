@@ -46,52 +46,37 @@ trait INewAudio extends StObject {
 }
 object INewAudio {
   
-  @scala.inline
-  def apply(name: String): INewAudio = {
+  inline def apply(name: String): INewAudio = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewAudio]
   }
   
-  @scala.inline
-  implicit class INewAudioMutableBuilder[Self <: INewAudio] (val x: Self) extends AnyVal {
+  extension [Self <: INewAudio](x: Self) {
     
-    @scala.inline
-    def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+    inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
-    @scala.inline
-    def setAlbum_artist(value: String): Self = StObject.set(x, "album_artist", value.asInstanceOf[js.Any])
+    inline def setAlbum_artist(value: String): Self = StObject.set(x, "album_artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbum_artistUndefined: Self = StObject.set(x, "album_artist", js.undefined)
+    inline def setAlbum_artistUndefined: Self = StObject.set(x, "album_artist", js.undefined)
     
-    @scala.inline
-    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
+    inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+    inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
+    inline def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

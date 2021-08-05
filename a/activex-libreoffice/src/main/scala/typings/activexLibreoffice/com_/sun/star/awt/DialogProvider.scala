@@ -20,8 +20,7 @@ trait DialogProvider
 }
 object DialogProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDialog: String => XDialog,
     createWithModel: XModel => Unit,
@@ -33,13 +32,10 @@ object DialogProvider {
     __obj.asInstanceOf[DialogProvider]
   }
   
-  @scala.inline
-  implicit class DialogProviderMutableBuilder[Self <: DialogProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DialogProvider](x: Self) {
     
-    @scala.inline
-    def setCreateWithModel(value: XModel => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction1(value))
+    inline def setCreateWithModel(value: XModel => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithModelAndScripting(value: (XModel, XInputStream, XNameContainer, XScriptListener) => Unit): Self = StObject.set(x, "createWithModelAndScripting", js.Any.fromFunction4(value))
+    inline def setCreateWithModelAndScripting(value: (XModel, XInputStream, XNameContainer, XScriptListener) => Unit): Self = StObject.set(x, "createWithModelAndScripting", js.Any.fromFunction4(value))
   }
 }

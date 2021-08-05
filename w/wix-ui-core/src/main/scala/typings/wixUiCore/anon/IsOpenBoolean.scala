@@ -10,16 +10,13 @@ trait IsOpenBoolean extends StObject {
 }
 object IsOpenBoolean {
   
-  @scala.inline
-  def apply(isOpen: Boolean): IsOpenBoolean = {
+  inline def apply(isOpen: Boolean): IsOpenBoolean = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsOpenBoolean]
   }
   
-  @scala.inline
-  implicit class IsOpenBooleanMutableBuilder[Self <: IsOpenBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: IsOpenBoolean](x: Self) {
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
   }
 }

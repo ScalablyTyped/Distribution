@@ -12,7 +12,7 @@ object argCaptorMod {
   class ArgCaptor protected () extends StObject {
     def this(actions: js.Array[MethodAction]) = this()
     
-    var actions: js.Any = js.native
+    /* private */ var actions: js.Any = js.native
     
     def beforeLast(): js.Any = js.native
     
@@ -43,8 +43,7 @@ object argCaptorMod {
   }
   object ArgCaptor1 {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       beforeLast: () => js.Array[T],
       byCallIndex: Double => js.Array[T],
       first: () => js.Array[T],
@@ -56,26 +55,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor1[T]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor1MutableBuilder[Self <: ArgCaptor1[?], T] (val x: Self & ArgCaptor1[T]) extends AnyVal {
+    extension [Self <: ArgCaptor1[?], T](x: Self & ArgCaptor1[T]) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Array[T]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Array[T]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Array[T]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Array[T]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Array[T]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Array[T]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Array[T]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Array[T]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Array[T]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Array[T]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Array[T]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Array[T]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -95,8 +87,7 @@ object argCaptorMod {
   }
   object ArgCaptor10 {
     
-    @scala.inline
-    def apply[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9](
+    inline def apply[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9](
       beforeLast: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9],
       byCallIndex: Double => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9],
       first: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9],
@@ -108,26 +99,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor10MutableBuilder[Self <: ArgCaptor10[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] (val x: Self & (ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9])) extends AnyVal {
+    extension [Self <: ArgCaptor10[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8, T9](x: Self & (ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -147,8 +131,7 @@ object argCaptorMod {
   }
   object ArgCaptor2 {
     
-    @scala.inline
-    def apply[T0, T1](
+    inline def apply[T0, T1](
       beforeLast: () => js.Tuple2[T0, T1],
       byCallIndex: Double => js.Tuple2[T0, T1],
       first: () => js.Tuple2[T0, T1],
@@ -160,26 +143,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor2[T0, T1]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor2MutableBuilder[Self <: ArgCaptor2[?, ?], T0, T1] (val x: Self & (ArgCaptor2[T0, T1])) extends AnyVal {
+    extension [Self <: ArgCaptor2[?, ?], T0, T1](x: Self & (ArgCaptor2[T0, T1])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple2[T0, T1]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple2[T0, T1]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -199,8 +175,7 @@ object argCaptorMod {
   }
   object ArgCaptor3 {
     
-    @scala.inline
-    def apply[T0, T1, T2](
+    inline def apply[T0, T1, T2](
       beforeLast: () => js.Tuple3[T0, T1, T2],
       byCallIndex: Double => js.Tuple3[T0, T1, T2],
       first: () => js.Tuple3[T0, T1, T2],
@@ -212,26 +187,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor3[T0, T1, T2]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor3MutableBuilder[Self <: ArgCaptor3[?, ?, ?], T0, T1, T2] (val x: Self & (ArgCaptor3[T0, T1, T2])) extends AnyVal {
+    extension [Self <: ArgCaptor3[?, ?, ?], T0, T1, T2](x: Self & (ArgCaptor3[T0, T1, T2])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -251,8 +219,7 @@ object argCaptorMod {
   }
   object ArgCaptor4 {
     
-    @scala.inline
-    def apply[T0, T1, T2, T3](
+    inline def apply[T0, T1, T2, T3](
       beforeLast: () => js.Tuple4[T0, T1, T2, T3],
       byCallIndex: Double => js.Tuple4[T0, T1, T2, T3],
       first: () => js.Tuple4[T0, T1, T2, T3],
@@ -264,26 +231,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor4[T0, T1, T2, T3]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor4MutableBuilder[Self <: ArgCaptor4[?, ?, ?, ?], T0, T1, T2, T3] (val x: Self & (ArgCaptor4[T0, T1, T2, T3])) extends AnyVal {
+    extension [Self <: ArgCaptor4[?, ?, ?, ?], T0, T1, T2, T3](x: Self & (ArgCaptor4[T0, T1, T2, T3])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -303,8 +263,7 @@ object argCaptorMod {
   }
   object ArgCaptor5 {
     
-    @scala.inline
-    def apply[T0, T1, T2, T3, T4](
+    inline def apply[T0, T1, T2, T3, T4](
       beforeLast: () => js.Tuple5[T0, T1, T2, T3, T4],
       byCallIndex: Double => js.Tuple5[T0, T1, T2, T3, T4],
       first: () => js.Tuple5[T0, T1, T2, T3, T4],
@@ -316,26 +275,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor5[T0, T1, T2, T3, T4]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor5MutableBuilder[Self <: ArgCaptor5[?, ?, ?, ?, ?], T0, T1, T2, T3, T4] (val x: Self & (ArgCaptor5[T0, T1, T2, T3, T4])) extends AnyVal {
+    extension [Self <: ArgCaptor5[?, ?, ?, ?, ?], T0, T1, T2, T3, T4](x: Self & (ArgCaptor5[T0, T1, T2, T3, T4])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -355,8 +307,7 @@ object argCaptorMod {
   }
   object ArgCaptor6 {
     
-    @scala.inline
-    def apply[T0, T1, T2, T3, T4, T5](
+    inline def apply[T0, T1, T2, T3, T4, T5](
       beforeLast: () => js.Tuple6[T0, T1, T2, T3, T4, T5],
       byCallIndex: Double => js.Tuple6[T0, T1, T2, T3, T4, T5],
       first: () => js.Tuple6[T0, T1, T2, T3, T4, T5],
@@ -368,26 +319,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor6[T0, T1, T2, T3, T4, T5]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor6MutableBuilder[Self <: ArgCaptor6[?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5] (val x: Self & (ArgCaptor6[T0, T1, T2, T3, T4, T5])) extends AnyVal {
+    extension [Self <: ArgCaptor6[?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5](x: Self & (ArgCaptor6[T0, T1, T2, T3, T4, T5])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -407,8 +351,7 @@ object argCaptorMod {
   }
   object ArgCaptor7 {
     
-    @scala.inline
-    def apply[T0, T1, T2, T3, T4, T5, T6](
+    inline def apply[T0, T1, T2, T3, T4, T5, T6](
       beforeLast: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6],
       byCallIndex: Double => js.Tuple7[T0, T1, T2, T3, T4, T5, T6],
       first: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6],
@@ -420,26 +363,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor7[T0, T1, T2, T3, T4, T5, T6]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor7MutableBuilder[Self <: ArgCaptor7[?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6] (val x: Self & (ArgCaptor7[T0, T1, T2, T3, T4, T5, T6])) extends AnyVal {
+    extension [Self <: ArgCaptor7[?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6](x: Self & (ArgCaptor7[T0, T1, T2, T3, T4, T5, T6])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -459,8 +395,7 @@ object argCaptorMod {
   }
   object ArgCaptor8 {
     
-    @scala.inline
-    def apply[T0, T1, T2, T3, T4, T5, T6, T7](
+    inline def apply[T0, T1, T2, T3, T4, T5, T6, T7](
       beforeLast: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7],
       byCallIndex: Double => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7],
       first: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7],
@@ -472,26 +407,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor8MutableBuilder[Self <: ArgCaptor8[?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7] (val x: Self & (ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7])) extends AnyVal {
+    extension [Self <: ArgCaptor8[?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7](x: Self & (ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
   
@@ -511,8 +439,7 @@ object argCaptorMod {
   }
   object ArgCaptor9 {
     
-    @scala.inline
-    def apply[T0, T1, T2, T3, T4, T5, T6, T7, T8](
+    inline def apply[T0, T1, T2, T3, T4, T5, T6, T7, T8](
       beforeLast: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8],
       byCallIndex: Double => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8],
       first: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8],
@@ -524,26 +451,19 @@ object argCaptorMod {
       __obj.asInstanceOf[ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8]]
     }
     
-    @scala.inline
-    implicit class ArgCaptor9MutableBuilder[Self <: ArgCaptor9[?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8] (val x: Self & (ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8])) extends AnyVal {
+    extension [Self <: ArgCaptor9[?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8](x: Self & (ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8])) {
       
-      @scala.inline
-      def setBeforeLast(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
+      inline def setBeforeLast(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setByCallIndex(value: Double => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
+      inline def setByCallIndex(value: Double => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "byCallIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecond(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
+      inline def setSecond(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "second", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThird(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
+      inline def setThird(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "third", js.Any.fromFunction0(value))
     }
   }
 }

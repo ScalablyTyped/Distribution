@@ -35,8 +35,7 @@ trait AutocompleteOptions extends StObject {
 }
 object AutocompleteOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: AutocompleteData,
     limit: Double,
     minLength: Double,
@@ -47,22 +46,16 @@ object AutocompleteOptions {
     __obj.asInstanceOf[AutocompleteOptions]
   }
   
-  @scala.inline
-  implicit class AutocompleteOptionsMutableBuilder[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAutocomplete(value: String => Unit): Self = StObject.set(x, "onAutocomplete", js.Any.fromFunction1(value))
+    inline def setOnAutocomplete(value: String => Unit): Self = StObject.set(x, "onAutocomplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortFunction(value: (String, String, String) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
+    inline def setSortFunction(value: (String, String, String) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
   }
 }

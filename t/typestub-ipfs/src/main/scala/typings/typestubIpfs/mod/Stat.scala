@@ -26,8 +26,7 @@ trait Stat extends StObject {
 }
 object Stat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blocksReceived: Big,
     blocksSent: Big,
     dataReceived: Big,
@@ -42,40 +41,28 @@ object Stat {
     __obj.asInstanceOf[Stat]
   }
   
-  @scala.inline
-  implicit class StatMutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
+  extension [Self <: Stat](x: Self) {
     
-    @scala.inline
-    def setBlocksReceived(value: Big): Self = StObject.set(x, "blocksReceived", value.asInstanceOf[js.Any])
+    inline def setBlocksReceived(value: Big): Self = StObject.set(x, "blocksReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksSent(value: Big): Self = StObject.set(x, "blocksSent", value.asInstanceOf[js.Any])
+    inline def setBlocksSent(value: Big): Self = StObject.set(x, "blocksSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataReceived(value: Big): Self = StObject.set(x, "dataReceived", value.asInstanceOf[js.Any])
+    inline def setDataReceived(value: Big): Self = StObject.set(x, "dataReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSent(value: Big): Self = StObject.set(x, "dataSent", value.asInstanceOf[js.Any])
+    inline def setDataSent(value: Big): Self = StObject.set(x, "dataSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDupBlksReceived(value: Big): Self = StObject.set(x, "dupBlksReceived", value.asInstanceOf[js.Any])
+    inline def setDupBlksReceived(value: Big): Self = StObject.set(x, "dupBlksReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDupDataReceived(value: Big): Self = StObject.set(x, "dupDataReceived", value.asInstanceOf[js.Any])
+    inline def setDupDataReceived(value: Big): Self = StObject.set(x, "dupDataReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeers(value: js.Array[String]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
+    inline def setPeers(value: js.Array[String]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeersVarargs(value: String*): Self = StObject.set(x, "peers", js.Array(value :_*))
+    inline def setPeersVarargs(value: String*): Self = StObject.set(x, "peers", js.Array(value :_*))
     
-    @scala.inline
-    def setProvideBufLen(value: Double): Self = StObject.set(x, "provideBufLen", value.asInstanceOf[js.Any])
+    inline def setProvideBufLen(value: Double): Self = StObject.set(x, "provideBufLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWantlist(value: js.Array[WantListItem]): Self = StObject.set(x, "wantlist", value.asInstanceOf[js.Any])
+    inline def setWantlist(value: js.Array[WantListItem]): Self = StObject.set(x, "wantlist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWantlistVarargs(value: WantListItem*): Self = StObject.set(x, "wantlist", js.Array(value :_*))
+    inline def setWantlistVarargs(value: WantListItem*): Self = StObject.set(x, "wantlist", js.Array(value :_*))
   }
 }

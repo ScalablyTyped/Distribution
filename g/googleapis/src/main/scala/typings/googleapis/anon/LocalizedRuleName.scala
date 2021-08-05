@@ -14,34 +14,25 @@ trait LocalizedRuleName extends StObject {
 }
 object LocalizedRuleName {
   
-  @scala.inline
-  def apply(): LocalizedRuleName = {
+  inline def apply(): LocalizedRuleName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalizedRuleName]
   }
   
-  @scala.inline
-  implicit class LocalizedRuleNameMutableBuilder[Self <: LocalizedRuleName] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizedRuleName](x: Self) {
     
-    @scala.inline
-    def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
+    inline def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedRuleNameUndefined: Self = StObject.set(x, "localizedRuleName", js.undefined)
+    inline def setLocalizedRuleNameUndefined: Self = StObject.set(x, "localizedRuleName", js.undefined)
     
-    @scala.inline
-    def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
+    inline def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleImpactUndefined: Self = StObject.set(x, "ruleImpact", js.undefined)
+    inline def setRuleImpactUndefined: Self = StObject.set(x, "ruleImpact", js.undefined)
     
-    @scala.inline
-    def setUrlBlocks(value: js.Array[Header]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
+    inline def setUrlBlocks(value: js.Array[Header]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlBlocksUndefined: Self = StObject.set(x, "urlBlocks", js.undefined)
+    inline def setUrlBlocksUndefined: Self = StObject.set(x, "urlBlocks", js.undefined)
     
-    @scala.inline
-    def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
+    inline def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
   }
 }

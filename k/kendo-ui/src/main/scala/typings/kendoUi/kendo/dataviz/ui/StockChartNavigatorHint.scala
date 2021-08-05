@@ -14,31 +14,23 @@ trait StockChartNavigatorHint extends StObject {
 }
 object StockChartNavigatorHint {
   
-  @scala.inline
-  def apply(): StockChartNavigatorHint = {
+  inline def apply(): StockChartNavigatorHint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartNavigatorHint]
   }
   
-  @scala.inline
-  implicit class StockChartNavigatorHintMutableBuilder[Self <: StockChartNavigatorHint] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartNavigatorHint](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

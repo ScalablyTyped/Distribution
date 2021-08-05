@@ -18,25 +18,19 @@ trait UsageAccountResult extends StObject {
 }
 object UsageAccountResult {
   
-  @scala.inline
-  def apply(): UsageAccountResult = {
+  inline def apply(): UsageAccountResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageAccountResult]
   }
   
-  @scala.inline
-  implicit class UsageAccountResultMutableBuilder[Self <: UsageAccountResult] (val x: Self) extends AnyVal {
+  extension [Self <: UsageAccountResult](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Total): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Total): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

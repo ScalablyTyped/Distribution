@@ -10,8 +10,7 @@ trait CryptographicHash
      with IHashComputation
 object CryptographicHash {
   
-  @scala.inline
-  def apply(append: IBuffer => Unit, getValueAndReset: () => IBuffer): CryptographicHash = {
+  inline def apply(append: IBuffer => Unit, getValueAndReset: () => IBuffer): CryptographicHash = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), getValueAndReset = js.Any.fromFunction0(getValueAndReset))
     __obj.asInstanceOf[CryptographicHash]
   }

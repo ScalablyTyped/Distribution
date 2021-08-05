@@ -16,19 +16,15 @@ trait IBody
 }
 object IBody {
   
-  @scala.inline
-  def apply(): IBody = {
+  inline def apply(): IBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBody]
   }
   
-  @scala.inline
-  implicit class IBodyMutableBuilder[Self <: IBody] (val x: Self) extends AnyVal {
+  extension [Self <: IBody](x: Self) {
     
-    @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
+    inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
   }
 }

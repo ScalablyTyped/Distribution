@@ -31,37 +31,27 @@ trait LinecolorLinestyle extends StObject {
 }
 object LinecolorLinestyle {
   
-  @scala.inline
-  def apply(): LinecolorLinestyle = {
+  inline def apply(): LinecolorLinestyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinecolorLinestyle]
   }
   
-  @scala.inline
-  implicit class LinecolorLinestyleMutableBuilder[Self <: LinecolorLinestyle] (val x: Self) extends AnyVal {
+  extension [Self <: LinecolorLinestyle](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
+    inline def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
+    inline def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
     
-    @scala.inline
-    def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
+    inline def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
+    inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
-    @scala.inline
-    def `setLine-width`(value: Double): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
+    inline def `setLine-width`(value: Double): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
+    inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait CordovaPluginsFileOpener2Result extends StObject {
 }
 object CordovaPluginsFileOpener2Result {
   
-  @scala.inline
-  def apply(message: String, status: Double): CordovaPluginsFileOpener2Result = {
+  inline def apply(message: String, status: Double): CordovaPluginsFileOpener2Result = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPluginsFileOpener2Result]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsFileOpener2ResultMutableBuilder[Self <: CordovaPluginsFileOpener2Result] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPluginsFileOpener2Result](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

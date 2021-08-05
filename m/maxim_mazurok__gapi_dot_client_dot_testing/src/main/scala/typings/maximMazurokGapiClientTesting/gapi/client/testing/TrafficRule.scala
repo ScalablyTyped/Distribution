@@ -23,43 +23,31 @@ trait TrafficRule extends StObject {
 }
 object TrafficRule {
   
-  @scala.inline
-  def apply(): TrafficRule = {
+  inline def apply(): TrafficRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficRule]
   }
   
-  @scala.inline
-  implicit class TrafficRuleMutableBuilder[Self <: TrafficRule] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficRule](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    @scala.inline
-    def setBurst(value: Double): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
+    inline def setBurst(value: Double): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
+    inline def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
     
-    @scala.inline
-    def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setPacketDuplicationRatio(value: Double): Self = StObject.set(x, "packetDuplicationRatio", value.asInstanceOf[js.Any])
+    inline def setPacketDuplicationRatio(value: Double): Self = StObject.set(x, "packetDuplicationRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketDuplicationRatioUndefined: Self = StObject.set(x, "packetDuplicationRatio", js.undefined)
+    inline def setPacketDuplicationRatioUndefined: Self = StObject.set(x, "packetDuplicationRatio", js.undefined)
     
-    @scala.inline
-    def setPacketLossRatio(value: Double): Self = StObject.set(x, "packetLossRatio", value.asInstanceOf[js.Any])
+    inline def setPacketLossRatio(value: Double): Self = StObject.set(x, "packetLossRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketLossRatioUndefined: Self = StObject.set(x, "packetLossRatio", js.undefined)
+    inline def setPacketLossRatioUndefined: Self = StObject.set(x, "packetLossRatio", js.undefined)
   }
 }

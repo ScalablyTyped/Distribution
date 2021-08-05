@@ -15,20 +15,16 @@ object TextEncoding {
   }
   object TextEncoderOptions {
     
-    @scala.inline
-    def apply(): TextEncoderOptions = {
+    inline def apply(): TextEncoderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextEncoderOptions]
     }
     
-    @scala.inline
-    implicit class TextEncoderOptionsMutableBuilder[Self <: TextEncoderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextEncoderOptions](x: Self) {
       
-      @scala.inline
-      def setNONSTANDARD_allowLegacyEncoding(value: Boolean): Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", value.asInstanceOf[js.Any])
+      inline def setNONSTANDARD_allowLegacyEncoding(value: Boolean): Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONSTANDARD_allowLegacyEncodingUndefined: Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", js.undefined)
+      inline def setNONSTANDARD_allowLegacyEncodingUndefined: Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", js.undefined)
     }
   }
   

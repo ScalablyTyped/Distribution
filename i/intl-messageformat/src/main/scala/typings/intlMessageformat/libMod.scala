@@ -85,20 +85,17 @@ object libMod {
     @JSImport("intl-messageformat/lib", "default.__parse")
     @js.native
     def __parse: js.UndefOr[FnCall] = js.native
-    @scala.inline
-    def __parse_=(x: js.UndefOr[FnCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__parse")(x.asInstanceOf[js.Any])
+    inline def __parse_=(x: js.UndefOr[FnCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__parse")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/lib", "default.formats")
     @js.native
     def formats: Date = js.native
-    @scala.inline
-    def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    inline def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/lib", "default.memoizedDefaultLocale")
     @js.native
     def memoizedDefaultLocale: js.Any = js.native
-    @scala.inline
-    def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("intl-messageformat/lib", "FormatError")
@@ -172,20 +169,17 @@ object libMod {
     @JSImport("intl-messageformat/lib", "IntlMessageFormat.__parse")
     @js.native
     def __parse: js.UndefOr[FnCall] = js.native
-    @scala.inline
-    def __parse_=(x: js.UndefOr[FnCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__parse")(x.asInstanceOf[js.Any])
+    inline def __parse_=(x: js.UndefOr[FnCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__parse")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/lib", "IntlMessageFormat.formats")
     @js.native
     def formats: Date = js.native
-    @scala.inline
-    def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    inline def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/lib", "IntlMessageFormat.memoizedDefaultLocale")
     @js.native
     def memoizedDefaultLocale: js.Any = js.native
-    @scala.inline
-    def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("intl-messageformat/lib", "InvalidValueError")
@@ -212,10 +206,8 @@ object libMod {
     def this(variableId: String, originalMessage: String) = this()
   }
   
-  @scala.inline
-  def formatToParts[T](els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: String,
     formatters: Formatters,
@@ -223,8 +215,7 @@ object libMod {
     values: Unit,
     currentPluralValue: Double
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: String,
     formatters: Formatters,
@@ -233,8 +224,7 @@ object libMod {
     currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: String,
     formatters: Formatters,
@@ -243,8 +233,7 @@ object libMod {
     currentPluralValue: Unit,
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: String,
     formatters: Formatters,
@@ -254,8 +243,7 @@ object libMod {
       PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
     ]
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: String,
     formatters: Formatters,
@@ -266,8 +254,7 @@ object libMod {
     ],
     currentPluralValue: Double
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: String,
     formatters: Formatters,
@@ -279,8 +266,7 @@ object libMod {
     currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: String,
     formatters: Formatters,
@@ -292,15 +278,13 @@ object libMod {
     currentPluralValue: Unit,
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
     formats: Formats
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
@@ -308,8 +292,7 @@ object libMod {
     values: Unit,
     currentPluralValue: Double
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
@@ -318,8 +301,7 @@ object libMod {
     currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
@@ -328,8 +310,7 @@ object libMod {
     currentPluralValue: Unit,
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
@@ -339,8 +320,7 @@ object libMod {
       PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
     ]
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
@@ -351,8 +331,7 @@ object libMod {
     ],
     currentPluralValue: Double
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
@@ -364,8 +343,7 @@ object libMod {
     currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
-  @scala.inline
-  def formatToParts[T](
+  inline def formatToParts[T](
     els: js.Array[MessageFormatElement],
     locales: js.Array[String],
     formatters: Formatters,
@@ -378,8 +356,6 @@ object libMod {
     originalMessage: String
   ): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any], values.asInstanceOf[js.Any], currentPluralValue.asInstanceOf[js.Any], originalMessage.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]
   
-  @scala.inline
-  def isFormatXMLElementFn[T](el: PrimitiveType | T): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormatXMLElementFn")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean]
-  @scala.inline
-  def isFormatXMLElementFn[T](el: FormatXMLElementFn[T, String | T | (js.Array[String | T])]): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormatXMLElementFn")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean]
+  inline def isFormatXMLElementFn[T](el: PrimitiveType | T): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormatXMLElementFn")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean]
+  inline def isFormatXMLElementFn[T](el: FormatXMLElementFn[T, String | T | (js.Array[String | T])]): /* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormatXMLElementFn")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat.intl-messageformat/lib/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean]
 }

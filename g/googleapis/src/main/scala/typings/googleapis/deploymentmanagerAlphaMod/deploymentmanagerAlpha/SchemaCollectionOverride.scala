@@ -27,31 +27,23 @@ trait SchemaCollectionOverride extends StObject {
 }
 object SchemaCollectionOverride {
   
-  @scala.inline
-  def apply(): SchemaCollectionOverride = {
+  inline def apply(): SchemaCollectionOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCollectionOverride]
   }
   
-  @scala.inline
-  implicit class SchemaCollectionOverrideMutableBuilder[Self <: SchemaCollectionOverride] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCollectionOverride](x: Self) {
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
-    @scala.inline
-    def setMethodMap(value: SchemaMethodMap): Self = StObject.set(x, "methodMap", value.asInstanceOf[js.Any])
+    inline def setMethodMap(value: SchemaMethodMap): Self = StObject.set(x, "methodMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodMapUndefined: Self = StObject.set(x, "methodMap", js.undefined)
+    inline def setMethodMapUndefined: Self = StObject.set(x, "methodMap", js.undefined)
     
-    @scala.inline
-    def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -23,34 +23,25 @@ trait SearchAddressBooksResponse extends StObject {
 }
 object SearchAddressBooksResponse {
   
-  @scala.inline
-  def apply(): SearchAddressBooksResponse = {
+  inline def apply(): SearchAddressBooksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchAddressBooksResponse]
   }
   
-  @scala.inline
-  implicit class SearchAddressBooksResponseMutableBuilder[Self <: SearchAddressBooksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchAddressBooksResponse](x: Self) {
     
-    @scala.inline
-    def setAddressBooks(value: AddressBookDataList): Self = StObject.set(x, "AddressBooks", value.asInstanceOf[js.Any])
+    inline def setAddressBooks(value: AddressBookDataList): Self = StObject.set(x, "AddressBooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressBooksUndefined: Self = StObject.set(x, "AddressBooks", js.undefined)
+    inline def setAddressBooksUndefined: Self = StObject.set(x, "AddressBooks", js.undefined)
     
-    @scala.inline
-    def setAddressBooksVarargs(value: AddressBookData*): Self = StObject.set(x, "AddressBooks", js.Array(value :_*))
+    inline def setAddressBooksVarargs(value: AddressBookData*): Self = StObject.set(x, "AddressBooks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

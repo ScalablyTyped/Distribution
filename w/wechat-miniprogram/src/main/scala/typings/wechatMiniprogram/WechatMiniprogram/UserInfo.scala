@@ -46,8 +46,7 @@ trait UserInfo extends StObject {
 }
 object UserInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     avatarUrl: String,
     city: String,
     country: String,
@@ -60,28 +59,20 @@ object UserInfo {
     __obj.asInstanceOf[UserInfo]
   }
   
-  @scala.inline
-  implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserInfo](x: Self) {
     
-    @scala.inline
-    def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+    inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGender(value: `0` | `1` | `2`): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: `0` | `1` | `2`): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: en | zh_CN | zh_TW): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: en | zh_CN | zh_TW): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNickName(value: String): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
+    inline def setNickName(value: String): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
   }
 }

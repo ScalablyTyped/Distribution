@@ -28,25 +28,19 @@ trait CreateTaskRequest extends StObject {
 }
 object CreateTaskRequest {
   
-  @scala.inline
-  def apply(): CreateTaskRequest = {
+  inline def apply(): CreateTaskRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTaskRequest]
   }
   
-  @scala.inline
-  implicit class CreateTaskRequestMutableBuilder[Self <: CreateTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTaskRequest](x: Self) {
     
-    @scala.inline
-    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
+    inline def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
+    inline def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
     
-    @scala.inline
-    def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

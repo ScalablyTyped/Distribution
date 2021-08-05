@@ -18,19 +18,15 @@ trait DescribePermissionSetRequest extends StObject {
 }
 object DescribePermissionSetRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): DescribePermissionSetRequest = {
+  inline def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): DescribePermissionSetRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], PermissionSetArn = PermissionSetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePermissionSetRequest]
   }
   
-  @scala.inline
-  implicit class DescribePermissionSetRequestMutableBuilder[Self <: DescribePermissionSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePermissionSetRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
   }
 }

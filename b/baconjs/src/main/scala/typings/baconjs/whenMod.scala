@@ -15,20 +15,15 @@ object whenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
+  inline def default[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
   
-  @scala.inline
-  def extractRawPatterns[O](patterns: js.Array[Pattern[O]]): js.Array[RawPattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRawPatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[RawPattern]]
+  inline def extractRawPatterns[O](patterns: js.Array[Pattern[O]]): js.Array[RawPattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRawPatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[RawPattern]]
   
-  @scala.inline
-  def when[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
+  inline def when[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
   
-  @scala.inline
-  def whenP[O](patterns: Pattern[O]*): Property[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenP")(patterns.asInstanceOf[js.Any]).asInstanceOf[Property[O]]
+  inline def whenP[O](patterns: Pattern[O]*): Property[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenP")(patterns.asInstanceOf[js.Any]).asInstanceOf[Property[O]]
   
-  @scala.inline
-  def when_[O](ctor: ObservableConstructor, patterns: js.Array[Pattern[O]]): default[O] = (^.asInstanceOf[js.Dynamic].applyDynamic("when_")(ctor.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[default[O]]
+  inline def when_[O](ctor: ObservableConstructor, patterns: js.Array[Pattern[O]]): default[O] = (^.asInstanceOf[js.Dynamic].applyDynamic("when_")(ctor.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[default[O]]
   
   type AnyFunction = js.Function
   

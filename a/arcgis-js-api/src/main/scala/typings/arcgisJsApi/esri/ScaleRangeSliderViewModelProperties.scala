@@ -57,55 +57,39 @@ trait ScaleRangeSliderViewModelProperties extends StObject {
 }
 object ScaleRangeSliderViewModelProperties {
   
-  @scala.inline
-  def apply(): ScaleRangeSliderViewModelProperties = {
+  inline def apply(): ScaleRangeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleRangeSliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class ScaleRangeSliderViewModelPropertiesMutableBuilder[Self <: ScaleRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleRangeSliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScaleLimit(value: Double): Self = StObject.set(x, "maxScaleLimit", value.asInstanceOf[js.Any])
+    inline def setMaxScaleLimit(value: Double): Self = StObject.set(x, "maxScaleLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScaleLimitUndefined: Self = StObject.set(x, "maxScaleLimit", js.undefined)
+    inline def setMaxScaleLimitUndefined: Self = StObject.set(x, "maxScaleLimit", js.undefined)
     
-    @scala.inline
-    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleLimit(value: Double): Self = StObject.set(x, "minScaleLimit", value.asInstanceOf[js.Any])
+    inline def setMinScaleLimit(value: Double): Self = StObject.set(x, "minScaleLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleLimitUndefined: Self = StObject.set(x, "minScaleLimit", js.undefined)
+    inline def setMinScaleLimitUndefined: Self = StObject.set(x, "minScaleLimit", js.undefined)
     
-    @scala.inline
-    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
-    @scala.inline
-    def setSliderViewModel(value: SliderViewModelProperties): Self = StObject.set(x, "sliderViewModel", value.asInstanceOf[js.Any])
+    inline def setSliderViewModel(value: SliderViewModelProperties): Self = StObject.set(x, "sliderViewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliderViewModelUndefined: Self = StObject.set(x, "sliderViewModel", js.undefined)
+    inline def setSliderViewModelUndefined: Self = StObject.set(x, "sliderViewModel", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

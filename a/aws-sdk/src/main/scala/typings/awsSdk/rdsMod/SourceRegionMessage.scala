@@ -18,28 +18,21 @@ trait SourceRegionMessage extends StObject {
 }
 object SourceRegionMessage {
   
-  @scala.inline
-  def apply(): SourceRegionMessage = {
+  inline def apply(): SourceRegionMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceRegionMessage]
   }
   
-  @scala.inline
-  implicit class SourceRegionMessageMutableBuilder[Self <: SourceRegionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SourceRegionMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSourceRegions(value: SourceRegionList): Self = StObject.set(x, "SourceRegions", value.asInstanceOf[js.Any])
+    inline def setSourceRegions(value: SourceRegionList): Self = StObject.set(x, "SourceRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRegionsUndefined: Self = StObject.set(x, "SourceRegions", js.undefined)
+    inline def setSourceRegionsUndefined: Self = StObject.set(x, "SourceRegions", js.undefined)
     
-    @scala.inline
-    def setSourceRegionsVarargs(value: SourceRegion*): Self = StObject.set(x, "SourceRegions", js.Array(value :_*))
+    inline def setSourceRegionsVarargs(value: SourceRegion*): Self = StObject.set(x, "SourceRegions", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait ForRet extends StObject {
 }
 object ForRet {
   
-  @scala.inline
-  def apply(in: js.Any => ForExpression, in_ : /* expr */ js.Any => ForExpression): ForRet = {
+  inline def apply(in: js.Any => ForExpression, in_ : /* expr */ js.Any => ForExpression): ForRet = {
     val __obj = js.Dynamic.literal(in = js.Any.fromFunction1(in), in_ = js.Any.fromFunction1(in_))
     __obj.asInstanceOf[ForRet]
   }
   
-  @scala.inline
-  implicit class ForRetMutableBuilder[Self <: ForRet] (val x: Self) extends AnyVal {
+  extension [Self <: ForRet](x: Self) {
     
-    @scala.inline
-    def setIn(value: js.Any => ForExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: js.Any => ForExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn_(value: /* expr */ js.Any => ForExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
+    inline def setIn_(value: /* expr */ js.Any => ForExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
   }
 }

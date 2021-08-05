@@ -10,19 +10,15 @@ trait FinishingCovering extends StObject {
 }
 object FinishingCovering {
   
-  @scala.inline
-  def apply(): FinishingCovering = {
+  inline def apply(): FinishingCovering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinishingCovering]
   }
   
-  @scala.inline
-  implicit class FinishingCoveringMutableBuilder[Self <: FinishingCovering] (val x: Self) extends AnyVal {
+  extension [Self <: FinishingCovering](x: Self) {
     
-    @scala.inline
-    def `setCovering-name`(value: String): Self = StObject.set(x, "covering-name", value.asInstanceOf[js.Any])
+    inline def `setCovering-name`(value: String): Self = StObject.set(x, "covering-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCovering-nameUndefined`: Self = StObject.set(x, "covering-name", js.undefined)
+    inline def `setCovering-nameUndefined`: Self = StObject.set(x, "covering-name", js.undefined)
   }
 }

@@ -30,61 +30,43 @@ trait ScheduleInformation extends StObject {
 }
 object ScheduleInformation {
   
-  @scala.inline
-  def apply(): ScheduleInformation = {
+  inline def apply(): ScheduleInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduleInformation]
   }
   
-  @scala.inline
-  implicit class ScheduleInformationMutableBuilder[Self <: ScheduleInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleInformation](x: Self) {
     
-    @scala.inline
-    def setAvailabilityView(value: NullableOption[String]): Self = StObject.set(x, "availabilityView", value.asInstanceOf[js.Any])
+    inline def setAvailabilityView(value: NullableOption[String]): Self = StObject.set(x, "availabilityView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityViewNull: Self = StObject.set(x, "availabilityView", null)
+    inline def setAvailabilityViewNull: Self = StObject.set(x, "availabilityView", null)
     
-    @scala.inline
-    def setAvailabilityViewUndefined: Self = StObject.set(x, "availabilityView", js.undefined)
+    inline def setAvailabilityViewUndefined: Self = StObject.set(x, "availabilityView", js.undefined)
     
-    @scala.inline
-    def setError(value: NullableOption[FreeBusyError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: NullableOption[FreeBusyError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setScheduleId(value: NullableOption[String]): Self = StObject.set(x, "scheduleId", value.asInstanceOf[js.Any])
+    inline def setScheduleId(value: NullableOption[String]): Self = StObject.set(x, "scheduleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleIdNull: Self = StObject.set(x, "scheduleId", null)
+    inline def setScheduleIdNull: Self = StObject.set(x, "scheduleId", null)
     
-    @scala.inline
-    def setScheduleIdUndefined: Self = StObject.set(x, "scheduleId", js.undefined)
+    inline def setScheduleIdUndefined: Self = StObject.set(x, "scheduleId", js.undefined)
     
-    @scala.inline
-    def setScheduleItems(value: NullableOption[js.Array[ScheduleItem]]): Self = StObject.set(x, "scheduleItems", value.asInstanceOf[js.Any])
+    inline def setScheduleItems(value: NullableOption[js.Array[ScheduleItem]]): Self = StObject.set(x, "scheduleItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleItemsNull: Self = StObject.set(x, "scheduleItems", null)
+    inline def setScheduleItemsNull: Self = StObject.set(x, "scheduleItems", null)
     
-    @scala.inline
-    def setScheduleItemsUndefined: Self = StObject.set(x, "scheduleItems", js.undefined)
+    inline def setScheduleItemsUndefined: Self = StObject.set(x, "scheduleItems", js.undefined)
     
-    @scala.inline
-    def setScheduleItemsVarargs(value: ScheduleItem*): Self = StObject.set(x, "scheduleItems", js.Array(value :_*))
+    inline def setScheduleItemsVarargs(value: ScheduleItem*): Self = StObject.set(x, "scheduleItems", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkingHours(value: NullableOption[WorkingHours]): Self = StObject.set(x, "workingHours", value.asInstanceOf[js.Any])
+    inline def setWorkingHours(value: NullableOption[WorkingHours]): Self = StObject.set(x, "workingHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingHoursNull: Self = StObject.set(x, "workingHours", null)
+    inline def setWorkingHoursNull: Self = StObject.set(x, "workingHours", null)
     
-    @scala.inline
-    def setWorkingHoursUndefined: Self = StObject.set(x, "workingHours", js.undefined)
+    inline def setWorkingHoursUndefined: Self = StObject.set(x, "workingHours", js.undefined)
   }
 }

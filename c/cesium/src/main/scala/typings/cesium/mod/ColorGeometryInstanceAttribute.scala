@@ -39,12 +39,9 @@ object ColorGeometryInstanceAttribute {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromColor(color: Color): ColorGeometryInstanceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromColor")(color.asInstanceOf[js.Any]).asInstanceOf[ColorGeometryInstanceAttribute]
+  inline def fromColor(color: Color): ColorGeometryInstanceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromColor")(color.asInstanceOf[js.Any]).asInstanceOf[ColorGeometryInstanceAttribute]
   
   /* static member */
-  @scala.inline
-  def toValue(color: Color): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(color.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  @scala.inline
-  def toValue(color: Color, result: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(color.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def toValue(color: Color): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(color.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def toValue(color: Color, result: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(color.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

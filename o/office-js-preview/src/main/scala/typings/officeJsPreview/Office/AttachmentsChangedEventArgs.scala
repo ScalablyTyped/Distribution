@@ -32,26 +32,20 @@ trait AttachmentsChangedEventArgs extends StObject {
 }
 object AttachmentsChangedEventArgs {
   
-  @scala.inline
-  def apply(attachmentDetails: js.Array[js.Object], attachmentStatus: AttachmentStatus | String): AttachmentsChangedEventArgs = {
+  inline def apply(attachmentDetails: js.Array[js.Object], attachmentStatus: AttachmentStatus | String): AttachmentsChangedEventArgs = {
     val __obj = js.Dynamic.literal(attachmentDetails = attachmentDetails.asInstanceOf[js.Any], attachmentStatus = attachmentStatus.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("olkAttachmentsChanged")
     __obj.asInstanceOf[AttachmentsChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class AttachmentsChangedEventArgsMutableBuilder[Self <: AttachmentsChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentsChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAttachmentDetails(value: js.Array[js.Object]): Self = StObject.set(x, "attachmentDetails", value.asInstanceOf[js.Any])
+    inline def setAttachmentDetails(value: js.Array[js.Object]): Self = StObject.set(x, "attachmentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentDetailsVarargs(value: js.Object*): Self = StObject.set(x, "attachmentDetails", js.Array(value :_*))
+    inline def setAttachmentDetailsVarargs(value: js.Object*): Self = StObject.set(x, "attachmentDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setAttachmentStatus(value: AttachmentStatus | String): Self = StObject.set(x, "attachmentStatus", value.asInstanceOf[js.Any])
+    inline def setAttachmentStatus(value: AttachmentStatus | String): Self = StObject.set(x, "attachmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: olkAttachmentsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: olkAttachmentsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint extend
 }
 object ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint,
     request: ActivityGetThreadSubscriptionForAuthenticatedUserRequestOptions,
     response: OctokitResponse[ActivityGetThreadSubscriptionForAuthenticatedUserResponseData]
@@ -28,16 +27,12 @@ object ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityGetThreadSubscriptionForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityGetThreadSubscriptionForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityGetThreadSubscriptionForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityGetThreadSubscriptionForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

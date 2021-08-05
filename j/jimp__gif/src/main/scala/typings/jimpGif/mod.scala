@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Gif = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Gif]
+  inline def default(): Gif = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Gif]
   
   trait Gif extends StObject {
     
@@ -26,23 +25,18 @@ object mod {
   }
   object Gif {
     
-    @scala.inline
-    def apply(constants: MIMEGIF, decoders: ImagegifDecoderFn, mime: Imagegif): Gif = {
+    inline def apply(constants: MIMEGIF, decoders: ImagegifDecoderFn, mime: Imagegif): Gif = {
       val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Gif]
     }
     
-    @scala.inline
-    implicit class GifMutableBuilder[Self <: Gif] (val x: Self) extends AnyVal {
+    extension [Self <: Gif](x: Self) {
       
-      @scala.inline
-      def setConstants(value: MIMEGIF): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: MIMEGIF): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoders(value: ImagegifDecoderFn): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      inline def setDecoders(value: ImagegifDecoderFn): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: Imagegif): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: Imagegif): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     }
   }
 }

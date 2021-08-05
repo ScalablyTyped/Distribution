@@ -19,29 +19,23 @@ trait GoogleCloudRecommenderV1RecommendationStateInfo extends StObject {
 }
 object GoogleCloudRecommenderV1RecommendationStateInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1RecommendationStateInfo = {
+  inline def apply(): GoogleCloudRecommenderV1RecommendationStateInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1RecommendationStateInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1RecommendationStateInfoMutableBuilder[Self <: GoogleCloudRecommenderV1RecommendationStateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1RecommendationStateInfo](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMetadata(
+    inline def setStateMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1RecommendationStateInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)
+    inline def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -61,104 +61,72 @@ object datePickerPropsMod {
   }
   object PropsType {
     
-    @scala.inline
-    def apply(): PropsType = {
+    inline def apply(): PropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropsType]
     }
     
-    @scala.inline
-    implicit class PropsTypeMutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
+    extension [Self <: PropsType](x: Self) {
       
-      @scala.inline
-      def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+      inline def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
+      inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setGetDateExtra(value: /* date */ Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
+      inline def setGetDateExtra(value: /* date */ Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDateExtraUndefined: Self = StObject.set(x, "getDateExtra", js.undefined)
+      inline def setGetDateExtraUndefined: Self = StObject.set(x, "getDateExtra", js.undefined)
       
-      @scala.inline
-      def setInfiniteOpt(value: Boolean): Self = StObject.set(x, "infiniteOpt", value.asInstanceOf[js.Any])
+      inline def setInfiniteOpt(value: Boolean): Self = StObject.set(x, "infiniteOpt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfiniteOptUndefined: Self = StObject.set(x, "infiniteOpt", js.undefined)
+      inline def setInfiniteOptUndefined: Self = StObject.set(x, "infiniteOpt", js.undefined)
       
-      @scala.inline
-      def setInitalMonths(value: Double): Self = StObject.set(x, "initalMonths", value.asInstanceOf[js.Any])
+      inline def setInitalMonths(value: Double): Self = StObject.set(x, "initalMonths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitalMonthsUndefined: Self = StObject.set(x, "initalMonths", js.undefined)
+      inline def setInitalMonthsUndefined: Self = StObject.set(x, "initalMonths", js.undefined)
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      @scala.inline
-      def setOnCellClick(value: /* date */ Date => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
+      inline def setOnCellClick(value: /* date */ Date => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+      inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
-      @scala.inline
-      def setOnLayout(value: /* clientHight */ Double => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+      inline def setOnLayout(value: /* clientHight */ Double => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+      inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
       
-      @scala.inline
-      def setOnSelectHasDisableDate(value: /* date */ js.Array[Date] => Unit): Self = StObject.set(x, "onSelectHasDisableDate", js.Any.fromFunction1(value))
+      inline def setOnSelectHasDisableDate(value: /* date */ js.Array[Date] => Unit): Self = StObject.set(x, "onSelectHasDisableDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectHasDisableDateUndefined: Self = StObject.set(x, "onSelectHasDisableDate", js.undefined)
+      inline def setOnSelectHasDisableDateUndefined: Self = StObject.set(x, "onSelectHasDisableDate", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRowSize(value: normal | xl): Self = StObject.set(x, "rowSize", value.asInstanceOf[js.Any])
+      inline def setRowSize(value: normal | xl): Self = StObject.set(x, "rowSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSizeUndefined: Self = StObject.set(x, "rowSize", js.undefined)
+      inline def setRowSizeUndefined: Self = StObject.set(x, "rowSize", js.undefined)
       
-      @scala.inline
-      def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
-      @scala.inline
-      def setType(value: one | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: one | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

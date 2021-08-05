@@ -11,6 +11,5 @@ object isPoint3dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(point: Point): /* is @popmotion/popcorn.@popmotion/popcorn/lib/types.Point3D */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any]).asInstanceOf[/* is @popmotion/popcorn.@popmotion/popcorn/lib/types.Point3D */ Boolean]
+  inline def default(point: Point): /* is @popmotion/popcorn.@popmotion/popcorn/lib/types.Point3D */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any]).asInstanceOf[/* is @popmotion/popcorn.@popmotion/popcorn/lib/types.Point3D */ Boolean]
 }

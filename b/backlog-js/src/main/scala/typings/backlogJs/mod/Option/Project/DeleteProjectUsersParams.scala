@@ -10,16 +10,13 @@ trait DeleteProjectUsersParams extends StObject {
 }
 object DeleteProjectUsersParams {
   
-  @scala.inline
-  def apply(userId: Double): DeleteProjectUsersParams = {
+  inline def apply(userId: Double): DeleteProjectUsersParams = {
     val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProjectUsersParams]
   }
   
-  @scala.inline
-  implicit class DeleteProjectUsersParamsMutableBuilder[Self <: DeleteProjectUsersParams] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectUsersParams](x: Self) {
     
-    @scala.inline
-    def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

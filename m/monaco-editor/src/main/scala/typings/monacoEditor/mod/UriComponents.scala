@@ -18,28 +18,21 @@ trait UriComponents extends StObject {
 }
 object UriComponents {
   
-  @scala.inline
-  def apply(authority: String, fragment: String, path: String, query: String, scheme: String): UriComponents = {
+  inline def apply(authority: String, fragment: String, path: String, query: String, scheme: String): UriComponents = {
     val __obj = js.Dynamic.literal(authority = authority.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[UriComponents]
   }
   
-  @scala.inline
-  implicit class UriComponentsMutableBuilder[Self <: UriComponents] (val x: Self) extends AnyVal {
+  extension [Self <: UriComponents](x: Self) {
     
-    @scala.inline
-    def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+    inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

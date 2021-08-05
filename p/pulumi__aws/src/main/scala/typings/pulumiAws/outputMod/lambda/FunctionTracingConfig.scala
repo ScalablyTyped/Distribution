@@ -17,16 +17,13 @@ trait FunctionTracingConfig extends StObject {
 }
 object FunctionTracingConfig {
   
-  @scala.inline
-  def apply(mode: String): FunctionTracingConfig = {
+  inline def apply(mode: String): FunctionTracingConfig = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionTracingConfig]
   }
   
-  @scala.inline
-  implicit class FunctionTracingConfigMutableBuilder[Self <: FunctionTracingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionTracingConfig](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait XSimpleLogRing extends StObject {
 }
 object XSimpleLogRing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CollectedLog: SafeArray[String],
     getCollectedLog: () => SafeArray[String],
     logString: String => Unit
@@ -43,16 +42,12 @@ object XSimpleLogRing {
     __obj.asInstanceOf[XSimpleLogRing]
   }
   
-  @scala.inline
-  implicit class XSimpleLogRingMutableBuilder[Self <: XSimpleLogRing] (val x: Self) extends AnyVal {
+  extension [Self <: XSimpleLogRing](x: Self) {
     
-    @scala.inline
-    def setCollectedLog(value: SafeArray[String]): Self = StObject.set(x, "CollectedLog", value.asInstanceOf[js.Any])
+    inline def setCollectedLog(value: SafeArray[String]): Self = StObject.set(x, "CollectedLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCollectedLog(value: () => SafeArray[String]): Self = StObject.set(x, "getCollectedLog", js.Any.fromFunction0(value))
+    inline def setGetCollectedLog(value: () => SafeArray[String]): Self = StObject.set(x, "getCollectedLog", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLogString(value: String => Unit): Self = StObject.set(x, "logString", js.Any.fromFunction1(value))
+    inline def setLogString(value: String => Unit): Self = StObject.set(x, "logString", js.Any.fromFunction1(value))
   }
 }

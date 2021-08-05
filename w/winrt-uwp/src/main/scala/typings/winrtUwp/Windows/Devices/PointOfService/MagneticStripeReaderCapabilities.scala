@@ -42,8 +42,7 @@ trait MagneticStripeReaderCapabilities extends StObject {
 }
 object MagneticStripeReaderCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticationLevel: MagneticStripeReaderAuthenticationLevel,
     cardAuthentication: String,
     isIsoSupported: Boolean,
@@ -60,40 +59,28 @@ object MagneticStripeReaderCapabilities {
     __obj.asInstanceOf[MagneticStripeReaderCapabilities]
   }
   
-  @scala.inline
-  implicit class MagneticStripeReaderCapabilitiesMutableBuilder[Self <: MagneticStripeReaderCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: MagneticStripeReaderCapabilities](x: Self) {
     
-    @scala.inline
-    def setAuthenticationLevel(value: MagneticStripeReaderAuthenticationLevel): Self = StObject.set(x, "authenticationLevel", value.asInstanceOf[js.Any])
+    inline def setAuthenticationLevel(value: MagneticStripeReaderAuthenticationLevel): Self = StObject.set(x, "authenticationLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardAuthentication(value: String): Self = StObject.set(x, "cardAuthentication", value.asInstanceOf[js.Any])
+    inline def setCardAuthentication(value: String): Self = StObject.set(x, "cardAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIsoSupported(value: Boolean): Self = StObject.set(x, "isIsoSupported", value.asInstanceOf[js.Any])
+    inline def setIsIsoSupported(value: Boolean): Self = StObject.set(x, "isIsoSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsJisOneSupported(value: Boolean): Self = StObject.set(x, "isJisOneSupported", value.asInstanceOf[js.Any])
+    inline def setIsJisOneSupported(value: Boolean): Self = StObject.set(x, "isJisOneSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsJisTwoSupported(value: Boolean): Self = StObject.set(x, "isJisTwoSupported", value.asInstanceOf[js.Any])
+    inline def setIsJisTwoSupported(value: Boolean): Self = StObject.set(x, "isJisTwoSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrackDataMaskingSupported(value: Boolean): Self = StObject.set(x, "isTrackDataMaskingSupported", value.asInstanceOf[js.Any])
+    inline def setIsTrackDataMaskingSupported(value: Boolean): Self = StObject.set(x, "isTrackDataMaskingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTransmitSentinelsSupported(value: Boolean): Self = StObject.set(x, "isTransmitSentinelsSupported", value.asInstanceOf[js.Any])
+    inline def setIsTransmitSentinelsSupported(value: Boolean): Self = StObject.set(x, "isTransmitSentinelsSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
+    inline def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedEncryptionAlgorithms(value: Double): Self = StObject.set(x, "supportedEncryptionAlgorithms", value.asInstanceOf[js.Any])
+    inline def setSupportedEncryptionAlgorithms(value: Double): Self = StObject.set(x, "supportedEncryptionAlgorithms", value.asInstanceOf[js.Any])
   }
 }

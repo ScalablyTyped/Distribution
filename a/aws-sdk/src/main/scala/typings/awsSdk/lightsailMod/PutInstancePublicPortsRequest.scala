@@ -18,22 +18,17 @@ trait PutInstancePublicPortsRequest extends StObject {
 }
 object PutInstancePublicPortsRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName, portInfos: PortInfoList): PutInstancePublicPortsRequest = {
+  inline def apply(instanceName: ResourceName, portInfos: PortInfoList): PutInstancePublicPortsRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], portInfos = portInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutInstancePublicPortsRequest]
   }
   
-  @scala.inline
-  implicit class PutInstancePublicPortsRequestMutableBuilder[Self <: PutInstancePublicPortsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutInstancePublicPortsRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortInfos(value: PortInfoList): Self = StObject.set(x, "portInfos", value.asInstanceOf[js.Any])
+    inline def setPortInfos(value: PortInfoList): Self = StObject.set(x, "portInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortInfosVarargs(value: PortInfo*): Self = StObject.set(x, "portInfos", js.Array(value :_*))
+    inline def setPortInfosVarargs(value: PortInfo*): Self = StObject.set(x, "portInfos", js.Array(value :_*))
   }
 }

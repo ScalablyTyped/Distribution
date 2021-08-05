@@ -18,8 +18,7 @@ object linearProgressBarDriverMod {
   }
   object LinearProgressBarDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getAriaValueMax: () => Double,
       getAriaValueMin: () => Double,
@@ -44,17 +43,13 @@ object linearProgressBarDriverMod {
       __obj.asInstanceOf[LinearProgressBarDriver]
     }
     
-    @scala.inline
-    implicit class LinearProgressBarDriverMutableBuilder[Self <: LinearProgressBarDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LinearProgressBarDriver](x: Self) {
       
-      @scala.inline
-      def setGetTooltipErrorMessage(value: () => String): Self = StObject.set(x, "getTooltipErrorMessage", js.Any.fromFunction0(value))
+      inline def setGetTooltipErrorMessage(value: () => String): Self = StObject.set(x, "getTooltipErrorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorIconShown(value: () => Boolean): Self = StObject.set(x, "isErrorIconShown", js.Any.fromFunction0(value))
+      inline def setIsErrorIconShown(value: () => Boolean): Self = StObject.set(x, "isErrorIconShown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccessIconShown(value: () => Boolean): Self = StObject.set(x, "isSuccessIconShown", js.Any.fromFunction0(value))
+      inline def setIsSuccessIconShown(value: () => Boolean): Self = StObject.set(x, "isSuccessIconShown", js.Any.fromFunction0(value))
     }
   }
 }

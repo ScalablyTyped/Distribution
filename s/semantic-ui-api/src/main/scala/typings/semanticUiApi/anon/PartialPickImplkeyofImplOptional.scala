@@ -14,25 +14,19 @@ trait PartialPickImplkeyofImplOptional extends StObject {
 }
 object PartialPickImplkeyofImplOptional {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplOptional = {
+  inline def apply(): PartialPickImplkeyofImplOptional = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplOptional]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplOptionalMutableBuilder[Self <: PartialPickImplkeyofImplOptional] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplOptional](x: Self) {
     
-    @scala.inline
-    def setOptional(value: RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setRequired(value: RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

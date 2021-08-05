@@ -16,31 +16,23 @@ trait Auth extends StObject {
 }
 object Auth {
   
-  @scala.inline
-  def apply(): Auth = {
+  inline def apply(): Auth = {
     val __obj = js.Dynamic.literal(isAuth = true)
     __obj.asInstanceOf[Auth]
   }
   
-  @scala.inline
-  implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+  extension [Self <: Auth](x: Self) {
     
-    @scala.inline
-    def setData(value: AuthenticationData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: AuthenticationData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setIsAuth(value: `true`): Self = StObject.set(x, "isAuth", value.asInstanceOf[js.Any])
+    inline def setIsAuth(value: `true`): Self = StObject.set(x, "isAuth", value.asInstanceOf[js.Any])
   }
 }

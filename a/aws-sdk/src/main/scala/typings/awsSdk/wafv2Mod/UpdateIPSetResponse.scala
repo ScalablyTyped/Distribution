@@ -13,19 +13,15 @@ trait UpdateIPSetResponse extends StObject {
 }
 object UpdateIPSetResponse {
   
-  @scala.inline
-  def apply(): UpdateIPSetResponse = {
+  inline def apply(): UpdateIPSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateIPSetResponse]
   }
   
-  @scala.inline
-  implicit class UpdateIPSetResponseMutableBuilder[Self <: UpdateIPSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateIPSetResponse](x: Self) {
     
-    @scala.inline
-    def setNextLockToken(value: LockToken): Self = StObject.set(x, "NextLockToken", value.asInstanceOf[js.Any])
+    inline def setNextLockToken(value: LockToken): Self = StObject.set(x, "NextLockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextLockTokenUndefined: Self = StObject.set(x, "NextLockToken", js.undefined)
+    inline def setNextLockTokenUndefined: Self = StObject.set(x, "NextLockToken", js.undefined)
   }
 }

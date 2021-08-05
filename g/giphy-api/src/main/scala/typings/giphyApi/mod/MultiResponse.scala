@@ -14,19 +14,15 @@ trait MultiResponse
 }
 object MultiResponse {
   
-  @scala.inline
-  def apply(data: js.Array[GIFObject], meta: Msg, pagination: Count): MultiResponse = {
+  inline def apply(data: js.Array[GIFObject], meta: Msg, pagination: Count): MultiResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiResponse]
   }
   
-  @scala.inline
-  implicit class MultiResponseMutableBuilder[Self <: MultiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultiResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[GIFObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[GIFObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: GIFObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: GIFObject*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

@@ -33,43 +33,31 @@ trait ReEncryptResponse extends StObject {
 }
 object ReEncryptResponse {
   
-  @scala.inline
-  def apply(): ReEncryptResponse = {
+  inline def apply(): ReEncryptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReEncryptResponse]
   }
   
-  @scala.inline
-  implicit class ReEncryptResponseMutableBuilder[Self <: ReEncryptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReEncryptResponse](x: Self) {
     
-    @scala.inline
-    def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
+    inline def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
+    inline def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
     
-    @scala.inline
-    def setDestinationEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "DestinationEncryptionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setDestinationEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "DestinationEncryptionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationEncryptionAlgorithmUndefined: Self = StObject.set(x, "DestinationEncryptionAlgorithm", js.undefined)
+    inline def setDestinationEncryptionAlgorithmUndefined: Self = StObject.set(x, "DestinationEncryptionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setSourceEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "SourceEncryptionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSourceEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "SourceEncryptionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEncryptionAlgorithmUndefined: Self = StObject.set(x, "SourceEncryptionAlgorithm", js.undefined)
+    inline def setSourceEncryptionAlgorithmUndefined: Self = StObject.set(x, "SourceEncryptionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setSourceKeyId(value: KeyIdType): Self = StObject.set(x, "SourceKeyId", value.asInstanceOf[js.Any])
+    inline def setSourceKeyId(value: KeyIdType): Self = StObject.set(x, "SourceKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceKeyIdUndefined: Self = StObject.set(x, "SourceKeyId", js.undefined)
+    inline def setSourceKeyIdUndefined: Self = StObject.set(x, "SourceKeyId", js.undefined)
   }
 }

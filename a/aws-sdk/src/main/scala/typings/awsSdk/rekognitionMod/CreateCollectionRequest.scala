@@ -13,16 +13,13 @@ trait CreateCollectionRequest extends StObject {
 }
 object CreateCollectionRequest {
   
-  @scala.inline
-  def apply(CollectionId: CollectionId): CreateCollectionRequest = {
+  inline def apply(CollectionId: CollectionId): CreateCollectionRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionRequest]
   }
   
-  @scala.inline
-  implicit class CreateCollectionRequestMutableBuilder[Self <: CreateCollectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCollectionRequest](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
   }
 }

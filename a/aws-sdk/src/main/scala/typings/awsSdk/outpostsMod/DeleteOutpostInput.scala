@@ -10,16 +10,13 @@ trait DeleteOutpostInput extends StObject {
 }
 object DeleteOutpostInput {
   
-  @scala.inline
-  def apply(OutpostId: OutpostId): DeleteOutpostInput = {
+  inline def apply(OutpostId: OutpostId): DeleteOutpostInput = {
     val __obj = js.Dynamic.literal(OutpostId = OutpostId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOutpostInput]
   }
   
-  @scala.inline
-  implicit class DeleteOutpostInputMutableBuilder[Self <: DeleteOutpostInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOutpostInput](x: Self) {
     
-    @scala.inline
-    def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
   }
 }

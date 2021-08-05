@@ -33,70 +33,49 @@ trait SnackbarProps extends StObject {
 }
 object SnackbarProps {
   
-  @scala.inline
-  def apply(open: Boolean): SnackbarProps = {
+  inline def apply(open: Boolean): SnackbarProps = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarProps]
   }
   
-  @scala.inline
-  implicit class SnackbarPropsMutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
+  extension [Self <: SnackbarProps](x: Self) {
     
-    @scala.inline
-    def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
+    inline def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
+    inline def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
     
-    @scala.inline
-    def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
+    inline def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
+    inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+    inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    @scala.inline
-    def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOnActionClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction1(value))
+    inline def setOnActionClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
+    inline def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
     
-    @scala.inline
-    def setOnRequestClose(value: /* reason */ String => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
+    inline def setOnRequestClose(value: /* reason */ String => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
+    inline def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

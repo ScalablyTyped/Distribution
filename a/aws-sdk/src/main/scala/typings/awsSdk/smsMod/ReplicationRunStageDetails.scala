@@ -18,25 +18,19 @@ trait ReplicationRunStageDetails extends StObject {
 }
 object ReplicationRunStageDetails {
   
-  @scala.inline
-  def apply(): ReplicationRunStageDetails = {
+  inline def apply(): ReplicationRunStageDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationRunStageDetails]
   }
   
-  @scala.inline
-  implicit class ReplicationRunStageDetailsMutableBuilder[Self <: ReplicationRunStageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationRunStageDetails](x: Self) {
     
-    @scala.inline
-    def setStage(value: ReplicationRunStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: ReplicationRunStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageProgress(value: ReplicationRunStageProgress): Self = StObject.set(x, "stageProgress", value.asInstanceOf[js.Any])
+    inline def setStageProgress(value: ReplicationRunStageProgress): Self = StObject.set(x, "stageProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageProgressUndefined: Self = StObject.set(x, "stageProgress", js.undefined)
+    inline def setStageProgressUndefined: Self = StObject.set(x, "stageProgress", js.undefined)
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
   }
 }

@@ -46,8 +46,7 @@ object mod {
   }
   object DOMRectReadOnly {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       height: Double,
       left: Double,
@@ -61,32 +60,23 @@ object mod {
       __obj.asInstanceOf[DOMRectReadOnly]
     }
     
-    @scala.inline
-    implicit class DOMRectReadOnlyMutableBuilder[Self <: DOMRectReadOnly] (val x: Self) extends AnyVal {
+    extension [Self <: DOMRectReadOnly](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,23 +90,18 @@ object mod {
   }
   object ResizeObserver {
     
-    @scala.inline
-    def apply(disconnect: () => Unit, observe: Element => Unit, unobserve: Element => Unit): ResizeObserver = {
+    inline def apply(disconnect: () => Unit, observe: Element => Unit, unobserve: Element => Unit): ResizeObserver = {
       val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), observe = js.Any.fromFunction1(observe), unobserve = js.Any.fromFunction1(unobserve))
       __obj.asInstanceOf[ResizeObserver]
     }
     
-    @scala.inline
-    implicit class ResizeObserverMutableBuilder[Self <: ResizeObserver] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeObserver](x: Self) {
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+      inline def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
+      inline def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
     }
   }
   
@@ -132,23 +117,18 @@ object mod {
     }
     object ResizeObserver {
       
-      @scala.inline
-      def apply(disconnect: () => Unit, observe: Element => Unit, unobserve: Element => Unit): typings.resizeObserverPolyfill.mod.global.ResizeObserver = {
+      inline def apply(disconnect: () => Unit, observe: Element => Unit, unobserve: Element => Unit): typings.resizeObserverPolyfill.mod.global.ResizeObserver = {
         val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), observe = js.Any.fromFunction1(observe), unobserve = js.Any.fromFunction1(unobserve))
         __obj.asInstanceOf[typings.resizeObserverPolyfill.mod.global.ResizeObserver]
       }
       
-      @scala.inline
-      implicit class ResizeObserverMutableBuilder[Self <: typings.resizeObserverPolyfill.mod.global.ResizeObserver] (val x: Self) extends AnyVal {
+      extension [Self <: typings.resizeObserverPolyfill.mod.global.ResizeObserver](x: Self) {
         
-        @scala.inline
-        def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+        inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+        inline def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
+        inline def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
       }
     }
     
@@ -166,20 +146,16 @@ object mod {
     }
     object ResizeObserverEntry {
       
-      @scala.inline
-      def apply(contentRect: DOMRectReadOnly, target: Element): ResizeObserverEntry = {
+      inline def apply(contentRect: DOMRectReadOnly, target: Element): ResizeObserverEntry = {
         val __obj = js.Dynamic.literal(contentRect = contentRect.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResizeObserverEntry]
       }
       
-      @scala.inline
-      implicit class ResizeObserverEntryMutableBuilder[Self <: ResizeObserverEntry] (val x: Self) extends AnyVal {
+      extension [Self <: ResizeObserverEntry](x: Self) {
         
-        @scala.inline
-        def setContentRect(value: DOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
+        inline def setContentRect(value: DOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
   }

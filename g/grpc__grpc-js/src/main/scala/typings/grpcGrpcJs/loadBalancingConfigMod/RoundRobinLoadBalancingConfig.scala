@@ -15,19 +15,15 @@ trait RoundRobinLoadBalancingConfig
 }
 object RoundRobinLoadBalancingConfig {
   
-  @scala.inline
-  def apply(round_robin: RoundRobinConfig): RoundRobinLoadBalancingConfig = {
+  inline def apply(round_robin: RoundRobinConfig): RoundRobinLoadBalancingConfig = {
     val __obj = js.Dynamic.literal(name = "round_robin", round_robin = round_robin.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoundRobinLoadBalancingConfig]
   }
   
-  @scala.inline
-  implicit class RoundRobinLoadBalancingConfigMutableBuilder[Self <: RoundRobinLoadBalancingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RoundRobinLoadBalancingConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: round_robin): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: round_robin): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRound_robin(value: RoundRobinConfig): Self = StObject.set(x, "round_robin", value.asInstanceOf[js.Any])
+    inline def setRound_robin(value: RoundRobinConfig): Self = StObject.set(x, "round_robin", value.asInstanceOf[js.Any])
   }
 }

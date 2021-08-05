@@ -21,7 +21,7 @@ class IonList protected ()
   /* CompleteClass */
   override def closeSlidingItems(): js.Promise[Boolean] = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If `true`, the list will have margin around it and rounded corners.
@@ -29,5 +29,5 @@ class IonList protected ()
   /* CompleteClass */
   var inset: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

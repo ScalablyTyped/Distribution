@@ -14,19 +14,15 @@ trait GradFunc[T /* <: Tensor[Rank] */] extends StObject {
 }
 object GradFunc {
   
-  @scala.inline
-  def apply[T /* <: Tensor[Rank] */](gradFunc: (T, js.Array[Tensor[Rank]]) => Tensor[Rank] | js.Array[Tensor[Rank]], value: T): GradFunc[T] = {
+  inline def apply[T /* <: Tensor[Rank] */](gradFunc: (T, js.Array[Tensor[Rank]]) => Tensor[Rank] | js.Array[Tensor[Rank]], value: T): GradFunc[T] = {
     val __obj = js.Dynamic.literal(gradFunc = js.Any.fromFunction2(gradFunc), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradFunc[T]]
   }
   
-  @scala.inline
-  implicit class GradFuncMutableBuilder[Self <: GradFunc[?], T /* <: Tensor[Rank] */] (val x: Self & GradFunc[T]) extends AnyVal {
+  extension [Self <: GradFunc[?], T /* <: Tensor[Rank] */](x: Self & GradFunc[T]) {
     
-    @scala.inline
-    def setGradFunc(value: (T, js.Array[Tensor[Rank]]) => Tensor[Rank] | js.Array[Tensor[Rank]]): Self = StObject.set(x, "gradFunc", js.Any.fromFunction2(value))
+    inline def setGradFunc(value: (T, js.Array[Tensor[Rank]]) => Tensor[Rank] | js.Array[Tensor[Rank]]): Self = StObject.set(x, "gradFunc", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

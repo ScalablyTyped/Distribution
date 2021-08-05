@@ -34,8 +34,7 @@ trait InputUser
 }
 object InputUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -66,13 +65,10 @@ object InputUser {
     __obj.asInstanceOf[InputUser]
   }
   
-  @scala.inline
-  implicit class InputUserMutableBuilder[Self <: InputUser] (val x: Self) extends AnyVal {
+  extension [Self <: InputUser](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
   }
 }

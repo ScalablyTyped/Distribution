@@ -44,8 +44,7 @@ trait IAsymmetricAlgorithmNamesStatics extends StObject {
 }
 object IAsymmetricAlgorithmNamesStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dsaSha1: String,
     dsaSha256: String,
     ecdsaP256Sha256: String,
@@ -69,61 +68,42 @@ object IAsymmetricAlgorithmNamesStatics {
     __obj.asInstanceOf[IAsymmetricAlgorithmNamesStatics]
   }
   
-  @scala.inline
-  implicit class IAsymmetricAlgorithmNamesStaticsMutableBuilder[Self <: IAsymmetricAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IAsymmetricAlgorithmNamesStatics](x: Self) {
     
-    @scala.inline
-    def setDsaSha1(value: String): Self = StObject.set(x, "dsaSha1", value.asInstanceOf[js.Any])
+    inline def setDsaSha1(value: String): Self = StObject.set(x, "dsaSha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsaSha256(value: String): Self = StObject.set(x, "dsaSha256", value.asInstanceOf[js.Any])
+    inline def setDsaSha256(value: String): Self = StObject.set(x, "dsaSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdsaP256Sha256(value: String): Self = StObject.set(x, "ecdsaP256Sha256", value.asInstanceOf[js.Any])
+    inline def setEcdsaP256Sha256(value: String): Self = StObject.set(x, "ecdsaP256Sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdsaP384Sha384(value: String): Self = StObject.set(x, "ecdsaP384Sha384", value.asInstanceOf[js.Any])
+    inline def setEcdsaP384Sha384(value: String): Self = StObject.set(x, "ecdsaP384Sha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdsaP521Sha512(value: String): Self = StObject.set(x, "ecdsaP521Sha512", value.asInstanceOf[js.Any])
+    inline def setEcdsaP521Sha512(value: String): Self = StObject.set(x, "ecdsaP521Sha512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaOaepSha1(value: String): Self = StObject.set(x, "rsaOaepSha1", value.asInstanceOf[js.Any])
+    inline def setRsaOaepSha1(value: String): Self = StObject.set(x, "rsaOaepSha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaOaepSha256(value: String): Self = StObject.set(x, "rsaOaepSha256", value.asInstanceOf[js.Any])
+    inline def setRsaOaepSha256(value: String): Self = StObject.set(x, "rsaOaepSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaOaepSha384(value: String): Self = StObject.set(x, "rsaOaepSha384", value.asInstanceOf[js.Any])
+    inline def setRsaOaepSha384(value: String): Self = StObject.set(x, "rsaOaepSha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaOaepSha512(value: String): Self = StObject.set(x, "rsaOaepSha512", value.asInstanceOf[js.Any])
+    inline def setRsaOaepSha512(value: String): Self = StObject.set(x, "rsaOaepSha512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaPkcs1(value: String): Self = StObject.set(x, "rsaPkcs1", value.asInstanceOf[js.Any])
+    inline def setRsaPkcs1(value: String): Self = StObject.set(x, "rsaPkcs1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPkcs1Sha1(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha1", value.asInstanceOf[js.Any])
+    inline def setRsaSignPkcs1Sha1(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPkcs1Sha256(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha256", value.asInstanceOf[js.Any])
+    inline def setRsaSignPkcs1Sha256(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPkcs1Sha384(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha384", value.asInstanceOf[js.Any])
+    inline def setRsaSignPkcs1Sha384(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPkcs1Sha512(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha512", value.asInstanceOf[js.Any])
+    inline def setRsaSignPkcs1Sha512(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPssSha1(value: String): Self = StObject.set(x, "rsaSignPssSha1", value.asInstanceOf[js.Any])
+    inline def setRsaSignPssSha1(value: String): Self = StObject.set(x, "rsaSignPssSha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPssSha256(value: String): Self = StObject.set(x, "rsaSignPssSha256", value.asInstanceOf[js.Any])
+    inline def setRsaSignPssSha256(value: String): Self = StObject.set(x, "rsaSignPssSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPssSha384(value: String): Self = StObject.set(x, "rsaSignPssSha384", value.asInstanceOf[js.Any])
+    inline def setRsaSignPssSha384(value: String): Self = StObject.set(x, "rsaSignPssSha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSignPssSha512(value: String): Self = StObject.set(x, "rsaSignPssSha512", value.asInstanceOf[js.Any])
+    inline def setRsaSignPssSha512(value: String): Self = StObject.set(x, "rsaSignPssSha512", value.asInstanceOf[js.Any])
   }
 }

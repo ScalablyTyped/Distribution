@@ -19,10 +19,8 @@ object UnsupportedProtocolError {
   @js.native
   val ^ : Instantiable0[UnsupportedProtocolError] = js.native
   
-  @scala.inline
-  implicit class UnsupportedProtocolErrorMutableBuilder[Self <: UnsupportedProtocolError] (val x: Self) extends AnyVal {
+  extension [Self <: UnsupportedProtocolError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.UnsupportedProtocolError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.UnsupportedProtocolError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

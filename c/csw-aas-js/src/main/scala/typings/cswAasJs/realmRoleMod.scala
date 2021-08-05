@@ -12,8 +12,7 @@ object realmRoleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasRealmRoleChildrenError: RealmRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRealmRoleChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasRealmRoleChildrenError: RealmRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRealmRoleChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RealmRoleProps extends StObject {
     
@@ -25,29 +24,22 @@ object realmRoleMod {
   }
   object RealmRoleProps {
     
-    @scala.inline
-    def apply(realmRole: String): RealmRoleProps = {
+    inline def apply(realmRole: String): RealmRoleProps = {
       val __obj = js.Dynamic.literal(realmRole = realmRole.asInstanceOf[js.Any])
       __obj.asInstanceOf[RealmRoleProps]
     }
     
-    @scala.inline
-    implicit class RealmRolePropsMutableBuilder[Self <: RealmRoleProps] (val x: Self) extends AnyVal {
+    extension [Self <: RealmRoleProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setRealmRole(value: String): Self = StObject.set(x, "realmRole", value.asInstanceOf[js.Any])
+      inline def setRealmRole(value: String): Self = StObject.set(x, "realmRole", value.asInstanceOf[js.Any])
     }
   }
 }

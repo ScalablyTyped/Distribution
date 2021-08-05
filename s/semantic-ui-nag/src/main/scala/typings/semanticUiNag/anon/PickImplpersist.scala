@@ -11,16 +11,13 @@ trait PickImplpersist extends StObject {
 }
 object PickImplpersist {
   
-  @scala.inline
-  def apply(persist: Boolean): PickImplpersist = {
+  inline def apply(persist: Boolean): PickImplpersist = {
     val __obj = js.Dynamic.literal(persist = persist.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpersist]
   }
   
-  @scala.inline
-  implicit class PickImplpersistMutableBuilder[Self <: PickImplpersist] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpersist](x: Self) {
     
-    @scala.inline
-    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
   }
 }

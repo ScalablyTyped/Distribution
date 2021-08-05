@@ -36,8 +36,7 @@ trait LocalFileSystemSync extends StObject {
 }
 object LocalFileSystemSync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PERSISTENT: Double,
     TEMPORARY: Double,
     requestFileSystemSync: (Double, Double) => FileSystemSync,
@@ -48,22 +47,16 @@ object LocalFileSystemSync {
     __obj.asInstanceOf[LocalFileSystemSync]
   }
   
-  @scala.inline
-  implicit class LocalFileSystemSyncMutableBuilder[Self <: LocalFileSystemSync] (val x: Self) extends AnyVal {
+  extension [Self <: LocalFileSystemSync](x: Self) {
     
-    @scala.inline
-    def setPERSISTENT(value: Double): Self = StObject.set(x, "PERSISTENT", value.asInstanceOf[js.Any])
+    inline def setPERSISTENT(value: Double): Self = StObject.set(x, "PERSISTENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = StObject.set(x, "requestFileSystemSync", js.Any.fromFunction2(value))
+    inline def setRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = StObject.set(x, "requestFileSystemSync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveLocalFileSystemSyncURL(value: String => EntrySync): Self = StObject.set(x, "resolveLocalFileSystemSyncURL", js.Any.fromFunction1(value))
+    inline def setResolveLocalFileSystemSyncURL(value: String => EntrySync): Self = StObject.set(x, "resolveLocalFileSystemSyncURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTEMPORARY(value: Double): Self = StObject.set(x, "TEMPORARY", value.asInstanceOf[js.Any])
+    inline def setTEMPORARY(value: Double): Self = StObject.set(x, "TEMPORARY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = StObject.set(x, "webkitRequestFileSystemSync", js.Any.fromFunction2(value))
+    inline def setWebkitRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = StObject.set(x, "webkitRequestFileSystemSync", js.Any.fromFunction2(value))
   }
 }

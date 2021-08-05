@@ -15,20 +15,16 @@ object typesReplicaDescriptionMod {
   }
   object ReplicaDescription {
     
-    @scala.inline
-    def apply(): ReplicaDescription = {
+    inline def apply(): ReplicaDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaDescription]
     }
     
-    @scala.inline
-    implicit class ReplicaDescriptionMutableBuilder[Self <: ReplicaDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaDescription](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: String): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: String): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+      inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     }
   }
   

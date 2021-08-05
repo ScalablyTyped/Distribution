@@ -36,26 +36,20 @@ object authentication {
     }
     object BoundObjectReference {
       
-      @scala.inline
-      def apply(apiVersion: String, kind: String, name: String, uid: String): BoundObjectReference = {
+      inline def apply(apiVersion: String, kind: String, name: String, uid: String): BoundObjectReference = {
         val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
         __obj.asInstanceOf[BoundObjectReference]
       }
       
-      @scala.inline
-      implicit class BoundObjectReferenceMutableBuilder[Self <: BoundObjectReference] (val x: Self) extends AnyVal {
+      extension [Self <: BoundObjectReference](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       }
     }
     
@@ -81,26 +75,20 @@ object authentication {
     }
     object TokenRequestSpec {
       
-      @scala.inline
-      def apply(audiences: js.Array[String], boundObjectRef: BoundObjectReference, expirationSeconds: Double): TokenRequestSpec = {
+      inline def apply(audiences: js.Array[String], boundObjectRef: BoundObjectReference, expirationSeconds: Double): TokenRequestSpec = {
         val __obj = js.Dynamic.literal(audiences = audiences.asInstanceOf[js.Any], boundObjectRef = boundObjectRef.asInstanceOf[js.Any], expirationSeconds = expirationSeconds.asInstanceOf[js.Any])
         __obj.asInstanceOf[TokenRequestSpec]
       }
       
-      @scala.inline
-      implicit class TokenRequestSpecMutableBuilder[Self <: TokenRequestSpec] (val x: Self) extends AnyVal {
+      extension [Self <: TokenRequestSpec](x: Self) {
         
-        @scala.inline
-        def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+        inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+        inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
         
-        @scala.inline
-        def setBoundObjectRef(value: BoundObjectReference): Self = StObject.set(x, "boundObjectRef", value.asInstanceOf[js.Any])
+        inline def setBoundObjectRef(value: BoundObjectReference): Self = StObject.set(x, "boundObjectRef", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpirationSeconds(value: Double): Self = StObject.set(x, "expirationSeconds", value.asInstanceOf[js.Any])
+        inline def setExpirationSeconds(value: Double): Self = StObject.set(x, "expirationSeconds", value.asInstanceOf[js.Any])
       }
     }
     
@@ -121,20 +109,16 @@ object authentication {
     }
     object TokenRequestStatus {
       
-      @scala.inline
-      def apply(expirationTimestamp: String, token: String): TokenRequestStatus = {
+      inline def apply(expirationTimestamp: String, token: String): TokenRequestStatus = {
         val __obj = js.Dynamic.literal(expirationTimestamp = expirationTimestamp.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
         __obj.asInstanceOf[TokenRequestStatus]
       }
       
-      @scala.inline
-      implicit class TokenRequestStatusMutableBuilder[Self <: TokenRequestStatus] (val x: Self) extends AnyVal {
+      extension [Self <: TokenRequestStatus](x: Self) {
         
-        @scala.inline
-        def setExpirationTimestamp(value: String): Self = StObject.set(x, "expirationTimestamp", value.asInstanceOf[js.Any])
+        inline def setExpirationTimestamp(value: String): Self = StObject.set(x, "expirationTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       }
     }
     
@@ -155,23 +139,18 @@ object authentication {
     }
     object TokenReviewSpec {
       
-      @scala.inline
-      def apply(audiences: js.Array[String], token: String): TokenReviewSpec = {
+      inline def apply(audiences: js.Array[String], token: String): TokenReviewSpec = {
         val __obj = js.Dynamic.literal(audiences = audiences.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
         __obj.asInstanceOf[TokenReviewSpec]
       }
       
-      @scala.inline
-      implicit class TokenReviewSpecMutableBuilder[Self <: TokenReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: TokenReviewSpec](x: Self) {
         
-        @scala.inline
-        def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+        inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+        inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       }
     }
     
@@ -202,29 +181,22 @@ object authentication {
     }
     object TokenReviewStatus {
       
-      @scala.inline
-      def apply(audiences: js.Array[String], authenticated: Boolean, error: String, user: UserInfo): TokenReviewStatus = {
+      inline def apply(audiences: js.Array[String], authenticated: Boolean, error: String, user: UserInfo): TokenReviewStatus = {
         val __obj = js.Dynamic.literal(audiences = audiences.asInstanceOf[js.Any], authenticated = authenticated.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
         __obj.asInstanceOf[TokenReviewStatus]
       }
       
-      @scala.inline
-      implicit class TokenReviewStatusMutableBuilder[Self <: TokenReviewStatus] (val x: Self) extends AnyVal {
+      extension [Self <: TokenReviewStatus](x: Self) {
         
-        @scala.inline
-        def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+        inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+        inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
         
-        @scala.inline
-        def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
+        inline def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       }
     }
     
@@ -255,29 +227,22 @@ object authentication {
     }
     object UserInfo {
       
-      @scala.inline
-      def apply(extra: StringDictionary[js.Array[String]], groups: js.Array[String], uid: String, username: String): UserInfo = {
+      inline def apply(extra: StringDictionary[js.Array[String]], groups: js.Array[String], uid: String, username: String): UserInfo = {
         val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
         __obj.asInstanceOf[UserInfo]
       }
       
-      @scala.inline
-      implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+      extension [Self <: UserInfo](x: Self) {
         
-        @scala.inline
-        def setExtra(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+        inline def setExtra(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+        inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
         
-        @scala.inline
-        def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -301,23 +266,18 @@ object authentication {
     }
     object TokenReviewSpec {
       
-      @scala.inline
-      def apply(audiences: js.Array[String], token: String): TokenReviewSpec = {
+      inline def apply(audiences: js.Array[String], token: String): TokenReviewSpec = {
         val __obj = js.Dynamic.literal(audiences = audiences.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
         __obj.asInstanceOf[TokenReviewSpec]
       }
       
-      @scala.inline
-      implicit class TokenReviewSpecMutableBuilder[Self <: TokenReviewSpec] (val x: Self) extends AnyVal {
+      extension [Self <: TokenReviewSpec](x: Self) {
         
-        @scala.inline
-        def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+        inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+        inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       }
     }
     
@@ -348,29 +308,22 @@ object authentication {
     }
     object TokenReviewStatus {
       
-      @scala.inline
-      def apply(audiences: js.Array[String], authenticated: Boolean, error: String, user: UserInfo): TokenReviewStatus = {
+      inline def apply(audiences: js.Array[String], authenticated: Boolean, error: String, user: UserInfo): TokenReviewStatus = {
         val __obj = js.Dynamic.literal(audiences = audiences.asInstanceOf[js.Any], authenticated = authenticated.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
         __obj.asInstanceOf[TokenReviewStatus]
       }
       
-      @scala.inline
-      implicit class TokenReviewStatusMutableBuilder[Self <: TokenReviewStatus] (val x: Self) extends AnyVal {
+      extension [Self <: TokenReviewStatus](x: Self) {
         
-        @scala.inline
-        def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+        inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+        inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
         
-        @scala.inline
-        def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
+        inline def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       }
     }
     
@@ -401,29 +354,22 @@ object authentication {
     }
     object UserInfo {
       
-      @scala.inline
-      def apply(extra: StringDictionary[js.Array[String]], groups: js.Array[String], uid: String, username: String): UserInfo = {
+      inline def apply(extra: StringDictionary[js.Array[String]], groups: js.Array[String], uid: String, username: String): UserInfo = {
         val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
         __obj.asInstanceOf[UserInfo]
       }
       
-      @scala.inline
-      implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+      extension [Self <: UserInfo](x: Self) {
         
-        @scala.inline
-        def setExtra(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+        inline def setExtra(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+        inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
         
-        @scala.inline
-        def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       }
     }
   }

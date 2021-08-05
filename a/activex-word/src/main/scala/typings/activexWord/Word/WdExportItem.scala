@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdExportItem extends StObject
 object WdExportItem {
   
-  @scala.inline
-  def wdExportDocumentContent: `0` = 0.asInstanceOf[`0`]
+  inline def wdExportDocumentContent: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdExportDocumentWithMarkup: `7` = 7.asInstanceOf[`7`]
+  inline def wdExportDocumentWithMarkup: `7` = 7.asInstanceOf[`7`]
 }

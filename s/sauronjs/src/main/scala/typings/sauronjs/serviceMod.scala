@@ -28,20 +28,16 @@ object serviceMod {
   }
   object Service {
     
-    @scala.inline
-    def apply(broadcast: (String, js.Any) => Unit, broadcastSubject: js.Any): Service = {
+    inline def apply(broadcast: (String, js.Any) => Unit, broadcastSubject: js.Any): Service = {
       val __obj = js.Dynamic.literal(broadcast = js.Any.fromFunction2(broadcast), broadcastSubject = broadcastSubject.asInstanceOf[js.Any])
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setBroadcast(value: (String, js.Any) => Unit): Self = StObject.set(x, "broadcast", js.Any.fromFunction2(value))
+      inline def setBroadcast(value: (String, js.Any) => Unit): Self = StObject.set(x, "broadcast", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBroadcastSubject(value: js.Any): Self = StObject.set(x, "broadcastSubject", value.asInstanceOf[js.Any])
+      inline def setBroadcastSubject(value: js.Any): Self = StObject.set(x, "broadcastSubject", value.asInstanceOf[js.Any])
     }
   }
 }

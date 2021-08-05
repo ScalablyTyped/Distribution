@@ -13,19 +13,15 @@ trait GenerateOrganizationsAccessReportResponse extends StObject {
 }
 object GenerateOrganizationsAccessReportResponse {
   
-  @scala.inline
-  def apply(): GenerateOrganizationsAccessReportResponse = {
+  inline def apply(): GenerateOrganizationsAccessReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateOrganizationsAccessReportResponse]
   }
   
-  @scala.inline
-  implicit class GenerateOrganizationsAccessReportResponseMutableBuilder[Self <: GenerateOrganizationsAccessReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateOrganizationsAccessReportResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

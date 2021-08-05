@@ -8,11 +8,9 @@ object storybookChannelPostmessageStrings {
   
   @js.native
   sealed trait manager extends StObject
-  @scala.inline
-  def manager: manager = "manager".asInstanceOf[manager]
+  inline def manager: manager = "manager".asInstanceOf[manager]
   
   @js.native
   sealed trait preview extends StObject
-  @scala.inline
-  def preview: preview = "preview".asInstanceOf[preview]
+  inline def preview: preview = "preview".asInstanceOf[preview]
 }

@@ -12,19 +12,15 @@ trait EventBindable extends StObject {
 }
 object EventBindable {
   
-  @scala.inline
-  def apply(off: (String, EventCallback) => Unit, on: (String, EventCallback) => Unit): EventBindable = {
+  inline def apply(off: (String, EventCallback) => Unit, on: (String, EventCallback) => Unit): EventBindable = {
     val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on))
     __obj.asInstanceOf[EventBindable]
   }
   
-  @scala.inline
-  implicit class EventBindableMutableBuilder[Self <: EventBindable] (val x: Self) extends AnyVal {
+  extension [Self <: EventBindable](x: Self) {
     
-    @scala.inline
-    def setOff(value: (String, EventCallback) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, EventCallback) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (String, EventCallback) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, EventCallback) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

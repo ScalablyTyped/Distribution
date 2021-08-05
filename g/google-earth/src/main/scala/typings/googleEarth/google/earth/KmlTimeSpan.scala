@@ -22,8 +22,7 @@ trait KmlTimeSpan
 }
 object KmlTimeSpan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -46,13 +45,10 @@ object KmlTimeSpan {
     __obj.asInstanceOf[KmlTimeSpan]
   }
   
-  @scala.inline
-  implicit class KmlTimeSpanMutableBuilder[Self <: KmlTimeSpan] (val x: Self) extends AnyVal {
+  extension [Self <: KmlTimeSpan](x: Self) {
     
-    @scala.inline
-    def setGetBegin(value: () => KmlDateTime): Self = StObject.set(x, "getBegin", js.Any.fromFunction0(value))
+    inline def setGetBegin(value: () => KmlDateTime): Self = StObject.set(x, "getBegin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnd(value: () => KmlDateTime): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => KmlDateTime): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineCapType extends StObject
 object LineCapType {
   
-  @scala.inline
-  def butt: typings.reactNativeMaps.reactNativeMapsStrings.butt = "butt".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.butt]
+  inline def butt: typings.reactNativeMaps.reactNativeMapsStrings.butt = "butt".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.butt]
   
-  @scala.inline
-  def round: typings.reactNativeMaps.reactNativeMapsStrings.round = "round".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.round]
+  inline def round: typings.reactNativeMaps.reactNativeMapsStrings.round = "round".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.round]
   
-  @scala.inline
-  def square: typings.reactNativeMaps.reactNativeMapsStrings.square = "square".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.square]
+  inline def square: typings.reactNativeMaps.reactNativeMapsStrings.square = "square".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.square]
 }

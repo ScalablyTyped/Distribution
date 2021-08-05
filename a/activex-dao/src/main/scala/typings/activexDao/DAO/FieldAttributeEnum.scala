@@ -21,24 +21,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldAttributeEnum extends StObject
 object FieldAttributeEnum {
   
-  @scala.inline
-  def dbAutoIncrField: `16` = 16.asInstanceOf[`16`]
+  inline def dbAutoIncrField: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def dbDescending: `1` = 1.asInstanceOf[`1`]
+  inline def dbDescending: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbFixedField: `1` = 1.asInstanceOf[`1`]
+  inline def dbFixedField: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbHyperlinkField: `32768` = 32768.asInstanceOf[`32768`]
+  inline def dbHyperlinkField: `32768` = 32768.asInstanceOf[`32768`]
   
-  @scala.inline
-  def dbSystemField: `8192` = 8192.asInstanceOf[`8192`]
+  inline def dbSystemField: `8192` = 8192.asInstanceOf[`8192`]
   
-  @scala.inline
-  def dbUpdatableField: `32` = 32.asInstanceOf[`32`]
+  inline def dbUpdatableField: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def dbVariableField: `2` = 2.asInstanceOf[`2`]
+  inline def dbVariableField: `2` = 2.asInstanceOf[`2`]
 }

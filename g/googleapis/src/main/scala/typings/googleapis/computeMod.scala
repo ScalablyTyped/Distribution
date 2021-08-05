@@ -38,8 +38,7 @@ object computeMod {
     @JSImport("googleapis/build/src/apis/compute", "VERSIONS.alpha")
     @js.native
     def alpha: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Compute] = js.native
-    @scala.inline
-    def alpha_=(
+    inline def alpha_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Compute]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alpha")(x.asInstanceOf[js.Any])
     
@@ -58,8 +57,7 @@ object computeMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.betaMod.computeBeta.Compute
       ] = js.native
-    @scala.inline
-    def beta_=(
+    inline def beta_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -82,8 +80,7 @@ object computeMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.computeV1Mod.computeV1.Compute
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -125,8 +122,7 @@ object computeMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -170,19 +166,13 @@ object computeMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def compute(options: Options): Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[Compute]
-  @scala.inline
-  def compute(options: typings.googleapis.betaMod.computeBeta.Options): typings.googleapis.betaMod.computeBeta.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.betaMod.computeBeta.Compute]
-  @scala.inline
-  def compute(options: typings.googleapis.computeV1Mod.computeV1.Options): typings.googleapis.computeV1Mod.computeV1.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.computeV1Mod.computeV1.Compute]
+  inline def compute(options: Options): Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[Compute]
+  inline def compute(options: typings.googleapis.betaMod.computeBeta.Options): typings.googleapis.betaMod.computeBeta.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.betaMod.computeBeta.Compute]
+  inline def compute(options: typings.googleapis.computeV1Mod.computeV1.Options): typings.googleapis.computeV1Mod.computeV1.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.computeV1Mod.computeV1.Compute]
   
-  @scala.inline
-  def compute_alpha(version: alpha): Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[Compute]
+  inline def compute_alpha(version: alpha): Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[Compute]
   
-  @scala.inline
-  def compute_beta(version: beta): typings.googleapis.betaMod.computeBeta.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.betaMod.computeBeta.Compute]
+  inline def compute_beta(version: beta): typings.googleapis.betaMod.computeBeta.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.betaMod.computeBeta.Compute]
   
-  @scala.inline
-  def compute_v1(version: v1): typings.googleapis.computeV1Mod.computeV1.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.computeV1Mod.computeV1.Compute]
+  inline def compute_v1(version: v1): typings.googleapis.computeV1Mod.computeV1.Compute = ^.asInstanceOf[js.Dynamic].applyDynamic("compute")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.computeV1Mod.computeV1.Compute]
 }

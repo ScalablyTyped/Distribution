@@ -8,8 +8,7 @@ object esmIsValidMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(date: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("date-fns/esm/isValid", JSImport.Default)
     @js.native

@@ -35,25 +35,19 @@ trait SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination extends StObject {
 }
 object SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination = {
+  inline def apply(): SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1beta1DicomGcsDestinationMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination](x: Self) {
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
+    inline def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
+    inline def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
   }
 }

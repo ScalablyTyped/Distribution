@@ -12,10 +12,8 @@ object getProductMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProduct(args: GetProductArgs): js.Promise[GetProductResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProduct")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetProductResult]]
-  @scala.inline
-  def getProduct(args: GetProductArgs, opts: InvokeOptions): js.Promise[GetProductResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProduct")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetProductResult]]
+  inline def getProduct(args: GetProductArgs): js.Promise[GetProductResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProduct")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetProductResult]]
+  inline def getProduct(args: GetProductArgs, opts: InvokeOptions): js.Promise[GetProductResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProduct")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetProductResult]]
   
   trait GetProductArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getProductMod {
   }
   object GetProductArgs {
     
-    @scala.inline
-    def apply(filters: js.Array[GetProductFilter], serviceCode: String): GetProductArgs = {
+    inline def apply(filters: js.Array[GetProductFilter], serviceCode: String): GetProductArgs = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], serviceCode = serviceCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetProductArgs]
     }
     
-    @scala.inline
-    implicit class GetProductArgsMutableBuilder[Self <: GetProductArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetProductArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetProductFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetProductFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersVarargs(value: GetProductFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetProductFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,8 +62,7 @@ object getProductMod {
   }
   object GetProductResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filters: js.Array[typings.pulumiAws.outputMod.pricing.GetProductFilter],
       id: String,
       result: String,
@@ -80,23 +72,17 @@ object getProductMod {
       __obj.asInstanceOf[GetProductResult]
     }
     
-    @scala.inline
-    implicit class GetProductResultMutableBuilder[Self <: GetProductResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetProductResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.pricing.GetProductFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.pricing.GetProductFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.pricing.GetProductFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.pricing.GetProductFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     }
   }
 }

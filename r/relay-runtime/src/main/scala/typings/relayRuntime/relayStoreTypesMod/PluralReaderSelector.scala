@@ -14,22 +14,17 @@ trait PluralReaderSelector
 }
 object PluralReaderSelector {
   
-  @scala.inline
-  def apply(kind: String, selectors: js.Array[SingularReaderSelector]): PluralReaderSelector = {
+  inline def apply(kind: String, selectors: js.Array[SingularReaderSelector]): PluralReaderSelector = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralReaderSelector]
   }
   
-  @scala.inline
-  implicit class PluralReaderSelectorMutableBuilder[Self <: PluralReaderSelector] (val x: Self) extends AnyVal {
+  extension [Self <: PluralReaderSelector](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectors(value: js.Array[SingularReaderSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[SingularReaderSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsVarargs(value: SingularReaderSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: SingularReaderSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

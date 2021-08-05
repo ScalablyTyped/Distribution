@@ -18,9 +18,7 @@ object darkBaseThemeMod {
   @JSImport("material-ui/styles/baseThemes/darkBaseTheme", "darkBaseTheme")
   @js.native
   def darkBaseTheme: RawTheme = js.native
-  @scala.inline
-  def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
+  inline def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

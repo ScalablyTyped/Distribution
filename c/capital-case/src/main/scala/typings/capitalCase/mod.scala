@@ -11,11 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def capitalCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def capitalCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("capitalCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def capitalCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def capitalCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("capitalCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def capitalCaseTransform(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalCaseTransform")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def capitalCaseTransform(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalCaseTransform")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

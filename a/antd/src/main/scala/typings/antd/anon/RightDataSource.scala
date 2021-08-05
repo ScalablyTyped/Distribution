@@ -14,25 +14,19 @@ trait RightDataSource[RecordType /* <: TransferItem */] extends StObject {
 }
 object RightDataSource {
   
-  @scala.inline
-  def apply[RecordType /* <: TransferItem */](leftDataSource: js.Array[KeyWise[RecordType]], rightDataSource: js.Array[KeyWise[RecordType]]): RightDataSource[RecordType] = {
+  inline def apply[RecordType /* <: TransferItem */](leftDataSource: js.Array[KeyWise[RecordType]], rightDataSource: js.Array[KeyWise[RecordType]]): RightDataSource[RecordType] = {
     val __obj = js.Dynamic.literal(leftDataSource = leftDataSource.asInstanceOf[js.Any], rightDataSource = rightDataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightDataSource[RecordType]]
   }
   
-  @scala.inline
-  implicit class RightDataSourceMutableBuilder[Self <: RightDataSource[?], RecordType /* <: TransferItem */] (val x: Self & RightDataSource[RecordType]) extends AnyVal {
+  extension [Self <: RightDataSource[?], RecordType /* <: TransferItem */](x: Self & RightDataSource[RecordType]) {
     
-    @scala.inline
-    def setLeftDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])
+    inline def setLeftDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "leftDataSource", js.Array(value :_*))
+    inline def setLeftDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "leftDataSource", js.Array(value :_*))
     
-    @scala.inline
-    def setRightDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "rightDataSource", value.asInstanceOf[js.Any])
+    inline def setRightDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "rightDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "rightDataSource", js.Array(value :_*))
+    inline def setRightDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "rightDataSource", js.Array(value :_*))
   }
 }

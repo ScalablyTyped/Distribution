@@ -19,26 +19,20 @@ object codepipelineMod {
   }
   object Artifact {
     
-    @scala.inline
-    def apply(location: ArtifactLocation, name: String): Artifact = {
+    inline def apply(location: ArtifactLocation, name: String): Artifact = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], revision = null)
       __obj.asInstanceOf[Artifact]
     }
     
-    @scala.inline
-    implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+    extension [Self <: Artifact](x: Self) {
       
-      @scala.inline
-      def setLocation(value: ArtifactLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: ArtifactLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionNull: Self = StObject.set(x, "revision", null)
+      inline def setRevisionNull: Self = StObject.set(x, "revision", null)
     }
   }
   
@@ -51,18 +45,15 @@ object codepipelineMod {
   }
   object CodePipelineEvent {
     
-    @scala.inline
-    def apply(CodePipelineDotjob: Data): CodePipelineEvent = {
+    inline def apply(CodePipelineDotjob: Data): CodePipelineEvent = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("CodePipeline.job")(CodePipelineDotjob.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodePipelineEvent]
     }
     
-    @scala.inline
-    implicit class CodePipelineEventMutableBuilder[Self <: CodePipelineEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CodePipelineEvent](x: Self) {
       
-      @scala.inline
-      def setCodePipelineDotjob(value: Data): Self = StObject.set(x, "CodePipeline.job", value.asInstanceOf[js.Any])
+      inline def setCodePipelineDotjob(value: Data): Self = StObject.set(x, "CodePipeline.job", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,26 +69,20 @@ object codepipelineMod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(accessKeyId: String, secretAccessKey: String): Credentials = {
+    inline def apply(accessKeyId: String, secretAccessKey: String): Credentials = {
       val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], secretAccessKey = secretAccessKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     }
   }
   
@@ -109,21 +94,17 @@ object codepipelineMod {
   }
   object EncryptionKey {
     
-    @scala.inline
-    def apply(id: String, `type`: String): EncryptionKey = {
+    inline def apply(id: String, `type`: String): EncryptionKey = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncryptionKey]
     }
     
-    @scala.inline
-    implicit class EncryptionKeyMutableBuilder[Self <: EncryptionKey] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionKey](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,20 +116,16 @@ object codepipelineMod {
   }
   object S3ArtifactLocation {
     
-    @scala.inline
-    def apply(bucketName: String, objectKey: String): S3ArtifactLocation = {
+    inline def apply(bucketName: String, objectKey: String): S3ArtifactLocation = {
       val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], objectKey = objectKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3ArtifactLocation]
     }
     
-    @scala.inline
-    implicit class S3ArtifactLocationMutableBuilder[Self <: S3ArtifactLocation] (val x: Self) extends AnyVal {
+    extension [Self <: S3ArtifactLocation](x: Self) {
       
-      @scala.inline
-      def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectKey(value: String): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
+      inline def setObjectKey(value: String): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,21 +137,17 @@ object codepipelineMod {
   }
   object S3ArtifactStore {
     
-    @scala.inline
-    def apply(s3Location: S3ArtifactLocation): S3ArtifactStore = {
+    inline def apply(s3Location: S3ArtifactLocation): S3ArtifactStore = {
       val __obj = js.Dynamic.literal(s3Location = s3Location.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("S3")
       __obj.asInstanceOf[S3ArtifactStore]
     }
     
-    @scala.inline
-    implicit class S3ArtifactStoreMutableBuilder[Self <: S3ArtifactStore] (val x: Self) extends AnyVal {
+    extension [Self <: S3ArtifactStore](x: Self) {
       
-      @scala.inline
-      def setS3Location(value: S3ArtifactLocation): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
+      inline def setS3Location(value: S3ArtifactLocation): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: S3): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: S3): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

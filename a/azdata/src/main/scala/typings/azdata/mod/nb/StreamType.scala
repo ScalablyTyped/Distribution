@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamType extends StObject
 object StreamType {
   
-  @scala.inline
-  def stderr: typings.azdata.azdataStrings.stderr = "stderr".asInstanceOf[typings.azdata.azdataStrings.stderr]
+  inline def stderr: typings.azdata.azdataStrings.stderr = "stderr".asInstanceOf[typings.azdata.azdataStrings.stderr]
   
-  @scala.inline
-  def stdout: typings.azdata.azdataStrings.stdout = "stdout".asInstanceOf[typings.azdata.azdataStrings.stdout]
+  inline def stdout: typings.azdata.azdataStrings.stdout = "stdout".asInstanceOf[typings.azdata.azdataStrings.stdout]
 }

@@ -598,30 +598,23 @@ object mod {
   }
   object BarCode {
     
-    @scala.inline
-    def apply(buffer: Buffer, data: String, points: js.Array[Point], `type`: String): BarCode = {
+    inline def apply(buffer: Buffer, data: String, points: js.Array[Point], `type`: String): BarCode = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BarCode]
     }
     
-    @scala.inline
-    implicit class BarCodeMutableBuilder[Self <: BarCode] (val x: Self) extends AnyVal {
+    extension [Self <: BarCode](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -651,8 +644,7 @@ object mod {
   }
   object Barcodeformat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AZTEC: Boolean,
       CODE_128: Boolean,
       CODE_39: Boolean,
@@ -669,41 +661,29 @@ object mod {
       __obj.asInstanceOf[Barcodeformat]
     }
     
-    @scala.inline
-    implicit class BarcodeformatMutableBuilder[Self <: Barcodeformat] (val x: Self) extends AnyVal {
+    extension [Self <: Barcodeformat](x: Self) {
       
-      @scala.inline
-      def setAZTEC(value: Boolean): Self = StObject.set(x, "AZTEC", value.asInstanceOf[js.Any])
+      inline def setAZTEC(value: Boolean): Self = StObject.set(x, "AZTEC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCODE_128(value: Boolean): Self = StObject.set(x, "CODE_128", value.asInstanceOf[js.Any])
+      inline def setCODE_128(value: Boolean): Self = StObject.set(x, "CODE_128", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCODE_39(value: Boolean): Self = StObject.set(x, "CODE_39", value.asInstanceOf[js.Any])
+      inline def setCODE_39(value: Boolean): Self = StObject.set(x, "CODE_39", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDATA_MATRIX(value: Boolean): Self = StObject.set(x, "DATA_MATRIX", value.asInstanceOf[js.Any])
+      inline def setDATA_MATRIX(value: Boolean): Self = StObject.set(x, "DATA_MATRIX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEAN_13(value: Boolean): Self = StObject.set(x, "EAN_13", value.asInstanceOf[js.Any])
+      inline def setEAN_13(value: Boolean): Self = StObject.set(x, "EAN_13", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEAN_8(value: Boolean): Self = StObject.set(x, "EAN_8", value.asInstanceOf[js.Any])
+      inline def setEAN_8(value: Boolean): Self = StObject.set(x, "EAN_8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setITF(value: Boolean): Self = StObject.set(x, "ITF", value.asInstanceOf[js.Any])
+      inline def setITF(value: Boolean): Self = StObject.set(x, "ITF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPDF_417(value: Boolean): Self = StObject.set(x, "PDF_417", value.asInstanceOf[js.Any])
+      inline def setPDF_417(value: Boolean): Self = StObject.set(x, "PDF_417", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQR_CODE(value: Boolean): Self = StObject.set(x, "QR_CODE", value.asInstanceOf[js.Any])
+      inline def setQR_CODE(value: Boolean): Self = StObject.set(x, "QR_CODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPC_A(value: Boolean): Self = StObject.set(x, "UPC_A", value.asInstanceOf[js.Any])
+      inline def setUPC_A(value: Boolean): Self = StObject.set(x, "UPC_A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPC_E(value: Boolean): Self = StObject.set(x, "UPC_E", value.asInstanceOf[js.Any])
+      inline def setUPC_E(value: Boolean): Self = StObject.set(x, "UPC_E", value.asInstanceOf[js.Any])
     }
   }
   
@@ -719,26 +699,20 @@ object mod {
   }
   object Box {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Box = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Box = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Box]
     }
     
-    @scala.inline
-    implicit class BoxMutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
+    extension [Self <: Box](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -750,20 +724,16 @@ object mod {
   }
   object Choice {
     
-    @scala.inline
-    def apply(confidence: Double, text: String): Choice = {
+    inline def apply(confidence: Double, text: String): Choice = {
       val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Choice]
     }
     
-    @scala.inline
-    implicit class ChoiceMutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
+    extension [Self <: Choice](x: Self) {
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -779,26 +749,20 @@ object mod {
   }
   object Component {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Component = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Component = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Component]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+    extension [Self <: Component](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -812,20 +776,16 @@ object mod {
   }
   object Point {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Point = {
+    inline def apply(x: Double, y: Double): Point = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -841,26 +801,20 @@ object mod {
   }
   object Rect {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Rect = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Rect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -874,23 +828,18 @@ object mod {
   }
   object Region {
     
-    @scala.inline
-    def apply(box: Box, confidence: Double, text: String): Region = {
+    inline def apply(box: Box, confidence: Double, text: String): Region = {
       val __obj = js.Dynamic.literal(box = box.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Region]
     }
     
-    @scala.inline
-    implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+    extension [Self <: Region](x: Self) {
       
-      @scala.inline
-      def setBox(value: Box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+      inline def setBox(value: Box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -904,23 +853,18 @@ object mod {
   }
   object Segment {
     
-    @scala.inline
-    def apply(error: Double, p1: Point, p2: Point): Segment = {
+    inline def apply(error: Double, p1: Point, p2: Point): Segment = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any])
       __obj.asInstanceOf[Segment]
     }
     
-    @scala.inline
-    implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
+    extension [Self <: Segment](x: Self) {
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP1(value: Point): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: Point): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP2(value: Point): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      inline def setP2(value: Point): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -932,20 +876,16 @@ object mod {
   }
   object Skew {
     
-    @scala.inline
-    def apply(angle: Double, confidence: Double): Skew = {
+    inline def apply(angle: Double, confidence: Double): Skew = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any])
       __obj.asInstanceOf[Skew]
     }
     
-    @scala.inline
-    implicit class SkewMutableBuilder[Self <: Skew] (val x: Self) extends AnyVal {
+    extension [Self <: Skew](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     }
   }
   
@@ -957,20 +897,16 @@ object mod {
   }
   object Symbol {
     
-    @scala.inline
-    def apply(box: Box, choices: js.Array[Choice], confidence: Double, text: String): Symbol = {
+    inline def apply(box: Box, choices: js.Array[Choice], confidence: Double, text: String): Symbol = {
       val __obj = js.Dynamic.literal(box = box.asInstanceOf[js.Any], choices = choices.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Symbol]
     }
     
-    @scala.inline
-    implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+    extension [Self <: Symbol](x: Self) {
       
-      @scala.inline
-      def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
     }
   }
   
@@ -982,17 +918,14 @@ object mod {
   }
   object Textline {
     
-    @scala.inline
-    def apply(box: Box): Textline = {
+    inline def apply(box: Box): Textline = {
       val __obj = js.Dynamic.literal(box = box.asInstanceOf[js.Any])
       __obj.asInstanceOf[Textline]
     }
     
-    @scala.inline
-    implicit class TextlineMutableBuilder[Self <: Textline] (val x: Self) extends AnyVal {
+    extension [Self <: Textline](x: Self) {
       
-      @scala.inline
-      def setBox(value: Box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+      inline def setBox(value: Box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     }
   }
   

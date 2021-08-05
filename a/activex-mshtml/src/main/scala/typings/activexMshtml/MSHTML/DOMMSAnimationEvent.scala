@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DOMMSAnimationEvent extends StObject {
   
-  @JSName("MSHTML.DOMMSAnimationEvent_typekey")
+  /* private */ @JSName("MSHTML.DOMMSAnimationEvent_typekey")
   var MSHTMLDotDOMMSAnimationEvent_typekey: DOMMSAnimationEvent
   
   val animationName: String
@@ -53,8 +53,7 @@ trait DOMMSAnimationEvent extends StObject {
 }
 object DOMMSAnimationEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotDOMMSAnimationEvent_typekey: DOMMSAnimationEvent,
     animationName: String,
     bubbles: Boolean,
@@ -81,64 +80,44 @@ object DOMMSAnimationEvent {
     __obj.asInstanceOf[DOMMSAnimationEvent]
   }
   
-  @scala.inline
-  implicit class DOMMSAnimationEventMutableBuilder[Self <: DOMMSAnimationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DOMMSAnimationEvent](x: Self) {
     
-    @scala.inline
-    def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+    inline def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
+    inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTarget(value: IEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: IEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+    inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
+    inline def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInitMSAnimationEvent(value: (String, Boolean, Boolean, String, Double) => Unit): Self = StObject.set(x, "initMSAnimationEvent", js.Any.fromFunction5(value))
+    inline def setInitMSAnimationEvent(value: (String, Boolean, Boolean, String, Double) => Unit): Self = StObject.set(x, "initMSAnimationEvent", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+    inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotDOMMSAnimationEvent_typekey(value: DOMMSAnimationEvent): Self = StObject.set(x, "MSHTML.DOMMSAnimationEvent_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotDOMMSAnimationEvent_typekey(value: DOMMSAnimationEvent): Self = StObject.set(x, "MSHTML.DOMMSAnimationEvent_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
+    inline def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+    inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: IEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: IEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

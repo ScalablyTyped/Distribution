@@ -23,11 +23,11 @@ object mod extends Shortcut {
       */
     def this(options: IRendererOptions) = this()
     
-    var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: js.Any = js.native
     
-    var _resolver: js.Any = js.native
+    /* private */ var _resolver: js.Any = js.native
     
-    var _result: js.Any = js.native
+    /* private */ var _result: js.Any = js.native
   }
   
   @JSImport("@jupyterlab/vega5-extension", "VEGALITE3_MIME_TYPE")

@@ -18,43 +18,31 @@ trait ConstrainDragToContainer extends StObject {
 }
 object ConstrainDragToContainer {
   
-  @scala.inline
-  def apply(): ConstrainDragToContainer = {
+  inline def apply(): ConstrainDragToContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstrainDragToContainer]
   }
   
-  @scala.inline
-  implicit class ConstrainDragToContainerMutableBuilder[Self <: ConstrainDragToContainer] (val x: Self) extends AnyVal {
+  extension [Self <: ConstrainDragToContainer](x: Self) {
     
-    @scala.inline
-    def setConstrainDragToContainer(value: Boolean): Self = StObject.set(x, "constrainDragToContainer", value.asInstanceOf[js.Any])
+    inline def setConstrainDragToContainer(value: Boolean): Self = StObject.set(x, "constrainDragToContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainDragToContainerUndefined: Self = StObject.set(x, "constrainDragToContainer", js.undefined)
+    inline def setConstrainDragToContainerUndefined: Self = StObject.set(x, "constrainDragToContainer", js.undefined)
     
-    @scala.inline
-    def setPopoutWholeStack(value: Boolean): Self = StObject.set(x, "popoutWholeStack", value.asInstanceOf[js.Any])
+    inline def setPopoutWholeStack(value: Boolean): Self = StObject.set(x, "popoutWholeStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoutWholeStackUndefined: Self = StObject.set(x, "popoutWholeStack", js.undefined)
+    inline def setPopoutWholeStackUndefined: Self = StObject.set(x, "popoutWholeStack", js.undefined)
     
-    @scala.inline
-    def setShowCloseIcon(value: Boolean): Self = StObject.set(x, "showCloseIcon", value.asInstanceOf[js.Any])
+    inline def setShowCloseIcon(value: Boolean): Self = StObject.set(x, "showCloseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCloseIconUndefined: Self = StObject.set(x, "showCloseIcon", js.undefined)
+    inline def setShowCloseIconUndefined: Self = StObject.set(x, "showCloseIcon", js.undefined)
     
-    @scala.inline
-    def setShowMaximiseIcon(value: Boolean): Self = StObject.set(x, "showMaximiseIcon", value.asInstanceOf[js.Any])
+    inline def setShowMaximiseIcon(value: Boolean): Self = StObject.set(x, "showMaximiseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMaximiseIconUndefined: Self = StObject.set(x, "showMaximiseIcon", js.undefined)
+    inline def setShowMaximiseIconUndefined: Self = StObject.set(x, "showMaximiseIcon", js.undefined)
     
-    @scala.inline
-    def setShowPopoutIcon(value: Boolean): Self = StObject.set(x, "showPopoutIcon", value.asInstanceOf[js.Any])
+    inline def setShowPopoutIcon(value: Boolean): Self = StObject.set(x, "showPopoutIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPopoutIconUndefined: Self = StObject.set(x, "showPopoutIcon", js.undefined)
+    inline def setShowPopoutIconUndefined: Self = StObject.set(x, "showPopoutIcon", js.undefined)
   }
 }

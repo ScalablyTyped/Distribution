@@ -41,44 +41,32 @@ object dialogFooterTypesMod {
   }
   object IDialogFooterProps {
     
-    @scala.inline
-    def apply(): IDialogFooterProps = {
+    inline def apply(): IDialogFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDialogFooterProps]
     }
     
-    @scala.inline
-    implicit class IDialogFooterPropsMutableBuilder[Self <: IDialogFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDialogFooterProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IDialogFooter]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IDialogFooter]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IDialogFooter | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IDialogFooter | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IDialogFooterStyleProps, IDialogFooterStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IDialogFooterStyleProps, IDialogFooterStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IDialogFooterStyleProps => DeepPartial[IDialogFooterStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IDialogFooterStyleProps => DeepPartial[IDialogFooterStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -96,23 +84,18 @@ object dialogFooterTypesMod {
   }
   object IDialogFooterStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IDialogFooterStyleProps = {
+    inline def apply(theme: ITheme): IDialogFooterStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDialogFooterStyleProps]
     }
     
-    @scala.inline
-    implicit class IDialogFooterStylePropsMutableBuilder[Self <: IDialogFooterStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDialogFooterStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,41 +112,30 @@ object dialogFooterTypesMod {
   }
   object IDialogFooterStyles {
     
-    @scala.inline
-    def apply(): IDialogFooterStyles = {
+    inline def apply(): IDialogFooterStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDialogFooterStyles]
     }
     
-    @scala.inline
-    implicit class IDialogFooterStylesMutableBuilder[Self <: IDialogFooterStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDialogFooterStyles](x: Self) {
       
-      @scala.inline
-      def setAction(value: IStyle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: IStyle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionNull: Self = StObject.set(x, "action", null)
+      inline def setActionNull: Self = StObject.set(x, "action", null)
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setActions(value: IStyle): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: IStyle): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsNull: Self = StObject.set(x, "actions", null)
+      inline def setActionsNull: Self = StObject.set(x, "actions", null)
       
-      @scala.inline
-      def setActionsRight(value: IStyle): Self = StObject.set(x, "actionsRight", value.asInstanceOf[js.Any])
+      inline def setActionsRight(value: IStyle): Self = StObject.set(x, "actionsRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsRightNull: Self = StObject.set(x, "actionsRight", null)
+      inline def setActionsRightNull: Self = StObject.set(x, "actionsRight", null)
       
-      @scala.inline
-      def setActionsRightUndefined: Self = StObject.set(x, "actionsRight", js.undefined)
+      inline def setActionsRightUndefined: Self = StObject.set(x, "actionsRight", js.undefined)
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     }
   }
 }

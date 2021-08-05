@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamType extends StObject
 object StreamType {
   
-  @scala.inline
-  def stderr: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stderr = "stderr".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stderr]
+  inline def stderr: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stderr = "stderr".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stderr]
   
-  @scala.inline
-  def stdout: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stdout = "stdout".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stdout]
+  inline def stdout: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stdout = "stdout".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stdout]
 }

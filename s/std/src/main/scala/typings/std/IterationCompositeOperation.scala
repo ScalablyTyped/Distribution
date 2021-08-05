@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IterationCompositeOperation extends StObject
 object IterationCompositeOperation {
   
-  @scala.inline
-  def accumulate: typings.std.stdStrings.accumulate = "accumulate".asInstanceOf[typings.std.stdStrings.accumulate]
+  inline def accumulate: typings.std.stdStrings.accumulate = "accumulate".asInstanceOf[typings.std.stdStrings.accumulate]
   
-  @scala.inline
-  def replace: typings.std.stdStrings.replace = "replace".asInstanceOf[typings.std.stdStrings.replace]
+  inline def replace: typings.std.stdStrings.replace = "replace".asInstanceOf[typings.std.stdStrings.replace]
 }

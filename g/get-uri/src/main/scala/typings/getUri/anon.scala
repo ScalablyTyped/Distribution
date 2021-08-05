@@ -28,20 +28,16 @@ object anon {
   }
   object Cache {
     
-    @scala.inline
-    def apply(): Cache = {
+    inline def apply(): Cache = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cache]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+    extension [Self <: Cache](x: Self) {
       
-      @scala.inline
-      def setCache(value: FileReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: FileReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
   

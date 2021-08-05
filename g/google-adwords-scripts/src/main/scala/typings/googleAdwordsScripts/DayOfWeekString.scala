@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DayOfWeekString extends StObject
 object DayOfWeekString {
   
-  @scala.inline
-  def FRIDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FRIDAY = "FRIDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FRIDAY]
+  inline def FRIDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FRIDAY = "FRIDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FRIDAY]
   
-  @scala.inline
-  def MONDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MONDAY = "MONDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MONDAY]
+  inline def MONDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MONDAY = "MONDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MONDAY]
   
-  @scala.inline
-  def SATURDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY = "SATURDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY]
+  inline def SATURDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY = "SATURDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY]
   
-  @scala.inline
-  def SUNDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY = "SUNDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY]
+  inline def SUNDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY = "SUNDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY]
   
-  @scala.inline
-  def THURSDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.THURSDAY = "THURSDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.THURSDAY]
+  inline def THURSDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.THURSDAY = "THURSDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.THURSDAY]
   
-  @scala.inline
-  def TUESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TUESDAY = "TUESDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TUESDAY]
+  inline def TUESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TUESDAY = "TUESDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TUESDAY]
   
-  @scala.inline
-  def WEDNESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.WEDNESDAY = "WEDNESDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.WEDNESDAY]
+  inline def WEDNESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.WEDNESDAY = "WEDNESDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.WEDNESDAY]
 }

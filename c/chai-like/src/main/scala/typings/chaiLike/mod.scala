@@ -34,21 +34,17 @@ object mod extends Shortcut {
     }
     object Plugin {
       
-      @scala.inline
-      def apply(assert: (js.Any, js.Any) => Boolean, `match`: (js.Any, js.Any) => Boolean): Plugin = {
+      inline def apply(assert: (js.Any, js.Any) => Boolean, `match`: (js.Any, js.Any) => Boolean): Plugin = {
         val __obj = js.Dynamic.literal(assert = js.Any.fromFunction2(assert))
         __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
         __obj.asInstanceOf[Plugin]
       }
       
-      @scala.inline
-      implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+      extension [Self <: Plugin](x: Self) {
         
-        @scala.inline
-        def setAssert(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
+        inline def setAssert(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setMatch(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+        inline def setMatch(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       }
     }
   }

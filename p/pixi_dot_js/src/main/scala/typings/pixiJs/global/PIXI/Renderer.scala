@@ -38,6 +38,5 @@ object Renderer {
     * @param {Function} ctor - The constructor function or class for the plugin.
     */
   /* static member */
-  @scala.inline
-  def registerPlugin(pluginName: String, ctor: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginName.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerPlugin(pluginName: String, ctor: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginName.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

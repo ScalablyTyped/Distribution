@@ -40,10 +40,8 @@ object rebaseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def init(repo: Repository, branch: AnnotatedCommit, upstream: AnnotatedCommit, onto: AnnotatedCommit): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
-    @scala.inline
-    def init(
+    inline def init(repo: Repository, branch: AnnotatedCommit, upstream: AnnotatedCommit, onto: AnnotatedCommit): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
+    inline def init(
       repo: Repository,
       branch: AnnotatedCommit,
       upstream: AnnotatedCommit,
@@ -51,13 +49,10 @@ object rebaseMod {
       opts: RebaseOptions
     ): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
     
-    @scala.inline
-    def initOptions(opts: RebaseOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def initOptions(opts: RebaseOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def open(repo: Repository): js.Promise[Rebase] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Rebase]]
-    @scala.inline
-    def open(repo: Repository, opts: RebaseOptions): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
+    inline def open(repo: Repository): js.Promise[Rebase] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Rebase]]
+    inline def open(repo: Repository, opts: RebaseOptions): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
   }
   
   trait RebaseOptions extends StObject {
@@ -72,26 +67,20 @@ object rebaseMod {
   }
   object RebaseOptions {
     
-    @scala.inline
-    def apply(checkoutOptions: CheckoutOptions, quiet: Double, rewriteNotesRef: String, version: Double): RebaseOptions = {
+    inline def apply(checkoutOptions: CheckoutOptions, quiet: Double, rewriteNotesRef: String, version: Double): RebaseOptions = {
       val __obj = js.Dynamic.literal(checkoutOptions = checkoutOptions.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], rewriteNotesRef = rewriteNotesRef.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[RebaseOptions]
     }
     
-    @scala.inline
-    implicit class RebaseOptionsMutableBuilder[Self <: RebaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RebaseOptions](x: Self) {
       
-      @scala.inline
-      def setCheckoutOptions(value: CheckoutOptions): Self = StObject.set(x, "checkoutOptions", value.asInstanceOf[js.Any])
+      inline def setCheckoutOptions(value: CheckoutOptions): Self = StObject.set(x, "checkoutOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuiet(value: Double): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Double): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewriteNotesRef(value: String): Self = StObject.set(x, "rewriteNotesRef", value.asInstanceOf[js.Any])
+      inline def setRewriteNotesRef(value: String): Self = StObject.set(x, "rewriteNotesRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

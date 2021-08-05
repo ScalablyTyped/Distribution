@@ -50,21 +50,16 @@ object listenerCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerCertificateState): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerCertificateState, opts: CustomResourceOptions): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
+    inline def get(name: String, id: Input[ID]): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
+    inline def get(name: String, id: Input[ID], state: ListenerCertificateState): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
+    inline def get(name: String, id: Input[ID], state: ListenerCertificateState, opts: CustomResourceOptions): ListenerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerCertificate]
     
     /**
       * Returns true if the given object is an instance of ListenerCertificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean]
   }
   
   trait ListenerCertificateArgs extends StObject {
@@ -81,20 +76,16 @@ object listenerCertificateMod {
   }
   object ListenerCertificateArgs {
     
-    @scala.inline
-    def apply(certificateArn: Input[String], listenerArn: Input[String]): ListenerCertificateArgs = {
+    inline def apply(certificateArn: Input[String], listenerArn: Input[String]): ListenerCertificateArgs = {
       val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any], listenerArn = listenerArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListenerCertificateArgs]
     }
     
-    @scala.inline
-    implicit class ListenerCertificateArgsMutableBuilder[Self <: ListenerCertificateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerCertificateArgs](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
+      inline def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object listenerCertificateMod {
   }
   object ListenerCertificateState {
     
-    @scala.inline
-    def apply(): ListenerCertificateState = {
+    inline def apply(): ListenerCertificateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListenerCertificateState]
     }
     
-    @scala.inline
-    implicit class ListenerCertificateStateMutableBuilder[Self <: ListenerCertificateState] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerCertificateState](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
+      inline def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerArnUndefined: Self = StObject.set(x, "listenerArn", js.undefined)
+      inline def setListenerArnUndefined: Self = StObject.set(x, "listenerArn", js.undefined)
     }
   }
 }

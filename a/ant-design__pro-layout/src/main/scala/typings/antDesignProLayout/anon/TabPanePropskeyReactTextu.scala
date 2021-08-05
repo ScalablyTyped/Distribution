@@ -42,103 +42,71 @@ trait TabPanePropskeyReactTextu extends StObject {
 }
 object TabPanePropskeyReactTextu {
   
-  @scala.inline
-  def apply(): TabPanePropskeyReactTextu = {
+  inline def apply(): TabPanePropskeyReactTextu = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabPanePropskeyReactTextu]
   }
   
-  @scala.inline
-  implicit class TabPanePropskeyReactTextuMutableBuilder[Self <: TabPanePropskeyReactTextu] (val x: Self) extends AnyVal {
+  extension [Self <: TabPanePropskeyReactTextu](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+    inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+    inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
-    @scala.inline
-    def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+    inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+    inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
     
-    @scala.inline
-    def setDestroyInactiveTabPane(value: Boolean): Self = StObject.set(x, "destroyInactiveTabPane", value.asInstanceOf[js.Any])
+    inline def setDestroyInactiveTabPane(value: Boolean): Self = StObject.set(x, "destroyInactiveTabPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyInactiveTabPaneUndefined: Self = StObject.set(x, "destroyInactiveTabPane", js.undefined)
+    inline def setDestroyInactiveTabPaneUndefined: Self = StObject.set(x, "destroyInactiveTabPane", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+    inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+    inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKey(value: ReactText): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ReactText): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+    inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTab(value: ReactNode): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: ReactNode): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabKey(value: String): Self = StObject.set(x, "tabKey", value.asInstanceOf[js.Any])
+    inline def setTabKey(value: String): Self = StObject.set(x, "tabKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabKeyUndefined: Self = StObject.set(x, "tabKey", js.undefined)
+    inline def setTabKeyUndefined: Self = StObject.set(x, "tabKey", js.undefined)
     
-    @scala.inline
-    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
+    inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
   }
 }

@@ -14,34 +14,25 @@ trait IncludeEmpty extends StObject {
 }
 object IncludeEmpty {
   
-  @scala.inline
-  def apply(): IncludeEmpty = {
+  inline def apply(): IncludeEmpty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeEmpty]
   }
   
-  @scala.inline
-  implicit class IncludeEmptyMutableBuilder[Self <: IncludeEmpty] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeEmpty](x: Self) {
     
-    @scala.inline
-    def setCalculations(value: js.Array[PropertyName]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
+    inline def setCalculations(value: js.Array[PropertyName]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationsUndefined: Self = StObject.set(x, "calculations", js.undefined)
+    inline def setCalculationsUndefined: Self = StObject.set(x, "calculations", js.undefined)
     
-    @scala.inline
-    def setCalculationsVarargs(value: PropertyName*): Self = StObject.set(x, "calculations", js.Array(value :_*))
+    inline def setCalculationsVarargs(value: PropertyName*): Self = StObject.set(x, "calculations", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
+    inline def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeEmptyUndefined: Self = StObject.set(x, "includeEmpty", js.undefined)
+    inline def setIncludeEmptyUndefined: Self = StObject.set(x, "includeEmpty", js.undefined)
     
-    @scala.inline
-    def setIncludeQuestionTypes(value: Boolean): Self = StObject.set(x, "includeQuestionTypes", value.asInstanceOf[js.Any])
+    inline def setIncludeQuestionTypes(value: Boolean): Self = StObject.set(x, "includeQuestionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeQuestionTypesUndefined: Self = StObject.set(x, "includeQuestionTypes", js.undefined)
+    inline def setIncludeQuestionTypesUndefined: Self = StObject.set(x, "includeQuestionTypes", js.undefined)
   }
 }

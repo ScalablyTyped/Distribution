@@ -40,26 +40,20 @@ object trieMod {
   }
   object TrieNode {
     
-    @scala.inline
-    def apply(children: StringDictionary[TrieNode], end: Boolean, parent: TrieNode, word: OutputNode): TrieNode = {
+    inline def apply(children: StringDictionary[TrieNode], end: Boolean, parent: TrieNode, word: OutputNode): TrieNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrieNode]
     }
     
-    @scala.inline
-    implicit class TrieNodeMutableBuilder[Self <: TrieNode] (val x: Self) extends AnyVal {
+    extension [Self <: TrieNode](x: Self) {
       
-      @scala.inline
-      def setChildren(value: StringDictionary[TrieNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: StringDictionary[TrieNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: TrieNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: TrieNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWord(value: OutputNode): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      inline def setWord(value: OutputNode): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     }
   }
 }

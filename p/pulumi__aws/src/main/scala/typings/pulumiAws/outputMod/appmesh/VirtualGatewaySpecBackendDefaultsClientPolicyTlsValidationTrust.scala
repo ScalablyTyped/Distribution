@@ -18,25 +18,19 @@ trait VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust extends St
 }
 object VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust {
   
-  @scala.inline
-  def apply(): VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust = {
+  inline def apply(): VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustMutableBuilder[Self <: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust](x: Self) {
     
-    @scala.inline
-    def setAcm(value: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
+    inline def setAcm(value: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
+    inline def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
     
-    @scala.inline
-    def setFile(value: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

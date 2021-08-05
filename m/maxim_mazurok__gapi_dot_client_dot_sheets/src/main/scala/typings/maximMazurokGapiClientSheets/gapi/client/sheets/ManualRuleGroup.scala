@@ -17,28 +17,21 @@ trait ManualRuleGroup extends StObject {
 }
 object ManualRuleGroup {
   
-  @scala.inline
-  def apply(): ManualRuleGroup = {
+  inline def apply(): ManualRuleGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManualRuleGroup]
   }
   
-  @scala.inline
-  implicit class ManualRuleGroupMutableBuilder[Self <: ManualRuleGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ManualRuleGroup](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: ExtendedValue): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: ExtendedValue): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[ExtendedValue]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ExtendedValue]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ExtendedValue*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ExtendedValue*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

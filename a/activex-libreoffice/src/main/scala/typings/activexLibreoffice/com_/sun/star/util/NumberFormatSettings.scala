@@ -32,8 +32,7 @@ trait NumberFormatSettings
 }
 object NumberFormatSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NoZero: Boolean,
     NullDate: Date,
     PropertySetInfo: XPropertySetInfo,
@@ -54,19 +53,14 @@ object NumberFormatSettings {
     __obj.asInstanceOf[NumberFormatSettings]
   }
   
-  @scala.inline
-  implicit class NumberFormatSettingsMutableBuilder[Self <: NumberFormatSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatSettings](x: Self) {
     
-    @scala.inline
-    def setNoZero(value: Boolean): Self = StObject.set(x, "NoZero", value.asInstanceOf[js.Any])
+    inline def setNoZero(value: Boolean): Self = StObject.set(x, "NoZero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullDate(value: Date): Self = StObject.set(x, "NullDate", value.asInstanceOf[js.Any])
+    inline def setNullDate(value: Date): Self = StObject.set(x, "NullDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDecimals(value: Double): Self = StObject.set(x, "StandardDecimals", value.asInstanceOf[js.Any])
+    inline def setStandardDecimals(value: Double): Self = StObject.set(x, "StandardDecimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoDigitDateStart(value: Double): Self = StObject.set(x, "TwoDigitDateStart", value.asInstanceOf[js.Any])
+    inline def setTwoDigitDateStart(value: Double): Self = StObject.set(x, "TwoDigitDateStart", value.asInstanceOf[js.Any])
   }
 }

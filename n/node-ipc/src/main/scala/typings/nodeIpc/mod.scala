@@ -42,8 +42,7 @@ object mod {
   @JSImport("node-ipc", "IPC")
   @js.native
   def IPC: Instantiable0[typings.nodeIpc.mod.NodeIPC.IPC] = js.native
-  @scala.inline
-  def IPC_=(x: Instantiable0[typings.nodeIpc.mod.NodeIPC.IPC]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IPC")(x.asInstanceOf[js.Any])
+  inline def IPC_=(x: Instantiable0[typings.nodeIpc.mod.NodeIPC.IPC]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IPC")(x.asInstanceOf[js.Any])
   
   /**
     * Set these variables in the ipc.config scope to overwrite or set default values
@@ -51,8 +50,7 @@ object mod {
   @JSImport("node-ipc", "config")
   @js.native
   def config: Config = js.native
-  @scala.inline
-  def config_=(x: Config): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+  inline def config_=(x: Config): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
   
   /**
     * https://www.npmjs.com/package/node-ipc#connectto
@@ -75,16 +73,11 @@ object mod {
     * The socket with this id is added to the ipc.of object when created.
     * @param callback this is the function to execute when the socket has been created
     */
-  @scala.inline
-  def connectTo(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def connectTo(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectTo(id: String, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectTo(id: String, path: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectTo(id: String, path: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectTo(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connectTo(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectTo(id: String, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectTo(id: String, path: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectTo(id: String, path: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectTo")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * https://www.npmjs.com/package/node-ipc#connecttonet
@@ -111,12 +104,9 @@ object mod {
     * this id is added to the ipc.of object when the socket is created with a reference to the socket
     * @param callback     this is the function to execute when the socket has been created
     */
-  @scala.inline
-  def connectToNet(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, hostOrPort: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], hostOrPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connectToNet(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, hostOrPort: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], hostOrPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * https://www.npmjs.com/package/node-ipc#connecttonet
     * Used to connect as a client to a TCP or TLS socket via the network card.
@@ -130,24 +120,15 @@ object mod {
     * @param port the port on which the TCP or TLS socket resides
     * @param callback     this is the function to execute when the socket has been created
     */
-  @scala.inline
-  def connectToNet(id: String, hostOrPort: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], hostOrPort.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, hostOrPort: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], hostOrPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, host: String, port: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, host: String, port: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, host: Unit, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, host: Unit, port: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connectToNet(id: String, host: Unit, port: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, hostOrPort: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], hostOrPort.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, hostOrPort: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], hostOrPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, host: String, port: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, host: String, port: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, host: Unit, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, host: Unit, port: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectToNet(id: String, host: Unit, port: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectToNet")(id.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * https://www.npmjs.com/package/node-ipc#disconnect
@@ -156,14 +137,12 @@ object mod {
     * This can be local or remote. UDP clients do not maintain connections and so there are no Clients and this method has no value to them
     * @param id is the string id of the socket from which to disconnect
     */
-  @scala.inline
-  def disconnect(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disconnect(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * https://www.npmjs.com/package/node-ipc#log
     */
-  @scala.inline
-  def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * This is where socket connection refrences will be stored when connecting to them as a client via the ipc.connectTo
@@ -172,8 +151,7 @@ object mod {
   @JSImport("node-ipc", "of")
   @js.native
   def of: js.Any = js.native
-  @scala.inline
-  def of_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("of")(x.asInstanceOf[js.Any])
+  inline def of_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("of")(x.asInstanceOf[js.Any])
   
   /**
     * https://www.npmjs.com/package/node-ipc#serve
@@ -182,17 +160,14 @@ object mod {
     * @param callback This is a function to be called after the Server has started.
     * This can also be done by binding an event to the start event like ipc.server.on('start',function(){});
     */
-  @scala.inline
-  def serve(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")().asInstanceOf[Unit]
-  @scala.inline
-  def serve(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serve(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")().asInstanceOf[Unit]
+  inline def serve(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * https://www.npmjs.com/package/node-ipc#serve
     * Used to create local Unix Socket Server or Windows Socket Server to which Clients can bind.
     * The server can emit events to specific Client Sockets, or broadcast events to all known Client Sockets
     */
-  @scala.inline
-  def serve(callback: Null): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serve(callback: Null): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * https://www.npmjs.com/package/node-ipc#serve
     * Used to create local Unix Socket Server or Windows Socket Server to which Clients can bind.
@@ -203,10 +178,8 @@ object mod {
     * @param callback This is a function to be called after the Server has started.
     * This can also be done by binding an event to the start event like ipc.server.on('start',function(){});
     */
-  @scala.inline
-  def serve(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def serve(path: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serve")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serve(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serve")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serve(path: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serve")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
@@ -217,19 +190,15 @@ object mod {
     * This defaults to not being set. When using udp6 make sure to specify a valid IPv6 host, like ::1
     * @param callback Function to be called when the server is created
     */
-  @scala.inline
-  def serveNet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")().asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(callbackOrPort: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(callbackOrPort.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serveNet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")().asInstanceOf[Unit]
+  inline def serveNet(callbackOrPort: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(callbackOrPort.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
     * @param callback Function to be called when the server is created
     * @param port The port on which the TCP, UDP, or TLS Socket server will be bound, this defaults to 8000 if not specified
     */
-  @scala.inline
-  def serveNet(callbackOrPort: EmptyCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(callbackOrPort.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(host: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serveNet(callbackOrPort: EmptyCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(callbackOrPort.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serveNet(host: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
     * @param host If not specified this defaults to the first address in os.networkInterfaces().
@@ -237,20 +206,13 @@ object mod {
     * @param port The port on which the TCP, UDP, or TLS Socket server will be bound, this defaults to 8000 if not specified
     * @param callback Function to be called when the server is created
     */
-  @scala.inline
-  def serveNet(host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(host: String, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(host: String, port: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(host: String, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(host: Unit, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(host: Unit, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet(host: Unit, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: Unit, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: Unit, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: Unit, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
@@ -258,47 +220,27 @@ object mod {
     * This defaults to not being set. When using udp6 make sure to specify a valid IPv6 host, like ::1
     * @param callback Function to be called when the server is created
     */
-  @scala.inline
-  def serveNet_udp4(UDPType: udp4): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: String, port: Double, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: String, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: String, port: Unit, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: String, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: Unit, port: Double, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: Unit, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(UDPType: udp4): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serveNet_udp4(UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: String, port: Double, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: String, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: String, port: Unit, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: String, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: Unit, port: Double, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: Unit, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def serveNet_udp6(UDPType: udp6): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: String, port: Double, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: String, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: String, port: Unit, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: String, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: Unit, port: Double, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: Unit, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(UDPType: udp6): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serveNet_udp6(UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: String, port: Double, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: String, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: String, port: Unit, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: String, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: Unit, port: Double, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: Unit, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * This is a refrence to the server created by ipc.serve or ipc.serveNet
@@ -306,8 +248,7 @@ object mod {
   @JSImport("node-ipc", "server")
   @js.native
   def server: Server = js.native
-  @scala.inline
-  def server_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("server")(x.asInstanceOf[js.Any])
+  inline def server_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("server")(x.asInstanceOf[js.Any])
   
   object NodeIPC {
     
@@ -488,8 +429,7 @@ object mod {
     }
     object Config {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         appspace: String,
         encoding: ascii | utf8 | utf16le | ucs2 | base64 | hex,
         id: String,
@@ -514,65 +454,45 @@ object mod {
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setAppspace(value: String): Self = StObject.set(x, "appspace", value.asInstanceOf[js.Any])
+        inline def setAppspace(value: String): Self = StObject.set(x, "appspace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEncoding(value: ascii | utf8 | utf16le | ucs2 | base64 | hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+        inline def setEncoding(value: ascii | utf8 | utf16le | ucs2 | base64 | hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInterfaces(value: Family): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+        inline def setInterfaces(value: Family): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogDepth(value: Double): Self = StObject.set(x, "logDepth", value.asInstanceOf[js.Any])
+        inline def setLogDepth(value: Double): Self = StObject.set(x, "logDepth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogInColor(value: Boolean): Self = StObject.set(x, "logInColor", value.asInstanceOf[js.Any])
+        inline def setLogInColor(value: Boolean): Self = StObject.set(x, "logInColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogger(value: String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+        inline def setLogger(value: String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+        inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxRetries(value: Boolean | Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+        inline def setMaxRetries(value: Boolean | Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkHost(value: String): Self = StObject.set(x, "networkHost", value.asInstanceOf[js.Any])
+        inline def setNetworkHost(value: String): Self = StObject.set(x, "networkHost", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkPort(value: Double): Self = StObject.set(x, "networkPort", value.asInstanceOf[js.Any])
+        inline def setNetworkPort(value: Double): Self = StObject.set(x, "networkPort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRawBuffer(value: Boolean): Self = StObject.set(x, "rawBuffer", value.asInstanceOf[js.Any])
+        inline def setRawBuffer(value: Boolean): Self = StObject.set(x, "rawBuffer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+        inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+        inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSocketRoot(value: String): Self = StObject.set(x, "socketRoot", value.asInstanceOf[js.Any])
+        inline def setSocketRoot(value: String): Self = StObject.set(x, "socketRoot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStopRetrying(value: Boolean): Self = StObject.set(x, "stopRetrying", value.asInstanceOf[js.Any])
+        inline def setStopRetrying(value: Boolean): Self = StObject.set(x, "stopRetrying", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+        inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTls(value: Private): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+        inline def setTls(value: Private): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnlink(value: Boolean): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
+        inline def setUnlink(value: Boolean): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
       }
     }
     
@@ -804,26 +724,20 @@ object mod {
     }
     object SocketConfig {
       
-      @scala.inline
-      def apply(): SocketConfig = {
+      inline def apply(): SocketConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SocketConfig]
       }
       
-      @scala.inline
-      implicit class SocketConfigMutableBuilder[Self <: SocketConfig] (val x: Self) extends AnyVal {
+      extension [Self <: SocketConfig](x: Self) {
         
-        @scala.inline
-        def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+        inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+        inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
         
-        @scala.inline
-        def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       }
     }
   }

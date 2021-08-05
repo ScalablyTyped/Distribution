@@ -95,8 +95,7 @@ trait XGlobalSheetSettings extends StObject {
 }
 object XGlobalSheetSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DoAutoComplete: Boolean,
     EnterEdit: Boolean,
     ExpandReferences: Boolean,
@@ -120,61 +119,42 @@ object XGlobalSheetSettings {
     __obj.asInstanceOf[XGlobalSheetSettings]
   }
   
-  @scala.inline
-  implicit class XGlobalSheetSettingsMutableBuilder[Self <: XGlobalSheetSettings] (val x: Self) extends AnyVal {
+  extension [Self <: XGlobalSheetSettings](x: Self) {
     
-    @scala.inline
-    def setDoAutoComplete(value: Boolean): Self = StObject.set(x, "DoAutoComplete", value.asInstanceOf[js.Any])
+    inline def setDoAutoComplete(value: Boolean): Self = StObject.set(x, "DoAutoComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterEdit(value: Boolean): Self = StObject.set(x, "EnterEdit", value.asInstanceOf[js.Any])
+    inline def setEnterEdit(value: Boolean): Self = StObject.set(x, "EnterEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandReferences(value: Boolean): Self = StObject.set(x, "ExpandReferences", value.asInstanceOf[js.Any])
+    inline def setExpandReferences(value: Boolean): Self = StObject.set(x, "ExpandReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendFormat(value: Boolean): Self = StObject.set(x, "ExtendFormat", value.asInstanceOf[js.Any])
+    inline def setExtendFormat(value: Boolean): Self = StObject.set(x, "ExtendFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUpdateMode(value: Double): Self = StObject.set(x, "LinkUpdateMode", value.asInstanceOf[js.Any])
+    inline def setLinkUpdateMode(value: Double): Self = StObject.set(x, "LinkUpdateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkHeader(value: Boolean): Self = StObject.set(x, "MarkHeader", value.asInstanceOf[js.Any])
+    inline def setMarkHeader(value: Boolean): Self = StObject.set(x, "MarkHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric(value: Double): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Double): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveDirection(value: Double): Self = StObject.set(x, "MoveDirection", value.asInstanceOf[js.Any])
+    inline def setMoveDirection(value: Double): Self = StObject.set(x, "MoveDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveSelection(value: Boolean): Self = StObject.set(x, "MoveSelection", value.asInstanceOf[js.Any])
+    inline def setMoveSelection(value: Boolean): Self = StObject.set(x, "MoveSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintAllSheets(value: Boolean): Self = StObject.set(x, "PrintAllSheets", value.asInstanceOf[js.Any])
+    inline def setPrintAllSheets(value: Boolean): Self = StObject.set(x, "PrintAllSheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintEmptyPages(value: Boolean): Self = StObject.set(x, "PrintEmptyPages", value.asInstanceOf[js.Any])
+    inline def setPrintEmptyPages(value: Boolean): Self = StObject.set(x, "PrintEmptyPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeFinder(value: Boolean): Self = StObject.set(x, "RangeFinder", value.asInstanceOf[js.Any])
+    inline def setRangeFinder(value: Boolean): Self = StObject.set(x, "RangeFinder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceCellsWarning(value: Boolean): Self = StObject.set(x, "ReplaceCellsWarning", value.asInstanceOf[js.Any])
+    inline def setReplaceCellsWarning(value: Boolean): Self = StObject.set(x, "ReplaceCellsWarning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarFunction(value: Double): Self = StObject.set(x, "StatusBarFunction", value.asInstanceOf[js.Any])
+    inline def setStatusBarFunction(value: Double): Self = StObject.set(x, "StatusBarFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePrinterMetrics(value: Boolean): Self = StObject.set(x, "UsePrinterMetrics", value.asInstanceOf[js.Any])
+    inline def setUsePrinterMetrics(value: Boolean): Self = StObject.set(x, "UsePrinterMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTabCol(value: Boolean): Self = StObject.set(x, "UseTabCol", value.asInstanceOf[js.Any])
+    inline def setUseTabCol(value: Boolean): Self = StObject.set(x, "UseTabCol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLists(value: SafeArray[String]): Self = StObject.set(x, "UserLists", value.asInstanceOf[js.Any])
+    inline def setUserLists(value: SafeArray[String]): Self = StObject.set(x, "UserLists", value.asInstanceOf[js.Any])
   }
 }

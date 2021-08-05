@@ -99,8 +99,7 @@ trait CertificateSecurityState extends StObject {
 }
 object CertificateSecurityState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certificate: js.Array[String],
     certificateHasSha1Signature: Boolean,
     certificateHasWeakSignature: Boolean,
@@ -121,73 +120,50 @@ object CertificateSecurityState {
     __obj.asInstanceOf[CertificateSecurityState]
   }
   
-  @scala.inline
-  implicit class CertificateSecurityStateMutableBuilder[Self <: CertificateSecurityState] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateSecurityState](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: js.Array[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: js.Array[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateHasSha1Signature(value: Boolean): Self = StObject.set(x, "certificateHasSha1Signature", value.asInstanceOf[js.Any])
+    inline def setCertificateHasSha1Signature(value: Boolean): Self = StObject.set(x, "certificateHasSha1Signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateHasWeakSignature(value: Boolean): Self = StObject.set(x, "certificateHasWeakSignature", value.asInstanceOf[js.Any])
+    inline def setCertificateHasWeakSignature(value: Boolean): Self = StObject.set(x, "certificateHasWeakSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateNetworkError(value: String): Self = StObject.set(x, "certificateNetworkError", value.asInstanceOf[js.Any])
+    inline def setCertificateNetworkError(value: String): Self = StObject.set(x, "certificateNetworkError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateNetworkErrorUndefined: Self = StObject.set(x, "certificateNetworkError", js.undefined)
+    inline def setCertificateNetworkErrorUndefined: Self = StObject.set(x, "certificateNetworkError", js.undefined)
     
-    @scala.inline
-    def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
+    inline def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
     
-    @scala.inline
-    def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+    inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExchange(value: String): Self = StObject.set(x, "keyExchange", value.asInstanceOf[js.Any])
+    inline def setKeyExchange(value: String): Self = StObject.set(x, "keyExchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExchangeGroup(value: String): Self = StObject.set(x, "keyExchangeGroup", value.asInstanceOf[js.Any])
+    inline def setKeyExchangeGroup(value: String): Self = StObject.set(x, "keyExchangeGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExchangeGroupUndefined: Self = StObject.set(x, "keyExchangeGroup", js.undefined)
+    inline def setKeyExchangeGroupUndefined: Self = StObject.set(x, "keyExchangeGroup", js.undefined)
     
-    @scala.inline
-    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+    inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
-    @scala.inline
-    def setModernSSL(value: Boolean): Self = StObject.set(x, "modernSSL", value.asInstanceOf[js.Any])
+    inline def setModernSSL(value: Boolean): Self = StObject.set(x, "modernSSL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObsoleteSslCipher(value: Boolean): Self = StObject.set(x, "obsoleteSslCipher", value.asInstanceOf[js.Any])
+    inline def setObsoleteSslCipher(value: Boolean): Self = StObject.set(x, "obsoleteSslCipher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObsoleteSslKeyExchange(value: Boolean): Self = StObject.set(x, "obsoleteSslKeyExchange", value.asInstanceOf[js.Any])
+    inline def setObsoleteSslKeyExchange(value: Boolean): Self = StObject.set(x, "obsoleteSslKeyExchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObsoleteSslProtocol(value: Boolean): Self = StObject.set(x, "obsoleteSslProtocol", value.asInstanceOf[js.Any])
+    inline def setObsoleteSslProtocol(value: Boolean): Self = StObject.set(x, "obsoleteSslProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObsoleteSslSignature(value: Boolean): Self = StObject.set(x, "obsoleteSslSignature", value.asInstanceOf[js.Any])
+    inline def setObsoleteSslSignature(value: Boolean): Self = StObject.set(x, "obsoleteSslSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectName(value: String): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
+    inline def setSubjectName(value: String): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidFrom(value: TimeSinceEpoch): Self = StObject.set(x, "validFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: TimeSinceEpoch): Self = StObject.set(x, "validFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidTo(value: TimeSinceEpoch): Self = StObject.set(x, "validTo", value.asInstanceOf[js.Any])
+    inline def setValidTo(value: TimeSinceEpoch): Self = StObject.set(x, "validTo", value.asInstanceOf[js.Any])
   }
 }

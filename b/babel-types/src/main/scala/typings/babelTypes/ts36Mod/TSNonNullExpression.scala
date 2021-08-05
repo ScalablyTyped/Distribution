@@ -20,13 +20,10 @@ object TSNonNullExpression {
   @js.native
   def apply(expression: Expression): TSNonNullExpression = js.native
   
-  @scala.inline
-  implicit class TSNonNullExpressionMutableBuilder[Self <: TSNonNullExpression] (val x: Self) extends AnyVal {
+  extension [Self <: TSNonNullExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSNonNullExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSNonNullExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

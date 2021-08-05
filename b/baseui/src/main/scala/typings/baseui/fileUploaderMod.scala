@@ -95,86 +95,66 @@ object fileUploaderMod {
   }
   object FileUploaderOverrides {
     
-    @scala.inline
-    def apply[T](): FileUploaderOverrides[T] = {
+    inline def apply[T](): FileUploaderOverrides[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileUploaderOverrides[T]]
     }
     
-    @scala.inline
-    implicit class FileUploaderOverridesMutableBuilder[Self <: FileUploaderOverrides[?], T] (val x: Self & FileUploaderOverrides[T]) extends AnyVal {
+    extension [Self <: FileUploaderOverrides[?], T](x: Self & FileUploaderOverrides[T]) {
       
-      @scala.inline
-      def setButtonComponent(
+      inline def setButtonComponent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "ButtonComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonComponentUndefined: Self = StObject.set(x, "ButtonComponent", js.undefined)
+      inline def setButtonComponentUndefined: Self = StObject.set(x, "ButtonComponent", js.undefined)
       
-      @scala.inline
-      def setContentMessage(
+      inline def setContentMessage(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "ContentMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentMessageUndefined: Self = StObject.set(x, "ContentMessage", js.undefined)
+      inline def setContentMessageUndefined: Self = StObject.set(x, "ContentMessage", js.undefined)
       
-      @scala.inline
-      def setContentSeparator(
+      inline def setContentSeparator(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "ContentSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentSeparatorUndefined: Self = StObject.set(x, "ContentSeparator", js.undefined)
+      inline def setContentSeparatorUndefined: Self = StObject.set(x, "ContentSeparator", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(
+      inline def setErrorMessage(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
       
-      @scala.inline
-      def setFileDragAndDrop(
+      inline def setFileDragAndDrop(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "FileDragAndDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileDragAndDropUndefined: Self = StObject.set(x, "FileDragAndDrop", js.undefined)
+      inline def setFileDragAndDropUndefined: Self = StObject.set(x, "FileDragAndDrop", js.undefined)
       
-      @scala.inline
-      def setHiddenInput(
+      inline def setHiddenInput(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "HiddenInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenInputUndefined: Self = StObject.set(x, "HiddenInput", js.undefined)
+      inline def setHiddenInputUndefined: Self = StObject.set(x, "HiddenInput", js.undefined)
       
-      @scala.inline
-      def setProgressMessage(
+      inline def setProgressMessage(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "ProgressMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressMessageUndefined: Self = StObject.set(x, "ProgressMessage", js.undefined)
+      inline def setProgressMessageUndefined: Self = StObject.set(x, "ProgressMessage", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setSpinner(
+      inline def setSpinner(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Spinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerUndefined: Self = StObject.set(x, "Spinner", js.undefined)
+      inline def setSpinnerUndefined: Self = StObject.set(x, "Spinner", js.undefined)
     }
   }
   
@@ -236,185 +216,128 @@ object fileUploaderMod {
   }
   object FileUploaderProps {
     
-    @scala.inline
-    def apply(): FileUploaderProps = {
+    inline def apply(): FileUploaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileUploaderProps]
     }
     
-    @scala.inline
-    implicit class FileUploaderPropsMutableBuilder[Self <: FileUploaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploaderProps](x: Self) {
       
-      @scala.inline
-      def setAccept(value: String | js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: String | js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableClick(value: Boolean): Self = StObject.set(x, "disableClick", value.asInstanceOf[js.Any])
+      inline def setDisableClick(value: Boolean): Self = StObject.set(x, "disableClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableClickUndefined: Self = StObject.set(x, "disableClick", js.undefined)
+      inline def setDisableClickUndefined: Self = StObject.set(x, "disableClick", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setGetDataTransferItems(value: /* event */ SyntheticEvent[js.Any, Event] => js.Promise[js.Array[File | DataTransferItem]]): Self = StObject.set(x, "getDataTransferItems", js.Any.fromFunction1(value))
+      inline def setGetDataTransferItems(value: /* event */ SyntheticEvent[js.Any, Event] => js.Promise[js.Array[File | DataTransferItem]]): Self = StObject.set(x, "getDataTransferItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDataTransferItemsUndefined: Self = StObject.set(x, "getDataTransferItems", js.undefined)
+      inline def setGetDataTransferItemsUndefined: Self = StObject.set(x, "getDataTransferItems", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: /* event */ FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* event */ FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: () => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      inline def setOnCancel(value: () => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnDragEnter(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
+      inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      @scala.inline
-      def setOnDragLeave(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
+      inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      @scala.inline
-      def setOnDragOver(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+      inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* event */ DragEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDrop(
+      inline def setOnDrop(
         value: (/* accepted */ js.Array[File], /* rejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event]) => js.Any
       ): Self = StObject.set(x, "onDrop", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnDropAccepted(
+      inline def setOnDropAccepted(
         value: (/* acceptedOrRejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event]) => js.Any
       ): Self = StObject.set(x, "onDropAccepted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDropAcceptedUndefined: Self = StObject.set(x, "onDropAccepted", js.undefined)
+      inline def setOnDropAcceptedUndefined: Self = StObject.set(x, "onDropAccepted", js.undefined)
       
-      @scala.inline
-      def setOnDropRejected(
+      inline def setOnDropRejected(
         value: (/* acceptedOrRejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event]) => js.Any
       ): Self = StObject.set(x, "onDropRejected", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDropRejectedUndefined: Self = StObject.set(x, "onDropRejected", js.undefined)
+      inline def setOnDropRejectedUndefined: Self = StObject.set(x, "onDropRejected", js.undefined)
       
-      @scala.inline
-      def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+      inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      @scala.inline
-      def setOnFileDialogCancel(value: () => js.Any): Self = StObject.set(x, "onFileDialogCancel", js.Any.fromFunction0(value))
+      inline def setOnFileDialogCancel(value: () => js.Any): Self = StObject.set(x, "onFileDialogCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFileDialogCancelUndefined: Self = StObject.set(x, "onFileDialogCancel", js.undefined)
+      inline def setOnFileDialogCancelUndefined: Self = StObject.set(x, "onFileDialogCancel", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* event */ FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* event */ FocusEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnRetry(value: () => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction0(value))
+      inline def setOnRetry(value: () => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
+      inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: FileUploaderOverrides[StyleProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: FileUploaderOverrides[StyleProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setPreventDropOnDocument(value: Boolean): Self = StObject.set(x, "preventDropOnDocument", value.asInstanceOf[js.Any])
+      inline def setPreventDropOnDocument(value: Boolean): Self = StObject.set(x, "preventDropOnDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDropOnDocumentUndefined: Self = StObject.set(x, "preventDropOnDocument", js.undefined)
+      inline def setPreventDropOnDocumentUndefined: Self = StObject.set(x, "preventDropOnDocument", js.undefined)
       
-      @scala.inline
-      def setProgressAmount(value: Double): Self = StObject.set(x, "progressAmount", value.asInstanceOf[js.Any])
+      inline def setProgressAmount(value: Double): Self = StObject.set(x, "progressAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressAmountUndefined: Self = StObject.set(x, "progressAmount", js.undefined)
+      inline def setProgressAmountUndefined: Self = StObject.set(x, "progressAmount", js.undefined)
       
-      @scala.inline
-      def setProgressMessage(value: String): Self = StObject.set(x, "progressMessage", value.asInstanceOf[js.Any])
+      inline def setProgressMessage(value: String): Self = StObject.set(x, "progressMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressMessageUndefined: Self = StObject.set(x, "progressMessage", js.undefined)
+      inline def setProgressMessageUndefined: Self = StObject.set(x, "progressMessage", js.undefined)
     }
   }
   
@@ -445,8 +368,7 @@ object fileUploaderMod {
   }
   object StyleProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $afterFileDrop: Boolean,
       $isDisabled: Boolean,
       $isDragAccept: Boolean,
@@ -458,26 +380,19 @@ object fileUploaderMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    @scala.inline
-    implicit class StylePropsMutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyleProps](x: Self) {
       
-      @scala.inline
-      def set$afterFileDrop(value: Boolean): Self = StObject.set(x, "$afterFileDrop", value.asInstanceOf[js.Any])
+      inline def set$afterFileDrop(value: Boolean): Self = StObject.set(x, "$afterFileDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isDisabled(value: Boolean): Self = StObject.set(x, "$isDisabled", value.asInstanceOf[js.Any])
+      inline def set$isDisabled(value: Boolean): Self = StObject.set(x, "$isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isDragAccept(value: Boolean): Self = StObject.set(x, "$isDragAccept", value.asInstanceOf[js.Any])
+      inline def set$isDragAccept(value: Boolean): Self = StObject.set(x, "$isDragAccept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isDragActive(value: Boolean): Self = StObject.set(x, "$isDragActive", value.asInstanceOf[js.Any])
+      inline def set$isDragActive(value: Boolean): Self = StObject.set(x, "$isDragActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isDragReject(value: Boolean): Self = StObject.set(x, "$isDragReject", value.asInstanceOf[js.Any])
+      inline def set$isDragReject(value: Boolean): Self = StObject.set(x, "$isDragReject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
+      inline def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
     }
   }
 }

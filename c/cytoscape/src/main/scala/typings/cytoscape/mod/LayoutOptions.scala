@@ -21,14 +21,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayoutOptions extends StObject
 object LayoutOptions {
   
-  @scala.inline
-  def BaseLayoutOptions(name: String): typings.cytoscape.mod.BaseLayoutOptions = {
+  inline def BaseLayoutOptions(name: String): typings.cytoscape.mod.BaseLayoutOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.cytoscape.mod.BaseLayoutOptions]
   }
   
-  @scala.inline
-  def BreadthFirstLayoutOptions(
+  inline def BreadthFirstLayoutOptions(
     circle: Boolean,
     directed: Boolean,
     fit: Boolean,
@@ -39,14 +37,12 @@ object LayoutOptions {
     __obj.asInstanceOf[typings.cytoscape.mod.BreadthFirstLayoutOptions]
   }
   
-  @scala.inline
-  def CircleLayoutOptions(fit: Boolean, nodeDimensionsIncludeLabels: Boolean, startAngle: Double): typings.cytoscape.mod.CircleLayoutOptions = {
+  inline def CircleLayoutOptions(fit: Boolean, nodeDimensionsIncludeLabels: Boolean, startAngle: Double): typings.cytoscape.mod.CircleLayoutOptions = {
     val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = "circle", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.cytoscape.mod.CircleLayoutOptions]
   }
   
-  @scala.inline
-  def ConcentricLayoutOptions(
+  inline def ConcentricLayoutOptions(
     concentric: Degree => Double,
     fit: Boolean,
     height: Unit,
@@ -60,8 +56,7 @@ object LayoutOptions {
     __obj.asInstanceOf[typings.cytoscape.mod.ConcentricLayoutOptions]
   }
   
-  @scala.inline
-  def CoseLayoutOptions(
+  inline def CoseLayoutOptions(
     componentSpacing: Double,
     coolingFactor: Double,
     edgeElasticity: js.Any => Double,
@@ -83,8 +78,7 @@ object LayoutOptions {
     __obj.asInstanceOf[typings.cytoscape.mod.CoseLayoutOptions]
   }
   
-  @scala.inline
-  def GridLayoutOptions(
+  inline def GridLayoutOptions(
     condense: Boolean,
     fit: Boolean,
     nodeDimensionsIncludeLabels: Boolean,
@@ -94,20 +88,17 @@ object LayoutOptions {
     __obj.asInstanceOf[typings.cytoscape.mod.GridLayoutOptions]
   }
   
-  @scala.inline
-  def NullLayoutOptions(): typings.cytoscape.mod.NullLayoutOptions = {
+  inline def NullLayoutOptions(): typings.cytoscape.mod.NullLayoutOptions = {
     val __obj = js.Dynamic.literal(name = "null")
     __obj.asInstanceOf[typings.cytoscape.mod.NullLayoutOptions]
   }
   
-  @scala.inline
-  def PresetLayoutOptions(): typings.cytoscape.mod.PresetLayoutOptions = {
+  inline def PresetLayoutOptions(): typings.cytoscape.mod.PresetLayoutOptions = {
     val __obj = js.Dynamic.literal(name = "preset")
     __obj.asInstanceOf[typings.cytoscape.mod.PresetLayoutOptions]
   }
   
-  @scala.inline
-  def RandomLayoutOptions(fit: Boolean): typings.cytoscape.mod.RandomLayoutOptions = {
+  inline def RandomLayoutOptions(fit: Boolean): typings.cytoscape.mod.RandomLayoutOptions = {
     val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = "random")
     __obj.asInstanceOf[typings.cytoscape.mod.RandomLayoutOptions]
   }

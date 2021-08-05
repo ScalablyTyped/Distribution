@@ -13,19 +13,15 @@ trait CandidateWindowParameter extends StObject {
 }
 object CandidateWindowParameter {
   
-  @scala.inline
-  def apply(engineID: String, properties: CandidateWindowParameterProperties): CandidateWindowParameter = {
+  inline def apply(engineID: String, properties: CandidateWindowParameterProperties): CandidateWindowParameter = {
     val __obj = js.Dynamic.literal(engineID = engineID.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidateWindowParameter]
   }
   
-  @scala.inline
-  implicit class CandidateWindowParameterMutableBuilder[Self <: CandidateWindowParameter] (val x: Self) extends AnyVal {
+  extension [Self <: CandidateWindowParameter](x: Self) {
     
-    @scala.inline
-    def setEngineID(value: String): Self = StObject.set(x, "engineID", value.asInstanceOf[js.Any])
+    inline def setEngineID(value: String): Self = StObject.set(x, "engineID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: CandidateWindowParameterProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: CandidateWindowParameterProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

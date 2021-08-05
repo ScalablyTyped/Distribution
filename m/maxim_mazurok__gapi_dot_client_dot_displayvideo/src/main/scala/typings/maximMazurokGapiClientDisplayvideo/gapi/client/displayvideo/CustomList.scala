@@ -17,31 +17,23 @@ trait CustomList extends StObject {
 }
 object CustomList {
   
-  @scala.inline
-  def apply(): CustomList = {
+  inline def apply(): CustomList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomList]
   }
   
-  @scala.inline
-  implicit class CustomListMutableBuilder[Self <: CustomList] (val x: Self) extends AnyVal {
+  extension [Self <: CustomList](x: Self) {
     
-    @scala.inline
-    def setCustomListId(value: String): Self = StObject.set(x, "customListId", value.asInstanceOf[js.Any])
+    inline def setCustomListId(value: String): Self = StObject.set(x, "customListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomListIdUndefined: Self = StObject.set(x, "customListId", js.undefined)
+    inline def setCustomListIdUndefined: Self = StObject.set(x, "customListId", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

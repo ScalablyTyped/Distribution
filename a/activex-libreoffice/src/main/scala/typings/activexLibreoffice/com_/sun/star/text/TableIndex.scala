@@ -32,8 +32,7 @@ trait TableIndex
 }
 object TableIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     BackColor: Color,
     BackGraphicFilter: String,
@@ -81,16 +80,12 @@ object TableIndex {
     __obj.asInstanceOf[TableIndex]
   }
   
-  @scala.inline
-  implicit class TableIndexMutableBuilder[Self <: TableIndex] (val x: Self) extends AnyVal {
+  extension [Self <: TableIndex](x: Self) {
     
-    @scala.inline
-    def setCreateFromLabels(value: Boolean): Self = StObject.set(x, "CreateFromLabels", value.asInstanceOf[js.Any])
+    inline def setCreateFromLabels(value: Boolean): Self = StObject.set(x, "CreateFromLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelCategory(value: String): Self = StObject.set(x, "LabelCategory", value.asInstanceOf[js.Any])
+    inline def setLabelCategory(value: String): Self = StObject.set(x, "LabelCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelDisplayType(value: Double): Self = StObject.set(x, "LabelDisplayType", value.asInstanceOf[js.Any])
+    inline def setLabelDisplayType(value: Double): Self = StObject.set(x, "LabelDisplayType", value.asInstanceOf[js.Any])
   }
 }

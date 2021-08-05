@@ -14,31 +14,23 @@ trait IDiffNavigatorOptions extends StObject {
 }
 object IDiffNavigatorOptions {
   
-  @scala.inline
-  def apply(): IDiffNavigatorOptions = {
+  inline def apply(): IDiffNavigatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDiffNavigatorOptions]
   }
   
-  @scala.inline
-  implicit class IDiffNavigatorOptionsMutableBuilder[Self <: IDiffNavigatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDiffNavigatorOptions](x: Self) {
     
-    @scala.inline
-    def setAlwaysRevealFirst(value: Boolean): Self = StObject.set(x, "alwaysRevealFirst", value.asInstanceOf[js.Any])
+    inline def setAlwaysRevealFirst(value: Boolean): Self = StObject.set(x, "alwaysRevealFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysRevealFirstUndefined: Self = StObject.set(x, "alwaysRevealFirst", js.undefined)
+    inline def setAlwaysRevealFirstUndefined: Self = StObject.set(x, "alwaysRevealFirst", js.undefined)
     
-    @scala.inline
-    def setFollowsCaret(value: Boolean): Self = StObject.set(x, "followsCaret", value.asInstanceOf[js.Any])
+    inline def setFollowsCaret(value: Boolean): Self = StObject.set(x, "followsCaret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowsCaretUndefined: Self = StObject.set(x, "followsCaret", js.undefined)
+    inline def setFollowsCaretUndefined: Self = StObject.set(x, "followsCaret", js.undefined)
     
-    @scala.inline
-    def setIgnoreCharChanges(value: Boolean): Self = StObject.set(x, "ignoreCharChanges", value.asInstanceOf[js.Any])
+    inline def setIgnoreCharChanges(value: Boolean): Self = StObject.set(x, "ignoreCharChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCharChangesUndefined: Self = StObject.set(x, "ignoreCharChanges", js.undefined)
+    inline def setIgnoreCharChangesUndefined: Self = StObject.set(x, "ignoreCharChanges", js.undefined)
   }
 }

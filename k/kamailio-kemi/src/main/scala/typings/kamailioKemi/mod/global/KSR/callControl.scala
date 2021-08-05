@@ -10,6 +10,5 @@ object callControl {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def callControl(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("call_control")().asInstanceOf[Double]
+  inline def callControl(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("call_control")().asInstanceOf[Double]
 }

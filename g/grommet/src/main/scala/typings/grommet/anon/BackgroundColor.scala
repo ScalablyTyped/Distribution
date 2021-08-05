@@ -14,25 +14,19 @@ trait BackgroundColor extends StObject {
 }
 object BackgroundColor {
   
-  @scala.inline
-  def apply(): BackgroundColor = {
+  inline def apply(): BackgroundColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundColor]
   }
   
-  @scala.inline
-  implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColor](x: Self) {
     
-    @scala.inline
-    def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

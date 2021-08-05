@@ -13,16 +13,13 @@ trait WebApiCreateTagRequestData extends StObject {
 }
 object WebApiCreateTagRequestData {
   
-  @scala.inline
-  def apply(name: String): WebApiCreateTagRequestData = {
+  inline def apply(name: String): WebApiCreateTagRequestData = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebApiCreateTagRequestData]
   }
   
-  @scala.inline
-  implicit class WebApiCreateTagRequestDataMutableBuilder[Self <: WebApiCreateTagRequestData] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiCreateTagRequestData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

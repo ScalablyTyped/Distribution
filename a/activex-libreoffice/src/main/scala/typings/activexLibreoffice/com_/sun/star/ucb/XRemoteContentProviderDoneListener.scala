@@ -24,8 +24,7 @@ trait XRemoteContentProviderDoneListener
 }
 object XRemoteContentProviderDoneListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     doneWithRemoteContentProviders: XRemoteContentProviderAcceptor => Unit,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XRemoteContentProviderDoneListener {
     __obj.asInstanceOf[XRemoteContentProviderDoneListener]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderDoneListenerMutableBuilder[Self <: XRemoteContentProviderDoneListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderDoneListener](x: Self) {
     
-    @scala.inline
-    def setDoneWithRemoteContentProviders(value: XRemoteContentProviderAcceptor => Unit): Self = StObject.set(x, "doneWithRemoteContentProviders", js.Any.fromFunction1(value))
+    inline def setDoneWithRemoteContentProviders(value: XRemoteContentProviderAcceptor => Unit): Self = StObject.set(x, "doneWithRemoteContentProviders", js.Any.fromFunction1(value))
   }
 }

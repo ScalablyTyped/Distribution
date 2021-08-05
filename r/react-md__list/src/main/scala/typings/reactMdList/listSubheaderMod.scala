@@ -26,20 +26,16 @@ object listSubheaderMod {
   }
   object ListSubheaderProps {
     
-    @scala.inline
-    def apply(): ListSubheaderProps = {
+    inline def apply(): ListSubheaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListSubheaderProps]
     }
     
-    @scala.inline
-    implicit class ListSubheaderPropsMutableBuilder[Self <: ListSubheaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListSubheaderProps](x: Self) {
       
-      @scala.inline
-      def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+      inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+      inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     }
   }
 }

@@ -23,22 +23,17 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(Condition: FilterConditionString, Key: String, Value: Arn): Filter = {
+  inline def apply(Condition: FilterConditionString, Key: String, Value: Arn): Filter = {
     val __obj = js.Dynamic.literal(Condition = Condition.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setCondition(value: FilterConditionString): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: FilterConditionString): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Arn): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Arn): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -49,38 +49,28 @@ object fileSystem {
   }
   object AcceptOptions {
     
-    @scala.inline
-    def apply(): AcceptOptions = {
+    inline def apply(): AcceptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AcceptOptions]
     }
     
-    @scala.inline
-    implicit class AcceptOptionsMutableBuilder[Self <: AcceptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AcceptOptions](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+      inline def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
+      inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
       
-      @scala.inline
-      def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+      inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
     }
   }
   
@@ -93,18 +83,15 @@ object fileSystem {
   }
   object ChooseDirectoryEntryOptions {
     
-    @scala.inline
-    def apply(): ChooseDirectoryEntryOptions = {
+    inline def apply(): ChooseDirectoryEntryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("openDirectory")
       __obj.asInstanceOf[ChooseDirectoryEntryOptions]
     }
     
-    @scala.inline
-    implicit class ChooseDirectoryEntryOptionsMutableBuilder[Self <: ChooseDirectoryEntryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChooseDirectoryEntryOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: openDirectory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: openDirectory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,35 +105,30 @@ object fileSystem {
   trait ChooseEntryOptions extends StObject
   object ChooseEntryOptions {
     
-    @scala.inline
-    def ChooseDirectoryEntryOptions(): typings.chromeApps.chrome.fileSystem.ChooseDirectoryEntryOptions = {
+    inline def ChooseDirectoryEntryOptions(): typings.chromeApps.chrome.fileSystem.ChooseDirectoryEntryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("openDirectory")
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseDirectoryEntryOptions]
     }
     
-    @scala.inline
-    def ChooseEntryOptionsBase(): typings.chromeApps.chrome.fileSystem.ChooseEntryOptionsBase = {
+    inline def ChooseEntryOptionsBase(): typings.chromeApps.chrome.fileSystem.ChooseEntryOptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseEntryOptionsBase]
     }
     
-    @scala.inline
-    def ChooseFileEntryOptions(`type`: openFile | openWritableFile): typings.chromeApps.chrome.fileSystem.ChooseFileEntryOptions = {
+    inline def ChooseFileEntryOptions(`type`: openFile | openWritableFile): typings.chromeApps.chrome.fileSystem.ChooseFileEntryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseFileEntryOptions]
     }
     
-    @scala.inline
-    def ChooseMultipleFilesEntryOptions(`type`: openFile | openWritableFile): typings.chromeApps.chrome.fileSystem.ChooseMultipleFilesEntryOptions = {
+    inline def ChooseMultipleFilesEntryOptions(`type`: openFile | openWritableFile): typings.chromeApps.chrome.fileSystem.ChooseMultipleFilesEntryOptions = {
       val __obj = js.Dynamic.literal(acceptsMultiple = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseMultipleFilesEntryOptions]
     }
     
-    @scala.inline
-    def ChooseSaveFileEntryOptions(): typings.chromeApps.chrome.fileSystem.ChooseSaveFileEntryOptions = {
+    inline def ChooseSaveFileEntryOptions(): typings.chromeApps.chrome.fileSystem.ChooseSaveFileEntryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("saveFile")
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseSaveFileEntryOptions]
@@ -183,35 +165,26 @@ object fileSystem {
   }
   object ChooseEntryOptionsBase {
     
-    @scala.inline
-    def apply(): ChooseEntryOptionsBase = {
+    inline def apply(): ChooseEntryOptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChooseEntryOptionsBase]
     }
     
-    @scala.inline
-    implicit class ChooseEntryOptionsBaseMutableBuilder[Self <: ChooseEntryOptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: ChooseEntryOptionsBase](x: Self) {
       
-      @scala.inline
-      def setAccepts(value: js.Array[AcceptOptions]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
+      inline def setAccepts(value: js.Array[AcceptOptions]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptsAllTypes(value: Boolean): Self = StObject.set(x, "acceptsAllTypes", value.asInstanceOf[js.Any])
+      inline def setAcceptsAllTypes(value: Boolean): Self = StObject.set(x, "acceptsAllTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptsAllTypesUndefined: Self = StObject.set(x, "acceptsAllTypes", js.undefined)
+      inline def setAcceptsAllTypesUndefined: Self = StObject.set(x, "acceptsAllTypes", js.undefined)
       
-      @scala.inline
-      def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
+      inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
       
-      @scala.inline
-      def setAcceptsVarargs(value: AcceptOptions*): Self = StObject.set(x, "accepts", js.Array(value :_*))
+      inline def setAcceptsVarargs(value: AcceptOptions*): Self = StObject.set(x, "accepts", js.Array(value :_*))
       
-      @scala.inline
-      def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
+      inline def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedNameUndefined: Self = StObject.set(x, "suggestedName", js.undefined)
+      inline def setSuggestedNameUndefined: Self = StObject.set(x, "suggestedName", js.undefined)
     }
   }
   
@@ -233,24 +206,19 @@ object fileSystem {
   }
   object ChooseFileEntryOptions {
     
-    @scala.inline
-    def apply(`type`: openFile | openWritableFile): ChooseFileEntryOptions = {
+    inline def apply(`type`: openFile | openWritableFile): ChooseFileEntryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChooseFileEntryOptions]
     }
     
-    @scala.inline
-    implicit class ChooseFileEntryOptionsMutableBuilder[Self <: ChooseFileEntryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChooseFileEntryOptions](x: Self) {
       
-      @scala.inline
-      def setAcceptsMultiple(value: `false`): Self = StObject.set(x, "acceptsMultiple", value.asInstanceOf[js.Any])
+      inline def setAcceptsMultiple(value: `false`): Self = StObject.set(x, "acceptsMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptsMultipleUndefined: Self = StObject.set(x, "acceptsMultiple", js.undefined)
+      inline def setAcceptsMultipleUndefined: Self = StObject.set(x, "acceptsMultiple", js.undefined)
       
-      @scala.inline
-      def setType(value: openFile | openWritableFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: openFile | openWritableFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,21 +240,17 @@ object fileSystem {
   }
   object ChooseMultipleFilesEntryOptions {
     
-    @scala.inline
-    def apply(`type`: openFile | openWritableFile): ChooseMultipleFilesEntryOptions = {
+    inline def apply(`type`: openFile | openWritableFile): ChooseMultipleFilesEntryOptions = {
       val __obj = js.Dynamic.literal(acceptsMultiple = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChooseMultipleFilesEntryOptions]
     }
     
-    @scala.inline
-    implicit class ChooseMultipleFilesEntryOptionsMutableBuilder[Self <: ChooseMultipleFilesEntryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChooseMultipleFilesEntryOptions](x: Self) {
       
-      @scala.inline
-      def setAcceptsMultiple(value: `true`): Self = StObject.set(x, "acceptsMultiple", value.asInstanceOf[js.Any])
+      inline def setAcceptsMultiple(value: `true`): Self = StObject.set(x, "acceptsMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: openFile | openWritableFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: openFile | openWritableFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -299,18 +263,15 @@ object fileSystem {
   }
   object ChooseSaveFileEntryOptions {
     
-    @scala.inline
-    def apply(): ChooseSaveFileEntryOptions = {
+    inline def apply(): ChooseSaveFileEntryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("saveFile")
       __obj.asInstanceOf[ChooseSaveFileEntryOptions]
     }
     
-    @scala.inline
-    implicit class ChooseSaveFileEntryOptionsMutableBuilder[Self <: ChooseSaveFileEntryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChooseSaveFileEntryOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: saveFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: saveFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,23 +294,18 @@ object fileSystem {
   }
   object Volume {
     
-    @scala.inline
-    def apply(volumeId: String): Volume = {
+    inline def apply(volumeId: String): Volume = {
       val __obj = js.Dynamic.literal(volumeId = volumeId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Volume]
     }
     
-    @scala.inline
-    implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
+    extension [Self <: Volume](x: Self) {
       
-      @scala.inline
-      def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+      inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+      inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
     }
   }
 }

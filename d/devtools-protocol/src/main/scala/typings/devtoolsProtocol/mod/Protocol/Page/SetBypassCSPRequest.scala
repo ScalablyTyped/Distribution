@@ -13,16 +13,13 @@ trait SetBypassCSPRequest extends StObject {
 }
 object SetBypassCSPRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetBypassCSPRequest = {
+  inline def apply(enabled: Boolean): SetBypassCSPRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBypassCSPRequest]
   }
   
-  @scala.inline
-  implicit class SetBypassCSPRequestMutableBuilder[Self <: SetBypassCSPRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetBypassCSPRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

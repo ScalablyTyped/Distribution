@@ -103,8 +103,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+      inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
     /**
@@ -122,8 +121,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+      inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
     /**
@@ -182,15 +180,13 @@ object global {
     /**
       * Rebuild a network that has been stored in a json using the method toJSON().
       */
-    @scala.inline
-    def fromJSON(exported: js.Any): typings.synaptic.mod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[typings.synaptic.mod.Network]
+    inline def fromJSON(exported: js.Any): typings.synaptic.mod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[typings.synaptic.mod.Network]
     
     /**
       * Creates a static String to store the source code of the functions that are identical for all the workers (train, _trainSet, test).
       * @returns Source code that can train a network inside a worker.
       */
-    @scala.inline
-    def getWorkerSharedFunctions(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkerSharedFunctions")().asInstanceOf[String]
+    inline def getWorkerSharedFunctions(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkerSharedFunctions")().asInstanceOf[String]
   }
   
   /* was `typeof Synaptic.Neuron` */
@@ -223,8 +219,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+      inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
     /* was `typeof Connection` */
@@ -242,12 +237,10 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+      inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
-    @scala.inline
-    def quantity(): Connections = ^.asInstanceOf[js.Dynamic].applyDynamic("quantity")().asInstanceOf[Connections]
+    inline def quantity(): Connections = ^.asInstanceOf[js.Dynamic].applyDynamic("quantity")().asInstanceOf[Connections]
     
     object squash {
       
@@ -272,8 +265,7 @@ object global {
       val TANH: SquashingFunction = js.native
     }
     
-    @scala.inline
-    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+    inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   /* was `typeof Synaptic.Trainer` */

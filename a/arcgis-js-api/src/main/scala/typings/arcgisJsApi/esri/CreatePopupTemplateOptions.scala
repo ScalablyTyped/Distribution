@@ -27,8 +27,7 @@ trait CreatePopupTemplateOptions
 }
 object CreatePopupTemplateOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -37,22 +36,16 @@ object CreatePopupTemplateOptions {
     __obj.asInstanceOf[CreatePopupTemplateOptions]
   }
   
-  @scala.inline
-  implicit class CreatePopupTemplateOptionsMutableBuilder[Self <: CreatePopupTemplateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePopupTemplateOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreFieldTypes(value: js.Array[String]): Self = StObject.set(x, "ignoreFieldTypes", value.asInstanceOf[js.Any])
+    inline def setIgnoreFieldTypes(value: js.Array[String]): Self = StObject.set(x, "ignoreFieldTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreFieldTypesUndefined: Self = StObject.set(x, "ignoreFieldTypes", js.undefined)
+    inline def setIgnoreFieldTypesUndefined: Self = StObject.set(x, "ignoreFieldTypes", js.undefined)
     
-    @scala.inline
-    def setIgnoreFieldTypesVarargs(value: String*): Self = StObject.set(x, "ignoreFieldTypes", js.Array(value :_*))
+    inline def setIgnoreFieldTypesVarargs(value: String*): Self = StObject.set(x, "ignoreFieldTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibleFieldNames(value: Set[String]): Self = StObject.set(x, "visibleFieldNames", value.asInstanceOf[js.Any])
+    inline def setVisibleFieldNames(value: Set[String]): Self = StObject.set(x, "visibleFieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleFieldNamesUndefined: Self = StObject.set(x, "visibleFieldNames", js.undefined)
+    inline def setVisibleFieldNamesUndefined: Self = StObject.set(x, "visibleFieldNames", js.undefined)
   }
 }

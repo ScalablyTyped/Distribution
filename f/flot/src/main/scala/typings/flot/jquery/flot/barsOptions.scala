@@ -16,31 +16,23 @@ trait barsOptions
 }
 object barsOptions {
   
-  @scala.inline
-  def apply(): barsOptions = {
+  inline def apply(): barsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[barsOptions]
   }
   
-  @scala.inline
-  implicit class barsOptionsMutableBuilder[Self <: barsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: barsOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
+    inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
+    inline def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
   }
 }

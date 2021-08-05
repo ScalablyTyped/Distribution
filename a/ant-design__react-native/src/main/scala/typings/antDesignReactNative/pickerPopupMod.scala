@@ -27,13 +27,11 @@ object pickerPopupMod {
     @JSImport("@ant-design/react-native/lib/picker/Popup", "default.contextType")
     @js.native
     def contextType: js.UndefOr[Context[js.Any]] = js.native
-    @scala.inline
-    def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/picker/Popup", "default.defaultProps")
     @js.native
     def defaultProps: ActionTextActiveOpacity = js.native
-    @scala.inline
-    def defaultProps_=(x: ActionTextActiveOpacity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ActionTextActiveOpacity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

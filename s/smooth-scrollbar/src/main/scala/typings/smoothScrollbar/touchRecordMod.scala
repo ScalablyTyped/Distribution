@@ -14,23 +14,23 @@ object touchRecordMod {
   @js.native
   class TouchRecord () extends StObject {
     
-    var _activeTouchID: js.Any = js.native
+    /* private */ var _activeTouchID: js.Any = js.native
     
-    var _add: js.Any = js.native
+    /* private */ var _add: js.Any = js.native
     
-    var _delete: js.Any = js.native
+    /* private */ var _delete: js.Any = js.native
     
-    var _getActiveTracker: js.Any = js.native
+    /* private */ var _getActiveTracker: js.Any = js.native
     
-    var _has: js.Any = js.native
+    /* private */ var _has: js.Any = js.native
     
-    val _primitiveValue: js.Any = js.native
+    /* private */ val _primitiveValue: js.Any = js.native
     
-    var _renew: js.Any = js.native
+    /* private */ var _renew: js.Any = js.native
     
-    var _setActiveID: js.Any = js.native
+    /* private */ var _setActiveID: js.Any = js.native
     
-    var _touchList: js.Any = js.native
+    /* private */ var _touchList: js.Any = js.native
     
     def getDelta(): Y = js.native
     

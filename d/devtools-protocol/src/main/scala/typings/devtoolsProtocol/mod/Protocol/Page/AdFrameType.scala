@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdFrameType extends StObject
 object AdFrameType {
   
-  @scala.inline
-  def child: typings.devtoolsProtocol.devtoolsProtocolStrings.child = "child".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.child]
+  inline def child: typings.devtoolsProtocol.devtoolsProtocolStrings.child = "child".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.child]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def root: typings.devtoolsProtocol.devtoolsProtocolStrings.root = "root".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.root]
+  inline def root: typings.devtoolsProtocol.devtoolsProtocolStrings.root = "root".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.root]
 }

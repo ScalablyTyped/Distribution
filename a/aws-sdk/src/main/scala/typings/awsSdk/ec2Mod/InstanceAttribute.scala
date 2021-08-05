@@ -88,118 +88,81 @@ trait InstanceAttribute extends StObject {
 }
 object InstanceAttribute {
   
-  @scala.inline
-  def apply(): InstanceAttribute = {
+  inline def apply(): InstanceAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceAttribute]
   }
   
-  @scala.inline
-  implicit class InstanceAttributeMutableBuilder[Self <: InstanceAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceAttribute](x: Self) {
     
-    @scala.inline
-    def setBlockDeviceMappings(value: InstanceBlockDeviceMappingList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
+    inline def setBlockDeviceMappings(value: InstanceBlockDeviceMappingList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
+    inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    @scala.inline
-    def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setDisableApiTermination(value: AttributeBooleanValue): Self = StObject.set(x, "DisableApiTermination", value.asInstanceOf[js.Any])
+    inline def setDisableApiTermination(value: AttributeBooleanValue): Self = StObject.set(x, "DisableApiTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableApiTerminationUndefined: Self = StObject.set(x, "DisableApiTermination", js.undefined)
+    inline def setDisableApiTerminationUndefined: Self = StObject.set(x, "DisableApiTermination", js.undefined)
     
-    @scala.inline
-    def setEbsOptimized(value: AttributeBooleanValue): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
+    inline def setEbsOptimized(value: AttributeBooleanValue): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
+    inline def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
-    @scala.inline
-    def setEnaSupport(value: AttributeBooleanValue): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
+    inline def setEnaSupport(value: AttributeBooleanValue): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnaSupportUndefined: Self = StObject.set(x, "EnaSupport", js.undefined)
+    inline def setEnaSupportUndefined: Self = StObject.set(x, "EnaSupport", js.undefined)
     
-    @scala.inline
-    def setEnclaveOptions(value: EnclaveOptions): Self = StObject.set(x, "EnclaveOptions", value.asInstanceOf[js.Any])
+    inline def setEnclaveOptions(value: EnclaveOptions): Self = StObject.set(x, "EnclaveOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnclaveOptionsUndefined: Self = StObject.set(x, "EnclaveOptions", js.undefined)
+    inline def setEnclaveOptionsUndefined: Self = StObject.set(x, "EnclaveOptions", js.undefined)
     
-    @scala.inline
-    def setGroups(value: GroupIdentifierList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: GroupIdentifierList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setInstanceInitiatedShutdownBehavior(value: AttributeValue): Self = StObject.set(x, "InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+    inline def setInstanceInitiatedShutdownBehavior(value: AttributeValue): Self = StObject.set(x, "InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceInitiatedShutdownBehaviorUndefined: Self = StObject.set(x, "InstanceInitiatedShutdownBehavior", js.undefined)
+    inline def setInstanceInitiatedShutdownBehaviorUndefined: Self = StObject.set(x, "InstanceInitiatedShutdownBehavior", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: AttributeValue): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: AttributeValue): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setKernelId(value: AttributeValue): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
+    inline def setKernelId(value: AttributeValue): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
+    inline def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
     
-    @scala.inline
-    def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
+    inline def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
+    inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    @scala.inline
-    def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setRamdiskId(value: AttributeValue): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
+    inline def setRamdiskId(value: AttributeValue): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
+    inline def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
     
-    @scala.inline
-    def setRootDeviceName(value: AttributeValue): Self = StObject.set(x, "RootDeviceName", value.asInstanceOf[js.Any])
+    inline def setRootDeviceName(value: AttributeValue): Self = StObject.set(x, "RootDeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDeviceNameUndefined: Self = StObject.set(x, "RootDeviceName", js.undefined)
+    inline def setRootDeviceNameUndefined: Self = StObject.set(x, "RootDeviceName", js.undefined)
     
-    @scala.inline
-    def setSourceDestCheck(value: AttributeBooleanValue): Self = StObject.set(x, "SourceDestCheck", value.asInstanceOf[js.Any])
+    inline def setSourceDestCheck(value: AttributeBooleanValue): Self = StObject.set(x, "SourceDestCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDestCheckUndefined: Self = StObject.set(x, "SourceDestCheck", js.undefined)
+    inline def setSourceDestCheckUndefined: Self = StObject.set(x, "SourceDestCheck", js.undefined)
     
-    @scala.inline
-    def setSriovNetSupport(value: AttributeValue): Self = StObject.set(x, "SriovNetSupport", value.asInstanceOf[js.Any])
+    inline def setSriovNetSupport(value: AttributeValue): Self = StObject.set(x, "SriovNetSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSriovNetSupportUndefined: Self = StObject.set(x, "SriovNetSupport", js.undefined)
+    inline def setSriovNetSupportUndefined: Self = StObject.set(x, "SriovNetSupport", js.undefined)
     
-    @scala.inline
-    def setUserData(value: AttributeValue): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: AttributeValue): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
+    inline def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
   }
 }

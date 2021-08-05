@@ -41,30 +41,23 @@ object skus {
   }
   object IInventory {
     
-    @scala.inline
-    def apply(`type`: finite | bucket | infinite): IInventory = {
+    inline def apply(`type`: finite | bucket | infinite): IInventory = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IInventory]
     }
     
-    @scala.inline
-    implicit class IInventoryMutableBuilder[Self <: IInventory] (val x: Self) extends AnyVal {
+    extension [Self <: IInventory](x: Self) {
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
       
-      @scala.inline
-      def setType(value: finite | bucket | infinite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: finite | bucket | infinite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: in_stock | limited | out_of_stock): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: in_stock | limited | out_of_stock): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -123,8 +116,7 @@ object skus {
   }
   object ISku {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       attributes: ISkuAttributes,
       created: Double,
@@ -144,47 +136,33 @@ object skus {
       __obj.asInstanceOf[ISku]
     }
     
-    @scala.inline
-    implicit class ISkuMutableBuilder[Self <: ISku] (val x: Self) extends AnyVal {
+    extension [Self <: ISku](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributes(value: ISkuAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: ISkuAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInventory(value: IInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+      inline def setInventory(value: IInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: sku): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: sku): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
+      inline def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct(value: String | IProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String | IProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,56 +219,40 @@ object skus {
   }
   object ISkuCreationOptions {
     
-    @scala.inline
-    def apply(currency: String, inventory: IInventory, price: Double, product: String): ISkuCreationOptions = {
+    inline def apply(currency: String, inventory: IInventory, price: Double, product: String): ISkuCreationOptions = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], inventory = inventory.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISkuCreationOptions]
     }
     
-    @scala.inline
-    implicit class ISkuCreationOptionsMutableBuilder[Self <: ISkuCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISkuCreationOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: ISkuAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: ISkuAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setInventory(value: IInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+      inline def setInventory(value: IInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
+      inline def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
+      inline def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
       
-      @scala.inline
-      def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     }
   }
   
@@ -329,47 +291,34 @@ object skus {
   }
   object ISkuListOptions {
     
-    @scala.inline
-    def apply(): ISkuListOptions = {
+    inline def apply(): ISkuListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISkuListOptions]
     }
     
-    @scala.inline
-    implicit class ISkuListOptionsMutableBuilder[Self <: ISkuListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISkuListOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: ISkuAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: ISkuAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+      inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setIn_stock(value: Boolean): Self = StObject.set(x, "in_stock", value.asInstanceOf[js.Any])
+      inline def setIn_stock(value: Boolean): Self = StObject.set(x, "in_stock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIn_stockUndefined: Self = StObject.set(x, "in_stock", js.undefined)
+      inline def setIn_stockUndefined: Self = StObject.set(x, "in_stock", js.undefined)
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+      inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     }
   }
   
@@ -413,56 +362,40 @@ object skus {
   }
   object ISkuUpdateOptions {
     
-    @scala.inline
-    def apply(): ISkuUpdateOptions = {
+    inline def apply(): ISkuUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISkuUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ISkuUpdateOptionsMutableBuilder[Self <: ISkuUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISkuUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setInventory(value: IInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+      inline def setInventory(value: IInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
+      inline def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
       
-      @scala.inline
-      def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
+      inline def setPackage_dimensions(value: IPackageDimensions): Self = StObject.set(x, "package_dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
+      inline def setPackage_dimensionsUndefined: Self = StObject.set(x, "package_dimensions", js.undefined)
       
-      @scala.inline
-      def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+      inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+      inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     }
   }
 }

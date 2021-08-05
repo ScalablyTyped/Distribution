@@ -18,25 +18,19 @@ trait ChangeBatch extends StObject {
 }
 object ChangeBatch {
   
-  @scala.inline
-  def apply(Changes: Changes): ChangeBatch = {
+  inline def apply(Changes: Changes): ChangeBatch = {
     val __obj = js.Dynamic.literal(Changes = Changes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeBatch]
   }
   
-  @scala.inline
-  implicit class ChangeBatchMutableBuilder[Self <: ChangeBatch] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeBatch](x: Self) {
     
-    @scala.inline
-    def setChanges(value: Changes): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: Changes): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: Change*): Self = StObject.set(x, "Changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "Changes", js.Array(value :_*))
     
-    @scala.inline
-    def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
   }
 }

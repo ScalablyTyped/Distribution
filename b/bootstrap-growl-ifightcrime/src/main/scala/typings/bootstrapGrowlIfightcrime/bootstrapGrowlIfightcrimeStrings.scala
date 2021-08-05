@@ -11,69 +11,59 @@ object bootstrapGrowlIfightcrimeStrings {
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait bottom
     extends StObject
        with OffsetPositionType
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait center
     extends StObject
        with AlignType
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait danger
     extends StObject
        with _AlertType
-  @scala.inline
-  def danger: danger = "danger".asInstanceOf[danger]
+  inline def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
   sealed trait info
     extends StObject
        with _AlertType
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait left
     extends StObject
        with AlignType
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait right
     extends StObject
        with AlignType
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait success
     extends StObject
        with _AlertType
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait top
     extends StObject
        with OffsetPositionType
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait warning
     extends StObject
        with _AlertType
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

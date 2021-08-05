@@ -16,19 +16,15 @@ trait Hook
 }
 object Hook {
   
-  @scala.inline
-  def apply(hook: typings.jestTypes.circusMod.Hook): Hook = {
+  inline def apply(hook: typings.jestTypes.circusMod.Hook): Hook = {
     val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], name = "hook_start")
     __obj.asInstanceOf[Hook]
   }
   
-  @scala.inline
-  implicit class HookMutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
+  extension [Self <: Hook](x: Self) {
     
-    @scala.inline
-    def setHook(value: typings.jestTypes.circusMod.Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: typings.jestTypes.circusMod.Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: hook_start): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: hook_start): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

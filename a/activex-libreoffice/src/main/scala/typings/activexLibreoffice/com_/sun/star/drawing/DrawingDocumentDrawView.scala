@@ -76,8 +76,7 @@ trait DrawingDocumentDrawView
 }
 object DrawingDocumentDrawView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: XDrawPage,
     Frame: XFrame,
     IsLayerMode: Boolean,
@@ -154,25 +153,18 @@ object DrawingDocumentDrawView {
     __obj.asInstanceOf[DrawingDocumentDrawView]
   }
   
-  @scala.inline
-  implicit class DrawingDocumentDrawViewMutableBuilder[Self <: DrawingDocumentDrawView] (val x: Self) extends AnyVal {
+  extension [Self <: DrawingDocumentDrawView](x: Self) {
     
-    @scala.inline
-    def setIsLayerMode(value: Boolean): Self = StObject.set(x, "IsLayerMode", value.asInstanceOf[js.Any])
+    inline def setIsLayerMode(value: Boolean): Self = StObject.set(x, "IsLayerMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMasterPageMode(value: Boolean): Self = StObject.set(x, "IsMasterPageMode", value.asInstanceOf[js.Any])
+    inline def setIsMasterPageMode(value: Boolean): Self = StObject.set(x, "IsMasterPageMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewOffset(value: Point): Self = StObject.set(x, "ViewOffset", value.asInstanceOf[js.Any])
+    inline def setViewOffset(value: Point): Self = StObject.set(x, "ViewOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
+    inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomType(value: Double): Self = StObject.set(x, "ZoomType", value.asInstanceOf[js.Any])
+    inline def setZoomType(value: Double): Self = StObject.set(x, "ZoomType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
+    inline def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
   }
 }

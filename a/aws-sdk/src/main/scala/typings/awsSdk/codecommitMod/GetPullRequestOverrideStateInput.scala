@@ -18,19 +18,15 @@ trait GetPullRequestOverrideStateInput extends StObject {
 }
 object GetPullRequestOverrideStateInput {
   
-  @scala.inline
-  def apply(pullRequestId: PullRequestId, revisionId: RevisionId): GetPullRequestOverrideStateInput = {
+  inline def apply(pullRequestId: PullRequestId, revisionId: RevisionId): GetPullRequestOverrideStateInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPullRequestOverrideStateInput]
   }
   
-  @scala.inline
-  implicit class GetPullRequestOverrideStateInputMutableBuilder[Self <: GetPullRequestOverrideStateInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPullRequestOverrideStateInput](x: Self) {
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
   }
 }

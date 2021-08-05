@@ -12,19 +12,15 @@ trait UploadBlockBlobOptions
 }
 object UploadBlockBlobOptions {
   
-  @scala.inline
-  def apply(): UploadBlockBlobOptions = {
+  inline def apply(): UploadBlockBlobOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadBlockBlobOptions]
   }
   
-  @scala.inline
-  implicit class UploadBlockBlobOptionsMutableBuilder[Self <: UploadBlockBlobOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UploadBlockBlobOptions](x: Self) {
     
-    @scala.inline
-    def setBlockIdPrefix(value: String): Self = StObject.set(x, "blockIdPrefix", value.asInstanceOf[js.Any])
+    inline def setBlockIdPrefix(value: String): Self = StObject.set(x, "blockIdPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdPrefixUndefined: Self = StObject.set(x, "blockIdPrefix", js.undefined)
+    inline def setBlockIdPrefixUndefined: Self = StObject.set(x, "blockIdPrefix", js.undefined)
   }
 }

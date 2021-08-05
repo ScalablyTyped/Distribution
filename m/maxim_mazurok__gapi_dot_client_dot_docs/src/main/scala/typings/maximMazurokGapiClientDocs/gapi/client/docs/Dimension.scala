@@ -14,25 +14,19 @@ trait Dimension extends StObject {
 }
 object Dimension {
   
-  @scala.inline
-  def apply(): Dimension = {
+  inline def apply(): Dimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dimension]
   }
   
-  @scala.inline
-  implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+  extension [Self <: Dimension](x: Self) {
     
-    @scala.inline
-    def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
+    inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
+    inline def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

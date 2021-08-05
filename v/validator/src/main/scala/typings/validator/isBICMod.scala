@@ -13,6 +13,5 @@ object isBICMod {
   /**
     * Check if a string is a BIC (Bank Identification Code) or SWIFT code.
     */
-  @scala.inline
-  def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

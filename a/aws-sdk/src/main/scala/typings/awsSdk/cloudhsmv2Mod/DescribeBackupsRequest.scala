@@ -28,37 +28,27 @@ trait DescribeBackupsRequest extends StObject {
 }
 object DescribeBackupsRequest {
   
-  @scala.inline
-  def apply(): DescribeBackupsRequest = {
+  inline def apply(): DescribeBackupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBackupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBackupsRequestMutableBuilder[Self <: DescribeBackupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBackupsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: BackupsMaxSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BackupsMaxSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscendingUndefined: Self = StObject.set(x, "SortAscending", js.undefined)
+    inline def setSortAscendingUndefined: Self = StObject.set(x, "SortAscending", js.undefined)
   }
 }

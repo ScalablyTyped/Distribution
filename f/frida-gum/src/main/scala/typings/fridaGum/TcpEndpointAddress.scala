@@ -20,19 +20,15 @@ trait TcpEndpointAddress
 }
 object TcpEndpointAddress {
   
-  @scala.inline
-  def apply(ip: String, port: Double): TcpEndpointAddress = {
+  inline def apply(ip: String, port: Double): TcpEndpointAddress = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpEndpointAddress]
   }
   
-  @scala.inline
-  implicit class TcpEndpointAddressMutableBuilder[Self <: TcpEndpointAddress] (val x: Self) extends AnyVal {
+  extension [Self <: TcpEndpointAddress](x: Self) {
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

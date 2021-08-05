@@ -35,64 +35,45 @@ trait CatFielddata
 }
 object CatFielddata {
   
-  @scala.inline
-  def apply(): CatFielddata = {
+  inline def apply(): CatFielddata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatFielddata]
   }
   
-  @scala.inline
-  implicit class CatFielddataMutableBuilder[Self <: CatFielddata] (val x: Self) extends AnyVal {
+  extension [Self <: CatFielddata](x: Self) {
     
-    @scala.inline
-    def setBytes(value: b | k | kb | m | mb | g | gb | t | tb | p | pb): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: b | k | kb | m | mb | g | gb | t | tb | p | pb): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
-    @scala.inline
-    def setFields(value: String | js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String | js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setH(value: String | js.Array[String]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: String | js.Array[String]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    @scala.inline
-    def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
     
-    @scala.inline
-    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
-    @scala.inline
-    def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+    inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
-    @scala.inline
-    def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
+    inline def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
     
-    @scala.inline
-    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

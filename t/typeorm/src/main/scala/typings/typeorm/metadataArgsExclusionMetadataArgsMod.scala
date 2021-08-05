@@ -25,26 +25,20 @@ object metadataArgsExclusionMetadataArgsMod {
   }
   object ExclusionMetadataArgs {
     
-    @scala.inline
-    def apply(expression: String, target: js.Function | String): ExclusionMetadataArgs = {
+    inline def apply(expression: String, target: js.Function | String): ExclusionMetadataArgs = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExclusionMetadataArgs]
     }
     
-    @scala.inline
-    implicit class ExclusionMetadataArgsMutableBuilder[Self <: ExclusionMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ExclusionMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

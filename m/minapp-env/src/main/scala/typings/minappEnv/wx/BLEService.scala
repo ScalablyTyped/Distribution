@@ -15,19 +15,15 @@ trait BLEService extends StObject {
 }
 object BLEService {
   
-  @scala.inline
-  def apply(isPrimary: Boolean, uuid: String): BLEService = {
+  inline def apply(isPrimary: Boolean, uuid: String): BLEService = {
     val __obj = js.Dynamic.literal(isPrimary = isPrimary.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[BLEService]
   }
   
-  @scala.inline
-  implicit class BLEServiceMutableBuilder[Self <: BLEService] (val x: Self) extends AnyVal {
+  extension [Self <: BLEService](x: Self) {
     
-    @scala.inline
-    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

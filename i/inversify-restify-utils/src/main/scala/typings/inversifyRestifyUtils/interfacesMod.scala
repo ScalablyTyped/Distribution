@@ -27,26 +27,20 @@ object interfacesMod {
     }
     object ControllerMetadata {
       
-      @scala.inline
-      def apply(middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMetadata = {
+      inline def apply(middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMetadata = {
         val __obj = js.Dynamic.literal(middleware = middleware.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[ControllerMetadata]
       }
       
-      @scala.inline
-      implicit class ControllerMetadataMutableBuilder[Self <: ControllerMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: ControllerMetadata](x: Self) {
         
-        @scala.inline
-        def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+        inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+        inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -64,8 +58,7 @@ object interfacesMod {
     }
     object ControllerMethodMetadata {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         key: String,
         method: String,
         middleware: js.Array[Middleware],
@@ -76,26 +69,19 @@ object interfacesMod {
         __obj.asInstanceOf[ControllerMethodMetadata]
       }
       
-      @scala.inline
-      implicit class ControllerMethodMetadataMutableBuilder[Self <: ControllerMethodMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: ControllerMethodMetadata](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+        inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+        inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
         
-        @scala.inline
-        def setOptions(value: RouteOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: RouteOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -118,20 +104,16 @@ object interfacesMod {
     }
     object ServerOptions {
       
-      @scala.inline
-      def apply(): ServerOptions = {
+      inline def apply(): ServerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ServerOptions]
       }
       
-      @scala.inline
-      implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ServerOptions](x: Self) {
         
-        @scala.inline
-        def setDefaultRoot(value: String): Self = StObject.set(x, "defaultRoot", value.asInstanceOf[js.Any])
+        inline def setDefaultRoot(value: String): Self = StObject.set(x, "defaultRoot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultRootUndefined: Self = StObject.set(x, "defaultRoot", js.undefined)
+        inline def setDefaultRootUndefined: Self = StObject.set(x, "defaultRoot", js.undefined)
       }
     }
     
@@ -140,14 +122,12 @@ object interfacesMod {
     trait _RouteOptions extends StObject
     object _RouteOptions {
       
-      @scala.inline
-      def Path(path: StrOrRegex): typings.inversifyRestifyUtils.anon.Path = {
+      inline def Path(path: StrOrRegex): typings.inversifyRestifyUtils.anon.Path = {
         val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.inversifyRestifyUtils.anon.Path]
       }
       
-      @scala.inline
-      def optionsObjectpathStrOrReg(
+      inline def optionsObjectpathStrOrReg(
         constructor: js.Function,
         hasOwnProperty: PropertyKey => Boolean,
         options: js.Object,

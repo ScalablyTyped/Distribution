@@ -10,8 +10,7 @@ trait Def
      with /* key */ StringDictionary[String | Def]
 object Def {
   
-  @scala.inline
-  def apply(): Def = {
+  inline def apply(): Def = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Def]
   }

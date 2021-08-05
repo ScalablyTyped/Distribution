@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlOLEVerb extends StObject
 object XlOLEVerb {
   
-  @scala.inline
-  def xlVerbOpen: `2` = 2.asInstanceOf[`2`]
+  inline def xlVerbOpen: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlVerbPrimary: `1` = 1.asInstanceOf[`1`]
+  inline def xlVerbPrimary: `1` = 1.asInstanceOf[`1`]
 }

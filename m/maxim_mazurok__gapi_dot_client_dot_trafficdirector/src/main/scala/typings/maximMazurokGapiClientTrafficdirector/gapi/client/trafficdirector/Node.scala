@@ -62,92 +62,65 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(): Node = {
+  inline def apply(): Node = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
+    inline def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildVersionUndefined: Self = StObject.set(x, "buildVersion", js.undefined)
+    inline def setBuildVersionUndefined: Self = StObject.set(x, "buildVersion", js.undefined)
     
-    @scala.inline
-    def setClientFeatures(value: js.Array[String]): Self = StObject.set(x, "clientFeatures", value.asInstanceOf[js.Any])
+    inline def setClientFeatures(value: js.Array[String]): Self = StObject.set(x, "clientFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientFeaturesUndefined: Self = StObject.set(x, "clientFeatures", js.undefined)
+    inline def setClientFeaturesUndefined: Self = StObject.set(x, "clientFeatures", js.undefined)
     
-    @scala.inline
-    def setClientFeaturesVarargs(value: String*): Self = StObject.set(x, "clientFeatures", js.Array(value :_*))
+    inline def setClientFeaturesVarargs(value: String*): Self = StObject.set(x, "clientFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setListeningAddresses(value: js.Array[Address]): Self = StObject.set(x, "listeningAddresses", value.asInstanceOf[js.Any])
+    inline def setListeningAddresses(value: js.Array[Address]): Self = StObject.set(x, "listeningAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListeningAddressesUndefined: Self = StObject.set(x, "listeningAddresses", js.undefined)
+    inline def setListeningAddressesUndefined: Self = StObject.set(x, "listeningAddresses", js.undefined)
     
-    @scala.inline
-    def setListeningAddressesVarargs(value: Address*): Self = StObject.set(x, "listeningAddresses", js.Array(value :_*))
+    inline def setListeningAddressesVarargs(value: Address*): Self = StObject.set(x, "listeningAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setLocality(value: Locality): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: Locality): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
+    inline def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.Node & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setUserAgentBuildVersion(value: BuildVersion): Self = StObject.set(x, "userAgentBuildVersion", value.asInstanceOf[js.Any])
+    inline def setUserAgentBuildVersion(value: BuildVersion): Self = StObject.set(x, "userAgentBuildVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentBuildVersionUndefined: Self = StObject.set(x, "userAgentBuildVersion", js.undefined)
+    inline def setUserAgentBuildVersionUndefined: Self = StObject.set(x, "userAgentBuildVersion", js.undefined)
     
-    @scala.inline
-    def setUserAgentName(value: String): Self = StObject.set(x, "userAgentName", value.asInstanceOf[js.Any])
+    inline def setUserAgentName(value: String): Self = StObject.set(x, "userAgentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentNameUndefined: Self = StObject.set(x, "userAgentName", js.undefined)
+    inline def setUserAgentNameUndefined: Self = StObject.set(x, "userAgentName", js.undefined)
     
-    @scala.inline
-    def setUserAgentVersion(value: String): Self = StObject.set(x, "userAgentVersion", value.asInstanceOf[js.Any])
+    inline def setUserAgentVersion(value: String): Self = StObject.set(x, "userAgentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentVersionUndefined: Self = StObject.set(x, "userAgentVersion", js.undefined)
+    inline def setUserAgentVersionUndefined: Self = StObject.set(x, "userAgentVersion", js.undefined)
   }
 }

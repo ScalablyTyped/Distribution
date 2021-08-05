@@ -11,16 +11,13 @@ trait ExtensionTermManifest extends StObject {
 }
 object ExtensionTermManifest {
   
-  @scala.inline
-  def apply(mapped: From): ExtensionTermManifest = {
+  inline def apply(mapped: From): ExtensionTermManifest = {
     val __obj = js.Dynamic.literal(mapped = mapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionTermManifest]
   }
   
-  @scala.inline
-  implicit class ExtensionTermManifestMutableBuilder[Self <: ExtensionTermManifest] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionTermManifest](x: Self) {
     
-    @scala.inline
-    def setMapped(value: From): Self = StObject.set(x, "mapped", value.asInstanceOf[js.Any])
+    inline def setMapped(value: From): Self = StObject.set(x, "mapped", value.asInstanceOf[js.Any])
   }
 }

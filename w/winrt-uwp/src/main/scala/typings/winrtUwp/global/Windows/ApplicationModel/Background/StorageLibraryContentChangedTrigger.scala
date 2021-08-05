@@ -24,8 +24,7 @@ object StorageLibraryContentChangedTrigger {
     * @return A trigger that monitors the specified location.
     */
   /* static member */
-  @scala.inline
-  def create(storageLibrary: StorageLibrary): typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(storageLibrary.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger]
+  inline def create(storageLibrary: StorageLibrary): typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(storageLibrary.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger]
   
   /**
     * Creates a trigger that will fire when a file is changed in any of the specified libraries.
@@ -33,6 +32,5 @@ object StorageLibraryContentChangedTrigger {
     * @return A trigger that monitors the specified location(s).
     */
   /* static member */
-  @scala.inline
-  def createFromLibraries(storageLibraries: IIterable[StorageLibrary]): typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromLibraries")(storageLibraries.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger]
+  inline def createFromLibraries(storageLibraries: IIterable[StorageLibrary]): typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromLibraries")(storageLibraries.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger]
 }

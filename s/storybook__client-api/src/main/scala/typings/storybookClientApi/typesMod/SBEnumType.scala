@@ -16,22 +16,17 @@ trait SBEnumType
 }
 object SBEnumType {
   
-  @scala.inline
-  def apply(value: js.Array[String | Double]): SBEnumType = {
+  inline def apply(value: js.Array[String | Double]): SBEnumType = {
     val __obj = js.Dynamic.literal(name = "enum", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SBEnumType]
   }
   
-  @scala.inline
-  implicit class SBEnumTypeMutableBuilder[Self <: SBEnumType] (val x: Self) extends AnyVal {
+  extension [Self <: SBEnumType](x: Self) {
     
-    @scala.inline
-    def setName(value: `enum`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: `enum`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[String | Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[String | Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

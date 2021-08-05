@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WrapsTypeParameterCache extends StObject {
   
-  var _wrapsTypeParameterCache: js.Any
+  /* private */ var _wrapsTypeParameterCache: js.Any
   
   def getWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap): Double
   
@@ -14,8 +14,7 @@ trait WrapsTypeParameterCache extends StObject {
 }
 object WrapsTypeParameterCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _wrapsTypeParameterCache: js.Any,
     getWrapsTypeParameter: TypeArgumentMap => Double,
     setWrapsTypeParameter: (TypeArgumentMap, Double) => Unit
@@ -24,16 +23,12 @@ object WrapsTypeParameterCache {
     __obj.asInstanceOf[WrapsTypeParameterCache]
   }
   
-  @scala.inline
-  implicit class WrapsTypeParameterCacheMutableBuilder[Self <: WrapsTypeParameterCache] (val x: Self) extends AnyVal {
+  extension [Self <: WrapsTypeParameterCache](x: Self) {
     
-    @scala.inline
-    def setGetWrapsTypeParameter(value: TypeArgumentMap => Double): Self = StObject.set(x, "getWrapsTypeParameter", js.Any.fromFunction1(value))
+    inline def setGetWrapsTypeParameter(value: TypeArgumentMap => Double): Self = StObject.set(x, "getWrapsTypeParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWrapsTypeParameter(value: (TypeArgumentMap, Double) => Unit): Self = StObject.set(x, "setWrapsTypeParameter", js.Any.fromFunction2(value))
+    inline def setSetWrapsTypeParameter(value: (TypeArgumentMap, Double) => Unit): Self = StObject.set(x, "setWrapsTypeParameter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_wrapsTypeParameterCache(value: js.Any): Self = StObject.set(x, "_wrapsTypeParameterCache", value.asInstanceOf[js.Any])
+    inline def set_wrapsTypeParameterCache(value: js.Any): Self = StObject.set(x, "_wrapsTypeParameterCache", value.asInstanceOf[js.Any])
   }
 }

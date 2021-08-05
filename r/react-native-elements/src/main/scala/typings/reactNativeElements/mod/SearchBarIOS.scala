@@ -26,31 +26,23 @@ trait SearchBarIOS
 }
 object SearchBarIOS {
   
-  @scala.inline
-  def apply(): SearchBarIOS = {
+  inline def apply(): SearchBarIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBarIOS]
   }
   
-  @scala.inline
-  implicit class SearchBarIOSMutableBuilder[Self <: SearchBarIOS] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBarIOS](x: Self) {
     
-    @scala.inline
-    def setCancelButtonProps(value: PartialTouchableOpacityPr): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
+    inline def setCancelButtonProps(value: PartialTouchableOpacityPr): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
+    inline def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
     
-    @scala.inline
-    def setCancelButtonTitle(value: String): Self = StObject.set(x, "cancelButtonTitle", value.asInstanceOf[js.Any])
+    inline def setCancelButtonTitle(value: String): Self = StObject.set(x, "cancelButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelButtonTitleUndefined: Self = StObject.set(x, "cancelButtonTitle", js.undefined)
+    inline def setCancelButtonTitleUndefined: Self = StObject.set(x, "cancelButtonTitle", js.undefined)
     
-    @scala.inline
-    def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
+    inline def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
+    inline def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
   }
 }

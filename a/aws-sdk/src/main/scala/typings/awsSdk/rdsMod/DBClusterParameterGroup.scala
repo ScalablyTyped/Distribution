@@ -28,37 +28,27 @@ trait DBClusterParameterGroup extends StObject {
 }
 object DBClusterParameterGroup {
   
-  @scala.inline
-  def apply(): DBClusterParameterGroup = {
+  inline def apply(): DBClusterParameterGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterParameterGroup]
   }
   
-  @scala.inline
-  implicit class DBClusterParameterGroupMutableBuilder[Self <: DBClusterParameterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterParameterGroup](x: Self) {
     
-    @scala.inline
-    def setDBClusterParameterGroupArn(value: String): Self = StObject.set(x, "DBClusterParameterGroupArn", value.asInstanceOf[js.Any])
+    inline def setDBClusterParameterGroupArn(value: String): Self = StObject.set(x, "DBClusterParameterGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterParameterGroupArnUndefined: Self = StObject.set(x, "DBClusterParameterGroupArn", js.undefined)
+    inline def setDBClusterParameterGroupArnUndefined: Self = StObject.set(x, "DBClusterParameterGroupArn", js.undefined)
     
-    @scala.inline
-    def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterParameterGroupNameUndefined: Self = StObject.set(x, "DBClusterParameterGroupName", js.undefined)
+    inline def setDBClusterParameterGroupNameUndefined: Self = StObject.set(x, "DBClusterParameterGroupName", js.undefined)
     
-    @scala.inline
-    def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupFamilyUndefined: Self = StObject.set(x, "DBParameterGroupFamily", js.undefined)
+    inline def setDBParameterGroupFamilyUndefined: Self = StObject.set(x, "DBParameterGroupFamily", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

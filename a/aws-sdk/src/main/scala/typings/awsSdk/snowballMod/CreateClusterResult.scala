@@ -13,19 +13,15 @@ trait CreateClusterResult extends StObject {
 }
 object CreateClusterResult {
   
-  @scala.inline
-  def apply(): CreateClusterResult = {
+  inline def apply(): CreateClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClusterResult]
   }
   
-  @scala.inline
-  implicit class CreateClusterResultMutableBuilder[Self <: CreateClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterResult](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
   }
 }

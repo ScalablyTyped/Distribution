@@ -15,34 +15,25 @@ trait IListTopicSubscriptionsResponse extends StObject {
 }
 object IListTopicSubscriptionsResponse {
   
-  @scala.inline
-  def apply(): IListTopicSubscriptionsResponse = {
+  inline def apply(): IListTopicSubscriptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListTopicSubscriptionsResponse]
   }
   
-  @scala.inline
-  implicit class IListTopicSubscriptionsResponseMutableBuilder[Self <: IListTopicSubscriptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IListTopicSubscriptionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSubscriptions(value: js.Array[String]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: js.Array[String]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsNull: Self = StObject.set(x, "subscriptions", null)
+    inline def setSubscriptionsNull: Self = StObject.set(x, "subscriptions", null)
     
-    @scala.inline
-    def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
+    inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: String*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: String*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
   }
 }

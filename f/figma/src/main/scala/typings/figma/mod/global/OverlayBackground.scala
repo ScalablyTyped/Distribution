@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OverlayBackground extends StObject
 object OverlayBackground {
   
-  @scala.inline
-  def `2`(): typings.figma.anon.`2` = {
+  inline def `2`(): typings.figma.anon.`2` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NONE")
     __obj.asInstanceOf[typings.figma.anon.`2`]
   }
   
-  @scala.inline
-  def Color(color: RGBA): typings.figma.anon.Color = {
+  inline def Color(color: RGBA): typings.figma.anon.Color = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SOLID_COLOR")
     __obj.asInstanceOf[typings.figma.anon.Color]

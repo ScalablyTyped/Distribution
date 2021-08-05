@@ -14,17 +14,14 @@ trait CaptionContainerResizeEvent
 }
 object CaptionContainerResizeEvent {
   
-  @scala.inline
-  def apply(): CaptionContainerResizeEvent = {
+  inline def apply(): CaptionContainerResizeEvent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("captionContainerResize")
     __obj.asInstanceOf[CaptionContainerResizeEvent]
   }
   
-  @scala.inline
-  implicit class CaptionContainerResizeEventMutableBuilder[Self <: CaptionContainerResizeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionContainerResizeEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: captionContainerResize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: captionContainerResize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

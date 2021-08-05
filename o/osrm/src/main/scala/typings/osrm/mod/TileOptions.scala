@@ -24,19 +24,15 @@ trait TileOptions
 }
 object TileOptions {
   
-  @scala.inline
-  def apply(): TileOptions = {
+  inline def apply(): TileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileOptions]
   }
   
-  @scala.inline
-  implicit class TileOptionsMutableBuilder[Self <: TileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileOptions](x: Self) {
     
-    @scala.inline
-    def setZXY(value: Tile): Self = StObject.set(x, "ZXY", value.asInstanceOf[js.Any])
+    inline def setZXY(value: Tile): Self = StObject.set(x, "ZXY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZXYUndefined: Self = StObject.set(x, "ZXY", js.undefined)
+    inline def setZXYUndefined: Self = StObject.set(x, "ZXY", js.undefined)
   }
 }

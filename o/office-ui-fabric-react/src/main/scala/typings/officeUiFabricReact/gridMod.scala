@@ -35,8 +35,7 @@ object gridMod {
     @JSImport("office-ui-fabric-react/lib/Grid", "ButtonGridCell.defaultProps")
     @js.native
     def defaultProps: Disabled = js.native
-    @scala.inline
-    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Grid", "Grid")
@@ -57,7 +56,6 @@ object gridMod {
     @JSImport("office-ui-fabric-react/lib/Grid", "GridCell.defaultProps")
     @js.native
     def defaultProps: Disabled = js.native
-    @scala.inline
-    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

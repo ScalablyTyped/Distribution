@@ -12,19 +12,15 @@ trait IPullTypeCollection extends StObject {
 }
 object IPullTypeCollection {
   
-  @scala.inline
-  def apply(getLength: () => Double, getTypeAtIndex: Double => PullTypeSymbol): IPullTypeCollection = {
+  inline def apply(getLength: () => Double, getTypeAtIndex: Double => PullTypeSymbol): IPullTypeCollection = {
     val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getTypeAtIndex = js.Any.fromFunction1(getTypeAtIndex))
     __obj.asInstanceOf[IPullTypeCollection]
   }
   
-  @scala.inline
-  implicit class IPullTypeCollectionMutableBuilder[Self <: IPullTypeCollection] (val x: Self) extends AnyVal {
+  extension [Self <: IPullTypeCollection](x: Self) {
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTypeAtIndex(value: Double => PullTypeSymbol): Self = StObject.set(x, "getTypeAtIndex", js.Any.fromFunction1(value))
+    inline def setGetTypeAtIndex(value: Double => PullTypeSymbol): Self = StObject.set(x, "getTypeAtIndex", js.Any.fromFunction1(value))
   }
 }

@@ -10,16 +10,13 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(groupId: String | Double): `1` = {
+  inline def apply(groupId: String | Double): `1` = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
   }
 }

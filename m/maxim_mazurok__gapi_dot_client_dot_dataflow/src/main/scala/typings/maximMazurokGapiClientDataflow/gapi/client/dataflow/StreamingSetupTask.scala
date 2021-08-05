@@ -23,43 +23,31 @@ trait StreamingSetupTask extends StObject {
 }
 object StreamingSetupTask {
   
-  @scala.inline
-  def apply(): StreamingSetupTask = {
+  inline def apply(): StreamingSetupTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamingSetupTask]
   }
   
-  @scala.inline
-  implicit class StreamingSetupTaskMutableBuilder[Self <: StreamingSetupTask] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingSetupTask](x: Self) {
     
-    @scala.inline
-    def setDrain(value: Boolean): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
+    inline def setDrain(value: Boolean): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrainUndefined: Self = StObject.set(x, "drain", js.undefined)
+    inline def setDrainUndefined: Self = StObject.set(x, "drain", js.undefined)
     
-    @scala.inline
-    def setReceiveWorkPort(value: Double): Self = StObject.set(x, "receiveWorkPort", value.asInstanceOf[js.Any])
+    inline def setReceiveWorkPort(value: Double): Self = StObject.set(x, "receiveWorkPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveWorkPortUndefined: Self = StObject.set(x, "receiveWorkPort", js.undefined)
+    inline def setReceiveWorkPortUndefined: Self = StObject.set(x, "receiveWorkPort", js.undefined)
     
-    @scala.inline
-    def setSnapshotConfig(value: StreamingApplianceSnapshotConfig): Self = StObject.set(x, "snapshotConfig", value.asInstanceOf[js.Any])
+    inline def setSnapshotConfig(value: StreamingApplianceSnapshotConfig): Self = StObject.set(x, "snapshotConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotConfigUndefined: Self = StObject.set(x, "snapshotConfig", js.undefined)
+    inline def setSnapshotConfigUndefined: Self = StObject.set(x, "snapshotConfig", js.undefined)
     
-    @scala.inline
-    def setStreamingComputationTopology(value: TopologyConfig): Self = StObject.set(x, "streamingComputationTopology", value.asInstanceOf[js.Any])
+    inline def setStreamingComputationTopology(value: TopologyConfig): Self = StObject.set(x, "streamingComputationTopology", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingComputationTopologyUndefined: Self = StObject.set(x, "streamingComputationTopology", js.undefined)
+    inline def setStreamingComputationTopologyUndefined: Self = StObject.set(x, "streamingComputationTopology", js.undefined)
     
-    @scala.inline
-    def setWorkerHarnessPort(value: Double): Self = StObject.set(x, "workerHarnessPort", value.asInstanceOf[js.Any])
+    inline def setWorkerHarnessPort(value: Double): Self = StObject.set(x, "workerHarnessPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerHarnessPortUndefined: Self = StObject.set(x, "workerHarnessPort", js.undefined)
+    inline def setWorkerHarnessPortUndefined: Self = StObject.set(x, "workerHarnessPort", js.undefined)
   }
 }

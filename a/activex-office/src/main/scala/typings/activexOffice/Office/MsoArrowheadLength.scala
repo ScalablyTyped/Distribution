@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoArrowheadLength extends StObject
 object MsoArrowheadLength {
   
-  @scala.inline
-  def msoArrowheadLengthMedium: `2` = 2.asInstanceOf[`2`]
+  inline def msoArrowheadLengthMedium: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoArrowheadLengthMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoArrowheadLengthMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoArrowheadLong: `3` = 3.asInstanceOf[`3`]
+  inline def msoArrowheadLong: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoArrowheadShort: `1` = 1.asInstanceOf[`1`]
+  inline def msoArrowheadShort: `1` = 1.asInstanceOf[`1`]
 }

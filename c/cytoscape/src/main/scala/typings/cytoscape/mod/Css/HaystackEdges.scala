@@ -23,20 +23,16 @@ trait HaystackEdges extends StObject {
 }
 object HaystackEdges {
   
-  @scala.inline
-  def apply(`haystack-radius`: PropertyValueEdge[Double]): HaystackEdges = {
+  inline def apply(`haystack-radius`: PropertyValueEdge[Double]): HaystackEdges = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("haystack-radius")(`haystack-radius`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HaystackEdges]
   }
   
-  @scala.inline
-  implicit class HaystackEdgesMutableBuilder[Self <: HaystackEdges] (val x: Self) extends AnyVal {
+  extension [Self <: HaystackEdges](x: Self) {
     
-    @scala.inline
-    def `setHaystack-radius`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "haystack-radius", value.asInstanceOf[js.Any])
+    inline def `setHaystack-radius`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "haystack-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHaystack-radiusFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "haystack-radius", js.Any.fromFunction1(value))
+    inline def `setHaystack-radiusFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "haystack-radius", js.Any.fromFunction1(value))
   }
 }

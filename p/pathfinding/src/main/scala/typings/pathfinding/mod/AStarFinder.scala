@@ -15,6 +15,5 @@ trait AStarFinder
      with Instantiable1[/* opt */ FinderOptions, AStarFinder]
 object AStarFinder {
   
-  @scala.inline
-  def apply: AStarFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("AStarFinder").asInstanceOf[AStarFinder]
+  inline def apply: AStarFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("AStarFinder").asInstanceOf[AStarFinder]
 }

@@ -33,43 +33,31 @@ trait SchemaStackFrame extends StObject {
 }
 object SchemaStackFrame {
   
-  @scala.inline
-  def apply(): SchemaStackFrame = {
+  inline def apply(): SchemaStackFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStackFrame]
   }
   
-  @scala.inline
-  implicit class SchemaStackFrameMutableBuilder[Self <: SchemaStackFrame] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStackFrame](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[SchemaVariable]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[SchemaVariable]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: SchemaVariable*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: SchemaVariable*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setLocals(value: js.Array[SchemaVariable]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    inline def setLocals(value: js.Array[SchemaVariable]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+    inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
-    @scala.inline
-    def setLocalsVarargs(value: SchemaVariable*): Self = StObject.set(x, "locals", js.Array(value :_*))
+    inline def setLocalsVarargs(value: SchemaVariable*): Self = StObject.set(x, "locals", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: SchemaSourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SchemaSourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

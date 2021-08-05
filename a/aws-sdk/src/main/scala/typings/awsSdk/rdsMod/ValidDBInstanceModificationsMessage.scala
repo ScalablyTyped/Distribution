@@ -18,31 +18,23 @@ trait ValidDBInstanceModificationsMessage extends StObject {
 }
 object ValidDBInstanceModificationsMessage {
   
-  @scala.inline
-  def apply(): ValidDBInstanceModificationsMessage = {
+  inline def apply(): ValidDBInstanceModificationsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidDBInstanceModificationsMessage]
   }
   
-  @scala.inline
-  implicit class ValidDBInstanceModificationsMessageMutableBuilder[Self <: ValidDBInstanceModificationsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ValidDBInstanceModificationsMessage](x: Self) {
     
-    @scala.inline
-    def setStorage(value: ValidStorageOptionsList): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: ValidStorageOptionsList): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
-    @scala.inline
-    def setStorageVarargs(value: ValidStorageOptions*): Self = StObject.set(x, "Storage", js.Array(value :_*))
+    inline def setStorageVarargs(value: ValidStorageOptions*): Self = StObject.set(x, "Storage", js.Array(value :_*))
     
-    @scala.inline
-    def setValidProcessorFeatures(value: AvailableProcessorFeatureList): Self = StObject.set(x, "ValidProcessorFeatures", value.asInstanceOf[js.Any])
+    inline def setValidProcessorFeatures(value: AvailableProcessorFeatureList): Self = StObject.set(x, "ValidProcessorFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidProcessorFeaturesUndefined: Self = StObject.set(x, "ValidProcessorFeatures", js.undefined)
+    inline def setValidProcessorFeaturesUndefined: Self = StObject.set(x, "ValidProcessorFeatures", js.undefined)
     
-    @scala.inline
-    def setValidProcessorFeaturesVarargs(value: AvailableProcessorFeature*): Self = StObject.set(x, "ValidProcessorFeatures", js.Array(value :_*))
+    inline def setValidProcessorFeaturesVarargs(value: AvailableProcessorFeature*): Self = StObject.set(x, "ValidProcessorFeatures", js.Array(value :_*))
   }
 }

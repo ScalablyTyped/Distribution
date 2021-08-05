@@ -9,20 +9,17 @@ object angularQExtrasStrings {
   
   @js.native
   sealed trait IQService extends StObject
-  @scala.inline
-  def IQService: IQService = "IQService".asInstanceOf[IQService]
+  inline def IQService: IQService = "IQService".asInstanceOf[IQService]
   
   @js.native
   sealed trait fulfilled
     extends StObject
        with PromiseState
-  @scala.inline
-  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
   
   @js.native
   sealed trait rejected
     extends StObject
        with PromiseState
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  inline def rejected: rejected = "rejected".asInstanceOf[rejected]
 }

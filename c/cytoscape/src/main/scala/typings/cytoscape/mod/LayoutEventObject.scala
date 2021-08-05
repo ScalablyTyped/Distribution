@@ -16,8 +16,7 @@ trait LayoutEventObject
 }
 object LayoutEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cy: Core,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -36,10 +35,8 @@ object LayoutEventObject {
     __obj.asInstanceOf[LayoutEventObject]
   }
   
-  @scala.inline
-  implicit class LayoutEventObjectMutableBuilder[Self <: LayoutEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutEventObject](x: Self) {
     
-    @scala.inline
-    def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

@@ -31,49 +31,35 @@ trait UpdateTrainingExampleParams extends StObject {
 }
 object UpdateTrainingExampleParams {
   
-  @scala.inline
-  def apply(collection_id: String, environment_id: String, example_id: String, query_id: String): UpdateTrainingExampleParams = {
+  inline def apply(collection_id: String, environment_id: String, example_id: String, query_id: String): UpdateTrainingExampleParams = {
     val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any], example_id = example_id.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTrainingExampleParams]
   }
   
-  @scala.inline
-  implicit class UpdateTrainingExampleParamsMutableBuilder[Self <: UpdateTrainingExampleParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTrainingExampleParams](x: Self) {
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCross_reference(value: String): Self = StObject.set(x, "cross_reference", value.asInstanceOf[js.Any])
+    inline def setCross_reference(value: String): Self = StObject.set(x, "cross_reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCross_referenceUndefined: Self = StObject.set(x, "cross_reference", js.undefined)
+    inline def setCross_referenceUndefined: Self = StObject.set(x, "cross_reference", js.undefined)
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExample_id(value: String): Self = StObject.set(x, "example_id", value.asInstanceOf[js.Any])
+    inline def setExample_id(value: String): Self = StObject.set(x, "example_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
+    inline def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+    inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
+    inline def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

@@ -36,56 +36,40 @@ object progressBarMod {
   }
   object ProgressBarProps {
     
-    @scala.inline
-    def apply(): ProgressBarProps = {
+    inline def apply(): ProgressBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressBarProps]
     }
     
-    @scala.inline
-    implicit class ProgressBarPropsMutableBuilder[Self <: ProgressBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressBarProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
+      inline def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
+      inline def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
       
-      @scala.inline
-      def setProgressText(value: Double): Self = StObject.set(x, "progressText", value.asInstanceOf[js.Any])
+      inline def setProgressText(value: Double): Self = StObject.set(x, "progressText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressTextUndefined: Self = StObject.set(x, "progressText", js.undefined)
+      inline def setProgressTextUndefined: Self = StObject.set(x, "progressText", js.undefined)
       
-      @scala.inline
-      def setSkin(value: neutral | primary | secondary): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: neutral | primary | secondary): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setTheme(value: `12`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `12`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

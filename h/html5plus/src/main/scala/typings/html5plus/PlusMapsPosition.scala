@@ -61,49 +61,35 @@ trait PlusMapsPosition extends StObject {
 }
 object PlusMapsPosition {
   
-  @scala.inline
-  def apply(): PlusMapsPosition = {
+  inline def apply(): PlusMapsPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsPosition]
   }
   
-  @scala.inline
-  implicit class PlusMapsPositionMutableBuilder[Self <: PlusMapsPosition] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMapsPosition](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setPoint(value: PlusMapsPoint): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: PlusMapsPoint): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    @scala.inline
-    def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
+    inline def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostcodeUndefined: Self = StObject.set(x, "postcode", js.undefined)
+    inline def setPostcodeUndefined: Self = StObject.set(x, "postcode", js.undefined)
   }
 }

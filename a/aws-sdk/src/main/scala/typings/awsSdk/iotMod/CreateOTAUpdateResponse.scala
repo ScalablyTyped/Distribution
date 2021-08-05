@@ -33,43 +33,31 @@ trait CreateOTAUpdateResponse extends StObject {
 }
 object CreateOTAUpdateResponse {
   
-  @scala.inline
-  def apply(): CreateOTAUpdateResponse = {
+  inline def apply(): CreateOTAUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateOTAUpdateResponse]
   }
   
-  @scala.inline
-  implicit class CreateOTAUpdateResponseMutableBuilder[Self <: CreateOTAUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOTAUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setAwsIotJobArn(value: AwsIotJobArn): Self = StObject.set(x, "awsIotJobArn", value.asInstanceOf[js.Any])
+    inline def setAwsIotJobArn(value: AwsIotJobArn): Self = StObject.set(x, "awsIotJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsIotJobArnUndefined: Self = StObject.set(x, "awsIotJobArn", js.undefined)
+    inline def setAwsIotJobArnUndefined: Self = StObject.set(x, "awsIotJobArn", js.undefined)
     
-    @scala.inline
-    def setAwsIotJobId(value: AwsIotJobId): Self = StObject.set(x, "awsIotJobId", value.asInstanceOf[js.Any])
+    inline def setAwsIotJobId(value: AwsIotJobId): Self = StObject.set(x, "awsIotJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsIotJobIdUndefined: Self = StObject.set(x, "awsIotJobId", js.undefined)
+    inline def setAwsIotJobIdUndefined: Self = StObject.set(x, "awsIotJobId", js.undefined)
     
-    @scala.inline
-    def setOtaUpdateArn(value: OTAUpdateArn): Self = StObject.set(x, "otaUpdateArn", value.asInstanceOf[js.Any])
+    inline def setOtaUpdateArn(value: OTAUpdateArn): Self = StObject.set(x, "otaUpdateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaUpdateArnUndefined: Self = StObject.set(x, "otaUpdateArn", js.undefined)
+    inline def setOtaUpdateArnUndefined: Self = StObject.set(x, "otaUpdateArn", js.undefined)
     
-    @scala.inline
-    def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
+    inline def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaUpdateIdUndefined: Self = StObject.set(x, "otaUpdateId", js.undefined)
+    inline def setOtaUpdateIdUndefined: Self = StObject.set(x, "otaUpdateId", js.undefined)
     
-    @scala.inline
-    def setOtaUpdateStatus(value: OTAUpdateStatus): Self = StObject.set(x, "otaUpdateStatus", value.asInstanceOf[js.Any])
+    inline def setOtaUpdateStatus(value: OTAUpdateStatus): Self = StObject.set(x, "otaUpdateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaUpdateStatusUndefined: Self = StObject.set(x, "otaUpdateStatus", js.undefined)
+    inline def setOtaUpdateStatusUndefined: Self = StObject.set(x, "otaUpdateStatus", js.undefined)
   }
 }

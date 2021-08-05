@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): OptionsBuilder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[OptionsBuilder]
-  @scala.inline
-  def apply(options: Options): OptionsBuilder = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OptionsBuilder]
+  inline def apply(): OptionsBuilder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[OptionsBuilder]
+  inline def apply(options: Options): OptionsBuilder = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OptionsBuilder]
   
   @JSImport("markdown-pdf", JSImport.Namespace)
   @js.native
@@ -25,8 +23,7 @@ object mod {
   }
   object ConcatFromOptionsBuilder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       paths: (js.Array[String], js.Any) => ToOptionsBuilder,
       strings: (js.Array[String], js.Any) => ToOptionsBuilder
     ): ConcatFromOptionsBuilder = {
@@ -34,14 +31,11 @@ object mod {
       __obj.asInstanceOf[ConcatFromOptionsBuilder]
     }
     
-    @scala.inline
-    implicit class ConcatFromOptionsBuilderMutableBuilder[Self <: ConcatFromOptionsBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: ConcatFromOptionsBuilder](x: Self) {
       
-      @scala.inline
-      def setPaths(value: (js.Array[String], js.Any) => ToOptionsBuilder): Self = StObject.set(x, "paths", js.Any.fromFunction2(value))
+      inline def setPaths(value: (js.Array[String], js.Any) => ToOptionsBuilder): Self = StObject.set(x, "paths", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStrings(value: (js.Array[String], js.Any) => ToOptionsBuilder): Self = StObject.set(x, "strings", js.Any.fromFunction2(value))
+      inline def setStrings(value: (js.Array[String], js.Any) => ToOptionsBuilder): Self = StObject.set(x, "strings", js.Any.fromFunction2(value))
     }
   }
   
@@ -51,17 +45,14 @@ object mod {
   }
   object ConcatOptionsBuilder {
     
-    @scala.inline
-    def apply(from: ConcatFromOptionsBuilder): ConcatOptionsBuilder = {
+    inline def apply(from: ConcatFromOptionsBuilder): ConcatOptionsBuilder = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConcatOptionsBuilder]
     }
     
-    @scala.inline
-    implicit class ConcatOptionsBuilderMutableBuilder[Self <: ConcatOptionsBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: ConcatOptionsBuilder](x: Self) {
       
-      @scala.inline
-      def setFrom(value: ConcatFromOptionsBuilder): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: ConcatFromOptionsBuilder): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,92 +113,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCssPath(value: String): Self = StObject.set(x, "cssPath", value.asInstanceOf[js.Any])
+      inline def setCssPath(value: String): Self = StObject.set(x, "cssPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssPathUndefined: Self = StObject.set(x, "cssPath", js.undefined)
+      inline def setCssPathUndefined: Self = StObject.set(x, "cssPath", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setHighlightCssPath(value: String): Self = StObject.set(x, "highlightCssPath", value.asInstanceOf[js.Any])
+      inline def setHighlightCssPath(value: String): Self = StObject.set(x, "highlightCssPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightCssPathUndefined: Self = StObject.set(x, "highlightCssPath", js.undefined)
+      inline def setHighlightCssPathUndefined: Self = StObject.set(x, "highlightCssPath", js.undefined)
       
-      @scala.inline
-      def setLoadTimeout(value: Double): Self = StObject.set(x, "loadTimeout", value.asInstanceOf[js.Any])
+      inline def setLoadTimeout(value: Double): Self = StObject.set(x, "loadTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadTimeoutUndefined: Self = StObject.set(x, "loadTimeout", js.undefined)
+      inline def setLoadTimeoutUndefined: Self = StObject.set(x, "loadTimeout", js.undefined)
       
-      @scala.inline
-      def setPaperBorder(value: String): Self = StObject.set(x, "paperBorder", value.asInstanceOf[js.Any])
+      inline def setPaperBorder(value: String): Self = StObject.set(x, "paperBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperBorderUndefined: Self = StObject.set(x, "paperBorder", js.undefined)
+      inline def setPaperBorderUndefined: Self = StObject.set(x, "paperBorder", js.undefined)
       
-      @scala.inline
-      def setPaperFormat(value: PaperFormat): Self = StObject.set(x, "paperFormat", value.asInstanceOf[js.Any])
+      inline def setPaperFormat(value: PaperFormat): Self = StObject.set(x, "paperFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperFormatUndefined: Self = StObject.set(x, "paperFormat", js.undefined)
+      inline def setPaperFormatUndefined: Self = StObject.set(x, "paperFormat", js.undefined)
       
-      @scala.inline
-      def setPaperOrientation(value: PaperOrientation): Self = StObject.set(x, "paperOrientation", value.asInstanceOf[js.Any])
+      inline def setPaperOrientation(value: PaperOrientation): Self = StObject.set(x, "paperOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperOrientationUndefined: Self = StObject.set(x, "paperOrientation", js.undefined)
+      inline def setPaperOrientationUndefined: Self = StObject.set(x, "paperOrientation", js.undefined)
       
-      @scala.inline
-      def setPhantomPath(value: String): Self = StObject.set(x, "phantomPath", value.asInstanceOf[js.Any])
+      inline def setPhantomPath(value: String): Self = StObject.set(x, "phantomPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhantomPathUndefined: Self = StObject.set(x, "phantomPath", js.undefined)
+      inline def setPhantomPathUndefined: Self = StObject.set(x, "phantomPath", js.undefined)
       
-      @scala.inline
-      def setPreProcessHtml(value: () => js.Any): Self = StObject.set(x, "preProcessHtml", js.Any.fromFunction0(value))
+      inline def setPreProcessHtml(value: () => js.Any): Self = StObject.set(x, "preProcessHtml", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreProcessHtmlUndefined: Self = StObject.set(x, "preProcessHtml", js.undefined)
+      inline def setPreProcessHtmlUndefined: Self = StObject.set(x, "preProcessHtml", js.undefined)
       
-      @scala.inline
-      def setPreProcessMd(value: () => js.Any): Self = StObject.set(x, "preProcessMd", js.Any.fromFunction0(value))
+      inline def setPreProcessMd(value: () => js.Any): Self = StObject.set(x, "preProcessMd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreProcessMdUndefined: Self = StObject.set(x, "preProcessMd", js.undefined)
+      inline def setPreProcessMdUndefined: Self = StObject.set(x, "preProcessMd", js.undefined)
       
-      @scala.inline
-      def setRemarkable(value: js.Any): Self = StObject.set(x, "remarkable", value.asInstanceOf[js.Any])
+      inline def setRemarkable(value: js.Any): Self = StObject.set(x, "remarkable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemarkableUndefined: Self = StObject.set(x, "remarkable", js.undefined)
+      inline def setRemarkableUndefined: Self = StObject.set(x, "remarkable", js.undefined)
       
-      @scala.inline
-      def setRenderDelay(value: Double): Self = StObject.set(x, "renderDelay", value.asInstanceOf[js.Any])
+      inline def setRenderDelay(value: Double): Self = StObject.set(x, "renderDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderDelayUndefined: Self = StObject.set(x, "renderDelay", js.undefined)
+      inline def setRenderDelayUndefined: Self = StObject.set(x, "renderDelay", js.undefined)
       
-      @scala.inline
-      def setRunningsPath(value: String): Self = StObject.set(x, "runningsPath", value.asInstanceOf[js.Any])
+      inline def setRunningsPath(value: String): Self = StObject.set(x, "runningsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningsPathUndefined: Self = StObject.set(x, "runningsPath", js.undefined)
+      inline def setRunningsPathUndefined: Self = StObject.set(x, "runningsPath", js.undefined)
     }
   }
   
@@ -227,20 +190,16 @@ object mod {
   }
   object OptionsBuilder {
     
-    @scala.inline
-    def apply(concat: ConcatOptionsBuilder, from: FromOptionsBuilder & FromFunction): OptionsBuilder = {
+    inline def apply(concat: ConcatOptionsBuilder, from: FromOptionsBuilder & FromFunction): OptionsBuilder = {
       val __obj = js.Dynamic.literal(concat = concat.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsBuilder]
     }
     
-    @scala.inline
-    implicit class OptionsBuilderMutableBuilder[Self <: OptionsBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsBuilder](x: Self) {
       
-      @scala.inline
-      def setConcat(value: ConcatOptionsBuilder): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
+      inline def setConcat(value: ConcatOptionsBuilder): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: FromOptionsBuilder & FromFunction): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: FromOptionsBuilder & FromFunction): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,23 +214,17 @@ object mod {
   trait PaperFormat extends StObject
   object PaperFormat {
     
-    @scala.inline
-    def A3: typings.markdownPdf.markdownPdfStrings.A3 = "A3".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A3]
+    inline def A3: typings.markdownPdf.markdownPdfStrings.A3 = "A3".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A3]
     
-    @scala.inline
-    def A4: typings.markdownPdf.markdownPdfStrings.A4 = "A4".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A4]
+    inline def A4: typings.markdownPdf.markdownPdfStrings.A4 = "A4".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A4]
     
-    @scala.inline
-    def A5: typings.markdownPdf.markdownPdfStrings.A5 = "A5".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A5]
+    inline def A5: typings.markdownPdf.markdownPdfStrings.A5 = "A5".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A5]
     
-    @scala.inline
-    def Legal: typings.markdownPdf.markdownPdfStrings.Legal = "Legal".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Legal]
+    inline def Legal: typings.markdownPdf.markdownPdfStrings.Legal = "Legal".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Legal]
     
-    @scala.inline
-    def Letter: typings.markdownPdf.markdownPdfStrings.Letter = "Letter".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Letter]
+    inline def Letter: typings.markdownPdf.markdownPdfStrings.Letter = "Letter".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Letter]
     
-    @scala.inline
-    def Tabloid: typings.markdownPdf.markdownPdfStrings.Tabloid = "Tabloid".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Tabloid]
+    inline def Tabloid: typings.markdownPdf.markdownPdfStrings.Tabloid = "Tabloid".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Tabloid]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -281,11 +234,9 @@ object mod {
   trait PaperOrientation extends StObject
   object PaperOrientation {
     
-    @scala.inline
-    def landscape: typings.markdownPdf.markdownPdfStrings.landscape = "landscape".asInstanceOf[typings.markdownPdf.markdownPdfStrings.landscape]
+    inline def landscape: typings.markdownPdf.markdownPdfStrings.landscape = "landscape".asInstanceOf[typings.markdownPdf.markdownPdfStrings.landscape]
     
-    @scala.inline
-    def portait: typings.markdownPdf.markdownPdfStrings.portait = "portait".asInstanceOf[typings.markdownPdf.markdownPdfStrings.portait]
+    inline def portait: typings.markdownPdf.markdownPdfStrings.portait = "portait".asInstanceOf[typings.markdownPdf.markdownPdfStrings.portait]
   }
   
   @js.native
@@ -334,17 +285,14 @@ object mod {
   }
   object ToOptionsBuilder {
     
-    @scala.inline
-    def apply(to: ToBuilder & ToFunction): ToOptionsBuilder = {
+    inline def apply(to: ToBuilder & ToFunction): ToOptionsBuilder = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToOptionsBuilder]
     }
     
-    @scala.inline
-    implicit class ToOptionsBuilderMutableBuilder[Self <: ToOptionsBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: ToOptionsBuilder](x: Self) {
       
-      @scala.inline
-      def setTo(value: ToBuilder & ToFunction): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: ToBuilder & ToFunction): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

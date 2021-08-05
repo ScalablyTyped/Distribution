@@ -13,19 +13,15 @@ trait DeleteInvitationsRequest extends StObject {
 }
 object DeleteInvitationsRequest {
   
-  @scala.inline
-  def apply(AccountIds: AccountIdList): DeleteInvitationsRequest = {
+  inline def apply(AccountIds: AccountIdList): DeleteInvitationsRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInvitationsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInvitationsRequestMutableBuilder[Self <: DeleteInvitationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInvitationsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
   }
 }

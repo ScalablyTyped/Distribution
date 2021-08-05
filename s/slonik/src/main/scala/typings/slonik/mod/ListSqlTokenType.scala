@@ -16,26 +16,20 @@ trait ListSqlTokenType
 }
 object ListSqlTokenType {
   
-  @scala.inline
-  def apply(glue: SqlTokenType, members: js.Array[SqlTokenType], `type`: js.Symbol): ListSqlTokenType = {
+  inline def apply(glue: SqlTokenType, members: js.Array[SqlTokenType], `type`: js.Symbol): ListSqlTokenType = {
     val __obj = js.Dynamic.literal(glue = glue.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSqlTokenType]
   }
   
-  @scala.inline
-  implicit class ListSqlTokenTypeMutableBuilder[Self <: ListSqlTokenType] (val x: Self) extends AnyVal {
+  extension [Self <: ListSqlTokenType](x: Self) {
     
-    @scala.inline
-    def setGlue(value: SqlTokenType): Self = StObject.set(x, "glue", value.asInstanceOf[js.Any])
+    inline def setGlue(value: SqlTokenType): Self = StObject.set(x, "glue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[SqlTokenType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[SqlTokenType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: SqlTokenType*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: SqlTokenType*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

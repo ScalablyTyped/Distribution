@@ -32,76 +32,53 @@ trait LinkProps extends StObject {
 }
 object LinkProps {
   
-  @scala.inline
-  def apply(href: Href): LinkProps = {
+  inline def apply(href: Href): LinkProps = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }
   
-  @scala.inline
-  implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+  extension [Self <: LinkProps](x: Self) {
     
-    @scala.inline
-    def setActiveProps(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "activeProps", value.asInstanceOf[js.Any])
+    inline def setActiveProps(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "activeProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivePropsUndefined: Self = StObject.set(x, "activeProps", js.undefined)
+    inline def setActivePropsUndefined: Self = StObject.set(x, "activeProps", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setHref(value: Href): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: Href): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: /* event */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* event */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setPersistQuery(value: Boolean): Self = StObject.set(x, "persistQuery", value.asInstanceOf[js.Any])
+    inline def setPersistQuery(value: Boolean): Self = StObject.set(x, "persistQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistQueryUndefined: Self = StObject.set(x, "persistQuery", js.undefined)
+    inline def setPersistQueryUndefined: Self = StObject.set(x, "persistQuery", js.undefined)
     
-    @scala.inline
-    def setPush(value: (/* href */ Href, /* options */ LocationOptions) => Payload): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
+    inline def setPush(value: (/* href */ Href, /* options */ LocationOptions) => Payload): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+    inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
-    @scala.inline
-    def setReplace(value: (/* href */ Href, /* options */ LocationOptions) => Payload): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (/* href */ Href, /* options */ LocationOptions) => Payload): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
+    inline def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceStateUndefined: Self = StObject.set(x, "replaceState", js.undefined)
+    inline def setReplaceStateUndefined: Self = StObject.set(x, "replaceState", js.undefined)
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

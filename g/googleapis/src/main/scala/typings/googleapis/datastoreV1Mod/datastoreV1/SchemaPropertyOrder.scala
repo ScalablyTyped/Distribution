@@ -21,25 +21,19 @@ trait SchemaPropertyOrder extends StObject {
 }
 object SchemaPropertyOrder {
   
-  @scala.inline
-  def apply(): SchemaPropertyOrder = {
+  inline def apply(): SchemaPropertyOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPropertyOrder]
   }
   
-  @scala.inline
-  implicit class SchemaPropertyOrderMutableBuilder[Self <: SchemaPropertyOrder] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPropertyOrder](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setProperty(value: SchemaPropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: SchemaPropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

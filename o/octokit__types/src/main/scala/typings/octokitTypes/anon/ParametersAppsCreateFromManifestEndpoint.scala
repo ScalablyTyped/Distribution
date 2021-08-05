@@ -18,8 +18,7 @@ trait ParametersAppsCreateFromManifestEndpoint extends StObject {
 }
 object ParametersAppsCreateFromManifestEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsCreateFromManifestEndpoint,
     request: AppsCreateFromManifestRequestOptions,
     response: OctokitResponse[AppsCreateFromManifestResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsCreateFromManifestEndpoint {
     __obj.asInstanceOf[ParametersAppsCreateFromManifestEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsCreateFromManifestEndpointMutableBuilder[Self <: ParametersAppsCreateFromManifestEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsCreateFromManifestEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsCreateFromManifestEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsCreateFromManifestEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsCreateFromManifestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsCreateFromManifestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsCreateFromManifestResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsCreateFromManifestResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteAssetRequest extends StObject {
 }
 object DeleteAssetRequest {
   
-  @scala.inline
-  def apply(Id: string): DeleteAssetRequest = {
+  inline def apply(Id: string): DeleteAssetRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAssetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAssetRequestMutableBuilder[Self <: DeleteAssetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAssetRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

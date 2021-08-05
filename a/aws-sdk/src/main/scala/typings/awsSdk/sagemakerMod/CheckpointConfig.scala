@@ -18,22 +18,17 @@ trait CheckpointConfig extends StObject {
 }
 object CheckpointConfig {
   
-  @scala.inline
-  def apply(S3Uri: S3Uri): CheckpointConfig = {
+  inline def apply(S3Uri: S3Uri): CheckpointConfig = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckpointConfig]
   }
   
-  @scala.inline
-  implicit class CheckpointConfigMutableBuilder[Self <: CheckpointConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CheckpointConfig](x: Self) {
     
-    @scala.inline
-    def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
+    inline def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPathUndefined: Self = StObject.set(x, "LocalPath", js.undefined)
+    inline def setLocalPathUndefined: Self = StObject.set(x, "LocalPath", js.undefined)
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

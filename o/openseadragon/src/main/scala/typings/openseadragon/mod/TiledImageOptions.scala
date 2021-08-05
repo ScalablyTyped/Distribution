@@ -12,16 +12,13 @@ trait TiledImageOptions
 }
 object TiledImageOptions {
   
-  @scala.inline
-  def apply(tileSource: String | js.Object): TiledImageOptions = {
+  inline def apply(tileSource: String | js.Object): TiledImageOptions = {
     val __obj = js.Dynamic.literal(tileSource = tileSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[TiledImageOptions]
   }
   
-  @scala.inline
-  implicit class TiledImageOptionsMutableBuilder[Self <: TiledImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TiledImageOptions](x: Self) {
     
-    @scala.inline
-    def setTileSource(value: String | js.Object): Self = StObject.set(x, "tileSource", value.asInstanceOf[js.Any])
+    inline def setTileSource(value: String | js.Object): Self = StObject.set(x, "tileSource", value.asInstanceOf[js.Any])
   }
 }

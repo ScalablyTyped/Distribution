@@ -90,68 +90,48 @@ object sessionSessionDelegateMod {
   }
   object SessionDelegate {
     
-    @scala.inline
-    def apply(): SessionDelegate = {
+    inline def apply(): SessionDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionDelegate]
     }
     
-    @scala.inline
-    implicit class SessionDelegateMutableBuilder[Self <: SessionDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: SessionDelegate](x: Self) {
       
-      @scala.inline
-      def setOnAck(value: /* request */ IncomingAckRequest => js.Promise[Unit] | Unit): Self = StObject.set(x, "onAck", js.Any.fromFunction1(value))
+      inline def setOnAck(value: /* request */ IncomingAckRequest => js.Promise[Unit] | Unit): Self = StObject.set(x, "onAck", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAckTimeout(value: () => Unit): Self = StObject.set(x, "onAckTimeout", js.Any.fromFunction0(value))
+      inline def setOnAckTimeout(value: () => Unit): Self = StObject.set(x, "onAckTimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAckTimeoutUndefined: Self = StObject.set(x, "onAckTimeout", js.undefined)
+      inline def setOnAckTimeoutUndefined: Self = StObject.set(x, "onAckTimeout", js.undefined)
       
-      @scala.inline
-      def setOnAckUndefined: Self = StObject.set(x, "onAck", js.undefined)
+      inline def setOnAckUndefined: Self = StObject.set(x, "onAck", js.undefined)
       
-      @scala.inline
-      def setOnBye(value: /* request */ IncomingByeRequest => Unit): Self = StObject.set(x, "onBye", js.Any.fromFunction1(value))
+      inline def setOnBye(value: /* request */ IncomingByeRequest => Unit): Self = StObject.set(x, "onBye", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnByeUndefined: Self = StObject.set(x, "onBye", js.undefined)
+      inline def setOnByeUndefined: Self = StObject.set(x, "onBye", js.undefined)
       
-      @scala.inline
-      def setOnInfo(value: /* request */ IncomingInfoRequest => Unit): Self = StObject.set(x, "onInfo", js.Any.fromFunction1(value))
+      inline def setOnInfo(value: /* request */ IncomingInfoRequest => Unit): Self = StObject.set(x, "onInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInfoUndefined: Self = StObject.set(x, "onInfo", js.undefined)
+      inline def setOnInfoUndefined: Self = StObject.set(x, "onInfo", js.undefined)
       
-      @scala.inline
-      def setOnInvite(value: /* request */ IncomingInviteRequest => Unit): Self = StObject.set(x, "onInvite", js.Any.fromFunction1(value))
+      inline def setOnInvite(value: /* request */ IncomingInviteRequest => Unit): Self = StObject.set(x, "onInvite", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInviteUndefined: Self = StObject.set(x, "onInvite", js.undefined)
+      inline def setOnInviteUndefined: Self = StObject.set(x, "onInvite", js.undefined)
       
-      @scala.inline
-      def setOnMessage(value: /* request */ IncomingMessageRequest => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: /* request */ IncomingMessageRequest => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+      inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
-      @scala.inline
-      def setOnNotify(value: /* request */ IncomingNotifyRequest => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
+      inline def setOnNotify(value: /* request */ IncomingNotifyRequest => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
+      inline def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
       
-      @scala.inline
-      def setOnPrack(value: /* request */ IncomingPrackRequest => Unit): Self = StObject.set(x, "onPrack", js.Any.fromFunction1(value))
+      inline def setOnPrack(value: /* request */ IncomingPrackRequest => Unit): Self = StObject.set(x, "onPrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPrackUndefined: Self = StObject.set(x, "onPrack", js.undefined)
+      inline def setOnPrackUndefined: Self = StObject.set(x, "onPrack", js.undefined)
       
-      @scala.inline
-      def setOnRefer(value: /* request */ IncomingReferRequest => Unit): Self = StObject.set(x, "onRefer", js.Any.fromFunction1(value))
+      inline def setOnRefer(value: /* request */ IncomingReferRequest => Unit): Self = StObject.set(x, "onRefer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReferUndefined: Self = StObject.set(x, "onRefer", js.undefined)
+      inline def setOnReferUndefined: Self = StObject.set(x, "onRefer", js.undefined)
     }
   }
 }

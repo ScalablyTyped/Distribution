@@ -24,25 +24,25 @@ object nodeValueImplMod {
     /* CompleteClass */
     var attrs: StringDictionary[ValueType] = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /**
       * Return the value of the attribute or input param.
       * @param name String: name of attribute or input param.
       */
-    var getAttr: js.Any = js.native
+    /* private */ var getAttr: js.Any = js.native
     
     /**
       * Return the value of the attribute or input param.
       * @param name String: name of attribute or input param.
       */
-    var getInput: js.Any = js.native
+    /* private */ var getInput: js.Any = js.native
     
     /* CompleteClass */
     var inputs: js.Array[Tensor[Rank]] = js.native
     
-    var node: js.Any = js.native
+    /* private */ var node: js.Any = js.native
     
-    var tensorMap: js.Any = js.native
+    /* private */ var tensorMap: js.Any = js.native
   }
 }

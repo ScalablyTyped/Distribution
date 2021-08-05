@@ -14,16 +14,13 @@ trait OnBeginRedoDataUpdateChange
 }
 object OnBeginRedoDataUpdateChange {
   
-  @scala.inline
-  def apply(changeKey: IChangeKey): OnBeginRedoDataUpdateChange = {
+  inline def apply(changeKey: IChangeKey): OnBeginRedoDataUpdateChange = {
     val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeginRedoDataUpdateChange]
   }
   
-  @scala.inline
-  implicit class OnBeginRedoDataUpdateChangeMutableBuilder[Self <: OnBeginRedoDataUpdateChange] (val x: Self) extends AnyVal {
+  extension [Self <: OnBeginRedoDataUpdateChange](x: Self) {
     
-    @scala.inline
-    def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
   }
 }

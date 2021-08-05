@@ -49,87 +49,61 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAllowCancel(value: Boolean): Self = StObject.set(x, "allowCancel", value.asInstanceOf[js.Any])
+    inline def setAllowCancel(value: Boolean): Self = StObject.set(x, "allowCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCancelUndefined: Self = StObject.set(x, "allowCancel", js.undefined)
+    inline def setAllowCancelUndefined: Self = StObject.set(x, "allowCancel", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setHideHeader(value: Boolean): Self = StObject.set(x, "hideHeader", value.asInstanceOf[js.Any])
+    inline def setHideHeader(value: Boolean): Self = StObject.set(x, "hideHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideHeaderUndefined: Self = StObject.set(x, "hideHeader", js.undefined)
+    inline def setHideHeaderUndefined: Self = StObject.set(x, "hideHeader", js.undefined)
     
-    @scala.inline
-    def setLocale(
+    inline def setLocale(
       value: sv_SE | ja_JP | es_ES | da_DK | zh_CN | nl_NL | es_MX | de_DE | pl_PL | en_US | it_IT | pt_BR | fr_FR | cs_CZ
     ): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+    inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+    inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
     
-    @scala.inline
-    def setRequestingEmail(value: String): Self = StObject.set(x, "requestingEmail", value.asInstanceOf[js.Any])
+    inline def setRequestingEmail(value: String): Self = StObject.set(x, "requestingEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestingEmailUndefined: Self = StObject.set(x, "requestingEmail", js.undefined)
+    inline def setRequestingEmailUndefined: Self = StObject.set(x, "requestingEmail", js.undefined)
     
-    @scala.inline
-    def setSkipDomainVerification(value: Boolean): Self = StObject.set(x, "skipDomainVerification", value.asInstanceOf[js.Any])
+    inline def setSkipDomainVerification(value: Boolean): Self = StObject.set(x, "skipDomainVerification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipDomainVerificationUndefined: Self = StObject.set(x, "skipDomainVerification", js.undefined)
+    inline def setSkipDomainVerificationUndefined: Self = StObject.set(x, "skipDomainVerification", js.undefined)
     
-    @scala.inline
-    def setTestMode(value: Boolean): Self = StObject.set(x, "testMode", value.asInstanceOf[js.Any])
+    inline def setTestMode(value: Boolean): Self = StObject.set(x, "testMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestModeUndefined: Self = StObject.set(x, "testMode", js.undefined)
+    inline def setTestModeUndefined: Self = StObject.set(x, "testMode", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setWhiteLabeling(value: js.Object): Self = StObject.set(x, "whiteLabeling", value.asInstanceOf[js.Any])
+    inline def setWhiteLabeling(value: js.Object): Self = StObject.set(x, "whiteLabeling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiteLabelingUndefined: Self = StObject.set(x, "whiteLabeling", js.undefined)
+    inline def setWhiteLabelingUndefined: Self = StObject.set(x, "whiteLabeling", js.undefined)
   }
 }

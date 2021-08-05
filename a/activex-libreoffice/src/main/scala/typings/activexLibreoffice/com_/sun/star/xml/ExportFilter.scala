@@ -25,8 +25,7 @@ trait ExportFilter
      with XExportFilter
 object ExportFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     characters: String => Unit,
     endDocument: () => Unit,

@@ -18,25 +18,19 @@ trait PutSnapshotBlockResponse extends StObject {
 }
 object PutSnapshotBlockResponse {
   
-  @scala.inline
-  def apply(): PutSnapshotBlockResponse = {
+  inline def apply(): PutSnapshotBlockResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutSnapshotBlockResponse]
   }
   
-  @scala.inline
-  implicit class PutSnapshotBlockResponseMutableBuilder[Self <: PutSnapshotBlockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutSnapshotBlockResponse](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    inline def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
+    inline def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
   }
 }

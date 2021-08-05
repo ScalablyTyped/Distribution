@@ -12,7 +12,6 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getReferrer(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferrer")().asInstanceOf[js.Promise[String]]
+    inline def getReferrer(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferrer")().asInstanceOf[js.Promise[String]]
   }
 }

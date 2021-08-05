@@ -31,55 +31,39 @@ trait Sheet2CSVOpts
 }
 object Sheet2CSVOpts {
   
-  @scala.inline
-  def apply(): Sheet2CSVOpts = {
+  inline def apply(): Sheet2CSVOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sheet2CSVOpts]
   }
   
-  @scala.inline
-  implicit class Sheet2CSVOptsMutableBuilder[Self <: Sheet2CSVOpts] (val x: Self) extends AnyVal {
+  extension [Self <: Sheet2CSVOpts](x: Self) {
     
-    @scala.inline
-    def setBlankrows(value: Boolean): Self = StObject.set(x, "blankrows", value.asInstanceOf[js.Any])
+    inline def setBlankrows(value: Boolean): Self = StObject.set(x, "blankrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlankrowsUndefined: Self = StObject.set(x, "blankrows", js.undefined)
+    inline def setBlankrowsUndefined: Self = StObject.set(x, "blankrows", js.undefined)
     
-    @scala.inline
-    def setFS(value: String): Self = StObject.set(x, "FS", value.asInstanceOf[js.Any])
+    inline def setFS(value: String): Self = StObject.set(x, "FS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFSUndefined: Self = StObject.set(x, "FS", js.undefined)
+    inline def setFSUndefined: Self = StObject.set(x, "FS", js.undefined)
     
-    @scala.inline
-    def setForceQuotes(value: Boolean): Self = StObject.set(x, "forceQuotes", value.asInstanceOf[js.Any])
+    inline def setForceQuotes(value: Boolean): Self = StObject.set(x, "forceQuotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceQuotesUndefined: Self = StObject.set(x, "forceQuotes", js.undefined)
+    inline def setForceQuotesUndefined: Self = StObject.set(x, "forceQuotes", js.undefined)
     
-    @scala.inline
-    def setRS(value: String): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
+    inline def setRS(value: String): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRSUndefined: Self = StObject.set(x, "RS", js.undefined)
+    inline def setRSUndefined: Self = StObject.set(x, "RS", js.undefined)
     
-    @scala.inline
-    def setRawNumbers(value: Boolean): Self = StObject.set(x, "rawNumbers", value.asInstanceOf[js.Any])
+    inline def setRawNumbers(value: Boolean): Self = StObject.set(x, "rawNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawNumbersUndefined: Self = StObject.set(x, "rawNumbers", js.undefined)
+    inline def setRawNumbersUndefined: Self = StObject.set(x, "rawNumbers", js.undefined)
     
-    @scala.inline
-    def setSkipHidden(value: Boolean): Self = StObject.set(x, "skipHidden", value.asInstanceOf[js.Any])
+    inline def setSkipHidden(value: Boolean): Self = StObject.set(x, "skipHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipHiddenUndefined: Self = StObject.set(x, "skipHidden", js.undefined)
+    inline def setSkipHiddenUndefined: Self = StObject.set(x, "skipHidden", js.undefined)
     
-    @scala.inline
-    def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+    inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
+    inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
   }
 }

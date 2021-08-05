@@ -32,37 +32,27 @@ trait SELinuxOptions extends StObject {
 }
 object SELinuxOptions {
   
-  @scala.inline
-  def apply(): SELinuxOptions = {
+  inline def apply(): SELinuxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SELinuxOptions]
   }
   
-  @scala.inline
-  implicit class SELinuxOptionsMutableBuilder[Self <: SELinuxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SELinuxOptions](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

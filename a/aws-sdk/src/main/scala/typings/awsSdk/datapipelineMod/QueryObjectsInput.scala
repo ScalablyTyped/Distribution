@@ -33,37 +33,27 @@ trait QueryObjectsInput extends StObject {
 }
 object QueryObjectsInput {
   
-  @scala.inline
-  def apply(pipelineId: id, sphere: String): QueryObjectsInput = {
+  inline def apply(pipelineId: id, sphere: String): QueryObjectsInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any], sphere = sphere.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryObjectsInput]
   }
   
-  @scala.inline
-  implicit class QueryObjectsInputMutableBuilder[Self <: QueryObjectsInput] (val x: Self) extends AnyVal {
+  extension [Self <: QueryObjectsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: int): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: int): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSphere(value: String): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+    inline def setSphere(value: String): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
   }
 }

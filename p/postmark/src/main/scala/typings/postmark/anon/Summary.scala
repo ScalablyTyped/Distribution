@@ -10,16 +10,13 @@ trait Summary extends StObject {
 }
 object Summary {
   
-  @scala.inline
-  def apply(Summary: String): Summary = {
+  inline def apply(Summary: String): Summary = {
     val __obj = js.Dynamic.literal(Summary = Summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Summary]
   }
   
-  @scala.inline
-  implicit class SummaryMutableBuilder[Self <: Summary] (val x: Self) extends AnyVal {
+  extension [Self <: Summary](x: Self) {
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
   }
 }

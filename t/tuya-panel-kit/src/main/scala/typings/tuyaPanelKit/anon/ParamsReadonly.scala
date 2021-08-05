@@ -13,16 +13,13 @@ trait ParamsReadonly[Params /* <: js.UndefOr[js.Object] */] extends StObject {
 }
 object ParamsReadonly {
   
-  @scala.inline
-  def apply[Params /* <: js.UndefOr[js.Object] */](params: Params): ParamsReadonly[Params] = {
+  inline def apply[Params /* <: js.UndefOr[js.Object] */](params: Params): ParamsReadonly[Params] = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsReadonly[Params]]
   }
   
-  @scala.inline
-  implicit class ParamsReadonlyMutableBuilder[Self <: ParamsReadonly[?], Params /* <: js.UndefOr[js.Object] */] (val x: Self & ParamsReadonly[Params]) extends AnyVal {
+  extension [Self <: ParamsReadonly[?], Params /* <: js.UndefOr[js.Object] */](x: Self & ParamsReadonly[Params]) {
     
-    @scala.inline
-    def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

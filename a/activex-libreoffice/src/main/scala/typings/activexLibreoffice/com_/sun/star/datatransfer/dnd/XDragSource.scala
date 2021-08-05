@@ -57,8 +57,7 @@ trait XDragSource
 }
 object XDragSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDefaultCursor: Double => Double,
     isDragImageSupported: () => Boolean,
@@ -70,16 +69,12 @@ object XDragSource {
     __obj.asInstanceOf[XDragSource]
   }
   
-  @scala.inline
-  implicit class XDragSourceMutableBuilder[Self <: XDragSource] (val x: Self) extends AnyVal {
+  extension [Self <: XDragSource](x: Self) {
     
-    @scala.inline
-    def setGetDefaultCursor(value: Double => Double): Self = StObject.set(x, "getDefaultCursor", js.Any.fromFunction1(value))
+    inline def setGetDefaultCursor(value: Double => Double): Self = StObject.set(x, "getDefaultCursor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDragImageSupported(value: () => Boolean): Self = StObject.set(x, "isDragImageSupported", js.Any.fromFunction0(value))
+    inline def setIsDragImageSupported(value: () => Boolean): Self = StObject.set(x, "isDragImageSupported", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartDrag(value: (DragGestureEvent, Double, Double, Double, XTransferable, XDragSourceListener) => Unit): Self = StObject.set(x, "startDrag", js.Any.fromFunction6(value))
+    inline def setStartDrag(value: (DragGestureEvent, Double, Double, Double, XTransferable, XDragSourceListener) => Unit): Self = StObject.set(x, "startDrag", js.Any.fromFunction6(value))
   }
 }

@@ -12,11 +12,9 @@ object nestedDialogContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def NestedDialogContextProvider(hasChildren: NestedDialogContextProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("NestedDialogContextProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def NestedDialogContextProvider(hasChildren: NestedDialogContextProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("NestedDialogContextProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def useNestedDialogContext(): NestedDialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedDialogContext")().asInstanceOf[NestedDialogContext]
+  inline def useNestedDialogContext(): NestedDialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedDialogContext")().asInstanceOf[NestedDialogContext]
   
   trait NestedDialogContext extends StObject {
     
@@ -28,26 +26,20 @@ object nestedDialogContextMod {
   }
   object NestedDialogContext {
     
-    @scala.inline
-    def apply(add: String => Unit, remove: String => Unit, stack: js.Array[String]): NestedDialogContext = {
+    inline def apply(add: String => Unit, remove: String => Unit, stack: js.Array[String]): NestedDialogContext = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), remove = js.Any.fromFunction1(remove), stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[NestedDialogContext]
     }
     
-    @scala.inline
-    implicit class NestedDialogContextMutableBuilder[Self <: NestedDialogContext] (val x: Self) extends AnyVal {
+    extension [Self <: NestedDialogContext](x: Self) {
       
-      @scala.inline
-      def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
     }
   }
   
@@ -57,20 +49,16 @@ object nestedDialogContextMod {
   }
   object NestedDialogContextProviderProps {
     
-    @scala.inline
-    def apply(): NestedDialogContextProviderProps = {
+    inline def apply(): NestedDialogContextProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NestedDialogContextProviderProps]
     }
     
-    @scala.inline
-    implicit class NestedDialogContextProviderPropsMutableBuilder[Self <: NestedDialogContextProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: NestedDialogContextProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

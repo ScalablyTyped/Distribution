@@ -16,22 +16,17 @@ trait SBIntersectionType
 }
 object SBIntersectionType {
   
-  @scala.inline
-  def apply(value: js.Array[SBType]): SBIntersectionType = {
+  inline def apply(value: js.Array[SBType]): SBIntersectionType = {
     val __obj = js.Dynamic.literal(name = "intersection", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SBIntersectionType]
   }
   
-  @scala.inline
-  implicit class SBIntersectionTypeMutableBuilder[Self <: SBIntersectionType] (val x: Self) extends AnyVal {
+  extension [Self <: SBIntersectionType](x: Self) {
     
-    @scala.inline
-    def setName(value: intersection): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: intersection): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[SBType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[SBType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: SBType*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: SBType*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

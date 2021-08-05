@@ -32,8 +32,7 @@ trait XModifiable2
 }
 object XModifiable2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addModifyListener: XModifyListener => Unit,
     disableSetModified: () => Boolean,
@@ -49,16 +48,12 @@ object XModifiable2 {
     __obj.asInstanceOf[XModifiable2]
   }
   
-  @scala.inline
-  implicit class XModifiable2MutableBuilder[Self <: XModifiable2] (val x: Self) extends AnyVal {
+  extension [Self <: XModifiable2](x: Self) {
     
-    @scala.inline
-    def setDisableSetModified(value: () => Boolean): Self = StObject.set(x, "disableSetModified", js.Any.fromFunction0(value))
+    inline def setDisableSetModified(value: () => Boolean): Self = StObject.set(x, "disableSetModified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnableSetModified(value: () => Boolean): Self = StObject.set(x, "enableSetModified", js.Any.fromFunction0(value))
+    inline def setEnableSetModified(value: () => Boolean): Self = StObject.set(x, "enableSetModified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSetModifiedEnabled(value: () => Boolean): Self = StObject.set(x, "isSetModifiedEnabled", js.Any.fromFunction0(value))
+    inline def setIsSetModifiedEnabled(value: () => Boolean): Self = StObject.set(x, "isSetModifiedEnabled", js.Any.fromFunction0(value))
   }
 }

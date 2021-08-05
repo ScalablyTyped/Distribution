@@ -35,31 +35,23 @@ trait PlusPaymentOrderStatementIAP extends StObject {
 }
 object PlusPaymentOrderStatementIAP {
   
-  @scala.inline
-  def apply(): PlusPaymentOrderStatementIAP = {
+  inline def apply(): PlusPaymentOrderStatementIAP = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusPaymentOrderStatementIAP]
   }
   
-  @scala.inline
-  implicit class PlusPaymentOrderStatementIAPMutableBuilder[Self <: PlusPaymentOrderStatementIAP] (val x: Self) extends AnyVal {
+  extension [Self <: PlusPaymentOrderStatementIAP](x: Self) {
     
-    @scala.inline
-    def setProductid(value: String): Self = StObject.set(x, "productid", value.asInstanceOf[js.Any])
+    inline def setProductid(value: String): Self = StObject.set(x, "productid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductidUndefined: Self = StObject.set(x, "productid", js.undefined)
+    inline def setProductidUndefined: Self = StObject.set(x, "productid", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

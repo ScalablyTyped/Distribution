@@ -13,6 +13,5 @@ object getCenterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(points: js.Array[GeolibInputCoordinates]): `false` | Longitude = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(points.asInstanceOf[js.Any]).asInstanceOf[`false` | Longitude]
+  inline def default(points: js.Array[GeolibInputCoordinates]): `false` | Longitude = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(points.asInstanceOf[js.Any]).asInstanceOf[`false` | Longitude]
 }

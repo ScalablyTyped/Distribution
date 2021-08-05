@@ -100,181 +100,123 @@ trait JobStatistics2 extends StObject {
 }
 object JobStatistics2 {
   
-  @scala.inline
-  def apply(): JobStatistics2 = {
+  inline def apply(): JobStatistics2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobStatistics2]
   }
   
-  @scala.inline
-  implicit class JobStatistics2MutableBuilder[Self <: JobStatistics2] (val x: Self) extends AnyVal {
+  extension [Self <: JobStatistics2](x: Self) {
     
-    @scala.inline
-    def setBillingTier(value: Double): Self = StObject.set(x, "billingTier", value.asInstanceOf[js.Any])
+    inline def setBillingTier(value: Double): Self = StObject.set(x, "billingTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingTierUndefined: Self = StObject.set(x, "billingTier", js.undefined)
+    inline def setBillingTierUndefined: Self = StObject.set(x, "billingTier", js.undefined)
     
-    @scala.inline
-    def setCacheHit(value: Boolean): Self = StObject.set(x, "cacheHit", value.asInstanceOf[js.Any])
+    inline def setCacheHit(value: Boolean): Self = StObject.set(x, "cacheHit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheHitUndefined: Self = StObject.set(x, "cacheHit", js.undefined)
+    inline def setCacheHitUndefined: Self = StObject.set(x, "cacheHit", js.undefined)
     
-    @scala.inline
-    def setDdlAffectedRowAccessPolicyCount(value: String): Self = StObject.set(x, "ddlAffectedRowAccessPolicyCount", value.asInstanceOf[js.Any])
+    inline def setDdlAffectedRowAccessPolicyCount(value: String): Self = StObject.set(x, "ddlAffectedRowAccessPolicyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdlAffectedRowAccessPolicyCountUndefined: Self = StObject.set(x, "ddlAffectedRowAccessPolicyCount", js.undefined)
+    inline def setDdlAffectedRowAccessPolicyCountUndefined: Self = StObject.set(x, "ddlAffectedRowAccessPolicyCount", js.undefined)
     
-    @scala.inline
-    def setDdlOperationPerformed(value: String): Self = StObject.set(x, "ddlOperationPerformed", value.asInstanceOf[js.Any])
+    inline def setDdlOperationPerformed(value: String): Self = StObject.set(x, "ddlOperationPerformed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdlOperationPerformedUndefined: Self = StObject.set(x, "ddlOperationPerformed", js.undefined)
+    inline def setDdlOperationPerformedUndefined: Self = StObject.set(x, "ddlOperationPerformed", js.undefined)
     
-    @scala.inline
-    def setDdlTargetRoutine(value: RoutineReference): Self = StObject.set(x, "ddlTargetRoutine", value.asInstanceOf[js.Any])
+    inline def setDdlTargetRoutine(value: RoutineReference): Self = StObject.set(x, "ddlTargetRoutine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdlTargetRoutineUndefined: Self = StObject.set(x, "ddlTargetRoutine", js.undefined)
+    inline def setDdlTargetRoutineUndefined: Self = StObject.set(x, "ddlTargetRoutine", js.undefined)
     
-    @scala.inline
-    def setDdlTargetRowAccessPolicy(value: RowAccessPolicyReference): Self = StObject.set(x, "ddlTargetRowAccessPolicy", value.asInstanceOf[js.Any])
+    inline def setDdlTargetRowAccessPolicy(value: RowAccessPolicyReference): Self = StObject.set(x, "ddlTargetRowAccessPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdlTargetRowAccessPolicyUndefined: Self = StObject.set(x, "ddlTargetRowAccessPolicy", js.undefined)
+    inline def setDdlTargetRowAccessPolicyUndefined: Self = StObject.set(x, "ddlTargetRowAccessPolicy", js.undefined)
     
-    @scala.inline
-    def setDdlTargetTable(value: TableReference): Self = StObject.set(x, "ddlTargetTable", value.asInstanceOf[js.Any])
+    inline def setDdlTargetTable(value: TableReference): Self = StObject.set(x, "ddlTargetTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdlTargetTableUndefined: Self = StObject.set(x, "ddlTargetTable", js.undefined)
+    inline def setDdlTargetTableUndefined: Self = StObject.set(x, "ddlTargetTable", js.undefined)
     
-    @scala.inline
-    def setEstimatedBytesProcessed(value: String): Self = StObject.set(x, "estimatedBytesProcessed", value.asInstanceOf[js.Any])
+    inline def setEstimatedBytesProcessed(value: String): Self = StObject.set(x, "estimatedBytesProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedBytesProcessedUndefined: Self = StObject.set(x, "estimatedBytesProcessed", js.undefined)
+    inline def setEstimatedBytesProcessedUndefined: Self = StObject.set(x, "estimatedBytesProcessed", js.undefined)
     
-    @scala.inline
-    def setModelTraining(value: BigQueryModelTraining): Self = StObject.set(x, "modelTraining", value.asInstanceOf[js.Any])
+    inline def setModelTraining(value: BigQueryModelTraining): Self = StObject.set(x, "modelTraining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelTrainingCurrentIteration(value: Double): Self = StObject.set(x, "modelTrainingCurrentIteration", value.asInstanceOf[js.Any])
+    inline def setModelTrainingCurrentIteration(value: Double): Self = StObject.set(x, "modelTrainingCurrentIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelTrainingCurrentIterationUndefined: Self = StObject.set(x, "modelTrainingCurrentIteration", js.undefined)
+    inline def setModelTrainingCurrentIterationUndefined: Self = StObject.set(x, "modelTrainingCurrentIteration", js.undefined)
     
-    @scala.inline
-    def setModelTrainingExpectedTotalIteration(value: String): Self = StObject.set(x, "modelTrainingExpectedTotalIteration", value.asInstanceOf[js.Any])
+    inline def setModelTrainingExpectedTotalIteration(value: String): Self = StObject.set(x, "modelTrainingExpectedTotalIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelTrainingExpectedTotalIterationUndefined: Self = StObject.set(x, "modelTrainingExpectedTotalIteration", js.undefined)
+    inline def setModelTrainingExpectedTotalIterationUndefined: Self = StObject.set(x, "modelTrainingExpectedTotalIteration", js.undefined)
     
-    @scala.inline
-    def setModelTrainingUndefined: Self = StObject.set(x, "modelTraining", js.undefined)
+    inline def setModelTrainingUndefined: Self = StObject.set(x, "modelTraining", js.undefined)
     
-    @scala.inline
-    def setNumDmlAffectedRows(value: String): Self = StObject.set(x, "numDmlAffectedRows", value.asInstanceOf[js.Any])
+    inline def setNumDmlAffectedRows(value: String): Self = StObject.set(x, "numDmlAffectedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumDmlAffectedRowsUndefined: Self = StObject.set(x, "numDmlAffectedRows", js.undefined)
+    inline def setNumDmlAffectedRowsUndefined: Self = StObject.set(x, "numDmlAffectedRows", js.undefined)
     
-    @scala.inline
-    def setQueryPlan(value: js.Array[ExplainQueryStage]): Self = StObject.set(x, "queryPlan", value.asInstanceOf[js.Any])
+    inline def setQueryPlan(value: js.Array[ExplainQueryStage]): Self = StObject.set(x, "queryPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryPlanUndefined: Self = StObject.set(x, "queryPlan", js.undefined)
+    inline def setQueryPlanUndefined: Self = StObject.set(x, "queryPlan", js.undefined)
     
-    @scala.inline
-    def setQueryPlanVarargs(value: ExplainQueryStage*): Self = StObject.set(x, "queryPlan", js.Array(value :_*))
+    inline def setQueryPlanVarargs(value: ExplainQueryStage*): Self = StObject.set(x, "queryPlan", js.Array(value :_*))
     
-    @scala.inline
-    def setReferencedRoutines(value: js.Array[RoutineReference]): Self = StObject.set(x, "referencedRoutines", value.asInstanceOf[js.Any])
+    inline def setReferencedRoutines(value: js.Array[RoutineReference]): Self = StObject.set(x, "referencedRoutines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencedRoutinesUndefined: Self = StObject.set(x, "referencedRoutines", js.undefined)
+    inline def setReferencedRoutinesUndefined: Self = StObject.set(x, "referencedRoutines", js.undefined)
     
-    @scala.inline
-    def setReferencedRoutinesVarargs(value: RoutineReference*): Self = StObject.set(x, "referencedRoutines", js.Array(value :_*))
+    inline def setReferencedRoutinesVarargs(value: RoutineReference*): Self = StObject.set(x, "referencedRoutines", js.Array(value :_*))
     
-    @scala.inline
-    def setReferencedTables(value: js.Array[TableReference]): Self = StObject.set(x, "referencedTables", value.asInstanceOf[js.Any])
+    inline def setReferencedTables(value: js.Array[TableReference]): Self = StObject.set(x, "referencedTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencedTablesUndefined: Self = StObject.set(x, "referencedTables", js.undefined)
+    inline def setReferencedTablesUndefined: Self = StObject.set(x, "referencedTables", js.undefined)
     
-    @scala.inline
-    def setReferencedTablesVarargs(value: TableReference*): Self = StObject.set(x, "referencedTables", js.Array(value :_*))
+    inline def setReferencedTablesVarargs(value: TableReference*): Self = StObject.set(x, "referencedTables", js.Array(value :_*))
     
-    @scala.inline
-    def setReservationUsage(value: js.Array[Name]): Self = StObject.set(x, "reservationUsage", value.asInstanceOf[js.Any])
+    inline def setReservationUsage(value: js.Array[Name]): Self = StObject.set(x, "reservationUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationUsageUndefined: Self = StObject.set(x, "reservationUsage", js.undefined)
+    inline def setReservationUsageUndefined: Self = StObject.set(x, "reservationUsage", js.undefined)
     
-    @scala.inline
-    def setReservationUsageVarargs(value: Name*): Self = StObject.set(x, "reservationUsage", js.Array(value :_*))
+    inline def setReservationUsageVarargs(value: Name*): Self = StObject.set(x, "reservationUsage", js.Array(value :_*))
     
-    @scala.inline
-    def setSchema(value: TableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: TableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setStatementType(value: String): Self = StObject.set(x, "statementType", value.asInstanceOf[js.Any])
+    inline def setStatementType(value: String): Self = StObject.set(x, "statementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementTypeUndefined: Self = StObject.set(x, "statementType", js.undefined)
+    inline def setStatementTypeUndefined: Self = StObject.set(x, "statementType", js.undefined)
     
-    @scala.inline
-    def setTimeline(value: js.Array[QueryTimelineSample]): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: js.Array[QueryTimelineSample]): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
+    inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
     
-    @scala.inline
-    def setTimelineVarargs(value: QueryTimelineSample*): Self = StObject.set(x, "timeline", js.Array(value :_*))
+    inline def setTimelineVarargs(value: QueryTimelineSample*): Self = StObject.set(x, "timeline", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalBytesBilled(value: String): Self = StObject.set(x, "totalBytesBilled", value.asInstanceOf[js.Any])
+    inline def setTotalBytesBilled(value: String): Self = StObject.set(x, "totalBytesBilled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesBilledUndefined: Self = StObject.set(x, "totalBytesBilled", js.undefined)
+    inline def setTotalBytesBilledUndefined: Self = StObject.set(x, "totalBytesBilled", js.undefined)
     
-    @scala.inline
-    def setTotalBytesProcessed(value: String): Self = StObject.set(x, "totalBytesProcessed", value.asInstanceOf[js.Any])
+    inline def setTotalBytesProcessed(value: String): Self = StObject.set(x, "totalBytesProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesProcessedAccuracy(value: String): Self = StObject.set(x, "totalBytesProcessedAccuracy", value.asInstanceOf[js.Any])
+    inline def setTotalBytesProcessedAccuracy(value: String): Self = StObject.set(x, "totalBytesProcessedAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesProcessedAccuracyUndefined: Self = StObject.set(x, "totalBytesProcessedAccuracy", js.undefined)
+    inline def setTotalBytesProcessedAccuracyUndefined: Self = StObject.set(x, "totalBytesProcessedAccuracy", js.undefined)
     
-    @scala.inline
-    def setTotalBytesProcessedUndefined: Self = StObject.set(x, "totalBytesProcessed", js.undefined)
+    inline def setTotalBytesProcessedUndefined: Self = StObject.set(x, "totalBytesProcessed", js.undefined)
     
-    @scala.inline
-    def setTotalPartitionsProcessed(value: String): Self = StObject.set(x, "totalPartitionsProcessed", value.asInstanceOf[js.Any])
+    inline def setTotalPartitionsProcessed(value: String): Self = StObject.set(x, "totalPartitionsProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPartitionsProcessedUndefined: Self = StObject.set(x, "totalPartitionsProcessed", js.undefined)
+    inline def setTotalPartitionsProcessedUndefined: Self = StObject.set(x, "totalPartitionsProcessed", js.undefined)
     
-    @scala.inline
-    def setTotalSlotMs(value: String): Self = StObject.set(x, "totalSlotMs", value.asInstanceOf[js.Any])
+    inline def setTotalSlotMs(value: String): Self = StObject.set(x, "totalSlotMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
+    inline def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
     
-    @scala.inline
-    def setUndeclaredQueryParameters(value: js.Array[QueryParameter]): Self = StObject.set(x, "undeclaredQueryParameters", value.asInstanceOf[js.Any])
+    inline def setUndeclaredQueryParameters(value: js.Array[QueryParameter]): Self = StObject.set(x, "undeclaredQueryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndeclaredQueryParametersUndefined: Self = StObject.set(x, "undeclaredQueryParameters", js.undefined)
+    inline def setUndeclaredQueryParametersUndefined: Self = StObject.set(x, "undeclaredQueryParameters", js.undefined)
     
-    @scala.inline
-    def setUndeclaredQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "undeclaredQueryParameters", js.Array(value :_*))
+    inline def setUndeclaredQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "undeclaredQueryParameters", js.Array(value :_*))
   }
 }

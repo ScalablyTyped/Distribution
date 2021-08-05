@@ -13,19 +13,15 @@ trait PutOrganizationConfigRuleResponse extends StObject {
 }
 object PutOrganizationConfigRuleResponse {
   
-  @scala.inline
-  def apply(): PutOrganizationConfigRuleResponse = {
+  inline def apply(): PutOrganizationConfigRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutOrganizationConfigRuleResponse]
   }
   
-  @scala.inline
-  implicit class PutOrganizationConfigRuleResponseMutableBuilder[Self <: PutOrganizationConfigRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutOrganizationConfigRuleResponse](x: Self) {
     
-    @scala.inline
-    def setOrganizationConfigRuleArn(value: StringWithCharLimit256): Self = StObject.set(x, "OrganizationConfigRuleArn", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfigRuleArn(value: StringWithCharLimit256): Self = StObject.set(x, "OrganizationConfigRuleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConfigRuleArnUndefined: Self = StObject.set(x, "OrganizationConfigRuleArn", js.undefined)
+    inline def setOrganizationConfigRuleArnUndefined: Self = StObject.set(x, "OrganizationConfigRuleArn", js.undefined)
   }
 }

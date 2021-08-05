@@ -19,31 +19,23 @@ trait Contentscripts extends StObject {
 }
 object Contentscripts {
   
-  @scala.inline
-  def apply(): Contentscripts = {
+  inline def apply(): Contentscripts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Contentscripts]
   }
   
-  @scala.inline
-  implicit class ContentscriptsMutableBuilder[Self <: Contentscripts] (val x: Self) extends AnyVal {
+  extension [Self <: Contentscripts](x: Self) {
     
-    @scala.inline
-    def setContent_scripts(value: String): Self = StObject.set(x, "content_scripts", value.asInstanceOf[js.Any])
+    inline def setContent_scripts(value: String): Self = StObject.set(x, "content_scripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_scriptsUndefined: Self = StObject.set(x, "content_scripts", js.undefined)
+    inline def setContent_scriptsUndefined: Self = StObject.set(x, "content_scripts", js.undefined)
     
-    @scala.inline
-    def setExtension_pages(value: String): Self = StObject.set(x, "extension_pages", value.asInstanceOf[js.Any])
+    inline def setExtension_pages(value: String): Self = StObject.set(x, "extension_pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension_pagesUndefined: Self = StObject.set(x, "extension_pages", js.undefined)
+    inline def setExtension_pagesUndefined: Self = StObject.set(x, "extension_pages", js.undefined)
     
-    @scala.inline
-    def setIsolated_world(value: String): Self = StObject.set(x, "isolated_world", value.asInstanceOf[js.Any])
+    inline def setIsolated_world(value: String): Self = StObject.set(x, "isolated_world", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolated_worldUndefined: Self = StObject.set(x, "isolated_world", js.undefined)
+    inline def setIsolated_worldUndefined: Self = StObject.set(x, "isolated_world", js.undefined)
   }
 }

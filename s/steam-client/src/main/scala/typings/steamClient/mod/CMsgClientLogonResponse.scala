@@ -18,19 +18,15 @@ trait CMsgClientLogonResponse extends StObject {
 }
 object CMsgClientLogonResponse {
   
-  @scala.inline
-  def apply(eresult: EResult, webapi_authenticate_user_nonce: String): CMsgClientLogonResponse = {
+  inline def apply(eresult: EResult, webapi_authenticate_user_nonce: String): CMsgClientLogonResponse = {
     val __obj = js.Dynamic.literal(eresult = eresult.asInstanceOf[js.Any], webapi_authenticate_user_nonce = webapi_authenticate_user_nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMsgClientLogonResponse]
   }
   
-  @scala.inline
-  implicit class CMsgClientLogonResponseMutableBuilder[Self <: CMsgClientLogonResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CMsgClientLogonResponse](x: Self) {
     
-    @scala.inline
-    def setEresult(value: EResult): Self = StObject.set(x, "eresult", value.asInstanceOf[js.Any])
+    inline def setEresult(value: EResult): Self = StObject.set(x, "eresult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebapi_authenticate_user_nonce(value: String): Self = StObject.set(x, "webapi_authenticate_user_nonce", value.asInstanceOf[js.Any])
+    inline def setWebapi_authenticate_user_nonce(value: String): Self = StObject.set(x, "webapi_authenticate_user_nonce", value.asInstanceOf[js.Any])
   }
 }

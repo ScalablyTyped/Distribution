@@ -8,16 +8,13 @@ object hermesProfileTransformerStrings {
   
   @js.native
   sealed trait HermesCPUProfile extends StObject
-  @scala.inline
-  def HermesCPUProfile: HermesCPUProfile = "HermesCPUProfile".asInstanceOf[HermesCPUProfile]
+  inline def HermesCPUProfile: HermesCPUProfile = "HermesCPUProfile".asInstanceOf[HermesCPUProfile]
   
   @js.native
   sealed trait SharedEventProperties extends StObject
-  @scala.inline
-  def SharedEventProperties: SharedEventProperties = "SharedEventProperties".asInstanceOf[SharedEventProperties]
+  inline def SharedEventProperties: SharedEventProperties = "SharedEventProperties".asInstanceOf[SharedEventProperties]
   
   @js.native
   sealed trait constructNodes extends StObject
-  @scala.inline
-  def constructNodes: constructNodes = "constructNodes".asInstanceOf[constructNodes]
+  inline def constructNodes: constructNodes = "constructNodes".asInstanceOf[constructNodes]
 }

@@ -44,8 +44,7 @@ object userMod {
   }
   object Organization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       blog: String,
       company: String,
@@ -77,50 +76,35 @@ object userMod {
       __obj.asInstanceOf[Organization]
     }
     
-    @scala.inline
-    implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
+    extension [Self <: Organization](x: Self) {
       
-      @scala.inline
-      def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
+      inline def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+      inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      inline def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Double): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Double): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_organization_projects(value: Boolean): Self = StObject.set(x, "has_organization_projects", value.asInstanceOf[js.Any])
+      inline def setHas_organization_projects(value: Boolean): Self = StObject.set(x, "has_organization_projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_repository_projects(value: Boolean): Self = StObject.set(x, "has_repository_projects", value.asInstanceOf[js.Any])
+      inline def setHas_repository_projects(value: Boolean): Self = StObject.set(x, "has_repository_projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+      inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_gists(value: Double): Self = StObject.set(x, "public_gists", value.asInstanceOf[js.Any])
+      inline def setPublic_gists(value: Double): Self = StObject.set(x, "public_gists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
+      inline def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,8 +127,7 @@ object userMod {
   }
   object OrganizationSummary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       description: String,
       events_url: String,
@@ -162,26 +145,19 @@ object userMod {
       __obj.asInstanceOf[OrganizationSummary]
     }
     
-    @scala.inline
-    implicit class OrganizationSummaryMutableBuilder[Self <: OrganizationSummary] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationSummary](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHooks_url(value: String): Self = StObject.set(x, "hooks_url", value.asInstanceOf[js.Any])
+      inline def setHooks_url(value: String): Self = StObject.set(x, "hooks_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssues_url(value: String): Self = StObject.set(x, "issues_url", value.asInstanceOf[js.Any])
+      inline def setIssues_url(value: String): Self = StObject.set(x, "issues_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers_url(value: String): Self = StObject.set(x, "members_url", value.asInstanceOf[js.Any])
+      inline def setMembers_url(value: String): Self = StObject.set(x, "members_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_members_url(value: String): Self = StObject.set(x, "public_members_url", value.asInstanceOf[js.Any])
+      inline def setPublic_members_url(value: String): Self = StObject.set(x, "public_members_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: typings.typedGithubApi.typedGithubApiStrings.Organization): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.typedGithubApi.typedGithubApiStrings.Organization): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,8 +188,7 @@ object userMod {
   }
   object PrivateOrganization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       billing_email: String,
       blog: String,
@@ -254,35 +229,25 @@ object userMod {
       __obj.asInstanceOf[PrivateOrganization]
     }
     
-    @scala.inline
-    implicit class PrivateOrganizationMutableBuilder[Self <: PrivateOrganization] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateOrganization](x: Self) {
       
-      @scala.inline
-      def setBilling_email(value: String): Self = StObject.set(x, "billing_email", value.asInstanceOf[js.Any])
+      inline def setBilling_email(value: String): Self = StObject.set(x, "billing_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+      inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_repository_settings(value: String): Self = StObject.set(x, "default_repository_settings", value.asInstanceOf[js.Any])
+      inline def setDefault_repository_settings(value: String): Self = StObject.set(x, "default_repository_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisk_usage(value: Double): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
+      inline def setDisk_usage(value: Double): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers_can_create_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_repositories", value.asInstanceOf[js.Any])
+      inline def setMembers_can_create_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_repositories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwned_private_repos(value: Double): Self = StObject.set(x, "owned_private_repos", value.asInstanceOf[js.Any])
+      inline def setOwned_private_repos(value: Double): Self = StObject.set(x, "owned_private_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: Collaborators): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: Collaborators): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
+      inline def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
+      inline def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -309,8 +274,7 @@ object userMod {
   }
   object PrivateUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       bio: String,
       blog: String,
@@ -353,29 +317,21 @@ object userMod {
       __obj.asInstanceOf[PrivateUser]
     }
     
-    @scala.inline
-    implicit class PrivateUserMutableBuilder[Self <: PrivateUser] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateUser](x: Self) {
       
-      @scala.inline
-      def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+      inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisk_usage(value: Double): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
+      inline def setDisk_usage(value: Double): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwned_private_repos(value: Double): Self = StObject.set(x, "owned_private_repos", value.asInstanceOf[js.Any])
+      inline def setOwned_private_repos(value: Double): Self = StObject.set(x, "owned_private_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: Collaborators): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: Collaborators): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
+      inline def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
+      inline def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwo_factor_authentication(value: Boolean): Self = StObject.set(x, "two_factor_authentication", value.asInstanceOf[js.Any])
+      inline def setTwo_factor_authentication(value: Boolean): Self = StObject.set(x, "two_factor_authentication", value.asInstanceOf[js.Any])
     }
   }
   
@@ -397,8 +353,7 @@ object userMod {
   }
   object PrivateUserOrOrg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       blog: String,
       collaborators: Double,
@@ -429,26 +384,19 @@ object userMod {
       __obj.asInstanceOf[PrivateUserOrOrg]
     }
     
-    @scala.inline
-    implicit class PrivateUserOrOrgMutableBuilder[Self <: PrivateUserOrOrg] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateUserOrOrg](x: Self) {
       
-      @scala.inline
-      def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+      inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisk_usage(value: Double): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
+      inline def setDisk_usage(value: Double): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwned_private_repos(value: Double): Self = StObject.set(x, "owned_private_repos", value.asInstanceOf[js.Any])
+      inline def setOwned_private_repos(value: Double): Self = StObject.set(x, "owned_private_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: Collaborators): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: Collaborators): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
+      inline def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
+      inline def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,8 +434,7 @@ object userMod {
   }
   object User {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       bio: String,
       blog: String,
@@ -523,47 +470,33 @@ object userMod {
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
+      inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
+      inline def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+      inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      inline def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Double): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Double): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHireable(value: Boolean): Self = StObject.set(x, "hireable", value.asInstanceOf[js.Any])
+      inline def setHireable(value: Boolean): Self = StObject.set(x, "hireable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_gists(value: Double): Self = StObject.set(x, "public_gists", value.asInstanceOf[js.Any])
+      inline def setPublic_gists(value: Double): Self = StObject.set(x, "public_gists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
+      inline def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     }
   }
   
@@ -595,8 +528,7 @@ object userMod {
   }
   object UserOrOrg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       blog: String,
       company: String,
@@ -621,41 +553,29 @@ object userMod {
       __obj.asInstanceOf[UserOrOrg]
     }
     
-    @scala.inline
-    implicit class UserOrOrgMutableBuilder[Self <: UserOrOrg] (val x: Self) extends AnyVal {
+    extension [Self <: UserOrOrg](x: Self) {
       
-      @scala.inline
-      def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
+      inline def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+      inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      inline def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Double): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Double): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_gists(value: Double): Self = StObject.set(x, "public_gists", value.asInstanceOf[js.Any])
+      inline def setPublic_gists(value: Double): Self = StObject.set(x, "public_gists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
+      inline def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     }
   }
   
@@ -677,8 +597,7 @@ object userMod {
   }
   object UserOrOrgSummary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       events_url: String,
       id: Double,
@@ -692,31 +611,23 @@ object userMod {
       __obj.asInstanceOf[UserOrOrgSummary]
     }
     
-    @scala.inline
-    implicit class UserOrOrgSummaryMutableBuilder[Self <: UserOrOrgSummary] (val x: Self) extends AnyVal {
+    extension [Self <: UserOrOrgSummary](x: Self) {
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents_url(value: String): Self = StObject.set(x, "events_url", value.asInstanceOf[js.Any])
+      inline def setEvents_url(value: String): Self = StObject.set(x, "events_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+      inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepos_url(value: String): Self = StObject.set(x, "repos_url", value.asInstanceOf[js.Any])
+      inline def setRepos_url(value: String): Self = StObject.set(x, "repos_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: typings.typedGithubApi.typedGithubApiStrings.User | typings.typedGithubApi.typedGithubApiStrings.Organization
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -749,8 +660,7 @@ object userMod {
   }
   object UserSummary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       events_url: String,
       followers_url: String,
@@ -773,41 +683,29 @@ object userMod {
       __obj.asInstanceOf[UserSummary]
     }
     
-    @scala.inline
-    implicit class UserSummaryMutableBuilder[Self <: UserSummary] (val x: Self) extends AnyVal {
+    extension [Self <: UserSummary](x: Self) {
       
-      @scala.inline
-      def setFollowers_url(value: String): Self = StObject.set(x, "followers_url", value.asInstanceOf[js.Any])
+      inline def setFollowers_url(value: String): Self = StObject.set(x, "followers_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing_url(value: String): Self = StObject.set(x, "following_url", value.asInstanceOf[js.Any])
+      inline def setFollowing_url(value: String): Self = StObject.set(x, "following_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGists_url(value: String): Self = StObject.set(x, "gists_url", value.asInstanceOf[js.Any])
+      inline def setGists_url(value: String): Self = StObject.set(x, "gists_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravatar_id(value: String): Self = StObject.set(x, "gravatar_id", value.asInstanceOf[js.Any])
+      inline def setGravatar_id(value: String): Self = StObject.set(x, "gravatar_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+      inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizations_url(value: String): Self = StObject.set(x, "organizations_url", value.asInstanceOf[js.Any])
+      inline def setOrganizations_url(value: String): Self = StObject.set(x, "organizations_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceived_events_url(value: String): Self = StObject.set(x, "received_events_url", value.asInstanceOf[js.Any])
+      inline def setReceived_events_url(value: String): Self = StObject.set(x, "received_events_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSite_admin(value: Boolean): Self = StObject.set(x, "site_admin", value.asInstanceOf[js.Any])
+      inline def setSite_admin(value: Boolean): Self = StObject.set(x, "site_admin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarred_url(value: String): Self = StObject.set(x, "starred_url", value.asInstanceOf[js.Any])
+      inline def setStarred_url(value: String): Self = StObject.set(x, "starred_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptions_url(value: String): Self = StObject.set(x, "subscriptions_url", value.asInstanceOf[js.Any])
+      inline def setSubscriptions_url(value: String): Self = StObject.set(x, "subscriptions_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: typings.typedGithubApi.typedGithubApiStrings.User): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.typedGithubApi.typedGithubApiStrings.User): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

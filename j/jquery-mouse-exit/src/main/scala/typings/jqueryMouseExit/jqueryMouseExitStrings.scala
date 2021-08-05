@@ -8,6 +8,5 @@ object jqueryMouseExitStrings {
   
   @js.native
   sealed trait mouseExit extends StObject
-  @scala.inline
-  def mouseExit: mouseExit = "mouseExit".asInstanceOf[mouseExit]
+  inline def mouseExit: mouseExit = "mouseExit".asInstanceOf[mouseExit]
 }

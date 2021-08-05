@@ -16,7 +16,7 @@ object sha1Mod {
       * as the message schedule in the docs.
       * @private
       */
-    var W_ : js.Any = js.native
+    /* private */ var W_ : js.Any = js.native
     
     var blockSize: Double = js.native
     
@@ -24,14 +24,14 @@ object sha1Mod {
       * A buffer holding the partially computed hash result.
       * @private
       */
-    var buf_ : js.Any = js.native
+    /* private */ var buf_ : js.Any = js.native
     
     /**
       * Holds the previous values of accumulated variables a-e in the compress_
       * function.
       * @private
       */
-    var chain_ : js.Any = js.native
+    /* private */ var chain_ : js.Any = js.native
     
     def compress_(buf: String): Unit = js.native
     def compress_(buf: String, offset: Double): Unit = js.native
@@ -52,20 +52,20 @@ object sha1Mod {
     /**
       * @private {number}
       */
-    var inbuf_ : js.Any = js.native
+    /* private */ var inbuf_ : js.Any = js.native
     
     /**
       * Contains data needed to pad messages less than 64 bytes.
       * @private
       */
-    var pad_ : js.Any = js.native
+    /* private */ var pad_ : js.Any = js.native
     
     def reset(): Unit = js.native
     
     /**
       * @private {number}
       */
-    var total_ : js.Any = js.native
+    /* private */ var total_ : js.Any = js.native
     
     def update(): Unit = js.native
     def update(bytes: String): Unit = js.native

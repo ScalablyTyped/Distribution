@@ -10,16 +10,13 @@ trait CdsLbConfig extends StObject {
 }
 object CdsLbConfig {
   
-  @scala.inline
-  def apply(cluster: String): CdsLbConfig = {
+  inline def apply(cluster: String): CdsLbConfig = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any])
     __obj.asInstanceOf[CdsLbConfig]
   }
   
-  @scala.inline
-  implicit class CdsLbConfigMutableBuilder[Self <: CdsLbConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CdsLbConfig](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
   }
 }

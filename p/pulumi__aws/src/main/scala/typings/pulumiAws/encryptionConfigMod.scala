@@ -50,21 +50,16 @@ object encryptionConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EncryptionConfigState): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EncryptionConfigState, opts: CustomResourceOptions): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
+    inline def get(name: String, id: Input[ID]): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
+    inline def get(name: String, id: Input[ID], state: EncryptionConfigState): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
+    inline def get(name: String, id: Input[ID], state: EncryptionConfigState, opts: CustomResourceOptions): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
     
     /**
       * Returns true if the given object is an instance of EncryptionConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean]
   }
   
   trait EncryptionConfigArgs extends StObject {
@@ -81,24 +76,19 @@ object encryptionConfigMod {
   }
   object EncryptionConfigArgs {
     
-    @scala.inline
-    def apply(`type`: Input[String]): EncryptionConfigArgs = {
+    inline def apply(`type`: Input[String]): EncryptionConfigArgs = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncryptionConfigArgs]
     }
     
-    @scala.inline
-    implicit class EncryptionConfigArgsMutableBuilder[Self <: EncryptionConfigArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionConfigArgs](x: Self) {
       
-      @scala.inline
-      def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,26 +106,20 @@ object encryptionConfigMod {
   }
   object EncryptionConfigState {
     
-    @scala.inline
-    def apply(): EncryptionConfigState = {
+    inline def apply(): EncryptionConfigState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncryptionConfigState]
     }
     
-    @scala.inline
-    implicit class EncryptionConfigStateMutableBuilder[Self <: EncryptionConfigState] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionConfigState](x: Self) {
       
-      @scala.inline
-      def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -24,19 +24,15 @@ trait SchemaInputConfig extends StObject {
 }
 object SchemaInputConfig {
   
-  @scala.inline
-  def apply(): SchemaInputConfig = {
+  inline def apply(): SchemaInputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInputConfig]
   }
   
-  @scala.inline
-  implicit class SchemaInputConfigMutableBuilder[Self <: SchemaInputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInputConfig](x: Self) {
     
-    @scala.inline
-    def setGcsSource(value: SchemaGoogleCloudHealthcareV1alphaGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: SchemaGoogleCloudHealthcareV1alphaGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

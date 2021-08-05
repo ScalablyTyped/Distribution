@@ -32,8 +32,7 @@ trait XReplaceable
 }
 object XReplaceable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createReplaceDescriptor: () => XReplaceDescriptor,
     createSearchDescriptor: () => XSearchDescriptor,
@@ -48,13 +47,10 @@ object XReplaceable {
     __obj.asInstanceOf[XReplaceable]
   }
   
-  @scala.inline
-  implicit class XReplaceableMutableBuilder[Self <: XReplaceable] (val x: Self) extends AnyVal {
+  extension [Self <: XReplaceable](x: Self) {
     
-    @scala.inline
-    def setCreateReplaceDescriptor(value: () => XReplaceDescriptor): Self = StObject.set(x, "createReplaceDescriptor", js.Any.fromFunction0(value))
+    inline def setCreateReplaceDescriptor(value: () => XReplaceDescriptor): Self = StObject.set(x, "createReplaceDescriptor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceAll(value: XSearchDescriptor => Double): Self = StObject.set(x, "replaceAll", js.Any.fromFunction1(value))
+    inline def setReplaceAll(value: XSearchDescriptor => Double): Self = StObject.set(x, "replaceAll", js.Any.fromFunction1(value))
   }
 }

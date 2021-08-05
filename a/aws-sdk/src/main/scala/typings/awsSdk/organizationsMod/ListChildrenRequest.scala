@@ -28,31 +28,23 @@ trait ListChildrenRequest extends StObject {
 }
 object ListChildrenRequest {
   
-  @scala.inline
-  def apply(ChildType: ChildType, ParentId: ParentId): ListChildrenRequest = {
+  inline def apply(ChildType: ChildType, ParentId: ParentId): ListChildrenRequest = {
     val __obj = js.Dynamic.literal(ChildType = ChildType.asInstanceOf[js.Any], ParentId = ParentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListChildrenRequest]
   }
   
-  @scala.inline
-  implicit class ListChildrenRequestMutableBuilder[Self <: ListChildrenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListChildrenRequest](x: Self) {
     
-    @scala.inline
-    def setChildType(value: ChildType): Self = StObject.set(x, "ChildType", value.asInstanceOf[js.Any])
+    inline def setChildType(value: ChildType): Self = StObject.set(x, "ChildType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParentId(value: ParentId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: ParentId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
   }
 }

@@ -55,72 +55,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoteObjectSubtype extends StObject
 object RemoteObjectSubtype {
   
-  @scala.inline
-  def Array: array = "array".asInstanceOf[array]
+  inline def Array: array = "array".asInstanceOf[array]
   
-  @scala.inline
-  def Arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  inline def Arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
-  @scala.inline
-  def Dataview: dataview = "dataview".asInstanceOf[dataview]
+  inline def Dataview: dataview = "dataview".asInstanceOf[dataview]
   
-  @scala.inline
-  def Date: date = "date".asInstanceOf[date]
+  inline def Date: date = "date".asInstanceOf[date]
   
-  @scala.inline
-  def Error: error = "error".asInstanceOf[error]
+  inline def Error: error = "error".asInstanceOf[error]
   
-  @scala.inline
-  def Externref: externref = "externref".asInstanceOf[externref]
+  inline def Externref: externref = "externref".asInstanceOf[externref]
   
-  @scala.inline
-  def F32: f32 = "f32".asInstanceOf[f32]
+  inline def F32: f32 = "f32".asInstanceOf[f32]
   
-  @scala.inline
-  def F64: f64 = "f64".asInstanceOf[f64]
+  inline def F64: f64 = "f64".asInstanceOf[f64]
   
-  @scala.inline
-  def Generator: generator = "generator".asInstanceOf[generator]
+  inline def Generator: generator = "generator".asInstanceOf[generator]
   
-  @scala.inline
-  def I32: i32 = "i32".asInstanceOf[i32]
+  inline def I32: i32 = "i32".asInstanceOf[i32]
   
-  @scala.inline
-  def I64: i64 = "i64".asInstanceOf[i64]
+  inline def I64: i64 = "i64".asInstanceOf[i64]
   
-  @scala.inline
-  def Iterator: iterator = "iterator".asInstanceOf[iterator]
+  inline def Iterator: iterator = "iterator".asInstanceOf[iterator]
   
-  @scala.inline
-  def Map: map = "map".asInstanceOf[map]
+  inline def Map: map = "map".asInstanceOf[map]
   
-  @scala.inline
-  def Node: node = "node".asInstanceOf[node]
+  inline def Node: node = "node".asInstanceOf[node]
   
-  @scala.inline
-  def Null: `null` = "null".asInstanceOf[`null`]
+  inline def Null: `null` = "null".asInstanceOf[`null`]
   
-  @scala.inline
-  def Promise: promise = "promise".asInstanceOf[promise]
+  inline def Promise: promise = "promise".asInstanceOf[promise]
   
-  @scala.inline
-  def Proxy: proxy_ = "proxy".asInstanceOf[proxy_]
+  inline def Proxy: proxy_ = "proxy".asInstanceOf[proxy_]
   
-  @scala.inline
-  def Regexp: regexp = "regexp".asInstanceOf[regexp]
+  inline def Regexp: regexp = "regexp".asInstanceOf[regexp]
   
-  @scala.inline
-  def Set: set = "set".asInstanceOf[set]
+  inline def Set: set = "set".asInstanceOf[set]
   
-  @scala.inline
-  def Typedarray: typedarray = "typedarray".asInstanceOf[typedarray]
+  inline def Typedarray: typedarray = "typedarray".asInstanceOf[typedarray]
   
-  @scala.inline
-  def V128: v128 = "v128".asInstanceOf[v128]
+  inline def V128: v128 = "v128".asInstanceOf[v128]
   
-  @scala.inline
-  def Weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
+  inline def Weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
   
-  @scala.inline
-  def Weakset: weakset = "weakset".asInstanceOf[weakset]
+  inline def Weakset: weakset = "weakset".asInstanceOf[weakset]
 }

@@ -28,31 +28,23 @@ trait TestIdentityProviderResponse extends StObject {
 }
 object TestIdentityProviderResponse {
   
-  @scala.inline
-  def apply(StatusCode: StatusCode, Url: Url): TestIdentityProviderResponse = {
+  inline def apply(StatusCode: StatusCode, Url: Url): TestIdentityProviderResponse = {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestIdentityProviderResponse]
   }
   
-  @scala.inline
-  implicit class TestIdentityProviderResponseMutableBuilder[Self <: TestIdentityProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestIdentityProviderResponse](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setResponse(value: Response): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Response): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

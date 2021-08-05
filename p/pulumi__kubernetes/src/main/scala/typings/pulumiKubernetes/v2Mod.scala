@@ -30,8 +30,6 @@ object v2Mod {
     def this(releaseName: String, config: LocalChartOpts, opts: ComponentResourceOptions) = this()
   }
   
-  @scala.inline
-  def fetch(chart: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def fetch(chart: String, opts: ResolvedFetchOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fetch(chart: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fetch(chart: String, opts: ResolvedFetchOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

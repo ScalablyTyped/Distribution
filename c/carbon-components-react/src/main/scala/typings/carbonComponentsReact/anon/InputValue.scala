@@ -14,28 +14,21 @@ trait InputValue[ItemType] extends StObject {
 }
 object InputValue {
   
-  @scala.inline
-  def apply[ItemType](item: ItemType): InputValue[ItemType] = {
+  inline def apply[ItemType](item: ItemType): InputValue[ItemType] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputValue[ItemType]]
   }
   
-  @scala.inline
-  implicit class InputValueMutableBuilder[Self <: InputValue[?], ItemType] (val x: Self & InputValue[ItemType]) extends AnyVal {
+  extension [Self <: InputValue[?], ItemType](x: Self & InputValue[ItemType]) {
     
-    @scala.inline
-    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+    inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
+    inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
-    @scala.inline
-    def setItem(value: ItemType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ItemType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemToString(value: /* item */ js.UndefOr[ItemType | Null] => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
+    inline def setItemToString(value: /* item */ js.UndefOr[ItemType | Null] => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemToStringUndefined: Self = StObject.set(x, "itemToString", js.undefined)
+    inline def setItemToStringUndefined: Self = StObject.set(x, "itemToString", js.undefined)
   }
 }

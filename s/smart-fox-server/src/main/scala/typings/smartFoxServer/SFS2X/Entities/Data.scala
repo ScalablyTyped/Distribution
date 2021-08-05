@@ -27,26 +27,20 @@ object Data {
   }
   object Vec3D {
     
-    @scala.inline
-    def apply(isFloat: () => Boolean, px: Double, py: Double, pz: Double): Vec3D = {
+    inline def apply(isFloat: () => Boolean, px: Double, py: Double, pz: Double): Vec3D = {
       val __obj = js.Dynamic.literal(isFloat = js.Any.fromFunction0(isFloat), px = px.asInstanceOf[js.Any], py = py.asInstanceOf[js.Any], pz = pz.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vec3D]
     }
     
-    @scala.inline
-    implicit class Vec3DMutableBuilder[Self <: Vec3D] (val x: Self) extends AnyVal {
+    extension [Self <: Vec3D](x: Self) {
       
-      @scala.inline
-      def setIsFloat(value: () => Boolean): Self = StObject.set(x, "isFloat", js.Any.fromFunction0(value))
+      inline def setIsFloat(value: () => Boolean): Self = StObject.set(x, "isFloat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPx(value: Double): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: Double): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPy(value: Double): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: Double): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPz(value: Double): Self = StObject.set(x, "pz", value.asInstanceOf[js.Any])
+      inline def setPz(value: Double): Self = StObject.set(x, "pz", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -80,86 +80,60 @@ object mod {
   }
   object Combo {
     
-    @scala.inline
-    def apply(): Combo = {
+    inline def apply(): Combo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Combo]
     }
     
-    @scala.inline
-    implicit class ComboMutableBuilder[Self <: Combo] (val x: Self) extends AnyVal {
+    extension [Self <: Combo](x: Self) {
       
-      @scala.inline
-      def setIs_counting(value: Boolean): Self = StObject.set(x, "is_counting", value.asInstanceOf[js.Any])
+      inline def setIs_counting(value: Boolean): Self = StObject.set(x, "is_counting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_countingUndefined: Self = StObject.set(x, "is_counting", js.undefined)
+      inline def setIs_countingUndefined: Self = StObject.set(x, "is_counting", js.undefined)
       
-      @scala.inline
-      def setIs_exclusive(value: Boolean): Self = StObject.set(x, "is_exclusive", value.asInstanceOf[js.Any])
+      inline def setIs_exclusive(value: Boolean): Self = StObject.set(x, "is_exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_exclusiveUndefined: Self = StObject.set(x, "is_exclusive", js.undefined)
+      inline def setIs_exclusiveUndefined: Self = StObject.set(x, "is_exclusive", js.undefined)
       
-      @scala.inline
-      def setIs_sequence(value: Boolean): Self = StObject.set(x, "is_sequence", value.asInstanceOf[js.Any])
+      inline def setIs_sequence(value: Boolean): Self = StObject.set(x, "is_sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_sequenceUndefined: Self = StObject.set(x, "is_sequence", js.undefined)
+      inline def setIs_sequenceUndefined: Self = StObject.set(x, "is_sequence", js.undefined)
       
-      @scala.inline
-      def setIs_solitary(value: Boolean): Self = StObject.set(x, "is_solitary", value.asInstanceOf[js.Any])
+      inline def setIs_solitary(value: Boolean): Self = StObject.set(x, "is_solitary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_solitaryUndefined: Self = StObject.set(x, "is_solitary", js.undefined)
+      inline def setIs_solitaryUndefined: Self = StObject.set(x, "is_solitary", js.undefined)
       
-      @scala.inline
-      def setIs_unordered(value: Boolean): Self = StObject.set(x, "is_unordered", value.asInstanceOf[js.Any])
+      inline def setIs_unordered(value: Boolean): Self = StObject.set(x, "is_unordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_unorderedUndefined: Self = StObject.set(x, "is_unordered", js.undefined)
+      inline def setIs_unorderedUndefined: Self = StObject.set(x, "is_unordered", js.undefined)
       
-      @scala.inline
-      def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setOn_keydown(value: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "on_keydown", js.Any.fromFunction2(value))
+      inline def setOn_keydown(value: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "on_keydown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn_keydownUndefined: Self = StObject.set(x, "on_keydown", js.undefined)
+      inline def setOn_keydownUndefined: Self = StObject.set(x, "on_keydown", js.undefined)
       
-      @scala.inline
-      def setOn_keyup(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_keyup", js.Any.fromFunction1(value))
+      inline def setOn_keyup(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_keyup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn_keyupUndefined: Self = StObject.set(x, "on_keyup", js.undefined)
+      inline def setOn_keyupUndefined: Self = StObject.set(x, "on_keyup", js.undefined)
       
-      @scala.inline
-      def setOn_release(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_release", js.Any.fromFunction1(value))
+      inline def setOn_release(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_release", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn_releaseUndefined: Self = StObject.set(x, "on_release", js.undefined)
+      inline def setOn_releaseUndefined: Self = StObject.set(x, "on_release", js.undefined)
       
-      @scala.inline
-      def setPrevent_default(value: Boolean): Self = StObject.set(x, "prevent_default", value.asInstanceOf[js.Any])
+      inline def setPrevent_default(value: Boolean): Self = StObject.set(x, "prevent_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevent_defaultUndefined: Self = StObject.set(x, "prevent_default", js.undefined)
+      inline def setPrevent_defaultUndefined: Self = StObject.set(x, "prevent_default", js.undefined)
       
-      @scala.inline
-      def setPrevent_repeat(value: Boolean): Self = StObject.set(x, "prevent_repeat", value.asInstanceOf[js.Any])
+      inline def setPrevent_repeat(value: Boolean): Self = StObject.set(x, "prevent_repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevent_repeatUndefined: Self = StObject.set(x, "prevent_repeat", js.undefined)
+      inline def setPrevent_repeatUndefined: Self = StObject.set(x, "prevent_repeat", js.undefined)
       
-      @scala.inline
-      def setThis(value: Element): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
+      inline def setThis(value: Element): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThisUndefined: Self = StObject.set(x, "this", js.undefined)
+      inline def setThisUndefined: Self = StObject.set(x, "this", js.undefined)
     }
   }
   
@@ -183,8 +157,7 @@ object mod {
   }
   object ListenerDefaults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       is_counting: Boolean,
       is_exclusive: Boolean,
       is_sequence: Boolean,
@@ -198,32 +171,23 @@ object mod {
       __obj.asInstanceOf[ListenerDefaults]
     }
     
-    @scala.inline
-    implicit class ListenerDefaultsMutableBuilder[Self <: ListenerDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerDefaults](x: Self) {
       
-      @scala.inline
-      def setIs_counting(value: Boolean): Self = StObject.set(x, "is_counting", value.asInstanceOf[js.Any])
+      inline def setIs_counting(value: Boolean): Self = StObject.set(x, "is_counting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_exclusive(value: Boolean): Self = StObject.set(x, "is_exclusive", value.asInstanceOf[js.Any])
+      inline def setIs_exclusive(value: Boolean): Self = StObject.set(x, "is_exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_sequence(value: Boolean): Self = StObject.set(x, "is_sequence", value.asInstanceOf[js.Any])
+      inline def setIs_sequence(value: Boolean): Self = StObject.set(x, "is_sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_solitary(value: Boolean): Self = StObject.set(x, "is_solitary", value.asInstanceOf[js.Any])
+      inline def setIs_solitary(value: Boolean): Self = StObject.set(x, "is_solitary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_unordered(value: Boolean): Self = StObject.set(x, "is_unordered", value.asInstanceOf[js.Any])
+      inline def setIs_unordered(value: Boolean): Self = StObject.set(x, "is_unordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevent_default(value: Boolean): Self = StObject.set(x, "prevent_default", value.asInstanceOf[js.Any])
+      inline def setPrevent_default(value: Boolean): Self = StObject.set(x, "prevent_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevent_repeat(value: Boolean): Self = StObject.set(x, "prevent_repeat", value.asInstanceOf[js.Any])
+      inline def setPrevent_repeat(value: Boolean): Self = StObject.set(x, "prevent_repeat", value.asInstanceOf[js.Any])
     }
   }
 }

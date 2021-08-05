@@ -21,8 +21,7 @@ trait Rtm[T] extends StObject {
 }
 object Rtm {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     calls: js.Array[RtmCall[T]],
     clients: js.Array[typings.ws.mod.^],
     reset: () => Unit,
@@ -34,31 +33,22 @@ object Rtm {
     __obj.asInstanceOf[Rtm[T]]
   }
   
-  @scala.inline
-  implicit class RtmMutableBuilder[Self <: Rtm[?], T] (val x: Self & Rtm[T]) extends AnyVal {
+  extension [Self <: Rtm[?], T](x: Self & Rtm[T]) {
     
-    @scala.inline
-    def setCalls(value: js.Array[RtmCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: js.Array[RtmCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallsVarargs(value: RtmCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: RtmCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
-    @scala.inline
-    def setClients(value: js.Array[typings.ws.mod.^]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
+    inline def setClients(value: js.Array[typings.ws.mod.^]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientsVarargs(value: typings.ws.mod.^ *): Self = StObject.set(x, "clients", js.Array(value :_*))
+    inline def setClientsVarargs(value: typings.ws.mod.^ *): Self = StObject.set(x, "clients", js.Array(value :_*))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSend(value: (String, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (String, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartServer(value: String => Unit): Self = StObject.set(x, "startServer", js.Any.fromFunction1(value))
+    inline def setStartServer(value: String => Unit): Self = StObject.set(x, "startServer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopServer(value: String => Unit): Self = StObject.set(x, "stopServer", js.Any.fromFunction1(value))
+    inline def setStopServer(value: String => Unit): Self = StObject.set(x, "stopServer", js.Any.fromFunction1(value))
   }
 }

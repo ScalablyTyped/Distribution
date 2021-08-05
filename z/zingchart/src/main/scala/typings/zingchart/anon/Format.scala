@@ -44,67 +44,47 @@ trait Format extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply(): Format = {
+  inline def apply(): Format = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Format]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+  extension [Self <: Format](x: Self) {
     
-    @scala.inline
-    def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
+    inline def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
+    inline def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setGuide(value: Items): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
+    inline def setGuide(value: Items): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
+    inline def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
     
-    @scala.inline
-    def setItem(value: Fontstyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Fontstyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setTick(value: Placement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Placement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: Fontweight): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Fontweight): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

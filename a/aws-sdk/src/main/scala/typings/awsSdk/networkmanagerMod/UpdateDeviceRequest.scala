@@ -50,61 +50,43 @@ trait UpdateDeviceRequest extends StObject {
 }
 object UpdateDeviceRequest {
   
-  @scala.inline
-  def apply(DeviceId: String, GlobalNetworkId: String): UpdateDeviceRequest = {
+  inline def apply(DeviceId: String, GlobalNetworkId: String): UpdateDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceRequestMutableBuilder[Self <: UpdateDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
+    inline def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
-    @scala.inline
-    def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
+    inline def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorUndefined: Self = StObject.set(x, "Vendor", js.undefined)
+    inline def setVendorUndefined: Self = StObject.set(x, "Vendor", js.undefined)
   }
 }

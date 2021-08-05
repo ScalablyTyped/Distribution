@@ -12,35 +12,25 @@ object themedStyleSheetMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def createLTR(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createLTR")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createLTR(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createLTR")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def createRTL(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createRTL")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createRTL(makeFromTheme: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createRTL")(makeFromTheme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+    inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
-    @scala.inline
-    def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
+    inline def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
     
-    @scala.inline
-    def registerInterface(registerInterface: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInterface")(registerInterface.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerInterface(registerInterface: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInterface")(registerInterface.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerTheme(theme: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerTheme(theme: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def resolve(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[js.Any]
+    inline def resolve(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[js.Any]
     
-    @scala.inline
-    def resolveLTR(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLTR")().asInstanceOf[js.Any]
+    inline def resolveLTR(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLTR")().asInstanceOf[js.Any]
     
-    @scala.inline
-    def resolveRTL(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRTL")().asInstanceOf[js.Any]
+    inline def resolveRTL(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRTL")().asInstanceOf[js.Any]
   }
   
   trait ThemedStyleSheet extends StObject {
@@ -67,8 +57,7 @@ object themedStyleSheetMod {
   }
   object ThemedStyleSheet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: js.Any => js.Any,
       createLTR: js.Any => js.Any,
       createRTL: js.Any => js.Any,
@@ -84,38 +73,27 @@ object themedStyleSheetMod {
       __obj.asInstanceOf[ThemedStyleSheet]
     }
     
-    @scala.inline
-    implicit class ThemedStyleSheetMutableBuilder[Self <: ThemedStyleSheet] (val x: Self) extends AnyVal {
+    extension [Self <: ThemedStyleSheet](x: Self) {
       
-      @scala.inline
-      def setCreate(value: js.Any => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: js.Any => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateLTR(value: js.Any => js.Any): Self = StObject.set(x, "createLTR", js.Any.fromFunction1(value))
+      inline def setCreateLTR(value: js.Any => js.Any): Self = StObject.set(x, "createLTR", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateRTL(value: js.Any => js.Any): Self = StObject.set(x, "createRTL", js.Any.fromFunction1(value))
+      inline def setCreateRTL(value: js.Any => js.Any): Self = StObject.set(x, "createRTL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterInterface(value: js.Any => Unit): Self = StObject.set(x, "registerInterface", js.Any.fromFunction1(value))
+      inline def setRegisterInterface(value: js.Any => Unit): Self = StObject.set(x, "registerInterface", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterTheme(value: js.Any => Unit): Self = StObject.set(x, "registerTheme", js.Any.fromFunction1(value))
+      inline def setRegisterTheme(value: js.Any => Unit): Self = StObject.set(x, "registerTheme", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: () => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
+      inline def setResolve(value: () => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResolveLTR(value: () => js.Any): Self = StObject.set(x, "resolveLTR", js.Any.fromFunction0(value))
+      inline def setResolveLTR(value: () => js.Any): Self = StObject.set(x, "resolveLTR", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResolveRTL(value: () => js.Any): Self = StObject.set(x, "resolveRTL", js.Any.fromFunction0(value))
+      inline def setResolveRTL(value: () => js.Any): Self = StObject.set(x, "resolveRTL", js.Any.fromFunction0(value))
     }
   }
 }

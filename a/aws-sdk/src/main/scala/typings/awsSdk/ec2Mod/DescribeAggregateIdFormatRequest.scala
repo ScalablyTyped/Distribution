@@ -13,19 +13,15 @@ trait DescribeAggregateIdFormatRequest extends StObject {
 }
 object DescribeAggregateIdFormatRequest {
   
-  @scala.inline
-  def apply(): DescribeAggregateIdFormatRequest = {
+  inline def apply(): DescribeAggregateIdFormatRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAggregateIdFormatRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAggregateIdFormatRequestMutableBuilder[Self <: DescribeAggregateIdFormatRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAggregateIdFormatRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

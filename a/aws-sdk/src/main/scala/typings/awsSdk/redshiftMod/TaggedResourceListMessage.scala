@@ -18,28 +18,21 @@ trait TaggedResourceListMessage extends StObject {
 }
 object TaggedResourceListMessage {
   
-  @scala.inline
-  def apply(): TaggedResourceListMessage = {
+  inline def apply(): TaggedResourceListMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaggedResourceListMessage]
   }
   
-  @scala.inline
-  implicit class TaggedResourceListMessageMutableBuilder[Self <: TaggedResourceListMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TaggedResourceListMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTaggedResources(value: TaggedResourceList): Self = StObject.set(x, "TaggedResources", value.asInstanceOf[js.Any])
+    inline def setTaggedResources(value: TaggedResourceList): Self = StObject.set(x, "TaggedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaggedResourcesUndefined: Self = StObject.set(x, "TaggedResources", js.undefined)
+    inline def setTaggedResourcesUndefined: Self = StObject.set(x, "TaggedResources", js.undefined)
     
-    @scala.inline
-    def setTaggedResourcesVarargs(value: TaggedResource*): Self = StObject.set(x, "TaggedResources", js.Array(value :_*))
+    inline def setTaggedResourcesVarargs(value: TaggedResource*): Self = StObject.set(x, "TaggedResources", js.Array(value :_*))
   }
 }

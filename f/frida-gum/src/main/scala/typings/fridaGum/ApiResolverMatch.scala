@@ -18,19 +18,15 @@ trait ApiResolverMatch extends StObject {
 }
 object ApiResolverMatch {
   
-  @scala.inline
-  def apply(address: NativePointer, name: String): ApiResolverMatch = {
+  inline def apply(address: NativePointer, name: String): ApiResolverMatch = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiResolverMatch]
   }
   
-  @scala.inline
-  implicit class ApiResolverMatchMutableBuilder[Self <: ApiResolverMatch] (val x: Self) extends AnyVal {
+  extension [Self <: ApiResolverMatch](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

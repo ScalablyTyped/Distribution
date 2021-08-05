@@ -65,53 +65,38 @@ object functionsTypesMod {
   }
   object FunctionOptions {
     
-    @scala.inline
-    def apply(language: String): FunctionOptions = {
+    inline def apply(language: String): FunctionOptions = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionOptions]
     }
     
-    @scala.inline
-    implicit class FunctionOptionsMutableBuilder[Self <: FunctionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionOptions](x: Self) {
       
-      @scala.inline
-      def setBehavior(value: IMMUTABLE | STABLE | VOLATILE): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: IMMUTABLE | STABLE | VOLATILE): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnNull(value: Boolean): Self = StObject.set(x, "onNull", value.asInstanceOf[js.Any])
+      inline def setOnNull(value: Boolean): Self = StObject.set(x, "onNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnNullUndefined: Self = StObject.set(x, "onNull", js.undefined)
+      inline def setOnNullUndefined: Self = StObject.set(x, "onNull", js.undefined)
       
-      @scala.inline
-      def setParallel(value: UNSAFE | RESTRICTED | SAFE): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: UNSAFE | RESTRICTED | SAFE): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setReturns(value: String): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+      inline def setReturns(value: String): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
+      inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
       
-      @scala.inline
-      def setWindow(value: Boolean): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Boolean): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -129,44 +114,33 @@ object functionsTypesMod {
   }
   object FunctionParamType {
     
-    @scala.inline
-    def apply(`type`: String): FunctionParamType = {
+    inline def apply(`type`: String): FunctionParamType = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionParamType]
     }
     
-    @scala.inline
-    implicit class FunctionParamTypeMutableBuilder[Self <: FunctionParamType] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionParamType](x: Self) {
       
-      @scala.inline
-      def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultNull: Self = StObject.set(x, "default", null)
+      inline def setDefaultNull: Self = StObject.set(x, "default", null)
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(
+      inline def setDefaultVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
       ): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setMode(value: IN | OUT | INOUT | VARIADIC): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: IN | OUT | INOUT | VARIADIC): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

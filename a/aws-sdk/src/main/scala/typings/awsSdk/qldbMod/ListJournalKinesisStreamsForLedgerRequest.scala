@@ -23,28 +23,21 @@ trait ListJournalKinesisStreamsForLedgerRequest extends StObject {
 }
 object ListJournalKinesisStreamsForLedgerRequest {
   
-  @scala.inline
-  def apply(LedgerName: LedgerName): ListJournalKinesisStreamsForLedgerRequest = {
+  inline def apply(LedgerName: LedgerName): ListJournalKinesisStreamsForLedgerRequest = {
     val __obj = js.Dynamic.literal(LedgerName = LedgerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJournalKinesisStreamsForLedgerRequest]
   }
   
-  @scala.inline
-  implicit class ListJournalKinesisStreamsForLedgerRequestMutableBuilder[Self <: ListJournalKinesisStreamsForLedgerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListJournalKinesisStreamsForLedgerRequest](x: Self) {
     
-    @scala.inline
-    def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
+    inline def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

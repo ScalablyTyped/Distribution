@@ -33,43 +33,31 @@ trait LambdaFunctionInfo extends StObject {
 }
 object LambdaFunctionInfo {
   
-  @scala.inline
-  def apply(): LambdaFunctionInfo = {
+  inline def apply(): LambdaFunctionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LambdaFunctionInfo]
   }
   
-  @scala.inline
-  implicit class LambdaFunctionInfoMutableBuilder[Self <: LambdaFunctionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaFunctionInfo](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: Version): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Version): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
-    @scala.inline
-    def setFunctionAlias(value: LambdaFunctionAlias): Self = StObject.set(x, "functionAlias", value.asInstanceOf[js.Any])
+    inline def setFunctionAlias(value: LambdaFunctionAlias): Self = StObject.set(x, "functionAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionAliasUndefined: Self = StObject.set(x, "functionAlias", js.undefined)
+    inline def setFunctionAliasUndefined: Self = StObject.set(x, "functionAlias", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: LambdaFunctionName): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: LambdaFunctionName): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
-    @scala.inline
-    def setTargetVersion(value: Version): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
+    inline def setTargetVersion(value: Version): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
+    inline def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
     
-    @scala.inline
-    def setTargetVersionWeight(value: TrafficWeight): Self = StObject.set(x, "targetVersionWeight", value.asInstanceOf[js.Any])
+    inline def setTargetVersionWeight(value: TrafficWeight): Self = StObject.set(x, "targetVersionWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersionWeightUndefined: Self = StObject.set(x, "targetVersionWeight", js.undefined)
+    inline def setTargetVersionWeightUndefined: Self = StObject.set(x, "targetVersionWeight", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait SAMessage extends StObject {
 }
 object SAMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     sendData: (SAPeerAgent, String, Onsent) => Unit,
     sendSecureData: (SAPeerAgent, String, Onsent) => Unit,
     setMessageReceiveListener: js.Function2[/* peerAgent */ SAPeerAgent, /* data */ String, Unit] => Unit
@@ -25,16 +24,12 @@ object SAMessage {
     __obj.asInstanceOf[SAMessage]
   }
   
-  @scala.inline
-  implicit class SAMessageMutableBuilder[Self <: SAMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SAMessage](x: Self) {
     
-    @scala.inline
-    def setSendData(value: (SAPeerAgent, String, Onsent) => Unit): Self = StObject.set(x, "sendData", js.Any.fromFunction3(value))
+    inline def setSendData(value: (SAPeerAgent, String, Onsent) => Unit): Self = StObject.set(x, "sendData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSendSecureData(value: (SAPeerAgent, String, Onsent) => Unit): Self = StObject.set(x, "sendSecureData", js.Any.fromFunction3(value))
+    inline def setSendSecureData(value: (SAPeerAgent, String, Onsent) => Unit): Self = StObject.set(x, "sendSecureData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetMessageReceiveListener(value: js.Function2[/* peerAgent */ SAPeerAgent, /* data */ String, Unit] => Unit): Self = StObject.set(x, "setMessageReceiveListener", js.Any.fromFunction1(value))
+    inline def setSetMessageReceiveListener(value: js.Function2[/* peerAgent */ SAPeerAgent, /* data */ String, Unit] => Unit): Self = StObject.set(x, "setMessageReceiveListener", js.Any.fromFunction1(value))
   }
 }

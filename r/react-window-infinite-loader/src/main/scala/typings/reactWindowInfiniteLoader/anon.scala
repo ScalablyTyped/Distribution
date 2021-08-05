@@ -16,26 +16,20 @@ object anon {
   }
   object OnItemsRendered {
     
-    @scala.inline
-    def apply(onItemsRendered: /* props */ ListOnItemsRenderedProps => js.Any): OnItemsRendered = {
+    inline def apply(onItemsRendered: /* props */ ListOnItemsRenderedProps => js.Any): OnItemsRendered = {
       val __obj = js.Dynamic.literal(onItemsRendered = js.Any.fromFunction1(onItemsRendered), ref = null)
       __obj.asInstanceOf[OnItemsRendered]
     }
     
-    @scala.inline
-    implicit class OnItemsRenderedMutableBuilder[Self <: OnItemsRendered] (val x: Self) extends AnyVal {
+    extension [Self <: OnItemsRendered](x: Self) {
       
-      @scala.inline
-      def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => js.Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
+      inline def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => js.Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
     }
   }
 }

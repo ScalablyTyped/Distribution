@@ -26,20 +26,16 @@ object Async {
   }
   object ErrorCallbackObject {
     
-    @scala.inline
-    def apply(errorCode: Double, message: String): ErrorCallbackObject = {
+    inline def apply(errorCode: Double, message: String): ErrorCallbackObject = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorCallbackObject]
     }
     
-    @scala.inline
-    implicit class ErrorCallbackObjectMutableBuilder[Self <: ErrorCallbackObject] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorCallbackObject](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +53,14 @@ object Async {
   }
   object OfflineErrorCallbackObject {
     
-    @scala.inline
-    def apply(debugMessage: String, errorCode: Double, message: String): OfflineErrorCallbackObject = {
+    inline def apply(debugMessage: String, errorCode: Double, message: String): OfflineErrorCallbackObject = {
       val __obj = js.Dynamic.literal(debugMessage = debugMessage.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[OfflineErrorCallbackObject]
     }
     
-    @scala.inline
-    implicit class OfflineErrorCallbackObjectMutableBuilder[Self <: OfflineErrorCallbackObject] (val x: Self) extends AnyVal {
+    extension [Self <: OfflineErrorCallbackObject](x: Self) {
       
-      @scala.inline
-      def setDebugMessage(value: String): Self = StObject.set(x, "debugMessage", value.asInstanceOf[js.Any])
+      inline def setDebugMessage(value: String): Self = StObject.set(x, "debugMessage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,20 +81,16 @@ object Async {
   }
   object OfflineOperationSuccessCallbackObject {
     
-    @scala.inline
-    def apply(id: String, logicalName: String): OfflineOperationSuccessCallbackObject = {
+    inline def apply(id: String, logicalName: String): OfflineOperationSuccessCallbackObject = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], logicalName = logicalName.asInstanceOf[js.Any])
       __obj.asInstanceOf[OfflineOperationSuccessCallbackObject]
     }
     
-    @scala.inline
-    implicit class OfflineOperationSuccessCallbackObjectMutableBuilder[Self <: OfflineOperationSuccessCallbackObject] (val x: Self) extends AnyVal {
+    extension [Self <: OfflineOperationSuccessCallbackObject](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalName(value: String): Self = StObject.set(x, "logicalName", value.asInstanceOf[js.Any])
+      inline def setLogicalName(value: String): Self = StObject.set(x, "logicalName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,17 +106,14 @@ object Async {
   }
   object OpenQuickCreateSuccessCallbackObject {
     
-    @scala.inline
-    def apply(savedEntityReference: LookupValue): OpenQuickCreateSuccessCallbackObject = {
+    inline def apply(savedEntityReference: LookupValue): OpenQuickCreateSuccessCallbackObject = {
       val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenQuickCreateSuccessCallbackObject]
     }
     
-    @scala.inline
-    implicit class OpenQuickCreateSuccessCallbackObjectMutableBuilder[Self <: OpenQuickCreateSuccessCallbackObject] (val x: Self) extends AnyVal {
+    extension [Self <: OpenQuickCreateSuccessCallbackObject](x: Self) {
       
-      @scala.inline
-      def setSavedEntityReference(value: LookupValue): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
+      inline def setSavedEntityReference(value: LookupValue): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
     }
   }
   

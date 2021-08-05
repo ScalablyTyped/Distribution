@@ -35,8 +35,7 @@ trait AgentConfiguration extends StObject {
 }
 object AgentConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agentStates: js.Array[AgentStateDefinition],
     dialableCountries: js.Array[String],
     `extension`: String,
@@ -52,43 +51,30 @@ object AgentConfiguration {
     __obj.asInstanceOf[AgentConfiguration]
   }
   
-  @scala.inline
-  implicit class AgentConfigurationMutableBuilder[Self <: AgentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AgentConfiguration](x: Self) {
     
-    @scala.inline
-    def setAgentStates(value: js.Array[AgentStateDefinition]): Self = StObject.set(x, "agentStates", value.asInstanceOf[js.Any])
+    inline def setAgentStates(value: js.Array[AgentStateDefinition]): Self = StObject.set(x, "agentStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentStatesVarargs(value: AgentStateDefinition*): Self = StObject.set(x, "agentStates", js.Array(value :_*))
+    inline def setAgentStatesVarargs(value: AgentStateDefinition*): Self = StObject.set(x, "agentStates", js.Array(value :_*))
     
-    @scala.inline
-    def setDialableCountries(value: js.Array[String]): Self = StObject.set(x, "dialableCountries", value.asInstanceOf[js.Any])
+    inline def setDialableCountries(value: js.Array[String]): Self = StObject.set(x, "dialableCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialableCountriesVarargs(value: String*): Self = StObject.set(x, "dialableCountries", js.Array(value :_*))
+    inline def setDialableCountriesVarargs(value: String*): Self = StObject.set(x, "dialableCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutingProfile(value: AgentRoutingProfile): Self = StObject.set(x, "routingProfile", value.asInstanceOf[js.Any])
+    inline def setRoutingProfile(value: AgentRoutingProfile): Self = StObject.set(x, "routingProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftphoneAutoAccept(value: Boolean): Self = StObject.set(x, "softphoneAutoAccept", value.asInstanceOf[js.Any])
+    inline def setSoftphoneAutoAccept(value: Boolean): Self = StObject.set(x, "softphoneAutoAccept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftphoneEnabled(value: Boolean): Self = StObject.set(x, "softphoneEnabled", value.asInstanceOf[js.Any])
+    inline def setSoftphoneEnabled(value: Boolean): Self = StObject.set(x, "softphoneEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

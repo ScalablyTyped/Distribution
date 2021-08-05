@@ -15,22 +15,17 @@ trait Scale
 }
 object Scale {
   
-  @scala.inline
-  def apply(scale: typings.vegaTypings.encodeMod.Field): Scale = {
+  inline def apply(scale: typings.vegaTypings.encodeMod.Field): Scale = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[Scale]
   }
   
-  @scala.inline
-  implicit class ScaleMutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
+  extension [Self <: Scale](x: Self) {
     
-    @scala.inline
-    def setScale(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

@@ -12,19 +12,15 @@ trait BaseElevationLayerLayerviewCreateErrorEvent extends StObject {
 }
 object BaseElevationLayerLayerviewCreateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, view: View): BaseElevationLayerLayerviewCreateErrorEvent = {
+  inline def apply(error: Error, view: View): BaseElevationLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseElevationLayerLayerviewCreateErrorEvent]
   }
   
-  @scala.inline
-  implicit class BaseElevationLayerLayerviewCreateErrorEventMutableBuilder[Self <: BaseElevationLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BaseElevationLayerLayerviewCreateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

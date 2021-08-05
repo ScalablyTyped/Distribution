@@ -38,8 +38,7 @@ object selectorMod {
       * The computed result is cached, so subsequent calculations for the
       * same selector are extremely fast.
       */
-    @scala.inline
-    def calculateSpecificity(selector: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateSpecificity")(selector.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def calculateSpecificity(selector: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateSpecificity")(selector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Test whether a selector is a valid CSS selector.
@@ -52,8 +51,7 @@ object selectorMod {
       * The computed result is cached, so subsequent tests for the same
       * selector are extremely fast.
       */
-    @scala.inline
-    def isValid(selector: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(selector: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Test whether an element matches a CSS selector.
@@ -68,7 +66,6 @@ object selectorMod {
       * This function uses the builtin browser capabilities when possible,
       * falling back onto a document query otherwise.
       */
-    @scala.inline
-    def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

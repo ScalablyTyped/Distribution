@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VerticalAlign extends StObject
 object VerticalAlign {
   
-  @scala.inline
-  def BOTTOM: typings.googleSpreadsheet.googleSpreadsheetStrings.BOTTOM = "BOTTOM".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.BOTTOM]
+  inline def BOTTOM: typings.googleSpreadsheet.googleSpreadsheetStrings.BOTTOM = "BOTTOM".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.BOTTOM]
   
-  @scala.inline
-  def MIDDLE: typings.googleSpreadsheet.googleSpreadsheetStrings.MIDDLE = "MIDDLE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.MIDDLE]
+  inline def MIDDLE: typings.googleSpreadsheet.googleSpreadsheetStrings.MIDDLE = "MIDDLE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.MIDDLE]
   
-  @scala.inline
-  def TOP: typings.googleSpreadsheet.googleSpreadsheetStrings.TOP = "TOP".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.TOP]
+  inline def TOP: typings.googleSpreadsheet.googleSpreadsheetStrings.TOP = "TOP".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.TOP]
 }

@@ -17,13 +17,10 @@ object StorageFormats {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def OFOPXML: `3` = 3.asInstanceOf[`3`]
+    inline def OFOPXML: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def PACKAGE: `1` = 1.asInstanceOf[`1`]
+    inline def PACKAGE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def ZIP: `2` = 2.asInstanceOf[`2`]
+    inline def ZIP: `2` = 2.asInstanceOf[`2`]
   }
 }

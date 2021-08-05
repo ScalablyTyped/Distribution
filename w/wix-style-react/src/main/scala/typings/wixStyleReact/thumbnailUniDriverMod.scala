@@ -32,8 +32,7 @@ object thumbnailUniDriverMod {
   }
   object ThumbnailUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -51,35 +50,25 @@ object thumbnailUniDriverMod {
       __obj.asInstanceOf[ThumbnailUniDriver]
     }
     
-    @scala.inline
-    implicit class ThumbnailUniDriverMutableBuilder[Self <: ThumbnailUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbnailUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetBackgroundImage(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getBackgroundImage", js.Any.fromFunction0(value))
+      inline def setGetBackgroundImage(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getBackgroundImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDescription(value: () => js.Promise[String]): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
+      inline def setGetDescription(value: () => js.Promise[String]): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeight(value: () => js.Promise[String]): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      inline def setGetHeight(value: () => js.Promise[String]): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImage(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
+      inline def setGetImage(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectedIcon(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getSelectedIcon", js.Any.fromFunction0(value))
+      inline def setGetSelectedIcon(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getSelectedIcon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => js.Promise[String]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => js.Promise[String]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
+      inline def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
     }
   }
 }

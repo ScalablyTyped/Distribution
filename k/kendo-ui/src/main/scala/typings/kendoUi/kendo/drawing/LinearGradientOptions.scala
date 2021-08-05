@@ -12,25 +12,19 @@ trait LinearGradientOptions extends StObject {
 }
 object LinearGradientOptions {
   
-  @scala.inline
-  def apply(): LinearGradientOptions = {
+  inline def apply(): LinearGradientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearGradientOptions]
   }
   
-  @scala.inline
-  implicit class LinearGradientOptionsMutableBuilder[Self <: LinearGradientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LinearGradientOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
   }
 }

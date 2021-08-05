@@ -23,34 +23,25 @@ trait EmailFileAssessmentRequest
 }
 object EmailFileAssessmentRequest {
   
-  @scala.inline
-  def apply(): EmailFileAssessmentRequest = {
+  inline def apply(): EmailFileAssessmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailFileAssessmentRequest]
   }
   
-  @scala.inline
-  implicit class EmailFileAssessmentRequestMutableBuilder[Self <: EmailFileAssessmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EmailFileAssessmentRequest](x: Self) {
     
-    @scala.inline
-    def setContentData(value: String): Self = StObject.set(x, "contentData", value.asInstanceOf[js.Any])
+    inline def setContentData(value: String): Self = StObject.set(x, "contentData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDataUndefined: Self = StObject.set(x, "contentData", js.undefined)
+    inline def setContentDataUndefined: Self = StObject.set(x, "contentData", js.undefined)
     
-    @scala.inline
-    def setDestinationRoutingReason(value: NullableOption[MailDestinationRoutingReason]): Self = StObject.set(x, "destinationRoutingReason", value.asInstanceOf[js.Any])
+    inline def setDestinationRoutingReason(value: NullableOption[MailDestinationRoutingReason]): Self = StObject.set(x, "destinationRoutingReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationRoutingReasonNull: Self = StObject.set(x, "destinationRoutingReason", null)
+    inline def setDestinationRoutingReasonNull: Self = StObject.set(x, "destinationRoutingReason", null)
     
-    @scala.inline
-    def setDestinationRoutingReasonUndefined: Self = StObject.set(x, "destinationRoutingReason", js.undefined)
+    inline def setDestinationRoutingReasonUndefined: Self = StObject.set(x, "destinationRoutingReason", js.undefined)
     
-    @scala.inline
-    def setRecipientEmail(value: String): Self = StObject.set(x, "recipientEmail", value.asInstanceOf[js.Any])
+    inline def setRecipientEmail(value: String): Self = StObject.set(x, "recipientEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientEmailUndefined: Self = StObject.set(x, "recipientEmail", js.undefined)
+    inline def setRecipientEmailUndefined: Self = StObject.set(x, "recipientEmail", js.undefined)
   }
 }

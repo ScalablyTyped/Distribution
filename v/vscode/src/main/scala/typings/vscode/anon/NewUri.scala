@@ -13,19 +13,15 @@ trait NewUri extends StObject {
 }
 object NewUri {
   
-  @scala.inline
-  def apply(newUri: Uri, oldUri: Uri): NewUri = {
+  inline def apply(newUri: Uri, oldUri: Uri): NewUri = {
     val __obj = js.Dynamic.literal(newUri = newUri.asInstanceOf[js.Any], oldUri = oldUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewUri]
   }
   
-  @scala.inline
-  implicit class NewUriMutableBuilder[Self <: NewUri] (val x: Self) extends AnyVal {
+  extension [Self <: NewUri](x: Self) {
     
-    @scala.inline
-    def setNewUri(value: Uri): Self = StObject.set(x, "newUri", value.asInstanceOf[js.Any])
+    inline def setNewUri(value: Uri): Self = StObject.set(x, "newUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldUri(value: Uri): Self = StObject.set(x, "oldUri", value.asInstanceOf[js.Any])
+    inline def setOldUri(value: Uri): Self = StObject.set(x, "oldUri", value.asInstanceOf[js.Any])
   }
 }

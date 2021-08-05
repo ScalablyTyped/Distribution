@@ -87,8 +87,7 @@ trait IFileDataFormat extends StObject {
 }
 object IFileDataFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qCodePage: Double,
     qComment: String,
     qDelimiter: IDelimiterInfo,
@@ -105,40 +104,28 @@ object IFileDataFormat {
     __obj.asInstanceOf[IFileDataFormat]
   }
   
-  @scala.inline
-  implicit class IFileDataFormatMutableBuilder[Self <: IFileDataFormat] (val x: Self) extends AnyVal {
+  extension [Self <: IFileDataFormat](x: Self) {
     
-    @scala.inline
-    def setQCodePage(value: Double): Self = StObject.set(x, "qCodePage", value.asInstanceOf[js.Any])
+    inline def setQCodePage(value: Double): Self = StObject.set(x, "qCodePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
+    inline def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDelimiter(value: IDelimiterInfo): Self = StObject.set(x, "qDelimiter", value.asInstanceOf[js.Any])
+    inline def setQDelimiter(value: IDelimiterInfo): Self = StObject.set(x, "qDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFixedWidthDelimiters(value: String): Self = StObject.set(x, "qFixedWidthDelimiters", value.asInstanceOf[js.Any])
+    inline def setQFixedWidthDelimiters(value: String): Self = StObject.set(x, "qFixedWidthDelimiters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQHeaderSize(value: Double): Self = StObject.set(x, "qHeaderSize", value.asInstanceOf[js.Any])
+    inline def setQHeaderSize(value: Double): Self = StObject.set(x, "qHeaderSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIgnoreEOF(value: Boolean): Self = StObject.set(x, "qIgnoreEOF", value.asInstanceOf[js.Any])
+    inline def setQIgnoreEOF(value: Boolean): Self = StObject.set(x, "qIgnoreEOF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
+    inline def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQQuote(value: String): Self = StObject.set(x, "qQuote", value.asInstanceOf[js.Any])
+    inline def setQQuote(value: String): Self = StObject.set(x, "qQuote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRecordSize(value: Double): Self = StObject.set(x, "qRecordSize", value.asInstanceOf[js.Any])
+    inline def setQRecordSize(value: Double): Self = StObject.set(x, "qRecordSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTabSize(value: Double): Self = StObject.set(x, "qTabSize", value.asInstanceOf[js.Any])
+    inline def setQTabSize(value: Double): Self = StObject.set(x, "qTabSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: FileDataFormatType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: FileDataFormatType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

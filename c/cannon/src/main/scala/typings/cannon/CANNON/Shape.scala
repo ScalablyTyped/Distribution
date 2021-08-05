@@ -20,8 +20,7 @@ trait Shape extends StObject {
 }
 object Shape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingSphereRadius: Double,
     calculateLocalInertia: (Double, Vec3) => Vec3,
     collisionResponse: Boolean,
@@ -34,25 +33,18 @@ object Shape {
     __obj.asInstanceOf[Shape]
   }
   
-  @scala.inline
-  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
+  extension [Self <: Shape](x: Self) {
     
-    @scala.inline
-    def setBoundingSphereRadius(value: Double): Self = StObject.set(x, "boundingSphereRadius", value.asInstanceOf[js.Any])
+    inline def setBoundingSphereRadius(value: Double): Self = StObject.set(x, "boundingSphereRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculateLocalInertia(value: (Double, Vec3) => Vec3): Self = StObject.set(x, "calculateLocalInertia", js.Any.fromFunction2(value))
+    inline def setCalculateLocalInertia(value: (Double, Vec3) => Vec3): Self = StObject.set(x, "calculateLocalInertia", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollisionResponse(value: Boolean): Self = StObject.set(x, "collisionResponse", value.asInstanceOf[js.Any])
+    inline def setCollisionResponse(value: Boolean): Self = StObject.set(x, "collisionResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateBoundingSphereRadius(value: () => Double): Self = StObject.set(x, "updateBoundingSphereRadius", js.Any.fromFunction0(value))
+    inline def setUpdateBoundingSphereRadius(value: () => Double): Self = StObject.set(x, "updateBoundingSphereRadius", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVolume(value: () => Double): Self = StObject.set(x, "volume", js.Any.fromFunction0(value))
+    inline def setVolume(value: () => Double): Self = StObject.set(x, "volume", js.Any.fromFunction0(value))
   }
 }

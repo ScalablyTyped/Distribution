@@ -34,8 +34,7 @@ trait ClientConfig[Buckets] extends StObject {
 }
 object ClientConfig {
   
-  @scala.inline
-  def apply[Buckets](
+  inline def apply[Buckets](
     ghostStoreProvider: Bucket[
       js.Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
@@ -58,11 +57,9 @@ object ClientConfig {
     __obj.asInstanceOf[ClientConfig[Buckets]]
   }
   
-  @scala.inline
-  implicit class ClientConfigMutableBuilder[Self <: ClientConfig[?], Buckets] (val x: Self & ClientConfig[Buckets]) extends AnyVal {
+  extension [Self <: ClientConfig[?], Buckets](x: Self & ClientConfig[Buckets]) {
     
-    @scala.inline
-    def setGhostStoreProvider(
+    inline def setGhostStoreProvider(
       value: Bucket[
           js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
@@ -72,11 +69,9 @@ object ClientConfig {
         ]
     ): Self = StObject.set(x, "ghostStoreProvider", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
+    inline def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectStoreProvider(
+    inline def setObjectStoreProvider(
       value: Bucket[
           js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
@@ -87,7 +82,6 @@ object ClientConfig {
         ]
     ): Self = StObject.set(x, "objectStoreProvider", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWebsocketClientProvider(value: String => WebSocket): Self = StObject.set(x, "websocketClientProvider", js.Any.fromFunction1(value))
+    inline def setWebsocketClientProvider(value: String => WebSocket): Self = StObject.set(x, "websocketClientProvider", js.Any.fromFunction1(value))
   }
 }

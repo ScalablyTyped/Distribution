@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SerializationType extends StObject
 object SerializationType {
   
-  @scala.inline
-  def advanced: typings.node.nodeStrings.advanced = "advanced".asInstanceOf[typings.node.nodeStrings.advanced]
+  inline def advanced: typings.node.nodeStrings.advanced = "advanced".asInstanceOf[typings.node.nodeStrings.advanced]
   
-  @scala.inline
-  def json: typings.node.nodeStrings.json = "json".asInstanceOf[typings.node.nodeStrings.json]
+  inline def json: typings.node.nodeStrings.json = "json".asInstanceOf[typings.node.nodeStrings.json]
 }

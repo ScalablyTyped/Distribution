@@ -23,25 +23,19 @@ trait JobManifestLocation extends StObject {
 }
 object JobManifestLocation {
   
-  @scala.inline
-  def apply(ETag: NonEmptyMaxLength1024String, ObjectArn: S3KeyArnString): JobManifestLocation = {
+  inline def apply(ETag: NonEmptyMaxLength1024String, ObjectArn: S3KeyArnString): JobManifestLocation = {
     val __obj = js.Dynamic.literal(ETag = ETag.asInstanceOf[js.Any], ObjectArn = ObjectArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobManifestLocation]
   }
   
-  @scala.inline
-  implicit class JobManifestLocationMutableBuilder[Self <: JobManifestLocation] (val x: Self) extends AnyVal {
+  extension [Self <: JobManifestLocation](x: Self) {
     
-    @scala.inline
-    def setETag(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectArn(value: S3KeyArnString): Self = StObject.set(x, "ObjectArn", value.asInstanceOf[js.Any])
+    inline def setObjectArn(value: S3KeyArnString): Self = StObject.set(x, "ObjectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionId(value: S3ObjectVersionId): Self = StObject.set(x, "ObjectVersionId", value.asInstanceOf[js.Any])
+    inline def setObjectVersionId(value: S3ObjectVersionId): Self = StObject.set(x, "ObjectVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionIdUndefined: Self = StObject.set(x, "ObjectVersionId", js.undefined)
+    inline def setObjectVersionIdUndefined: Self = StObject.set(x, "ObjectVersionId", js.undefined)
   }
 }

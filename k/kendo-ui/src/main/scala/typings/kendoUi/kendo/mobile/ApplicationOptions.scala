@@ -38,103 +38,71 @@ trait ApplicationOptions extends StObject {
 }
 object ApplicationOptions {
   
-  @scala.inline
-  def apply(): ApplicationOptions = {
+  inline def apply(): ApplicationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationOptions]
   }
   
-  @scala.inline
-  implicit class ApplicationOptionsMutableBuilder[Self <: ApplicationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationOptions](x: Self) {
     
-    @scala.inline
-    def setBrowserHistory(value: Boolean): Self = StObject.set(x, "browserHistory", value.asInstanceOf[js.Any])
+    inline def setBrowserHistory(value: Boolean): Self = StObject.set(x, "browserHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserHistoryUndefined: Self = StObject.set(x, "browserHistory", js.undefined)
+    inline def setBrowserHistoryUndefined: Self = StObject.set(x, "browserHistory", js.undefined)
     
-    @scala.inline
-    def setHideAddressBar(value: Boolean): Self = StObject.set(x, "hideAddressBar", value.asInstanceOf[js.Any])
+    inline def setHideAddressBar(value: Boolean): Self = StObject.set(x, "hideAddressBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideAddressBarUndefined: Self = StObject.set(x, "hideAddressBar", js.undefined)
+    inline def setHideAddressBarUndefined: Self = StObject.set(x, "hideAddressBar", js.undefined)
     
-    @scala.inline
-    def setInit(value: /* e */ ApplicationEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* e */ ApplicationEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setModelScope(value: js.Object): Self = StObject.set(x, "modelScope", value.asInstanceOf[js.Any])
+    inline def setModelScope(value: js.Object): Self = StObject.set(x, "modelScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelScopeUndefined: Self = StObject.set(x, "modelScope", js.undefined)
+    inline def setModelScopeUndefined: Self = StObject.set(x, "modelScope", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
+    inline def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
+    inline def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
     
-    @scala.inline
-    def setServerNavigation(value: Boolean): Self = StObject.set(x, "serverNavigation", value.asInstanceOf[js.Any])
+    inline def setServerNavigation(value: Boolean): Self = StObject.set(x, "serverNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNavigationUndefined: Self = StObject.set(x, "serverNavigation", js.undefined)
+    inline def setServerNavigationUndefined: Self = StObject.set(x, "serverNavigation", js.undefined)
     
-    @scala.inline
-    def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    inline def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+    inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     
-    @scala.inline
-    def setStatusBarStyle(value: String): Self = StObject.set(x, "statusBarStyle", value.asInstanceOf[js.Any])
+    inline def setStatusBarStyle(value: String): Self = StObject.set(x, "statusBarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarStyleUndefined: Self = StObject.set(x, "statusBarStyle", js.undefined)
+    inline def setStatusBarStyleUndefined: Self = StObject.set(x, "statusBarStyle", js.undefined)
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    @scala.inline
-    def setUpdateDocumentTitle(value: Boolean): Self = StObject.set(x, "updateDocumentTitle", value.asInstanceOf[js.Any])
+    inline def setUpdateDocumentTitle(value: Boolean): Self = StObject.set(x, "updateDocumentTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDocumentTitleUndefined: Self = StObject.set(x, "updateDocumentTitle", js.undefined)
+    inline def setUpdateDocumentTitleUndefined: Self = StObject.set(x, "updateDocumentTitle", js.undefined)
     
-    @scala.inline
-    def setUseNativeScrolling(value: Boolean): Self = StObject.set(x, "useNativeScrolling", value.asInstanceOf[js.Any])
+    inline def setUseNativeScrolling(value: Boolean): Self = StObject.set(x, "useNativeScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseNativeScrollingUndefined: Self = StObject.set(x, "useNativeScrolling", js.undefined)
+    inline def setUseNativeScrollingUndefined: Self = StObject.set(x, "useNativeScrolling", js.undefined)
   }
 }

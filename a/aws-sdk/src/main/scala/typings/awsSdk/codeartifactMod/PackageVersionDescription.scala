@@ -68,88 +68,61 @@ trait PackageVersionDescription extends StObject {
 }
 object PackageVersionDescription {
   
-  @scala.inline
-  def apply(): PackageVersionDescription = {
+  inline def apply(): PackageVersionDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PackageVersionDescription]
   }
   
-  @scala.inline
-  implicit class PackageVersionDescriptionMutableBuilder[Self <: PackageVersionDescription] (val x: Self) extends AnyVal {
+  extension [Self <: PackageVersionDescription](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String255): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String255): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHomePage(value: String): Self = StObject.set(x, "homePage", value.asInstanceOf[js.Any])
+    inline def setHomePage(value: String): Self = StObject.set(x, "homePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomePageUndefined: Self = StObject.set(x, "homePage", js.undefined)
+    inline def setHomePageUndefined: Self = StObject.set(x, "homePage", js.undefined)
     
-    @scala.inline
-    def setLicenses(value: LicenseInfoList): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+    inline def setLicenses(value: LicenseInfoList): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
+    inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
-    @scala.inline
-    def setLicensesVarargs(value: LicenseInfo*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: LicenseInfo*): Self = StObject.set(x, "licenses", js.Array(value :_*))
     
-    @scala.inline
-    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: PackageName): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: PackageName): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setPublishedTime(value: Timestamp): Self = StObject.set(x, "publishedTime", value.asInstanceOf[js.Any])
+    inline def setPublishedTime(value: Timestamp): Self = StObject.set(x, "publishedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedTimeUndefined: Self = StObject.set(x, "publishedTime", js.undefined)
+    inline def setPublishedTimeUndefined: Self = StObject.set(x, "publishedTime", js.undefined)
     
-    @scala.inline
-    def setRevision(value: PackageVersionRevision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: PackageVersionRevision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
-    @scala.inline
-    def setSourceCodeRepository(value: String): Self = StObject.set(x, "sourceCodeRepository", value.asInstanceOf[js.Any])
+    inline def setSourceCodeRepository(value: String): Self = StObject.set(x, "sourceCodeRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeRepositoryUndefined: Self = StObject.set(x, "sourceCodeRepository", js.undefined)
+    inline def setSourceCodeRepositoryUndefined: Self = StObject.set(x, "sourceCodeRepository", js.undefined)
     
-    @scala.inline
-    def setStatus(value: PackageVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PackageVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setVersion(value: PackageVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PackageVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

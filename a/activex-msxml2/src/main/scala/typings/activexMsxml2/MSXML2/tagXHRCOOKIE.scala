@@ -20,8 +20,7 @@ trait tagXHRCOOKIE extends StObject {
 }
 object tagXHRCOOKIE {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dwFlags: Double,
     ftExpires: _FILETIME,
     pwszName: String,
@@ -33,25 +32,18 @@ object tagXHRCOOKIE {
     __obj.asInstanceOf[tagXHRCOOKIE]
   }
   
-  @scala.inline
-  implicit class tagXHRCOOKIEMutableBuilder[Self <: tagXHRCOOKIE] (val x: Self) extends AnyVal {
+  extension [Self <: tagXHRCOOKIE](x: Self) {
     
-    @scala.inline
-    def setDwFlags(value: Double): Self = StObject.set(x, "dwFlags", value.asInstanceOf[js.Any])
+    inline def setDwFlags(value: Double): Self = StObject.set(x, "dwFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFtExpires(value: _FILETIME): Self = StObject.set(x, "ftExpires", value.asInstanceOf[js.Any])
+    inline def setFtExpires(value: _FILETIME): Self = StObject.set(x, "ftExpires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwszName(value: String): Self = StObject.set(x, "pwszName", value.asInstanceOf[js.Any])
+    inline def setPwszName(value: String): Self = StObject.set(x, "pwszName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwszP3PPolicy(value: String): Self = StObject.set(x, "pwszP3PPolicy", value.asInstanceOf[js.Any])
+    inline def setPwszP3PPolicy(value: String): Self = StObject.set(x, "pwszP3PPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwszUrl(value: String): Self = StObject.set(x, "pwszUrl", value.asInstanceOf[js.Any])
+    inline def setPwszUrl(value: String): Self = StObject.set(x, "pwszUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwszValue(value: String): Self = StObject.set(x, "pwszValue", value.asInstanceOf[js.Any])
+    inline def setPwszValue(value: String): Self = StObject.set(x, "pwszValue", value.asInstanceOf[js.Any])
   }
 }

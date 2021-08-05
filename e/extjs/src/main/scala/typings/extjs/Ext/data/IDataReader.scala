@@ -56,85 +56,59 @@ trait IDataReader
 }
 object IDataReader {
   
-  @scala.inline
-  def apply(): IDataReader = {
+  inline def apply(): IDataReader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDataReader]
   }
   
-  @scala.inline
-  implicit class IDataReaderMutableBuilder[Self <: IDataReader] (val x: Self) extends AnyVal {
+  extension [Self <: IDataReader](x: Self) {
     
-    @scala.inline
-    def setGetResponseData(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
+    inline def setGetResponseData(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetResponseDataUndefined: Self = StObject.set(x, "getResponseData", js.undefined)
+    inline def setGetResponseDataUndefined: Self = StObject.set(x, "getResponseData", js.undefined)
     
-    @scala.inline
-    def setIdProperty(value: String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
+    inline def setIdProperty(value: String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
+    inline def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
     
-    @scala.inline
-    def setImplicitIncludes(value: Boolean): Self = StObject.set(x, "implicitIncludes", value.asInstanceOf[js.Any])
+    inline def setImplicitIncludes(value: Boolean): Self = StObject.set(x, "implicitIncludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitIncludesUndefined: Self = StObject.set(x, "implicitIncludes", js.undefined)
+    inline def setImplicitIncludesUndefined: Self = StObject.set(x, "implicitIncludes", js.undefined)
     
-    @scala.inline
-    def setMessageProperty(value: String): Self = StObject.set(x, "messageProperty", value.asInstanceOf[js.Any])
+    inline def setMessageProperty(value: String): Self = StObject.set(x, "messageProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagePropertyUndefined: Self = StObject.set(x, "messageProperty", js.undefined)
+    inline def setMessagePropertyUndefined: Self = StObject.set(x, "messageProperty", js.undefined)
     
-    @scala.inline
-    def setMetaData(value: js.Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: js.Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
+    inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    @scala.inline
-    def setRawData(value: js.Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: js.Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
+    inline def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
     
-    @scala.inline
-    def setRead(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadRecords(value: /* data */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
+    inline def setReadRecords(value: /* data */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadRecordsOnFailure(value: Boolean): Self = StObject.set(x, "readRecordsOnFailure", value.asInstanceOf[js.Any])
+    inline def setReadRecordsOnFailure(value: Boolean): Self = StObject.set(x, "readRecordsOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadRecordsOnFailureUndefined: Self = StObject.set(x, "readRecordsOnFailure", js.undefined)
+    inline def setReadRecordsOnFailureUndefined: Self = StObject.set(x, "readRecordsOnFailure", js.undefined)
     
-    @scala.inline
-    def setReadRecordsUndefined: Self = StObject.set(x, "readRecords", js.undefined)
+    inline def setReadRecordsUndefined: Self = StObject.set(x, "readRecords", js.undefined)
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSuccessProperty(value: String): Self = StObject.set(x, "successProperty", value.asInstanceOf[js.Any])
+    inline def setSuccessProperty(value: String): Self = StObject.set(x, "successProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessPropertyUndefined: Self = StObject.set(x, "successProperty", js.undefined)
+    inline def setSuccessPropertyUndefined: Self = StObject.set(x, "successProperty", js.undefined)
     
-    @scala.inline
-    def setTotalProperty(value: String): Self = StObject.set(x, "totalProperty", value.asInstanceOf[js.Any])
+    inline def setTotalProperty(value: String): Self = StObject.set(x, "totalProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPropertyUndefined: Self = StObject.set(x, "totalProperty", js.undefined)
+    inline def setTotalPropertyUndefined: Self = StObject.set(x, "totalProperty", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait FilterElement extends StObject {
 }
 object FilterElement {
   
-  @scala.inline
-  def apply(filterElement: Element, sortElement: Element): FilterElement = {
+  inline def apply(filterElement: Element, sortElement: Element): FilterElement = {
     val __obj = js.Dynamic.literal(filterElement = filterElement.asInstanceOf[js.Any], sortElement = sortElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterElement]
   }
   
-  @scala.inline
-  implicit class FilterElementMutableBuilder[Self <: FilterElement] (val x: Self) extends AnyVal {
+  extension [Self <: FilterElement](x: Self) {
     
-    @scala.inline
-    def setFilterElement(value: Element): Self = StObject.set(x, "filterElement", value.asInstanceOf[js.Any])
+    inline def setFilterElement(value: Element): Self = StObject.set(x, "filterElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortElement(value: Element): Self = StObject.set(x, "sortElement", value.asInstanceOf[js.Any])
+    inline def setSortElement(value: Element): Self = StObject.set(x, "sortElement", value.asInstanceOf[js.Any])
   }
 }

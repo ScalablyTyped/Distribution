@@ -67,64 +67,46 @@ object typesUpdateAliasInputMod {
   }
   object UpdateAliasInput {
     
-    @scala.inline
-    def apply(FunctionName: String, Name: String): UpdateAliasInput = {
+    inline def apply(FunctionName: String, Name: String): UpdateAliasInput = {
       val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateAliasInput]
     }
     
-    @scala.inline
-    implicit class UpdateAliasInputMutableBuilder[Self <: UpdateAliasInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateAliasInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionVersion(value: String): Self = StObject.set(x, "FunctionVersion", value.asInstanceOf[js.Any])
+      inline def setFunctionVersion(value: String): Self = StObject.set(x, "FunctionVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionVersionUndefined: Self = StObject.set(x, "FunctionVersion", js.undefined)
+      inline def setFunctionVersionUndefined: Self = StObject.set(x, "FunctionVersion", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+      inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+      inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
       
-      @scala.inline
-      def setRoutingConfig(value: AliasRoutingConfiguration): Self = StObject.set(x, "RoutingConfig", value.asInstanceOf[js.Any])
+      inline def setRoutingConfig(value: AliasRoutingConfiguration): Self = StObject.set(x, "RoutingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingConfigUndefined: Self = StObject.set(x, "RoutingConfig", js.undefined)
+      inline def setRoutingConfigUndefined: Self = StObject.set(x, "RoutingConfig", js.undefined)
     }
   }
 }

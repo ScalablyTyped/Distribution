@@ -12,25 +12,19 @@ trait ExclusiveReversed extends StObject {
 }
 object ExclusiveReversed {
   
-  @scala.inline
-  def apply(): ExclusiveReversed = {
+  inline def apply(): ExclusiveReversed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExclusiveReversed]
   }
   
-  @scala.inline
-  implicit class ExclusiveReversedMutableBuilder[Self <: ExclusiveReversed] (val x: Self) extends AnyVal {
+  extension [Self <: ExclusiveReversed](x: Self) {
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

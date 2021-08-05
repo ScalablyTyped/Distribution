@@ -39,38 +39,28 @@ trait ImagePars extends StObject {
 }
 object ImagePars {
   
-  @scala.inline
-  def apply(data: ArrayBuffer | String, `extension`: ImageExtension, height: Double, width: Double): ImagePars = {
+  inline def apply(data: ArrayBuffer | String, `extension`: ImageExtension, height: Double, width: Double): ImagePars = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePars]
   }
   
-  @scala.inline
-  implicit class ImageParsMutableBuilder[Self <: ImagePars] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePars](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setData(value: ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: ImageExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ImageExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: Image): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Image): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -22,18 +22,14 @@ trait PropertyValueState extends StObject
 object PropertyValueState {
   
   /** The given property name/handle is invalid. */
-  @scala.inline
-  def INVALID_NAME: `2` = 2.asInstanceOf[`2`]
+  inline def INVALID_NAME: `2` = 2.asInstanceOf[`2`]
   
   /** The given property type is invalid. */
-  @scala.inline
-  def INVALID_TYPE: `3` = 3.asInstanceOf[`3`]
+  inline def INVALID_TYPE: `3` = 3.asInstanceOf[`3`]
   
   /** The value was obtained. <p>The value is stored in PropertyValueInfo::Value. */
-  @scala.inline
-  def PROCESSED: `1` = 1.asInstanceOf[`1`]
+  inline def PROCESSED: `1` = 1.asInstanceOf[`1`]
   
   /** The property value was not obtained yet. */
-  @scala.inline
-  def UNPROCESSED: `0` = 0.asInstanceOf[`0`]
+  inline def UNPROCESSED: `0` = 0.asInstanceOf[`0`]
 }

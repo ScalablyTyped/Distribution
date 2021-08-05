@@ -13,43 +13,37 @@ object dateTimeFormatInitializeDateTimeFormatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def InitializeDateTimeFormat(
+  inline def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: String,
     opts: Unit,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: AvailableLocales
   ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
-  @scala.inline
-  def InitializeDateTimeFormat(
+  inline def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: String,
     opts: DateTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: AvailableLocales
   ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
-  @scala.inline
-  def InitializeDateTimeFormat(
+  inline def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: js.Array[String],
     opts: Unit,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: AvailableLocales
   ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
-  @scala.inline
-  def InitializeDateTimeFormat(
+  inline def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: js.Array[String],
     opts: DateTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: AvailableLocales
   ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
-  @scala.inline
-  def InitializeDateTimeFormat(
+  inline def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: Unit,
     opts: Unit,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: AvailableLocales
   ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
-  @scala.inline
-  def InitializeDateTimeFormat(
+  inline def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: Unit,
     opts: DateTimeFormatOptions,

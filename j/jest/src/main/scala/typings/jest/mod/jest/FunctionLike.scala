@@ -10,16 +10,13 @@ trait FunctionLike extends StObject {
 }
 object FunctionLike {
   
-  @scala.inline
-  def apply(name: String): FunctionLike = {
+  inline def apply(name: String): FunctionLike = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionLike]
   }
   
-  @scala.inline
-  implicit class FunctionLikeMutableBuilder[Self <: FunctionLike] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionLike](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

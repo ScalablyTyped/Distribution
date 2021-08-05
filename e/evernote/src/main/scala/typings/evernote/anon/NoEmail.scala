@@ -18,43 +18,31 @@ trait NoEmail extends StObject {
 }
 object NoEmail {
   
-  @scala.inline
-  def apply(): NoEmail = {
+  inline def apply(): NoEmail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoEmail]
   }
   
-  @scala.inline
-  implicit class NoEmailMutableBuilder[Self <: NoEmail] (val x: Self) extends AnyVal {
+  extension [Self <: NoEmail](x: Self) {
     
-    @scala.inline
-    def setNoEmail(value: Boolean): Self = StObject.set(x, "noEmail", value.asInstanceOf[js.Any])
+    inline def setNoEmail(value: Boolean): Self = StObject.set(x, "noEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoEmailUndefined: Self = StObject.set(x, "noEmail", js.undefined)
+    inline def setNoEmailUndefined: Self = StObject.set(x, "noEmail", js.undefined)
     
-    @scala.inline
-    def setNoShare(value: Boolean): Self = StObject.set(x, "noShare", value.asInstanceOf[js.Any])
+    inline def setNoShare(value: Boolean): Self = StObject.set(x, "noShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSharePublicly(value: Boolean): Self = StObject.set(x, "noSharePublicly", value.asInstanceOf[js.Any])
+    inline def setNoSharePublicly(value: Boolean): Self = StObject.set(x, "noSharePublicly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSharePubliclyUndefined: Self = StObject.set(x, "noSharePublicly", js.undefined)
+    inline def setNoSharePubliclyUndefined: Self = StObject.set(x, "noSharePublicly", js.undefined)
     
-    @scala.inline
-    def setNoShareUndefined: Self = StObject.set(x, "noShare", js.undefined)
+    inline def setNoShareUndefined: Self = StObject.set(x, "noShare", js.undefined)
     
-    @scala.inline
-    def setNoUpdateContent(value: Boolean): Self = StObject.set(x, "noUpdateContent", value.asInstanceOf[js.Any])
+    inline def setNoUpdateContent(value: Boolean): Self = StObject.set(x, "noUpdateContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoUpdateContentUndefined: Self = StObject.set(x, "noUpdateContent", js.undefined)
+    inline def setNoUpdateContentUndefined: Self = StObject.set(x, "noUpdateContent", js.undefined)
     
-    @scala.inline
-    def setNoUpdateTitle(value: Boolean): Self = StObject.set(x, "noUpdateTitle", value.asInstanceOf[js.Any])
+    inline def setNoUpdateTitle(value: Boolean): Self = StObject.set(x, "noUpdateTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoUpdateTitleUndefined: Self = StObject.set(x, "noUpdateTitle", js.undefined)
+    inline def setNoUpdateTitleUndefined: Self = StObject.set(x, "noUpdateTitle", js.undefined)
   }
 }

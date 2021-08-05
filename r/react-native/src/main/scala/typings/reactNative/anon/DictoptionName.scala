@@ -14,16 +14,13 @@ trait DictoptionName
 }
 object DictoptionName {
   
-  @scala.inline
-  def apply(headers: StringDictionary[String]): DictoptionName = {
+  inline def apply(headers: StringDictionary[String]): DictoptionName = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictoptionName]
   }
   
-  @scala.inline
-  implicit class DictoptionNameMutableBuilder[Self <: DictoptionName] (val x: Self) extends AnyVal {
+  extension [Self <: DictoptionName](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

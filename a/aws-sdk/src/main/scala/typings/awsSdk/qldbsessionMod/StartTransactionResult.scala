@@ -13,19 +13,15 @@ trait StartTransactionResult extends StObject {
 }
 object StartTransactionResult {
   
-  @scala.inline
-  def apply(): StartTransactionResult = {
+  inline def apply(): StartTransactionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTransactionResult]
   }
   
-  @scala.inline
-  implicit class StartTransactionResultMutableBuilder[Self <: StartTransactionResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartTransactionResult](x: Self) {
     
-    @scala.inline
-    def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

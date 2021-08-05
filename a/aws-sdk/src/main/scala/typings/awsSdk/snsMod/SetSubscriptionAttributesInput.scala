@@ -23,25 +23,19 @@ trait SetSubscriptionAttributesInput extends StObject {
 }
 object SetSubscriptionAttributesInput {
   
-  @scala.inline
-  def apply(AttributeName: attributeName, SubscriptionArn: subscriptionARN): SetSubscriptionAttributesInput = {
+  inline def apply(AttributeName: attributeName, SubscriptionArn: subscriptionARN): SetSubscriptionAttributesInput = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSubscriptionAttributesInput]
   }
   
-  @scala.inline
-  implicit class SetSubscriptionAttributesInputMutableBuilder[Self <: SetSubscriptionAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetSubscriptionAttributesInput](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: attributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: attributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValue(value: attributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: attributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
+    inline def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
     
-    @scala.inline
-    def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

@@ -40,91 +40,63 @@ trait Fluid extends StObject {
 }
 object Fluid {
   
-  @scala.inline
-  def apply(): Fluid = {
+  inline def apply(): Fluid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fluid]
   }
   
-  @scala.inline
-  implicit class FluidMutableBuilder[Self <: Fluid] (val x: Self) extends AnyVal {
+  extension [Self <: Fluid](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
-    @scala.inline
-    def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+    inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+    inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
     
-    @scala.inline
-    def setPrefixIcon(value: IconElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
+    inline def setPrefixIcon(value: IconElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
+    inline def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
     
-    @scala.inline
-    def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+    inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+    inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
     
-    @scala.inline
-    def setSize(value: TextButtonSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: TextButtonSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSkin(value: TextButtonSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    inline def setSkin(value: TextButtonSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+    inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     
-    @scala.inline
-    def setSuffixIcon(value: IconElement): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
+    inline def setSuffixIcon(value: IconElement): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
+    inline def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
     
-    @scala.inline
-    def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+    inline def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
+    inline def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
     
-    @scala.inline
-    def setUnderline(value: TextButtonUnderline): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: TextButtonUnderline): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     
-    @scala.inline
-    def setWeight(value: TextButtonWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: TextButtonWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait ContentTable
 }
 object ContentTable {
   
-  @scala.inline
-  def apply(table: Table): ContentTable = {
+  inline def apply(table: Table): ContentTable = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentTable]
   }
   
-  @scala.inline
-  implicit class ContentTableMutableBuilder[Self <: ContentTable] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTable](x: Self) {
     
-    @scala.inline
-    def setLayout(value: TableLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: TableLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

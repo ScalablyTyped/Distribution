@@ -15,10 +15,8 @@ object getStateFromPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
-  @scala.inline
-  def default(path: String, options: Options): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
+  inline def default(path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
+  inline def default(path: String, options: Options): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
   
   // tslint:disable-next-line strict-export-declare-modifiers interface-over-type-literal
   trait Options extends StObject {
@@ -29,23 +27,18 @@ object getStateFromPathMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(screens: PathConfigMap): Options = {
+    inline def apply(screens: PathConfigMap): Options = {
       val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+      inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+      inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
-      @scala.inline
-      def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
+      inline def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,8 +78,7 @@ object getStateFromPathMod {
   }
   object ResultState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       routes: js.Array[
           PartialRoute[
             Route[
@@ -100,32 +92,23 @@ object getStateFromPathMod {
       __obj.asInstanceOf[ResultState]
     }
     
-    @scala.inline
-    implicit class ResultStateMutableBuilder[Self <: ResultState] (val x: Self) extends AnyVal {
+    extension [Self <: ResultState](x: Self) {
       
-      @scala.inline
-      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setRouteNames(
+      inline def setRouteNames(
         value: js.Array[
               Extract[
                 /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String, 
@@ -134,19 +117,16 @@ object getStateFromPathMod {
             ]
       ): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNamesUndefined: Self = StObject.set(x, "routeNames", js.undefined)
+      inline def setRouteNamesUndefined: Self = StObject.set(x, "routeNames", js.undefined)
       
-      @scala.inline
-      def setRouteNamesVarargs(
+      inline def setRouteNamesVarargs(
         value: (Extract[
               /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String, 
               String
             ])*
       ): Self = StObject.set(x, "routeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setRoutes(
+      inline def setRoutes(
         value: js.Array[
               PartialRoute[
                 Route[
@@ -157,8 +137,7 @@ object getStateFromPathMod {
             ]
       ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(
+      inline def setRoutesVarargs(
         value: (PartialRoute[
               Route[
                 /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase, string>>[number] */ js.Any, 
@@ -167,23 +146,17 @@ object getStateFromPathMod {
             ])*
       ): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+      inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
       
-      @scala.inline
-      def setState(value: ResultState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: ResultState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

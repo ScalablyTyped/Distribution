@@ -15,19 +15,15 @@ trait Deferral extends StObject {
 }
 object Deferral {
   
-  @scala.inline
-  def apply(close: () => Unit, complete: () => Unit): Deferral = {
+  inline def apply(close: () => Unit, complete: () => Unit): Deferral = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[Deferral]
   }
   
-  @scala.inline
-  implicit class DeferralMutableBuilder[Self <: Deferral] (val x: Self) extends AnyVal {
+  extension [Self <: Deferral](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

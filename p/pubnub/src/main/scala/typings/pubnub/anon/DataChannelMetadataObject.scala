@@ -18,23 +18,18 @@ trait DataChannelMetadataObject[ChannelCustom /* <: ObjectCustom */] extends StO
 }
 object DataChannelMetadataObject {
   
-  @scala.inline
-  def apply[ChannelCustom /* <: ObjectCustom */](data: ChannelMetadataObject[ChannelCustom]): DataChannelMetadataObject[ChannelCustom] = {
+  inline def apply[ChannelCustom /* <: ObjectCustom */](data: ChannelMetadataObject[ChannelCustom]): DataChannelMetadataObject[ChannelCustom] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
     __obj.updateDynamic("type")("channel")
     __obj.asInstanceOf[DataChannelMetadataObject[ChannelCustom]]
   }
   
-  @scala.inline
-  implicit class DataChannelMetadataObjectMutableBuilder[Self <: DataChannelMetadataObject[?], ChannelCustom /* <: ObjectCustom */] (val x: Self & DataChannelMetadataObject[ChannelCustom]) extends AnyVal {
+  extension [Self <: DataChannelMetadataObject[?], ChannelCustom /* <: ObjectCustom */](x: Self & DataChannelMetadataObject[ChannelCustom]) {
     
-    @scala.inline
-    def setData(value: ChannelMetadataObject[ChannelCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ChannelMetadataObject[ChannelCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

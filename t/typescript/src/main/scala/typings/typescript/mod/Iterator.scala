@@ -13,16 +13,13 @@ trait Iterator[T] extends StObject {
 }
 object Iterator {
   
-  @scala.inline
-  def apply[T](next: () => Done[T] | `0`): Iterator[T] = {
+  inline def apply[T](next: () => Done[T] | `0`): Iterator[T] = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
     __obj.asInstanceOf[Iterator[T]]
   }
   
-  @scala.inline
-  implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
+  extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
     
-    @scala.inline
-    def setNext(value: () => Done[T] | `0`): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Done[T] | `0`): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }
 }

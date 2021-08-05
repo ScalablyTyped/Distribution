@@ -24,20 +24,16 @@ object typesMod {
   }
   object CSSProperties {
     
-    @scala.inline
-    def apply(): CSSProperties = {
+    inline def apply(): CSSProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSProperties]
     }
     
-    @scala.inline
-    implicit class CSSPropertiesMutableBuilder[Self <: CSSProperties] (val x: Self) extends AnyVal {
+    extension [Self <: CSSProperties](x: Self) {
       
-      @scala.inline
-      def `set@keyframes`(value: CSSKeyframes | String): Self = StObject.set(x, "@keyframes", value.asInstanceOf[js.Any])
+      inline def `set@keyframes`(value: CSSKeyframes | String): Self = StObject.set(x, "@keyframes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set@keyframesUndefined`: Self = StObject.set(x, "@keyframes", js.undefined)
+      inline def `set@keyframesUndefined`: Self = StObject.set(x, "@keyframes", js.undefined)
     }
   }
   
@@ -51,20 +47,16 @@ object typesMod {
   }
   object FeatureQueries {
     
-    @scala.inline
-    def apply[StyleType](): FeatureQueries[StyleType] = {
+    inline def apply[StyleType](): FeatureQueries[StyleType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeatureQueries[StyleType]]
     }
     
-    @scala.inline
-    implicit class FeatureQueriesMutableBuilder[Self <: FeatureQueries[?], StyleType] (val x: Self & FeatureQueries[StyleType]) extends AnyVal {
+    extension [Self <: FeatureQueries[?], StyleType](x: Self & FeatureQueries[StyleType]) {
       
-      @scala.inline
-      def `set@supports`(value: StringDictionary[StyleType]): Self = StObject.set(x, "@supports", value.asInstanceOf[js.Any])
+      inline def `set@supports`(value: StringDictionary[StyleType]): Self = StObject.set(x, "@supports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set@supportsUndefined`: Self = StObject.set(x, "@supports", js.undefined)
+      inline def `set@supportsUndefined`: Self = StObject.set(x, "@supports", js.undefined)
     }
   }
   
@@ -76,20 +68,16 @@ object typesMod {
   }
   object MediaQueries {
     
-    @scala.inline
-    def apply[StyleType](): MediaQueries[StyleType] = {
+    inline def apply[StyleType](): MediaQueries[StyleType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaQueries[StyleType]]
     }
     
-    @scala.inline
-    implicit class MediaQueriesMutableBuilder[Self <: MediaQueries[?], StyleType] (val x: Self & MediaQueries[StyleType]) extends AnyVal {
+    extension [Self <: MediaQueries[?], StyleType](x: Self & MediaQueries[StyleType]) {
       
-      @scala.inline
-      def `set@media`(value: StringDictionary[StyleType]): Self = StObject.set(x, "@media", value.asInstanceOf[js.Any])
+      inline def `set@media`(value: StringDictionary[StyleType]): Self = StObject.set(x, "@media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set@mediaUndefined`: Self = StObject.set(x, "@media", js.undefined)
+      inline def `set@mediaUndefined`: Self = StObject.set(x, "@media", js.undefined)
     }
   }
   
@@ -108,8 +96,7 @@ object typesMod {
        with FeatureQueries[StyleWithSelectors]
   object Style {
     
-    @scala.inline
-    def apply(): Style = {
+    inline def apply(): Style = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Style]
     }
@@ -126,20 +113,16 @@ object typesMod {
   }
   object StyleWithSelectors {
     
-    @scala.inline
-    def apply(): StyleWithSelectors = {
+    inline def apply(): StyleWithSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyleWithSelectors]
     }
     
-    @scala.inline
-    implicit class StyleWithSelectorsMutableBuilder[Self <: StyleWithSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: StyleWithSelectors](x: Self) {
       
-      @scala.inline
-      def setSelectors(value: SelectorMap): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: SelectorMap): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+      inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     }
   }
   
@@ -170,8 +153,7 @@ object typesMod {
        with _TreatModuleValue
   object TreatModuleObject {
     
-    @scala.inline
-    def apply(): TreatModuleObject = {
+    inline def apply(): TreatModuleObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreatModuleObject]
     }
@@ -196,20 +178,16 @@ object typesMod {
   }
   object TreatTheme {
     
-    @scala.inline
-    def apply[Tokens](themeRef: ThemeRef, tokens: Tokens): TreatTheme[Tokens] = {
+    inline def apply[Tokens](themeRef: ThemeRef, tokens: Tokens): TreatTheme[Tokens] = {
       val __obj = js.Dynamic.literal(themeRef = themeRef.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreatTheme[Tokens]]
     }
     
-    @scala.inline
-    implicit class TreatThemeMutableBuilder[Self <: TreatTheme[?], Tokens] (val x: Self & TreatTheme[Tokens]) extends AnyVal {
+    extension [Self <: TreatTheme[?], Tokens](x: Self & TreatTheme[Tokens]) {
       
-      @scala.inline
-      def setThemeRef(value: ThemeRef): Self = StObject.set(x, "themeRef", value.asInstanceOf[js.Any])
+      inline def setThemeRef(value: ThemeRef): Self = StObject.set(x, "themeRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: Tokens): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: Tokens): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
   

@@ -79,20 +79,16 @@ object interfacesMod {
   }
   object DragSourceConnector {
     
-    @scala.inline
-    def apply(dragPreview: () => ConnectDragPreview, dragSource: () => ConnectDragSource): DragSourceConnector = {
+    inline def apply(dragPreview: () => ConnectDragPreview, dragSource: () => ConnectDragSource): DragSourceConnector = {
       val __obj = js.Dynamic.literal(dragPreview = js.Any.fromFunction0(dragPreview), dragSource = js.Any.fromFunction0(dragSource))
       __obj.asInstanceOf[DragSourceConnector]
     }
     
-    @scala.inline
-    implicit class DragSourceConnectorMutableBuilder[Self <: DragSourceConnector] (val x: Self) extends AnyVal {
+    extension [Self <: DragSourceConnector](x: Self) {
       
-      @scala.inline
-      def setDragPreview(value: () => ConnectDragPreview): Self = StObject.set(x, "dragPreview", js.Any.fromFunction0(value))
+      inline def setDragPreview(value: () => ConnectDragPreview): Self = StObject.set(x, "dragPreview", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDragSource(value: () => ConnectDragSource): Self = StObject.set(x, "dragSource", js.Any.fromFunction0(value))
+      inline def setDragSource(value: () => ConnectDragSource): Self = StObject.set(x, "dragSource", js.Any.fromFunction0(value))
     }
   }
   
@@ -142,35 +138,26 @@ object interfacesMod {
   }
   object DragSourceSpec {
     
-    @scala.inline
-    def apply[Props, DragObject](beginDrag: (Props, DragSourceMonitor, js.Any) => DragObject): DragSourceSpec[Props, DragObject] = {
+    inline def apply[Props, DragObject](beginDrag: (Props, DragSourceMonitor, js.Any) => DragObject): DragSourceSpec[Props, DragObject] = {
       val __obj = js.Dynamic.literal(beginDrag = js.Any.fromFunction3(beginDrag))
       __obj.asInstanceOf[DragSourceSpec[Props, DragObject]]
     }
     
-    @scala.inline
-    implicit class DragSourceSpecMutableBuilder[Self <: DragSourceSpec[?, ?], Props, DragObject] (val x: Self & (DragSourceSpec[Props, DragObject])) extends AnyVal {
+    extension [Self <: DragSourceSpec[?, ?], Props, DragObject](x: Self & (DragSourceSpec[Props, DragObject])) {
       
-      @scala.inline
-      def setBeginDrag(value: (Props, DragSourceMonitor, js.Any) => DragObject): Self = StObject.set(x, "beginDrag", js.Any.fromFunction3(value))
+      inline def setBeginDrag(value: (Props, DragSourceMonitor, js.Any) => DragObject): Self = StObject.set(x, "beginDrag", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCanDrag(value: (/* props */ Props, /* monitor */ DragSourceMonitor) => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction2(value))
+      inline def setCanDrag(value: (/* props */ Props, /* monitor */ DragSourceMonitor) => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanDragUndefined: Self = StObject.set(x, "canDrag", js.undefined)
+      inline def setCanDragUndefined: Self = StObject.set(x, "canDrag", js.undefined)
       
-      @scala.inline
-      def setEndDrag(value: (/* props */ Props, /* monitor */ DragSourceMonitor, /* component */ js.Any) => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction3(value))
+      inline def setEndDrag(value: (/* props */ Props, /* monitor */ DragSourceMonitor, /* component */ js.Any) => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEndDragUndefined: Self = StObject.set(x, "endDrag", js.undefined)
+      inline def setEndDragUndefined: Self = StObject.set(x, "endDrag", js.undefined)
       
-      @scala.inline
-      def setIsDragging(value: (/* props */ Props, /* monitor */ DragSourceMonitor) => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction2(value))
+      inline def setIsDragging(value: (/* props */ Props, /* monitor */ DragSourceMonitor) => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsDraggingUndefined: Self = StObject.set(x, "isDragging", js.undefined)
+      inline def setIsDraggingUndefined: Self = StObject.set(x, "isDragging", js.undefined)
     }
   }
   
@@ -192,17 +179,14 @@ object interfacesMod {
   }
   object DropTargetConnector {
     
-    @scala.inline
-    def apply(dropTarget: () => ConnectDropTarget): DropTargetConnector = {
+    inline def apply(dropTarget: () => ConnectDropTarget): DropTargetConnector = {
       val __obj = js.Dynamic.literal(dropTarget = js.Any.fromFunction0(dropTarget))
       __obj.asInstanceOf[DropTargetConnector]
     }
     
-    @scala.inline
-    implicit class DropTargetConnectorMutableBuilder[Self <: DropTargetConnector] (val x: Self) extends AnyVal {
+    extension [Self <: DropTargetConnector](x: Self) {
       
-      @scala.inline
-      def setDropTarget(value: () => ConnectDropTarget): Self = StObject.set(x, "dropTarget", js.Any.fromFunction0(value))
+      inline def setDropTarget(value: () => ConnectDropTarget): Self = StObject.set(x, "dropTarget", js.Any.fromFunction0(value))
     }
   }
   
@@ -241,32 +225,24 @@ object interfacesMod {
   }
   object DropTargetSpec {
     
-    @scala.inline
-    def apply[Props](): DropTargetSpec[Props] = {
+    inline def apply[Props](): DropTargetSpec[Props] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropTargetSpec[Props]]
     }
     
-    @scala.inline
-    implicit class DropTargetSpecMutableBuilder[Self <: DropTargetSpec[?], Props] (val x: Self & DropTargetSpec[Props]) extends AnyVal {
+    extension [Self <: DropTargetSpec[?], Props](x: Self & DropTargetSpec[Props]) {
       
-      @scala.inline
-      def setCanDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
+      inline def setCanDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
+      inline def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
       
-      @scala.inline
-      def setDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => js.Any): Self = StObject.set(x, "drop", js.Any.fromFunction3(value))
+      inline def setDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => js.Any): Self = StObject.set(x, "drop", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setHover(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction3(value))
+      inline def setHover(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+      inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     }
   }
   

@@ -11,22 +11,17 @@ trait GoogleCloudDialogflowCxV3beta1PageInfoFormInfo extends StObject {
 }
 object GoogleCloudDialogflowCxV3beta1PageInfoFormInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3beta1PageInfoFormInfo = {
+  inline def apply(): GoogleCloudDialogflowCxV3beta1PageInfoFormInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1PageInfoFormInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1PageInfoFormInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo](x: Self) {
     
-    @scala.inline
-    def setParameterInfo(value: js.Array[GoogleCloudDialogflowCxV3beta1PageInfoFormInfoParameterInfo]): Self = StObject.set(x, "parameterInfo", value.asInstanceOf[js.Any])
+    inline def setParameterInfo(value: js.Array[GoogleCloudDialogflowCxV3beta1PageInfoFormInfoParameterInfo]): Self = StObject.set(x, "parameterInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterInfoUndefined: Self = StObject.set(x, "parameterInfo", js.undefined)
+    inline def setParameterInfoUndefined: Self = StObject.set(x, "parameterInfo", js.undefined)
     
-    @scala.inline
-    def setParameterInfoVarargs(value: GoogleCloudDialogflowCxV3beta1PageInfoFormInfoParameterInfo*): Self = StObject.set(x, "parameterInfo", js.Array(value :_*))
+    inline def setParameterInfoVarargs(value: GoogleCloudDialogflowCxV3beta1PageInfoFormInfoParameterInfo*): Self = StObject.set(x, "parameterInfo", js.Array(value :_*))
   }
 }

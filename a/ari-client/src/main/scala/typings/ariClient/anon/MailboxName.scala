@@ -10,16 +10,13 @@ trait MailboxName extends StObject {
 }
 object MailboxName {
   
-  @scala.inline
-  def apply(mailboxName: String): MailboxName = {
+  inline def apply(mailboxName: String): MailboxName = {
     val __obj = js.Dynamic.literal(mailboxName = mailboxName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailboxName]
   }
   
-  @scala.inline
-  implicit class MailboxNameMutableBuilder[Self <: MailboxName] (val x: Self) extends AnyVal {
+  extension [Self <: MailboxName](x: Self) {
     
-    @scala.inline
-    def setMailboxName(value: String): Self = StObject.set(x, "mailboxName", value.asInstanceOf[js.Any])
+    inline def setMailboxName(value: String): Self = StObject.set(x, "mailboxName", value.asInstanceOf[js.Any])
   }
 }

@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CookieBlockedReason extends StObject
 object CookieBlockedReason {
   
-  @scala.inline
-  def DomainMismatch: typings.devtoolsProtocol.devtoolsProtocolStrings.DomainMismatch = "DomainMismatch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DomainMismatch]
+  inline def DomainMismatch: typings.devtoolsProtocol.devtoolsProtocolStrings.DomainMismatch = "DomainMismatch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DomainMismatch]
   
-  @scala.inline
-  def NotOnPath: typings.devtoolsProtocol.devtoolsProtocolStrings.NotOnPath = "NotOnPath".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NotOnPath]
+  inline def NotOnPath: typings.devtoolsProtocol.devtoolsProtocolStrings.NotOnPath = "NotOnPath".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NotOnPath]
   
-  @scala.inline
-  def SameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax = "SameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax]
+  inline def SameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax = "SameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax]
   
-  @scala.inline
-  def SameSiteNoneInsecure: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteNoneInsecure = "SameSiteNoneInsecure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteNoneInsecure]
+  inline def SameSiteNoneInsecure: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteNoneInsecure = "SameSiteNoneInsecure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteNoneInsecure]
   
-  @scala.inline
-  def SameSiteStrict: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteStrict = "SameSiteStrict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteStrict]
+  inline def SameSiteStrict: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteStrict = "SameSiteStrict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteStrict]
   
-  @scala.inline
-  def SameSiteUnspecifiedTreatedAsLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteUnspecifiedTreatedAsLax = "SameSiteUnspecifiedTreatedAsLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteUnspecifiedTreatedAsLax]
+  inline def SameSiteUnspecifiedTreatedAsLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteUnspecifiedTreatedAsLax = "SameSiteUnspecifiedTreatedAsLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteUnspecifiedTreatedAsLax]
   
-  @scala.inline
-  def SchemefulSameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteLax = "SchemefulSameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteLax]
+  inline def SchemefulSameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteLax = "SchemefulSameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteLax]
   
-  @scala.inline
-  def SchemefulSameSiteStrict: typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteStrict = "SchemefulSameSiteStrict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteStrict]
+  inline def SchemefulSameSiteStrict: typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteStrict = "SchemefulSameSiteStrict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteStrict]
   
-  @scala.inline
-  def SchemefulSameSiteUnspecifiedTreatedAsLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteUnspecifiedTreatedAsLax = "SchemefulSameSiteUnspecifiedTreatedAsLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteUnspecifiedTreatedAsLax]
+  inline def SchemefulSameSiteUnspecifiedTreatedAsLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteUnspecifiedTreatedAsLax = "SchemefulSameSiteUnspecifiedTreatedAsLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteUnspecifiedTreatedAsLax]
   
-  @scala.inline
-  def SecureOnly: typings.devtoolsProtocol.devtoolsProtocolStrings.SecureOnly = "SecureOnly".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SecureOnly]
+  inline def SecureOnly: typings.devtoolsProtocol.devtoolsProtocolStrings.SecureOnly = "SecureOnly".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SecureOnly]
   
-  @scala.inline
-  def UnknownError: typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError = "UnknownError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError]
+  inline def UnknownError: typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError = "UnknownError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError]
   
-  @scala.inline
-  def UserPreferences: typings.devtoolsProtocol.devtoolsProtocolStrings.UserPreferences = "UserPreferences".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UserPreferences]
+  inline def UserPreferences: typings.devtoolsProtocol.devtoolsProtocolStrings.UserPreferences = "UserPreferences".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UserPreferences]
 }

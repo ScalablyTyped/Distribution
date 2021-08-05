@@ -15,31 +15,23 @@ trait Owner extends StObject {
 }
 object Owner {
   
-  @scala.inline
-  def apply(): Owner = {
+  inline def apply(): Owner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Owner]
   }
   
-  @scala.inline
-  implicit class OwnerMutableBuilder[Self <: Owner] (val x: Self) extends AnyVal {
+  extension [Self <: Owner](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setResource(value: Uri): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Uri): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
+    inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
+    inline def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
   }
 }

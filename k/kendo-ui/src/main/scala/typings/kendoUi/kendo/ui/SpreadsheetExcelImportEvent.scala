@@ -17,25 +17,19 @@ trait SpreadsheetExcelImportEvent
 }
 object SpreadsheetExcelImportEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetExcelImportEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetExcelImportEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetExcelImportEvent]
   }
   
-  @scala.inline
-  implicit class SpreadsheetExcelImportEventMutableBuilder[Self <: SpreadsheetExcelImportEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetExcelImportEvent](x: Self) {
     
-    @scala.inline
-    def setFile(value: Blob | File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Blob | File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setProgress(value: JQueryPromise[js.Any]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: JQueryPromise[js.Any]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

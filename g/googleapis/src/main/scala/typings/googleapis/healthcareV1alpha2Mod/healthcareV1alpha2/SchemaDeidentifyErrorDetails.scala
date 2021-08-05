@@ -31,37 +31,27 @@ trait SchemaDeidentifyErrorDetails extends StObject {
 }
 object SchemaDeidentifyErrorDetails {
   
-  @scala.inline
-  def apply(): SchemaDeidentifyErrorDetails = {
+  inline def apply(): SchemaDeidentifyErrorDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeidentifyErrorDetails]
   }
   
-  @scala.inline
-  implicit class SchemaDeidentifyErrorDetailsMutableBuilder[Self <: SchemaDeidentifyErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeidentifyErrorDetails](x: Self) {
     
-    @scala.inline
-    def setFailureResourceCount(value: String): Self = StObject.set(x, "failureResourceCount", value.asInstanceOf[js.Any])
+    inline def setFailureResourceCount(value: String): Self = StObject.set(x, "failureResourceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureResourceCountUndefined: Self = StObject.set(x, "failureResourceCount", js.undefined)
+    inline def setFailureResourceCountUndefined: Self = StObject.set(x, "failureResourceCount", js.undefined)
     
-    @scala.inline
-    def setFailureStoreCount(value: String): Self = StObject.set(x, "failureStoreCount", value.asInstanceOf[js.Any])
+    inline def setFailureStoreCount(value: String): Self = StObject.set(x, "failureStoreCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureStoreCountUndefined: Self = StObject.set(x, "failureStoreCount", js.undefined)
+    inline def setFailureStoreCountUndefined: Self = StObject.set(x, "failureStoreCount", js.undefined)
     
-    @scala.inline
-    def setSuccessResourceCount(value: String): Self = StObject.set(x, "successResourceCount", value.asInstanceOf[js.Any])
+    inline def setSuccessResourceCount(value: String): Self = StObject.set(x, "successResourceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessResourceCountUndefined: Self = StObject.set(x, "successResourceCount", js.undefined)
+    inline def setSuccessResourceCountUndefined: Self = StObject.set(x, "successResourceCount", js.undefined)
     
-    @scala.inline
-    def setSuccessStoreCount(value: String): Self = StObject.set(x, "successStoreCount", value.asInstanceOf[js.Any])
+    inline def setSuccessStoreCount(value: String): Self = StObject.set(x, "successStoreCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessStoreCountUndefined: Self = StObject.set(x, "successStoreCount", js.undefined)
+    inline def setSuccessStoreCountUndefined: Self = StObject.set(x, "successStoreCount", js.undefined)
   }
 }

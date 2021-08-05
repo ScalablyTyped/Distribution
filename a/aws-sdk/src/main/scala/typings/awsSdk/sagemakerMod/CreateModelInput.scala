@@ -43,55 +43,39 @@ trait CreateModelInput extends StObject {
 }
 object CreateModelInput {
   
-  @scala.inline
-  def apply(ExecutionRoleArn: RoleArn, ModelName: ModelName): CreateModelInput = {
+  inline def apply(ExecutionRoleArn: RoleArn, ModelName: ModelName): CreateModelInput = {
     val __obj = js.Dynamic.literal(ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModelInput]
   }
   
-  @scala.inline
-  implicit class CreateModelInputMutableBuilder[Self <: CreateModelInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateModelInput](x: Self) {
     
-    @scala.inline
-    def setContainers(value: ContainerDefinitionList): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: ContainerDefinitionList): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "Containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "Containers", js.undefined)
     
-    @scala.inline
-    def setContainersVarargs(value: ContainerDefinition*): Self = StObject.set(x, "Containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: ContainerDefinition*): Self = StObject.set(x, "Containers", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
+    inline def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
+    inline def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryContainer(value: ContainerDefinition): Self = StObject.set(x, "PrimaryContainer", value.asInstanceOf[js.Any])
+    inline def setPrimaryContainer(value: ContainerDefinition): Self = StObject.set(x, "PrimaryContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryContainerUndefined: Self = StObject.set(x, "PrimaryContainer", js.undefined)
+    inline def setPrimaryContainerUndefined: Self = StObject.set(x, "PrimaryContainer", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

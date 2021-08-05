@@ -25,8 +25,7 @@ trait RESTAPIRequest[T] extends StObject {
 }
 object RESTAPIRequest {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     body: RESTAPIRequestBody[T],
     getHeader: String => String,
     getSupportedResponseContentTypes: () => js.Array[String],
@@ -40,31 +39,22 @@ object RESTAPIRequest {
     __obj.asInstanceOf[RESTAPIRequest[T]]
   }
   
-  @scala.inline
-  implicit class RESTAPIRequestMutableBuilder[Self <: RESTAPIRequest[?], T] (val x: Self & RESTAPIRequest[T]) extends AnyVal {
+  extension [Self <: RESTAPIRequest[?], T](x: Self & RESTAPIRequest[T]) {
     
-    @scala.inline
-    def setBody(value: RESTAPIRequestBody[T]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: RESTAPIRequestBody[T]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+    inline def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSupportedResponseContentTypes(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedResponseContentTypes", js.Any.fromFunction0(value))
+    inline def setGetSupportedResponseContentTypes(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedResponseContentTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathParams(value: StringDictionary[String]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
+    inline def setPathParams(value: StringDictionary[String]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParams(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+    inline def setQueryParams(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

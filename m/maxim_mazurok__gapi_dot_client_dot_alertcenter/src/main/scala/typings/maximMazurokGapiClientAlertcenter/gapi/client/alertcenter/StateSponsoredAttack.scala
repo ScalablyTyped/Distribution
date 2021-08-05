@@ -11,19 +11,15 @@ trait StateSponsoredAttack extends StObject {
 }
 object StateSponsoredAttack {
   
-  @scala.inline
-  def apply(): StateSponsoredAttack = {
+  inline def apply(): StateSponsoredAttack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateSponsoredAttack]
   }
   
-  @scala.inline
-  implicit class StateSponsoredAttackMutableBuilder[Self <: StateSponsoredAttack] (val x: Self) extends AnyVal {
+  extension [Self <: StateSponsoredAttack](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

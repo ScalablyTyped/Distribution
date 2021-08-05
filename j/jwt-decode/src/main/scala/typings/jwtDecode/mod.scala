@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](token: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def default[T](token: String, options: JwtDecodeOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](token: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](token: String, options: JwtDecodeOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("jwt-decode", "InvalidTokenError")
   @js.native
@@ -35,20 +33,16 @@ object mod {
   }
   object JwtDecodeOptions {
     
-    @scala.inline
-    def apply(): JwtDecodeOptions = {
+    inline def apply(): JwtDecodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JwtDecodeOptions]
     }
     
-    @scala.inline
-    implicit class JwtDecodeOptionsMutableBuilder[Self <: JwtDecodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JwtDecodeOptions](x: Self) {
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
   
@@ -60,26 +54,20 @@ object mod {
   }
   object JwtHeader {
     
-    @scala.inline
-    def apply(): JwtHeader = {
+    inline def apply(): JwtHeader = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JwtHeader]
     }
     
-    @scala.inline
-    implicit class JwtHeaderMutableBuilder[Self <: JwtHeader] (val x: Self) extends AnyVal {
+    extension [Self <: JwtHeader](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -101,59 +89,42 @@ object mod {
   }
   object JwtPayload {
     
-    @scala.inline
-    def apply(): JwtPayload = {
+    inline def apply(): JwtPayload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JwtPayload]
     }
     
-    @scala.inline
-    implicit class JwtPayloadMutableBuilder[Self <: JwtPayload] (val x: Self) extends AnyVal {
+    extension [Self <: JwtPayload](x: Self) {
       
-      @scala.inline
-      def setAud(value: js.Array[String] | String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
+      inline def setAud(value: js.Array[String] | String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudUndefined: Self = StObject.set(x, "aud", js.undefined)
+      inline def setAudUndefined: Self = StObject.set(x, "aud", js.undefined)
       
-      @scala.inline
-      def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value :_*))
+      inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value :_*))
       
-      @scala.inline
-      def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+      inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
+      inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
       
-      @scala.inline
-      def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
+      inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIatUndefined: Self = StObject.set(x, "iat", js.undefined)
+      inline def setIatUndefined: Self = StObject.set(x, "iat", js.undefined)
       
-      @scala.inline
-      def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
+      inline def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssUndefined: Self = StObject.set(x, "iss", js.undefined)
+      inline def setIssUndefined: Self = StObject.set(x, "iss", js.undefined)
       
-      @scala.inline
-      def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
+      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
+      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
       
-      @scala.inline
-      def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
+      inline def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNbfUndefined: Self = StObject.set(x, "nbf", js.undefined)
+      inline def setNbfUndefined: Self = StObject.set(x, "nbf", js.undefined)
       
-      @scala.inline
-      def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     }
   }
 }

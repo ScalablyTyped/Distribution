@@ -11,19 +11,15 @@ trait Card extends StObject {
 }
 object Card {
   
-  @scala.inline
-  def apply(): Card = {
+  inline def apply(): Card = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Card]
   }
   
-  @scala.inline
-  implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
+  extension [Self <: Card](x: Self) {
     
-    @scala.inline
-    def setCard(value: String | ICardSourceCreationOptionsExtended): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: String | ICardSourceCreationOptionsExtended): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
   }
 }

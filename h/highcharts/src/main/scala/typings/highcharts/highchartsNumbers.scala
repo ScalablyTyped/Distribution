@@ -8,11 +8,9 @@ object highchartsNumbers {
   
   @js.native
   sealed trait `0` extends StObject
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `100` extends StObject
-  @scala.inline
-  def `100`: `100` = 100.asInstanceOf[`100`]
+  inline def `100`: `100` = 100.asInstanceOf[`100`]
 }

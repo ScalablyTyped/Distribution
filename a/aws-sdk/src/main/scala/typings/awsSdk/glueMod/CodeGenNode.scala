@@ -28,31 +28,23 @@ trait CodeGenNode extends StObject {
 }
 object CodeGenNode {
   
-  @scala.inline
-  def apply(Args: CodeGenNodeArgs, Id: CodeGenIdentifier, NodeType: CodeGenNodeType): CodeGenNode = {
+  inline def apply(Args: CodeGenNodeArgs, Id: CodeGenIdentifier, NodeType: CodeGenNodeType): CodeGenNode = {
     val __obj = js.Dynamic.literal(Args = Args.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], NodeType = NodeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeGenNode]
   }
   
-  @scala.inline
-  implicit class CodeGenNodeMutableBuilder[Self <: CodeGenNode] (val x: Self) extends AnyVal {
+  extension [Self <: CodeGenNode](x: Self) {
     
-    @scala.inline
-    def setArgs(value: CodeGenNodeArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: CodeGenNodeArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: CodeGenIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: CodeGenIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Integer): Self = StObject.set(x, "LineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Integer): Self = StObject.set(x, "LineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumberUndefined: Self = StObject.set(x, "LineNumber", js.undefined)
+    inline def setLineNumberUndefined: Self = StObject.set(x, "LineNumber", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: CodeGenNodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: CodeGenNodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
   }
 }

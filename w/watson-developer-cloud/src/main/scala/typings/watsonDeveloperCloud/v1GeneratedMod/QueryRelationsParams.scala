@@ -37,70 +37,49 @@ trait QueryRelationsParams extends StObject {
 }
 object QueryRelationsParams {
   
-  @scala.inline
-  def apply(collection_id: String, environment_id: String): QueryRelationsParams = {
+  inline def apply(collection_id: String, environment_id: String): QueryRelationsParams = {
     val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsParams]
   }
   
-  @scala.inline
-  implicit class QueryRelationsParamsMutableBuilder[Self <: QueryRelationsParams] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRelationsParams](x: Self) {
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: QueryEntitiesContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: QueryEntitiesContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setEntities(value: js.Array[QueryRelationsEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[QueryRelationsEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: QueryRelationsEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: QueryRelationsEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvidence_count(value: Double): Self = StObject.set(x, "evidence_count", value.asInstanceOf[js.Any])
+    inline def setEvidence_count(value: Double): Self = StObject.set(x, "evidence_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvidence_countUndefined: Self = StObject.set(x, "evidence_count", js.undefined)
+    inline def setEvidence_countUndefined: Self = StObject.set(x, "evidence_count", js.undefined)
     
-    @scala.inline
-    def setFilter(value: QueryRelationsFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: QueryRelationsFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setSort(value: Sort | String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Sort | String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

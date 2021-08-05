@@ -33,8 +33,7 @@ trait MobileBroadbandUiccApp extends StObject {
 }
 object MobileBroadbandUiccApp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRecordDetailsAsync: IIterable[Double] => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppRecordDetailsResult],
     id: IBuffer,
     kind: UiccAppKind,
@@ -44,20 +43,15 @@ object MobileBroadbandUiccApp {
     __obj.asInstanceOf[MobileBroadbandUiccApp]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandUiccAppMutableBuilder[Self <: MobileBroadbandUiccApp] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandUiccApp](x: Self) {
     
-    @scala.inline
-    def setGetRecordDetailsAsync(value: IIterable[Double] => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppRecordDetailsResult]): Self = StObject.set(x, "getRecordDetailsAsync", js.Any.fromFunction1(value))
+    inline def setGetRecordDetailsAsync(value: IIterable[Double] => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppRecordDetailsResult]): Self = StObject.set(x, "getRecordDetailsAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: IBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: UiccAppKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: UiccAppKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadRecordAsync(
+    inline def setReadRecordAsync(
       value: (IIterable[Double], Double) => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppReadRecordResult]
     ): Self = StObject.set(x, "readRecordAsync", js.Any.fromFunction2(value))
   }

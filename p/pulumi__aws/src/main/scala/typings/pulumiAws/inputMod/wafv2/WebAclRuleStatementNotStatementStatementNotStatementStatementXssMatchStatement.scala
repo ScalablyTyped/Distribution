@@ -29,8 +29,7 @@ trait WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchState
 }
 object WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: Input[
       js.Array[
         Input[
@@ -43,21 +42,17 @@ object WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStat
     __obj.asInstanceOf[WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatementMutableBuilder[Self <: WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(
+    inline def setFieldToMatch(
       value: Input[
           WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatch
         ]
     ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: Input[
           js.Array[
             Input[
@@ -67,8 +62,7 @@ object WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStat
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(
+    inline def setTextTransformationsVarargs(
       value: (Input[
           WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatementTextTransformation
         ])*

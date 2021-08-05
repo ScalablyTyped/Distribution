@@ -24,8 +24,7 @@ trait ASPxClientChartDesignerMenuAction extends StObject {
 }
 object ASPxClientChartDesignerMenuAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clickAction: js.Function,
     container: String,
     disabled: Boolean,
@@ -39,31 +38,22 @@ object ASPxClientChartDesignerMenuAction {
     __obj.asInstanceOf[ASPxClientChartDesignerMenuAction]
   }
   
-  @scala.inline
-  implicit class ASPxClientChartDesignerMenuActionMutableBuilder[Self <: ASPxClientChartDesignerMenuAction] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientChartDesignerMenuAction](x: Self) {
     
-    @scala.inline
-    def setClickAction(value: js.Function): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
+    inline def setClickAction(value: js.Function): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSeparator(value: String): Self = StObject.set(x, "hasSeparator", value.asInstanceOf[js.Any])
+    inline def setHasSeparator(value: String): Self = StObject.set(x, "hasSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotKey(value: String): Self = StObject.set(x, "hotKey", value.asInstanceOf[js.Any])
+    inline def setHotKey(value: String): Self = StObject.set(x, "hotKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageClassName(value: String): Self = StObject.set(x, "imageClassName", value.asInstanceOf[js.Any])
+    inline def setImageClassName(value: String): Self = StObject.set(x, "imageClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

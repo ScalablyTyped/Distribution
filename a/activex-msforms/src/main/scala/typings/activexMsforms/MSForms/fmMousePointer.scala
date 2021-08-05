@@ -39,48 +39,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmMousePointer extends StObject
 object fmMousePointer {
   
-  @scala.inline
-  def fmMousePointerAppStarting: `13` = 13.asInstanceOf[`13`]
+  inline def fmMousePointerAppStarting: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def fmMousePointerArrow: `1` = 1.asInstanceOf[`1`]
+  inline def fmMousePointerArrow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmMousePointerCross: `2` = 2.asInstanceOf[`2`]
+  inline def fmMousePointerCross: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmMousePointerCustom: `99` = 99.asInstanceOf[`99`]
+  inline def fmMousePointerCustom: `99` = 99.asInstanceOf[`99`]
   
-  @scala.inline
-  def fmMousePointerDefault: `0` = 0.asInstanceOf[`0`]
+  inline def fmMousePointerDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmMousePointerHelp: `14` = 14.asInstanceOf[`14`]
+  inline def fmMousePointerHelp: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def fmMousePointerHourGlass: `11` = 11.asInstanceOf[`11`]
+  inline def fmMousePointerHourGlass: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def fmMousePointerIBeam: `3` = 3.asInstanceOf[`3`]
+  inline def fmMousePointerIBeam: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmMousePointerNoDrop: `12` = 12.asInstanceOf[`12`]
+  inline def fmMousePointerNoDrop: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def fmMousePointerSizeAll: `15` = 15.asInstanceOf[`15`]
+  inline def fmMousePointerSizeAll: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def fmMousePointerSizeNESW: `6` = 6.asInstanceOf[`6`]
+  inline def fmMousePointerSizeNESW: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def fmMousePointerSizeNS: `7` = 7.asInstanceOf[`7`]
+  inline def fmMousePointerSizeNS: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def fmMousePointerSizeNWSE: `8` = 8.asInstanceOf[`8`]
+  inline def fmMousePointerSizeNWSE: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def fmMousePointerSizeWE: `9` = 9.asInstanceOf[`9`]
+  inline def fmMousePointerSizeWE: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def fmMousePointerUpArrow: `10` = 10.asInstanceOf[`10`]
+  inline def fmMousePointerUpArrow: `10` = 10.asInstanceOf[`10`]
 }

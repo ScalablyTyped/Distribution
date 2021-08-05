@@ -14,34 +14,25 @@ trait PrinterContact extends StObject {
 }
 object PrinterContact {
   
-  @scala.inline
-  def apply(): PrinterContact = {
+  inline def apply(): PrinterContact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrinterContact]
   }
   
-  @scala.inline
-  implicit class PrinterContactMutableBuilder[Self <: PrinterContact] (val x: Self) extends AnyVal {
+  extension [Self <: PrinterContact](x: Self) {
     
-    @scala.inline
-    def `setContact-name`(value: String): Self = StObject.set(x, "contact-name", value.asInstanceOf[js.Any])
+    inline def `setContact-name`(value: String): Self = StObject.set(x, "contact-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContact-nameUndefined`: Self = StObject.set(x, "contact-name", js.undefined)
+    inline def `setContact-nameUndefined`: Self = StObject.set(x, "contact-name", js.undefined)
     
-    @scala.inline
-    def `setContact-uri`(value: String): Self = StObject.set(x, "contact-uri", value.asInstanceOf[js.Any])
+    inline def `setContact-uri`(value: String): Self = StObject.set(x, "contact-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContact-uriUndefined`: Self = StObject.set(x, "contact-uri", js.undefined)
+    inline def `setContact-uriUndefined`: Self = StObject.set(x, "contact-uri", js.undefined)
     
-    @scala.inline
-    def `setContact-vcard`(value: js.Array[String]): Self = StObject.set(x, "contact-vcard", value.asInstanceOf[js.Any])
+    inline def `setContact-vcard`(value: js.Array[String]): Self = StObject.set(x, "contact-vcard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContact-vcardUndefined`: Self = StObject.set(x, "contact-vcard", js.undefined)
+    inline def `setContact-vcardUndefined`: Self = StObject.set(x, "contact-vcard", js.undefined)
     
-    @scala.inline
-    def `setContact-vcardVarargs`(value: String*): Self = StObject.set(x, "contact-vcard", js.Array(value :_*))
+    inline def `setContact-vcardVarargs`(value: String*): Self = StObject.set(x, "contact-vcard", js.Array(value :_*))
   }
 }

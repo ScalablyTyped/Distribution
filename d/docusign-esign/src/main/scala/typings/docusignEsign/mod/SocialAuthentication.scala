@@ -13,19 +13,15 @@ trait SocialAuthentication extends StObject {
 }
 object SocialAuthentication {
   
-  @scala.inline
-  def apply(): SocialAuthentication = {
+  inline def apply(): SocialAuthentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SocialAuthentication]
   }
   
-  @scala.inline
-  implicit class SocialAuthenticationMutableBuilder[Self <: SocialAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: SocialAuthentication](x: Self) {
     
-    @scala.inline
-    def setAuthentication(value: String): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: String): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
   }
 }

@@ -18,13 +18,12 @@ trait HeadingStyles extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.HeadingStyles_typekey")
+  /* private */ @JSName("Word.HeadingStyles_typekey")
   var WordDotHeadingStyles_typekey: HeadingStyles
 }
 object HeadingStyles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (js.Any, Double) => HeadingStyle,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object HeadingStyles {
     __obj.asInstanceOf[HeadingStyles]
   }
   
-  @scala.inline
-  implicit class HeadingStylesMutableBuilder[Self <: HeadingStyles] (val x: Self) extends AnyVal {
+  extension [Self <: HeadingStyles](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (js.Any, Double) => HeadingStyle): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (js.Any, Double) => HeadingStyle): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => HeadingStyle): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => HeadingStyle): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotHeadingStyles_typekey(value: HeadingStyles): Self = StObject.set(x, "Word.HeadingStyles_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotHeadingStyles_typekey(value: HeadingStyles): Self = StObject.set(x, "Word.HeadingStyles_typekey", value.asInstanceOf[js.Any])
   }
 }

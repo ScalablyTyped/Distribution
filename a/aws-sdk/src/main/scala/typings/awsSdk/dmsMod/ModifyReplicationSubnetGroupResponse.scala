@@ -13,19 +13,15 @@ trait ModifyReplicationSubnetGroupResponse extends StObject {
 }
 object ModifyReplicationSubnetGroupResponse {
   
-  @scala.inline
-  def apply(): ModifyReplicationSubnetGroupResponse = {
+  inline def apply(): ModifyReplicationSubnetGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyReplicationSubnetGroupResponse]
   }
   
-  @scala.inline
-  implicit class ModifyReplicationSubnetGroupResponseMutableBuilder[Self <: ModifyReplicationSubnetGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyReplicationSubnetGroupResponse](x: Self) {
     
-    @scala.inline
-    def setReplicationSubnetGroup(value: ReplicationSubnetGroup): Self = StObject.set(x, "ReplicationSubnetGroup", value.asInstanceOf[js.Any])
+    inline def setReplicationSubnetGroup(value: ReplicationSubnetGroup): Self = StObject.set(x, "ReplicationSubnetGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationSubnetGroupUndefined: Self = StObject.set(x, "ReplicationSubnetGroup", js.undefined)
+    inline def setReplicationSubnetGroupUndefined: Self = StObject.set(x, "ReplicationSubnetGroup", js.undefined)
   }
 }

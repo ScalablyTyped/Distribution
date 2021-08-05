@@ -14,7 +14,7 @@ object mod {
   @js.native
   class AttributesManager () extends StObject {
     
-    var _attributes: StringDictionary[AttributeFunction] = js.native
+    /* protected */ var _attributes: StringDictionary[AttributeFunction] = js.native
     
     /**
       * Undefine an attribute, by name or function and return removed
@@ -97,8 +97,7 @@ object mod {
     @JSImport("rbac-a", "Providers.JsonProvider")
     @js.native
     def JsonProvider: Instantiable = js.native
-    @scala.inline
-    def JsonProvider_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonProvider")(x.asInstanceOf[js.Any])
+    inline def JsonProvider_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonProvider")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rbac-a", "RBAC")
@@ -131,8 +130,7 @@ object mod {
        with /* _ */ StringDictionary[Double | Roles]
   object Roles {
     
-    @scala.inline
-    def apply(): Roles = {
+    inline def apply(): Roles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Roles]
     }

@@ -14,22 +14,17 @@ trait WithResponse[T] extends StObject {
 }
 object WithResponse {
   
-  @scala.inline
-  def apply[T](body: T, headers: Headers, statusCode: Double): WithResponse[T] = {
+  inline def apply[T](body: T, headers: Headers, statusCode: Double): WithResponse[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithResponse[T]]
   }
   
-  @scala.inline
-  implicit class WithResponseMutableBuilder[Self <: WithResponse[?], T] (val x: Self & WithResponse[T]) extends AnyVal {
+  extension [Self <: WithResponse[?], T](x: Self & WithResponse[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

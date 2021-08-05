@@ -23,31 +23,23 @@ trait DashboardPublishOptions extends StObject {
 }
 object DashboardPublishOptions {
   
-  @scala.inline
-  def apply(): DashboardPublishOptions = {
+  inline def apply(): DashboardPublishOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashboardPublishOptions]
   }
   
-  @scala.inline
-  implicit class DashboardPublishOptionsMutableBuilder[Self <: DashboardPublishOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardPublishOptions](x: Self) {
     
-    @scala.inline
-    def setAdHocFilteringOption(value: AdHocFilteringOption): Self = StObject.set(x, "AdHocFilteringOption", value.asInstanceOf[js.Any])
+    inline def setAdHocFilteringOption(value: AdHocFilteringOption): Self = StObject.set(x, "AdHocFilteringOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdHocFilteringOptionUndefined: Self = StObject.set(x, "AdHocFilteringOption", js.undefined)
+    inline def setAdHocFilteringOptionUndefined: Self = StObject.set(x, "AdHocFilteringOption", js.undefined)
     
-    @scala.inline
-    def setExportToCSVOption(value: ExportToCSVOption): Self = StObject.set(x, "ExportToCSVOption", value.asInstanceOf[js.Any])
+    inline def setExportToCSVOption(value: ExportToCSVOption): Self = StObject.set(x, "ExportToCSVOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportToCSVOptionUndefined: Self = StObject.set(x, "ExportToCSVOption", js.undefined)
+    inline def setExportToCSVOptionUndefined: Self = StObject.set(x, "ExportToCSVOption", js.undefined)
     
-    @scala.inline
-    def setSheetControlsOption(value: SheetControlsOption): Self = StObject.set(x, "SheetControlsOption", value.asInstanceOf[js.Any])
+    inline def setSheetControlsOption(value: SheetControlsOption): Self = StObject.set(x, "SheetControlsOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetControlsOptionUndefined: Self = StObject.set(x, "SheetControlsOption", js.undefined)
+    inline def setSheetControlsOptionUndefined: Self = StObject.set(x, "SheetControlsOption", js.undefined)
   }
 }

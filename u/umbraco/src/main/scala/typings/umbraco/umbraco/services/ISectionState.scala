@@ -16,19 +16,15 @@ trait ISectionState extends StObject {
 }
 object ISectionState {
   
-  @scala.inline
-  def apply(currentSection: js.Any, showSearchResults: Boolean): ISectionState = {
+  inline def apply(currentSection: js.Any, showSearchResults: Boolean): ISectionState = {
     val __obj = js.Dynamic.literal(currentSection = currentSection.asInstanceOf[js.Any], showSearchResults = showSearchResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISectionState]
   }
   
-  @scala.inline
-  implicit class ISectionStateMutableBuilder[Self <: ISectionState] (val x: Self) extends AnyVal {
+  extension [Self <: ISectionState](x: Self) {
     
-    @scala.inline
-    def setCurrentSection(value: js.Any): Self = StObject.set(x, "currentSection", value.asInstanceOf[js.Any])
+    inline def setCurrentSection(value: js.Any): Self = StObject.set(x, "currentSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSearchResults(value: Boolean): Self = StObject.set(x, "showSearchResults", value.asInstanceOf[js.Any])
+    inline def setShowSearchResults(value: Boolean): Self = StObject.set(x, "showSearchResults", value.asInstanceOf[js.Any])
   }
 }

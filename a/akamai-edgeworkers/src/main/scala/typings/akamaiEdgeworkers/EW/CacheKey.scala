@@ -55,8 +55,7 @@ trait CacheKey extends StObject {
 }
 object CacheKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     excludeQueryString: () => Unit,
     includeCookie: String => Unit,
     includeHeader: String => Unit,
@@ -68,25 +67,18 @@ object CacheKey {
     __obj.asInstanceOf[CacheKey]
   }
   
-  @scala.inline
-  implicit class CacheKeyMutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
+  extension [Self <: CacheKey](x: Self) {
     
-    @scala.inline
-    def setExcludeQueryString(value: () => Unit): Self = StObject.set(x, "excludeQueryString", js.Any.fromFunction0(value))
+    inline def setExcludeQueryString(value: () => Unit): Self = StObject.set(x, "excludeQueryString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncludeCookie(value: String => Unit): Self = StObject.set(x, "includeCookie", js.Any.fromFunction1(value))
+    inline def setIncludeCookie(value: String => Unit): Self = StObject.set(x, "includeCookie", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludeHeader(value: String => Unit): Self = StObject.set(x, "includeHeader", js.Any.fromFunction1(value))
+    inline def setIncludeHeader(value: String => Unit): Self = StObject.set(x, "includeHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludeQueryArgument(value: String => Unit): Self = StObject.set(x, "includeQueryArgument", js.Any.fromFunction1(value))
+    inline def setIncludeQueryArgument(value: String => Unit): Self = StObject.set(x, "includeQueryArgument", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludeQueryString(value: () => Unit): Self = StObject.set(x, "includeQueryString", js.Any.fromFunction0(value))
+    inline def setIncludeQueryString(value: () => Unit): Self = StObject.set(x, "includeQueryString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncludeVariable(value: String => Unit): Self = StObject.set(x, "includeVariable", js.Any.fromFunction1(value))
+    inline def setIncludeVariable(value: String => Unit): Self = StObject.set(x, "includeVariable", js.Any.fromFunction1(value))
   }
 }

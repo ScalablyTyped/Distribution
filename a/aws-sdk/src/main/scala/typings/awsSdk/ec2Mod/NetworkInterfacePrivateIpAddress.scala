@@ -28,37 +28,27 @@ trait NetworkInterfacePrivateIpAddress extends StObject {
 }
 object NetworkInterfacePrivateIpAddress {
   
-  @scala.inline
-  def apply(): NetworkInterfacePrivateIpAddress = {
+  inline def apply(): NetworkInterfacePrivateIpAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInterfacePrivateIpAddress]
   }
   
-  @scala.inline
-  implicit class NetworkInterfacePrivateIpAddressMutableBuilder[Self <: NetworkInterfacePrivateIpAddress] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterfacePrivateIpAddress](x: Self) {
     
-    @scala.inline
-    def setAssociation(value: NetworkInterfaceAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
+    inline def setAssociation(value: NetworkInterfaceAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationUndefined: Self = StObject.set(x, "Association", js.undefined)
+    inline def setAssociationUndefined: Self = StObject.set(x, "Association", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "Primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "Primary", js.undefined)
     
-    @scala.inline
-    def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
+    inline def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
+    inline def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
   }
 }

@@ -41,106 +41,73 @@ trait FormOptions extends StObject {
 }
 object FormOptions {
   
-  @scala.inline
-  def apply(): FormOptions = {
+  inline def apply(): FormOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormOptions]
   }
   
-  @scala.inline
-  implicit class FormOptionsMutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormOptions](x: Self) {
     
-    @scala.inline
-    def setButtonsTemplate(value: String | js.Function): Self = StObject.set(x, "buttonsTemplate", value.asInstanceOf[js.Any])
+    inline def setButtonsTemplate(value: String | js.Function): Self = StObject.set(x, "buttonsTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsTemplateUndefined: Self = StObject.set(x, "buttonsTemplate", js.undefined)
+    inline def setButtonsTemplateUndefined: Self = StObject.set(x, "buttonsTemplate", js.undefined)
     
-    @scala.inline
-    def setChange(value: /* e */ FormChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ FormChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setClear(value: /* e */ FormClearEvent => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* e */ FormClearEvent => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setFocusFirst(value: Boolean): Self = StObject.set(x, "focusFirst", value.asInstanceOf[js.Any])
+    inline def setFocusFirst(value: Boolean): Self = StObject.set(x, "focusFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusFirstUndefined: Self = StObject.set(x, "focusFirst", js.undefined)
+    inline def setFocusFirstUndefined: Self = StObject.set(x, "focusFirst", js.undefined)
     
-    @scala.inline
-    def setFormData(value: FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    @scala.inline
-    def setFormatLabel(value: js.Function): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
+    inline def setFormatLabel(value: js.Function): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
+    inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
-    @scala.inline
-    def setGrid(value: FormGridOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: FormGridOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[FormItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[FormItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: FormItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FormItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLayout(value: String | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String | horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String | horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setSubmit(value: /* e */ FormSubmitEvent => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: /* e */ FormSubmitEvent => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
+    inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
     
-    @scala.inline
-    def setValidatable(value: FormValidatable): Self = StObject.set(x, "validatable", value.asInstanceOf[js.Any])
+    inline def setValidatable(value: FormValidatable): Self = StObject.set(x, "validatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatableUndefined: Self = StObject.set(x, "validatable", js.undefined)
+    inline def setValidatableUndefined: Self = StObject.set(x, "validatable", js.undefined)
     
-    @scala.inline
-    def setValidate(value: /* e */ FormValidateEvent => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: /* e */ FormValidateEvent => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateField(value: /* e */ FormValidateFieldEvent => Unit): Self = StObject.set(x, "validateField", js.Any.fromFunction1(value))
+    inline def setValidateField(value: /* e */ FormValidateFieldEvent => Unit): Self = StObject.set(x, "validateField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateFieldUndefined: Self = StObject.set(x, "validateField", js.undefined)
+    inline def setValidateFieldUndefined: Self = StObject.set(x, "validateField", js.undefined)
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

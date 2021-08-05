@@ -54,23 +54,20 @@ object portalPortalMod {
       @JSImport("@ant-design/react-native/lib/portal/portal", "default.Host.displayName")
       @js.native
       def displayName: String = js.native
-      @scala.inline
-      def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
     @JSImport("@ant-design/react-native/lib/portal/portal", "default.add")
     @js.native
     def add: js.Function1[/* e */ ReactNode, Double] = js.native
-    @scala.inline
-    def add_=(x: js.Function1[/* e */ ReactNode, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
+    inline def add_=(x: js.Function1[/* e */ ReactNode, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("@ant-design/react-native/lib/portal/portal", "default.remove")
     @js.native
     def remove: js.Function1[/* key */ Double, Unit] = js.native
-    @scala.inline
-    def remove_=(x: js.Function1[/* key */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+    inline def remove_=(x: js.Function1[/* key */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -113,20 +110,16 @@ object portalPortalMod {
   }
   object PortalProps {
     
-    @scala.inline
-    def apply(): PortalProps = {
+    inline def apply(): PortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortalProps]
     }
     
-    @scala.inline
-    implicit class PortalPropsMutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

@@ -131,85 +131,73 @@ object OfficeExtension {
     @JSGlobal("OfficeExtension.ErrorCodes.accessDenied")
     @js.native
     def accessDenied: String = js.native
-    @scala.inline
-    def accessDenied_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessDenied")(x.asInstanceOf[js.Any])
+    inline def accessDenied_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessDenied")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.activityLimitReached")
     @js.native
     def activityLimitReached: String = js.native
-    @scala.inline
-    def activityLimitReached_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activityLimitReached")(x.asInstanceOf[js.Any])
+    inline def activityLimitReached_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activityLimitReached")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.apiNotFound")
     @js.native
     def apiNotFound: String = js.native
-    @scala.inline
-    def apiNotFound_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apiNotFound")(x.asInstanceOf[js.Any])
+    inline def apiNotFound_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apiNotFound")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.cannotRegisterEvent")
     @js.native
     def cannotRegisterEvent: String = js.native
-    @scala.inline
-    def cannotRegisterEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotRegisterEvent")(x.asInstanceOf[js.Any])
+    inline def cannotRegisterEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotRegisterEvent")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.connectionFailure")
     @js.native
     def connectionFailure: String = js.native
-    @scala.inline
-    def connectionFailure_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionFailure")(x.asInstanceOf[js.Any])
+    inline def connectionFailure_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionFailure")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.generalException")
     @js.native
     def generalException: String = js.native
-    @scala.inline
-    def generalException_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generalException")(x.asInstanceOf[js.Any])
+    inline def generalException_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generalException")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.invalidArgument")
     @js.native
     def invalidArgument: String = js.native
-    @scala.inline
-    def invalidArgument_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument")(x.asInstanceOf[js.Any])
+    inline def invalidArgument_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.invalidObjectPath")
     @js.native
     def invalidObjectPath: String = js.native
-    @scala.inline
-    def invalidObjectPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidObjectPath")(x.asInstanceOf[js.Any])
+    inline def invalidObjectPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidObjectPath")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.invalidRequestContext")
     @js.native
     def invalidRequestContext: String = js.native
-    @scala.inline
-    def invalidRequestContext_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidRequestContext")(x.asInstanceOf[js.Any])
+    inline def invalidRequestContext_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidRequestContext")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.propertyNotLoaded")
     @js.native
     def propertyNotLoaded: String = js.native
-    @scala.inline
-    def propertyNotLoaded_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propertyNotLoaded")(x.asInstanceOf[js.Any])
+    inline def propertyNotLoaded_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propertyNotLoaded")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.runMustReturnPromise")
     @js.native
     def runMustReturnPromise: String = js.native
-    @scala.inline
-    def runMustReturnPromise_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runMustReturnPromise")(x.asInstanceOf[js.Any])
+    inline def runMustReturnPromise_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runMustReturnPromise")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("OfficeExtension.ErrorCodes.valueNotLoaded")
     @js.native
     def valueNotLoaded: String = js.native
-    @scala.inline
-    def valueNotLoaded_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueNotLoaded")(x.asInstanceOf[js.Any])
+    inline def valueNotLoaded_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueNotLoaded")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("OfficeExtension.EventHandlerResult")
@@ -319,7 +307,6 @@ object OfficeExtension {
     @JSGlobal("OfficeExtension.config.extendedErrorLogging")
     @js.native
     def extendedErrorLogging: Boolean = js.native
-    @scala.inline
-    def extendedErrorLogging_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendedErrorLogging")(x.asInstanceOf[js.Any])
+    inline def extendedErrorLogging_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendedErrorLogging")(x.asInstanceOf[js.Any])
   }
 }

@@ -13,357 +13,302 @@ object storybookApiStrings {
   
   @js.native
   sealed trait Optionkey extends StObject
-  @scala.inline
-  def Optionkey: Optionkey = "\u2325".asInstanceOf[Optionkey]
+  inline def Optionkey: Optionkey = "\u2325".asInstanceOf[Optionkey]
   
   @js.native
   sealed trait Placeofinterestsign extends StObject
-  @scala.inline
-  def Placeofinterestsign: Placeofinterestsign = "\u2318".asInstanceOf[Placeofinterestsign]
+  inline def Placeofinterestsign: Placeofinterestsign = "\u2318".asInstanceOf[Placeofinterestsign]
   
   @js.native
   sealed trait aboutPage
     extends StObject
        with Action
-  @scala.inline
-  def aboutPage: aboutPage = "aboutPage".asInstanceOf[aboutPage]
+  inline def aboutPage: aboutPage = "aboutPage".asInstanceOf[aboutPage]
   
   @js.native
   sealed trait addons
     extends StObject
        with ActiveTabsType
-  @scala.inline
-  def addons: addons = "addons".asInstanceOf[addons]
+  inline def addons: addons = "addons".asInstanceOf[addons]
   
   @js.native
   sealed trait alt extends StObject
-  @scala.inline
-  def alt: alt = "alt".asInstanceOf[alt]
+  inline def alt: alt = "alt".asInstanceOf[alt]
   
   @js.native
   sealed trait args
     extends StObject
        with Item
-  @scala.inline
-  def args: args = "args".asInstanceOf[args]
+  inline def args: args = "args".asInstanceOf[args]
   
   @js.native
   sealed trait `auto-inject` extends StObject
-  @scala.inline
-  def `auto-inject`: `auto-inject` = "auto-inject".asInstanceOf[`auto-inject`]
+  inline def `auto-inject`: `auto-inject` = "auto-inject".asInstanceOf[`auto-inject`]
   
   @js.native
   sealed trait bottom
     extends StObject
        with PanelPositions
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait canvas
     extends StObject
        with ActiveTabsType
-  @scala.inline
-  def canvas: canvas = "canvas".asInstanceOf[canvas]
+  inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
   sealed trait children
     extends StObject
        with Item
-  @scala.inline
-  def children: children = "children".asInstanceOf[children]
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait collapseAll
     extends StObject
        with Action
-  @scala.inline
-  def collapseAll: collapseAll = "collapseAll".asInstanceOf[collapseAll]
+  inline def collapseAll: collapseAll = "collapseAll".asInstanceOf[collapseAll]
   
   @js.native
   sealed trait control extends StObject
-  @scala.inline
-  def control: control = "control".asInstanceOf[control]
+  inline def control: control = "control".asInstanceOf[control]
   
   @js.native
   sealed trait ctrl extends StObject
-  @scala.inline
-  def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
+  inline def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
   
   @js.native
   sealed trait depth
     extends StObject
        with Item
-  @scala.inline
-  def depth: depth = "depth".asInstanceOf[depth]
+  inline def depth: depth = "depth".asInstanceOf[depth]
   
   @js.native
   sealed trait development extends StObject
-  @scala.inline
-  def development: development = "development".asInstanceOf[development]
+  inline def development: development = "development".asInstanceOf[development]
   
   @js.native
   sealed trait escape
     extends StObject
        with Action
-  @scala.inline
-  def escape: escape = "escape".asInstanceOf[escape]
+  inline def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
   sealed trait expandAll
     extends StObject
        with Action
-  @scala.inline
-  def expandAll: expandAll = "expandAll".asInstanceOf[expandAll]
+  inline def expandAll: expandAll = "expandAll".asInstanceOf[expandAll]
   
   @js.native
   sealed trait external extends StObject
-  @scala.inline
-  def external: external = "external".asInstanceOf[external]
+  inline def external: external = "external".asInstanceOf[external]
   
   @js.native
   sealed trait focusIframe
     extends StObject
        with Action
-  @scala.inline
-  def focusIframe: focusIframe = "focusIframe".asInstanceOf[focusIframe]
+  inline def focusIframe: focusIframe = "focusIframe".asInstanceOf[focusIframe]
   
   @js.native
   sealed trait focusNav
     extends StObject
        with Action
-  @scala.inline
-  def focusNav: focusNav = "focusNav".asInstanceOf[focusNav]
+  inline def focusNav: focusNav = "focusNav".asInstanceOf[focusNav]
   
   @js.native
   sealed trait focusPanel
     extends StObject
        with Action
-  @scala.inline
-  def focusPanel: focusPanel = "focusPanel".asInstanceOf[focusPanel]
+  inline def focusPanel: focusPanel = "focusPanel".asInstanceOf[focusPanel]
   
   @js.native
   sealed trait fullScreen
     extends StObject
        with Action
-  @scala.inline
-  def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
+  inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
   sealed trait id
     extends StObject
        with Item
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait info
     extends StObject
        with _ViewMode
        with typings.storybookApi.addonsMod._ViewMode
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait isComponent
     extends StObject
        with Item
-  @scala.inline
-  def isComponent: isComponent = "isComponent".asInstanceOf[isComponent]
+  inline def isComponent: isComponent = "isComponent".asInstanceOf[isComponent]
   
   @js.native
   sealed trait isLeaf
     extends StObject
        with Item
-  @scala.inline
-  def isLeaf: isLeaf = "isLeaf".asInstanceOf[isLeaf]
+  inline def isLeaf: isLeaf = "isLeaf".asInstanceOf[isLeaf]
   
   @js.native
   sealed trait isRoot
     extends StObject
        with Item
-  @scala.inline
-  def isRoot: isRoot = "isRoot".asInstanceOf[isRoot]
+  inline def isRoot: isRoot = "isRoot".asInstanceOf[isRoot]
   
   @js.native
   sealed trait kind
     extends StObject
        with Item
-  @scala.inline
-  def kind: kind = "kind".asInstanceOf[kind]
+  inline def kind: kind = "kind".asInstanceOf[kind]
   
   @js.native
   sealed trait `lazy` extends StObject
-  @scala.inline
-  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   
   @js.native
   sealed trait local extends StObject
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait meta extends StObject
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
+  inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
   sealed trait name
     extends StObject
        with Item
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait nextComponent
     extends StObject
        with Action
-  @scala.inline
-  def nextComponent: nextComponent = "nextComponent".asInstanceOf[nextComponent]
+  inline def nextComponent: nextComponent = "nextComponent".asInstanceOf[nextComponent]
   
   @js.native
   sealed trait nextStory
     extends StObject
        with Action
-  @scala.inline
-  def nextStory: nextStory = "nextStory".asInstanceOf[nextStory]
+  inline def nextStory: nextStory = "nextStory".asInstanceOf[nextStory]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait page
     extends StObject
        with typings.storybookApi.addonsMod._ViewMode
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait panelPosition
     extends StObject
        with Action
-  @scala.inline
-  def panelPosition: panelPosition = "panelPosition".asInstanceOf[panelPosition]
+  inline def panelPosition: panelPosition = "panelPosition".asInstanceOf[panelPosition]
   
   @js.native
   sealed trait parameters
     extends StObject
        with Item
-  @scala.inline
-  def parameters: parameters = "parameters".asInstanceOf[parameters]
+  inline def parameters: parameters = "parameters".asInstanceOf[parameters]
   
   @js.native
   sealed trait parent
     extends StObject
        with Item
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
   sealed trait prevComponent
     extends StObject
        with Action
-  @scala.inline
-  def prevComponent: prevComponent = "prevComponent".asInstanceOf[prevComponent]
+  inline def prevComponent: prevComponent = "prevComponent".asInstanceOf[prevComponent]
   
   @js.native
   sealed trait prevStory
     extends StObject
        with Action
-  @scala.inline
-  def prevStory: prevStory = "prevStory".asInstanceOf[prevStory]
+  inline def prevStory: prevStory = "prevStory".asInstanceOf[prevStory]
   
   @js.native
   sealed trait production extends StObject
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
+  inline def production: production = "production".asInstanceOf[production]
   
   @js.native
   sealed trait refId
     extends StObject
        with Item
-  @scala.inline
-  def refId: refId = "refId".asInstanceOf[refId]
+  inline def refId: refId = "refId".asInstanceOf[refId]
   
   @js.native
   sealed trait right
     extends StObject
        with PanelPositions
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait search
     extends StObject
        with Action
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait `server-checked` extends StObject
-  @scala.inline
-  def `server-checked`: `server-checked` = "server-checked".asInstanceOf[`server-checked`]
+  inline def `server-checked`: `server-checked` = "server-checked".asInstanceOf[`server-checked`]
   
   @js.native
   sealed trait session extends StObject
-  @scala.inline
-  def session: session = "session".asInstanceOf[session]
+  inline def session: session = "session".asInstanceOf[session]
   
   @js.native
   sealed trait settings
     extends StObject
        with _ViewMode
        with typings.storybookApi.addonsMod._ViewMode
-  @scala.inline
-  def settings: settings = "settings".asInstanceOf[settings]
+  inline def settings: settings = "settings".asInstanceOf[settings]
   
   @js.native
   sealed trait shortcutsPage
     extends StObject
        with Action
-  @scala.inline
-  def shortcutsPage: shortcutsPage = "shortcutsPage".asInstanceOf[shortcutsPage]
+  inline def shortcutsPage: shortcutsPage = "shortcutsPage".asInstanceOf[shortcutsPage]
   
   @js.native
   sealed trait sidebar
     extends StObject
        with ActiveTabsType
-  @scala.inline
-  def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
+  inline def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
   
   @js.native
   sealed trait story
     extends StObject
        with _ViewMode
        with typings.storybookApi.addonsMod._ViewMode
-  @scala.inline
-  def story: story = "story".asInstanceOf[story]
+  inline def story: story = "story".asInstanceOf[story]
   
   @js.native
   sealed trait toggleNav
     extends StObject
        with Action
-  @scala.inline
-  def toggleNav: toggleNav = "toggleNav".asInstanceOf[toggleNav]
+  inline def toggleNav: toggleNav = "toggleNav".asInstanceOf[toggleNav]
   
   @js.native
   sealed trait togglePanel
     extends StObject
        with Action
-  @scala.inline
-  def togglePanel: togglePanel = "togglePanel".asInstanceOf[togglePanel]
+  inline def togglePanel: togglePanel = "togglePanel".asInstanceOf[togglePanel]
   
   @js.native
   sealed trait toolbar
     extends StObject
        with Action
-  @scala.inline
-  def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
+  inline def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
   
   @js.native
   sealed trait unknown extends StObject
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
 }

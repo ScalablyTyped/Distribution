@@ -13,22 +13,17 @@ trait ApplySecurityGroupsToLoadBalancerOutput extends StObject {
 }
 object ApplySecurityGroupsToLoadBalancerOutput {
   
-  @scala.inline
-  def apply(): ApplySecurityGroupsToLoadBalancerOutput = {
+  inline def apply(): ApplySecurityGroupsToLoadBalancerOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplySecurityGroupsToLoadBalancerOutput]
   }
   
-  @scala.inline
-  implicit class ApplySecurityGroupsToLoadBalancerOutputMutableBuilder[Self <: ApplySecurityGroupsToLoadBalancerOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ApplySecurityGroupsToLoadBalancerOutput](x: Self) {
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
   }
 }

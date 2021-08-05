@@ -17,23 +17,18 @@ trait TypeParameterDeclaration_
 }
 object TypeParameterDeclaration_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, params: js.Array[Identifier_], start: Double): TypeParameterDeclaration_ = {
+  inline def apply(end: Double, loc: SourceLocation, params: js.Array[Identifier_], start: Double): TypeParameterDeclaration_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeParameterDeclaration")
     __obj.asInstanceOf[TypeParameterDeclaration_]
   }
   
-  @scala.inline
-  implicit class TypeParameterDeclaration_MutableBuilder[Self <: TypeParameterDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParameterDeclaration_](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Array[Identifier_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Identifier_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: Identifier_ *): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Identifier_ *): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

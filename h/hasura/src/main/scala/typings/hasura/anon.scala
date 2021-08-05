@@ -14,20 +14,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def set__type(value: jsonb): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+      inline def set__type(value: jsonb): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__typeUndefined: Self = StObject.set(x, "__type", js.undefined)
+      inline def set__typeUndefined: Self = StObject.set(x, "__type", js.undefined)
     }
   }
   
@@ -42,20 +38,16 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(): Type = {
+    inline def apply(): Type = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def set__type(value: json): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+      inline def set__type(value: json): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__typeUndefined: Self = StObject.set(x, "__type", js.undefined)
+      inline def set__typeUndefined: Self = StObject.set(x, "__type", js.undefined)
     }
   }
 }

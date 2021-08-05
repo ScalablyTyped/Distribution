@@ -17,8 +17,7 @@ trait AddTemplate extends StObject {
 }
 object AddTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTemplate: (String, String) => Unit,
     createJavaScriptEvaluatorBlock: String => String,
     renderTemplateSource: (Object, KnockoutBindingContext, Object) => js.Array[Node]
@@ -27,16 +26,12 @@ object AddTemplate {
     __obj.asInstanceOf[AddTemplate]
   }
   
-  @scala.inline
-  implicit class AddTemplateMutableBuilder[Self <: AddTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: AddTemplate](x: Self) {
     
-    @scala.inline
-    def setAddTemplate(value: (String, String) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
+    inline def setAddTemplate(value: (String, String) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateJavaScriptEvaluatorBlock(value: String => String): Self = StObject.set(x, "createJavaScriptEvaluatorBlock", js.Any.fromFunction1(value))
+    inline def setCreateJavaScriptEvaluatorBlock(value: String => String): Self = StObject.set(x, "createJavaScriptEvaluatorBlock", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderTemplateSource(value: (Object, KnockoutBindingContext, Object) => js.Array[Node]): Self = StObject.set(x, "renderTemplateSource", js.Any.fromFunction3(value))
+    inline def setRenderTemplateSource(value: (Object, KnockoutBindingContext, Object) => js.Array[Node]): Self = StObject.set(x, "renderTemplateSource", js.Any.fromFunction3(value))
   }
 }

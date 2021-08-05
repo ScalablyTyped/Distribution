@@ -44,8 +44,7 @@ trait WaterMarkOptions2 extends StObject {
 }
 object WaterMarkOptions2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dissolve: Double,
     dx: Double,
     dy: Double,
@@ -59,34 +58,24 @@ object WaterMarkOptions2 {
     __obj.asInstanceOf[WaterMarkOptions2]
   }
   
-  @scala.inline
-  implicit class WaterMarkOptions2MutableBuilder[Self <: WaterMarkOptions2] (val x: Self) extends AnyVal {
+  extension [Self <: WaterMarkOptions2](x: Self) {
     
-    @scala.inline
-    def setDissolve(value: Double): Self = StObject.set(x, "dissolve", value.asInstanceOf[js.Any])
+    inline def setDissolve(value: Double): Self = StObject.set(x, "dissolve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsize(value: Double): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
+    inline def setFontsize(value: Double): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravity(value: NorthWest | North | NorthEast | West | Center | East | SouthWest | South | SouthEast): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: NorthWest | North | NorthEast | West | Center | East | SouthWest | South | SouthEast): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: `2`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: `2`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

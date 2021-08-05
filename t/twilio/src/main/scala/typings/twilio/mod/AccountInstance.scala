@@ -65,8 +65,7 @@ trait AccountInstance
 }
 object AccountInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addresses: AddressResource,
     applications: ApplicationResource,
     authorizedConnectApps: AuthorizedConnectAppResource,
@@ -95,70 +94,48 @@ object AccountInstance {
     __obj.asInstanceOf[AccountInstance]
   }
   
-  @scala.inline
-  implicit class AccountInstanceMutableBuilder[Self <: AccountInstance] (val x: Self) extends AnyVal {
+  extension [Self <: AccountInstance](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: AddressResource): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: AddressResource): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplications(value: ApplicationResource): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: ApplicationResource): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedConnectApps(value: AuthorizedConnectAppResource): Self = StObject.set(x, "authorizedConnectApps", value.asInstanceOf[js.Any])
+    inline def setAuthorizedConnectApps(value: AuthorizedConnectAppResource): Self = StObject.set(x, "authorizedConnectApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailablePhoneNumbers(value: /* resourceSid */ String => AvailablePhoneNumberInstance): Self = StObject.set(x, "availablePhoneNumbers", js.Any.fromFunction1(value))
+    inline def setAvailablePhoneNumbers(value: /* resourceSid */ String => AvailablePhoneNumberInstance): Self = StObject.set(x, "availablePhoneNumbers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalls(value: CallResource): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: CallResource): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferences(value: ConferenceResource): Self = StObject.set(x, "conferences", value.asInstanceOf[js.Any])
+    inline def setConferences(value: ConferenceResource): Self = StObject.set(x, "conferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectApps(value: ConnectAppResource): Self = StObject.set(x, "connectApps", value.asInstanceOf[js.Any])
+    inline def setConnectApps(value: ConnectAppResource): Self = StObject.set(x, "connectApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomingPhoneNumbers(value: IncomingPhoneNumberResource): Self = StObject.set(x, "incomingPhoneNumbers", value.asInstanceOf[js.Any])
+    inline def setIncomingPhoneNumbers(value: IncomingPhoneNumberResource): Self = StObject.set(x, "incomingPhoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: KeyResource): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: KeyResource): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: MessageResource): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: MessageResource): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: NotificationResource): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: NotificationResource): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoingCallerIds(value: OutgoingCallerIdResource): Self = StObject.set(x, "outgoingCallerIds", value.asInstanceOf[js.Any])
+    inline def setOutgoingCallerIds(value: OutgoingCallerIdResource): Self = StObject.set(x, "outgoingCallerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPut(value: RestMethod): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RestMethod): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueues(value: QueueResource): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+    inline def setQueues(value: QueueResource): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordings(value: RecordingResource): Self = StObject.set(x, "recordings", value.asInstanceOf[js.Any])
+    inline def setRecordings(value: RecordingResource): Self = StObject.set(x, "recordings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSip(value: SIPIntermediary): Self = StObject.set(x, "sip", value.asInstanceOf[js.Any])
+    inline def setSip(value: SIPIntermediary): Self = StObject.set(x, "sip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSms(value: SMSIntermediary): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
+    inline def setSms(value: SMSIntermediary): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokens(value: TokenResource): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: TokenResource): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptions(value: TranscriptionResource): Self = StObject.set(x, "transcriptions", value.asInstanceOf[js.Any])
+    inline def setTranscriptions(value: TranscriptionResource): Self = StObject.set(x, "transcriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage(value: UsageIntermediary): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: UsageIntermediary): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait MaxWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
 }
 object MaxWidthProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MaxWidthProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MaxWidthProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxWidthProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class MaxWidthPropsMutableBuilder[Self <: MaxWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MaxWidthProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: MaxWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MaxWidthProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setMaxWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
+    inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMaxWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+    inline def setMaxWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TwoInitialCapsException")
 @js.native
-class TwoInitialCapsException protected ()
+/* private */ class TwoInitialCapsException ()
   extends StObject
      with typings.activexWord.Word.TwoInitialCapsException {
   
@@ -28,7 +28,7 @@ class TwoInitialCapsException protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TwoInitialCapsException_typekey")
   var WordDotTwoInitialCapsException_typekey: typings.activexWord.Word.TwoInitialCapsException = js.native
 }

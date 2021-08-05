@@ -12,25 +12,19 @@ trait PrintOptions extends StObject {
 }
 object PrintOptions {
   
-  @scala.inline
-  def apply(): PrintOptions = {
+  inline def apply(): PrintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintOptions]
   }
   
-  @scala.inline
-  implicit class PrintOptionsMutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrintOptions](x: Self) {
     
-    @scala.inline
-    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

@@ -33,76 +33,53 @@ trait Tables extends StObject {
 }
 object Tables {
   
-  @scala.inline
-  def apply(): Tables = {
+  inline def apply(): Tables = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tables]
   }
   
-  @scala.inline
-  implicit class TablesMutableBuilder[Self <: Tables] (val x: Self) extends AnyVal {
+  extension [Self <: Tables](x: Self) {
     
-    @scala.inline
-    def setBody_cells(value: js.Array[BodyCells]): Self = StObject.set(x, "body_cells", value.asInstanceOf[js.Any])
+    inline def setBody_cells(value: js.Array[BodyCells]): Self = StObject.set(x, "body_cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody_cellsUndefined: Self = StObject.set(x, "body_cells", js.undefined)
+    inline def setBody_cellsUndefined: Self = StObject.set(x, "body_cells", js.undefined)
     
-    @scala.inline
-    def setBody_cellsVarargs(value: BodyCells*): Self = StObject.set(x, "body_cells", js.Array(value :_*))
+    inline def setBody_cellsVarargs(value: BodyCells*): Self = StObject.set(x, "body_cells", js.Array(value :_*))
     
-    @scala.inline
-    def setColumn_headers(value: js.Array[ColumnHeaders]): Self = StObject.set(x, "column_headers", value.asInstanceOf[js.Any])
+    inline def setColumn_headers(value: js.Array[ColumnHeaders]): Self = StObject.set(x, "column_headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn_headersUndefined: Self = StObject.set(x, "column_headers", js.undefined)
+    inline def setColumn_headersUndefined: Self = StObject.set(x, "column_headers", js.undefined)
     
-    @scala.inline
-    def setColumn_headersVarargs(value: ColumnHeaders*): Self = StObject.set(x, "column_headers", js.Array(value :_*))
+    inline def setColumn_headersVarargs(value: ColumnHeaders*): Self = StObject.set(x, "column_headers", js.Array(value :_*))
     
-    @scala.inline
-    def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = StObject.set(x, "key_value_pairs", value.asInstanceOf[js.Any])
+    inline def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = StObject.set(x, "key_value_pairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_value_pairsUndefined: Self = StObject.set(x, "key_value_pairs", js.undefined)
+    inline def setKey_value_pairsUndefined: Self = StObject.set(x, "key_value_pairs", js.undefined)
     
-    @scala.inline
-    def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value :_*))
+    inline def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRow_headers(value: js.Array[RowHeaders]): Self = StObject.set(x, "row_headers", value.asInstanceOf[js.Any])
+    inline def setRow_headers(value: js.Array[RowHeaders]): Self = StObject.set(x, "row_headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow_headersUndefined: Self = StObject.set(x, "row_headers", js.undefined)
+    inline def setRow_headersUndefined: Self = StObject.set(x, "row_headers", js.undefined)
     
-    @scala.inline
-    def setRow_headersVarargs(value: RowHeaders*): Self = StObject.set(x, "row_headers", js.Array(value :_*))
+    inline def setRow_headersVarargs(value: RowHeaders*): Self = StObject.set(x, "row_headers", js.Array(value :_*))
     
-    @scala.inline
-    def setSection_title(value: SectionTitle): Self = StObject.set(x, "section_title", value.asInstanceOf[js.Any])
+    inline def setSection_title(value: SectionTitle): Self = StObject.set(x, "section_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection_titleUndefined: Self = StObject.set(x, "section_title", js.undefined)
+    inline def setSection_titleUndefined: Self = StObject.set(x, "section_title", js.undefined)
     
-    @scala.inline
-    def setTable_headers(value: js.Array[TableHeaders]): Self = StObject.set(x, "table_headers", value.asInstanceOf[js.Any])
+    inline def setTable_headers(value: js.Array[TableHeaders]): Self = StObject.set(x, "table_headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable_headersUndefined: Self = StObject.set(x, "table_headers", js.undefined)
+    inline def setTable_headersUndefined: Self = StObject.set(x, "table_headers", js.undefined)
     
-    @scala.inline
-    def setTable_headersVarargs(value: TableHeaders*): Self = StObject.set(x, "table_headers", js.Array(value :_*))
+    inline def setTable_headersVarargs(value: TableHeaders*): Self = StObject.set(x, "table_headers", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

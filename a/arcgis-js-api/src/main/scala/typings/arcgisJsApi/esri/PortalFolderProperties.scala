@@ -36,37 +36,27 @@ trait PortalFolderProperties extends StObject {
 }
 object PortalFolderProperties {
   
-  @scala.inline
-  def apply(): PortalFolderProperties = {
+  inline def apply(): PortalFolderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortalFolderProperties]
   }
   
-  @scala.inline
-  implicit class PortalFolderPropertiesMutableBuilder[Self <: PortalFolderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PortalFolderProperties](x: Self) {
     
-    @scala.inline
-    def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    inline def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+    inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

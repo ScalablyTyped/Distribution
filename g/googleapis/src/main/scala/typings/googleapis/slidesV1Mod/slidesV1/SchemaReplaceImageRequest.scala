@@ -32,31 +32,23 @@ trait SchemaReplaceImageRequest extends StObject {
 }
 object SchemaReplaceImageRequest {
   
-  @scala.inline
-  def apply(): SchemaReplaceImageRequest = {
+  inline def apply(): SchemaReplaceImageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplaceImageRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReplaceImageRequestMutableBuilder[Self <: SchemaReplaceImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplaceImageRequest](x: Self) {
     
-    @scala.inline
-    def setImageObjectId(value: String): Self = StObject.set(x, "imageObjectId", value.asInstanceOf[js.Any])
+    inline def setImageObjectId(value: String): Self = StObject.set(x, "imageObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageObjectIdUndefined: Self = StObject.set(x, "imageObjectId", js.undefined)
+    inline def setImageObjectIdUndefined: Self = StObject.set(x, "imageObjectId", js.undefined)
     
-    @scala.inline
-    def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
+    inline def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
+    inline def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

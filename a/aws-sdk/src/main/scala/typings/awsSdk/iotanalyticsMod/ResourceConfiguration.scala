@@ -18,19 +18,15 @@ trait ResourceConfiguration extends StObject {
 }
 object ResourceConfiguration {
   
-  @scala.inline
-  def apply(computeType: ComputeType, volumeSizeInGB: VolumeSizeInGB): ResourceConfiguration = {
+  inline def apply(computeType: ComputeType, volumeSizeInGB: VolumeSizeInGB): ResourceConfiguration = {
     val __obj = js.Dynamic.literal(computeType = computeType.asInstanceOf[js.Any], volumeSizeInGB = volumeSizeInGB.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceConfiguration]
   }
   
-  @scala.inline
-  implicit class ResourceConfigurationMutableBuilder[Self <: ResourceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceConfiguration](x: Self) {
     
-    @scala.inline
-    def setComputeType(value: ComputeType): Self = StObject.set(x, "computeType", value.asInstanceOf[js.Any])
+    inline def setComputeType(value: ComputeType): Self = StObject.set(x, "computeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeInGB(value: VolumeSizeInGB): Self = StObject.set(x, "volumeSizeInGB", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeInGB(value: VolumeSizeInGB): Self = StObject.set(x, "volumeSizeInGB", value.asInstanceOf[js.Any])
   }
 }

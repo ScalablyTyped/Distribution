@@ -15,6 +15,5 @@ object isInMod {
     *
     * @param values - Allowed values.
     */
-  @scala.inline
-  def default(str: String, values: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(str: String, values: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

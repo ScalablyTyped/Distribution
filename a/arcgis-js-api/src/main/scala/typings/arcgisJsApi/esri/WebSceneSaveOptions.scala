@@ -19,8 +19,7 @@ trait WebSceneSaveOptions
 }
 object WebSceneSaveOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object WebSceneSaveOptions {
     __obj.asInstanceOf[WebSceneSaveOptions]
   }
   
-  @scala.inline
-  implicit class WebSceneSaveOptionsMutableBuilder[Self <: WebSceneSaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebSceneSaveOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
+    inline def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
   }
 }

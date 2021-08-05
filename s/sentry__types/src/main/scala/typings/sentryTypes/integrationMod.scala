@@ -27,8 +27,7 @@ object integrationMod {
   }
   object Integration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       setupOnce: (js.Function1[/* callback */ EventProcessor, Unit], js.Function0[Hub]) => Unit
     ): Integration = {
@@ -36,14 +35,11 @@ object integrationMod {
       __obj.asInstanceOf[Integration]
     }
     
-    @scala.inline
-    implicit class IntegrationMutableBuilder[Self <: Integration] (val x: Self) extends AnyVal {
+    extension [Self <: Integration](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupOnce(value: (js.Function1[/* callback */ EventProcessor, Unit], js.Function0[Hub]) => Unit): Self = StObject.set(x, "setupOnce", js.Any.fromFunction2(value))
+      inline def setSetupOnce(value: (js.Function1[/* callback */ EventProcessor, Unit], js.Function0[Hub]) => Unit): Self = StObject.set(x, "setupOnce", js.Any.fromFunction2(value))
     }
   }
   

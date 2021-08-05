@@ -16,28 +16,21 @@ trait PluginDevice extends StObject {
 }
 object PluginDevice {
   
-  @scala.inline
-  def apply(Description: String, Name: String, Path: String, Settable: js.Array[String]): PluginDevice = {
+  inline def apply(Description: String, Name: String, Path: String, Settable: js.Array[String]): PluginDevice = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], Settable = Settable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginDevice]
   }
   
-  @scala.inline
-  implicit class PluginDeviceMutableBuilder[Self <: PluginDevice] (val x: Self) extends AnyVal {
+  extension [Self <: PluginDevice](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettable(value: js.Array[String]): Self = StObject.set(x, "Settable", value.asInstanceOf[js.Any])
+    inline def setSettable(value: js.Array[String]): Self = StObject.set(x, "Settable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettableVarargs(value: String*): Self = StObject.set(x, "Settable", js.Array(value :_*))
+    inline def setSettableVarargs(value: String*): Self = StObject.set(x, "Settable", js.Array(value :_*))
   }
 }

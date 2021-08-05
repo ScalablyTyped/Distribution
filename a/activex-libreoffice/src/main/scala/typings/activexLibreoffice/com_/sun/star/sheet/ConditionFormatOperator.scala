@@ -61,79 +61,54 @@ object ConditionFormatOperator {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ABOVE_AVERAGE: `14` = 14.asInstanceOf[`14`]
+    inline def ABOVE_AVERAGE: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def ABOVE_EQUAL_AVERAGE: `16` = 16.asInstanceOf[`16`]
+    inline def ABOVE_EQUAL_AVERAGE: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def BEGINS_WITH: `20` = 20.asInstanceOf[`20`]
+    inline def BEGINS_WITH: `20` = 20.asInstanceOf[`20`]
     
-    @scala.inline
-    def BELOW_AVERAGE: `15` = 15.asInstanceOf[`15`]
+    inline def BELOW_AVERAGE: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def BELOW_EQUAL_AVERAGE: `17` = 17.asInstanceOf[`17`]
+    inline def BELOW_EQUAL_AVERAGE: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def BETWEEN: `6` = 6.asInstanceOf[`6`]
+    inline def BETWEEN: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def BOTTOM_N_ELEMENTS: `11` = 11.asInstanceOf[`11`]
+    inline def BOTTOM_N_ELEMENTS: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def BOTTOM_N_PERCENT: `13` = 13.asInstanceOf[`13`]
+    inline def BOTTOM_N_PERCENT: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def CONTAINS: `22` = 22.asInstanceOf[`22`]
+    inline def CONTAINS: `22` = 22.asInstanceOf[`22`]
     
-    @scala.inline
-    def DUPLICATE: `8` = 8.asInstanceOf[`8`]
+    inline def DUPLICATE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def ENDS_WITH: `21` = 21.asInstanceOf[`21`]
+    inline def ENDS_WITH: `21` = 21.asInstanceOf[`21`]
     
-    @scala.inline
-    def EQUAL: `0` = 0.asInstanceOf[`0`]
+    inline def EQUAL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def ERROR: `18` = 18.asInstanceOf[`18`]
+    inline def ERROR: `18` = 18.asInstanceOf[`18`]
     
-    @scala.inline
-    def EXPRESSION: `24` = 24.asInstanceOf[`24`]
+    inline def EXPRESSION: `24` = 24.asInstanceOf[`24`]
     
-    @scala.inline
-    def GREATER: `2` = 2.asInstanceOf[`2`]
+    inline def GREATER: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def GREATER_EQUAL: `4` = 4.asInstanceOf[`4`]
+    inline def GREATER_EQUAL: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def LESS: `1` = 1.asInstanceOf[`1`]
+    inline def LESS: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LESS_EQUAL: `3` = 3.asInstanceOf[`3`]
+    inline def LESS_EQUAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NOT_BETWEEN: `7` = 7.asInstanceOf[`7`]
+    inline def NOT_BETWEEN: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def NOT_CONTAINS: `23` = 23.asInstanceOf[`23`]
+    inline def NOT_CONTAINS: `23` = 23.asInstanceOf[`23`]
     
-    @scala.inline
-    def NOT_EQUAL: `5` = 5.asInstanceOf[`5`]
+    inline def NOT_EQUAL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def NO_ERROR: `19` = 19.asInstanceOf[`19`]
+    inline def NO_ERROR: `19` = 19.asInstanceOf[`19`]
     
-    @scala.inline
-    def TOP_N_ELEMENTS: `10` = 10.asInstanceOf[`10`]
+    inline def TOP_N_ELEMENTS: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def TOP_N_PERCENT: `12` = 12.asInstanceOf[`12`]
+    inline def TOP_N_PERCENT: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def UNIQUE: `9` = 9.asInstanceOf[`9`]
+    inline def UNIQUE: `9` = 9.asInstanceOf[`9`]
   }
 }

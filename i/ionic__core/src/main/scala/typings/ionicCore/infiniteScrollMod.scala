@@ -17,7 +17,7 @@ object infiniteScrollMod {
     extends StObject
        with ComponentInterface {
     
-    var canStart: js.Any = js.native
+    /* private */ var canStart: js.Any = js.native
     
     /**
       * Call `complete()` within the `ionInfinite` output event handler when
@@ -34,7 +34,7 @@ object infiniteScrollMod {
     @JSName("connectedCallback")
     def connectedCallback_MInfiniteScroll(): js.Promise[Unit] = js.native
     
-    var didFire: js.Any = js.native
+    /* private */ var didFire: js.Any = js.native
     
     /**
       * If `true`, the infinite scroll will be hidden and scroll event listeners
@@ -54,7 +54,7 @@ object infiniteScrollMod {
     
     var el: HTMLElement = js.native
     
-    var enableScrollEvents: js.Any = js.native
+    /* private */ var enableScrollEvents: js.Any = js.native
     
     /**
       * Emitted when the scroll reaches
@@ -64,11 +64,11 @@ object infiniteScrollMod {
       */
     var ionInfinite: EventEmitter[Unit] = js.native
     
-    var isBusy: js.Any = js.native
+    /* private */ var isBusy: js.Any = js.native
     
     var isLoading: Boolean = js.native
     
-    var onScroll: js.Any = js.native
+    /* private */ var onScroll: js.Any = js.native
     
     /**
       * The position of the infinite scroll element.
@@ -79,11 +79,11 @@ object infiniteScrollMod {
     @JSName("render")
     def render_MInfiniteScroll(): js.Any = js.native
     
-    var scrollEl: js.Any = js.native
+    /* private */ var scrollEl: js.Any = js.native
     
-    var thrPc: js.Any = js.native
+    /* private */ var thrPc: js.Any = js.native
     
-    var thrPx: js.Any = js.native
+    /* private */ var thrPx: js.Any = js.native
     
     /**
       * The threshold distance from the bottom

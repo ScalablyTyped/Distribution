@@ -12,25 +12,19 @@ trait IFieldOptions extends StObject {
 }
 object IFieldOptions {
   
-  @scala.inline
-  def apply(): IFieldOptions = {
+  inline def apply(): IFieldOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldOptions]
   }
   
-  @scala.inline
-  implicit class IFieldOptionsMutableBuilder[Self <: IFieldOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldOptions](x: Self) {
     
-    @scala.inline
-    def setJstype(value: IFieldOptionsJSType): Self = StObject.set(x, "jstype", value.asInstanceOf[js.Any])
+    inline def setJstype(value: IFieldOptionsJSType): Self = StObject.set(x, "jstype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJstypeUndefined: Self = StObject.set(x, "jstype", js.undefined)
+    inline def setJstypeUndefined: Self = StObject.set(x, "jstype", js.undefined)
     
-    @scala.inline
-    def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
+    inline def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
+    inline def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
   }
 }

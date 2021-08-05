@@ -14,10 +14,10 @@ object documentCardPreviewBaseMod {
     extends Component[IDocumentCardPreviewProps, js.Any, js.Any] {
     def this(props: IDocumentCardPreviewProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _renderPreviewImage: js.Any = js.native
+    /* private */ var _renderPreviewImage: js.Any = js.native
     
-    var _renderPreviewList: js.Any = js.native
+    /* private */ var _renderPreviewList: js.Any = js.native
   }
 }

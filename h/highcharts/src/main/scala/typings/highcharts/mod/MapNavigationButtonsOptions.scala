@@ -24,25 +24,19 @@ trait MapNavigationButtonsOptions extends StObject {
 }
 object MapNavigationButtonsOptions {
   
-  @scala.inline
-  def apply(): MapNavigationButtonsOptions = {
+  inline def apply(): MapNavigationButtonsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapNavigationButtonsOptions]
   }
   
-  @scala.inline
-  implicit class MapNavigationButtonsOptionsMutableBuilder[Self <: MapNavigationButtonsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapNavigationButtonsOptions](x: Self) {
     
-    @scala.inline
-    def setZoomIn(value: MapNavigationButtonsZoomInOptions): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+    inline def setZoomIn(value: MapNavigationButtonsZoomInOptions): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
+    inline def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
     
-    @scala.inline
-    def setZoomOut(value: MapNavigationButtonsZoomOutOptions): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+    inline def setZoomOut(value: MapNavigationButtonsZoomOutOptions): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
+    inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormatParam extends StObject
 object FormatParam {
   
-  @scala.inline
-  def html: typings.tryghostContentApi.tryghostContentApiStrings.html = "html".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.html]
+  inline def html: typings.tryghostContentApi.tryghostContentApiStrings.html = "html".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.html]
   
-  @scala.inline
-  def plaintext: typings.tryghostContentApi.tryghostContentApiStrings.plaintext = "plaintext".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.plaintext]
+  inline def plaintext: typings.tryghostContentApi.tryghostContentApiStrings.plaintext = "plaintext".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.plaintext]
 }

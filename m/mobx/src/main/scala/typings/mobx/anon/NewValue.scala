@@ -21,27 +21,21 @@ trait NewValue[K, V]
 }
 object NewValue {
   
-  @scala.inline
-  def apply[K, V](name: K, newValue: V, `object`: ObservableMap[K, V]): NewValue[K, V] = {
+  inline def apply[K, V](name: K, newValue: V, `object`: ObservableMap[K, V]): NewValue[K, V] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("add")
     __obj.asInstanceOf[NewValue[K, V]]
   }
   
-  @scala.inline
-  implicit class NewValueMutableBuilder[Self <: NewValue[?, ?], K, V] (val x: Self & (NewValue[K, V])) extends AnyVal {
+  extension [Self <: NewValue[?, ?], K, V](x: Self & (NewValue[K, V])) {
     
-    @scala.inline
-    def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: V): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: V): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: ObservableMap[K, V]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ObservableMap[K, V]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

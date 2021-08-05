@@ -32,25 +32,19 @@ trait WorksheetSearchCriteria extends StObject {
 }
 object WorksheetSearchCriteria {
   
-  @scala.inline
-  def apply(): WorksheetSearchCriteria = {
+  inline def apply(): WorksheetSearchCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetSearchCriteria]
   }
   
-  @scala.inline
-  implicit class WorksheetSearchCriteriaMutableBuilder[Self <: WorksheetSearchCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetSearchCriteria](x: Self) {
     
-    @scala.inline
-    def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
+    inline def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteMatchUndefined: Self = StObject.set(x, "completeMatch", js.undefined)
+    inline def setCompleteMatchUndefined: Self = StObject.set(x, "completeMatch", js.undefined)
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
   }
 }

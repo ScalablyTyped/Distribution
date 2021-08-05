@@ -13,16 +13,13 @@ trait SetPlaybackRateRequest extends StObject {
 }
 object SetPlaybackRateRequest {
   
-  @scala.inline
-  def apply(playbackRate: Double): SetPlaybackRateRequest = {
+  inline def apply(playbackRate: Double): SetPlaybackRateRequest = {
     val __obj = js.Dynamic.literal(playbackRate = playbackRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPlaybackRateRequest]
   }
   
-  @scala.inline
-  implicit class SetPlaybackRateRequestMutableBuilder[Self <: SetPlaybackRateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetPlaybackRateRequest](x: Self) {
     
-    @scala.inline
-    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
   }
 }

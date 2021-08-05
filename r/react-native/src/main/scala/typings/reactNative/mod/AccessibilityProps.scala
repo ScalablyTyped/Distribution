@@ -54,64 +54,45 @@ trait AccessibilityProps
 }
 object AccessibilityProps {
   
-  @scala.inline
-  def apply(): AccessibilityProps = {
+  inline def apply(): AccessibilityProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilityProps]
   }
   
-  @scala.inline
-  implicit class AccessibilityPropsMutableBuilder[Self <: AccessibilityProps] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityProps](x: Self) {
     
-    @scala.inline
-    def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
+    inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
+    inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    @scala.inline
-    def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
     
-    @scala.inline
-    def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
+    inline def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
+    inline def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
     
-    @scala.inline
-    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    @scala.inline
-    def setAccessibilityRole(value: AccessibilityRole): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
+    inline def setAccessibilityRole(value: AccessibilityRole): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
+    inline def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
     
-    @scala.inline
-    def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
+    inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
+    inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
     
-    @scala.inline
-    def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
+    inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
+    inline def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
     
-    @scala.inline
-    def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
+    inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
+    inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    @scala.inline
-    def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
+    inline def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
+    inline def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
   }
 }

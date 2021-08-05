@@ -23,19 +23,15 @@ trait IEntityDroppedItemEventData extends StObject {
 }
 object IEntityDroppedItemEventData {
   
-  @scala.inline
-  def apply(entity: IEntity, item_stack: IItemStack): IEntityDroppedItemEventData = {
+  inline def apply(entity: IEntity, item_stack: IItemStack): IEntityDroppedItemEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], item_stack = item_stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityDroppedItemEventData]
   }
   
-  @scala.inline
-  implicit class IEntityDroppedItemEventDataMutableBuilder[Self <: IEntityDroppedItemEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityDroppedItemEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
+    inline def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
   }
 }

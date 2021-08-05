@@ -35,8 +35,7 @@ trait XRowSetApproveListener
 }
 object XRowSetApproveListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveCursorMove: EventObject => Boolean,
     approveRowChange: RowChangeEvent => Boolean,
@@ -49,16 +48,12 @@ object XRowSetApproveListener {
     __obj.asInstanceOf[XRowSetApproveListener]
   }
   
-  @scala.inline
-  implicit class XRowSetApproveListenerMutableBuilder[Self <: XRowSetApproveListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRowSetApproveListener](x: Self) {
     
-    @scala.inline
-    def setApproveCursorMove(value: EventObject => Boolean): Self = StObject.set(x, "approveCursorMove", js.Any.fromFunction1(value))
+    inline def setApproveCursorMove(value: EventObject => Boolean): Self = StObject.set(x, "approveCursorMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApproveRowChange(value: RowChangeEvent => Boolean): Self = StObject.set(x, "approveRowChange", js.Any.fromFunction1(value))
+    inline def setApproveRowChange(value: RowChangeEvent => Boolean): Self = StObject.set(x, "approveRowChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApproveRowSetChange(value: EventObject => Boolean): Self = StObject.set(x, "approveRowSetChange", js.Any.fromFunction1(value))
+    inline def setApproveRowSetChange(value: EventObject => Boolean): Self = StObject.set(x, "approveRowSetChange", js.Any.fromFunction1(value))
   }
 }

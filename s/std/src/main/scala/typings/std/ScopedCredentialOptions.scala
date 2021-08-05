@@ -16,40 +16,29 @@ trait ScopedCredentialOptions extends StObject {
 }
 object ScopedCredentialOptions {
   
-  @scala.inline
-  def apply(): ScopedCredentialOptions = {
+  inline def apply(): ScopedCredentialOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScopedCredentialOptions]
   }
   
-  @scala.inline
-  implicit class ScopedCredentialOptionsMutableBuilder[Self <: ScopedCredentialOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScopedCredentialOptions](x: Self) {
     
-    @scala.inline
-    def setExcludeList(value: js.Array[ScopedCredentialDescriptor]): Self = StObject.set(x, "excludeList", value.asInstanceOf[js.Any])
+    inline def setExcludeList(value: js.Array[ScopedCredentialDescriptor]): Self = StObject.set(x, "excludeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeListUndefined: Self = StObject.set(x, "excludeList", js.undefined)
+    inline def setExcludeListUndefined: Self = StObject.set(x, "excludeList", js.undefined)
     
-    @scala.inline
-    def setExcludeListVarargs(value: ScopedCredentialDescriptor*): Self = StObject.set(x, "excludeList", js.Array(value :_*))
+    inline def setExcludeListVarargs(value: ScopedCredentialDescriptor*): Self = StObject.set(x, "excludeList", js.Array(value :_*))
     
-    @scala.inline
-    def setExtensions(value: WebAuthnExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: WebAuthnExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setRpId(value: java.lang.String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
+    inline def setRpId(value: java.lang.String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRpIdUndefined: Self = StObject.set(x, "rpId", js.undefined)
+    inline def setRpIdUndefined: Self = StObject.set(x, "rpId", js.undefined)
     
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+    inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

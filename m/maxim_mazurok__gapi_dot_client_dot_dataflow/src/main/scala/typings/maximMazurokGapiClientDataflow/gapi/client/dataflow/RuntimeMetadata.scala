@@ -14,28 +14,21 @@ trait RuntimeMetadata extends StObject {
 }
 object RuntimeMetadata {
   
-  @scala.inline
-  def apply(): RuntimeMetadata = {
+  inline def apply(): RuntimeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuntimeMetadata]
   }
   
-  @scala.inline
-  implicit class RuntimeMetadataMutableBuilder[Self <: RuntimeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeMetadata](x: Self) {
     
-    @scala.inline
-    def setParameters(value: js.Array[ParameterMetadata]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[ParameterMetadata]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setSdkInfo(value: SDKInfo): Self = StObject.set(x, "sdkInfo", value.asInstanceOf[js.Any])
+    inline def setSdkInfo(value: SDKInfo): Self = StObject.set(x, "sdkInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkInfoUndefined: Self = StObject.set(x, "sdkInfo", js.undefined)
+    inline def setSdkInfoUndefined: Self = StObject.set(x, "sdkInfo", js.undefined)
   }
 }

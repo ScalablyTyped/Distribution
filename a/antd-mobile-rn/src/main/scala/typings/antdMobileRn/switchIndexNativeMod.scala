@@ -14,8 +14,7 @@ object switchIndexNativeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: AntmSwitchProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: AntmSwitchProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait AntmSwitchProps
     extends StObject
@@ -25,23 +24,18 @@ object switchIndexNativeMod {
   }
   object AntmSwitchProps {
     
-    @scala.inline
-    def apply(): AntmSwitchProps = {
+    inline def apply(): AntmSwitchProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AntmSwitchProps]
     }
     
-    @scala.inline
-    implicit class AntmSwitchPropsMutableBuilder[Self <: AntmSwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: AntmSwitchProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

@@ -187,8 +187,7 @@ object keyChainMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultKeyParams(): KeyParams = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKeyParams")().asInstanceOf[KeyParams]
+    inline def getDefaultKeyParams(): KeyParams = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKeyParams")().asInstanceOf[KeyParams]
   }
   
   @JSImport("ndn-js/key-chain", "KeyParams")

@@ -58,62 +58,44 @@ trait NamingSystemUniqueId
 }
 object NamingSystemUniqueId {
   
-  @scala.inline
-  def apply(`type`: code, value: String): NamingSystemUniqueId = {
+  inline def apply(`type`: code, value: String): NamingSystemUniqueId = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamingSystemUniqueId]
   }
   
-  @scala.inline
-  implicit class NamingSystemUniqueIdMutableBuilder[Self <: NamingSystemUniqueId] (val x: Self) extends AnyVal {
+  extension [Self <: NamingSystemUniqueId](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
+    inline def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
+    inline def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
+    inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
+    inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
-    @scala.inline
-    def set_preferred(value: Element): Self = StObject.set(x, "_preferred", value.asInstanceOf[js.Any])
+    inline def set_preferred(value: Element): Self = StObject.set(x, "_preferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_preferredUndefined: Self = StObject.set(x, "_preferred", js.undefined)
+    inline def set_preferredUndefined: Self = StObject.set(x, "_preferred", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

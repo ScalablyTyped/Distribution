@@ -8,6 +8,5 @@ object saslPlainStrings {
   
   @js.native
   sealed trait PLAIN extends StObject
-  @scala.inline
-  def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
+  inline def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
 }

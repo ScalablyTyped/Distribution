@@ -14,11 +14,11 @@ object shimmerBaseMod {
     extends Component[IShimmerProps, IShimmerState, js.Any] {
     def this(props: IShimmerProps) = this()
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _lastTimeoutId: js.Any = js.native
+    /* private */ var _lastTimeoutId: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MShimmerBase(prevProps: IShimmerProps): Unit = js.native
@@ -36,8 +36,7 @@ object shimmerBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Shimmer/Shimmer.base", "ShimmerBase.defaultProps")
     @js.native
     def defaultProps: IShimmerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IShimmerState extends StObject {
@@ -49,20 +48,16 @@ object shimmerBaseMod {
   }
   object IShimmerState {
     
-    @scala.inline
-    def apply(): IShimmerState = {
+    inline def apply(): IShimmerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerState]
     }
     
-    @scala.inline
-    implicit class IShimmerStateMutableBuilder[Self <: IShimmerState] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerState](x: Self) {
       
-      @scala.inline
-      def setContentLoaded(value: Boolean): Self = StObject.set(x, "contentLoaded", value.asInstanceOf[js.Any])
+      inline def setContentLoaded(value: Boolean): Self = StObject.set(x, "contentLoaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLoadedUndefined: Self = StObject.set(x, "contentLoaded", js.undefined)
+      inline def setContentLoadedUndefined: Self = StObject.set(x, "contentLoaded", js.undefined)
     }
   }
 }

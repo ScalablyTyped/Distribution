@@ -12,25 +12,19 @@ trait TransferEffect extends StObject {
 }
 object TransferEffect {
   
-  @scala.inline
-  def apply(): TransferEffect = {
+  inline def apply(): TransferEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferEffect]
   }
   
-  @scala.inline
-  implicit class TransferEffectMutableBuilder[Self <: TransferEffect] (val x: Self) extends AnyVal {
+  extension [Self <: TransferEffect](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

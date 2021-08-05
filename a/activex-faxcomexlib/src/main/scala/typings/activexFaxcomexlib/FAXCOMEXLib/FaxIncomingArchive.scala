@@ -14,7 +14,7 @@ trait FaxIncomingArchive extends StObject {
   /** Location of the archive folder on the server */
   var ArchiveFolder: String = js.native
   
-  @JSName("FAXCOMEXLib.FaxIncomingArchive_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxIncomingArchive_typekey")
   var FAXCOMEXLibDotFaxIncomingArchive_typekey: FaxIncomingArchive = js.native
   
   /** Get archived message by its ID */

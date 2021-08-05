@@ -23,8 +23,7 @@ trait WiFiDirectServiceSessionRequest extends StObject {
 }
 object WiFiDirectServiceSessionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     deviceInformation: DeviceInformation,
     provisioningInfo: WiFiDirectServiceProvisioningInfo,
@@ -34,19 +33,14 @@ object WiFiDirectServiceSessionRequest {
     __obj.asInstanceOf[WiFiDirectServiceSessionRequest]
   }
   
-  @scala.inline
-  implicit class WiFiDirectServiceSessionRequestMutableBuilder[Self <: WiFiDirectServiceSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectServiceSessionRequest](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
+    inline def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningInfo(value: WiFiDirectServiceProvisioningInfo): Self = StObject.set(x, "provisioningInfo", value.asInstanceOf[js.Any])
+    inline def setProvisioningInfo(value: WiFiDirectServiceProvisioningInfo): Self = StObject.set(x, "provisioningInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionInfo(value: IBuffer): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
+    inline def setSessionInfo(value: IBuffer): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
   }
 }

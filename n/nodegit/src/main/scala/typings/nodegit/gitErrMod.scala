@@ -17,16 +17,12 @@ object gitErrMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def errClear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errClear")().asInstanceOf[Unit]
+    inline def errClear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errClear")().asInstanceOf[Unit]
     
-    @scala.inline
-    def errLast(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("errLast")().asInstanceOf[Error]
+    inline def errLast(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("errLast")().asInstanceOf[Error]
     
-    @scala.inline
-    def errSetOom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errSetOom")().asInstanceOf[Unit]
+    inline def errSetOom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errSetOom")().asInstanceOf[Unit]
     
-    @scala.inline
-    def errSetString(errorClass: Double, string: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errSetString")(errorClass.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def errSetString(errorClass: Double, string: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errSetString")(errorClass.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

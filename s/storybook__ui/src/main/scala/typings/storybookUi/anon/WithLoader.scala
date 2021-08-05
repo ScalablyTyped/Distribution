@@ -12,19 +12,15 @@ trait WithLoader extends StObject {
 }
 object WithLoader {
   
-  @scala.inline
-  def apply(id: String, withLoader: Boolean): WithLoader = {
+  inline def apply(id: String, withLoader: Boolean): WithLoader = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], withLoader = withLoader.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithLoader]
   }
   
-  @scala.inline
-  implicit class WithLoaderMutableBuilder[Self <: WithLoader] (val x: Self) extends AnyVal {
+  extension [Self <: WithLoader](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithLoader(value: Boolean): Self = StObject.set(x, "withLoader", value.asInstanceOf[js.Any])
+    inline def setWithLoader(value: Boolean): Self = StObject.set(x, "withLoader", value.asInstanceOf[js.Any])
   }
 }

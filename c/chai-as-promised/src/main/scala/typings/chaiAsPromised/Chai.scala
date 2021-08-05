@@ -971,8 +971,7 @@ object Chai {
   }
   object PromisedDeep {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       eq_ : (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion,
       equal: (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion,
       equals_ : (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion,
@@ -987,29 +986,21 @@ object Chai {
       __obj.asInstanceOf[PromisedDeep]
     }
     
-    @scala.inline
-    implicit class PromisedDeepMutableBuilder[Self <: PromisedDeep] (val x: Self) extends AnyVal {
+    extension [Self <: PromisedDeep](x: Self) {
       
-      @scala.inline
-      def setEq_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "eq", js.Any.fromFunction2(value))
+      inline def setEq_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "eq", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
+      inline def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInclude(value: PromisedInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: PromisedInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
+      inline def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOrdered(value: PromisedOrdered): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+      inline def setOrdered(value: PromisedOrdered): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(
+      inline def setProperty(
         value: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion
       ): Self = StObject.set(x, "property", js.Any.fromFunction3(value))
     }
@@ -1059,17 +1050,14 @@ object Chai {
   }
   object PromisedKeyFilter {
     
-    @scala.inline
-    def apply(keys: PromisedKeys): PromisedKeyFilter = {
+    inline def apply(keys: PromisedKeys): PromisedKeyFilter = {
       val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromisedKeyFilter]
     }
     
-    @scala.inline
-    implicit class PromisedKeyFilterMutableBuilder[Self <: PromisedKeyFilter] (val x: Self) extends AnyVal {
+    extension [Self <: PromisedKeyFilter](x: Self) {
       
-      @scala.inline
-      def setKeys(value: PromisedKeys): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: PromisedKeys): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1167,8 +1155,7 @@ object Chai {
   }
   object PromisedLanguageChains {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       and: PromisedAssertion,
       at: PromisedAssertion,
       be: PromisedAssertion,
@@ -1191,56 +1178,39 @@ object Chai {
       __obj.asInstanceOf[PromisedLanguageChains]
     }
     
-    @scala.inline
-    implicit class PromisedLanguageChainsMutableBuilder[Self <: PromisedLanguageChains] (val x: Self) extends AnyVal {
+    extension [Self <: PromisedLanguageChains](x: Self) {
       
-      @scala.inline
-      def setAnd(value: PromisedAssertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+      inline def setAnd(value: PromisedAssertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAt(value: PromisedAssertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      inline def setAt(value: PromisedAssertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBe(value: PromisedAssertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
+      inline def setBe(value: PromisedAssertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeen(value: PromisedAssertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
+      inline def setBeen(value: PromisedAssertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBut(value: PromisedAssertion): Self = StObject.set(x, "but", value.asInstanceOf[js.Any])
+      inline def setBut(value: PromisedAssertion): Self = StObject.set(x, "but", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoes(value: PromisedAssertion): Self = StObject.set(x, "does", value.asInstanceOf[js.Any])
+      inline def setDoes(value: PromisedAssertion): Self = StObject.set(x, "does", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventually(value: Eventually): Self = StObject.set(x, "eventually", value.asInstanceOf[js.Any])
+      inline def setEventually(value: Eventually): Self = StObject.set(x, "eventually", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas(value: PromisedAssertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
+      inline def setHas(value: PromisedAssertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHave(value: PromisedAssertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
+      inline def setHave(value: PromisedAssertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs(value: PromisedAssertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      inline def setIs(value: PromisedAssertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOf(value: PromisedAssertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+      inline def setOf(value: PromisedAssertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSame(value: PromisedAssertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
+      inline def setSame(value: PromisedAssertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThat(value: PromisedAssertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
+      inline def setThat(value: PromisedAssertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: PromisedAssertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: PromisedAssertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: PromisedAssertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: PromisedAssertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWith(value: PromisedAssertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+      inline def setWith(value: PromisedAssertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1283,8 +1253,7 @@ object Chai {
   }
   object PromisedNested {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       include: PromisedInclude,
       members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion,
       property: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion
@@ -1293,17 +1262,13 @@ object Chai {
       __obj.asInstanceOf[PromisedNested]
     }
     
-    @scala.inline
-    implicit class PromisedNestedMutableBuilder[Self <: PromisedNested] (val x: Self) extends AnyVal {
+    extension [Self <: PromisedNested](x: Self) {
       
-      @scala.inline
-      def setInclude(value: PromisedInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: PromisedInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
+      inline def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProperty(
+      inline def setProperty(
         value: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion
       ): Self = StObject.set(x, "property", js.Any.fromFunction3(value))
     }
@@ -1377,17 +1342,14 @@ object Chai {
   }
   object PromisedOrdered {
     
-    @scala.inline
-    def apply(members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): PromisedOrdered = {
+    inline def apply(members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): PromisedOrdered = {
       val __obj = js.Dynamic.literal(members = js.Any.fromFunction2(members))
       __obj.asInstanceOf[PromisedOrdered]
     }
     
-    @scala.inline
-    implicit class PromisedOrderedMutableBuilder[Self <: PromisedOrdered] (val x: Self) extends AnyVal {
+    extension [Self <: PromisedOrdered](x: Self) {
       
-      @scala.inline
-      def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
+      inline def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
     }
   }
   

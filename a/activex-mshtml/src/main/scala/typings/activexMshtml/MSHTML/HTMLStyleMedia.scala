@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLStyleMedia extends StObject {
   
-  @JSName("MSHTML.HTMLStyleMedia_typekey")
+  /* private */ @JSName("MSHTML.HTMLStyleMedia_typekey")
   var MSHTMLDotHTMLStyleMedia_typekey: HTMLStyleMedia
   
   def matchMedium(mediaQuery: String): Boolean
@@ -15,24 +15,19 @@ trait HTMLStyleMedia extends StObject {
 }
 object HTMLStyleMedia {
   
-  @scala.inline
-  def apply(MSHTMLDotHTMLStyleMedia_typekey: HTMLStyleMedia, matchMedium: String => Boolean, `type`: String): HTMLStyleMedia = {
+  inline def apply(MSHTMLDotHTMLStyleMedia_typekey: HTMLStyleMedia, matchMedium: String => Boolean, `type`: String): HTMLStyleMedia = {
     val __obj = js.Dynamic.literal(matchMedium = js.Any.fromFunction1(matchMedium))
     __obj.updateDynamic("MSHTML.HTMLStyleMedia_typekey")(MSHTMLDotHTMLStyleMedia_typekey.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLStyleMedia]
   }
   
-  @scala.inline
-  implicit class HTMLStyleMediaMutableBuilder[Self <: HTMLStyleMedia] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLStyleMedia](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotHTMLStyleMedia_typekey(value: HTMLStyleMedia): Self = StObject.set(x, "MSHTML.HTMLStyleMedia_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLStyleMedia_typekey(value: HTMLStyleMedia): Self = StObject.set(x, "MSHTML.HTMLStyleMedia_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchMedium(value: String => Boolean): Self = StObject.set(x, "matchMedium", js.Any.fromFunction1(value))
+    inline def setMatchMedium(value: String => Boolean): Self = StObject.set(x, "matchMedium", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

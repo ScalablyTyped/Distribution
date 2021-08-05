@@ -27,8 +27,7 @@ trait XEndnotesSupplier
 }
 object XEndnotesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndnoteSettings: XPropertySet,
     Endnotes: XIndexAccess,
     acquire: () => Unit,
@@ -41,19 +40,14 @@ object XEndnotesSupplier {
     __obj.asInstanceOf[XEndnotesSupplier]
   }
   
-  @scala.inline
-  implicit class XEndnotesSupplierMutableBuilder[Self <: XEndnotesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XEndnotesSupplier](x: Self) {
     
-    @scala.inline
-    def setEndnoteSettings(value: XPropertySet): Self = StObject.set(x, "EndnoteSettings", value.asInstanceOf[js.Any])
+    inline def setEndnoteSettings(value: XPropertySet): Self = StObject.set(x, "EndnoteSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnotes(value: XIndexAccess): Self = StObject.set(x, "Endnotes", value.asInstanceOf[js.Any])
+    inline def setEndnotes(value: XIndexAccess): Self = StObject.set(x, "Endnotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEndnoteSettings(value: () => XPropertySet): Self = StObject.set(x, "getEndnoteSettings", js.Any.fromFunction0(value))
+    inline def setGetEndnoteSettings(value: () => XPropertySet): Self = StObject.set(x, "getEndnoteSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEndnotes(value: () => XIndexAccess): Self = StObject.set(x, "getEndnotes", js.Any.fromFunction0(value))
+    inline def setGetEndnotes(value: () => XIndexAccess): Self = StObject.set(x, "getEndnotes", js.Any.fromFunction0(value))
   }
 }

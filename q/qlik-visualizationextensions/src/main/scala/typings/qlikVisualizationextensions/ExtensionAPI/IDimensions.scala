@@ -15,28 +15,21 @@ trait IDimensions extends StObject {
 }
 object IDimensions {
   
-  @scala.inline
-  def apply(): IDimensions = {
+  inline def apply(): IDimensions = {
     val __obj = js.Dynamic.literal(uses = "dimensions")
     __obj.asInstanceOf[IDimensions]
   }
   
-  @scala.inline
-  implicit class IDimensionsMutableBuilder[Self <: IDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: IDimensions](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setUses(value: dimensions): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+    inline def setUses(value: dimensions): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
   }
 }

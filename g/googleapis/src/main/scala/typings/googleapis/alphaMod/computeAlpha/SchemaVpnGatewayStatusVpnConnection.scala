@@ -37,40 +37,29 @@ trait SchemaVpnGatewayStatusVpnConnection extends StObject {
 }
 object SchemaVpnGatewayStatusVpnConnection {
   
-  @scala.inline
-  def apply(): SchemaVpnGatewayStatusVpnConnection = {
+  inline def apply(): SchemaVpnGatewayStatusVpnConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVpnGatewayStatusVpnConnection]
   }
   
-  @scala.inline
-  implicit class SchemaVpnGatewayStatusVpnConnectionMutableBuilder[Self <: SchemaVpnGatewayStatusVpnConnection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVpnGatewayStatusVpnConnection](x: Self) {
     
-    @scala.inline
-    def setPeerExternalGateway(value: String): Self = StObject.set(x, "peerExternalGateway", value.asInstanceOf[js.Any])
+    inline def setPeerExternalGateway(value: String): Self = StObject.set(x, "peerExternalGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerExternalGatewayUndefined: Self = StObject.set(x, "peerExternalGateway", js.undefined)
+    inline def setPeerExternalGatewayUndefined: Self = StObject.set(x, "peerExternalGateway", js.undefined)
     
-    @scala.inline
-    def setPeerGcpGateway(value: String): Self = StObject.set(x, "peerGcpGateway", value.asInstanceOf[js.Any])
+    inline def setPeerGcpGateway(value: String): Self = StObject.set(x, "peerGcpGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerGcpGatewayUndefined: Self = StObject.set(x, "peerGcpGateway", js.undefined)
+    inline def setPeerGcpGatewayUndefined: Self = StObject.set(x, "peerGcpGateway", js.undefined)
     
-    @scala.inline
-    def setState(value: SchemaVpnGatewayStatusHighAvailabilityRequirementState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: SchemaVpnGatewayStatusHighAvailabilityRequirementState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTunnels(value: js.Array[SchemaVpnGatewayStatusTunnel]): Self = StObject.set(x, "tunnels", value.asInstanceOf[js.Any])
+    inline def setTunnels(value: js.Array[SchemaVpnGatewayStatusTunnel]): Self = StObject.set(x, "tunnels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
+    inline def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
     
-    @scala.inline
-    def setTunnelsVarargs(value: SchemaVpnGatewayStatusTunnel*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
+    inline def setTunnelsVarargs(value: SchemaVpnGatewayStatusTunnel*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait LabelingJobSnsDataSource extends StObject {
 }
 object LabelingJobSnsDataSource {
   
-  @scala.inline
-  def apply(SnsTopicArn: SnsTopicArn): LabelingJobSnsDataSource = {
+  inline def apply(SnsTopicArn: SnsTopicArn): LabelingJobSnsDataSource = {
     val __obj = js.Dynamic.literal(SnsTopicArn = SnsTopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobSnsDataSource]
   }
   
-  @scala.inline
-  implicit class LabelingJobSnsDataSourceMutableBuilder[Self <: LabelingJobSnsDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobSnsDataSource](x: Self) {
     
-    @scala.inline
-    def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
   }
 }

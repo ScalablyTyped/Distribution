@@ -22,14 +22,11 @@ object diagramMod {
   trait DiagramConnectionAnchor extends StObject
   object DiagramConnectionAnchor {
     
-    @scala.inline
-    def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
+    inline def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
     
-    @scala.inline
-    def horizontal: typings.grommet.grommetStrings.horizontal = "horizontal".asInstanceOf[typings.grommet.grommetStrings.horizontal]
+    inline def horizontal: typings.grommet.grommetStrings.horizontal = "horizontal".asInstanceOf[typings.grommet.grommetStrings.horizontal]
     
-    @scala.inline
-    def vertical: typings.grommet.grommetStrings.vertical = "vertical".asInstanceOf[typings.grommet.grommetStrings.vertical]
+    inline def vertical: typings.grommet.grommetStrings.vertical = "vertical".asInstanceOf[typings.grommet.grommetStrings.vertical]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -40,14 +37,11 @@ object diagramMod {
   trait DiagramConnectionType extends StObject
   object DiagramConnectionType {
     
-    @scala.inline
-    def curved: typings.grommet.grommetStrings.curved = "curved".asInstanceOf[typings.grommet.grommetStrings.curved]
+    inline def curved: typings.grommet.grommetStrings.curved = "curved".asInstanceOf[typings.grommet.grommetStrings.curved]
     
-    @scala.inline
-    def direct: typings.grommet.grommetStrings.direct = "direct".asInstanceOf[typings.grommet.grommetStrings.direct]
+    inline def direct: typings.grommet.grommetStrings.direct = "direct".asInstanceOf[typings.grommet.grommetStrings.direct]
     
-    @scala.inline
-    def rectilinear: typings.grommet.grommetStrings.rectilinear = "rectilinear".asInstanceOf[typings.grommet.grommetStrings.rectilinear]
+    inline def rectilinear: typings.grommet.grommetStrings.rectilinear = "rectilinear".asInstanceOf[typings.grommet.grommetStrings.rectilinear]
   }
   
   trait DiagramProps extends StObject {
@@ -56,20 +50,16 @@ object diagramMod {
   }
   object DiagramProps {
     
-    @scala.inline
-    def apply(connections: js.Array[Anchor]): DiagramProps = {
+    inline def apply(connections: js.Array[Anchor]): DiagramProps = {
       val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiagramProps]
     }
     
-    @scala.inline
-    implicit class DiagramPropsMutableBuilder[Self <: DiagramProps] (val x: Self) extends AnyVal {
+    extension [Self <: DiagramProps](x: Self) {
       
-      @scala.inline
-      def setConnections(value: js.Array[Anchor]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+      inline def setConnections(value: js.Array[Anchor]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionsVarargs(value: Anchor*): Self = StObject.set(x, "connections", js.Array(value :_*))
+      inline def setConnectionsVarargs(value: Anchor*): Self = StObject.set(x, "connections", js.Array(value :_*))
     }
   }
 }

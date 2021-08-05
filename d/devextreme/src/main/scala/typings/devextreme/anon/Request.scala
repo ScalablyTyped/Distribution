@@ -24,49 +24,35 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(): Request = {
+  inline def apply(): Request = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxFileUploader): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxFileUploader): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setRequest(value: XMLHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: XMLHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setUploadInfo(value: UploadInfo): Self = StObject.set(x, "uploadInfo", value.asInstanceOf[js.Any])
+    inline def setUploadInfo(value: UploadInfo): Self = StObject.set(x, "uploadInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadInfoUndefined: Self = StObject.set(x, "uploadInfo", js.undefined)
+    inline def setUploadInfoUndefined: Self = StObject.set(x, "uploadInfo", js.undefined)
   }
 }

@@ -46,8 +46,7 @@ trait Author
 }
 object Author {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -81,22 +80,16 @@ object Author {
     __obj.asInstanceOf[Author]
   }
   
-  @scala.inline
-  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
+  extension [Self <: Author](x: Self) {
     
-    @scala.inline
-    def setAuthorFormat(value: Double): Self = StObject.set(x, "AuthorFormat", value.asInstanceOf[js.Any])
+    inline def setAuthorFormat(value: Double): Self = StObject.set(x, "AuthorFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+    inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: Boolean): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: Boolean): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
   }
 }

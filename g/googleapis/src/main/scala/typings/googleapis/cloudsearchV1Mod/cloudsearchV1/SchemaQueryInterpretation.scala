@@ -17,25 +17,19 @@ trait SchemaQueryInterpretation extends StObject {
 }
 object SchemaQueryInterpretation {
   
-  @scala.inline
-  def apply(): SchemaQueryInterpretation = {
+  inline def apply(): SchemaQueryInterpretation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryInterpretation]
   }
   
-  @scala.inline
-  implicit class SchemaQueryInterpretationMutableBuilder[Self <: SchemaQueryInterpretation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryInterpretation](x: Self) {
     
-    @scala.inline
-    def setInterpretationType(value: String): Self = StObject.set(x, "interpretationType", value.asInstanceOf[js.Any])
+    inline def setInterpretationType(value: String): Self = StObject.set(x, "interpretationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpretationTypeUndefined: Self = StObject.set(x, "interpretationType", js.undefined)
+    inline def setInterpretationTypeUndefined: Self = StObject.set(x, "interpretationType", js.undefined)
     
-    @scala.inline
-    def setInterpretedQuery(value: String): Self = StObject.set(x, "interpretedQuery", value.asInstanceOf[js.Any])
+    inline def setInterpretedQuery(value: String): Self = StObject.set(x, "interpretedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpretedQueryUndefined: Self = StObject.set(x, "interpretedQuery", js.undefined)
+    inline def setInterpretedQueryUndefined: Self = StObject.set(x, "interpretedQuery", js.undefined)
   }
 }

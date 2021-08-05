@@ -15,25 +15,19 @@ trait IUpsertOptions extends StObject {
 }
 object IUpsertOptions {
   
-  @scala.inline
-  def apply(): IUpsertOptions = {
+  inline def apply(): IUpsertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpsertOptions]
   }
   
-  @scala.inline
-  implicit class IUpsertOptionsMutableBuilder[Self <: IUpsertOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IUpsertOptions](x: Self) {
     
-    @scala.inline
-    def setDisableAutomaticIdGeneration(value: String): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
+    inline def setDisableAutomaticIdGeneration(value: String): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAutomaticIdGenerationUndefined: Self = StObject.set(x, "disableAutomaticIdGeneration", js.undefined)
+    inline def setDisableAutomaticIdGenerationUndefined: Self = StObject.set(x, "disableAutomaticIdGeneration", js.undefined)
     
-    @scala.inline
-    def setIndexAction(value: String): Self = StObject.set(x, "indexAction", value.asInstanceOf[js.Any])
+    inline def setIndexAction(value: String): Self = StObject.set(x, "indexAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexActionUndefined: Self = StObject.set(x, "indexAction", js.undefined)
+    inline def setIndexActionUndefined: Self = StObject.set(x, "indexAction", js.undefined)
   }
 }

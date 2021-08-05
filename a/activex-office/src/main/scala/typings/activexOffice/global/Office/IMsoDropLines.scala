@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoDropLines")
 @js.native
-class IMsoDropLines protected ()
+/* private */ class IMsoDropLines ()
   extends StObject
      with typings.activexOffice.Office.IMsoDropLines {
   
@@ -28,7 +28,7 @@ class IMsoDropLines protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoDropLines_typekey")
   var OfficeDotIMsoDropLines_typekey: typings.activexOffice.Office.IMsoDropLines = js.native
   

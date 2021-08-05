@@ -21,8 +21,7 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     location: WindowLocation[LocationState],
     path: String,
     story: Group | Story,
@@ -32,19 +31,14 @@ object Location {
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory(value: Group | Story): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+    inline def setStory(value: Group | Story): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

@@ -43,58 +43,41 @@ trait GetResourceSharesRequest extends StObject {
 }
 object GetResourceSharesRequest {
   
-  @scala.inline
-  def apply(resourceOwner: ResourceOwner): GetResourceSharesRequest = {
+  inline def apply(resourceOwner: ResourceOwner): GetResourceSharesRequest = {
     val __obj = js.Dynamic.literal(resourceOwner = resourceOwner.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceSharesRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceSharesRequestMutableBuilder[Self <: GetResourceSharesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceSharesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceOwner(value: ResourceOwner): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
+    inline def setResourceOwner(value: ResourceOwner): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
+    inline def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
+    inline def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
     
-    @scala.inline
-    def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
+    inline def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceShareStatus(value: ResourceShareStatus): Self = StObject.set(x, "resourceShareStatus", value.asInstanceOf[js.Any])
+    inline def setResourceShareStatus(value: ResourceShareStatus): Self = StObject.set(x, "resourceShareStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareStatusUndefined: Self = StObject.set(x, "resourceShareStatus", js.undefined)
+    inline def setResourceShareStatusUndefined: Self = StObject.set(x, "resourceShareStatus", js.undefined)
     
-    @scala.inline
-    def setTagFilters(value: TagFilters): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
+    inline def setTagFilters(value: TagFilters): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
+    inline def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
-    @scala.inline
-    def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
   }
 }

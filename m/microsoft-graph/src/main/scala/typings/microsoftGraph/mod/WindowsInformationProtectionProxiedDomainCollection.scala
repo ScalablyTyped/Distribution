@@ -14,28 +14,21 @@ trait WindowsInformationProtectionProxiedDomainCollection extends StObject {
 }
 object WindowsInformationProtectionProxiedDomainCollection {
   
-  @scala.inline
-  def apply(): WindowsInformationProtectionProxiedDomainCollection = {
+  inline def apply(): WindowsInformationProtectionProxiedDomainCollection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtectionProxiedDomainCollection]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionProxiedDomainCollectionMutableBuilder[Self <: WindowsInformationProtectionProxiedDomainCollection] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtectionProxiedDomainCollection](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setProxiedDomains(value: js.Array[ProxiedDomain]): Self = StObject.set(x, "proxiedDomains", value.asInstanceOf[js.Any])
+    inline def setProxiedDomains(value: js.Array[ProxiedDomain]): Self = StObject.set(x, "proxiedDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxiedDomainsUndefined: Self = StObject.set(x, "proxiedDomains", js.undefined)
+    inline def setProxiedDomainsUndefined: Self = StObject.set(x, "proxiedDomains", js.undefined)
     
-    @scala.inline
-    def setProxiedDomainsVarargs(value: ProxiedDomain*): Self = StObject.set(x, "proxiedDomains", js.Array(value :_*))
+    inline def setProxiedDomainsVarargs(value: ProxiedDomain*): Self = StObject.set(x, "proxiedDomains", js.Array(value :_*))
   }
 }

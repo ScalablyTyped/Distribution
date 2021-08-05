@@ -16,10 +16,8 @@ object mod {
     /**
       * Auto-initializes all MDC components on a page.
       */
-    @scala.inline
-    def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
-    @scala.inline
-    def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    inline def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    inline def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
     
     @JSImport("@material/auto-init", JSImport.Default)
     @js.native
@@ -32,11 +30,9 @@ object mod {
     @JSImport("@material/auto-init", "default.deregisterAll")
     @js.native
     def deregisterAll: js.Function0[Unit] = js.native
-    @scala.inline
-    def deregisterAll_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregisterAll")(x.asInstanceOf[js.Any])
+    inline def deregisterAll_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregisterAll")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deregister_=(x: js.Function1[/* componentName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregister")(x.asInstanceOf[js.Any])
+    inline def deregister_=(x: js.Function1[/* componentName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregister")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/auto-init", "default.register")
     @js.native
@@ -46,8 +42,7 @@ object mod {
         /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
         Unit
       ] = js.native
-    @scala.inline
-    def register_=(
+    inline def register_=(
       x: js.Function3[
           /* componentName */ String, 
           /* Constructor */ MDCAttachable, 
@@ -62,10 +57,8 @@ object mod {
     /**
       * Auto-initializes all MDC components on a page.
       */
-    @scala.inline
-    def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
-    @scala.inline
-    def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    inline def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    inline def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
     
     @JSImport("@material/auto-init", "mdcAutoInit")
     @js.native
@@ -78,11 +71,9 @@ object mod {
     @JSImport("@material/auto-init", "mdcAutoInit.deregisterAll")
     @js.native
     def deregisterAll: js.Function0[Unit] = js.native
-    @scala.inline
-    def deregisterAll_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregisterAll")(x.asInstanceOf[js.Any])
+    inline def deregisterAll_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregisterAll")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deregister_=(x: js.Function1[/* componentName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregister")(x.asInstanceOf[js.Any])
+    inline def deregister_=(x: js.Function1[/* componentName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregister")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/auto-init", "mdcAutoInit.register")
     @js.native
@@ -92,8 +83,7 @@ object mod {
         /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
         Unit
       ] = js.native
-    @scala.inline
-    def register_=(
+    inline def register_=(
       x: js.Function3[
           /* componentName */ String, 
           /* Constructor */ MDCAttachable, 

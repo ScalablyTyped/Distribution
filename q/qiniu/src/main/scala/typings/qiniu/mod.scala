@@ -143,14 +143,12 @@ object mod {
     @JSImport("qiniu", "conf.ACCESS_KEY")
     @js.native
     def ACCESS_KEY: String = js.native
-    @scala.inline
-    def ACCESS_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCESS_KEY")(x.asInstanceOf[js.Any])
+    inline def ACCESS_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCESS_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.BLOCK_SIZE")
     @js.native
     def BLOCK_SIZE: Double = js.native
-    @scala.inline
-    def BLOCK_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLOCK_SIZE")(x.asInstanceOf[js.Any])
+    inline def BLOCK_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLOCK_SIZE")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.Config")
     @js.native
@@ -163,44 +161,37 @@ object mod {
     @JSImport("qiniu", "conf.FormMimeJson")
     @js.native
     def FormMimeJson: String = js.native
-    @scala.inline
-    def FormMimeJson_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormMimeJson")(x.asInstanceOf[js.Any])
+    inline def FormMimeJson_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormMimeJson")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.FormMimeRaw")
     @js.native
     def FormMimeRaw: String = js.native
-    @scala.inline
-    def FormMimeRaw_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormMimeRaw")(x.asInstanceOf[js.Any])
+    inline def FormMimeRaw_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormMimeRaw")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.FormMimeUrl")
     @js.native
     def FormMimeUrl: String = js.native
-    @scala.inline
-    def FormMimeUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormMimeUrl")(x.asInstanceOf[js.Any])
+    inline def FormMimeUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormMimeUrl")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.RPC_TIMEOUT")
     @js.native
     def RPC_TIMEOUT: Double = js.native
-    @scala.inline
-    def RPC_TIMEOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RPC_TIMEOUT")(x.asInstanceOf[js.Any])
+    inline def RPC_TIMEOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RPC_TIMEOUT")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.RS_HOST")
     @js.native
     def RS_HOST: String = js.native
-    @scala.inline
-    def RS_HOST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS_HOST")(x.asInstanceOf[js.Any])
+    inline def RS_HOST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS_HOST")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.SECRET_KEY")
     @js.native
     def SECRET_KEY: String = js.native
-    @scala.inline
-    def SECRET_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECRET_KEY")(x.asInstanceOf[js.Any])
+    inline def SECRET_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECRET_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.USER_AGENT")
     @js.native
     def USER_AGENT: String = js.native
-    @scala.inline
-    def USER_AGENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USER_AGENT")(x.asInstanceOf[js.Any])
+    inline def USER_AGENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USER_AGENT")(x.asInstanceOf[js.Any])
     
     @JSImport("qiniu", "conf.Zone")
     @js.native
@@ -251,38 +242,28 @@ object mod {
     }
     object ConfigOptions {
       
-      @scala.inline
-      def apply(): ConfigOptions = {
+      inline def apply(): ConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      @scala.inline
-      implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConfigOptions](x: Self) {
         
-        @scala.inline
-        def setUseCdnDomain(value: Boolean): Self = StObject.set(x, "useCdnDomain", value.asInstanceOf[js.Any])
+        inline def setUseCdnDomain(value: Boolean): Self = StObject.set(x, "useCdnDomain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseCdnDomainUndefined: Self = StObject.set(x, "useCdnDomain", js.undefined)
+        inline def setUseCdnDomainUndefined: Self = StObject.set(x, "useCdnDomain", js.undefined)
         
-        @scala.inline
-        def setUseHttpsDomain(value: Boolean): Self = StObject.set(x, "useHttpsDomain", value.asInstanceOf[js.Any])
+        inline def setUseHttpsDomain(value: Boolean): Self = StObject.set(x, "useHttpsDomain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseHttpsDomainUndefined: Self = StObject.set(x, "useHttpsDomain", js.undefined)
+        inline def setUseHttpsDomainUndefined: Self = StObject.set(x, "useHttpsDomain", js.undefined)
         
-        @scala.inline
-        def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+        inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoneExpire(value: Double): Self = StObject.set(x, "zoneExpire", value.asInstanceOf[js.Any])
+        inline def setZoneExpire(value: Double): Self = StObject.set(x, "zoneExpire", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoneExpireUndefined: Self = StObject.set(x, "zoneExpire", js.undefined)
+        inline def setZoneExpireUndefined: Self = StObject.set(x, "zoneExpire", js.undefined)
         
-        @scala.inline
-        def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+        inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
       }
     }
   }
@@ -348,26 +329,20 @@ object mod {
     }
     object PfopOptions {
       
-      @scala.inline
-      def apply(): PfopOptions = {
+      inline def apply(): PfopOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PfopOptions]
       }
       
-      @scala.inline
-      implicit class PfopOptionsMutableBuilder[Self <: PfopOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PfopOptions](x: Self) {
         
-        @scala.inline
-        def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+        inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+        inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
         
-        @scala.inline
-        def setNotifyURL(value: String): Self = StObject.set(x, "notifyURL", value.asInstanceOf[js.Any])
+        inline def setNotifyURL(value: String): Self = StObject.set(x, "notifyURL", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotifyURLUndefined: Self = StObject.set(x, "notifyURL", js.undefined)
+        inline def setNotifyURLUndefined: Self = StObject.set(x, "notifyURL", js.undefined)
       }
     }
   }
@@ -764,16 +739,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def post(requestURI: String, requestForm: String, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def post(requestURI: String, requestForm: String, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def post(requestURI: String, requestForm: Null, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def post(requestURI: String, requestForm: Null, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def post(requestURI: String, requestForm: Buffer, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: String, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: String, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: Null, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: Null, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: Buffer, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *
       * @param requestURI
@@ -781,36 +751,25 @@ object mod {
       * @param headers
       * @param callback
       */
-    @scala.inline
-    def post(requestURI: String, requestForm: Buffer, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def post(requestURI: String, requestForm: ReadableStream, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def post(requestURI: String, requestForm: ReadableStream, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: Buffer, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: ReadableStream, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def post(requestURI: String, requestForm: ReadableStream, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def postMultipart(requestURI: String, requestForm: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postMultipart(requestURI: String, requestForm: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postMultipart(requestURI: String, requestForm: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postMultipart(requestURI: String, requestForm: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *
       * @param requestURI
       * @param requestForm
       * @param callback
       */
-    @scala.inline
-    def postMultipart(requestURI: String, requestForm: Buffer, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postMultipart(requestURI: String, requestForm: ReadableStream, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postMultipart(requestURI: String, requestForm: Buffer, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postMultipart(requestURI: String, requestForm: ReadableStream, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: String, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: String, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: Null, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: Null, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: String, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: String, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: Null, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: Null, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *
       * @param requestURI
@@ -818,14 +777,10 @@ object mod {
       * @param token
       * @param callback
       */
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: Buffer, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: Buffer, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: ReadableStream, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postWithForm(requestURI: String, requestForm: ReadableStream, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: Buffer, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: Buffer, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: ReadableStream, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithForm(requestURI: String, requestForm: ReadableStream, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *
@@ -833,10 +788,8 @@ object mod {
       * @param token
       * @param callback
       */
-    @scala.inline
-    def postWithoutForm(requestURI: String, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithoutForm")(requestURI.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def postWithoutForm(requestURI: String, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithoutForm")(requestURI.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithoutForm(requestURI: String, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithoutForm")(requestURI.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postWithoutForm(requestURI: String, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithoutForm")(requestURI.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     trait Headers extends StObject {
       
@@ -846,26 +799,20 @@ object mod {
     }
     object Headers {
       
-      @scala.inline
-      def apply(): Headers = {
+      inline def apply(): Headers = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Headers]
       }
       
-      @scala.inline
-      implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+      extension [Self <: Headers](x: Self) {
         
-        @scala.inline
-        def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+        inline def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
+        inline def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
         
-        @scala.inline
-        def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+        inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
+        inline def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
       }
     }
   }
@@ -1099,8 +1046,7 @@ object mod {
       * @param key
       * @param headers
       */
-    @scala.inline
-    def changeHeadersOp(bucket: String, key: String, headers: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeHeadersOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def changeHeadersOp(bucket: String, key: String, headers: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeHeadersOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1108,8 +1054,7 @@ object mod {
       * @param key
       * @param newMime
       */
-    @scala.inline
-    def changeMimeOp(bucket: String, key: String, newMime: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeMimeOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], newMime.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def changeMimeOp(bucket: String, key: String, newMime: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeMimeOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], newMime.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1117,8 +1062,7 @@ object mod {
       * @param key
       * @param newType
       */
-    @scala.inline
-    def changeTypeOp(bucket: String, key: String, newType: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeTypeOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], newType.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def changeTypeOp(bucket: String, key: String, newType: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeTypeOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], newType.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1128,10 +1072,8 @@ object mod {
       * @param destKey
       * @param options
       */
-    @scala.inline
-    def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1139,16 +1081,14 @@ object mod {
       * @param key
       * @param days
       */
-    @scala.inline
-    def deleteAfterDaysOp(bucket: String, key: String, days: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAfterDaysOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def deleteAfterDaysOp(bucket: String, key: String, days: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAfterDaysOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
       * @param bucket
       * @param key
       */
-    @scala.inline
-    def deleteOp(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def deleteOp(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1158,18 +1098,15 @@ object mod {
       * @param destKey
       * @param options
       */
-    @scala.inline
-    def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("moveOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = (^.asInstanceOf[js.Dynamic].applyDynamic("moveOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("moveOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = (^.asInstanceOf[js.Dynamic].applyDynamic("moveOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
       * @param bucket
       * @param key
       */
-    @scala.inline
-    def statOp(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("statOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def statOp(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("statOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
     trait ListPrefixOptions extends StObject {
       
@@ -1195,38 +1132,28 @@ object mod {
     }
     object ListPrefixOptions {
       
-      @scala.inline
-      def apply(): ListPrefixOptions = {
+      inline def apply(): ListPrefixOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListPrefixOptions]
       }
       
-      @scala.inline
-      implicit class ListPrefixOptionsMutableBuilder[Self <: ListPrefixOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ListPrefixOptions](x: Self) {
         
-        @scala.inline
-        def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+        inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+        inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
         
-        @scala.inline
-        def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        @scala.inline
-        def setMarker(value: js.Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+        inline def setMarker(value: js.Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+        inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
         
-        @scala.inline
-        def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+        inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       }
     }
     
@@ -1278,146 +1205,100 @@ object mod {
     }
     object PutPolicyOptions {
       
-      @scala.inline
-      def apply(): PutPolicyOptions = {
+      inline def apply(): PutPolicyOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PutPolicyOptions]
       }
       
-      @scala.inline
-      implicit class PutPolicyOptionsMutableBuilder[Self <: PutPolicyOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PutPolicyOptions](x: Self) {
         
-        @scala.inline
-        def setCallbackBody(value: String): Self = StObject.set(x, "callbackBody", value.asInstanceOf[js.Any])
+        inline def setCallbackBody(value: String): Self = StObject.set(x, "callbackBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackBodyType(value: String): Self = StObject.set(x, "callbackBodyType", value.asInstanceOf[js.Any])
+        inline def setCallbackBodyType(value: String): Self = StObject.set(x, "callbackBodyType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackBodyTypeUndefined: Self = StObject.set(x, "callbackBodyType", js.undefined)
+        inline def setCallbackBodyTypeUndefined: Self = StObject.set(x, "callbackBodyType", js.undefined)
         
-        @scala.inline
-        def setCallbackBodyUndefined: Self = StObject.set(x, "callbackBody", js.undefined)
+        inline def setCallbackBodyUndefined: Self = StObject.set(x, "callbackBody", js.undefined)
         
-        @scala.inline
-        def setCallbackFetchKey(value: Double): Self = StObject.set(x, "callbackFetchKey", value.asInstanceOf[js.Any])
+        inline def setCallbackFetchKey(value: Double): Self = StObject.set(x, "callbackFetchKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackFetchKeyUndefined: Self = StObject.set(x, "callbackFetchKey", js.undefined)
+        inline def setCallbackFetchKeyUndefined: Self = StObject.set(x, "callbackFetchKey", js.undefined)
         
-        @scala.inline
-        def setCallbackHost(value: String): Self = StObject.set(x, "callbackHost", value.asInstanceOf[js.Any])
+        inline def setCallbackHost(value: String): Self = StObject.set(x, "callbackHost", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackHostUndefined: Self = StObject.set(x, "callbackHost", js.undefined)
+        inline def setCallbackHostUndefined: Self = StObject.set(x, "callbackHost", js.undefined)
         
-        @scala.inline
-        def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+        inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+        inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
         
-        @scala.inline
-        def setDeleteAfterDays(value: Double): Self = StObject.set(x, "deleteAfterDays", value.asInstanceOf[js.Any])
+        inline def setDeleteAfterDays(value: Double): Self = StObject.set(x, "deleteAfterDays", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteAfterDaysUndefined: Self = StObject.set(x, "deleteAfterDays", js.undefined)
+        inline def setDeleteAfterDaysUndefined: Self = StObject.set(x, "deleteAfterDays", js.undefined)
         
-        @scala.inline
-        def setDetectMime(value: Double): Self = StObject.set(x, "detectMime", value.asInstanceOf[js.Any])
+        inline def setDetectMime(value: Double): Self = StObject.set(x, "detectMime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDetectMimeUndefined: Self = StObject.set(x, "detectMime", js.undefined)
+        inline def setDetectMimeUndefined: Self = StObject.set(x, "detectMime", js.undefined)
         
-        @scala.inline
-        def setEndUser(value: String): Self = StObject.set(x, "endUser", value.asInstanceOf[js.Any])
+        inline def setEndUser(value: String): Self = StObject.set(x, "endUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndUserUndefined: Self = StObject.set(x, "endUser", js.undefined)
+        inline def setEndUserUndefined: Self = StObject.set(x, "endUser", js.undefined)
         
-        @scala.inline
-        def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+        inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
-        @scala.inline
-        def setFileType(value: Double): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+        inline def setFileType(value: Double): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+        inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
         
-        @scala.inline
-        def setFsizeLimit(value: Double): Self = StObject.set(x, "fsizeLimit", value.asInstanceOf[js.Any])
+        inline def setFsizeLimit(value: Double): Self = StObject.set(x, "fsizeLimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFsizeLimitUndefined: Self = StObject.set(x, "fsizeLimit", js.undefined)
+        inline def setFsizeLimitUndefined: Self = StObject.set(x, "fsizeLimit", js.undefined)
         
-        @scala.inline
-        def setFsizeMin(value: Double): Self = StObject.set(x, "fsizeMin", value.asInstanceOf[js.Any])
+        inline def setFsizeMin(value: Double): Self = StObject.set(x, "fsizeMin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFsizeMinUndefined: Self = StObject.set(x, "fsizeMin", js.undefined)
+        inline def setFsizeMinUndefined: Self = StObject.set(x, "fsizeMin", js.undefined)
         
-        @scala.inline
-        def setInsertOnly(value: Double): Self = StObject.set(x, "insertOnly", value.asInstanceOf[js.Any])
+        inline def setInsertOnly(value: Double): Self = StObject.set(x, "insertOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertOnlyUndefined: Self = StObject.set(x, "insertOnly", js.undefined)
+        inline def setInsertOnlyUndefined: Self = StObject.set(x, "insertOnly", js.undefined)
         
-        @scala.inline
-        def setIsPrefixalScope(value: Double): Self = StObject.set(x, "isPrefixalScope", value.asInstanceOf[js.Any])
+        inline def setIsPrefixalScope(value: Double): Self = StObject.set(x, "isPrefixalScope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsPrefixalScopeUndefined: Self = StObject.set(x, "isPrefixalScope", js.undefined)
+        inline def setIsPrefixalScopeUndefined: Self = StObject.set(x, "isPrefixalScope", js.undefined)
         
-        @scala.inline
-        def setMimeLimit(value: String): Self = StObject.set(x, "mimeLimit", value.asInstanceOf[js.Any])
+        inline def setMimeLimit(value: String): Self = StObject.set(x, "mimeLimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeLimitUndefined: Self = StObject.set(x, "mimeLimit", js.undefined)
+        inline def setMimeLimitUndefined: Self = StObject.set(x, "mimeLimit", js.undefined)
         
-        @scala.inline
-        def setPersistentNotifyUrl(value: String): Self = StObject.set(x, "persistentNotifyUrl", value.asInstanceOf[js.Any])
+        inline def setPersistentNotifyUrl(value: String): Self = StObject.set(x, "persistentNotifyUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPersistentNotifyUrlUndefined: Self = StObject.set(x, "persistentNotifyUrl", js.undefined)
+        inline def setPersistentNotifyUrlUndefined: Self = StObject.set(x, "persistentNotifyUrl", js.undefined)
         
-        @scala.inline
-        def setPersistentOps(value: String): Self = StObject.set(x, "persistentOps", value.asInstanceOf[js.Any])
+        inline def setPersistentOps(value: String): Self = StObject.set(x, "persistentOps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPersistentOpsUndefined: Self = StObject.set(x, "persistentOps", js.undefined)
+        inline def setPersistentOpsUndefined: Self = StObject.set(x, "persistentOps", js.undefined)
         
-        @scala.inline
-        def setPersistentPipeline(value: String): Self = StObject.set(x, "persistentPipeline", value.asInstanceOf[js.Any])
+        inline def setPersistentPipeline(value: String): Self = StObject.set(x, "persistentPipeline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPersistentPipelineUndefined: Self = StObject.set(x, "persistentPipeline", js.undefined)
+        inline def setPersistentPipelineUndefined: Self = StObject.set(x, "persistentPipeline", js.undefined)
         
-        @scala.inline
-        def setReturnBody(value: String): Self = StObject.set(x, "returnBody", value.asInstanceOf[js.Any])
+        inline def setReturnBody(value: String): Self = StObject.set(x, "returnBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReturnBodyUndefined: Self = StObject.set(x, "returnBody", js.undefined)
+        inline def setReturnBodyUndefined: Self = StObject.set(x, "returnBody", js.undefined)
         
-        @scala.inline
-        def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
+        inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
+        inline def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
         
-        @scala.inline
-        def setSaveKey(value: String): Self = StObject.set(x, "saveKey", value.asInstanceOf[js.Any])
+        inline def setSaveKey(value: String): Self = StObject.set(x, "saveKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSaveKeyUndefined: Self = StObject.set(x, "saveKey", js.undefined)
+        inline def setSaveKeyUndefined: Self = StObject.set(x, "saveKey", js.undefined)
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+        inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       }
     }
   }
@@ -1428,13 +1309,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def base64ToUrlSafe(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToUrlSafe")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def base64ToUrlSafe(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToUrlSafe")(v.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def encodedEntry(bucket: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodedEntry")(bucket.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def encodedEntry(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodedEntry")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encodedEntry(bucket: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodedEntry")(bucket.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encodedEntry(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodedEntry")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * 创建AccessToken凭证
@@ -1442,10 +1320,8 @@ object mod {
       * @param requestURI 请求URL
       * @param reqBody  请求Body，仅当请求的ContentType为application/x-www-form-urlencoded 时才需要传入该参数
       */
-    @scala.inline
-    def generateAccessToken(mac: Mac, requestURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessToken")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def generateAccessToken(mac: Mac, requestURI: String, reqBody: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessToken")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def generateAccessToken(mac: Mac, requestURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessToken")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def generateAccessToken(mac: Mac, requestURI: String, reqBody: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessToken")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * 创建AccessToken凭证
@@ -1455,25 +1331,17 @@ object mod {
       * @param reqContentType 请求类型，例如 application/json 或者  application/x-www-form-urlencoded
       * @param reqBody        请求Body，仅当请求的 ContentType 为 application/json 或者 application/x-www-form-urlencoded 时才需要传入该参数
       */
-    @scala.inline
-    def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessTokenV2")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqMethod.asInstanceOf[js.Any], reqContentType.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String, reqBody: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessTokenV2")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqMethod.asInstanceOf[js.Any], reqContentType.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessTokenV2")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqMethod.asInstanceOf[js.Any], reqContentType.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String, reqBody: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessTokenV2")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqMethod.asInstanceOf[js.Any], reqContentType.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def getAKFromUptoken(uploadToken: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAKFromUptoken")(uploadToken.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getAKFromUptoken(uploadToken: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAKFromUptoken")(uploadToken.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getBucketFromUptoken(uploadToken: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketFromUptoken")(uploadToken.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getBucketFromUptoken(uploadToken: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketFromUptoken")(uploadToken.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def hmacSha1(encodedFlags: String, secretKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def hmacSha1(encodedFlags: String, secretKey: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def hmacSha1(encodedFlags: Buffer, secretKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def hmacSha1(encodedFlags: Buffer, secretKey: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hmacSha1(encodedFlags: String, secretKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hmacSha1(encodedFlags: String, secretKey: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hmacSha1(encodedFlags: Buffer, secretKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hmacSha1(encodedFlags: Buffer, secretKey: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * 校验七牛上传回调的Authorization
@@ -1482,22 +1350,16 @@ object mod {
       * @param reqBody 回调的URL中的requestURI 请求Body，仅当请求的ContentType为application/x-www-form-urlencoded时才需要传入该参数
       * @param callbackAuth 回调时请求的Authorization头部值
       */
-    @scala.inline
-    def isQiniuCallback(mac: Mac, requestURI: String, reqBody: String, callbackAuth: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isQiniuCallback")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any], callbackAuth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def isQiniuCallback(mac: Mac, requestURI: String, reqBody: Null, callbackAuth: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isQiniuCallback")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any], callbackAuth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isQiniuCallback(mac: Mac, requestURI: String, reqBody: String, callbackAuth: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isQiniuCallback")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any], callbackAuth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isQiniuCallback(mac: Mac, requestURI: String, reqBody: Null, callbackAuth: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isQiniuCallback")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any], callbackAuth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTimestampExpired(timestamp: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimestampExpired")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTimestampExpired(timestamp: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimestampExpired")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def urlSafeBase64Decode(fromStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlSafeBase64Decode")(fromStr.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def urlSafeBase64Decode(fromStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlSafeBase64Decode")(fromStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def urlSafeToBase64(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlSafeToBase64")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def urlSafeToBase64(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlSafeToBase64")(v.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def urlsafeBase64Encode(jsonFlags: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlsafeBase64Encode")(jsonFlags.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def urlsafeBase64Encode(jsonFlags: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlsafeBase64Encode")(jsonFlags.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object zone {

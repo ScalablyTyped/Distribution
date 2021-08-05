@@ -47,7 +47,7 @@ trait FileSearch extends StObject {
   
   def NewSearch(): Unit = js.native
   
-  @JSName("Office.FileSearch_typekey")
+  /* private */ @JSName("Office.FileSearch_typekey")
   var OfficeDotFileSearch_typekey: FileSearch = js.native
   
   def PropertyTests(Index: Double): PropertyTest = js.native

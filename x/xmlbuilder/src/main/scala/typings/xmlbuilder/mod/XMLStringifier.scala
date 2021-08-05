@@ -150,169 +150,115 @@ trait XMLStringifier extends StObject {
 }
 object XMLStringifier {
   
-  @scala.inline
-  def apply(): XMLStringifier = {
+  inline def apply(): XMLStringifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XMLStringifier]
   }
   
-  @scala.inline
-  implicit class XMLStringifierMutableBuilder[Self <: XMLStringifier] (val x: Self) extends AnyVal {
+  extension [Self <: XMLStringifier](x: Self) {
     
-    @scala.inline
-    def setAttEscape(value: /* v */ String => String): Self = StObject.set(x, "attEscape", js.Any.fromFunction1(value))
+    inline def setAttEscape(value: /* v */ String => String): Self = StObject.set(x, "attEscape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttEscapeUndefined: Self = StObject.set(x, "attEscape", js.undefined)
+    inline def setAttEscapeUndefined: Self = StObject.set(x, "attEscape", js.undefined)
     
-    @scala.inline
-    def setAttValue(value: /* v */ js.Any => String): Self = StObject.set(x, "attValue", js.Any.fromFunction1(value))
+    inline def setAttValue(value: /* v */ js.Any => String): Self = StObject.set(x, "attValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttValueUndefined: Self = StObject.set(x, "attValue", js.undefined)
+    inline def setAttValueUndefined: Self = StObject.set(x, "attValue", js.undefined)
     
-    @scala.inline
-    def setCdata(value: /* v */ js.Any => String): Self = StObject.set(x, "cdata", js.Any.fromFunction1(value))
+    inline def setCdata(value: /* v */ js.Any => String): Self = StObject.set(x, "cdata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
+    inline def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
     
-    @scala.inline
-    def setComment(value: /* v */ js.Any => String): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
+    inline def setComment(value: /* v */ js.Any => String): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setConvertAttKey(value: String): Self = StObject.set(x, "convertAttKey", value.asInstanceOf[js.Any])
+    inline def setConvertAttKey(value: String): Self = StObject.set(x, "convertAttKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertAttKeyUndefined: Self = StObject.set(x, "convertAttKey", js.undefined)
+    inline def setConvertAttKeyUndefined: Self = StObject.set(x, "convertAttKey", js.undefined)
     
-    @scala.inline
-    def setConvertCDataKey(value: String): Self = StObject.set(x, "convertCDataKey", value.asInstanceOf[js.Any])
+    inline def setConvertCDataKey(value: String): Self = StObject.set(x, "convertCDataKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertCDataKeyUndefined: Self = StObject.set(x, "convertCDataKey", js.undefined)
+    inline def setConvertCDataKeyUndefined: Self = StObject.set(x, "convertCDataKey", js.undefined)
     
-    @scala.inline
-    def setConvertCommentKey(value: String): Self = StObject.set(x, "convertCommentKey", value.asInstanceOf[js.Any])
+    inline def setConvertCommentKey(value: String): Self = StObject.set(x, "convertCommentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertCommentKeyUndefined: Self = StObject.set(x, "convertCommentKey", js.undefined)
+    inline def setConvertCommentKeyUndefined: Self = StObject.set(x, "convertCommentKey", js.undefined)
     
-    @scala.inline
-    def setConvertPIKey(value: String): Self = StObject.set(x, "convertPIKey", value.asInstanceOf[js.Any])
+    inline def setConvertPIKey(value: String): Self = StObject.set(x, "convertPIKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertPIKeyUndefined: Self = StObject.set(x, "convertPIKey", js.undefined)
+    inline def setConvertPIKeyUndefined: Self = StObject.set(x, "convertPIKey", js.undefined)
     
-    @scala.inline
-    def setConvertRawKey(value: String): Self = StObject.set(x, "convertRawKey", value.asInstanceOf[js.Any])
+    inline def setConvertRawKey(value: String): Self = StObject.set(x, "convertRawKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertRawKeyUndefined: Self = StObject.set(x, "convertRawKey", js.undefined)
+    inline def setConvertRawKeyUndefined: Self = StObject.set(x, "convertRawKey", js.undefined)
     
-    @scala.inline
-    def setConvertTextKey(value: String): Self = StObject.set(x, "convertTextKey", value.asInstanceOf[js.Any])
+    inline def setConvertTextKey(value: String): Self = StObject.set(x, "convertTextKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertTextKeyUndefined: Self = StObject.set(x, "convertTextKey", js.undefined)
+    inline def setConvertTextKeyUndefined: Self = StObject.set(x, "convertTextKey", js.undefined)
     
-    @scala.inline
-    def setDtdAttDefault(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttDefault", js.Any.fromFunction1(value))
+    inline def setDtdAttDefault(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttDefault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDtdAttDefaultUndefined: Self = StObject.set(x, "dtdAttDefault", js.undefined)
+    inline def setDtdAttDefaultUndefined: Self = StObject.set(x, "dtdAttDefault", js.undefined)
     
-    @scala.inline
-    def setDtdAttType(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttType", js.Any.fromFunction1(value))
+    inline def setDtdAttType(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDtdAttTypeUndefined: Self = StObject.set(x, "dtdAttType", js.undefined)
+    inline def setDtdAttTypeUndefined: Self = StObject.set(x, "dtdAttType", js.undefined)
     
-    @scala.inline
-    def setDtdElementValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdElementValue", js.Any.fromFunction1(value))
+    inline def setDtdElementValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdElementValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDtdElementValueUndefined: Self = StObject.set(x, "dtdElementValue", js.undefined)
+    inline def setDtdElementValueUndefined: Self = StObject.set(x, "dtdElementValue", js.undefined)
     
-    @scala.inline
-    def setDtdEntityValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdEntityValue", js.Any.fromFunction1(value))
+    inline def setDtdEntityValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdEntityValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDtdEntityValueUndefined: Self = StObject.set(x, "dtdEntityValue", js.undefined)
+    inline def setDtdEntityValueUndefined: Self = StObject.set(x, "dtdEntityValue", js.undefined)
     
-    @scala.inline
-    def setDtdNData(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdNData", js.Any.fromFunction1(value))
+    inline def setDtdNData(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdNData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDtdNDataUndefined: Self = StObject.set(x, "dtdNData", js.undefined)
+    inline def setDtdNDataUndefined: Self = StObject.set(x, "dtdNData", js.undefined)
     
-    @scala.inline
-    def setDtdPubID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdPubID", js.Any.fromFunction1(value))
+    inline def setDtdPubID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdPubID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDtdPubIDUndefined: Self = StObject.set(x, "dtdPubID", js.undefined)
+    inline def setDtdPubIDUndefined: Self = StObject.set(x, "dtdPubID", js.undefined)
     
-    @scala.inline
-    def setDtdSysID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdSysID", js.Any.fromFunction1(value))
+    inline def setDtdSysID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdSysID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDtdSysIDUndefined: Self = StObject.set(x, "dtdSysID", js.undefined)
+    inline def setDtdSysIDUndefined: Self = StObject.set(x, "dtdSysID", js.undefined)
     
-    @scala.inline
-    def setInsTarget(value: /* v */ js.Any => String): Self = StObject.set(x, "insTarget", js.Any.fromFunction1(value))
+    inline def setInsTarget(value: /* v */ js.Any => String): Self = StObject.set(x, "insTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsTargetUndefined: Self = StObject.set(x, "insTarget", js.undefined)
+    inline def setInsTargetUndefined: Self = StObject.set(x, "insTarget", js.undefined)
     
-    @scala.inline
-    def setInsValue(value: /* v */ js.Any => String): Self = StObject.set(x, "insValue", js.Any.fromFunction1(value))
+    inline def setInsValue(value: /* v */ js.Any => String): Self = StObject.set(x, "insValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsValueUndefined: Self = StObject.set(x, "insValue", js.undefined)
+    inline def setInsValueUndefined: Self = StObject.set(x, "insValue", js.undefined)
     
-    @scala.inline
-    def setName(value: /* v */ js.Any => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: /* v */ js.Any => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRaw(value: /* v */ js.Any => String): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+    inline def setRaw(value: /* v */ js.Any => String): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setText(value: /* v */ js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: /* v */ js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextEscape(value: /* v */ String => String): Self = StObject.set(x, "textEscape", js.Any.fromFunction1(value))
+    inline def setTextEscape(value: /* v */ String => String): Self = StObject.set(x, "textEscape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextEscapeUndefined: Self = StObject.set(x, "textEscape", js.undefined)
+    inline def setTextEscapeUndefined: Self = StObject.set(x, "textEscape", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setXmlEncoding(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlEncoding", js.Any.fromFunction1(value))
+    inline def setXmlEncoding(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXmlEncodingUndefined: Self = StObject.set(x, "xmlEncoding", js.undefined)
+    inline def setXmlEncodingUndefined: Self = StObject.set(x, "xmlEncoding", js.undefined)
     
-    @scala.inline
-    def setXmlStandalone(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlStandalone", js.Any.fromFunction1(value))
+    inline def setXmlStandalone(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlStandalone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXmlStandaloneUndefined: Self = StObject.set(x, "xmlStandalone", js.undefined)
+    inline def setXmlStandaloneUndefined: Self = StObject.set(x, "xmlStandalone", js.undefined)
     
-    @scala.inline
-    def setXmlVersion(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlVersion", js.Any.fromFunction1(value))
+    inline def setXmlVersion(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
+    inline def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
   }
 }

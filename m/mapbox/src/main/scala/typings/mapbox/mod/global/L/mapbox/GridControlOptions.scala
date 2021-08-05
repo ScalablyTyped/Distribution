@@ -20,43 +20,31 @@ trait GridControlOptions
 }
 object GridControlOptions {
   
-  @scala.inline
-  def apply(): GridControlOptions = {
+  inline def apply(): GridControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridControlOptions]
   }
   
-  @scala.inline
-  implicit class GridControlOptionsMutableBuilder[Self <: GridControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridControlOptions](x: Self) {
     
-    @scala.inline
-    def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+    inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPinnable(value: Boolean): Self = StObject.set(x, "pinnable", value.asInstanceOf[js.Any])
+    inline def setPinnable(value: Boolean): Self = StObject.set(x, "pinnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnableUndefined: Self = StObject.set(x, "pinnable", js.undefined)
+    inline def setPinnableUndefined: Self = StObject.set(x, "pinnable", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTouchTeaser(value: Boolean): Self = StObject.set(x, "touchTeaser", value.asInstanceOf[js.Any])
+    inline def setTouchTeaser(value: Boolean): Self = StObject.set(x, "touchTeaser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchTeaserUndefined: Self = StObject.set(x, "touchTeaser", js.undefined)
+    inline def setTouchTeaserUndefined: Self = StObject.set(x, "touchTeaser", js.undefined)
   }
 }

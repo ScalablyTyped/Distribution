@@ -28,8 +28,7 @@ object mod {
     def this(props: Props[js.Any, js.Any], context: js.Any) = this()
   }
   
-  @scala.inline
-  def applyLifecycle[P, S](component: ComponentClass[P, S]): ComponentClass[P & (LifecycleDispatchProps[P, S]), ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyLifecycle")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & (LifecycleDispatchProps[P, S]), ComponentState]]
+  inline def applyLifecycle[P, S](component: ComponentClass[P, S]): ComponentClass[P & (LifecycleDispatchProps[P, S]), ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyLifecycle")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & (LifecycleDispatchProps[P, S]), ComponentState]]
   
   @JSImport("react-lifecycle-component", "connectWithLifecycle")
   @js.native
@@ -43,17 +42,14 @@ object mod {
   }
   object LifecycleStateProps {
     
-    @scala.inline
-    def apply[P, S](component: ComponentClass[P, S]): LifecycleStateProps[P, S] = {
+    inline def apply[P, S](component: ComponentClass[P, S]): LifecycleStateProps[P, S] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[LifecycleStateProps[P, S]]
     }
     
-    @scala.inline
-    implicit class LifecycleStatePropsMutableBuilder[Self <: LifecycleStateProps[?, ?], P, S] (val x: Self & (LifecycleStateProps[P, S])) extends AnyVal {
+    extension [Self <: LifecycleStateProps[?, ?], P, S](x: Self & (LifecycleStateProps[P, S])) {
       
-      @scala.inline
-      def setComponent(value: ComponentClass[P, S]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentClass[P, S]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,8 +59,7 @@ object mod {
        with ComponentLifecycle[P, S, js.Any]
   object Props {
     
-    @scala.inline
-    def apply[P, S](component: ComponentClass[P, S]): Props[P, S] = {
+    inline def apply[P, S](component: ComponentClass[P, S]): Props[P, S] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props[P, S]]
     }

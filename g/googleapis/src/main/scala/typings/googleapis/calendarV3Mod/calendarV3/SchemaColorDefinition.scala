@@ -19,25 +19,19 @@ trait SchemaColorDefinition extends StObject {
 }
 object SchemaColorDefinition {
   
-  @scala.inline
-  def apply(): SchemaColorDefinition = {
+  inline def apply(): SchemaColorDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaColorDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaColorDefinitionMutableBuilder[Self <: SchemaColorDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaColorDefinition](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+    inline def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
+    inline def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
   }
 }

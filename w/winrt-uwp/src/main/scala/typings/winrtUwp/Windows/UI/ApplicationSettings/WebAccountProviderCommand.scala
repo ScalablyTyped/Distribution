@@ -19,19 +19,15 @@ trait WebAccountProviderCommand extends StObject {
 }
 object WebAccountProviderCommand {
   
-  @scala.inline
-  def apply(invoked: /* command */ WebAccountProviderCommand => Unit, webAccountProvider: WebAccountProvider): WebAccountProviderCommand = {
+  inline def apply(invoked: /* command */ WebAccountProviderCommand => Unit, webAccountProvider: WebAccountProvider): WebAccountProviderCommand = {
     val __obj = js.Dynamic.literal(invoked = js.Any.fromFunction1(invoked), webAccountProvider = webAccountProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAccountProviderCommand]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderCommandMutableBuilder[Self <: WebAccountProviderCommand] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderCommand](x: Self) {
     
-    @scala.inline
-    def setInvoked(value: /* command */ WebAccountProviderCommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+    inline def setInvoked(value: /* command */ WebAccountProviderCommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWebAccountProvider(value: WebAccountProvider): Self = StObject.set(x, "webAccountProvider", value.asInstanceOf[js.Any])
+    inline def setWebAccountProvider(value: WebAccountProvider): Self = StObject.set(x, "webAccountProvider", value.asInstanceOf[js.Any])
   }
 }

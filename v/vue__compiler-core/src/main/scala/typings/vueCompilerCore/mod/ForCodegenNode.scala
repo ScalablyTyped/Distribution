@@ -26,8 +26,7 @@ trait ForCodegenNode
 }
 object ForCodegenNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: ForRenderListExpression,
     disableTracking: Boolean,
     loc: SourceLocation,
@@ -40,22 +39,16 @@ object ForCodegenNode {
     __obj.asInstanceOf[ForCodegenNode]
   }
   
-  @scala.inline
-  implicit class ForCodegenNodeMutableBuilder[Self <: ForCodegenNode] (val x: Self) extends AnyVal {
+  extension [Self <: ForCodegenNode](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ForRenderListExpression): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ForRenderListExpression): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBlock(value: `true`): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
+    inline def setIsBlock(value: `true`): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchFlag(value: String): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
+    inline def setPatchFlag(value: String): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: Unit): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Unit): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: js.Symbol): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Symbol): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

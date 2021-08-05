@@ -69,8 +69,7 @@ trait KmlLod
 }
 object KmlLod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -100,34 +99,24 @@ object KmlLod {
     __obj.asInstanceOf[KmlLod]
   }
   
-  @scala.inline
-  implicit class KmlLodMutableBuilder[Self <: KmlLod] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLod](x: Self) {
     
-    @scala.inline
-    def setGetMaxFadeExtent(value: () => Double): Self = StObject.set(x, "getMaxFadeExtent", js.Any.fromFunction0(value))
+    inline def setGetMaxFadeExtent(value: () => Double): Self = StObject.set(x, "getMaxFadeExtent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxLodPixels(value: () => Double): Self = StObject.set(x, "getMaxLodPixels", js.Any.fromFunction0(value))
+    inline def setGetMaxLodPixels(value: () => Double): Self = StObject.set(x, "getMaxLodPixels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinFadeExtent(value: () => Double): Self = StObject.set(x, "getMinFadeExtent", js.Any.fromFunction0(value))
+    inline def setGetMinFadeExtent(value: () => Double): Self = StObject.set(x, "getMinFadeExtent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinLodPixels(value: () => Double): Self = StObject.set(x, "getMinLodPixels", js.Any.fromFunction0(value))
+    inline def setGetMinLodPixels(value: () => Double): Self = StObject.set(x, "getMinLodPixels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    inline def setSet(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetMaxFadeExtent(value: Double => Unit): Self = StObject.set(x, "setMaxFadeExtent", js.Any.fromFunction1(value))
+    inline def setSetMaxFadeExtent(value: Double => Unit): Self = StObject.set(x, "setMaxFadeExtent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxLodPixels(value: Double => Unit): Self = StObject.set(x, "setMaxLodPixels", js.Any.fromFunction1(value))
+    inline def setSetMaxLodPixels(value: Double => Unit): Self = StObject.set(x, "setMaxLodPixels", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinFadeExtent(value: Double => Unit): Self = StObject.set(x, "setMinFadeExtent", js.Any.fromFunction1(value))
+    inline def setSetMinFadeExtent(value: Double => Unit): Self = StObject.set(x, "setMinFadeExtent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinLodPixels(value: Double => Unit): Self = StObject.set(x, "setMinLodPixels", js.Any.fromFunction1(value))
+    inline def setSetMinLodPixels(value: Double => Unit): Self = StObject.set(x, "setMinLodPixels", js.Any.fromFunction1(value))
   }
 }

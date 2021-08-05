@@ -16,20 +16,16 @@ trait Parentheses
 }
 object Parentheses {
   
-  @scala.inline
-  def apply(children: List[CssNode]): Parentheses = {
+  inline def apply(children: List[CssNode]): Parentheses = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Parentheses")
     __obj.asInstanceOf[Parentheses]
   }
   
-  @scala.inline
-  implicit class ParenthesesMutableBuilder[Self <: Parentheses] (val x: Self) extends AnyVal {
+  extension [Self <: Parentheses](x: Self) {
     
-    @scala.inline
-    def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Parentheses): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Parentheses): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

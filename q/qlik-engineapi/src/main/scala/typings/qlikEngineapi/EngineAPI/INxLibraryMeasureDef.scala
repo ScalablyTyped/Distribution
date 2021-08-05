@@ -38,34 +38,25 @@ trait INxLibraryMeasureDef extends StObject {
 }
 object INxLibraryMeasureDef {
   
-  @scala.inline
-  def apply(qActiveExpression: Double, qDef: String, qExpressions: js.Array[String], qLabel: String): INxLibraryMeasureDef = {
+  inline def apply(qActiveExpression: Double, qDef: String, qExpressions: js.Array[String], qLabel: String): INxLibraryMeasureDef = {
     val __obj = js.Dynamic.literal(qActiveExpression = qActiveExpression.asInstanceOf[js.Any], qDef = qDef.asInstanceOf[js.Any], qExpressions = qExpressions.asInstanceOf[js.Any], qLabel = qLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxLibraryMeasureDef]
   }
   
-  @scala.inline
-  implicit class INxLibraryMeasureDefMutableBuilder[Self <: INxLibraryMeasureDef] (val x: Self) extends AnyVal {
+  extension [Self <: INxLibraryMeasureDef](x: Self) {
     
-    @scala.inline
-    def setQActiveExpression(value: Double): Self = StObject.set(x, "qActiveExpression", value.asInstanceOf[js.Any])
+    inline def setQActiveExpression(value: Double): Self = StObject.set(x, "qActiveExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDef(value: String): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
+    inline def setQDef(value: String): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExpressions(value: js.Array[String]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
+    inline def setQExpressions(value: js.Array[String]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
+    inline def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
+    inline def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupingUndefined: Self = StObject.set(x, "qGrouping", js.undefined)
+    inline def setQGroupingUndefined: Self = StObject.set(x, "qGrouping", js.undefined)
     
-    @scala.inline
-    def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
+    inline def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
   }
 }

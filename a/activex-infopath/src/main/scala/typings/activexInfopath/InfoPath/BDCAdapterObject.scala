@@ -10,7 +10,7 @@ trait BDCAdapterObject extends StObject {
   
   val EntityNamespace: String
   
-  @JSName("InfoPath.BDCAdapterObject_typekey")
+  /* private */ @JSName("InfoPath.BDCAdapterObject_typekey")
   var InfoPathDotBDCAdapterObject_typekey: BDCAdapterObject
   
   val LOBSystemInstance: String
@@ -31,8 +31,7 @@ trait BDCAdapterObject extends StObject {
 }
 object BDCAdapterObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EntityName: String,
     EntityNamespace: String,
     InfoPathDotBDCAdapterObject_typekey: BDCAdapterObject,
@@ -50,40 +49,28 @@ object BDCAdapterObject {
     __obj.asInstanceOf[BDCAdapterObject]
   }
   
-  @scala.inline
-  implicit class BDCAdapterObjectMutableBuilder[Self <: BDCAdapterObject] (val x: Self) extends AnyVal {
+  extension [Self <: BDCAdapterObject](x: Self) {
     
-    @scala.inline
-    def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
+    inline def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityNamespace(value: String): Self = StObject.set(x, "EntityNamespace", value.asInstanceOf[js.Any])
+    inline def setEntityNamespace(value: String): Self = StObject.set(x, "EntityNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotBDCAdapterObject_typekey(value: BDCAdapterObject): Self = StObject.set(x, "InfoPath.BDCAdapterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotBDCAdapterObject_typekey(value: BDCAdapterObject): Self = StObject.set(x, "InfoPath.BDCAdapterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOBSystemInstance(value: String): Self = StObject.set(x, "LOBSystemInstance", value.asInstanceOf[js.Any])
+    inline def setLOBSystemInstance(value: String): Self = StObject.set(x, "LOBSystemInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
+    inline def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecificFinder(value: String): Self = StObject.set(x, "SpecificFinder", value.asInstanceOf[js.Any])
+    inline def setSpecificFinder(value: String): Self = StObject.set(x, "SpecificFinder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitAdapterName(value: String): Self = StObject.set(x, "SubmitAdapterName", value.asInstanceOf[js.Any])
+    inline def setSubmitAdapterName(value: String): Self = StObject.set(x, "SubmitAdapterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
+    inline def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait Bank extends StObject {
 }
 object Bank {
   
-  @scala.inline
-  def apply(bank: String): Bank = {
+  inline def apply(bank: String): Bank = {
     val __obj = js.Dynamic.literal(bank = bank.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bank]
   }
   
-  @scala.inline
-  implicit class BankMutableBuilder[Self <: Bank] (val x: Self) extends AnyVal {
+  extension [Self <: Bank](x: Self) {
     
-    @scala.inline
-    def setBank(value: String): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
+    inline def setBank(value: String): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
   }
 }

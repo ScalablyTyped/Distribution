@@ -61,8 +61,7 @@ trait NodeSystemInfo extends StObject {
 }
 object NodeSystemInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     architecture: String,
     bootID: String,
     containerRuntimeVersion: String,
@@ -78,37 +77,26 @@ object NodeSystemInfo {
     __obj.asInstanceOf[NodeSystemInfo]
   }
   
-  @scala.inline
-  implicit class NodeSystemInfoMutableBuilder[Self <: NodeSystemInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSystemInfo](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootID(value: String): Self = StObject.set(x, "bootID", value.asInstanceOf[js.Any])
+    inline def setBootID(value: String): Self = StObject.set(x, "bootID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerRuntimeVersion(value: String): Self = StObject.set(x, "containerRuntimeVersion", value.asInstanceOf[js.Any])
+    inline def setContainerRuntimeVersion(value: String): Self = StObject.set(x, "containerRuntimeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelVersion(value: String): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
+    inline def setKernelVersion(value: String): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKubeProxyVersion(value: String): Self = StObject.set(x, "kubeProxyVersion", value.asInstanceOf[js.Any])
+    inline def setKubeProxyVersion(value: String): Self = StObject.set(x, "kubeProxyVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKubeletVersion(value: String): Self = StObject.set(x, "kubeletVersion", value.asInstanceOf[js.Any])
+    inline def setKubeletVersion(value: String): Self = StObject.set(x, "kubeletVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineID(value: String): Self = StObject.set(x, "machineID", value.asInstanceOf[js.Any])
+    inline def setMachineID(value: String): Self = StObject.set(x, "machineID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsImage(value: String): Self = StObject.set(x, "osImage", value.asInstanceOf[js.Any])
+    inline def setOsImage(value: String): Self = StObject.set(x, "osImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUUID(value: String): Self = StObject.set(x, "systemUUID", value.asInstanceOf[js.Any])
+    inline def setSystemUUID(value: String): Self = StObject.set(x, "systemUUID", value.asInstanceOf[js.Any])
   }
 }

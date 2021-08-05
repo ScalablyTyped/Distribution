@@ -29,8 +29,7 @@ trait TopicRuleCloudwatchAlarm extends StObject {
 }
 object TopicRuleCloudwatchAlarm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alarmName: Input[String],
     roleArn: Input[String],
     stateReason: Input[String],
@@ -40,19 +39,14 @@ object TopicRuleCloudwatchAlarm {
     __obj.asInstanceOf[TopicRuleCloudwatchAlarm]
   }
   
-  @scala.inline
-  implicit class TopicRuleCloudwatchAlarmMutableBuilder[Self <: TopicRuleCloudwatchAlarm] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleCloudwatchAlarm](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: Input[String]): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: Input[String]): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: Input[String]): Self = StObject.set(x, "stateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: Input[String]): Self = StObject.set(x, "stateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateValue(value: Input[String]): Self = StObject.set(x, "stateValue", value.asInstanceOf[js.Any])
+    inline def setStateValue(value: Input[String]): Self = StObject.set(x, "stateValue", value.asInstanceOf[js.Any])
   }
 }

@@ -15,31 +15,23 @@ trait keyinAxisNamestring extends StObject {
 }
 object keyinAxisNamestring {
   
-  @scala.inline
-  def apply(): keyinAxisNamestring = {
+  inline def apply(): keyinAxisNamestring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[keyinAxisNamestring]
   }
   
-  @scala.inline
-  implicit class keyinAxisNamestringMutableBuilder[Self <: keyinAxisNamestring] (val x: Self) extends AnyVal {
+  extension [Self <: keyinAxisNamestring](x: Self) {
     
-    @scala.inline
-    def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

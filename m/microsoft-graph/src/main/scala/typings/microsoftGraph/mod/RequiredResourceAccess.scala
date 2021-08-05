@@ -17,28 +17,21 @@ trait RequiredResourceAccess extends StObject {
 }
 object RequiredResourceAccess {
   
-  @scala.inline
-  def apply(): RequiredResourceAccess = {
+  inline def apply(): RequiredResourceAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequiredResourceAccess]
   }
   
-  @scala.inline
-  implicit class RequiredResourceAccessMutableBuilder[Self <: RequiredResourceAccess] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredResourceAccess](x: Self) {
     
-    @scala.inline
-    def setResourceAccess(value: js.Array[ResourceAccess]): Self = StObject.set(x, "resourceAccess", value.asInstanceOf[js.Any])
+    inline def setResourceAccess(value: js.Array[ResourceAccess]): Self = StObject.set(x, "resourceAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAccessUndefined: Self = StObject.set(x, "resourceAccess", js.undefined)
+    inline def setResourceAccessUndefined: Self = StObject.set(x, "resourceAccess", js.undefined)
     
-    @scala.inline
-    def setResourceAccessVarargs(value: ResourceAccess*): Self = StObject.set(x, "resourceAccess", js.Array(value :_*))
+    inline def setResourceAccessVarargs(value: ResourceAccess*): Self = StObject.set(x, "resourceAccess", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAppId(value: String): Self = StObject.set(x, "resourceAppId", value.asInstanceOf[js.Any])
+    inline def setResourceAppId(value: String): Self = StObject.set(x, "resourceAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAppIdUndefined: Self = StObject.set(x, "resourceAppId", js.undefined)
+    inline def setResourceAppIdUndefined: Self = StObject.set(x, "resourceAppId", js.undefined)
   }
 }

@@ -26,32 +26,24 @@ object accordionMod {
   }
   object AccordionProps {
     
-    @scala.inline
-    def apply(items: js.Array[Content]): AccordionProps = {
+    inline def apply(items: js.Array[Content]): AccordionProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccordionProps]
     }
     
-    @scala.inline
-    implicit class AccordionPropsMutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionProps](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[Content]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Content]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Content*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Content*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKeepOnlyOneOpen(value: Boolean): Self = StObject.set(x, "keepOnlyOneOpen", value.asInstanceOf[js.Any])
+      inline def setKeepOnlyOneOpen(value: Boolean): Self = StObject.set(x, "keepOnlyOneOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepOnlyOneOpenUndefined: Self = StObject.set(x, "keepOnlyOneOpen", js.undefined)
+      inline def setKeepOnlyOneOpenUndefined: Self = StObject.set(x, "keepOnlyOneOpen", js.undefined)
       
-      @scala.inline
-      def setTheme(value: BaseFontSize): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BaseFontSize): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

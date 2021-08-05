@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(stream: Stream): Handle = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Handle]
+  inline def apply(stream: Stream): Handle = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Handle]
   
   @JSImport("pause", JSImport.Namespace)
   @js.native
@@ -22,20 +21,16 @@ object mod {
   }
   object Handle {
     
-    @scala.inline
-    def apply(end: () => Unit, resume: () => Unit): Handle = {
+    inline def apply(end: () => Unit, resume: () => Unit): Handle = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), resume = js.Any.fromFunction0(resume))
       __obj.asInstanceOf[Handle]
     }
     
-    @scala.inline
-    implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+    extension [Self <: Handle](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     }
   }
 }

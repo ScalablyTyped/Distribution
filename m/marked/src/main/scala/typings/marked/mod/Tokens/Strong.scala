@@ -18,23 +18,18 @@ trait Strong
 }
 object Strong {
   
-  @scala.inline
-  def apply(raw: String, text: String): Strong = {
+  inline def apply(raw: String, text: String): Strong = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("strong")
     __obj.asInstanceOf[Strong]
   }
   
-  @scala.inline
-  implicit class StrongMutableBuilder[Self <: Strong] (val x: Self) extends AnyVal {
+  extension [Self <: Strong](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: strong): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: strong): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ trait SmsTextMessage
      with ISmsTextMessage
 object SmsTextMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: String,
     encoding: SmsEncoding,
     from: String,

@@ -61,49 +61,35 @@ trait PlusGeolocationGeolocationError extends StObject {
 }
 object PlusGeolocationGeolocationError {
   
-  @scala.inline
-  def apply(): PlusGeolocationGeolocationError = {
+  inline def apply(): PlusGeolocationGeolocationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusGeolocationGeolocationError]
   }
   
-  @scala.inline
-  implicit class PlusGeolocationGeolocationErrorMutableBuilder[Self <: PlusGeolocationGeolocationError] (val x: Self) extends AnyVal {
+  extension [Self <: PlusGeolocationGeolocationError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPERMISSION_DENIED(value: Double): Self = StObject.set(x, "PERMISSION_DENIED", value.asInstanceOf[js.Any])
+    inline def setPERMISSION_DENIED(value: Double): Self = StObject.set(x, "PERMISSION_DENIED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPERMISSION_DENIEDUndefined: Self = StObject.set(x, "PERMISSION_DENIED", js.undefined)
+    inline def setPERMISSION_DENIEDUndefined: Self = StObject.set(x, "PERMISSION_DENIED", js.undefined)
     
-    @scala.inline
-    def setPOSITION_UNAVAILABLE(value: Double): Self = StObject.set(x, "POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
+    inline def setPOSITION_UNAVAILABLE(value: Double): Self = StObject.set(x, "POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPOSITION_UNAVAILABLEUndefined: Self = StObject.set(x, "POSITION_UNAVAILABLE", js.undefined)
+    inline def setPOSITION_UNAVAILABLEUndefined: Self = StObject.set(x, "POSITION_UNAVAILABLE", js.undefined)
     
-    @scala.inline
-    def setTIMEOUT(value: Double): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
+    inline def setTIMEOUT(value: Double): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTIMEOUTUndefined: Self = StObject.set(x, "TIMEOUT", js.undefined)
+    inline def setTIMEOUTUndefined: Self = StObject.set(x, "TIMEOUT", js.undefined)
     
-    @scala.inline
-    def setUNKNOWN_ERROR(value: Double): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+    inline def setUNKNOWN_ERROR(value: Double): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNKNOWN_ERRORUndefined: Self = StObject.set(x, "UNKNOWN_ERROR", js.undefined)
+    inline def setUNKNOWN_ERRORUndefined: Self = StObject.set(x, "UNKNOWN_ERROR", js.undefined)
   }
 }

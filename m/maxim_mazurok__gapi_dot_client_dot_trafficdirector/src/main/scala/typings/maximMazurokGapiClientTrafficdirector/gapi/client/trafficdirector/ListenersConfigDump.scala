@@ -17,37 +17,27 @@ trait ListenersConfigDump extends StObject {
 }
 object ListenersConfigDump {
   
-  @scala.inline
-  def apply(): ListenersConfigDump = {
+  inline def apply(): ListenersConfigDump = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListenersConfigDump]
   }
   
-  @scala.inline
-  implicit class ListenersConfigDumpMutableBuilder[Self <: ListenersConfigDump] (val x: Self) extends AnyVal {
+  extension [Self <: ListenersConfigDump](x: Self) {
     
-    @scala.inline
-    def setDynamicListeners(value: js.Array[DynamicListener]): Self = StObject.set(x, "dynamicListeners", value.asInstanceOf[js.Any])
+    inline def setDynamicListeners(value: js.Array[DynamicListener]): Self = StObject.set(x, "dynamicListeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicListenersUndefined: Self = StObject.set(x, "dynamicListeners", js.undefined)
+    inline def setDynamicListenersUndefined: Self = StObject.set(x, "dynamicListeners", js.undefined)
     
-    @scala.inline
-    def setDynamicListenersVarargs(value: DynamicListener*): Self = StObject.set(x, "dynamicListeners", js.Array(value :_*))
+    inline def setDynamicListenersVarargs(value: DynamicListener*): Self = StObject.set(x, "dynamicListeners", js.Array(value :_*))
     
-    @scala.inline
-    def setStaticListeners(value: js.Array[StaticListener]): Self = StObject.set(x, "staticListeners", value.asInstanceOf[js.Any])
+    inline def setStaticListeners(value: js.Array[StaticListener]): Self = StObject.set(x, "staticListeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticListenersUndefined: Self = StObject.set(x, "staticListeners", js.undefined)
+    inline def setStaticListenersUndefined: Self = StObject.set(x, "staticListeners", js.undefined)
     
-    @scala.inline
-    def setStaticListenersVarargs(value: StaticListener*): Self = StObject.set(x, "staticListeners", js.Array(value :_*))
+    inline def setStaticListenersVarargs(value: StaticListener*): Self = StObject.set(x, "staticListeners", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+    inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
+    inline def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

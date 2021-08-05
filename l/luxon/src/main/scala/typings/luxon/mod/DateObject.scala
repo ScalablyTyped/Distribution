@@ -13,19 +13,15 @@ trait DateObject
 }
 object DateObject {
   
-  @scala.inline
-  def apply(): DateObject = {
+  inline def apply(): DateObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateObject]
   }
   
-  @scala.inline
-  implicit class DateObjectMutableBuilder[Self <: DateObject] (val x: Self) extends AnyVal {
+  extension [Self <: DateObject](x: Self) {
     
-    @scala.inline
-    def setZone(value: String | Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String | Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

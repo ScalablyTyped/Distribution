@@ -11,19 +11,15 @@ trait ReadOnly extends StObject {
 }
 object ReadOnly {
   
-  @scala.inline
-  def apply(): ReadOnly = {
+  inline def apply(): ReadOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadOnly]
   }
   
-  @scala.inline
-  implicit class ReadOnlyMutableBuilder[Self <: ReadOnly] (val x: Self) extends AnyVal {
+  extension [Self <: ReadOnly](x: Self) {
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
   }
 }

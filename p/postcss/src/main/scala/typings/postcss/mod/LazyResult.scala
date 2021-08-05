@@ -120,8 +120,7 @@ trait LazyResult extends StObject {
 }
 object LazyResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: FnCallOnrejected,
     content: String,
     css: String,
@@ -139,40 +138,28 @@ object LazyResult {
     __obj.asInstanceOf[LazyResult]
   }
   
-  @scala.inline
-  implicit class LazyResultMutableBuilder[Self <: LazyResult] (val x: Self) extends AnyVal {
+  extension [Self <: LazyResult](x: Self) {
     
-    @scala.inline
-    def setCatch(value: FnCallOnrejected): Self = StObject.set(x, "catch", value.asInstanceOf[js.Any])
+    inline def setCatch(value: FnCallOnrejected): Self = StObject.set(x, "catch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: ResultMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: ResultMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: js.Array[ResultMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[ResultMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: ResultMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: ResultMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setOpts(value: ResultOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: ResultOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessor(value: Processor): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
+    inline def setProcessor(value: Processor): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: Root_): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Root_): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThen(value: FnCall): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    inline def setThen(value: FnCall): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: () => js.Array[Warning]): Self = StObject.set(x, "warnings", js.Any.fromFunction0(value))
+    inline def setWarnings(value: () => js.Array[Warning]): Self = StObject.set(x, "warnings", js.Any.fromFunction0(value))
   }
 }

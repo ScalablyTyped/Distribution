@@ -20,25 +20,19 @@ trait ISpacer
 }
 object ISpacer {
   
-  @scala.inline
-  def apply(): ISpacer = {
+  inline def apply(): ISpacer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISpacer]
   }
   
-  @scala.inline
-  implicit class ISpacerMutableBuilder[Self <: ISpacer] (val x: Self) extends AnyVal {
+  extension [Self <: ISpacer](x: Self) {
     
-    @scala.inline
-    def setSetWidth(value: /* width */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: /* width */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
+    inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

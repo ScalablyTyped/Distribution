@@ -44,8 +44,7 @@ trait IColorPalette extends StObject {
 }
 object IColorPalette {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amber: IPalette,
     blue: IPalette,
     `blue-grey`: IPalette,
@@ -74,61 +73,42 @@ object IColorPalette {
     __obj.asInstanceOf[IColorPalette]
   }
   
-  @scala.inline
-  implicit class IColorPaletteMutableBuilder[Self <: IColorPalette] (val x: Self) extends AnyVal {
+  extension [Self <: IColorPalette](x: Self) {
     
-    @scala.inline
-    def setAmber(value: IPalette): Self = StObject.set(x, "amber", value.asInstanceOf[js.Any])
+    inline def setAmber(value: IPalette): Self = StObject.set(x, "amber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlue(value: IPalette): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: IPalette): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBlue-grey`(value: IPalette): Self = StObject.set(x, "blue-grey", value.asInstanceOf[js.Any])
+    inline def `setBlue-grey`(value: IPalette): Self = StObject.set(x, "blue-grey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrown(value: IPalette): Self = StObject.set(x, "brown", value.asInstanceOf[js.Any])
+    inline def setBrown(value: IPalette): Self = StObject.set(x, "brown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyan(value: IPalette): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
+    inline def setCyan(value: IPalette): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDeep-orange`(value: IPalette): Self = StObject.set(x, "deep-orange", value.asInstanceOf[js.Any])
+    inline def `setDeep-orange`(value: IPalette): Self = StObject.set(x, "deep-orange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDeep-purple`(value: IPalette): Self = StObject.set(x, "deep-purple", value.asInstanceOf[js.Any])
+    inline def `setDeep-purple`(value: IPalette): Self = StObject.set(x, "deep-purple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreen(value: IPalette): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: IPalette): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey(value: IPalette): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+    inline def setGrey(value: IPalette): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndigo(value: IPalette): Self = StObject.set(x, "indigo", value.asInstanceOf[js.Any])
+    inline def setIndigo(value: IPalette): Self = StObject.set(x, "indigo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLight-blue`(value: IPalette): Self = StObject.set(x, "light-blue", value.asInstanceOf[js.Any])
+    inline def `setLight-blue`(value: IPalette): Self = StObject.set(x, "light-blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLight-green`(value: IPalette): Self = StObject.set(x, "light-green", value.asInstanceOf[js.Any])
+    inline def `setLight-green`(value: IPalette): Self = StObject.set(x, "light-green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLime(value: IPalette): Self = StObject.set(x, "lime", value.asInstanceOf[js.Any])
+    inline def setLime(value: IPalette): Self = StObject.set(x, "lime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrange(value: IPalette): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+    inline def setOrange(value: IPalette): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPink(value: IPalette): Self = StObject.set(x, "pink", value.asInstanceOf[js.Any])
+    inline def setPink(value: IPalette): Self = StObject.set(x, "pink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRed(value: IPalette): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: IPalette): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeal(value: IPalette): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+    inline def setTeal(value: IPalette): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellow(value: IPalette): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+    inline def setYellow(value: IPalette): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
   }
 }

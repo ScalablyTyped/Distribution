@@ -50,49 +50,35 @@ trait GardenTool extends StObject {
 }
 object GardenTool {
   
-  @scala.inline
-  def apply(desc: String, func: () => Unit, icon: Double, id: Double, key: String, name: String): GardenTool = {
+  inline def apply(desc: String, func: () => Unit, icon: Double, id: Double, key: String, name: String): GardenTool = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], func = js.Any.fromFunction0(func), icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GardenTool]
   }
   
-  @scala.inline
-  implicit class GardenToolMutableBuilder[Self <: GardenTool] (val x: Self) extends AnyVal {
+  extension [Self <: GardenTool](x: Self) {
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescFunc(value: () => String): Self = StObject.set(x, "descFunc", js.Any.fromFunction0(value))
+    inline def setDescFunc(value: () => String): Self = StObject.set(x, "descFunc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescFuncUndefined: Self = StObject.set(x, "descFunc", js.undefined)
+    inline def setDescFuncUndefined: Self = StObject.set(x, "descFunc", js.undefined)
     
-    @scala.inline
-    def setFunc(value: () => Unit): Self = StObject.set(x, "func", js.Any.fromFunction0(value))
+    inline def setFunc(value: () => Unit): Self = StObject.set(x, "func", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisplayed(value: () => Boolean): Self = StObject.set(x, "isDisplayed", js.Any.fromFunction0(value))
+    inline def setIsDisplayed(value: () => Boolean): Self = StObject.set(x, "isDisplayed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisplayedUndefined: Self = StObject.set(x, "isDisplayed", js.undefined)
+    inline def setIsDisplayedUndefined: Self = StObject.set(x, "isDisplayed", js.undefined)
     
-    @scala.inline
-    def setIsOn(value: () => Boolean): Self = StObject.set(x, "isOn", js.Any.fromFunction0(value))
+    inline def setIsOn(value: () => Boolean): Self = StObject.set(x, "isOn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOnUndefined: Self = StObject.set(x, "isOn", js.undefined)
+    inline def setIsOnUndefined: Self = StObject.set(x, "isOn", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ trait ParametersCodeScanningUploadSarifEndpoint extends StObject {
 }
 object ParametersCodeScanningUploadSarifEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: CodeScanningUploadSarifEndpoint,
     request: CodeScanningUploadSarifRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersCodeScanningUploadSarifEndpoint {
     __obj.asInstanceOf[ParametersCodeScanningUploadSarifEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersCodeScanningUploadSarifEndpointMutableBuilder[Self <: ParametersCodeScanningUploadSarifEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersCodeScanningUploadSarifEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: CodeScanningUploadSarifEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: CodeScanningUploadSarifEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: CodeScanningUploadSarifRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: CodeScanningUploadSarifRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

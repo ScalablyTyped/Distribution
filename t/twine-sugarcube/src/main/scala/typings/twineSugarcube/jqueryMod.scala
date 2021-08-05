@@ -24,8 +24,7 @@ object jqueryMod {
       }
       object PassageNavigationEvent {
         
-        @scala.inline
-        def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+        inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
           currentTarget: TCurrentTarget,
           data: TData,
           delegateTarget: TDelegateTarget,
@@ -45,11 +44,9 @@ object jqueryMod {
           __obj.asInstanceOf[PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
         }
         
-        @scala.inline
-        implicit class PassageNavigationEventMutableBuilder[Self <: PassageNavigationEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+        extension [Self <: PassageNavigationEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
           
-          @scala.inline
-          def setPassage(value: Passage): Self = StObject.set(x, "passage", value.asInstanceOf[js.Any])
+          inline def setPassage(value: Passage): Self = StObject.set(x, "passage", value.asInstanceOf[js.Any])
         }
       }
       
@@ -64,8 +61,7 @@ object jqueryMod {
       }
       object PassageRenderingEvent {
         
-        @scala.inline
-        def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+        inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
           content: HTMLElement,
           currentTarget: TCurrentTarget,
           data: TData,
@@ -86,11 +82,9 @@ object jqueryMod {
           __obj.asInstanceOf[PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
         }
         
-        @scala.inline
-        implicit class PassageRenderingEventMutableBuilder[Self <: PassageRenderingEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+        extension [Self <: PassageRenderingEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
           
-          @scala.inline
-          def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+          inline def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         }
       }
       
@@ -113,8 +107,7 @@ object jqueryMod {
       }
       object TypeToTriggeredEventMap {
         
-        @scala.inline
-        def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+        inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
           Colonpassagedisplay: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget],
           Colonpassageend: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget],
           Colonpassageinit: PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget],
@@ -130,23 +123,17 @@ object jqueryMod {
           __obj.asInstanceOf[TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]]
         }
         
-        @scala.inline
-        implicit class TypeToTriggeredEventMapMutableBuilder[Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+        extension [Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
           
-          @scala.inline
-          def setColonpassagedisplay(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagedisplay", value.asInstanceOf[js.Any])
+          inline def setColonpassagedisplay(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagedisplay", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColonpassageend(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passageend", value.asInstanceOf[js.Any])
+          inline def setColonpassageend(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passageend", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColonpassageinit(value: PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passageinit", value.asInstanceOf[js.Any])
+          inline def setColonpassageinit(value: PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passageinit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColonpassagerender(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagerender", value.asInstanceOf[js.Any])
+          inline def setColonpassagerender(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagerender", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColonpassagestart(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagestart", value.asInstanceOf[js.Any])
+          inline def setColonpassagestart(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagestart", value.asInstanceOf[js.Any])
         }
       }
     }

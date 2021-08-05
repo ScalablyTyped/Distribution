@@ -16,13 +16,12 @@ trait Comments extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Comments_typekey")
+  /* private */ @JSName("PowerPoint.Comments_typekey")
   var PowerPointDotComments_typekey: Comments
 }
 object Comments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, Double, String, String, String) => Comment,
     Application: Application,
     Count: Double,
@@ -35,25 +34,18 @@ object Comments {
     __obj.asInstanceOf[Comments]
   }
   
-  @scala.inline
-  implicit class CommentsMutableBuilder[Self <: Comments] (val x: Self) extends AnyVal {
+  extension [Self <: Comments](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, Double, String, String, String) => Comment): Self = StObject.set(x, "Add", js.Any.fromFunction5(value))
+    inline def setAdd(value: (Double, Double, String, String, String) => Comment): Self = StObject.set(x, "Add", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Comment): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Comment): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotComments_typekey(value: Comments): Self = StObject.set(x, "PowerPoint.Comments_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotComments_typekey(value: Comments): Self = StObject.set(x, "PowerPoint.Comments_typekey", value.asInstanceOf[js.Any])
   }
 }

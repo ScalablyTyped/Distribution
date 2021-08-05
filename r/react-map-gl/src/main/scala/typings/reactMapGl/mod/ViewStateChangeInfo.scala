@@ -10,16 +10,13 @@ trait ViewStateChangeInfo extends StObject {
 }
 object ViewStateChangeInfo {
   
-  @scala.inline
-  def apply(viewState: ViewportProps): ViewStateChangeInfo = {
+  inline def apply(viewState: ViewportProps): ViewStateChangeInfo = {
     val __obj = js.Dynamic.literal(viewState = viewState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewStateChangeInfo]
   }
   
-  @scala.inline
-  implicit class ViewStateChangeInfoMutableBuilder[Self <: ViewStateChangeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ViewStateChangeInfo](x: Self) {
     
-    @scala.inline
-    def setViewState(value: ViewportProps): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
+    inline def setViewState(value: ViewportProps): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait ProcessingModeEventArgs
 }
 object ProcessingModeEventArgs {
   
-  @scala.inline
-  def apply(processOnServer: Boolean, sender: Control): ProcessingModeEventArgs = {
+  inline def apply(processOnServer: Boolean, sender: Control): ProcessingModeEventArgs = {
     val __obj = js.Dynamic.literal(processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingModeEventArgs]
   }
   
-  @scala.inline
-  implicit class ProcessingModeEventArgsMutableBuilder[Self <: ProcessingModeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingModeEventArgs](x: Self) {
     
-    @scala.inline
-    def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
+    inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
   }
 }

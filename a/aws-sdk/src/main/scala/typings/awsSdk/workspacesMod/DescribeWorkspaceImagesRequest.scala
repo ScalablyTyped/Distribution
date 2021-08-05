@@ -28,40 +28,29 @@ trait DescribeWorkspaceImagesRequest extends StObject {
 }
 object DescribeWorkspaceImagesRequest {
   
-  @scala.inline
-  def apply(): DescribeWorkspaceImagesRequest = {
+  inline def apply(): DescribeWorkspaceImagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspaceImagesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceImagesRequestMutableBuilder[Self <: DescribeWorkspaceImagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceImagesRequest](x: Self) {
     
-    @scala.inline
-    def setImageIds(value: WorkspaceImageIdList): Self = StObject.set(x, "ImageIds", value.asInstanceOf[js.Any])
+    inline def setImageIds(value: WorkspaceImageIdList): Self = StObject.set(x, "ImageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdsUndefined: Self = StObject.set(x, "ImageIds", js.undefined)
+    inline def setImageIdsUndefined: Self = StObject.set(x, "ImageIds", js.undefined)
     
-    @scala.inline
-    def setImageIdsVarargs(value: WorkspaceImageId*): Self = StObject.set(x, "ImageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: WorkspaceImageId*): Self = StObject.set(x, "ImageIds", js.Array(value :_*))
     
-    @scala.inline
-    def setImageType(value: ImageType): Self = StObject.set(x, "ImageType", value.asInstanceOf[js.Any])
+    inline def setImageType(value: ImageType): Self = StObject.set(x, "ImageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTypeUndefined: Self = StObject.set(x, "ImageType", js.undefined)
+    inline def setImageTypeUndefined: Self = StObject.set(x, "ImageType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

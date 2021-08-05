@@ -136,21 +136,16 @@ object sqsQueueMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Queue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueueState): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Queue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID]): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID], state: QueueState): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
     
     /**
       * Returns true if the given object is an instance of Queue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean]
   }
   
   trait QueueArgs extends StObject {
@@ -227,98 +222,68 @@ object sqsQueueMod {
   }
   object QueueArgs {
     
-    @scala.inline
-    def apply(): QueueArgs = {
+    inline def apply(): QueueArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueArgs]
     }
     
-    @scala.inline
-    implicit class QueueArgsMutableBuilder[Self <: QueueArgs] (val x: Self) extends AnyVal {
+    extension [Self <: QueueArgs](x: Self) {
       
-      @scala.inline
-      def setContentBasedDeduplication(value: Input[Boolean]): Self = StObject.set(x, "contentBasedDeduplication", value.asInstanceOf[js.Any])
+      inline def setContentBasedDeduplication(value: Input[Boolean]): Self = StObject.set(x, "contentBasedDeduplication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentBasedDeduplicationUndefined: Self = StObject.set(x, "contentBasedDeduplication", js.undefined)
+      inline def setContentBasedDeduplicationUndefined: Self = StObject.set(x, "contentBasedDeduplication", js.undefined)
       
-      @scala.inline
-      def setDelaySeconds(value: Input[Double]): Self = StObject.set(x, "delaySeconds", value.asInstanceOf[js.Any])
+      inline def setDelaySeconds(value: Input[Double]): Self = StObject.set(x, "delaySeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelaySecondsUndefined: Self = StObject.set(x, "delaySeconds", js.undefined)
+      inline def setDelaySecondsUndefined: Self = StObject.set(x, "delaySeconds", js.undefined)
       
-      @scala.inline
-      def setFifoQueue(value: Input[Boolean]): Self = StObject.set(x, "fifoQueue", value.asInstanceOf[js.Any])
+      inline def setFifoQueue(value: Input[Boolean]): Self = StObject.set(x, "fifoQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFifoQueueUndefined: Self = StObject.set(x, "fifoQueue", js.undefined)
+      inline def setFifoQueueUndefined: Self = StObject.set(x, "fifoQueue", js.undefined)
       
-      @scala.inline
-      def setKmsDataKeyReusePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
+      inline def setKmsDataKeyReusePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsDataKeyReusePeriodSecondsUndefined: Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", js.undefined)
+      inline def setKmsDataKeyReusePeriodSecondsUndefined: Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", js.undefined)
       
-      @scala.inline
-      def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
+      inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setMaxMessageSize(value: Input[Double]): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
+      inline def setMaxMessageSize(value: Input[Double]): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessageSizeUndefined: Self = StObject.set(x, "maxMessageSize", js.undefined)
+      inline def setMaxMessageSizeUndefined: Self = StObject.set(x, "maxMessageSize", js.undefined)
       
-      @scala.inline
-      def setMessageRetentionSeconds(value: Input[Double]): Self = StObject.set(x, "messageRetentionSeconds", value.asInstanceOf[js.Any])
+      inline def setMessageRetentionSeconds(value: Input[Double]): Self = StObject.set(x, "messageRetentionSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageRetentionSecondsUndefined: Self = StObject.set(x, "messageRetentionSeconds", js.undefined)
+      inline def setMessageRetentionSecondsUndefined: Self = StObject.set(x, "messageRetentionSeconds", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setReceiveWaitTimeSeconds(value: Input[Double]): Self = StObject.set(x, "receiveWaitTimeSeconds", value.asInstanceOf[js.Any])
+      inline def setReceiveWaitTimeSeconds(value: Input[Double]): Self = StObject.set(x, "receiveWaitTimeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiveWaitTimeSecondsUndefined: Self = StObject.set(x, "receiveWaitTimeSeconds", js.undefined)
+      inline def setReceiveWaitTimeSecondsUndefined: Self = StObject.set(x, "receiveWaitTimeSeconds", js.undefined)
       
-      @scala.inline
-      def setRedrivePolicy(value: Input[String]): Self = StObject.set(x, "redrivePolicy", value.asInstanceOf[js.Any])
+      inline def setRedrivePolicy(value: Input[String]): Self = StObject.set(x, "redrivePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedrivePolicyUndefined: Self = StObject.set(x, "redrivePolicy", js.undefined)
+      inline def setRedrivePolicyUndefined: Self = StObject.set(x, "redrivePolicy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVisibilityTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "visibilityTimeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setVisibilityTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "visibilityTimeoutSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityTimeoutSecondsUndefined: Self = StObject.set(x, "visibilityTimeoutSeconds", js.undefined)
+      inline def setVisibilityTimeoutSecondsUndefined: Self = StObject.set(x, "visibilityTimeoutSeconds", js.undefined)
     }
   }
   
@@ -401,104 +366,72 @@ object sqsQueueMod {
   }
   object QueueState {
     
-    @scala.inline
-    def apply(): QueueState = {
+    inline def apply(): QueueState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueState]
     }
     
-    @scala.inline
-    implicit class QueueStateMutableBuilder[Self <: QueueState] (val x: Self) extends AnyVal {
+    extension [Self <: QueueState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setContentBasedDeduplication(value: Input[Boolean]): Self = StObject.set(x, "contentBasedDeduplication", value.asInstanceOf[js.Any])
+      inline def setContentBasedDeduplication(value: Input[Boolean]): Self = StObject.set(x, "contentBasedDeduplication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentBasedDeduplicationUndefined: Self = StObject.set(x, "contentBasedDeduplication", js.undefined)
+      inline def setContentBasedDeduplicationUndefined: Self = StObject.set(x, "contentBasedDeduplication", js.undefined)
       
-      @scala.inline
-      def setDelaySeconds(value: Input[Double]): Self = StObject.set(x, "delaySeconds", value.asInstanceOf[js.Any])
+      inline def setDelaySeconds(value: Input[Double]): Self = StObject.set(x, "delaySeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelaySecondsUndefined: Self = StObject.set(x, "delaySeconds", js.undefined)
+      inline def setDelaySecondsUndefined: Self = StObject.set(x, "delaySeconds", js.undefined)
       
-      @scala.inline
-      def setFifoQueue(value: Input[Boolean]): Self = StObject.set(x, "fifoQueue", value.asInstanceOf[js.Any])
+      inline def setFifoQueue(value: Input[Boolean]): Self = StObject.set(x, "fifoQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFifoQueueUndefined: Self = StObject.set(x, "fifoQueue", js.undefined)
+      inline def setFifoQueueUndefined: Self = StObject.set(x, "fifoQueue", js.undefined)
       
-      @scala.inline
-      def setKmsDataKeyReusePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
+      inline def setKmsDataKeyReusePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsDataKeyReusePeriodSecondsUndefined: Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", js.undefined)
+      inline def setKmsDataKeyReusePeriodSecondsUndefined: Self = StObject.set(x, "kmsDataKeyReusePeriodSeconds", js.undefined)
       
-      @scala.inline
-      def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
+      inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setMaxMessageSize(value: Input[Double]): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
+      inline def setMaxMessageSize(value: Input[Double]): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessageSizeUndefined: Self = StObject.set(x, "maxMessageSize", js.undefined)
+      inline def setMaxMessageSizeUndefined: Self = StObject.set(x, "maxMessageSize", js.undefined)
       
-      @scala.inline
-      def setMessageRetentionSeconds(value: Input[Double]): Self = StObject.set(x, "messageRetentionSeconds", value.asInstanceOf[js.Any])
+      inline def setMessageRetentionSeconds(value: Input[Double]): Self = StObject.set(x, "messageRetentionSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageRetentionSecondsUndefined: Self = StObject.set(x, "messageRetentionSeconds", js.undefined)
+      inline def setMessageRetentionSecondsUndefined: Self = StObject.set(x, "messageRetentionSeconds", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setReceiveWaitTimeSeconds(value: Input[Double]): Self = StObject.set(x, "receiveWaitTimeSeconds", value.asInstanceOf[js.Any])
+      inline def setReceiveWaitTimeSeconds(value: Input[Double]): Self = StObject.set(x, "receiveWaitTimeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiveWaitTimeSecondsUndefined: Self = StObject.set(x, "receiveWaitTimeSeconds", js.undefined)
+      inline def setReceiveWaitTimeSecondsUndefined: Self = StObject.set(x, "receiveWaitTimeSeconds", js.undefined)
       
-      @scala.inline
-      def setRedrivePolicy(value: Input[String]): Self = StObject.set(x, "redrivePolicy", value.asInstanceOf[js.Any])
+      inline def setRedrivePolicy(value: Input[String]): Self = StObject.set(x, "redrivePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedrivePolicyUndefined: Self = StObject.set(x, "redrivePolicy", js.undefined)
+      inline def setRedrivePolicyUndefined: Self = StObject.set(x, "redrivePolicy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVisibilityTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "visibilityTimeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setVisibilityTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "visibilityTimeoutSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityTimeoutSecondsUndefined: Self = StObject.set(x, "visibilityTimeoutSeconds", js.undefined)
+      inline def setVisibilityTimeoutSecondsUndefined: Self = StObject.set(x, "visibilityTimeoutSeconds", js.undefined)
     }
   }
 }

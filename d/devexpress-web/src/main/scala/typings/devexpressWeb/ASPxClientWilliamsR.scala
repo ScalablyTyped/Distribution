@@ -18,8 +18,7 @@ trait ASPxClientWilliamsR
 }
 object ASPxClientWilliamsR {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -31,10 +30,8 @@ object ASPxClientWilliamsR {
     __obj.asInstanceOf[ASPxClientWilliamsR]
   }
   
-  @scala.inline
-  implicit class ASPxClientWilliamsRMutableBuilder[Self <: ASPxClientWilliamsR] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWilliamsR](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }
 }

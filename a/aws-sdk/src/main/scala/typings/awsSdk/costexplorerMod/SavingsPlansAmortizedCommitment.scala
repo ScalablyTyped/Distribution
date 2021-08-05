@@ -23,31 +23,23 @@ trait SavingsPlansAmortizedCommitment extends StObject {
 }
 object SavingsPlansAmortizedCommitment {
   
-  @scala.inline
-  def apply(): SavingsPlansAmortizedCommitment = {
+  inline def apply(): SavingsPlansAmortizedCommitment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansAmortizedCommitment]
   }
   
-  @scala.inline
-  implicit class SavingsPlansAmortizedCommitmentMutableBuilder[Self <: SavingsPlansAmortizedCommitment] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansAmortizedCommitment](x: Self) {
     
-    @scala.inline
-    def setAmortizedRecurringCommitment(value: GenericString): Self = StObject.set(x, "AmortizedRecurringCommitment", value.asInstanceOf[js.Any])
+    inline def setAmortizedRecurringCommitment(value: GenericString): Self = StObject.set(x, "AmortizedRecurringCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmortizedRecurringCommitmentUndefined: Self = StObject.set(x, "AmortizedRecurringCommitment", js.undefined)
+    inline def setAmortizedRecurringCommitmentUndefined: Self = StObject.set(x, "AmortizedRecurringCommitment", js.undefined)
     
-    @scala.inline
-    def setAmortizedUpfrontCommitment(value: GenericString): Self = StObject.set(x, "AmortizedUpfrontCommitment", value.asInstanceOf[js.Any])
+    inline def setAmortizedUpfrontCommitment(value: GenericString): Self = StObject.set(x, "AmortizedUpfrontCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmortizedUpfrontCommitmentUndefined: Self = StObject.set(x, "AmortizedUpfrontCommitment", js.undefined)
+    inline def setAmortizedUpfrontCommitmentUndefined: Self = StObject.set(x, "AmortizedUpfrontCommitment", js.undefined)
     
-    @scala.inline
-    def setTotalAmortizedCommitment(value: GenericString): Self = StObject.set(x, "TotalAmortizedCommitment", value.asInstanceOf[js.Any])
+    inline def setTotalAmortizedCommitment(value: GenericString): Self = StObject.set(x, "TotalAmortizedCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAmortizedCommitmentUndefined: Self = StObject.set(x, "TotalAmortizedCommitment", js.undefined)
+    inline def setTotalAmortizedCommitmentUndefined: Self = StObject.set(x, "TotalAmortizedCommitment", js.undefined)
   }
 }

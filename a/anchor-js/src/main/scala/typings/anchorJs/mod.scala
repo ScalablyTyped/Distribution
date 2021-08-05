@@ -72,62 +72,44 @@ object mod extends Shortcut {
     }
     object AnchorOptions {
       
-      @scala.inline
-      def apply(): AnchorOptions = {
+      inline def apply(): AnchorOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AnchorOptions]
       }
       
-      @scala.inline
-      implicit class AnchorOptionsMutableBuilder[Self <: AnchorOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AnchorOptions](x: Self) {
         
-        @scala.inline
-        def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+        inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+        inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
         
-        @scala.inline
-        def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+        inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+        inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
         
-        @scala.inline
-        def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+        inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+        inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
         
-        @scala.inline
-        def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setPlacement(value: AnchorPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+        inline def setPlacement(value: AnchorPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+        inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
         
-        @scala.inline
-        def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+        inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
+        inline def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
         
-        @scala.inline
-        def setTruncate(value: Double): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+        inline def setTruncate(value: Double): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+        inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
         
-        @scala.inline
-        def setVisible(value: AnchorVisibility): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: AnchorVisibility): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+        inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       }
     }
     
@@ -138,11 +120,9 @@ object mod extends Shortcut {
     trait AnchorPlacement extends StObject
     object AnchorPlacement {
       
-      @scala.inline
-      def left: typings.anchorJs.anchorJsStrings.left = "left".asInstanceOf[typings.anchorJs.anchorJsStrings.left]
+      inline def left: typings.anchorJs.anchorJsStrings.left = "left".asInstanceOf[typings.anchorJs.anchorJsStrings.left]
       
-      @scala.inline
-      def right: typings.anchorJs.anchorJsStrings.right = "right".asInstanceOf[typings.anchorJs.anchorJsStrings.right]
+      inline def right: typings.anchorJs.anchorJsStrings.right = "right".asInstanceOf[typings.anchorJs.anchorJsStrings.right]
     }
     
     @js.native
@@ -159,14 +139,11 @@ object mod extends Shortcut {
     trait AnchorVisibility extends StObject
     object AnchorVisibility {
       
-      @scala.inline
-      def always: typings.anchorJs.anchorJsStrings.always = "always".asInstanceOf[typings.anchorJs.anchorJsStrings.always]
+      inline def always: typings.anchorJs.anchorJsStrings.always = "always".asInstanceOf[typings.anchorJs.anchorJsStrings.always]
       
-      @scala.inline
-      def hover: typings.anchorJs.anchorJsStrings.hover = "hover".asInstanceOf[typings.anchorJs.anchorJsStrings.hover]
+      inline def hover: typings.anchorJs.anchorJsStrings.hover = "hover".asInstanceOf[typings.anchorJs.anchorJsStrings.hover]
       
-      @scala.inline
-      def touch: typings.anchorJs.anchorJsStrings.touch = "touch".asInstanceOf[typings.anchorJs.anchorJsStrings.touch]
+      inline def touch: typings.anchorJs.anchorJsStrings.touch = "touch".asInstanceOf[typings.anchorJs.anchorJsStrings.touch]
     }
   }
 }

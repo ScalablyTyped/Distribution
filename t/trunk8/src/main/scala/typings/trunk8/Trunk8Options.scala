@@ -38,43 +38,31 @@ trait Trunk8Options extends StObject {
 }
 object Trunk8Options {
   
-  @scala.inline
-  def apply(): Trunk8Options = {
+  inline def apply(): Trunk8Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Trunk8Options]
   }
   
-  @scala.inline
-  implicit class Trunk8OptionsMutableBuilder[Self <: Trunk8Options] (val x: Self) extends AnyVal {
+  extension [Self <: Trunk8Options](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+    inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

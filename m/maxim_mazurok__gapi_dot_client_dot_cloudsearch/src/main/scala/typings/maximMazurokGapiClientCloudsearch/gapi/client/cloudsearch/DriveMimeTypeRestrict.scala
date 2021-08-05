@@ -10,19 +10,15 @@ trait DriveMimeTypeRestrict extends StObject {
 }
 object DriveMimeTypeRestrict {
   
-  @scala.inline
-  def apply(): DriveMimeTypeRestrict = {
+  inline def apply(): DriveMimeTypeRestrict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveMimeTypeRestrict]
   }
   
-  @scala.inline
-  implicit class DriveMimeTypeRestrictMutableBuilder[Self <: DriveMimeTypeRestrict] (val x: Self) extends AnyVal {
+  extension [Self <: DriveMimeTypeRestrict](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

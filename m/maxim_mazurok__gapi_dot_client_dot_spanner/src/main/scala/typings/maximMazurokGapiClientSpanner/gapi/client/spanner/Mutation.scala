@@ -31,43 +31,31 @@ trait Mutation extends StObject {
 }
 object Mutation {
   
-  @scala.inline
-  def apply(): Mutation = {
+  inline def apply(): Mutation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mutation]
   }
   
-  @scala.inline
-  implicit class MutationMutableBuilder[Self <: Mutation] (val x: Self) extends AnyVal {
+  extension [Self <: Mutation](x: Self) {
     
-    @scala.inline
-    def setDelete(value: Delete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Delete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setInsert(value: Write): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: Write): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertOrUpdate(value: Write): Self = StObject.set(x, "insertOrUpdate", value.asInstanceOf[js.Any])
+    inline def setInsertOrUpdate(value: Write): Self = StObject.set(x, "insertOrUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertOrUpdateUndefined: Self = StObject.set(x, "insertOrUpdate", js.undefined)
+    inline def setInsertOrUpdateUndefined: Self = StObject.set(x, "insertOrUpdate", js.undefined)
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    @scala.inline
-    def setReplace(value: Write): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Write): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: Write): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Write): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

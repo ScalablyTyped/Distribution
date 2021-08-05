@@ -26,49 +26,35 @@ trait ServiceLevelObjective extends StObject {
 }
 object ServiceLevelObjective {
   
-  @scala.inline
-  def apply(): ServiceLevelObjective = {
+  inline def apply(): ServiceLevelObjective = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceLevelObjective]
   }
   
-  @scala.inline
-  implicit class ServiceLevelObjectiveMutableBuilder[Self <: ServiceLevelObjective] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceLevelObjective](x: Self) {
     
-    @scala.inline
-    def setCalendarPeriod(value: String): Self = StObject.set(x, "calendarPeriod", value.asInstanceOf[js.Any])
+    inline def setCalendarPeriod(value: String): Self = StObject.set(x, "calendarPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarPeriodUndefined: Self = StObject.set(x, "calendarPeriod", js.undefined)
+    inline def setCalendarPeriodUndefined: Self = StObject.set(x, "calendarPeriod", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setGoal(value: Double): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
+    inline def setGoal(value: Double): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoalUndefined: Self = StObject.set(x, "goal", js.undefined)
+    inline def setGoalUndefined: Self = StObject.set(x, "goal", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRollingPeriod(value: String): Self = StObject.set(x, "rollingPeriod", value.asInstanceOf[js.Any])
+    inline def setRollingPeriod(value: String): Self = StObject.set(x, "rollingPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollingPeriodUndefined: Self = StObject.set(x, "rollingPeriod", js.undefined)
+    inline def setRollingPeriodUndefined: Self = StObject.set(x, "rollingPeriod", js.undefined)
     
-    @scala.inline
-    def setServiceLevelIndicator(value: ServiceLevelIndicator): Self = StObject.set(x, "serviceLevelIndicator", value.asInstanceOf[js.Any])
+    inline def setServiceLevelIndicator(value: ServiceLevelIndicator): Self = StObject.set(x, "serviceLevelIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceLevelIndicatorUndefined: Self = StObject.set(x, "serviceLevelIndicator", js.undefined)
+    inline def setServiceLevelIndicatorUndefined: Self = StObject.set(x, "serviceLevelIndicator", js.undefined)
   }
 }

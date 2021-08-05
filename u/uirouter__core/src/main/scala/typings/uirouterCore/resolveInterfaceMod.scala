@@ -18,14 +18,12 @@ object resolveInterfaceMod {
     @JSImport("@uirouter/core/lib/resolve/interface", "resolvePolicies.async")
     @js.native
     def async: NOWAIT = js.native
-    @scala.inline
-    def async_=(x: NOWAIT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
+    inline def async_=(x: NOWAIT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/resolve/interface", "resolvePolicies.when")
     @js.native
     def when: EAGER = js.native
-    @scala.inline
-    def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
+    inline def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
   }
   
   type CustomAsyncPolicy = js.Function1[/* data */ js.Any, js.Promise[js.Any]]
@@ -44,11 +42,9 @@ object resolveInterfaceMod {
   trait PolicyWhen extends StObject
   object PolicyWhen {
     
-    @scala.inline
-    def EAGER: typings.uirouterCore.uirouterCoreStrings.EAGER = "EAGER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.EAGER]
+    inline def EAGER: typings.uirouterCore.uirouterCoreStrings.EAGER = "EAGER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.EAGER]
     
-    @scala.inline
-    def LAZY: typings.uirouterCore.uirouterCoreStrings.LAZY = "LAZY".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.LAZY]
+    inline def LAZY: typings.uirouterCore.uirouterCoreStrings.LAZY = "LAZY".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.LAZY]
   }
   
   trait ProviderLike
@@ -69,50 +65,36 @@ object resolveInterfaceMod {
   }
   object ProviderLike {
     
-    @scala.inline
-    def apply(provide: js.Any): ProviderLike = {
+    inline def apply(provide: js.Any): ProviderLike = {
       val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderLike]
     }
     
-    @scala.inline
-    implicit class ProviderLikeMutableBuilder[Self <: ProviderLike] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderLike](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+      inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
       
-      @scala.inline
-      def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClass(value: js.Any): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
+      inline def setUseClass(value: js.Any): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
+      inline def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
       
-      @scala.inline
-      def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+      inline def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
+      inline def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
       
-      @scala.inline
-      def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+      inline def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
+      inline def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
       
-      @scala.inline
-      def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+      inline def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
+      inline def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
     }
   }
   
@@ -165,41 +147,30 @@ object resolveInterfaceMod {
   }
   object ResolvableLiteral {
     
-    @scala.inline
-    def apply(resolveFn: js.Function, token: js.Any): ResolvableLiteral = {
+    inline def apply(resolveFn: js.Function, token: js.Any): ResolvableLiteral = {
       val __obj = js.Dynamic.literal(resolveFn = resolveFn.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvableLiteral]
     }
     
-    @scala.inline
-    implicit class ResolvableLiteralMutableBuilder[Self <: ResolvableLiteral] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvableLiteral](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+      inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
       
-      @scala.inline
-      def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setPolicy(value: ResolvePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: ResolvePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setResolveFn(value: js.Function): Self = StObject.set(x, "resolveFn", value.asInstanceOf[js.Any])
+      inline def setResolveFn(value: js.Function): Self = StObject.set(x, "resolveFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -291,29 +262,22 @@ object resolveInterfaceMod {
   }
   object ResolvePolicy {
     
-    @scala.inline
-    def apply(): ResolvePolicy = {
+    inline def apply(): ResolvePolicy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolvePolicy]
     }
     
-    @scala.inline
-    implicit class ResolvePolicyMutableBuilder[Self <: ResolvePolicy] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvePolicy](x: Self) {
       
-      @scala.inline
-      def setAsync(value: PolicyAsync): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: PolicyAsync): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncFunction1(value: /* data */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "async", js.Any.fromFunction1(value))
+      inline def setAsyncFunction1(value: /* data */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "async", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setWhen(value: PolicyWhen): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      inline def setWhen(value: PolicyWhen): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+      inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
     }
   }
   

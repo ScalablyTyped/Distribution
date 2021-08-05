@@ -8,6 +8,5 @@ object expoLinkingStrings {
   
   @js.native
   sealed trait url extends StObject
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
 }

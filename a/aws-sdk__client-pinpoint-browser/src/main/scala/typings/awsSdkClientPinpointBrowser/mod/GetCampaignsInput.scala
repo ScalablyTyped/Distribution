@@ -9,8 +9,7 @@ trait GetCampaignsInput
      with typings.awsSdkClientPinpointBrowser.typesGetCampaignsInputMod.GetCampaignsInput
 object GetCampaignsInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetCampaignsInput = {
+  inline def apply(ApplicationId: String): GetCampaignsInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCampaignsInput]
   }

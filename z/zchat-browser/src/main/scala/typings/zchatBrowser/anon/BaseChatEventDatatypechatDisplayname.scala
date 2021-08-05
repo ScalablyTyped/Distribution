@@ -21,26 +21,20 @@ trait BaseChatEventDatatypechatDisplayname
 }
 object BaseChatEventDatatypechatDisplayname {
   
-  @scala.inline
-  def apply(display_name: String, nick: String, time_stamp: Double): BaseChatEventDatatypechatDisplayname = {
+  inline def apply(display_name: String, nick: String, time_stamp: Double): BaseChatEventDatatypechatDisplayname = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("chat.memberjoin")
     __obj.asInstanceOf[BaseChatEventDatatypechatDisplayname]
   }
   
-  @scala.inline
-  implicit class BaseChatEventDatatypechatDisplaynameMutableBuilder[Self <: BaseChatEventDatatypechatDisplayname] (val x: Self) extends AnyVal {
+  extension [Self <: BaseChatEventDatatypechatDisplayname](x: Self) {
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+    inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_stamp(value: Double): Self = StObject.set(x, "time_stamp", value.asInstanceOf[js.Any])
+    inline def setTime_stamp(value: Double): Self = StObject.set(x, "time_stamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: chatDotmemberjoin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: chatDotmemberjoin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

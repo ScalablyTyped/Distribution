@@ -23,31 +23,23 @@ trait ShippingDetails extends StObject {
 }
 object ShippingDetails {
   
-  @scala.inline
-  def apply(): ShippingDetails = {
+  inline def apply(): ShippingDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShippingDetails]
   }
   
-  @scala.inline
-  implicit class ShippingDetailsMutableBuilder[Self <: ShippingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingDetails](x: Self) {
     
-    @scala.inline
-    def setInboundShipment(value: Shipment): Self = StObject.set(x, "InboundShipment", value.asInstanceOf[js.Any])
+    inline def setInboundShipment(value: Shipment): Self = StObject.set(x, "InboundShipment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundShipmentUndefined: Self = StObject.set(x, "InboundShipment", js.undefined)
+    inline def setInboundShipmentUndefined: Self = StObject.set(x, "InboundShipment", js.undefined)
     
-    @scala.inline
-    def setOutboundShipment(value: Shipment): Self = StObject.set(x, "OutboundShipment", value.asInstanceOf[js.Any])
+    inline def setOutboundShipment(value: Shipment): Self = StObject.set(x, "OutboundShipment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundShipmentUndefined: Self = StObject.set(x, "OutboundShipment", js.undefined)
+    inline def setOutboundShipmentUndefined: Self = StObject.set(x, "OutboundShipment", js.undefined)
     
-    @scala.inline
-    def setShippingOption(value: ShippingOption): Self = StObject.set(x, "ShippingOption", value.asInstanceOf[js.Any])
+    inline def setShippingOption(value: ShippingOption): Self = StObject.set(x, "ShippingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionUndefined: Self = StObject.set(x, "ShippingOption", js.undefined)
+    inline def setShippingOptionUndefined: Self = StObject.set(x, "ShippingOption", js.undefined)
   }
 }

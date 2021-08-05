@@ -14,19 +14,15 @@ trait Between extends StObject {
 }
 object Between {
   
-  @scala.inline
-  def apply(): Between = {
+  inline def apply(): Between = {
     val __obj = js.Dynamic.literal(between = "between", center = "center")
     __obj.asInstanceOf[Between]
   }
   
-  @scala.inline
-  implicit class BetweenMutableBuilder[Self <: Between] (val x: Self) extends AnyVal {
+  extension [Self <: Between](x: Self) {
     
-    @scala.inline
-    def setBetween(value: between): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
+    inline def setBetween(value: between): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
   }
 }

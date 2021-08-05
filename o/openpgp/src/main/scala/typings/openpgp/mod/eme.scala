@@ -16,8 +16,7 @@ object eme {
     * @param EM encoded message, an octet string
     * @returns message, an octet string
     */
-  @scala.inline
-  def decode(EM: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(EM.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(EM: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(EM.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Create a EME-PKCS1-v1_5 padded message
@@ -26,6 +25,5 @@ object eme {
     * @param k the length in octets of the key modulus
     * @returns EME-PKCS1 padded message
     */
-  @scala.inline
-  def encode(M: String, k: Integer): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(M.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def encode(M: String, k: Integer): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(M.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

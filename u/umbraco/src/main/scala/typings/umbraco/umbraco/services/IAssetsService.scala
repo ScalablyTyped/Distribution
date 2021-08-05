@@ -67,8 +67,7 @@ trait IAssetsService extends StObject {
 }
 object IAssetsService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     load: (js.Array[String], IScope) => IPromise[js.Any],
     loadCss: (String, IScope, js.Object, Double) => IPromise[js.Any],
     loadJs: (String, IScope, js.Object, Double) => IPromise[js.Any]
@@ -77,16 +76,12 @@ object IAssetsService {
     __obj.asInstanceOf[IAssetsService]
   }
   
-  @scala.inline
-  implicit class IAssetsServiceMutableBuilder[Self <: IAssetsService] (val x: Self) extends AnyVal {
+  extension [Self <: IAssetsService](x: Self) {
     
-    @scala.inline
-    def setLoad(value: (js.Array[String], IScope) => IPromise[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    inline def setLoad(value: (js.Array[String], IScope) => IPromise[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadCss", js.Any.fromFunction4(value))
+    inline def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadCss", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadJs", js.Any.fromFunction4(value))
+    inline def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadJs", js.Any.fromFunction4(value))
   }
 }

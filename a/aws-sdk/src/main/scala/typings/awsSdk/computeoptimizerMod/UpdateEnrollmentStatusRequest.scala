@@ -18,22 +18,17 @@ trait UpdateEnrollmentStatusRequest extends StObject {
 }
 object UpdateEnrollmentStatusRequest {
   
-  @scala.inline
-  def apply(status: Status): UpdateEnrollmentStatusRequest = {
+  inline def apply(status: Status): UpdateEnrollmentStatusRequest = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEnrollmentStatusRequest]
   }
   
-  @scala.inline
-  implicit class UpdateEnrollmentStatusRequestMutableBuilder[Self <: UpdateEnrollmentStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEnrollmentStatusRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = StObject.set(x, "includeMemberAccounts", value.asInstanceOf[js.Any])
+    inline def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = StObject.set(x, "includeMemberAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMemberAccountsUndefined: Self = StObject.set(x, "includeMemberAccounts", js.undefined)
+    inline def setIncludeMemberAccountsUndefined: Self = StObject.set(x, "includeMemberAccounts", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

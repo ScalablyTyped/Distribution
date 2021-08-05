@@ -56,52 +56,37 @@ trait ParamsResourceUserprofilesGuardianinvitationsList
 }
 object ParamsResourceUserprofilesGuardianinvitationsList {
   
-  @scala.inline
-  def apply(): ParamsResourceUserprofilesGuardianinvitationsList = {
+  inline def apply(): ParamsResourceUserprofilesGuardianinvitationsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUserprofilesGuardianinvitationsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUserprofilesGuardianinvitationsListMutableBuilder[Self <: ParamsResourceUserprofilesGuardianinvitationsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUserprofilesGuardianinvitationsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setInvitedEmailAddress(value: String): Self = StObject.set(x, "invitedEmailAddress", value.asInstanceOf[js.Any])
+    inline def setInvitedEmailAddress(value: String): Self = StObject.set(x, "invitedEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedEmailAddressUndefined: Self = StObject.set(x, "invitedEmailAddress", js.undefined)
+    inline def setInvitedEmailAddressUndefined: Self = StObject.set(x, "invitedEmailAddress", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setStates(value: js.Array[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: js.Array[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    @scala.inline
-    def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value :_*))
     
-    @scala.inline
-    def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
+    inline def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
+    inline def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait CreateDedicatedIpPoolRequest extends StObject {
 }
 object CreateDedicatedIpPoolRequest {
   
-  @scala.inline
-  def apply(PoolName: PoolName): CreateDedicatedIpPoolRequest = {
+  inline def apply(PoolName: PoolName): CreateDedicatedIpPoolRequest = {
     val __obj = js.Dynamic.literal(PoolName = PoolName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDedicatedIpPoolRequest]
   }
   
-  @scala.inline
-  implicit class CreateDedicatedIpPoolRequestMutableBuilder[Self <: CreateDedicatedIpPoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDedicatedIpPoolRequest](x: Self) {
     
-    @scala.inline
-    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
+    inline def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

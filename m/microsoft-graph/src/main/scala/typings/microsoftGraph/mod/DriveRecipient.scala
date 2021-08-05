@@ -17,40 +17,29 @@ trait DriveRecipient extends StObject {
 }
 object DriveRecipient {
   
-  @scala.inline
-  def apply(): DriveRecipient = {
+  inline def apply(): DriveRecipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveRecipient]
   }
   
-  @scala.inline
-  implicit class DriveRecipientMutableBuilder[Self <: DriveRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: DriveRecipient](x: Self) {
     
-    @scala.inline
-    def setAlias(value: NullableOption[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: NullableOption[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNull: Self = StObject.set(x, "alias", null)
+    inline def setAliasNull: Self = StObject.set(x, "alias", null)
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNull: Self = StObject.set(x, "email", null)
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: NullableOption[String]): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: NullableOption[String]): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdNull: Self = StObject.set(x, "objectId", null)
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

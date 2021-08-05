@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(args: js.Any*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(args: js.Any*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def install(wid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(wid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(wid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(wid.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

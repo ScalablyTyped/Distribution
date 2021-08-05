@@ -20,10 +20,8 @@ object attributesMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromCrowd(attributesArr: js.Array[Name]): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any]).asInstanceOf[Attributes]
-  @scala.inline
-  def fromCrowd(attributesArr: js.Array[Name], parse: js.Function1[/* json */ String, js.Any]): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  inline def fromCrowd(attributesArr: js.Array[Name]): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any]).asInstanceOf[Attributes]
+  inline def fromCrowd(attributesArr: js.Array[Name], parse: js.Function1[/* json */ String, js.Any]): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[Attributes]
   
   @js.native
   trait Attributes extends StObject {

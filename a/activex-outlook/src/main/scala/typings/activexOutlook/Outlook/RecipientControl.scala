@@ -14,7 +14,7 @@ trait RecipientControl extends StObject {
   
   var ForeColor: Double
   
-  @JSName("Outlook._RecipientControl_typekey")
+  /* private */ @JSName("Outlook._RecipientControl_typekey")
   var OutlookDot_RecipientControl_typekey: RecipientControl
   
   var ReadOnly: Double
@@ -23,8 +23,7 @@ trait RecipientControl extends StObject {
 }
 object RecipientControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackColor: Double,
     Enabled: Double,
     Font: js.Any,
@@ -38,28 +37,20 @@ object RecipientControl {
     __obj.asInstanceOf[RecipientControl]
   }
   
-  @scala.inline
-  implicit class RecipientControlMutableBuilder[Self <: RecipientControl] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientControl](x: Self) {
     
-    @scala.inline
-    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Double): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Double): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: js.Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: js.Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDot_RecipientControl_typekey(value: RecipientControl): Self = StObject.set(x, "Outlook._RecipientControl_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDot_RecipientControl_typekey(value: RecipientControl): Self = StObject.set(x, "Outlook._RecipientControl_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Double): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Double): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialEffect(value: Double): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
+    inline def setSpecialEffect(value: Double): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
   }
 }

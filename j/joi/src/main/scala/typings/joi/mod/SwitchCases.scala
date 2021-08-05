@@ -18,26 +18,20 @@ trait SwitchCases extends StObject {
 }
 object SwitchCases {
   
-  @scala.inline
-  def apply(): SwitchCases = {
+  inline def apply(): SwitchCases = {
     val __obj = js.Dynamic.literal(is = null)
     __obj.updateDynamic("then")(null)
     __obj.asInstanceOf[SwitchCases]
   }
   
-  @scala.inline
-  implicit class SwitchCasesMutableBuilder[Self <: SwitchCases] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchCases](x: Self) {
     
-    @scala.inline
-    def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNull: Self = StObject.set(x, "is", null)
+    inline def setIsNull: Self = StObject.set(x, "is", null)
     
-    @scala.inline
-    def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    inline def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThenNull: Self = StObject.set(x, "then", null)
+    inline def setThenNull: Self = StObject.set(x, "then", null)
   }
 }

@@ -23,28 +23,21 @@ trait SchemaDirectDealsList extends StObject {
 }
 object SchemaDirectDealsList {
   
-  @scala.inline
-  def apply(): SchemaDirectDealsList = {
+  inline def apply(): SchemaDirectDealsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDirectDealsList]
   }
   
-  @scala.inline
-  implicit class SchemaDirectDealsListMutableBuilder[Self <: SchemaDirectDealsList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDirectDealsList](x: Self) {
     
-    @scala.inline
-    def setDirectDeals(value: js.Array[SchemaDirectDeal]): Self = StObject.set(x, "directDeals", value.asInstanceOf[js.Any])
+    inline def setDirectDeals(value: js.Array[SchemaDirectDeal]): Self = StObject.set(x, "directDeals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectDealsUndefined: Self = StObject.set(x, "directDeals", js.undefined)
+    inline def setDirectDealsUndefined: Self = StObject.set(x, "directDeals", js.undefined)
     
-    @scala.inline
-    def setDirectDealsVarargs(value: SchemaDirectDeal*): Self = StObject.set(x, "directDeals", js.Array(value :_*))
+    inline def setDirectDealsVarargs(value: SchemaDirectDeal*): Self = StObject.set(x, "directDeals", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -35,52 +35,37 @@ trait GetTextDetectionResponse extends StObject {
 }
 object GetTextDetectionResponse {
   
-  @scala.inline
-  def apply(): GetTextDetectionResponse = {
+  inline def apply(): GetTextDetectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTextDetectionResponse]
   }
   
-  @scala.inline
-  implicit class GetTextDetectionResponseMutableBuilder[Self <: GetTextDetectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTextDetectionResponse](x: Self) {
     
-    @scala.inline
-    def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setTextDetections(value: TextDetectionResults): Self = StObject.set(x, "TextDetections", value.asInstanceOf[js.Any])
+    inline def setTextDetections(value: TextDetectionResults): Self = StObject.set(x, "TextDetections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDetectionsUndefined: Self = StObject.set(x, "TextDetections", js.undefined)
+    inline def setTextDetectionsUndefined: Self = StObject.set(x, "TextDetections", js.undefined)
     
-    @scala.inline
-    def setTextDetectionsVarargs(value: TextDetectionResult*): Self = StObject.set(x, "TextDetections", js.Array(value :_*))
+    inline def setTextDetectionsVarargs(value: TextDetectionResult*): Self = StObject.set(x, "TextDetections", js.Array(value :_*))
     
-    @scala.inline
-    def setTextModelVersion(value: String): Self = StObject.set(x, "TextModelVersion", value.asInstanceOf[js.Any])
+    inline def setTextModelVersion(value: String): Self = StObject.set(x, "TextModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextModelVersionUndefined: Self = StObject.set(x, "TextModelVersion", js.undefined)
+    inline def setTextModelVersionUndefined: Self = StObject.set(x, "TextModelVersion", js.undefined)
     
-    @scala.inline
-    def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
+    inline def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
+    inline def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
   }
 }

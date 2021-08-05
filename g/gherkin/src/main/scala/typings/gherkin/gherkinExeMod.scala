@@ -26,19 +26,19 @@ object gherkinExeMod {
     /* CompleteClass */
     override def dialects(): StringDictionary[Dialect] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val envelopes: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val gherkinExe: js.Any = js.native
     
     /* CompleteClass */
     override def messageStream(): Readable = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val options: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val paths: js.Any = js.native
   }
   
@@ -46,20 +46,19 @@ object gherkinExeMod {
     
     def dialects(): StringDictionary[Dialect]
     
-    val envelopes: js.Any
+    /* private */ val envelopes: js.Any
     
-    val gherkinExe: js.Any
+    /* private */ val gherkinExe: js.Any
     
     def messageStream(): Readable
     
-    val options: js.Any
+    /* private */ val options: js.Any
     
-    val paths: js.Any
+    /* private */ val paths: js.Any
   }
   object GherkinExe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dialects: () => StringDictionary[Dialect],
       envelopes: js.Any,
       gherkinExe: js.Any,
@@ -71,26 +70,19 @@ object gherkinExeMod {
       __obj.asInstanceOf[GherkinExe]
     }
     
-    @scala.inline
-    implicit class GherkinExeMutableBuilder[Self <: GherkinExe] (val x: Self) extends AnyVal {
+    extension [Self <: GherkinExe](x: Self) {
       
-      @scala.inline
-      def setDialects(value: () => StringDictionary[Dialect]): Self = StObject.set(x, "dialects", js.Any.fromFunction0(value))
+      inline def setDialects(value: () => StringDictionary[Dialect]): Self = StObject.set(x, "dialects", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnvelopes(value: js.Any): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
+      inline def setEnvelopes(value: js.Any): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGherkinExe(value: js.Any): Self = StObject.set(x, "gherkinExe", value.asInstanceOf[js.Any])
+      inline def setGherkinExe(value: js.Any): Self = StObject.set(x, "gherkinExe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStream(value: () => Readable): Self = StObject.set(x, "messageStream", js.Any.fromFunction0(value))
+      inline def setMessageStream(value: () => Readable): Self = StObject.set(x, "messageStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     }
   }
 }

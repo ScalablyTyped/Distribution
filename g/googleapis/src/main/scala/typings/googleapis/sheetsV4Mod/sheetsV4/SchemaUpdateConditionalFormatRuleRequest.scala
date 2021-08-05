@@ -33,37 +33,27 @@ trait SchemaUpdateConditionalFormatRuleRequest extends StObject {
 }
 object SchemaUpdateConditionalFormatRuleRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateConditionalFormatRuleRequest = {
+  inline def apply(): SchemaUpdateConditionalFormatRuleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateConditionalFormatRuleRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateConditionalFormatRuleRequestMutableBuilder[Self <: SchemaUpdateConditionalFormatRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateConditionalFormatRuleRequest](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
-    @scala.inline
-    def setRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

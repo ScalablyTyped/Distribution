@@ -13,22 +13,17 @@ trait TrafficRoute extends StObject {
 }
 object TrafficRoute {
   
-  @scala.inline
-  def apply(): TrafficRoute = {
+  inline def apply(): TrafficRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficRoute]
   }
   
-  @scala.inline
-  implicit class TrafficRouteMutableBuilder[Self <: TrafficRoute] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficRoute](x: Self) {
     
-    @scala.inline
-    def setListenerArns(value: ListenerArnList): Self = StObject.set(x, "listenerArns", value.asInstanceOf[js.Any])
+    inline def setListenerArns(value: ListenerArnList): Self = StObject.set(x, "listenerArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerArnsUndefined: Self = StObject.set(x, "listenerArns", js.undefined)
+    inline def setListenerArnsUndefined: Self = StObject.set(x, "listenerArns", js.undefined)
     
-    @scala.inline
-    def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "listenerArns", js.Array(value :_*))
+    inline def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "listenerArns", js.Array(value :_*))
   }
 }

@@ -13,17 +13,14 @@ object anon {
   }
   object Raw {
     
-    @scala.inline
-    def apply[T /* <: Commit[String | Double | js.Symbol] */](raw: T): Raw[T] = {
+    inline def apply[T /* <: Commit[String | Double | js.Symbol] */](raw: T): Raw[T] = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Raw[T]]
     }
     
-    @scala.inline
-    implicit class RawMutableBuilder[Self <: Raw[?], T /* <: Commit[String | Double | js.Symbol] */] (val x: Self & Raw[T]) extends AnyVal {
+    extension [Self <: Raw[?], T /* <: Commit[String | Double | js.Symbol] */](x: Self & Raw[T]) {
       
-      @scala.inline
-      def setRaw(value: T): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: T): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
 }

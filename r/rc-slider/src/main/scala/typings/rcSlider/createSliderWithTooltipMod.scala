@@ -18,8 +18,7 @@ object createSliderWithTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[Props]]
+  inline def default[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[Props]]
   
   trait ComponentWrapperProps extends StObject {
     
@@ -31,32 +30,24 @@ object createSliderWithTooltipMod {
   }
   object ComponentWrapperProps {
     
-    @scala.inline
-    def apply(): ComponentWrapperProps = {
+    inline def apply(): ComponentWrapperProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentWrapperProps]
     }
     
-    @scala.inline
-    implicit class ComponentWrapperPropsMutableBuilder[Self <: ComponentWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentWrapperProps](x: Self) {
       
-      @scala.inline
-      def setGetTooltipContainer(value: () => HTMLElement): Self = StObject.set(x, "getTooltipContainer", js.Any.fromFunction0(value))
+      inline def setGetTooltipContainer(value: () => HTMLElement): Self = StObject.set(x, "getTooltipContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipContainerUndefined: Self = StObject.set(x, "getTooltipContainer", js.undefined)
+      inline def setGetTooltipContainerUndefined: Self = StObject.set(x, "getTooltipContainer", js.undefined)
       
-      @scala.inline
-      def setTipFormatter(value: /* value */ Double => ReactNode): Self = StObject.set(x, "tipFormatter", js.Any.fromFunction1(value))
+      inline def setTipFormatter(value: /* value */ Double => ReactNode): Self = StObject.set(x, "tipFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTipFormatterUndefined: Self = StObject.set(x, "tipFormatter", js.undefined)
+      inline def setTipFormatterUndefined: Self = StObject.set(x, "tipFormatter", js.undefined)
       
-      @scala.inline
-      def setTipProps(value: Overlay): Self = StObject.set(x, "tipProps", value.asInstanceOf[js.Any])
+      inline def setTipProps(value: Overlay): Self = StObject.set(x, "tipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTipPropsUndefined: Self = StObject.set(x, "tipProps", js.undefined)
+      inline def setTipPropsUndefined: Self = StObject.set(x, "tipProps", js.undefined)
     }
   }
   
@@ -66,17 +57,14 @@ object createSliderWithTooltipMod {
   }
   object ComponentWrapperState {
     
-    @scala.inline
-    def apply(visibles: Record[Double, Boolean]): ComponentWrapperState = {
+    inline def apply(visibles: Record[Double, Boolean]): ComponentWrapperState = {
       val __obj = js.Dynamic.literal(visibles = visibles.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentWrapperState]
     }
     
-    @scala.inline
-    implicit class ComponentWrapperStateMutableBuilder[Self <: ComponentWrapperState] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentWrapperState](x: Self) {
       
-      @scala.inline
-      def setVisibles(value: Record[Double, Boolean]): Self = StObject.set(x, "visibles", value.asInstanceOf[js.Any])
+      inline def setVisibles(value: Record[Double, Boolean]): Self = StObject.set(x, "visibles", value.asInstanceOf[js.Any])
     }
   }
 }

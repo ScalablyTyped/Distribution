@@ -58,76 +58,53 @@ trait ExportImageResult extends StObject {
 }
 object ExportImageResult {
   
-  @scala.inline
-  def apply(): ExportImageResult = {
+  inline def apply(): ExportImageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportImageResult]
   }
   
-  @scala.inline
-  implicit class ExportImageResultMutableBuilder[Self <: ExportImageResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExportImageResult](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDiskImageFormat(value: DiskImageFormat): Self = StObject.set(x, "DiskImageFormat", value.asInstanceOf[js.Any])
+    inline def setDiskImageFormat(value: DiskImageFormat): Self = StObject.set(x, "DiskImageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskImageFormatUndefined: Self = StObject.set(x, "DiskImageFormat", js.undefined)
+    inline def setDiskImageFormatUndefined: Self = StObject.set(x, "DiskImageFormat", js.undefined)
     
-    @scala.inline
-    def setExportImageTaskId(value: String): Self = StObject.set(x, "ExportImageTaskId", value.asInstanceOf[js.Any])
+    inline def setExportImageTaskId(value: String): Self = StObject.set(x, "ExportImageTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportImageTaskIdUndefined: Self = StObject.set(x, "ExportImageTaskId", js.undefined)
+    inline def setExportImageTaskIdUndefined: Self = StObject.set(x, "ExportImageTaskId", js.undefined)
     
-    @scala.inline
-    def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
-    @scala.inline
-    def setProgress(value: String): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: String): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: String): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
     
-    @scala.inline
-    def setS3ExportLocation(value: ExportTaskS3Location): Self = StObject.set(x, "S3ExportLocation", value.asInstanceOf[js.Any])
+    inline def setS3ExportLocation(value: ExportTaskS3Location): Self = StObject.set(x, "S3ExportLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ExportLocationUndefined: Self = StObject.set(x, "S3ExportLocation", js.undefined)
+    inline def setS3ExportLocationUndefined: Self = StObject.set(x, "S3ExportLocation", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

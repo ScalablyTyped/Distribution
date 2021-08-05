@@ -12,22 +12,17 @@ trait TimelineFeedResponseHideReasonsV2Item extends StObject {
 }
 object TimelineFeedResponseHideReasonsV2Item {
   
-  @scala.inline
-  def apply(text: String): TimelineFeedResponseHideReasonsV2Item = {
+  inline def apply(text: String): TimelineFeedResponseHideReasonsV2Item = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], reason = null)
     __obj.asInstanceOf[TimelineFeedResponseHideReasonsV2Item]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseHideReasonsV2ItemMutableBuilder[Self <: TimelineFeedResponseHideReasonsV2Item] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponseHideReasonsV2Item](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonNull: Self = StObject.set(x, "reason", null)
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

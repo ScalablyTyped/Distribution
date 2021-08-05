@@ -15,17 +15,14 @@ trait EmptyStatement_
 }
 object EmptyStatement_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): EmptyStatement_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): EmptyStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("EmptyStatement")
     __obj.asInstanceOf[EmptyStatement_]
   }
   
-  @scala.inline
-  implicit class EmptyStatement_MutableBuilder[Self <: EmptyStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: EmptyStatement_](x: Self) {
     
-    @scala.inline
-    def setType(value: EmptyStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EmptyStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,17 +14,14 @@ object commonBaseDriverProtractorMod {
   }
   object BaseDriver {
     
-    @scala.inline
-    def apply(element: () => ElementFinder): BaseDriver = {
+    inline def apply(element: () => ElementFinder): BaseDriver = {
       val __obj = js.Dynamic.literal(element = js.Any.fromFunction0(element))
       __obj.asInstanceOf[BaseDriver]
     }
     
-    @scala.inline
-    implicit class BaseDriverMutableBuilder[Self <: BaseDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BaseDriver](x: Self) {
       
-      @scala.inline
-      def setElement(value: () => ElementFinder): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => ElementFinder): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     }
   }
   

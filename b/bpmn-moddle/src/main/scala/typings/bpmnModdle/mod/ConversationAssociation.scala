@@ -14,8 +14,7 @@ trait ConversationAssociation
 }
 object ConversationAssociation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     correlationKeys: js.Array[CorrelationKey],
@@ -32,13 +31,10 @@ object ConversationAssociation {
     __obj.asInstanceOf[ConversationAssociation]
   }
   
-  @scala.inline
-  implicit class ConversationAssociationMutableBuilder[Self <: ConversationAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationAssociation](x: Self) {
     
-    @scala.inline
-    def setInnerConversationNodeRef(value: ConversationNode): Self = StObject.set(x, "innerConversationNodeRef", value.asInstanceOf[js.Any])
+    inline def setInnerConversationNodeRef(value: ConversationNode): Self = StObject.set(x, "innerConversationNodeRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterConversationNodeRef(value: ConversationNode): Self = StObject.set(x, "outerConversationNodeRef", value.asInstanceOf[js.Any])
+    inline def setOuterConversationNodeRef(value: ConversationNode): Self = StObject.set(x, "outerConversationNodeRef", value.asInstanceOf[js.Any])
   }
 }

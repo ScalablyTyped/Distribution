@@ -22,8 +22,7 @@ trait IUploadOperation
 }
 object IUploadOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachAsync: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation],
     costPolicy: BackgroundTransferCostPolicy,
     getResponseInformation: () => ResponseInformation,
@@ -40,19 +39,14 @@ object IUploadOperation {
     __obj.asInstanceOf[IUploadOperation]
   }
   
-  @scala.inline
-  implicit class IUploadOperationMutableBuilder[Self <: IUploadOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IUploadOperation](x: Self) {
     
-    @scala.inline
-    def setAttachAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
+    inline def setAttachAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProgress(value: BackgroundUploadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: BackgroundUploadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFile(value: IStorageFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    inline def setSourceFile(value: IStorageFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
+    inline def setStartAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
   }
 }

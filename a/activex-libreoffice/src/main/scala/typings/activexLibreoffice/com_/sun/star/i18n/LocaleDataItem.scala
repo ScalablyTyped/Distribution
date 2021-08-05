@@ -48,8 +48,7 @@ trait LocaleDataItem extends StObject {
 }
 object LocaleDataItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LongDateDayOfWeekSeparator: String,
     LongDateDaySeparator: String,
     LongDateMonthSeparator: String,
@@ -73,61 +72,42 @@ object LocaleDataItem {
     __obj.asInstanceOf[LocaleDataItem]
   }
   
-  @scala.inline
-  implicit class LocaleDataItemMutableBuilder[Self <: LocaleDataItem] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleDataItem](x: Self) {
     
-    @scala.inline
-    def setDateSeparator(value: String): Self = StObject.set(x, "dateSeparator", value.asInstanceOf[js.Any])
+    inline def setDateSeparator(value: String): Self = StObject.set(x, "dateSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+    inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleQuotationEnd(value: String): Self = StObject.set(x, "doubleQuotationEnd", value.asInstanceOf[js.Any])
+    inline def setDoubleQuotationEnd(value: String): Self = StObject.set(x, "doubleQuotationEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleQuotationStart(value: String): Self = StObject.set(x, "doubleQuotationStart", value.asInstanceOf[js.Any])
+    inline def setDoubleQuotationStart(value: String): Self = StObject.set(x, "doubleQuotationStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSeparator(value: String): Self = StObject.set(x, "listSeparator", value.asInstanceOf[js.Any])
+    inline def setListSeparator(value: String): Self = StObject.set(x, "listSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongDateDayOfWeekSeparator(value: String): Self = StObject.set(x, "LongDateDayOfWeekSeparator", value.asInstanceOf[js.Any])
+    inline def setLongDateDayOfWeekSeparator(value: String): Self = StObject.set(x, "LongDateDayOfWeekSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongDateDaySeparator(value: String): Self = StObject.set(x, "LongDateDaySeparator", value.asInstanceOf[js.Any])
+    inline def setLongDateDaySeparator(value: String): Self = StObject.set(x, "LongDateDaySeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongDateMonthSeparator(value: String): Self = StObject.set(x, "LongDateMonthSeparator", value.asInstanceOf[js.Any])
+    inline def setLongDateMonthSeparator(value: String): Self = StObject.set(x, "LongDateMonthSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongDateYearSeparator(value: String): Self = StObject.set(x, "LongDateYearSeparator", value.asInstanceOf[js.Any])
+    inline def setLongDateYearSeparator(value: String): Self = StObject.set(x, "LongDateYearSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementSystem(value: String): Self = StObject.set(x, "measurementSystem", value.asInstanceOf[js.Any])
+    inline def setMeasurementSystem(value: String): Self = StObject.set(x, "measurementSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotationEnd(value: String): Self = StObject.set(x, "quotationEnd", value.asInstanceOf[js.Any])
+    inline def setQuotationEnd(value: String): Self = StObject.set(x, "quotationEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotationStart(value: String): Self = StObject.set(x, "quotationStart", value.asInstanceOf[js.Any])
+    inline def setQuotationStart(value: String): Self = StObject.set(x, "quotationStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThousandSeparator(value: String): Self = StObject.set(x, "thousandSeparator", value.asInstanceOf[js.Any])
+    inline def setThousandSeparator(value: String): Self = StObject.set(x, "thousandSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime100SecSeparator(value: String): Self = StObject.set(x, "time100SecSeparator", value.asInstanceOf[js.Any])
+    inline def setTime100SecSeparator(value: String): Self = StObject.set(x, "time100SecSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeAM(value: String): Self = StObject.set(x, "timeAM", value.asInstanceOf[js.Any])
+    inline def setTimeAM(value: String): Self = StObject.set(x, "timeAM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePM(value: String): Self = StObject.set(x, "timePM", value.asInstanceOf[js.Any])
+    inline def setTimePM(value: String): Self = StObject.set(x, "timePM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeparator(value: String): Self = StObject.set(x, "timeSeparator", value.asInstanceOf[js.Any])
+    inline def setTimeSeparator(value: String): Self = StObject.set(x, "timeSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnoID(value: String): Self = StObject.set(x, "unoID", value.asInstanceOf[js.Any])
+    inline def setUnoID(value: String): Self = StObject.set(x, "unoID", value.asInstanceOf[js.Any])
   }
 }

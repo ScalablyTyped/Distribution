@@ -18,8 +18,7 @@ trait ElementConnectionData extends StObject {
 }
 object ElementConnectionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     sink: WebRtcEndpoint,
     sinkDescription: String,
     source: WebRtcEndpoint,
@@ -31,22 +30,16 @@ object ElementConnectionData {
     __obj.asInstanceOf[ElementConnectionData]
   }
   
-  @scala.inline
-  implicit class ElementConnectionDataMutableBuilder[Self <: ElementConnectionData] (val x: Self) extends AnyVal {
+  extension [Self <: ElementConnectionData](x: Self) {
     
-    @scala.inline
-    def setSink(value: WebRtcEndpoint): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: WebRtcEndpoint): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkDescription(value: String): Self = StObject.set(x, "sinkDescription", value.asInstanceOf[js.Any])
+    inline def setSinkDescription(value: String): Self = StObject.set(x, "sinkDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: WebRtcEndpoint): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: WebRtcEndpoint): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDescription(value: String): Self = StObject.set(x, "sourceDescription", value.asInstanceOf[js.Any])
+    inline def setSourceDescription(value: String): Self = StObject.set(x, "sourceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

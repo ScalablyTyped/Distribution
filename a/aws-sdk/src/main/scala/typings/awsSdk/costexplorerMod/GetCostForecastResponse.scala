@@ -18,28 +18,21 @@ trait GetCostForecastResponse extends StObject {
 }
 object GetCostForecastResponse {
   
-  @scala.inline
-  def apply(): GetCostForecastResponse = {
+  inline def apply(): GetCostForecastResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCostForecastResponse]
   }
   
-  @scala.inline
-  implicit class GetCostForecastResponseMutableBuilder[Self <: GetCostForecastResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCostForecastResponse](x: Self) {
     
-    @scala.inline
-    def setForecastResultsByTime(value: ForecastResultsByTime): Self = StObject.set(x, "ForecastResultsByTime", value.asInstanceOf[js.Any])
+    inline def setForecastResultsByTime(value: ForecastResultsByTime): Self = StObject.set(x, "ForecastResultsByTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastResultsByTimeUndefined: Self = StObject.set(x, "ForecastResultsByTime", js.undefined)
+    inline def setForecastResultsByTimeUndefined: Self = StObject.set(x, "ForecastResultsByTime", js.undefined)
     
-    @scala.inline
-    def setForecastResultsByTimeVarargs(value: ForecastResult*): Self = StObject.set(x, "ForecastResultsByTime", js.Array(value :_*))
+    inline def setForecastResultsByTimeVarargs(value: ForecastResult*): Self = StObject.set(x, "ForecastResultsByTime", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: MetricValue): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: MetricValue): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

@@ -11,22 +11,17 @@ trait Explicit extends StObject {
 }
 object Explicit {
   
-  @scala.inline
-  def apply(): Explicit = {
+  inline def apply(): Explicit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Explicit]
   }
   
-  @scala.inline
-  implicit class ExplicitMutableBuilder[Self <: Explicit] (val x: Self) extends AnyVal {
+  extension [Self <: Explicit](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
   }
 }

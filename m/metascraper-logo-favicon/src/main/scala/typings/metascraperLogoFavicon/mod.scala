@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
-  @scala.inline
-  def apply(options: Options): Rule = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
+  inline def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
+  inline def apply(options: Options): Rule = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
   @JSImport("metascraper-logo-favicon", JSImport.Namespace)
   @js.native
@@ -31,35 +29,26 @@ object mod {
   }
   object FaviconSize {
     
-    @scala.inline
-    def apply(href: String, size: Double, url: String): FaviconSize = {
+    inline def apply(href: String, size: Double, url: String): FaviconSize = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[FaviconSize]
     }
     
-    @scala.inline
-    implicit class FaviconSizeMutableBuilder[Self <: FaviconSize] (val x: Self) extends AnyVal {
+    extension [Self <: FaviconSize](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,26 +62,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGotOpts(value: ClientRequestArgs): Self = StObject.set(x, "gotOpts", value.asInstanceOf[js.Any])
+      inline def setGotOpts(value: ClientRequestArgs): Self = StObject.set(x, "gotOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGotOptsUndefined: Self = StObject.set(x, "gotOpts", js.undefined)
+      inline def setGotOptsUndefined: Self = StObject.set(x, "gotOpts", js.undefined)
       
-      @scala.inline
-      def setPickFn(value: (/* sizes */ js.Array[FaviconSize], /* pickDefault */ PickDefaultFunction) => FaviconSize): Self = StObject.set(x, "pickFn", js.Any.fromFunction2(value))
+      inline def setPickFn(value: (/* sizes */ js.Array[FaviconSize], /* pickDefault */ PickDefaultFunction) => FaviconSize): Self = StObject.set(x, "pickFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPickFnUndefined: Self = StObject.set(x, "pickFn", js.undefined)
+      inline def setPickFnUndefined: Self = StObject.set(x, "pickFn", js.undefined)
     }
   }
   

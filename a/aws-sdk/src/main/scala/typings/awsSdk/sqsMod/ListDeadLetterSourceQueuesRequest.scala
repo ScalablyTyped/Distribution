@@ -23,28 +23,21 @@ trait ListDeadLetterSourceQueuesRequest extends StObject {
 }
 object ListDeadLetterSourceQueuesRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String): ListDeadLetterSourceQueuesRequest = {
+  inline def apply(QueueUrl: String): ListDeadLetterSourceQueuesRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeadLetterSourceQueuesRequest]
   }
   
-  @scala.inline
-  implicit class ListDeadLetterSourceQueuesRequestMutableBuilder[Self <: ListDeadLetterSourceQueuesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeadLetterSourceQueuesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

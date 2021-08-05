@@ -22,31 +22,23 @@ trait GoogleActionsV2Entitlement extends StObject {
 }
 object GoogleActionsV2Entitlement {
   
-  @scala.inline
-  def apply(): GoogleActionsV2Entitlement = {
+  inline def apply(): GoogleActionsV2Entitlement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2Entitlement]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2EntitlementMutableBuilder[Self <: GoogleActionsV2Entitlement] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2Entitlement](x: Self) {
     
-    @scala.inline
-    def setInAppDetails(value: GoogleActionsV2SignedData): Self = StObject.set(x, "inAppDetails", value.asInstanceOf[js.Any])
+    inline def setInAppDetails(value: GoogleActionsV2SignedData): Self = StObject.set(x, "inAppDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAppDetailsUndefined: Self = StObject.set(x, "inAppDetails", js.undefined)
+    inline def setInAppDetailsUndefined: Self = StObject.set(x, "inAppDetails", js.undefined)
     
-    @scala.inline
-    def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuType(value: GoogleActionsV2EntitlementSkuType): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
+    inline def setSkuType(value: GoogleActionsV2EntitlementSkuType): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuTypeUndefined: Self = StObject.set(x, "skuType", js.undefined)
+    inline def setSkuTypeUndefined: Self = StObject.set(x, "skuType", js.undefined)
     
-    @scala.inline
-    def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+    inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
   }
 }

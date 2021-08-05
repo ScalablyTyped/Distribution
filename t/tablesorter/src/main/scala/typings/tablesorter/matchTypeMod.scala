@@ -13,10 +13,8 @@ object matchTypeMod {
   trait MatchType extends StObject
   object MatchType {
     
-    @scala.inline
-    def exact: typings.tablesorter.tablesorterStrings.exact = "exact".asInstanceOf[typings.tablesorter.tablesorterStrings.exact]
+    inline def exact: typings.tablesorter.tablesorterStrings.exact = "exact".asInstanceOf[typings.tablesorter.tablesorterStrings.exact]
     
-    @scala.inline
-    def `match`: typings.tablesorter.tablesorterStrings.`match` = "match".asInstanceOf[typings.tablesorter.tablesorterStrings.`match`]
+    inline def `match`: typings.tablesorter.tablesorterStrings.`match` = "match".asInstanceOf[typings.tablesorter.tablesorterStrings.`match`]
   }
 }

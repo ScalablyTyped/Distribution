@@ -39,11 +39,9 @@ object mod {
   trait Anchor extends StObject
   object Anchor {
     
-    @scala.inline
-    def bottom: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.bottom = "bottom".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.bottom]
+    inline def bottom: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.bottom = "bottom".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.bottom]
     
-    @scala.inline
-    def top: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.top = "top".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.top]
+    inline def top: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.top = "top".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.top]
   }
   
   type Icon = String | ReactElement
@@ -55,11 +53,9 @@ object mod {
   trait Position extends StObject
   object Position {
     
-    @scala.inline
-    def left: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.left = "left".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.left]
+    inline def left: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.left = "left".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.left]
     
-    @scala.inline
-    def right: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right = "right".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right]
+    inline def right: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right = "right".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right]
   }
   
   trait SidebarProps extends StObject {
@@ -82,50 +78,36 @@ object mod {
   }
   object SidebarProps {
     
-    @scala.inline
-    def apply(children: TabType, collapsed: Boolean, id: String, position: Position, selected: String): SidebarProps = {
+    inline def apply(children: TabType, collapsed: Boolean, id: String, position: Position, selected: String): SidebarProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], collapsed = collapsed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[SidebarProps]
     }
     
-    @scala.inline
-    implicit class SidebarPropsMutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: TabType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: TabType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: /* id */ String => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setOnOpen(value: /* id */ String => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,59 +133,42 @@ object mod {
   }
   object TabProps {
     
-    @scala.inline
-    def apply(header: String, icon: Icon, id: String): TabProps = {
+    inline def apply(header: String, icon: Icon, id: String): TabProps = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabProps]
     }
     
-    @scala.inline
-    implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   

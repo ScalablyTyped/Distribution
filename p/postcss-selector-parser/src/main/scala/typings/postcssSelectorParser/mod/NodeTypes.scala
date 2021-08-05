@@ -32,8 +32,7 @@ trait NodeTypes extends StObject {
 }
 object NodeTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attribute: Attribute_,
     `class`: ClassName_,
     combinator: Combinator_,
@@ -52,43 +51,30 @@ object NodeTypes {
     __obj.asInstanceOf[NodeTypes]
   }
   
-  @scala.inline
-  implicit class NodeTypesMutableBuilder[Self <: NodeTypes] (val x: Self) extends AnyVal {
+  extension [Self <: NodeTypes](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: Attribute_): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: Attribute_): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: ClassName_): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: ClassName_): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombinator(value: Combinator_): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
+    inline def setCombinator(value: Combinator_): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: Comment_): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: Comment_): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Identifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNesting(value: Nesting_): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
+    inline def setNesting(value: Nesting_): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudo(value: Pseudo_): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
+    inline def setPseudo(value: Pseudo_): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: Root_): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Root_): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: Selector_): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Selector_): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: String_): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String_): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: Tag_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Tag_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniversal(value: Universal_): Self = StObject.set(x, "universal", value.asInstanceOf[js.Any])
+    inline def setUniversal(value: Universal_): Self = StObject.set(x, "universal", value.asInstanceOf[js.Any])
   }
 }

@@ -16,31 +16,23 @@ trait ChartData extends StObject {
 }
 object ChartData {
   
-  @scala.inline
-  def apply(): ChartData = {
+  inline def apply(): ChartData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartData]
   }
   
-  @scala.inline
-  implicit class ChartDataMutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartData](x: Self) {
     
-    @scala.inline
-    def setDatasets(value: js.Array[ChartDataSets]): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+    inline def setDatasets(value: js.Array[ChartDataSets]): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
+    inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
-    @scala.inline
-    def setDatasetsVarargs(value: ChartDataSets*): Self = StObject.set(x, "datasets", js.Array(value :_*))
+    inline def setDatasetsVarargs(value: ChartDataSets*): Self = StObject.set(x, "datasets", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: js.Array[String | (js.Array[Date | Double | Moment | String]) | Double | Date | Moment]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String | (js.Array[Date | Double | Moment | String]) | Double | Date | Moment]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: (String | (js.Array[Date | Double | Moment | String]) | Double | Date | Moment)*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: (String | (js.Array[Date | Double | Moment | String]) | Double | Date | Moment)*): Self = StObject.set(x, "labels", js.Array(value :_*))
   }
 }

@@ -12,8 +12,7 @@ object lrucacheMod {
   val ^ : js.Any = js.native
   
   // tslint:disable-next-line:no-unnecessary-generics
-  @scala.inline
-  def create[T](capacity: Double): LRUCache[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(capacity.asInstanceOf[js.Any]).asInstanceOf[LRUCache[T]]
+  inline def create[T](capacity: Double): LRUCache[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(capacity.asInstanceOf[js.Any]).asInstanceOf[LRUCache[T]]
   
   trait Cache[T] extends StObject {
     
@@ -33,8 +32,7 @@ object lrucacheMod {
   }
   object Cache {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       capacity: () => Double,
       clear: () => Unit,
       delete: String => Unit,
@@ -47,29 +45,21 @@ object lrucacheMod {
       __obj.asInstanceOf[Cache[T]]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache[?], T] (val x: Self & Cache[T]) extends AnyVal {
+    extension [Self <: Cache[?], T](x: Self & Cache[T]) {
       
-      @scala.inline
-      def setCapacity(value: () => Double): Self = StObject.set(x, "capacity", js.Any.fromFunction0(value))
+      inline def setCapacity(value: () => Double): Self = StObject.set(x, "capacity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => T | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => T | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, T) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, T) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }
   }
   
@@ -94,8 +84,7 @@ object lrucacheMod {
   }
   object LRUCache {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       _capacity: Double,
       _map: Map[String, T],
       capacity: () => Double,
@@ -110,14 +99,11 @@ object lrucacheMod {
       __obj.asInstanceOf[LRUCache[T]]
     }
     
-    @scala.inline
-    implicit class LRUCacheMutableBuilder[Self <: LRUCache[?], T] (val x: Self & LRUCache[T]) extends AnyVal {
+    extension [Self <: LRUCache[?], T](x: Self & LRUCache[T]) {
       
-      @scala.inline
-      def set_capacity(value: Double): Self = StObject.set(x, "_capacity", value.asInstanceOf[js.Any])
+      inline def set_capacity(value: Double): Self = StObject.set(x, "_capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_map(value: Map[String, T]): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
+      inline def set_map(value: Map[String, T]): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
     }
   }
 }

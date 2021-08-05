@@ -16,7 +16,7 @@ trait TableStyleElement extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.TableStyleElement_typekey")
+  /* private */ @JSName("Excel.TableStyleElement_typekey")
   var ExcelDotTableStyleElement_typekey: TableStyleElement
   
   val Font: typings.activexExcel.Excel.Font
@@ -31,8 +31,7 @@ trait TableStyleElement extends StObject {
 }
 object TableStyleElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Borders: Borders,
     Clear: () => Unit,
@@ -49,37 +48,26 @@ object TableStyleElement {
     __obj.asInstanceOf[TableStyleElement]
   }
   
-  @scala.inline
-  implicit class TableStyleElementMutableBuilder[Self <: TableStyleElement] (val x: Self) extends AnyVal {
+  extension [Self <: TableStyleElement](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotTableStyleElement_typekey(value: TableStyleElement): Self = StObject.set(x, "Excel.TableStyleElement_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotTableStyleElement_typekey(value: TableStyleElement): Self = StObject.set(x, "Excel.TableStyleElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasFormat(value: Boolean): Self = StObject.set(x, "HasFormat", value.asInstanceOf[js.Any])
+    inline def setHasFormat(value: Boolean): Self = StObject.set(x, "HasFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripeSize(value: Double): Self = StObject.set(x, "StripeSize", value.asInstanceOf[js.Any])
+    inline def setStripeSize(value: Double): Self = StObject.set(x, "StripeSize", value.asInstanceOf[js.Any])
   }
 }

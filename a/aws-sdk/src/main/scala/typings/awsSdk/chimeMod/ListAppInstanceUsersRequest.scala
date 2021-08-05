@@ -23,28 +23,21 @@ trait ListAppInstanceUsersRequest extends StObject {
 }
 object ListAppInstanceUsersRequest {
   
-  @scala.inline
-  def apply(AppInstanceArn: ChimeArn): ListAppInstanceUsersRequest = {
+  inline def apply(AppInstanceArn: ChimeArn): ListAppInstanceUsersRequest = {
     val __obj = js.Dynamic.literal(AppInstanceArn = AppInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAppInstanceUsersRequest]
   }
   
-  @scala.inline
-  implicit class ListAppInstanceUsersRequestMutableBuilder[Self <: ListAppInstanceUsersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAppInstanceUsersRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait BeforeSendResponse extends StObject {
 }
 object BeforeSendResponse {
   
-  @scala.inline
-  def apply(): BeforeSendResponse = {
+  inline def apply(): BeforeSendResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BeforeSendResponse]
   }
   
-  @scala.inline
-  implicit class BeforeSendResponseMutableBuilder[Self <: BeforeSendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BeforeSendResponse](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setRequestHeaders(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    inline def setRequestHeaders(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+    inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
   }
 }

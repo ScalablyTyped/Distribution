@@ -20,37 +20,27 @@ trait SqlAclEntry extends StObject {
 }
 object SqlAclEntry {
   
-  @scala.inline
-  def apply(): SqlAclEntry = {
+  inline def apply(): SqlAclEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlAclEntry]
   }
   
-  @scala.inline
-  implicit class SqlAclEntryMutableBuilder[Self <: SqlAclEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SqlAclEntry](x: Self) {
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

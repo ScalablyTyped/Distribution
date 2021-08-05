@@ -20,44 +20,32 @@ trait VastCreative extends StObject {
 }
 object VastCreative {
   
-  @scala.inline
-  def apply(trackingEvents: VastTrackingEvents, `type`: String): VastCreative = {
+  inline def apply(trackingEvents: VastTrackingEvents, `type`: String): VastCreative = {
     val __obj = js.Dynamic.literal(trackingEvents = trackingEvents.asInstanceOf[js.Any], adId = null, apiFramework = null, id = null, sequence = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreative]
   }
   
-  @scala.inline
-  implicit class VastCreativeMutableBuilder[Self <: VastCreative] (val x: Self) extends AnyVal {
+  extension [Self <: VastCreative](x: Self) {
     
-    @scala.inline
-    def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
+    inline def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdIdNull: Self = StObject.set(x, "adId", null)
+    inline def setAdIdNull: Self = StObject.set(x, "adId", null)
     
-    @scala.inline
-    def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
+    inline def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiFrameworkNull: Self = StObject.set(x, "apiFramework", null)
+    inline def setApiFrameworkNull: Self = StObject.set(x, "apiFramework", null)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setSequence(value: String | Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: String | Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNull: Self = StObject.set(x, "sequence", null)
+    inline def setSequenceNull: Self = StObject.set(x, "sequence", null)
     
-    @scala.inline
-    def setTrackingEvents(value: VastTrackingEvents): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
+    inline def setTrackingEvents(value: VastTrackingEvents): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

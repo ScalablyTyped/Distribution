@@ -41,8 +41,7 @@ trait OfficeTheme extends StObject {
 }
 object OfficeTheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bodyBackgroundColor: String,
     bodyForegroundColor: String,
     controlBackgroundColor: String,
@@ -52,19 +51,14 @@ object OfficeTheme {
     __obj.asInstanceOf[OfficeTheme]
   }
   
-  @scala.inline
-  implicit class OfficeThemeMutableBuilder[Self <: OfficeTheme] (val x: Self) extends AnyVal {
+  extension [Self <: OfficeTheme](x: Self) {
     
-    @scala.inline
-    def setBodyBackgroundColor(value: String): Self = StObject.set(x, "bodyBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setBodyBackgroundColor(value: String): Self = StObject.set(x, "bodyBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyForegroundColor(value: String): Self = StObject.set(x, "bodyForegroundColor", value.asInstanceOf[js.Any])
+    inline def setBodyForegroundColor(value: String): Self = StObject.set(x, "bodyForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlBackgroundColor(value: String): Self = StObject.set(x, "controlBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setControlBackgroundColor(value: String): Self = StObject.set(x, "controlBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlForegroundColor(value: String): Self = StObject.set(x, "controlForegroundColor", value.asInstanceOf[js.Any])
+    inline def setControlForegroundColor(value: String): Self = StObject.set(x, "controlForegroundColor", value.asInstanceOf[js.Any])
   }
 }

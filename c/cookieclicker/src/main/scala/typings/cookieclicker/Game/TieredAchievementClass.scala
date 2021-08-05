@@ -14,8 +14,7 @@ trait TieredAchievementClass[Tier /* <: String | Double */]
 }
 object TieredAchievementClass {
   
-  @scala.inline
-  def apply[Tier /* <: String | Double */](
+  inline def apply[Tier /* <: String | Double */](
     baseDesc: String,
     buildingTie: GameObject,
     click: () => Unit,
@@ -36,13 +35,10 @@ object TieredAchievementClass {
     __obj.asInstanceOf[TieredAchievementClass[Tier]]
   }
   
-  @scala.inline
-  implicit class TieredAchievementClassMutableBuilder[Self <: TieredAchievementClass[?], Tier /* <: String | Double */] (val x: Self & TieredAchievementClass[Tier]) extends AnyVal {
+  extension [Self <: TieredAchievementClass[?], Tier /* <: String | Double */](x: Self & TieredAchievementClass[Tier]) {
     
-    @scala.inline
-    def setBuildingTie(value: GameObject): Self = StObject.set(x, "buildingTie", value.asInstanceOf[js.Any])
+    inline def setBuildingTie(value: GameObject): Self = StObject.set(x, "buildingTie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTier(value: Tier): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: Tier): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
   }
 }

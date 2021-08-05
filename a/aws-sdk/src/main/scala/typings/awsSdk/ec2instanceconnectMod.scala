@@ -33,20 +33,16 @@ object ec2instanceconnectMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -108,8 +104,7 @@ object ec2instanceconnectMod {
   }
   object SendSSHPublicKeyRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AvailabilityZone: AvailabilityZone,
       InstanceId: InstanceId,
       InstanceOSUser: InstanceOSUser,
@@ -119,20 +114,15 @@ object ec2instanceconnectMod {
       __obj.asInstanceOf[SendSSHPublicKeyRequest]
     }
     
-    @scala.inline
-    implicit class SendSSHPublicKeyRequestMutableBuilder[Self <: SendSSHPublicKeyRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SendSSHPublicKeyRequest](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceOSUser(value: InstanceOSUser): Self = StObject.set(x, "InstanceOSUser", value.asInstanceOf[js.Any])
+      inline def setInstanceOSUser(value: InstanceOSUser): Self = StObject.set(x, "InstanceOSUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSHPublicKey(value: SSHPublicKey): Self = StObject.set(x, "SSHPublicKey", value.asInstanceOf[js.Any])
+      inline def setSSHPublicKey(value: SSHPublicKey): Self = StObject.set(x, "SSHPublicKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,26 +140,20 @@ object ec2instanceconnectMod {
   }
   object SendSSHPublicKeyResponse {
     
-    @scala.inline
-    def apply(): SendSSHPublicKeyResponse = {
+    inline def apply(): SendSSHPublicKeyResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SendSSHPublicKeyResponse]
     }
     
-    @scala.inline
-    implicit class SendSSHPublicKeyResponseMutableBuilder[Self <: SendSSHPublicKeyResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SendSSHPublicKeyResponse](x: Self) {
       
-      @scala.inline
-      def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
     }
   }
   

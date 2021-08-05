@@ -17,31 +17,23 @@ trait Topic extends StObject {
 }
 object Topic {
   
-  @scala.inline
-  def apply(): Topic = {
+  inline def apply(): Topic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Topic]
   }
   
-  @scala.inline
-  implicit class TopicMutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
+  extension [Self <: Topic](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPartitionConfig(value: PartitionConfig): Self = StObject.set(x, "partitionConfig", value.asInstanceOf[js.Any])
+    inline def setPartitionConfig(value: PartitionConfig): Self = StObject.set(x, "partitionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionConfigUndefined: Self = StObject.set(x, "partitionConfig", js.undefined)
+    inline def setPartitionConfigUndefined: Self = StObject.set(x, "partitionConfig", js.undefined)
     
-    @scala.inline
-    def setRetentionConfig(value: RetentionConfig): Self = StObject.set(x, "retentionConfig", value.asInstanceOf[js.Any])
+    inline def setRetentionConfig(value: RetentionConfig): Self = StObject.set(x, "retentionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionConfigUndefined: Self = StObject.set(x, "retentionConfig", js.undefined)
+    inline def setRetentionConfigUndefined: Self = StObject.set(x, "retentionConfig", js.undefined)
   }
 }

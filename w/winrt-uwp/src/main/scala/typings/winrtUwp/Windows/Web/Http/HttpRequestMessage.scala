@@ -33,8 +33,7 @@ trait HttpRequestMessage extends StObject {
 }
 object HttpRequestMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     content: IHttpContent,
     headers: HttpRequestHeaderCollection,
@@ -47,28 +46,20 @@ object HttpRequestMessage {
     __obj.asInstanceOf[HttpRequestMessage]
   }
   
-  @scala.inline
-  implicit class HttpRequestMessageMutableBuilder[Self <: HttpRequestMessage] (val x: Self) extends AnyVal {
+  extension [Self <: HttpRequestMessage](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContent(value: IHttpContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: IHttpContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: HttpRequestHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HttpRequestHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUri(value: Uri): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])
+    inline def setRequestUri(value: Uri): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportInformation(value: HttpTransportInformation): Self = StObject.set(x, "transportInformation", value.asInstanceOf[js.Any])
+    inline def setTransportInformation(value: HttpTransportInformation): Self = StObject.set(x, "transportInformation", value.asInstanceOf[js.Any])
   }
 }

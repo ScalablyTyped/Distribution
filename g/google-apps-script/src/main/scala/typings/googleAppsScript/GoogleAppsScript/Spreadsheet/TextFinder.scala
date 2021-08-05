@@ -36,8 +36,7 @@ trait TextFinder extends StObject {
 }
 object TextFinder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findAll: () => js.Array[Range],
     findNext: () => Range | Null,
     findPrevious: () => Range | Null,
@@ -55,43 +54,30 @@ object TextFinder {
     __obj.asInstanceOf[TextFinder]
   }
   
-  @scala.inline
-  implicit class TextFinderMutableBuilder[Self <: TextFinder] (val x: Self) extends AnyVal {
+  extension [Self <: TextFinder](x: Self) {
     
-    @scala.inline
-    def setFindAll(value: () => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction0(value))
+    inline def setFindAll(value: () => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindNext(value: () => Range | Null): Self = StObject.set(x, "findNext", js.Any.fromFunction0(value))
+    inline def setFindNext(value: () => Range | Null): Self = StObject.set(x, "findNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindPrevious(value: () => Range | Null): Self = StObject.set(x, "findPrevious", js.Any.fromFunction0(value))
+    inline def setFindPrevious(value: () => Range | Null): Self = StObject.set(x, "findPrevious", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentMatch(value: () => Range | Null): Self = StObject.set(x, "getCurrentMatch", js.Any.fromFunction0(value))
+    inline def setGetCurrentMatch(value: () => Range | Null): Self = StObject.set(x, "getCurrentMatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIgnoreDiacritics(value: Boolean => TextFinder): Self = StObject.set(x, "ignoreDiacritics", js.Any.fromFunction1(value))
+    inline def setIgnoreDiacritics(value: Boolean => TextFinder): Self = StObject.set(x, "ignoreDiacritics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatchCase(value: Boolean => TextFinder): Self = StObject.set(x, "matchCase", js.Any.fromFunction1(value))
+    inline def setMatchCase(value: Boolean => TextFinder): Self = StObject.set(x, "matchCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatchEntireCell(value: Boolean => TextFinder): Self = StObject.set(x, "matchEntireCell", js.Any.fromFunction1(value))
+    inline def setMatchEntireCell(value: Boolean => TextFinder): Self = StObject.set(x, "matchEntireCell", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatchFormulaText(value: Boolean => TextFinder): Self = StObject.set(x, "matchFormulaText", js.Any.fromFunction1(value))
+    inline def setMatchFormulaText(value: Boolean => TextFinder): Self = StObject.set(x, "matchFormulaText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceAllWith(value: String => Integer): Self = StObject.set(x, "replaceAllWith", js.Any.fromFunction1(value))
+    inline def setReplaceAllWith(value: String => Integer): Self = StObject.set(x, "replaceAllWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceWith(value: String => Integer): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+    inline def setReplaceWith(value: String => Integer): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartFrom(value: Range => TextFinder): Self = StObject.set(x, "startFrom", js.Any.fromFunction1(value))
+    inline def setStartFrom(value: Range => TextFinder): Self = StObject.set(x, "startFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUseRegularExpression(value: Boolean => TextFinder): Self = StObject.set(x, "useRegularExpression", js.Any.fromFunction1(value))
+    inline def setUseRegularExpression(value: Boolean => TextFinder): Self = StObject.set(x, "useRegularExpression", js.Any.fromFunction1(value))
   }
 }

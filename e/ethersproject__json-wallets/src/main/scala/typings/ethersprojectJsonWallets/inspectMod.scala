@@ -10,12 +10,9 @@ object inspectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getJsonWalletAddress(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsonWalletAddress")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getJsonWalletAddress(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsonWalletAddress")(json.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isCrowdsaleWallet(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrowdsaleWallet")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCrowdsaleWallet(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrowdsaleWallet")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isKeystoreWallet(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeystoreWallet")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isKeystoreWallet(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeystoreWallet")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

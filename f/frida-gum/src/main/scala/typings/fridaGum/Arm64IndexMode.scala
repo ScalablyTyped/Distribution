@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Arm64IndexMode extends StObject
 object Arm64IndexMode {
   
-  @scala.inline
-  def `post-adjust`: typings.fridaGum.fridaGumStrings.`post-adjust` = "post-adjust".asInstanceOf[typings.fridaGum.fridaGumStrings.`post-adjust`]
+  inline def `post-adjust`: typings.fridaGum.fridaGumStrings.`post-adjust` = "post-adjust".asInstanceOf[typings.fridaGum.fridaGumStrings.`post-adjust`]
   
-  @scala.inline
-  def `pre-adjust`: typings.fridaGum.fridaGumStrings.`pre-adjust` = "pre-adjust".asInstanceOf[typings.fridaGum.fridaGumStrings.`pre-adjust`]
+  inline def `pre-adjust`: typings.fridaGum.fridaGumStrings.`pre-adjust` = "pre-adjust".asInstanceOf[typings.fridaGum.fridaGumStrings.`pre-adjust`]
   
-  @scala.inline
-  def `signed-offset`: typings.fridaGum.fridaGumStrings.`signed-offset` = "signed-offset".asInstanceOf[typings.fridaGum.fridaGumStrings.`signed-offset`]
+  inline def `signed-offset`: typings.fridaGum.fridaGumStrings.`signed-offset` = "signed-offset".asInstanceOf[typings.fridaGum.fridaGumStrings.`signed-offset`]
 }

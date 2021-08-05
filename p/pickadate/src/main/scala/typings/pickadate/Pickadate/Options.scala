@@ -96,115 +96,79 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setCloseOnClear(value: Boolean): Self = StObject.set(x, "closeOnClear", value.asInstanceOf[js.Any])
+    inline def setCloseOnClear(value: Boolean): Self = StObject.set(x, "closeOnClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnClearUndefined: Self = StObject.set(x, "closeOnClear", js.undefined)
+    inline def setCloseOnClearUndefined: Self = StObject.set(x, "closeOnClear", js.undefined)
     
-    @scala.inline
-    def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
+    inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
+    inline def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerHidden(value: String): Self = StObject.set(x, "containerHidden", value.asInstanceOf[js.Any])
+    inline def setContainerHidden(value: String): Self = StObject.set(x, "containerHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerHiddenUndefined: Self = StObject.set(x, "containerHidden", js.undefined)
+    inline def setContainerHiddenUndefined: Self = StObject.set(x, "containerHidden", js.undefined)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatSubmit(value: String): Self = StObject.set(x, "formatSubmit", value.asInstanceOf[js.Any])
+    inline def setFormatSubmit(value: String): Self = StObject.set(x, "formatSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatSubmitUndefined: Self = StObject.set(x, "formatSubmit", js.undefined)
+    inline def setFormatSubmitUndefined: Self = StObject.set(x, "formatSubmit", js.undefined)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHiddenName(value: Boolean): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
+    inline def setHiddenName(value: Boolean): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
+    inline def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
     
-    @scala.inline
-    def setHiddenPrefix(value: String): Self = StObject.set(x, "hiddenPrefix", value.asInstanceOf[js.Any])
+    inline def setHiddenPrefix(value: String): Self = StObject.set(x, "hiddenPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenPrefixUndefined: Self = StObject.set(x, "hiddenPrefix", js.undefined)
+    inline def setHiddenPrefixUndefined: Self = StObject.set(x, "hiddenPrefix", js.undefined)
     
-    @scala.inline
-    def setHiddenSuffix(value: String): Self = StObject.set(x, "hiddenSuffix", value.asInstanceOf[js.Any])
+    inline def setHiddenSuffix(value: String): Self = StObject.set(x, "hiddenSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenSuffixUndefined: Self = StObject.set(x, "hiddenSuffix", js.undefined)
+    inline def setHiddenSuffixUndefined: Self = StObject.set(x, "hiddenSuffix", js.undefined)
     
-    @scala.inline
-    def setOnClose(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    @scala.inline
-    def setOnOpen(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+    inline def setOnOpen(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+    inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
-    @scala.inline
-    def setOnRender(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
+    inline def setOnRender(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+    inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
-    @scala.inline
-    def setOnSet(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onSet", js.Any.fromFunction1(value))
+    inline def setOnSet(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSetUndefined: Self = StObject.set(x, "onSet", js.undefined)
+    inline def setOnSetUndefined: Self = StObject.set(x, "onSet", js.undefined)
     
-    @scala.inline
-    def setOnStart(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+    inline def setOnStart(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
-    @scala.inline
-    def setOnStop(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+    inline def setOnStop(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+    inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
   }
 }

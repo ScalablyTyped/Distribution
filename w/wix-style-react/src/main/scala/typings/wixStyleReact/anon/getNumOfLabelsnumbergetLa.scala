@@ -17,8 +17,7 @@ trait getNumOfLabelsnumbergetLa extends StObject {
 }
 object getNumOfLabelsnumbergetLa {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     driver: Blur,
     getLabelAt: Double => String,
     getLabels: () => js.Array[String],
@@ -28,19 +27,14 @@ object getNumOfLabelsnumbergetLa {
     __obj.asInstanceOf[getNumOfLabelsnumbergetLa]
   }
   
-  @scala.inline
-  implicit class getNumOfLabelsnumbergetLaMutableBuilder[Self <: getNumOfLabelsnumbergetLa] (val x: Self) extends AnyVal {
+  extension [Self <: getNumOfLabelsnumbergetLa](x: Self) {
     
-    @scala.inline
-    def setDriver(value: Blur): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: Blur): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLabelAt(value: Double => String): Self = StObject.set(x, "getLabelAt", js.Any.fromFunction1(value))
+    inline def setGetLabelAt(value: Double => String): Self = StObject.set(x, "getLabelAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLabels(value: () => js.Array[String]): Self = StObject.set(x, "getLabels", js.Any.fromFunction0(value))
+    inline def setGetLabels(value: () => js.Array[String]): Self = StObject.set(x, "getLabels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumOfLabels(value: () => Double): Self = StObject.set(x, "getNumOfLabels", js.Any.fromFunction0(value))
+    inline def setGetNumOfLabels(value: () => Double): Self = StObject.set(x, "getNumOfLabels", js.Any.fromFunction0(value))
   }
 }

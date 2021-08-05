@@ -25,34 +25,25 @@ trait Change extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply(value: String): Change = {
+  inline def apply(value: String): Change = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+  extension [Self <: Change](x: Self) {
     
-    @scala.inline
-    def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+    inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

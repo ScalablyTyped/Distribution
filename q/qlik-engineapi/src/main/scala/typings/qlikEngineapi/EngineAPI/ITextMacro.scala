@@ -43,8 +43,7 @@ trait ITextMacro extends StObject {
 }
 object ITextMacro {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qDisplayString: String,
     qIsReserved: Boolean,
     qIsSystem: Boolean,
@@ -56,25 +55,18 @@ object ITextMacro {
     __obj.asInstanceOf[ITextMacro]
   }
   
-  @scala.inline
-  implicit class ITextMacroMutableBuilder[Self <: ITextMacro] (val x: Self) extends AnyVal {
+  extension [Self <: ITextMacro](x: Self) {
     
-    @scala.inline
-    def setQDisplayString(value: String): Self = StObject.set(x, "qDisplayString", value.asInstanceOf[js.Any])
+    inline def setQDisplayString(value: String): Self = StObject.set(x, "qDisplayString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsReserved(value: Boolean): Self = StObject.set(x, "qIsReserved", value.asInstanceOf[js.Any])
+    inline def setQIsReserved(value: Boolean): Self = StObject.set(x, "qIsReserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsSystem(value: Boolean): Self = StObject.set(x, "qIsSystem", value.asInstanceOf[js.Any])
+    inline def setQIsSystem(value: Boolean): Self = StObject.set(x, "qIsSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRefSeqNo(value: Double): Self = StObject.set(x, "qRefSeqNo", value.asInstanceOf[js.Any])
+    inline def setQRefSeqNo(value: Double): Self = StObject.set(x, "qRefSeqNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSetSeqNo(value: Double): Self = StObject.set(x, "qSetSeqNo", value.asInstanceOf[js.Any])
+    inline def setQSetSeqNo(value: Double): Self = StObject.set(x, "qSetSeqNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTag(value: String): Self = StObject.set(x, "qTag", value.asInstanceOf[js.Any])
+    inline def setQTag(value: String): Self = StObject.set(x, "qTag", value.asInstanceOf[js.Any])
   }
 }

@@ -24,59 +24,42 @@ trait IndexDescription[T] extends StObject {
 }
 object IndexDescription {
   
-  @scala.inline
-  def apply[T](fields: js.Array[/* keyof T */ String], `type`: IndexType): IndexDescription[T] = {
+  inline def apply[T](fields: js.Array[/* keyof T */ String], `type`: IndexType): IndexDescription[T] = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexDescription[T]]
   }
   
-  @scala.inline
-  implicit class IndexDescriptionMutableBuilder[Self <: IndexDescription[?], T] (val x: Self & IndexDescription[T]) extends AnyVal {
+  extension [Self <: IndexDescription[?], T](x: Self & IndexDescription[T]) {
     
-    @scala.inline
-    def setDeduplicate(value: Boolean): Self = StObject.set(x, "deduplicate", value.asInstanceOf[js.Any])
+    inline def setDeduplicate(value: Boolean): Self = StObject.set(x, "deduplicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeduplicateUndefined: Self = StObject.set(x, "deduplicate", js.undefined)
+    inline def setDeduplicateUndefined: Self = StObject.set(x, "deduplicate", js.undefined)
     
-    @scala.inline
-    def setExpireAfter(value: Double): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
+    inline def setExpireAfter(value: Double): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireAfterUndefined: Self = StObject.set(x, "expireAfter", js.undefined)
+    inline def setExpireAfterUndefined: Self = StObject.set(x, "expireAfter", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
+    inline def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
+    inline def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
     
-    @scala.inline
-    def setType(value: IndexType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IndexType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

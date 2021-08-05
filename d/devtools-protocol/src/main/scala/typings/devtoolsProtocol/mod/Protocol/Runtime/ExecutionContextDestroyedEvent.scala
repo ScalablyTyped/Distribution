@@ -13,16 +13,13 @@ trait ExecutionContextDestroyedEvent extends StObject {
 }
 object ExecutionContextDestroyedEvent {
   
-  @scala.inline
-  def apply(executionContextId: ExecutionContextId): ExecutionContextDestroyedEvent = {
+  inline def apply(executionContextId: ExecutionContextId): ExecutionContextDestroyedEvent = {
     val __obj = js.Dynamic.literal(executionContextId = executionContextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionContextDestroyedEvent]
   }
   
-  @scala.inline
-  implicit class ExecutionContextDestroyedEventMutableBuilder[Self <: ExecutionContextDestroyedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionContextDestroyedEvent](x: Self) {
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
   }
 }

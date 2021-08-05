@@ -15,25 +15,19 @@ trait matchesArrayNodeDataFullT extends StObject {
 }
 object matchesArrayNodeDataFullT {
   
-  @scala.inline
-  def apply(matches: js.Array[NodeData], treeData: js.Array[TreeItem]): matchesArrayNodeDataFullT = {
+  inline def apply(matches: js.Array[NodeData], treeData: js.Array[TreeItem]): matchesArrayNodeDataFullT = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[matchesArrayNodeDataFullT]
   }
   
-  @scala.inline
-  implicit class matchesArrayNodeDataFullTMutableBuilder[Self <: matchesArrayNodeDataFullT] (val x: Self) extends AnyVal {
+  extension [Self <: matchesArrayNodeDataFullT](x: Self) {
     
-    @scala.inline
-    def setMatches(value: js.Array[NodeData]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[NodeData]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesVarargs(value: NodeData*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: NodeData*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+    inline def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+    inline def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

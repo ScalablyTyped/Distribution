@@ -17,34 +17,25 @@ trait GoogleCloudMlV1Measurement extends StObject {
 }
 object GoogleCloudMlV1Measurement {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Measurement = {
+  inline def apply(): GoogleCloudMlV1Measurement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Measurement]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1MeasurementMutableBuilder[Self <: GoogleCloudMlV1Measurement] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Measurement](x: Self) {
     
-    @scala.inline
-    def setElapsedTime(value: String): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    inline def setElapsedTime(value: String): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
+    inline def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[GoogleCloudMlV1MeasurementMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[GoogleCloudMlV1MeasurementMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: GoogleCloudMlV1MeasurementMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: GoogleCloudMlV1MeasurementMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setStepCount(value: String): Self = StObject.set(x, "stepCount", value.asInstanceOf[js.Any])
+    inline def setStepCount(value: String): Self = StObject.set(x, "stepCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepCountUndefined: Self = StObject.set(x, "stepCount", js.undefined)
+    inline def setStepCountUndefined: Self = StObject.set(x, "stepCount", js.undefined)
   }
 }

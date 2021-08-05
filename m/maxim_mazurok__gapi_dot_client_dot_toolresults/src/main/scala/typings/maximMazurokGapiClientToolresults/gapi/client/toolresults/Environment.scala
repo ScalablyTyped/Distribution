@@ -44,85 +44,59 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(): Environment = {
+  inline def apply(): Environment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
+    inline def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDimensionValue(value: js.Array[EnvironmentDimensionValueEntry]): Self = StObject.set(x, "dimensionValue", value.asInstanceOf[js.Any])
+    inline def setDimensionValue(value: js.Array[EnvironmentDimensionValueEntry]): Self = StObject.set(x, "dimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValueUndefined: Self = StObject.set(x, "dimensionValue", js.undefined)
+    inline def setDimensionValueUndefined: Self = StObject.set(x, "dimensionValue", js.undefined)
     
-    @scala.inline
-    def setDimensionValueVarargs(value: EnvironmentDimensionValueEntry*): Self = StObject.set(x, "dimensionValue", js.Array(value :_*))
+    inline def setDimensionValueVarargs(value: EnvironmentDimensionValueEntry*): Self = StObject.set(x, "dimensionValue", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
     
-    @scala.inline
-    def setEnvironmentResult(value: MergedResult): Self = StObject.set(x, "environmentResult", value.asInstanceOf[js.Any])
+    inline def setEnvironmentResult(value: MergedResult): Self = StObject.set(x, "environmentResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentResultUndefined: Self = StObject.set(x, "environmentResult", js.undefined)
+    inline def setEnvironmentResultUndefined: Self = StObject.set(x, "environmentResult", js.undefined)
     
-    @scala.inline
-    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
-    @scala.inline
-    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+    inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+    inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setResultsStorage(value: ResultsStorage): Self = StObject.set(x, "resultsStorage", value.asInstanceOf[js.Any])
+    inline def setResultsStorage(value: ResultsStorage): Self = StObject.set(x, "resultsStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsStorageUndefined: Self = StObject.set(x, "resultsStorage", js.undefined)
+    inline def setResultsStorageUndefined: Self = StObject.set(x, "resultsStorage", js.undefined)
     
-    @scala.inline
-    def setShardSummaries(value: js.Array[ShardSummary]): Self = StObject.set(x, "shardSummaries", value.asInstanceOf[js.Any])
+    inline def setShardSummaries(value: js.Array[ShardSummary]): Self = StObject.set(x, "shardSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardSummariesUndefined: Self = StObject.set(x, "shardSummaries", js.undefined)
+    inline def setShardSummariesUndefined: Self = StObject.set(x, "shardSummaries", js.undefined)
     
-    @scala.inline
-    def setShardSummariesVarargs(value: ShardSummary*): Self = StObject.set(x, "shardSummaries", js.Array(value :_*))
+    inline def setShardSummariesVarargs(value: ShardSummary*): Self = StObject.set(x, "shardSummaries", js.Array(value :_*))
   }
 }

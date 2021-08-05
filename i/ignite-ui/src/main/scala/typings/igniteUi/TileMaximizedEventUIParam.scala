@@ -18,25 +18,19 @@ trait TileMaximizedEventUIParam extends StObject {
 }
 object TileMaximizedEventUIParam {
   
-  @scala.inline
-  def apply(): TileMaximizedEventUIParam = {
+  inline def apply(): TileMaximizedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileMaximizedEventUIParam]
   }
   
-  @scala.inline
-  implicit class TileMaximizedEventUIParamMutableBuilder[Self <: TileMaximizedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: TileMaximizedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTile(value: js.Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: js.Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

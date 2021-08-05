@@ -62,8 +62,7 @@ object mod {
     @JSImport("pizzip", "support.arraybuffer")
     @js.native
     def arraybuffer: Boolean = js.native
-    @scala.inline
-    def arraybuffer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arraybuffer")(x.asInstanceOf[js.Any])
+    inline def arraybuffer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arraybuffer")(x.asInstanceOf[js.Any])
     
     /**
       * true if PizZip can read and generate Blob, false otherwise.
@@ -71,8 +70,7 @@ object mod {
     @JSImport("pizzip", "support.blob")
     @js.native
     def blob: Boolean = js.native
-    @scala.inline
-    def blob_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blob")(x.asInstanceOf[js.Any])
+    inline def blob_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blob")(x.asInstanceOf[js.Any])
     
     /**
       * true if PizZip can read and generate nodejs Buffer, false otherwise.
@@ -80,8 +78,7 @@ object mod {
     @JSImport("pizzip", "support.nodebuffer")
     @js.native
     def nodebuffer: Boolean = js.native
-    @scala.inline
-    def nodebuffer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nodebuffer")(x.asInstanceOf[js.Any])
+    inline def nodebuffer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nodebuffer")(x.asInstanceOf[js.Any])
     
     /**
       * true if PizZip can read and generate Uint8Array, false otherwise.
@@ -89,8 +86,7 @@ object mod {
     @JSImport("pizzip", "support.uint8array")
     @js.native
     def uint8array: Boolean = js.native
-    @scala.inline
-    def uint8array_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint8array")(x.asInstanceOf[js.Any])
+    inline def uint8array_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint8array")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -100,11 +96,9 @@ object mod {
   trait Compression extends StObject
   object Compression {
     
-    @scala.inline
-    def DEFLATE: typings.pizzip.pizzipStrings.DEFLATE = "DEFLATE".asInstanceOf[typings.pizzip.pizzipStrings.DEFLATE]
+    inline def DEFLATE: typings.pizzip.pizzipStrings.DEFLATE = "DEFLATE".asInstanceOf[typings.pizzip.pizzipStrings.DEFLATE]
     
-    @scala.inline
-    def STORE: typings.pizzip.pizzipStrings.STORE = "STORE".asInstanceOf[typings.pizzip.pizzipStrings.STORE]
+    inline def STORE: typings.pizzip.pizzipStrings.STORE = "STORE".asInstanceOf[typings.pizzip.pizzipStrings.STORE]
   }
   
   type Data = String | ArrayBuffer | Uint8Array | Buffer
@@ -185,92 +179,64 @@ object mod {
   }
   object FileOptions {
     
-    @scala.inline
-    def apply(): FileOptions = {
+    inline def apply(): FileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileOptions]
     }
     
-    @scala.inline
-    implicit class FileOptionsMutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileOptions](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentNull: Self = StObject.set(x, "comment", null)
+      inline def setCommentNull: Self = StObject.set(x, "comment", null)
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
-      @scala.inline
-      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setCreateFolders(value: Boolean): Self = StObject.set(x, "createFolders", value.asInstanceOf[js.Any])
+      inline def setCreateFolders(value: Boolean): Self = StObject.set(x, "createFolders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
+      inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
+      inline def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDosPermissionsNull: Self = StObject.set(x, "dosPermissions", null)
+      inline def setDosPermissionsNull: Self = StObject.set(x, "dosPermissions", null)
       
-      @scala.inline
-      def setDosPermissionsUndefined: Self = StObject.set(x, "dosPermissions", js.undefined)
+      inline def setDosPermissionsUndefined: Self = StObject.set(x, "dosPermissions", js.undefined)
       
-      @scala.inline
-      def setOptimizedBinaryString(value: Boolean): Self = StObject.set(x, "optimizedBinaryString", value.asInstanceOf[js.Any])
+      inline def setOptimizedBinaryString(value: Boolean): Self = StObject.set(x, "optimizedBinaryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizedBinaryStringUndefined: Self = StObject.set(x, "optimizedBinaryString", js.undefined)
+      inline def setOptimizedBinaryStringUndefined: Self = StObject.set(x, "optimizedBinaryString", js.undefined)
       
-      @scala.inline
-      def setUnixPermissions(value: Double | String): Self = StObject.set(x, "unixPermissions", value.asInstanceOf[js.Any])
+      inline def setUnixPermissions(value: Double | String): Self = StObject.set(x, "unixPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnixPermissionsNull: Self = StObject.set(x, "unixPermissions", null)
+      inline def setUnixPermissionsNull: Self = StObject.set(x, "unixPermissions", null)
       
-      @scala.inline
-      def setUnixPermissionsUndefined: Self = StObject.set(x, "unixPermissions", js.undefined)
+      inline def setUnixPermissionsUndefined: Self = StObject.set(x, "unixPermissions", js.undefined)
     }
   }
   
@@ -351,65 +317,46 @@ object mod {
   }
   object GenerateOptions {
     
-    @scala.inline
-    def apply(): GenerateOptions = {
+    inline def apply(): GenerateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    @scala.inline
-    implicit class GenerateOptionsMutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptions](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
-      @scala.inline
-      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
+      inline def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
+      inline def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setType(value: base64 | string | uint8array | arraybuffer | blob | nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: base64 | string | uint8array | arraybuffer | blob | nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -456,44 +403,32 @@ object mod {
   }
   object LoadOptions {
     
-    @scala.inline
-    def apply(): LoadOptions = {
+    inline def apply(): LoadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadOptions]
     }
     
-    @scala.inline
-    implicit class LoadOptionsMutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoadOptions](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setCheckCRC32(value: Boolean): Self = StObject.set(x, "checkCRC32", value.asInstanceOf[js.Any])
+      inline def setCheckCRC32(value: Boolean): Self = StObject.set(x, "checkCRC32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckCRC32Undefined: Self = StObject.set(x, "checkCRC32", js.undefined)
+      inline def setCheckCRC32Undefined: Self = StObject.set(x, "checkCRC32", js.undefined)
       
-      @scala.inline
-      def setCreateFolders(value: Boolean): Self = StObject.set(x, "createFolders", value.asInstanceOf[js.Any])
+      inline def setCreateFolders(value: Boolean): Self = StObject.set(x, "createFolders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
+      inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
-      @scala.inline
-      def setDecodeFileName(value: /* bytes */ Uint8Array | js.Array[Double] => String): Self = StObject.set(x, "decodeFileName", js.Any.fromFunction1(value))
+      inline def setDecodeFileName(value: /* bytes */ Uint8Array | js.Array[Double] => String): Self = StObject.set(x, "decodeFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeFileNameUndefined: Self = StObject.set(x, "decodeFileName", js.undefined)
+      inline def setDecodeFileNameUndefined: Self = StObject.set(x, "decodeFileName", js.undefined)
       
-      @scala.inline
-      def setOptimizedBinaryString(value: Boolean): Self = StObject.set(x, "optimizedBinaryString", value.asInstanceOf[js.Any])
+      inline def setOptimizedBinaryString(value: Boolean): Self = StObject.set(x, "optimizedBinaryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizedBinaryStringUndefined: Self = StObject.set(x, "optimizedBinaryString", js.undefined)
+      inline def setOptimizedBinaryStringUndefined: Self = StObject.set(x, "optimizedBinaryString", js.undefined)
     }
   }
   
@@ -643,8 +578,7 @@ object mod {
   }
   object ZipObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asArrayBuffer: () => ArrayBuffer,
       asBinary: () => String,
       asNodeBuffer: () => Buffer,
@@ -662,44 +596,31 @@ object mod {
       __obj.asInstanceOf[ZipObject]
     }
     
-    @scala.inline
-    implicit class ZipObjectMutableBuilder[Self <: ZipObject] (val x: Self) extends AnyVal {
+    extension [Self <: ZipObject](x: Self) {
       
-      @scala.inline
-      def setAsArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "asArrayBuffer", js.Any.fromFunction0(value))
+      inline def setAsArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "asArrayBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsBinary(value: () => String): Self = StObject.set(x, "asBinary", js.Any.fromFunction0(value))
+      inline def setAsBinary(value: () => String): Self = StObject.set(x, "asBinary", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsNodeBuffer(value: () => Buffer): Self = StObject.set(x, "asNodeBuffer", js.Any.fromFunction0(value))
+      inline def setAsNodeBuffer(value: () => Buffer): Self = StObject.set(x, "asNodeBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsText(value: () => String): Self = StObject.set(x, "asText", js.Any.fromFunction0(value))
+      inline def setAsText(value: () => String): Self = StObject.set(x, "asText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsUint8Array(value: () => Uint8Array): Self = StObject.set(x, "asUint8Array", js.Any.fromFunction0(value))
+      inline def setAsUint8Array(value: () => Uint8Array): Self = StObject.set(x, "asUint8Array", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
+      inline def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Base64): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Base64): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnixPermissions(value: Double | String): Self = StObject.set(x, "unixPermissions", value.asInstanceOf[js.Any])
+      inline def setUnixPermissions(value: Double | String): Self = StObject.set(x, "unixPermissions", value.asInstanceOf[js.Any])
     }
   }
 }

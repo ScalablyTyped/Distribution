@@ -18,25 +18,19 @@ trait DeleteVpcEndpointServiceConfigurationsRequest extends StObject {
 }
 object DeleteVpcEndpointServiceConfigurationsRequest {
   
-  @scala.inline
-  def apply(ServiceIds: VpcEndpointServiceIdList): DeleteVpcEndpointServiceConfigurationsRequest = {
+  inline def apply(ServiceIds: VpcEndpointServiceIdList): DeleteVpcEndpointServiceConfigurationsRequest = {
     val __obj = js.Dynamic.literal(ServiceIds = ServiceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcEndpointServiceConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVpcEndpointServiceConfigurationsRequestMutableBuilder[Self <: DeleteVpcEndpointServiceConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpcEndpointServiceConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setServiceIds(value: VpcEndpointServiceIdList): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+    inline def setServiceIds(value: VpcEndpointServiceIdList): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdsVarargs(value: VpcEndpointServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: VpcEndpointServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
   }
 }

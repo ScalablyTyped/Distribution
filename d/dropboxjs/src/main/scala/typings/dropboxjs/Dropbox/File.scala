@@ -17,23 +17,18 @@ object File {
   }
   object CopyReference {
     
-    @scala.inline
-    def apply(expiresAt: Date, tag: String, toJSON: () => js.Object): CopyReference = {
+    inline def apply(expiresAt: Date, tag: String, toJSON: () => js.Object): CopyReference = {
       val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[CopyReference]
     }
     
-    @scala.inline
-    implicit class CopyReferenceMutableBuilder[Self <: CopyReference] (val x: Self) extends AnyVal {
+    extension [Self <: CopyReference](x: Self) {
       
-      @scala.inline
-      def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
@@ -51,29 +46,22 @@ object File {
   }
   object ShareUrl {
     
-    @scala.inline
-    def apply(expiresAt: Date, isDirect: Boolean, isPreview: Boolean, toJSON: () => js.Object, url: String): ShareUrl = {
+    inline def apply(expiresAt: Date, isDirect: Boolean, isPreview: Boolean, toJSON: () => js.Object, url: String): ShareUrl = {
       val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], isDirect = isDirect.asInstanceOf[js.Any], isPreview = isPreview.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareUrl]
     }
     
-    @scala.inline
-    implicit class ShareUrlMutableBuilder[Self <: ShareUrl] (val x: Self) extends AnyVal {
+    extension [Self <: ShareUrl](x: Self) {
       
-      @scala.inline
-      def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirect(value: Boolean): Self = StObject.set(x, "isDirect", value.asInstanceOf[js.Any])
+      inline def setIsDirect(value: Boolean): Self = StObject.set(x, "isDirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPreview(value: Boolean): Self = StObject.set(x, "isPreview", value.asInstanceOf[js.Any])
+      inline def setIsPreview(value: Boolean): Self = StObject.set(x, "isPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +101,7 @@ object File {
   }
   object Stat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientModifiedAt: Date,
       contentHash: String,
       hasThumbnail: Boolean,
@@ -136,56 +123,39 @@ object File {
       __obj.asInstanceOf[Stat]
     }
     
-    @scala.inline
-    implicit class StatMutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
+    extension [Self <: Stat](x: Self) {
       
-      @scala.inline
-      def setClientModifiedAt(value: Date): Self = StObject.set(x, "clientModifiedAt", value.asInstanceOf[js.Any])
+      inline def setClientModifiedAt(value: Date): Self = StObject.set(x, "clientModifiedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
+      inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasThumbnail(value: Boolean): Self = StObject.set(x, "hasThumbnail", value.asInstanceOf[js.Any])
+      inline def setHasThumbnail(value: Boolean): Self = StObject.set(x, "hasThumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHumanSize(value: String): Self = StObject.set(x, "humanSize", value.asInstanceOf[js.Any])
+      inline def setHumanSize(value: String): Self = StObject.set(x, "humanSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInAppFolder(value: Boolean): Self = StObject.set(x, "inAppFolder", value.asInstanceOf[js.Any])
+      inline def setInAppFolder(value: Boolean): Self = StObject.set(x, "inAppFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
+      inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
+      inline def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRemoved(value: Boolean): Self = StObject.set(x, "isRemoved", value.asInstanceOf[js.Any])
+      inline def setIsRemoved(value: Boolean): Self = StObject.set(x, "isRemoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedAt(value: Date): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
+      inline def setModifiedAt(value: Date): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTypeIcon(value: String): Self = StObject.set(x, "typeIcon", value.asInstanceOf[js.Any])
+      inline def setTypeIcon(value: String): Self = StObject.set(x, "typeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionTag(value: String): Self = StObject.set(x, "versionTag", value.asInstanceOf[js.Any])
+      inline def setVersionTag(value: String): Self = StObject.set(x, "versionTag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,8 +181,7 @@ object File {
   }
   object StatOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contentHash: String,
       deleted: Boolean,
       hash: String,
@@ -227,35 +196,25 @@ object File {
       __obj.asInstanceOf[StatOptions]
     }
     
-    @scala.inline
-    implicit class StatOptionsMutableBuilder[Self <: StatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StatOptions](x: Self) {
       
-      @scala.inline
-      def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
+      inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+      inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
+      inline def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadDir(value: Boolean): Self = StObject.set(x, "readDir", value.asInstanceOf[js.Any])
+      inline def setReadDir(value: Boolean): Self = StObject.set(x, "readDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionTag(value: String): Self = StObject.set(x, "versionTag", value.asInstanceOf[js.Any])
+      inline def setVersionTag(value: String): Self = StObject.set(x, "versionTag", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,12 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RepeatMode extends StObject
 object RepeatMode {
   
-  @scala.inline
-  def `0`: typings.deezerSdk.deezerSdkNumbers.`0` = 0.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`0`]
+  inline def `0`: typings.deezerSdk.deezerSdkNumbers.`0` = 0.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.deezerSdk.deezerSdkNumbers.`1` = 1.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`1`]
+  inline def `1`: typings.deezerSdk.deezerSdkNumbers.`1` = 1.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`1`]
   
-  @scala.inline
-  def `2`: typings.deezerSdk.deezerSdkNumbers.`2` = 2.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`2`]
+  inline def `2`: typings.deezerSdk.deezerSdkNumbers.`2` = 2.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`2`]
 }

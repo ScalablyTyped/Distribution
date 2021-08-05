@@ -13,22 +13,17 @@ trait AudioSelectorGroup extends StObject {
 }
 object AudioSelectorGroup {
   
-  @scala.inline
-  def apply(): AudioSelectorGroup = {
+  inline def apply(): AudioSelectorGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioSelectorGroup]
   }
   
-  @scala.inline
-  implicit class AudioSelectorGroupMutableBuilder[Self <: AudioSelectorGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AudioSelectorGroup](x: Self) {
     
-    @scala.inline
-    def setAudioSelectorNames(value: listOfStringMin1): Self = StObject.set(x, "AudioSelectorNames", value.asInstanceOf[js.Any])
+    inline def setAudioSelectorNames(value: listOfStringMin1): Self = StObject.set(x, "AudioSelectorNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSelectorNamesUndefined: Self = StObject.set(x, "AudioSelectorNames", js.undefined)
+    inline def setAudioSelectorNamesUndefined: Self = StObject.set(x, "AudioSelectorNames", js.undefined)
     
-    @scala.inline
-    def setAudioSelectorNamesVarargs(value: stringMin1*): Self = StObject.set(x, "AudioSelectorNames", js.Array(value :_*))
+    inline def setAudioSelectorNamesVarargs(value: stringMin1*): Self = StObject.set(x, "AudioSelectorNames", js.Array(value :_*))
   }
 }

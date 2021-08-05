@@ -9,72 +9,59 @@ object amapJsApiTransferStrings {
   
   @js.native
   sealed trait BUS extends StObject
-  @scala.inline
-  def BUS: BUS = "BUS".asInstanceOf[BUS]
+  inline def BUS: BUS = "BUS".asInstanceOf[BUS]
   
   @js.native
   sealed trait METRO_RAIL extends StObject
-  @scala.inline
-  def METRO_RAIL: METRO_RAIL = "METRO_RAIL".asInstanceOf[METRO_RAIL]
+  inline def METRO_RAIL: METRO_RAIL = "METRO_RAIL".asInstanceOf[METRO_RAIL]
   
   @js.native
   sealed trait RAILWAY extends StObject
-  @scala.inline
-  def RAILWAY: RAILWAY = "RAILWAY".asInstanceOf[RAILWAY]
+  inline def RAILWAY: RAILWAY = "RAILWAY".asInstanceOf[RAILWAY]
   
   @js.native
   sealed trait SUBWAY extends StObject
-  @scala.inline
-  def SUBWAY: SUBWAY = "SUBWAY".asInstanceOf[SUBWAY]
+  inline def SUBWAY: SUBWAY = "SUBWAY".asInstanceOf[SUBWAY]
   
   @js.native
   sealed trait TAXI extends StObject
-  @scala.inline
-  def TAXI: TAXI = "TAXI".asInstanceOf[TAXI]
+  inline def TAXI: TAXI = "TAXI".asInstanceOf[TAXI]
   
   @js.native
   sealed trait WALK extends StObject
-  @scala.inline
-  def WALK: WALK = "WALK".asInstanceOf[WALK]
+  inline def WALK: WALK = "WALK".asInstanceOf[WALK]
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait base extends StObject
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
   sealed trait complete
     extends StObject
        with SearchStatus
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error
     extends StObject
        with SearchStatus
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait no_data
     extends StObject
        with SearchStatus
-  @scala.inline
-  def no_data: no_data = "no_data".asInstanceOf[no_data]
+  inline def no_data: no_data = "no_data".asInstanceOf[no_data]
   
   @js.native
   sealed trait start extends StObject
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
 }

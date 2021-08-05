@@ -29,8 +29,7 @@ object noticeBarMod {
     @JSImport("@ant-design/react-native/lib/notice-bar", "default.defaultProps")
     @js.native
     def defaultProps: OnPress = js.native
-    @scala.inline
-    def defaultProps_=(x: OnPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -51,29 +50,22 @@ object noticeBarMod {
   }
   object NoticeNativeProps {
     
-    @scala.inline
-    def apply(): NoticeNativeProps = {
+    inline def apply(): NoticeNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NoticeNativeProps]
     }
     
-    @scala.inline
-    implicit class NoticeNativePropsMutableBuilder[Self <: NoticeNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: NoticeNativeProps](x: Self) {
       
-      @scala.inline
-      def setMarqueeProps(value: MarqueeProps): Self = StObject.set(x, "marqueeProps", value.asInstanceOf[js.Any])
+      inline def setMarqueeProps(value: MarqueeProps): Self = StObject.set(x, "marqueeProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarqueePropsUndefined: Self = StObject.set(x, "marqueeProps", js.undefined)
+      inline def setMarqueePropsUndefined: Self = StObject.set(x, "marqueeProps", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

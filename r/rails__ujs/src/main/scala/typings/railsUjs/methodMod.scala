@@ -11,6 +11,5 @@ object methodMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def handleMethod(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleMethod")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleMethod(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleMethod")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -26,8 +26,7 @@ trait TessellatedMesh
 }
 object TessellatedMesh {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     indices: js.Array[Double],
@@ -38,19 +37,14 @@ object TessellatedMesh {
     __obj.asInstanceOf[TessellatedMesh]
   }
   
-  @scala.inline
-  implicit class TessellatedMeshMutableBuilder[Self <: TessellatedMesh] (val x: Self) extends AnyVal {
+  extension [Self <: TessellatedMesh](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
-    @scala.inline
-    def setVertices(value: js.Array[MeshVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[MeshVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesVarargs(value: MeshVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: MeshVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

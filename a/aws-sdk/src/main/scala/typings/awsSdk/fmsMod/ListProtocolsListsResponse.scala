@@ -18,28 +18,21 @@ trait ListProtocolsListsResponse extends StObject {
 }
 object ListProtocolsListsResponse {
   
-  @scala.inline
-  def apply(): ListProtocolsListsResponse = {
+  inline def apply(): ListProtocolsListsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProtocolsListsResponse]
   }
   
-  @scala.inline
-  implicit class ListProtocolsListsResponseMutableBuilder[Self <: ListProtocolsListsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProtocolsListsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProtocolsLists(value: ProtocolsListsData): Self = StObject.set(x, "ProtocolsLists", value.asInstanceOf[js.Any])
+    inline def setProtocolsLists(value: ProtocolsListsData): Self = StObject.set(x, "ProtocolsLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsListsUndefined: Self = StObject.set(x, "ProtocolsLists", js.undefined)
+    inline def setProtocolsListsUndefined: Self = StObject.set(x, "ProtocolsLists", js.undefined)
     
-    @scala.inline
-    def setProtocolsListsVarargs(value: ProtocolsListDataSummary*): Self = StObject.set(x, "ProtocolsLists", js.Array(value :_*))
+    inline def setProtocolsListsVarargs(value: ProtocolsListDataSummary*): Self = StObject.set(x, "ProtocolsLists", js.Array(value :_*))
   }
 }

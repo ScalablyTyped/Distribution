@@ -20,34 +20,25 @@ trait DataFilterValueRange extends StObject {
 }
 object DataFilterValueRange {
   
-  @scala.inline
-  def apply(): DataFilterValueRange = {
+  inline def apply(): DataFilterValueRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataFilterValueRange]
   }
   
-  @scala.inline
-  implicit class DataFilterValueRangeMutableBuilder[Self <: DataFilterValueRange] (val x: Self) extends AnyVal {
+  extension [Self <: DataFilterValueRange](x: Self) {
     
-    @scala.inline
-    def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
+    inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
+    inline def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
     
-    @scala.inline
-    def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
+    inline def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
+    inline def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

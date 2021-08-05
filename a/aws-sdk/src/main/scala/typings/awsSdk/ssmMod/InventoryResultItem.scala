@@ -33,8 +33,7 @@ trait InventoryResultItem extends StObject {
 }
 object InventoryResultItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Content: InventoryItemEntryList,
     SchemaVersion: InventoryItemSchemaVersion,
     TypeName: InventoryItemTypeName
@@ -43,31 +42,22 @@ object InventoryResultItem {
     __obj.asInstanceOf[InventoryResultItem]
   }
   
-  @scala.inline
-  implicit class InventoryResultItemMutableBuilder[Self <: InventoryResultItem] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryResultItem](x: Self) {
     
-    @scala.inline
-    def setCaptureTime(value: InventoryItemCaptureTime): Self = StObject.set(x, "CaptureTime", value.asInstanceOf[js.Any])
+    inline def setCaptureTime(value: InventoryItemCaptureTime): Self = StObject.set(x, "CaptureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureTimeUndefined: Self = StObject.set(x, "CaptureTime", js.undefined)
+    inline def setCaptureTimeUndefined: Self = StObject.set(x, "CaptureTime", js.undefined)
     
-    @scala.inline
-    def setContent(value: InventoryItemEntryList): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: InventoryItemEntryList): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHash(value: InventoryItemContentHash): Self = StObject.set(x, "ContentHash", value.asInstanceOf[js.Any])
+    inline def setContentHash(value: InventoryItemContentHash): Self = StObject.set(x, "ContentHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHashUndefined: Self = StObject.set(x, "ContentHash", js.undefined)
+    inline def setContentHashUndefined: Self = StObject.set(x, "ContentHash", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: InventoryItemEntry*): Self = StObject.set(x, "Content", js.Array(value :_*))
+    inline def setContentVarargs(value: InventoryItemEntry*): Self = StObject.set(x, "Content", js.Array(value :_*))
     
-    @scala.inline
-    def setSchemaVersion(value: InventoryItemSchemaVersion): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: InventoryItemSchemaVersion): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait LogEvent extends StObject {
 }
 object LogEvent {
   
-  @scala.inline
-  def apply(): LogEvent = {
+  inline def apply(): LogEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogEvent]
   }
   
-  @scala.inline
-  implicit class LogEventMutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LogEvent](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

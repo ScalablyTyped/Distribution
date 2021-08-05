@@ -11,19 +11,15 @@ trait LaunchTemplateResponse extends StObject {
 }
 object LaunchTemplateResponse {
   
-  @scala.inline
-  def apply(): LaunchTemplateResponse = {
+  inline def apply(): LaunchTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateResponse]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateResponseMutableBuilder[Self <: LaunchTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
   }
 }

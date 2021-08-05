@@ -11,6 +11,5 @@ object matchesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(node: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

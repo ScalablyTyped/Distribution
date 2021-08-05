@@ -13,16 +13,13 @@ trait GetNotificationConfigurationRequest extends StObject {
 }
 object GetNotificationConfigurationRequest {
   
-  @scala.inline
-  def apply(profilingGroupName: ProfilingGroupName): GetNotificationConfigurationRequest = {
+  inline def apply(profilingGroupName: ProfilingGroupName): GetNotificationConfigurationRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNotificationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetNotificationConfigurationRequestMutableBuilder[Self <: GetNotificationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetNotificationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

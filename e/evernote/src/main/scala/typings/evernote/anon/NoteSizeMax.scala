@@ -18,43 +18,31 @@ trait NoteSizeMax extends StObject {
 }
 object NoteSizeMax {
   
-  @scala.inline
-  def apply(): NoteSizeMax = {
+  inline def apply(): NoteSizeMax = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoteSizeMax]
   }
   
-  @scala.inline
-  implicit class NoteSizeMaxMutableBuilder[Self <: NoteSizeMax] (val x: Self) extends AnyVal {
+  extension [Self <: NoteSizeMax](x: Self) {
     
-    @scala.inline
-    def setNoteResourceCountMax(value: Double): Self = StObject.set(x, "noteResourceCountMax", value.asInstanceOf[js.Any])
+    inline def setNoteResourceCountMax(value: Double): Self = StObject.set(x, "noteResourceCountMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteResourceCountMaxUndefined: Self = StObject.set(x, "noteResourceCountMax", js.undefined)
+    inline def setNoteResourceCountMaxUndefined: Self = StObject.set(x, "noteResourceCountMax", js.undefined)
     
-    @scala.inline
-    def setNoteSizeMax(value: Double): Self = StObject.set(x, "noteSizeMax", value.asInstanceOf[js.Any])
+    inline def setNoteSizeMax(value: Double): Self = StObject.set(x, "noteSizeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteSizeMaxUndefined: Self = StObject.set(x, "noteSizeMax", js.undefined)
+    inline def setNoteSizeMaxUndefined: Self = StObject.set(x, "noteSizeMax", js.undefined)
     
-    @scala.inline
-    def setResourceSizeMax(value: Double): Self = StObject.set(x, "resourceSizeMax", value.asInstanceOf[js.Any])
+    inline def setResourceSizeMax(value: Double): Self = StObject.set(x, "resourceSizeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceSizeMaxUndefined: Self = StObject.set(x, "resourceSizeMax", js.undefined)
+    inline def setResourceSizeMaxUndefined: Self = StObject.set(x, "resourceSizeMax", js.undefined)
     
-    @scala.inline
-    def setUploadLimit(value: Double): Self = StObject.set(x, "uploadLimit", value.asInstanceOf[js.Any])
+    inline def setUploadLimit(value: Double): Self = StObject.set(x, "uploadLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadLimitUndefined: Self = StObject.set(x, "uploadLimit", js.undefined)
+    inline def setUploadLimitUndefined: Self = StObject.set(x, "uploadLimit", js.undefined)
     
-    @scala.inline
-    def setUploaded(value: Double): Self = StObject.set(x, "uploaded", value.asInstanceOf[js.Any])
+    inline def setUploaded(value: Double): Self = StObject.set(x, "uploaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadedUndefined: Self = StObject.set(x, "uploaded", js.undefined)
+    inline def setUploadedUndefined: Self = StObject.set(x, "uploaded", js.undefined)
   }
 }

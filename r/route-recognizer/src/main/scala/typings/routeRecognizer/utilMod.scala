@@ -11,6 +11,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMap[T](): StringDictionary[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMap")().asInstanceOf[StringDictionary[js.UndefOr[T]]]
+  inline def createMap[T](): StringDictionary[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMap")().asInstanceOf[StringDictionary[js.UndefOr[T]]]
 }

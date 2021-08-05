@@ -11,16 +11,13 @@ trait PickImplfireOnInit extends StObject {
 }
 object PickImplfireOnInit {
   
-  @scala.inline
-  def apply(fireOnInit: Boolean): PickImplfireOnInit = {
+  inline def apply(fireOnInit: Boolean): PickImplfireOnInit = {
     val __obj = js.Dynamic.literal(fireOnInit = fireOnInit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfireOnInit]
   }
   
-  @scala.inline
-  implicit class PickImplfireOnInitMutableBuilder[Self <: PickImplfireOnInit] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplfireOnInit](x: Self) {
     
-    @scala.inline
-    def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
+    inline def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
   }
 }

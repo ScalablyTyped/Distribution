@@ -43,31 +43,23 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testDirectory extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testDirectory {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testDirectory = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testDirectory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testDirectory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testDirectory](x: Self) {
     
-    @scala.inline
-    def setDirectories(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+    inline def setDirectories(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+    inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    @scala.inline
-    def setDirectoriesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode*): Self = StObject.set(x, "directories", js.Array(value :_*))
     
-    @scala.inline
-    def setFiles(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testFileNode*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testFileNode*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

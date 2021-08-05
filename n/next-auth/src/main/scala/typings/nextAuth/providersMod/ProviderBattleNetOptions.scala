@@ -14,22 +14,17 @@ trait ProviderBattleNetOptions extends StObject {
 }
 object ProviderBattleNetOptions {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String, region: String): ProviderBattleNetOptions = {
+  inline def apply(clientId: String, clientSecret: String, region: String): ProviderBattleNetOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderBattleNetOptions]
   }
   
-  @scala.inline
-  implicit class ProviderBattleNetOptionsMutableBuilder[Self <: ProviderBattleNetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderBattleNetOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

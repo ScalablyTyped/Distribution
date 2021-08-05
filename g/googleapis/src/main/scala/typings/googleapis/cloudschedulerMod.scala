@@ -40,8 +40,7 @@ object cloudschedulerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Cloudscheduler
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object cloudschedulerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object cloudschedulerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudscheduler(options: Options): Cloudscheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudscheduler")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudscheduler]
+  inline def cloudscheduler(options: Options): Cloudscheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudscheduler")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudscheduler]
   
-  @scala.inline
-  def cloudscheduler_v1beta1(version: v1beta1): Cloudscheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudscheduler")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudscheduler]
+  inline def cloudscheduler_v1beta1(version: v1beta1): Cloudscheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudscheduler")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudscheduler]
 }

@@ -23,8 +23,7 @@ trait ISearchMember extends StObject {
 }
 object ISearchMember {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     editorPath: String,
     id: Double,
     menuUrl: String,
@@ -36,25 +35,18 @@ object ISearchMember {
     __obj.asInstanceOf[ISearchMember]
   }
   
-  @scala.inline
-  implicit class ISearchMemberMutableBuilder[Self <: ISearchMember] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchMember](x: Self) {
     
-    @scala.inline
-    def setEditorPath(value: String): Self = StObject.set(x, "editorPath", value.asInstanceOf[js.Any])
+    inline def setEditorPath(value: String): Self = StObject.set(x, "editorPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUrl(value: String): Self = StObject.set(x, "menuUrl", value.asInstanceOf[js.Any])
+    inline def setMenuUrl(value: String): Self = StObject.set(x, "menuUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaData(value: js.Object): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: js.Object): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ object mod {
     def get(): String | Buffer = js.native
   }
   
-  @scala.inline
-  def createConnection(port: Double, host: String): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  inline def createConnection(port: Double, host: String): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Socket]
   
   trait Config extends StObject {
     
@@ -32,17 +31,14 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(return_buffers: Boolean): Config = {
+    inline def apply(return_buffers: Boolean): Config = {
       val __obj = js.Dynamic.literal(return_buffers = return_buffers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setReturn_buffers(value: Boolean): Self = StObject.set(x, "return_buffers", value.asInstanceOf[js.Any])
+      inline def setReturn_buffers(value: Boolean): Self = StObject.set(x, "return_buffers", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,68 +33,48 @@ object anon {
   }
   object AfterCarouselItems {
     
-    @scala.inline
-    def apply(): AfterCarouselItems = {
+    inline def apply(): AfterCarouselItems = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AfterCarouselItems]
     }
     
-    @scala.inline
-    implicit class AfterCarouselItemsMutableBuilder[Self <: AfterCarouselItems] (val x: Self) extends AnyVal {
+    extension [Self <: AfterCarouselItems](x: Self) {
       
-      @scala.inline
-      def setAfterCarouselItems(value: () => Element): Self = StObject.set(x, "afterCarouselItems", js.Any.fromFunction0(value))
+      inline def setAfterCarouselItems(value: () => Element): Self = StObject.set(x, "afterCarouselItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterCarouselItemsUndefined: Self = StObject.set(x, "afterCarouselItems", js.undefined)
+      inline def setAfterCarouselItemsUndefined: Self = StObject.set(x, "afterCarouselItems", js.undefined)
       
-      @scala.inline
-      def setBeforeCarouselItems(value: () => Element): Self = StObject.set(x, "beforeCarouselItems", js.Any.fromFunction0(value))
+      inline def setBeforeCarouselItems(value: () => Element): Self = StObject.set(x, "beforeCarouselItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeCarouselItemsUndefined: Self = StObject.set(x, "beforeCarouselItems", js.undefined)
+      inline def setBeforeCarouselItemsUndefined: Self = StObject.set(x, "beforeCarouselItems", js.undefined)
       
-      @scala.inline
-      def setCarouselClassNames(value: () => js.Array[String]): Self = StObject.set(x, "carouselClassNames", js.Any.fromFunction0(value))
+      inline def setCarouselClassNames(value: () => js.Array[String]): Self = StObject.set(x, "carouselClassNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCarouselClassNamesUndefined: Self = StObject.set(x, "carouselClassNames", js.undefined)
+      inline def setCarouselClassNamesUndefined: Self = StObject.set(x, "carouselClassNames", js.undefined)
       
-      @scala.inline
-      def setCarouselCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "carouselCustomProps", js.Any.fromFunction0(value))
+      inline def setCarouselCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "carouselCustomProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCarouselCustomPropsUndefined: Self = StObject.set(x, "carouselCustomProps", js.undefined)
+      inline def setCarouselCustomPropsUndefined: Self = StObject.set(x, "carouselCustomProps", js.undefined)
       
-      @scala.inline
-      def setItemClassNames(value: () => js.Array[String]): Self = StObject.set(x, "itemClassNames", js.Any.fromFunction0(value))
+      inline def setItemClassNames(value: () => js.Array[String]): Self = StObject.set(x, "itemClassNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setItemClassNamesUndefined: Self = StObject.set(x, "itemClassNames", js.undefined)
+      inline def setItemClassNamesUndefined: Self = StObject.set(x, "itemClassNames", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: () => Unit): Self = StObject.set(x, "plugin", js.Any.fromFunction0(value))
+      inline def setPlugin(value: () => Unit): Self = StObject.set(x, "plugin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      @scala.inline
-      def setSlideCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "slideCustomProps", js.Any.fromFunction0(value))
+      inline def setSlideCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "slideCustomProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlideCustomPropsUndefined: Self = StObject.set(x, "slideCustomProps", js.undefined)
+      inline def setSlideCustomPropsUndefined: Self = StObject.set(x, "slideCustomProps", js.undefined)
       
-      @scala.inline
-      def setStrategies(value: () => Record[String, PluginStrategy]): Self = StObject.set(x, "strategies", js.Any.fromFunction0(value))
+      inline def setStrategies(value: () => Record[String, PluginStrategy]): Self = StObject.set(x, "strategies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
+      inline def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
       
-      @scala.inline
-      def setTrackCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "trackCustomProps", js.Any.fromFunction0(value))
+      inline def setTrackCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "trackCustomProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrackCustomPropsUndefined: Self = StObject.set(x, "trackCustomProps", js.undefined)
+      inline def setTrackCustomPropsUndefined: Self = StObject.set(x, "trackCustomProps", js.undefined)
     }
   }
   
@@ -108,8 +88,7 @@ object anon {
   }
   object CarouselProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       carouselProps: typings.brainhubeuReactCarousel.mod.CarouselProps,
       refs: Record[String, RefObject[HTMLElement]]
     ): CarouselProps = {
@@ -117,20 +96,15 @@ object anon {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    @scala.inline
-    implicit class CarouselPropsMutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselProps](x: Self) {
       
-      @scala.inline
-      def setCarouselProps(value: typings.brainhubeuReactCarousel.mod.CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
+      inline def setCarouselProps(value: typings.brainhubeuReactCarousel.mod.CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRefs(value: Record[String, RefObject[HTMLElement]]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      inline def setRefs(value: Record[String, RefObject[HTMLElement]]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,65 +129,46 @@ object anon {
   }
   object PickCarouselPropsExcludek {
     
-    @scala.inline
-    def apply(): PickCarouselPropsExcludek = {
+    inline def apply(): PickCarouselPropsExcludek = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickCarouselPropsExcludek]
     }
     
-    @scala.inline
-    implicit class PickCarouselPropsExcludekMutableBuilder[Self <: PickCarouselPropsExcludek] (val x: Self) extends AnyVal {
+    extension [Self <: PickCarouselPropsExcludek](x: Self) {
       
-      @scala.inline
-      def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
+      inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
+      inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
+      inline def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
+      inline def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSlides(value: js.Array[Element]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+      inline def setSlides(value: js.Array[Element]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
+      inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
       
-      @scala.inline
-      def setSlidesVarargs(value: Element*): Self = StObject.set(x, "slides", js.Array(value :_*))
+      inline def setSlidesVarargs(value: Element*): Self = StObject.set(x, "slides", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

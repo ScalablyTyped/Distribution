@@ -15,19 +15,15 @@ trait TimeIntervalStep
 }
 object TimeIntervalStep {
   
-  @scala.inline
-  def apply(interval: TimeInterval, step: Double): TimeIntervalStep = {
+  inline def apply(interval: TimeInterval, step: Double): TimeIntervalStep = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeIntervalStep]
   }
   
-  @scala.inline
-  implicit class TimeIntervalStepMutableBuilder[Self <: TimeIntervalStep] (val x: Self) extends AnyVal {
+  extension [Self <: TimeIntervalStep](x: Self) {
     
-    @scala.inline
-    def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

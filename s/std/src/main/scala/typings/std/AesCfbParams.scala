@@ -12,8 +12,7 @@ trait AesCfbParams
 }
 object AesCfbParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     iv: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
     name: java.lang.String
   ): AesCfbParams = {
@@ -21,11 +20,9 @@ object AesCfbParams {
     __obj.asInstanceOf[AesCfbParams]
   }
   
-  @scala.inline
-  implicit class AesCfbParamsMutableBuilder[Self <: AesCfbParams] (val x: Self) extends AnyVal {
+  extension [Self <: AesCfbParams](x: Self) {
     
-    @scala.inline
-    def setIv(
+    inline def setIv(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
   }

@@ -18,28 +18,21 @@ trait BatchDetectDominantLanguageItemResult extends StObject {
 }
 object BatchDetectDominantLanguageItemResult {
   
-  @scala.inline
-  def apply(): BatchDetectDominantLanguageItemResult = {
+  inline def apply(): BatchDetectDominantLanguageItemResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDetectDominantLanguageItemResult]
   }
   
-  @scala.inline
-  implicit class BatchDetectDominantLanguageItemResultMutableBuilder[Self <: BatchDetectDominantLanguageItemResult] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectDominantLanguageItemResult](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
     
-    @scala.inline
-    def setLanguages(value: ListOfDominantLanguages): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: ListOfDominantLanguages): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "Languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "Languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: DominantLanguage*): Self = StObject.set(x, "Languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: DominantLanguage*): Self = StObject.set(x, "Languages", js.Array(value :_*))
   }
 }

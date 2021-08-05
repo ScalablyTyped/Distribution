@@ -16,11 +16,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLoggerPlugin(options: js.Any): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getLoggerPlugin(options: js.Any): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @scala.inline
-  def loggerMiddleware(): js.Function2[
+  inline def loggerMiddleware(): js.Function2[
     /* next */ InitializeHandler[js.Any, MetadataBearer], 
     /* context */ HandlerExecutionContext, 
     InitializeHandler[js.Any, MetadataBearer]

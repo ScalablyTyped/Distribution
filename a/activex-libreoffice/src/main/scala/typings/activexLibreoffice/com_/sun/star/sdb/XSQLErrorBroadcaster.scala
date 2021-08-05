@@ -19,8 +19,7 @@ trait XSQLErrorBroadcaster
 }
 object XSQLErrorBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSQLErrorListener: XSQLErrorListener => Unit,
     queryInterface: `type` => js.Any,
@@ -31,13 +30,10 @@ object XSQLErrorBroadcaster {
     __obj.asInstanceOf[XSQLErrorBroadcaster]
   }
   
-  @scala.inline
-  implicit class XSQLErrorBroadcasterMutableBuilder[Self <: XSQLErrorBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XSQLErrorBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddSQLErrorListener(value: XSQLErrorListener => Unit): Self = StObject.set(x, "addSQLErrorListener", js.Any.fromFunction1(value))
+    inline def setAddSQLErrorListener(value: XSQLErrorListener => Unit): Self = StObject.set(x, "addSQLErrorListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSQLErrorListener(value: XSQLErrorListener => Unit): Self = StObject.set(x, "removeSQLErrorListener", js.Any.fromFunction1(value))
+    inline def setRemoveSQLErrorListener(value: XSQLErrorListener => Unit): Self = StObject.set(x, "removeSQLErrorListener", js.Any.fromFunction1(value))
   }
 }

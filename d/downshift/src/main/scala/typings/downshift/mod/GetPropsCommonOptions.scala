@@ -10,19 +10,15 @@ trait GetPropsCommonOptions extends StObject {
 }
 object GetPropsCommonOptions {
   
-  @scala.inline
-  def apply(): GetPropsCommonOptions = {
+  inline def apply(): GetPropsCommonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPropsCommonOptions]
   }
   
-  @scala.inline
-  implicit class GetPropsCommonOptionsMutableBuilder[Self <: GetPropsCommonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetPropsCommonOptions](x: Self) {
     
-    @scala.inline
-    def setSuppressRefError(value: Boolean): Self = StObject.set(x, "suppressRefError", value.asInstanceOf[js.Any])
+    inline def setSuppressRefError(value: Boolean): Self = StObject.set(x, "suppressRefError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressRefErrorUndefined: Self = StObject.set(x, "suppressRefError", js.undefined)
+    inline def setSuppressRefErrorUndefined: Self = StObject.set(x, "suppressRefError", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait imageAuditOptions
 }
 object imageAuditOptions {
   
-  @scala.inline
-  def apply(image: String): imageAuditOptions = {
+  inline def apply(image: String): imageAuditOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[imageAuditOptions]
   }
   
-  @scala.inline
-  implicit class imageAuditOptionsMutableBuilder[Self <: imageAuditOptions] (val x: Self) extends AnyVal {
+  extension [Self <: imageAuditOptions](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
+    inline def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgUrlUndefined: Self = StObject.set(x, "imgUrl", js.undefined)
+    inline def setImgUrlUndefined: Self = StObject.set(x, "imgUrl", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ imageAuditResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ imageAuditResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

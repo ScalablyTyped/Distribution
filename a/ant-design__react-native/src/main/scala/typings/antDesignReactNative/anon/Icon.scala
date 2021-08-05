@@ -13,8 +13,7 @@ trait Icon extends StObject {
 }
 object Icon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     icon: Element,
     text: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any
   ): Icon = {
@@ -22,13 +21,10 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  @scala.inline
-  implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+  extension [Self <: Icon](x: Self) {
     
-    @scala.inline
-    def setIcon(value: Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

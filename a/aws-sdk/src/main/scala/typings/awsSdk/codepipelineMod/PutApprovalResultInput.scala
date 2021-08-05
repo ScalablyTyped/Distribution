@@ -33,8 +33,7 @@ trait PutApprovalResultInput extends StObject {
 }
 object PutApprovalResultInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionName: ActionName,
     pipelineName: PipelineName,
     result: ApprovalResult,
@@ -45,22 +44,16 @@ object PutApprovalResultInput {
     __obj.asInstanceOf[PutApprovalResultInput]
   }
   
-  @scala.inline
-  implicit class PutApprovalResultInputMutableBuilder[Self <: PutApprovalResultInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutApprovalResultInput](x: Self) {
     
-    @scala.inline
-    def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: ApprovalResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ApprovalResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: ApprovalToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: ApprovalToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

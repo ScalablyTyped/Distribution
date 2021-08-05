@@ -16,8 +16,7 @@ trait AzureSubscription extends StObject {
 }
 object AzureSubscription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     subscriptionId: String,
     subscriptionTenantId: String,
@@ -27,19 +26,14 @@ object AzureSubscription {
     __obj.asInstanceOf[AzureSubscription]
   }
   
-  @scala.inline
-  implicit class AzureSubscriptionMutableBuilder[Self <: AzureSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: AzureSubscription](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionTenantId(value: String): Self = StObject.set(x, "subscriptionTenantId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionTenantId(value: String): Self = StObject.set(x, "subscriptionTenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionTenantName(value: String): Self = StObject.set(x, "subscriptionTenantName", value.asInstanceOf[js.Any])
+    inline def setSubscriptionTenantName(value: String): Self = StObject.set(x, "subscriptionTenantName", value.asInstanceOf[js.Any])
   }
 }

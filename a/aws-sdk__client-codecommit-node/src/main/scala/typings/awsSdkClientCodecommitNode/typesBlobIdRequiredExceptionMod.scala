@@ -16,17 +16,14 @@ object typesBlobIdRequiredExceptionMod {
   }
   object BlobIdRequiredException {
     
-    @scala.inline
-    def apply(): BlobIdRequiredException = {
+    inline def apply(): BlobIdRequiredException = {
       val __obj = js.Dynamic.literal(name = "BlobIdRequiredException")
       __obj.asInstanceOf[BlobIdRequiredException]
     }
     
-    @scala.inline
-    implicit class BlobIdRequiredExceptionMutableBuilder[Self <: BlobIdRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: BlobIdRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BlobIdRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

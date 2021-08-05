@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsModeValue extends StObject
 object OptionsModeValue {
   
-  @scala.inline
-  def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
+  inline def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
   
-  @scala.inline
-  def serialize: typings.highcharts.highchartsStrings.serialize = "serialize".asInstanceOf[typings.highcharts.highchartsStrings.serialize]
+  inline def serialize: typings.highcharts.highchartsStrings.serialize = "serialize".asInstanceOf[typings.highcharts.highchartsStrings.serialize]
 }

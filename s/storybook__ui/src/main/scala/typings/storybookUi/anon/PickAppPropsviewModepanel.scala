@@ -21,8 +21,7 @@ trait PickAppPropsviewModepanel extends StObject {
 }
 object PickAppPropsviewModepanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     docsOnly: Boolean,
     layout: typings.storybookApi.layoutMod.Layout,
     panelCount: Double,
@@ -32,25 +31,18 @@ object PickAppPropsviewModepanel {
     __obj.asInstanceOf[PickAppPropsviewModepanel]
   }
   
-  @scala.inline
-  implicit class PickAppPropsviewModepanelMutableBuilder[Self <: PickAppPropsviewModepanel] (val x: Self) extends AnyVal {
+  extension [Self <: PickAppPropsviewModepanel](x: Self) {
     
-    @scala.inline
-    def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+    inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: typings.storybookApi.layoutMod.Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: typings.storybookApi.layoutMod.Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSize(value: /* size */ typings.reactSizeme.anon.Height => Unit): Self = StObject.set(x, "onSize", js.Any.fromFunction1(value))
+    inline def setOnSize(value: /* size */ typings.reactSizeme.anon.Height => Unit): Self = StObject.set(x, "onSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSizeUndefined: Self = StObject.set(x, "onSize", js.undefined)
+    inline def setOnSizeUndefined: Self = StObject.set(x, "onSize", js.undefined)
     
-    @scala.inline
-    def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
+    inline def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

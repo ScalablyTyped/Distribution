@@ -23,19 +23,15 @@ trait SchemaCreateTenancyUnitRequest extends StObject {
 }
 object SchemaCreateTenancyUnitRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateTenancyUnitRequest = {
+  inline def apply(): SchemaCreateTenancyUnitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateTenancyUnitRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateTenancyUnitRequestMutableBuilder[Self <: SchemaCreateTenancyUnitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateTenancyUnitRequest](x: Self) {
     
-    @scala.inline
-    def setTenancyUnitId(value: String): Self = StObject.set(x, "tenancyUnitId", value.asInstanceOf[js.Any])
+    inline def setTenancyUnitId(value: String): Self = StObject.set(x, "tenancyUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUnitIdUndefined: Self = StObject.set(x, "tenancyUnitId", js.undefined)
+    inline def setTenancyUnitIdUndefined: Self = StObject.set(x, "tenancyUnitId", js.undefined)
   }
 }

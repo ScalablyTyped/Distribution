@@ -19,29 +19,22 @@ trait SliderSegmentDragEvent extends StObject {
 }
 object SliderSegmentDragEvent {
   
-  @scala.inline
-  def apply(index: Double, state: start | drag, thumbIndices: js.Array[Double]): SliderSegmentDragEvent = {
+  inline def apply(index: Double, state: start | drag, thumbIndices: js.Array[Double]): SliderSegmentDragEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], thumbIndices = thumbIndices.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("segment-drag")
     __obj.asInstanceOf[SliderSegmentDragEvent]
   }
   
-  @scala.inline
-  implicit class SliderSegmentDragEventMutableBuilder[Self <: SliderSegmentDragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SliderSegmentDragEvent](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: start | drag): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: start | drag): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbIndices(value: js.Array[Double]): Self = StObject.set(x, "thumbIndices", value.asInstanceOf[js.Any])
+    inline def setThumbIndices(value: js.Array[Double]): Self = StObject.set(x, "thumbIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbIndicesVarargs(value: Double*): Self = StObject.set(x, "thumbIndices", js.Array(value :_*))
+    inline def setThumbIndicesVarargs(value: Double*): Self = StObject.set(x, "thumbIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `segment-drag`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `segment-drag`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -32,61 +32,43 @@ trait Service extends StObject {
 }
 object Service {
   
-  @scala.inline
-  def apply(): Service = {
+  inline def apply(): Service = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Service]
   }
   
-  @scala.inline
-  implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+  extension [Self <: Service](x: Self) {
     
-    @scala.inline
-    def setAppEngine(value: AppEngine): Self = StObject.set(x, "appEngine", value.asInstanceOf[js.Any])
+    inline def setAppEngine(value: AppEngine): Self = StObject.set(x, "appEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineUndefined: Self = StObject.set(x, "appEngine", js.undefined)
+    inline def setAppEngineUndefined: Self = StObject.set(x, "appEngine", js.undefined)
     
-    @scala.inline
-    def setCloudEndpoints(value: CloudEndpoints): Self = StObject.set(x, "cloudEndpoints", value.asInstanceOf[js.Any])
+    inline def setCloudEndpoints(value: CloudEndpoints): Self = StObject.set(x, "cloudEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudEndpointsUndefined: Self = StObject.set(x, "cloudEndpoints", js.undefined)
+    inline def setCloudEndpointsUndefined: Self = StObject.set(x, "cloudEndpoints", js.undefined)
     
-    @scala.inline
-    def setClusterIstio(value: ClusterIstio): Self = StObject.set(x, "clusterIstio", value.asInstanceOf[js.Any])
+    inline def setClusterIstio(value: ClusterIstio): Self = StObject.set(x, "clusterIstio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIstioUndefined: Self = StObject.set(x, "clusterIstio", js.undefined)
+    inline def setClusterIstioUndefined: Self = StObject.set(x, "clusterIstio", js.undefined)
     
-    @scala.inline
-    def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMeshIstio(value: MeshIstio): Self = StObject.set(x, "meshIstio", value.asInstanceOf[js.Any])
+    inline def setMeshIstio(value: MeshIstio): Self = StObject.set(x, "meshIstio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshIstioUndefined: Self = StObject.set(x, "meshIstio", js.undefined)
+    inline def setMeshIstioUndefined: Self = StObject.set(x, "meshIstio", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTelemetry(value: Telemetry): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
+    inline def setTelemetry(value: Telemetry): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
+    inline def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait CreateFolder extends StObject {
 }
 object CreateFolder {
   
-  @scala.inline
-  def apply(): CreateFolder = {
+  inline def apply(): CreateFolder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFolder]
   }
   
-  @scala.inline
-  implicit class CreateFolderMutableBuilder[Self <: CreateFolder] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFolder](x: Self) {
     
-    @scala.inline
-    def setData(value: CreateFolderData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CreateFolderData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
+    inline def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
   }
 }

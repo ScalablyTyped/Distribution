@@ -14,19 +14,15 @@ trait CallFunctionResult
 }
 object CallFunctionResult {
   
-  @scala.inline
-  def apply(errMsg: String): CallFunctionResult = {
+  inline def apply(errMsg: String): CallFunctionResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFunctionResult]
   }
   
-  @scala.inline
-  implicit class CallFunctionResultMutableBuilder[Self <: CallFunctionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CallFunctionResult](x: Self) {
     
-    @scala.inline
-    def setResult(value: AnyObject | String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: AnyObject | String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

@@ -17,8 +17,6 @@ object CardFolderTabs {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Tab(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tab")().asInstanceOf[ReactElement]
-  @scala.inline
-  def Tab(props: CardFolderTabProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tab")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Tab(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tab")().asInstanceOf[ReactElement]
+  inline def Tab(props: CardFolderTabProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tab")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

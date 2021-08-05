@@ -20,43 +20,31 @@ trait RetryConfig extends StObject {
 }
 object RetryConfig {
   
-  @scala.inline
-  def apply(): RetryConfig = {
+  inline def apply(): RetryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryConfig]
   }
   
-  @scala.inline
-  implicit class RetryConfigMutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RetryConfig](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setStrategy(value: exponential | linear): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: exponential | linear): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

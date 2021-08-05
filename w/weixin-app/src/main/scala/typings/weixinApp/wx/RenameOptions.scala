@@ -15,19 +15,15 @@ trait RenameOptions
 }
 object RenameOptions {
   
-  @scala.inline
-  def apply(newPath: String, oldPath: String): RenameOptions = {
+  inline def apply(newPath: String, oldPath: String): RenameOptions = {
     val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameOptions]
   }
   
-  @scala.inline
-  implicit class RenameOptionsMutableBuilder[Self <: RenameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenameOptions](x: Self) {
     
-    @scala.inline
-    def setNewPath(value: String): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
+    inline def setNewPath(value: String): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldPath(value: String): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+    inline def setOldPath(value: String): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
   }
 }

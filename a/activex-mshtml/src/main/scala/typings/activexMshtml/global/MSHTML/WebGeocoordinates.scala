@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.WebGeocoordinates")
 @js.native
-class WebGeocoordinates protected ()
+/* private */ class WebGeocoordinates ()
   extends StObject
      with typings.activexMshtml.MSHTML.WebGeocoordinates {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.WebGeocoordinates_typekey")
   var MSHTMLDotWebGeocoordinates_typekey: typings.activexMshtml.MSHTML.WebGeocoordinates = js.native
   

@@ -10,7 +10,7 @@ trait OfficeTheme extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.OfficeTheme_typekey")
+  /* private */ @JSName("Office.OfficeTheme_typekey")
   var OfficeDotOfficeTheme_typekey: OfficeTheme
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait OfficeTheme extends StObject {
 }
 object OfficeTheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     OfficeDotOfficeTheme_typekey: OfficeTheme,
@@ -40,28 +39,20 @@ object OfficeTheme {
     __obj.asInstanceOf[OfficeTheme]
   }
   
-  @scala.inline
-  implicit class OfficeThemeMutableBuilder[Self <: OfficeTheme] (val x: Self) extends AnyVal {
+  extension [Self <: OfficeTheme](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotOfficeTheme_typekey(value: OfficeTheme): Self = StObject.set(x, "Office.OfficeTheme_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotOfficeTheme_typekey(value: OfficeTheme): Self = StObject.set(x, "Office.OfficeTheme_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeColorScheme(value: ThemeColorScheme): Self = StObject.set(x, "ThemeColorScheme", value.asInstanceOf[js.Any])
+    inline def setThemeColorScheme(value: ThemeColorScheme): Self = StObject.set(x, "ThemeColorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeEffectScheme(value: ThemeEffectScheme): Self = StObject.set(x, "ThemeEffectScheme", value.asInstanceOf[js.Any])
+    inline def setThemeEffectScheme(value: ThemeEffectScheme): Self = StObject.set(x, "ThemeEffectScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeFontScheme(value: ThemeFontScheme): Self = StObject.set(x, "ThemeFontScheme", value.asInstanceOf[js.Any])
+    inline def setThemeFontScheme(value: ThemeFontScheme): Self = StObject.set(x, "ThemeFontScheme", value.asInstanceOf[js.Any])
   }
 }

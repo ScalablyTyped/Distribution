@@ -12,16 +12,13 @@ trait MappingDetails extends StObject {
 }
 object MappingDetails {
   
-  @scala.inline
-  def apply(mappings: StringDictionary[InputValue]): MappingDetails = {
+  inline def apply(mappings: StringDictionary[InputValue]): MappingDetails = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappingDetails]
   }
   
-  @scala.inline
-  implicit class MappingDetailsMutableBuilder[Self <: MappingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MappingDetails](x: Self) {
     
-    @scala.inline
-    def setMappings(value: StringDictionary[InputValue]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: StringDictionary[InputValue]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait DiagramItemBoundsChangeEvent
 }
 object DiagramItemBoundsChangeEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramItemBoundsChangeEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramItemBoundsChangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramItemBoundsChangeEvent]
   }
   
-  @scala.inline
-  implicit class DiagramItemBoundsChangeEventMutableBuilder[Self <: DiagramItemBoundsChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramItemBoundsChangeEvent](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setItem(value: Shape): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Shape): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

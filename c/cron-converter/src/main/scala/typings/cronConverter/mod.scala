@@ -107,38 +107,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOutputHashes(value: Boolean): Self = StObject.set(x, "outputHashes", value.asInstanceOf[js.Any])
+      inline def setOutputHashes(value: Boolean): Self = StObject.set(x, "outputHashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputHashesUndefined: Self = StObject.set(x, "outputHashes", js.undefined)
+      inline def setOutputHashesUndefined: Self = StObject.set(x, "outputHashes", js.undefined)
       
-      @scala.inline
-      def setOutputMonthNames(value: Boolean): Self = StObject.set(x, "outputMonthNames", value.asInstanceOf[js.Any])
+      inline def setOutputMonthNames(value: Boolean): Self = StObject.set(x, "outputMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputMonthNamesUndefined: Self = StObject.set(x, "outputMonthNames", js.undefined)
+      inline def setOutputMonthNamesUndefined: Self = StObject.set(x, "outputMonthNames", js.undefined)
       
-      @scala.inline
-      def setOutputWeekdayNames(value: Boolean): Self = StObject.set(x, "outputWeekdayNames", value.asInstanceOf[js.Any])
+      inline def setOutputWeekdayNames(value: Boolean): Self = StObject.set(x, "outputWeekdayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputWeekdayNamesUndefined: Self = StObject.set(x, "outputWeekdayNames", js.undefined)
+      inline def setOutputWeekdayNamesUndefined: Self = StObject.set(x, "outputWeekdayNames", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     }
   }
 }

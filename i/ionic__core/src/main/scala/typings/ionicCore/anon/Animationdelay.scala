@@ -14,23 +14,18 @@ trait Animationdelay extends StObject {
 }
 object Animationdelay {
   
-  @scala.inline
-  def apply(`animation-delay`: String, left: String, top: String): Animationdelay = {
+  inline def apply(`animation-delay`: String, left: String, top: String): Animationdelay = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.updateDynamic("animation-delay")(`animation-delay`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animationdelay]
   }
   
-  @scala.inline
-  implicit class AnimationdelayMutableBuilder[Self <: Animationdelay] (val x: Self) extends AnyVal {
+  extension [Self <: Animationdelay](x: Self) {
     
-    @scala.inline
-    def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
+    inline def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

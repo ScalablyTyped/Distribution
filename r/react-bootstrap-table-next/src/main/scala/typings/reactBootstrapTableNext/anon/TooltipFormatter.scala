@@ -11,19 +11,15 @@ trait TooltipFormatter[T /* <: js.Object */] extends StObject {
 }
 object TooltipFormatter {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](): TooltipFormatter[T] = {
+  inline def apply[T /* <: js.Object */](): TooltipFormatter[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TooltipFormatter[T]]
   }
   
-  @scala.inline
-  implicit class TooltipFormatterMutableBuilder[Self <: TooltipFormatter[?], T /* <: js.Object */] (val x: Self & TooltipFormatter[T]) extends AnyVal {
+  extension [Self <: TooltipFormatter[?], T /* <: js.Object */](x: Self & TooltipFormatter[T]) {
     
-    @scala.inline
-    def setTooltipFormatter(value: /* row */ T => Element): Self = StObject.set(x, "tooltipFormatter", js.Any.fromFunction1(value))
+    inline def setTooltipFormatter(value: /* row */ T => Element): Self = StObject.set(x, "tooltipFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTooltipFormatterUndefined: Self = StObject.set(x, "tooltipFormatter", js.undefined)
+    inline def setTooltipFormatterUndefined: Self = StObject.set(x, "tooltipFormatter", js.undefined)
   }
 }

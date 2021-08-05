@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmTabStyle extends StObject
 object fmTabStyle {
   
-  @scala.inline
-  def fmTabStyleButtons: `1` = 1.asInstanceOf[`1`]
+  inline def fmTabStyleButtons: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmTabStyleNone: `2` = 2.asInstanceOf[`2`]
+  inline def fmTabStyleNone: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmTabStyleTabs: `0` = 0.asInstanceOf[`0`]
+  inline def fmTabStyleTabs: `0` = 0.asInstanceOf[`0`]
 }

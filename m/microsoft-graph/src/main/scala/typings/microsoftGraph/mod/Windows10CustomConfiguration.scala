@@ -13,25 +13,19 @@ trait Windows10CustomConfiguration
 }
 object Windows10CustomConfiguration {
   
-  @scala.inline
-  def apply(): Windows10CustomConfiguration = {
+  inline def apply(): Windows10CustomConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Windows10CustomConfiguration]
   }
   
-  @scala.inline
-  implicit class Windows10CustomConfigurationMutableBuilder[Self <: Windows10CustomConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: Windows10CustomConfiguration](x: Self) {
     
-    @scala.inline
-    def setOmaSettings(value: NullableOption[js.Array[OmaSetting]]): Self = StObject.set(x, "omaSettings", value.asInstanceOf[js.Any])
+    inline def setOmaSettings(value: NullableOption[js.Array[OmaSetting]]): Self = StObject.set(x, "omaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmaSettingsNull: Self = StObject.set(x, "omaSettings", null)
+    inline def setOmaSettingsNull: Self = StObject.set(x, "omaSettings", null)
     
-    @scala.inline
-    def setOmaSettingsUndefined: Self = StObject.set(x, "omaSettings", js.undefined)
+    inline def setOmaSettingsUndefined: Self = StObject.set(x, "omaSettings", js.undefined)
     
-    @scala.inline
-    def setOmaSettingsVarargs(value: OmaSetting*): Self = StObject.set(x, "omaSettings", js.Array(value :_*))
+    inline def setOmaSettingsVarargs(value: OmaSetting*): Self = StObject.set(x, "omaSettings", js.Array(value :_*))
   }
 }

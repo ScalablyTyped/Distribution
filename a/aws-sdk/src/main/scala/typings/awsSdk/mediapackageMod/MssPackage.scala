@@ -22,37 +22,27 @@ trait MssPackage extends StObject {
 }
 object MssPackage {
   
-  @scala.inline
-  def apply(): MssPackage = {
+  inline def apply(): MssPackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MssPackage]
   }
   
-  @scala.inline
-  implicit class MssPackageMutableBuilder[Self <: MssPackage] (val x: Self) extends AnyVal {
+  extension [Self <: MssPackage](x: Self) {
     
-    @scala.inline
-    def setEncryption(value: MssEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: MssEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setManifestWindowSeconds(value: integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setManifestWindowSeconds(value: integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestWindowSecondsUndefined: Self = StObject.set(x, "ManifestWindowSeconds", js.undefined)
+    inline def setManifestWindowSecondsUndefined: Self = StObject.set(x, "ManifestWindowSeconds", js.undefined)
     
-    @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
+    inline def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
+    inline def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
+    inline def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

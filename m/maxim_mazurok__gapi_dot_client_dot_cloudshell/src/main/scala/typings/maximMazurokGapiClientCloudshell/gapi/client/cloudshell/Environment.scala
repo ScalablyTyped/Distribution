@@ -41,70 +41,49 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(): Environment = {
+  inline def apply(): Environment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setDockerImage(value: String): Self = StObject.set(x, "dockerImage", value.asInstanceOf[js.Any])
+    inline def setDockerImage(value: String): Self = StObject.set(x, "dockerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerImageUndefined: Self = StObject.set(x, "dockerImage", js.undefined)
+    inline def setDockerImageUndefined: Self = StObject.set(x, "dockerImage", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPublicKeys(value: js.Array[String]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
+    inline def setPublicKeys(value: js.Array[String]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
+    inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    @scala.inline
-    def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setSshHost(value: String): Self = StObject.set(x, "sshHost", value.asInstanceOf[js.Any])
+    inline def setSshHost(value: String): Self = StObject.set(x, "sshHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshHostUndefined: Self = StObject.set(x, "sshHost", js.undefined)
+    inline def setSshHostUndefined: Self = StObject.set(x, "sshHost", js.undefined)
     
-    @scala.inline
-    def setSshPort(value: Double): Self = StObject.set(x, "sshPort", value.asInstanceOf[js.Any])
+    inline def setSshPort(value: Double): Self = StObject.set(x, "sshPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPortUndefined: Self = StObject.set(x, "sshPort", js.undefined)
+    inline def setSshPortUndefined: Self = StObject.set(x, "sshPort", js.undefined)
     
-    @scala.inline
-    def setSshUsername(value: String): Self = StObject.set(x, "sshUsername", value.asInstanceOf[js.Any])
+    inline def setSshUsername(value: String): Self = StObject.set(x, "sshUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshUsernameUndefined: Self = StObject.set(x, "sshUsername", js.undefined)
+    inline def setSshUsernameUndefined: Self = StObject.set(x, "sshUsername", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setWebHost(value: String): Self = StObject.set(x, "webHost", value.asInstanceOf[js.Any])
+    inline def setWebHost(value: String): Self = StObject.set(x, "webHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebHostUndefined: Self = StObject.set(x, "webHost", js.undefined)
+    inline def setWebHostUndefined: Self = StObject.set(x, "webHost", js.undefined)
   }
 }

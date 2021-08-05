@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpHTMLVersion extends StObject
 object PpHTMLVersion {
   
-  @scala.inline
-  def ppHTMLAutodetect: `4` = 4.asInstanceOf[`4`]
+  inline def ppHTMLAutodetect: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppHTMLDual: `3` = 3.asInstanceOf[`3`]
+  inline def ppHTMLDual: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppHTMLv3: `1` = 1.asInstanceOf[`1`]
+  inline def ppHTMLv3: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppHTMLv4: `2` = 2.asInstanceOf[`2`]
+  inline def ppHTMLv4: `2` = 2.asInstanceOf[`2`]
 }

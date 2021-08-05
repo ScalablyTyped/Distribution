@@ -38,49 +38,35 @@ trait ProcessDetails extends StObject {
 }
 object ProcessDetails {
   
-  @scala.inline
-  def apply(): ProcessDetails = {
+  inline def apply(): ProcessDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessDetails]
   }
   
-  @scala.inline
-  implicit class ProcessDetailsMutableBuilder[Self <: ProcessDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessDetails](x: Self) {
     
-    @scala.inline
-    def setLaunchedAt(value: NonEmptyString): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
+    inline def setLaunchedAt(value: NonEmptyString): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
+    inline def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setParentPid(value: Integer): Self = StObject.set(x, "ParentPid", value.asInstanceOf[js.Any])
+    inline def setParentPid(value: Integer): Self = StObject.set(x, "ParentPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentPidUndefined: Self = StObject.set(x, "ParentPid", js.undefined)
+    inline def setParentPidUndefined: Self = StObject.set(x, "ParentPid", js.undefined)
     
-    @scala.inline
-    def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setPid(value: Integer): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Integer): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidUndefined: Self = StObject.set(x, "Pid", js.undefined)
+    inline def setPidUndefined: Self = StObject.set(x, "Pid", js.undefined)
     
-    @scala.inline
-    def setTerminatedAt(value: NonEmptyString): Self = StObject.set(x, "TerminatedAt", value.asInstanceOf[js.Any])
+    inline def setTerminatedAt(value: NonEmptyString): Self = StObject.set(x, "TerminatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminatedAtUndefined: Self = StObject.set(x, "TerminatedAt", js.undefined)
+    inline def setTerminatedAtUndefined: Self = StObject.set(x, "TerminatedAt", js.undefined)
   }
 }

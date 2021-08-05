@@ -29,17 +29,14 @@ object tsp {
   }
   object AbstractTSAAdapter {
     
-    @scala.inline
-    def apply(getTSTHex: (String, String) => Unit): AbstractTSAAdapter = {
+    inline def apply(getTSTHex: (String, String) => Unit): AbstractTSAAdapter = {
       val __obj = js.Dynamic.literal(getTSTHex = js.Any.fromFunction2(getTSTHex))
       __obj.asInstanceOf[AbstractTSAAdapter]
     }
     
-    @scala.inline
-    implicit class AbstractTSAAdapterMutableBuilder[Self <: AbstractTSAAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractTSAAdapter](x: Self) {
       
-      @scala.inline
-      def setGetTSTHex(value: (String, String) => Unit): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
+      inline def setGetTSTHex(value: (String, String) => Unit): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
     }
   }
   
@@ -63,8 +60,7 @@ object tsp {
        with ASN1Object
   object Accuracy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -101,17 +97,14 @@ object tsp {
   }
   object FixedTSAAdapter {
     
-    @scala.inline
-    def apply(getTSTHex: (String, String) => String): FixedTSAAdapter = {
+    inline def apply(getTSTHex: (String, String) => String): FixedTSAAdapter = {
       val __obj = js.Dynamic.literal(getTSTHex = js.Any.fromFunction2(getTSTHex))
       __obj.asInstanceOf[FixedTSAAdapter]
     }
     
-    @scala.inline
-    implicit class FixedTSAAdapterMutableBuilder[Self <: FixedTSAAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: FixedTSAAdapter](x: Self) {
       
-      @scala.inline
-      def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
+      inline def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
     }
   }
   
@@ -133,8 +126,7 @@ object tsp {
        with ASN1Object
   object MessageImprint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -219,17 +211,14 @@ object tsp {
   }
   object SimpleTSAAdapter {
     
-    @scala.inline
-    def apply(getTSTHex: (String, String) => String): SimpleTSAAdapter = {
+    inline def apply(getTSTHex: (String, String) => String): SimpleTSAAdapter = {
       val __obj = js.Dynamic.literal(getTSTHex = js.Any.fromFunction2(getTSTHex))
       __obj.asInstanceOf[SimpleTSAAdapter]
     }
     
-    @scala.inline
-    implicit class SimpleTSAAdapterMutableBuilder[Self <: SimpleTSAAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleTSAAdapter](x: Self) {
       
-      @scala.inline
-      def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
+      inline def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
     }
   }
   
@@ -266,8 +255,7 @@ object tsp {
        with ASN1Object
   object TSTInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -305,8 +293,7 @@ object tsp {
   }
   object TimeStampReq {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -322,11 +309,9 @@ object tsp {
       __obj.asInstanceOf[TimeStampReq]
     }
     
-    @scala.inline
-    implicit class TimeStampReqMutableBuilder[Self <: TimeStampReq] (val x: Self) extends AnyVal {
+    extension [Self <: TimeStampReq](x: Self) {
       
-      @scala.inline
-      def setSetMessageImprint(value: MessageImprint => Unit): Self = StObject.set(x, "setMessageImprint", js.Any.fromFunction1(value))
+      inline def setSetMessageImprint(value: MessageImprint => Unit): Self = StObject.set(x, "setMessageImprint", js.Any.fromFunction1(value))
     }
   }
   

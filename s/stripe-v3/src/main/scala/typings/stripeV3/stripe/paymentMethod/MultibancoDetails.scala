@@ -12,19 +12,15 @@ trait MultibancoDetails extends StObject {
 }
 object MultibancoDetails {
   
-  @scala.inline
-  def apply(entity: String, reference: String): MultibancoDetails = {
+  inline def apply(entity: String, reference: String): MultibancoDetails = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultibancoDetails]
   }
   
-  @scala.inline
-  implicit class MultibancoDetailsMutableBuilder[Self <: MultibancoDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MultibancoDetails](x: Self) {
     
-    @scala.inline
-    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

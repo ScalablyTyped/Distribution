@@ -15,19 +15,15 @@ trait txAuthGenericArg extends StObject {
 }
 object txAuthGenericArg {
   
-  @scala.inline
-  def apply(content: ArrayBuffer, contentType: String): txAuthGenericArg = {
+  inline def apply(content: ArrayBuffer, contentType: String): txAuthGenericArg = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[txAuthGenericArg]
   }
   
-  @scala.inline
-  implicit class txAuthGenericArgMutableBuilder[Self <: txAuthGenericArg] (val x: Self) extends AnyVal {
+  extension [Self <: txAuthGenericArg](x: Self) {
     
-    @scala.inline
-    def setContent(value: ArrayBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ArrayBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
   }
 }

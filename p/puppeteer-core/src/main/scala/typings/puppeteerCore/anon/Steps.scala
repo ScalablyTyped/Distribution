@@ -10,19 +10,15 @@ trait Steps extends StObject {
 }
 object Steps {
   
-  @scala.inline
-  def apply(): Steps = {
+  inline def apply(): Steps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Steps]
   }
   
-  @scala.inline
-  implicit class StepsMutableBuilder[Self <: Steps] (val x: Self) extends AnyVal {
+  extension [Self <: Steps](x: Self) {
     
-    @scala.inline
-    def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
   }
 }

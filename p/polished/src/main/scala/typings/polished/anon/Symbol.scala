@@ -15,22 +15,17 @@ trait Symbol extends StObject {
 }
 object Symbol {
   
-  @scala.inline
-  def apply(infix: Precedence): Symbol = {
+  inline def apply(infix: Precedence): Symbol = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = "/", symbol = "/")
     __obj.asInstanceOf[Symbol]
   }
   
-  @scala.inline
-  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+  extension [Self <: Symbol](x: Self) {
     
-    @scala.inline
-    def setInfix(value: Precedence): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: Precedence): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: Slash): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: Slash): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Slash): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Slash): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

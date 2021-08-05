@@ -17,31 +17,23 @@ trait ResourceLimit extends StObject {
 }
 object ResourceLimit {
   
-  @scala.inline
-  def apply(): ResourceLimit = {
+  inline def apply(): ResourceLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceLimit]
   }
   
-  @scala.inline
-  implicit class ResourceLimitMutableBuilder[Self <: ResourceLimit] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceLimit](x: Self) {
     
-    @scala.inline
-    def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

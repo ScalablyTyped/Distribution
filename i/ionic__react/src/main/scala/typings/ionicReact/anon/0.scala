@@ -11,16 +11,13 @@ trait `0`[OverlayType /* <: OverlayElement */] extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply[OverlayType /* <: OverlayElement */](create: js.Any => js.Promise[OverlayType]): `0`[OverlayType] = {
+  inline def apply[OverlayType /* <: OverlayElement */](create: js.Any => js.Promise[OverlayType]): `0`[OverlayType] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[`0`[OverlayType]]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`[?], OverlayType /* <: OverlayElement */] (val x: Self & `0`[OverlayType]) extends AnyVal {
+  extension [Self <: `0`[?], OverlayType /* <: OverlayElement */](x: Self & `0`[OverlayType]) {
     
-    @scala.inline
-    def setCreate(value: js.Any => js.Promise[OverlayType]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: js.Any => js.Promise[OverlayType]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

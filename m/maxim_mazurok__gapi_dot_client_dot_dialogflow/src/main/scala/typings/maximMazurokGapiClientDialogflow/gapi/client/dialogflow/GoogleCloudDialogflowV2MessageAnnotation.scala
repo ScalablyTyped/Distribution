@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2MessageAnnotation extends StObject {
 }
 object GoogleCloudDialogflowV2MessageAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2MessageAnnotation = {
+  inline def apply(): GoogleCloudDialogflowV2MessageAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2MessageAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2MessageAnnotationMutableBuilder[Self <: GoogleCloudDialogflowV2MessageAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2MessageAnnotation](x: Self) {
     
-    @scala.inline
-    def setContainEntities(value: Boolean): Self = StObject.set(x, "containEntities", value.asInstanceOf[js.Any])
+    inline def setContainEntities(value: Boolean): Self = StObject.set(x, "containEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainEntitiesUndefined: Self = StObject.set(x, "containEntities", js.undefined)
+    inline def setContainEntitiesUndefined: Self = StObject.set(x, "containEntities", js.undefined)
     
-    @scala.inline
-    def setParts(value: js.Array[GoogleCloudDialogflowV2AnnotatedMessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: js.Array[GoogleCloudDialogflowV2AnnotatedMessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+    inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    @scala.inline
-    def setPartsVarargs(value: GoogleCloudDialogflowV2AnnotatedMessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: GoogleCloudDialogflowV2AnnotatedMessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
   }
 }

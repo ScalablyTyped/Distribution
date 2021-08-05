@@ -19,9 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectionType extends StObject
 object SelectionType {
   
-  @scala.inline
-  def additive: typings.cytoscape.cytoscapeStrings.additive = "additive".asInstanceOf[typings.cytoscape.cytoscapeStrings.additive]
+  inline def additive: typings.cytoscape.cytoscapeStrings.additive = "additive".asInstanceOf[typings.cytoscape.cytoscapeStrings.additive]
   
-  @scala.inline
-  def single: typings.cytoscape.cytoscapeStrings.single = "single".asInstanceOf[typings.cytoscape.cytoscapeStrings.single]
+  inline def single: typings.cytoscape.cytoscapeStrings.single = "single".asInstanceOf[typings.cytoscape.cytoscapeStrings.single]
 }

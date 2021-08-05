@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(handler: String): Unit = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(handler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(handler: String): Unit = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(handler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("setasap", JSImport.Namespace)
   @js.native

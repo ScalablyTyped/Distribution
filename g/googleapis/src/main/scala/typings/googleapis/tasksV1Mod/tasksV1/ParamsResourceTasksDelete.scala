@@ -29,31 +29,23 @@ trait ParamsResourceTasksDelete
 }
 object ParamsResourceTasksDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceTasksDelete = {
+  inline def apply(): ParamsResourceTasksDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTasksDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTasksDeleteMutableBuilder[Self <: ParamsResourceTasksDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTasksDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
     
-    @scala.inline
-    def setTasklist(value: String): Self = StObject.set(x, "tasklist", value.asInstanceOf[js.Any])
+    inline def setTasklist(value: String): Self = StObject.set(x, "tasklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasklistUndefined: Self = StObject.set(x, "tasklist", js.undefined)
+    inline def setTasklistUndefined: Self = StObject.set(x, "tasklist", js.undefined)
   }
 }

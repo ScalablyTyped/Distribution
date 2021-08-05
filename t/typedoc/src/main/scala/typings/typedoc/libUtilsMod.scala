@@ -67,11 +67,9 @@ object libUtilsMod {
     def this(owner: js.Symbol) = this()
   }
   
-  @scala.inline
-  def BindOption(name: NeverIfInternal[String]): js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit]]
+  inline def BindOption(name: NeverIfInternal[String]): js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit]]
   
-  @scala.inline
-  def BindOption_categorizeByGroup(name: categorizeByGroup): js.Function2[
+  inline def BindOption_categorizeByGroup(name: categorizeByGroup): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -81,8 +79,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_categoryOrder(name: categoryOrder): js.Function2[
+  inline def BindOption_categoryOrder(name: categoryOrder): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -92,8 +89,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_defaultCategory(name: defaultCategory): js.Function2[
+  inline def BindOption_defaultCategory(name: defaultCategory): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -103,8 +99,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_disableOutputCheck(name: disableOutputCheck): js.Function2[
+  inline def BindOption_disableOutputCheck(name: disableOutputCheck): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -114,8 +109,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_disableSources(name: disableSources): js.Function2[
+  inline def BindOption_disableSources(name: disableSources): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -125,8 +119,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_entryPoint(name: entryPoint): js.Function2[
+  inline def BindOption_entryPoint(name: entryPoint): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -136,8 +129,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_exclude(name: exclude): js.Function2[
+  inline def BindOption_exclude(name: exclude): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -147,8 +139,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_excludeExternals(name: excludeExternals): js.Function2[
+  inline def BindOption_excludeExternals(name: excludeExternals): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -158,8 +149,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_excludeNotDocumented(name: excludeNotDocumented): js.Function2[
+  inline def BindOption_excludeNotDocumented(name: excludeNotDocumented): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -169,8 +159,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_excludeNotExported(name: excludeNotExported): js.Function2[
+  inline def BindOption_excludeNotExported(name: excludeNotExported): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -180,8 +169,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_excludePrivate(name: excludePrivate): js.Function2[
+  inline def BindOption_excludePrivate(name: excludePrivate): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -191,8 +179,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_excludeProtected(name: excludeProtected): js.Function2[
+  inline def BindOption_excludeProtected(name: excludeProtected): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -202,8 +189,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_excludeTags(name: excludeTags): js.Function2[
+  inline def BindOption_excludeTags(name: excludeTags): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -213,8 +199,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_externalPattern(name: externalPattern): js.Function2[
+  inline def BindOption_externalPattern(name: externalPattern): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -224,8 +209,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_gaID(name: gaID): js.Function2[
+  inline def BindOption_gaID(name: gaID): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -235,8 +219,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_gaSite(name: gaSite): js.Function2[
+  inline def BindOption_gaSite(name: gaSite): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -246,8 +229,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_gitRemote(name: gitRemote): js.Function2[
+  inline def BindOption_gitRemote(name: gitRemote): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -257,8 +239,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_gitRevision(name: gitRevision): js.Function2[
+  inline def BindOption_gitRevision(name: gitRevision): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -268,8 +249,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_help(name: help): js.Function2[
+  inline def BindOption_help(name: help): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -279,8 +259,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_hideGenerator(name: hideGenerator): js.Function2[
+  inline def BindOption_hideGenerator(name: hideGenerator): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -290,8 +269,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_ignoreCompilerErrors(name: ignoreCompilerErrors): js.Function2[
+  inline def BindOption_ignoreCompilerErrors(name: ignoreCompilerErrors): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -301,8 +279,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_includeDeclarations(name: includeDeclarations): js.Function2[
+  inline def BindOption_includeDeclarations(name: includeDeclarations): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -312,8 +289,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_includeVersion(name: includeVersion): js.Function2[
+  inline def BindOption_includeVersion(name: includeVersion): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -323,8 +299,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_includes(name: includes): js.Function2[
+  inline def BindOption_includes(name: includes): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -334,8 +309,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_inputFiles(name: inputFiles): js.Function2[
+  inline def BindOption_inputFiles(name: inputFiles): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -345,8 +319,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_json(name: json): js.Function2[
+  inline def BindOption_json(name: json): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -356,8 +329,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_listInvalidSymbolLinks(name: listInvalidSymbolLinks): js.Function2[
+  inline def BindOption_listInvalidSymbolLinks(name: listInvalidSymbolLinks): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -367,8 +339,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_logger(name: logger): js.Function2[
+  inline def BindOption_logger(name: logger): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -378,8 +349,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_media(name: media): js.Function2[
+  inline def BindOption_media(name: media): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -389,8 +359,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_mode(name: mode): js.Function2[
+  inline def BindOption_mode(name: mode): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -400,8 +369,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_name(name: name): js.Function2[
+  inline def BindOption_name(name: name): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -411,8 +379,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_options(name: options): js.Function2[
+  inline def BindOption_options(name: options): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -422,8 +389,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_out(name: out): js.Function2[
+  inline def BindOption_out(name: out): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -433,8 +399,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_plugin(name: plugin): js.Function2[
+  inline def BindOption_plugin(name: plugin): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -444,8 +409,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_readme(name: readme): js.Function2[
+  inline def BindOption_readme(name: readme): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -455,8 +419,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_theme(name: theme): js.Function2[
+  inline def BindOption_theme(name: theme): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -466,8 +429,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_toc(name: toc): js.Function2[
+  inline def BindOption_toc(name: toc): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -477,8 +439,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_tsconfig(name: tsconfig): js.Function2[
+  inline def BindOption_tsconfig(name: tsconfig): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -488,8 +449,7 @@ object libUtilsMod {
     Unit
   ]]
   
-  @scala.inline
-  def BindOption_version(name: version): js.Function2[
+  inline def BindOption_version(name: version): js.Function2[
     /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
@@ -514,8 +474,7 @@ object libUtilsMod {
     def this(owner: js.Symbol) = this()
   }
   
-  @scala.inline
-  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("typedoc/dist/lib/utils", "ConsoleLogger")
   @js.native
@@ -628,30 +587,21 @@ object libUtilsMod {
     /* 1 */ val Modules: typings.typedoc.optionsDeclarationMod.SourceFileMode.Modules & Double = js.native
   }
   
-  @scala.inline
-  def directoryExists(directoryPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("directoryExists")(directoryPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def directoryExists(directoryPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("directoryExists")(directoryPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def ensureDirectoriesExist(directoryPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirectoriesExist")(directoryPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ensureDirectoriesExist(directoryPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirectoriesExist")(directoryPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def insertPrioritySorted[T /* <: Priority */](arr: js.Array[T], item: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertPrioritySorted")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def insertPrioritySorted[T /* <: Priority */](arr: js.Array[T], item: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertPrioritySorted")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def readFile(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def readFile(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def removeIfPresent[T](arr: js.Array[T], item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeIfPresent")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeIfPresent[T](arr: Unit, item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeIfPresent")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeIfPresent[T](arr: js.Array[T], item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeIfPresent")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeIfPresent[T](arr: Unit, item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeIfPresent")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def writeFile(fileName: String, data: String, writeByteOrderMark: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(fileName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], writeByteOrderMark.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def writeFile(
+  inline def writeFile(fileName: String, data: String, writeByteOrderMark: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(fileName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], writeByteOrderMark.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(
     fileName: String,
     data: String,
     writeByteOrderMark: Boolean,

@@ -12,16 +12,13 @@ trait PickImplhideError extends StObject {
 }
 object PickImplhideError {
   
-  @scala.inline
-  def apply(hideError: auto | Boolean): PickImplhideError = {
+  inline def apply(hideError: auto | Boolean): PickImplhideError = {
     val __obj = js.Dynamic.literal(hideError = hideError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhideError]
   }
   
-  @scala.inline
-  implicit class PickImplhideErrorMutableBuilder[Self <: PickImplhideError] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplhideError](x: Self) {
     
-    @scala.inline
-    def setHideError(value: auto | Boolean): Self = StObject.set(x, "hideError", value.asInstanceOf[js.Any])
+    inline def setHideError(value: auto | Boolean): Self = StObject.set(x, "hideError", value.asInstanceOf[js.Any])
   }
 }

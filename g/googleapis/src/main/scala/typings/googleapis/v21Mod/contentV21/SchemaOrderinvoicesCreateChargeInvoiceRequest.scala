@@ -36,46 +36,33 @@ trait SchemaOrderinvoicesCreateChargeInvoiceRequest extends StObject {
 }
 object SchemaOrderinvoicesCreateChargeInvoiceRequest {
   
-  @scala.inline
-  def apply(): SchemaOrderinvoicesCreateChargeInvoiceRequest = {
+  inline def apply(): SchemaOrderinvoicesCreateChargeInvoiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderinvoicesCreateChargeInvoiceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrderinvoicesCreateChargeInvoiceRequestMutableBuilder[Self <: SchemaOrderinvoicesCreateChargeInvoiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderinvoicesCreateChargeInvoiceRequest](x: Self) {
     
-    @scala.inline
-    def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
+    inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
+    inline def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
     
-    @scala.inline
-    def setInvoiceSummary(value: SchemaInvoiceSummary): Self = StObject.set(x, "invoiceSummary", value.asInstanceOf[js.Any])
+    inline def setInvoiceSummary(value: SchemaInvoiceSummary): Self = StObject.set(x, "invoiceSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceSummaryUndefined: Self = StObject.set(x, "invoiceSummary", js.undefined)
+    inline def setInvoiceSummaryUndefined: Self = StObject.set(x, "invoiceSummary", js.undefined)
     
-    @scala.inline
-    def setLineItemInvoices(value: js.Array[SchemaShipmentInvoiceLineItemInvoice]): Self = StObject.set(x, "lineItemInvoices", value.asInstanceOf[js.Any])
+    inline def setLineItemInvoices(value: js.Array[SchemaShipmentInvoiceLineItemInvoice]): Self = StObject.set(x, "lineItemInvoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemInvoicesUndefined: Self = StObject.set(x, "lineItemInvoices", js.undefined)
+    inline def setLineItemInvoicesUndefined: Self = StObject.set(x, "lineItemInvoices", js.undefined)
     
-    @scala.inline
-    def setLineItemInvoicesVarargs(value: SchemaShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value :_*))
+    inline def setLineItemInvoicesVarargs(value: SchemaShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
+    inline def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentGroupIdUndefined: Self = StObject.set(x, "shipmentGroupId", js.undefined)
+    inline def setShipmentGroupIdUndefined: Self = StObject.set(x, "shipmentGroupId", js.undefined)
   }
 }

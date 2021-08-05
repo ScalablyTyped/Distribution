@@ -31,43 +31,31 @@ trait BuildEnvironmentOptions extends StObject {
 }
 object BuildEnvironmentOptions {
   
-  @scala.inline
-  def apply(): BuildEnvironmentOptions = {
+  inline def apply(): BuildEnvironmentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildEnvironmentOptions]
   }
   
-  @scala.inline
-  implicit class BuildEnvironmentOptionsMutableBuilder[Self <: BuildEnvironmentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BuildEnvironmentOptions](x: Self) {
     
-    @scala.inline
-    def setApplicationDelegate(value: js.Object): Self = StObject.set(x, "applicationDelegate", value.asInstanceOf[js.Any])
+    inline def setApplicationDelegate(value: js.Object): Self = StObject.set(x, "applicationDelegate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationDelegateUndefined: Self = StObject.set(x, "applicationDelegate", js.undefined)
+    inline def setApplicationDelegateUndefined: Self = StObject.set(x, "applicationDelegate", js.undefined)
     
-    @scala.inline
-    def setConfigDirPath(value: String): Self = StObject.set(x, "configDirPath", value.asInstanceOf[js.Any])
+    inline def setConfigDirPath(value: String): Self = StObject.set(x, "configDirPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigDirPathUndefined: Self = StObject.set(x, "configDirPath", js.undefined)
+    inline def setConfigDirPathUndefined: Self = StObject.set(x, "configDirPath", js.undefined)
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setEnablePersistence(value: Boolean): Self = StObject.set(x, "enablePersistence", value.asInstanceOf[js.Any])
+    inline def setEnablePersistence(value: Boolean): Self = StObject.set(x, "enablePersistence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePersistenceUndefined: Self = StObject.set(x, "enablePersistence", js.undefined)
+    inline def setEnablePersistenceUndefined: Self = StObject.set(x, "enablePersistence", js.undefined)
     
-    @scala.inline
-    def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

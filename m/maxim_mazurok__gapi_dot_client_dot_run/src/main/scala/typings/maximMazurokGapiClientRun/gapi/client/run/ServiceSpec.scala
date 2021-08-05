@@ -14,28 +14,21 @@ trait ServiceSpec extends StObject {
 }
 object ServiceSpec {
   
-  @scala.inline
-  def apply(): ServiceSpec = {
+  inline def apply(): ServiceSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceSpec]
   }
   
-  @scala.inline
-  implicit class ServiceSpecMutableBuilder[Self <: ServiceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSpec](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: RevisionTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: RevisionTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTraffic(value: js.Array[TrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+    inline def setTraffic(value: js.Array[TrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
+    inline def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
-    @scala.inline
-    def setTrafficVarargs(value: TrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
+    inline def setTrafficVarargs(value: TrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
   }
 }

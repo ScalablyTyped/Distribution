@@ -23,28 +23,21 @@ trait Views extends StObject {
 }
 object Views {
   
-  @scala.inline
-  def apply(): Views = {
+  inline def apply(): Views = {
     val __obj = js.Dynamic.literal(AGENDA = "agenda", DAY = "day", MONTH = "month", WEEK = "week", WORK_WEEK = "work_week")
     __obj.asInstanceOf[Views]
   }
   
-  @scala.inline
-  implicit class ViewsMutableBuilder[Self <: Views] (val x: Self) extends AnyVal {
+  extension [Self <: Views](x: Self) {
     
-    @scala.inline
-    def setAGENDA(value: agenda_): Self = StObject.set(x, "AGENDA", value.asInstanceOf[js.Any])
+    inline def setAGENDA(value: agenda_): Self = StObject.set(x, "AGENDA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDAY(value: day_): Self = StObject.set(x, "DAY", value.asInstanceOf[js.Any])
+    inline def setDAY(value: day_): Self = StObject.set(x, "DAY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMONTH(value: month_): Self = StObject.set(x, "MONTH", value.asInstanceOf[js.Any])
+    inline def setMONTH(value: month_): Self = StObject.set(x, "MONTH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEEK(value: week_): Self = StObject.set(x, "WEEK", value.asInstanceOf[js.Any])
+    inline def setWEEK(value: week_): Self = StObject.set(x, "WEEK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWORK_WEEK(value: work_week_): Self = StObject.set(x, "WORK_WEEK", value.asInstanceOf[js.Any])
+    inline def setWORK_WEEK(value: work_week_): Self = StObject.set(x, "WORK_WEEK", value.asInstanceOf[js.Any])
   }
 }

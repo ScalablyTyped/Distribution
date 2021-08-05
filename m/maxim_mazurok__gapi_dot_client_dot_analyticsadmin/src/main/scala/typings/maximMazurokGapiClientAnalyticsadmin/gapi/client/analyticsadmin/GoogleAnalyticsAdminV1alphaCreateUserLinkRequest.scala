@@ -17,31 +17,23 @@ trait GoogleAnalyticsAdminV1alphaCreateUserLinkRequest extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaCreateUserLinkRequest {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaCreateUserLinkRequest = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaCreateUserLinkRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaCreateUserLinkRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaCreateUserLinkRequestMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest](x: Self) {
     
-    @scala.inline
-    def setNotifyNewUser(value: Boolean): Self = StObject.set(x, "notifyNewUser", value.asInstanceOf[js.Any])
+    inline def setNotifyNewUser(value: Boolean): Self = StObject.set(x, "notifyNewUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyNewUserUndefined: Self = StObject.set(x, "notifyNewUser", js.undefined)
+    inline def setNotifyNewUserUndefined: Self = StObject.set(x, "notifyNewUser", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setUserLink(value: GoogleAnalyticsAdminV1alphaUserLink): Self = StObject.set(x, "userLink", value.asInstanceOf[js.Any])
+    inline def setUserLink(value: GoogleAnalyticsAdminV1alphaUserLink): Self = StObject.set(x, "userLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLinkUndefined: Self = StObject.set(x, "userLink", js.undefined)
+    inline def setUserLinkUndefined: Self = StObject.set(x, "userLink", js.undefined)
   }
 }

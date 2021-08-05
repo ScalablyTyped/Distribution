@@ -41,8 +41,7 @@ object srcAsyncMod {
     @JSImport("react-select/src/Async", "default.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/Async", "Async")
@@ -80,16 +79,14 @@ object srcAsyncMod {
     @JSImport("react-select/src/Async", "Async.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/Async", "defaultProps")
   @js.native
   val defaultProps: Props[js.Any] = js.native
   
-  @scala.inline
-  def makeAsyncSelect[T /* <: ComponentType[js.Any] */](SelectComponent: T): ComponentClass[AsyncComponentProps[T], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAsyncSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[AsyncComponentProps[T], ComponentState]]
+  inline def makeAsyncSelect[T /* <: ComponentType[js.Any] */](SelectComponent: T): ComponentClass[AsyncComponentProps[T], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAsyncSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[AsyncComponentProps[T], ComponentState]]
   
   type AsyncComponentProps[T /* <: ComponentType[js.Any] */] = SelectComponentProps[T] & AsyncProps[js.Any]
   
@@ -111,34 +108,26 @@ object srcAsyncMod {
   }
   object AsyncProps {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](
+    inline def apply[OptionType /* <: OptionTypeBase */](
       loadOptions: (String, js.Function1[/* options */ OptionsType[OptionType], Unit]) => js.Promise[js.Any] | Unit
     ): AsyncProps[OptionType] = {
       val __obj = js.Dynamic.literal(loadOptions = js.Any.fromFunction2(loadOptions))
       __obj.asInstanceOf[AsyncProps[OptionType]]
     }
     
-    @scala.inline
-    implicit class AsyncPropsMutableBuilder[Self <: AsyncProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & AsyncProps[OptionType]) extends AnyVal {
+    extension [Self <: AsyncProps[?], OptionType /* <: OptionTypeBase */](x: Self & AsyncProps[OptionType]) {
       
-      @scala.inline
-      def setCacheOptions(value: js.Any): Self = StObject.set(x, "cacheOptions", value.asInstanceOf[js.Any])
+      inline def setCacheOptions(value: js.Any): Self = StObject.set(x, "cacheOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheOptionsUndefined: Self = StObject.set(x, "cacheOptions", js.undefined)
+      inline def setCacheOptionsUndefined: Self = StObject.set(x, "cacheOptions", js.undefined)
       
-      @scala.inline
-      def setDefaultOptions(value: GroupedOptionsType[OptionType] | OptionsType[OptionType] | Boolean): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+      inline def setDefaultOptions(value: GroupedOptionsType[OptionType] | OptionsType[OptionType] | Boolean): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
+      inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
       
-      @scala.inline
-      def setDefaultOptionsVarargs(value: (GroupType[OptionType] | OptionType)*): Self = StObject.set(x, "defaultOptions", js.Array(value :_*))
+      inline def setDefaultOptionsVarargs(value: (GroupType[OptionType] | OptionType)*): Self = StObject.set(x, "defaultOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadOptions(
+      inline def setLoadOptions(
         value: (String, js.Function1[/* options */ OptionsType[OptionType], Unit]) => js.Promise[js.Any] | Unit
       ): Self = StObject.set(x, "loadOptions", js.Any.fromFunction2(value))
     }
@@ -154,8 +143,7 @@ object srcAsyncMod {
        with AsyncProps[OptionType]
   object Props {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](
+    inline def apply[OptionType /* <: OptionTypeBase */](
       loadOptions: (String, js.Function1[/* options */ OptionsType[OptionType], Unit]) => js.Promise[js.Any] | Unit
     ): Props[OptionType] = {
       val __obj = js.Dynamic.literal(loadOptions = js.Any.fromFunction2(loadOptions))
@@ -181,8 +169,7 @@ object srcAsyncMod {
   }
   object State {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](
+    inline def apply[OptionType /* <: OptionTypeBase */](
       inputValue: String,
       isLoading: Boolean,
       loadedOptions: OptionsType[OptionType],
@@ -192,38 +179,27 @@ object srcAsyncMod {
       __obj.asInstanceOf[State[OptionType]]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State[?], OptionType /* <: OptionTypeBase */] (val x: Self & State[OptionType]) extends AnyVal {
+    extension [Self <: State[?], OptionType /* <: OptionTypeBase */](x: Self & State[OptionType]) {
       
-      @scala.inline
-      def setDefaultOptions(value: OptionsType[OptionType]): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+      inline def setDefaultOptions(value: OptionsType[OptionType]): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
+      inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
       
-      @scala.inline
-      def setDefaultOptionsVarargs(value: OptionType*): Self = StObject.set(x, "defaultOptions", js.Array(value :_*))
+      inline def setDefaultOptionsVarargs(value: OptionType*): Self = StObject.set(x, "defaultOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedInputValue(value: String): Self = StObject.set(x, "loadedInputValue", value.asInstanceOf[js.Any])
+      inline def setLoadedInputValue(value: String): Self = StObject.set(x, "loadedInputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedInputValueUndefined: Self = StObject.set(x, "loadedInputValue", js.undefined)
+      inline def setLoadedInputValueUndefined: Self = StObject.set(x, "loadedInputValue", js.undefined)
       
-      @scala.inline
-      def setLoadedOptions(value: OptionsType[OptionType]): Self = StObject.set(x, "loadedOptions", value.asInstanceOf[js.Any])
+      inline def setLoadedOptions(value: OptionsType[OptionType]): Self = StObject.set(x, "loadedOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedOptionsVarargs(value: OptionType*): Self = StObject.set(x, "loadedOptions", js.Array(value :_*))
+      inline def setLoadedOptionsVarargs(value: OptionType*): Self = StObject.set(x, "loadedOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setPassEmptyOptions(value: Boolean): Self = StObject.set(x, "passEmptyOptions", value.asInstanceOf[js.Any])
+      inline def setPassEmptyOptions(value: Boolean): Self = StObject.set(x, "passEmptyOptions", value.asInstanceOf[js.Any])
     }
   }
 }

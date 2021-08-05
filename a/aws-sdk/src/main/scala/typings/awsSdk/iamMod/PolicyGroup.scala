@@ -18,25 +18,19 @@ trait PolicyGroup extends StObject {
 }
 object PolicyGroup {
   
-  @scala.inline
-  def apply(): PolicyGroup = {
+  inline def apply(): PolicyGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyGroup]
   }
   
-  @scala.inline
-  implicit class PolicyGroupMutableBuilder[Self <: PolicyGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyGroup](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: idType): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: idType): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

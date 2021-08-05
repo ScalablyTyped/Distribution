@@ -18,22 +18,17 @@ trait AlgorithmValidationSpecification extends StObject {
 }
 object AlgorithmValidationSpecification {
   
-  @scala.inline
-  def apply(ValidationProfiles: AlgorithmValidationProfiles, ValidationRole: RoleArn): AlgorithmValidationSpecification = {
+  inline def apply(ValidationProfiles: AlgorithmValidationProfiles, ValidationRole: RoleArn): AlgorithmValidationSpecification = {
     val __obj = js.Dynamic.literal(ValidationProfiles = ValidationProfiles.asInstanceOf[js.Any], ValidationRole = ValidationRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmValidationSpecification]
   }
   
-  @scala.inline
-  implicit class AlgorithmValidationSpecificationMutableBuilder[Self <: AlgorithmValidationSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: AlgorithmValidationSpecification](x: Self) {
     
-    @scala.inline
-    def setValidationProfiles(value: AlgorithmValidationProfiles): Self = StObject.set(x, "ValidationProfiles", value.asInstanceOf[js.Any])
+    inline def setValidationProfiles(value: AlgorithmValidationProfiles): Self = StObject.set(x, "ValidationProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationProfilesVarargs(value: AlgorithmValidationProfile*): Self = StObject.set(x, "ValidationProfiles", js.Array(value :_*))
+    inline def setValidationProfilesVarargs(value: AlgorithmValidationProfile*): Self = StObject.set(x, "ValidationProfiles", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationRole(value: RoleArn): Self = StObject.set(x, "ValidationRole", value.asInstanceOf[js.Any])
+    inline def setValidationRole(value: RoleArn): Self = StObject.set(x, "ValidationRole", value.asInstanceOf[js.Any])
   }
 }

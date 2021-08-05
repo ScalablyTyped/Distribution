@@ -27,8 +27,7 @@ trait HitcountnumberisRefinedbo extends StObject {
 }
 object HitcountnumberisRefinedbo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[Value],
     count: Double,
     isRefined: Boolean,
@@ -40,28 +39,20 @@ object HitcountnumberisRefinedbo {
     __obj.asInstanceOf[HitcountnumberisRefinedbo]
   }
   
-  @scala.inline
-  implicit class HitcountnumberisRefinedboMutableBuilder[Self <: HitcountnumberisRefinedbo] (val x: Self) extends AnyVal {
+  extension [Self <: HitcountnumberisRefinedbo](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
+    inline def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
     
-    @scala.inline
-    def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[Value]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
+    inline def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[Value]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
   }
 }

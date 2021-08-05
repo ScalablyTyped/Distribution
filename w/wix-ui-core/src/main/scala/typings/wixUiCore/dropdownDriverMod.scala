@@ -11,6 +11,5 @@ object dropdownDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dropdownDriverFactory(args: js.Any): ClickOutside = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownDriverFactory")(args.asInstanceOf[js.Any]).asInstanceOf[ClickOutside]
+  inline def dropdownDriverFactory(args: js.Any): ClickOutside = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownDriverFactory")(args.asInstanceOf[js.Any]).asInstanceOf[ClickOutside]
 }

@@ -22,17 +22,14 @@ object toBeSameLengthAsMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeSameLengthAs: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
+        inline def apply[T](toBeSameLengthAs: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeSameLengthAs = js.Any.fromFunction2(toBeSameLengthAs))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeSameLengthAs(value: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toBeSameLengthAs", js.Any.fromFunction2(value))
+          inline def setToBeSameLengthAs(value: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toBeSameLengthAs", js.Any.fromFunction2(value))
         }
       }
     }

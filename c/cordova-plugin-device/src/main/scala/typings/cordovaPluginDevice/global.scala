@@ -9,6 +9,5 @@ object global {
   @JSGlobal("device")
   @js.native
   def device: Device = js.native
-  @scala.inline
-  def device_=(x: Device): Unit = js.Dynamic.global.updateDynamic("device")(x.asInstanceOf[js.Any])
+  inline def device_=(x: Device): Unit = js.Dynamic.global.updateDynamic("device")(x.asInstanceOf[js.Any])
 }

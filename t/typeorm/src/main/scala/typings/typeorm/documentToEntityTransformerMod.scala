@@ -14,7 +14,7 @@ object documentToEntityTransformerMod {
     def this(// private selectionMap: AliasMap,
     enableRelationIdValues: Boolean) = this()
     
-    var enableRelationIdValues: js.Any = js.native
+    /* private */ var enableRelationIdValues: js.Any = js.native
     
     def transform(document: js.Any, metadata: EntityMetadata): js.Any = js.native
     

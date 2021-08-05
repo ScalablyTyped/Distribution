@@ -15,17 +15,14 @@ object dataLayerEventMod {
   }
   object DataLayerEvent {
     
-    @scala.inline
-    def apply(event: String): DataLayerEvent = {
+    inline def apply(event: String): DataLayerEvent = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataLayerEvent]
     }
     
-    @scala.inline
-    implicit class DataLayerEventMutableBuilder[Self <: DataLayerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DataLayerEvent](x: Self) {
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
 }

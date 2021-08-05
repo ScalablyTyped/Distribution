@@ -28,8 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlockParent extends StObject
 object BlockParent {
   
-  @scala.inline
-  def ArrowFunctionExpression_(
+  inline def ArrowFunctionExpression_(
     async: Boolean,
     body: BlockStatement_ | Expression,
     end: Double,
@@ -45,15 +44,13 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ArrowFunctionExpression_]
   }
   
-  @scala.inline
-  def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BlockStatement_ = {
+  inline def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BlockStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BlockStatement_]
   }
   
-  @scala.inline
-  def ClassMethod_(
+  inline def ClassMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -73,15 +70,13 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassMethod_]
   }
   
-  @scala.inline
-  def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
+  inline def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DoWhileStatement_]
   }
   
-  @scala.inline
-  def ForInStatement_(
+  inline def ForInStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -94,8 +89,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForInStatement_]
   }
   
-  @scala.inline
-  def ForOfStatement_(
+  inline def ForOfStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -108,8 +102,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForOfStatement_]
   }
   
-  @scala.inline
-  def ForStatement_(
+  inline def ForStatement_(
     body: Statement,
     end: Double,
     init: VariableDeclaration_ | Expression,
@@ -123,8 +116,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForStatement_]
   }
   
-  @scala.inline
-  def FunctionDeclaration_(
+  inline def FunctionDeclaration_(
     async: Boolean,
     body: BlockStatement_,
     end: Double,
@@ -139,8 +131,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionDeclaration_]
   }
   
-  @scala.inline
-  def FunctionExpression_(
+  inline def FunctionExpression_(
     async: Boolean,
     body: BlockStatement_,
     end: Double,
@@ -155,8 +146,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionExpression_]
   }
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -176,8 +166,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectMethod_]
   }
   
-  @scala.inline
-  def Program_(
+  inline def Program_(
     body: js.Array[Statement | ModuleDeclaration],
     end: Double,
     loc: SourceLocation,
@@ -189,8 +178,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.Program_]
   }
   
-  @scala.inline
-  def SwitchStatement_(
+  inline def SwitchStatement_(
     cases: js.Array[SwitchCase_],
     discriminant: Expression,
     end: Double,
@@ -202,8 +190,7 @@ object BlockParent {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.SwitchStatement_]
   }
   
-  @scala.inline
-  def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.WhileStatement_ = {
+  inline def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.WhileStatement_]

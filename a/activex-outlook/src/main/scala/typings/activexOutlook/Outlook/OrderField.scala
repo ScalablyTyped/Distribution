@@ -12,7 +12,7 @@ trait OrderField extends StObject {
   
   var IsDescending: Boolean
   
-  @JSName("Outlook.OrderField_typekey")
+  /* private */ @JSName("Outlook.OrderField_typekey")
   var OutlookDotOrderField_typekey: OrderField
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait OrderField extends StObject {
 }
 object OrderField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     IsDescending: Boolean,
@@ -38,28 +37,20 @@ object OrderField {
     __obj.asInstanceOf[OrderField]
   }
   
-  @scala.inline
-  implicit class OrderFieldMutableBuilder[Self <: OrderField] (val x: Self) extends AnyVal {
+  extension [Self <: OrderField](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDescending(value: Boolean): Self = StObject.set(x, "IsDescending", value.asInstanceOf[js.Any])
+    inline def setIsDescending(value: Boolean): Self = StObject.set(x, "IsDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOrderField_typekey(value: OrderField): Self = StObject.set(x, "Outlook.OrderField_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOrderField_typekey(value: OrderField): Self = StObject.set(x, "Outlook.OrderField_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewXMLSchemaName(value: String): Self = StObject.set(x, "ViewXMLSchemaName", value.asInstanceOf[js.Any])
+    inline def setViewXMLSchemaName(value: String): Self = StObject.set(x, "ViewXMLSchemaName", value.asInstanceOf[js.Any])
   }
 }

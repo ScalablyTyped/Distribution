@@ -23,5 +23,5 @@ class SurveyWindow () extends SurveyWindowModel {
   
   var koExpandedCss: js.Any = js.native
   
-  var template: String = js.native
+  /* protected */ var template: String = js.native
 }

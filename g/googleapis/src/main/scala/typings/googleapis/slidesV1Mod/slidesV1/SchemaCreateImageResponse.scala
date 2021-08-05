@@ -16,19 +16,15 @@ trait SchemaCreateImageResponse extends StObject {
 }
 object SchemaCreateImageResponse {
   
-  @scala.inline
-  def apply(): SchemaCreateImageResponse = {
+  inline def apply(): SchemaCreateImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateImageResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCreateImageResponseMutableBuilder[Self <: SchemaCreateImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateImageResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

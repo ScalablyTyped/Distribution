@@ -14,25 +14,19 @@ trait HoldConfig extends StObject {
 }
 object HoldConfig {
   
-  @scala.inline
-  def apply(): HoldConfig = {
+  inline def apply(): HoldConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HoldConfig]
   }
   
-  @scala.inline
-  implicit class HoldConfigMutableBuilder[Self <: HoldConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HoldConfig](x: Self) {
     
-    @scala.inline
-    def setHoldFor(value: Double): Self = StObject.set(x, "holdFor", value.asInstanceOf[js.Any])
+    inline def setHoldFor(value: Double): Self = StObject.set(x, "holdFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoldForUndefined: Self = StObject.set(x, "holdFor", js.undefined)
+    inline def setHoldForUndefined: Self = StObject.set(x, "holdFor", js.undefined)
     
-    @scala.inline
-    def setUpdateEvery(value: Double): Self = StObject.set(x, "updateEvery", value.asInstanceOf[js.Any])
+    inline def setUpdateEvery(value: Double): Self = StObject.set(x, "updateEvery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEveryUndefined: Self = StObject.set(x, "updateEvery", js.undefined)
+    inline def setUpdateEveryUndefined: Self = StObject.set(x, "updateEvery", js.undefined)
   }
 }

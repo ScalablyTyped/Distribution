@@ -95,7 +95,7 @@ object stateMod {
     
     def generateDevice(seed: String): Unit = js.native
     
-    var generateTemporaryGuid: js.Any = js.native
+    /* private */ var generateTemporaryGuid: js.Any = js.native
     
     var igWWWClaim: js.UndefOr[String] = js.native
     
@@ -153,7 +153,6 @@ object stateMod {
     @JSImport("instagram-private-api/dist/core/state", "State.stateDebug")
     @js.native
     def stateDebug: js.Any = js.native
-    @scala.inline
-    def stateDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateDebug")(x.asInstanceOf[js.Any])
+    inline def stateDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateDebug")(x.asInstanceOf[js.Any])
   }
 }

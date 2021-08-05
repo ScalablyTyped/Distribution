@@ -32,25 +32,19 @@ trait OverlayImageOptions
 }
 object OverlayImageOptions {
   
-  @scala.inline
-  def apply(ansi: Boolean, file: String, search: String, w3m: String): OverlayImageOptions = {
+  inline def apply(ansi: Boolean, file: String, search: String, w3m: String): OverlayImageOptions = {
     val __obj = js.Dynamic.literal(ansi = ansi.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], w3m = w3m.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayImageOptions]
   }
   
-  @scala.inline
-  implicit class OverlayImageOptionsMutableBuilder[Self <: OverlayImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayImageOptions](x: Self) {
     
-    @scala.inline
-    def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
+    inline def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW3m(value: String): Self = StObject.set(x, "w3m", value.asInstanceOf[js.Any])
+    inline def setW3m(value: String): Self = StObject.set(x, "w3m", value.asInstanceOf[js.Any])
   }
 }

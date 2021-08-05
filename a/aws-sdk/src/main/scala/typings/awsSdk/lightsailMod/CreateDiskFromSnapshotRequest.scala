@@ -53,64 +53,45 @@ trait CreateDiskFromSnapshotRequest extends StObject {
 }
 object CreateDiskFromSnapshotRequest {
   
-  @scala.inline
-  def apply(availabilityZone: NonEmptyString, diskName: ResourceName, sizeInGb: integer): CreateDiskFromSnapshotRequest = {
+  inline def apply(availabilityZone: NonEmptyString, diskName: ResourceName, sizeInGb: integer): CreateDiskFromSnapshotRequest = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], diskName = diskName.asInstanceOf[js.Any], sizeInGb = sizeInGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDiskFromSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateDiskFromSnapshotRequestMutableBuilder[Self <: CreateDiskFromSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDiskFromSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setAddOns(value: AddOnRequestList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
+    inline def setAddOns(value: AddOnRequestList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
+    inline def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
-    @scala.inline
-    def setAddOnsVarargs(value: AddOnRequest*): Self = StObject.set(x, "addOns", js.Array(value :_*))
+    inline def setAddOnsVarargs(value: AddOnRequest*): Self = StObject.set(x, "addOns", js.Array(value :_*))
     
-    @scala.inline
-    def setAvailabilityZone(value: NonEmptyString): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: NonEmptyString): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSnapshotName(value: ResourceName): Self = StObject.set(x, "diskSnapshotName", value.asInstanceOf[js.Any])
+    inline def setDiskSnapshotName(value: ResourceName): Self = StObject.set(x, "diskSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSnapshotNameUndefined: Self = StObject.set(x, "diskSnapshotName", js.undefined)
+    inline def setDiskSnapshotNameUndefined: Self = StObject.set(x, "diskSnapshotName", js.undefined)
     
-    @scala.inline
-    def setRestoreDate(value: String): Self = StObject.set(x, "restoreDate", value.asInstanceOf[js.Any])
+    inline def setRestoreDate(value: String): Self = StObject.set(x, "restoreDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreDateUndefined: Self = StObject.set(x, "restoreDate", js.undefined)
+    inline def setRestoreDateUndefined: Self = StObject.set(x, "restoreDate", js.undefined)
     
-    @scala.inline
-    def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
+    inline def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDiskName(value: String): Self = StObject.set(x, "sourceDiskName", value.asInstanceOf[js.Any])
+    inline def setSourceDiskName(value: String): Self = StObject.set(x, "sourceDiskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDiskNameUndefined: Self = StObject.set(x, "sourceDiskName", js.undefined)
+    inline def setSourceDiskNameUndefined: Self = StObject.set(x, "sourceDiskName", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUseLatestRestorableAutoSnapshot(value: Boolean): Self = StObject.set(x, "useLatestRestorableAutoSnapshot", value.asInstanceOf[js.Any])
+    inline def setUseLatestRestorableAutoSnapshot(value: Boolean): Self = StObject.set(x, "useLatestRestorableAutoSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLatestRestorableAutoSnapshotUndefined: Self = StObject.set(x, "useLatestRestorableAutoSnapshot", js.undefined)
+    inline def setUseLatestRestorableAutoSnapshotUndefined: Self = StObject.set(x, "useLatestRestorableAutoSnapshot", js.undefined)
   }
 }

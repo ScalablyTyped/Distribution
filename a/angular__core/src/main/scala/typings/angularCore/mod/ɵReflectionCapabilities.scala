@@ -12,13 +12,13 @@ class ɵReflectionCapabilities ()
      with PlatformReflectionCapabilities {
   def this(reflect: js.Any) = this()
   
-  var _ownAnnotations: js.Any = js.native
+  /* private */ var _ownAnnotations: js.Any = js.native
   
-  var _ownParameters: js.Any = js.native
+  /* private */ var _ownParameters: js.Any = js.native
   
-  var _ownPropMetadata: js.Any = js.native
+  /* private */ var _ownPropMetadata: js.Any = js.native
   
-  var _reflect: js.Any = js.native
+  /* private */ var _reflect: js.Any = js.native
   
   /**
     * Return a list of annotations declared on the class

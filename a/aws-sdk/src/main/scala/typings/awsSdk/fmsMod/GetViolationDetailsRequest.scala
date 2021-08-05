@@ -28,8 +28,7 @@ trait GetViolationDetailsRequest extends StObject {
 }
 object GetViolationDetailsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemberAccount: AWSAccountId,
     PolicyId: PolicyId,
     ResourceId: ResourceId,
@@ -39,19 +38,14 @@ object GetViolationDetailsRequest {
     __obj.asInstanceOf[GetViolationDetailsRequest]
   }
   
-  @scala.inline
-  implicit class GetViolationDetailsRequestMutableBuilder[Self <: GetViolationDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetViolationDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
+    inline def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

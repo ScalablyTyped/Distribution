@@ -18,8 +18,7 @@ trait ParametersOauthAuthorizationsListAuthorizationsEndpoint extends StObject {
 }
 object ParametersOauthAuthorizationsListAuthorizationsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OauthAuthorizationsListAuthorizationsEndpoint,
     request: OauthAuthorizationsListAuthorizationsRequestOptions,
     response: OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]
@@ -28,16 +27,12 @@ object ParametersOauthAuthorizationsListAuthorizationsEndpoint {
     __obj.asInstanceOf[ParametersOauthAuthorizationsListAuthorizationsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOauthAuthorizationsListAuthorizationsEndpointMutableBuilder[Self <: ParametersOauthAuthorizationsListAuthorizationsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOauthAuthorizationsListAuthorizationsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OauthAuthorizationsListAuthorizationsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OauthAuthorizationsListAuthorizationsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: OauthAuthorizationsListAuthorizationsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: OauthAuthorizationsListAuthorizationsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

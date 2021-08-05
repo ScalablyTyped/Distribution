@@ -23,31 +23,23 @@ trait NumberFilter extends StObject {
 }
 object NumberFilter {
   
-  @scala.inline
-  def apply(): NumberFilter = {
+  inline def apply(): NumberFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumberFilter]
   }
   
-  @scala.inline
-  implicit class NumberFilterMutableBuilder[Self <: NumberFilter] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFilter](x: Self) {
     
-    @scala.inline
-    def setEq(value: Double): Self = StObject.set(x, "Eq", value.asInstanceOf[js.Any])
+    inline def setEq(value: Double): Self = StObject.set(x, "Eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqUndefined: Self = StObject.set(x, "Eq", js.undefined)
+    inline def setEqUndefined: Self = StObject.set(x, "Eq", js.undefined)
     
-    @scala.inline
-    def setGte(value: Double): Self = StObject.set(x, "Gte", value.asInstanceOf[js.Any])
+    inline def setGte(value: Double): Self = StObject.set(x, "Gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGteUndefined: Self = StObject.set(x, "Gte", js.undefined)
+    inline def setGteUndefined: Self = StObject.set(x, "Gte", js.undefined)
     
-    @scala.inline
-    def setLte(value: Double): Self = StObject.set(x, "Lte", value.asInstanceOf[js.Any])
+    inline def setLte(value: Double): Self = StObject.set(x, "Lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLteUndefined: Self = StObject.set(x, "Lte", js.undefined)
+    inline def setLteUndefined: Self = StObject.set(x, "Lte", js.undefined)
   }
 }

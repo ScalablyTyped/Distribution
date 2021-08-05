@@ -8,6 +8,5 @@ object hapiAuthBearerTokenStrings {
   
   @js.native
   sealed trait `bearer-access-token` extends StObject
-  @scala.inline
-  def `bearer-access-token`: `bearer-access-token` = "bearer-access-token".asInstanceOf[`bearer-access-token`]
+  inline def `bearer-access-token`: `bearer-access-token` = "bearer-access-token".asInstanceOf[`bearer-access-token`]
 }

@@ -15,17 +15,13 @@ object JQueryEasyLoading {
   trait Command extends StObject
   object Command {
     
-    @scala.inline
-    def resize: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.resize = "resize".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.resize]
+    inline def resize: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.resize = "resize".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.resize]
     
-    @scala.inline
-    def start: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.start = "start".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.start]
+    inline def start: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.start = "start".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.start]
     
-    @scala.inline
-    def stop: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.stop = "stop".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.stop]
+    inline def stop: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.stop = "stop".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.stop]
     
-    @scala.inline
-    def toggle: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle = "toggle".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle]
+    inline def toggle: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle = "toggle".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle]
   }
   
   trait LoadingObject extends StObject {
@@ -91,8 +87,7 @@ object JQueryEasyLoading {
   }
   object LoadingObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: () => Boolean,
       attachMethodsToExternalEvents: () => Unit,
       attachOptionsHandlers: () => Unit,
@@ -108,38 +103,27 @@ object JQueryEasyLoading {
       __obj.asInstanceOf[LoadingObject]
     }
     
-    @scala.inline
-    implicit class LoadingObjectMutableBuilder[Self <: LoadingObject] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingObject](x: Self) {
       
-      @scala.inline
-      def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
+      inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAttachMethodsToExternalEvents(value: () => Unit): Self = StObject.set(x, "attachMethodsToExternalEvents", js.Any.fromFunction0(value))
+      inline def setAttachMethodsToExternalEvents(value: () => Unit): Self = StObject.set(x, "attachMethodsToExternalEvents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAttachOptionsHandlers(value: () => Unit): Self = StObject.set(x, "attachOptionsHandlers", js.Any.fromFunction0(value))
+      inline def setAttachOptionsHandlers(value: () => Unit): Self = StObject.set(x, "attachOptionsHandlers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCalcZIndex(value: () => Double): Self = StObject.set(x, "calcZIndex", js.Any.fromFunction0(value))
+      inline def setCalcZIndex(value: () => Double): Self = StObject.set(x, "calcZIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateOerlay(value: () => JQuery): Self = StObject.set(x, "createOerlay", js.Any.fromFunction0(value))
+      inline def setCreateOerlay(value: () => JQuery): Self = StObject.set(x, "createOerlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
+      inline def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
   
@@ -224,80 +208,56 @@ object JQueryEasyLoading {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
+      inline def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenClassUndefined: Self = StObject.set(x, "hiddenClass", js.undefined)
+      inline def setHiddenClassUndefined: Self = StObject.set(x, "hiddenClass", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* loading */ LoadingObject => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* loading */ LoadingObject => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: /* loading */ LoadingObject => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+      inline def setOnStop(value: /* loading */ LoadingObject => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: JQuery): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: JQuery): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setShownClass(value: String): Self = StObject.set(x, "shownClass", value.asInstanceOf[js.Any])
+      inline def setShownClass(value: String): Self = StObject.set(x, "shownClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShownClassUndefined: Self = StObject.set(x, "shownClass", js.undefined)
+      inline def setShownClassUndefined: Self = StObject.set(x, "shownClass", js.undefined)
       
-      @scala.inline
-      def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStoppable(value: Boolean): Self = StObject.set(x, "stoppable", value.asInstanceOf[js.Any])
+      inline def setStoppable(value: Boolean): Self = StObject.set(x, "stoppable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoppableUndefined: Self = StObject.set(x, "stoppable", js.undefined)
+      inline def setStoppableUndefined: Self = StObject.set(x, "stoppable", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -313,17 +273,14 @@ object JQueryEasyLoading {
   }
   object Static {
     
-    @scala.inline
-    def apply(setDefaults: Options => Unit): Static = {
+    inline def apply(setDefaults: Options => Unit): Static = {
       val __obj = js.Dynamic.literal(setDefaults = js.Any.fromFunction1(setDefaults))
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setSetDefaults(value: Options => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+      inline def setSetDefaults(value: Options => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
     }
   }
 }

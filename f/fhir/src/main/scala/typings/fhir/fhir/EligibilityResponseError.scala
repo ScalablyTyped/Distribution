@@ -18,16 +18,13 @@ trait EligibilityResponseError
 }
 object EligibilityResponseError {
   
-  @scala.inline
-  def apply(code: CodeableConcept): EligibilityResponseError = {
+  inline def apply(code: CodeableConcept): EligibilityResponseError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[EligibilityResponseError]
   }
   
-  @scala.inline
-  implicit class EligibilityResponseErrorMutableBuilder[Self <: EligibilityResponseError] (val x: Self) extends AnyVal {
+  extension [Self <: EligibilityResponseError](x: Self) {
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

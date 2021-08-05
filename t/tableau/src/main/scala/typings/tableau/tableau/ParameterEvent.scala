@@ -16,8 +16,7 @@ trait ParameterEvent
 }
 object ParameterEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEventName: () => TableauEventName,
     getParameterAsync: () => js.Promise[Parameter],
     getParameterName: () => String,
@@ -27,13 +26,10 @@ object ParameterEvent {
     __obj.asInstanceOf[ParameterEvent]
   }
   
-  @scala.inline
-  implicit class ParameterEventMutableBuilder[Self <: ParameterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterEvent](x: Self) {
     
-    @scala.inline
-    def setGetParameterAsync(value: () => js.Promise[Parameter]): Self = StObject.set(x, "getParameterAsync", js.Any.fromFunction0(value))
+    inline def setGetParameterAsync(value: () => js.Promise[Parameter]): Self = StObject.set(x, "getParameterAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameterName(value: () => String): Self = StObject.set(x, "getParameterName", js.Any.fromFunction0(value))
+    inline def setGetParameterName(value: () => String): Self = StObject.set(x, "getParameterName", js.Any.fromFunction0(value))
   }
 }

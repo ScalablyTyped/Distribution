@@ -16,16 +16,12 @@ object Printable {
   @js.native
   val ^ : Type[Printable] = js.native
   
-  @scala.inline
-  implicit class PrintableMutableBuilder[Self <: Printable] (val x: Self) extends AnyVal {
+  extension [Self <: Printable](x: Self) {
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
   }
 }

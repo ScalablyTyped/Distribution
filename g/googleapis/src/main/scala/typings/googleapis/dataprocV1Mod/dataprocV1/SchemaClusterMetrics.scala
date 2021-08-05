@@ -24,25 +24,19 @@ trait SchemaClusterMetrics extends StObject {
 }
 object SchemaClusterMetrics {
   
-  @scala.inline
-  def apply(): SchemaClusterMetrics = {
+  inline def apply(): SchemaClusterMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClusterMetrics]
   }
   
-  @scala.inline
-  implicit class SchemaClusterMetricsMutableBuilder[Self <: SchemaClusterMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClusterMetrics](x: Self) {
     
-    @scala.inline
-    def setHdfsMetrics(value: StringDictionary[String]): Self = StObject.set(x, "hdfsMetrics", value.asInstanceOf[js.Any])
+    inline def setHdfsMetrics(value: StringDictionary[String]): Self = StObject.set(x, "hdfsMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHdfsMetricsUndefined: Self = StObject.set(x, "hdfsMetrics", js.undefined)
+    inline def setHdfsMetricsUndefined: Self = StObject.set(x, "hdfsMetrics", js.undefined)
     
-    @scala.inline
-    def setYarnMetrics(value: StringDictionary[String]): Self = StObject.set(x, "yarnMetrics", value.asInstanceOf[js.Any])
+    inline def setYarnMetrics(value: StringDictionary[String]): Self = StObject.set(x, "yarnMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYarnMetricsUndefined: Self = StObject.set(x, "yarnMetrics", js.undefined)
+    inline def setYarnMetricsUndefined: Self = StObject.set(x, "yarnMetrics", js.undefined)
   }
 }

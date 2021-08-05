@@ -68,94 +68,65 @@ trait CapabilityStatementRest
 }
 object CapabilityStatementRest {
   
-  @scala.inline
-  def apply(mode: code): CapabilityStatementRest = {
+  inline def apply(mode: code): CapabilityStatementRest = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementRest]
   }
   
-  @scala.inline
-  implicit class CapabilityStatementRestMutableBuilder[Self <: CapabilityStatementRest] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilityStatementRest](x: Self) {
     
-    @scala.inline
-    def setCompartment(value: js.Array[uri]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
+    inline def setCompartment(value: js.Array[uri]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompartmentUndefined: Self = StObject.set(x, "compartment", js.undefined)
+    inline def setCompartmentUndefined: Self = StObject.set(x, "compartment", js.undefined)
     
-    @scala.inline
-    def setCompartmentVarargs(value: uri*): Self = StObject.set(x, "compartment", js.Array(value :_*))
+    inline def setCompartmentVarargs(value: uri*): Self = StObject.set(x, "compartment", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setInteraction(value: js.Array[CapabilityStatementRestInteraction]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: js.Array[CapabilityStatementRestInteraction]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
+    inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
-    @scala.inline
-    def setInteractionVarargs(value: CapabilityStatementRestInteraction*): Self = StObject.set(x, "interaction", js.Array(value :_*))
+    inline def setInteractionVarargs(value: CapabilityStatementRestInteraction*): Self = StObject.set(x, "interaction", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: js.Array[CapabilityStatementRestOperation]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: js.Array[CapabilityStatementRestOperation]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setOperationVarargs(value: CapabilityStatementRestOperation*): Self = StObject.set(x, "operation", js.Array(value :_*))
+    inline def setOperationVarargs(value: CapabilityStatementRestOperation*): Self = StObject.set(x, "operation", js.Array(value :_*))
     
-    @scala.inline
-    def setResource(value: js.Array[CapabilityStatementRestResource]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: js.Array[CapabilityStatementRestResource]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setResourceVarargs(value: CapabilityStatementRestResource*): Self = StObject.set(x, "resource", js.Array(value :_*))
+    inline def setResourceVarargs(value: CapabilityStatementRestResource*): Self = StObject.set(x, "resource", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchParam(value: js.Array[CapabilityStatementRestResourceSearchParam]): Self = StObject.set(x, "searchParam", value.asInstanceOf[js.Any])
+    inline def setSearchParam(value: js.Array[CapabilityStatementRestResourceSearchParam]): Self = StObject.set(x, "searchParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchParamUndefined: Self = StObject.set(x, "searchParam", js.undefined)
+    inline def setSearchParamUndefined: Self = StObject.set(x, "searchParam", js.undefined)
     
-    @scala.inline
-    def setSearchParamVarargs(value: CapabilityStatementRestResourceSearchParam*): Self = StObject.set(x, "searchParam", js.Array(value :_*))
+    inline def setSearchParamVarargs(value: CapabilityStatementRestResourceSearchParam*): Self = StObject.set(x, "searchParam", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurity(value: CapabilityStatementRestSecurity): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+    inline def setSecurity(value: CapabilityStatementRestSecurity): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+    inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    @scala.inline
-    def set_compartment(value: js.Array[Element]): Self = StObject.set(x, "_compartment", value.asInstanceOf[js.Any])
+    inline def set_compartment(value: js.Array[Element]): Self = StObject.set(x, "_compartment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_compartmentUndefined: Self = StObject.set(x, "_compartment", js.undefined)
+    inline def set_compartmentUndefined: Self = StObject.set(x, "_compartment", js.undefined)
     
-    @scala.inline
-    def set_compartmentVarargs(value: Element*): Self = StObject.set(x, "_compartment", js.Array(value :_*))
+    inline def set_compartmentVarargs(value: Element*): Self = StObject.set(x, "_compartment", js.Array(value :_*))
     
-    @scala.inline
-    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
+    inline def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
+    inline def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
-    @scala.inline
-    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
+    inline def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
+    inline def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
   }
 }

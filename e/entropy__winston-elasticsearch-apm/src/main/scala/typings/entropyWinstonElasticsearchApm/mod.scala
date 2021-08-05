@@ -30,17 +30,14 @@ object mod {
   }
   object ElasticsearchApmOptions {
     
-    @scala.inline
-    def apply(apm: Agent): ElasticsearchApmOptions = {
+    inline def apply(apm: Agent): ElasticsearchApmOptions = {
       val __obj = js.Dynamic.literal(apm = apm.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElasticsearchApmOptions]
     }
     
-    @scala.inline
-    implicit class ElasticsearchApmOptionsMutableBuilder[Self <: ElasticsearchApmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ElasticsearchApmOptions](x: Self) {
       
-      @scala.inline
-      def setApm(value: Agent): Self = StObject.set(x, "apm", value.asInstanceOf[js.Any])
+      inline def setApm(value: Agent): Self = StObject.set(x, "apm", value.asInstanceOf[js.Any])
     }
   }
 }

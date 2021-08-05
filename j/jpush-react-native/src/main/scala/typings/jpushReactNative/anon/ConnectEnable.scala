@@ -10,16 +10,13 @@ trait ConnectEnable extends StObject {
 }
 object ConnectEnable {
   
-  @scala.inline
-  def apply(connectEnable: Boolean): ConnectEnable = {
+  inline def apply(connectEnable: Boolean): ConnectEnable = {
     val __obj = js.Dynamic.literal(connectEnable = connectEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectEnable]
   }
   
-  @scala.inline
-  implicit class ConnectEnableMutableBuilder[Self <: ConnectEnable] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectEnable](x: Self) {
     
-    @scala.inline
-    def setConnectEnable(value: Boolean): Self = StObject.set(x, "connectEnable", value.asInstanceOf[js.Any])
+    inline def setConnectEnable(value: Boolean): Self = StObject.set(x, "connectEnable", value.asInstanceOf[js.Any])
   }
 }

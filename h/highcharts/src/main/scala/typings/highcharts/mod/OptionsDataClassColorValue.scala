@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsDataClassColorValue extends StObject
 object OptionsDataClassColorValue {
   
-  @scala.inline
-  def category: typings.highcharts.highchartsStrings.category = "category".asInstanceOf[typings.highcharts.highchartsStrings.category]
+  inline def category: typings.highcharts.highchartsStrings.category = "category".asInstanceOf[typings.highcharts.highchartsStrings.category]
   
-  @scala.inline
-  def tween: typings.highcharts.highchartsStrings.tween = "tween".asInstanceOf[typings.highcharts.highchartsStrings.tween]
+  inline def tween: typings.highcharts.highchartsStrings.tween = "tween".asInstanceOf[typings.highcharts.highchartsStrings.tween]
 }

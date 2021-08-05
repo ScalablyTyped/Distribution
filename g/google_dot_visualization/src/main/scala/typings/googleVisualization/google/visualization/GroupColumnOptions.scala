@@ -18,35 +18,26 @@ trait GroupColumnOptions extends StObject {
 }
 object GroupColumnOptions {
   
-  @scala.inline
-  def apply(aggregation: js.Array[js.Any] => js.Any, column: Double, `type`: String): GroupColumnOptions = {
+  inline def apply(aggregation: js.Array[js.Any] => js.Any, column: Double, `type`: String): GroupColumnOptions = {
     val __obj = js.Dynamic.literal(aggregation = js.Any.fromFunction1(aggregation), column = column.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupColumnOptions]
   }
   
-  @scala.inline
-  implicit class GroupColumnOptionsMutableBuilder[Self <: GroupColumnOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GroupColumnOptions](x: Self) {
     
-    @scala.inline
-    def setAggregation(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
+    inline def setAggregation(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

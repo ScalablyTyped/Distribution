@@ -14,8 +14,7 @@ trait XdsConfig extends StObject {
 }
 object XdsConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     balancerName: String,
     childPolicy: js.Array[LoadBalancingConfig],
     fallbackPolicy: js.Array[LoadBalancingConfig]
@@ -24,22 +23,16 @@ object XdsConfig {
     __obj.asInstanceOf[XdsConfig]
   }
   
-  @scala.inline
-  implicit class XdsConfigMutableBuilder[Self <: XdsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: XdsConfig](x: Self) {
     
-    @scala.inline
-    def setBalancerName(value: String): Self = StObject.set(x, "balancerName", value.asInstanceOf[js.Any])
+    inline def setBalancerName(value: String): Self = StObject.set(x, "balancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
+    inline def setChildPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "childPolicy", js.Array(value :_*))
+    inline def setChildPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "childPolicy", js.Array(value :_*))
     
-    @scala.inline
-    def setFallbackPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "fallbackPolicy", value.asInstanceOf[js.Any])
+    inline def setFallbackPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "fallbackPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "fallbackPolicy", js.Array(value :_*))
+    inline def setFallbackPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "fallbackPolicy", js.Array(value :_*))
   }
 }

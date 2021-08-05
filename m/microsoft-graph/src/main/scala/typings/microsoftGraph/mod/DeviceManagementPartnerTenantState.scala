@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceManagementPartnerTenantState extends StObject
 object DeviceManagementPartnerTenantState {
   
-  @scala.inline
-  def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
+  inline def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
   
-  @scala.inline
-  def rejected: typings.microsoftGraph.microsoftGraphStrings.rejected = "rejected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rejected]
+  inline def rejected: typings.microsoftGraph.microsoftGraphStrings.rejected = "rejected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rejected]
   
-  @scala.inline
-  def terminated: typings.microsoftGraph.microsoftGraphStrings.terminated = "terminated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.terminated]
+  inline def terminated: typings.microsoftGraph.microsoftGraphStrings.terminated = "terminated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.terminated]
   
-  @scala.inline
-  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
+  inline def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = "unresponsive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unresponsive]
+  inline def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = "unresponsive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unresponsive]
 }

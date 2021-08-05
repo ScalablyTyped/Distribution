@@ -43,8 +43,7 @@ trait Command extends StObject {
 }
 object Command {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachEvents: () => Unit,
     get_displayName: () => String,
     get_elementIDPrefix: () => String,
@@ -66,55 +65,38 @@ object Command {
     __obj.asInstanceOf[Command]
   }
   
-  @scala.inline
-  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+  extension [Self <: Command](x: Self) {
     
-    @scala.inline
-    def setAttachEvents(value: () => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction0(value))
+    inline def setAttachEvents(value: () => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
+    inline def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_elementIDPrefix(value: () => String): Self = StObject.set(x, "get_elementIDPrefix", js.Any.fromFunction0(value))
+    inline def setGet_elementIDPrefix(value: () => String): Self = StObject.set(x, "get_elementIDPrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_href(value: () => String): Self = StObject.set(x, "get_href", js.Any.fromFunction0(value))
+    inline def setGet_href(value: () => String): Self = StObject.set(x, "get_href", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isDropDownCommand(value: () => Boolean): Self = StObject.set(x, "get_isDropDownCommand", js.Any.fromFunction0(value))
+    inline def setGet_isDropDownCommand(value: () => Boolean): Self = StObject.set(x, "get_isDropDownCommand", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isEnabled(value: () => Boolean): Self = StObject.set(x, "get_isEnabled", js.Any.fromFunction0(value))
+    inline def setGet_isEnabled(value: () => Boolean): Self = StObject.set(x, "get_isEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_linkElement(value: () => HTMLAnchorElement): Self = StObject.set(x, "get_linkElement", js.Any.fromFunction0(value))
+    inline def setGet_linkElement(value: () => HTMLAnchorElement): Self = StObject.set(x, "get_linkElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_tooltip(value: () => String): Self = StObject.set(x, "get_tooltip", js.Any.fromFunction0(value))
+    inline def setGet_tooltip(value: () => String): Self = StObject.set(x, "get_tooltip", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+    inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: HtmlBuilder => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: HtmlBuilder => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_displayName(value: String => String): Self = StObject.set(x, "set_displayName", js.Any.fromFunction1(value))
+    inline def setSet_displayName(value: String => String): Self = StObject.set(x, "set_displayName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_elementIDPrefix(value: String => String): Self = StObject.set(x, "set_elementIDPrefix", js.Any.fromFunction1(value))
+    inline def setSet_elementIDPrefix(value: String => String): Self = StObject.set(x, "set_elementIDPrefix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_isDropDownCommand(value: Boolean => Boolean): Self = StObject.set(x, "set_isDropDownCommand", js.Any.fromFunction1(value))
+    inline def setSet_isDropDownCommand(value: Boolean => Boolean): Self = StObject.set(x, "set_isDropDownCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_isEnabled(value: Boolean => Boolean): Self = StObject.set(x, "set_isEnabled", js.Any.fromFunction1(value))
+    inline def setSet_isEnabled(value: Boolean => Boolean): Self = StObject.set(x, "set_isEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_tooltip(value: String => String): Self = StObject.set(x, "set_tooltip", js.Any.fromFunction1(value))
+    inline def setSet_tooltip(value: String => String): Self = StObject.set(x, "set_tooltip", js.Any.fromFunction1(value))
   }
 }

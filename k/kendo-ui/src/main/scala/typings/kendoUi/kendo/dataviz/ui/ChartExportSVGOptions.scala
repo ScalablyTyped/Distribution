@@ -10,19 +10,15 @@ trait ChartExportSVGOptions extends StObject {
 }
 object ChartExportSVGOptions {
   
-  @scala.inline
-  def apply(): ChartExportSVGOptions = {
+  inline def apply(): ChartExportSVGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartExportSVGOptions]
   }
   
-  @scala.inline
-  implicit class ChartExportSVGOptionsMutableBuilder[Self <: ChartExportSVGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartExportSVGOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

@@ -22,16 +22,13 @@ trait ComposeActionResponse extends StObject {
 }
 object ComposeActionResponse {
   
-  @scala.inline
-  def apply(printJson: () => String): ComposeActionResponse = {
+  inline def apply(printJson: () => String): ComposeActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
     __obj.asInstanceOf[ComposeActionResponse]
   }
   
-  @scala.inline
-  implicit class ComposeActionResponseMutableBuilder[Self <: ComposeActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ComposeActionResponse](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

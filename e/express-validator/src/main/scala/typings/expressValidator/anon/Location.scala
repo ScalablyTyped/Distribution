@@ -24,8 +24,7 @@ trait Location
 }
 object Location {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     location: Unit,
     msg: js.Any,
     nestedErrors: js.Array[
@@ -37,31 +36,24 @@ object Location {
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Unit): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Unit): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsg(value: js.Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: js.Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedErrors(
+    inline def setNestedErrors(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
         ]
     ): Self = StObject.set(x, "nestedErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedErrorsVarargs(
+    inline def setNestedErrorsVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object)*
     ): Self = StObject.set(x, "nestedErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setParam(value: _error): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: _error): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

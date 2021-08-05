@@ -62,8 +62,7 @@ trait Tab
 }
 object Tab {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTabStateChange: ContextSensitiveHandler => Unit,
     getDisplayState: () => DisplayState,
     getLabel: () => String,
@@ -81,28 +80,20 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  @scala.inline
-  implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+  extension [Self <: Tab](x: Self) {
     
-    @scala.inline
-    def setAddTabStateChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addTabStateChange", js.Any.fromFunction1(value))
+    inline def setAddTabStateChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addTabStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDisplayState(value: () => DisplayState): Self = StObject.set(x, "getDisplayState", js.Any.fromFunction0(value))
+    inline def setGetDisplayState(value: () => DisplayState): Self = StObject.set(x, "getDisplayState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParent(value: () => Ui): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => Ui): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveTabStateChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeTabStateChange", js.Any.fromFunction1(value))
+    inline def setRemoveTabStateChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeTabStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSections(value: ItemCollection[Section]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: ItemCollection[Section]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDisplayState(value: DisplayState => Unit): Self = StObject.set(x, "setDisplayState", js.Any.fromFunction1(value))
+    inline def setSetDisplayState(value: DisplayState => Unit): Self = StObject.set(x, "setDisplayState", js.Any.fromFunction1(value))
   }
 }

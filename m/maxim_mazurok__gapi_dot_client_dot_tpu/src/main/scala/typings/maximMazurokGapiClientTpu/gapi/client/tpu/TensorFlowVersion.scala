@@ -14,25 +14,19 @@ trait TensorFlowVersion extends StObject {
 }
 object TensorFlowVersion {
   
-  @scala.inline
-  def apply(): TensorFlowVersion = {
+  inline def apply(): TensorFlowVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TensorFlowVersion]
   }
   
-  @scala.inline
-  implicit class TensorFlowVersionMutableBuilder[Self <: TensorFlowVersion] (val x: Self) extends AnyVal {
+  extension [Self <: TensorFlowVersion](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

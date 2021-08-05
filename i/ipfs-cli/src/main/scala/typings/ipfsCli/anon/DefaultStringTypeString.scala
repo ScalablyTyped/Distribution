@@ -12,20 +12,16 @@ trait DefaultStringTypeString extends StObject {
 }
 object DefaultStringTypeString {
   
-  @scala.inline
-  def apply(default: String, `type`: String): DefaultStringTypeString = {
+  inline def apply(default: String, `type`: String): DefaultStringTypeString = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultStringTypeString]
   }
   
-  @scala.inline
-  implicit class DefaultStringTypeStringMutableBuilder[Self <: DefaultStringTypeString] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultStringTypeString](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

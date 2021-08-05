@@ -10,16 +10,10 @@ object initialsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInitials(displayName: String, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getInitials(displayName: String, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getInitials(displayName: Null, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getInitials(displayName: Null, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getInitials(displayName: Unit, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getInitials(displayName: Unit, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getInitials(displayName: String, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getInitials(displayName: String, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getInitials(displayName: Null, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getInitials(displayName: Null, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getInitials(displayName: Unit, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getInitials(displayName: Unit, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
 }

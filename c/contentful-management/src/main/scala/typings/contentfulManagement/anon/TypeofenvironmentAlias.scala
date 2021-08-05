@@ -17,8 +17,7 @@ trait TypeofenvironmentAlias extends StObject {
 }
 object TypeofenvironmentAlias {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapEnvironmentAlias: (AxiosInstance, EnvironmentAliasProps) => EnvironmentAlias,
     wrapEnvironmentAliasCollection: (AxiosInstance, CollectionProp[EnvironmentAliasProps]) => Collection[EnvironmentAlias, EnvironmentAliasProps]
   ): TypeofenvironmentAlias = {
@@ -26,14 +25,11 @@ object TypeofenvironmentAlias {
     __obj.asInstanceOf[TypeofenvironmentAlias]
   }
   
-  @scala.inline
-  implicit class TypeofenvironmentAliasMutableBuilder[Self <: TypeofenvironmentAlias] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofenvironmentAlias](x: Self) {
     
-    @scala.inline
-    def setWrapEnvironmentAlias(value: (AxiosInstance, EnvironmentAliasProps) => EnvironmentAlias): Self = StObject.set(x, "wrapEnvironmentAlias", js.Any.fromFunction2(value))
+    inline def setWrapEnvironmentAlias(value: (AxiosInstance, EnvironmentAliasProps) => EnvironmentAlias): Self = StObject.set(x, "wrapEnvironmentAlias", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapEnvironmentAliasCollection(
+    inline def setWrapEnvironmentAliasCollection(
       value: (AxiosInstance, CollectionProp[EnvironmentAliasProps]) => Collection[EnvironmentAlias, EnvironmentAliasProps]
     ): Self = StObject.set(x, "wrapEnvironmentAliasCollection", js.Any.fromFunction2(value))
   }

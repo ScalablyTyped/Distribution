@@ -22,8 +22,7 @@ trait Verification extends StObject {
 }
 object Verification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: EmailName,
     comment_count: Double,
     committer: EmailName,
@@ -36,28 +35,20 @@ object Verification {
     __obj.asInstanceOf[Verification]
   }
   
-  @scala.inline
-  implicit class VerificationMutableBuilder[Self <: Verification] (val x: Self) extends AnyVal {
+  extension [Self <: Verification](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: EmailName): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: EmailName): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+    inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitter(value: EmailName): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: EmailName): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: ShaUrl): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: ShaUrl): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

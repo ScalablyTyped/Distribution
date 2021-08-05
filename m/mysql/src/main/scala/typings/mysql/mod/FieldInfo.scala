@@ -12,8 +12,7 @@ trait FieldInfo
 }
 object FieldInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     catalog: String,
     charsetNr: Double,
     db: String,
@@ -33,10 +32,8 @@ object FieldInfo {
     __obj.asInstanceOf[FieldInfo]
   }
   
-  @scala.inline
-  implicit class FieldInfoMutableBuilder[Self <: FieldInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FieldInfo](x: Self) {
     
-    @scala.inline
-    def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

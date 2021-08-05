@@ -23,25 +23,19 @@ trait AntennaUplinkConfig extends StObject {
 }
 object AntennaUplinkConfig {
   
-  @scala.inline
-  def apply(spectrumConfig: UplinkSpectrumConfig, targetEirp: Eirp): AntennaUplinkConfig = {
+  inline def apply(spectrumConfig: UplinkSpectrumConfig, targetEirp: Eirp): AntennaUplinkConfig = {
     val __obj = js.Dynamic.literal(spectrumConfig = spectrumConfig.asInstanceOf[js.Any], targetEirp = targetEirp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntennaUplinkConfig]
   }
   
-  @scala.inline
-  implicit class AntennaUplinkConfigMutableBuilder[Self <: AntennaUplinkConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AntennaUplinkConfig](x: Self) {
     
-    @scala.inline
-    def setSpectrumConfig(value: UplinkSpectrumConfig): Self = StObject.set(x, "spectrumConfig", value.asInstanceOf[js.Any])
+    inline def setSpectrumConfig(value: UplinkSpectrumConfig): Self = StObject.set(x, "spectrumConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetEirp(value: Eirp): Self = StObject.set(x, "targetEirp", value.asInstanceOf[js.Any])
+    inline def setTargetEirp(value: Eirp): Self = StObject.set(x, "targetEirp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmitDisabled(value: Boolean): Self = StObject.set(x, "transmitDisabled", value.asInstanceOf[js.Any])
+    inline def setTransmitDisabled(value: Boolean): Self = StObject.set(x, "transmitDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmitDisabledUndefined: Self = StObject.set(x, "transmitDisabled", js.undefined)
+    inline def setTransmitDisabledUndefined: Self = StObject.set(x, "transmitDisabled", js.undefined)
   }
 }

@@ -50,36 +50,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _KeyToDeclaration[K /* <: options | tsconfig | inputFiles | mode | includeDeclarations | entryPoint | exclude | externalPattern | excludeExternals | excludeNotExported | excludePrivate | excludeProtected | excludeNotDocumented | ignoreCompilerErrors | disableSources | includes | media | out | json | theme | name | includeVersion | excludeTags | readme | defaultCategory | categoryOrder | categorizeByGroup | gitRevision | gitRemote | gaID | gaSite | hideGenerator | toc | disableOutputCheck | help | version | plugin | logger | listInvalidSymbolLinks */] extends StObject
 object _KeyToDeclaration {
   
-  @scala.inline
-  def ArrayDeclarationOption(help: String, name: String, `type`: Array): typings.typedoc.optionsDeclarationMod.ArrayDeclarationOption = {
+  inline def ArrayDeclarationOption(help: String, name: String, `type`: Array): typings.typedoc.optionsDeclarationMod.ArrayDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.optionsDeclarationMod.ArrayDeclarationOption]
   }
   
-  @scala.inline
-  def BooleanDeclarationOption(help: String, name: String, `type`: Boolean): typings.typedoc.optionsDeclarationMod.BooleanDeclarationOption = {
+  inline def BooleanDeclarationOption(help: String, name: String, `type`: Boolean): typings.typedoc.optionsDeclarationMod.BooleanDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.optionsDeclarationMod.BooleanDeclarationOption]
   }
   
-  @scala.inline
-  def MixedDeclarationOption(help: String, name: String, `type`: Mixed): typings.typedoc.optionsDeclarationMod.MixedDeclarationOption = {
+  inline def MixedDeclarationOption(help: String, name: String, `type`: Mixed): typings.typedoc.optionsDeclarationMod.MixedDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.optionsDeclarationMod.MixedDeclarationOption]
   }
   
-  @scala.inline
-  def NumberDeclarationOption(help: String, name: String, `type`: Number): typings.typedoc.optionsDeclarationMod.NumberDeclarationOption = {
+  inline def NumberDeclarationOption(help: String, name: String, `type`: Number): typings.typedoc.optionsDeclarationMod.NumberDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.optionsDeclarationMod.NumberDeclarationOption]
   }
   
-  @scala.inline
-  def StringDeclarationOption(help: String, name: String): typings.typedoc.optionsDeclarationMod.StringDeclarationOption = {
+  inline def StringDeclarationOption(help: String, name: String): typings.typedoc.optionsDeclarationMod.StringDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.optionsDeclarationMod.StringDeclarationOption]
   }

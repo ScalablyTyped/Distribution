@@ -10,8 +10,7 @@ object windowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def window[T](
+  inline def window[T](
     windowBoundaries: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(windowBoundaries.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

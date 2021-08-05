@@ -13,8 +13,7 @@ object useRippleHandlersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useRippleHandlers[E /* <: HTMLElement */](hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple: Options[E]): MergableRippleHandlers[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleHandlers")(hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple.asInstanceOf[js.Any]).asInstanceOf[MergableRippleHandlers[E]]
+  inline def useRippleHandlers[E /* <: HTMLElement */](hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple: Options[E]): MergableRippleHandlers[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleHandlers")(hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple.asInstanceOf[js.Any]).asInstanceOf[MergableRippleHandlers[E]]
   
   trait Options[E /* <: HTMLElement */] extends StObject {
     
@@ -34,47 +33,34 @@ object useRippleHandlersMod {
   }
   object Options {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](cancel: Boolean => Unit, create: RippleEvent[E] => Unit, release: RippleEvent[E] => Unit): Options[E] = {
+    inline def apply[E /* <: HTMLElement */](cancel: Boolean => Unit, create: RippleEvent[E] => Unit, release: RippleEvent[E] => Unit): Options[E] = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), release = js.Any.fromFunction1(release))
       __obj.asInstanceOf[Options[E]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], E /* <: HTMLElement */] (val x: Self & Options[E]) extends AnyVal {
+    extension [Self <: Options[?], E /* <: HTMLElement */](x: Self & Options[E]) {
       
-      @scala.inline
-      def setCancel(value: Boolean => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: Boolean => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreate(value: RippleEvent[E] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: RippleEvent[E] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
+      inline def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
+      inline def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
       
-      @scala.inline
-      def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
+      inline def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
+      inline def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+      inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
       
-      @scala.inline
-      def setRelease(value: RippleEvent[E] => Unit): Self = StObject.set(x, "release", js.Any.fromFunction1(value))
+      inline def setRelease(value: RippleEvent[E] => Unit): Self = StObject.set(x, "release", js.Any.fromFunction1(value))
     }
   }
 }

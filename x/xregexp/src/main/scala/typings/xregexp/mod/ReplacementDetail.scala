@@ -27,30 +27,23 @@ trait ReplacementDetail extends StObject {
 }
 object ReplacementDetail {
   
-  @scala.inline
-  def apply(`0`: Pattern, `1`: ReplacementValue): ReplacementDetail = {
+  inline def apply(`0`: Pattern, `1`: ReplacementValue): ReplacementDetail = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplacementDetail]
   }
   
-  @scala.inline
-  implicit class ReplacementDetailMutableBuilder[Self <: ReplacementDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ReplacementDetail](x: Self) {
     
-    @scala.inline
-    def set0(value: Pattern): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: Pattern): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1(value: ReplacementValue): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: ReplacementValue): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2(value: MatchScope): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: MatchScope): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2Null: Self = StObject.set(x, "2", null)
+    inline def set2Null: Self = StObject.set(x, "2", null)
     
-    @scala.inline
-    def set2Undefined: Self = StObject.set(x, "2", js.undefined)
+    inline def set2Undefined: Self = StObject.set(x, "2", js.undefined)
   }
 }

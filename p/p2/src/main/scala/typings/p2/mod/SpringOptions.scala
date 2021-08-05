@@ -20,49 +20,35 @@ trait SpringOptions extends StObject {
 }
 object SpringOptions {
   
-  @scala.inline
-  def apply(): SpringOptions = {
+  inline def apply(): SpringOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpringOptions]
   }
   
-  @scala.inline
-  implicit class SpringOptionsMutableBuilder[Self <: SpringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SpringOptions](x: Self) {
     
-    @scala.inline
-    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+    inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+    inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
-    @scala.inline
-    def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
+    inline def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
     
-    @scala.inline
-    def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
+    inline def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
     
-    @scala.inline
-    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+    inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+    inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
-    @scala.inline
-    def setWorldAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorA", value.asInstanceOf[js.Any])
+    inline def setWorldAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldAnchorAUndefined: Self = StObject.set(x, "worldAnchorA", js.undefined)
+    inline def setWorldAnchorAUndefined: Self = StObject.set(x, "worldAnchorA", js.undefined)
     
-    @scala.inline
-    def setWorldAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorB", value.asInstanceOf[js.Any])
+    inline def setWorldAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldAnchorBUndefined: Self = StObject.set(x, "worldAnchorB", js.undefined)
+    inline def setWorldAnchorBUndefined: Self = StObject.set(x, "worldAnchorB", js.undefined)
   }
 }

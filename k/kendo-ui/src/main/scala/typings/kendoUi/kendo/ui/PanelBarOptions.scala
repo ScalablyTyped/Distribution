@@ -49,133 +49,91 @@ trait PanelBarOptions extends StObject {
 }
 object PanelBarOptions {
   
-  @scala.inline
-  def apply(): PanelBarOptions = {
+  inline def apply(): PanelBarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanelBarOptions]
   }
   
-  @scala.inline
-  implicit class PanelBarOptionsMutableBuilder[Self <: PanelBarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PanelBarOptions](x: Self) {
     
-    @scala.inline
-    def setActivate(value: /* e */ PanelBarActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+    inline def setActivate(value: /* e */ PanelBarActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setAnimation(value: Boolean | PanelBarAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PanelBarAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
+    inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
+    inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
-    @scala.inline
-    def setCollapse(value: /* e */ PanelBarCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
+    inline def setCollapse(value: /* e */ PanelBarCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setContentLoad(value: /* e */ PanelBarContentLoadEvent => Unit): Self = StObject.set(x, "contentLoad", js.Any.fromFunction1(value))
+    inline def setContentLoad(value: /* e */ PanelBarContentLoadEvent => Unit): Self = StObject.set(x, "contentLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
+    inline def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
     
-    @scala.inline
-    def setContentUrls(value: js.Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
+    inline def setContentUrls(value: js.Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlsUndefined: Self = StObject.set(x, "contentUrls", js.undefined)
+    inline def setContentUrlsUndefined: Self = StObject.set(x, "contentUrls", js.undefined)
     
-    @scala.inline
-    def setDataBound(value: /* e */ PanelBarDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    inline def setDataBound(value: /* e */ PanelBarDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    @scala.inline
-    def setDataImageUrlField(value: String): Self = StObject.set(x, "dataImageUrlField", value.asInstanceOf[js.Any])
+    inline def setDataImageUrlField(value: String): Self = StObject.set(x, "dataImageUrlField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
+    inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataSpriteCssClassField(value: String): Self = StObject.set(x, "dataSpriteCssClassField", value.asInstanceOf[js.Any])
+    inline def setDataSpriteCssClassField(value: String): Self = StObject.set(x, "dataSpriteCssClassField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
+    inline def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
     
-    @scala.inline
-    def setDataTextField(value: String | js.Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    inline def setDataTextField(value: String | js.Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
-    @scala.inline
-    def setDataUrlField(value: String): Self = StObject.set(x, "dataUrlField", value.asInstanceOf[js.Any])
+    inline def setDataUrlField(value: String): Self = StObject.set(x, "dataUrlField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
+    inline def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
     
-    @scala.inline
-    def setError(value: /* e */ PanelBarErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* e */ PanelBarErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExpand(value: /* e */ PanelBarExpandEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: /* e */ PanelBarExpandEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandMode(value: String): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
+    inline def setExpandMode(value: String): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandModeUndefined: Self = StObject.set(x, "expandMode", js.undefined)
+    inline def setExpandModeUndefined: Self = StObject.set(x, "expandMode", js.undefined)
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
+    inline def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
+    inline def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
     
-    @scala.inline
-    def setMessages(value: PanelBarMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: PanelBarMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSelect(value: /* e */ PanelBarSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* e */ PanelBarSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

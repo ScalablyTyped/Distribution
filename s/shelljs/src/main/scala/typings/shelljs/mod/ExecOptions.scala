@@ -43,37 +43,27 @@ trait ExecOptions
 }
 object ExecOptions {
   
-  @scala.inline
-  def apply(): ExecOptions = {
+  inline def apply(): ExecOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecOptions]
   }
   
-  @scala.inline
-  implicit class ExecOptionsMutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecOptions](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+    inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+    inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

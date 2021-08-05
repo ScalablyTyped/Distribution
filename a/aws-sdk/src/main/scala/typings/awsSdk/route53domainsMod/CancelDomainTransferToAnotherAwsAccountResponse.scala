@@ -13,19 +13,15 @@ trait CancelDomainTransferToAnotherAwsAccountResponse extends StObject {
 }
 object CancelDomainTransferToAnotherAwsAccountResponse {
   
-  @scala.inline
-  def apply(): CancelDomainTransferToAnotherAwsAccountResponse = {
+  inline def apply(): CancelDomainTransferToAnotherAwsAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelDomainTransferToAnotherAwsAccountResponse]
   }
   
-  @scala.inline
-  implicit class CancelDomainTransferToAnotherAwsAccountResponseMutableBuilder[Self <: CancelDomainTransferToAnotherAwsAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelDomainTransferToAnotherAwsAccountResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

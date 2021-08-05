@@ -60,52 +60,37 @@ trait WCSLayerProperties
 }
 object WCSLayerProperties {
   
-  @scala.inline
-  def apply(): WCSLayerProperties = {
+  inline def apply(): WCSLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WCSLayerProperties]
   }
   
-  @scala.inline
-  implicit class WCSLayerPropertiesMutableBuilder[Self <: WCSLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WCSLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCoverageId(value: String): Self = StObject.set(x, "coverageId", value.asInstanceOf[js.Any])
+    inline def setCoverageId(value: String): Self = StObject.set(x, "coverageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageIdUndefined: Self = StObject.set(x, "coverageId", js.undefined)
+    inline def setCoverageIdUndefined: Self = StObject.set(x, "coverageId", js.undefined)
     
-    @scala.inline
-    def setCustomParameters(value: js.Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
+    inline def setCustomParameters(value: js.Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
+    inline def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
     
-    @scala.inline
-    def setInterpolation(value: nearest | bilinear | cubic | majority): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: nearest | bilinear | cubic | majority): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setMultidimensionalDefinition(value: js.Array[DimensionalDefinitionProperties]): Self = StObject.set(x, "multidimensionalDefinition", value.asInstanceOf[js.Any])
+    inline def setMultidimensionalDefinition(value: js.Array[DimensionalDefinitionProperties]): Self = StObject.set(x, "multidimensionalDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultidimensionalDefinitionUndefined: Self = StObject.set(x, "multidimensionalDefinition", js.undefined)
+    inline def setMultidimensionalDefinitionUndefined: Self = StObject.set(x, "multidimensionalDefinition", js.undefined)
     
-    @scala.inline
-    def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value :_*))
+    inline def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderer(value: ClassBreaksRendererProperties | RasterStretchRendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: ClassBreaksRendererProperties | RasterStretchRendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

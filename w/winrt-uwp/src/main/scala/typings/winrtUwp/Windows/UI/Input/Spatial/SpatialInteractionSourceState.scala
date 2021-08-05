@@ -22,8 +22,7 @@ trait SpatialInteractionSourceState extends StObject {
 }
 object SpatialInteractionSourceState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isPressed: js.Any,
     properties: js.Any,
     source: js.Any,
@@ -34,22 +33,16 @@ object SpatialInteractionSourceState {
     __obj.asInstanceOf[SpatialInteractionSourceState]
   }
   
-  @scala.inline
-  implicit class SpatialInteractionSourceStateMutableBuilder[Self <: SpatialInteractionSourceState] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialInteractionSourceState](x: Self) {
     
-    @scala.inline
-    def setIsPressed(value: js.Any): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
+    inline def setIsPressed(value: js.Any): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
+    inline def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
   }
 }

@@ -525,780 +525,521 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlBuiltInDialog extends StObject
 object XlBuiltInDialog {
   
-  @scala.inline
-  def _xlDialogChartSourceData: `541` = 541.asInstanceOf[`541`]
+  inline def _xlDialogChartSourceData: `541` = 541.asInstanceOf[`541`]
   
-  @scala.inline
-  def _xlDialogPhonetic: `538` = 538.asInstanceOf[`538`]
+  inline def _xlDialogPhonetic: `538` = 538.asInstanceOf[`538`]
   
-  @scala.inline
-  def xlDialogActivate: `103` = 103.asInstanceOf[`103`]
+  inline def xlDialogActivate: `103` = 103.asInstanceOf[`103`]
   
-  @scala.inline
-  def xlDialogActiveCellFont: `476` = 476.asInstanceOf[`476`]
+  inline def xlDialogActiveCellFont: `476` = 476.asInstanceOf[`476`]
   
-  @scala.inline
-  def xlDialogAddChartAutoformat: `390` = 390.asInstanceOf[`390`]
+  inline def xlDialogAddChartAutoformat: `390` = 390.asInstanceOf[`390`]
   
-  @scala.inline
-  def xlDialogAddinManager: `321` = 321.asInstanceOf[`321`]
+  inline def xlDialogAddinManager: `321` = 321.asInstanceOf[`321`]
   
-  @scala.inline
-  def xlDialogAlignment: `43` = 43.asInstanceOf[`43`]
+  inline def xlDialogAlignment: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def xlDialogAppMove: `170` = 170.asInstanceOf[`170`]
+  inline def xlDialogAppMove: `170` = 170.asInstanceOf[`170`]
   
-  @scala.inline
-  def xlDialogAppSize: `171` = 171.asInstanceOf[`171`]
+  inline def xlDialogAppSize: `171` = 171.asInstanceOf[`171`]
   
-  @scala.inline
-  def xlDialogApplyNames: `133` = 133.asInstanceOf[`133`]
+  inline def xlDialogApplyNames: `133` = 133.asInstanceOf[`133`]
   
-  @scala.inline
-  def xlDialogApplyStyle: `212` = 212.asInstanceOf[`212`]
+  inline def xlDialogApplyStyle: `212` = 212.asInstanceOf[`212`]
   
-  @scala.inline
-  def xlDialogArrangeAll: `12` = 12.asInstanceOf[`12`]
+  inline def xlDialogArrangeAll: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def xlDialogAssignToObject: `213` = 213.asInstanceOf[`213`]
+  inline def xlDialogAssignToObject: `213` = 213.asInstanceOf[`213`]
   
-  @scala.inline
-  def xlDialogAssignToTool: `293` = 293.asInstanceOf[`293`]
+  inline def xlDialogAssignToTool: `293` = 293.asInstanceOf[`293`]
   
-  @scala.inline
-  def xlDialogAttachText: `80` = 80.asInstanceOf[`80`]
+  inline def xlDialogAttachText: `80` = 80.asInstanceOf[`80`]
   
-  @scala.inline
-  def xlDialogAttachToolbars: `323` = 323.asInstanceOf[`323`]
+  inline def xlDialogAttachToolbars: `323` = 323.asInstanceOf[`323`]
   
-  @scala.inline
-  def xlDialogAutoCorrect: `485` = 485.asInstanceOf[`485`]
+  inline def xlDialogAutoCorrect: `485` = 485.asInstanceOf[`485`]
   
-  @scala.inline
-  def xlDialogAxes: `78` = 78.asInstanceOf[`78`]
+  inline def xlDialogAxes: `78` = 78.asInstanceOf[`78`]
   
-  @scala.inline
-  def xlDialogBorder: `45` = 45.asInstanceOf[`45`]
+  inline def xlDialogBorder: `45` = 45.asInstanceOf[`45`]
   
-  @scala.inline
-  def xlDialogCalculation: `32` = 32.asInstanceOf[`32`]
+  inline def xlDialogCalculation: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def xlDialogCellProtection: `46` = 46.asInstanceOf[`46`]
+  inline def xlDialogCellProtection: `46` = 46.asInstanceOf[`46`]
   
-  @scala.inline
-  def xlDialogChangeLink: `166` = 166.asInstanceOf[`166`]
+  inline def xlDialogChangeLink: `166` = 166.asInstanceOf[`166`]
   
-  @scala.inline
-  def xlDialogChartAddData: `392` = 392.asInstanceOf[`392`]
+  inline def xlDialogChartAddData: `392` = 392.asInstanceOf[`392`]
   
-  @scala.inline
-  def xlDialogChartLocation: `527` = 527.asInstanceOf[`527`]
+  inline def xlDialogChartLocation: `527` = 527.asInstanceOf[`527`]
   
-  @scala.inline
-  def xlDialogChartOptionsDataLabelMultiple: `724` = 724.asInstanceOf[`724`]
+  inline def xlDialogChartOptionsDataLabelMultiple: `724` = 724.asInstanceOf[`724`]
   
-  @scala.inline
-  def xlDialogChartOptionsDataLabels: `505` = 505.asInstanceOf[`505`]
+  inline def xlDialogChartOptionsDataLabels: `505` = 505.asInstanceOf[`505`]
   
-  @scala.inline
-  def xlDialogChartOptionsDataTable: `506` = 506.asInstanceOf[`506`]
+  inline def xlDialogChartOptionsDataTable: `506` = 506.asInstanceOf[`506`]
   
-  @scala.inline
-  def xlDialogChartSourceData: `540` = 540.asInstanceOf[`540`]
+  inline def xlDialogChartSourceData: `540` = 540.asInstanceOf[`540`]
   
-  @scala.inline
-  def xlDialogChartTrend: `350` = 350.asInstanceOf[`350`]
+  inline def xlDialogChartTrend: `350` = 350.asInstanceOf[`350`]
   
-  @scala.inline
-  def xlDialogChartType: `526` = 526.asInstanceOf[`526`]
+  inline def xlDialogChartType: `526` = 526.asInstanceOf[`526`]
   
-  @scala.inline
-  def xlDialogChartWizard: `288` = 288.asInstanceOf[`288`]
+  inline def xlDialogChartWizard: `288` = 288.asInstanceOf[`288`]
   
-  @scala.inline
-  def xlDialogCheckboxProperties: `435` = 435.asInstanceOf[`435`]
+  inline def xlDialogCheckboxProperties: `435` = 435.asInstanceOf[`435`]
   
-  @scala.inline
-  def xlDialogClear: `52` = 52.asInstanceOf[`52`]
+  inline def xlDialogClear: `52` = 52.asInstanceOf[`52`]
   
-  @scala.inline
-  def xlDialogColorPalette: `161` = 161.asInstanceOf[`161`]
+  inline def xlDialogColorPalette: `161` = 161.asInstanceOf[`161`]
   
-  @scala.inline
-  def xlDialogColumnWidth: `47` = 47.asInstanceOf[`47`]
+  inline def xlDialogColumnWidth: `47` = 47.asInstanceOf[`47`]
   
-  @scala.inline
-  def xlDialogCombination: `73` = 73.asInstanceOf[`73`]
+  inline def xlDialogCombination: `73` = 73.asInstanceOf[`73`]
   
-  @scala.inline
-  def xlDialogConditionalFormatting: `583` = 583.asInstanceOf[`583`]
+  inline def xlDialogConditionalFormatting: `583` = 583.asInstanceOf[`583`]
   
-  @scala.inline
-  def xlDialogConsolidate: `191` = 191.asInstanceOf[`191`]
+  inline def xlDialogConsolidate: `191` = 191.asInstanceOf[`191`]
   
-  @scala.inline
-  def xlDialogCopyChart: `147` = 147.asInstanceOf[`147`]
+  inline def xlDialogCopyChart: `147` = 147.asInstanceOf[`147`]
   
-  @scala.inline
-  def xlDialogCopyPicture: `108` = 108.asInstanceOf[`108`]
+  inline def xlDialogCopyPicture: `108` = 108.asInstanceOf[`108`]
   
-  @scala.inline
-  def xlDialogCreateList: `796` = 796.asInstanceOf[`796`]
+  inline def xlDialogCreateList: `796` = 796.asInstanceOf[`796`]
   
-  @scala.inline
-  def xlDialogCreateNames: `62` = 62.asInstanceOf[`62`]
+  inline def xlDialogCreateNames: `62` = 62.asInstanceOf[`62`]
   
-  @scala.inline
-  def xlDialogCreatePublisher: `217` = 217.asInstanceOf[`217`]
+  inline def xlDialogCreatePublisher: `217` = 217.asInstanceOf[`217`]
   
-  @scala.inline
-  def xlDialogCustomViews: `493` = 493.asInstanceOf[`493`]
+  inline def xlDialogCustomViews: `493` = 493.asInstanceOf[`493`]
   
-  @scala.inline
-  def xlDialogCustomizeToolbar: `276` = 276.asInstanceOf[`276`]
+  inline def xlDialogCustomizeToolbar: `276` = 276.asInstanceOf[`276`]
   
-  @scala.inline
-  def xlDialogDataDelete: `36` = 36.asInstanceOf[`36`]
+  inline def xlDialogDataDelete: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def xlDialogDataLabel: `379` = 379.asInstanceOf[`379`]
+  inline def xlDialogDataLabel: `379` = 379.asInstanceOf[`379`]
   
-  @scala.inline
-  def xlDialogDataLabelMultiple: `723` = 723.asInstanceOf[`723`]
+  inline def xlDialogDataLabelMultiple: `723` = 723.asInstanceOf[`723`]
   
-  @scala.inline
-  def xlDialogDataSeries: `40` = 40.asInstanceOf[`40`]
+  inline def xlDialogDataSeries: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def xlDialogDataValidation: `525` = 525.asInstanceOf[`525`]
+  inline def xlDialogDataValidation: `525` = 525.asInstanceOf[`525`]
   
-  @scala.inline
-  def xlDialogDefineName: `61` = 61.asInstanceOf[`61`]
+  inline def xlDialogDefineName: `61` = 61.asInstanceOf[`61`]
   
-  @scala.inline
-  def xlDialogDefineStyle: `229` = 229.asInstanceOf[`229`]
+  inline def xlDialogDefineStyle: `229` = 229.asInstanceOf[`229`]
   
-  @scala.inline
-  def xlDialogDeleteFormat: `111` = 111.asInstanceOf[`111`]
+  inline def xlDialogDeleteFormat: `111` = 111.asInstanceOf[`111`]
   
-  @scala.inline
-  def xlDialogDeleteName: `110` = 110.asInstanceOf[`110`]
+  inline def xlDialogDeleteName: `110` = 110.asInstanceOf[`110`]
   
-  @scala.inline
-  def xlDialogDemote: `203` = 203.asInstanceOf[`203`]
+  inline def xlDialogDemote: `203` = 203.asInstanceOf[`203`]
   
-  @scala.inline
-  def xlDialogDisplay: `27` = 27.asInstanceOf[`27`]
+  inline def xlDialogDisplay: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def xlDialogDocumentInspector: `862` = 862.asInstanceOf[`862`]
+  inline def xlDialogDocumentInspector: `862` = 862.asInstanceOf[`862`]
   
-  @scala.inline
-  def xlDialogEditColor: `223` = 223.asInstanceOf[`223`]
+  inline def xlDialogEditColor: `223` = 223.asInstanceOf[`223`]
   
-  @scala.inline
-  def xlDialogEditDelete: `54` = 54.asInstanceOf[`54`]
+  inline def xlDialogEditDelete: `54` = 54.asInstanceOf[`54`]
   
-  @scala.inline
-  def xlDialogEditSeries: `228` = 228.asInstanceOf[`228`]
+  inline def xlDialogEditSeries: `228` = 228.asInstanceOf[`228`]
   
-  @scala.inline
-  def xlDialogEditboxProperties: `438` = 438.asInstanceOf[`438`]
+  inline def xlDialogEditboxProperties: `438` = 438.asInstanceOf[`438`]
   
-  @scala.inline
-  def xlDialogEditionOptions: `251` = 251.asInstanceOf[`251`]
+  inline def xlDialogEditionOptions: `251` = 251.asInstanceOf[`251`]
   
-  @scala.inline
-  def xlDialogErrorChecking: `732` = 732.asInstanceOf[`732`]
+  inline def xlDialogErrorChecking: `732` = 732.asInstanceOf[`732`]
   
-  @scala.inline
-  def xlDialogErrorbarX: `463` = 463.asInstanceOf[`463`]
+  inline def xlDialogErrorbarX: `463` = 463.asInstanceOf[`463`]
   
-  @scala.inline
-  def xlDialogErrorbarY: `464` = 464.asInstanceOf[`464`]
+  inline def xlDialogErrorbarY: `464` = 464.asInstanceOf[`464`]
   
-  @scala.inline
-  def xlDialogEvaluateFormula: `709` = 709.asInstanceOf[`709`]
+  inline def xlDialogEvaluateFormula: `709` = 709.asInstanceOf[`709`]
   
-  @scala.inline
-  def xlDialogExternalDataProperties: `530` = 530.asInstanceOf[`530`]
+  inline def xlDialogExternalDataProperties: `530` = 530.asInstanceOf[`530`]
   
-  @scala.inline
-  def xlDialogExtract: `35` = 35.asInstanceOf[`35`]
+  inline def xlDialogExtract: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def xlDialogFileDelete: `6` = 6.asInstanceOf[`6`]
+  inline def xlDialogFileDelete: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlDialogFileSharing: `481` = 481.asInstanceOf[`481`]
+  inline def xlDialogFileSharing: `481` = 481.asInstanceOf[`481`]
   
-  @scala.inline
-  def xlDialogFillGroup: `200` = 200.asInstanceOf[`200`]
+  inline def xlDialogFillGroup: `200` = 200.asInstanceOf[`200`]
   
-  @scala.inline
-  def xlDialogFillWorkgroup: `301` = 301.asInstanceOf[`301`]
+  inline def xlDialogFillWorkgroup: `301` = 301.asInstanceOf[`301`]
   
-  @scala.inline
-  def xlDialogFilter: `447` = 447.asInstanceOf[`447`]
+  inline def xlDialogFilter: `447` = 447.asInstanceOf[`447`]
   
-  @scala.inline
-  def xlDialogFilterAdvanced: `370` = 370.asInstanceOf[`370`]
+  inline def xlDialogFilterAdvanced: `370` = 370.asInstanceOf[`370`]
   
-  @scala.inline
-  def xlDialogFindFile: `475` = 475.asInstanceOf[`475`]
+  inline def xlDialogFindFile: `475` = 475.asInstanceOf[`475`]
   
-  @scala.inline
-  def xlDialogFont: `26` = 26.asInstanceOf[`26`]
+  inline def xlDialogFont: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def xlDialogFontProperties: `381` = 381.asInstanceOf[`381`]
+  inline def xlDialogFontProperties: `381` = 381.asInstanceOf[`381`]
   
-  @scala.inline
-  def xlDialogFormatAuto: `269` = 269.asInstanceOf[`269`]
+  inline def xlDialogFormatAuto: `269` = 269.asInstanceOf[`269`]
   
-  @scala.inline
-  def xlDialogFormatChart: `465` = 465.asInstanceOf[`465`]
+  inline def xlDialogFormatChart: `465` = 465.asInstanceOf[`465`]
   
-  @scala.inline
-  def xlDialogFormatCharttype: `423` = 423.asInstanceOf[`423`]
+  inline def xlDialogFormatCharttype: `423` = 423.asInstanceOf[`423`]
   
-  @scala.inline
-  def xlDialogFormatFont: `150` = 150.asInstanceOf[`150`]
+  inline def xlDialogFormatFont: `150` = 150.asInstanceOf[`150`]
   
-  @scala.inline
-  def xlDialogFormatLegend: `88` = 88.asInstanceOf[`88`]
+  inline def xlDialogFormatLegend: `88` = 88.asInstanceOf[`88`]
   
-  @scala.inline
-  def xlDialogFormatMain: `225` = 225.asInstanceOf[`225`]
+  inline def xlDialogFormatMain: `225` = 225.asInstanceOf[`225`]
   
-  @scala.inline
-  def xlDialogFormatMove: `128` = 128.asInstanceOf[`128`]
+  inline def xlDialogFormatMove: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def xlDialogFormatNumber: `42` = 42.asInstanceOf[`42`]
+  inline def xlDialogFormatNumber: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def xlDialogFormatOverlay: `226` = 226.asInstanceOf[`226`]
+  inline def xlDialogFormatOverlay: `226` = 226.asInstanceOf[`226`]
   
-  @scala.inline
-  def xlDialogFormatSize: `129` = 129.asInstanceOf[`129`]
+  inline def xlDialogFormatSize: `129` = 129.asInstanceOf[`129`]
   
-  @scala.inline
-  def xlDialogFormatText: `89` = 89.asInstanceOf[`89`]
+  inline def xlDialogFormatText: `89` = 89.asInstanceOf[`89`]
   
-  @scala.inline
-  def xlDialogFormulaFind: `64` = 64.asInstanceOf[`64`]
+  inline def xlDialogFormulaFind: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def xlDialogFormulaGoto: `63` = 63.asInstanceOf[`63`]
+  inline def xlDialogFormulaGoto: `63` = 63.asInstanceOf[`63`]
   
-  @scala.inline
-  def xlDialogFormulaReplace: `130` = 130.asInstanceOf[`130`]
+  inline def xlDialogFormulaReplace: `130` = 130.asInstanceOf[`130`]
   
-  @scala.inline
-  def xlDialogFunctionWizard: `450` = 450.asInstanceOf[`450`]
+  inline def xlDialogFunctionWizard: `450` = 450.asInstanceOf[`450`]
   
-  @scala.inline
-  def xlDialogGallery3dArea: `193` = 193.asInstanceOf[`193`]
+  inline def xlDialogGallery3dArea: `193` = 193.asInstanceOf[`193`]
   
-  @scala.inline
-  def xlDialogGallery3dBar: `272` = 272.asInstanceOf[`272`]
+  inline def xlDialogGallery3dBar: `272` = 272.asInstanceOf[`272`]
   
-  @scala.inline
-  def xlDialogGallery3dColumn: `194` = 194.asInstanceOf[`194`]
+  inline def xlDialogGallery3dColumn: `194` = 194.asInstanceOf[`194`]
   
-  @scala.inline
-  def xlDialogGallery3dLine: `195` = 195.asInstanceOf[`195`]
+  inline def xlDialogGallery3dLine: `195` = 195.asInstanceOf[`195`]
   
-  @scala.inline
-  def xlDialogGallery3dPie: `196` = 196.asInstanceOf[`196`]
+  inline def xlDialogGallery3dPie: `196` = 196.asInstanceOf[`196`]
   
-  @scala.inline
-  def xlDialogGallery3dSurface: `273` = 273.asInstanceOf[`273`]
+  inline def xlDialogGallery3dSurface: `273` = 273.asInstanceOf[`273`]
   
-  @scala.inline
-  def xlDialogGalleryArea: `67` = 67.asInstanceOf[`67`]
+  inline def xlDialogGalleryArea: `67` = 67.asInstanceOf[`67`]
   
-  @scala.inline
-  def xlDialogGalleryBar: `68` = 68.asInstanceOf[`68`]
+  inline def xlDialogGalleryBar: `68` = 68.asInstanceOf[`68`]
   
-  @scala.inline
-  def xlDialogGalleryColumn: `69` = 69.asInstanceOf[`69`]
+  inline def xlDialogGalleryColumn: `69` = 69.asInstanceOf[`69`]
   
-  @scala.inline
-  def xlDialogGalleryCustom: `388` = 388.asInstanceOf[`388`]
+  inline def xlDialogGalleryCustom: `388` = 388.asInstanceOf[`388`]
   
-  @scala.inline
-  def xlDialogGalleryDoughnut: `344` = 344.asInstanceOf[`344`]
+  inline def xlDialogGalleryDoughnut: `344` = 344.asInstanceOf[`344`]
   
-  @scala.inline
-  def xlDialogGalleryLine: `70` = 70.asInstanceOf[`70`]
+  inline def xlDialogGalleryLine: `70` = 70.asInstanceOf[`70`]
   
-  @scala.inline
-  def xlDialogGalleryPie: `71` = 71.asInstanceOf[`71`]
+  inline def xlDialogGalleryPie: `71` = 71.asInstanceOf[`71`]
   
-  @scala.inline
-  def xlDialogGalleryRadar: `249` = 249.asInstanceOf[`249`]
+  inline def xlDialogGalleryRadar: `249` = 249.asInstanceOf[`249`]
   
-  @scala.inline
-  def xlDialogGalleryScatter: `72` = 72.asInstanceOf[`72`]
+  inline def xlDialogGalleryScatter: `72` = 72.asInstanceOf[`72`]
   
-  @scala.inline
-  def xlDialogGoalSeek: `198` = 198.asInstanceOf[`198`]
+  inline def xlDialogGoalSeek: `198` = 198.asInstanceOf[`198`]
   
-  @scala.inline
-  def xlDialogGridlines: `76` = 76.asInstanceOf[`76`]
+  inline def xlDialogGridlines: `76` = 76.asInstanceOf[`76`]
   
-  @scala.inline
-  def xlDialogImportTextFile: `666` = 666.asInstanceOf[`666`]
+  inline def xlDialogImportTextFile: `666` = 666.asInstanceOf[`666`]
   
-  @scala.inline
-  def xlDialogInsert: `55` = 55.asInstanceOf[`55`]
+  inline def xlDialogInsert: `55` = 55.asInstanceOf[`55`]
   
-  @scala.inline
-  def xlDialogInsertHyperlink: `596` = 596.asInstanceOf[`596`]
+  inline def xlDialogInsertHyperlink: `596` = 596.asInstanceOf[`596`]
   
-  @scala.inline
-  def xlDialogInsertNameLabel: `496` = 496.asInstanceOf[`496`]
+  inline def xlDialogInsertNameLabel: `496` = 496.asInstanceOf[`496`]
   
-  @scala.inline
-  def xlDialogInsertObject: `259` = 259.asInstanceOf[`259`]
+  inline def xlDialogInsertObject: `259` = 259.asInstanceOf[`259`]
   
-  @scala.inline
-  def xlDialogInsertPicture: `342` = 342.asInstanceOf[`342`]
+  inline def xlDialogInsertPicture: `342` = 342.asInstanceOf[`342`]
   
-  @scala.inline
-  def xlDialogInsertTitle: `380` = 380.asInstanceOf[`380`]
+  inline def xlDialogInsertTitle: `380` = 380.asInstanceOf[`380`]
   
-  @scala.inline
-  def xlDialogLabelProperties: `436` = 436.asInstanceOf[`436`]
+  inline def xlDialogLabelProperties: `436` = 436.asInstanceOf[`436`]
   
-  @scala.inline
-  def xlDialogListboxProperties: `437` = 437.asInstanceOf[`437`]
+  inline def xlDialogListboxProperties: `437` = 437.asInstanceOf[`437`]
   
-  @scala.inline
-  def xlDialogMacroOptions: `382` = 382.asInstanceOf[`382`]
+  inline def xlDialogMacroOptions: `382` = 382.asInstanceOf[`382`]
   
-  @scala.inline
-  def xlDialogMailEditMailer: `470` = 470.asInstanceOf[`470`]
+  inline def xlDialogMailEditMailer: `470` = 470.asInstanceOf[`470`]
   
-  @scala.inline
-  def xlDialogMailLogon: `339` = 339.asInstanceOf[`339`]
+  inline def xlDialogMailLogon: `339` = 339.asInstanceOf[`339`]
   
-  @scala.inline
-  def xlDialogMailNextLetter: `378` = 378.asInstanceOf[`378`]
+  inline def xlDialogMailNextLetter: `378` = 378.asInstanceOf[`378`]
   
-  @scala.inline
-  def xlDialogMainChart: `85` = 85.asInstanceOf[`85`]
+  inline def xlDialogMainChart: `85` = 85.asInstanceOf[`85`]
   
-  @scala.inline
-  def xlDialogMainChartType: `185` = 185.asInstanceOf[`185`]
+  inline def xlDialogMainChartType: `185` = 185.asInstanceOf[`185`]
   
-  @scala.inline
-  def xlDialogMenuEditor: `322` = 322.asInstanceOf[`322`]
+  inline def xlDialogMenuEditor: `322` = 322.asInstanceOf[`322`]
   
-  @scala.inline
-  def xlDialogMove: `262` = 262.asInstanceOf[`262`]
+  inline def xlDialogMove: `262` = 262.asInstanceOf[`262`]
   
-  @scala.inline
-  def xlDialogMyPermission: `834` = 834.asInstanceOf[`834`]
+  inline def xlDialogMyPermission: `834` = 834.asInstanceOf[`834`]
   
-  @scala.inline
-  def xlDialogNameManager: `977` = 977.asInstanceOf[`977`]
+  inline def xlDialogNameManager: `977` = 977.asInstanceOf[`977`]
   
-  @scala.inline
-  def xlDialogNew: `119` = 119.asInstanceOf[`119`]
+  inline def xlDialogNew: `119` = 119.asInstanceOf[`119`]
   
-  @scala.inline
-  def xlDialogNewName: `978` = 978.asInstanceOf[`978`]
+  inline def xlDialogNewName: `978` = 978.asInstanceOf[`978`]
   
-  @scala.inline
-  def xlDialogNewWebQuery: `667` = 667.asInstanceOf[`667`]
+  inline def xlDialogNewWebQuery: `667` = 667.asInstanceOf[`667`]
   
-  @scala.inline
-  def xlDialogNote: `154` = 154.asInstanceOf[`154`]
+  inline def xlDialogNote: `154` = 154.asInstanceOf[`154`]
   
-  @scala.inline
-  def xlDialogObjectProperties: `207` = 207.asInstanceOf[`207`]
+  inline def xlDialogObjectProperties: `207` = 207.asInstanceOf[`207`]
   
-  @scala.inline
-  def xlDialogObjectProtection: `214` = 214.asInstanceOf[`214`]
+  inline def xlDialogObjectProtection: `214` = 214.asInstanceOf[`214`]
   
-  @scala.inline
-  def xlDialogOpen: `1` = 1.asInstanceOf[`1`]
+  inline def xlDialogOpen: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlDialogOpenLinks: `2` = 2.asInstanceOf[`2`]
+  inline def xlDialogOpenLinks: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlDialogOpenMail: `188` = 188.asInstanceOf[`188`]
+  inline def xlDialogOpenMail: `188` = 188.asInstanceOf[`188`]
   
-  @scala.inline
-  def xlDialogOpenText: `441` = 441.asInstanceOf[`441`]
+  inline def xlDialogOpenText: `441` = 441.asInstanceOf[`441`]
   
-  @scala.inline
-  def xlDialogOptionsCalculation: `318` = 318.asInstanceOf[`318`]
+  inline def xlDialogOptionsCalculation: `318` = 318.asInstanceOf[`318`]
   
-  @scala.inline
-  def xlDialogOptionsChart: `325` = 325.asInstanceOf[`325`]
+  inline def xlDialogOptionsChart: `325` = 325.asInstanceOf[`325`]
   
-  @scala.inline
-  def xlDialogOptionsEdit: `319` = 319.asInstanceOf[`319`]
+  inline def xlDialogOptionsEdit: `319` = 319.asInstanceOf[`319`]
   
-  @scala.inline
-  def xlDialogOptionsGeneral: `356` = 356.asInstanceOf[`356`]
+  inline def xlDialogOptionsGeneral: `356` = 356.asInstanceOf[`356`]
   
-  @scala.inline
-  def xlDialogOptionsListsAdd: `458` = 458.asInstanceOf[`458`]
+  inline def xlDialogOptionsListsAdd: `458` = 458.asInstanceOf[`458`]
   
-  @scala.inline
-  def xlDialogOptionsME: `647` = 647.asInstanceOf[`647`]
+  inline def xlDialogOptionsME: `647` = 647.asInstanceOf[`647`]
   
-  @scala.inline
-  def xlDialogOptionsTransition: `355` = 355.asInstanceOf[`355`]
+  inline def xlDialogOptionsTransition: `355` = 355.asInstanceOf[`355`]
   
-  @scala.inline
-  def xlDialogOptionsView: `320` = 320.asInstanceOf[`320`]
+  inline def xlDialogOptionsView: `320` = 320.asInstanceOf[`320`]
   
-  @scala.inline
-  def xlDialogOutline: `142` = 142.asInstanceOf[`142`]
+  inline def xlDialogOutline: `142` = 142.asInstanceOf[`142`]
   
-  @scala.inline
-  def xlDialogOverlay: `86` = 86.asInstanceOf[`86`]
+  inline def xlDialogOverlay: `86` = 86.asInstanceOf[`86`]
   
-  @scala.inline
-  def xlDialogOverlayChartType: `186` = 186.asInstanceOf[`186`]
+  inline def xlDialogOverlayChartType: `186` = 186.asInstanceOf[`186`]
   
-  @scala.inline
-  def xlDialogPageSetup: `7` = 7.asInstanceOf[`7`]
+  inline def xlDialogPageSetup: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlDialogParse: `91` = 91.asInstanceOf[`91`]
+  inline def xlDialogParse: `91` = 91.asInstanceOf[`91`]
   
-  @scala.inline
-  def xlDialogPasteNames: `58` = 58.asInstanceOf[`58`]
+  inline def xlDialogPasteNames: `58` = 58.asInstanceOf[`58`]
   
-  @scala.inline
-  def xlDialogPasteSpecial: `53` = 53.asInstanceOf[`53`]
+  inline def xlDialogPasteSpecial: `53` = 53.asInstanceOf[`53`]
   
-  @scala.inline
-  def xlDialogPatterns: `84` = 84.asInstanceOf[`84`]
+  inline def xlDialogPatterns: `84` = 84.asInstanceOf[`84`]
   
-  @scala.inline
-  def xlDialogPermission: `832` = 832.asInstanceOf[`832`]
+  inline def xlDialogPermission: `832` = 832.asInstanceOf[`832`]
   
-  @scala.inline
-  def xlDialogPhonetic: `656` = 656.asInstanceOf[`656`]
+  inline def xlDialogPhonetic: `656` = 656.asInstanceOf[`656`]
   
-  @scala.inline
-  def xlDialogPivotCalculatedField: `570` = 570.asInstanceOf[`570`]
+  inline def xlDialogPivotCalculatedField: `570` = 570.asInstanceOf[`570`]
   
-  @scala.inline
-  def xlDialogPivotCalculatedItem: `572` = 572.asInstanceOf[`572`]
+  inline def xlDialogPivotCalculatedItem: `572` = 572.asInstanceOf[`572`]
   
-  @scala.inline
-  def xlDialogPivotClientServerSet: `689` = 689.asInstanceOf[`689`]
+  inline def xlDialogPivotClientServerSet: `689` = 689.asInstanceOf[`689`]
   
-  @scala.inline
-  def xlDialogPivotFieldGroup: `433` = 433.asInstanceOf[`433`]
+  inline def xlDialogPivotFieldGroup: `433` = 433.asInstanceOf[`433`]
   
-  @scala.inline
-  def xlDialogPivotFieldProperties: `313` = 313.asInstanceOf[`313`]
+  inline def xlDialogPivotFieldProperties: `313` = 313.asInstanceOf[`313`]
   
-  @scala.inline
-  def xlDialogPivotFieldUngroup: `434` = 434.asInstanceOf[`434`]
+  inline def xlDialogPivotFieldUngroup: `434` = 434.asInstanceOf[`434`]
   
-  @scala.inline
-  def xlDialogPivotShowPages: `421` = 421.asInstanceOf[`421`]
+  inline def xlDialogPivotShowPages: `421` = 421.asInstanceOf[`421`]
   
-  @scala.inline
-  def xlDialogPivotSolveOrder: `568` = 568.asInstanceOf[`568`]
+  inline def xlDialogPivotSolveOrder: `568` = 568.asInstanceOf[`568`]
   
-  @scala.inline
-  def xlDialogPivotTableOptions: `567` = 567.asInstanceOf[`567`]
+  inline def xlDialogPivotTableOptions: `567` = 567.asInstanceOf[`567`]
   
-  @scala.inline
-  def xlDialogPivotTableSlicerConnections: `1183` = 1183.asInstanceOf[`1183`]
+  inline def xlDialogPivotTableSlicerConnections: `1183` = 1183.asInstanceOf[`1183`]
   
-  @scala.inline
-  def xlDialogPivotTableWhatIfAnalysisSettings: `1153` = 1153.asInstanceOf[`1153`]
+  inline def xlDialogPivotTableWhatIfAnalysisSettings: `1153` = 1153.asInstanceOf[`1153`]
   
-  @scala.inline
-  def xlDialogPivotTableWizard: `312` = 312.asInstanceOf[`312`]
+  inline def xlDialogPivotTableWizard: `312` = 312.asInstanceOf[`312`]
   
-  @scala.inline
-  def xlDialogPlacement: `300` = 300.asInstanceOf[`300`]
+  inline def xlDialogPlacement: `300` = 300.asInstanceOf[`300`]
   
-  @scala.inline
-  def xlDialogPrint: `8` = 8.asInstanceOf[`8`]
+  inline def xlDialogPrint: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlDialogPrintPreview: `222` = 222.asInstanceOf[`222`]
+  inline def xlDialogPrintPreview: `222` = 222.asInstanceOf[`222`]
   
-  @scala.inline
-  def xlDialogPrinterSetup: `9` = 9.asInstanceOf[`9`]
+  inline def xlDialogPrinterSetup: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def xlDialogPromote: `202` = 202.asInstanceOf[`202`]
+  inline def xlDialogPromote: `202` = 202.asInstanceOf[`202`]
   
-  @scala.inline
-  def xlDialogProperties: `474` = 474.asInstanceOf[`474`]
+  inline def xlDialogProperties: `474` = 474.asInstanceOf[`474`]
   
-  @scala.inline
-  def xlDialogPropertyFields: `754` = 754.asInstanceOf[`754`]
+  inline def xlDialogPropertyFields: `754` = 754.asInstanceOf[`754`]
   
-  @scala.inline
-  def xlDialogProtectDocument: `28` = 28.asInstanceOf[`28`]
+  inline def xlDialogProtectDocument: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def xlDialogProtectSharing: `620` = 620.asInstanceOf[`620`]
+  inline def xlDialogProtectSharing: `620` = 620.asInstanceOf[`620`]
   
-  @scala.inline
-  def xlDialogPublishAsWebPage: `653` = 653.asInstanceOf[`653`]
+  inline def xlDialogPublishAsWebPage: `653` = 653.asInstanceOf[`653`]
   
-  @scala.inline
-  def xlDialogPushbuttonProperties: `445` = 445.asInstanceOf[`445`]
+  inline def xlDialogPushbuttonProperties: `445` = 445.asInstanceOf[`445`]
   
-  @scala.inline
-  def xlDialogReplaceFont: `134` = 134.asInstanceOf[`134`]
+  inline def xlDialogReplaceFont: `134` = 134.asInstanceOf[`134`]
   
-  @scala.inline
-  def xlDialogRoutingSlip: `336` = 336.asInstanceOf[`336`]
+  inline def xlDialogRoutingSlip: `336` = 336.asInstanceOf[`336`]
   
-  @scala.inline
-  def xlDialogRowHeight: `127` = 127.asInstanceOf[`127`]
+  inline def xlDialogRowHeight: `127` = 127.asInstanceOf[`127`]
   
-  @scala.inline
-  def xlDialogRun: `17` = 17.asInstanceOf[`17`]
+  inline def xlDialogRun: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def xlDialogSaveAs: `5` = 5.asInstanceOf[`5`]
+  inline def xlDialogSaveAs: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlDialogSaveCopyAs: `456` = 456.asInstanceOf[`456`]
+  inline def xlDialogSaveCopyAs: `456` = 456.asInstanceOf[`456`]
   
-  @scala.inline
-  def xlDialogSaveNewObject: `208` = 208.asInstanceOf[`208`]
+  inline def xlDialogSaveNewObject: `208` = 208.asInstanceOf[`208`]
   
-  @scala.inline
-  def xlDialogSaveWorkbook: `145` = 145.asInstanceOf[`145`]
+  inline def xlDialogSaveWorkbook: `145` = 145.asInstanceOf[`145`]
   
-  @scala.inline
-  def xlDialogSaveWorkspace: `285` = 285.asInstanceOf[`285`]
+  inline def xlDialogSaveWorkspace: `285` = 285.asInstanceOf[`285`]
   
-  @scala.inline
-  def xlDialogScale: `87` = 87.asInstanceOf[`87`]
+  inline def xlDialogScale: `87` = 87.asInstanceOf[`87`]
   
-  @scala.inline
-  def xlDialogScenarioAdd: `307` = 307.asInstanceOf[`307`]
+  inline def xlDialogScenarioAdd: `307` = 307.asInstanceOf[`307`]
   
-  @scala.inline
-  def xlDialogScenarioCells: `305` = 305.asInstanceOf[`305`]
+  inline def xlDialogScenarioCells: `305` = 305.asInstanceOf[`305`]
   
-  @scala.inline
-  def xlDialogScenarioEdit: `308` = 308.asInstanceOf[`308`]
+  inline def xlDialogScenarioEdit: `308` = 308.asInstanceOf[`308`]
   
-  @scala.inline
-  def xlDialogScenarioMerge: `473` = 473.asInstanceOf[`473`]
+  inline def xlDialogScenarioMerge: `473` = 473.asInstanceOf[`473`]
   
-  @scala.inline
-  def xlDialogScenarioSummary: `311` = 311.asInstanceOf[`311`]
+  inline def xlDialogScenarioSummary: `311` = 311.asInstanceOf[`311`]
   
-  @scala.inline
-  def xlDialogScrollbarProperties: `420` = 420.asInstanceOf[`420`]
+  inline def xlDialogScrollbarProperties: `420` = 420.asInstanceOf[`420`]
   
-  @scala.inline
-  def xlDialogSearch: `731` = 731.asInstanceOf[`731`]
+  inline def xlDialogSearch: `731` = 731.asInstanceOf[`731`]
   
-  @scala.inline
-  def xlDialogSelectSpecial: `132` = 132.asInstanceOf[`132`]
+  inline def xlDialogSelectSpecial: `132` = 132.asInstanceOf[`132`]
   
-  @scala.inline
-  def xlDialogSendMail: `189` = 189.asInstanceOf[`189`]
+  inline def xlDialogSendMail: `189` = 189.asInstanceOf[`189`]
   
-  @scala.inline
-  def xlDialogSeriesAxes: `460` = 460.asInstanceOf[`460`]
+  inline def xlDialogSeriesAxes: `460` = 460.asInstanceOf[`460`]
   
-  @scala.inline
-  def xlDialogSeriesOptions: `557` = 557.asInstanceOf[`557`]
+  inline def xlDialogSeriesOptions: `557` = 557.asInstanceOf[`557`]
   
-  @scala.inline
-  def xlDialogSeriesOrder: `466` = 466.asInstanceOf[`466`]
+  inline def xlDialogSeriesOrder: `466` = 466.asInstanceOf[`466`]
   
-  @scala.inline
-  def xlDialogSeriesShape: `504` = 504.asInstanceOf[`504`]
+  inline def xlDialogSeriesShape: `504` = 504.asInstanceOf[`504`]
   
-  @scala.inline
-  def xlDialogSeriesX: `461` = 461.asInstanceOf[`461`]
+  inline def xlDialogSeriesX: `461` = 461.asInstanceOf[`461`]
   
-  @scala.inline
-  def xlDialogSeriesY: `462` = 462.asInstanceOf[`462`]
+  inline def xlDialogSeriesY: `462` = 462.asInstanceOf[`462`]
   
-  @scala.inline
-  def xlDialogSetBackgroundPicture: `509` = 509.asInstanceOf[`509`]
+  inline def xlDialogSetBackgroundPicture: `509` = 509.asInstanceOf[`509`]
   
-  @scala.inline
-  def xlDialogSetMDXEditor: `1208` = 1208.asInstanceOf[`1208`]
+  inline def xlDialogSetMDXEditor: `1208` = 1208.asInstanceOf[`1208`]
   
-  @scala.inline
-  def xlDialogSetManager: `1109` = 1109.asInstanceOf[`1109`]
+  inline def xlDialogSetManager: `1109` = 1109.asInstanceOf[`1109`]
   
-  @scala.inline
-  def xlDialogSetPrintTitles: `23` = 23.asInstanceOf[`23`]
+  inline def xlDialogSetPrintTitles: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def xlDialogSetTupleEditorOnColumns: `1108` = 1108.asInstanceOf[`1108`]
+  inline def xlDialogSetTupleEditorOnColumns: `1108` = 1108.asInstanceOf[`1108`]
   
-  @scala.inline
-  def xlDialogSetTupleEditorOnRows: `1107` = 1107.asInstanceOf[`1107`]
+  inline def xlDialogSetTupleEditorOnRows: `1107` = 1107.asInstanceOf[`1107`]
   
-  @scala.inline
-  def xlDialogSetUpdateStatus: `159` = 159.asInstanceOf[`159`]
+  inline def xlDialogSetUpdateStatus: `159` = 159.asInstanceOf[`159`]
   
-  @scala.inline
-  def xlDialogShowDetail: `204` = 204.asInstanceOf[`204`]
+  inline def xlDialogShowDetail: `204` = 204.asInstanceOf[`204`]
   
-  @scala.inline
-  def xlDialogShowToolbar: `220` = 220.asInstanceOf[`220`]
+  inline def xlDialogShowToolbar: `220` = 220.asInstanceOf[`220`]
   
-  @scala.inline
-  def xlDialogSize: `261` = 261.asInstanceOf[`261`]
+  inline def xlDialogSize: `261` = 261.asInstanceOf[`261`]
   
-  @scala.inline
-  def xlDialogSlicerCreation: `1182` = 1182.asInstanceOf[`1182`]
+  inline def xlDialogSlicerCreation: `1182` = 1182.asInstanceOf[`1182`]
   
-  @scala.inline
-  def xlDialogSlicerPivotTableConnections: `1184` = 1184.asInstanceOf[`1184`]
+  inline def xlDialogSlicerPivotTableConnections: `1184` = 1184.asInstanceOf[`1184`]
   
-  @scala.inline
-  def xlDialogSlicerSettings: `1179` = 1179.asInstanceOf[`1179`]
+  inline def xlDialogSlicerSettings: `1179` = 1179.asInstanceOf[`1179`]
   
-  @scala.inline
-  def xlDialogSort: `39` = 39.asInstanceOf[`39`]
+  inline def xlDialogSort: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def xlDialogSortSpecial: `192` = 192.asInstanceOf[`192`]
+  inline def xlDialogSortSpecial: `192` = 192.asInstanceOf[`192`]
   
-  @scala.inline
-  def xlDialogSparklineInsertColumn: `1134` = 1134.asInstanceOf[`1134`]
+  inline def xlDialogSparklineInsertColumn: `1134` = 1134.asInstanceOf[`1134`]
   
-  @scala.inline
-  def xlDialogSparklineInsertLine: `1133` = 1133.asInstanceOf[`1133`]
+  inline def xlDialogSparklineInsertLine: `1133` = 1133.asInstanceOf[`1133`]
   
-  @scala.inline
-  def xlDialogSparklineInsertWinLoss: `1135` = 1135.asInstanceOf[`1135`]
+  inline def xlDialogSparklineInsertWinLoss: `1135` = 1135.asInstanceOf[`1135`]
   
-  @scala.inline
-  def xlDialogSplit: `137` = 137.asInstanceOf[`137`]
+  inline def xlDialogSplit: `137` = 137.asInstanceOf[`137`]
   
-  @scala.inline
-  def xlDialogStandardFont: `190` = 190.asInstanceOf[`190`]
+  inline def xlDialogStandardFont: `190` = 190.asInstanceOf[`190`]
   
-  @scala.inline
-  def xlDialogStandardWidth: `472` = 472.asInstanceOf[`472`]
+  inline def xlDialogStandardWidth: `472` = 472.asInstanceOf[`472`]
   
-  @scala.inline
-  def xlDialogStyle: `44` = 44.asInstanceOf[`44`]
+  inline def xlDialogStyle: `44` = 44.asInstanceOf[`44`]
   
-  @scala.inline
-  def xlDialogSubscribeTo: `218` = 218.asInstanceOf[`218`]
+  inline def xlDialogSubscribeTo: `218` = 218.asInstanceOf[`218`]
   
-  @scala.inline
-  def xlDialogSubtotalCreate: `398` = 398.asInstanceOf[`398`]
+  inline def xlDialogSubtotalCreate: `398` = 398.asInstanceOf[`398`]
   
-  @scala.inline
-  def xlDialogSummaryInfo: `474` = 474.asInstanceOf[`474`]
+  inline def xlDialogSummaryInfo: `474` = 474.asInstanceOf[`474`]
   
-  @scala.inline
-  def xlDialogTabOrder: `394` = 394.asInstanceOf[`394`]
+  inline def xlDialogTabOrder: `394` = 394.asInstanceOf[`394`]
   
-  @scala.inline
-  def xlDialogTable: `41` = 41.asInstanceOf[`41`]
+  inline def xlDialogTable: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def xlDialogTextToColumns: `422` = 422.asInstanceOf[`422`]
+  inline def xlDialogTextToColumns: `422` = 422.asInstanceOf[`422`]
   
-  @scala.inline
-  def xlDialogUnhide: `94` = 94.asInstanceOf[`94`]
+  inline def xlDialogUnhide: `94` = 94.asInstanceOf[`94`]
   
-  @scala.inline
-  def xlDialogUpdateLink: `201` = 201.asInstanceOf[`201`]
+  inline def xlDialogUpdateLink: `201` = 201.asInstanceOf[`201`]
   
-  @scala.inline
-  def xlDialogVbaInsertFile: `328` = 328.asInstanceOf[`328`]
+  inline def xlDialogVbaInsertFile: `328` = 328.asInstanceOf[`328`]
   
-  @scala.inline
-  def xlDialogVbaMakeAddin: `478` = 478.asInstanceOf[`478`]
+  inline def xlDialogVbaMakeAddin: `478` = 478.asInstanceOf[`478`]
   
-  @scala.inline
-  def xlDialogVbaProcedureDefinition: `330` = 330.asInstanceOf[`330`]
+  inline def xlDialogVbaProcedureDefinition: `330` = 330.asInstanceOf[`330`]
   
-  @scala.inline
-  def xlDialogView3d: `197` = 197.asInstanceOf[`197`]
+  inline def xlDialogView3d: `197` = 197.asInstanceOf[`197`]
   
-  @scala.inline
-  def xlDialogWebOptionsBrowsers: `773` = 773.asInstanceOf[`773`]
+  inline def xlDialogWebOptionsBrowsers: `773` = 773.asInstanceOf[`773`]
   
-  @scala.inline
-  def xlDialogWebOptionsEncoding: `686` = 686.asInstanceOf[`686`]
+  inline def xlDialogWebOptionsEncoding: `686` = 686.asInstanceOf[`686`]
   
-  @scala.inline
-  def xlDialogWebOptionsFiles: `684` = 684.asInstanceOf[`684`]
+  inline def xlDialogWebOptionsFiles: `684` = 684.asInstanceOf[`684`]
   
-  @scala.inline
-  def xlDialogWebOptionsFonts: `687` = 687.asInstanceOf[`687`]
+  inline def xlDialogWebOptionsFonts: `687` = 687.asInstanceOf[`687`]
   
-  @scala.inline
-  def xlDialogWebOptionsGeneral: `683` = 683.asInstanceOf[`683`]
+  inline def xlDialogWebOptionsGeneral: `683` = 683.asInstanceOf[`683`]
   
-  @scala.inline
-  def xlDialogWebOptionsPictures: `685` = 685.asInstanceOf[`685`]
+  inline def xlDialogWebOptionsPictures: `685` = 685.asInstanceOf[`685`]
   
-  @scala.inline
-  def xlDialogWindowMove: `14` = 14.asInstanceOf[`14`]
+  inline def xlDialogWindowMove: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def xlDialogWindowSize: `13` = 13.asInstanceOf[`13`]
+  inline def xlDialogWindowSize: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def xlDialogWorkbookAdd: `281` = 281.asInstanceOf[`281`]
+  inline def xlDialogWorkbookAdd: `281` = 281.asInstanceOf[`281`]
   
-  @scala.inline
-  def xlDialogWorkbookCopy: `283` = 283.asInstanceOf[`283`]
+  inline def xlDialogWorkbookCopy: `283` = 283.asInstanceOf[`283`]
   
-  @scala.inline
-  def xlDialogWorkbookInsert: `354` = 354.asInstanceOf[`354`]
+  inline def xlDialogWorkbookInsert: `354` = 354.asInstanceOf[`354`]
   
-  @scala.inline
-  def xlDialogWorkbookMove: `282` = 282.asInstanceOf[`282`]
+  inline def xlDialogWorkbookMove: `282` = 282.asInstanceOf[`282`]
   
-  @scala.inline
-  def xlDialogWorkbookName: `386` = 386.asInstanceOf[`386`]
+  inline def xlDialogWorkbookName: `386` = 386.asInstanceOf[`386`]
   
-  @scala.inline
-  def xlDialogWorkbookNew: `302` = 302.asInstanceOf[`302`]
+  inline def xlDialogWorkbookNew: `302` = 302.asInstanceOf[`302`]
   
-  @scala.inline
-  def xlDialogWorkbookOptions: `284` = 284.asInstanceOf[`284`]
+  inline def xlDialogWorkbookOptions: `284` = 284.asInstanceOf[`284`]
   
-  @scala.inline
-  def xlDialogWorkbookProtect: `417` = 417.asInstanceOf[`417`]
+  inline def xlDialogWorkbookProtect: `417` = 417.asInstanceOf[`417`]
   
-  @scala.inline
-  def xlDialogWorkbookTabSplit: `415` = 415.asInstanceOf[`415`]
+  inline def xlDialogWorkbookTabSplit: `415` = 415.asInstanceOf[`415`]
   
-  @scala.inline
-  def xlDialogWorkbookUnhide: `384` = 384.asInstanceOf[`384`]
+  inline def xlDialogWorkbookUnhide: `384` = 384.asInstanceOf[`384`]
   
-  @scala.inline
-  def xlDialogWorkgroup: `199` = 199.asInstanceOf[`199`]
+  inline def xlDialogWorkgroup: `199` = 199.asInstanceOf[`199`]
   
-  @scala.inline
-  def xlDialogWorkspace: `95` = 95.asInstanceOf[`95`]
+  inline def xlDialogWorkspace: `95` = 95.asInstanceOf[`95`]
   
-  @scala.inline
-  def xlDialogZoom: `256` = 256.asInstanceOf[`256`]
+  inline def xlDialogZoom: `256` = 256.asInstanceOf[`256`]
 }

@@ -51,8 +51,7 @@ trait SharedStylePropsT extends StObject {
 }
 object SharedStylePropsT {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $date: Date,
     $disabled: Boolean,
     $hasRangeHighlighted: Boolean,
@@ -72,49 +71,34 @@ object SharedStylePropsT {
     __obj.asInstanceOf[SharedStylePropsT]
   }
   
-  @scala.inline
-  implicit class SharedStylePropsTMutableBuilder[Self <: SharedStylePropsT] (val x: Self) extends AnyVal {
+  extension [Self <: SharedStylePropsT](x: Self) {
     
-    @scala.inline
-    def set$date(value: Date): Self = StObject.set(x, "$date", value.asInstanceOf[js.Any])
+    inline def set$date(value: Date): Self = StObject.set(x, "$date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+    inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$hasRangeHighlighted(value: Boolean): Self = StObject.set(x, "$hasRangeHighlighted", value.asInstanceOf[js.Any])
+    inline def set$hasRangeHighlighted(value: Boolean): Self = StObject.set(x, "$hasRangeHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$hasRangeOnRight(value: Boolean): Self = StObject.set(x, "$hasRangeOnRight", value.asInstanceOf[js.Any])
+    inline def set$hasRangeOnRight(value: Boolean): Self = StObject.set(x, "$hasRangeOnRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$hasRangeSelected(value: Boolean): Self = StObject.set(x, "$hasRangeSelected", value.asInstanceOf[js.Any])
+    inline def set$hasRangeSelected(value: Boolean): Self = StObject.set(x, "$hasRangeSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isHeader(value: Boolean): Self = StObject.set(x, "$isHeader", value.asInstanceOf[js.Any])
+    inline def set$isHeader(value: Boolean): Self = StObject.set(x, "$isHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
+    inline def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isHovered(value: Boolean): Self = StObject.set(x, "$isHovered", value.asInstanceOf[js.Any])
+    inline def set$isHovered(value: Boolean): Self = StObject.set(x, "$isHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$outsideMonth(value: Boolean): Self = StObject.set(x, "$outsideMonth", value.asInstanceOf[js.Any])
+    inline def set$outsideMonth(value: Boolean): Self = StObject.set(x, "$outsideMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$pseudoHighlighted(value: Boolean): Self = StObject.set(x, "$pseudoHighlighted", value.asInstanceOf[js.Any])
+    inline def set$pseudoHighlighted(value: Boolean): Self = StObject.set(x, "$pseudoHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$pseudoSelected(value: Boolean): Self = StObject.set(x, "$pseudoSelected", value.asInstanceOf[js.Any])
+    inline def set$pseudoSelected(value: Boolean): Self = StObject.set(x, "$pseudoSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$range(value: Boolean): Self = StObject.set(x, "$range", value.asInstanceOf[js.Any])
+    inline def set$range(value: Boolean): Self = StObject.set(x, "$range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$selected(value: Boolean): Self = StObject.set(x, "$selected", value.asInstanceOf[js.Any])
+    inline def set$selected(value: Boolean): Self = StObject.set(x, "$selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$startDate(value: Boolean): Self = StObject.set(x, "$startDate", value.asInstanceOf[js.Any])
+    inline def set$startDate(value: Boolean): Self = StObject.set(x, "$startDate", value.asInstanceOf[js.Any])
   }
 }

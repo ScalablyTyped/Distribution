@@ -64,51 +64,37 @@ trait IconSymbol3DLayerProperties
 }
 object IconSymbol3DLayerProperties {
   
-  @scala.inline
-  def apply(): IconSymbol3DLayerProperties = {
+  inline def apply(): IconSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconSymbol3DLayerProperties]
   }
   
-  @scala.inline
-  implicit class IconSymbol3DLayerPropertiesMutableBuilder[Self <: IconSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IconSymbol3DLayerProperties](x: Self) {
     
-    @scala.inline
-    def setAnchor(
+    inline def setAnchor(
       value: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative
     ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorPosition(value: IconSymbol3DLayerAnchorPosition): Self = StObject.set(x, "anchorPosition", value.asInstanceOf[js.Any])
+    inline def setAnchorPosition(value: IconSymbol3DLayerAnchorPosition): Self = StObject.set(x, "anchorPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorPositionUndefined: Self = StObject.set(x, "anchorPosition", js.undefined)
+    inline def setAnchorPositionUndefined: Self = StObject.set(x, "anchorPosition", js.undefined)
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: IconSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: IconSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setOutline(value: IconSymbol3DLayerOutlineProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: IconSymbol3DLayerOutlineProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setResource(value: IconSymbol3DLayerResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: IconSymbol3DLayerResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

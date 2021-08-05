@@ -17,19 +17,15 @@ trait SchemaPopulateVersionFilesRequest extends StObject {
 }
 object SchemaPopulateVersionFilesRequest {
   
-  @scala.inline
-  def apply(): SchemaPopulateVersionFilesRequest = {
+  inline def apply(): SchemaPopulateVersionFilesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPopulateVersionFilesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPopulateVersionFilesRequestMutableBuilder[Self <: SchemaPopulateVersionFilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPopulateVersionFilesRequest](x: Self) {
     
-    @scala.inline
-    def setFiles(value: StringDictionary[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
   }
 }

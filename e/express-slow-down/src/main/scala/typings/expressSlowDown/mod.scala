@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-slow-down", JSImport.Namespace)
   @js.native
@@ -102,78 +101,56 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDelayAfter(value: Double): Self = StObject.set(x, "delayAfter", value.asInstanceOf[js.Any])
+      inline def setDelayAfter(value: Double): Self = StObject.set(x, "delayAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayAfterUndefined: Self = StObject.set(x, "delayAfter", js.undefined)
+      inline def setDelayAfterUndefined: Self = StObject.set(x, "delayAfter", js.undefined)
       
-      @scala.inline
-      def setDelayMs(value: Double): Self = StObject.set(x, "delayMs", value.asInstanceOf[js.Any])
+      inline def setDelayMs(value: Double): Self = StObject.set(x, "delayMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayMsUndefined: Self = StObject.set(x, "delayMs", js.undefined)
+      inline def setDelayMsUndefined: Self = StObject.set(x, "delayMs", js.undefined)
       
-      @scala.inline
-      def setKeyGenerator(
+      inline def setKeyGenerator(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
       ): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
+      inline def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
       
-      @scala.inline
-      def setMaxDelayMs(value: Double): Self = StObject.set(x, "maxDelayMs", value.asInstanceOf[js.Any])
+      inline def setMaxDelayMs(value: Double): Self = StObject.set(x, "maxDelayMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDelayMsUndefined: Self = StObject.set(x, "maxDelayMs", js.undefined)
+      inline def setMaxDelayMsUndefined: Self = StObject.set(x, "maxDelayMs", js.undefined)
       
-      @scala.inline
-      def setOnLimitReached(value: (/* req */ RequestWithSlowDown, /* res */ Response_[js.Any], Options) => Unit): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
+      inline def setOnLimitReached(value: (/* req */ RequestWithSlowDown, /* res */ Response_[js.Any], Options) => Unit): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
+      inline def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
       
-      @scala.inline
-      def setSkip(
+      inline def setSkip(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
       ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
+      inline def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipFailedRequestsUndefined: Self = StObject.set(x, "skipFailedRequests", js.undefined)
+      inline def setSkipFailedRequestsUndefined: Self = StObject.set(x, "skipFailedRequests", js.undefined)
       
-      @scala.inline
-      def setSkipSuccessfulRequests(value: Boolean): Self = StObject.set(x, "skipSuccessfulRequests", value.asInstanceOf[js.Any])
+      inline def setSkipSuccessfulRequests(value: Boolean): Self = StObject.set(x, "skipSuccessfulRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipSuccessfulRequestsUndefined: Self = StObject.set(x, "skipSuccessfulRequests", js.undefined)
+      inline def setSkipSuccessfulRequestsUndefined: Self = StObject.set(x, "skipSuccessfulRequests", js.undefined)
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setWindowMs(value: Double): Self = StObject.set(x, "windowMs", value.asInstanceOf[js.Any])
+      inline def setWindowMs(value: Double): Self = StObject.set(x, "windowMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowMsUndefined: Self = StObject.set(x, "windowMs", js.undefined)
+      inline def setWindowMsUndefined: Self = StObject.set(x, "windowMs", js.undefined)
     }
   }
   
@@ -218,32 +195,24 @@ object mod {
   }
   object SlowDownRequestAugmentation {
     
-    @scala.inline
-    def apply(current: Double, delay: Double, limit: Double, remaining: Double): SlowDownRequestAugmentation = {
+    inline def apply(current: Double, delay: Double, limit: Double, remaining: Double): SlowDownRequestAugmentation = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], remaining = remaining.asInstanceOf[js.Any])
       __obj.asInstanceOf[SlowDownRequestAugmentation]
     }
     
-    @scala.inline
-    implicit class SlowDownRequestAugmentationMutableBuilder[Self <: SlowDownRequestAugmentation] (val x: Self) extends AnyVal {
+    extension [Self <: SlowDownRequestAugmentation](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+      inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTime(value: Double): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
+      inline def setResetTime(value: Double): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
+      inline def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
     }
   }
   
@@ -257,8 +226,7 @@ object mod {
   }
   object Store {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decrement: String => Unit,
       incr: (String, StoreIncrementCallback) => Unit,
       resetKey: String => Unit
@@ -267,17 +235,13 @@ object mod {
       __obj.asInstanceOf[Store]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+    extension [Self <: Store](x: Self) {
       
-      @scala.inline
-      def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
+      inline def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncr(value: (String, StoreIncrementCallback) => Unit): Self = StObject.set(x, "incr", js.Any.fromFunction2(value))
+      inline def setIncr(value: (String, StoreIncrementCallback) => Unit): Self = StObject.set(x, "incr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResetKey(value: String => Unit): Self = StObject.set(x, "resetKey", js.Any.fromFunction1(value))
+      inline def setResetKey(value: String => Unit): Self = StObject.set(x, "resetKey", js.Any.fromFunction1(value))
     }
   }
   

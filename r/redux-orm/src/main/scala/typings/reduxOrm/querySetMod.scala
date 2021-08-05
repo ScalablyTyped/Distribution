@@ -62,8 +62,7 @@ object querySetMod {
       * // use shared method
       * const unreleased = customQs.unreleased();
       */
-    @scala.inline
-    def addSharedMethod(methodName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSharedMethod")(methodName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addSharedMethod(methodName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSharedMethod")(methodName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("redux-orm/QuerySet", "QuerySet")
@@ -135,8 +134,7 @@ object querySetMod {
       * // use shared method
       * const unreleased = customQs.unreleased();
       */
-    @scala.inline
-    def addSharedMethod(methodName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSharedMethod")(methodName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addSharedMethod(methodName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSharedMethod")(methodName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Lookup clause as predicate accepting plain object Model representation stored in the database.
@@ -287,17 +285,13 @@ object querySetMod {
     trait SortOrder extends StObject
     object SortOrder {
       
-      @scala.inline
-      def asc: typings.reduxOrm.reduxOrmStrings.asc = "asc".asInstanceOf[typings.reduxOrm.reduxOrmStrings.asc]
+      inline def asc: typings.reduxOrm.reduxOrmStrings.asc = "asc".asInstanceOf[typings.reduxOrm.reduxOrmStrings.asc]
       
-      @scala.inline
-      def desc: typings.reduxOrm.reduxOrmStrings.desc = "desc".asInstanceOf[typings.reduxOrm.reduxOrmStrings.desc]
+      inline def desc: typings.reduxOrm.reduxOrmStrings.desc = "desc".asInstanceOf[typings.reduxOrm.reduxOrmStrings.desc]
       
-      @scala.inline
-      def `false`: typings.reduxOrm.reduxOrmBooleans.`false` = false.asInstanceOf[typings.reduxOrm.reduxOrmBooleans.`false`]
+      inline def `false`: typings.reduxOrm.reduxOrmBooleans.`false` = false.asInstanceOf[typings.reduxOrm.reduxOrmBooleans.`false`]
       
-      @scala.inline
-      def `true`: typings.reduxOrm.reduxOrmBooleans.`true` = true.asInstanceOf[typings.reduxOrm.reduxOrmBooleans.`true`]
+      inline def `true`: typings.reduxOrm.reduxOrmBooleans.`true` = true.asInstanceOf[typings.reduxOrm.reduxOrmBooleans.`true`]
     }
   }
   

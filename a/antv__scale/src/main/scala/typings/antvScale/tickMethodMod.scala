@@ -11,9 +11,7 @@ object tickMethodMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTickMethod(key: String): TickMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickMethod")(key.asInstanceOf[js.Any]).asInstanceOf[TickMethod]
+  inline def getTickMethod(key: String): TickMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickMethod")(key.asInstanceOf[js.Any]).asInstanceOf[TickMethod]
   
-  @scala.inline
-  def registerTickMethod(key: String, method: TickMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTickMethod")(key.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerTickMethod(key: String, method: TickMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTickMethod")(key.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

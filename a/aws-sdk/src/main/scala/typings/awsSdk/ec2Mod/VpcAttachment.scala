@@ -18,25 +18,19 @@ trait VpcAttachment extends StObject {
 }
 object VpcAttachment {
   
-  @scala.inline
-  def apply(): VpcAttachment = {
+  inline def apply(): VpcAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcAttachment]
   }
   
-  @scala.inline
-  implicit class VpcAttachmentMutableBuilder[Self <: VpcAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: VpcAttachment](x: Self) {
     
-    @scala.inline
-    def setState(value: AttachmentStatus): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: AttachmentStatus): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

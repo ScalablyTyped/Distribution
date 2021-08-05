@@ -10,19 +10,15 @@ trait ChartPaneOptions extends StObject {
 }
 object ChartPaneOptions {
   
-  @scala.inline
-  def apply(): ChartPaneOptions = {
+  inline def apply(): ChartPaneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartPaneOptions]
   }
   
-  @scala.inline
-  implicit class ChartPaneOptionsMutableBuilder[Self <: ChartPaneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartPaneOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

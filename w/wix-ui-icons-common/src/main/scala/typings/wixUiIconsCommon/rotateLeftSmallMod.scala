@@ -22,20 +22,16 @@ object rotateLeftSmallMod extends Shortcut {
   }
   object RotateLeftSmallProps {
     
-    @scala.inline
-    def apply(): RotateLeftSmallProps = {
+    inline def apply(): RotateLeftSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RotateLeftSmallProps]
     }
     
-    @scala.inline
-    implicit class RotateLeftSmallPropsMutableBuilder[Self <: RotateLeftSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: RotateLeftSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

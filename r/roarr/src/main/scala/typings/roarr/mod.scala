@@ -473,38 +473,28 @@ object mod extends Shortcut {
   }
   object MessageContextType {
     
-    @scala.inline
-    def apply(): MessageContextType = {
+    inline def apply(): MessageContextType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageContextType]
     }
     
-    @scala.inline
-    implicit class MessageContextTypeMutableBuilder[Self <: MessageContextType] (val x: Self) extends AnyVal {
+    extension [Self <: MessageContextType](x: Self) {
       
-      @scala.inline
-      def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     }
   }
   
@@ -524,29 +514,22 @@ object mod extends Shortcut {
   }
   object MessageType {
     
-    @scala.inline
-    def apply(context: MessageContextType, message: String, sequence: Double, time: Double, version: String): MessageType = {
+    inline def apply(context: MessageContextType, message: String, sequence: Double, time: Double, version: String): MessageType = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageType]
     }
     
-    @scala.inline
-    implicit class MessageTypeMutableBuilder[Self <: MessageType] (val x: Self) extends AnyVal {
+    extension [Self <: MessageType](x: Self) {
       
-      @scala.inline
-      def setContext(value: MessageContextType): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: MessageContextType): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -560,23 +543,18 @@ object mod extends Shortcut {
   }
   object RoarrGlobalStateType {
     
-    @scala.inline
-    def apply(sequence: Double, versions: js.Array[String], write: String => Unit): RoarrGlobalStateType = {
+    inline def apply(sequence: Double, versions: js.Array[String], write: String => Unit): RoarrGlobalStateType = {
       val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[RoarrGlobalStateType]
     }
     
-    @scala.inline
-    implicit class RoarrGlobalStateTypeMutableBuilder[Self <: RoarrGlobalStateType] (val x: Self) extends AnyVal {
+    extension [Self <: RoarrGlobalStateType](x: Self) {
       
-      @scala.inline
-      def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      inline def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
+      inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
     }
   }
   
@@ -590,17 +568,14 @@ object mod extends Shortcut {
   }
   object WriterType {
     
-    @scala.inline
-    def apply(write: String => Unit): WriterType = {
+    inline def apply(write: String => Unit): WriterType = {
       val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[WriterType]
     }
     
-    @scala.inline
-    implicit class WriterTypeMutableBuilder[Self <: WriterType] (val x: Self) extends AnyVal {
+    extension [Self <: WriterType](x: Self) {
       
-      @scala.inline
-      def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   

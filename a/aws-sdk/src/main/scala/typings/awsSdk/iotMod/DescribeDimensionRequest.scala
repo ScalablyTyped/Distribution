@@ -13,16 +13,13 @@ trait DescribeDimensionRequest extends StObject {
 }
 object DescribeDimensionRequest {
   
-  @scala.inline
-  def apply(name: DimensionName): DescribeDimensionRequest = {
+  inline def apply(name: DimensionName): DescribeDimensionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDimensionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDimensionRequestMutableBuilder[Self <: DescribeDimensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDimensionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

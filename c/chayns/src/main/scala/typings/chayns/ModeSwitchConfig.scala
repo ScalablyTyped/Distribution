@@ -22,34 +22,25 @@ trait ModeSwitchConfig extends StObject {
 }
 object ModeSwitchConfig {
   
-  @scala.inline
-  def apply(callback: ModeSwitchItem => Unit, items: js.Array[ModeSwitchItem]): ModeSwitchConfig = {
+  inline def apply(callback: ModeSwitchItem => Unit, items: js.Array[ModeSwitchItem]): ModeSwitchConfig = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModeSwitchConfig]
   }
   
-  @scala.inline
-  implicit class ModeSwitchConfigMutableBuilder[Self <: ModeSwitchConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ModeSwitchConfig](x: Self) {
     
-    @scala.inline
-    def setCallback(value: ModeSwitchItem => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: ModeSwitchItem => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+    inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
+    inline def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[ModeSwitchItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ModeSwitchItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ModeSwitchItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ModeSwitchItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPreventclose(value: Boolean): Self = StObject.set(x, "preventclose", value.asInstanceOf[js.Any])
+    inline def setPreventclose(value: Boolean): Self = StObject.set(x, "preventclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventcloseUndefined: Self = StObject.set(x, "preventclose", js.undefined)
+    inline def setPreventcloseUndefined: Self = StObject.set(x, "preventclose", js.undefined)
   }
 }

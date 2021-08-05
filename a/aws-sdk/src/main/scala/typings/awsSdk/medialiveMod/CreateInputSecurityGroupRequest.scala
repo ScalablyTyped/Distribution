@@ -18,28 +18,21 @@ trait CreateInputSecurityGroupRequest extends StObject {
 }
 object CreateInputSecurityGroupRequest {
   
-  @scala.inline
-  def apply(): CreateInputSecurityGroupRequest = {
+  inline def apply(): CreateInputSecurityGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateInputSecurityGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateInputSecurityGroupRequestMutableBuilder[Self <: CreateInputSecurityGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInputSecurityGroupRequest](x: Self) {
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setWhitelistRules(value: listOfInputWhitelistRuleCidr): Self = StObject.set(x, "WhitelistRules", value.asInstanceOf[js.Any])
+    inline def setWhitelistRules(value: listOfInputWhitelistRuleCidr): Self = StObject.set(x, "WhitelistRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistRulesUndefined: Self = StObject.set(x, "WhitelistRules", js.undefined)
+    inline def setWhitelistRulesUndefined: Self = StObject.set(x, "WhitelistRules", js.undefined)
     
-    @scala.inline
-    def setWhitelistRulesVarargs(value: InputWhitelistRuleCidr*): Self = StObject.set(x, "WhitelistRules", js.Array(value :_*))
+    inline def setWhitelistRulesVarargs(value: InputWhitelistRuleCidr*): Self = StObject.set(x, "WhitelistRules", js.Array(value :_*))
   }
 }

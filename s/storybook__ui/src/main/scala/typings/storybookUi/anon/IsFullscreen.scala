@@ -13,19 +13,15 @@ trait IsFullscreen extends StObject {
 }
 object IsFullscreen {
   
-  @scala.inline
-  def apply(isFullscreen: Boolean, position: CSSProperties): IsFullscreen = {
+  inline def apply(isFullscreen: Boolean, position: CSSProperties): IsFullscreen = {
     val __obj = js.Dynamic.literal(isFullscreen = isFullscreen.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsFullscreen]
   }
   
-  @scala.inline
-  implicit class IsFullscreenMutableBuilder[Self <: IsFullscreen] (val x: Self) extends AnyVal {
+  extension [Self <: IsFullscreen](x: Self) {
     
-    @scala.inline
-    def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+    inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: CSSProperties): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: CSSProperties): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

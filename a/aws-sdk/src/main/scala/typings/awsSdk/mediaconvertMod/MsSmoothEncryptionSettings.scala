@@ -13,19 +13,15 @@ trait MsSmoothEncryptionSettings extends StObject {
 }
 object MsSmoothEncryptionSettings {
   
-  @scala.inline
-  def apply(): MsSmoothEncryptionSettings = {
+  inline def apply(): MsSmoothEncryptionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MsSmoothEncryptionSettings]
   }
   
-  @scala.inline
-  implicit class MsSmoothEncryptionSettingsMutableBuilder[Self <: MsSmoothEncryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MsSmoothEncryptionSettings](x: Self) {
     
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
+    inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
+    inline def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object RawValue {
     
-    @scala.inline
-    def apply(rawValue: String): RawValue = {
+    inline def apply(rawValue: String): RawValue = {
       val __obj = js.Dynamic.literal(rawValue = rawValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawValue]
     }
     
-    @scala.inline
-    implicit class RawValueMutableBuilder[Self <: RawValue] (val x: Self) extends AnyVal {
+    extension [Self <: RawValue](x: Self) {
       
-      @scala.inline
-      def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+      inline def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     }
   }
 }

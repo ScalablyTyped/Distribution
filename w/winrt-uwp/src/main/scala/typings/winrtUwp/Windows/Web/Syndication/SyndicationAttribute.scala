@@ -18,22 +18,17 @@ trait SyndicationAttribute extends StObject {
 }
 object SyndicationAttribute {
   
-  @scala.inline
-  def apply(name: String, namespace: String, value: String): SyndicationAttribute = {
+  inline def apply(name: String, namespace: String, value: String): SyndicationAttribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyndicationAttribute]
   }
   
-  @scala.inline
-  implicit class SyndicationAttributeMutableBuilder[Self <: SyndicationAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: SyndicationAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

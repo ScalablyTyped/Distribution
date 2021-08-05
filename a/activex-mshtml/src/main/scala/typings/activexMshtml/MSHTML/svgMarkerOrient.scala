@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait svgMarkerOrient extends StObject
 object svgMarkerOrient {
   
-  @scala.inline
-  def SVG_MARKER_ORIENT_ANGLE: `2` = 2.asInstanceOf[`2`]
+  inline def SVG_MARKER_ORIENT_ANGLE: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SVG_MARKER_ORIENT_AUTO: `1` = 1.asInstanceOf[`1`]
+  inline def SVG_MARKER_ORIENT_AUTO: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SVG_MARKER_ORIENT_UNKNOWN: `0` = 0.asInstanceOf[`0`]
+  inline def SVG_MARKER_ORIENT_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def svgMarkerOrient_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def svgMarkerOrient_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

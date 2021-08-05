@@ -39,17 +39,14 @@ object mod {
   }
   object MiniSignalBinding {
     
-    @scala.inline
-    def apply(detach: () => Boolean): MiniSignalBinding = {
+    inline def apply(detach: () => Boolean): MiniSignalBinding = {
       val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach))
       __obj.asInstanceOf[MiniSignalBinding]
     }
     
-    @scala.inline
-    implicit class MiniSignalBindingMutableBuilder[Self <: MiniSignalBinding] (val x: Self) extends AnyVal {
+    extension [Self <: MiniSignalBinding](x: Self) {
       
-      @scala.inline
-      def setDetach(value: () => Boolean): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+      inline def setDetach(value: () => Boolean): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     }
   }
 }

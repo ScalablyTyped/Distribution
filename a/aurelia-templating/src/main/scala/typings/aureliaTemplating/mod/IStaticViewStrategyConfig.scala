@@ -13,25 +13,19 @@ trait IStaticViewStrategyConfig extends StObject {
 }
 object IStaticViewStrategyConfig {
   
-  @scala.inline
-  def apply(template: String | HTMLTemplateElement): IStaticViewStrategyConfig = {
+  inline def apply(template: String | HTMLTemplateElement): IStaticViewStrategyConfig = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStaticViewStrategyConfig]
   }
   
-  @scala.inline
-  implicit class IStaticViewStrategyConfigMutableBuilder[Self <: IStaticViewStrategyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IStaticViewStrategyConfig](x: Self) {
     
-    @scala.inline
-    def setDependencies(value: js.Array[js.Function] | js.Object): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: js.Array[js.Function] | js.Object): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    @scala.inline
-    def setDependenciesVarargs(value: js.Function*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: js.Function*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: String | HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

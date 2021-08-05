@@ -15,20 +15,16 @@ object previewableOptionsMod {
   }
   object PreviewableOptions {
     
-    @scala.inline
-    def apply(): PreviewableOptions = {
+    inline def apply(): PreviewableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewableOptions]
     }
     
-    @scala.inline
-    implicit class PreviewableOptionsMutableBuilder[Self <: PreviewableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewableOptions](x: Self) {
       
-      @scala.inline
-      def setValueToHeader(value: Boolean): Self = StObject.set(x, "valueToHeader", value.asInstanceOf[js.Any])
+      inline def setValueToHeader(value: Boolean): Self = StObject.set(x, "valueToHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueToHeaderUndefined: Self = StObject.set(x, "valueToHeader", js.undefined)
+      inline def setValueToHeaderUndefined: Self = StObject.set(x, "valueToHeader", js.undefined)
     }
   }
 }

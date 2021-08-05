@@ -14,25 +14,19 @@ trait ChartDragEndEvent
 }
 object ChartDragEndEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Chart): ChartDragEndEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Chart): ChartDragEndEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartDragEndEvent]
   }
   
-  @scala.inline
-  implicit class ChartDragEndEventMutableBuilder[Self <: ChartDragEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDragEndEvent](x: Self) {
     
-    @scala.inline
-    def setAxisRanges(value: js.Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
+    inline def setAxisRanges(value: js.Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisRangesUndefined: Self = StObject.set(x, "axisRanges", js.undefined)
+    inline def setAxisRangesUndefined: Self = StObject.set(x, "axisRanges", js.undefined)
     
-    @scala.inline
-    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
   }
 }

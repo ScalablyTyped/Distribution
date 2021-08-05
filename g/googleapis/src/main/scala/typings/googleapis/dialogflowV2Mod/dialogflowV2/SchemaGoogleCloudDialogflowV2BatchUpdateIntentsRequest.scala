@@ -43,43 +43,31 @@ trait SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequestMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest](x: Self) {
     
-    @scala.inline
-    def setIntentBatchInline(value: SchemaGoogleCloudDialogflowV2IntentBatch): Self = StObject.set(x, "intentBatchInline", value.asInstanceOf[js.Any])
+    inline def setIntentBatchInline(value: SchemaGoogleCloudDialogflowV2IntentBatch): Self = StObject.set(x, "intentBatchInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentBatchInlineUndefined: Self = StObject.set(x, "intentBatchInline", js.undefined)
+    inline def setIntentBatchInlineUndefined: Self = StObject.set(x, "intentBatchInline", js.undefined)
     
-    @scala.inline
-    def setIntentBatchUri(value: String): Self = StObject.set(x, "intentBatchUri", value.asInstanceOf[js.Any])
+    inline def setIntentBatchUri(value: String): Self = StObject.set(x, "intentBatchUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentBatchUriUndefined: Self = StObject.set(x, "intentBatchUri", js.undefined)
+    inline def setIntentBatchUriUndefined: Self = StObject.set(x, "intentBatchUri", js.undefined)
     
-    @scala.inline
-    def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
+    inline def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
+    inline def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait StopInstancesRequest extends StObject {
 }
 object StopInstancesRequest {
   
-  @scala.inline
-  def apply(InstanceIds: InstanceIdStringList): StopInstancesRequest = {
+  inline def apply(InstanceIds: InstanceIdStringList): StopInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopInstancesRequest]
   }
   
-  @scala.inline
-  implicit class StopInstancesRequestMutableBuilder[Self <: StopInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
-    @scala.inline
-    def setHibernate(value: Boolean): Self = StObject.set(x, "Hibernate", value.asInstanceOf[js.Any])
+    inline def setHibernate(value: Boolean): Self = StObject.set(x, "Hibernate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHibernateUndefined: Self = StObject.set(x, "Hibernate", js.undefined)
+    inline def setHibernateUndefined: Self = StObject.set(x, "Hibernate", js.undefined)
     
-    @scala.inline
-    def setInstanceIds(value: InstanceIdStringList): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
+    inline def setInstanceIds(value: InstanceIdStringList): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
   }
 }

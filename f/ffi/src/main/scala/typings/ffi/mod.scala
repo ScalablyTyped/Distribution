@@ -18,15 +18,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CIF(retType: js.Any, types: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def CIF(retType: js.Any, types: js.Array[js.Any], abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIF(retType: js.Any, types: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIF(retType: js.Any, types: js.Array[js.Any], abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double, abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def CIFVar(retType: js.Any, types: js.Array[js.Any], numFixedArgs: Double, abi: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("CIF_var")(retType.asInstanceOf[js.Any], types.asInstanceOf[js.Any], numFixedArgs.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @js.native
   trait Callback
@@ -70,14 +66,10 @@ object mod {
   }
   object DynamicLibrary {
     
-    @scala.inline
-    def apply(): DynamicLibrary = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[DynamicLibrary]
-    @scala.inline
-    def apply(path: String): DynamicLibrary = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[DynamicLibrary]
-    @scala.inline
-    def apply(path: String, mode: Double): DynamicLibrary = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[DynamicLibrary]
-    @scala.inline
-    def apply(path: Unit, mode: Double): DynamicLibrary = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[DynamicLibrary]
+    inline def apply(): DynamicLibrary = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[DynamicLibrary]
+    inline def apply(path: String): DynamicLibrary = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[DynamicLibrary]
+    inline def apply(path: String, mode: Double): DynamicLibrary = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[DynamicLibrary]
+    inline def apply(path: Unit, mode: Double): DynamicLibrary = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[DynamicLibrary]
     
     @JSImport("ffi", "DynamicLibrary")
     @js.native
@@ -86,20 +78,15 @@ object mod {
     @JSImport("ffi", "DynamicLibrary.FLAGS")
     @js.native
     def FLAGS: RTLDDEFAUL = js.native
-    @scala.inline
-    def FLAGS_=(x: RTLDDEFAUL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLAGS")(x.asInstanceOf[js.Any])
+    inline def FLAGS_=(x: RTLDDEFAUL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLAGS")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    implicit class DynamicLibraryMutableBuilder[Self <: DynamicLibrary] (val x: Self) extends AnyVal {
+    extension [Self <: DynamicLibrary](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Double): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Double): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: () => String): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+      inline def setError(value: () => String): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => Buffer): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Buffer): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
@@ -401,36 +388,28 @@ object mod {
     def this(ptr: Buffer, ret: Type, fixedArgs: js.Array[js.Any], abi: Double) = this()
   }
   
-  @scala.inline
-  def errno(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("errno")().asInstanceOf[Double]
+  inline def errno(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("errno")().asInstanceOf[Double]
   
   object ffiType {
     
-    @scala.inline
-    def apply(`type`: String): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def apply(`type`: String): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     /** Get a `ffi_type *` Buffer appropriate for the given type. */
-    @scala.inline
-    def apply(`type`: Type): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def apply(`type`: Type): Buffer = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     @JSImport("ffi", "ffiType")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FFI_TYPE(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")().asInstanceOf[js.Any]
+    inline def FFI_TYPE(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")().asInstanceOf[js.Any]
     /** Pass it an existing Buffer instance to use that as the backing buffer. */
-    @scala.inline
-    def FFI_TYPE(arg: typings.node.Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def FFI_TYPE(arg: typings.node.Buffer, data: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def FFI_TYPE(data: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def FFI_TYPE(arg: typings.node.Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def FFI_TYPE(arg: typings.node.Buffer, data: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(arg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def FFI_TYPE(data: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FFI_TYPE")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @JSImport("ffi", "ffiType.FFI_TYPE")
     @js.native
     def FFI_TYPE_FffiType: StructType = js.native
     
-    @scala.inline
-    def FFI_TYPE_FffiType_=(x: StructType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FFI_TYPE")(x.asInstanceOf[js.Any])
+    inline def FFI_TYPE_FffiType_=(x: StructType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FFI_TYPE")(x.asInstanceOf[js.Any])
   }
   
   object types {
@@ -442,44 +421,37 @@ object mod {
     @JSImport("ffi", "types.CString")
     @js.native
     def CString: Type = js.native
-    @scala.inline
-    def CString_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CString")(x.asInstanceOf[js.Any])
+    inline def CString_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CString")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.Object")
     @js.native
     def Object: Type = js.native
-    @scala.inline
-    def Object_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+    inline def Object_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.bool")
     @js.native
     def bool: Type = js.native
-    @scala.inline
-    def bool_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
+    inline def bool_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.byte")
     @js.native
     def byte: Type = js.native
-    @scala.inline
-    def byte_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byte")(x.asInstanceOf[js.Any])
+    inline def byte_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byte")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.char")
     @js.native
     def char: Type = js.native
-    @scala.inline
-    def char_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("char")(x.asInstanceOf[js.Any])
+    inline def char_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("char")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.double")
     @js.native
     def double: Type = js.native
-    @scala.inline
-    def double_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("double")(x.asInstanceOf[js.Any])
+    inline def double_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("double")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.float")
     @js.native
     def float: Type = js.native
-    @scala.inline
-    def float_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("float")(x.asInstanceOf[js.Any])
+    inline def float_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("float")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.int")
     @js.native
@@ -488,60 +460,50 @@ object mod {
     @JSImport("ffi", "types.int16")
     @js.native
     def int16: Type = js.native
-    @scala.inline
-    def int16_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int16")(x.asInstanceOf[js.Any])
+    inline def int16_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int16")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.int32")
     @js.native
     def int32: Type = js.native
-    @scala.inline
-    def int32_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int32")(x.asInstanceOf[js.Any])
+    inline def int32_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int32")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.int64")
     @js.native
     def int64: Type = js.native
-    @scala.inline
-    def int64_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int64")(x.asInstanceOf[js.Any])
+    inline def int64_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int64")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.int8")
     @js.native
     def int8: Type = js.native
-    @scala.inline
-    def int8_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int8")(x.asInstanceOf[js.Any])
+    inline def int8_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int8")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def int_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
+    inline def int_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.long")
     @js.native
     def long: Type = js.native
-    @scala.inline
-    def long_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("long")(x.asInstanceOf[js.Any])
+    inline def long_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("long")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.longlong")
     @js.native
     def longlong: Type = js.native
-    @scala.inline
-    def longlong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longlong")(x.asInstanceOf[js.Any])
+    inline def longlong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longlong")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.short")
     @js.native
     def short: Type = js.native
-    @scala.inline
-    def short_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("short")(x.asInstanceOf[js.Any])
+    inline def short_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("short")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.size_t")
     @js.native
     def sizeT: Type = js.native
     
-    @scala.inline
-    def sizeT_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size_t")(x.asInstanceOf[js.Any])
+    inline def sizeT_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size_t")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.uchar")
     @js.native
     def uchar: Type = js.native
-    @scala.inline
-    def uchar_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uchar")(x.asInstanceOf[js.Any])
+    inline def uchar_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uchar")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.uint")
     @js.native
@@ -550,52 +512,43 @@ object mod {
     @JSImport("ffi", "types.uint16")
     @js.native
     def uint16: Type = js.native
-    @scala.inline
-    def uint16_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint16")(x.asInstanceOf[js.Any])
+    inline def uint16_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint16")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.uint32")
     @js.native
     def uint32: Type = js.native
-    @scala.inline
-    def uint32_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint32")(x.asInstanceOf[js.Any])
+    inline def uint32_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint32")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.uint64")
     @js.native
     def uint64: Type = js.native
-    @scala.inline
-    def uint64_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint64")(x.asInstanceOf[js.Any])
+    inline def uint64_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint64")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.uint8")
     @js.native
     def uint8: Type = js.native
-    @scala.inline
-    def uint8_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint8")(x.asInstanceOf[js.Any])
+    inline def uint8_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint8")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def uint_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint")(x.asInstanceOf[js.Any])
+    inline def uint_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.ulong")
     @js.native
     def ulong: Type = js.native
-    @scala.inline
-    def ulong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ulong")(x.asInstanceOf[js.Any])
+    inline def ulong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ulong")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.ulonglong")
     @js.native
     def ulonglong: Type = js.native
-    @scala.inline
-    def ulonglong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ulonglong")(x.asInstanceOf[js.Any])
+    inline def ulonglong_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ulonglong")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.ushort")
     @js.native
     def ushort: Type = js.native
-    @scala.inline
-    def ushort_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ushort")(x.asInstanceOf[js.Any])
+    inline def ushort_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ushort")(x.asInstanceOf[js.Any])
     
     @JSImport("ffi", "types.void")
     @js.native
     def void: Type = js.native
-    @scala.inline
-    def void_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("void")(x.asInstanceOf[js.Any])
+    inline def void_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("void")(x.asInstanceOf[js.Any])
   }
 }

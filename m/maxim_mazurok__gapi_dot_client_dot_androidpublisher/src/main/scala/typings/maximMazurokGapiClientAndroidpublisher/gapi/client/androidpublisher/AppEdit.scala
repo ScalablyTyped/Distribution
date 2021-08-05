@@ -14,25 +14,19 @@ trait AppEdit extends StObject {
 }
 object AppEdit {
   
-  @scala.inline
-  def apply(): AppEdit = {
+  inline def apply(): AppEdit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppEdit]
   }
   
-  @scala.inline
-  implicit class AppEditMutableBuilder[Self <: AppEdit] (val x: Self) extends AnyVal {
+  extension [Self <: AppEdit](x: Self) {
     
-    @scala.inline
-    def setExpiryTimeSeconds(value: String): Self = StObject.set(x, "expiryTimeSeconds", value.asInstanceOf[js.Any])
+    inline def setExpiryTimeSeconds(value: String): Self = StObject.set(x, "expiryTimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryTimeSecondsUndefined: Self = StObject.set(x, "expiryTimeSeconds", js.undefined)
+    inline def setExpiryTimeSecondsUndefined: Self = StObject.set(x, "expiryTimeSeconds", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

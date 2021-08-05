@@ -26,49 +26,35 @@ trait GooglePrivacyDlpV2Action extends StObject {
 }
 object GooglePrivacyDlpV2Action {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Action = {
+  inline def apply(): GooglePrivacyDlpV2Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Action]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ActionMutableBuilder[Self <: GooglePrivacyDlpV2Action] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Action](x: Self) {
     
-    @scala.inline
-    def setJobNotificationEmails(value: js.Any): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
+    inline def setJobNotificationEmails(value: js.Any): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNotificationEmailsUndefined: Self = StObject.set(x, "jobNotificationEmails", js.undefined)
+    inline def setJobNotificationEmailsUndefined: Self = StObject.set(x, "jobNotificationEmails", js.undefined)
     
-    @scala.inline
-    def setPubSub(value: GooglePrivacyDlpV2PublishToPubSub): Self = StObject.set(x, "pubSub", value.asInstanceOf[js.Any])
+    inline def setPubSub(value: GooglePrivacyDlpV2PublishToPubSub): Self = StObject.set(x, "pubSub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubSubUndefined: Self = StObject.set(x, "pubSub", js.undefined)
+    inline def setPubSubUndefined: Self = StObject.set(x, "pubSub", js.undefined)
     
-    @scala.inline
-    def setPublishFindingsToCloudDataCatalog(value: js.Any): Self = StObject.set(x, "publishFindingsToCloudDataCatalog", value.asInstanceOf[js.Any])
+    inline def setPublishFindingsToCloudDataCatalog(value: js.Any): Self = StObject.set(x, "publishFindingsToCloudDataCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishFindingsToCloudDataCatalogUndefined: Self = StObject.set(x, "publishFindingsToCloudDataCatalog", js.undefined)
+    inline def setPublishFindingsToCloudDataCatalogUndefined: Self = StObject.set(x, "publishFindingsToCloudDataCatalog", js.undefined)
     
-    @scala.inline
-    def setPublishSummaryToCscc(value: js.Any): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
+    inline def setPublishSummaryToCscc(value: js.Any): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishSummaryToCsccUndefined: Self = StObject.set(x, "publishSummaryToCscc", js.undefined)
+    inline def setPublishSummaryToCsccUndefined: Self = StObject.set(x, "publishSummaryToCscc", js.undefined)
     
-    @scala.inline
-    def setPublishToStackdriver(value: js.Any): Self = StObject.set(x, "publishToStackdriver", value.asInstanceOf[js.Any])
+    inline def setPublishToStackdriver(value: js.Any): Self = StObject.set(x, "publishToStackdriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishToStackdriverUndefined: Self = StObject.set(x, "publishToStackdriver", js.undefined)
+    inline def setPublishToStackdriverUndefined: Self = StObject.set(x, "publishToStackdriver", js.undefined)
     
-    @scala.inline
-    def setSaveFindings(value: GooglePrivacyDlpV2SaveFindings): Self = StObject.set(x, "saveFindings", value.asInstanceOf[js.Any])
+    inline def setSaveFindings(value: GooglePrivacyDlpV2SaveFindings): Self = StObject.set(x, "saveFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveFindingsUndefined: Self = StObject.set(x, "saveFindings", js.undefined)
+    inline def setSaveFindingsUndefined: Self = StObject.set(x, "saveFindings", js.undefined)
   }
 }

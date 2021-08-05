@@ -13,19 +13,15 @@ trait LocalIpDetails extends StObject {
 }
 object LocalIpDetails {
   
-  @scala.inline
-  def apply(): LocalIpDetails = {
+  inline def apply(): LocalIpDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalIpDetails]
   }
   
-  @scala.inline
-  implicit class LocalIpDetailsMutableBuilder[Self <: LocalIpDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LocalIpDetails](x: Self) {
     
-    @scala.inline
-    def setIpAddressV4(value: String): Self = StObject.set(x, "IpAddressV4", value.asInstanceOf[js.Any])
+    inline def setIpAddressV4(value: String): Self = StObject.set(x, "IpAddressV4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressV4Undefined: Self = StObject.set(x, "IpAddressV4", js.undefined)
+    inline def setIpAddressV4Undefined: Self = StObject.set(x, "IpAddressV4", js.undefined)
   }
 }

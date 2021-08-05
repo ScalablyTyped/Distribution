@@ -18,19 +18,15 @@ trait DetectSentimentRequest extends StObject {
 }
 object DetectSentimentRequest {
   
-  @scala.inline
-  def apply(LanguageCode: LanguageCode, Text: CustomerInputString): DetectSentimentRequest = {
+  inline def apply(LanguageCode: LanguageCode, Text: CustomerInputString): DetectSentimentRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectSentimentRequest]
   }
   
-  @scala.inline
-  implicit class DetectSentimentRequestMutableBuilder[Self <: DetectSentimentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectSentimentRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -126,6 +126,5 @@ object Constraint {
     * @param {} options
     * @return {constraint} constraint
     */
-  @scala.inline
-  def create(options: IConstraintDefinition): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  inline def create(options: IConstraintDefinition): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Constraint]
 }

@@ -23,25 +23,19 @@ trait SchemaTransactionOptions extends StObject {
 }
 object SchemaTransactionOptions {
   
-  @scala.inline
-  def apply(): SchemaTransactionOptions = {
+  inline def apply(): SchemaTransactionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTransactionOptions]
   }
   
-  @scala.inline
-  implicit class SchemaTransactionOptionsMutableBuilder[Self <: SchemaTransactionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTransactionOptions](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: SchemaReadOnly): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: SchemaReadOnly): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setReadWrite(value: SchemaReadWrite): Self = StObject.set(x, "readWrite", value.asInstanceOf[js.Any])
+    inline def setReadWrite(value: SchemaReadWrite): Self = StObject.set(x, "readWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadWriteUndefined: Self = StObject.set(x, "readWrite", js.undefined)
+    inline def setReadWriteUndefined: Self = StObject.set(x, "readWrite", js.undefined)
   }
 }

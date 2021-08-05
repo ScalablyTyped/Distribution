@@ -20,49 +20,35 @@ trait ConstructorParams extends StObject {
 }
 object ConstructorParams {
   
-  @scala.inline
-  def apply(): ConstructorParams = {
+  inline def apply(): ConstructorParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstructorParams]
   }
   
-  @scala.inline
-  implicit class ConstructorParamsMutableBuilder[Self <: ConstructorParams] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorParams](x: Self) {
     
-    @scala.inline
-    def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+    inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
+    inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
     
-    @scala.inline
-    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+    inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
-    @scala.inline
-    def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

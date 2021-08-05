@@ -24,48 +24,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointerEventsProperty extends StObject
 object PointerEventsProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def all: typings.preact.preactStrings.all = "all".asInstanceOf[typings.preact.preactStrings.all]
+  inline def all: typings.preact.preactStrings.all = "all".asInstanceOf[typings.preact.preactStrings.all]
   
-  @scala.inline
-  def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
+  inline def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
   
-  @scala.inline
-  def fill: typings.preact.preactStrings.fill = "fill".asInstanceOf[typings.preact.preactStrings.fill]
+  inline def fill: typings.preact.preactStrings.fill = "fill".asInstanceOf[typings.preact.preactStrings.fill]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
+  inline def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
   
-  @scala.inline
-  def painted: typings.preact.preactStrings.painted = "painted".asInstanceOf[typings.preact.preactStrings.painted]
+  inline def painted: typings.preact.preactStrings.painted = "painted".asInstanceOf[typings.preact.preactStrings.painted]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def stroke: typings.preact.preactStrings.stroke = "stroke".asInstanceOf[typings.preact.preactStrings.stroke]
+  inline def stroke: typings.preact.preactStrings.stroke = "stroke".asInstanceOf[typings.preact.preactStrings.stroke]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
   
-  @scala.inline
-  def visible: typings.preact.preactStrings.visible = "visible".asInstanceOf[typings.preact.preactStrings.visible]
+  inline def visible: typings.preact.preactStrings.visible = "visible".asInstanceOf[typings.preact.preactStrings.visible]
   
-  @scala.inline
-  def visibleFill: typings.preact.preactStrings.visibleFill = "visibleFill".asInstanceOf[typings.preact.preactStrings.visibleFill]
+  inline def visibleFill: typings.preact.preactStrings.visibleFill = "visibleFill".asInstanceOf[typings.preact.preactStrings.visibleFill]
   
-  @scala.inline
-  def visiblePainted: typings.preact.preactStrings.visiblePainted = "visiblePainted".asInstanceOf[typings.preact.preactStrings.visiblePainted]
+  inline def visiblePainted: typings.preact.preactStrings.visiblePainted = "visiblePainted".asInstanceOf[typings.preact.preactStrings.visiblePainted]
   
-  @scala.inline
-  def visibleStroke: typings.preact.preactStrings.visibleStroke = "visibleStroke".asInstanceOf[typings.preact.preactStrings.visibleStroke]
+  inline def visibleStroke: typings.preact.preactStrings.visibleStroke = "visibleStroke".asInstanceOf[typings.preact.preactStrings.visibleStroke]
 }

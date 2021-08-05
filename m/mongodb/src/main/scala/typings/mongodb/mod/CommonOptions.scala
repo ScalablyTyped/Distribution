@@ -12,19 +12,15 @@ trait CommonOptions
 }
 object CommonOptions {
   
-  @scala.inline
-  def apply(): CommonOptions = {
+  inline def apply(): CommonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonOptions]
   }
   
-  @scala.inline
-  implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommonOptions](x: Self) {
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

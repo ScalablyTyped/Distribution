@@ -16,19 +16,15 @@ trait `14` extends StObject {
 }
 object `14` {
   
-  @scala.inline
-  def apply(): `14` = {
+  inline def apply(): `14` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`14`]
   }
   
-  @scala.inline
-  implicit class `14MutableBuilder`[Self <: `14`] (val x: Self) extends AnyVal {
+  extension [Self <: `14`](x: Self) {
     
-    @scala.inline
-    def setAreaColor(value: BorderType): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
+    inline def setAreaColor(value: BorderType): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
+    inline def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
   }
 }

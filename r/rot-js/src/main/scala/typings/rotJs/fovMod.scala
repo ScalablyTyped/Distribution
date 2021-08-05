@@ -21,8 +21,7 @@ object fovMod {
     @JSImport("rot-js/lib/fov", "default.DiscreteShadowcasting")
     @js.native
     def DiscreteShadowcasting: Instantiable0[typings.rotJs.discreteShadowcastingMod.default] = js.native
-    @scala.inline
-    def DiscreteShadowcasting_=(x: Instantiable0[typings.rotJs.discreteShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DiscreteShadowcasting")(x.asInstanceOf[js.Any])
+    inline def DiscreteShadowcasting_=(x: Instantiable0[typings.rotJs.discreteShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DiscreteShadowcasting")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/fov", "default.PreciseShadowcasting")
@@ -32,8 +31,7 @@ object fovMod {
     @JSImport("rot-js/lib/fov", "default.PreciseShadowcasting")
     @js.native
     def PreciseShadowcasting: Instantiable0[typings.rotJs.preciseShadowcastingMod.default] = js.native
-    @scala.inline
-    def PreciseShadowcasting_=(x: Instantiable0[typings.rotJs.preciseShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PreciseShadowcasting")(x.asInstanceOf[js.Any])
+    inline def PreciseShadowcasting_=(x: Instantiable0[typings.rotJs.preciseShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PreciseShadowcasting")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/fov", "default.RecursiveShadowcasting")
@@ -43,7 +41,6 @@ object fovMod {
     @JSImport("rot-js/lib/fov", "default.RecursiveShadowcasting")
     @js.native
     def RecursiveShadowcasting: Instantiable0[typings.rotJs.recursiveShadowcastingMod.default] = js.native
-    @scala.inline
-    def RecursiveShadowcasting_=(x: Instantiable0[typings.rotJs.recursiveShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RecursiveShadowcasting")(x.asInstanceOf[js.Any])
+    inline def RecursiveShadowcasting_=(x: Instantiable0[typings.rotJs.recursiveShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RecursiveShadowcasting")(x.asInstanceOf[js.Any])
   }
 }

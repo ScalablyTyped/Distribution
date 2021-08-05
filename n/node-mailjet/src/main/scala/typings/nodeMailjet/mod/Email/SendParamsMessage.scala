@@ -50,148 +50,101 @@ trait SendParamsMessage extends StObject {
 }
 object SendParamsMessage {
   
-  @scala.inline
-  def apply(From: typings.nodeMailjet.anon.Email, To: js.Array[SendParamsRecipient]): SendParamsMessage = {
+  inline def apply(From: typings.nodeMailjet.anon.Email, To: js.Array[SendParamsRecipient]): SendParamsMessage = {
     val __obj = js.Dynamic.literal(From = From.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendParamsMessage]
   }
   
-  @scala.inline
-  implicit class SendParamsMessageMutableBuilder[Self <: SendParamsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SendParamsMessage](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setBcc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
+    inline def setBcc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccUndefined: Self = StObject.set(x, "Bcc", js.undefined)
+    inline def setBccUndefined: Self = StObject.set(x, "Bcc", js.undefined)
     
-    @scala.inline
-    def setBccVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
+    inline def setBccVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
     
-    @scala.inline
-    def setCc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcUndefined: Self = StObject.set(x, "Cc", js.undefined)
+    inline def setCcUndefined: Self = StObject.set(x, "Cc", js.undefined)
     
-    @scala.inline
-    def setCcVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Cc", js.Array(value :_*))
+    inline def setCcVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Cc", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomCampaign(value: String): Self = StObject.set(x, "CustomCampaign", value.asInstanceOf[js.Any])
+    inline def setCustomCampaign(value: String): Self = StObject.set(x, "CustomCampaign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomCampaignUndefined: Self = StObject.set(x, "CustomCampaign", js.undefined)
+    inline def setCustomCampaignUndefined: Self = StObject.set(x, "CustomCampaign", js.undefined)
     
-    @scala.inline
-    def setCustomID(value: String): Self = StObject.set(x, "CustomID", value.asInstanceOf[js.Any])
+    inline def setCustomID(value: String): Self = StObject.set(x, "CustomID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomIDUndefined: Self = StObject.set(x, "CustomID", js.undefined)
+    inline def setCustomIDUndefined: Self = StObject.set(x, "CustomID", js.undefined)
     
-    @scala.inline
-    def setDeduplicateCampaign(value: Boolean): Self = StObject.set(x, "DeduplicateCampaign", value.asInstanceOf[js.Any])
+    inline def setDeduplicateCampaign(value: Boolean): Self = StObject.set(x, "DeduplicateCampaign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeduplicateCampaignUndefined: Self = StObject.set(x, "DeduplicateCampaign", js.undefined)
+    inline def setDeduplicateCampaignUndefined: Self = StObject.set(x, "DeduplicateCampaign", js.undefined)
     
-    @scala.inline
-    def setEventPayload(value: String): Self = StObject.set(x, "EventPayload", value.asInstanceOf[js.Any])
+    inline def setEventPayload(value: String): Self = StObject.set(x, "EventPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPayloadUndefined: Self = StObject.set(x, "EventPayload", js.undefined)
+    inline def setEventPayloadUndefined: Self = StObject.set(x, "EventPayload", js.undefined)
     
-    @scala.inline
-    def setFrom(value: typings.nodeMailjet.anon.Email): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: typings.nodeMailjet.anon.Email): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLPart(value: String): Self = StObject.set(x, "HTMLPart", value.asInstanceOf[js.Any])
+    inline def setHTMLPart(value: String): Self = StObject.set(x, "HTMLPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLPartUndefined: Self = StObject.set(x, "HTMLPart", js.undefined)
+    inline def setHTMLPartUndefined: Self = StObject.set(x, "HTMLPart", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
-    @scala.inline
-    def setInlinedAttachments(value: js.Array[InlinedAttachment]): Self = StObject.set(x, "InlinedAttachments", value.asInstanceOf[js.Any])
+    inline def setInlinedAttachments(value: js.Array[InlinedAttachment]): Self = StObject.set(x, "InlinedAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlinedAttachmentsUndefined: Self = StObject.set(x, "InlinedAttachments", js.undefined)
+    inline def setInlinedAttachmentsUndefined: Self = StObject.set(x, "InlinedAttachments", js.undefined)
     
-    @scala.inline
-    def setInlinedAttachmentsVarargs(value: InlinedAttachment*): Self = StObject.set(x, "InlinedAttachments", js.Array(value :_*))
+    inline def setInlinedAttachmentsVarargs(value: InlinedAttachment*): Self = StObject.set(x, "InlinedAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setMonitoringCategory(value: String): Self = StObject.set(x, "MonitoringCategory", value.asInstanceOf[js.Any])
+    inline def setMonitoringCategory(value: String): Self = StObject.set(x, "MonitoringCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringCategoryUndefined: Self = StObject.set(x, "MonitoringCategory", js.undefined)
+    inline def setMonitoringCategoryUndefined: Self = StObject.set(x, "MonitoringCategory", js.undefined)
     
-    @scala.inline
-    def setReplyTo(value: SendParamsRecipient): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
+    inline def setReplyTo(value: SendParamsRecipient): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
+    inline def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
     
-    @scala.inline
-    def setSender(value: typings.nodeMailjet.anon.Email): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: typings.nodeMailjet.anon.Email): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "Sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "Sender", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     
-    @scala.inline
-    def setTemplateID(value: Double): Self = StObject.set(x, "TemplateID", value.asInstanceOf[js.Any])
+    inline def setTemplateID(value: Double): Self = StObject.set(x, "TemplateID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIDUndefined: Self = StObject.set(x, "TemplateID", js.undefined)
+    inline def setTemplateIDUndefined: Self = StObject.set(x, "TemplateID", js.undefined)
     
-    @scala.inline
-    def setTemplateLanguage(value: Boolean): Self = StObject.set(x, "TemplateLanguage", value.asInstanceOf[js.Any])
+    inline def setTemplateLanguage(value: Boolean): Self = StObject.set(x, "TemplateLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateLanguageUndefined: Self = StObject.set(x, "TemplateLanguage", js.undefined)
+    inline def setTemplateLanguageUndefined: Self = StObject.set(x, "TemplateLanguage", js.undefined)
     
-    @scala.inline
-    def setTextPart(value: String): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
+    inline def setTextPart(value: String): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
+    inline def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
     
-    @scala.inline
-    def setTo(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "To", js.Array(value :_*))
+    inline def setToVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "To", js.Array(value :_*))
     
-    @scala.inline
-    def setURLTags(value: String): Self = StObject.set(x, "URLTags", value.asInstanceOf[js.Any])
+    inline def setURLTags(value: String): Self = StObject.set(x, "URLTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURLTagsUndefined: Self = StObject.set(x, "URLTags", js.undefined)
+    inline def setURLTagsUndefined: Self = StObject.set(x, "URLTags", js.undefined)
     
-    @scala.inline
-    def setVariables(value: js.Object): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: js.Object): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
   }
 }

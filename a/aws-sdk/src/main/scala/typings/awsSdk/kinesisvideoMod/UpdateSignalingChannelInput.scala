@@ -23,25 +23,19 @@ trait UpdateSignalingChannelInput extends StObject {
 }
 object UpdateSignalingChannelInput {
   
-  @scala.inline
-  def apply(ChannelARN: ResourceARN, CurrentVersion: Version): UpdateSignalingChannelInput = {
+  inline def apply(ChannelARN: ResourceARN, CurrentVersion: Version): UpdateSignalingChannelInput = {
     val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSignalingChannelInput]
   }
   
-  @scala.inline
-  implicit class UpdateSignalingChannelInputMutableBuilder[Self <: UpdateSignalingChannelInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSignalingChannelInput](x: Self) {
     
-    @scala.inline
-    def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
+    inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = StObject.set(x, "SingleMasterConfiguration", value.asInstanceOf[js.Any])
+    inline def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = StObject.set(x, "SingleMasterConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleMasterConfigurationUndefined: Self = StObject.set(x, "SingleMasterConfiguration", js.undefined)
+    inline def setSingleMasterConfigurationUndefined: Self = StObject.set(x, "SingleMasterConfiguration", js.undefined)
   }
 }

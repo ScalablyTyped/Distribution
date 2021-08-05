@@ -38,49 +38,35 @@ trait Stream extends StObject {
 }
 object Stream {
   
-  @scala.inline
-  def apply(): Stream = {
+  inline def apply(): Stream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Stream]
   }
   
-  @scala.inline
-  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+  extension [Self <: Stream](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "channelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "channelArn", js.undefined)
     
-    @scala.inline
-    def setHealth(value: StreamHealth): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+    inline def setHealth(value: StreamHealth): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
+    inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
-    @scala.inline
-    def setPlaybackUrl(value: PlaybackURL): Self = StObject.set(x, "playbackUrl", value.asInstanceOf[js.Any])
+    inline def setPlaybackUrl(value: PlaybackURL): Self = StObject.set(x, "playbackUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaybackUrlUndefined: Self = StObject.set(x, "playbackUrl", js.undefined)
+    inline def setPlaybackUrlUndefined: Self = StObject.set(x, "playbackUrl", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: StreamStartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: StreamStartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setState(value: StreamState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: StreamState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setViewerCount(value: StreamViewerCount): Self = StObject.set(x, "viewerCount", value.asInstanceOf[js.Any])
+    inline def setViewerCount(value: StreamViewerCount): Self = StObject.set(x, "viewerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewerCountUndefined: Self = StObject.set(x, "viewerCount", js.undefined)
+    inline def setViewerCountUndefined: Self = StObject.set(x, "viewerCount", js.undefined)
   }
 }

@@ -37,45 +37,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetOptionEnum extends StObject
 object SetOptionEnum {
   
-  @scala.inline
-  def dbExclusiveAsyncDelay: `60` = 60.asInstanceOf[`60`]
+  inline def dbExclusiveAsyncDelay: `60` = 60.asInstanceOf[`60`]
   
-  @scala.inline
-  def dbFlushTransactionTimeout: `66` = 66.asInstanceOf[`66`]
+  inline def dbFlushTransactionTimeout: `66` = 66.asInstanceOf[`66`]
   
-  @scala.inline
-  def dbImplicitCommitSync: `59` = 59.asInstanceOf[`59`]
+  inline def dbImplicitCommitSync: `59` = 59.asInstanceOf[`59`]
   
-  @scala.inline
-  def dbLockDelay: `63` = 63.asInstanceOf[`63`]
+  inline def dbLockDelay: `63` = 63.asInstanceOf[`63`]
   
-  @scala.inline
-  def dbLockRetry: `57` = 57.asInstanceOf[`57`]
+  inline def dbLockRetry: `57` = 57.asInstanceOf[`57`]
   
-  @scala.inline
-  def dbMaxBufferSize: `8` = 8.asInstanceOf[`8`]
+  inline def dbMaxBufferSize: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def dbMaxLocksPerFile: `62` = 62.asInstanceOf[`62`]
+  inline def dbMaxLocksPerFile: `62` = 62.asInstanceOf[`62`]
   
-  @scala.inline
-  def dbPageTimeout: `6` = 6.asInstanceOf[`6`]
+  inline def dbPageTimeout: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def dbPasswordEncryptionAlgorithm: `81` = 81.asInstanceOf[`81`]
+  inline def dbPasswordEncryptionAlgorithm: `81` = 81.asInstanceOf[`81`]
   
-  @scala.inline
-  def dbPasswordEncryptionKeyLength: `82` = 82.asInstanceOf[`82`]
+  inline def dbPasswordEncryptionKeyLength: `82` = 82.asInstanceOf[`82`]
   
-  @scala.inline
-  def dbPasswordEncryptionProvider: `80` = 80.asInstanceOf[`80`]
+  inline def dbPasswordEncryptionProvider: `80` = 80.asInstanceOf[`80`]
   
-  @scala.inline
-  def dbRecycleLVs: `65` = 65.asInstanceOf[`65`]
+  inline def dbRecycleLVs: `65` = 65.asInstanceOf[`65`]
   
-  @scala.inline
-  def dbSharedAsyncDelay: `61` = 61.asInstanceOf[`61`]
+  inline def dbSharedAsyncDelay: `61` = 61.asInstanceOf[`61`]
   
-  @scala.inline
-  def dbUserCommitSync: `58` = 58.asInstanceOf[`58`]
+  inline def dbUserCommitSync: `58` = 58.asInstanceOf[`58`]
 }

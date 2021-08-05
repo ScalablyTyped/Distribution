@@ -19,43 +19,31 @@ trait ModalProps extends StObject {
 }
 object ModalProps {
   
-  @scala.inline
-  def apply(): ModalProps = {
+  inline def apply(): ModalProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalProps]
   }
   
-  @scala.inline
-  implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+  extension [Self <: ModalProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
-    @scala.inline
-    def setSize(value: ModalSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: ModalSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

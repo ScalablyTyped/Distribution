@@ -13,17 +13,14 @@ trait JSXBoundaryElement
 }
 object JSXBoundaryElement {
   
-  @scala.inline
-  def apply(name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName, `type`: String): JSXBoundaryElement = {
+  inline def apply(name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName, `type`: String): JSXBoundaryElement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSXBoundaryElement]
   }
   
-  @scala.inline
-  implicit class JSXBoundaryElementMutableBuilder[Self <: JSXBoundaryElement] (val x: Self) extends AnyVal {
+  extension [Self <: JSXBoundaryElement](x: Self) {
     
-    @scala.inline
-    def setName(value: JSXIdentifier | JSXMemberExpression | JSXNamespacedName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: JSXIdentifier | JSXMemberExpression | JSXNamespacedName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

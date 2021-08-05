@@ -17,31 +17,23 @@ trait PubsubSnapshotMetadata extends StObject {
 }
 object PubsubSnapshotMetadata {
   
-  @scala.inline
-  def apply(): PubsubSnapshotMetadata = {
+  inline def apply(): PubsubSnapshotMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PubsubSnapshotMetadata]
   }
   
-  @scala.inline
-  implicit class PubsubSnapshotMetadataMutableBuilder[Self <: PubsubSnapshotMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PubsubSnapshotMetadata](x: Self) {
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setSnapshotName(value: String): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
+    inline def setSnapshotName(value: String): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotNameUndefined: Self = StObject.set(x, "snapshotName", js.undefined)
+    inline def setSnapshotNameUndefined: Self = StObject.set(x, "snapshotName", js.undefined)
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

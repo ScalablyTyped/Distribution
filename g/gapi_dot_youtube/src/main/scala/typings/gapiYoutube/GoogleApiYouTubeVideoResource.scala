@@ -84,8 +84,7 @@ trait GoogleApiYouTubeVideoResource extends StObject {
 }
 object GoogleApiYouTubeVideoResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentDetails: Caption,
     etag: String,
     fileDetails: AudioStreams,
@@ -104,46 +103,32 @@ object GoogleApiYouTubeVideoResource {
     __obj.asInstanceOf[GoogleApiYouTubeVideoResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubeVideoResourceMutableBuilder[Self <: GoogleApiYouTubeVideoResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubeVideoResource](x: Self) {
     
-    @scala.inline
-    def setContentDetails(value: Caption): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: Caption): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDetails(value: AudioStreams): Self = StObject.set(x, "fileDetails", value.asInstanceOf[js.Any])
+    inline def setFileDetails(value: AudioStreams): Self = StObject.set(x, "fileDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer(value: EmbedHtml): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: EmbedHtml): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingDetails(value: EditorSuggestionsAvailability): Self = StObject.set(x, "processingDetails", value.asInstanceOf[js.Any])
+    inline def setProcessingDetails(value: EditorSuggestionsAvailability): Self = StObject.set(x, "processingDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingDetails(value: Location): Self = StObject.set(x, "recordingDetails", value.asInstanceOf[js.Any])
+    inline def setRecordingDetails(value: Location): Self = StObject.set(x, "recordingDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippet(value: CategoryId): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: CategoryId): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: DislikeCount): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: DislikeCount): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Embeddable): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Embeddable): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestions(value: EditorSuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: EditorSuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicDetails(value: TopicIds): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
+    inline def setTopicDetails(value: TopicIds): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
   }
 }

@@ -28,131 +28,131 @@ object checkerMod {
     def this(options: Unit, lineOffsetMap: LineOffsetMap) = this()
     def this(options: CompilerOptions, lineOffsetMap: LineOffsetMap) = this()
     
-    var bindings: js.Any = js.native
+    /* private */ var bindings: js.Any = js.native
     
-    var cancelToken: js.Any = js.native
+    /* private */ var cancelToken: js.Any = js.native
     
-    var checkArgument: js.Any = js.native
+    /* private */ var checkArgument: js.Any = js.native
     
-    var checkArgumentList: js.Any = js.native
+    /* private */ var checkArgumentList: js.Any = js.native
     
-    var checkAssertion: js.Any = js.native
+    /* private */ var checkAssertion: js.Any = js.native
     
-    var checkButNotSymbol: js.Any = js.native
+    /* private */ var checkButNotSymbol: js.Any = js.native
     
-    var checkButNotSymbolOrHigher: js.Any = js.native
+    /* private */ var checkButNotSymbolOrHigher: js.Any = js.native
     
-    var checkConstraints: js.Any = js.native
+    /* private */ var checkConstraints: js.Any = js.native
     
-    var checkEmptyAssertion: js.Any = js.native
+    /* private */ var checkEmptyAssertion: js.Any = js.native
     
-    var checkGrammarArgument: js.Any = js.native
+    /* private */ var checkGrammarArgument: js.Any = js.native
     
-    var checkGrammarArgumentList: js.Any = js.native
+    /* private */ var checkGrammarArgumentList: js.Any = js.native
     
-    var checkGrammarAssertionHead: js.Any = js.native
+    /* private */ var checkGrammarAssertionHead: js.Any = js.native
     
-    var checkGrammarAssertionTail: js.Any = js.native
+    /* private */ var checkGrammarAssertionTail: js.Any = js.native
     
-    var checkGrammarButNotSymbol: js.Any = js.native
+    /* private */ var checkGrammarButNotSymbol: js.Any = js.native
     
-    var checkGrammarConstraints: js.Any = js.native
+    /* private */ var checkGrammarConstraints: js.Any = js.native
     
-    var checkGrammarDefine: js.Any = js.native
+    /* private */ var checkGrammarDefine: js.Any = js.native
     
-    var checkGrammarEmptyAssertion: js.Any = js.native
+    /* private */ var checkGrammarEmptyAssertion: js.Any = js.native
     
-    var checkGrammarIdentifier: js.Any = js.native
+    /* private */ var checkGrammarIdentifier: js.Any = js.native
     
-    var checkGrammarLexicalGoalAssertion: js.Any = js.native
+    /* private */ var checkGrammarLexicalGoalAssertion: js.Any = js.native
     
-    var checkGrammarLine: js.Any = js.native
+    /* private */ var checkGrammarLine: js.Any = js.native
     
-    var checkGrammarLinkReference: js.Any = js.native
+    /* private */ var checkGrammarLinkReference: js.Any = js.native
     
-    var checkGrammarLookaheadAssertion: js.Any = js.native
+    /* private */ var checkGrammarLookaheadAssertion: js.Any = js.native
     
-    var checkGrammarNoSymbolHereAssertion: js.Any = js.native
+    /* private */ var checkGrammarNoSymbolHereAssertion: js.Any = js.native
     
-    var checkGrammarNonTerminal: js.Any = js.native
+    /* private */ var checkGrammarNonTerminal: js.Any = js.native
     
-    var checkGrammarOneOfList: js.Any = js.native
+    /* private */ var checkGrammarOneOfList: js.Any = js.native
     
-    var checkGrammarOneOfSymbol: js.Any = js.native
+    /* private */ var checkGrammarOneOfSymbol: js.Any = js.native
     
-    var checkGrammarOptionalSymbol: js.Any = js.native
+    /* private */ var checkGrammarOptionalSymbol: js.Any = js.native
     
-    var checkGrammarParameterList: js.Any = js.native
+    /* private */ var checkGrammarParameterList: js.Any = js.native
     
-    var checkGrammarProduction: js.Any = js.native
+    /* private */ var checkGrammarProduction: js.Any = js.native
     
-    var checkGrammarProseAssertionHead: js.Any = js.native
+    /* private */ var checkGrammarProseAssertionHead: js.Any = js.native
     
-    var checkGrammarRightHandSide: js.Any = js.native
+    /* private */ var checkGrammarRightHandSide: js.Any = js.native
     
-    var checkGrammarRightHandSideList: js.Any = js.native
+    /* private */ var checkGrammarRightHandSideList: js.Any = js.native
     
-    var checkGrammarSymbolSet: js.Any = js.native
+    /* private */ var checkGrammarSymbolSet: js.Any = js.native
     
-    var checkGrammarSymbolSpan: js.Any = js.native
+    /* private */ var checkGrammarSymbolSpan: js.Any = js.native
     
-    var checkGrammarSymbolSpanRest: js.Any = js.native
+    /* private */ var checkGrammarSymbolSpanRest: js.Any = js.native
     
-    var checkGrammarTerminal: js.Any = js.native
+    /* private */ var checkGrammarTerminal: js.Any = js.native
     
-    var checkGrammarUnicodeCharacterLiteral: js.Any = js.native
+    /* private */ var checkGrammarUnicodeCharacterLiteral: js.Any = js.native
     
-    var checkGrammarUnicodeCharacterRange: js.Any = js.native
+    /* private */ var checkGrammarUnicodeCharacterRange: js.Any = js.native
     
-    var checkIdentifier: js.Any = js.native
+    /* private */ var checkIdentifier: js.Any = js.native
     
-    var checkLexicalGoalAssertion: js.Any = js.native
+    /* private */ var checkLexicalGoalAssertion: js.Any = js.native
     
-    var checkLinkReference: js.Any = js.native
+    /* private */ var checkLinkReference: js.Any = js.native
     
-    var checkLookaheadAssertion: js.Any = js.native
+    /* private */ var checkLookaheadAssertion: js.Any = js.native
     
-    var checkNoSymbolHereAssertion: js.Any = js.native
+    /* private */ var checkNoSymbolHereAssertion: js.Any = js.native
     
-    var checkNonterminal: js.Any = js.native
+    /* private */ var checkNonterminal: js.Any = js.native
     
-    var checkNonterminalNonStrict: js.Any = js.native
+    /* private */ var checkNonterminalNonStrict: js.Any = js.native
     
-    var checkNonterminalStrict: js.Any = js.native
+    /* private */ var checkNonterminalStrict: js.Any = js.native
     
-    var checkOneOfList: js.Any = js.native
+    /* private */ var checkOneOfList: js.Any = js.native
     
-    var checkOneOfSymbol: js.Any = js.native
+    /* private */ var checkOneOfSymbol: js.Any = js.native
     
-    var checkOptionalSymbolOrHigher: js.Any = js.native
+    /* private */ var checkOptionalSymbolOrHigher: js.Any = js.native
     
-    var checkParameter: js.Any = js.native
+    /* private */ var checkParameter: js.Any = js.native
     
-    var checkParameterList: js.Any = js.native
+    /* private */ var checkParameterList: js.Any = js.native
     
-    var checkPlaceholder: js.Any = js.native
+    /* private */ var checkPlaceholder: js.Any = js.native
     
-    var checkPrimarySymbol: js.Any = js.native
+    /* private */ var checkPrimarySymbol: js.Any = js.native
     
-    var checkProduction: js.Any = js.native
+    /* private */ var checkProduction: js.Any = js.native
     
-    var checkProductionNonStrict: js.Any = js.native
+    /* private */ var checkProductionNonStrict: js.Any = js.native
     
-    var checkProductionStrict: js.Any = js.native
+    /* private */ var checkProductionStrict: js.Any = js.native
     
-    var checkProse: js.Any = js.native
+    /* private */ var checkProse: js.Any = js.native
     
-    var checkProseAssertion: js.Any = js.native
+    /* private */ var checkProseAssertion: js.Any = js.native
     
-    var checkProseFragment: js.Any = js.native
+    /* private */ var checkProseFragment: js.Any = js.native
     
-    var checkProseFragmentLiteral: js.Any = js.native
+    /* private */ var checkProseFragmentLiteral: js.Any = js.native
     
-    var checkRightHandSide: js.Any = js.native
+    /* private */ var checkRightHandSide: js.Any = js.native
     
-    var checkRightHandSideList: js.Any = js.native
+    /* private */ var checkRightHandSideList: js.Any = js.native
     
-    var checkSourceElement: js.Any = js.native
+    /* private */ var checkSourceElement: js.Any = js.native
     
     def checkSourceFile(sourceFile: SourceFile, bindings: BindingTable, diagnostics: DiagnosticMessages): Unit = js.native
     def checkSourceFile(
@@ -168,81 +168,81 @@ object checkerMod {
       cancelable: CancellationToken
     ): Unit = js.native
     
-    var checkSymbolOrHigher: js.Any = js.native
+    /* private */ var checkSymbolOrHigher: js.Any = js.native
     
-    var checkSymbolSet: js.Any = js.native
+    /* private */ var checkSymbolSet: js.Any = js.native
     
-    var checkSymbolSpan: js.Any = js.native
+    /* private */ var checkSymbolSpan: js.Any = js.native
     
-    var checkSymbolSpanOrHigher: js.Any = js.native
+    /* private */ var checkSymbolSpanOrHigher: js.Any = js.native
     
-    var checkSymbolSpanRest: js.Any = js.native
+    /* private */ var checkSymbolSpanRest: js.Any = js.native
     
-    var checkTerminal: js.Any = js.native
+    /* private */ var checkTerminal: js.Any = js.native
     
-    var checkUnarySymbolOrHigher: js.Any = js.native
+    /* private */ var checkUnarySymbolOrHigher: js.Any = js.native
     
-    var checkUnicodeCharacterLiteral: js.Any = js.native
+    /* private */ var checkUnicodeCharacterLiteral: js.Any = js.native
     
-    var checkUnicodeCharacterRange: js.Any = js.native
+    /* private */ var checkUnicodeCharacterRange: js.Any = js.native
     
-    var checkedFileSet: js.Any = js.native
+    /* private */ var checkedFileSet: js.Any = js.native
     
-    var defineOverrideMap: js.Any = js.native
+    /* private */ var defineOverrideMap: js.Any = js.native
     
-    var defines: js.Any = js.native
+    /* private */ var defines: js.Any = js.native
     
-    var diagnostics: js.Any = js.native
+    /* private */ var diagnostics: js.Any = js.native
     
-    var getDefine: js.Any = js.native
+    /* private */ var getDefine: js.Any = js.native
     
-    var getNodeLinks: js.Any = js.native
+    /* private */ var getNodeLinks: js.Any = js.native
     
-    var getProductionParametersByName: js.Any = js.native
+    /* private */ var getProductionParametersByName: js.Any = js.native
     
-    var getSymbolLinks: js.Any = js.native
+    /* private */ var getSymbolLinks: js.Any = js.native
     
-    var lineOffsetMap: js.Any = js.native
+    /* private */ var lineOffsetMap: js.Any = js.native
     
-    var markSymbolAsReferenced: js.Any = js.native
+    /* private */ var markSymbolAsReferenced: js.Any = js.native
     
-    var noChecks: js.Any = js.native
+    /* private */ var noChecks: js.Any = js.native
     
-    var nodeLinks: js.Any = js.native
+    /* private */ var nodeLinks: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var preprocessDefine: js.Any = js.native
+    /* private */ var preprocessDefine: js.Any = js.native
     
-    var preprocessLine: js.Any = js.native
+    /* private */ var preprocessLine: js.Any = js.native
     
-    var preprocessSourceElement: js.Any = js.native
+    /* private */ var preprocessSourceElement: js.Any = js.native
     
-    var productionParametersByName: js.Any = js.native
+    /* private */ var productionParametersByName: js.Any = js.native
     
-    var reportError: js.Any = js.native
+    /* private */ var reportError: js.Any = js.native
     
-    var reportGrammarError: js.Any = js.native
+    /* private */ var reportGrammarError: js.Any = js.native
     
-    var reportGrammarErrorForNode: js.Any = js.native
+    /* private */ var reportGrammarErrorForNode: js.Any = js.native
     
-    var reportGrammarErrorForNodeOrPos: js.Any = js.native
+    /* private */ var reportGrammarErrorForNodeOrPos: js.Any = js.native
     
-    var reportInvalidAssertion: js.Any = js.native
+    /* private */ var reportInvalidAssertion: js.Any = js.native
     
-    var reportInvalidHtmlTrivia: js.Any = js.native
+    /* private */ var reportInvalidHtmlTrivia: js.Any = js.native
     
-    var reportInvalidSymbol: js.Any = js.native
+    /* private */ var reportInvalidSymbol: js.Any = js.native
     
-    var resolveIdentifier: js.Any = js.native
+    /* private */ var resolveIdentifier: js.Any = js.native
     
-    var resolveProduction: js.Any = js.native
+    /* private */ var resolveProduction: js.Any = js.native
     
-    var resolveSymbol: js.Any = js.native
+    /* private */ var resolveSymbol: js.Any = js.native
     
-    var sourceFile: js.Any = js.native
+    /* private */ var sourceFile: js.Any = js.native
     
-    var symbolLinks: js.Any = js.native
+    /* private */ var symbolLinks: js.Any = js.native
   }
   
   @JSImport("grammarkdown/dist/checker", "Resolver")
@@ -297,6 +297,6 @@ object checkerMod {
     
     def getSourceFileOfNode(node: Node[SyntaxKind]): SourceFile = js.native
     
-    var lineOffsetMap: js.Any = js.native
+    /* private */ var lineOffsetMap: js.Any = js.native
   }
 }

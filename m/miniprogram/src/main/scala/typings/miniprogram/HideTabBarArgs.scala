@@ -15,19 +15,15 @@ trait HideTabBarArgs
 }
 object HideTabBarArgs {
   
-  @scala.inline
-  def apply(): HideTabBarArgs = {
+  inline def apply(): HideTabBarArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HideTabBarArgs]
   }
   
-  @scala.inline
-  implicit class HideTabBarArgsMutableBuilder[Self <: HideTabBarArgs] (val x: Self) extends AnyVal {
+  extension [Self <: HideTabBarArgs](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
   }
 }

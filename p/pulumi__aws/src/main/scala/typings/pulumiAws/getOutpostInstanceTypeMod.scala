@@ -11,10 +11,8 @@ object getOutpostInstanceTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs): js.Promise[GetOutpostInstanceTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
-  @scala.inline
-  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
+  inline def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs): js.Promise[GetOutpostInstanceTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
+  inline def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
   
   trait GetOutpostInstanceTypeArgs extends StObject {
     
@@ -35,32 +33,24 @@ object getOutpostInstanceTypeMod {
   }
   object GetOutpostInstanceTypeArgs {
     
-    @scala.inline
-    def apply(arn: String): GetOutpostInstanceTypeArgs = {
+    inline def apply(arn: String): GetOutpostInstanceTypeArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOutpostInstanceTypeArgs]
     }
     
-    @scala.inline
-    implicit class GetOutpostInstanceTypeArgsMutableBuilder[Self <: GetOutpostInstanceTypeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetOutpostInstanceTypeArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
       
-      @scala.inline
-      def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
+      inline def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
+      inline def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
       
-      @scala.inline
-      def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
+      inline def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
     }
   }
   
@@ -79,32 +69,24 @@ object getOutpostInstanceTypeMod {
   }
   object GetOutpostInstanceTypeResult {
     
-    @scala.inline
-    def apply(arn: String, id: String, instanceType: String): GetOutpostInstanceTypeResult = {
+    inline def apply(arn: String, id: String, instanceType: String): GetOutpostInstanceTypeResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOutpostInstanceTypeResult]
     }
     
-    @scala.inline
-    implicit class GetOutpostInstanceTypeResultMutableBuilder[Self <: GetOutpostInstanceTypeResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetOutpostInstanceTypeResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
+      inline def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
+      inline def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
       
-      @scala.inline
-      def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
+      inline def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
     }
   }
 }

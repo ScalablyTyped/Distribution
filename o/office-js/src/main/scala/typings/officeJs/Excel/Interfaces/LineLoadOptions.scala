@@ -140,109 +140,75 @@ trait LineLoadOptions extends StObject {
 }
 object LineLoadOptions {
   
-  @scala.inline
-  def apply(): LineLoadOptions = {
+  inline def apply(): LineLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineLoadOptions]
   }
   
-  @scala.inline
-  implicit class LineLoadOptionsMutableBuilder[Self <: LineLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LineLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBeginArrowheadLength(value: Boolean): Self = StObject.set(x, "beginArrowheadLength", value.asInstanceOf[js.Any])
+    inline def setBeginArrowheadLength(value: Boolean): Self = StObject.set(x, "beginArrowheadLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginArrowheadLengthUndefined: Self = StObject.set(x, "beginArrowheadLength", js.undefined)
+    inline def setBeginArrowheadLengthUndefined: Self = StObject.set(x, "beginArrowheadLength", js.undefined)
     
-    @scala.inline
-    def setBeginArrowheadStyle(value: Boolean): Self = StObject.set(x, "beginArrowheadStyle", value.asInstanceOf[js.Any])
+    inline def setBeginArrowheadStyle(value: Boolean): Self = StObject.set(x, "beginArrowheadStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginArrowheadStyleUndefined: Self = StObject.set(x, "beginArrowheadStyle", js.undefined)
+    inline def setBeginArrowheadStyleUndefined: Self = StObject.set(x, "beginArrowheadStyle", js.undefined)
     
-    @scala.inline
-    def setBeginArrowheadWidth(value: Boolean): Self = StObject.set(x, "beginArrowheadWidth", value.asInstanceOf[js.Any])
+    inline def setBeginArrowheadWidth(value: Boolean): Self = StObject.set(x, "beginArrowheadWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginArrowheadWidthUndefined: Self = StObject.set(x, "beginArrowheadWidth", js.undefined)
+    inline def setBeginArrowheadWidthUndefined: Self = StObject.set(x, "beginArrowheadWidth", js.undefined)
     
-    @scala.inline
-    def setBeginConnectedShape(value: ShapeLoadOptions): Self = StObject.set(x, "beginConnectedShape", value.asInstanceOf[js.Any])
+    inline def setBeginConnectedShape(value: ShapeLoadOptions): Self = StObject.set(x, "beginConnectedShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginConnectedShapeUndefined: Self = StObject.set(x, "beginConnectedShape", js.undefined)
+    inline def setBeginConnectedShapeUndefined: Self = StObject.set(x, "beginConnectedShape", js.undefined)
     
-    @scala.inline
-    def setBeginConnectedSite(value: Boolean): Self = StObject.set(x, "beginConnectedSite", value.asInstanceOf[js.Any])
+    inline def setBeginConnectedSite(value: Boolean): Self = StObject.set(x, "beginConnectedSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginConnectedSiteUndefined: Self = StObject.set(x, "beginConnectedSite", js.undefined)
+    inline def setBeginConnectedSiteUndefined: Self = StObject.set(x, "beginConnectedSite", js.undefined)
     
-    @scala.inline
-    def setConnectorType(value: Boolean): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: Boolean): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
+    inline def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
-    @scala.inline
-    def setEndArrowheadLength(value: Boolean): Self = StObject.set(x, "endArrowheadLength", value.asInstanceOf[js.Any])
+    inline def setEndArrowheadLength(value: Boolean): Self = StObject.set(x, "endArrowheadLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndArrowheadLengthUndefined: Self = StObject.set(x, "endArrowheadLength", js.undefined)
+    inline def setEndArrowheadLengthUndefined: Self = StObject.set(x, "endArrowheadLength", js.undefined)
     
-    @scala.inline
-    def setEndArrowheadStyle(value: Boolean): Self = StObject.set(x, "endArrowheadStyle", value.asInstanceOf[js.Any])
+    inline def setEndArrowheadStyle(value: Boolean): Self = StObject.set(x, "endArrowheadStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndArrowheadStyleUndefined: Self = StObject.set(x, "endArrowheadStyle", js.undefined)
+    inline def setEndArrowheadStyleUndefined: Self = StObject.set(x, "endArrowheadStyle", js.undefined)
     
-    @scala.inline
-    def setEndArrowheadWidth(value: Boolean): Self = StObject.set(x, "endArrowheadWidth", value.asInstanceOf[js.Any])
+    inline def setEndArrowheadWidth(value: Boolean): Self = StObject.set(x, "endArrowheadWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndArrowheadWidthUndefined: Self = StObject.set(x, "endArrowheadWidth", js.undefined)
+    inline def setEndArrowheadWidthUndefined: Self = StObject.set(x, "endArrowheadWidth", js.undefined)
     
-    @scala.inline
-    def setEndConnectedShape(value: ShapeLoadOptions): Self = StObject.set(x, "endConnectedShape", value.asInstanceOf[js.Any])
+    inline def setEndConnectedShape(value: ShapeLoadOptions): Self = StObject.set(x, "endConnectedShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndConnectedShapeUndefined: Self = StObject.set(x, "endConnectedShape", js.undefined)
+    inline def setEndConnectedShapeUndefined: Self = StObject.set(x, "endConnectedShape", js.undefined)
     
-    @scala.inline
-    def setEndConnectedSite(value: Boolean): Self = StObject.set(x, "endConnectedSite", value.asInstanceOf[js.Any])
+    inline def setEndConnectedSite(value: Boolean): Self = StObject.set(x, "endConnectedSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndConnectedSiteUndefined: Self = StObject.set(x, "endConnectedSite", js.undefined)
+    inline def setEndConnectedSiteUndefined: Self = StObject.set(x, "endConnectedSite", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsBeginConnected(value: Boolean): Self = StObject.set(x, "isBeginConnected", value.asInstanceOf[js.Any])
+    inline def setIsBeginConnected(value: Boolean): Self = StObject.set(x, "isBeginConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBeginConnectedUndefined: Self = StObject.set(x, "isBeginConnected", js.undefined)
+    inline def setIsBeginConnectedUndefined: Self = StObject.set(x, "isBeginConnected", js.undefined)
     
-    @scala.inline
-    def setIsEndConnected(value: Boolean): Self = StObject.set(x, "isEndConnected", value.asInstanceOf[js.Any])
+    inline def setIsEndConnected(value: Boolean): Self = StObject.set(x, "isEndConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEndConnectedUndefined: Self = StObject.set(x, "isEndConnected", js.undefined)
+    inline def setIsEndConnectedUndefined: Self = StObject.set(x, "isEndConnected", js.undefined)
     
-    @scala.inline
-    def setShape(value: ShapeLoadOptions): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: ShapeLoadOptions): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
   }
 }

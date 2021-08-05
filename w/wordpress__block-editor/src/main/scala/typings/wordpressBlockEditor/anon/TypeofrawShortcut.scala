@@ -28,8 +28,7 @@ trait TypeofrawShortcut extends StObject {
 }
 object TypeofrawShortcut {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     access: String => String,
     alt: String => String,
     ctrl: String => String,
@@ -45,37 +44,26 @@ object TypeofrawShortcut {
     __obj.asInstanceOf[TypeofrawShortcut]
   }
   
-  @scala.inline
-  implicit class TypeofrawShortcutMutableBuilder[Self <: TypeofrawShortcut] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofrawShortcut](x: Self) {
     
-    @scala.inline
-    def setAccess(value: String => String): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
+    inline def setAccess(value: String => String): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlt(value: String => String): Self = StObject.set(x, "alt", js.Any.fromFunction1(value))
+    inline def setAlt(value: String => String): Self = StObject.set(x, "alt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCtrl(value: String => String): Self = StObject.set(x, "ctrl", js.Any.fromFunction1(value))
+    inline def setCtrl(value: String => String): Self = StObject.set(x, "ctrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCtrlShift(value: String => String): Self = StObject.set(x, "ctrlShift", js.Any.fromFunction1(value))
+    inline def setCtrlShift(value: String => String): Self = StObject.set(x, "ctrlShift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrimary(value: String => String): Self = StObject.set(x, "primary", js.Any.fromFunction1(value))
+    inline def setPrimary(value: String => String): Self = StObject.set(x, "primary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrimaryAlt(value: String => String): Self = StObject.set(x, "primaryAlt", js.Any.fromFunction1(value))
+    inline def setPrimaryAlt(value: String => String): Self = StObject.set(x, "primaryAlt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrimaryShift(value: String => String): Self = StObject.set(x, "primaryShift", js.Any.fromFunction1(value))
+    inline def setPrimaryShift(value: String => String): Self = StObject.set(x, "primaryShift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSecondary(value: String => String): Self = StObject.set(x, "secondary", js.Any.fromFunction1(value))
+    inline def setSecondary(value: String => String): Self = StObject.set(x, "secondary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShift(value: String => String): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
+    inline def setShift(value: String => String): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShiftAlt(value: String => String): Self = StObject.set(x, "shiftAlt", js.Any.fromFunction1(value))
+    inline def setShiftAlt(value: String => String): Self = StObject.set(x, "shiftAlt", js.Any.fromFunction1(value))
   }
 }

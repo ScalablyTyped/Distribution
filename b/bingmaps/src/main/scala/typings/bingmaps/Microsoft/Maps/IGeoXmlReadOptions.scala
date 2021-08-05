@@ -43,61 +43,43 @@ trait IGeoXmlReadOptions extends StObject {
 }
 object IGeoXmlReadOptions {
   
-  @scala.inline
-  def apply(): IGeoXmlReadOptions = {
+  inline def apply(): IGeoXmlReadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeoXmlReadOptions]
   }
   
-  @scala.inline
-  implicit class IGeoXmlReadOptionsMutableBuilder[Self <: IGeoXmlReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoXmlReadOptions](x: Self) {
     
-    @scala.inline
-    def setAllowKmlScreenOverlays(value: Boolean): Self = StObject.set(x, "allowKmlScreenOverlays", value.asInstanceOf[js.Any])
+    inline def setAllowKmlScreenOverlays(value: Boolean): Self = StObject.set(x, "allowKmlScreenOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowKmlScreenOverlaysUndefined: Self = StObject.set(x, "allowKmlScreenOverlays", js.undefined)
+    inline def setAllowKmlScreenOverlaysUndefined: Self = StObject.set(x, "allowKmlScreenOverlays", js.undefined)
     
-    @scala.inline
-    def setCaptureGpxPathWaypoints(value: Boolean): Self = StObject.set(x, "captureGpxPathWaypoints", value.asInstanceOf[js.Any])
+    inline def setCaptureGpxPathWaypoints(value: Boolean): Self = StObject.set(x, "captureGpxPathWaypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureGpxPathWaypointsUndefined: Self = StObject.set(x, "captureGpxPathWaypoints", js.undefined)
+    inline def setCaptureGpxPathWaypointsUndefined: Self = StObject.set(x, "captureGpxPathWaypoints", js.undefined)
     
-    @scala.inline
-    def setDefaultStyles(value: IStylesOptions): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
+    inline def setDefaultStyles(value: IStylesOptions): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
+    inline def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
     
-    @scala.inline
-    def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setIgnoreVisibility(value: Boolean): Self = StObject.set(x, "ignoreVisibility", value.asInstanceOf[js.Any])
+    inline def setIgnoreVisibility(value: Boolean): Self = StObject.set(x, "ignoreVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreVisibilityUndefined: Self = StObject.set(x, "ignoreVisibility", js.undefined)
+    inline def setIgnoreVisibilityUndefined: Self = StObject.set(x, "ignoreVisibility", js.undefined)
     
-    @scala.inline
-    def setMaxNetworkLinkDepth(value: Double): Self = StObject.set(x, "maxNetworkLinkDepth", value.asInstanceOf[js.Any])
+    inline def setMaxNetworkLinkDepth(value: Double): Self = StObject.set(x, "maxNetworkLinkDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNetworkLinkDepthUndefined: Self = StObject.set(x, "maxNetworkLinkDepth", js.undefined)
+    inline def setMaxNetworkLinkDepthUndefined: Self = StObject.set(x, "maxNetworkLinkDepth", js.undefined)
     
-    @scala.inline
-    def setMaxNetworkLinks(value: Double): Self = StObject.set(x, "maxNetworkLinks", value.asInstanceOf[js.Any])
+    inline def setMaxNetworkLinks(value: Double): Self = StObject.set(x, "maxNetworkLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNetworkLinksUndefined: Self = StObject.set(x, "maxNetworkLinks", js.undefined)
+    inline def setMaxNetworkLinksUndefined: Self = StObject.set(x, "maxNetworkLinks", js.undefined)
     
-    @scala.inline
-    def setSetPushpinTitles(value: Boolean): Self = StObject.set(x, "setPushpinTitles", value.asInstanceOf[js.Any])
+    inline def setSetPushpinTitles(value: Boolean): Self = StObject.set(x, "setPushpinTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPushpinTitlesUndefined: Self = StObject.set(x, "setPushpinTitles", js.undefined)
+    inline def setSetPushpinTitlesUndefined: Self = StObject.set(x, "setPushpinTitles", js.undefined)
   }
 }

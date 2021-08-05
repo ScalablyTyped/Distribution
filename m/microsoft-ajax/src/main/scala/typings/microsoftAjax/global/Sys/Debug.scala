@@ -39,21 +39,16 @@ object Debug {
     *      (Optional) true to indicate that the name of the function that is calling assert should be displayed in the message. The default is false.
     */
   /* static member */
-  @scala.inline
-  def assert(condition: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def assert(condition: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], displayCaller.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def assert(condition: Boolean, message: Unit, displayCaller: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], displayCaller.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(condition: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assert(condition: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], displayCaller.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(condition: Boolean, message: Unit, displayCaller: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], displayCaller.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Clears all trace messages from the trace console.
     */
   /* static member */
-  @scala.inline
-  def clearTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTrace")().asInstanceOf[Unit]
+  inline def clearTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTrace")().asInstanceOf[Unit]
   
   /**
     * Displays a message in the debugger's output window and breaks into the debugger.
@@ -61,8 +56,7 @@ object Debug {
     *           The message to display.
     */
   /* static member */
-  @scala.inline
-  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Appends a text line to the debugger console and to the trace console, if available.
@@ -70,8 +64,7 @@ object Debug {
     *       The text to display.
     */
   /* static member */
-  @scala.inline
-  def trace(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def trace(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Dumps an object to the debugger console and to the trace console, if available.
@@ -81,8 +74,6 @@ object Debug {
     *      (Optional) The name of the object.
     */
   /* static member */
-  @scala.inline
-  def traceDump(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def traceDump(`object`: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def traceDump(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def traceDump(`object`: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -13,19 +13,15 @@ trait SqlConfiguration extends StObject {
 }
 object SqlConfiguration {
   
-  @scala.inline
-  def apply(): SqlConfiguration = {
+  inline def apply(): SqlConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlConfiguration]
   }
   
-  @scala.inline
-  implicit class SqlConfigurationMutableBuilder[Self <: SqlConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SqlConfiguration](x: Self) {
     
-    @scala.inline
-    def setQueryIdentifiersEnclosingOption(value: QueryIdentifiersEnclosingOption): Self = StObject.set(x, "QueryIdentifiersEnclosingOption", value.asInstanceOf[js.Any])
+    inline def setQueryIdentifiersEnclosingOption(value: QueryIdentifiersEnclosingOption): Self = StObject.set(x, "QueryIdentifiersEnclosingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryIdentifiersEnclosingOptionUndefined: Self = StObject.set(x, "QueryIdentifiersEnclosingOption", js.undefined)
+    inline def setQueryIdentifiersEnclosingOptionUndefined: Self = StObject.set(x, "QueryIdentifiersEnclosingOption", js.undefined)
   }
 }

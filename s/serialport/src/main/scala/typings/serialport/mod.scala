@@ -96,20 +96,17 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def list(): js.Promise[js.Array[PortInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[PortInfo]]]
+    inline def list(): js.Promise[js.Array[PortInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[PortInfo]]]
   }
   
   /* static member */
   @JSImport("serialport", "Binding")
   @js.native
   def Binding: BaseBinding = js.native
-  @scala.inline
-  def Binding_=(x: BaseBinding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binding")(x.asInstanceOf[js.Any])
+  inline def Binding_=(x: BaseBinding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binding")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def list(): js.Promise[js.Array[PortInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[PortInfo]]]
+  inline def list(): js.Promise[js.Array[PortInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[PortInfo]]]
   
   object parsers {
     
@@ -186,94 +183,66 @@ object mod {
   }
   object OpenOptions {
     
-    @scala.inline
-    def apply(): OpenOptions = {
+    inline def apply(): OpenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenOptions]
     }
     
-    @scala.inline
-    implicit class OpenOptionsMutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenOptions](x: Self) {
       
-      @scala.inline
-      def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
+      inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
+      inline def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
       
-      @scala.inline
-      def setBaudRate(
+      inline def setBaudRate(
         value: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
       ): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
+      inline def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
       
-      @scala.inline
-      def setBinding(value: BaseBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+      inline def setBinding(value: BaseBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingOptions(value: Vmin): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
+      inline def setBindingOptions(value: Vmin): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
+      inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
       
-      @scala.inline
-      def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+      inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
       
-      @scala.inline
-      def setDataBits(value: `8` | `7` | `6` | `5`): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
+      inline def setDataBits(value: `8` | `7` | `6` | `5`): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
+      inline def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+      inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+      inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
       
-      @scala.inline
-      def setParity(value: none | even | mark | odd | space): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
+      inline def setParity(value: none | even | mark | odd | space): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
+      inline def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
       
-      @scala.inline
-      def setRtscts(value: Boolean): Self = StObject.set(x, "rtscts", value.asInstanceOf[js.Any])
+      inline def setRtscts(value: Boolean): Self = StObject.set(x, "rtscts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtsctsUndefined: Self = StObject.set(x, "rtscts", js.undefined)
+      inline def setRtsctsUndefined: Self = StObject.set(x, "rtscts", js.undefined)
       
-      @scala.inline
-      def setStopBits(value: `1` | `2`): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
+      inline def setStopBits(value: `1` | `2`): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
+      inline def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
       
-      @scala.inline
-      def setXany(value: Boolean): Self = StObject.set(x, "xany", value.asInstanceOf[js.Any])
+      inline def setXany(value: Boolean): Self = StObject.set(x, "xany", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXanyUndefined: Self = StObject.set(x, "xany", js.undefined)
+      inline def setXanyUndefined: Self = StObject.set(x, "xany", js.undefined)
       
-      @scala.inline
-      def setXoff(value: Boolean): Self = StObject.set(x, "xoff", value.asInstanceOf[js.Any])
+      inline def setXoff(value: Boolean): Self = StObject.set(x, "xoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXoffUndefined: Self = StObject.set(x, "xoff", js.undefined)
+      inline def setXoffUndefined: Self = StObject.set(x, "xoff", js.undefined)
       
-      @scala.inline
-      def setXon(value: Boolean): Self = StObject.set(x, "xon", value.asInstanceOf[js.Any])
+      inline def setXon(value: Boolean): Self = StObject.set(x, "xon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXonUndefined: Self = StObject.set(x, "xon", js.undefined)
+      inline def setXonUndefined: Self = StObject.set(x, "xon", js.undefined)
     }
   }
   
@@ -295,53 +264,38 @@ object mod {
   }
   object PortInfo {
     
-    @scala.inline
-    def apply(path: String): PortInfo = {
+    inline def apply(path: String): PortInfo = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortInfo]
     }
     
-    @scala.inline
-    implicit class PortInfoMutableBuilder[Self <: PortInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PortInfo](x: Self) {
       
-      @scala.inline
-      def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+      inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+      inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
       
-      @scala.inline
-      def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+      inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+      inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPnpId(value: String): Self = StObject.set(x, "pnpId", value.asInstanceOf[js.Any])
+      inline def setPnpId(value: String): Self = StObject.set(x, "pnpId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPnpIdUndefined: Self = StObject.set(x, "pnpId", js.undefined)
+      inline def setPnpIdUndefined: Self = StObject.set(x, "pnpId", js.undefined)
       
-      @scala.inline
-      def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+      inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
+      inline def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
       
-      @scala.inline
-      def setVendorId(value: String): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: String): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
+      inline def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
     }
   }
   
@@ -591,44 +545,32 @@ object mod {
   }
   object SetOptions {
     
-    @scala.inline
-    def apply(): SetOptions = {
+    inline def apply(): SetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetOptions]
     }
     
-    @scala.inline
-    implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetOptions](x: Self) {
       
-      @scala.inline
-      def setBrk(value: Boolean): Self = StObject.set(x, "brk", value.asInstanceOf[js.Any])
+      inline def setBrk(value: Boolean): Self = StObject.set(x, "brk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrkUndefined: Self = StObject.set(x, "brk", js.undefined)
+      inline def setBrkUndefined: Self = StObject.set(x, "brk", js.undefined)
       
-      @scala.inline
-      def setCts(value: Boolean): Self = StObject.set(x, "cts", value.asInstanceOf[js.Any])
+      inline def setCts(value: Boolean): Self = StObject.set(x, "cts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtsUndefined: Self = StObject.set(x, "cts", js.undefined)
+      inline def setCtsUndefined: Self = StObject.set(x, "cts", js.undefined)
       
-      @scala.inline
-      def setDsr(value: Boolean): Self = StObject.set(x, "dsr", value.asInstanceOf[js.Any])
+      inline def setDsr(value: Boolean): Self = StObject.set(x, "dsr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDsrUndefined: Self = StObject.set(x, "dsr", js.undefined)
+      inline def setDsrUndefined: Self = StObject.set(x, "dsr", js.undefined)
       
-      @scala.inline
-      def setDtr(value: Boolean): Self = StObject.set(x, "dtr", value.asInstanceOf[js.Any])
+      inline def setDtr(value: Boolean): Self = StObject.set(x, "dtr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtrUndefined: Self = StObject.set(x, "dtr", js.undefined)
+      inline def setDtrUndefined: Self = StObject.set(x, "dtr", js.undefined)
       
-      @scala.inline
-      def setRts(value: Boolean): Self = StObject.set(x, "rts", value.asInstanceOf[js.Any])
+      inline def setRts(value: Boolean): Self = StObject.set(x, "rts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtsUndefined: Self = StObject.set(x, "rts", js.undefined)
+      inline def setRtsUndefined: Self = StObject.set(x, "rts", js.undefined)
     }
   }
   
@@ -640,22 +582,18 @@ object mod {
   }
   object UpdateOptions {
     
-    @scala.inline
-    def apply(): UpdateOptions = {
+    inline def apply(): UpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    @scala.inline
-    implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateOptions](x: Self) {
       
-      @scala.inline
-      def setBaudRate(
+      inline def setBaudRate(
         value: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
       ): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
+      inline def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
     }
   }
   

@@ -8,16 +8,13 @@ object maximMazurokGapiClientAdmobStrings {
   
   @js.native
   sealed trait ReportRow extends StObject
-  @scala.inline
-  def ReportRow: ReportRow = "ReportRow".asInstanceOf[ReportRow]
+  inline def ReportRow: ReportRow = "ReportRow".asInstanceOf[ReportRow]
   
   @js.native
   sealed trait admob extends StObject
-  @scala.inline
-  def admob: admob = "admob".asInstanceOf[admob]
+  inline def admob: admob = "admob".asInstanceOf[admob]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

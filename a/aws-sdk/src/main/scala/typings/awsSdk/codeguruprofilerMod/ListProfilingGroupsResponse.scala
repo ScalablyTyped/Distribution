@@ -23,34 +23,25 @@ trait ListProfilingGroupsResponse extends StObject {
 }
 object ListProfilingGroupsResponse {
   
-  @scala.inline
-  def apply(profilingGroupNames: ProfilingGroupNames): ListProfilingGroupsResponse = {
+  inline def apply(profilingGroupNames: ProfilingGroupNames): ListProfilingGroupsResponse = {
     val __obj = js.Dynamic.literal(profilingGroupNames = profilingGroupNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProfilingGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListProfilingGroupsResponseMutableBuilder[Self <: ListProfilingGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProfilingGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupNames(value: ProfilingGroupNames): Self = StObject.set(x, "profilingGroupNames", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupNames(value: ProfilingGroupNames): Self = StObject.set(x, "profilingGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilingGroupNamesVarargs(value: ProfilingGroupName*): Self = StObject.set(x, "profilingGroupNames", js.Array(value :_*))
+    inline def setProfilingGroupNamesVarargs(value: ProfilingGroupName*): Self = StObject.set(x, "profilingGroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setProfilingGroups(value: ProfilingGroupDescriptions): Self = StObject.set(x, "profilingGroups", value.asInstanceOf[js.Any])
+    inline def setProfilingGroups(value: ProfilingGroupDescriptions): Self = StObject.set(x, "profilingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilingGroupsUndefined: Self = StObject.set(x, "profilingGroups", js.undefined)
+    inline def setProfilingGroupsUndefined: Self = StObject.set(x, "profilingGroups", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupsVarargs(value: ProfilingGroupDescription*): Self = StObject.set(x, "profilingGroups", js.Array(value :_*))
+    inline def setProfilingGroupsVarargs(value: ProfilingGroupDescription*): Self = StObject.set(x, "profilingGroups", js.Array(value :_*))
   }
 }

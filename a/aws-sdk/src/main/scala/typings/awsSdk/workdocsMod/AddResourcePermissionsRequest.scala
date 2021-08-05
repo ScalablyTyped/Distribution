@@ -28,34 +28,25 @@ trait AddResourcePermissionsRequest extends StObject {
 }
 object AddResourcePermissionsRequest {
   
-  @scala.inline
-  def apply(Principals: SharePrincipalList, ResourceId: ResourceIdType): AddResourcePermissionsRequest = {
+  inline def apply(Principals: SharePrincipalList, ResourceId: ResourceIdType): AddResourcePermissionsRequest = {
     val __obj = js.Dynamic.literal(Principals = Principals.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddResourcePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class AddResourcePermissionsRequestMutableBuilder[Self <: AddResourcePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddResourcePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setNotificationOptions(value: NotificationOptions): Self = StObject.set(x, "NotificationOptions", value.asInstanceOf[js.Any])
+    inline def setNotificationOptions(value: NotificationOptions): Self = StObject.set(x, "NotificationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationOptionsUndefined: Self = StObject.set(x, "NotificationOptions", js.undefined)
+    inline def setNotificationOptionsUndefined: Self = StObject.set(x, "NotificationOptions", js.undefined)
     
-    @scala.inline
-    def setPrincipals(value: SharePrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: SharePrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsVarargs(value: SharePrincipal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: SharePrincipal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,17 +17,14 @@ object subscriptionDelegateMod {
   }
   object SubscriptionDelegate {
     
-    @scala.inline
-    def apply(onNotify: Notification => Unit): SubscriptionDelegate = {
+    inline def apply(onNotify: Notification => Unit): SubscriptionDelegate = {
       val __obj = js.Dynamic.literal(onNotify = js.Any.fromFunction1(onNotify))
       __obj.asInstanceOf[SubscriptionDelegate]
     }
     
-    @scala.inline
-    implicit class SubscriptionDelegateMutableBuilder[Self <: SubscriptionDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionDelegate](x: Self) {
       
-      @scala.inline
-      def setOnNotify(value: Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
+      inline def setOnNotify(value: Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
     }
   }
 }

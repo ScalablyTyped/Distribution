@@ -35,8 +35,7 @@ trait GroundOverlay
 }
 object GroundOverlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBounds: () => Bounds,
     getDispalyOnMaxLevel: () => Double,
     getDisplayOnMinLevel: () => Double,
@@ -54,43 +53,30 @@ object GroundOverlay {
     __obj.asInstanceOf[GroundOverlay]
   }
   
-  @scala.inline
-  implicit class GroundOverlayMutableBuilder[Self <: GroundOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: GroundOverlay](x: Self) {
     
-    @scala.inline
-    def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDispalyOnMaxLevel(value: () => Double): Self = StObject.set(x, "getDispalyOnMaxLevel", js.Any.fromFunction0(value))
+    inline def setGetDispalyOnMaxLevel(value: () => Double): Self = StObject.set(x, "getDispalyOnMaxLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayOnMinLevel(value: () => Double): Self = StObject.set(x, "getDisplayOnMinLevel", js.Any.fromFunction0(value))
+    inline def setGetDisplayOnMinLevel(value: () => Double): Self = StObject.set(x, "getDisplayOnMinLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetImageURL(value: () => String): Self = StObject.set(x, "getImageURL", js.Any.fromFunction0(value))
+    inline def setGetImageURL(value: () => String): Self = StObject.set(x, "getImageURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
+    inline def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnclick(value: Target => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: Target => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOndblclick(value: Target => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
+    inline def setOndblclick(value: Target => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBounds(value: Bounds => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction1(value))
+    inline def setSetBounds(value: Bounds => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDispalyOnMaxLevel(value: Double => Unit): Self = StObject.set(x, "setDispalyOnMaxLevel", js.Any.fromFunction1(value))
+    inline def setSetDispalyOnMaxLevel(value: Double => Unit): Self = StObject.set(x, "setDispalyOnMaxLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisplayOnMinLevel(value: Double => Unit): Self = StObject.set(x, "setDisplayOnMinLevel", js.Any.fromFunction1(value))
+    inline def setSetDisplayOnMinLevel(value: Double => Unit): Self = StObject.set(x, "setDisplayOnMinLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageURL(value: String => Unit): Self = StObject.set(x, "setImageURL", js.Any.fromFunction1(value))
+    inline def setSetImageURL(value: String => Unit): Self = StObject.set(x, "setImageURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
+    inline def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
   }
 }

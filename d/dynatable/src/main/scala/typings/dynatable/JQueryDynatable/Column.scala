@@ -62,8 +62,7 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeReader: (Element, js.Any) => String,
     attributeWriter: js.Any => js.Any,
     hidden: Boolean,
@@ -77,34 +76,24 @@ object Column {
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setAttributeReader(value: (Element, js.Any) => String): Self = StObject.set(x, "attributeReader", js.Any.fromFunction2(value))
+    inline def setAttributeReader(value: (Element, js.Any) => String): Self = StObject.set(x, "attributeReader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAttributeWriter(value: js.Any => js.Any): Self = StObject.set(x, "attributeWriter", js.Any.fromFunction1(value))
+    inline def setAttributeWriter(value: js.Any => js.Any): Self = StObject.set(x, "attributeWriter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSorts(value: js.Array[String]): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
+    inline def setSorts(value: js.Array[String]): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortsVarargs(value: String*): Self = StObject.set(x, "sorts", js.Array(value :_*))
+    inline def setSortsVarargs(value: String*): Self = StObject.set(x, "sorts", js.Array(value :_*))
     
-    @scala.inline
-    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }
 }

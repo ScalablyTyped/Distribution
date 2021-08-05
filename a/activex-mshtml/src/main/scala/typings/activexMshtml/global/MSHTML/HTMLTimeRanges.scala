@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLTimeRanges")
 @js.native
-class HTMLTimeRanges protected ()
+/* private */ class HTMLTimeRanges ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLTimeRanges {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLTimeRanges_typekey")
   var MSHTMLDotHTMLTimeRanges_typekey: typings.activexMshtml.MSHTML.HTMLTimeRanges = js.native
   

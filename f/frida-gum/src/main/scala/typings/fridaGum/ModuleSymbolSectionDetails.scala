@@ -18,19 +18,15 @@ trait ModuleSymbolSectionDetails extends StObject {
 }
 object ModuleSymbolSectionDetails {
   
-  @scala.inline
-  def apply(id: String, protection: PageProtection): ModuleSymbolSectionDetails = {
+  inline def apply(id: String, protection: PageProtection): ModuleSymbolSectionDetails = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleSymbolSectionDetails]
   }
   
-  @scala.inline
-  implicit class ModuleSymbolSectionDetailsMutableBuilder[Self <: ModuleSymbolSectionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleSymbolSectionDetails](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
   }
 }

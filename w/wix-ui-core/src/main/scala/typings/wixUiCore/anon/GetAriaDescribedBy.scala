@@ -28,8 +28,7 @@ trait GetAriaDescribedBy extends StObject {
 }
 object GetAriaDescribedBy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clickOutside: () => js.Promise[Unit],
     exists: () => js.Promise[Boolean],
     getAriaDescribedBy: () => js.Promise[js.Any],
@@ -45,37 +44,26 @@ object GetAriaDescribedBy {
     __obj.asInstanceOf[GetAriaDescribedBy]
   }
   
-  @scala.inline
-  implicit class GetAriaDescribedByMutableBuilder[Self <: GetAriaDescribedBy] (val x: Self) extends AnyVal {
+  extension [Self <: GetAriaDescribedBy](x: Self) {
     
-    @scala.inline
-    def setClickOutside(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
+    inline def setClickOutside(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAriaDescribedBy(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getAriaDescribedBy", js.Any.fromFunction0(value))
+    inline def setGetAriaDescribedBy(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getAriaDescribedBy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetText(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTargetText", js.Any.fromFunction0(value))
+    inline def setGetTargetText(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTargetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTooltipText(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTooltipText", js.Any.fromFunction0(value))
+    inline def setGetTooltipText(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTooltipText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+    inline def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+    inline def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTabIn(value: () => js.Promise[Unit]): Self = StObject.set(x, "tabIn", js.Any.fromFunction0(value))
+    inline def setTabIn(value: () => js.Promise[Unit]): Self = StObject.set(x, "tabIn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTabOut(value: () => js.Promise[Unit]): Self = StObject.set(x, "tabOut", js.Any.fromFunction0(value))
+    inline def setTabOut(value: () => js.Promise[Unit]): Self = StObject.set(x, "tabOut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTooltipExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "tooltipExists", js.Any.fromFunction0(value))
+    inline def setTooltipExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "tooltipExists", js.Any.fromFunction0(value))
   }
 }

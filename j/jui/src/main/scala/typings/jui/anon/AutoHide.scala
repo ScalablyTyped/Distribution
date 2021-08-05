@@ -51,61 +51,43 @@ trait AutoHide extends StObject {
 }
 object AutoHide {
   
-  @scala.inline
-  def apply(): AutoHide = {
+  inline def apply(): AutoHide = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoHide]
   }
   
-  @scala.inline
-  implicit class AutoHideMutableBuilder[Self <: AutoHide] (val x: Self) extends AnyVal {
+  extension [Self <: AutoHide](x: Self) {
     
-    @scala.inline
-    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
+    inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
+    inline def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
-    @scala.inline
-    def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+    inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    @scala.inline
-    def setColor(value: black | gray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: black | gray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String | js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String | js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

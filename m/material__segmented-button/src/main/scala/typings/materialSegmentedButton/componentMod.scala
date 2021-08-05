@@ -23,7 +23,7 @@ object componentMod {
       */
     def getSelectedSegments(): js.Array[SegmentDetail] = js.native
     
-    var handleSelected: js.Any = js.native
+    /* private */ var handleSelected: js.Any = js.native
     
     def initialize(): Unit = js.native
     def initialize(segmentFactory: MDCSegmentedButtonSegmentFactory): Unit = js.native
@@ -32,7 +32,7 @@ object componentMod {
       * @param segmentFactory Factory to create new child segments
       * @return Returns list of child segments found in DOM
       */
-    var instantiateSegments: js.Any = js.native
+    /* private */ var instantiateSegments: js.Any = js.native
     
     def isSegmentSelected(indexOrSegmentId: String): Boolean = js.native
     /**
@@ -46,13 +46,13 @@ object componentMod {
     /**
       * @return Returns child segments mapped to readonly SegmentDetail list
       */
-    var mappedSegments: js.Any = js.native
+    /* private */ var mappedSegments: js.Any = js.native
     
-    var segmentFactory: js.Any = js.native
+    /* private */ var segmentFactory: js.Any = js.native
     
     def segments: js.Array[MDCSegmentedButtonSegment] = js.native
     
-    var segments_ : js.Any = js.native
+    /* private */ var segments_ : js.Any = js.native
     
     def selectSegment(indexOrSegmentId: String): Unit = js.native
     /**
@@ -79,7 +79,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCSegmentedButton = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSegmentedButton]
+    inline def attachTo(root: Element): MDCSegmentedButton = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSegmentedButton]
   }
 }

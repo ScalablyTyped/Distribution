@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(selector: SelectorWithQueryParams, options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
-  @scala.inline
-  def apply(selector: Selector, options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def apply(selector: SelectorWithQueryParams, options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def apply(selector: Selector, options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
   @JSImport("json-query", JSImport.Namespace)
   @js.native
@@ -48,68 +46,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowRegexp(value: Boolean): Self = StObject.set(x, "allowRegexp", value.asInstanceOf[js.Any])
+      inline def setAllowRegexp(value: Boolean): Self = StObject.set(x, "allowRegexp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRegexpUndefined: Self = StObject.set(x, "allowRegexp", js.undefined)
+      inline def setAllowRegexpUndefined: Self = StObject.set(x, "allowRegexp", js.undefined)
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setData(value: Context): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Context): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setGlobals(value: Boolean): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: Boolean): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+      inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      @scala.inline
-      def setLocals(value: Locals): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: Locals): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      @scala.inline
-      def setParent(value: Context): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Context): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setRootContext(value: Context): Self = StObject.set(x, "rootContext", value.asInstanceOf[js.Any])
+      inline def setRootContext(value: Context): Self = StObject.set(x, "rootContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootContextUndefined: Self = StObject.set(x, "rootContext", js.undefined)
+      inline def setRootContextUndefined: Self = StObject.set(x, "rootContext", js.undefined)
       
-      @scala.inline
-      def setSource(value: Context): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Context): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -127,32 +105,24 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(key: String, parents: js.Array[String], references: js.Array[js.Any], value: js.Any): Result = {
+    inline def apply(key: String, parents: js.Array[String], references: js.Array[js.Any], value: js.Any): Result = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
       
-      @scala.inline
-      def setReferences(value: js.Array[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesVarargs(value: js.Any*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: js.Any*): Self = StObject.set(x, "references", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

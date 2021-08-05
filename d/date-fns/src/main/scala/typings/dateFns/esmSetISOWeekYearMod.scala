@@ -9,10 +9,8 @@ object esmSetISOWeekYearMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double, isoWeekYear: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], isoWeekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, isoWeekYear: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], isoWeekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, isoWeekYear: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], isoWeekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, isoWeekYear: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], isoWeekYear.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/setISOWeekYear", JSImport.Default)
     @js.native

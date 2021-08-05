@@ -23,26 +23,20 @@ object downloads {
   }
   object BooleanDelta {
     
-    @scala.inline
-    def apply(): BooleanDelta = {
+    inline def apply(): BooleanDelta = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BooleanDelta]
     }
     
-    @scala.inline
-    implicit class BooleanDeltaMutableBuilder[Self <: BooleanDelta] (val x: Self) extends AnyVal {
+    extension [Self <: BooleanDelta](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -54,26 +48,20 @@ object downloads {
   }
   object DoubleDelta {
     
-    @scala.inline
-    def apply(): DoubleDelta = {
+    inline def apply(): DoubleDelta = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DoubleDelta]
     }
     
-    @scala.inline
-    implicit class DoubleDeltaMutableBuilder[Self <: DoubleDelta] (val x: Self) extends AnyVal {
+    extension [Self <: DoubleDelta](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -133,98 +121,68 @@ object downloads {
   }
   object DownloadDelta {
     
-    @scala.inline
-    def apply(finalUrl: StringDelta, id: Double): DownloadDelta = {
+    inline def apply(finalUrl: StringDelta, id: Double): DownloadDelta = {
       val __obj = js.Dynamic.literal(finalUrl = finalUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadDelta]
     }
     
-    @scala.inline
-    implicit class DownloadDeltaMutableBuilder[Self <: DownloadDelta] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadDelta](x: Self) {
       
-      @scala.inline
-      def setCanResume(value: BooleanDelta): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
+      inline def setCanResume(value: BooleanDelta): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanResumeUndefined: Self = StObject.set(x, "canResume", js.undefined)
+      inline def setCanResumeUndefined: Self = StObject.set(x, "canResume", js.undefined)
       
-      @scala.inline
-      def setDanger(value: StringDelta): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+      inline def setDanger(value: StringDelta): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
+      inline def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: StringDelta): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: StringDelta): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setError(value: StringDelta): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: StringDelta): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExists(value: BooleanDelta): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: BooleanDelta): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: DoubleDelta): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: DoubleDelta): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFilename(value: StringDelta): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: StringDelta): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFinalUrl(value: StringDelta): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+      inline def setFinalUrl(value: StringDelta): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: StringDelta): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: StringDelta): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
       
-      @scala.inline
-      def setPaused(value: BooleanDelta): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: BooleanDelta): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: StringDelta): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: StringDelta): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setState(value: StringDelta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StringDelta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTotalBytes(value: DoubleDelta): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: DoubleDelta): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
+      inline def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
       
-      @scala.inline
-      def setUrl(value: StringDelta): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: StringDelta): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -248,23 +206,18 @@ object downloads {
   }
   object DownloadFilenameSuggestion {
     
-    @scala.inline
-    def apply(filename: String): DownloadFilenameSuggestion = {
+    inline def apply(filename: String): DownloadFilenameSuggestion = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadFilenameSuggestion]
     }
     
-    @scala.inline
-    implicit class DownloadFilenameSuggestionMutableBuilder[Self <: DownloadFilenameSuggestion] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadFilenameSuggestion](x: Self) {
       
-      @scala.inline
-      def setConflictAction(value: String): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
+      inline def setConflictAction(value: String): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
+      inline def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,8 +291,7 @@ object downloads {
   }
   object DownloadItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesReceived: Double,
       canResume: Boolean,
       danger: String,
@@ -361,86 +313,59 @@ object downloads {
       __obj.asInstanceOf[DownloadItem]
     }
     
-    @scala.inline
-    implicit class DownloadItemMutableBuilder[Self <: DownloadItem] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadItem](x: Self) {
       
-      @scala.inline
-      def setByExtensionId(value: String): Self = StObject.set(x, "byExtensionId", value.asInstanceOf[js.Any])
+      inline def setByExtensionId(value: String): Self = StObject.set(x, "byExtensionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByExtensionIdUndefined: Self = StObject.set(x, "byExtensionId", js.undefined)
+      inline def setByExtensionIdUndefined: Self = StObject.set(x, "byExtensionId", js.undefined)
       
-      @scala.inline
-      def setByExtensionName(value: String): Self = StObject.set(x, "byExtensionName", value.asInstanceOf[js.Any])
+      inline def setByExtensionName(value: String): Self = StObject.set(x, "byExtensionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByExtensionNameUndefined: Self = StObject.set(x, "byExtensionName", js.undefined)
+      inline def setByExtensionNameUndefined: Self = StObject.set(x, "byExtensionName", js.undefined)
       
-      @scala.inline
-      def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+      inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanResume(value: Boolean): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
+      inline def setCanResume(value: Boolean): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDanger(value: String): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+      inline def setDanger(value: String): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setEstimatedEndTime(value: String): Self = StObject.set(x, "estimatedEndTime", value.asInstanceOf[js.Any])
+      inline def setEstimatedEndTime(value: String): Self = StObject.set(x, "estimatedEndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEstimatedEndTimeUndefined: Self = StObject.set(x, "estimatedEndTime", js.undefined)
+      inline def setEstimatedEndTimeUndefined: Self = StObject.set(x, "estimatedEndTime", js.undefined)
       
-      @scala.inline
-      def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+      inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -469,56 +394,40 @@ object downloads {
   }
   object DownloadOptions {
     
-    @scala.inline
-    def apply(url: String): DownloadOptions = {
+    inline def apply(url: String): DownloadOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    @scala.inline
-    implicit class DownloadOptionsMutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setConflictAction(value: String): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
+      inline def setConflictAction(value: String): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
+      inline def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Array[HeaderNameValuePair]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[HeaderNameValuePair]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: HeaderNameValuePair*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: HeaderNameValuePair*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setSaveAs(value: Boolean): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
+      inline def setSaveAs(value: Boolean): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
+      inline def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -601,170 +510,116 @@ object downloads {
   }
   object DownloadQuery {
     
-    @scala.inline
-    def apply(): DownloadQuery = {
+    inline def apply(): DownloadQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadQuery]
     }
     
-    @scala.inline
-    implicit class DownloadQueryMutableBuilder[Self <: DownloadQuery] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadQuery](x: Self) {
       
-      @scala.inline
-      def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+      inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
+      inline def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
       
-      @scala.inline
-      def setDanger(value: String): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+      inline def setDanger(value: String): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
+      inline def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setEndedAfter(value: String): Self = StObject.set(x, "endedAfter", value.asInstanceOf[js.Any])
+      inline def setEndedAfter(value: String): Self = StObject.set(x, "endedAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndedAfterUndefined: Self = StObject.set(x, "endedAfter", js.undefined)
+      inline def setEndedAfterUndefined: Self = StObject.set(x, "endedAfter", js.undefined)
       
-      @scala.inline
-      def setEndedBefore(value: String): Self = StObject.set(x, "endedBefore", value.asInstanceOf[js.Any])
+      inline def setEndedBefore(value: String): Self = StObject.set(x, "endedBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndedBeforeUndefined: Self = StObject.set(x, "endedBefore", js.undefined)
+      inline def setEndedBeforeUndefined: Self = StObject.set(x, "endedBefore", js.undefined)
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameRegex(value: String): Self = StObject.set(x, "filenameRegex", value.asInstanceOf[js.Any])
+      inline def setFilenameRegex(value: String): Self = StObject.set(x, "filenameRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameRegexUndefined: Self = StObject.set(x, "filenameRegex", js.undefined)
+      inline def setFilenameRegexUndefined: Self = StObject.set(x, "filenameRegex", js.undefined)
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
       
-      @scala.inline
-      def setOrderBy(value: js.Array[String]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+      inline def setOrderBy(value: js.Array[String]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+      inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      @scala.inline
-      def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setStartedAfter(value: String): Self = StObject.set(x, "startedAfter", value.asInstanceOf[js.Any])
+      inline def setStartedAfter(value: String): Self = StObject.set(x, "startedAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartedAfterUndefined: Self = StObject.set(x, "startedAfter", js.undefined)
+      inline def setStartedAfterUndefined: Self = StObject.set(x, "startedAfter", js.undefined)
       
-      @scala.inline
-      def setStartedBefore(value: String): Self = StObject.set(x, "startedBefore", value.asInstanceOf[js.Any])
+      inline def setStartedBefore(value: String): Self = StObject.set(x, "startedBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartedBeforeUndefined: Self = StObject.set(x, "startedBefore", js.undefined)
+      inline def setStartedBeforeUndefined: Self = StObject.set(x, "startedBefore", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesGreater(value: Double): Self = StObject.set(x, "totalBytesGreater", value.asInstanceOf[js.Any])
+      inline def setTotalBytesGreater(value: Double): Self = StObject.set(x, "totalBytesGreater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesGreaterUndefined: Self = StObject.set(x, "totalBytesGreater", js.undefined)
+      inline def setTotalBytesGreaterUndefined: Self = StObject.set(x, "totalBytesGreater", js.undefined)
       
-      @scala.inline
-      def setTotalBytesLess(value: Double): Self = StObject.set(x, "totalBytesLess", value.asInstanceOf[js.Any])
+      inline def setTotalBytesLess(value: Double): Self = StObject.set(x, "totalBytesLess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesLessUndefined: Self = StObject.set(x, "totalBytesLess", js.undefined)
+      inline def setTotalBytesLessUndefined: Self = StObject.set(x, "totalBytesLess", js.undefined)
       
-      @scala.inline
-      def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
+      inline def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
+      inline def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
+      inline def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -776,20 +631,16 @@ object downloads {
   }
   object GetFileIconOptions {
     
-    @scala.inline
-    def apply(): GetFileIconOptions = {
+    inline def apply(): GetFileIconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetFileIconOptions]
     }
     
-    @scala.inline
-    implicit class GetFileIconOptionsMutableBuilder[Self <: GetFileIconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetFileIconOptions](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -803,20 +654,16 @@ object downloads {
   }
   object HeaderNameValuePair {
     
-    @scala.inline
-    def apply(name: String, value: String): HeaderNameValuePair = {
+    inline def apply(name: String, value: String): HeaderNameValuePair = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeaderNameValuePair]
     }
     
-    @scala.inline
-    implicit class HeaderNameValuePairMutableBuilder[Self <: HeaderNameValuePair] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderNameValuePair](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -828,26 +675,20 @@ object downloads {
   }
   object StringDelta {
     
-    @scala.inline
-    def apply(): StringDelta = {
+    inline def apply(): StringDelta = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StringDelta]
     }
     
-    @scala.inline
-    implicit class StringDeltaMutableBuilder[Self <: StringDelta] (val x: Self) extends AnyVal {
+    extension [Self <: StringDelta](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
 }

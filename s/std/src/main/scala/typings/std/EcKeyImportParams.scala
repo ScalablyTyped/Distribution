@@ -12,16 +12,13 @@ trait EcKeyImportParams
 }
 object EcKeyImportParams {
   
-  @scala.inline
-  def apply(name: java.lang.String, namedCurve: NamedCurve): EcKeyImportParams = {
+  inline def apply(name: java.lang.String, namedCurve: NamedCurve): EcKeyImportParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namedCurve = namedCurve.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcKeyImportParams]
   }
   
-  @scala.inline
-  implicit class EcKeyImportParamsMutableBuilder[Self <: EcKeyImportParams] (val x: Self) extends AnyVal {
+  extension [Self <: EcKeyImportParams](x: Self) {
     
-    @scala.inline
-    def setNamedCurve(value: NamedCurve): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
+    inline def setNamedCurve(value: NamedCurve): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
   }
 }

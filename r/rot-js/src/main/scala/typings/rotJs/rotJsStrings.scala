@@ -11,34 +11,29 @@ object rotJsStrings {
   sealed trait hex
     extends StObject
        with LayoutType
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait rect
     extends StObject
        with LayoutType
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
+  inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
   sealed trait term
     extends StObject
        with LayoutType
-  @scala.inline
-  def term: term = "term".asInstanceOf[term]
+  inline def term: term = "term".asInstanceOf[term]
   
   @js.native
   sealed trait tile
     extends StObject
        with LayoutType
-  @scala.inline
-  def tile: tile = "tile".asInstanceOf[tile]
+  inline def tile: tile = "tile".asInstanceOf[tile]
   
   @js.native
   sealed trait `tile-gl`
     extends StObject
        with LayoutType
-  @scala.inline
-  def `tile-gl`: `tile-gl` = "tile-gl".asInstanceOf[`tile-gl`]
+  inline def `tile-gl`: `tile-gl` = "tile-gl".asInstanceOf[`tile-gl`]
 }

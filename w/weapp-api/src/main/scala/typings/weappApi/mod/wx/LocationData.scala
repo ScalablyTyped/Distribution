@@ -20,25 +20,19 @@ trait LocationData extends StObject {
 }
 object LocationData {
   
-  @scala.inline
-  def apply(accuracy: Double, latitude: Double, longitude: Double, speed: Double): LocationData = {
+  inline def apply(accuracy: Double, latitude: Double, longitude: Double, speed: Double): LocationData = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationData]
   }
   
-  @scala.inline
-  implicit class LocationDataMutableBuilder[Self <: LocationData] (val x: Self) extends AnyVal {
+  extension [Self <: LocationData](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
   }
 }

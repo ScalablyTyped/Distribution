@@ -14,26 +14,20 @@ trait ReactElement extends StObject {
 }
 object ReactElement {
   
-  @scala.inline
-  def apply(props: js.Any, `type`: js.Any): ReactElement = {
+  inline def apply(props: js.Any, `type`: js.Any): ReactElement = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactElement]
   }
   
-  @scala.inline
-  implicit class ReactElementMutableBuilder[Self <: ReactElement] (val x: Self) extends AnyVal {
+  extension [Self <: ReactElement](x: Self) {
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

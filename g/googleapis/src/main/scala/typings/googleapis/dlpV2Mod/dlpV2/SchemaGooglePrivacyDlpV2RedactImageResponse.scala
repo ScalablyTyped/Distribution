@@ -28,31 +28,23 @@ trait SchemaGooglePrivacyDlpV2RedactImageResponse extends StObject {
 }
 object SchemaGooglePrivacyDlpV2RedactImageResponse {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2RedactImageResponse = {
+  inline def apply(): SchemaGooglePrivacyDlpV2RedactImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RedactImageResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RedactImageResponseMutableBuilder[Self <: SchemaGooglePrivacyDlpV2RedactImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2RedactImageResponse](x: Self) {
     
-    @scala.inline
-    def setExtractedText(value: String): Self = StObject.set(x, "extractedText", value.asInstanceOf[js.Any])
+    inline def setExtractedText(value: String): Self = StObject.set(x, "extractedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractedTextUndefined: Self = StObject.set(x, "extractedText", js.undefined)
+    inline def setExtractedTextUndefined: Self = StObject.set(x, "extractedText", js.undefined)
     
-    @scala.inline
-    def setInspectResult(value: SchemaGooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "inspectResult", value.asInstanceOf[js.Any])
+    inline def setInspectResult(value: SchemaGooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "inspectResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectResultUndefined: Self = StObject.set(x, "inspectResult", js.undefined)
+    inline def setInspectResultUndefined: Self = StObject.set(x, "inspectResult", js.undefined)
     
-    @scala.inline
-    def setRedactedImage(value: String): Self = StObject.set(x, "redactedImage", value.asInstanceOf[js.Any])
+    inline def setRedactedImage(value: String): Self = StObject.set(x, "redactedImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactedImageUndefined: Self = StObject.set(x, "redactedImage", js.undefined)
+    inline def setRedactedImageUndefined: Self = StObject.set(x, "redactedImage", js.undefined)
   }
 }

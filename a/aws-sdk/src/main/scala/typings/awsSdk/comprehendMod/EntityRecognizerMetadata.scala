@@ -28,40 +28,29 @@ trait EntityRecognizerMetadata extends StObject {
 }
 object EntityRecognizerMetadata {
   
-  @scala.inline
-  def apply(): EntityRecognizerMetadata = {
+  inline def apply(): EntityRecognizerMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityRecognizerMetadata]
   }
   
-  @scala.inline
-  implicit class EntityRecognizerMetadataMutableBuilder[Self <: EntityRecognizerMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: EntityRecognizerMetadata](x: Self) {
     
-    @scala.inline
-    def setEntityTypes(value: EntityRecognizerMetadataEntityTypesList): Self = StObject.set(x, "EntityTypes", value.asInstanceOf[js.Any])
+    inline def setEntityTypes(value: EntityRecognizerMetadataEntityTypesList): Self = StObject.set(x, "EntityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypesUndefined: Self = StObject.set(x, "EntityTypes", js.undefined)
+    inline def setEntityTypesUndefined: Self = StObject.set(x, "EntityTypes", js.undefined)
     
-    @scala.inline
-    def setEntityTypesVarargs(value: EntityRecognizerMetadataEntityTypesListItem*): Self = StObject.set(x, "EntityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: EntityRecognizerMetadataEntityTypesListItem*): Self = StObject.set(x, "EntityTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setEvaluationMetrics(value: EntityRecognizerEvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
+    inline def setEvaluationMetrics(value: EntityRecognizerEvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
+    inline def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
     
-    @scala.inline
-    def setNumberOfTestDocuments(value: Integer): Self = StObject.set(x, "NumberOfTestDocuments", value.asInstanceOf[js.Any])
+    inline def setNumberOfTestDocuments(value: Integer): Self = StObject.set(x, "NumberOfTestDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTestDocumentsUndefined: Self = StObject.set(x, "NumberOfTestDocuments", js.undefined)
+    inline def setNumberOfTestDocumentsUndefined: Self = StObject.set(x, "NumberOfTestDocuments", js.undefined)
     
-    @scala.inline
-    def setNumberOfTrainedDocuments(value: Integer): Self = StObject.set(x, "NumberOfTrainedDocuments", value.asInstanceOf[js.Any])
+    inline def setNumberOfTrainedDocuments(value: Integer): Self = StObject.set(x, "NumberOfTrainedDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTrainedDocumentsUndefined: Self = StObject.set(x, "NumberOfTrainedDocuments", js.undefined)
+    inline def setNumberOfTrainedDocumentsUndefined: Self = StObject.set(x, "NumberOfTrainedDocuments", js.undefined)
   }
 }

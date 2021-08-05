@@ -36,8 +36,7 @@ trait OkPacket extends StObject {
 }
 object OkPacket {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     affectedRows: Double,
     changedRows: Double,
     fieldCount: Double,
@@ -49,37 +48,26 @@ object OkPacket {
     __obj.asInstanceOf[OkPacket]
   }
   
-  @scala.inline
-  implicit class OkPacketMutableBuilder[Self <: OkPacket] (val x: Self) extends AnyVal {
+  extension [Self <: OkPacket](x: Self) {
     
-    @scala.inline
-    def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
+    inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedRows(value: Double): Self = StObject.set(x, "changedRows", value.asInstanceOf[js.Any])
+    inline def setChangedRows(value: Double): Self = StObject.set(x, "changedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
+    inline def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
+    inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol41(value: Boolean): Self = StObject.set(x, "protocol41", value.asInstanceOf[js.Any])
+    inline def setProtocol41(value: Boolean): Self = StObject.set(x, "protocol41", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerStatus(value: Double): Self = StObject.set(x, "serverStatus", value.asInstanceOf[js.Any])
+    inline def setServerStatus(value: Double): Self = StObject.set(x, "serverStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerStatusUndefined: Self = StObject.set(x, "serverStatus", js.undefined)
+    inline def setServerStatusUndefined: Self = StObject.set(x, "serverStatus", js.undefined)
     
-    @scala.inline
-    def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
+    inline def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningCountUndefined: Self = StObject.set(x, "warningCount", js.undefined)
+    inline def setWarningCountUndefined: Self = StObject.set(x, "warningCount", js.undefined)
   }
 }

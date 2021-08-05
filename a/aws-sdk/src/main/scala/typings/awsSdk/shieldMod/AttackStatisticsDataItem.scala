@@ -18,22 +18,17 @@ trait AttackStatisticsDataItem extends StObject {
 }
 object AttackStatisticsDataItem {
   
-  @scala.inline
-  def apply(AttackCount: Long): AttackStatisticsDataItem = {
+  inline def apply(AttackCount: Long): AttackStatisticsDataItem = {
     val __obj = js.Dynamic.literal(AttackCount = AttackCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttackStatisticsDataItem]
   }
   
-  @scala.inline
-  implicit class AttackStatisticsDataItemMutableBuilder[Self <: AttackStatisticsDataItem] (val x: Self) extends AnyVal {
+  extension [Self <: AttackStatisticsDataItem](x: Self) {
     
-    @scala.inline
-    def setAttackCount(value: Long): Self = StObject.set(x, "AttackCount", value.asInstanceOf[js.Any])
+    inline def setAttackCount(value: Long): Self = StObject.set(x, "AttackCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackVolume(value: AttackVolume): Self = StObject.set(x, "AttackVolume", value.asInstanceOf[js.Any])
+    inline def setAttackVolume(value: AttackVolume): Self = StObject.set(x, "AttackVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackVolumeUndefined: Self = StObject.set(x, "AttackVolume", js.undefined)
+    inline def setAttackVolumeUndefined: Self = StObject.set(x, "AttackVolume", js.undefined)
   }
 }

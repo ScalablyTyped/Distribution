@@ -28,40 +28,29 @@ trait HadoopJarStepConfig extends StObject {
 }
 object HadoopJarStepConfig {
   
-  @scala.inline
-  def apply(Jar: XmlString): HadoopJarStepConfig = {
+  inline def apply(Jar: XmlString): HadoopJarStepConfig = {
     val __obj = js.Dynamic.literal(Jar = Jar.asInstanceOf[js.Any])
     __obj.asInstanceOf[HadoopJarStepConfig]
   }
   
-  @scala.inline
-  implicit class HadoopJarStepConfigMutableBuilder[Self <: HadoopJarStepConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HadoopJarStepConfig](x: Self) {
     
-    @scala.inline
-    def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
-    @scala.inline
-    def setJar(value: XmlString): Self = StObject.set(x, "Jar", value.asInstanceOf[js.Any])
+    inline def setJar(value: XmlString): Self = StObject.set(x, "Jar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainClass(value: XmlString): Self = StObject.set(x, "MainClass", value.asInstanceOf[js.Any])
+    inline def setMainClass(value: XmlString): Self = StObject.set(x, "MainClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainClassUndefined: Self = StObject.set(x, "MainClass", js.undefined)
+    inline def setMainClassUndefined: Self = StObject.set(x, "MainClass", js.undefined)
     
-    @scala.inline
-    def setProperties(value: KeyValueList): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: KeyValueList): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "Properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "Properties", js.Array(value :_*))
   }
 }

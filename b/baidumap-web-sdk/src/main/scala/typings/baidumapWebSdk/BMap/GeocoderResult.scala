@@ -18,8 +18,7 @@ trait GeocoderResult extends StObject {
 }
 object GeocoderResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     addressComponents: AddressComponent,
     business: String,
@@ -30,25 +29,18 @@ object GeocoderResult {
     __obj.asInstanceOf[GeocoderResult]
   }
   
-  @scala.inline
-  implicit class GeocoderResultMutableBuilder[Self <: GeocoderResult] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderResult](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressComponents(value: AddressComponent): Self = StObject.set(x, "addressComponents", value.asInstanceOf[js.Any])
+    inline def setAddressComponents(value: AddressComponent): Self = StObject.set(x, "addressComponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+    inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurroundingPoi(value: js.Array[LocalResultPoi]): Self = StObject.set(x, "surroundingPoi", value.asInstanceOf[js.Any])
+    inline def setSurroundingPoi(value: js.Array[LocalResultPoi]): Self = StObject.set(x, "surroundingPoi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurroundingPoiVarargs(value: LocalResultPoi*): Self = StObject.set(x, "surroundingPoi", js.Array(value :_*))
+    inline def setSurroundingPoiVarargs(value: LocalResultPoi*): Self = StObject.set(x, "surroundingPoi", js.Array(value :_*))
   }
 }

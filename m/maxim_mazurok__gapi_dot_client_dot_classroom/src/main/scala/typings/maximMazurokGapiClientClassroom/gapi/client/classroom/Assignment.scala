@@ -11,19 +11,15 @@ trait Assignment extends StObject {
 }
 object Assignment {
   
-  @scala.inline
-  def apply(): Assignment = {
+  inline def apply(): Assignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Assignment]
   }
   
-  @scala.inline
-  implicit class AssignmentMutableBuilder[Self <: Assignment] (val x: Self) extends AnyVal {
+  extension [Self <: Assignment](x: Self) {
     
-    @scala.inline
-    def setStudentWorkFolder(value: DriveFolder): Self = StObject.set(x, "studentWorkFolder", value.asInstanceOf[js.Any])
+    inline def setStudentWorkFolder(value: DriveFolder): Self = StObject.set(x, "studentWorkFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentWorkFolderUndefined: Self = StObject.set(x, "studentWorkFolder", js.undefined)
+    inline def setStudentWorkFolderUndefined: Self = StObject.set(x, "studentWorkFolder", js.undefined)
   }
 }

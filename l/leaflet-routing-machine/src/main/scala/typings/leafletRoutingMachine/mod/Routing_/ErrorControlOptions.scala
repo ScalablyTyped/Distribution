@@ -12,25 +12,19 @@ trait ErrorControlOptions extends StObject {
 }
 object ErrorControlOptions {
   
-  @scala.inline
-  def apply(): ErrorControlOptions = {
+  inline def apply(): ErrorControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorControlOptions]
   }
   
-  @scala.inline
-  implicit class ErrorControlOptionsMutableBuilder[Self <: ErrorControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorControlOptions](x: Self) {
     
-    @scala.inline
-    def setFormatMessage(value: /* error */ IError => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
+    inline def setFormatMessage(value: /* error */ IError => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatMessageUndefined: Self = StObject.set(x, "formatMessage", js.undefined)
+    inline def setFormatMessageUndefined: Self = StObject.set(x, "formatMessage", js.undefined)
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait EventPortalRemoved extends StObject {
 }
 object EventPortalRemoved {
   
-  @scala.inline
-  def apply(data: PortalData, portal: Portal): EventPortalRemoved = {
+  inline def apply(data: PortalData, portal: Portal): EventPortalRemoved = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], portal = portal.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPortalRemoved]
   }
   
-  @scala.inline
-  implicit class EventPortalRemovedMutableBuilder[Self <: EventPortalRemoved] (val x: Self) extends AnyVal {
+  extension [Self <: EventPortalRemoved](x: Self) {
     
-    @scala.inline
-    def setData(value: PortalData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PortalData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortal(value: Portal): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    inline def setPortal(value: Portal): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
   }
 }

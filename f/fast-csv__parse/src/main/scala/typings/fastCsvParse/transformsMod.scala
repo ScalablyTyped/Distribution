@@ -29,13 +29,11 @@ object transformsMod {
     @JSImport("@fast-csv/parse/build/src/transforms", "RowTransformerValidator.createTransform")
     @js.native
     def createTransform: js.Any = js.native
-    @scala.inline
-    def createTransform_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTransform")(x.asInstanceOf[js.Any])
+    inline def createTransform_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTransform")(x.asInstanceOf[js.Any])
     
     @JSImport("@fast-csv/parse/build/src/transforms", "RowTransformerValidator.createValidator")
     @js.native
     def createValidator: js.Any = js.native
-    @scala.inline
-    def createValidator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createValidator")(x.asInstanceOf[js.Any])
+    inline def createValidator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createValidator")(x.asInstanceOf[js.Any])
   }
 }

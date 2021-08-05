@@ -23,19 +23,15 @@ trait ASPxClientTreeListCustomDataCallbackEventArgs
 }
 object ASPxClientTreeListCustomDataCallbackEventArgs {
   
-  @scala.inline
-  def apply(arg: String, result: js.Any): ASPxClientTreeListCustomDataCallbackEventArgs = {
+  inline def apply(arg: String, result: js.Any): ASPxClientTreeListCustomDataCallbackEventArgs = {
     val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListCustomDataCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListCustomDataCallbackEventArgsMutableBuilder[Self <: ASPxClientTreeListCustomDataCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListCustomDataCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+    inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

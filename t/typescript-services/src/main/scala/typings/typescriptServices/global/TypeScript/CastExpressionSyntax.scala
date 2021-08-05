@@ -103,6 +103,5 @@ object CastExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(`type`: ITypeSyntax, expression: IUnaryExpressionSyntax): typings.typescriptServices.TypeScript.CastExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.CastExpressionSyntax]
+  inline def create1(`type`: ITypeSyntax, expression: IUnaryExpressionSyntax): typings.typescriptServices.TypeScript.CastExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.CastExpressionSyntax]
 }

@@ -18,23 +18,18 @@ trait MetaProperty
 }
 object MetaProperty {
   
-  @scala.inline
-  def apply(meta: Identifier, property: Identifier): MetaProperty = {
+  inline def apply(meta: Identifier, property: Identifier): MetaProperty = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MetaProperty")
     __obj.asInstanceOf[MetaProperty]
   }
   
-  @scala.inline
-  implicit class MetaPropertyMutableBuilder[Self <: MetaProperty] (val x: Self) extends AnyVal {
+  extension [Self <: MetaProperty](x: Self) {
     
-    @scala.inline
-    def setMeta(value: Identifier): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Identifier): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Identifier): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Identifier): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.MetaProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.MetaProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

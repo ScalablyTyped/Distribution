@@ -11,19 +11,15 @@ trait DimensionHeader extends StObject {
 }
 object DimensionHeader {
   
-  @scala.inline
-  def apply(): DimensionHeader = {
+  inline def apply(): DimensionHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionHeader]
   }
   
-  @scala.inline
-  implicit class DimensionHeaderMutableBuilder[Self <: DimensionHeader] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionHeader](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

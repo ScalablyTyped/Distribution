@@ -14,8 +14,7 @@ trait DefaultComponents extends StObject {
 }
 object DefaultComponents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     position: Component[Coordinate, System[js.Any]],
     rotation: Component[Coordinate, System[js.Any]],
     scale: Component[Coordinate, System[js.Any]]
@@ -24,16 +23,12 @@ object DefaultComponents {
     __obj.asInstanceOf[DefaultComponents]
   }
   
-  @scala.inline
-  implicit class DefaultComponentsMutableBuilder[Self <: DefaultComponents] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultComponents](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Component[Coordinate, System[js.Any]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Component[Coordinate, System[js.Any]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Component[Coordinate, System[js.Any]]): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Component[Coordinate, System[js.Any]]): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Component[Coordinate, System[js.Any]]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Component[Coordinate, System[js.Any]]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

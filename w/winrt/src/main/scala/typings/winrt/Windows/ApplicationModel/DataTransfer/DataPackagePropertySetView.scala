@@ -15,8 +15,7 @@ trait DataPackagePropertySetView
      with IDataPackagePropertySetView
 object DataPackagePropertySetView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applicationListingUri: Uri,
     applicationName: String,
     description: String,

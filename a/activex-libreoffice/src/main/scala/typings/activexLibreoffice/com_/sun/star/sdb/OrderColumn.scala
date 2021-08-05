@@ -22,8 +22,7 @@ trait OrderColumn
 }
 object OrderColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultValue: String,
     Description: String,
     IsAscending: Boolean,
@@ -53,10 +52,8 @@ object OrderColumn {
     __obj.asInstanceOf[OrderColumn]
   }
   
-  @scala.inline
-  implicit class OrderColumnMutableBuilder[Self <: OrderColumn] (val x: Self) extends AnyVal {
+  extension [Self <: OrderColumn](x: Self) {
     
-    @scala.inline
-    def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
+    inline def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
   }
 }

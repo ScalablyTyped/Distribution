@@ -13,16 +13,13 @@ trait IQuerySingleResult
 }
 object IQuerySingleResult {
   
-  @scala.inline
-  def apply(data: IDocumentData, errMsg: String): IQuerySingleResult = {
+  inline def apply(data: IDocumentData, errMsg: String): IQuerySingleResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQuerySingleResult]
   }
   
-  @scala.inline
-  implicit class IQuerySingleResultMutableBuilder[Self <: IQuerySingleResult] (val x: Self) extends AnyVal {
+  extension [Self <: IQuerySingleResult](x: Self) {
     
-    @scala.inline
-    def setData(value: IDocumentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IDocumentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

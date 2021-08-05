@@ -11,16 +11,13 @@ trait ConstantArgs extends StObject {
 }
 object ConstantArgs {
   
-  @scala.inline
-  def apply(value: Double): ConstantArgs = {
+  inline def apply(value: Double): ConstantArgs = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstantArgs]
   }
   
-  @scala.inline
-  implicit class ConstantArgsMutableBuilder[Self <: ConstantArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ConstantArgs](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

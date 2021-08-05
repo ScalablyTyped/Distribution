@@ -13,19 +13,15 @@ trait CreateOpsItemResponse extends StObject {
 }
 object CreateOpsItemResponse {
   
-  @scala.inline
-  def apply(): CreateOpsItemResponse = {
+  inline def apply(): CreateOpsItemResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateOpsItemResponse]
   }
   
-  @scala.inline
-  implicit class CreateOpsItemResponseMutableBuilder[Self <: CreateOpsItemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOpsItemResponse](x: Self) {
     
-    @scala.inline
-    def setOpsItemId(value: String): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
+    inline def setOpsItemId(value: String): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsItemIdUndefined: Self = StObject.set(x, "OpsItemId", js.undefined)
+    inline def setOpsItemIdUndefined: Self = StObject.set(x, "OpsItemId", js.undefined)
   }
 }

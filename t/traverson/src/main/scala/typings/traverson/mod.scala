@@ -130,8 +130,7 @@ object mod extends Shortcut {
     }
     object Builder {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addRequestOptions: js.Any => Builder,
         convertResponseToObject: () => Builder,
         convertsResponseToObject: () => Boolean,
@@ -181,158 +180,113 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Builder]
       }
       
-      @scala.inline
-      implicit class BuilderMutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
+      extension [Self <: Builder](x: Self) {
         
-        @scala.inline
-        def setAddRequestOptions(value: js.Any => Builder): Self = StObject.set(x, "addRequestOptions", js.Any.fromFunction1(value))
+        inline def setAddRequestOptions(value: js.Any => Builder): Self = StObject.set(x, "addRequestOptions", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setConvertResponseToObject(value: () => Builder): Self = StObject.set(x, "convertResponseToObject", js.Any.fromFunction0(value))
+        inline def setConvertResponseToObject(value: () => Builder): Self = StObject.set(x, "convertResponseToObject", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setConvertsResponseToObject(value: () => Boolean): Self = StObject.set(x, "convertsResponseToObject", js.Any.fromFunction0(value))
+        inline def setConvertsResponseToObject(value: () => Boolean): Self = StObject.set(x, "convertsResponseToObject", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDel(
+        inline def setDel(
           value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDelete(
+        inline def setDelete(
           value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDisableAutoHeaders(value: () => Builder): Self = StObject.set(x, "disableAutoHeaders", js.Any.fromFunction0(value))
+        inline def setDisableAutoHeaders(value: () => Builder): Self = StObject.set(x, "disableAutoHeaders", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDoesContentNegotiation(value: () => Boolean): Self = StObject.set(x, "doesContentNegotiation", js.Any.fromFunction0(value))
+        inline def setDoesContentNegotiation(value: () => Boolean): Self = StObject.set(x, "doesContentNegotiation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDoesPreferEmbeddedResources(value: () => Boolean): Self = StObject.set(x, "doesPreferEmbeddedResources", js.Any.fromFunction0(value))
+        inline def setDoesPreferEmbeddedResources(value: () => Boolean): Self = StObject.set(x, "doesPreferEmbeddedResources", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDoesResolveRelative(value: () => Boolean): Self = StObject.set(x, "doesResolveRelative", js.Any.fromFunction0(value))
+        inline def setDoesResolveRelative(value: () => Boolean): Self = StObject.set(x, "doesResolveRelative", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnableAutoHeaders(value: () => Builder): Self = StObject.set(x, "enableAutoHeaders", js.Any.fromFunction0(value))
+        inline def setEnableAutoHeaders(value: () => Builder): Self = StObject.set(x, "enableAutoHeaders", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setFollow(value: (String, /* repeated */ String) => Builder): Self = StObject.set(x, "follow", js.Any.fromFunction2(value))
+        inline def setFollow(value: (String, /* repeated */ String) => Builder): Self = StObject.set(x, "follow", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setFollowLocationHeader(value: () => Builder): Self = StObject.set(x, "followLocationHeader", js.Any.fromFunction0(value))
+        inline def setFollowLocationHeader(value: () => Builder): Self = StObject.set(x, "followLocationHeader", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setFrom(value: String => Builder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+        inline def setFrom(value: String => Builder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGet(
+        inline def setGet(
           value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetFrom(value: () => String): Self = StObject.set(x, "getFrom", js.Any.fromFunction0(value))
+        inline def setGetFrom(value: () => String): Self = StObject.set(x, "getFrom", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetJsonParser(value: () => js.Any): Self = StObject.set(x, "getJsonParser", js.Any.fromFunction0(value))
+        inline def setGetJsonParser(value: () => js.Any): Self = StObject.set(x, "getJsonParser", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLinkType(value: () => String): Self = StObject.set(x, "getLinkType", js.Any.fromFunction0(value))
+        inline def setGetLinkType(value: () => String): Self = StObject.set(x, "getLinkType", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
+        inline def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetRequestLibrary(value: () => js.Any): Self = StObject.set(x, "getRequestLibrary", js.Any.fromFunction0(value))
+        inline def setGetRequestLibrary(value: () => js.Any): Self = StObject.set(x, "getRequestLibrary", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetRequestOptions(value: () => js.Any): Self = StObject.set(x, "getRequestOptions", js.Any.fromFunction0(value))
+        inline def setGetRequestOptions(value: () => js.Any): Self = StObject.set(x, "getRequestOptions", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetResource(
+        inline def setGetResource(
           value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetTemplateParameters(value: () => js.Any): Self = StObject.set(x, "getTemplateParameters", js.Any.fromFunction0(value))
+        inline def setGetTemplateParameters(value: () => js.Any): Self = StObject.set(x, "getTemplateParameters", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetUri(
+        inline def setGetUri(
           value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "getUri", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetUrl(
+        inline def setGetUrl(
           value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "getUrl", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setJson(value: () => Builder): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+        inline def setJson(value: () => Builder): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setJsonHal(value: () => Builder): Self = StObject.set(x, "jsonHal", js.Any.fromFunction0(value))
+        inline def setJsonHal(value: () => Builder): Self = StObject.set(x, "jsonHal", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLinkHeader(value: () => Builder): Self = StObject.set(x, "linkHeader", js.Any.fromFunction0(value))
+        inline def setLinkHeader(value: () => Builder): Self = StObject.set(x, "linkHeader", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setNewRequest(value: () => Builder): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
+        inline def setNewRequest(value: () => Builder): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setParseResponseBodiesWith(value: js.Any => Builder): Self = StObject.set(x, "parseResponseBodiesWith", js.Any.fromFunction1(value))
+        inline def setParseResponseBodiesWith(value: js.Any => Builder): Self = StObject.set(x, "parseResponseBodiesWith", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPatch(
+        inline def setPatch(
           value: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
         ): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setPost(
+        inline def setPost(
           value: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
         ): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setPreferEmbeddedResources(value: js.Any => Builder): Self = StObject.set(x, "preferEmbeddedResources", js.Any.fromFunction1(value))
+        inline def setPreferEmbeddedResources(value: js.Any => Builder): Self = StObject.set(x, "preferEmbeddedResources", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPut(
+        inline def setPut(
           value: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
         ): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setResolveRelative(value: js.Any => Builder): Self = StObject.set(x, "resolveRelative", js.Any.fromFunction1(value))
+        inline def setResolveRelative(value: js.Any => Builder): Self = StObject.set(x, "resolveRelative", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSendRawPayload(value: js.Any => Builder): Self = StObject.set(x, "sendRawPayload", js.Any.fromFunction1(value))
+        inline def setSendRawPayload(value: js.Any => Builder): Self = StObject.set(x, "sendRawPayload", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSendsRawPayload(value: () => Boolean): Self = StObject.set(x, "sendsRawPayload", js.Any.fromFunction0(value))
+        inline def setSendsRawPayload(value: () => Boolean): Self = StObject.set(x, "sendsRawPayload", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetMediaType(value: String => Builder): Self = StObject.set(x, "setMediaType", js.Any.fromFunction1(value))
+        inline def setSetMediaType(value: String => Builder): Self = StObject.set(x, "setMediaType", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetsAutoHeaders(value: () => Boolean): Self = StObject.set(x, "setsAutoHeaders", js.Any.fromFunction0(value))
+        inline def setSetsAutoHeaders(value: () => Boolean): Self = StObject.set(x, "setsAutoHeaders", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setUseAutoHeaders(value: js.Any => Builder): Self = StObject.set(x, "useAutoHeaders", js.Any.fromFunction1(value))
+        inline def setUseAutoHeaders(value: js.Any => Builder): Self = StObject.set(x, "useAutoHeaders", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUseContentNegotiation(value: () => Builder): Self = StObject.set(x, "useContentNegotiation", js.Any.fromFunction0(value))
+        inline def setUseContentNegotiation(value: () => Builder): Self = StObject.set(x, "useContentNegotiation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWalk(value: (String, /* repeated */ String) => Builder): Self = StObject.set(x, "walk", js.Any.fromFunction2(value))
+        inline def setWalk(value: (String, /* repeated */ String) => Builder): Self = StObject.set(x, "walk", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setWithRequestLibrary(value: js.Any => Builder): Self = StObject.set(x, "withRequestLibrary", js.Any.fromFunction1(value))
+        inline def setWithRequestLibrary(value: js.Any => Builder): Self = StObject.set(x, "withRequestLibrary", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWithRequestOptions(value: js.Any => Builder): Self = StObject.set(x, "withRequestOptions", js.Any.fromFunction1(value))
+        inline def setWithRequestOptions(value: js.Any => Builder): Self = StObject.set(x, "withRequestOptions", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWithTemplateParameters(value: js.Any => Builder): Self = StObject.set(x, "withTemplateParameters", js.Any.fromFunction1(value))
+        inline def setWithTemplateParameters(value: js.Any => Builder): Self = StObject.set(x, "withTemplateParameters", js.Any.fromFunction1(value))
       }
     }
     
@@ -342,17 +296,14 @@ object mod extends Shortcut {
     }
     object InAction {
       
-      @scala.inline
-      def apply(abort: () => Unit): InAction = {
+      inline def apply(abort: () => Unit): InAction = {
         val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
         __obj.asInstanceOf[InAction]
       }
       
-      @scala.inline
-      implicit class InActionMutableBuilder[Self <: InAction] (val x: Self) extends AnyVal {
+      extension [Self <: InAction](x: Self) {
         
-        @scala.inline
-        def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+        inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       }
     }
     
@@ -362,17 +313,14 @@ object mod extends Shortcut {
     }
     object Json {
       
-      @scala.inline
-      def apply(parseJson: () => js.Any): Json = {
+      inline def apply(parseJson: () => js.Any): Json = {
         val __obj = js.Dynamic.literal(parseJson = js.Any.fromFunction0(parseJson))
         __obj.asInstanceOf[Json]
       }
       
-      @scala.inline
-      implicit class JsonMutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
+      extension [Self <: Json](x: Self) {
         
-        @scala.inline
-        def setParseJson(value: () => js.Any): Self = StObject.set(x, "parseJson", js.Any.fromFunction0(value))
+        inline def setParseJson(value: () => js.Any): Self = StObject.set(x, "parseJson", js.Any.fromFunction0(value))
       }
     }
     
@@ -382,17 +330,14 @@ object mod extends Shortcut {
     }
     object Traversal {
       
-      @scala.inline
-      def apply(continue: () => Builder): Traversal = {
+      inline def apply(continue: () => Builder): Traversal = {
         val __obj = js.Dynamic.literal(continue = js.Any.fromFunction0(continue))
         __obj.asInstanceOf[Traversal]
       }
       
-      @scala.inline
-      implicit class TraversalMutableBuilder[Self <: Traversal] (val x: Self) extends AnyVal {
+      extension [Self <: Traversal](x: Self) {
         
-        @scala.inline
-        def setContinue(value: () => Builder): Self = StObject.set(x, "continue", js.Any.fromFunction0(value))
+        inline def setContinue(value: () => Builder): Self = StObject.set(x, "continue", js.Any.fromFunction0(value))
       }
     }
     
@@ -414,8 +359,7 @@ object mod extends Shortcut {
     }
     object TraversonMethods {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         errors: () => TraversonMethods,
         from: String => Builder,
         json: () => Builder,
@@ -428,29 +372,21 @@ object mod extends Shortcut {
         __obj.asInstanceOf[TraversonMethods]
       }
       
-      @scala.inline
-      implicit class TraversonMethodsMutableBuilder[Self <: TraversonMethods] (val x: Self) extends AnyVal {
+      extension [Self <: TraversonMethods](x: Self) {
         
-        @scala.inline
-        def setErrors(value: () => TraversonMethods): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
+        inline def setErrors(value: () => TraversonMethods): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setFrom(value: String => Builder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+        inline def setFrom(value: String => Builder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setJson(value: () => Builder): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+        inline def setJson(value: () => Builder): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setJsonHal(value: () => Builder): Self = StObject.set(x, "jsonHal", js.Any.fromFunction0(value))
+        inline def setJsonHal(value: () => Builder): Self = StObject.set(x, "jsonHal", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setMediaTypes(value: () => TraversonMethods): Self = StObject.set(x, "mediaTypes", js.Any.fromFunction0(value))
+        inline def setMediaTypes(value: () => TraversonMethods): Self = StObject.set(x, "mediaTypes", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setNewRequest(value: () => Builder): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
+        inline def setNewRequest(value: () => Builder): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRegisterMediaType(value: (String, js.Any) => TraversonMethods): Self = StObject.set(x, "registerMediaType", js.Any.fromFunction2(value))
+        inline def setRegisterMediaType(value: (String, js.Any) => TraversonMethods): Self = StObject.set(x, "registerMediaType", js.Any.fromFunction2(value))
       }
     }
   }

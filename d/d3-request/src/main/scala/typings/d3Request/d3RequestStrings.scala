@@ -8,21 +8,17 @@ object d3RequestStrings {
   
   @js.native
   sealed trait beforesend extends StObject
-  @scala.inline
-  def beforesend: beforesend = "beforesend".asInstanceOf[beforesend]
+  inline def beforesend: beforesend = "beforesend".asInstanceOf[beforesend]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait load extends StObject
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
   sealed trait progress extends StObject
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
+  inline def progress: progress = "progress".asInstanceOf[progress]
 }

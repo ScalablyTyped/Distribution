@@ -23,28 +23,21 @@ trait Channel extends StObject {
 }
 object Channel {
   
-  @scala.inline
-  def apply(eventPublishers: EventPublishers, uri: ChannelUri): Channel = {
+  inline def apply(eventPublishers: EventPublishers, uri: ChannelUri): Channel = {
     val __obj = js.Dynamic.literal(eventPublishers = eventPublishers.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setEventPublishers(value: EventPublishers): Self = StObject.set(x, "eventPublishers", value.asInstanceOf[js.Any])
+    inline def setEventPublishers(value: EventPublishers): Self = StObject.set(x, "eventPublishers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPublishersVarargs(value: EventPublisher*): Self = StObject.set(x, "eventPublishers", js.Array(value :_*))
+    inline def setEventPublishersVarargs(value: EventPublisher*): Self = StObject.set(x, "eventPublishers", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: ChannelId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ChannelId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setUri(value: ChannelUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: ChannelUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

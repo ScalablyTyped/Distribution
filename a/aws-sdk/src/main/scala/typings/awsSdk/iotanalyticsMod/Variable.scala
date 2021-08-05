@@ -33,40 +33,29 @@ trait Variable extends StObject {
 }
 object Variable {
   
-  @scala.inline
-  def apply(name: VariableName): Variable = {
+  inline def apply(name: VariableName): Variable = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]
   }
   
-  @scala.inline
-  implicit class VariableMutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
+  extension [Self <: Variable](x: Self) {
     
-    @scala.inline
-    def setDatasetContentVersionValue(value: DatasetContentVersionValue): Self = StObject.set(x, "datasetContentVersionValue", value.asInstanceOf[js.Any])
+    inline def setDatasetContentVersionValue(value: DatasetContentVersionValue): Self = StObject.set(x, "datasetContentVersionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetContentVersionValueUndefined: Self = StObject.set(x, "datasetContentVersionValue", js.undefined)
+    inline def setDatasetContentVersionValueUndefined: Self = StObject.set(x, "datasetContentVersionValue", js.undefined)
     
-    @scala.inline
-    def setDoubleValue(value: DoubleValue): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setDoubleValue(value: DoubleValue): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
-    @scala.inline
-    def setName(value: VariableName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: VariableName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFileUriValue(value: OutputFileUriValue): Self = StObject.set(x, "outputFileUriValue", value.asInstanceOf[js.Any])
+    inline def setOutputFileUriValue(value: OutputFileUriValue): Self = StObject.set(x, "outputFileUriValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFileUriValueUndefined: Self = StObject.set(x, "outputFileUriValue", js.undefined)
+    inline def setOutputFileUriValueUndefined: Self = StObject.set(x, "outputFileUriValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: StringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: StringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

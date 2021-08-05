@@ -12,12 +12,9 @@ object reflectionUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBaseClassDependencyCount(metadataReader: MetadataReader, func: js.Function): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseClassDependencyCount")(metadataReader.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getBaseClassDependencyCount(metadataReader: MetadataReader, func: js.Function): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseClassDependencyCount")(metadataReader.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getDependencies(metadataReader: MetadataReader, func: js.Function): js.Array[Target] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependencies")(metadataReader.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[Target]]
+  inline def getDependencies(metadataReader: MetadataReader, func: js.Function): js.Array[Target] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependencies")(metadataReader.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[Target]]
   
-  @scala.inline
-  def getFunctionName(v: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFunctionName(v: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(v.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -14,16 +14,14 @@ object mod {
   @JSImport("payment", "fns")
   @js.native
   def fns: Fns = js.native
-  @scala.inline
-  def fns_=(x: Fns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fns")(x.asInstanceOf[js.Any])
+  inline def fns_=(x: Fns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fns")(x.asInstanceOf[js.Any])
   
   /**
     * Formats card CVC:
     * * Restricts length to 4 numbers
     * * Restricts input to numbers
     */
-  @scala.inline
-  def formatCardCVC(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardCVC")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
+  inline def formatCardCVC(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardCVC")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   /**
     * Formats card expiry:
@@ -31,8 +29,7 @@ object mod {
     * * Restricts input to numbers
     * * Restricts length
     */
-  @scala.inline
-  def formatCardExpiry(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardExpiry")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
+  inline def formatCardExpiry(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardExpiry")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   /**
     * Formats card numbers:
@@ -42,14 +39,12 @@ object mod {
     * * Supports American Express formatting
     * * Adds a class of the card type (e.g. 'visa') to the input
     */
-  @scala.inline
-  def formatCardNumber(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardNumber")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
+  inline def formatCardNumber(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardNumber")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   /**
     * General numeric input restriction.
     */
-  @scala.inline
-  def restrictNumeric(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictNumeric")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
+  inline def restrictNumeric(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictNumeric")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   @js.native
   trait Fns extends StObject {
@@ -118,20 +113,16 @@ object mod {
   }
   object MonthYear {
     
-    @scala.inline
-    def apply(month: Double, year: Double): MonthYear = {
+    inline def apply(month: Double, year: Double): MonthYear = {
       val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
       __obj.asInstanceOf[MonthYear]
     }
     
-    @scala.inline
-    implicit class MonthYearMutableBuilder[Self <: MonthYear] (val x: Self) extends AnyVal {
+    extension [Self <: MonthYear](x: Self) {
       
-      @scala.inline
-      def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,31 +17,23 @@ trait Topbar extends StObject {
 }
 object Topbar {
   
-  @scala.inline
-  def apply(dark: TopbarTheme, light: TopbarTheme): Topbar = {
+  inline def apply(dark: TopbarTheme, light: TopbarTheme): Topbar = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topbar]
   }
   
-  @scala.inline
-  implicit class TopbarMutableBuilder[Self <: Topbar] (val x: Self) extends AnyVal {
+  extension [Self <: Topbar](x: Self) {
     
-    @scala.inline
-    def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDark(value: TopbarTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: TopbarTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLight(value: TopbarTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: TopbarTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
   }
 }

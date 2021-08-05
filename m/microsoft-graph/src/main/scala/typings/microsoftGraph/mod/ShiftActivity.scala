@@ -33,64 +33,45 @@ trait ShiftActivity extends StObject {
 }
 object ShiftActivity {
   
-  @scala.inline
-  def apply(): ShiftActivity = {
+  inline def apply(): ShiftActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShiftActivity]
   }
   
-  @scala.inline
-  implicit class ShiftActivityMutableBuilder[Self <: ShiftActivity] (val x: Self) extends AnyVal {
+  extension [Self <: ShiftActivity](x: Self) {
     
-    @scala.inline
-    def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeNull: Self = StObject.set(x, "code", null)
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
+    inline def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setIsPaid(value: NullableOption[Boolean]): Self = StObject.set(x, "isPaid", value.asInstanceOf[js.Any])
+    inline def setIsPaid(value: NullableOption[Boolean]): Self = StObject.set(x, "isPaid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaidNull: Self = StObject.set(x, "isPaid", null)
+    inline def setIsPaidNull: Self = StObject.set(x, "isPaid", null)
     
-    @scala.inline
-    def setIsPaidUndefined: Self = StObject.set(x, "isPaid", js.undefined)
+    inline def setIsPaidUndefined: Self = StObject.set(x, "isPaid", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
-    @scala.inline
-    def setTheme(value: ScheduleEntityTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ScheduleEntityTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

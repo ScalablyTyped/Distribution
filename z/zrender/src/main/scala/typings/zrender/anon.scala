@@ -33,8 +33,7 @@ object anon {
   }
   object AddColorStop {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addColorStop: (Double, String) => Unit,
       colorStops: ColorStops,
       globalCoord: GlobalCoords,
@@ -48,35 +47,25 @@ object anon {
       __obj.asInstanceOf[AddColorStop]
     }
     
-    @scala.inline
-    implicit class AddColorStopMutableBuilder[Self <: AddColorStop] (val x: Self) extends AnyVal {
+    extension [Self <: AddColorStop](x: Self) {
       
-      @scala.inline
-      def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
+      inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
+      inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+      inline def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobalCoord(value: GlobalCoords): Self = StObject.set(x, "globalCoord", value.asInstanceOf[js.Any])
+      inline def setGlobalCoord(value: GlobalCoords): Self = StObject.set(x, "globalCoord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: linear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: linear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: X): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: X): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2(value: X2): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: X2): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Y): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Y): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: Y2): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: Y2): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,20 +77,16 @@ object anon {
   }
   object Color {
     
-    @scala.inline
-    def apply(color: String, offset: Double): Color = {
+    inline def apply(color: String, offset: Double): Color = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
 }

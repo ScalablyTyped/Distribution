@@ -10,19 +10,15 @@ trait FileOptions extends StObject {
 }
 object FileOptions {
   
-  @scala.inline
-  def apply(): FileOptions = {
+  inline def apply(): FileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileOptions]
   }
   
-  @scala.inline
-  implicit class FileOptionsMutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileOptions](x: Self) {
     
-    @scala.inline
-    def setNSFileProtectionKey(value: String): Self = StObject.set(x, "NSFileProtectionKey", value.asInstanceOf[js.Any])
+    inline def setNSFileProtectionKey(value: String): Self = StObject.set(x, "NSFileProtectionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNSFileProtectionKeyUndefined: Self = StObject.set(x, "NSFileProtectionKey", js.undefined)
+    inline def setNSFileProtectionKeyUndefined: Self = StObject.set(x, "NSFileProtectionKey", js.undefined)
   }
 }

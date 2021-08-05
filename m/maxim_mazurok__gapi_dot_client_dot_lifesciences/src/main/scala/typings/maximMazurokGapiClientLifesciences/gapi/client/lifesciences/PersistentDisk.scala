@@ -21,31 +21,23 @@ trait PersistentDisk extends StObject {
 }
 object PersistentDisk {
   
-  @scala.inline
-  def apply(): PersistentDisk = {
+  inline def apply(): PersistentDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistentDisk]
   }
   
-  @scala.inline
-  implicit class PersistentDiskMutableBuilder[Self <: PersistentDisk] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentDisk](x: Self) {
     
-    @scala.inline
-    def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
+    inline def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
+    inline def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
     
-    @scala.inline
-    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
+    inline def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
+    inline def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

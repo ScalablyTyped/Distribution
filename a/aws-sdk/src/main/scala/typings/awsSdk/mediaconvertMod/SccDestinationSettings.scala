@@ -13,19 +13,15 @@ trait SccDestinationSettings extends StObject {
 }
 object SccDestinationSettings {
   
-  @scala.inline
-  def apply(): SccDestinationSettings = {
+  inline def apply(): SccDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SccDestinationSettings]
   }
   
-  @scala.inline
-  implicit class SccDestinationSettingsMutableBuilder[Self <: SccDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SccDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setFramerate(value: SccDestinationFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
+    inline def setFramerate(value: SccDestinationFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
+    inline def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
   }
 }

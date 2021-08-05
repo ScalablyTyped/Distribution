@@ -55,17 +55,13 @@ object mod {
     @js.native
     val ^ : AbstractIteratorConstructor = js.native
     
-    @scala.inline
-    implicit class AbstractIteratorMutableBuilder[Self <: AbstractIterator[?, ?], K, V] (val x: Self & (AbstractIterator[K, V])) extends AnyVal {
+    extension [Self <: AbstractIterator[?, ?], K, V](x: Self & (AbstractIterator[K, V])) {
       
-      @scala.inline
-      def setDb(value: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V]): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V]): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: ErrorCallback => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEnd(value: ErrorCallback => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNext(value: ErrorKeyValueCallback[K, V] => AbstractIterator[K, V]): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: ErrorKeyValueCallback[K, V] => AbstractIterator[K, V]): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -135,15 +131,13 @@ object mod {
   trait AbstractBatch[K, V] extends StObject
   object AbstractBatch {
     
-    @scala.inline
-    def DelBatch[K, V](key: K): typings.abstractLeveldown.mod.DelBatch[K, V] = {
+    inline def DelBatch[K, V](key: K): typings.abstractLeveldown.mod.DelBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[typings.abstractLeveldown.mod.DelBatch[K, V]]
     }
     
-    @scala.inline
-    def PutBatch[K, V](key: K, value: V): typings.abstractLeveldown.mod.PutBatch[K, V] = {
+    inline def PutBatch[K, V](key: K, value: V): typings.abstractLeveldown.mod.PutBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[typings.abstractLeveldown.mod.PutBatch[K, V]]
@@ -171,20 +165,16 @@ object mod {
   }
   object AbstractGetOptions {
     
-    @scala.inline
-    def apply(): AbstractGetOptions = {
+    inline def apply(): AbstractGetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AbstractGetOptions]
     }
     
-    @scala.inline
-    implicit class AbstractGetOptionsMutableBuilder[Self <: AbstractGetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractGetOptions](x: Self) {
       
-      @scala.inline
-      def setAsBuffer(value: Boolean): Self = StObject.set(x, "asBuffer", value.asInstanceOf[js.Any])
+      inline def setAsBuffer(value: Boolean): Self = StObject.set(x, "asBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsBufferUndefined: Self = StObject.set(x, "asBuffer", js.undefined)
+      inline def setAsBufferUndefined: Self = StObject.set(x, "asBuffer", js.undefined)
     }
   }
   
@@ -224,74 +214,52 @@ object mod {
   }
   object AbstractIteratorOptions {
     
-    @scala.inline
-    def apply[K](): AbstractIteratorOptions[K] = {
+    inline def apply[K](): AbstractIteratorOptions[K] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AbstractIteratorOptions[K]]
     }
     
-    @scala.inline
-    implicit class AbstractIteratorOptionsMutableBuilder[Self <: AbstractIteratorOptions[?], K] (val x: Self & AbstractIteratorOptions[K]) extends AnyVal {
+    extension [Self <: AbstractIteratorOptions[?], K](x: Self & AbstractIteratorOptions[K]) {
       
-      @scala.inline
-      def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+      inline def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+      inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
       
-      @scala.inline
-      def setGte(value: K): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+      inline def setGte(value: K): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+      inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
       
-      @scala.inline
-      def setKeyAsBuffer(value: Boolean): Self = StObject.set(x, "keyAsBuffer", value.asInstanceOf[js.Any])
+      inline def setKeyAsBuffer(value: Boolean): Self = StObject.set(x, "keyAsBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyAsBufferUndefined: Self = StObject.set(x, "keyAsBuffer", js.undefined)
+      inline def setKeyAsBufferUndefined: Self = StObject.set(x, "keyAsBuffer", js.undefined)
       
-      @scala.inline
-      def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLt(value: K): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+      inline def setLt(value: K): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+      inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
       
-      @scala.inline
-      def setLte(value: K): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+      inline def setLte(value: K): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+      inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setValueAsBuffer(value: Boolean): Self = StObject.set(x, "valueAsBuffer", value.asInstanceOf[js.Any])
+      inline def setValueAsBuffer(value: Boolean): Self = StObject.set(x, "valueAsBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueAsBufferUndefined: Self = StObject.set(x, "valueAsBuffer", js.undefined)
+      inline def setValueAsBufferUndefined: Self = StObject.set(x, "valueAsBuffer", js.undefined)
       
-      @scala.inline
-      def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   
@@ -318,26 +286,20 @@ object mod {
   }
   object AbstractOpenOptions {
     
-    @scala.inline
-    def apply(): AbstractOpenOptions = {
+    inline def apply(): AbstractOpenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AbstractOpenOptions]
     }
     
-    @scala.inline
-    implicit class AbstractOpenOptionsMutableBuilder[Self <: AbstractOpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractOpenOptions](x: Self) {
       
-      @scala.inline
-      def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
+      inline def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateIfMissingUndefined: Self = StObject.set(x, "createIfMissing", js.undefined)
+      inline def setCreateIfMissingUndefined: Self = StObject.set(x, "createIfMissing", js.undefined)
       
-      @scala.inline
-      def setErrorIfExists(value: Boolean): Self = StObject.set(x, "errorIfExists", value.asInstanceOf[js.Any])
+      inline def setErrorIfExists(value: Boolean): Self = StObject.set(x, "errorIfExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorIfExistsUndefined: Self = StObject.set(x, "errorIfExists", js.undefined)
+      inline def setErrorIfExistsUndefined: Self = StObject.set(x, "errorIfExists", js.undefined)
     }
   }
   
@@ -353,21 +315,17 @@ object mod {
   }
   object DelBatch {
     
-    @scala.inline
-    def apply[K, V](key: K): DelBatch[K, V] = {
+    inline def apply[K, V](key: K): DelBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[DelBatch[K, V]]
     }
     
-    @scala.inline
-    implicit class DelBatchMutableBuilder[Self <: DelBatch[?, ?], K, V] (val x: Self & (DelBatch[K, V])) extends AnyVal {
+    extension [Self <: DelBatch[?, ?], K, V](x: Self & (DelBatch[K, V])) {
       
-      @scala.inline
-      def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: del): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: del): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -389,24 +347,19 @@ object mod {
   }
   object PutBatch {
     
-    @scala.inline
-    def apply[K, V](key: K, value: V): PutBatch[K, V] = {
+    inline def apply[K, V](key: K, value: V): PutBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[PutBatch[K, V]]
     }
     
-    @scala.inline
-    implicit class PutBatchMutableBuilder[Self <: PutBatch[?, ?], K, V] (val x: Self & (PutBatch[K, V])) extends AnyVal {
+    extension [Self <: PutBatch[?, ?], K, V](x: Self & (PutBatch[K, V])) {
       
-      @scala.inline
-      def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: put): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: put): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

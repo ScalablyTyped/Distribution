@@ -31,19 +31,16 @@ trait OnTypeFormattingEditProvider extends StObject {
 }
 object OnTypeFormattingEditProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideOnTypeFormattingEdits: (TextDocument, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): OnTypeFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideOnTypeFormattingEdits = js.Any.fromFunction5(provideOnTypeFormattingEdits))
     __obj.asInstanceOf[OnTypeFormattingEditProvider]
   }
   
-  @scala.inline
-  implicit class OnTypeFormattingEditProviderMutableBuilder[Self <: OnTypeFormattingEditProvider] (val x: Self) extends AnyVal {
+  extension [Self <: OnTypeFormattingEditProvider](x: Self) {
     
-    @scala.inline
-    def setProvideOnTypeFormattingEdits(
+    inline def setProvideOnTypeFormattingEdits(
       value: (TextDocument, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
     ): Self = StObject.set(x, "provideOnTypeFormattingEdits", js.Any.fromFunction5(value))
   }

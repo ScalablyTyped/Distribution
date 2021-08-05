@@ -16,19 +16,15 @@ trait TeamsCheckPermissionsForProjectLegacyEndpoint
 }
 object TeamsCheckPermissionsForProjectLegacyEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[inertia], project_id: Double, team_id: Double): TeamsCheckPermissionsForProjectLegacyEndpoint = {
+  inline def apply(mediaType: `0`[inertia], project_id: Double, team_id: Double): TeamsCheckPermissionsForProjectLegacyEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsCheckPermissionsForProjectLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsCheckPermissionsForProjectLegacyEndpointMutableBuilder[Self <: TeamsCheckPermissionsForProjectLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsCheckPermissionsForProjectLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

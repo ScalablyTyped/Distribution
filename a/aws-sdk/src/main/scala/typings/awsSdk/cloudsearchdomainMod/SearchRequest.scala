@@ -78,94 +78,65 @@ trait SearchRequest extends StObject {
 }
 object SearchRequest {
   
-  @scala.inline
-  def apply(query: Query): SearchRequest = {
+  inline def apply(query: Query): SearchRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRequest]
   }
   
-  @scala.inline
-  implicit class SearchRequestMutableBuilder[Self <: SearchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchRequest](x: Self) {
     
-    @scala.inline
-    def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+    inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
-    @scala.inline
-    def setFacet(value: Facet): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
+    inline def setFacet(value: Facet): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
+    inline def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
     
-    @scala.inline
-    def setFilterQuery(value: FilterQuery): Self = StObject.set(x, "filterQuery", value.asInstanceOf[js.Any])
+    inline def setFilterQuery(value: FilterQuery): Self = StObject.set(x, "filterQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterQueryUndefined: Self = StObject.set(x, "filterQuery", js.undefined)
+    inline def setFilterQueryUndefined: Self = StObject.set(x, "filterQuery", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setPartial(value: Partial): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+    inline def setPartial(value: Partial): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+    inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
+    inline def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
+    inline def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
     
-    @scala.inline
-    def setQueryParser(value: QueryParser): Self = StObject.set(x, "queryParser", value.asInstanceOf[js.Any])
+    inline def setQueryParser(value: QueryParser): Self = StObject.set(x, "queryParser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParserUndefined: Self = StObject.set(x, "queryParser", js.undefined)
+    inline def setQueryParserUndefined: Self = StObject.set(x, "queryParser", js.undefined)
     
-    @scala.inline
-    def setReturn(value: Return): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Return): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "return", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSort(value: Sort): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Sort): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setStart(value: Start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStats(value: Stat): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Stat): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
   }
 }

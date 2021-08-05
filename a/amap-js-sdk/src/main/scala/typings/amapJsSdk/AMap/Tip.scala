@@ -14,22 +14,17 @@ trait Tip extends StObject {
 }
 object Tip {
   
-  @scala.inline
-  def apply(adcode: String, district: String, name: String): Tip = {
+  inline def apply(adcode: String, district: String, name: String): Tip = {
     val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tip]
   }
   
-  @scala.inline
-  implicit class TipMutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
+  extension [Self <: Tip](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
+    inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

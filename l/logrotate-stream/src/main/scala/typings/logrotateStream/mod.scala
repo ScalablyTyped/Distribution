@@ -11,8 +11,7 @@ object mod {
     * Create a rotating log stream.
     * @returns a writable stream to a rotating log file
     */
-  @scala.inline
-  def apply(opts: Options): Writable = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  inline def apply(opts: Options): Writable = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Writable]
   
   @JSImport("logrotate-stream", JSImport.Namespace)
   @js.native
@@ -42,29 +41,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(file: String, keep: Double, size: String): Options = {
+    inline def apply(file: String, keep: Double, size: String): Options = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], keep = keep.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeep(value: Double): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
+      inline def setKeep(value: Double): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

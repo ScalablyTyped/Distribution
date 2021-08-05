@@ -14,31 +14,23 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(): Connection = {
+  inline def apply(): Connection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setIdGeneration(value: String): Self = StObject.set(x, "idGeneration", value.asInstanceOf[js.Any])
+    inline def setIdGeneration(value: String): Self = StObject.set(x, "idGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdGenerationUndefined: Self = StObject.set(x, "idGeneration", js.undefined)
+    inline def setIdGenerationUndefined: Self = StObject.set(x, "idGeneration", js.undefined)
     
-    @scala.inline
-    def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

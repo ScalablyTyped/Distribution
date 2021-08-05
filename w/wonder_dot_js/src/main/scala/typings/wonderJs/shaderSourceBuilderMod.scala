@@ -35,20 +35,16 @@ object shaderSourceBuilderMod {
   }
   object SourceDefine {
     
-    @scala.inline
-    def apply(name: String, value: js.Any): SourceDefine = {
+    inline def apply(name: String, value: js.Any): SourceDefine = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceDefine]
     }
     
-    @scala.inline
-    implicit class SourceDefineMutableBuilder[Self <: SourceDefine] (val x: Self) extends AnyVal {
+    extension [Self <: SourceDefine](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

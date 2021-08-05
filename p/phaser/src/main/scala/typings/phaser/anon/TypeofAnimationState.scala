@@ -27,8 +27,7 @@ trait TypeofAnimationState extends StObject {
 }
 object TypeofAnimationState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FIRST: Double,
     HOLD: Double,
     HOLD_MIX: Double,
@@ -40,25 +39,18 @@ object TypeofAnimationState {
     __obj.asInstanceOf[TypeofAnimationState]
   }
   
-  @scala.inline
-  implicit class TypeofAnimationStateMutableBuilder[Self <: TypeofAnimationState] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAnimationState](x: Self) {
     
-    @scala.inline
-    def setEmptyAnimation(value: Animation): Self = StObject.set(x, "emptyAnimation", value.asInstanceOf[js.Any])
+    inline def setEmptyAnimation(value: Animation): Self = StObject.set(x, "emptyAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFIRST(value: Double): Self = StObject.set(x, "FIRST", value.asInstanceOf[js.Any])
+    inline def setFIRST(value: Double): Self = StObject.set(x, "FIRST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHOLD(value: Double): Self = StObject.set(x, "HOLD", value.asInstanceOf[js.Any])
+    inline def setHOLD(value: Double): Self = StObject.set(x, "HOLD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHOLD_MIX(value: Double): Self = StObject.set(x, "HOLD_MIX", value.asInstanceOf[js.Any])
+    inline def setHOLD_MIX(value: Double): Self = StObject.set(x, "HOLD_MIX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOT_LAST(value: Double): Self = StObject.set(x, "NOT_LAST", value.asInstanceOf[js.Any])
+    inline def setNOT_LAST(value: Double): Self = StObject.set(x, "NOT_LAST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUBSEQUENT(value: Double): Self = StObject.set(x, "SUBSEQUENT", value.asInstanceOf[js.Any])
+    inline def setSUBSEQUENT(value: Double): Self = StObject.set(x, "SUBSEQUENT", value.asInstanceOf[js.Any])
   }
 }

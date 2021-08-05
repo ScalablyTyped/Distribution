@@ -8,6 +8,5 @@ object natsHemeraNumbers {
   
   @js.native
   sealed trait `2000` extends StObject
-  @scala.inline
-  def `2000`: `2000` = 2000.asInstanceOf[`2000`]
+  inline def `2000`: `2000` = 2000.asInstanceOf[`2000`]
 }

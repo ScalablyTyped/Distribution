@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Form")
 @js.native
-class Form protected ()
+/* private */ class Form ()
   extends StObject
      with typings.activexAccess.Access.Form

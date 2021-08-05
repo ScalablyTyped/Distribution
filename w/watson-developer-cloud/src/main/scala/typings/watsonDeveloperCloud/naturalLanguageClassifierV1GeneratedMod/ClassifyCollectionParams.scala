@@ -19,34 +19,25 @@ trait ClassifyCollectionParams extends StObject {
 }
 object ClassifyCollectionParams {
   
-  @scala.inline
-  def apply(classifier_id: String, collection: js.Array[ClassifyInput]): ClassifyCollectionParams = {
+  inline def apply(classifier_id: String, collection: js.Array[ClassifyInput]): ClassifyCollectionParams = {
     val __obj = js.Dynamic.literal(classifier_id = classifier_id.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifyCollectionParams]
   }
   
-  @scala.inline
-  implicit class ClassifyCollectionParamsMutableBuilder[Self <: ClassifyCollectionParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifyCollectionParams](x: Self) {
     
-    @scala.inline
-    def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
+    inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: js.Array[ClassifyInput]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: js.Array[ClassifyInput]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionVarargs(value: ClassifyInput*): Self = StObject.set(x, "collection", js.Array(value :_*))
+    inline def setCollectionVarargs(value: ClassifyInput*): Self = StObject.set(x, "collection", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

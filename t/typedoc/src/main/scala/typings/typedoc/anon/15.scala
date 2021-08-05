@@ -11,16 +11,13 @@ trait `15` extends StObject {
 }
 object `15` {
   
-  @scala.inline
-  def apply(): `15` = {
+  inline def apply(): `15` = {
     val __obj = js.Dynamic.literal(name = "excludeNotDocumented")
     __obj.asInstanceOf[`15`]
   }
   
-  @scala.inline
-  implicit class `15MutableBuilder`[Self <: `15`] (val x: Self) extends AnyVal {
+  extension [Self <: `15`](x: Self) {
     
-    @scala.inline
-    def setName(value: excludeNotDocumented): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: excludeNotDocumented): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

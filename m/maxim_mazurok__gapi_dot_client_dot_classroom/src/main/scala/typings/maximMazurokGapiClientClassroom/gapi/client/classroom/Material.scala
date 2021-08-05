@@ -20,37 +20,27 @@ trait Material extends StObject {
 }
 object Material {
   
-  @scala.inline
-  def apply(): Material = {
+  inline def apply(): Material = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Material]
   }
   
-  @scala.inline
-  implicit class MaterialMutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
+  extension [Self <: Material](x: Self) {
     
-    @scala.inline
-    def setDriveFile(value: SharedDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
+    inline def setDriveFile(value: SharedDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
+    inline def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
-    @scala.inline
-    def setForm(value: Form): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Form): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setYoutubeVideo(value: YouTubeVideo): Self = StObject.set(x, "youtubeVideo", value.asInstanceOf[js.Any])
+    inline def setYoutubeVideo(value: YouTubeVideo): Self = StObject.set(x, "youtubeVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutubeVideoUndefined: Self = StObject.set(x, "youtubeVideo", js.undefined)
+    inline def setYoutubeVideoUndefined: Self = StObject.set(x, "youtubeVideo", js.undefined)
   }
 }

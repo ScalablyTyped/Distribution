@@ -16,19 +16,15 @@ trait SavedShowObject extends StObject {
 }
 object SavedShowObject {
   
-  @scala.inline
-  def apply(added_at: String, album: ShowObjectFull): SavedShowObject = {
+  inline def apply(added_at: String, album: ShowObjectFull): SavedShowObject = {
     val __obj = js.Dynamic.literal(added_at = added_at.asInstanceOf[js.Any], album = album.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedShowObject]
   }
   
-  @scala.inline
-  implicit class SavedShowObjectMutableBuilder[Self <: SavedShowObject] (val x: Self) extends AnyVal {
+  extension [Self <: SavedShowObject](x: Self) {
     
-    @scala.inline
-    def setAdded_at(value: String): Self = StObject.set(x, "added_at", value.asInstanceOf[js.Any])
+    inline def setAdded_at(value: String): Self = StObject.set(x, "added_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbum(value: ShowObjectFull): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setAlbum(value: ShowObjectFull): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
   }
 }

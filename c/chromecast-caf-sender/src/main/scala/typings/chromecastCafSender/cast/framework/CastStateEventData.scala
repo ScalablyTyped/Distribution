@@ -12,17 +12,14 @@ trait CastStateEventData
 }
 object CastStateEventData {
   
-  @scala.inline
-  def apply(castState: CastState, `type`: String): CastStateEventData = {
+  inline def apply(castState: CastState, `type`: String): CastStateEventData = {
     val __obj = js.Dynamic.literal(castState = castState.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastStateEventData]
   }
   
-  @scala.inline
-  implicit class CastStateEventDataMutableBuilder[Self <: CastStateEventData] (val x: Self) extends AnyVal {
+  extension [Self <: CastStateEventData](x: Self) {
     
-    @scala.inline
-    def setCastState(value: CastState): Self = StObject.set(x, "castState", value.asInstanceOf[js.Any])
+    inline def setCastState(value: CastState): Self = StObject.set(x, "castState", value.asInstanceOf[js.Any])
   }
 }

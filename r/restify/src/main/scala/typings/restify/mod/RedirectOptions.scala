@@ -46,55 +46,39 @@ trait RedirectOptions extends StObject {
 }
 object RedirectOptions {
   
-  @scala.inline
-  def apply(): RedirectOptions = {
+  inline def apply(): RedirectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RedirectOptions]
   }
   
-  @scala.inline
-  implicit class RedirectOptionsMutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectOptions](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setOverrideQuery(value: Boolean): Self = StObject.set(x, "overrideQuery", value.asInstanceOf[js.Any])
+    inline def setOverrideQuery(value: Boolean): Self = StObject.set(x, "overrideQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideQueryUndefined: Self = StObject.set(x, "overrideQuery", js.undefined)
+    inline def setOverrideQueryUndefined: Self = StObject.set(x, "overrideQuery", js.undefined)
     
-    @scala.inline
-    def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+    inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+    inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
     
-    @scala.inline
-    def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
+    inline def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
+    inline def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String | js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String | js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
   }
 }

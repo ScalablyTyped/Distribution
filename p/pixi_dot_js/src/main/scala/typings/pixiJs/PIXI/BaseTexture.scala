@@ -109,7 +109,7 @@ trait BaseTexture
     * @protected
     * @member {number} PIXI.BaseTexture#dirtyStyleId
     */
-  var dirtyStyleId: Double = js.native
+  /* protected */ var dirtyStyleId: Double = js.native
   
   /**
     * Frees the texture from WebGL memory without destroying this texture object.
@@ -276,7 +276,7 @@ trait BaseTexture
     * @member {number} PIXI.BaseTexture#touched
     * @protected
     */
-  var touched: Double = js.native
+  /* protected */ var touched: Double = js.native
   
   /**
     * The type of resource data
@@ -292,7 +292,7 @@ trait BaseTexture
     * @member {number} PIXI.BaseTexture#uid
     * @protected
     */
-  var uid: Double = js.native
+  /* protected */ var uid: Double = js.native
   
   /**
     * Invalidates the object. Texture becomes valid if width and height are greater than zero.

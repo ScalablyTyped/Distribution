@@ -15,8 +15,7 @@ trait IDeviceOrientationService extends StObject {
 }
 object IDeviceOrientationService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearWatch: Double => Unit,
     getCurrentHeading: () => IPromise[IDeviceOrientationHeading],
     watchHeading: IDeviceOrientationWatchOptions => IDeviceOrientationWatchPromise
@@ -25,16 +24,12 @@ object IDeviceOrientationService {
     __obj.asInstanceOf[IDeviceOrientationService]
   }
   
-  @scala.inline
-  implicit class IDeviceOrientationServiceMutableBuilder[Self <: IDeviceOrientationService] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceOrientationService](x: Self) {
     
-    @scala.inline
-    def setClearWatch(value: Double => Unit): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
+    inline def setClearWatch(value: Double => Unit): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentHeading(value: () => IPromise[IDeviceOrientationHeading]): Self = StObject.set(x, "getCurrentHeading", js.Any.fromFunction0(value))
+    inline def setGetCurrentHeading(value: () => IPromise[IDeviceOrientationHeading]): Self = StObject.set(x, "getCurrentHeading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWatchHeading(value: IDeviceOrientationWatchOptions => IDeviceOrientationWatchPromise): Self = StObject.set(x, "watchHeading", js.Any.fromFunction1(value))
+    inline def setWatchHeading(value: IDeviceOrientationWatchOptions => IDeviceOrientationWatchPromise): Self = StObject.set(x, "watchHeading", js.Any.fromFunction1(value))
   }
 }

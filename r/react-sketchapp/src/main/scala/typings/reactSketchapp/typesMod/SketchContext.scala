@@ -10,16 +10,13 @@ trait SketchContext extends StObject {
 }
 object SketchContext {
   
-  @scala.inline
-  def apply(document: SketchDocument): SketchContext = {
+  inline def apply(document: SketchDocument): SketchContext = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchContext]
   }
   
-  @scala.inline
-  implicit class SketchContextMutableBuilder[Self <: SketchContext] (val x: Self) extends AnyVal {
+  extension [Self <: SketchContext](x: Self) {
     
-    @scala.inline
-    def setDocument(value: SketchDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: SketchDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }
 }

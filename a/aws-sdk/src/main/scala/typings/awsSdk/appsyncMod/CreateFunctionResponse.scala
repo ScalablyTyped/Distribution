@@ -13,19 +13,15 @@ trait CreateFunctionResponse extends StObject {
 }
 object CreateFunctionResponse {
   
-  @scala.inline
-  def apply(): CreateFunctionResponse = {
+  inline def apply(): CreateFunctionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFunctionResponse]
   }
   
-  @scala.inline
-  implicit class CreateFunctionResponseMutableBuilder[Self <: CreateFunctionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFunctionResponse](x: Self) {
     
-    @scala.inline
-    def setFunctionConfiguration(value: FunctionConfiguration): Self = StObject.set(x, "functionConfiguration", value.asInstanceOf[js.Any])
+    inline def setFunctionConfiguration(value: FunctionConfiguration): Self = StObject.set(x, "functionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionConfigurationUndefined: Self = StObject.set(x, "functionConfiguration", js.undefined)
+    inline def setFunctionConfigurationUndefined: Self = StObject.set(x, "functionConfiguration", js.undefined)
   }
 }

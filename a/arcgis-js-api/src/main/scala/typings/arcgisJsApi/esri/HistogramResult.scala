@@ -33,8 +33,7 @@ trait HistogramResult
 }
 object HistogramResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bins: js.Array[Bin],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,19 +45,14 @@ object HistogramResult {
     __obj.asInstanceOf[HistogramResult]
   }
   
-  @scala.inline
-  implicit class HistogramResultMutableBuilder[Self <: HistogramResult] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramResult](x: Self) {
     
-    @scala.inline
-    def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    inline def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ trait XAutomationInvocation
 }
 object XAutomationInvocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Introspection: XIntrospectionAccess,
     acquire: () => Unit,
     getIntrospection: () => XIntrospectionAccess,
@@ -46,16 +45,13 @@ object XAutomationInvocation {
     __obj.asInstanceOf[XAutomationInvocation]
   }
   
-  @scala.inline
-  implicit class XAutomationInvocationMutableBuilder[Self <: XAutomationInvocation] (val x: Self) extends AnyVal {
+  extension [Self <: XAutomationInvocation](x: Self) {
     
-    @scala.inline
-    def setInvokeGetProperty(
+    inline def setInvokeGetProperty(
       value: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any
     ): Self = StObject.set(x, "invokeGetProperty", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setInvokePutProperty(
+    inline def setInvokePutProperty(
       value: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any
     ): Self = StObject.set(x, "invokePutProperty", js.Any.fromFunction4(value))
   }

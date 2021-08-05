@@ -18,22 +18,17 @@ trait PutConfigurationSetSendingOptionsRequest extends StObject {
 }
 object PutConfigurationSetSendingOptionsRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetSendingOptionsRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetSendingOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConfigurationSetSendingOptionsRequest]
   }
   
-  @scala.inline
-  implicit class PutConfigurationSetSendingOptionsRequestMutableBuilder[Self <: PutConfigurationSetSendingOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutConfigurationSetSendingOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
+    inline def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
+    inline def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

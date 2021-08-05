@@ -11,19 +11,15 @@ trait DataArray extends StObject {
 }
 object DataArray {
   
-  @scala.inline
-  def apply(data: js.Array[Description]): DataArray = {
+  inline def apply(data: js.Array[Description]): DataArray = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataArray]
   }
   
-  @scala.inline
-  implicit class DataArrayMutableBuilder[Self <: DataArray] (val x: Self) extends AnyVal {
+  extension [Self <: DataArray](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Description]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Description]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Description*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Description*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

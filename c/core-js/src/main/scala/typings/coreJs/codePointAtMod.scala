@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object codePointAtMod {
   
   /* was `typeof core.String.codePointAt` */
-  @scala.inline
-  def apply(text: java.lang.String, pos: Double): Double = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(text: java.lang.String, pos: Double): Double = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("core-js/fn/string/code-point-at", JSImport.Namespace)
   @js.native

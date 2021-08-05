@@ -12,16 +12,13 @@ trait MlDeleteCalendar
 }
 object MlDeleteCalendar {
   
-  @scala.inline
-  def apply(calendar_id: String): MlDeleteCalendar = {
+  inline def apply(calendar_id: String): MlDeleteCalendar = {
     val __obj = js.Dynamic.literal(calendar_id = calendar_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlDeleteCalendar]
   }
   
-  @scala.inline
-  implicit class MlDeleteCalendarMutableBuilder[Self <: MlDeleteCalendar] (val x: Self) extends AnyVal {
+  extension [Self <: MlDeleteCalendar](x: Self) {
     
-    @scala.inline
-    def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
+    inline def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
   }
 }

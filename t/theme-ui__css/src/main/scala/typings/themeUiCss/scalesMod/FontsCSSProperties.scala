@@ -10,19 +10,15 @@ trait FontsCSSProperties extends StObject {
 }
 object FontsCSSProperties {
   
-  @scala.inline
-  def apply(): FontsCSSProperties = {
+  inline def apply(): FontsCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontsCSSProperties]
   }
   
-  @scala.inline
-  implicit class FontsCSSPropertiesMutableBuilder[Self <: FontsCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FontsCSSProperties](x: Self) {
     
-    @scala.inline
-    def setFontFamily(value: Fonts): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: Fonts): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
   }
 }

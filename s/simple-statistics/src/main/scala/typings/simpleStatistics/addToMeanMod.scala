@@ -10,6 +10,5 @@ object addToMeanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(mean: Double, n: Double, newValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean.asInstanceOf[js.Any], n.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(mean: Double, n: Double, newValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean.asInstanceOf[js.Any], n.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

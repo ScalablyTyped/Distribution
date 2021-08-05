@@ -36,17 +36,14 @@ object localesLocalesMod {
   }
   object LocalesProps {
     
-    @scala.inline
-    def apply(locale: String): LocalesProps = {
+    inline def apply(locale: String): LocalesProps = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalesProps]
     }
     
-    @scala.inline
-    implicit class LocalesPropsMutableBuilder[Self <: LocalesProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocalesProps](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait GetEmailChannelResponse extends StObject {
 }
 object GetEmailChannelResponse {
   
-  @scala.inline
-  def apply(EmailChannelResponse: EmailChannelResponse): GetEmailChannelResponse = {
+  inline def apply(EmailChannelResponse: EmailChannelResponse): GetEmailChannelResponse = {
     val __obj = js.Dynamic.literal(EmailChannelResponse = EmailChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEmailChannelResponse]
   }
   
-  @scala.inline
-  implicit class GetEmailChannelResponseMutableBuilder[Self <: GetEmailChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEmailChannelResponse](x: Self) {
     
-    @scala.inline
-    def setEmailChannelResponse(value: EmailChannelResponse): Self = StObject.set(x, "EmailChannelResponse", value.asInstanceOf[js.Any])
+    inline def setEmailChannelResponse(value: EmailChannelResponse): Self = StObject.set(x, "EmailChannelResponse", value.asInstanceOf[js.Any])
   }
 }

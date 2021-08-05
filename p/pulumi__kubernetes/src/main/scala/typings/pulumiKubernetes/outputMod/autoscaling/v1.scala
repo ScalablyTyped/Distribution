@@ -30,23 +30,18 @@ object v1 {
   }
   object CrossVersionObjectReference {
     
-    @scala.inline
-    def apply(apiVersion: String, kind: String, name: String): CrossVersionObjectReference = {
+    inline def apply(apiVersion: String, kind: String, name: String): CrossVersionObjectReference = {
       val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CrossVersionObjectReference]
     }
     
-    @scala.inline
-    implicit class CrossVersionObjectReferenceMutableBuilder[Self <: CrossVersionObjectReference] (val x: Self) extends AnyVal {
+    extension [Self <: CrossVersionObjectReference](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,29 +77,22 @@ object v1 {
   }
   object HorizontalPodAutoscaler {
     
-    @scala.inline
-    def apply(metadata: ObjectMeta, spec: HorizontalPodAutoscalerSpec, status: HorizontalPodAutoscalerStatus): HorizontalPodAutoscaler = {
+    inline def apply(metadata: ObjectMeta, spec: HorizontalPodAutoscalerSpec, status: HorizontalPodAutoscalerStatus): HorizontalPodAutoscaler = {
       val __obj = js.Dynamic.literal(apiVersion = "autoscaling/v1", kind = "HorizontalPodAutoscaler", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalPodAutoscaler]
     }
     
-    @scala.inline
-    implicit class HorizontalPodAutoscalerMutableBuilder[Self <: HorizontalPodAutoscaler] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalPodAutoscaler](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: autoscalingSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: autoscalingSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: HorizontalPodAutoscalerSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: HorizontalPodAutoscalerSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: HorizontalPodAutoscalerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: HorizontalPodAutoscalerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +123,7 @@ object v1 {
   }
   object HorizontalPodAutoscalerSpec {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       maxReplicas: Double,
       minReplicas: Double,
       scaleTargetRef: CrossVersionObjectReference,
@@ -146,20 +133,15 @@ object v1 {
       __obj.asInstanceOf[HorizontalPodAutoscalerSpec]
     }
     
-    @scala.inline
-    implicit class HorizontalPodAutoscalerSpecMutableBuilder[Self <: HorizontalPodAutoscalerSpec] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalPodAutoscalerSpec](x: Self) {
       
-      @scala.inline
-      def setMaxReplicas(value: Double): Self = StObject.set(x, "maxReplicas", value.asInstanceOf[js.Any])
+      inline def setMaxReplicas(value: Double): Self = StObject.set(x, "maxReplicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinReplicas(value: Double): Self = StObject.set(x, "minReplicas", value.asInstanceOf[js.Any])
+      inline def setMinReplicas(value: Double): Self = StObject.set(x, "minReplicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleTargetRef(value: CrossVersionObjectReference): Self = StObject.set(x, "scaleTargetRef", value.asInstanceOf[js.Any])
+      inline def setScaleTargetRef(value: CrossVersionObjectReference): Self = StObject.set(x, "scaleTargetRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetCPUUtilizationPercentage(value: Double): Self = StObject.set(x, "targetCPUUtilizationPercentage", value.asInstanceOf[js.Any])
+      inline def setTargetCPUUtilizationPercentage(value: Double): Self = StObject.set(x, "targetCPUUtilizationPercentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,8 +177,7 @@ object v1 {
   }
   object HorizontalPodAutoscalerStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentCPUUtilizationPercentage: Double,
       currentReplicas: Double,
       desiredReplicas: Double,
@@ -207,23 +188,17 @@ object v1 {
       __obj.asInstanceOf[HorizontalPodAutoscalerStatus]
     }
     
-    @scala.inline
-    implicit class HorizontalPodAutoscalerStatusMutableBuilder[Self <: HorizontalPodAutoscalerStatus] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalPodAutoscalerStatus](x: Self) {
       
-      @scala.inline
-      def setCurrentCPUUtilizationPercentage(value: Double): Self = StObject.set(x, "currentCPUUtilizationPercentage", value.asInstanceOf[js.Any])
+      inline def setCurrentCPUUtilizationPercentage(value: Double): Self = StObject.set(x, "currentCPUUtilizationPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentReplicas(value: Double): Self = StObject.set(x, "currentReplicas", value.asInstanceOf[js.Any])
+      inline def setCurrentReplicas(value: Double): Self = StObject.set(x, "currentReplicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredReplicas(value: Double): Self = StObject.set(x, "desiredReplicas", value.asInstanceOf[js.Any])
+      inline def setDesiredReplicas(value: Double): Self = StObject.set(x, "desiredReplicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastScaleTime(value: String): Self = StObject.set(x, "lastScaleTime", value.asInstanceOf[js.Any])
+      inline def setLastScaleTime(value: String): Self = StObject.set(x, "lastScaleTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+      inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     }
   }
 }

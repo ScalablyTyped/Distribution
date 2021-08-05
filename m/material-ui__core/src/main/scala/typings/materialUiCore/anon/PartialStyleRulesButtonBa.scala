@@ -16,31 +16,23 @@ trait PartialStyleRulesButtonBa extends StObject {
 }
 object PartialStyleRulesButtonBa {
   
-  @scala.inline
-  def apply(): PartialStyleRulesButtonBa = {
+  inline def apply(): PartialStyleRulesButtonBa = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesButtonBa]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesButtonBaMutableBuilder[Self <: PartialStyleRulesButtonBa] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesButtonBa](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    inline def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
+    inline def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

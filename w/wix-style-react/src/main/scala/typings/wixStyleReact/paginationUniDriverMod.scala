@@ -12,8 +12,7 @@ object paginationUniDriverMod {
        with PaginationDriver
   object PaginationUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickNextButton: () => js.Promise[Unit],
       clickOnPage: Double => js.Promise[Unit],

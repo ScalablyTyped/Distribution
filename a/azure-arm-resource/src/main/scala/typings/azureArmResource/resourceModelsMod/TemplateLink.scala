@@ -18,22 +18,17 @@ trait TemplateLink extends StObject {
 }
 object TemplateLink {
   
-  @scala.inline
-  def apply(uri: String): TemplateLink = {
+  inline def apply(uri: String): TemplateLink = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateLink]
   }
   
-  @scala.inline
-  implicit class TemplateLinkMutableBuilder[Self <: TemplateLink] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateLink](x: Self) {
     
-    @scala.inline
-    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
+    inline def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
+    inline def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

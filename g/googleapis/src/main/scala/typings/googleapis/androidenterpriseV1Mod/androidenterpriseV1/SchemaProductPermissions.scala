@@ -29,34 +29,25 @@ trait SchemaProductPermissions extends StObject {
 }
 object SchemaProductPermissions {
   
-  @scala.inline
-  def apply(): SchemaProductPermissions = {
+  inline def apply(): SchemaProductPermissions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductPermissions]
   }
   
-  @scala.inline
-  implicit class SchemaProductPermissionsMutableBuilder[Self <: SchemaProductPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductPermissions](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPermission(value: js.Array[SchemaProductPermission]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: js.Array[SchemaProductPermission]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setPermissionVarargs(value: SchemaProductPermission*): Self = StObject.set(x, "permission", js.Array(value :_*))
+    inline def setPermissionVarargs(value: SchemaProductPermission*): Self = StObject.set(x, "permission", js.Array(value :_*))
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

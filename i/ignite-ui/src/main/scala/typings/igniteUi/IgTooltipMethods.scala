@@ -10,16 +10,13 @@ trait IgTooltipMethods extends StObject {
 }
 object IgTooltipMethods {
   
-  @scala.inline
-  def apply(destroy: () => Unit): IgTooltipMethods = {
+  inline def apply(destroy: () => Unit): IgTooltipMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[IgTooltipMethods]
   }
   
-  @scala.inline
-  implicit class IgTooltipMethodsMutableBuilder[Self <: IgTooltipMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgTooltipMethods](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

@@ -82,47 +82,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setImplSuffix(value: String): Self = StObject.set(x, "implSuffix", value.asInstanceOf[js.Any])
+      inline def setImplSuffix(value: String): Self = StObject.set(x, "implSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplSuffixUndefined: Self = StObject.set(x, "implSuffix", js.undefined)
+      inline def setImplSuffixUndefined: Self = StObject.set(x, "implSuffix", js.undefined)
       
-      @scala.inline
-      def setProcessCEReactions(value: CodeProcessor): Self = StObject.set(x, "processCEReactions", value.asInstanceOf[js.Any])
+      inline def setProcessCEReactions(value: CodeProcessor): Self = StObject.set(x, "processCEReactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessCEReactionsUndefined: Self = StObject.set(x, "processCEReactions", js.undefined)
+      inline def setProcessCEReactionsUndefined: Self = StObject.set(x, "processCEReactions", js.undefined)
       
-      @scala.inline
-      def setProcessHTMLConstructor(value: CodeProcessor): Self = StObject.set(x, "processHTMLConstructor", value.asInstanceOf[js.Any])
+      inline def setProcessHTMLConstructor(value: CodeProcessor): Self = StObject.set(x, "processHTMLConstructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessHTMLConstructorUndefined: Self = StObject.set(x, "processHTMLConstructor", js.undefined)
+      inline def setProcessHTMLConstructorUndefined: Self = StObject.set(x, "processHTMLConstructor", js.undefined)
       
-      @scala.inline
-      def setProcessReflect(value: AttributeProcessor): Self = StObject.set(x, "processReflect", value.asInstanceOf[js.Any])
+      inline def setProcessReflect(value: AttributeProcessor): Self = StObject.set(x, "processReflect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessReflectNull: Self = StObject.set(x, "processReflect", null)
+      inline def setProcessReflectNull: Self = StObject.set(x, "processReflect", null)
       
-      @scala.inline
-      def setProcessReflectUndefined: Self = StObject.set(x, "processReflect", js.undefined)
+      inline def setProcessReflectUndefined: Self = StObject.set(x, "processReflect", js.undefined)
       
-      @scala.inline
-      def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
+      inline def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
+      inline def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
     }
   }
   
@@ -161,20 +148,16 @@ object mod {
   }
   object Transformer {
     
-    @scala.inline
-    def apply(addSource: (String, String) => Transformer, generate: String => js.Promise[Unit]): Transformer = {
+    inline def apply(addSource: (String, String) => Transformer, generate: String => js.Promise[Unit]): Transformer = {
       val __obj = js.Dynamic.literal(addSource = js.Any.fromFunction2(addSource), generate = js.Any.fromFunction1(generate))
       __obj.asInstanceOf[Transformer]
     }
     
-    @scala.inline
-    implicit class TransformerMutableBuilder[Self <: Transformer] (val x: Self) extends AnyVal {
+    extension [Self <: Transformer](x: Self) {
       
-      @scala.inline
-      def setAddSource(value: (String, String) => Transformer): Self = StObject.set(x, "addSource", js.Any.fromFunction2(value))
+      inline def setAddSource(value: (String, String) => Transformer): Self = StObject.set(x, "addSource", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerate(value: String => js.Promise[Unit]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+      inline def setGenerate(value: String => js.Promise[Unit]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
     }
   }
 }

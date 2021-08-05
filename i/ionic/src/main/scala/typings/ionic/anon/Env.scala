@@ -14,22 +14,17 @@ trait Env extends StObject {
 }
 object Env {
   
-  @scala.inline
-  def apply(env: IonicEnvironment): Env = {
+  inline def apply(env: IonicEnvironment): Env = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any])
     __obj.asInstanceOf[Env]
   }
   
-  @scala.inline
-  implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+  extension [Self <: Env](x: Self) {
     
-    @scala.inline
-    def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

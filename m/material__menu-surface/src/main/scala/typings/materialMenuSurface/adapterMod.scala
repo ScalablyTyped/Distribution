@@ -57,8 +57,7 @@ object adapterMod {
   }
   object MDCMenuSurfaceAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       getAnchorDimensions: () => ClientRect | Null,
       getBodyDimensions: () => MDCMenuDimensions,
@@ -83,65 +82,45 @@ object adapterMod {
       __obj.asInstanceOf[MDCMenuSurfaceAdapter]
     }
     
-    @scala.inline
-    implicit class MDCMenuSurfaceAdapterMutableBuilder[Self <: MDCMenuSurfaceAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCMenuSurfaceAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAnchorDimensions(value: () => ClientRect | Null): Self = StObject.set(x, "getAnchorDimensions", js.Any.fromFunction0(value))
+      inline def setGetAnchorDimensions(value: () => ClientRect | Null): Self = StObject.set(x, "getAnchorDimensions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBodyDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getBodyDimensions", js.Any.fromFunction0(value))
+      inline def setGetBodyDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getBodyDimensions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInnerDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getInnerDimensions", js.Any.fromFunction0(value))
+      inline def setGetInnerDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getInnerDimensions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWindowDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getWindowDimensions", js.Any.fromFunction0(value))
+      inline def setGetWindowDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getWindowDimensions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWindowScroll(value: () => MDCMenuPoint): Self = StObject.set(x, "getWindowScroll", js.Any.fromFunction0(value))
+      inline def setGetWindowScroll(value: () => MDCMenuPoint): Self = StObject.set(x, "getWindowScroll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasAnchor(value: () => Boolean): Self = StObject.set(x, "hasAnchor", js.Any.fromFunction0(value))
+      inline def setHasAnchor(value: () => Boolean): Self = StObject.set(x, "hasAnchor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsElementInContainer(value: Element => Boolean): Self = StObject.set(x, "isElementInContainer", js.Any.fromFunction1(value))
+      inline def setIsElementInContainer(value: Element => Boolean): Self = StObject.set(x, "isElementInContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
+      inline def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRtl(value: () => Boolean): Self = StObject.set(x, "isRtl", js.Any.fromFunction0(value))
+      inline def setIsRtl(value: () => Boolean): Self = StObject.set(x, "isRtl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyClose(value: () => Unit): Self = StObject.set(x, "notifyClose", js.Any.fromFunction0(value))
+      inline def setNotifyClose(value: () => Unit): Self = StObject.set(x, "notifyClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyOpen(value: () => Unit): Self = StObject.set(x, "notifyOpen", js.Any.fromFunction0(value))
+      inline def setNotifyOpen(value: () => Unit): Self = StObject.set(x, "notifyOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRestoreFocus(value: () => Unit): Self = StObject.set(x, "restoreFocus", js.Any.fromFunction0(value))
+      inline def setRestoreFocus(value: () => Unit): Self = StObject.set(x, "restoreFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSaveFocus(value: () => Unit): Self = StObject.set(x, "saveFocus", js.Any.fromFunction0(value))
+      inline def setSaveFocus(value: () => Unit): Self = StObject.set(x, "saveFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetMaxHeight(value: String => Unit): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
+      inline def setSetMaxHeight(value: String => Unit): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPosition(value: PartialMDCMenuDistance => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+      inline def setSetPosition(value: PartialMDCMenuDistance => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTransformOrigin(value: String => Unit): Self = StObject.set(x, "setTransformOrigin", js.Any.fromFunction1(value))
+      inline def setSetTransformOrigin(value: String => Unit): Self = StObject.set(x, "setTransformOrigin", js.Any.fromFunction1(value))
     }
   }
 }

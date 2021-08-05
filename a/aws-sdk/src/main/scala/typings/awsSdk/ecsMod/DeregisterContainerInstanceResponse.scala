@@ -13,19 +13,15 @@ trait DeregisterContainerInstanceResponse extends StObject {
 }
 object DeregisterContainerInstanceResponse {
   
-  @scala.inline
-  def apply(): DeregisterContainerInstanceResponse = {
+  inline def apply(): DeregisterContainerInstanceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterContainerInstanceResponse]
   }
   
-  @scala.inline
-  implicit class DeregisterContainerInstanceResponseMutableBuilder[Self <: DeregisterContainerInstanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterContainerInstanceResponse](x: Self) {
     
-    @scala.inline
-    def setContainerInstance(value: ContainerInstance): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
+    inline def setContainerInstance(value: ContainerInstance): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
+    inline def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
   }
 }

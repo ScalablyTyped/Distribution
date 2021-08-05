@@ -18,28 +18,21 @@ trait GetCrawlersResponse extends StObject {
 }
 object GetCrawlersResponse {
   
-  @scala.inline
-  def apply(): GetCrawlersResponse = {
+  inline def apply(): GetCrawlersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCrawlersResponse]
   }
   
-  @scala.inline
-  implicit class GetCrawlersResponseMutableBuilder[Self <: GetCrawlersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCrawlersResponse](x: Self) {
     
-    @scala.inline
-    def setCrawlers(value: CrawlerList): Self = StObject.set(x, "Crawlers", value.asInstanceOf[js.Any])
+    inline def setCrawlers(value: CrawlerList): Self = StObject.set(x, "Crawlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlersUndefined: Self = StObject.set(x, "Crawlers", js.undefined)
+    inline def setCrawlersUndefined: Self = StObject.set(x, "Crawlers", js.undefined)
     
-    @scala.inline
-    def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value :_*))
+    inline def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

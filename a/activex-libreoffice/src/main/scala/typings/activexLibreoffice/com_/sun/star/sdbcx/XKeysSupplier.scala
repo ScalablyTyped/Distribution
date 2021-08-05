@@ -26,8 +26,7 @@ trait XKeysSupplier
 }
 object XKeysSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Keys: XIndexAccess,
     acquire: () => Unit,
     getKeys: () => XIndexAccess,
@@ -38,13 +37,10 @@ object XKeysSupplier {
     __obj.asInstanceOf[XKeysSupplier]
   }
   
-  @scala.inline
-  implicit class XKeysSupplierMutableBuilder[Self <: XKeysSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XKeysSupplier](x: Self) {
     
-    @scala.inline
-    def setGetKeys(value: () => XIndexAccess): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+    inline def setGetKeys(value: () => XIndexAccess): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeys(value: XIndexAccess): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: XIndexAccess): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
   }
 }

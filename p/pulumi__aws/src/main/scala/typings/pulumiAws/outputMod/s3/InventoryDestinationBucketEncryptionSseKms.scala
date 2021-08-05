@@ -13,16 +13,13 @@ trait InventoryDestinationBucketEncryptionSseKms extends StObject {
 }
 object InventoryDestinationBucketEncryptionSseKms {
   
-  @scala.inline
-  def apply(keyId: String): InventoryDestinationBucketEncryptionSseKms = {
+  inline def apply(keyId: String): InventoryDestinationBucketEncryptionSseKms = {
     val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryDestinationBucketEncryptionSseKms]
   }
   
-  @scala.inline
-  implicit class InventoryDestinationBucketEncryptionSseKmsMutableBuilder[Self <: InventoryDestinationBucketEncryptionSseKms] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryDestinationBucketEncryptionSseKms](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
   }
 }

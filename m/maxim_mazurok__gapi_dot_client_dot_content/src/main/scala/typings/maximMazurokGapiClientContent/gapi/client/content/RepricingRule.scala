@@ -41,73 +41,51 @@ trait RepricingRule extends StObject {
 }
 object RepricingRule {
   
-  @scala.inline
-  def apply(): RepricingRule = {
+  inline def apply(): RepricingRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepricingRule]
   }
   
-  @scala.inline
-  implicit class RepricingRuleMutableBuilder[Self <: RepricingRule] (val x: Self) extends AnyVal {
+  extension [Self <: RepricingRule](x: Self) {
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setEffectiveTimePeriod(value: RepricingRuleEffectiveTime): Self = StObject.set(x, "effectiveTimePeriod", value.asInstanceOf[js.Any])
+    inline def setEffectiveTimePeriod(value: RepricingRuleEffectiveTime): Self = StObject.set(x, "effectiveTimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveTimePeriodUndefined: Self = StObject.set(x, "effectiveTimePeriod", js.undefined)
+    inline def setEffectiveTimePeriodUndefined: Self = StObject.set(x, "effectiveTimePeriod", js.undefined)
     
-    @scala.inline
-    def setEligibleOfferMatcher(value: RepricingRuleEligibleOfferMatcher): Self = StObject.set(x, "eligibleOfferMatcher", value.asInstanceOf[js.Any])
+    inline def setEligibleOfferMatcher(value: RepricingRuleEligibleOfferMatcher): Self = StObject.set(x, "eligibleOfferMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEligibleOfferMatcherUndefined: Self = StObject.set(x, "eligibleOfferMatcher", js.undefined)
+    inline def setEligibleOfferMatcherUndefined: Self = StObject.set(x, "eligibleOfferMatcher", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+    inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
-    @scala.inline
-    def setRestriction(value: RepricingRuleRestriction): Self = StObject.set(x, "restriction", value.asInstanceOf[js.Any])
+    inline def setRestriction(value: RepricingRuleRestriction): Self = StObject.set(x, "restriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionUndefined: Self = StObject.set(x, "restriction", js.undefined)
+    inline def setRestrictionUndefined: Self = StObject.set(x, "restriction", js.undefined)
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
+    inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

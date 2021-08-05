@@ -33,37 +33,27 @@ trait RevokeClientVpnIngressRequest extends StObject {
 }
 object RevokeClientVpnIngressRequest {
   
-  @scala.inline
-  def apply(ClientVpnEndpointId: ClientVpnEndpointId, TargetNetworkCidr: String): RevokeClientVpnIngressRequest = {
+  inline def apply(ClientVpnEndpointId: ClientVpnEndpointId, TargetNetworkCidr: String): RevokeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], TargetNetworkCidr = TargetNetworkCidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeClientVpnIngressRequest]
   }
   
-  @scala.inline
-  implicit class RevokeClientVpnIngressRequestMutableBuilder[Self <: RevokeClientVpnIngressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeClientVpnIngressRequest](x: Self) {
     
-    @scala.inline
-    def setAccessGroupId(value: String): Self = StObject.set(x, "AccessGroupId", value.asInstanceOf[js.Any])
+    inline def setAccessGroupId(value: String): Self = StObject.set(x, "AccessGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessGroupIdUndefined: Self = StObject.set(x, "AccessGroupId", js.undefined)
+    inline def setAccessGroupIdUndefined: Self = StObject.set(x, "AccessGroupId", js.undefined)
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setRevokeAllGroups(value: Boolean): Self = StObject.set(x, "RevokeAllGroups", value.asInstanceOf[js.Any])
+    inline def setRevokeAllGroups(value: Boolean): Self = StObject.set(x, "RevokeAllGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokeAllGroupsUndefined: Self = StObject.set(x, "RevokeAllGroups", js.undefined)
+    inline def setRevokeAllGroupsUndefined: Self = StObject.set(x, "RevokeAllGroups", js.undefined)
     
-    @scala.inline
-    def setTargetNetworkCidr(value: String): Self = StObject.set(x, "TargetNetworkCidr", value.asInstanceOf[js.Any])
+    inline def setTargetNetworkCidr(value: String): Self = StObject.set(x, "TargetNetworkCidr", value.asInstanceOf[js.Any])
   }
 }

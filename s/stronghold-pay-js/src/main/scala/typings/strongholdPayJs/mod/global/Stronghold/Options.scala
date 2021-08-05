@@ -16,37 +16,27 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* error */ StrongholdPayError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ StrongholdPayError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnEvent(value: /* event */ StrongholdMessageEvent => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
+    inline def setOnEvent(value: /* event */ StrongholdMessageEvent => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
+    inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
     
-    @scala.inline
-    def setOnExit(value: () => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
+    inline def setOnExit(value: () => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+    inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    @scala.inline
-    def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
   }
 }

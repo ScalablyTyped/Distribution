@@ -18,37 +18,27 @@ trait ProjectPersonalizationDetails extends StObject {
 }
 object ProjectPersonalizationDetails {
   
-  @scala.inline
-  def apply(name: String, projectId: String): ProjectPersonalizationDetails = {
+  inline def apply(name: String, projectId: String): ProjectPersonalizationDetails = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectPersonalizationDetails]
   }
   
-  @scala.inline
-  implicit class ProjectPersonalizationDetailsMutableBuilder[Self <: ProjectPersonalizationDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectPersonalizationDetails](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+    inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
+    inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _ELEMENT_ADJACENCY extends StObject
 object _ELEMENT_ADJACENCY {
   
-  @scala.inline
-  def ELEMENT_ADJACENCY_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def ELEMENT_ADJACENCY_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def ELEM_ADJ_AfterBegin: `1` = 1.asInstanceOf[`1`]
+  inline def ELEM_ADJ_AfterBegin: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ELEM_ADJ_AfterEnd: `3` = 3.asInstanceOf[`3`]
+  inline def ELEM_ADJ_AfterEnd: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ELEM_ADJ_BeforeBegin: `0` = 0.asInstanceOf[`0`]
+  inline def ELEM_ADJ_BeforeBegin: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ELEM_ADJ_BeforeEnd: `2` = 2.asInstanceOf[`2`]
+  inline def ELEM_ADJ_BeforeEnd: `2` = 2.asInstanceOf[`2`]
 }

@@ -12,22 +12,17 @@ trait ICalculation extends StObject {
 }
 object ICalculation {
   
-  @scala.inline
-  def apply(calculate: js.Function, fields: js.Array[String]): ICalculation = {
+  inline def apply(calculate: js.Function, fields: js.Array[String]): ICalculation = {
     val __obj = js.Dynamic.literal(calculate = calculate.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalculation]
   }
   
-  @scala.inline
-  implicit class ICalculationMutableBuilder[Self <: ICalculation] (val x: Self) extends AnyVal {
+  extension [Self <: ICalculation](x: Self) {
     
-    @scala.inline
-    def setCalculate(value: js.Function): Self = StObject.set(x, "calculate", value.asInstanceOf[js.Any])
+    inline def setCalculate(value: js.Function): Self = StObject.set(x, "calculate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

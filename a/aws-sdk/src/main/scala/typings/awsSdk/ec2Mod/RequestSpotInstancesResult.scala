@@ -13,22 +13,17 @@ trait RequestSpotInstancesResult extends StObject {
 }
 object RequestSpotInstancesResult {
   
-  @scala.inline
-  def apply(): RequestSpotInstancesResult = {
+  inline def apply(): RequestSpotInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestSpotInstancesResult]
   }
   
-  @scala.inline
-  implicit class RequestSpotInstancesResultMutableBuilder[Self <: RequestSpotInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSpotInstancesResult](x: Self) {
     
-    @scala.inline
-    def setSpotInstanceRequests(value: SpotInstanceRequestList): Self = StObject.set(x, "SpotInstanceRequests", value.asInstanceOf[js.Any])
+    inline def setSpotInstanceRequests(value: SpotInstanceRequestList): Self = StObject.set(x, "SpotInstanceRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotInstanceRequestsUndefined: Self = StObject.set(x, "SpotInstanceRequests", js.undefined)
+    inline def setSpotInstanceRequestsUndefined: Self = StObject.set(x, "SpotInstanceRequests", js.undefined)
     
-    @scala.inline
-    def setSpotInstanceRequestsVarargs(value: SpotInstanceRequest*): Self = StObject.set(x, "SpotInstanceRequests", js.Array(value :_*))
+    inline def setSpotInstanceRequestsVarargs(value: SpotInstanceRequest*): Self = StObject.set(x, "SpotInstanceRequests", js.Array(value :_*))
   }
 }

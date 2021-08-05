@@ -12,6 +12,5 @@ object componentFromPropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(propName: String): StatelessComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propName.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[js.Any]]
+  inline def default(propName: String): StatelessComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propName.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[js.Any]]
 }

@@ -24,58 +24,41 @@ trait IColumnConfig[S] extends StObject {
 }
 object IColumnConfig {
   
-  @scala.inline
-  def apply[S](name: String): IColumnConfig[S] = {
+  inline def apply[S](name: String): IColumnConfig[S] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnConfig[S]]
   }
   
-  @scala.inline
-  implicit class IColumnConfigMutableBuilder[Self <: IColumnConfig[?], S] (val x: Self & IColumnConfig[S]) extends AnyVal {
+  extension [Self <: IColumnConfig[?], S](x: Self & IColumnConfig[S]) {
     
-    @scala.inline
-    def setCast(value: String): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+    inline def setCast(value: String): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+    inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
     
-    @scala.inline
-    def setCnd(value: Boolean): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
+    inline def setCnd(value: Boolean): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
+    inline def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
     
-    @scala.inline
-    def setDef(value: js.Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    inline def setDef(value: js.Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
+    inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
     
-    @scala.inline
-    def setInit(value: /* col */ IColumnDescriptor[S] => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* col */ IColumnDescriptor[S] => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setMod(value: FormattingFilter): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+    inline def setMod(value: FormattingFilter): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
+    inline def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+    inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     
-    @scala.inline
-    def setSkip(value: /* col */ IColumnDescriptor[S] => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+    inline def setSkip(value: /* col */ IColumnDescriptor[S] => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
   }
 }

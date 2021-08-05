@@ -15,25 +15,19 @@ trait ChannelMembershipForAppInstanceUserSummary extends StObject {
 }
 object ChannelMembershipForAppInstanceUserSummary {
   
-  @scala.inline
-  def apply(): ChannelMembershipForAppInstanceUserSummary = {
+  inline def apply(): ChannelMembershipForAppInstanceUserSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelMembershipForAppInstanceUserSummary]
   }
   
-  @scala.inline
-  implicit class ChannelMembershipForAppInstanceUserSummaryMutableBuilder[Self <: ChannelMembershipForAppInstanceUserSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelMembershipForAppInstanceUserSummary](x: Self) {
     
-    @scala.inline
-    def setAppInstanceUserMembershipSummary(value: AppInstanceUserMembershipSummary): Self = StObject.set(x, "AppInstanceUserMembershipSummary", value.asInstanceOf[js.Any])
+    inline def setAppInstanceUserMembershipSummary(value: AppInstanceUserMembershipSummary): Self = StObject.set(x, "AppInstanceUserMembershipSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceUserMembershipSummaryUndefined: Self = StObject.set(x, "AppInstanceUserMembershipSummary", js.undefined)
+    inline def setAppInstanceUserMembershipSummaryUndefined: Self = StObject.set(x, "AppInstanceUserMembershipSummary", js.undefined)
     
-    @scala.inline
-    def setChannelSummary(value: ChannelSummary): Self = StObject.set(x, "ChannelSummary", value.asInstanceOf[js.Any])
+    inline def setChannelSummary(value: ChannelSummary): Self = StObject.set(x, "ChannelSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelSummaryUndefined: Self = StObject.set(x, "ChannelSummary", js.undefined)
+    inline def setChannelSummaryUndefined: Self = StObject.set(x, "ChannelSummary", js.undefined)
   }
 }

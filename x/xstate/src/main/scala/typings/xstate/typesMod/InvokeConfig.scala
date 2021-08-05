@@ -53,69 +53,50 @@ trait InvokeConfig[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object InvokeConfig {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     src: String | InvokeSourceDefinition | (StateMachine[js.Any, js.Any, js.Any, ContextAny]) | (InvokeCreator[TContext, TEvent, js.Any])
   ): InvokeConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeConfig[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class InvokeConfigMutableBuilder[Self <: InvokeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (InvokeConfig[TContext, TEvent])) extends AnyVal {
+  extension [Self <: InvokeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (InvokeConfig[TContext, TEvent])) {
     
-    @scala.inline
-    def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
+    inline def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
+    inline def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
     
-    @scala.inline
-    def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    inline def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOnDone(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
+    inline def setOnDone(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
+    inline def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
     
-    @scala.inline
-    def setOnDoneVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[js.Any]])*): Self = StObject.set(x, "onDone", js.Array(value :_*))
+    inline def setOnDoneVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[js.Any]])*): Self = StObject.set(x, "onDone", js.Array(value :_*))
     
-    @scala.inline
-    def setOnError(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[js.Any]]])): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnErrorVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[js.Any]])*): Self = StObject.set(x, "onError", js.Array(value :_*))
+    inline def setOnErrorVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[js.Any]])*): Self = StObject.set(x, "onError", js.Array(value :_*))
     
-    @scala.inline
-    def setSrc(
+    inline def setSrc(
       value: String | InvokeSourceDefinition | (StateMachine[js.Any, js.Any, js.Any, ContextAny]) | (InvokeCreator[TContext, TEvent, js.Any])
     ): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcFunction3(
+    inline def setSrcFunction3(
       value: (TContext, TEvent, /* meta */ InvokeMeta) => js.Thenable[js.Any] | (StateMachine[js.Any, js.Any, js.Any, ContextTFinalContext[js.Any]]) | Subscribable[js.Any] | InvokeCallback
     ): Self = StObject.set(x, "src", js.Any.fromFunction3(value))
   }

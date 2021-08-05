@@ -13,25 +13,19 @@ trait HasuraMutationResponse[T /* <: Record[String, js.Any] */] extends StObject
 }
 object HasuraMutationResponse {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](returning: js.Array[HasuraDataItem[T]]): HasuraMutationResponse[T] = {
+  inline def apply[T /* <: Record[String, js.Any] */](returning: js.Array[HasuraDataItem[T]]): HasuraMutationResponse[T] = {
     val __obj = js.Dynamic.literal(returning = returning.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasuraMutationResponse[T]]
   }
   
-  @scala.inline
-  implicit class HasuraMutationResponseMutableBuilder[Self <: HasuraMutationResponse[?], T /* <: Record[String, js.Any] */] (val x: Self & HasuraMutationResponse[T]) extends AnyVal {
+  extension [Self <: HasuraMutationResponse[?], T /* <: Record[String, js.Any] */](x: Self & HasuraMutationResponse[T]) {
     
-    @scala.inline
-    def setAffected_rows(value: Double): Self = StObject.set(x, "affected_rows", value.asInstanceOf[js.Any])
+    inline def setAffected_rows(value: Double): Self = StObject.set(x, "affected_rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffected_rowsUndefined: Self = StObject.set(x, "affected_rows", js.undefined)
+    inline def setAffected_rowsUndefined: Self = StObject.set(x, "affected_rows", js.undefined)
     
-    @scala.inline
-    def setReturning(value: js.Array[HasuraDataItem[T]]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
+    inline def setReturning(value: js.Array[HasuraDataItem[T]]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturningVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "returning", js.Array(value :_*))
+    inline def setReturningVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "returning", js.Array(value :_*))
   }
 }

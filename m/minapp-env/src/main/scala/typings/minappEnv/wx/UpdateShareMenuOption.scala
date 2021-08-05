@@ -35,55 +35,39 @@ trait UpdateShareMenuOption extends StObject {
 }
 object UpdateShareMenuOption {
   
-  @scala.inline
-  def apply(): UpdateShareMenuOption = {
+  inline def apply(): UpdateShareMenuOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateShareMenuOption]
   }
   
-  @scala.inline
-  implicit class UpdateShareMenuOptionMutableBuilder[Self <: UpdateShareMenuOption] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateShareMenuOption](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityIdUndefined: Self = StObject.set(x, "activityId", js.undefined)
+    inline def setActivityIdUndefined: Self = StObject.set(x, "activityId", js.undefined)
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setIsUpdatableMessage(value: Boolean): Self = StObject.set(x, "isUpdatableMessage", value.asInstanceOf[js.Any])
+    inline def setIsUpdatableMessage(value: Boolean): Self = StObject.set(x, "isUpdatableMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUpdatableMessageUndefined: Self = StObject.set(x, "isUpdatableMessage", js.undefined)
+    inline def setIsUpdatableMessageUndefined: Self = StObject.set(x, "isUpdatableMessage", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTemplateInfo(value: UpdatableMessageFrontEndTemplateInfo): Self = StObject.set(x, "templateInfo", value.asInstanceOf[js.Any])
+    inline def setTemplateInfo(value: UpdatableMessageFrontEndTemplateInfo): Self = StObject.set(x, "templateInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateInfoUndefined: Self = StObject.set(x, "templateInfo", js.undefined)
+    inline def setTemplateInfoUndefined: Self = StObject.set(x, "templateInfo", js.undefined)
     
-    @scala.inline
-    def setWithShareTicket(value: Boolean): Self = StObject.set(x, "withShareTicket", value.asInstanceOf[js.Any])
+    inline def setWithShareTicket(value: Boolean): Self = StObject.set(x, "withShareTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithShareTicketUndefined: Self = StObject.set(x, "withShareTicket", js.undefined)
+    inline def setWithShareTicketUndefined: Self = StObject.set(x, "withShareTicket", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait IncludePadding extends StObject {
 }
 object IncludePadding {
   
-  @scala.inline
-  def apply(includePadding: Boolean): IncludePadding = {
+  inline def apply(includePadding: Boolean): IncludePadding = {
     val __obj = js.Dynamic.literal(includePadding = includePadding.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludePadding]
   }
   
-  @scala.inline
-  implicit class IncludePaddingMutableBuilder[Self <: IncludePadding] (val x: Self) extends AnyVal {
+  extension [Self <: IncludePadding](x: Self) {
     
-    @scala.inline
-    def setIncludePadding(value: Boolean): Self = StObject.set(x, "includePadding", value.asInstanceOf[js.Any])
+    inline def setIncludePadding(value: Boolean): Self = StObject.set(x, "includePadding", value.asInstanceOf[js.Any])
   }
 }

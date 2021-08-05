@@ -21,10 +21,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def get(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def get(data: DataQuery): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def get(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Any]]
+            inline def get(data: DataQuery): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object mcf {
@@ -33,10 +31,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def get(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def get(data: DataQuery): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def get(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Any]]
+            inline def get(data: DataQuery): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object realtime {
@@ -45,10 +41,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def get(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def get(data: DataQuery): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def get(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Any]]
+            inline def get(data: DataQuery): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
         }
         
@@ -108,10 +102,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object accountUserLinks {
@@ -120,10 +112,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object accounts {
@@ -132,10 +122,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object customDataSources {
@@ -144,10 +132,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object customDimensions {
@@ -156,10 +142,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object customMetrics {
@@ -168,10 +152,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object experiments {
@@ -180,10 +162,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object filters {
@@ -192,10 +172,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object goals {
@@ -204,10 +182,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object profileFilterLinks {
@@ -216,10 +192,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object profileUserLinks {
@@ -228,10 +202,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object profiles {
@@ -240,10 +212,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object remarketingAudience {
@@ -252,10 +222,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object segments {
@@ -264,10 +232,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object unsampledReports {
@@ -276,10 +242,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object uploads {
@@ -288,10 +252,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object webPropertyAdWordsLinks {
@@ -300,10 +262,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object webproperties {
@@ -312,10 +272,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
           
           object webpropertyUserLinks {
@@ -324,10 +282,8 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
-            @scala.inline
-            def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(view: View): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(view.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
           }
         }
         
@@ -339,8 +295,7 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
+            inline def list(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Any]]
           }
         }
         
@@ -350,8 +305,7 @@ object global {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def createAccountTicket(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccountTicket")().asInstanceOf[js.Promise[js.Any]]
+          inline def createAccountTicket(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccountTicket")().asInstanceOf[js.Promise[js.Any]]
         }
       }
     }

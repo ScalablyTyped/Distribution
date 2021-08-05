@@ -12,8 +12,6 @@ object legacyUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertChildrenToData(nodes: ReactNode): OptionsType = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any]).asInstanceOf[OptionsType]
-  @scala.inline
-  def convertChildrenToData(nodes: ReactNode, optionOnly: Boolean): OptionsType = (^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any], optionOnly.asInstanceOf[js.Any])).asInstanceOf[OptionsType]
+  inline def convertChildrenToData(nodes: ReactNode): OptionsType = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any]).asInstanceOf[OptionsType]
+  inline def convertChildrenToData(nodes: ReactNode, optionOnly: Boolean): OptionsType = (^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any], optionOnly.asInstanceOf[js.Any])).asInstanceOf[OptionsType]
 }

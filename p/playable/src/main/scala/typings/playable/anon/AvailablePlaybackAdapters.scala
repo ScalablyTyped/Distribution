@@ -17,8 +17,7 @@ trait AvailablePlaybackAdapters extends StObject {
 }
 object AvailablePlaybackAdapters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availablePlaybackAdapters: js.Array[IPlaybackAdapterClass],
     config: IPlayerConfig,
     eventEmitter: IEventEmitter
@@ -27,19 +26,14 @@ object AvailablePlaybackAdapters {
     __obj.asInstanceOf[AvailablePlaybackAdapters]
   }
   
-  @scala.inline
-  implicit class AvailablePlaybackAdaptersMutableBuilder[Self <: AvailablePlaybackAdapters] (val x: Self) extends AnyVal {
+  extension [Self <: AvailablePlaybackAdapters](x: Self) {
     
-    @scala.inline
-    def setAvailablePlaybackAdapters(value: js.Array[IPlaybackAdapterClass]): Self = StObject.set(x, "availablePlaybackAdapters", value.asInstanceOf[js.Any])
+    inline def setAvailablePlaybackAdapters(value: js.Array[IPlaybackAdapterClass]): Self = StObject.set(x, "availablePlaybackAdapters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailablePlaybackAdaptersVarargs(value: IPlaybackAdapterClass*): Self = StObject.set(x, "availablePlaybackAdapters", js.Array(value :_*))
+    inline def setAvailablePlaybackAdaptersVarargs(value: IPlaybackAdapterClass*): Self = StObject.set(x, "availablePlaybackAdapters", js.Array(value :_*))
     
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait GattReliableWriteTransaction extends StObject {
 }
 object GattReliableWriteTransaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitAsync: () => IPromiseWithIAsyncOperation[GattCommunicationStatus],
     writeValue: (GattCharacteristic, IBuffer) => Unit
   ): GattReliableWriteTransaction = {
@@ -33,13 +32,10 @@ object GattReliableWriteTransaction {
     __obj.asInstanceOf[GattReliableWriteTransaction]
   }
   
-  @scala.inline
-  implicit class GattReliableWriteTransactionMutableBuilder[Self <: GattReliableWriteTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: GattReliableWriteTransaction](x: Self) {
     
-    @scala.inline
-    def setCommitAsync(value: () => IPromiseWithIAsyncOperation[GattCommunicationStatus]): Self = StObject.set(x, "commitAsync", js.Any.fromFunction0(value))
+    inline def setCommitAsync(value: () => IPromiseWithIAsyncOperation[GattCommunicationStatus]): Self = StObject.set(x, "commitAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteValue(value: (GattCharacteristic, IBuffer) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
+    inline def setWriteValue(value: (GattCharacteristic, IBuffer) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
   }
 }

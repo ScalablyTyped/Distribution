@@ -22,58 +22,41 @@ trait JobConfigurationExtract extends StObject {
 }
 object JobConfigurationExtract {
   
-  @scala.inline
-  def apply(): JobConfigurationExtract = {
+  inline def apply(): JobConfigurationExtract = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobConfigurationExtract]
   }
   
-  @scala.inline
-  implicit class JobConfigurationExtractMutableBuilder[Self <: JobConfigurationExtract] (val x: Self) extends AnyVal {
+  extension [Self <: JobConfigurationExtract](x: Self) {
     
-    @scala.inline
-    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setDestinationFormat(value: String): Self = StObject.set(x, "destinationFormat", value.asInstanceOf[js.Any])
+    inline def setDestinationFormat(value: String): Self = StObject.set(x, "destinationFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationFormatUndefined: Self = StObject.set(x, "destinationFormat", js.undefined)
+    inline def setDestinationFormatUndefined: Self = StObject.set(x, "destinationFormat", js.undefined)
     
-    @scala.inline
-    def setDestinationUri(value: String): Self = StObject.set(x, "destinationUri", value.asInstanceOf[js.Any])
+    inline def setDestinationUri(value: String): Self = StObject.set(x, "destinationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUriUndefined: Self = StObject.set(x, "destinationUri", js.undefined)
+    inline def setDestinationUriUndefined: Self = StObject.set(x, "destinationUri", js.undefined)
     
-    @scala.inline
-    def setDestinationUris(value: js.Array[String]): Self = StObject.set(x, "destinationUris", value.asInstanceOf[js.Any])
+    inline def setDestinationUris(value: js.Array[String]): Self = StObject.set(x, "destinationUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUrisUndefined: Self = StObject.set(x, "destinationUris", js.undefined)
+    inline def setDestinationUrisUndefined: Self = StObject.set(x, "destinationUris", js.undefined)
     
-    @scala.inline
-    def setDestinationUrisVarargs(value: String*): Self = StObject.set(x, "destinationUris", js.Array(value :_*))
+    inline def setDestinationUrisVarargs(value: String*): Self = StObject.set(x, "destinationUris", js.Array(value :_*))
     
-    @scala.inline
-    def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
+    inline def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
+    inline def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
     
-    @scala.inline
-    def setPrintHeader(value: Boolean): Self = StObject.set(x, "printHeader", value.asInstanceOf[js.Any])
+    inline def setPrintHeader(value: Boolean): Self = StObject.set(x, "printHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintHeaderUndefined: Self = StObject.set(x, "printHeader", js.undefined)
+    inline def setPrintHeaderUndefined: Self = StObject.set(x, "printHeader", js.undefined)
     
-    @scala.inline
-    def setSourceTable(value: TableReference): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
+    inline def setSourceTable(value: TableReference): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
+    inline def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
   }
 }

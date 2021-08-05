@@ -20,37 +20,27 @@ trait GoogleCloudServicenetworkingV1betaSubnetwork extends StObject {
 }
 object GoogleCloudServicenetworkingV1betaSubnetwork {
   
-  @scala.inline
-  def apply(): GoogleCloudServicenetworkingV1betaSubnetwork = {
+  inline def apply(): GoogleCloudServicenetworkingV1betaSubnetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudServicenetworkingV1betaSubnetwork]
   }
   
-  @scala.inline
-  implicit class GoogleCloudServicenetworkingV1betaSubnetworkMutableBuilder[Self <: GoogleCloudServicenetworkingV1betaSubnetwork] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudServicenetworkingV1betaSubnetwork](x: Self) {
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setOutsideAllocation(value: Boolean): Self = StObject.set(x, "outsideAllocation", value.asInstanceOf[js.Any])
+    inline def setOutsideAllocation(value: Boolean): Self = StObject.set(x, "outsideAllocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutsideAllocationUndefined: Self = StObject.set(x, "outsideAllocation", js.undefined)
+    inline def setOutsideAllocationUndefined: Self = StObject.set(x, "outsideAllocation", js.undefined)
   }
 }

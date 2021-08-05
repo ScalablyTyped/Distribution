@@ -23,43 +23,31 @@ trait QueryTimeSeriesResponse extends StObject {
 }
 object QueryTimeSeriesResponse {
   
-  @scala.inline
-  def apply(): QueryTimeSeriesResponse = {
+  inline def apply(): QueryTimeSeriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryTimeSeriesResponse]
   }
   
-  @scala.inline
-  implicit class QueryTimeSeriesResponseMutableBuilder[Self <: QueryTimeSeriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryTimeSeriesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPartialErrors(value: js.Array[Status]): Self = StObject.set(x, "partialErrors", value.asInstanceOf[js.Any])
+    inline def setPartialErrors(value: js.Array[Status]): Self = StObject.set(x, "partialErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialErrorsUndefined: Self = StObject.set(x, "partialErrors", js.undefined)
+    inline def setPartialErrorsUndefined: Self = StObject.set(x, "partialErrors", js.undefined)
     
-    @scala.inline
-    def setPartialErrorsVarargs(value: Status*): Self = StObject.set(x, "partialErrors", js.Array(value :_*))
+    inline def setPartialErrorsVarargs(value: Status*): Self = StObject.set(x, "partialErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeSeriesData(value: js.Array[TimeSeriesData]): Self = StObject.set(x, "timeSeriesData", value.asInstanceOf[js.Any])
+    inline def setTimeSeriesData(value: js.Array[TimeSeriesData]): Self = StObject.set(x, "timeSeriesData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesDataUndefined: Self = StObject.set(x, "timeSeriesData", js.undefined)
+    inline def setTimeSeriesDataUndefined: Self = StObject.set(x, "timeSeriesData", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesDataVarargs(value: TimeSeriesData*): Self = StObject.set(x, "timeSeriesData", js.Array(value :_*))
+    inline def setTimeSeriesDataVarargs(value: TimeSeriesData*): Self = StObject.set(x, "timeSeriesData", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeSeriesDescriptor(value: TimeSeriesDescriptor): Self = StObject.set(x, "timeSeriesDescriptor", value.asInstanceOf[js.Any])
+    inline def setTimeSeriesDescriptor(value: TimeSeriesDescriptor): Self = StObject.set(x, "timeSeriesDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesDescriptorUndefined: Self = StObject.set(x, "timeSeriesDescriptor", js.undefined)
+    inline def setTimeSeriesDescriptorUndefined: Self = StObject.set(x, "timeSeriesDescriptor", js.undefined)
   }
 }

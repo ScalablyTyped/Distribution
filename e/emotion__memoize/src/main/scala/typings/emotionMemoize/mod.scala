@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](fn: Fn[T]): Fn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Fn[T]]
+  inline def default[T](fn: Fn[T]): Fn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Fn[T]]
   
   type Fn[T] = js.Function1[/* key */ String, T]
 }

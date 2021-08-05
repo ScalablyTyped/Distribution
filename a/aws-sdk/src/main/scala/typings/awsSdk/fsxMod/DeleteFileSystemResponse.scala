@@ -22,37 +22,27 @@ trait DeleteFileSystemResponse extends StObject {
 }
 object DeleteFileSystemResponse {
   
-  @scala.inline
-  def apply(): DeleteFileSystemResponse = {
+  inline def apply(): DeleteFileSystemResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFileSystemResponse]
   }
   
-  @scala.inline
-  implicit class DeleteFileSystemResponseMutableBuilder[Self <: DeleteFileSystemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileSystemResponse](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
+    inline def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: FileSystemLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: FileSystemLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
-    @scala.inline
-    def setLustreResponse(value: DeleteFileSystemLustreResponse): Self = StObject.set(x, "LustreResponse", value.asInstanceOf[js.Any])
+    inline def setLustreResponse(value: DeleteFileSystemLustreResponse): Self = StObject.set(x, "LustreResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLustreResponseUndefined: Self = StObject.set(x, "LustreResponse", js.undefined)
+    inline def setLustreResponseUndefined: Self = StObject.set(x, "LustreResponse", js.undefined)
     
-    @scala.inline
-    def setWindowsResponse(value: DeleteFileSystemWindowsResponse): Self = StObject.set(x, "WindowsResponse", value.asInstanceOf[js.Any])
+    inline def setWindowsResponse(value: DeleteFileSystemWindowsResponse): Self = StObject.set(x, "WindowsResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsResponseUndefined: Self = StObject.set(x, "WindowsResponse", js.undefined)
+    inline def setWindowsResponseUndefined: Self = StObject.set(x, "WindowsResponse", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait AutoComplete extends StObject {
 }
 object AutoComplete {
   
-  @scala.inline
-  def apply(): AutoComplete = {
+  inline def apply(): AutoComplete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoComplete]
   }
   
-  @scala.inline
-  implicit class AutoCompleteMutableBuilder[Self <: AutoComplete] (val x: Self) extends AnyVal {
+  extension [Self <: AutoComplete](x: Self) {
     
-    @scala.inline
-    def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
   }
 }

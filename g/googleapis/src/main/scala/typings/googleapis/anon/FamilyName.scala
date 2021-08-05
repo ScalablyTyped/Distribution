@@ -12,25 +12,19 @@ trait FamilyName extends StObject {
 }
 object FamilyName {
   
-  @scala.inline
-  def apply(): FamilyName = {
+  inline def apply(): FamilyName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FamilyName]
   }
   
-  @scala.inline
-  implicit class FamilyNameMutableBuilder[Self <: FamilyName] (val x: Self) extends AnyVal {
+  extension [Self <: FamilyName](x: Self) {
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
+    inline def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
-    @scala.inline
-    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
+    inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
   }
 }

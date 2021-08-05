@@ -25,8 +25,7 @@ trait XInteractionSupplyName
 }
 object XInteractionSupplyName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -37,10 +36,8 @@ object XInteractionSupplyName {
     __obj.asInstanceOf[XInteractionSupplyName]
   }
   
-  @scala.inline
-  implicit class XInteractionSupplyNameMutableBuilder[Self <: XInteractionSupplyName] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionSupplyName](x: Self) {
     
-    @scala.inline
-    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

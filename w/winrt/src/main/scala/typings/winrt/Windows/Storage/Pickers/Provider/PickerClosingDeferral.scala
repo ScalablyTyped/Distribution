@@ -9,8 +9,7 @@ trait PickerClosingDeferral
      with IPickerClosingDeferral
 object PickerClosingDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): PickerClosingDeferral = {
+  inline def apply(complete: () => Unit): PickerClosingDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[PickerClosingDeferral]
   }

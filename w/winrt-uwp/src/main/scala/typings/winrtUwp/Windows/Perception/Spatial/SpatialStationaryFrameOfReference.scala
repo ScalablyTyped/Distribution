@@ -10,16 +10,13 @@ trait SpatialStationaryFrameOfReference extends StObject {
 }
 object SpatialStationaryFrameOfReference {
   
-  @scala.inline
-  def apply(coordinateSystem: js.Any): SpatialStationaryFrameOfReference = {
+  inline def apply(coordinateSystem: js.Any): SpatialStationaryFrameOfReference = {
     val __obj = js.Dynamic.literal(coordinateSystem = coordinateSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialStationaryFrameOfReference]
   }
   
-  @scala.inline
-  implicit class SpatialStationaryFrameOfReferenceMutableBuilder[Self <: SpatialStationaryFrameOfReference] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialStationaryFrameOfReference](x: Self) {
     
-    @scala.inline
-    def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
   }
 }

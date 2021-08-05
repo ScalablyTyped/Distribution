@@ -105,38 +105,28 @@ object mod {
   }
   object UIDeleteFileOptions {
     
-    @scala.inline
-    def apply(): UIDeleteFileOptions = {
+    inline def apply(): UIDeleteFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIDeleteFileOptions]
     }
     
-    @scala.inline
-    implicit class UIDeleteFileOptionsMutableBuilder[Self <: UIDeleteFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIDeleteFileOptions](x: Self) {
       
-      @scala.inline
-      def setConfirmMessage(value: String): Self = StObject.set(x, "confirmMessage", value.asInstanceOf[js.Any])
+      inline def setConfirmMessage(value: String): Self = StObject.set(x, "confirmMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmMessageUndefined: Self = StObject.set(x, "confirmMessage", js.undefined)
+      inline def setConfirmMessageUndefined: Self = StObject.set(x, "confirmMessage", js.undefined)
       
-      @scala.inline
-      def setDeletingFailedText(value: String): Self = StObject.set(x, "deletingFailedText", value.asInstanceOf[js.Any])
+      inline def setDeletingFailedText(value: String): Self = StObject.set(x, "deletingFailedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletingFailedTextUndefined: Self = StObject.set(x, "deletingFailedText", js.undefined)
+      inline def setDeletingFailedTextUndefined: Self = StObject.set(x, "deletingFailedText", js.undefined)
       
-      @scala.inline
-      def setDeletingStatusText(value: String): Self = StObject.set(x, "deletingStatusText", value.asInstanceOf[js.Any])
+      inline def setDeletingStatusText(value: String): Self = StObject.set(x, "deletingStatusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletingStatusTextUndefined: Self = StObject.set(x, "deletingStatusText", js.undefined)
+      inline def setDeletingStatusTextUndefined: Self = StObject.set(x, "deletingStatusText", js.undefined)
       
-      @scala.inline
-      def setForceConfirm(value: Boolean): Self = StObject.set(x, "forceConfirm", value.asInstanceOf[js.Any])
+      inline def setForceConfirm(value: Boolean): Self = StObject.set(x, "forceConfirm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceConfirmUndefined: Self = StObject.set(x, "forceConfirm", js.undefined)
+      inline def setForceConfirmUndefined: Self = StObject.set(x, "forceConfirm", js.undefined)
     }
   }
   
@@ -158,26 +148,20 @@ object mod {
   }
   object UIDisplayOptions {
     
-    @scala.inline
-    def apply(): UIDisplayOptions = {
+    inline def apply(): UIDisplayOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIDisplayOptions]
     }
     
-    @scala.inline
-    implicit class UIDisplayOptionsMutableBuilder[Self <: UIDisplayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIDisplayOptions](x: Self) {
       
-      @scala.inline
-      def setFileSizeOnSubmit(value: Boolean): Self = StObject.set(x, "fileSizeOnSubmit", value.asInstanceOf[js.Any])
+      inline def setFileSizeOnSubmit(value: Boolean): Self = StObject.set(x, "fileSizeOnSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeOnSubmitUndefined: Self = StObject.set(x, "fileSizeOnSubmit", js.undefined)
+      inline def setFileSizeOnSubmitUndefined: Self = StObject.set(x, "fileSizeOnSubmit", js.undefined)
       
-      @scala.inline
-      def setPrependFiles(value: Boolean): Self = StObject.set(x, "prependFiles", value.asInstanceOf[js.Any])
+      inline def setPrependFiles(value: Boolean): Self = StObject.set(x, "prependFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependFilesUndefined: Self = StObject.set(x, "prependFiles", js.undefined)
+      inline def setPrependFilesUndefined: Self = StObject.set(x, "prependFiles", js.undefined)
     }
   }
   
@@ -199,29 +183,22 @@ object mod {
   }
   object UIDragAndDropOptions {
     
-    @scala.inline
-    def apply(): UIDragAndDropOptions = {
+    inline def apply(): UIDragAndDropOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIDragAndDropOptions]
     }
     
-    @scala.inline
-    implicit class UIDragAndDropOptionsMutableBuilder[Self <: UIDragAndDropOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIDragAndDropOptions](x: Self) {
       
-      @scala.inline
-      def setExtraDropzones(value: js.Array[js.Any]): Self = StObject.set(x, "extraDropzones", value.asInstanceOf[js.Any])
+      inline def setExtraDropzones(value: js.Array[js.Any]): Self = StObject.set(x, "extraDropzones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraDropzonesUndefined: Self = StObject.set(x, "extraDropzones", js.undefined)
+      inline def setExtraDropzonesUndefined: Self = StObject.set(x, "extraDropzones", js.undefined)
       
-      @scala.inline
-      def setExtraDropzonesVarargs(value: js.Any*): Self = StObject.set(x, "extraDropzones", js.Array(value :_*))
+      inline def setExtraDropzonesVarargs(value: js.Any*): Self = StObject.set(x, "extraDropzones", js.Array(value :_*))
       
-      @scala.inline
-      def setReportDirectoryPaths(value: Boolean): Self = StObject.set(x, "reportDirectoryPaths", value.asInstanceOf[js.Any])
+      inline def setReportDirectoryPaths(value: Boolean): Self = StObject.set(x, "reportDirectoryPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportDirectoryPathsUndefined: Self = StObject.set(x, "reportDirectoryPaths", js.undefined)
+      inline def setReportDirectoryPathsUndefined: Self = StObject.set(x, "reportDirectoryPaths", js.undefined)
     }
   }
   
@@ -252,32 +229,24 @@ object mod {
   }
   object UIFailedUploadTextDisplay {
     
-    @scala.inline
-    def apply(): UIFailedUploadTextDisplay = {
+    inline def apply(): UIFailedUploadTextDisplay = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIFailedUploadTextDisplay]
     }
     
-    @scala.inline
-    implicit class UIFailedUploadTextDisplayMutableBuilder[Self <: UIFailedUploadTextDisplay] (val x: Self) extends AnyVal {
+    extension [Self <: UIFailedUploadTextDisplay](x: Self) {
       
-      @scala.inline
-      def setEnableTooltip(value: Boolean): Self = StObject.set(x, "enableTooltip", value.asInstanceOf[js.Any])
+      inline def setEnableTooltip(value: Boolean): Self = StObject.set(x, "enableTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTooltipUndefined: Self = StObject.set(x, "enableTooltip", js.undefined)
+      inline def setEnableTooltipUndefined: Self = StObject.set(x, "enableTooltip", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setResponseProperty(value: String): Self = StObject.set(x, "responseProperty", value.asInstanceOf[js.Any])
+      inline def setResponseProperty(value: String): Self = StObject.set(x, "responseProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsePropertyUndefined: Self = StObject.set(x, "responseProperty", js.undefined)
+      inline def setResponsePropertyUndefined: Self = StObject.set(x, "responseProperty", js.undefined)
     }
   }
   
@@ -301,26 +270,20 @@ object mod {
   }
   object UIMessages {
     
-    @scala.inline
-    def apply(): UIMessages = {
+    inline def apply(): UIMessages = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIMessages]
     }
     
-    @scala.inline
-    implicit class UIMessagesMutableBuilder[Self <: UIMessages] (val x: Self) extends AnyVal {
+    extension [Self <: UIMessages](x: Self) {
       
-      @scala.inline
-      def setTooManyFilesError(value: String): Self = StObject.set(x, "tooManyFilesError", value.asInstanceOf[js.Any])
+      inline def setTooManyFilesError(value: String): Self = StObject.set(x, "tooManyFilesError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooManyFilesErrorUndefined: Self = StObject.set(x, "tooManyFilesError", js.undefined)
+      inline def setTooManyFilesErrorUndefined: Self = StObject.set(x, "tooManyFilesError", js.undefined)
       
-      @scala.inline
-      def setUnsupportedBrowser(value: String): Self = StObject.set(x, "unsupportedBrowser", value.asInstanceOf[js.Any])
+      inline def setUnsupportedBrowser(value: String): Self = StObject.set(x, "unsupportedBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsupportedBrowserUndefined: Self = StObject.set(x, "unsupportedBrowser", js.undefined)
+      inline def setUnsupportedBrowserUndefined: Self = StObject.set(x, "unsupportedBrowser", js.undefined)
     }
   }
   
@@ -435,110 +398,76 @@ object mod {
   }
   object UIOptions {
     
-    @scala.inline
-    def apply(): UIOptions = {
+    inline def apply(): UIOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIOptions]
     }
     
-    @scala.inline
-    implicit class UIOptionsMutableBuilder[Self <: UIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIOptions](x: Self) {
       
-      @scala.inline
-      def setDeleteFile(value: UIDeleteFileOptions): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
+      inline def setDeleteFile(value: UIDeleteFileOptions): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteFileUndefined: Self = StObject.set(x, "deleteFile", js.undefined)
+      inline def setDeleteFileUndefined: Self = StObject.set(x, "deleteFile", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: UIDisplayOptions): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: UIDisplayOptions): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setDragAndDrop(value: UIDragAndDropOptions): Self = StObject.set(x, "dragAndDrop", value.asInstanceOf[js.Any])
+      inline def setDragAndDrop(value: UIDragAndDropOptions): Self = StObject.set(x, "dragAndDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
+      inline def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setFailedUploadTextDisplay(value: UIFailedUploadTextDisplay): Self = StObject.set(x, "failedUploadTextDisplay", value.asInstanceOf[js.Any])
+      inline def setFailedUploadTextDisplay(value: UIFailedUploadTextDisplay): Self = StObject.set(x, "failedUploadTextDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedUploadTextDisplayUndefined: Self = StObject.set(x, "failedUploadTextDisplay", js.undefined)
+      inline def setFailedUploadTextDisplayUndefined: Self = StObject.set(x, "failedUploadTextDisplay", js.undefined)
       
-      @scala.inline
-      def setListElement(value: HTMLElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
+      inline def setListElement(value: HTMLElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListElementUndefined: Self = StObject.set(x, "listElement", js.undefined)
+      inline def setListElementUndefined: Self = StObject.set(x, "listElement", js.undefined)
       
-      @scala.inline
-      def setMessages(value: UIMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: UIMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setPaste(value: UIPasteOptions): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
+      inline def setPaste(value: UIPasteOptions): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+      inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
       
-      @scala.inline
-      def setRetry(value: UIRetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: UIRetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setScaling(value: UIScalingOptions): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
+      inline def setScaling(value: UIScalingOptions): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
+      inline def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
       
-      @scala.inline
-      def setShowConfirm(value: /* message */ String => PromiseOptions | Unit): Self = StObject.set(x, "showConfirm", js.Any.fromFunction1(value))
+      inline def setShowConfirm(value: /* message */ String => PromiseOptions | Unit): Self = StObject.set(x, "showConfirm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowConfirmUndefined: Self = StObject.set(x, "showConfirm", js.undefined)
+      inline def setShowConfirmUndefined: Self = StObject.set(x, "showConfirm", js.undefined)
       
-      @scala.inline
-      def setShowMessage(value: /* message */ String => PromiseOptions | Unit): Self = StObject.set(x, "showMessage", js.Any.fromFunction1(value))
+      inline def setShowMessage(value: /* message */ String => PromiseOptions | Unit): Self = StObject.set(x, "showMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowMessageUndefined: Self = StObject.set(x, "showMessage", js.undefined)
+      inline def setShowMessageUndefined: Self = StObject.set(x, "showMessage", js.undefined)
       
-      @scala.inline
-      def setShowPrompt(value: (/* message */ String, /* defaultValue */ String) => PromiseOptions | Unit): Self = StObject.set(x, "showPrompt", js.Any.fromFunction2(value))
+      inline def setShowPrompt(value: (/* message */ String, /* defaultValue */ String) => PromiseOptions | Unit): Self = StObject.set(x, "showPrompt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShowPromptUndefined: Self = StObject.set(x, "showPrompt", js.undefined)
+      inline def setShowPromptUndefined: Self = StObject.set(x, "showPrompt", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String | HTMLElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String | HTMLElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setText(value: UITextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: UITextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setThumbnails(value: UIThumbnailsOptions): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+      inline def setThumbnails(value: UIThumbnailsOptions): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+      inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     }
   }
   
@@ -562,26 +491,20 @@ object mod {
   }
   object UIPasteOptions {
     
-    @scala.inline
-    def apply(): UIPasteOptions = {
+    inline def apply(): UIPasteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIPasteOptions]
     }
     
-    @scala.inline
-    implicit class UIPasteOptionsMutableBuilder[Self <: UIPasteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIPasteOptions](x: Self) {
       
-      @scala.inline
-      def setNamePromptMessage(value: String): Self = StObject.set(x, "namePromptMessage", value.asInstanceOf[js.Any])
+      inline def setNamePromptMessage(value: String): Self = StObject.set(x, "namePromptMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePromptMessageUndefined: Self = StObject.set(x, "namePromptMessage", js.undefined)
+      inline def setNamePromptMessageUndefined: Self = StObject.set(x, "namePromptMessage", js.undefined)
       
-      @scala.inline
-      def setPromptForName(value: Boolean): Self = StObject.set(x, "promptForName", value.asInstanceOf[js.Any])
+      inline def setPromptForName(value: Boolean): Self = StObject.set(x, "promptForName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptForNameUndefined: Self = StObject.set(x, "promptForName", js.undefined)
+      inline def setPromptForNameUndefined: Self = StObject.set(x, "promptForName", js.undefined)
     }
   }
   
@@ -616,32 +539,24 @@ object mod {
   }
   object UIRetryOptions {
     
-    @scala.inline
-    def apply(): UIRetryOptions = {
+    inline def apply(): UIRetryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIRetryOptions]
     }
     
-    @scala.inline
-    implicit class UIRetryOptionsMutableBuilder[Self <: UIRetryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIRetryOptions](x: Self) {
       
-      @scala.inline
-      def setAutoRetryNote(value: String): Self = StObject.set(x, "autoRetryNote", value.asInstanceOf[js.Any])
+      inline def setAutoRetryNote(value: String): Self = StObject.set(x, "autoRetryNote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRetryNoteUndefined: Self = StObject.set(x, "autoRetryNote", js.undefined)
+      inline def setAutoRetryNoteUndefined: Self = StObject.set(x, "autoRetryNote", js.undefined)
       
-      @scala.inline
-      def setShowAutoRetryNote(value: Boolean): Self = StObject.set(x, "showAutoRetryNote", value.asInstanceOf[js.Any])
+      inline def setShowAutoRetryNote(value: Boolean): Self = StObject.set(x, "showAutoRetryNote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAutoRetryNoteUndefined: Self = StObject.set(x, "showAutoRetryNote", js.undefined)
+      inline def setShowAutoRetryNoteUndefined: Self = StObject.set(x, "showAutoRetryNote", js.undefined)
       
-      @scala.inline
-      def setShowButton(value: Boolean): Self = StObject.set(x, "showButton", value.asInstanceOf[js.Any])
+      inline def setShowButton(value: Boolean): Self = StObject.set(x, "showButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowButtonUndefined: Self = StObject.set(x, "showButton", js.undefined)
+      inline def setShowButtonUndefined: Self = StObject.set(x, "showButton", js.undefined)
     }
   }
   
@@ -658,20 +573,16 @@ object mod {
   }
   object UIScalingOptions {
     
-    @scala.inline
-    def apply(): UIScalingOptions = {
+    inline def apply(): UIScalingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIScalingOptions]
     }
     
-    @scala.inline
-    implicit class UIScalingOptionsMutableBuilder[Self <: UIScalingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIScalingOptions](x: Self) {
       
-      @scala.inline
-      def setHideScaled(value: Boolean): Self = StObject.set(x, "hideScaled", value.asInstanceOf[js.Any])
+      inline def setHideScaled(value: Boolean): Self = StObject.set(x, "hideScaled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideScaledUndefined: Self = StObject.set(x, "hideScaled", js.undefined)
+      inline def setHideScaledUndefined: Self = StObject.set(x, "hideScaled", js.undefined)
     }
   }
   
@@ -709,38 +620,28 @@ object mod {
   }
   object UITextOptions {
     
-    @scala.inline
-    def apply(): UITextOptions = {
+    inline def apply(): UITextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UITextOptions]
     }
     
-    @scala.inline
-    implicit class UITextOptionsMutableBuilder[Self <: UITextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UITextOptions](x: Self) {
       
-      @scala.inline
-      def setFailUpload(value: String): Self = StObject.set(x, "failUpload", value.asInstanceOf[js.Any])
+      inline def setFailUpload(value: String): Self = StObject.set(x, "failUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailUploadUndefined: Self = StObject.set(x, "failUpload", js.undefined)
+      inline def setFailUploadUndefined: Self = StObject.set(x, "failUpload", js.undefined)
       
-      @scala.inline
-      def setFormatProgress(value: String): Self = StObject.set(x, "formatProgress", value.asInstanceOf[js.Any])
+      inline def setFormatProgress(value: String): Self = StObject.set(x, "formatProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatProgressUndefined: Self = StObject.set(x, "formatProgress", js.undefined)
+      inline def setFormatProgressUndefined: Self = StObject.set(x, "formatProgress", js.undefined)
       
-      @scala.inline
-      def setPaused(value: String): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: String): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setWaitingForResponse(value: String): Self = StObject.set(x, "waitingForResponse", value.asInstanceOf[js.Any])
+      inline def setWaitingForResponse(value: String): Self = StObject.set(x, "waitingForResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitingForResponseUndefined: Self = StObject.set(x, "waitingForResponse", js.undefined)
+      inline def setWaitingForResponseUndefined: Self = StObject.set(x, "waitingForResponse", js.undefined)
     }
   }
   
@@ -783,38 +684,28 @@ object mod {
   }
   object UIThumbnailsOptions {
     
-    @scala.inline
-    def apply(): UIThumbnailsOptions = {
+    inline def apply(): UIThumbnailsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIThumbnailsOptions]
     }
     
-    @scala.inline
-    implicit class UIThumbnailsOptionsMutableBuilder[Self <: UIThumbnailsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIThumbnailsOptions](x: Self) {
       
-      @scala.inline
-      def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
+      inline def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomResizerUndefined: Self = StObject.set(x, "customResizer", js.undefined)
+      inline def setCustomResizerUndefined: Self = StObject.set(x, "customResizer", js.undefined)
       
-      @scala.inline
-      def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
+      inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      @scala.inline
-      def setPlaceholders(value: UIThumbnailsPlaceholderOptions): Self = StObject.set(x, "placeholders", value.asInstanceOf[js.Any])
+      inline def setPlaceholders(value: UIThumbnailsPlaceholderOptions): Self = StObject.set(x, "placeholders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholdersUndefined: Self = StObject.set(x, "placeholders", js.undefined)
+      inline def setPlaceholdersUndefined: Self = StObject.set(x, "placeholders", js.undefined)
       
-      @scala.inline
-      def setTimeBetweenThumbs(value: Double): Self = StObject.set(x, "timeBetweenThumbs", value.asInstanceOf[js.Any])
+      inline def setTimeBetweenThumbs(value: Double): Self = StObject.set(x, "timeBetweenThumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeBetweenThumbsUndefined: Self = StObject.set(x, "timeBetweenThumbs", js.undefined)
+      inline def setTimeBetweenThumbsUndefined: Self = StObject.set(x, "timeBetweenThumbs", js.undefined)
     }
   }
   
@@ -846,32 +737,24 @@ object mod {
   }
   object UIThumbnailsPlaceholderOptions {
     
-    @scala.inline
-    def apply(): UIThumbnailsPlaceholderOptions = {
+    inline def apply(): UIThumbnailsPlaceholderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIThumbnailsPlaceholderOptions]
     }
     
-    @scala.inline
-    implicit class UIThumbnailsPlaceholderOptionsMutableBuilder[Self <: UIThumbnailsPlaceholderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIThumbnailsPlaceholderOptions](x: Self) {
       
-      @scala.inline
-      def setNotAvailablePath(value: String): Self = StObject.set(x, "notAvailablePath", value.asInstanceOf[js.Any])
+      inline def setNotAvailablePath(value: String): Self = StObject.set(x, "notAvailablePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotAvailablePathUndefined: Self = StObject.set(x, "notAvailablePath", js.undefined)
+      inline def setNotAvailablePathUndefined: Self = StObject.set(x, "notAvailablePath", js.undefined)
       
-      @scala.inline
-      def setWaitUntilResponse(value: Boolean): Self = StObject.set(x, "waitUntilResponse", value.asInstanceOf[js.Any])
+      inline def setWaitUntilResponse(value: Boolean): Self = StObject.set(x, "waitUntilResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitUntilResponseUndefined: Self = StObject.set(x, "waitUntilResponse", js.undefined)
+      inline def setWaitUntilResponseUndefined: Self = StObject.set(x, "waitUntilResponse", js.undefined)
       
-      @scala.inline
-      def setWaitingPath(value: String): Self = StObject.set(x, "waitingPath", value.asInstanceOf[js.Any])
+      inline def setWaitingPath(value: String): Self = StObject.set(x, "waitingPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitingPathUndefined: Self = StObject.set(x, "waitingPath", js.undefined)
+      inline def setWaitingPathUndefined: Self = StObject.set(x, "waitingPath", js.undefined)
     }
   }
 }

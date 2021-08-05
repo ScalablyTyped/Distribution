@@ -28,28 +28,21 @@ trait CreateEvaluationInput extends StObject {
 }
 object CreateEvaluationInput {
   
-  @scala.inline
-  def apply(EvaluationDataSourceId: EntityId, EvaluationId: EntityId, MLModelId: EntityId): CreateEvaluationInput = {
+  inline def apply(EvaluationDataSourceId: EntityId, EvaluationId: EntityId, MLModelId: EntityId): CreateEvaluationInput = {
     val __obj = js.Dynamic.literal(EvaluationDataSourceId = EvaluationDataSourceId.asInstanceOf[js.Any], EvaluationId = EvaluationId.asInstanceOf[js.Any], MLModelId = MLModelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEvaluationInput]
   }
   
-  @scala.inline
-  implicit class CreateEvaluationInputMutableBuilder[Self <: CreateEvaluationInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEvaluationInput](x: Self) {
     
-    @scala.inline
-    def setEvaluationDataSourceId(value: EntityId): Self = StObject.set(x, "EvaluationDataSourceId", value.asInstanceOf[js.Any])
+    inline def setEvaluationDataSourceId(value: EntityId): Self = StObject.set(x, "EvaluationDataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
+    inline def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationName(value: EntityName): Self = StObject.set(x, "EvaluationName", value.asInstanceOf[js.Any])
+    inline def setEvaluationName(value: EntityName): Self = StObject.set(x, "EvaluationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationNameUndefined: Self = StObject.set(x, "EvaluationName", js.undefined)
+    inline def setEvaluationNameUndefined: Self = StObject.set(x, "EvaluationName", js.undefined)
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
   }
 }

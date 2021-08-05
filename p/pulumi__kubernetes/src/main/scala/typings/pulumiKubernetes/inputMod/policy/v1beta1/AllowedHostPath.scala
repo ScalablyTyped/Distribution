@@ -24,25 +24,19 @@ trait AllowedHostPath extends StObject {
 }
 object AllowedHostPath {
   
-  @scala.inline
-  def apply(): AllowedHostPath = {
+  inline def apply(): AllowedHostPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowedHostPath]
   }
   
-  @scala.inline
-  implicit class AllowedHostPathMutableBuilder[Self <: AllowedHostPath] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedHostPath](x: Self) {
     
-    @scala.inline
-    def setPathPrefix(value: Input[String]): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+    inline def setPathPrefix(value: Input[String]): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+    inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

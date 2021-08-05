@@ -13,16 +13,13 @@ trait GetApnsChannelRequest extends StObject {
 }
 object GetApnsChannelRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): GetApnsChannelRequest = {
+  inline def apply(ApplicationId: string): GetApnsChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApnsChannelRequest]
   }
   
-  @scala.inline
-  implicit class GetApnsChannelRequestMutableBuilder[Self <: GetApnsChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetApnsChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

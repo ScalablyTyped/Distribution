@@ -55,66 +55,47 @@ trait ExtensionRule extends StObject {
 }
 object ExtensionRule {
   
-  @scala.inline
-  def apply(): ExtensionRule = {
+  inline def apply(): ExtensionRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtensionRule]
   }
   
-  @scala.inline
-  implicit class ExtensionRuleMutableBuilder[Self <: ExtensionRule] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionRule](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setArgs(value: js.Array[RuleArgs | String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[RuleArgs | String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: (RuleArgs | String)*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: (RuleArgs | String)*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+    inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
-    @scala.inline
-    def setManifest(value: Boolean): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: Boolean): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
     
-    @scala.inline
-    def setMethod(value: RuleMethod | `false`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: RuleMethod | `false`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setValidate(
+    inline def setValidate(
       value: (/* value */ js.Any, /* helpers */ js.Any, /* args */ Record[String, js.Any], /* options */ js.Any) => js.Any
     ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

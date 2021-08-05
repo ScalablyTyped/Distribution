@@ -36,64 +36,45 @@ trait Segment
 }
 object Segment {
   
-  @scala.inline
-  def apply(): Segment = {
+  inline def apply(): Segment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Segment]
   }
   
-  @scala.inline
-  implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
+  extension [Self <: Segment](x: Self) {
     
-    @scala.inline
-    def setCallee(value: NullableOption[Endpoint]): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: NullableOption[Endpoint]): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalleeNull: Self = StObject.set(x, "callee", null)
+    inline def setCalleeNull: Self = StObject.set(x, "callee", null)
     
-    @scala.inline
-    def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
+    inline def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
-    @scala.inline
-    def setCaller(value: NullableOption[Endpoint]): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+    inline def setCaller(value: NullableOption[Endpoint]): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerNull: Self = StObject.set(x, "caller", null)
+    inline def setCallerNull: Self = StObject.set(x, "caller", null)
     
-    @scala.inline
-    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+    inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setFailureInfo(value: NullableOption[FailureInfo]): Self = StObject.set(x, "failureInfo", value.asInstanceOf[js.Any])
+    inline def setFailureInfo(value: NullableOption[FailureInfo]): Self = StObject.set(x, "failureInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureInfoNull: Self = StObject.set(x, "failureInfo", null)
+    inline def setFailureInfoNull: Self = StObject.set(x, "failureInfo", null)
     
-    @scala.inline
-    def setFailureInfoUndefined: Self = StObject.set(x, "failureInfo", js.undefined)
+    inline def setFailureInfoUndefined: Self = StObject.set(x, "failureInfo", js.undefined)
     
-    @scala.inline
-    def setMedia(value: NullableOption[js.Array[Media]]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: NullableOption[js.Array[Media]]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaNull: Self = StObject.set(x, "media", null)
+    inline def setMediaNull: Self = StObject.set(x, "media", null)
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
     
-    @scala.inline
-    def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
   }
 }

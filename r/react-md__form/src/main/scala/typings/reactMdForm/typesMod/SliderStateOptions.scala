@@ -33,37 +33,27 @@ trait SliderStateOptions
 }
 object SliderStateOptions {
   
-  @scala.inline
-  def apply(): SliderStateOptions = {
+  inline def apply(): SliderStateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderStateOptions]
   }
   
-  @scala.inline
-  implicit class SliderStateOptionsMutableBuilder[Self <: SliderStateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SliderStateOptions](x: Self) {
     
-    @scala.inline
-    def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
-    @scala.inline
-    def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
+    inline def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
+    inline def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
     
-    @scala.inline
-    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+    inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
+    inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
     
-    @scala.inline
-    def setGetValueText(value: /* value */ Double => String): Self = StObject.set(x, "getValueText", js.Any.fromFunction1(value))
+    inline def setGetValueText(value: /* value */ Double => String): Self = StObject.set(x, "getValueText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValueTextUndefined: Self = StObject.set(x, "getValueText", js.undefined)
+    inline def setGetValueTextUndefined: Self = StObject.set(x, "getValueText", js.undefined)
   }
 }

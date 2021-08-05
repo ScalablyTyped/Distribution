@@ -46,58 +46,41 @@ trait PowerFormsResponse extends StObject {
 }
 object PowerFormsResponse {
   
-  @scala.inline
-  def apply(): PowerFormsResponse = {
+  inline def apply(): PowerFormsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PowerFormsResponse]
   }
   
-  @scala.inline
-  implicit class PowerFormsResponseMutableBuilder[Self <: PowerFormsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PowerFormsResponse](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
+    inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
+    inline def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
-    @scala.inline
-    def setPowerForms(value: js.Array[/* Contains details about a PowerForm. */ PowerForm]): Self = StObject.set(x, "powerForms", value.asInstanceOf[js.Any])
+    inline def setPowerForms(value: js.Array[/* Contains details about a PowerForm. */ PowerForm]): Self = StObject.set(x, "powerForms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerFormsUndefined: Self = StObject.set(x, "powerForms", js.undefined)
+    inline def setPowerFormsUndefined: Self = StObject.set(x, "powerForms", js.undefined)
     
-    @scala.inline
-    def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value :_*))
+    inline def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value :_*))
     
-    @scala.inline
-    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
+    inline def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
+    inline def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
     
-    @scala.inline
-    def setResultSetSize(value: Double): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
+    inline def setResultSetSize(value: Double): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
+    inline def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
-    @scala.inline
-    def setTotalSetSize(value: Double): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
+    inline def setTotalSetSize(value: Double): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
+    inline def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

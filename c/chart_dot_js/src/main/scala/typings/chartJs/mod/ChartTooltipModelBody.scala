@@ -14,31 +14,23 @@ trait ChartTooltipModelBody extends StObject {
 }
 object ChartTooltipModelBody {
   
-  @scala.inline
-  def apply(after: js.Array[String], before: js.Array[String], lines: js.Array[String]): ChartTooltipModelBody = {
+  inline def apply(after: js.Array[String], before: js.Array[String], lines: js.Array[String]): ChartTooltipModelBody = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTooltipModelBody]
   }
   
-  @scala.inline
-  implicit class ChartTooltipModelBodyMutableBuilder[Self <: ChartTooltipModelBody] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTooltipModelBody](x: Self) {
     
-    @scala.inline
-    def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
-    @scala.inline
-    def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+    inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
     
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

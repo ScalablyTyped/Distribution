@@ -27,8 +27,7 @@ trait BuildVersion extends StObject {
 }
 object BuildVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitMessage: String,
     id: String,
     name: String,
@@ -42,31 +41,22 @@ object BuildVersion {
     __obj.asInstanceOf[BuildVersion]
   }
   
-  @scala.inline
-  implicit class BuildVersionMutableBuilder[Self <: BuildVersion] (val x: Self) extends AnyVal {
+  extension [Self <: BuildVersion](x: Self) {
     
-    @scala.inline
-    def setCommitMessage(value: String): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
+    inline def setCommitMessage(value: String): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBranch(value: String): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
+    inline def setSourceBranch(value: String): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePullRequestId(value: String): Self = StObject.set(x, "sourcePullRequestId", value.asInstanceOf[js.Any])
+    inline def setSourcePullRequestId(value: String): Self = StObject.set(x, "sourcePullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRepositoryId(value: String): Self = StObject.set(x, "sourceRepositoryId", value.asInstanceOf[js.Any])
+    inline def setSourceRepositoryId(value: String): Self = StObject.set(x, "sourceRepositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRepositoryType(value: String): Self = StObject.set(x, "sourceRepositoryType", value.asInstanceOf[js.Any])
+    inline def setSourceRepositoryType(value: String): Self = StObject.set(x, "sourceRepositoryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
+    inline def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
   }
 }

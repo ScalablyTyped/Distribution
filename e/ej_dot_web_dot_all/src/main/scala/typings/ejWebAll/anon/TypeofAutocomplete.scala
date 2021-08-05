@@ -15,19 +15,15 @@ trait TypeofAutocomplete extends StObject {
 }
 object TypeofAutocomplete {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Autocomplete): TypeofAutocomplete = {
+  inline def apply(Locale: js.Any, fn: Autocomplete): TypeofAutocomplete = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAutocomplete]
   }
   
-  @scala.inline
-  implicit class TypeofAutocompleteMutableBuilder[Self <: TypeofAutocomplete] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAutocomplete](x: Self) {
     
-    @scala.inline
-    def setFn(value: Autocomplete): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Autocomplete): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

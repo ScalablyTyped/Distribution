@@ -12,20 +12,16 @@ object queryBuilderJoinOptionsMod {
   }
   object JoinOptions {
     
-    @scala.inline
-    def apply(): JoinOptions = {
+    inline def apply(): JoinOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JoinOptions]
     }
     
-    @scala.inline
-    implicit class JoinOptionsMutableBuilder[Self <: JoinOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JoinOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
 }

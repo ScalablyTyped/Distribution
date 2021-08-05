@@ -44,8 +44,7 @@ trait PairFactory extends StObject {
 }
 object PairFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: (ICollisionData, Double) => IPair,
     id: (BodyType, BodyType) => String,
     setActive: (IPair, Boolean, Double) => Unit,
@@ -55,19 +54,14 @@ object PairFactory {
     __obj.asInstanceOf[PairFactory]
   }
   
-  @scala.inline
-  implicit class PairFactoryMutableBuilder[Self <: PairFactory] (val x: Self) extends AnyVal {
+  extension [Self <: PairFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (ICollisionData, Double) => IPair): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (ICollisionData, Double) => IPair): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setId(value: (BodyType, BodyType) => String): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
+    inline def setId(value: (BodyType, BodyType) => String): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetActive(value: (IPair, Boolean, Double) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction3(value))
+    inline def setSetActive(value: (IPair, Boolean, Double) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUpdate(value: (IPair, ICollisionData, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (IPair, ICollisionData, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

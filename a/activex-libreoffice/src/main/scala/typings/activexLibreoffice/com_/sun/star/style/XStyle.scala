@@ -28,8 +28,7 @@ trait XStyle
 }
 object XStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     ParentStyle: String,
     acquire: () => Unit,
@@ -46,22 +45,16 @@ object XStyle {
     __obj.asInstanceOf[XStyle]
   }
   
-  @scala.inline
-  implicit class XStyleMutableBuilder[Self <: XStyle] (val x: Self) extends AnyVal {
+  extension [Self <: XStyle](x: Self) {
     
-    @scala.inline
-    def setGetParentStyle(value: () => String): Self = StObject.set(x, "getParentStyle", js.Any.fromFunction0(value))
+    inline def setGetParentStyle(value: () => String): Self = StObject.set(x, "getParentStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInUse(value: () => Boolean): Self = StObject.set(x, "isInUse", js.Any.fromFunction0(value))
+    inline def setIsInUse(value: () => Boolean): Self = StObject.set(x, "isInUse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUserDefined(value: () => Boolean): Self = StObject.set(x, "isUserDefined", js.Any.fromFunction0(value))
+    inline def setIsUserDefined(value: () => Boolean): Self = StObject.set(x, "isUserDefined", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParentStyle(value: String): Self = StObject.set(x, "ParentStyle", value.asInstanceOf[js.Any])
+    inline def setParentStyle(value: String): Self = StObject.set(x, "ParentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetParentStyle(value: String => Unit): Self = StObject.set(x, "setParentStyle", js.Any.fromFunction1(value))
+    inline def setSetParentStyle(value: String => Unit): Self = StObject.set(x, "setParentStyle", js.Any.fromFunction1(value))
   }
 }

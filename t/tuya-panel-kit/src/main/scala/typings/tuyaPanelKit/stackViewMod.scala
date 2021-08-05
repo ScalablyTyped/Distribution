@@ -27,8 +27,7 @@ object stackViewMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | OpeningRouteKeys = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClosingRouteKeys | OpeningRouteKeys]
+    inline def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | OpeningRouteKeys = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClosingRouteKeys | OpeningRouteKeys]
   }
   
   // tslint:disable-next-line strict-export-declare-modifiers
@@ -44,8 +43,7 @@ object stackViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       descriptors: StackDescriptorMap,
       navigation: StackNavigationHelpers,
       state: StackNavigationState[ParamListBase]
@@ -54,17 +52,13 @@ object stackViewMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: StackNavigationState[ParamListBase]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StackNavigationState[ParamListBase]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,27 +66,27 @@ object stackViewMod {
   trait StackView
     extends Component[Props, State, js.Any] {
     
-    var getGesturesEnabled: js.Any = js.native
+    /* private */ var getGesturesEnabled: js.Any = js.native
     
-    var getPreviousRoute: js.Any = js.native
+    /* private */ var getPreviousRoute: js.Any = js.native
     
-    var handleCloseRoute: js.Any = js.native
+    /* private */ var handleCloseRoute: js.Any = js.native
     
-    var handleGestureCancel: js.Any = js.native
+    /* private */ var handleGestureCancel: js.Any = js.native
     
-    var handleGestureEnd: js.Any = js.native
+    /* private */ var handleGestureEnd: js.Any = js.native
     
-    var handleGestureStart: js.Any = js.native
+    /* private */ var handleGestureStart: js.Any = js.native
     
-    var handleOpenRoute: js.Any = js.native
+    /* private */ var handleOpenRoute: js.Any = js.native
     
-    var handleTransitionEnd: js.Any = js.native
+    /* private */ var handleTransitionEnd: js.Any = js.native
     
-    var handleTransitionStart: js.Any = js.native
+    /* private */ var handleTransitionStart: js.Any = js.native
     
-    var renderHeader: js.Any = js.native
+    /* private */ var renderHeader: js.Any = js.native
     
-    var renderScene: js.Any = js.native
+    /* private */ var renderScene: js.Any = js.native
   }
   
   // tslint:disable-next-line interface-over-type-literal strict-export-declare-modifiers
@@ -116,8 +110,7 @@ object stackViewMod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closingRouteKeys: js.Array[String],
       descriptors: StackDescriptorMap,
       openingRouteKeys: js.Array[String],
@@ -130,44 +123,31 @@ object stackViewMod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
+      inline def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value :_*))
+      inline def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpeningRouteKeys(value: js.Array[String]): Self = StObject.set(x, "openingRouteKeys", value.asInstanceOf[js.Any])
+      inline def setOpeningRouteKeys(value: js.Array[String]): Self = StObject.set(x, "openingRouteKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value :_*))
+      inline def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setPreviousDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "previousDescriptors", value.asInstanceOf[js.Any])
+      inline def setPreviousDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "previousDescriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousRoutes(value: js.Array[Route[String, js.UndefOr[js.Object]]]): Self = StObject.set(x, "previousRoutes", value.asInstanceOf[js.Any])
+      inline def setPreviousRoutes(value: js.Array[Route[String, js.UndefOr[js.Object]]]): Self = StObject.set(x, "previousRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousRoutesVarargs(value: (Route[String, js.UndefOr[js.Object]])*): Self = StObject.set(x, "previousRoutes", js.Array(value :_*))
+      inline def setPreviousRoutesVarargs(value: (Route[String, js.UndefOr[js.Object]])*): Self = StObject.set(x, "previousRoutes", js.Array(value :_*))
       
-      @scala.inline
-      def setReplacingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "replacingRouteKeys", value.asInstanceOf[js.Any])
+      inline def setReplacingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "replacingRouteKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacingRouteKeysVarargs(value: String*): Self = StObject.set(x, "replacingRouteKeys", js.Array(value :_*))
+      inline def setReplacingRouteKeysVarargs(value: String*): Self = StObject.set(x, "replacingRouteKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setRoutes(value: js.Array[Route[String, js.UndefOr[js.Object]]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[Route[String, js.UndefOr[js.Object]]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: (Route[String, js.UndefOr[js.Object]])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (Route[String, js.UndefOr[js.Object]])*): Self = StObject.set(x, "routes", js.Array(value :_*))
     }
   }
 }

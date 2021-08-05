@@ -18,22 +18,17 @@ trait DeleteTagsRequest extends StObject {
 }
 object DeleteTagsRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId, TagKeys: TagKeys): DeleteTagsRequest = {
+  inline def apply(FileSystemId: FileSystemId, TagKeys: TagKeys): DeleteTagsRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTagsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTagsRequestMutableBuilder[Self <: DeleteTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTagsRequest](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeys(value: TagKeys): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: TagKeys): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

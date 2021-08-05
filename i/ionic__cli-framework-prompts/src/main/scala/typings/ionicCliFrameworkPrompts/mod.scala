@@ -13,13 +13,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPromptChoiceSeparator(): Separator = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptChoiceSeparator")().asInstanceOf[Separator]
+  inline def createPromptChoiceSeparator(): Separator = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptChoiceSeparator")().asInstanceOf[Separator]
   
-  @scala.inline
-  def createPromptModule(): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")().asInstanceOf[js.Promise[PromptModule]]
-  @scala.inline
-  def createPromptModule(hasInteractiveOnFallback: CreatePromptModuleOptions): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")(hasInteractiveOnFallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromptModule]]
+  inline def createPromptModule(): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")().asInstanceOf[js.Promise[PromptModule]]
+  inline def createPromptModule(hasInteractiveOnFallback: CreatePromptModuleOptions): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")(hasInteractiveOnFallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromptModule]]
   
   trait CreatePromptModuleOptions extends StObject {
     
@@ -29,26 +26,20 @@ object mod {
   }
   object CreatePromptModuleOptions {
     
-    @scala.inline
-    def apply(): CreatePromptModuleOptions = {
+    inline def apply(): CreatePromptModuleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreatePromptModuleOptions]
     }
     
-    @scala.inline
-    implicit class CreatePromptModuleOptionsMutableBuilder[Self <: CreatePromptModuleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreatePromptModuleOptions](x: Self) {
       
-      @scala.inline
-      def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+      inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
       
-      @scala.inline
-      def setOnFallback(value: /* question */ PromptQuestion => PromptValue | Unit): Self = StObject.set(x, "onFallback", js.Any.fromFunction1(value))
+      inline def setOnFallback(value: /* question */ PromptQuestion => PromptValue | Unit): Self = StObject.set(x, "onFallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFallbackUndefined: Self = StObject.set(x, "onFallback", js.undefined)
+      inline def setOnFallbackUndefined: Self = StObject.set(x, "onFallback", js.undefined)
     }
   }
   
@@ -72,22 +63,19 @@ object mod {
   trait PromptQuestion extends StObject
   object PromptQuestion {
     
-    @scala.inline
-    def PromptQuestionCheckbox(message: String, `type`: PromptTypeCheckbox): typings.ionicCliFrameworkPrompts.mod.PromptQuestionCheckbox = {
+    inline def PromptQuestionCheckbox(message: String, `type`: PromptTypeCheckbox): typings.ionicCliFrameworkPrompts.mod.PromptQuestionCheckbox = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionicCliFrameworkPrompts.mod.PromptQuestionCheckbox]
     }
     
-    @scala.inline
-    def PromptQuestionConfirm(message: String, `type`: PromptTypeConfirm): typings.ionicCliFrameworkPrompts.mod.PromptQuestionConfirm = {
+    inline def PromptQuestionConfirm(message: String, `type`: PromptTypeConfirm): typings.ionicCliFrameworkPrompts.mod.PromptQuestionConfirm = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionicCliFrameworkPrompts.mod.PromptQuestionConfirm]
     }
     
-    @scala.inline
-    def PromptQuestionOther(message: String, `type`: PromptTypeOther): typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther = {
+    inline def PromptQuestionOther(message: String, `type`: PromptTypeOther): typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther]
@@ -128,39 +116,29 @@ object mod {
   }
   object PromptQuestionBase {
     
-    @scala.inline
-    def apply(message: String, `type`: PromptType): PromptQuestionBase = {
+    inline def apply(message: String, `type`: PromptType): PromptQuestionBase = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptQuestionBase]
     }
     
-    @scala.inline
-    implicit class PromptQuestionBaseMutableBuilder[Self <: PromptQuestionBase] (val x: Self) extends AnyVal {
+    extension [Self <: PromptQuestionBase](x: Self) {
       
-      @scala.inline
-      def setDefault(value: PromptValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: PromptValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setFallback(value: PromptValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: PromptValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
+      inline def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PromptType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PromptType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,36 +158,27 @@ object mod {
   }
   object PromptQuestionCheckbox {
     
-    @scala.inline
-    def apply(message: String, `type`: PromptTypeCheckbox): PromptQuestionCheckbox = {
+    inline def apply(message: String, `type`: PromptTypeCheckbox): PromptQuestionCheckbox = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptQuestionCheckbox]
     }
     
-    @scala.inline
-    implicit class PromptQuestionCheckboxMutableBuilder[Self <: PromptQuestionCheckbox] (val x: Self) extends AnyVal {
+    extension [Self <: PromptQuestionCheckbox](x: Self) {
       
-      @scala.inline
-      def setDefault(value: PromptValueCheckbox): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: PromptValueCheckbox): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setFallback(value: PromptValueCheckbox): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: PromptValueCheckbox): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
+      inline def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: PromptTypeCheckbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PromptTypeCheckbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,30 +198,23 @@ object mod {
   }
   object PromptQuestionConfirm {
     
-    @scala.inline
-    def apply(message: String, `type`: PromptTypeConfirm): PromptQuestionConfirm = {
+    inline def apply(message: String, `type`: PromptTypeConfirm): PromptQuestionConfirm = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptQuestionConfirm]
     }
     
-    @scala.inline
-    implicit class PromptQuestionConfirmMutableBuilder[Self <: PromptQuestionConfirm] (val x: Self) extends AnyVal {
+    extension [Self <: PromptQuestionConfirm](x: Self) {
       
-      @scala.inline
-      def setDefault(value: PromptValueConfirm): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: PromptValueConfirm): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setFallback(value: PromptValueConfirm): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: PromptValueConfirm): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setType(value: PromptTypeConfirm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PromptTypeConfirm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,30 +234,23 @@ object mod {
   }
   object PromptQuestionOther {
     
-    @scala.inline
-    def apply(message: String, `type`: PromptTypeOther): PromptQuestionOther = {
+    inline def apply(message: String, `type`: PromptTypeOther): PromptQuestionOther = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptQuestionOther]
     }
     
-    @scala.inline
-    implicit class PromptQuestionOtherMutableBuilder[Self <: PromptQuestionOther] (val x: Self) extends AnyVal {
+    extension [Self <: PromptQuestionOther](x: Self) {
       
-      @scala.inline
-      def setDefault(value: PromptValueOther): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: PromptValueOther): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setFallback(value: PromptValueOther): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: PromptValueOther): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setType(value: PromptTypeOther): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PromptTypeOther): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,14 +268,11 @@ object mod {
   trait PromptTypeOther extends StObject
   object PromptTypeOther {
     
-    @scala.inline
-    def input: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.input = "input".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.input]
+    inline def input: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.input = "input".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.input]
     
-    @scala.inline
-    def list: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.list = "list".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.list]
+    inline def list: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.list = "list".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.list]
     
-    @scala.inline
-    def password: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.password = "password".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.password]
+    inline def password: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.password = "password".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.password]
   }
   
   type PromptValue = PromptValueConfirm | PromptValueCheckbox | PromptValueOther

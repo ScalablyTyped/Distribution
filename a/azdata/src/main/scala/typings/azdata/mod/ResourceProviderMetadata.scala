@@ -23,25 +23,19 @@ trait ResourceProviderMetadata extends StObject {
 }
 object ResourceProviderMetadata {
   
-  @scala.inline
-  def apply(displayName: String, id: String): ResourceProviderMetadata = {
+  inline def apply(displayName: String, id: String): ResourceProviderMetadata = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceProviderMetadata]
   }
   
-  @scala.inline
-  implicit class ResourceProviderMetadataMutableBuilder[Self <: ResourceProviderMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceProviderMetadata](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: js.Object): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Object): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
   }
 }

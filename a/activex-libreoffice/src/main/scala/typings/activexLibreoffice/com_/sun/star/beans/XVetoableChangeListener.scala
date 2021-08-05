@@ -21,8 +21,7 @@ trait XVetoableChangeListener
 }
 object XVetoableChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XVetoableChangeListener {
     __obj.asInstanceOf[XVetoableChangeListener]
   }
   
-  @scala.inline
-  implicit class XVetoableChangeListenerMutableBuilder[Self <: XVetoableChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XVetoableChangeListener](x: Self) {
     
-    @scala.inline
-    def setVetoableChange(value: PropertyChangeEvent => Unit): Self = StObject.set(x, "vetoableChange", js.Any.fromFunction1(value))
+    inline def setVetoableChange(value: PropertyChangeEvent => Unit): Self = StObject.set(x, "vetoableChange", js.Any.fromFunction1(value))
   }
 }

@@ -21,8 +21,7 @@ object ieventdispatcherMod {
   }
   object IEventDispatcher {
     
-    @scala.inline
-    def apply[T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
+    inline def apply[T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
       addEventListener: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit,
       dispatchEvent: CollectionEvent[T, SourceT, IteratorT, ReverseT] => Unit,
       hasEventListener: Type => Boolean,
@@ -32,20 +31,15 @@ object ieventdispatcherMod {
       __obj.asInstanceOf[IEventDispatcher[T, SourceT, IteratorT, ReverseT]]
     }
     
-    @scala.inline
-    implicit class IEventDispatcherMutableBuilder[Self <: IEventDispatcher[?, ?, ?, ?], T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] (val x: Self & (IEventDispatcher[T, SourceT, IteratorT, ReverseT])) extends AnyVal {
+    extension [Self <: IEventDispatcher[?, ?, ?, ?], T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](x: Self & (IEventDispatcher[T, SourceT, IteratorT, ReverseT])) {
       
-      @scala.inline
-      def setAddEventListener(value: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDispatchEvent(value: CollectionEvent[T, SourceT, IteratorT, ReverseT] => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+      inline def setDispatchEvent(value: CollectionEvent[T, SourceT, IteratorT, ReverseT] => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasEventListener(value: Type => Boolean): Self = StObject.set(x, "hasEventListener", js.Any.fromFunction1(value))
+      inline def setHasEventListener(value: Type => Boolean): Self = StObject.set(x, "hasEventListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      inline def setRemoveEventListener(value: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     }
   }
 }

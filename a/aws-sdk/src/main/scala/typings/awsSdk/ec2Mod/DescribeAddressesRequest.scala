@@ -28,46 +28,33 @@ trait DescribeAddressesRequest extends StObject {
 }
 object DescribeAddressesRequest {
   
-  @scala.inline
-  def apply(): DescribeAddressesRequest = {
+  inline def apply(): DescribeAddressesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAddressesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAddressesRequestMutableBuilder[Self <: DescribeAddressesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAddressesRequest](x: Self) {
     
-    @scala.inline
-    def setAllocationIds(value: AllocationIdList): Self = StObject.set(x, "AllocationIds", value.asInstanceOf[js.Any])
+    inline def setAllocationIds(value: AllocationIdList): Self = StObject.set(x, "AllocationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationIdsUndefined: Self = StObject.set(x, "AllocationIds", js.undefined)
+    inline def setAllocationIdsUndefined: Self = StObject.set(x, "AllocationIds", js.undefined)
     
-    @scala.inline
-    def setAllocationIdsVarargs(value: AllocationId*): Self = StObject.set(x, "AllocationIds", js.Array(value :_*))
+    inline def setAllocationIdsVarargs(value: AllocationId*): Self = StObject.set(x, "AllocationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setPublicIps(value: PublicIpStringList): Self = StObject.set(x, "PublicIps", value.asInstanceOf[js.Any])
+    inline def setPublicIps(value: PublicIpStringList): Self = StObject.set(x, "PublicIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpsUndefined: Self = StObject.set(x, "PublicIps", js.undefined)
+    inline def setPublicIpsUndefined: Self = StObject.set(x, "PublicIps", js.undefined)
     
-    @scala.inline
-    def setPublicIpsVarargs(value: String*): Self = StObject.set(x, "PublicIps", js.Array(value :_*))
+    inline def setPublicIpsVarargs(value: String*): Self = StObject.set(x, "PublicIps", js.Array(value :_*))
   }
 }

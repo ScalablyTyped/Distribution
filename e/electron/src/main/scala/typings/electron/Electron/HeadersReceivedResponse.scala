@@ -22,31 +22,23 @@ trait HeadersReceivedResponse extends StObject {
 }
 object HeadersReceivedResponse {
   
-  @scala.inline
-  def apply(): HeadersReceivedResponse = {
+  inline def apply(): HeadersReceivedResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeadersReceivedResponse]
   }
   
-  @scala.inline
-  implicit class HeadersReceivedResponseMutableBuilder[Self <: HeadersReceivedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: HeadersReceivedResponse](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setResponseHeaders(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
+    inline def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLineUndefined: Self = StObject.set(x, "statusLine", js.undefined)
+    inline def setStatusLineUndefined: Self = StObject.set(x, "statusLine", js.undefined)
   }
 }

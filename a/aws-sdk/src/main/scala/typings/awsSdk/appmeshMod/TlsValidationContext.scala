@@ -13,16 +13,13 @@ trait TlsValidationContext extends StObject {
 }
 object TlsValidationContext {
   
-  @scala.inline
-  def apply(trust: TlsValidationContextTrust): TlsValidationContext = {
+  inline def apply(trust: TlsValidationContextTrust): TlsValidationContext = {
     val __obj = js.Dynamic.literal(trust = trust.asInstanceOf[js.Any])
     __obj.asInstanceOf[TlsValidationContext]
   }
   
-  @scala.inline
-  implicit class TlsValidationContextMutableBuilder[Self <: TlsValidationContext] (val x: Self) extends AnyVal {
+  extension [Self <: TlsValidationContext](x: Self) {
     
-    @scala.inline
-    def setTrust(value: TlsValidationContextTrust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
+    inline def setTrust(value: TlsValidationContextTrust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
   }
 }

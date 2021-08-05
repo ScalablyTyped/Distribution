@@ -23,31 +23,23 @@ trait ThingTypeMetadata extends StObject {
 }
 object ThingTypeMetadata {
   
-  @scala.inline
-  def apply(): ThingTypeMetadata = {
+  inline def apply(): ThingTypeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThingTypeMetadata]
   }
   
-  @scala.inline
-  implicit class ThingTypeMetadataMutableBuilder[Self <: ThingTypeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ThingTypeMetadata](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDeprecationDate(value: DeprecationDate): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: DeprecationDate): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationDateUndefined: Self = StObject.set(x, "deprecationDate", js.undefined)
+    inline def setDeprecationDateUndefined: Self = StObject.set(x, "deprecationDate", js.undefined)
   }
 }

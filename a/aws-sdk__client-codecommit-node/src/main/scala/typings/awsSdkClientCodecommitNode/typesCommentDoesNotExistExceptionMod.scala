@@ -22,17 +22,14 @@ object typesCommentDoesNotExistExceptionMod {
   }
   object CommentDoesNotExistException {
     
-    @scala.inline
-    def apply(): CommentDoesNotExistException = {
+    inline def apply(): CommentDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "CommentDoesNotExistException")
       __obj.asInstanceOf[CommentDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class CommentDoesNotExistExceptionMutableBuilder[Self <: CommentDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: CommentDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ToastrType extends StObject
 object ToastrType {
   
-  @scala.inline
-  def error: typings.toastr.toastrStrings.error = "error".asInstanceOf[typings.toastr.toastrStrings.error]
+  inline def error: typings.toastr.toastrStrings.error = "error".asInstanceOf[typings.toastr.toastrStrings.error]
   
-  @scala.inline
-  def info: typings.toastr.toastrStrings.info = "info".asInstanceOf[typings.toastr.toastrStrings.info]
+  inline def info: typings.toastr.toastrStrings.info = "info".asInstanceOf[typings.toastr.toastrStrings.info]
   
-  @scala.inline
-  def success: typings.toastr.toastrStrings.success = "success".asInstanceOf[typings.toastr.toastrStrings.success]
+  inline def success: typings.toastr.toastrStrings.success = "success".asInstanceOf[typings.toastr.toastrStrings.success]
   
-  @scala.inline
-  def warning: typings.toastr.toastrStrings.warning = "warning".asInstanceOf[typings.toastr.toastrStrings.warning]
+  inline def warning: typings.toastr.toastrStrings.warning = "warning".asInstanceOf[typings.toastr.toastrStrings.warning]
 }

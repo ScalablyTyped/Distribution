@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArrayBufferLike extends StObject
 object ArrayBufferLike {
   
-  @scala.inline
-  def byteLength: typings.minappEnv.minappEnvStrings.byteLength = "byteLength".asInstanceOf[typings.minappEnv.minappEnvStrings.byteLength]
+  inline def byteLength: typings.minappEnv.minappEnvStrings.byteLength = "byteLength".asInstanceOf[typings.minappEnv.minappEnvStrings.byteLength]
   
-  @scala.inline
-  def slice: typings.minappEnv.minappEnvStrings.slice = "slice".asInstanceOf[typings.minappEnv.minappEnvStrings.slice]
+  inline def slice: typings.minappEnv.minappEnvStrings.slice = "slice".asInstanceOf[typings.minappEnv.minappEnvStrings.slice]
 }

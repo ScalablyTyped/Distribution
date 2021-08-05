@@ -23,25 +23,19 @@ trait CreateAdditionalAssignmentsForHITRequest extends StObject {
 }
 object CreateAdditionalAssignmentsForHITRequest {
   
-  @scala.inline
-  def apply(HITId: EntityId, NumberOfAdditionalAssignments: Integer): CreateAdditionalAssignmentsForHITRequest = {
+  inline def apply(HITId: EntityId, NumberOfAdditionalAssignments: Integer): CreateAdditionalAssignmentsForHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any], NumberOfAdditionalAssignments = NumberOfAdditionalAssignments.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAdditionalAssignmentsForHITRequest]
   }
   
-  @scala.inline
-  implicit class CreateAdditionalAssignmentsForHITRequestMutableBuilder[Self <: CreateAdditionalAssignmentsForHITRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAdditionalAssignmentsForHITRequest](x: Self) {
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfAdditionalAssignments(value: Integer): Self = StObject.set(x, "NumberOfAdditionalAssignments", value.asInstanceOf[js.Any])
+    inline def setNumberOfAdditionalAssignments(value: Integer): Self = StObject.set(x, "NumberOfAdditionalAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
+    inline def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
+    inline def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
   }
 }

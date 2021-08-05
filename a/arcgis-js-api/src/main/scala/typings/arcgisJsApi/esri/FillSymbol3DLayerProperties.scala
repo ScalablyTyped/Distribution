@@ -45,43 +45,31 @@ trait FillSymbol3DLayerProperties
 }
 object FillSymbol3DLayerProperties {
   
-  @scala.inline
-  def apply(): FillSymbol3DLayerProperties = {
+  inline def apply(): FillSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillSymbol3DLayerProperties]
   }
   
-  @scala.inline
-  implicit class FillSymbol3DLayerPropertiesMutableBuilder[Self <: FillSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FillSymbol3DLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
+    inline def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
+    inline def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
     
-    @scala.inline
-    def setEdges(value: Edges3DProperties): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: Edges3DProperties): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: FillSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: FillSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setOutline(value: FillSymbol3DLayerOutlineProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: FillSymbol3DLayerOutlineProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setPattern(value: StylePattern3DProperties): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: StylePattern3DProperties): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

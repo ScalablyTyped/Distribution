@@ -26,7 +26,7 @@ trait ViewObject extends StObject {
   
   def GetSelectedNodes(): XMLNodesCollection = js.native
   
-  @JSName("InfoPath.ViewObject_typekey")
+  /* private */ @JSName("InfoPath.ViewObject_typekey")
   var InfoPathDotViewObject_typekey: ViewObject = js.native
   
   val Name: String = js.native

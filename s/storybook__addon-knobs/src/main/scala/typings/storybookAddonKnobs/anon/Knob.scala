@@ -15,8 +15,7 @@ trait Knob extends StObject {
 }
 object Knob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     knob: Validator[ArrayTypeKnob],
     onChange: Validator[js.Function1[/* value */ ArrayTypeKnobValue, ArrayTypeKnobValue]]
   ): Knob = {
@@ -24,13 +23,10 @@ object Knob {
     __obj.asInstanceOf[Knob]
   }
   
-  @scala.inline
-  implicit class KnobMutableBuilder[Self <: Knob] (val x: Self) extends AnyVal {
+  extension [Self <: Knob](x: Self) {
     
-    @scala.inline
-    def setKnob(value: Validator[ArrayTypeKnob]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[ArrayTypeKnob]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: Validator[js.Function1[/* value */ ArrayTypeKnobValue, ArrayTypeKnobValue]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Validator[js.Function1[/* value */ ArrayTypeKnobValue, ArrayTypeKnobValue]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
   }
 }

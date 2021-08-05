@@ -10,19 +10,15 @@ trait MarketOptions extends StObject {
 }
 object MarketOptions {
   
-  @scala.inline
-  def apply(): MarketOptions = {
+  inline def apply(): MarketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarketOptions]
   }
   
-  @scala.inline
-  implicit class MarketOptionsMutableBuilder[Self <: MarketOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MarketOptions](x: Self) {
     
-    @scala.inline
-    def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
+    inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
+    inline def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
   }
 }

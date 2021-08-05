@@ -60,17 +60,14 @@ object mod {
   }
   object Task {
     
-    @scala.inline
-    def apply(call: () => Unit): Task = {
+    inline def apply(call: () => Unit): Task = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction0(call))
       __obj.asInstanceOf[Task]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    extension [Self <: Task](x: Self) {
       
-      @scala.inline
-      def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
+      inline def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
     }
   }
 }

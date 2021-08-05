@@ -18,25 +18,19 @@ trait RegisterInstanceEventNotificationAttributesRequest extends StObject {
 }
 object RegisterInstanceEventNotificationAttributesRequest {
   
-  @scala.inline
-  def apply(): RegisterInstanceEventNotificationAttributesRequest = {
+  inline def apply(): RegisterInstanceEventNotificationAttributesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterInstanceEventNotificationAttributesRequest]
   }
   
-  @scala.inline
-  implicit class RegisterInstanceEventNotificationAttributesRequestMutableBuilder[Self <: RegisterInstanceEventNotificationAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterInstanceEventNotificationAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceTagAttribute(value: RegisterInstanceTagAttributeRequest): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
+    inline def setInstanceTagAttribute(value: RegisterInstanceTagAttributeRequest): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTagAttributeUndefined: Self = StObject.set(x, "InstanceTagAttribute", js.undefined)
+    inline def setInstanceTagAttributeUndefined: Self = StObject.set(x, "InstanceTagAttribute", js.undefined)
   }
 }

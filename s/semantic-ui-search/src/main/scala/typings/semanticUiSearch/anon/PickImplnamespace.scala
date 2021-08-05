@@ -11,16 +11,13 @@ trait PickImplnamespace extends StObject {
 }
 object PickImplnamespace {
   
-  @scala.inline
-  def apply(namespace: String): PickImplnamespace = {
+  inline def apply(namespace: String): PickImplnamespace = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnamespace]
   }
   
-  @scala.inline
-  implicit class PickImplnamespaceMutableBuilder[Self <: PickImplnamespace] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnamespace](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
   }
 }

@@ -76,50 +76,36 @@ object Splitter {
   }
   object BeforeExpandCollapseEventArgs {
     
-    @scala.inline
-    def apply(): BeforeExpandCollapseEventArgs = {
+    inline def apply(): BeforeExpandCollapseEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeforeExpandCollapseEventArgs]
     }
     
-    @scala.inline
-    implicit class BeforeExpandCollapseEventArgsMutableBuilder[Self <: BeforeExpandCollapseEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeExpandCollapseEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setSplitbarIndex(value: Double): Self = StObject.set(x, "splitbarIndex", value.asInstanceOf[js.Any])
+      inline def setSplitbarIndex(value: Double): Self = StObject.set(x, "splitbarIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitbarIndexUndefined: Self = StObject.set(x, "splitbarIndex", js.undefined)
+      inline def setSplitbarIndexUndefined: Self = StObject.set(x, "splitbarIndex", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -143,38 +129,28 @@ object Splitter {
   }
   object ClickOnExpanderEventArgs {
     
-    @scala.inline
-    def apply(): ClickOnExpanderEventArgs = {
+    inline def apply(): ClickOnExpanderEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClickOnExpanderEventArgs]
     }
     
-    @scala.inline
-    implicit class ClickOnExpanderEventArgsMutableBuilder[Self <: ClickOnExpanderEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClickOnExpanderEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+      inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
+      inline def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -194,32 +170,24 @@ object Splitter {
   }
   object CreateEventArgs {
     
-    @scala.inline
-    def apply(): CreateEventArgs = {
+    inline def apply(): CreateEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    @scala.inline
-    implicit class CreateEventArgsMutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CreateEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -239,32 +207,24 @@ object Splitter {
   }
   object DestroyEventArgs {
     
-    @scala.inline
-    def apply(): DestroyEventArgs = {
+    inline def apply(): DestroyEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    @scala.inline
-    implicit class DestroyEventArgsMutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DestroyEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -296,50 +256,36 @@ object Splitter {
   }
   object ExpandCollapseEventArgs {
     
-    @scala.inline
-    def apply(): ExpandCollapseEventArgs = {
+    inline def apply(): ExpandCollapseEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpandCollapseEventArgs]
     }
     
-    @scala.inline
-    implicit class ExpandCollapseEventArgsMutableBuilder[Self <: ExpandCollapseEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandCollapseEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setSplitbarIndex(value: Double): Self = StObject.set(x, "splitbarIndex", value.asInstanceOf[js.Any])
+      inline def setSplitbarIndex(value: Double): Self = StObject.set(x, "splitbarIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitbarIndexUndefined: Self = StObject.set(x, "splitbarIndex", js.undefined)
+      inline def setSplitbarIndexUndefined: Self = StObject.set(x, "splitbarIndex", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -431,125 +377,86 @@ object Splitter {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.Splitter.Model = {
+    inline def apply(): typings.ejWebAll.ej.Splitter.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.Splitter.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.Splitter.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.Splitter.Model](x: Self) {
       
-      @scala.inline
-      def setAllowKeyboardNavigation(value: Boolean): Self = StObject.set(x, "allowKeyboardNavigation", value.asInstanceOf[js.Any])
+      inline def setAllowKeyboardNavigation(value: Boolean): Self = StObject.set(x, "allowKeyboardNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowKeyboardNavigationUndefined: Self = StObject.set(x, "allowKeyboardNavigation", js.undefined)
+      inline def setAllowKeyboardNavigationUndefined: Self = StObject.set(x, "allowKeyboardNavigation", js.undefined)
       
-      @scala.inline
-      def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
+      inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
+      inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
       
-      @scala.inline
-      def setBeforeExpandCollapse(value: /* e */ BeforeExpandCollapseEventArgs => Unit): Self = StObject.set(x, "beforeExpandCollapse", js.Any.fromFunction1(value))
+      inline def setBeforeExpandCollapse(value: /* e */ BeforeExpandCollapseEventArgs => Unit): Self = StObject.set(x, "beforeExpandCollapse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeExpandCollapseUndefined: Self = StObject.set(x, "beforeExpandCollapse", js.undefined)
+      inline def setBeforeExpandCollapseUndefined: Self = StObject.set(x, "beforeExpandCollapse", js.undefined)
       
-      @scala.inline
-      def setClickOnExpander(value: /* e */ ClickOnExpanderEventArgs => Unit): Self = StObject.set(x, "clickOnExpander", js.Any.fromFunction1(value))
+      inline def setClickOnExpander(value: /* e */ ClickOnExpanderEventArgs => Unit): Self = StObject.set(x, "clickOnExpander", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickOnExpanderUndefined: Self = StObject.set(x, "clickOnExpander", js.undefined)
+      inline def setClickOnExpanderUndefined: Self = StObject.set(x, "clickOnExpander", js.undefined)
       
-      @scala.inline
-      def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setEnableAnimation(value: Boolean): Self = StObject.set(x, "enableAnimation", value.asInstanceOf[js.Any])
+      inline def setEnableAnimation(value: Boolean): Self = StObject.set(x, "enableAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAnimationUndefined: Self = StObject.set(x, "enableAnimation", js.undefined)
+      inline def setEnableAnimationUndefined: Self = StObject.set(x, "enableAnimation", js.undefined)
       
-      @scala.inline
-      def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
+      inline def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
+      inline def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
       
-      @scala.inline
-      def setExpandCollapse(value: /* e */ ExpandCollapseEventArgs => Unit): Self = StObject.set(x, "expandCollapse", js.Any.fromFunction1(value))
+      inline def setExpandCollapse(value: /* e */ ExpandCollapseEventArgs => Unit): Self = StObject.set(x, "expandCollapse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpandCollapseUndefined: Self = StObject.set(x, "expandCollapse", js.undefined)
+      inline def setExpandCollapseUndefined: Self = StObject.set(x, "expandCollapse", js.undefined)
       
-      @scala.inline
-      def setExpanderTemplate(value: String): Self = StObject.set(x, "expanderTemplate", value.asInstanceOf[js.Any])
+      inline def setExpanderTemplate(value: String): Self = StObject.set(x, "expanderTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanderTemplateUndefined: Self = StObject.set(x, "expanderTemplate", js.undefined)
+      inline def setExpanderTemplateUndefined: Self = StObject.set(x, "expanderTemplate", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
+      inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
-      @scala.inline
-      def setIsResponsive(value: Boolean): Self = StObject.set(x, "isResponsive", value.asInstanceOf[js.Any])
+      inline def setIsResponsive(value: Boolean): Self = StObject.set(x, "isResponsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsResponsiveUndefined: Self = StObject.set(x, "isResponsive", js.undefined)
+      inline def setIsResponsiveUndefined: Self = StObject.set(x, "isResponsive", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: Orientation | String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Orientation | String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Array[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setPropertiesVarargs(value: js.Any*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: js.Any*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setResize(value: /* e */ ResizeEventArgs => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(value: /* e */ ResizeEventArgs => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -581,50 +488,36 @@ object Splitter {
   }
   object ResizeEventArgs {
     
-    @scala.inline
-    def apply(): ResizeEventArgs = {
+    inline def apply(): ResizeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResizeEventArgs]
     }
     
-    @scala.inline
-    implicit class ResizeEventArgsMutableBuilder[Self <: ResizeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setNextPane(value: js.Any): Self = StObject.set(x, "nextPane", value.asInstanceOf[js.Any])
+      inline def setNextPane(value: js.Any): Self = StObject.set(x, "nextPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextPaneUndefined: Self = StObject.set(x, "nextPane", js.undefined)
+      inline def setNextPaneUndefined: Self = StObject.set(x, "nextPane", js.undefined)
       
-      @scala.inline
-      def setPrevPane(value: js.Any): Self = StObject.set(x, "prevPane", value.asInstanceOf[js.Any])
+      inline def setPrevPane(value: js.Any): Self = StObject.set(x, "prevPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevPaneUndefined: Self = StObject.set(x, "prevPane", js.undefined)
+      inline def setPrevPaneUndefined: Self = StObject.set(x, "prevPane", js.undefined)
       
-      @scala.inline
-      def setSplitbarIndex(value: Double): Self = StObject.set(x, "splitbarIndex", value.asInstanceOf[js.Any])
+      inline def setSplitbarIndex(value: Double): Self = StObject.set(x, "splitbarIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitbarIndexUndefined: Self = StObject.set(x, "splitbarIndex", js.undefined)
+      inline def setSplitbarIndexUndefined: Self = StObject.set(x, "splitbarIndex", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

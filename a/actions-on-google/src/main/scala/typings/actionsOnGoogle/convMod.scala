@@ -68,20 +68,16 @@ object convMod {
   }
   object ActionsSdkConversationOptions {
     
-    @scala.inline
-    def apply[TConvData, TUserStorage](): ActionsSdkConversationOptions[TConvData, TUserStorage] = {
+    inline def apply[TConvData, TUserStorage](): ActionsSdkConversationOptions[TConvData, TUserStorage] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActionsSdkConversationOptions[TConvData, TUserStorage]]
     }
     
-    @scala.inline
-    implicit class ActionsSdkConversationOptionsMutableBuilder[Self <: ActionsSdkConversationOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ActionsSdkConversationOptions[TConvData, TUserStorage])) extends AnyVal {
+    extension [Self <: ActionsSdkConversationOptions[?, ?], TConvData, TUserStorage](x: Self & (ActionsSdkConversationOptions[TConvData, TUserStorage])) {
       
-      @scala.inline
-      def setBody(value: GoogleActionsV2AppRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: GoogleActionsV2AppRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     }
   }
 }

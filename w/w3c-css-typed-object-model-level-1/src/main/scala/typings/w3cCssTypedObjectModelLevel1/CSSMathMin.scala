@@ -12,8 +12,7 @@ trait CSSMathMin
 }
 object CSSMathMin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: /* repeated */ CSSNumberish => CSSNumericValue,
     div: /* repeated */ CSSNumberish => CSSNumericValue,
     equals_ : /* repeated */ CSSNumberish => Boolean,
@@ -33,10 +32,8 @@ object CSSMathMin {
     __obj.asInstanceOf[CSSMathMin]
   }
   
-  @scala.inline
-  implicit class CSSMathMinMutableBuilder[Self <: CSSMathMin] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMathMin](x: Self) {
     
-    @scala.inline
-    def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

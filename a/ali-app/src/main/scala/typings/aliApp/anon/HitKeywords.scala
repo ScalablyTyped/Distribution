@@ -24,32 +24,24 @@ trait HitKeywords extends StObject {
 }
 object HitKeywords {
   
-  @scala.inline
-  def apply(`type`: TextRiskIdentificationType): HitKeywords = {
+  inline def apply(`type`: TextRiskIdentificationType): HitKeywords = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitKeywords]
   }
   
-  @scala.inline
-  implicit class HitKeywordsMutableBuilder[Self <: HitKeywords] (val x: Self) extends AnyVal {
+  extension [Self <: HitKeywords](x: Self) {
     
-    @scala.inline
-    def setHitKeywords(value: js.Array[String]): Self = StObject.set(x, "hitKeywords", value.asInstanceOf[js.Any])
+    inline def setHitKeywords(value: js.Array[String]): Self = StObject.set(x, "hitKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitKeywordsUndefined: Self = StObject.set(x, "hitKeywords", js.undefined)
+    inline def setHitKeywordsUndefined: Self = StObject.set(x, "hitKeywords", js.undefined)
     
-    @scala.inline
-    def setHitKeywordsVarargs(value: String*): Self = StObject.set(x, "hitKeywords", js.Array(value :_*))
+    inline def setHitKeywordsVarargs(value: String*): Self = StObject.set(x, "hitKeywords", js.Array(value :_*))
     
-    @scala.inline
-    def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setType(value: TextRiskIdentificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TextRiskIdentificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

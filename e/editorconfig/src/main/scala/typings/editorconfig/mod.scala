@@ -21,28 +21,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(_filepath: String): js.Promise[KnownProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(_filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KnownProps]]
-  @scala.inline
-  def parse(_filepath: String, _options: ParseOptions): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(_filepath.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
+  inline def parse(_filepath: String): js.Promise[KnownProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(_filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KnownProps]]
+  inline def parse(_filepath: String, _options: ParseOptions): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(_filepath.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
   
-  @scala.inline
-  def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]]): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFiles")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
-  @scala.inline
-  def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]], options: ParseOptions): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFiles")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
+  inline def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]]): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFiles")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
+  inline def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]], options: ParseOptions): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFiles")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
   
-  @scala.inline
-  def parseFromFilesSync(filepath: String, files: js.Array[ECFile]): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFilesSync")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
-  @scala.inline
-  def parseFromFilesSync(filepath: String, files: js.Array[ECFile], options: ParseOptions): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFilesSync")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
+  inline def parseFromFilesSync(filepath: String, files: js.Array[ECFile]): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFilesSync")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
+  inline def parseFromFilesSync(filepath: String, files: js.Array[ECFile], options: ParseOptions): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFilesSync")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
   
-  @scala.inline
-  def parseString(data: String): ParseStringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[ParseStringResult]
+  inline def parseString(data: String): ParseStringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[ParseStringResult]
   
-  @scala.inline
-  def parseSync(_filepath: String): KnownProps = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(_filepath.asInstanceOf[js.Any]).asInstanceOf[KnownProps]
-  @scala.inline
-  def parseSync(_filepath: String, _options: ParseOptions): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(_filepath.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
+  inline def parseSync(_filepath: String): KnownProps = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(_filepath.asInstanceOf[js.Any]).asInstanceOf[KnownProps]
+  inline def parseSync(_filepath: String, _options: ParseOptions): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(_filepath.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
   
   trait ECFile extends StObject {
     
@@ -52,20 +43,16 @@ object mod {
   }
   object ECFile {
     
-    @scala.inline
-    def apply(contents: String | Buffer, name: String): ECFile = {
+    inline def apply(contents: String | Buffer, name: String): ECFile = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ECFile]
     }
     
-    @scala.inline
-    implicit class ECFileMutableBuilder[Self <: ECFile] (val x: Self) extends AnyVal {
+    extension [Self <: ECFile](x: Self) {
       
-      @scala.inline
-      def setContents(value: String | Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: String | Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,23 +64,18 @@ object mod {
   }
   object FileConfig {
     
-    @scala.inline
-    def apply(contents: ParseStringResult, name: String): FileConfig = {
+    inline def apply(contents: ParseStringResult, name: String): FileConfig = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileConfig]
     }
     
-    @scala.inline
-    implicit class FileConfigMutableBuilder[Self <: FileConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FileConfig](x: Self) {
       
-      @scala.inline
-      def setContents(value: ParseStringResult): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: ParseStringResult): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsVarargs(value: (js.Tuple2[SectionName, SectionBody])*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: (js.Tuple2[SectionName, SectionBody])*): Self = StObject.set(x, "contents", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,56 +97,40 @@ object mod {
   }
   object KnownProps {
     
-    @scala.inline
-    def apply(): KnownProps = {
+    inline def apply(): KnownProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KnownProps]
     }
     
-    @scala.inline
-    implicit class KnownPropsMutableBuilder[Self <: KnownProps] (val x: Self) extends AnyVal {
+    extension [Self <: KnownProps](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String | unset): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String | unset): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setEnd_of_line(value: lf | crlf | unset): Self = StObject.set(x, "end_of_line", value.asInstanceOf[js.Any])
+      inline def setEnd_of_line(value: lf | crlf | unset): Self = StObject.set(x, "end_of_line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd_of_lineUndefined: Self = StObject.set(x, "end_of_line", js.undefined)
+      inline def setEnd_of_lineUndefined: Self = StObject.set(x, "end_of_line", js.undefined)
       
-      @scala.inline
-      def setIndent_size(value: Double | tab | unset): Self = StObject.set(x, "indent_size", value.asInstanceOf[js.Any])
+      inline def setIndent_size(value: Double | tab | unset): Self = StObject.set(x, "indent_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent_sizeUndefined: Self = StObject.set(x, "indent_size", js.undefined)
+      inline def setIndent_sizeUndefined: Self = StObject.set(x, "indent_size", js.undefined)
       
-      @scala.inline
-      def setIndent_style(value: tab | space | unset): Self = StObject.set(x, "indent_style", value.asInstanceOf[js.Any])
+      inline def setIndent_style(value: tab | space | unset): Self = StObject.set(x, "indent_style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent_styleUndefined: Self = StObject.set(x, "indent_style", js.undefined)
+      inline def setIndent_styleUndefined: Self = StObject.set(x, "indent_style", js.undefined)
       
-      @scala.inline
-      def setInsert_final_newline(value: `true` | `false` | unset): Self = StObject.set(x, "insert_final_newline", value.asInstanceOf[js.Any])
+      inline def setInsert_final_newline(value: `true` | `false` | unset): Self = StObject.set(x, "insert_final_newline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsert_final_newlineUndefined: Self = StObject.set(x, "insert_final_newline", js.undefined)
+      inline def setInsert_final_newlineUndefined: Self = StObject.set(x, "insert_final_newline", js.undefined)
       
-      @scala.inline
-      def setTab_width(value: Double | unset): Self = StObject.set(x, "tab_width", value.asInstanceOf[js.Any])
+      inline def setTab_width(value: Double | unset): Self = StObject.set(x, "tab_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTab_widthUndefined: Self = StObject.set(x, "tab_width", js.undefined)
+      inline def setTab_widthUndefined: Self = StObject.set(x, "tab_width", js.undefined)
       
-      @scala.inline
-      def setTrim_trailing_whitespace(value: `true` | `false` | unset): Self = StObject.set(x, "trim_trailing_whitespace", value.asInstanceOf[js.Any])
+      inline def setTrim_trailing_whitespace(value: `true` | `false` | unset): Self = StObject.set(x, "trim_trailing_whitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrim_trailing_whitespaceUndefined: Self = StObject.set(x, "trim_trailing_whitespace", js.undefined)
+      inline def setTrim_trailing_whitespaceUndefined: Self = StObject.set(x, "trim_trailing_whitespace", js.undefined)
     }
   }
   
@@ -178,32 +144,24 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

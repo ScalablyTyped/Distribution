@@ -21,25 +21,19 @@ trait KeywordResult extends StObject {
 }
 object KeywordResult {
   
-  @scala.inline
-  def apply(confidence: Double, end_time: Double, normalized_text: String, start_time: Double): KeywordResult = {
+  inline def apply(confidence: Double, end_time: Double, normalized_text: String, start_time: Double): KeywordResult = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], end_time = end_time.asInstanceOf[js.Any], normalized_text = normalized_text.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeywordResult]
   }
   
-  @scala.inline
-  implicit class KeywordResultMutableBuilder[Self <: KeywordResult] (val x: Self) extends AnyVal {
+  extension [Self <: KeywordResult](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_time(value: Double): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
+    inline def setEnd_time(value: Double): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalized_text(value: String): Self = StObject.set(x, "normalized_text", value.asInstanceOf[js.Any])
+    inline def setNormalized_text(value: String): Self = StObject.set(x, "normalized_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
   }
 }

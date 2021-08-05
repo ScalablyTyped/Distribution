@@ -92,103 +92,71 @@ trait CreateOptions extends StObject {
 }
 object CreateOptions {
   
-  @scala.inline
-  def apply(): CreateOptions = {
+  inline def apply(): CreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateOptions]
   }
   
-  @scala.inline
-  implicit class CreateOptionsMutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+    inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+    inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     
-    @scala.inline
-    def setIgnoreDecorators(value: Boolean): Self = StObject.set(x, "ignoreDecorators", value.asInstanceOf[js.Any])
+    inline def setIgnoreDecorators(value: Boolean): Self = StObject.set(x, "ignoreDecorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreDecoratorsUndefined: Self = StObject.set(x, "ignoreDecorators", js.undefined)
+    inline def setIgnoreDecoratorsUndefined: Self = StObject.set(x, "ignoreDecorators", js.undefined)
     
-    @scala.inline
-    def setInvalidCharReplacement(value: String): Self = StObject.set(x, "invalidCharReplacement", value.asInstanceOf[js.Any])
+    inline def setInvalidCharReplacement(value: String): Self = StObject.set(x, "invalidCharReplacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidCharReplacementUndefined: Self = StObject.set(x, "invalidCharReplacement", js.undefined)
+    inline def setInvalidCharReplacementUndefined: Self = StObject.set(x, "invalidCharReplacement", js.undefined)
     
-    @scala.inline
-    def setKeepNullAttributes(value: Boolean): Self = StObject.set(x, "keepNullAttributes", value.asInstanceOf[js.Any])
+    inline def setKeepNullAttributes(value: Boolean): Self = StObject.set(x, "keepNullAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepNullAttributesUndefined: Self = StObject.set(x, "keepNullAttributes", js.undefined)
+    inline def setKeepNullAttributesUndefined: Self = StObject.set(x, "keepNullAttributes", js.undefined)
     
-    @scala.inline
-    def setKeepNullNodes(value: Boolean): Self = StObject.set(x, "keepNullNodes", value.asInstanceOf[js.Any])
+    inline def setKeepNullNodes(value: Boolean): Self = StObject.set(x, "keepNullNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepNullNodesUndefined: Self = StObject.set(x, "keepNullNodes", js.undefined)
+    inline def setKeepNullNodesUndefined: Self = StObject.set(x, "keepNullNodes", js.undefined)
     
-    @scala.inline
-    def setNoDoubleEncoding(value: Boolean): Self = StObject.set(x, "noDoubleEncoding", value.asInstanceOf[js.Any])
+    inline def setNoDoubleEncoding(value: Boolean): Self = StObject.set(x, "noDoubleEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDoubleEncodingUndefined: Self = StObject.set(x, "noDoubleEncoding", js.undefined)
+    inline def setNoDoubleEncodingUndefined: Self = StObject.set(x, "noDoubleEncoding", js.undefined)
     
-    @scala.inline
-    def setNoValidation(value: Boolean): Self = StObject.set(x, "noValidation", value.asInstanceOf[js.Any])
+    inline def setNoValidation(value: Boolean): Self = StObject.set(x, "noValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoValidationUndefined: Self = StObject.set(x, "noValidation", js.undefined)
+    inline def setNoValidationUndefined: Self = StObject.set(x, "noValidation", js.undefined)
     
-    @scala.inline
-    def setPubID(value: String): Self = StObject.set(x, "pubID", value.asInstanceOf[js.Any])
+    inline def setPubID(value: String): Self = StObject.set(x, "pubID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubIDUndefined: Self = StObject.set(x, "pubID", js.undefined)
+    inline def setPubIDUndefined: Self = StObject.set(x, "pubID", js.undefined)
     
-    @scala.inline
-    def setSeparateArrayItems(value: Boolean): Self = StObject.set(x, "separateArrayItems", value.asInstanceOf[js.Any])
+    inline def setSeparateArrayItems(value: Boolean): Self = StObject.set(x, "separateArrayItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparateArrayItemsUndefined: Self = StObject.set(x, "separateArrayItems", js.undefined)
+    inline def setSeparateArrayItemsUndefined: Self = StObject.set(x, "separateArrayItems", js.undefined)
     
-    @scala.inline
-    def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     
-    @scala.inline
-    def setStringify(value: XMLStringifier): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+    inline def setStringify(value: XMLStringifier): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+    inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     
-    @scala.inline
-    def setSysID(value: String): Self = StObject.set(x, "sysID", value.asInstanceOf[js.Any])
+    inline def setSysID(value: String): Self = StObject.set(x, "sysID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSysIDUndefined: Self = StObject.set(x, "sysID", js.undefined)
+    inline def setSysIDUndefined: Self = StObject.set(x, "sysID", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setWriter(value: XMLWriter): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+    inline def setWriter(value: XMLWriter): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
+    inline def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
   }
 }

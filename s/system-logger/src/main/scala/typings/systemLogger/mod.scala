@@ -125,38 +125,28 @@ object mod {
   }
   object FileConfiguration {
     
-    @scala.inline
-    def apply(): FileConfiguration = {
+    inline def apply(): FileConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileConfiguration]
     }
     
-    @scala.inline
-    implicit class FileConfigurationMutableBuilder[Self <: FileConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: FileConfiguration](x: Self) {
       
-      @scala.inline
-      def setFileRotateMaxSize(value: Double): Self = StObject.set(x, "fileRotateMaxSize", value.asInstanceOf[js.Any])
+      inline def setFileRotateMaxSize(value: Double): Self = StObject.set(x, "fileRotateMaxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileRotateMaxSizeUndefined: Self = StObject.set(x, "fileRotateMaxSize", js.undefined)
+      inline def setFileRotateMaxSizeUndefined: Self = StObject.set(x, "fileRotateMaxSize", js.undefined)
       
-      @scala.inline
-      def setFileRotateType(value: fileRotateType): Self = StObject.set(x, "fileRotateType", value.asInstanceOf[js.Any])
+      inline def setFileRotateType(value: fileRotateType): Self = StObject.set(x, "fileRotateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileRotateTypeUndefined: Self = StObject.set(x, "fileRotateType", js.undefined)
+      inline def setFileRotateTypeUndefined: Self = StObject.set(x, "fileRotateType", js.undefined)
       
-      @scala.inline
-      def setIsFileRotate(value: Boolean): Self = StObject.set(x, "isFileRotate", value.asInstanceOf[js.Any])
+      inline def setIsFileRotate(value: Boolean): Self = StObject.set(x, "isFileRotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFileRotateUndefined: Self = StObject.set(x, "isFileRotate", js.undefined)
+      inline def setIsFileRotateUndefined: Self = StObject.set(x, "isFileRotate", js.undefined)
       
-      @scala.inline
-      def setSaveToFileName(value: String): Self = StObject.set(x, "saveToFileName", value.asInstanceOf[js.Any])
+      inline def setSaveToFileName(value: String): Self = StObject.set(x, "saveToFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveToFileNameUndefined: Self = StObject.set(x, "saveToFileName", js.undefined)
+      inline def setSaveToFileNameUndefined: Self = StObject.set(x, "saveToFileName", js.undefined)
     }
   }
   
@@ -170,29 +160,22 @@ object mod {
   }
   object LoggerConfiguration {
     
-    @scala.inline
-    def apply(level: level): LoggerConfiguration = {
+    inline def apply(level: level): LoggerConfiguration = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoggerConfiguration]
     }
     
-    @scala.inline
-    implicit class LoggerConfigurationMutableBuilder[Self <: LoggerConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerConfiguration](x: Self) {
       
-      @scala.inline
-      def setExternalDisplayFormat(value: js.Any): Self = StObject.set(x, "externalDisplayFormat", value.asInstanceOf[js.Any])
+      inline def setExternalDisplayFormat(value: js.Any): Self = StObject.set(x, "externalDisplayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalDisplayFormatUndefined: Self = StObject.set(x, "externalDisplayFormat", js.undefined)
+      inline def setExternalDisplayFormatUndefined: Self = StObject.set(x, "externalDisplayFormat", js.undefined)
       
-      @scala.inline
-      def setLevel(value: level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -206,26 +189,20 @@ object mod {
   }
   object SourcesConfiguration {
     
-    @scala.inline
-    def apply(callback: js.Any, connector: js.Any, levels: js.Array[level]): SourcesConfiguration = {
+    inline def apply(callback: js.Any, connector: js.Any, levels: js.Array[level]): SourcesConfiguration = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourcesConfiguration]
     }
     
-    @scala.inline
-    implicit class SourcesConfigurationMutableBuilder[Self <: SourcesConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: SourcesConfiguration](x: Self) {
       
-      @scala.inline
-      def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnector(value: js.Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      inline def setConnector(value: js.Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevels(value: js.Array[level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: js.Array[level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelsVarargs(value: level*): Self = StObject.set(x, "levels", js.Array(value :_*))
+      inline def setLevelsVarargs(value: level*): Self = StObject.set(x, "levels", js.Array(value :_*))
     }
   }
 }

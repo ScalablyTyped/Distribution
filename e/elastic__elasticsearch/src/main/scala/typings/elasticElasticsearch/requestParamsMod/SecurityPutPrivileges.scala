@@ -15,22 +15,17 @@ trait SecurityPutPrivileges[T]
 }
 object SecurityPutPrivileges {
   
-  @scala.inline
-  def apply[T](body: T): SecurityPutPrivileges[T] = {
+  inline def apply[T](body: T): SecurityPutPrivileges[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityPutPrivileges[T]]
   }
   
-  @scala.inline
-  implicit class SecurityPutPrivilegesMutableBuilder[Self <: SecurityPutPrivileges[?], T] (val x: Self & SecurityPutPrivileges[T]) extends AnyVal {
+  extension [Self <: SecurityPutPrivileges[?], T](x: Self & SecurityPutPrivileges[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

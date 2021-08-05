@@ -8,6 +8,5 @@ object snapsvgStrings {
   
   @js.native
   sealed trait viewBox extends StObject
-  @scala.inline
-  def viewBox: viewBox = "viewBox".asInstanceOf[viewBox]
+  inline def viewBox: viewBox = "viewBox".asInstanceOf[viewBox]
 }

@@ -13,8 +13,7 @@ object compatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerStorage(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerStorage")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerStorage(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerStorage")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Define extension behavior for `registerStorage`
@@ -27,20 +26,16 @@ object compatMod {
     }
     object FirebaseApp {
       
-      @scala.inline
-      def apply(): FirebaseApp = {
+      inline def apply(): FirebaseApp = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FirebaseApp]
       }
       
-      @scala.inline
-      implicit class FirebaseAppMutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
+      extension [Self <: FirebaseApp](x: Self) {
         
-        @scala.inline
-        def setStorage(value: /* storageBucket */ js.UndefOr[String] => FirebaseStorage): Self = StObject.set(x, "storage", js.Any.fromFunction1(value))
+        inline def setStorage(value: /* storageBucket */ js.UndefOr[String] => FirebaseStorage): Self = StObject.set(x, "storage", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+        inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       }
     }
     
@@ -50,20 +45,16 @@ object compatMod {
     }
     object FirebaseNamespace {
       
-      @scala.inline
-      def apply(): typings.firebaseStorage.compatMod.firebaseAppTypesAugmentingMod.FirebaseNamespace = {
+      inline def apply(): typings.firebaseStorage.compatMod.firebaseAppTypesAugmentingMod.FirebaseNamespace = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.firebaseStorage.compatMod.firebaseAppTypesAugmentingMod.FirebaseNamespace]
       }
       
-      @scala.inline
-      implicit class FirebaseNamespaceMutableBuilder[Self <: typings.firebaseStorage.compatMod.firebaseAppTypesAugmentingMod.FirebaseNamespace] (val x: Self) extends AnyVal {
+      extension [Self <: typings.firebaseStorage.compatMod.firebaseAppTypesAugmentingMod.FirebaseNamespace](x: Self) {
         
-        @scala.inline
-        def setStorage(value: Call): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+        inline def setStorage(value: Call): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+        inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       }
     }
   }

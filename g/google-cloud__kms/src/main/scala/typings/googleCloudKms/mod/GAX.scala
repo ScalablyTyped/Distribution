@@ -24,8 +24,7 @@ object GAX {
   }
   object BackoffSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initialRetryDelayMillis: Double,
       initialRpcTimeoutMillis: Double,
       maxRetryDelayMillis: Double,
@@ -37,26 +36,19 @@ object GAX {
       __obj.asInstanceOf[BackoffSettings]
     }
     
-    @scala.inline
-    implicit class BackoffSettingsMutableBuilder[Self <: BackoffSettings] (val x: Self) extends AnyVal {
+    extension [Self <: BackoffSettings](x: Self) {
       
-      @scala.inline
-      def setInitialRetryDelayMillis(value: Double): Self = StObject.set(x, "initialRetryDelayMillis", value.asInstanceOf[js.Any])
+      inline def setInitialRetryDelayMillis(value: Double): Self = StObject.set(x, "initialRetryDelayMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRpcTimeoutMillis(value: Double): Self = StObject.set(x, "initialRpcTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setInitialRpcTimeoutMillis(value: Double): Self = StObject.set(x, "initialRpcTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetryDelayMillis(value: Double): Self = StObject.set(x, "maxRetryDelayMillis", value.asInstanceOf[js.Any])
+      inline def setMaxRetryDelayMillis(value: Double): Self = StObject.set(x, "maxRetryDelayMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRpcTimeoutMillis(value: Double): Self = StObject.set(x, "maxRpcTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setMaxRpcTimeoutMillis(value: Double): Self = StObject.set(x, "maxRpcTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayMultiplier(value: Double): Self = StObject.set(x, "retryDelayMultiplier", value.asInstanceOf[js.Any])
+      inline def setRetryDelayMultiplier(value: Double): Self = StObject.set(x, "retryDelayMultiplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalTimeoutMillis(value: Double): Self = StObject.set(x, "totalTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setTotalTimeoutMillis(value: Double): Self = StObject.set(x, "totalTimeoutMillis", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,56 +71,40 @@ object GAX {
   }
   object CallOptions {
     
-    @scala.inline
-    def apply(): CallOptions = {
+    inline def apply(): CallOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallOptions]
     }
     
-    @scala.inline
-    implicit class CallOptionsMutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CallOptions](x: Self) {
       
-      @scala.inline
-      def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
+      inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
+      inline def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
       
-      @scala.inline
-      def setIsBundling(value: Boolean): Self = StObject.set(x, "isBundling", value.asInstanceOf[js.Any])
+      inline def setIsBundling(value: Boolean): Self = StObject.set(x, "isBundling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBundlingUndefined: Self = StObject.set(x, "isBundling", js.undefined)
+      inline def setIsBundlingUndefined: Self = StObject.set(x, "isBundling", js.undefined)
       
-      @scala.inline
-      def setLongrunning(value: BackoffSettings): Self = StObject.set(x, "longrunning", value.asInstanceOf[js.Any])
+      inline def setLongrunning(value: BackoffSettings): Self = StObject.set(x, "longrunning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongrunningUndefined: Self = StObject.set(x, "longrunning", js.undefined)
+      inline def setLongrunningUndefined: Self = StObject.set(x, "longrunning", js.undefined)
       
-      @scala.inline
-      def setPageToken(value: js.Object): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+      inline def setPageToken(value: js.Object): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+      inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      @scala.inline
-      def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -141,23 +117,18 @@ object GAX {
   }
   object RetryOptions {
     
-    @scala.inline
-    def apply(backoffSettings: BackoffSettings, retryCodes: js.Array[String]): RetryOptions = {
+    inline def apply(backoffSettings: BackoffSettings, retryCodes: js.Array[String]): RetryOptions = {
       val __obj = js.Dynamic.literal(backoffSettings = backoffSettings.asInstanceOf[js.Any], retryCodes = retryCodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetryOptions]
     }
     
-    @scala.inline
-    implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RetryOptions](x: Self) {
       
-      @scala.inline
-      def setBackoffSettings(value: BackoffSettings): Self = StObject.set(x, "backoffSettings", value.asInstanceOf[js.Any])
+      inline def setBackoffSettings(value: BackoffSettings): Self = StObject.set(x, "backoffSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryCodes(value: js.Array[String]): Self = StObject.set(x, "retryCodes", value.asInstanceOf[js.Any])
+      inline def setRetryCodes(value: js.Array[String]): Self = StObject.set(x, "retryCodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryCodesVarargs(value: String*): Self = StObject.set(x, "retryCodes", js.Array(value :_*))
+      inline def setRetryCodesVarargs(value: String*): Self = StObject.set(x, "retryCodes", js.Array(value :_*))
     }
   }
 }

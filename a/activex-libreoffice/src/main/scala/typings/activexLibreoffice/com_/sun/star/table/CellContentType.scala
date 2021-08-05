@@ -19,18 +19,14 @@ trait CellContentType extends StObject
 object CellContentType {
   
   /** cell is empty. */
-  @scala.inline
-  def EMPTY: `0` = 0.asInstanceOf[`0`]
+  inline def EMPTY: `0` = 0.asInstanceOf[`0`]
   
   /** cell contains a formula. */
-  @scala.inline
-  def FORMULA: `3` = 3.asInstanceOf[`3`]
+  inline def FORMULA: `3` = 3.asInstanceOf[`3`]
   
   /** cell contains text. */
-  @scala.inline
-  def TEXT: `2` = 2.asInstanceOf[`2`]
+  inline def TEXT: `2` = 2.asInstanceOf[`2`]
   
   /** cell contains a constant value. */
-  @scala.inline
-  def VALUE: `1` = 1.asInstanceOf[`1`]
+  inline def VALUE: `1` = 1.asInstanceOf[`1`]
 }

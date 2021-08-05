@@ -14,25 +14,19 @@ trait ImgOptions extends StObject {
 }
 object ImgOptions {
   
-  @scala.inline
-  def apply(): ImgOptions = {
+  inline def apply(): ImgOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImgOptions]
   }
   
-  @scala.inline
-  implicit class ImgOptionsMutableBuilder[Self <: ImgOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImgOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

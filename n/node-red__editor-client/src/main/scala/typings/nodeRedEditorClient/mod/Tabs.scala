@@ -11,16 +11,13 @@ trait Tabs extends StObject {
 }
 object Tabs {
   
-  @scala.inline
-  def apply(create: AddButton => TabsInstance): Tabs = {
+  inline def apply(create: AddButton => TabsInstance): Tabs = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[Tabs]
   }
   
-  @scala.inline
-  implicit class TabsMutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
+  extension [Self <: Tabs](x: Self) {
     
-    @scala.inline
-    def setCreate(value: AddButton => TabsInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: AddButton => TabsInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

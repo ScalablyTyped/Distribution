@@ -24,17 +24,14 @@ object mod extends Shortcut {
     }
     object HtmlAssertion {
       
-      @scala.inline
-      def apply(html: HtmlAssertion, ignoringComments: Assertion): HtmlAssertion = {
+      inline def apply(html: HtmlAssertion, ignoringComments: Assertion): HtmlAssertion = {
         val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], ignoringComments = ignoringComments.asInstanceOf[js.Any])
         __obj.asInstanceOf[HtmlAssertion]
       }
       
-      @scala.inline
-      implicit class HtmlAssertionMutableBuilder[Self <: HtmlAssertion] (val x: Self) extends AnyVal {
+      extension [Self <: HtmlAssertion](x: Self) {
         
-        @scala.inline
-        def setIgnoringComments(value: Assertion): Self = StObject.set(x, "ignoringComments", value.asInstanceOf[js.Any])
+        inline def setIgnoringComments(value: Assertion): Self = StObject.set(x, "ignoringComments", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -54,17 +51,14 @@ object mod extends Shortcut {
       }
       object Assertion {
         
-        @scala.inline
-        def apply(html: HtmlAssertion): Assertion = {
+        inline def apply(html: HtmlAssertion): Assertion = {
           val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
           __obj.asInstanceOf[Assertion]
         }
         
-        @scala.inline
-        implicit class AssertionMutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
+        extension [Self <: Assertion](x: Self) {
           
-          @scala.inline
-          def setHtml(value: HtmlAssertion): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+          inline def setHtml(value: HtmlAssertion): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         }
       }
     }

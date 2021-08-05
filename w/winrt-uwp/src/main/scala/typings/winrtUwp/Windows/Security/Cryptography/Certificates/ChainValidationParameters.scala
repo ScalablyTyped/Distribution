@@ -16,19 +16,15 @@ trait ChainValidationParameters extends StObject {
 }
 object ChainValidationParameters {
   
-  @scala.inline
-  def apply(certificateChainPolicy: CertificateChainPolicy, serverDnsName: HostName): ChainValidationParameters = {
+  inline def apply(certificateChainPolicy: CertificateChainPolicy, serverDnsName: HostName): ChainValidationParameters = {
     val __obj = js.Dynamic.literal(certificateChainPolicy = certificateChainPolicy.asInstanceOf[js.Any], serverDnsName = serverDnsName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChainValidationParameters]
   }
   
-  @scala.inline
-  implicit class ChainValidationParametersMutableBuilder[Self <: ChainValidationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ChainValidationParameters](x: Self) {
     
-    @scala.inline
-    def setCertificateChainPolicy(value: CertificateChainPolicy): Self = StObject.set(x, "certificateChainPolicy", value.asInstanceOf[js.Any])
+    inline def setCertificateChainPolicy(value: CertificateChainPolicy): Self = StObject.set(x, "certificateChainPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerDnsName(value: HostName): Self = StObject.set(x, "serverDnsName", value.asInstanceOf[js.Any])
+    inline def setServerDnsName(value: HostName): Self = StObject.set(x, "serverDnsName", value.asInstanceOf[js.Any])
   }
 }

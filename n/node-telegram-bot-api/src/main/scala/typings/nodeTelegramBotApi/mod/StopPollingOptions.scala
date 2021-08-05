@@ -12,25 +12,19 @@ trait StopPollingOptions extends StObject {
 }
 object StopPollingOptions {
   
-  @scala.inline
-  def apply(): StopPollingOptions = {
+  inline def apply(): StopPollingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopPollingOptions]
   }
   
-  @scala.inline
-  implicit class StopPollingOptionsMutableBuilder[Self <: StopPollingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StopPollingOptions](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

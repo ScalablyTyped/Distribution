@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(element: GlobalEventHandlers, callback: js.Function1[/* event */ WheelEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(element: GlobalEventHandlers, callback: js.Function1[/* event */ WheelEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     element: GlobalEventHandlers,
     callback: js.Function1[/* event */ WheelEvent, Unit],
     useCapture: Boolean
@@ -24,10 +22,8 @@ object mod {
   /**
     * Adds a callback to receive mouse wheel events from the given element.
     */
-  @scala.inline
-  def addWheelListener(element: GlobalEventHandlers, callback: js.Function1[/* event */ WheelEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addWheelListener")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addWheelListener(
+  inline def addWheelListener(element: GlobalEventHandlers, callback: js.Function1[/* event */ WheelEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addWheelListener")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addWheelListener(
     element: GlobalEventHandlers,
     callback: js.Function1[/* event */ WheelEvent, Unit],
     useCapture: Boolean
@@ -36,10 +32,8 @@ object mod {
   /**
     *  Removes a previously added wheel listener callback.
     */
-  @scala.inline
-  def removeWheelListener(element: GlobalEventHandlers, callback: js.Function1[/* event */ WheelEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeWheelListener")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeWheelListener(
+  inline def removeWheelListener(element: GlobalEventHandlers, callback: js.Function1[/* event */ WheelEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeWheelListener")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeWheelListener(
     element: GlobalEventHandlers,
     callback: js.Function1[/* event */ WheelEvent, Unit],
     useCapture: Boolean

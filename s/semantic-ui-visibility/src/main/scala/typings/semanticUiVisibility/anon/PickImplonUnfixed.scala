@@ -14,16 +14,13 @@ trait PickImplonUnfixed extends StObject {
 }
 object PickImplonUnfixed {
   
-  @scala.inline
-  def apply(onUnfixed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonUnfixed = {
+  inline def apply(onUnfixed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonUnfixed = {
     val __obj = js.Dynamic.literal(onUnfixed = onUnfixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUnfixed]
   }
   
-  @scala.inline
-  implicit class PickImplonUnfixedMutableBuilder[Self <: PickImplonUnfixed] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonUnfixed](x: Self) {
     
-    @scala.inline
-    def setOnUnfixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onUnfixed", value.asInstanceOf[js.Any])
+    inline def setOnUnfixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onUnfixed", value.asInstanceOf[js.Any])
   }
 }

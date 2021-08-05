@@ -65,71 +65,50 @@ object mod {
   }
   object DatePickerAndroidProps {
     
-    @scala.inline
-    def apply(onDateChange: Date => Unit): DatePickerAndroidProps = {
+    inline def apply(onDateChange: Date => Unit): DatePickerAndroidProps = {
       val __obj = js.Dynamic.literal(onDateChange = js.Any.fromFunction1(onDateChange))
       __obj.asInstanceOf[DatePickerAndroidProps]
     }
     
-    @scala.inline
-    implicit class DatePickerAndroidPropsMutableBuilder[Self <: DatePickerAndroidProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerAndroidProps](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setItemSpace(value: Double): Self = StObject.set(x, "itemSpace", value.asInstanceOf[js.Any])
+      inline def setItemSpace(value: Double): Self = StObject.set(x, "itemSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemSpaceUndefined: Self = StObject.set(x, "itemSpace", js.undefined)
+      inline def setItemSpaceUndefined: Self = StObject.set(x, "itemSpace", js.undefined)
       
-      @scala.inline
-      def setLabelUnit(value: typings.reactNativeWheelPick.anon.Date): Self = StObject.set(x, "labelUnit", value.asInstanceOf[js.Any])
+      inline def setLabelUnit(value: typings.reactNativeWheelPick.anon.Date): Self = StObject.set(x, "labelUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUnitUndefined: Self = StObject.set(x, "labelUnit", js.undefined)
+      inline def setLabelUnitUndefined: Self = StObject.set(x, "labelUnit", js.undefined)
       
-      @scala.inline
-      def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+      inline def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
+      inline def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
       
-      @scala.inline
-      def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+      inline def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
+      inline def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
       
-      @scala.inline
-      def setMode(value: date | time | datetime): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: date | time | datetime): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnDateChange(value: Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
+      inline def setOnDateChange(value: Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+      inline def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+      inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
     }
   }
   
@@ -149,41 +128,30 @@ object mod {
   }
   object DatePickerIOSProps {
     
-    @scala.inline
-    def apply(onDateChange: Date => Unit): DatePickerIOSProps = {
+    inline def apply(onDateChange: Date => Unit): DatePickerIOSProps = {
       val __obj = js.Dynamic.literal(onDateChange = js.Any.fromFunction1(onDateChange))
       __obj.asInstanceOf[DatePickerIOSProps]
     }
     
-    @scala.inline
-    implicit class DatePickerIOSPropsMutableBuilder[Self <: DatePickerIOSProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerIOSProps](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+      inline def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
+      inline def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
       
-      @scala.inline
-      def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+      inline def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
+      inline def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
       
-      @scala.inline
-      def setMode(value: date | time | datetime): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: date | time | datetime): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnDateChange(value: Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
+      inline def setOnDateChange(value: Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
     }
   }
   
@@ -206,8 +174,7 @@ object mod {
        with DatePickerAndroidProps
   object DatePickerProps {
     
-    @scala.inline
-    def apply(onDateChange: Date => Unit): DatePickerProps = {
+    inline def apply(onDateChange: Date => Unit): DatePickerProps = {
       val __obj = js.Dynamic.literal(onDateChange = js.Any.fromFunction1(onDateChange))
       __obj.asInstanceOf[DatePickerProps]
     }
@@ -233,56 +200,40 @@ object mod {
   }
   object PickerProps {
     
-    @scala.inline
-    def apply[T](onValueChange: T => Unit, pickerData: js.Array[T]): PickerProps[T] = {
+    inline def apply[T](onValueChange: T => Unit, pickerData: js.Array[T]): PickerProps[T] = {
       val __obj = js.Dynamic.literal(onValueChange = js.Any.fromFunction1(onValueChange), pickerData = pickerData.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerProps[T]]
     }
     
-    @scala.inline
-    implicit class PickerPropsMutableBuilder[Self <: PickerProps[?], T] (val x: Self & PickerProps[T]) extends AnyVal {
+    extension [Self <: PickerProps[?], T](x: Self & PickerProps[T]) {
       
-      @scala.inline
-      def setItemSpace(value: Double): Self = StObject.set(x, "itemSpace", value.asInstanceOf[js.Any])
+      inline def setItemSpace(value: Double): Self = StObject.set(x, "itemSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemSpaceUndefined: Self = StObject.set(x, "itemSpace", js.undefined)
+      inline def setItemSpaceUndefined: Self = StObject.set(x, "itemSpace", js.undefined)
       
-      @scala.inline
-      def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
+      inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
       
-      @scala.inline
-      def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      @scala.inline
-      def setOnValueChange(value: T => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+      inline def setOnValueChange(value: T => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPickerData(value: js.Array[T]): Self = StObject.set(x, "pickerData", value.asInstanceOf[js.Any])
+      inline def setPickerData(value: js.Array[T]): Self = StObject.set(x, "pickerData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerDataVarargs(value: T*): Self = StObject.set(x, "pickerData", js.Array(value :_*))
+      inline def setPickerDataVarargs(value: T*): Self = StObject.set(x, "pickerData", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedValue(value: T): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      inline def setSelectedValue(value: T): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
+      inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
       
-      @scala.inline
-      def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+      inline def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+      inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
     }
   }
 }

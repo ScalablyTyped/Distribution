@@ -15,19 +15,15 @@ trait CircleStyle
 }
 object CircleStyle {
   
-  @scala.inline
-  def apply(): CircleStyle = {
+  inline def apply(): CircleStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CircleStyle]
   }
   
-  @scala.inline
-  implicit class CircleStyleMutableBuilder[Self <: CircleStyle] (val x: Self) extends AnyVal {
+  extension [Self <: CircleStyle](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

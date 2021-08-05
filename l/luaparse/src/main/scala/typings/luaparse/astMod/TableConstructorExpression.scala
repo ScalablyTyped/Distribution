@@ -13,20 +13,16 @@ trait TableConstructorExpression
 }
 object TableConstructorExpression {
   
-  @scala.inline
-  def apply(fields: js.Array[TableKey | TableKeyString | TableValue]): TableConstructorExpression = {
+  inline def apply(fields: js.Array[TableKey | TableKeyString | TableValue]): TableConstructorExpression = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableConstructorExpression")
     __obj.asInstanceOf[TableConstructorExpression]
   }
   
-  @scala.inline
-  implicit class TableConstructorExpressionMutableBuilder[Self <: TableConstructorExpression] (val x: Self) extends AnyVal {
+  extension [Self <: TableConstructorExpression](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[TableKey | TableKeyString | TableValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[TableKey | TableKeyString | TableValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: (TableKey | TableKeyString | TableValue)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (TableKey | TableKeyString | TableValue)*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

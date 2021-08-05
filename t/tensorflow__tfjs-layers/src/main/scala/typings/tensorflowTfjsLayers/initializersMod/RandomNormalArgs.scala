@@ -17,31 +17,23 @@ trait RandomNormalArgs extends StObject {
 }
 object RandomNormalArgs {
   
-  @scala.inline
-  def apply(): RandomNormalArgs = {
+  inline def apply(): RandomNormalArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RandomNormalArgs]
   }
   
-  @scala.inline
-  implicit class RandomNormalArgsMutableBuilder[Self <: RandomNormalArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RandomNormalArgs](x: Self) {
     
-    @scala.inline
-    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+    inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    @scala.inline
-    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+    inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
+    inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
   }
 }

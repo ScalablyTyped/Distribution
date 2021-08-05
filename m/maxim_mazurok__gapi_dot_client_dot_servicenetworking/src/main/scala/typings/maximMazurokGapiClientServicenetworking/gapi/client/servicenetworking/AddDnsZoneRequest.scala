@@ -23,31 +23,23 @@ trait AddDnsZoneRequest extends StObject {
 }
 object AddDnsZoneRequest {
   
-  @scala.inline
-  def apply(): AddDnsZoneRequest = {
+  inline def apply(): AddDnsZoneRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddDnsZoneRequest]
   }
   
-  @scala.inline
-  implicit class AddDnsZoneRequestMutableBuilder[Self <: AddDnsZoneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddDnsZoneRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
+    inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
+    inline def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
     
-    @scala.inline
-    def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
+    inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
+    inline def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

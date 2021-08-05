@@ -30,17 +30,14 @@ object typesInvalidPullRequestIdExceptionMod {
   }
   object InvalidPullRequestIdException {
     
-    @scala.inline
-    def apply(): InvalidPullRequestIdException = {
+    inline def apply(): InvalidPullRequestIdException = {
       val __obj = js.Dynamic.literal(name = "InvalidPullRequestIdException")
       __obj.asInstanceOf[InvalidPullRequestIdException]
     }
     
-    @scala.inline
-    implicit class InvalidPullRequestIdExceptionMutableBuilder[Self <: InvalidPullRequestIdException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidPullRequestIdException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPullRequestIdException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

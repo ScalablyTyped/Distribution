@@ -89,85 +89,59 @@ trait WindowsFirewallNetworkProfile extends StObject {
 }
 object WindowsFirewallNetworkProfile {
   
-  @scala.inline
-  def apply(): WindowsFirewallNetworkProfile = {
+  inline def apply(): WindowsFirewallNetworkProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsFirewallNetworkProfile]
   }
   
-  @scala.inline
-  implicit class WindowsFirewallNetworkProfileMutableBuilder[Self <: WindowsFirewallNetworkProfile] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsFirewallNetworkProfile](x: Self) {
     
-    @scala.inline
-    def setAuthorizedApplicationRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "authorizedApplicationRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
+    inline def setAuthorizedApplicationRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "authorizedApplicationRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedApplicationRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "authorizedApplicationRulesFromGroupPolicyMerged", js.undefined)
+    inline def setAuthorizedApplicationRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "authorizedApplicationRulesFromGroupPolicyMerged", js.undefined)
     
-    @scala.inline
-    def setConnectionSecurityRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "connectionSecurityRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
+    inline def setConnectionSecurityRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "connectionSecurityRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionSecurityRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "connectionSecurityRulesFromGroupPolicyMerged", js.undefined)
+    inline def setConnectionSecurityRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "connectionSecurityRulesFromGroupPolicyMerged", js.undefined)
     
-    @scala.inline
-    def setFirewallEnabled(value: StateManagementSetting): Self = StObject.set(x, "firewallEnabled", value.asInstanceOf[js.Any])
+    inline def setFirewallEnabled(value: StateManagementSetting): Self = StObject.set(x, "firewallEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallEnabledUndefined: Self = StObject.set(x, "firewallEnabled", js.undefined)
+    inline def setFirewallEnabledUndefined: Self = StObject.set(x, "firewallEnabled", js.undefined)
     
-    @scala.inline
-    def setGlobalPortRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "globalPortRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
+    inline def setGlobalPortRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "globalPortRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalPortRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "globalPortRulesFromGroupPolicyMerged", js.undefined)
+    inline def setGlobalPortRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "globalPortRulesFromGroupPolicyMerged", js.undefined)
     
-    @scala.inline
-    def setInboundConnectionsBlocked(value: Boolean): Self = StObject.set(x, "inboundConnectionsBlocked", value.asInstanceOf[js.Any])
+    inline def setInboundConnectionsBlocked(value: Boolean): Self = StObject.set(x, "inboundConnectionsBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundConnectionsBlockedUndefined: Self = StObject.set(x, "inboundConnectionsBlocked", js.undefined)
+    inline def setInboundConnectionsBlockedUndefined: Self = StObject.set(x, "inboundConnectionsBlocked", js.undefined)
     
-    @scala.inline
-    def setInboundNotificationsBlocked(value: Boolean): Self = StObject.set(x, "inboundNotificationsBlocked", value.asInstanceOf[js.Any])
+    inline def setInboundNotificationsBlocked(value: Boolean): Self = StObject.set(x, "inboundNotificationsBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundNotificationsBlockedUndefined: Self = StObject.set(x, "inboundNotificationsBlocked", js.undefined)
+    inline def setInboundNotificationsBlockedUndefined: Self = StObject.set(x, "inboundNotificationsBlocked", js.undefined)
     
-    @scala.inline
-    def setIncomingTrafficBlocked(value: Boolean): Self = StObject.set(x, "incomingTrafficBlocked", value.asInstanceOf[js.Any])
+    inline def setIncomingTrafficBlocked(value: Boolean): Self = StObject.set(x, "incomingTrafficBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomingTrafficBlockedUndefined: Self = StObject.set(x, "incomingTrafficBlocked", js.undefined)
+    inline def setIncomingTrafficBlockedUndefined: Self = StObject.set(x, "incomingTrafficBlocked", js.undefined)
     
-    @scala.inline
-    def setOutboundConnectionsBlocked(value: Boolean): Self = StObject.set(x, "outboundConnectionsBlocked", value.asInstanceOf[js.Any])
+    inline def setOutboundConnectionsBlocked(value: Boolean): Self = StObject.set(x, "outboundConnectionsBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundConnectionsBlockedUndefined: Self = StObject.set(x, "outboundConnectionsBlocked", js.undefined)
+    inline def setOutboundConnectionsBlockedUndefined: Self = StObject.set(x, "outboundConnectionsBlocked", js.undefined)
     
-    @scala.inline
-    def setPolicyRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "policyRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
+    inline def setPolicyRulesFromGroupPolicyMerged(value: Boolean): Self = StObject.set(x, "policyRulesFromGroupPolicyMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "policyRulesFromGroupPolicyMerged", js.undefined)
+    inline def setPolicyRulesFromGroupPolicyMergedUndefined: Self = StObject.set(x, "policyRulesFromGroupPolicyMerged", js.undefined)
     
-    @scala.inline
-    def setSecuredPacketExemptionAllowed(value: Boolean): Self = StObject.set(x, "securedPacketExemptionAllowed", value.asInstanceOf[js.Any])
+    inline def setSecuredPacketExemptionAllowed(value: Boolean): Self = StObject.set(x, "securedPacketExemptionAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecuredPacketExemptionAllowedUndefined: Self = StObject.set(x, "securedPacketExemptionAllowed", js.undefined)
+    inline def setSecuredPacketExemptionAllowedUndefined: Self = StObject.set(x, "securedPacketExemptionAllowed", js.undefined)
     
-    @scala.inline
-    def setStealthModeBlocked(value: Boolean): Self = StObject.set(x, "stealthModeBlocked", value.asInstanceOf[js.Any])
+    inline def setStealthModeBlocked(value: Boolean): Self = StObject.set(x, "stealthModeBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStealthModeBlockedUndefined: Self = StObject.set(x, "stealthModeBlocked", js.undefined)
+    inline def setStealthModeBlockedUndefined: Self = StObject.set(x, "stealthModeBlocked", js.undefined)
     
-    @scala.inline
-    def setUnicastResponsesToMulticastBroadcastsBlocked(value: Boolean): Self = StObject.set(x, "unicastResponsesToMulticastBroadcastsBlocked", value.asInstanceOf[js.Any])
+    inline def setUnicastResponsesToMulticastBroadcastsBlocked(value: Boolean): Self = StObject.set(x, "unicastResponsesToMulticastBroadcastsBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicastResponsesToMulticastBroadcastsBlockedUndefined: Self = StObject.set(x, "unicastResponsesToMulticastBroadcastsBlocked", js.undefined)
+    inline def setUnicastResponsesToMulticastBroadcastsBlockedUndefined: Self = StObject.set(x, "unicastResponsesToMulticastBroadcastsBlocked", js.undefined)
   }
 }

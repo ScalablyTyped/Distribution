@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefaultAudience extends StObject
 object DefaultAudience {
   
-  @scala.inline
-  def everyone: typings.reactNativeFbsdk.reactNativeFbsdkStrings.everyone = "everyone".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.everyone]
+  inline def everyone: typings.reactNativeFbsdk.reactNativeFbsdkStrings.everyone = "everyone".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.everyone]
   
-  @scala.inline
-  def friends: typings.reactNativeFbsdk.reactNativeFbsdkStrings.friends = "friends".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.friends]
+  inline def friends: typings.reactNativeFbsdk.reactNativeFbsdkStrings.friends = "friends".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.friends]
   
-  @scala.inline
-  def only_me: typings.reactNativeFbsdk.reactNativeFbsdkStrings.only_me = "only_me".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.only_me]
+  inline def only_me: typings.reactNativeFbsdk.reactNativeFbsdkStrings.only_me = "only_me".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.only_me]
 }

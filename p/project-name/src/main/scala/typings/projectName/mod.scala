@@ -10,10 +10,8 @@ object mod {
     * Type Definition for project-name
     * @param cwd The Base Current Working Directory of project
     */
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(cwd: String): String = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(cwd: String): String = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("project-name", JSImport.Namespace)
   @js.native

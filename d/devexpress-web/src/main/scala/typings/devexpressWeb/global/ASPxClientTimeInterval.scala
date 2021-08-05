@@ -112,6 +112,5 @@ object ASPxClientTimeInterval {
     * @param end A DateTime value that specifies the end date time value.
     */
   /* static member */
-  @scala.inline
-  def CalculateDuration(start: Date, end: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CalculateDuration")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def CalculateDuration(start: Date, end: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CalculateDuration")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

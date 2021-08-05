@@ -10,16 +10,13 @@ trait EnumValuesAbandoned extends StObject {
 }
 object EnumValuesAbandoned {
   
-  @scala.inline
-  def apply(enumValues: Abandoned): EnumValuesAbandoned = {
+  inline def apply(enumValues: Abandoned): EnumValuesAbandoned = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAbandoned]
   }
   
-  @scala.inline
-  implicit class EnumValuesAbandonedMutableBuilder[Self <: EnumValuesAbandoned] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAbandoned](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Abandoned): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Abandoned): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

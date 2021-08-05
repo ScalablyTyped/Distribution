@@ -29,28 +29,21 @@ trait LoadingFinishedEvent extends StObject {
 }
 object LoadingFinishedEvent {
   
-  @scala.inline
-  def apply(encodedDataLength: Double, requestId: RequestId, timestamp: MonotonicTime): LoadingFinishedEvent = {
+  inline def apply(encodedDataLength: Double, requestId: RequestId, timestamp: MonotonicTime): LoadingFinishedEvent = {
     val __obj = js.Dynamic.literal(encodedDataLength = encodedDataLength.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingFinishedEvent]
   }
   
-  @scala.inline
-  implicit class LoadingFinishedEventMutableBuilder[Self <: LoadingFinishedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingFinishedEvent](x: Self) {
     
-    @scala.inline
-    def setEncodedDataLength(value: Double): Self = StObject.set(x, "encodedDataLength", value.asInstanceOf[js.Any])
+    inline def setEncodedDataLength(value: Double): Self = StObject.set(x, "encodedDataLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldReportCorbBlocking(value: Boolean): Self = StObject.set(x, "shouldReportCorbBlocking", value.asInstanceOf[js.Any])
+    inline def setShouldReportCorbBlocking(value: Boolean): Self = StObject.set(x, "shouldReportCorbBlocking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldReportCorbBlockingUndefined: Self = StObject.set(x, "shouldReportCorbBlocking", js.undefined)
+    inline def setShouldReportCorbBlockingUndefined: Self = StObject.set(x, "shouldReportCorbBlocking", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

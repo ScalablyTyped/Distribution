@@ -25,8 +25,7 @@ trait DisputeGateway extends StObject {
 }
 object DisputeGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: String => js.Promise[ValidatedResponse[Dispute]],
     addFileEvidence: (String, Category) => js.Promise[ValidatedResponse[Evidence]],
     addTextEvidence: (String, Content) => js.Promise[ValidatedResponse[Evidence]],
@@ -40,28 +39,20 @@ object DisputeGateway {
     __obj.asInstanceOf[DisputeGateway]
   }
   
-  @scala.inline
-  implicit class DisputeGatewayMutableBuilder[Self <: DisputeGateway] (val x: Self) extends AnyVal {
+  extension [Self <: DisputeGateway](x: Self) {
     
-    @scala.inline
-    def setAccept(value: String => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+    inline def setAccept(value: String => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddFileEvidence(value: (String, Category) => js.Promise[ValidatedResponse[Evidence]]): Self = StObject.set(x, "addFileEvidence", js.Any.fromFunction2(value))
+    inline def setAddFileEvidence(value: (String, Category) => js.Promise[ValidatedResponse[Evidence]]): Self = StObject.set(x, "addFileEvidence", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddTextEvidence(value: (String, Content) => js.Promise[ValidatedResponse[Evidence]]): Self = StObject.set(x, "addTextEvidence", js.Any.fromFunction2(value))
+    inline def setAddTextEvidence(value: (String, Content) => js.Promise[ValidatedResponse[Evidence]]): Self = StObject.set(x, "addTextEvidence", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFinalize_(value: String => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "finalize", js.Any.fromFunction1(value))
+    inline def setFinalize_(value: String => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "finalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFind(value: String => js.Promise[Dispute]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => js.Promise[Dispute]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveEvidence(value: (String, String) => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "removeEvidence", js.Any.fromFunction2(value))
+    inline def setRemoveEvidence(value: (String, String) => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "removeEvidence", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }
 }

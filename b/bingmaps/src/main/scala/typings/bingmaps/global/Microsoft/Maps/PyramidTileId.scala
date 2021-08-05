@@ -59,8 +59,7 @@ object PyramidTileId {
     * @param tileId2 The second PyramidTileId to compare to the first.
     * @returns A boolean indicating if the two PyramidTileId are equal.
     */
-  @scala.inline
-  def areEqual(
+  inline def areEqual(
     tileId1: typings.bingmaps.Microsoft.Maps.PyramidTileId,
     tileId2: typings.bingmaps.Microsoft.Maps.PyramidTileId
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEqual")(tileId1.asInstanceOf[js.Any], tileId2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -71,12 +70,8 @@ object PyramidTileId {
     * @param width The tile's width in pixels. Default value: 256
     * @param height The tile's height in pixels. Default value: 256
     */
-  @scala.inline
-  def fromQuadKey(quadkey: String): typings.bingmaps.Microsoft.Maps.PyramidTileId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
-  @scala.inline
-  def fromQuadKey(quadkey: String, width: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
-  @scala.inline
-  def fromQuadKey(quadkey: String, width: Double, height: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
-  @scala.inline
-  def fromQuadKey(quadkey: String, width: Unit, height: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
+  inline def fromQuadKey(quadkey: String): typings.bingmaps.Microsoft.Maps.PyramidTileId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
+  inline def fromQuadKey(quadkey: String, width: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
+  inline def fromQuadKey(quadkey: String, width: Double, height: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
+  inline def fromQuadKey(quadkey: String, width: Unit, height: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuadKey")(quadkey.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
 }

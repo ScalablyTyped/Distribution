@@ -18,29 +18,22 @@ trait HillshadeLayer
 }
 object HillshadeLayer {
   
-  @scala.inline
-  def apply(id: String): HillshadeLayer = {
+  inline def apply(id: String): HillshadeLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("hillshade")
     __obj.asInstanceOf[HillshadeLayer]
   }
   
-  @scala.inline
-  implicit class HillshadeLayerMutableBuilder[Self <: HillshadeLayer] (val x: Self) extends AnyVal {
+  extension [Self <: HillshadeLayer](x: Self) {
     
-    @scala.inline
-    def setLayout(value: HillshadeLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: HillshadeLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setPaint(value: HillshadePaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: HillshadePaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
+    inline def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
     
-    @scala.inline
-    def setType(value: hillshade): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: hillshade): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

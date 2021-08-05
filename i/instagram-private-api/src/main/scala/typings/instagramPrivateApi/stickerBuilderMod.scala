@@ -85,44 +85,30 @@ object stickerBuilderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachment(options: StickerOptionsAttachmentS): typings.instagramPrivateApi.stickersMod.AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachment")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
+    inline def attachment(options: StickerOptionsAttachmentS): typings.instagramPrivateApi.stickersMod.AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachment")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
     
-    @scala.inline
-    def attachmentFromMedia(mediaInfo: User): typings.instagramPrivateApi.stickersMod.AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
-    @scala.inline
-    def attachmentFromMedia(mediaInfo: User, additional: PartialStickerOptionsAtta): typings.instagramPrivateApi.stickersMod.AttachmentSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
+    inline def attachmentFromMedia(mediaInfo: User): typings.instagramPrivateApi.stickersMod.AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
+    inline def attachmentFromMedia(mediaInfo: User, additional: PartialStickerOptionsAtta): typings.instagramPrivateApi.stickersMod.AttachmentSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[typings.instagramPrivateApi.stickersMod.AttachmentSticker]
     
-    @scala.inline
-    def chat(options: StickerOptionsChatSticker): typings.instagramPrivateApi.stickersMod.ChatSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("chat")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.ChatSticker]
+    inline def chat(options: StickerOptionsChatSticker): typings.instagramPrivateApi.stickersMod.ChatSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("chat")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.ChatSticker]
     
-    @scala.inline
-    def countdown(options: StickerOptionsCountdownSt): typings.instagramPrivateApi.stickersMod.CountdownSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("countdown")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.CountdownSticker]
+    inline def countdown(options: StickerOptionsCountdownSt): typings.instagramPrivateApi.stickersMod.CountdownSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("countdown")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.CountdownSticker]
     
-    @scala.inline
-    def hashtag(options: StickerOptionsHashtagStic): typings.instagramPrivateApi.stickersMod.HashtagSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("hashtag")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.HashtagSticker]
+    inline def hashtag(options: StickerOptionsHashtagStic): typings.instagramPrivateApi.stickersMod.HashtagSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("hashtag")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.HashtagSticker]
     
-    @scala.inline
-    def location(options: StickerOptionsLocationSti): typings.instagramPrivateApi.stickersMod.LocationSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.LocationSticker]
+    inline def location(options: StickerOptionsLocationSti): typings.instagramPrivateApi.stickersMod.LocationSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.LocationSticker]
     
-    @scala.inline
-    def mention(options: StickerOptionsMentionStic): typings.instagramPrivateApi.stickersMod.MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mention")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
+    inline def mention(options: StickerOptionsMentionStic): typings.instagramPrivateApi.stickersMod.MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mention")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
     
-    @scala.inline
-    def mentionReel(mediaInfo: User): typings.instagramPrivateApi.stickersMod.MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
-    @scala.inline
-    def mentionReel(mediaInfo: User, additional: PartialStickerOptionsMent): typings.instagramPrivateApi.stickersMod.MentionSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
+    inline def mentionReel(mediaInfo: User): typings.instagramPrivateApi.stickersMod.MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
+    inline def mentionReel(mediaInfo: User, additional: PartialStickerOptionsMent): typings.instagramPrivateApi.stickersMod.MentionSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[typings.instagramPrivateApi.stickersMod.MentionSticker]
     
-    @scala.inline
-    def poll(options: StickerOptionsPollSticker): typings.instagramPrivateApi.stickersMod.PollSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("poll")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.PollSticker]
+    inline def poll(options: StickerOptionsPollSticker): typings.instagramPrivateApi.stickersMod.PollSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("poll")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.PollSticker]
     
-    @scala.inline
-    def question(options: StickerOptionsQuestionSti): typings.instagramPrivateApi.stickersMod.QuestionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("question")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.QuestionSticker]
+    inline def question(options: StickerOptionsQuestionSti): typings.instagramPrivateApi.stickersMod.QuestionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("question")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.QuestionSticker]
     
-    @scala.inline
-    def quiz(options: StickerOptionsQuizSticker): typings.instagramPrivateApi.stickersMod.QuizSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("quiz")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.QuizSticker]
+    inline def quiz(options: StickerOptionsQuizSticker): typings.instagramPrivateApi.stickersMod.QuizSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("quiz")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.QuizSticker]
     
-    @scala.inline
-    def slider(options: StickerOptionsSliderStick): typings.instagramPrivateApi.stickersMod.SliderSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.SliderSticker]
+    inline def slider(options: StickerOptionsSliderStick): typings.instagramPrivateApi.stickersMod.SliderSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")(options.asInstanceOf[js.Any]).asInstanceOf[typings.instagramPrivateApi.stickersMod.SliderSticker]
   }
 }

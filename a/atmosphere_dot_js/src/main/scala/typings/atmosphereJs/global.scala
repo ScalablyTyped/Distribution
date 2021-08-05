@@ -9,6 +9,5 @@ object global {
   @JSGlobal("atmosphere")
   @js.native
   def atmosphere: typings.atmosphereJs.Atmosphere.Atmosphere = js.native
-  @scala.inline
-  def atmosphere_=(x: typings.atmosphereJs.Atmosphere.Atmosphere): Unit = js.Dynamic.global.updateDynamic("atmosphere")(x.asInstanceOf[js.Any])
+  inline def atmosphere_=(x: typings.atmosphereJs.Atmosphere.Atmosphere): Unit = js.Dynamic.global.updateDynamic("atmosphere")(x.asInstanceOf[js.Any])
 }

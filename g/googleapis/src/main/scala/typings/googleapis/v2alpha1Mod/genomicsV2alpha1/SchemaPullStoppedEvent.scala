@@ -16,19 +16,15 @@ trait SchemaPullStoppedEvent extends StObject {
 }
 object SchemaPullStoppedEvent {
   
-  @scala.inline
-  def apply(): SchemaPullStoppedEvent = {
+  inline def apply(): SchemaPullStoppedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPullStoppedEvent]
   }
   
-  @scala.inline
-  implicit class SchemaPullStoppedEventMutableBuilder[Self <: SchemaPullStoppedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPullStoppedEvent](x: Self) {
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

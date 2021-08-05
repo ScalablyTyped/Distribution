@@ -26,22 +26,17 @@ trait OnRowExpandToggle extends StObject {
 }
 object OnRowExpandToggle {
   
-  @scala.inline
-  def apply(columnGroupName: String, name: String, shouldExpand: Boolean): OnRowExpandToggle = {
+  inline def apply(columnGroupName: String, name: String, shouldExpand: Boolean): OnRowExpandToggle = {
     val __obj = js.Dynamic.literal(columnGroupName = columnGroupName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shouldExpand = shouldExpand.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnRowExpandToggle]
   }
   
-  @scala.inline
-  implicit class OnRowExpandToggleMutableBuilder[Self <: OnRowExpandToggle] (val x: Self) extends AnyVal {
+  extension [Self <: OnRowExpandToggle](x: Self) {
     
-    @scala.inline
-    def setColumnGroupName(value: String): Self = StObject.set(x, "columnGroupName", value.asInstanceOf[js.Any])
+    inline def setColumnGroupName(value: String): Self = StObject.set(x, "columnGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldExpand(value: Boolean): Self = StObject.set(x, "shouldExpand", value.asInstanceOf[js.Any])
+    inline def setShouldExpand(value: Boolean): Self = StObject.set(x, "shouldExpand", value.asInstanceOf[js.Any])
   }
 }

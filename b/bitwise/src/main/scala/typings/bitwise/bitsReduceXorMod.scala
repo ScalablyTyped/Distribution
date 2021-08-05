@@ -11,6 +11,5 @@ object bitsReduceXorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(bits: js.Array[Bit]): Bit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[Bit]
+  inline def default(bits: js.Array[Bit]): Bit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[Bit]
 }

@@ -104,64 +104,45 @@ trait BuyQuantity extends StObject {
 }
 object BuyQuantity {
   
-  @scala.inline
-  def apply(offerId: String): BuyQuantity = {
+  inline def apply(offerId: String): BuyQuantity = {
     val __obj = js.Dynamic.literal(currencyType = "CNY", mode = "game", offerId = offerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuyQuantity]
   }
   
-  @scala.inline
-  implicit class BuyQuantityMutableBuilder[Self <: BuyQuantity] (val x: Self) extends AnyVal {
+  extension [Self <: BuyQuantity](x: Self) {
     
-    @scala.inline
-    def setBuyQuantity(value: Double): Self = StObject.set(x, "buyQuantity", value.asInstanceOf[js.Any])
+    inline def setBuyQuantity(value: Double): Self = StObject.set(x, "buyQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyQuantityUndefined: Self = StObject.set(x, "buyQuantity", js.undefined)
+    inline def setBuyQuantityUndefined: Self = StObject.set(x, "buyQuantity", js.undefined)
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setCurrencyType(value: CNY): Self = StObject.set(x, "currencyType", value.asInstanceOf[js.Any])
+    inline def setCurrencyType(value: CNY): Self = StObject.set(x, "currencyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnv(value: typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ ErrCode => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ ErrCode => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setMode(value: game): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: game): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
+    inline def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+    inline def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+    inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
   }
 }

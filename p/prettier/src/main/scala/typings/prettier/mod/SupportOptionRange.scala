@@ -14,22 +14,17 @@ trait SupportOptionRange extends StObject {
 }
 object SupportOptionRange {
   
-  @scala.inline
-  def apply(end: Double, start: Double, step: Double): SupportOptionRange = {
+  inline def apply(end: Double, start: Double, step: Double): SupportOptionRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportOptionRange]
   }
   
-  @scala.inline
-  implicit class SupportOptionRangeMutableBuilder[Self <: SupportOptionRange] (val x: Self) extends AnyVal {
+  extension [Self <: SupportOptionRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

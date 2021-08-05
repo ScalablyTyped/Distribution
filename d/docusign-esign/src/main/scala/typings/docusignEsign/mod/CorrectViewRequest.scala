@@ -31,25 +31,19 @@ trait CorrectViewRequest extends StObject {
 }
 object CorrectViewRequest {
   
-  @scala.inline
-  def apply(): CorrectViewRequest = {
+  inline def apply(): CorrectViewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CorrectViewRequest]
   }
   
-  @scala.inline
-  implicit class CorrectViewRequestMutableBuilder[Self <: CorrectViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CorrectViewRequest](x: Self) {
     
-    @scala.inline
-    def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
+    inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
+    inline def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
     
-    @scala.inline
-    def setSuppressNavigation(value: String): Self = StObject.set(x, "suppressNavigation", value.asInstanceOf[js.Any])
+    inline def setSuppressNavigation(value: String): Self = StObject.set(x, "suppressNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressNavigationUndefined: Self = StObject.set(x, "suppressNavigation", js.undefined)
+    inline def setSuppressNavigationUndefined: Self = StObject.set(x, "suppressNavigation", js.undefined)
   }
 }

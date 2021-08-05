@@ -13,25 +13,19 @@ trait RequestMetadataResponse extends StObject {
 }
 object RequestMetadataResponse {
   
-  @scala.inline
-  def apply(headers: Headers): RequestMetadataResponse = {
+  inline def apply(headers: Headers): RequestMetadataResponse = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMetadataResponse]
   }
   
-  @scala.inline
-  implicit class RequestMetadataResponseMutableBuilder[Self <: RequestMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RequestMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: GaxiosResponse[Unit]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: GaxiosResponse[Unit]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResNull: Self = StObject.set(x, "res", null)
+    inline def setResNull: Self = StObject.set(x, "res", null)
     
-    @scala.inline
-    def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+    inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
   }
 }

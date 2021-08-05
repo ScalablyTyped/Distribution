@@ -20,17 +20,14 @@ object typesCommentDeletedExceptionMod {
   }
   object CommentDeletedException {
     
-    @scala.inline
-    def apply(): CommentDeletedException = {
+    inline def apply(): CommentDeletedException = {
       val __obj = js.Dynamic.literal(name = "CommentDeletedException")
       __obj.asInstanceOf[CommentDeletedException]
     }
     
-    @scala.inline
-    implicit class CommentDeletedExceptionMutableBuilder[Self <: CommentDeletedException] (val x: Self) extends AnyVal {
+    extension [Self <: CommentDeletedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDeletedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

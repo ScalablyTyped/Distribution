@@ -14,6 +14,5 @@ object WidgetPropertyViews {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def AddViewForProperty(widgetName: String, propName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddViewForProperty")(widgetName.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AddViewForProperty(widgetName: String, propName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddViewForProperty")(widgetName.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -19,7 +19,7 @@ trait BulletFormat extends StObject {
   
   def Picture(Picture: String): Unit
   
-  @JSName("PowerPoint.BulletFormat_typekey")
+  /* private */ @JSName("PowerPoint.BulletFormat_typekey")
   var PowerPointDotBulletFormat_typekey: BulletFormat
   
   var RelativeSize: Double
@@ -38,8 +38,7 @@ trait BulletFormat extends StObject {
 }
 object BulletFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Character: Double,
     Font: Font,
@@ -60,49 +59,34 @@ object BulletFormat {
     __obj.asInstanceOf[BulletFormat]
   }
   
-  @scala.inline
-  implicit class BulletFormatMutableBuilder[Self <: BulletFormat] (val x: Self) extends AnyVal {
+  extension [Self <: BulletFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacter(value: Double): Self = StObject.set(x, "Character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: Double): Self = StObject.set(x, "Character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicture(value: String => Unit): Self = StObject.set(x, "Picture", js.Any.fromFunction1(value))
+    inline def setPicture(value: String => Unit): Self = StObject.set(x, "Picture", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPowerPointDotBulletFormat_typekey(value: BulletFormat): Self = StObject.set(x, "PowerPoint.BulletFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotBulletFormat_typekey(value: BulletFormat): Self = StObject.set(x, "PowerPoint.BulletFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeSize(value: Double): Self = StObject.set(x, "RelativeSize", value.asInstanceOf[js.Any])
+    inline def setRelativeSize(value: Double): Self = StObject.set(x, "RelativeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartValue(value: Double): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: Double): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: PpNumberedBulletStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: PpNumberedBulletStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PpBulletType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PpBulletType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTextColor(value: MsoTriState): Self = StObject.set(x, "UseTextColor", value.asInstanceOf[js.Any])
+    inline def setUseTextColor(value: MsoTriState): Self = StObject.set(x, "UseTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTextFont(value: MsoTriState): Self = StObject.set(x, "UseTextFont", value.asInstanceOf[js.Any])
+    inline def setUseTextFont(value: MsoTriState): Self = StObject.set(x, "UseTextFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

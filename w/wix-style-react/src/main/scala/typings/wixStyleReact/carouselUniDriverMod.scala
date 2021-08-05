@@ -20,8 +20,7 @@ object carouselUniDriverMod {
   }
   object CarouselUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -33,17 +32,13 @@ object carouselUniDriverMod {
       __obj.asInstanceOf[CarouselUniDriver]
     }
     
-    @scala.inline
-    implicit class CarouselUniDriverMutableBuilder[Self <: CarouselUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetChildren(value: () => UniDriverList[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => UniDriverList[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImages(value: () => js.Array[js.Promise[String | Null]]): Self = StObject.set(x, "getImages", js.Any.fromFunction0(value))
+      inline def setGetImages(value: () => js.Array[js.Promise[String | Null]]): Self = StObject.set(x, "getImages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoading(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+      inline def setIsLoading(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
     }
   }
 }

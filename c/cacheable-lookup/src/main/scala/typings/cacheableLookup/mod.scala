@@ -33,8 +33,7 @@ object mod {
   }
   object CacheInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: () => TPromise[Unit],
       delete: String => TPromise[Boolean],
       get: String => TPromise[js.UndefOr[js.Array[EntryObject]]],
@@ -44,20 +43,15 @@ object mod {
       __obj.asInstanceOf[CacheInstance]
     }
     
-    @scala.inline
-    implicit class CacheInstanceMutableBuilder[Self <: CacheInstance] (val x: Self) extends AnyVal {
+    extension [Self <: CacheInstance](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => TPromise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => TPromise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: String => TPromise[Boolean]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: String => TPromise[Boolean]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => TPromise[js.UndefOr[js.Array[EntryObject]]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => TPromise[js.UndefOr[js.Array[EntryObject]]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Array[EntryObject], Double) => TPromise[Unit | Boolean | CacheInstance]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (String, js.Array[EntryObject], Double) => TPromise[Unit | Boolean | CacheInstance]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     }
   }
   
@@ -158,32 +152,24 @@ object mod {
   }
   object EntryObject {
     
-    @scala.inline
-    def apply(address: String, family: IPFamily): EntryObject = {
+    inline def apply(address: String, family: IPFamily): EntryObject = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryObject]
     }
     
-    @scala.inline
-    implicit class EntryObjectMutableBuilder[Self <: EntryObject] (val x: Self) extends AnyVal {
+    extension [Self <: EntryObject](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -194,11 +180,9 @@ object mod {
   trait IPFamily extends StObject
   object IPFamily {
     
-    @scala.inline
-    def `4`: typings.cacheableLookup.cacheableLookupNumbers.`4` = 4.asInstanceOf[typings.cacheableLookup.cacheableLookupNumbers.`4`]
+    inline def `4`: typings.cacheableLookup.cacheableLookupNumbers.`4` = 4.asInstanceOf[typings.cacheableLookup.cacheableLookupNumbers.`4`]
     
-    @scala.inline
-    def `6`: typings.cacheableLookup.cacheableLookupNumbers.`6` = 6.asInstanceOf[typings.cacheableLookup.cacheableLookupNumbers.`6`]
+    inline def `6`: typings.cacheableLookup.cacheableLookupNumbers.`6` = 6.asInstanceOf[typings.cacheableLookup.cacheableLookupNumbers.`6`]
   }
   
   trait LookupOptions extends StObject {
@@ -221,32 +205,24 @@ object mod {
   }
   object LookupOptions {
     
-    @scala.inline
-    def apply(): LookupOptions = {
+    inline def apply(): LookupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LookupOptions]
     }
     
-    @scala.inline
-    implicit class LookupOptionsMutableBuilder[Self <: LookupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LookupOptions](x: Self) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+      inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+      inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     }
   }
   
@@ -298,50 +274,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCache(value: CacheInstance): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: CacheInstance): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setErrorTtl(value: Double): Self = StObject.set(x, "errorTtl", value.asInstanceOf[js.Any])
+      inline def setErrorTtl(value: Double): Self = StObject.set(x, "errorTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorTtlUndefined: Self = StObject.set(x, "errorTtl", js.undefined)
+      inline def setErrorTtlUndefined: Self = StObject.set(x, "errorTtl", js.undefined)
       
-      @scala.inline
-      def setFallbackDuration(value: Double): Self = StObject.set(x, "fallbackDuration", value.asInstanceOf[js.Any])
+      inline def setFallbackDuration(value: Double): Self = StObject.set(x, "fallbackDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackDurationUndefined: Self = StObject.set(x, "fallbackDuration", js.undefined)
+      inline def setFallbackDurationUndefined: Self = StObject.set(x, "fallbackDuration", js.undefined)
       
-      @scala.inline
-      def setLookup(value: Typeoflookup): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      inline def setLookup(value: Typeoflookup): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
       
-      @scala.inline
-      def setMaxTtl(value: Double): Self = StObject.set(x, "maxTtl", value.asInstanceOf[js.Any])
+      inline def setMaxTtl(value: Double): Self = StObject.set(x, "maxTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTtlUndefined: Self = StObject.set(x, "maxTtl", js.undefined)
+      inline def setMaxTtlUndefined: Self = StObject.set(x, "maxTtl", js.undefined)
       
-      @scala.inline
-      def setResolver(value: typings.node.dnsMod.Resolver | AsyncResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+      inline def setResolver(value: typings.node.dnsMod.Resolver | AsyncResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+      inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
     }
   }
   

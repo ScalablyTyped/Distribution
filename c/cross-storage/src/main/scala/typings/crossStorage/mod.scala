@@ -82,8 +82,7 @@ object mod {
       * include any of: get, set, del, getKeys and clear. A 'ready' message is sent to the parent window once 
       * complete.
       */
-    @scala.inline
-    def init(subdomains: js.Array[SubDomain]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(subdomains.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(subdomains: js.Array[SubDomain]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(subdomains.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait CrossStorageClientOptions extends StObject {
@@ -96,32 +95,24 @@ object mod {
   }
   object CrossStorageClientOptions {
     
-    @scala.inline
-    def apply(): CrossStorageClientOptions = {
+    inline def apply(): CrossStorageClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CrossStorageClientOptions]
     }
     
-    @scala.inline
-    implicit class CrossStorageClientOptionsMutableBuilder[Self <: CrossStorageClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CrossStorageClientOptions](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: String): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: String): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+      inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
       
-      @scala.inline
-      def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -135,20 +126,15 @@ object mod {
   trait CrossStorageMethod extends StObject
   object CrossStorageMethod {
     
-    @scala.inline
-    def clear: typings.crossStorage.crossStorageStrings.clear = "clear".asInstanceOf[typings.crossStorage.crossStorageStrings.clear]
+    inline def clear: typings.crossStorage.crossStorageStrings.clear = "clear".asInstanceOf[typings.crossStorage.crossStorageStrings.clear]
     
-    @scala.inline
-    def del: typings.crossStorage.crossStorageStrings.del = "del".asInstanceOf[typings.crossStorage.crossStorageStrings.del]
+    inline def del: typings.crossStorage.crossStorageStrings.del = "del".asInstanceOf[typings.crossStorage.crossStorageStrings.del]
     
-    @scala.inline
-    def get: typings.crossStorage.crossStorageStrings.get = "get".asInstanceOf[typings.crossStorage.crossStorageStrings.get]
+    inline def get: typings.crossStorage.crossStorageStrings.get = "get".asInstanceOf[typings.crossStorage.crossStorageStrings.get]
     
-    @scala.inline
-    def getKeys: typings.crossStorage.crossStorageStrings.getKeys = "getKeys".asInstanceOf[typings.crossStorage.crossStorageStrings.getKeys]
+    inline def getKeys: typings.crossStorage.crossStorageStrings.getKeys = "getKeys".asInstanceOf[typings.crossStorage.crossStorageStrings.getKeys]
     
-    @scala.inline
-    def set: typings.crossStorage.crossStorageStrings.set = "set".asInstanceOf[typings.crossStorage.crossStorageStrings.set]
+    inline def set: typings.crossStorage.crossStorageStrings.set = "set".asInstanceOf[typings.crossStorage.crossStorageStrings.set]
   }
   
   trait SubDomain extends StObject {
@@ -159,23 +145,18 @@ object mod {
   }
   object SubDomain {
     
-    @scala.inline
-    def apply(allow: js.Array[CrossStorageMethod], origin: RegExp): SubDomain = {
+    inline def apply(allow: js.Array[CrossStorageMethod], origin: RegExp): SubDomain = {
       val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubDomain]
     }
     
-    @scala.inline
-    implicit class SubDomainMutableBuilder[Self <: SubDomain] (val x: Self) extends AnyVal {
+    extension [Self <: SubDomain](x: Self) {
       
-      @scala.inline
-      def setAllow(value: js.Array[CrossStorageMethod]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+      inline def setAllow(value: js.Array[CrossStorageMethod]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowVarargs(value: CrossStorageMethod*): Self = StObject.set(x, "allow", js.Array(value :_*))
+      inline def setAllowVarargs(value: CrossStorageMethod*): Self = StObject.set(x, "allow", js.Array(value :_*))
       
-      @scala.inline
-      def setOrigin(value: RegExp): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: RegExp): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
   }
 }

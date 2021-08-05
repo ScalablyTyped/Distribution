@@ -29,28 +29,21 @@ trait TextMessage extends StObject {
 }
 object TextMessage {
   
-  @scala.inline
-  def apply(body: String, from: String, to: String): TextMessage = {
+  inline def apply(body: String, from: String, to: String): TextMessage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMessage]
   }
   
-  @scala.inline
-  implicit class TextMessageMutableBuilder[Self <: TextMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TextMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: IndexableObject): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: IndexableObject): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
   }
 }

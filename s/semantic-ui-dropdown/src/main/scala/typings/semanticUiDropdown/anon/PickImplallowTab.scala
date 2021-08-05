@@ -11,16 +11,13 @@ trait PickImplallowTab extends StObject {
 }
 object PickImplallowTab {
   
-  @scala.inline
-  def apply(allowTab: Boolean): PickImplallowTab = {
+  inline def apply(allowTab: Boolean): PickImplallowTab = {
     val __obj = js.Dynamic.literal(allowTab = allowTab.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowTab]
   }
   
-  @scala.inline
-  implicit class PickImplallowTabMutableBuilder[Self <: PickImplallowTab] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplallowTab](x: Self) {
     
-    @scala.inline
-    def setAllowTab(value: Boolean): Self = StObject.set(x, "allowTab", value.asInstanceOf[js.Any])
+    inline def setAllowTab(value: Boolean): Self = StObject.set(x, "allowTab", value.asInstanceOf[js.Any])
   }
 }

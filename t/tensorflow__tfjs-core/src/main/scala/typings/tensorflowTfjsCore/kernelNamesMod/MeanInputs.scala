@@ -11,19 +11,15 @@ trait MeanInputs extends StObject {
 }
 object MeanInputs {
   
-  @scala.inline
-  def apply(): MeanInputs = {
+  inline def apply(): MeanInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeanInputs]
   }
   
-  @scala.inline
-  implicit class MeanInputsMutableBuilder[Self <: MeanInputs] (val x: Self) extends AnyVal {
+  extension [Self <: MeanInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

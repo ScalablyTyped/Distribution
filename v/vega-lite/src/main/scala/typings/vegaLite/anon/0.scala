@@ -14,16 +14,13 @@ trait `0`[F /* <: typings.vegaLite.channeldefMod.Field */] extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply[F /* <: typings.vegaLite.channeldefMod.Field */](condition: Conditional[TypedFieldDef[F, js.Any, Boolean | BinParams | binned | Null]]): `0`[F] = {
+  inline def apply[F /* <: typings.vegaLite.channeldefMod.Field */](condition: Conditional[TypedFieldDef[F, js.Any, Boolean | BinParams | binned | Null]]): `0`[F] = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`[F]]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`[?], F /* <: typings.vegaLite.channeldefMod.Field */] (val x: Self & `0`[F]) extends AnyVal {
+  extension [Self <: `0`[?], F /* <: typings.vegaLite.channeldefMod.Field */](x: Self & `0`[F]) {
     
-    @scala.inline
-    def setCondition(value: Conditional[TypedFieldDef[F, js.Any, Boolean | BinParams | binned | Null]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Conditional[TypedFieldDef[F, js.Any, Boolean | BinParams | binned | Null]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }
 }

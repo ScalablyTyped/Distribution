@@ -12,25 +12,19 @@ trait ScanStreamOption extends StObject {
 }
 object ScanStreamOption {
   
-  @scala.inline
-  def apply(): ScanStreamOption = {
+  inline def apply(): ScanStreamOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScanStreamOption]
   }
   
-  @scala.inline
-  implicit class ScanStreamOptionMutableBuilder[Self <: ScanStreamOption] (val x: Self) extends AnyVal {
+  extension [Self <: ScanStreamOption](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
   }
 }

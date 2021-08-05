@@ -85,8 +85,7 @@ object eventRuleMixinsMod {
   }
   object EventRuleEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       account: String,
       detail: Record[String, js.Any],
       `detail-type`: String,
@@ -102,38 +101,27 @@ object eventRuleMixinsMod {
       __obj.asInstanceOf[EventRuleEvent]
     }
     
-    @scala.inline
-    implicit class EventRuleEventMutableBuilder[Self <: EventRuleEvent] (val x: Self) extends AnyVal {
+    extension [Self <: EventRuleEvent](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: Record[String, js.Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Record[String, js.Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDetail-type`(value: String): Self = StObject.set(x, "detail-type", value.asInstanceOf[js.Any])
+      inline def `setDetail-type`(value: String): Self = StObject.set(x, "detail-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

@@ -13,16 +13,13 @@ trait KeyBits extends StObject {
 }
 object KeyBits {
   
-  @scala.inline
-  def apply(b: Double): KeyBits = {
+  inline def apply(b: Double): KeyBits = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyBits]
   }
   
-  @scala.inline
-  implicit class KeyBitsMutableBuilder[Self <: KeyBits] (val x: Self) extends AnyVal {
+  extension [Self <: KeyBits](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
   }
 }

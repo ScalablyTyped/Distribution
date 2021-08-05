@@ -21,8 +21,7 @@ trait TestResultModelBase extends StObject {
 }
 object TestResultModelBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comment: String,
     completedDate: Date,
     durationInMs: Double,
@@ -34,25 +33,18 @@ object TestResultModelBase {
     __obj.asInstanceOf[TestResultModelBase]
   }
   
-  @scala.inline
-  implicit class TestResultModelBaseMutableBuilder[Self <: TestResultModelBase] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultModelBase](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
+    inline def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInMs(value: Double): Self = StObject.set(x, "durationInMs", value.asInstanceOf[js.Any])
+    inline def setDurationInMs(value: Double): Self = StObject.set(x, "durationInMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
+    inline def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
   }
 }

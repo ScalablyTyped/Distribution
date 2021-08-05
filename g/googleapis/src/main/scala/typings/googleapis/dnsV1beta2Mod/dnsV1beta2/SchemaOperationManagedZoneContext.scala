@@ -12,25 +12,19 @@ trait SchemaOperationManagedZoneContext extends StObject {
 }
 object SchemaOperationManagedZoneContext {
   
-  @scala.inline
-  def apply(): SchemaOperationManagedZoneContext = {
+  inline def apply(): SchemaOperationManagedZoneContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperationManagedZoneContext]
   }
   
-  @scala.inline
-  implicit class SchemaOperationManagedZoneContextMutableBuilder[Self <: SchemaOperationManagedZoneContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperationManagedZoneContext](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: SchemaManagedZone): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: SchemaManagedZone): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
-    @scala.inline
-    def setOldValue(value: SchemaManagedZone): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: SchemaManagedZone): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

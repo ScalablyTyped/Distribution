@@ -23,34 +23,25 @@ trait GetCoipPoolUsageResult extends StObject {
 }
 object GetCoipPoolUsageResult {
   
-  @scala.inline
-  def apply(): GetCoipPoolUsageResult = {
+  inline def apply(): GetCoipPoolUsageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCoipPoolUsageResult]
   }
   
-  @scala.inline
-  implicit class GetCoipPoolUsageResultMutableBuilder[Self <: GetCoipPoolUsageResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetCoipPoolUsageResult](x: Self) {
     
-    @scala.inline
-    def setCoipAddressUsages(value: CoipAddressUsageSet): Self = StObject.set(x, "CoipAddressUsages", value.asInstanceOf[js.Any])
+    inline def setCoipAddressUsages(value: CoipAddressUsageSet): Self = StObject.set(x, "CoipAddressUsages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoipAddressUsagesUndefined: Self = StObject.set(x, "CoipAddressUsages", js.undefined)
+    inline def setCoipAddressUsagesUndefined: Self = StObject.set(x, "CoipAddressUsages", js.undefined)
     
-    @scala.inline
-    def setCoipAddressUsagesVarargs(value: CoipAddressUsage*): Self = StObject.set(x, "CoipAddressUsages", js.Array(value :_*))
+    inline def setCoipAddressUsagesVarargs(value: CoipAddressUsage*): Self = StObject.set(x, "CoipAddressUsages", js.Array(value :_*))
     
-    @scala.inline
-    def setCoipPoolId(value: String): Self = StObject.set(x, "CoipPoolId", value.asInstanceOf[js.Any])
+    inline def setCoipPoolId(value: String): Self = StObject.set(x, "CoipPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoipPoolIdUndefined: Self = StObject.set(x, "CoipPoolId", js.undefined)
+    inline def setCoipPoolIdUndefined: Self = StObject.set(x, "CoipPoolId", js.undefined)
     
-    @scala.inline
-    def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "LocalGatewayRouteTableId", js.undefined)
+    inline def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "LocalGatewayRouteTableId", js.undefined)
   }
 }

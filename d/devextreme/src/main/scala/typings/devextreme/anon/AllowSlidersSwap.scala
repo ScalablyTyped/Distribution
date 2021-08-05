@@ -22,49 +22,35 @@ trait AllowSlidersSwap extends StObject {
 }
 object AllowSlidersSwap {
   
-  @scala.inline
-  def apply(): AllowSlidersSwap = {
+  inline def apply(): AllowSlidersSwap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowSlidersSwap]
   }
   
-  @scala.inline
-  implicit class AllowSlidersSwapMutableBuilder[Self <: AllowSlidersSwap] (val x: Self) extends AnyVal {
+  extension [Self <: AllowSlidersSwap](x: Self) {
     
-    @scala.inline
-    def setAllowSlidersSwap(value: Boolean): Self = StObject.set(x, "allowSlidersSwap", value.asInstanceOf[js.Any])
+    inline def setAllowSlidersSwap(value: Boolean): Self = StObject.set(x, "allowSlidersSwap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSlidersSwapUndefined: Self = StObject.set(x, "allowSlidersSwap", js.undefined)
+    inline def setAllowSlidersSwapUndefined: Self = StObject.set(x, "allowSlidersSwap", js.undefined)
     
-    @scala.inline
-    def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
+    inline def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
+    inline def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
     
-    @scala.inline
-    def setCallValueChanged(value: onMoving | onMovingComplete): Self = StObject.set(x, "callValueChanged", value.asInstanceOf[js.Any])
+    inline def setCallValueChanged(value: onMoving | onMovingComplete): Self = StObject.set(x, "callValueChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallValueChangedUndefined: Self = StObject.set(x, "callValueChanged", js.undefined)
+    inline def setCallValueChangedUndefined: Self = StObject.set(x, "callValueChanged", js.undefined)
     
-    @scala.inline
-    def setManualRangeSelectionEnabled(value: Boolean): Self = StObject.set(x, "manualRangeSelectionEnabled", value.asInstanceOf[js.Any])
+    inline def setManualRangeSelectionEnabled(value: Boolean): Self = StObject.set(x, "manualRangeSelectionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualRangeSelectionEnabledUndefined: Self = StObject.set(x, "manualRangeSelectionEnabled", js.undefined)
+    inline def setManualRangeSelectionEnabledUndefined: Self = StObject.set(x, "manualRangeSelectionEnabled", js.undefined)
     
-    @scala.inline
-    def setMoveSelectedRangeByClick(value: Boolean): Self = StObject.set(x, "moveSelectedRangeByClick", value.asInstanceOf[js.Any])
+    inline def setMoveSelectedRangeByClick(value: Boolean): Self = StObject.set(x, "moveSelectedRangeByClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveSelectedRangeByClickUndefined: Self = StObject.set(x, "moveSelectedRangeByClick", js.undefined)
+    inline def setMoveSelectedRangeByClickUndefined: Self = StObject.set(x, "moveSelectedRangeByClick", js.undefined)
     
-    @scala.inline
-    def setSnapToTicks(value: Boolean): Self = StObject.set(x, "snapToTicks", value.asInstanceOf[js.Any])
+    inline def setSnapToTicks(value: Boolean): Self = StObject.set(x, "snapToTicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapToTicksUndefined: Self = StObject.set(x, "snapToTicks", js.undefined)
+    inline def setSnapToTicksUndefined: Self = StObject.set(x, "snapToTicks", js.undefined)
   }
 }

@@ -32,20 +32,16 @@ object anon {
   }
   object Attribute {
     
-    @scala.inline
-    def apply(): Attribute = {
+    inline def apply(): Attribute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attribute]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     }
   }
   
@@ -98,32 +94,24 @@ object anon {
   }
   object Expression {
     
-    @scala.inline
-    def apply(): Expression = {
+    inline def apply(): Expression = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Expression]
     }
     
-    @scala.inline
-    implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
+    extension [Self <: Expression](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setExpression(value: RegExp): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: RegExp): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -135,20 +123,16 @@ object anon {
   }
   object Left {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Left = {
+    inline def apply(left: Double, top: Double): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
-    @scala.inline
-    implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    extension [Self <: Left](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,20 +142,16 @@ object anon {
   }
   object Selected {
     
-    @scala.inline
-    def apply(): Selected = {
+    inline def apply(): Selected = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Selected]
     }
     
-    @scala.inline
-    implicit class SelectedMutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
+    extension [Self <: Selected](x: Self) {
       
-      @scala.inline
-      def setSelected(value: Element): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Element): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     }
   }
   
@@ -181,20 +161,16 @@ object anon {
   }
   object Selecting {
     
-    @scala.inline
-    def apply(): Selecting = {
+    inline def apply(): Selecting = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Selecting]
     }
     
-    @scala.inline
-    implicit class SelectingMutableBuilder[Self <: Selecting] (val x: Self) extends AnyVal {
+    extension [Self <: Selecting](x: Self) {
       
-      @scala.inline
-      def setSelecting(value: Element): Self = StObject.set(x, "selecting", value.asInstanceOf[js.Any])
+      inline def setSelecting(value: Element): Self = StObject.set(x, "selecting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectingUndefined: Self = StObject.set(x, "selecting", js.undefined)
+      inline def setSelectingUndefined: Self = StObject.set(x, "selecting", js.undefined)
     }
   }
   
@@ -204,17 +180,14 @@ object anon {
   }
   object Unselected {
     
-    @scala.inline
-    def apply(unselected: Element): Unselected = {
+    inline def apply(unselected: Element): Unselected = {
       val __obj = js.Dynamic.literal(unselected = unselected.asInstanceOf[js.Any])
       __obj.asInstanceOf[Unselected]
     }
     
-    @scala.inline
-    implicit class UnselectedMutableBuilder[Self <: Unselected] (val x: Self) extends AnyVal {
+    extension [Self <: Unselected](x: Self) {
       
-      @scala.inline
-      def setUnselected(value: Element): Self = StObject.set(x, "unselected", value.asInstanceOf[js.Any])
+      inline def setUnselected(value: Element): Self = StObject.set(x, "unselected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,17 +197,14 @@ object anon {
   }
   object Unselecting {
     
-    @scala.inline
-    def apply(unselecting: Element): Unselecting = {
+    inline def apply(unselecting: Element): Unselecting = {
       val __obj = js.Dynamic.literal(unselecting = unselecting.asInstanceOf[js.Any])
       __obj.asInstanceOf[Unselecting]
     }
     
-    @scala.inline
-    implicit class UnselectingMutableBuilder[Self <: Unselecting] (val x: Self) extends AnyVal {
+    extension [Self <: Unselecting](x: Self) {
       
-      @scala.inline
-      def setUnselecting(value: Element): Self = StObject.set(x, "unselecting", value.asInstanceOf[js.Any])
+      inline def setUnselecting(value: Element): Self = StObject.set(x, "unselecting", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,15 +13,13 @@ trait AssemblyExpression
      with AssemblyItem
 object AssemblyExpression {
   
-  @scala.inline
-  def AssemblyCall(arguments: js.Array[AssemblyExpression], functionName: String): typings.solidityParserAntlr.mod.AssemblyCall = {
+  inline def AssemblyCall(arguments: js.Array[AssemblyExpression], functionName: String): typings.solidityParserAntlr.mod.AssemblyCall = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AssemblyCall")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.AssemblyCall]
   }
   
-  @scala.inline
-  def AssemblyLiteral(): typings.solidityParserAntlr.mod.AssemblyLiteral = {
+  inline def AssemblyLiteral(): typings.solidityParserAntlr.mod.AssemblyLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyLiteral")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.AssemblyLiteral]

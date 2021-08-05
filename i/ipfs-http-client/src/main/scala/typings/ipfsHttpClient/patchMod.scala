@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object patchMod {
   
-  @scala.inline
-  def apply(config: js.Any): AddLink = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[AddLink]
+  inline def apply(config: js.Any): AddLink = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[AddLink]
   
   @JSImport("ipfs-http-client/dist/src/object/patch", JSImport.Namespace)
   @js.native

@@ -15,17 +15,14 @@ trait Noop_
 }
 object Noop_ {
   
-  @scala.inline
-  def apply(): Noop_ = {
+  inline def apply(): Noop_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("Noop")
     __obj.asInstanceOf[Noop_]
   }
   
-  @scala.inline
-  implicit class Noop_MutableBuilder[Self <: Noop_] (val x: Self) extends AnyVal {
+  extension [Self <: Noop_](x: Self) {
     
-    @scala.inline
-    def setType(value: Noop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Noop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

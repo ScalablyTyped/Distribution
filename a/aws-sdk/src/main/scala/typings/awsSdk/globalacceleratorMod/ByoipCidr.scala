@@ -23,34 +23,25 @@ trait ByoipCidr extends StObject {
 }
 object ByoipCidr {
   
-  @scala.inline
-  def apply(): ByoipCidr = {
+  inline def apply(): ByoipCidr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ByoipCidr]
   }
   
-  @scala.inline
-  implicit class ByoipCidrMutableBuilder[Self <: ByoipCidr] (val x: Self) extends AnyVal {
+  extension [Self <: ByoipCidr](x: Self) {
     
-    @scala.inline
-    def setCidr(value: GenericString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: GenericString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
+    inline def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
     
-    @scala.inline
-    def setEvents(value: ByoipCidrEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: ByoipCidrEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: ByoipCidrEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: ByoipCidrEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: ByoipCidrState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ByoipCidrState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

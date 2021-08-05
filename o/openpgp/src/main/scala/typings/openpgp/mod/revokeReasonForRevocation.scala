@@ -19,19 +19,15 @@ trait revokeReasonForRevocation extends StObject {
 }
 object revokeReasonForRevocation {
   
-  @scala.inline
-  def apply(flag: reasonForRevocation, string: String): revokeReasonForRevocation = {
+  inline def apply(flag: reasonForRevocation, string: String): revokeReasonForRevocation = {
     val __obj = js.Dynamic.literal(flag = flag.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
     __obj.asInstanceOf[revokeReasonForRevocation]
   }
   
-  @scala.inline
-  implicit class revokeReasonForRevocationMutableBuilder[Self <: revokeReasonForRevocation] (val x: Self) extends AnyVal {
+  extension [Self <: revokeReasonForRevocation](x: Self) {
     
-    @scala.inline
-    def setFlag(value: reasonForRevocation): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: reasonForRevocation): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

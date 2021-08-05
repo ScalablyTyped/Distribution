@@ -21,6 +21,5 @@ object DetailsHeaderBase {
   @JSImport("office-ui-fabric-react", "DetailsHeaderBase.defaultProps")
   @js.native
   def defaultProps: typings.officeUiFabricReact.anon.CollapseAllVisibility = js.native
-  @scala.inline
-  def defaultProps_=(x: typings.officeUiFabricReact.anon.CollapseAllVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: typings.officeUiFabricReact.anon.CollapseAllVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

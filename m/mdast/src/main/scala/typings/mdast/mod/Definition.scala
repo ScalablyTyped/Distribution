@@ -18,17 +18,14 @@ trait Definition
 }
 object Definition {
   
-  @scala.inline
-  def apply(identifier: String, url: String): Definition = {
+  inline def apply(identifier: String, url: String): Definition = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("definition")
     __obj.asInstanceOf[Definition]
   }
   
-  @scala.inline
-  implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
+  extension [Self <: Definition](x: Self) {
     
-    @scala.inline
-    def setType(value: definition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: definition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

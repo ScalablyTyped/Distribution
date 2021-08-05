@@ -487,8 +487,7 @@ trait ShellReturnValue
 }
 object ShellReturnValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cat: CatFunction,
     code: Double,
     exec: ExecFunction,
@@ -507,37 +506,26 @@ object ShellReturnValue {
     __obj.asInstanceOf[ShellReturnValue]
   }
   
-  @scala.inline
-  implicit class ShellReturnValueMutableBuilder[Self <: ShellReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: ShellReturnValue](x: Self) {
     
-    @scala.inline
-    def setCat(value: CatFunction): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
+    inline def setCat(value: CatFunction): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExec(value: ExecFunction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    inline def setExec(value: ExecFunction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrep(value: GrepFunction): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+    inline def setGrep(value: GrepFunction): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHead(value: HeadFunction): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: HeadFunction): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSed(value: SedFunction): Self = StObject.set(x, "sed", value.asInstanceOf[js.Any])
+    inline def setSed(value: SedFunction): Self = StObject.set(x, "sed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: SortFunction): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: SortFunction): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTail(value: TailFunction): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+    inline def setTail(value: TailFunction): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String => Unit): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
+    inline def setTo(value: String => Unit): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToEnd(value: String => Unit): Self = StObject.set(x, "toEnd", js.Any.fromFunction1(value))
+    inline def setToEnd(value: String => Unit): Self = StObject.set(x, "toEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniq(value: UniqFunction): Self = StObject.set(x, "uniq", value.asInstanceOf[js.Any])
+    inline def setUniq(value: UniqFunction): Self = StObject.set(x, "uniq", value.asInstanceOf[js.Any])
   }
 }

@@ -55,8 +55,7 @@ trait XDockingAreaAcceptor
 }
 object XDockingAreaAcceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContainerWindow: XWindow,
     acquire: () => Unit,
     getContainerWindow: () => XWindow,
@@ -69,19 +68,14 @@ object XDockingAreaAcceptor {
     __obj.asInstanceOf[XDockingAreaAcceptor]
   }
   
-  @scala.inline
-  implicit class XDockingAreaAcceptorMutableBuilder[Self <: XDockingAreaAcceptor] (val x: Self) extends AnyVal {
+  extension [Self <: XDockingAreaAcceptor](x: Self) {
     
-    @scala.inline
-    def setContainerWindow(value: XWindow): Self = StObject.set(x, "ContainerWindow", value.asInstanceOf[js.Any])
+    inline def setContainerWindow(value: XWindow): Self = StObject.set(x, "ContainerWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContainerWindow(value: () => XWindow): Self = StObject.set(x, "getContainerWindow", js.Any.fromFunction0(value))
+    inline def setGetContainerWindow(value: () => XWindow): Self = StObject.set(x, "getContainerWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestDockingAreaSpace(value: Rectangle => Boolean): Self = StObject.set(x, "requestDockingAreaSpace", js.Any.fromFunction1(value))
+    inline def setRequestDockingAreaSpace(value: Rectangle => Boolean): Self = StObject.set(x, "requestDockingAreaSpace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDockingAreaSpace(value: Rectangle => Unit): Self = StObject.set(x, "setDockingAreaSpace", js.Any.fromFunction1(value))
+    inline def setSetDockingAreaSpace(value: Rectangle => Unit): Self = StObject.set(x, "setDockingAreaSpace", js.Any.fromFunction1(value))
   }
 }

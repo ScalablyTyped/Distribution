@@ -12,8 +12,7 @@ object rpcServiceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRpcService(port: RpcMessagePort): RpcService = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcService")(port.asInstanceOf[js.Any]).asInstanceOf[RpcService]
+  inline def createRpcService(port: RpcMessagePort): RpcService = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcService")(port.asInstanceOf[js.Any]).asInstanceOf[RpcService]
   
   type RpcCallHandler[TPayload, TResult] = js.Function1[/* payload */ TPayload, js.Promise[TResult]]
   
@@ -31,8 +30,7 @@ object rpcServiceMod {
   }
   object RpcService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addCallHandler: (RpcProcedure[js.Any, js.Any], RpcCallHandler[js.Any, js.Any]) => Unit,
       close: () => js.Promise[Unit],
       isOpen: () => Boolean,
@@ -43,23 +41,17 @@ object rpcServiceMod {
       __obj.asInstanceOf[RpcService]
     }
     
-    @scala.inline
-    implicit class RpcServiceMutableBuilder[Self <: RpcService] (val x: Self) extends AnyVal {
+    extension [Self <: RpcService](x: Self) {
       
-      @scala.inline
-      def setAddCallHandler(value: (RpcProcedure[js.Any, js.Any], RpcCallHandler[js.Any, js.Any]) => Unit): Self = StObject.set(x, "addCallHandler", js.Any.fromFunction2(value))
+      inline def setAddCallHandler(value: (RpcProcedure[js.Any, js.Any], RpcCallHandler[js.Any, js.Any]) => Unit): Self = StObject.set(x, "addCallHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
+      inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveCallHandler(value: RpcProcedure[js.Any, js.Any] => Unit): Self = StObject.set(x, "removeCallHandler", js.Any.fromFunction1(value))
+      inline def setRemoveCallHandler(value: RpcProcedure[js.Any, js.Any] => Unit): Self = StObject.set(x, "removeCallHandler", js.Any.fromFunction1(value))
     }
   }
 }

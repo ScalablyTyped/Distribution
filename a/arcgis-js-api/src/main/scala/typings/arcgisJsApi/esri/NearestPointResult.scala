@@ -40,8 +40,7 @@ trait NearestPointResult
 }
 object NearestPointResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     coordinate: Point,
     distance: Double,
@@ -54,19 +53,14 @@ object NearestPointResult {
     __obj.asInstanceOf[NearestPointResult]
   }
   
-  @scala.inline
-  implicit class NearestPointResultMutableBuilder[Self <: NearestPointResult] (val x: Self) extends AnyVal {
+  extension [Self <: NearestPointResult](x: Self) {
     
-    @scala.inline
-    def setCoordinate(value: Point): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: Point): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+    inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
+    inline def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
   }
 }

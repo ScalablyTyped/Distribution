@@ -14,28 +14,21 @@ trait AccessPolicy extends StObject {
 }
 object AccessPolicy {
   
-  @scala.inline
-  def apply(): AccessPolicy = {
+  inline def apply(): AccessPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessPolicy]
   }
   
-  @scala.inline
-  implicit class AccessPolicyMutableBuilder[Self <: AccessPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AccessPolicy](x: Self) {
     
-    @scala.inline
-    def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+    inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+    inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
-    @scala.inline
-    def setException(value: js.Array[String]): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: js.Array[String]): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+    inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
-    @scala.inline
-    def setExceptionVarargs(value: String*): Self = StObject.set(x, "exception", js.Array(value :_*))
+    inline def setExceptionVarargs(value: String*): Self = StObject.set(x, "exception", js.Array(value :_*))
   }
 }

@@ -17,16 +17,13 @@ trait `8` extends StObject {
 }
 object `8` {
   
-  @scala.inline
-  def apply(init: (HTMLElement, js.Function0[MaybeSubscribable[String]], AllBindings) => Unit): `8` = {
+  inline def apply(init: (HTMLElement, js.Function0[MaybeSubscribable[String]], AllBindings) => Unit): `8` = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction3(init))
     __obj.asInstanceOf[`8`]
   }
   
-  @scala.inline
-  implicit class `8MutableBuilder`[Self <: `8`] (val x: Self) extends AnyVal {
+  extension [Self <: `8`](x: Self) {
     
-    @scala.inline
-    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[String]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[String]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
   }
 }

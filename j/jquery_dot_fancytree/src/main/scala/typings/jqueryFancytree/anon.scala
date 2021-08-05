@@ -14,20 +14,16 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(bottom: Double, top: Double): Bottom = {
+    inline def apply(bottom: Double, top: Double): Bottom = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,24 +46,19 @@ object anon {
   }
   object Cache {
     
-    @scala.inline
-    def apply(cache: Boolean, dataType: String, `type`: String): Cache = {
+    inline def apply(cache: Boolean, dataType: String, `type`: String): Cache = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cache]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+    extension [Self <: Cache](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+      inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

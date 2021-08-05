@@ -92,6 +92,5 @@ object nameResolveMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintNocacheRecursiveNameStreamTimeout: Nocache): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNocacheRecursiveNameStreamTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintNocacheRecursiveNameStreamTimeout: Nocache): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNocacheRecursiveNameStreamTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

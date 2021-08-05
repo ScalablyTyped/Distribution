@@ -18,16 +18,13 @@ trait HttpInterceptor extends StObject {
 }
 object HttpInterceptor {
   
-  @scala.inline
-  def apply(intercept: (HttpRequest[js.Any], HttpHandler) => Observable_[HttpEvent[js.Any]]): HttpInterceptor = {
+  inline def apply(intercept: (HttpRequest[js.Any], HttpHandler) => Observable_[HttpEvent[js.Any]]): HttpInterceptor = {
     val __obj = js.Dynamic.literal(intercept = js.Any.fromFunction2(intercept))
     __obj.asInstanceOf[HttpInterceptor]
   }
   
-  @scala.inline
-  implicit class HttpInterceptorMutableBuilder[Self <: HttpInterceptor] (val x: Self) extends AnyVal {
+  extension [Self <: HttpInterceptor](x: Self) {
     
-    @scala.inline
-    def setIntercept(value: (HttpRequest[js.Any], HttpHandler) => Observable_[HttpEvent[js.Any]]): Self = StObject.set(x, "intercept", js.Any.fromFunction2(value))
+    inline def setIntercept(value: (HttpRequest[js.Any], HttpHandler) => Observable_[HttpEvent[js.Any]]): Self = StObject.set(x, "intercept", js.Any.fromFunction2(value))
   }
 }

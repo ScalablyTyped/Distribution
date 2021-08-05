@@ -18,25 +18,19 @@ trait CompromisedCredentialsRiskConfigurationType extends StObject {
 }
 object CompromisedCredentialsRiskConfigurationType {
   
-  @scala.inline
-  def apply(Actions: CompromisedCredentialsActionsType): CompromisedCredentialsRiskConfigurationType = {
+  inline def apply(Actions: CompromisedCredentialsActionsType): CompromisedCredentialsRiskConfigurationType = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompromisedCredentialsRiskConfigurationType]
   }
   
-  @scala.inline
-  implicit class CompromisedCredentialsRiskConfigurationTypeMutableBuilder[Self <: CompromisedCredentialsRiskConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: CompromisedCredentialsRiskConfigurationType](x: Self) {
     
-    @scala.inline
-    def setActions(value: CompromisedCredentialsActionsType): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: CompromisedCredentialsActionsType): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFilter(value: EventFiltersType): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
+    inline def setEventFilter(value: EventFiltersType): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
+    inline def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
     
-    @scala.inline
-    def setEventFilterVarargs(value: EventFilterType*): Self = StObject.set(x, "EventFilter", js.Array(value :_*))
+    inline def setEventFilterVarargs(value: EventFilterType*): Self = StObject.set(x, "EventFilter", js.Array(value :_*))
   }
 }

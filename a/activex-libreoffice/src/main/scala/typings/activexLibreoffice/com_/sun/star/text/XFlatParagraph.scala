@@ -100,8 +100,7 @@ trait XFlatParagraph
 }
 object XFlatParagraph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LanguagePortions: SafeArray[Double],
     MarkupInfoContainer: XStringKeyMap,
     Text: String,
@@ -122,40 +121,28 @@ object XFlatParagraph {
     __obj.asInstanceOf[XFlatParagraph]
   }
   
-  @scala.inline
-  implicit class XFlatParagraphMutableBuilder[Self <: XFlatParagraph] (val x: Self) extends AnyVal {
+  extension [Self <: XFlatParagraph](x: Self) {
     
-    @scala.inline
-    def setChangeAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeAttributes", js.Any.fromFunction3(value))
+    inline def setChangeAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeAttributes", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setChangeText(value: (Double, Double, String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeText", js.Any.fromFunction4(value))
+    inline def setChangeText(value: (Double, Double, String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeText", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetLanguageOfText(value: (Double, Double) => Locale): Self = StObject.set(x, "getLanguageOfText", js.Any.fromFunction2(value))
+    inline def setGetLanguageOfText(value: (Double, Double) => Locale): Self = StObject.set(x, "getLanguageOfText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLanguagePortions(value: () => SafeArray[Double]): Self = StObject.set(x, "getLanguagePortions", js.Any.fromFunction0(value))
+    inline def setGetLanguagePortions(value: () => SafeArray[Double]): Self = StObject.set(x, "getLanguagePortions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrimaryLanguageOfText(value: (Double, Double) => Locale): Self = StObject.set(x, "getPrimaryLanguageOfText", js.Any.fromFunction2(value))
+    inline def setGetPrimaryLanguageOfText(value: (Double, Double) => Locale): Self = StObject.set(x, "getPrimaryLanguageOfText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsChecked(value: Double => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction1(value))
+    inline def setIsChecked(value: Double => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
+    inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLanguagePortions(value: SafeArray[Double]): Self = StObject.set(x, "LanguagePortions", value.asInstanceOf[js.Any])
+    inline def setLanguagePortions(value: SafeArray[Double]): Self = StObject.set(x, "LanguagePortions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetChecked(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setChecked", js.Any.fromFunction2(value))
+    inline def setSetChecked(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setChecked", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

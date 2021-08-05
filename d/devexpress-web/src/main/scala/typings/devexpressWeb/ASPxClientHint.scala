@@ -23,8 +23,7 @@ trait ASPxClientHint
 }
 object ASPxClientHint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -47,13 +46,10 @@ object ASPxClientHint {
     __obj.asInstanceOf[ASPxClientHint]
   }
   
-  @scala.inline
-  implicit class ASPxClientHintMutableBuilder[Self <: ASPxClientHint] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHint](x: Self) {
     
-    @scala.inline
-    def setHiding(value: ASPxClientEvent[ASPxClientHintHidingEventHandler]): Self = StObject.set(x, "Hiding", value.asInstanceOf[js.Any])
+    inline def setHiding(value: ASPxClientEvent[ASPxClientHintHidingEventHandler]): Self = StObject.set(x, "Hiding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowing(value: ASPxClientEvent[ASPxClientHintShowingEventHandler]): Self = StObject.set(x, "Showing", value.asInstanceOf[js.Any])
+    inline def setShowing(value: ASPxClientEvent[ASPxClientHintShowingEventHandler]): Self = StObject.set(x, "Showing", value.asInstanceOf[js.Any])
   }
 }

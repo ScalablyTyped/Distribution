@@ -27,37 +27,27 @@ trait SchemaStreamingComputationTask extends StObject {
 }
 object SchemaStreamingComputationTask {
   
-  @scala.inline
-  def apply(): SchemaStreamingComputationTask = {
+  inline def apply(): SchemaStreamingComputationTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStreamingComputationTask]
   }
   
-  @scala.inline
-  implicit class SchemaStreamingComputationTaskMutableBuilder[Self <: SchemaStreamingComputationTask] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStreamingComputationTask](x: Self) {
     
-    @scala.inline
-    def setComputationRanges(value: js.Array[SchemaStreamingComputationRanges]): Self = StObject.set(x, "computationRanges", value.asInstanceOf[js.Any])
+    inline def setComputationRanges(value: js.Array[SchemaStreamingComputationRanges]): Self = StObject.set(x, "computationRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputationRangesUndefined: Self = StObject.set(x, "computationRanges", js.undefined)
+    inline def setComputationRangesUndefined: Self = StObject.set(x, "computationRanges", js.undefined)
     
-    @scala.inline
-    def setComputationRangesVarargs(value: SchemaStreamingComputationRanges*): Self = StObject.set(x, "computationRanges", js.Array(value :_*))
+    inline def setComputationRangesVarargs(value: SchemaStreamingComputationRanges*): Self = StObject.set(x, "computationRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setDataDisks(value: js.Array[SchemaMountedDataDisk]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
+    inline def setDataDisks(value: js.Array[SchemaMountedDataDisk]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
+    inline def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
-    @scala.inline
-    def setDataDisksVarargs(value: SchemaMountedDataDisk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
+    inline def setDataDisksVarargs(value: SchemaMountedDataDisk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskType(value: String): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+    inline def setTaskType(value: String): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
+    inline def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
   }
 }

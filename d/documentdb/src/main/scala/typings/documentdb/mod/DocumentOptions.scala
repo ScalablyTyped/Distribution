@@ -13,19 +13,15 @@ trait DocumentOptions
 }
 object DocumentOptions {
   
-  @scala.inline
-  def apply(): DocumentOptions = {
+  inline def apply(): DocumentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentOptions]
   }
   
-  @scala.inline
-  implicit class DocumentOptionsMutableBuilder[Self <: DocumentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentOptions](x: Self) {
     
-    @scala.inline
-    def setDisableAutomaticIdGeneration(value: Boolean): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
+    inline def setDisableAutomaticIdGeneration(value: Boolean): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAutomaticIdGenerationUndefined: Self = StObject.set(x, "disableAutomaticIdGeneration", js.undefined)
+    inline def setDisableAutomaticIdGenerationUndefined: Self = StObject.set(x, "disableAutomaticIdGeneration", js.undefined)
   }
 }

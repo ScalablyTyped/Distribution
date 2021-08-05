@@ -17,25 +17,19 @@ trait CreatePaymentMethodOptions extends StObject {
 }
 object CreatePaymentMethodOptions {
   
-  @scala.inline
-  def apply(): CreatePaymentMethodOptions = {
+  inline def apply(): CreatePaymentMethodOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePaymentMethodOptions]
   }
   
-  @scala.inline
-  implicit class CreatePaymentMethodOptionsMutableBuilder[Self <: CreatePaymentMethodOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePaymentMethodOptions](x: Self) {
     
-    @scala.inline
-    def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
+    inline def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
+    inline def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

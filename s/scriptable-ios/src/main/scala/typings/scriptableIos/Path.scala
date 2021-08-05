@@ -109,8 +109,7 @@ trait Path extends StObject {
 }
 object Path {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCurve: (Point, Point, Point) => Unit,
     addEllipse: Rect => Unit,
     addLine: Point => Unit,
@@ -126,37 +125,26 @@ object Path {
     __obj.asInstanceOf[Path]
   }
   
-  @scala.inline
-  implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+  extension [Self <: Path](x: Self) {
     
-    @scala.inline
-    def setAddCurve(value: (Point, Point, Point) => Unit): Self = StObject.set(x, "addCurve", js.Any.fromFunction3(value))
+    inline def setAddCurve(value: (Point, Point, Point) => Unit): Self = StObject.set(x, "addCurve", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddEllipse(value: Rect => Unit): Self = StObject.set(x, "addEllipse", js.Any.fromFunction1(value))
+    inline def setAddEllipse(value: Rect => Unit): Self = StObject.set(x, "addEllipse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddLine(value: Point => Unit): Self = StObject.set(x, "addLine", js.Any.fromFunction1(value))
+    inline def setAddLine(value: Point => Unit): Self = StObject.set(x, "addLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddLines(value: js.Array[Point] => Unit): Self = StObject.set(x, "addLines", js.Any.fromFunction1(value))
+    inline def setAddLines(value: js.Array[Point] => Unit): Self = StObject.set(x, "addLines", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddQuadCurve(value: (Point, Point) => Unit): Self = StObject.set(x, "addQuadCurve", js.Any.fromFunction2(value))
+    inline def setAddQuadCurve(value: (Point, Point) => Unit): Self = StObject.set(x, "addQuadCurve", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddRect(value: Rect => Unit): Self = StObject.set(x, "addRect", js.Any.fromFunction1(value))
+    inline def setAddRect(value: Rect => Unit): Self = StObject.set(x, "addRect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddRects(value: js.Array[Rect] => Unit): Self = StObject.set(x, "addRects", js.Any.fromFunction1(value))
+    inline def setAddRects(value: js.Array[Rect] => Unit): Self = StObject.set(x, "addRects", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddRoundedRect(value: (Rect, Double, Double) => Unit): Self = StObject.set(x, "addRoundedRect", js.Any.fromFunction3(value))
+    inline def setAddRoundedRect(value: (Rect, Double, Double) => Unit): Self = StObject.set(x, "addRoundedRect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCloseSubpath(value: () => Unit): Self = StObject.set(x, "closeSubpath", js.Any.fromFunction0(value))
+    inline def setCloseSubpath(value: () => Unit): Self = StObject.set(x, "closeSubpath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMove(value: Point => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
+    inline def setMove(value: Point => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
   }
 }

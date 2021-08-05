@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmartTagProperty extends StObject {
   
-  @JSName("Access.SmartTagProperty_typekey")
+  /* private */ @JSName("Access.SmartTagProperty_typekey")
   var AccessDotSmartTagProperty_typekey: SmartTagProperty
   
   def Delete(): Unit
@@ -19,8 +19,7 @@ trait SmartTagProperty extends StObject {
 }
 object SmartTagProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotSmartTagProperty_typekey: SmartTagProperty,
     Delete: () => Unit,
     IsMemberSafe: Double => Boolean,
@@ -32,22 +31,16 @@ object SmartTagProperty {
     __obj.asInstanceOf[SmartTagProperty]
   }
   
-  @scala.inline
-  implicit class SmartTagPropertyMutableBuilder[Self <: SmartTagProperty] (val x: Self) extends AnyVal {
+  extension [Self <: SmartTagProperty](x: Self) {
     
-    @scala.inline
-    def setAccessDotSmartTagProperty_typekey(value: SmartTagProperty): Self = StObject.set(x, "Access.SmartTagProperty_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotSmartTagProperty_typekey(value: SmartTagProperty): Self = StObject.set(x, "Access.SmartTagProperty_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

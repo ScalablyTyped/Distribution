@@ -29,31 +29,23 @@ trait ParamsResourceRelyingpartyGetprojectconfig
 }
 object ParamsResourceRelyingpartyGetprojectconfig {
   
-  @scala.inline
-  def apply(): ParamsResourceRelyingpartyGetprojectconfig = {
+  inline def apply(): ParamsResourceRelyingpartyGetprojectconfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRelyingpartyGetprojectconfig]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRelyingpartyGetprojectconfigMutableBuilder[Self <: ParamsResourceRelyingpartyGetprojectconfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRelyingpartyGetprojectconfig](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
+    inline def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
+    inline def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
     
-    @scala.inline
-    def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
+    inline def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
+    inline def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
   }
 }

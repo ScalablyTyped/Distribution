@@ -10,19 +10,15 @@ trait IntrinsicAttributes extends StObject {
 }
 object IntrinsicAttributes {
   
-  @scala.inline
-  def apply(): IntrinsicAttributes = {
+  inline def apply(): IntrinsicAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntrinsicAttributes]
   }
   
-  @scala.inline
-  implicit class IntrinsicAttributesMutableBuilder[Self <: IntrinsicAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: IntrinsicAttributes](x: Self) {
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

@@ -38,8 +38,7 @@ trait SchedulerLocaleLabels extends StObject {
 }
 object SchedulerLocaleLabels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     confirm_closing: String,
     confirm_deleting: String,
     day_tab: String,
@@ -60,52 +59,36 @@ object SchedulerLocaleLabels {
     __obj.asInstanceOf[SchedulerLocaleLabels]
   }
   
-  @scala.inline
-  implicit class SchedulerLocaleLabelsMutableBuilder[Self <: SchedulerLocaleLabels] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerLocaleLabels](x: Self) {
     
-    @scala.inline
-    def setConfirm_closing(value: String): Self = StObject.set(x, "confirm_closing", value.asInstanceOf[js.Any])
+    inline def setConfirm_closing(value: String): Self = StObject.set(x, "confirm_closing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirm_deleting(value: String): Self = StObject.set(x, "confirm_deleting", value.asInstanceOf[js.Any])
+    inline def setConfirm_deleting(value: String): Self = StObject.set(x, "confirm_deleting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay_tab(value: String): Self = StObject.set(x, "day_tab", value.asInstanceOf[js.Any])
+    inline def setDay_tab(value: String): Self = StObject.set(x, "day_tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDhx_cal_today_button(value: String): Self = StObject.set(x, "dhx_cal_today_button", value.asInstanceOf[js.Any])
+    inline def setDhx_cal_today_button(value: String): Self = StObject.set(x, "dhx_cal_today_button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon_cancel(value: String): Self = StObject.set(x, "icon_cancel", value.asInstanceOf[js.Any])
+    inline def setIcon_cancel(value: String): Self = StObject.set(x, "icon_cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon_delete(value: String): Self = StObject.set(x, "icon_delete", value.asInstanceOf[js.Any])
+    inline def setIcon_delete(value: String): Self = StObject.set(x, "icon_delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon_details(value: String): Self = StObject.set(x, "icon_details", value.asInstanceOf[js.Any])
+    inline def setIcon_details(value: String): Self = StObject.set(x, "icon_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon_edit(value: String): Self = StObject.set(x, "icon_edit", value.asInstanceOf[js.Any])
+    inline def setIcon_edit(value: String): Self = StObject.set(x, "icon_edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon_save(value: String): Self = StObject.set(x, "icon_save", value.asInstanceOf[js.Any])
+    inline def setIcon_save(value: String): Self = StObject.set(x, "icon_save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth_tab(value: String): Self = StObject.set(x, "month_tab", value.asInstanceOf[js.Any])
+    inline def setMonth_tab(value: String): Self = StObject.set(x, "month_tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_event(value: String): Self = StObject.set(x, "new_event", value.asInstanceOf[js.Any])
+    inline def setNew_event(value: String): Self = StObject.set(x, "new_event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection_description(value: String): Self = StObject.set(x, "section_description", value.asInstanceOf[js.Any])
+    inline def setSection_description(value: String): Self = StObject.set(x, "section_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection_time(value: String): Self = StObject.set(x, "section_time", value.asInstanceOf[js.Any])
+    inline def setSection_time(value: String): Self = StObject.set(x, "section_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit_tab(value: String): Self = StObject.set(x, "unit_tab", value.asInstanceOf[js.Any])
+    inline def setUnit_tab(value: String): Self = StObject.set(x, "unit_tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek_tab(value: String): Self = StObject.set(x, "week_tab", value.asInstanceOf[js.Any])
+    inline def setWeek_tab(value: String): Self = StObject.set(x, "week_tab", value.asInstanceOf[js.Any])
   }
 }

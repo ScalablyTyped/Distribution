@@ -10,16 +10,13 @@ trait WebGLRenderbuffer extends StObject {
 }
 object WebGLRenderbuffer {
   
-  @scala.inline
-  def apply(__WebGLRenderbuffer: Unit): WebGLRenderbuffer = {
+  inline def apply(__WebGLRenderbuffer: Unit): WebGLRenderbuffer = {
     val __obj = js.Dynamic.literal(__WebGLRenderbuffer = __WebGLRenderbuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLRenderbuffer]
   }
   
-  @scala.inline
-  implicit class WebGLRenderbufferMutableBuilder[Self <: WebGLRenderbuffer] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLRenderbuffer](x: Self) {
     
-    @scala.inline
-    def set__WebGLRenderbuffer(value: Unit): Self = StObject.set(x, "__WebGLRenderbuffer", value.asInstanceOf[js.Any])
+    inline def set__WebGLRenderbuffer(value: Unit): Self = StObject.set(x, "__WebGLRenderbuffer", value.asInstanceOf[js.Any])
   }
 }

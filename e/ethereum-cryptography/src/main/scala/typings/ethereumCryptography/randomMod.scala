@@ -11,9 +11,7 @@ object randomMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRandomBytes(bytes: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def getRandomBytes(bytes: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
-  @scala.inline
-  def getRandomBytesSync(bytes: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytesSync")(bytes.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def getRandomBytesSync(bytes: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytesSync")(bytes.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

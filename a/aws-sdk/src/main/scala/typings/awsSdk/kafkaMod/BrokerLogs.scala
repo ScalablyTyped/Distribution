@@ -14,31 +14,23 @@ trait BrokerLogs extends StObject {
 }
 object BrokerLogs {
   
-  @scala.inline
-  def apply(): BrokerLogs = {
+  inline def apply(): BrokerLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrokerLogs]
   }
   
-  @scala.inline
-  implicit class BrokerLogsMutableBuilder[Self <: BrokerLogs] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerLogs](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLogs(value: CloudWatchLogs): Self = StObject.set(x, "CloudWatchLogs", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogs(value: CloudWatchLogs): Self = StObject.set(x, "CloudWatchLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLogsUndefined: Self = StObject.set(x, "CloudWatchLogs", js.undefined)
+    inline def setCloudWatchLogsUndefined: Self = StObject.set(x, "CloudWatchLogs", js.undefined)
     
-    @scala.inline
-    def setFirehose(value: Firehose): Self = StObject.set(x, "Firehose", value.asInstanceOf[js.Any])
+    inline def setFirehose(value: Firehose): Self = StObject.set(x, "Firehose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirehoseUndefined: Self = StObject.set(x, "Firehose", js.undefined)
+    inline def setFirehoseUndefined: Self = StObject.set(x, "Firehose", js.undefined)
     
-    @scala.inline
-    def setS3(value: S3): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
   }
 }

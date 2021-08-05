@@ -23,37 +23,27 @@ trait FilterLogEventsResponse extends StObject {
 }
 object FilterLogEventsResponse {
   
-  @scala.inline
-  def apply(): FilterLogEventsResponse = {
+  inline def apply(): FilterLogEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterLogEventsResponse]
   }
   
-  @scala.inline
-  implicit class FilterLogEventsResponseMutableBuilder[Self <: FilterLogEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FilterLogEventsResponse](x: Self) {
     
-    @scala.inline
-    def setEvents(value: FilteredLogEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: FilteredLogEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: FilteredLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: FilteredLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSearchedLogStreams(value: SearchedLogStreams): Self = StObject.set(x, "searchedLogStreams", value.asInstanceOf[js.Any])
+    inline def setSearchedLogStreams(value: SearchedLogStreams): Self = StObject.set(x, "searchedLogStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchedLogStreamsUndefined: Self = StObject.set(x, "searchedLogStreams", js.undefined)
+    inline def setSearchedLogStreamsUndefined: Self = StObject.set(x, "searchedLogStreams", js.undefined)
     
-    @scala.inline
-    def setSearchedLogStreamsVarargs(value: SearchedLogStream*): Self = StObject.set(x, "searchedLogStreams", js.Array(value :_*))
+    inline def setSearchedLogStreamsVarargs(value: SearchedLogStream*): Self = StObject.set(x, "searchedLogStreams", js.Array(value :_*))
   }
 }

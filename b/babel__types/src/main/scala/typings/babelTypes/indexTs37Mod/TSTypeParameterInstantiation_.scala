@@ -17,23 +17,18 @@ trait TSTypeParameterInstantiation_
 }
 object TSTypeParameterInstantiation_ {
   
-  @scala.inline
-  def apply(params: js.Array[TSType]): TSTypeParameterInstantiation_ = {
+  inline def apply(params: js.Array[TSType]): TSTypeParameterInstantiation_ = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeParameterInstantiation")
     __obj.asInstanceOf[TSTypeParameterInstantiation_]
   }
   
-  @scala.inline
-  implicit class TSTypeParameterInstantiation_MutableBuilder[Self <: TSTypeParameterInstantiation_] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeParameterInstantiation_](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Array[TSType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[TSType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TSTypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSTypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

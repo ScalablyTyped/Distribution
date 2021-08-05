@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fold-to-ascii"
-version := "5.0-dt-20200916Z-91328d"
+version := "5.0-dt-20200916Z-d117ce"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

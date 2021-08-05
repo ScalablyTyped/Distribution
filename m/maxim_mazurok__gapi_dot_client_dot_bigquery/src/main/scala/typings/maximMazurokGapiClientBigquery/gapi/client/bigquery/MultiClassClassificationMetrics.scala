@@ -14,28 +14,21 @@ trait MultiClassClassificationMetrics extends StObject {
 }
 object MultiClassClassificationMetrics {
   
-  @scala.inline
-  def apply(): MultiClassClassificationMetrics = {
+  inline def apply(): MultiClassClassificationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiClassClassificationMetrics]
   }
   
-  @scala.inline
-  implicit class MultiClassClassificationMetricsMutableBuilder[Self <: MultiClassClassificationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: MultiClassClassificationMetrics](x: Self) {
     
-    @scala.inline
-    def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
+    inline def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
+    inline def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
     
-    @scala.inline
-    def setConfusionMatrixList(value: js.Array[ConfusionMatrix]): Self = StObject.set(x, "confusionMatrixList", value.asInstanceOf[js.Any])
+    inline def setConfusionMatrixList(value: js.Array[ConfusionMatrix]): Self = StObject.set(x, "confusionMatrixList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfusionMatrixListUndefined: Self = StObject.set(x, "confusionMatrixList", js.undefined)
+    inline def setConfusionMatrixListUndefined: Self = StObject.set(x, "confusionMatrixList", js.undefined)
     
-    @scala.inline
-    def setConfusionMatrixListVarargs(value: ConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value :_*))
+    inline def setConfusionMatrixListVarargs(value: ConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value :_*))
   }
 }

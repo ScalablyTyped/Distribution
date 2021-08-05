@@ -16,25 +16,19 @@ trait Body extends StObject {
 }
 object Body {
   
-  @scala.inline
-  def apply(body: Null, headers: Null, statusCode: Null, warnings: Null): Body = {
+  inline def apply(body: Null, headers: Null, statusCode: Null, warnings: Null): Body = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
   }
   
-  @scala.inline
-  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+  extension [Self <: Body](x: Self) {
     
-    @scala.inline
-    def setBody(value: Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Null): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Null): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Null): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Null): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: Null): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: Null): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
   }
 }

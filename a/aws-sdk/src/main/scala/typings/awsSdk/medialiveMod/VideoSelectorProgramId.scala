@@ -13,19 +13,15 @@ trait VideoSelectorProgramId extends StObject {
 }
 object VideoSelectorProgramId {
   
-  @scala.inline
-  def apply(): VideoSelectorProgramId = {
+  inline def apply(): VideoSelectorProgramId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSelectorProgramId]
   }
   
-  @scala.inline
-  implicit class VideoSelectorProgramIdMutableBuilder[Self <: VideoSelectorProgramId] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSelectorProgramId](x: Self) {
     
-    @scala.inline
-    def setProgramId(value: integerMin0Max65536): Self = StObject.set(x, "ProgramId", value.asInstanceOf[js.Any])
+    inline def setProgramId(value: integerMin0Max65536): Self = StObject.set(x, "ProgramId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramIdUndefined: Self = StObject.set(x, "ProgramId", js.undefined)
+    inline def setProgramIdUndefined: Self = StObject.set(x, "ProgramId", js.undefined)
   }
 }

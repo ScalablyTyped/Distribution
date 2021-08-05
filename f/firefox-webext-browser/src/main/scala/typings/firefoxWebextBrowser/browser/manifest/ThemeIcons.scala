@@ -17,22 +17,17 @@ trait ThemeIcons extends StObject {
 }
 object ThemeIcons {
   
-  @scala.inline
-  def apply(dark: ExtensionURL, light: ExtensionURL, size: Double): ThemeIcons = {
+  inline def apply(dark: ExtensionURL, light: ExtensionURL, size: Double): ThemeIcons = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeIcons]
   }
   
-  @scala.inline
-  implicit class ThemeIconsMutableBuilder[Self <: ThemeIcons] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeIcons](x: Self) {
     
-    @scala.inline
-    def setDark(value: ExtensionURL): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: ExtensionURL): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLight(value: ExtensionURL): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: ExtensionURL): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

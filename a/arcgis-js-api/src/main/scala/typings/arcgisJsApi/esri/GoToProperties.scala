@@ -15,19 +15,15 @@ trait GoToProperties extends StObject {
 }
 object GoToProperties {
   
-  @scala.inline
-  def apply(): GoToProperties = {
+  inline def apply(): GoToProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoToProperties]
   }
   
-  @scala.inline
-  implicit class GoToPropertiesMutableBuilder[Self <: GoToProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GoToProperties](x: Self) {
     
-    @scala.inline
-    def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
+    inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoToOverrideUndefined: Self = StObject.set(x, "goToOverride", js.undefined)
+    inline def setGoToOverrideUndefined: Self = StObject.set(x, "goToOverride", js.undefined)
   }
 }

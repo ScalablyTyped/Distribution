@@ -136,8 +136,7 @@ trait Descriptions extends StObject {
 }
 object Descriptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayTitles: Boolean,
     nobr: Boolean,
     onProcess: PassageBase => String,
@@ -148,28 +147,20 @@ object Descriptions {
     __obj.asInstanceOf[Descriptions]
   }
   
-  @scala.inline
-  implicit class DescriptionsMutableBuilder[Self <: Descriptions] (val x: Self) extends AnyVal {
+  extension [Self <: Descriptions](x: Self) {
     
-    @scala.inline
-    def setDescriptions(value: `true` | StringDictionary[String] | DescriptionHandler): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+    inline def setDescriptions(value: `true` | StringDictionary[String] | DescriptionHandler): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionsNull: Self = StObject.set(x, "descriptions", null)
+    inline def setDescriptionsNull: Self = StObject.set(x, "descriptions", null)
     
-    @scala.inline
-    def setDisplayTitles(value: Boolean): Self = StObject.set(x, "displayTitles", value.asInstanceOf[js.Any])
+    inline def setDisplayTitles(value: Boolean): Self = StObject.set(x, "displayTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNobr(value: Boolean): Self = StObject.set(x, "nobr", value.asInstanceOf[js.Any])
+    inline def setNobr(value: Boolean): Self = StObject.set(x, "nobr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnProcess(value: PassageBase => String): Self = StObject.set(x, "onProcess", js.Any.fromFunction1(value))
+    inline def setOnProcess(value: PassageBase => String): Self = StObject.set(x, "onProcess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionOut(value: String | Double): Self = StObject.set(x, "transitionOut", value.asInstanceOf[js.Any])
+    inline def setTransitionOut(value: String | Double): Self = StObject.set(x, "transitionOut", value.asInstanceOf[js.Any])
   }
 }

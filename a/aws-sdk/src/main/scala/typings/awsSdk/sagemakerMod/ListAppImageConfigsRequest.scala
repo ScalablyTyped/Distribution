@@ -53,67 +53,47 @@ trait ListAppImageConfigsRequest extends StObject {
 }
 object ListAppImageConfigsRequest {
   
-  @scala.inline
-  def apply(): ListAppImageConfigsRequest = {
+  inline def apply(): ListAppImageConfigsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAppImageConfigsRequest]
   }
   
-  @scala.inline
-  implicit class ListAppImageConfigsRequestMutableBuilder[Self <: ListAppImageConfigsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAppImageConfigsRequest](x: Self) {
     
-    @scala.inline
-    def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
+    inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    @scala.inline
-    def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
+    inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "ModifiedTimeAfter", value.asInstanceOf[js.Any])
+    inline def setModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "ModifiedTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedTimeAfterUndefined: Self = StObject.set(x, "ModifiedTimeAfter", js.undefined)
+    inline def setModifiedTimeAfterUndefined: Self = StObject.set(x, "ModifiedTimeAfter", js.undefined)
     
-    @scala.inline
-    def setModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "ModifiedTimeBefore", value.asInstanceOf[js.Any])
+    inline def setModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "ModifiedTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedTimeBeforeUndefined: Self = StObject.set(x, "ModifiedTimeBefore", js.undefined)
+    inline def setModifiedTimeBeforeUndefined: Self = StObject.set(x, "ModifiedTimeBefore", js.undefined)
     
-    @scala.inline
-    def setNameContains(value: AppImageConfigName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
+    inline def setNameContains(value: AppImageConfigName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
+    inline def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: AppImageConfigSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: AppImageConfigSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

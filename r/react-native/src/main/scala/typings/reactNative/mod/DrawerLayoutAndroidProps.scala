@@ -109,76 +109,53 @@ trait DrawerLayoutAndroidProps
 }
 object DrawerLayoutAndroidProps {
   
-  @scala.inline
-  def apply(renderNavigationView: () => Element): DrawerLayoutAndroidProps = {
+  inline def apply(renderNavigationView: () => Element): DrawerLayoutAndroidProps = {
     val __obj = js.Dynamic.literal(renderNavigationView = js.Any.fromFunction0(renderNavigationView))
     __obj.asInstanceOf[DrawerLayoutAndroidProps]
   }
   
-  @scala.inline
-  implicit class DrawerLayoutAndroidPropsMutableBuilder[Self <: DrawerLayoutAndroidProps] (val x: Self) extends AnyVal {
+  extension [Self <: DrawerLayoutAndroidProps](x: Self) {
     
-    @scala.inline
-    def setDrawerBackgroundColor(value: ColorValue): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setDrawerBackgroundColor(value: ColorValue): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
+    inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
+    inline def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
+    inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
     
-    @scala.inline
-    def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+    inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
+    inline def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
     
-    @scala.inline
-    def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
+    inline def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
+    inline def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
     
-    @scala.inline
-    def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
+    inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
-    @scala.inline
-    def setOnDrawerClose(value: () => Unit): Self = StObject.set(x, "onDrawerClose", js.Any.fromFunction0(value))
+    inline def setOnDrawerClose(value: () => Unit): Self = StObject.set(x, "onDrawerClose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDrawerCloseUndefined: Self = StObject.set(x, "onDrawerClose", js.undefined)
+    inline def setOnDrawerCloseUndefined: Self = StObject.set(x, "onDrawerClose", js.undefined)
     
-    @scala.inline
-    def setOnDrawerOpen(value: () => Unit): Self = StObject.set(x, "onDrawerOpen", js.Any.fromFunction0(value))
+    inline def setOnDrawerOpen(value: () => Unit): Self = StObject.set(x, "onDrawerOpen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDrawerOpenUndefined: Self = StObject.set(x, "onDrawerOpen", js.undefined)
+    inline def setOnDrawerOpenUndefined: Self = StObject.set(x, "onDrawerOpen", js.undefined)
     
-    @scala.inline
-    def setOnDrawerSlide(value: /* event */ DrawerSlideEvent => Unit): Self = StObject.set(x, "onDrawerSlide", js.Any.fromFunction1(value))
+    inline def setOnDrawerSlide(value: /* event */ DrawerSlideEvent => Unit): Self = StObject.set(x, "onDrawerSlide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDrawerSlideUndefined: Self = StObject.set(x, "onDrawerSlide", js.undefined)
+    inline def setOnDrawerSlideUndefined: Self = StObject.set(x, "onDrawerSlide", js.undefined)
     
-    @scala.inline
-    def setOnDrawerStateChanged(value: /* event */ Idle | Dragging | Settling => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
+    inline def setOnDrawerStateChanged(value: /* event */ Idle | Dragging | Settling => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
+    inline def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
     
-    @scala.inline
-    def setRenderNavigationView(value: () => Element): Self = StObject.set(x, "renderNavigationView", js.Any.fromFunction0(value))
+    inline def setRenderNavigationView(value: () => Element): Self = StObject.set(x, "renderNavigationView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatusBarBackgroundColor(value: ColorValue): Self = StObject.set(x, "statusBarBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setStatusBarBackgroundColor(value: ColorValue): Self = StObject.set(x, "statusBarBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarBackgroundColorUndefined: Self = StObject.set(x, "statusBarBackgroundColor", js.undefined)
+    inline def setStatusBarBackgroundColorUndefined: Self = StObject.set(x, "statusBarBackgroundColor", js.undefined)
   }
 }

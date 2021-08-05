@@ -23,14 +23,12 @@ object blockStatMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/block/stat", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/block/stat", "command")
@@ -41,6 +39,5 @@ object blockStatMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxKeyCidBaseTimeout: Ctx): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxKeyCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxKeyCidBaseTimeout: Ctx): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxKeyCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

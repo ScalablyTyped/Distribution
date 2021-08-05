@@ -12,14 +12,12 @@ object intlMessageformatParserNumbers {
     extends StObject
        with SKELETON_TYPE
        with typings.intlMessageformatParser.typesMod.SKELETON_TYPE
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
     extends StObject
        with SKELETON_TYPE
        with typings.intlMessageformatParser.typesMod.SKELETON_TYPE
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
 }

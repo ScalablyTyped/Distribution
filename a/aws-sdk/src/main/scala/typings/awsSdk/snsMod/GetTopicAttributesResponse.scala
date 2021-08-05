@@ -13,19 +13,15 @@ trait GetTopicAttributesResponse extends StObject {
 }
 object GetTopicAttributesResponse {
   
-  @scala.inline
-  def apply(): GetTopicAttributesResponse = {
+  inline def apply(): GetTopicAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTopicAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetTopicAttributesResponseMutableBuilder[Self <: GetTopicAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTopicAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: TopicAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: TopicAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
   }
 }

@@ -27,7 +27,6 @@ object knockoutCustomAttributeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+    inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   }
 }

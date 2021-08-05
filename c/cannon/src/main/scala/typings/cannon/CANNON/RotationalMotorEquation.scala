@@ -20,8 +20,7 @@ trait RotationalMotorEquation
 }
 object RotationalMotorEquation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: Double,
     addToWlamda: Double => Double,
     axisA: Vec3,
@@ -52,22 +51,16 @@ object RotationalMotorEquation {
     __obj.asInstanceOf[RotationalMotorEquation]
   }
   
-  @scala.inline
-  implicit class RotationalMotorEquationMutableBuilder[Self <: RotationalMotorEquation] (val x: Self) extends AnyVal {
+  extension [Self <: RotationalMotorEquation](x: Self) {
     
-    @scala.inline
-    def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
+    inline def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisB(value: Vec3): Self = StObject.set(x, "axisB", value.asInstanceOf[js.Any])
+    inline def setAxisB(value: Vec3): Self = StObject.set(x, "axisB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
+    inline def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvLi(value: Mat3): Self = StObject.set(x, "invLi", value.asInstanceOf[js.Any])
+    inline def setInvLi(value: Mat3): Self = StObject.set(x, "invLi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVelocity(value: Double): Self = StObject.set(x, "targetVelocity", value.asInstanceOf[js.Any])
+    inline def setTargetVelocity(value: Double): Self = StObject.set(x, "targetVelocity", value.asInstanceOf[js.Any])
   }
 }

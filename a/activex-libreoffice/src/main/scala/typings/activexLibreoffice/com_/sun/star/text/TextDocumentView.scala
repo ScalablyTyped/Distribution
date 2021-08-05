@@ -52,8 +52,7 @@ trait TextDocumentView
 }
 object TextDocumentView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsConstantSpellcheck: Boolean,
     IsHideSpellMarks: Boolean,
     LineCount: Double,
@@ -84,19 +83,14 @@ object TextDocumentView {
     __obj.asInstanceOf[TextDocumentView]
   }
   
-  @scala.inline
-  implicit class TextDocumentViewMutableBuilder[Self <: TextDocumentView] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentView](x: Self) {
     
-    @scala.inline
-    def setIsConstantSpellcheck(value: Boolean): Self = StObject.set(x, "IsConstantSpellcheck", value.asInstanceOf[js.Any])
+    inline def setIsConstantSpellcheck(value: Boolean): Self = StObject.set(x, "IsConstantSpellcheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHideSpellMarks(value: Boolean): Self = StObject.set(x, "IsHideSpellMarks", value.asInstanceOf[js.Any])
+    inline def setIsHideSpellMarks(value: Boolean): Self = StObject.set(x, "IsHideSpellMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCount(value: Double): Self = StObject.set(x, "LineCount", value.asInstanceOf[js.Any])
+    inline def setLineCount(value: Double): Self = StObject.set(x, "LineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
+    inline def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
   }
 }

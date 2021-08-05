@@ -15,6 +15,5 @@ object global {
   @JSGlobal("AnimationFrame")
   @js.native
   def AnimationFrame: typings.animationFrame.AnimationFrame = js.native
-  @scala.inline
-  def AnimationFrame_=(x: typings.animationFrame.AnimationFrame): Unit = js.Dynamic.global.updateDynamic("AnimationFrame")(x.asInstanceOf[js.Any])
+  inline def AnimationFrame_=(x: typings.animationFrame.AnimationFrame): Unit = js.Dynamic.global.updateDynamic("AnimationFrame")(x.asInstanceOf[js.Any])
 }

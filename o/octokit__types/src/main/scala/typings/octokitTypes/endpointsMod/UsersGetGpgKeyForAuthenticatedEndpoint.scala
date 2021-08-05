@@ -10,16 +10,13 @@ trait UsersGetGpgKeyForAuthenticatedEndpoint extends StObject {
 }
 object UsersGetGpgKeyForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(gpg_key_id: Double): UsersGetGpgKeyForAuthenticatedEndpoint = {
+  inline def apply(gpg_key_id: Double): UsersGetGpgKeyForAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal(gpg_key_id = gpg_key_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersGetGpgKeyForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersGetGpgKeyForAuthenticatedEndpointMutableBuilder[Self <: UsersGetGpgKeyForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersGetGpgKeyForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setGpg_key_id(value: Double): Self = StObject.set(x, "gpg_key_id", value.asInstanceOf[js.Any])
+    inline def setGpg_key_id(value: Double): Self = StObject.set(x, "gpg_key_id", value.asInstanceOf[js.Any])
   }
 }

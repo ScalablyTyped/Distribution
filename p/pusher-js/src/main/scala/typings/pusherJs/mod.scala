@@ -37,26 +37,20 @@ object mod extends Shortcut {
   }
   object AuthConfig {
     
-    @scala.inline
-    def apply(): AuthConfig = {
+    inline def apply(): AuthConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthConfig]
     }
     
-    @scala.inline
-    implicit class AuthConfigMutableBuilder[Self <: AuthConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AuthConfig](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
   }
   
@@ -68,23 +62,18 @@ object mod extends Shortcut {
   }
   object AuthInfo {
     
-    @scala.inline
-    def apply(auth: String): AuthInfo = {
+    inline def apply(auth: String): AuthInfo = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthInfo]
     }
     
-    @scala.inline
-    implicit class AuthInfoMutableBuilder[Self <: AuthInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AuthInfo](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel_data(value: String): Self = StObject.set(x, "channel_data", value.asInstanceOf[js.Any])
+      inline def setChannel_data(value: String): Self = StObject.set(x, "channel_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel_dataUndefined: Self = StObject.set(x, "channel_data", js.undefined)
+      inline def setChannel_dataUndefined: Self = StObject.set(x, "channel_data", js.undefined)
     }
   }
   
@@ -207,140 +196,96 @@ object mod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setActivityTimeout(value: Double): Self = StObject.set(x, "activityTimeout", value.asInstanceOf[js.Any])
+      inline def setActivityTimeout(value: Double): Self = StObject.set(x, "activityTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTimeoutUndefined: Self = StObject.set(x, "activityTimeout", js.undefined)
+      inline def setActivityTimeoutUndefined: Self = StObject.set(x, "activityTimeout", js.undefined)
       
-      @scala.inline
-      def setAuth(value: AuthConfig): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: AuthConfig): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthEndpoint(value: String): Self = StObject.set(x, "authEndpoint", value.asInstanceOf[js.Any])
+      inline def setAuthEndpoint(value: String): Self = StObject.set(x, "authEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthEndpointUndefined: Self = StObject.set(x, "authEndpoint", js.undefined)
+      inline def setAuthEndpointUndefined: Self = StObject.set(x, "authEndpoint", js.undefined)
       
-      @scala.inline
-      def setAuthTransport(value: ajax | jsonp): Self = StObject.set(x, "authTransport", value.asInstanceOf[js.Any])
+      inline def setAuthTransport(value: ajax | jsonp): Self = StObject.set(x, "authTransport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTransportUndefined: Self = StObject.set(x, "authTransport", js.undefined)
+      inline def setAuthTransportUndefined: Self = StObject.set(x, "authTransport", js.undefined)
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setAuthorizer(value: (/* channel */ Channel, /* options */ Config) => Authorize): Self = StObject.set(x, "authorizer", js.Any.fromFunction2(value))
+      inline def setAuthorizer(value: (/* channel */ Channel, /* options */ Config) => Authorize): Self = StObject.set(x, "authorizer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
+      inline def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
       
-      @scala.inline
-      def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+      inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
       
-      @scala.inline
-      def setDisableStats(value: Boolean): Self = StObject.set(x, "disableStats", value.asInstanceOf[js.Any])
+      inline def setDisableStats(value: Boolean): Self = StObject.set(x, "disableStats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStatsUndefined: Self = StObject.set(x, "disableStats", js.undefined)
+      inline def setDisableStatsUndefined: Self = StObject.set(x, "disableStats", js.undefined)
       
-      @scala.inline
-      def setDisabledTransports(value: js.Array[Transport]): Self = StObject.set(x, "disabledTransports", value.asInstanceOf[js.Any])
+      inline def setDisabledTransports(value: js.Array[Transport]): Self = StObject.set(x, "disabledTransports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledTransportsUndefined: Self = StObject.set(x, "disabledTransports", js.undefined)
+      inline def setDisabledTransportsUndefined: Self = StObject.set(x, "disabledTransports", js.undefined)
       
-      @scala.inline
-      def setDisabledTransportsVarargs(value: Transport*): Self = StObject.set(x, "disabledTransports", js.Array(value :_*))
+      inline def setDisabledTransportsVarargs(value: Transport*): Self = StObject.set(x, "disabledTransports", js.Array(value :_*))
       
-      @scala.inline
-      def setEnabledTransports(value: js.Array[Transport]): Self = StObject.set(x, "enabledTransports", value.asInstanceOf[js.Any])
+      inline def setEnabledTransports(value: js.Array[Transport]): Self = StObject.set(x, "enabledTransports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledTransportsUndefined: Self = StObject.set(x, "enabledTransports", js.undefined)
+      inline def setEnabledTransportsUndefined: Self = StObject.set(x, "enabledTransports", js.undefined)
       
-      @scala.inline
-      def setEnabledTransportsVarargs(value: Transport*): Self = StObject.set(x, "enabledTransports", js.Array(value :_*))
+      inline def setEnabledTransportsVarargs(value: Transport*): Self = StObject.set(x, "enabledTransports", js.Array(value :_*))
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+      inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
       
-      @scala.inline
-      def setForceTLS(value: Boolean): Self = StObject.set(x, "forceTLS", value.asInstanceOf[js.Any])
+      inline def setForceTLS(value: Boolean): Self = StObject.set(x, "forceTLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceTLSUndefined: Self = StObject.set(x, "forceTLS", js.undefined)
+      inline def setForceTLSUndefined: Self = StObject.set(x, "forceTLS", js.undefined)
       
-      @scala.inline
-      def setHttpHost(value: String): Self = StObject.set(x, "httpHost", value.asInstanceOf[js.Any])
+      inline def setHttpHost(value: String): Self = StObject.set(x, "httpHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpHostUndefined: Self = StObject.set(x, "httpHost", js.undefined)
+      inline def setHttpHostUndefined: Self = StObject.set(x, "httpHost", js.undefined)
       
-      @scala.inline
-      def setHttpPort(value: Double): Self = StObject.set(x, "httpPort", value.asInstanceOf[js.Any])
+      inline def setHttpPort(value: Double): Self = StObject.set(x, "httpPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpPortUndefined: Self = StObject.set(x, "httpPort", js.undefined)
+      inline def setHttpPortUndefined: Self = StObject.set(x, "httpPort", js.undefined)
       
-      @scala.inline
-      def setHttpsPort(value: Double): Self = StObject.set(x, "httpsPort", value.asInstanceOf[js.Any])
+      inline def setHttpsPort(value: Double): Self = StObject.set(x, "httpsPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsPortUndefined: Self = StObject.set(x, "httpsPort", js.undefined)
+      inline def setHttpsPortUndefined: Self = StObject.set(x, "httpsPort", js.undefined)
       
-      @scala.inline
-      def setIgnoreNullOrigin(value: Boolean): Self = StObject.set(x, "ignoreNullOrigin", value.asInstanceOf[js.Any])
+      inline def setIgnoreNullOrigin(value: Boolean): Self = StObject.set(x, "ignoreNullOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNullOriginUndefined: Self = StObject.set(x, "ignoreNullOrigin", js.undefined)
+      inline def setIgnoreNullOriginUndefined: Self = StObject.set(x, "ignoreNullOrigin", js.undefined)
       
-      @scala.inline
-      def setPongTimeout(value: Double): Self = StObject.set(x, "pongTimeout", value.asInstanceOf[js.Any])
+      inline def setPongTimeout(value: Double): Self = StObject.set(x, "pongTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPongTimeoutUndefined: Self = StObject.set(x, "pongTimeout", js.undefined)
+      inline def setPongTimeoutUndefined: Self = StObject.set(x, "pongTimeout", js.undefined)
       
-      @scala.inline
-      def setWsHost(value: String): Self = StObject.set(x, "wsHost", value.asInstanceOf[js.Any])
+      inline def setWsHost(value: String): Self = StObject.set(x, "wsHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsHostUndefined: Self = StObject.set(x, "wsHost", js.undefined)
+      inline def setWsHostUndefined: Self = StObject.set(x, "wsHost", js.undefined)
       
-      @scala.inline
-      def setWsPath(value: String): Self = StObject.set(x, "wsPath", value.asInstanceOf[js.Any])
+      inline def setWsPath(value: String): Self = StObject.set(x, "wsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsPathUndefined: Self = StObject.set(x, "wsPath", js.undefined)
+      inline def setWsPathUndefined: Self = StObject.set(x, "wsPath", js.undefined)
       
-      @scala.inline
-      def setWsPort(value: Double): Self = StObject.set(x, "wsPort", value.asInstanceOf[js.Any])
+      inline def setWsPort(value: Double): Self = StObject.set(x, "wsPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsPortUndefined: Self = StObject.set(x, "wsPort", js.undefined)
+      inline def setWsPortUndefined: Self = StObject.set(x, "wsPort", js.undefined)
       
-      @scala.inline
-      def setWssPort(value: Double): Self = StObject.set(x, "wssPort", value.asInstanceOf[js.Any])
+      inline def setWssPort(value: Double): Self = StObject.set(x, "wssPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWssPortUndefined: Self = StObject.set(x, "wssPort", js.undefined)
+      inline def setWssPortUndefined: Self = StObject.set(x, "wssPort", js.undefined)
     }
   }
   
@@ -438,20 +383,16 @@ object mod extends Shortcut {
   }
   object Member {
     
-    @scala.inline
-    def apply[T](id: String, info: T): Member[T] = {
+    inline def apply[T](id: String, info: T): Member[T] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[Member[T]]
     }
     
-    @scala.inline
-    implicit class MemberMutableBuilder[Self <: Member[?], T] (val x: Self & Member[T]) extends AnyVal {
+    extension [Self <: Member[?], T](x: Self & Member[T]) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: T): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: T): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -479,8 +420,7 @@ object mod extends Shortcut {
   }
   object Members {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       count: Double,
       each: js.Function1[/* member */ Member[T], Unit] => Unit,
       get: String => Null | T,
@@ -492,26 +432,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Members[T]]
     }
     
-    @scala.inline
-    implicit class MembersMutableBuilder[Self <: Members[?], T] (val x: Self & Members[T]) extends AnyVal {
+    extension [Self <: Members[?], T](x: Self & Members[T]) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEach(value: js.Function1[/* member */ Member[T], Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+      inline def setEach(value: js.Function1[/* member */ Member[T], Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => Null | T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Null | T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMe(value: Member[T]): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
+      inline def setMe(value: Member[T]): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: StringDictionary[Member[T]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: StringDictionary[Member[T]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMyID(value: String): Self = StObject.set(x, "myID", value.asInstanceOf[js.Any])
+      inline def setMyID(value: String): Self = StObject.set(x, "myID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -587,20 +520,15 @@ object mod extends Shortcut {
   trait Transport extends StObject
   object Transport {
     
-    @scala.inline
-    def sockjs: typings.pusherJs.pusherJsStrings.sockjs = "sockjs".asInstanceOf[typings.pusherJs.pusherJsStrings.sockjs]
+    inline def sockjs: typings.pusherJs.pusherJsStrings.sockjs = "sockjs".asInstanceOf[typings.pusherJs.pusherJsStrings.sockjs]
     
-    @scala.inline
-    def ws: typings.pusherJs.pusherJsStrings.ws = "ws".asInstanceOf[typings.pusherJs.pusherJsStrings.ws]
+    inline def ws: typings.pusherJs.pusherJsStrings.ws = "ws".asInstanceOf[typings.pusherJs.pusherJsStrings.ws]
     
-    @scala.inline
-    def wss: typings.pusherJs.pusherJsStrings.wss = "wss".asInstanceOf[typings.pusherJs.pusherJsStrings.wss]
+    inline def wss: typings.pusherJs.pusherJsStrings.wss = "wss".asInstanceOf[typings.pusherJs.pusherJsStrings.wss]
     
-    @scala.inline
-    def xhr_polling: typings.pusherJs.pusherJsStrings.xhr_polling = "xhr_polling".asInstanceOf[typings.pusherJs.pusherJsStrings.xhr_polling]
+    inline def xhr_polling: typings.pusherJs.pusherJsStrings.xhr_polling = "xhr_polling".asInstanceOf[typings.pusherJs.pusherJsStrings.xhr_polling]
     
-    @scala.inline
-    def xhr_streaming: typings.pusherJs.pusherJsStrings.xhr_streaming = "xhr_streaming".asInstanceOf[typings.pusherJs.pusherJsStrings.xhr_streaming]
+    inline def xhr_streaming: typings.pusherJs.pusherJsStrings.xhr_streaming = "xhr_streaming".asInstanceOf[typings.pusherJs.pusherJsStrings.xhr_streaming]
   }
   
   type _To = js.Object & PusherStatic

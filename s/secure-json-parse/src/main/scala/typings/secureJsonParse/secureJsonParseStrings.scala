@@ -8,16 +8,13 @@ object secureJsonParseStrings {
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait ignore extends StObject
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
   sealed trait remove extends StObject
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
 }

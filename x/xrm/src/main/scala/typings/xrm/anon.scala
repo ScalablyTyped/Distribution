@@ -13,17 +13,14 @@ object anon {
   }
   object GetValue {
     
-    @scala.inline
-    def apply(getValue: () => StageCategory): GetValue = {
+    inline def apply(getValue: () => StageCategory): GetValue = {
       val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
       __obj.asInstanceOf[GetValue]
     }
     
-    @scala.inline
-    implicit class GetValueMutableBuilder[Self <: GetValue] (val x: Self) extends AnyVal {
+    extension [Self <: GetValue](x: Self) {
       
-      @scala.inline
-      def setGetValue(value: () => StageCategory): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => StageCategory): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
 }

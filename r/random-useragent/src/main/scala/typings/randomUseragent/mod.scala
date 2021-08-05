@@ -10,31 +10,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAll(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[String]]
-  @scala.inline
-  def getAll(
+  inline def getAll(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[String]]
+  inline def getAll(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
   ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getAllData(): js.Array[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")().asInstanceOf[js.Array[UserAgent]]
-  @scala.inline
-  def getAllData(
+  inline def getAllData(): js.Array[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")().asInstanceOf[js.Array[UserAgent]]
+  inline def getAllData(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
   ): js.Array[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[UserAgent]]
   
-  @scala.inline
-  def getRandom(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")().asInstanceOf[String | Null]
-  @scala.inline
-  def getRandom(
+  inline def getRandom(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")().asInstanceOf[String | Null]
+  inline def getRandom(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
   ): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")(filter.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def getRandomData(): UserAgent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")().asInstanceOf[UserAgent | Null]
-  @scala.inline
-  def getRandomData(
+  inline def getRandomData(): UserAgent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")().asInstanceOf[UserAgent | Null]
+  inline def getRandomData(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
   ): UserAgent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")(filter.asInstanceOf[js.Any]).asInstanceOf[UserAgent | Null]
   
@@ -82,8 +74,7 @@ object mod {
   }
   object UserAgent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appCodename: String,
       appName: String,
       appVersion: String,
@@ -109,68 +100,47 @@ object mod {
       __obj.asInstanceOf[UserAgent]
     }
     
-    @scala.inline
-    implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgent](x: Self) {
       
-      @scala.inline
-      def setAppCodename(value: String): Self = StObject.set(x, "appCodename", value.asInstanceOf[js.Any])
+      inline def setAppCodename(value: String): Self = StObject.set(x, "appCodename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+      inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserMajor(value: String): Self = StObject.set(x, "browserMajor", value.asInstanceOf[js.Any])
+      inline def setBrowserMajor(value: String): Self = StObject.set(x, "browserMajor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
+      inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserVersion(value: String): Self = StObject.set(x, "browserVersion", value.asInstanceOf[js.Any])
+      inline def setBrowserVersion(value: String): Self = StObject.set(x, "browserVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuArchitecture(value: String): Self = StObject.set(x, "cpuArchitecture", value.asInstanceOf[js.Any])
+      inline def setCpuArchitecture(value: String): Self = StObject.set(x, "cpuArchitecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceModel(value: String): Self = StObject.set(x, "deviceModel", value.asInstanceOf[js.Any])
+      inline def setDeviceModel(value: String): Self = StObject.set(x, "deviceModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+      inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceVendor(value: String): Self = StObject.set(x, "deviceVendor", value.asInstanceOf[js.Any])
+      inline def setDeviceVendor(value: String): Self = StObject.set(x, "deviceVendor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineName(value: String): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
+      inline def setEngineName(value: String): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsName(value: String): Self = StObject.set(x, "osName", value.asInstanceOf[js.Any])
+      inline def setOsName(value: String): Self = StObject.set(x, "osName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+      inline def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+      inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorSub(value: String): Self = StObject.set(x, "vendorSub", value.asInstanceOf[js.Any])
+      inline def setVendorSub(value: String): Self = StObject.set(x, "vendorSub", value.asInstanceOf[js.Any])
     }
   }
 }

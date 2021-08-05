@@ -17,28 +17,21 @@ trait ListProjectBillingInfoResponse extends StObject {
 }
 object ListProjectBillingInfoResponse {
   
-  @scala.inline
-  def apply(): ListProjectBillingInfoResponse = {
+  inline def apply(): ListProjectBillingInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProjectBillingInfoResponse]
   }
   
-  @scala.inline
-  implicit class ListProjectBillingInfoResponseMutableBuilder[Self <: ListProjectBillingInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProjectBillingInfoResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setProjectBillingInfo(value: js.Array[ProjectBillingInfo]): Self = StObject.set(x, "projectBillingInfo", value.asInstanceOf[js.Any])
+    inline def setProjectBillingInfo(value: js.Array[ProjectBillingInfo]): Self = StObject.set(x, "projectBillingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectBillingInfoUndefined: Self = StObject.set(x, "projectBillingInfo", js.undefined)
+    inline def setProjectBillingInfoUndefined: Self = StObject.set(x, "projectBillingInfo", js.undefined)
     
-    @scala.inline
-    def setProjectBillingInfoVarargs(value: ProjectBillingInfo*): Self = StObject.set(x, "projectBillingInfo", js.Array(value :_*))
+    inline def setProjectBillingInfoVarargs(value: ProjectBillingInfo*): Self = StObject.set(x, "projectBillingInfo", js.Array(value :_*))
   }
 }

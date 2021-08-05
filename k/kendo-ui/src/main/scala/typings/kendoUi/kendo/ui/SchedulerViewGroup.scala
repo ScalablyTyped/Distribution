@@ -12,25 +12,19 @@ trait SchedulerViewGroup extends StObject {
 }
 object SchedulerViewGroup {
   
-  @scala.inline
-  def apply(): SchedulerViewGroup = {
+  inline def apply(): SchedulerViewGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerViewGroup]
   }
   
-  @scala.inline
-  implicit class SchedulerViewGroupMutableBuilder[Self <: SchedulerViewGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerViewGroup](x: Self) {
     
-    @scala.inline
-    def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

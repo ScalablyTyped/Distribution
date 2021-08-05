@@ -188,18 +188,13 @@ object mod {
   }
   
   /* static member */
-  @scala.inline
-  def bundle(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def bundle(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @scala.inline
-  def bundle(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def bundle(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def bundle(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def bundle(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def bundle(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  inline def bundle(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
   /**
     * Bundles all referenced files/URLs into a single schema that only has internal `$ref` pointers. This lets you split-up your schema however you want while you're building it, but easily combine all those files together when it's time to package or distribute the schema to other people. The resulting schema size will be small, since it will still contain internal JSON references rather than being fully-dereferenced.
     *
@@ -212,36 +207,24 @@ object mod {
     * @param callback (optional) A callback that will receive the bundled schema object
     */
   /* static member */
-  @scala.inline
-  def bundle(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def bundle(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def bundle(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @scala.inline
-  def bundle(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def bundle(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def bundle(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def bundle(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def bundle(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  inline def bundle(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bundle(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def bundle(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def dereference(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def dereference(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @scala.inline
-  def dereference(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def dereference(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def dereference(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def dereference(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def dereference(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  inline def dereference(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
   /**
     * Dereferences all `$ref` pointers in the JSON Schema, replacing each reference with its resolved value. This results in a schema object that does not contain any `$ref` pointers. Instead, it's a normal JavaScript object tree that can easily be crawled and used just like any other JavaScript object. This is great for programmatic usage, especially when using tools that don't understand JSON references.
     *
@@ -254,36 +237,24 @@ object mod {
     * @param callback (optional) A callback that will receive the dereferenced schema object
     */
   /* static member */
-  @scala.inline
-  def dereference(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def dereference(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def dereference(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @scala.inline
-  def dereference(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def dereference(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def dereference(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def dereference(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def dereference(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  inline def dereference(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dereference(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def dereference(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def parse(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def parse(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @scala.inline
-  def parse(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def parse(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def parse(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def parse(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def parse(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  inline def parse(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
     *
@@ -296,36 +267,24 @@ object mod {
     * @param callback (optional) A callback that will receive the parsed schema object, or an error
     */
   /* static member */
-  @scala.inline
-  def parse(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def parse(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def parse(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @scala.inline
-  def parse(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def parse(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def parse(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def parse(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
-  @scala.inline
-  def parse(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  inline def parse(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  inline def parse(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def resolve(baseUrl: String, schema: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  inline def resolve(baseUrl: String, schema: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
   /* static member */
-  @scala.inline
-  def resolve(baseUrl: String, schema: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resolve(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
-  @scala.inline
-  def resolve(baseUrl: String, schema: JSONSchema, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(baseUrl: String, schema: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  inline def resolve(baseUrl: String, schema: JSONSchema, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def resolve(schema: String): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
+  inline def resolve(schema: String): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
     *
@@ -338,22 +297,15 @@ object mod {
     * @param callback (optional) A callback that will receive a `$Refs` object
     */
   /* static member */
-  @scala.inline
-  def resolve(schema: String, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(schema: String, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def resolve(schema: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  inline def resolve(schema: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
   /* static member */
-  @scala.inline
-  def resolve(schema: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resolve(schema: JSONSchema): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
-  @scala.inline
-  def resolve(schema: JSONSchema, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resolve(schema: JSONSchema, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
-  @scala.inline
-  def resolve(schema: JSONSchema, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(schema: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(schema: JSONSchema): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
+  inline def resolve(schema: JSONSchema, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(schema: JSONSchema, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  inline def resolve(schema: JSONSchema, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait FileInfo extends StObject {
     
@@ -374,24 +326,19 @@ object mod {
   }
   object FileInfo {
     
-    @scala.inline
-    def apply(data: String | Buffer, `extension`: String, url: String): FileInfo = {
+    inline def apply(data: String | Buffer, `extension`: String, url: String): FileInfo = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileInfo]
     }
     
-    @scala.inline
-    implicit class FileInfoMutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FileInfo](x: Self) {
       
-      @scala.inline
-      def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -434,64 +381,46 @@ object mod {
   }
   object HTTPResolverOptions {
     
-    @scala.inline
-    def apply(): HTTPResolverOptions = {
+    inline def apply(): HTTPResolverOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HTTPResolverOptions]
     }
     
-    @scala.inline
-    implicit class HTTPResolverOptionsMutableBuilder[Self <: HTTPResolverOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPResolverOptions](x: Self) {
       
-      @scala.inline
-      def setCanRead(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
+      inline def setCanRead(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanReadFunction1(value: /* file */ FileInfo => Boolean): Self = StObject.set(x, "canRead", js.Any.fromFunction1(value))
+      inline def setCanReadFunction1(value: /* file */ FileInfo => Boolean): Self = StObject.set(x, "canRead", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanReadUndefined: Self = StObject.set(x, "canRead", js.undefined)
+      inline def setCanReadUndefined: Self = StObject.set(x, "canRead", js.undefined)
       
-      @scala.inline
-      def setCanReadVarargs(value: String*): Self = StObject.set(x, "canRead", js.Array(value :_*))
+      inline def setCanReadVarargs(value: String*): Self = StObject.set(x, "canRead", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setRead(
+      inline def setRead(
         value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]]) => String | Buffer | (js.Promise[String | Buffer])
       ): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setRedirects(value: Double): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+      inline def setRedirects(value: Double): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
+      inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   
@@ -507,26 +436,19 @@ object mod {
   trait JSONParserErrorType extends StObject
   object JSONParserErrorType {
     
-    @scala.inline
-    def EINVALIDPOINTER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EINVALIDPOINTER = "EINVALIDPOINTER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EINVALIDPOINTER]
+    inline def EINVALIDPOINTER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EINVALIDPOINTER = "EINVALIDPOINTER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EINVALIDPOINTER]
     
-    @scala.inline
-    def EMISSINGPOINTER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EMISSINGPOINTER = "EMISSINGPOINTER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EMISSINGPOINTER]
+    inline def EMISSINGPOINTER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EMISSINGPOINTER = "EMISSINGPOINTER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EMISSINGPOINTER]
     
-    @scala.inline
-    def EPARSER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EPARSER = "EPARSER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EPARSER]
+    inline def EPARSER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EPARSER = "EPARSER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EPARSER]
     
-    @scala.inline
-    def ERESOLVER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.ERESOLVER = "ERESOLVER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.ERESOLVER]
+    inline def ERESOLVER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.ERESOLVER = "ERESOLVER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.ERESOLVER]
     
-    @scala.inline
-    def EUNKNOWN: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNKNOWN = "EUNKNOWN".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNKNOWN]
+    inline def EUNKNOWN: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNKNOWN = "EUNKNOWN".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNKNOWN]
     
-    @scala.inline
-    def EUNMATCHEDPARSER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDPARSER = "EUNMATCHEDPARSER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDPARSER]
+    inline def EUNMATCHEDPARSER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDPARSER = "EUNMATCHEDPARSER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDPARSER]
     
-    @scala.inline
-    def EUNMATCHEDRESOLVER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDRESOLVER = "EUNMATCHEDRESOLVER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDRESOLVER]
+    inline def EUNMATCHEDRESOLVER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDRESOLVER = "EUNMATCHEDRESOLVER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDRESOLVER]
   }
   
   type JSONSchema = JSONSchema4 | JSONSchema6
@@ -561,38 +483,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
+      inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
+      inline def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
       
-      @scala.inline
-      def setDereference(value: Circular): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+      inline def setDereference(value: Circular): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+      inline def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
-      @scala.inline
-      def setParse(value: Dictkey): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Dictkey): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setResolve(value: External): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: External): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
   

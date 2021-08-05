@@ -50,8 +50,7 @@ trait MeshVertexAttributes
 }
 object MeshVertexAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     position: Float64Array,
@@ -64,34 +63,24 @@ object MeshVertexAttributes {
     __obj.asInstanceOf[MeshVertexAttributes]
   }
   
-  @scala.inline
-  implicit class MeshVertexAttributesMutableBuilder[Self <: MeshVertexAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: MeshVertexAttributes](x: Self) {
     
-    @scala.inline
-    def setColor(value: Uint8Array): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Uint8Array): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setNormal(value: Float32Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Float32Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Float64Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Float64Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangent(value: Float32Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
+    inline def setTangent(value: Float32Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
+    inline def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
     
-    @scala.inline
-    def setUv(value: Float32Array): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+    inline def setUv(value: Float32Array): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
+    inline def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
   }
 }

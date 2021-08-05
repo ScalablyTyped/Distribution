@@ -42,49 +42,35 @@ trait AxisGrid extends StObject {
 }
 object AxisGrid {
   
-  @scala.inline
-  def apply(): AxisGrid = {
+  inline def apply(): AxisGrid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisGrid]
   }
   
-  @scala.inline
-  implicit class AxisGridMutableBuilder[Self <: AxisGrid] (val x: Self) extends AnyVal {
+  extension [Self <: AxisGrid](x: Self) {
     
-    @scala.inline
-    def setAlign(value: center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setAlternateColor(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
+    inline def setAlternateColor(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateColorUndefined: Self = StObject.set(x, "alternateColor", js.undefined)
+    inline def setAlternateColorUndefined: Self = StObject.set(x, "alternateColor", js.undefined)
     
-    @scala.inline
-    def setHideFirstLine(value: Boolean): Self = StObject.set(x, "hideFirstLine", value.asInstanceOf[js.Any])
+    inline def setHideFirstLine(value: Boolean): Self = StObject.set(x, "hideFirstLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideFirstLineUndefined: Self = StObject.set(x, "hideFirstLine", js.undefined)
+    inline def setHideFirstLineUndefined: Self = StObject.set(x, "hideFirstLine", js.undefined)
     
-    @scala.inline
-    def setHideLastLine(value: Boolean): Self = StObject.set(x, "hideLastLine", value.asInstanceOf[js.Any])
+    inline def setHideLastLine(value: Boolean): Self = StObject.set(x, "hideLastLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideLastLineUndefined: Self = StObject.set(x, "hideLastLine", js.undefined)
+    inline def setHideLastLineUndefined: Self = StObject.set(x, "hideLastLine", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: line): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: line): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.antvG2.antvG2Strings.line | polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.antvG2.antvG2Strings.line | polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

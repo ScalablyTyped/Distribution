@@ -57,8 +57,7 @@ trait XDocumentRecovery extends StObject {
 }
 object XDocumentRecovery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     recoverFromFile: (String, String, SeqEquiv[PropertyValue]) => Unit,
     storeToRecoveryFile: (String, SeqEquiv[PropertyValue]) => Unit,
     wasModifiedSinceLastSave: () => Boolean
@@ -67,16 +66,12 @@ object XDocumentRecovery {
     __obj.asInstanceOf[XDocumentRecovery]
   }
   
-  @scala.inline
-  implicit class XDocumentRecoveryMutableBuilder[Self <: XDocumentRecovery] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentRecovery](x: Self) {
     
-    @scala.inline
-    def setRecoverFromFile(value: (String, String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recoverFromFile", js.Any.fromFunction3(value))
+    inline def setRecoverFromFile(value: (String, String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recoverFromFile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStoreToRecoveryFile(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToRecoveryFile", js.Any.fromFunction2(value))
+    inline def setStoreToRecoveryFile(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToRecoveryFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWasModifiedSinceLastSave(value: () => Boolean): Self = StObject.set(x, "wasModifiedSinceLastSave", js.Any.fromFunction0(value))
+    inline def setWasModifiedSinceLastSave(value: () => Boolean): Self = StObject.set(x, "wasModifiedSinceLastSave", js.Any.fromFunction0(value))
   }
 }

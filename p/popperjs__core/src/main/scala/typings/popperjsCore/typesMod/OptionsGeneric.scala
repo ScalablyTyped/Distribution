@@ -18,31 +18,23 @@ trait OptionsGeneric[TModifier] extends StObject {
 }
 object OptionsGeneric {
   
-  @scala.inline
-  def apply[TModifier](modifiers: js.Array[TModifier], placement: Placement, strategy: PositioningStrategy): OptionsGeneric[TModifier] = {
+  inline def apply[TModifier](modifiers: js.Array[TModifier], placement: Placement, strategy: PositioningStrategy): OptionsGeneric[TModifier] = {
     val __obj = js.Dynamic.literal(modifiers = modifiers.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsGeneric[TModifier]]
   }
   
-  @scala.inline
-  implicit class OptionsGenericMutableBuilder[Self <: OptionsGeneric[?], TModifier] (val x: Self & OptionsGeneric[TModifier]) extends AnyVal {
+  extension [Self <: OptionsGeneric[?], TModifier](x: Self & OptionsGeneric[TModifier]) {
     
-    @scala.inline
-    def setModifiers(value: js.Array[TModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[TModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: TModifier*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: TModifier*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
+    inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
+    inline def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
   }
 }

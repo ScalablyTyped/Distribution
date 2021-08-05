@@ -17,22 +17,17 @@ trait CAPICOM_CERTIFICATE_INCLUDE_OPTION extends StObject {
 }
 object CAPICOM_CERTIFICATE_INCLUDE_OPTION {
   
-  @scala.inline
-  def apply(): CAPICOM_CERTIFICATE_INCLUDE_OPTION = {
+  inline def apply(): CAPICOM_CERTIFICATE_INCLUDE_OPTION = {
     val __obj = js.Dynamic.literal(CAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT = 0, CAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY = 2, CAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN = 1)
     __obj.asInstanceOf[CAPICOM_CERTIFICATE_INCLUDE_OPTION]
   }
   
-  @scala.inline
-  implicit class CAPICOM_CERTIFICATE_INCLUDE_OPTIONMutableBuilder[Self <: CAPICOM_CERTIFICATE_INCLUDE_OPTION] (val x: Self) extends AnyVal {
+  extension [Self <: CAPICOM_CERTIFICATE_INCLUDE_OPTION](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT(value: `0`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT(value: `0`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY(value: `2`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY(value: `2`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN(value: `1`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN(value: `1`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN", value.asInstanceOf[js.Any])
   }
 }

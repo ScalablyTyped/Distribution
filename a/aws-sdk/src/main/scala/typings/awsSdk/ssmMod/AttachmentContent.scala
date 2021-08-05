@@ -33,43 +33,31 @@ trait AttachmentContent extends StObject {
 }
 object AttachmentContent {
   
-  @scala.inline
-  def apply(): AttachmentContent = {
+  inline def apply(): AttachmentContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentContent]
   }
   
-  @scala.inline
-  implicit class AttachmentContentMutableBuilder[Self <: AttachmentContent] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentContent](x: Self) {
     
-    @scala.inline
-    def setHash(value: AttachmentHash): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: AttachmentHash): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashType(value: AttachmentHashType): Self = StObject.set(x, "HashType", value.asInstanceOf[js.Any])
+    inline def setHashType(value: AttachmentHashType): Self = StObject.set(x, "HashType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashTypeUndefined: Self = StObject.set(x, "HashType", js.undefined)
+    inline def setHashTypeUndefined: Self = StObject.set(x, "HashType", js.undefined)
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "Hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "Hash", js.undefined)
     
-    @scala.inline
-    def setName(value: AttachmentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AttachmentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSize(value: ContentLength): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: ContentLength): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
-    @scala.inline
-    def setUrl(value: AttachmentUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: AttachmentUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

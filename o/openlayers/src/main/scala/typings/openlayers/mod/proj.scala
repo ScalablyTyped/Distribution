@@ -184,8 +184,7 @@ object proj {
     *     the transformed {@link ol.Coordinate}.
     * @api stable
     */
-  @scala.inline
-  def addCoordinateTransforms(
+  inline def addCoordinateTransforms(
     source: ProjectionLike,
     destination: ProjectionLike,
     forward: js.Function1[/* coords */ Coordinate_, Coordinate_],
@@ -199,8 +198,7 @@ object proj {
     * @param projections Projections.
     * @api
     */
-  @scala.inline
-  def addEquivalentProjections(projections: js.Array[Projection]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEquivalentProjections")(projections.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addEquivalentProjections(projections: js.Array[Projection]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEquivalentProjections")(projections.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Add a Projection object to the list of supported projections that can be
@@ -209,8 +207,7 @@ object proj {
     * @param projection Projection instance.
     * @api stable
     */
-  @scala.inline
-  def addProjection(projection: Projection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addProjection(projection: Projection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if two projections are the same, that is every coordinate in one
@@ -222,8 +219,7 @@ object proj {
     * @return Equivalent.
     * @api
     */
-  @scala.inline
-  def equivalent(projection1: Projection, projection2: Projection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalent")(projection1.asInstanceOf[js.Any], projection2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equivalent(projection1: Projection, projection2: Projection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalent")(projection1.asInstanceOf[js.Any], projection2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Transforms a coordinate from longitude/latitude to a different projection.
@@ -234,10 +230,8 @@ object proj {
     * @return Coordinate projected to the target projection.
     * @api stable
     */
-  @scala.inline
-  def fromLonLat(coordinate: Coordinate_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
-  @scala.inline
-  def fromLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
+  inline def fromLonLat(coordinate: Coordinate_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
+  inline def fromLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
   
   /**
     * Fetches a Projection object for the code specified.
@@ -248,8 +242,7 @@ object proj {
     * @return Projection object, or null if not in list.
     * @api stable
     */
-  @scala.inline
-  def get(projectionLike: ProjectionLike): Projection = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(projectionLike.asInstanceOf[js.Any]).asInstanceOf[Projection]
+  inline def get(projectionLike: ProjectionLike): Projection = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(projectionLike.asInstanceOf[js.Any]).asInstanceOf[Projection]
   
   /**
     * Get the resolution of the point in degrees or distance units. For
@@ -263,8 +256,7 @@ object proj {
     * @param point Point to find adjusted resolution at.
     * @return Point to find adjusted resolution at.
     */
-  @scala.inline
-  def getPointResolution(projection: Projection, resolution: Double, point: Coordinate_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointResolution")(projection.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPointResolution(projection: Projection, resolution: Double, point: Coordinate_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointResolution")(projection.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Given the projection-like objects, searches for a transformation
@@ -276,8 +268,7 @@ object proj {
     * @return Transform function.
     * @api stable
     */
-  @scala.inline
-  def getTransform(source: ProjectionLike, destination: ProjectionLike): TransformFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[TransformFunction]
+  inline def getTransform(source: ProjectionLike, destination: ProjectionLike): TransformFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[TransformFunction]
   
   /**
     * Register proj4. If not explicitly registered, it will be assumed that
@@ -291,8 +282,7 @@ object proj {
     * @param proj4 Proj4.
     * @api
     */
-  @scala.inline
-  def setProj4(proj4: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProj4")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setProj4(proj4: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProj4")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Transforms a coordinate to longitude/latitude.
@@ -303,10 +293,8 @@ object proj {
     *     with longitude as 1st and latitude as 2nd element.
     * @api stable
     */
-  @scala.inline
-  def toLonLat(coordinate: Coordinate_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
-  @scala.inline
-  def toLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
+  inline def toLonLat(coordinate: Coordinate_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
+  inline def toLonLat(coordinate: Coordinate_, opt_projection: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
   
   /**
     * Transforms a coordinate from source projection to destination projection.
@@ -320,8 +308,7 @@ object proj {
     * @param source Source projection-like.
     * @param destination Destination projection-like.
     */
-  @scala.inline
-  def transform(coordinate: Coordinate_, source: ProjectionLike, destination: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(coordinate.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
+  inline def transform(coordinate: Coordinate_, source: ProjectionLike, destination: ProjectionLike): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(coordinate.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
   
   /**
     * Transforms an extent from source projection to destination projection.  This
@@ -333,8 +320,7 @@ object proj {
     * @return The transformed extent.
     * @api stable
     */
-  @scala.inline
-  def transformExtent(extent: Extent_, source: ProjectionLike, destination: ProjectionLike): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtent")(extent.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Extent_]
+  inline def transformExtent(extent: Extent_, source: ProjectionLike, destination: ProjectionLike): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtent")(extent.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Extent_]
   
   /**
     * Meters per unit lookup table.
@@ -358,22 +344,16 @@ object proj {
   trait Units extends StObject
   object Units {
     
-    @scala.inline
-    def degrees: typings.openlayers.openlayersStrings.degrees = "degrees".asInstanceOf[typings.openlayers.openlayersStrings.degrees]
+    inline def degrees: typings.openlayers.openlayersStrings.degrees = "degrees".asInstanceOf[typings.openlayers.openlayersStrings.degrees]
     
-    @scala.inline
-    def ft: typings.openlayers.openlayersStrings.ft = "ft".asInstanceOf[typings.openlayers.openlayersStrings.ft]
+    inline def ft: typings.openlayers.openlayersStrings.ft = "ft".asInstanceOf[typings.openlayers.openlayersStrings.ft]
     
-    @scala.inline
-    def m: typings.openlayers.openlayersStrings.m = "m".asInstanceOf[typings.openlayers.openlayersStrings.m]
+    inline def m: typings.openlayers.openlayersStrings.m = "m".asInstanceOf[typings.openlayers.openlayersStrings.m]
     
-    @scala.inline
-    def pixels: typings.openlayers.openlayersStrings.pixels = "pixels".asInstanceOf[typings.openlayers.openlayersStrings.pixels]
+    inline def pixels: typings.openlayers.openlayersStrings.pixels = "pixels".asInstanceOf[typings.openlayers.openlayersStrings.pixels]
     
-    @scala.inline
-    def `tile-pixels`: typings.openlayers.openlayersStrings.`tile-pixels` = "tile-pixels".asInstanceOf[typings.openlayers.openlayersStrings.`tile-pixels`]
+    inline def `tile-pixels`: typings.openlayers.openlayersStrings.`tile-pixels` = "tile-pixels".asInstanceOf[typings.openlayers.openlayersStrings.`tile-pixels`]
     
-    @scala.inline
-    def `us-ft`: typings.openlayers.openlayersStrings.`us-ft` = "us-ft".asInstanceOf[typings.openlayers.openlayersStrings.`us-ft`]
+    inline def `us-ft`: typings.openlayers.openlayersStrings.`us-ft` = "us-ft".asInstanceOf[typings.openlayers.openlayersStrings.`us-ft`]
   }
 }

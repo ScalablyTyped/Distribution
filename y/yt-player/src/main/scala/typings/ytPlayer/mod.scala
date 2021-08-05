@@ -322,98 +322,68 @@ object mod {
   }
   object YouTubePlayerOptions {
     
-    @scala.inline
-    def apply(): YouTubePlayerOptions = {
+    inline def apply(): YouTubePlayerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[YouTubePlayerOptions]
     }
     
-    @scala.inline
-    implicit class YouTubePlayerOptionsMutableBuilder[Self <: YouTubePlayerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: YouTubePlayerOptions](x: Self) {
       
-      @scala.inline
-      def setAnnotations(value: Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      inline def setAnnotations(value: Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+      inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setCaptions(value: `false` | String): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
+      inline def setCaptions(value: `false` | String): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
+      inline def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
       
-      @scala.inline
-      def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+      inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      @scala.inline
-      def setModestBranding(value: Boolean): Self = StObject.set(x, "modestBranding", value.asInstanceOf[js.Any])
+      inline def setModestBranding(value: Boolean): Self = StObject.set(x, "modestBranding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModestBrandingUndefined: Self = StObject.set(x, "modestBranding", js.undefined)
+      inline def setModestBrandingUndefined: Self = StObject.set(x, "modestBranding", js.undefined)
       
-      @scala.inline
-      def setPlaysInline(value: Boolean): Self = StObject.set(x, "playsInline", value.asInstanceOf[js.Any])
+      inline def setPlaysInline(value: Boolean): Self = StObject.set(x, "playsInline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaysInlineUndefined: Self = StObject.set(x, "playsInline", js.undefined)
+      inline def setPlaysInlineUndefined: Self = StObject.set(x, "playsInline", js.undefined)
       
-      @scala.inline
-      def setRelated(value: Boolean): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+      inline def setRelated(value: Boolean): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+      inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setTimeupdateFrequency(value: Double): Self = StObject.set(x, "timeupdateFrequency", value.asInstanceOf[js.Any])
+      inline def setTimeupdateFrequency(value: Double): Self = StObject.set(x, "timeupdateFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeupdateFrequencyUndefined: Self = StObject.set(x, "timeupdateFrequency", js.undefined)
+      inline def setTimeupdateFrequencyUndefined: Self = StObject.set(x, "timeupdateFrequency", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -429,26 +399,19 @@ object mod {
   trait YouTubePlayerQuality extends StObject
   object YouTubePlayerQuality {
     
-    @scala.inline
-    def default: typings.ytPlayer.ytPlayerStrings.default = "default".asInstanceOf[typings.ytPlayer.ytPlayerStrings.default]
+    inline def default: typings.ytPlayer.ytPlayerStrings.default = "default".asInstanceOf[typings.ytPlayer.ytPlayerStrings.default]
     
-    @scala.inline
-    def hd1080: typings.ytPlayer.ytPlayerStrings.hd1080 = "hd1080".asInstanceOf[typings.ytPlayer.ytPlayerStrings.hd1080]
+    inline def hd1080: typings.ytPlayer.ytPlayerStrings.hd1080 = "hd1080".asInstanceOf[typings.ytPlayer.ytPlayerStrings.hd1080]
     
-    @scala.inline
-    def hd720: typings.ytPlayer.ytPlayerStrings.hd720 = "hd720".asInstanceOf[typings.ytPlayer.ytPlayerStrings.hd720]
+    inline def hd720: typings.ytPlayer.ytPlayerStrings.hd720 = "hd720".asInstanceOf[typings.ytPlayer.ytPlayerStrings.hd720]
     
-    @scala.inline
-    def highres: typings.ytPlayer.ytPlayerStrings.highres = "highres".asInstanceOf[typings.ytPlayer.ytPlayerStrings.highres]
+    inline def highres: typings.ytPlayer.ytPlayerStrings.highres = "highres".asInstanceOf[typings.ytPlayer.ytPlayerStrings.highres]
     
-    @scala.inline
-    def large: typings.ytPlayer.ytPlayerStrings.large = "large".asInstanceOf[typings.ytPlayer.ytPlayerStrings.large]
+    inline def large: typings.ytPlayer.ytPlayerStrings.large = "large".asInstanceOf[typings.ytPlayer.ytPlayerStrings.large]
     
-    @scala.inline
-    def medium: typings.ytPlayer.ytPlayerStrings.medium = "medium".asInstanceOf[typings.ytPlayer.ytPlayerStrings.medium]
+    inline def medium: typings.ytPlayer.ytPlayerStrings.medium = "medium".asInstanceOf[typings.ytPlayer.ytPlayerStrings.medium]
     
-    @scala.inline
-    def small: typings.ytPlayer.ytPlayerStrings.small = "small".asInstanceOf[typings.ytPlayer.ytPlayerStrings.small]
+    inline def small: typings.ytPlayer.ytPlayerStrings.small = "small".asInstanceOf[typings.ytPlayer.ytPlayerStrings.small]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -462,22 +425,16 @@ object mod {
   trait YouTubePlayerState extends StObject
   object YouTubePlayerState {
     
-    @scala.inline
-    def buffering: typings.ytPlayer.ytPlayerStrings.buffering = "buffering".asInstanceOf[typings.ytPlayer.ytPlayerStrings.buffering]
+    inline def buffering: typings.ytPlayer.ytPlayerStrings.buffering = "buffering".asInstanceOf[typings.ytPlayer.ytPlayerStrings.buffering]
     
-    @scala.inline
-    def cued: typings.ytPlayer.ytPlayerStrings.cued = "cued".asInstanceOf[typings.ytPlayer.ytPlayerStrings.cued]
+    inline def cued: typings.ytPlayer.ytPlayerStrings.cued = "cued".asInstanceOf[typings.ytPlayer.ytPlayerStrings.cued]
     
-    @scala.inline
-    def ended: typings.ytPlayer.ytPlayerStrings.ended = "ended".asInstanceOf[typings.ytPlayer.ytPlayerStrings.ended]
+    inline def ended: typings.ytPlayer.ytPlayerStrings.ended = "ended".asInstanceOf[typings.ytPlayer.ytPlayerStrings.ended]
     
-    @scala.inline
-    def paused: typings.ytPlayer.ytPlayerStrings.paused = "paused".asInstanceOf[typings.ytPlayer.ytPlayerStrings.paused]
+    inline def paused: typings.ytPlayer.ytPlayerStrings.paused = "paused".asInstanceOf[typings.ytPlayer.ytPlayerStrings.paused]
     
-    @scala.inline
-    def playing: typings.ytPlayer.ytPlayerStrings.playing = "playing".asInstanceOf[typings.ytPlayer.ytPlayerStrings.playing]
+    inline def playing: typings.ytPlayer.ytPlayerStrings.playing = "playing".asInstanceOf[typings.ytPlayer.ytPlayerStrings.playing]
     
-    @scala.inline
-    def unstarted: typings.ytPlayer.ytPlayerStrings.unstarted = "unstarted".asInstanceOf[typings.ytPlayer.ytPlayerStrings.unstarted]
+    inline def unstarted: typings.ytPlayer.ytPlayerStrings.unstarted = "unstarted".asInstanceOf[typings.ytPlayer.ytPlayerStrings.unstarted]
   }
 }

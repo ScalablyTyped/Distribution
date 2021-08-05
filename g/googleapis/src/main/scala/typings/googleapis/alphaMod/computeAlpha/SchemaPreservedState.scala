@@ -23,25 +23,19 @@ trait SchemaPreservedState extends StObject {
 }
 object SchemaPreservedState {
   
-  @scala.inline
-  def apply(): SchemaPreservedState = {
+  inline def apply(): SchemaPreservedState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPreservedState]
   }
   
-  @scala.inline
-  implicit class SchemaPreservedStateMutableBuilder[Self <: SchemaPreservedState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPreservedState](x: Self) {
     
-    @scala.inline
-    def setDisks(value: StringDictionary[SchemaPreservedStatePreservedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: StringDictionary[SchemaPreservedStatePreservedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

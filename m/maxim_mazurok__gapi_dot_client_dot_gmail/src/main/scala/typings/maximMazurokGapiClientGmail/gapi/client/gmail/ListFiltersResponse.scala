@@ -11,22 +11,17 @@ trait ListFiltersResponse extends StObject {
 }
 object ListFiltersResponse {
   
-  @scala.inline
-  def apply(): ListFiltersResponse = {
+  inline def apply(): ListFiltersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFiltersResponse]
   }
   
-  @scala.inline
-  implicit class ListFiltersResponseMutableBuilder[Self <: ListFiltersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFiltersResponse](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Array[Filter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Array[Filter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: Filter*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "filter", js.Array(value :_*))
   }
 }

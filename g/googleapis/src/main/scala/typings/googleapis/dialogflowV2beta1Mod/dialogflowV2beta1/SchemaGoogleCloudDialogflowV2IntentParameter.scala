@@ -60,64 +60,45 @@ trait SchemaGoogleCloudDialogflowV2IntentParameter extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2IntentParameter {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2IntentParameter = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2IntentParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentParameter]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentParameterMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2IntentParameter](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEntityTypeDisplayName(value: String): Self = StObject.set(x, "entityTypeDisplayName", value.asInstanceOf[js.Any])
+    inline def setEntityTypeDisplayName(value: String): Self = StObject.set(x, "entityTypeDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeDisplayNameUndefined: Self = StObject.set(x, "entityTypeDisplayName", js.undefined)
+    inline def setEntityTypeDisplayNameUndefined: Self = StObject.set(x, "entityTypeDisplayName", js.undefined)
     
-    @scala.inline
-    def setIsList(value: Boolean): Self = StObject.set(x, "isList", value.asInstanceOf[js.Any])
+    inline def setIsList(value: Boolean): Self = StObject.set(x, "isList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsListUndefined: Self = StObject.set(x, "isList", js.undefined)
+    inline def setIsListUndefined: Self = StObject.set(x, "isList", js.undefined)
     
-    @scala.inline
-    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+    inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+    inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrompts(value: js.Array[String]): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
+    inline def setPrompts(value: js.Array[String]): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
+    inline def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
     
-    @scala.inline
-    def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value :_*))
+    inline def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

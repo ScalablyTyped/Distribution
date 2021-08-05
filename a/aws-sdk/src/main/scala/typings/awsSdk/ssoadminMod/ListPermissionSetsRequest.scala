@@ -23,28 +23,21 @@ trait ListPermissionSetsRequest extends StObject {
 }
 object ListPermissionSetsRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn): ListPermissionSetsRequest = {
+  inline def apply(InstanceArn: InstanceArn): ListPermissionSetsRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPermissionSetsRequest]
   }
   
-  @scala.inline
-  implicit class ListPermissionSetsRequestMutableBuilder[Self <: ListPermissionSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPermissionSetsRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait EncryptionConfig extends StObject {
 }
 object EncryptionConfig {
   
-  @scala.inline
-  def apply(AutoLockManagers: Boolean): EncryptionConfig = {
+  inline def apply(AutoLockManagers: Boolean): EncryptionConfig = {
     val __obj = js.Dynamic.literal(AutoLockManagers = AutoLockManagers.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionConfig]
   }
   
-  @scala.inline
-  implicit class EncryptionConfigMutableBuilder[Self <: EncryptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionConfig](x: Self) {
     
-    @scala.inline
-    def setAutoLockManagers(value: Boolean): Self = StObject.set(x, "AutoLockManagers", value.asInstanceOf[js.Any])
+    inline def setAutoLockManagers(value: Boolean): Self = StObject.set(x, "AutoLockManagers", value.asInstanceOf[js.Any])
   }
 }

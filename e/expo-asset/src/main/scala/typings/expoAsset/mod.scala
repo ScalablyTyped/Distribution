@@ -29,36 +29,25 @@ object mod {
     @JSImport("expo-asset", "Asset.byHash")
     @js.native
     def byHash: js.Object = js.native
-    @scala.inline
-    def byHash_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byHash")(x.asInstanceOf[js.Any])
+    inline def byHash_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byHash")(x.asInstanceOf[js.Any])
     
     @JSImport("expo-asset", "Asset.byUri")
     @js.native
     def byUri: js.Object = js.native
-    @scala.inline
-    def byUri_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byUri")(x.asInstanceOf[js.Any])
+    inline def byUri_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byUri")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def fromMetadata(meta: AssetMetadata): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMetadata")(meta.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
+    inline def fromMetadata(meta: AssetMetadata): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMetadata")(meta.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
     
-    @scala.inline
-    def fromModule(virtualAssetModule: String): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromModule")(virtualAssetModule.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
-    @scala.inline
-    def fromModule(virtualAssetModule: Double): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromModule")(virtualAssetModule.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
+    inline def fromModule(virtualAssetModule: String): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromModule")(virtualAssetModule.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
+    inline def fromModule(virtualAssetModule: Double): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromModule")(virtualAssetModule.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
     
-    @scala.inline
-    def fromURI(uri: String): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
+    inline def fromURI(uri: String): typings.expoAsset.assetMod.Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.expoAsset.assetMod.Asset]
     
-    @scala.inline
-    def loadAsync(moduleId: String): js.Promise[js.Array[typings.expoAsset.assetMod.Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.expoAsset.assetMod.Asset]]]
-    @scala.inline
-    def loadAsync(moduleId: js.Array[Double | String]): js.Promise[js.Array[typings.expoAsset.assetMod.Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.expoAsset.assetMod.Asset]]]
-    @scala.inline
-    def loadAsync(moduleId: Double): js.Promise[js.Array[typings.expoAsset.assetMod.Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.expoAsset.assetMod.Asset]]]
+    inline def loadAsync(moduleId: String): js.Promise[js.Array[typings.expoAsset.assetMod.Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.expoAsset.assetMod.Asset]]]
+    inline def loadAsync(moduleId: js.Array[Double | String]): js.Promise[js.Array[typings.expoAsset.assetMod.Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.expoAsset.assetMod.Asset]]]
+    inline def loadAsync(moduleId: Double): js.Promise[js.Array[typings.expoAsset.assetMod.Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.expoAsset.assetMod.Asset]]]
   }
   
-  @scala.inline
-  def useAssets(moduleIds: js.Array[Double]): js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAssets")(moduleIds.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]]]
-  @scala.inline
-  def useAssets(moduleIds: Double): js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAssets")(moduleIds.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]]]
+  inline def useAssets(moduleIds: js.Array[Double]): js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAssets")(moduleIds.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]]]
+  inline def useAssets(moduleIds: Double): js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAssets")(moduleIds.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[js.Array[typings.expoAsset.assetMod.Asset]], js.UndefOr[Error]]]
 }

@@ -62,8 +62,7 @@ trait RDN
 }
 object RDN {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addByMultiValuedString: String => Unit,
     addByString: String => Unit,
     getEncodedHex: () => String,
@@ -80,13 +79,10 @@ object RDN {
     __obj.asInstanceOf[RDN]
   }
   
-  @scala.inline
-  implicit class RDNMutableBuilder[Self <: RDN] (val x: Self) extends AnyVal {
+  extension [Self <: RDN](x: Self) {
     
-    @scala.inline
-    def setAddByMultiValuedString(value: String => Unit): Self = StObject.set(x, "addByMultiValuedString", js.Any.fromFunction1(value))
+    inline def setAddByMultiValuedString(value: String => Unit): Self = StObject.set(x, "addByMultiValuedString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddByString(value: String => Unit): Self = StObject.set(x, "addByString", js.Any.fromFunction1(value))
+    inline def setAddByString(value: String => Unit): Self = StObject.set(x, "addByString", js.Any.fromFunction1(value))
   }
 }

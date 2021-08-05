@@ -17,31 +17,23 @@ trait StringFilter extends StObject {
 }
 object StringFilter {
   
-  @scala.inline
-  def apply(): StringFilter = {
+  inline def apply(): StringFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringFilter]
   }
   
-  @scala.inline
-  implicit class StringFilterMutableBuilder[Self <: StringFilter] (val x: Self) extends AnyVal {
+  extension [Self <: StringFilter](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
+    inline def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

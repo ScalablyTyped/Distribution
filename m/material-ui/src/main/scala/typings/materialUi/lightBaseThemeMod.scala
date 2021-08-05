@@ -14,12 +14,10 @@ object lightBaseThemeMod {
   @JSImport("material-ui/styles/baseThemes/lightBaseTheme", JSImport.Default)
   @js.native
   def default: RawTheme = js.native
-  @scala.inline
-  def default_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @JSImport("material-ui/styles/baseThemes/lightBaseTheme", "lightBaseTheme")
   @js.native
   def lightBaseTheme: RawTheme = js.native
-  @scala.inline
-  def lightBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightBaseTheme")(x.asInstanceOf[js.Any])
+  inline def lightBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightBaseTheme")(x.asInstanceOf[js.Any])
 }

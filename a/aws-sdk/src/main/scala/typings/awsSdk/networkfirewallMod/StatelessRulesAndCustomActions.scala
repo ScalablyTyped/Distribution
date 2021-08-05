@@ -18,28 +18,21 @@ trait StatelessRulesAndCustomActions extends StObject {
 }
 object StatelessRulesAndCustomActions {
   
-  @scala.inline
-  def apply(StatelessRules: StatelessRules): StatelessRulesAndCustomActions = {
+  inline def apply(StatelessRules: StatelessRules): StatelessRulesAndCustomActions = {
     val __obj = js.Dynamic.literal(StatelessRules = StatelessRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatelessRulesAndCustomActions]
   }
   
-  @scala.inline
-  implicit class StatelessRulesAndCustomActionsMutableBuilder[Self <: StatelessRulesAndCustomActions] (val x: Self) extends AnyVal {
+  extension [Self <: StatelessRulesAndCustomActions](x: Self) {
     
-    @scala.inline
-    def setCustomActions(value: CustomActions): Self = StObject.set(x, "CustomActions", value.asInstanceOf[js.Any])
+    inline def setCustomActions(value: CustomActions): Self = StObject.set(x, "CustomActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomActionsUndefined: Self = StObject.set(x, "CustomActions", js.undefined)
+    inline def setCustomActionsUndefined: Self = StObject.set(x, "CustomActions", js.undefined)
     
-    @scala.inline
-    def setCustomActionsVarargs(value: CustomAction*): Self = StObject.set(x, "CustomActions", js.Array(value :_*))
+    inline def setCustomActionsVarargs(value: CustomAction*): Self = StObject.set(x, "CustomActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessRules(value: StatelessRules): Self = StObject.set(x, "StatelessRules", value.asInstanceOf[js.Any])
+    inline def setStatelessRules(value: StatelessRules): Self = StObject.set(x, "StatelessRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessRulesVarargs(value: StatelessRule*): Self = StObject.set(x, "StatelessRules", js.Array(value :_*))
+    inline def setStatelessRulesVarargs(value: StatelessRule*): Self = StObject.set(x, "StatelessRules", js.Array(value :_*))
   }
 }

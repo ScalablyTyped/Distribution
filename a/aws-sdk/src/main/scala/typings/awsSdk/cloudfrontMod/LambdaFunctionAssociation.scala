@@ -23,25 +23,19 @@ trait LambdaFunctionAssociation extends StObject {
 }
 object LambdaFunctionAssociation {
   
-  @scala.inline
-  def apply(EventType: EventType, LambdaFunctionARN: LambdaFunctionARN): LambdaFunctionAssociation = {
+  inline def apply(EventType: EventType, LambdaFunctionARN: LambdaFunctionARN): LambdaFunctionAssociation = {
     val __obj = js.Dynamic.literal(EventType = EventType.asInstanceOf[js.Any], LambdaFunctionARN = LambdaFunctionARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionAssociation]
   }
   
-  @scala.inline
-  implicit class LambdaFunctionAssociationMutableBuilder[Self <: LambdaFunctionAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaFunctionAssociation](x: Self) {
     
-    @scala.inline
-    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBody(value: Boolean): Self = StObject.set(x, "IncludeBody", value.asInstanceOf[js.Any])
+    inline def setIncludeBody(value: Boolean): Self = StObject.set(x, "IncludeBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBodyUndefined: Self = StObject.set(x, "IncludeBody", js.undefined)
+    inline def setIncludeBodyUndefined: Self = StObject.set(x, "IncludeBody", js.undefined)
     
-    @scala.inline
-    def setLambdaFunctionARN(value: LambdaFunctionARN): Self = StObject.set(x, "LambdaFunctionARN", value.asInstanceOf[js.Any])
+    inline def setLambdaFunctionARN(value: LambdaFunctionARN): Self = StObject.set(x, "LambdaFunctionARN", value.asInstanceOf[js.Any])
   }
 }

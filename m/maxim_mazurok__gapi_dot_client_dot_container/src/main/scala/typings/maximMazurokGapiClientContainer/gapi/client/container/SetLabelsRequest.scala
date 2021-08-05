@@ -41,53 +41,39 @@ trait SetLabelsRequest extends StObject {
 }
 object SetLabelsRequest {
   
-  @scala.inline
-  def apply(): SetLabelsRequest = {
+  inline def apply(): SetLabelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetLabelsRequest]
   }
   
-  @scala.inline
-  implicit class SetLabelsRequestMutableBuilder[Self <: SetLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
-    @scala.inline
-    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
+    inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
+    inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setResourceLabels(
+    inline def setResourceLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.SetLabelsRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "resourceLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLabelsUndefined: Self = StObject.set(x, "resourceLabels", js.undefined)
+    inline def setResourceLabelsUndefined: Self = StObject.set(x, "resourceLabels", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

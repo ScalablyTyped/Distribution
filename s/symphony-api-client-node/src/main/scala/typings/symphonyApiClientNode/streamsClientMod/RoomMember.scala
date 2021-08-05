@@ -14,28 +14,21 @@ trait RoomMember extends StObject {
 }
 object RoomMember {
   
-  @scala.inline
-  def apply(id: Double): RoomMember = {
+  inline def apply(id: Double): RoomMember = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomMember]
   }
   
-  @scala.inline
-  implicit class RoomMemberMutableBuilder[Self <: RoomMember] (val x: Self) extends AnyVal {
+  extension [Self <: RoomMember](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinDate(value: Double): Self = StObject.set(x, "joinDate", value.asInstanceOf[js.Any])
+    inline def setJoinDate(value: Double): Self = StObject.set(x, "joinDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinDateUndefined: Self = StObject.set(x, "joinDate", js.undefined)
+    inline def setJoinDateUndefined: Self = StObject.set(x, "joinDate", js.undefined)
     
-    @scala.inline
-    def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

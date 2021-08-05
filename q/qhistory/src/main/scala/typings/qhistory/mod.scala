@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     history: History[LocationState],
     stringify: js.Function1[/* query */ js.Object, String],
     parse: js.Function1[/* search */ String, js.Object]
@@ -31,17 +30,14 @@ object mod {
     }
     object Location {
       
-      @scala.inline
-      def apply(query: js.Any): Location = {
+      inline def apply(query: js.Any): Location = {
         val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
         __obj.asInstanceOf[Location]
       }
       
-      @scala.inline
-      implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+      extension [Self <: Location](x: Self) {
         
-        @scala.inline
-        def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       }
     }
     
@@ -51,20 +47,16 @@ object mod {
     }
     object LocationDescriptorObject {
       
-      @scala.inline
-      def apply(): LocationDescriptorObject = {
+      inline def apply(): LocationDescriptorObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LocationDescriptorObject]
       }
       
-      @scala.inline
-      implicit class LocationDescriptorObjectMutableBuilder[Self <: LocationDescriptorObject] (val x: Self) extends AnyVal {
+      extension [Self <: LocationDescriptorObject](x: Self) {
         
-        @scala.inline
-        def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+        inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       }
     }
   }

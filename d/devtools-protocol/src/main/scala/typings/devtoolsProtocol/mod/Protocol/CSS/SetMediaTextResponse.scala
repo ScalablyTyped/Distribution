@@ -13,16 +13,13 @@ trait SetMediaTextResponse extends StObject {
 }
 object SetMediaTextResponse {
   
-  @scala.inline
-  def apply(media: CSSMedia): SetMediaTextResponse = {
+  inline def apply(media: CSSMedia): SetMediaTextResponse = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetMediaTextResponse]
   }
   
-  @scala.inline
-  implicit class SetMediaTextResponseMutableBuilder[Self <: SetMediaTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetMediaTextResponse](x: Self) {
     
-    @scala.inline
-    def setMedia(value: CSSMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: CSSMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

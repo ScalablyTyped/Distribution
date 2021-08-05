@@ -50,44 +50,32 @@ object fieldsetMod {
   }
   object FieldsetProps {
     
-    @scala.inline
-    def apply(): FieldsetProps = {
+    inline def apply(): FieldsetProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldsetProps]
     }
     
-    @scala.inline
-    implicit class FieldsetPropsMutableBuilder[Self <: FieldsetProps] (val x: Self) extends AnyVal {
+    extension [Self <: FieldsetProps](x: Self) {
       
-      @scala.inline
-      def setLegend(value: ReactNode): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: ReactNode): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendClassName(value: String): Self = StObject.set(x, "legendClassName", value.asInstanceOf[js.Any])
+      inline def setLegendClassName(value: String): Self = StObject.set(x, "legendClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendClassNameUndefined: Self = StObject.set(x, "legendClassName", js.undefined)
+      inline def setLegendClassNameUndefined: Self = StObject.set(x, "legendClassName", js.undefined)
       
-      @scala.inline
-      def setLegendSROnly(value: Boolean): Self = StObject.set(x, "legendSROnly", value.asInstanceOf[js.Any])
+      inline def setLegendSROnly(value: Boolean): Self = StObject.set(x, "legendSROnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendSROnlyUndefined: Self = StObject.set(x, "legendSROnly", js.undefined)
+      inline def setLegendSROnlyUndefined: Self = StObject.set(x, "legendSROnly", js.undefined)
       
-      @scala.inline
-      def setLegendStyle(value: CSSProperties): Self = StObject.set(x, "legendStyle", value.asInstanceOf[js.Any])
+      inline def setLegendStyle(value: CSSProperties): Self = StObject.set(x, "legendStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendStyleUndefined: Self = StObject.set(x, "legendStyle", js.undefined)
+      inline def setLegendStyleUndefined: Self = StObject.set(x, "legendStyle", js.undefined)
       
-      @scala.inline
-      def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
-      @scala.inline
-      def setUnstyled(value: Boolean): Self = StObject.set(x, "unstyled", value.asInstanceOf[js.Any])
+      inline def setUnstyled(value: Boolean): Self = StObject.set(x, "unstyled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstyledUndefined: Self = StObject.set(x, "unstyled", js.undefined)
+      inline def setUnstyledUndefined: Self = StObject.set(x, "unstyled", js.undefined)
     }
   }
 }

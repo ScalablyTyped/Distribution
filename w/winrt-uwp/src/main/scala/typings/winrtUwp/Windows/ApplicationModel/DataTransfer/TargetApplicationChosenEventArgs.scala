@@ -12,16 +12,13 @@ trait TargetApplicationChosenEventArgs extends StObject {
 }
 object TargetApplicationChosenEventArgs {
   
-  @scala.inline
-  def apply(applicationName: String): TargetApplicationChosenEventArgs = {
+  inline def apply(applicationName: String): TargetApplicationChosenEventArgs = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetApplicationChosenEventArgs]
   }
   
-  @scala.inline
-  implicit class TargetApplicationChosenEventArgsMutableBuilder[Self <: TargetApplicationChosenEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TargetApplicationChosenEventArgs](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
   }
 }

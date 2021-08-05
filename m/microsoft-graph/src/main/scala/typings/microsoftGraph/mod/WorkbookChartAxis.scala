@@ -46,85 +46,59 @@ trait WorkbookChartAxis
 }
 object WorkbookChartAxis {
   
-  @scala.inline
-  def apply(): WorkbookChartAxis = {
+  inline def apply(): WorkbookChartAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartAxis]
   }
   
-  @scala.inline
-  implicit class WorkbookChartAxisMutableBuilder[Self <: WorkbookChartAxis] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartAxis](x: Self) {
     
-    @scala.inline
-    def setFormat(value: NullableOption[WorkbookChartAxisFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: NullableOption[WorkbookChartAxisFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatNull: Self = StObject.set(x, "format", null)
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setMajorGridlines(value: NullableOption[WorkbookChartGridlines]): Self = StObject.set(x, "majorGridlines", value.asInstanceOf[js.Any])
+    inline def setMajorGridlines(value: NullableOption[WorkbookChartGridlines]): Self = StObject.set(x, "majorGridlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorGridlinesNull: Self = StObject.set(x, "majorGridlines", null)
+    inline def setMajorGridlinesNull: Self = StObject.set(x, "majorGridlines", null)
     
-    @scala.inline
-    def setMajorGridlinesUndefined: Self = StObject.set(x, "majorGridlines", js.undefined)
+    inline def setMajorGridlinesUndefined: Self = StObject.set(x, "majorGridlines", js.undefined)
     
-    @scala.inline
-    def setMajorUnit(value: NullableOption[js.Any]): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
+    inline def setMajorUnit(value: NullableOption[js.Any]): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorUnitNull: Self = StObject.set(x, "majorUnit", null)
+    inline def setMajorUnitNull: Self = StObject.set(x, "majorUnit", null)
     
-    @scala.inline
-    def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
+    inline def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: NullableOption[js.Any]): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: NullableOption[js.Any]): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumNull: Self = StObject.set(x, "maximum", null)
+    inline def setMaximumNull: Self = StObject.set(x, "maximum", null)
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: NullableOption[js.Any]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: NullableOption[js.Any]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumNull: Self = StObject.set(x, "minimum", null)
+    inline def setMinimumNull: Self = StObject.set(x, "minimum", null)
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setMinorGridlines(value: NullableOption[WorkbookChartGridlines]): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
+    inline def setMinorGridlines(value: NullableOption[WorkbookChartGridlines]): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorGridlinesNull: Self = StObject.set(x, "minorGridlines", null)
+    inline def setMinorGridlinesNull: Self = StObject.set(x, "minorGridlines", null)
     
-    @scala.inline
-    def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
+    inline def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
     
-    @scala.inline
-    def setMinorUnit(value: NullableOption[js.Any]): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
+    inline def setMinorUnit(value: NullableOption[js.Any]): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorUnitNull: Self = StObject.set(x, "minorUnit", null)
+    inline def setMinorUnitNull: Self = StObject.set(x, "minorUnit", null)
     
-    @scala.inline
-    def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
+    inline def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
     
-    @scala.inline
-    def setTitle(value: NullableOption[WorkbookChartAxisTitle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: NullableOption[WorkbookChartAxisTitle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleNull: Self = StObject.set(x, "title", null)
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

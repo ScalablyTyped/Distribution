@@ -23,40 +23,29 @@ trait SearchUserActivityResponse extends StObject {
 }
 object SearchUserActivityResponse {
   
-  @scala.inline
-  def apply(): SearchUserActivityResponse = {
+  inline def apply(): SearchUserActivityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchUserActivityResponse]
   }
   
-  @scala.inline
-  implicit class SearchUserActivityResponseMutableBuilder[Self <: SearchUserActivityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchUserActivityResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     
-    @scala.inline
-    def setSessions(value: js.Array[UserActivitySession]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+    inline def setSessions(value: js.Array[UserActivitySession]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
+    inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
-    @scala.inline
-    def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
+    inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRowsUndefined: Self = StObject.set(x, "totalRows", js.undefined)
+    inline def setTotalRowsUndefined: Self = StObject.set(x, "totalRows", js.undefined)
   }
 }

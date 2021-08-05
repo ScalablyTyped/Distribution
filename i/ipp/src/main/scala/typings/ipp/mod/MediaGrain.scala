@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaGrain extends StObject
 object MediaGrain {
   
-  @scala.inline
-  def `x-direction`: typings.ipp.ippStrings.`x-direction` = "x-direction".asInstanceOf[typings.ipp.ippStrings.`x-direction`]
+  inline def `x-direction`: typings.ipp.ippStrings.`x-direction` = "x-direction".asInstanceOf[typings.ipp.ippStrings.`x-direction`]
   
-  @scala.inline
-  def `y-direction`: typings.ipp.ippStrings.`y-direction` = "y-direction".asInstanceOf[typings.ipp.ippStrings.`y-direction`]
+  inline def `y-direction`: typings.ipp.ippStrings.`y-direction` = "y-direction".asInstanceOf[typings.ipp.ippStrings.`y-direction`]
 }

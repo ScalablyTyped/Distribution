@@ -13,16 +13,13 @@ trait DisassociateSkillFromUsersRequest extends StObject {
 }
 object DisassociateSkillFromUsersRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId): DisassociateSkillFromUsersRequest = {
+  inline def apply(SkillId: SkillId): DisassociateSkillFromUsersRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateSkillFromUsersRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateSkillFromUsersRequestMutableBuilder[Self <: DisassociateSkillFromUsersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateSkillFromUsersRequest](x: Self) {
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

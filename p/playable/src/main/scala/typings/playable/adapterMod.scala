@@ -12,6 +12,5 @@ object adapterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAt(data: IFramesData, second: Double, duration: Double): js.Array[INormalizedFramesQuality] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAt")(data.asInstanceOf[js.Any], second.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Array[INormalizedFramesQuality]]
+  inline def getAt(data: IFramesData, second: Double, duration: Double): js.Array[INormalizedFramesQuality] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAt")(data.asInstanceOf[js.Any], second.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Array[INormalizedFramesQuality]]
 }

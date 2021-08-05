@@ -14,31 +14,23 @@ trait DisabledModifier extends StObject {
 }
 object DisabledModifier {
   
-  @scala.inline
-  def apply(): DisabledModifier = {
+  inline def apply(): DisabledModifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisabledModifier]
   }
   
-  @scala.inline
-  implicit class DisabledModifierMutableBuilder[Self <: DisabledModifier] (val x: Self) extends AnyVal {
+  extension [Self <: DisabledModifier](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+    inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

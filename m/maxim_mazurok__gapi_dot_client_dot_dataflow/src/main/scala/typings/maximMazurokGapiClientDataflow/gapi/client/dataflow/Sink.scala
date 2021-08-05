@@ -23,33 +23,27 @@ trait Sink extends StObject {
 }
 object Sink {
   
-  @scala.inline
-  def apply(): Sink = {
+  inline def apply(): Sink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sink]
   }
   
-  @scala.inline
-  implicit class SinkMutableBuilder[Self <: Sink] (val x: Self) extends AnyVal {
+  extension [Self <: Sink](x: Self) {
     
-    @scala.inline
-    def setCodec(
+    inline def setCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Sink & TopLevel[js.Any]
     ): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setSpec(
+    inline def setSpec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Sink & TopLevel[js.Any]
     ): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

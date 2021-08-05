@@ -10,19 +10,15 @@ trait TrackRelinkingParameterObject extends StObject {
 }
 object TrackRelinkingParameterObject {
   
-  @scala.inline
-  def apply(): TrackRelinkingParameterObject = {
+  inline def apply(): TrackRelinkingParameterObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackRelinkingParameterObject]
   }
   
-  @scala.inline
-  implicit class TrackRelinkingParameterObjectMutableBuilder[Self <: TrackRelinkingParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: TrackRelinkingParameterObject](x: Self) {
     
-    @scala.inline
-    def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
+    inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
+    inline def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
   }
 }

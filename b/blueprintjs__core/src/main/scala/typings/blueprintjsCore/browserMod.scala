@@ -12,13 +12,10 @@ object browserMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isEdge(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEdge")().asInstanceOf[Boolean]
+    inline def isEdge(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEdge")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isInternetExplorer(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternetExplorer")().asInstanceOf[Boolean]
+    inline def isInternetExplorer(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternetExplorer")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isWebkit(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebkit")().asInstanceOf[Boolean]
+    inline def isWebkit(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebkit")().asInstanceOf[Boolean]
   }
 }

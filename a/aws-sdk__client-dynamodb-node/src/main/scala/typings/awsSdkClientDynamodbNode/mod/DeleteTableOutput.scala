@@ -10,8 +10,7 @@ trait DeleteTableOutput
      with typings.awsSdkClientDynamodbNode.typesDeleteTableOutputMod.DeleteTableOutput
 object DeleteTableOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DeleteTableOutput = {
+  inline def apply($metadata: ResponseMetadata): DeleteTableOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTableOutput]
   }

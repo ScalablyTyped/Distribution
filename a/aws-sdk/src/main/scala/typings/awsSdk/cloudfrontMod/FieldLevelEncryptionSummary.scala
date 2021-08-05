@@ -33,37 +33,27 @@ trait FieldLevelEncryptionSummary extends StObject {
 }
 object FieldLevelEncryptionSummary {
   
-  @scala.inline
-  def apply(Id: String, LastModifiedTime: timestamp): FieldLevelEncryptionSummary = {
+  inline def apply(Id: String, LastModifiedTime: timestamp): FieldLevelEncryptionSummary = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldLevelEncryptionSummary]
   }
   
-  @scala.inline
-  implicit class FieldLevelEncryptionSummaryMutableBuilder[Self <: FieldLevelEncryptionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: FieldLevelEncryptionSummary](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setContentTypeProfileConfig(value: ContentTypeProfileConfig): Self = StObject.set(x, "ContentTypeProfileConfig", value.asInstanceOf[js.Any])
+    inline def setContentTypeProfileConfig(value: ContentTypeProfileConfig): Self = StObject.set(x, "ContentTypeProfileConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeProfileConfigUndefined: Self = StObject.set(x, "ContentTypeProfileConfig", js.undefined)
+    inline def setContentTypeProfileConfigUndefined: Self = StObject.set(x, "ContentTypeProfileConfig", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryArgProfileConfig(value: QueryArgProfileConfig): Self = StObject.set(x, "QueryArgProfileConfig", value.asInstanceOf[js.Any])
+    inline def setQueryArgProfileConfig(value: QueryArgProfileConfig): Self = StObject.set(x, "QueryArgProfileConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryArgProfileConfigUndefined: Self = StObject.set(x, "QueryArgProfileConfig", js.undefined)
+    inline def setQueryArgProfileConfigUndefined: Self = StObject.set(x, "QueryArgProfileConfig", js.undefined)
   }
 }

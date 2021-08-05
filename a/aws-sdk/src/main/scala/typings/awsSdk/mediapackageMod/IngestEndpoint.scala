@@ -28,37 +28,27 @@ trait IngestEndpoint extends StObject {
 }
 object IngestEndpoint {
   
-  @scala.inline
-  def apply(): IngestEndpoint = {
+  inline def apply(): IngestEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngestEndpoint]
   }
   
-  @scala.inline
-  implicit class IngestEndpointMutableBuilder[Self <: IngestEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IngestEndpoint](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setPassword(value: string): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: string): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
-    @scala.inline
-    def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

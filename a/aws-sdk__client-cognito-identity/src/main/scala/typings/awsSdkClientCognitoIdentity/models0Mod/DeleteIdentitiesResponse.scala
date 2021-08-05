@@ -14,8 +14,7 @@ trait DeleteIdentitiesResponse extends StObject {
 }
 object DeleteIdentitiesResponse {
   
-  @scala.inline
-  def apply(): DeleteIdentitiesResponse = {
+  inline def apply(): DeleteIdentitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteIdentitiesResponse]
   }
@@ -24,19 +23,14 @@ object DeleteIdentitiesResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: DeleteIdentitiesResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: DeleteIdentitiesResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class DeleteIdentitiesResponseMutableBuilder[Self <: DeleteIdentitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIdentitiesResponse](x: Self) {
     
-    @scala.inline
-    def setUnprocessedIdentityIds(value: js.Array[UnprocessedIdentityId]): Self = StObject.set(x, "UnprocessedIdentityIds", value.asInstanceOf[js.Any])
+    inline def setUnprocessedIdentityIds(value: js.Array[UnprocessedIdentityId]): Self = StObject.set(x, "UnprocessedIdentityIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedIdentityIdsUndefined: Self = StObject.set(x, "UnprocessedIdentityIds", js.undefined)
+    inline def setUnprocessedIdentityIdsUndefined: Self = StObject.set(x, "UnprocessedIdentityIds", js.undefined)
     
-    @scala.inline
-    def setUnprocessedIdentityIdsVarargs(value: UnprocessedIdentityId*): Self = StObject.set(x, "UnprocessedIdentityIds", js.Array(value :_*))
+    inline def setUnprocessedIdentityIdsVarargs(value: UnprocessedIdentityId*): Self = StObject.set(x, "UnprocessedIdentityIds", js.Array(value :_*))
   }
 }

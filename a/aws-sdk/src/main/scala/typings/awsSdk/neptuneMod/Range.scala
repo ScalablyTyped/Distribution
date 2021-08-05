@@ -23,31 +23,23 @@ trait Range extends StObject {
 }
 object Range {
   
-  @scala.inline
-  def apply(): Range = {
+  inline def apply(): Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Integer): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Integer): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
-    @scala.inline
-    def setStep(value: IntegerOptional): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
+    inline def setStep(value: IntegerOptional): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "Step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "Step", js.undefined)
     
-    @scala.inline
-    def setTo(value: Integer): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: Integer): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

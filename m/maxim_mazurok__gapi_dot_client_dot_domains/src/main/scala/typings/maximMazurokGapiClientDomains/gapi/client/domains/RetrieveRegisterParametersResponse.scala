@@ -11,19 +11,15 @@ trait RetrieveRegisterParametersResponse extends StObject {
 }
 object RetrieveRegisterParametersResponse {
   
-  @scala.inline
-  def apply(): RetrieveRegisterParametersResponse = {
+  inline def apply(): RetrieveRegisterParametersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetrieveRegisterParametersResponse]
   }
   
-  @scala.inline
-  implicit class RetrieveRegisterParametersResponseMutableBuilder[Self <: RetrieveRegisterParametersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveRegisterParametersResponse](x: Self) {
     
-    @scala.inline
-    def setRegisterParameters(value: RegisterParameters): Self = StObject.set(x, "registerParameters", value.asInstanceOf[js.Any])
+    inline def setRegisterParameters(value: RegisterParameters): Self = StObject.set(x, "registerParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterParametersUndefined: Self = StObject.set(x, "registerParameters", js.undefined)
+    inline def setRegisterParametersUndefined: Self = StObject.set(x, "registerParameters", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(viewmodel: KnockoutViewModelStatic): KnockoutStatic = {
+  inline def apply(viewmodel: KnockoutViewModelStatic): KnockoutStatic = {
     val __obj = js.Dynamic.literal(viewmodel = viewmodel.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setViewmodel(value: KnockoutViewModelStatic): Self = StObject.set(x, "viewmodel", value.asInstanceOf[js.Any])
+    inline def setViewmodel(value: KnockoutViewModelStatic): Self = StObject.set(x, "viewmodel", value.asInstanceOf[js.Any])
   }
 }

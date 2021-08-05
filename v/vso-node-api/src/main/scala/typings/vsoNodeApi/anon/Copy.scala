@@ -20,8 +20,7 @@ trait Copy extends StObject {
 }
 object Copy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: scala.Double,
     copy: scala.Double,
     move: scala.Double,
@@ -33,25 +32,18 @@ object Copy {
     __obj.asInstanceOf[Copy]
   }
   
-  @scala.inline
-  implicit class CopyMutableBuilder[Self <: Copy] (val x: Self) extends AnyVal {
+  extension [Self <: Copy](x: Self) {
     
-    @scala.inline
-    def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: scala.Double): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    inline def setCopy(value: scala.Double): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMove(value: scala.Double): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: scala.Double): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: scala.Double): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: scala.Double): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: scala.Double): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: scala.Double): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: scala.Double): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: scala.Double): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

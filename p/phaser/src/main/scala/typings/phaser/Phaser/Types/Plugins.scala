@@ -30,32 +30,24 @@ object Plugins {
   }
   object CorePluginContainer {
     
-    @scala.inline
-    def apply(key: String, plugin: js.Function): CorePluginContainer = {
+    inline def apply(key: String, plugin: js.Function): CorePluginContainer = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[CorePluginContainer]
     }
     
-    @scala.inline
-    implicit class CorePluginContainerMutableBuilder[Self <: CorePluginContainer] (val x: Self) extends AnyVal {
+    extension [Self <: CorePluginContainer](x: Self) {
       
-      @scala.inline
-      def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+      inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: js.Function): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: js.Function): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,20 +65,16 @@ object Plugins {
   }
   object CustomPluginContainer {
     
-    @scala.inline
-    def apply(key: String, plugin: js.Function): CustomPluginContainer = {
+    inline def apply(key: String, plugin: js.Function): CustomPluginContainer = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomPluginContainer]
     }
     
-    @scala.inline
-    implicit class CustomPluginContainerMutableBuilder[Self <: CustomPluginContainer] (val x: Self) extends AnyVal {
+    extension [Self <: CustomPluginContainer](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugin(value: js.Function): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: js.Function): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,32 +102,24 @@ object Plugins {
   }
   object GlobalPlugin {
     
-    @scala.inline
-    def apply(key: String, plugin: js.Function): GlobalPlugin = {
+    inline def apply(key: String, plugin: js.Function): GlobalPlugin = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalPlugin]
     }
     
-    @scala.inline
-    implicit class GlobalPluginMutableBuilder[Self <: GlobalPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalPlugin](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+      inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: js.Function): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: js.Function): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     }
   }
 }

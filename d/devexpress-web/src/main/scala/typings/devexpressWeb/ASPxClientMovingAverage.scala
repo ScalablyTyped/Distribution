@@ -28,8 +28,7 @@ trait ASPxClientMovingAverage
 }
 object ASPxClientMovingAverage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: ASPxClientWebChart,
     envelopePercent: Double,
     kind: String,
@@ -42,16 +41,12 @@ object ASPxClientMovingAverage {
     __obj.asInstanceOf[ASPxClientMovingAverage]
   }
   
-  @scala.inline
-  implicit class ASPxClientMovingAverageMutableBuilder[Self <: ASPxClientMovingAverage] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMovingAverage](x: Self) {
     
-    @scala.inline
-    def setEnvelopePercent(value: Double): Self = StObject.set(x, "envelopePercent", value.asInstanceOf[js.Any])
+    inline def setEnvelopePercent(value: Double): Self = StObject.set(x, "envelopePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }
 }

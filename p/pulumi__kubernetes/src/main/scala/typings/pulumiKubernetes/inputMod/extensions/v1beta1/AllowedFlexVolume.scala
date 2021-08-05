@@ -17,16 +17,13 @@ trait AllowedFlexVolume extends StObject {
 }
 object AllowedFlexVolume {
   
-  @scala.inline
-  def apply(driver: Input[String]): AllowedFlexVolume = {
+  inline def apply(driver: Input[String]): AllowedFlexVolume = {
     val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowedFlexVolume]
   }
   
-  @scala.inline
-  implicit class AllowedFlexVolumeMutableBuilder[Self <: AllowedFlexVolume] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedFlexVolume](x: Self) {
     
-    @scala.inline
-    def setDriver(value: Input[String]): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: Input[String]): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
   }
 }

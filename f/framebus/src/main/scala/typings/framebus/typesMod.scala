@@ -23,38 +23,28 @@ object typesMod {
   }
   object FramebusPayload {
     
-    @scala.inline
-    def apply(event: String, origin: String): FramebusPayload = {
+    inline def apply(event: String, origin: String): FramebusPayload = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[FramebusPayload]
     }
     
-    @scala.inline
-    implicit class FramebusPayloadMutableBuilder[Self <: FramebusPayload] (val x: Self) extends AnyVal {
+    extension [Self <: FramebusPayload](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventData(value: FramebusSubscriberArg): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+      inline def setEventData(value: FramebusSubscriberArg): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
+      inline def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReply(value: String | ReplyFunction): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+      inline def setReply(value: String | ReplyFunction): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
+      inline def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
     }
   }
   
@@ -90,17 +80,14 @@ object typesMod {
     }
     object Window {
       
-      @scala.inline
-      def apply(Window: () => Window): Window = {
+      inline def apply(Window: () => Window): Window = {
         val __obj = js.Dynamic.literal(Window = js.Any.fromFunction0(Window))
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setWindow(value: () => Window): Self = StObject.set(x, "Window", js.Any.fromFunction0(value))
+        inline def setWindow(value: () => Window): Self = StObject.set(x, "Window", js.Any.fromFunction0(value))
       }
     }
   }

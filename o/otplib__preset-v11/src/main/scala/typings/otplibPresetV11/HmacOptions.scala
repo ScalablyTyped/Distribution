@@ -12,25 +12,19 @@ trait HmacOptions extends StObject {
 }
 object HmacOptions {
   
-  @scala.inline
-  def apply(): HmacOptions = {
+  inline def apply(): HmacOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HmacOptions]
   }
   
-  @scala.inline
-  implicit class HmacOptionsMutableBuilder[Self <: HmacOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HmacOptions](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

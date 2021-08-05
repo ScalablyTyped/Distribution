@@ -71,8 +71,7 @@ object nativeBridgesMod {
   }
   object IGoogleAnalyticsBridge {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowIDFA: (String, Boolean) => Unit,
       dispatch: () => js.Promise[Boolean],
       getClientId: String => js.Promise[String],
@@ -94,56 +93,39 @@ object nativeBridgesMod {
       __obj.asInstanceOf[IGoogleAnalyticsBridge]
     }
     
-    @scala.inline
-    implicit class IGoogleAnalyticsBridgeMutableBuilder[Self <: IGoogleAnalyticsBridge] (val x: Self) extends AnyVal {
+    extension [Self <: IGoogleAnalyticsBridge](x: Self) {
       
-      @scala.inline
-      def setAllowIDFA(value: (String, Boolean) => Unit): Self = StObject.set(x, "allowIDFA", js.Any.fromFunction2(value))
+      inline def setAllowIDFA(value: (String, Boolean) => Unit): Self = StObject.set(x, "allowIDFA", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDispatch(value: () => js.Promise[Boolean]): Self = StObject.set(x, "dispatch", js.Any.fromFunction0(value))
+      inline def setDispatch(value: () => js.Promise[Boolean]): Self = StObject.set(x, "dispatch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetClientId(value: String => js.Promise[String]): Self = StObject.set(x, "getClientId", js.Any.fromFunction1(value))
+      inline def setGetClientId(value: String => js.Promise[String]): Self = StObject.set(x, "getClientId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAnonymizeIp(value: (String, Boolean) => Unit): Self = StObject.set(x, "setAnonymizeIp", js.Any.fromFunction2(value))
+      inline def setSetAnonymizeIp(value: (String, Boolean) => Unit): Self = StObject.set(x, "setAnonymizeIp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetAppName(value: (String, String) => Unit): Self = StObject.set(x, "setAppName", js.Any.fromFunction2(value))
+      inline def setSetAppName(value: (String, String) => Unit): Self = StObject.set(x, "setAppName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetAppVersion(value: (String, String) => Unit): Self = StObject.set(x, "setAppVersion", js.Any.fromFunction2(value))
+      inline def setSetAppVersion(value: (String, String) => Unit): Self = StObject.set(x, "setAppVersion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetClient(value: (String, String) => Unit): Self = StObject.set(x, "setClient", js.Any.fromFunction2(value))
+      inline def setSetClient(value: (String, String) => Unit): Self = StObject.set(x, "setClient", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetCurrency(value: (String, String) => Unit): Self = StObject.set(x, "setCurrency", js.Any.fromFunction2(value))
+      inline def setSetCurrency(value: (String, String) => Unit): Self = StObject.set(x, "setCurrency", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSamplingRate(value: (String, Double) => Unit): Self = StObject.set(x, "setSamplingRate", js.Any.fromFunction2(value))
+      inline def setSetSamplingRate(value: (String, Double) => Unit): Self = StObject.set(x, "setSamplingRate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTrackUncaughtExceptions(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTrackUncaughtExceptions", js.Any.fromFunction2(value))
+      inline def setSetTrackUncaughtExceptions(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTrackUncaughtExceptions", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetUser(value: (String, String) => Unit): Self = StObject.set(x, "setUser", js.Any.fromFunction2(value))
+      inline def setSetUser(value: (String, String) => Unit): Self = StObject.set(x, "setUser", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTrackEvent(value: (String, String, String, String, String, HitPayload) => Unit): Self = StObject.set(x, "trackEvent", js.Any.fromFunction6(value))
+      inline def setTrackEvent(value: (String, String, String, String, String, HitPayload) => Unit): Self = StObject.set(x, "trackEvent", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setTrackException(value: (String, String, Boolean, HitPayload) => Unit): Self = StObject.set(x, "trackException", js.Any.fromFunction4(value))
+      inline def setTrackException(value: (String, String, Boolean, HitPayload) => Unit): Self = StObject.set(x, "trackException", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setTrackScreenView(value: (String, String, HitPayload) => Unit): Self = StObject.set(x, "trackScreenView", js.Any.fromFunction3(value))
+      inline def setTrackScreenView(value: (String, String, HitPayload) => Unit): Self = StObject.set(x, "trackScreenView", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTrackSocialInteraction(value: (String, String, String, String, HitPayload) => Unit): Self = StObject.set(x, "trackSocialInteraction", js.Any.fromFunction5(value))
+      inline def setTrackSocialInteraction(value: (String, String, String, String, HitPayload) => Unit): Self = StObject.set(x, "trackSocialInteraction", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setTrackTiming(value: (String, String, Double, String, String, HitPayload) => Unit): Self = StObject.set(x, "trackTiming", js.Any.fromFunction6(value))
+      inline def setTrackTiming(value: (String, String, Double, String, String, HitPayload) => Unit): Self = StObject.set(x, "trackTiming", js.Any.fromFunction6(value))
     }
   }
   
@@ -157,23 +139,18 @@ object nativeBridgesMod {
   }
   object IGoogleAnalyticsSettings {
     
-    @scala.inline
-    def apply(setDispatchInterval: js.Any => Unit, setDryRun: js.Any => Unit, setOptOut: js.Any => Unit): IGoogleAnalyticsSettings = {
+    inline def apply(setDispatchInterval: js.Any => Unit, setDryRun: js.Any => Unit, setOptOut: js.Any => Unit): IGoogleAnalyticsSettings = {
       val __obj = js.Dynamic.literal(setDispatchInterval = js.Any.fromFunction1(setDispatchInterval), setDryRun = js.Any.fromFunction1(setDryRun), setOptOut = js.Any.fromFunction1(setOptOut))
       __obj.asInstanceOf[IGoogleAnalyticsSettings]
     }
     
-    @scala.inline
-    implicit class IGoogleAnalyticsSettingsMutableBuilder[Self <: IGoogleAnalyticsSettings] (val x: Self) extends AnyVal {
+    extension [Self <: IGoogleAnalyticsSettings](x: Self) {
       
-      @scala.inline
-      def setSetDispatchInterval(value: js.Any => Unit): Self = StObject.set(x, "setDispatchInterval", js.Any.fromFunction1(value))
+      inline def setSetDispatchInterval(value: js.Any => Unit): Self = StObject.set(x, "setDispatchInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDryRun(value: js.Any => Unit): Self = StObject.set(x, "setDryRun", js.Any.fromFunction1(value))
+      inline def setSetDryRun(value: js.Any => Unit): Self = StObject.set(x, "setDryRun", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOptOut(value: js.Any => Unit): Self = StObject.set(x, "setOptOut", js.Any.fromFunction1(value))
+      inline def setSetOptOut(value: js.Any => Unit): Self = StObject.set(x, "setOptOut", js.Any.fromFunction1(value))
     }
   }
   

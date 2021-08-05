@@ -12,25 +12,19 @@ trait WebExtensionManifestChromeSettingsOverrides extends StObject {
 }
 object WebExtensionManifestChromeSettingsOverrides {
   
-  @scala.inline
-  def apply(): WebExtensionManifestChromeSettingsOverrides = {
+  inline def apply(): WebExtensionManifestChromeSettingsOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionManifestChromeSettingsOverrides]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestChromeSettingsOverridesMutableBuilder[Self <: WebExtensionManifestChromeSettingsOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestChromeSettingsOverrides](x: Self) {
     
-    @scala.inline
-    def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+    inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+    inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
     
-    @scala.inline
-    def setSearch_provider(value: WebExtensionManifestChromeSettingsOverridesSearchProvider): Self = StObject.set(x, "search_provider", value.asInstanceOf[js.Any])
+    inline def setSearch_provider(value: WebExtensionManifestChromeSettingsOverridesSearchProvider): Self = StObject.set(x, "search_provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch_providerUndefined: Self = StObject.set(x, "search_provider", js.undefined)
+    inline def setSearch_providerUndefined: Self = StObject.set(x, "search_provider", js.undefined)
   }
 }

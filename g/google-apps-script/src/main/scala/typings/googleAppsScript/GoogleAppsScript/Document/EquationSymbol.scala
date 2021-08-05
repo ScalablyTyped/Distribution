@@ -16,8 +16,7 @@ trait EquationSymbol
 }
 object EquationSymbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,
@@ -54,10 +53,8 @@ object EquationSymbol {
     __obj.asInstanceOf[EquationSymbol]
   }
   
-  @scala.inline
-  implicit class EquationSymbolMutableBuilder[Self <: EquationSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: EquationSymbol](x: Self) {
     
-    @scala.inline
-    def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+    inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
   }
 }

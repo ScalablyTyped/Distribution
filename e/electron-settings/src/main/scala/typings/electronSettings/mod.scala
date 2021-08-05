@@ -26,8 +26,7 @@ object mod extends Shortcut {
        with _JsonValue
   object JsonObject {
     
-    @scala.inline
-    def apply(): JsonObject = {
+    inline def apply(): JsonObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonObject]
     }
@@ -171,17 +170,14 @@ object mod extends Shortcut {
   }
   object SettingsObserver {
     
-    @scala.inline
-    def apply(dispose: () => Unit): SettingsObserver = {
+    inline def apply(dispose: () => Unit): SettingsObserver = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[SettingsObserver]
     }
     
-    @scala.inline
-    implicit class SettingsObserverMutableBuilder[Self <: SettingsObserver] (val x: Self) extends AnyVal {
+    extension [Self <: SettingsObserver](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -194,20 +190,16 @@ object mod extends Shortcut {
   }
   object SettingsOptions {
     
-    @scala.inline
-    def apply(): SettingsOptions = {
+    inline def apply(): SettingsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SettingsOptions]
     }
     
-    @scala.inline
-    implicit class SettingsOptionsMutableBuilder[Self <: SettingsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SettingsOptions](x: Self) {
       
-      @scala.inline
-      def setPrettify(value: Boolean): Self = StObject.set(x, "prettify", value.asInstanceOf[js.Any])
+      inline def setPrettify(value: Boolean): Self = StObject.set(x, "prettify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
+      inline def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
     }
   }
   

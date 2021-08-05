@@ -13,7 +13,7 @@ trait FaxReceiptOptions extends StObject {
   /** Authentication type used by server */
   var AuthenticationType: FAX_SMTP_AUTHENTICATION_TYPE_ENUM
   
-  @JSName("FAXCOMEXLib.FaxReceiptOptions_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxReceiptOptions_typekey")
   var FAXCOMEXLibDotFaxReceiptOptions_typekey: FaxReceiptOptions
   
   /** Refresh the object */
@@ -42,8 +42,7 @@ trait FaxReceiptOptions extends StObject {
 }
 object FaxReceiptOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowedReceipts: FAX_RECEIPT_TYPE_ENUM,
     AuthenticationType: FAX_SMTP_AUTHENTICATION_TYPE_ENUM,
     FAXCOMEXLibDotFaxReceiptOptions_typekey: FaxReceiptOptions,
@@ -61,40 +60,28 @@ object FaxReceiptOptions {
     __obj.asInstanceOf[FaxReceiptOptions]
   }
   
-  @scala.inline
-  implicit class FaxReceiptOptionsMutableBuilder[Self <: FaxReceiptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FaxReceiptOptions](x: Self) {
     
-    @scala.inline
-    def setAllowedReceipts(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "AllowedReceipts", value.asInstanceOf[js.Any])
+    inline def setAllowedReceipts(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "AllowedReceipts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationType(value: FAX_SMTP_AUTHENTICATION_TYPE_ENUM): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: FAX_SMTP_AUTHENTICATION_TYPE_ENUM): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxReceiptOptions_typekey(value: FaxReceiptOptions): Self = StObject.set(x, "FAXCOMEXLib.FaxReceiptOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxReceiptOptions_typekey(value: FaxReceiptOptions): Self = StObject.set(x, "FAXCOMEXLib.FaxReceiptOptions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSMTPPassword(value: String): Self = StObject.set(x, "SMTPPassword", value.asInstanceOf[js.Any])
+    inline def setSMTPPassword(value: String): Self = StObject.set(x, "SMTPPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMTPPort(value: Double): Self = StObject.set(x, "SMTPPort", value.asInstanceOf[js.Any])
+    inline def setSMTPPort(value: Double): Self = StObject.set(x, "SMTPPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMTPSender(value: String): Self = StObject.set(x, "SMTPSender", value.asInstanceOf[js.Any])
+    inline def setSMTPSender(value: String): Self = StObject.set(x, "SMTPSender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMTPServer(value: String): Self = StObject.set(x, "SMTPServer", value.asInstanceOf[js.Any])
+    inline def setSMTPServer(value: String): Self = StObject.set(x, "SMTPServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMTPUser(value: String): Self = StObject.set(x, "SMTPUser", value.asInstanceOf[js.Any])
+    inline def setSMTPUser(value: String): Self = StObject.set(x, "SMTPUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseForInboundRouting(value: Boolean): Self = StObject.set(x, "UseForInboundRouting", value.asInstanceOf[js.Any])
+    inline def setUseForInboundRouting(value: Boolean): Self = StObject.set(x, "UseForInboundRouting", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait PushSubscriptionOptions extends StObject {
 }
 object PushSubscriptionOptions {
   
-  @scala.inline
-  def apply(userVisibleOnly: scala.Boolean): PushSubscriptionOptions = {
+  inline def apply(userVisibleOnly: scala.Boolean): PushSubscriptionOptions = {
     val __obj = js.Dynamic.literal(userVisibleOnly = userVisibleOnly.asInstanceOf[js.Any], applicationServerKey = null)
     __obj.asInstanceOf[PushSubscriptionOptions]
   }
   
-  @scala.inline
-  implicit class PushSubscriptionOptionsMutableBuilder[Self <: PushSubscriptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PushSubscriptionOptions](x: Self) {
     
-    @scala.inline
-    def setApplicationServerKey(value: ArrayBuffer): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
+    inline def setApplicationServerKey(value: ArrayBuffer): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationServerKeyNull: Self = StObject.set(x, "applicationServerKey", null)
+    inline def setApplicationServerKeyNull: Self = StObject.set(x, "applicationServerKey", null)
     
-    @scala.inline
-    def setUserVisibleOnly(value: scala.Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
+    inline def setUserVisibleOnly(value: scala.Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
   }
 }

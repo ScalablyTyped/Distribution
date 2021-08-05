@@ -17,19 +17,15 @@ trait ClientResult[T] extends StObject {
 }
 object ClientResult {
   
-  @scala.inline
-  def apply[T](get_value: () => T, setValue: T => Unit): ClientResult[T] = {
+  inline def apply[T](get_value: () => T, setValue: T => Unit): ClientResult[T] = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[ClientResult[T]]
   }
   
-  @scala.inline
-  implicit class ClientResultMutableBuilder[Self <: ClientResult[?], T] (val x: Self & ClientResult[T]) extends AnyVal {
+  extension [Self <: ClientResult[?], T](x: Self & ClientResult[T]) {
     
-    @scala.inline
-    def setGet_value(value: () => T): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => T): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValue(value: T => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: T => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

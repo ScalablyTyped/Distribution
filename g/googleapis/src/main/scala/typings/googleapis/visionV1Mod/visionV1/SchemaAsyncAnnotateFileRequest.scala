@@ -31,40 +31,29 @@ trait SchemaAsyncAnnotateFileRequest extends StObject {
 }
 object SchemaAsyncAnnotateFileRequest {
   
-  @scala.inline
-  def apply(): SchemaAsyncAnnotateFileRequest = {
+  inline def apply(): SchemaAsyncAnnotateFileRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsyncAnnotateFileRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAsyncAnnotateFileRequestMutableBuilder[Self <: SchemaAsyncAnnotateFileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsyncAnnotateFileRequest](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[SchemaFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[SchemaFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: SchemaFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: SchemaFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setImageContext(value: SchemaImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
+    inline def setImageContext(value: SchemaImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
+    inline def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
     
-    @scala.inline
-    def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setOutputConfig(value: SchemaOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: SchemaOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
   }
 }

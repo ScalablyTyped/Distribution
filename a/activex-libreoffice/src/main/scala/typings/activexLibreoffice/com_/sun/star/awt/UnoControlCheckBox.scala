@@ -16,8 +16,7 @@ trait UnoControlCheckBox
      with XLayoutConstrains
 object UnoControlCheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

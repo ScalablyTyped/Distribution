@@ -13,8 +13,7 @@ object mod {
   @JSImport("uk.co.workingedge.phonegap.plugin.launchnavigator", "launchnavigator")
   @js.native
   def launchnavigator: LaunchNavigator_ = js.native
-  @scala.inline
-  def launchnavigator_=(x: LaunchNavigator_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("launchnavigator")(x.asInstanceOf[js.Any])
+  inline def launchnavigator_=(x: LaunchNavigator_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("launchnavigator")(x.asInstanceOf[js.Any])
   
   trait AppSelection extends StObject {
     
@@ -24,20 +23,16 @@ object mod {
   }
   object AppSelection {
     
-    @scala.inline
-    def apply(userChoice: UserChoice, userPrompted: UserPrompted): AppSelection = {
+    inline def apply(userChoice: UserChoice, userPrompted: UserPrompted): AppSelection = {
       val __obj = js.Dynamic.literal(userChoice = userChoice.asInstanceOf[js.Any], userPrompted = userPrompted.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppSelection]
     }
     
-    @scala.inline
-    implicit class AppSelectionMutableBuilder[Self <: AppSelection] (val x: Self) extends AnyVal {
+    extension [Self <: AppSelection](x: Self) {
       
-      @scala.inline
-      def setUserChoice(value: UserChoice): Self = StObject.set(x, "userChoice", value.asInstanceOf[js.Any])
+      inline def setUserChoice(value: UserChoice): Self = StObject.set(x, "userChoice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPrompted(value: UserPrompted): Self = StObject.set(x, "userPrompted", value.asInstanceOf[js.Any])
+      inline def setUserPrompted(value: UserPrompted): Self = StObject.set(x, "userPrompted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,53 +76,38 @@ object mod {
   }
   object AppSelectionOptions {
     
-    @scala.inline
-    def apply(): AppSelectionOptions = {
+    inline def apply(): AppSelectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppSelectionOptions]
     }
     
-    @scala.inline
-    implicit class AppSelectionOptionsMutableBuilder[Self <: AppSelectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppSelectionOptions](x: Self) {
       
-      @scala.inline
-      def setAndroidTheme(value: Double): Self = StObject.set(x, "androidTheme", value.asInstanceOf[js.Any])
+      inline def setAndroidTheme(value: Double): Self = StObject.set(x, "androidTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidThemeUndefined: Self = StObject.set(x, "androidTheme", js.undefined)
+      inline def setAndroidThemeUndefined: Self = StObject.set(x, "androidTheme", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* app */ String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* app */ String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
+      inline def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
+      inline def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
       
-      @scala.inline
-      def setDialogHeaderText(value: String): Self = StObject.set(x, "dialogHeaderText", value.asInstanceOf[js.Any])
+      inline def setDialogHeaderText(value: String): Self = StObject.set(x, "dialogHeaderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogHeaderTextUndefined: Self = StObject.set(x, "dialogHeaderText", js.undefined)
+      inline def setDialogHeaderTextUndefined: Self = StObject.set(x, "dialogHeaderText", js.undefined)
       
-      @scala.inline
-      def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setRememberChoice(value: RememberChoiceOptions): Self = StObject.set(x, "rememberChoice", value.asInstanceOf[js.Any])
+      inline def setRememberChoice(value: RememberChoiceOptions): Self = StObject.set(x, "rememberChoice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRememberChoiceUndefined: Self = StObject.set(x, "rememberChoice", js.undefined)
+      inline def setRememberChoiceUndefined: Self = StObject.set(x, "rememberChoice", js.undefined)
     }
   }
   
@@ -213,95 +193,66 @@ object mod {
   }
   object LaunchNavigatorOptions {
     
-    @scala.inline
-    def apply(): LaunchNavigatorOptions = {
+    inline def apply(): LaunchNavigatorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LaunchNavigatorOptions]
     }
     
-    @scala.inline
-    implicit class LaunchNavigatorOptionsMutableBuilder[Self <: LaunchNavigatorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LaunchNavigatorOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppSelection(value: AppSelectionOptions): Self = StObject.set(x, "appSelection", value.asInstanceOf[js.Any])
+      inline def setAppSelection(value: AppSelectionOptions): Self = StObject.set(x, "appSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppSelectionUndefined: Self = StObject.set(x, "appSelection", js.undefined)
+      inline def setAppSelectionUndefined: Self = StObject.set(x, "appSelection", js.undefined)
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+      inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+      inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
       
-      @scala.inline
-      def setEnableGeocoding(value: Boolean): Self = StObject.set(x, "enableGeocoding", value.asInstanceOf[js.Any])
+      inline def setEnableGeocoding(value: Boolean): Self = StObject.set(x, "enableGeocoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableGeocodingUndefined: Self = StObject.set(x, "enableGeocoding", js.undefined)
+      inline def setEnableGeocodingUndefined: Self = StObject.set(x, "enableGeocoding", js.undefined)
       
-      @scala.inline
-      def setEnableGeolocation(value: Boolean): Self = StObject.set(x, "enableGeolocation", value.asInstanceOf[js.Any])
+      inline def setEnableGeolocation(value: Boolean): Self = StObject.set(x, "enableGeolocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableGeolocationUndefined: Self = StObject.set(x, "enableGeolocation", js.undefined)
+      inline def setEnableGeolocationUndefined: Self = StObject.set(x, "enableGeolocation", js.undefined)
       
-      @scala.inline
-      def setErrorCallback(value: /* error */ String => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
+      inline def setErrorCallback(value: /* error */ String => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
+      inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
       
-      @scala.inline
-      def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
+      inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
       
-      @scala.inline
-      def setLaunchModeAppleMaps(value: String): Self = StObject.set(x, "launchModeAppleMaps", value.asInstanceOf[js.Any])
+      inline def setLaunchModeAppleMaps(value: String): Self = StObject.set(x, "launchModeAppleMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchModeAppleMapsUndefined: Self = StObject.set(x, "launchModeAppleMaps", js.undefined)
+      inline def setLaunchModeAppleMapsUndefined: Self = StObject.set(x, "launchModeAppleMaps", js.undefined)
       
-      @scala.inline
-      def setLaunchModeGoogleMaps(value: String): Self = StObject.set(x, "launchModeGoogleMaps", value.asInstanceOf[js.Any])
+      inline def setLaunchModeGoogleMaps(value: String): Self = StObject.set(x, "launchModeGoogleMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchModeGoogleMapsUndefined: Self = StObject.set(x, "launchModeGoogleMaps", js.undefined)
+      inline def setLaunchModeGoogleMapsUndefined: Self = StObject.set(x, "launchModeGoogleMaps", js.undefined)
       
-      @scala.inline
-      def setStart(value: String | js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String | js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartName(value: String): Self = StObject.set(x, "startName", value.asInstanceOf[js.Any])
+      inline def setStartName(value: String): Self = StObject.set(x, "startName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartNameUndefined: Self = StObject.set(x, "startName", js.undefined)
+      inline def setStartNameUndefined: Self = StObject.set(x, "startName", js.undefined)
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+      inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
       
-      @scala.inline
-      def setSuccessCallback(value: js.Function): Self = StObject.set(x, "successCallback", value.asInstanceOf[js.Any])
+      inline def setSuccessCallback(value: js.Function): Self = StObject.set(x, "successCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
+      inline def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
       
-      @scala.inline
-      def setTransportMode(value: String): Self = StObject.set(x, "transportMode", value.asInstanceOf[js.Any])
+      inline def setTransportMode(value: String): Self = StObject.set(x, "transportMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportModeUndefined: Self = StObject.set(x, "transportMode", js.undefined)
+      inline def setTransportModeUndefined: Self = StObject.set(x, "transportMode", js.undefined)
     }
   }
   
@@ -492,44 +443,32 @@ object mod {
   }
   object PromptsOptions {
     
-    @scala.inline
-    def apply(): PromptsOptions = {
+    inline def apply(): PromptsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromptsOptions]
     }
     
-    @scala.inline
-    implicit class PromptsOptionsMutableBuilder[Self <: PromptsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PromptsOptions](x: Self) {
       
-      @scala.inline
-      def setBodyText(value: String): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
+      inline def setBodyText(value: String): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyTextUndefined: Self = StObject.set(x, "bodyText", js.undefined)
+      inline def setBodyTextUndefined: Self = StObject.set(x, "bodyText", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* rememberChoice */ Boolean => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* rememberChoice */ Boolean => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
+      inline def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
+      inline def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
       
-      @scala.inline
-      def setNoButtonText(value: String): Self = StObject.set(x, "noButtonText", value.asInstanceOf[js.Any])
+      inline def setNoButtonText(value: String): Self = StObject.set(x, "noButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoButtonTextUndefined: Self = StObject.set(x, "noButtonText", js.undefined)
+      inline def setNoButtonTextUndefined: Self = StObject.set(x, "noButtonText", js.undefined)
       
-      @scala.inline
-      def setYesButtonText(value: String): Self = StObject.set(x, "yesButtonText", value.asInstanceOf[js.Any])
+      inline def setYesButtonText(value: String): Self = StObject.set(x, "yesButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYesButtonTextUndefined: Self = StObject.set(x, "yesButtonText", js.undefined)
+      inline def setYesButtonTextUndefined: Self = StObject.set(x, "yesButtonText", js.undefined)
     }
   }
   
@@ -563,32 +502,24 @@ object mod {
   }
   object RememberChoiceOptions {
     
-    @scala.inline
-    def apply(): RememberChoiceOptions = {
+    inline def apply(): RememberChoiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RememberChoiceOptions]
     }
     
-    @scala.inline
-    implicit class RememberChoiceOptionsMutableBuilder[Self <: RememberChoiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RememberChoiceOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean | String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean | String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: PromptsOptions): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: PromptsOptions): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptFn(value: /* callback */ js.Function1[/* rememberChoice */ Boolean, Unit] => Unit): Self = StObject.set(x, "promptFn", js.Any.fromFunction1(value))
+      inline def setPromptFn(value: /* callback */ js.Function1[/* rememberChoice */ Boolean, Unit] => Unit): Self = StObject.set(x, "promptFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPromptFnUndefined: Self = StObject.set(x, "promptFn", js.undefined)
+      inline def setPromptFnUndefined: Self = StObject.set(x, "promptFn", js.undefined)
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     }
   }
   
@@ -621,8 +552,7 @@ object mod {
   }
   object UserChoice {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: js.Function0[Unit] => Unit,
       exists: js.Function1[/* exists */ Boolean, Unit] => Unit,
       get: js.Function1[/* app */ String, Unit] => Unit,
@@ -632,20 +562,15 @@ object mod {
       __obj.asInstanceOf[UserChoice]
     }
     
-    @scala.inline
-    implicit class UserChoiceMutableBuilder[Self <: UserChoice] (val x: Self) extends AnyVal {
+    extension [Self <: UserChoice](x: Self) {
       
-      @scala.inline
-      def setClear(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExists(value: js.Function1[/* exists */ Boolean, Unit] => Unit): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
+      inline def setExists(value: js.Function1[/* exists */ Boolean, Unit] => Unit): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: js.Function1[/* app */ String, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Function1[/* app */ String, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -671,8 +596,7 @@ object mod {
   }
   object UserPrompted {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: js.Function0[Unit] => Unit,
       get: js.Function1[/* exists */ Boolean, Unit] => Unit,
       set: js.Function0[Unit] => Unit
@@ -681,17 +605,13 @@ object mod {
       __obj.asInstanceOf[UserPrompted]
     }
     
-    @scala.inline
-    implicit class UserPromptedMutableBuilder[Self <: UserPrompted] (val x: Self) extends AnyVal {
+    extension [Self <: UserPrompted](x: Self) {
       
-      @scala.inline
-      def setClear(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: js.Function1[/* exists */ Boolean, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Function1[/* exists */ Boolean, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
 }

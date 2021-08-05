@@ -15,11 +15,9 @@ object userMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapUser(http: AxiosInstance, data: UserProps): User = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUser")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[User]
+  inline def wrapUser(http: AxiosInstance, data: UserProps): User = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUser")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[User]
   
-  @scala.inline
-  def wrapUserCollection(http: AxiosInstance, data: CollectionProp[UserProps]): Collection[User, UserProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUserCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[User, UserProps]]
+  inline def wrapUserCollection(http: AxiosInstance, data: CollectionProp[UserProps]): Collection[User, UserProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUserCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[User, UserProps]]
   
   trait User
     extends StObject
@@ -27,8 +25,7 @@ object userMod {
        with DefaultElements[UserProps]
   object User {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activated: Boolean,
       avatarUrl: String,
       confirmed: Boolean,
@@ -88,8 +85,7 @@ object userMod {
   }
   object UserProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activated: Boolean,
       avatarUrl: String,
       confirmed: Boolean,
@@ -103,32 +99,23 @@ object userMod {
       __obj.asInstanceOf[UserProps]
     }
     
-    @scala.inline
-    implicit class UserPropsMutableBuilder[Self <: UserProps] (val x: Self) extends AnyVal {
+    extension [Self <: UserProps](x: Self) {
       
-      @scala.inline
-      def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
+      inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+      inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
+      inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignInCount(value: Double): Self = StObject.set(x, "signInCount", value.asInstanceOf[js.Any])
+      inline def setSignInCount(value: Double): Self = StObject.set(x, "signInCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

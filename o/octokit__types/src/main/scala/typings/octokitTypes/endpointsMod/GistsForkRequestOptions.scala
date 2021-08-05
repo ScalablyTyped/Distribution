@@ -20,25 +20,19 @@ trait GistsForkRequestOptions extends StObject {
 }
 object GistsForkRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): GistsForkRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): GistsForkRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/gists/:gist_id/forks")
     __obj.asInstanceOf[GistsForkRequestOptions]
   }
   
-  @scala.inline
-  implicit class GistsForkRequestOptionsMutableBuilder[Self <: GistsForkRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GistsForkRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashgistsSlashColongist_idSlashforks): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashgistsSlashColongist_idSlashforks): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

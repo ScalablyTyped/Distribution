@@ -278,61 +278,44 @@ object queriesMod {
   }
   object ByRoleOptions {
     
-    @scala.inline
-    def apply(): ByRoleOptions = {
+    inline def apply(): ByRoleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ByRoleOptions]
     }
     
-    @scala.inline
-    implicit class ByRoleOptionsMutableBuilder[Self <: ByRoleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ByRoleOptions](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: String | RegExp | (js.Function2[/* accessibleName */ String, /* element */ Element, Boolean])
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFunction2(value: (/* accessibleName */ String, /* element */ Element) => Boolean): Self = StObject.set(x, "name", js.Any.fromFunction2(value))
+      inline def setNameFunction2(value: (/* accessibleName */ String, /* element */ Element) => Boolean): Self = StObject.set(x, "name", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+      inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
+      inline def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
       
-      @scala.inline
-      def setQueryFallbacks(value: Boolean): Self = StObject.set(x, "queryFallbacks", value.asInstanceOf[js.Any])
+      inline def setQueryFallbacks(value: Boolean): Self = StObject.set(x, "queryFallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryFallbacksUndefined: Self = StObject.set(x, "queryFallbacks", js.undefined)
+      inline def setQueryFallbacksUndefined: Self = StObject.set(x, "queryFallbacks", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     }
   }
   

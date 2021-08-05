@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def signingMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, Stream](signer: RequestSigner): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signingMiddleware")(signer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def signingMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, Stream](signer: RequestSigner): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signingMiddleware")(signer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

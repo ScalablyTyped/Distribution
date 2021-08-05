@@ -14,19 +14,15 @@ trait SVGPathSelector
 }
 object SVGPathSelector {
   
-  @scala.inline
-  def apply(): SVGPathSelector = {
+  inline def apply(): SVGPathSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGPathSelector]
   }
   
-  @scala.inline
-  implicit class SVGPathSelectorMutableBuilder[Self <: SVGPathSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSelector](x: Self) {
     
-    @scala.inline
-    def setPath(value: SVGPathAttributes): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: SVGPathAttributes): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

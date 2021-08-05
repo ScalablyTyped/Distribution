@@ -17,22 +17,17 @@ trait EVEN extends StObject {
 }
 object EVEN {
   
-  @scala.inline
-  def apply(): EVEN = {
+  inline def apply(): EVEN = {
     val __obj = js.Dynamic.literal(EVEN = "even", NO = "no", ODD = "odd")
     __obj.asInstanceOf[EVEN]
   }
   
-  @scala.inline
-  implicit class EVENMutableBuilder[Self <: EVEN] (val x: Self) extends AnyVal {
+  extension [Self <: EVEN](x: Self) {
     
-    @scala.inline
-    def setEVEN(value: even): Self = StObject.set(x, "EVEN", value.asInstanceOf[js.Any])
+    inline def setEVEN(value: even): Self = StObject.set(x, "EVEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNO(value: no): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
+    inline def setNO(value: no): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setODD(value: odd): Self = StObject.set(x, "ODD", value.asInstanceOf[js.Any])
+    inline def setODD(value: odd): Self = StObject.set(x, "ODD", value.asInstanceOf[js.Any])
   }
 }

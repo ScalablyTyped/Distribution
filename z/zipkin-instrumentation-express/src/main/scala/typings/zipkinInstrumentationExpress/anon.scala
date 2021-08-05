@@ -15,23 +15,18 @@ object anon {
   }
   object Port {
     
-    @scala.inline
-    def apply(tracer: Tracer): Port = {
+    inline def apply(tracer: Tracer): Port = {
       val __obj = js.Dynamic.literal(tracer = tracer.asInstanceOf[js.Any])
       __obj.asInstanceOf[Port]
     }
     
-    @scala.inline
-    implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+    extension [Self <: Port](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setTracer(value: Tracer): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
+      inline def setTracer(value: Tracer): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,23 +38,18 @@ object anon {
   }
   object RemoteServiceName {
     
-    @scala.inline
-    def apply(tracer: Tracer): RemoteServiceName = {
+    inline def apply(tracer: Tracer): RemoteServiceName = {
       val __obj = js.Dynamic.literal(tracer = tracer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoteServiceName]
     }
     
-    @scala.inline
-    implicit class RemoteServiceNameMutableBuilder[Self <: RemoteServiceName] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteServiceName](x: Self) {
       
-      @scala.inline
-      def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
+      inline def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteServiceNameUndefined: Self = StObject.set(x, "remoteServiceName", js.undefined)
+      inline def setRemoteServiceNameUndefined: Self = StObject.set(x, "remoteServiceName", js.undefined)
       
-      @scala.inline
-      def setTracer(value: Tracer): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
+      inline def setTracer(value: Tracer): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -49,8 +49,7 @@ object liveIndicatorMod {
         /* config */ ILiveIndicatorViewConfig, 
         typings.playable.liveIndicatorViewMod.default
       ] = js.native
-    @scala.inline
-    def View_=(
+    inline def View_=(
       x: Instantiable1[
           /* config */ ILiveIndicatorViewConfig, 
           typings.playable.liveIndicatorViewMod.default
@@ -60,14 +59,12 @@ object liveIndicatorMod {
     @JSImport("playable/dist/src/modules/ui/live-indicator/live-indicator", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/live-indicator/live-indicator", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -75,41 +72,41 @@ object liveIndicatorMod {
     extends StObject
        with ILiveIndicator {
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _initInterceptor: js.Any = js.native
+    /* private */ var _initInterceptor: js.Any = js.native
     
-    var _initUI: js.Any = js.native
+    /* private */ var _initUI: js.Any = js.native
     
-    var _interceptor: js.Any = js.native
+    /* private */ var _interceptor: js.Any = js.native
     
-    var _isActive: js.Any = js.native
+    /* private */ var _isActive: js.Any = js.native
     
-    var _isEnded: js.Any = js.native
+    /* private */ var _isEnded: js.Any = js.native
     
-    var _isHidden: js.Any = js.native
+    /* private */ var _isHidden: js.Any = js.native
     
-    var _processStateChange: js.Any = js.native
+    /* private */ var _processStateChange: js.Any = js.native
     
-    var _syncWithLive: js.Any = js.native
+    /* private */ var _syncWithLive: js.Any = js.native
     
-    var _textMap: js.Any = js.native
+    /* private */ var _textMap: js.Any = js.native
     
-    var _toggle: js.Any = js.native
+    /* private */ var _toggle: js.Any = js.native
     
-    var _toggleActive: js.Any = js.native
+    /* private */ var _toggleActive: js.Any = js.native
     
-    var _toggleEnded: js.Any = js.native
+    /* private */ var _toggleEnded: js.Any = js.native
     
-    var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     @JSName("isActive")
     def isActive_MLiveIndicator: Boolean = js.native

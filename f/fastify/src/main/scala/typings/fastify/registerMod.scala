@@ -40,32 +40,24 @@ object registerMod {
   }
   object RegisterOptions {
     
-    @scala.inline
-    def apply(): RegisterOptions = {
+    inline def apply(): RegisterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    @scala.inline
-    implicit class RegisterOptionsMutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterOptions](x: Self) {
       
-      @scala.inline
-      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setLogSerializers(value: Record[String, js.Function1[/* value */ js.Any, String]]): Self = StObject.set(x, "logSerializers", value.asInstanceOf[js.Any])
+      inline def setLogSerializers(value: Record[String, js.Function1[/* value */ js.Any, String]]): Self = StObject.set(x, "logSerializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogSerializersUndefined: Self = StObject.set(x, "logSerializers", js.undefined)
+      inline def setLogSerializersUndefined: Self = StObject.set(x, "logSerializers", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

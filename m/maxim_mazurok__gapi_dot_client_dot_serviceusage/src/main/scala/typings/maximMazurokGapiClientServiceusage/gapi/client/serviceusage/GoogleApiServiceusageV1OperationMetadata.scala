@@ -11,22 +11,17 @@ trait GoogleApiServiceusageV1OperationMetadata extends StObject {
 }
 object GoogleApiServiceusageV1OperationMetadata {
   
-  @scala.inline
-  def apply(): GoogleApiServiceusageV1OperationMetadata = {
+  inline def apply(): GoogleApiServiceusageV1OperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleApiServiceusageV1OperationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleApiServiceusageV1OperationMetadataMutableBuilder[Self <: GoogleApiServiceusageV1OperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiServiceusageV1OperationMetadata](x: Self) {
     
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+    inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+    inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
   }
 }

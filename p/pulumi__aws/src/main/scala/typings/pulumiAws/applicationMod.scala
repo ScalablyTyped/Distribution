@@ -54,21 +54,16 @@ object applicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/application.Application */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/application.Application */ Boolean]
   }
   
   trait ApplicationArgs extends StObject {
@@ -87,32 +82,24 @@ object applicationMod {
   }
   object ApplicationArgs {
     
-    @scala.inline
-    def apply(): ApplicationArgs = {
+    inline def apply(): ApplicationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApplicationArgs]
     }
     
-    @scala.inline
-    implicit class ApplicationArgsMutableBuilder[Self <: ApplicationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationArgs](x: Self) {
       
-      @scala.inline
-      def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+      inline def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+      inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+      inline def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+      inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
     }
   }
   
@@ -132,32 +119,24 @@ object applicationMod {
   }
   object ApplicationState {
     
-    @scala.inline
-    def apply(): ApplicationState = {
+    inline def apply(): ApplicationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApplicationState]
     }
     
-    @scala.inline
-    implicit class ApplicationStateMutableBuilder[Self <: ApplicationState] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationState](x: Self) {
       
-      @scala.inline
-      def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+      inline def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+      inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+      inline def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+      inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
     }
   }
 }

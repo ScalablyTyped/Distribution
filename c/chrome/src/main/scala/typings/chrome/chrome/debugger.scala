@@ -28,32 +28,24 @@ object debugger {
   }
   object Debuggee {
     
-    @scala.inline
-    def apply(): Debuggee = {
+    inline def apply(): Debuggee = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Debuggee]
     }
     
-    @scala.inline
-    implicit class DebuggeeMutableBuilder[Self <: Debuggee] (val x: Self) extends AnyVal {
+    extension [Self <: Debuggee](x: Self) {
       
-      @scala.inline
-      def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+      inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
+      inline def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+      inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     }
   }
   
@@ -99,48 +91,35 @@ object debugger {
   }
   object TargetInfo {
     
-    @scala.inline
-    def apply(attached: Boolean, id: String, title: String, `type`: String, url: String): TargetInfo = {
+    inline def apply(attached: Boolean, id: String, title: String, `type`: String, url: String): TargetInfo = {
       val __obj = js.Dynamic.literal(attached = attached.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TargetInfo]
     }
     
-    @scala.inline
-    implicit class TargetInfoMutableBuilder[Self <: TargetInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TargetInfo](x: Self) {
       
-      @scala.inline
-      def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+      inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
+      inline def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
       
-      @scala.inline
-      def setFaviconUrl(value: String): Self = StObject.set(x, "faviconUrl", value.asInstanceOf[js.Any])
+      inline def setFaviconUrl(value: String): Self = StObject.set(x, "faviconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaviconUrlUndefined: Self = StObject.set(x, "faviconUrl", js.undefined)
+      inline def setFaviconUrlUndefined: Self = StObject.set(x, "faviconUrl", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

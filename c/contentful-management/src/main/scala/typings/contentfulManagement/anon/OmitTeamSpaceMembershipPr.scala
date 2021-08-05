@@ -14,22 +14,17 @@ trait OmitTeamSpaceMembershipPr extends StObject {
 }
 object OmitTeamSpaceMembershipPr {
   
-  @scala.inline
-  def apply(admin: Boolean, roles: js.Array[MetaLinkProps]): OmitTeamSpaceMembershipPr = {
+  inline def apply(admin: Boolean, roles: js.Array[MetaLinkProps]): OmitTeamSpaceMembershipPr = {
     val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitTeamSpaceMembershipPr]
   }
   
-  @scala.inline
-  implicit class OmitTeamSpaceMembershipPrMutableBuilder[Self <: OmitTeamSpaceMembershipPr] (val x: Self) extends AnyVal {
+  extension [Self <: OmitTeamSpaceMembershipPr](x: Self) {
     
-    @scala.inline
-    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

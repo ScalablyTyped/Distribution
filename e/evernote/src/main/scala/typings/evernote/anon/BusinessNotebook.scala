@@ -43,109 +43,75 @@ trait BusinessNotebook extends StObject {
 }
 object BusinessNotebook {
   
-  @scala.inline
-  def apply(): BusinessNotebook = {
+  inline def apply(): BusinessNotebook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BusinessNotebook]
   }
   
-  @scala.inline
-  implicit class BusinessNotebookMutableBuilder[Self <: BusinessNotebook] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessNotebook](x: Self) {
     
-    @scala.inline
-    def setBusinessNotebook(value: typings.evernote.mod.Types.BusinessNotebook): Self = StObject.set(x, "businessNotebook", value.asInstanceOf[js.Any])
+    inline def setBusinessNotebook(value: typings.evernote.mod.Types.BusinessNotebook): Self = StObject.set(x, "businessNotebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessNotebookUndefined: Self = StObject.set(x, "businessNotebook", js.undefined)
+    inline def setBusinessNotebookUndefined: Self = StObject.set(x, "businessNotebook", js.undefined)
     
-    @scala.inline
-    def setContact(value: User): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: User): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    @scala.inline
-    def setDefaultNotebook(value: Boolean): Self = StObject.set(x, "defaultNotebook", value.asInstanceOf[js.Any])
+    inline def setDefaultNotebook(value: Boolean): Self = StObject.set(x, "defaultNotebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNotebookUndefined: Self = StObject.set(x, "defaultNotebook", js.undefined)
+    inline def setDefaultNotebookUndefined: Self = StObject.set(x, "defaultNotebook", js.undefined)
     
-    @scala.inline
-    def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+    inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
-    @scala.inline
-    def setPublishing(value: Publishing): Self = StObject.set(x, "publishing", value.asInstanceOf[js.Any])
+    inline def setPublishing(value: Publishing): Self = StObject.set(x, "publishing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishingUndefined: Self = StObject.set(x, "publishing", js.undefined)
+    inline def setPublishingUndefined: Self = StObject.set(x, "publishing", js.undefined)
     
-    @scala.inline
-    def setRecipientSettings(value: NotebookRecipientSettings): Self = StObject.set(x, "recipientSettings", value.asInstanceOf[js.Any])
+    inline def setRecipientSettings(value: NotebookRecipientSettings): Self = StObject.set(x, "recipientSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientSettingsUndefined: Self = StObject.set(x, "recipientSettings", js.undefined)
+    inline def setRecipientSettingsUndefined: Self = StObject.set(x, "recipientSettings", js.undefined)
     
-    @scala.inline
-    def setRestrictions(value: NotebookRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: NotebookRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+    inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
-    @scala.inline
-    def setServiceCreated(value: Double): Self = StObject.set(x, "serviceCreated", value.asInstanceOf[js.Any])
+    inline def setServiceCreated(value: Double): Self = StObject.set(x, "serviceCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCreatedUndefined: Self = StObject.set(x, "serviceCreated", js.undefined)
+    inline def setServiceCreatedUndefined: Self = StObject.set(x, "serviceCreated", js.undefined)
     
-    @scala.inline
-    def setServiceUpdated(value: Double): Self = StObject.set(x, "serviceUpdated", value.asInstanceOf[js.Any])
+    inline def setServiceUpdated(value: Double): Self = StObject.set(x, "serviceUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUpdatedUndefined: Self = StObject.set(x, "serviceUpdated", js.undefined)
+    inline def setServiceUpdatedUndefined: Self = StObject.set(x, "serviceUpdated", js.undefined)
     
-    @scala.inline
-    def setSharedNotebookIds(value: js.Array[Double]): Self = StObject.set(x, "sharedNotebookIds", value.asInstanceOf[js.Any])
+    inline def setSharedNotebookIds(value: js.Array[Double]): Self = StObject.set(x, "sharedNotebookIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedNotebookIdsUndefined: Self = StObject.set(x, "sharedNotebookIds", js.undefined)
+    inline def setSharedNotebookIdsUndefined: Self = StObject.set(x, "sharedNotebookIds", js.undefined)
     
-    @scala.inline
-    def setSharedNotebookIdsVarargs(value: Double*): Self = StObject.set(x, "sharedNotebookIds", js.Array(value :_*))
+    inline def setSharedNotebookIdsVarargs(value: Double*): Self = StObject.set(x, "sharedNotebookIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSharedNotebooks(value: js.Array[SharedNotebook]): Self = StObject.set(x, "sharedNotebooks", value.asInstanceOf[js.Any])
+    inline def setSharedNotebooks(value: js.Array[SharedNotebook]): Self = StObject.set(x, "sharedNotebooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedNotebooksUndefined: Self = StObject.set(x, "sharedNotebooks", js.undefined)
+    inline def setSharedNotebooksUndefined: Self = StObject.set(x, "sharedNotebooks", js.undefined)
     
-    @scala.inline
-    def setSharedNotebooksVarargs(value: SharedNotebook*): Self = StObject.set(x, "sharedNotebooks", js.Array(value :_*))
+    inline def setSharedNotebooksVarargs(value: SharedNotebook*): Self = StObject.set(x, "sharedNotebooks", js.Array(value :_*))
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
+    inline def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
+    inline def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
   }
 }

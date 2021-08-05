@@ -38,8 +38,7 @@ trait UploadLayerPartRequest extends StObject {
 }
 object UploadLayerPartRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     layerPartBlob: LayerPartBlob,
     partFirstByte: PartSize,
     partLastByte: PartSize,
@@ -50,28 +49,20 @@ object UploadLayerPartRequest {
     __obj.asInstanceOf[UploadLayerPartRequest]
   }
   
-  @scala.inline
-  implicit class UploadLayerPartRequestMutableBuilder[Self <: UploadLayerPartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UploadLayerPartRequest](x: Self) {
     
-    @scala.inline
-    def setLayerPartBlob(value: LayerPartBlob): Self = StObject.set(x, "layerPartBlob", value.asInstanceOf[js.Any])
+    inline def setLayerPartBlob(value: LayerPartBlob): Self = StObject.set(x, "layerPartBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartFirstByte(value: PartSize): Self = StObject.set(x, "partFirstByte", value.asInstanceOf[js.Any])
+    inline def setPartFirstByte(value: PartSize): Self = StObject.set(x, "partFirstByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartLastByte(value: PartSize): Self = StObject.set(x, "partLastByte", value.asInstanceOf[js.Any])
+    inline def setPartLastByte(value: PartSize): Self = StObject.set(x, "partLastByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

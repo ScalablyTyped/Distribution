@@ -14,10 +14,7 @@ object ownerDocumentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Document]
-  @scala.inline
-  def default(componentOrElement: ComponentClass[js.Object, ComponentState]): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Document]
-  @scala.inline
-  def default(componentOrElement: Element): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Document]
+  inline def default(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Document]
+  inline def default(componentOrElement: ComponentClass[js.Object, ComponentState]): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Document]
+  inline def default(componentOrElement: Element): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Document]
 }

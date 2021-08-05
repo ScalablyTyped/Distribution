@@ -33,34 +33,25 @@ trait ComputeLimits extends StObject {
 }
 object ComputeLimits {
   
-  @scala.inline
-  def apply(MaximumCapacityUnits: Integer, MinimumCapacityUnits: Integer, UnitType: ComputeLimitsUnitType): ComputeLimits = {
+  inline def apply(MaximumCapacityUnits: Integer, MinimumCapacityUnits: Integer, UnitType: ComputeLimitsUnitType): ComputeLimits = {
     val __obj = js.Dynamic.literal(MaximumCapacityUnits = MaximumCapacityUnits.asInstanceOf[js.Any], MinimumCapacityUnits = MinimumCapacityUnits.asInstanceOf[js.Any], UnitType = UnitType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeLimits]
   }
   
-  @scala.inline
-  implicit class ComputeLimitsMutableBuilder[Self <: ComputeLimits] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeLimits](x: Self) {
     
-    @scala.inline
-    def setMaximumCapacityUnits(value: Integer): Self = StObject.set(x, "MaximumCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setMaximumCapacityUnits(value: Integer): Self = StObject.set(x, "MaximumCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumCoreCapacityUnits(value: Integer): Self = StObject.set(x, "MaximumCoreCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setMaximumCoreCapacityUnits(value: Integer): Self = StObject.set(x, "MaximumCoreCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumCoreCapacityUnitsUndefined: Self = StObject.set(x, "MaximumCoreCapacityUnits", js.undefined)
+    inline def setMaximumCoreCapacityUnitsUndefined: Self = StObject.set(x, "MaximumCoreCapacityUnits", js.undefined)
     
-    @scala.inline
-    def setMaximumOnDemandCapacityUnits(value: Integer): Self = StObject.set(x, "MaximumOnDemandCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setMaximumOnDemandCapacityUnits(value: Integer): Self = StObject.set(x, "MaximumOnDemandCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumOnDemandCapacityUnitsUndefined: Self = StObject.set(x, "MaximumOnDemandCapacityUnits", js.undefined)
+    inline def setMaximumOnDemandCapacityUnitsUndefined: Self = StObject.set(x, "MaximumOnDemandCapacityUnits", js.undefined)
     
-    @scala.inline
-    def setMinimumCapacityUnits(value: Integer): Self = StObject.set(x, "MinimumCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setMinimumCapacityUnits(value: Integer): Self = StObject.set(x, "MinimumCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitType(value: ComputeLimitsUnitType): Self = StObject.set(x, "UnitType", value.asInstanceOf[js.Any])
+    inline def setUnitType(value: ComputeLimitsUnitType): Self = StObject.set(x, "UnitType", value.asInstanceOf[js.Any])
   }
 }

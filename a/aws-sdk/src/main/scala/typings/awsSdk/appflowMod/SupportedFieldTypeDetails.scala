@@ -13,16 +13,13 @@ trait SupportedFieldTypeDetails extends StObject {
 }
 object SupportedFieldTypeDetails {
   
-  @scala.inline
-  def apply(v1: FieldTypeDetails): SupportedFieldTypeDetails = {
+  inline def apply(v1: FieldTypeDetails): SupportedFieldTypeDetails = {
     val __obj = js.Dynamic.literal(v1 = v1.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedFieldTypeDetails]
   }
   
-  @scala.inline
-  implicit class SupportedFieldTypeDetailsMutableBuilder[Self <: SupportedFieldTypeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedFieldTypeDetails](x: Self) {
     
-    @scala.inline
-    def setV1(value: FieldTypeDetails): Self = StObject.set(x, "v1", value.asInstanceOf[js.Any])
+    inline def setV1(value: FieldTypeDetails): Self = StObject.set(x, "v1", value.asInstanceOf[js.Any])
   }
 }

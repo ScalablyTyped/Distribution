@@ -9,13 +9,11 @@ object karmaMochaReporterBooleans {
   
   @js.native
   sealed trait `false` extends StObject
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
     extends StObject
        with ShowDiffOptions
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

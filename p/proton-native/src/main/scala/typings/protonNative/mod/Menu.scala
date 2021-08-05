@@ -30,6 +30,5 @@ object Menu {
   @JSImport("proton-native", "Menu.Item")
   @js.native
   def Item: Instantiable0[MenuItem] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[MenuItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[MenuItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

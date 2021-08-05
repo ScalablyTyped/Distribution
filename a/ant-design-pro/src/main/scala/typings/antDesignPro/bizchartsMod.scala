@@ -69,8 +69,7 @@ object bizchartsMod {
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "AxisTitle")
   @js.native
   def AxisTitle: typings.antvG2.mod.AxisTitle = js.native
-  @scala.inline
-  def AxisTitle_=(x: AxisTitle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AxisTitle")(x.asInstanceOf[js.Any])
+  inline def AxisTitle_=(x: AxisTitle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AxisTitle")(x.asInstanceOf[js.Any])
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Base")
   @js.native

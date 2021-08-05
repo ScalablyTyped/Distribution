@@ -12,20 +12,16 @@ trait LimitValue extends StObject {
 }
 object LimitValue {
   
-  @scala.inline
-  def apply(`type`: String, value: Double): LimitValue = {
+  inline def apply(`type`: String, value: Double): LimitValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimitValue]
   }
   
-  @scala.inline
-  implicit class LimitValueMutableBuilder[Self <: LimitValue] (val x: Self) extends AnyVal {
+  extension [Self <: LimitValue](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

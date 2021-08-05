@@ -14,19 +14,15 @@ trait SearchInResourceResponse extends StObject {
 }
 object SearchInResourceResponse {
   
-  @scala.inline
-  def apply(result: js.Array[SearchMatch]): SearchInResourceResponse = {
+  inline def apply(result: js.Array[SearchMatch]): SearchInResourceResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchInResourceResponse]
   }
   
-  @scala.inline
-  implicit class SearchInResourceResponseMutableBuilder[Self <: SearchInResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchInResourceResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Array[SearchMatch]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[SearchMatch]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: SearchMatch*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: SearchMatch*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

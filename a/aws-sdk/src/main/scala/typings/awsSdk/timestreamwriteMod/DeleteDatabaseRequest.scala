@@ -13,16 +13,13 @@ trait DeleteDatabaseRequest extends StObject {
 }
 object DeleteDatabaseRequest {
   
-  @scala.inline
-  def apply(DatabaseName: ResourceName): DeleteDatabaseRequest = {
+  inline def apply(DatabaseName: ResourceName): DeleteDatabaseRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDatabaseRequestMutableBuilder[Self <: DeleteDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
   }
 }

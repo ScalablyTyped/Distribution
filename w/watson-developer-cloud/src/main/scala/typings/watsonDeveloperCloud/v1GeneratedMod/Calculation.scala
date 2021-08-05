@@ -15,25 +15,19 @@ trait Calculation extends StObject {
 }
 object Calculation {
   
-  @scala.inline
-  def apply(): Calculation = {
+  inline def apply(): Calculation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Calculation]
   }
   
-  @scala.inline
-  implicit class CalculationMutableBuilder[Self <: Calculation] (val x: Self) extends AnyVal {
+  extension [Self <: Calculation](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

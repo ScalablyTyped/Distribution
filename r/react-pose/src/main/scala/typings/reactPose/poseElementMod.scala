@@ -27,7 +27,7 @@ object poseElementMod {
     
     var children: Set[ChildRegistration] = js.native
     
-    var childrenHandlers: js.Any = js.native
+    /* private */ var childrenHandlers: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPoseElement(): Unit = js.native

@@ -13,25 +13,19 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(node: HTMLInputElement): Node = {
+  inline def apply(node: HTMLInputElement): Node = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setNode(value: HTMLInputElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: HTMLInputElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: (js.Array[String | Double | Boolean]) | String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: (js.Array[String | Double | Boolean]) | String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

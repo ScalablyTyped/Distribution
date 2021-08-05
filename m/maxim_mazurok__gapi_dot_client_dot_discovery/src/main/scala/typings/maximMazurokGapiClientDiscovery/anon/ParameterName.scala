@@ -15,25 +15,19 @@ trait ParameterName extends StObject {
 }
 object ParameterName {
   
-  @scala.inline
-  def apply(): ParameterName = {
+  inline def apply(): ParameterName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterName]
   }
   
-  @scala.inline
-  implicit class ParameterNameMutableBuilder[Self <: ParameterName] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterName](x: Self) {
     
-    @scala.inline
-    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
+    inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
+    inline def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
   }
 }

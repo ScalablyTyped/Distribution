@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogLevel extends StObject
 object LogLevel {
   
-  @scala.inline
-  def debug: typings.natsHemera.natsHemeraStrings.debug = "debug".asInstanceOf[typings.natsHemera.natsHemeraStrings.debug]
+  inline def debug: typings.natsHemera.natsHemeraStrings.debug = "debug".asInstanceOf[typings.natsHemera.natsHemeraStrings.debug]
   
-  @scala.inline
-  def error: typings.natsHemera.natsHemeraStrings.error = "error".asInstanceOf[typings.natsHemera.natsHemeraStrings.error]
+  inline def error: typings.natsHemera.natsHemeraStrings.error = "error".asInstanceOf[typings.natsHemera.natsHemeraStrings.error]
   
-  @scala.inline
-  def fatal: typings.natsHemera.natsHemeraStrings.fatal = "fatal".asInstanceOf[typings.natsHemera.natsHemeraStrings.fatal]
+  inline def fatal: typings.natsHemera.natsHemeraStrings.fatal = "fatal".asInstanceOf[typings.natsHemera.natsHemeraStrings.fatal]
   
-  @scala.inline
-  def info: typings.natsHemera.natsHemeraStrings.info = "info".asInstanceOf[typings.natsHemera.natsHemeraStrings.info]
+  inline def info: typings.natsHemera.natsHemeraStrings.info = "info".asInstanceOf[typings.natsHemera.natsHemeraStrings.info]
   
-  @scala.inline
-  def silent: typings.natsHemera.natsHemeraStrings.silent = "silent".asInstanceOf[typings.natsHemera.natsHemeraStrings.silent]
+  inline def silent: typings.natsHemera.natsHemeraStrings.silent = "silent".asInstanceOf[typings.natsHemera.natsHemeraStrings.silent]
   
-  @scala.inline
-  def trace: typings.natsHemera.natsHemeraStrings.trace = "trace".asInstanceOf[typings.natsHemera.natsHemeraStrings.trace]
+  inline def trace: typings.natsHemera.natsHemeraStrings.trace = "trace".asInstanceOf[typings.natsHemera.natsHemeraStrings.trace]
   
-  @scala.inline
-  def warn: typings.natsHemera.natsHemeraStrings.warn = "warn".asInstanceOf[typings.natsHemera.natsHemeraStrings.warn]
+  inline def warn: typings.natsHemera.natsHemeraStrings.warn = "warn".asInstanceOf[typings.natsHemera.natsHemeraStrings.warn]
 }

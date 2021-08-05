@@ -16,6 +16,5 @@ object ScannerUtilities {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def identifierKind(array: js.Array[Double], startIndex: Double, length: Double): typings.typescriptServices.TypeScript.SyntaxKind = (^.asInstanceOf[js.Dynamic].applyDynamic("identifierKind")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
+  inline def identifierKind(array: js.Array[Double], startIndex: Double, length: Double): typings.typescriptServices.TypeScript.SyntaxKind = (^.asInstanceOf[js.Dynamic].applyDynamic("identifierKind")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
 }

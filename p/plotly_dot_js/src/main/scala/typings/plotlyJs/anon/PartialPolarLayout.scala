@@ -27,67 +27,47 @@ trait PartialPolarLayout extends StObject {
 }
 object PartialPolarLayout {
   
-  @scala.inline
-  def apply(): PartialPolarLayout = {
+  inline def apply(): PartialPolarLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPolarLayout]
   }
   
-  @scala.inline
-  implicit class PartialPolarLayoutMutableBuilder[Self <: PartialPolarLayout] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPolarLayout](x: Self) {
     
-    @scala.inline
-    def setAngularaxis(value: PartialLayoutAxis): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
+    inline def setAngularaxis(value: PartialLayoutAxis): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngularaxisUndefined: Self = StObject.set(x, "angularaxis", js.undefined)
+    inline def setAngularaxisUndefined: Self = StObject.set(x, "angularaxis", js.undefined)
     
-    @scala.inline
-    def setBgcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+    inline def setBgcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+    inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    @scala.inline
-    def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setGridshape(value: circular | linear): Self = StObject.set(x, "gridshape", value.asInstanceOf[js.Any])
+    inline def setGridshape(value: circular | linear): Self = StObject.set(x, "gridshape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridshapeUndefined: Self = StObject.set(x, "gridshape", js.undefined)
+    inline def setGridshapeUndefined: Self = StObject.set(x, "gridshape", js.undefined)
     
-    @scala.inline
-    def setHole(value: Double): Self = StObject.set(x, "hole", value.asInstanceOf[js.Any])
+    inline def setHole(value: Double): Self = StObject.set(x, "hole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoleUndefined: Self = StObject.set(x, "hole", js.undefined)
+    inline def setHoleUndefined: Self = StObject.set(x, "hole", js.undefined)
     
-    @scala.inline
-    def setRadialaxis(value: PartialLayoutAxis): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
+    inline def setRadialaxis(value: PartialLayoutAxis): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialaxisUndefined: Self = StObject.set(x, "radialaxis", js.undefined)
+    inline def setRadialaxisUndefined: Self = StObject.set(x, "radialaxis", js.undefined)
     
-    @scala.inline
-    def setSector(value: js.Array[Double]): Self = StObject.set(x, "sector", value.asInstanceOf[js.Any])
+    inline def setSector(value: js.Array[Double]): Self = StObject.set(x, "sector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectorUndefined: Self = StObject.set(x, "sector", js.undefined)
+    inline def setSectorUndefined: Self = StObject.set(x, "sector", js.undefined)
     
-    @scala.inline
-    def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value :_*))
+    inline def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value :_*))
     
-    @scala.inline
-    def setUirevision(value: String | Double): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
+    inline def setUirevision(value: String | Double): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUirevisionUndefined: Self = StObject.set(x, "uirevision", js.undefined)
+    inline def setUirevisionUndefined: Self = StObject.set(x, "uirevision", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ object mainMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def store[T](name: String): js.Promise[default[T] | typings.keya.localhostMod.default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("store")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default[T] | typings.keya.localhostMod.default[T]]]
+  inline def store[T](name: String): js.Promise[default[T] | typings.keya.localhostMod.default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("store")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default[T] | typings.keya.localhostMod.default[T]]]
   
-  @scala.inline
-  def stores(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stores")().asInstanceOf[js.Promise[js.Array[String]]]
+  inline def stores(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stores")().asInstanceOf[js.Promise[js.Array[String]]]
 }

@@ -10,19 +10,15 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(): Window = {
+  inline def apply(): Window = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setCKEDITOR_BASEPATH(value: String): Self = StObject.set(x, "CKEDITOR_BASEPATH", value.asInstanceOf[js.Any])
+    inline def setCKEDITOR_BASEPATH(value: String): Self = StObject.set(x, "CKEDITOR_BASEPATH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCKEDITOR_BASEPATHUndefined: Self = StObject.set(x, "CKEDITOR_BASEPATH", js.undefined)
+    inline def setCKEDITOR_BASEPATHUndefined: Self = StObject.set(x, "CKEDITOR_BASEPATH", js.undefined)
   }
 }

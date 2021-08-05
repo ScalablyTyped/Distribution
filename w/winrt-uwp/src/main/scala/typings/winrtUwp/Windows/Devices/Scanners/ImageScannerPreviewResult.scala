@@ -15,19 +15,15 @@ trait ImageScannerPreviewResult extends StObject {
 }
 object ImageScannerPreviewResult {
   
-  @scala.inline
-  def apply(format: ImageScannerFormat, succeeded: Boolean): ImageScannerPreviewResult = {
+  inline def apply(format: ImageScannerFormat, succeeded: Boolean): ImageScannerPreviewResult = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageScannerPreviewResult]
   }
   
-  @scala.inline
-  implicit class ImageScannerPreviewResultMutableBuilder[Self <: ImageScannerPreviewResult] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScannerPreviewResult](x: Self) {
     
-    @scala.inline
-    def setFormat(value: ImageScannerFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ImageScannerFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

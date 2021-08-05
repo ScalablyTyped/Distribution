@@ -8,18 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object findMod {
   
-  @scala.inline
-  def apply[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sink[T]]
-  @scala.inline
-  def apply[T](cb: js.Function2[/* err */ EndOrError, /* results */ js.Array[T], js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
-  @scala.inline
-  def apply[T](test: /* keyof T */ String): Sink[T] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
-  @scala.inline
-  def apply[T](test: /* keyof T */ String, cb: js.Function2[/* err */ EndOrError, /* result */ T, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
-  @scala.inline
-  def apply[T](test: js.Function1[/* data */ T, Boolean]): Sink[T] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
-  @scala.inline
-  def apply[T](
+  inline def apply[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sink[T]]
+  inline def apply[T](cb: js.Function2[/* err */ EndOrError, /* results */ js.Array[T], js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def apply[T](test: /* keyof T */ String): Sink[T] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def apply[T](test: /* keyof T */ String, cb: js.Function2[/* err */ EndOrError, /* result */ T, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
+  inline def apply[T](test: js.Function1[/* data */ T, Boolean]): Sink[T] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def apply[T](
     test: js.Function1[/* data */ T, Boolean],
     cb: js.Function2[/* err */ EndOrError, /* result */ T, js.Any]
   ): Sink[T] = (^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]

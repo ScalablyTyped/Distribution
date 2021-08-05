@@ -107,20 +107,16 @@ object infiniteScroll {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.infiniteScroll.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.infiniteScroll.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.infiniteScroll.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.infiniteScroll.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.infiniteScroll.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnableInfiniteScroll(value: Boolean): Self = StObject.set(x, "enableInfiniteScroll", value.asInstanceOf[js.Any])
+      inline def setEnableInfiniteScroll(value: Boolean): Self = StObject.set(x, "enableInfiniteScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableInfiniteScrollUndefined: Self = StObject.set(x, "enableInfiniteScroll", js.undefined)
+      inline def setEnableInfiniteScrollUndefined: Self = StObject.set(x, "enableInfiniteScroll", js.undefined)
     }
   }
 }

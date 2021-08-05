@@ -13,19 +13,15 @@ trait CreatePortfolioShareOutput extends StObject {
 }
 object CreatePortfolioShareOutput {
   
-  @scala.inline
-  def apply(): CreatePortfolioShareOutput = {
+  inline def apply(): CreatePortfolioShareOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePortfolioShareOutput]
   }
   
-  @scala.inline
-  implicit class CreatePortfolioShareOutputMutableBuilder[Self <: CreatePortfolioShareOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePortfolioShareOutput](x: Self) {
     
-    @scala.inline
-    def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
+    inline def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioShareTokenUndefined: Self = StObject.set(x, "PortfolioShareToken", js.undefined)
+    inline def setPortfolioShareTokenUndefined: Self = StObject.set(x, "PortfolioShareToken", js.undefined)
   }
 }

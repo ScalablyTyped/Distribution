@@ -16,28 +16,21 @@ trait OptimisticUpdateRelayPayload
 }
 object OptimisticUpdateRelayPayload {
   
-  @scala.inline
-  def apply(operation: OperationDescriptor, payload: RelayResponsePayload): OptimisticUpdateRelayPayload = {
+  inline def apply(operation: OperationDescriptor, payload: RelayResponsePayload): OptimisticUpdateRelayPayload = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimisticUpdateRelayPayload]
   }
   
-  @scala.inline
-  implicit class OptimisticUpdateRelayPayloadMutableBuilder[Self <: OptimisticUpdateRelayPayload] (val x: Self) extends AnyVal {
+  extension [Self <: OptimisticUpdateRelayPayload](x: Self) {
     
-    @scala.inline
-    def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: RelayResponsePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: RelayResponsePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
+    inline def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdaterNull: Self = StObject.set(x, "updater", null)
+    inline def setUpdaterNull: Self = StObject.set(x, "updater", null)
     
-    @scala.inline
-    def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+    inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
   }
 }

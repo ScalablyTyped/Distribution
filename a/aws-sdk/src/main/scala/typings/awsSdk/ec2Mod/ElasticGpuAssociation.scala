@@ -28,37 +28,27 @@ trait ElasticGpuAssociation extends StObject {
 }
 object ElasticGpuAssociation {
   
-  @scala.inline
-  def apply(): ElasticGpuAssociation = {
+  inline def apply(): ElasticGpuAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticGpuAssociation]
   }
   
-  @scala.inline
-  implicit class ElasticGpuAssociationMutableBuilder[Self <: ElasticGpuAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticGpuAssociation](x: Self) {
     
-    @scala.inline
-    def setElasticGpuAssociationId(value: String): Self = StObject.set(x, "ElasticGpuAssociationId", value.asInstanceOf[js.Any])
+    inline def setElasticGpuAssociationId(value: String): Self = StObject.set(x, "ElasticGpuAssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticGpuAssociationIdUndefined: Self = StObject.set(x, "ElasticGpuAssociationId", js.undefined)
+    inline def setElasticGpuAssociationIdUndefined: Self = StObject.set(x, "ElasticGpuAssociationId", js.undefined)
     
-    @scala.inline
-    def setElasticGpuAssociationState(value: String): Self = StObject.set(x, "ElasticGpuAssociationState", value.asInstanceOf[js.Any])
+    inline def setElasticGpuAssociationState(value: String): Self = StObject.set(x, "ElasticGpuAssociationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticGpuAssociationStateUndefined: Self = StObject.set(x, "ElasticGpuAssociationState", js.undefined)
+    inline def setElasticGpuAssociationStateUndefined: Self = StObject.set(x, "ElasticGpuAssociationState", js.undefined)
     
-    @scala.inline
-    def setElasticGpuAssociationTime(value: String): Self = StObject.set(x, "ElasticGpuAssociationTime", value.asInstanceOf[js.Any])
+    inline def setElasticGpuAssociationTime(value: String): Self = StObject.set(x, "ElasticGpuAssociationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticGpuAssociationTimeUndefined: Self = StObject.set(x, "ElasticGpuAssociationTime", js.undefined)
+    inline def setElasticGpuAssociationTimeUndefined: Self = StObject.set(x, "ElasticGpuAssociationTime", js.undefined)
     
-    @scala.inline
-    def setElasticGpuId(value: String): Self = StObject.set(x, "ElasticGpuId", value.asInstanceOf[js.Any])
+    inline def setElasticGpuId(value: String): Self = StObject.set(x, "ElasticGpuId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticGpuIdUndefined: Self = StObject.set(x, "ElasticGpuId", js.undefined)
+    inline def setElasticGpuIdUndefined: Self = StObject.set(x, "ElasticGpuId", js.undefined)
   }
 }

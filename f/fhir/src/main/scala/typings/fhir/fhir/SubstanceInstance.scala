@@ -33,37 +33,27 @@ trait SubstanceInstance
 }
 object SubstanceInstance {
   
-  @scala.inline
-  def apply(): SubstanceInstance = {
+  inline def apply(): SubstanceInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubstanceInstance]
   }
   
-  @scala.inline
-  implicit class SubstanceInstanceMutableBuilder[Self <: SubstanceInstance] (val x: Self) extends AnyVal {
+  extension [Self <: SubstanceInstance](x: Self) {
     
-    @scala.inline
-    def setExpiry(value: dateTime): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: dateTime): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def set_expiry(value: Element): Self = StObject.set(x, "_expiry", value.asInstanceOf[js.Any])
+    inline def set_expiry(value: Element): Self = StObject.set(x, "_expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_expiryUndefined: Self = StObject.set(x, "_expiry", js.undefined)
+    inline def set_expiryUndefined: Self = StObject.set(x, "_expiry", js.undefined)
   }
 }

@@ -13,20 +13,16 @@ object anon {
   }
   object PartialPriorityQueueOptio {
     
-    @scala.inline
-    def apply(): PartialPriorityQueueOptio = {
+    inline def apply(): PartialPriorityQueueOptio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialPriorityQueueOptio]
     }
     
-    @scala.inline
-    implicit class PartialPriorityQueueOptioMutableBuilder[Self <: PartialPriorityQueueOptio] (val x: Self) extends AnyVal {
+    extension [Self <: PartialPriorityQueueOptio](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -37,20 +33,16 @@ object anon {
   }
   object ReadonlyPartialPriorityQu {
     
-    @scala.inline
-    def apply(): ReadonlyPartialPriorityQu = {
+    inline def apply(): ReadonlyPartialPriorityQu = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyPartialPriorityQu]
     }
     
-    @scala.inline
-    implicit class ReadonlyPartialPriorityQuMutableBuilder[Self <: ReadonlyPartialPriorityQu] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPartialPriorityQu](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
 }

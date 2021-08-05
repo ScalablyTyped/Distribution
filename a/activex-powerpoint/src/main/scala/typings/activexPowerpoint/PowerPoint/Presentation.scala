@@ -500,7 +500,7 @@ trait Presentation extends StObject {
   @JSName("Permission")
   val Permission_Original: Permission = js.native
   
-  @JSName("PowerPoint.Presentation_typekey")
+  /* private */ @JSName("PowerPoint.Presentation_typekey")
   var PowerPointDotPresentation_typekey: Presentation = js.native
   
   val PrintOptions: typings.activexPowerpoint.PowerPoint.PrintOptions = js.native

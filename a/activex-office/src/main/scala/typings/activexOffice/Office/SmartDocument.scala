@@ -11,7 +11,7 @@ trait SmartDocument extends StObject {
   
   val Creator: Double = js.native
   
-  @JSName("Office.SmartDocument_typekey")
+  /* private */ @JSName("Office.SmartDocument_typekey")
   var OfficeDotSmartDocument_typekey: SmartDocument = js.native
   
   /** @param ConsiderAllSchemas [ConsiderAllSchemas=false] */

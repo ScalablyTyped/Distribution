@@ -23,7 +23,7 @@ trait TimeZone extends StObject {
   
   val Name: String
   
-  @JSName("Outlook.TimeZone_typekey")
+  /* private */ @JSName("Outlook.TimeZone_typekey")
   var OutlookDotTimeZone_typekey: TimeZone
   
   val Parent: js.Any
@@ -38,8 +38,7 @@ trait TimeZone extends StObject {
 }
 object TimeZone {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Bias: Double,
     Class: OlObjectClass,
@@ -60,49 +59,34 @@ object TimeZone {
     __obj.asInstanceOf[TimeZone]
   }
   
-  @scala.inline
-  implicit class TimeZoneMutableBuilder[Self <: TimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: TimeZone](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBias(value: Double): Self = StObject.set(x, "Bias", value.asInstanceOf[js.Any])
+    inline def setBias(value: Double): Self = StObject.set(x, "Bias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaylightBias(value: Double): Self = StObject.set(x, "DaylightBias", value.asInstanceOf[js.Any])
+    inline def setDaylightBias(value: Double): Self = StObject.set(x, "DaylightBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaylightDate(value: VarDate): Self = StObject.set(x, "DaylightDate", value.asInstanceOf[js.Any])
+    inline def setDaylightDate(value: VarDate): Self = StObject.set(x, "DaylightDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaylightDesignation(value: String): Self = StObject.set(x, "DaylightDesignation", value.asInstanceOf[js.Any])
+    inline def setDaylightDesignation(value: String): Self = StObject.set(x, "DaylightDesignation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotTimeZone_typekey(value: TimeZone): Self = StObject.set(x, "Outlook.TimeZone_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotTimeZone_typekey(value: TimeZone): Self = StObject.set(x, "Outlook.TimeZone_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardBias(value: Double): Self = StObject.set(x, "StandardBias", value.asInstanceOf[js.Any])
+    inline def setStandardBias(value: Double): Self = StObject.set(x, "StandardBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDate(value: VarDate): Self = StObject.set(x, "StandardDate", value.asInstanceOf[js.Any])
+    inline def setStandardDate(value: VarDate): Self = StObject.set(x, "StandardDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDesignation(value: String): Self = StObject.set(x, "StandardDesignation", value.asInstanceOf[js.Any])
+    inline def setStandardDesignation(value: String): Self = StObject.set(x, "StandardDesignation", value.asInstanceOf[js.Any])
   }
 }

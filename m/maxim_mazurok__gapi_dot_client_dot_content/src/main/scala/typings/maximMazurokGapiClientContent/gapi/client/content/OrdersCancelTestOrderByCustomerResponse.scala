@@ -11,19 +11,15 @@ trait OrdersCancelTestOrderByCustomerResponse extends StObject {
 }
 object OrdersCancelTestOrderByCustomerResponse {
   
-  @scala.inline
-  def apply(): OrdersCancelTestOrderByCustomerResponse = {
+  inline def apply(): OrdersCancelTestOrderByCustomerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersCancelTestOrderByCustomerResponse]
   }
   
-  @scala.inline
-  implicit class OrdersCancelTestOrderByCustomerResponseMutableBuilder[Self <: OrdersCancelTestOrderByCustomerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersCancelTestOrderByCustomerResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

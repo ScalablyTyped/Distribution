@@ -21,28 +21,21 @@ trait SchemaCustomFieldFilter extends StObject {
 }
 object SchemaCustomFieldFilter {
   
-  @scala.inline
-  def apply(): SchemaCustomFieldFilter = {
+  inline def apply(): SchemaCustomFieldFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomFieldFilter]
   }
   
-  @scala.inline
-  implicit class SchemaCustomFieldFilterMutableBuilder[Self <: SchemaCustomFieldFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomFieldFilter](x: Self) {
     
-    @scala.inline
-    def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    @scala.inline
-    def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

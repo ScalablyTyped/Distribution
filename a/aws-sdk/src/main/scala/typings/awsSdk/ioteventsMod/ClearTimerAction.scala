@@ -13,16 +13,13 @@ trait ClearTimerAction extends StObject {
 }
 object ClearTimerAction {
   
-  @scala.inline
-  def apply(timerName: TimerName): ClearTimerAction = {
+  inline def apply(timerName: TimerName): ClearTimerAction = {
     val __obj = js.Dynamic.literal(timerName = timerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearTimerAction]
   }
   
-  @scala.inline
-  implicit class ClearTimerActionMutableBuilder[Self <: ClearTimerAction] (val x: Self) extends AnyVal {
+  extension [Self <: ClearTimerAction](x: Self) {
     
-    @scala.inline
-    def setTimerName(value: TimerName): Self = StObject.set(x, "timerName", value.asInstanceOf[js.Any])
+    inline def setTimerName(value: TimerName): Self = StObject.set(x, "timerName", value.asInstanceOf[js.Any])
   }
 }

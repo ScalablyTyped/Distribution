@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1AnnotationMetadata extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1AnnotationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1AnnotationMetadata = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1AnnotationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1AnnotationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1AnnotationMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1AnnotationMetadata](x: Self) {
     
-    @scala.inline
-    def setOperatorMetadata(value: GoogleCloudDatalabelingV1beta1OperatorMetadata): Self = StObject.set(x, "operatorMetadata", value.asInstanceOf[js.Any])
+    inline def setOperatorMetadata(value: GoogleCloudDatalabelingV1beta1OperatorMetadata): Self = StObject.set(x, "operatorMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorMetadataUndefined: Self = StObject.set(x, "operatorMetadata", js.undefined)
+    inline def setOperatorMetadataUndefined: Self = StObject.set(x, "operatorMetadata", js.undefined)
   }
 }

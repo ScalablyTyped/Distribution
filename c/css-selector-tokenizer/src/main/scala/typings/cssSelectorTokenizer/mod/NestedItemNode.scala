@@ -19,26 +19,20 @@ trait NestedItemNode
 }
 object NestedItemNode {
   
-  @scala.inline
-  def apply(name: String, nodes: js.Array[ValueNode]): NestedItemNode = {
+  inline def apply(name: String, nodes: js.Array[ValueNode]): NestedItemNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nested-item")
     __obj.asInstanceOf[NestedItemNode]
   }
   
-  @scala.inline
-  implicit class NestedItemNodeMutableBuilder[Self <: NestedItemNode] (val x: Self) extends AnyVal {
+  extension [Self <: NestedItemNode](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[ValueNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[ValueNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: ValueNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: ValueNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `nested-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `nested-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

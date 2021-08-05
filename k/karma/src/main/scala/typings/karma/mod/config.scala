@@ -10,6 +10,5 @@ object config {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseConfig(configFilePath: String, cliOptions: ConfigOptions): Config_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parseConfig")(configFilePath.asInstanceOf[js.Any], cliOptions.asInstanceOf[js.Any])).asInstanceOf[Config_]
+  inline def parseConfig(configFilePath: String, cliOptions: ConfigOptions): Config_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parseConfig")(configFilePath.asInstanceOf[js.Any], cliOptions.asInstanceOf[js.Any])).asInstanceOf[Config_]
 }

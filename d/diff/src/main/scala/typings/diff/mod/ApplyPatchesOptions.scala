@@ -16,8 +16,7 @@ trait ApplyPatchesOptions
 }
 object ApplyPatchesOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     complete: js.Any => Unit,
     loadFile: (ParsedDiff, js.Function2[/* err */ js.Any, /* data */ String, Unit]) => Unit,
     patched: (ParsedDiff, String, js.Function1[/* err */ js.Any, Unit]) => Unit
@@ -26,16 +25,12 @@ object ApplyPatchesOptions {
     __obj.asInstanceOf[ApplyPatchesOptions]
   }
   
-  @scala.inline
-  implicit class ApplyPatchesOptionsMutableBuilder[Self <: ApplyPatchesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyPatchesOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadFile(value: (ParsedDiff, js.Function2[/* err */ js.Any, /* data */ String, Unit]) => Unit): Self = StObject.set(x, "loadFile", js.Any.fromFunction2(value))
+    inline def setLoadFile(value: (ParsedDiff, js.Function2[/* err */ js.Any, /* data */ String, Unit]) => Unit): Self = StObject.set(x, "loadFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPatched(value: (ParsedDiff, String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "patched", js.Any.fromFunction3(value))
+    inline def setPatched(value: (ParsedDiff, String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "patched", js.Any.fromFunction3(value))
   }
 }

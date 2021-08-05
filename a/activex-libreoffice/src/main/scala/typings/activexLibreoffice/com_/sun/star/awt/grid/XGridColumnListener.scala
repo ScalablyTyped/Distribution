@@ -20,8 +20,7 @@ trait XGridColumnListener
 }
 object XGridColumnListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     columnChanged: GridColumnEvent => Unit,
     disposing: EventObject => Unit,
@@ -32,10 +31,8 @@ object XGridColumnListener {
     __obj.asInstanceOf[XGridColumnListener]
   }
   
-  @scala.inline
-  implicit class XGridColumnListenerMutableBuilder[Self <: XGridColumnListener] (val x: Self) extends AnyVal {
+  extension [Self <: XGridColumnListener](x: Self) {
     
-    @scala.inline
-    def setColumnChanged(value: GridColumnEvent => Unit): Self = StObject.set(x, "columnChanged", js.Any.fromFunction1(value))
+    inline def setColumnChanged(value: GridColumnEvent => Unit): Self = StObject.set(x, "columnChanged", js.Any.fromFunction1(value))
   }
 }

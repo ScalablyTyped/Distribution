@@ -12,19 +12,15 @@ trait QuerySerializer extends StObject {
 }
 object QuerySerializer {
   
-  @scala.inline
-  def apply(parse: String => js.Object, stringify: Params => String): QuerySerializer = {
+  inline def apply(parse: String => js.Object, stringify: Params => String): QuerySerializer = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
     __obj.asInstanceOf[QuerySerializer]
   }
   
-  @scala.inline
-  implicit class QuerySerializerMutableBuilder[Self <: QuerySerializer] (val x: Self) extends AnyVal {
+  extension [Self <: QuerySerializer](x: Self) {
     
-    @scala.inline
-    def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringify(value: Params => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    inline def setStringify(value: Params => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
   }
 }

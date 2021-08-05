@@ -39,8 +39,7 @@ object ListViewDatabaseSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
+  inline def create(model: IModel): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
   
   /**
     * Creates and returns a new ListViewDatabaseSource instance in the SDK and on the server.
@@ -51,8 +50,7 @@ object ListViewDatabaseSource {
     *  6.0.0 to 8.2.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: EntityWidget): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
+  inline def createIn(container: EntityWidget): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
   
   /**
     * Creates and returns a new ListViewDatabaseSource instance in the SDK and on the server.
@@ -60,8 +58,7 @@ object ListViewDatabaseSource {
     * of the parent EntityWidget element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInEntityWidgetUnderDataSource(container: EntityWidget): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
+  inline def createInEntityWidgetUnderDataSource(container: EntityWidget): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
   
   /**
     * Creates and returns a new ListViewDatabaseSource instance in the SDK and on the server.
@@ -72,20 +69,17 @@ object ListViewDatabaseSource {
     *  8.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderDataSource(container: WidgetValue): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
+  inline def createInWidgetValueUnderDataSource(container: WidgetValue): ListViewDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewDatabaseSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewDatabaseSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewDatabaseSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

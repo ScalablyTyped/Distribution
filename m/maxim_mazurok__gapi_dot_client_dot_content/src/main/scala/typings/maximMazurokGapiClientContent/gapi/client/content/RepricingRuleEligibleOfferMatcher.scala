@@ -20,37 +20,27 @@ trait RepricingRuleEligibleOfferMatcher extends StObject {
 }
 object RepricingRuleEligibleOfferMatcher {
   
-  @scala.inline
-  def apply(): RepricingRuleEligibleOfferMatcher = {
+  inline def apply(): RepricingRuleEligibleOfferMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepricingRuleEligibleOfferMatcher]
   }
   
-  @scala.inline
-  implicit class RepricingRuleEligibleOfferMatcherMutableBuilder[Self <: RepricingRuleEligibleOfferMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: RepricingRuleEligibleOfferMatcher](x: Self) {
     
-    @scala.inline
-    def setBrandMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "brandMatcher", value.asInstanceOf[js.Any])
+    inline def setBrandMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "brandMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandMatcherUndefined: Self = StObject.set(x, "brandMatcher", js.undefined)
+    inline def setBrandMatcherUndefined: Self = StObject.set(x, "brandMatcher", js.undefined)
     
-    @scala.inline
-    def setItemGroupIdMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "itemGroupIdMatcher", value.asInstanceOf[js.Any])
+    inline def setItemGroupIdMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "itemGroupIdMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemGroupIdMatcherUndefined: Self = StObject.set(x, "itemGroupIdMatcher", js.undefined)
+    inline def setItemGroupIdMatcherUndefined: Self = StObject.set(x, "itemGroupIdMatcher", js.undefined)
     
-    @scala.inline
-    def setMatcherOption(value: String): Self = StObject.set(x, "matcherOption", value.asInstanceOf[js.Any])
+    inline def setMatcherOption(value: String): Self = StObject.set(x, "matcherOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatcherOptionUndefined: Self = StObject.set(x, "matcherOption", js.undefined)
+    inline def setMatcherOptionUndefined: Self = StObject.set(x, "matcherOption", js.undefined)
     
-    @scala.inline
-    def setOfferIdMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "offerIdMatcher", value.asInstanceOf[js.Any])
+    inline def setOfferIdMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "offerIdMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferIdMatcherUndefined: Self = StObject.set(x, "offerIdMatcher", js.undefined)
+    inline def setOfferIdMatcherUndefined: Self = StObject.set(x, "offerIdMatcher", js.undefined)
   }
 }

@@ -19,27 +19,19 @@ trait ARIALandmarkRole
      with _ARIARole
 object ARIALandmarkRole {
   
-  @scala.inline
-  def banner: typings.ariaQuery.ariaQueryStrings.banner = "banner".asInstanceOf[typings.ariaQuery.ariaQueryStrings.banner]
+  inline def banner: typings.ariaQuery.ariaQueryStrings.banner = "banner".asInstanceOf[typings.ariaQuery.ariaQueryStrings.banner]
   
-  @scala.inline
-  def complementary: typings.ariaQuery.ariaQueryStrings.complementary = "complementary".asInstanceOf[typings.ariaQuery.ariaQueryStrings.complementary]
+  inline def complementary: typings.ariaQuery.ariaQueryStrings.complementary = "complementary".asInstanceOf[typings.ariaQuery.ariaQueryStrings.complementary]
   
-  @scala.inline
-  def contentinfo: typings.ariaQuery.ariaQueryStrings.contentinfo = "contentinfo".asInstanceOf[typings.ariaQuery.ariaQueryStrings.contentinfo]
+  inline def contentinfo: typings.ariaQuery.ariaQueryStrings.contentinfo = "contentinfo".asInstanceOf[typings.ariaQuery.ariaQueryStrings.contentinfo]
   
-  @scala.inline
-  def form: typings.ariaQuery.ariaQueryStrings.form = "form".asInstanceOf[typings.ariaQuery.ariaQueryStrings.form]
+  inline def form: typings.ariaQuery.ariaQueryStrings.form = "form".asInstanceOf[typings.ariaQuery.ariaQueryStrings.form]
   
-  @scala.inline
-  def main: typings.ariaQuery.ariaQueryStrings.main = "main".asInstanceOf[typings.ariaQuery.ariaQueryStrings.main]
+  inline def main: typings.ariaQuery.ariaQueryStrings.main = "main".asInstanceOf[typings.ariaQuery.ariaQueryStrings.main]
   
-  @scala.inline
-  def navigation: typings.ariaQuery.ariaQueryStrings.navigation = "navigation".asInstanceOf[typings.ariaQuery.ariaQueryStrings.navigation]
+  inline def navigation: typings.ariaQuery.ariaQueryStrings.navigation = "navigation".asInstanceOf[typings.ariaQuery.ariaQueryStrings.navigation]
   
-  @scala.inline
-  def region: typings.ariaQuery.ariaQueryStrings.region = "region".asInstanceOf[typings.ariaQuery.ariaQueryStrings.region]
+  inline def region: typings.ariaQuery.ariaQueryStrings.region = "region".asInstanceOf[typings.ariaQuery.ariaQueryStrings.region]
   
-  @scala.inline
-  def search: typings.ariaQuery.ariaQueryStrings.search = "search".asInstanceOf[typings.ariaQuery.ariaQueryStrings.search]
+  inline def search: typings.ariaQuery.ariaQueryStrings.search = "search".asInstanceOf[typings.ariaQuery.ariaQueryStrings.search]
 }

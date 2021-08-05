@@ -11,22 +11,17 @@ trait CallMediaState extends StObject {
 }
 object CallMediaState {
   
-  @scala.inline
-  def apply(): CallMediaState = {
+  inline def apply(): CallMediaState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallMediaState]
   }
   
-  @scala.inline
-  implicit class CallMediaStateMutableBuilder[Self <: CallMediaState] (val x: Self) extends AnyVal {
+  extension [Self <: CallMediaState](x: Self) {
     
-    @scala.inline
-    def setAudio(value: NullableOption[MediaState]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: NullableOption[MediaState]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioNull: Self = StObject.set(x, "audio", null)
+    inline def setAudioNull: Self = StObject.set(x, "audio", null)
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
   }
 }

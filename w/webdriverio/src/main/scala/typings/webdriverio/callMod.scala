@@ -10,6 +10,5 @@ object callMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
 }

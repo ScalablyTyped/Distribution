@@ -13,16 +13,13 @@ trait TuningJobCompletionCriteria extends StObject {
 }
 object TuningJobCompletionCriteria {
   
-  @scala.inline
-  def apply(TargetObjectiveMetricValue: TargetObjectiveMetricValue): TuningJobCompletionCriteria = {
+  inline def apply(TargetObjectiveMetricValue: TargetObjectiveMetricValue): TuningJobCompletionCriteria = {
     val __obj = js.Dynamic.literal(TargetObjectiveMetricValue = TargetObjectiveMetricValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TuningJobCompletionCriteria]
   }
   
-  @scala.inline
-  implicit class TuningJobCompletionCriteriaMutableBuilder[Self <: TuningJobCompletionCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: TuningJobCompletionCriteria](x: Self) {
     
-    @scala.inline
-    def setTargetObjectiveMetricValue(value: TargetObjectiveMetricValue): Self = StObject.set(x, "TargetObjectiveMetricValue", value.asInstanceOf[js.Any])
+    inline def setTargetObjectiveMetricValue(value: TargetObjectiveMetricValue): Self = StObject.set(x, "TargetObjectiveMetricValue", value.asInstanceOf[js.Any])
   }
 }

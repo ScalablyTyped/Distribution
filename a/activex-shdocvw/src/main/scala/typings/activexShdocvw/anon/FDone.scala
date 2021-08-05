@@ -14,22 +14,17 @@ trait FDone extends StObject {
 }
 object FDone {
   
-  @scala.inline
-  def apply(fDone: js.Any, nPage: js.Any, pDisp: js.Any): FDone = {
+  inline def apply(fDone: js.Any, nPage: js.Any, pDisp: js.Any): FDone = {
     val __obj = js.Dynamic.literal(fDone = fDone.asInstanceOf[js.Any], nPage = nPage.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
     __obj.asInstanceOf[FDone]
   }
   
-  @scala.inline
-  implicit class FDoneMutableBuilder[Self <: FDone] (val x: Self) extends AnyVal {
+  extension [Self <: FDone](x: Self) {
     
-    @scala.inline
-    def setFDone(value: js.Any): Self = StObject.set(x, "fDone", value.asInstanceOf[js.Any])
+    inline def setFDone(value: js.Any): Self = StObject.set(x, "fDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNPage(value: js.Any): Self = StObject.set(x, "nPage", value.asInstanceOf[js.Any])
+    inline def setNPage(value: js.Any): Self = StObject.set(x, "nPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+    inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
   }
 }

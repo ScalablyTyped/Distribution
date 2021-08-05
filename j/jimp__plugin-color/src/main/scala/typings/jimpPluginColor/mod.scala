@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Color]
+  inline def default(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Color]
   
   @js.native
   trait Color extends StObject {
@@ -82,20 +81,16 @@ object mod {
   }
   object ColorAction {
     
-    @scala.inline
-    def apply(apply: ColorActionName, params: js.Any): ColorAction = {
+    inline def apply(apply: ColorActionName, params: js.Any): ColorAction = {
       val __obj = js.Dynamic.literal(apply = apply.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorAction]
     }
     
-    @scala.inline
-    implicit class ColorActionMutableBuilder[Self <: ColorAction] (val x: Self) extends AnyVal {
+    extension [Self <: ColorAction](x: Self) {
       
-      @scala.inline
-      def setApply(value: ColorActionName): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+      inline def setApply(value: ColorActionName): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,28 +107,20 @@ object mod {
   trait ColorActionName extends StObject
   object ColorActionName {
     
-    @scala.inline
-    def blue: typings.jimpPluginColor.jimpPluginColorStrings.blue = "blue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.blue]
+    inline def blue: typings.jimpPluginColor.jimpPluginColorStrings.blue = "blue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.blue]
     
-    @scala.inline
-    def green: typings.jimpPluginColor.jimpPluginColorStrings.green = "green".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.green]
+    inline def green: typings.jimpPluginColor.jimpPluginColorStrings.green = "green".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.green]
     
-    @scala.inline
-    def hue: typings.jimpPluginColor.jimpPluginColorStrings.hue = "hue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.hue]
+    inline def hue: typings.jimpPluginColor.jimpPluginColorStrings.hue = "hue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.hue]
     
-    @scala.inline
-    def mix: typings.jimpPluginColor.jimpPluginColorStrings.mix = "mix".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.mix]
+    inline def mix: typings.jimpPluginColor.jimpPluginColorStrings.mix = "mix".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.mix]
     
-    @scala.inline
-    def red: typings.jimpPluginColor.jimpPluginColorStrings.red = "red".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.red]
+    inline def red: typings.jimpPluginColor.jimpPluginColorStrings.red = "red".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.red]
     
-    @scala.inline
-    def shade: typings.jimpPluginColor.jimpPluginColorStrings.shade = "shade".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.shade]
+    inline def shade: typings.jimpPluginColor.jimpPluginColorStrings.shade = "shade".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.shade]
     
-    @scala.inline
-    def tint: typings.jimpPluginColor.jimpPluginColorStrings.tint = "tint".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.tint]
+    inline def tint: typings.jimpPluginColor.jimpPluginColorStrings.tint = "tint".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.tint]
     
-    @scala.inline
-    def xor: typings.jimpPluginColor.jimpPluginColorStrings.xor = "xor".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.xor]
+    inline def xor: typings.jimpPluginColor.jimpPluginColorStrings.xor = "xor".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.xor]
   }
 }

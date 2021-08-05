@@ -24,8 +24,7 @@ object tagRepositorySectionResponseMod {
   }
   object TagRepositorySectionResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auto_load_more_enabled: Boolean,
       more_available: Boolean,
       next_max_id: String,
@@ -38,35 +37,25 @@ object tagRepositorySectionResponseMod {
       __obj.asInstanceOf[TagRepositorySectionResponseRootObject]
     }
     
-    @scala.inline
-    implicit class TagRepositorySectionResponseRootObjectMutableBuilder[Self <: TagRepositorySectionResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: TagRepositorySectionResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
+      inline def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+      inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+      inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_media_ids(value: js.Array[String]): Self = StObject.set(x, "next_media_ids", value.asInstanceOf[js.Any])
+      inline def setNext_media_ids(value: js.Array[String]): Self = StObject.set(x, "next_media_ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_media_idsVarargs(value: String*): Self = StObject.set(x, "next_media_ids", js.Array(value :_*))
+      inline def setNext_media_idsVarargs(value: String*): Self = StObject.set(x, "next_media_ids", js.Array(value :_*))
       
-      @scala.inline
-      def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
+      inline def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSections(value: js.Array[TagRepositorySectionResponsesectionsItem]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+      inline def setSections(value: js.Array[TagRepositorySectionResponsesectionsItem]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionsVarargs(value: TagRepositorySectionResponsesectionsItem*): Self = StObject.set(x, "sections", js.Array(value :_*))
+      inline def setSectionsVarargs(value: TagRepositorySectionResponsesectionsItem*): Self = StObject.set(x, "sections", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,8 +71,7 @@ object tagRepositorySectionResponseMod {
   }
   object TagRepositorySectionResponsesectionsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       explore_item_info: js.Array[String],
       feed_type: String,
       layout_content: js.Array[String],
@@ -93,26 +81,19 @@ object tagRepositorySectionResponseMod {
       __obj.asInstanceOf[TagRepositorySectionResponsesectionsItem]
     }
     
-    @scala.inline
-    implicit class TagRepositorySectionResponsesectionsItemMutableBuilder[Self <: TagRepositorySectionResponsesectionsItem] (val x: Self) extends AnyVal {
+    extension [Self <: TagRepositorySectionResponsesectionsItem](x: Self) {
       
-      @scala.inline
-      def setExplore_item_info(value: js.Array[String]): Self = StObject.set(x, "explore_item_info", value.asInstanceOf[js.Any])
+      inline def setExplore_item_info(value: js.Array[String]): Self = StObject.set(x, "explore_item_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplore_item_infoVarargs(value: String*): Self = StObject.set(x, "explore_item_info", js.Array(value :_*))
+      inline def setExplore_item_infoVarargs(value: String*): Self = StObject.set(x, "explore_item_info", js.Array(value :_*))
       
-      @scala.inline
-      def setFeed_type(value: String): Self = StObject.set(x, "feed_type", value.asInstanceOf[js.Any])
+      inline def setFeed_type(value: String): Self = StObject.set(x, "feed_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout_content(value: js.Array[String]): Self = StObject.set(x, "layout_content", value.asInstanceOf[js.Any])
+      inline def setLayout_content(value: js.Array[String]): Self = StObject.set(x, "layout_content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout_contentVarargs(value: String*): Self = StObject.set(x, "layout_content", js.Array(value :_*))
+      inline def setLayout_contentVarargs(value: String*): Self = StObject.set(x, "layout_content", js.Array(value :_*))
       
-      @scala.inline
-      def setLayout_type(value: String): Self = StObject.set(x, "layout_type", value.asInstanceOf[js.Any])
+      inline def setLayout_type(value: String): Self = StObject.set(x, "layout_type", value.asInstanceOf[js.Any])
     }
   }
 }

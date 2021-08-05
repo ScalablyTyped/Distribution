@@ -13,16 +13,13 @@ trait MemoryAccessCallbacks extends StObject {
 }
 object MemoryAccessCallbacks {
   
-  @scala.inline
-  def apply(onAccess: MemoryAccessDetails => Unit): MemoryAccessCallbacks = {
+  inline def apply(onAccess: MemoryAccessDetails => Unit): MemoryAccessCallbacks = {
     val __obj = js.Dynamic.literal(onAccess = js.Any.fromFunction1(onAccess))
     __obj.asInstanceOf[MemoryAccessCallbacks]
   }
   
-  @scala.inline
-  implicit class MemoryAccessCallbacksMutableBuilder[Self <: MemoryAccessCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryAccessCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnAccess(value: MemoryAccessDetails => Unit): Self = StObject.set(x, "onAccess", js.Any.fromFunction1(value))
+    inline def setOnAccess(value: MemoryAccessDetails => Unit): Self = StObject.set(x, "onAccess", js.Any.fromFunction1(value))
   }
 }

@@ -72,8 +72,7 @@ object Events {
   }
   object EventContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getContext: () => GlobalContext,
       getDepth: () => Double,
       getEventSource: () => Attribute | Control | Entity,
@@ -85,26 +84,19 @@ object Events {
       __obj.asInstanceOf[EventContext]
     }
     
-    @scala.inline
-    implicit class EventContextMutableBuilder[Self <: EventContext] (val x: Self) extends AnyVal {
+    extension [Self <: EventContext](x: Self) {
       
-      @scala.inline
-      def setGetContext(value: () => GlobalContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+      inline def setGetContext(value: () => GlobalContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDepth(value: () => Double): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
+      inline def setGetDepth(value: () => Double): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEventSource(value: () => Attribute | Control | Entity): Self = StObject.set(x, "getEventSource", js.Any.fromFunction0(value))
+      inline def setGetEventSource(value: () => Attribute | Control | Entity): Self = StObject.set(x, "getEventSource", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFormContext(value: () => FormContext): Self = StObject.set(x, "getFormContext", js.Any.fromFunction0(value))
+      inline def setGetFormContext(value: () => FormContext): Self = StObject.set(x, "getFormContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSharedVariable(value: String => js.Any): Self = StObject.set(x, "getSharedVariable", js.Any.fromFunction1(value))
+      inline def setGetSharedVariable(value: String => js.Any): Self = StObject.set(x, "getSharedVariable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSharedVariable(value: (String, js.Any) => Unit): Self = StObject.set(x, "setSharedVariable", js.Any.fromFunction2(value))
+      inline def setSetSharedVariable(value: (String, js.Any) => Unit): Self = StObject.set(x, "setSharedVariable", js.Any.fromFunction2(value))
     }
   }
   
@@ -152,23 +144,18 @@ object Events {
   }
   object SaveEventArguments {
     
-    @scala.inline
-    def apply(getSaveMode: () => SaveMode, isDefaultPrevented: () => Boolean, preventDefault: () => Unit): SaveEventArguments = {
+    inline def apply(getSaveMode: () => SaveMode, isDefaultPrevented: () => Boolean, preventDefault: () => Unit): SaveEventArguments = {
       val __obj = js.Dynamic.literal(getSaveMode = js.Any.fromFunction0(getSaveMode), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = js.Any.fromFunction0(preventDefault))
       __obj.asInstanceOf[SaveEventArguments]
     }
     
-    @scala.inline
-    implicit class SaveEventArgumentsMutableBuilder[Self <: SaveEventArguments] (val x: Self) extends AnyVal {
+    extension [Self <: SaveEventArguments](x: Self) {
       
-      @scala.inline
-      def setGetSaveMode(value: () => SaveMode): Self = StObject.set(x, "getSaveMode", js.Any.fromFunction0(value))
+      inline def setGetSaveMode(value: () => SaveMode): Self = StObject.set(x, "getSaveMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     }
   }
   
@@ -187,8 +174,7 @@ object Events {
   }
   object SaveEventContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getContext: () => GlobalContext,
       getDepth: () => Double,
       getEventArgs: () => SaveEventArguments,
@@ -201,11 +187,9 @@ object Events {
       __obj.asInstanceOf[SaveEventContext]
     }
     
-    @scala.inline
-    implicit class SaveEventContextMutableBuilder[Self <: SaveEventContext] (val x: Self) extends AnyVal {
+    extension [Self <: SaveEventContext](x: Self) {
       
-      @scala.inline
-      def setGetEventArgs(value: () => SaveEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
+      inline def setGetEventArgs(value: () => SaveEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
     }
   }
   
@@ -233,23 +217,18 @@ object Events {
   }
   object StageChangeEventArguments {
     
-    @scala.inline
-    def apply(getDirection: () => StageChangeDirection, getStage: () => Stage, preventDefault: () => Unit): StageChangeEventArguments = {
+    inline def apply(getDirection: () => StageChangeDirection, getStage: () => Stage, preventDefault: () => Unit): StageChangeEventArguments = {
       val __obj = js.Dynamic.literal(getDirection = js.Any.fromFunction0(getDirection), getStage = js.Any.fromFunction0(getStage), preventDefault = js.Any.fromFunction0(preventDefault))
       __obj.asInstanceOf[StageChangeEventArguments]
     }
     
-    @scala.inline
-    implicit class StageChangeEventArgumentsMutableBuilder[Self <: StageChangeEventArguments] (val x: Self) extends AnyVal {
+    extension [Self <: StageChangeEventArguments](x: Self) {
       
-      @scala.inline
-      def setGetDirection(value: () => StageChangeDirection): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
+      inline def setGetDirection(value: () => StageChangeDirection): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStage(value: () => Stage): Self = StObject.set(x, "getStage", js.Any.fromFunction0(value))
+      inline def setGetStage(value: () => Stage): Self = StObject.set(x, "getStage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     }
   }
   
@@ -268,8 +247,7 @@ object Events {
   }
   object StageChangeEventContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getContext: () => GlobalContext,
       getDepth: () => Double,
       getEventArgs: () => StageChangeEventArguments,
@@ -282,11 +260,9 @@ object Events {
       __obj.asInstanceOf[StageChangeEventContext]
     }
     
-    @scala.inline
-    implicit class StageChangeEventContextMutableBuilder[Self <: StageChangeEventContext] (val x: Self) extends AnyVal {
+    extension [Self <: StageChangeEventContext](x: Self) {
       
-      @scala.inline
-      def setGetEventArgs(value: () => StageChangeEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
+      inline def setGetEventArgs(value: () => StageChangeEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
     }
   }
   
@@ -303,17 +279,14 @@ object Events {
   }
   object StageSelectedEventArguments {
     
-    @scala.inline
-    def apply(getStage: () => Stage): StageSelectedEventArguments = {
+    inline def apply(getStage: () => Stage): StageSelectedEventArguments = {
       val __obj = js.Dynamic.literal(getStage = js.Any.fromFunction0(getStage))
       __obj.asInstanceOf[StageSelectedEventArguments]
     }
     
-    @scala.inline
-    implicit class StageSelectedEventArgumentsMutableBuilder[Self <: StageSelectedEventArguments] (val x: Self) extends AnyVal {
+    extension [Self <: StageSelectedEventArguments](x: Self) {
       
-      @scala.inline
-      def setGetStage(value: () => Stage): Self = StObject.set(x, "getStage", js.Any.fromFunction0(value))
+      inline def setGetStage(value: () => Stage): Self = StObject.set(x, "getStage", js.Any.fromFunction0(value))
     }
   }
   
@@ -329,8 +302,7 @@ object Events {
   }
   object StageSelectedEventContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getContext: () => GlobalContext,
       getDepth: () => Double,
       getEventArgs: () => StageSelectedEventArguments,
@@ -343,11 +315,9 @@ object Events {
       __obj.asInstanceOf[StageSelectedEventContext]
     }
     
-    @scala.inline
-    implicit class StageSelectedEventContextMutableBuilder[Self <: StageSelectedEventContext] (val x: Self) extends AnyVal {
+    extension [Self <: StageSelectedEventContext](x: Self) {
       
-      @scala.inline
-      def setGetEventArgs(value: () => StageSelectedEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
+      inline def setGetEventArgs(value: () => StageSelectedEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
     }
   }
 }

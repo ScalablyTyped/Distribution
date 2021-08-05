@@ -31,8 +31,7 @@ trait LegendClickEvent extends StObject {
 }
 object LegendClickEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     config: PartialConfig,
     curveNumber: Double,
     data: js.Array[Data],
@@ -48,46 +47,32 @@ object LegendClickEvent {
     __obj.asInstanceOf[LegendClickEvent]
   }
   
-  @scala.inline
-  implicit class LegendClickEventMutableBuilder[Self <: LegendClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LegendClickEvent](x: Self) {
     
-    @scala.inline
-    def setConfig(value: PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
+    inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedIndex(value: Double): Self = StObject.set(x, "expandedIndex", value.asInstanceOf[js.Any])
+    inline def setExpandedIndex(value: Double): Self = StObject.set(x, "expandedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setFullData(value: js.Array[Data]): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
+    inline def setFullData(value: js.Array[Data]): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDataVarargs(value: Data*): Self = StObject.set(x, "fullData", js.Array(value :_*))
+    inline def setFullDataVarargs(value: Data*): Self = StObject.set(x, "fullData", js.Array(value :_*))
     
-    @scala.inline
-    def setFullLayout(value: PartialLayout): Self = StObject.set(x, "fullLayout", value.asInstanceOf[js.Any])
+    inline def setFullLayout(value: PartialLayout): Self = StObject.set(x, "fullLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: PlotlyHTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: PlotlyHTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

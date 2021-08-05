@@ -13,8 +13,7 @@ object noticeBarStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(variables: Theme): NoticeBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(variables.asInstanceOf[js.Any]).asInstanceOf[NoticeBarStyle]
+  inline def default(variables: Theme): NoticeBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(variables.asInstanceOf[js.Any]).asInstanceOf[NoticeBarStyle]
   
   trait NoticeBarStyle extends StObject {
     
@@ -36,8 +35,7 @@ object noticeBarStyleMod {
   }
   object NoticeBarStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actionWrap: ViewStyle,
       close: TextStyle,
       container: ViewStyle,
@@ -51,32 +49,23 @@ object noticeBarStyleMod {
       __obj.asInstanceOf[NoticeBarStyle]
     }
     
-    @scala.inline
-    implicit class NoticeBarStyleMutableBuilder[Self <: NoticeBarStyle] (val x: Self) extends AnyVal {
+    extension [Self <: NoticeBarStyle](x: Self) {
       
-      @scala.inline
-      def setActionWrap(value: ViewStyle): Self = StObject.set(x, "actionWrap", value.asInstanceOf[js.Any])
+      inline def setActionWrap(value: ViewStyle): Self = StObject.set(x, "actionWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: TextStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: TextStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: TextStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: TextStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft15(value: ViewStyle): Self = StObject.set(x, "left15", value.asInstanceOf[js.Any])
+      inline def setLeft15(value: ViewStyle): Self = StObject.set(x, "left15", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft6(value: ViewStyle): Self = StObject.set(x, "left6", value.asInstanceOf[js.Any])
+      inline def setLeft6(value: ViewStyle): Self = StObject.set(x, "left6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: TextStyle): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: TextStyle): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotice(value: ViewStyle): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
+      inline def setNotice(value: ViewStyle): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
     }
   }
 }

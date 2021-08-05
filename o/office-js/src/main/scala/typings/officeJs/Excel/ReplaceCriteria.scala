@@ -32,25 +32,19 @@ trait ReplaceCriteria extends StObject {
 }
 object ReplaceCriteria {
   
-  @scala.inline
-  def apply(): ReplaceCriteria = {
+  inline def apply(): ReplaceCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceCriteria]
   }
   
-  @scala.inline
-  implicit class ReplaceCriteriaMutableBuilder[Self <: ReplaceCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceCriteria](x: Self) {
     
-    @scala.inline
-    def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
+    inline def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteMatchUndefined: Self = StObject.set(x, "completeMatch", js.undefined)
+    inline def setCompleteMatchUndefined: Self = StObject.set(x, "completeMatch", js.undefined)
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
   }
 }

@@ -13,20 +13,16 @@ trait ArraySchema[ItemSchema /* <: AnySchema */] extends StObject {
 }
 object ArraySchema {
   
-  @scala.inline
-  def apply[ItemSchema /* <: AnySchema */](items: ItemSchema): ArraySchema[ItemSchema] = {
+  inline def apply[ItemSchema /* <: AnySchema */](items: ItemSchema): ArraySchema[ItemSchema] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[ArraySchema[ItemSchema]]
   }
   
-  @scala.inline
-  implicit class ArraySchemaMutableBuilder[Self <: ArraySchema[?], ItemSchema /* <: AnySchema */] (val x: Self & ArraySchema[ItemSchema]) extends AnyVal {
+  extension [Self <: ArraySchema[?], ItemSchema /* <: AnySchema */](x: Self & ArraySchema[ItemSchema]) {
     
-    @scala.inline
-    def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

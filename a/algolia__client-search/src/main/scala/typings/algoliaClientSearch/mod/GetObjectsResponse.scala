@@ -13,19 +13,15 @@ trait GetObjectsResponse[TObject] extends StObject {
 }
 object GetObjectsResponse {
   
-  @scala.inline
-  def apply[TObject](results: js.Array[(TObject & ObjectWithObjectID) | Null]): GetObjectsResponse[TObject] = {
+  inline def apply[TObject](results: js.Array[(TObject & ObjectWithObjectID) | Null]): GetObjectsResponse[TObject] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectsResponse[TObject]]
   }
   
-  @scala.inline
-  implicit class GetObjectsResponseMutableBuilder[Self <: GetObjectsResponse[?], TObject] (val x: Self & GetObjectsResponse[TObject]) extends AnyVal {
+  extension [Self <: GetObjectsResponse[?], TObject](x: Self & GetObjectsResponse[TObject]) {
     
-    @scala.inline
-    def setResults(value: js.Array[(TObject & ObjectWithObjectID) | Null]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[(TObject & ObjectWithObjectID) | Null]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: ((TObject & ObjectWithObjectID) | Null)*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ((TObject & ObjectWithObjectID) | Null)*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

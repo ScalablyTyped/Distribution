@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "adeira__js"
-version := "1.2-dt-20201012Z-2e6044"
+version := "1.2-dt-20201012Z-7d6915"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

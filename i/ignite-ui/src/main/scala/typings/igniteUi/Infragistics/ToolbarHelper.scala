@@ -10,16 +10,13 @@ trait ToolbarHelper extends StObject {
 }
 object ToolbarHelper {
   
-  @scala.inline
-  def apply(analyse: js.Object => Unit): ToolbarHelper = {
+  inline def apply(analyse: js.Object => Unit): ToolbarHelper = {
     val __obj = js.Dynamic.literal(analyse = js.Any.fromFunction1(analyse))
     __obj.asInstanceOf[ToolbarHelper]
   }
   
-  @scala.inline
-  implicit class ToolbarHelperMutableBuilder[Self <: ToolbarHelper] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarHelper](x: Self) {
     
-    @scala.inline
-    def setAnalyse(value: js.Object => Unit): Self = StObject.set(x, "analyse", js.Any.fromFunction1(value))
+    inline def setAnalyse(value: js.Object => Unit): Self = StObject.set(x, "analyse", js.Any.fromFunction1(value))
   }
 }

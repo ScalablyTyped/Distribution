@@ -19,19 +19,15 @@ trait SchemaSourceContext extends StObject {
 }
 object SchemaSourceContext {
   
-  @scala.inline
-  def apply(): SchemaSourceContext = {
+  inline def apply(): SchemaSourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceContext]
   }
   
-  @scala.inline
-  implicit class SchemaSourceContextMutableBuilder[Self <: SchemaSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceContext](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
   }
 }

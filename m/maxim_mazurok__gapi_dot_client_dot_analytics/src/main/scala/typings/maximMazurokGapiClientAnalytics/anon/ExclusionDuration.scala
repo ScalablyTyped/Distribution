@@ -14,25 +14,19 @@ trait ExclusionDuration extends StObject {
 }
 object ExclusionDuration {
   
-  @scala.inline
-  def apply(): ExclusionDuration = {
+  inline def apply(): ExclusionDuration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExclusionDuration]
   }
   
-  @scala.inline
-  implicit class ExclusionDurationMutableBuilder[Self <: ExclusionDuration] (val x: Self) extends AnyVal {
+  extension [Self <: ExclusionDuration](x: Self) {
     
-    @scala.inline
-    def setExclusionDuration(value: String): Self = StObject.set(x, "exclusionDuration", value.asInstanceOf[js.Any])
+    inline def setExclusionDuration(value: String): Self = StObject.set(x, "exclusionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionDurationUndefined: Self = StObject.set(x, "exclusionDuration", js.undefined)
+    inline def setExclusionDurationUndefined: Self = StObject.set(x, "exclusionDuration", js.undefined)
     
-    @scala.inline
-    def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

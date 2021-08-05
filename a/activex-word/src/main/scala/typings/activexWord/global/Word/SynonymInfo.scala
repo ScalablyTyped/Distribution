@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SynonymInfo")
 @js.native
-class SynonymInfo protected ()
+/* private */ class SynonymInfo ()
   extends StObject
      with typings.activexWord.Word.SynonymInfo {
   
@@ -46,7 +46,7 @@ class SynonymInfo protected ()
   /* CompleteClass */
   override val Word: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.SynonymInfo_typekey")
   var WordDotSynonymInfo_typekey: typings.activexWord.Word.SynonymInfo = js.native
 }

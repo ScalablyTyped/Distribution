@@ -21,13 +21,11 @@ object Sortable {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Sortable = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Sortable]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Sortable = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Sortable]
   
   /* static member */
   @JSGlobal("kendo.ui.Sortable.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Sortable = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Sortable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Sortable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

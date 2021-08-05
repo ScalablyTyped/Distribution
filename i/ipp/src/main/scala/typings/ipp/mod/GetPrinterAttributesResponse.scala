@@ -21,8 +21,7 @@ trait GetPrinterAttributesResponse extends StObject {
 }
 object GetPrinterAttributesResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     `operation-attributes-tag`: Attributesnaturallanguage,
     `printer-attributes-tag`: js.Object,
@@ -35,31 +34,22 @@ object GetPrinterAttributesResponse {
     __obj.asInstanceOf[GetPrinterAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetPrinterAttributesResponseMutableBuilder[Self <: GetPrinterAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPrinterAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPrinter-attributes-tag`(value: js.Object): Self = StObject.set(x, "printer-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setPrinter-attributes-tag`(value: js.Object): Self = StObject.set(x, "printer-attributes-tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUnsupported-attributes`(value: js.Array[String]): Self = StObject.set(x, "unsupported-attributes", value.asInstanceOf[js.Any])
+    inline def `setUnsupported-attributes`(value: js.Array[String]): Self = StObject.set(x, "unsupported-attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUnsupported-attributesUndefined`: Self = StObject.set(x, "unsupported-attributes", js.undefined)
+    inline def `setUnsupported-attributesUndefined`: Self = StObject.set(x, "unsupported-attributes", js.undefined)
     
-    @scala.inline
-    def `setUnsupported-attributesVarargs`(value: String*): Self = StObject.set(x, "unsupported-attributes", js.Array(value :_*))
+    inline def `setUnsupported-attributesVarargs`(value: String*): Self = StObject.set(x, "unsupported-attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: IPPVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: IPPVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

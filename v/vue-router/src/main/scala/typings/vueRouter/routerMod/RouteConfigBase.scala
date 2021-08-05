@@ -27,73 +27,51 @@ trait RouteConfigBase extends StObject {
 }
 object RouteConfigBase {
   
-  @scala.inline
-  def apply(path: String): RouteConfigBase = {
+  inline def apply(path: String): RouteConfigBase = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteConfigBase]
   }
   
-  @scala.inline
-  implicit class RouteConfigBaseMutableBuilder[Self <: RouteConfigBase] (val x: Self) extends AnyVal {
+  extension [Self <: RouteConfigBase](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+    inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
     
-    @scala.inline
-    def setBeforeEnter(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[Vue]) => js.Any): Self = StObject.set(x, "beforeEnter", js.Any.fromFunction3(value))
+    inline def setBeforeEnter(value: (/* to */ Route, /* from */ Route, /* next */ NavigationGuardNext[Vue]) => js.Any): Self = StObject.set(x, "beforeEnter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeEnterUndefined: Self = StObject.set(x, "beforeEnter", js.undefined)
+    inline def setBeforeEnterUndefined: Self = StObject.set(x, "beforeEnter", js.undefined)
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setChildren(value: js.Array[RouteConfig]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[RouteConfig]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: RouteConfig*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: RouteConfig*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathToRegexpOptions(value: PathToRegexpOptions): Self = StObject.set(x, "pathToRegexpOptions", value.asInstanceOf[js.Any])
+    inline def setPathToRegexpOptions(value: PathToRegexpOptions): Self = StObject.set(x, "pathToRegexpOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathToRegexpOptionsUndefined: Self = StObject.set(x, "pathToRegexpOptions", js.undefined)
+    inline def setPathToRegexpOptionsUndefined: Self = StObject.set(x, "pathToRegexpOptions", js.undefined)
     
-    @scala.inline
-    def setRedirect(value: RedirectOption): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: RedirectOption): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectFunction1(value: /* to */ Route => RawLocation): Self = StObject.set(x, "redirect", js.Any.fromFunction1(value))
+    inline def setRedirectFunction1(value: /* to */ Route => RawLocation): Self = StObject.set(x, "redirect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
   }
 }

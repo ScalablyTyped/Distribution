@@ -18,28 +18,21 @@ trait DescribeVpcEndpointConnectionNotificationsResult extends StObject {
 }
 object DescribeVpcEndpointConnectionNotificationsResult {
   
-  @scala.inline
-  def apply(): DescribeVpcEndpointConnectionNotificationsResult = {
+  inline def apply(): DescribeVpcEndpointConnectionNotificationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcEndpointConnectionNotificationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeVpcEndpointConnectionNotificationsResultMutableBuilder[Self <: DescribeVpcEndpointConnectionNotificationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcEndpointConnectionNotificationsResult](x: Self) {
     
-    @scala.inline
-    def setConnectionNotificationSet(value: ConnectionNotificationSet): Self = StObject.set(x, "ConnectionNotificationSet", value.asInstanceOf[js.Any])
+    inline def setConnectionNotificationSet(value: ConnectionNotificationSet): Self = StObject.set(x, "ConnectionNotificationSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionNotificationSetUndefined: Self = StObject.set(x, "ConnectionNotificationSet", js.undefined)
+    inline def setConnectionNotificationSetUndefined: Self = StObject.set(x, "ConnectionNotificationSet", js.undefined)
     
-    @scala.inline
-    def setConnectionNotificationSetVarargs(value: ConnectionNotification*): Self = StObject.set(x, "ConnectionNotificationSet", js.Array(value :_*))
+    inline def setConnectionNotificationSetVarargs(value: ConnectionNotification*): Self = StObject.set(x, "ConnectionNotificationSet", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

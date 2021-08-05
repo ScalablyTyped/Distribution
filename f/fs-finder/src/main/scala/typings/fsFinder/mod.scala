@@ -22,59 +22,36 @@ object mod {
   @JSImport("fs-finder", "TIME_FORMAT")
   @js.native
   def TIME_FORMAT: String = js.native
-  @scala.inline
-  def TIME_FORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIME_FORMAT")(x.asInstanceOf[js.Any])
+  inline def TIME_FORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIME_FORMAT")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def find(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
-  @scala.inline
-  def find(path: String, fn: Unit, `type`: Type): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Finder]
-  @scala.inline
-  def find(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
-  @scala.inline
-  def find(path: String, fn: AsyncFunction, `type`: Type): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def find(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
+  inline def find(path: String, fn: Unit, `type`: Type): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def find(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def find(path: String, fn: AsyncFunction, `type`: Type): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Finder]
   
-  @scala.inline
-  def findDirectories(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")().asInstanceOf[Finder]
-  @scala.inline
-  def findDirectories(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
-  @scala.inline
-  def findDirectories(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
-  @scala.inline
-  def findDirectories(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findDirectories(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")().asInstanceOf[Finder]
+  inline def findDirectories(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
+  inline def findDirectories(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findDirectories(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectories")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
   
-  @scala.inline
-  def findDirectory(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")().asInstanceOf[Finder]
-  @scala.inline
-  def findDirectory(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
-  @scala.inline
-  def findDirectory(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
-  @scala.inline
-  def findDirectory(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findDirectory(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")().asInstanceOf[Finder]
+  inline def findDirectory(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
+  inline def findDirectory(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findDirectory(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findDirectory")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
   
-  @scala.inline
-  def findFile(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFile")().asInstanceOf[Finder]
-  @scala.inline
-  def findFile(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFile")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
-  @scala.inline
-  def findFile(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFile")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
-  @scala.inline
-  def findFile(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFile")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findFile(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFile")().asInstanceOf[Finder]
+  inline def findFile(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFile")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
+  inline def findFile(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFile")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findFile(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFile")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
   
-  @scala.inline
-  def findFiles(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")().asInstanceOf[Finder]
-  @scala.inline
-  def findFiles(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
-  @scala.inline
-  def findFiles(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
-  @scala.inline
-  def findFiles(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findFiles(): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")().asInstanceOf[Finder]
+  inline def findFiles(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
+  inline def findFiles(path: String, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
+  inline def findFiles(path: Unit, fn: AsyncFunction): Finder = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Finder]
   
-  @scala.inline
-  def from(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
+  inline def from(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
   
-  @scala.inline
-  def in(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("in")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
+  inline def in(path: String): Finder = ^.asInstanceOf[js.Dynamic].applyDynamic("in")(path.asInstanceOf[js.Any]).asInstanceOf[Finder]
   
   object FsFinder {
     

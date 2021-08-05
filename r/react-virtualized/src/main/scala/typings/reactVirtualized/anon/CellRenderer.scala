@@ -27,8 +27,7 @@ trait CellRenderer extends StObject {
 }
 object CellRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellDataGetter: /* params */ TableCellDataGetterParams => js.Any,
     cellRenderer: /* props */ TableCellProps => ReactNode,
     headerRenderer: /* props */ TableHeaderProps => ReactNode
@@ -37,22 +36,16 @@ object CellRenderer {
     __obj.asInstanceOf[CellRenderer]
   }
   
-  @scala.inline
-  implicit class CellRendererMutableBuilder[Self <: CellRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: CellRenderer](x: Self) {
     
-    @scala.inline
-    def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
+    inline def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCellRenderer(value: /* props */ TableCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
+    inline def setCellRenderer(value: /* props */ TableCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlexGrow(value: `0`): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+    inline def setFlexGrow(value: `0`): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexShrink(value: `1`): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
+    inline def setFlexShrink(value: `1`): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRenderer(value: /* props */ TableHeaderProps => ReactNode): Self = StObject.set(x, "headerRenderer", js.Any.fromFunction1(value))
+    inline def setHeaderRenderer(value: /* props */ TableHeaderProps => ReactNode): Self = StObject.set(x, "headerRenderer", js.Any.fromFunction1(value))
   }
 }

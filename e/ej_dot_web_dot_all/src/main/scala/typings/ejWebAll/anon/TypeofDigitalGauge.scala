@@ -15,19 +15,15 @@ trait TypeofDigitalGauge extends StObject {
 }
 object TypeofDigitalGauge {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: DigitalGauge): TypeofDigitalGauge = {
+  inline def apply(Locale: js.Any, fn: DigitalGauge): TypeofDigitalGauge = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDigitalGauge]
   }
   
-  @scala.inline
-  implicit class TypeofDigitalGaugeMutableBuilder[Self <: TypeofDigitalGauge] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDigitalGauge](x: Self) {
     
-    @scala.inline
-    def setFn(value: DigitalGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: DigitalGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

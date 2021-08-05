@@ -22,76 +22,53 @@ trait Params extends StObject {
 }
 object Params {
   
-  @scala.inline
-  def apply(): Params = {
+  inline def apply(): Params = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Params]
   }
   
-  @scala.inline
-  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+  extension [Self <: Params](x: Self) {
     
-    @scala.inline
-    def setFields(value: ArrayOrValue[FieldParam]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: ArrayOrValue[FieldParam]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldParam*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldParam*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: ArrayOrValue[FilterParam]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ArrayOrValue[FilterParam]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: FilterParam*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: FilterParam*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
-    @scala.inline
-    def setFormats(value: ArrayOrValue[FormatParam]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: ArrayOrValue[FormatParam]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    @scala.inline
-    def setFormatsVarargs(value: FormatParam*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: FormatParam*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: ArrayOrValue[IncludeParam]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: ArrayOrValue[IncludeParam]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: IncludeParam*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: IncludeParam*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: ArrayOrValue[LimitParam]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: ArrayOrValue[LimitParam]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setLimitVarargs(value: LimitParam*): Self = StObject.set(x, "limit", js.Array(value :_*))
+    inline def setLimitVarargs(value: LimitParam*): Self = StObject.set(x, "limit", js.Array(value :_*))
     
-    @scala.inline
-    def setOrder(value: ArrayOrValue[OrderParam]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: ArrayOrValue[OrderParam]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setOrderVarargs(value: OrderParam*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: OrderParam*): Self = StObject.set(x, "order", js.Array(value :_*))
     
-    @scala.inline
-    def setPage(value: ArrayOrValue[PageParam]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: ArrayOrValue[PageParam]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPageVarargs(value: PageParam*): Self = StObject.set(x, "page", js.Array(value :_*))
+    inline def setPageVarargs(value: PageParam*): Self = StObject.set(x, "page", js.Array(value :_*))
   }
 }

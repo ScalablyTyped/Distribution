@@ -16,28 +16,21 @@ trait CountryNamedLocation
 }
 object CountryNamedLocation {
   
-  @scala.inline
-  def apply(): CountryNamedLocation = {
+  inline def apply(): CountryNamedLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountryNamedLocation]
   }
   
-  @scala.inline
-  implicit class CountryNamedLocationMutableBuilder[Self <: CountryNamedLocation] (val x: Self) extends AnyVal {
+  extension [Self <: CountryNamedLocation](x: Self) {
     
-    @scala.inline
-    def setCountriesAndRegions(value: js.Array[String]): Self = StObject.set(x, "countriesAndRegions", value.asInstanceOf[js.Any])
+    inline def setCountriesAndRegions(value: js.Array[String]): Self = StObject.set(x, "countriesAndRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountriesAndRegionsUndefined: Self = StObject.set(x, "countriesAndRegions", js.undefined)
+    inline def setCountriesAndRegionsUndefined: Self = StObject.set(x, "countriesAndRegions", js.undefined)
     
-    @scala.inline
-    def setCountriesAndRegionsVarargs(value: String*): Self = StObject.set(x, "countriesAndRegions", js.Array(value :_*))
+    inline def setCountriesAndRegionsVarargs(value: String*): Self = StObject.set(x, "countriesAndRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeUnknownCountriesAndRegions(value: Boolean): Self = StObject.set(x, "includeUnknownCountriesAndRegions", value.asInstanceOf[js.Any])
+    inline def setIncludeUnknownCountriesAndRegions(value: Boolean): Self = StObject.set(x, "includeUnknownCountriesAndRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUnknownCountriesAndRegionsUndefined: Self = StObject.set(x, "includeUnknownCountriesAndRegions", js.undefined)
+    inline def setIncludeUnknownCountriesAndRegionsUndefined: Self = StObject.set(x, "includeUnknownCountriesAndRegions", js.undefined)
   }
 }

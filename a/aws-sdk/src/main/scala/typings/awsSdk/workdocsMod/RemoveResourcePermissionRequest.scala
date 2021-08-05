@@ -28,31 +28,23 @@ trait RemoveResourcePermissionRequest extends StObject {
 }
 object RemoveResourcePermissionRequest {
   
-  @scala.inline
-  def apply(PrincipalId: IdType, ResourceId: ResourceIdType): RemoveResourcePermissionRequest = {
+  inline def apply(PrincipalId: IdType, ResourceId: ResourceIdType): RemoveResourcePermissionRequest = {
     val __obj = js.Dynamic.literal(PrincipalId = PrincipalId.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveResourcePermissionRequest]
   }
   
-  @scala.inline
-  implicit class RemoveResourcePermissionRequestMutableBuilder[Self <: RemoveResourcePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveResourcePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: IdType): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: IdType): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
+    inline def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
+    inline def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

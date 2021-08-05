@@ -25,32 +25,24 @@ trait ArtistObjectSimplified extends StObject {
 }
 object ArtistObjectSimplified {
   
-  @scala.inline
-  def apply(external_urls: ExternalUrlObject, href: String, id: String, name: String, uri: String): ArtistObjectSimplified = {
+  inline def apply(external_urls: ExternalUrlObject, href: String, id: String, name: String, uri: String): ArtistObjectSimplified = {
     val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("artist")
     __obj.asInstanceOf[ArtistObjectSimplified]
   }
   
-  @scala.inline
-  implicit class ArtistObjectSimplifiedMutableBuilder[Self <: ArtistObjectSimplified] (val x: Self) extends AnyVal {
+  extension [Self <: ArtistObjectSimplified](x: Self) {
     
-    @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
+    inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: artist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: artist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

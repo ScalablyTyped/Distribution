@@ -16,8 +16,7 @@ trait ListEnumerator[T] extends StObject {
 }
 object ListEnumerator {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     get_current: () => T,
     moveNext: () => Boolean,
     movePrevious: () => Boolean,
@@ -27,19 +26,14 @@ object ListEnumerator {
     __obj.asInstanceOf[ListEnumerator[T]]
   }
   
-  @scala.inline
-  implicit class ListEnumeratorMutableBuilder[Self <: ListEnumerator[?], T] (val x: Self & ListEnumerator[T]) extends AnyVal {
+  extension [Self <: ListEnumerator[?], T](x: Self & ListEnumerator[T]) {
     
-    @scala.inline
-    def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))
+    inline def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+    inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMovePrevious(value: () => Boolean): Self = StObject.set(x, "movePrevious", js.Any.fromFunction0(value))
+    inline def setMovePrevious(value: () => Boolean): Self = StObject.set(x, "movePrevious", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => scala.Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => scala.Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

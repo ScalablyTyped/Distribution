@@ -25,29 +25,23 @@ trait GoogleCloudDialogflowCxV3beta1SessionInfo extends StObject {
 }
 object GoogleCloudDialogflowCxV3beta1SessionInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3beta1SessionInfo = {
+  inline def apply(): GoogleCloudDialogflowCxV3beta1SessionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1SessionInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1SessionInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1SessionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3beta1SessionInfo](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1SessionInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

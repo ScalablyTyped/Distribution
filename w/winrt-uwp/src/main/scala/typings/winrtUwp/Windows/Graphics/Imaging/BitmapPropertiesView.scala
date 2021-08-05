@@ -18,16 +18,13 @@ trait BitmapPropertiesView extends StObject {
 }
 object BitmapPropertiesView {
   
-  @scala.inline
-  def apply(getPropertiesAsync: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): BitmapPropertiesView = {
+  inline def apply(getPropertiesAsync: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): BitmapPropertiesView = {
     val __obj = js.Dynamic.literal(getPropertiesAsync = js.Any.fromFunction1(getPropertiesAsync))
     __obj.asInstanceOf[BitmapPropertiesView]
   }
   
-  @scala.inline
-  implicit class BitmapPropertiesViewMutableBuilder[Self <: BitmapPropertiesView] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapPropertiesView](x: Self) {
     
-    @scala.inline
-    def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
+    inline def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
   }
 }

@@ -28,8 +28,7 @@ trait TypeDescriptionManager
      with XTypeDescriptionEnumerationAccess
 object TypeDescriptionManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,

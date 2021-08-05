@@ -16,25 +16,19 @@ trait ScaleMultiDataRefsortVgSo extends StObject {
 }
 object ScaleMultiDataRefsortVgSo {
   
-  @scala.inline
-  def apply(fields: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]): ScaleMultiDataRefsortVgSo = {
+  inline def apply(fields: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]): ScaleMultiDataRefsortVgSo = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleMultiDataRefsortVgSo]
   }
   
-  @scala.inline
-  implicit class ScaleMultiDataRefsortVgSoMutableBuilder[Self <: ScaleMultiDataRefsortVgSo] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleMultiDataRefsortVgSo](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: ((js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ((js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef)*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

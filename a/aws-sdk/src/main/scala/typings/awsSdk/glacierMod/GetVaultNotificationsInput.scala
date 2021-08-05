@@ -18,19 +18,15 @@ trait GetVaultNotificationsInput extends StObject {
 }
 object GetVaultNotificationsInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): GetVaultNotificationsInput = {
+  inline def apply(accountId: String, vaultName: String): GetVaultNotificationsInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVaultNotificationsInput]
   }
   
-  @scala.inline
-  implicit class GetVaultNotificationsInputMutableBuilder[Self <: GetVaultNotificationsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetVaultNotificationsInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

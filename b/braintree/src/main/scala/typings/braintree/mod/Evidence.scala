@@ -19,34 +19,25 @@ trait Evidence extends StObject {
 }
 object Evidence {
   
-  @scala.inline
-  def apply(createdAt: Date, id: String, sendToProcessorAt: Date): Evidence = {
+  inline def apply(createdAt: Date, id: String, sendToProcessorAt: Date): Evidence = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sendToProcessorAt = sendToProcessorAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Evidence]
   }
   
-  @scala.inline
-  implicit class EvidenceMutableBuilder[Self <: Evidence] (val x: Self) extends AnyVal {
+  extension [Self <: Evidence](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendToProcessorAt(value: Date): Self = StObject.set(x, "sendToProcessorAt", value.asInstanceOf[js.Any])
+    inline def setSendToProcessorAt(value: Date): Self = StObject.set(x, "sendToProcessorAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

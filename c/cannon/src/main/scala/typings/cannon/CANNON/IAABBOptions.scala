@@ -12,25 +12,19 @@ trait IAABBOptions extends StObject {
 }
 object IAABBOptions {
   
-  @scala.inline
-  def apply(): IAABBOptions = {
+  inline def apply(): IAABBOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAABBOptions]
   }
   
-  @scala.inline
-  implicit class IAABBOptionsMutableBuilder[Self <: IAABBOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IAABBOptions](x: Self) {
     
-    @scala.inline
-    def setLowerBound(value: Vec3): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
+    inline def setLowerBound(value: Vec3): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
+    inline def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
-    @scala.inline
-    def setUpperBound(value: Vec3): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
+    inline def setUpperBound(value: Vec3): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
+    inline def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
   }
 }

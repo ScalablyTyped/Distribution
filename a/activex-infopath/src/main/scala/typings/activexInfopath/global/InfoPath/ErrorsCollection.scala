@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ErrorsCollection")
 @js.native
-class ErrorsCollection protected ()
+/* private */ class ErrorsCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.ErrorsCollection

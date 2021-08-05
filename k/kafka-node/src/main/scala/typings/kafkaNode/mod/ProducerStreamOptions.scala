@@ -14,31 +14,23 @@ trait ProducerStreamOptions extends StObject {
 }
 object ProducerStreamOptions {
   
-  @scala.inline
-  def apply(): ProducerStreamOptions = {
+  inline def apply(): ProducerStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProducerStreamOptions]
   }
   
-  @scala.inline
-  implicit class ProducerStreamOptionsMutableBuilder[Self <: ProducerStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProducerStreamOptions](x: Self) {
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
-    @scala.inline
-    def setKafkaClient(value: KafkaClientOptions): Self = StObject.set(x, "kafkaClient", value.asInstanceOf[js.Any])
+    inline def setKafkaClient(value: KafkaClientOptions): Self = StObject.set(x, "kafkaClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKafkaClientUndefined: Self = StObject.set(x, "kafkaClient", js.undefined)
+    inline def setKafkaClientUndefined: Self = StObject.set(x, "kafkaClient", js.undefined)
     
-    @scala.inline
-    def setProducer(value: ProducerOptions): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
+    inline def setProducer(value: ProducerOptions): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
+    inline def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
   }
 }

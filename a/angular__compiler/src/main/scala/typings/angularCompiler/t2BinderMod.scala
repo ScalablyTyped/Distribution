@@ -43,21 +43,21 @@ object t2BinderMod {
       usedPipes: Set[String]
     ) = this()
     
-    var bindings: js.Any = js.native
+    /* private */ var bindings: js.Any = js.native
     
-    var directives: js.Any = js.native
+    /* private */ var directives: js.Any = js.native
     
-    var exprTargets: js.Any = js.native
+    /* private */ var exprTargets: js.Any = js.native
     
-    var nestingLevel: js.Any = js.native
+    /* private */ var nestingLevel: js.Any = js.native
     
-    var references: js.Any = js.native
+    /* private */ var references: js.Any = js.native
     
-    var symbols: js.Any = js.native
+    /* private */ var symbols: js.Any = js.native
     
-    var templateEntities: js.Any = js.native
+    /* private */ var templateEntities: js.Any = js.native
     
-    var usedPipes: js.Any = js.native
+    /* private */ var usedPipes: js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/render3/view/t2_binder", "R3TargetBinder")
@@ -70,6 +70,6 @@ object t2BinderMod {
     /* CompleteClass */
     override def bind(target: Target): BoundTarget[DirectiveT] = js.native
     
-    var directiveMatcher: js.Any = js.native
+    /* private */ var directiveMatcher: js.Any = js.native
   }
 }

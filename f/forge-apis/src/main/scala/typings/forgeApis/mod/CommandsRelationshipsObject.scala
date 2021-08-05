@@ -10,16 +10,13 @@ trait CommandsRelationshipsObject extends StObject {
 }
 object CommandsRelationshipsObject {
   
-  @scala.inline
-  def apply(resources: CommandsRelationshipsResourceObject): CommandsRelationshipsObject = {
+  inline def apply(resources: CommandsRelationshipsResourceObject): CommandsRelationshipsObject = {
     val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandsRelationshipsObject]
   }
   
-  @scala.inline
-  implicit class CommandsRelationshipsObjectMutableBuilder[Self <: CommandsRelationshipsObject] (val x: Self) extends AnyVal {
+  extension [Self <: CommandsRelationshipsObject](x: Self) {
     
-    @scala.inline
-    def setResources(value: CommandsRelationshipsResourceObject): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: CommandsRelationshipsResourceObject): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
   }
 }

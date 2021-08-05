@@ -28,34 +28,25 @@ trait CallbackArgs extends StObject {
 }
 object CallbackArgs {
   
-  @scala.inline
-  def apply(active: Boolean, datum: js.Any, horizontal: Boolean, x: Double, y: Double): CallbackArgs = {
+  inline def apply(active: Boolean, datum: js.Any, horizontal: Boolean, x: Double, y: Double): CallbackArgs = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackArgs]
   }
   
-  @scala.inline
-  implicit class CallbackArgsMutableBuilder[Self <: CallbackArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackArgs](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatum(value: js.Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: js.Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: `1`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: `1`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

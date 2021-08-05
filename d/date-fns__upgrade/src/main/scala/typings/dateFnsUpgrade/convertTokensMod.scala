@@ -10,6 +10,5 @@ object convertTokensMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertTokens(format: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTokens")(format.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertTokens(format: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTokens")(format.asInstanceOf[js.Any]).asInstanceOf[String]
 }

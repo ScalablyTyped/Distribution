@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(markup: js.Any): DocumentFragment = ^.asInstanceOf[js.Dynamic].apply(markup.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
-  @scala.inline
-  def apply(markup: js.Any, `type`: String): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(markup.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  inline def apply(markup: js.Any): DocumentFragment = ^.asInstanceOf[js.Dynamic].apply(markup.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
+  inline def apply(markup: js.Any, `type`: String): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(markup.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
   
   @JSImport("@ungap/create-content", JSImport.Namespace)
   @js.native

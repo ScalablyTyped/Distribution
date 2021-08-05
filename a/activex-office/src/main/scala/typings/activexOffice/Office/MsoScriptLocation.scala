@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoScriptLocation extends StObject
 object MsoScriptLocation {
   
-  @scala.inline
-  def msoScriptLocationInBody: `2` = 2.asInstanceOf[`2`]
+  inline def msoScriptLocationInBody: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoScriptLocationInHead: `1` = 1.asInstanceOf[`1`]
+  inline def msoScriptLocationInHead: `1` = 1.asInstanceOf[`1`]
 }

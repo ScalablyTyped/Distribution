@@ -11,6 +11,5 @@ object shouldUpdateNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(nodeName: String): js.Function2[/* toState */ State, /* fromSate */ State, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* toState */ State, /* fromSate */ State, Boolean]]
+  inline def default(nodeName: String): js.Function2[/* toState */ State, /* fromSate */ State, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodeName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* toState */ State, /* fromSate */ State, Boolean]]
 }

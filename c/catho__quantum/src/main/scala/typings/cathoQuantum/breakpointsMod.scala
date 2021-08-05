@@ -26,29 +26,22 @@ object breakpointsMod extends Shortcut {
   }
   object Breakpoints {
     
-    @scala.inline
-    def apply(large: Columns, medium: Columns, small: Columns, xlarge: Columns, xsmall: Columns): Breakpoints = {
+    inline def apply(large: Columns, medium: Columns, small: Columns, xlarge: Columns, xsmall: Columns): Breakpoints = {
       val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], xlarge = xlarge.asInstanceOf[js.Any], xsmall = xsmall.asInstanceOf[js.Any])
       __obj.asInstanceOf[Breakpoints]
     }
     
-    @scala.inline
-    implicit class BreakpointsMutableBuilder[Self <: Breakpoints] (val x: Self) extends AnyVal {
+    extension [Self <: Breakpoints](x: Self) {
       
-      @scala.inline
-      def setLarge(value: Columns): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Columns): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedium(value: Columns): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: Columns): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmall(value: Columns): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Columns): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlarge(value: Columns): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+      inline def setXlarge(value: Columns): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsmall(value: Columns): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+      inline def setXsmall(value: Columns): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
     }
   }
   

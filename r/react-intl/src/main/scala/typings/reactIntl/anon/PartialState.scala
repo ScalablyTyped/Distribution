@@ -18,31 +18,23 @@ trait PartialState extends StObject {
 }
 object PartialState {
   
-  @scala.inline
-  def apply(): PartialState = {
+  inline def apply(): PartialState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialState]
   }
   
-  @scala.inline
-  implicit class PartialStateMutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
+  extension [Self <: PartialState](x: Self) {
     
-    @scala.inline
-    def setCache(value: IntlCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: IntlCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
+    inline def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntlUndefined: Self = StObject.set(x, "intl", js.undefined)
+    inline def setIntlUndefined: Self = StObject.set(x, "intl", js.undefined)
     
-    @scala.inline
-    def setPrevConfig(value: OptionalIntlConfig): Self = StObject.set(x, "prevConfig", value.asInstanceOf[js.Any])
+    inline def setPrevConfig(value: OptionalIntlConfig): Self = StObject.set(x, "prevConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevConfigUndefined: Self = StObject.set(x, "prevConfig", js.undefined)
+    inline def setPrevConfigUndefined: Self = StObject.set(x, "prevConfig", js.undefined)
   }
 }

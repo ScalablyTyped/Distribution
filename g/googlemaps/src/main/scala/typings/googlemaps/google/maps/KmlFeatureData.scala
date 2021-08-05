@@ -20,8 +20,7 @@ trait KmlFeatureData extends StObject {
 }
 object KmlFeatureData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: KmlAuthor,
     description: String,
     id: String,
@@ -33,25 +32,18 @@ object KmlFeatureData {
     __obj.asInstanceOf[KmlFeatureData]
   }
   
-  @scala.inline
-  implicit class KmlFeatureDataMutableBuilder[Self <: KmlFeatureData] (val x: Self) extends AnyVal {
+  extension [Self <: KmlFeatureData](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: KmlAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: KmlAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoWindowHtml(value: String): Self = StObject.set(x, "infoWindowHtml", value.asInstanceOf[js.Any])
+    inline def setInfoWindowHtml(value: String): Self = StObject.set(x, "infoWindowHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
   }
 }

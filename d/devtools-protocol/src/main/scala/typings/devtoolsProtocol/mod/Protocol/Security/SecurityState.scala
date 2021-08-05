@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecurityState extends StObject
 object SecurityState {
   
-  @scala.inline
-  def info: typings.devtoolsProtocol.devtoolsProtocolStrings.info = "info".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.info]
+  inline def info: typings.devtoolsProtocol.devtoolsProtocolStrings.info = "info".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.info]
   
-  @scala.inline
-  def insecure: typings.devtoolsProtocol.devtoolsProtocolStrings.insecure = "insecure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.insecure]
+  inline def insecure: typings.devtoolsProtocol.devtoolsProtocolStrings.insecure = "insecure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.insecure]
   
-  @scala.inline
-  def `insecure-broken`: typings.devtoolsProtocol.devtoolsProtocolStrings.`insecure-broken` = "insecure-broken".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`insecure-broken`]
+  inline def `insecure-broken`: typings.devtoolsProtocol.devtoolsProtocolStrings.`insecure-broken` = "insecure-broken".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`insecure-broken`]
   
-  @scala.inline
-  def neutral: typings.devtoolsProtocol.devtoolsProtocolStrings.neutral = "neutral".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.neutral]
+  inline def neutral: typings.devtoolsProtocol.devtoolsProtocolStrings.neutral = "neutral".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.neutral]
   
-  @scala.inline
-  def secure: secure_ = "secure".asInstanceOf[secure_]
+  inline def secure: secure_ = "secure".asInstanceOf[secure_]
   
-  @scala.inline
-  def unknown: typings.devtoolsProtocol.devtoolsProtocolStrings.unknown = "unknown".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unknown]
+  inline def unknown: typings.devtoolsProtocol.devtoolsProtocolStrings.unknown = "unknown".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unknown]
 }

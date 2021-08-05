@@ -16,40 +16,29 @@ trait Journeys extends StObject {
 }
 object Journeys {
   
-  @scala.inline
-  def apply(): Journeys = {
+  inline def apply(): Journeys = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Journeys]
   }
   
-  @scala.inline
-  implicit class JourneysMutableBuilder[Self <: Journeys] (val x: Self) extends AnyVal {
+  extension [Self <: Journeys](x: Self) {
     
-    @scala.inline
-    def setEarlierRef(value: String): Self = StObject.set(x, "earlierRef", value.asInstanceOf[js.Any])
+    inline def setEarlierRef(value: String): Self = StObject.set(x, "earlierRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarlierRefUndefined: Self = StObject.set(x, "earlierRef", js.undefined)
+    inline def setEarlierRefUndefined: Self = StObject.set(x, "earlierRef", js.undefined)
     
-    @scala.inline
-    def setJourneys(value: js.Array[Journey]): Self = StObject.set(x, "journeys", value.asInstanceOf[js.Any])
+    inline def setJourneys(value: js.Array[Journey]): Self = StObject.set(x, "journeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJourneysUndefined: Self = StObject.set(x, "journeys", js.undefined)
+    inline def setJourneysUndefined: Self = StObject.set(x, "journeys", js.undefined)
     
-    @scala.inline
-    def setJourneysVarargs(value: Journey*): Self = StObject.set(x, "journeys", js.Array(value :_*))
+    inline def setJourneysVarargs(value: Journey*): Self = StObject.set(x, "journeys", js.Array(value :_*))
     
-    @scala.inline
-    def setLaterRef(value: String): Self = StObject.set(x, "laterRef", value.asInstanceOf[js.Any])
+    inline def setLaterRef(value: String): Self = StObject.set(x, "laterRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaterRefUndefined: Self = StObject.set(x, "laterRef", js.undefined)
+    inline def setLaterRefUndefined: Self = StObject.set(x, "laterRef", js.undefined)
     
-    @scala.inline
-    def setRealtimeDataFrom(value: Double): Self = StObject.set(x, "realtimeDataFrom", value.asInstanceOf[js.Any])
+    inline def setRealtimeDataFrom(value: Double): Self = StObject.set(x, "realtimeDataFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimeDataFromUndefined: Self = StObject.set(x, "realtimeDataFrom", js.undefined)
+    inline def setRealtimeDataFromUndefined: Self = StObject.set(x, "realtimeDataFrom", js.undefined)
   }
 }

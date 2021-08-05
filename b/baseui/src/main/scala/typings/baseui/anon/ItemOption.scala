@@ -10,16 +10,13 @@ trait ItemOption extends StObject {
 }
 object ItemOption {
   
-  @scala.inline
-  def apply(item: typings.baseui.selectMod.Option): ItemOption = {
+  inline def apply(item: typings.baseui.selectMod.Option): ItemOption = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemOption]
   }
   
-  @scala.inline
-  implicit class ItemOptionMutableBuilder[Self <: ItemOption] (val x: Self) extends AnyVal {
+  extension [Self <: ItemOption](x: Self) {
     
-    @scala.inline
-    def setItem(value: typings.baseui.selectMod.Option): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: typings.baseui.selectMod.Option): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait ParametersReposUpdateWebhookEndpoint extends StObject {
 }
 object ParametersReposUpdateWebhookEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposUpdateWebhookEndpoint,
     request: ReposUpdateWebhookRequestOptions,
     response: OctokitResponse[ReposUpdateWebhookResponseData]
@@ -28,16 +27,12 @@ object ParametersReposUpdateWebhookEndpoint {
     __obj.asInstanceOf[ParametersReposUpdateWebhookEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposUpdateWebhookEndpointMutableBuilder[Self <: ParametersReposUpdateWebhookEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposUpdateWebhookEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposUpdateWebhookEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposUpdateWebhookEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposUpdateWebhookRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposUpdateWebhookRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposUpdateWebhookResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposUpdateWebhookResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

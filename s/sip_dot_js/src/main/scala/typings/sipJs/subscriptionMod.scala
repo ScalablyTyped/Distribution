@@ -21,28 +21,28 @@ object subscriptionMod {
       * @param userAgent - User agent. See {@link UserAgent} for details.
       * @internal
       */
-    protected def this(userAgent: UserAgent) = this()
-    protected def this(userAgent: UserAgent, options: SubscriptionOptions) = this()
+    /* protected */ def this(userAgent: UserAgent) = this()
+    /* protected */ def this(userAgent: UserAgent, options: SubscriptionOptions) = this()
     
     /**
       * If the subscription state is SubscriptionState.Subscribed, the associated subscription dialog. Otherwise undefined.
       * @internal
       */
-    var _dialog: js.UndefOr[typings.sipJs.subscriptionSubscriptionMod.Subscription] = js.native
+    /* protected */ var _dialog: js.UndefOr[typings.sipJs.subscriptionSubscriptionMod.Subscription] = js.native
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _logger: js.Any = js.native
+    /* private */ var _logger: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: js.Any = js.native
     
     /**
       * Our user agent.
       * @internal
       */
-    var _userAgent: UserAgent = js.native
+    /* protected */ var _userAgent: UserAgent = js.native
     
     /**
       * Property reserved for use by instance owner.

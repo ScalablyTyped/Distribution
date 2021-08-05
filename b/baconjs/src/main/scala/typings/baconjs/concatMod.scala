@@ -13,11 +13,8 @@ object concatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def concatAll[V](streams_ : (default[V] | js.Array[default[V]])*): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")(streams_.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def concatAll[V](streams_ : (default[V] | js.Array[default[V]])*): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")(streams_.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
   
-  @scala.inline
-  def concatE[V, V2](left: EventStream[V], right: default[V2]): EventStream[V | V2] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatE")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[EventStream[V | V2]]
-  @scala.inline
-  def concatE[V, V2](left: EventStream[V], right: default[V2], options: EventStreamOptions): EventStream[V | V2] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatE")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EventStream[V | V2]]
+  inline def concatE[V, V2](left: EventStream[V], right: default[V2]): EventStream[V | V2] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatE")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[EventStream[V | V2]]
+  inline def concatE[V, V2](left: EventStream[V], right: default[V2], options: EventStreamOptions): EventStream[V | V2] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatE")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EventStream[V | V2]]
 }

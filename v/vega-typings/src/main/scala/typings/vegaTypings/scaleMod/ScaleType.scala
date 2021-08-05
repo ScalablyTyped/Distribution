@@ -25,51 +25,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScaleType extends StObject
 object ScaleType {
   
-  @scala.inline
-  def band: typings.vegaTypings.vegaTypingsStrings.band = "band".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.band]
+  inline def band: typings.vegaTypings.vegaTypingsStrings.band = "band".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.band]
   
-  @scala.inline
-  def `bin-ordinal`: typings.vegaTypings.vegaTypingsStrings.`bin-ordinal` = "bin-ordinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`bin-ordinal`]
+  inline def `bin-ordinal`: typings.vegaTypings.vegaTypingsStrings.`bin-ordinal` = "bin-ordinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`bin-ordinal`]
   
-  @scala.inline
-  def identity: typings.vegaTypings.vegaTypingsStrings.identity = "identity".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.identity]
+  inline def identity: typings.vegaTypings.vegaTypingsStrings.identity = "identity".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.identity]
   
-  @scala.inline
-  def linear: typings.vegaTypings.vegaTypingsStrings.linear = "linear".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.linear]
+  inline def linear: typings.vegaTypings.vegaTypingsStrings.linear = "linear".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.linear]
   
-  @scala.inline
-  def log: typings.vegaTypings.vegaTypingsStrings.log = "log".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.log]
+  inline def log: typings.vegaTypings.vegaTypingsStrings.log = "log".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.log]
   
-  @scala.inline
-  def ordinal: typings.vegaTypings.vegaTypingsStrings.ordinal = "ordinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ordinal]
+  inline def ordinal: typings.vegaTypings.vegaTypingsStrings.ordinal = "ordinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ordinal]
   
-  @scala.inline
-  def point: typings.vegaTypings.vegaTypingsStrings.point = "point".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.point]
+  inline def point: typings.vegaTypings.vegaTypingsStrings.point = "point".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.point]
   
-  @scala.inline
-  def pow: typings.vegaTypings.vegaTypingsStrings.pow = "pow".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pow]
+  inline def pow: typings.vegaTypings.vegaTypingsStrings.pow = "pow".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pow]
   
-  @scala.inline
-  def quantile: typings.vegaTypings.vegaTypingsStrings.quantile = "quantile".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.quantile]
+  inline def quantile: typings.vegaTypings.vegaTypingsStrings.quantile = "quantile".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.quantile]
   
-  @scala.inline
-  def quantize: typings.vegaTypings.vegaTypingsStrings.quantize = "quantize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.quantize]
+  inline def quantize: typings.vegaTypings.vegaTypingsStrings.quantize = "quantize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.quantize]
   
-  @scala.inline
-  def sequential: typings.vegaTypings.vegaTypingsStrings.sequential = "sequential".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.sequential]
+  inline def sequential: typings.vegaTypings.vegaTypingsStrings.sequential = "sequential".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.sequential]
   
-  @scala.inline
-  def sqrt: typings.vegaTypings.vegaTypingsStrings.sqrt = "sqrt".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.sqrt]
+  inline def sqrt: typings.vegaTypings.vegaTypingsStrings.sqrt = "sqrt".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.sqrt]
   
-  @scala.inline
-  def symlog: typings.vegaTypings.vegaTypingsStrings.symlog = "symlog".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.symlog]
+  inline def symlog: typings.vegaTypings.vegaTypingsStrings.symlog = "symlog".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.symlog]
   
-  @scala.inline
-  def threshold: typings.vegaTypings.vegaTypingsStrings.threshold = "threshold".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.threshold]
+  inline def threshold: typings.vegaTypings.vegaTypingsStrings.threshold = "threshold".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.threshold]
   
-  @scala.inline
-  def time: typings.vegaTypings.vegaTypingsStrings.time = "time".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.time]
+  inline def time: typings.vegaTypings.vegaTypingsStrings.time = "time".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.time]
   
-  @scala.inline
-  def utc: typings.vegaTypings.vegaTypingsStrings.utc = "utc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.utc]
+  inline def utc: typings.vegaTypings.vegaTypingsStrings.utc = "utc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.utc]
 }

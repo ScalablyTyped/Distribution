@@ -36,8 +36,7 @@ object Data {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def convertToText(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToText")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def convertToText(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToText")(html.asInstanceOf[js.Any]).asInstanceOf[String]
     }
   }
   
@@ -95,11 +94,9 @@ object Data {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def parse(input: String): typings.winrt.Windows.Data.Json.JsonArray = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonArray]
+      inline def parse(input: String): typings.winrt.Windows.Data.Json.JsonArray = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonArray]
       
-      @scala.inline
-      def tryParse(input: String): ResultSucceeded = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ResultSucceeded]
+      inline def tryParse(input: String): ResultSucceeded = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ResultSucceeded]
     }
     
     @JSGlobal("Windows.Data.Json.JsonError")
@@ -114,8 +111,7 @@ object Data {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def getStatus(hresult: Double): JsonErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[JsonErrorStatus]
+      inline def getStatus(hresult: Double): JsonErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[JsonErrorStatus]
     }
     
     @JSGlobal("Windows.Data.Json.JsonErrorStatus")
@@ -215,11 +211,9 @@ object Data {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def parse(input: String): typings.winrt.Windows.Data.Json.JsonObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonObject]
+      inline def parse(input: String): typings.winrt.Windows.Data.Json.JsonObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonObject]
       
-      @scala.inline
-      def tryParse(input: String): Succeeded = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[Succeeded]
+      inline def tryParse(input: String): Succeeded = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[Succeeded]
     }
     
     @JSGlobal("Windows.Data.Json.JsonValue")
@@ -256,20 +250,15 @@ object Data {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def createBooleanValue(input: Boolean): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createBooleanValue")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
+      inline def createBooleanValue(input: Boolean): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createBooleanValue")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
       
-      @scala.inline
-      def createNumberValue(input: Double): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberValue")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
+      inline def createNumberValue(input: Double): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberValue")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
       
-      @scala.inline
-      def createStringValue(input: String): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringValue")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
+      inline def createStringValue(input: String): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringValue")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
       
-      @scala.inline
-      def parse(input: String): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
+      inline def parse(input: String): typings.winrt.Windows.Data.Json.JsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Data.Json.JsonValue]
       
-      @scala.inline
-      def tryParse(input: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[Result]
+      inline def tryParse(input: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[Result]
     }
     
     @JSGlobal("Windows.Data.Json.JsonValueType")
@@ -985,15 +974,11 @@ object Data {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def loadFromFileAsync(file: IStorageFile): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
-        @scala.inline
-        def loadFromFileAsync(file: IStorageFile, loadSettings: typings.winrt.Windows.Data.Xml.Dom.XmlLoadSettings): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
+        inline def loadFromFileAsync(file: IStorageFile): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
+        inline def loadFromFileAsync(file: IStorageFile, loadSettings: typings.winrt.Windows.Data.Xml.Dom.XmlLoadSettings): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
         
-        @scala.inline
-        def loadFromUriAsync(uri: Uri): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
-        @scala.inline
-        def loadFromUriAsync(uri: Uri, loadSettings: typings.winrt.Windows.Data.Xml.Dom.XmlLoadSettings): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
+        inline def loadFromUriAsync(uri: Uri): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
+        inline def loadFromUriAsync(uri: Uri, loadSettings: typings.winrt.Windows.Data.Xml.Dom.XmlLoadSettings): IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Data.Xml.Dom.XmlDocument]]
       }
       
       @JSGlobal("Windows.Data.Xml.Dom.XmlDocumentFragment")

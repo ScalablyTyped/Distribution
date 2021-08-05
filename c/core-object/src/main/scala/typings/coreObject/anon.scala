@@ -12,17 +12,14 @@ object anon {
   }
   object Super {
     
-    @scala.inline
-    def apply[Base](_super: typings.coreObject.utilsMod.Super[Base]): Super[Base] = {
+    inline def apply[Base](_super: typings.coreObject.utilsMod.Super[Base]): Super[Base] = {
       val __obj = js.Dynamic.literal(_super = _super.asInstanceOf[js.Any])
       __obj.asInstanceOf[Super[Base]]
     }
     
-    @scala.inline
-    implicit class SuperMutableBuilder[Self <: Super[?], Base] (val x: Self & Super[Base]) extends AnyVal {
+    extension [Self <: Super[?], Base](x: Self & Super[Base]) {
       
-      @scala.inline
-      def set_super(value: typings.coreObject.utilsMod.Super[Base]): Self = StObject.set(x, "_super", value.asInstanceOf[js.Any])
+      inline def set_super(value: typings.coreObject.utilsMod.Super[Base]): Self = StObject.set(x, "_super", value.asInstanceOf[js.Any])
     }
   }
 }

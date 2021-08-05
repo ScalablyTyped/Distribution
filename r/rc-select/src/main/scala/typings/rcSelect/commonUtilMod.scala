@@ -19,8 +19,7 @@ object commonUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getUUID(): Double | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUUID")().asInstanceOf[Double | String]
+  inline def getUUID(): Double | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUUID")().asInstanceOf[Double | String]
   
   @JSImport("rc-select/lib/utils/commonUtil", "isBrowserClient")
   @js.native
@@ -30,19 +29,14 @@ object commonUtilMod {
   @js.native
   val isClient: HTMLElement = js.native
   
-  @scala.inline
-  def removeLastEnabledValue[T /* <: `0` */, P /* <: RawValueType | js.Object */](measureValues: js.Array[T], values: js.Array[P]): RemovedValue[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastEnabledValue")(measureValues.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[RemovedValue[P]]
+  inline def removeLastEnabledValue[T /* <: `0` */, P /* <: RawValueType | js.Object */](measureValues: js.Array[T], values: js.Array[P]): RemovedValue[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLastEnabledValue")(measureValues.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[RemovedValue[P]]
   
-  @scala.inline
-  def toArray[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def toArray[T](value: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](value: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def toInnerValue(value: DefaultValueType, hasLabelInValueCombobox: Combobox): js.Array[RawValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("toInnerValue")(value.asInstanceOf[js.Any], hasLabelInValueCombobox.asInstanceOf[js.Any])).asInstanceOf[js.Array[RawValueType]]
+  inline def toInnerValue(value: DefaultValueType, hasLabelInValueCombobox: Combobox): js.Array[RawValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("toInnerValue")(value.asInstanceOf[js.Any], hasLabelInValueCombobox.asInstanceOf[js.Any])).asInstanceOf[js.Array[RawValueType]]
   
-  @scala.inline
-  def toOuterValues[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */](
+  inline def toOuterValues[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */](
     valueList: js.Array[RawValueType],
     hasOptionLabelPropLabelInValuePrevValueOptionsGetLabeledValue: GetLabeledValue[FOT]
   ): js.Array[LabelValueType | RawValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("toOuterValues")(valueList.asInstanceOf[js.Any], hasOptionLabelPropLabelInValuePrevValueOptionsGetLabeledValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[LabelValueType | RawValueType]]

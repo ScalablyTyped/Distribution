@@ -16,16 +16,13 @@ trait CookieSetDetails
 }
 object CookieSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | session_only): CookieSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | session_only): CookieSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieSetDetails]
   }
   
-  @scala.inline
-  implicit class CookieSetDetailsMutableBuilder[Self <: CookieSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CookieSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | session_only): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | session_only): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

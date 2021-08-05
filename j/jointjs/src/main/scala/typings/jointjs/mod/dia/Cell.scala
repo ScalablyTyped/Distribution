@@ -142,30 +142,21 @@ object Cell {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def define(`type`: String): Constructor[Cell] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Cell]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String): Constructor[Cell] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String, defaults: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
+  inline def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Cell]]
   
   trait Attributes
     extends StObject
        with GenericAttributes[Selectors]
   object Attributes {
     
-    @scala.inline
-    def apply(): Attributes = {
+    inline def apply(): Attributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes]
     }
@@ -195,20 +186,16 @@ object Cell {
   }
   object DisconnectableOptions {
     
-    @scala.inline
-    def apply(): DisconnectableOptions = {
+    inline def apply(): DisconnectableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisconnectableOptions]
     }
     
-    @scala.inline
-    implicit class DisconnectableOptionsMutableBuilder[Self <: DisconnectableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DisconnectableOptions](x: Self) {
       
-      @scala.inline
-      def setDisconnectLinks(value: Boolean): Self = StObject.set(x, "disconnectLinks", value.asInstanceOf[js.Any])
+      inline def setDisconnectLinks(value: Boolean): Self = StObject.set(x, "disconnectLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnectLinksUndefined: Self = StObject.set(x, "disconnectLinks", js.undefined)
+      inline def setDisconnectLinksUndefined: Self = StObject.set(x, "disconnectLinks", js.undefined)
     }
   }
   
@@ -220,20 +207,16 @@ object Cell {
   }
   object EmbeddableOptions {
     
-    @scala.inline
-    def apply(): EmbeddableOptions = {
+    inline def apply(): EmbeddableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmbeddableOptions]
     }
     
-    @scala.inline
-    implicit class EmbeddableOptionsMutableBuilder[Self <: EmbeddableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EmbeddableOptions](x: Self) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     }
   }
   
@@ -247,26 +230,20 @@ object Cell {
   }
   object GenericAttributes {
     
-    @scala.inline
-    def apply[T](): GenericAttributes[T] = {
+    inline def apply[T](): GenericAttributes[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenericAttributes[T]]
     }
     
-    @scala.inline
-    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[?], T] (val x: Self & GenericAttributes[T]) extends AnyVal {
+    extension [Self <: GenericAttributes[?], T](x: Self & GenericAttributes[T]) {
       
-      @scala.inline
-      def setAttrs(value: T): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: T): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     }
   }
   
@@ -288,38 +265,28 @@ object Cell {
   }
   object TransitionOptions {
     
-    @scala.inline
-    def apply(): TransitionOptions = {
+    inline def apply(): TransitionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionOptions]
     }
     
-    @scala.inline
-    implicit class TransitionOptionsMutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setTimingFunction(value: /* time */ Double => Double): Self = StObject.set(x, "timingFunction", js.Any.fromFunction1(value))
+      inline def setTimingFunction(value: /* time */ Double => Double): Self = StObject.set(x, "timingFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
+      inline def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
       
-      @scala.inline
-      def setValueFunction(value: (js.Any, js.Any) => js.Function1[/* time */ Double, js.Any]): Self = StObject.set(x, "valueFunction", js.Any.fromFunction2(value))
+      inline def setValueFunction(value: (js.Any, js.Any) => js.Function1[/* time */ Double, js.Any]): Self = StObject.set(x, "valueFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValueFunctionUndefined: Self = StObject.set(x, "valueFunction", js.undefined)
+      inline def setValueFunctionUndefined: Self = StObject.set(x, "valueFunction", js.undefined)
     }
   }
 }

@@ -28,37 +28,27 @@ trait GetDatabasesRequest extends StObject {
 }
 object GetDatabasesRequest {
   
-  @scala.inline
-  def apply(): GetDatabasesRequest = {
+  inline def apply(): GetDatabasesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDatabasesRequest]
   }
   
-  @scala.inline
-  implicit class GetDatabasesRequestMutableBuilder[Self <: GetDatabasesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDatabasesRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareType(value: ResourceShareType): Self = StObject.set(x, "ResourceShareType", value.asInstanceOf[js.Any])
+    inline def setResourceShareType(value: ResourceShareType): Self = StObject.set(x, "ResourceShareType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareTypeUndefined: Self = StObject.set(x, "ResourceShareType", js.undefined)
+    inline def setResourceShareTypeUndefined: Self = StObject.set(x, "ResourceShareType", js.undefined)
   }
 }

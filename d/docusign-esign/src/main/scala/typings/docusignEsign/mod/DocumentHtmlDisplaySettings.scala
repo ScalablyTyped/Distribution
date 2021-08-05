@@ -87,85 +87,59 @@ trait DocumentHtmlDisplaySettings extends StObject {
 }
 object DocumentHtmlDisplaySettings {
   
-  @scala.inline
-  def apply(): DocumentHtmlDisplaySettings = {
+  inline def apply(): DocumentHtmlDisplaySettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentHtmlDisplaySettings]
   }
   
-  @scala.inline
-  implicit class DocumentHtmlDisplaySettingsMutableBuilder[Self <: DocumentHtmlDisplaySettings] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHtmlDisplaySettings](x: Self) {
     
-    @scala.inline
-    def setCellStyle(value: String): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
+    inline def setCellStyle(value: String): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellStyleUndefined: Self = StObject.set(x, "cellStyle", js.undefined)
+    inline def setCellStyleUndefined: Self = StObject.set(x, "cellStyle", js.undefined)
     
-    @scala.inline
-    def setCollapsibleSettings(value: DocumentHtmlCollapsibleDisplaySettings): Self = StObject.set(x, "collapsibleSettings", value.asInstanceOf[js.Any])
+    inline def setCollapsibleSettings(value: DocumentHtmlCollapsibleDisplaySettings): Self = StObject.set(x, "collapsibleSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleSettingsUndefined: Self = StObject.set(x, "collapsibleSettings", js.undefined)
+    inline def setCollapsibleSettingsUndefined: Self = StObject.set(x, "collapsibleSettings", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
+    inline def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLabelUndefined: Self = StObject.set(x, "displayLabel", js.undefined)
+    inline def setDisplayLabelUndefined: Self = StObject.set(x, "displayLabel", js.undefined)
     
-    @scala.inline
-    def setDisplayOrder(value: Double): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
+    inline def setDisplayOrder(value: Double): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOrderUndefined: Self = StObject.set(x, "displayOrder", js.undefined)
+    inline def setDisplayOrderUndefined: Self = StObject.set(x, "displayOrder", js.undefined)
     
-    @scala.inline
-    def setDisplayPageNumber(value: Double): Self = StObject.set(x, "displayPageNumber", value.asInstanceOf[js.Any])
+    inline def setDisplayPageNumber(value: Double): Self = StObject.set(x, "displayPageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPageNumberUndefined: Self = StObject.set(x, "displayPageNumber", js.undefined)
+    inline def setDisplayPageNumberUndefined: Self = StObject.set(x, "displayPageNumber", js.undefined)
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setHideLabelWhenOpened(value: Boolean): Self = StObject.set(x, "hideLabelWhenOpened", value.asInstanceOf[js.Any])
+    inline def setHideLabelWhenOpened(value: Boolean): Self = StObject.set(x, "hideLabelWhenOpened", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideLabelWhenOpenedUndefined: Self = StObject.set(x, "hideLabelWhenOpened", js.undefined)
+    inline def setHideLabelWhenOpenedUndefined: Self = StObject.set(x, "hideLabelWhenOpened", js.undefined)
     
-    @scala.inline
-    def setInlineOuterStyle(value: String): Self = StObject.set(x, "inlineOuterStyle", value.asInstanceOf[js.Any])
+    inline def setInlineOuterStyle(value: String): Self = StObject.set(x, "inlineOuterStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineOuterStyleUndefined: Self = StObject.set(x, "inlineOuterStyle", js.undefined)
+    inline def setInlineOuterStyleUndefined: Self = StObject.set(x, "inlineOuterStyle", js.undefined)
     
-    @scala.inline
-    def setLabelWhenOpened(value: String): Self = StObject.set(x, "labelWhenOpened", value.asInstanceOf[js.Any])
+    inline def setLabelWhenOpened(value: String): Self = StObject.set(x, "labelWhenOpened", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelWhenOpenedUndefined: Self = StObject.set(x, "labelWhenOpened", js.undefined)
+    inline def setLabelWhenOpenedUndefined: Self = StObject.set(x, "labelWhenOpened", js.undefined)
     
-    @scala.inline
-    def setPreLabel(value: String): Self = StObject.set(x, "preLabel", value.asInstanceOf[js.Any])
+    inline def setPreLabel(value: String): Self = StObject.set(x, "preLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreLabelUndefined: Self = StObject.set(x, "preLabel", js.undefined)
+    inline def setPreLabelUndefined: Self = StObject.set(x, "preLabel", js.undefined)
     
-    @scala.inline
-    def setScrollToTopWhenOpened(value: Boolean): Self = StObject.set(x, "scrollToTopWhenOpened", value.asInstanceOf[js.Any])
+    inline def setScrollToTopWhenOpened(value: Boolean): Self = StObject.set(x, "scrollToTopWhenOpened", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToTopWhenOpenedUndefined: Self = StObject.set(x, "scrollToTopWhenOpened", js.undefined)
+    inline def setScrollToTopWhenOpenedUndefined: Self = StObject.set(x, "scrollToTopWhenOpened", js.undefined)
     
-    @scala.inline
-    def setTableStyle(value: String): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
+    inline def setTableStyle(value: String): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
+    inline def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
   }
 }

@@ -18,37 +18,27 @@ trait HexbinSeriesProps
 }
 object HexbinSeriesProps {
   
-  @scala.inline
-  def apply(): HexbinSeriesProps = {
+  inline def apply(): HexbinSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HexbinSeriesProps]
   }
   
-  @scala.inline
-  implicit class HexbinSeriesPropsMutableBuilder[Self <: HexbinSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: HexbinSeriesProps](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSizeHexagonsWithCount(value: Boolean): Self = StObject.set(x, "sizeHexagonsWithCount", value.asInstanceOf[js.Any])
+    inline def setSizeHexagonsWithCount(value: Boolean): Self = StObject.set(x, "sizeHexagonsWithCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeHexagonsWithCountUndefined: Self = StObject.set(x, "sizeHexagonsWithCount", js.undefined)
+    inline def setSizeHexagonsWithCountUndefined: Self = StObject.set(x, "sizeHexagonsWithCount", js.undefined)
     
-    @scala.inline
-    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+    inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+    inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
     
-    @scala.inline
-    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
+    inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

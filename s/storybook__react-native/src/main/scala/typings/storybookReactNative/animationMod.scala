@@ -14,15 +14,11 @@ object animationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAddonPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAddonPanelPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform]]
+  inline def getAddonPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAddonPanelPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform]]
   
-  @scala.inline
-  def getNavigatorPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorPanelPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform]]
+  inline def getNavigatorPanelPosition(animatedValue: Value, previewWidth: Double): js.Array[Transform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorPanelPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform]]
   
-  @scala.inline
-  def getPreviewPosition(animatedValue: Value, previewWidth: Double, previewHeight: Double, slideBetweenAnimation: Boolean): TransformArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviewPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any], previewHeight.asInstanceOf[js.Any], slideBetweenAnimation.asInstanceOf[js.Any])).asInstanceOf[TransformArray]
+  inline def getPreviewPosition(animatedValue: Value, previewWidth: Double, previewHeight: Double, slideBetweenAnimation: Boolean): TransformArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviewPosition")(animatedValue.asInstanceOf[js.Any], previewWidth.asInstanceOf[js.Any], previewHeight.asInstanceOf[js.Any], slideBetweenAnimation.asInstanceOf[js.Any])).asInstanceOf[TransformArray]
   
-  @scala.inline
-  def getPreviewScale(animatedValue: Value, slideBetweenAnimation: Boolean): `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviewScale")(animatedValue.asInstanceOf[js.Any], slideBetweenAnimation.asInstanceOf[js.Any])).asInstanceOf[`0`]
+  inline def getPreviewScale(animatedValue: Value, slideBetweenAnimation: Boolean): `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviewScale")(animatedValue.asInstanceOf[js.Any], slideBetweenAnimation.asInstanceOf[js.Any])).asInstanceOf[`0`]
 }

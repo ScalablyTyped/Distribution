@@ -9,6 +9,5 @@ object global {
   @JSGlobal("qrcode")
   @js.native
   def qrcode: QRCodeFactory = js.native
-  @scala.inline
-  def qrcode_=(x: QRCodeFactory): Unit = js.Dynamic.global.updateDynamic("qrcode")(x.asInstanceOf[js.Any])
+  inline def qrcode_=(x: QRCodeFactory): Unit = js.Dynamic.global.updateDynamic("qrcode")(x.asInstanceOf[js.Any])
 }

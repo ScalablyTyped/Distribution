@@ -22,8 +22,7 @@ trait XControlNotificationListener
 }
 object XControlNotificationListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     controlEvent: ControlEvent => Unit,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XControlNotificationListener {
     __obj.asInstanceOf[XControlNotificationListener]
   }
   
-  @scala.inline
-  implicit class XControlNotificationListenerMutableBuilder[Self <: XControlNotificationListener] (val x: Self) extends AnyVal {
+  extension [Self <: XControlNotificationListener](x: Self) {
     
-    @scala.inline
-    def setControlEvent(value: ControlEvent => Unit): Self = StObject.set(x, "controlEvent", js.Any.fromFunction1(value))
+    inline def setControlEvent(value: ControlEvent => Unit): Self = StObject.set(x, "controlEvent", js.Any.fromFunction1(value))
   }
 }

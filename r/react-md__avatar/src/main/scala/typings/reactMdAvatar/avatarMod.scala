@@ -65,38 +65,28 @@ object avatarMod {
   }
   object AvatarProps {
     
-    @scala.inline
-    def apply(): AvatarProps = {
+    inline def apply(): AvatarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AvatarProps]
     }
     
-    @scala.inline
-    implicit class AvatarPropsMutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarProps](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setImgProps(value: PropsWithRef[ImgAttributes, HTMLImageElement]): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
+      inline def setImgProps(value: PropsWithRef[ImgAttributes, HTMLImageElement]): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
+      inline def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
       
-      @scala.inline
-      def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   

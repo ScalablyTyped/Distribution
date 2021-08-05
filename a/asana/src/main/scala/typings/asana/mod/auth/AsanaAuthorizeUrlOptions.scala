@@ -12,25 +12,19 @@ trait AsanaAuthorizeUrlOptions extends StObject {
 }
 object AsanaAuthorizeUrlOptions {
   
-  @scala.inline
-  def apply(): AsanaAuthorizeUrlOptions = {
+  inline def apply(): AsanaAuthorizeUrlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsanaAuthorizeUrlOptions]
   }
   
-  @scala.inline
-  implicit class AsanaAuthorizeUrlOptionsMutableBuilder[Self <: AsanaAuthorizeUrlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AsanaAuthorizeUrlOptions](x: Self) {
     
-    @scala.inline
-    def setAsanaBaseUrl(value: String): Self = StObject.set(x, "asanaBaseUrl", value.asInstanceOf[js.Any])
+    inline def setAsanaBaseUrl(value: String): Self = StObject.set(x, "asanaBaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsanaBaseUrlUndefined: Self = StObject.set(x, "asanaBaseUrl", js.undefined)
+    inline def setAsanaBaseUrlUndefined: Self = StObject.set(x, "asanaBaseUrl", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
   }
 }

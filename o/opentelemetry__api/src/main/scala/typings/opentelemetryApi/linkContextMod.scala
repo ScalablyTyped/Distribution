@@ -15,20 +15,16 @@ object linkContextMod {
   }
   object LinkContext {
     
-    @scala.inline
-    def apply(spanId: String, traceId: String): LinkContext = {
+    inline def apply(spanId: String, traceId: String): LinkContext = {
       val __obj = js.Dynamic.literal(spanId = spanId.asInstanceOf[js.Any], traceId = traceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkContext]
     }
     
-    @scala.inline
-    implicit class LinkContextMutableBuilder[Self <: LinkContext] (val x: Self) extends AnyVal {
+    extension [Self <: LinkContext](x: Self) {
       
-      @scala.inline
-      def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+      inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+      inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
     }
   }
 }

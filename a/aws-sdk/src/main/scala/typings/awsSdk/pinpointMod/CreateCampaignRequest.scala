@@ -15,19 +15,15 @@ trait CreateCampaignRequest extends StObject {
 }
 object CreateCampaignRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, WriteCampaignRequest: WriteCampaignRequest): CreateCampaignRequest = {
+  inline def apply(ApplicationId: string, WriteCampaignRequest: WriteCampaignRequest): CreateCampaignRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteCampaignRequest = WriteCampaignRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCampaignRequest]
   }
   
-  @scala.inline
-  implicit class CreateCampaignRequestMutableBuilder[Self <: CreateCampaignRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCampaignRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteCampaignRequest(value: WriteCampaignRequest): Self = StObject.set(x, "WriteCampaignRequest", value.asInstanceOf[js.Any])
+    inline def setWriteCampaignRequest(value: WriteCampaignRequest): Self = StObject.set(x, "WriteCampaignRequest", value.asInstanceOf[js.Any])
   }
 }

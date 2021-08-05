@@ -11,16 +11,13 @@ trait TypeofonReceive extends StObject {
 }
 object TypeofonReceive {
   
-  @scala.inline
-  def apply(addListener: js.Function1[/* info */ OnReceiveInfo, Unit] => Unit): TypeofonReceive = {
+  inline def apply(addListener: js.Function1[/* info */ OnReceiveInfo, Unit] => Unit): TypeofonReceive = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener))
     __obj.asInstanceOf[TypeofonReceive]
   }
   
-  @scala.inline
-  implicit class TypeofonReceiveMutableBuilder[Self <: TypeofonReceive] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofonReceive](x: Self) {
     
-    @scala.inline
-    def setAddListener(value: js.Function1[/* info */ OnReceiveInfo, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+    inline def setAddListener(value: js.Function1[/* info */ OnReceiveInfo, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
   }
 }

@@ -27,23 +27,18 @@ trait HPAScalingPolicy extends StObject {
 }
 object HPAScalingPolicy {
   
-  @scala.inline
-  def apply(periodSeconds: Input[Double], `type`: Input[String], value: Input[Double]): HPAScalingPolicy = {
+  inline def apply(periodSeconds: Input[Double], `type`: Input[String], value: Input[Double]): HPAScalingPolicy = {
     val __obj = js.Dynamic.literal(periodSeconds = periodSeconds.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HPAScalingPolicy]
   }
   
-  @scala.inline
-  implicit class HPAScalingPolicyMutableBuilder[Self <: HPAScalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: HPAScalingPolicy](x: Self) {
     
-    @scala.inline
-    def setPeriodSeconds(value: Input[Double]): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
+    inline def setPeriodSeconds(value: Input[Double]): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Input[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

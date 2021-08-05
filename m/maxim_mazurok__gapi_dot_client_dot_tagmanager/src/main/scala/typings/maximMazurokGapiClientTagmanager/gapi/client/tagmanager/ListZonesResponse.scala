@@ -14,28 +14,21 @@ trait ListZonesResponse extends StObject {
 }
 object ListZonesResponse {
   
-  @scala.inline
-  def apply(): ListZonesResponse = {
+  inline def apply(): ListZonesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListZonesResponse]
   }
   
-  @scala.inline
-  implicit class ListZonesResponseMutableBuilder[Self <: ListZonesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListZonesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     
-    @scala.inline
-    def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+    inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
   }
 }

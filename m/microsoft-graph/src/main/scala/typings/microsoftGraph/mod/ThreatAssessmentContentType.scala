@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreatAssessmentContentType extends StObject
 object ThreatAssessmentContentType {
   
-  @scala.inline
-  def file: typings.microsoftGraph.microsoftGraphStrings.file = "file".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.file]
+  inline def file: typings.microsoftGraph.microsoftGraphStrings.file = "file".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.file]
   
-  @scala.inline
-  def mail: typings.microsoftGraph.microsoftGraphStrings.mail = "mail".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mail]
+  inline def mail: typings.microsoftGraph.microsoftGraphStrings.mail = "mail".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mail]
   
-  @scala.inline
-  def url: typings.microsoftGraph.microsoftGraphStrings.url = "url".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.url]
+  inline def url: typings.microsoftGraph.microsoftGraphStrings.url = "url".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.url]
 }

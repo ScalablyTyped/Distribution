@@ -15,19 +15,15 @@ trait StartRecordAudioOptions
 }
 object StartRecordAudioOptions {
   
-  @scala.inline
-  def apply(): StartRecordAudioOptions = {
+  inline def apply(): StartRecordAudioOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartRecordAudioOptions]
   }
   
-  @scala.inline
-  implicit class StartRecordAudioOptionsMutableBuilder[Self <: StartRecordAudioOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartRecordAudioOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ TempFileResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ TempFileResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

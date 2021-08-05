@@ -21,43 +21,31 @@ trait SortableChangeEvent
 }
 object SortableChangeEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Sortable): SortableChangeEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Sortable): SortableChangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableChangeEvent]
   }
   
-  @scala.inline
-  implicit class SortableChangeEventMutableBuilder[Self <: SortableChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SortableChangeEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setDraggableEvent(value: js.Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
+    inline def setDraggableEvent(value: js.Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableEventUndefined: Self = StObject.set(x, "draggableEvent", js.undefined)
+    inline def setDraggableEventUndefined: Self = StObject.set(x, "draggableEvent", js.undefined)
     
-    @scala.inline
-    def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
+    inline def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
   }
 }

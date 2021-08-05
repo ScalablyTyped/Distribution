@@ -20,10 +20,8 @@ object mod {
     * @param string - string from which to strip comments
     * @param [options] - passed to [extract-comments][extract-comments]
     */
-  @scala.inline
-  def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("strip-comments", JSImport.Namespace)
   @js.native
@@ -41,10 +39,8 @@ object mod {
     * @param `input` string from which to strip comments
     * @param  [`options`] pass `opts.keepProtected: true` to keep ignored comments (e.g. `/ *!`)
     */
-  @scala.inline
-  def block(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("block")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def block(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("block")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def block(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("block")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def block(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("block")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Strip the first comment from the given `input`. Or, if `opts.keepProtected` is true,
@@ -58,10 +54,8 @@ object mod {
     * @param  `input` string from which to strip comments
     * @param [`options`] pass `opts.keepProtected: true` to keep comments with `!`
     */
-  @scala.inline
-  def first(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def first(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def first(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def first(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Strip only line comments.
@@ -74,10 +68,8 @@ object mod {
     * @param  `input` string from which to strip comments
     * @param  [`options`] pass `opts.keepProtected: true` to keep ignored comments (e.g. `//!`)
     */
-  @scala.inline
-  def line(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def line(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def line(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def line(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("strip-comments", "parse")
   @js.native
@@ -114,44 +106,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setKeepProtected(value: Boolean): Self = StObject.set(x, "keepProtected", value.asInstanceOf[js.Any])
+      inline def setKeepProtected(value: Boolean): Self = StObject.set(x, "keepProtected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepProtectedUndefined: Self = StObject.set(x, "keepProtected", js.undefined)
+      inline def setKeepProtectedUndefined: Self = StObject.set(x, "keepProtected", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLine(value: Boolean): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Boolean): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
+      inline def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
+      inline def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
     }
   }
 }

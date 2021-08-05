@@ -87,8 +87,7 @@ trait ASPxClientTabControlBase
 }
 object ASPxClientTabControlBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveTabChanged: ASPxClientEvent[ASPxClientTabControlTabEventHandler[ASPxClientTabControlBase]],
     ActiveTabChanging: ASPxClientEvent[ASPxClientTabControlTabCancelEventHandler[ASPxClientTabControlBase]],
     AdjustControl: () => Unit,
@@ -123,49 +122,34 @@ object ASPxClientTabControlBase {
     __obj.asInstanceOf[ASPxClientTabControlBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientTabControlBaseMutableBuilder[Self <: ASPxClientTabControlBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTabControlBase](x: Self) {
     
-    @scala.inline
-    def setActiveTabChanged(value: ASPxClientEvent[ASPxClientTabControlTabEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "ActiveTabChanged", value.asInstanceOf[js.Any])
+    inline def setActiveTabChanged(value: ASPxClientEvent[ASPxClientTabControlTabEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "ActiveTabChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTabChanging(value: ASPxClientEvent[ASPxClientTabControlTabCancelEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "ActiveTabChanging", value.asInstanceOf[js.Any])
+    inline def setActiveTabChanging(value: ASPxClientEvent[ASPxClientTabControlTabCancelEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "ActiveTabChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustSize(value: () => Unit): Self = StObject.set(x, "AdjustSize", js.Any.fromFunction0(value))
+    inline def setAdjustSize(value: () => Unit): Self = StObject.set(x, "AdjustSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveTab(value: () => ASPxClientTab): Self = StObject.set(x, "GetActiveTab", js.Any.fromFunction0(value))
+    inline def setGetActiveTab(value: () => ASPxClientTab): Self = StObject.set(x, "GetActiveTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveTabIndex(value: () => Double): Self = StObject.set(x, "GetActiveTabIndex", js.Any.fromFunction0(value))
+    inline def setGetActiveTabIndex(value: () => Double): Self = StObject.set(x, "GetActiveTabIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTab(value: Double => ASPxClientTab): Self = StObject.set(x, "GetTab", js.Any.fromFunction1(value))
+    inline def setGetTab(value: Double => ASPxClientTab): Self = StObject.set(x, "GetTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTabByName(value: String => ASPxClientTab): Self = StObject.set(x, "GetTabByName", js.Any.fromFunction1(value))
+    inline def setGetTabByName(value: String => ASPxClientTab): Self = StObject.set(x, "GetTabByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTabCount(value: () => Double): Self = StObject.set(x, "GetTabCount", js.Any.fromFunction0(value))
+    inline def setGetTabCount(value: () => Double): Self = StObject.set(x, "GetTabCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActiveTab(value: ASPxClientTab => Unit): Self = StObject.set(x, "SetActiveTab", js.Any.fromFunction1(value))
+    inline def setSetActiveTab(value: ASPxClientTab => Unit): Self = StObject.set(x, "SetActiveTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActiveTabIndex(value: Double => Unit): Self = StObject.set(x, "SetActiveTabIndex", js.Any.fromFunction1(value))
+    inline def setSetActiveTabIndex(value: Double => Unit): Self = StObject.set(x, "SetActiveTabIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTabClick(value: ASPxClientEvent[ASPxClientTabControlTabClickEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "TabClick", value.asInstanceOf[js.Any])
+    inline def setTabClick(value: ASPxClientEvent[ASPxClientTabControlTabClickEventHandler[ASPxClientTabControlBase]]): Self = StObject.set(x, "TabClick", value.asInstanceOf[js.Any])
   }
 }

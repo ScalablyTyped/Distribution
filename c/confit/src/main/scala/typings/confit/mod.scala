@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(optionsOrBaseDir: String): ConfigFactory = ^.asInstanceOf[js.Dynamic].apply(optionsOrBaseDir.asInstanceOf[js.Any]).asInstanceOf[ConfigFactory]
-  @scala.inline
-  def apply(optionsOrBaseDir: options): ConfigFactory = ^.asInstanceOf[js.Dynamic].apply(optionsOrBaseDir.asInstanceOf[js.Any]).asInstanceOf[ConfigFactory]
+  inline def apply(optionsOrBaseDir: String): ConfigFactory = ^.asInstanceOf[js.Dynamic].apply(optionsOrBaseDir.asInstanceOf[js.Any]).asInstanceOf[ConfigFactory]
+  inline def apply(optionsOrBaseDir: options): ConfigFactory = ^.asInstanceOf[js.Dynamic].apply(optionsOrBaseDir.asInstanceOf[js.Any]).asInstanceOf[ConfigFactory]
   
   @JSImport("confit", JSImport.Namespace)
   @js.native
@@ -38,23 +36,18 @@ object mod {
   }
   object ConfigStore {
     
-    @scala.inline
-    def apply(get: String => js.Any, set: (String, js.Any) => js.Any, use: js.Object => Unit): ConfigStore = {
+    inline def apply(get: String => js.Any, set: (String, js.Any) => js.Any, use: js.Object => Unit): ConfigStore = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set), use = js.Any.fromFunction1(use))
       __obj.asInstanceOf[ConfigStore]
     }
     
-    @scala.inline
-    implicit class ConfigStoreMutableBuilder[Self <: ConfigStore] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigStore](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUse(value: js.Object => Unit): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUse(value: js.Object => Unit): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
     }
   }
   
@@ -70,20 +63,16 @@ object mod {
   }
   object options {
     
-    @scala.inline
-    def apply(basedir: String, protocols: ProtocolsSetPrivate): options = {
+    inline def apply(basedir: String, protocols: ProtocolsSetPrivate): options = {
       val __obj = js.Dynamic.literal(basedir = basedir.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
       __obj.asInstanceOf[options]
     }
     
-    @scala.inline
-    implicit class optionsMutableBuilder[Self <: options] (val x: Self) extends AnyVal {
+    extension [Self <: options](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocols(value: ProtocolsSetPrivate): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: ProtocolsSetPrivate): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     }
   }
 }

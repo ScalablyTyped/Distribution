@@ -20,17 +20,14 @@ object typesLimitExceededExceptionMod {
   }
   object LimitExceededException {
     
-    @scala.inline
-    def apply(): LimitExceededException = {
+    inline def apply(): LimitExceededException = {
       val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[LimitExceededException]
     }
     
-    @scala.inline
-    implicit class LimitExceededExceptionMutableBuilder[Self <: LimitExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: LimitExceededException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.LimitExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.LimitExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,32 +50,24 @@ object typesLimitExceededExceptionMod {
   }
   object LimitExceededExceptionDetails {
     
-    @scala.inline
-    def apply(): LimitExceededExceptionDetails = {
+    inline def apply(): LimitExceededExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LimitExceededExceptionDetails]
     }
     
-    @scala.inline
-    implicit class LimitExceededExceptionDetailsMutableBuilder[Self <: LimitExceededExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: LimitExceededExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

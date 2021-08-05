@@ -16,17 +16,14 @@ object typesSubnetIPAddressLimitReachedExceptionMod {
   }
   object SubnetIPAddressLimitReachedException {
     
-    @scala.inline
-    def apply(): SubnetIPAddressLimitReachedException = {
+    inline def apply(): SubnetIPAddressLimitReachedException = {
       val __obj = js.Dynamic.literal(name = "SubnetIPAddressLimitReachedException")
       __obj.asInstanceOf[SubnetIPAddressLimitReachedException]
     }
     
-    @scala.inline
-    implicit class SubnetIPAddressLimitReachedExceptionMutableBuilder[Self <: SubnetIPAddressLimitReachedException] (val x: Self) extends AnyVal {
+    extension [Self <: SubnetIPAddressLimitReachedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.SubnetIPAddressLimitReachedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,26 +43,20 @@ object typesSubnetIPAddressLimitReachedExceptionMod {
   }
   object SubnetIPAddressLimitReachedExceptionDetails {
     
-    @scala.inline
-    def apply(): SubnetIPAddressLimitReachedExceptionDetails = {
+    inline def apply(): SubnetIPAddressLimitReachedExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubnetIPAddressLimitReachedExceptionDetails]
     }
     
-    @scala.inline
-    implicit class SubnetIPAddressLimitReachedExceptionDetailsMutableBuilder[Self <: SubnetIPAddressLimitReachedExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SubnetIPAddressLimitReachedExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

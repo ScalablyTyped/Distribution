@@ -43,58 +43,41 @@ trait PolicyComplianceDetail extends StObject {
 }
 object PolicyComplianceDetail {
   
-  @scala.inline
-  def apply(): PolicyComplianceDetail = {
+  inline def apply(): PolicyComplianceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyComplianceDetail]
   }
   
-  @scala.inline
-  implicit class PolicyComplianceDetailMutableBuilder[Self <: PolicyComplianceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyComplianceDetail](x: Self) {
     
-    @scala.inline
-    def setEvaluationLimitExceeded(value: Boolean): Self = StObject.set(x, "EvaluationLimitExceeded", value.asInstanceOf[js.Any])
+    inline def setEvaluationLimitExceeded(value: Boolean): Self = StObject.set(x, "EvaluationLimitExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationLimitExceededUndefined: Self = StObject.set(x, "EvaluationLimitExceeded", js.undefined)
+    inline def setEvaluationLimitExceededUndefined: Self = StObject.set(x, "EvaluationLimitExceeded", js.undefined)
     
-    @scala.inline
-    def setExpiredAt(value: TimeStamp): Self = StObject.set(x, "ExpiredAt", value.asInstanceOf[js.Any])
+    inline def setExpiredAt(value: TimeStamp): Self = StObject.set(x, "ExpiredAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredAtUndefined: Self = StObject.set(x, "ExpiredAt", js.undefined)
+    inline def setExpiredAtUndefined: Self = StObject.set(x, "ExpiredAt", js.undefined)
     
-    @scala.inline
-    def setIssueInfoMap(value: IssueInfoMap): Self = StObject.set(x, "IssueInfoMap", value.asInstanceOf[js.Any])
+    inline def setIssueInfoMap(value: IssueInfoMap): Self = StObject.set(x, "IssueInfoMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueInfoMapUndefined: Self = StObject.set(x, "IssueInfoMap", js.undefined)
+    inline def setIssueInfoMapUndefined: Self = StObject.set(x, "IssueInfoMap", js.undefined)
     
-    @scala.inline
-    def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
+    inline def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberAccountUndefined: Self = StObject.set(x, "MemberAccount", js.undefined)
+    inline def setMemberAccountUndefined: Self = StObject.set(x, "MemberAccount", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
+    inline def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
-    @scala.inline
-    def setPolicyOwner(value: AWSAccountId): Self = StObject.set(x, "PolicyOwner", value.asInstanceOf[js.Any])
+    inline def setPolicyOwner(value: AWSAccountId): Self = StObject.set(x, "PolicyOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyOwnerUndefined: Self = StObject.set(x, "PolicyOwner", js.undefined)
+    inline def setPolicyOwnerUndefined: Self = StObject.set(x, "PolicyOwner", js.undefined)
     
-    @scala.inline
-    def setViolators(value: ComplianceViolators): Self = StObject.set(x, "Violators", value.asInstanceOf[js.Any])
+    inline def setViolators(value: ComplianceViolators): Self = StObject.set(x, "Violators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolatorsUndefined: Self = StObject.set(x, "Violators", js.undefined)
+    inline def setViolatorsUndefined: Self = StObject.set(x, "Violators", js.undefined)
     
-    @scala.inline
-    def setViolatorsVarargs(value: ComplianceViolator*): Self = StObject.set(x, "Violators", js.Array(value :_*))
+    inline def setViolatorsVarargs(value: ComplianceViolator*): Self = StObject.set(x, "Violators", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait AwsDynamoDbTableReplicaGlobalSecondaryIndex extends StObject {
 }
 object AwsDynamoDbTableReplicaGlobalSecondaryIndex {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableReplicaGlobalSecondaryIndex = {
+  inline def apply(): AwsDynamoDbTableReplicaGlobalSecondaryIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableReplicaGlobalSecondaryIndex]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableReplicaGlobalSecondaryIndexMutableBuilder[Self <: AwsDynamoDbTableReplicaGlobalSecondaryIndex] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableReplicaGlobalSecondaryIndex](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: NonEmptyString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: NonEmptyString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setProvisionedThroughputOverride(value: AwsDynamoDbTableProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughputOverride(value: AwsDynamoDbTableProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+    inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
   }
 }

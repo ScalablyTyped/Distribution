@@ -26,40 +26,29 @@ trait SchemaFolderEntities extends StObject {
 }
 object SchemaFolderEntities {
   
-  @scala.inline
-  def apply(): SchemaFolderEntities = {
+  inline def apply(): SchemaFolderEntities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFolderEntities]
   }
   
-  @scala.inline
-  implicit class SchemaFolderEntitiesMutableBuilder[Self <: SchemaFolderEntities] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFolderEntities](x: Self) {
     
-    @scala.inline
-    def setTag(value: js.Array[SchemaTag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Array[SchemaTag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setTagVarargs(value: SchemaTag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+    inline def setTagVarargs(value: SchemaTag*): Self = StObject.set(x, "tag", js.Array(value :_*))
     
-    @scala.inline
-    def setTrigger(value: js.Array[SchemaTrigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: js.Array[SchemaTrigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    @scala.inline
-    def setTriggerVarargs(value: SchemaTrigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+    inline def setTriggerVarargs(value: SchemaTrigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
     
-    @scala.inline
-    def setVariable(value: js.Array[SchemaVariable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: js.Array[SchemaVariable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    @scala.inline
-    def setVariableVarargs(value: SchemaVariable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: SchemaVariable*): Self = StObject.set(x, "variable", js.Array(value :_*))
   }
 }

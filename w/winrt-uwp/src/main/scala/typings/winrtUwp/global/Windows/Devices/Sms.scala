@@ -567,8 +567,7 @@ object Sms {
       * @return The SMS device operation object.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice]]
     
     /**
       * Creates an instance of SmsDevice for the specified Mobile Broadband network account ID.
@@ -576,24 +575,21 @@ object Sms {
       * @return When this method completes, it returns the SmsDevice for the specified Mobile Broadband network account ID.
       */
     /* static member */
-    @scala.inline
-    def fromNetworkAccountIdAsync(networkAccountId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNetworkAccountIdAsync")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice]]
+    inline def fromNetworkAccountIdAsync(networkAccountId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNetworkAccountIdAsync")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice]]
     
     /**
       * Creates an instance of an SmsDevice object associated with the default SMS device. Because the device might be busy, the operation executes asynchronously. The asynchronous operation object returns immediately.
       * @return A reference to an IAsyncOperation(SmsDevice) object that supports asynchronous SmsDevice object retrieval.
       */
     /* static member */
-    @scala.inline
-    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice]]
+    inline def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sms.SmsDevice]]
     
     /**
       * Retrieves the class selection string that can be used to enumerate SMS devices.
       * @return A reference to an Advanced Query Syntax (AQS) string that identifies an SMS device.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   /** Extends the SmsDevice class, and supports the operation of a mobile broadband SMS device. */
@@ -614,8 +610,7 @@ object Sms {
       * @return An instance of SmsDevice2 initialized for the device with the given ID.
       */
     /* static member */
-    @scala.inline
-    def fromId(deviceId: String): typings.winrtUwp.Windows.Devices.Sms.SmsDevice2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsDevice2]
+    inline def fromId(deviceId: String): typings.winrtUwp.Windows.Devices.Sms.SmsDevice2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsDevice2]
     
     /**
       * Creates an instance of SmsDevice2 for a device, given the device ID of the parent device.
@@ -623,24 +618,21 @@ object Sms {
       * @return An instance of SmsDevice2 initialized for the device with the given parent ID.
       */
     /* static member */
-    @scala.inline
-    def fromParentId(parentDeviceId: String): typings.winrtUwp.Windows.Devices.Sms.SmsDevice2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParentId")(parentDeviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsDevice2]
+    inline def fromParentId(parentDeviceId: String): typings.winrtUwp.Windows.Devices.Sms.SmsDevice2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParentId")(parentDeviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsDevice2]
     
     /**
       * Creates an instance of SmsDevice2 associated with the default SMS device.
       * @return An instance of SmsDevice2 initialized for the default SMS device.
       */
     /* static member */
-    @scala.inline
-    def getDefault(): typings.winrtUwp.Windows.Devices.Sms.SmsDevice2 = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsDevice2]
+    inline def getDefault(): typings.winrtUwp.Windows.Devices.Sms.SmsDevice2 = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsDevice2]
     
     /**
       * Retrieves the class selection string that can be used to enumerate SMS devices.
       * @return A reference to an Advanced Query Syntax (AQS) string that identifies an SMS device.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   /** Provides access to the messages stored on an SMS Device and information about the message store. */
@@ -980,8 +972,7 @@ object Sms {
     @JSGlobal("Windows.Devices.Sms.SmsMessageRegistration.allRegistrations")
     @js.native
     def allRegistrations: IVectorView[typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration] = js.native
-    @scala.inline
-    def allRegistrations_=(x: IVectorView[typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allRegistrations")(x.asInstanceOf[js.Any])
+    inline def allRegistrations_=(x: IVectorView[typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allRegistrations")(x.asInstanceOf[js.Any])
     
     /**
       * Registers a message filter.
@@ -990,8 +981,7 @@ object Sms {
       * @return On successful completion, the SmsMessageRegistration object that represents this registered message filter.
       */
     /* static member */
-    @scala.inline
-    def register(id: String, filterRules: typings.winrtUwp.Windows.Devices.Sms.SmsFilterRules): typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(id.asInstanceOf[js.Any], filterRules.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration]
+    inline def register(id: String, filterRules: typings.winrtUwp.Windows.Devices.Sms.SmsFilterRules): typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(id.asInstanceOf[js.Any], filterRules.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration]
   }
   
   /** This enumerated type defines the format of the SMS message. */
@@ -1235,8 +1225,7 @@ object Sms {
       * @return A new SmsTextMessage object if the decoding was successful.
       */
     /* static member */
-    @scala.inline
-    def fromBinaryData(format: SmsDataFormat, value: js.Array[Double]): typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryData")(format.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage]
+    inline def fromBinaryData(format: SmsDataFormat, value: js.Array[Double]): typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryData")(format.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage]
     
     /**
       * Reads a binary message and decodes it. The results are placed in a new instance of a text message.
@@ -1244,8 +1233,7 @@ object Sms {
       * @return A new SmsTextMessage object.
       */
     /* static member */
-    @scala.inline
-    def fromBinaryMessage(binaryMessage: typings.winrtUwp.Windows.Devices.Sms.SmsBinaryMessage): typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryMessage")(binaryMessage.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage]
+    inline def fromBinaryMessage(binaryMessage: typings.winrtUwp.Windows.Devices.Sms.SmsBinaryMessage): typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryMessage")(binaryMessage.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sms.SmsTextMessage]
   }
   
   /** Encapsulates a decoded SMS text message. Prefer this class to the older SmsTextMessage class. */

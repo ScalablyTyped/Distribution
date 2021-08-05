@@ -18,22 +18,17 @@ trait TransformParameters extends StObject {
 }
 object TransformParameters {
   
-  @scala.inline
-  def apply(TransformType: TransformType): TransformParameters = {
+  inline def apply(TransformType: TransformType): TransformParameters = {
     val __obj = js.Dynamic.literal(TransformType = TransformType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformParameters]
   }
   
-  @scala.inline
-  implicit class TransformParametersMutableBuilder[Self <: TransformParameters] (val x: Self) extends AnyVal {
+  extension [Self <: TransformParameters](x: Self) {
     
-    @scala.inline
-    def setFindMatchesParameters(value: FindMatchesParameters): Self = StObject.set(x, "FindMatchesParameters", value.asInstanceOf[js.Any])
+    inline def setFindMatchesParameters(value: FindMatchesParameters): Self = StObject.set(x, "FindMatchesParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindMatchesParametersUndefined: Self = StObject.set(x, "FindMatchesParameters", js.undefined)
+    inline def setFindMatchesParametersUndefined: Self = StObject.set(x, "FindMatchesParameters", js.undefined)
     
-    @scala.inline
-    def setTransformType(value: TransformType): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
+    inline def setTransformType(value: TransformType): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
   }
 }

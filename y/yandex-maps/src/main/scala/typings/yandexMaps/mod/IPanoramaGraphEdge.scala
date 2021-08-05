@@ -10,16 +10,13 @@ trait IPanoramaGraphEdge extends StObject {
 }
 object IPanoramaGraphEdge {
   
-  @scala.inline
-  def apply(getEndNodes: () => js.Array[IPanoramaGraphNode]): IPanoramaGraphEdge = {
+  inline def apply(getEndNodes: () => js.Array[IPanoramaGraphNode]): IPanoramaGraphEdge = {
     val __obj = js.Dynamic.literal(getEndNodes = js.Any.fromFunction0(getEndNodes))
     __obj.asInstanceOf[IPanoramaGraphEdge]
   }
   
-  @scala.inline
-  implicit class IPanoramaGraphEdgeMutableBuilder[Self <: IPanoramaGraphEdge] (val x: Self) extends AnyVal {
+  extension [Self <: IPanoramaGraphEdge](x: Self) {
     
-    @scala.inline
-    def setGetEndNodes(value: () => js.Array[IPanoramaGraphNode]): Self = StObject.set(x, "getEndNodes", js.Any.fromFunction0(value))
+    inline def setGetEndNodes(value: () => js.Array[IPanoramaGraphNode]): Self = StObject.set(x, "getEndNodes", js.Any.fromFunction0(value))
   }
 }

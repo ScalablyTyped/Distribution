@@ -22,34 +22,25 @@ trait UpdateGatewayInformationInput extends StObject {
 }
 object UpdateGatewayInformationInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): UpdateGatewayInformationInput = {
+  inline def apply(GatewayARN: GatewayARN): UpdateGatewayInformationInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewayInformationInput]
   }
   
-  @scala.inline
-  implicit class UpdateGatewayInformationInputMutableBuilder[Self <: UpdateGatewayInformationInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGatewayInformationInput](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLogGroupARN(value: CloudWatchLogGroupARN): Self = StObject.set(x, "CloudWatchLogGroupARN", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogGroupARN(value: CloudWatchLogGroupARN): Self = StObject.set(x, "CloudWatchLogGroupARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLogGroupARNUndefined: Self = StObject.set(x, "CloudWatchLogGroupARN", js.undefined)
+    inline def setCloudWatchLogGroupARNUndefined: Self = StObject.set(x, "CloudWatchLogGroupARN", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayName(value: GatewayName): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
+    inline def setGatewayName(value: GatewayName): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
+    inline def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
     
-    @scala.inline
-    def setGatewayTimezone(value: GatewayTimezone): Self = StObject.set(x, "GatewayTimezone", value.asInstanceOf[js.Any])
+    inline def setGatewayTimezone(value: GatewayTimezone): Self = StObject.set(x, "GatewayTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayTimezoneUndefined: Self = StObject.set(x, "GatewayTimezone", js.undefined)
+    inline def setGatewayTimezoneUndefined: Self = StObject.set(x, "GatewayTimezone", js.undefined)
   }
 }

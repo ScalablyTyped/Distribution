@@ -44,32 +44,24 @@ object arrowMod {
   }
   object ArrowConfig {
     
-    @scala.inline
-    def apply(points: js.Array[Double]): ArrowConfig = {
+    inline def apply(points: js.Array[Double]): ArrowConfig = {
       val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrowConfig]
     }
     
-    @scala.inline
-    implicit class ArrowConfigMutableBuilder[Self <: ArrowConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ArrowConfig](x: Self) {
       
-      @scala.inline
-      def setPointerAtBeginning(value: Boolean): Self = StObject.set(x, "pointerAtBeginning", value.asInstanceOf[js.Any])
+      inline def setPointerAtBeginning(value: Boolean): Self = StObject.set(x, "pointerAtBeginning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerAtBeginningUndefined: Self = StObject.set(x, "pointerAtBeginning", js.undefined)
+      inline def setPointerAtBeginningUndefined: Self = StObject.set(x, "pointerAtBeginning", js.undefined)
       
-      @scala.inline
-      def setPointerLength(value: Double): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
+      inline def setPointerLength(value: Double): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
+      inline def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
       
-      @scala.inline
-      def setPointerWidth(value: Double): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
+      inline def setPointerWidth(value: Double): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerWidthUndefined: Self = StObject.set(x, "pointerWidth", js.undefined)
+      inline def setPointerWidthUndefined: Self = StObject.set(x, "pointerWidth", js.undefined)
     }
   }
 }

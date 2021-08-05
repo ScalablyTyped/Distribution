@@ -19,16 +19,13 @@ trait ActivationEvent
 }
 object ActivationEvent {
   
-  @scala.inline
-  def apply(ActiveSheet: XSpreadsheet, Source: XInterface): ActivationEvent = {
+  inline def apply(ActiveSheet: XSpreadsheet, Source: XInterface): ActivationEvent = {
     val __obj = js.Dynamic.literal(ActiveSheet = ActiveSheet.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivationEvent]
   }
   
-  @scala.inline
-  implicit class ActivationEventMutableBuilder[Self <: ActivationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ActivationEvent](x: Self) {
     
-    @scala.inline
-    def setActiveSheet(value: XSpreadsheet): Self = StObject.set(x, "ActiveSheet", value.asInstanceOf[js.Any])
+    inline def setActiveSheet(value: XSpreadsheet): Self = StObject.set(x, "ActiveSheet", value.asInstanceOf[js.Any])
   }
 }

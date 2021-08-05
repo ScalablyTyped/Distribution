@@ -93,129 +93,87 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdPaperSize extends StObject
 object WdPaperSize {
   
-  @scala.inline
-  def wdPaper10x14: `0` = 0.asInstanceOf[`0`]
+  inline def wdPaper10x14: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdPaper11x17: `1` = 1.asInstanceOf[`1`]
+  inline def wdPaper11x17: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdPaperA3: `6` = 6.asInstanceOf[`6`]
+  inline def wdPaperA3: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdPaperA4: `7` = 7.asInstanceOf[`7`]
+  inline def wdPaperA4: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdPaperA4Small: `8` = 8.asInstanceOf[`8`]
+  inline def wdPaperA4Small: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdPaperA5: `9` = 9.asInstanceOf[`9`]
+  inline def wdPaperA5: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdPaperB4: `10` = 10.asInstanceOf[`10`]
+  inline def wdPaperB4: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def wdPaperB5: `11` = 11.asInstanceOf[`11`]
+  inline def wdPaperB5: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def wdPaperCSheet: `12` = 12.asInstanceOf[`12`]
+  inline def wdPaperCSheet: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def wdPaperCustom: `41` = 41.asInstanceOf[`41`]
+  inline def wdPaperCustom: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def wdPaperDSheet: `13` = 13.asInstanceOf[`13`]
+  inline def wdPaperDSheet: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def wdPaperESheet: `14` = 14.asInstanceOf[`14`]
+  inline def wdPaperESheet: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def wdPaperEnvelope10: `25` = 25.asInstanceOf[`25`]
+  inline def wdPaperEnvelope10: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def wdPaperEnvelope11: `26` = 26.asInstanceOf[`26`]
+  inline def wdPaperEnvelope11: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def wdPaperEnvelope12: `27` = 27.asInstanceOf[`27`]
+  inline def wdPaperEnvelope12: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def wdPaperEnvelope14: `28` = 28.asInstanceOf[`28`]
+  inline def wdPaperEnvelope14: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def wdPaperEnvelope9: `24` = 24.asInstanceOf[`24`]
+  inline def wdPaperEnvelope9: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def wdPaperEnvelopeB4: `29` = 29.asInstanceOf[`29`]
+  inline def wdPaperEnvelopeB4: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def wdPaperEnvelopeB5: `30` = 30.asInstanceOf[`30`]
+  inline def wdPaperEnvelopeB5: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def wdPaperEnvelopeB6: `31` = 31.asInstanceOf[`31`]
+  inline def wdPaperEnvelopeB6: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def wdPaperEnvelopeC3: `32` = 32.asInstanceOf[`32`]
+  inline def wdPaperEnvelopeC3: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def wdPaperEnvelopeC4: `33` = 33.asInstanceOf[`33`]
+  inline def wdPaperEnvelopeC4: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def wdPaperEnvelopeC5: `34` = 34.asInstanceOf[`34`]
+  inline def wdPaperEnvelopeC5: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def wdPaperEnvelopeC6: `35` = 35.asInstanceOf[`35`]
+  inline def wdPaperEnvelopeC6: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def wdPaperEnvelopeC65: `36` = 36.asInstanceOf[`36`]
+  inline def wdPaperEnvelopeC65: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def wdPaperEnvelopeDL: `37` = 37.asInstanceOf[`37`]
+  inline def wdPaperEnvelopeDL: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def wdPaperEnvelopeItaly: `38` = 38.asInstanceOf[`38`]
+  inline def wdPaperEnvelopeItaly: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def wdPaperEnvelopeMonarch: `39` = 39.asInstanceOf[`39`]
+  inline def wdPaperEnvelopeMonarch: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def wdPaperEnvelopePersonal: `40` = 40.asInstanceOf[`40`]
+  inline def wdPaperEnvelopePersonal: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def wdPaperExecutive: `5` = 5.asInstanceOf[`5`]
+  inline def wdPaperExecutive: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdPaperFanfoldLegalGerman: `15` = 15.asInstanceOf[`15`]
+  inline def wdPaperFanfoldLegalGerman: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def wdPaperFanfoldStdGerman: `16` = 16.asInstanceOf[`16`]
+  inline def wdPaperFanfoldStdGerman: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def wdPaperFanfoldUS: `17` = 17.asInstanceOf[`17`]
+  inline def wdPaperFanfoldUS: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def wdPaperFolio: `18` = 18.asInstanceOf[`18`]
+  inline def wdPaperFolio: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def wdPaperLedger: `19` = 19.asInstanceOf[`19`]
+  inline def wdPaperLedger: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def wdPaperLegal: `4` = 4.asInstanceOf[`4`]
+  inline def wdPaperLegal: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdPaperLetter: `2` = 2.asInstanceOf[`2`]
+  inline def wdPaperLetter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdPaperLetterSmall: `3` = 3.asInstanceOf[`3`]
+  inline def wdPaperLetterSmall: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdPaperNote: `20` = 20.asInstanceOf[`20`]
+  inline def wdPaperNote: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def wdPaperQuarto: `21` = 21.asInstanceOf[`21`]
+  inline def wdPaperQuarto: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def wdPaperStatement: `22` = 22.asInstanceOf[`22`]
+  inline def wdPaperStatement: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def wdPaperTabloid: `23` = 23.asInstanceOf[`23`]
+  inline def wdPaperTabloid: `23` = 23.asInstanceOf[`23`]
 }

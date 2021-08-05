@@ -18,16 +18,13 @@ trait RedoCommand
 }
 object RedoCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): RedoCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): RedoCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[RedoCommand]
   }
   
-  @scala.inline
-  implicit class RedoCommandMutableBuilder[Self <: RedoCommand] (val x: Self) extends AnyVal {
+  extension [Self <: RedoCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

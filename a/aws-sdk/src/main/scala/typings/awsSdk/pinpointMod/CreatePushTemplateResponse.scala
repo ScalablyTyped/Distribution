@@ -10,16 +10,13 @@ trait CreatePushTemplateResponse extends StObject {
 }
 object CreatePushTemplateResponse {
   
-  @scala.inline
-  def apply(CreateTemplateMessageBody: CreateTemplateMessageBody): CreatePushTemplateResponse = {
+  inline def apply(CreateTemplateMessageBody: CreateTemplateMessageBody): CreatePushTemplateResponse = {
     val __obj = js.Dynamic.literal(CreateTemplateMessageBody = CreateTemplateMessageBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePushTemplateResponse]
   }
   
-  @scala.inline
-  implicit class CreatePushTemplateResponseMutableBuilder[Self <: CreatePushTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePushTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setCreateTemplateMessageBody(value: CreateTemplateMessageBody): Self = StObject.set(x, "CreateTemplateMessageBody", value.asInstanceOf[js.Any])
+    inline def setCreateTemplateMessageBody(value: CreateTemplateMessageBody): Self = StObject.set(x, "CreateTemplateMessageBody", value.asInstanceOf[js.Any])
   }
 }

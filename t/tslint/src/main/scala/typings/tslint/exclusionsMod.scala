@@ -14,8 +14,7 @@ object exclusionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def constructExclusionsMap(ruleArguments: js.Array[IInputExclusionDescriptors]): ExclusionsMap = ^.asInstanceOf[js.Dynamic].applyDynamic("constructExclusionsMap")(ruleArguments.asInstanceOf[js.Any]).asInstanceOf[ExclusionsMap]
+  inline def constructExclusionsMap(ruleArguments: js.Array[IInputExclusionDescriptors]): ExclusionsMap = ^.asInstanceOf[js.Dynamic].applyDynamic("constructExclusionsMap")(ruleArguments.asInstanceOf[js.Any]).asInstanceOf[ExclusionsMap]
   
   trait DocTypeExclusions extends StObject {
     
@@ -25,26 +24,20 @@ object exclusionsMod {
   }
   object DocTypeExclusions {
     
-    @scala.inline
-    def apply(requirements: js.Array[Exclusion[js.Any]]): DocTypeExclusions = {
+    inline def apply(requirements: js.Array[Exclusion[js.Any]]): DocTypeExclusions = {
       val __obj = js.Dynamic.literal(requirements = requirements.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocTypeExclusions]
     }
     
-    @scala.inline
-    implicit class DocTypeExclusionsMutableBuilder[Self <: DocTypeExclusions] (val x: Self) extends AnyVal {
+    extension [Self <: DocTypeExclusions](x: Self) {
       
-      @scala.inline
-      def setOverloadsSeparateDocs(value: Boolean): Self = StObject.set(x, "overloadsSeparateDocs", value.asInstanceOf[js.Any])
+      inline def setOverloadsSeparateDocs(value: Boolean): Self = StObject.set(x, "overloadsSeparateDocs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverloadsSeparateDocsUndefined: Self = StObject.set(x, "overloadsSeparateDocs", js.undefined)
+      inline def setOverloadsSeparateDocsUndefined: Self = StObject.set(x, "overloadsSeparateDocs", js.undefined)
       
-      @scala.inline
-      def setRequirements(value: js.Array[Exclusion[js.Any]]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+      inline def setRequirements(value: js.Array[Exclusion[js.Any]]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequirementsVarargs(value: Exclusion[js.Any]*): Self = StObject.set(x, "requirements", js.Array(value :_*))
+      inline def setRequirementsVarargs(value: Exclusion[js.Any]*): Self = StObject.set(x, "requirements", js.Array(value :_*))
     }
   }
   

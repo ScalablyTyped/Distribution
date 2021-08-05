@@ -18,8 +18,7 @@ trait ParametersActivityListWatchersForRepoEndpoint extends StObject {
 }
 object ParametersActivityListWatchersForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListWatchersForRepoEndpoint,
     request: ActivityListWatchersForRepoRequestOptions,
     response: OctokitResponse[ActivityListWatchersForRepoResponseData]
@@ -28,16 +27,12 @@ object ParametersActivityListWatchersForRepoEndpoint {
     __obj.asInstanceOf[ParametersActivityListWatchersForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListWatchersForRepoEndpointMutableBuilder[Self <: ParametersActivityListWatchersForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListWatchersForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListWatchersForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListWatchersForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityListWatchersForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityListWatchersForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityListWatchersForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityListWatchersForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

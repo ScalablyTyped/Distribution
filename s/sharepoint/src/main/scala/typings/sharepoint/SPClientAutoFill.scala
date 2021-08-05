@@ -53,8 +53,7 @@ trait SPClientAutoFill extends StObject {
 }
 object SPClientAutoFill {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllOptionData: StringDictionary[ISPClientAutoFillData],
     AutoFillCallbackTimeoutID: String,
     AutoFillContainerId: String,
@@ -80,69 +79,48 @@ object SPClientAutoFill {
     __obj.asInstanceOf[SPClientAutoFill]
   }
   
-  @scala.inline
-  implicit class SPClientAutoFillMutableBuilder[Self <: SPClientAutoFill] (val x: Self) extends AnyVal {
+  extension [Self <: SPClientAutoFill](x: Self) {
     
-    @scala.inline
-    def setAllOptionData(value: StringDictionary[ISPClientAutoFillData]): Self = StObject.set(x, "AllOptionData", value.asInstanceOf[js.Any])
+    inline def setAllOptionData(value: StringDictionary[ISPClientAutoFillData]): Self = StObject.set(x, "AllOptionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillCallbackTimeoutID(value: String): Self = StObject.set(x, "AutoFillCallbackTimeoutID", value.asInstanceOf[js.Any])
+    inline def setAutoFillCallbackTimeoutID(value: String): Self = StObject.set(x, "AutoFillCallbackTimeoutID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillContainerId(value: String): Self = StObject.set(x, "AutoFillContainerId", value.asInstanceOf[js.Any])
+    inline def setAutoFillContainerId(value: String): Self = StObject.set(x, "AutoFillContainerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillMenuId(value: String): Self = StObject.set(x, "AutoFillMenuId", value.asInstanceOf[js.Any])
+    inline def setAutoFillMenuId(value: String): Self = StObject.set(x, "AutoFillMenuId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillMinTextLength(value: Double): Self = StObject.set(x, "AutoFillMinTextLength", value.asInstanceOf[js.Any])
+    inline def setAutoFillMinTextLength(value: Double): Self = StObject.set(x, "AutoFillMinTextLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillTimeout(value: Double): Self = StObject.set(x, "AutoFillTimeout", value.asInstanceOf[js.Any])
+    inline def setAutoFillTimeout(value: Double): Self = StObject.set(x, "AutoFillTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurAutoFill(value: () => Unit): Self = StObject.set(x, "BlurAutoFill", js.Any.fromFunction0(value))
+    inline def setBlurAutoFill(value: () => Unit): Self = StObject.set(x, "BlurAutoFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloseAutoFill(value: ISPClientAutoFillData => Unit): Self = StObject.set(x, "CloseAutoFill", js.Any.fromFunction1(value))
+    inline def setCloseAutoFill(value: ISPClientAutoFillData => Unit): Self = StObject.set(x, "CloseAutoFill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentFocusOption(value: Double): Self = StObject.set(x, "CurrentFocusOption", value.asInstanceOf[js.Any])
+    inline def setCurrentFocusOption(value: Double): Self = StObject.set(x, "CurrentFocusOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusAutoFill(value: () => Unit): Self = StObject.set(x, "FocusAutoFill", js.Any.fromFunction0(value))
+    inline def setFocusAutoFill(value: () => Unit): Self = StObject.set(x, "FocusAutoFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFuncOnAutoFillClose(value: (String, ISPClientAutoFillData) => Unit): Self = StObject.set(x, "FuncOnAutoFillClose", js.Any.fromFunction2(value))
+    inline def setFuncOnAutoFillClose(value: (String, ISPClientAutoFillData) => Unit): Self = StObject.set(x, "FuncOnAutoFillClose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFuncPopulateAutoFill(value: HTMLElement => Unit): Self = StObject.set(x, "FuncPopulateAutoFill", js.Any.fromFunction1(value))
+    inline def setFuncPopulateAutoFill(value: HTMLElement => Unit): Self = StObject.set(x, "FuncPopulateAutoFill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAutoFillOpen(value: () => Boolean): Self = StObject.set(x, "IsAutoFillOpen", js.Any.fromFunction0(value))
+    inline def setIsAutoFillOpen(value: () => Boolean): Self = StObject.set(x, "IsAutoFillOpen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPopulateAutoFill(
+    inline def setPopulateAutoFill(
       value: (js.Array[ISPClientAutoFillData], js.Function2[/* elmTextId */ String, /* objData */ ISPClientAutoFillData, Unit]) => Unit
     ): Self = StObject.set(x, "PopulateAutoFill", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectAutoFillOption(value: HTMLElement => Unit): Self = StObject.set(x, "SelectAutoFillOption", js.Any.fromFunction1(value))
+    inline def setSelectAutoFillOption(value: HTMLElement => Unit): Self = StObject.set(x, "SelectAutoFillOption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoFillHeight(value: () => Unit): Self = StObject.set(x, "SetAutoFillHeight", js.Any.fromFunction0(value))
+    inline def setSetAutoFillHeight(value: () => Unit): Self = StObject.set(x, "SetAutoFillHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextElementId(value: String): Self = StObject.set(x, "TextElementId", value.asInstanceOf[js.Any])
+    inline def setTextElementId(value: String): Self = StObject.set(x, "TextElementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAutoFillMenuFocus(value: Boolean => Unit): Self = StObject.set(x, "UpdateAutoFillMenuFocus", js.Any.fromFunction1(value))
+    inline def setUpdateAutoFillMenuFocus(value: Boolean => Unit): Self = StObject.set(x, "UpdateAutoFillMenuFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateAutoFillPosition(value: () => Unit): Self = StObject.set(x, "UpdateAutoFillPosition", js.Any.fromFunction0(value))
+    inline def setUpdateAutoFillPosition(value: () => Unit): Self = StObject.set(x, "UpdateAutoFillPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisibleItemCount(value: Double): Self = StObject.set(x, "VisibleItemCount", value.asInstanceOf[js.Any])
+    inline def setVisibleItemCount(value: Double): Self = StObject.set(x, "VisibleItemCount", value.asInstanceOf[js.Any])
   }
 }

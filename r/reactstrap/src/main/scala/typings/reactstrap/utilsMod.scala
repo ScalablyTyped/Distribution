@@ -11,6 +11,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setGlobalCssModule(cssModule: CSSModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalCssModule")(cssModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setGlobalCssModule(cssModule: CSSModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalCssModule")(cssModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

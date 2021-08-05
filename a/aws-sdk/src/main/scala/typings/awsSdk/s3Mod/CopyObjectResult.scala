@@ -18,25 +18,19 @@ trait CopyObjectResult extends StObject {
 }
 object CopyObjectResult {
   
-  @scala.inline
-  def apply(): CopyObjectResult = {
+  inline def apply(): CopyObjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyObjectResult]
   }
   
-  @scala.inline
-  implicit class CopyObjectResultMutableBuilder[Self <: CopyObjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyObjectResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
   }
 }

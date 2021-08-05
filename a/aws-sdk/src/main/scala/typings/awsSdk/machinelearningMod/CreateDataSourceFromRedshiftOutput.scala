@@ -13,19 +13,15 @@ trait CreateDataSourceFromRedshiftOutput extends StObject {
 }
 object CreateDataSourceFromRedshiftOutput {
   
-  @scala.inline
-  def apply(): CreateDataSourceFromRedshiftOutput = {
+  inline def apply(): CreateDataSourceFromRedshiftOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDataSourceFromRedshiftOutput]
   }
   
-  @scala.inline
-  implicit class CreateDataSourceFromRedshiftOutputMutableBuilder[Self <: CreateDataSourceFromRedshiftOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataSourceFromRedshiftOutput](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
   }
 }

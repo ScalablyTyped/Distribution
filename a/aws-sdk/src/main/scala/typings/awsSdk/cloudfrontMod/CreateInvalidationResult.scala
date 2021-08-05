@@ -18,25 +18,19 @@ trait CreateInvalidationResult extends StObject {
 }
 object CreateInvalidationResult {
   
-  @scala.inline
-  def apply(): CreateInvalidationResult = {
+  inline def apply(): CreateInvalidationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateInvalidationResult]
   }
   
-  @scala.inline
-  implicit class CreateInvalidationResultMutableBuilder[Self <: CreateInvalidationResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInvalidationResult](x: Self) {
     
-    @scala.inline
-    def setInvalidation(value: Invalidation): Self = StObject.set(x, "Invalidation", value.asInstanceOf[js.Any])
+    inline def setInvalidation(value: Invalidation): Self = StObject.set(x, "Invalidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidationUndefined: Self = StObject.set(x, "Invalidation", js.undefined)
+    inline def setInvalidationUndefined: Self = StObject.set(x, "Invalidation", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

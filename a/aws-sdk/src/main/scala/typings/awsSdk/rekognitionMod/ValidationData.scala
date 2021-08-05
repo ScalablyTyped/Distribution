@@ -13,22 +13,17 @@ trait ValidationData extends StObject {
 }
 object ValidationData {
   
-  @scala.inline
-  def apply(): ValidationData = {
+  inline def apply(): ValidationData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationData]
   }
   
-  @scala.inline
-  implicit class ValidationDataMutableBuilder[Self <: ValidationData] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationData](x: Self) {
     
-    @scala.inline
-    def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
+    inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
-    @scala.inline
-    def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
   }
 }

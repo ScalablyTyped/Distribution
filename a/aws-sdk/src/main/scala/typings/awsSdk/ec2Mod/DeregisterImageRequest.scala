@@ -18,22 +18,17 @@ trait DeregisterImageRequest extends StObject {
 }
 object DeregisterImageRequest {
   
-  @scala.inline
-  def apply(ImageId: ImageId): DeregisterImageRequest = {
+  inline def apply(ImageId: ImageId): DeregisterImageRequest = {
     val __obj = js.Dynamic.literal(ImageId = ImageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterImageRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterImageRequestMutableBuilder[Self <: DeregisterImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterImageRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
   }
 }

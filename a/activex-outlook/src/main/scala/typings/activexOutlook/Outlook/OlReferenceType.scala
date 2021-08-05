@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlReferenceType extends StObject
 object OlReferenceType {
   
-  @scala.inline
-  def olStrong: `1` = 1.asInstanceOf[`1`]
+  inline def olStrong: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olWeak: `0` = 0.asInstanceOf[`0`]
+  inline def olWeak: `0` = 0.asInstanceOf[`0`]
 }

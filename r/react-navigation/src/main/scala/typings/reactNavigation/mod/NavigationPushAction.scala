@@ -21,38 +21,28 @@ trait NavigationPushAction
 }
 object NavigationPushAction {
   
-  @scala.inline
-  def apply(routeName: String): NavigationPushAction = {
+  inline def apply(routeName: String): NavigationPushAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/PUSH")
     __obj.asInstanceOf[NavigationPushAction]
   }
   
-  @scala.inline
-  implicit class NavigationPushActionMutableBuilder[Self <: NavigationPushAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationPushAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: NavigationNavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NavigationNavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+    inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NavigationSlashPUSH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashPUSH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

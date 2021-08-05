@@ -14,19 +14,15 @@ trait ReadyParam extends StObject {
 }
 object ReadyParam {
   
-  @scala.inline
-  def apply(setupTime: Double, viewable: `0` | `1`): ReadyParam = {
+  inline def apply(setupTime: Double, viewable: `0` | `1`): ReadyParam = {
     val __obj = js.Dynamic.literal(setupTime = setupTime.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadyParam]
   }
   
-  @scala.inline
-  implicit class ReadyParamMutableBuilder[Self <: ReadyParam] (val x: Self) extends AnyVal {
+  extension [Self <: ReadyParam](x: Self) {
     
-    @scala.inline
-    def setSetupTime(value: Double): Self = StObject.set(x, "setupTime", value.asInstanceOf[js.Any])
+    inline def setSetupTime(value: Double): Self = StObject.set(x, "setupTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewable(value: `0` | `1`): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
+    inline def setViewable(value: `0` | `1`): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
   }
 }

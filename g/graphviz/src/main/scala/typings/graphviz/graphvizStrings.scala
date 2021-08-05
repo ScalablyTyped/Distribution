@@ -11,41 +11,35 @@ object graphvizStrings {
   sealed trait circo
     extends StObject
        with RenderEngine
-  @scala.inline
-  def circo: circo = "circo".asInstanceOf[circo]
+  inline def circo: circo = "circo".asInstanceOf[circo]
   
   @js.native
   sealed trait dot
     extends StObject
        with RenderEngine
-  @scala.inline
-  def dot: dot = "dot".asInstanceOf[dot]
+  inline def dot: dot = "dot".asInstanceOf[dot]
   
   @js.native
   sealed trait fdp
     extends StObject
        with RenderEngine
-  @scala.inline
-  def fdp: fdp = "fdp".asInstanceOf[fdp]
+  inline def fdp: fdp = "fdp".asInstanceOf[fdp]
   
   @js.native
   sealed trait neato
     extends StObject
        with RenderEngine
-  @scala.inline
-  def neato: neato = "neato".asInstanceOf[neato]
+  inline def neato: neato = "neato".asInstanceOf[neato]
   
   @js.native
   sealed trait osage
     extends StObject
        with RenderEngine
-  @scala.inline
-  def osage: osage = "osage".asInstanceOf[osage]
+  inline def osage: osage = "osage".asInstanceOf[osage]
   
   @js.native
   sealed trait twopi
     extends StObject
        with RenderEngine
-  @scala.inline
-  def twopi: twopi = "twopi".asInstanceOf[twopi]
+  inline def twopi: twopi = "twopi".asInstanceOf[twopi]
 }

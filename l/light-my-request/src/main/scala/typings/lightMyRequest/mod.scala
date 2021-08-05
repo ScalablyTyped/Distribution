@@ -29,21 +29,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inject(dispatchFunc: DispatchFunc): Chain = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any]).asInstanceOf[Chain]
-  @scala.inline
-  def inject(dispatchFunc: DispatchFunc, options: String): Chain = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain]
-  @scala.inline
-  def inject(dispatchFunc: DispatchFunc, options: String, callback: CallbackFunc): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def inject(dispatchFunc: DispatchFunc, options: InjectOptions): Chain = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain]
-  @scala.inline
-  def inject(dispatchFunc: DispatchFunc, options: InjectOptions, callback: CallbackFunc): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def inject(dispatchFunc: DispatchFunc): Chain = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any]).asInstanceOf[Chain]
+  inline def inject(dispatchFunc: DispatchFunc, options: String): Chain = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain]
+  inline def inject(dispatchFunc: DispatchFunc, options: String, callback: CallbackFunc): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def inject(dispatchFunc: DispatchFunc, options: InjectOptions): Chain = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain]
+  inline def inject(dispatchFunc: DispatchFunc, options: InjectOptions, callback: CallbackFunc): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isInjection(obj: Request): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isInjection(obj: Response): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInjection(obj: Request): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInjection(obj: Response): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type CallbackFunc = js.Function2[/* err */ Error, /* response */ Response, Unit]
   
@@ -103,47 +96,33 @@ object mod {
   trait HTTPMethods extends StObject
   object HTTPMethods {
     
-    @scala.inline
-    def DELETE: typings.lightMyRequest.lightMyRequestStrings.DELETE = "DELETE".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.DELETE]
+    inline def DELETE: typings.lightMyRequest.lightMyRequestStrings.DELETE = "DELETE".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.lightMyRequest.lightMyRequestStrings.GET = "GET".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.GET]
+    inline def GET: typings.lightMyRequest.lightMyRequestStrings.GET = "GET".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.lightMyRequest.lightMyRequestStrings.HEAD = "HEAD".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.HEAD]
+    inline def HEAD: typings.lightMyRequest.lightMyRequestStrings.HEAD = "HEAD".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.HEAD]
     
-    @scala.inline
-    def OPTIONS: typings.lightMyRequest.lightMyRequestStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.OPTIONS]
+    inline def OPTIONS: typings.lightMyRequest.lightMyRequestStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.lightMyRequest.lightMyRequestStrings.PATCH = "PATCH".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.PATCH]
+    inline def PATCH: typings.lightMyRequest.lightMyRequestStrings.PATCH = "PATCH".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.lightMyRequest.lightMyRequestStrings.POST = "POST".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.POST]
+    inline def POST: typings.lightMyRequest.lightMyRequestStrings.POST = "POST".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.POST]
     
-    @scala.inline
-    def PUT: typings.lightMyRequest.lightMyRequestStrings.PUT = "PUT".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.PUT]
+    inline def PUT: typings.lightMyRequest.lightMyRequestStrings.PUT = "PUT".asInstanceOf[typings.lightMyRequest.lightMyRequestStrings.PUT]
     
-    @scala.inline
-    def delete: delete_ = "delete".asInstanceOf[delete_]
+    inline def delete: delete_ = "delete".asInstanceOf[delete_]
     
-    @scala.inline
-    def get: get_ = "get".asInstanceOf[get_]
+    inline def get: get_ = "get".asInstanceOf[get_]
     
-    @scala.inline
-    def head: head_ = "head".asInstanceOf[head_]
+    inline def head: head_ = "head".asInstanceOf[head_]
     
-    @scala.inline
-    def options: options_ = "options".asInstanceOf[options_]
+    inline def options: options_ = "options".asInstanceOf[options_]
     
-    @scala.inline
-    def patch: patch_ = "patch".asInstanceOf[patch_]
+    inline def patch: patch_ = "patch".asInstanceOf[patch_]
     
-    @scala.inline
-    def post: post_ = "post".asInstanceOf[post_]
+    inline def post: post_ = "post".asInstanceOf[post_]
     
-    @scala.inline
-    def put: put_ = "put".asInstanceOf[put_]
+    inline def put: put_ = "put".asInstanceOf[put_]
   }
   
   trait InjectOptions extends StObject {
@@ -174,86 +153,60 @@ object mod {
   }
   object InjectOptions {
     
-    @scala.inline
-    def apply(): InjectOptions = {
+    inline def apply(): InjectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InjectOptions]
     }
     
-    @scala.inline
-    implicit class InjectOptionsMutableBuilder[Self <: InjectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InjectOptions](x: Self) {
       
-      @scala.inline
-      def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
+      inline def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
       
-      @scala.inline
-      def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: IncomingHttpHeaders | OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IncomingHttpHeaders | OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: HTTPMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HTTPMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPath(value: String | Hostname): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | Hostname): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPayload(value: InjectPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: InjectPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
+      inline def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteAddressUndefined: Self = StObject.set(x, "remoteAddress", js.undefined)
+      inline def setRemoteAddressUndefined: Self = StObject.set(x, "remoteAddress", js.undefined)
       
-      @scala.inline
-      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
-      @scala.inline
-      def setSimulate(value: Close): Self = StObject.set(x, "simulate", value.asInstanceOf[js.Any])
+      inline def setSimulate(value: Close): Self = StObject.set(x, "simulate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimulateUndefined: Self = StObject.set(x, "simulate", js.undefined)
+      inline def setSimulateUndefined: Self = StObject.set(x, "simulate", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String | Hostname): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | Hostname): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   

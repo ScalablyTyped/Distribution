@@ -32,37 +32,27 @@ trait StackTrace extends StObject {
 }
 object StackTrace {
   
-  @scala.inline
-  def apply(callFrames: js.Array[CallFrame]): StackTrace = {
+  inline def apply(callFrames: js.Array[CallFrame]): StackTrace = {
     val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTrace]
   }
   
-  @scala.inline
-  implicit class StackTraceMutableBuilder[Self <: StackTrace] (val x: Self) extends AnyVal {
+  extension [Self <: StackTrace](x: Self) {
     
-    @scala.inline
-    def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
+    inline def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
+    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setParent(value: StackTrace): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: StackTrace): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentId(value: StackTraceId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: StackTraceId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

@@ -61,8 +61,7 @@ trait PanResponderGestureState extends StObject {
 }
 object PanResponderGestureState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _accountsForMovesUpTo: Double,
     dx: Double,
     dy: Double,
@@ -79,40 +78,28 @@ object PanResponderGestureState {
     __obj.asInstanceOf[PanResponderGestureState]
   }
   
-  @scala.inline
-  implicit class PanResponderGestureStateMutableBuilder[Self <: PanResponderGestureState] (val x: Self) extends AnyVal {
+  extension [Self <: PanResponderGestureState](x: Self) {
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveX(value: Double): Self = StObject.set(x, "moveX", value.asInstanceOf[js.Any])
+    inline def setMoveX(value: Double): Self = StObject.set(x, "moveX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveY(value: Double): Self = StObject.set(x, "moveY", value.asInstanceOf[js.Any])
+    inline def setMoveY(value: Double): Self = StObject.set(x, "moveY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberActiveTouches(value: Double): Self = StObject.set(x, "numberActiveTouches", value.asInstanceOf[js.Any])
+    inline def setNumberActiveTouches(value: Double): Self = StObject.set(x, "numberActiveTouches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateID(value: Double): Self = StObject.set(x, "stateID", value.asInstanceOf[js.Any])
+    inline def setStateID(value: Double): Self = StObject.set(x, "stateID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVx(value: Double): Self = StObject.set(x, "vx", value.asInstanceOf[js.Any])
+    inline def setVx(value: Double): Self = StObject.set(x, "vx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVy(value: Double): Self = StObject.set(x, "vy", value.asInstanceOf[js.Any])
+    inline def setVy(value: Double): Self = StObject.set(x, "vy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+    inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+    inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_accountsForMovesUpTo(value: Double): Self = StObject.set(x, "_accountsForMovesUpTo", value.asInstanceOf[js.Any])
+    inline def set_accountsForMovesUpTo(value: Double): Self = StObject.set(x, "_accountsForMovesUpTo", value.asInstanceOf[js.Any])
   }
 }

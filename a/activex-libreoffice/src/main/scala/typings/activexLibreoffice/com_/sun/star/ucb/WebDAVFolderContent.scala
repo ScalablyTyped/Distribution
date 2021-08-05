@@ -34,8 +34,7 @@ trait WebDAVFolderContent
      with XContentCreator
 object WebDAVFolderContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

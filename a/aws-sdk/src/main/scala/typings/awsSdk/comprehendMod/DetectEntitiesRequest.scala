@@ -23,28 +23,21 @@ trait DetectEntitiesRequest extends StObject {
 }
 object DetectEntitiesRequest {
   
-  @scala.inline
-  def apply(Text: CustomerInputString): DetectEntitiesRequest = {
+  inline def apply(Text: CustomerInputString): DetectEntitiesRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class DetectEntitiesRequestMutableBuilder[Self <: DetectEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: EntityRecognizerEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: EntityRecognizerEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
+    inline def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

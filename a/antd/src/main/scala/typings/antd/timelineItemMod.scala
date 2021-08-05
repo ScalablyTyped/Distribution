@@ -22,20 +22,16 @@ object timelineItemMod extends Shortcut {
   }
   object TimeLineItemProps_ {
     
-    @scala.inline
-    def apply(): TimeLineItemProps_ = {
+    inline def apply(): TimeLineItemProps_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeLineItemProps_]
     }
     
-    @scala.inline
-    implicit class TimeLineItemProps_MutableBuilder[Self <: TimeLineItemProps_] (val x: Self) extends AnyVal {
+    extension [Self <: TimeLineItemProps_](x: Self) {
       
-      @scala.inline
-      def set__deprecated_do_not_use_it__(value: js.Any): Self = StObject.set(x, "__deprecated_do_not_use_it__", value.asInstanceOf[js.Any])
+      inline def set__deprecated_do_not_use_it__(value: js.Any): Self = StObject.set(x, "__deprecated_do_not_use_it__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__deprecated_do_not_use_it__Undefined: Self = StObject.set(x, "__deprecated_do_not_use_it__", js.undefined)
+      inline def set__deprecated_do_not_use_it__Undefined: Self = StObject.set(x, "__deprecated_do_not_use_it__", js.undefined)
     }
   }
   
@@ -59,62 +55,44 @@ object timelineItemMod extends Shortcut {
   }
   object TimelineItemProps {
     
-    @scala.inline
-    def apply(): TimelineItemProps = {
+    inline def apply(): TimelineItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimelineItemProps]
     }
     
-    @scala.inline
-    implicit class TimelineItemPropsMutableBuilder[Self <: TimelineItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineItemProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDot(value: ReactNode): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: ReactNode): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+      inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

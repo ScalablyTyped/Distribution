@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoLineStyle extends StObject
 object MsoLineStyle {
   
-  @scala.inline
-  def msoLineSingle: `1` = 1.asInstanceOf[`1`]
+  inline def msoLineSingle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoLineStyleMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoLineStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoLineThickBetweenThin: `5` = 5.asInstanceOf[`5`]
+  inline def msoLineThickBetweenThin: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoLineThickThin: `4` = 4.asInstanceOf[`4`]
+  inline def msoLineThickThin: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoLineThinThick: `3` = 3.asInstanceOf[`3`]
+  inline def msoLineThinThick: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoLineThinThin: `2` = 2.asInstanceOf[`2`]
+  inline def msoLineThinThin: `2` = 2.asInstanceOf[`2`]
 }

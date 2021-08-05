@@ -13,22 +13,17 @@ trait PortSet extends StObject {
 }
 object PortSet {
   
-  @scala.inline
-  def apply(): PortSet = {
+  inline def apply(): PortSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortSet]
   }
   
-  @scala.inline
-  implicit class PortSetMutableBuilder[Self <: PortSet] (val x: Self) extends AnyVal {
+  extension [Self <: PortSet](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: VariableDefinitionList): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: VariableDefinitionList): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
     
-    @scala.inline
-    def setDefinitionVarargs(value: VariableDefinition*): Self = StObject.set(x, "Definition", js.Array(value :_*))
+    inline def setDefinitionVarargs(value: VariableDefinition*): Self = StObject.set(x, "Definition", js.Array(value :_*))
   }
 }

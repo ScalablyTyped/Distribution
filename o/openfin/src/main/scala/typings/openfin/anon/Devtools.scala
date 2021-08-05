@@ -16,25 +16,19 @@ trait Devtools extends StObject {
 }
 object Devtools {
   
-  @scala.inline
-  def apply(devtools: Boolean, reload: Boolean, reloadIgnoringCache: Boolean, zoom: Boolean): Devtools = {
+  inline def apply(devtools: Boolean, reload: Boolean, reloadIgnoringCache: Boolean, zoom: Boolean): Devtools = {
     val __obj = js.Dynamic.literal(devtools = devtools.asInstanceOf[js.Any], reload = reload.asInstanceOf[js.Any], reloadIgnoringCache = reloadIgnoringCache.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Devtools]
   }
   
-  @scala.inline
-  implicit class DevtoolsMutableBuilder[Self <: Devtools] (val x: Self) extends AnyVal {
+  extension [Self <: Devtools](x: Self) {
     
-    @scala.inline
-    def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
+    inline def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+    inline def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReloadIgnoringCache(value: Boolean): Self = StObject.set(x, "reloadIgnoringCache", value.asInstanceOf[js.Any])
+    inline def setReloadIgnoringCache(value: Boolean): Self = StObject.set(x, "reloadIgnoringCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

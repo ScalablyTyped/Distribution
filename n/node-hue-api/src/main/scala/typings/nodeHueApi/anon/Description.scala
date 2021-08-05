@@ -18,28 +18,21 @@ trait Description extends StObject {
 }
 object Description {
   
-  @scala.inline
-  def apply(description: String, name: String, number: String, serial: String, udn: String): Description = {
+  inline def apply(description: String, name: String, number: String, serial: String, udn: String): Description = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], udn = udn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Description]
   }
   
-  @scala.inline
-  implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+  extension [Self <: Description](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUdn(value: String): Self = StObject.set(x, "udn", value.asInstanceOf[js.Any])
+    inline def setUdn(value: String): Self = StObject.set(x, "udn", value.asInstanceOf[js.Any])
   }
 }

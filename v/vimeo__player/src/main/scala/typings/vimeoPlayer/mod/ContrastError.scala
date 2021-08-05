@@ -13,16 +13,13 @@ trait ContrastError
 }
 object ContrastError {
   
-  @scala.inline
-  def apply(message: String, method: String): ContrastError = {
+  inline def apply(message: String, method: String): ContrastError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "ContrastError")
     __obj.asInstanceOf[ContrastError]
   }
   
-  @scala.inline
-  implicit class ContrastErrorMutableBuilder[Self <: ContrastError] (val x: Self) extends AnyVal {
+  extension [Self <: ContrastError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.ContrastError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.ContrastError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

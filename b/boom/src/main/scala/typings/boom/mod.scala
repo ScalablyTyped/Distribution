@@ -65,14 +65,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boombaddatamessage-data}
     */
-  @scala.inline
-  def badData[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badData")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badData[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badData[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badData[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badData[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badData")().asInstanceOf[Boom[Data]]
+  inline def badData[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def badData[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badData[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badData")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 502 Bad Gateway error with your error message to the user
@@ -80,14 +76,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boombadgatewaymessage-data}
     */
-  @scala.inline
-  def badGateway[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badGateway[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badGateway[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badGateway[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badGateway[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")().asInstanceOf[Boom[Data]]
+  inline def badGateway[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def badGateway[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badGateway[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badGateway")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   // 5xx
   /**
@@ -97,14 +89,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boombadimplementationmessage-data---alias-internal}
     */
-  @scala.inline
-  def badImplementation[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badImplementation[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badImplementation[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badImplementation[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badImplementation[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")().asInstanceOf[Boom[Data]]
+  inline def badImplementation[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def badImplementation[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badImplementation[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badImplementation")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   // 4xx
   /**
@@ -113,14 +101,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boombadrequestmessage-data}
     */
-  @scala.inline
-  def badRequest[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badRequest[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badRequest[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def badRequest[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badRequest[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")().asInstanceOf[Boom[Data]]
+  inline def badRequest[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def badRequest[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def badRequest[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Decorates an error with the boom properties
@@ -128,10 +112,8 @@ object mod {
     * @param options optional additional options
     * @see {@link https://github.com/hapijs/boom#boomifyerror-options}
     */
-  @scala.inline
-  def boomify(error: Error): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any]).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def boomify(error: Error, options: Message): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def boomify(error: Error): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any]).asInstanceOf[Boom[Null]]
+  inline def boomify(error: Error, options: Message): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
   
   /**
     * Returns a 408 Request Time-out error
@@ -139,14 +121,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomclienttimeoutmessage-data}
     */
-  @scala.inline
-  def clientTimeout[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def clientTimeout[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def clientTimeout[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def clientTimeout[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def clientTimeout[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")().asInstanceOf[Boom[Data]]
+  inline def clientTimeout[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def clientTimeout[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def clientTimeout[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 409 Conflict error
@@ -154,14 +132,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomconflictmessage-data}
     */
-  @scala.inline
-  def conflict[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("conflict")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def conflict[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def conflict[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def conflict[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def conflict[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("conflict")().asInstanceOf[Boom[Data]]
+  inline def conflict[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def conflict[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def conflict[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("conflict")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 413 Request Entity Too Large error
@@ -169,14 +143,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomentitytoolargemessage-data}
     */
-  @scala.inline
-  def entityTooLarge[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def entityTooLarge[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def entityTooLarge[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def entityTooLarge[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def entityTooLarge[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")().asInstanceOf[Boom[Data]]
+  inline def entityTooLarge[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def entityTooLarge[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def entityTooLarge[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("entityTooLarge")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 417 Expectation Failed error
@@ -184,14 +154,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomexpectationfailedmessage-data}
     */
-  @scala.inline
-  def expectationFailed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def expectationFailed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def expectationFailed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def expectationFailed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def expectationFailed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")().asInstanceOf[Boom[Data]]
+  inline def expectationFailed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def expectationFailed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def expectationFailed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("expectationFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 424 Failed Dependency error
@@ -199,14 +165,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomfaileddependencymessage-data}
     */
-  @scala.inline
-  def failedDependency[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def failedDependency[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def failedDependency[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def failedDependency[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def failedDependency[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")().asInstanceOf[Boom[Data]]
+  inline def failedDependency[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def failedDependency[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def failedDependency[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("failedDependency")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 403 Forbidden error
@@ -214,14 +176,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomforbiddenmessage-data}
     */
-  @scala.inline
-  def forbidden[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def forbidden[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def forbidden[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def forbidden[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def forbidden[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")().asInstanceOf[Boom[Data]]
+  inline def forbidden[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def forbidden[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def forbidden[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 504 Gateway Time-out error with your error message to the user
@@ -229,14 +187,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomgatewaytimeoutmessage-data}
     */
-  @scala.inline
-  def gatewayTimeout[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def gatewayTimeout[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def gatewayTimeout[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def gatewayTimeout[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def gatewayTimeout[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")().asInstanceOf[Boom[Data]]
+  inline def gatewayTimeout[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def gatewayTimeout[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def gatewayTimeout[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("gatewayTimeout")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 451 Unavailable For Legal Reasons error
@@ -244,14 +198,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomillegalmessage-data}
     */
-  @scala.inline
-  def illegal[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("illegal")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def illegal[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def illegal[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def illegal[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def illegal[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("illegal")().asInstanceOf[Boom[Data]]
+  inline def illegal[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def illegal[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def illegal[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("illegal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 500 Internal Server Error error
@@ -260,21 +210,16 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boombadimplementationmessage-data---alias-internal}
     */
-  @scala.inline
-  def internal[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("internal")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def internal[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def internal[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def internal[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def internal[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("internal")().asInstanceOf[Boom[Data]]
+  inline def internal[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def internal[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def internal[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Identifies whether an error is a Boom object. Same as calling instanceof Boom.
     * @param error the error object to identify.
     */
-  @scala.inline
-  def isBoom(error: Error): /* is boom.boom.Boom<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(error.asInstanceOf[js.Any]).asInstanceOf[/* is boom.boom.Boom<any> */ Boolean]
+  inline def isBoom(error: Error): /* is boom.boom.Boom<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(error.asInstanceOf[js.Any]).asInstanceOf[/* is boom.boom.Boom<any> */ Boolean]
   
   /**
     * Returns a 411 Length Required error
@@ -282,14 +227,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomlengthrequiredmessage-data}
     */
-  @scala.inline
-  def lengthRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def lengthRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def lengthRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def lengthRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def lengthRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")().asInstanceOf[Boom[Data]]
+  inline def lengthRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def lengthRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def lengthRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 423 Locked error
@@ -297,14 +238,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomlockedmessage-data}
     */
-  @scala.inline
-  def locked[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("locked")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def locked[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def locked[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def locked[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def locked[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("locked")().asInstanceOf[Boom[Data]]
+  inline def locked[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def locked[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def locked[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("locked")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 405 Method Not Allowed error
@@ -313,30 +250,18 @@ object mod {
     * @param allow optional string or array of strings (to be combined and separated by ', ') which is set to the 'Allow' header.
     * @see {@link https://github.com/hapijs/boom#boommethodnotallowedmessage-data-allow}
     */
-  @scala.inline
-  def methodNotAllowed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: String, data: Data, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: String, data: Data, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: String, data: Unit, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: String, data: Unit, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: Unit, data: Data, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: Unit, data: Data, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: Unit, data: Unit, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def methodNotAllowed[Data](message: Unit, data: Unit, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")().asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: String, data: Data, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: String, data: Data, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: String, data: Unit, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: String, data: Unit, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: Unit, data: Data, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: Unit, data: Data, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: Unit, data: Unit, allow: String): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def methodNotAllowed[Data](message: Unit, data: Unit, allow: js.Array[String]): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("methodNotAllowed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], allow.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 406 Not Acceptable error
@@ -344,14 +269,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomnotacceptablemessage-data}
     */
-  @scala.inline
-  def notAcceptable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notAcceptable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notAcceptable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notAcceptable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def notAcceptable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")().asInstanceOf[Boom[Data]]
+  inline def notAcceptable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def notAcceptable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def notAcceptable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notAcceptable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 404 Not Found error
@@ -359,14 +280,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomnotfoundmessage-data}
     */
-  @scala.inline
-  def notFound[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notFound[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notFound[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notFound[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def notFound[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")().asInstanceOf[Boom[Data]]
+  inline def notFound[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def notFound[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def notFound[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notFound")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 501 Not Implemented error with your error message to the user
@@ -374,14 +291,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomnotimplementedmessage-data}
     */
-  @scala.inline
-  def notImplemented[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notImplemented[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notImplemented[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def notImplemented[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def notImplemented[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")().asInstanceOf[Boom[Data]]
+  inline def notImplemented[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def notImplemented[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def notImplemented[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("notImplemented")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 402 Payment Required error
@@ -389,14 +302,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boompaymentrequiredmessage-data}
     */
-  @scala.inline
-  def paymentRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def paymentRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def paymentRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def paymentRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def paymentRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")().asInstanceOf[Boom[Data]]
+  inline def paymentRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def paymentRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def paymentRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 412 Precondition Failed error
@@ -404,14 +313,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boompreconditionfailedmessage-data}
     */
-  @scala.inline
-  def preconditionFailed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def preconditionFailed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def preconditionFailed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def preconditionFailed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def preconditionFailed[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")().asInstanceOf[Boom[Data]]
+  inline def preconditionFailed[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def preconditionFailed[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def preconditionFailed[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionFailed")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 428 Precondition Required error
@@ -419,14 +324,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boompreconditionrequiredmessage-data}
     */
-  @scala.inline
-  def preconditionRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def preconditionRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def preconditionRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def preconditionRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def preconditionRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")().asInstanceOf[Boom[Data]]
+  inline def preconditionRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def preconditionRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def preconditionRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 407 Proxy Authentication Required error
@@ -434,14 +335,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomproxyauthrequiredmessage-data}
     */
-  @scala.inline
-  def proxyAuthRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def proxyAuthRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def proxyAuthRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def proxyAuthRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def proxyAuthRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")().asInstanceOf[Boom[Data]]
+  inline def proxyAuthRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def proxyAuthRequired[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def proxyAuthRequired[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyAuthRequired")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 416 Requested Range Not Satisfiable error
@@ -449,14 +346,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomrangenotsatisfiablemessage-data}
     */
-  @scala.inline
-  def rangeNotSatisfiable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def rangeNotSatisfiable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def rangeNotSatisfiable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def rangeNotSatisfiable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def rangeNotSatisfiable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")().asInstanceOf[Boom[Data]]
+  inline def rangeNotSatisfiable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def rangeNotSatisfiable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def rangeNotSatisfiable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeNotSatisfiable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 410 Gone error
@@ -464,14 +357,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomresourcegonemessage-data}
     */
-  @scala.inline
-  def resourceGone[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def resourceGone[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def resourceGone[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def resourceGone[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def resourceGone[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")().asInstanceOf[Boom[Data]]
+  inline def resourceGone[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def resourceGone[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def resourceGone[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceGone")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 503 Service Unavailable error with your error message to the user
@@ -479,14 +368,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomserverunavailablemessage-data}
     */
-  @scala.inline
-  def serverUnavailable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def serverUnavailable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def serverUnavailable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def serverUnavailable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def serverUnavailable[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")().asInstanceOf[Boom[Data]]
+  inline def serverUnavailable[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def serverUnavailable[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def serverUnavailable[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("serverUnavailable")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 418 I'm a Teapot error
@@ -494,14 +379,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomteapotmessage-data}
     */
-  @scala.inline
-  def teapot[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("teapot")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def teapot[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def teapot[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def teapot[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def teapot[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("teapot")().asInstanceOf[Boom[Data]]
+  inline def teapot[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def teapot[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def teapot[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("teapot")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 429 Too Many Requests error
@@ -509,14 +390,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomtoomanyrequestsmessage-data}
     */
-  @scala.inline
-  def tooManyRequests[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def tooManyRequests[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def tooManyRequests[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def tooManyRequests[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def tooManyRequests[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")().asInstanceOf[Boom[Data]]
+  inline def tooManyRequests[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def tooManyRequests[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def tooManyRequests[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("tooManyRequests")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 401 Unauthorized error
@@ -536,40 +413,23 @@ object mod {
     * If message is unset, the 'error' segment of the header will not be present and isMissing will be true on the error object.
     * @see {@link https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes}
     */
-  @scala.inline
-  def unauthorized(): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")().asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: String): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: String, scheme: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: String, scheme: String, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: String, scheme: js.Array[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: String, scheme: Unit, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Null, scheme: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Null, scheme: String, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Null, scheme: String, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Null, scheme: Unit, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Null, scheme: Unit, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Unit, scheme: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Unit, scheme: String, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Unit, scheme: String, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Unit, scheme: js.Array[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Unit, scheme: Unit, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
-  @scala.inline
-  def unauthorized(message: Unit, scheme: Unit, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")().asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: String): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: String, scheme: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: String, scheme: String, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: String, scheme: js.Array[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: String, scheme: Unit, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Null, scheme: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Null, scheme: String, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Null, scheme: String, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Null, scheme: Unit, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Null, scheme: Unit, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Unit, scheme: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Unit, scheme: String, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Unit, scheme: String, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Unit, scheme: js.Array[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Unit, scheme: Unit, attributes: String): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def unauthorized(message: Unit, scheme: Unit, attributes: StringDictionary[String]): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
   
   /**
     * Returns a 415 Unsupported Media Type error
@@ -577,14 +437,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomunsupportedmediatypemessage-data}
     */
-  @scala.inline
-  def unsupportedMediaType[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def unsupportedMediaType[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def unsupportedMediaType[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def unsupportedMediaType[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def unsupportedMediaType[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")().asInstanceOf[Boom[Data]]
+  inline def unsupportedMediaType[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def unsupportedMediaType[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def unsupportedMediaType[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedMediaType")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * Returns a 414 Request-URI Too Large error
@@ -592,14 +448,10 @@ object mod {
     * @param data optional additional error data.
     * @see {@link https://github.com/hapijs/boom#boomuritoolongmessage-data}
     */
-  @scala.inline
-  def uriTooLong[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")().asInstanceOf[Boom[Data]]
-  @scala.inline
-  def uriTooLong[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def uriTooLong[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
-  @scala.inline
-  def uriTooLong[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def uriTooLong[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")().asInstanceOf[Boom[Data]]
+  inline def uriTooLong[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
+  inline def uriTooLong[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
+  inline def uriTooLong[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("uriTooLong")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
   /**
     * boom provides a set of utilities for returning HTTP errors. Each utility returns a Boom error response object (instance of Error) which includes the following properties:
@@ -636,8 +488,7 @@ object mod {
   }
   object Boom {
     
-    @scala.inline
-    def apply[Data](
+    inline def apply[Data](
       data: Data,
       isBoom: Boolean,
       isServer: Boolean,
@@ -651,32 +502,23 @@ object mod {
       __obj.asInstanceOf[Boom[Data]]
     }
     
-    @scala.inline
-    implicit class BoomMutableBuilder[Self <: Boom[?], Data] (val x: Self & Boom[Data]) extends AnyVal {
+    extension [Self <: Boom[?], Data](x: Self & Boom[Data]) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBoom(value: Boolean): Self = StObject.set(x, "isBoom", value.asInstanceOf[js.Any])
+      inline def setIsBoom(value: Boolean): Self = StObject.set(x, "isBoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMissing(value: Boolean): Self = StObject.set(x, "isMissing", value.asInstanceOf[js.Any])
+      inline def setIsMissing(value: Boolean): Self = StObject.set(x, "isMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMissingUndefined: Self = StObject.set(x, "isMissing", js.undefined)
+      inline def setIsMissingUndefined: Self = StObject.set(x, "isMissing", js.undefined)
       
-      @scala.inline
-      def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
+      inline def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReformat(value: () => String): Self = StObject.set(x, "reformat", js.Any.fromFunction0(value))
+      inline def setReformat(value: () => String): Self = StObject.set(x, "reformat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTypeof(value: () => js.Any): Self = StObject.set(x, "typeof", js.Any.fromFunction0(value))
+      inline def setTypeof(value: () => js.Any): Self = StObject.set(x, "typeof", js.Any.fromFunction0(value))
     }
   }
   
@@ -706,50 +548,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[Data](): Options[Data] = {
+    inline def apply[Data](): Options[Data] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[Data]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], Data] (val x: Self & Options[Data]) extends AnyVal {
+    extension [Self <: Options[?], Data](x: Self & Options[Data]) {
       
-      @scala.inline
-      def setCtor(value: js.Any): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
+      inline def setCtor(value: js.Any): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtorUndefined: Self = StObject.set(x, "ctor", js.undefined)
+      inline def setCtorUndefined: Self = StObject.set(x, "ctor", js.undefined)
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDecorate(value: js.Object): Self = StObject.set(x, "decorate", value.asInstanceOf[js.Any])
+      inline def setDecorate(value: js.Object): Self = StObject.set(x, "decorate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorateUndefined: Self = StObject.set(x, "decorate", js.undefined)
+      inline def setDecorateUndefined: Self = StObject.set(x, "decorate", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
   
@@ -774,23 +602,18 @@ object mod {
   }
   object Output {
     
-    @scala.inline
-    def apply(headers: StringDictionary[String], payload: Payload, statusCode: Double): Output = {
+    inline def apply(headers: StringDictionary[String], payload: Payload, statusCode: Double): Output = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -813,29 +636,22 @@ object mod {
   }
   object Payload {
     
-    @scala.inline
-    def apply(error: String, message: String, statusCode: Double): Payload = {
+    inline def apply(error: String, message: String, statusCode: Double): Payload = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

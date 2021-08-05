@@ -20,7 +20,7 @@ object nonIdealStateMod {
     def this(props: INonIdealStateProps) = this()
     def this(props: INonIdealStateProps, context: js.Any) = this()
     
-    var maybeRenderVisual: js.Any = js.native
+    /* private */ var maybeRenderVisual: js.Any = js.native
   }
   /* static members */
   object NonIdealState {
@@ -32,8 +32,7 @@ object nonIdealStateMod {
     @JSImport("@blueprintjs/core/lib/esm/components/non-ideal-state/nonIdealState", "NonIdealState.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait INonIdealStateProps
@@ -63,47 +62,34 @@ object nonIdealStateMod {
   }
   object INonIdealStateProps {
     
-    @scala.inline
-    def apply(): INonIdealStateProps = {
+    inline def apply(): INonIdealStateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[INonIdealStateProps]
     }
     
-    @scala.inline
-    implicit class INonIdealStatePropsMutableBuilder[Self <: INonIdealStateProps] (val x: Self) extends AnyVal {
+    extension [Self <: INonIdealStateProps](x: Self) {
       
-      @scala.inline
-      def setAction(value: Element): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Element): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDescription(value: ReactChild): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactChild): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

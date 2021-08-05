@@ -8,6 +8,5 @@ object sequelizeCursorPaginationStrings {
   
   @js.native
   sealed trait WithPaginationModel extends StObject
-  @scala.inline
-  def WithPaginationModel: WithPaginationModel = "WithPaginationModel".asInstanceOf[WithPaginationModel]
+  inline def WithPaginationModel: WithPaginationModel = "WithPaginationModel".asInstanceOf[WithPaginationModel]
 }

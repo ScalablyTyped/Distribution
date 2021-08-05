@@ -32,27 +32,22 @@ trait ContainerText extends StObject {
 }
 object ContainerText {
   
-  @scala.inline
-  def apply(): ContainerText = {
+  inline def apply(): ContainerText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerText]
   }
   
-  @scala.inline
-  implicit class ContainerTextMutableBuilder[Self <: ContainerText] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerText](x: Self) {
     
-    @scala.inline
-    def setContainer(
+    inline def setContainer(
       value: PropsOf[
           FC[BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])]
         ]
     ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setText(
+    inline def setText(
       value: PropsOf[
           FC[
             TextProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
@@ -60,7 +55,6 @@ object ContainerText {
         ]
     ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait BiddingStrategy extends StObject {
 }
 object BiddingStrategy {
   
-  @scala.inline
-  def apply(): BiddingStrategy = {
+  inline def apply(): BiddingStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BiddingStrategy]
   }
   
-  @scala.inline
-  implicit class BiddingStrategyMutableBuilder[Self <: BiddingStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: BiddingStrategy](x: Self) {
     
-    @scala.inline
-    def setFixedBid(value: FixedBidStrategy): Self = StObject.set(x, "fixedBid", value.asInstanceOf[js.Any])
+    inline def setFixedBid(value: FixedBidStrategy): Self = StObject.set(x, "fixedBid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedBidUndefined: Self = StObject.set(x, "fixedBid", js.undefined)
+    inline def setFixedBidUndefined: Self = StObject.set(x, "fixedBid", js.undefined)
     
-    @scala.inline
-    def setMaximizeSpendAutoBid(value: MaximizeSpendBidStrategy): Self = StObject.set(x, "maximizeSpendAutoBid", value.asInstanceOf[js.Any])
+    inline def setMaximizeSpendAutoBid(value: MaximizeSpendBidStrategy): Self = StObject.set(x, "maximizeSpendAutoBid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximizeSpendAutoBidUndefined: Self = StObject.set(x, "maximizeSpendAutoBid", js.undefined)
+    inline def setMaximizeSpendAutoBidUndefined: Self = StObject.set(x, "maximizeSpendAutoBid", js.undefined)
     
-    @scala.inline
-    def setPerformanceGoalAutoBid(value: PerformanceGoalBidStrategy): Self = StObject.set(x, "performanceGoalAutoBid", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoalAutoBid(value: PerformanceGoalBidStrategy): Self = StObject.set(x, "performanceGoalAutoBid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalAutoBidUndefined: Self = StObject.set(x, "performanceGoalAutoBid", js.undefined)
+    inline def setPerformanceGoalAutoBidUndefined: Self = StObject.set(x, "performanceGoalAutoBid", js.undefined)
   }
 }

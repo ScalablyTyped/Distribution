@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object scaleMod {
   
-  @scala.inline
-  def apply(value: Double, list: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(value: Double, list: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("mumath/scale", JSImport.Namespace)
   @js.native

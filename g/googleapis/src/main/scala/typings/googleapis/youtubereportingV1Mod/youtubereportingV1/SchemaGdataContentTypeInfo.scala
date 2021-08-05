@@ -36,43 +36,31 @@ trait SchemaGdataContentTypeInfo extends StObject {
 }
 object SchemaGdataContentTypeInfo {
   
-  @scala.inline
-  def apply(): SchemaGdataContentTypeInfo = {
+  inline def apply(): SchemaGdataContentTypeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGdataContentTypeInfo]
   }
   
-  @scala.inline
-  implicit class SchemaGdataContentTypeInfoMutableBuilder[Self <: SchemaGdataContentTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGdataContentTypeInfo](x: Self) {
     
-    @scala.inline
-    def setBestGuess(value: String): Self = StObject.set(x, "bestGuess", value.asInstanceOf[js.Any])
+    inline def setBestGuess(value: String): Self = StObject.set(x, "bestGuess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestGuessUndefined: Self = StObject.set(x, "bestGuess", js.undefined)
+    inline def setBestGuessUndefined: Self = StObject.set(x, "bestGuess", js.undefined)
     
-    @scala.inline
-    def setFromBytes(value: String): Self = StObject.set(x, "fromBytes", value.asInstanceOf[js.Any])
+    inline def setFromBytes(value: String): Self = StObject.set(x, "fromBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromBytesUndefined: Self = StObject.set(x, "fromBytes", js.undefined)
+    inline def setFromBytesUndefined: Self = StObject.set(x, "fromBytes", js.undefined)
     
-    @scala.inline
-    def setFromFileName(value: String): Self = StObject.set(x, "fromFileName", value.asInstanceOf[js.Any])
+    inline def setFromFileName(value: String): Self = StObject.set(x, "fromFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromFileNameUndefined: Self = StObject.set(x, "fromFileName", js.undefined)
+    inline def setFromFileNameUndefined: Self = StObject.set(x, "fromFileName", js.undefined)
     
-    @scala.inline
-    def setFromHeader(value: String): Self = StObject.set(x, "fromHeader", value.asInstanceOf[js.Any])
+    inline def setFromHeader(value: String): Self = StObject.set(x, "fromHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromHeaderUndefined: Self = StObject.set(x, "fromHeader", js.undefined)
+    inline def setFromHeaderUndefined: Self = StObject.set(x, "fromHeader", js.undefined)
     
-    @scala.inline
-    def setFromUrlPath(value: String): Self = StObject.set(x, "fromUrlPath", value.asInstanceOf[js.Any])
+    inline def setFromUrlPath(value: String): Self = StObject.set(x, "fromUrlPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUrlPathUndefined: Self = StObject.set(x, "fromUrlPath", js.undefined)
+    inline def setFromUrlPathUndefined: Self = StObject.set(x, "fromUrlPath", js.undefined)
   }
 }

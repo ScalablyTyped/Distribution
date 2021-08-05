@@ -10,19 +10,15 @@ trait ChartSeriesItemTargetLine extends StObject {
 }
 object ChartSeriesItemTargetLine {
   
-  @scala.inline
-  def apply(): ChartSeriesItemTargetLine = {
+  inline def apply(): ChartSeriesItemTargetLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesItemTargetLine]
   }
   
-  @scala.inline
-  implicit class ChartSeriesItemTargetLineMutableBuilder[Self <: ChartSeriesItemTargetLine] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesItemTargetLine](x: Self) {
     
-    @scala.inline
-    def setWidth(value: Double | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

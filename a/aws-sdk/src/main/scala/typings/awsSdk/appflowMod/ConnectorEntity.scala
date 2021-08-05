@@ -23,28 +23,21 @@ trait ConnectorEntity extends StObject {
 }
 object ConnectorEntity {
   
-  @scala.inline
-  def apply(name: Name): ConnectorEntity = {
+  inline def apply(name: Name): ConnectorEntity = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorEntity]
   }
   
-  @scala.inline
-  implicit class ConnectorEntityMutableBuilder[Self <: ConnectorEntity] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorEntity](x: Self) {
     
-    @scala.inline
-    def setHasNestedEntities(value: Boolean): Self = StObject.set(x, "hasNestedEntities", value.asInstanceOf[js.Any])
+    inline def setHasNestedEntities(value: Boolean): Self = StObject.set(x, "hasNestedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNestedEntitiesUndefined: Self = StObject.set(x, "hasNestedEntities", js.undefined)
+    inline def setHasNestedEntitiesUndefined: Self = StObject.set(x, "hasNestedEntities", js.undefined)
     
-    @scala.inline
-    def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

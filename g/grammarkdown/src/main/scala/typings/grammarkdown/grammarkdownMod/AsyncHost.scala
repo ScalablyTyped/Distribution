@@ -19,13 +19,13 @@ class AsyncHost () extends HostBase {
   def readFile(file: String, cancelable: Cancelable): js.Promise[js.UndefOr[String]] = js.native
   def readFile(file: String, cancelable: CancellationToken): js.Promise[js.UndefOr[String]] = js.native
   
-  var readFileCallback: js.Any = js.native
+  /* private */ var readFileCallback: js.Any = js.native
   
   def writeFile(file: String, text: String): js.Promise[Unit] = js.native
   def writeFile(file: String, text: String, cancelable: Cancelable): js.Promise[Unit] = js.native
   def writeFile(file: String, text: String, cancelable: CancellationToken): js.Promise[Unit] = js.native
   
-  var writeFileCallback: js.Any = js.native
+  /* private */ var writeFileCallback: js.Any = js.native
 }
 /* static members */
 object AsyncHost {
@@ -34,12 +34,8 @@ object AsyncHost {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forFile(content: String): AsyncSingleFileHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[AsyncSingleFileHost]
-  @scala.inline
-  def forFile(content: String, file: String): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
-  @scala.inline
-  def forFile(content: String, file: String, hostFallback: AsyncHost): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
-  @scala.inline
-  def forFile(content: String, file: Unit, hostFallback: AsyncHost): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
+  inline def forFile(content: String): AsyncSingleFileHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[AsyncSingleFileHost]
+  inline def forFile(content: String, file: String): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
+  inline def forFile(content: String, file: String, hostFallback: AsyncHost): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
+  inline def forFile(content: String, file: Unit, hostFallback: AsyncHost): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
 }

@@ -21,35 +21,26 @@ trait GeoJSONTransform
 }
 object GeoJSONTransform {
   
-  @scala.inline
-  def apply(): GeoJSONTransform = {
+  inline def apply(): GeoJSONTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("geojson")
     __obj.asInstanceOf[GeoJSONTransform]
   }
   
-  @scala.inline
-  implicit class GeoJSONTransformMutableBuilder[Self <: GeoJSONTransform] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONTransform](x: Self) {
     
-    @scala.inline
-    def setFields(value: Vector2[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Vector2[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setGeojson(value: FieldRef): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
+    inline def setGeojson(value: FieldRef): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
+    inline def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
     
-    @scala.inline
-    def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setType(value: geojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: geojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

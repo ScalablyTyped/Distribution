@@ -18,25 +18,19 @@ trait AggregateComplianceCount extends StObject {
 }
 object AggregateComplianceCount {
   
-  @scala.inline
-  def apply(): AggregateComplianceCount = {
+  inline def apply(): AggregateComplianceCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregateComplianceCount]
   }
   
-  @scala.inline
-  implicit class AggregateComplianceCountMutableBuilder[Self <: AggregateComplianceCount] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateComplianceCount](x: Self) {
     
-    @scala.inline
-    def setComplianceSummary(value: ComplianceSummary): Self = StObject.set(x, "ComplianceSummary", value.asInstanceOf[js.Any])
+    inline def setComplianceSummary(value: ComplianceSummary): Self = StObject.set(x, "ComplianceSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceSummaryUndefined: Self = StObject.set(x, "ComplianceSummary", js.undefined)
+    inline def setComplianceSummaryUndefined: Self = StObject.set(x, "ComplianceSummary", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: StringWithCharLimit256): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: StringWithCharLimit256): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

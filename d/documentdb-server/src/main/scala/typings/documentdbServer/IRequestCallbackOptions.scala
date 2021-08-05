@@ -18,22 +18,17 @@ trait IRequestCallbackOptions extends StObject {
 }
 object IRequestCallbackOptions {
   
-  @scala.inline
-  def apply(currentCollectionSizeInMB: String, maxCollectionSizeInMB: String, notModified: Boolean): IRequestCallbackOptions = {
+  inline def apply(currentCollectionSizeInMB: String, maxCollectionSizeInMB: String, notModified: Boolean): IRequestCallbackOptions = {
     val __obj = js.Dynamic.literal(currentCollectionSizeInMB = currentCollectionSizeInMB.asInstanceOf[js.Any], maxCollectionSizeInMB = maxCollectionSizeInMB.asInstanceOf[js.Any], notModified = notModified.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestCallbackOptions]
   }
   
-  @scala.inline
-  implicit class IRequestCallbackOptionsMutableBuilder[Self <: IRequestCallbackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRequestCallbackOptions](x: Self) {
     
-    @scala.inline
-    def setCurrentCollectionSizeInMB(value: String): Self = StObject.set(x, "currentCollectionSizeInMB", value.asInstanceOf[js.Any])
+    inline def setCurrentCollectionSizeInMB(value: String): Self = StObject.set(x, "currentCollectionSizeInMB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCollectionSizeInMB(value: String): Self = StObject.set(x, "maxCollectionSizeInMB", value.asInstanceOf[js.Any])
+    inline def setMaxCollectionSizeInMB(value: String): Self = StObject.set(x, "maxCollectionSizeInMB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotModified(value: Boolean): Self = StObject.set(x, "notModified", value.asInstanceOf[js.Any])
+    inline def setNotModified(value: Boolean): Self = StObject.set(x, "notModified", value.asInstanceOf[js.Any])
   }
 }

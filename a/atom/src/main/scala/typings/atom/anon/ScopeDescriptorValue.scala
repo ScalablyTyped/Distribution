@@ -13,19 +13,15 @@ trait ScopeDescriptorValue extends StObject {
 }
 object ScopeDescriptorValue {
   
-  @scala.inline
-  def apply(scopeDescriptor: typings.atom.mod.ScopeDescriptor, value: StringDictionary[js.Array[String]]): ScopeDescriptorValue = {
+  inline def apply(scopeDescriptor: typings.atom.mod.ScopeDescriptor, value: StringDictionary[js.Array[String]]): ScopeDescriptorValue = {
     val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopeDescriptorValue]
   }
   
-  @scala.inline
-  implicit class ScopeDescriptorValueMutableBuilder[Self <: ScopeDescriptorValue] (val x: Self) extends AnyVal {
+  extension [Self <: ScopeDescriptorValue](x: Self) {
     
-    @scala.inline
-    def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
+    inline def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

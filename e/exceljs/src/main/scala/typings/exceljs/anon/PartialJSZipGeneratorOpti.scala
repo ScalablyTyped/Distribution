@@ -15,28 +15,21 @@ trait PartialJSZipGeneratorOpti extends StObject {
 }
 object PartialJSZipGeneratorOpti {
   
-  @scala.inline
-  def apply(): PartialJSZipGeneratorOpti = {
+  inline def apply(): PartialJSZipGeneratorOpti = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialJSZipGeneratorOpti]
   }
   
-  @scala.inline
-  implicit class PartialJSZipGeneratorOptiMutableBuilder[Self <: PartialJSZipGeneratorOpti] (val x: Self) extends AnyVal {
+  extension [Self <: PartialJSZipGeneratorOpti](x: Self) {
     
-    @scala.inline
-    def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+    inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+    inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
     
-    @scala.inline
-    def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+    inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
   }
 }

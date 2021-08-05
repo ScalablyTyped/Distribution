@@ -18,25 +18,19 @@ trait SqlQueryDatasetAction extends StObject {
 }
 object SqlQueryDatasetAction {
   
-  @scala.inline
-  def apply(sqlQuery: SqlQuery): SqlQueryDatasetAction = {
+  inline def apply(sqlQuery: SqlQuery): SqlQueryDatasetAction = {
     val __obj = js.Dynamic.literal(sqlQuery = sqlQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlQueryDatasetAction]
   }
   
-  @scala.inline
-  implicit class SqlQueryDatasetActionMutableBuilder[Self <: SqlQueryDatasetAction] (val x: Self) extends AnyVal {
+  extension [Self <: SqlQueryDatasetAction](x: Self) {
     
-    @scala.inline
-    def setFilters(value: QueryFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: QueryFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setSqlQuery(value: SqlQuery): Self = StObject.set(x, "sqlQuery", value.asInstanceOf[js.Any])
+    inline def setSqlQuery(value: SqlQuery): Self = StObject.set(x, "sqlQuery", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait Route[T /* <: typings.reactNativeTabView.typesMod.Route */] extends StObje
 }
 object Route {
   
-  @scala.inline
-  def apply[T /* <: typings.reactNativeTabView.typesMod.Route */](route: T): Route[T] = {
+  inline def apply[T /* <: typings.reactNativeTabView.typesMod.Route */](route: T): Route[T] = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route[T]]
   }
   
-  @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route[?], T /* <: typings.reactNativeTabView.typesMod.Route */] (val x: Self & Route[T]) extends AnyVal {
+  extension [Self <: Route[?], T /* <: typings.reactNativeTabView.typesMod.Route */](x: Self & Route[T]) {
     
-    @scala.inline
-    def setRoute(value: T): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: T): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

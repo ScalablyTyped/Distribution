@@ -18,25 +18,19 @@ trait StatusReport extends StObject {
 }
 object StatusReport {
   
-  @scala.inline
-  def apply(): StatusReport = {
+  inline def apply(): StatusReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatusReport]
   }
   
-  @scala.inline
-  implicit class StatusReportMutableBuilder[Self <: StatusReport] (val x: Self) extends AnyVal {
+  extension [Self <: StatusReport](x: Self) {
     
-    @scala.inline
-    def setCheckedTime(value: TimeStamp): Self = StObject.set(x, "CheckedTime", value.asInstanceOf[js.Any])
+    inline def setCheckedTime(value: TimeStamp): Self = StObject.set(x, "CheckedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedTimeUndefined: Self = StObject.set(x, "CheckedTime", js.undefined)
+    inline def setCheckedTimeUndefined: Self = StObject.set(x, "CheckedTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

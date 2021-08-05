@@ -23,31 +23,23 @@ trait InitiateJobOutput extends StObject {
 }
 object InitiateJobOutput {
   
-  @scala.inline
-  def apply(): InitiateJobOutput = {
+  inline def apply(): InitiateJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitiateJobOutput]
   }
   
-  @scala.inline
-  implicit class InitiateJobOutputMutableBuilder[Self <: InitiateJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateJobOutput](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setJobOutputPath(value: String): Self = StObject.set(x, "jobOutputPath", value.asInstanceOf[js.Any])
+    inline def setJobOutputPath(value: String): Self = StObject.set(x, "jobOutputPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobOutputPathUndefined: Self = StObject.set(x, "jobOutputPath", js.undefined)
+    inline def setJobOutputPathUndefined: Self = StObject.set(x, "jobOutputPath", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

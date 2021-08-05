@@ -61,8 +61,7 @@ trait orderInfoOptions
 }
 object orderInfoOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appKey: String,
     bizInfo: String,
     dealId: String,
@@ -75,31 +74,22 @@ object orderInfoOptions {
     __obj.asInstanceOf[orderInfoOptions]
   }
   
-  @scala.inline
-  implicit class orderInfoOptionsMutableBuilder[Self <: orderInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: orderInfoOptions](x: Self) {
     
-    @scala.inline
-    def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
+    inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBizInfo(value: String): Self = StObject.set(x, "bizInfo", value.asInstanceOf[js.Any])
+    inline def setBizInfo(value: String): Self = StObject.set(x, "bizInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
+    inline def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealTitle(value: String): Self = StObject.set(x, "dealTitle", value.asInstanceOf[js.Any])
+    inline def setDealTitle(value: String): Self = StObject.set(x, "dealTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaSign(value: String): Self = StObject.set(x, "rsaSign", value.asInstanceOf[js.Any])
+    inline def setRsaSign(value: String): Self = StObject.set(x, "rsaSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignFieldsRange(value: `1`): Self = StObject.set(x, "signFieldsRange", value.asInstanceOf[js.Any])
+    inline def setSignFieldsRange(value: `1`): Self = StObject.set(x, "signFieldsRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAmount(value: String): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
+    inline def setTotalAmount(value: String): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpOrderId(value: String): Self = StObject.set(x, "tpOrderId", value.asInstanceOf[js.Any])
+    inline def setTpOrderId(value: String): Self = StObject.set(x, "tpOrderId", value.asInstanceOf[js.Any])
   }
 }

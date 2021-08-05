@@ -8,11 +8,9 @@ object motionScrollStrings {
   
   @js.native
   sealed trait x extends StObject
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait y extends StObject
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  inline def y: y = "y".asInstanceOf[y]
 }

@@ -21,19 +21,15 @@ trait SchemaGooglePrivacyDlpV2CryptoHashConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CryptoHashConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CryptoHashConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CryptoHashConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CryptoHashConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CryptoHashConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CryptoHashConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CryptoHashConfig](x: Self) {
     
-    @scala.inline
-    def setCryptoKey(value: SchemaGooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
+    inline def setCryptoKey(value: SchemaGooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
+    inline def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
   }
 }

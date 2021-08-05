@@ -15,8 +15,7 @@ object testFrameworkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def runTestInFiberContext(
+  inline def runTestInFiberContext(
     isSpec: Boolean,
     beforeFn: js.Function,
     beforeArgsFn: HookFnArgs[js.Any],
@@ -25,8 +24,7 @@ object testFrameworkMod {
     fnName: String,
     cid: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def runTestInFiberContext(
+  inline def runTestInFiberContext(
     isSpec: Boolean,
     beforeFn: js.Function,
     beforeArgsFn: HookFnArgs[js.Any],
@@ -37,8 +35,7 @@ object testFrameworkMod {
     scope: Global & (/* globalThis */ js.Any)
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def testFnWrapper(
+  inline def testFnWrapper(
     args_0: String,
     args_1: SpecFunction,
     args_2: BeforeHookParam[js.Any],

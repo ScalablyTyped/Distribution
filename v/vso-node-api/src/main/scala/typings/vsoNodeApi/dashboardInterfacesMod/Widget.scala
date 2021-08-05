@@ -62,8 +62,7 @@ trait Widget extends StObject {
 }
 object Widget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     allowedSizes: js.Array[WidgetSize],
     artifactId: String,
@@ -90,73 +89,50 @@ object Widget {
     __obj.asInstanceOf[Widget]
   }
   
-  @scala.inline
-  implicit class WidgetMutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
+  extension [Self <: Widget](x: Self) {
     
-    @scala.inline
-    def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
+    inline def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value :_*))
+    inline def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
+    inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationContributionId(value: String): Self = StObject.set(x, "configurationContributionId", value.asInstanceOf[js.Any])
+    inline def setConfigurationContributionId(value: String): Self = StObject.set(x, "configurationContributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationContributionRelativeId(value: String): Self = StObject.set(x, "configurationContributionRelativeId", value.asInstanceOf[js.Any])
+    inline def setConfigurationContributionRelativeId(value: String): Self = StObject.set(x, "configurationContributionRelativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
+    inline def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
+    inline def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboard(value: Dashboard): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
+    inline def setDashboard(value: Dashboard): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNameConfigurable(value: Boolean): Self = StObject.set(x, "isNameConfigurable", value.asInstanceOf[js.Any])
+    inline def setIsNameConfigurable(value: Boolean): Self = StObject.set(x, "isNameConfigurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightboxOptions(value: LightboxOptions): Self = StObject.set(x, "lightboxOptions", value.asInstanceOf[js.Any])
+    inline def setLightboxOptions(value: LightboxOptions): Self = StObject.set(x, "lightboxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingImageUrl(value: String): Self = StObject.set(x, "loadingImageUrl", value.asInstanceOf[js.Any])
+    inline def setLoadingImageUrl(value: String): Self = StObject.set(x, "loadingImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: WidgetPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: WidgetPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsVersion(value: SemanticVersion): Self = StObject.set(x, "settingsVersion", value.asInstanceOf[js.Any])
+    inline def setSettingsVersion(value: SemanticVersion): Self = StObject.set(x, "settingsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: WidgetSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: WidgetSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
+    inline def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

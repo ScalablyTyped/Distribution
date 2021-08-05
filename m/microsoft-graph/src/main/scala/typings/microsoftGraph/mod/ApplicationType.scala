@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationType extends StObject
 object ApplicationType {
   
-  @scala.inline
-  def desktop: typings.microsoftGraph.microsoftGraphStrings.desktop = "desktop".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.desktop]
+  inline def desktop: typings.microsoftGraph.microsoftGraphStrings.desktop = "desktop".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.desktop]
   
-  @scala.inline
-  def universal: typings.microsoftGraph.microsoftGraphStrings.universal = "universal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.universal]
+  inline def universal: typings.microsoftGraph.microsoftGraphStrings.universal = "universal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.universal]
 }

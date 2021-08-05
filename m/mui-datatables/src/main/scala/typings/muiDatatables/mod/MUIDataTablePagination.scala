@@ -20,8 +20,7 @@ trait MUIDataTablePagination extends StObject {
 }
 object MUIDataTablePagination {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeRowsPerPage: js.Any => js.Any,
     count: Double,
     options: MUIDataTableOptions,
@@ -32,22 +31,16 @@ object MUIDataTablePagination {
     __obj.asInstanceOf[MUIDataTablePagination]
   }
   
-  @scala.inline
-  implicit class MUIDataTablePaginationMutableBuilder[Self <: MUIDataTablePagination] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTablePagination](x: Self) {
     
-    @scala.inline
-    def setChangeRowsPerPage(value: js.Any => js.Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
+    inline def setChangeRowsPerPage(value: js.Any => js.Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
+    inline def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
   }
 }

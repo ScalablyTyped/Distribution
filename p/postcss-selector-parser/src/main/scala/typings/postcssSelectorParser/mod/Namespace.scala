@@ -31,8 +31,7 @@ trait Namespace[Value /* <: js.UndefOr[String] */]
 }
 object Namespace {
   
-  @scala.inline
-  def apply[Value /* <: js.UndefOr[String] */](
+  inline def apply[Value /* <: js.UndefOr[String] */](
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -59,19 +58,14 @@ object Namespace {
     __obj.asInstanceOf[Namespace[Value]]
   }
   
-  @scala.inline
-  implicit class NamespaceMutableBuilder[Self <: Namespace[?], Value /* <: js.UndefOr[String] */] (val x: Self & Namespace[Value]) extends AnyVal {
+  extension [Self <: Namespace[?], Value /* <: js.UndefOr[String] */](x: Self & Namespace[Value]) {
     
-    @scala.inline
-    def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceString(value: String): Self = StObject.set(x, "namespaceString", value.asInstanceOf[js.Any])
+    inline def setNamespaceString(value: String): Self = StObject.set(x, "namespaceString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNs(value: String | `true`): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+    inline def setNs(value: String | `true`): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifiedName(value: String => String): Self = StObject.set(x, "qualifiedName", js.Any.fromFunction1(value))
+    inline def setQualifiedName(value: String => String): Self = StObject.set(x, "qualifiedName", js.Any.fromFunction1(value))
   }
 }

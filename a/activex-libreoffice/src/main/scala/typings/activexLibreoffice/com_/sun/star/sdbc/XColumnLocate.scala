@@ -30,8 +30,7 @@ trait XColumnLocate
 }
 object XColumnLocate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     findColumn: String => Double,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XColumnLocate {
     __obj.asInstanceOf[XColumnLocate]
   }
   
-  @scala.inline
-  implicit class XColumnLocateMutableBuilder[Self <: XColumnLocate] (val x: Self) extends AnyVal {
+  extension [Self <: XColumnLocate](x: Self) {
     
-    @scala.inline
-    def setFindColumn(value: String => Double): Self = StObject.set(x, "findColumn", js.Any.fromFunction1(value))
+    inline def setFindColumn(value: String => Double): Self = StObject.set(x, "findColumn", js.Any.fromFunction1(value))
   }
 }

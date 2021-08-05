@@ -18,28 +18,21 @@ trait ServiceUpdatesMessage extends StObject {
 }
 object ServiceUpdatesMessage {
   
-  @scala.inline
-  def apply(): ServiceUpdatesMessage = {
+  inline def apply(): ServiceUpdatesMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceUpdatesMessage]
   }
   
-  @scala.inline
-  implicit class ServiceUpdatesMessageMutableBuilder[Self <: ServiceUpdatesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceUpdatesMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setServiceUpdates(value: ServiceUpdateList): Self = StObject.set(x, "ServiceUpdates", value.asInstanceOf[js.Any])
+    inline def setServiceUpdates(value: ServiceUpdateList): Self = StObject.set(x, "ServiceUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUpdatesUndefined: Self = StObject.set(x, "ServiceUpdates", js.undefined)
+    inline def setServiceUpdatesUndefined: Self = StObject.set(x, "ServiceUpdates", js.undefined)
     
-    @scala.inline
-    def setServiceUpdatesVarargs(value: ServiceUpdate*): Self = StObject.set(x, "ServiceUpdates", js.Array(value :_*))
+    inline def setServiceUpdatesVarargs(value: ServiceUpdate*): Self = StObject.set(x, "ServiceUpdates", js.Array(value :_*))
   }
 }

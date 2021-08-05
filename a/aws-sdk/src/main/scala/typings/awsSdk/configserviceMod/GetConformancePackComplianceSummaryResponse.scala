@@ -18,28 +18,21 @@ trait GetConformancePackComplianceSummaryResponse extends StObject {
 }
 object GetConformancePackComplianceSummaryResponse {
   
-  @scala.inline
-  def apply(): GetConformancePackComplianceSummaryResponse = {
+  inline def apply(): GetConformancePackComplianceSummaryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConformancePackComplianceSummaryResponse]
   }
   
-  @scala.inline
-  implicit class GetConformancePackComplianceSummaryResponseMutableBuilder[Self <: GetConformancePackComplianceSummaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConformancePackComplianceSummaryResponse](x: Self) {
     
-    @scala.inline
-    def setConformancePackComplianceSummaryList(value: ConformancePackComplianceSummaryList): Self = StObject.set(x, "ConformancePackComplianceSummaryList", value.asInstanceOf[js.Any])
+    inline def setConformancePackComplianceSummaryList(value: ConformancePackComplianceSummaryList): Self = StObject.set(x, "ConformancePackComplianceSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackComplianceSummaryListUndefined: Self = StObject.set(x, "ConformancePackComplianceSummaryList", js.undefined)
+    inline def setConformancePackComplianceSummaryListUndefined: Self = StObject.set(x, "ConformancePackComplianceSummaryList", js.undefined)
     
-    @scala.inline
-    def setConformancePackComplianceSummaryListVarargs(value: ConformancePackComplianceSummary*): Self = StObject.set(x, "ConformancePackComplianceSummaryList", js.Array(value :_*))
+    inline def setConformancePackComplianceSummaryListVarargs(value: ConformancePackComplianceSummary*): Self = StObject.set(x, "ConformancePackComplianceSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

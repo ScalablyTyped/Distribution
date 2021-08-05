@@ -9,8 +9,7 @@ trait NetworkItem
      with INetworkItem
 object NetworkItem {
   
-  @scala.inline
-  def apply(getNetworkTypes: () => NetworkTypes, networkId: String): NetworkItem = {
+  inline def apply(getNetworkTypes: () => NetworkTypes, networkId: String): NetworkItem = {
     val __obj = js.Dynamic.literal(getNetworkTypes = js.Any.fromFunction0(getNetworkTypes), networkId = networkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkItem]
   }

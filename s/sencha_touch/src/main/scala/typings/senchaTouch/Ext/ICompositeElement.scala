@@ -121,73 +121,55 @@ trait ICompositeElement
 }
 object ICompositeElement {
   
-  @scala.inline
-  def apply(): ICompositeElement = {
+  inline def apply(): ICompositeElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICompositeElement]
   }
   
-  @scala.inline
-  implicit class ICompositeElementMutableBuilder[Self <: ICompositeElement] (val x: Self) extends AnyVal {
+  extension [Self <: ICompositeElement](x: Self) {
     
-    @scala.inline
-    def setAdd(
+    inline def setAdd(
       value: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddListener(
+    inline def setAddListener(
       value: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
+    inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setEach(
+    inline def setEach(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setFill(value: /* els */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* els */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setRemoveElement(
+    inline def setRemoveElement(
       value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
+    inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
     
-    @scala.inline
-    def setReplaceElement(
+    inline def setReplaceElement(
       value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
+    inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
     
-    @scala.inline
-    def setSelect(
+    inline def setSelect(
       value: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlShiftState extends StObject
 object OlShiftState {
   
-  @scala.inline
-  def olShiftStateAltMask: `4` = 4.asInstanceOf[`4`]
+  inline def olShiftStateAltMask: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olShiftStateCtrlMask: `2` = 2.asInstanceOf[`2`]
+  inline def olShiftStateCtrlMask: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olShiftStateShiftMask: `1` = 1.asInstanceOf[`1`]
+  inline def olShiftStateShiftMask: `1` = 1.asInstanceOf[`1`]
 }

@@ -35,62 +35,44 @@ object marketingPageLayoutContentMod {
   }
   object MarketingPageLayoutContentProps {
     
-    @scala.inline
-    def apply(): MarketingPageLayoutContentProps = {
+    inline def apply(): MarketingPageLayoutContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarketingPageLayoutContentProps]
     }
     
-    @scala.inline
-    implicit class MarketingPageLayoutContentPropsMutableBuilder[Self <: MarketingPageLayoutContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: MarketingPageLayoutContentProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: ReactNode): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: ReactNode): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setOverline(value: ReactNode): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
+      inline def setOverline(value: ReactNode): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlineUndefined: Self = StObject.set(x, "overline", js.undefined)
+      inline def setOverlineUndefined: Self = StObject.set(x, "overline", js.undefined)
       
-      @scala.inline
-      def setSize(value: MarketingPageLayoutContentSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: MarketingPageLayoutContentSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -101,10 +83,8 @@ object marketingPageLayoutContentMod {
   trait MarketingPageLayoutContentSize extends StObject
   object MarketingPageLayoutContentSize {
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
   }
 }

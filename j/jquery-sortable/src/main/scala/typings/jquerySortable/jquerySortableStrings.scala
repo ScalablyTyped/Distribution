@@ -8,26 +8,21 @@ object jquerySortableStrings {
   
   @js.native
   sealed trait destroy extends StObject
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait disable extends StObject
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
+  inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
   sealed trait enable extends StObject
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
+  inline def enable: enable = "enable".asInstanceOf[enable]
   
   @js.native
   sealed trait refresh extends StObject
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
   sealed trait serialize extends StObject
-  @scala.inline
-  def serialize: serialize = "serialize".asInstanceOf[serialize]
+  inline def serialize: serialize = "serialize".asInstanceOf[serialize]
 }

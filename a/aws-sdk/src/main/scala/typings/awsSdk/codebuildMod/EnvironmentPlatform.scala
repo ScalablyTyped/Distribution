@@ -18,28 +18,21 @@ trait EnvironmentPlatform extends StObject {
 }
 object EnvironmentPlatform {
   
-  @scala.inline
-  def apply(): EnvironmentPlatform = {
+  inline def apply(): EnvironmentPlatform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentPlatform]
   }
   
-  @scala.inline
-  implicit class EnvironmentPlatformMutableBuilder[Self <: EnvironmentPlatform] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentPlatform](x: Self) {
     
-    @scala.inline
-    def setLanguages(value: EnvironmentLanguages): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: EnvironmentLanguages): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: EnvironmentLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: EnvironmentLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
-    @scala.inline
-    def setPlatform(value: PlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: PlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

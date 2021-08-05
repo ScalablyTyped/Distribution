@@ -31,31 +31,23 @@ trait IonChip extends StObject {
 }
 object IonChip {
   
-  @scala.inline
-  def apply(disabled: Boolean, outline: Boolean): IonChip = {
+  inline def apply(disabled: Boolean, outline: Boolean): IonChip = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonChip]
   }
   
-  @scala.inline
-  implicit class IonChipMutableBuilder[Self <: IonChip] (val x: Self) extends AnyVal {
+  extension [Self <: IonChip](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
   }
 }

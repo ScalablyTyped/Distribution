@@ -23,34 +23,25 @@ trait RecordingGroup extends StObject {
 }
 object RecordingGroup {
   
-  @scala.inline
-  def apply(): RecordingGroup = {
+  inline def apply(): RecordingGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordingGroup]
   }
   
-  @scala.inline
-  implicit class RecordingGroupMutableBuilder[Self <: RecordingGroup] (val x: Self) extends AnyVal {
+  extension [Self <: RecordingGroup](x: Self) {
     
-    @scala.inline
-    def setAllSupported(value: AllSupported): Self = StObject.set(x, "allSupported", value.asInstanceOf[js.Any])
+    inline def setAllSupported(value: AllSupported): Self = StObject.set(x, "allSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllSupportedUndefined: Self = StObject.set(x, "allSupported", js.undefined)
+    inline def setAllSupportedUndefined: Self = StObject.set(x, "allSupported", js.undefined)
     
-    @scala.inline
-    def setIncludeGlobalResourceTypes(value: IncludeGlobalResourceTypes): Self = StObject.set(x, "includeGlobalResourceTypes", value.asInstanceOf[js.Any])
+    inline def setIncludeGlobalResourceTypes(value: IncludeGlobalResourceTypes): Self = StObject.set(x, "includeGlobalResourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGlobalResourceTypesUndefined: Self = StObject.set(x, "includeGlobalResourceTypes", js.undefined)
+    inline def setIncludeGlobalResourceTypesUndefined: Self = StObject.set(x, "includeGlobalResourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypes(value: ResourceTypeList): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: ResourceTypeList): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

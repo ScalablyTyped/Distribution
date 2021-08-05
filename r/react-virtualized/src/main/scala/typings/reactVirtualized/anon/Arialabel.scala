@@ -25,8 +25,7 @@ trait Arialabel extends StObject {
 }
 object Arialabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `aria-label`: Requireable[String],
     cellCount: Validator[Double],
     cellGroupRenderer: Validator[CollectionCellGroupRenderer],
@@ -39,25 +38,18 @@ object Arialabel {
     __obj.asInstanceOf[Arialabel]
   }
   
-  @scala.inline
-  implicit class ArialabelMutableBuilder[Self <: Arialabel] (val x: Self) extends AnyVal {
+  extension [Self <: Arialabel](x: Self) {
     
-    @scala.inline
-    def `setAria-label`(value: Requireable[String]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+    inline def `setAria-label`(value: Requireable[String]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellCount(value: Validator[Double]): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+    inline def setCellCount(value: Validator[Double]): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellGroupRenderer(value: Validator[CollectionCellGroupRenderer]): Self = StObject.set(x, "cellGroupRenderer", value.asInstanceOf[js.Any])
+    inline def setCellGroupRenderer(value: Validator[CollectionCellGroupRenderer]): Self = StObject.set(x, "cellGroupRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellRenderer(value: Validator[CollectionCellRenderer]): Self = StObject.set(x, "cellRenderer", value.asInstanceOf[js.Any])
+    inline def setCellRenderer(value: Validator[CollectionCellRenderer]): Self = StObject.set(x, "cellRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellSizeAndPositionGetter(value: Validator[CollectionCellSizeAndPositionGetter]): Self = StObject.set(x, "cellSizeAndPositionGetter", value.asInstanceOf[js.Any])
+    inline def setCellSizeAndPositionGetter(value: Validator[CollectionCellSizeAndPositionGetter]): Self = StObject.set(x, "cellSizeAndPositionGetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionSize(value: Requireable[Double]): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
+    inline def setSectionSize(value: Requireable[Double]): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
   }
 }

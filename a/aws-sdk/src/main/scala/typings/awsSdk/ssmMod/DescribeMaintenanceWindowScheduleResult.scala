@@ -18,28 +18,21 @@ trait DescribeMaintenanceWindowScheduleResult extends StObject {
 }
 object DescribeMaintenanceWindowScheduleResult {
   
-  @scala.inline
-  def apply(): DescribeMaintenanceWindowScheduleResult = {
+  inline def apply(): DescribeMaintenanceWindowScheduleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMaintenanceWindowScheduleResult]
   }
   
-  @scala.inline
-  implicit class DescribeMaintenanceWindowScheduleResultMutableBuilder[Self <: DescribeMaintenanceWindowScheduleResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMaintenanceWindowScheduleResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScheduledWindowExecutions(value: ScheduledWindowExecutionList): Self = StObject.set(x, "ScheduledWindowExecutions", value.asInstanceOf[js.Any])
+    inline def setScheduledWindowExecutions(value: ScheduledWindowExecutionList): Self = StObject.set(x, "ScheduledWindowExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledWindowExecutionsUndefined: Self = StObject.set(x, "ScheduledWindowExecutions", js.undefined)
+    inline def setScheduledWindowExecutionsUndefined: Self = StObject.set(x, "ScheduledWindowExecutions", js.undefined)
     
-    @scala.inline
-    def setScheduledWindowExecutionsVarargs(value: ScheduledWindowExecution*): Self = StObject.set(x, "ScheduledWindowExecutions", js.Array(value :_*))
+    inline def setScheduledWindowExecutionsVarargs(value: ScheduledWindowExecution*): Self = StObject.set(x, "ScheduledWindowExecutions", js.Array(value :_*))
   }
 }

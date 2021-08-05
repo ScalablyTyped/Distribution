@@ -23,31 +23,23 @@ trait AwsRedshiftClusterDeferredMaintenanceWindow extends StObject {
 }
 object AwsRedshiftClusterDeferredMaintenanceWindow {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterDeferredMaintenanceWindow = {
+  inline def apply(): AwsRedshiftClusterDeferredMaintenanceWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterDeferredMaintenanceWindow]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterDeferredMaintenanceWindowMutableBuilder[Self <: AwsRedshiftClusterDeferredMaintenanceWindow] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterDeferredMaintenanceWindow](x: Self) {
     
-    @scala.inline
-    def setDeferMaintenanceEndTime(value: NonEmptyString): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceEndTime(value: NonEmptyString): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
+    inline def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceIdentifier(value: NonEmptyString): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceIdentifier(value: NonEmptyString): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
+    inline def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceStartTime(value: NonEmptyString): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceStartTime(value: NonEmptyString): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
+    inline def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
   }
 }

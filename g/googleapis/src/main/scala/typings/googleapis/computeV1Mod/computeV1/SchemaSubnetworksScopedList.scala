@@ -20,28 +20,21 @@ trait SchemaSubnetworksScopedList extends StObject {
 }
 object SchemaSubnetworksScopedList {
   
-  @scala.inline
-  def apply(): SchemaSubnetworksScopedList = {
+  inline def apply(): SchemaSubnetworksScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubnetworksScopedList]
   }
   
-  @scala.inline
-  implicit class SchemaSubnetworksScopedListMutableBuilder[Self <: SchemaSubnetworksScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubnetworksScopedList](x: Self) {
     
-    @scala.inline
-    def setSubnetworks(value: js.Array[SchemaSubnetwork]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
+    inline def setSubnetworks(value: js.Array[SchemaSubnetwork]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
+    inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    @scala.inline
-    def setSubnetworksVarargs(value: SchemaSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: SchemaSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

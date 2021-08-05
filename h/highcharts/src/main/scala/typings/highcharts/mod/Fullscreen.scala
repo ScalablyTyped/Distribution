@@ -46,31 +46,23 @@ trait Fullscreen extends StObject {
 }
 object Fullscreen {
   
-  @scala.inline
-  def apply(chart: Chart, close: () => Unit, open: () => Unit, toggle: () => Unit): Fullscreen = {
+  inline def apply(chart: Chart, close: () => Unit, open: () => Unit, toggle: () => Unit): Fullscreen = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), toggle = js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[Fullscreen]
   }
   
-  @scala.inline
-  implicit class FullscreenMutableBuilder[Self <: Fullscreen] (val x: Self) extends AnyVal {
+  extension [Self <: Fullscreen](x: Self) {
     
-    @scala.inline
-    def setChart(value: Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+    inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

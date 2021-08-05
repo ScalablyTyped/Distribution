@@ -14,25 +14,19 @@ trait IAny extends StObject {
 }
 object IAny {
   
-  @scala.inline
-  def apply(): IAny = {
+  inline def apply(): IAny = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAny]
   }
   
-  @scala.inline
-  implicit class IAnyMutableBuilder[Self <: IAny] (val x: Self) extends AnyVal {
+  extension [Self <: IAny](x: Self) {
     
-    @scala.inline
-    def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
-    @scala.inline
-    def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
+    inline def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
+    inline def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
   }
 }

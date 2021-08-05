@@ -28,8 +28,7 @@ object mod {
   @JSImport("memcached", "config")
   @js.native
   def config: options = js.native
-  @scala.inline
-  def config_=(x: options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+  inline def config_=(x: options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
   
   trait CacheDumpData extends StObject {
     
@@ -41,23 +40,18 @@ object mod {
   }
   object CacheDumpData {
     
-    @scala.inline
-    def apply(b: Double, key: String, s: Double): CacheDumpData = {
+    inline def apply(b: Double, key: String, s: Double): CacheDumpData = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheDumpData]
     }
     
-    @scala.inline
-    implicit class CacheDumpDataMutableBuilder[Self <: CacheDumpData] (val x: Self) extends AnyVal {
+    extension [Self <: CacheDumpData](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,8 +81,7 @@ object mod {
   }
   object CommandData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callback: /* repeated */ js.Any => js.Any,
       command: String,
       execution: Double,
@@ -101,59 +94,41 @@ object mod {
       __obj.asInstanceOf[CommandData]
     }
     
-    @scala.inline
-    implicit class CommandDataMutableBuilder[Self <: CommandData] (val x: Self) extends AnyVal {
+    extension [Self <: CommandData](x: Self) {
       
-      @scala.inline
-      def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
+      inline def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
+      inline def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecution(value: Double): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+      inline def setExecution(value: Double): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+      inline def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
+      inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
       
-      @scala.inline
-      def setRedundancyEnabled(value: Boolean): Self = StObject.set(x, "redundancyEnabled", value.asInstanceOf[js.Any])
+      inline def setRedundancyEnabled(value: Boolean): Self = StObject.set(x, "redundancyEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedundancyEnabledUndefined: Self = StObject.set(x, "redundancyEnabled", js.undefined)
+      inline def setRedundancyEnabledUndefined: Self = StObject.set(x, "redundancyEnabled", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateVarargs(value: (js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]])*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: (js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]])*): Self = StObject.set(x, "validate", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -176,20 +151,15 @@ object mod {
   trait EventNames extends StObject
   object EventNames {
     
-    @scala.inline
-    def failure: typings.memcached.memcachedStrings.failure = "failure".asInstanceOf[typings.memcached.memcachedStrings.failure]
+    inline def failure: typings.memcached.memcachedStrings.failure = "failure".asInstanceOf[typings.memcached.memcachedStrings.failure]
     
-    @scala.inline
-    def issue: typings.memcached.memcachedStrings.issue = "issue".asInstanceOf[typings.memcached.memcachedStrings.issue]
+    inline def issue: typings.memcached.memcachedStrings.issue = "issue".asInstanceOf[typings.memcached.memcachedStrings.issue]
     
-    @scala.inline
-    def reconnect: typings.memcached.memcachedStrings.reconnect = "reconnect".asInstanceOf[typings.memcached.memcachedStrings.reconnect]
+    inline def reconnect: typings.memcached.memcachedStrings.reconnect = "reconnect".asInstanceOf[typings.memcached.memcachedStrings.reconnect]
     
-    @scala.inline
-    def reconnecting: typings.memcached.memcachedStrings.reconnecting = "reconnecting".asInstanceOf[typings.memcached.memcachedStrings.reconnecting]
+    inline def reconnecting: typings.memcached.memcachedStrings.reconnecting = "reconnecting".asInstanceOf[typings.memcached.memcachedStrings.reconnecting]
     
-    @scala.inline
-    def remove: typings.memcached.memcachedStrings.remove = "remove".asInstanceOf[typings.memcached.memcachedStrings.remove]
+    inline def remove: typings.memcached.memcachedStrings.remove = "remove".asInstanceOf[typings.memcached.memcachedStrings.remove]
   }
   
   trait IssueData extends StObject {
@@ -214,62 +184,44 @@ object mod {
   }
   object IssueData {
     
-    @scala.inline
-    def apply(messages: js.Array[String], server: String, tokens: js.Tuple2[String, String]): IssueData = {
+    inline def apply(messages: js.Array[String], server: String, tokens: js.Tuple2[String, String]): IssueData = {
       val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssueData]
     }
     
-    @scala.inline
-    implicit class IssueDataMutableBuilder[Self <: IssueData] (val x: Self) extends AnyVal {
+    extension [Self <: IssueData](x: Self) {
       
-      @scala.inline
-      def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+      inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
       
-      @scala.inline
-      def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: js.Tuple2[String, String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Tuple2[String, String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDownTime(value: Double): Self = StObject.set(x, "totalDownTime", value.asInstanceOf[js.Any])
+      inline def setTotalDownTime(value: Double): Self = StObject.set(x, "totalDownTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDownTimeUndefined: Self = StObject.set(x, "totalDownTime", js.undefined)
+      inline def setTotalDownTimeUndefined: Self = StObject.set(x, "totalDownTime", js.undefined)
       
-      @scala.inline
-      def setTotalFailures(value: Double): Self = StObject.set(x, "totalFailures", value.asInstanceOf[js.Any])
+      inline def setTotalFailures(value: Double): Self = StObject.set(x, "totalFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalFailuresUndefined: Self = StObject.set(x, "totalFailures", js.undefined)
+      inline def setTotalFailuresUndefined: Self = StObject.set(x, "totalFailures", js.undefined)
       
-      @scala.inline
-      def setTotalReconnectsAttempted(value: Double): Self = StObject.set(x, "totalReconnectsAttempted", value.asInstanceOf[js.Any])
+      inline def setTotalReconnectsAttempted(value: Double): Self = StObject.set(x, "totalReconnectsAttempted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalReconnectsAttemptedUndefined: Self = StObject.set(x, "totalReconnectsAttempted", js.undefined)
+      inline def setTotalReconnectsAttemptedUndefined: Self = StObject.set(x, "totalReconnectsAttempted", js.undefined)
       
-      @scala.inline
-      def setTotalReconnectsFailed(value: Double): Self = StObject.set(x, "totalReconnectsFailed", value.asInstanceOf[js.Any])
+      inline def setTotalReconnectsFailed(value: Double): Self = StObject.set(x, "totalReconnectsFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalReconnectsFailedUndefined: Self = StObject.set(x, "totalReconnectsFailed", js.undefined)
+      inline def setTotalReconnectsFailedUndefined: Self = StObject.set(x, "totalReconnectsFailed", js.undefined)
       
-      @scala.inline
-      def setTotalReconnectsSuccess(value: Double): Self = StObject.set(x, "totalReconnectsSuccess", value.asInstanceOf[js.Any])
+      inline def setTotalReconnectsSuccess(value: Double): Self = StObject.set(x, "totalReconnectsSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalReconnectsSuccessUndefined: Self = StObject.set(x, "totalReconnectsSuccess", js.undefined)
+      inline def setTotalReconnectsSuccessUndefined: Self = StObject.set(x, "totalReconnectsSuccess", js.undefined)
     }
   }
   
@@ -490,20 +442,16 @@ object mod {
   }
   object StatusData {
     
-    @scala.inline
-    def apply(): StatusData = {
+    inline def apply(): StatusData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatusData]
     }
     
-    @scala.inline
-    implicit class StatusDataMutableBuilder[Self <: StatusData] (val x: Self) extends AnyVal {
+    extension [Self <: StatusData](x: Self) {
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     }
   }
   
@@ -521,26 +469,20 @@ object mod {
   }
   object VersionData {
     
-    @scala.inline
-    def apply(bugfix: String, major: String, minor: String, version: String): VersionData = {
+    inline def apply(bugfix: String, major: String, minor: String, version: String): VersionData = {
       val __obj = js.Dynamic.literal(bugfix = bugfix.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[VersionData]
     }
     
-    @scala.inline
-    implicit class VersionDataMutableBuilder[Self <: VersionData] (val x: Self) extends AnyVal {
+    extension [Self <: VersionData](x: Self) {
       
-      @scala.inline
-      def setBugfix(value: String): Self = StObject.set(x, "bugfix", value.asInstanceOf[js.Any])
+      inline def setBugfix(value: String): Self = StObject.set(x, "bugfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -623,107 +565,74 @@ object mod {
   }
   object options {
     
-    @scala.inline
-    def apply(): options = {
+    inline def apply(): options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[options]
     }
     
-    @scala.inline
-    implicit class optionsMutableBuilder[Self <: options] (val x: Self) extends AnyVal {
+    extension [Self <: options](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setFailOverServers(value: String | js.Array[String]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
+      inline def setFailOverServers(value: String | js.Array[String]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOverServersUndefined: Self = StObject.set(x, "failOverServers", js.undefined)
+      inline def setFailOverServersUndefined: Self = StObject.set(x, "failOverServers", js.undefined)
       
-      @scala.inline
-      def setFailOverServersVarargs(value: String*): Self = StObject.set(x, "failOverServers", js.Array(value :_*))
+      inline def setFailOverServersVarargs(value: String*): Self = StObject.set(x, "failOverServers", js.Array(value :_*))
       
-      @scala.inline
-      def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+      inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
       
-      @scala.inline
-      def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+      inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
       
-      @scala.inline
-      def setKeyCompression(value: Boolean): Self = StObject.set(x, "keyCompression", value.asInstanceOf[js.Any])
+      inline def setKeyCompression(value: Boolean): Self = StObject.set(x, "keyCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCompressionUndefined: Self = StObject.set(x, "keyCompression", js.undefined)
+      inline def setKeyCompressionUndefined: Self = StObject.set(x, "keyCompression", js.undefined)
       
-      @scala.inline
-      def setMaxExpiration(value: Double): Self = StObject.set(x, "maxExpiration", value.asInstanceOf[js.Any])
+      inline def setMaxExpiration(value: Double): Self = StObject.set(x, "maxExpiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxExpirationUndefined: Self = StObject.set(x, "maxExpiration", js.undefined)
+      inline def setMaxExpirationUndefined: Self = StObject.set(x, "maxExpiration", js.undefined)
       
-      @scala.inline
-      def setMaxKeySize(value: Double): Self = StObject.set(x, "maxKeySize", value.asInstanceOf[js.Any])
+      inline def setMaxKeySize(value: Double): Self = StObject.set(x, "maxKeySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeySizeUndefined: Self = StObject.set(x, "maxKeySize", js.undefined)
+      inline def setMaxKeySizeUndefined: Self = StObject.set(x, "maxKeySize", js.undefined)
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+      inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
+      inline def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
+      inline def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
       
-      @scala.inline
-      def setReconnect(value: Double): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+      inline def setReconnect(value: Double): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
+      inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

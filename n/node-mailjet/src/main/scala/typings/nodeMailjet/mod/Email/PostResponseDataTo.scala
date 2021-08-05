@@ -16,25 +16,19 @@ trait PostResponseDataTo extends StObject {
 }
 object PostResponseDataTo {
   
-  @scala.inline
-  def apply(Email: String, MessageHref: String, MessageID: Double, MessageUUID: String): PostResponseDataTo = {
+  inline def apply(Email: String, MessageHref: String, MessageID: Double, MessageUUID: String): PostResponseDataTo = {
     val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], MessageHref = MessageHref.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], MessageUUID = MessageUUID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostResponseDataTo]
   }
   
-  @scala.inline
-  implicit class PostResponseDataToMutableBuilder[Self <: PostResponseDataTo] (val x: Self) extends AnyVal {
+  extension [Self <: PostResponseDataTo](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageHref(value: String): Self = StObject.set(x, "MessageHref", value.asInstanceOf[js.Any])
+    inline def setMessageHref(value: String): Self = StObject.set(x, "MessageHref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageID(value: Double): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
+    inline def setMessageID(value: Double): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUUID(value: String): Self = StObject.set(x, "MessageUUID", value.asInstanceOf[js.Any])
+    inline def setMessageUUID(value: String): Self = StObject.set(x, "MessageUUID", value.asInstanceOf[js.Any])
   }
 }

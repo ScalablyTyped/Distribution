@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TextFrame")
 @js.native
-class TextFrame protected ()
+/* private */ class TextFrame ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TextFrame {
   
@@ -51,7 +51,7 @@ class TextFrame protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.TextFrame_typekey")
   var PowerPointDotTextFrame_typekey: typings.activexPowerpoint.PowerPoint.TextFrame = js.native
   

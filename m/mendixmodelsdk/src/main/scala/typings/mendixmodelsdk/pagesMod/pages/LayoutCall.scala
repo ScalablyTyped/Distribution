@@ -84,8 +84,7 @@ object LayoutCall {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
+  inline def create(model: IModel): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -96,8 +95,7 @@ object LayoutCall {
     *  6.0.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderLayoutCall(container: Layout): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
+  inline def createInLayoutUnderLayoutCall(container: Layout): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -108,8 +106,7 @@ object LayoutCall {
     *  7.7.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPageTemplateUnderLayoutCall(container: PageTemplate): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageTemplateUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
+  inline def createInPageTemplateUnderLayoutCall(container: PageTemplate): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageTemplateUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -117,8 +114,7 @@ object LayoutCall {
     * of the parent Page element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInPageUnderLayoutCall(container: Page): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
+  inline def createInPageUnderLayoutCall(container: Page): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -129,20 +125,17 @@ object LayoutCall {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebLayoutContentUnderLayoutCall(container: WebLayoutContent): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
+  inline def createInWebLayoutContentUnderLayoutCall(container: WebLayoutContent): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

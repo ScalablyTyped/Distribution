@@ -12,28 +12,21 @@ trait IPProtocol extends StObject {
 }
 object IPProtocol {
   
-  @scala.inline
-  def apply(): IPProtocol = {
+  inline def apply(): IPProtocol = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPProtocol]
   }
   
-  @scala.inline
-  implicit class IPProtocolMutableBuilder[Self <: IPProtocol] (val x: Self) extends AnyVal {
+  extension [Self <: IPProtocol](x: Self) {
     
-    @scala.inline
-    def setIPProtocol(value: String): Self = StObject.set(x, "IPProtocol", value.asInstanceOf[js.Any])
+    inline def setIPProtocol(value: String): Self = StObject.set(x, "IPProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPProtocolUndefined: Self = StObject.set(x, "IPProtocol", js.undefined)
+    inline def setIPProtocolUndefined: Self = StObject.set(x, "IPProtocol", js.undefined)
     
-    @scala.inline
-    def setPorts(value: js.Array[String]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[String]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

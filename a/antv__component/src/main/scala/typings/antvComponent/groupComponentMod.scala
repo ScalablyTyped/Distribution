@@ -41,8 +41,8 @@ object groupComponentMod {
       * @param parent 父元素
       * @param cfg 子组件配置项
       */
-    @JSName("addComponent")
-    /* protected */ def addComponent_container[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */](parent: IGroup, cfg: (Omit[C, container]) & (Component[C, CT])): CT = js.native
+    /* protected */ @JSName("addComponent")
+    def addComponent_container[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */](parent: IGroup, cfg: (Omit[C, container]) & (Component[C, CT])): CT = js.native
     
     /**
       * @protected
@@ -60,11 +60,11 @@ object groupComponentMod {
       */
     /* protected */ def addShape(parent: IGroup, cfg: js.Any): IShape = js.native
     
-    var appendDelegateObject: js.Any = js.native
+    /* private */ var appendDelegateObject: js.Any = js.native
     
     /* protected */ def applyOffset(): Unit = js.native
     
-    var clearOffScreenCache: js.Any = js.native
+    /* private */ var clearOffScreenCache: js.Any = js.native
     
     /* protected */ def clearUpdateStatus(group: IGroup): Unit = js.native
     
@@ -72,7 +72,7 @@ object groupComponentMod {
     
     /* protected */ def delegateEmit(eventName: String, eventObject: LooseObject): Unit = js.native
     
-    var deleteElements: js.Any = js.native
+    /* private */ var deleteElements: js.Any = js.native
     
     def emit(eventName: String, eventObject: LooseObject): Unit = js.native
     
@@ -80,7 +80,7 @@ object groupComponentMod {
     
     def getContainer(): IGroup = js.native
     
-    var getDelegateObject: js.Any = js.native
+    /* private */ var getDelegateObject: js.Any = js.native
     
     def getElementById(id: String): js.Any = js.native
     
@@ -92,7 +92,7 @@ object groupComponentMod {
     
     /* protected */ def getInnerLayoutBBox(): js.Any = js.native
     
-    var getReplaceAttrs: js.Any = js.native
+    /* private */ var getReplaceAttrs: js.Any = js.native
     
     /* protected */ def initEvent(): Unit = js.native
     
@@ -110,7 +110,7 @@ object groupComponentMod {
     
     /* protected */ def registerElement(element: js.Any): Unit = js.native
     
-    var registerNewGroup: js.Any = js.native
+    /* private */ var registerNewGroup: js.Any = js.native
     
     def remove(): Unit = js.native
     
@@ -123,7 +123,7 @@ object groupComponentMod {
       */
     /* protected */ def removeAnimation(elementName: js.Any, originElement: js.Any, animateCfg: js.Any): Unit = js.native
     
-    var removeElement: js.Any = js.native
+    /* private */ var removeElement: js.Any = js.native
     
     /* protected */ def removeEvent(): Unit = js.native
     

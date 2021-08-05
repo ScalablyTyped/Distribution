@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcOutputFormat extends StObject
 object AcOutputFormat {
   
-  @scala.inline
-  def acFormatASP: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = ("Microsoft Active Server Pages (*.asp)").asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
+  inline def acFormatASP: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = ("Microsoft Active Server Pages (*.asp)").asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
   
-  @scala.inline
-  def acFormatDAP: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = ("Microsoft Access Data Access Page (*.htm; *.html)").asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
+  inline def acFormatDAP: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = ("Microsoft Access Data Access Page (*.htm; *.html)").asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
   
-  @scala.inline
-  def acFormatHTML: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = ("HTML (*.html)").asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
+  inline def acFormatHTML: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = ("HTML (*.html)").asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
   
-  @scala.inline
-  def acFormatIIS: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = ("Microsoft IIS (*.htx; *.idc)").asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
+  inline def acFormatIIS: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = ("Microsoft IIS (*.htx; *.idc)").asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
   
-  @scala.inline
-  def acFormatPDF: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = ("PDF Format (*.pdf)").asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
+  inline def acFormatPDF: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = ("PDF Format (*.pdf)").asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
   
-  @scala.inline
-  def acFormatRTF: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = ("Rich Text Format (*.rtf)").asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
+  inline def acFormatRTF: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = ("Rich Text Format (*.rtf)").asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
   
-  @scala.inline
-  def acFormatSNP: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = ("Snapshot Format (*.snp)").asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
+  inline def acFormatSNP: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = ("Snapshot Format (*.snp)").asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
   
-  @scala.inline
-  def acFormatTXT: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = ("MS-DOS Text (*.txt)").asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
+  inline def acFormatTXT: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = ("MS-DOS Text (*.txt)").asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
   
-  @scala.inline
-  def acFormatXLS: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = ("Microsoft Excel (*.xls)").asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
+  inline def acFormatXLS: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = ("Microsoft Excel (*.xls)").asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
   
-  @scala.inline
-  def acFormatXLSB: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = ("Microsoft Excel Binary Workbook (*.xlsb)").asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
+  inline def acFormatXLSB: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = ("Microsoft Excel Binary Workbook (*.xlsb)").asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
   
-  @scala.inline
-  def acFormatXLSX: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = ("Microsoft Excel Workbook (*.xlsx)").asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
+  inline def acFormatXLSX: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = ("Microsoft Excel Workbook (*.xlsx)").asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
   
-  @scala.inline
-  def acFormatXPS: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = ("XPS Format (*.xps)").asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
+  inline def acFormatXPS: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = ("XPS Format (*.xps)").asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
 }

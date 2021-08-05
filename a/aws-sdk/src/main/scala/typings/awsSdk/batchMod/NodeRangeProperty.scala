@@ -18,22 +18,17 @@ trait NodeRangeProperty extends StObject {
 }
 object NodeRangeProperty {
   
-  @scala.inline
-  def apply(targetNodes: String): NodeRangeProperty = {
+  inline def apply(targetNodes: String): NodeRangeProperty = {
     val __obj = js.Dynamic.literal(targetNodes = targetNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeRangeProperty]
   }
   
-  @scala.inline
-  implicit class NodeRangePropertyMutableBuilder[Self <: NodeRangeProperty] (val x: Self) extends AnyVal {
+  extension [Self <: NodeRangeProperty](x: Self) {
     
-    @scala.inline
-    def setContainer(value: ContainerProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ContainerProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setTargetNodes(value: String): Self = StObject.set(x, "targetNodes", value.asInstanceOf[js.Any])
+    inline def setTargetNodes(value: String): Self = StObject.set(x, "targetNodes", value.asInstanceOf[js.Any])
   }
 }

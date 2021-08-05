@@ -28,26 +28,22 @@ object sidebarMod {
     @JSImport("wix-style-react/dist/es/src/Sidebar", "default.BackButton")
     @js.native
     def BackButton: Instantiable0[typings.wixStyleReact.sidebarBackButtonMod.default] = js.native
-    @scala.inline
-    def BackButton_=(x: Instantiable0[typings.wixStyleReact.sidebarBackButtonMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BackButton")(x.asInstanceOf[js.Any])
+    inline def BackButton_=(x: Instantiable0[typings.wixStyleReact.sidebarBackButtonMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BackButton")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Sidebar", "default.Item")
     @js.native
     def Item: Instantiable0[SidebarItem] = js.native
-    @scala.inline
-    def Item_=(x: Instantiable0[SidebarItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: Instantiable0[SidebarItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Sidebar", "default.PersistentFooter")
     @js.native
     def PersistentFooter: Instantiable0[SidebarPersistentFooter] = js.native
-    @scala.inline
-    def PersistentFooter_=(x: Instantiable0[SidebarPersistentFooter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PersistentFooter")(x.asInstanceOf[js.Any])
+    inline def PersistentFooter_=(x: Instantiable0[SidebarPersistentFooter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PersistentFooter")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Sidebar", "default.PersistentHeader")
     @js.native
     def PersistentHeader: Instantiable0[SidebarPersistentHeader] = js.native
-    @scala.inline
-    def PersistentHeader_=(x: Instantiable0[SidebarPersistentHeader]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PersistentHeader")(x.asInstanceOf[js.Any])
+    inline def PersistentHeader_=(x: Instantiable0[SidebarPersistentHeader]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PersistentHeader")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-style-react/dist/es/src/Sidebar", "SidebarContextConsumer")
@@ -135,56 +131,40 @@ object sidebarMod {
   }
   object SidebarClassNames {
     
-    @scala.inline
-    def apply(): SidebarClassNames = {
+    inline def apply(): SidebarClassNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarClassNames]
     }
     
-    @scala.inline
-    implicit class SidebarClassNamesMutableBuilder[Self <: SidebarClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarClassNames](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setSideBar(value: String): Self = StObject.set(x, "sideBar", value.asInstanceOf[js.Any])
+      inline def setSideBar(value: String): Self = StObject.set(x, "sideBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideBarUndefined: Self = StObject.set(x, "sideBar", js.undefined)
+      inline def setSideBarUndefined: Self = StObject.set(x, "sideBar", js.undefined)
       
-      @scala.inline
-      def setSlider(value: String): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+      inline def setSlider(value: String): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderInFromLeft(value: String): Self = StObject.set(x, "sliderInFromLeft", value.asInstanceOf[js.Any])
+      inline def setSliderInFromLeft(value: String): Self = StObject.set(x, "sliderInFromLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderInFromLeftUndefined: Self = StObject.set(x, "sliderInFromLeft", js.undefined)
+      inline def setSliderInFromLeftUndefined: Self = StObject.set(x, "sliderInFromLeft", js.undefined)
       
-      @scala.inline
-      def setSliderInFromRight(value: String): Self = StObject.set(x, "sliderInFromRight", value.asInstanceOf[js.Any])
+      inline def setSliderInFromRight(value: String): Self = StObject.set(x, "sliderInFromRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderInFromRightUndefined: Self = StObject.set(x, "sliderInFromRight", js.undefined)
+      inline def setSliderInFromRightUndefined: Self = StObject.set(x, "sliderInFromRight", js.undefined)
       
-      @scala.inline
-      def setSliderOutToLeft(value: String): Self = StObject.set(x, "sliderOutToLeft", value.asInstanceOf[js.Any])
+      inline def setSliderOutToLeft(value: String): Self = StObject.set(x, "sliderOutToLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderOutToLeftUndefined: Self = StObject.set(x, "sliderOutToLeft", js.undefined)
+      inline def setSliderOutToLeftUndefined: Self = StObject.set(x, "sliderOutToLeft", js.undefined)
       
-      @scala.inline
-      def setSliderOutToRight(value: String): Self = StObject.set(x, "sliderOutToRight", value.asInstanceOf[js.Any])
+      inline def setSliderOutToRight(value: String): Self = StObject.set(x, "sliderOutToRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderOutToRightUndefined: Self = StObject.set(x, "sliderOutToRight", js.undefined)
+      inline def setSliderOutToRightUndefined: Self = StObject.set(x, "sliderOutToRight", js.undefined)
       
-      @scala.inline
-      def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
+      inline def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
     }
   }
   
@@ -194,17 +174,14 @@ object sidebarMod {
   }
   object SidebarContextConsumerProps {
     
-    @scala.inline
-    def apply(children: BackClicked => ReactNode): SidebarContextConsumerProps = {
+    inline def apply(children: BackClicked => ReactNode): SidebarContextConsumerProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[SidebarContextConsumerProps]
     }
     
-    @scala.inline
-    implicit class SidebarContextConsumerPropsMutableBuilder[Self <: SidebarContextConsumerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarContextConsumerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: BackClicked => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: BackClicked => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -214,17 +191,14 @@ object sidebarMod {
   }
   object SidebarItemContextConsumerProps {
     
-    @scala.inline
-    def apply(children: Selected => ReactNode): SidebarItemContextConsumerProps = {
+    inline def apply(children: Selected => ReactNode): SidebarItemContextConsumerProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[SidebarItemContextConsumerProps]
     }
     
-    @scala.inline
-    implicit class SidebarItemContextConsumerPropsMutableBuilder[Self <: SidebarItemContextConsumerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarItemContextConsumerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Selected => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: Selected => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -242,41 +216,30 @@ object sidebarMod {
   }
   object SidebarItemProps {
     
-    @scala.inline
-    def apply(): SidebarItemProps = {
+    inline def apply(): SidebarItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarItemProps]
     }
     
-    @scala.inline
-    implicit class SidebarItemPropsMutableBuilder[Self <: SidebarItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarItemProps](x: Self) {
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setInnerMenu(value: js.Array[ReactNode]): Self = StObject.set(x, "innerMenu", value.asInstanceOf[js.Any])
+      inline def setInnerMenu(value: js.Array[ReactNode]): Self = StObject.set(x, "innerMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerMenuUndefined: Self = StObject.set(x, "innerMenu", js.undefined)
+      inline def setInnerMenuUndefined: Self = StObject.set(x, "innerMenu", js.undefined)
       
-      @scala.inline
-      def setInnerMenuVarargs(value: ReactNode*): Self = StObject.set(x, "innerMenu", js.Array(value :_*))
+      inline def setInnerMenuVarargs(value: ReactNode*): Self = StObject.set(x, "innerMenu", js.Array(value :_*))
       
-      @scala.inline
-      def setItemKey(value: String): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
+      inline def setItemKey(value: String): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
+      inline def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* itemKey */ String, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* itemKey */ String, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
   
@@ -298,44 +261,32 @@ object sidebarMod {
   }
   object SidebarProps {
     
-    @scala.inline
-    def apply(): SidebarProps = {
+    inline def apply(): SidebarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarProps]
     }
     
-    @scala.inline
-    implicit class SidebarPropsMutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarProps](x: Self) {
       
-      @scala.inline
-      def setClassNames(value: SidebarClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: SidebarClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
+      inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
       
-      @scala.inline
-      def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      inline def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
+      inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      @scala.inline
-      def setSkin(value: SidebarSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: SidebarSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     }
   }
   
@@ -346,10 +297,8 @@ object sidebarMod {
   trait SidebarSkin extends StObject
   object SidebarSkin {
     
-    @scala.inline
-    def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
+    inline def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
     
-    @scala.inline
-    def light: typings.wixStyleReact.wixStyleReactStrings.light = "light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.light]
+    inline def light: typings.wixStyleReact.wixStyleReactStrings.light = "light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.light]
   }
 }

@@ -14,8 +14,7 @@ trait ReturnTypeGlobalLexicalScopeNamesResponse extends StObject {
 }
 object ReturnTypeGlobalLexicalScopeNamesResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[js.UndefOr[GlobalLexicalScopeNamesRequest]],
     returnType: GlobalLexicalScopeNamesResponse
   ): ReturnTypeGlobalLexicalScopeNamesResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeGlobalLexicalScopeNamesResponse {
     __obj.asInstanceOf[ReturnTypeGlobalLexicalScopeNamesResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGlobalLexicalScopeNamesResponseMutableBuilder[Self <: ReturnTypeGlobalLexicalScopeNamesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGlobalLexicalScopeNamesResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[js.UndefOr[GlobalLexicalScopeNamesRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[js.UndefOr[GlobalLexicalScopeNamesRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: js.UndefOr[GlobalLexicalScopeNamesRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.UndefOr[GlobalLexicalScopeNamesRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GlobalLexicalScopeNamesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GlobalLexicalScopeNamesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

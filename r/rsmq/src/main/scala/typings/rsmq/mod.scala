@@ -97,17 +97,14 @@ object mod {
   }
   object BaseOptions {
     
-    @scala.inline
-    def apply(qname: String): BaseOptions = {
+    inline def apply(qname: String): BaseOptions = {
       val __obj = js.Dynamic.literal(qname = qname.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseOptions]
     }
     
-    @scala.inline
-    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseOptions](x: Self) {
       
-      @scala.inline
-      def setQname(value: String): Self = StObject.set(x, "qname", value.asInstanceOf[js.Any])
+      inline def setQname(value: String): Self = StObject.set(x, "qname", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,20 +133,16 @@ object mod {
   }
   object ChangeMessageVisibilityOptions {
     
-    @scala.inline
-    def apply(id: String, qname: String, vt: Double): ChangeMessageVisibilityOptions = {
+    inline def apply(id: String, qname: String, vt: Double): ChangeMessageVisibilityOptions = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], qname = qname.asInstanceOf[js.Any], vt = vt.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangeMessageVisibilityOptions]
     }
     
-    @scala.inline
-    implicit class ChangeMessageVisibilityOptionsMutableBuilder[Self <: ChangeMessageVisibilityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeMessageVisibilityOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
+      inline def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,56 +164,40 @@ object mod {
   }
   object ConstructorOptions {
     
-    @scala.inline
-    def apply(): ConstructorOptions = {
+    inline def apply(): ConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setClient(value: RedisClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: RedisClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+      inline def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
+      inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ClientOpts): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ClientOpts): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
+      inline def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
+      inline def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
     }
   }
   
@@ -261,32 +238,24 @@ object mod {
   }
   object CreateQueueOptions {
     
-    @scala.inline
-    def apply(qname: String): CreateQueueOptions = {
+    inline def apply(qname: String): CreateQueueOptions = {
       val __obj = js.Dynamic.literal(qname = qname.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateQueueOptions]
     }
     
-    @scala.inline
-    implicit class CreateQueueOptionsMutableBuilder[Self <: CreateQueueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateQueueOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
+      inline def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxsizeUndefined: Self = StObject.set(x, "maxsize", js.undefined)
+      inline def setMaxsizeUndefined: Self = StObject.set(x, "maxsize", js.undefined)
       
-      @scala.inline
-      def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
+      inline def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVtUndefined: Self = StObject.set(x, "vt", js.undefined)
+      inline def setVtUndefined: Self = StObject.set(x, "vt", js.undefined)
     }
   }
   
@@ -304,17 +273,14 @@ object mod {
   }
   object DeleteMessageOptions {
     
-    @scala.inline
-    def apply(id: String, qname: String): DeleteMessageOptions = {
+    inline def apply(id: String, qname: String): DeleteMessageOptions = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], qname = qname.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteMessageOptions]
     }
     
-    @scala.inline
-    implicit class DeleteMessageOptionsMutableBuilder[Self <: DeleteMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteMessageOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -401,8 +367,7 @@ object mod {
   }
   object QueueAttributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: Double,
       delay: Double,
       hiddenmsgs: Double,
@@ -417,35 +382,25 @@ object mod {
       __obj.asInstanceOf[QueueAttributes]
     }
     
-    @scala.inline
-    implicit class QueueAttributesMutableBuilder[Self <: QueueAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: QueueAttributes](x: Self) {
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenmsgs(value: Double): Self = StObject.set(x, "hiddenmsgs", value.asInstanceOf[js.Any])
+      inline def setHiddenmsgs(value: Double): Self = StObject.set(x, "hiddenmsgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
+      inline def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: Double): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Double): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgs(value: Double): Self = StObject.set(x, "msgs", value.asInstanceOf[js.Any])
+      inline def setMsgs(value: Double): Self = StObject.set(x, "msgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalrecv(value: Double): Self = StObject.set(x, "totalrecv", value.asInstanceOf[js.Any])
+      inline def setTotalrecv(value: Double): Self = StObject.set(x, "totalrecv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalsent(value: Double): Self = StObject.set(x, "totalsent", value.asInstanceOf[js.Any])
+      inline def setTotalsent(value: Double): Self = StObject.set(x, "totalsent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
+      inline def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -493,29 +448,22 @@ object mod {
   }
   object QueueMessage {
     
-    @scala.inline
-    def apply(fr: Double, id: String, message: String, rc: Double, sent: Double): QueueMessage = {
+    inline def apply(fr: Double, id: String, message: String, rc: Double, sent: Double): QueueMessage = {
       val __obj = js.Dynamic.literal(fr = fr.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], rc = rc.asInstanceOf[js.Any], sent = sent.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueMessage]
     }
     
-    @scala.inline
-    implicit class QueueMessageMutableBuilder[Self <: QueueMessage] (val x: Self) extends AnyVal {
+    extension [Self <: QueueMessage](x: Self) {
       
-      @scala.inline
-      def setFr(value: Double): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+      inline def setFr(value: Double): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRc(value: Double): Self = StObject.set(x, "rc", value.asInstanceOf[js.Any])
+      inline def setRc(value: Double): Self = StObject.set(x, "rc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSent(value: Double): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
+      inline def setSent(value: Double): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -535,20 +483,16 @@ object mod {
   }
   object ReceiveMessageOptions {
     
-    @scala.inline
-    def apply(qname: String): ReceiveMessageOptions = {
+    inline def apply(qname: String): ReceiveMessageOptions = {
       val __obj = js.Dynamic.literal(qname = qname.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiveMessageOptions]
     }
     
-    @scala.inline
-    implicit class ReceiveMessageOptionsMutableBuilder[Self <: ReceiveMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiveMessageOptions](x: Self) {
       
-      @scala.inline
-      def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
+      inline def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVtUndefined: Self = StObject.set(x, "vt", js.undefined)
+      inline def setVtUndefined: Self = StObject.set(x, "vt", js.undefined)
     }
   }
   
@@ -601,8 +545,7 @@ object mod {
   }
   object RedisSMQ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changeMessageVisibility: (ChangeMessageVisibilityOptions, Callback[`0` | `1`]) => Unit,
       changeMessageVisibilityAsync: ChangeMessageVisibilityOptions => js.Promise[`0` | `1`],
       createQueue: (CreateQueueOptions, Callback[`1`]) => Unit,
@@ -629,71 +572,49 @@ object mod {
       __obj.asInstanceOf[RedisSMQ]
     }
     
-    @scala.inline
-    implicit class RedisSMQMutableBuilder[Self <: RedisSMQ] (val x: Self) extends AnyVal {
+    extension [Self <: RedisSMQ](x: Self) {
       
-      @scala.inline
-      def setChangeMessageVisibility(value: (ChangeMessageVisibilityOptions, Callback[`0` | `1`]) => Unit): Self = StObject.set(x, "changeMessageVisibility", js.Any.fromFunction2(value))
+      inline def setChangeMessageVisibility(value: (ChangeMessageVisibilityOptions, Callback[`0` | `1`]) => Unit): Self = StObject.set(x, "changeMessageVisibility", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChangeMessageVisibilityAsync(value: ChangeMessageVisibilityOptions => js.Promise[`0` | `1`]): Self = StObject.set(x, "changeMessageVisibilityAsync", js.Any.fromFunction1(value))
+      inline def setChangeMessageVisibilityAsync(value: ChangeMessageVisibilityOptions => js.Promise[`0` | `1`]): Self = StObject.set(x, "changeMessageVisibilityAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateQueue(value: (CreateQueueOptions, Callback[`1`]) => Unit): Self = StObject.set(x, "createQueue", js.Any.fromFunction2(value))
+      inline def setCreateQueue(value: (CreateQueueOptions, Callback[`1`]) => Unit): Self = StObject.set(x, "createQueue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateQueueAsync(value: CreateQueueOptions => js.Promise[`1`]): Self = StObject.set(x, "createQueueAsync", js.Any.fromFunction1(value))
+      inline def setCreateQueueAsync(value: CreateQueueOptions => js.Promise[`1`]): Self = StObject.set(x, "createQueueAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteMessage(value: (DeleteMessageOptions, Callback[`0` | `1`]) => Unit): Self = StObject.set(x, "deleteMessage", js.Any.fromFunction2(value))
+      inline def setDeleteMessage(value: (DeleteMessageOptions, Callback[`0` | `1`]) => Unit): Self = StObject.set(x, "deleteMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteMessageAsync(value: DeleteMessageOptions => js.Promise[`0` | `1`]): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
+      inline def setDeleteMessageAsync(value: DeleteMessageOptions => js.Promise[`0` | `1`]): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteQueue(value: (DeleteQueueOptions, Callback[`1`]) => Unit): Self = StObject.set(x, "deleteQueue", js.Any.fromFunction2(value))
+      inline def setDeleteQueue(value: (DeleteQueueOptions, Callback[`1`]) => Unit): Self = StObject.set(x, "deleteQueue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteQueueAsync(value: DeleteQueueOptions => js.Promise[`1`]): Self = StObject.set(x, "deleteQueueAsync", js.Any.fromFunction1(value))
+      inline def setDeleteQueueAsync(value: DeleteQueueOptions => js.Promise[`1`]): Self = StObject.set(x, "deleteQueueAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetQueueAttributes(value: (GetQueueAttributesOptions, Callback[QueueAttributes]) => Unit): Self = StObject.set(x, "getQueueAttributes", js.Any.fromFunction2(value))
+      inline def setGetQueueAttributes(value: (GetQueueAttributesOptions, Callback[QueueAttributes]) => Unit): Self = StObject.set(x, "getQueueAttributes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetQueueAttributesAsync(value: GetQueueAttributesOptions => js.Promise[QueueAttributes]): Self = StObject.set(x, "getQueueAttributesAsync", js.Any.fromFunction1(value))
+      inline def setGetQueueAttributesAsync(value: GetQueueAttributesOptions => js.Promise[QueueAttributes]): Self = StObject.set(x, "getQueueAttributesAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListQueues(value: Callback[js.Array[String]] => Unit): Self = StObject.set(x, "listQueues", js.Any.fromFunction1(value))
+      inline def setListQueues(value: Callback[js.Array[String]] => Unit): Self = StObject.set(x, "listQueues", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListQueuesAsync(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "listQueuesAsync", js.Any.fromFunction0(value))
+      inline def setListQueuesAsync(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "listQueuesAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPopMessage(value: (PopMessageOptions, Callback[QueueMessage | js.Object]) => Unit): Self = StObject.set(x, "popMessage", js.Any.fromFunction2(value))
+      inline def setPopMessage(value: (PopMessageOptions, Callback[QueueMessage | js.Object]) => Unit): Self = StObject.set(x, "popMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPopMessageAsync(value: PopMessageOptions => js.Promise[QueueMessage | js.Object]): Self = StObject.set(x, "popMessageAsync", js.Any.fromFunction1(value))
+      inline def setPopMessageAsync(value: PopMessageOptions => js.Promise[QueueMessage | js.Object]): Self = StObject.set(x, "popMessageAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuit(value: () => Unit): Self = StObject.set(x, "quit", js.Any.fromFunction0(value))
+      inline def setQuit(value: () => Unit): Self = StObject.set(x, "quit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReceiveMessage(value: (ReceiveMessageOptions, Callback[QueueMessage | js.Object]) => Unit): Self = StObject.set(x, "receiveMessage", js.Any.fromFunction2(value))
+      inline def setReceiveMessage(value: (ReceiveMessageOptions, Callback[QueueMessage | js.Object]) => Unit): Self = StObject.set(x, "receiveMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReceiveMessageAsync(value: ReceiveMessageOptions => js.Promise[QueueMessage | js.Object]): Self = StObject.set(x, "receiveMessageAsync", js.Any.fromFunction1(value))
+      inline def setReceiveMessageAsync(value: ReceiveMessageOptions => js.Promise[QueueMessage | js.Object]): Self = StObject.set(x, "receiveMessageAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendMessage(value: (SendMessageOptions, Callback[String]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+      inline def setSendMessage(value: (SendMessageOptions, Callback[String]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSendMessageAsync(value: SendMessageOptions => js.Promise[String]): Self = StObject.set(x, "sendMessageAsync", js.Any.fromFunction1(value))
+      inline def setSendMessageAsync(value: SendMessageOptions => js.Promise[String]): Self = StObject.set(x, "sendMessageAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetQueueAttributes(value: (SetQueueAttributesOptions, Callback[QueueAttributes]) => Unit): Self = StObject.set(x, "setQueueAttributes", js.Any.fromFunction2(value))
+      inline def setSetQueueAttributes(value: (SetQueueAttributesOptions, Callback[QueueAttributes]) => Unit): Self = StObject.set(x, "setQueueAttributes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetQueueAttributesAsync(value: SetQueueAttributesOptions => js.Promise[QueueAttributes]): Self = StObject.set(x, "setQueueAttributesAsync", js.Any.fromFunction1(value))
+      inline def setSetQueueAttributesAsync(value: SetQueueAttributesOptions => js.Promise[QueueAttributes]): Self = StObject.set(x, "setQueueAttributesAsync", js.Any.fromFunction1(value))
     }
   }
   
@@ -721,23 +642,18 @@ object mod {
   }
   object SendMessageOptions {
     
-    @scala.inline
-    def apply(message: String, qname: String): SendMessageOptions = {
+    inline def apply(message: String, qname: String): SendMessageOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], qname = qname.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendMessageOptions]
     }
     
-    @scala.inline
-    implicit class SendMessageOptionsMutableBuilder[Self <: SendMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SendMessageOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -776,32 +692,24 @@ object mod {
   }
   object SetQueueAttributesOptions {
     
-    @scala.inline
-    def apply(qname: String): SetQueueAttributesOptions = {
+    inline def apply(qname: String): SetQueueAttributesOptions = {
       val __obj = js.Dynamic.literal(qname = qname.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetQueueAttributesOptions]
     }
     
-    @scala.inline
-    implicit class SetQueueAttributesOptionsMutableBuilder[Self <: SetQueueAttributesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetQueueAttributesOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
+      inline def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxsizeUndefined: Self = StObject.set(x, "maxsize", js.undefined)
+      inline def setMaxsizeUndefined: Self = StObject.set(x, "maxsize", js.undefined)
       
-      @scala.inline
-      def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
+      inline def setVt(value: Double): Self = StObject.set(x, "vt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVtUndefined: Self = StObject.set(x, "vt", js.undefined)
+      inline def setVtUndefined: Self = StObject.set(x, "vt", js.undefined)
     }
   }
 }

@@ -14,8 +14,7 @@ object viewsStackViewMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasNavigationOriginalDescriptorsNavigationConfigRest: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNavigationOriginalDescriptorsNavigationConfigRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasNavigationOriginalDescriptorsNavigationConfigRest: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNavigationOriginalDescriptorsNavigationConfigRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -29,8 +28,7 @@ object viewsStackViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       descriptors: StackDescriptorMap,
       navigation: StackNavigationHelpers,
       navigationConfig: StackNavigationConfig,
@@ -40,20 +38,15 @@ object viewsStackViewMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationConfig(value: StackNavigationConfig): Self = StObject.set(x, "navigationConfig", value.asInstanceOf[js.Any])
+      inline def setNavigationConfig(value: StackNavigationConfig): Self = StObject.set(x, "navigationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     }
   }
 }

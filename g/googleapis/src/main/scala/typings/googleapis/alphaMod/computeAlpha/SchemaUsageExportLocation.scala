@@ -31,25 +31,19 @@ trait SchemaUsageExportLocation extends StObject {
 }
 object SchemaUsageExportLocation {
   
-  @scala.inline
-  def apply(): SchemaUsageExportLocation = {
+  inline def apply(): SchemaUsageExportLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUsageExportLocation]
   }
   
-  @scala.inline
-  implicit class SchemaUsageExportLocationMutableBuilder[Self <: SchemaUsageExportLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUsageExportLocation](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setReportNamePrefix(value: String): Self = StObject.set(x, "reportNamePrefix", value.asInstanceOf[js.Any])
+    inline def setReportNamePrefix(value: String): Self = StObject.set(x, "reportNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportNamePrefixUndefined: Self = StObject.set(x, "reportNamePrefix", js.undefined)
+    inline def setReportNamePrefixUndefined: Self = StObject.set(x, "reportNamePrefix", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait ModifyNetworkInterfaceAttributeRequest extends StObject {
 }
 object ModifyNetworkInterfaceAttributeRequest {
   
-  @scala.inline
-  def apply(NetworkInterfaceId: NetworkInterfaceId): ModifyNetworkInterfaceAttributeRequest = {
+  inline def apply(NetworkInterfaceId: NetworkInterfaceId): ModifyNetworkInterfaceAttributeRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyNetworkInterfaceAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ModifyNetworkInterfaceAttributeRequestMutableBuilder[Self <: ModifyNetworkInterfaceAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyNetworkInterfaceAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: NetworkInterfaceAttachmentChanges): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: NetworkInterfaceAttachmentChanges): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentUndefined: Self = StObject.set(x, "Attachment", js.undefined)
+    inline def setAttachmentUndefined: Self = StObject.set(x, "Attachment", js.undefined)
     
-    @scala.inline
-    def setDescription(value: AttributeValue): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: AttributeValue): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGroups(value: SecurityGroupIdStringList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: SecurityGroupIdStringList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDestCheck(value: AttributeBooleanValue): Self = StObject.set(x, "SourceDestCheck", value.asInstanceOf[js.Any])
+    inline def setSourceDestCheck(value: AttributeBooleanValue): Self = StObject.set(x, "SourceDestCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDestCheckUndefined: Self = StObject.set(x, "SourceDestCheck", js.undefined)
+    inline def setSourceDestCheckUndefined: Self = StObject.set(x, "SourceDestCheck", js.undefined)
   }
 }

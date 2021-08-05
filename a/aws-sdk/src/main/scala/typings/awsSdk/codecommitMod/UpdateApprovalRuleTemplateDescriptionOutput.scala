@@ -13,16 +13,13 @@ trait UpdateApprovalRuleTemplateDescriptionOutput extends StObject {
 }
 object UpdateApprovalRuleTemplateDescriptionOutput {
   
-  @scala.inline
-  def apply(approvalRuleTemplate: ApprovalRuleTemplate): UpdateApprovalRuleTemplateDescriptionOutput = {
+  inline def apply(approvalRuleTemplate: ApprovalRuleTemplate): UpdateApprovalRuleTemplateDescriptionOutput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplate = approvalRuleTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApprovalRuleTemplateDescriptionOutput]
   }
   
-  @scala.inline
-  implicit class UpdateApprovalRuleTemplateDescriptionOutputMutableBuilder[Self <: UpdateApprovalRuleTemplateDescriptionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApprovalRuleTemplateDescriptionOutput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleTemplate(value: ApprovalRuleTemplate): Self = StObject.set(x, "approvalRuleTemplate", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplate(value: ApprovalRuleTemplate): Self = StObject.set(x, "approvalRuleTemplate", value.asInstanceOf[js.Any])
   }
 }

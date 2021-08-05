@@ -28,8 +28,7 @@ trait BuildProcessTemplate extends StObject {
 }
 object BuildProcessTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     fileExists: Boolean,
     id: Double,
@@ -45,37 +44,26 @@ object BuildProcessTemplate {
     __obj.asInstanceOf[BuildProcessTemplate]
   }
   
-  @scala.inline
-  implicit class BuildProcessTemplateMutableBuilder[Self <: BuildProcessTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: BuildProcessTemplate](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileExists(value: Boolean): Self = StObject.set(x, "fileExists", value.asInstanceOf[js.Any])
+    inline def setFileExists(value: Boolean): Self = StObject.set(x, "fileExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: String): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: String): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
+    inline def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedReasons(value: BuildReason): Self = StObject.set(x, "supportedReasons", value.asInstanceOf[js.Any])
+    inline def setSupportedReasons(value: BuildReason): Self = StObject.set(x, "supportedReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamProject(value: String): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
+    inline def setTeamProject(value: String): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateType(value: ProcessTemplateType): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
+    inline def setTemplateType(value: ProcessTemplateType): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

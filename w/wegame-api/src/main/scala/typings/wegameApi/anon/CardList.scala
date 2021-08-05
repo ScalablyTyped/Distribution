@@ -13,19 +13,15 @@ trait CardList extends StObject {
 }
 object CardList {
   
-  @scala.inline
-  def apply(cardList: js.Array[IsSuccess]): CardList = {
+  inline def apply(cardList: js.Array[IsSuccess]): CardList = {
     val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardList]
   }
   
-  @scala.inline
-  implicit class CardListMutableBuilder[Self <: CardList] (val x: Self) extends AnyVal {
+  extension [Self <: CardList](x: Self) {
     
-    @scala.inline
-    def setCardList(value: js.Array[IsSuccess]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
+    inline def setCardList(value: js.Array[IsSuccess]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardListVarargs(value: IsSuccess*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: IsSuccess*): Self = StObject.set(x, "cardList", js.Array(value :_*))
   }
 }

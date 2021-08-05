@@ -20,20 +20,16 @@ object types {
   }
   object ClearDetails {
     
-    @scala.inline
-    def apply(): ClearDetails = {
+    inline def apply(): ClearDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearDetails]
     }
     
-    @scala.inline
-    implicit class ClearDetailsMutableBuilder[Self <: ClearDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ClearDetails](x: Self) {
       
-      @scala.inline
-      def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -45,20 +41,16 @@ object types {
   }
   object GetDetails {
     
-    @scala.inline
-    def apply(): GetDetails = {
+    inline def apply(): GetDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetDetails]
     }
     
-    @scala.inline
-    implicit class GetDetailsMutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetDetails](x: Self) {
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+      inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     }
   }
   
@@ -79,26 +71,20 @@ object types {
   }
   object GetReturnDetails {
     
-    @scala.inline
-    def apply(levelOfControl: LevelOfControl, value: js.Any): GetReturnDetails = {
+    inline def apply(levelOfControl: LevelOfControl, value: js.Any): GetReturnDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetReturnDetails]
     }
     
-    @scala.inline
-    implicit class GetReturnDetailsMutableBuilder[Self <: GetReturnDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetReturnDetails](x: Self) {
       
-      @scala.inline
-      def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
+      inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
+      inline def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
       
-      @scala.inline
-      def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,17 +105,13 @@ object types {
   trait LevelOfControl extends StObject
   object LevelOfControl {
     
-    @scala.inline
-    def controllable_by_this_extension: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controllable_by_this_extension = "controllable_by_this_extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controllable_by_this_extension]
+    inline def controllable_by_this_extension: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controllable_by_this_extension = "controllable_by_this_extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controllable_by_this_extension]
     
-    @scala.inline
-    def controlled_by_other_extensions: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_other_extensions = "controlled_by_other_extensions".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_other_extensions]
+    inline def controlled_by_other_extensions: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_other_extensions = "controlled_by_other_extensions".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_other_extensions]
     
-    @scala.inline
-    def controlled_by_this_extension: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_this_extension = "controlled_by_this_extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_this_extension]
+    inline def controlled_by_this_extension: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_this_extension = "controlled_by_this_extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.controlled_by_this_extension]
     
-    @scala.inline
-    def not_controllable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_controllable = "not_controllable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_controllable]
+    inline def not_controllable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_controllable = "not_controllable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_controllable]
   }
   
   trait OnChangeDetails extends StObject {
@@ -148,26 +130,20 @@ object types {
   }
   object OnChangeDetails {
     
-    @scala.inline
-    def apply(levelOfControl: LevelOfControl, value: js.Any): OnChangeDetails = {
+    inline def apply(levelOfControl: LevelOfControl, value: js.Any): OnChangeDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeDetails]
     }
     
-    @scala.inline
-    implicit class OnChangeDetailsMutableBuilder[Self <: OnChangeDetails] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangeDetails](x: Self) {
       
-      @scala.inline
-      def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
+      inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
+      inline def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
       
-      @scala.inline
-      def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,23 +161,18 @@ object types {
   }
   object SetDetails {
     
-    @scala.inline
-    def apply(value: js.Any): SetDetails = {
+    inline def apply(value: js.Any): SetDetails = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetDetails]
     }
     
-    @scala.inline
-    implicit class SetDetailsMutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetDetails](x: Self) {
       
-      @scala.inline
-      def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +201,7 @@ object types {
   }
   object Setting {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: ClearDetails => js.Promise[Unit],
       get: GetDetails => js.Promise[GetReturnDetails],
       onChange: WebExtEvent[js.Function1[/* details */ OnChangeDetails, Unit]],
@@ -241,20 +211,15 @@ object types {
       __obj.asInstanceOf[Setting]
     }
     
-    @scala.inline
-    implicit class SettingMutableBuilder[Self <: Setting] (val x: Self) extends AnyVal {
+    extension [Self <: Setting](x: Self) {
       
-      @scala.inline
-      def setClear(value: ClearDetails => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: ClearDetails => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: GetDetails => js.Promise[GetReturnDetails]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: GetDetails => js.Promise[GetReturnDetails]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChange(value: WebExtEvent[js.Function1[/* details */ OnChangeDetails, Unit]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: WebExtEvent[js.Function1[/* details */ OnChangeDetails, Unit]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: SetDetails => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: SetDetails => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
   
@@ -278,16 +243,12 @@ object types {
   trait SettingScope extends StObject
   object SettingScope {
     
-    @scala.inline
-    def incognito_persistent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_persistent = "incognito_persistent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_persistent]
+    inline def incognito_persistent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_persistent = "incognito_persistent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_persistent]
     
-    @scala.inline
-    def incognito_session_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_session_only = "incognito_session_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_session_only]
+    inline def incognito_session_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_session_only = "incognito_session_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.incognito_session_only]
     
-    @scala.inline
-    def regular: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular = "regular".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular]
+    inline def regular: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular = "regular".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular]
     
-    @scala.inline
-    def regular_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular_only = "regular_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular_only]
+    inline def regular_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular_only = "regular_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.regular_only]
   }
 }

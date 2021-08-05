@@ -18,24 +18,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait menuBase extends StObject
 object menuBase {
   
-  @scala.inline
-  def menuItemColonaddContact: typings.jweixin.jweixinStrings.menuItemColonaddContact = "menuItem:addContact".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonaddContact]
+  inline def menuItemColonaddContact: typings.jweixin.jweixinStrings.menuItemColonaddContact = "menuItem:addContact".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonaddContact]
   
-  @scala.inline
-  def menuItemColondayMode: typings.jweixin.jweixinStrings.menuItemColondayMode = "menuItem:dayMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColondayMode]
+  inline def menuItemColondayMode: typings.jweixin.jweixinStrings.menuItemColondayMode = "menuItem:dayMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColondayMode]
   
-  @scala.inline
-  def menuItemColonexposeArticle: typings.jweixin.jweixinStrings.menuItemColonexposeArticle = "menuItem:exposeArticle".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonexposeArticle]
+  inline def menuItemColonexposeArticle: typings.jweixin.jweixinStrings.menuItemColonexposeArticle = "menuItem:exposeArticle".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonexposeArticle]
   
-  @scala.inline
-  def menuItemColonnightMode: typings.jweixin.jweixinStrings.menuItemColonnightMode = "menuItem:nightMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonnightMode]
+  inline def menuItemColonnightMode: typings.jweixin.jweixinStrings.menuItemColonnightMode = "menuItem:nightMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonnightMode]
   
-  @scala.inline
-  def menuItemColonprofile: typings.jweixin.jweixinStrings.menuItemColonprofile = "menuItem:profile".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonprofile]
+  inline def menuItemColonprofile: typings.jweixin.jweixinStrings.menuItemColonprofile = "menuItem:profile".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonprofile]
   
-  @scala.inline
-  def menuItemColonrefresh: typings.jweixin.jweixinStrings.menuItemColonrefresh = "menuItem:refresh".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonrefresh]
+  inline def menuItemColonrefresh: typings.jweixin.jweixinStrings.menuItemColonrefresh = "menuItem:refresh".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonrefresh]
   
-  @scala.inline
-  def menuItemColonsetFont: typings.jweixin.jweixinStrings.menuItemColonsetFont = "menuItem:setFont".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonsetFont]
+  inline def menuItemColonsetFont: typings.jweixin.jweixinStrings.menuItemColonsetFont = "menuItem:setFont".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonsetFont]
 }

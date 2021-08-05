@@ -13,27 +13,20 @@ object global {
   @JSGlobal("phantom")
   @js.native
   def phantom: Phantom = js.native
-  @scala.inline
-  def phantom_=(x: Phantom): Unit = js.Dynamic.global.updateDynamic("phantom")(x.asInstanceOf[js.Any])
+  inline def phantom_=(x: Phantom): Unit = js.Dynamic.global.updateDynamic("phantom")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def require(module: js.Any): js.Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def require(module: js.Any): js.Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def require_fs(module: fs): FsModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[FsModule]
+  inline def require_fs(module: fs): FsModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[FsModule]
   
-  @scala.inline
-  def require_system(module: system): SystemModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[SystemModule]
+  inline def require_system(module: system): SystemModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[SystemModule]
   
-  @scala.inline
-  def require_webpage(module: webpage): WebPageModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[WebPageModule]
+  inline def require_webpage(module: webpage): WebPageModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[WebPageModule]
   
-  @scala.inline
-  def require_webserver(module: webserver): WebServerModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[WebServerModule]
+  inline def require_webserver(module: webserver): WebServerModule = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[WebServerModule]
   
   @JSGlobal("slimer")
   @js.native
   def slimer: Slimer = js.native
-  @scala.inline
-  def slimer_=(x: Slimer): Unit = js.Dynamic.global.updateDynamic("slimer")(x.asInstanceOf[js.Any])
+  inline def slimer_=(x: Slimer): Unit = js.Dynamic.global.updateDynamic("slimer")(x.asInstanceOf[js.Any])
 }

@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFAttachVaultOptionsFlag extends StObject
 object MFAttachVaultOptionsFlag {
   
-  @scala.inline
-  def EventHandlers: `32` = 32.asInstanceOf[`32`]
+  inline def EventHandlers: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def ExportImportJobs: `8` = 8.asInstanceOf[`8`]
+  inline def ExportImportJobs: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def ExportedDataSets: `4` = 4.asInstanceOf[`4`]
+  inline def ExportedDataSets: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ExternalObjectTypes: `1` = 1.asInstanceOf[`1`]
+  inline def ExternalObjectTypes: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ExternalSources: `2` = 2.asInstanceOf[`2`]
+  inline def ExternalSources: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ExternalUserGroups: `16` = 16.asInstanceOf[`16`]
+  inline def ExternalUserGroups: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
 }

@@ -9,8 +9,7 @@ trait GetGcmChannelInput
      with typings.awsSdkClientPinpointBrowser.typesGetGcmChannelInputMod.GetGcmChannelInput
 object GetGcmChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetGcmChannelInput = {
+  inline def apply(ApplicationId: String): GetGcmChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGcmChannelInput]
   }

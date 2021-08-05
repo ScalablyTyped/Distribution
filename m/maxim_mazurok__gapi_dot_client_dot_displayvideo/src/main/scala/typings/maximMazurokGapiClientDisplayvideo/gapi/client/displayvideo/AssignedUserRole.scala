@@ -20,37 +20,27 @@ trait AssignedUserRole extends StObject {
 }
 object AssignedUserRole {
   
-  @scala.inline
-  def apply(): AssignedUserRole = {
+  inline def apply(): AssignedUserRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssignedUserRole]
   }
   
-  @scala.inline
-  implicit class AssignedUserRoleMutableBuilder[Self <: AssignedUserRole] (val x: Self) extends AnyVal {
+  extension [Self <: AssignedUserRole](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setAssignedUserRoleId(value: String): Self = StObject.set(x, "assignedUserRoleId", value.asInstanceOf[js.Any])
+    inline def setAssignedUserRoleId(value: String): Self = StObject.set(x, "assignedUserRoleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedUserRoleIdUndefined: Self = StObject.set(x, "assignedUserRoleId", js.undefined)
+    inline def setAssignedUserRoleIdUndefined: Self = StObject.set(x, "assignedUserRoleId", js.undefined)
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
-    @scala.inline
-    def setUserRole(value: String): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
+    inline def setUserRole(value: String): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
+    inline def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
   }
 }

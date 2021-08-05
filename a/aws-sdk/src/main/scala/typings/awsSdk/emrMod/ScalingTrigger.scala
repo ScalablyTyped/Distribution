@@ -13,16 +13,13 @@ trait ScalingTrigger extends StObject {
 }
 object ScalingTrigger {
   
-  @scala.inline
-  def apply(CloudWatchAlarmDefinition: CloudWatchAlarmDefinition): ScalingTrigger = {
+  inline def apply(CloudWatchAlarmDefinition: CloudWatchAlarmDefinition): ScalingTrigger = {
     val __obj = js.Dynamic.literal(CloudWatchAlarmDefinition = CloudWatchAlarmDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingTrigger]
   }
   
-  @scala.inline
-  implicit class ScalingTriggerMutableBuilder[Self <: ScalingTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingTrigger](x: Self) {
     
-    @scala.inline
-    def setCloudWatchAlarmDefinition(value: CloudWatchAlarmDefinition): Self = StObject.set(x, "CloudWatchAlarmDefinition", value.asInstanceOf[js.Any])
+    inline def setCloudWatchAlarmDefinition(value: CloudWatchAlarmDefinition): Self = StObject.set(x, "CloudWatchAlarmDefinition", value.asInstanceOf[js.Any])
   }
 }

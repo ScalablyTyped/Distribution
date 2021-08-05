@@ -18,16 +18,13 @@ trait ASPxClientFileManagerItemEditingEventArgs
 }
 object ASPxClientFileManagerItemEditingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, fullName: String, isFolder: Boolean, name: String): ASPxClientFileManagerItemEditingEventArgs = {
+  inline def apply(cancel: Boolean, fullName: String, isFolder: Boolean, name: String): ASPxClientFileManagerItemEditingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], isFolder = isFolder.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerItemEditingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerItemEditingEventArgsMutableBuilder[Self <: ASPxClientFileManagerItemEditingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerItemEditingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

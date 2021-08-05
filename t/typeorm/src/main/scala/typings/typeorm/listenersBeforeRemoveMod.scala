@@ -11,6 +11,5 @@ object listenersBeforeRemoveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BeforeRemove(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeRemove")().asInstanceOf[PropertyDecorator]
+  inline def BeforeRemove(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeRemove")().asInstanceOf[PropertyDecorator]
 }

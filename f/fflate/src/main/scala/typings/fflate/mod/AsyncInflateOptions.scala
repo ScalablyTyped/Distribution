@@ -17,19 +17,15 @@ trait AsyncInflateOptions
 }
 object AsyncInflateOptions {
   
-  @scala.inline
-  def apply(): AsyncInflateOptions = {
+  inline def apply(): AsyncInflateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncInflateOptions]
   }
   
-  @scala.inline
-  implicit class AsyncInflateOptionsMutableBuilder[Self <: AsyncInflateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncInflateOptions](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.UtilObject")
 @js.native
-class UtilObject protected ()
+/* private */ class UtilObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.UtilObject {
   
   /* CompleteClass */
   override val Date: VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.UtilObject_typekey")
   var InfoPathDotUtilObject_typekey: typings.activexInfopath.InfoPath.UtilObject = js.native
   

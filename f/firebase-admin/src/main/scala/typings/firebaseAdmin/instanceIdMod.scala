@@ -9,10 +9,8 @@ object instanceIdMod {
   
   object instanceId {
     
-    @scala.inline
-    def apply(): InstanceId = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[InstanceId]
-    @scala.inline
-    def apply(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
+    inline def apply(): InstanceId = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[InstanceId]
+    inline def apply(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
     
     @JSImport("firebase-admin/lib/instance-id", "instanceId")
     @js.native
@@ -53,20 +51,16 @@ object instanceIdMod {
     }
     object InstanceId {
       
-      @scala.inline
-      def apply(app: App, deleteInstanceId: String => js.Promise[Unit]): InstanceId = {
+      inline def apply(app: App, deleteInstanceId: String => js.Promise[Unit]): InstanceId = {
         val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], deleteInstanceId = js.Any.fromFunction1(deleteInstanceId))
         __obj.asInstanceOf[InstanceId]
       }
       
-      @scala.inline
-      implicit class InstanceIdMutableBuilder[Self <: InstanceId] (val x: Self) extends AnyVal {
+      extension [Self <: InstanceId](x: Self) {
         
-        @scala.inline
-        def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+        inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteInstanceId(value: String => js.Promise[Unit]): Self = StObject.set(x, "deleteInstanceId", js.Any.fromFunction1(value))
+        inline def setDeleteInstanceId(value: String => js.Promise[Unit]): Self = StObject.set(x, "deleteInstanceId", js.Any.fromFunction1(value))
       }
     }
   }

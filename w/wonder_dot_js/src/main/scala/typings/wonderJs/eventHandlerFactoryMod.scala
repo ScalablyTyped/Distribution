@@ -17,7 +17,6 @@ object eventHandlerFactoryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createEventHandler(eventType: EEventType): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")(eventType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createEventHandler(eventType: EEventType): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")(eventType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

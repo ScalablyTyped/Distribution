@@ -84,14 +84,12 @@ object componentsTimePickerTimePickerMod {
     @JSImport("wix-ui-core/dist/standalone/src/components/time-picker/TimePicker", "TimePicker.defaultProps")
     @js.native
     def defaultProps: UseAmPm = js.native
-    @scala.inline
-    def defaultProps_=(x: UseAmPm): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: UseAmPm): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/time-picker/TimePicker", "TimePicker.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined std.Pick<wix-ui-core.wix-ui-core/dist/standalone/src/components/input.InputProps, 'disabled' | 'readOnly' | 'aria-label'> & {  onChange :(value : string): void | undefined,   onFocus :react.react.FocusEventHandler<std.HTMLElement> | undefined,   onBlur :react.react.FocusEventHandler<std.HTMLElement> | undefined,   useNativeInteraction :boolean | undefined,   useAmPm :wix-ui-core.wix-ui-core/dist/standalone/src/components/time-picker/constants.AmPmOptions | undefined,   step :number | undefined,   value :string | undefined,   tickerUpIcon :react.react.ReactNode | undefined,   tickerDownIcon :react.react.ReactNode | undefined,   error :boolean | undefined,   style :react.react.CSSProperties | undefined,   className :string | undefined,   data-hook :string | undefined} */
@@ -146,110 +144,76 @@ object componentsTimePickerTimePickerMod {
   }
   object TimePickerProps {
     
-    @scala.inline
-    def apply(): TimePickerProps = {
+    inline def apply(): TimePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimePickerProps]
     }
     
-    @scala.inline
-    implicit class TimePickerPropsMutableBuilder[Self <: TimePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimePickerProps](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTickerDownIcon(value: ReactNode): Self = StObject.set(x, "tickerDownIcon", value.asInstanceOf[js.Any])
+      inline def setTickerDownIcon(value: ReactNode): Self = StObject.set(x, "tickerDownIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickerDownIconUndefined: Self = StObject.set(x, "tickerDownIcon", js.undefined)
+      inline def setTickerDownIconUndefined: Self = StObject.set(x, "tickerDownIcon", js.undefined)
       
-      @scala.inline
-      def setTickerUpIcon(value: ReactNode): Self = StObject.set(x, "tickerUpIcon", value.asInstanceOf[js.Any])
+      inline def setTickerUpIcon(value: ReactNode): Self = StObject.set(x, "tickerUpIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickerUpIconUndefined: Self = StObject.set(x, "tickerUpIcon", js.undefined)
+      inline def setTickerUpIconUndefined: Self = StObject.set(x, "tickerUpIcon", js.undefined)
       
-      @scala.inline
-      def setUseAmPm(value: AmPmOptions): Self = StObject.set(x, "useAmPm", value.asInstanceOf[js.Any])
+      inline def setUseAmPm(value: AmPmOptions): Self = StObject.set(x, "useAmPm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAmPmUndefined: Self = StObject.set(x, "useAmPm", js.undefined)
+      inline def setUseAmPmUndefined: Self = StObject.set(x, "useAmPm", js.undefined)
       
-      @scala.inline
-      def setUseNativeInteraction(value: Boolean): Self = StObject.set(x, "useNativeInteraction", value.asInstanceOf[js.Any])
+      inline def setUseNativeInteraction(value: Boolean): Self = StObject.set(x, "useNativeInteraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeInteractionUndefined: Self = StObject.set(x, "useNativeInteraction", js.undefined)
+      inline def setUseNativeInteractionUndefined: Self = StObject.set(x, "useNativeInteraction", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -261,20 +225,16 @@ object componentsTimePickerTimePickerMod {
   }
   object TimePickerState {
     
-    @scala.inline
-    def apply(focus: Boolean, value: String): TimePickerState = {
+    inline def apply(focus: Boolean, value: String): TimePickerState = {
       val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimePickerState]
     }
     
-    @scala.inline
-    implicit class TimePickerStateMutableBuilder[Self <: TimePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: TimePickerState](x: Self) {
       
-      @scala.inline
-      def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,16 +13,13 @@ trait MaskedViewIOSProps
 }
 object MaskedViewIOSProps {
   
-  @scala.inline
-  def apply(maskElement: ReactElement): MaskedViewIOSProps = {
+  inline def apply(maskElement: ReactElement): MaskedViewIOSProps = {
     val __obj = js.Dynamic.literal(maskElement = maskElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskedViewIOSProps]
   }
   
-  @scala.inline
-  implicit class MaskedViewIOSPropsMutableBuilder[Self <: MaskedViewIOSProps] (val x: Self) extends AnyVal {
+  extension [Self <: MaskedViewIOSProps](x: Self) {
     
-    @scala.inline
-    def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
+    inline def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
   }
 }

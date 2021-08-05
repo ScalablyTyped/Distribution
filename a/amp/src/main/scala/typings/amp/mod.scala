@@ -21,9 +21,7 @@ object mod {
     def _write(chunk: js.Any, encoding: String, fn: js.Function0[Unit]): Unit = js.native
   }
   
-  @scala.inline
-  def decode(buf: Buffer): js.Array[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer]]
+  inline def decode(buf: Buffer): js.Array[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer]]
   
-  @scala.inline
-  def encode(args: js.Array[Buffer]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encode(args: js.Array[Buffer]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

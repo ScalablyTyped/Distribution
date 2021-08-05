@@ -30,8 +30,7 @@ object globalUtilsMod {
   @js.native
   val GLOBAL_TRACE_API_KEY: js.Symbol = js.native
   
-  @scala.inline
-  def makeGetter[T](requiredVersion: Double, instance: T, fallback: T): Get[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGetter")(requiredVersion.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Get[T]]
+  inline def makeGetter[T](requiredVersion: Double, instance: T, fallback: T): Get[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGetter")(requiredVersion.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Get[T]]
   
   type Get[T] = js.Function1[/* version */ Double, T]
   

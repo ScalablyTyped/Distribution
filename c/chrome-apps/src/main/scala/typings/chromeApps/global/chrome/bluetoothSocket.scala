@@ -36,8 +36,7 @@ object bluetoothSocket {
     * @param socketId The socket identifier.
     * @param callback Called when the `close` operation completes
     */
-  @scala.inline
-  def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Connects the socket to a remote Bluetooth device.
@@ -54,32 +53,27 @@ object bluetoothSocket {
     * @param uuid The UUID of the service to connect to.
     * @param callback Called when the connect attempt is complete.
     */
-  @scala.inline
-  def connect(socketId: integer, address: String, uuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(socketId.asInstanceOf[js.Any], address.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(socketId: integer, address: String, uuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(socketId.asInstanceOf[js.Any], address.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a Bluetooth socket.
     * @param callback Called when the socket has been created
     * */
-  @scala.inline
-  def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Creates a Bluetooth socket.
     * @param properties The socket properties (optional)
     * @param callback Called when the socket has been created
     */
-  @scala.inline
-  def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Disconnects the socket. The socket identifier remains valid.
     * @param socketId The socket identifier.
     * @param [callback] Called when the disconnect attempt is complete.
     */
-  @scala.inline
-  def disconnect(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disconnect(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieves the state of the given socket.
@@ -87,16 +81,14 @@ object bluetoothSocket {
     * @param callback Called when the socket state is available.
     *                 Callback returning object containing the socket information.
     */
-  @scala.inline
-  def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieves the list of currently opened sockets owned by the application.
     * @param callback Called when the list of sockets is available.
     *                 Returns an array of socket info.
     */
-  @scala.inline
-  def getSockets(callback: js.Function1[/* sockets */ js.Array[SocketInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSockets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getSockets(callback: js.Function1[/* sockets */ js.Array[SocketInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSockets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Listen for connections using the L2CAP protocol.
@@ -105,8 +97,7 @@ object bluetoothSocket {
     * @param uuid Service UUID to listen on.
     * @param callback Called when listen operation completes.
     */
-  @scala.inline
-  def listenUsingL2cap(socketId: integer, uuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingL2cap")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def listenUsingL2cap(socketId: integer, uuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingL2cap")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Listen for connections using the L2CAP protocol.
     *
@@ -115,8 +106,7 @@ object bluetoothSocket {
     * @param options Optional additional options for the service.
     * @param callback Called when listen operation completes.
     */
-  @scala.inline
-  def listenUsingL2cap(socketId: integer, uuid: String, options: ListenOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingL2cap")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def listenUsingL2cap(socketId: integer, uuid: String, options: ListenOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingL2cap")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Listen for connections using the RFCOMM protocol.
@@ -125,8 +115,7 @@ object bluetoothSocket {
     * @param uuid Service UUID to listen on.
     * @param callback Called when listen operation completes.
     */
-  @scala.inline
-  def listenUsingRfcomm(socketId: integer, uuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingRfcomm")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def listenUsingRfcomm(socketId: integer, uuid: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingRfcomm")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Listen for connections using the RFCOMM protocol.
     *
@@ -135,8 +124,7 @@ object bluetoothSocket {
     * @param options Optional additional options for the service.
     * @param callback Called when listen operation completes.
     */
-  @scala.inline
-  def listenUsingRfcomm(socketId: integer, uuid: String, options: ListenOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingRfcomm")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def listenUsingRfcomm(socketId: integer, uuid: String, options: ListenOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenUsingRfcomm")(socketId.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Event raised when a connection has been established
@@ -180,10 +168,8 @@ object bluetoothSocket {
     * @param data The data to send.
     * @param [callback] Called with the number of bytes sent.
     */
-  @scala.inline
-  def send(socketId: integer, data: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* bytesSent */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(socketId: integer, data: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* bytesSent */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Enables or disables a connected socket from
@@ -208,10 +194,8 @@ object bluetoothSocket {
     * See setPaused. The default value is 'false'.
     * @param [callback] Callback from the setPaused method.
     */
-  @scala.inline
-  def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Updates the socket properties.
@@ -219,8 +203,6 @@ object bluetoothSocket {
     * @param properties  The properties to update.
     * @param [callback] Called when the properties are updated.
     */
-  @scala.inline
-  def update(socketId: integer, properties: SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(socketId: integer, properties: SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -16,19 +16,15 @@ trait InputPaneVisibilityEventArgs extends StObject {
 }
 object InputPaneVisibilityEventArgs {
   
-  @scala.inline
-  def apply(ensuredFocusedElementInView: Boolean, occludedRect: Rect): InputPaneVisibilityEventArgs = {
+  inline def apply(ensuredFocusedElementInView: Boolean, occludedRect: Rect): InputPaneVisibilityEventArgs = {
     val __obj = js.Dynamic.literal(ensuredFocusedElementInView = ensuredFocusedElementInView.asInstanceOf[js.Any], occludedRect = occludedRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputPaneVisibilityEventArgs]
   }
   
-  @scala.inline
-  implicit class InputPaneVisibilityEventArgsMutableBuilder[Self <: InputPaneVisibilityEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: InputPaneVisibilityEventArgs](x: Self) {
     
-    @scala.inline
-    def setEnsuredFocusedElementInView(value: Boolean): Self = StObject.set(x, "ensuredFocusedElementInView", value.asInstanceOf[js.Any])
+    inline def setEnsuredFocusedElementInView(value: Boolean): Self = StObject.set(x, "ensuredFocusedElementInView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccludedRect(value: Rect): Self = StObject.set(x, "occludedRect", value.asInstanceOf[js.Any])
+    inline def setOccludedRect(value: Rect): Self = StObject.set(x, "occludedRect", value.asInstanceOf[js.Any])
   }
 }

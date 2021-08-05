@@ -37,28 +37,21 @@ trait PersistentVolumeClaim extends StObject {
 }
 object PersistentVolumeClaim {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: PersistentVolumeClaimSpec, status: PersistentVolumeClaimStatus): PersistentVolumeClaim = {
+  inline def apply(metadata: ObjectMeta, spec: PersistentVolumeClaimSpec, status: PersistentVolumeClaimStatus): PersistentVolumeClaim = {
     val __obj = js.Dynamic.literal(apiVersion = "v1", kind = "PersistentVolumeClaim", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentVolumeClaim]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimMutableBuilder[Self <: PersistentVolumeClaim] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaim](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolumeClaim): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolumeClaim): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: PersistentVolumeClaimSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: PersistentVolumeClaimSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PersistentVolumeClaimStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PersistentVolumeClaimStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

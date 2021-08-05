@@ -12,19 +12,15 @@ trait Done extends StObject {
 }
 object Done {
   
-  @scala.inline
-  def apply(done: Boolean, value: Unit): Done = {
+  inline def apply(done: Boolean, value: Unit): Done = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Done]
   }
   
-  @scala.inline
-  implicit class DoneMutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
+  extension [Self <: Done](x: Self) {
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

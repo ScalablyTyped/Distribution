@@ -18,25 +18,19 @@ trait GetConnectedBluetoothDevicesSuccessData extends StObject {
 }
 object GetConnectedBluetoothDevicesSuccessData {
   
-  @scala.inline
-  def apply(): GetConnectedBluetoothDevicesSuccessData = {
+  inline def apply(): GetConnectedBluetoothDevicesSuccessData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConnectedBluetoothDevicesSuccessData]
   }
   
-  @scala.inline
-  implicit class GetConnectedBluetoothDevicesSuccessDataMutableBuilder[Self <: GetConnectedBluetoothDevicesSuccessData] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectedBluetoothDevicesSuccessData](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

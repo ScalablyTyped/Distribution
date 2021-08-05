@@ -45,28 +45,21 @@ trait ITag extends StObject {
 }
 object ITag {
   
-  @scala.inline
-  def apply(created_time: String, id: String, user: IUserInfo, x: Double, y: Double): ITag = {
+  inline def apply(created_time: String, id: String, user: IUserInfo, x: Double, y: Double): ITag = {
     val __obj = js.Dynamic.literal(created_time = created_time.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITag]
   }
   
-  @scala.inline
-  implicit class ITagMutableBuilder[Self <: ITag] (val x: Self) extends AnyVal {
+  extension [Self <: ITag](x: Self) {
     
-    @scala.inline
-    def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
+    inline def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: IUserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: IUserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

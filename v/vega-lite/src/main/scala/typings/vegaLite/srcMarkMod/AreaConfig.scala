@@ -14,8 +14,7 @@ trait AreaConfig[ES /* <: ExprRef | SignalRef */]
      with _AnyMarkConfig[ES]
 object AreaConfig {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): AreaConfig[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): AreaConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreaConfig[ES]]
   }

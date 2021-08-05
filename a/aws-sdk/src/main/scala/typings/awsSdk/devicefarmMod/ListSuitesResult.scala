@@ -18,28 +18,21 @@ trait ListSuitesResult extends StObject {
 }
 object ListSuitesResult {
   
-  @scala.inline
-  def apply(): ListSuitesResult = {
+  inline def apply(): ListSuitesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSuitesResult]
   }
   
-  @scala.inline
-  implicit class ListSuitesResultMutableBuilder[Self <: ListSuitesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListSuitesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSuites(value: Suites): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
+    inline def setSuites(value: Suites): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuitesUndefined: Self = StObject.set(x, "suites", js.undefined)
+    inline def setSuitesUndefined: Self = StObject.set(x, "suites", js.undefined)
     
-    @scala.inline
-    def setSuitesVarargs(value: Suite*): Self = StObject.set(x, "suites", js.Array(value :_*))
+    inline def setSuitesVarargs(value: Suite*): Self = StObject.set(x, "suites", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait DeleteLayerRequest extends StObject {
 }
 object DeleteLayerRequest {
   
-  @scala.inline
-  def apply(LayerId: String): DeleteLayerRequest = {
+  inline def apply(LayerId: String): DeleteLayerRequest = {
     val __obj = js.Dynamic.literal(LayerId = LayerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLayerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLayerRequestMutableBuilder[Self <: DeleteLayerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLayerRequest](x: Self) {
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
   }
 }

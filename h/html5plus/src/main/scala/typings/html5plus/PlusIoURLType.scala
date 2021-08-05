@@ -38,31 +38,23 @@ trait PlusIoURLType extends StObject {
 }
 object PlusIoURLType {
   
-  @scala.inline
-  def apply(): PlusIoURLType = {
+  inline def apply(): PlusIoURLType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusIoURLType]
   }
   
-  @scala.inline
-  implicit class PlusIoURLTypeMutableBuilder[Self <: PlusIoURLType] (val x: Self) extends AnyVal {
+  extension [Self <: PlusIoURLType](x: Self) {
     
-    @scala.inline
-    def setLocalURL(value: PlusIoLocalURL): Self = StObject.set(x, "LocalURL", value.asInstanceOf[js.Any])
+    inline def setLocalURL(value: PlusIoLocalURL): Self = StObject.set(x, "LocalURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalURLUndefined: Self = StObject.set(x, "LocalURL", js.undefined)
+    inline def setLocalURLUndefined: Self = StObject.set(x, "LocalURL", js.undefined)
     
-    @scala.inline
-    def setRelativeURL(value: PlusIoRelativeURL): Self = StObject.set(x, "RelativeURL", value.asInstanceOf[js.Any])
+    inline def setRelativeURL(value: PlusIoRelativeURL): Self = StObject.set(x, "RelativeURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeURLUndefined: Self = StObject.set(x, "RelativeURL", js.undefined)
+    inline def setRelativeURLUndefined: Self = StObject.set(x, "RelativeURL", js.undefined)
     
-    @scala.inline
-    def setRomoteURL(value: String): Self = StObject.set(x, "RomoteURL", value.asInstanceOf[js.Any])
+    inline def setRomoteURL(value: String): Self = StObject.set(x, "RomoteURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRomoteURLUndefined: Self = StObject.set(x, "RomoteURL", js.undefined)
+    inline def setRomoteURLUndefined: Self = StObject.set(x, "RomoteURL", js.undefined)
   }
 }

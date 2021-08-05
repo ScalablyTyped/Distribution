@@ -36,23 +36,23 @@ object subscriptionDialogMod {
       delegate: SubscriptionDelegate
     ) = this()
     
-    var N: js.Any = js.native
+    /* private */ var N: js.Any = js.native
     
-    var _autoRefresh: js.Any = js.native
+    /* private */ var _autoRefresh: js.Any = js.native
     
-    var _subscriptionEvent: js.Any = js.native
+    /* private */ var _subscriptionEvent: js.Any = js.native
     
-    var _subscriptionExpires: js.Any = js.native
+    /* private */ var _subscriptionExpires: js.Any = js.native
     
-    var _subscriptionExpiresInitial: js.Any = js.native
+    /* private */ var _subscriptionExpiresInitial: js.Any = js.native
     
-    var _subscriptionExpiresLastSet: js.Any = js.native
+    /* private */ var _subscriptionExpiresLastSet: js.Any = js.native
     
-    var _subscriptionRefresh: js.Any = js.native
+    /* private */ var _subscriptionRefresh: js.Any = js.native
     
-    var _subscriptionRefreshLastSet: js.Any = js.native
+    /* private */ var _subscriptionRefreshLastSet: js.Any = js.native
     
-    var _subscriptionState: js.Any = js.native
+    /* private */ var _subscriptionState: js.Any = js.native
     
     def autoRefresh: Boolean = js.native
     def autoRefresh_=(autoRefresh: Boolean): Unit = js.native
@@ -62,18 +62,18 @@ object subscriptionDialogMod {
     
     var delegate: js.UndefOr[SubscriptionDelegate] = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /**
       * Handle in dialog NOTIFY requests.
       * This does not include the first NOTIFY which created the dialog.
       * @param message - The incoming NOTIFY request message.
       */
-    var onNotify: js.Any = js.native
+    /* private */ var onNotify: js.Any = js.native
     
-    var onRefresh: js.Any = js.native
+    /* private */ var onRefresh: js.Any = js.native
     
-    var onTerminated: js.Any = js.native
+    /* private */ var onTerminated: js.Any = js.native
     
     /**
       * 4.1.2.2.  Refreshing of Subscriptions
@@ -81,13 +81,13 @@ object subscriptionDialogMod {
       */
     def refresh(): OutgoingSubscribeRequest = js.native
     
-    var refreshTimer: js.Any = js.native
+    /* private */ var refreshTimer: js.Any = js.native
     
-    var refreshTimerClear: js.Any = js.native
+    /* private */ var refreshTimerClear: js.Any = js.native
     
-    var refreshTimerSet: js.Any = js.native
+    /* private */ var refreshTimerSet: js.Any = js.native
     
-    var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: js.Any = js.native
     
     /**
       * 4.1.2.2.  Refreshing of Subscriptions
@@ -147,7 +147,7 @@ object subscriptionDialogMod {
       * cancel Timer N.
       * https://tools.ietf.org/html/rfc6665#section-4.1.2.2
       */
-    var timerN: js.Any = js.native
+    /* private */ var timerN: js.Any = js.native
     
     /**
       * 4.1.2.3.  Unsubscribing
@@ -170,8 +170,7 @@ object subscriptionDialogMod {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
-    @scala.inline
-    def initialDialogStateForSubscription(
+    inline def initialDialogStateForSubscription(
       outgoingSubscribeRequestMessage: OutgoingRequestMessage,
       incomingNotifyRequestMessage: IncomingRequestMessage
     ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForSubscription")(outgoingSubscribeRequestMessage.asInstanceOf[js.Any], incomingNotifyRequestMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]

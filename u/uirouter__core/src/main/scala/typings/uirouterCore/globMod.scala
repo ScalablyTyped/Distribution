@@ -28,11 +28,9 @@ object globMod {
     val ^ : js.Any = js.native
     
     /** Returns a glob from the string, or null if the string isn't Glob-like */
-    @scala.inline
-    def fromString(text: String): Glob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any]).asInstanceOf[Glob]
+    inline def fromString(text: String): Glob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any]).asInstanceOf[Glob]
     
     /** Returns true if the string has glob-like characters in it */
-    @scala.inline
-    def is(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def is(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

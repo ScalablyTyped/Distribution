@@ -29,8 +29,7 @@ object lineMod {
     @JSImport("react-lazylog/build/Line", "default.defaultProps")
     @js.native
     def defaultProps: PartialLineProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialLineProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialLineProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type Line = Component[LineProps, js.Object, js.Any]
@@ -61,62 +60,44 @@ object lineMod {
   }
   object LineProps {
     
-    @scala.inline
-    def apply(data: js.Array[Text], number: Double, rowHeight: Double): LineProps = {
+    inline def apply(data: js.Array[Text], number: Double, rowHeight: Double): LineProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineProps]
     }
     
-    @scala.inline
-    implicit class LinePropsMutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
+    extension [Self <: LineProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[Text]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Text]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFormatPart(value: /* text */ String => ReactNode): Self = StObject.set(x, "formatPart", js.Any.fromFunction1(value))
+      inline def setFormatPart(value: /* text */ String => ReactNode): Self = StObject.set(x, "formatPart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatPartUndefined: Self = StObject.set(x, "formatPart", js.undefined)
+      inline def setFormatPartUndefined: Self = StObject.set(x, "formatPart", js.undefined)
       
-      @scala.inline
-      def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLineNumberClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onLineNumberClick", js.Any.fromFunction1(value))
+      inline def setOnLineNumberClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onLineNumberClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLineNumberClickUndefined: Self = StObject.set(x, "onLineNumberClick", js.undefined)
+      inline def setOnLineNumberClickUndefined: Self = StObject.set(x, "onLineNumberClick", js.undefined)
       
-      @scala.inline
-      def setOnRowClick(value: () => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
+      inline def setOnRowClick(value: () => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+      inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

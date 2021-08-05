@@ -56,69 +56,49 @@ trait TextProps extends StObject {
 }
 object TextProps {
   
-  @scala.inline
-  def apply(): TextProps = {
+  inline def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextProps]
   }
   
-  @scala.inline
-  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextProps](x: Self) {
     
-    @scala.inline
-    def setAlign(value: left | right | center | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | right | center | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setColor(
+    inline def setColor(
       value: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
-    @scala.inline
-    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
-    @scala.inline
-    def setOverflow(value: normal | breakWord): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: normal | breakWord): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    @scala.inline
-    def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+    inline def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+    inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
     
-    @scala.inline
-    def setWeight(value: bold | normal): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: bold | normal): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

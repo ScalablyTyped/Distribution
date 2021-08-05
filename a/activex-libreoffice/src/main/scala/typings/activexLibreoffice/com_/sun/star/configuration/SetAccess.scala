@@ -36,8 +36,7 @@ trait SetAccess
 }
 object SetAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementTemplateName: String,
     ElementType: `type`,
@@ -73,10 +72,8 @@ object SetAccess {
     __obj.asInstanceOf[SetAccess]
   }
   
-  @scala.inline
-  implicit class SetAccessMutableBuilder[Self <: SetAccess] (val x: Self) extends AnyVal {
+  extension [Self <: SetAccess](x: Self) {
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }
 }

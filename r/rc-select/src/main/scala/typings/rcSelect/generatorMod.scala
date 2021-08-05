@@ -26,8 +26,7 @@ object generatorMod {
   @js.native
   val INTERNAL_PROPS_MARK: /* "RC_SELECT_INTERNAL_PROPS_MARK" */ String = js.native
   
-  @scala.inline
-  def RefSelectFunc[OptionsType /* <: js.Array[js.Object] */, ValueType](Component: RefForwardingComponent[RefSelectProps, SelectProps[OptionsType, ValueType]]): ForwardRefExoticComponent[
+  inline def RefSelectFunc[OptionsType /* <: js.Array[js.Object] */, ValueType](Component: RefForwardingComponent[RefSelectProps, SelectProps[OptionsType, ValueType]]): ForwardRefExoticComponent[
     (PropsWithoutRef[SelectProps[OptionsType, ValueType]]) & RefAttributes[RefSelectProps]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("RefSelectFunc")(Component.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[
     (PropsWithoutRef[SelectProps[OptionsType, ValueType]]) & RefAttributes[RefSelectProps]
@@ -58,20 +57,16 @@ object generatorMod {
   }
   object DisplayLabelValueType {
     
-    @scala.inline
-    def apply(): DisplayLabelValueType = {
+    inline def apply(): DisplayLabelValueType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisplayLabelValueType]
     }
     
-    @scala.inline
-    implicit class DisplayLabelValueTypeMutableBuilder[Self <: DisplayLabelValueType] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayLabelValueType](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     }
   }
   
@@ -100,32 +95,24 @@ object generatorMod {
   }
   object LabelValueType {
     
-    @scala.inline
-    def apply(): LabelValueType = {
+    inline def apply(): LabelValueType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelValueType]
     }
     
-    @scala.inline
-    implicit class LabelValueTypeMutableBuilder[Self <: LabelValueType] (val x: Self) extends AnyVal {
+    extension [Self <: LabelValueType](x: Self) {
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setValue(value: RawValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: RawValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -141,14 +128,11 @@ object generatorMod {
   trait SelectSource extends StObject
   object SelectSource {
     
-    @scala.inline
-    def input: typings.rcSelect.rcSelectStrings.input = "input".asInstanceOf[typings.rcSelect.rcSelectStrings.input]
+    inline def input: typings.rcSelect.rcSelectStrings.input = "input".asInstanceOf[typings.rcSelect.rcSelectStrings.input]
     
-    @scala.inline
-    def option: typings.rcSelect.rcSelectStrings.option = "option".asInstanceOf[typings.rcSelect.rcSelectStrings.option]
+    inline def option: typings.rcSelect.rcSelectStrings.option = "option".asInstanceOf[typings.rcSelect.rcSelectStrings.option]
     
-    @scala.inline
-    def selection: typings.rcSelect.rcSelectStrings.selection = "selection".asInstanceOf[typings.rcSelect.rcSelectStrings.selection]
+    inline def selection: typings.rcSelect.rcSelectStrings.selection = "selection".asInstanceOf[typings.rcSelect.rcSelectStrings.selection]
   }
   
   type SingleType[MixType] = MixType

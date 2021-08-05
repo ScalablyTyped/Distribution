@@ -18,25 +18,19 @@ trait UpdateJobQueueResponse extends StObject {
 }
 object UpdateJobQueueResponse {
   
-  @scala.inline
-  def apply(): UpdateJobQueueResponse = {
+  inline def apply(): UpdateJobQueueResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateJobQueueResponse]
   }
   
-  @scala.inline
-  implicit class UpdateJobQueueResponseMutableBuilder[Self <: UpdateJobQueueResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobQueueResponse](x: Self) {
     
-    @scala.inline
-    def setJobQueueArn(value: String): Self = StObject.set(x, "jobQueueArn", value.asInstanceOf[js.Any])
+    inline def setJobQueueArn(value: String): Self = StObject.set(x, "jobQueueArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobQueueArnUndefined: Self = StObject.set(x, "jobQueueArn", js.undefined)
+    inline def setJobQueueArnUndefined: Self = StObject.set(x, "jobQueueArn", js.undefined)
     
-    @scala.inline
-    def setJobQueueName(value: String): Self = StObject.set(x, "jobQueueName", value.asInstanceOf[js.Any])
+    inline def setJobQueueName(value: String): Self = StObject.set(x, "jobQueueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobQueueNameUndefined: Self = StObject.set(x, "jobQueueName", js.undefined)
+    inline def setJobQueueNameUndefined: Self = StObject.set(x, "jobQueueName", js.undefined)
   }
 }

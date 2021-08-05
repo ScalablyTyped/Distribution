@@ -52,7 +52,7 @@ object listitemMod {
       */
     def this(data: ListItemDescriptor) = this()
     
-    val data: js.Any = js.native
+    /* private */ val data: js.Any = js.native
     
     def dateExpires: String = js.native
     
@@ -97,8 +97,7 @@ object listitemMod {
   }
   object ListItemDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateExpires: String,
       dateUpdated: Date,
       index: Double,
@@ -111,29 +110,21 @@ object listitemMod {
       __obj.asInstanceOf[ListItemDescriptor]
     }
     
-    @scala.inline
-    implicit class ListItemDescriptorMutableBuilder[Self <: ListItemDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemDescriptor](x: Self) {
       
-      @scala.inline
-      def setDateExpires(value: String): Self = StObject.set(x, "dateExpires", value.asInstanceOf[js.Any])
+      inline def setDateExpires(value: String): Self = StObject.set(x, "dateExpires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUpdated(value: Date): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
+      inline def setDateUpdated(value: Date): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEventId(value: Double): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
+      inline def setLastEventId(value: Double): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

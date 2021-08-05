@@ -62,7 +62,7 @@ object eitherMod {
     /* CompleteClass */
     override def fmap[U](f: js.Function1[R, U]): Functor[U] = js.native
     
-    var l: js.Any = js.native
+    /* private */ var l: js.Any = js.native
     
     /* CompleteClass */
     override def lift[U](f: js.Function1[R, U]): Functor[U] = js.native
@@ -73,9 +73,9 @@ object eitherMod {
     /* CompleteClass */
     override def of[U](t: U): Monad[U] = js.native
     
-    var r: js.Any = js.native
+    /* private */ var r: js.Any = js.native
     
-    var `type`: js.Any = js.native
+    /* private */ var `type`: js.Any = js.native
     
     /* CompleteClass */
     override def unit[U](t: U): Monad[U] = js.native
@@ -87,21 +87,15 @@ object eitherMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def left[L, R](l: L): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(l.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
+    inline def left[L, R](l: L): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(l.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
     
-    @scala.inline
-    def right[L, R](r: R): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(r.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
+    inline def right[L, R](r: R): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(r.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
   }
   
-  @scala.inline
-  def either[L, R](): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")().asInstanceOf[Either_[L, R]]
-  @scala.inline
-  def either[L, R](l: L): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
-  @scala.inline
-  def either[L, R](l: L, r: R): Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Either_[L, R]]
-  @scala.inline
-  def either[L, R](l: Unit, r: R): Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Either_[L, R]]
+  inline def either[L, R](): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")().asInstanceOf[Either_[L, R]]
+  inline def either[L, R](l: L): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
+  inline def either[L, R](l: L, r: R): Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Either_[L, R]]
+  inline def either[L, R](l: Unit, r: R): Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Either_[L, R]]
   
   trait EitherPatterns[L, R, T] extends StObject {
     
@@ -111,20 +105,16 @@ object eitherMod {
   }
   object EitherPatterns {
     
-    @scala.inline
-    def apply[L, R, T](left: L => T, right: R => T): EitherPatterns[L, R, T] = {
+    inline def apply[L, R, T](left: L => T, right: R => T): EitherPatterns[L, R, T] = {
       val __obj = js.Dynamic.literal(left = js.Any.fromFunction1(left), right = js.Any.fromFunction1(right))
       __obj.asInstanceOf[EitherPatterns[L, R, T]]
     }
     
-    @scala.inline
-    implicit class EitherPatternsMutableBuilder[Self <: EitherPatterns[?, ?, ?], L, R, T] (val x: Self & (EitherPatterns[L, R, T])) extends AnyVal {
+    extension [Self <: EitherPatterns[?, ?, ?], L, R, T](x: Self & (EitherPatterns[L, R, T])) {
       
-      @scala.inline
-      def setLeft(value: L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRight(value: R => T): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      inline def setRight(value: R => T): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
     }
   }
   
@@ -137,26 +127,20 @@ object eitherMod {
   }
   object OptionalEitherPatterns {
     
-    @scala.inline
-    def apply[L, R, T](): OptionalEitherPatterns[L, R, T] = {
+    inline def apply[L, R, T](): OptionalEitherPatterns[L, R, T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalEitherPatterns[L, R, T]]
     }
     
-    @scala.inline
-    implicit class OptionalEitherPatternsMutableBuilder[Self <: OptionalEitherPatterns[?, ?, ?], L, R, T] (val x: Self & (OptionalEitherPatterns[L, R, T])) extends AnyVal {
+    extension [Self <: OptionalEitherPatterns[?, ?, ?], L, R, T](x: Self & (OptionalEitherPatterns[L, R, T])) {
       
-      @scala.inline
-      def setLeft(value: /* l */ L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: /* l */ L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: /* r */ R => T): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      inline def setRight(value: /* r */ R => T): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     }
   }
 }

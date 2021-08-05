@@ -28,31 +28,23 @@ trait SchemaBirthday extends StObject {
 }
 object SchemaBirthday {
   
-  @scala.inline
-  def apply(): SchemaBirthday = {
+  inline def apply(): SchemaBirthday = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBirthday]
   }
   
-  @scala.inline
-  implicit class SchemaBirthdayMutableBuilder[Self <: SchemaBirthday] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBirthday](x: Self) {
     
-    @scala.inline
-    def setDate(value: SchemaDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: SchemaDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

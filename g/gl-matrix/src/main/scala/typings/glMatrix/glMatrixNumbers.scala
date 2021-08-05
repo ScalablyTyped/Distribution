@@ -8,6 +8,5 @@ object glMatrixNumbers {
   
   @js.native
   sealed trait `0.000001` extends StObject
-  @scala.inline
-  def `0.000001`: `0.000001` = 0.000001.asInstanceOf[`0.000001`]
+  inline def `0.000001`: `0.000001` = 0.000001.asInstanceOf[`0.000001`]
 }

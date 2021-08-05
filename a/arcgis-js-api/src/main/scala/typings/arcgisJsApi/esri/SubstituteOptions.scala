@@ -20,8 +20,7 @@ trait SubstituteOptions
 }
 object SubstituteOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions],
     hasOwnProperty: PropertyKey => Boolean,
@@ -31,10 +30,8 @@ object SubstituteOptions {
     __obj.asInstanceOf[SubstituteOptions]
   }
   
-  @scala.inline
-  implicit class SubstituteOptionsMutableBuilder[Self <: SubstituteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubstituteOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

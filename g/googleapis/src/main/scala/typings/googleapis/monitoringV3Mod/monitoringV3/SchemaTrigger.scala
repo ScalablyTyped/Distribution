@@ -24,25 +24,19 @@ trait SchemaTrigger extends StObject {
 }
 object SchemaTrigger {
   
-  @scala.inline
-  def apply(): SchemaTrigger = {
+  inline def apply(): SchemaTrigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrigger]
   }
   
-  @scala.inline
-  implicit class SchemaTriggerMutableBuilder[Self <: SchemaTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrigger](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
   }
 }

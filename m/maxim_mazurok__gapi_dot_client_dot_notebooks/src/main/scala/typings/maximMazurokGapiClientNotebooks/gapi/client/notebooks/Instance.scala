@@ -126,204 +126,141 @@ trait Instance extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply(): Instance = {
+  inline def apply(): Instance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instance]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+  extension [Self <: Instance](x: Self) {
     
-    @scala.inline
-    def setAcceleratorConfig(value: AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
+    inline def setAcceleratorConfig(value: AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
+    inline def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
     
-    @scala.inline
-    def setBootDiskSizeGb(value: String): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
+    inline def setBootDiskSizeGb(value: String): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
+    inline def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
     
-    @scala.inline
-    def setBootDiskType(value: String): Self = StObject.set(x, "bootDiskType", value.asInstanceOf[js.Any])
+    inline def setBootDiskType(value: String): Self = StObject.set(x, "bootDiskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDiskTypeUndefined: Self = StObject.set(x, "bootDiskType", js.undefined)
+    inline def setBootDiskTypeUndefined: Self = StObject.set(x, "bootDiskType", js.undefined)
     
-    @scala.inline
-    def setContainerImage(value: ContainerImage): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
+    inline def setContainerImage(value: ContainerImage): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
+    inline def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCustomGpuDriverPath(value: String): Self = StObject.set(x, "customGpuDriverPath", value.asInstanceOf[js.Any])
+    inline def setCustomGpuDriverPath(value: String): Self = StObject.set(x, "customGpuDriverPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomGpuDriverPathUndefined: Self = StObject.set(x, "customGpuDriverPath", js.undefined)
+    inline def setCustomGpuDriverPathUndefined: Self = StObject.set(x, "customGpuDriverPath", js.undefined)
     
-    @scala.inline
-    def setDataDiskSizeGb(value: String): Self = StObject.set(x, "dataDiskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDataDiskSizeGb(value: String): Self = StObject.set(x, "dataDiskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskSizeGbUndefined: Self = StObject.set(x, "dataDiskSizeGb", js.undefined)
+    inline def setDataDiskSizeGbUndefined: Self = StObject.set(x, "dataDiskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDataDiskType(value: String): Self = StObject.set(x, "dataDiskType", value.asInstanceOf[js.Any])
+    inline def setDataDiskType(value: String): Self = StObject.set(x, "dataDiskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskTypeUndefined: Self = StObject.set(x, "dataDiskType", js.undefined)
+    inline def setDataDiskTypeUndefined: Self = StObject.set(x, "dataDiskType", js.undefined)
     
-    @scala.inline
-    def setDiskEncryption(value: String): Self = StObject.set(x, "diskEncryption", value.asInstanceOf[js.Any])
+    inline def setDiskEncryption(value: String): Self = StObject.set(x, "diskEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskEncryptionUndefined: Self = StObject.set(x, "diskEncryption", js.undefined)
+    inline def setDiskEncryptionUndefined: Self = StObject.set(x, "diskEncryption", js.undefined)
     
-    @scala.inline
-    def setDisks(value: js.Array[Disk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: js.Array[Disk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
-    @scala.inline
-    def setInstallGpuDriver(value: Boolean): Self = StObject.set(x, "installGpuDriver", value.asInstanceOf[js.Any])
+    inline def setInstallGpuDriver(value: Boolean): Self = StObject.set(x, "installGpuDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallGpuDriverUndefined: Self = StObject.set(x, "installGpuDriver", js.undefined)
+    inline def setInstallGpuDriverUndefined: Self = StObject.set(x, "installGpuDriver", js.undefined)
     
-    @scala.inline
-    def setInstanceOwners(value: js.Array[String]): Self = StObject.set(x, "instanceOwners", value.asInstanceOf[js.Any])
+    inline def setInstanceOwners(value: js.Array[String]): Self = StObject.set(x, "instanceOwners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceOwnersUndefined: Self = StObject.set(x, "instanceOwners", js.undefined)
+    inline def setInstanceOwnersUndefined: Self = StObject.set(x, "instanceOwners", js.undefined)
     
-    @scala.inline
-    def setInstanceOwnersVarargs(value: String*): Self = StObject.set(x, "instanceOwners", js.Array(value :_*))
+    inline def setInstanceOwnersVarargs(value: String*): Self = StObject.set(x, "instanceOwners", js.Array(value :_*))
     
-    @scala.inline
-    def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
+    inline def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
+    inline def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setNoProxyAccess(value: Boolean): Self = StObject.set(x, "noProxyAccess", value.asInstanceOf[js.Any])
+    inline def setNoProxyAccess(value: Boolean): Self = StObject.set(x, "noProxyAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoProxyAccessUndefined: Self = StObject.set(x, "noProxyAccess", js.undefined)
+    inline def setNoProxyAccessUndefined: Self = StObject.set(x, "noProxyAccess", js.undefined)
     
-    @scala.inline
-    def setNoPublicIp(value: Boolean): Self = StObject.set(x, "noPublicIp", value.asInstanceOf[js.Any])
+    inline def setNoPublicIp(value: Boolean): Self = StObject.set(x, "noPublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoPublicIpUndefined: Self = StObject.set(x, "noPublicIp", js.undefined)
+    inline def setNoPublicIpUndefined: Self = StObject.set(x, "noPublicIp", js.undefined)
     
-    @scala.inline
-    def setNoRemoveDataDisk(value: Boolean): Self = StObject.set(x, "noRemoveDataDisk", value.asInstanceOf[js.Any])
+    inline def setNoRemoveDataDisk(value: Boolean): Self = StObject.set(x, "noRemoveDataDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoRemoveDataDiskUndefined: Self = StObject.set(x, "noRemoveDataDisk", js.undefined)
+    inline def setNoRemoveDataDiskUndefined: Self = StObject.set(x, "noRemoveDataDisk", js.undefined)
     
-    @scala.inline
-    def setPostStartupScript(value: String): Self = StObject.set(x, "postStartupScript", value.asInstanceOf[js.Any])
+    inline def setPostStartupScript(value: String): Self = StObject.set(x, "postStartupScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostStartupScriptUndefined: Self = StObject.set(x, "postStartupScript", js.undefined)
+    inline def setPostStartupScriptUndefined: Self = StObject.set(x, "postStartupScript", js.undefined)
     
-    @scala.inline
-    def setProxyUri(value: String): Self = StObject.set(x, "proxyUri", value.asInstanceOf[js.Any])
+    inline def setProxyUri(value: String): Self = StObject.set(x, "proxyUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUriUndefined: Self = StObject.set(x, "proxyUri", js.undefined)
+    inline def setProxyUriUndefined: Self = StObject.set(x, "proxyUri", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSubnet(value: String): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
+    inline def setSubnet(value: String): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
+    inline def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUpgradeHistory(value: js.Array[UpgradeHistoryEntry]): Self = StObject.set(x, "upgradeHistory", value.asInstanceOf[js.Any])
+    inline def setUpgradeHistory(value: js.Array[UpgradeHistoryEntry]): Self = StObject.set(x, "upgradeHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeHistoryUndefined: Self = StObject.set(x, "upgradeHistory", js.undefined)
+    inline def setUpgradeHistoryUndefined: Self = StObject.set(x, "upgradeHistory", js.undefined)
     
-    @scala.inline
-    def setUpgradeHistoryVarargs(value: UpgradeHistoryEntry*): Self = StObject.set(x, "upgradeHistory", js.Array(value :_*))
+    inline def setUpgradeHistoryVarargs(value: UpgradeHistoryEntry*): Self = StObject.set(x, "upgradeHistory", js.Array(value :_*))
     
-    @scala.inline
-    def setVmImage(value: VmImage): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
+    inline def setVmImage(value: VmImage): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
+    inline def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
   }
 }

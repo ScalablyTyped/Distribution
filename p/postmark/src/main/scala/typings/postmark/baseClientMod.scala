@@ -19,8 +19,8 @@ object baseClientMod {
   abstract class default protected ()
     extends StObject
        with BaseClient {
-    protected def this(token: String, authHeader: String) = this()
-    protected def this(token: String, authHeader: String, configOptions: Configuration) = this()
+    /* protected */ def this(token: String, authHeader: String) = this()
+    /* protected */ def this(token: String, authHeader: String, configOptions: Configuration) = this()
   }
   /* static members */
   object default {
@@ -37,29 +37,28 @@ object baseClientMod {
     @JSImport("postmark/dist/client/BaseClient", "default.DefaultOptions")
     @js.native
     def DefaultOptions: Configuration = js.native
-    @scala.inline
-    def DefaultOptions_=(x: Configuration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOptions")(x.asInstanceOf[js.Any])
+    inline def DefaultOptions_=(x: Configuration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOptions")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait BaseClient extends StObject {
     
-    val authHeader: js.Any = js.native
+    /* private */ val authHeader: js.Any = js.native
     
     /**
       * Create http client instance with default settings.
       *
       * @return {AxiosInstance}
       */
-    var buildDefaultHttpClient: js.Any = js.native
+    /* private */ var buildDefaultHttpClient: js.Any = js.native
     
-    var clientOptions: js.Any = js.native
+    /* private */ var clientOptions: js.Any = js.native
     
     var clientVersion: String = js.native
     
-    var errorHandler: ErrorHandler = js.native
+    /* protected */ var errorHandler: ErrorHandler = js.native
     
-    var getBaseHttpRequestURL: js.Any = js.native
+    /* private */ var getBaseHttpRequestURL: js.Any = js.native
     
     def getClientOptions(): Configuration = js.native
     
@@ -68,7 +67,7 @@ object baseClientMod {
       */
     def getComposedHttpRequestHeaders(): js.Object = js.native
     
-    var getRequestTimeoutInSeconds: js.Any = js.native
+    /* private */ var getRequestTimeoutInSeconds: js.Any = js.native
     
     def httpClient(config: AxiosRequestConfig): AxiosPromise[js.Any] = js.native
     def httpClient(url: String): AxiosPromise[js.Any] = js.native
@@ -84,7 +83,7 @@ object baseClientMod {
       * @param queryParameters - Querystring parameters used for http request.
       * @param body - Data sent with http request.
       */
-    var httpRequest: js.Any = js.native
+    /* private */ var httpRequest: js.Any = js.native
     
     /**
       * Process callback function for HTTP request.
@@ -92,7 +91,7 @@ object baseClientMod {
       * @param httpRequest - HTTP request for which callback will be executed
       * @param callback - callback function to be executed.
       */
-    var processCallbackRequest: js.Any = js.native
+    /* private */ var processCallbackRequest: js.Any = js.native
     
     /**
       * Process HTTP request.
@@ -104,7 +103,7 @@ object baseClientMod {
       *
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
-    var processHttpRequest: js.Any = js.native
+    /* private */ var processHttpRequest: js.Any = js.native
     
     /**
       * Process request for Postmark ClientOptions.
@@ -117,7 +116,7 @@ object baseClientMod {
       *
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
-    var processRequest: js.Any = js.native
+    /* private */ var processRequest: js.Any = js.native
     
     /**
       * Process http request with sending body - data.
@@ -146,13 +145,13 @@ object baseClientMod {
       */
     /* protected */ def setDefaultPaginationValues(filter: FilteringParameters): Unit = js.native
     
-    val token: js.Any = js.native
+    /* private */ val token: js.Any = js.native
     
     /**
       * Token can't be empty.
       *
       * @param {string} token - HTTP request token
       */
-    var verifyToken: js.Any = js.native
+    /* private */ var verifyToken: js.Any = js.native
   }
 }

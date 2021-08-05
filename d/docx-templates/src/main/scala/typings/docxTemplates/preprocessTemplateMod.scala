@@ -11,6 +11,5 @@ object preprocessTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(template: Node, delimiter: js.Tuple2[String, String]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(template.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def default(template: Node, delimiter: js.Tuple2[String, String]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(template.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Node]
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ServerTransaction protected ()
   extends typings.sipJs.coreMod.ServerTransaction {
-  protected def this(
+  /* protected */ def this(
     _request: typings.sipJs.messagesMod.IncomingRequestMessage,
     transport: Transport,
     user: ServerTransactionUser,

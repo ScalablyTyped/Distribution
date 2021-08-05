@@ -18,22 +18,17 @@ trait SegmentReference extends StObject {
 }
 object SegmentReference {
   
-  @scala.inline
-  def apply(Id: string): SegmentReference = {
+  inline def apply(Id: string): SegmentReference = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentReference]
   }
   
-  @scala.inline
-  implicit class SegmentReferenceMutableBuilder[Self <: SegmentReference] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentReference](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: integer): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: integer): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

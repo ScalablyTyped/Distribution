@@ -14,28 +14,21 @@ trait DataSourcePushEvent
 }
 object DataSourcePushEvent {
   
-  @scala.inline
-  def apply(): DataSourcePushEvent = {
+  inline def apply(): DataSourcePushEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourcePushEvent]
   }
   
-  @scala.inline
-  implicit class DataSourcePushEventMutableBuilder[Self <: DataSourcePushEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourcePushEvent](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

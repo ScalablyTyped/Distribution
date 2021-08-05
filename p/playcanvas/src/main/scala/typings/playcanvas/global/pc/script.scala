@@ -30,6 +30,5 @@ object script {
     * });
     * @param callback - A function which can set up and tear down a customised loading screen.
     */
-  @scala.inline
-  def createLoadingScreen(callback: CreateScreen): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoadingScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createLoadingScreen(callback: CreateScreen): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoadingScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -33,20 +33,16 @@ object menuItemLinkMod {
   }
   object MenuItemLinkProps {
     
-    @scala.inline
-    def apply(): MenuItemLinkProps = {
+    inline def apply(): MenuItemLinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuItemLinkProps]
     }
     
-    @scala.inline
-    implicit class MenuItemLinkPropsMutableBuilder[Self <: MenuItemLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuItemLinkProps](x: Self) {
       
-      @scala.inline
-      def setRole(value: menuitem): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: menuitem): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
   
@@ -67,17 +63,14 @@ object menuItemLinkMod {
   }
   object MenuItemLinkWithComponentProps {
     
-    @scala.inline
-    def apply(component: ElementType[js.Any]): MenuItemLinkWithComponentProps = {
+    inline def apply(component: ElementType[js.Any]): MenuItemLinkWithComponentProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuItemLinkWithComponentProps]
     }
     
-    @scala.inline
-    implicit class MenuItemLinkWithComponentPropsMutableBuilder[Self <: MenuItemLinkWithComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuItemLinkWithComponentProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
 }

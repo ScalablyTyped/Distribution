@@ -11,7 +11,7 @@ object httpContentMod {
   @js.native
   abstract class HttpContent () extends StObject {
     
-    var _headers: js.Any = js.native
+    /* private */ var _headers: js.Any = js.native
     
     val headers: OutgoingHttpHeaders = js.native
     

@@ -18,8 +18,7 @@ object mediaPlaceholderMod {
   
   object default {
     
-    @scala.inline
-    def apply[T /* <: Boolean */](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[T /* <: Boolean */](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/block-editor/components/media-placeholder", JSImport.Default)
     @js.native
@@ -127,125 +126,86 @@ object mediaPlaceholderMod {
     }
     object Props {
       
-      @scala.inline
-      def apply[T /* <: Boolean */](onSelect: Dictk | js.Array[Dictk] => Unit): Props[T] = {
+      inline def apply[T /* <: Boolean */](onSelect: Dictk | js.Array[Dictk] => Unit): Props[T] = {
         val __obj = js.Dynamic.literal(onSelect = js.Any.fromFunction1(onSelect))
         __obj.asInstanceOf[Props[T]]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[?], T /* <: Boolean */] (val x: Self & Props[T]) extends AnyVal {
+      extension [Self <: Props[?], T /* <: Boolean */](x: Self & Props[T]) {
         
-        @scala.inline
-        def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+        inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+        inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
         
-        @scala.inline
-        def setAddToGallery(value: Boolean): Self = StObject.set(x, "addToGallery", value.asInstanceOf[js.Any])
+        inline def setAddToGallery(value: Boolean): Self = StObject.set(x, "addToGallery", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddToGalleryUndefined: Self = StObject.set(x, "addToGallery", js.undefined)
+        inline def setAddToGalleryUndefined: Self = StObject.set(x, "addToGallery", js.undefined)
         
-        @scala.inline
-        def setAllowedTypes(value: js.Array[String]): Self = StObject.set(x, "allowedTypes", value.asInstanceOf[js.Any])
+        inline def setAllowedTypes(value: js.Array[String]): Self = StObject.set(x, "allowedTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
+        inline def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
         
-        @scala.inline
-        def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
+        inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setDropZoneUIOnly(value: Boolean): Self = StObject.set(x, "dropZoneUIOnly", value.asInstanceOf[js.Any])
+        inline def setDropZoneUIOnly(value: Boolean): Self = StObject.set(x, "dropZoneUIOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDropZoneUIOnlyUndefined: Self = StObject.set(x, "dropZoneUIOnly", js.undefined)
+        inline def setDropZoneUIOnlyUndefined: Self = StObject.set(x, "dropZoneUIOnly", js.undefined)
         
-        @scala.inline
-        def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setIsAppender(value: Boolean): Self = StObject.set(x, "isAppender", value.asInstanceOf[js.Any])
+        inline def setIsAppender(value: Boolean): Self = StObject.set(x, "isAppender", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsAppenderUndefined: Self = StObject.set(x, "isAppender", js.undefined)
+        inline def setIsAppenderUndefined: Self = StObject.set(x, "isAppender", js.undefined)
         
-        @scala.inline
-        def setLabels(value: Instructions): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+        inline def setLabels(value: Instructions): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+        inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
         
-        @scala.inline
-        def setMediaPreview(value: Element): Self = StObject.set(x, "mediaPreview", value.asInstanceOf[js.Any])
+        inline def setMediaPreview(value: Element): Self = StObject.set(x, "mediaPreview", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaPreviewUndefined: Self = StObject.set(x, "mediaPreview", js.undefined)
+        inline def setMediaPreviewUndefined: Self = StObject.set(x, "mediaPreview", js.undefined)
         
-        @scala.inline
-        def setMultiple(value: T): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+        inline def setMultiple(value: T): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+        inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
         
-        @scala.inline
-        def setNotices(value: Element): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+        inline def setNotices(value: Element): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
+        inline def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
         
-        @scala.inline
-        def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+        inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+        inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
         
-        @scala.inline
-        def setOnDoubleClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+        inline def setOnDoubleClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+        inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
         
-        @scala.inline
-        def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+        inline def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+        inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
         
-        @scala.inline
-        def setOnHTMLDrop(value: (/* html */ String, /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onHTMLDrop", js.Any.fromFunction2(value))
+        inline def setOnHTMLDrop(value: (/* html */ String, /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onHTMLDrop", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnHTMLDropUndefined: Self = StObject.set(x, "onHTMLDrop", js.undefined)
+        inline def setOnHTMLDropUndefined: Self = StObject.set(x, "onHTMLDrop", js.undefined)
         
-        @scala.inline
-        def setOnSelect(value: Dictk | js.Array[Dictk] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+        inline def setOnSelect(value: Dictk | js.Array[Dictk] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnSelectURL(value: /* src */ String => Unit): Self = StObject.set(x, "onSelectURL", js.Any.fromFunction1(value))
+        inline def setOnSelectURL(value: /* src */ String => Unit): Self = StObject.set(x, "onSelectURL", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnSelectURLUndefined: Self = StObject.set(x, "onSelectURL", js.undefined)
+        inline def setOnSelectURLUndefined: Self = StObject.set(x, "onSelectURL", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        @scala.inline
-        def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
       }
     }
   }

@@ -18,28 +18,21 @@ trait ListDomainsResult extends StObject {
 }
 object ListDomainsResult {
   
-  @scala.inline
-  def apply(): ListDomainsResult = {
+  inline def apply(): ListDomainsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDomainsResult]
   }
   
-  @scala.inline
-  implicit class ListDomainsResultMutableBuilder[Self <: ListDomainsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainsResult](x: Self) {
     
-    @scala.inline
-    def setDomains(value: DomainSummaryList): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: DomainSummaryList): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: DomainSummary*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: DomainSummary*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

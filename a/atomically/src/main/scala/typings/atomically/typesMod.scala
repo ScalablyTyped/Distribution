@@ -32,35 +32,26 @@ object typesMod {
   }
   object ReadOptions {
     
-    @scala.inline
-    def apply(): ReadOptions = {
+    inline def apply(): ReadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadOptions]
     }
     
-    @scala.inline
-    implicit class ReadOptionsMutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -88,77 +79,54 @@ object typesMod {
   }
   object WriteOptions {
     
-    @scala.inline
-    def apply(): WriteOptions = {
+    inline def apply(): WriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteOptions]
     }
     
-    @scala.inline
-    implicit class WriteOptionsMutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriteOptions](x: Self) {
       
-      @scala.inline
-      def setChown(value: Gid | `false`): Self = StObject.set(x, "chown", value.asInstanceOf[js.Any])
+      inline def setChown(value: Gid | `false`): Self = StObject.set(x, "chown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChownUndefined: Self = StObject.set(x, "chown", js.undefined)
+      inline def setChownUndefined: Self = StObject.set(x, "chown", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
+      inline def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
+      inline def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
       
-      @scala.inline
-      def setFsyncWait(value: Boolean): Self = StObject.set(x, "fsyncWait", value.asInstanceOf[js.Any])
+      inline def setFsyncWait(value: Boolean): Self = StObject.set(x, "fsyncWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsyncWaitUndefined: Self = StObject.set(x, "fsyncWait", js.undefined)
+      inline def setFsyncWaitUndefined: Self = StObject.set(x, "fsyncWait", js.undefined)
       
-      @scala.inline
-      def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: /* filePath */ String => js.Promise[Disposer]): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+      inline def setSchedule(value: /* filePath */ String => js.Promise[Disposer]): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTmpCreate(value: /* filePath */ String => String): Self = StObject.set(x, "tmpCreate", js.Any.fromFunction1(value))
+      inline def setTmpCreate(value: /* filePath */ String => String): Self = StObject.set(x, "tmpCreate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTmpCreateUndefined: Self = StObject.set(x, "tmpCreate", js.undefined)
+      inline def setTmpCreateUndefined: Self = StObject.set(x, "tmpCreate", js.undefined)
       
-      @scala.inline
-      def setTmpCreated(value: /* filePath */ String => js.Any): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
+      inline def setTmpCreated(value: /* filePath */ String => js.Any): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTmpCreatedUndefined: Self = StObject.set(x, "tmpCreated", js.undefined)
+      inline def setTmpCreatedUndefined: Self = StObject.set(x, "tmpCreated", js.undefined)
       
-      @scala.inline
-      def setTmpPurge(value: Boolean): Self = StObject.set(x, "tmpPurge", value.asInstanceOf[js.Any])
+      inline def setTmpPurge(value: Boolean): Self = StObject.set(x, "tmpPurge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpPurgeUndefined: Self = StObject.set(x, "tmpPurge", js.undefined)
+      inline def setTmpPurgeUndefined: Self = StObject.set(x, "tmpPurge", js.undefined)
     }
   }
 }

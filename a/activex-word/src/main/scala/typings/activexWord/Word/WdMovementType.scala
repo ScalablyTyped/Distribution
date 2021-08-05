@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMovementType extends StObject
 object WdMovementType {
   
-  @scala.inline
-  def wdExtend: `1` = 1.asInstanceOf[`1`]
+  inline def wdExtend: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdMove: `0` = 0.asInstanceOf[`0`]
+  inline def wdMove: `0` = 0.asInstanceOf[`0`]
 }

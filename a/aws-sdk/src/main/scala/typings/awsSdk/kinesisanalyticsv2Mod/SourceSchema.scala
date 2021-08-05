@@ -23,28 +23,21 @@ trait SourceSchema extends StObject {
 }
 object SourceSchema {
   
-  @scala.inline
-  def apply(RecordColumns: RecordColumns, RecordFormat: RecordFormat): SourceSchema = {
+  inline def apply(RecordColumns: RecordColumns, RecordFormat: RecordFormat): SourceSchema = {
     val __obj = js.Dynamic.literal(RecordColumns = RecordColumns.asInstanceOf[js.Any], RecordFormat = RecordFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceSchema]
   }
   
-  @scala.inline
-  implicit class SourceSchemaMutableBuilder[Self <: SourceSchema] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSchema](x: Self) {
     
-    @scala.inline
-    def setRecordColumns(value: RecordColumns): Self = StObject.set(x, "RecordColumns", value.asInstanceOf[js.Any])
+    inline def setRecordColumns(value: RecordColumns): Self = StObject.set(x, "RecordColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordColumnsVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumns", js.Array(value :_*))
+    inline def setRecordColumnsVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordEncoding(value: RecordEncoding): Self = StObject.set(x, "RecordEncoding", value.asInstanceOf[js.Any])
+    inline def setRecordEncoding(value: RecordEncoding): Self = StObject.set(x, "RecordEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordEncodingUndefined: Self = StObject.set(x, "RecordEncoding", js.undefined)
+    inline def setRecordEncodingUndefined: Self = StObject.set(x, "RecordEncoding", js.undefined)
     
-    @scala.inline
-    def setRecordFormat(value: RecordFormat): Self = StObject.set(x, "RecordFormat", value.asInstanceOf[js.Any])
+    inline def setRecordFormat(value: RecordFormat): Self = StObject.set(x, "RecordFormat", value.asInstanceOf[js.Any])
   }
 }

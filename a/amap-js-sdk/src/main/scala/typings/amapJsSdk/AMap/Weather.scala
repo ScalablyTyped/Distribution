@@ -28,8 +28,7 @@ trait Weather extends StObject {
 }
 object Weather {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getForecast: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]) => Unit,
     getLive: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]) => Unit
   ): Weather = {
@@ -37,16 +36,13 @@ object Weather {
     __obj.asInstanceOf[Weather]
   }
   
-  @scala.inline
-  implicit class WeatherMutableBuilder[Self <: Weather] (val x: Self) extends AnyVal {
+  extension [Self <: Weather](x: Self) {
     
-    @scala.inline
-    def setGetForecast(
+    inline def setGetForecast(
       value: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]) => Unit
     ): Self = StObject.set(x, "getForecast", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLive(
+    inline def setGetLive(
       value: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]) => Unit
     ): Self = StObject.set(x, "getLive", js.Any.fromFunction2(value))
   }

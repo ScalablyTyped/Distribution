@@ -11,6 +11,5 @@ object requestAnimationFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fn: FrameRequestCallback): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(fn: FrameRequestCallback): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

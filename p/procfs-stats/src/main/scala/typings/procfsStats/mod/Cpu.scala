@@ -24,8 +24,7 @@ trait Cpu extends StObject {
 }
 object Cpu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     btime: String,
     cpu: CpuDetail,
     ctxt: String,
@@ -39,31 +38,22 @@ object Cpu {
     __obj.asInstanceOf[Cpu]
   }
   
-  @scala.inline
-  implicit class CpuMutableBuilder[Self <: Cpu] (val x: Self) extends AnyVal {
+  extension [Self <: Cpu](x: Self) {
     
-    @scala.inline
-    def setBtime(value: String): Self = StObject.set(x, "btime", value.asInstanceOf[js.Any])
+    inline def setBtime(value: String): Self = StObject.set(x, "btime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpu(value: CpuDetail): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: CpuDetail): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtxt(value: String): Self = StObject.set(x, "ctxt", value.asInstanceOf[js.Any])
+    inline def setCtxt(value: String): Self = StObject.set(x, "ctxt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntr(value: String): Self = StObject.set(x, "intr", value.asInstanceOf[js.Any])
+    inline def setIntr(value: String): Self = StObject.set(x, "intr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcesses(value: String): Self = StObject.set(x, "processes", value.asInstanceOf[js.Any])
+    inline def setProcesses(value: String): Self = StObject.set(x, "processes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcs_blocked(value: String): Self = StObject.set(x, "procs_blocked", value.asInstanceOf[js.Any])
+    inline def setProcs_blocked(value: String): Self = StObject.set(x, "procs_blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcs_running(value: String): Self = StObject.set(x, "procs_running", value.asInstanceOf[js.Any])
+    inline def setProcs_running(value: String): Self = StObject.set(x, "procs_running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftirq(value: String): Self = StObject.set(x, "softirq", value.asInstanceOf[js.Any])
+    inline def setSoftirq(value: String): Self = StObject.set(x, "softirq", value.asInstanceOf[js.Any])
   }
 }

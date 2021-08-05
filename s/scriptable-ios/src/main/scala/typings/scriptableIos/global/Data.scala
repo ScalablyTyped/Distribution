@@ -53,8 +53,7 @@ object Data {
     * @see https://docs.scriptable.app/data/#frombase64string
     */
   /* static member */
-  @scala.inline
-  def fromBase64String(base64String: String): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64String.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
+  inline def fromBase64String(base64String: String): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64String.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
   
   /**
     * _Reads data from file path._
@@ -64,8 +63,7 @@ object Data {
     * @see https://docs.scriptable.app/data/#fromfile
     */
   /* static member */
-  @scala.inline
-  def fromFile(filePath: String): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
+  inline def fromFile(filePath: String): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
   
   /**
     * _Creates data from JPEG image._
@@ -73,8 +71,7 @@ object Data {
     * @see https://docs.scriptable.app/data/#fromjpeg
     */
   /* static member */
-  @scala.inline
-  def fromJPEG(image: typings.scriptableIos.Image): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJPEG")(image.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
+  inline def fromJPEG(image: typings.scriptableIos.Image): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJPEG")(image.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
   
   /**
     * _Creates data from PNG image._
@@ -82,8 +79,7 @@ object Data {
     * @see https://docs.scriptable.app/data/#frompng
     */
   /* static member */
-  @scala.inline
-  def fromPNG(image: typings.scriptableIos.Image): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPNG")(image.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
+  inline def fromPNG(image: typings.scriptableIos.Image): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPNG")(image.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
   
   /**
     * _Creates data from string._
@@ -93,6 +89,5 @@ object Data {
     * @see https://docs.scriptable.app/data/#fromstring
     */
   /* static member */
-  @scala.inline
-  def fromString(string: String): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
+  inline def fromString(string: String): typings.scriptableIos.Data = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Data]
 }

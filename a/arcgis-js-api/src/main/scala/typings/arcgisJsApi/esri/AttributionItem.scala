@@ -26,8 +26,7 @@ trait AttributionItem
 }
 object AttributionItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: Layer,
@@ -38,13 +37,10 @@ object AttributionItem {
     __obj.asInstanceOf[AttributionItem]
   }
   
-  @scala.inline
-  implicit class AttributionItemMutableBuilder[Self <: AttributionItem] (val x: Self) extends AnyVal {
+  extension [Self <: AttributionItem](x: Self) {
     
-    @scala.inline
-    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait EventObject extends StObject {
 }
 object EventObject {
   
-  @scala.inline
-  def apply(Source: XInterface): EventObject = {
+  inline def apply(Source: XInterface): EventObject = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]
   }
   
-  @scala.inline
-  implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
+  extension [Self <: EventObject](x: Self) {
     
-    @scala.inline
-    def setSource(value: XInterface): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: XInterface): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

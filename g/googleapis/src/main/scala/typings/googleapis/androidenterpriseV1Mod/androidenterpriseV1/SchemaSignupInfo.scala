@@ -30,31 +30,23 @@ trait SchemaSignupInfo extends StObject {
 }
 object SchemaSignupInfo {
   
-  @scala.inline
-  def apply(): SchemaSignupInfo = {
+  inline def apply(): SchemaSignupInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignupInfo]
   }
   
-  @scala.inline
-  implicit class SchemaSignupInfoMutableBuilder[Self <: SchemaSignupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSignupInfo](x: Self) {
     
-    @scala.inline
-    def setCompletionToken(value: String): Self = StObject.set(x, "completionToken", value.asInstanceOf[js.Any])
+    inline def setCompletionToken(value: String): Self = StObject.set(x, "completionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionTokenUndefined: Self = StObject.set(x, "completionToken", js.undefined)
+    inline def setCompletionTokenUndefined: Self = StObject.set(x, "completionToken", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

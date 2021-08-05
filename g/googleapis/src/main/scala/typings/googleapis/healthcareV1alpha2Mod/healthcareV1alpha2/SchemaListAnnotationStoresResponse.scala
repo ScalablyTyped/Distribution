@@ -23,28 +23,21 @@ trait SchemaListAnnotationStoresResponse extends StObject {
 }
 object SchemaListAnnotationStoresResponse {
   
-  @scala.inline
-  def apply(): SchemaListAnnotationStoresResponse = {
+  inline def apply(): SchemaListAnnotationStoresResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListAnnotationStoresResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListAnnotationStoresResponseMutableBuilder[Self <: SchemaListAnnotationStoresResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListAnnotationStoresResponse](x: Self) {
     
-    @scala.inline
-    def setAnnotationStores(value: js.Array[SchemaAnnotationStore]): Self = StObject.set(x, "annotationStores", value.asInstanceOf[js.Any])
+    inline def setAnnotationStores(value: js.Array[SchemaAnnotationStore]): Self = StObject.set(x, "annotationStores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationStoresUndefined: Self = StObject.set(x, "annotationStores", js.undefined)
+    inline def setAnnotationStoresUndefined: Self = StObject.set(x, "annotationStores", js.undefined)
     
-    @scala.inline
-    def setAnnotationStoresVarargs(value: SchemaAnnotationStore*): Self = StObject.set(x, "annotationStores", js.Array(value :_*))
+    inline def setAnnotationStoresVarargs(value: SchemaAnnotationStore*): Self = StObject.set(x, "annotationStores", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

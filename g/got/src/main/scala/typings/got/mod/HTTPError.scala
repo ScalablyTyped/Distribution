@@ -29,22 +29,16 @@ object HTTPError {
   @js.native
   val ^ : Instantiable0[HTTPError] = js.native
   
-  @scala.inline
-  implicit class HTTPErrorMutableBuilder[Self <: HTTPError] (val x: Self) extends AnyVal {
+  extension [Self <: HTTPError](x: Self) {
     
-    @scala.inline
-    def setBody(value: Buffer | String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Buffer | String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.HTTPError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.HTTPError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

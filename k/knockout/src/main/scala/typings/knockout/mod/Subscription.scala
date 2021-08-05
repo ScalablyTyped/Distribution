@@ -13,19 +13,15 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(dispose: () => Unit, disposeWhenNodeIsRemoved: Node => Unit): Subscription = {
+  inline def apply(dispose: () => Unit, disposeWhenNodeIsRemoved: Node => Unit): Subscription = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), disposeWhenNodeIsRemoved = js.Any.fromFunction1(disposeWhenNodeIsRemoved))
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisposeWhenNodeIsRemoved(value: Node => Unit): Self = StObject.set(x, "disposeWhenNodeIsRemoved", js.Any.fromFunction1(value))
+    inline def setDisposeWhenNodeIsRemoved(value: Node => Unit): Self = StObject.set(x, "disposeWhenNodeIsRemoved", js.Any.fromFunction1(value))
   }
 }

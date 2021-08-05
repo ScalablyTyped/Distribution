@@ -76,8 +76,7 @@ trait uniqueValuesUniqueValuesParams
 }
 object uniqueValuesUniqueValuesParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
@@ -87,61 +86,42 @@ object uniqueValuesUniqueValuesParams {
     __obj.asInstanceOf[uniqueValuesUniqueValuesParams]
   }
   
-  @scala.inline
-  implicit class uniqueValuesUniqueValuesParamsMutableBuilder[Self <: uniqueValuesUniqueValuesParams] (val x: Self) extends AnyVal {
+  extension [Self <: uniqueValuesUniqueValuesParams](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnAllCodedValues(value: Boolean): Self = StObject.set(x, "returnAllCodedValues", value.asInstanceOf[js.Any])
+    inline def setReturnAllCodedValues(value: Boolean): Self = StObject.set(x, "returnAllCodedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnAllCodedValuesUndefined: Self = StObject.set(x, "returnAllCodedValues", js.undefined)
+    inline def setReturnAllCodedValuesUndefined: Self = StObject.set(x, "returnAllCodedValues", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSqlExpression(value: String): Self = StObject.set(x, "sqlExpression", value.asInstanceOf[js.Any])
+    inline def setSqlExpression(value: String): Self = StObject.set(x, "sqlExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlExpressionUndefined: Self = StObject.set(x, "sqlExpression", js.undefined)
+    inline def setSqlExpressionUndefined: Self = StObject.set(x, "sqlExpression", js.undefined)
     
-    @scala.inline
-    def setSqlWhere(value: String): Self = StObject.set(x, "sqlWhere", value.asInstanceOf[js.Any])
+    inline def setSqlWhere(value: String): Self = StObject.set(x, "sqlWhere", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlWhereUndefined: Self = StObject.set(x, "sqlWhere", js.undefined)
+    inline def setSqlWhereUndefined: Self = StObject.set(x, "sqlWhere", js.undefined)
     
-    @scala.inline
-    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait PasteCommand
 }
 object PasteCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): PasteCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): PasteCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[PasteCommand]
   }
   
-  @scala.inline
-  implicit class PasteCommandMutableBuilder[Self <: PasteCommand] (val x: Self) extends AnyVal {
+  extension [Self <: PasteCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

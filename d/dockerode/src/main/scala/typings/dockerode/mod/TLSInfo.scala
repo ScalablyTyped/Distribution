@@ -14,31 +14,23 @@ trait TLSInfo extends StObject {
 }
 object TLSInfo {
   
-  @scala.inline
-  def apply(): TLSInfo = {
+  inline def apply(): TLSInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TLSInfo]
   }
   
-  @scala.inline
-  implicit class TLSInfoMutableBuilder[Self <: TLSInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TLSInfo](x: Self) {
     
-    @scala.inline
-    def setCertIssuerPublicKey(value: String): Self = StObject.set(x, "CertIssuerPublicKey", value.asInstanceOf[js.Any])
+    inline def setCertIssuerPublicKey(value: String): Self = StObject.set(x, "CertIssuerPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertIssuerPublicKeyUndefined: Self = StObject.set(x, "CertIssuerPublicKey", js.undefined)
+    inline def setCertIssuerPublicKeyUndefined: Self = StObject.set(x, "CertIssuerPublicKey", js.undefined)
     
-    @scala.inline
-    def setCertIssuerSubject(value: String): Self = StObject.set(x, "CertIssuerSubject", value.asInstanceOf[js.Any])
+    inline def setCertIssuerSubject(value: String): Self = StObject.set(x, "CertIssuerSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertIssuerSubjectUndefined: Self = StObject.set(x, "CertIssuerSubject", js.undefined)
+    inline def setCertIssuerSubjectUndefined: Self = StObject.set(x, "CertIssuerSubject", js.undefined)
     
-    @scala.inline
-    def setTrustRoot(value: String): Self = StObject.set(x, "TrustRoot", value.asInstanceOf[js.Any])
+    inline def setTrustRoot(value: String): Self = StObject.set(x, "TrustRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustRootUndefined: Self = StObject.set(x, "TrustRoot", js.undefined)
+    inline def setTrustRootUndefined: Self = StObject.set(x, "TrustRoot", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait SnapshotSortingEntity extends StObject {
 }
 object SnapshotSortingEntity {
   
-  @scala.inline
-  def apply(Attribute: SnapshotAttributeToSortBy): SnapshotSortingEntity = {
+  inline def apply(Attribute: SnapshotAttributeToSortBy): SnapshotSortingEntity = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotSortingEntity]
   }
   
-  @scala.inline
-  implicit class SnapshotSortingEntityMutableBuilder[Self <: SnapshotSortingEntity] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotSortingEntity](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: SnapshotAttributeToSortBy): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: SnapshotAttributeToSortBy): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: SortByOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortByOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

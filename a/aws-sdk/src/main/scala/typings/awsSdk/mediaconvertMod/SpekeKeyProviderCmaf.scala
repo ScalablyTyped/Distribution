@@ -33,49 +33,35 @@ trait SpekeKeyProviderCmaf extends StObject {
 }
 object SpekeKeyProviderCmaf {
   
-  @scala.inline
-  def apply(): SpekeKeyProviderCmaf = {
+  inline def apply(): SpekeKeyProviderCmaf = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpekeKeyProviderCmaf]
   }
   
-  @scala.inline
-  implicit class SpekeKeyProviderCmafMutableBuilder[Self <: SpekeKeyProviderCmaf] (val x: Self) extends AnyVal {
+  extension [Self <: SpekeKeyProviderCmaf](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: stringPatternArnAwsUsGovAcm): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: stringPatternArnAwsUsGovAcm): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setDashSignaledSystemIds(value: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = StObject.set(x, "DashSignaledSystemIds", value.asInstanceOf[js.Any])
+    inline def setDashSignaledSystemIds(value: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = StObject.set(x, "DashSignaledSystemIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashSignaledSystemIdsUndefined: Self = StObject.set(x, "DashSignaledSystemIds", js.undefined)
+    inline def setDashSignaledSystemIdsUndefined: Self = StObject.set(x, "DashSignaledSystemIds", js.undefined)
     
-    @scala.inline
-    def setDashSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "DashSignaledSystemIds", js.Array(value :_*))
+    inline def setDashSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "DashSignaledSystemIds", js.Array(value :_*))
     
-    @scala.inline
-    def setHlsSignaledSystemIds(value: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = StObject.set(x, "HlsSignaledSystemIds", value.asInstanceOf[js.Any])
+    inline def setHlsSignaledSystemIds(value: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = StObject.set(x, "HlsSignaledSystemIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsSignaledSystemIdsUndefined: Self = StObject.set(x, "HlsSignaledSystemIds", js.undefined)
+    inline def setHlsSignaledSystemIdsUndefined: Self = StObject.set(x, "HlsSignaledSystemIds", js.undefined)
     
-    @scala.inline
-    def setHlsSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "HlsSignaledSystemIds", js.Array(value :_*))
+    inline def setHlsSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "HlsSignaledSystemIds", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: stringPatternW): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: stringPatternW): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: stringPatternHttps): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: stringPatternHttps): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

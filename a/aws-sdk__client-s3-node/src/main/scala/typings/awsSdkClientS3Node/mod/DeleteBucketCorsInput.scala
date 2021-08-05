@@ -9,8 +9,7 @@ trait DeleteBucketCorsInput
      with typings.awsSdkClientS3Node.typesDeleteBucketCorsInputMod.DeleteBucketCorsInput
 object DeleteBucketCorsInput {
   
-  @scala.inline
-  def apply(Bucket: String): DeleteBucketCorsInput = {
+  inline def apply(Bucket: String): DeleteBucketCorsInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketCorsInput]
   }

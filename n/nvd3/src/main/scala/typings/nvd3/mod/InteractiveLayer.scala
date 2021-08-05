@@ -10,16 +10,13 @@ trait InteractiveLayer extends StObject {
 }
 object InteractiveLayer {
   
-  @scala.inline
-  def apply(tooltip: Tooltip): InteractiveLayer = {
+  inline def apply(tooltip: Tooltip): InteractiveLayer = {
     val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveLayer]
   }
   
-  @scala.inline
-  implicit class InteractiveLayerMutableBuilder[Self <: InteractiveLayer] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveLayer](x: Self) {
     
-    @scala.inline
-    def setTooltip(value: Tooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Tooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

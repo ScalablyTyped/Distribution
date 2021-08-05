@@ -23,31 +23,23 @@ trait JobScheduleFrequency extends StObject {
 }
 object JobScheduleFrequency {
   
-  @scala.inline
-  def apply(): JobScheduleFrequency = {
+  inline def apply(): JobScheduleFrequency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobScheduleFrequency]
   }
   
-  @scala.inline
-  implicit class JobScheduleFrequencyMutableBuilder[Self <: JobScheduleFrequency] (val x: Self) extends AnyVal {
+  extension [Self <: JobScheduleFrequency](x: Self) {
     
-    @scala.inline
-    def setDailySchedule(value: DailySchedule): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
+    inline def setDailySchedule(value: DailySchedule): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyScheduleUndefined: Self = StObject.set(x, "dailySchedule", js.undefined)
+    inline def setDailyScheduleUndefined: Self = StObject.set(x, "dailySchedule", js.undefined)
     
-    @scala.inline
-    def setMonthlySchedule(value: MonthlySchedule): Self = StObject.set(x, "monthlySchedule", value.asInstanceOf[js.Any])
+    inline def setMonthlySchedule(value: MonthlySchedule): Self = StObject.set(x, "monthlySchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthlyScheduleUndefined: Self = StObject.set(x, "monthlySchedule", js.undefined)
+    inline def setMonthlyScheduleUndefined: Self = StObject.set(x, "monthlySchedule", js.undefined)
     
-    @scala.inline
-    def setWeeklySchedule(value: WeeklySchedule): Self = StObject.set(x, "weeklySchedule", value.asInstanceOf[js.Any])
+    inline def setWeeklySchedule(value: WeeklySchedule): Self = StObject.set(x, "weeklySchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyScheduleUndefined: Self = StObject.set(x, "weeklySchedule", js.undefined)
+    inline def setWeeklyScheduleUndefined: Self = StObject.set(x, "weeklySchedule", js.undefined)
   }
 }

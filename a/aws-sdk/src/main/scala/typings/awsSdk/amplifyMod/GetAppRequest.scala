@@ -13,16 +13,13 @@ trait GetAppRequest extends StObject {
 }
 object GetAppRequest {
   
-  @scala.inline
-  def apply(appId: AppId): GetAppRequest = {
+  inline def apply(appId: AppId): GetAppRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAppRequest]
   }
   
-  @scala.inline
-  implicit class GetAppRequestMutableBuilder[Self <: GetAppRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }
 }

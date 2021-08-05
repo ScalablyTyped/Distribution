@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PositionType extends StObject
 object PositionType {
   
-  @scala.inline
-  def bottom: typings.chartJs.chartJsStrings.bottom = "bottom".asInstanceOf[typings.chartJs.chartJsStrings.bottom]
+  inline def bottom: typings.chartJs.chartJsStrings.bottom = "bottom".asInstanceOf[typings.chartJs.chartJsStrings.bottom]
   
-  @scala.inline
-  def chartArea: typings.chartJs.chartJsStrings.chartArea = "chartArea".asInstanceOf[typings.chartJs.chartJsStrings.chartArea]
+  inline def chartArea: typings.chartJs.chartJsStrings.chartArea = "chartArea".asInstanceOf[typings.chartJs.chartJsStrings.chartArea]
   
-  @scala.inline
-  def left: typings.chartJs.chartJsStrings.left = "left".asInstanceOf[typings.chartJs.chartJsStrings.left]
+  inline def left: typings.chartJs.chartJsStrings.left = "left".asInstanceOf[typings.chartJs.chartJsStrings.left]
   
-  @scala.inline
-  def right: typings.chartJs.chartJsStrings.right = "right".asInstanceOf[typings.chartJs.chartJsStrings.right]
+  inline def right: typings.chartJs.chartJsStrings.right = "right".asInstanceOf[typings.chartJs.chartJsStrings.right]
   
-  @scala.inline
-  def top: typings.chartJs.chartJsStrings.top = "top".asInstanceOf[typings.chartJs.chartJsStrings.top]
+  inline def top: typings.chartJs.chartJsStrings.top = "top".asInstanceOf[typings.chartJs.chartJsStrings.top]
 }

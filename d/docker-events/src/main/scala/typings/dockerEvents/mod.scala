@@ -27,17 +27,14 @@ object mod {
   }
   object DockerEventsOptions {
     
-    @scala.inline
-    def apply(docker: typings.dockerode.mod.^): DockerEventsOptions = {
+    inline def apply(docker: typings.dockerode.mod.^): DockerEventsOptions = {
       val __obj = js.Dynamic.literal(docker = docker.asInstanceOf[js.Any])
       __obj.asInstanceOf[DockerEventsOptions]
     }
     
-    @scala.inline
-    implicit class DockerEventsOptionsMutableBuilder[Self <: DockerEventsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DockerEventsOptions](x: Self) {
       
-      @scala.inline
-      def setDocker(value: typings.dockerode.mod.^): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
+      inline def setDocker(value: typings.dockerode.mod.^): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
     }
   }
 }

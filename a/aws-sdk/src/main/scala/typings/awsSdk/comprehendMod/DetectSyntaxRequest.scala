@@ -18,19 +18,15 @@ trait DetectSyntaxRequest extends StObject {
 }
 object DetectSyntaxRequest {
   
-  @scala.inline
-  def apply(LanguageCode: SyntaxLanguageCode, Text: CustomerInputString): DetectSyntaxRequest = {
+  inline def apply(LanguageCode: SyntaxLanguageCode, Text: CustomerInputString): DetectSyntaxRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectSyntaxRequest]
   }
   
-  @scala.inline
-  implicit class DetectSyntaxRequestMutableBuilder[Self <: DetectSyntaxRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectSyntaxRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: SyntaxLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: SyntaxLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

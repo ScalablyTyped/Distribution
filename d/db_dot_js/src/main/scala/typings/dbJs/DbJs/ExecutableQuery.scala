@@ -11,16 +11,13 @@ trait ExecutableQuery[T] extends StObject {
 }
 object ExecutableQuery {
   
-  @scala.inline
-  def apply[T](execute: () => js.Promise[js.Array[T]]): ExecutableQuery[T] = {
+  inline def apply[T](execute: () => js.Promise[js.Array[T]]): ExecutableQuery[T] = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
     __obj.asInstanceOf[ExecutableQuery[T]]
   }
   
-  @scala.inline
-  implicit class ExecutableQueryMutableBuilder[Self <: ExecutableQuery[?], T] (val x: Self & ExecutableQuery[T]) extends AnyVal {
+  extension [Self <: ExecutableQuery[?], T](x: Self & ExecutableQuery[T]) {
     
-    @scala.inline
-    def setExecute(value: () => js.Promise[js.Array[T]]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => js.Promise[js.Array[T]]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

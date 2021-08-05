@@ -120,139 +120,95 @@ trait AvatarProps extends StObject {
 }
 object AvatarProps {
   
-  @scala.inline
-  def apply(): AvatarProps = {
+  inline def apply(): AvatarProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvatarProps]
   }
   
-  @scala.inline
-  implicit class AvatarPropsMutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
+  extension [Self <: AvatarProps](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
-    @scala.inline
-    def setAvatarStyle(value: ImageStyle): Self = StObject.set(x, "avatarStyle", value.asInstanceOf[js.Any])
+    inline def setAvatarStyle(value: ImageStyle): Self = StObject.set(x, "avatarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarStyleUndefined: Self = StObject.set(x, "avatarStyle", js.undefined)
+    inline def setAvatarStyleUndefined: Self = StObject.set(x, "avatarStyle", js.undefined)
     
-    @scala.inline
-    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setIcon(value: AvatarIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: AvatarIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+    inline def setIconStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconStyleNull: Self = StObject.set(x, "iconStyle", null)
+    inline def setIconStyleNull: Self = StObject.set(x, "iconStyle", null)
     
-    @scala.inline
-    def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+    inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setImageComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
+    inline def setImageComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
+    inline def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
-    @scala.inline
-    def setImageProps(value: PartialImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
+    inline def setImageProps(value: PartialImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
+    inline def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
     
-    @scala.inline
-    def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
+    inline def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setOverlayContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayContainerStyleNull: Self = StObject.set(x, "overlayContainerStyle", null)
+    inline def setOverlayContainerStyleNull: Self = StObject.set(x, "overlayContainerStyle", null)
     
-    @scala.inline
-    def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
+    inline def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
     
-    @scala.inline
-    def setPlaceholderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
+    inline def setPlaceholderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderStyleNull: Self = StObject.set(x, "placeholderStyle", null)
+    inline def setPlaceholderStyleNull: Self = StObject.set(x, "placeholderStyle", null)
     
-    @scala.inline
-    def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
+    inline def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
     
-    @scala.inline
-    def setRenderPlaceholderContent(value: ReactElement): Self = StObject.set(x, "renderPlaceholderContent", value.asInstanceOf[js.Any])
+    inline def setRenderPlaceholderContent(value: ReactElement): Self = StObject.set(x, "renderPlaceholderContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderPlaceholderContentUndefined: Self = StObject.set(x, "renderPlaceholderContent", js.undefined)
+    inline def setRenderPlaceholderContentUndefined: Self = StObject.set(x, "renderPlaceholderContent", js.undefined)
     
-    @scala.inline
-    def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
-    @scala.inline
-    def setSize(value: small | medium | large | xlarge | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: small | medium | large | xlarge | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSource(value: ImageSourcePropType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ImageSourcePropType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    inline def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
+    inline def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
     
-    @scala.inline
-    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+    inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

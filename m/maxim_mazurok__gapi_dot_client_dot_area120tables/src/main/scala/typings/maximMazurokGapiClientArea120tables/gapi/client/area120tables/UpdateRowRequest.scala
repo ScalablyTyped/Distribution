@@ -17,31 +17,23 @@ trait UpdateRowRequest extends StObject {
 }
 object UpdateRowRequest {
   
-  @scala.inline
-  def apply(): UpdateRowRequest = {
+  inline def apply(): UpdateRowRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRowRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRowRequestMutableBuilder[Self <: UpdateRowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRowRequest](x: Self) {
     
-    @scala.inline
-    def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait ProcessingResources extends StObject {
 }
 object ProcessingResources {
   
-  @scala.inline
-  def apply(ClusterConfig: ProcessingClusterConfig): ProcessingResources = {
+  inline def apply(ClusterConfig: ProcessingClusterConfig): ProcessingResources = {
     val __obj = js.Dynamic.literal(ClusterConfig = ClusterConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingResources]
   }
   
-  @scala.inline
-  implicit class ProcessingResourcesMutableBuilder[Self <: ProcessingResources] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingResources](x: Self) {
     
-    @scala.inline
-    def setClusterConfig(value: ProcessingClusterConfig): Self = StObject.set(x, "ClusterConfig", value.asInstanceOf[js.Any])
+    inline def setClusterConfig(value: ProcessingClusterConfig): Self = StObject.set(x, "ClusterConfig", value.asInstanceOf[js.Any])
   }
 }

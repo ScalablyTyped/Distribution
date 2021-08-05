@@ -18,25 +18,19 @@ trait ResizeInfo extends StObject {
 }
 object ResizeInfo {
   
-  @scala.inline
-  def apply(): ResizeInfo = {
+  inline def apply(): ResizeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizeInfo]
   }
   
-  @scala.inline
-  implicit class ResizeInfoMutableBuilder[Self <: ResizeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeInfo](x: Self) {
     
-    @scala.inline
-    def setAllowCancelResize(value: Boolean): Self = StObject.set(x, "AllowCancelResize", value.asInstanceOf[js.Any])
+    inline def setAllowCancelResize(value: Boolean): Self = StObject.set(x, "AllowCancelResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCancelResizeUndefined: Self = StObject.set(x, "AllowCancelResize", js.undefined)
+    inline def setAllowCancelResizeUndefined: Self = StObject.set(x, "AllowCancelResize", js.undefined)
     
-    @scala.inline
-    def setResizeType(value: String): Self = StObject.set(x, "ResizeType", value.asInstanceOf[js.Any])
+    inline def setResizeType(value: String): Self = StObject.set(x, "ResizeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeTypeUndefined: Self = StObject.set(x, "ResizeType", js.undefined)
+    inline def setResizeTypeUndefined: Self = StObject.set(x, "ResizeType", js.undefined)
   }
 }

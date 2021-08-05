@@ -16,28 +16,21 @@ trait QueryResultBase extends StObject {
 }
 object QueryResultBase {
   
-  @scala.inline
-  def apply(command: String, fields: js.Array[FieldDef], oid: Double, rowCount: Double): QueryResultBase = {
+  inline def apply(command: String, fields: js.Array[FieldDef], oid: Double, rowCount: Double): QueryResultBase = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultBase]
   }
   
-  @scala.inline
-  implicit class QueryResultBaseMutableBuilder[Self <: QueryResultBase] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResultBase](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[FieldDef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldDef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldDef*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldDef*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setOid(value: Double): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+    inline def setOid(value: Double): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
   }
 }

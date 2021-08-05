@@ -52,58 +52,41 @@ trait MutableClusterInfo extends StObject {
 }
 object MutableClusterInfo {
   
-  @scala.inline
-  def apply(): MutableClusterInfo = {
+  inline def apply(): MutableClusterInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MutableClusterInfo]
   }
   
-  @scala.inline
-  implicit class MutableClusterInfoMutableBuilder[Self <: MutableClusterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MutableClusterInfo](x: Self) {
     
-    @scala.inline
-    def setBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = StObject.set(x, "BrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
+    inline def setBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = StObject.set(x, "BrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerEBSVolumeInfoUndefined: Self = StObject.set(x, "BrokerEBSVolumeInfo", js.undefined)
+    inline def setBrokerEBSVolumeInfoUndefined: Self = StObject.set(x, "BrokerEBSVolumeInfo", js.undefined)
     
-    @scala.inline
-    def setBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "BrokerEBSVolumeInfo", js.Array(value :_*))
+    inline def setBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "BrokerEBSVolumeInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setConfigurationInfo(value: ConfigurationInfo): Self = StObject.set(x, "ConfigurationInfo", value.asInstanceOf[js.Any])
+    inline def setConfigurationInfo(value: ConfigurationInfo): Self = StObject.set(x, "ConfigurationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationInfoUndefined: Self = StObject.set(x, "ConfigurationInfo", js.undefined)
+    inline def setConfigurationInfoUndefined: Self = StObject.set(x, "ConfigurationInfo", js.undefined)
     
-    @scala.inline
-    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+    inline def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
+    inline def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
     
-    @scala.inline
-    def setKafkaVersion(value: string): Self = StObject.set(x, "KafkaVersion", value.asInstanceOf[js.Any])
+    inline def setKafkaVersion(value: string): Self = StObject.set(x, "KafkaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKafkaVersionUndefined: Self = StObject.set(x, "KafkaVersion", js.undefined)
+    inline def setKafkaVersionUndefined: Self = StObject.set(x, "KafkaVersion", js.undefined)
     
-    @scala.inline
-    def setLoggingInfo(value: LoggingInfo): Self = StObject.set(x, "LoggingInfo", value.asInstanceOf[js.Any])
+    inline def setLoggingInfo(value: LoggingInfo): Self = StObject.set(x, "LoggingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingInfoUndefined: Self = StObject.set(x, "LoggingInfo", js.undefined)
+    inline def setLoggingInfoUndefined: Self = StObject.set(x, "LoggingInfo", js.undefined)
     
-    @scala.inline
-    def setNumberOfBrokerNodes(value: integer): Self = StObject.set(x, "NumberOfBrokerNodes", value.asInstanceOf[js.Any])
+    inline def setNumberOfBrokerNodes(value: integer): Self = StObject.set(x, "NumberOfBrokerNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfBrokerNodesUndefined: Self = StObject.set(x, "NumberOfBrokerNodes", js.undefined)
+    inline def setNumberOfBrokerNodesUndefined: Self = StObject.set(x, "NumberOfBrokerNodes", js.undefined)
     
-    @scala.inline
-    def setOpenMonitoring(value: OpenMonitoring): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
+    inline def setOpenMonitoring(value: OpenMonitoring): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
+    inline def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
   }
 }

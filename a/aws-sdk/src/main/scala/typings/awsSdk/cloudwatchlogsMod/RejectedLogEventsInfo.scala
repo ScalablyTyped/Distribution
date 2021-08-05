@@ -23,31 +23,23 @@ trait RejectedLogEventsInfo extends StObject {
 }
 object RejectedLogEventsInfo {
   
-  @scala.inline
-  def apply(): RejectedLogEventsInfo = {
+  inline def apply(): RejectedLogEventsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RejectedLogEventsInfo]
   }
   
-  @scala.inline
-  implicit class RejectedLogEventsInfoMutableBuilder[Self <: RejectedLogEventsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RejectedLogEventsInfo](x: Self) {
     
-    @scala.inline
-    def setExpiredLogEventEndIndex(value: LogEventIndex): Self = StObject.set(x, "expiredLogEventEndIndex", value.asInstanceOf[js.Any])
+    inline def setExpiredLogEventEndIndex(value: LogEventIndex): Self = StObject.set(x, "expiredLogEventEndIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredLogEventEndIndexUndefined: Self = StObject.set(x, "expiredLogEventEndIndex", js.undefined)
+    inline def setExpiredLogEventEndIndexUndefined: Self = StObject.set(x, "expiredLogEventEndIndex", js.undefined)
     
-    @scala.inline
-    def setTooNewLogEventStartIndex(value: LogEventIndex): Self = StObject.set(x, "tooNewLogEventStartIndex", value.asInstanceOf[js.Any])
+    inline def setTooNewLogEventStartIndex(value: LogEventIndex): Self = StObject.set(x, "tooNewLogEventStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooNewLogEventStartIndexUndefined: Self = StObject.set(x, "tooNewLogEventStartIndex", js.undefined)
+    inline def setTooNewLogEventStartIndexUndefined: Self = StObject.set(x, "tooNewLogEventStartIndex", js.undefined)
     
-    @scala.inline
-    def setTooOldLogEventEndIndex(value: LogEventIndex): Self = StObject.set(x, "tooOldLogEventEndIndex", value.asInstanceOf[js.Any])
+    inline def setTooOldLogEventEndIndex(value: LogEventIndex): Self = StObject.set(x, "tooOldLogEventEndIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooOldLogEventEndIndexUndefined: Self = StObject.set(x, "tooOldLogEventEndIndex", js.undefined)
+    inline def setTooOldLogEventEndIndexUndefined: Self = StObject.set(x, "tooOldLogEventEndIndex", js.undefined)
   }
 }

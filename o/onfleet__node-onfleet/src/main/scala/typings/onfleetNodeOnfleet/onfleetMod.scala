@@ -84,8 +84,7 @@ object onfleetMod {
   }
   object Onfleet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       admins: typings.onfleetNodeOnfleet.administratorsMod.^,
       api: BaseUrl,
       apiKey: String,
@@ -104,47 +103,33 @@ object onfleetMod {
       __obj.asInstanceOf[Onfleet]
     }
     
-    @scala.inline
-    implicit class OnfleetMutableBuilder[Self <: Onfleet] (val x: Self) extends AnyVal {
+    extension [Self <: Onfleet](x: Self) {
       
-      @scala.inline
-      def setAdmins(value: typings.onfleetNodeOnfleet.administratorsMod.^): Self = StObject.set(x, "admins", value.asInstanceOf[js.Any])
+      inline def setAdmins(value: typings.onfleetNodeOnfleet.administratorsMod.^): Self = StObject.set(x, "admins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi(value: BaseUrl): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: BaseUrl): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainers(value: typings.onfleetNodeOnfleet.containersMod.^): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+      inline def setContainers(value: typings.onfleetNodeOnfleet.containersMod.^): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinations(value: typings.onfleetNodeOnfleet.destinationsMod.^): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+      inline def setDestinations(value: typings.onfleetNodeOnfleet.destinationsMod.^): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubs(value: typings.onfleetNodeOnfleet.hubsMod.^): Self = StObject.set(x, "hubs", value.asInstanceOf[js.Any])
+      inline def setHubs(value: typings.onfleetNodeOnfleet.hubsMod.^): Self = StObject.set(x, "hubs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganization(value: typings.onfleetNodeOnfleet.organizationMod.^): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: typings.onfleetNodeOnfleet.organizationMod.^): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipients(value: typings.onfleetNodeOnfleet.recipientsMod.^): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+      inline def setRecipients(value: typings.onfleetNodeOnfleet.recipientsMod.^): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTasks(value: typings.onfleetNodeOnfleet.tasksMod.^): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+      inline def setTasks(value: typings.onfleetNodeOnfleet.tasksMod.^): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeams(value: typings.onfleetNodeOnfleet.teamsMod.^): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: typings.onfleetNodeOnfleet.teamsMod.^): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyKey(value: () => js.Promise[Boolean]): Self = StObject.set(x, "verifyKey", js.Any.fromFunction0(value))
+      inline def setVerifyKey(value: () => js.Promise[Boolean]): Self = StObject.set(x, "verifyKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWebhooks(value: typings.onfleetNodeOnfleet.webhooksMod.^): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: typings.onfleetNodeOnfleet.webhooksMod.^): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkers(value: typings.onfleetNodeOnfleet.workersMod.^): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: typings.onfleetNodeOnfleet.workersMod.^): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     }
   }
 }

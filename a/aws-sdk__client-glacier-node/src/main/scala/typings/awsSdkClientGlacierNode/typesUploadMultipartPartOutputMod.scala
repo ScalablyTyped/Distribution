@@ -25,23 +25,18 @@ object typesUploadMultipartPartOutputMod {
   }
   object UploadMultipartPartOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UploadMultipartPartOutput = {
+    inline def apply($metadata: ResponseMetadata): UploadMultipartPartOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadMultipartPartOutput]
     }
     
-    @scala.inline
-    implicit class UploadMultipartPartOutputMutableBuilder[Self <: UploadMultipartPartOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UploadMultipartPartOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     }
   }
 }

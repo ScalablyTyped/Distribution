@@ -14,23 +14,18 @@ object SimpleDialog {
   }
   object Button {
     
-    @scala.inline
-    def apply(text: String): Button = {
+    inline def apply(text: String): Button = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Button]
     }
     
-    @scala.inline
-    implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+    extension [Self <: Button](x: Self) {
       
-      @scala.inline
-      def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +37,16 @@ object SimpleDialog {
   }
   object Options {
     
-    @scala.inline
-    def apply(text: String, title: String): typings.ibmMobilefirst.WL.SimpleDialog.Options = {
+    inline def apply(text: String, title: String): typings.ibmMobilefirst.WL.SimpleDialog.Options = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ibmMobilefirst.WL.SimpleDialog.Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: typings.ibmMobilefirst.WL.SimpleDialog.Options] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ibmMobilefirst.WL.SimpleDialog.Options](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

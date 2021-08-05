@@ -21,25 +21,19 @@ trait TabStop extends StObject {
 }
 object TabStop {
   
-  @scala.inline
-  def apply(Alignment: TabAlign, DecimalChar: String, FillChar: String, Position: Double): TabStop = {
+  inline def apply(Alignment: TabAlign, DecimalChar: String, FillChar: String, Position: Double): TabStop = {
     val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], DecimalChar = DecimalChar.asInstanceOf[js.Any], FillChar = FillChar.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabStop]
   }
   
-  @scala.inline
-  implicit class TabStopMutableBuilder[Self <: TabStop] (val x: Self) extends AnyVal {
+  extension [Self <: TabStop](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: TabAlign): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: TabAlign): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalChar(value: String): Self = StObject.set(x, "DecimalChar", value.asInstanceOf[js.Any])
+    inline def setDecimalChar(value: String): Self = StObject.set(x, "DecimalChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillChar(value: String): Self = StObject.set(x, "FillChar", value.asInstanceOf[js.Any])
+    inline def setFillChar(value: String): Self = StObject.set(x, "FillChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

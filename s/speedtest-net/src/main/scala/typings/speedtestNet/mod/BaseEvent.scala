@@ -17,17 +17,14 @@ trait BaseEvent extends StObject {
 }
 object BaseEvent {
   
-  @scala.inline
-  def apply(`type`: config | log | testStart | ping | download | upload | result): BaseEvent = {
+  inline def apply(`type`: config | log | testStart | ping | download | upload | result): BaseEvent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseEvent]
   }
   
-  @scala.inline
-  implicit class BaseEventMutableBuilder[Self <: BaseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BaseEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: config | log | testStart | ping | download | upload | result): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: config | log | testStart | ping | download | upload | result): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

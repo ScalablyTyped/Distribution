@@ -22,8 +22,7 @@ trait Double extends StObject {
 }
 object Double {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boolean: scala.Double,
     dateTime: scala.Double,
     double: scala.Double,
@@ -36,28 +35,20 @@ object Double {
     __obj.asInstanceOf[Double]
   }
   
-  @scala.inline
-  implicit class DoubleMutableBuilder[Self <: Double] (val x: Self) extends AnyVal {
+  extension [Self <: Double](x: Self) {
     
-    @scala.inline
-    def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDouble(value: scala.Double): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
+    inline def setDouble(value: scala.Double): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteger(value: scala.Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+    inline def setInteger(value: scala.Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlainText(value: scala.Double): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
+    inline def setPlainText(value: scala.Double): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreePath(value: scala.Double): Self = StObject.set(x, "treePath", value.asInstanceOf[js.Any])
+    inline def setTreePath(value: scala.Double): Self = StObject.set(x, "treePath", value.asInstanceOf[js.Any])
   }
 }

@@ -23,21 +23,21 @@ object inkMod {
     
     def clear(): Unit = js.native
     
-    val container: js.Any = js.native
+    /* private */ val container: js.Any = js.native
     
-    var exitPromise: js.Any = js.native
+    /* private */ var exitPromise: js.Any = js.native
     
-    var fullStaticOutput: js.Any = js.native
+    /* private */ var fullStaticOutput: js.Any = js.native
     
-    var isUnmounted: js.Any = js.native
+    /* private */ var isUnmounted: js.Any = js.native
     
-    var lastOutput: js.Any = js.native
+    /* private */ var lastOutput: js.Any = js.native
     
-    val log: js.Any = js.native
+    /* private */ val log: js.Any = js.native
     
     def onRender(): Unit = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
     def patchConsole(): Unit = js.native
     
@@ -48,11 +48,11 @@ object inkMod {
     
     def resolveExitPromise(): Unit = js.native
     
-    var restoreConsole: js.Any = js.native
+    /* private */ var restoreConsole: js.Any = js.native
     
-    val rootNode: js.Any = js.native
+    /* private */ val rootNode: js.Any = js.native
     
-    val throttledLog: js.Any = js.native
+    /* private */ val throttledLog: js.Any = js.native
     
     def unmount(): Unit = js.native
     def unmount(error: Double): Unit = js.native
@@ -60,7 +60,7 @@ object inkMod {
     
     def unsubscribeExit(): Unit = js.native
     
-    val unsubscribeResize: js.Any = js.native
+    /* private */ val unsubscribeResize: js.Any = js.native
     
     def waitUntilExit(): js.Promise[Unit] = js.native
     
@@ -87,8 +87,7 @@ object inkMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: Boolean,
       exitOnCtrlC: Boolean,
       patchConsole: Boolean,
@@ -100,32 +99,23 @@ object inkMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitOnCtrlC(value: Boolean): Self = StObject.set(x, "exitOnCtrlC", value.asInstanceOf[js.Any])
+      inline def setExitOnCtrlC(value: Boolean): Self = StObject.set(x, "exitOnCtrlC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchConsole(value: Boolean): Self = StObject.set(x, "patchConsole", value.asInstanceOf[js.Any])
+      inline def setPatchConsole(value: Boolean): Self = StObject.set(x, "patchConsole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitUntilExit(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitUntilExit", js.Any.fromFunction0(value))
+      inline def setWaitUntilExit(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitUntilExit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWaitUntilExitUndefined: Self = StObject.set(x, "waitUntilExit", js.undefined)
+      inline def setWaitUntilExitUndefined: Self = StObject.set(x, "waitUntilExit", js.undefined)
     }
   }
 }

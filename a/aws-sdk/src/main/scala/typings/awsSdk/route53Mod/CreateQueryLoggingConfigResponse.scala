@@ -18,19 +18,15 @@ trait CreateQueryLoggingConfigResponse extends StObject {
 }
 object CreateQueryLoggingConfigResponse {
   
-  @scala.inline
-  def apply(Location: ResourceURI, QueryLoggingConfig: QueryLoggingConfig): CreateQueryLoggingConfigResponse = {
+  inline def apply(Location: ResourceURI, QueryLoggingConfig: QueryLoggingConfig): CreateQueryLoggingConfigResponse = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], QueryLoggingConfig = QueryLoggingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateQueryLoggingConfigResponse]
   }
   
-  @scala.inline
-  implicit class CreateQueryLoggingConfigResponseMutableBuilder[Self <: CreateQueryLoggingConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQueryLoggingConfigResponse](x: Self) {
     
-    @scala.inline
-    def setLocation(value: ResourceURI): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ResourceURI): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryLoggingConfig(value: QueryLoggingConfig): Self = StObject.set(x, "QueryLoggingConfig", value.asInstanceOf[js.Any])
+    inline def setQueryLoggingConfig(value: QueryLoggingConfig): Self = StObject.set(x, "QueryLoggingConfig", value.asInstanceOf[js.Any])
   }
 }

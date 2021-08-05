@@ -21,8 +21,7 @@ trait streamFailureArgs
 }
 object streamFailureArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client: client,
     clientId: String,
     error: String,
@@ -34,13 +33,10 @@ object streamFailureArgs {
     __obj.asInstanceOf[streamFailureArgs]
   }
   
-  @scala.inline
-  implicit class streamFailureArgsMutableBuilder[Self <: streamFailureArgs] (val x: Self) extends AnyVal {
+  extension [Self <: streamFailureArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillReconnect(value: Boolean): Self = StObject.set(x, "willReconnect", value.asInstanceOf[js.Any])
+    inline def setWillReconnect(value: Boolean): Self = StObject.set(x, "willReconnect", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait CodeMessage extends StObject {
 }
 object CodeMessage {
   
-  @scala.inline
-  def apply(): CodeMessage = {
+  inline def apply(): CodeMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeMessage]
   }
   
-  @scala.inline
-  implicit class CodeMessageMutableBuilder[Self <: CodeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CodeMessage](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

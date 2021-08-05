@@ -14,22 +14,17 @@ trait Query extends StObject {
 }
 object Query {
   
-  @scala.inline
-  def apply(query: js.Any, scene: String, shareTicket: String): Query = {
+  inline def apply(query: js.Any, scene: String, shareTicket: String): Query = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+  extension [Self <: Query](x: Self) {
     
-    @scala.inline
-    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
   }
 }

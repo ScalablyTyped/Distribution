@@ -102,10 +102,8 @@ object Model {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromGltf(options: Asynchronous): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGltf")(options.asInstanceOf[js.Any]).asInstanceOf[Model]
+  inline def fromGltf(options: Asynchronous): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGltf")(options.asInstanceOf[js.Any]).asInstanceOf[Model]
   
   /* static member */
-  @scala.inline
-  def siluhouetteSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("siluhouetteSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def siluhouetteSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("siluhouetteSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

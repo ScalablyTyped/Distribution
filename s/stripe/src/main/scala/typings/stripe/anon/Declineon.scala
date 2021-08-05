@@ -22,25 +22,19 @@ trait Declineon extends StObject {
 }
 object Declineon {
   
-  @scala.inline
-  def apply(): Declineon = {
+  inline def apply(): Declineon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Declineon]
   }
   
-  @scala.inline
-  implicit class DeclineonMutableBuilder[Self <: Declineon] (val x: Self) extends AnyVal {
+  extension [Self <: Declineon](x: Self) {
     
-    @scala.inline
-    def setDecline_on(value: Avsfailure): Self = StObject.set(x, "decline_on", value.asInstanceOf[js.Any])
+    inline def setDecline_on(value: Avsfailure): Self = StObject.set(x, "decline_on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecline_onUndefined: Self = StObject.set(x, "decline_on", js.undefined)
+    inline def setDecline_onUndefined: Self = StObject.set(x, "decline_on", js.undefined)
     
-    @scala.inline
-    def setStatement_descriptor_prefix(value: String): Self = StObject.set(x, "statement_descriptor_prefix", value.asInstanceOf[js.Any])
+    inline def setStatement_descriptor_prefix(value: String): Self = StObject.set(x, "statement_descriptor_prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement_descriptor_prefixUndefined: Self = StObject.set(x, "statement_descriptor_prefix", js.undefined)
+    inline def setStatement_descriptor_prefixUndefined: Self = StObject.set(x, "statement_descriptor_prefix", js.undefined)
   }
 }

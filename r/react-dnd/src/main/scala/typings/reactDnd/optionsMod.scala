@@ -12,20 +12,16 @@ object optionsMod {
   }
   object DndOptions {
     
-    @scala.inline
-    def apply[Props](): DndOptions[Props] = {
+    inline def apply[Props](): DndOptions[Props] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DndOptions[Props]]
     }
     
-    @scala.inline
-    implicit class DndOptionsMutableBuilder[Self <: DndOptions[?], Props] (val x: Self & DndOptions[Props]) extends AnyVal {
+    extension [Self <: DndOptions[?], Props](x: Self & DndOptions[Props]) {
       
-      @scala.inline
-      def setArePropsEqual(value: (/* first */ Props, /* second */ Props) => Boolean): Self = StObject.set(x, "arePropsEqual", js.Any.fromFunction2(value))
+      inline def setArePropsEqual(value: (/* first */ Props, /* second */ Props) => Boolean): Self = StObject.set(x, "arePropsEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setArePropsEqualUndefined: Self = StObject.set(x, "arePropsEqual", js.undefined)
+      inline def setArePropsEqualUndefined: Self = StObject.set(x, "arePropsEqual", js.undefined)
     }
   }
   
@@ -69,44 +65,32 @@ object optionsMod {
   }
   object DragPreviewOptions {
     
-    @scala.inline
-    def apply(): DragPreviewOptions = {
+    inline def apply(): DragPreviewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragPreviewOptions]
     }
     
-    @scala.inline
-    implicit class DragPreviewOptionsMutableBuilder[Self <: DragPreviewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DragPreviewOptions](x: Self) {
       
-      @scala.inline
-      def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
+      inline def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorXUndefined: Self = StObject.set(x, "anchorX", js.undefined)
+      inline def setAnchorXUndefined: Self = StObject.set(x, "anchorX", js.undefined)
       
-      @scala.inline
-      def setAnchorY(value: Double): Self = StObject.set(x, "anchorY", value.asInstanceOf[js.Any])
+      inline def setAnchorY(value: Double): Self = StObject.set(x, "anchorY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorYUndefined: Self = StObject.set(x, "anchorY", js.undefined)
+      inline def setAnchorYUndefined: Self = StObject.set(x, "anchorY", js.undefined)
       
-      @scala.inline
-      def setCaptureDraggingState(value: Boolean): Self = StObject.set(x, "captureDraggingState", value.asInstanceOf[js.Any])
+      inline def setCaptureDraggingState(value: Boolean): Self = StObject.set(x, "captureDraggingState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureDraggingStateUndefined: Self = StObject.set(x, "captureDraggingState", js.undefined)
+      inline def setCaptureDraggingStateUndefined: Self = StObject.set(x, "captureDraggingState", js.undefined)
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+      inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+      inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     }
   }
   
@@ -121,20 +105,16 @@ object optionsMod {
   }
   object DragSourceOptions {
     
-    @scala.inline
-    def apply(): DragSourceOptions = {
+    inline def apply(): DragSourceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragSourceOptions]
     }
     
-    @scala.inline
-    implicit class DragSourceOptionsMutableBuilder[Self <: DragSourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DragSourceOptions](x: Self) {
       
-      @scala.inline
-      def setDropEffect(value: String): Self = StObject.set(x, "dropEffect", value.asInstanceOf[js.Any])
+      inline def setDropEffect(value: String): Self = StObject.set(x, "dropEffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropEffectUndefined: Self = StObject.set(x, "dropEffect", js.undefined)
+      inline def setDropEffectUndefined: Self = StObject.set(x, "dropEffect", js.undefined)
     }
   }
 }

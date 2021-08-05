@@ -10,16 +10,13 @@ trait Configuration extends StObject {
 }
 object Configuration {
   
-  @scala.inline
-  def apply(configuration: FunctionName): Configuration = {
+  inline def apply(configuration: FunctionName): Configuration = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
   
-  @scala.inline
-  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+  extension [Self <: Configuration](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: FunctionName): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: FunctionName): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
   }
 }

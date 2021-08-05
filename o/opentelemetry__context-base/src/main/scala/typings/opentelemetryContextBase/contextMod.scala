@@ -13,9 +13,9 @@ object contextMod {
     *
     * @param parentContext a context from which to inherit values
     */
-  class Context protected () extends StObject {
+  /* private */ class Context () extends StObject {
     
-    var _currentContext: js.Any = js.native
+    /* private */ var _currentContext: js.Any = js.native
     
     /**
       * Return a new context which inherits from this context but does
@@ -64,7 +64,6 @@ object contextMod {
     val TODO: Context = js.native
     
     /** Get a key to uniquely identify a context value */
-    @scala.inline
-    def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
+    inline def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
   }
 }

@@ -13,19 +13,15 @@ trait LoaderResponse extends StObject {
 }
 object LoaderResponse {
   
-  @scala.inline
-  def apply(data: String | ArrayBuffer, url: String): LoaderResponse = {
+  inline def apply(data: String | ArrayBuffer, url: String): LoaderResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderResponse]
   }
   
-  @scala.inline
-  implicit class LoaderResponseMutableBuilder[Self <: LoaderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LoaderResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

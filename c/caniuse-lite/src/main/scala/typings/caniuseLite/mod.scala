@@ -15,11 +15,9 @@ object mod {
   @js.native
   val agents: AgentsByID = js.native
   
-  @scala.inline
-  def feature(packedFeature: PackedFeature): Feature_ = ^.asInstanceOf[js.Dynamic].applyDynamic("feature")(packedFeature.asInstanceOf[js.Any]).asInstanceOf[Feature_]
+  inline def feature(packedFeature: PackedFeature): Feature_ = ^.asInstanceOf[js.Dynamic].applyDynamic("feature")(packedFeature.asInstanceOf[js.Any]).asInstanceOf[Feature_]
   
-  @scala.inline
-  def region(packedRegion: PackedRegion): StringDictionary[UsageByVersion] = ^.asInstanceOf[js.Dynamic].applyDynamic("region")(packedRegion.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[UsageByVersion]]
+  inline def region(packedRegion: PackedRegion): StringDictionary[UsageByVersion] = ^.asInstanceOf[js.Dynamic].applyDynamic("region")(packedRegion.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[UsageByVersion]]
   
   trait Agent extends StObject {
     
@@ -55,8 +53,7 @@ object mod {
   }
   object Agent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       browser: String,
       prefix: String,
       release_date: StringDictionary[js.UndefOr[Double]],
@@ -67,32 +64,23 @@ object mod {
       __obj.asInstanceOf[Agent]
     }
     
-    @scala.inline
-    implicit class AgentMutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
+    extension [Self <: Agent](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix_exceptions(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "prefix_exceptions", value.asInstanceOf[js.Any])
+      inline def setPrefix_exceptions(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "prefix_exceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix_exceptionsUndefined: Self = StObject.set(x, "prefix_exceptions", js.undefined)
+      inline def setPrefix_exceptionsUndefined: Self = StObject.set(x, "prefix_exceptions", js.undefined)
       
-      @scala.inline
-      def setRelease_date(value: StringDictionary[js.UndefOr[Double]]): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+      inline def setRelease_date(value: StringDictionary[js.UndefOr[Double]]): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage_global(value: UsageByVersion): Self = StObject.set(x, "usage_global", value.asInstanceOf[js.Any])
+      inline def setUsage_global(value: UsageByVersion): Self = StObject.set(x, "usage_global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersions(value: js.Array[js.Any]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      inline def setVersions(value: js.Array[js.Any]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionsVarargs(value: js.Any*): Self = StObject.set(x, "versions", js.Array(value :_*))
+      inline def setVersionsVarargs(value: js.Any*): Self = StObject.set(x, "versions", js.Array(value :_*))
     }
   }
   
@@ -130,23 +118,18 @@ object mod {
   }
   object Feature_ {
     
-    @scala.inline
-    def apply(stats: StatsByAgentID, status: FeatureStatus, title: String): Feature_ = {
+    inline def apply(stats: StatsByAgentID, status: FeatureStatus, title: String): Feature_ = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Feature_]
     }
     
-    @scala.inline
-    implicit class Feature_MutableBuilder[Self <: Feature_] (val x: Self) extends AnyVal {
+    extension [Self <: Feature_](x: Self) {
       
-      @scala.inline
-      def setStats(value: StatsByAgentID): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: StatsByAgentID): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: FeatureStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: FeatureStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

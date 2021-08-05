@@ -21,26 +21,20 @@ object elastictranscoder {
   }
   object PipelineContentConfig {
     
-    @scala.inline
-    def apply(): PipelineContentConfig = {
+    inline def apply(): PipelineContentConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineContentConfig]
     }
     
-    @scala.inline
-    implicit class PipelineContentConfigMutableBuilder[Self <: PipelineContentConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineContentConfig](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     }
   }
   
@@ -63,35 +57,26 @@ object elastictranscoder {
   }
   object PipelineContentConfigPermission {
     
-    @scala.inline
-    def apply(): PipelineContentConfigPermission = {
+    inline def apply(): PipelineContentConfigPermission = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineContentConfigPermission]
     }
     
-    @scala.inline
-    implicit class PipelineContentConfigPermissionMutableBuilder[Self <: PipelineContentConfigPermission] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineContentConfigPermission](x: Self) {
       
-      @scala.inline
-      def setAccesses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
+      inline def setAccesses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
+      inline def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
       
-      @scala.inline
-      def setAccessesVarargs(value: Input[String]*): Self = StObject.set(x, "accesses", js.Array(value :_*))
+      inline def setAccessesVarargs(value: Input[String]*): Self = StObject.set(x, "accesses", js.Array(value :_*))
       
-      @scala.inline
-      def setGrantee(value: Input[String]): Self = StObject.set(x, "grantee", value.asInstanceOf[js.Any])
+      inline def setGrantee(value: Input[String]): Self = StObject.set(x, "grantee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteeType(value: Input[String]): Self = StObject.set(x, "granteeType", value.asInstanceOf[js.Any])
+      inline def setGranteeType(value: Input[String]): Self = StObject.set(x, "granteeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteeTypeUndefined: Self = StObject.set(x, "granteeType", js.undefined)
+      inline def setGranteeTypeUndefined: Self = StObject.set(x, "granteeType", js.undefined)
       
-      @scala.inline
-      def setGranteeUndefined: Self = StObject.set(x, "grantee", js.undefined)
+      inline def setGranteeUndefined: Self = StObject.set(x, "grantee", js.undefined)
     }
   }
   
@@ -119,38 +104,28 @@ object elastictranscoder {
   }
   object PipelineNotifications {
     
-    @scala.inline
-    def apply(): PipelineNotifications = {
+    inline def apply(): PipelineNotifications = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineNotifications]
     }
     
-    @scala.inline
-    implicit class PipelineNotificationsMutableBuilder[Self <: PipelineNotifications] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineNotifications](x: Self) {
       
-      @scala.inline
-      def setCompleted(value: Input[String]): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      inline def setCompleted(value: Input[String]): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+      inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
       
-      @scala.inline
-      def setError(value: Input[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Input[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setProgressing(value: Input[String]): Self = StObject.set(x, "progressing", value.asInstanceOf[js.Any])
+      inline def setProgressing(value: Input[String]): Self = StObject.set(x, "progressing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressingUndefined: Self = StObject.set(x, "progressing", js.undefined)
+      inline def setProgressingUndefined: Self = StObject.set(x, "progressing", js.undefined)
       
-      @scala.inline
-      def setWarning(value: Input[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Input[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -168,26 +143,20 @@ object elastictranscoder {
   }
   object PipelineThumbnailConfig {
     
-    @scala.inline
-    def apply(): PipelineThumbnailConfig = {
+    inline def apply(): PipelineThumbnailConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineThumbnailConfig]
     }
     
-    @scala.inline
-    implicit class PipelineThumbnailConfigMutableBuilder[Self <: PipelineThumbnailConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineThumbnailConfig](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     }
   }
   
@@ -210,35 +179,26 @@ object elastictranscoder {
   }
   object PipelineThumbnailConfigPermission {
     
-    @scala.inline
-    def apply(): PipelineThumbnailConfigPermission = {
+    inline def apply(): PipelineThumbnailConfigPermission = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineThumbnailConfigPermission]
     }
     
-    @scala.inline
-    implicit class PipelineThumbnailConfigPermissionMutableBuilder[Self <: PipelineThumbnailConfigPermission] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineThumbnailConfigPermission](x: Self) {
       
-      @scala.inline
-      def setAccesses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
+      inline def setAccesses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
+      inline def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
       
-      @scala.inline
-      def setAccessesVarargs(value: Input[String]*): Self = StObject.set(x, "accesses", js.Array(value :_*))
+      inline def setAccessesVarargs(value: Input[String]*): Self = StObject.set(x, "accesses", js.Array(value :_*))
       
-      @scala.inline
-      def setGrantee(value: Input[String]): Self = StObject.set(x, "grantee", value.asInstanceOf[js.Any])
+      inline def setGrantee(value: Input[String]): Self = StObject.set(x, "grantee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteeType(value: Input[String]): Self = StObject.set(x, "granteeType", value.asInstanceOf[js.Any])
+      inline def setGranteeType(value: Input[String]): Self = StObject.set(x, "granteeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteeTypeUndefined: Self = StObject.set(x, "granteeType", js.undefined)
+      inline def setGranteeTypeUndefined: Self = StObject.set(x, "granteeType", js.undefined)
       
-      @scala.inline
-      def setGranteeUndefined: Self = StObject.set(x, "grantee", js.undefined)
+      inline def setGranteeUndefined: Self = StObject.set(x, "grantee", js.undefined)
     }
   }
   
@@ -271,44 +231,32 @@ object elastictranscoder {
   }
   object PresetAudio {
     
-    @scala.inline
-    def apply(): PresetAudio = {
+    inline def apply(): PresetAudio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresetAudio]
     }
     
-    @scala.inline
-    implicit class PresetAudioMutableBuilder[Self <: PresetAudio] (val x: Self) extends AnyVal {
+    extension [Self <: PresetAudio](x: Self) {
       
-      @scala.inline
-      def setAudioPackingMode(value: Input[String]): Self = StObject.set(x, "audioPackingMode", value.asInstanceOf[js.Any])
+      inline def setAudioPackingMode(value: Input[String]): Self = StObject.set(x, "audioPackingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioPackingModeUndefined: Self = StObject.set(x, "audioPackingMode", js.undefined)
+      inline def setAudioPackingModeUndefined: Self = StObject.set(x, "audioPackingMode", js.undefined)
       
-      @scala.inline
-      def setBitRate(value: Input[String]): Self = StObject.set(x, "bitRate", value.asInstanceOf[js.Any])
+      inline def setBitRate(value: Input[String]): Self = StObject.set(x, "bitRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitRateUndefined: Self = StObject.set(x, "bitRate", js.undefined)
+      inline def setBitRateUndefined: Self = StObject.set(x, "bitRate", js.undefined)
       
-      @scala.inline
-      def setChannels(value: Input[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: Input[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      @scala.inline
-      def setCodec(value: Input[String]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+      inline def setCodec(value: Input[String]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+      inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Input[String]): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Input[String]): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
   
@@ -336,38 +284,28 @@ object elastictranscoder {
   }
   object PresetAudioCodecOptions {
     
-    @scala.inline
-    def apply(): PresetAudioCodecOptions = {
+    inline def apply(): PresetAudioCodecOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresetAudioCodecOptions]
     }
     
-    @scala.inline
-    implicit class PresetAudioCodecOptionsMutableBuilder[Self <: PresetAudioCodecOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PresetAudioCodecOptions](x: Self) {
       
-      @scala.inline
-      def setBitDepth(value: Input[String]): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
+      inline def setBitDepth(value: Input[String]): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitDepthUndefined: Self = StObject.set(x, "bitDepth", js.undefined)
+      inline def setBitDepthUndefined: Self = StObject.set(x, "bitDepth", js.undefined)
       
-      @scala.inline
-      def setBitOrder(value: Input[String]): Self = StObject.set(x, "bitOrder", value.asInstanceOf[js.Any])
+      inline def setBitOrder(value: Input[String]): Self = StObject.set(x, "bitOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitOrderUndefined: Self = StObject.set(x, "bitOrder", js.undefined)
+      inline def setBitOrderUndefined: Self = StObject.set(x, "bitOrder", js.undefined)
       
-      @scala.inline
-      def setProfile(value: Input[String]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Input[String]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setSigned(value: Input[String]): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Input[String]): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
     }
   }
   
@@ -415,62 +353,44 @@ object elastictranscoder {
   }
   object PresetThumbnails {
     
-    @scala.inline
-    def apply(): PresetThumbnails = {
+    inline def apply(): PresetThumbnails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresetThumbnails]
     }
     
-    @scala.inline
-    implicit class PresetThumbnailsMutableBuilder[Self <: PresetThumbnails] (val x: Self) extends AnyVal {
+    extension [Self <: PresetThumbnails](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: Input[String]): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: Input[String]): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Input[String]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Input[String]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Input[String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Input[String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Input[String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Input[String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setPaddingPolicy(value: Input[String]): Self = StObject.set(x, "paddingPolicy", value.asInstanceOf[js.Any])
+      inline def setPaddingPolicy(value: Input[String]): Self = StObject.set(x, "paddingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingPolicyUndefined: Self = StObject.set(x, "paddingPolicy", js.undefined)
+      inline def setPaddingPolicyUndefined: Self = StObject.set(x, "paddingPolicy", js.undefined)
       
-      @scala.inline
-      def setResolution(value: Input[String]): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Input[String]): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
       
-      @scala.inline
-      def setSizingPolicy(value: Input[String]): Self = StObject.set(x, "sizingPolicy", value.asInstanceOf[js.Any])
+      inline def setSizingPolicy(value: Input[String]): Self = StObject.set(x, "sizingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizingPolicyUndefined: Self = StObject.set(x, "sizingPolicy", js.undefined)
+      inline def setSizingPolicyUndefined: Self = StObject.set(x, "sizingPolicy", js.undefined)
     }
   }
   
@@ -543,92 +463,64 @@ object elastictranscoder {
   }
   object PresetVideo {
     
-    @scala.inline
-    def apply(): PresetVideo = {
+    inline def apply(): PresetVideo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresetVideo]
     }
     
-    @scala.inline
-    implicit class PresetVideoMutableBuilder[Self <: PresetVideo] (val x: Self) extends AnyVal {
+    extension [Self <: PresetVideo](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: Input[String]): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: Input[String]): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
-      @scala.inline
-      def setBitRate(value: Input[String]): Self = StObject.set(x, "bitRate", value.asInstanceOf[js.Any])
+      inline def setBitRate(value: Input[String]): Self = StObject.set(x, "bitRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitRateUndefined: Self = StObject.set(x, "bitRate", js.undefined)
+      inline def setBitRateUndefined: Self = StObject.set(x, "bitRate", js.undefined)
       
-      @scala.inline
-      def setCodec(value: Input[String]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+      inline def setCodec(value: Input[String]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+      inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
       
-      @scala.inline
-      def setDisplayAspectRatio(value: Input[String]): Self = StObject.set(x, "displayAspectRatio", value.asInstanceOf[js.Any])
+      inline def setDisplayAspectRatio(value: Input[String]): Self = StObject.set(x, "displayAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayAspectRatioUndefined: Self = StObject.set(x, "displayAspectRatio", js.undefined)
+      inline def setDisplayAspectRatioUndefined: Self = StObject.set(x, "displayAspectRatio", js.undefined)
       
-      @scala.inline
-      def setFixedGop(value: Input[String]): Self = StObject.set(x, "fixedGop", value.asInstanceOf[js.Any])
+      inline def setFixedGop(value: Input[String]): Self = StObject.set(x, "fixedGop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedGopUndefined: Self = StObject.set(x, "fixedGop", js.undefined)
+      inline def setFixedGopUndefined: Self = StObject.set(x, "fixedGop", js.undefined)
       
-      @scala.inline
-      def setFrameRate(value: Input[String]): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+      inline def setFrameRate(value: Input[String]): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+      inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
       
-      @scala.inline
-      def setKeyframesMaxDist(value: Input[String]): Self = StObject.set(x, "keyframesMaxDist", value.asInstanceOf[js.Any])
+      inline def setKeyframesMaxDist(value: Input[String]): Self = StObject.set(x, "keyframesMaxDist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframesMaxDistUndefined: Self = StObject.set(x, "keyframesMaxDist", js.undefined)
+      inline def setKeyframesMaxDistUndefined: Self = StObject.set(x, "keyframesMaxDist", js.undefined)
       
-      @scala.inline
-      def setMaxFrameRate(value: Input[String]): Self = StObject.set(x, "maxFrameRate", value.asInstanceOf[js.Any])
+      inline def setMaxFrameRate(value: Input[String]): Self = StObject.set(x, "maxFrameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFrameRateUndefined: Self = StObject.set(x, "maxFrameRate", js.undefined)
+      inline def setMaxFrameRateUndefined: Self = StObject.set(x, "maxFrameRate", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Input[String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Input[String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Input[String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Input[String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setPaddingPolicy(value: Input[String]): Self = StObject.set(x, "paddingPolicy", value.asInstanceOf[js.Any])
+      inline def setPaddingPolicy(value: Input[String]): Self = StObject.set(x, "paddingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingPolicyUndefined: Self = StObject.set(x, "paddingPolicy", js.undefined)
+      inline def setPaddingPolicyUndefined: Self = StObject.set(x, "paddingPolicy", js.undefined)
       
-      @scala.inline
-      def setResolution(value: Input[String]): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Input[String]): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
       
-      @scala.inline
-      def setSizingPolicy(value: Input[String]): Self = StObject.set(x, "sizingPolicy", value.asInstanceOf[js.Any])
+      inline def setSizingPolicy(value: Input[String]): Self = StObject.set(x, "sizingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizingPolicyUndefined: Self = StObject.set(x, "sizingPolicy", js.undefined)
+      inline def setSizingPolicyUndefined: Self = StObject.set(x, "sizingPolicy", js.undefined)
     }
   }
   
@@ -686,74 +578,52 @@ object elastictranscoder {
   }
   object PresetVideoWatermark {
     
-    @scala.inline
-    def apply(): PresetVideoWatermark = {
+    inline def apply(): PresetVideoWatermark = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresetVideoWatermark]
     }
     
-    @scala.inline
-    implicit class PresetVideoWatermarkMutableBuilder[Self <: PresetVideoWatermark] (val x: Self) extends AnyVal {
+    extension [Self <: PresetVideoWatermark](x: Self) {
       
-      @scala.inline
-      def setHorizontalAlign(value: Input[String]): Self = StObject.set(x, "horizontalAlign", value.asInstanceOf[js.Any])
+      inline def setHorizontalAlign(value: Input[String]): Self = StObject.set(x, "horizontalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
+      inline def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
       
-      @scala.inline
-      def setHorizontalOffset(value: Input[String]): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
+      inline def setHorizontalOffset(value: Input[String]): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
+      inline def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
       
-      @scala.inline
-      def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Input[String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Input[String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Input[String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Input[String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Input[String]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Input[String]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setSizingPolicy(value: Input[String]): Self = StObject.set(x, "sizingPolicy", value.asInstanceOf[js.Any])
+      inline def setSizingPolicy(value: Input[String]): Self = StObject.set(x, "sizingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizingPolicyUndefined: Self = StObject.set(x, "sizingPolicy", js.undefined)
+      inline def setSizingPolicyUndefined: Self = StObject.set(x, "sizingPolicy", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Input[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Input[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: Input[String]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: Input[String]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      @scala.inline
-      def setVerticalOffset(value: Input[String]): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+      inline def setVerticalOffset(value: Input[String]): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
+      inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
     }
   }
 }

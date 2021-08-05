@@ -36,8 +36,7 @@ trait ASPxAppointmentType extends StObject {
 }
 object ASPxAppointmentType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangedOccurrence: String,
     DeletedOccurrence: String,
     Normal: String,
@@ -48,22 +47,16 @@ object ASPxAppointmentType {
     __obj.asInstanceOf[ASPxAppointmentType]
   }
   
-  @scala.inline
-  implicit class ASPxAppointmentTypeMutableBuilder[Self <: ASPxAppointmentType] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxAppointmentType](x: Self) {
     
-    @scala.inline
-    def setChangedOccurrence(value: String): Self = StObject.set(x, "ChangedOccurrence", value.asInstanceOf[js.Any])
+    inline def setChangedOccurrence(value: String): Self = StObject.set(x, "ChangedOccurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedOccurrence(value: String): Self = StObject.set(x, "DeletedOccurrence", value.asInstanceOf[js.Any])
+    inline def setDeletedOccurrence(value: String): Self = StObject.set(x, "DeletedOccurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: String): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: String): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrence(value: String): Self = StObject.set(x, "Occurrence", value.asInstanceOf[js.Any])
+    inline def setOccurrence(value: String): Self = StObject.set(x, "Occurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
   }
 }

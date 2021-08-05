@@ -36,8 +36,7 @@ object polyMod {
     @JSImport("googleapis/build/src/apis/poly", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Poly] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Poly]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Poly]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
   object auth extends Shortcut {
@@ -73,8 +72,7 @@ object polyMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -118,9 +116,7 @@ object polyMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def poly(options: Options): Poly = ^.asInstanceOf[js.Dynamic].applyDynamic("poly")(options.asInstanceOf[js.Any]).asInstanceOf[Poly]
+  inline def poly(options: Options): Poly = ^.asInstanceOf[js.Dynamic].applyDynamic("poly")(options.asInstanceOf[js.Any]).asInstanceOf[Poly]
   
-  @scala.inline
-  def poly_v1(version: v1): Poly = ^.asInstanceOf[js.Dynamic].applyDynamic("poly")(version.asInstanceOf[js.Any]).asInstanceOf[Poly]
+  inline def poly_v1(version: v1): Poly = ^.asInstanceOf[js.Dynamic].applyDynamic("poly")(version.asInstanceOf[js.Any]).asInstanceOf[Poly]
 }

@@ -11,21 +11,18 @@ object scalesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def modularScale(ratio: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def modularScale(ratio: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<typeof defaultSteps, number> * / any ]: string}
     */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<typeof defaultSteps, number> * / any ]: string}
     */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any]]
-  @scala.inline
-  def modularScale[T /* <: Double */](ratio: Double, steps: js.Array[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def modularScale[T /* <: Double */](ratio: Double, steps: js.Array[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in T ]: string}
     */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in T ]: string}
     */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any]]
   
-  @scala.inline
-  def symmetricScale[T /* <: String | Double */](
+  inline def symmetricScale[T /* <: String | Double */](
     nonNegativeTokens: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T ]: string | number}
     */ typings.glaze.glazeStrings.symmetricScale & TopLevel[js.Any]

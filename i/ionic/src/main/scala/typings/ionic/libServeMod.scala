@@ -89,7 +89,7 @@ object libServeMod {
   abstract class ServeCLI[T /* <: ServeCLIOptions */] protected () extends EventEmitter {
     def this(e: ServeRunnerDeps) = this()
     
-    var _resolvedProgram: js.Any = js.native
+    /* private */ var _resolvedProgram: js.Any = js.native
     
     /**
       * Build the arguments for starting this Serve CLI. Called by `this.start()`.
@@ -105,7 +105,7 @@ object libServeMod {
     
     /* protected */ def createStreamFilter(filter: js.Function1[/* line */ String, Boolean]): Transform = js.native
     
-    val e: ServeRunnerDeps = js.native
+    /* protected */ val e: ServeRunnerDeps = js.native
     
     @JSName("emit")
     def emit_compile(event: compile, chunks: Double): Boolean = js.native
@@ -201,11 +201,11 @@ object libServeMod {
     
     def determineEngineFromCommandLine(options: CommandLineOptions): String = js.native
     
-    var devAppConnectionMade: Boolean = js.native
+    /* protected */ var devAppConnectionMade: Boolean = js.native
     
     def displayDevAppMessage(options: T): js.Promise[Unit] = js.native
     
-    val e: ServeRunnerDeps = js.native
+    /* protected */ val e: ServeRunnerDeps = js.native
     
     def gatherDevAppDetails(options: T, details: ServeDetails): js.Promise[js.UndefOr[DevAppDetails]] = js.native
     
@@ -255,20 +255,16 @@ object libServeMod {
   }
   object ServeCLIOptions {
     
-    @scala.inline
-    def apply(address: String, port: Double): ServeCLIOptions = {
+    inline def apply(address: String, port: Double): ServeCLIOptions = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServeCLIOptions]
     }
     
-    @scala.inline
-    implicit class ServeCLIOptionsMutableBuilder[Self <: ServeCLIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServeCLIOptions](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,8 +288,7 @@ object libServeMod {
   }
   object ServeRunnerDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: IConfig,
       flags: IonicEnvironmentFlags,
       log: ILogger,
@@ -305,26 +300,19 @@ object libServeMod {
       __obj.asInstanceOf[ServeRunnerDeps]
     }
     
-    @scala.inline
-    implicit class ServeRunnerDepsMutableBuilder[Self <: ServeRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: ServeRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
 }

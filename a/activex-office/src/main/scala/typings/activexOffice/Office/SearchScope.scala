@@ -10,7 +10,7 @@ trait SearchScope extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.SearchScope_typekey")
+  /* private */ @JSName("Office.SearchScope_typekey")
   var OfficeDotSearchScope_typekey: SearchScope
   
   val ScopeFolder: typings.activexOffice.Office.ScopeFolder
@@ -19,8 +19,7 @@ trait SearchScope extends StObject {
 }
 object SearchScope {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     OfficeDotSearchScope_typekey: SearchScope,
@@ -32,22 +31,16 @@ object SearchScope {
     __obj.asInstanceOf[SearchScope]
   }
   
-  @scala.inline
-  implicit class SearchScopeMutableBuilder[Self <: SearchScope] (val x: Self) extends AnyVal {
+  extension [Self <: SearchScope](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotSearchScope_typekey(value: SearchScope): Self = StObject.set(x, "Office.SearchScope_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotSearchScope_typekey(value: SearchScope): Self = StObject.set(x, "Office.SearchScope_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeFolder(value: ScopeFolder): Self = StObject.set(x, "ScopeFolder", value.asInstanceOf[js.Any])
+    inline def setScopeFolder(value: ScopeFolder): Self = StObject.set(x, "ScopeFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoSearchIn): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoSearchIn): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

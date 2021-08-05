@@ -29,8 +29,7 @@ trait TypeoffileBrowserHandler extends StObject {
 }
 object TypeoffileBrowserHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onExecute: Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]],
     selectFile: (SelectFileParameters, js.Function1[/* result */ SelectionResult, Unit]) => Unit
   ): TypeoffileBrowserHandler = {
@@ -38,13 +37,10 @@ object TypeoffileBrowserHandler {
     __obj.asInstanceOf[TypeoffileBrowserHandler]
   }
   
-  @scala.inline
-  implicit class TypeoffileBrowserHandlerMutableBuilder[Self <: TypeoffileBrowserHandler] (val x: Self) extends AnyVal {
+  extension [Self <: TypeoffileBrowserHandler](x: Self) {
     
-    @scala.inline
-    def setOnExecute(value: Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]]): Self = StObject.set(x, "onExecute", value.asInstanceOf[js.Any])
+    inline def setOnExecute(value: Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]]): Self = StObject.set(x, "onExecute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectFile(value: (SelectFileParameters, js.Function1[/* result */ SelectionResult, Unit]) => Unit): Self = StObject.set(x, "selectFile", js.Any.fromFunction2(value))
+    inline def setSelectFile(value: (SelectFileParameters, js.Function1[/* result */ SelectionResult, Unit]) => Unit): Self = StObject.set(x, "selectFile", js.Any.fromFunction2(value))
   }
 }

@@ -15,8 +15,7 @@ object mysqlPubMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/mysql.pub", "mysql")
   @js.native
@@ -36,29 +35,22 @@ object mysqlPubMod {
   }
   object IMysqlData {
     
-    @scala.inline
-    def apply(callbackArgs: IArguments, duration: Double, err: Error, query: Connection, time: Date): IMysqlData = {
+    inline def apply(callbackArgs: IArguments, duration: Double, err: Error, query: Connection, time: Date): IMysqlData = {
       val __obj = js.Dynamic.literal(callbackArgs = callbackArgs.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMysqlData]
     }
     
-    @scala.inline
-    implicit class IMysqlDataMutableBuilder[Self <: IMysqlData] (val x: Self) extends AnyVal {
+    extension [Self <: IMysqlData](x: Self) {
       
-      @scala.inline
-      def setCallbackArgs(value: IArguments): Self = StObject.set(x, "callbackArgs", value.asInstanceOf[js.Any])
+      inline def setCallbackArgs(value: IArguments): Self = StObject.set(x, "callbackArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: Connection): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Connection): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

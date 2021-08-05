@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PULLUP_STATE extends StObject
 object PULLUP_STATE {
   
-  @scala.inline
-  def DISABLED: `0` = 0.asInstanceOf[`0`]
+  inline def DISABLED: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ENABLED: `1` = 1.asInstanceOf[`1`]
+  inline def ENABLED: `1` = 1.asInstanceOf[`1`]
 }

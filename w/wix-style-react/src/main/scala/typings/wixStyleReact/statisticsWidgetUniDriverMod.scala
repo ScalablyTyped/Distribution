@@ -32,8 +32,7 @@ object statisticsWidgetUniDriverMod {
   }
   object StatisticsWidgetUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickStatistics: Double => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -51,35 +50,25 @@ object statisticsWidgetUniDriverMod {
       __obj.asInstanceOf[StatisticsWidgetUniDriver]
     }
     
-    @scala.inline
-    implicit class StatisticsWidgetUniDriverMutableBuilder[Self <: StatisticsWidgetUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: StatisticsWidgetUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickStatistics(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickStatistics", js.Any.fromFunction1(value))
+      inline def setClickStatistics(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickStatistics", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetChildren(value: (Double, String) => UniDriver[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction2(value))
+      inline def setGetChildren(value: (Double, String) => UniDriver[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDescription(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
+      inline def setGetDescription(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDescriptionInfo(value: Double => js.Promise[String]): Self = StObject.set(x, "getDescriptionInfo", js.Any.fromFunction1(value))
+      inline def setGetDescriptionInfo(value: Double => js.Promise[String]): Self = StObject.set(x, "getDescriptionInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemsCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getItemsCount", js.Any.fromFunction0(value))
+      inline def setGetItemsCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getItemsCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPercentage(value: Double => js.Promise[Double | Null]): Self = StObject.set(x, "getPercentage", js.Any.fromFunction1(value))
+      inline def setGetPercentage(value: Double => js.Promise[Double | Null]): Self = StObject.set(x, "getPercentage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValue(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueInShort(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "getValueInShort", js.Any.fromFunction1(value))
+      inline def setGetValueInShort(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "getValueInShort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsPercentageInverted(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isPercentageInverted", js.Any.fromFunction1(value))
+      inline def setIsPercentageInverted(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isPercentageInverted", js.Any.fromFunction1(value))
     }
   }
 }

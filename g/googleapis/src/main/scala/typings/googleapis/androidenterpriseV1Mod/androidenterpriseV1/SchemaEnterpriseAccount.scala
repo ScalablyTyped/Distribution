@@ -23,25 +23,19 @@ trait SchemaEnterpriseAccount extends StObject {
 }
 object SchemaEnterpriseAccount {
   
-  @scala.inline
-  def apply(): SchemaEnterpriseAccount = {
+  inline def apply(): SchemaEnterpriseAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnterpriseAccount]
   }
   
-  @scala.inline
-  implicit class SchemaEnterpriseAccountMutableBuilder[Self <: SchemaEnterpriseAccount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnterpriseAccount](x: Self) {
     
-    @scala.inline
-    def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
+    inline def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
+    inline def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

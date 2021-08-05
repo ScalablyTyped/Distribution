@@ -28,37 +28,27 @@ trait EbsInstanceBlockDevice extends StObject {
 }
 object EbsInstanceBlockDevice {
   
-  @scala.inline
-  def apply(): EbsInstanceBlockDevice = {
+  inline def apply(): EbsInstanceBlockDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EbsInstanceBlockDevice]
   }
   
-  @scala.inline
-  implicit class EbsInstanceBlockDeviceMutableBuilder[Self <: EbsInstanceBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: EbsInstanceBlockDevice](x: Self) {
     
-    @scala.inline
-    def setAttachTime(value: DateTime): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
+    inline def setAttachTime(value: DateTime): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
+    inline def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
     
-    @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AttachmentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AttachmentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
   }
 }

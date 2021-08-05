@@ -13,8 +13,6 @@ object getBoundingClientRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: VirtualElement): ClientRectObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[ClientRectObject]
-  @scala.inline
-  def default(element: Element): ClientRectObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[ClientRectObject]
+  inline def default(element: VirtualElement): ClientRectObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[ClientRectObject]
+  inline def default(element: Element): ClientRectObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[ClientRectObject]
 }

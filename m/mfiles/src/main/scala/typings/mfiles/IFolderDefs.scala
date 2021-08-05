@@ -18,8 +18,7 @@ trait IFolderDefs extends StObject {
 }
 object IFolderDefs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, IFolderDef) => Unit,
     Clone: () => IFolderDefs,
     Count: Double,
@@ -30,22 +29,16 @@ object IFolderDefs {
     __obj.asInstanceOf[IFolderDefs]
   }
   
-  @scala.inline
-  implicit class IFolderDefsMutableBuilder[Self <: IFolderDefs] (val x: Self) extends AnyVal {
+  extension [Self <: IFolderDefs](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, IFolderDef) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, IFolderDef) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClone(value: () => IFolderDefs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IFolderDefs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IFolderDef): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IFolderDef): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

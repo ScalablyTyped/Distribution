@@ -10,21 +10,17 @@ object throttleTimeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def throttleTime[T](duration: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleTime")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def throttleTime[T](
+  inline def throttleTime[T](duration: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleTime")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def throttleTime[T](
     duration: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleTime")(duration.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def throttleTime[T](
+  inline def throttleTime[T](
     duration: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any,
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleTime")(duration.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def throttleTime[T](
+  inline def throttleTime[T](
     duration: Double,
     scheduler: Unit,
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any

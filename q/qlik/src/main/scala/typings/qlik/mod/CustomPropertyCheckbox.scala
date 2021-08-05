@@ -17,23 +17,18 @@ trait CustomPropertyCheckbox
 }
 object CustomPropertyCheckbox {
   
-  @scala.inline
-  def apply(): CustomPropertyCheckbox = {
+  inline def apply(): CustomPropertyCheckbox = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[CustomPropertyCheckbox]
   }
   
-  @scala.inline
-  implicit class CustomPropertyCheckboxMutableBuilder[Self <: CustomPropertyCheckbox] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyCheckbox](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -26,55 +26,39 @@ trait PatchInstanceFilter extends StObject {
 }
 object PatchInstanceFilter {
   
-  @scala.inline
-  def apply(): PatchInstanceFilter = {
+  inline def apply(): PatchInstanceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchInstanceFilter]
   }
   
-  @scala.inline
-  implicit class PatchInstanceFilterMutableBuilder[Self <: PatchInstanceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PatchInstanceFilter](x: Self) {
     
-    @scala.inline
-    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setGroupLabels(value: js.Array[PatchInstanceFilterGroupLabel]): Self = StObject.set(x, "groupLabels", value.asInstanceOf[js.Any])
+    inline def setGroupLabels(value: js.Array[PatchInstanceFilterGroupLabel]): Self = StObject.set(x, "groupLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupLabelsUndefined: Self = StObject.set(x, "groupLabels", js.undefined)
+    inline def setGroupLabelsUndefined: Self = StObject.set(x, "groupLabels", js.undefined)
     
-    @scala.inline
-    def setGroupLabelsVarargs(value: PatchInstanceFilterGroupLabel*): Self = StObject.set(x, "groupLabels", js.Array(value :_*))
+    inline def setGroupLabelsVarargs(value: PatchInstanceFilterGroupLabel*): Self = StObject.set(x, "groupLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceNamePrefixes(value: js.Array[String]): Self = StObject.set(x, "instanceNamePrefixes", value.asInstanceOf[js.Any])
+    inline def setInstanceNamePrefixes(value: js.Array[String]): Self = StObject.set(x, "instanceNamePrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNamePrefixesUndefined: Self = StObject.set(x, "instanceNamePrefixes", js.undefined)
+    inline def setInstanceNamePrefixesUndefined: Self = StObject.set(x, "instanceNamePrefixes", js.undefined)
     
-    @scala.inline
-    def setInstanceNamePrefixesVarargs(value: String*): Self = StObject.set(x, "instanceNamePrefixes", js.Array(value :_*))
+    inline def setInstanceNamePrefixesVarargs(value: String*): Self = StObject.set(x, "instanceNamePrefixes", js.Array(value :_*))
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    @scala.inline
-    def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

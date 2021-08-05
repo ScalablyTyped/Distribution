@@ -17,6 +17,5 @@ object RepeatStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(source: typings.wonderFrp.streamMod.Stream, count: Double): typings.wonderFrp.repeatStreamMod.RepeatStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.repeatStreamMod.RepeatStream]
+  inline def create(source: typings.wonderFrp.streamMod.Stream, count: Double): typings.wonderFrp.repeatStreamMod.RepeatStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.repeatStreamMod.RepeatStream]
 }

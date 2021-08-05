@@ -31,8 +31,7 @@ trait ocrIdCardResponse extends StObject {
 }
 object ocrIdCardResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: Double,
     edit_tool: String,
     image_status: String,
@@ -46,29 +45,21 @@ object ocrIdCardResponse {
     __obj.asInstanceOf[ocrIdCardResponse]
   }
   
-  @scala.inline
-  implicit class ocrIdCardResponseMutableBuilder[Self <: ocrIdCardResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ocrIdCardResponse](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit_tool(value: String): Self = StObject.set(x, "edit_tool", value.asInstanceOf[js.Any])
+    inline def setEdit_tool(value: String): Self = StObject.set(x, "edit_tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage_status(value: String): Self = StObject.set(x, "image_status", value.asInstanceOf[js.Any])
+    inline def setImage_status(value: String): Self = StObject.set(x, "image_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRisk_type(value: String): Self = StObject.set(x, "risk_type", value.asInstanceOf[js.Any])
+    inline def setRisk_type(value: String): Self = StObject.set(x, "risk_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords_result(value: // 定位和识别结果
+    inline def setWords_result(value: // 定位和识别结果
     StringDictionary[Location]): Self = StObject.set(x, "words_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords_result_num(value: Double): Self = StObject.set(x, "words_result_num", value.asInstanceOf[js.Any])
+    inline def setWords_result_num(value: Double): Self = StObject.set(x, "words_result_num", value.asInstanceOf[js.Any])
   }
 }

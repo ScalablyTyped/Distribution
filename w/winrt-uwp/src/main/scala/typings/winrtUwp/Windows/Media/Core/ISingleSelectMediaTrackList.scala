@@ -12,16 +12,13 @@ trait ISingleSelectMediaTrackList extends StObject {
 }
 object ISingleSelectMediaTrackList {
   
-  @scala.inline
-  def apply(selectedIndex: Double): ISingleSelectMediaTrackList = {
+  inline def apply(selectedIndex: Double): ISingleSelectMediaTrackList = {
     val __obj = js.Dynamic.literal(selectedIndex = selectedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISingleSelectMediaTrackList]
   }
   
-  @scala.inline
-  implicit class ISingleSelectMediaTrackListMutableBuilder[Self <: ISingleSelectMediaTrackList] (val x: Self) extends AnyVal {
+  extension [Self <: ISingleSelectMediaTrackList](x: Self) {
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
   }
 }

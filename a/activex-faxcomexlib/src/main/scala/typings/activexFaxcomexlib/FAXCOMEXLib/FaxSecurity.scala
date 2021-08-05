@@ -10,7 +10,7 @@ trait FaxSecurity extends StObject {
   /** Security descriptor */
   var Descriptor: js.Any
   
-  @JSName("FAXCOMEXLib.FaxSecurity_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxSecurity_typekey")
   var FAXCOMEXLibDotFaxSecurity_typekey: FaxSecurity
   
   /** Granted rights, a bit-wise combination of FAX_ACCESS_RIGHTS values */
@@ -27,8 +27,7 @@ trait FaxSecurity extends StObject {
 }
 object FaxSecurity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Descriptor: js.Any,
     FAXCOMEXLibDotFaxSecurity_typekey: FaxSecurity,
     GrantedRights: FAX_ACCESS_RIGHTS_ENUM,
@@ -41,25 +40,18 @@ object FaxSecurity {
     __obj.asInstanceOf[FaxSecurity]
   }
   
-  @scala.inline
-  implicit class FaxSecurityMutableBuilder[Self <: FaxSecurity] (val x: Self) extends AnyVal {
+  extension [Self <: FaxSecurity](x: Self) {
     
-    @scala.inline
-    def setDescriptor(value: js.Any): Self = StObject.set(x, "Descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: js.Any): Self = StObject.set(x, "Descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxSecurity_typekey(value: FaxSecurity): Self = StObject.set(x, "FAXCOMEXLib.FaxSecurity_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxSecurity_typekey(value: FaxSecurity): Self = StObject.set(x, "FAXCOMEXLib.FaxSecurity_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantedRights(value: FAX_ACCESS_RIGHTS_ENUM): Self = StObject.set(x, "GrantedRights", value.asInstanceOf[js.Any])
+    inline def setGrantedRights(value: FAX_ACCESS_RIGHTS_ENUM): Self = StObject.set(x, "GrantedRights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInformationType(value: Double): Self = StObject.set(x, "InformationType", value.asInstanceOf[js.Any])
+    inline def setInformationType(value: Double): Self = StObject.set(x, "InformationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
   }
 }

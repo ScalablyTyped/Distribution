@@ -10,6 +10,5 @@ object errorFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

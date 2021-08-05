@@ -18,31 +18,23 @@ trait BatchGetProjectsOutput extends StObject {
 }
 object BatchGetProjectsOutput {
   
-  @scala.inline
-  def apply(): BatchGetProjectsOutput = {
+  inline def apply(): BatchGetProjectsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetProjectsOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetProjectsOutputMutableBuilder[Self <: BatchGetProjectsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetProjectsOutput](x: Self) {
     
-    @scala.inline
-    def setProjects(value: Projects): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: Projects): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectsNotFound(value: ProjectNames): Self = StObject.set(x, "projectsNotFound", value.asInstanceOf[js.Any])
+    inline def setProjectsNotFound(value: ProjectNames): Self = StObject.set(x, "projectsNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectsNotFoundUndefined: Self = StObject.set(x, "projectsNotFound", js.undefined)
+    inline def setProjectsNotFoundUndefined: Self = StObject.set(x, "projectsNotFound", js.undefined)
     
-    @scala.inline
-    def setProjectsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "projectsNotFound", js.Array(value :_*))
+    inline def setProjectsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "projectsNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+    inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    @scala.inline
-    def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

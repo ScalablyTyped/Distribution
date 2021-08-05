@@ -12,19 +12,15 @@ trait HtmlExport extends StObject {
 }
 object HtmlExport {
   
-  @scala.inline
-  def apply(design: Design, html: String): HtmlExport = {
+  inline def apply(design: Design, html: String): HtmlExport = {
     val __obj = js.Dynamic.literal(design = design.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlExport]
   }
   
-  @scala.inline
-  implicit class HtmlExportMutableBuilder[Self <: HtmlExport] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlExport](x: Self) {
     
-    @scala.inline
-    def setDesign(value: Design): Self = StObject.set(x, "design", value.asInstanceOf[js.Any])
+    inline def setDesign(value: Design): Self = StObject.set(x, "design", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait FancyBoxRefs extends StObject {
 }
 object FancyBoxRefs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bg: JQuery,
     caption: JQuery,
     container: JQuery,
@@ -39,31 +38,22 @@ object FancyBoxRefs {
     __obj.asInstanceOf[FancyBoxRefs]
   }
   
-  @scala.inline
-  implicit class FancyBoxRefsMutableBuilder[Self <: FancyBoxRefs] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxRefs](x: Self) {
     
-    @scala.inline
-    def setBg(value: JQuery): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+    inline def setBg(value: JQuery): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: JQuery): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: JQuery): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfobar(value: JQuery): Self = StObject.set(x, "infobar", value.asInstanceOf[js.Any])
+    inline def setInfobar(value: JQuery): Self = StObject.set(x, "infobar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInner(value: JQuery): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
+    inline def setInner(value: JQuery): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: JQuery): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: JQuery): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: JQuery): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: JQuery): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbar(value: JQuery): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: JQuery): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
   }
 }

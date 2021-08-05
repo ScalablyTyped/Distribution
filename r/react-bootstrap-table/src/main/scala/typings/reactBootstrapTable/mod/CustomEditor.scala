@@ -27,8 +27,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] 
 }
 object CustomEditor {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
+  inline def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
     getElement: (js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       Unit
@@ -38,17 +37,13 @@ object CustomEditor {
     __obj.asInstanceOf[CustomEditor[TRow, K]]
   }
   
-  @scala.inline
-  implicit class CustomEditorMutableBuilder[Self <: CustomEditor[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self & (CustomEditor[TRow, K])) extends AnyVal {
+  extension [Self <: CustomEditor[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](x: Self & (CustomEditor[TRow, K])) {
     
-    @scala.inline
-    def setCustomEditorParameters(value: js.Object): Self = StObject.set(x, "customEditorParameters", value.asInstanceOf[js.Any])
+    inline def setCustomEditorParameters(value: js.Object): Self = StObject.set(x, "customEditorParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEditorParametersUndefined: Self = StObject.set(x, "customEditorParameters", js.undefined)
+    inline def setCustomEditorParametersUndefined: Self = StObject.set(x, "customEditorParameters", js.undefined)
     
-    @scala.inline
-    def setGetElement(
+    inline def setGetElement(
       value: (js.Function1[
           /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
           Unit

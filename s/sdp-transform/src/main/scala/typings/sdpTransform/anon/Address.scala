@@ -20,8 +20,7 @@ trait Address extends StObject {
 }
 object Address {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     ipVer: Double,
     netType: String,
@@ -33,25 +32,18 @@ object Address {
     __obj.asInstanceOf[Address]
   }
   
-  @scala.inline
-  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+  extension [Self <: Address](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpVer(value: Double): Self = StObject.set(x, "ipVer", value.asInstanceOf[js.Any])
+    inline def setIpVer(value: Double): Self = StObject.set(x, "ipVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
+    inline def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String | Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String | Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionVersion(value: Double): Self = StObject.set(x, "sessionVersion", value.asInstanceOf[js.Any])
+    inline def setSessionVersion(value: Double): Self = StObject.set(x, "sessionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

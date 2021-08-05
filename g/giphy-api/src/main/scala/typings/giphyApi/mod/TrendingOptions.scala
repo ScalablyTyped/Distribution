@@ -12,19 +12,15 @@ trait TrendingOptions
 }
 object TrendingOptions {
   
-  @scala.inline
-  def apply(rating: Rating): TrendingOptions = {
+  inline def apply(rating: Rating): TrendingOptions = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrendingOptions]
   }
   
-  @scala.inline
-  implicit class TrendingOptionsMutableBuilder[Self <: TrendingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TrendingOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

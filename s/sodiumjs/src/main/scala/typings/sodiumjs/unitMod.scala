@@ -19,7 +19,6 @@ object unitMod {
     @JSImport("sodiumjs/dist/typings/sodium/Unit", "Unit.UNIT")
     @js.native
     def UNIT: Unit = js.native
-    @scala.inline
-    def UNIT_=(x: Unit): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNIT")(x.asInstanceOf[js.Any])
+    inline def UNIT_=(x: Unit): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNIT")(x.asInstanceOf[js.Any])
   }
 }

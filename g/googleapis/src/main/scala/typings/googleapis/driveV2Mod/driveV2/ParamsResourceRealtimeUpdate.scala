@@ -39,37 +39,27 @@ trait ParamsResourceRealtimeUpdate
 }
 object ParamsResourceRealtimeUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceRealtimeUpdate = {
+  inline def apply(): ParamsResourceRealtimeUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRealtimeUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRealtimeUpdateMutableBuilder[Self <: ParamsResourceRealtimeUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRealtimeUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBaseRevision(value: String): Self = StObject.set(x, "baseRevision", value.asInstanceOf[js.Any])
+    inline def setBaseRevision(value: String): Self = StObject.set(x, "baseRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseRevisionUndefined: Self = StObject.set(x, "baseRevision", js.undefined)
+    inline def setBaseRevisionUndefined: Self = StObject.set(x, "baseRevision", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

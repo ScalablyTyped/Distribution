@@ -18,25 +18,19 @@ trait ListHyperParameterTuningJobsResponse extends StObject {
 }
 object ListHyperParameterTuningJobsResponse {
   
-  @scala.inline
-  def apply(HyperParameterTuningJobSummaries: HyperParameterTuningJobSummaries): ListHyperParameterTuningJobsResponse = {
+  inline def apply(HyperParameterTuningJobSummaries: HyperParameterTuningJobSummaries): ListHyperParameterTuningJobsResponse = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobSummaries = HyperParameterTuningJobSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHyperParameterTuningJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListHyperParameterTuningJobsResponseMutableBuilder[Self <: ListHyperParameterTuningJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHyperParameterTuningJobsResponse](x: Self) {
     
-    @scala.inline
-    def setHyperParameterTuningJobSummaries(value: HyperParameterTuningJobSummaries): Self = StObject.set(x, "HyperParameterTuningJobSummaries", value.asInstanceOf[js.Any])
+    inline def setHyperParameterTuningJobSummaries(value: HyperParameterTuningJobSummaries): Self = StObject.set(x, "HyperParameterTuningJobSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperParameterTuningJobSummariesVarargs(value: HyperParameterTuningJobSummary*): Self = StObject.set(x, "HyperParameterTuningJobSummaries", js.Array(value :_*))
+    inline def setHyperParameterTuningJobSummariesVarargs(value: HyperParameterTuningJobSummary*): Self = StObject.set(x, "HyperParameterTuningJobSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -16,16 +16,13 @@ trait IFileDownloadLink extends StObject {
 }
 object IFileDownloadLink {
   
-  @scala.inline
-  def apply(location: String): IFileDownloadLink = {
+  inline def apply(location: String): IFileDownloadLink = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDownloadLink]
   }
   
-  @scala.inline
-  implicit class IFileDownloadLinkMutableBuilder[Self <: IFileDownloadLink] (val x: Self) extends AnyVal {
+  extension [Self <: IFileDownloadLink](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

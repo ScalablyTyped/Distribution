@@ -147,10 +147,8 @@ object asyncHooksMod {
       * @param type An optional name to associate with the underlying `AsyncResource`.
       */
     /* static member */
-    @scala.inline
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func): Func & typings.node.anon.AsyncResource = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func & typings.node.anon.AsyncResource]
-    @scala.inline
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func, `type`: java.lang.String): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    inline def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func): Func & typings.node.anon.AsyncResource = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    inline def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func, `type`: java.lang.String): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
   }
   
   /**
@@ -158,14 +156,12 @@ object asyncHooksMod {
     * @param options the callbacks to register
     * @return an AsyncHooks instance used for disabling and enabling hooks
     */
-  @scala.inline
-  def createHook(options: HookCallbacks): AsyncHook = ^.asInstanceOf[js.Dynamic].applyDynamic("createHook")(options.asInstanceOf[js.Any]).asInstanceOf[AsyncHook]
+  inline def createHook(options: HookCallbacks): AsyncHook = ^.asInstanceOf[js.Dynamic].applyDynamic("createHook")(options.asInstanceOf[js.Any]).asInstanceOf[AsyncHook]
   
   /**
     * Returns the asyncId of the current execution context.
     */
-  @scala.inline
-  def executionAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncId")().asInstanceOf[Double]
+  inline def executionAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncId")().asInstanceOf[Double]
   
   /**
     * The resource representing the current execution.
@@ -179,14 +175,12 @@ object asyncHooksMod {
     * return an empty object as there is no handle or request object to use,
     * but having an object representing the top-level can be helpful.
     */
-  @scala.inline
-  def executionAsyncResource(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncResource")().asInstanceOf[js.Object]
+  inline def executionAsyncResource(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncResource")().asInstanceOf[js.Object]
   
   /**
     * Returns the ID of the resource responsible for calling the callback that is currently being executed.
     */
-  @scala.inline
-  def triggerAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerAsyncId")().asInstanceOf[Double]
+  inline def triggerAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerAsyncId")().asInstanceOf[Double]
   
   trait AsyncHook extends StObject {
     
@@ -202,20 +196,16 @@ object asyncHooksMod {
   }
   object AsyncHook {
     
-    @scala.inline
-    def apply(disable: () => AsyncHook, enable: () => AsyncHook): AsyncHook = {
+    inline def apply(disable: () => AsyncHook, enable: () => AsyncHook): AsyncHook = {
       val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
       __obj.asInstanceOf[AsyncHook]
     }
     
-    @scala.inline
-    implicit class AsyncHookMutableBuilder[Self <: AsyncHook] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncHook](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => AsyncHook): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => AsyncHook): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => AsyncHook): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => AsyncHook): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     }
   }
   
@@ -238,26 +228,20 @@ object asyncHooksMod {
   }
   object AsyncResourceOptions {
     
-    @scala.inline
-    def apply(): AsyncResourceOptions = {
+    inline def apply(): AsyncResourceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncResourceOptions]
     }
     
-    @scala.inline
-    implicit class AsyncResourceOptionsMutableBuilder[Self <: AsyncResourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncResourceOptions](x: Self) {
       
-      @scala.inline
-      def setRequireManualDestroy(value: Boolean): Self = StObject.set(x, "requireManualDestroy", value.asInstanceOf[js.Any])
+      inline def setRequireManualDestroy(value: Boolean): Self = StObject.set(x, "requireManualDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireManualDestroyUndefined: Self = StObject.set(x, "requireManualDestroy", js.undefined)
+      inline def setRequireManualDestroyUndefined: Self = StObject.set(x, "requireManualDestroy", js.undefined)
       
-      @scala.inline
-      def setTriggerAsyncId(value: Double): Self = StObject.set(x, "triggerAsyncId", value.asInstanceOf[js.Any])
+      inline def setTriggerAsyncId(value: Double): Self = StObject.set(x, "triggerAsyncId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerAsyncIdUndefined: Self = StObject.set(x, "triggerAsyncId", js.undefined)
+      inline def setTriggerAsyncIdUndefined: Self = StObject.set(x, "triggerAsyncId", js.undefined)
     }
   }
   
@@ -308,46 +292,34 @@ object asyncHooksMod {
   }
   object HookCallbacks {
     
-    @scala.inline
-    def apply(): HookCallbacks = {
+    inline def apply(): HookCallbacks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HookCallbacks]
     }
     
-    @scala.inline
-    implicit class HookCallbacksMutableBuilder[Self <: HookCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: HookCallbacks](x: Self) {
       
-      @scala.inline
-      def setAfter(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+      inline def setAfter(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+      inline def setBefore(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setInit(
+      inline def setInit(
         value: (/* asyncId */ Double, /* type */ java.lang.String, /* triggerAsyncId */ Double, /* resource */ js.Object) => Unit
       ): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setPromiseResolve(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "promiseResolve", js.Any.fromFunction1(value))
+      inline def setPromiseResolve(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "promiseResolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPromiseResolveUndefined: Self = StObject.set(x, "promiseResolve", js.undefined)
+      inline def setPromiseResolveUndefined: Self = StObject.set(x, "promiseResolve", js.undefined)
     }
   }
 }

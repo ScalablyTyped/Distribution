@@ -21,21 +21,14 @@ object selectionParseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def materializeSelections(model: UnitModel, main: OutputNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("materializeSelections")(model.asInstanceOf[js.Any], main.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def materializeSelections(model: UnitModel, main: OutputNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("materializeSelections")(model.asInstanceOf[js.Any], main.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def parseSelectionBinExtent(selCmpt: SelectionComponent[SelectionType], extent: SelectionExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionBinExtent")(selCmpt.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionBinExtent(selCmpt: SelectionComponent[SelectionType], extent: SelectionExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionBinExtent")(selCmpt.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: Unit, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: Unit, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def parseUnitSelection(model: UnitModel, selDefs: Dict[SelectionDef]): Record[String, SelectionComponent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitSelection")(model.asInstanceOf[js.Any], selDefs.asInstanceOf[js.Any])).asInstanceOf[Record[String, SelectionComponent[js.Any]]]
+  inline def parseUnitSelection(model: UnitModel, selDefs: Dict[SelectionDef]): Record[String, SelectionComponent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitSelection")(model.asInstanceOf[js.Any], selDefs.asInstanceOf[js.Any])).asInstanceOf[Record[String, SelectionComponent[js.Any]]]
 }

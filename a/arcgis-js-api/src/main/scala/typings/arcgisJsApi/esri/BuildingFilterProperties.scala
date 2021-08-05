@@ -29,34 +29,25 @@ trait BuildingFilterProperties extends StObject {
 }
 object BuildingFilterProperties {
   
-  @scala.inline
-  def apply(): BuildingFilterProperties = {
+  inline def apply(): BuildingFilterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingFilterProperties]
   }
   
-  @scala.inline
-  implicit class BuildingFilterPropertiesMutableBuilder[Self <: BuildingFilterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingFilterProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFilterBlocks(value: CollectionProperties[BuildingFilterBlock]): Self = StObject.set(x, "filterBlocks", value.asInstanceOf[js.Any])
+    inline def setFilterBlocks(value: CollectionProperties[BuildingFilterBlock]): Self = StObject.set(x, "filterBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterBlocksUndefined: Self = StObject.set(x, "filterBlocks", js.undefined)
+    inline def setFilterBlocksUndefined: Self = StObject.set(x, "filterBlocks", js.undefined)
     
-    @scala.inline
-    def setFilterBlocksVarargs(value: BuildingFilterBlock*): Self = StObject.set(x, "filterBlocks", js.Array(value :_*))
+    inline def setFilterBlocksVarargs(value: BuildingFilterBlock*): Self = StObject.set(x, "filterBlocks", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

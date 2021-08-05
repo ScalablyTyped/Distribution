@@ -23,6 +23,5 @@ object BackgroundTaskRegistration {
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration.allTasks")
   @js.native
   def allTasks: IMapView[String, IBackgroundTaskRegistration] = js.native
-  @scala.inline
-  def allTasks_=(x: IMapView[String, IBackgroundTaskRegistration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allTasks")(x.asInstanceOf[js.Any])
+  inline def allTasks_=(x: IMapView[String, IBackgroundTaskRegistration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allTasks")(x.asInstanceOf[js.Any])
 }

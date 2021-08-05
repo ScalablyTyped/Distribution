@@ -16,37 +16,27 @@ trait Audiomuted extends StObject {
 }
 object Audiomuted {
   
-  @scala.inline
-  def apply(length: Double): Audiomuted = {
+  inline def apply(length: Double): Audiomuted = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audiomuted]
   }
   
-  @scala.inline
-  implicit class AudiomutedMutableBuilder[Self <: Audiomuted] (val x: Self) extends AnyVal {
+  extension [Self <: Audiomuted](x: Self) {
     
-    @scala.inline
-    def setAudio_muted(value: Boolean): Self = StObject.set(x, "audio_muted", value.asInstanceOf[js.Any])
+    inline def setAudio_muted(value: Boolean): Self = StObject.set(x, "audio_muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudio_mutedUndefined: Self = StObject.set(x, "audio_muted", js.undefined)
+    inline def setAudio_mutedUndefined: Self = StObject.set(x, "audio_muted", js.undefined)
     
-    @scala.inline
-    def setClips(value: js.Array[Length]): Self = StObject.set(x, "clips", value.asInstanceOf[js.Any])
+    inline def setClips(value: js.Array[Length]): Self = StObject.set(x, "clips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipsUndefined: Self = StObject.set(x, "clips", js.undefined)
+    inline def setClipsUndefined: Self = StObject.set(x, "clips", js.undefined)
     
-    @scala.inline
-    def setClipsVarargs(value: Length*): Self = StObject.set(x, "clips", js.Array(value :_*))
+    inline def setClipsVarargs(value: Length*): Self = StObject.set(x, "clips", js.Array(value :_*))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoster_frame_index(value: Double): Self = StObject.set(x, "poster_frame_index", value.asInstanceOf[js.Any])
+    inline def setPoster_frame_index(value: Double): Self = StObject.set(x, "poster_frame_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoster_frame_indexUndefined: Self = StObject.set(x, "poster_frame_index", js.undefined)
+    inline def setPoster_frame_indexUndefined: Self = StObject.set(x, "poster_frame_index", js.undefined)
   }
 }

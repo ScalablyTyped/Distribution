@@ -21,19 +21,15 @@ trait FormSelectOptions extends StObject {
 }
 object FormSelectOptions {
   
-  @scala.inline
-  def apply(classes: String, dropdownOptions: PartialDropdownOptions): FormSelectOptions = {
+  inline def apply(classes: String, dropdownOptions: PartialDropdownOptions): FormSelectOptions = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], dropdownOptions = dropdownOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormSelectOptions]
   }
   
-  @scala.inline
-  implicit class FormSelectOptionsMutableBuilder[Self <: FormSelectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormSelectOptions](x: Self) {
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownOptions(value: PartialDropdownOptions): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
+    inline def setDropdownOptions(value: PartialDropdownOptions): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
   }
 }

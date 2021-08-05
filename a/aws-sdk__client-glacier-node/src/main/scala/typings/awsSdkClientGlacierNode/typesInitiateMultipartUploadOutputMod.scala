@@ -30,29 +30,22 @@ object typesInitiateMultipartUploadOutputMod {
   }
   object InitiateMultipartUploadOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): InitiateMultipartUploadOutput = {
+    inline def apply($metadata: ResponseMetadata): InitiateMultipartUploadOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitiateMultipartUploadOutput]
     }
     
-    @scala.inline
-    implicit class InitiateMultipartUploadOutputMutableBuilder[Self <: InitiateMultipartUploadOutput] (val x: Self) extends AnyVal {
+    extension [Self <: InitiateMultipartUploadOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+      inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
     }
   }
 }

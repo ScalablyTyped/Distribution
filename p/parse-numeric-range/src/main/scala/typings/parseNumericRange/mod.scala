@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(expression: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(expression.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def apply(expression: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(expression.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   @JSImport("parse-numeric-range", JSImport.Namespace)
   @js.native

@@ -35,8 +35,7 @@ trait ASPxClientHyperLink
 }
 object ASPxClientHyperLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]],
     GetCaption: () => String,
@@ -68,19 +67,14 @@ object ASPxClientHyperLink {
     __obj.asInstanceOf[ASPxClientHyperLink]
   }
   
-  @scala.inline
-  implicit class ASPxClientHyperLinkMutableBuilder[Self <: ASPxClientHyperLink] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHyperLink](x: Self) {
     
-    @scala.inline
-    def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
+    inline def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetNavigateUrl", js.Any.fromFunction1(value))
+    inline def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetNavigateUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
   }
 }

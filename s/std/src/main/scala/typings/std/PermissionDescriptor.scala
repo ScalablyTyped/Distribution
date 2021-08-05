@@ -10,16 +10,13 @@ trait PermissionDescriptor extends StObject {
 }
 object PermissionDescriptor {
   
-  @scala.inline
-  def apply(name: PermissionName): PermissionDescriptor = {
+  inline def apply(name: PermissionName): PermissionDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionDescriptor]
   }
   
-  @scala.inline
-  implicit class PermissionDescriptorMutableBuilder[Self <: PermissionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionDescriptor](x: Self) {
     
-    @scala.inline
-    def setName(value: PermissionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: PermissionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

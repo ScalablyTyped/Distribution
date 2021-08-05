@@ -34,8 +34,7 @@ trait XDatabaseParameterBroadcaster
 }
 object XDatabaseParameterBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addParameterListener: XDatabaseParameterListener => Unit,
     queryInterface: `type` => js.Any,
@@ -46,13 +45,10 @@ object XDatabaseParameterBroadcaster {
     __obj.asInstanceOf[XDatabaseParameterBroadcaster]
   }
   
-  @scala.inline
-  implicit class XDatabaseParameterBroadcasterMutableBuilder[Self <: XDatabaseParameterBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseParameterBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddParameterListener(value: XDatabaseParameterListener => Unit): Self = StObject.set(x, "addParameterListener", js.Any.fromFunction1(value))
+    inline def setAddParameterListener(value: XDatabaseParameterListener => Unit): Self = StObject.set(x, "addParameterListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveParameterListener(value: XDatabaseParameterListener => Unit): Self = StObject.set(x, "removeParameterListener", js.Any.fromFunction1(value))
+    inline def setRemoveParameterListener(value: XDatabaseParameterListener => Unit): Self = StObject.set(x, "removeParameterListener", js.Any.fromFunction1(value))
   }
 }

@@ -20,46 +20,33 @@ trait ResizeObserverEntry extends StObject {
 }
 object ResizeObserverEntry {
   
-  @scala.inline
-  def apply(contentRect: DOMRectReadOnly, target: Element): ResizeObserverEntry = {
+  inline def apply(contentRect: DOMRectReadOnly, target: Element): ResizeObserverEntry = {
     val __obj = js.Dynamic.literal(contentRect = contentRect.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeObserverEntry]
   }
   
-  @scala.inline
-  implicit class ResizeObserverEntryMutableBuilder[Self <: ResizeObserverEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeObserverEntry](x: Self) {
     
-    @scala.inline
-    def setBorderBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "borderBoxSize", value.asInstanceOf[js.Any])
+    inline def setBorderBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "borderBoxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBoxSizeUndefined: Self = StObject.set(x, "borderBoxSize", js.undefined)
+    inline def setBorderBoxSizeUndefined: Self = StObject.set(x, "borderBoxSize", js.undefined)
     
-    @scala.inline
-    def setBorderBoxSizeVarargs(value: ResizeObserverSize*): Self = StObject.set(x, "borderBoxSize", js.Array(value :_*))
+    inline def setBorderBoxSizeVarargs(value: ResizeObserverSize*): Self = StObject.set(x, "borderBoxSize", js.Array(value :_*))
     
-    @scala.inline
-    def setContentBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "contentBoxSize", value.asInstanceOf[js.Any])
+    inline def setContentBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "contentBoxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentBoxSizeUndefined: Self = StObject.set(x, "contentBoxSize", js.undefined)
+    inline def setContentBoxSizeUndefined: Self = StObject.set(x, "contentBoxSize", js.undefined)
     
-    @scala.inline
-    def setContentBoxSizeVarargs(value: ResizeObserverSize*): Self = StObject.set(x, "contentBoxSize", js.Array(value :_*))
+    inline def setContentBoxSizeVarargs(value: ResizeObserverSize*): Self = StObject.set(x, "contentBoxSize", js.Array(value :_*))
     
-    @scala.inline
-    def setContentRect(value: DOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
+    inline def setContentRect(value: DOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePixelContentBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "devicePixelContentBoxSize", value.asInstanceOf[js.Any])
+    inline def setDevicePixelContentBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "devicePixelContentBoxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePixelContentBoxSizeUndefined: Self = StObject.set(x, "devicePixelContentBoxSize", js.undefined)
+    inline def setDevicePixelContentBoxSizeUndefined: Self = StObject.set(x, "devicePixelContentBoxSize", js.undefined)
     
-    @scala.inline
-    def setDevicePixelContentBoxSizeVarargs(value: ResizeObserverSize*): Self = StObject.set(x, "devicePixelContentBoxSize", js.Array(value :_*))
+    inline def setDevicePixelContentBoxSizeVarargs(value: ResizeObserverSize*): Self = StObject.set(x, "devicePixelContentBoxSize", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

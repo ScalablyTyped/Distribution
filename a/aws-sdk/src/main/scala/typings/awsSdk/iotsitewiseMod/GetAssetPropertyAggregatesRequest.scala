@@ -63,73 +63,51 @@ trait GetAssetPropertyAggregatesRequest extends StObject {
 }
 object GetAssetPropertyAggregatesRequest {
   
-  @scala.inline
-  def apply(aggregateTypes: AggregateTypes, endDate: Timestamp, resolution: Resolution, startDate: Timestamp): GetAssetPropertyAggregatesRequest = {
+  inline def apply(aggregateTypes: AggregateTypes, endDate: Timestamp, resolution: Resolution, startDate: Timestamp): GetAssetPropertyAggregatesRequest = {
     val __obj = js.Dynamic.literal(aggregateTypes = aggregateTypes.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetPropertyAggregatesRequest]
   }
   
-  @scala.inline
-  implicit class GetAssetPropertyAggregatesRequestMutableBuilder[Self <: GetAssetPropertyAggregatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssetPropertyAggregatesRequest](x: Self) {
     
-    @scala.inline
-    def setAggregateTypes(value: AggregateTypes): Self = StObject.set(x, "aggregateTypes", value.asInstanceOf[js.Any])
+    inline def setAggregateTypes(value: AggregateTypes): Self = StObject.set(x, "aggregateTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateTypesVarargs(value: AggregateType*): Self = StObject.set(x, "aggregateTypes", js.Array(value :_*))
+    inline def setAggregateTypesVarargs(value: AggregateType*): Self = StObject.set(x, "aggregateTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
+    inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
-    @scala.inline
-    def setEndDate(value: Timestamp): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
+    inline def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
+    inline def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
     
-    @scala.inline
-    def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
+    inline def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
     
-    @scala.inline
-    def setQualities(value: Qualities): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
+    inline def setQualities(value: Qualities): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
+    inline def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
     
-    @scala.inline
-    def setQualitiesVarargs(value: Quality*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+    inline def setQualitiesVarargs(value: Quality*): Self = StObject.set(x, "qualities", js.Array(value :_*))
     
-    @scala.inline
-    def setResolution(value: Resolution): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Resolution): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOrdering(value: TimeOrdering): Self = StObject.set(x, "timeOrdering", value.asInstanceOf[js.Any])
+    inline def setTimeOrdering(value: TimeOrdering): Self = StObject.set(x, "timeOrdering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOrderingUndefined: Self = StObject.set(x, "timeOrdering", js.undefined)
+    inline def setTimeOrderingUndefined: Self = StObject.set(x, "timeOrdering", js.undefined)
   }
 }

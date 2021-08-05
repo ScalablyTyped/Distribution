@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  @scala.inline
-  def apply(options: PluginPeerDepsExternalOptions): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  inline def apply(options: PluginPeerDepsExternalOptions): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   @JSImport("rollup-plugin-peer-deps-external", JSImport.Namespace)
   @js.native
@@ -24,26 +22,20 @@ object mod {
   }
   object PluginPeerDepsExternalOptions {
     
-    @scala.inline
-    def apply(): PluginPeerDepsExternalOptions = {
+    inline def apply(): PluginPeerDepsExternalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginPeerDepsExternalOptions]
     }
     
-    @scala.inline
-    implicit class PluginPeerDepsExternalOptionsMutableBuilder[Self <: PluginPeerDepsExternalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginPeerDepsExternalOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeDependencies(value: Boolean): Self = StObject.set(x, "includeDependencies", value.asInstanceOf[js.Any])
+      inline def setIncludeDependencies(value: Boolean): Self = StObject.set(x, "includeDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeDependenciesUndefined: Self = StObject.set(x, "includeDependencies", js.undefined)
+      inline def setIncludeDependenciesUndefined: Self = StObject.set(x, "includeDependencies", js.undefined)
       
-      @scala.inline
-      def setPackageJsonPath(value: String): Self = StObject.set(x, "packageJsonPath", value.asInstanceOf[js.Any])
+      inline def setPackageJsonPath(value: String): Self = StObject.set(x, "packageJsonPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageJsonPathUndefined: Self = StObject.set(x, "packageJsonPath", js.undefined)
+      inline def setPackageJsonPathUndefined: Self = StObject.set(x, "packageJsonPath", js.undefined)
     }
   }
 }

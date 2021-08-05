@@ -28,37 +28,27 @@ trait DescribeProvisioningTemplateVersionResponse extends StObject {
 }
 object DescribeProvisioningTemplateVersionResponse {
   
-  @scala.inline
-  def apply(): DescribeProvisioningTemplateVersionResponse = {
+  inline def apply(): DescribeProvisioningTemplateVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProvisioningTemplateVersionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeProvisioningTemplateVersionResponseMutableBuilder[Self <: DescribeProvisioningTemplateVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProvisioningTemplateVersionResponse](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setIsDefaultVersion(value: IsDefaultVersion): Self = StObject.set(x, "isDefaultVersion", value.asInstanceOf[js.Any])
+    inline def setIsDefaultVersion(value: IsDefaultVersion): Self = StObject.set(x, "isDefaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultVersionUndefined: Self = StObject.set(x, "isDefaultVersion", js.undefined)
+    inline def setIsDefaultVersionUndefined: Self = StObject.set(x, "isDefaultVersion", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: TemplateVersionId): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: TemplateVersionId): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

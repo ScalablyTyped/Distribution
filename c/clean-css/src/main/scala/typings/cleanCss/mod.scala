@@ -74,38 +74,28 @@ object mod extends Shortcut {
   }
   object CompatibilityOptions {
     
-    @scala.inline
-    def apply(): CompatibilityOptions = {
+    inline def apply(): CompatibilityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompatibilityOptions]
     }
     
-    @scala.inline
-    implicit class CompatibilityOptionsMutableBuilder[Self <: CompatibilityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompatibilityOptions](x: Self) {
       
-      @scala.inline
-      def setColors(value: Opacity): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Opacity): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setProperties(value: BackgroundClipMerging): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: BackgroundClipMerging): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setSelectors(value: AdjacentSpace): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: AdjacentSpace): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+      inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
       
-      @scala.inline
-      def setUnits(value: Ch): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: Ch): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     }
   }
   
@@ -169,56 +159,40 @@ object mod extends Shortcut {
   }
   object FormatOptions {
     
-    @scala.inline
-    def apply(): FormatOptions = {
+    inline def apply(): FormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatOptions]
     }
     
-    @scala.inline
-    implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormatOptions](x: Self) {
       
-      @scala.inline
-      def setBreakWith(value: String): Self = StObject.set(x, "breakWith", value.asInstanceOf[js.Any])
+      inline def setBreakWith(value: String): Self = StObject.set(x, "breakWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakWithUndefined: Self = StObject.set(x, "breakWith", js.undefined)
+      inline def setBreakWithUndefined: Self = StObject.set(x, "breakWith", js.undefined)
       
-      @scala.inline
-      def setBreaks(value: AfterAtRule): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+      inline def setBreaks(value: AfterAtRule): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+      inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
       
-      @scala.inline
-      def setIndentBy(value: Double): Self = StObject.set(x, "indentBy", value.asInstanceOf[js.Any])
+      inline def setIndentBy(value: Double): Self = StObject.set(x, "indentBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentByUndefined: Self = StObject.set(x, "indentBy", js.undefined)
+      inline def setIndentByUndefined: Self = StObject.set(x, "indentBy", js.undefined)
       
-      @scala.inline
-      def setIndentWith(value: space | tab): Self = StObject.set(x, "indentWith", value.asInstanceOf[js.Any])
+      inline def setIndentWith(value: space | tab): Self = StObject.set(x, "indentWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentWithUndefined: Self = StObject.set(x, "indentWith", js.undefined)
+      inline def setIndentWithUndefined: Self = StObject.set(x, "indentWith", js.undefined)
       
-      @scala.inline
-      def setSemicolonAfterLastProperty(value: Boolean): Self = StObject.set(x, "semicolonAfterLastProperty", value.asInstanceOf[js.Any])
+      inline def setSemicolonAfterLastProperty(value: Boolean): Self = StObject.set(x, "semicolonAfterLastProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSemicolonAfterLastPropertyUndefined: Self = StObject.set(x, "semicolonAfterLastProperty", js.undefined)
+      inline def setSemicolonAfterLastPropertyUndefined: Self = StObject.set(x, "semicolonAfterLastProperty", js.undefined)
       
-      @scala.inline
-      def setSpaces(value: AroundSelectorRelation): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: AroundSelectorRelation): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
       
-      @scala.inline
-      def setWrapAt(value: `false` | Double): Self = StObject.set(x, "wrapAt", value.asInstanceOf[js.Any])
+      inline def setWrapAt(value: `false` | Double): Self = StObject.set(x, "wrapAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapAtUndefined: Self = StObject.set(x, "wrapAt", js.undefined)
+      inline def setWrapAtUndefined: Self = StObject.set(x, "wrapAt", js.undefined)
     }
   }
   
@@ -272,26 +246,20 @@ object mod extends Shortcut {
   }
   object OptimizationsOptions {
     
-    @scala.inline
-    def apply(): OptimizationsOptions = {
+    inline def apply(): OptimizationsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptimizationsOptions]
     }
     
-    @scala.inline
-    implicit class OptimizationsOptionsMutableBuilder[Self <: OptimizationsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OptimizationsOptions](x: Self) {
       
-      @scala.inline
-      def set1(value: All): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: All): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1Undefined: Self = StObject.set(x, "1", js.undefined)
+      inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
       
-      @scala.inline
-      def set2(value: MergeAdjacentRules): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: MergeAdjacentRules): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2Undefined: Self = StObject.set(x, "2", js.undefined)
+      inline def set2Undefined: Self = StObject.set(x, "2", js.undefined)
     }
   }
   
@@ -308,14 +276,12 @@ object mod extends Shortcut {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def OptionsOutput(): typings.cleanCss.mod.OptionsOutput = {
+    inline def OptionsOutput(): typings.cleanCss.mod.OptionsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.cleanCss.mod.OptionsOutput]
     }
     
-    @scala.inline
-    def OptionsPromise(): typings.cleanCss.mod.OptionsPromise = {
+    inline def OptionsPromise(): typings.cleanCss.mod.OptionsPromise = {
       val __obj = js.Dynamic.literal(returnPromise = true)
       __obj.asInstanceOf[typings.cleanCss.mod.OptionsPromise]
     }
@@ -402,85 +368,60 @@ object mod extends Shortcut {
   }
   object OptionsBase {
     
-    @scala.inline
-    def apply(): OptionsBase = {
+    inline def apply(): OptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsBase]
     }
     
-    @scala.inline
-    implicit class OptionsBaseMutableBuilder[Self <: OptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsBase](x: Self) {
       
-      @scala.inline
-      def setCompatibility(value: Asterisk | ie9 | ie8 | ie7 | CompatibilityOptions): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
+      inline def setCompatibility(value: Asterisk | ie9 | ie8 | ie7 | CompatibilityOptions): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompatibilityUndefined: Self = StObject.set(x, "compatibility", js.undefined)
+      inline def setCompatibilityUndefined: Self = StObject.set(x, "compatibility", js.undefined)
       
-      @scala.inline
-      def setFetch(
+      inline def setFetch(
         value: (/* uri */ String, /* inlineRequest */ RequestOptions | typings.node.httpsMod.RequestOptions, /* inlineTimeout */ Double, /* done */ js.Function2[/* message */ String | Double, /* body */ String, Unit]) => Unit
       ): Self = StObject.set(x, "fetch", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setFormat(value: beautify | `keep-breaks` | FormatOptions | `false`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: beautify | `keep-breaks` | FormatOptions | `false`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setInline(value: js.Array[String] | `false`): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: js.Array[String] | `false`): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineRequest(value: RequestOptions | typings.node.httpsMod.RequestOptions): Self = StObject.set(x, "inlineRequest", value.asInstanceOf[js.Any])
+      inline def setInlineRequest(value: RequestOptions | typings.node.httpsMod.RequestOptions): Self = StObject.set(x, "inlineRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineRequestUndefined: Self = StObject.set(x, "inlineRequest", js.undefined)
+      inline def setInlineRequestUndefined: Self = StObject.set(x, "inlineRequest", js.undefined)
       
-      @scala.inline
-      def setInlineTimeout(value: Double): Self = StObject.set(x, "inlineTimeout", value.asInstanceOf[js.Any])
+      inline def setInlineTimeout(value: Double): Self = StObject.set(x, "inlineTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineTimeoutUndefined: Self = StObject.set(x, "inlineTimeout", js.undefined)
+      inline def setInlineTimeoutUndefined: Self = StObject.set(x, "inlineTimeout", js.undefined)
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setInlineVarargs(value: String*): Self = StObject.set(x, "inline", js.Array(value :_*))
+      inline def setInlineVarargs(value: String*): Self = StObject.set(x, "inline", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: `0` | `1` | `2` | OptimizationsOptions): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: `0` | `1` | `2` | OptimizationsOptions): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setRebase(value: Boolean): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
+      inline def setRebase(value: Boolean): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRebaseTo(value: String): Self = StObject.set(x, "rebaseTo", value.asInstanceOf[js.Any])
+      inline def setRebaseTo(value: String): Self = StObject.set(x, "rebaseTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRebaseToUndefined: Self = StObject.set(x, "rebaseTo", js.undefined)
+      inline def setRebaseToUndefined: Self = StObject.set(x, "rebaseTo", js.undefined)
       
-      @scala.inline
-      def setRebaseUndefined: Self = StObject.set(x, "rebase", js.undefined)
+      inline def setRebaseUndefined: Self = StObject.set(x, "rebase", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapInlineSources(value: Boolean): Self = StObject.set(x, "sourceMapInlineSources", value.asInstanceOf[js.Any])
+      inline def setSourceMapInlineSources(value: Boolean): Self = StObject.set(x, "sourceMapInlineSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapInlineSourcesUndefined: Self = StObject.set(x, "sourceMapInlineSources", js.undefined)
+      inline def setSourceMapInlineSourcesUndefined: Self = StObject.set(x, "sourceMapInlineSources", js.undefined)
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     }
   }
   
@@ -499,20 +440,16 @@ object mod extends Shortcut {
   }
   object OptionsOutput {
     
-    @scala.inline
-    def apply(): OptionsOutput = {
+    inline def apply(): OptionsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsOutput]
     }
     
-    @scala.inline
-    implicit class OptionsOutputMutableBuilder[Self <: OptionsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsOutput](x: Self) {
       
-      @scala.inline
-      def setReturnPromise(value: `false`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
+      inline def setReturnPromise(value: `false`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnPromiseUndefined: Self = StObject.set(x, "returnPromise", js.undefined)
+      inline def setReturnPromiseUndefined: Self = StObject.set(x, "returnPromise", js.undefined)
     }
   }
   
@@ -531,17 +468,14 @@ object mod extends Shortcut {
   }
   object OptionsPromise {
     
-    @scala.inline
-    def apply(): OptionsPromise = {
+    inline def apply(): OptionsPromise = {
       val __obj = js.Dynamic.literal(returnPromise = true)
       __obj.asInstanceOf[OptionsPromise]
     }
     
-    @scala.inline
-    implicit class OptionsPromiseMutableBuilder[Self <: OptionsPromise] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsPromise](x: Self) {
       
-      @scala.inline
-      def setReturnPromise(value: `true`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
+      inline def setReturnPromise(value: `true`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
     }
   }
   
@@ -577,8 +511,7 @@ object mod extends Shortcut {
   }
   object Output {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errors: js.Array[String],
       sourceMap: String,
       stats: Efficiency,
@@ -589,29 +522,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceMap(value: String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: Efficiency): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Efficiency): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
   

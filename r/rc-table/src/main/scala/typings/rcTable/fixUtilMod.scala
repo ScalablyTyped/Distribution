@@ -15,8 +15,7 @@ object fixUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCellFixedInfo_ltr(
+  inline def getCellFixedInfo_ltr(
     colStart: Double,
     colEnd: Double,
     columns: js.Array[Fixed],
@@ -24,8 +23,7 @@ object fixUtilMod {
     direction: ltr
   ): FixedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellFixedInfo")(colStart.asInstanceOf[js.Any], colEnd.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], stickyOffsets.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[FixedInfo]
   
-  @scala.inline
-  def getCellFixedInfo_rtl(
+  inline def getCellFixedInfo_rtl(
     colStart: Double,
     colEnd: Double,
     columns: js.Array[Fixed],
@@ -51,8 +49,7 @@ object fixUtilMod {
   }
   object FixedInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firstFixLeft: Boolean,
       firstFixRight: Boolean,
       fixLeft: Double | `false`,
@@ -65,29 +62,21 @@ object fixUtilMod {
       __obj.asInstanceOf[FixedInfo]
     }
     
-    @scala.inline
-    implicit class FixedInfoMutableBuilder[Self <: FixedInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FixedInfo](x: Self) {
       
-      @scala.inline
-      def setFirstFixLeft(value: Boolean): Self = StObject.set(x, "firstFixLeft", value.asInstanceOf[js.Any])
+      inline def setFirstFixLeft(value: Boolean): Self = StObject.set(x, "firstFixLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstFixRight(value: Boolean): Self = StObject.set(x, "firstFixRight", value.asInstanceOf[js.Any])
+      inline def setFirstFixRight(value: Boolean): Self = StObject.set(x, "firstFixRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixLeft(value: Double | `false`): Self = StObject.set(x, "fixLeft", value.asInstanceOf[js.Any])
+      inline def setFixLeft(value: Double | `false`): Self = StObject.set(x, "fixLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixRight(value: Double | `false`): Self = StObject.set(x, "fixRight", value.asInstanceOf[js.Any])
+      inline def setFixRight(value: Double | `false`): Self = StObject.set(x, "fixRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
+      inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFixLeft(value: Boolean): Self = StObject.set(x, "lastFixLeft", value.asInstanceOf[js.Any])
+      inline def setLastFixLeft(value: Boolean): Self = StObject.set(x, "lastFixLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFixRight(value: Boolean): Self = StObject.set(x, "lastFixRight", value.asInstanceOf[js.Any])
+      inline def setLastFixRight(value: Boolean): Self = StObject.set(x, "lastFixRight", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -61,79 +61,55 @@ trait SchemaGroup extends StObject {
 }
 object SchemaGroup {
   
-  @scala.inline
-  def apply(): SchemaGroup = {
+  inline def apply(): SchemaGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroup]
   }
   
-  @scala.inline
-  implicit class SchemaGroupMutableBuilder[Self <: SchemaGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroup](x: Self) {
     
-    @scala.inline
-    def setAdminCreated(value: Boolean): Self = StObject.set(x, "adminCreated", value.asInstanceOf[js.Any])
+    inline def setAdminCreated(value: Boolean): Self = StObject.set(x, "adminCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminCreatedUndefined: Self = StObject.set(x, "adminCreated", js.undefined)
+    inline def setAdminCreatedUndefined: Self = StObject.set(x, "adminCreated", js.undefined)
     
-    @scala.inline
-    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDirectMembersCount(value: String): Self = StObject.set(x, "directMembersCount", value.asInstanceOf[js.Any])
+    inline def setDirectMembersCount(value: String): Self = StObject.set(x, "directMembersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectMembersCountUndefined: Self = StObject.set(x, "directMembersCount", js.undefined)
+    inline def setDirectMembersCountUndefined: Self = StObject.set(x, "directMembersCount", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNonEditableAliases(value: js.Array[String]): Self = StObject.set(x, "nonEditableAliases", value.asInstanceOf[js.Any])
+    inline def setNonEditableAliases(value: js.Array[String]): Self = StObject.set(x, "nonEditableAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEditableAliasesUndefined: Self = StObject.set(x, "nonEditableAliases", js.undefined)
+    inline def setNonEditableAliasesUndefined: Self = StObject.set(x, "nonEditableAliases", js.undefined)
     
-    @scala.inline
-    def setNonEditableAliasesVarargs(value: String*): Self = StObject.set(x, "nonEditableAliases", js.Array(value :_*))
+    inline def setNonEditableAliasesVarargs(value: String*): Self = StObject.set(x, "nonEditableAliases", js.Array(value :_*))
   }
 }

@@ -114,11 +114,9 @@ object VMStatus {
     /* 2 */ val VERIFICATION: typings.libraCore.vmErrorsPbMod.VMStatus.ErrorTypeCase.VERIFICATION & Double = js.native
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): VMStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMStatus]
+  inline def deserializeBinary(bytes: Uint8Array): VMStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMStatus]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: VMStatus, reader: BinaryReader): VMStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMStatus]
+  inline def deserializeBinaryFromReader(message: VMStatus, reader: BinaryReader): VMStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMStatus]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMStatus.extensions")
   @js.native
@@ -127,17 +125,13 @@ object VMStatus {
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMStatus.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: VMStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: VMStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: VMStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: VMStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -153,38 +147,28 @@ object VMStatus {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(deserialization: BinaryError, invariantViolation: VMInvariantViolationError): AsObject = {
+    inline def apply(deserialization: BinaryError, invariantViolation: VMInvariantViolationError): AsObject = {
       val __obj = js.Dynamic.literal(deserialization = deserialization.asInstanceOf[js.Any], invariantViolation = invariantViolation.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setDeserialization(value: BinaryError): Self = StObject.set(x, "deserialization", value.asInstanceOf[js.Any])
+      inline def setDeserialization(value: BinaryError): Self = StObject.set(x, "deserialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecution(value: typings.libraCore.vmErrorsPbMod.ExecutionStatus.AsObject): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+      inline def setExecution(value: typings.libraCore.vmErrorsPbMod.ExecutionStatus.AsObject): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
+      inline def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
       
-      @scala.inline
-      def setInvariantViolation(value: VMInvariantViolationError): Self = StObject.set(x, "invariantViolation", value.asInstanceOf[js.Any])
+      inline def setInvariantViolation(value: VMInvariantViolationError): Self = StObject.set(x, "invariantViolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidation(value: typings.libraCore.vmErrorsPbMod.VMValidationStatus.AsObject): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+      inline def setValidation(value: typings.libraCore.vmErrorsPbMod.VMValidationStatus.AsObject): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+      inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
       
-      @scala.inline
-      def setVerification(value: typings.libraCore.vmErrorsPbMod.VMVerificationStatusList.AsObject): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+      inline def setVerification(value: typings.libraCore.vmErrorsPbMod.VMVerificationStatusList.AsObject): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
+      inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
     }
   }
 }

@@ -15,31 +15,23 @@ trait Dilation2DBackpropInputInputs extends StObject {
 }
 object Dilation2DBackpropInputInputs {
   
-  @scala.inline
-  def apply(): Dilation2DBackpropInputInputs = {
+  inline def apply(): Dilation2DBackpropInputInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dilation2DBackpropInputInputs]
   }
   
-  @scala.inline
-  implicit class Dilation2DBackpropInputInputsMutableBuilder[Self <: Dilation2DBackpropInputInputs] (val x: Self) extends AnyVal {
+  extension [Self <: Dilation2DBackpropInputInputs](x: Self) {
     
-    @scala.inline
-    def setDy(value: js.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: js.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

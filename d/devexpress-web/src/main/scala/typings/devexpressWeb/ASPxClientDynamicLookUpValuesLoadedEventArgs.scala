@@ -18,16 +18,13 @@ trait ASPxClientDynamicLookUpValuesLoadedEventArgs
 }
 object ASPxClientDynamicLookUpValuesLoadedEventArgs {
   
-  @scala.inline
-  def apply(ParameterName: String): ASPxClientDynamicLookUpValuesLoadedEventArgs = {
+  inline def apply(ParameterName: String): ASPxClientDynamicLookUpValuesLoadedEventArgs = {
     val __obj = js.Dynamic.literal(ParameterName = ParameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDynamicLookUpValuesLoadedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDynamicLookUpValuesLoadedEventArgsMutableBuilder[Self <: ASPxClientDynamicLookUpValuesLoadedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDynamicLookUpValuesLoadedEventArgs](x: Self) {
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
   }
 }

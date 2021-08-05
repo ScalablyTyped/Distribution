@@ -22,8 +22,7 @@ trait VideoCampaignTargeting extends StObject {
 }
 object VideoCampaignTargeting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adSchedules: () => AdWordsSelector[AdSchedule],
     excludedContentLabels: () => AdWordsSelector[ExcludedContentLabel],
     excludedLocations: () => AdWordsSelector[ExcludedLocation],
@@ -36,28 +35,20 @@ object VideoCampaignTargeting {
     __obj.asInstanceOf[VideoCampaignTargeting]
   }
   
-  @scala.inline
-  implicit class VideoCampaignTargetingMutableBuilder[Self <: VideoCampaignTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: VideoCampaignTargeting](x: Self) {
     
-    @scala.inline
-    def setAdSchedules(value: () => AdWordsSelector[AdSchedule]): Self = StObject.set(x, "adSchedules", js.Any.fromFunction0(value))
+    inline def setAdSchedules(value: () => AdWordsSelector[AdSchedule]): Self = StObject.set(x, "adSchedules", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludedContentLabels(value: () => AdWordsSelector[ExcludedContentLabel]): Self = StObject.set(x, "excludedContentLabels", js.Any.fromFunction0(value))
+    inline def setExcludedContentLabels(value: () => AdWordsSelector[ExcludedContentLabel]): Self = StObject.set(x, "excludedContentLabels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludedLocations(value: () => AdWordsSelector[ExcludedLocation]): Self = StObject.set(x, "excludedLocations", js.Any.fromFunction0(value))
+    inline def setExcludedLocations(value: () => AdWordsSelector[ExcludedLocation]): Self = StObject.set(x, "excludedLocations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLanguages(value: () => AdWordsSelector[Language]): Self = StObject.set(x, "languages", js.Any.fromFunction0(value))
+    inline def setLanguages(value: () => AdWordsSelector[Language]): Self = StObject.set(x, "languages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlatforms(value: () => AdWordsSelector[Platform]): Self = StObject.set(x, "platforms", js.Any.fromFunction0(value))
+    inline def setPlatforms(value: () => AdWordsSelector[Platform]): Self = StObject.set(x, "platforms", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTargetedLocations(value: () => AdWordsSelector[TargetedLocation]): Self = StObject.set(x, "targetedLocations", js.Any.fromFunction0(value))
+    inline def setTargetedLocations(value: () => AdWordsSelector[TargetedLocation]): Self = StObject.set(x, "targetedLocations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTargetedProximities(value: () => AdWordsSelector[TargetedProximity]): Self = StObject.set(x, "targetedProximities", js.Any.fromFunction0(value))
+    inline def setTargetedProximities(value: () => AdWordsSelector[TargetedProximity]): Self = StObject.set(x, "targetedProximities", js.Any.fromFunction0(value))
   }
 }

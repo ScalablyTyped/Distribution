@@ -21,20 +21,16 @@ object AnnotatedCommit {
     * @param remoteUrl -     url of the remote
     * @param id - the commit object id of the remote branch
     */
-  @scala.inline
-  def fromFetchhead(
+  inline def fromFetchhead(
     repo: typings.nodegit.repositoryMod.Repository,
     branchName: String,
     remoteUrl: String,
     id: typings.nodegit.oidMod.Oid
   ): js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetchhead")(repo.asInstanceOf[js.Any], branchName.asInstanceOf[js.Any], remoteUrl.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit]]
   
-  @scala.inline
-  def fromRef(repo: typings.nodegit.repositoryMod.Repository, ref: typings.nodegit.referenceMod.Reference): js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRef")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit]]
+  inline def fromRef(repo: typings.nodegit.repositoryMod.Repository, ref: typings.nodegit.referenceMod.Reference): js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRef")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit]]
   
-  @scala.inline
-  def fromRevspec(repo: typings.nodegit.repositoryMod.Repository, revspec: String): js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRevspec")(repo.asInstanceOf[js.Any], revspec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit]]
+  inline def fromRevspec(repo: typings.nodegit.repositoryMod.Repository, revspec: String): js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRevspec")(repo.asInstanceOf[js.Any], revspec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit]]
   
-  @scala.inline
-  def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid): js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit]]
+  inline def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid): js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.annotatedCommitMod.AnnotatedCommit]]
 }

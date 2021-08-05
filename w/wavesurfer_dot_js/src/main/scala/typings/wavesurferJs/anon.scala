@@ -29,20 +29,16 @@ object anon {
   }
   object Xhr {
     
-    @scala.inline
-    def apply(): Xhr = {
+    inline def apply(): Xhr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Xhr]
     }
     
-    @scala.inline
-    implicit class XhrMutableBuilder[Self <: Xhr] (val x: Self) extends AnyVal {
+    extension [Self <: Xhr](x: Self) {
       
-      @scala.inline
-      def setXhr(value: XHROptions): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: XHROptions): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLXDomainRequest extends StObject {
   
-  @JSName("MSHTML.IHTMLXDomainRequest_typekey")
+  /* private */ @JSName("MSHTML.IHTMLXDomainRequest_typekey")
   var MSHTMLDotIHTMLXDomainRequest_typekey: IHTMLXDomainRequest = js.native
   
   def abort(): Unit = js.native

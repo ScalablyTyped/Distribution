@@ -12,16 +12,13 @@ trait PluginRemoveRasterImages
 }
 object PluginRemoveRasterImages {
   
-  @scala.inline
-  def apply(removeRasterImages: Boolean | js.Object): PluginRemoveRasterImages = {
+  inline def apply(removeRasterImages: Boolean | js.Object): PluginRemoveRasterImages = {
     val __obj = js.Dynamic.literal(removeRasterImages = removeRasterImages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveRasterImages]
   }
   
-  @scala.inline
-  implicit class PluginRemoveRasterImagesMutableBuilder[Self <: PluginRemoveRasterImages] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveRasterImages](x: Self) {
     
-    @scala.inline
-    def setRemoveRasterImages(value: Boolean | js.Object): Self = StObject.set(x, "removeRasterImages", value.asInstanceOf[js.Any])
+    inline def setRemoveRasterImages(value: Boolean | js.Object): Self = StObject.set(x, "removeRasterImages", value.asInstanceOf[js.Any])
   }
 }

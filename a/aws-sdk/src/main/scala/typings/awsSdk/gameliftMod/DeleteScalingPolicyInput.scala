@@ -18,19 +18,15 @@ trait DeleteScalingPolicyInput extends StObject {
 }
 object DeleteScalingPolicyInput {
   
-  @scala.inline
-  def apply(FleetId: FleetIdOrArn, Name: NonZeroAndMaxString): DeleteScalingPolicyInput = {
+  inline def apply(FleetId: FleetIdOrArn, Name: NonZeroAndMaxString): DeleteScalingPolicyInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScalingPolicyInput]
   }
   
-  @scala.inline
-  implicit class DeleteScalingPolicyInputMutableBuilder[Self <: DeleteScalingPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScalingPolicyInput](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

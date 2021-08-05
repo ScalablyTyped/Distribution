@@ -33,28 +33,21 @@ trait DialplanCEP extends StObject {
 }
 object DialplanCEP {
   
-  @scala.inline
-  def apply(app_data: String, app_name: String, context: String, exten: String, priority: Double): DialplanCEP = {
+  inline def apply(app_data: String, app_name: String, context: String, exten: String, priority: Double): DialplanCEP = {
     val __obj = js.Dynamic.literal(app_data = app_data.asInstanceOf[js.Any], app_name = app_name.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], exten = exten.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialplanCEP]
   }
   
-  @scala.inline
-  implicit class DialplanCEPMutableBuilder[Self <: DialplanCEP] (val x: Self) extends AnyVal {
+  extension [Self <: DialplanCEP](x: Self) {
     
-    @scala.inline
-    def setApp_data(value: String): Self = StObject.set(x, "app_data", value.asInstanceOf[js.Any])
+    inline def setApp_data(value: String): Self = StObject.set(x, "app_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApp_name(value: String): Self = StObject.set(x, "app_name", value.asInstanceOf[js.Any])
+    inline def setApp_name(value: String): Self = StObject.set(x, "app_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExten(value: String): Self = StObject.set(x, "exten", value.asInstanceOf[js.Any])
+    inline def setExten(value: String): Self = StObject.set(x, "exten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }
 }

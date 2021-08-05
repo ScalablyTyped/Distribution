@@ -23,20 +23,16 @@ object historyHandlerMod {
   }
   object HistoryAdapter {
     
-    @scala.inline
-    def apply(pushState: (js.Any, String, String) => Unit, replaceState: (js.Any, String, String) => Unit): HistoryAdapter = {
+    inline def apply(pushState: (js.Any, String, String) => Unit, replaceState: (js.Any, String, String) => Unit): HistoryAdapter = {
       val __obj = js.Dynamic.literal(pushState = js.Any.fromFunction3(pushState), replaceState = js.Any.fromFunction3(replaceState))
       __obj.asInstanceOf[HistoryAdapter]
     }
     
-    @scala.inline
-    implicit class HistoryAdapterMutableBuilder[Self <: HistoryAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: HistoryAdapter](x: Self) {
       
-      @scala.inline
-      def setPushState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
+      inline def setPushState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReplaceState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "replaceState", js.Any.fromFunction3(value))
+      inline def setReplaceState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "replaceState", js.Any.fromFunction3(value))
     }
   }
 }

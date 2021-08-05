@@ -11,19 +11,15 @@ trait TimestampPropertyOptions extends StObject {
 }
 object TimestampPropertyOptions {
   
-  @scala.inline
-  def apply(): TimestampPropertyOptions = {
+  inline def apply(): TimestampPropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimestampPropertyOptions]
   }
   
-  @scala.inline
-  implicit class TimestampPropertyOptionsMutableBuilder[Self <: TimestampPropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimestampPropertyOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorOptions(value: TimestampOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
+    inline def setOperatorOptions(value: TimestampOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
+    inline def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
   }
 }

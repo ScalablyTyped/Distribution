@@ -22,32 +22,24 @@ object anon {
   }
   object Age {
     
-    @scala.inline
-    def apply(age: Double, birthday: js.Any, email: String, id: String, nickname: String, profile_image: String): Age = {
+    inline def apply(age: Double, birthday: js.Any, email: String, id: String, nickname: String, profile_image: String): Age = {
       val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], profile_image = profile_image.asInstanceOf[js.Any])
       __obj.asInstanceOf[Age]
     }
     
-    @scala.inline
-    implicit class AgeMutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
+    extension [Self <: Age](x: Self) {
       
-      @scala.inline
-      def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+      inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBirthday(value: js.Any): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+      inline def setBirthday(value: js.Any): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_image(value: String): Self = StObject.set(x, "profile_image", value.asInstanceOf[js.Any])
+      inline def setProfile_image(value: String): Self = StObject.set(x, "profile_image", value.asInstanceOf[js.Any])
     }
   }
 }

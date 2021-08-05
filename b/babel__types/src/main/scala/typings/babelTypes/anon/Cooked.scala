@@ -12,22 +12,17 @@ trait Cooked extends StObject {
 }
 object Cooked {
   
-  @scala.inline
-  def apply(raw: String): Cooked = {
+  inline def apply(raw: String): Cooked = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cooked]
   }
   
-  @scala.inline
-  implicit class CookedMutableBuilder[Self <: Cooked] (val x: Self) extends AnyVal {
+  extension [Self <: Cooked](x: Self) {
     
-    @scala.inline
-    def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
+    inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookedUndefined: Self = StObject.set(x, "cooked", js.undefined)
+    inline def setCookedUndefined: Self = StObject.set(x, "cooked", js.undefined)
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
   }
 }

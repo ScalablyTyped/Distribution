@@ -30,37 +30,27 @@ trait CanvasWrapper extends StObject {
 }
 object CanvasWrapper {
   
-  @scala.inline
-  def apply(): CanvasWrapper = {
+  inline def apply(): CanvasWrapper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasWrapper]
   }
   
-  @scala.inline
-  implicit class CanvasWrapperMutableBuilder[Self <: CanvasWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasWrapper](x: Self) {
     
-    @scala.inline
-    def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+    inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setType(value: MimeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MimeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

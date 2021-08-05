@@ -15,22 +15,17 @@ trait RequesterAdvertisement
 }
 object RequesterAdvertisement {
   
-  @scala.inline
-  def apply(name: String): RequesterAdvertisement = {
+  inline def apply(name: String): RequesterAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequesterAdvertisement]
   }
   
-  @scala.inline
-  implicit class RequesterAdvertisementMutableBuilder[Self <: RequesterAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: RequesterAdvertisement](x: Self) {
     
-    @scala.inline
-    def setRequests(value: js.Array[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: String*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: String*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

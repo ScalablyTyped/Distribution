@@ -13,19 +13,15 @@ trait StorageClassAnalysis extends StObject {
 }
 object StorageClassAnalysis {
   
-  @scala.inline
-  def apply(): StorageClassAnalysis = {
+  inline def apply(): StorageClassAnalysis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageClassAnalysis]
   }
   
-  @scala.inline
-  implicit class StorageClassAnalysisMutableBuilder[Self <: StorageClassAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: StorageClassAnalysis](x: Self) {
     
-    @scala.inline
-    def setDataExport(value: StorageClassAnalysisDataExport): Self = StObject.set(x, "DataExport", value.asInstanceOf[js.Any])
+    inline def setDataExport(value: StorageClassAnalysisDataExport): Self = StObject.set(x, "DataExport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExportUndefined: Self = StObject.set(x, "DataExport", js.undefined)
+    inline def setDataExportUndefined: Self = StObject.set(x, "DataExport", js.undefined)
   }
 }

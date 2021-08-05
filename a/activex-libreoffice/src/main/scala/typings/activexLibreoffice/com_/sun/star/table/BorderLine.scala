@@ -30,25 +30,19 @@ trait BorderLine extends StObject {
 }
 object BorderLine {
   
-  @scala.inline
-  def apply(Color: Color, InnerLineWidth: Double, LineDistance: Double, OuterLineWidth: Double): BorderLine = {
+  inline def apply(Color: Color, InnerLineWidth: Double, LineDistance: Double, OuterLineWidth: Double): BorderLine = {
     val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], InnerLineWidth = InnerLineWidth.asInstanceOf[js.Any], LineDistance = LineDistance.asInstanceOf[js.Any], OuterLineWidth = OuterLineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderLine]
   }
   
-  @scala.inline
-  implicit class BorderLineMutableBuilder[Self <: BorderLine] (val x: Self) extends AnyVal {
+  extension [Self <: BorderLine](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerLineWidth(value: Double): Self = StObject.set(x, "InnerLineWidth", value.asInstanceOf[js.Any])
+    inline def setInnerLineWidth(value: Double): Self = StObject.set(x, "InnerLineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDistance(value: Double): Self = StObject.set(x, "LineDistance", value.asInstanceOf[js.Any])
+    inline def setLineDistance(value: Double): Self = StObject.set(x, "LineDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterLineWidth(value: Double): Self = StObject.set(x, "OuterLineWidth", value.asInstanceOf[js.Any])
+    inline def setOuterLineWidth(value: Double): Self = StObject.set(x, "OuterLineWidth", value.asInstanceOf[js.Any])
   }
 }

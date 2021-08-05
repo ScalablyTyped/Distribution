@@ -23,31 +23,23 @@ trait ObserverBaseOpts extends StObject {
 }
 object ObserverBaseOpts {
   
-  @scala.inline
-  def apply(): ObserverBaseOpts = {
+  inline def apply(): ObserverBaseOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObserverBaseOpts]
   }
   
-  @scala.inline
-  implicit class ObserverBaseOptsMutableBuilder[Self <: ObserverBaseOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ObserverBaseOpts](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
-    @scala.inline
-    def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
   }
 }

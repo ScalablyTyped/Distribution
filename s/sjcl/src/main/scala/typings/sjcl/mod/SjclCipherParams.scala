@@ -23,55 +23,39 @@ trait SjclCipherParams extends StObject {
 }
 object SjclCipherParams {
   
-  @scala.inline
-  def apply(): SjclCipherParams = {
+  inline def apply(): SjclCipherParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SjclCipherParams]
   }
   
-  @scala.inline
-  implicit class SjclCipherParamsMutableBuilder[Self <: SjclCipherParams] (val x: Self) extends AnyVal {
+  extension [Self <: SjclCipherParams](x: Self) {
     
-    @scala.inline
-    def setAdata(value: String): Self = StObject.set(x, "adata", value.asInstanceOf[js.Any])
+    inline def setAdata(value: String): Self = StObject.set(x, "adata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdataUndefined: Self = StObject.set(x, "adata", js.undefined)
+    inline def setAdataUndefined: Self = StObject.set(x, "adata", js.undefined)
     
-    @scala.inline
-    def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+    inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
+    inline def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
     
-    @scala.inline
-    def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
+    inline def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterUndefined: Self = StObject.set(x, "iter", js.undefined)
+    inline def setIterUndefined: Self = StObject.set(x, "iter", js.undefined)
     
-    @scala.inline
-    def setKs(value: Double): Self = StObject.set(x, "ks", value.asInstanceOf[js.Any])
+    inline def setKs(value: Double): Self = StObject.set(x, "ks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKsUndefined: Self = StObject.set(x, "ks", js.undefined)
+    inline def setKsUndefined: Self = StObject.set(x, "ks", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
+    inline def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
-    @scala.inline
-    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

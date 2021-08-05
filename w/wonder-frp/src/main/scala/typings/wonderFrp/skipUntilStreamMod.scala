@@ -13,9 +13,9 @@ object skipUntilStreamMod {
   class SkipUntilStream protected () extends BaseStream {
     def this(source: Stream, otherStream: Stream) = this()
     
-    var _otherStream: js.Any = js.native
+    /* private */ var _otherStream: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     var isOpen: Boolean = js.native
   }
@@ -26,7 +26,6 @@ object skipUntilStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(source: Stream, otherSteam: Stream): SkipUntilStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], otherSteam.asInstanceOf[js.Any])).asInstanceOf[SkipUntilStream]
+    inline def create(source: Stream, otherSteam: Stream): SkipUntilStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], otherSteam.asInstanceOf[js.Any])).asInstanceOf[SkipUntilStream]
   }
 }

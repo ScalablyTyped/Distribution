@@ -25,25 +25,19 @@ trait GoogleActionsV2DevicesAndroidAppVersionFilter extends StObject {
 }
 object GoogleActionsV2DevicesAndroidAppVersionFilter {
   
-  @scala.inline
-  def apply(): GoogleActionsV2DevicesAndroidAppVersionFilter = {
+  inline def apply(): GoogleActionsV2DevicesAndroidAppVersionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2DevicesAndroidAppVersionFilter]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DevicesAndroidAppVersionFilterMutableBuilder[Self <: GoogleActionsV2DevicesAndroidAppVersionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2DevicesAndroidAppVersionFilter](x: Self) {
     
-    @scala.inline
-    def setMaxVersion(value: Double): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+    inline def setMaxVersion(value: Double): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
+    inline def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
     
-    @scala.inline
-    def setMinVersion(value: Double): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
+    inline def setMinVersion(value: Double): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinVersionUndefined: Self = StObject.set(x, "minVersion", js.undefined)
+    inline def setMinVersionUndefined: Self = StObject.set(x, "minVersion", js.undefined)
   }
 }

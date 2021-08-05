@@ -12,19 +12,15 @@ trait GanttLocale extends StObject {
 }
 object GanttLocale {
   
-  @scala.inline
-  def apply(date: GanttLocaleDate, labels: GanttLocaleLabels): GanttLocale = {
+  inline def apply(date: GanttLocaleDate, labels: GanttLocaleLabels): GanttLocale = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttLocale]
   }
   
-  @scala.inline
-  implicit class GanttLocaleMutableBuilder[Self <: GanttLocale] (val x: Self) extends AnyVal {
+  extension [Self <: GanttLocale](x: Self) {
     
-    @scala.inline
-    def setDate(value: GanttLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: GanttLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: GanttLocaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: GanttLocaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
   }
 }

@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintColorMode extends StObject
 object PrintColorMode {
   
-  @scala.inline
-  def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
+  inline def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
   
-  @scala.inline
-  def `auto-monochrome`: typings.ipp.ippStrings.`auto-monochrome` = "auto-monochrome".asInstanceOf[typings.ipp.ippStrings.`auto-monochrome`]
+  inline def `auto-monochrome`: typings.ipp.ippStrings.`auto-monochrome` = "auto-monochrome".asInstanceOf[typings.ipp.ippStrings.`auto-monochrome`]
   
-  @scala.inline
-  def `bi-level`: typings.ipp.ippStrings.`bi-level` = "bi-level".asInstanceOf[typings.ipp.ippStrings.`bi-level`]
+  inline def `bi-level`: typings.ipp.ippStrings.`bi-level` = "bi-level".asInstanceOf[typings.ipp.ippStrings.`bi-level`]
   
-  @scala.inline
-  def color: typings.ipp.ippStrings.color = "color".asInstanceOf[typings.ipp.ippStrings.color]
+  inline def color: typings.ipp.ippStrings.color = "color".asInstanceOf[typings.ipp.ippStrings.color]
   
-  @scala.inline
-  def highlight: typings.ipp.ippStrings.highlight = "highlight".asInstanceOf[typings.ipp.ippStrings.highlight]
+  inline def highlight: typings.ipp.ippStrings.highlight = "highlight".asInstanceOf[typings.ipp.ippStrings.highlight]
   
-  @scala.inline
-  def monochrome: typings.ipp.ippStrings.monochrome = "monochrome".asInstanceOf[typings.ipp.ippStrings.monochrome]
+  inline def monochrome: typings.ipp.ippStrings.monochrome = "monochrome".asInstanceOf[typings.ipp.ippStrings.monochrome]
   
-  @scala.inline
-  def `process-bi-level`: typings.ipp.ippStrings.`process-bi-level` = "process-bi-level".asInstanceOf[typings.ipp.ippStrings.`process-bi-level`]
+  inline def `process-bi-level`: typings.ipp.ippStrings.`process-bi-level` = "process-bi-level".asInstanceOf[typings.ipp.ippStrings.`process-bi-level`]
   
-  @scala.inline
-  def `process-monochrome`: typings.ipp.ippStrings.`process-monochrome` = "process-monochrome".asInstanceOf[typings.ipp.ippStrings.`process-monochrome`]
+  inline def `process-monochrome`: typings.ipp.ippStrings.`process-monochrome` = "process-monochrome".asInstanceOf[typings.ipp.ippStrings.`process-monochrome`]
 }

@@ -19,22 +19,17 @@ trait DeploymentResult extends StObject {
 }
 object DeploymentResult {
   
-  @scala.inline
-  def apply(activityId: String, errorText: String, extendedErrorCode: WinRTError): DeploymentResult = {
+  inline def apply(activityId: String, errorText: String, extendedErrorCode: WinRTError): DeploymentResult = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], extendedErrorCode = extendedErrorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentResult]
   }
   
-  @scala.inline
-  implicit class DeploymentResultMutableBuilder[Self <: DeploymentResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentResult](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedErrorCode(value: WinRTError): Self = StObject.set(x, "extendedErrorCode", value.asInstanceOf[js.Any])
+    inline def setExtendedErrorCode(value: WinRTError): Self = StObject.set(x, "extendedErrorCode", value.asInstanceOf[js.Any])
   }
 }

@@ -20,19 +20,15 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(range: IRange, uri: Uri): Location = {
+  inline def apply(range: IRange, uri: Uri): Location = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

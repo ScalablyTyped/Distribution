@@ -37,43 +37,31 @@ trait SchemaRepoSource extends StObject {
 }
 object SchemaRepoSource {
   
-  @scala.inline
-  def apply(): SchemaRepoSource = {
+  inline def apply(): SchemaRepoSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRepoSource]
   }
   
-  @scala.inline
-  implicit class SchemaRepoSourceMutableBuilder[Self <: SchemaRepoSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRepoSource](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
+    inline def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
     
-    @scala.inline
-    def setCommitSha(value: String): Self = StObject.set(x, "commitSha", value.asInstanceOf[js.Any])
+    inline def setCommitSha(value: String): Self = StObject.set(x, "commitSha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitShaUndefined: Self = StObject.set(x, "commitSha", js.undefined)
+    inline def setCommitShaUndefined: Self = StObject.set(x, "commitSha", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
+    inline def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
+    inline def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

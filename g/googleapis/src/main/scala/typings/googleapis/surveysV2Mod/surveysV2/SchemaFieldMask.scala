@@ -12,28 +12,21 @@ trait SchemaFieldMask extends StObject {
 }
 object SchemaFieldMask {
   
-  @scala.inline
-  def apply(): SchemaFieldMask = {
+  inline def apply(): SchemaFieldMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFieldMask]
   }
   
-  @scala.inline
-  implicit class SchemaFieldMaskMutableBuilder[Self <: SchemaFieldMask] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldMask](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[SchemaFieldMask]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[SchemaFieldMask]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: SchemaFieldMask*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaFieldMask*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

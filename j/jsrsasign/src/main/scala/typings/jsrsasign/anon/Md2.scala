@@ -24,8 +24,7 @@ trait Md2 extends StObject {
 }
 object Md2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     md2: String,
     md5: String,
     ripemd160: String,
@@ -39,31 +38,22 @@ object Md2 {
     __obj.asInstanceOf[Md2]
   }
   
-  @scala.inline
-  implicit class Md2MutableBuilder[Self <: Md2] (val x: Self) extends AnyVal {
+  extension [Self <: Md2](x: Self) {
     
-    @scala.inline
-    def setMd2(value: String): Self = StObject.set(x, "md2", value.asInstanceOf[js.Any])
+    inline def setMd2(value: String): Self = StObject.set(x, "md2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+    inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRipemd160(value: String): Self = StObject.set(x, "ripemd160", value.asInstanceOf[js.Any])
+    inline def setRipemd160(value: String): Self = StObject.set(x, "ripemd160", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha224(value: String): Self = StObject.set(x, "sha224", value.asInstanceOf[js.Any])
+    inline def setSha224(value: String): Self = StObject.set(x, "sha224", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha384(value: String): Self = StObject.set(x, "sha384", value.asInstanceOf[js.Any])
+    inline def setSha384(value: String): Self = StObject.set(x, "sha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
+    inline def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
   }
 }

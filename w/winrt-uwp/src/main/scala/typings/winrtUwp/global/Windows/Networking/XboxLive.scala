@@ -33,8 +33,7 @@ object XboxLive {
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def createFromSnapshotBase64(base64: String): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSnapshotBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
+    inline def createFromSnapshotBase64(base64: String): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSnapshotBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
@@ -42,8 +41,7 @@ object XboxLive {
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def createFromSnapshotBuffer(buffer: IBuffer): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSnapshotBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
+    inline def createFromSnapshotBuffer(buffer: IBuffer): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSnapshotBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
@@ -51,24 +49,21 @@ object XboxLive {
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def createFromSnapshotBytes(buffer: js.Array[Double]): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSnapshotBytes")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
+    inline def createFromSnapshotBytes(buffer: js.Array[Double]): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSnapshotBytes")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def getLocal(): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocal")().asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
+    inline def getLocal(): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocal")().asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress]
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
     @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress.maxSnapshotBytesSize")
     @js.native
     def maxSnapshotBytesSize: Double = js.native
-    @scala.inline
-    def maxSnapshotBytesSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSnapshotBytesSize")(x.asInstanceOf[js.Any])
+    inline def maxSnapshotBytesSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSnapshotBytesSize")(x.asInstanceOf[js.Any])
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
@@ -92,8 +87,7 @@ object XboxLive {
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def findEndpointPairByHostNamesAndPorts(
+    inline def findEndpointPairByHostNamesAndPorts(
       localHostName: typings.winrtUwp.Windows.Networking.HostName,
       localPort: String,
       remoteHostName: typings.winrtUwp.Windows.Networking.HostName,
@@ -107,8 +101,7 @@ object XboxLive {
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def findEndpointPairBySocketAddressBytes(localSocketAddress: js.Array[Double], remoteSocketAddress: js.Array[Double]): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPair = (^.asInstanceOf[js.Dynamic].applyDynamic("findEndpointPairBySocketAddressBytes")(localSocketAddress.asInstanceOf[js.Any], remoteSocketAddress.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPair]
+    inline def findEndpointPairBySocketAddressBytes(localSocketAddress: js.Array[Double], remoteSocketAddress: js.Array[Double]): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPair = (^.asInstanceOf[js.Dynamic].applyDynamic("findEndpointPairBySocketAddressBytes")(localSocketAddress.asInstanceOf[js.Any], remoteSocketAddress.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPair]
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
@@ -236,16 +229,14 @@ object XboxLive {
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def getTemplateByName(name: String): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateByName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate]
+    inline def getTemplateByName(name: String): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateByName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate]
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
     @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.templates")
     @js.native
     def templates: IVectorView[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate] = js.native
-    @scala.inline
-    def templates_=(x: IVectorView[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("templates")(x.asInstanceOf[js.Any])
+    inline def templates_=(x: IVectorView[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("templates")(x.asInstanceOf[js.Any])
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
@@ -374,56 +365,49 @@ object XboxLive {
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
-    @scala.inline
-    def clearPrivatePayload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPrivatePayload")().asInstanceOf[Unit]
+    inline def clearPrivatePayload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPrivatePayload")().asInstanceOf[Unit]
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
     @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.isSystemInboundBandwidthConstrained")
     @js.native
     def isSystemInboundBandwidthConstrained: Boolean = js.native
-    @scala.inline
-    def isSystemInboundBandwidthConstrained_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSystemInboundBandwidthConstrained")(x.asInstanceOf[js.Any])
+    inline def isSystemInboundBandwidthConstrained_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSystemInboundBandwidthConstrained")(x.asInstanceOf[js.Any])
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
     @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.isSystemOutboundBandwidthConstrained")
     @js.native
     def isSystemOutboundBandwidthConstrained: Boolean = js.native
-    @scala.inline
-    def isSystemOutboundBandwidthConstrained_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSystemOutboundBandwidthConstrained")(x.asInstanceOf[js.Any])
+    inline def isSystemOutboundBandwidthConstrained_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSystemOutboundBandwidthConstrained")(x.asInstanceOf[js.Any])
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
     @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.maxPrivatePayloadSize")
     @js.native
     def maxPrivatePayloadSize: Double = js.native
-    @scala.inline
-    def maxPrivatePayloadSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxPrivatePayloadSize")(x.asInstanceOf[js.Any])
+    inline def maxPrivatePayloadSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxPrivatePayloadSize")(x.asInstanceOf[js.Any])
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
     @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.maxSimultaneousProbeConnections")
     @js.native
     def maxSimultaneousProbeConnections: Double = js.native
-    @scala.inline
-    def maxSimultaneousProbeConnections_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSimultaneousProbeConnections")(x.asInstanceOf[js.Any])
+    inline def maxSimultaneousProbeConnections_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSimultaneousProbeConnections")(x.asInstanceOf[js.Any])
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @param payload This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
     /* static member */
-    @scala.inline
-    def publishPrivatePayloadBytes(payload: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("publishPrivatePayloadBytes")(payload.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def publishPrivatePayloadBytes(payload: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("publishPrivatePayloadBytes")(payload.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
     /* static member */
     @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.publishedPrivatePayload")
     @js.native
     def publishedPrivatePayload: IBuffer = js.native
-    @scala.inline
-    def publishedPrivatePayload_=(x: IBuffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publishedPrivatePayload")(x.asInstanceOf[js.Any])
+    inline def publishedPrivatePayload_=(x: IBuffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publishedPrivatePayload")(x.asInstanceOf[js.Any])
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */

@@ -60,8 +60,7 @@ object Physijs {
   }
   object ConeTwistConstraintDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axisa: Vector3,
       axisb: Vector3,
       id: Double,
@@ -76,32 +75,23 @@ object Physijs {
       __obj.asInstanceOf[ConeTwistConstraintDefinition]
     }
     
-    @scala.inline
-    implicit class ConeTwistConstraintDefinitionMutableBuilder[Self <: ConeTwistConstraintDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ConeTwistConstraintDefinition](x: Self) {
       
-      @scala.inline
-      def setAxisa(value: Vector3): Self = StObject.set(x, "axisa", value.asInstanceOf[js.Any])
+      inline def setAxisa(value: Vector3): Self = StObject.set(x, "axisa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisb(value: Vector3): Self = StObject.set(x, "axisb", value.asInstanceOf[js.Any])
+      inline def setAxisb(value: Vector3): Self = StObject.set(x, "axisb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
+      inline def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
+      inline def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
+      inline def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
+      inline def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,17 +101,14 @@ object Physijs {
   }
   object Constraint {
     
-    @scala.inline
-    def apply(getDefinition: () => js.Any): Constraint = {
+    inline def apply(getDefinition: () => js.Any): Constraint = {
       val __obj = js.Dynamic.literal(getDefinition = js.Any.fromFunction0(getDefinition))
       __obj.asInstanceOf[Constraint]
     }
     
-    @scala.inline
-    implicit class ConstraintMutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
+    extension [Self <: Constraint](x: Self) {
       
-      @scala.inline
-      def setGetDefinition(value: () => js.Any): Self = StObject.set(x, "getDefinition", js.Any.fromFunction0(value))
+      inline def setGetDefinition(value: () => js.Any): Self = StObject.set(x, "getDefinition", js.Any.fromFunction0(value))
     }
   }
   
@@ -149,8 +136,7 @@ object Physijs {
   }
   object DOFConstraint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       configureAngularMotor: (Double, Double, Double, Double, Double) => Unit,
       disableAngularMotor: Double => Unit,
       enableAngularMotor: Double => Unit,
@@ -164,29 +150,21 @@ object Physijs {
       __obj.asInstanceOf[DOFConstraint]
     }
     
-    @scala.inline
-    implicit class DOFConstraintMutableBuilder[Self <: DOFConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: DOFConstraint](x: Self) {
       
-      @scala.inline
-      def setConfigureAngularMotor(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "configureAngularMotor", js.Any.fromFunction5(value))
+      inline def setConfigureAngularMotor(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "configureAngularMotor", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setDisableAngularMotor(value: Double => Unit): Self = StObject.set(x, "disableAngularMotor", js.Any.fromFunction1(value))
+      inline def setDisableAngularMotor(value: Double => Unit): Self = StObject.set(x, "disableAngularMotor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnableAngularMotor(value: Double => Unit): Self = StObject.set(x, "enableAngularMotor", js.Any.fromFunction1(value))
+      inline def setEnableAngularMotor(value: Double => Unit): Self = StObject.set(x, "enableAngularMotor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAngularLowerLimit(value: Vector3 => Unit): Self = StObject.set(x, "setAngularLowerLimit", js.Any.fromFunction1(value))
+      inline def setSetAngularLowerLimit(value: Vector3 => Unit): Self = StObject.set(x, "setAngularLowerLimit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAngularUpperLimit(value: Vector3 => Unit): Self = StObject.set(x, "setAngularUpperLimit", js.Any.fromFunction1(value))
+      inline def setSetAngularUpperLimit(value: Vector3 => Unit): Self = StObject.set(x, "setAngularUpperLimit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLinearLowerLimit(value: Vector3 => Unit): Self = StObject.set(x, "setLinearLowerLimit", js.Any.fromFunction1(value))
+      inline def setSetLinearLowerLimit(value: Vector3 => Unit): Self = StObject.set(x, "setLinearLowerLimit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLinearUpperLimit(value: Vector3 => Unit): Self = StObject.set(x, "setLinearUpperLimit", js.Any.fromFunction1(value))
+      inline def setSetLinearUpperLimit(value: Vector3 => Unit): Self = StObject.set(x, "setLinearUpperLimit", js.Any.fromFunction1(value))
     }
   }
   
@@ -210,8 +188,7 @@ object Physijs {
   }
   object DOFConstraintDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axisa: Vector3,
       axisb: Vector3,
       id: Double,
@@ -226,32 +203,23 @@ object Physijs {
       __obj.asInstanceOf[DOFConstraintDefinition]
     }
     
-    @scala.inline
-    implicit class DOFConstraintDefinitionMutableBuilder[Self <: DOFConstraintDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: DOFConstraintDefinition](x: Self) {
       
-      @scala.inline
-      def setAxisa(value: Vector3): Self = StObject.set(x, "axisa", value.asInstanceOf[js.Any])
+      inline def setAxisa(value: Vector3): Self = StObject.set(x, "axisa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisb(value: Vector3): Self = StObject.set(x, "axisb", value.asInstanceOf[js.Any])
+      inline def setAxisb(value: Vector3): Self = StObject.set(x, "axisb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
+      inline def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
+      inline def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
+      inline def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
+      inline def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,8 +237,7 @@ object Physijs {
   }
   object HingeConstraint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableMotor: () => Unit,
       enableAngularMotor: (Double, Double) => Unit,
       getDefinition: () => js.Any,
@@ -280,17 +247,13 @@ object Physijs {
       __obj.asInstanceOf[HingeConstraint]
     }
     
-    @scala.inline
-    implicit class HingeConstraintMutableBuilder[Self <: HingeConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: HingeConstraint](x: Self) {
       
-      @scala.inline
-      def setDisableMotor(value: () => Unit): Self = StObject.set(x, "disableMotor", js.Any.fromFunction0(value))
+      inline def setDisableMotor(value: () => Unit): Self = StObject.set(x, "disableMotor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableAngularMotor(value: (Double, Double) => Unit): Self = StObject.set(x, "enableAngularMotor", js.Any.fromFunction2(value))
+      inline def setEnableAngularMotor(value: (Double, Double) => Unit): Self = StObject.set(x, "enableAngularMotor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetLimits(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setLimits", js.Any.fromFunction4(value))
+      inline def setSetLimits(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setLimits", js.Any.fromFunction4(value))
     }
   }
   
@@ -312,8 +275,7 @@ object Physijs {
   }
   object HingeConstraintDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axis: Vector3,
       id: Double,
       objecta: Object3D,
@@ -327,29 +289,21 @@ object Physijs {
       __obj.asInstanceOf[HingeConstraintDefinition]
     }
     
-    @scala.inline
-    implicit class HingeConstraintDefinitionMutableBuilder[Self <: HingeConstraintDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: HingeConstraintDefinition](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Vector3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Vector3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
+      inline def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
+      inline def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
+      inline def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
+      inline def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -405,8 +359,7 @@ object Physijs {
        with Constraint
   object PointConstraint {
     
-    @scala.inline
-    def apply(getDefinition: () => js.Any): PointConstraint = {
+    inline def apply(getDefinition: () => js.Any): PointConstraint = {
       val __obj = js.Dynamic.literal(getDefinition = js.Any.fromFunction0(getDefinition))
       __obj.asInstanceOf[PointConstraint]
     }
@@ -428,8 +381,7 @@ object Physijs {
   }
   object PointConstraintDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: Double,
       objecta: Object3D,
       objectb: Object3D,
@@ -442,26 +394,19 @@ object Physijs {
       __obj.asInstanceOf[PointConstraintDefinition]
     }
     
-    @scala.inline
-    implicit class PointConstraintDefinitionMutableBuilder[Self <: PointConstraintDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: PointConstraintDefinition](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
+      inline def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
+      inline def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
+      inline def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
+      inline def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -506,32 +451,24 @@ object Physijs {
   }
   object SceneParameters {
     
-    @scala.inline
-    def apply(): SceneParameters = {
+    inline def apply(): SceneParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SceneParameters]
     }
     
-    @scala.inline
-    implicit class SceneParametersMutableBuilder[Self <: SceneParameters] (val x: Self) extends AnyVal {
+    extension [Self <: SceneParameters](x: Self) {
       
-      @scala.inline
-      def setAmmo(value: String): Self = StObject.set(x, "ammo", value.asInstanceOf[js.Any])
+      inline def setAmmo(value: String): Self = StObject.set(x, "ammo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmmoUndefined: Self = StObject.set(x, "ammo", js.undefined)
+      inline def setAmmoUndefined: Self = StObject.set(x, "ammo", js.undefined)
       
-      @scala.inline
-      def setFixedTimeStep(value: Double): Self = StObject.set(x, "fixedTimeStep", value.asInstanceOf[js.Any])
+      inline def setFixedTimeStep(value: Double): Self = StObject.set(x, "fixedTimeStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedTimeStepUndefined: Self = StObject.set(x, "fixedTimeStep", js.undefined)
+      inline def setFixedTimeStepUndefined: Self = StObject.set(x, "fixedTimeStep", js.undefined)
       
-      @scala.inline
-      def setRateLimit(value: Boolean): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Boolean): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     }
   }
   
@@ -553,8 +490,7 @@ object Physijs {
   }
   object SliderConstraint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableAngularMotor: () => Unit,
       disableLinearMotor: () => Unit,
       enableAngularMotor: (Double, Double) => Unit,
@@ -567,26 +503,19 @@ object Physijs {
       __obj.asInstanceOf[SliderConstraint]
     }
     
-    @scala.inline
-    implicit class SliderConstraintMutableBuilder[Self <: SliderConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: SliderConstraint](x: Self) {
       
-      @scala.inline
-      def setDisableAngularMotor(value: () => Unit): Self = StObject.set(x, "disableAngularMotor", js.Any.fromFunction0(value))
+      inline def setDisableAngularMotor(value: () => Unit): Self = StObject.set(x, "disableAngularMotor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableLinearMotor(value: () => Unit): Self = StObject.set(x, "disableLinearMotor", js.Any.fromFunction0(value))
+      inline def setDisableLinearMotor(value: () => Unit): Self = StObject.set(x, "disableLinearMotor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableAngularMotor(value: (Double, Double) => Unit): Self = StObject.set(x, "enableAngularMotor", js.Any.fromFunction2(value))
+      inline def setEnableAngularMotor(value: (Double, Double) => Unit): Self = StObject.set(x, "enableAngularMotor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnableLinearMotor(value: (Double, Double) => Unit): Self = StObject.set(x, "enableLinearMotor", js.Any.fromFunction2(value))
+      inline def setEnableLinearMotor(value: (Double, Double) => Unit): Self = StObject.set(x, "enableLinearMotor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetLimits(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setLimits", js.Any.fromFunction4(value))
+      inline def setSetLimits(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setLimits", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSetRestitution(value: (Double, Double) => Unit): Self = StObject.set(x, "setRestitution", js.Any.fromFunction2(value))
+      inline def setSetRestitution(value: (Double, Double) => Unit): Self = StObject.set(x, "setRestitution", js.Any.fromFunction2(value))
     }
   }
   
@@ -608,8 +537,7 @@ object Physijs {
   }
   object SliderConstraintDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axis: Vector3,
       id: Double,
       objecta: Object3D,
@@ -623,29 +551,21 @@ object Physijs {
       __obj.asInstanceOf[SliderConstraintDefinition]
     }
     
-    @scala.inline
-    implicit class SliderConstraintDefinitionMutableBuilder[Self <: SliderConstraintDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: SliderConstraintDefinition](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Vector3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Vector3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
+      inline def setObjecta(value: Object3D): Self = StObject.set(x, "objecta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
+      inline def setObjectb(value: Object3D): Self = StObject.set(x, "objectb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
+      inline def setPositiona(value: Vector3): Self = StObject.set(x, "positiona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
+      inline def setPositionb(value: Vector3): Self = StObject.set(x, "positionb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -732,8 +652,7 @@ object Physijs {
   }
   object VehicleTuning {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       friction_slip: Double,
       max_suspension_force: Double,
       max_suspension_travel: Double,
@@ -745,26 +664,19 @@ object Physijs {
       __obj.asInstanceOf[VehicleTuning]
     }
     
-    @scala.inline
-    implicit class VehicleTuningMutableBuilder[Self <: VehicleTuning] (val x: Self) extends AnyVal {
+    extension [Self <: VehicleTuning](x: Self) {
       
-      @scala.inline
-      def setFriction_slip(value: Double): Self = StObject.set(x, "friction_slip", value.asInstanceOf[js.Any])
+      inline def setFriction_slip(value: Double): Self = StObject.set(x, "friction_slip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_suspension_force(value: Double): Self = StObject.set(x, "max_suspension_force", value.asInstanceOf[js.Any])
+      inline def setMax_suspension_force(value: Double): Self = StObject.set(x, "max_suspension_force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_suspension_travel(value: Double): Self = StObject.set(x, "max_suspension_travel", value.asInstanceOf[js.Any])
+      inline def setMax_suspension_travel(value: Double): Self = StObject.set(x, "max_suspension_travel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuspension_compression(value: Double): Self = StObject.set(x, "suspension_compression", value.asInstanceOf[js.Any])
+      inline def setSuspension_compression(value: Double): Self = StObject.set(x, "suspension_compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuspension_damping(value: Double): Self = StObject.set(x, "suspension_damping", value.asInstanceOf[js.Any])
+      inline def setSuspension_damping(value: Double): Self = StObject.set(x, "suspension_damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuspension_stiffness(value: Double): Self = StObject.set(x, "suspension_stiffness", value.asInstanceOf[js.Any])
+      inline def setSuspension_stiffness(value: Double): Self = StObject.set(x, "suspension_stiffness", value.asInstanceOf[js.Any])
     }
   }
 }

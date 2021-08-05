@@ -61,8 +61,7 @@ trait ASPxClientDashboardItemDataDeltaValue extends StObject {
 }
 object ASPxClientDashboardItemDataDeltaValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAbsoluteVariation: () => ASPxClientDashboardItemDataMeasureValue,
     GetActualValue: () => ASPxClientDashboardItemDataMeasureValue,
     GetDisplaySubValue1: () => ASPxClientDashboardItemDataMeasureValue,
@@ -78,37 +77,26 @@ object ASPxClientDashboardItemDataDeltaValue {
     __obj.asInstanceOf[ASPxClientDashboardItemDataDeltaValue]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemDataDeltaValueMutableBuilder[Self <: ASPxClientDashboardItemDataDeltaValue] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemDataDeltaValue](x: Self) {
     
-    @scala.inline
-    def setGetAbsoluteVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetAbsoluteVariation", js.Any.fromFunction0(value))
+    inline def setGetAbsoluteVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetAbsoluteVariation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActualValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetActualValue", js.Any.fromFunction0(value))
+    inline def setGetActualValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetActualValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplaySubValue1(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplaySubValue1", js.Any.fromFunction0(value))
+    inline def setGetDisplaySubValue1(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplaySubValue1", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplaySubValue2(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplaySubValue2", js.Any.fromFunction0(value))
+    inline def setGetDisplaySubValue2(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplaySubValue2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplayValue", js.Any.fromFunction0(value))
+    inline def setGetDisplayValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplayValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndicatorType(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetIndicatorType", js.Any.fromFunction0(value))
+    inline def setGetIndicatorType(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetIndicatorType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsGood(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetIsGood", js.Any.fromFunction0(value))
+    inline def setGetIsGood(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetIsGood", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPercentOfTarget(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetPercentOfTarget", js.Any.fromFunction0(value))
+    inline def setGetPercentOfTarget(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetPercentOfTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPercentVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetPercentVariation", js.Any.fromFunction0(value))
+    inline def setGetPercentVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetPercentVariation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetTargetValue", js.Any.fromFunction0(value))
+    inline def setGetTargetValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetTargetValue", js.Any.fromFunction0(value))
   }
 }

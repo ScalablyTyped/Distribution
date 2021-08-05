@@ -22,19 +22,15 @@ trait GoogleCloudOrgpolicyV1BooleanPolicy extends StObject {
 }
 object GoogleCloudOrgpolicyV1BooleanPolicy {
   
-  @scala.inline
-  def apply(): GoogleCloudOrgpolicyV1BooleanPolicy = {
+  inline def apply(): GoogleCloudOrgpolicyV1BooleanPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudOrgpolicyV1BooleanPolicy]
   }
   
-  @scala.inline
-  implicit class GoogleCloudOrgpolicyV1BooleanPolicyMutableBuilder[Self <: GoogleCloudOrgpolicyV1BooleanPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudOrgpolicyV1BooleanPolicy](x: Self) {
     
-    @scala.inline
-    def setEnforced(value: Boolean): Self = StObject.set(x, "enforced", value.asInstanceOf[js.Any])
+    inline def setEnforced(value: Boolean): Self = StObject.set(x, "enforced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcedUndefined: Self = StObject.set(x, "enforced", js.undefined)
+    inline def setEnforcedUndefined: Self = StObject.set(x, "enforced", js.undefined)
   }
 }

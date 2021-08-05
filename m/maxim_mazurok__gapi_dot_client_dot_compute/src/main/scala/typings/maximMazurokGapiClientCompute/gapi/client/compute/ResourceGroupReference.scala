@@ -11,19 +11,15 @@ trait ResourceGroupReference extends StObject {
 }
 object ResourceGroupReference {
   
-  @scala.inline
-  def apply(): ResourceGroupReference = {
+  inline def apply(): ResourceGroupReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceGroupReference]
   }
   
-  @scala.inline
-  implicit class ResourceGroupReferenceMutableBuilder[Self <: ResourceGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceGroupReference](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
   }
 }

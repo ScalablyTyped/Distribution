@@ -18,28 +18,21 @@ trait projectRootstringpreferreIsPuppeteerCore extends StObject {
 }
 object projectRootstringpreferreIsPuppeteerCore {
   
-  @scala.inline
-  def apply(isPuppeteerCore: Boolean, preferredRevision: String, projectRoot: String): projectRootstringpreferreIsPuppeteerCore = {
+  inline def apply(isPuppeteerCore: Boolean, preferredRevision: String, projectRoot: String): projectRootstringpreferreIsPuppeteerCore = {
     val __obj = js.Dynamic.literal(isPuppeteerCore = isPuppeteerCore.asInstanceOf[js.Any], preferredRevision = preferredRevision.asInstanceOf[js.Any], projectRoot = projectRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[projectRootstringpreferreIsPuppeteerCore]
   }
   
-  @scala.inline
-  implicit class projectRootstringpreferreIsPuppeteerCoreMutableBuilder[Self <: projectRootstringpreferreIsPuppeteerCore] (val x: Self) extends AnyVal {
+  extension [Self <: projectRootstringpreferreIsPuppeteerCore](x: Self) {
     
-    @scala.inline
-    def setIsPuppeteerCore(value: Boolean): Self = StObject.set(x, "isPuppeteerCore", value.asInstanceOf[js.Any])
+    inline def setIsPuppeteerCore(value: Boolean): Self = StObject.set(x, "isPuppeteerCore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredRevision(value: String): Self = StObject.set(x, "preferredRevision", value.asInstanceOf[js.Any])
+    inline def setPreferredRevision(value: String): Self = StObject.set(x, "preferredRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductName(value: Product): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+    inline def setProductName(value: Product): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+    inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
-    @scala.inline
-    def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
+    inline def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait IAjaxFileResult[T] extends StObject {
 }
 object IAjaxFileResult {
   
-  @scala.inline
-  def apply[T](): IAjaxFileResult[T] = {
+  inline def apply[T](): IAjaxFileResult[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAjaxFileResult[T]]
   }
   
-  @scala.inline
-  implicit class IAjaxFileResultMutableBuilder[Self <: IAjaxFileResult[?], T] (val x: Self & IAjaxFileResult[T]) extends AnyVal {
+  extension [Self <: IAjaxFileResult[?], T](x: Self & IAjaxFileResult[T]) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setStatus(value: IResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: IResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -57,8 +57,7 @@ object Web {
         * @return When this method completes successfully, it returns the found web account.
         */
       /* static member */
-      @scala.inline
-      def findAccountAsync(provider: WebAccountProvider, webAccountId: String): IPromiseWithIAsyncOperation[WebAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAccountAsync")(provider.asInstanceOf[js.Any], webAccountId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccount]]
+      inline def findAccountAsync(provider: WebAccountProvider, webAccountId: String): IPromiseWithIAsyncOperation[WebAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAccountAsync")(provider.asInstanceOf[js.Any], webAccountId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccount]]
       
       /**
         * Finds a web account provider asynchronously with one input.
@@ -66,8 +65,7 @@ object Web {
         * @return When this method completes successfully, it returns the found web account provider.
         */
       /* static member */
-      @scala.inline
-      def findAccountProviderAsync(webAccountProviderId: String): IPromiseWithIAsyncOperation[WebAccountProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAccountProviderAsync")(webAccountProviderId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[WebAccountProvider]]
+      inline def findAccountProviderAsync(webAccountProviderId: String): IPromiseWithIAsyncOperation[WebAccountProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAccountProviderAsync")(webAccountProviderId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[WebAccountProvider]]
       /**
         * Finds a web account provider asynchronously with two inputs.
         * @param webAccountProviderId The Id of the web account provider to find.
@@ -75,8 +73,7 @@ object Web {
         * @return When this method completes successfully, it returns the found web account provider.
         */
       /* static member */
-      @scala.inline
-      def findAccountProviderAsync(webAccountProviderId: String, authority: String): IPromiseWithIAsyncOperation[WebAccountProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAccountProviderAsync")(webAccountProviderId.asInstanceOf[js.Any], authority.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccountProvider]]
+      inline def findAccountProviderAsync(webAccountProviderId: String, authority: String): IPromiseWithIAsyncOperation[WebAccountProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAccountProviderAsync")(webAccountProviderId.asInstanceOf[js.Any], authority.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccountProvider]]
       /**
         * Finds a web account provider asynchronously with three inputs.
         * @param webAccountProviderId The Id of the web account provider to find.
@@ -85,8 +82,7 @@ object Web {
         * @return When this method completes successfully, it returns the found web account provider.
         */
       /* static member */
-      @scala.inline
-      def findAccountProviderAsync(webAccountProviderId: String, authority: String, user: User): IPromiseWithIAsyncOperation[WebAccountProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAccountProviderAsync")(webAccountProviderId.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccountProvider]]
+      inline def findAccountProviderAsync(webAccountProviderId: String, authority: String, user: User): IPromiseWithIAsyncOperation[WebAccountProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAccountProviderAsync")(webAccountProviderId.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccountProvider]]
       
       /**
         * Attempts to get a token without showing any UI using one input. The user will never be prompted to enter their credentials.
@@ -94,8 +90,7 @@ object Web {
         * @return When this method completes successfully, it returns the result of the web token request.
         */
       /* static member */
-      @scala.inline
-      def getTokenSilentlyAsync(request: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTokenSilentlyAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult]]
+      inline def getTokenSilentlyAsync(request: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTokenSilentlyAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult]]
       /**
         * Attempts to get a token without showing any UI using two inputs. The user will never be prompted to enter their credentials.
         * @param request The web token request.
@@ -103,8 +98,7 @@ object Web {
         * @return When this method completes successfully, it returns the result of the web token request.
         */
       /* static member */
-      @scala.inline
-      def getTokenSilentlyAsync(
+      inline def getTokenSilentlyAsync(
         request: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest,
         webAccount: WebAccount
       ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTokenSilentlyAsync")(request.asInstanceOf[js.Any], webAccount.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult]]
@@ -115,8 +109,7 @@ object Web {
         * @return When this method completes successfully, it returns the results of the web token request.
         */
       /* static member */
-      @scala.inline
-      def requestTokenAsync(request: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTokenAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult]]
+      inline def requestTokenAsync(request: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTokenAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult]]
       /**
         * Requests a token from a web account provider asynchronously. If needed, the user may be prompted to enter their credentials.
         * @param request The web token request.
@@ -124,8 +117,7 @@ object Web {
         * @return When this method completes successfully, it returns the results of the web token request.
         */
       /* static member */
-      @scala.inline
-      def requestTokenAsync(
+      inline def requestTokenAsync(
         request: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest,
         webAccount: WebAccount
       ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestTokenAsync")(request.asInstanceOf[js.Any], webAccount.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult]]
@@ -404,8 +396,7 @@ object Web {
         * @return When this method completes, it returns the new web account.
         */
       /* static member */
-      @scala.inline
-      def addWebAccountAsync(webAccountId: String, webAccountUserName: String, props: IMapView[String, String]): IPromiseWithIAsyncOperation[WebAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("addWebAccountAsync")(webAccountId.asInstanceOf[js.Any], webAccountUserName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccount]]
+      inline def addWebAccountAsync(webAccountId: String, webAccountUserName: String, props: IMapView[String, String]): IPromiseWithIAsyncOperation[WebAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("addWebAccountAsync")(webAccountId.asInstanceOf[js.Any], webAccountUserName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[WebAccount]]
       /**
         * Adds a new web account asynchronously with four inputs.
         * @param webAccountId The Id for the web account.
@@ -415,8 +406,7 @@ object Web {
         * @return When this method completes, it returns the new web account.
         */
       /* static member */
-      @scala.inline
-      def addWebAccountAsync(
+      inline def addWebAccountAsync(
         webAccountId: String,
         webAccountUserName: String,
         props: IMapView[String, String],
@@ -430,8 +420,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def clearViewAsync(webAccount: WebAccount, applicationCallbackUri: Uri): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("clearViewAsync")(webAccount.asInstanceOf[js.Any], applicationCallbackUri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def clearViewAsync(webAccount: WebAccount, applicationCallbackUri: Uri): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("clearViewAsync")(webAccount.asInstanceOf[js.Any], applicationCallbackUri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
       
       /**
         * Clears a web account picture asynchronously.
@@ -439,8 +428,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def clearWebAccountPictureAsync(webAccount: WebAccount): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWebAccountPictureAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def clearWebAccountPictureAsync(webAccount: WebAccount): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWebAccountPictureAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
       
       /**
         * Deletes a web account asynchronously.
@@ -448,16 +436,14 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def deleteWebAccountAsync(webAccount: WebAccount): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteWebAccountAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def deleteWebAccountAsync(webAccount: WebAccount): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteWebAccountAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
       
       /**
         * Finds all provider web accounts asynchronously.
         * @return When this method completes, it returns all provider web accounts.
         */
       /* static member */
-      @scala.inline
-      def findAllProviderWebAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllProviderWebAccountsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def findAllProviderWebAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllProviderWebAccountsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
       
       /**
         * Gets the scope of the web account.
@@ -465,8 +451,7 @@ object Web {
         * @return The scope of the web account.
         */
       /* static member */
-      @scala.inline
-      def getScope(webAccount: WebAccount): WebAccountScope = ^.asInstanceOf[js.Dynamic].applyDynamic("getScope")(webAccount.asInstanceOf[js.Any]).asInstanceOf[WebAccountScope]
+      inline def getScope(webAccount: WebAccount): WebAccountScope = ^.asInstanceOf[js.Dynamic].applyDynamic("getScope")(webAccount.asInstanceOf[js.Any]).asInstanceOf[WebAccountScope]
       
       /**
         * Gets the views for a web account asynchronously.
@@ -474,8 +459,7 @@ object Web {
         * @return When this method completes, it returns the views for the web account.
         */
       /* static member */
-      @scala.inline
-      def getViewsAsync(webAccount: WebAccount): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewsAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def getViewsAsync(webAccount: WebAccount): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewsAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
       
       /**
         * Pulls cookies asynchronously. Use this to enable single sign-on in an app after a user has entered their credentials into a web browser.
@@ -484,8 +468,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def pullCookiesAsync(uriString: String, callerPFN: String): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("pullCookiesAsync")(uriString.asInstanceOf[js.Any], callerPFN.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def pullCookiesAsync(uriString: String, callerPFN: String): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("pullCookiesAsync")(uriString.asInstanceOf[js.Any], callerPFN.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
       
       /**
         * Pushes cookies asynchronously. Use this to enable single sign-on for a web account in a browser after the user has entered their credentials into the app.
@@ -494,8 +477,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def pushCookiesAsync(uri: Uri, cookies: IVectorView[HttpCookie]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("pushCookiesAsync")(uri.asInstanceOf[js.Any], cookies.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def pushCookiesAsync(uri: Uri, cookies: IVectorView[HttpCookie]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("pushCookiesAsync")(uri.asInstanceOf[js.Any], cookies.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
       
       /**
         * Sets the scope of a web account asynchronously.
@@ -504,8 +486,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def setScopeAsync(webAccount: WebAccount, scope: WebAccountScope): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setScopeAsync")(webAccount.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def setScopeAsync(webAccount: WebAccount, scope: WebAccountScope): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setScopeAsync")(webAccount.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
       
       /**
         * Sets the view for a web account asynchronously.
@@ -514,8 +495,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def setViewAsync(
+      inline def setViewAsync(
         webAccount: WebAccount,
         view: typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientView
       ): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewAsync")(webAccount.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
@@ -527,8 +507,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def setWebAccountPictureAsync(webAccount: WebAccount, webAccountPicture: IRandomAccessStream): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setWebAccountPictureAsync")(webAccount.asInstanceOf[js.Any], webAccountPicture.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def setWebAccountPictureAsync(webAccount: WebAccount, webAccountPicture: IRandomAccessStream): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setWebAccountPictureAsync")(webAccount.asInstanceOf[js.Any], webAccountPicture.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
       
       /**
         * Updates the properties of a web account asynchronously.
@@ -538,8 +517,7 @@ object Web {
         * @return This method does not return a value.
         */
       /* static member */
-      @scala.inline
-      def updateWebAccountPropertiesAsync(webAccount: WebAccount, webAccountUserName: String, additionalProperties: IMapView[String, String]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWebAccountPropertiesAsync")(webAccount.asInstanceOf[js.Any], webAccountUserName.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+      inline def updateWebAccountPropertiesAsync(webAccount: WebAccount, webAccountUserName: String, additionalProperties: IMapView[String, String]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWebAccountPropertiesAsync")(webAccount.asInstanceOf[js.Any], webAccountUserName.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     }
     
     /** Represents an add account operation. */
@@ -877,16 +855,14 @@ object Web {
       * @param requestUri The starting URI of the web service. This URI must be a secure address of https://.
       */
     /* static member */
-    @scala.inline
-    def authenticateAndContinue(requestUri: Uri): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def authenticateAndContinue(requestUri: Uri): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Starts the authentication operation with two inputs.
       * @param requestUri The starting URI of the web service. This URI must be a secure address of https://.
       * @param callbackUri The callback URI that indicates the completion of the web authentication. The broker matches this URI against every URI that it is about to navigate to. The broker never navigates to this URI, instead the broker returns the control back to the application when the user clicks a link or a web server redirection is made.
       */
     /* static member */
-    @scala.inline
-    def authenticateAndContinue(requestUri: Uri, callbackUri: Uri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def authenticateAndContinue(requestUri: Uri, callbackUri: Uri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Starts the authentication operation with four inputs.
       * @param requestUri The starting URI of the web service. This URI must be a secure address of https://.
@@ -895,8 +871,7 @@ object Web {
       * @param options The options for the authentication operation.
       */
     /* static member */
-    @scala.inline
-    def authenticateAndContinue(requestUri: Uri, callbackUri: Uri, continuationData: ValueSet, options: WebAuthenticationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any], continuationData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def authenticateAndContinue(requestUri: Uri, callbackUri: Uri, continuationData: ValueSet, options: WebAuthenticationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any], continuationData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Starts the asynchronous authentication operation with two inputs. You can call this method multiple times in a single application or across multiple applications at the same time.
@@ -905,8 +880,7 @@ object Web {
       * @return The way to query the status and get the results of the authentication operation. If you are getting an invalid parameter error, the most common cause is that you are not using HTTPS for the requestUri parameter.
       */
     /* static member */
-    @scala.inline
-    def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
+    inline def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
     /**
       * Starts the asynchronous authentication operation with three inputs. You can call this method multiple times in a single application or across multiple applications at the same time.
       * @param options The options for the authentication operation.
@@ -915,8 +889,7 @@ object Web {
       * @return The way to query the status and get the results of the authentication operation. If you are getting an invalid parameter error, the most common cause is that you are not using HTTPS for the requestUri parameter.
       */
     /* static member */
-    @scala.inline
-    def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri, callbackUri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
+    inline def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri, callbackUri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
     
     /**
       * Starts the asynchronous authentication operation silently (no UI will be shown) with one input. You can call this method multiple times in a single application or across multiple applications at the same time.
@@ -924,8 +897,7 @@ object Web {
       * @return The way to query the status and get the results of the authentication operation. If you are getting an invalid parameter error, the most common cause is that you are not using HTTPS for the requestUri parameter.
       */
     /* static member */
-    @scala.inline
-    def authenticateSilentlyAsync(requestUri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateSilentlyAsync")(requestUri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
+    inline def authenticateSilentlyAsync(requestUri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateSilentlyAsync")(requestUri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
     /**
       * Starts the asynchronous authentication operation silently (no UI will be shown) with two inputs. You can call this method multiple times in a single application or across multiple applications at the same time.
       * @param requestUri The starting URI of the web service. This URI must be a secure address of https://.
@@ -933,16 +905,14 @@ object Web {
       * @return The way to query the status and get the results of the authentication operation. If you are getting an invalid parameter error, the most common cause is that you are not using HTTPS for the requestUri parameter.
       */
     /* static member */
-    @scala.inline
-    def authenticateSilentlyAsync(requestUri: Uri, options: WebAuthenticationOptions): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateSilentlyAsync")(requestUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
+    inline def authenticateSilentlyAsync(requestUri: Uri, options: WebAuthenticationOptions): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateSilentlyAsync")(requestUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult]]
     
     /**
       * Gets the current application callback URI.
       * @return The URI of the current application.
       */
     /* static member */
-    @scala.inline
-    def getCurrentApplicationCallbackUri(): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentApplicationCallbackUri")().asInstanceOf[Uri]
+    inline def getCurrentApplicationCallbackUri(): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentApplicationCallbackUri")().asInstanceOf[Uri]
   }
   
   /** Contains the options available to the asynchronous operation. */

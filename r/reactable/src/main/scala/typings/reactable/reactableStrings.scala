@@ -11,13 +11,11 @@ object reactableStrings {
   sealed trait asc
     extends StObject
        with SortDirection
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait desc
     extends StObject
        with SortDirection
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
 }

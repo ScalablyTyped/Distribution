@@ -34,31 +34,23 @@ trait SchemaUpdateEmbeddedObjectPositionRequest extends StObject {
 }
 object SchemaUpdateEmbeddedObjectPositionRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateEmbeddedObjectPositionRequest = {
+  inline def apply(): SchemaUpdateEmbeddedObjectPositionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateEmbeddedObjectPositionRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateEmbeddedObjectPositionRequestMutableBuilder[Self <: SchemaUpdateEmbeddedObjectPositionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateEmbeddedObjectPositionRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setNewPosition(value: SchemaEmbeddedObjectPosition): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
+    inline def setNewPosition(value: SchemaEmbeddedObjectPosition): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPositionUndefined: Self = StObject.set(x, "newPosition", js.undefined)
+    inline def setNewPositionUndefined: Self = StObject.set(x, "newPosition", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

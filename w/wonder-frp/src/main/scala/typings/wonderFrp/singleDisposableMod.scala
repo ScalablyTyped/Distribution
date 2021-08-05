@@ -16,9 +16,9 @@ object singleDisposableMod {
     def this(dispose: js.Function) = this()
     def this(dispose: IDisposable) = this()
     
-    var _disposable: js.Any = js.native
+    /* private */ var _disposable: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
@@ -32,11 +32,8 @@ object singleDisposableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SingleDisposable]
-    @scala.inline
-    def create(dispose: js.Function): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[SingleDisposable]
-    @scala.inline
-    def create(dispose: IDisposable): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[SingleDisposable]
+    inline def create(): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SingleDisposable]
+    inline def create(dispose: js.Function): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[SingleDisposable]
+    inline def create(dispose: IDisposable): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[SingleDisposable]
   }
 }

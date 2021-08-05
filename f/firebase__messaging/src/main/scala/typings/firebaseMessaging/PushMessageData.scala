@@ -18,25 +18,19 @@ trait PushMessageData extends StObject {
 }
 object PushMessageData {
   
-  @scala.inline
-  def apply(arrayBuffer: () => ArrayBuffer, blob: () => Blob, json: () => js.Any, text: () => String): PushMessageData = {
+  inline def apply(arrayBuffer: () => ArrayBuffer, blob: () => Blob, json: () => js.Any, text: () => String): PushMessageData = {
     val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
     __obj.asInstanceOf[PushMessageData]
   }
   
-  @scala.inline
-  implicit class PushMessageDataMutableBuilder[Self <: PushMessageData] (val x: Self) extends AnyVal {
+  extension [Self <: PushMessageData](x: Self) {
     
-    @scala.inline
-    def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+    inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBlob(value: () => Blob): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+    inline def setBlob(value: () => Blob): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
   }
 }

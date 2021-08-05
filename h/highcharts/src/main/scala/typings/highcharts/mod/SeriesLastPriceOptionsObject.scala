@@ -18,25 +18,19 @@ trait SeriesLastPriceOptionsObject extends StObject {
 }
 object SeriesLastPriceOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesLastPriceOptionsObject = {
+  inline def apply(): SeriesLastPriceOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesLastPriceOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesLastPriceOptionsObjectMutableBuilder[Self <: SeriesLastPriceOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesLastPriceOptionsObject](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

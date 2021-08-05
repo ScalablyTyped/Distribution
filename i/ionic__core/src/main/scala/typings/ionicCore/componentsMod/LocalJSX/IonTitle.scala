@@ -21,25 +21,19 @@ trait IonTitle extends StObject {
 }
 object IonTitle {
   
-  @scala.inline
-  def apply(): IonTitle = {
+  inline def apply(): IonTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonTitle]
   }
   
-  @scala.inline
-  implicit class IonTitleMutableBuilder[Self <: IonTitle] (val x: Self) extends AnyVal {
+  extension [Self <: IonTitle](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

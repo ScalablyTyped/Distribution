@@ -18,9 +18,9 @@ object autoreseteventMod {
   class AutoResetEvent () extends StObject {
     def this(initialState: Boolean) = this()
     
-    var _signaled: js.Any = js.native
+    /* private */ var _signaled: js.Any = js.native
     
-    var _waiters: js.Any = js.native
+    /* private */ var _waiters: js.Any = js.native
     
     /**
       * Sets the state of the event to nonsignaled, causing asynchronous operations to pause.

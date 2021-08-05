@@ -38,50 +38,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlwaysNotify(value: Boolean): Self = StObject.set(x, "alwaysNotify", value.asInstanceOf[js.Any])
+      inline def setAlwaysNotify(value: Boolean): Self = StObject.set(x, "alwaysNotify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysNotifyUndefined: Self = StObject.set(x, "alwaysNotify", js.undefined)
+      inline def setAlwaysNotifyUndefined: Self = StObject.set(x, "alwaysNotify", js.undefined)
       
-      @scala.inline
-      def setContentImage(value: String): Self = StObject.set(x, "contentImage", value.asInstanceOf[js.Any])
+      inline def setContentImage(value: String): Self = StObject.set(x, "contentImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentImageUndefined: Self = StObject.set(x, "contentImage", js.undefined)
+      inline def setContentImageUndefined: Self = StObject.set(x, "contentImage", js.undefined)
       
-      @scala.inline
-      def setEmoji(value: Boolean): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: Boolean): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
+      inline def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
       
-      @scala.inline
-      def setExcludeWarnings(value: Boolean): Self = StObject.set(x, "excludeWarnings", value.asInstanceOf[js.Any])
+      inline def setExcludeWarnings(value: Boolean): Self = StObject.set(x, "excludeWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeWarningsUndefined: Self = StObject.set(x, "excludeWarnings", js.undefined)
+      inline def setExcludeWarningsUndefined: Self = StObject.set(x, "excludeWarnings", js.undefined)
       
-      @scala.inline
-      def setSkipFirstNotification(value: Boolean): Self = StObject.set(x, "skipFirstNotification", value.asInstanceOf[js.Any])
+      inline def setSkipFirstNotification(value: Boolean): Self = StObject.set(x, "skipFirstNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipFirstNotificationUndefined: Self = StObject.set(x, "skipFirstNotification", js.undefined)
+      inline def setSkipFirstNotificationUndefined: Self = StObject.set(x, "skipFirstNotification", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

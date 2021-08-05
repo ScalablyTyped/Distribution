@@ -18,19 +18,15 @@ trait RangeObject extends StObject {
 }
 object RangeObject {
   
-  @scala.inline
-  def apply(max: Double, min: Double): RangeObject = {
+  inline def apply(max: Double, min: Double): RangeObject = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeObject]
   }
   
-  @scala.inline
-  implicit class RangeObjectMutableBuilder[Self <: RangeObject] (val x: Self) extends AnyVal {
+  extension [Self <: RangeObject](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

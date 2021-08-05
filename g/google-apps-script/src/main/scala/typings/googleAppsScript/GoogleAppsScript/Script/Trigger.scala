@@ -21,8 +21,7 @@ trait Trigger extends StObject {
 }
 object Trigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEventType: () => EventType,
     getHandlerFunction: () => String,
     getTriggerSource: () => TriggerSource,
@@ -33,22 +32,16 @@ object Trigger {
     __obj.asInstanceOf[Trigger]
   }
   
-  @scala.inline
-  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
+  extension [Self <: Trigger](x: Self) {
     
-    @scala.inline
-    def setGetEventType(value: () => EventType): Self = StObject.set(x, "getEventType", js.Any.fromFunction0(value))
+    inline def setGetEventType(value: () => EventType): Self = StObject.set(x, "getEventType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHandlerFunction(value: () => String): Self = StObject.set(x, "getHandlerFunction", js.Any.fromFunction0(value))
+    inline def setGetHandlerFunction(value: () => String): Self = StObject.set(x, "getHandlerFunction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTriggerSource(value: () => TriggerSource): Self = StObject.set(x, "getTriggerSource", js.Any.fromFunction0(value))
+    inline def setGetTriggerSource(value: () => TriggerSource): Self = StObject.set(x, "getTriggerSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTriggerSourceId(value: () => String): Self = StObject.set(x, "getTriggerSourceId", js.Any.fromFunction0(value))
+    inline def setGetTriggerSourceId(value: () => String): Self = StObject.set(x, "getTriggerSourceId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUniqueId(value: () => String): Self = StObject.set(x, "getUniqueId", js.Any.fromFunction0(value))
+    inline def setGetUniqueId(value: () => String): Self = StObject.set(x, "getUniqueId", js.Any.fromFunction0(value))
   }
 }

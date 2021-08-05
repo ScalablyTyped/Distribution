@@ -13,19 +13,15 @@ trait BinaryInforamtion extends StObject {
 }
 object BinaryInforamtion {
   
-  @scala.inline
-  def apply(ref: String, value: ProtectedValue | ArrayBuffer): BinaryInforamtion = {
+  inline def apply(ref: String, value: ProtectedValue | ArrayBuffer): BinaryInforamtion = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinaryInforamtion]
   }
   
-  @scala.inline
-  implicit class BinaryInforamtionMutableBuilder[Self <: BinaryInforamtion] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryInforamtion](x: Self) {
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ProtectedValue | ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ProtectedValue | ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

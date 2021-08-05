@@ -10,19 +10,15 @@ trait MarkerLayerOptions extends StObject {
 }
 object MarkerLayerOptions {
   
-  @scala.inline
-  def apply(): MarkerLayerOptions = {
+  inline def apply(): MarkerLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkerLayerOptions]
   }
   
-  @scala.inline
-  implicit class MarkerLayerOptionsMutableBuilder[Self <: MarkerLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerLayerOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

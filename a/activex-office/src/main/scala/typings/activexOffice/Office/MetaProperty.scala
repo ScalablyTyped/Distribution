@@ -18,7 +18,7 @@ trait MetaProperty extends StObject {
   
   val Name: String
   
-  @JSName("Office.MetaProperty_typekey")
+  /* private */ @JSName("Office.MetaProperty_typekey")
   var OfficeDotMetaProperty_typekey: MetaProperty
   
   val Parent: js.Any
@@ -33,8 +33,7 @@ trait MetaProperty extends StObject {
 }
 object MetaProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Id: String,
@@ -53,43 +52,30 @@ object MetaProperty {
     __obj.asInstanceOf[MetaProperty]
   }
   
-  @scala.inline
-  implicit class MetaPropertyMutableBuilder[Self <: MetaProperty] (val x: Self) extends AnyVal {
+  extension [Self <: MetaProperty](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotMetaProperty_typekey(value: MetaProperty): Self = StObject.set(x, "Office.MetaProperty_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotMetaProperty_typekey(value: MetaProperty): Self = StObject.set(x, "Office.MetaProperty_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoMetaPropertyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoMetaPropertyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: () => String): Self = StObject.set(x, "Validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => String): Self = StObject.set(x, "Validate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidationError(value: String): Self = StObject.set(x, "ValidationError", value.asInstanceOf[js.Any])
+    inline def setValidationError(value: String): Self = StObject.set(x, "ValidationError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

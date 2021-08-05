@@ -21,7 +21,7 @@ object timeunitMod {
     
     def assemble(): js.Array[TimeUnitTransform] = js.native
     
-    var formula: js.Any = js.native
+    /* private */ var formula: js.Any = js.native
     
     /**
       * Merge together TimeUnitNodes assigning the children of `other` to `this`
@@ -41,11 +41,9 @@ object timeunitMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def makeFromEncoding(parent: DataFlowNode, model: ModelWithField): TimeUnitNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[TimeUnitNode]
+    inline def makeFromEncoding(parent: DataFlowNode, model: ModelWithField): TimeUnitNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[TimeUnitNode]
     
-    @scala.inline
-    def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.TimeUnitTransform): TimeUnitNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[TimeUnitNode]
+    inline def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.TimeUnitTransform): TimeUnitNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[TimeUnitNode]
   }
   
   trait TimeUnitComponent
@@ -57,20 +55,16 @@ object timeunitMod {
   }
   object TimeUnitComponent {
     
-    @scala.inline
-    def apply(as: FieldName, field: FieldName, timeUnit: TimeUnit | TimeUnitParams): TimeUnitComponent = {
+    inline def apply(as: FieldName, field: FieldName, timeUnit: TimeUnit | TimeUnitParams): TimeUnitComponent = {
       val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], timeUnit = timeUnit.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeUnitComponent]
     }
     
-    @scala.inline
-    implicit class TimeUnitComponentMutableBuilder[Self <: TimeUnitComponent] (val x: Self) extends AnyVal {
+    extension [Self <: TimeUnitComponent](x: Self) {
       
-      @scala.inline
-      def setBand(value: Boolean): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+      inline def setBand(value: Boolean): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+      inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     }
   }
 }

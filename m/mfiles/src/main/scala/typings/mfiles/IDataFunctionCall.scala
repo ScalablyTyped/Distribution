@@ -31,8 +31,7 @@ trait IDataFunctionCall extends StObject {
 }
 object IDataFunctionCall {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataFunction: MFDataFunction,
     SetDataDate: () => Unit,
     SetDataDaysFrom: () => Unit,
@@ -49,40 +48,28 @@ object IDataFunctionCall {
     __obj.asInstanceOf[IDataFunctionCall]
   }
   
-  @scala.inline
-  implicit class IDataFunctionCallMutableBuilder[Self <: IDataFunctionCall] (val x: Self) extends AnyVal {
+  extension [Self <: IDataFunctionCall](x: Self) {
     
-    @scala.inline
-    def setDataFunction(value: MFDataFunction): Self = StObject.set(x, "DataFunction", value.asInstanceOf[js.Any])
+    inline def setDataFunction(value: MFDataFunction): Self = StObject.set(x, "DataFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDataDate(value: () => Unit): Self = StObject.set(x, "SetDataDate", js.Any.fromFunction0(value))
+    inline def setSetDataDate(value: () => Unit): Self = StObject.set(x, "SetDataDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataDaysFrom(value: () => Unit): Self = StObject.set(x, "SetDataDaysFrom", js.Any.fromFunction0(value))
+    inline def setSetDataDaysFrom(value: () => Unit): Self = StObject.set(x, "SetDataDaysFrom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataDaysTo(value: () => Unit): Self = StObject.set(x, "SetDataDaysTo", js.Any.fromFunction0(value))
+    inline def setSetDataDaysTo(value: () => Unit): Self = StObject.set(x, "SetDataDaysTo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataInitialCharGroup(value: Double => Unit): Self = StObject.set(x, "SetDataInitialCharGroup", js.Any.fromFunction1(value))
+    inline def setSetDataInitialCharGroup(value: Double => Unit): Self = StObject.set(x, "SetDataInitialCharGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataIntegerSegment(value: Double => Unit): Self = StObject.set(x, "SetDataIntegerSegment", js.Any.fromFunction1(value))
+    inline def setSetDataIntegerSegment(value: Double => Unit): Self = StObject.set(x, "SetDataIntegerSegment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataLeftChars(value: Double => Unit): Self = StObject.set(x, "SetDataLeftChars", js.Any.fromFunction1(value))
+    inline def setSetDataLeftChars(value: Double => Unit): Self = StObject.set(x, "SetDataLeftChars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataMonth(value: () => Unit): Self = StObject.set(x, "SetDataMonth", js.Any.fromFunction0(value))
+    inline def setSetDataMonth(value: () => Unit): Self = StObject.set(x, "SetDataMonth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataNoOp(value: () => Unit): Self = StObject.set(x, "SetDataNoOp", js.Any.fromFunction0(value))
+    inline def setSetDataNoOp(value: () => Unit): Self = StObject.set(x, "SetDataNoOp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataYear(value: () => Unit): Self = StObject.set(x, "SetDataYear", js.Any.fromFunction0(value))
+    inline def setSetDataYear(value: () => Unit): Self = StObject.set(x, "SetDataYear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataYearAndMonth(value: () => Unit): Self = StObject.set(x, "SetDataYearAndMonth", js.Any.fromFunction0(value))
+    inline def setSetDataYearAndMonth(value: () => Unit): Self = StObject.set(x, "SetDataYearAndMonth", js.Any.fromFunction0(value))
   }
 }

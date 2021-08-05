@@ -102,8 +102,7 @@ trait SinonFakeXMLHttpRequest extends StObject {
 }
 object SinonFakeXMLHttpRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     async: Boolean,
     autoRespond: Double => Unit,
     error: () => Unit,
@@ -129,67 +128,46 @@ object SinonFakeXMLHttpRequest {
     __obj.asInstanceOf[SinonFakeXMLHttpRequest]
   }
   
-  @scala.inline
-  implicit class SinonFakeXMLHttpRequestMutableBuilder[Self <: SinonFakeXMLHttpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SinonFakeXMLHttpRequest](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRespond(value: Double => Unit): Self = StObject.set(x, "autoRespond", js.Any.fromFunction1(value))
+    inline def setAutoRespond(value: Double => Unit): Self = StObject.set(x, "autoRespond", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setError(value: () => Unit): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+    inline def setError(value: () => Unit): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllResponseHeaders(value: () => js.Any): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
+    inline def setGetAllResponseHeaders(value: () => js.Any): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResponseHeader(value: String => String): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
+    inline def setGetResponseHeader(value: String => String): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerror(value: () => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction0(value))
+    inline def setOnerror(value: () => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBody(value: String): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: String): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestHeaders(value: js.Any): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    inline def setRequestHeaders(value: js.Any): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespond(value: (Double, js.Any, String) => Unit): Self = StObject.set(x, "respond", js.Any.fromFunction3(value))
+    inline def setRespond(value: (Double, js.Any, String) => Unit): Self = StObject.set(x, "respond", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResponseXML(value: Document): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
+    inline def setResponseXML(value: Document): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetResponseBody(value: String => Unit): Self = StObject.set(x, "setResponseBody", js.Any.fromFunction1(value))
+    inline def setSetResponseBody(value: String => Unit): Self = StObject.set(x, "setResponseBody", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetResponseHeaders(value: js.Any => Unit): Self = StObject.set(x, "setResponseHeaders", js.Any.fromFunction1(value))
+    inline def setSetResponseHeaders(value: js.Any => Unit): Self = StObject.set(x, "setResponseHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload(value: SinonFakeUploadProgress): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: SinonFakeUploadProgress): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
   }
 }

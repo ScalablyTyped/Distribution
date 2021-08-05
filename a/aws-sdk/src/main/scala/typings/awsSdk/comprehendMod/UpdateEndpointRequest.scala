@@ -18,19 +18,15 @@ trait UpdateEndpointRequest extends StObject {
 }
 object UpdateEndpointRequest {
   
-  @scala.inline
-  def apply(DesiredInferenceUnits: InferenceUnitsInteger, EndpointArn: ComprehendEndpointArn): UpdateEndpointRequest = {
+  inline def apply(DesiredInferenceUnits: InferenceUnitsInteger, EndpointArn: ComprehendEndpointArn): UpdateEndpointRequest = {
     val __obj = js.Dynamic.literal(DesiredInferenceUnits = DesiredInferenceUnits.asInstanceOf[js.Any], EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointRequest]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointRequestMutableBuilder[Self <: UpdateEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setDesiredInferenceUnits(value: InferenceUnitsInteger): Self = StObject.set(x, "DesiredInferenceUnits", value.asInstanceOf[js.Any])
+    inline def setDesiredInferenceUnits(value: InferenceUnitsInteger): Self = StObject.set(x, "DesiredInferenceUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointArn(value: ComprehendEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: ComprehendEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }
 }

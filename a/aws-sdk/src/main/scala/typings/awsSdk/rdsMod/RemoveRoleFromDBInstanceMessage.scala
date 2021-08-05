@@ -23,22 +23,17 @@ trait RemoveRoleFromDBInstanceMessage extends StObject {
 }
 object RemoveRoleFromDBInstanceMessage {
   
-  @scala.inline
-  def apply(DBInstanceIdentifier: String, FeatureName: String, RoleArn: String): RemoveRoleFromDBInstanceMessage = {
+  inline def apply(DBInstanceIdentifier: String, FeatureName: String, RoleArn: String): RemoveRoleFromDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any], FeatureName = FeatureName.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveRoleFromDBInstanceMessage]
   }
   
-  @scala.inline
-  implicit class RemoveRoleFromDBInstanceMessageMutableBuilder[Self <: RemoveRoleFromDBInstanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveRoleFromDBInstanceMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
+    inline def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

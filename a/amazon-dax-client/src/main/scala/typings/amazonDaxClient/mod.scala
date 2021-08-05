@@ -42,50 +42,36 @@ object mod {
   }
   object AmazonDaxClientHttpOptions {
     
-    @scala.inline
-    def apply(): AmazonDaxClientHttpOptions = {
+    inline def apply(): AmazonDaxClientHttpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AmazonDaxClientHttpOptions]
     }
     
-    @scala.inline
-    implicit class AmazonDaxClientHttpOptionsMutableBuilder[Self <: AmazonDaxClientHttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AmazonDaxClientHttpOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setXhrAsync(value: Boolean): Self = StObject.set(x, "xhrAsync", value.asInstanceOf[js.Any])
+      inline def setXhrAsync(value: Boolean): Self = StObject.set(x, "xhrAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrAsyncUndefined: Self = StObject.set(x, "xhrAsync", js.undefined)
+      inline def setXhrAsyncUndefined: Self = StObject.set(x, "xhrAsync", js.undefined)
       
-      @scala.inline
-      def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
+      inline def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
+      inline def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
     }
   }
   
@@ -113,77 +99,54 @@ object mod {
   }
   object AmazonDaxClientOptions {
     
-    @scala.inline
-    def apply(): AmazonDaxClientOptions = {
+    inline def apply(): AmazonDaxClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AmazonDaxClientOptions]
     }
     
-    @scala.inline
-    implicit class AmazonDaxClientOptionsMutableBuilder[Self <: AmazonDaxClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AmazonDaxClientOptions](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+      inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
       
-      @scala.inline
-      def setApiVersion(value: String | Date): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String | Date): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setEndpoints(value: js.Array[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: js.Array[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
+      inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
       
-      @scala.inline
-      def setEndpointsVarargs(value: String*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: String*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setHttpOptions(value: AmazonDaxClientHttpOptions): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
+      inline def setHttpOptions(value: AmazonDaxClientHttpOptions): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
+      inline def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setParams(value: Map[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Map[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+      inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
     }
   }
 }

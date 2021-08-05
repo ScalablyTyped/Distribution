@@ -20,8 +20,7 @@ trait GroupMethods extends StObject {
 }
 object GroupMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     any: (String, js.Any) => Unit,
     count: (String, js.Any) => Unit,
     max: (String, js.Any) => Unit,
@@ -33,25 +32,18 @@ object GroupMethods {
     __obj.asInstanceOf[GroupMethods]
   }
   
-  @scala.inline
-  implicit class GroupMethodsMutableBuilder[Self <: GroupMethods] (val x: Self) extends AnyVal {
+  extension [Self <: GroupMethods](x: Self) {
     
-    @scala.inline
-    def setAny(value: (String, js.Any) => Unit): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
+    inline def setAny(value: (String, js.Any) => Unit): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCount(value: (String, js.Any) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
+    inline def setCount(value: (String, js.Any) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMax(value: (String, js.Any) => Unit): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+    inline def setMax(value: (String, js.Any) => Unit): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMin(value: (String, js.Any) => Unit): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+    inline def setMin(value: (String, js.Any) => Unit): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setString(value: (String, js.Any) => Unit): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
+    inline def setString(value: (String, js.Any) => Unit): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSum(value: (String, js.Any) => Unit): Self = StObject.set(x, "sum", js.Any.fromFunction2(value))
+    inline def setSum(value: (String, js.Any) => Unit): Self = StObject.set(x, "sum", js.Any.fromFunction2(value))
   }
 }

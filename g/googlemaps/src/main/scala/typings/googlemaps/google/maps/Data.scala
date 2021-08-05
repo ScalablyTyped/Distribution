@@ -78,17 +78,14 @@ object Data {
   }
   object AddFeatureEvent {
     
-    @scala.inline
-    def apply(feature: Feature): AddFeatureEvent = {
+    inline def apply(feature: Feature): AddFeatureEvent = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddFeatureEvent]
     }
     
-    @scala.inline
-    implicit class AddFeatureEventMutableBuilder[Self <: AddFeatureEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AddFeatureEvent](x: Self) {
       
-      @scala.inline
-      def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,62 +105,44 @@ object Data {
   }
   object DataOptions {
     
-    @scala.inline
-    def apply(): DataOptions = {
+    inline def apply(): DataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataOptions]
     }
     
-    @scala.inline
-    implicit class DataOptionsMutableBuilder[Self <: DataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DataOptions](x: Self) {
       
-      @scala.inline
-      def setControlPosition(value: ControlPosition): Self = StObject.set(x, "controlPosition", value.asInstanceOf[js.Any])
+      inline def setControlPosition(value: ControlPosition): Self = StObject.set(x, "controlPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlPositionUndefined: Self = StObject.set(x, "controlPosition", js.undefined)
+      inline def setControlPositionUndefined: Self = StObject.set(x, "controlPosition", js.undefined)
       
-      @scala.inline
-      def setControls(value: js.Array[DrawingMode]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: js.Array[DrawingMode]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsNull: Self = StObject.set(x, "controls", null)
+      inline def setControlsNull: Self = StObject.set(x, "controls", null)
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setControlsVarargs(value: DrawingMode*): Self = StObject.set(x, "controls", js.Array(value :_*))
+      inline def setControlsVarargs(value: DrawingMode*): Self = StObject.set(x, "controls", js.Array(value :_*))
       
-      @scala.inline
-      def setDrawingMode(value: DrawingMode): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
+      inline def setDrawingMode(value: DrawingMode): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingModeNull: Self = StObject.set(x, "drawingMode", null)
+      inline def setDrawingModeNull: Self = StObject.set(x, "drawingMode", null)
       
-      @scala.inline
-      def setDrawingModeUndefined: Self = StObject.set(x, "drawingMode", js.undefined)
+      inline def setDrawingModeUndefined: Self = StObject.set(x, "drawingMode", js.undefined)
       
-      @scala.inline
-      def setFeatureFactory(value: /* geometry */ Geometry => Feature): Self = StObject.set(x, "featureFactory", js.Any.fromFunction1(value))
+      inline def setFeatureFactory(value: /* geometry */ Geometry => Feature): Self = StObject.set(x, "featureFactory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFeatureFactoryUndefined: Self = StObject.set(x, "featureFactory", js.undefined)
+      inline def setFeatureFactoryUndefined: Self = StObject.set(x, "featureFactory", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StylingFunction | StyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StylingFunction | StyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleFunction1(value: /* feature */ Feature => StyleOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
+      inline def setStyleFunction1(value: /* feature */ Feature => StyleOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -199,32 +178,24 @@ object Data {
   }
   object FeatureOptions {
     
-    @scala.inline
-    def apply(): FeatureOptions = {
+    inline def apply(): FeatureOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeatureOptions]
     }
     
-    @scala.inline
-    implicit class FeatureOptionsMutableBuilder[Self <: FeatureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureOptions](x: Self) {
       
-      @scala.inline
-      def setGeometry(value: Geometry | LatLng | LatLngLiteral): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: Geometry | LatLng | LatLngLiteral): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+      inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     }
   }
   
@@ -234,20 +205,16 @@ object Data {
   }
   object GeoJsonOptions {
     
-    @scala.inline
-    def apply(): GeoJsonOptions = {
+    inline def apply(): GeoJsonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeoJsonOptions]
     }
     
-    @scala.inline
-    implicit class GeoJsonOptionsMutableBuilder[Self <: GeoJsonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeoJsonOptions](x: Self) {
       
-      @scala.inline
-      def setIdPropertyName(value: String): Self = StObject.set(x, "idPropertyName", value.asInstanceOf[js.Any])
+      inline def setIdPropertyName(value: String): Self = StObject.set(x, "idPropertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdPropertyNameUndefined: Self = StObject.set(x, "idPropertyName", js.undefined)
+      inline def setIdPropertyNameUndefined: Self = StObject.set(x, "idPropertyName", js.undefined)
     }
   }
   
@@ -259,20 +226,16 @@ object Data {
   }
   object Geometry {
     
-    @scala.inline
-    def apply(forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit, getType: () => String): Geometry = {
+    inline def apply(forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit, getType: () => String): Geometry = {
       val __obj = js.Dynamic.literal(forEachLatLng = js.Any.fromFunction1(forEachLatLng), getType = js.Any.fromFunction0(getType))
       __obj.asInstanceOf[Geometry]
     }
     
-    @scala.inline
-    implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+    extension [Self <: Geometry](x: Self) {
       
-      @scala.inline
-      def setForEachLatLng(value: js.Function1[/* latLng */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
+      inline def setForEachLatLng(value: js.Function1[/* latLng */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     }
   }
   
@@ -288,8 +251,7 @@ object Data {
   }
   object GeometryCollection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       getArray: () => js.Array[Geometry],
       getAt: Double => Geometry,
@@ -300,17 +262,13 @@ object Data {
       __obj.asInstanceOf[GeometryCollection]
     }
     
-    @scala.inline
-    implicit class GeometryCollectionMutableBuilder[Self <: GeometryCollection] (val x: Self) extends AnyVal {
+    extension [Self <: GeometryCollection](x: Self) {
       
-      @scala.inline
-      def setGetArray(value: () => js.Array[Geometry]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.Array[Geometry]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAt(value: Double => Geometry): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      inline def setGetAt(value: Double => Geometry): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -326,8 +284,7 @@ object Data {
   }
   object LineString {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       getArray: () => js.Array[LatLng],
       getAt: Double => LatLng,
@@ -338,17 +295,13 @@ object Data {
       __obj.asInstanceOf[LineString]
     }
     
-    @scala.inline
-    implicit class LineStringMutableBuilder[Self <: LineString] (val x: Self) extends AnyVal {
+    extension [Self <: LineString](x: Self) {
       
-      @scala.inline
-      def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAt(value: Double => LatLng): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      inline def setGetAt(value: Double => LatLng): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -364,8 +317,7 @@ object Data {
   }
   object LinearRing {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       getArray: () => js.Array[LatLng],
       getAt: Double => LatLng,
@@ -376,17 +328,13 @@ object Data {
       __obj.asInstanceOf[LinearRing]
     }
     
-    @scala.inline
-    implicit class LinearRingMutableBuilder[Self <: LinearRing] (val x: Self) extends AnyVal {
+    extension [Self <: LinearRing](x: Self) {
       
-      @scala.inline
-      def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAt(value: Double => LatLng): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      inline def setGetAt(value: Double => LatLng): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -399,17 +347,14 @@ object Data {
   }
   object MouseEvent {
     
-    @scala.inline
-    def apply(feature: Feature, latLng: LatLng, stop: () => Unit): typings.googlemaps.google.maps.Data.MouseEvent = {
+    inline def apply(feature: Feature, latLng: LatLng, stop: () => Unit): typings.googlemaps.google.maps.Data.MouseEvent = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], latLng = latLng.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[typings.googlemaps.google.maps.Data.MouseEvent]
     }
     
-    @scala.inline
-    implicit class MouseEventMutableBuilder[Self <: typings.googlemaps.google.maps.Data.MouseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googlemaps.google.maps.Data.MouseEvent](x: Self) {
       
-      @scala.inline
-      def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -425,8 +370,7 @@ object Data {
   }
   object MultiLineString {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       getArray: () => js.Array[LineString],
       getAt: Double => LineString,
@@ -437,17 +381,13 @@ object Data {
       __obj.asInstanceOf[MultiLineString]
     }
     
-    @scala.inline
-    implicit class MultiLineStringMutableBuilder[Self <: MultiLineString] (val x: Self) extends AnyVal {
+    extension [Self <: MultiLineString](x: Self) {
       
-      @scala.inline
-      def setGetArray(value: () => js.Array[LineString]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.Array[LineString]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAt(value: Double => LineString): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      inline def setGetAt(value: Double => LineString): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -463,8 +403,7 @@ object Data {
   }
   object MultiPoint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       getArray: () => js.Array[LatLng],
       getAt: Double => LatLng,
@@ -475,17 +414,13 @@ object Data {
       __obj.asInstanceOf[MultiPoint]
     }
     
-    @scala.inline
-    implicit class MultiPointMutableBuilder[Self <: MultiPoint] (val x: Self) extends AnyVal {
+    extension [Self <: MultiPoint](x: Self) {
       
-      @scala.inline
-      def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAt(value: Double => LatLng): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      inline def setGetAt(value: Double => LatLng): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -501,8 +436,7 @@ object Data {
   }
   object MultiPolygon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       getArray: () => js.Array[typings.googlemaps.google.maps.Data.Polygon],
       getAt: Double => typings.googlemaps.google.maps.Data.Polygon,
@@ -513,17 +447,13 @@ object Data {
       __obj.asInstanceOf[MultiPolygon]
     }
     
-    @scala.inline
-    implicit class MultiPolygonMutableBuilder[Self <: MultiPolygon] (val x: Self) extends AnyVal {
+    extension [Self <: MultiPolygon](x: Self) {
       
-      @scala.inline
-      def setGetArray(value: () => js.Array[typings.googlemaps.google.maps.Data.Polygon]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.Array[typings.googlemaps.google.maps.Data.Polygon]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAt(value: Double => typings.googlemaps.google.maps.Data.Polygon): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      inline def setGetAt(value: Double => typings.googlemaps.google.maps.Data.Polygon): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -535,8 +465,7 @@ object Data {
   }
   object Point {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       get: () => LatLng,
       getType: () => String
@@ -545,11 +474,9 @@ object Data {
       __obj.asInstanceOf[typings.googlemaps.google.maps.Data.Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: typings.googlemaps.google.maps.Data.Point] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googlemaps.google.maps.Data.Point](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => LatLng): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => LatLng): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -565,8 +492,7 @@ object Data {
   }
   object Polygon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachLatLng: js.Function1[/* latLng */ LatLng, Unit] => Unit,
       getArray: () => js.Array[LinearRing],
       getAt: Double => LinearRing,
@@ -577,17 +503,13 @@ object Data {
       __obj.asInstanceOf[typings.googlemaps.google.maps.Data.Polygon]
     }
     
-    @scala.inline
-    implicit class PolygonMutableBuilder[Self <: typings.googlemaps.google.maps.Data.Polygon] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googlemaps.google.maps.Data.Polygon](x: Self) {
       
-      @scala.inline
-      def setGetArray(value: () => js.Array[LinearRing]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.Array[LinearRing]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAt(value: Double => LinearRing): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      inline def setGetAt(value: Double => LinearRing): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -597,17 +519,14 @@ object Data {
   }
   object RemoveFeatureEvent {
     
-    @scala.inline
-    def apply(feature: Feature): RemoveFeatureEvent = {
+    inline def apply(feature: Feature): RemoveFeatureEvent = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveFeatureEvent]
     }
     
-    @scala.inline
-    implicit class RemoveFeatureEventMutableBuilder[Self <: RemoveFeatureEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveFeatureEvent](x: Self) {
       
-      @scala.inline
-      def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -621,23 +540,18 @@ object Data {
   }
   object RemovePropertyEvent {
     
-    @scala.inline
-    def apply(feature: Feature, name: String, oldValue: js.Any): RemovePropertyEvent = {
+    inline def apply(feature: Feature, name: String, oldValue: js.Any): RemovePropertyEvent = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemovePropertyEvent]
     }
     
-    @scala.inline
-    implicit class RemovePropertyEventMutableBuilder[Self <: RemovePropertyEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RemovePropertyEvent](x: Self) {
       
-      @scala.inline
-      def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -651,23 +565,18 @@ object Data {
   }
   object SetGeometryEvent {
     
-    @scala.inline
-    def apply(feature: Feature, newGeometry: Geometry, oldGeometry: Geometry): SetGeometryEvent = {
+    inline def apply(feature: Feature, newGeometry: Geometry, oldGeometry: Geometry): SetGeometryEvent = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], newGeometry = newGeometry.asInstanceOf[js.Any], oldGeometry = oldGeometry.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetGeometryEvent]
     }
     
-    @scala.inline
-    implicit class SetGeometryEventMutableBuilder[Self <: SetGeometryEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SetGeometryEvent](x: Self) {
       
-      @scala.inline
-      def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewGeometry(value: Geometry): Self = StObject.set(x, "newGeometry", value.asInstanceOf[js.Any])
+      inline def setNewGeometry(value: Geometry): Self = StObject.set(x, "newGeometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldGeometry(value: Geometry): Self = StObject.set(x, "oldGeometry", value.asInstanceOf[js.Any])
+      inline def setOldGeometry(value: Geometry): Self = StObject.set(x, "oldGeometry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -683,26 +592,20 @@ object Data {
   }
   object SetPropertyEvent {
     
-    @scala.inline
-    def apply(feature: Feature, name: String, newValue: js.Any, oldValue: js.Any): SetPropertyEvent = {
+    inline def apply(feature: Feature, name: String, newValue: js.Any, oldValue: js.Any): SetPropertyEvent = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetPropertyEvent]
     }
     
-    @scala.inline
-    implicit class SetPropertyEventMutableBuilder[Self <: SetPropertyEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SetPropertyEvent](x: Self) {
       
-      @scala.inline
-      def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -739,98 +642,68 @@ object Data {
   }
   object StyleOptions {
     
-    @scala.inline
-    def apply(): StyleOptions = {
+    inline def apply(): StyleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyleOptions]
     }
     
-    @scala.inline
-    implicit class StyleOptionsMutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StyleOptions](x: Self) {
       
-      @scala.inline
-      def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
       
-      @scala.inline
-      def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+      inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+      inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      @scala.inline
-      def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String | Icon | Symbol): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String | Icon | Symbol): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
-      @scala.inline
-      def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
+      inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
+      inline def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   

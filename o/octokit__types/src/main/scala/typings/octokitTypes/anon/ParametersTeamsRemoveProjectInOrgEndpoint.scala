@@ -17,8 +17,7 @@ trait ParametersTeamsRemoveProjectInOrgEndpoint extends StObject {
 }
 object ParametersTeamsRemoveProjectInOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: TeamsRemoveProjectInOrgEndpoint,
     request: TeamsRemoveProjectInOrgRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersTeamsRemoveProjectInOrgEndpoint {
     __obj.asInstanceOf[ParametersTeamsRemoveProjectInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersTeamsRemoveProjectInOrgEndpointMutableBuilder[Self <: ParametersTeamsRemoveProjectInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersTeamsRemoveProjectInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: TeamsRemoveProjectInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TeamsRemoveProjectInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: TeamsRemoveProjectInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: TeamsRemoveProjectInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

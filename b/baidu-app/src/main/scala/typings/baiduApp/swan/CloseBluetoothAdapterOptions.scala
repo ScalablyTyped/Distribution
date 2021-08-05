@@ -13,16 +13,13 @@ trait CloseBluetoothAdapterOptions
 }
 object CloseBluetoothAdapterOptions {
   
-  @scala.inline
-  def apply(success: js.Any => Unit): CloseBluetoothAdapterOptions = {
+  inline def apply(success: js.Any => Unit): CloseBluetoothAdapterOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[CloseBluetoothAdapterOptions]
   }
   
-  @scala.inline
-  implicit class CloseBluetoothAdapterOptionsMutableBuilder[Self <: CloseBluetoothAdapterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CloseBluetoothAdapterOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

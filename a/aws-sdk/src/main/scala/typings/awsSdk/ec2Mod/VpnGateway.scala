@@ -43,61 +43,43 @@ trait VpnGateway extends StObject {
 }
 object VpnGateway {
   
-  @scala.inline
-  def apply(): VpnGateway = {
+  inline def apply(): VpnGateway = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnGateway]
   }
   
-  @scala.inline
-  implicit class VpnGatewayMutableBuilder[Self <: VpnGateway] (val x: Self) extends AnyVal {
+  extension [Self <: VpnGateway](x: Self) {
     
-    @scala.inline
-    def setAmazonSideAsn(value: Long): Self = StObject.set(x, "AmazonSideAsn", value.asInstanceOf[js.Any])
+    inline def setAmazonSideAsn(value: Long): Self = StObject.set(x, "AmazonSideAsn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmazonSideAsnUndefined: Self = StObject.set(x, "AmazonSideAsn", js.undefined)
+    inline def setAmazonSideAsnUndefined: Self = StObject.set(x, "AmazonSideAsn", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setState(value: VpnState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: VpnState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: GatewayType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: GatewayType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setVpcAttachments(value: VpcAttachmentList): Self = StObject.set(x, "VpcAttachments", value.asInstanceOf[js.Any])
+    inline def setVpcAttachments(value: VpcAttachmentList): Self = StObject.set(x, "VpcAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcAttachmentsUndefined: Self = StObject.set(x, "VpcAttachments", js.undefined)
+    inline def setVpcAttachmentsUndefined: Self = StObject.set(x, "VpcAttachments", js.undefined)
     
-    @scala.inline
-    def setVpcAttachmentsVarargs(value: VpcAttachment*): Self = StObject.set(x, "VpcAttachments", js.Array(value :_*))
+    inline def setVpcAttachmentsVarargs(value: VpcAttachment*): Self = StObject.set(x, "VpcAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setVpnGatewayId(value: String): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
+    inline def setVpnGatewayId(value: String): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnGatewayIdUndefined: Self = StObject.set(x, "VpnGatewayId", js.undefined)
+    inline def setVpnGatewayIdUndefined: Self = StObject.set(x, "VpnGatewayId", js.undefined)
   }
 }

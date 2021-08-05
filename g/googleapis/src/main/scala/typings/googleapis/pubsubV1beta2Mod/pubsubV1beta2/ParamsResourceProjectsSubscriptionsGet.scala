@@ -24,25 +24,19 @@ trait ParamsResourceProjectsSubscriptionsGet
 }
 object ParamsResourceProjectsSubscriptionsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsSubscriptionsGet = {
+  inline def apply(): ParamsResourceProjectsSubscriptionsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsSubscriptionsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsSubscriptionsGetMutableBuilder[Self <: ParamsResourceProjectsSubscriptionsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsSubscriptionsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

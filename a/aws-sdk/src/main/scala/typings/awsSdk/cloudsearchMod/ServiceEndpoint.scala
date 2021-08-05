@@ -10,19 +10,15 @@ trait ServiceEndpoint extends StObject {
 }
 object ServiceEndpoint {
   
-  @scala.inline
-  def apply(): ServiceEndpoint = {
+  inline def apply(): ServiceEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceEndpoint]
   }
   
-  @scala.inline
-  implicit class ServiceEndpointMutableBuilder[Self <: ServiceEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceEndpoint](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: ServiceUrl): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: ServiceUrl): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
   }
 }

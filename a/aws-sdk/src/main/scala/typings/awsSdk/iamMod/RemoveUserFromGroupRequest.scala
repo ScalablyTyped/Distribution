@@ -18,19 +18,15 @@ trait RemoveUserFromGroupRequest extends StObject {
 }
 object RemoveUserFromGroupRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType, UserName: existingUserNameType): RemoveUserFromGroupRequest = {
+  inline def apply(GroupName: groupNameType, UserName: existingUserNameType): RemoveUserFromGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveUserFromGroupRequest]
   }
   
-  @scala.inline
-  implicit class RemoveUserFromGroupRequestMutableBuilder[Self <: RemoveUserFromGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveUserFromGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

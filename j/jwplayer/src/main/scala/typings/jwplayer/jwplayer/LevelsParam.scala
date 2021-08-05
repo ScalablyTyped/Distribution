@@ -12,22 +12,17 @@ trait LevelsParam extends StObject {
 }
 object LevelsParam {
   
-  @scala.inline
-  def apply(levels: js.Array[js.Any], width: Double): LevelsParam = {
+  inline def apply(levels: js.Array[js.Any], width: Double): LevelsParam = {
     val __obj = js.Dynamic.literal(levels = levels.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevelsParam]
   }
   
-  @scala.inline
-  implicit class LevelsParamMutableBuilder[Self <: LevelsParam] (val x: Self) extends AnyVal {
+  extension [Self <: LevelsParam](x: Self) {
     
-    @scala.inline
-    def setLevels(value: js.Array[js.Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[js.Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsVarargs(value: js.Any*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: js.Any*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

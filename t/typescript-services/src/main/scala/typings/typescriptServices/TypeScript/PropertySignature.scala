@@ -16,8 +16,7 @@ trait PropertySignature
 }
 object PropertySignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -46,16 +45,12 @@ object PropertySignature {
     __obj.asInstanceOf[PropertySignature]
   }
   
-  @scala.inline
-  implicit class PropertySignatureMutableBuilder[Self <: PropertySignature] (val x: Self) extends AnyVal {
+  extension [Self <: PropertySignature](x: Self) {
     
-    @scala.inline
-    def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestionToken(value: ASTSpan): Self = StObject.set(x, "questionToken", value.asInstanceOf[js.Any])
+    inline def setQuestionToken(value: ASTSpan): Self = StObject.set(x, "questionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

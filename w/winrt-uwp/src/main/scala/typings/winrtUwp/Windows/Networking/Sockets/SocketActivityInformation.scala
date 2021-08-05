@@ -30,8 +30,7 @@ trait SocketActivityInformation extends StObject {
 }
 object SocketActivityInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: SocketActivityContext,
     datagramSocket: DatagramSocket,
     id: String,
@@ -44,28 +43,20 @@ object SocketActivityInformation {
     __obj.asInstanceOf[SocketActivityInformation]
   }
   
-  @scala.inline
-  implicit class SocketActivityInformationMutableBuilder[Self <: SocketActivityInformation] (val x: Self) extends AnyVal {
+  extension [Self <: SocketActivityInformation](x: Self) {
     
-    @scala.inline
-    def setContext(value: SocketActivityContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: SocketActivityContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatagramSocket(value: DatagramSocket): Self = StObject.set(x, "datagramSocket", value.asInstanceOf[js.Any])
+    inline def setDatagramSocket(value: DatagramSocket): Self = StObject.set(x, "datagramSocket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketKind(value: SocketActivityKind): Self = StObject.set(x, "socketKind", value.asInstanceOf[js.Any])
+    inline def setSocketKind(value: SocketActivityKind): Self = StObject.set(x, "socketKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSocket(value: StreamSocket): Self = StObject.set(x, "streamSocket", value.asInstanceOf[js.Any])
+    inline def setStreamSocket(value: StreamSocket): Self = StObject.set(x, "streamSocket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSocketListener(value: StreamSocketListener): Self = StObject.set(x, "streamSocketListener", value.asInstanceOf[js.Any])
+    inline def setStreamSocketListener(value: StreamSocketListener): Self = StObject.set(x, "streamSocketListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

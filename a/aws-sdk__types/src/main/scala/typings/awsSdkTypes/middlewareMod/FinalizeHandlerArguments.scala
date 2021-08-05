@@ -9,8 +9,7 @@ trait FinalizeHandlerArguments[Input /* <: js.Object */]
      with SerializeHandlerArguments[Input]
 object FinalizeHandlerArguments {
   
-  @scala.inline
-  def apply[Input /* <: js.Object */](input: Input): FinalizeHandlerArguments[Input] = {
+  inline def apply[Input /* <: js.Object */](input: Input): FinalizeHandlerArguments[Input] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalizeHandlerArguments[Input]]
   }

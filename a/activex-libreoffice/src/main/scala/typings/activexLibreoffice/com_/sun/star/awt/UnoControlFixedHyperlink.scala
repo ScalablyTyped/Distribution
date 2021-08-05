@@ -16,8 +16,7 @@ trait UnoControlFixedHyperlink
      with XLayoutConstrains
 object UnoControlFixedHyperlink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Alignment: Double,
     Context: XInterface,

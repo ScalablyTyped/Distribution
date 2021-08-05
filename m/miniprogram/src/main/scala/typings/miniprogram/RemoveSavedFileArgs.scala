@@ -12,16 +12,13 @@ trait RemoveSavedFileArgs
 }
 object RemoveSavedFileArgs {
   
-  @scala.inline
-  def apply(apFilePath: String): RemoveSavedFileArgs = {
+  inline def apply(apFilePath: String): RemoveSavedFileArgs = {
     val __obj = js.Dynamic.literal(apFilePath = apFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveSavedFileArgs]
   }
   
-  @scala.inline
-  implicit class RemoveSavedFileArgsMutableBuilder[Self <: RemoveSavedFileArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveSavedFileArgs](x: Self) {
     
-    @scala.inline
-    def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
+    inline def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
   }
 }

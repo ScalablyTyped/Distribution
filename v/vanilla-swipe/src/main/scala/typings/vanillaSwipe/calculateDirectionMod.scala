@@ -12,9 +12,7 @@ object calculateDirectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculateDirection_x(trace: js.Array[Double], axis: x): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateDirection")(trace.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def calculateDirection_x(trace: js.Array[Double], axis: x): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateDirection")(trace.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def calculateDirection_y(trace: js.Array[Double], axis: y): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateDirection")(trace.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def calculateDirection_y(trace: js.Array[Double], axis: y): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateDirection")(trace.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
 }

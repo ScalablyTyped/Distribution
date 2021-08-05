@@ -27,43 +27,31 @@ trait TrialComponentSimpleSummary extends StObject {
 }
 object TrialComponentSimpleSummary {
   
-  @scala.inline
-  def apply(): TrialComponentSimpleSummary = {
+  inline def apply(): TrialComponentSimpleSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrialComponentSimpleSummary]
   }
   
-  @scala.inline
-  implicit class TrialComponentSimpleSummaryMutableBuilder[Self <: TrialComponentSimpleSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrialComponentSimpleSummary](x: Self) {
     
-    @scala.inline
-    def setCreatedBy(value: UserContext): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: UserContext): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
+    inline def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialComponentArnUndefined: Self = StObject.set(x, "TrialComponentArn", js.undefined)
+    inline def setTrialComponentArnUndefined: Self = StObject.set(x, "TrialComponentArn", js.undefined)
     
-    @scala.inline
-    def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
+    inline def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialComponentNameUndefined: Self = StObject.set(x, "TrialComponentName", js.undefined)
+    inline def setTrialComponentNameUndefined: Self = StObject.set(x, "TrialComponentName", js.undefined)
     
-    @scala.inline
-    def setTrialComponentSource(value: TrialComponentSource): Self = StObject.set(x, "TrialComponentSource", value.asInstanceOf[js.Any])
+    inline def setTrialComponentSource(value: TrialComponentSource): Self = StObject.set(x, "TrialComponentSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialComponentSourceUndefined: Self = StObject.set(x, "TrialComponentSource", js.undefined)
+    inline def setTrialComponentSourceUndefined: Self = StObject.set(x, "TrialComponentSource", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait GetCelebrityInfoResponse extends StObject {
 }
 object GetCelebrityInfoResponse {
   
-  @scala.inline
-  def apply(): GetCelebrityInfoResponse = {
+  inline def apply(): GetCelebrityInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCelebrityInfoResponse]
   }
   
-  @scala.inline
-  implicit class GetCelebrityInfoResponseMutableBuilder[Self <: GetCelebrityInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCelebrityInfoResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setUrls(value: Urls): Self = StObject.set(x, "Urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: Urls): Self = StObject.set(x, "Urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "Urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "Urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value :_*))
   }
 }

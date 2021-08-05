@@ -19,17 +19,14 @@ object globalsMod {
     }
     object Date {
       
-      @scala.inline
-      def apply(fp_incr: Double => Date): Date = {
+      inline def apply(fp_incr: Double => Date): Date = {
         val __obj = js.Dynamic.literal(fp_incr = js.Any.fromFunction1(fp_incr))
         __obj.asInstanceOf[Date]
       }
       
-      @scala.inline
-      implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+      extension [Self <: Date](x: Self) {
         
-        @scala.inline
-        def setFp_incr(value: Double => Date): Self = StObject.set(x, "fp_incr", js.Any.fromFunction1(value))
+        inline def setFp_incr(value: Double => Date): Self = StObject.set(x, "fp_incr", js.Any.fromFunction1(value))
       }
     }
     
@@ -69,17 +66,14 @@ object globalsMod {
     }
     object Window {
       
-      @scala.inline
-      def apply(flatpickr: FlatpickrFn): Window = {
+      inline def apply(flatpickr: FlatpickrFn): Window = {
         val __obj = js.Dynamic.literal(flatpickr = flatpickr.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setFlatpickr(value: FlatpickrFn): Self = StObject.set(x, "flatpickr", value.asInstanceOf[js.Any])
+        inline def setFlatpickr(value: FlatpickrFn): Self = StObject.set(x, "flatpickr", value.asInstanceOf[js.Any])
       }
     }
   }

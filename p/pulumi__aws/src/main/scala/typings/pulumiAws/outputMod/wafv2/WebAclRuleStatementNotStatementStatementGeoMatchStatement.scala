@@ -18,25 +18,19 @@ trait WebAclRuleStatementNotStatementStatementGeoMatchStatement extends StObject
 }
 object WebAclRuleStatementNotStatementStatementGeoMatchStatement {
   
-  @scala.inline
-  def apply(countryCodes: js.Array[String]): WebAclRuleStatementNotStatementStatementGeoMatchStatement = {
+  inline def apply(countryCodes: js.Array[String]): WebAclRuleStatementNotStatementStatementGeoMatchStatement = {
     val __obj = js.Dynamic.literal(countryCodes = countryCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementNotStatementStatementGeoMatchStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementNotStatementStatementGeoMatchStatementMutableBuilder[Self <: WebAclRuleStatementNotStatementStatementGeoMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementNotStatementStatementGeoMatchStatement](x: Self) {
     
-    @scala.inline
-    def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
+    inline def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardedIpConfig(value: WebAclRuleStatementNotStatementStatementGeoMatchStatementForwardedIpConfig): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
+    inline def setForwardedIpConfig(value: WebAclRuleStatementNotStatementStatementGeoMatchStatementForwardedIpConfig): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
+    inline def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
   }
 }

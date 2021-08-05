@@ -21,29 +21,22 @@ object typesMod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: Capabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+      inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: (DesiredCapabilities | W3CCapabilities)*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: (DesiredCapabilities | W3CCapabilities)*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setSpecFileRetryAttempts(value: Double): Self = StObject.set(x, "specFileRetryAttempts", value.asInstanceOf[js.Any])
+      inline def setSpecFileRetryAttempts(value: Double): Self = StObject.set(x, "specFileRetryAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecFileRetryAttemptsUndefined: Self = StObject.set(x, "specFileRetryAttempts", js.undefined)
+      inline def setSpecFileRetryAttemptsUndefined: Self = StObject.set(x, "specFileRetryAttempts", js.undefined)
     }
   }
   

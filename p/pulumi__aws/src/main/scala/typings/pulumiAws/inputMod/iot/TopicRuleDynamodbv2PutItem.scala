@@ -14,16 +14,13 @@ trait TopicRuleDynamodbv2PutItem extends StObject {
 }
 object TopicRuleDynamodbv2PutItem {
   
-  @scala.inline
-  def apply(tableName: Input[String]): TopicRuleDynamodbv2PutItem = {
+  inline def apply(tableName: Input[String]): TopicRuleDynamodbv2PutItem = {
     val __obj = js.Dynamic.literal(tableName = tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleDynamodbv2PutItem]
   }
   
-  @scala.inline
-  implicit class TopicRuleDynamodbv2PutItemMutableBuilder[Self <: TopicRuleDynamodbv2PutItem] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleDynamodbv2PutItem](x: Self) {
     
-    @scala.inline
-    def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

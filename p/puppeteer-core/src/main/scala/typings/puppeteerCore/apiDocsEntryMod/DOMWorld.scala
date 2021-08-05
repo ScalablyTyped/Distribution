@@ -24,6 +24,5 @@ object DOMWorld {
   @JSImport("puppeteer-core/lib/esm/puppeteer/api-docs-entry", "DOMWorld.bindingIdentifier")
   @js.native
   def bindingIdentifier: js.Any = js.native
-  @scala.inline
-  def bindingIdentifier_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindingIdentifier")(x.asInstanceOf[js.Any])
+  inline def bindingIdentifier_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindingIdentifier")(x.asInstanceOf[js.Any])
 }

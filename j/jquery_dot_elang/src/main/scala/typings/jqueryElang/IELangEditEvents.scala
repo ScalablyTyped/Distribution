@@ -17,8 +17,7 @@ trait IELangEditEvents extends StObject {
 }
 object IELangEditEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     insert: JQueryDeferred[js.Any],
     modify: JQueryDeferred[js.Any],
     remove: JQueryDeferred[js.Any],
@@ -28,19 +27,14 @@ object IELangEditEvents {
     __obj.asInstanceOf[IELangEditEvents]
   }
   
-  @scala.inline
-  implicit class IELangEditEventsMutableBuilder[Self <: IELangEditEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IELangEditEvents](x: Self) {
     
-    @scala.inline
-    def setInsert(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModify(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
+    inline def setModify(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

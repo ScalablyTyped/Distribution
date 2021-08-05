@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParseMode extends StObject
 object ParseMode {
   
-  @scala.inline
-  def HTML: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.HTML = "HTML".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.HTML]
+  inline def HTML: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.HTML = "HTML".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.HTML]
   
-  @scala.inline
-  def Markdown: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.Markdown = "Markdown".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.Markdown]
+  inline def Markdown: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.Markdown = "Markdown".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.Markdown]
   
-  @scala.inline
-  def MarkdownV2: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.MarkdownV2 = "MarkdownV2".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.MarkdownV2]
+  inline def MarkdownV2: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.MarkdownV2 = "MarkdownV2".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.MarkdownV2]
 }

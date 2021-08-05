@@ -14,8 +14,7 @@ trait Endpoint extends StObject {
 }
 object Endpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getApiEndpoint: () => String,
     getEndpointAndApi: () => String,
     setEndpointAndApi: (String, String) => Unit
@@ -24,16 +23,12 @@ object Endpoint {
     __obj.asInstanceOf[Endpoint]
   }
   
-  @scala.inline
-  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoint](x: Self) {
     
-    @scala.inline
-    def setGetApiEndpoint(value: () => String): Self = StObject.set(x, "getApiEndpoint", js.Any.fromFunction0(value))
+    inline def setGetApiEndpoint(value: () => String): Self = StObject.set(x, "getApiEndpoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEndpointAndApi(value: () => String): Self = StObject.set(x, "getEndpointAndApi", js.Any.fromFunction0(value))
+    inline def setGetEndpointAndApi(value: () => String): Self = StObject.set(x, "getEndpointAndApi", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEndpointAndApi(value: (String, String) => Unit): Self = StObject.set(x, "setEndpointAndApi", js.Any.fromFunction2(value))
+    inline def setSetEndpointAndApi(value: (String, String) => Unit): Self = StObject.set(x, "setEndpointAndApi", js.Any.fromFunction2(value))
   }
 }

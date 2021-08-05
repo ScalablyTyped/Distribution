@@ -45,46 +45,33 @@ trait Results[T] extends StObject {
 }
 object Results {
   
-  @scala.inline
-  def apply[T](): Results[T] = {
+  inline def apply[T](): Results[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Results[T]]
   }
   
-  @scala.inline
-  implicit class ResultsMutableBuilder[Self <: Results[?], T] (val x: Self & Results[T]) extends AnyVal {
+  extension [Self <: Results[?], T](x: Self & Results[T]) {
     
-    @scala.inline
-    def setBatchErrors(value: js.Array[DBError]): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
+    inline def setBatchErrors(value: js.Array[DBError]): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
+    inline def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
     
-    @scala.inline
-    def setBatchErrorsVarargs(value: DBError*): Self = StObject.set(x, "batchErrors", js.Array(value :_*))
+    inline def setBatchErrorsVarargs(value: DBError*): Self = StObject.set(x, "batchErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setDmlRowCounts(value: js.Array[Double]): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
+    inline def setDmlRowCounts(value: js.Array[Double]): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
+    inline def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
     
-    @scala.inline
-    def setDmlRowCountsVarargs(value: Double*): Self = StObject.set(x, "dmlRowCounts", js.Array(value :_*))
+    inline def setDmlRowCountsVarargs(value: Double*): Self = StObject.set(x, "dmlRowCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setOutBinds(value: js.Array[T]): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
+    inline def setOutBinds(value: js.Array[T]): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
+    inline def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
     
-    @scala.inline
-    def setOutBindsVarargs(value: T*): Self = StObject.set(x, "outBinds", js.Array(value :_*))
+    inline def setOutBindsVarargs(value: T*): Self = StObject.set(x, "outBinds", js.Array(value :_*))
     
-    @scala.inline
-    def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
+    inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsAffectedUndefined: Self = StObject.set(x, "rowsAffected", js.undefined)
+    inline def setRowsAffectedUndefined: Self = StObject.set(x, "rowsAffected", js.undefined)
   }
 }

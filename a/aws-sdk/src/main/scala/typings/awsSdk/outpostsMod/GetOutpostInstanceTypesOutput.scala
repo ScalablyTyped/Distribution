@@ -16,40 +16,29 @@ trait GetOutpostInstanceTypesOutput extends StObject {
 }
 object GetOutpostInstanceTypesOutput {
   
-  @scala.inline
-  def apply(): GetOutpostInstanceTypesOutput = {
+  inline def apply(): GetOutpostInstanceTypesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOutpostInstanceTypesOutput]
   }
   
-  @scala.inline
-  implicit class GetOutpostInstanceTypesOutputMutableBuilder[Self <: GetOutpostInstanceTypesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOutpostInstanceTypesOutput](x: Self) {
     
-    @scala.inline
-    def setInstanceTypes(value: InstanceTypeListDefinition): Self = StObject.set(x, "InstanceTypes", value.asInstanceOf[js.Any])
+    inline def setInstanceTypes(value: InstanceTypeListDefinition): Self = StObject.set(x, "InstanceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypesUndefined: Self = StObject.set(x, "InstanceTypes", js.undefined)
+    inline def setInstanceTypesUndefined: Self = StObject.set(x, "InstanceTypes", js.undefined)
     
-    @scala.inline
-    def setInstanceTypesVarargs(value: InstanceTypeItem*): Self = StObject.set(x, "InstanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: InstanceTypeItem*): Self = StObject.set(x, "InstanceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOutpostArn(value: OutpostArn): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    inline def setOutpostArn(value: OutpostArn): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
-    @scala.inline
-    def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
+    inline def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object sipdump {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def send(stag: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(stag.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def send(stag: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(stag.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

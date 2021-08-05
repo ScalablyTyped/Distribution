@@ -50,9 +50,9 @@ object modifiedLogScaleMod {
       */
     /* private */ def _adjustedLog(x: js.Any): js.Any = js.native
     
-    var _base: js.Any = js.native
+    /* private */ var _base: js.Any = js.native
     
-    var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: js.Any = js.native
     
     /**
       * How many ticks does the range [lower, upper] deserve?
@@ -65,7 +65,7 @@ object modifiedLogScaleMod {
     
     /* private */ def _invertedAdjustedLog(x: js.Any): js.Any = js.native
     
-    var _logTickGenerator: js.Any = js.native
+    /* private */ var _logTickGenerator: js.Any = js.native
     
     /**
       * Return an appropriate number of ticks from lower to upper.
@@ -82,8 +82,8 @@ object modifiedLogScaleMod {
       */
     /* private */ def _logTicks(lower: js.Any, upper: js.Any): js.Any = js.native
     
-    var _pivot: js.Any = js.native
+    /* private */ var _pivot: js.Any = js.native
     
-    var _untransformedDomain: js.Any = js.native
+    /* private */ var _untransformedDomain: js.Any = js.native
   }
 }

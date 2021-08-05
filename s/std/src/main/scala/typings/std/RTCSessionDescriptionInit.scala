@@ -12,25 +12,19 @@ trait RTCSessionDescriptionInit extends StObject {
 }
 object RTCSessionDescriptionInit {
   
-  @scala.inline
-  def apply(): RTCSessionDescriptionInit = {
+  inline def apply(): RTCSessionDescriptionInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCSessionDescriptionInit]
   }
   
-  @scala.inline
-  implicit class RTCSessionDescriptionInitMutableBuilder[Self <: RTCSessionDescriptionInit] (val x: Self) extends AnyVal {
+  extension [Self <: RTCSessionDescriptionInit](x: Self) {
     
-    @scala.inline
-    def setSdp(value: java.lang.String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
+    inline def setSdp(value: java.lang.String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdpUndefined: Self = StObject.set(x, "sdp", js.undefined)
+    inline def setSdpUndefined: Self = StObject.set(x, "sdp", js.undefined)
     
-    @scala.inline
-    def setType(value: RTCSdpType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RTCSdpType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

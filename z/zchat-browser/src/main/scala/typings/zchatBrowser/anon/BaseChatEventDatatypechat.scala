@@ -28,8 +28,7 @@ trait BaseChatEventDatatypechat
 }
 object BaseChatEventDatatypechat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     display_name: String,
     msg: String,
     nick: String,
@@ -42,31 +41,22 @@ object BaseChatEventDatatypechat {
     __obj.asInstanceOf[BaseChatEventDatatypechat]
   }
   
-  @scala.inline
-  implicit class BaseChatEventDatatypechatMutableBuilder[Self <: BaseChatEventDatatypechat] (val x: Self) extends AnyVal {
+  extension [Self <: BaseChatEventDatatypechat](x: Self) {
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+    inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setStructured_msg(value: StructuredMessage): Self = StObject.set(x, "structured_msg", value.asInstanceOf[js.Any])
+    inline def setStructured_msg(value: StructuredMessage): Self = StObject.set(x, "structured_msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_stamp(value: Double): Self = StObject.set(x, "time_stamp", value.asInstanceOf[js.Any])
+    inline def setTime_stamp(value: Double): Self = StObject.set(x, "time_stamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: chatDotmsg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: chatDotmsg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

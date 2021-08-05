@@ -18,32 +18,24 @@ trait MUIDataTableViewCol extends StObject {
 }
 object MUIDataTableViewCol {
   
-  @scala.inline
-  def apply(columns: js.Array[js.Any], `object`: js.Object, onColumnUpdate: js.Any => js.Any): MUIDataTableViewCol = {
+  inline def apply(columns: js.Array[js.Any], `object`: js.Object, onColumnUpdate: js.Any => js.Any): MUIDataTableViewCol = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], onColumnUpdate = js.Any.fromFunction1(onColumnUpdate))
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableViewCol]
   }
   
-  @scala.inline
-  implicit class MUIDataTableViewColMutableBuilder[Self <: MUIDataTableViewCol] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableViewCol](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setObject(value: js.Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnColumnUpdate(value: js.Any => js.Any): Self = StObject.set(x, "onColumnUpdate", js.Any.fromFunction1(value))
+    inline def setOnColumnUpdate(value: js.Any => js.Any): Self = StObject.set(x, "onColumnUpdate", js.Any.fromFunction1(value))
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReturnKeyType extends StObject
 object ReturnKeyType {
   
-  @scala.inline
-  def done: typings.reactNative.reactNativeStrings.done = "done".asInstanceOf[typings.reactNative.reactNativeStrings.done]
+  inline def done: typings.reactNative.reactNativeStrings.done = "done".asInstanceOf[typings.reactNative.reactNativeStrings.done]
   
-  @scala.inline
-  def go: typings.reactNative.reactNativeStrings.go = "go".asInstanceOf[typings.reactNative.reactNativeStrings.go]
+  inline def go: typings.reactNative.reactNativeStrings.go = "go".asInstanceOf[typings.reactNative.reactNativeStrings.go]
   
-  @scala.inline
-  def next: typings.reactNative.reactNativeStrings.next = "next".asInstanceOf[typings.reactNative.reactNativeStrings.next]
+  inline def next: typings.reactNative.reactNativeStrings.next = "next".asInstanceOf[typings.reactNative.reactNativeStrings.next]
   
-  @scala.inline
-  def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
+  inline def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
   
-  @scala.inline
-  def send: typings.reactNative.reactNativeStrings.send = "send".asInstanceOf[typings.reactNative.reactNativeStrings.send]
+  inline def send: typings.reactNative.reactNativeStrings.send = "send".asInstanceOf[typings.reactNative.reactNativeStrings.send]
 }

@@ -18,25 +18,19 @@ trait StorageLensDataExportEncryption extends StObject {
 }
 object StorageLensDataExportEncryption {
   
-  @scala.inline
-  def apply(): StorageLensDataExportEncryption = {
+  inline def apply(): StorageLensDataExportEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageLensDataExportEncryption]
   }
   
-  @scala.inline
-  implicit class StorageLensDataExportEncryptionMutableBuilder[Self <: StorageLensDataExportEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: StorageLensDataExportEncryption](x: Self) {
     
-    @scala.inline
-    def setSSEKMS(value: SSEKMS): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
+    inline def setSSEKMS(value: SSEKMS): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSEKMSUndefined: Self = StObject.set(x, "SSEKMS", js.undefined)
+    inline def setSSEKMSUndefined: Self = StObject.set(x, "SSEKMS", js.undefined)
     
-    @scala.inline
-    def setSSES3(value: SSES3): Self = StObject.set(x, "SSES3", value.asInstanceOf[js.Any])
+    inline def setSSES3(value: SSES3): Self = StObject.set(x, "SSES3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSES3Undefined: Self = StObject.set(x, "SSES3", js.undefined)
+    inline def setSSES3Undefined: Self = StObject.set(x, "SSES3", js.undefined)
   }
 }

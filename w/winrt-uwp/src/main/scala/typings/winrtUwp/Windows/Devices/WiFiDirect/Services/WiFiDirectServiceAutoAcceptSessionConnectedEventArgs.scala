@@ -16,19 +16,15 @@ trait WiFiDirectServiceAutoAcceptSessionConnectedEventArgs extends StObject {
 }
 object WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
   
-  @scala.inline
-  def apply(session: WiFiDirectServiceSession, sessionInfo: IBuffer): WiFiDirectServiceAutoAcceptSessionConnectedEventArgs = {
+  inline def apply(session: WiFiDirectServiceSession, sessionInfo: IBuffer): WiFiDirectServiceAutoAcceptSessionConnectedEventArgs = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], sessionInfo = sessionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiDirectServiceAutoAcceptSessionConnectedEventArgs]
   }
   
-  @scala.inline
-  implicit class WiFiDirectServiceAutoAcceptSessionConnectedEventArgsMutableBuilder[Self <: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSession(value: WiFiDirectServiceSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: WiFiDirectServiceSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionInfo(value: IBuffer): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
+    inline def setSessionInfo(value: IBuffer): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
   }
 }

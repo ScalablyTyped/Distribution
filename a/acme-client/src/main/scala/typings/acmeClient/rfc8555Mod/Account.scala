@@ -21,40 +21,29 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(orders: String, status: valid | deactivated | revoked): Account = {
+  inline def apply(orders: String, status: valid | deactivated | revoked): Account = {
     val __obj = js.Dynamic.literal(orders = orders.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setContact(value: js.Array[String]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Array[String]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    @scala.inline
-    def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value :_*))
+    inline def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
-    @scala.inline
-    def setExternalAccountBinding(value: js.Object): Self = StObject.set(x, "externalAccountBinding", value.asInstanceOf[js.Any])
+    inline def setExternalAccountBinding(value: js.Object): Self = StObject.set(x, "externalAccountBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalAccountBindingUndefined: Self = StObject.set(x, "externalAccountBinding", js.undefined)
+    inline def setExternalAccountBindingUndefined: Self = StObject.set(x, "externalAccountBinding", js.undefined)
     
-    @scala.inline
-    def setOrders(value: String): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
+    inline def setOrders(value: String): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: valid | deactivated | revoked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: valid | deactivated | revoked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsOfServiceAgreed(value: Boolean): Self = StObject.set(x, "termsOfServiceAgreed", value.asInstanceOf[js.Any])
+    inline def setTermsOfServiceAgreed(value: Boolean): Self = StObject.set(x, "termsOfServiceAgreed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsOfServiceAgreedUndefined: Self = StObject.set(x, "termsOfServiceAgreed", js.undefined)
+    inline def setTermsOfServiceAgreedUndefined: Self = StObject.set(x, "termsOfServiceAgreed", js.undefined)
   }
 }

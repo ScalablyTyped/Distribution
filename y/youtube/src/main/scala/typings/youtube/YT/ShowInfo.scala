@@ -16,12 +16,10 @@ object ShowInfo {
   /**
     * Hide video title and uploader before video starts playing.
     */
-  @scala.inline
-  def Hide: `0` = 0.asInstanceOf[`0`]
+  inline def Hide: `0` = 0.asInstanceOf[`0`]
   
   /**
     * Show video title and uploader before video starts playing.
     */
-  @scala.inline
-  def Show: `1` = 1.asInstanceOf[`1`]
+  inline def Show: `1` = 1.asInstanceOf[`1`]
 }

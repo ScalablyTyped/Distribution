@@ -23,34 +23,25 @@ trait SchemaOrderpaymentsNotifyChargeRequest extends StObject {
 }
 object SchemaOrderpaymentsNotifyChargeRequest {
   
-  @scala.inline
-  def apply(): SchemaOrderpaymentsNotifyChargeRequest = {
+  inline def apply(): SchemaOrderpaymentsNotifyChargeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderpaymentsNotifyChargeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrderpaymentsNotifyChargeRequestMutableBuilder[Self <: SchemaOrderpaymentsNotifyChargeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderpaymentsNotifyChargeRequest](x: Self) {
     
-    @scala.inline
-    def setChargeState(value: String): Self = StObject.set(x, "chargeState", value.asInstanceOf[js.Any])
+    inline def setChargeState(value: String): Self = StObject.set(x, "chargeState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargeStateUndefined: Self = StObject.set(x, "chargeState", js.undefined)
+    inline def setChargeStateUndefined: Self = StObject.set(x, "chargeState", js.undefined)
     
-    @scala.inline
-    def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
+    inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
+    inline def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
     
-    @scala.inline
-    def setInvoiceIds(value: js.Array[String]): Self = StObject.set(x, "invoiceIds", value.asInstanceOf[js.Any])
+    inline def setInvoiceIds(value: js.Array[String]): Self = StObject.set(x, "invoiceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdsUndefined: Self = StObject.set(x, "invoiceIds", js.undefined)
+    inline def setInvoiceIdsUndefined: Self = StObject.set(x, "invoiceIds", js.undefined)
     
-    @scala.inline
-    def setInvoiceIdsVarargs(value: String*): Self = StObject.set(x, "invoiceIds", js.Array(value :_*))
+    inline def setInvoiceIdsVarargs(value: String*): Self = StObject.set(x, "invoiceIds", js.Array(value :_*))
   }
 }

@@ -22,25 +22,19 @@ trait PlotNatrParamsOptions extends StObject {
 }
 object PlotNatrParamsOptions {
   
-  @scala.inline
-  def apply(): PlotNatrParamsOptions = {
+  inline def apply(): PlotNatrParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotNatrParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotNatrParamsOptionsMutableBuilder[Self <: PlotNatrParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotNatrParamsOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

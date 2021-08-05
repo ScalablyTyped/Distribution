@@ -10,16 +10,13 @@ trait OptionsAlphabetize extends StObject {
 }
 object OptionsAlphabetize {
   
-  @scala.inline
-  def apply(options: Alphabetize): OptionsAlphabetize = {
+  inline def apply(options: Alphabetize): OptionsAlphabetize = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsAlphabetize]
   }
   
-  @scala.inline
-  implicit class OptionsAlphabetizeMutableBuilder[Self <: OptionsAlphabetize] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsAlphabetize](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Alphabetize): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Alphabetize): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

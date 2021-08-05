@@ -17,8 +17,7 @@ trait ValueDescriptionString
 }
 object ValueDescriptionString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
     value: String
@@ -28,13 +27,10 @@ object ValueDescriptionString {
     __obj.asInstanceOf[ValueDescriptionString]
   }
   
-  @scala.inline
-  implicit class ValueDescriptionStringMutableBuilder[Self <: ValueDescriptionString] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDescriptionString](x: Self) {
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

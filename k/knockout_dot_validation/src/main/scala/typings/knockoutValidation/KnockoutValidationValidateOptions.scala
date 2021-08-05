@@ -10,19 +10,15 @@ trait KnockoutValidationValidateOptions extends StObject {
 }
 object KnockoutValidationValidateOptions {
   
-  @scala.inline
-  def apply(): KnockoutValidationValidateOptions = {
+  inline def apply(): KnockoutValidationValidateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KnockoutValidationValidateOptions]
   }
   
-  @scala.inline
-  implicit class KnockoutValidationValidateOptionsMutableBuilder[Self <: KnockoutValidationValidateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutValidationValidateOptions](x: Self) {
     
-    @scala.inline
-    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+    inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
   }
 }

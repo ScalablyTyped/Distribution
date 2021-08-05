@@ -79,44 +79,32 @@ object transportsMod extends Shortcut {
   }
   object ConsoleTransportOptions {
     
-    @scala.inline
-    def apply(): ConsoleTransportOptions = {
+    inline def apply(): ConsoleTransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsoleTransportOptions]
     }
     
-    @scala.inline
-    implicit class ConsoleTransportOptionsMutableBuilder[Self <: ConsoleTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConsoleTransportOptions](x: Self) {
       
-      @scala.inline
-      def setConsoleWarnLevels(value: js.Array[String]): Self = StObject.set(x, "consoleWarnLevels", value.asInstanceOf[js.Any])
+      inline def setConsoleWarnLevels(value: js.Array[String]): Self = StObject.set(x, "consoleWarnLevels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleWarnLevelsUndefined: Self = StObject.set(x, "consoleWarnLevels", js.undefined)
+      inline def setConsoleWarnLevelsUndefined: Self = StObject.set(x, "consoleWarnLevels", js.undefined)
       
-      @scala.inline
-      def setConsoleWarnLevelsVarargs(value: String*): Self = StObject.set(x, "consoleWarnLevels", js.Array(value :_*))
+      inline def setConsoleWarnLevelsVarargs(value: String*): Self = StObject.set(x, "consoleWarnLevels", js.Array(value :_*))
       
-      @scala.inline
-      def setDebugStdout(value: Boolean): Self = StObject.set(x, "debugStdout", value.asInstanceOf[js.Any])
+      inline def setDebugStdout(value: Boolean): Self = StObject.set(x, "debugStdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugStdoutUndefined: Self = StObject.set(x, "debugStdout", js.undefined)
+      inline def setDebugStdoutUndefined: Self = StObject.set(x, "debugStdout", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setStderrLevels(value: js.Array[String]): Self = StObject.set(x, "stderrLevels", value.asInstanceOf[js.Any])
+      inline def setStderrLevels(value: js.Array[String]): Self = StObject.set(x, "stderrLevels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrLevelsUndefined: Self = StObject.set(x, "stderrLevels", js.undefined)
+      inline def setStderrLevelsUndefined: Self = StObject.set(x, "stderrLevels", js.undefined)
       
-      @scala.inline
-      def setStderrLevelsVarargs(value: String*): Self = StObject.set(x, "stderrLevels", js.Array(value :_*))
+      inline def setStderrLevelsVarargs(value: String*): Self = StObject.set(x, "stderrLevels", js.Array(value :_*))
     }
   }
   
@@ -182,74 +170,52 @@ object transportsMod extends Shortcut {
   }
   object FileTransportOptions {
     
-    @scala.inline
-    def apply(): FileTransportOptions = {
+    inline def apply(): FileTransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileTransportOptions]
     }
     
-    @scala.inline
-    implicit class FileTransportOptionsMutableBuilder[Self <: FileTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileTransportOptions](x: Self) {
       
-      @scala.inline
-      def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
+      inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
+      inline def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
+      inline def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
       
-      @scala.inline
-      def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
+      inline def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxsizeUndefined: Self = StObject.set(x, "maxsize", js.undefined)
+      inline def setMaxsizeUndefined: Self = StObject.set(x, "maxsize", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRotationFormat(value: js.Function): Self = StObject.set(x, "rotationFormat", value.asInstanceOf[js.Any])
+      inline def setRotationFormat(value: js.Function): Self = StObject.set(x, "rotationFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationFormatUndefined: Self = StObject.set(x, "rotationFormat", js.undefined)
+      inline def setRotationFormatUndefined: Self = StObject.set(x, "rotationFormat", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setTailable(value: Boolean): Self = StObject.set(x, "tailable", value.asInstanceOf[js.Any])
+      inline def setTailable(value: Boolean): Self = StObject.set(x, "tailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTailableUndefined: Self = StObject.set(x, "tailable", js.undefined)
+      inline def setTailableUndefined: Self = StObject.set(x, "tailable", js.undefined)
       
-      @scala.inline
-      def setZippedArchive(value: Boolean): Self = StObject.set(x, "zippedArchive", value.asInstanceOf[js.Any])
+      inline def setZippedArchive(value: Boolean): Self = StObject.set(x, "zippedArchive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZippedArchiveUndefined: Self = StObject.set(x, "zippedArchive", js.undefined)
+      inline def setZippedArchiveUndefined: Self = StObject.set(x, "zippedArchive", js.undefined)
     }
   }
   
@@ -303,56 +269,40 @@ object transportsMod extends Shortcut {
   }
   object HttpTransportOptions {
     
-    @scala.inline
-    def apply(): HttpTransportOptions = {
+    inline def apply(): HttpTransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpTransportOptions]
     }
     
-    @scala.inline
-    implicit class HttpTransportOptionsMutableBuilder[Self <: HttpTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpTransportOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setAuth(value: Bearer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Bearer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSsl(value: js.Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: js.Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     }
   }
   
@@ -384,23 +334,18 @@ object transportsMod extends Shortcut {
   }
   object StreamTransportOptions {
     
-    @scala.inline
-    def apply(stream: WritableStream): StreamTransportOptions = {
+    inline def apply(stream: WritableStream): StreamTransportOptions = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamTransportOptions]
     }
     
-    @scala.inline
-    implicit class StreamTransportOptionsMutableBuilder[Self <: StreamTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamTransportOptions](x: Self) {
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -424,8 +369,7 @@ object transportsMod extends Shortcut {
   }
   object Transports {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Console: ConsoleTransportInstance,
       ConsoleTransportOptions: ConsoleTransportOptions,
       File: FileTransportInstance,
@@ -439,32 +383,23 @@ object transportsMod extends Shortcut {
       __obj.asInstanceOf[Transports]
     }
     
-    @scala.inline
-    implicit class TransportsMutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
+    extension [Self <: Transports](x: Self) {
       
-      @scala.inline
-      def setConsole(value: ConsoleTransportInstance): Self = StObject.set(x, "Console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: ConsoleTransportInstance): Self = StObject.set(x, "Console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleTransportOptions(value: ConsoleTransportOptions): Self = StObject.set(x, "ConsoleTransportOptions", value.asInstanceOf[js.Any])
+      inline def setConsoleTransportOptions(value: ConsoleTransportOptions): Self = StObject.set(x, "ConsoleTransportOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: FileTransportInstance): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+      inline def setFile(value: FileTransportInstance): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTransportOptions(value: FileTransportOptions): Self = StObject.set(x, "FileTransportOptions", value.asInstanceOf[js.Any])
+      inline def setFileTransportOptions(value: FileTransportOptions): Self = StObject.set(x, "FileTransportOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttp(value: HttpTransportInstance): Self = StObject.set(x, "Http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: HttpTransportInstance): Self = StObject.set(x, "Http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpTransportOptions(value: HttpTransportOptions): Self = StObject.set(x, "HttpTransportOptions", value.asInstanceOf[js.Any])
+      inline def setHttpTransportOptions(value: HttpTransportOptions): Self = StObject.set(x, "HttpTransportOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: StreamTransportInstance): Self = StObject.set(x, "Stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: StreamTransportInstance): Self = StObject.set(x, "Stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamTransportOptions(value: StreamTransportOptions): Self = StObject.set(x, "StreamTransportOptions", value.asInstanceOf[js.Any])
+      inline def setStreamTransportOptions(value: StreamTransportOptions): Self = StObject.set(x, "StreamTransportOptions", value.asInstanceOf[js.Any])
     }
   }
   

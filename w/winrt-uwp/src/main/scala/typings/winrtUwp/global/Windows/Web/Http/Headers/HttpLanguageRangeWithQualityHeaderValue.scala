@@ -43,14 +43,12 @@ object HttpLanguageRangeWithQualityHeaderValue {
     * @return An HttpLanguageRangeWithQualityHeaderValue instance.
     */
   /* static member */
-  @scala.inline
-  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue]
+  inline def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue]
   
   /**
     * Determines whether a string is valid HttpLanguageRangeWithQualityHeaderValue information.
     * @param input The string to validate.
     */
   /* static member */
-  @scala.inline
-  def tryParse(input: String): LanguageRangeWithQualityHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[LanguageRangeWithQualityHeaderValue]
+  inline def tryParse(input: String): LanguageRangeWithQualityHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[LanguageRangeWithQualityHeaderValue]
 }

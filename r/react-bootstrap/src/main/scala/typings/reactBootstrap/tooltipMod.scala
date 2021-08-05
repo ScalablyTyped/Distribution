@@ -41,62 +41,44 @@ object tooltipMod {
   }
   object TooltipProps {
     
-    @scala.inline
-    def apply(): TooltipProps = {
+    inline def apply(): TooltipProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TooltipProps]
     }
     
-    @scala.inline
-    implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipProps](x: Self) {
       
-      @scala.inline
-      def setArrowOffsetLeft(value: Double | String): Self = StObject.set(x, "arrowOffsetLeft", value.asInstanceOf[js.Any])
+      inline def setArrowOffsetLeft(value: Double | String): Self = StObject.set(x, "arrowOffsetLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowOffsetLeftUndefined: Self = StObject.set(x, "arrowOffsetLeft", js.undefined)
+      inline def setArrowOffsetLeftUndefined: Self = StObject.set(x, "arrowOffsetLeft", js.undefined)
       
-      @scala.inline
-      def setArrowOffsetTop(value: Double | String): Self = StObject.set(x, "arrowOffsetTop", value.asInstanceOf[js.Any])
+      inline def setArrowOffsetTop(value: Double | String): Self = StObject.set(x, "arrowOffsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowOffsetTopUndefined: Self = StObject.set(x, "arrowOffsetTop", js.undefined)
+      inline def setArrowOffsetTopUndefined: Self = StObject.set(x, "arrowOffsetTop", js.undefined)
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
+      inline def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
+      inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setPositionLeft(value: Double): Self = StObject.set(x, "positionLeft", value.asInstanceOf[js.Any])
+      inline def setPositionLeft(value: Double): Self = StObject.set(x, "positionLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionLeftUndefined: Self = StObject.set(x, "positionLeft", js.undefined)
+      inline def setPositionLeftUndefined: Self = StObject.set(x, "positionLeft", js.undefined)
       
-      @scala.inline
-      def setPositionTop(value: Double): Self = StObject.set(x, "positionTop", value.asInstanceOf[js.Any])
+      inline def setPositionTop(value: Double): Self = StObject.set(x, "positionTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionTopUndefined: Self = StObject.set(x, "positionTop", js.undefined)
+      inline def setPositionTopUndefined: Self = StObject.set(x, "positionTop", js.undefined)
     }
   }
 }

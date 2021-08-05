@@ -40,23 +40,18 @@ object mod extends Shortcut {
   }
   object HighlightProps {
     
-    @scala.inline
-    def apply(language: String): HighlightProps = {
+    inline def apply(language: String): HighlightProps = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
       __obj.asInstanceOf[HighlightProps]
     }
     
-    @scala.inline
-    implicit class HighlightPropsMutableBuilder[Self <: HighlightProps] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     }
   }
   

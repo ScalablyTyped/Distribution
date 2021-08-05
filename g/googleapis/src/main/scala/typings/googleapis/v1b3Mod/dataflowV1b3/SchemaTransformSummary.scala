@@ -41,58 +41,41 @@ trait SchemaTransformSummary extends StObject {
 }
 object SchemaTransformSummary {
   
-  @scala.inline
-  def apply(): SchemaTransformSummary = {
+  inline def apply(): SchemaTransformSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTransformSummary]
   }
   
-  @scala.inline
-  implicit class SchemaTransformSummaryMutableBuilder[Self <: SchemaTransformSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTransformSummary](x: Self) {
     
-    @scala.inline
-    def setDisplayData(value: js.Array[SchemaDisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
+    inline def setDisplayData(value: js.Array[SchemaDisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
+    inline def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
-    @scala.inline
-    def setDisplayDataVarargs(value: SchemaDisplayData*): Self = StObject.set(x, "displayData", js.Array(value :_*))
+    inline def setDisplayDataVarargs(value: SchemaDisplayData*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInputCollectionName(value: js.Array[String]): Self = StObject.set(x, "inputCollectionName", value.asInstanceOf[js.Any])
+    inline def setInputCollectionName(value: js.Array[String]): Self = StObject.set(x, "inputCollectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputCollectionNameUndefined: Self = StObject.set(x, "inputCollectionName", js.undefined)
+    inline def setInputCollectionNameUndefined: Self = StObject.set(x, "inputCollectionName", js.undefined)
     
-    @scala.inline
-    def setInputCollectionNameVarargs(value: String*): Self = StObject.set(x, "inputCollectionName", js.Array(value :_*))
+    inline def setInputCollectionNameVarargs(value: String*): Self = StObject.set(x, "inputCollectionName", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutputCollectionName(value: js.Array[String]): Self = StObject.set(x, "outputCollectionName", value.asInstanceOf[js.Any])
+    inline def setOutputCollectionName(value: js.Array[String]): Self = StObject.set(x, "outputCollectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputCollectionNameUndefined: Self = StObject.set(x, "outputCollectionName", js.undefined)
+    inline def setOutputCollectionNameUndefined: Self = StObject.set(x, "outputCollectionName", js.undefined)
     
-    @scala.inline
-    def setOutputCollectionNameVarargs(value: String*): Self = StObject.set(x, "outputCollectionName", js.Array(value :_*))
+    inline def setOutputCollectionNameVarargs(value: String*): Self = StObject.set(x, "outputCollectionName", js.Array(value :_*))
   }
 }

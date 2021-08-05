@@ -55,68 +55,48 @@ object squirrelWindowsOptionsMod {
   }
   object SquirrelWindowsOptions {
     
-    @scala.inline
-    def apply(): SquirrelWindowsOptions = {
+    inline def apply(): SquirrelWindowsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SquirrelWindowsOptions]
     }
     
-    @scala.inline
-    implicit class SquirrelWindowsOptionsMutableBuilder[Self <: SquirrelWindowsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SquirrelWindowsOptions](x: Self) {
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlNull: Self = StObject.set(x, "iconUrl", null)
+      inline def setIconUrlNull: Self = StObject.set(x, "iconUrl", null)
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setLoadingGif(value: String): Self = StObject.set(x, "loadingGif", value.asInstanceOf[js.Any])
+      inline def setLoadingGif(value: String): Self = StObject.set(x, "loadingGif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingGifNull: Self = StObject.set(x, "loadingGif", null)
+      inline def setLoadingGifNull: Self = StObject.set(x, "loadingGif", null)
       
-      @scala.inline
-      def setLoadingGifUndefined: Self = StObject.set(x, "loadingGif", js.undefined)
+      inline def setLoadingGifUndefined: Self = StObject.set(x, "loadingGif", js.undefined)
       
-      @scala.inline
-      def setMsi(value: Boolean): Self = StObject.set(x, "msi", value.asInstanceOf[js.Any])
+      inline def setMsi(value: Boolean): Self = StObject.set(x, "msi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsiUndefined: Self = StObject.set(x, "msi", js.undefined)
+      inline def setMsiUndefined: Self = StObject.set(x, "msi", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRemoteReleases(value: String | Boolean): Self = StObject.set(x, "remoteReleases", value.asInstanceOf[js.Any])
+      inline def setRemoteReleases(value: String | Boolean): Self = StObject.set(x, "remoteReleases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteReleasesNull: Self = StObject.set(x, "remoteReleases", null)
+      inline def setRemoteReleasesNull: Self = StObject.set(x, "remoteReleases", null)
       
-      @scala.inline
-      def setRemoteReleasesUndefined: Self = StObject.set(x, "remoteReleases", js.undefined)
+      inline def setRemoteReleasesUndefined: Self = StObject.set(x, "remoteReleases", js.undefined)
       
-      @scala.inline
-      def setRemoteToken(value: String): Self = StObject.set(x, "remoteToken", value.asInstanceOf[js.Any])
+      inline def setRemoteToken(value: String): Self = StObject.set(x, "remoteToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteTokenNull: Self = StObject.set(x, "remoteToken", null)
+      inline def setRemoteTokenNull: Self = StObject.set(x, "remoteToken", null)
       
-      @scala.inline
-      def setRemoteTokenUndefined: Self = StObject.set(x, "remoteToken", js.undefined)
+      inline def setRemoteTokenUndefined: Self = StObject.set(x, "remoteToken", js.undefined)
       
-      @scala.inline
-      def setUseAppIdAsId(value: Boolean): Self = StObject.set(x, "useAppIdAsId", value.asInstanceOf[js.Any])
+      inline def setUseAppIdAsId(value: Boolean): Self = StObject.set(x, "useAppIdAsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAppIdAsIdUndefined: Self = StObject.set(x, "useAppIdAsId", js.undefined)
+      inline def setUseAppIdAsIdUndefined: Self = StObject.set(x, "useAppIdAsId", js.undefined)
     }
   }
 }

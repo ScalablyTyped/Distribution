@@ -11,19 +11,15 @@ trait UpdateConsumerConfigRequest extends StObject {
 }
 object UpdateConsumerConfigRequest {
   
-  @scala.inline
-  def apply(): UpdateConsumerConfigRequest = {
+  inline def apply(): UpdateConsumerConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateConsumerConfigRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConsumerConfigRequestMutableBuilder[Self <: UpdateConsumerConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConsumerConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerConfig(value: ConsumerConfig): Self = StObject.set(x, "consumerConfig", value.asInstanceOf[js.Any])
+    inline def setConsumerConfig(value: ConsumerConfig): Self = StObject.set(x, "consumerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerConfigUndefined: Self = StObject.set(x, "consumerConfig", js.undefined)
+    inline def setConsumerConfigUndefined: Self = StObject.set(x, "consumerConfig", js.undefined)
   }
 }

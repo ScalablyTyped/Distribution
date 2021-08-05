@@ -11,6 +11,5 @@ object getLoadingMarkupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Container]
+  inline def default(): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Container]
 }

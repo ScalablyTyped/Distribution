@@ -62,8 +62,7 @@ trait IDeviceService extends StObject {
 }
 object IDeviceService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCordova: () => String,
     getDevice: () => IDeviceInfo,
     getManufacturer: () => String,
@@ -77,31 +76,22 @@ object IDeviceService {
     __obj.asInstanceOf[IDeviceService]
   }
   
-  @scala.inline
-  implicit class IDeviceServiceMutableBuilder[Self <: IDeviceService] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceService](x: Self) {
     
-    @scala.inline
-    def setGetCordova(value: () => String): Self = StObject.set(x, "getCordova", js.Any.fromFunction0(value))
+    inline def setGetCordova(value: () => String): Self = StObject.set(x, "getCordova", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDevice(value: () => IDeviceInfo): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
+    inline def setGetDevice(value: () => IDeviceInfo): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetManufacturer(value: () => String): Self = StObject.set(x, "getManufacturer", js.Any.fromFunction0(value))
+    inline def setGetManufacturer(value: () => String): Self = StObject.set(x, "getManufacturer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModel(value: () => String): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+    inline def setGetModel(value: () => String): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlatform(value: () => String): Self = StObject.set(x, "getPlatform", js.Any.fromFunction0(value))
+    inline def setGetPlatform(value: () => String): Self = StObject.set(x, "getPlatform", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUUID(value: () => String): Self = StObject.set(x, "getUUID", js.Any.fromFunction0(value))
+    inline def setGetUUID(value: () => String): Self = StObject.set(x, "getUUID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+    inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
   }
 }

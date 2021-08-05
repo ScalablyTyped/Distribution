@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChangeType extends StObject
 object ChangeType {
   
-  @scala.inline
-  def created: typings.microsoftGraph.microsoftGraphStrings.created = "created".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.created]
+  inline def created: typings.microsoftGraph.microsoftGraphStrings.created = "created".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.created]
   
-  @scala.inline
-  def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
+  inline def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
   
-  @scala.inline
-  def updated: typings.microsoftGraph.microsoftGraphStrings.updated = "updated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.updated]
+  inline def updated: typings.microsoftGraph.microsoftGraphStrings.updated = "updated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.updated]
 }

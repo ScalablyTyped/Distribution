@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.TextEffectFormat")
 @js.native
-class TextEffectFormat protected ()
+/* private */ class TextEffectFormat ()
   extends StObject
      with typings.activexOffice.Office.TextEffectFormat {
   
@@ -41,7 +41,7 @@ class TextEffectFormat protected ()
   /* CompleteClass */
   var NormalizedHeight: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.TextEffectFormat_typekey")
   var OfficeDotTextEffectFormat_typekey: typings.activexOffice.Office.TextEffectFormat = js.native
   

@@ -29,103 +29,55 @@ object latlonEllipsoidalReferenceframeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parse(lat: String): LatLonEllipsoidalReferenceFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Double, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Unit, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Unit, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Unit, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Unit, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Unit, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Unit, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: String, lon: Unit, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object): LatLonEllipsoidalReferenceFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Double, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Unit, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Unit, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Unit, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Unit, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Unit, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Unit, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: js.Object, lon: Unit, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String): LatLonEllipsoidalReferenceFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Double, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Unit, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Unit, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Unit, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Unit, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Unit, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Unit, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: String, lon: Unit, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object): LatLonEllipsoidalReferenceFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Double, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Unit, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Unit, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Unit, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Unit, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Unit, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Unit, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: js.Object, lon: Unit, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
     /* static member */
-    @scala.inline
-    def parse(lat: Double): LatLonEllipsoidalReferenceFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Double, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Unit, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Unit, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Unit, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Unit, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Unit, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Unit, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
-    @scala.inline
-    def parse(lat: Double, lon: Unit, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double): LatLonEllipsoidalReferenceFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Double, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Unit, height: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Unit, height: Double, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Unit, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Unit, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Unit, height: Unit, referenceFrame: Unit, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Unit, height: Unit, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
+    inline def parse(lat: Double, lon: Unit, height: Unit, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], height.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], epoch.asInstanceOf[js.Any])).asInstanceOf[LatLonEllipsoidalReferenceFrame]
   }
   
   @JSImport("geodesy/latlon-ellipsoidal-referenceframe", "Cartesian")
@@ -149,72 +101,48 @@ object latlonEllipsoidalReferenceframeMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def compassPoint(bearing: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def compassPoint(bearing: Double, precision: Precision): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def compassPoint(bearing: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def compassPoint(bearing: Double, precision: Precision): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def fromLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fromLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def parse(dms: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def parse(dms: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parse(dms: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parse(dms: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def toBrng(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toBrng(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toBrng(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toBrng(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toBrng(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toBrng(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toBrng(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toBrng(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toDms(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toDms(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toDms(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toDms(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toDms(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toDms(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toDms(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toDms(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toLat(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toLat(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLat(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLat(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLat(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toLat(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLat(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLat(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toLon(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toLon(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLon(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLon(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLon(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toLon(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLon(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLon(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def wrap360(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap360")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def wrap360(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap360")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def wrap90(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap90")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def wrap90(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap90")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -260,23 +188,18 @@ object latlonEllipsoidalReferenceframeMod {
   }
   object ReferenceFrame {
     
-    @scala.inline
-    def apply(ellipsoid: Ellipsoid, epoch: Double, name: String): ReferenceFrame = {
+    inline def apply(ellipsoid: Ellipsoid, epoch: Double, name: String): ReferenceFrame = {
       val __obj = js.Dynamic.literal(ellipsoid = ellipsoid.asInstanceOf[js.Any], epoch = epoch.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReferenceFrame]
     }
     
-    @scala.inline
-    implicit class ReferenceFrameMutableBuilder[Self <: ReferenceFrame] (val x: Self) extends AnyVal {
+    extension [Self <: ReferenceFrame](x: Self) {
       
-      @scala.inline
-      def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+      inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
+      inline def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,8 +215,7 @@ object latlonEllipsoidalReferenceframeMod {
   }
   object TxParam {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       epoch: String,
       params: js.Tuple6[Double, Double, Double, Double, Double, Double],
       rates: js.Tuple6[Double, Double, Double, Double, Double, Double]
@@ -302,17 +224,13 @@ object latlonEllipsoidalReferenceframeMod {
       __obj.asInstanceOf[TxParam]
     }
     
-    @scala.inline
-    implicit class TxParamMutableBuilder[Self <: TxParam] (val x: Self) extends AnyVal {
+    extension [Self <: TxParam](x: Self) {
       
-      @scala.inline
-      def setEpoch(value: String): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
+      inline def setEpoch(value: String): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Tuple6[Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Tuple6[Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRates(value: js.Tuple6[Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "rates", value.asInstanceOf[js.Any])
+      inline def setRates(value: js.Tuple6[Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "rates", value.asInstanceOf[js.Any])
     }
   }
   

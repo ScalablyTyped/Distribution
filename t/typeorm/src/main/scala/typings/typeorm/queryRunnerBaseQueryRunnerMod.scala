@@ -37,7 +37,7 @@ object queryRunnerBaseQueryRunnerMod {
     /**
       * Real database connection from a connection pool used to perform queries.
       */
-    var databaseConnection: js.Any = js.native
+    /* protected */ var databaseConnection: js.Any = js.native
     
     /**
       * Disables special query runner mode in which sql queries won't be executed
@@ -168,7 +168,7 @@ object queryRunnerBaseQueryRunnerMod {
       * Used for replication.
       * If replication is not setup its value is ignored.
       */
-    var mode: ReplicationMode = js.native
+    /* protected */ var mode: ReplicationMode = js.native
     
     /**
       * Executes a given SQL query.
@@ -184,11 +184,11 @@ object queryRunnerBaseQueryRunnerMod {
     /**
       * Sql-s stored if "sql in memory" mode is enabled.
       */
-    var sqlInMemory: SqlInMemory = js.native
+    /* protected */ var sqlInMemory: SqlInMemory = js.native
     
     /**
       * Indicates if special query runner mode in which sql queries won't be executed is enabled.
       */
-    var sqlMemoryMode: Boolean = js.native
+    /* protected */ var sqlMemoryMode: Boolean = js.native
   }
 }

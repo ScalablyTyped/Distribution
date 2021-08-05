@@ -15,28 +15,21 @@ trait ListVolumeRecoveryPointsOutput extends StObject {
 }
 object ListVolumeRecoveryPointsOutput {
   
-  @scala.inline
-  def apply(): ListVolumeRecoveryPointsOutput = {
+  inline def apply(): ListVolumeRecoveryPointsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVolumeRecoveryPointsOutput]
   }
   
-  @scala.inline
-  implicit class ListVolumeRecoveryPointsOutputMutableBuilder[Self <: ListVolumeRecoveryPointsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVolumeRecoveryPointsOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setVolumeRecoveryPointInfos(value: VolumeRecoveryPointInfos): Self = StObject.set(x, "VolumeRecoveryPointInfos", value.asInstanceOf[js.Any])
+    inline def setVolumeRecoveryPointInfos(value: VolumeRecoveryPointInfos): Self = StObject.set(x, "VolumeRecoveryPointInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeRecoveryPointInfosUndefined: Self = StObject.set(x, "VolumeRecoveryPointInfos", js.undefined)
+    inline def setVolumeRecoveryPointInfosUndefined: Self = StObject.set(x, "VolumeRecoveryPointInfos", js.undefined)
     
-    @scala.inline
-    def setVolumeRecoveryPointInfosVarargs(value: VolumeRecoveryPointInfo*): Self = StObject.set(x, "VolumeRecoveryPointInfos", js.Array(value :_*))
+    inline def setVolumeRecoveryPointInfosVarargs(value: VolumeRecoveryPointInfo*): Self = StObject.set(x, "VolumeRecoveryPointInfos", js.Array(value :_*))
   }
 }

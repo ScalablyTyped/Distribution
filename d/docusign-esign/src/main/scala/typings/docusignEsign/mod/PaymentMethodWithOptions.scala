@@ -32,28 +32,21 @@ trait PaymentMethodWithOptions extends StObject {
 }
 object PaymentMethodWithOptions {
   
-  @scala.inline
-  def apply(): PaymentMethodWithOptions = {
+  inline def apply(): PaymentMethodWithOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentMethodWithOptions]
   }
   
-  @scala.inline
-  implicit class PaymentMethodWithOptionsMutableBuilder[Self <: PaymentMethodWithOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodWithOptions](x: Self) {
     
-    @scala.inline
-    def setSupportedOptions(value: js.Array[String]): Self = StObject.set(x, "supportedOptions", value.asInstanceOf[js.Any])
+    inline def setSupportedOptions(value: js.Array[String]): Self = StObject.set(x, "supportedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedOptionsUndefined: Self = StObject.set(x, "supportedOptions", js.undefined)
+    inline def setSupportedOptionsUndefined: Self = StObject.set(x, "supportedOptions", js.undefined)
     
-    @scala.inline
-    def setSupportedOptionsVarargs(value: String*): Self = StObject.set(x, "supportedOptions", js.Array(value :_*))
+    inline def setSupportedOptionsVarargs(value: String*): Self = StObject.set(x, "supportedOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait BackupDescription extends StObject {
 }
 object BackupDescription {
   
-  @scala.inline
-  def apply(): BackupDescription = {
+  inline def apply(): BackupDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupDescription]
   }
   
-  @scala.inline
-  implicit class BackupDescriptionMutableBuilder[Self <: BackupDescription] (val x: Self) extends AnyVal {
+  extension [Self <: BackupDescription](x: Self) {
     
-    @scala.inline
-    def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
+    inline def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
+    inline def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
     
-    @scala.inline
-    def setSourceTableDetails(value: SourceTableDetails): Self = StObject.set(x, "SourceTableDetails", value.asInstanceOf[js.Any])
+    inline def setSourceTableDetails(value: SourceTableDetails): Self = StObject.set(x, "SourceTableDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableDetailsUndefined: Self = StObject.set(x, "SourceTableDetails", js.undefined)
+    inline def setSourceTableDetailsUndefined: Self = StObject.set(x, "SourceTableDetails", js.undefined)
     
-    @scala.inline
-    def setSourceTableFeatureDetails(value: SourceTableFeatureDetails): Self = StObject.set(x, "SourceTableFeatureDetails", value.asInstanceOf[js.Any])
+    inline def setSourceTableFeatureDetails(value: SourceTableFeatureDetails): Self = StObject.set(x, "SourceTableFeatureDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableFeatureDetailsUndefined: Self = StObject.set(x, "SourceTableFeatureDetails", js.undefined)
+    inline def setSourceTableFeatureDetailsUndefined: Self = StObject.set(x, "SourceTableFeatureDetails", js.undefined)
   }
 }

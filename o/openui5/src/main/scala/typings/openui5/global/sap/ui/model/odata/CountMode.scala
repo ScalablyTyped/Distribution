@@ -16,8 +16,7 @@ object CountMode {
   @JSGlobal("sap.ui.model.odata.CountMode.Both")
   @js.native
   def Both: js.Any = js.native
-  @scala.inline
-  def Both_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
+  inline def Both_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
   
   /**
     * Count is retrieved by adding $inlinecount=allpages and is included in the data request
@@ -32,11 +31,9 @@ object CountMode {
   @JSGlobal("sap.ui.model.odata.CountMode.InlineRepeat")
   @js.native
   def InlineRepeat: js.Any = js.native
-  @scala.inline
-  def InlineRepeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InlineRepeat")(x.asInstanceOf[js.Any])
+  inline def InlineRepeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InlineRepeat")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Inline_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inline")(x.asInstanceOf[js.Any])
+  inline def Inline_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inline")(x.asInstanceOf[js.Any])
   
   /**
     * Count is not requested from the server
@@ -44,8 +41,7 @@ object CountMode {
   @JSGlobal("sap.ui.model.odata.CountMode.None")
   @js.native
   def None: js.Any = js.native
-  @scala.inline
-  def None_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**
     * Count is retrieved by sending a separate $count request, before requesting data
@@ -53,6 +49,5 @@ object CountMode {
   @JSGlobal("sap.ui.model.odata.CountMode.Request")
   @js.native
   def Request: js.Any = js.native
-  @scala.inline
-  def Request_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Request")(x.asInstanceOf[js.Any])
+  inline def Request_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Request")(x.asInstanceOf[js.Any])
 }

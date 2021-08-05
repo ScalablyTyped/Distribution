@@ -18,28 +18,21 @@ trait ListSatellitesResponse extends StObject {
 }
 object ListSatellitesResponse {
   
-  @scala.inline
-  def apply(): ListSatellitesResponse = {
+  inline def apply(): ListSatellitesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSatellitesResponse]
   }
   
-  @scala.inline
-  implicit class ListSatellitesResponseMutableBuilder[Self <: ListSatellitesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSatellitesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSatellites(value: SatelliteList): Self = StObject.set(x, "satellites", value.asInstanceOf[js.Any])
+    inline def setSatellites(value: SatelliteList): Self = StObject.set(x, "satellites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSatellitesUndefined: Self = StObject.set(x, "satellites", js.undefined)
+    inline def setSatellitesUndefined: Self = StObject.set(x, "satellites", js.undefined)
     
-    @scala.inline
-    def setSatellitesVarargs(value: SatelliteListItem*): Self = StObject.set(x, "satellites", js.Array(value :_*))
+    inline def setSatellitesVarargs(value: SatelliteListItem*): Self = StObject.set(x, "satellites", js.Array(value :_*))
   }
 }

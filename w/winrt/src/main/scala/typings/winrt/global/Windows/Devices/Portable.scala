@@ -20,11 +20,9 @@ object Portable {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDeviceSelector(serviceType: ServiceDeviceType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(serviceType.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(serviceType: ServiceDeviceType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(serviceType.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getDeviceSelectorFromServiceId(serviceId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromServiceId")(serviceId.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelectorFromServiceId(serviceId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromServiceId")(serviceId.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("Windows.Devices.Portable.ServiceDeviceType")
@@ -61,10 +59,8 @@ object Portable {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromId(interfaceId: String): StorageFolder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(interfaceId.asInstanceOf[js.Any]).asInstanceOf[StorageFolder]
+    inline def fromId(interfaceId: String): StorageFolder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(interfaceId.asInstanceOf[js.Any]).asInstanceOf[StorageFolder]
     
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
 }

@@ -27,31 +27,23 @@ trait SchemaChannelBannerResource extends StObject {
 }
 object SchemaChannelBannerResource {
   
-  @scala.inline
-  def apply(): SchemaChannelBannerResource = {
+  inline def apply(): SchemaChannelBannerResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelBannerResource]
   }
   
-  @scala.inline
-  implicit class SchemaChannelBannerResourceMutableBuilder[Self <: SchemaChannelBannerResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelBannerResource](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

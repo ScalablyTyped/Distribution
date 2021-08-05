@@ -21,20 +21,17 @@ object DeletingBehavior {
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DeletingBehavior.DeleteMeAndReferences")
   @js.native
   def DeleteMeAndReferences: DeletingBehavior = js.native
-  @scala.inline
-  def DeleteMeAndReferences_=(x: DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeAndReferences")(x.asInstanceOf[js.Any])
+  inline def DeleteMeAndReferences_=(x: DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeAndReferences")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DeletingBehavior.DeleteMeButKeepReferences")
   @js.native
   def DeleteMeButKeepReferences: DeletingBehavior = js.native
-  @scala.inline
-  def DeleteMeButKeepReferences_=(x: DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeButKeepReferences")(x.asInstanceOf[js.Any])
+  inline def DeleteMeButKeepReferences_=(x: DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeButKeepReferences")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DeletingBehavior.DeleteMeIfNoReferences")
   @js.native
   def DeleteMeIfNoReferences: DeletingBehavior = js.native
-  @scala.inline
-  def DeleteMeIfNoReferences_=(x: DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeIfNoReferences")(x.asInstanceOf[js.Any])
+  inline def DeleteMeIfNoReferences_=(x: DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeIfNoReferences")(x.asInstanceOf[js.Any])
 }

@@ -33,46 +33,33 @@ trait CreateJobPlaylist extends StObject {
 }
 object CreateJobPlaylist {
   
-  @scala.inline
-  def apply(): CreateJobPlaylist = {
+  inline def apply(): CreateJobPlaylist = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateJobPlaylist]
   }
   
-  @scala.inline
-  implicit class CreateJobPlaylistMutableBuilder[Self <: CreateJobPlaylist] (val x: Self) extends AnyVal {
+  extension [Self <: CreateJobPlaylist](x: Self) {
     
-    @scala.inline
-    def setFormat(value: PlaylistFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PlaylistFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setHlsContentProtection(value: HlsContentProtection): Self = StObject.set(x, "HlsContentProtection", value.asInstanceOf[js.Any])
+    inline def setHlsContentProtection(value: HlsContentProtection): Self = StObject.set(x, "HlsContentProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsContentProtectionUndefined: Self = StObject.set(x, "HlsContentProtection", js.undefined)
+    inline def setHlsContentProtectionUndefined: Self = StObject.set(x, "HlsContentProtection", js.undefined)
     
-    @scala.inline
-    def setName(value: Filename): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Filename): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOutputKeys(value: OutputKeys): Self = StObject.set(x, "OutputKeys", value.asInstanceOf[js.Any])
+    inline def setOutputKeys(value: OutputKeys): Self = StObject.set(x, "OutputKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
+    inline def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
     
-    @scala.inline
-    def setOutputKeysVarargs(value: Key*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
+    inline def setOutputKeysVarargs(value: Key*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setPlayReadyDrm(value: PlayReadyDrm): Self = StObject.set(x, "PlayReadyDrm", value.asInstanceOf[js.Any])
+    inline def setPlayReadyDrm(value: PlayReadyDrm): Self = StObject.set(x, "PlayReadyDrm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayReadyDrmUndefined: Self = StObject.set(x, "PlayReadyDrm", js.undefined)
+    inline def setPlayReadyDrmUndefined: Self = StObject.set(x, "PlayReadyDrm", js.undefined)
   }
 }

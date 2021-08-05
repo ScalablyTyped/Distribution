@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object wantlistForPeerMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function2[
+  inline def apply(clientOptions: ClientOptions): js.Function2[
     /* peerId */ String | Uint8Array | typings.cids.mod.^ | typings.peerId.mod.^, 
     /* options */ js.UndefOr[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions

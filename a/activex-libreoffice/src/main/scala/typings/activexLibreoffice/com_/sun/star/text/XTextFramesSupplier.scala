@@ -20,8 +20,7 @@ trait XTextFramesSupplier
 }
 object XTextFramesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TextFrames: XNameAccess,
     acquire: () => Unit,
     getTextFrames: () => XNameAccess,
@@ -32,13 +31,10 @@ object XTextFramesSupplier {
     __obj.asInstanceOf[XTextFramesSupplier]
   }
   
-  @scala.inline
-  implicit class XTextFramesSupplierMutableBuilder[Self <: XTextFramesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextFramesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetTextFrames(value: () => XNameAccess): Self = StObject.set(x, "getTextFrames", js.Any.fromFunction0(value))
+    inline def setGetTextFrames(value: () => XNameAccess): Self = StObject.set(x, "getTextFrames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextFrames(value: XNameAccess): Self = StObject.set(x, "TextFrames", value.asInstanceOf[js.Any])
+    inline def setTextFrames(value: XNameAccess): Self = StObject.set(x, "TextFrames", value.asInstanceOf[js.Any])
   }
 }

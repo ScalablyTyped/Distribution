@@ -16,31 +16,23 @@ trait WeakValidationMapListText extends StObject {
 }
 object WeakValidationMapListText {
   
-  @scala.inline
-  def apply(): WeakValidationMapListText = {
+  inline def apply(): WeakValidationMapListText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapListText]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapListTextMutableBuilder[Self <: WeakValidationMapListText] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapListText](x: Self) {
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setNoWrap(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+    inline def setNoWrap(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+    inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }
 }

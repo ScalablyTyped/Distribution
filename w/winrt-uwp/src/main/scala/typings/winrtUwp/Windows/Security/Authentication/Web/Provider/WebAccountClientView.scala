@@ -19,23 +19,18 @@ trait WebAccountClientView extends StObject {
 }
 object WebAccountClientView {
   
-  @scala.inline
-  def apply(accountPairwiseId: String, applicationCallbackUri: Uri, `type`: WebAccountClientViewType): WebAccountClientView = {
+  inline def apply(accountPairwiseId: String, applicationCallbackUri: Uri, `type`: WebAccountClientViewType): WebAccountClientView = {
     val __obj = js.Dynamic.literal(accountPairwiseId = accountPairwiseId.asInstanceOf[js.Any], applicationCallbackUri = applicationCallbackUri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAccountClientView]
   }
   
-  @scala.inline
-  implicit class WebAccountClientViewMutableBuilder[Self <: WebAccountClientView] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountClientView](x: Self) {
     
-    @scala.inline
-    def setAccountPairwiseId(value: String): Self = StObject.set(x, "accountPairwiseId", value.asInstanceOf[js.Any])
+    inline def setAccountPairwiseId(value: String): Self = StObject.set(x, "accountPairwiseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
+    inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WebAccountClientViewType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WebAccountClientViewType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

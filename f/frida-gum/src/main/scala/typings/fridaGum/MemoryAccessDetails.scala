@@ -45,8 +45,7 @@ trait MemoryAccessDetails extends StObject {
 }
 object MemoryAccessDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: NativePointer,
     from: NativePointer,
     operation: MemoryOperation,
@@ -59,28 +58,20 @@ object MemoryAccessDetails {
     __obj.asInstanceOf[MemoryAccessDetails]
   }
   
-  @scala.inline
-  implicit class MemoryAccessDetailsMutableBuilder[Self <: MemoryAccessDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryAccessDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: NativePointer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: NativePointer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: MemoryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: MemoryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesCompleted(value: Double): Self = StObject.set(x, "pagesCompleted", value.asInstanceOf[js.Any])
+    inline def setPagesCompleted(value: Double): Self = StObject.set(x, "pagesCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesTotal(value: Double): Self = StObject.set(x, "pagesTotal", value.asInstanceOf[js.Any])
+    inline def setPagesTotal(value: Double): Self = StObject.set(x, "pagesTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeIndex(value: Double): Self = StObject.set(x, "rangeIndex", value.asInstanceOf[js.Any])
+    inline def setRangeIndex(value: Double): Self = StObject.set(x, "rangeIndex", value.asInstanceOf[js.Any])
   }
 }

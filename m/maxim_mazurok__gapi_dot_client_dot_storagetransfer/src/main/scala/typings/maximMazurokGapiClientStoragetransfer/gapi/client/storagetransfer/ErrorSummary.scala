@@ -17,34 +17,25 @@ trait ErrorSummary extends StObject {
 }
 object ErrorSummary {
   
-  @scala.inline
-  def apply(): ErrorSummary = {
+  inline def apply(): ErrorSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorSummary]
   }
   
-  @scala.inline
-  implicit class ErrorSummaryMutableBuilder[Self <: ErrorSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorSummary](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
-    @scala.inline
-    def setErrorLogEntries(value: js.Array[ErrorLogEntry]): Self = StObject.set(x, "errorLogEntries", value.asInstanceOf[js.Any])
+    inline def setErrorLogEntries(value: js.Array[ErrorLogEntry]): Self = StObject.set(x, "errorLogEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorLogEntriesUndefined: Self = StObject.set(x, "errorLogEntries", js.undefined)
+    inline def setErrorLogEntriesUndefined: Self = StObject.set(x, "errorLogEntries", js.undefined)
     
-    @scala.inline
-    def setErrorLogEntriesVarargs(value: ErrorLogEntry*): Self = StObject.set(x, "errorLogEntries", js.Array(value :_*))
+    inline def setErrorLogEntriesVarargs(value: ErrorLogEntry*): Self = StObject.set(x, "errorLogEntries", js.Array(value :_*))
   }
 }

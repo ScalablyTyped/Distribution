@@ -12,19 +12,15 @@ trait ActionsCreateRegistrationTokenForRepoEndpoint extends StObject {
 }
 object ActionsCreateRegistrationTokenForRepoEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ActionsCreateRegistrationTokenForRepoEndpoint = {
+  inline def apply(owner: String, repo: String): ActionsCreateRegistrationTokenForRepoEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsCreateRegistrationTokenForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsCreateRegistrationTokenForRepoEndpointMutableBuilder[Self <: ActionsCreateRegistrationTokenForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateRegistrationTokenForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

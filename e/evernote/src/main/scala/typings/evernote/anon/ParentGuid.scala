@@ -16,37 +16,27 @@ trait ParentGuid extends StObject {
 }
 object ParentGuid {
   
-  @scala.inline
-  def apply(): ParentGuid = {
+  inline def apply(): ParentGuid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParentGuid]
   }
   
-  @scala.inline
-  implicit class ParentGuidMutableBuilder[Self <: ParentGuid] (val x: Self) extends AnyVal {
+  extension [Self <: ParentGuid](x: Self) {
     
-    @scala.inline
-    def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "parentGuid", value.asInstanceOf[js.Any])
+    inline def setParentGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "parentGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentGuidUndefined: Self = StObject.set(x, "parentGuid", js.undefined)
+    inline def setParentGuidUndefined: Self = StObject.set(x, "parentGuid", js.undefined)
     
-    @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
+    inline def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
+    inline def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
   }
 }

@@ -25,14 +25,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def default(color: Unit, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def default(color: ColorInput): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def default(color: ColorInput, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def default(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def default(color: Unit, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def default(color: ColorInput): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def default(color: ColorInput, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
   
   @JSImport("@ctrl/tinycolor", "TinyColor")
   @js.native
@@ -47,73 +43,44 @@ object mod {
   @js.native
   val bounds: js.Array[ColorBound] = js.native
   
-  @scala.inline
-  def fromRatio(ratio: RatioInput): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def fromRatio(ratio: RatioInput, opts: js.Any): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def fromRatio(ratio: RatioInput): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def fromRatio(ratio: RatioInput, opts: js.Any): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
   
-  @scala.inline
-  def inputToRGB(color: String): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
-  @scala.inline
-  def inputToRGB(color: js.Any): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
-  @scala.inline
-  def inputToRGB(color: HSL): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
-  @scala.inline
-  def inputToRGB(color: HSLA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
-  @scala.inline
-  def inputToRGB(color: HSV): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
-  @scala.inline
-  def inputToRGB(color: HSVA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
-  @scala.inline
-  def inputToRGB(color: RGB): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
-  @scala.inline
-  def inputToRGB(color: RGBA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: String): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: js.Any): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: HSL): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: HSLA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: HSV): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: HSVA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: RGB): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def inputToRGB(color: RGBA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
   
-  @scala.inline
-  def isReadable(color1: ColorInput, color2: ColorInput): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isReadable(color1: ColorInput, color2: ColorInput, wcag2: WCAG2Parms): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], wcag2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReadable(color1: ColorInput, color2: ColorInput): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReadable(color1: ColorInput, color2: ColorInput, wcag2: WCAG2Parms): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], wcag2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidCSSUnit(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCSSUnit")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isValidCSSUnit(color: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCSSUnit")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidCSSUnit(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCSSUnit")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidCSSUnit(color: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCSSUnit")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def legacyRandom(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyRandom")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def legacyRandom(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyRandom")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
   
-  @scala.inline
-  def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput]): typings.ctrlTinycolor.distMod.TinyColor_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("mostReadable")(baseColor.asInstanceOf[js.Any], colorList.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_ | Null]
-  @scala.inline
-  def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput], args: WCAG2FallbackParms): typings.ctrlTinycolor.distMod.TinyColor_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("mostReadable")(baseColor.asInstanceOf[js.Any], colorList.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_ | Null]
+  inline def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput]): typings.ctrlTinycolor.distMod.TinyColor_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("mostReadable")(baseColor.asInstanceOf[js.Any], colorList.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_ | Null]
+  inline def mostReadable(baseColor: ColorInput, colorList: js.Array[ColorInput], args: WCAG2FallbackParms): typings.ctrlTinycolor.distMod.TinyColor_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("mostReadable")(baseColor.asInstanceOf[js.Any], colorList.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_ | Null]
   
-  @scala.inline
-  def random(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def random(options: RandomCountOptions): js.Array[typings.ctrlTinycolor.distMod.TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.ctrlTinycolor.distMod.TinyColor_]]
-  @scala.inline
-  def random(options: RandomOptions): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def random(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def random(options: RandomCountOptions): js.Array[typings.ctrlTinycolor.distMod.TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.ctrlTinycolor.distMod.TinyColor_]]
+  inline def random(options: RandomOptions): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
   
-  @scala.inline
-  def random_Array(): js.Array[typings.ctrlTinycolor.distMod.TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Array[typings.ctrlTinycolor.distMod.TinyColor_]]
+  inline def random_Array(): js.Array[typings.ctrlTinycolor.distMod.TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Array[typings.ctrlTinycolor.distMod.TinyColor_]]
   
-  @scala.inline
-  def readability(color1: ColorInput, color2: ColorInput): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readability")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def readability(color1: ColorInput, color2: ColorInput): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readability")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def stringInputToObject(color: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringInputToObject")(color.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stringInputToObject(color: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringInputToObject")(color.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def tinycolor(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def tinycolor(color: Unit, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def tinycolor(color: ColorInput): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
-  @scala.inline
-  def tinycolor(color: ColorInput, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def tinycolor(): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")().asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def tinycolor(color: Unit, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def tinycolor(color: ColorInput): typings.ctrlTinycolor.distMod.TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any]).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
+  inline def tinycolor(color: ColorInput, opts: PartialTinyColorOptions): typings.ctrlTinycolor.distMod.TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tinycolor")(color.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ctrlTinycolor.distMod.TinyColor_]
   
-  @scala.inline
-  def toMsFilter(firstColor: ColorInput): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toMsFilter")(firstColor.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toMsFilter(firstColor: ColorInput, secondColor: ColorInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toMsFilter")(firstColor.asInstanceOf[js.Any], secondColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toMsFilter(firstColor: ColorInput): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toMsFilter")(firstColor.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toMsFilter(firstColor: ColorInput, secondColor: ColorInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toMsFilter")(firstColor.asInstanceOf[js.Any], secondColor.asInstanceOf[js.Any])).asInstanceOf[String]
 }

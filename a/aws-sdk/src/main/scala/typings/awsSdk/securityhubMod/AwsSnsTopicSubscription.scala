@@ -18,25 +18,19 @@ trait AwsSnsTopicSubscription extends StObject {
 }
 object AwsSnsTopicSubscription {
   
-  @scala.inline
-  def apply(): AwsSnsTopicSubscription = {
+  inline def apply(): AwsSnsTopicSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsSnsTopicSubscription]
   }
   
-  @scala.inline
-  implicit class AwsSnsTopicSubscriptionMutableBuilder[Self <: AwsSnsTopicSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSnsTopicSubscription](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: NonEmptyString): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: NonEmptyString): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: NonEmptyString): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: NonEmptyString): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
   }
 }

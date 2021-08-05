@@ -15,28 +15,21 @@ trait NodeTypesScopedList extends StObject {
 }
 object NodeTypesScopedList {
   
-  @scala.inline
-  def apply(): NodeTypesScopedList = {
+  inline def apply(): NodeTypesScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeTypesScopedList]
   }
   
-  @scala.inline
-  implicit class NodeTypesScopedListMutableBuilder[Self <: NodeTypesScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: NodeTypesScopedList](x: Self) {
     
-    @scala.inline
-    def setNodeTypes(value: js.Array[NodeType]): Self = StObject.set(x, "nodeTypes", value.asInstanceOf[js.Any])
+    inline def setNodeTypes(value: js.Array[NodeType]): Self = StObject.set(x, "nodeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypesUndefined: Self = StObject.set(x, "nodeTypes", js.undefined)
+    inline def setNodeTypesUndefined: Self = StObject.set(x, "nodeTypes", js.undefined)
     
-    @scala.inline
-    def setNodeTypesVarargs(value: NodeType*): Self = StObject.set(x, "nodeTypes", js.Array(value :_*))
+    inline def setNodeTypesVarargs(value: NodeType*): Self = StObject.set(x, "nodeTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

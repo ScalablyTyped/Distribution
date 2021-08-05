@@ -9,8 +9,7 @@ trait StreamSocketListenerControl
      with IStreamSocketListenerControl
 object StreamSocketListenerControl {
   
-  @scala.inline
-  def apply(qualityOfService: SocketQualityOfService): StreamSocketListenerControl = {
+  inline def apply(qualityOfService: SocketQualityOfService): StreamSocketListenerControl = {
     val __obj = js.Dynamic.literal(qualityOfService = qualityOfService.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSocketListenerControl]
   }

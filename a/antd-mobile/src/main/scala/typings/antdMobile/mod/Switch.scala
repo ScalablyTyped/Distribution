@@ -19,6 +19,5 @@ object Switch {
   @JSImport("antd-mobile", "Switch.defaultProps")
   @js.native
   def defaultProps: Name = js.native
-  @scala.inline
-  def defaultProps_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -30,55 +30,39 @@ trait AllowMouseWheel extends StObject {
 }
 object AllowMouseWheel {
   
-  @scala.inline
-  def apply(): AllowMouseWheel = {
+  inline def apply(): AllowMouseWheel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowMouseWheel]
   }
   
-  @scala.inline
-  implicit class AllowMouseWheelMutableBuilder[Self <: AllowMouseWheel] (val x: Self) extends AnyVal {
+  extension [Self <: AllowMouseWheel](x: Self) {
     
-    @scala.inline
-    def setAllowMouseWheel(value: Boolean): Self = StObject.set(x, "allowMouseWheel", value.asInstanceOf[js.Any])
+    inline def setAllowMouseWheel(value: Boolean): Self = StObject.set(x, "allowMouseWheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMouseWheelUndefined: Self = StObject.set(x, "allowMouseWheel", js.undefined)
+    inline def setAllowMouseWheelUndefined: Self = StObject.set(x, "allowMouseWheel", js.undefined)
     
-    @scala.inline
-    def setAllowTouchGestures(value: Boolean): Self = StObject.set(x, "allowTouchGestures", value.asInstanceOf[js.Any])
+    inline def setAllowTouchGestures(value: Boolean): Self = StObject.set(x, "allowTouchGestures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTouchGesturesUndefined: Self = StObject.set(x, "allowTouchGestures", js.undefined)
+    inline def setAllowTouchGesturesUndefined: Self = StObject.set(x, "allowTouchGestures", js.undefined)
     
-    @scala.inline
-    def setArgumentAxis(value: both | none | pan | zoom): Self = StObject.set(x, "argumentAxis", value.asInstanceOf[js.Any])
+    inline def setArgumentAxis(value: both | none | pan | zoom): Self = StObject.set(x, "argumentAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentAxisUndefined: Self = StObject.set(x, "argumentAxis", js.undefined)
+    inline def setArgumentAxisUndefined: Self = StObject.set(x, "argumentAxis", js.undefined)
     
-    @scala.inline
-    def setDragBoxStyle(value: Opacity): Self = StObject.set(x, "dragBoxStyle", value.asInstanceOf[js.Any])
+    inline def setDragBoxStyle(value: Opacity): Self = StObject.set(x, "dragBoxStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragBoxStyleUndefined: Self = StObject.set(x, "dragBoxStyle", js.undefined)
+    inline def setDragBoxStyleUndefined: Self = StObject.set(x, "dragBoxStyle", js.undefined)
     
-    @scala.inline
-    def setDragToZoom(value: Boolean): Self = StObject.set(x, "dragToZoom", value.asInstanceOf[js.Any])
+    inline def setDragToZoom(value: Boolean): Self = StObject.set(x, "dragToZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragToZoomUndefined: Self = StObject.set(x, "dragToZoom", js.undefined)
+    inline def setDragToZoomUndefined: Self = StObject.set(x, "dragToZoom", js.undefined)
     
-    @scala.inline
-    def setPanKey(value: alt | ctrl | meta | shift): Self = StObject.set(x, "panKey", value.asInstanceOf[js.Any])
+    inline def setPanKey(value: alt | ctrl | meta | shift): Self = StObject.set(x, "panKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanKeyUndefined: Self = StObject.set(x, "panKey", js.undefined)
+    inline def setPanKeyUndefined: Self = StObject.set(x, "panKey", js.undefined)
     
-    @scala.inline
-    def setValueAxis(value: both | none | pan | zoom): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
+    inline def setValueAxis(value: both | none | pan | zoom): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
+    inline def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
   }
 }

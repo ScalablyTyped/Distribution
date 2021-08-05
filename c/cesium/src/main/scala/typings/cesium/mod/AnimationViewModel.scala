@@ -59,22 +59,19 @@ object AnimationViewModel {
   @JSImport("cesium", "AnimationViewModel.defaultDateFormatter")
   @js.native
   def defaultDateFormatter: DateFormatter = js.native
-  @scala.inline
-  def defaultDateFormatter_=(x: DateFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDateFormatter")(x.asInstanceOf[js.Any])
+  inline def defaultDateFormatter_=(x: DateFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDateFormatter")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "AnimationViewModel.defaultTicks")
   @js.native
   def defaultTicks: js.Array[Double] = js.native
-  @scala.inline
-  def defaultTicks_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTicks")(x.asInstanceOf[js.Any])
+  inline def defaultTicks_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTicks")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "AnimationViewModel.defaultTimeFormatter")
   @js.native
   def defaultTimeFormatter: TimeFormatter = js.native
-  @scala.inline
-  def defaultTimeFormatter_=(x: TimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTimeFormatter")(x.asInstanceOf[js.Any])
+  inline def defaultTimeFormatter_=(x: TimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTimeFormatter")(x.asInstanceOf[js.Any])
   
   type DateFormatter = js.Function2[/* date */ JulianDate, /* viewModel */ AnimationViewModel, String]
   

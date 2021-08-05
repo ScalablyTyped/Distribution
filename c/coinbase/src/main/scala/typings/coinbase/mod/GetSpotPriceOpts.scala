@@ -18,22 +18,17 @@ trait GetSpotPriceOpts extends StObject {
 }
 object GetSpotPriceOpts {
   
-  @scala.inline
-  def apply(currencyPair: String): GetSpotPriceOpts = {
+  inline def apply(currencyPair: String): GetSpotPriceOpts = {
     val __obj = js.Dynamic.literal(currencyPair = currencyPair.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSpotPriceOpts]
   }
   
-  @scala.inline
-  implicit class GetSpotPriceOptsMutableBuilder[Self <: GetSpotPriceOpts] (val x: Self) extends AnyVal {
+  extension [Self <: GetSpotPriceOpts](x: Self) {
     
-    @scala.inline
-    def setCurrencyPair(value: String): Self = StObject.set(x, "currencyPair", value.asInstanceOf[js.Any])
+    inline def setCurrencyPair(value: String): Self = StObject.set(x, "currencyPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
   }
 }

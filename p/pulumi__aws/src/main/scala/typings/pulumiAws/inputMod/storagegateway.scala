@@ -26,23 +26,18 @@ object storagegateway {
   }
   object GatewaySmbActiveDirectorySettings {
     
-    @scala.inline
-    def apply(domainName: Input[String], password: Input[String], username: Input[String]): GatewaySmbActiveDirectorySettings = {
+    inline def apply(domainName: Input[String], password: Input[String], username: Input[String]): GatewaySmbActiveDirectorySettings = {
       val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatewaySmbActiveDirectorySettings]
     }
     
-    @scala.inline
-    implicit class GatewaySmbActiveDirectorySettingsMutableBuilder[Self <: GatewaySmbActiveDirectorySettings] (val x: Self) extends AnyVal {
+    extension [Self <: GatewaySmbActiveDirectorySettings](x: Self) {
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,20 +52,16 @@ object storagegateway {
   }
   object NfsFileShareCacheAttributes {
     
-    @scala.inline
-    def apply(): NfsFileShareCacheAttributes = {
+    inline def apply(): NfsFileShareCacheAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NfsFileShareCacheAttributes]
     }
     
-    @scala.inline
-    implicit class NfsFileShareCacheAttributesMutableBuilder[Self <: NfsFileShareCacheAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: NfsFileShareCacheAttributes](x: Self) {
       
-      @scala.inline
-      def setCacheStaleTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "cacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
+      inline def setCacheStaleTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "cacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheStaleTimeoutInSecondsUndefined: Self = StObject.set(x, "cacheStaleTimeoutInSeconds", js.undefined)
+      inline def setCacheStaleTimeoutInSecondsUndefined: Self = StObject.set(x, "cacheStaleTimeoutInSeconds", js.undefined)
     }
   }
   
@@ -98,38 +89,28 @@ object storagegateway {
   }
   object NfsFileShareNfsFileShareDefaults {
     
-    @scala.inline
-    def apply(): NfsFileShareNfsFileShareDefaults = {
+    inline def apply(): NfsFileShareNfsFileShareDefaults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NfsFileShareNfsFileShareDefaults]
     }
     
-    @scala.inline
-    implicit class NfsFileShareNfsFileShareDefaultsMutableBuilder[Self <: NfsFileShareNfsFileShareDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: NfsFileShareNfsFileShareDefaults](x: Self) {
       
-      @scala.inline
-      def setDirectoryMode(value: Input[String]): Self = StObject.set(x, "directoryMode", value.asInstanceOf[js.Any])
+      inline def setDirectoryMode(value: Input[String]): Self = StObject.set(x, "directoryMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryModeUndefined: Self = StObject.set(x, "directoryMode", js.undefined)
+      inline def setDirectoryModeUndefined: Self = StObject.set(x, "directoryMode", js.undefined)
       
-      @scala.inline
-      def setFileMode(value: Input[String]): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+      inline def setFileMode(value: Input[String]): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
+      inline def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
       
-      @scala.inline
-      def setGroupId(value: Input[Double]): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+      inline def setGroupId(value: Input[Double]): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+      inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
       
-      @scala.inline
-      def setOwnerId(value: Input[Double]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Input[Double]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     }
   }
   
@@ -144,20 +125,16 @@ object storagegateway {
   }
   object SmbFileShareCacheAttributes {
     
-    @scala.inline
-    def apply(): SmbFileShareCacheAttributes = {
+    inline def apply(): SmbFileShareCacheAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmbFileShareCacheAttributes]
     }
     
-    @scala.inline
-    implicit class SmbFileShareCacheAttributesMutableBuilder[Self <: SmbFileShareCacheAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: SmbFileShareCacheAttributes](x: Self) {
       
-      @scala.inline
-      def setCacheStaleTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "cacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
+      inline def setCacheStaleTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "cacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheStaleTimeoutInSecondsUndefined: Self = StObject.set(x, "cacheStaleTimeoutInSeconds", js.undefined)
+      inline def setCacheStaleTimeoutInSecondsUndefined: Self = StObject.set(x, "cacheStaleTimeoutInSeconds", js.undefined)
     }
   }
 }

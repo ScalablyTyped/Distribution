@@ -73,50 +73,36 @@ object Pages {
   }
   object IPageControlMembers {
     
-    @scala.inline
-    def apply(): IPageControlMembers = {
+    inline def apply(): IPageControlMembers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPageControlMembers]
     }
     
-    @scala.inline
-    implicit class IPageControlMembersMutableBuilder[Self <: IPageControlMembers] (val x: Self) extends AnyVal {
+    extension [Self <: IPageControlMembers](x: Self) {
       
-      @scala.inline
-      def setError(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInit(value: (/* element */ HTMLElement, /* options */ js.Any) => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      inline def setInit(value: (/* element */ HTMLElement, /* options */ js.Any) => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setLoad(value: /* uri */ String => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: /* uri */ String => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setProcessed(value: (/* element */ HTMLElement, /* options */ js.Any) => js.Any): Self = StObject.set(x, "processed", js.Any.fromFunction2(value))
+      inline def setProcessed(value: (/* element */ HTMLElement, /* options */ js.Any) => js.Any): Self = StObject.set(x, "processed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProcessedUndefined: Self = StObject.set(x, "processed", js.undefined)
+      inline def setProcessedUndefined: Self = StObject.set(x, "processed", js.undefined)
       
-      @scala.inline
-      def setReady(value: (/* element */ HTMLElement, /* options */ js.Any) => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction2(value))
+      inline def setReady(value: (/* element */ HTMLElement, /* options */ js.Any) => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+      inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
-      @scala.inline
-      def setRender(value: (/* element */ HTMLElement, /* options */ js.Any, /* loadResult */ Promise[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+      inline def setRender(value: (/* element */ HTMLElement, /* options */ js.Any, /* loadResult */ Promise[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

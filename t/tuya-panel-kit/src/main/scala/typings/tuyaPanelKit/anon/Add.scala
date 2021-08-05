@@ -44,8 +44,7 @@ trait Add extends StObject {
 }
 object Add {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (Double, Double) => Double,
     bytesToHexString: js.Array[js.Any] => String,
     calcPercent: (Double, Double, Double, Double) => Double,
@@ -69,61 +68,42 @@ object Add {
     __obj.asInstanceOf[Add]
   }
   
-  @scala.inline
-  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
+  extension [Self <: Add](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, Double) => Double): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, Double) => Double): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBytesToHexString(value: js.Array[js.Any] => String): Self = StObject.set(x, "bytesToHexString", js.Any.fromFunction1(value))
+    inline def setBytesToHexString(value: js.Array[js.Any] => String): Self = StObject.set(x, "bytesToHexString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalcPercent(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "calcPercent", js.Any.fromFunction4(value))
+    inline def setCalcPercent(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "calcPercent", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCalcPosition(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "calcPosition", js.Any.fromFunction5(value))
+    inline def setCalcPosition(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "calcPosition", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setChangeBitValue(value: (Double, Double) => Double): Self = StObject.set(x, "changeBitValue", js.Any.fromFunction2(value))
+    inline def setChangeBitValue(value: (Double, Double) => Double): Self = StObject.set(x, "changeBitValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBitValue(value: (Double, Double) => Double): Self = StObject.set(x, "getBitValue", js.Any.fromFunction2(value))
+    inline def setGetBitValue(value: (Double, Double) => Double): Self = StObject.set(x, "getBitValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHighLowToInt(value: (Double, Double) => Double): Self = StObject.set(x, "highLowToInt", js.Any.fromFunction2(value))
+    inline def setHighLowToInt(value: (Double, Double) => Double): Self = StObject.set(x, "highLowToInt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInMaxMin(value: (Double, Double, Double) => Double): Self = StObject.set(x, "inMaxMin", js.Any.fromFunction3(value))
+    inline def setInMaxMin(value: (Double, Double, Double) => Double): Self = StObject.set(x, "inMaxMin", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIntToHighLow(value: Double => js.Array[js.Any]): Self = StObject.set(x, "intToHighLow", js.Any.fromFunction1(value))
+    inline def setIntToHighLow(value: Double => js.Array[js.Any]): Self = StObject.set(x, "intToHighLow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNumToByteNumbers(value: (Double, Double) => js.Array[js.Any]): Self = StObject.set(x, "numToByteNumbers", js.Any.fromFunction2(value))
+    inline def setNumToByteNumbers(value: (Double, Double) => js.Array[js.Any]): Self = StObject.set(x, "numToByteNumbers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNumToHexString(value: (Double, Double) => String): Self = StObject.set(x, "numToHexString", js.Any.fromFunction2(value))
+    inline def setNumToHexString(value: (Double, Double) => String): Self = StObject.set(x, "numToHexString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRange(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "range", js.Any.fromFunction3(value))
+    inline def setRange(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "range", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScaleNumber(value: (Double, Double) => Double): Self = StObject.set(x, "scaleNumber", js.Any.fromFunction2(value))
+    inline def setScaleNumber(value: (Double, Double) => Double): Self = StObject.set(x, "scaleNumber", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBitValueWithOne(value: (Double, Double) => Double): Self = StObject.set(x, "setBitValueWithOne", js.Any.fromFunction2(value))
+    inline def setSetBitValueWithOne(value: (Double, Double) => Double): Self = StObject.set(x, "setBitValueWithOne", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBitValueWithZero(value: (Double, Double) => Double): Self = StObject.set(x, "setBitValueWithZero", js.Any.fromFunction2(value))
+    inline def setSetBitValueWithZero(value: (Double, Double) => Double): Self = StObject.set(x, "setBitValueWithZero", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSubtract(value: (Double, Double) => Double): Self = StObject.set(x, "subtract", js.Any.fromFunction2(value))
+    inline def setSubtract(value: (Double, Double) => Double): Self = StObject.set(x, "subtract", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToFilledString(value: (Double, Double) => String): Self = StObject.set(x, "toFilledString", js.Any.fromFunction2(value))
+    inline def setToFilledString(value: (Double, Double) => String): Self = StObject.set(x, "toFilledString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToFixedString(value: (Double, Double) => String): Self = StObject.set(x, "toFixedString", js.Any.fromFunction2(value))
+    inline def setToFixedString(value: (Double, Double) => String): Self = StObject.set(x, "toFixedString", js.Any.fromFunction2(value))
   }
 }

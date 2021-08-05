@@ -28,34 +28,25 @@ trait SchemaUrlCrawlErrorCountsPerType extends StObject {
 }
 object SchemaUrlCrawlErrorCountsPerType {
   
-  @scala.inline
-  def apply(): SchemaUrlCrawlErrorCountsPerType = {
+  inline def apply(): SchemaUrlCrawlErrorCountsPerType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlCrawlErrorCountsPerType]
   }
   
-  @scala.inline
-  implicit class SchemaUrlCrawlErrorCountsPerTypeMutableBuilder[Self <: SchemaUrlCrawlErrorCountsPerType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlCrawlErrorCountsPerType](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[SchemaUrlCrawlErrorCount]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[SchemaUrlCrawlErrorCount]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: SchemaUrlCrawlErrorCount*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaUrlCrawlErrorCount*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

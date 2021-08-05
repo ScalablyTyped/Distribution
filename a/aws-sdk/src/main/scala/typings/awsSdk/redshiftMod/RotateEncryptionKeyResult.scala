@@ -10,19 +10,15 @@ trait RotateEncryptionKeyResult extends StObject {
 }
 object RotateEncryptionKeyResult {
   
-  @scala.inline
-  def apply(): RotateEncryptionKeyResult = {
+  inline def apply(): RotateEncryptionKeyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotateEncryptionKeyResult]
   }
   
-  @scala.inline
-  implicit class RotateEncryptionKeyResultMutableBuilder[Self <: RotateEncryptionKeyResult] (val x: Self) extends AnyVal {
+  extension [Self <: RotateEncryptionKeyResult](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
   }
 }

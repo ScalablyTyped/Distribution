@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PageBreak extends StObject
 object PageBreak {
   
-  @scala.inline
-  def after: typings.pdfmake.pdfmakeStrings.after = "after".asInstanceOf[typings.pdfmake.pdfmakeStrings.after]
+  inline def after: typings.pdfmake.pdfmakeStrings.after = "after".asInstanceOf[typings.pdfmake.pdfmakeStrings.after]
   
-  @scala.inline
-  def before: typings.pdfmake.pdfmakeStrings.before = "before".asInstanceOf[typings.pdfmake.pdfmakeStrings.before]
+  inline def before: typings.pdfmake.pdfmakeStrings.before = "before".asInstanceOf[typings.pdfmake.pdfmakeStrings.before]
 }

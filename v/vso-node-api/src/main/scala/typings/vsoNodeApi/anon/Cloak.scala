@@ -12,19 +12,15 @@ trait Cloak extends StObject {
 }
 object Cloak {
   
-  @scala.inline
-  def apply(cloak: scala.Double, map: scala.Double): Cloak = {
+  inline def apply(cloak: scala.Double, map: scala.Double): Cloak = {
     val __obj = js.Dynamic.literal(cloak = cloak.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cloak]
   }
   
-  @scala.inline
-  implicit class CloakMutableBuilder[Self <: Cloak] (val x: Self) extends AnyVal {
+  extension [Self <: Cloak](x: Self) {
     
-    @scala.inline
-    def setCloak(value: scala.Double): Self = StObject.set(x, "cloak", value.asInstanceOf[js.Any])
+    inline def setCloak(value: scala.Double): Self = StObject.set(x, "cloak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: scala.Double): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: scala.Double): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
   }
 }

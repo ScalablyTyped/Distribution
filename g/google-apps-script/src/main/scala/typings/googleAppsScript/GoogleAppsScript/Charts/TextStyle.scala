@@ -45,22 +45,17 @@ trait TextStyle extends StObject {
 }
 object TextStyle {
   
-  @scala.inline
-  def apply(getColor: () => String, getFontName: () => String, getFontSize: () => Double): TextStyle = {
+  inline def apply(getColor: () => String, getFontName: () => String, getFontSize: () => Double): TextStyle = {
     val __obj = js.Dynamic.literal(getColor = js.Any.fromFunction0(getColor), getFontName = js.Any.fromFunction0(getFontName), getFontSize = js.Any.fromFunction0(getFontSize))
     __obj.asInstanceOf[TextStyle]
   }
   
-  @scala.inline
-  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyle](x: Self) {
     
-    @scala.inline
-    def setGetColor(value: () => String): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
+    inline def setGetColor(value: () => String): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontName(value: () => String): Self = StObject.set(x, "getFontName", js.Any.fromFunction0(value))
+    inline def setGetFontName(value: () => String): Self = StObject.set(x, "getFontName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontSize(value: () => Double): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
+    inline def setGetFontSize(value: () => Double): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
   }
 }

@@ -20,49 +20,35 @@ trait DriveItemUploadableProperties extends StObject {
 }
 object DriveItemUploadableProperties {
   
-  @scala.inline
-  def apply(): DriveItemUploadableProperties = {
+  inline def apply(): DriveItemUploadableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveItemUploadableProperties]
   }
   
-  @scala.inline
-  implicit class DriveItemUploadablePropertiesMutableBuilder[Self <: DriveItemUploadableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DriveItemUploadableProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFileSize(value: NullableOption[Double]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: NullableOption[Double]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeNull: Self = StObject.set(x, "fileSize", null)
+    inline def setFileSizeNull: Self = StObject.set(x, "fileSize", null)
     
-    @scala.inline
-    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+    inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
-    @scala.inline
-    def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = StObject.set(x, "fileSystemInfo", value.asInstanceOf[js.Any])
+    inline def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = StObject.set(x, "fileSystemInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemInfoNull: Self = StObject.set(x, "fileSystemInfo", null)
+    inline def setFileSystemInfoNull: Self = StObject.set(x, "fileSystemInfo", null)
     
-    @scala.inline
-    def setFileSystemInfoUndefined: Self = StObject.set(x, "fileSystemInfo", js.undefined)
+    inline def setFileSystemInfoUndefined: Self = StObject.set(x, "fileSystemInfo", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

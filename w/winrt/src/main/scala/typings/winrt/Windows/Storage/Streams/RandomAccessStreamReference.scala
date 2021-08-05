@@ -10,8 +10,7 @@ trait RandomAccessStreamReference
      with IRandomAccessStreamReference
 object RandomAccessStreamReference {
   
-  @scala.inline
-  def apply(openReadAsync: () => IAsyncOperation[IRandomAccessStreamWithContentType]): RandomAccessStreamReference = {
+  inline def apply(openReadAsync: () => IAsyncOperation[IRandomAccessStreamWithContentType]): RandomAccessStreamReference = {
     val __obj = js.Dynamic.literal(openReadAsync = js.Any.fromFunction0(openReadAsync))
     __obj.asInstanceOf[RandomAccessStreamReference]
   }

@@ -15,19 +15,15 @@ trait DeviceTokenCredentialsOptions
 }
 object DeviceTokenCredentialsOptions {
   
-  @scala.inline
-  def apply(): DeviceTokenCredentialsOptions = {
+  inline def apply(): DeviceTokenCredentialsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceTokenCredentialsOptions]
   }
   
-  @scala.inline
-  implicit class DeviceTokenCredentialsOptionsMutableBuilder[Self <: DeviceTokenCredentialsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceTokenCredentialsOptions](x: Self) {
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

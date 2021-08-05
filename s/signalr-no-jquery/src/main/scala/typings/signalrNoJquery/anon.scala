@@ -17,20 +17,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, supportsKeepAlive: () => Boolean): Name = {
+    inline def apply(name: String, supportsKeepAlive: () => Boolean): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], supportsKeepAlive = js.Any.fromFunction0(supportsKeepAlive))
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsKeepAlive(value: () => Boolean): Self = StObject.set(x, "supportsKeepAlive", js.Any.fromFunction0(value))
+      inline def setSupportsKeepAlive(value: () => Boolean): Self = StObject.set(x, "supportsKeepAlive", js.Any.fromFunction0(value))
     }
   }
 }

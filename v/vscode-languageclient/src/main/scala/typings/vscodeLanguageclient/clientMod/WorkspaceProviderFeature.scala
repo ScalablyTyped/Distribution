@@ -10,16 +10,13 @@ trait WorkspaceProviderFeature[PR] extends StObject {
 }
 object WorkspaceProviderFeature {
   
-  @scala.inline
-  def apply[PR](getProviders: () => js.Array[PR]): WorkspaceProviderFeature[PR] = {
+  inline def apply[PR](getProviders: () => js.Array[PR]): WorkspaceProviderFeature[PR] = {
     val __obj = js.Dynamic.literal(getProviders = js.Any.fromFunction0(getProviders))
     __obj.asInstanceOf[WorkspaceProviderFeature[PR]]
   }
   
-  @scala.inline
-  implicit class WorkspaceProviderFeatureMutableBuilder[Self <: WorkspaceProviderFeature[?], PR] (val x: Self & WorkspaceProviderFeature[PR]) extends AnyVal {
+  extension [Self <: WorkspaceProviderFeature[?], PR](x: Self & WorkspaceProviderFeature[PR]) {
     
-    @scala.inline
-    def setGetProviders(value: () => js.Array[PR]): Self = StObject.set(x, "getProviders", js.Any.fromFunction0(value))
+    inline def setGetProviders(value: () => js.Array[PR]): Self = StObject.set(x, "getProviders", js.Any.fromFunction0(value))
   }
 }

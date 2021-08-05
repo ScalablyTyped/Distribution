@@ -192,7 +192,7 @@ trait ShapeRange extends StObject {
   
   val PlaceholderFormat: typings.activexPowerpoint.PowerPoint.PlaceholderFormat = js.native
   
-  @JSName("PowerPoint.ShapeRange_typekey")
+  /* private */ @JSName("PowerPoint.ShapeRange_typekey")
   var PowerPointDotShapeRange_typekey: ShapeRange = js.native
   
   val RTF: String = js.native

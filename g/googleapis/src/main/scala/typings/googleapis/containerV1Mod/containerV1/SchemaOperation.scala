@@ -84,97 +84,67 @@ trait SchemaOperation extends StObject {
 }
 object SchemaOperation {
   
-  @scala.inline
-  def apply(): SchemaOperation = {
+  inline def apply(): SchemaOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperation]
   }
   
-  @scala.inline
-  implicit class SchemaOperationMutableBuilder[Self <: SchemaOperation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperation](x: Self) {
     
-    @scala.inline
-    def setClusterConditions(value: js.Array[SchemaStatusCondition]): Self = StObject.set(x, "clusterConditions", value.asInstanceOf[js.Any])
+    inline def setClusterConditions(value: js.Array[SchemaStatusCondition]): Self = StObject.set(x, "clusterConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterConditionsUndefined: Self = StObject.set(x, "clusterConditions", js.undefined)
+    inline def setClusterConditionsUndefined: Self = StObject.set(x, "clusterConditions", js.undefined)
     
-    @scala.inline
-    def setClusterConditionsVarargs(value: SchemaStatusCondition*): Self = StObject.set(x, "clusterConditions", js.Array(value :_*))
+    inline def setClusterConditionsVarargs(value: SchemaStatusCondition*): Self = StObject.set(x, "clusterConditions", js.Array(value :_*))
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodepoolConditions(value: js.Array[SchemaStatusCondition]): Self = StObject.set(x, "nodepoolConditions", value.asInstanceOf[js.Any])
+    inline def setNodepoolConditions(value: js.Array[SchemaStatusCondition]): Self = StObject.set(x, "nodepoolConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodepoolConditionsUndefined: Self = StObject.set(x, "nodepoolConditions", js.undefined)
+    inline def setNodepoolConditionsUndefined: Self = StObject.set(x, "nodepoolConditions", js.undefined)
     
-    @scala.inline
-    def setNodepoolConditionsVarargs(value: SchemaStatusCondition*): Self = StObject.set(x, "nodepoolConditions", js.Array(value :_*))
+    inline def setNodepoolConditionsVarargs(value: SchemaStatusCondition*): Self = StObject.set(x, "nodepoolConditions", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTargetLink(value: String): Self = StObject.set(x, "targetLink", value.asInstanceOf[js.Any])
+    inline def setTargetLink(value: String): Self = StObject.set(x, "targetLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLinkUndefined: Self = StObject.set(x, "targetLink", js.undefined)
+    inline def setTargetLinkUndefined: Self = StObject.set(x, "targetLink", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

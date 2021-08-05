@@ -19,19 +19,15 @@ trait DropIndexOptions extends StObject {
 }
 object DropIndexOptions {
   
-  @scala.inline
-  def apply(): DropIndexOptions = {
+  inline def apply(): DropIndexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropIndexOptions]
   }
   
-  @scala.inline
-  implicit class DropIndexOptionsMutableBuilder[Self <: DropIndexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DropIndexOptions](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

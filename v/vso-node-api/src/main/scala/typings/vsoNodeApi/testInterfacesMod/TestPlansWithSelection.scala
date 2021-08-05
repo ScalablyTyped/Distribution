@@ -14,25 +14,19 @@ trait TestPlansWithSelection extends StObject {
 }
 object TestPlansWithSelection {
   
-  @scala.inline
-  def apply(lastSelectedPlan: Double, lastSelectedSuite: Double, plans: js.Array[TestPlan]): TestPlansWithSelection = {
+  inline def apply(lastSelectedPlan: Double, lastSelectedSuite: Double, plans: js.Array[TestPlan]): TestPlansWithSelection = {
     val __obj = js.Dynamic.literal(lastSelectedPlan = lastSelectedPlan.asInstanceOf[js.Any], lastSelectedSuite = lastSelectedSuite.asInstanceOf[js.Any], plans = plans.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestPlansWithSelection]
   }
   
-  @scala.inline
-  implicit class TestPlansWithSelectionMutableBuilder[Self <: TestPlansWithSelection] (val x: Self) extends AnyVal {
+  extension [Self <: TestPlansWithSelection](x: Self) {
     
-    @scala.inline
-    def setLastSelectedPlan(value: Double): Self = StObject.set(x, "lastSelectedPlan", value.asInstanceOf[js.Any])
+    inline def setLastSelectedPlan(value: Double): Self = StObject.set(x, "lastSelectedPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSelectedSuite(value: Double): Self = StObject.set(x, "lastSelectedSuite", value.asInstanceOf[js.Any])
+    inline def setLastSelectedSuite(value: Double): Self = StObject.set(x, "lastSelectedSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlans(value: js.Array[TestPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+    inline def setPlans(value: js.Array[TestPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlansVarargs(value: TestPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: TestPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
   }
 }

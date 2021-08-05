@@ -112,8 +112,7 @@ trait DuplexOptions extends StObject {
 }
 object DuplexOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: (js.UndefOr[
       js.ThisFunction2[
         /* this */ _Readable, 
@@ -188,29 +187,21 @@ object DuplexOptions {
     __obj.asInstanceOf[DuplexOptions]
   }
   
-  @scala.inline
-  implicit class DuplexOptionsMutableBuilder[Self <: DuplexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DuplexOptions](x: Self) {
     
-    @scala.inline
-    def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+    inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+    inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
     
-    @scala.inline
-    def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
+    inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
+    inline def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
     
-    @scala.inline
-    def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+    inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+    inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
-    @scala.inline
-    def setDestroy(
+    inline def setDestroy(
       value: (js.UndefOr[
           js.ThisFunction2[
             /* this */ _Readable, 
@@ -235,14 +226,11 @@ object DuplexOptions {
         ])
     ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFinal(
+    inline def setFinal(
       value: (js.UndefOr[
           js.ThisFunction1[
             /* this */ Writable, 
@@ -258,61 +246,43 @@ object DuplexOptions {
         ])
     ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
-    @scala.inline
-    def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+    inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+    inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
-    @scala.inline
-    def setRead(
+    inline def setRead(
       value: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]])
     ): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
+    inline def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadableHighWaterMarkUndefined: Self = StObject.set(x, "readableHighWaterMark", js.undefined)
+    inline def setReadableHighWaterMarkUndefined: Self = StObject.set(x, "readableHighWaterMark", js.undefined)
     
-    @scala.inline
-    def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
+    inline def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
+    inline def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
     
-    @scala.inline
-    def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+    inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     
-    @scala.inline
-    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableHighWaterMark(value: Double): Self = StObject.set(x, "writableHighWaterMark", value.asInstanceOf[js.Any])
+    inline def setWritableHighWaterMark(value: Double): Self = StObject.set(x, "writableHighWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableHighWaterMarkUndefined: Self = StObject.set(x, "writableHighWaterMark", js.undefined)
+    inline def setWritableHighWaterMarkUndefined: Self = StObject.set(x, "writableHighWaterMark", js.undefined)
     
-    @scala.inline
-    def setWritableObjectMode(value: Boolean): Self = StObject.set(x, "writableObjectMode", value.asInstanceOf[js.Any])
+    inline def setWritableObjectMode(value: Boolean): Self = StObject.set(x, "writableObjectMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
+    inline def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
     
-    @scala.inline
-    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
     
-    @scala.inline
-    def setWrite(
+    inline def setWrite(
       value: (js.UndefOr[
           js.ThisFunction3[
             /* this */ Writable, 
@@ -332,8 +302,7 @@ object DuplexOptions {
         ])
     ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritev(
+    inline def setWritev(
       value: (js.UndefOr[
           js.ThisFunction2[
             /* this */ Writable, 

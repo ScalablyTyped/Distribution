@@ -28,25 +28,19 @@ trait ScanCodeData extends StObject {
 }
 object ScanCodeData {
   
-  @scala.inline
-  def apply(charSet: String, path: String, result: String, scanType: scanType): ScanCodeData = {
+  inline def apply(charSet: String, path: String, result: String, scanType: scanType): ScanCodeData = {
     val __obj = js.Dynamic.literal(charSet = charSet.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], scanType = scanType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanCodeData]
   }
   
-  @scala.inline
-  implicit class ScanCodeDataMutableBuilder[Self <: ScanCodeData] (val x: Self) extends AnyVal {
+  extension [Self <: ScanCodeData](x: Self) {
     
-    @scala.inline
-    def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+    inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanType(value: scanType): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: scanType): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
   }
 }

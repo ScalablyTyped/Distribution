@@ -52,11 +52,11 @@ object sessionMod {
       * @param userAgent - User agent. See {@link UserAgent} for details.
       * @internal
       */
-    protected def this(userAgent: UserAgent) = this()
-    protected def this(userAgent: UserAgent, options: SessionOptions) = this()
+    /* protected */ def this(userAgent: UserAgent) = this()
+    /* protected */ def this(userAgent: UserAgent, options: SessionOptions) = this()
     
     /** @internal */
-    var _assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
+    /* protected */ var _assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
     
     /**
       * Send BYE.
@@ -73,10 +73,10 @@ object sessionMod {
     var _contact: js.UndefOr[String] = js.native
     
     /** @internal */
-    var _dialog: js.UndefOr[typings.sipJs.sessionSessionMod.Session] = js.native
+    /* protected */ var _dialog: js.UndefOr[typings.sipJs.sessionSessionMod.Session] = js.native
     
     /** @internal */
-    var _id: String = js.native
+    /* protected */ var _id: String = js.native
     
     /**
       * Send INFO.
@@ -128,40 +128,40 @@ object sessionMod {
     var _referral: js.UndefOr[Inviter] = js.native
     
     /** @internal */
-    var _referralInviterOptions: js.UndefOr[InviterOptions] = js.native
+    /* protected */ var _referralInviterOptions: js.UndefOr[InviterOptions] = js.native
     
     /** @internal */
-    var _renderbody: js.UndefOr[String] = js.native
+    /* protected */ var _renderbody: js.UndefOr[String] = js.native
     
     /** @internal */
-    var _rendertype: js.UndefOr[String] = js.native
+    /* protected */ var _rendertype: js.UndefOr[String] = js.native
     
     /** @internal */
     var _replacee: js.UndefOr[Session] = js.native
     
     /** Dialogs session description handler. */
-    var _sessionDescriptionHandler: js.Any = js.native
+    /* private */ var _sessionDescriptionHandler: js.Any = js.native
     
     /** SDH modifiers for the initial INVITE transaction. */
-    var _sessionDescriptionHandlerModifiers: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerModifiers: js.Any = js.native
     
     /** SDH modifiers for re-INVITE transactions. */
-    var _sessionDescriptionHandlerModifiersReInvite: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerModifiersReInvite: js.Any = js.native
     
     /** SDH options for the initial INVITE transaction. */
-    var _sessionDescriptionHandlerOptions: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerOptions: js.Any = js.native
     
     /** SDH options for re-NVITE transactions.*/
-    var _sessionDescriptionHandlerOptionsReInvite: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerOptionsReInvite: js.Any = js.native
     
     /** Session state. */
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
     /** Session state emitter. */
-    var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: js.Any = js.native
     
     /** User agent. */
-    var _userAgent: js.Any = js.native
+    /* private */ var _userAgent: js.Any = js.native
     
     /**
       * Send ACK and then BYE. There are unrecoverable errors which can occur
@@ -192,7 +192,7 @@ object sessionMod {
     def bye(): js.Promise[OutgoingByeRequest] = js.native
     def bye(options: SessionByeOptions): js.Promise[OutgoingByeRequest] = js.native
     
-    var copyRequestOptions: js.Any = js.native
+    /* private */ var copyRequestOptions: js.Any = js.native
     
     /**
       * Property reserved for use by instance owner.
@@ -239,7 +239,7 @@ object sessionMod {
       */
     /* protected */ def getOffer(options: SessionDescriptionHandlerModifiers): js.Promise[Body] = js.native
     
-    var getReasonHeaderValue: js.Any = js.native
+    /* private */ var getReasonHeaderValue: js.Any = js.native
     
     /**
       * A unique identifier for this session.
@@ -268,7 +268,7 @@ object sessionMod {
     /**
       * Logger.
       */
-    var logger: Logger = js.native
+    /* protected */ var logger: Logger = js.native
     
     /**
       * Deliver a {@link Message}. Sends a MESSAGE.
@@ -308,7 +308,7 @@ object sessionMod {
     /* protected */ def onMessageRequest(request: IncomingMessageRequest): Unit = js.native
     
     /** If defined, NOTIFYs associated with a REFER subscription are delivered here. */
-    var onNotify: js.Any = js.native
+    /* private */ var onNotify: js.Any = js.native
     
     /**
       * Handle in dialog NOTIFY request.
@@ -329,10 +329,10 @@ object sessionMod {
     /* protected */ def onReferRequest(request: IncomingReferRequest): Unit = js.native
     
     /** True if there is an outgoing re-INVITE request outstanding. */
-    var pendingReinvite: js.Any = js.native
+    /* private */ var pendingReinvite: js.Any = js.native
     
     /** True if there is an incoming re-INVITE ACK request outstanding. */
-    var pendingReinviteAck: js.Any = js.native
+    /* private */ var pendingReinviteAck: js.Any = js.native
     
     /**
       * Proffer a {@link Referral}. Send a REFER.
@@ -344,9 +344,9 @@ object sessionMod {
     def refer(referTo: Session): js.Promise[OutgoingReferRequest] = js.native
     def refer(referTo: Session, options: SessionReferOptions): js.Promise[OutgoingReferRequest] = js.native
     
-    var referExtraHeaders: js.Any = js.native
+    /* private */ var referExtraHeaders: js.Any = js.native
     
-    var referToString: js.Any = js.native
+    /* private */ var referToString: js.Any = js.native
     
     /**
       * The identity of the remote user.

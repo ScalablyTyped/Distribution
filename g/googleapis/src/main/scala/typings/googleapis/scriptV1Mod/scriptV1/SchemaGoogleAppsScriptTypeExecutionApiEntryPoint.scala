@@ -16,19 +16,15 @@ trait SchemaGoogleAppsScriptTypeExecutionApiEntryPoint extends StObject {
 }
 object SchemaGoogleAppsScriptTypeExecutionApiEntryPoint {
   
-  @scala.inline
-  def apply(): SchemaGoogleAppsScriptTypeExecutionApiEntryPoint = {
+  inline def apply(): SchemaGoogleAppsScriptTypeExecutionApiEntryPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeExecutionApiEntryPoint]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleAppsScriptTypeExecutionApiEntryPointMutableBuilder[Self <: SchemaGoogleAppsScriptTypeExecutionApiEntryPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleAppsScriptTypeExecutionApiEntryPoint](x: Self) {
     
-    @scala.inline
-    def setEntryPointConfig(value: SchemaGoogleAppsScriptTypeExecutionApiConfig): Self = StObject.set(x, "entryPointConfig", value.asInstanceOf[js.Any])
+    inline def setEntryPointConfig(value: SchemaGoogleAppsScriptTypeExecutionApiConfig): Self = StObject.set(x, "entryPointConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPointConfigUndefined: Self = StObject.set(x, "entryPointConfig", js.undefined)
+    inline def setEntryPointConfigUndefined: Self = StObject.set(x, "entryPointConfig", js.undefined)
   }
 }

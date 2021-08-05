@@ -15,8 +15,7 @@ object headerNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[E /* <: js.Object */](props: FCProps[HeaderNameProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[E /* <: js.Object */](props: FCProps[HeaderNameProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   type HeaderNameProps[E /* <: js.Object */] = (LinkProps[E, E]) & HeaderNamePropsBase
   
@@ -32,32 +31,24 @@ object headerNameMod {
   }
   object HeaderNamePropsBase {
     
-    @scala.inline
-    def apply(): HeaderNamePropsBase = {
+    inline def apply(): HeaderNamePropsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderNamePropsBase]
     }
     
-    @scala.inline
-    implicit class HeaderNamePropsBaseMutableBuilder[Self <: HeaderNamePropsBase] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderNamePropsBase](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

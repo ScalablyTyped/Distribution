@@ -18,19 +18,15 @@ trait HyperParameterTuningJobObjective extends StObject {
 }
 object HyperParameterTuningJobObjective {
   
-  @scala.inline
-  def apply(MetricName: MetricName, Type: HyperParameterTuningJobObjectiveType): HyperParameterTuningJobObjective = {
+  inline def apply(MetricName: MetricName, Type: HyperParameterTuningJobObjectiveType): HyperParameterTuningJobObjective = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperParameterTuningJobObjective]
   }
   
-  @scala.inline
-  implicit class HyperParameterTuningJobObjectiveMutableBuilder[Self <: HyperParameterTuningJobObjective] (val x: Self) extends AnyVal {
+  extension [Self <: HyperParameterTuningJobObjective](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: HyperParameterTuningJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: HyperParameterTuningJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

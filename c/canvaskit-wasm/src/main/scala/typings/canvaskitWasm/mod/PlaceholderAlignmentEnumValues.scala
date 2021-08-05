@@ -22,8 +22,7 @@ trait PlaceholderAlignmentEnumValues
 }
 object PlaceholderAlignmentEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AboveBaseline: PlaceholderAlignment,
     Baseline: PlaceholderAlignment,
     BelowBaseline: PlaceholderAlignment,
@@ -36,25 +35,18 @@ object PlaceholderAlignmentEnumValues {
     __obj.asInstanceOf[PlaceholderAlignmentEnumValues]
   }
   
-  @scala.inline
-  implicit class PlaceholderAlignmentEnumValuesMutableBuilder[Self <: PlaceholderAlignmentEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceholderAlignmentEnumValues](x: Self) {
     
-    @scala.inline
-    def setAboveBaseline(value: PlaceholderAlignment): Self = StObject.set(x, "AboveBaseline", value.asInstanceOf[js.Any])
+    inline def setAboveBaseline(value: PlaceholderAlignment): Self = StObject.set(x, "AboveBaseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseline(value: PlaceholderAlignment): Self = StObject.set(x, "Baseline", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: PlaceholderAlignment): Self = StObject.set(x, "Baseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBelowBaseline(value: PlaceholderAlignment): Self = StObject.set(x, "BelowBaseline", value.asInstanceOf[js.Any])
+    inline def setBelowBaseline(value: PlaceholderAlignment): Self = StObject.set(x, "BelowBaseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottom(value: PlaceholderAlignment): Self = StObject.set(x, "Bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: PlaceholderAlignment): Self = StObject.set(x, "Bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddle(value: PlaceholderAlignment): Self = StObject.set(x, "Middle", value.asInstanceOf[js.Any])
+    inline def setMiddle(value: PlaceholderAlignment): Self = StObject.set(x, "Middle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: PlaceholderAlignment): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: PlaceholderAlignment): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
   }
 }

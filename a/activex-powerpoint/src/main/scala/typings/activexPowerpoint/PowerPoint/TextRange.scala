@@ -125,7 +125,7 @@ trait TextRange extends StObject {
     Link: js.UndefOr[MsoTriState]
   ): TextRange = js.native
   
-  @JSName("PowerPoint.TextRange_typekey")
+  /* private */ @JSName("PowerPoint.TextRange_typekey")
   var PowerPointDotTextRange_typekey: TextRange = js.native
   
   def RemovePeriods(): Unit = js.native

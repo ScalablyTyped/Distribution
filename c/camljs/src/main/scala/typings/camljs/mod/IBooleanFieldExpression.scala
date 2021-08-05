@@ -26,8 +26,7 @@ trait IBooleanFieldExpression extends StObject {
 }
 object IBooleanFieldExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EqualTo: Boolean => IExpression,
     IsFalse: () => IExpression,
     IsNotNull: () => IExpression,
@@ -39,25 +38,18 @@ object IBooleanFieldExpression {
     __obj.asInstanceOf[IBooleanFieldExpression]
   }
   
-  @scala.inline
-  implicit class IBooleanFieldExpressionMutableBuilder[Self <: IBooleanFieldExpression] (val x: Self) extends AnyVal {
+  extension [Self <: IBooleanFieldExpression](x: Self) {
     
-    @scala.inline
-    def setEqualTo(value: Boolean => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
+    inline def setEqualTo(value: Boolean => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFalse(value: () => IExpression): Self = StObject.set(x, "IsFalse", js.Any.fromFunction0(value))
+    inline def setIsFalse(value: () => IExpression): Self = StObject.set(x, "IsFalse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
+    inline def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
+    inline def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTrue(value: () => IExpression): Self = StObject.set(x, "IsTrue", js.Any.fromFunction0(value))
+    inline def setIsTrue(value: () => IExpression): Self = StObject.set(x, "IsTrue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotEqualTo(value: Boolean => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
+    inline def setNotEqualTo(value: Boolean => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
   }
 }

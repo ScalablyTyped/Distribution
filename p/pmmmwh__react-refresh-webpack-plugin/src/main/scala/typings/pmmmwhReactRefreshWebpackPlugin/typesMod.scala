@@ -52,56 +52,40 @@ object typesMod {
   }
   object ErrorOverlayOptions {
     
-    @scala.inline
-    def apply(): ErrorOverlayOptions = {
+    inline def apply(): ErrorOverlayOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorOverlayOptions]
     }
     
-    @scala.inline
-    implicit class ErrorOverlayOptionsMutableBuilder[Self <: ErrorOverlayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorOverlayOptions](x: Self) {
       
-      @scala.inline
-      def setEntry(value: String | `false`): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: String | `false`): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+      inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
-      @scala.inline
-      def setModule(value: String | `false`): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String | `false`): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setSockHost(value: String): Self = StObject.set(x, "sockHost", value.asInstanceOf[js.Any])
+      inline def setSockHost(value: String): Self = StObject.set(x, "sockHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockHostUndefined: Self = StObject.set(x, "sockHost", js.undefined)
+      inline def setSockHostUndefined: Self = StObject.set(x, "sockHost", js.undefined)
       
-      @scala.inline
-      def setSockIntegration(value: `false` | (String & _empty) | wds | whm | wps): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
+      inline def setSockIntegration(value: `false` | (String & _empty) | wds | whm | wps): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockIntegrationUndefined: Self = StObject.set(x, "sockIntegration", js.undefined)
+      inline def setSockIntegrationUndefined: Self = StObject.set(x, "sockIntegration", js.undefined)
       
-      @scala.inline
-      def setSockPath(value: String): Self = StObject.set(x, "sockPath", value.asInstanceOf[js.Any])
+      inline def setSockPath(value: String): Self = StObject.set(x, "sockPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockPathUndefined: Self = StObject.set(x, "sockPath", js.undefined)
+      inline def setSockPathUndefined: Self = StObject.set(x, "sockPath", js.undefined)
       
-      @scala.inline
-      def setSockPort(value: Double): Self = StObject.set(x, "sockPort", value.asInstanceOf[js.Any])
+      inline def setSockPort(value: Double): Self = StObject.set(x, "sockPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockPortUndefined: Self = StObject.set(x, "sockPort", js.undefined)
+      inline def setSockPortUndefined: Self = StObject.set(x, "sockPort", js.undefined)
       
-      @scala.inline
-      def setUseLegacyWDSSockets(value: Boolean): Self = StObject.set(x, "useLegacyWDSSockets", value.asInstanceOf[js.Any])
+      inline def setUseLegacyWDSSockets(value: Boolean): Self = StObject.set(x, "useLegacyWDSSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLegacyWDSSocketsUndefined: Self = StObject.set(x, "useLegacyWDSSockets", js.undefined)
+      inline def setUseLegacyWDSSocketsUndefined: Self = StObject.set(x, "useLegacyWDSSockets", js.undefined)
     }
   }
   
@@ -144,8 +128,7 @@ object typesMod {
   }
   object NormalizedErrorOverlayOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entry: String | `false`,
       module: String | `false`,
       sockIntegration: LiteralUnion[wds | whm | wps | `false`, String]
@@ -154,41 +137,29 @@ object typesMod {
       __obj.asInstanceOf[NormalizedErrorOverlayOptions]
     }
     
-    @scala.inline
-    implicit class NormalizedErrorOverlayOptionsMutableBuilder[Self <: NormalizedErrorOverlayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedErrorOverlayOptions](x: Self) {
       
-      @scala.inline
-      def setEntry(value: String | `false`): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: String | `false`): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule(value: String | `false`): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String | `false`): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockHost(value: String): Self = StObject.set(x, "sockHost", value.asInstanceOf[js.Any])
+      inline def setSockHost(value: String): Self = StObject.set(x, "sockHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockHostUndefined: Self = StObject.set(x, "sockHost", js.undefined)
+      inline def setSockHostUndefined: Self = StObject.set(x, "sockHost", js.undefined)
       
-      @scala.inline
-      def setSockIntegration(value: LiteralUnion[wds | whm | wps | `false`, String]): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
+      inline def setSockIntegration(value: LiteralUnion[wds | whm | wps | `false`, String]): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockPath(value: String): Self = StObject.set(x, "sockPath", value.asInstanceOf[js.Any])
+      inline def setSockPath(value: String): Self = StObject.set(x, "sockPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockPathUndefined: Self = StObject.set(x, "sockPath", js.undefined)
+      inline def setSockPathUndefined: Self = StObject.set(x, "sockPath", js.undefined)
       
-      @scala.inline
-      def setSockPort(value: Double): Self = StObject.set(x, "sockPort", value.asInstanceOf[js.Any])
+      inline def setSockPort(value: Double): Self = StObject.set(x, "sockPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockPortUndefined: Self = StObject.set(x, "sockPort", js.undefined)
+      inline def setSockPortUndefined: Self = StObject.set(x, "sockPort", js.undefined)
       
-      @scala.inline
-      def setUseLegacyWDSSockets(value: Boolean): Self = StObject.set(x, "useLegacyWDSSockets", value.asInstanceOf[js.Any])
+      inline def setUseLegacyWDSSockets(value: Boolean): Self = StObject.set(x, "useLegacyWDSSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLegacyWDSSocketsUndefined: Self = StObject.set(x, "useLegacyWDSSockets", js.undefined)
+      inline def setUseLegacyWDSSocketsUndefined: Self = StObject.set(x, "useLegacyWDSSockets", js.undefined)
     }
   }
   
@@ -208,8 +179,7 @@ object typesMod {
   }
   object NormalizedPluginOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exclude: String | RegExp | (js.Array[String | RegExp]),
       include: String | RegExp | (js.Array[String | RegExp]),
       overlay: `false` | NormalizedErrorOverlayOptions
@@ -218,29 +188,21 @@ object typesMod {
       __obj.asInstanceOf[NormalizedPluginOptions]
     }
     
-    @scala.inline
-    implicit class NormalizedPluginOptionsMutableBuilder[Self <: NormalizedPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedPluginOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setForceEnable(value: Boolean): Self = StObject.set(x, "forceEnable", value.asInstanceOf[js.Any])
+      inline def setForceEnable(value: Boolean): Self = StObject.set(x, "forceEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceEnableUndefined: Self = StObject.set(x, "forceEnable", js.undefined)
+      inline def setForceEnableUndefined: Self = StObject.set(x, "forceEnable", js.undefined)
       
-      @scala.inline
-      def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setOverlay(value: `false` | NormalizedErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: `false` | NormalizedErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,17 +215,14 @@ object typesMod {
   }
   object OverlayOverrides {
     
-    @scala.inline
-    def apply(overlay: `false` | NormalizedErrorOverlayOptions): OverlayOverrides = {
+    inline def apply(overlay: `false` | NormalizedErrorOverlayOptions): OverlayOverrides = {
       val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
       __obj.asInstanceOf[OverlayOverrides]
     }
     
-    @scala.inline
-    implicit class OverlayOverridesMutableBuilder[Self <: OverlayOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayOverrides](x: Self) {
       
-      @scala.inline
-      def setOverlay(value: `false` | NormalizedErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: `false` | NormalizedErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,50 +255,36 @@ object typesMod {
   }
   object ReactRefreshPluginOptions {
     
-    @scala.inline
-    def apply(): ReactRefreshPluginOptions = {
+    inline def apply(): ReactRefreshPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactRefreshPluginOptions]
     }
     
-    @scala.inline
-    implicit class ReactRefreshPluginOptionsMutableBuilder[Self <: ReactRefreshPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactRefreshPluginOptions](x: Self) {
       
-      @scala.inline
-      def setDisableRefreshCheck(value: Boolean): Self = StObject.set(x, "disableRefreshCheck", value.asInstanceOf[js.Any])
+      inline def setDisableRefreshCheck(value: Boolean): Self = StObject.set(x, "disableRefreshCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRefreshCheckUndefined: Self = StObject.set(x, "disableRefreshCheck", js.undefined)
+      inline def setDisableRefreshCheckUndefined: Self = StObject.set(x, "disableRefreshCheck", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setForceEnable(value: Boolean): Self = StObject.set(x, "forceEnable", value.asInstanceOf[js.Any])
+      inline def setForceEnable(value: Boolean): Self = StObject.set(x, "forceEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceEnableUndefined: Self = StObject.set(x, "forceEnable", js.undefined)
+      inline def setForceEnableUndefined: Self = StObject.set(x, "forceEnable", js.undefined)
       
-      @scala.inline
-      def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setOverlay(value: Boolean | ErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean | ErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     }
   }
 }

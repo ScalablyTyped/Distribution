@@ -18,30 +18,25 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def accountIdDefaultMiddleware(): InitializeMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("accountIdDefaultMiddleware")().asInstanceOf[InitializeMiddleware[js.Any, js.Any]]
+  inline def accountIdDefaultMiddleware(): InitializeMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("accountIdDefaultMiddleware")().asInstanceOf[InitializeMiddleware[js.Any, js.Any]]
   
   @JSImport("@aws-sdk/middleware-sdk-glacier", "accountIdDefaultMiddlewareOptions")
   @js.native
   val accountIdDefaultMiddlewareOptions: InitializeHandlerOptions = js.native
   
-  @scala.inline
-  def addChecksumHeadersMiddleware(options: ResolvedGlacierMiddlewareConfig): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addChecksumHeadersMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def addChecksumHeadersMiddleware(options: ResolvedGlacierMiddlewareConfig): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addChecksumHeadersMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
   @JSImport("@aws-sdk/middleware-sdk-glacier", "addChecksumHeadersMiddlewareOptions")
   @js.native
   val addChecksumHeadersMiddlewareOptions: BuildHandlerOptions = js.native
   
-  @scala.inline
-  def addGlacierApiVersionMiddleware(options: ResolvedGlacierMiddlewareConfig): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlacierApiVersionMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def addGlacierApiVersionMiddleware(options: ResolvedGlacierMiddlewareConfig): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlacierApiVersionMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
   @JSImport("@aws-sdk/middleware-sdk-glacier", "addGlacierApiVersionMiddlewareOptions")
   @js.native
   val addGlacierApiVersionMiddlewareOptions: BuildHandlerOptions = js.native
   
-  @scala.inline
-  def getGlacierPlugin(config: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlacierPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getGlacierPlugin(config: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlacierPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @scala.inline
-  def resolveGlacierMiddlewareConfig[T](input: T & PreviouslyResolved & GlacierMiddlewareInputConfig): T & ResolvedGlacierMiddlewareConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveGlacierMiddlewareConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & ResolvedGlacierMiddlewareConfig]
+  inline def resolveGlacierMiddlewareConfig[T](input: T & PreviouslyResolved & GlacierMiddlewareInputConfig): T & ResolvedGlacierMiddlewareConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveGlacierMiddlewareConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & ResolvedGlacierMiddlewareConfig]
 }

@@ -14,7 +14,7 @@ trait Border extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Border_typekey")
+  /* private */ @JSName("Excel.Border_typekey")
   var ExcelDotBorder_typekey: Border
   
   var LineStyle: typings.activexExcel.Excel.LineStyle
@@ -29,8 +29,7 @@ trait Border extends StObject {
 }
 object Border {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Color: XlRgbColor | Double,
     ColorIndex: Double | XlColorIndex,
@@ -47,37 +46,26 @@ object Border {
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: XlRgbColor | Double): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: XlRgbColor | Double): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: Double | XlColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: Double | XlColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotBorder_typekey(value: Border): Self = StObject.set(x, "Excel.Border_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotBorder_typekey(value: Border): Self = StObject.set(x, "Excel.Border_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: LineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: LineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
+    inline def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: XlBorderWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: XlBorderWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
   }
 }

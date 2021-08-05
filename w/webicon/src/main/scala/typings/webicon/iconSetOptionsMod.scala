@@ -49,48 +49,36 @@ object iconSetOptionsMod {
   }
   object IconSetOptions {
     
-    @scala.inline
-    def apply(): IconSetOptions = {
+    inline def apply(): IconSetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconSetOptions]
     }
     
-    @scala.inline
-    implicit class IconSetOptionsMutableBuilder[Self <: IconSetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IconSetOptions](x: Self) {
       
-      @scala.inline
-      def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+      inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+      inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
       
-      @scala.inline
-      def setSize(
+      inline def setSize(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
       ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSvgIconSize(
+      inline def setSvgIconSize(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
       ): Self = StObject.set(x, "svgIconSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgIconSizeUndefined: Self = StObject.set(x, "svgIconSize", js.undefined)
+      inline def setSvgIconSizeUndefined: Self = StObject.set(x, "svgIconSize", js.undefined)
       
-      @scala.inline
-      def setUri(value: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       
-      @scala.inline
-      def setUrl(value: UrlConfig[scala.Nothing]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: UrlConfig[scala.Nothing]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

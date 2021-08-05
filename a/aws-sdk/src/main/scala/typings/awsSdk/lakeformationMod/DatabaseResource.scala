@@ -18,22 +18,17 @@ trait DatabaseResource extends StObject {
 }
 object DatabaseResource {
   
-  @scala.inline
-  def apply(Name: NameString): DatabaseResource = {
+  inline def apply(Name: NameString): DatabaseResource = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseResource]
   }
   
-  @scala.inline
-  implicit class DatabaseResourceMutableBuilder[Self <: DatabaseResource] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseResource](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -15,23 +15,18 @@ trait SmartMappingSliderBaseMinChangeEvent extends StObject {
 }
 object SmartMappingSliderBaseMinChangeEvent {
   
-  @scala.inline
-  def apply(oldValue: Double, value: Double): SmartMappingSliderBaseMinChangeEvent = {
+  inline def apply(oldValue: Double, value: Double): SmartMappingSliderBaseMinChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("min-change")
     __obj.asInstanceOf[SmartMappingSliderBaseMinChangeEvent]
   }
   
-  @scala.inline
-  implicit class SmartMappingSliderBaseMinChangeEventMutableBuilder[Self <: SmartMappingSliderBaseMinChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SmartMappingSliderBaseMinChangeEvent](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

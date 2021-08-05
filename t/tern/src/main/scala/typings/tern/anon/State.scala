@@ -13,22 +13,17 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(node: typings.estree.mod.Node): State = {
+  inline def apply(node: typings.estree.mod.Node): State = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], state = null)
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setNode(value: typings.estree.mod.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.estree.mod.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Scope): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Scope): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
   }
 }

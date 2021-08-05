@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.WebService")
 @js.native
-class WebService protected ()
+/* private */ class WebService ()
   extends StObject
      with typings.activexAccess.Access.WebService {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.WebService_typekey")
   var AccessDotWebService_typekey: typings.activexAccess.Access.WebService = js.native
   

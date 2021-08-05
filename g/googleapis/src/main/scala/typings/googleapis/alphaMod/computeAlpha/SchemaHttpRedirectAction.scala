@@ -60,49 +60,35 @@ trait SchemaHttpRedirectAction extends StObject {
 }
 object SchemaHttpRedirectAction {
   
-  @scala.inline
-  def apply(): SchemaHttpRedirectAction = {
+  inline def apply(): SchemaHttpRedirectAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpRedirectAction]
   }
   
-  @scala.inline
-  implicit class SchemaHttpRedirectActionMutableBuilder[Self <: SchemaHttpRedirectAction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpRedirectAction](x: Self) {
     
-    @scala.inline
-    def setHostRedirect(value: String): Self = StObject.set(x, "hostRedirect", value.asInstanceOf[js.Any])
+    inline def setHostRedirect(value: String): Self = StObject.set(x, "hostRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostRedirectUndefined: Self = StObject.set(x, "hostRedirect", js.undefined)
+    inline def setHostRedirectUndefined: Self = StObject.set(x, "hostRedirect", js.undefined)
     
-    @scala.inline
-    def setHttpsRedirect(value: Boolean): Self = StObject.set(x, "httpsRedirect", value.asInstanceOf[js.Any])
+    inline def setHttpsRedirect(value: Boolean): Self = StObject.set(x, "httpsRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsRedirectUndefined: Self = StObject.set(x, "httpsRedirect", js.undefined)
+    inline def setHttpsRedirectUndefined: Self = StObject.set(x, "httpsRedirect", js.undefined)
     
-    @scala.inline
-    def setPathRedirect(value: String): Self = StObject.set(x, "pathRedirect", value.asInstanceOf[js.Any])
+    inline def setPathRedirect(value: String): Self = StObject.set(x, "pathRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathRedirectUndefined: Self = StObject.set(x, "pathRedirect", js.undefined)
+    inline def setPathRedirectUndefined: Self = StObject.set(x, "pathRedirect", js.undefined)
     
-    @scala.inline
-    def setPrefixRedirect(value: String): Self = StObject.set(x, "prefixRedirect", value.asInstanceOf[js.Any])
+    inline def setPrefixRedirect(value: String): Self = StObject.set(x, "prefixRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixRedirectUndefined: Self = StObject.set(x, "prefixRedirect", js.undefined)
+    inline def setPrefixRedirectUndefined: Self = StObject.set(x, "prefixRedirect", js.undefined)
     
-    @scala.inline
-    def setRedirectResponseCode(value: String): Self = StObject.set(x, "redirectResponseCode", value.asInstanceOf[js.Any])
+    inline def setRedirectResponseCode(value: String): Self = StObject.set(x, "redirectResponseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectResponseCodeUndefined: Self = StObject.set(x, "redirectResponseCode", js.undefined)
+    inline def setRedirectResponseCodeUndefined: Self = StObject.set(x, "redirectResponseCode", js.undefined)
     
-    @scala.inline
-    def setStripQuery(value: Boolean): Self = StObject.set(x, "stripQuery", value.asInstanceOf[js.Any])
+    inline def setStripQuery(value: Boolean): Self = StObject.set(x, "stripQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripQueryUndefined: Self = StObject.set(x, "stripQuery", js.undefined)
+    inline def setStripQueryUndefined: Self = StObject.set(x, "stripQuery", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait BatchAttachObjectResponse extends StObject {
 }
 object BatchAttachObjectResponse {
   
-  @scala.inline
-  def apply(): BatchAttachObjectResponse = {
+  inline def apply(): BatchAttachObjectResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchAttachObjectResponse]
   }
   
-  @scala.inline
-  implicit class BatchAttachObjectResponseMutableBuilder[Self <: BatchAttachObjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAttachObjectResponse](x: Self) {
     
-    @scala.inline
-    def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "attachedObjectIdentifier", value.asInstanceOf[js.Any])
+    inline def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "attachedObjectIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedObjectIdentifierUndefined: Self = StObject.set(x, "attachedObjectIdentifier", js.undefined)
+    inline def setAttachedObjectIdentifierUndefined: Self = StObject.set(x, "attachedObjectIdentifier", js.undefined)
   }
 }

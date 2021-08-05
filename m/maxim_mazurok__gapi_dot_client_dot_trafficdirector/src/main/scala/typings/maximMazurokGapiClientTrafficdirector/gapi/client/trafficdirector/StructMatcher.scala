@@ -14,28 +14,21 @@ trait StructMatcher extends StObject {
 }
 object StructMatcher {
   
-  @scala.inline
-  def apply(): StructMatcher = {
+  inline def apply(): StructMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructMatcher]
   }
   
-  @scala.inline
-  implicit class StructMatcherMutableBuilder[Self <: StructMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: StructMatcher](x: Self) {
     
-    @scala.inline
-    def setPath(value: js.Array[PathSegment]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[PathSegment]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPathVarargs(value: PathSegment*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: PathSegment*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: ValueMatcher): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ValueMatcher): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

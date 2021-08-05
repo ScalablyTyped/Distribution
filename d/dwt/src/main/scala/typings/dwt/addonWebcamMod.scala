@@ -24,20 +24,16 @@ object addonWebcamMod {
   }
   object CameraControlProperty {
     
-    @scala.inline
-    def apply(GetIfAuto: () => Boolean, GetValue: () => Double): CameraControlProperty = {
+    inline def apply(GetIfAuto: () => Boolean, GetValue: () => Double): CameraControlProperty = {
       val __obj = js.Dynamic.literal(GetIfAuto = js.Any.fromFunction0(GetIfAuto), GetValue = js.Any.fromFunction0(GetValue))
       __obj.asInstanceOf[CameraControlProperty]
     }
     
-    @scala.inline
-    implicit class CameraControlPropertyMutableBuilder[Self <: CameraControlProperty] (val x: Self) extends AnyVal {
+    extension [Self <: CameraControlProperty](x: Self) {
       
-      @scala.inline
-      def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
+      inline def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => Double): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Double): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -70,8 +66,7 @@ object addonWebcamMod {
   }
   object CameraControlPropertyExtra {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GetDefaultValue: () => Double,
       GetIfAuto: () => Boolean,
       GetMaxValue: () => Double,
@@ -82,23 +77,17 @@ object addonWebcamMod {
       __obj.asInstanceOf[CameraControlPropertyExtra]
     }
     
-    @scala.inline
-    implicit class CameraControlPropertyExtraMutableBuilder[Self <: CameraControlPropertyExtra] (val x: Self) extends AnyVal {
+    extension [Self <: CameraControlPropertyExtra](x: Self) {
       
-      @scala.inline
-      def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
+      inline def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
+      inline def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxValue(value: () => Double): Self = StObject.set(x, "GetMaxValue", js.Any.fromFunction0(value))
+      inline def setGetMaxValue(value: () => Double): Self = StObject.set(x, "GetMaxValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinValue(value: () => Double): Self = StObject.set(x, "GetMinValue", js.Any.fromFunction0(value))
+      inline def setGetMinValue(value: () => Double): Self = StObject.set(x, "GetMinValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSteppingDelta(value: () => Double): Self = StObject.set(x, "GetSteppingDelta", js.Any.fromFunction0(value))
+      inline def setGetSteppingDelta(value: () => Double): Self = StObject.set(x, "GetSteppingDelta", js.Any.fromFunction0(value))
     }
   }
   
@@ -121,23 +110,18 @@ object addonWebcamMod {
   }
   object FrameRate {
     
-    @scala.inline
-    def apply(Get: Double => Double, GetCount: () => Double, GetCurrent: () => Double): FrameRate = {
+    inline def apply(Get: Double => Double, GetCount: () => Double, GetCurrent: () => Double): FrameRate = {
       val __obj = js.Dynamic.literal(Get = js.Any.fromFunction1(Get), GetCount = js.Any.fromFunction0(GetCount), GetCurrent = js.Any.fromFunction0(GetCurrent))
       __obj.asInstanceOf[FrameRate]
     }
     
-    @scala.inline
-    implicit class FrameRateMutableBuilder[Self <: FrameRate] (val x: Self) extends AnyVal {
+    extension [Self <: FrameRate](x: Self) {
       
-      @scala.inline
-      def setGet(value: Double => Double): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
+      inline def setGet(value: Double => Double): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
+      inline def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrent(value: () => Double): Self = StObject.set(x, "GetCurrent", js.Any.fromFunction0(value))
+      inline def setGetCurrent(value: () => Double): Self = StObject.set(x, "GetCurrent", js.Any.fromFunction0(value))
     }
   }
   
@@ -165,26 +149,20 @@ object addonWebcamMod {
   }
   object MediaType {
     
-    @scala.inline
-    def apply(Get: Double => String, GetCount: () => Double, GetCurrent: () => String, _resultlist: js.Any): MediaType = {
+    inline def apply(Get: Double => String, GetCount: () => Double, GetCurrent: () => String, _resultlist: js.Any): MediaType = {
       val __obj = js.Dynamic.literal(Get = js.Any.fromFunction1(Get), GetCount = js.Any.fromFunction0(GetCount), GetCurrent = js.Any.fromFunction0(GetCurrent), _resultlist = _resultlist.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaType]
     }
     
-    @scala.inline
-    implicit class MediaTypeMutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
+    extension [Self <: MediaType](x: Self) {
       
-      @scala.inline
-      def setGet(value: Double => String): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
+      inline def setGet(value: Double => String): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
+      inline def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrent(value: () => String): Self = StObject.set(x, "GetCurrent", js.Any.fromFunction0(value))
+      inline def setGetCurrent(value: () => String): Self = StObject.set(x, "GetCurrent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_resultlist(value: js.Any): Self = StObject.set(x, "_resultlist", value.asInstanceOf[js.Any])
+      inline def set_resultlist(value: js.Any): Self = StObject.set(x, "_resultlist", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,23 +185,18 @@ object addonWebcamMod {
   }
   object Resolution {
     
-    @scala.inline
-    def apply(Get: Double => String, GetCount: () => Double, GetCurrent: () => String): Resolution = {
+    inline def apply(Get: Double => String, GetCount: () => Double, GetCurrent: () => String): Resolution = {
       val __obj = js.Dynamic.literal(Get = js.Any.fromFunction1(Get), GetCount = js.Any.fromFunction0(GetCount), GetCurrent = js.Any.fromFunction0(GetCurrent))
       __obj.asInstanceOf[Resolution]
     }
     
-    @scala.inline
-    implicit class ResolutionMutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
+    extension [Self <: Resolution](x: Self) {
       
-      @scala.inline
-      def setGet(value: Double => String): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
+      inline def setGet(value: Double => String): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
+      inline def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrent(value: () => String): Self = StObject.set(x, "GetCurrent", js.Any.fromFunction0(value))
+      inline def setGetCurrent(value: () => String): Self = StObject.set(x, "GetCurrent", js.Any.fromFunction0(value))
     }
   }
   
@@ -241,20 +214,16 @@ object addonWebcamMod {
   }
   object VideoControlProperty {
     
-    @scala.inline
-    def apply(GetIfAuto: () => Boolean, GetValue: () => Double): VideoControlProperty = {
+    inline def apply(GetIfAuto: () => Boolean, GetValue: () => Double): VideoControlProperty = {
       val __obj = js.Dynamic.literal(GetIfAuto = js.Any.fromFunction0(GetIfAuto), GetValue = js.Any.fromFunction0(GetValue))
       __obj.asInstanceOf[VideoControlProperty]
     }
     
-    @scala.inline
-    implicit class VideoControlPropertyMutableBuilder[Self <: VideoControlProperty] (val x: Self) extends AnyVal {
+    extension [Self <: VideoControlProperty](x: Self) {
       
-      @scala.inline
-      def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
+      inline def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => Double): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Double): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -287,8 +256,7 @@ object addonWebcamMod {
   }
   object VideoControlPropertyExtra {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GetDefaultValue: () => Double,
       GetIfAuto: () => Boolean,
       GetMaxValue: () => Double,
@@ -299,23 +267,17 @@ object addonWebcamMod {
       __obj.asInstanceOf[VideoControlPropertyExtra]
     }
     
-    @scala.inline
-    implicit class VideoControlPropertyExtraMutableBuilder[Self <: VideoControlPropertyExtra] (val x: Self) extends AnyVal {
+    extension [Self <: VideoControlPropertyExtra](x: Self) {
       
-      @scala.inline
-      def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
+      inline def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
+      inline def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxValue(value: () => Double): Self = StObject.set(x, "GetMaxValue", js.Any.fromFunction0(value))
+      inline def setGetMaxValue(value: () => Double): Self = StObject.set(x, "GetMaxValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinValue(value: () => Double): Self = StObject.set(x, "GetMinValue", js.Any.fromFunction0(value))
+      inline def setGetMinValue(value: () => Double): Self = StObject.set(x, "GetMinValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSteppingDelta(value: () => Double): Self = StObject.set(x, "GetSteppingDelta", js.Any.fromFunction0(value))
+      inline def setGetSteppingDelta(value: () => Double): Self = StObject.set(x, "GetSteppingDelta", js.Any.fromFunction0(value))
     }
   }
   

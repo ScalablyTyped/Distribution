@@ -24,8 +24,7 @@ trait Amazon extends StObject {
 }
 object Amazon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amazon: Phone,
     android: Phone,
     any: js.Any,
@@ -39,31 +38,22 @@ object Amazon {
     __obj.asInstanceOf[Amazon]
   }
   
-  @scala.inline
-  implicit class AmazonMutableBuilder[Self <: Amazon] (val x: Self) extends AnyVal {
+  extension [Self <: Amazon](x: Self) {
     
-    @scala.inline
-    def setAmazon(value: Phone): Self = StObject.set(x, "amazon", value.asInstanceOf[js.Any])
+    inline def setAmazon(value: Phone): Self = StObject.set(x, "amazon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroid(value: Phone): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: Phone): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAny(value: js.Any): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    inline def setAny(value: js.Any): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApple(value: Device): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
+    inline def setApple(value: Device): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: Blackberry): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: Blackberry): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: js.Any): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: js.Any): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablet(value: js.Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: js.Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindows(value: Phone): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: Phone): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
   }
 }

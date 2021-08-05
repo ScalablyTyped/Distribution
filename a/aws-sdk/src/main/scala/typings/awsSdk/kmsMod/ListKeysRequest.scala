@@ -18,25 +18,19 @@ trait ListKeysRequest extends StObject {
 }
 object ListKeysRequest {
   
-  @scala.inline
-  def apply(): ListKeysRequest = {
+  inline def apply(): ListKeysRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListKeysRequest]
   }
   
-  @scala.inline
-  implicit class ListKeysRequestMutableBuilder[Self <: ListKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListKeysRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

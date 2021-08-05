@@ -13,19 +13,15 @@ trait CancelWorkflowExecutionDecisionAttributes extends StObject {
 }
 object CancelWorkflowExecutionDecisionAttributes {
   
-  @scala.inline
-  def apply(): CancelWorkflowExecutionDecisionAttributes = {
+  inline def apply(): CancelWorkflowExecutionDecisionAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelWorkflowExecutionDecisionAttributes]
   }
   
-  @scala.inline
-  implicit class CancelWorkflowExecutionDecisionAttributesMutableBuilder[Self <: CancelWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: CancelWorkflowExecutionDecisionAttributes](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

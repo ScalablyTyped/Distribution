@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLImgElement")
 @js.native
-class IHTMLImgElement protected ()
+/* private */ class IHTMLImgElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLImgElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLImgElement_typekey")
   var MSHTMLDotIHTMLImgElement_typekey: typings.activexMshtml.MSHTML.IHTMLImgElement = js.native
   

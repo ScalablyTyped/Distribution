@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IMapObjectCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: js.Object => IMapObjectCollection,
     events: IEventManager[js.Object],
     getIterator: () => IIterator,
@@ -28,10 +27,8 @@ object IMapObjectCollection {
     __obj.asInstanceOf[IMapObjectCollection]
   }
   
-  @scala.inline
-  implicit class IMapObjectCollectionMutableBuilder[Self <: IMapObjectCollection] (val x: Self) extends AnyVal {
+  extension [Self <: IMapObjectCollection](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

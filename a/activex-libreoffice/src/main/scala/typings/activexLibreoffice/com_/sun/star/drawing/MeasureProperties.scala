@@ -66,8 +66,7 @@ trait MeasureProperties extends StObject {
 }
 object MeasureProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MeasureBelowReferenceEdge: Boolean,
     MeasureDecimalPlaces: Double,
     MeasureHelpLine1Length: Double,
@@ -91,61 +90,42 @@ object MeasureProperties {
     __obj.asInstanceOf[MeasureProperties]
   }
   
-  @scala.inline
-  implicit class MeasurePropertiesMutableBuilder[Self <: MeasureProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeasureProperties](x: Self) {
     
-    @scala.inline
-    def setMeasureBelowReferenceEdge(value: Boolean): Self = StObject.set(x, "MeasureBelowReferenceEdge", value.asInstanceOf[js.Any])
+    inline def setMeasureBelowReferenceEdge(value: Boolean): Self = StObject.set(x, "MeasureBelowReferenceEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureDecimalPlaces(value: Double): Self = StObject.set(x, "MeasureDecimalPlaces", value.asInstanceOf[js.Any])
+    inline def setMeasureDecimalPlaces(value: Double): Self = StObject.set(x, "MeasureDecimalPlaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureHelpLine1Length(value: Double): Self = StObject.set(x, "MeasureHelpLine1Length", value.asInstanceOf[js.Any])
+    inline def setMeasureHelpLine1Length(value: Double): Self = StObject.set(x, "MeasureHelpLine1Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureHelpLine2Length(value: Double): Self = StObject.set(x, "MeasureHelpLine2Length", value.asInstanceOf[js.Any])
+    inline def setMeasureHelpLine2Length(value: Double): Self = StObject.set(x, "MeasureHelpLine2Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureHelpLineDistance(value: Double): Self = StObject.set(x, "MeasureHelpLineDistance", value.asInstanceOf[js.Any])
+    inline def setMeasureHelpLineDistance(value: Double): Self = StObject.set(x, "MeasureHelpLineDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureHelpLineOverhang(value: Double): Self = StObject.set(x, "MeasureHelpLineOverhang", value.asInstanceOf[js.Any])
+    inline def setMeasureHelpLineOverhang(value: Double): Self = StObject.set(x, "MeasureHelpLineOverhang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureKind(value: MeasureKind): Self = StObject.set(x, "MeasureKind", value.asInstanceOf[js.Any])
+    inline def setMeasureKind(value: MeasureKind): Self = StObject.set(x, "MeasureKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureLineDistance(value: Double): Self = StObject.set(x, "MeasureLineDistance", value.asInstanceOf[js.Any])
+    inline def setMeasureLineDistance(value: Double): Self = StObject.set(x, "MeasureLineDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureOverhang(value: Double): Self = StObject.set(x, "MeasureOverhang", value.asInstanceOf[js.Any])
+    inline def setMeasureOverhang(value: Double): Self = StObject.set(x, "MeasureOverhang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureShowUnit(value: Boolean): Self = StObject.set(x, "MeasureShowUnit", value.asInstanceOf[js.Any])
+    inline def setMeasureShowUnit(value: Boolean): Self = StObject.set(x, "MeasureShowUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextAutoAngle(value: Boolean): Self = StObject.set(x, "MeasureTextAutoAngle", value.asInstanceOf[js.Any])
+    inline def setMeasureTextAutoAngle(value: Boolean): Self = StObject.set(x, "MeasureTextAutoAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextAutoAngleView(value: Double): Self = StObject.set(x, "MeasureTextAutoAngleView", value.asInstanceOf[js.Any])
+    inline def setMeasureTextAutoAngleView(value: Double): Self = StObject.set(x, "MeasureTextAutoAngleView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextFixedAngle(value: Double): Self = StObject.set(x, "MeasureTextFixedAngle", value.asInstanceOf[js.Any])
+    inline def setMeasureTextFixedAngle(value: Double): Self = StObject.set(x, "MeasureTextFixedAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextHorizontalPosition(value: MeasureTextHorzPos): Self = StObject.set(x, "MeasureTextHorizontalPosition", value.asInstanceOf[js.Any])
+    inline def setMeasureTextHorizontalPosition(value: MeasureTextHorzPos): Self = StObject.set(x, "MeasureTextHorizontalPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextIsFixedAngle(value: Boolean): Self = StObject.set(x, "MeasureTextIsFixedAngle", value.asInstanceOf[js.Any])
+    inline def setMeasureTextIsFixedAngle(value: Boolean): Self = StObject.set(x, "MeasureTextIsFixedAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextRotate90(value: Boolean): Self = StObject.set(x, "MeasureTextRotate90", value.asInstanceOf[js.Any])
+    inline def setMeasureTextRotate90(value: Boolean): Self = StObject.set(x, "MeasureTextRotate90", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextUpsideDown(value: Boolean): Self = StObject.set(x, "MeasureTextUpsideDown", value.asInstanceOf[js.Any])
+    inline def setMeasureTextUpsideDown(value: Boolean): Self = StObject.set(x, "MeasureTextUpsideDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureTextVerticalPosition(value: MeasureTextVertPos): Self = StObject.set(x, "MeasureTextVerticalPosition", value.asInstanceOf[js.Any])
+    inline def setMeasureTextVerticalPosition(value: MeasureTextVertPos): Self = StObject.set(x, "MeasureTextVerticalPosition", value.asInstanceOf[js.Any])
   }
 }

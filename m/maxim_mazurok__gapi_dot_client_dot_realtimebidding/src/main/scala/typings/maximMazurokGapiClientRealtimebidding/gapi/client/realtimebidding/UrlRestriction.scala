@@ -20,37 +20,27 @@ trait UrlRestriction extends StObject {
 }
 object UrlRestriction {
   
-  @scala.inline
-  def apply(): UrlRestriction = {
+  inline def apply(): UrlRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlRestriction]
   }
   
-  @scala.inline
-  implicit class UrlRestrictionMutableBuilder[Self <: UrlRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: UrlRestriction](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
+    inline def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionTypeUndefined: Self = StObject.set(x, "restrictionType", js.undefined)
+    inline def setRestrictionTypeUndefined: Self = StObject.set(x, "restrictionType", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

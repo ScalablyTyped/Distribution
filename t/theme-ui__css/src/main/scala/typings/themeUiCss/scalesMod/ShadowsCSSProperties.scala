@@ -12,25 +12,19 @@ trait ShadowsCSSProperties extends StObject {
 }
 object ShadowsCSSProperties {
   
-  @scala.inline
-  def apply(): ShadowsCSSProperties = {
+  inline def apply(): ShadowsCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowsCSSProperties]
   }
   
-  @scala.inline
-  implicit class ShadowsCSSPropertiesMutableBuilder[Self <: ShadowsCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ShadowsCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBoxShadow(value: Shadows): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+    inline def setBoxShadow(value: Shadows): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+    inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
-    @scala.inline
-    def setTextShadow(value: Shadows): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
+    inline def setTextShadow(value: Shadows): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
+    inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
   }
 }

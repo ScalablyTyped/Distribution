@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisplayCaptureSurfaceType extends StObject
 object DisplayCaptureSurfaceType {
   
-  @scala.inline
-  def application: typings.std.stdStrings.application = "application".asInstanceOf[typings.std.stdStrings.application]
+  inline def application: typings.std.stdStrings.application = "application".asInstanceOf[typings.std.stdStrings.application]
   
-  @scala.inline
-  def browser: typings.std.stdStrings.browser = "browser".asInstanceOf[typings.std.stdStrings.browser]
+  inline def browser: typings.std.stdStrings.browser = "browser".asInstanceOf[typings.std.stdStrings.browser]
   
-  @scala.inline
-  def monitor: typings.std.stdStrings.monitor = "monitor".asInstanceOf[typings.std.stdStrings.monitor]
+  inline def monitor: typings.std.stdStrings.monitor = "monitor".asInstanceOf[typings.std.stdStrings.monitor]
   
-  @scala.inline
-  def window: typings.std.stdStrings.window = "window".asInstanceOf[typings.std.stdStrings.window]
+  inline def window: typings.std.stdStrings.window = "window".asInstanceOf[typings.std.stdStrings.window]
 }

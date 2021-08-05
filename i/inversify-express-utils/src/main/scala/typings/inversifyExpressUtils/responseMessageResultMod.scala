@@ -16,13 +16,13 @@ object responseMessageResultMod {
        with ResponseMessageResult {
     def this(message: HttpResponseMessage, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
     override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var message: js.Any = js.native
   }
   
@@ -30,26 +30,22 @@ object responseMessageResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
-    var message: js.Any
+    /* private */ var message: js.Any
   }
   object ResponseMessageResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], message: js.Any): ResponseMessageResult = {
+    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], message: js.Any): ResponseMessageResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync), message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseMessageResult]
     }
     
-    @scala.inline
-    implicit class ResponseMessageResultMutableBuilder[Self <: ResponseMessageResult] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseMessageResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

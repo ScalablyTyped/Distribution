@@ -15,19 +15,15 @@ trait TypeofPrompt extends StObject {
 }
 object TypeofPrompt {
   
-  @scala.inline
-  def apply(extend: js.Object => Prompt, fn: Prompt): TypeofPrompt = {
+  inline def apply(extend: js.Object => Prompt, fn: Prompt): TypeofPrompt = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPrompt]
   }
   
-  @scala.inline
-  implicit class TypeofPromptMutableBuilder[Self <: TypeofPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPrompt](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Prompt): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Prompt): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Prompt): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Prompt): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

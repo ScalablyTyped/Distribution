@@ -49,15 +49,15 @@ object unitMod {
     
     def hasProjection: Boolean = js.native
     
-    var initAxes: js.Any = js.native
+    /* private */ var initAxes: js.Any = js.native
     
-    var initAxis: js.Any = js.native
+    /* private */ var initAxis: js.Any = js.native
     
-    var initLegends: js.Any = js.native
+    /* private */ var initLegends: js.Any = js.native
     
-    var initScale: js.Any = js.native
+    /* private */ var initScale: js.Any = js.native
     
-    var initScales: js.Any = js.native
+    /* private */ var initScales: js.Any = js.native
     
     def legend(channel: NonPositionScaleChannel): LegendInternal = js.native
     
@@ -73,9 +73,9 @@ object unitMod {
     
     val selection: Dict[SelectionDef] = js.native
     
-    var specifiedAxes: AxisInternalIndex = js.native
+    /* protected */ var specifiedAxes: AxisInternalIndex = js.native
     
-    var specifiedLegends: LegendInternalIndex = js.native
+    /* protected */ var specifiedLegends: LegendInternalIndex = js.native
     
     var specifiedProjection: Projection = js.native
     

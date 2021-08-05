@@ -23,22 +23,17 @@ trait PivotManualFilter extends StObject {
 }
 object PivotManualFilter {
   
-  @scala.inline
-  def apply(): PivotManualFilter = {
+  inline def apply(): PivotManualFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotManualFilter]
   }
   
-  @scala.inline
-  implicit class PivotManualFilterMutableBuilder[Self <: PivotManualFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PivotManualFilter](x: Self) {
     
-    @scala.inline
-    def setSelectedItems(value: js.Array[String | PivotItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[String | PivotItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+    inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    @scala.inline
-    def setSelectedItemsVarargs(value: (String | PivotItem)*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: (String | PivotItem)*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

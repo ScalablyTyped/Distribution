@@ -20,9 +20,9 @@ object excC14nMod {
     def InclusiveNamespacesPrefixList: String = js.native
     def InclusiveNamespacesPrefixList_=(value: String): Unit = js.native
     
-    var setInclusiveNamespacesElement: js.Any = js.native
+    /* private */ var setInclusiveNamespacesElement: js.Any = js.native
     
-    var xmlCanonicalizer: XmlCanonicalizer = js.native
+    /* protected */ var xmlCanonicalizer: XmlCanonicalizer = js.native
   }
   
   @JSImport("xmldsigjs/build/types/xml/transforms/exc_c14n", "XmlDsigExcC14NWithCommentsTransform")

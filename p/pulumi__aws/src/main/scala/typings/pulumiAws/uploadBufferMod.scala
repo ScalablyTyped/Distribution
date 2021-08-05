@@ -50,21 +50,16 @@ object uploadBufferMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UploadBufferState): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UploadBufferState, opts: CustomResourceOptions): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
+    inline def get(name: String, id: Input[ID]): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
+    inline def get(name: String, id: Input[ID], state: UploadBufferState): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
+    inline def get(name: String, id: Input[ID], state: UploadBufferState, opts: CustomResourceOptions): UploadBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UploadBuffer]
     
     /**
       * Returns true if the given object is an instance of UploadBuffer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ Boolean]
   }
   
   trait UploadBufferArgs extends StObject {
@@ -81,20 +76,16 @@ object uploadBufferMod {
   }
   object UploadBufferArgs {
     
-    @scala.inline
-    def apply(diskId: Input[String], gatewayArn: Input[String]): UploadBufferArgs = {
+    inline def apply(diskId: Input[String], gatewayArn: Input[String]): UploadBufferArgs = {
       val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadBufferArgs]
     }
     
-    @scala.inline
-    implicit class UploadBufferArgsMutableBuilder[Self <: UploadBufferArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UploadBufferArgs](x: Self) {
       
-      @scala.inline
-      def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
+      inline def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object uploadBufferMod {
   }
   object UploadBufferState {
     
-    @scala.inline
-    def apply(): UploadBufferState = {
+    inline def apply(): UploadBufferState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UploadBufferState]
     }
     
-    @scala.inline
-    implicit class UploadBufferStateMutableBuilder[Self <: UploadBufferState] (val x: Self) extends AnyVal {
+    extension [Self <: UploadBufferState](x: Self) {
       
-      @scala.inline
-      def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
+      inline def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskIdUndefined: Self = StObject.set(x, "diskId", js.undefined)
+      inline def setDiskIdUndefined: Self = StObject.set(x, "diskId", js.undefined)
       
-      @scala.inline
-      def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayArnUndefined: Self = StObject.set(x, "gatewayArn", js.undefined)
+      inline def setGatewayArnUndefined: Self = StObject.set(x, "gatewayArn", js.undefined)
     }
   }
 }

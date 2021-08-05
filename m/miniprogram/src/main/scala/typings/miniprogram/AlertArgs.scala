@@ -25,31 +25,23 @@ trait AlertArgs
 }
 object AlertArgs {
   
-  @scala.inline
-  def apply(): AlertArgs = {
+  inline def apply(): AlertArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlertArgs]
   }
   
-  @scala.inline
-  implicit class AlertArgsMutableBuilder[Self <: AlertArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AlertArgs](x: Self) {
     
-    @scala.inline
-    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+    inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+    inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

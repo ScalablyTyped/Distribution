@@ -52,8 +52,7 @@ object reactiveDictMod {
     def this(name: Unit, initialValue: EJSONable) = this()
   }
   
-  @scala.inline
-  def ReactiveDict_=(x: typings.meteor.reactiveDictMod.ReactiveDictStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactiveDict")(x.asInstanceOf[js.Any])
+  inline def ReactiveDict_=(x: typings.meteor.reactiveDictMod.ReactiveDictStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactiveDict")(x.asInstanceOf[js.Any])
   
   @js.native
   trait ReactiveDictStatic

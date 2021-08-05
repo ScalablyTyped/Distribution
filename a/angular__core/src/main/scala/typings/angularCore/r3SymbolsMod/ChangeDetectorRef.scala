@@ -109,8 +109,7 @@ trait ChangeDetectorRef extends StObject {
 }
 object ChangeDetectorRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkNoChanges: () => Unit,
     detach: () => Unit,
     detectChanges: () => Unit,
@@ -121,22 +120,16 @@ object ChangeDetectorRef {
     __obj.asInstanceOf[ChangeDetectorRef]
   }
   
-  @scala.inline
-  implicit class ChangeDetectorRefMutableBuilder[Self <: ChangeDetectorRef] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeDetectorRef](x: Self) {
     
-    @scala.inline
-    def setCheckNoChanges(value: () => Unit): Self = StObject.set(x, "checkNoChanges", js.Any.fromFunction0(value))
+    inline def setCheckNoChanges(value: () => Unit): Self = StObject.set(x, "checkNoChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+    inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetectChanges(value: () => Unit): Self = StObject.set(x, "detectChanges", js.Any.fromFunction0(value))
+    inline def setDetectChanges(value: () => Unit): Self = StObject.set(x, "detectChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkForCheck(value: () => Unit): Self = StObject.set(x, "markForCheck", js.Any.fromFunction0(value))
+    inline def setMarkForCheck(value: () => Unit): Self = StObject.set(x, "markForCheck", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReattach(value: () => Unit): Self = StObject.set(x, "reattach", js.Any.fromFunction0(value))
+    inline def setReattach(value: () => Unit): Self = StObject.set(x, "reattach", js.Any.fromFunction0(value))
   }
 }

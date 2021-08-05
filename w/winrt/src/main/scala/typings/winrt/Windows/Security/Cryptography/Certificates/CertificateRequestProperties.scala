@@ -9,8 +9,7 @@ trait CertificateRequestProperties
      with ICertificateRequestProperties
 object CertificateRequestProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exportable: ExportOption,
     friendlyName: String,
     hashAlgorithmName: String,

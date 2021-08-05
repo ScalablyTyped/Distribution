@@ -23,37 +23,27 @@ trait TargetInstances extends StObject {
 }
 object TargetInstances {
   
-  @scala.inline
-  def apply(): TargetInstances = {
+  inline def apply(): TargetInstances = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetInstances]
   }
   
-  @scala.inline
-  implicit class TargetInstancesMutableBuilder[Self <: TargetInstances] (val x: Self) extends AnyVal {
+  extension [Self <: TargetInstances](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroups(value: AutoScalingGroupNameList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroups(value: AutoScalingGroupNameList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
+    inline def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setEc2TagSet(value: EC2TagSet): Self = StObject.set(x, "ec2TagSet", value.asInstanceOf[js.Any])
+    inline def setEc2TagSet(value: EC2TagSet): Self = StObject.set(x, "ec2TagSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2TagSetUndefined: Self = StObject.set(x, "ec2TagSet", js.undefined)
+    inline def setEc2TagSetUndefined: Self = StObject.set(x, "ec2TagSet", js.undefined)
     
-    @scala.inline
-    def setTagFilters(value: EC2TagFilterList): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
+    inline def setTagFilters(value: EC2TagFilterList): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
+    inline def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
-    @scala.inline
-    def setTagFiltersVarargs(value: EC2TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: EC2TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
   }
 }

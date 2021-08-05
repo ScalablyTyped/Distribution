@@ -9,46 +9,39 @@ object pusherJsStrings {
   
   @js.native
   sealed trait ajax extends StObject
-  @scala.inline
-  def ajax: ajax = "ajax".asInstanceOf[ajax]
+  inline def ajax: ajax = "ajax".asInstanceOf[ajax]
   
   @js.native
   sealed trait jsonp extends StObject
-  @scala.inline
-  def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
+  inline def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   
   @js.native
   sealed trait sockjs
     extends StObject
        with Transport
-  @scala.inline
-  def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
+  inline def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
   
   @js.native
   sealed trait ws
     extends StObject
        with Transport
-  @scala.inline
-  def ws: ws = "ws".asInstanceOf[ws]
+  inline def ws: ws = "ws".asInstanceOf[ws]
   
   @js.native
   sealed trait wss
     extends StObject
        with Transport
-  @scala.inline
-  def wss: wss = "wss".asInstanceOf[wss]
+  inline def wss: wss = "wss".asInstanceOf[wss]
   
   @js.native
   sealed trait xhr_polling
     extends StObject
        with Transport
-  @scala.inline
-  def xhr_polling: xhr_polling = "xhr_polling".asInstanceOf[xhr_polling]
+  inline def xhr_polling: xhr_polling = "xhr_polling".asInstanceOf[xhr_polling]
   
   @js.native
   sealed trait xhr_streaming
     extends StObject
        with Transport
-  @scala.inline
-  def xhr_streaming: xhr_streaming = "xhr_streaming".asInstanceOf[xhr_streaming]
+  inline def xhr_streaming: xhr_streaming = "xhr_streaming".asInstanceOf[xhr_streaming]
 }

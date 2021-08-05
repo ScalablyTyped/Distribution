@@ -11,23 +11,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def callbackify(originalMethod: CallbackMethod): CallbackMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[CallbackMethod]
+  inline def callbackify(originalMethod: CallbackMethod): CallbackMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[CallbackMethod]
   
-  @scala.inline
-  def callbackifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def callbackifyAll(Class: js.Function, options: CallbackifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def callbackifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def callbackifyAll(Class: js.Function, options: CallbackifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def promisify(originalMethod: PromiseMethod): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def promisify(originalMethod: PromiseMethod, options: PromisifyOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def promisify(originalMethod: PromiseMethod): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def promisify(originalMethod: PromiseMethod, options: PromisifyOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def promisifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def promisifyAll(Class: js.Function, options: PromisifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def promisifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def promisifyAll(Class: js.Function, options: PromisifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait CallbackMethod
@@ -45,23 +38,18 @@ object mod {
   }
   object CallbackifyAllOptions {
     
-    @scala.inline
-    def apply(): CallbackifyAllOptions = {
+    inline def apply(): CallbackifyAllOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallbackifyAllOptions]
     }
     
-    @scala.inline
-    implicit class CallbackifyAllOptionsMutableBuilder[Self <: CallbackifyAllOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackifyAllOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     }
   }
   
@@ -83,23 +71,18 @@ object mod {
   }
   object PromisifyAllOptions {
     
-    @scala.inline
-    def apply(): PromisifyAllOptions = {
+    inline def apply(): PromisifyAllOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromisifyAllOptions]
     }
     
-    @scala.inline
-    implicit class PromisifyAllOptionsMutableBuilder[Self <: PromisifyAllOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PromisifyAllOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     }
   }
   
@@ -112,20 +95,16 @@ object mod {
   }
   object PromisifyOptions {
     
-    @scala.inline
-    def apply(): PromisifyOptions = {
+    inline def apply(): PromisifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromisifyOptions]
     }
     
-    @scala.inline
-    implicit class PromisifyOptionsMutableBuilder[Self <: PromisifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PromisifyOptions](x: Self) {
       
-      @scala.inline
-      def setSingular(value: Boolean): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+      inline def setSingular(value: Boolean): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
+      inline def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
     }
   }
   
@@ -135,20 +114,16 @@ object mod {
   }
   object WithPromise {
     
-    @scala.inline
-    def apply(): WithPromise = {
+    inline def apply(): WithPromise = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithPromise]
     }
     
-    @scala.inline
-    implicit class WithPromiseMutableBuilder[Self <: WithPromise] (val x: Self) extends AnyVal {
+    extension [Self <: WithPromise](x: Self) {
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
     }
   }
 }

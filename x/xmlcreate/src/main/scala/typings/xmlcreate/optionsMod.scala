@@ -54,38 +54,28 @@ object optionsMod {
   }
   object IStringOptions {
     
-    @scala.inline
-    def apply(): IStringOptions = {
+    inline def apply(): IStringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStringOptions]
     }
     
-    @scala.inline
-    implicit class IStringOptionsMutableBuilder[Self <: IStringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IStringOptions](x: Self) {
       
-      @scala.inline
-      def setDoubleQuotes(value: Boolean): Self = StObject.set(x, "doubleQuotes", value.asInstanceOf[js.Any])
+      inline def setDoubleQuotes(value: Boolean): Self = StObject.set(x, "doubleQuotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleQuotesUndefined: Self = StObject.set(x, "doubleQuotes", js.undefined)
+      inline def setDoubleQuotesUndefined: Self = StObject.set(x, "doubleQuotes", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
+      inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
+      inline def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
       
-      @scala.inline
-      def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+      inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+      inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     }
   }
 }

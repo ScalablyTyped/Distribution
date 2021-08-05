@@ -33,46 +33,33 @@ trait CreateBuildInput extends StObject {
 }
 object CreateBuildInput {
   
-  @scala.inline
-  def apply(): CreateBuildInput = {
+  inline def apply(): CreateBuildInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBuildInput]
   }
   
-  @scala.inline
-  implicit class CreateBuildInputMutableBuilder[Self <: CreateBuildInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBuildInput](x: Self) {
     
-    @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
-    @scala.inline
-    def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
+    inline def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageLocationUndefined: Self = StObject.set(x, "StorageLocation", js.undefined)
+    inline def setStorageLocationUndefined: Self = StObject.set(x, "StorageLocation", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: NonZeroAndMaxString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NonZeroAndMaxString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

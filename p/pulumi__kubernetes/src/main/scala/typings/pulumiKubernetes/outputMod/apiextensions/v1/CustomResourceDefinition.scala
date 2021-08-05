@@ -35,28 +35,21 @@ trait CustomResourceDefinition extends StObject {
 }
 object CustomResourceDefinition {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: CustomResourceDefinitionSpec, status: CustomResourceDefinitionStatus): CustomResourceDefinition = {
+  inline def apply(metadata: ObjectMeta, spec: CustomResourceDefinitionSpec, status: CustomResourceDefinitionStatus): CustomResourceDefinition = {
     val __obj = js.Dynamic.literal(apiVersion = "apiextensions.k8s.io/v1", kind = "CustomResourceDefinition", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceDefinition]
   }
   
-  @scala.inline
-  implicit class CustomResourceDefinitionMutableBuilder[Self <: CustomResourceDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceDefinition](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: apiextensionsDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: apiextensionsDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.CustomResourceDefinition): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.CustomResourceDefinition): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: CustomResourceDefinitionSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: CustomResourceDefinitionSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: CustomResourceDefinitionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CustomResourceDefinitionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

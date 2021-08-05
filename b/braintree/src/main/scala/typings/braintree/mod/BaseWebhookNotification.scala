@@ -13,19 +13,15 @@ trait BaseWebhookNotification extends StObject {
 }
 object BaseWebhookNotification {
   
-  @scala.inline
-  def apply(kind: WebhookNotificationKind, timestamp: Date): BaseWebhookNotification = {
+  inline def apply(kind: WebhookNotificationKind, timestamp: Date): BaseWebhookNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseWebhookNotification]
   }
   
-  @scala.inline
-  implicit class BaseWebhookNotificationMutableBuilder[Self <: BaseWebhookNotification] (val x: Self) extends AnyVal {
+  extension [Self <: BaseWebhookNotification](x: Self) {
     
-    @scala.inline
-    def setKind(value: WebhookNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WebhookNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

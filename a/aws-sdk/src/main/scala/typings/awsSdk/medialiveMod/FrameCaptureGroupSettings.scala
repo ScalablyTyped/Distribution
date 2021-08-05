@@ -13,16 +13,13 @@ trait FrameCaptureGroupSettings extends StObject {
 }
 object FrameCaptureGroupSettings {
   
-  @scala.inline
-  def apply(Destination: OutputLocationRef): FrameCaptureGroupSettings = {
+  inline def apply(Destination: OutputLocationRef): FrameCaptureGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameCaptureGroupSettings]
   }
   
-  @scala.inline
-  implicit class FrameCaptureGroupSettingsMutableBuilder[Self <: FrameCaptureGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FrameCaptureGroupSettings](x: Self) {
     
-    @scala.inline
-    def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
   }
 }

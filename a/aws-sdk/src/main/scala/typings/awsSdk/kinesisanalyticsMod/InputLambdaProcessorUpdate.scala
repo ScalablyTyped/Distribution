@@ -18,25 +18,19 @@ trait InputLambdaProcessorUpdate extends StObject {
 }
 object InputLambdaProcessorUpdate {
   
-  @scala.inline
-  def apply(): InputLambdaProcessorUpdate = {
+  inline def apply(): InputLambdaProcessorUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputLambdaProcessorUpdate]
   }
   
-  @scala.inline
-  implicit class InputLambdaProcessorUpdateMutableBuilder[Self <: InputLambdaProcessorUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: InputLambdaProcessorUpdate](x: Self) {
     
-    @scala.inline
-    def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
+    inline def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUpdateUndefined: Self = StObject.set(x, "ResourceARNUpdate", js.undefined)
+    inline def setResourceARNUpdateUndefined: Self = StObject.set(x, "ResourceARNUpdate", js.undefined)
     
-    @scala.inline
-    def setRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "RoleARNUpdate", value.asInstanceOf[js.Any])
+    inline def setRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "RoleARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUpdateUndefined: Self = StObject.set(x, "RoleARNUpdate", js.undefined)
+    inline def setRoleARNUpdateUndefined: Self = StObject.set(x, "RoleARNUpdate", js.undefined)
   }
 }

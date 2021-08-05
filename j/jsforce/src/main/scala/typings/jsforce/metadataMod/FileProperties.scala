@@ -32,8 +32,7 @@ trait FileProperties extends StObject {
 }
 object FileProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdById: String,
     createdByName: String,
     createdDate: String,
@@ -50,49 +49,34 @@ object FileProperties {
     __obj.asInstanceOf[FileProperties]
   }
   
-  @scala.inline
-  implicit class FilePropertiesMutableBuilder[Self <: FileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FileProperties](x: Self) {
     
-    @scala.inline
-    def setCreatedById(value: String): Self = StObject.set(x, "createdById", value.asInstanceOf[js.Any])
+    inline def setCreatedById(value: String): Self = StObject.set(x, "createdById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByName(value: String): Self = StObject.set(x, "createdByName", value.asInstanceOf[js.Any])
+    inline def setCreatedByName(value: String): Self = StObject.set(x, "createdByName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedById(value: String): Self = StObject.set(x, "lastModifiedById", value.asInstanceOf[js.Any])
+    inline def setLastModifiedById(value: String): Self = StObject.set(x, "lastModifiedById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByName(value: String): Self = StObject.set(x, "lastModifiedByName", value.asInstanceOf[js.Any])
+    inline def setLastModifiedByName(value: String): Self = StObject.set(x, "lastModifiedByName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDate(value: String): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: String): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManageableState(value: String): Self = StObject.set(x, "manageableState", value.asInstanceOf[js.Any])
+    inline def setManageableState(value: String): Self = StObject.set(x, "manageableState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManageableStateUndefined: Self = StObject.set(x, "manageableState", js.undefined)
+    inline def setManageableStateUndefined: Self = StObject.set(x, "manageableState", js.undefined)
     
-    @scala.inline
-    def setNamespacePrefix(value: String): Self = StObject.set(x, "namespacePrefix", value.asInstanceOf[js.Any])
+    inline def setNamespacePrefix(value: String): Self = StObject.set(x, "namespacePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacePrefixUndefined: Self = StObject.set(x, "namespacePrefix", js.undefined)
+    inline def setNamespacePrefixUndefined: Self = StObject.set(x, "namespacePrefix", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

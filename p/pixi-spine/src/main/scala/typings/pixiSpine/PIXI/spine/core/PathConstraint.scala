@@ -68,8 +68,7 @@ trait PathConstraint
 }
 object PathConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     addAfterPosition: (Double, js.Array[Double], Double, js.Array[Double], Double) => Unit,
     addBeforePosition: (Double, js.Array[Double], Double, js.Array[Double], Double) => Unit,
@@ -96,87 +95,60 @@ object PathConstraint {
     __obj.asInstanceOf[PathConstraint]
   }
   
-  @scala.inline
-  implicit class PathConstraintMutableBuilder[Self <: PathConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: PathConstraint](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAfterPosition(value: (Double, js.Array[Double], Double, js.Array[Double], Double) => Unit): Self = StObject.set(x, "addAfterPosition", js.Any.fromFunction5(value))
+    inline def setAddAfterPosition(value: (Double, js.Array[Double], Double, js.Array[Double], Double) => Unit): Self = StObject.set(x, "addAfterPosition", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAddBeforePosition(value: (Double, js.Array[Double], Double, js.Array[Double], Double) => Unit): Self = StObject.set(x, "addBeforePosition", js.Any.fromFunction5(value))
+    inline def setAddBeforePosition(value: (Double, js.Array[Double], Double, js.Array[Double], Double) => Unit): Self = StObject.set(x, "addBeforePosition", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAddCurvePosition(
+    inline def setAddCurvePosition(
       value: (Double, Double, Double, Double, Double, Double, Double, Double, Double, js.Array[Double], Double, Boolean) => Unit
     ): Self = StObject.set(x, "addCurvePosition", js.Any.fromFunction12(value))
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBones(value: js.Array[Bone]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
+    inline def setBones(value: js.Array[Bone]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonesVarargs(value: Bone*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: Bone*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
-    @scala.inline
-    def setComputeWorldPositions(value: (PathAttachment, Double, Boolean, Boolean, Boolean) => js.Array[Double]): Self = StObject.set(x, "computeWorldPositions", js.Any.fromFunction5(value))
+    inline def setComputeWorldPositions(value: (PathAttachment, Double, Boolean, Boolean, Boolean) => js.Array[Double]): Self = StObject.set(x, "computeWorldPositions", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setCurves(value: js.Array[Double]): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
+    inline def setCurves(value: js.Array[Double]): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurvesVarargs(value: Double*): Self = StObject.set(x, "curves", js.Array(value :_*))
+    inline def setCurvesVarargs(value: Double*): Self = StObject.set(x, "curves", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: PathConstraintData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PathConstraintData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengths(value: js.Array[Double]): Self = StObject.set(x, "lengths", value.asInstanceOf[js.Any])
+    inline def setLengths(value: js.Array[Double]): Self = StObject.set(x, "lengths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value :_*))
+    inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
-    @scala.inline
-    def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
+    inline def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: js.Array[Double]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[Double]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setSpaces(value: js.Array[Double]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: js.Array[Double]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesVarargs(value: Double*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: Double*): Self = StObject.set(x, "spaces", js.Array(value :_*))
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Slot): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Slot): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
+    inline def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorld(value: js.Array[Double]): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
+    inline def setWorld(value: js.Array[Double]): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldVarargs(value: Double*): Self = StObject.set(x, "world", js.Array(value :_*))
+    inline def setWorldVarargs(value: Double*): Self = StObject.set(x, "world", js.Array(value :_*))
   }
 }

@@ -30,35 +30,26 @@ object typesLocalSecondaryIndexInfoMod {
   }
   object LocalSecondaryIndexInfo {
     
-    @scala.inline
-    def apply(): LocalSecondaryIndexInfo = {
+    inline def apply(): LocalSecondaryIndexInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalSecondaryIndexInfo]
     }
     
-    @scala.inline
-    implicit class LocalSecondaryIndexInfoMutableBuilder[Self <: LocalSecondaryIndexInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LocalSecondaryIndexInfo](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+      inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     }
   }
   
@@ -80,29 +71,22 @@ object typesLocalSecondaryIndexInfoMod {
   }
   object UnmarshalledLocalSecondaryIndexInfo {
     
-    @scala.inline
-    def apply(): UnmarshalledLocalSecondaryIndexInfo = {
+    inline def apply(): UnmarshalledLocalSecondaryIndexInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledLocalSecondaryIndexInfo]
     }
     
-    @scala.inline
-    implicit class UnmarshalledLocalSecondaryIndexInfoMutableBuilder[Self <: UnmarshalledLocalSecondaryIndexInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledLocalSecondaryIndexInfo](x: Self) {
       
-      @scala.inline
-      def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+      inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      @scala.inline
-      def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: UnmarshalledProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: UnmarshalledProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     }
   }
 }

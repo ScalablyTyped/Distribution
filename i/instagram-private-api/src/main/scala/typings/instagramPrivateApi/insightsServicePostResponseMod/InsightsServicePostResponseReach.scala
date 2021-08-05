@@ -12,19 +12,15 @@ trait InsightsServicePostResponseReach extends StObject {
 }
 object InsightsServicePostResponseReach {
   
-  @scala.inline
-  def apply(follow_status: InsightsServicePostResponseFollowStatus, value: Double): InsightsServicePostResponseReach = {
+  inline def apply(follow_status: InsightsServicePostResponseFollowStatus, value: Double): InsightsServicePostResponseReach = {
     val __obj = js.Dynamic.literal(follow_status = follow_status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseReach]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseReachMutableBuilder[Self <: InsightsServicePostResponseReach] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseReach](x: Self) {
     
-    @scala.inline
-    def setFollow_status(value: InsightsServicePostResponseFollowStatus): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
+    inline def setFollow_status(value: InsightsServicePostResponseFollowStatus): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

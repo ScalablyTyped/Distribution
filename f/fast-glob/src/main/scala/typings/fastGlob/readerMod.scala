@@ -19,19 +19,19 @@ object readerMod {
        with Reader[T] {
     def this(_settings: typings.fastGlob.settingsMod.default) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _fsStatSettings: Settings = js.native
     
-    /* CompleteClass */
-    /* protected */ override def _getFullEntryPath(filepath: String): String = js.native
+    /* protected */ /* CompleteClass */
+    override def _getFullEntryPath(filepath: String): String = js.native
     
-    /* CompleteClass */
-    /* protected */ override def _isFatalError(error: ErrnoException): Boolean = js.native
+    /* protected */ /* CompleteClass */
+    override def _isFatalError(error: ErrnoException): Boolean = js.native
     
-    /* CompleteClass */
-    /* protected */ override def _makeEntry(stats: Stats, pattern: Pattern): Entry = js.native
+    /* protected */ /* CompleteClass */
+    override def _makeEntry(stats: Stats, pattern: Pattern): Entry = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _settings: typings.fastGlob.settingsMod.default = js.native
     
     /* CompleteClass */
@@ -43,7 +43,7 @@ object readerMod {
   
   trait Reader[T] extends StObject {
     
-    val _fsStatSettings: Settings
+    /* protected */ val _fsStatSettings: Settings
     
     /* protected */ def _getFullEntryPath(filepath: String): String
     
@@ -51,7 +51,7 @@ object readerMod {
     
     /* protected */ def _makeEntry(stats: Stats, pattern: Pattern): Entry
     
-    val _settings: typings.fastGlob.settingsMod.default
+    /* protected */ val _settings: typings.fastGlob.settingsMod.default
     
     def dynamic(root: String, options: ReaderOptions): T
     
@@ -59,8 +59,7 @@ object readerMod {
   }
   object Reader {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       _fsStatSettings: Settings,
       _getFullEntryPath: String => String,
       _isFatalError: ErrnoException => Boolean,
@@ -73,29 +72,21 @@ object readerMod {
       __obj.asInstanceOf[Reader[T]]
     }
     
-    @scala.inline
-    implicit class ReaderMutableBuilder[Self <: Reader[?], T] (val x: Self & Reader[T]) extends AnyVal {
+    extension [Self <: Reader[?], T](x: Self & Reader[T]) {
       
-      @scala.inline
-      def setDynamic(value: (String, ReaderOptions) => T): Self = StObject.set(x, "dynamic", js.Any.fromFunction2(value))
+      inline def setDynamic(value: (String, ReaderOptions) => T): Self = StObject.set(x, "dynamic", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStatic(value: (js.Array[Pattern], ReaderOptions) => T): Self = StObject.set(x, "static", js.Any.fromFunction2(value))
+      inline def setStatic(value: (js.Array[Pattern], ReaderOptions) => T): Self = StObject.set(x, "static", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_fsStatSettings(value: Settings): Self = StObject.set(x, "_fsStatSettings", value.asInstanceOf[js.Any])
+      inline def set_fsStatSettings(value: Settings): Self = StObject.set(x, "_fsStatSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getFullEntryPath(value: String => String): Self = StObject.set(x, "_getFullEntryPath", js.Any.fromFunction1(value))
+      inline def set_getFullEntryPath(value: String => String): Self = StObject.set(x, "_getFullEntryPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_isFatalError(value: ErrnoException => Boolean): Self = StObject.set(x, "_isFatalError", js.Any.fromFunction1(value))
+      inline def set_isFatalError(value: ErrnoException => Boolean): Self = StObject.set(x, "_isFatalError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_makeEntry(value: (Stats, Pattern) => Entry): Self = StObject.set(x, "_makeEntry", js.Any.fromFunction2(value))
+      inline def set_makeEntry(value: (Stats, Pattern) => Entry): Self = StObject.set(x, "_makeEntry", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_settings(value: typings.fastGlob.settingsMod.default): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: typings.fastGlob.settingsMod.default): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     }
   }
 }

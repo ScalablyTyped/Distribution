@@ -9,10 +9,8 @@ object esmToDateIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(argument: Double): Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
-    @scala.inline
-    def apply(argument: Date): Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def apply(argument: Double): Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def apply(argument: Date): Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/toDate/index", JSImport.Default)
     @js.native

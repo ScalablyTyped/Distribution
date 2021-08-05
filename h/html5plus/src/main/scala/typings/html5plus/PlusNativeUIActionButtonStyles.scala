@@ -49,31 +49,23 @@ trait PlusNativeUIActionButtonStyles extends StObject {
 }
 object PlusNativeUIActionButtonStyles {
   
-  @scala.inline
-  def apply(): PlusNativeUIActionButtonStyles = {
+  inline def apply(): PlusNativeUIActionButtonStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIActionButtonStyles]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIActionButtonStylesMutableBuilder[Self <: PlusNativeUIActionButtonStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIActionButtonStyles](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setStyle(value: destructive | default): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: destructive | default): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

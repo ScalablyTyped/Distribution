@@ -15,20 +15,16 @@ object anon {
   }
   object Redirect {
     
-    @scala.inline
-    def apply(redirect: IRedirectParams, to: IRedirectParams): Redirect = {
+    inline def apply(redirect: IRedirectParams, to: IRedirectParams): Redirect = {
       val __obj = js.Dynamic.literal(redirect = redirect.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Redirect]
     }
     
-    @scala.inline
-    implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
+    extension [Self <: Redirect](x: Self) {
       
-      @scala.inline
-      def setRedirect(value: IRedirectParams): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: IRedirectParams): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: IRedirectParams): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: IRedirectParams): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait SchemaCheckAccessResponse extends StObject {
 }
 object SchemaCheckAccessResponse {
   
-  @scala.inline
-  def apply(): SchemaCheckAccessResponse = {
+  inline def apply(): SchemaCheckAccessResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckAccessResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCheckAccessResponseMutableBuilder[Self <: SchemaCheckAccessResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckAccessResponse](x: Self) {
     
-    @scala.inline
-    def setHasAccess(value: Boolean): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
+    inline def setHasAccess(value: Boolean): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
+    inline def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
   }
 }

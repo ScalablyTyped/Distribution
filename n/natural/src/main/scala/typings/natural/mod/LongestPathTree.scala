@@ -14,22 +14,17 @@ trait LongestPathTree extends StObject {
 }
 object LongestPathTree {
   
-  @scala.inline
-  def apply(getDistTo: Double => Double, hasDistTo: Double => Boolean, pathTo: Double => js.Array[Double]): LongestPathTree = {
+  inline def apply(getDistTo: Double => Double, hasDistTo: Double => Boolean, pathTo: Double => js.Array[Double]): LongestPathTree = {
     val __obj = js.Dynamic.literal(getDistTo = js.Any.fromFunction1(getDistTo), hasDistTo = js.Any.fromFunction1(hasDistTo), pathTo = js.Any.fromFunction1(pathTo))
     __obj.asInstanceOf[LongestPathTree]
   }
   
-  @scala.inline
-  implicit class LongestPathTreeMutableBuilder[Self <: LongestPathTree] (val x: Self) extends AnyVal {
+  extension [Self <: LongestPathTree](x: Self) {
     
-    @scala.inline
-    def setGetDistTo(value: Double => Double): Self = StObject.set(x, "getDistTo", js.Any.fromFunction1(value))
+    inline def setGetDistTo(value: Double => Double): Self = StObject.set(x, "getDistTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasDistTo(value: Double => Boolean): Self = StObject.set(x, "hasDistTo", js.Any.fromFunction1(value))
+    inline def setHasDistTo(value: Double => Boolean): Self = StObject.set(x, "hasDistTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPathTo(value: Double => js.Array[Double]): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
+    inline def setPathTo(value: Double => js.Array[Double]): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
   }
 }

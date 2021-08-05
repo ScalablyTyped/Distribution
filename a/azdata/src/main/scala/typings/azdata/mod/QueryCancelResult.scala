@@ -10,16 +10,13 @@ trait QueryCancelResult extends StObject {
 }
 object QueryCancelResult {
   
-  @scala.inline
-  def apply(messages: String): QueryCancelResult = {
+  inline def apply(messages: String): QueryCancelResult = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryCancelResult]
   }
   
-  @scala.inline
-  implicit class QueryCancelResultMutableBuilder[Self <: QueryCancelResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryCancelResult](x: Self) {
     
-    @scala.inline
-    def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }
 }

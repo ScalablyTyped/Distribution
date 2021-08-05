@@ -46,20 +46,16 @@ object toolbarToolbarMod extends Shortcut {
   }
   object ToolbarItemInheritedProps {
     
-    @scala.inline
-    def apply(): ToolbarItemInheritedProps = {
+    inline def apply(): ToolbarItemInheritedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarItemInheritedProps]
     }
     
-    @scala.inline
-    implicit class ToolbarItemInheritedPropsMutableBuilder[Self <: ToolbarItemInheritedProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarItemInheritedProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -73,26 +69,20 @@ object toolbarToolbarMod extends Shortcut {
   }
   object ToolbarItemProps {
     
-    @scala.inline
-    def apply(): ToolbarItemProps = {
+    inline def apply(): ToolbarItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarItemProps]
     }
     
-    @scala.inline
-    implicit class ToolbarItemPropsMutableBuilder[Self <: ToolbarItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarItemProps](x: Self) {
       
-      @scala.inline
-      def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
+      inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
+      inline def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -103,20 +93,16 @@ object toolbarToolbarMod extends Shortcut {
   }
   object ToolbarOptionInheritedProps {
     
-    @scala.inline
-    def apply(): ToolbarOptionInheritedProps = {
+    inline def apply(): ToolbarOptionInheritedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarOptionInheritedProps]
     }
     
-    @scala.inline
-    implicit class ToolbarOptionInheritedPropsMutableBuilder[Self <: ToolbarOptionInheritedProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarOptionInheritedProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -130,20 +116,16 @@ object toolbarToolbarMod extends Shortcut {
   }
   object ToolbarTitleProps {
     
-    @scala.inline
-    def apply(): ToolbarTitleProps = {
+    inline def apply(): ToolbarTitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarTitleProps]
     }
     
-    @scala.inline
-    implicit class ToolbarTitlePropsMutableBuilder[Self <: ToolbarTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarTitleProps](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

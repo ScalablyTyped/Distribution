@@ -38,49 +38,35 @@ trait AppDetails extends StObject {
 }
 object AppDetails {
   
-  @scala.inline
-  def apply(): AppDetails = {
+  inline def apply(): AppDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppDetails]
   }
   
-  @scala.inline
-  implicit class AppDetailsMutableBuilder[Self <: AppDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AppDetails](x: Self) {
     
-    @scala.inline
-    def setAppName(value: AppName): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: AppName): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNameUndefined: Self = StObject.set(x, "AppName", js.undefined)
+    inline def setAppNameUndefined: Self = StObject.set(x, "AppName", js.undefined)
     
-    @scala.inline
-    def setAppType(value: AppType): Self = StObject.set(x, "AppType", value.asInstanceOf[js.Any])
+    inline def setAppType(value: AppType): Self = StObject.set(x, "AppType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppTypeUndefined: Self = StObject.set(x, "AppType", js.undefined)
+    inline def setAppTypeUndefined: Self = StObject.set(x, "AppType", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
+    inline def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AppStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AppStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
+    inline def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfileNameUndefined: Self = StObject.set(x, "UserProfileName", js.undefined)
+    inline def setUserProfileNameUndefined: Self = StObject.set(x, "UserProfileName", js.undefined)
   }
 }

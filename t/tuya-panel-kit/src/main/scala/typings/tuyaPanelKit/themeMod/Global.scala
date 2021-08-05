@@ -26,8 +26,7 @@ trait Global extends StObject {
 }
 object Global {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background: BackgroundProps,
     brand: String,
     dividerColor: String,
@@ -42,34 +41,24 @@ object Global {
     __obj.asInstanceOf[Global]
   }
   
-  @scala.inline
-  implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+  extension [Self <: Global](x: Self) {
     
-    @scala.inline
-    def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
+    inline def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeBase(value: Double): Self = StObject.set(x, "fontSizeBase", value.asInstanceOf[js.Any])
+    inline def setFontSizeBase(value: Double): Self = StObject.set(x, "fontSizeBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: GlobalText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: GlobalText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

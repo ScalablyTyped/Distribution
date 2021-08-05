@@ -35,17 +35,14 @@ object mod extends Shortcut {
   }
   object CacheErrorCls {
     
-    @scala.inline
-    def apply(message: String): CacheErrorCls = {
+    inline def apply(message: String): CacheErrorCls = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "CacheError")
       __obj.asInstanceOf[CacheErrorCls]
     }
     
-    @scala.inline
-    implicit class CacheErrorClsMutableBuilder[Self <: CacheErrorCls] (val x: Self) extends AnyVal {
+    extension [Self <: CacheErrorCls](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.cacheableRequest.cacheableRequestStrings.CacheError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.cacheableRequest.cacheableRequestStrings.CacheError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,44 +224,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutomaticFailover(value: Boolean): Self = StObject.set(x, "automaticFailover", value.asInstanceOf[js.Any])
+      inline def setAutomaticFailover(value: Boolean): Self = StObject.set(x, "automaticFailover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticFailoverUndefined: Self = StObject.set(x, "automaticFailover", js.undefined)
+      inline def setAutomaticFailoverUndefined: Self = StObject.set(x, "automaticFailover", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
+      inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+      inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
       
-      @scala.inline
-      def setMaxTtl(value: Double): Self = StObject.set(x, "maxTtl", value.asInstanceOf[js.Any])
+      inline def setMaxTtl(value: Double): Self = StObject.set(x, "maxTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTtlUndefined: Self = StObject.set(x, "maxTtl", js.undefined)
+      inline def setMaxTtlUndefined: Self = StObject.set(x, "maxTtl", js.undefined)
       
-      @scala.inline
-      def setStrictTtl(value: Boolean): Self = StObject.set(x, "strictTtl", value.asInstanceOf[js.Any])
+      inline def setStrictTtl(value: Boolean): Self = StObject.set(x, "strictTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictTtlUndefined: Self = StObject.set(x, "strictTtl", js.undefined)
+      inline def setStrictTtlUndefined: Self = StObject.set(x, "strictTtl", js.undefined)
     }
   }
   
@@ -279,17 +264,14 @@ object mod extends Shortcut {
   }
   object RequestErrorCls {
     
-    @scala.inline
-    def apply(message: String): RequestErrorCls = {
+    inline def apply(message: String): RequestErrorCls = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "RequestError")
       __obj.asInstanceOf[RequestErrorCls]
     }
     
-    @scala.inline
-    implicit class RequestErrorClsMutableBuilder[Self <: RequestErrorCls] (val x: Self) extends AnyVal {
+    extension [Self <: RequestErrorCls](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.cacheableRequest.cacheableRequestStrings.RequestError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.cacheableRequest.cacheableRequestStrings.RequestError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

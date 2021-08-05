@@ -16,19 +16,15 @@ trait VideoStabilizationEffectDefinition extends StObject {
 }
 object VideoStabilizationEffectDefinition {
   
-  @scala.inline
-  def apply(activatableClassId: String, properties: IPropertySet): VideoStabilizationEffectDefinition = {
+  inline def apply(activatableClassId: String, properties: IPropertySet): VideoStabilizationEffectDefinition = {
     val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoStabilizationEffectDefinition]
   }
   
-  @scala.inline
-  implicit class VideoStabilizationEffectDefinitionMutableBuilder[Self <: VideoStabilizationEffectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: VideoStabilizationEffectDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

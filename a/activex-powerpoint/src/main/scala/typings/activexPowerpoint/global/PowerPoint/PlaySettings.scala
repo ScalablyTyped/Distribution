@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PlaySettings")
 @js.native
-class PlaySettings protected ()
+/* private */ class PlaySettings ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PlaySettings {
   
@@ -32,7 +32,7 @@ class PlaySettings protected ()
   /* CompleteClass */
   var PlayOnEntry: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.PlaySettings_typekey")
   var PowerPointDotPlaySettings_typekey: typings.activexPowerpoint.PowerPoint.PlaySettings = js.native
   

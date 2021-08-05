@@ -12,16 +12,13 @@ trait StorePreviewPurchaseResults extends StObject {
 }
 object StorePreviewPurchaseResults {
   
-  @scala.inline
-  def apply(productPurchaseStatus: StorePreviewProductPurchaseStatus): StorePreviewPurchaseResults = {
+  inline def apply(productPurchaseStatus: StorePreviewProductPurchaseStatus): StorePreviewPurchaseResults = {
     val __obj = js.Dynamic.literal(productPurchaseStatus = productPurchaseStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorePreviewPurchaseResults]
   }
   
-  @scala.inline
-  implicit class StorePreviewPurchaseResultsMutableBuilder[Self <: StorePreviewPurchaseResults] (val x: Self) extends AnyVal {
+  extension [Self <: StorePreviewPurchaseResults](x: Self) {
     
-    @scala.inline
-    def setProductPurchaseStatus(value: StorePreviewProductPurchaseStatus): Self = StObject.set(x, "productPurchaseStatus", value.asInstanceOf[js.Any])
+    inline def setProductPurchaseStatus(value: StorePreviewProductPurchaseStatus): Self = StObject.set(x, "productPurchaseStatus", value.asInstanceOf[js.Any])
   }
 }

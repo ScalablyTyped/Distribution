@@ -74,8 +74,7 @@ trait GPUFeatureStatus extends StObject {
 }
 object GPUFeatureStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `2d_canvas`: String,
     flash_3d: String,
     flash_stage3d: String,
@@ -95,46 +94,32 @@ object GPUFeatureStatus {
     __obj.asInstanceOf[GPUFeatureStatus]
   }
   
-  @scala.inline
-  implicit class GPUFeatureStatusMutableBuilder[Self <: GPUFeatureStatus] (val x: Self) extends AnyVal {
+  extension [Self <: GPUFeatureStatus](x: Self) {
     
-    @scala.inline
-    def set2d_canvas(value: String): Self = StObject.set(x, "2d_canvas", value.asInstanceOf[js.Any])
+    inline def set2d_canvas(value: String): Self = StObject.set(x, "2d_canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlash_3d(value: String): Self = StObject.set(x, "flash_3d", value.asInstanceOf[js.Any])
+    inline def setFlash_3d(value: String): Self = StObject.set(x, "flash_3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlash_stage3d(value: String): Self = StObject.set(x, "flash_stage3d", value.asInstanceOf[js.Any])
+    inline def setFlash_stage3d(value: String): Self = StObject.set(x, "flash_stage3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlash_stage3d_baseline(value: String): Self = StObject.set(x, "flash_stage3d_baseline", value.asInstanceOf[js.Any])
+    inline def setFlash_stage3d_baseline(value: String): Self = StObject.set(x, "flash_stage3d_baseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGpu_compositing(value: String): Self = StObject.set(x, "gpu_compositing", value.asInstanceOf[js.Any])
+    inline def setGpu_compositing(value: String): Self = StObject.set(x, "gpu_compositing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiple_raster_threads(value: String): Self = StObject.set(x, "multiple_raster_threads", value.asInstanceOf[js.Any])
+    inline def setMultiple_raster_threads(value: String): Self = StObject.set(x, "multiple_raster_threads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative_gpu_memory_buffers(value: String): Self = StObject.set(x, "native_gpu_memory_buffers", value.asInstanceOf[js.Any])
+    inline def setNative_gpu_memory_buffers(value: String): Self = StObject.set(x, "native_gpu_memory_buffers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRasterization(value: String): Self = StObject.set(x, "rasterization", value.asInstanceOf[js.Any])
+    inline def setRasterization(value: String): Self = StObject.set(x, "rasterization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_decode(value: String): Self = StObject.set(x, "video_decode", value.asInstanceOf[js.Any])
+    inline def setVideo_decode(value: String): Self = StObject.set(x, "video_decode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_encode(value: String): Self = StObject.set(x, "video_encode", value.asInstanceOf[js.Any])
+    inline def setVideo_encode(value: String): Self = StObject.set(x, "video_encode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpx_decode(value: String): Self = StObject.set(x, "vpx_decode", value.asInstanceOf[js.Any])
+    inline def setVpx_decode(value: String): Self = StObject.set(x, "vpx_decode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebgl(value: String): Self = StObject.set(x, "webgl", value.asInstanceOf[js.Any])
+    inline def setWebgl(value: String): Self = StObject.set(x, "webgl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebgl2(value: String): Self = StObject.set(x, "webgl2", value.asInstanceOf[js.Any])
+    inline def setWebgl2(value: String): Self = StObject.set(x, "webgl2", value.asInstanceOf[js.Any])
   }
 }

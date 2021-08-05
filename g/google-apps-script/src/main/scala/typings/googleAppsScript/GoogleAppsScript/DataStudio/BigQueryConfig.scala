@@ -37,8 +37,7 @@ trait BigQueryConfig extends StObject {
 }
 object BigQueryConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addQueryParameter: (String, BigQueryParameterType, String) => BigQueryConfig,
     build: () => Config,
     printJson: () => String,
@@ -51,28 +50,20 @@ object BigQueryConfig {
     __obj.asInstanceOf[BigQueryConfig]
   }
   
-  @scala.inline
-  implicit class BigQueryConfigMutableBuilder[Self <: BigQueryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BigQueryConfig](x: Self) {
     
-    @scala.inline
-    def setAddQueryParameter(value: (String, BigQueryParameterType, String) => BigQueryConfig): Self = StObject.set(x, "addQueryParameter", js.Any.fromFunction3(value))
+    inline def setAddQueryParameter(value: (String, BigQueryParameterType, String) => BigQueryConfig): Self = StObject.set(x, "addQueryParameter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBuild(value: () => Config): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => Config): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAccessToken(value: String => BigQueryConfig): Self = StObject.set(x, "setAccessToken", js.Any.fromFunction1(value))
+    inline def setSetAccessToken(value: String => BigQueryConfig): Self = StObject.set(x, "setAccessToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBillingProjectId(value: String => BigQueryConfig): Self = StObject.set(x, "setBillingProjectId", js.Any.fromFunction1(value))
+    inline def setSetBillingProjectId(value: String => BigQueryConfig): Self = StObject.set(x, "setBillingProjectId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetQuery(value: String => BigQueryConfig): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
+    inline def setSetQuery(value: String => BigQueryConfig): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseStandardSql(value: Boolean => BigQueryConfig): Self = StObject.set(x, "setUseStandardSql", js.Any.fromFunction1(value))
+    inline def setSetUseStandardSql(value: Boolean => BigQueryConfig): Self = StObject.set(x, "setUseStandardSql", js.Any.fromFunction1(value))
   }
 }

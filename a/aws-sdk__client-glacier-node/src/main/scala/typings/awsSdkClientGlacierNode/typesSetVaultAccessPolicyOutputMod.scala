@@ -20,17 +20,14 @@ object typesSetVaultAccessPolicyOutputMod {
   }
   object SetVaultAccessPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): SetVaultAccessPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): SetVaultAccessPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetVaultAccessPolicyOutput]
     }
     
-    @scala.inline
-    implicit class SetVaultAccessPolicyOutputMutableBuilder[Self <: SetVaultAccessPolicyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: SetVaultAccessPolicyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

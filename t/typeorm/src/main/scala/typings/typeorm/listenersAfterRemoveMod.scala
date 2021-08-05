@@ -11,6 +11,5 @@ object listenersAfterRemoveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AfterRemove(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterRemove")().asInstanceOf[PropertyDecorator]
+  inline def AfterRemove(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterRemove")().asInstanceOf[PropertyDecorator]
 }

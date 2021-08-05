@@ -15,15 +15,14 @@ trait Pane extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Pane_typekey")
+  /* private */ @JSName("PowerPoint.Pane_typekey")
   var PowerPointDotPane_typekey: Pane
   
   val ViewType: PpViewType
 }
 object Pane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Activate: () => Unit,
     Active: MsoTriState,
     Application: Application,
@@ -36,25 +35,18 @@ object Pane {
     __obj.asInstanceOf[Pane]
   }
   
-  @scala.inline
-  implicit class PaneMutableBuilder[Self <: Pane] (val x: Self) extends AnyVal {
+  extension [Self <: Pane](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActive(value: MsoTriState): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: MsoTriState): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPane_typekey(value: Pane): Self = StObject.set(x, "PowerPoint.Pane_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPane_typekey(value: Pane): Self = StObject.set(x, "PowerPoint.Pane_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: PpViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: PpViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
   }
 }

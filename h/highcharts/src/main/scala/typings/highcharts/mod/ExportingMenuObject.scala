@@ -28,37 +28,27 @@ trait ExportingMenuObject extends StObject {
 }
 object ExportingMenuObject {
   
-  @scala.inline
-  def apply(): ExportingMenuObject = {
+  inline def apply(): ExportingMenuObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportingMenuObject]
   }
   
-  @scala.inline
-  implicit class ExportingMenuObjectMutableBuilder[Self <: ExportingMenuObject] (val x: Self) extends AnyVal {
+  extension [Self <: ExportingMenuObject](x: Self) {
     
-    @scala.inline
-    def setOnclick(value: EventCallbackFunction[Chart_]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    inline def setOnclick(value: EventCallbackFunction[Chart_]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+    inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: Boolean): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: Boolean): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextKey(value: String): Self = StObject.set(x, "textKey", value.asInstanceOf[js.Any])
+    inline def setTextKey(value: String): Self = StObject.set(x, "textKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextKeyUndefined: Self = StObject.set(x, "textKey", js.undefined)
+    inline def setTextKeyUndefined: Self = StObject.set(x, "textKey", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

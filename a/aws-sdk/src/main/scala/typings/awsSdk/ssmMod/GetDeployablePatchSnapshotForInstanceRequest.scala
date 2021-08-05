@@ -18,19 +18,15 @@ trait GetDeployablePatchSnapshotForInstanceRequest extends StObject {
 }
 object GetDeployablePatchSnapshotForInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, SnapshotId: SnapshotId): GetDeployablePatchSnapshotForInstanceRequest = {
+  inline def apply(InstanceId: InstanceId, SnapshotId: SnapshotId): GetDeployablePatchSnapshotForInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], SnapshotId = SnapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeployablePatchSnapshotForInstanceRequest]
   }
   
-  @scala.inline
-  implicit class GetDeployablePatchSnapshotForInstanceRequestMutableBuilder[Self <: GetDeployablePatchSnapshotForInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeployablePatchSnapshotForInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
   }
 }

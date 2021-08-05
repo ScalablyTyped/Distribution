@@ -20,37 +20,27 @@ trait ZypperPatch extends StObject {
 }
 object ZypperPatch {
   
-  @scala.inline
-  def apply(): ZypperPatch = {
+  inline def apply(): ZypperPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZypperPatch]
   }
   
-  @scala.inline
-  implicit class ZypperPatchMutableBuilder[Self <: ZypperPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ZypperPatch](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setPatchName(value: String): Self = StObject.set(x, "patchName", value.asInstanceOf[js.Any])
+    inline def setPatchName(value: String): Self = StObject.set(x, "patchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchNameUndefined: Self = StObject.set(x, "patchName", js.undefined)
+    inline def setPatchNameUndefined: Self = StObject.set(x, "patchName", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

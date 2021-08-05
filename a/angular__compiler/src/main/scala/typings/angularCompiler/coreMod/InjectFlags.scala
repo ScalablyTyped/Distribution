@@ -19,25 +19,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InjectFlags extends StObject
 object InjectFlags {
   
-  @scala.inline
-  def Default: `0` = 0.asInstanceOf[`0`]
+  inline def Default: `0` = 0.asInstanceOf[`0`]
   
   /**
     * Specifies that an injector should retrieve a dependency from any injector until reaching the
     * host element of the current component. (Only used with Element Injector)
     */
-  @scala.inline
-  def Host: `1` = 1.asInstanceOf[`1`]
+  inline def Host: `1` = 1.asInstanceOf[`1`]
   
   /** Inject `defaultValue` instead if token not found. */
-  @scala.inline
-  def Optional: `8` = 8.asInstanceOf[`8`]
+  inline def Optional: `8` = 8.asInstanceOf[`8`]
   
   /** Don't descend into ancestors of the node requesting injection. */
-  @scala.inline
-  def Self: `2` = 2.asInstanceOf[`2`]
+  inline def Self: `2` = 2.asInstanceOf[`2`]
   
   /** Skip the node that is requesting injection. */
-  @scala.inline
-  def SkipSelf: `4` = 4.asInstanceOf[`4`]
+  inline def SkipSelf: `4` = 4.asInstanceOf[`4`]
 }

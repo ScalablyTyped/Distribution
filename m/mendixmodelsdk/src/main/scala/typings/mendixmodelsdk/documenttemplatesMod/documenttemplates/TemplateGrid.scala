@@ -47,8 +47,7 @@ object TemplateGrid {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
+  inline def create(model: IModel): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -56,8 +55,7 @@ object TemplateGrid {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
+  inline def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -65,20 +63,17 @@ object TemplateGrid {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDropZoneUnderWidget(container: DropZone): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
+  inline def createInDropZoneUnderWidget(container: DropZone): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TemplateGrid.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TemplateGrid.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -33,31 +33,23 @@ trait SchemaEphemeralIdRegistrationParams extends StObject {
 }
 object SchemaEphemeralIdRegistrationParams {
   
-  @scala.inline
-  def apply(): SchemaEphemeralIdRegistrationParams = {
+  inline def apply(): SchemaEphemeralIdRegistrationParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEphemeralIdRegistrationParams]
   }
   
-  @scala.inline
-  implicit class SchemaEphemeralIdRegistrationParamsMutableBuilder[Self <: SchemaEphemeralIdRegistrationParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEphemeralIdRegistrationParams](x: Self) {
     
-    @scala.inline
-    def setMaxRotationPeriodExponent(value: Double): Self = StObject.set(x, "maxRotationPeriodExponent", value.asInstanceOf[js.Any])
+    inline def setMaxRotationPeriodExponent(value: Double): Self = StObject.set(x, "maxRotationPeriodExponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRotationPeriodExponentUndefined: Self = StObject.set(x, "maxRotationPeriodExponent", js.undefined)
+    inline def setMaxRotationPeriodExponentUndefined: Self = StObject.set(x, "maxRotationPeriodExponent", js.undefined)
     
-    @scala.inline
-    def setMinRotationPeriodExponent(value: Double): Self = StObject.set(x, "minRotationPeriodExponent", value.asInstanceOf[js.Any])
+    inline def setMinRotationPeriodExponent(value: Double): Self = StObject.set(x, "minRotationPeriodExponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRotationPeriodExponentUndefined: Self = StObject.set(x, "minRotationPeriodExponent", js.undefined)
+    inline def setMinRotationPeriodExponentUndefined: Self = StObject.set(x, "minRotationPeriodExponent", js.undefined)
     
-    @scala.inline
-    def setServiceEcdhPublicKey(value: String): Self = StObject.set(x, "serviceEcdhPublicKey", value.asInstanceOf[js.Any])
+    inline def setServiceEcdhPublicKey(value: String): Self = StObject.set(x, "serviceEcdhPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceEcdhPublicKeyUndefined: Self = StObject.set(x, "serviceEcdhPublicKey", js.undefined)
+    inline def setServiceEcdhPublicKeyUndefined: Self = StObject.set(x, "serviceEcdhPublicKey", js.undefined)
   }
 }

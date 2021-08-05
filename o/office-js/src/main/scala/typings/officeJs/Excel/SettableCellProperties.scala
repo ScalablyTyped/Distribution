@@ -38,31 +38,23 @@ trait SettableCellProperties extends StObject {
 }
 object SettableCellProperties {
   
-  @scala.inline
-  def apply(): SettableCellProperties = {
+  inline def apply(): SettableCellProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettableCellProperties]
   }
   
-  @scala.inline
-  implicit class SettableCellPropertiesMutableBuilder[Self <: SettableCellProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SettableCellProperties](x: Self) {
     
-    @scala.inline
-    def setFormat(value: CellPropertiesFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CellPropertiesFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHyperlink(value: RangeHyperlink): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: RangeHyperlink): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+    inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

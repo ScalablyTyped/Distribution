@@ -10,16 +10,13 @@ trait Typography extends StObject {
 }
 object Typography {
   
-  @scala.inline
-  def apply(typography: typings.storybookTheming.typesMod.Typography): Typography = {
+  inline def apply(typography: typings.storybookTheming.typesMod.Typography): Typography = {
     val __obj = js.Dynamic.literal(typography = typography.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typography]
   }
   
-  @scala.inline
-  implicit class TypographyMutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
+  extension [Self <: Typography](x: Self) {
     
-    @scala.inline
-    def setTypography(value: typings.storybookTheming.typesMod.Typography): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
+    inline def setTypography(value: typings.storybookTheming.typesMod.Typography): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
   }
 }

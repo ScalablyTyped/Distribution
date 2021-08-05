@@ -28,8 +28,7 @@ trait FilterPredicate extends StObject {
 }
 object FilterPredicate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterPredicate: (js.Any, js.Any) => js.Any,
     highlightMatches: Boolean,
     initialSelectedIds: js.Array[js.Any],
@@ -45,40 +44,28 @@ object FilterPredicate {
     __obj.asInstanceOf[FilterPredicate]
   }
   
-  @scala.inline
-  implicit class FilterPredicateMutableBuilder[Self <: FilterPredicate] (val x: Self) extends AnyVal {
+  extension [Self <: FilterPredicate](x: Self) {
     
-    @scala.inline
-    def setFilterPredicate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "filterPredicate", js.Any.fromFunction2(value))
+    inline def setFilterPredicate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "filterPredicate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHighlightMatches(value: Boolean): Self = StObject.set(x, "highlightMatches", value.asInstanceOf[js.Any])
+    inline def setHighlightMatches(value: Boolean): Self = StObject.set(x, "highlightMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialSelectedIds(value: js.Array[js.Any]): Self = StObject.set(x, "initialSelectedIds", value.asInstanceOf[js.Any])
+    inline def setInitialSelectedIds(value: js.Array[js.Any]): Self = StObject.set(x, "initialSelectedIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialSelectedIdsVarargs(value: js.Any*): Self = StObject.set(x, "initialSelectedIds", js.Array(value :_*))
+    inline def setInitialSelectedIdsVarargs(value: js.Any*): Self = StObject.set(x, "initialSelectedIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDeselect(value: () => js.Any): Self = StObject.set(x, "onDeselect", js.Any.fromFunction0(value))
+    inline def setOnDeselect(value: () => js.Any): Self = StObject.set(x, "onDeselect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnInitialSelectedOptionsSet(value: () => js.Any): Self = StObject.set(x, "onInitialSelectedOptionsSet", js.Any.fromFunction0(value))
+    inline def setOnInitialSelectedOptionsSet(value: () => js.Any): Self = StObject.set(x, "onInitialSelectedOptionsSet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnManualInput(value: () => js.Any): Self = StObject.set(x, "onManualInput", js.Any.fromFunction0(value))
+    inline def setOnManualInput(value: () => js.Any): Self = StObject.set(x, "onManualInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSelect(value: () => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
+    inline def setOnSelect(value: () => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenTrigger(value: String): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
+    inline def setOpenTrigger(value: String): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
   }
 }

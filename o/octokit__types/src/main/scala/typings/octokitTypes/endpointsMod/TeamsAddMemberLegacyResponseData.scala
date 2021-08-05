@@ -13,22 +13,17 @@ trait TeamsAddMemberLegacyResponseData extends StObject {
 }
 object TeamsAddMemberLegacyResponseData {
   
-  @scala.inline
-  def apply(errors: js.Array[Field], message: String): TeamsAddMemberLegacyResponseData = {
+  inline def apply(errors: js.Array[Field], message: String): TeamsAddMemberLegacyResponseData = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddMemberLegacyResponseData]
   }
   
-  @scala.inline
-  implicit class TeamsAddMemberLegacyResponseDataMutableBuilder[Self <: TeamsAddMemberLegacyResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAddMemberLegacyResponseData](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[Field]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Field]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: Field*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Field*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

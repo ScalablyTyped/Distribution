@@ -10,16 +10,13 @@ trait ConsolaReporter extends StObject {
 }
 object ConsolaReporter {
   
-  @scala.inline
-  def apply(log: (ConsolaReporterLogObject, ConsolaReporterArgs) => Unit): ConsolaReporter = {
+  inline def apply(log: (ConsolaReporterLogObject, ConsolaReporterArgs) => Unit): ConsolaReporter = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction2(log))
     __obj.asInstanceOf[ConsolaReporter]
   }
   
-  @scala.inline
-  implicit class ConsolaReporterMutableBuilder[Self <: ConsolaReporter] (val x: Self) extends AnyVal {
+  extension [Self <: ConsolaReporter](x: Self) {
     
-    @scala.inline
-    def setLog(value: (ConsolaReporterLogObject, ConsolaReporterArgs) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+    inline def setLog(value: (ConsolaReporterLogObject, ConsolaReporterArgs) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
   }
 }

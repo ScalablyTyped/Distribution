@@ -47,8 +47,7 @@ trait IdentityManagerRegisterTokenProperties
 }
 object IdentityManagerRegisterTokenProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -59,31 +58,22 @@ object IdentityManagerRegisterTokenProperties {
     __obj.asInstanceOf[IdentityManagerRegisterTokenProperties]
   }
   
-  @scala.inline
-  implicit class IdentityManagerRegisterTokenPropertiesMutableBuilder[Self <: IdentityManagerRegisterTokenProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityManagerRegisterTokenProperties](x: Self) {
     
-    @scala.inline
-    def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

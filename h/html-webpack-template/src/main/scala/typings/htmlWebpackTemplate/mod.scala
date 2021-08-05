@@ -29,23 +29,18 @@ object mod extends Shortcut {
   }
   object GoogleAnalyticsOptions {
     
-    @scala.inline
-    def apply(trackingId: String): GoogleAnalyticsOptions = {
+    inline def apply(trackingId: String): GoogleAnalyticsOptions = {
       val __obj = js.Dynamic.literal(trackingId = trackingId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GoogleAnalyticsOptions]
     }
     
-    @scala.inline
-    implicit class GoogleAnalyticsOptionsMutableBuilder[Self <: GoogleAnalyticsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleAnalyticsOptions](x: Self) {
       
-      @scala.inline
-      def setPageViewOnLoad(value: Boolean): Self = StObject.set(x, "pageViewOnLoad", value.asInstanceOf[js.Any])
+      inline def setPageViewOnLoad(value: Boolean): Self = StObject.set(x, "pageViewOnLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageViewOnLoadUndefined: Self = StObject.set(x, "pageViewOnLoad", js.undefined)
+      inline def setPageViewOnLoadUndefined: Self = StObject.set(x, "pageViewOnLoad", js.undefined)
       
-      @scala.inline
-      def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
+      inline def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,83 +92,58 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppMountId(value: String): Self = StObject.set(x, "appMountId", value.asInstanceOf[js.Any])
+      inline def setAppMountId(value: String): Self = StObject.set(x, "appMountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppMountIdUndefined: Self = StObject.set(x, "appMountId", js.undefined)
+      inline def setAppMountIdUndefined: Self = StObject.set(x, "appMountId", js.undefined)
       
-      @scala.inline
-      def setAppMountIds(value: js.Array[String]): Self = StObject.set(x, "appMountIds", value.asInstanceOf[js.Any])
+      inline def setAppMountIds(value: js.Array[String]): Self = StObject.set(x, "appMountIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppMountIdsUndefined: Self = StObject.set(x, "appMountIds", js.undefined)
+      inline def setAppMountIdsUndefined: Self = StObject.set(x, "appMountIds", js.undefined)
       
-      @scala.inline
-      def setAppMountIdsVarargs(value: String*): Self = StObject.set(x, "appMountIds", js.Array(value :_*))
+      inline def setAppMountIdsVarargs(value: String*): Self = StObject.set(x, "appMountIds", js.Array(value :_*))
       
-      @scala.inline
-      def setBaseHref(value: String): Self = StObject.set(x, "baseHref", value.asInstanceOf[js.Any])
+      inline def setBaseHref(value: String): Self = StObject.set(x, "baseHref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseHrefUndefined: Self = StObject.set(x, "baseHref", js.undefined)
+      inline def setBaseHrefUndefined: Self = StObject.set(x, "baseHref", js.undefined)
       
-      @scala.inline
-      def setDevServer(value: String): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
+      inline def setDevServer(value: String): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevServerUndefined: Self = StObject.set(x, "devServer", js.undefined)
+      inline def setDevServerUndefined: Self = StObject.set(x, "devServer", js.undefined)
       
-      @scala.inline
-      def setGoogleAnalytics(value: GoogleAnalyticsOptions): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
+      inline def setGoogleAnalytics(value: GoogleAnalyticsOptions): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogleAnalyticsUndefined: Self = StObject.set(x, "googleAnalytics", js.undefined)
+      inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "googleAnalytics", js.undefined)
       
-      @scala.inline
-      def setInlineManifestWebpackName(value: String): Self = StObject.set(x, "inlineManifestWebpackName", value.asInstanceOf[js.Any])
+      inline def setInlineManifestWebpackName(value: String): Self = StObject.set(x, "inlineManifestWebpackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineManifestWebpackNameUndefined: Self = StObject.set(x, "inlineManifestWebpackName", js.undefined)
+      inline def setInlineManifestWebpackNameUndefined: Self = StObject.set(x, "inlineManifestWebpackName", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
       
-      @scala.inline
-      def setScripts(value: js.Array[Script]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: js.Array[Script]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      @scala.inline
-      def setScriptsVarargs(value: Script*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+      inline def setScriptsVarargs(value: Script*): Self = StObject.set(x, "scripts", js.Array(value :_*))
       
-      @scala.inline
-      def setWindow(value: js.Object): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: js.Object): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   

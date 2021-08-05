@@ -21,25 +21,19 @@ trait SchemaFilter extends StObject {
 }
 object SchemaFilter {
   
-  @scala.inline
-  def apply(): SchemaFilter = {
+  inline def apply(): SchemaFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilter]
   }
   
-  @scala.inline
-  implicit class SchemaFilterMutableBuilder[Self <: SchemaFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilter](x: Self) {
     
-    @scala.inline
-    def setCompositeFilter(value: SchemaCompositeFilter): Self = StObject.set(x, "compositeFilter", value.asInstanceOf[js.Any])
+    inline def setCompositeFilter(value: SchemaCompositeFilter): Self = StObject.set(x, "compositeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeFilterUndefined: Self = StObject.set(x, "compositeFilter", js.undefined)
+    inline def setCompositeFilterUndefined: Self = StObject.set(x, "compositeFilter", js.undefined)
     
-    @scala.inline
-    def setPropertyFilter(value: SchemaPropertyFilter): Self = StObject.set(x, "propertyFilter", value.asInstanceOf[js.Any])
+    inline def setPropertyFilter(value: SchemaPropertyFilter): Self = StObject.set(x, "propertyFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyFilterUndefined: Self = StObject.set(x, "propertyFilter", js.undefined)
+    inline def setPropertyFilterUndefined: Self = StObject.set(x, "propertyFilter", js.undefined)
   }
 }

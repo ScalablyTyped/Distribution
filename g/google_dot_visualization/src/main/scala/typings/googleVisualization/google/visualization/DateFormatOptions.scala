@@ -30,31 +30,23 @@ trait DateFormatOptions extends StObject {
 }
 object DateFormatOptions {
   
-  @scala.inline
-  def apply(): DateFormatOptions = {
+  inline def apply(): DateFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateFormatOptions]
   }
   
-  @scala.inline
-  implicit class DateFormatOptionsMutableBuilder[Self <: DateFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DateFormatOptions](x: Self) {
     
-    @scala.inline
-    def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
+    inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: Double): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: Double): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

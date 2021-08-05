@@ -22,32 +22,24 @@ object mod extends Shortcut {
   }
   object LogOptionsI {
     
-    @scala.inline
-    def apply(): LogOptionsI = {
+    inline def apply(): LogOptionsI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogOptionsI]
     }
     
-    @scala.inline
-    implicit class LogOptionsIMutableBuilder[Self <: LogOptionsI] (val x: Self) extends AnyVal {
+    extension [Self <: LogOptionsI](x: Self) {
       
-      @scala.inline
-      def setLogFileName(value: String): Self = StObject.set(x, "logFileName", value.asInstanceOf[js.Any])
+      inline def setLogFileName(value: String): Self = StObject.set(x, "logFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogFileNameUndefined: Self = StObject.set(x, "logFileName", js.undefined)
+      inline def setLogFileNameUndefined: Self = StObject.set(x, "logFileName", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setLogMethod(value: Double): Self = StObject.set(x, "logMethod", value.asInstanceOf[js.Any])
+      inline def setLogMethod(value: Double): Self = StObject.set(x, "logMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogMethodUndefined: Self = StObject.set(x, "logMethod", js.undefined)
+      inline def setLogMethodUndefined: Self = StObject.set(x, "logMethod", js.undefined)
     }
   }
   

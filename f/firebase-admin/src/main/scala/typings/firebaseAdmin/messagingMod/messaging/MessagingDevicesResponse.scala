@@ -18,8 +18,7 @@ trait MessagingDevicesResponse extends StObject {
 }
 object MessagingDevicesResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canonicalRegistrationTokenCount: Double,
     failureCount: Double,
     multicastId: Double,
@@ -30,25 +29,18 @@ object MessagingDevicesResponse {
     __obj.asInstanceOf[MessagingDevicesResponse]
   }
   
-  @scala.inline
-  implicit class MessagingDevicesResponseMutableBuilder[Self <: MessagingDevicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingDevicesResponse](x: Self) {
     
-    @scala.inline
-    def setCanonicalRegistrationTokenCount(value: Double): Self = StObject.set(x, "canonicalRegistrationTokenCount", value.asInstanceOf[js.Any])
+    inline def setCanonicalRegistrationTokenCount(value: Double): Self = StObject.set(x, "canonicalRegistrationTokenCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
+    inline def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMulticastId(value: Double): Self = StObject.set(x, "multicastId", value.asInstanceOf[js.Any])
+    inline def setMulticastId(value: Double): Self = StObject.set(x, "multicastId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[MessagingDeviceResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[MessagingDeviceResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: MessagingDeviceResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: MessagingDeviceResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
   }
 }

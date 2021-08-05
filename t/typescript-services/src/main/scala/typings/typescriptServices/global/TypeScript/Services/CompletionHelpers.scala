@@ -21,8 +21,7 @@ object CompletionHelpers {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def filterContextualMembersList(
+  inline def filterContextualMembersList(
     contextualMemberSymbols: js.Array[PullSymbol],
     existingMembers: PullVisibleSymbolsInfo,
     fileName: String,
@@ -30,34 +29,26 @@ object CompletionHelpers {
   ): js.Array[PullSymbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterContextualMembersList")(contextualMemberSymbols.asInstanceOf[js.Any], existingMembers.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Array[PullSymbol]]
   
   /* static member */
-  @scala.inline
-  def getContainingObjectLiteralApplicableForCompletion(sourceUnit: SourceUnitSyntax, position: Double): PositionedElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainingObjectLiteralApplicableForCompletion")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[PositionedElement]
+  inline def getContainingObjectLiteralApplicableForCompletion(sourceUnit: SourceUnitSyntax, position: Double): PositionedElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainingObjectLiteralApplicableForCompletion")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[PositionedElement]
   
   /* static member */
-  @scala.inline
-  def getNonIdentifierCompleteTokenOnLeft(sourceUnit: SourceUnitSyntax, position: Double): PositionedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("getNonIdentifierCompleteTokenOnLeft")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[PositionedToken]
+  inline def getNonIdentifierCompleteTokenOnLeft(sourceUnit: SourceUnitSyntax, position: Double): PositionedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("getNonIdentifierCompleteTokenOnLeft")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[PositionedToken]
   
   /* static member */
-  @scala.inline
-  def getSpan(ast: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpan")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSpan(ast: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpan")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def getValidCompletionEntryDisplayName(displayName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidCompletionEntryDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getValidCompletionEntryDisplayName(displayName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidCompletionEntryDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def isCompletionListBlocker(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompletionListBlocker")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isCompletionListBlocker(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompletionListBlocker")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isIdentifierDefinitionLocation(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierDefinitionLocation")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isIdentifierDefinitionLocation(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierDefinitionLocation")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isRightOfIllegalDot(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRightOfIllegalDot")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isRightOfIllegalDot(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRightOfIllegalDot")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def symbolDeclarationIntersectsPosition(symbol: js.Any, fileName: js.Any, position: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolDeclarationIntersectsPosition")(symbol.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def symbolDeclarationIntersectsPosition(symbol: js.Any, fileName: js.Any, position: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolDeclarationIntersectsPosition")(symbol.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

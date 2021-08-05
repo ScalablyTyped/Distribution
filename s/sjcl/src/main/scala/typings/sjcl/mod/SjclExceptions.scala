@@ -17,8 +17,7 @@ trait SjclExceptions extends StObject {
 }
 object SjclExceptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bug: SjclExceptionFactory,
     corrupt: SjclExceptionFactory,
     invalid: SjclExceptionFactory,
@@ -28,19 +27,14 @@ object SjclExceptions {
     __obj.asInstanceOf[SjclExceptions]
   }
   
-  @scala.inline
-  implicit class SjclExceptionsMutableBuilder[Self <: SjclExceptions] (val x: Self) extends AnyVal {
+  extension [Self <: SjclExceptions](x: Self) {
     
-    @scala.inline
-    def setBug(value: SjclExceptionFactory): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
+    inline def setBug(value: SjclExceptionFactory): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrupt(value: SjclExceptionFactory): Self = StObject.set(x, "corrupt", value.asInstanceOf[js.Any])
+    inline def setCorrupt(value: SjclExceptionFactory): Self = StObject.set(x, "corrupt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalid(value: SjclExceptionFactory): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: SjclExceptionFactory): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotReady(value: SjclExceptionFactory): Self = StObject.set(x, "notReady", value.asInstanceOf[js.Any])
+    inline def setNotReady(value: SjclExceptionFactory): Self = StObject.set(x, "notReady", value.asInstanceOf[js.Any])
   }
 }

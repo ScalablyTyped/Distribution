@@ -18,8 +18,7 @@ trait IResultExt
 }
 object IResultExt {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _parsers: js.Array[js.Function],
     _types: Binary,
     command: String,
@@ -32,13 +31,10 @@ object IResultExt {
     __obj.asInstanceOf[IResultExt]
   }
   
-  @scala.inline
-  implicit class IResultExtMutableBuilder[Self <: IResultExt] (val x: Self) extends AnyVal {
+  extension [Self <: IResultExt](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

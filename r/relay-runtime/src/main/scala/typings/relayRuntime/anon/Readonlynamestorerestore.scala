@@ -15,16 +15,13 @@ trait Readonlynamestorerestore
 }
 object Readonlynamestorerestore {
   
-  @scala.inline
-  def apply(): Readonlynamestorerestore = {
+  inline def apply(): Readonlynamestorerestore = {
     val __obj = js.Dynamic.literal(name = "store.restore")
     __obj.asInstanceOf[Readonlynamestorerestore]
   }
   
-  @scala.inline
-  implicit class ReadonlynamestorerestoreMutableBuilder[Self <: Readonlynamestorerestore] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynamestorerestore](x: Self) {
     
-    @scala.inline
-    def setName(value: storeDotrestore): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: storeDotrestore): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

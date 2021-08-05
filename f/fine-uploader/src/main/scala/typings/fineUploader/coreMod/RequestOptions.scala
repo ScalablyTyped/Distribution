@@ -95,85 +95,59 @@ trait RequestOptions extends StObject {
 }
 object RequestOptions {
   
-  @scala.inline
-  def apply(): RequestOptions = {
+  inline def apply(): RequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestOptions]
   }
   
-  @scala.inline
-  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestOptions](x: Self) {
     
-    @scala.inline
-    def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+    inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+    inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setFilenameParam(value: String): Self = StObject.set(x, "filenameParam", value.asInstanceOf[js.Any])
+    inline def setFilenameParam(value: String): Self = StObject.set(x, "filenameParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameParamUndefined: Self = StObject.set(x, "filenameParam", js.undefined)
+    inline def setFilenameParamUndefined: Self = StObject.set(x, "filenameParam", js.undefined)
     
-    @scala.inline
-    def setForceMultipart(value: Boolean): Self = StObject.set(x, "forceMultipart", value.asInstanceOf[js.Any])
+    inline def setForceMultipart(value: Boolean): Self = StObject.set(x, "forceMultipart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceMultipartUndefined: Self = StObject.set(x, "forceMultipart", js.undefined)
+    inline def setForceMultipartUndefined: Self = StObject.set(x, "forceMultipart", js.undefined)
     
-    @scala.inline
-    def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
+    inline def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOmitDefaultParams(value: Boolean): Self = StObject.set(x, "omitDefaultParams", value.asInstanceOf[js.Any])
+    inline def setOmitDefaultParams(value: Boolean): Self = StObject.set(x, "omitDefaultParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmitDefaultParamsUndefined: Self = StObject.set(x, "omitDefaultParams", js.undefined)
+    inline def setOmitDefaultParamsUndefined: Self = StObject.set(x, "omitDefaultParams", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsInBody(value: Boolean): Self = StObject.set(x, "paramsInBody", value.asInstanceOf[js.Any])
+    inline def setParamsInBody(value: Boolean): Self = StObject.set(x, "paramsInBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsInBodyUndefined: Self = StObject.set(x, "paramsInBody", js.undefined)
+    inline def setParamsInBodyUndefined: Self = StObject.set(x, "paramsInBody", js.undefined)
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRequireSuccessJson(value: Boolean): Self = StObject.set(x, "requireSuccessJson", value.asInstanceOf[js.Any])
+    inline def setRequireSuccessJson(value: Boolean): Self = StObject.set(x, "requireSuccessJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireSuccessJsonUndefined: Self = StObject.set(x, "requireSuccessJson", js.undefined)
+    inline def setRequireSuccessJsonUndefined: Self = StObject.set(x, "requireSuccessJson", js.undefined)
     
-    @scala.inline
-    def setTotalFileSizeName(value: String): Self = StObject.set(x, "totalFileSizeName", value.asInstanceOf[js.Any])
+    inline def setTotalFileSizeName(value: String): Self = StObject.set(x, "totalFileSizeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFileSizeNameUndefined: Self = StObject.set(x, "totalFileSizeName", js.undefined)
+    inline def setTotalFileSizeNameUndefined: Self = StObject.set(x, "totalFileSizeName", js.undefined)
     
-    @scala.inline
-    def setUuidName(value: String): Self = StObject.set(x, "uuidName", value.asInstanceOf[js.Any])
+    inline def setUuidName(value: String): Self = StObject.set(x, "uuidName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidNameUndefined: Self = StObject.set(x, "uuidName", js.undefined)
+    inline def setUuidNameUndefined: Self = StObject.set(x, "uuidName", js.undefined)
   }
 }

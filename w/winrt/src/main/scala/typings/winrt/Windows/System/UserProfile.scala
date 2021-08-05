@@ -90,8 +90,7 @@ object UserProfile {
   }
   object IGlobalizationPreferencesStatics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calendars: IVectorView[String],
       clocks: IVectorView[String],
       currencies: IVectorView[String],
@@ -103,26 +102,19 @@ object UserProfile {
       __obj.asInstanceOf[IGlobalizationPreferencesStatics]
     }
     
-    @scala.inline
-    implicit class IGlobalizationPreferencesStaticsMutableBuilder[Self <: IGlobalizationPreferencesStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IGlobalizationPreferencesStatics](x: Self) {
       
-      @scala.inline
-      def setCalendars(value: IVectorView[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+      inline def setCalendars(value: IVectorView[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClocks(value: IVectorView[String]): Self = StObject.set(x, "clocks", value.asInstanceOf[js.Any])
+      inline def setClocks(value: IVectorView[String]): Self = StObject.set(x, "clocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencies(value: IVectorView[String]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
+      inline def setCurrencies(value: IVectorView[String]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeGeographicRegion(value: String): Self = StObject.set(x, "homeGeographicRegion", value.asInstanceOf[js.Any])
+      inline def setHomeGeographicRegion(value: String): Self = StObject.set(x, "homeGeographicRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekStartsOn(value: DayOfWeek): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
+      inline def setWeekStartsOn(value: DayOfWeek): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,8 +130,7 @@ object UserProfile {
   }
   object ILockScreenStatics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getImageStream: () => IRandomAccessStream,
       originalImageFile: Uri,
       setImageFileAsync: IStorageFile => IAsyncAction,
@@ -149,20 +140,15 @@ object UserProfile {
       __obj.asInstanceOf[ILockScreenStatics]
     }
     
-    @scala.inline
-    implicit class ILockScreenStaticsMutableBuilder[Self <: ILockScreenStatics] (val x: Self) extends AnyVal {
+    extension [Self <: ILockScreenStatics](x: Self) {
       
-      @scala.inline
-      def setGetImageStream(value: () => IRandomAccessStream): Self = StObject.set(x, "getImageStream", js.Any.fromFunction0(value))
+      inline def setGetImageStream(value: () => IRandomAccessStream): Self = StObject.set(x, "getImageStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOriginalImageFile(value: Uri): Self = StObject.set(x, "originalImageFile", value.asInstanceOf[js.Any])
+      inline def setOriginalImageFile(value: Uri): Self = StObject.set(x, "originalImageFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetImageFileAsync(value: IStorageFile => IAsyncAction): Self = StObject.set(x, "setImageFileAsync", js.Any.fromFunction1(value))
+      inline def setSetImageFileAsync(value: IStorageFile => IAsyncAction): Self = StObject.set(x, "setImageFileAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetImageStreamAsync(value: IRandomAccessStream => IAsyncAction): Self = StObject.set(x, "setImageStreamAsync", js.Any.fromFunction1(value))
+      inline def setSetImageStreamAsync(value: IRandomAccessStream => IAsyncAction): Self = StObject.set(x, "setImageStreamAsync", js.Any.fromFunction1(value))
     }
   }
   
@@ -198,8 +184,7 @@ object UserProfile {
   }
   object IUserInformationStatics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accountPictureChangeEnabled: Boolean,
       getAccountPicture: AccountPictureKind => IStorageFile,
       getDisplayNameAsync: () => IAsyncOperation[String],
@@ -219,50 +204,35 @@ object UserProfile {
       __obj.asInstanceOf[IUserInformationStatics]
     }
     
-    @scala.inline
-    implicit class IUserInformationStaticsMutableBuilder[Self <: IUserInformationStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IUserInformationStatics](x: Self) {
       
-      @scala.inline
-      def setAccountPictureChangeEnabled(value: Boolean): Self = StObject.set(x, "accountPictureChangeEnabled", value.asInstanceOf[js.Any])
+      inline def setAccountPictureChangeEnabled(value: Boolean): Self = StObject.set(x, "accountPictureChangeEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAccountPicture(value: AccountPictureKind => IStorageFile): Self = StObject.set(x, "getAccountPicture", js.Any.fromFunction1(value))
+      inline def setGetAccountPicture(value: AccountPictureKind => IStorageFile): Self = StObject.set(x, "getAccountPicture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDisplayNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getDisplayNameAsync", js.Any.fromFunction0(value))
+      inline def setGetDisplayNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getDisplayNameAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDomainNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getDomainNameAsync", js.Any.fromFunction0(value))
+      inline def setGetDomainNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getDomainNameAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFirstNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getFirstNameAsync", js.Any.fromFunction0(value))
+      inline def setGetFirstNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getFirstNameAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLastNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getLastNameAsync", js.Any.fromFunction0(value))
+      inline def setGetLastNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getLastNameAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrincipalNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getPrincipalNameAsync", js.Any.fromFunction0(value))
+      inline def setGetPrincipalNameAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getPrincipalNameAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSessionInitiationProtocolUriAsync(value: () => IAsyncOperation[Uri]): Self = StObject.set(x, "getSessionInitiationProtocolUriAsync", js.Any.fromFunction0(value))
+      inline def setGetSessionInitiationProtocolUriAsync(value: () => IAsyncOperation[Uri]): Self = StObject.set(x, "getSessionInitiationProtocolUriAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNameAccessAllowed(value: Boolean): Self = StObject.set(x, "nameAccessAllowed", value.asInstanceOf[js.Any])
+      inline def setNameAccessAllowed(value: Boolean): Self = StObject.set(x, "nameAccessAllowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnaccountpicturechanged(value: js.Any): Self = StObject.set(x, "onaccountpicturechanged", value.asInstanceOf[js.Any])
+      inline def setOnaccountpicturechanged(value: js.Any): Self = StObject.set(x, "onaccountpicturechanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAccountPictureAsync(value: IStorageFile => IAsyncOperation[SetAccountPictureResult]): Self = StObject.set(x, "setAccountPictureAsync", js.Any.fromFunction1(value))
+      inline def setSetAccountPictureAsync(value: IStorageFile => IAsyncOperation[SetAccountPictureResult]): Self = StObject.set(x, "setAccountPictureAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAccountPictureFromStreamAsync(value: IRandomAccessStream => IAsyncOperation[SetAccountPictureResult]): Self = StObject.set(x, "setAccountPictureFromStreamAsync", js.Any.fromFunction1(value))
+      inline def setSetAccountPictureFromStreamAsync(value: IRandomAccessStream => IAsyncOperation[SetAccountPictureResult]): Self = StObject.set(x, "setAccountPictureFromStreamAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAccountPicturesAsync(value: (IStorageFile, IStorageFile, IStorageFile) => IAsyncOperation[SetAccountPictureResult]): Self = StObject.set(x, "setAccountPicturesAsync", js.Any.fromFunction3(value))
+      inline def setSetAccountPicturesAsync(value: (IStorageFile, IStorageFile, IStorageFile) => IAsyncOperation[SetAccountPictureResult]): Self = StObject.set(x, "setAccountPicturesAsync", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetAccountPicturesFromStreamsAsync(
+      inline def setSetAccountPicturesFromStreamsAsync(
         value: (IRandomAccessStream, IRandomAccessStream, IRandomAccessStream) => IAsyncOperation[SetAccountPictureResult]
       ): Self = StObject.set(x, "setAccountPicturesFromStreamsAsync", js.Any.fromFunction3(value))
     }

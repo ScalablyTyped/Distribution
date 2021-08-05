@@ -17,13 +17,10 @@ object FormulaResult {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ERROR: `4` = 4.asInstanceOf[`4`]
+    inline def ERROR: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def STRING: `2` = 2.asInstanceOf[`2`]
+    inline def STRING: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def VALUE: `1` = 1.asInstanceOf[`1`]
+    inline def VALUE: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ManipulateOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ManipulateOptions]
+  inline def default(): ManipulateOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ManipulateOptions]
 }

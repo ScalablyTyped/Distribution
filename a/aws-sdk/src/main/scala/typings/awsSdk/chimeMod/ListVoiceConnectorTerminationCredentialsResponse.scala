@@ -13,22 +13,17 @@ trait ListVoiceConnectorTerminationCredentialsResponse extends StObject {
 }
 object ListVoiceConnectorTerminationCredentialsResponse {
   
-  @scala.inline
-  def apply(): ListVoiceConnectorTerminationCredentialsResponse = {
+  inline def apply(): ListVoiceConnectorTerminationCredentialsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVoiceConnectorTerminationCredentialsResponse]
   }
   
-  @scala.inline
-  implicit class ListVoiceConnectorTerminationCredentialsResponseMutableBuilder[Self <: ListVoiceConnectorTerminationCredentialsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListVoiceConnectorTerminationCredentialsResponse](x: Self) {
     
-    @scala.inline
-    def setUsernames(value: SensitiveStringList): Self = StObject.set(x, "Usernames", value.asInstanceOf[js.Any])
+    inline def setUsernames(value: SensitiveStringList): Self = StObject.set(x, "Usernames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernamesUndefined: Self = StObject.set(x, "Usernames", js.undefined)
+    inline def setUsernamesUndefined: Self = StObject.set(x, "Usernames", js.undefined)
     
-    @scala.inline
-    def setUsernamesVarargs(value: SensitiveString*): Self = StObject.set(x, "Usernames", js.Array(value :_*))
+    inline def setUsernamesVarargs(value: SensitiveString*): Self = StObject.set(x, "Usernames", js.Array(value :_*))
   }
 }

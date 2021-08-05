@@ -11,16 +11,13 @@ trait AuthenticationOAuth2 extends StObject {
 }
 object AuthenticationOAuth2 {
   
-  @scala.inline
-  def apply(oauth2: OAuth2): AuthenticationOAuth2 = {
+  inline def apply(oauth2: OAuth2): AuthenticationOAuth2 = {
     val __obj = js.Dynamic.literal(oauth2 = oauth2.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationOAuth2]
   }
   
-  @scala.inline
-  implicit class AuthenticationOAuth2MutableBuilder[Self <: AuthenticationOAuth2] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationOAuth2](x: Self) {
     
-    @scala.inline
-    def setOauth2(value: OAuth2): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
+    inline def setOauth2(value: OAuth2): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
   }
 }

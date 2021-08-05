@@ -28,8 +28,7 @@ trait ScriptEvent
 }
 object ScriptEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Arguments: SafeArray[js.Any],
     Helper: js.Any,
     ListenerType: `type`,
@@ -42,13 +41,10 @@ object ScriptEvent {
     __obj.asInstanceOf[ScriptEvent]
   }
   
-  @scala.inline
-  implicit class ScriptEventMutableBuilder[Self <: ScriptEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptEvent](x: Self) {
     
-    @scala.inline
-    def setScriptCode(value: String): Self = StObject.set(x, "ScriptCode", value.asInstanceOf[js.Any])
+    inline def setScriptCode(value: String): Self = StObject.set(x, "ScriptCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptType(value: String): Self = StObject.set(x, "ScriptType", value.asInstanceOf[js.Any])
+    inline def setScriptType(value: String): Self = StObject.set(x, "ScriptType", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait RoutesConfigDump extends StObject {
 }
 object RoutesConfigDump {
   
-  @scala.inline
-  def apply(): RoutesConfigDump = {
+  inline def apply(): RoutesConfigDump = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoutesConfigDump]
   }
   
-  @scala.inline
-  implicit class RoutesConfigDumpMutableBuilder[Self <: RoutesConfigDump] (val x: Self) extends AnyVal {
+  extension [Self <: RoutesConfigDump](x: Self) {
     
-    @scala.inline
-    def setDynamicRouteConfigs(value: js.Array[DynamicRouteConfig]): Self = StObject.set(x, "dynamicRouteConfigs", value.asInstanceOf[js.Any])
+    inline def setDynamicRouteConfigs(value: js.Array[DynamicRouteConfig]): Self = StObject.set(x, "dynamicRouteConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRouteConfigsUndefined: Self = StObject.set(x, "dynamicRouteConfigs", js.undefined)
+    inline def setDynamicRouteConfigsUndefined: Self = StObject.set(x, "dynamicRouteConfigs", js.undefined)
     
-    @scala.inline
-    def setDynamicRouteConfigsVarargs(value: DynamicRouteConfig*): Self = StObject.set(x, "dynamicRouteConfigs", js.Array(value :_*))
+    inline def setDynamicRouteConfigsVarargs(value: DynamicRouteConfig*): Self = StObject.set(x, "dynamicRouteConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setStaticRouteConfigs(value: js.Array[StaticRouteConfig]): Self = StObject.set(x, "staticRouteConfigs", value.asInstanceOf[js.Any])
+    inline def setStaticRouteConfigs(value: js.Array[StaticRouteConfig]): Self = StObject.set(x, "staticRouteConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticRouteConfigsUndefined: Self = StObject.set(x, "staticRouteConfigs", js.undefined)
+    inline def setStaticRouteConfigsUndefined: Self = StObject.set(x, "staticRouteConfigs", js.undefined)
     
-    @scala.inline
-    def setStaticRouteConfigsVarargs(value: StaticRouteConfig*): Self = StObject.set(x, "staticRouteConfigs", js.Array(value :_*))
+    inline def setStaticRouteConfigsVarargs(value: StaticRouteConfig*): Self = StObject.set(x, "staticRouteConfigs", js.Array(value :_*))
   }
 }

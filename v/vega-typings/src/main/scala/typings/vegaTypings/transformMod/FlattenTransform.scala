@@ -20,38 +20,28 @@ trait FlattenTransform
 }
 object FlattenTransform {
   
-  @scala.inline
-  def apply(fields: js.Array[FieldRef] | SignalRef): FlattenTransform = {
+  inline def apply(fields: js.Array[FieldRef] | SignalRef): FlattenTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("flatten")
     __obj.asInstanceOf[FlattenTransform]
   }
   
-  @scala.inline
-  implicit class FlattenTransformMutableBuilder[Self <: FlattenTransform] (val x: Self) extends AnyVal {
+  extension [Self <: FlattenTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (js.Array[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (js.Array[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: String | SignalRef): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String | SignalRef): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setType(value: flatten): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: flatten): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -26,6 +26,5 @@ object SortDirection {
   @JSImport("akumina-core", "SortDirection.Descending")
   @js.native
   def Descending: String = js.native
-  @scala.inline
-  def Descending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
+  inline def Descending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
 }

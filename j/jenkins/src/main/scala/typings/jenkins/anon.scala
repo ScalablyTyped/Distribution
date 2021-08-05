@@ -51,38 +51,28 @@ object anon {
   }
   object BaseUrl {
     
-    @scala.inline
-    def apply(): BaseUrl = {
+    inline def apply(): BaseUrl = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseUrl]
     }
     
-    @scala.inline
-    implicit class BaseUrlMutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
+    extension [Self <: BaseUrl](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setCrumbIssuer(value: Boolean): Self = StObject.set(x, "crumbIssuer", value.asInstanceOf[js.Any])
+      inline def setCrumbIssuer(value: Boolean): Self = StObject.set(x, "crumbIssuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrumbIssuerUndefined: Self = StObject.set(x, "crumbIssuer", js.undefined)
+      inline def setCrumbIssuerUndefined: Self = StObject.set(x, "crumbIssuer", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setPromisify(value: `false`): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
+      inline def setPromisify(value: `false`): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
+      inline def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
     }
   }
   
@@ -129,8 +119,7 @@ object anon {
   }
   object Cancel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: (Double, js.Function1[/* err */ Error, Unit]) => Unit,
       item: (Double, js.Function2[/* err */ Error, /* data */ js.Any, Unit]) => Unit,
       list: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit
@@ -139,17 +128,13 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    @scala.inline
-    implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+    extension [Self <: Cancel](x: Self) {
       
-      @scala.inline
-      def setCancel(value: (Double, js.Function1[/* err */ Error, Unit]) => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
+      inline def setCancel(value: (Double, js.Function1[/* err */ Error, Unit]) => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setItem(value: (Double, js.Function2[/* err */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "item", js.Any.fromFunction2(value))
+      inline def setItem(value: (Double, js.Function2[/* err */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "item", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setList(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+      inline def setList(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
     }
   }
   
@@ -244,35 +229,26 @@ object anon {
   }
   object CrumbIssuer {
     
-    @scala.inline
-    def apply(): CrumbIssuer = {
+    inline def apply(): CrumbIssuer = {
       val __obj = js.Dynamic.literal(promisify = true)
       __obj.asInstanceOf[CrumbIssuer]
     }
     
-    @scala.inline
-    implicit class CrumbIssuerMutableBuilder[Self <: CrumbIssuer] (val x: Self) extends AnyVal {
+    extension [Self <: CrumbIssuer](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setCrumbIssuer(value: Boolean): Self = StObject.set(x, "crumbIssuer", value.asInstanceOf[js.Any])
+      inline def setCrumbIssuer(value: Boolean): Self = StObject.set(x, "crumbIssuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrumbIssuerUndefined: Self = StObject.set(x, "crumbIssuer", js.undefined)
+      inline def setCrumbIssuerUndefined: Self = StObject.set(x, "crumbIssuer", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setPromisify(value: `true`): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
+      inline def setPromisify(value: `true`): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
     }
   }
   
@@ -284,26 +260,20 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(): Delay = {
+    inline def apply(): Delay = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setType(value: text | html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: text | html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -398,8 +368,7 @@ object anon {
   }
   object Item {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: Double => js.Promise[Unit],
       item: Double => js.Promise[js.Any],
       list: () => js.Promise[js.Any]
@@ -408,17 +377,13 @@ object anon {
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Double => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: Double => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItem(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setList(value: () => js.Promise[js.Any]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+      inline def setList(value: () => js.Promise[js.Any]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     }
   }
   

@@ -18,8 +18,7 @@ object reportMod {
   }
   object Report {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => js.Promise[Unit],
       getDependencies: () => js.Promise[Dependencies],
       getIssues: () => js.Promise[js.Array[Issue]]
@@ -28,17 +27,13 @@ object reportMod {
       __obj.asInstanceOf[Report]
     }
     
-    @scala.inline
-    implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+    extension [Self <: Report](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDependencies(value: () => js.Promise[Dependencies]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction0(value))
+      inline def setGetDependencies(value: () => js.Promise[Dependencies]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIssues(value: () => js.Promise[js.Array[Issue]]): Self = StObject.set(x, "getIssues", js.Any.fromFunction0(value))
+      inline def setGetIssues(value: () => js.Promise[js.Array[Issue]]): Self = StObject.set(x, "getIssues", js.Any.fromFunction0(value))
     }
   }
 }

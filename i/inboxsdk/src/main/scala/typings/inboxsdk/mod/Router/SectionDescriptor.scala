@@ -29,73 +29,51 @@ trait SectionDescriptor extends StObject {
 }
 object SectionDescriptor {
   
-  @scala.inline
-  def apply(title: String): SectionDescriptor = {
+  inline def apply(title: String): SectionDescriptor = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionDescriptor]
   }
   
-  @scala.inline
-  implicit class SectionDescriptorMutableBuilder[Self <: SectionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SectionDescriptor](x: Self) {
     
-    @scala.inline
-    def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
+    inline def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
     
-    @scala.inline
-    def setFooterLinkText(value: String): Self = StObject.set(x, "footerLinkText", value.asInstanceOf[js.Any])
+    inline def setFooterLinkText(value: String): Self = StObject.set(x, "footerLinkText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterLinkTextUndefined: Self = StObject.set(x, "footerLinkText", js.undefined)
+    inline def setFooterLinkTextUndefined: Self = StObject.set(x, "footerLinkText", js.undefined)
     
-    @scala.inline
-    def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
+    inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
+    inline def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
     
-    @scala.inline
-    def setOnDropdownClick(value: /* event */ SectionDropdownClickEvent => Unit): Self = StObject.set(x, "onDropdownClick", js.Any.fromFunction1(value))
+    inline def setOnDropdownClick(value: /* event */ SectionDropdownClickEvent => Unit): Self = StObject.set(x, "onDropdownClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDropdownClickUndefined: Self = StObject.set(x, "onDropdownClick", js.undefined)
+    inline def setOnDropdownClickUndefined: Self = StObject.set(x, "onDropdownClick", js.undefined)
     
-    @scala.inline
-    def setOnFooterLinkClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onFooterLinkClick", js.Any.fromFunction1(value))
+    inline def setOnFooterLinkClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onFooterLinkClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFooterLinkClickUndefined: Self = StObject.set(x, "onFooterLinkClick", js.undefined)
+    inline def setOnFooterLinkClickUndefined: Self = StObject.set(x, "onFooterLinkClick", js.undefined)
     
-    @scala.inline
-    def setOnTitleLinkClick(value: () => Unit): Self = StObject.set(x, "onTitleLinkClick", js.Any.fromFunction0(value))
+    inline def setOnTitleLinkClick(value: () => Unit): Self = StObject.set(x, "onTitleLinkClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTitleLinkClickUndefined: Self = StObject.set(x, "onTitleLinkClick", js.undefined)
+    inline def setOnTitleLinkClickUndefined: Self = StObject.set(x, "onTitleLinkClick", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTableRows(value: js.Array[RowDescriptor]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
+    inline def setTableRows(value: js.Array[RowDescriptor]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
+    inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
     
-    @scala.inline
-    def setTableRowsVarargs(value: RowDescriptor*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+    inline def setTableRowsVarargs(value: RowDescriptor*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLinkText(value: String): Self = StObject.set(x, "titleLinkText", value.asInstanceOf[js.Any])
+    inline def setTitleLinkText(value: String): Self = StObject.set(x, "titleLinkText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLinkTextUndefined: Self = StObject.set(x, "titleLinkText", js.undefined)
+    inline def setTitleLinkTextUndefined: Self = StObject.set(x, "titleLinkText", js.undefined)
   }
 }

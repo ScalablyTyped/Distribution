@@ -10,19 +10,15 @@ trait BucketOptions extends StObject {
 }
 object BucketOptions {
   
-  @scala.inline
-  def apply(): BucketOptions = {
+  inline def apply(): BucketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketOptions]
   }
   
-  @scala.inline
-  implicit class BucketOptionsMutableBuilder[Self <: BucketOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BucketOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait TransactionLock extends StObject {
 }
 object TransactionLock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     KEY_SHARE: TransactionLockLevelKeyShare,
     NO_KEY_UPDATE: TransactionLockLevelNoKeyUpdate,
     SHARE: TransactionLockLevelShare,
@@ -33,19 +32,14 @@ object TransactionLock {
     __obj.asInstanceOf[TransactionLock]
   }
   
-  @scala.inline
-  implicit class TransactionLockMutableBuilder[Self <: TransactionLock] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionLock](x: Self) {
     
-    @scala.inline
-    def setKEY_SHARE(value: TransactionLockLevelKeyShare): Self = StObject.set(x, "KEY_SHARE", value.asInstanceOf[js.Any])
+    inline def setKEY_SHARE(value: TransactionLockLevelKeyShare): Self = StObject.set(x, "KEY_SHARE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNO_KEY_UPDATE(value: TransactionLockLevelNoKeyUpdate): Self = StObject.set(x, "NO_KEY_UPDATE", value.asInstanceOf[js.Any])
+    inline def setNO_KEY_UPDATE(value: TransactionLockLevelNoKeyUpdate): Self = StObject.set(x, "NO_KEY_UPDATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHARE(value: TransactionLockLevelShare): Self = StObject.set(x, "SHARE", value.asInstanceOf[js.Any])
+    inline def setSHARE(value: TransactionLockLevelShare): Self = StObject.set(x, "SHARE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUPDATE(value: TransactionLockLevelUpdate): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
+    inline def setUPDATE(value: TransactionLockLevelUpdate): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
   }
 }

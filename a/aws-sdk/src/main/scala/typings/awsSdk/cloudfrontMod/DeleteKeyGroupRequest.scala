@@ -18,22 +18,17 @@ trait DeleteKeyGroupRequest extends StObject {
 }
 object DeleteKeyGroupRequest {
   
-  @scala.inline
-  def apply(Id: String): DeleteKeyGroupRequest = {
+  inline def apply(Id: String): DeleteKeyGroupRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteKeyGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteKeyGroupRequestMutableBuilder[Self <: DeleteKeyGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteKeyGroupRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

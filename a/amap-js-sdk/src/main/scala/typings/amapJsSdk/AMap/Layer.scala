@@ -28,8 +28,7 @@ trait Layer
 }
 object Layer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getTiles: () => js.Array[String],
     getZooms: () => js.Array[Double],
     hide: () => Unit,
@@ -46,34 +45,24 @@ object Layer {
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setGetTiles(value: () => js.Array[String]): Self = StObject.set(x, "getTiles", js.Any.fromFunction0(value))
+    inline def setGetTiles(value: () => js.Array[String]): Self = StObject.set(x, "getTiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetZooms(value: () => js.Array[Double]): Self = StObject.set(x, "getZooms", js.Any.fromFunction0(value))
+    inline def setGetZooms(value: () => js.Array[Double]): Self = StObject.set(x, "getZooms", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+    inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
+    inline def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
+    inline def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTileUrl(value: () => Unit): Self = StObject.set(x, "setTileUrl", js.Any.fromFunction0(value))
+    inline def setSetTileUrl(value: () => Unit): Self = StObject.set(x, "setTileUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetzIndex(value: Double => Unit): Self = StObject.set(x, "setzIndex", js.Any.fromFunction1(value))
+    inline def setSetzIndex(value: Double => Unit): Self = StObject.set(x, "setzIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

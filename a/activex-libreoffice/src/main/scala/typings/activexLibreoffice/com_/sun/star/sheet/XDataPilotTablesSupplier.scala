@@ -28,8 +28,7 @@ trait XDataPilotTablesSupplier
 }
 object XDataPilotTablesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataPilotTables: XDataPilotTables,
     acquire: () => Unit,
     getDataPilotTables: () => XDataPilotTables,
@@ -40,13 +39,10 @@ object XDataPilotTablesSupplier {
     __obj.asInstanceOf[XDataPilotTablesSupplier]
   }
   
-  @scala.inline
-  implicit class XDataPilotTablesSupplierMutableBuilder[Self <: XDataPilotTablesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotTablesSupplier](x: Self) {
     
-    @scala.inline
-    def setDataPilotTables(value: XDataPilotTables): Self = StObject.set(x, "DataPilotTables", value.asInstanceOf[js.Any])
+    inline def setDataPilotTables(value: XDataPilotTables): Self = StObject.set(x, "DataPilotTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataPilotTables(value: () => XDataPilotTables): Self = StObject.set(x, "getDataPilotTables", js.Any.fromFunction0(value))
+    inline def setGetDataPilotTables(value: () => XDataPilotTables): Self = StObject.set(x, "getDataPilotTables", js.Any.fromFunction0(value))
   }
 }

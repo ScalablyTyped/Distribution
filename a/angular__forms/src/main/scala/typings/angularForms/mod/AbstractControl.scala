@@ -28,21 +28,21 @@ abstract class AbstractControl () extends StObject {
   def this(validators: ValidatorFn, asyncValidators: js.Array[AsyncValidatorFn]) = this()
   def this(validators: ValidatorFn, asyncValidators: AsyncValidatorFn) = this()
   
-  var _asyncValidationSubscription: js.Any = js.native
+  /* private */ var _asyncValidationSubscription: js.Any = js.native
   
-  var _calculateStatus: js.Any = js.native
+  /* private */ var _calculateStatus: js.Any = js.native
   
-  var _cancelExistingSubscription: js.Any = js.native
+  /* private */ var _cancelExistingSubscription: js.Any = js.native
   
-  var _parent: js.Any = js.native
+  /* private */ var _parent: js.Any = js.native
   
-  var _runAsyncValidator: js.Any = js.native
+  /* private */ var _runAsyncValidator: js.Any = js.native
   
-  var _runValidator: js.Any = js.native
+  /* private */ var _runValidator: js.Any = js.native
   
-  var _setInitialStatus: js.Any = js.native
+  /* private */ var _setInitialStatus: js.Any = js.native
   
-  var _updateAncestors: js.Any = js.native
+  /* private */ var _updateAncestors: js.Any = js.native
   
   /**
     * The function that is used to determine the validity of this control asynchronously.

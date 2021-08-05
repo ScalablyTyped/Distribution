@@ -10,15 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ensureEnding(str: String, suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureEnding")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ensureEnding(str: String, suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureEnding")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def ensureLeading(str: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLeading")(str.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ensureLeading(str: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLeading")(str.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def removeEnding(str: String, suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEnding")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def removeEnding(str: String, suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEnding")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def removeLeading(str: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLeading")(str.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def removeLeading(str: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLeading")(str.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
 }

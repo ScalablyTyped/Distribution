@@ -14,40 +14,29 @@ trait PropertyHyphenFallback extends StObject {
 }
 object PropertyHyphenFallback {
   
-  @scala.inline
-  def apply(): PropertyHyphenFallback = {
+  inline def apply(): PropertyHyphenFallback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyHyphenFallback]
   }
   
-  @scala.inline
-  implicit class PropertyHyphenFallbackMutableBuilder[Self <: PropertyHyphenFallback] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyHyphenFallback](x: Self) {
     
-    @scala.inline
-    def setInherits(value: PropertyInheritsProperty | js.Array[PropertyInheritsProperty]): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
+    inline def setInherits(value: PropertyInheritsProperty | js.Array[PropertyInheritsProperty]): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
+    inline def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
     
-    @scala.inline
-    def setInheritsVarargs(value: PropertyInheritsProperty*): Self = StObject.set(x, "inherits", js.Array(value :_*))
+    inline def setInheritsVarargs(value: PropertyInheritsProperty*): Self = StObject.set(x, "inherits", js.Array(value :_*))
     
-    @scala.inline
-    def `setInitial-value`(value: String | js.Array[String]): Self = StObject.set(x, "initial-value", value.asInstanceOf[js.Any])
+    inline def `setInitial-value`(value: String | js.Array[String]): Self = StObject.set(x, "initial-value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setInitial-valueUndefined`: Self = StObject.set(x, "initial-value", js.undefined)
+    inline def `setInitial-valueUndefined`: Self = StObject.set(x, "initial-value", js.undefined)
     
-    @scala.inline
-    def `setInitial-valueVarargs`(value: String*): Self = StObject.set(x, "initial-value", js.Array(value :_*))
+    inline def `setInitial-valueVarargs`(value: String*): Self = StObject.set(x, "initial-value", js.Array(value :_*))
     
-    @scala.inline
-    def setSyntax(value: String | js.Array[String]): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: String | js.Array[String]): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     
-    @scala.inline
-    def setSyntaxVarargs(value: String*): Self = StObject.set(x, "syntax", js.Array(value :_*))
+    inline def setSyntaxVarargs(value: String*): Self = StObject.set(x, "syntax", js.Array(value :_*))
   }
 }

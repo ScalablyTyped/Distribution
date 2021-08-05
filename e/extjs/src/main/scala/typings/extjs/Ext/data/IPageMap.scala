@@ -35,31 +35,23 @@ trait IPageMap
 }
 object IPageMap {
   
-  @scala.inline
-  def apply(): IPageMap = {
+  inline def apply(): IPageMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPageMap]
   }
   
-  @scala.inline
-  implicit class IPageMapMutableBuilder[Self <: IPageMap] (val x: Self) extends AnyVal {
+  extension [Self <: IPageMap](x: Self) {
     
-    @scala.inline
-    def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
+    inline def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
+    inline def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
     
-    @scala.inline
-    def setFindIndexBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction2(value))
+    inline def setFindIndexBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
+    inline def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
     
-    @scala.inline
-    def setRemove(value: () => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

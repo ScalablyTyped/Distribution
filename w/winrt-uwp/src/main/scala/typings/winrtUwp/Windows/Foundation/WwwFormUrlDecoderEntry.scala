@@ -15,19 +15,15 @@ trait WwwFormUrlDecoderEntry extends StObject {
 }
 object WwwFormUrlDecoderEntry {
   
-  @scala.inline
-  def apply(name: String, value: String): WwwFormUrlDecoderEntry = {
+  inline def apply(name: String, value: String): WwwFormUrlDecoderEntry = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WwwFormUrlDecoderEntry]
   }
   
-  @scala.inline
-  implicit class WwwFormUrlDecoderEntryMutableBuilder[Self <: WwwFormUrlDecoderEntry] (val x: Self) extends AnyVal {
+  extension [Self <: WwwFormUrlDecoderEntry](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

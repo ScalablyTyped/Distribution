@@ -14,31 +14,23 @@ trait CoverInfo extends StObject {
 }
 object CoverInfo {
   
-  @scala.inline
-  def apply(): CoverInfo = {
+  inline def apply(): CoverInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoverInfo]
   }
   
-  @scala.inline
-  implicit class CoverInfoMutableBuilder[Self <: CoverInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CoverInfo](x: Self) {
     
-    @scala.inline
-    def setCoverInfo(value: LeftImageOffset): Self = StObject.set(x, "coverInfo", value.asInstanceOf[js.Any])
+    inline def setCoverInfo(value: LeftImageOffset): Self = StObject.set(x, "coverInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverInfoUndefined: Self = StObject.set(x, "coverInfo", js.undefined)
+    inline def setCoverInfoUndefined: Self = StObject.set(x, "coverInfo", js.undefined)
     
-    @scala.inline
-    def setCoverPhoto(value: Height): Self = StObject.set(x, "coverPhoto", value.asInstanceOf[js.Any])
+    inline def setCoverPhoto(value: Height): Self = StObject.set(x, "coverPhoto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverPhotoUndefined: Self = StObject.set(x, "coverPhoto", js.undefined)
+    inline def setCoverPhotoUndefined: Self = StObject.set(x, "coverPhoto", js.undefined)
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait CompositeTemplate extends StObject {
 }
 object CompositeTemplate {
   
-  @scala.inline
-  def apply(): CompositeTemplate = {
+  inline def apply(): CompositeTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompositeTemplate]
   }
   
-  @scala.inline
-  implicit class CompositeTemplateMutableBuilder[Self <: CompositeTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: CompositeTemplate](x: Self) {
     
-    @scala.inline
-    def setCompositeTemplateId(value: String): Self = StObject.set(x, "compositeTemplateId", value.asInstanceOf[js.Any])
+    inline def setCompositeTemplateId(value: String): Self = StObject.set(x, "compositeTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeTemplateIdUndefined: Self = StObject.set(x, "compositeTemplateId", js.undefined)
+    inline def setCompositeTemplateIdUndefined: Self = StObject.set(x, "compositeTemplateId", js.undefined)
     
-    @scala.inline
-    def setDocument(value: /* A document object. */ Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: /* A document object. */ Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setInlineTemplates(value: js.Array[InlineTemplate]): Self = StObject.set(x, "inlineTemplates", value.asInstanceOf[js.Any])
+    inline def setInlineTemplates(value: js.Array[InlineTemplate]): Self = StObject.set(x, "inlineTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineTemplatesUndefined: Self = StObject.set(x, "inlineTemplates", js.undefined)
+    inline def setInlineTemplatesUndefined: Self = StObject.set(x, "inlineTemplates", js.undefined)
     
-    @scala.inline
-    def setInlineTemplatesVarargs(value: InlineTemplate*): Self = StObject.set(x, "inlineTemplates", js.Array(value :_*))
+    inline def setInlineTemplatesVarargs(value: InlineTemplate*): Self = StObject.set(x, "inlineTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setPdfMetaDataTemplateSequence(value: String): Self = StObject.set(x, "pdfMetaDataTemplateSequence", value.asInstanceOf[js.Any])
+    inline def setPdfMetaDataTemplateSequence(value: String): Self = StObject.set(x, "pdfMetaDataTemplateSequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfMetaDataTemplateSequenceUndefined: Self = StObject.set(x, "pdfMetaDataTemplateSequence", js.undefined)
+    inline def setPdfMetaDataTemplateSequenceUndefined: Self = StObject.set(x, "pdfMetaDataTemplateSequence", js.undefined)
     
-    @scala.inline
-    def setServerTemplates(value: js.Array[ServerTemplate]): Self = StObject.set(x, "serverTemplates", value.asInstanceOf[js.Any])
+    inline def setServerTemplates(value: js.Array[ServerTemplate]): Self = StObject.set(x, "serverTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTemplatesUndefined: Self = StObject.set(x, "serverTemplates", js.undefined)
+    inline def setServerTemplatesUndefined: Self = StObject.set(x, "serverTemplates", js.undefined)
     
-    @scala.inline
-    def setServerTemplatesVarargs(value: ServerTemplate*): Self = StObject.set(x, "serverTemplates", js.Array(value :_*))
+    inline def setServerTemplatesVarargs(value: ServerTemplate*): Self = StObject.set(x, "serverTemplates", js.Array(value :_*))
   }
 }

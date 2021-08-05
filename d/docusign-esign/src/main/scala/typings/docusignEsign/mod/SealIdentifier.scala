@@ -18,25 +18,19 @@ trait SealIdentifier extends StObject {
 }
 object SealIdentifier {
   
-  @scala.inline
-  def apply(): SealIdentifier = {
+  inline def apply(): SealIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SealIdentifier]
   }
   
-  @scala.inline
-  implicit class SealIdentifierMutableBuilder[Self <: SealIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: SealIdentifier](x: Self) {
     
-    @scala.inline
-    def setSealDisplayName(value: String): Self = StObject.set(x, "sealDisplayName", value.asInstanceOf[js.Any])
+    inline def setSealDisplayName(value: String): Self = StObject.set(x, "sealDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSealDisplayNameUndefined: Self = StObject.set(x, "sealDisplayName", js.undefined)
+    inline def setSealDisplayNameUndefined: Self = StObject.set(x, "sealDisplayName", js.undefined)
     
-    @scala.inline
-    def setSealName(value: String): Self = StObject.set(x, "sealName", value.asInstanceOf[js.Any])
+    inline def setSealName(value: String): Self = StObject.set(x, "sealName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSealNameUndefined: Self = StObject.set(x, "sealName", js.undefined)
+    inline def setSealNameUndefined: Self = StObject.set(x, "sealName", js.undefined)
   }
 }

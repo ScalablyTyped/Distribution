@@ -32,8 +32,7 @@ object anon {
   }
   object Attrs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       duration: Double,
       errors: Double,
       init: Boolean,
@@ -46,41 +45,29 @@ object anon {
       __obj.asInstanceOf[Attrs]
     }
     
-    @scala.inline
-    implicit class AttrsMutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
+    extension [Self <: Attrs](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: Environment): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Environment): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
+      inline def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
+      inline def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarted(value: String): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+      inline def setStarted(value: String): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: SessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: SessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +81,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setDomain(value: StringDictionary[js.Any]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: StringDictionary[js.Any]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     }
   }
   
@@ -123,38 +106,28 @@ object anon {
   }
   object Environment {
     
-    @scala.inline
-    def apply(): Environment = {
+    inline def apply(): Environment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Environment]
     }
     
-    @scala.inline
-    implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+    extension [Self <: Environment](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
+      inline def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp_addressUndefined: Self = StObject.set(x, "ip_address", js.undefined)
+      inline def setIp_addressUndefined: Self = StObject.set(x, "ip_address", js.undefined)
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
       
-      @scala.inline
-      def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
+      inline def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
+      inline def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
     }
   }
   
@@ -169,26 +142,20 @@ object anon {
   }
   object Extensions {
     
-    @scala.inline
-    def apply(): Extensions = {
+    inline def apply(): Extensions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Extensions]
     }
     
-    @scala.inline
-    implicit class ExtensionsMutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
+    extension [Self <: Extensions](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: Dictkey): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: Dictkey): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setHub(value: Hub): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+      inline def setHub(value: Hub): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
+      inline def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
     }
   }
   
@@ -217,77 +184,54 @@ object anon {
   }
   object OmitSessionContextstarted {
     
-    @scala.inline
-    def apply(): OmitSessionContextstarted = {
+    inline def apply(): OmitSessionContextstarted = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OmitSessionContextstarted]
     }
     
-    @scala.inline
-    implicit class OmitSessionContextstartedMutableBuilder[Self <: OmitSessionContextstarted] (val x: Self) extends AnyVal {
+    extension [Self <: OmitSessionContextstarted](x: Self) {
       
-      @scala.inline
-      def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
+      inline def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
+      inline def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidUndefined: Self = StObject.set(x, "sid", js.undefined)
+      inline def setSidUndefined: Self = StObject.set(x, "sid", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       
-      @scala.inline
-      def setUserNull: Self = StObject.set(x, "user", null)
+      inline def setUserNull: Self = StObject.set(x, "user", null)
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
 }

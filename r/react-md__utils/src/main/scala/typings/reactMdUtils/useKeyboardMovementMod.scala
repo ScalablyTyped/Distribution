@@ -19,8 +19,7 @@ object useKeyboardMovementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+  inline def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
     hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue: KeyboardMovementOptions[D, CE, IE]
   ): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardMovement")(hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
@@ -94,8 +93,7 @@ object useKeyboardMovementMod {
   }
   object BaseKeyboardMovementOptions {
     
-    @scala.inline
-    def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+    inline def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
       decrementKeys: js.Array[IncrementMovementKey],
       incrementKeys: js.Array[IncrementMovementKey],
       items: js.Array[D],
@@ -106,94 +104,65 @@ object useKeyboardMovementMod {
       __obj.asInstanceOf[BaseKeyboardMovementOptions[D, CE, IE]]
     }
     
-    @scala.inline
-    implicit class BaseKeyboardMovementOptionsMutableBuilder[Self <: BaseKeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (BaseKeyboardMovementOptions[D, CE, IE])) extends AnyVal {
+    extension [Self <: BaseKeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (BaseKeyboardMovementOptions[D, CE, IE])) {
       
-      @scala.inline
-      def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
+      inline def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value :_*))
+      inline def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setFindMatchIndex(
+      inline def setFindMatchIndex(
         value: (/* value */ String, /* values */ js.Array[String], /* startIndex */ Double, /* isSelfMatchable */ js.UndefOr[Boolean]) => Double
       ): Self = StObject.set(x, "findMatchIndex", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindMatchIndexUndefined: Self = StObject.set(x, "findMatchIndex", js.undefined)
+      inline def setFindMatchIndexUndefined: Self = StObject.set(x, "findMatchIndex", js.undefined)
       
-      @scala.inline
-      def setGetItemValue(value: (D, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
+      inline def setGetItemValue(value: (D, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetItemValueUndefined: Self = StObject.set(x, "getItemValue", js.undefined)
+      inline def setGetItemValueUndefined: Self = StObject.set(x, "getItemValue", js.undefined)
       
-      @scala.inline
-      def setIncrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
+      inline def setIncrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value :_*))
+      inline def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setJumpToFirstKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
+      inline def setJumpToFirstKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value :_*))
+      inline def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setJumpToLastKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
+      inline def setJumpToLastKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value :_*))
+      inline def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
+      inline def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopableUndefined: Self = StObject.set(x, "loopable", js.undefined)
+      inline def setLoopableUndefined: Self = StObject.set(x, "loopable", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* data */ SearchData[D, CE], /* itemRefs */ ItemRefList[IE]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* data */ SearchData[D, CE], /* itemRefs */ ItemRefList[IE]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[CE] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[CE] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setResetTime(value: Double): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
+      inline def setResetTime(value: Double): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
+      inline def setResetTimeUndefined: Self = StObject.set(x, "resetTime", js.undefined)
       
-      @scala.inline
-      def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+      inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
       
-      @scala.inline
-      def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+      inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+      inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
       
-      @scala.inline
-      def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
+      inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
     }
   }
   
@@ -223,8 +192,7 @@ object useKeyboardMovementMod {
   }
   object KeyboardMovementOptions {
     
-    @scala.inline
-    def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+    inline def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
       decrementKeys: js.Array[IncrementMovementKey],
       focusedIndex: Double,
       incrementKeys: js.Array[IncrementMovementKey],
@@ -237,14 +205,11 @@ object useKeyboardMovementMod {
       __obj.asInstanceOf[KeyboardMovementOptions[D, CE, IE]]
     }
     
-    @scala.inline
-    implicit class KeyboardMovementOptionsMutableBuilder[Self <: KeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (KeyboardMovementOptions[D, CE, IE])) extends AnyVal {
+    extension [Self <: KeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (KeyboardMovementOptions[D, CE, IE])) {
       
-      @scala.inline
-      def setFocusedIndex(value: Double): Self = StObject.set(x, "focusedIndex", value.asInstanceOf[js.Any])
+      inline def setFocusedIndex(value: Double): Self = StObject.set(x, "focusedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: (SearchData[D, CE], ItemRefList[IE]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (SearchData[D, CE], ItemRefList[IE]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     }
   }
   

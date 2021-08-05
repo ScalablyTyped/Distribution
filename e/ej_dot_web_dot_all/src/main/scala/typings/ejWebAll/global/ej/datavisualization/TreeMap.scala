@@ -59,8 +59,7 @@ object TreeMap {
   @JSGlobal("ej.datavisualization.TreeMap.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.TreeMap.Position")
   @js.native
@@ -122,8 +121,7 @@ object TreeMap {
   @JSGlobal("ej.datavisualization.TreeMap.fn")
   @js.native
   def fn: typings.ejWebAll.ej.datavisualization.TreeMap = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.datavisualization.TreeMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.datavisualization.TreeMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.TreeMap.groupSelectionMode")
   @js.native

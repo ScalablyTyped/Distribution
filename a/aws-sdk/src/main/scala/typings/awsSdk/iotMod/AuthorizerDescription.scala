@@ -53,67 +53,47 @@ trait AuthorizerDescription extends StObject {
 }
 object AuthorizerDescription {
   
-  @scala.inline
-  def apply(): AuthorizerDescription = {
+  inline def apply(): AuthorizerDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizerDescription]
   }
   
-  @scala.inline
-  implicit class AuthorizerDescriptionMutableBuilder[Self <: AuthorizerDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizerDescription](x: Self) {
     
-    @scala.inline
-    def setAuthorizerArn(value: AuthorizerArn): Self = StObject.set(x, "authorizerArn", value.asInstanceOf[js.Any])
+    inline def setAuthorizerArn(value: AuthorizerArn): Self = StObject.set(x, "authorizerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerArnUndefined: Self = StObject.set(x, "authorizerArn", js.undefined)
+    inline def setAuthorizerArnUndefined: Self = StObject.set(x, "authorizerArn", js.undefined)
     
-    @scala.inline
-    def setAuthorizerFunctionArn(value: AuthorizerFunctionArn): Self = StObject.set(x, "authorizerFunctionArn", value.asInstanceOf[js.Any])
+    inline def setAuthorizerFunctionArn(value: AuthorizerFunctionArn): Self = StObject.set(x, "authorizerFunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerFunctionArnUndefined: Self = StObject.set(x, "authorizerFunctionArn", js.undefined)
+    inline def setAuthorizerFunctionArnUndefined: Self = StObject.set(x, "authorizerFunctionArn", js.undefined)
     
-    @scala.inline
-    def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
+    inline def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerNameUndefined: Self = StObject.set(x, "authorizerName", js.undefined)
+    inline def setAuthorizerNameUndefined: Self = StObject.set(x, "authorizerName", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setSigningDisabled(value: BooleanKey): Self = StObject.set(x, "signingDisabled", value.asInstanceOf[js.Any])
+    inline def setSigningDisabled(value: BooleanKey): Self = StObject.set(x, "signingDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningDisabledUndefined: Self = StObject.set(x, "signingDisabled", js.undefined)
+    inline def setSigningDisabledUndefined: Self = StObject.set(x, "signingDisabled", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AuthorizerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AuthorizerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTokenKeyName(value: TokenKeyName): Self = StObject.set(x, "tokenKeyName", value.asInstanceOf[js.Any])
+    inline def setTokenKeyName(value: TokenKeyName): Self = StObject.set(x, "tokenKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenKeyNameUndefined: Self = StObject.set(x, "tokenKeyName", js.undefined)
+    inline def setTokenKeyNameUndefined: Self = StObject.set(x, "tokenKeyName", js.undefined)
     
-    @scala.inline
-    def setTokenSigningPublicKeys(value: PublicKeyMap): Self = StObject.set(x, "tokenSigningPublicKeys", value.asInstanceOf[js.Any])
+    inline def setTokenSigningPublicKeys(value: PublicKeyMap): Self = StObject.set(x, "tokenSigningPublicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenSigningPublicKeysUndefined: Self = StObject.set(x, "tokenSigningPublicKeys", js.undefined)
+    inline def setTokenSigningPublicKeysUndefined: Self = StObject.set(x, "tokenSigningPublicKeys", js.undefined)
   }
 }

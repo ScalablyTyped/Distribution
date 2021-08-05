@@ -58,10 +58,8 @@ object byteBufferMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def allocate(): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[ByteBuffer]
-    @scala.inline
-    def allocate(size: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+    inline def allocate(): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[ByteBuffer]
+    inline def allocate(size: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
   }
   
   trait ByteBuffer extends StObject {
@@ -92,8 +90,7 @@ object byteBufferMod {
   }
   object ByteBuffer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: Uint8Array,
       get: () => Double,
       getInt32: () => Double,
@@ -111,44 +108,31 @@ object byteBufferMod {
       __obj.asInstanceOf[ByteBuffer]
     }
     
-    @scala.inline
-    implicit class ByteBufferMutableBuilder[Self <: ByteBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: ByteBuffer](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: () => Double): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => Double): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInt32(value: () => Double): Self = StObject.set(x, "getInt32", js.Any.fromFunction0(value))
+      inline def setGetInt32(value: () => Double): Self = StObject.set(x, "getInt32", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInt64(value: () => Double): Self = StObject.set(x, "getInt64", js.Any.fromFunction0(value))
+      inline def setGetInt64(value: () => Double): Self = StObject.set(x, "getInt64", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInt32ArrayForConvert(value: Uint32Array): Self = StObject.set(x, "int32ArrayForConvert", value.asInstanceOf[js.Any])
+      inline def setInt32ArrayForConvert(value: Uint32Array): Self = StObject.set(x, "int32ArrayForConvert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt8ArrayForConvert(value: Uint8Array): Self = StObject.set(x, "int8ArrayForConvert", value.asInstanceOf[js.Any])
+      inline def setInt8ArrayForConvert(value: Uint8Array): Self = StObject.set(x, "int8ArrayForConvert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPut(value: Double => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: Double => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPutArray(value: Uint8Array => Unit): Self = StObject.set(x, "putArray", js.Any.fromFunction1(value))
+      inline def setPutArray(value: Uint8Array => Unit): Self = StObject.set(x, "putArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPutInt32(value: Double => Unit): Self = StObject.set(x, "putInt32", js.Any.fromFunction1(value))
+      inline def setPutInt32(value: Double => Unit): Self = StObject.set(x, "putInt32", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPutInt64(value: Double => Unit): Self = StObject.set(x, "putInt64", js.Any.fromFunction1(value))
+      inline def setPutInt64(value: Double => Unit): Self = StObject.set(x, "putInt64", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResetPosition(value: () => Unit): Self = StObject.set(x, "resetPosition", js.Any.fromFunction0(value))
+      inline def setResetPosition(value: () => Unit): Self = StObject.set(x, "resetPosition", js.Any.fromFunction0(value))
     }
   }
 }

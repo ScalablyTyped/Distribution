@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object EBMLStringValueTagSchema {
   
-  @scala.inline
-  def apply(description: String, level: Double, name: String): EBMLStringValueTagSchema = {
+  inline def apply(description: String, level: Double, name: String): EBMLStringValueTagSchema = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("s")
     __obj.asInstanceOf[EBMLStringValueTagSchema]
   }
   
-  @scala.inline
-  implicit class EBMLStringValueTagSchemaMutableBuilder[Self <: EBMLStringValueTagSchema] (val x: Self) extends AnyVal {
+  extension [Self <: EBMLStringValueTagSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: s): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: s): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

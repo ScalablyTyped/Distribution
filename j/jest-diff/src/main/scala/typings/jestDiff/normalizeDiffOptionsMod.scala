@@ -12,11 +12,8 @@ object normalizeDiffOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def noColor(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noColor")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def noColor(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noColor")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def normalizeDiffOptions(): DiffOptionsNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeDiffOptions")().asInstanceOf[DiffOptionsNormalized]
-  @scala.inline
-  def normalizeDiffOptions(options: DiffOptions): DiffOptionsNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeDiffOptions")(options.asInstanceOf[js.Any]).asInstanceOf[DiffOptionsNormalized]
+  inline def normalizeDiffOptions(): DiffOptionsNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeDiffOptions")().asInstanceOf[DiffOptionsNormalized]
+  inline def normalizeDiffOptions(options: DiffOptions): DiffOptionsNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeDiffOptions")(options.asInstanceOf[js.Any]).asInstanceOf[DiffOptionsNormalized]
 }

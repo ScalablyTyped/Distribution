@@ -14,28 +14,21 @@ trait ClearScroll[T]
 }
 object ClearScroll {
   
-  @scala.inline
-  def apply[T](): ClearScroll[T] = {
+  inline def apply[T](): ClearScroll[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearScroll[T]]
   }
   
-  @scala.inline
-  implicit class ClearScrollMutableBuilder[Self <: ClearScroll[?], T] (val x: Self & ClearScroll[T]) extends AnyVal {
+  extension [Self <: ClearScroll[?], T](x: Self & ClearScroll[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setScroll_id(value: String | js.Array[String]): Self = StObject.set(x, "scroll_id", value.asInstanceOf[js.Any])
+    inline def setScroll_id(value: String | js.Array[String]): Self = StObject.set(x, "scroll_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll_idUndefined: Self = StObject.set(x, "scroll_id", js.undefined)
+    inline def setScroll_idUndefined: Self = StObject.set(x, "scroll_id", js.undefined)
     
-    @scala.inline
-    def setScroll_idVarargs(value: String*): Self = StObject.set(x, "scroll_id", js.Array(value :_*))
+    inline def setScroll_idVarargs(value: String*): Self = StObject.set(x, "scroll_id", js.Array(value :_*))
   }
 }

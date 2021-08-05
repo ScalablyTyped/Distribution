@@ -10,15 +10,13 @@ object mod {
   /**
     * Parse the current page URL
     */
-  @scala.inline
-  def apply(): Url = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Url]
+  inline def apply(): Url = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Url]
   /**
     * Pass in a URI as a string and parse that
     *
     * @param someUrl the url to be parsed
     */
-  @scala.inline
-  def apply(someUrl: String): Url = ^.asInstanceOf[js.Dynamic].apply(someUrl.asInstanceOf[js.Any]).asInstanceOf[Url]
+  inline def apply(someUrl: String): Url = ^.asInstanceOf[js.Dynamic].apply(someUrl.asInstanceOf[js.Any]).asInstanceOf[Url]
   
   @JSImport("purl", JSImport.Namespace)
   @js.native

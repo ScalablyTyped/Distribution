@@ -41,68 +41,48 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setHorizontalMargin(value: Double): Self = StObject.set(x, "horizontalMargin", value.asInstanceOf[js.Any])
+      inline def setHorizontalMargin(value: Double): Self = StObject.set(x, "horizontalMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalMarginUndefined: Self = StObject.set(x, "horizontalMargin", js.undefined)
+      inline def setHorizontalMarginUndefined: Self = StObject.set(x, "horizontalMargin", js.undefined)
       
-      @scala.inline
-      def setHorizontalPadding(value: Double): Self = StObject.set(x, "horizontalPadding", value.asInstanceOf[js.Any])
+      inline def setHorizontalPadding(value: Double): Self = StObject.set(x, "horizontalPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalPaddingUndefined: Self = StObject.set(x, "horizontalPadding", js.undefined)
+      inline def setHorizontalPaddingUndefined: Self = StObject.set(x, "horizontalPadding", js.undefined)
       
-      @scala.inline
-      def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+      inline def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+      inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setVerticalMargin(value: Double): Self = StObject.set(x, "verticalMargin", value.asInstanceOf[js.Any])
+      inline def setVerticalMargin(value: Double): Self = StObject.set(x, "verticalMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalMarginUndefined: Self = StObject.set(x, "verticalMargin", js.undefined)
+      inline def setVerticalMarginUndefined: Self = StObject.set(x, "verticalMargin", js.undefined)
       
-      @scala.inline
-      def setVerticalPadding(value: Double): Self = StObject.set(x, "verticalPadding", value.asInstanceOf[js.Any])
+      inline def setVerticalPadding(value: Double): Self = StObject.set(x, "verticalPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalPaddingUndefined: Self = StObject.set(x, "verticalPadding", js.undefined)
+      inline def setVerticalPaddingUndefined: Self = StObject.set(x, "verticalPadding", js.undefined)
     }
   }
   
@@ -117,32 +97,24 @@ object anon {
   }
   object PartialOptionsFavicon {
     
-    @scala.inline
-    def apply(): PartialOptionsFavicon = {
+    inline def apply(): PartialOptionsFavicon = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsFavicon]
     }
     
-    @scala.inline
-    implicit class PartialOptionsFaviconMutableBuilder[Self <: PartialOptionsFavicon] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsFavicon](x: Self) {
       
-      @scala.inline
-      def setFavicon(value: Partial[Options]): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
+      inline def setFavicon(value: Partial[Options]): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
+      inline def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
       
-      @scala.inline
-      def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setTitle(value: Partial[typings.badgin.titleMod.Options]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Partial[typings.badgin.titleMod.Options]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -153,20 +125,16 @@ object anon {
   }
   object PartialOptionsIndicator {
     
-    @scala.inline
-    def apply(): PartialOptionsIndicator = {
+    inline def apply(): PartialOptionsIndicator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsIndicator]
     }
     
-    @scala.inline
-    implicit class PartialOptionsIndicatorMutableBuilder[Self <: PartialOptionsIndicator] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsIndicator](x: Self) {
       
-      @scala.inline
-      def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+      inline def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+      inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     }
   }
 }

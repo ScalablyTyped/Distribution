@@ -15,17 +15,14 @@ trait CommandMetadata
 }
 object CommandMetadata {
   
-  @scala.inline
-  def apply(name: String, summary: String, `type`: global | project): CommandMetadata = {
+  inline def apply(name: String, summary: String, `type`: global | project): CommandMetadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadata]
   }
   
-  @scala.inline
-  implicit class CommandMetadataMutableBuilder[Self <: CommandMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CommandMetadata](x: Self) {
     
-    @scala.inline
-    def setType(value: global | project): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: global | project): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

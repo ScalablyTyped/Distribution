@@ -48,28 +48,21 @@ trait ILoginProperties extends StObject {
 }
 object ILoginProperties {
   
-  @scala.inline
-  def apply(scope: js.Any): ILoginProperties = {
+  inline def apply(scope: js.Any): ILoginProperties = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoginProperties]
   }
   
-  @scala.inline
-  implicit class ILoginPropertiesMutableBuilder[Self <: ILoginProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ILoginProperties](x: Self) {
     
-    @scala.inline
-    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+    inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+    inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

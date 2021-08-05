@@ -15,23 +15,18 @@ object partialModuleMod {
   }
   object PartialModule {
     
-    @scala.inline
-    def apply(fileName: String, statements: js.Array[Statement]): PartialModule = {
+    inline def apply(fileName: String, statements: js.Array[Statement]): PartialModule = {
       val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialModule]
     }
     
-    @scala.inline
-    implicit class PartialModuleMutableBuilder[Self <: PartialModule] (val x: Self) extends AnyVal {
+    extension [Self <: PartialModule](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+      inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
     }
   }
 }

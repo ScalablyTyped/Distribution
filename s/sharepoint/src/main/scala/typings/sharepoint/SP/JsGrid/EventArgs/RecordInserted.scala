@@ -20,25 +20,19 @@ trait RecordInserted
 }
 object RecordInserted {
   
-  @scala.inline
-  def apply(afterRecordKey: Double, changeKey: IChangeKey, recordIdx: Double, recordKey: Double): RecordInserted = {
+  inline def apply(afterRecordKey: Double, changeKey: IChangeKey, recordIdx: Double, recordKey: Double): RecordInserted = {
     val __obj = js.Dynamic.literal(afterRecordKey = afterRecordKey.asInstanceOf[js.Any], changeKey = changeKey.asInstanceOf[js.Any], recordIdx = recordIdx.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordInserted]
   }
   
-  @scala.inline
-  implicit class RecordInsertedMutableBuilder[Self <: RecordInserted] (val x: Self) extends AnyVal {
+  extension [Self <: RecordInserted](x: Self) {
     
-    @scala.inline
-    def setAfterRecordKey(value: Double): Self = StObject.set(x, "afterRecordKey", value.asInstanceOf[js.Any])
+    inline def setAfterRecordKey(value: Double): Self = StObject.set(x, "afterRecordKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordIdx(value: Double): Self = StObject.set(x, "recordIdx", value.asInstanceOf[js.Any])
+    inline def setRecordIdx(value: Double): Self = StObject.set(x, "recordIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

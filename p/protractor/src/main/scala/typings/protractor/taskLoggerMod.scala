@@ -19,14 +19,14 @@ object taskLoggerMod {
       */
     def this(task: js.Any, pid: Double) = this()
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
     /**
       * Flushes the buffer to stdout.
       */
     def flush(): Unit = js.native
     
-    var insertTag: js.Any = js.native
+    /* private */ var insertTag: js.Any = js.native
     
     /**
       * Log the data in the argument such that metadata are appended.
@@ -49,8 +49,8 @@ object taskLoggerMod {
       */
     def peek(): Unit = js.native
     
-    var pid: js.Any = js.native
+    /* private */ var pid: js.Any = js.native
     
-    var task: js.Any = js.native
+    /* private */ var task: js.Any = js.native
   }
 }

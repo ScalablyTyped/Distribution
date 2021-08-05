@@ -16,19 +16,15 @@ trait OnHeaderRowCellRenderedEventArgs[T /* <: SlickData */]
 }
 object OnHeaderRowCellRenderedEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T], node: HTMLElement): OnHeaderRowCellRenderedEventArgs[T] = {
+  inline def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T], node: HTMLElement): OnHeaderRowCellRenderedEventArgs[T] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnHeaderRowCellRenderedEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class OnHeaderRowCellRenderedEventArgsMutableBuilder[Self <: OnHeaderRowCellRenderedEventArgs[?], T /* <: SlickData */] (val x: Self & OnHeaderRowCellRenderedEventArgs[T]) extends AnyVal {
+  extension [Self <: OnHeaderRowCellRenderedEventArgs[?], T /* <: SlickData */](x: Self & OnHeaderRowCellRenderedEventArgs[T]) {
     
-    @scala.inline
-    def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

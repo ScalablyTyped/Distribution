@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WiaImageBias extends StObject
 object WiaImageBias {
   
-  @scala.inline
-  def MaximizeQuality: `131072` = 131072.asInstanceOf[`131072`]
+  inline def MaximizeQuality: `131072` = 131072.asInstanceOf[`131072`]
   
-  @scala.inline
-  def MinimizeSize: `65536` = 65536.asInstanceOf[`65536`]
+  inline def MinimizeSize: `65536` = 65536.asInstanceOf[`65536`]
 }

@@ -14,22 +14,17 @@ trait FolderAscending extends StObject {
 }
 object FolderAscending {
   
-  @scala.inline
-  def apply(folderAscending: scala.Double, folderDescending: scala.Double, none: scala.Double): FolderAscending = {
+  inline def apply(folderAscending: scala.Double, folderDescending: scala.Double, none: scala.Double): FolderAscending = {
     val __obj = js.Dynamic.literal(folderAscending = folderAscending.asInstanceOf[js.Any], folderDescending = folderDescending.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderAscending]
   }
   
-  @scala.inline
-  implicit class FolderAscendingMutableBuilder[Self <: FolderAscending] (val x: Self) extends AnyVal {
+  extension [Self <: FolderAscending](x: Self) {
     
-    @scala.inline
-    def setFolderAscending(value: scala.Double): Self = StObject.set(x, "folderAscending", value.asInstanceOf[js.Any])
+    inline def setFolderAscending(value: scala.Double): Self = StObject.set(x, "folderAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderDescending(value: scala.Double): Self = StObject.set(x, "folderDescending", value.asInstanceOf[js.Any])
+    inline def setFolderDescending(value: scala.Double): Self = StObject.set(x, "folderDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

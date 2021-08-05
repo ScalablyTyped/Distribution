@@ -25,7 +25,7 @@ object resourcesMod {
     
     var helpers: HelperStack = js.native
     
-    var isActive: js.Any = js.native
+    /* private */ var isActive: js.Any = js.native
     
     var layouts: TemplateStack = js.native
     
@@ -37,6 +37,6 @@ object resourcesMod {
     
     var templates: TemplateStack = js.native
     
-    var theme: js.Any = js.native
+    /* private */ var theme: js.Any = js.native
   }
 }

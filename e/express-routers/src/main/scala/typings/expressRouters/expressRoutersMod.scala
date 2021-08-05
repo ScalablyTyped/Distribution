@@ -18,10 +18,8 @@ object expressRoutersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRouter(routeConfig: js.Array[RouteConfig]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
-  @scala.inline
-  def createRouter(routeConfig: RouteConfigAlternative): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
+  inline def createRouter(routeConfig: js.Array[RouteConfig]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
+  inline def createRouter(routeConfig: RouteConfigAlternative): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
   
   trait RouteConfig extends StObject {
     
@@ -33,8 +31,7 @@ object expressRoutersMod {
   }
   object RouteConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handler: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | (js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]),
       method: RouteConfigMethod,
       path: String
@@ -43,27 +40,21 @@ object expressRoutersMod {
       __obj.asInstanceOf[RouteConfig]
     }
     
-    @scala.inline
-    implicit class RouteConfigMutableBuilder[Self <: RouteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RouteConfig](x: Self) {
       
-      @scala.inline
-      def setHandler(
+      inline def setHandler(
         value: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | (js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]])
       ): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerFunction3(
+      inline def setHandlerFunction3(
         value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandlerVarargs(value: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])*): Self = StObject.set(x, "handler", js.Array(value :_*))
+      inline def setHandlerVarargs(value: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])*): Self = StObject.set(x, "handler", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: RouteConfigMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: RouteConfigMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,19 +72,14 @@ object expressRoutersMod {
   trait RouteConfigMethod extends StObject
   object RouteConfigMethod {
     
-    @scala.inline
-    def DELETE: typings.expressRouters.expressRoutersStrings.DELETE = "DELETE".asInstanceOf[typings.expressRouters.expressRoutersStrings.DELETE]
+    inline def DELETE: typings.expressRouters.expressRoutersStrings.DELETE = "DELETE".asInstanceOf[typings.expressRouters.expressRoutersStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.expressRouters.expressRoutersStrings.GET = "GET".asInstanceOf[typings.expressRouters.expressRoutersStrings.GET]
+    inline def GET: typings.expressRouters.expressRoutersStrings.GET = "GET".asInstanceOf[typings.expressRouters.expressRoutersStrings.GET]
     
-    @scala.inline
-    def PATCH: typings.expressRouters.expressRoutersStrings.PATCH = "PATCH".asInstanceOf[typings.expressRouters.expressRoutersStrings.PATCH]
+    inline def PATCH: typings.expressRouters.expressRoutersStrings.PATCH = "PATCH".asInstanceOf[typings.expressRouters.expressRoutersStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.expressRouters.expressRoutersStrings.POST = "POST".asInstanceOf[typings.expressRouters.expressRoutersStrings.POST]
+    inline def POST: typings.expressRouters.expressRoutersStrings.POST = "POST".asInstanceOf[typings.expressRouters.expressRoutersStrings.POST]
     
-    @scala.inline
-    def PUT: typings.expressRouters.expressRoutersStrings.PUT = "PUT".asInstanceOf[typings.expressRouters.expressRoutersStrings.PUT]
+    inline def PUT: typings.expressRouters.expressRoutersStrings.PUT = "PUT".asInstanceOf[typings.expressRouters.expressRoutersStrings.PUT]
   }
 }

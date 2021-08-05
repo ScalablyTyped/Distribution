@@ -16,23 +16,18 @@ object anon {
   }
   object CorePath {
     
-    @scala.inline
-    def apply(corePath: String, langPath: String, workerPath: String): CorePath = {
+    inline def apply(corePath: String, langPath: String, workerPath: String): CorePath = {
       val __obj = js.Dynamic.literal(corePath = corePath.asInstanceOf[js.Any], langPath = langPath.asInstanceOf[js.Any], workerPath = workerPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[CorePath]
     }
     
-    @scala.inline
-    implicit class CorePathMutableBuilder[Self <: CorePath] (val x: Self) extends AnyVal {
+    extension [Self <: CorePath](x: Self) {
       
-      @scala.inline
-      def setCorePath(value: String): Self = StObject.set(x, "corePath", value.asInstanceOf[js.Any])
+      inline def setCorePath(value: String): Self = StObject.set(x, "corePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangPath(value: String): Self = StObject.set(x, "langPath", value.asInstanceOf[js.Any])
+      inline def setLangPath(value: String): Self = StObject.set(x, "langPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerPath(value: String): Self = StObject.set(x, "workerPath", value.asInstanceOf[js.Any])
+      inline def setWorkerPath(value: String): Self = StObject.set(x, "workerPath", value.asInstanceOf[js.Any])
     }
   }
 }

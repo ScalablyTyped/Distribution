@@ -12,12 +12,10 @@ object delayWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def delayWhen[T](
+  inline def delayWhen[T](
     delayDurationSelector: js.Function2[/* value */ T, /* index */ Double, Observable[js.Any | scala.Nothing]]
   ): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("delayWhen")(delayDurationSelector.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def delayWhen[T](
+  inline def delayWhen[T](
     delayDurationSelector: js.Function2[/* value */ T, /* index */ Double, Observable[js.Any | scala.Nothing]],
     subscriptionDelay: Observable[js.Any]
   ): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delayWhen")(delayDurationSelector.asInstanceOf[js.Any], subscriptionDelay.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]

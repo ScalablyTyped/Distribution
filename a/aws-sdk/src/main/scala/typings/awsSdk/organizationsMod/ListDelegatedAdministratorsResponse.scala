@@ -18,28 +18,21 @@ trait ListDelegatedAdministratorsResponse extends StObject {
 }
 object ListDelegatedAdministratorsResponse {
   
-  @scala.inline
-  def apply(): ListDelegatedAdministratorsResponse = {
+  inline def apply(): ListDelegatedAdministratorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDelegatedAdministratorsResponse]
   }
   
-  @scala.inline
-  implicit class ListDelegatedAdministratorsResponseMutableBuilder[Self <: ListDelegatedAdministratorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDelegatedAdministratorsResponse](x: Self) {
     
-    @scala.inline
-    def setDelegatedAdministrators(value: DelegatedAdministrators): Self = StObject.set(x, "DelegatedAdministrators", value.asInstanceOf[js.Any])
+    inline def setDelegatedAdministrators(value: DelegatedAdministrators): Self = StObject.set(x, "DelegatedAdministrators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedAdministratorsUndefined: Self = StObject.set(x, "DelegatedAdministrators", js.undefined)
+    inline def setDelegatedAdministratorsUndefined: Self = StObject.set(x, "DelegatedAdministrators", js.undefined)
     
-    @scala.inline
-    def setDelegatedAdministratorsVarargs(value: DelegatedAdministrator*): Self = StObject.set(x, "DelegatedAdministrators", js.Array(value :_*))
+    inline def setDelegatedAdministratorsVarargs(value: DelegatedAdministrator*): Self = StObject.set(x, "DelegatedAdministrators", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

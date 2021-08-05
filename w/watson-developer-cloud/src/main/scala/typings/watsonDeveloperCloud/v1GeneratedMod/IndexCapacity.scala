@@ -18,31 +18,23 @@ trait IndexCapacity extends StObject {
 }
 object IndexCapacity {
   
-  @scala.inline
-  def apply(): IndexCapacity = {
+  inline def apply(): IndexCapacity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndexCapacity]
   }
   
-  @scala.inline
-  implicit class IndexCapacityMutableBuilder[Self <: IndexCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: IndexCapacity](x: Self) {
     
-    @scala.inline
-    def setCollections(value: CollectionUsage): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: CollectionUsage): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionsUndefined: Self = StObject.set(x, "collections", js.undefined)
+    inline def setCollectionsUndefined: Self = StObject.set(x, "collections", js.undefined)
     
-    @scala.inline
-    def setDisk_usage(value: DiskUsage): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
+    inline def setDisk_usage(value: DiskUsage): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisk_usageUndefined: Self = StObject.set(x, "disk_usage", js.undefined)
+    inline def setDisk_usageUndefined: Self = StObject.set(x, "disk_usage", js.undefined)
     
-    @scala.inline
-    def setDocuments(value: EnvironmentDocuments): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: EnvironmentDocuments): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
+    inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
   }
 }

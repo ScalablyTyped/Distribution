@@ -50,49 +50,35 @@ trait IgGridSummariesLocale
 }
 object IgGridSummariesLocale {
   
-  @scala.inline
-  def apply(): IgGridSummariesLocale = {
+  inline def apply(): IgGridSummariesLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridSummariesLocale]
   }
   
-  @scala.inline
-  implicit class IgGridSummariesLocaleMutableBuilder[Self <: IgGridSummariesLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridSummariesLocale](x: Self) {
     
-    @scala.inline
-    def setDialogButtonCancelText(value: String): Self = StObject.set(x, "dialogButtonCancelText", value.asInstanceOf[js.Any])
+    inline def setDialogButtonCancelText(value: String): Self = StObject.set(x, "dialogButtonCancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogButtonCancelTextUndefined: Self = StObject.set(x, "dialogButtonCancelText", js.undefined)
+    inline def setDialogButtonCancelTextUndefined: Self = StObject.set(x, "dialogButtonCancelText", js.undefined)
     
-    @scala.inline
-    def setDialogButtonOKText(value: String): Self = StObject.set(x, "dialogButtonOKText", value.asInstanceOf[js.Any])
+    inline def setDialogButtonOKText(value: String): Self = StObject.set(x, "dialogButtonOKText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogButtonOKTextUndefined: Self = StObject.set(x, "dialogButtonOKText", js.undefined)
+    inline def setDialogButtonOKTextUndefined: Self = StObject.set(x, "dialogButtonOKText", js.undefined)
     
-    @scala.inline
-    def setEmptyCellText(value: String): Self = StObject.set(x, "emptyCellText", value.asInstanceOf[js.Any])
+    inline def setEmptyCellText(value: String): Self = StObject.set(x, "emptyCellText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyCellTextUndefined: Self = StObject.set(x, "emptyCellText", js.undefined)
+    inline def setEmptyCellTextUndefined: Self = StObject.set(x, "emptyCellText", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserText(value: String): Self = StObject.set(x, "featureChooserText", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserText(value: String): Self = StObject.set(x, "featureChooserText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserTextHide(value: String): Self = StObject.set(x, "featureChooserTextHide", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserTextHide(value: String): Self = StObject.set(x, "featureChooserTextHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserTextHideUndefined: Self = StObject.set(x, "featureChooserTextHide", js.undefined)
+    inline def setFeatureChooserTextHideUndefined: Self = StObject.set(x, "featureChooserTextHide", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserTextUndefined: Self = StObject.set(x, "featureChooserText", js.undefined)
+    inline def setFeatureChooserTextUndefined: Self = StObject.set(x, "featureChooserText", js.undefined)
     
-    @scala.inline
-    def setSummariesHeaderButtonTooltip(value: String): Self = StObject.set(x, "summariesHeaderButtonTooltip", value.asInstanceOf[js.Any])
+    inline def setSummariesHeaderButtonTooltip(value: String): Self = StObject.set(x, "summariesHeaderButtonTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummariesHeaderButtonTooltipUndefined: Self = StObject.set(x, "summariesHeaderButtonTooltip", js.undefined)
+    inline def setSummariesHeaderButtonTooltipUndefined: Self = StObject.set(x, "summariesHeaderButtonTooltip", js.undefined)
   }
 }

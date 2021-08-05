@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLDocumentCompatibleInfo extends StObject {
   
-  @JSName("MSHTML.IHTMLDocumentCompatibleInfo_typekey")
+  /* private */ @JSName("MSHTML.IHTMLDocumentCompatibleInfo_typekey")
   var MSHTMLDotIHTMLDocumentCompatibleInfo_typekey: IHTMLDocumentCompatibleInfo
   
   val userAgent: String
@@ -15,8 +15,7 @@ trait IHTMLDocumentCompatibleInfo extends StObject {
 }
 object IHTMLDocumentCompatibleInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLDocumentCompatibleInfo_typekey: IHTMLDocumentCompatibleInfo,
     userAgent: String,
     version: String
@@ -26,16 +25,12 @@ object IHTMLDocumentCompatibleInfo {
     __obj.asInstanceOf[IHTMLDocumentCompatibleInfo]
   }
   
-  @scala.inline
-  implicit class IHTMLDocumentCompatibleInfoMutableBuilder[Self <: IHTMLDocumentCompatibleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLDocumentCompatibleInfo](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotIHTMLDocumentCompatibleInfo_typekey(value: IHTMLDocumentCompatibleInfo): Self = StObject.set(x, "MSHTML.IHTMLDocumentCompatibleInfo_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLDocumentCompatibleInfo_typekey(value: IHTMLDocumentCompatibleInfo): Self = StObject.set(x, "MSHTML.IHTMLDocumentCompatibleInfo_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

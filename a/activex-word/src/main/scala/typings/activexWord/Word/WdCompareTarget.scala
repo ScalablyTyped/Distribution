@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCompareTarget extends StObject
 object WdCompareTarget {
   
-  @scala.inline
-  def wdCompareTargetCurrent: `1` = 1.asInstanceOf[`1`]
+  inline def wdCompareTargetCurrent: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdCompareTargetNew: `2` = 2.asInstanceOf[`2`]
+  inline def wdCompareTargetNew: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdCompareTargetSelected: `0` = 0.asInstanceOf[`0`]
+  inline def wdCompareTargetSelected: `0` = 0.asInstanceOf[`0`]
 }

@@ -52,8 +52,7 @@ object anon {
   }
   object Contains {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contains: String,
       creditcard: String,
       custom: String,
@@ -80,71 +79,49 @@ object anon {
       __obj.asInstanceOf[Contains]
     }
     
-    @scala.inline
-    implicit class ContainsMutableBuilder[Self <: Contains] (val x: Self) extends AnyVal {
+    extension [Self <: Contains](x: Self) {
       
-      @scala.inline
-      def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditcard(value: String): Self = StObject.set(x, "creditcard", value.asInstanceOf[js.Any])
+      inline def setCreditcard(value: String): Self = StObject.set(x, "creditcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateISO(value: String): Self = StObject.set(x, "dateISO", value.asInstanceOf[js.Any])
+      inline def setDateISO(value: String): Self = StObject.set(x, "dateISO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigits(value: String): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+      inline def setDigits(value: String): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEqualTo(value: String): Self = StObject.set(x, "equalTo", value.asInstanceOf[js.Any])
+      inline def setEqualTo(value: String): Self = StObject.set(x, "equalTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxlength(value: String): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+      inline def setMaxlength(value: String): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinlength(value: String): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
+      inline def setMinlength(value: String): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangelength(value: String): Self = StObject.set(x, "rangelength", value.asInstanceOf[js.Any])
+      inline def setRangelength(value: String): Self = StObject.set(x, "rangelength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedDigits(value: String): Self = StObject.set(x, "signedDigits", value.asInstanceOf[js.Any])
+      inline def setSignedDigits(value: String): Self = StObject.set(x, "signedDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait use extends StObject
 object use {
   
-  @scala.inline
-  def enc: typings.jose.joseStrings.enc = "enc".asInstanceOf[typings.jose.joseStrings.enc]
+  inline def enc: typings.jose.joseStrings.enc = "enc".asInstanceOf[typings.jose.joseStrings.enc]
   
-  @scala.inline
-  def sig: typings.jose.joseStrings.sig = "sig".asInstanceOf[typings.jose.joseStrings.sig]
+  inline def sig: typings.jose.joseStrings.sig = "sig".asInstanceOf[typings.jose.joseStrings.sig]
 }

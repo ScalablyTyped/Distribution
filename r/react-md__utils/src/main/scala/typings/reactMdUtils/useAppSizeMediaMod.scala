@@ -15,10 +15,8 @@ object useAppSizeMediaMod {
   @js.native
   val DEFAULT_APP_SIZE: AppSize = js.native
   
-  @scala.inline
-  def useAppSizeMedia(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")().asInstanceOf[AppSize]
-  @scala.inline
-  def useAppSizeMedia(
+  inline def useAppSizeMedia(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")().asInstanceOf[AppSize]
+  inline def useAppSizeMedia(
     hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeOptions
   ): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")(hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[AppSize]
   
@@ -61,8 +59,7 @@ object useAppSizeMediaMod {
   }
   object AppSize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isDesktop: Boolean,
       isLandscape: Boolean,
       isLargeDesktop: Boolean,
@@ -73,23 +70,17 @@ object useAppSizeMediaMod {
       __obj.asInstanceOf[AppSize]
     }
     
-    @scala.inline
-    implicit class AppSizeMutableBuilder[Self <: AppSize] (val x: Self) extends AnyVal {
+    extension [Self <: AppSize](x: Self) {
       
-      @scala.inline
-      def setIsDesktop(value: Boolean): Self = StObject.set(x, "isDesktop", value.asInstanceOf[js.Any])
+      inline def setIsDesktop(value: Boolean): Self = StObject.set(x, "isDesktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
+      inline def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLargeDesktop(value: Boolean): Self = StObject.set(x, "isLargeDesktop", value.asInstanceOf[js.Any])
+      inline def setIsLargeDesktop(value: Boolean): Self = StObject.set(x, "isLargeDesktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPhone(value: Boolean): Self = StObject.set(x, "isPhone", value.asInstanceOf[js.Any])
+      inline def setIsPhone(value: Boolean): Self = StObject.set(x, "isPhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
+      inline def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,50 +123,36 @@ object useAppSizeMediaMod {
   }
   object AppSizeOptions {
     
-    @scala.inline
-    def apply(): AppSizeOptions = {
+    inline def apply(): AppSizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppSizeOptions]
     }
     
-    @scala.inline
-    implicit class AppSizeOptionsMutableBuilder[Self <: AppSizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppSizeOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultSize(value: AppSize): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(value: AppSize): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
+      inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      @scala.inline
-      def setDesktopLargeMinWidth(value: QuerySize): Self = StObject.set(x, "desktopLargeMinWidth", value.asInstanceOf[js.Any])
+      inline def setDesktopLargeMinWidth(value: QuerySize): Self = StObject.set(x, "desktopLargeMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopLargeMinWidthUndefined: Self = StObject.set(x, "desktopLargeMinWidth", js.undefined)
+      inline def setDesktopLargeMinWidthUndefined: Self = StObject.set(x, "desktopLargeMinWidth", js.undefined)
       
-      @scala.inline
-      def setDesktopMinWidth(value: QuerySize): Self = StObject.set(x, "desktopMinWidth", value.asInstanceOf[js.Any])
+      inline def setDesktopMinWidth(value: QuerySize): Self = StObject.set(x, "desktopMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopMinWidthUndefined: Self = StObject.set(x, "desktopMinWidth", js.undefined)
+      inline def setDesktopMinWidthUndefined: Self = StObject.set(x, "desktopMinWidth", js.undefined)
       
-      @scala.inline
-      def setPhoneMaxWidth(value: QuerySize): Self = StObject.set(x, "phoneMaxWidth", value.asInstanceOf[js.Any])
+      inline def setPhoneMaxWidth(value: QuerySize): Self = StObject.set(x, "phoneMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneMaxWidthUndefined: Self = StObject.set(x, "phoneMaxWidth", js.undefined)
+      inline def setPhoneMaxWidthUndefined: Self = StObject.set(x, "phoneMaxWidth", js.undefined)
       
-      @scala.inline
-      def setTabletMaxWidth(value: QuerySize): Self = StObject.set(x, "tabletMaxWidth", value.asInstanceOf[js.Any])
+      inline def setTabletMaxWidth(value: QuerySize): Self = StObject.set(x, "tabletMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletMaxWidthUndefined: Self = StObject.set(x, "tabletMaxWidth", js.undefined)
+      inline def setTabletMaxWidthUndefined: Self = StObject.set(x, "tabletMaxWidth", js.undefined)
       
-      @scala.inline
-      def setTabletMinWidth(value: QuerySize): Self = StObject.set(x, "tabletMinWidth", value.asInstanceOf[js.Any])
+      inline def setTabletMinWidth(value: QuerySize): Self = StObject.set(x, "tabletMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletMinWidthUndefined: Self = StObject.set(x, "tabletMinWidth", js.undefined)
+      inline def setTabletMinWidthUndefined: Self = StObject.set(x, "tabletMinWidth", js.undefined)
     }
   }
 }

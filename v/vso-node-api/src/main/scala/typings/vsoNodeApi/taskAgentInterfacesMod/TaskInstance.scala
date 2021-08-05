@@ -25,8 +25,7 @@ trait TaskInstance
 }
 object TaskInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alwaysRun: Boolean,
     condition: String,
     continueOnError: Boolean,
@@ -43,28 +42,20 @@ object TaskInstance {
     __obj.asInstanceOf[TaskInstance]
   }
   
-  @scala.inline
-  implicit class TaskInstanceMutableBuilder[Self <: TaskInstance] (val x: Self) extends AnyVal {
+  extension [Self <: TaskInstance](x: Self) {
     
-    @scala.inline
-    def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
+    inline def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
+    inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

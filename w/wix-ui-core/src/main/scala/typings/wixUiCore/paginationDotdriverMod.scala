@@ -12,8 +12,7 @@ object paginationDotdriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def paginationDriverFactory(hasRootSimulate: Element): ChangeInput = ^.asInstanceOf[js.Dynamic].applyDynamic("paginationDriverFactory")(hasRootSimulate.asInstanceOf[js.Any]).asInstanceOf[ChangeInput]
+  inline def paginationDriverFactory(hasRootSimulate: Element): ChangeInput = ^.asInstanceOf[js.Dynamic].applyDynamic("paginationDriverFactory")(hasRootSimulate.asInstanceOf[js.Any]).asInstanceOf[ChangeInput]
   
   /* Rewritten from type alias, can be one of: 
     - typings.wixUiCore.wixUiCoreStrings.first
@@ -24,16 +23,12 @@ object paginationDotdriverMod {
   trait NavButtonName extends StObject
   object NavButtonName {
     
-    @scala.inline
-    def first: typings.wixUiCore.wixUiCoreStrings.first = "first".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.first]
+    inline def first: typings.wixUiCore.wixUiCoreStrings.first = "first".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.first]
     
-    @scala.inline
-    def last: typings.wixUiCore.wixUiCoreStrings.last = "last".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.last]
+    inline def last: typings.wixUiCore.wixUiCoreStrings.last = "last".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.last]
     
-    @scala.inline
-    def next: typings.wixUiCore.wixUiCoreStrings.next = "next".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.next]
+    inline def next: typings.wixUiCore.wixUiCoreStrings.next = "next".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.next]
     
-    @scala.inline
-    def previous: typings.wixUiCore.wixUiCoreStrings.previous = "previous".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.previous]
+    inline def previous: typings.wixUiCore.wixUiCoreStrings.previous = "previous".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.previous]
   }
 }

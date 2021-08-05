@@ -10,16 +10,13 @@ trait AdminResource extends StObject {
 }
 object AdminResource {
   
-  @scala.inline
-  def apply(projects: ProjectsResource): AdminResource = {
+  inline def apply(projects: ProjectsResource): AdminResource = {
     val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminResource]
   }
   
-  @scala.inline
-  implicit class AdminResourceMutableBuilder[Self <: AdminResource] (val x: Self) extends AnyVal {
+  extension [Self <: AdminResource](x: Self) {
     
-    @scala.inline
-    def setProjects(value: ProjectsResource): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: ProjectsResource): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
   }
 }

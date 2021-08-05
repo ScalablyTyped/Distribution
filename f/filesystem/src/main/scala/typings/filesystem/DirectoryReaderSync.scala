@@ -22,16 +22,13 @@ trait DirectoryReaderSync extends StObject {
 }
 object DirectoryReaderSync {
   
-  @scala.inline
-  def apply(readEntries: () => js.Array[EntrySync]): DirectoryReaderSync = {
+  inline def apply(readEntries: () => js.Array[EntrySync]): DirectoryReaderSync = {
     val __obj = js.Dynamic.literal(readEntries = js.Any.fromFunction0(readEntries))
     __obj.asInstanceOf[DirectoryReaderSync]
   }
   
-  @scala.inline
-  implicit class DirectoryReaderSyncMutableBuilder[Self <: DirectoryReaderSync] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryReaderSync](x: Self) {
     
-    @scala.inline
-    def setReadEntries(value: () => js.Array[EntrySync]): Self = StObject.set(x, "readEntries", js.Any.fromFunction0(value))
+    inline def setReadEntries(value: () => js.Array[EntrySync]): Self = StObject.set(x, "readEntries", js.Any.fromFunction0(value))
   }
 }

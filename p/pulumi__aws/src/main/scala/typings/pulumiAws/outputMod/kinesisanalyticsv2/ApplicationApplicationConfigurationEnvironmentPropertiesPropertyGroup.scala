@@ -19,19 +19,15 @@ trait ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup exte
 }
 object ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup {
   
-  @scala.inline
-  def apply(propertyGroupId: String, propertyMap: StringDictionary[String]): ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup = {
+  inline def apply(propertyGroupId: String, propertyMap: StringDictionary[String]): ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup = {
     val __obj = js.Dynamic.literal(propertyGroupId = propertyGroupId.asInstanceOf[js.Any], propertyMap = propertyMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupMutableBuilder[Self <: ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup](x: Self) {
     
-    @scala.inline
-    def setPropertyGroupId(value: String): Self = StObject.set(x, "propertyGroupId", value.asInstanceOf[js.Any])
+    inline def setPropertyGroupId(value: String): Self = StObject.set(x, "propertyGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyMap(value: StringDictionary[String]): Self = StObject.set(x, "propertyMap", value.asInstanceOf[js.Any])
+    inline def setPropertyMap(value: StringDictionary[String]): Self = StObject.set(x, "propertyMap", value.asInstanceOf[js.Any])
   }
 }

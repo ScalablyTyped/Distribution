@@ -30,31 +30,23 @@ trait SchemaInstanceGroupAutoscalingPolicyConfig extends StObject {
 }
 object SchemaInstanceGroupAutoscalingPolicyConfig {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupAutoscalingPolicyConfig = {
+  inline def apply(): SchemaInstanceGroupAutoscalingPolicyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupAutoscalingPolicyConfig]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupAutoscalingPolicyConfigMutableBuilder[Self <: SchemaInstanceGroupAutoscalingPolicyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupAutoscalingPolicyConfig](x: Self) {
     
-    @scala.inline
-    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
+    inline def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
+    inline def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
-    @scala.inline
-    def setMinInstances(value: Double): Self = StObject.set(x, "minInstances", value.asInstanceOf[js.Any])
+    inline def setMinInstances(value: Double): Self = StObject.set(x, "minInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinInstancesUndefined: Self = StObject.set(x, "minInstances", js.undefined)
+    inline def setMinInstancesUndefined: Self = StObject.set(x, "minInstances", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

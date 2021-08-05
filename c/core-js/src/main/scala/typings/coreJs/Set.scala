@@ -10,16 +10,13 @@ trait Set[T] extends StObject {
 }
 object Set {
   
-  @scala.inline
-  def apply[T](toJSON: () => js.Any): Set[T] = {
+  inline def apply[T](toJSON: () => js.Any): Set[T] = {
     val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[Set[T]]
   }
   
-  @scala.inline
-  implicit class SetMutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
+  extension [Self <: Set[?], T](x: Self & Set[T]) {
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

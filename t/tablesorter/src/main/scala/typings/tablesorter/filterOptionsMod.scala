@@ -185,224 +185,152 @@ object filterOptionsMod {
   }
   object FilterOptions {
     
-    @scala.inline
-    def apply[TElement](): FilterOptions[TElement] = {
+    inline def apply[TElement](): FilterOptions[TElement] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterOptions[TElement]]
     }
     
-    @scala.inline
-    implicit class FilterOptionsMutableBuilder[Self <: FilterOptions[?], TElement] (val x: Self & FilterOptions[TElement]) extends AnyVal {
+    extension [Self <: FilterOptions[?], TElement](x: Self & FilterOptions[TElement]) {
       
-      @scala.inline
-      def setFilter_cellFilter(value: String | js.Array[String]): Self = StObject.set(x, "filter_cellFilter", value.asInstanceOf[js.Any])
+      inline def setFilter_cellFilter(value: String | js.Array[String]): Self = StObject.set(x, "filter_cellFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_cellFilterUndefined: Self = StObject.set(x, "filter_cellFilter", js.undefined)
+      inline def setFilter_cellFilterUndefined: Self = StObject.set(x, "filter_cellFilter", js.undefined)
       
-      @scala.inline
-      def setFilter_cellFilterVarargs(value: String*): Self = StObject.set(x, "filter_cellFilter", js.Array(value :_*))
+      inline def setFilter_cellFilterVarargs(value: String*): Self = StObject.set(x, "filter_cellFilter", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter_childByColumn(value: Boolean): Self = StObject.set(x, "filter_childByColumn", value.asInstanceOf[js.Any])
+      inline def setFilter_childByColumn(value: Boolean): Self = StObject.set(x, "filter_childByColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_childByColumnUndefined: Self = StObject.set(x, "filter_childByColumn", js.undefined)
+      inline def setFilter_childByColumnUndefined: Self = StObject.set(x, "filter_childByColumn", js.undefined)
       
-      @scala.inline
-      def setFilter_childRows(value: Boolean): Self = StObject.set(x, "filter_childRows", value.asInstanceOf[js.Any])
+      inline def setFilter_childRows(value: Boolean): Self = StObject.set(x, "filter_childRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_childRowsUndefined: Self = StObject.set(x, "filter_childRows", js.undefined)
+      inline def setFilter_childRowsUndefined: Self = StObject.set(x, "filter_childRows", js.undefined)
       
-      @scala.inline
-      def setFilter_childWithSibs(value: Boolean): Self = StObject.set(x, "filter_childWithSibs", value.asInstanceOf[js.Any])
+      inline def setFilter_childWithSibs(value: Boolean): Self = StObject.set(x, "filter_childWithSibs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_childWithSibsUndefined: Self = StObject.set(x, "filter_childWithSibs", js.undefined)
+      inline def setFilter_childWithSibsUndefined: Self = StObject.set(x, "filter_childWithSibs", js.undefined)
       
-      @scala.inline
-      def setFilter_columnAnyMatch(value: Boolean): Self = StObject.set(x, "filter_columnAnyMatch", value.asInstanceOf[js.Any])
+      inline def setFilter_columnAnyMatch(value: Boolean): Self = StObject.set(x, "filter_columnAnyMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_columnAnyMatchUndefined: Self = StObject.set(x, "filter_columnAnyMatch", js.undefined)
+      inline def setFilter_columnAnyMatchUndefined: Self = StObject.set(x, "filter_columnAnyMatch", js.undefined)
       
-      @scala.inline
-      def setFilter_columnFilters(value: Boolean): Self = StObject.set(x, "filter_columnFilters", value.asInstanceOf[js.Any])
+      inline def setFilter_columnFilters(value: Boolean): Self = StObject.set(x, "filter_columnFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_columnFiltersUndefined: Self = StObject.set(x, "filter_columnFilters", js.undefined)
+      inline def setFilter_columnFiltersUndefined: Self = StObject.set(x, "filter_columnFilters", js.undefined)
       
-      @scala.inline
-      def setFilter_cssFilter(value: String | js.Array[String]): Self = StObject.set(x, "filter_cssFilter", value.asInstanceOf[js.Any])
+      inline def setFilter_cssFilter(value: String | js.Array[String]): Self = StObject.set(x, "filter_cssFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_cssFilterUndefined: Self = StObject.set(x, "filter_cssFilter", js.undefined)
+      inline def setFilter_cssFilterUndefined: Self = StObject.set(x, "filter_cssFilter", js.undefined)
       
-      @scala.inline
-      def setFilter_cssFilterVarargs(value: String*): Self = StObject.set(x, "filter_cssFilter", js.Array(value :_*))
+      inline def setFilter_cssFilterVarargs(value: String*): Self = StObject.set(x, "filter_cssFilter", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter_defaultAttrib(value: String): Self = StObject.set(x, "filter_defaultAttrib", value.asInstanceOf[js.Any])
+      inline def setFilter_defaultAttrib(value: String): Self = StObject.set(x, "filter_defaultAttrib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_defaultAttribUndefined: Self = StObject.set(x, "filter_defaultAttrib", js.undefined)
+      inline def setFilter_defaultAttribUndefined: Self = StObject.set(x, "filter_defaultAttrib", js.undefined)
       
-      @scala.inline
-      def setFilter_defaultFilter(value: MappedSettings[String]): Self = StObject.set(x, "filter_defaultFilter", value.asInstanceOf[js.Any])
+      inline def setFilter_defaultFilter(value: MappedSettings[String]): Self = StObject.set(x, "filter_defaultFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_defaultFilterUndefined: Self = StObject.set(x, "filter_defaultFilter", js.undefined)
+      inline def setFilter_defaultFilterUndefined: Self = StObject.set(x, "filter_defaultFilter", js.undefined)
       
-      @scala.inline
-      def setFilter_excludeFilter(value: MappedSettings[String]): Self = StObject.set(x, "filter_excludeFilter", value.asInstanceOf[js.Any])
+      inline def setFilter_excludeFilter(value: MappedSettings[String]): Self = StObject.set(x, "filter_excludeFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_excludeFilterUndefined: Self = StObject.set(x, "filter_excludeFilter", js.undefined)
+      inline def setFilter_excludeFilterUndefined: Self = StObject.set(x, "filter_excludeFilter", js.undefined)
       
-      @scala.inline
-      def setFilter_external(value: Selector): Self = StObject.set(x, "filter_external", value.asInstanceOf[js.Any])
+      inline def setFilter_external(value: Selector): Self = StObject.set(x, "filter_external", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_externalUndefined: Self = StObject.set(x, "filter_external", js.undefined)
+      inline def setFilter_externalUndefined: Self = StObject.set(x, "filter_external", js.undefined)
       
-      @scala.inline
-      def setFilter_filterLabel(value: String): Self = StObject.set(x, "filter_filterLabel", value.asInstanceOf[js.Any])
+      inline def setFilter_filterLabel(value: String): Self = StObject.set(x, "filter_filterLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_filterLabelUndefined: Self = StObject.set(x, "filter_filterLabel", js.undefined)
+      inline def setFilter_filterLabelUndefined: Self = StObject.set(x, "filter_filterLabel", js.undefined)
       
-      @scala.inline
-      def setFilter_filteredRow(value: String): Self = StObject.set(x, "filter_filteredRow", value.asInstanceOf[js.Any])
+      inline def setFilter_filteredRow(value: String): Self = StObject.set(x, "filter_filteredRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_filteredRowUndefined: Self = StObject.set(x, "filter_filteredRow", js.undefined)
+      inline def setFilter_filteredRowUndefined: Self = StObject.set(x, "filter_filteredRow", js.undefined)
       
-      @scala.inline
-      def setFilter_formatter(value: MappedSettings[FilterControlFactory]): Self = StObject.set(x, "filter_formatter", value.asInstanceOf[js.Any])
+      inline def setFilter_formatter(value: MappedSettings[FilterControlFactory]): Self = StObject.set(x, "filter_formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_formatterUndefined: Self = StObject.set(x, "filter_formatter", js.undefined)
+      inline def setFilter_formatterUndefined: Self = StObject.set(x, "filter_formatter", js.undefined)
       
-      @scala.inline
-      def setFilter_functions(value: MappedSettings[FilterFunctionCollection[TElement] | FilterFunction[TElement]]): Self = StObject.set(x, "filter_functions", value.asInstanceOf[js.Any])
+      inline def setFilter_functions(value: MappedSettings[FilterFunctionCollection[TElement] | FilterFunction[TElement]]): Self = StObject.set(x, "filter_functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_functionsUndefined: Self = StObject.set(x, "filter_functions", js.undefined)
+      inline def setFilter_functionsUndefined: Self = StObject.set(x, "filter_functions", js.undefined)
       
-      @scala.inline
-      def setFilter_hideEmpty(value: Boolean): Self = StObject.set(x, "filter_hideEmpty", value.asInstanceOf[js.Any])
+      inline def setFilter_hideEmpty(value: Boolean): Self = StObject.set(x, "filter_hideEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_hideEmptyUndefined: Self = StObject.set(x, "filter_hideEmpty", js.undefined)
+      inline def setFilter_hideEmptyUndefined: Self = StObject.set(x, "filter_hideEmpty", js.undefined)
       
-      @scala.inline
-      def setFilter_hideFilters(value: Boolean | (js.Function1[/* config */ TablesorterConfigurationStore[TElement], Boolean])): Self = StObject.set(x, "filter_hideFilters", value.asInstanceOf[js.Any])
+      inline def setFilter_hideFilters(value: Boolean | (js.Function1[/* config */ TablesorterConfigurationStore[TElement], Boolean])): Self = StObject.set(x, "filter_hideFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_hideFiltersFunction1(value: /* config */ TablesorterConfigurationStore[TElement] => Boolean): Self = StObject.set(x, "filter_hideFilters", js.Any.fromFunction1(value))
+      inline def setFilter_hideFiltersFunction1(value: /* config */ TablesorterConfigurationStore[TElement] => Boolean): Self = StObject.set(x, "filter_hideFilters", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter_hideFiltersUndefined: Self = StObject.set(x, "filter_hideFilters", js.undefined)
+      inline def setFilter_hideFiltersUndefined: Self = StObject.set(x, "filter_hideFilters", js.undefined)
       
-      @scala.inline
-      def setFilter_ignoreCase(value: Boolean): Self = StObject.set(x, "filter_ignoreCase", value.asInstanceOf[js.Any])
+      inline def setFilter_ignoreCase(value: Boolean): Self = StObject.set(x, "filter_ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_ignoreCaseUndefined: Self = StObject.set(x, "filter_ignoreCase", js.undefined)
+      inline def setFilter_ignoreCaseUndefined: Self = StObject.set(x, "filter_ignoreCase", js.undefined)
       
-      @scala.inline
-      def setFilter_liveSearch(value: Boolean | Double | (MappedSettings[Boolean | Double])): Self = StObject.set(x, "filter_liveSearch", value.asInstanceOf[js.Any])
+      inline def setFilter_liveSearch(value: Boolean | Double | (MappedSettings[Boolean | Double])): Self = StObject.set(x, "filter_liveSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_liveSearchUndefined: Self = StObject.set(x, "filter_liveSearch", js.undefined)
+      inline def setFilter_liveSearchUndefined: Self = StObject.set(x, "filter_liveSearch", js.undefined)
       
-      @scala.inline
-      def setFilter_matchType(value: MatchTypeSettings): Self = StObject.set(x, "filter_matchType", value.asInstanceOf[js.Any])
+      inline def setFilter_matchType(value: MatchTypeSettings): Self = StObject.set(x, "filter_matchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_matchTypeUndefined: Self = StObject.set(x, "filter_matchType", js.undefined)
+      inline def setFilter_matchTypeUndefined: Self = StObject.set(x, "filter_matchType", js.undefined)
       
-      @scala.inline
-      def setFilter_onlyAvail(value: String): Self = StObject.set(x, "filter_onlyAvail", value.asInstanceOf[js.Any])
+      inline def setFilter_onlyAvail(value: String): Self = StObject.set(x, "filter_onlyAvail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_onlyAvailUndefined: Self = StObject.set(x, "filter_onlyAvail", js.undefined)
+      inline def setFilter_onlyAvailUndefined: Self = StObject.set(x, "filter_onlyAvail", js.undefined)
       
-      @scala.inline
-      def setFilter_placeholder(value: FilterPlaceholders): Self = StObject.set(x, "filter_placeholder", value.asInstanceOf[js.Any])
+      inline def setFilter_placeholder(value: FilterPlaceholders): Self = StObject.set(x, "filter_placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_placeholderUndefined: Self = StObject.set(x, "filter_placeholder", js.undefined)
+      inline def setFilter_placeholderUndefined: Self = StObject.set(x, "filter_placeholder", js.undefined)
       
-      @scala.inline
-      def setFilter_reset(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "filter_reset", value.asInstanceOf[js.Any])
+      inline def setFilter_reset(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "filter_reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_resetOnEsc(value: Boolean): Self = StObject.set(x, "filter_resetOnEsc", value.asInstanceOf[js.Any])
+      inline def setFilter_resetOnEsc(value: Boolean): Self = StObject.set(x, "filter_resetOnEsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_resetOnEscUndefined: Self = StObject.set(x, "filter_resetOnEsc", js.undefined)
+      inline def setFilter_resetOnEscUndefined: Self = StObject.set(x, "filter_resetOnEsc", js.undefined)
       
-      @scala.inline
-      def setFilter_resetUndefined: Self = StObject.set(x, "filter_reset", js.undefined)
+      inline def setFilter_resetUndefined: Self = StObject.set(x, "filter_reset", js.undefined)
       
-      @scala.inline
-      def setFilter_saveFilters(value: Boolean): Self = StObject.set(x, "filter_saveFilters", value.asInstanceOf[js.Any])
+      inline def setFilter_saveFilters(value: Boolean): Self = StObject.set(x, "filter_saveFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_saveFiltersUndefined: Self = StObject.set(x, "filter_saveFilters", js.undefined)
+      inline def setFilter_saveFiltersUndefined: Self = StObject.set(x, "filter_saveFilters", js.undefined)
       
-      @scala.inline
-      def setFilter_searchDelay(value: Double): Self = StObject.set(x, "filter_searchDelay", value.asInstanceOf[js.Any])
+      inline def setFilter_searchDelay(value: Double): Self = StObject.set(x, "filter_searchDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_searchDelayUndefined: Self = StObject.set(x, "filter_searchDelay", js.undefined)
+      inline def setFilter_searchDelayUndefined: Self = StObject.set(x, "filter_searchDelay", js.undefined)
       
-      @scala.inline
-      def setFilter_searchFiltered(value: Boolean): Self = StObject.set(x, "filter_searchFiltered", value.asInstanceOf[js.Any])
+      inline def setFilter_searchFiltered(value: Boolean): Self = StObject.set(x, "filter_searchFiltered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_searchFilteredUndefined: Self = StObject.set(x, "filter_searchFiltered", js.undefined)
+      inline def setFilter_searchFilteredUndefined: Self = StObject.set(x, "filter_searchFiltered", js.undefined)
       
-      @scala.inline
-      def setFilter_selectSource(value: SelectSources[TElement] | MappedSettings[SelectSources[TElement]]): Self = StObject.set(x, "filter_selectSource", value.asInstanceOf[js.Any])
+      inline def setFilter_selectSource(value: SelectSources[TElement] | MappedSettings[SelectSources[TElement]]): Self = StObject.set(x, "filter_selectSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_selectSourceFunction3(value: (TElement, /* index */ Double, /* onlyAvail */ Boolean) => ValidSelectSources): Self = StObject.set(x, "filter_selectSource", js.Any.fromFunction3(value))
+      inline def setFilter_selectSourceFunction3(value: (TElement, /* index */ Double, /* onlyAvail */ Boolean) => ValidSelectSources): Self = StObject.set(x, "filter_selectSource", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilter_selectSourceNull: Self = StObject.set(x, "filter_selectSource", null)
+      inline def setFilter_selectSourceNull: Self = StObject.set(x, "filter_selectSource", null)
       
-      @scala.inline
-      def setFilter_selectSourceSeparator(value: String): Self = StObject.set(x, "filter_selectSourceSeparator", value.asInstanceOf[js.Any])
+      inline def setFilter_selectSourceSeparator(value: String): Self = StObject.set(x, "filter_selectSourceSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_selectSourceSeparatorUndefined: Self = StObject.set(x, "filter_selectSourceSeparator", js.undefined)
+      inline def setFilter_selectSourceSeparatorUndefined: Self = StObject.set(x, "filter_selectSourceSeparator", js.undefined)
       
-      @scala.inline
-      def setFilter_selectSourceUndefined: Self = StObject.set(x, "filter_selectSource", js.undefined)
+      inline def setFilter_selectSourceUndefined: Self = StObject.set(x, "filter_selectSource", js.undefined)
       
-      @scala.inline
-      def setFilter_selectSourceVarargs(value: (String | SelectSource)*): Self = StObject.set(x, "filter_selectSource", js.Array(value :_*))
+      inline def setFilter_selectSourceVarargs(value: (String | SelectSource)*): Self = StObject.set(x, "filter_selectSource", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter_serversideFiltering(value: Boolean): Self = StObject.set(x, "filter_serversideFiltering", value.asInstanceOf[js.Any])
+      inline def setFilter_serversideFiltering(value: Boolean): Self = StObject.set(x, "filter_serversideFiltering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_serversideFilteringUndefined: Self = StObject.set(x, "filter_serversideFiltering", js.undefined)
+      inline def setFilter_serversideFilteringUndefined: Self = StObject.set(x, "filter_serversideFiltering", js.undefined)
       
-      @scala.inline
-      def setFilter_startsWith(value: Boolean): Self = StObject.set(x, "filter_startsWith", value.asInstanceOf[js.Any])
+      inline def setFilter_startsWith(value: Boolean): Self = StObject.set(x, "filter_startsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_startsWithUndefined: Self = StObject.set(x, "filter_startsWith", js.undefined)
+      inline def setFilter_startsWithUndefined: Self = StObject.set(x, "filter_startsWith", js.undefined)
       
-      @scala.inline
-      def setFilter_useParsedData(value: Boolean): Self = StObject.set(x, "filter_useParsedData", value.asInstanceOf[js.Any])
+      inline def setFilter_useParsedData(value: Boolean): Self = StObject.set(x, "filter_useParsedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_useParsedDataUndefined: Self = StObject.set(x, "filter_useParsedData", js.undefined)
+      inline def setFilter_useParsedDataUndefined: Self = StObject.set(x, "filter_useParsedData", js.undefined)
     }
   }
 }

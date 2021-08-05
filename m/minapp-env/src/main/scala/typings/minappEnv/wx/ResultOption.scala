@@ -23,8 +23,7 @@ trait ResultOption extends StObject {
 }
 object ResultOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     path: String,
     query: js.Object,
     referrerInfo: ReferrerInfoOption,
@@ -35,22 +34,16 @@ object ResultOption {
     __obj.asInstanceOf[ResultOption]
   }
   
-  @scala.inline
-  implicit class ResultOptionMutableBuilder[Self <: ResultOption] (val x: Self) extends AnyVal {
+  extension [Self <: ResultOption](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfo(value: ReferrerInfoOption): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
+    inline def setReferrerInfo(value: ReferrerInfoOption): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
   }
 }

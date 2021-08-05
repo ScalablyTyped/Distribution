@@ -79,8 +79,7 @@ trait XMLParser extends StObject {
 }
 object XMLParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     didEndDocument: () => Unit,
     didEndElement: String => Unit,
     didStartDocument: () => Unit,
@@ -94,31 +93,22 @@ object XMLParser {
     __obj.asInstanceOf[XMLParser]
   }
   
-  @scala.inline
-  implicit class XMLParserMutableBuilder[Self <: XMLParser] (val x: Self) extends AnyVal {
+  extension [Self <: XMLParser](x: Self) {
     
-    @scala.inline
-    def setDidEndDocument(value: () => Unit): Self = StObject.set(x, "didEndDocument", js.Any.fromFunction0(value))
+    inline def setDidEndDocument(value: () => Unit): Self = StObject.set(x, "didEndDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDidEndElement(value: String => Unit): Self = StObject.set(x, "didEndElement", js.Any.fromFunction1(value))
+    inline def setDidEndElement(value: String => Unit): Self = StObject.set(x, "didEndElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDidStartDocument(value: () => Unit): Self = StObject.set(x, "didStartDocument", js.Any.fromFunction0(value))
+    inline def setDidStartDocument(value: () => Unit): Self = StObject.set(x, "didStartDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDidStartElement(value: (String, StringDictionary[String]) => Unit): Self = StObject.set(x, "didStartElement", js.Any.fromFunction2(value))
+    inline def setDidStartElement(value: (String, StringDictionary[String]) => Unit): Self = StObject.set(x, "didStartElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFoundCharacters(value: String => Unit): Self = StObject.set(x, "foundCharacters", js.Any.fromFunction1(value))
+    inline def setFoundCharacters(value: String => Unit): Self = StObject.set(x, "foundCharacters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParse(value: () => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
+    inline def setParse(value: () => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParseErrorOccurred(value: String => Unit): Self = StObject.set(x, "parseErrorOccurred", js.Any.fromFunction1(value))
+    inline def setParseErrorOccurred(value: String => Unit): Self = StObject.set(x, "parseErrorOccurred", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

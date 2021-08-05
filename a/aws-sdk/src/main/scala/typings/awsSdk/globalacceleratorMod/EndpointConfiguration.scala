@@ -23,31 +23,23 @@ trait EndpointConfiguration extends StObject {
 }
 object EndpointConfiguration {
   
-  @scala.inline
-  def apply(): EndpointConfiguration = {
+  inline def apply(): EndpointConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointConfiguration]
   }
   
-  @scala.inline
-  implicit class EndpointConfigurationMutableBuilder[Self <: EndpointConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointConfiguration](x: Self) {
     
-    @scala.inline
-    def setClientIPPreservationEnabled(value: GenericBoolean): Self = StObject.set(x, "ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
+    inline def setClientIPPreservationEnabled(value: GenericBoolean): Self = StObject.set(x, "ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIPPreservationEnabledUndefined: Self = StObject.set(x, "ClientIPPreservationEnabled", js.undefined)
+    inline def setClientIPPreservationEnabledUndefined: Self = StObject.set(x, "ClientIPPreservationEnabled", js.undefined)
     
-    @scala.inline
-    def setEndpointId(value: GenericString): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
+    inline def setEndpointId(value: GenericString): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointIdUndefined: Self = StObject.set(x, "EndpointId", js.undefined)
+    inline def setEndpointIdUndefined: Self = StObject.set(x, "EndpointId", js.undefined)
     
-    @scala.inline
-    def setWeight(value: EndpointWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: EndpointWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
   }
 }

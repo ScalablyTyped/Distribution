@@ -36,43 +36,31 @@ trait GoogleCloudRecommendationengineV1beta1UserInfo extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1UserInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1UserInfo = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1UserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1UserInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1UserInfoMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1UserInfo](x: Self) {
     
-    @scala.inline
-    def setDirectUserRequest(value: Boolean): Self = StObject.set(x, "directUserRequest", value.asInstanceOf[js.Any])
+    inline def setDirectUserRequest(value: Boolean): Self = StObject.set(x, "directUserRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectUserRequestUndefined: Self = StObject.set(x, "directUserRequest", js.undefined)
+    inline def setDirectUserRequestUndefined: Self = StObject.set(x, "directUserRequest", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+    inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
+    inline def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
+    inline def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
   }
 }

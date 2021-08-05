@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisplayModeType extends StObject
 object DisplayModeType {
   
-  @scala.inline
-  def browser: typings.webAppManifest.webAppManifestStrings.browser = "browser".asInstanceOf[typings.webAppManifest.webAppManifestStrings.browser]
+  inline def browser: typings.webAppManifest.webAppManifestStrings.browser = "browser".asInstanceOf[typings.webAppManifest.webAppManifestStrings.browser]
   
-  @scala.inline
-  def fullscreen: typings.webAppManifest.webAppManifestStrings.fullscreen = "fullscreen".asInstanceOf[typings.webAppManifest.webAppManifestStrings.fullscreen]
+  inline def fullscreen: typings.webAppManifest.webAppManifestStrings.fullscreen = "fullscreen".asInstanceOf[typings.webAppManifest.webAppManifestStrings.fullscreen]
   
-  @scala.inline
-  def `minimal-ui`: typings.webAppManifest.webAppManifestStrings.`minimal-ui` = "minimal-ui".asInstanceOf[typings.webAppManifest.webAppManifestStrings.`minimal-ui`]
+  inline def `minimal-ui`: typings.webAppManifest.webAppManifestStrings.`minimal-ui` = "minimal-ui".asInstanceOf[typings.webAppManifest.webAppManifestStrings.`minimal-ui`]
   
-  @scala.inline
-  def standalone: typings.webAppManifest.webAppManifestStrings.standalone = "standalone".asInstanceOf[typings.webAppManifest.webAppManifestStrings.standalone]
+  inline def standalone: typings.webAppManifest.webAppManifestStrings.standalone = "standalone".asInstanceOf[typings.webAppManifest.webAppManifestStrings.standalone]
 }

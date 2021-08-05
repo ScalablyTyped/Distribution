@@ -36,28 +36,20 @@ object TSModuleDeclaration {
   @js.native
   def apply(id: StringLiteral_, body: TSModuleDeclaration): TSModuleDeclaration = js.native
   
-  @scala.inline
-  implicit class TSModuleDeclarationMutableBuilder[Self <: TSModuleDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: TSModuleDeclaration](x: Self) {
     
-    @scala.inline
-    def setBody(value: TSModuleBlock | TSModuleDeclaration): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: TSModuleBlock | TSModuleDeclaration): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
+    inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclareNull: Self = StObject.set(x, "declare", null)
+    inline def setDeclareNull: Self = StObject.set(x, "declare", null)
     
-    @scala.inline
-    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNull: Self = StObject.set(x, "global", null)
+    inline def setGlobalNull: Self = StObject.set(x, "global", null)
     
-    @scala.inline
-    def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSModuleDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSModuleDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

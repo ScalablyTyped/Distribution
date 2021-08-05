@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Status extends StObject
 object Status {
   
-  @scala.inline
-  def askingPermission: typings.reactInstantsearchDom.reactInstantsearchDomStrings.askingPermission = "askingPermission".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.askingPermission]
+  inline def askingPermission: typings.reactInstantsearchDom.reactInstantsearchDomStrings.askingPermission = "askingPermission".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.askingPermission]
   
-  @scala.inline
-  def error: typings.reactInstantsearchDom.reactInstantsearchDomStrings.error = "error".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.error]
+  inline def error: typings.reactInstantsearchDom.reactInstantsearchDomStrings.error = "error".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.error]
   
-  @scala.inline
-  def finished: typings.reactInstantsearchDom.reactInstantsearchDomStrings.finished = "finished".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.finished]
+  inline def finished: typings.reactInstantsearchDom.reactInstantsearchDomStrings.finished = "finished".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.finished]
   
-  @scala.inline
-  def initial: typings.reactInstantsearchDom.reactInstantsearchDomStrings.initial = "initial".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.initial]
+  inline def initial: typings.reactInstantsearchDom.reactInstantsearchDomStrings.initial = "initial".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.initial]
   
-  @scala.inline
-  def recognizing: typings.reactInstantsearchDom.reactInstantsearchDomStrings.recognizing = "recognizing".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.recognizing]
+  inline def recognizing: typings.reactInstantsearchDom.reactInstantsearchDomStrings.recognizing = "recognizing".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.recognizing]
   
-  @scala.inline
-  def waiting: typings.reactInstantsearchDom.reactInstantsearchDomStrings.waiting = "waiting".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.waiting]
+  inline def waiting: typings.reactInstantsearchDom.reactInstantsearchDomStrings.waiting = "waiting".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.waiting]
 }

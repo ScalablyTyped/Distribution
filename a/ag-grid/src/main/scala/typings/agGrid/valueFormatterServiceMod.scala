@@ -12,10 +12,10 @@ object valueFormatterServiceMod {
   @js.native
   class ValueFormatterService () extends StObject {
     
-    var expressionService: js.Any = js.native
+    /* private */ var expressionService: js.Any = js.native
     
     def formatValue(column: Column, rowNode: RowNode, $scope: js.Any, value: js.Any): String = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
   }
 }

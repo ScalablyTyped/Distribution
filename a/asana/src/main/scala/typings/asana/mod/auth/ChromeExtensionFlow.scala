@@ -19,10 +19,8 @@ object ChromeExtensionFlow {
   @js.native
   val ^ : ChromeExtensionFlowStatic = js.native
   
-  @scala.inline
-  implicit class ChromeExtensionFlowMutableBuilder[Self <: ChromeExtensionFlow] (val x: Self) extends AnyVal {
+  extension [Self <: ChromeExtensionFlow](x: Self) {
     
-    @scala.inline
-    def setRunReceiver(value: () => Unit): Self = StObject.set(x, "runReceiver", js.Any.fromFunction0(value))
+    inline def setRunReceiver(value: () => Unit): Self = StObject.set(x, "runReceiver", js.Any.fromFunction0(value))
   }
 }

@@ -18,8 +18,7 @@ trait ParametersGitListMatchingRefsEndpoint extends StObject {
 }
 object ParametersGitListMatchingRefsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GitListMatchingRefsEndpoint,
     request: GitListMatchingRefsRequestOptions,
     response: OctokitResponse[GitListMatchingRefsResponseData]
@@ -28,16 +27,12 @@ object ParametersGitListMatchingRefsEndpoint {
     __obj.asInstanceOf[ParametersGitListMatchingRefsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGitListMatchingRefsEndpointMutableBuilder[Self <: ParametersGitListMatchingRefsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGitListMatchingRefsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GitListMatchingRefsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitListMatchingRefsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GitListMatchingRefsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GitListMatchingRefsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitListMatchingRefsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitListMatchingRefsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

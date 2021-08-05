@@ -14,23 +14,18 @@ trait Point extends StObject {
 }
 object Point {
   
-  @scala.inline
-  def apply(equals_ : Point => Boolean, lat: Double, lng: Double): Point = {
+  inline def apply(equals_ : Point => Boolean, lat: Double, lng: Double): Point = {
     val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Point]
   }
   
-  @scala.inline
-  implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+  extension [Self <: Point](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: Point => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Point => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
   }
 }

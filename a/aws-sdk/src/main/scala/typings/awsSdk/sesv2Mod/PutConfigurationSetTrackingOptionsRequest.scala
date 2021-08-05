@@ -18,22 +18,17 @@ trait PutConfigurationSetTrackingOptionsRequest extends StObject {
 }
 object PutConfigurationSetTrackingOptionsRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetTrackingOptionsRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetTrackingOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConfigurationSetTrackingOptionsRequest]
   }
   
-  @scala.inline
-  implicit class PutConfigurationSetTrackingOptionsRequestMutableBuilder[Self <: PutConfigurationSetTrackingOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutConfigurationSetTrackingOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomRedirectDomain(value: CustomRedirectDomain): Self = StObject.set(x, "CustomRedirectDomain", value.asInstanceOf[js.Any])
+    inline def setCustomRedirectDomain(value: CustomRedirectDomain): Self = StObject.set(x, "CustomRedirectDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomRedirectDomainUndefined: Self = StObject.set(x, "CustomRedirectDomain", js.undefined)
+    inline def setCustomRedirectDomainUndefined: Self = StObject.set(x, "CustomRedirectDomain", js.undefined)
   }
 }

@@ -11,13 +11,11 @@ object portscannerStrings {
   sealed trait closed
     extends StObject
        with Status
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
   sealed trait open
     extends StObject
        with Status
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
+  inline def open: open = "open".asInstanceOf[open]
 }

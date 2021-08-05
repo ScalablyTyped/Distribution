@@ -35,31 +35,23 @@ trait SchemaReplicaConfiguration extends StObject {
 }
 object SchemaReplicaConfiguration {
   
-  @scala.inline
-  def apply(): SchemaReplicaConfiguration = {
+  inline def apply(): SchemaReplicaConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplicaConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaReplicaConfigurationMutableBuilder[Self <: SchemaReplicaConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplicaConfiguration](x: Self) {
     
-    @scala.inline
-    def setFailoverTarget(value: Boolean): Self = StObject.set(x, "failoverTarget", value.asInstanceOf[js.Any])
+    inline def setFailoverTarget(value: Boolean): Self = StObject.set(x, "failoverTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailoverTargetUndefined: Self = StObject.set(x, "failoverTarget", js.undefined)
+    inline def setFailoverTargetUndefined: Self = StObject.set(x, "failoverTarget", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMysqlReplicaConfiguration(value: SchemaMySqlReplicaConfiguration): Self = StObject.set(x, "mysqlReplicaConfiguration", value.asInstanceOf[js.Any])
+    inline def setMysqlReplicaConfiguration(value: SchemaMySqlReplicaConfiguration): Self = StObject.set(x, "mysqlReplicaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMysqlReplicaConfigurationUndefined: Self = StObject.set(x, "mysqlReplicaConfiguration", js.undefined)
+    inline def setMysqlReplicaConfigurationUndefined: Self = StObject.set(x, "mysqlReplicaConfiguration", js.undefined)
   }
 }

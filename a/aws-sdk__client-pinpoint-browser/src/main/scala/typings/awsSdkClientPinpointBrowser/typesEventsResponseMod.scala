@@ -21,20 +21,16 @@ object typesEventsResponseMod {
   }
   object EventsResponse {
     
-    @scala.inline
-    def apply(): EventsResponse = {
+    inline def apply(): EventsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventsResponse]
     }
     
-    @scala.inline
-    implicit class EventsResponseMutableBuilder[Self <: EventsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: EventsResponse](x: Self) {
       
-      @scala.inline
-      def setResults(value: StringDictionary[ItemResponse] | (Iterable[js.Tuple2[String, ItemResponse]])): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+      inline def setResults(value: StringDictionary[ItemResponse] | (Iterable[js.Tuple2[String, ItemResponse]])): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     }
   }
   
@@ -52,20 +48,16 @@ object typesEventsResponseMod {
   }
   object UnmarshalledEventsResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledEventsResponse = {
+    inline def apply(): UnmarshalledEventsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEventsResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEventsResponseMutableBuilder[Self <: UnmarshalledEventsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEventsResponse](x: Self) {
       
-      @scala.inline
-      def setResults(value: StringDictionary[UnmarshalledItemResponse]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+      inline def setResults(value: StringDictionary[UnmarshalledItemResponse]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     }
   }
 }

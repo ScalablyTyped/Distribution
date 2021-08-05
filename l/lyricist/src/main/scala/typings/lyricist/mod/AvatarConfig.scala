@@ -13,19 +13,15 @@ trait AvatarConfig extends StObject {
 }
 object AvatarConfig {
   
-  @scala.inline
-  def apply(bounding_box: Height, url: String): AvatarConfig = {
+  inline def apply(bounding_box: Height, url: String): AvatarConfig = {
     val __obj = js.Dynamic.literal(bounding_box = bounding_box.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarConfig]
   }
   
-  @scala.inline
-  implicit class AvatarConfigMutableBuilder[Self <: AvatarConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AvatarConfig](x: Self) {
     
-    @scala.inline
-    def setBounding_box(value: Height): Self = StObject.set(x, "bounding_box", value.asInstanceOf[js.Any])
+    inline def setBounding_box(value: Height): Self = StObject.set(x, "bounding_box", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

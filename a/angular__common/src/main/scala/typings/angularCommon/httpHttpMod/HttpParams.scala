@@ -17,9 +17,9 @@ class HttpParams () extends StObject {
     */
   def append(param: String, value: String): HttpParams = js.native
   
-  var cloneFrom: js.Any = js.native
+  /* private */ var cloneFrom: js.Any = js.native
   
-  @JSName("clone")
+  /* private */ @JSName("clone")
   var clone_FHttpParams: js.Any = js.native
   
   /**
@@ -32,7 +32,7 @@ class HttpParams () extends StObject {
   def delete(param: String): HttpParams = js.native
   def delete(param: String, value: String): HttpParams = js.native
   
-  var encoder: js.Any = js.native
+  /* private */ var encoder: js.Any = js.native
   
   /**
     * Retrieves the first value for a parameter.
@@ -58,7 +58,7 @@ class HttpParams () extends StObject {
     */
   def has(param: String): Boolean = js.native
   
-  var init: js.Any = js.native
+  /* private */ var init: js.Any = js.native
   
   /**
     * Retrieves all the parameters for this body.
@@ -66,7 +66,7 @@ class HttpParams () extends StObject {
     */
   def keys(): js.Array[String] = js.native
   
-  var map: js.Any = js.native
+  /* private */ var map: js.Any = js.native
   
   /**
     * Replaces the value for a parameter.
@@ -76,5 +76,5 @@ class HttpParams () extends StObject {
     */
   def set(param: String, value: String): HttpParams = js.native
   
-  var updates: js.Any = js.native
+  /* private */ var updates: js.Any = js.native
 }

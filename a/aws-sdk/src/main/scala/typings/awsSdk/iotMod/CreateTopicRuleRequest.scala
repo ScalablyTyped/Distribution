@@ -23,25 +23,19 @@ trait CreateTopicRuleRequest extends StObject {
 }
 object CreateTopicRuleRequest {
   
-  @scala.inline
-  def apply(ruleName: RuleName, topicRulePayload: TopicRulePayload): CreateTopicRuleRequest = {
+  inline def apply(ruleName: RuleName, topicRulePayload: TopicRulePayload): CreateTopicRuleRequest = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any], topicRulePayload = topicRulePayload.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTopicRuleRequest]
   }
   
-  @scala.inline
-  implicit class CreateTopicRuleRequestMutableBuilder[Self <: CreateTopicRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTopicRuleRequest](x: Self) {
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTopicRulePayload(value: TopicRulePayload): Self = StObject.set(x, "topicRulePayload", value.asInstanceOf[js.Any])
+    inline def setTopicRulePayload(value: TopicRulePayload): Self = StObject.set(x, "topicRulePayload", value.asInstanceOf[js.Any])
   }
 }

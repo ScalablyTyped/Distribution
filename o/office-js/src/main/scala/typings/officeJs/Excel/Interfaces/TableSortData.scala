@@ -37,34 +37,25 @@ trait TableSortData extends StObject {
 }
 object TableSortData {
   
-  @scala.inline
-  def apply(): TableSortData = {
+  inline def apply(): TableSortData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableSortData]
   }
   
-  @scala.inline
-  implicit class TableSortDataMutableBuilder[Self <: TableSortData] (val x: Self) extends AnyVal {
+  extension [Self <: TableSortData](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[SortField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[SortField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: SortField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SortField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
-    @scala.inline
-    def setMethod(value: SortMethod | PinYin | StrokeCount): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: SortMethod | PinYin | StrokeCount): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

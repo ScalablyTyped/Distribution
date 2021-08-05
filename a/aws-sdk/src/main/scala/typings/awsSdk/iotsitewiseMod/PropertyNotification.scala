@@ -18,19 +18,15 @@ trait PropertyNotification extends StObject {
 }
 object PropertyNotification {
   
-  @scala.inline
-  def apply(state: PropertyNotificationState, topic: PropertyNotificationTopic): PropertyNotification = {
+  inline def apply(state: PropertyNotificationState, topic: PropertyNotificationTopic): PropertyNotification = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyNotification]
   }
   
-  @scala.inline
-  implicit class PropertyNotificationMutableBuilder[Self <: PropertyNotification] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyNotification](x: Self) {
     
-    @scala.inline
-    def setState(value: PropertyNotificationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PropertyNotificationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: PropertyNotificationTopic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: PropertyNotificationTopic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

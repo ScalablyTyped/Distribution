@@ -24,24 +24,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_JOB_OPERATIONS_ENUM extends StObject
 object FAX_JOB_OPERATIONS_ENUM {
   
-  @scala.inline
-  def fjoDELETE: `16` = 16.asInstanceOf[`16`]
+  inline def fjoDELETE: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def fjoPAUSE: `2` = 2.asInstanceOf[`2`]
+  inline def fjoPAUSE: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fjoRECIPIENT_INFO: `32` = 32.asInstanceOf[`32`]
+  inline def fjoRECIPIENT_INFO: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def fjoRESTART: `8` = 8.asInstanceOf[`8`]
+  inline def fjoRESTART: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def fjoRESUME: `4` = 4.asInstanceOf[`4`]
+  inline def fjoRESUME: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def fjoSENDER_INFO: `64` = 64.asInstanceOf[`64`]
+  inline def fjoSENDER_INFO: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def fjoVIEW: `1` = 1.asInstanceOf[`1`]
+  inline def fjoVIEW: `1` = 1.asInstanceOf[`1`]
 }

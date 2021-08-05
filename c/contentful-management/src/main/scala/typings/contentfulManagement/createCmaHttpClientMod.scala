@@ -17,8 +17,7 @@ object createCmaHttpClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createCMAHttpClient(params: ClientParams): AxiosInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createCMAHttpClient")(params.asInstanceOf[js.Any]).asInstanceOf[AxiosInstance]
+  inline def createCMAHttpClient(params: ClientParams): AxiosInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createCMAHttpClient")(params.asInstanceOf[js.Any]).asInstanceOf[AxiosInstance]
   
   trait ClientParams extends StObject {
     
@@ -123,119 +122,82 @@ object createCmaHttpClientMod {
   }
   object ClientParams {
     
-    @scala.inline
-    def apply(accessToken: String): ClientParams = {
+    inline def apply(accessToken: String): ClientParams = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientParams]
     }
     
-    @scala.inline
-    implicit class ClientParamsMutableBuilder[Self <: ClientParams] (val x: Self) extends AnyVal {
+    extension [Self <: ClientParams](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      @scala.inline
-      def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+      inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setHostUpload(value: String): Self = StObject.set(x, "hostUpload", value.asInstanceOf[js.Any])
+      inline def setHostUpload(value: String): Self = StObject.set(x, "hostUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUploadUndefined: Self = StObject.set(x, "hostUpload", js.undefined)
+      inline def setHostUploadUndefined: Self = StObject.set(x, "hostUpload", js.undefined)
       
-      @scala.inline
-      def setHttpAgent(value: Agent): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
+      inline def setHttpAgent(value: Agent): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
+      inline def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
       
-      @scala.inline
-      def setHttpsAgent(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
+      inline def setHttpsAgent(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
+      inline def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
       
-      @scala.inline
-      def setInsecure(value: Boolean): Self = StObject.set(x, "insecure", value.asInstanceOf[js.Any])
+      inline def setInsecure(value: Boolean): Self = StObject.set(x, "insecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsecureUndefined: Self = StObject.set(x, "insecure", js.undefined)
+      inline def setInsecureUndefined: Self = StObject.set(x, "insecure", js.undefined)
       
-      @scala.inline
-      def setIntegration(value: String): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+      inline def setIntegration(value: String): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
+      inline def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
       
-      @scala.inline
-      def setLogHandler(value: (/* level */ String, /* data */ Error | String) => Unit): Self = StObject.set(x, "logHandler", js.Any.fromFunction2(value))
+      inline def setLogHandler(value: (/* level */ String, /* data */ Error | String) => Unit): Self = StObject.set(x, "logHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLogHandlerUndefined: Self = StObject.set(x, "logHandler", js.undefined)
+      inline def setLogHandlerUndefined: Self = StObject.set(x, "logHandler", js.undefined)
       
-      @scala.inline
-      def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
+      inline def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
+      inline def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
       
-      @scala.inline
-      def setProxy(value: AxiosProxyConfig): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: AxiosProxyConfig): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setRequestLogger(value: /* config */ AxiosRequestConfig => Unit): Self = StObject.set(x, "requestLogger", js.Any.fromFunction1(value))
+      inline def setRequestLogger(value: /* config */ AxiosRequestConfig => Unit): Self = StObject.set(x, "requestLogger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestLoggerUndefined: Self = StObject.set(x, "requestLogger", js.undefined)
+      inline def setRequestLoggerUndefined: Self = StObject.set(x, "requestLogger", js.undefined)
       
-      @scala.inline
-      def setResponseLogger(value: /* response */ AxiosResponse[js.Any] => Unit): Self = StObject.set(x, "responseLogger", js.Any.fromFunction1(value))
+      inline def setResponseLogger(value: /* response */ AxiosResponse[js.Any] => Unit): Self = StObject.set(x, "responseLogger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseLoggerUndefined: Self = StObject.set(x, "responseLogger", js.undefined)
+      inline def setResponseLoggerUndefined: Self = StObject.set(x, "responseLogger", js.undefined)
       
-      @scala.inline
-      def setRetryLimit(value: Double): Self = StObject.set(x, "retryLimit", value.asInstanceOf[js.Any])
+      inline def setRetryLimit(value: Double): Self = StObject.set(x, "retryLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryLimitUndefined: Self = StObject.set(x, "retryLimit", js.undefined)
+      inline def setRetryLimitUndefined: Self = StObject.set(x, "retryLimit", js.undefined)
       
-      @scala.inline
-      def setRetryOnError(value: Boolean): Self = StObject.set(x, "retryOnError", value.asInstanceOf[js.Any])
+      inline def setRetryOnError(value: Boolean): Self = StObject.set(x, "retryOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryOnErrorUndefined: Self = StObject.set(x, "retryOnError", js.undefined)
+      inline def setRetryOnErrorUndefined: Self = StObject.set(x, "retryOnError", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

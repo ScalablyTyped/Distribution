@@ -21,16 +21,13 @@ trait INxAutoSortByStateDef extends StObject {
 }
 object INxAutoSortByStateDef {
   
-  @scala.inline
-  def apply(qDisplayNumberOfRows: Double): INxAutoSortByStateDef = {
+  inline def apply(qDisplayNumberOfRows: Double): INxAutoSortByStateDef = {
     val __obj = js.Dynamic.literal(qDisplayNumberOfRows = qDisplayNumberOfRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxAutoSortByStateDef]
   }
   
-  @scala.inline
-  implicit class INxAutoSortByStateDefMutableBuilder[Self <: INxAutoSortByStateDef] (val x: Self) extends AnyVal {
+  extension [Self <: INxAutoSortByStateDef](x: Self) {
     
-    @scala.inline
-    def setQDisplayNumberOfRows(value: Double): Self = StObject.set(x, "qDisplayNumberOfRows", value.asInstanceOf[js.Any])
+    inline def setQDisplayNumberOfRows(value: Double): Self = StObject.set(x, "qDisplayNumberOfRows", value.asInstanceOf[js.Any])
   }
 }

@@ -17,40 +17,29 @@ trait PartialCsvReadOptions extends StObject {
 }
 object PartialCsvReadOptions {
   
-  @scala.inline
-  def apply(): PartialCsvReadOptions = {
+  inline def apply(): PartialCsvReadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCsvReadOptions]
   }
   
-  @scala.inline
-  implicit class PartialCsvReadOptionsMutableBuilder[Self <: PartialCsvReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCsvReadOptions](x: Self) {
     
-    @scala.inline
-    def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
+    inline def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatsUndefined: Self = StObject.set(x, "dateFormats", js.undefined)
+    inline def setDateFormatsUndefined: Self = StObject.set(x, "dateFormats", js.undefined)
     
-    @scala.inline
-    def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
+    inline def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setMap(value: (/* value */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (/* value */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setParserOptions(value: PartialFastCsvParserOptio): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
+    inline def setParserOptions(value: PartialFastCsvParserOptio): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParserOptionsUndefined: Self = StObject.set(x, "parserOptions", js.undefined)
+    inline def setParserOptionsUndefined: Self = StObject.set(x, "parserOptions", js.undefined)
     
-    @scala.inline
-    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
+    inline def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
   }
 }

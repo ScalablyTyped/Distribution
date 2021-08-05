@@ -21,43 +21,31 @@ trait XMLObject
 }
 object XMLObject {
   
-  @scala.inline
-  def apply(): XMLObject = {
+  inline def apply(): XMLObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XMLObject]
   }
   
-  @scala.inline
-  implicit class XMLObjectMutableBuilder[Self <: XMLObject] (val x: Self) extends AnyVal {
+  extension [Self <: XMLObject](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setWrapped(value: Boolean): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
+    inline def setWrapped(value: Boolean): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrappedUndefined: Self = StObject.set(x, "wrapped", js.undefined)
+    inline def setWrappedUndefined: Self = StObject.set(x, "wrapped", js.undefined)
   }
 }

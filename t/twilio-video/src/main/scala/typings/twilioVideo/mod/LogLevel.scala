@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogLevel extends StObject
 object LogLevel {
   
-  @scala.inline
-  def debug: typings.twilioVideo.twilioVideoStrings.debug = "debug".asInstanceOf[typings.twilioVideo.twilioVideoStrings.debug]
+  inline def debug: typings.twilioVideo.twilioVideoStrings.debug = "debug".asInstanceOf[typings.twilioVideo.twilioVideoStrings.debug]
   
-  @scala.inline
-  def error: typings.twilioVideo.twilioVideoStrings.error = "error".asInstanceOf[typings.twilioVideo.twilioVideoStrings.error]
+  inline def error: typings.twilioVideo.twilioVideoStrings.error = "error".asInstanceOf[typings.twilioVideo.twilioVideoStrings.error]
   
-  @scala.inline
-  def info: typings.twilioVideo.twilioVideoStrings.info = "info".asInstanceOf[typings.twilioVideo.twilioVideoStrings.info]
+  inline def info: typings.twilioVideo.twilioVideoStrings.info = "info".asInstanceOf[typings.twilioVideo.twilioVideoStrings.info]
   
-  @scala.inline
-  def off: typings.twilioVideo.twilioVideoStrings.off = "off".asInstanceOf[typings.twilioVideo.twilioVideoStrings.off]
+  inline def off: typings.twilioVideo.twilioVideoStrings.off = "off".asInstanceOf[typings.twilioVideo.twilioVideoStrings.off]
   
-  @scala.inline
-  def warn: typings.twilioVideo.twilioVideoStrings.warn = "warn".asInstanceOf[typings.twilioVideo.twilioVideoStrings.warn]
+  inline def warn: typings.twilioVideo.twilioVideoStrings.warn = "warn".asInstanceOf[typings.twilioVideo.twilioVideoStrings.warn]
 }

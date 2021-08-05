@@ -12,19 +12,15 @@ trait ExcelWorksheet extends StObject {
 }
 object ExcelWorksheet {
   
-  @scala.inline
-  def apply(name: String, table: ExcelTable): ExcelWorksheet = {
+  inline def apply(name: String, table: ExcelTable): ExcelWorksheet = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelWorksheet]
   }
   
-  @scala.inline
-  implicit class ExcelWorksheetMutableBuilder[Self <: ExcelWorksheet] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelWorksheet](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable(value: ExcelTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: ExcelTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

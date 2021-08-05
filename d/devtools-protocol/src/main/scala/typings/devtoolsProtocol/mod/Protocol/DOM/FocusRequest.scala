@@ -24,31 +24,23 @@ trait FocusRequest extends StObject {
 }
 object FocusRequest {
   
-  @scala.inline
-  def apply(): FocusRequest = {
+  inline def apply(): FocusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FocusRequest]
   }
   
-  @scala.inline
-  implicit class FocusRequestMutableBuilder[Self <: FocusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FocusRequest](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+    inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

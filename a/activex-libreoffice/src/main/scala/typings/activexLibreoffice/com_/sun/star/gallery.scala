@@ -69,8 +69,7 @@ object gallery {
   }
   object GalleryItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Drawing: XComponent,
       GalleryItemType: Double,
       Graphic: XGraphic,
@@ -95,26 +94,19 @@ object gallery {
       __obj.asInstanceOf[GalleryItem]
     }
     
-    @scala.inline
-    implicit class GalleryItemMutableBuilder[Self <: GalleryItem] (val x: Self) extends AnyVal {
+    extension [Self <: GalleryItem](x: Self) {
       
-      @scala.inline
-      def setDrawing(value: XComponent): Self = StObject.set(x, "Drawing", value.asInstanceOf[js.Any])
+      inline def setDrawing(value: XComponent): Self = StObject.set(x, "Drawing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGalleryItemType(value: Double): Self = StObject.set(x, "GalleryItemType", value.asInstanceOf[js.Any])
+      inline def setGalleryItemType(value: Double): Self = StObject.set(x, "GalleryItemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
+      inline def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: XGraphic): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: XGraphic): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,17 +121,13 @@ object gallery {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def DRAWING: `3` = 3.asInstanceOf[`3`]
+      inline def DRAWING: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def EMPTY: `0` = 0.asInstanceOf[`0`]
+      inline def EMPTY: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def GRAPHIC: `1` = 1.asInstanceOf[`1`]
+      inline def GRAPHIC: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def MEDIA: `2` = 2.asInstanceOf[`2`]
+      inline def MEDIA: `2` = 2.asInstanceOf[`2`]
     }
   }
   
@@ -159,8 +147,7 @@ object gallery {
        with XInitialization
   object GalleryThemeProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ElementNames: SafeArray[String],
       ElementType: `type`,
       acquire: () => Unit,
@@ -201,8 +188,7 @@ object gallery {
   }
   object XGalleryItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Type: Double,
       acquire: () => Unit,
       getType: () => Double,
@@ -213,14 +199,11 @@ object gallery {
       __obj.asInstanceOf[XGalleryItem]
     }
     
-    @scala.inline
-    implicit class XGalleryItemMutableBuilder[Self <: XGalleryItem] (val x: Self) extends AnyVal {
+    extension [Self <: XGalleryItem](x: Self) {
       
-      @scala.inline
-      def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,8 +278,7 @@ object gallery {
   }
   object XGalleryTheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Count: Double,
       ElementType: `type`,
       Name: String,
@@ -318,29 +300,21 @@ object gallery {
       __obj.asInstanceOf[XGalleryTheme]
     }
     
-    @scala.inline
-    implicit class XGalleryThemeMutableBuilder[Self <: XGalleryTheme] (val x: Self) extends AnyVal {
+    extension [Self <: XGalleryTheme](x: Self) {
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInsertDrawingByIndex(value: (XComponent, Double) => Double): Self = StObject.set(x, "insertDrawingByIndex", js.Any.fromFunction2(value))
+      inline def setInsertDrawingByIndex(value: (XComponent, Double) => Double): Self = StObject.set(x, "insertDrawingByIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInsertGraphicByIndex(value: (XGraphic, Double) => Double): Self = StObject.set(x, "insertGraphicByIndex", js.Any.fromFunction2(value))
+      inline def setInsertGraphicByIndex(value: (XGraphic, Double) => Double): Self = StObject.set(x, "insertGraphicByIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInsertURLByIndex(value: (String, Double) => Double): Self = StObject.set(x, "insertURLByIndex", js.Any.fromFunction2(value))
+      inline def setInsertURLByIndex(value: (String, Double) => Double): Self = StObject.set(x, "insertURLByIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
+      inline def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -371,8 +345,7 @@ object gallery {
   }
   object XGalleryThemeProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ElementNames: SafeArray[String],
       ElementType: `type`,
       acquire: () => Unit,
@@ -390,14 +363,11 @@ object gallery {
       __obj.asInstanceOf[XGalleryThemeProvider]
     }
     
-    @scala.inline
-    implicit class XGalleryThemeProviderMutableBuilder[Self <: XGalleryThemeProvider] (val x: Self) extends AnyVal {
+    extension [Self <: XGalleryThemeProvider](x: Self) {
       
-      @scala.inline
-      def setInsertNewByName(value: String => XGalleryTheme): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction1(value))
+      inline def setInsertNewByName(value: String => XGalleryTheme): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
+      inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
     }
   }
 }

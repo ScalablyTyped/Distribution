@@ -18,25 +18,19 @@ trait CreateTrafficMirrorFilterRuleResult extends StObject {
 }
 object CreateTrafficMirrorFilterRuleResult {
   
-  @scala.inline
-  def apply(): CreateTrafficMirrorFilterRuleResult = {
+  inline def apply(): CreateTrafficMirrorFilterRuleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTrafficMirrorFilterRuleResult]
   }
   
-  @scala.inline
-  implicit class CreateTrafficMirrorFilterRuleResultMutableBuilder[Self <: CreateTrafficMirrorFilterRuleResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTrafficMirrorFilterRuleResult](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setTrafficMirrorFilterRule(value: TrafficMirrorFilterRule): Self = StObject.set(x, "TrafficMirrorFilterRule", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorFilterRule(value: TrafficMirrorFilterRule): Self = StObject.set(x, "TrafficMirrorFilterRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficMirrorFilterRuleUndefined: Self = StObject.set(x, "TrafficMirrorFilterRule", js.undefined)
+    inline def setTrafficMirrorFilterRuleUndefined: Self = StObject.set(x, "TrafficMirrorFilterRule", js.undefined)
   }
 }

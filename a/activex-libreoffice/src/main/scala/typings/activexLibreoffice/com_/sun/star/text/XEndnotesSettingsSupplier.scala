@@ -20,8 +20,7 @@ trait XEndnotesSettingsSupplier
 }
 object XEndnotesSettingsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndnotesSettings: XPropertySet,
     acquire: () => Unit,
     getEndnotesSettings: () => XPropertySet,
@@ -32,13 +31,10 @@ object XEndnotesSettingsSupplier {
     __obj.asInstanceOf[XEndnotesSettingsSupplier]
   }
   
-  @scala.inline
-  implicit class XEndnotesSettingsSupplierMutableBuilder[Self <: XEndnotesSettingsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XEndnotesSettingsSupplier](x: Self) {
     
-    @scala.inline
-    def setEndnotesSettings(value: XPropertySet): Self = StObject.set(x, "EndnotesSettings", value.asInstanceOf[js.Any])
+    inline def setEndnotesSettings(value: XPropertySet): Self = StObject.set(x, "EndnotesSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEndnotesSettings(value: () => XPropertySet): Self = StObject.set(x, "getEndnotesSettings", js.Any.fromFunction0(value))
+    inline def setGetEndnotesSettings(value: () => XPropertySet): Self = StObject.set(x, "getEndnotesSettings", js.Any.fromFunction0(value))
   }
 }

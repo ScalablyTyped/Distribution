@@ -12,19 +12,15 @@ trait SchedulerLocale extends StObject {
 }
 object SchedulerLocale {
   
-  @scala.inline
-  def apply(date: SchedulerLocaleDate, labels: SchedulerLocaleLabels): SchedulerLocale = {
+  inline def apply(date: SchedulerLocaleDate, labels: SchedulerLocaleLabels): SchedulerLocale = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerLocale]
   }
   
-  @scala.inline
-  implicit class SchedulerLocaleMutableBuilder[Self <: SchedulerLocale] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerLocale](x: Self) {
     
-    @scala.inline
-    def setDate(value: SchedulerLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: SchedulerLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: SchedulerLocaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: SchedulerLocaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
   }
 }

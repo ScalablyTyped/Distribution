@@ -16,37 +16,27 @@ trait CustomLauncher extends StObject {
 }
 object CustomLauncher {
   
-  @scala.inline
-  def apply(base: String): CustomLauncher = {
+  inline def apply(base: String): CustomLauncher = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLauncher]
   }
   
-  @scala.inline
-  implicit class CustomLauncherMutableBuilder[Self <: CustomLauncher] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLauncher](x: Self) {
     
-    @scala.inline
-    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
+    inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
+    inline def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
     
-    @scala.inline
-    def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

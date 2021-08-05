@@ -18,19 +18,15 @@ trait NewItemCount extends StObject {
 }
 object NewItemCount {
   
-  @scala.inline
-  def apply(newItemCount: Double, totalItemCount: Double): NewItemCount = {
+  inline def apply(newItemCount: Double, totalItemCount: Double): NewItemCount = {
     val __obj = js.Dynamic.literal(newItemCount = newItemCount.asInstanceOf[js.Any], totalItemCount = totalItemCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewItemCount]
   }
   
-  @scala.inline
-  implicit class NewItemCountMutableBuilder[Self <: NewItemCount] (val x: Self) extends AnyVal {
+  extension [Self <: NewItemCount](x: Self) {
     
-    @scala.inline
-    def setNewItemCount(value: Double): Self = StObject.set(x, "newItemCount", value.asInstanceOf[js.Any])
+    inline def setNewItemCount(value: Double): Self = StObject.set(x, "newItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemCount(value: Double): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
+    inline def setTotalItemCount(value: Double): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
   }
 }

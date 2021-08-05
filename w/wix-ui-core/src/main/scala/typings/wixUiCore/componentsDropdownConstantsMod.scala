@@ -21,10 +21,8 @@ object componentsDropdownConstantsMod {
   trait OPEN_TRIGGER_TYPE extends StObject
   object OPEN_TRIGGER_TYPE {
     
-    @scala.inline
-    def click: typings.wixUiCore.wixUiCoreStrings.click = "click".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.click]
+    inline def click: typings.wixUiCore.wixUiCoreStrings.click = "click".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.click]
     
-    @scala.inline
-    def hover: typings.wixUiCore.wixUiCoreStrings.hover = "hover".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.hover]
+    inline def hover: typings.wixUiCore.wixUiCoreStrings.hover = "hover".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.hover]
   }
 }

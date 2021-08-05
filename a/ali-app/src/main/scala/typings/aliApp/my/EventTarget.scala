@@ -15,22 +15,17 @@ trait EventTarget extends StObject {
 }
 object EventTarget {
   
-  @scala.inline
-  def apply(dataset: StringDictionary[String], id: String, tagName: String): EventTarget = {
+  inline def apply(dataset: StringDictionary[String], id: String, tagName: String): EventTarget = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTarget]
   }
   
-  @scala.inline
-  implicit class EventTargetMutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: EventTarget](x: Self) {
     
-    @scala.inline
-    def setDataset(value: StringDictionary[String]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: StringDictionary[String]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

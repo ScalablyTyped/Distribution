@@ -12,10 +12,8 @@ object getCipherTextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCipherTextResult]]
-  @scala.inline
-  def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCipherTextResult]]
+  inline def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCipherTextResult]]
+  inline def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCipherTextResult]]
   
   trait GetCipherTextArgs extends StObject {
     
@@ -36,26 +34,20 @@ object getCipherTextMod {
   }
   object GetCipherTextArgs {
     
-    @scala.inline
-    def apply(keyId: String, plaintext: String): GetCipherTextArgs = {
+    inline def apply(keyId: String, plaintext: String): GetCipherTextArgs = {
       val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCipherTextArgs]
     }
     
-    @scala.inline
-    implicit class GetCipherTextArgsMutableBuilder[Self <: GetCipherTextArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetCipherTextArgs](x: Self) {
       
-      @scala.inline
-      def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,32 +71,24 @@ object getCipherTextMod {
   }
   object GetCipherTextResult {
     
-    @scala.inline
-    def apply(ciphertextBlob: String, id: String, keyId: String, plaintext: String): GetCipherTextResult = {
+    inline def apply(ciphertextBlob: String, id: String, keyId: String, plaintext: String): GetCipherTextResult = {
       val __obj = js.Dynamic.literal(ciphertextBlob = ciphertextBlob.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCipherTextResult]
     }
     
-    @scala.inline
-    implicit class GetCipherTextResultMutableBuilder[Self <: GetCipherTextResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCipherTextResult](x: Self) {
       
-      @scala.inline
-      def setCiphertextBlob(value: String): Self = StObject.set(x, "ciphertextBlob", value.asInstanceOf[js.Any])
+      inline def setCiphertextBlob(value: String): Self = StObject.set(x, "ciphertextBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     }
   }
 }

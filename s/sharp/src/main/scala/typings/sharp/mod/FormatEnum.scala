@@ -38,8 +38,7 @@ trait FormatEnum extends StObject {
 }
 object FormatEnum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dz: AvailableFormatInfo,
     fits: AvailableFormatInfo,
     gif: AvailableFormatInfo,
@@ -60,52 +59,36 @@ object FormatEnum {
     __obj.asInstanceOf[FormatEnum]
   }
   
-  @scala.inline
-  implicit class FormatEnumMutableBuilder[Self <: FormatEnum] (val x: Self) extends AnyVal {
+  extension [Self <: FormatEnum](x: Self) {
     
-    @scala.inline
-    def setDz(value: AvailableFormatInfo): Self = StObject.set(x, "dz", value.asInstanceOf[js.Any])
+    inline def setDz(value: AvailableFormatInfo): Self = StObject.set(x, "dz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFits(value: AvailableFormatInfo): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
+    inline def setFits(value: AvailableFormatInfo): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGif(value: AvailableFormatInfo): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
+    inline def setGif(value: AvailableFormatInfo): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: AvailableFormatInfo): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: AvailableFormatInfo): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJpeg(value: AvailableFormatInfo): Self = StObject.set(x, "jpeg", value.asInstanceOf[js.Any])
+    inline def setJpeg(value: AvailableFormatInfo): Self = StObject.set(x, "jpeg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagick(value: AvailableFormatInfo): Self = StObject.set(x, "magick", value.asInstanceOf[js.Any])
+    inline def setMagick(value: AvailableFormatInfo): Self = StObject.set(x, "magick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenslide(value: AvailableFormatInfo): Self = StObject.set(x, "openslide", value.asInstanceOf[js.Any])
+    inline def setOpenslide(value: AvailableFormatInfo): Self = StObject.set(x, "openslide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdf(value: AvailableFormatInfo): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    inline def setPdf(value: AvailableFormatInfo): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPng(value: AvailableFormatInfo): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
+    inline def setPng(value: AvailableFormatInfo): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPpm(value: AvailableFormatInfo): Self = StObject.set(x, "ppm", value.asInstanceOf[js.Any])
+    inline def setPpm(value: AvailableFormatInfo): Self = StObject.set(x, "ppm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: AvailableFormatInfo): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: AvailableFormatInfo): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvg(value: AvailableFormatInfo): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: AvailableFormatInfo): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiff(value: AvailableFormatInfo): Self = StObject.set(x, "tiff", value.asInstanceOf[js.Any])
+    inline def setTiff(value: AvailableFormatInfo): Self = StObject.set(x, "tiff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: AvailableFormatInfo): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: AvailableFormatInfo): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebp(value: AvailableFormatInfo): Self = StObject.set(x, "webp", value.asInstanceOf[js.Any])
+    inline def setWebp(value: AvailableFormatInfo): Self = StObject.set(x, "webp", value.asInstanceOf[js.Any])
   }
 }

@@ -67,85 +67,59 @@ trait IPie3D
 }
 object IPie3D {
   
-  @scala.inline
-  def apply(): IPie3D = {
+  inline def apply(): IPie3D = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPie3D]
   }
   
-  @scala.inline
-  implicit class IPie3DMutableBuilder[Self <: IPie3D] (val x: Self) extends AnyVal {
+  extension [Self <: IPie3D](x: Self) {
     
-    @scala.inline
-    def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
+    inline def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
+    inline def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setGetDistortion(value: () => Double): Self = StObject.set(x, "getDistortion", js.Any.fromFunction0(value))
+    inline def setGetDistortion(value: () => Double): Self = StObject.set(x, "getDistortion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDistortionUndefined: Self = StObject.set(x, "getDistortion", js.undefined)
+    inline def setGetDistortionUndefined: Self = StObject.set(x, "getDistortion", js.undefined)
     
-    @scala.inline
-    def setGetDonut(value: () => js.Any): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
+    inline def setGetDonut(value: () => js.Any): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)
+    inline def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)
     
-    @scala.inline
-    def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+    inline def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
+    inline def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
     
-    @scala.inline
-    def setGetRegion(value: () => Array): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
+    inline def setGetRegion(value: () => Array): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
+    inline def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
     
-    @scala.inline
-    def setGetThickness(value: () => Double): Self = StObject.set(x, "getThickness", js.Any.fromFunction0(value))
+    inline def setGetThickness(value: () => Double): Self = StObject.set(x, "getThickness", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetThicknessUndefined: Self = StObject.set(x, "getThickness", js.undefined)
+    inline def setGetThicknessUndefined: Self = StObject.set(x, "getThickness", js.undefined)
     
-    @scala.inline
-    def setSetDistortion(value: /* distortion */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDistortion", js.Any.fromFunction1(value))
+    inline def setSetDistortion(value: /* distortion */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDistortion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDistortionUndefined: Self = StObject.set(x, "setDistortion", js.undefined)
+    inline def setSetDistortionUndefined: Self = StObject.set(x, "setDistortion", js.undefined)
     
-    @scala.inline
-    def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
+    inline def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDonutUndefined: Self = StObject.set(x, "setDonut", js.undefined)
+    inline def setSetDonutUndefined: Self = StObject.set(x, "setDonut", js.undefined)
     
-    @scala.inline
-    def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
+    inline def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
+    inline def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
     
-    @scala.inline
-    def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
+    inline def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
+    inline def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
     
-    @scala.inline
-    def setSetThickness(value: /* thickness */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setThickness", js.Any.fromFunction1(value))
+    inline def setSetThickness(value: /* thickness */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setThickness", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetThicknessUndefined: Self = StObject.set(x, "setThickness", js.undefined)
+    inline def setSetThicknessUndefined: Self = StObject.set(x, "setThickness", js.undefined)
   }
 }

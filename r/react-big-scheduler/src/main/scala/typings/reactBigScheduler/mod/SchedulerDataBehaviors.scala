@@ -20,27 +20,21 @@ trait SchedulerDataBehaviors extends StObject {
 }
 object SchedulerDataBehaviors {
   
-  @scala.inline
-  def apply(): SchedulerDataBehaviors = {
+  inline def apply(): SchedulerDataBehaviors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerDataBehaviors]
   }
   
-  @scala.inline
-  implicit class SchedulerDataBehaviorsMutableBuilder[Self <: SchedulerDataBehaviors] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerDataBehaviors](x: Self) {
     
-    @scala.inline
-    def setGetCustomDateFunc(
+    inline def setGetCustomDateFunc(
       value: (/* schedulerData */ SchedulerData, /* num */ Double, /* date */ js.UndefOr[String]) => CellUnit
     ): Self = StObject.set(x, "getCustomDateFunc", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetCustomDateFuncUndefined: Self = StObject.set(x, "getCustomDateFunc", js.undefined)
+    inline def setGetCustomDateFuncUndefined: Self = StObject.set(x, "getCustomDateFunc", js.undefined)
     
-    @scala.inline
-    def setIsNonWorkingTimeFunc(value: (/* schedulerData */ SchedulerData, /* time */ String) => Boolean): Self = StObject.set(x, "isNonWorkingTimeFunc", js.Any.fromFunction2(value))
+    inline def setIsNonWorkingTimeFunc(value: (/* schedulerData */ SchedulerData, /* time */ String) => Boolean): Self = StObject.set(x, "isNonWorkingTimeFunc", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsNonWorkingTimeFuncUndefined: Self = StObject.set(x, "isNonWorkingTimeFunc", js.undefined)
+    inline def setIsNonWorkingTimeFuncUndefined: Self = StObject.set(x, "isNonWorkingTimeFunc", js.undefined)
   }
 }

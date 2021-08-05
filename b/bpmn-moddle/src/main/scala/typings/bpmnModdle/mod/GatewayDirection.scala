@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GatewayDirection extends StObject
 object GatewayDirection {
   
-  @scala.inline
-  def Converging: typings.bpmnModdle.bpmnModdleStrings.Converging = "Converging".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Converging]
+  inline def Converging: typings.bpmnModdle.bpmnModdleStrings.Converging = "Converging".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Converging]
   
-  @scala.inline
-  def Diverging: typings.bpmnModdle.bpmnModdleStrings.Diverging = "Diverging".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Diverging]
+  inline def Diverging: typings.bpmnModdle.bpmnModdleStrings.Diverging = "Diverging".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Diverging]
   
-  @scala.inline
-  def Mixed: typings.bpmnModdle.bpmnModdleStrings.Mixed = "Mixed".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Mixed]
+  inline def Mixed: typings.bpmnModdle.bpmnModdleStrings.Mixed = "Mixed".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Mixed]
   
-  @scala.inline
-  def Unspecified: typings.bpmnModdle.bpmnModdleStrings.Unspecified = "Unspecified".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Unspecified]
+  inline def Unspecified: typings.bpmnModdle.bpmnModdleStrings.Unspecified = "Unspecified".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Unspecified]
 }

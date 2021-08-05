@@ -13,20 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskSpec extends StObject
 object TaskSpec {
   
-  @scala.inline
-  def ContainerTaskSpec(): typings.dockerode.mod.ContainerTaskSpec = {
+  inline def ContainerTaskSpec(): typings.dockerode.mod.ContainerTaskSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.dockerode.mod.ContainerTaskSpec]
   }
   
-  @scala.inline
-  def NetworkAttachmentTaskSpec(NetworkAttachmentSpec: ContainerID): typings.dockerode.mod.NetworkAttachmentTaskSpec = {
+  inline def NetworkAttachmentTaskSpec(NetworkAttachmentSpec: ContainerID): typings.dockerode.mod.NetworkAttachmentTaskSpec = {
     val __obj = js.Dynamic.literal(NetworkAttachmentSpec = NetworkAttachmentSpec.asInstanceOf[js.Any], Runtime = "attachment")
     __obj.asInstanceOf[typings.dockerode.mod.NetworkAttachmentTaskSpec]
   }
   
-  @scala.inline
-  def PluginTaskSpec(PluginSpec: PluginSpec): typings.dockerode.mod.PluginTaskSpec = {
+  inline def PluginTaskSpec(PluginSpec: PluginSpec): typings.dockerode.mod.PluginTaskSpec = {
     val __obj = js.Dynamic.literal(PluginSpec = PluginSpec.asInstanceOf[js.Any], Runtime = "plugin")
     __obj.asInstanceOf[typings.dockerode.mod.PluginTaskSpec]
   }

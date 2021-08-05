@@ -23,7 +23,6 @@ object libFocusTrapZoneMod {
     @JSImport("office-ui-fabric-react/lib/FocusTrapZone", "FocusTrapZone._focusStack")
     @js.native
     def _focusStack: js.Any = js.native
-    @scala.inline
-    def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
+    inline def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
   }
 }

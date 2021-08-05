@@ -18,25 +18,19 @@ trait KinesisStreamsInputUpdate extends StObject {
 }
 object KinesisStreamsInputUpdate {
   
-  @scala.inline
-  def apply(): KinesisStreamsInputUpdate = {
+  inline def apply(): KinesisStreamsInputUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KinesisStreamsInputUpdate]
   }
   
-  @scala.inline
-  implicit class KinesisStreamsInputUpdateMutableBuilder[Self <: KinesisStreamsInputUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisStreamsInputUpdate](x: Self) {
     
-    @scala.inline
-    def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
+    inline def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUpdateUndefined: Self = StObject.set(x, "ResourceARNUpdate", js.undefined)
+    inline def setResourceARNUpdateUndefined: Self = StObject.set(x, "ResourceARNUpdate", js.undefined)
     
-    @scala.inline
-    def setRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "RoleARNUpdate", value.asInstanceOf[js.Any])
+    inline def setRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "RoleARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUpdateUndefined: Self = StObject.set(x, "RoleARNUpdate", js.undefined)
+    inline def setRoleARNUpdateUndefined: Self = StObject.set(x, "RoleARNUpdate", js.undefined)
   }
 }

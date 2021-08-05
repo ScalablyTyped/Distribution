@@ -12,19 +12,15 @@ trait Features extends StObject {
 }
 object Features {
   
-  @scala.inline
-  def apply(features: js.Array[webgl]): Features = {
+  inline def apply(features: js.Array[webgl]): Features = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
   
-  @scala.inline
-  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
+  extension [Self <: Features](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[webgl]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[webgl]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesVarargs(value: webgl*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: webgl*): Self = StObject.set(x, "features", js.Array(value :_*))
   }
 }

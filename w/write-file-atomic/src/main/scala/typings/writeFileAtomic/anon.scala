@@ -14,20 +14,16 @@ object anon {
   }
   object Gid {
     
-    @scala.inline
-    def apply(gid: Double, uid: Double): Gid = {
+    inline def apply(gid: Double, uid: Double): Gid = {
       val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Gid]
     }
     
-    @scala.inline
-    implicit class GidMutableBuilder[Self <: Gid] (val x: Self) extends AnyVal {
+    extension [Self <: Gid](x: Self) {
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
 }

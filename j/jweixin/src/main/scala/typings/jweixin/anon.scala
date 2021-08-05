@@ -25,26 +25,20 @@ object anon {
   }
   object Accuracy {
     
-    @scala.inline
-    def apply(accuracy: Double, latitude: Double, longitude: Double, speed: Double): Accuracy = {
+    inline def apply(accuracy: Double, latitude: Double, longitude: Double, speed: Double): Accuracy = {
       val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Accuracy]
     }
     
-    @scala.inline
-    implicit class AccuracyMutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
+    extension [Self <: Accuracy](x: Self) {
       
-      @scala.inline
-      def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+      inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,38 +63,28 @@ object anon {
   }
   object AppId {
     
-    @scala.inline
-    def apply(appId: String, jsApiList: jsApiList, nonceStr: String, signature: String, timestamp: Double): AppId = {
+    inline def apply(appId: String, jsApiList: jsApiList, nonceStr: String, signature: String, timestamp: Double): AppId = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], jsApiList = jsApiList.asInstanceOf[js.Any], nonceStr = nonceStr.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppId]
     }
     
-    @scala.inline
-    implicit class AppIdMutableBuilder[Self <: AppId] (val x: Self) extends AnyVal {
+    extension [Self <: AppId](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setJsApiList(value: jsApiList): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
+      inline def setJsApiList(value: jsApiList): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsApiListVarargs(value: ApiMethod*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
+      inline def setJsApiListVarargs(value: ApiMethod*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
       
-      @scala.inline
-      def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+      inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,20 +96,16 @@ object anon {
   }
   object CardExt {
     
-    @scala.inline
-    def apply(cardExt: String, cardId: String): CardExt = {
+    inline def apply(cardExt: String, cardId: String): CardExt = {
       val __obj = js.Dynamic.literal(cardExt = cardExt.asInstanceOf[js.Any], cardId = cardId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardExt]
     }
     
-    @scala.inline
-    implicit class CardExtMutableBuilder[Self <: CardExt] (val x: Self) extends AnyVal {
+    extension [Self <: CardExt](x: Self) {
       
-      @scala.inline
-      def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
+      inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+      inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,20 +117,16 @@ object anon {
   }
   object CardId {
     
-    @scala.inline
-    def apply(cardId: String, code: String): CardId = {
+    inline def apply(cardId: String, code: String): CardId = {
       val __obj = js.Dynamic.literal(cardId = cardId.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardId]
     }
     
-    @scala.inline
-    implicit class CardIdMutableBuilder[Self <: CardId] (val x: Self) extends AnyVal {
+    extension [Self <: CardId](x: Self) {
       
-      @scala.inline
-      def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+      inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,20 +136,16 @@ object anon {
   }
   object CardList {
     
-    @scala.inline
-    def apply(cardList: js.Array[String]): CardList = {
+    inline def apply(cardList: js.Array[String]): CardList = {
       val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardList]
     }
     
-    @scala.inline
-    implicit class CardListMutableBuilder[Self <: CardList] (val x: Self) extends AnyVal {
+    extension [Self <: CardList](x: Self) {
       
-      @scala.inline
-      def setCardList(value: js.Array[String]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
+      inline def setCardList(value: js.Array[String]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardListVarargs(value: String*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+      inline def setCardListVarargs(value: String*): Self = StObject.set(x, "cardList", js.Array(value :_*))
     }
   }
   
@@ -185,20 +157,16 @@ object anon {
   }
   object CheckResult {
     
-    @scala.inline
-    def apply(checkResult: StringDictionary[Boolean], errMsg: String): CheckResult = {
+    inline def apply(checkResult: StringDictionary[Boolean], errMsg: String): CheckResult = {
       val __obj = js.Dynamic.literal(checkResult = checkResult.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckResult]
     }
     
-    @scala.inline
-    implicit class CheckResultMutableBuilder[Self <: CheckResult] (val x: Self) extends AnyVal {
+    extension [Self <: CheckResult](x: Self) {
       
-      @scala.inline
-      def setCheckResult(value: StringDictionary[Boolean]): Self = StObject.set(x, "checkResult", value.asInstanceOf[js.Any])
+      inline def setCheckResult(value: StringDictionary[Boolean]): Self = StObject.set(x, "checkResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+      inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,17 +176,14 @@ object anon {
   }
   object ErrMsg {
     
-    @scala.inline
-    def apply(errMsg: String): ErrMsg = {
+    inline def apply(errMsg: String): ErrMsg = {
       val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrMsg]
     }
     
-    @scala.inline
-    implicit class ErrMsgMutableBuilder[Self <: ErrMsg] (val x: Self) extends AnyVal {
+    extension [Self <: ErrMsg](x: Self) {
       
-      @scala.inline
-      def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+      inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,17 +193,14 @@ object anon {
   }
   object LocalData {
     
-    @scala.inline
-    def apply(localData: String): LocalData = {
+    inline def apply(localData: String): LocalData = {
       val __obj = js.Dynamic.literal(localData = localData.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalData]
     }
     
-    @scala.inline
-    implicit class LocalDataMutableBuilder[Self <: LocalData] (val x: Self) extends AnyVal {
+    extension [Self <: LocalData](x: Self) {
       
-      @scala.inline
-      def setLocalData(value: String): Self = StObject.set(x, "localData", value.asInstanceOf[js.Any])
+      inline def setLocalData(value: String): Self = StObject.set(x, "localData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,26 +215,20 @@ object anon {
   }
   object LocalIds {
     
-    @scala.inline
-    def apply(errMsg: String, localIds: js.Array[String], sourceType: String): LocalIds = {
+    inline def apply(errMsg: String, localIds: js.Array[String], sourceType: String): LocalIds = {
       val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], localIds = localIds.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalIds]
     }
     
-    @scala.inline
-    implicit class LocalIdsMutableBuilder[Self <: LocalIds] (val x: Self) extends AnyVal {
+    extension [Self <: LocalIds](x: Self) {
       
-      @scala.inline
-      def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+      inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalIds(value: js.Array[String]): Self = StObject.set(x, "localIds", value.asInstanceOf[js.Any])
+      inline def setLocalIds(value: js.Array[String]): Self = StObject.set(x, "localIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value :_*))
+      inline def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,17 +238,14 @@ object anon {
   }
   object NetworkType {
     
-    @scala.inline
-    def apply(networkType: networkType): NetworkType = {
+    inline def apply(networkType: networkType): NetworkType = {
       val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkType]
     }
     
-    @scala.inline
-    implicit class NetworkTypeMutableBuilder[Self <: NetworkType] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkType](x: Self) {
       
-      @scala.inline
-      def setNetworkType(value: networkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+      inline def setNetworkType(value: networkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -302,17 +255,14 @@ object anon {
   }
   object ResultStr {
     
-    @scala.inline
-    def apply(resultStr: String): ResultStr = {
+    inline def apply(resultStr: String): ResultStr = {
       val __obj = js.Dynamic.literal(resultStr = resultStr.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultStr]
     }
     
-    @scala.inline
-    implicit class ResultStrMutableBuilder[Self <: ResultStr] (val x: Self) extends AnyVal {
+    extension [Self <: ResultStr](x: Self) {
       
-      @scala.inline
-      def setResultStr(value: String): Self = StObject.set(x, "resultStr", value.asInstanceOf[js.Any])
+      inline def setResultStr(value: String): Self = StObject.set(x, "resultStr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,17 +272,14 @@ object anon {
   }
   object ServerId {
     
-    @scala.inline
-    def apply(serverId: String): ServerId = {
+    inline def apply(serverId: String): ServerId = {
       val __obj = js.Dynamic.literal(serverId = serverId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerId]
     }
     
-    @scala.inline
-    implicit class ServerIdMutableBuilder[Self <: ServerId] (val x: Self) extends AnyVal {
+    extension [Self <: ServerId](x: Self) {
       
-      @scala.inline
-      def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+      inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,17 +289,14 @@ object anon {
   }
   object TranslateResult {
     
-    @scala.inline
-    def apply(translateResult: String): TranslateResult = {
+    inline def apply(translateResult: String): TranslateResult = {
       val __obj = js.Dynamic.literal(translateResult = translateResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[TranslateResult]
     }
     
-    @scala.inline
-    implicit class TranslateResultMutableBuilder[Self <: TranslateResult] (val x: Self) extends AnyVal {
+    extension [Self <: TranslateResult](x: Self) {
       
-      @scala.inline
-      def setTranslateResult(value: String): Self = StObject.set(x, "translateResult", value.asInstanceOf[js.Any])
+      inline def setTranslateResult(value: String): Self = StObject.set(x, "translateResult", value.asInstanceOf[js.Any])
     }
   }
 }

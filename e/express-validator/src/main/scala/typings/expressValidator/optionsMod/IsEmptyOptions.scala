@@ -10,16 +10,13 @@ trait IsEmptyOptions extends StObject {
 }
 object IsEmptyOptions {
   
-  @scala.inline
-  def apply(ignore_whitespace: Boolean): IsEmptyOptions = {
+  inline def apply(ignore_whitespace: Boolean): IsEmptyOptions = {
     val __obj = js.Dynamic.literal(ignore_whitespace = ignore_whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsEmptyOptions]
   }
   
-  @scala.inline
-  implicit class IsEmptyOptionsMutableBuilder[Self <: IsEmptyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsEmptyOptions](x: Self) {
     
-    @scala.inline
-    def setIgnore_whitespace(value: Boolean): Self = StObject.set(x, "ignore_whitespace", value.asInstanceOf[js.Any])
+    inline def setIgnore_whitespace(value: Boolean): Self = StObject.set(x, "ignore_whitespace", value.asInstanceOf[js.Any])
   }
 }

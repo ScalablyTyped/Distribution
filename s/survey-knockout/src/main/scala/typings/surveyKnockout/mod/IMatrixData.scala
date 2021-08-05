@@ -10,16 +10,13 @@ trait IMatrixData extends StObject {
 }
 object IMatrixData {
   
-  @scala.inline
-  def apply(onMatrixRowChanged: MatrixRowModel => Unit): IMatrixData = {
+  inline def apply(onMatrixRowChanged: MatrixRowModel => Unit): IMatrixData = {
     val __obj = js.Dynamic.literal(onMatrixRowChanged = js.Any.fromFunction1(onMatrixRowChanged))
     __obj.asInstanceOf[IMatrixData]
   }
   
-  @scala.inline
-  implicit class IMatrixDataMutableBuilder[Self <: IMatrixData] (val x: Self) extends AnyVal {
+  extension [Self <: IMatrixData](x: Self) {
     
-    @scala.inline
-    def setOnMatrixRowChanged(value: MatrixRowModel => Unit): Self = StObject.set(x, "onMatrixRowChanged", js.Any.fromFunction1(value))
+    inline def setOnMatrixRowChanged(value: MatrixRowModel => Unit): Self = StObject.set(x, "onMatrixRowChanged", js.Any.fromFunction1(value))
   }
 }

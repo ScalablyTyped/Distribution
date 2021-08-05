@@ -50,46 +50,33 @@ trait SchemaConfigChange extends StObject {
 }
 object SchemaConfigChange {
   
-  @scala.inline
-  def apply(): SchemaConfigChange = {
+  inline def apply(): SchemaConfigChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigChange]
   }
   
-  @scala.inline
-  implicit class SchemaConfigChangeMutableBuilder[Self <: SchemaConfigChange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfigChange](x: Self) {
     
-    @scala.inline
-    def setAdvices(value: js.Array[SchemaAdvice]): Self = StObject.set(x, "advices", value.asInstanceOf[js.Any])
+    inline def setAdvices(value: js.Array[SchemaAdvice]): Self = StObject.set(x, "advices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvicesUndefined: Self = StObject.set(x, "advices", js.undefined)
+    inline def setAdvicesUndefined: Self = StObject.set(x, "advices", js.undefined)
     
-    @scala.inline
-    def setAdvicesVarargs(value: SchemaAdvice*): Self = StObject.set(x, "advices", js.Array(value :_*))
+    inline def setAdvicesVarargs(value: SchemaAdvice*): Self = StObject.set(x, "advices", js.Array(value :_*))
     
-    @scala.inline
-    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
+    inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     
-    @scala.inline
-    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
-    @scala.inline
-    def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

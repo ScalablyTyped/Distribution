@@ -17,28 +17,21 @@ trait PivotHeader extends StObject {
 }
 object PivotHeader {
   
-  @scala.inline
-  def apply(): PivotHeader = {
+  inline def apply(): PivotHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotHeader]
   }
   
-  @scala.inline
-  implicit class PivotHeaderMutableBuilder[Self <: PivotHeader] (val x: Self) extends AnyVal {
+  extension [Self <: PivotHeader](x: Self) {
     
-    @scala.inline
-    def setPivotDimensionHeaders(value: js.Array[PivotDimensionHeader]): Self = StObject.set(x, "pivotDimensionHeaders", value.asInstanceOf[js.Any])
+    inline def setPivotDimensionHeaders(value: js.Array[PivotDimensionHeader]): Self = StObject.set(x, "pivotDimensionHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotDimensionHeadersUndefined: Self = StObject.set(x, "pivotDimensionHeaders", js.undefined)
+    inline def setPivotDimensionHeadersUndefined: Self = StObject.set(x, "pivotDimensionHeaders", js.undefined)
     
-    @scala.inline
-    def setPivotDimensionHeadersVarargs(value: PivotDimensionHeader*): Self = StObject.set(x, "pivotDimensionHeaders", js.Array(value :_*))
+    inline def setPivotDimensionHeadersVarargs(value: PivotDimensionHeader*): Self = StObject.set(x, "pivotDimensionHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ trait ClipboardEvent[T]
 }
 object ClipboardEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
     clipboardData: DataTransfer,
@@ -38,10 +37,8 @@ object ClipboardEvent {
     __obj.asInstanceOf[ClipboardEvent[T]]
   }
   
-  @scala.inline
-  implicit class ClipboardEventMutableBuilder[Self <: ClipboardEvent[?], T] (val x: Self & ClipboardEvent[T]) extends AnyVal {
+  extension [Self <: ClipboardEvent[?], T](x: Self & ClipboardEvent[T]) {
     
-    @scala.inline
-    def setClipboardData(value: DataTransfer): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
+    inline def setClipboardData(value: DataTransfer): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
   }
 }

@@ -19,22 +19,17 @@ trait SchemaPullBatchResponse extends StObject {
 }
 object SchemaPullBatchResponse {
   
-  @scala.inline
-  def apply(): SchemaPullBatchResponse = {
+  inline def apply(): SchemaPullBatchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPullBatchResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPullBatchResponseMutableBuilder[Self <: SchemaPullBatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPullBatchResponse](x: Self) {
     
-    @scala.inline
-    def setPullResponses(value: js.Array[SchemaPullResponse]): Self = StObject.set(x, "pullResponses", value.asInstanceOf[js.Any])
+    inline def setPullResponses(value: js.Array[SchemaPullResponse]): Self = StObject.set(x, "pullResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullResponsesUndefined: Self = StObject.set(x, "pullResponses", js.undefined)
+    inline def setPullResponsesUndefined: Self = StObject.set(x, "pullResponses", js.undefined)
     
-    @scala.inline
-    def setPullResponsesVarargs(value: SchemaPullResponse*): Self = StObject.set(x, "pullResponses", js.Array(value :_*))
+    inline def setPullResponsesVarargs(value: SchemaPullResponse*): Self = StObject.set(x, "pullResponses", js.Array(value :_*))
   }
 }

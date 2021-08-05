@@ -13,19 +13,15 @@ trait UpdateSizeConstraintSetResponse extends StObject {
 }
 object UpdateSizeConstraintSetResponse {
   
-  @scala.inline
-  def apply(): UpdateSizeConstraintSetResponse = {
+  inline def apply(): UpdateSizeConstraintSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSizeConstraintSetResponse]
   }
   
-  @scala.inline
-  implicit class UpdateSizeConstraintSetResponseMutableBuilder[Self <: UpdateSizeConstraintSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSizeConstraintSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

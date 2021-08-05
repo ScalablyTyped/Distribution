@@ -15,28 +15,21 @@ trait BuyListResponse extends StObject {
 }
 object BuyListResponse {
   
-  @scala.inline
-  def apply(country: String, providers: js.Array[BuyProviderInfo]): BuyListResponse = {
+  inline def apply(country: String, providers: js.Array[BuyProviderInfo]): BuyListResponse = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuyListResponse]
   }
   
-  @scala.inline
-  implicit class BuyListResponseMutableBuilder[Self <: BuyListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuyListResponse](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviders(value: js.Array[BuyProviderInfo]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[BuyProviderInfo]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersVarargs(value: BuyProviderInfo*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: BuyProviderInfo*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
-    @scala.inline
-    def setSuggestedFiatCurrency(value: String): Self = StObject.set(x, "suggestedFiatCurrency", value.asInstanceOf[js.Any])
+    inline def setSuggestedFiatCurrency(value: String): Self = StObject.set(x, "suggestedFiatCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedFiatCurrencyUndefined: Self = StObject.set(x, "suggestedFiatCurrency", js.undefined)
+    inline def setSuggestedFiatCurrencyUndefined: Self = StObject.set(x, "suggestedFiatCurrency", js.undefined)
   }
 }

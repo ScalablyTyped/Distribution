@@ -138,178 +138,121 @@ trait HlsGroupSettings extends StObject {
 }
 object HlsGroupSettings {
   
-  @scala.inline
-  def apply(): HlsGroupSettings = {
+  inline def apply(): HlsGroupSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsGroupSettings]
   }
   
-  @scala.inline
-  implicit class HlsGroupSettingsMutableBuilder[Self <: HlsGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsGroupSettings](x: Self) {
     
-    @scala.inline
-    def setAdMarkers(value: listOfHlsAdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
+    inline def setAdMarkers(value: listOfHlsAdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
+    inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
-    @scala.inline
-    def setAdMarkersVarargs(value: HlsAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
+    inline def setAdMarkersVarargs(value: HlsAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
     
-    @scala.inline
-    def setAdditionalManifests(value: listOfHlsAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
+    inline def setAdditionalManifests(value: listOfHlsAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
+    inline def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
     
-    @scala.inline
-    def setAdditionalManifestsVarargs(value: HlsAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
+    inline def setAdditionalManifestsVarargs(value: HlsAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
     
-    @scala.inline
-    def setAudioOnlyHeader(value: HlsAudioOnlyHeader): Self = StObject.set(x, "AudioOnlyHeader", value.asInstanceOf[js.Any])
+    inline def setAudioOnlyHeader(value: HlsAudioOnlyHeader): Self = StObject.set(x, "AudioOnlyHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioOnlyHeaderUndefined: Self = StObject.set(x, "AudioOnlyHeader", js.undefined)
+    inline def setAudioOnlyHeaderUndefined: Self = StObject.set(x, "AudioOnlyHeader", js.undefined)
     
-    @scala.inline
-    def setBaseUrl(value: string): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: string): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "BaseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "BaseUrl", js.undefined)
     
-    @scala.inline
-    def setCaptionLanguageMappings(value: listOfHlsCaptionLanguageMapping): Self = StObject.set(x, "CaptionLanguageMappings", value.asInstanceOf[js.Any])
+    inline def setCaptionLanguageMappings(value: listOfHlsCaptionLanguageMapping): Self = StObject.set(x, "CaptionLanguageMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionLanguageMappingsUndefined: Self = StObject.set(x, "CaptionLanguageMappings", js.undefined)
+    inline def setCaptionLanguageMappingsUndefined: Self = StObject.set(x, "CaptionLanguageMappings", js.undefined)
     
-    @scala.inline
-    def setCaptionLanguageMappingsVarargs(value: HlsCaptionLanguageMapping*): Self = StObject.set(x, "CaptionLanguageMappings", js.Array(value :_*))
+    inline def setCaptionLanguageMappingsVarargs(value: HlsCaptionLanguageMapping*): Self = StObject.set(x, "CaptionLanguageMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setCaptionLanguageSetting(value: HlsCaptionLanguageSetting): Self = StObject.set(x, "CaptionLanguageSetting", value.asInstanceOf[js.Any])
+    inline def setCaptionLanguageSetting(value: HlsCaptionLanguageSetting): Self = StObject.set(x, "CaptionLanguageSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionLanguageSettingUndefined: Self = StObject.set(x, "CaptionLanguageSetting", js.undefined)
+    inline def setCaptionLanguageSettingUndefined: Self = StObject.set(x, "CaptionLanguageSetting", js.undefined)
     
-    @scala.inline
-    def setClientCache(value: HlsClientCache): Self = StObject.set(x, "ClientCache", value.asInstanceOf[js.Any])
+    inline def setClientCache(value: HlsClientCache): Self = StObject.set(x, "ClientCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCacheUndefined: Self = StObject.set(x, "ClientCache", js.undefined)
+    inline def setClientCacheUndefined: Self = StObject.set(x, "ClientCache", js.undefined)
     
-    @scala.inline
-    def setCodecSpecification(value: HlsCodecSpecification): Self = StObject.set(x, "CodecSpecification", value.asInstanceOf[js.Any])
+    inline def setCodecSpecification(value: HlsCodecSpecification): Self = StObject.set(x, "CodecSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecSpecificationUndefined: Self = StObject.set(x, "CodecSpecification", js.undefined)
+    inline def setCodecSpecificationUndefined: Self = StObject.set(x, "CodecSpecification", js.undefined)
     
-    @scala.inline
-    def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
+    inline def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
+    inline def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
     
-    @scala.inline
-    def setDirectoryStructure(value: HlsDirectoryStructure): Self = StObject.set(x, "DirectoryStructure", value.asInstanceOf[js.Any])
+    inline def setDirectoryStructure(value: HlsDirectoryStructure): Self = StObject.set(x, "DirectoryStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryStructureUndefined: Self = StObject.set(x, "DirectoryStructure", js.undefined)
+    inline def setDirectoryStructureUndefined: Self = StObject.set(x, "DirectoryStructure", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: HlsEncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: HlsEncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setManifestCompression(value: HlsManifestCompression): Self = StObject.set(x, "ManifestCompression", value.asInstanceOf[js.Any])
+    inline def setManifestCompression(value: HlsManifestCompression): Self = StObject.set(x, "ManifestCompression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestCompressionUndefined: Self = StObject.set(x, "ManifestCompression", js.undefined)
+    inline def setManifestCompressionUndefined: Self = StObject.set(x, "ManifestCompression", js.undefined)
     
-    @scala.inline
-    def setManifestDurationFormat(value: HlsManifestDurationFormat): Self = StObject.set(x, "ManifestDurationFormat", value.asInstanceOf[js.Any])
+    inline def setManifestDurationFormat(value: HlsManifestDurationFormat): Self = StObject.set(x, "ManifestDurationFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestDurationFormatUndefined: Self = StObject.set(x, "ManifestDurationFormat", js.undefined)
+    inline def setManifestDurationFormatUndefined: Self = StObject.set(x, "ManifestDurationFormat", js.undefined)
     
-    @scala.inline
-    def setMinFinalSegmentLength(value: doubleMin0Max2147483647): Self = StObject.set(x, "MinFinalSegmentLength", value.asInstanceOf[js.Any])
+    inline def setMinFinalSegmentLength(value: doubleMin0Max2147483647): Self = StObject.set(x, "MinFinalSegmentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinFinalSegmentLengthUndefined: Self = StObject.set(x, "MinFinalSegmentLength", js.undefined)
+    inline def setMinFinalSegmentLengthUndefined: Self = StObject.set(x, "MinFinalSegmentLength", js.undefined)
     
-    @scala.inline
-    def setMinSegmentLength(value: integerMin0Max2147483647): Self = StObject.set(x, "MinSegmentLength", value.asInstanceOf[js.Any])
+    inline def setMinSegmentLength(value: integerMin0Max2147483647): Self = StObject.set(x, "MinSegmentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSegmentLengthUndefined: Self = StObject.set(x, "MinSegmentLength", js.undefined)
+    inline def setMinSegmentLengthUndefined: Self = StObject.set(x, "MinSegmentLength", js.undefined)
     
-    @scala.inline
-    def setOutputSelection(value: HlsOutputSelection): Self = StObject.set(x, "OutputSelection", value.asInstanceOf[js.Any])
+    inline def setOutputSelection(value: HlsOutputSelection): Self = StObject.set(x, "OutputSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSelectionUndefined: Self = StObject.set(x, "OutputSelection", js.undefined)
+    inline def setOutputSelectionUndefined: Self = StObject.set(x, "OutputSelection", js.undefined)
     
-    @scala.inline
-    def setProgramDateTime(value: HlsProgramDateTime): Self = StObject.set(x, "ProgramDateTime", value.asInstanceOf[js.Any])
+    inline def setProgramDateTime(value: HlsProgramDateTime): Self = StObject.set(x, "ProgramDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramDateTimePeriod(value: integerMin0Max3600): Self = StObject.set(x, "ProgramDateTimePeriod", value.asInstanceOf[js.Any])
+    inline def setProgramDateTimePeriod(value: integerMin0Max3600): Self = StObject.set(x, "ProgramDateTimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramDateTimePeriodUndefined: Self = StObject.set(x, "ProgramDateTimePeriod", js.undefined)
+    inline def setProgramDateTimePeriodUndefined: Self = StObject.set(x, "ProgramDateTimePeriod", js.undefined)
     
-    @scala.inline
-    def setProgramDateTimeUndefined: Self = StObject.set(x, "ProgramDateTime", js.undefined)
+    inline def setProgramDateTimeUndefined: Self = StObject.set(x, "ProgramDateTime", js.undefined)
     
-    @scala.inline
-    def setSegmentControl(value: HlsSegmentControl): Self = StObject.set(x, "SegmentControl", value.asInstanceOf[js.Any])
+    inline def setSegmentControl(value: HlsSegmentControl): Self = StObject.set(x, "SegmentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentControlUndefined: Self = StObject.set(x, "SegmentControl", js.undefined)
+    inline def setSegmentControlUndefined: Self = StObject.set(x, "SegmentControl", js.undefined)
     
-    @scala.inline
-    def setSegmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentLength", value.asInstanceOf[js.Any])
+    inline def setSegmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentLengthUndefined: Self = StObject.set(x, "SegmentLength", js.undefined)
+    inline def setSegmentLengthUndefined: Self = StObject.set(x, "SegmentLength", js.undefined)
     
-    @scala.inline
-    def setSegmentsPerSubdirectory(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentsPerSubdirectory", value.asInstanceOf[js.Any])
+    inline def setSegmentsPerSubdirectory(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentsPerSubdirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsPerSubdirectoryUndefined: Self = StObject.set(x, "SegmentsPerSubdirectory", js.undefined)
+    inline def setSegmentsPerSubdirectoryUndefined: Self = StObject.set(x, "SegmentsPerSubdirectory", js.undefined)
     
-    @scala.inline
-    def setStreamInfResolution(value: HlsStreamInfResolution): Self = StObject.set(x, "StreamInfResolution", value.asInstanceOf[js.Any])
+    inline def setStreamInfResolution(value: HlsStreamInfResolution): Self = StObject.set(x, "StreamInfResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamInfResolutionUndefined: Self = StObject.set(x, "StreamInfResolution", js.undefined)
+    inline def setStreamInfResolutionUndefined: Self = StObject.set(x, "StreamInfResolution", js.undefined)
     
-    @scala.inline
-    def setTimedMetadataId3Frame(value: HlsTimedMetadataId3Frame): Self = StObject.set(x, "TimedMetadataId3Frame", value.asInstanceOf[js.Any])
+    inline def setTimedMetadataId3Frame(value: HlsTimedMetadataId3Frame): Self = StObject.set(x, "TimedMetadataId3Frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataId3FrameUndefined: Self = StObject.set(x, "TimedMetadataId3Frame", js.undefined)
+    inline def setTimedMetadataId3FrameUndefined: Self = StObject.set(x, "TimedMetadataId3Frame", js.undefined)
     
-    @scala.inline
-    def setTimedMetadataId3Period(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "TimedMetadataId3Period", value.asInstanceOf[js.Any])
+    inline def setTimedMetadataId3Period(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "TimedMetadataId3Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataId3PeriodUndefined: Self = StObject.set(x, "TimedMetadataId3Period", js.undefined)
+    inline def setTimedMetadataId3PeriodUndefined: Self = StObject.set(x, "TimedMetadataId3Period", js.undefined)
     
-    @scala.inline
-    def setTimestampDeltaMilliseconds(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "TimestampDeltaMilliseconds", value.asInstanceOf[js.Any])
+    inline def setTimestampDeltaMilliseconds(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "TimestampDeltaMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampDeltaMillisecondsUndefined: Self = StObject.set(x, "TimestampDeltaMilliseconds", js.undefined)
+    inline def setTimestampDeltaMillisecondsUndefined: Self = StObject.set(x, "TimestampDeltaMilliseconds", js.undefined)
   }
 }

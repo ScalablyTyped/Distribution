@@ -18,19 +18,15 @@ trait CopyEntryRequestedEventOptions
 }
 object CopyEntryRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, requestId: integer, sourcePath: String, targetPath: String): CopyEntryRequestedEventOptions = {
+  inline def apply(fileSystemId: String, requestId: integer, sourcePath: String, targetPath: String): CopyEntryRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], sourcePath = sourcePath.asInstanceOf[js.Any], targetPath = targetPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyEntryRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class CopyEntryRequestedEventOptionsMutableBuilder[Self <: CopyEntryRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CopyEntryRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
+    inline def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
   }
 }

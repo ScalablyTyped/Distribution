@@ -23,28 +23,25 @@ object xmlDtdParamEntityRefMod {
   }
   object IXmlDtdParamEntityRefOptions {
     
-    @scala.inline
-    def apply(name: String): IXmlDtdParamEntityRefOptions = {
+    inline def apply(name: String): IXmlDtdParamEntityRefOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlDtdParamEntityRefOptions]
     }
     
-    @scala.inline
-    implicit class IXmlDtdParamEntityRefOptionsMutableBuilder[Self <: IXmlDtdParamEntityRefOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlDtdParamEntityRefOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait XmlDtdParamEntityRef[Parent] extends StObject {
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the name of this parameter entity reference.

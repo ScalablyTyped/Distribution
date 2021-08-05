@@ -19,19 +19,15 @@ trait ValidationOptions
 }
 object ValidationOptions {
   
-  @scala.inline
-  def apply(): ValidationOptions = {
+  inline def apply(): ValidationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationOptions]
   }
   
-  @scala.inline
-  implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationOptions](x: Self) {
     
-    @scala.inline
-    def setMessages(value: LanguageMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: LanguageMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait ReadSyncOptions
      with typings.node.fsMod.ReadSyncOptions
 object ReadSyncOptions {
   
-  @scala.inline
-  def apply(): ReadSyncOptions = {
+  inline def apply(): ReadSyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadSyncOptions]
   }

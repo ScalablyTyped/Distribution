@@ -18,28 +18,21 @@ trait TableRestoreStatusMessage extends StObject {
 }
 object TableRestoreStatusMessage {
   
-  @scala.inline
-  def apply(): TableRestoreStatusMessage = {
+  inline def apply(): TableRestoreStatusMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRestoreStatusMessage]
   }
   
-  @scala.inline
-  implicit class TableRestoreStatusMessageMutableBuilder[Self <: TableRestoreStatusMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TableRestoreStatusMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTableRestoreStatusDetails(value: TableRestoreStatusList): Self = StObject.set(x, "TableRestoreStatusDetails", value.asInstanceOf[js.Any])
+    inline def setTableRestoreStatusDetails(value: TableRestoreStatusList): Self = StObject.set(x, "TableRestoreStatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRestoreStatusDetailsUndefined: Self = StObject.set(x, "TableRestoreStatusDetails", js.undefined)
+    inline def setTableRestoreStatusDetailsUndefined: Self = StObject.set(x, "TableRestoreStatusDetails", js.undefined)
     
-    @scala.inline
-    def setTableRestoreStatusDetailsVarargs(value: TableRestoreStatus*): Self = StObject.set(x, "TableRestoreStatusDetails", js.Array(value :_*))
+    inline def setTableRestoreStatusDetailsVarargs(value: TableRestoreStatus*): Self = StObject.set(x, "TableRestoreStatusDetails", js.Array(value :_*))
   }
 }

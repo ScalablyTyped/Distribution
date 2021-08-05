@@ -23,37 +23,27 @@ trait GetCostAndUsageWithResourcesResponse extends StObject {
 }
 object GetCostAndUsageWithResourcesResponse {
   
-  @scala.inline
-  def apply(): GetCostAndUsageWithResourcesResponse = {
+  inline def apply(): GetCostAndUsageWithResourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCostAndUsageWithResourcesResponse]
   }
   
-  @scala.inline
-  implicit class GetCostAndUsageWithResourcesResponseMutableBuilder[Self <: GetCostAndUsageWithResourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCostAndUsageWithResourcesResponse](x: Self) {
     
-    @scala.inline
-    def setGroupDefinitions(value: GroupDefinitions): Self = StObject.set(x, "GroupDefinitions", value.asInstanceOf[js.Any])
+    inline def setGroupDefinitions(value: GroupDefinitions): Self = StObject.set(x, "GroupDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDefinitionsUndefined: Self = StObject.set(x, "GroupDefinitions", js.undefined)
+    inline def setGroupDefinitionsUndefined: Self = StObject.set(x, "GroupDefinitions", js.undefined)
     
-    @scala.inline
-    def setGroupDefinitionsVarargs(value: GroupDefinition*): Self = StObject.set(x, "GroupDefinitions", js.Array(value :_*))
+    inline def setGroupDefinitionsVarargs(value: GroupDefinition*): Self = StObject.set(x, "GroupDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setResultsByTime(value: ResultsByTime): Self = StObject.set(x, "ResultsByTime", value.asInstanceOf[js.Any])
+    inline def setResultsByTime(value: ResultsByTime): Self = StObject.set(x, "ResultsByTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsByTimeUndefined: Self = StObject.set(x, "ResultsByTime", js.undefined)
+    inline def setResultsByTimeUndefined: Self = StObject.set(x, "ResultsByTime", js.undefined)
     
-    @scala.inline
-    def setResultsByTimeVarargs(value: ResultByTime*): Self = StObject.set(x, "ResultsByTime", js.Array(value :_*))
+    inline def setResultsByTimeVarargs(value: ResultByTime*): Self = StObject.set(x, "ResultsByTime", js.Array(value :_*))
   }
 }

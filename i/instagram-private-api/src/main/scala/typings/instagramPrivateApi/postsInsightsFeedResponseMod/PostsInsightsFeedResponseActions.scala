@@ -10,19 +10,15 @@ trait PostsInsightsFeedResponseActions extends StObject {
 }
 object PostsInsightsFeedResponseActions {
   
-  @scala.inline
-  def apply(edges: js.Array[PostsInsightsFeedResponseEdgesItem]): PostsInsightsFeedResponseActions = {
+  inline def apply(edges: js.Array[PostsInsightsFeedResponseEdgesItem]): PostsInsightsFeedResponseActions = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseActions]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseActionsMutableBuilder[Self <: PostsInsightsFeedResponseActions] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseActions](x: Self) {
     
-    @scala.inline
-    def setEdges(value: js.Array[PostsInsightsFeedResponseEdgesItem]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: js.Array[PostsInsightsFeedResponseEdgesItem]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesVarargs(value: PostsInsightsFeedResponseEdgesItem*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: PostsInsightsFeedResponseEdgesItem*): Self = StObject.set(x, "edges", js.Array(value :_*))
   }
 }

@@ -14,22 +14,17 @@ trait ReposGetReleaseByTagEndpoint extends StObject {
 }
 object ReposGetReleaseByTagEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, tag: String): ReposGetReleaseByTagEndpoint = {
+  inline def apply(owner: String, repo: String, tag: String): ReposGetReleaseByTagEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetReleaseByTagEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetReleaseByTagEndpointMutableBuilder[Self <: ReposGetReleaseByTagEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetReleaseByTagEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

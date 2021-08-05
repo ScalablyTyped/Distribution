@@ -14,25 +14,19 @@ trait parseTimeOptions extends StObject {
 }
 object parseTimeOptions {
   
-  @scala.inline
-  def apply(format: String, time: String): parseTimeOptions = {
+  inline def apply(format: String, time: String): parseTimeOptions = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[parseTimeOptions]
   }
   
-  @scala.inline
-  implicit class parseTimeOptionsMutableBuilder[Self <: parseTimeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: parseTimeOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: DateTimePickerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: DateTimePickerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ActivityTypeInfos extends StObject {
 }
 object ActivityTypeInfos {
   
-  @scala.inline
-  def apply(typeInfos: ActivityTypeInfoList): ActivityTypeInfos = {
+  inline def apply(typeInfos: ActivityTypeInfoList): ActivityTypeInfos = {
     val __obj = js.Dynamic.literal(typeInfos = typeInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTypeInfos]
   }
   
-  @scala.inline
-  implicit class ActivityTypeInfosMutableBuilder[Self <: ActivityTypeInfos] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTypeInfos](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTypeInfos(value: ActivityTypeInfoList): Self = StObject.set(x, "typeInfos", value.asInstanceOf[js.Any])
+    inline def setTypeInfos(value: ActivityTypeInfoList): Self = StObject.set(x, "typeInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeInfosVarargs(value: ActivityTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value :_*))
+    inline def setTypeInfosVarargs(value: ActivityTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value :_*))
   }
 }

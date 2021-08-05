@@ -32,8 +32,7 @@ trait XCompatibilityNames
 }
 object XCompatibilityNames {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getCompatibilityNames: String => SafeArray[LocalizedName],
     queryInterface: `type` => js.Any,
@@ -43,10 +42,8 @@ object XCompatibilityNames {
     __obj.asInstanceOf[XCompatibilityNames]
   }
   
-  @scala.inline
-  implicit class XCompatibilityNamesMutableBuilder[Self <: XCompatibilityNames] (val x: Self) extends AnyVal {
+  extension [Self <: XCompatibilityNames](x: Self) {
     
-    @scala.inline
-    def setGetCompatibilityNames(value: String => SafeArray[LocalizedName]): Self = StObject.set(x, "getCompatibilityNames", js.Any.fromFunction1(value))
+    inline def setGetCompatibilityNames(value: String => SafeArray[LocalizedName]): Self = StObject.set(x, "getCompatibilityNames", js.Any.fromFunction1(value))
   }
 }

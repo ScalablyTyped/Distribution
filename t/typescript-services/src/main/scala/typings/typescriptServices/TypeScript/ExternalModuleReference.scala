@@ -12,8 +12,7 @@ trait ExternalModuleReference
 }
 object ExternalModuleReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -40,10 +39,8 @@ object ExternalModuleReference {
     __obj.asInstanceOf[ExternalModuleReference]
   }
   
-  @scala.inline
-  implicit class ExternalModuleReferenceMutableBuilder[Self <: ExternalModuleReference] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalModuleReference](x: Self) {
     
-    @scala.inline
-    def setStringLiteral(value: StringLiteral): Self = StObject.set(x, "stringLiteral", value.asInstanceOf[js.Any])
+    inline def setStringLiteral(value: StringLiteral): Self = StObject.set(x, "stringLiteral", value.asInstanceOf[js.Any])
   }
 }

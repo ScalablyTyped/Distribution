@@ -38,97 +38,67 @@ trait PartialStyleRulesDialogCl extends StObject {
 }
 object PartialStyleRulesDialogCl {
   
-  @scala.inline
-  def apply(): PartialStyleRulesDialogCl = {
+  inline def apply(): PartialStyleRulesDialogCl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesDialogCl]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesDialogClMutableBuilder[Self <: PartialStyleRulesDialogCl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesDialogCl](x: Self) {
     
-    @scala.inline
-    def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+    inline def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperFullScreen(value: CSSProperties): Self = StObject.set(x, "paperFullScreen", value.asInstanceOf[js.Any])
+    inline def setPaperFullScreen(value: CSSProperties): Self = StObject.set(x, "paperFullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperFullScreenUndefined: Self = StObject.set(x, "paperFullScreen", js.undefined)
+    inline def setPaperFullScreenUndefined: Self = StObject.set(x, "paperFullScreen", js.undefined)
     
-    @scala.inline
-    def setPaperFullWidth(value: CSSProperties): Self = StObject.set(x, "paperFullWidth", value.asInstanceOf[js.Any])
+    inline def setPaperFullWidth(value: CSSProperties): Self = StObject.set(x, "paperFullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperFullWidthUndefined: Self = StObject.set(x, "paperFullWidth", js.undefined)
+    inline def setPaperFullWidthUndefined: Self = StObject.set(x, "paperFullWidth", js.undefined)
     
-    @scala.inline
-    def setPaperScrollBody(value: CSSProperties): Self = StObject.set(x, "paperScrollBody", value.asInstanceOf[js.Any])
+    inline def setPaperScrollBody(value: CSSProperties): Self = StObject.set(x, "paperScrollBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperScrollBodyUndefined: Self = StObject.set(x, "paperScrollBody", js.undefined)
+    inline def setPaperScrollBodyUndefined: Self = StObject.set(x, "paperScrollBody", js.undefined)
     
-    @scala.inline
-    def setPaperScrollPaper(value: CSSProperties): Self = StObject.set(x, "paperScrollPaper", value.asInstanceOf[js.Any])
+    inline def setPaperScrollPaper(value: CSSProperties): Self = StObject.set(x, "paperScrollPaper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperScrollPaperUndefined: Self = StObject.set(x, "paperScrollPaper", js.undefined)
+    inline def setPaperScrollPaperUndefined: Self = StObject.set(x, "paperScrollPaper", js.undefined)
     
-    @scala.inline
-    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
     
-    @scala.inline
-    def setPaperWidthLg(value: CSSProperties): Self = StObject.set(x, "paperWidthLg", value.asInstanceOf[js.Any])
+    inline def setPaperWidthLg(value: CSSProperties): Self = StObject.set(x, "paperWidthLg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperWidthLgUndefined: Self = StObject.set(x, "paperWidthLg", js.undefined)
+    inline def setPaperWidthLgUndefined: Self = StObject.set(x, "paperWidthLg", js.undefined)
     
-    @scala.inline
-    def setPaperWidthMd(value: CSSProperties): Self = StObject.set(x, "paperWidthMd", value.asInstanceOf[js.Any])
+    inline def setPaperWidthMd(value: CSSProperties): Self = StObject.set(x, "paperWidthMd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperWidthMdUndefined: Self = StObject.set(x, "paperWidthMd", js.undefined)
+    inline def setPaperWidthMdUndefined: Self = StObject.set(x, "paperWidthMd", js.undefined)
     
-    @scala.inline
-    def setPaperWidthSm(value: CSSProperties): Self = StObject.set(x, "paperWidthSm", value.asInstanceOf[js.Any])
+    inline def setPaperWidthSm(value: CSSProperties): Self = StObject.set(x, "paperWidthSm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperWidthSmUndefined: Self = StObject.set(x, "paperWidthSm", js.undefined)
+    inline def setPaperWidthSmUndefined: Self = StObject.set(x, "paperWidthSm", js.undefined)
     
-    @scala.inline
-    def setPaperWidthXl(value: CSSProperties): Self = StObject.set(x, "paperWidthXl", value.asInstanceOf[js.Any])
+    inline def setPaperWidthXl(value: CSSProperties): Self = StObject.set(x, "paperWidthXl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperWidthXlUndefined: Self = StObject.set(x, "paperWidthXl", js.undefined)
+    inline def setPaperWidthXlUndefined: Self = StObject.set(x, "paperWidthXl", js.undefined)
     
-    @scala.inline
-    def setPaperWidthXs(value: CSSProperties): Self = StObject.set(x, "paperWidthXs", value.asInstanceOf[js.Any])
+    inline def setPaperWidthXs(value: CSSProperties): Self = StObject.set(x, "paperWidthXs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperWidthXsUndefined: Self = StObject.set(x, "paperWidthXs", js.undefined)
+    inline def setPaperWidthXsUndefined: Self = StObject.set(x, "paperWidthXs", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setScrollBody(value: CSSProperties): Self = StObject.set(x, "scrollBody", value.asInstanceOf[js.Any])
+    inline def setScrollBody(value: CSSProperties): Self = StObject.set(x, "scrollBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollBodyUndefined: Self = StObject.set(x, "scrollBody", js.undefined)
+    inline def setScrollBodyUndefined: Self = StObject.set(x, "scrollBody", js.undefined)
     
-    @scala.inline
-    def setScrollPaper(value: CSSProperties): Self = StObject.set(x, "scrollPaper", value.asInstanceOf[js.Any])
+    inline def setScrollPaper(value: CSSProperties): Self = StObject.set(x, "scrollPaper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollPaperUndefined: Self = StObject.set(x, "scrollPaper", js.undefined)
+    inline def setScrollPaperUndefined: Self = StObject.set(x, "scrollPaper", js.undefined)
   }
 }

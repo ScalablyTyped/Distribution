@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "DocumentSnapshot")
 @js.native
-class DocumentSnapshot[T] protected () extends StObject {
+/* protected */ class DocumentSnapshot[T] () extends StObject {
   
   def data(): js.UndefOr[T] = js.native
   def data(options: SnapshotOptions): js.UndefOr[T] = js.native

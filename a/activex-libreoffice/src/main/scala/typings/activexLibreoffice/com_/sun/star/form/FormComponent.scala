@@ -34,8 +34,7 @@ trait FormComponent
      with XPropertyBag
 object FormComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     Parent: XInterface,
     PropertySetInfo: XPropertySetInfo,

@@ -18,28 +18,21 @@ trait ListNotebookInstancesOutput extends StObject {
 }
 object ListNotebookInstancesOutput {
   
-  @scala.inline
-  def apply(): ListNotebookInstancesOutput = {
+  inline def apply(): ListNotebookInstancesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNotebookInstancesOutput]
   }
   
-  @scala.inline
-  implicit class ListNotebookInstancesOutputMutableBuilder[Self <: ListNotebookInstancesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListNotebookInstancesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNotebookInstances(value: NotebookInstanceSummaryList): Self = StObject.set(x, "NotebookInstances", value.asInstanceOf[js.Any])
+    inline def setNotebookInstances(value: NotebookInstanceSummaryList): Self = StObject.set(x, "NotebookInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookInstancesUndefined: Self = StObject.set(x, "NotebookInstances", js.undefined)
+    inline def setNotebookInstancesUndefined: Self = StObject.set(x, "NotebookInstances", js.undefined)
     
-    @scala.inline
-    def setNotebookInstancesVarargs(value: NotebookInstanceSummary*): Self = StObject.set(x, "NotebookInstances", js.Array(value :_*))
+    inline def setNotebookInstancesVarargs(value: NotebookInstanceSummary*): Self = StObject.set(x, "NotebookInstances", js.Array(value :_*))
   }
 }

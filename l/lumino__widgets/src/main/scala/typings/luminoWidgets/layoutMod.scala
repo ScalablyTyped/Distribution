@@ -28,11 +28,11 @@ object layoutMod {
        with IDisposable {
     def this(options: IOptions) = this()
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _fitPolicy: js.Any = js.native
+    /* private */ var _fitPolicy: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -331,8 +331,7 @@ object layoutMod {
       *
       * Some layout implementations may ignore horizontal alignment.
       */
-    @scala.inline
-    def getHorizontalAlignment(widget: Widget): HorizontalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getHorizontalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[HorizontalAlignment]
+    inline def getHorizontalAlignment(widget: Widget): HorizontalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getHorizontalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[HorizontalAlignment]
     
     /**
       * Get the vertical alignment for a widget.
@@ -351,8 +350,7 @@ object layoutMod {
       *
       * Some layout implementations may ignore vertical alignment.
       */
-    @scala.inline
-    def getVerticalAlignment(widget: Widget): VerticalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerticalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[VerticalAlignment]
+    inline def getVerticalAlignment(widget: Widget): VerticalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerticalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[VerticalAlignment]
     
     /**
       * Set the horizontal alignment for a widget.
@@ -375,8 +373,7 @@ object layoutMod {
       * message to widget's parent, provided the parent has a layout
       * installed.
       */
-    @scala.inline
-    def setHorizontalAlignment(widget: Widget, value: HorizontalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHorizontalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setHorizontalAlignment(widget: Widget, value: HorizontalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHorizontalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set the vertical alignment for a widget.
@@ -399,8 +396,7 @@ object layoutMod {
       * message to widget's parent, provided the parent has a layout
       * installed.
       */
-    @scala.inline
-    def setVerticalAlignment(widget: Widget, value: VerticalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVerticalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setVerticalAlignment(widget: Widget, value: VerticalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVerticalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for the layout fit policy.
@@ -418,11 +414,9 @@ object layoutMod {
     trait FitPolicy extends StObject
     object FitPolicy {
       
-      @scala.inline
-      def `set-min-size`: typings.luminoWidgets.luminoWidgetsStrings.`set-min-size` = "set-min-size".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`set-min-size`]
+      inline def `set-min-size`: typings.luminoWidgets.luminoWidgetsStrings.`set-min-size` = "set-min-size".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`set-min-size`]
       
-      @scala.inline
-      def `set-no-constraint`: typings.luminoWidgets.luminoWidgetsStrings.`set-no-constraint` = "set-no-constraint".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`set-no-constraint`]
+      inline def `set-no-constraint`: typings.luminoWidgets.luminoWidgetsStrings.`set-no-constraint` = "set-no-constraint".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`set-no-constraint`]
     }
     
     /**
@@ -436,14 +430,11 @@ object layoutMod {
     trait HorizontalAlignment extends StObject
     object HorizontalAlignment {
       
-      @scala.inline
-      def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
+      inline def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
       
-      @scala.inline
-      def left: typings.luminoWidgets.luminoWidgetsStrings.left = "left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.left]
+      inline def left: typings.luminoWidgets.luminoWidgetsStrings.left = "left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.left]
       
-      @scala.inline
-      def right: typings.luminoWidgets.luminoWidgetsStrings.right = "right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.right]
+      inline def right: typings.luminoWidgets.luminoWidgetsStrings.right = "right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.right]
     }
     
     /**
@@ -460,20 +451,16 @@ object layoutMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setFitPolicy(value: FitPolicy): Self = StObject.set(x, "fitPolicy", value.asInstanceOf[js.Any])
+        inline def setFitPolicy(value: FitPolicy): Self = StObject.set(x, "fitPolicy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFitPolicyUndefined: Self = StObject.set(x, "fitPolicy", js.undefined)
+        inline def setFitPolicyUndefined: Self = StObject.set(x, "fitPolicy", js.undefined)
       }
     }
     
@@ -488,14 +475,11 @@ object layoutMod {
     trait VerticalAlignment extends StObject
     object VerticalAlignment {
       
-      @scala.inline
-      def bottom: typings.luminoWidgets.luminoWidgetsStrings.bottom = "bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.bottom]
+      inline def bottom: typings.luminoWidgets.luminoWidgetsStrings.bottom = "bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.bottom]
       
-      @scala.inline
-      def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
+      inline def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
       
-      @scala.inline
-      def top: typings.luminoWidgets.luminoWidgetsStrings.top = "top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.top]
+      inline def top: typings.luminoWidgets.luminoWidgetsStrings.top = "top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.top]
     }
   }
   
@@ -514,23 +498,23 @@ object layoutMod {
       */
     def this(widget: Widget) = this()
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _height: js.Any = js.native
+    /* private */ var _height: js.Any = js.native
     
-    var _left: js.Any = js.native
+    /* private */ var _left: js.Any = js.native
     
-    var _maxHeight: js.Any = js.native
+    /* private */ var _maxHeight: js.Any = js.native
     
-    var _maxWidth: js.Any = js.native
+    /* private */ var _maxWidth: js.Any = js.native
     
-    var _minHeight: js.Any = js.native
+    /* private */ var _minHeight: js.Any = js.native
     
-    var _minWidth: js.Any = js.native
+    /* private */ var _minWidth: js.Any = js.native
     
-    var _top: js.Any = js.native
+    /* private */ var _top: js.Any = js.native
     
-    var _width: js.Any = js.native
+    /* private */ var _width: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.

@@ -58,73 +58,51 @@ trait TransitGatewayMulticastGroup extends StObject {
 }
 object TransitGatewayMulticastGroup {
   
-  @scala.inline
-  def apply(): TransitGatewayMulticastGroup = {
+  inline def apply(): TransitGatewayMulticastGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayMulticastGroup]
   }
   
-  @scala.inline
-  implicit class TransitGatewayMulticastGroupMutableBuilder[Self <: TransitGatewayMulticastGroup] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayMulticastGroup](x: Self) {
     
-    @scala.inline
-    def setGroupIpAddress(value: String): Self = StObject.set(x, "GroupIpAddress", value.asInstanceOf[js.Any])
+    inline def setGroupIpAddress(value: String): Self = StObject.set(x, "GroupIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIpAddressUndefined: Self = StObject.set(x, "GroupIpAddress", js.undefined)
+    inline def setGroupIpAddressUndefined: Self = StObject.set(x, "GroupIpAddress", js.undefined)
     
-    @scala.inline
-    def setGroupMember(value: Boolean): Self = StObject.set(x, "GroupMember", value.asInstanceOf[js.Any])
+    inline def setGroupMember(value: Boolean): Self = StObject.set(x, "GroupMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupMemberUndefined: Self = StObject.set(x, "GroupMember", js.undefined)
+    inline def setGroupMemberUndefined: Self = StObject.set(x, "GroupMember", js.undefined)
     
-    @scala.inline
-    def setGroupSource(value: Boolean): Self = StObject.set(x, "GroupSource", value.asInstanceOf[js.Any])
+    inline def setGroupSource(value: Boolean): Self = StObject.set(x, "GroupSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSourceUndefined: Self = StObject.set(x, "GroupSource", js.undefined)
+    inline def setGroupSourceUndefined: Self = StObject.set(x, "GroupSource", js.undefined)
     
-    @scala.inline
-    def setMemberType(value: MembershipType): Self = StObject.set(x, "MemberType", value.asInstanceOf[js.Any])
+    inline def setMemberType(value: MembershipType): Self = StObject.set(x, "MemberType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberTypeUndefined: Self = StObject.set(x, "MemberType", js.undefined)
+    inline def setMemberTypeUndefined: Self = StObject.set(x, "MemberType", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: MembershipType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: MembershipType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
+    inline def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
   }
 }

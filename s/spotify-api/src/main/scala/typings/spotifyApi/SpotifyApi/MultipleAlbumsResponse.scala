@@ -16,19 +16,15 @@ trait MultipleAlbumsResponse extends StObject {
 }
 object MultipleAlbumsResponse {
   
-  @scala.inline
-  def apply(albums: js.Array[AlbumObjectFull]): MultipleAlbumsResponse = {
+  inline def apply(albums: js.Array[AlbumObjectFull]): MultipleAlbumsResponse = {
     val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleAlbumsResponse]
   }
   
-  @scala.inline
-  implicit class MultipleAlbumsResponseMutableBuilder[Self <: MultipleAlbumsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleAlbumsResponse](x: Self) {
     
-    @scala.inline
-    def setAlbums(value: js.Array[AlbumObjectFull]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
+    inline def setAlbums(value: js.Array[AlbumObjectFull]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumsVarargs(value: AlbumObjectFull*): Self = StObject.set(x, "albums", js.Array(value :_*))
+    inline def setAlbumsVarargs(value: AlbumObjectFull*): Self = StObject.set(x, "albums", js.Array(value :_*))
   }
 }

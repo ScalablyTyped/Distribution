@@ -13,19 +13,15 @@ trait BatchGetStreamKeyRequest extends StObject {
 }
 object BatchGetStreamKeyRequest {
   
-  @scala.inline
-  def apply(arns: StreamKeyArnList): BatchGetStreamKeyRequest = {
+  inline def apply(arns: StreamKeyArnList): BatchGetStreamKeyRequest = {
     val __obj = js.Dynamic.literal(arns = arns.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetStreamKeyRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetStreamKeyRequestMutableBuilder[Self <: BatchGetStreamKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetStreamKeyRequest](x: Self) {
     
-    @scala.inline
-    def setArns(value: StreamKeyArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
+    inline def setArns(value: StreamKeyArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnsVarargs(value: StreamKeyArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
+    inline def setArnsVarargs(value: StreamKeyArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
   }
 }

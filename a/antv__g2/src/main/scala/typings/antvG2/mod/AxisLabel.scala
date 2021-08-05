@@ -46,49 +46,35 @@ trait AxisLabel extends StObject {
 }
 object AxisLabel {
   
-  @scala.inline
-  def apply(): AxisLabel = {
+  inline def apply(): AxisLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisLabel]
   }
   
-  @scala.inline
-  implicit class AxisLabelMutableBuilder[Self <: AxisLabel] (val x: Self) extends AnyVal {
+  extension [Self <: AxisLabel](x: Self) {
     
-    @scala.inline
-    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
+    inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
+    inline def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    inline def setFormatter(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setHtmlTemplate(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "htmlTemplate", js.Any.fromFunction3(value))
+    inline def setHtmlTemplate(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "htmlTemplate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHtmlTemplateUndefined: Self = StObject.set(x, "htmlTemplate", js.undefined)
+    inline def setHtmlTemplateUndefined: Self = StObject.set(x, "htmlTemplate", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double | js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
     
-    @scala.inline
-    def setTextStyle(value: (js.Function1[/* text */ js.UndefOr[String], text]) | text): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: (js.Function1[/* text */ js.UndefOr[String], text]) | text): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleFunction1(value: /* text */ js.UndefOr[String] => text): Self = StObject.set(x, "textStyle", js.Any.fromFunction1(value))
+    inline def setTextStyleFunction1(value: /* text */ js.UndefOr[String] => text): Self = StObject.set(x, "textStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

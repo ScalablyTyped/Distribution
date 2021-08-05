@@ -83,91 +83,63 @@ trait SchemaUserAddress extends StObject {
 }
 object SchemaUserAddress {
   
-  @scala.inline
-  def apply(): SchemaUserAddress = {
+  inline def apply(): SchemaUserAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserAddress]
   }
   
-  @scala.inline
-  implicit class SchemaUserAddressMutableBuilder[Self <: SchemaUserAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserAddress](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
+    inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
+    inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
-    @scala.inline
-    def setExtendedAddress(value: String): Self = StObject.set(x, "extendedAddress", value.asInstanceOf[js.Any])
+    inline def setExtendedAddress(value: String): Self = StObject.set(x, "extendedAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedAddressUndefined: Self = StObject.set(x, "extendedAddress", js.undefined)
+    inline def setExtendedAddressUndefined: Self = StObject.set(x, "extendedAddress", js.undefined)
     
-    @scala.inline
-    def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+    inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
+    inline def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
+    inline def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
-    @scala.inline
-    def setPoBox(value: String): Self = StObject.set(x, "poBox", value.asInstanceOf[js.Any])
+    inline def setPoBox(value: String): Self = StObject.set(x, "poBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoBoxUndefined: Self = StObject.set(x, "poBox", js.undefined)
+    inline def setPoBoxUndefined: Self = StObject.set(x, "poBox", js.undefined)
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
+    inline def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSourceIsStructured(value: Boolean): Self = StObject.set(x, "sourceIsStructured", value.asInstanceOf[js.Any])
+    inline def setSourceIsStructured(value: Boolean): Self = StObject.set(x, "sourceIsStructured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIsStructuredUndefined: Self = StObject.set(x, "sourceIsStructured", js.undefined)
+    inline def setSourceIsStructuredUndefined: Self = StObject.set(x, "sourceIsStructured", js.undefined)
     
-    @scala.inline
-    def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
+    inline def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetAddressUndefined: Self = StObject.set(x, "streetAddress", js.undefined)
+    inline def setStreetAddressUndefined: Self = StObject.set(x, "streetAddress", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

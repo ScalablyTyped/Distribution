@@ -24,8 +24,7 @@ trait XDataImporter
 }
 object XDataImporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancel: () => Unit,
     importData: (XActiveDataSource, XComponent, XDataTransferEventListener) => Unit,
@@ -36,13 +35,10 @@ object XDataImporter {
     __obj.asInstanceOf[XDataImporter]
   }
   
-  @scala.inline
-  implicit class XDataImporterMutableBuilder[Self <: XDataImporter] (val x: Self) extends AnyVal {
+  extension [Self <: XDataImporter](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImportData(value: (XActiveDataSource, XComponent, XDataTransferEventListener) => Unit): Self = StObject.set(x, "importData", js.Any.fromFunction3(value))
+    inline def setImportData(value: (XActiveDataSource, XComponent, XDataTransferEventListener) => Unit): Self = StObject.set(x, "importData", js.Any.fromFunction3(value))
   }
 }

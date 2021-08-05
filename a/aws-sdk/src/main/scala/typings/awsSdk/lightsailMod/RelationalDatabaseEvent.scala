@@ -28,40 +28,29 @@ trait RelationalDatabaseEvent extends StObject {
 }
 object RelationalDatabaseEvent {
   
-  @scala.inline
-  def apply(): RelationalDatabaseEvent = {
+  inline def apply(): RelationalDatabaseEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationalDatabaseEvent]
   }
   
-  @scala.inline
-  implicit class RelationalDatabaseEventMutableBuilder[Self <: RelationalDatabaseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalDatabaseEvent](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setEventCategories(value: StringList): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
+    inline def setEventCategories(value: StringList): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCategoriesUndefined: Self = StObject.set(x, "eventCategories", js.undefined)
+    inline def setEventCategoriesUndefined: Self = StObject.set(x, "eventCategories", js.undefined)
     
-    @scala.inline
-    def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResource(value: ResourceName): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ResourceName): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

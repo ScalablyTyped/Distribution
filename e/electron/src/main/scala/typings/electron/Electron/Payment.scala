@@ -18,19 +18,15 @@ trait Payment extends StObject {
 }
 object Payment {
   
-  @scala.inline
-  def apply(productIdentifier: String, quantity: Double): Payment = {
+  inline def apply(productIdentifier: String, quantity: Double): Payment = {
     val __obj = js.Dynamic.literal(productIdentifier = productIdentifier.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payment]
   }
   
-  @scala.inline
-  implicit class PaymentMutableBuilder[Self <: Payment] (val x: Self) extends AnyVal {
+  extension [Self <: Payment](x: Self) {
     
-    @scala.inline
-    def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
+    inline def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait DropDownOpeningEventUIParam extends StObject {
 }
 object DropDownOpeningEventUIParam {
   
-  @scala.inline
-  def apply(): DropDownOpeningEventUIParam = {
+  inline def apply(): DropDownOpeningEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropDownOpeningEventUIParam]
   }
   
-  @scala.inline
-  implicit class DropDownOpeningEventUIParamMutableBuilder[Self <: DropDownOpeningEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownOpeningEventUIParam](x: Self) {
     
-    @scala.inline
-    def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

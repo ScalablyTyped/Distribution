@@ -18,8 +18,7 @@ trait XlsxWriteOptions
 }
 object XlsxWriteOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filename: String,
     stream: Stream,
     useSharedStrings: Boolean,
@@ -30,10 +29,8 @@ object XlsxWriteOptions {
     __obj.asInstanceOf[XlsxWriteOptions]
   }
   
-  @scala.inline
-  implicit class XlsxWriteOptionsMutableBuilder[Self <: XlsxWriteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: XlsxWriteOptions](x: Self) {
     
-    @scala.inline
-    def setZip(value: PartialJSZipGeneratorOpti): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    inline def setZip(value: PartialJSZipGeneratorOpti): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
   }
 }

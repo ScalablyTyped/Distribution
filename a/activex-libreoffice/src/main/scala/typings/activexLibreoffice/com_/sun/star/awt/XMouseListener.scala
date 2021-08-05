@@ -33,8 +33,7 @@ trait XMouseListener
 }
 object XMouseListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     mouseEntered: MouseEvent => Unit,
@@ -48,19 +47,14 @@ object XMouseListener {
     __obj.asInstanceOf[XMouseListener]
   }
   
-  @scala.inline
-  implicit class XMouseListenerMutableBuilder[Self <: XMouseListener] (val x: Self) extends AnyVal {
+  extension [Self <: XMouseListener](x: Self) {
     
-    @scala.inline
-    def setMouseEntered(value: MouseEvent => Unit): Self = StObject.set(x, "mouseEntered", js.Any.fromFunction1(value))
+    inline def setMouseEntered(value: MouseEvent => Unit): Self = StObject.set(x, "mouseEntered", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseExited(value: MouseEvent => Unit): Self = StObject.set(x, "mouseExited", js.Any.fromFunction1(value))
+    inline def setMouseExited(value: MouseEvent => Unit): Self = StObject.set(x, "mouseExited", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMousePressed(value: MouseEvent => Unit): Self = StObject.set(x, "mousePressed", js.Any.fromFunction1(value))
+    inline def setMousePressed(value: MouseEvent => Unit): Self = StObject.set(x, "mousePressed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseReleased(value: MouseEvent => Unit): Self = StObject.set(x, "mouseReleased", js.Any.fromFunction1(value))
+    inline def setMouseReleased(value: MouseEvent => Unit): Self = StObject.set(x, "mouseReleased", js.Any.fromFunction1(value))
   }
 }

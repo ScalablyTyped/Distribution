@@ -18,8 +18,7 @@ trait IWebSocketControl extends StObject {
 }
 object IWebSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     outboundBufferSizeInBytes: Double,
     proxyCredential: PasswordCredential,
     serverCredential: PasswordCredential,
@@ -29,19 +28,14 @@ object IWebSocketControl {
     __obj.asInstanceOf[IWebSocketControl]
   }
   
-  @scala.inline
-  implicit class IWebSocketControlMutableBuilder[Self <: IWebSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: IWebSocketControl](x: Self) {
     
-    @scala.inline
-    def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
+    inline def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
+    inline def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedProtocols(value: IVector[String]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
+    inline def setSupportedProtocols(value: IVector[String]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
   }
 }

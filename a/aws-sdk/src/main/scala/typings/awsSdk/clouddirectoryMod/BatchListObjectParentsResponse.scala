@@ -12,28 +12,21 @@ trait BatchListObjectParentsResponse extends StObject {
 }
 object BatchListObjectParentsResponse {
   
-  @scala.inline
-  def apply(): BatchListObjectParentsResponse = {
+  inline def apply(): BatchListObjectParentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchListObjectParentsResponse]
   }
   
-  @scala.inline
-  implicit class BatchListObjectParentsResponseMutableBuilder[Self <: BatchListObjectParentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchListObjectParentsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParentLinks(value: ObjectIdentifierAndLinkNameList): Self = StObject.set(x, "ParentLinks", value.asInstanceOf[js.Any])
+    inline def setParentLinks(value: ObjectIdentifierAndLinkNameList): Self = StObject.set(x, "ParentLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLinksUndefined: Self = StObject.set(x, "ParentLinks", js.undefined)
+    inline def setParentLinksUndefined: Self = StObject.set(x, "ParentLinks", js.undefined)
     
-    @scala.inline
-    def setParentLinksVarargs(value: ObjectIdentifierAndLinkNameTuple*): Self = StObject.set(x, "ParentLinks", js.Array(value :_*))
+    inline def setParentLinksVarargs(value: ObjectIdentifierAndLinkNameTuple*): Self = StObject.set(x, "ParentLinks", js.Array(value :_*))
   }
 }

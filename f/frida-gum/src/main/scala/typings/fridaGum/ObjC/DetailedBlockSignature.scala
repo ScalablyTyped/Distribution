@@ -15,16 +15,13 @@ trait DetailedBlockSignature
 }
 object DetailedBlockSignature {
   
-  @scala.inline
-  def apply(types: String): DetailedBlockSignature = {
+  inline def apply(types: String): DetailedBlockSignature = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedBlockSignature]
   }
   
-  @scala.inline
-  implicit class DetailedBlockSignatureMutableBuilder[Self <: DetailedBlockSignature] (val x: Self) extends AnyVal {
+  extension [Self <: DetailedBlockSignature](x: Self) {
     
-    @scala.inline
-    def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
   }
 }

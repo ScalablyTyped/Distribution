@@ -29,25 +29,19 @@ trait SchemaBuildDetails extends StObject {
 }
 object SchemaBuildDetails {
   
-  @scala.inline
-  def apply(): SchemaBuildDetails = {
+  inline def apply(): SchemaBuildDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildDetails]
   }
   
-  @scala.inline
-  implicit class SchemaBuildDetailsMutableBuilder[Self <: SchemaBuildDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildDetails](x: Self) {
     
-    @scala.inline
-    def setProvenance(value: SchemaBuildProvenance): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
+    inline def setProvenance(value: SchemaBuildProvenance): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvenanceBytes(value: String): Self = StObject.set(x, "provenanceBytes", value.asInstanceOf[js.Any])
+    inline def setProvenanceBytes(value: String): Self = StObject.set(x, "provenanceBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvenanceBytesUndefined: Self = StObject.set(x, "provenanceBytes", js.undefined)
+    inline def setProvenanceBytesUndefined: Self = StObject.set(x, "provenanceBytes", js.undefined)
     
-    @scala.inline
-    def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
+    inline def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
   }
 }

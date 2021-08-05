@@ -19,43 +19,31 @@ trait HoldableProps extends StObject {
 }
 object HoldableProps {
   
-  @scala.inline
-  def apply(): HoldableProps = {
+  inline def apply(): HoldableProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HoldableProps]
   }
   
-  @scala.inline
-  implicit class HoldablePropsMutableBuilder[Self <: HoldableProps] (val x: Self) extends AnyVal {
+  extension [Self <: HoldableProps](x: Self) {
     
-    @scala.inline
-    def setConfig(value: HoldableConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: HoldableConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setOnHoldComplete(value: () => Unit): Self = StObject.set(x, "onHoldComplete", js.Any.fromFunction0(value))
+    inline def setOnHoldComplete(value: () => Unit): Self = StObject.set(x, "onHoldComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHoldCompleteUndefined: Self = StObject.set(x, "onHoldComplete", js.undefined)
+    inline def setOnHoldCompleteUndefined: Self = StObject.set(x, "onHoldComplete", js.undefined)
     
-    @scala.inline
-    def setOnHoldProgress(value: () => Unit): Self = StObject.set(x, "onHoldProgress", js.Any.fromFunction0(value))
+    inline def setOnHoldProgress(value: () => Unit): Self = StObject.set(x, "onHoldProgress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHoldProgressUndefined: Self = StObject.set(x, "onHoldProgress", js.undefined)
+    inline def setOnHoldProgressUndefined: Self = StObject.set(x, "onHoldProgress", js.undefined)
     
-    @scala.inline
-    def setOnMouseDown(value: () => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction0(value))
+    inline def setOnMouseDown(value: () => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    @scala.inline
-    def setOnTouchStart(value: () => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction0(value))
+    inline def setOnTouchStart(value: () => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
   }
 }

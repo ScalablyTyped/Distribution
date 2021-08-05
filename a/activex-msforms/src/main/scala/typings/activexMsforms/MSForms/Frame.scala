@@ -52,7 +52,7 @@ trait Frame extends StObject {
   
   var KeepScrollBarsVisible: fmScrollBars = js.native
   
-  @JSName("MSForms.Frame_typekey")
+  /* private */ @JSName("MSForms.Frame_typekey")
   var MSFormsDotFrame_typekey: Frame = js.native
   
   var MouseIcon: StdPicture = js.native

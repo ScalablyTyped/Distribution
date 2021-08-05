@@ -13,17 +13,14 @@ trait HttpUserEvent[T]
 }
 object HttpUserEvent {
   
-  @scala.inline
-  def apply[T](`type`: User): HttpUserEvent[T] = {
+  inline def apply[T](`type`: User): HttpUserEvent[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpUserEvent[T]]
   }
   
-  @scala.inline
-  implicit class HttpUserEventMutableBuilder[Self <: HttpUserEvent[?], T] (val x: Self & HttpUserEvent[T]) extends AnyVal {
+  extension [Self <: HttpUserEvent[?], T](x: Self & HttpUserEvent[T]) {
     
-    @scala.inline
-    def setType(value: User): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: User): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

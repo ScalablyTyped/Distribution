@@ -12,19 +12,15 @@ trait Line extends StObject {
 }
 object Line {
   
-  @scala.inline
-  def apply(p1: Point, p2: Point): Line = {
+  inline def apply(p1: Point, p2: Point): Line = {
     val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any])
     __obj.asInstanceOf[Line]
   }
   
-  @scala.inline
-  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+  extension [Self <: Line](x: Self) {
     
-    @scala.inline
-    def setP1(value: Point): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+    inline def setP1(value: Point): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP2(value: Point): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+    inline def setP2(value: Point): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
   }
 }

@@ -36,8 +36,7 @@ trait ScrollState extends StObject {
 }
 object ScrollState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colOverscanEndIdx: Double,
     colOverscanStartIdx: Double,
     colVisibleEndIdx: Double,
@@ -57,49 +56,34 @@ object ScrollState {
     __obj.asInstanceOf[ScrollState]
   }
   
-  @scala.inline
-  implicit class ScrollStateMutableBuilder[Self <: ScrollState] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollState](x: Self) {
     
-    @scala.inline
-    def setColOverscanEndIdx(value: Double): Self = StObject.set(x, "colOverscanEndIdx", value.asInstanceOf[js.Any])
+    inline def setColOverscanEndIdx(value: Double): Self = StObject.set(x, "colOverscanEndIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColOverscanStartIdx(value: Double): Self = StObject.set(x, "colOverscanStartIdx", value.asInstanceOf[js.Any])
+    inline def setColOverscanStartIdx(value: Double): Self = StObject.set(x, "colOverscanStartIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColVisibleEndIdx(value: Double): Self = StObject.set(x, "colVisibleEndIdx", value.asInstanceOf[js.Any])
+    inline def setColVisibleEndIdx(value: Double): Self = StObject.set(x, "colVisibleEndIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColVisibleStartIdx(value: Double): Self = StObject.set(x, "colVisibleStartIdx", value.asInstanceOf[js.Any])
+    inline def setColVisibleStartIdx(value: Double): Self = StObject.set(x, "colVisibleStartIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+    inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFrozenColumnIndex(value: Double): Self = StObject.set(x, "lastFrozenColumnIndex", value.asInstanceOf[js.Any])
+    inline def setLastFrozenColumnIndex(value: Double): Self = StObject.set(x, "lastFrozenColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowOverscanEndIdx(value: Double): Self = StObject.set(x, "rowOverscanEndIdx", value.asInstanceOf[js.Any])
+    inline def setRowOverscanEndIdx(value: Double): Self = StObject.set(x, "rowOverscanEndIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowOverscanStartIdx(value: Double): Self = StObject.set(x, "rowOverscanStartIdx", value.asInstanceOf[js.Any])
+    inline def setRowOverscanStartIdx(value: Double): Self = StObject.set(x, "rowOverscanStartIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowVisibleEndIdx(value: Double): Self = StObject.set(x, "rowVisibleEndIdx", value.asInstanceOf[js.Any])
+    inline def setRowVisibleEndIdx(value: Double): Self = StObject.set(x, "rowVisibleEndIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowVisibleStartIdx(value: Double): Self = StObject.set(x, "rowVisibleStartIdx", value.asInstanceOf[js.Any])
+    inline def setRowVisibleStartIdx(value: Double): Self = StObject.set(x, "rowVisibleStartIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollDirection(value: SCROLL_DIRECTION): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
+    inline def setScrollDirection(value: SCROLL_DIRECTION): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

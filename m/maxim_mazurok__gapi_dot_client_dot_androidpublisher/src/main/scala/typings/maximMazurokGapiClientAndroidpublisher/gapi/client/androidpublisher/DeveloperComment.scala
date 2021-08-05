@@ -14,25 +14,19 @@ trait DeveloperComment extends StObject {
 }
 object DeveloperComment {
   
-  @scala.inline
-  def apply(): DeveloperComment = {
+  inline def apply(): DeveloperComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeveloperComment]
   }
   
-  @scala.inline
-  implicit class DeveloperCommentMutableBuilder[Self <: DeveloperComment] (val x: Self) extends AnyVal {
+  extension [Self <: DeveloperComment](x: Self) {
     
-    @scala.inline
-    def setLastModified(value: Timestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: Timestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

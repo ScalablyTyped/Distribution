@@ -56,58 +56,41 @@ trait GutterOptions extends StObject {
 }
 object GutterOptions {
   
-  @scala.inline
-  def apply(name: String): GutterOptions = {
+  inline def apply(name: String): GutterOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GutterOptions]
   }
   
-  @scala.inline
-  implicit class GutterOptionsMutableBuilder[Self <: GutterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GutterOptions](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setLabelFn(value: /* lineData */ LineDataExtended => String): Self = StObject.set(x, "labelFn", js.Any.fromFunction1(value))
+    inline def setLabelFn(value: /* lineData */ LineDataExtended => String): Self = StObject.set(x, "labelFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabelFnUndefined: Self = StObject.set(x, "labelFn", js.undefined)
+    inline def setLabelFnUndefined: Self = StObject.set(x, "labelFn", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseDown(value: /* lineData */ LineData => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: /* lineData */ LineData => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    @scala.inline
-    def setOnMouseMove(value: /* lineData */ LineData => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseMove(value: /* lineData */ LineData => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+    inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setType(value: decorated | `line-number`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: decorated | `line-number`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

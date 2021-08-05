@@ -23,43 +23,31 @@ trait GoogleAnalyticsAdminV1alphaAuditUserLink extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaAuditUserLink {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaAuditUserLink = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaAuditUserLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAuditUserLink]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaAuditUserLinkMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAuditUserLink] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaAuditUserLink](x: Self) {
     
-    @scala.inline
-    def setDirectRoles(value: js.Array[String]): Self = StObject.set(x, "directRoles", value.asInstanceOf[js.Any])
+    inline def setDirectRoles(value: js.Array[String]): Self = StObject.set(x, "directRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectRolesUndefined: Self = StObject.set(x, "directRoles", js.undefined)
+    inline def setDirectRolesUndefined: Self = StObject.set(x, "directRoles", js.undefined)
     
-    @scala.inline
-    def setDirectRolesVarargs(value: String*): Self = StObject.set(x, "directRoles", js.Array(value :_*))
+    inline def setDirectRolesVarargs(value: String*): Self = StObject.set(x, "directRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setEffectiveRoles(value: js.Array[String]): Self = StObject.set(x, "effectiveRoles", value.asInstanceOf[js.Any])
+    inline def setEffectiveRoles(value: js.Array[String]): Self = StObject.set(x, "effectiveRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveRolesUndefined: Self = StObject.set(x, "effectiveRoles", js.undefined)
+    inline def setEffectiveRolesUndefined: Self = StObject.set(x, "effectiveRoles", js.undefined)
     
-    @scala.inline
-    def setEffectiveRolesVarargs(value: String*): Self = StObject.set(x, "effectiveRoles", js.Array(value :_*))
+    inline def setEffectiveRolesVarargs(value: String*): Self = StObject.set(x, "effectiveRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

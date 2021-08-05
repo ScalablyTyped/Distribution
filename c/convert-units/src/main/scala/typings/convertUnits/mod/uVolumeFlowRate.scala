@@ -47,114 +47,77 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uVolumeFlowRate extends StObject
 object uVolumeFlowRate {
   
-  @scala.inline
-  def TbsSlashs: typings.convertUnits.convertUnitsStrings.TbsSlashs = "Tbs/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.TbsSlashs]
+  inline def TbsSlashs: typings.convertUnits.convertUnitsStrings.TbsSlashs = "Tbs/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.TbsSlashs]
   
-  @scala.inline
-  def clSlashs: typings.convertUnits.convertUnitsStrings.clSlashs = "cl/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.clSlashs]
+  inline def clSlashs: typings.convertUnits.convertUnitsStrings.clSlashs = "cl/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.clSlashs]
   
-  @scala.inline
-  def cm3Slashs: typings.convertUnits.convertUnitsStrings.cm3Slashs = "cm3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.cm3Slashs]
+  inline def cm3Slashs: typings.convertUnits.convertUnitsStrings.cm3Slashs = "cm3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.cm3Slashs]
   
-  @scala.inline
-  def cupSlashs: typings.convertUnits.convertUnitsStrings.cupSlashs = "cup/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.cupSlashs]
+  inline def cupSlashs: typings.convertUnits.convertUnitsStrings.cupSlashs = "cup/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.cupSlashs]
   
-  @scala.inline
-  def dlSlashs: typings.convertUnits.convertUnitsStrings.dlSlashs = "dl/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.dlSlashs]
+  inline def dlSlashs: typings.convertUnits.convertUnitsStrings.dlSlashs = "dl/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.dlSlashs]
   
-  @scala.inline
-  def `fl-ozSlashh`: typings.convertUnits.convertUnitsStrings.`fl-ozSlashh` = "fl-oz/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.`fl-ozSlashh`]
+  inline def `fl-ozSlashh`: typings.convertUnits.convertUnitsStrings.`fl-ozSlashh` = "fl-oz/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.`fl-ozSlashh`]
   
-  @scala.inline
-  def `fl-ozSlashmin`: typings.convertUnits.convertUnitsStrings.`fl-ozSlashmin` = "fl-oz/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.`fl-ozSlashmin`]
+  inline def `fl-ozSlashmin`: typings.convertUnits.convertUnitsStrings.`fl-ozSlashmin` = "fl-oz/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.`fl-ozSlashmin`]
   
-  @scala.inline
-  def `fl-ozSlashs`: typings.convertUnits.convertUnitsStrings.`fl-ozSlashs` = "fl-oz/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.`fl-ozSlashs`]
+  inline def `fl-ozSlashs`: typings.convertUnits.convertUnitsStrings.`fl-ozSlashs` = "fl-oz/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.`fl-ozSlashs`]
   
-  @scala.inline
-  def ft3Slashh: typings.convertUnits.convertUnitsStrings.ft3Slashh = "ft3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.ft3Slashh]
+  inline def ft3Slashh: typings.convertUnits.convertUnitsStrings.ft3Slashh = "ft3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.ft3Slashh]
   
-  @scala.inline
-  def ft3Slashmin: typings.convertUnits.convertUnitsStrings.ft3Slashmin = "ft3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.ft3Slashmin]
+  inline def ft3Slashmin: typings.convertUnits.convertUnitsStrings.ft3Slashmin = "ft3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.ft3Slashmin]
   
-  @scala.inline
-  def ft3Slashs: typings.convertUnits.convertUnitsStrings.ft3Slashs = "ft3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.ft3Slashs]
+  inline def ft3Slashs: typings.convertUnits.convertUnitsStrings.ft3Slashs = "ft3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.ft3Slashs]
   
-  @scala.inline
-  def galSlashh: typings.convertUnits.convertUnitsStrings.galSlashh = "gal/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.galSlashh]
+  inline def galSlashh: typings.convertUnits.convertUnitsStrings.galSlashh = "gal/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.galSlashh]
   
-  @scala.inline
-  def galSlashmin: typings.convertUnits.convertUnitsStrings.galSlashmin = "gal/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.galSlashmin]
+  inline def galSlashmin: typings.convertUnits.convertUnitsStrings.galSlashmin = "gal/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.galSlashmin]
   
-  @scala.inline
-  def galSlashs: typings.convertUnits.convertUnitsStrings.galSlashs = "gal/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.galSlashs]
+  inline def galSlashs: typings.convertUnits.convertUnitsStrings.galSlashs = "gal/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.galSlashs]
   
-  @scala.inline
-  def in3Slashh: typings.convertUnits.convertUnitsStrings.in3Slashh = "in3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.in3Slashh]
+  inline def in3Slashh: typings.convertUnits.convertUnitsStrings.in3Slashh = "in3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.in3Slashh]
   
-  @scala.inline
-  def in3Slashmin: typings.convertUnits.convertUnitsStrings.in3Slashmin = "in3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.in3Slashmin]
+  inline def in3Slashmin: typings.convertUnits.convertUnitsStrings.in3Slashmin = "in3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.in3Slashmin]
   
-  @scala.inline
-  def in3Slashs: typings.convertUnits.convertUnitsStrings.in3Slashs = "in3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.in3Slashs]
+  inline def in3Slashs: typings.convertUnits.convertUnitsStrings.in3Slashs = "in3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.in3Slashs]
   
-  @scala.inline
-  def klSlashh: typings.convertUnits.convertUnitsStrings.klSlashh = "kl/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.klSlashh]
+  inline def klSlashh: typings.convertUnits.convertUnitsStrings.klSlashh = "kl/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.klSlashh]
   
-  @scala.inline
-  def klSlashmin: typings.convertUnits.convertUnitsStrings.klSlashmin = "kl/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.klSlashmin]
+  inline def klSlashmin: typings.convertUnits.convertUnitsStrings.klSlashmin = "kl/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.klSlashmin]
   
-  @scala.inline
-  def klSlashs: typings.convertUnits.convertUnitsStrings.klSlashs = "kl/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.klSlashs]
+  inline def klSlashs: typings.convertUnits.convertUnitsStrings.klSlashs = "kl/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.klSlashs]
   
-  @scala.inline
-  def km3Slashs: typings.convertUnits.convertUnitsStrings.km3Slashs = "km3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.km3Slashs]
+  inline def km3Slashs: typings.convertUnits.convertUnitsStrings.km3Slashs = "km3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.km3Slashs]
   
-  @scala.inline
-  def lSlashh: typings.convertUnits.convertUnitsStrings.lSlashh = "l/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.lSlashh]
+  inline def lSlashh: typings.convertUnits.convertUnitsStrings.lSlashh = "l/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.lSlashh]
   
-  @scala.inline
-  def lSlashmin: typings.convertUnits.convertUnitsStrings.lSlashmin = "l/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.lSlashmin]
+  inline def lSlashmin: typings.convertUnits.convertUnitsStrings.lSlashmin = "l/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.lSlashmin]
   
-  @scala.inline
-  def lSlashs: typings.convertUnits.convertUnitsStrings.lSlashs = "l/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.lSlashs]
+  inline def lSlashs: typings.convertUnits.convertUnitsStrings.lSlashs = "l/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.lSlashs]
   
-  @scala.inline
-  def m3Slashh: typings.convertUnits.convertUnitsStrings.m3Slashh = "m3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.m3Slashh]
+  inline def m3Slashh: typings.convertUnits.convertUnitsStrings.m3Slashh = "m3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.m3Slashh]
   
-  @scala.inline
-  def m3Slashmin: typings.convertUnits.convertUnitsStrings.m3Slashmin = "m3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.m3Slashmin]
+  inline def m3Slashmin: typings.convertUnits.convertUnitsStrings.m3Slashmin = "m3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.m3Slashmin]
   
-  @scala.inline
-  def m3Slashs: typings.convertUnits.convertUnitsStrings.m3Slashs = "m3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.m3Slashs]
+  inline def m3Slashs: typings.convertUnits.convertUnitsStrings.m3Slashs = "m3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.m3Slashs]
   
-  @scala.inline
-  def mlSlashs: typings.convertUnits.convertUnitsStrings.mlSlashs = "ml/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.mlSlashs]
+  inline def mlSlashs: typings.convertUnits.convertUnitsStrings.mlSlashs = "ml/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.mlSlashs]
   
-  @scala.inline
-  def mm3Slashs: typings.convertUnits.convertUnitsStrings.mm3Slashs = "mm3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.mm3Slashs]
+  inline def mm3Slashs: typings.convertUnits.convertUnitsStrings.mm3Slashs = "mm3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.mm3Slashs]
   
-  @scala.inline
-  def pntSlashh: typings.convertUnits.convertUnitsStrings.pntSlashh = "pnt/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.pntSlashh]
+  inline def pntSlashh: typings.convertUnits.convertUnitsStrings.pntSlashh = "pnt/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.pntSlashh]
   
-  @scala.inline
-  def pntSlashmin: typings.convertUnits.convertUnitsStrings.pntSlashmin = "pnt/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.pntSlashmin]
+  inline def pntSlashmin: typings.convertUnits.convertUnitsStrings.pntSlashmin = "pnt/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.pntSlashmin]
   
-  @scala.inline
-  def pntSlashs: typings.convertUnits.convertUnitsStrings.pntSlashs = "pnt/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.pntSlashs]
+  inline def pntSlashs: typings.convertUnits.convertUnitsStrings.pntSlashs = "pnt/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.pntSlashs]
   
-  @scala.inline
-  def qtSlashs: typings.convertUnits.convertUnitsStrings.qtSlashs = "qt/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.qtSlashs]
+  inline def qtSlashs: typings.convertUnits.convertUnitsStrings.qtSlashs = "qt/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.qtSlashs]
   
-  @scala.inline
-  def tspSlashs: typings.convertUnits.convertUnitsStrings.tspSlashs = "tsp/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.tspSlashs]
+  inline def tspSlashs: typings.convertUnits.convertUnitsStrings.tspSlashs = "tsp/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.tspSlashs]
   
-  @scala.inline
-  def yd3Slashh: typings.convertUnits.convertUnitsStrings.yd3Slashh = "yd3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd3Slashh]
+  inline def yd3Slashh: typings.convertUnits.convertUnitsStrings.yd3Slashh = "yd3/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd3Slashh]
   
-  @scala.inline
-  def yd3Slashmin: typings.convertUnits.convertUnitsStrings.yd3Slashmin = "yd3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd3Slashmin]
+  inline def yd3Slashmin: typings.convertUnits.convertUnitsStrings.yd3Slashmin = "yd3/min".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd3Slashmin]
   
-  @scala.inline
-  def yd3Slashs: typings.convertUnits.convertUnitsStrings.yd3Slashs = "yd3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd3Slashs]
+  inline def yd3Slashs: typings.convertUnits.convertUnitsStrings.yd3Slashs = "yd3/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd3Slashs]
 }

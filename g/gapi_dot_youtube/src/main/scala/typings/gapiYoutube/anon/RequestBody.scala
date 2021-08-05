@@ -23,28 +23,21 @@ trait RequestBody extends StObject {
 }
 object RequestBody {
   
-  @scala.inline
-  def apply(part: String): RequestBody = {
+  inline def apply(part: String): RequestBody = {
     val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBody]
   }
   
-  @scala.inline
-  implicit class RequestBodyMutableBuilder[Self <: RequestBody] (val x: Self) extends AnyVal {
+  extension [Self <: RequestBody](x: Self) {
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "RequestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "RequestBody", js.undefined)
   }
 }

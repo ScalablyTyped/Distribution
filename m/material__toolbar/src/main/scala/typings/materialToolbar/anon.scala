@@ -22,26 +22,20 @@ object anon {
   }
   object CHANGEEVENT {
     
-    @scala.inline
-    def apply(CHANGE_EVENT: String, FIRST_ROW_SELECTOR: String, ICON_SELECTOR: String, TITLE_SELECTOR: String): CHANGEEVENT = {
+    inline def apply(CHANGE_EVENT: String, FIRST_ROW_SELECTOR: String, ICON_SELECTOR: String, TITLE_SELECTOR: String): CHANGEEVENT = {
       val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT.asInstanceOf[js.Any], FIRST_ROW_SELECTOR = FIRST_ROW_SELECTOR.asInstanceOf[js.Any], ICON_SELECTOR = ICON_SELECTOR.asInstanceOf[js.Any], TITLE_SELECTOR = TITLE_SELECTOR.asInstanceOf[js.Any])
       __obj.asInstanceOf[CHANGEEVENT]
     }
     
-    @scala.inline
-    implicit class CHANGEEVENTMutableBuilder[Self <: CHANGEEVENT] (val x: Self) extends AnyVal {
+    extension [Self <: CHANGEEVENT](x: Self) {
       
-      @scala.inline
-      def setCHANGE_EVENT(value: String): Self = StObject.set(x, "CHANGE_EVENT", value.asInstanceOf[js.Any])
+      inline def setCHANGE_EVENT(value: String): Self = StObject.set(x, "CHANGE_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIRST_ROW_SELECTOR(value: String): Self = StObject.set(x, "FIRST_ROW_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setFIRST_ROW_SELECTOR(value: String): Self = StObject.set(x, "FIRST_ROW_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setICON_SELECTOR(value: String): Self = StObject.set(x, "ICON_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setICON_SELECTOR(value: String): Self = StObject.set(x, "ICON_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTITLE_SELECTOR(value: String): Self = StObject.set(x, "TITLE_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setTITLE_SELECTOR(value: String): Self = StObject.set(x, "TITLE_SELECTOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,8 +57,7 @@ object anon {
   }
   object FIXED {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FIXED: String,
       FIXED_AT_LAST_ROW: String,
       FIXED_LASTROW: String,
@@ -77,29 +70,21 @@ object anon {
       __obj.asInstanceOf[FIXED]
     }
     
-    @scala.inline
-    implicit class FIXEDMutableBuilder[Self <: FIXED] (val x: Self) extends AnyVal {
+    extension [Self <: FIXED](x: Self) {
       
-      @scala.inline
-      def setFIXED(value: String): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
+      inline def setFIXED(value: String): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIXED_AT_LAST_ROW(value: String): Self = StObject.set(x, "FIXED_AT_LAST_ROW", value.asInstanceOf[js.Any])
+      inline def setFIXED_AT_LAST_ROW(value: String): Self = StObject.set(x, "FIXED_AT_LAST_ROW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIXED_LASTROW(value: String): Self = StObject.set(x, "FIXED_LASTROW", value.asInstanceOf[js.Any])
+      inline def setFIXED_LASTROW(value: String): Self = StObject.set(x, "FIXED_LASTROW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFLEXIBLE_DEFAULT_BEHAVIOR(value: String): Self = StObject.set(x, "FLEXIBLE_DEFAULT_BEHAVIOR", value.asInstanceOf[js.Any])
+      inline def setFLEXIBLE_DEFAULT_BEHAVIOR(value: String): Self = StObject.set(x, "FLEXIBLE_DEFAULT_BEHAVIOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFLEXIBLE_MAX(value: String): Self = StObject.set(x, "FLEXIBLE_MAX", value.asInstanceOf[js.Any])
+      inline def setFLEXIBLE_MAX(value: String): Self = StObject.set(x, "FLEXIBLE_MAX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFLEXIBLE_MIN(value: String): Self = StObject.set(x, "FLEXIBLE_MIN", value.asInstanceOf[js.Any])
+      inline def setFLEXIBLE_MIN(value: String): Self = StObject.set(x, "FLEXIBLE_MIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOOLBAR_ROW_FLEXIBLE(value: String): Self = StObject.set(x, "TOOLBAR_ROW_FLEXIBLE", value.asInstanceOf[js.Any])
+      inline def setTOOLBAR_ROW_FLEXIBLE(value: String): Self = StObject.set(x, "TOOLBAR_ROW_FLEXIBLE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,8 +103,7 @@ object anon {
   }
   object MAXTITLESIZE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       MAX_TITLE_SIZE: Double,
       MIN_TITLE_SIZE: Double,
       TOOLBAR_MOBILE_BREAKPOINT: Double,
@@ -130,23 +114,17 @@ object anon {
       __obj.asInstanceOf[MAXTITLESIZE]
     }
     
-    @scala.inline
-    implicit class MAXTITLESIZEMutableBuilder[Self <: MAXTITLESIZE] (val x: Self) extends AnyVal {
+    extension [Self <: MAXTITLESIZE](x: Self) {
       
-      @scala.inline
-      def setMAX_TITLE_SIZE(value: Double): Self = StObject.set(x, "MAX_TITLE_SIZE", value.asInstanceOf[js.Any])
+      inline def setMAX_TITLE_SIZE(value: Double): Self = StObject.set(x, "MAX_TITLE_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIN_TITLE_SIZE(value: Double): Self = StObject.set(x, "MIN_TITLE_SIZE", value.asInstanceOf[js.Any])
+      inline def setMIN_TITLE_SIZE(value: Double): Self = StObject.set(x, "MIN_TITLE_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOOLBAR_MOBILE_BREAKPOINT(value: Double): Self = StObject.set(x, "TOOLBAR_MOBILE_BREAKPOINT", value.asInstanceOf[js.Any])
+      inline def setTOOLBAR_MOBILE_BREAKPOINT(value: Double): Self = StObject.set(x, "TOOLBAR_MOBILE_BREAKPOINT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOOLBAR_ROW_HEIGHT(value: Double): Self = StObject.set(x, "TOOLBAR_ROW_HEIGHT", value.asInstanceOf[js.Any])
+      inline def setTOOLBAR_ROW_HEIGHT(value: Double): Self = StObject.set(x, "TOOLBAR_ROW_HEIGHT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOOLBAR_ROW_MOBILE_HEIGHT(value: Double): Self = StObject.set(x, "TOOLBAR_ROW_MOBILE_HEIGHT", value.asInstanceOf[js.Any])
+      inline def setTOOLBAR_ROW_MOBILE_HEIGHT(value: Double): Self = StObject.set(x, "TOOLBAR_ROW_MOBILE_HEIGHT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,110 +165,76 @@ object anon {
   }
   object PartialMDCToolbarAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCToolbarAdapter = {
+    inline def apply(): PartialMDCToolbarAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCToolbarAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCToolbarAdapterMutableBuilder[Self <: PartialMDCToolbarAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCToolbarAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      @scala.inline
-      def setDeregisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "deregisterResizeHandler", js.Any.fromFunction1(value))
+      inline def setDeregisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "deregisterResizeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterResizeHandlerUndefined: Self = StObject.set(x, "deregisterResizeHandler", js.undefined)
+      inline def setDeregisterResizeHandlerUndefined: Self = StObject.set(x, "deregisterResizeHandler", js.undefined)
       
-      @scala.inline
-      def setDeregisterScrollHandler(value: /* handler */ SpecificEventListener[scroll] => Unit): Self = StObject.set(x, "deregisterScrollHandler", js.Any.fromFunction1(value))
+      inline def setDeregisterScrollHandler(value: /* handler */ SpecificEventListener[scroll] => Unit): Self = StObject.set(x, "deregisterScrollHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterScrollHandlerUndefined: Self = StObject.set(x, "deregisterScrollHandler", js.undefined)
+      inline def setDeregisterScrollHandlerUndefined: Self = StObject.set(x, "deregisterScrollHandler", js.undefined)
       
-      @scala.inline
-      def setGetFirstRowElementOffsetHeight(value: () => Double): Self = StObject.set(x, "getFirstRowElementOffsetHeight", js.Any.fromFunction0(value))
+      inline def setGetFirstRowElementOffsetHeight(value: () => Double): Self = StObject.set(x, "getFirstRowElementOffsetHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFirstRowElementOffsetHeightUndefined: Self = StObject.set(x, "getFirstRowElementOffsetHeight", js.undefined)
+      inline def setGetFirstRowElementOffsetHeightUndefined: Self = StObject.set(x, "getFirstRowElementOffsetHeight", js.undefined)
       
-      @scala.inline
-      def setGetOffsetHeight(value: () => Double): Self = StObject.set(x, "getOffsetHeight", js.Any.fromFunction0(value))
+      inline def setGetOffsetHeight(value: () => Double): Self = StObject.set(x, "getOffsetHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffsetHeightUndefined: Self = StObject.set(x, "getOffsetHeight", js.undefined)
+      inline def setGetOffsetHeightUndefined: Self = StObject.set(x, "getOffsetHeight", js.undefined)
       
-      @scala.inline
-      def setGetViewportScrollY(value: () => Double): Self = StObject.set(x, "getViewportScrollY", js.Any.fromFunction0(value))
+      inline def setGetViewportScrollY(value: () => Double): Self = StObject.set(x, "getViewportScrollY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetViewportScrollYUndefined: Self = StObject.set(x, "getViewportScrollY", js.undefined)
+      inline def setGetViewportScrollYUndefined: Self = StObject.set(x, "getViewportScrollY", js.undefined)
       
-      @scala.inline
-      def setGetViewportWidth(value: () => Double): Self = StObject.set(x, "getViewportWidth", js.Any.fromFunction0(value))
+      inline def setGetViewportWidth(value: () => Double): Self = StObject.set(x, "getViewportWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetViewportWidthUndefined: Self = StObject.set(x, "getViewportWidth", js.undefined)
+      inline def setGetViewportWidthUndefined: Self = StObject.set(x, "getViewportWidth", js.undefined)
       
-      @scala.inline
-      def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
+      inline def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
       
-      @scala.inline
-      def setNotifyChange(value: /* evtData */ MDCToolbarEventDetail => Unit): Self = StObject.set(x, "notifyChange", js.Any.fromFunction1(value))
+      inline def setNotifyChange(value: /* evtData */ MDCToolbarEventDetail => Unit): Self = StObject.set(x, "notifyChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyChangeUndefined: Self = StObject.set(x, "notifyChange", js.undefined)
+      inline def setNotifyChangeUndefined: Self = StObject.set(x, "notifyChange", js.undefined)
       
-      @scala.inline
-      def setRegisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "registerResizeHandler", js.Any.fromFunction1(value))
+      inline def setRegisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "registerResizeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterResizeHandlerUndefined: Self = StObject.set(x, "registerResizeHandler", js.undefined)
+      inline def setRegisterResizeHandlerUndefined: Self = StObject.set(x, "registerResizeHandler", js.undefined)
       
-      @scala.inline
-      def setRegisterScrollHandler(value: /* handler */ SpecificEventListener[scroll] => Unit): Self = StObject.set(x, "registerScrollHandler", js.Any.fromFunction1(value))
+      inline def setRegisterScrollHandler(value: /* handler */ SpecificEventListener[scroll] => Unit): Self = StObject.set(x, "registerScrollHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterScrollHandlerUndefined: Self = StObject.set(x, "registerScrollHandler", js.undefined)
+      inline def setRegisterScrollHandlerUndefined: Self = StObject.set(x, "registerScrollHandler", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setSetStyle(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
+      inline def setSetStyle(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStyleForFixedAdjustElement(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyleForFixedAdjustElement", js.Any.fromFunction2(value))
+      inline def setSetStyleForFixedAdjustElement(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyleForFixedAdjustElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStyleForFixedAdjustElementUndefined: Self = StObject.set(x, "setStyleForFixedAdjustElement", js.undefined)
+      inline def setSetStyleForFixedAdjustElementUndefined: Self = StObject.set(x, "setStyleForFixedAdjustElement", js.undefined)
       
-      @scala.inline
-      def setSetStyleForFlexibleRowElement(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyleForFlexibleRowElement", js.Any.fromFunction2(value))
+      inline def setSetStyleForFlexibleRowElement(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyleForFlexibleRowElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStyleForFlexibleRowElementUndefined: Self = StObject.set(x, "setStyleForFlexibleRowElement", js.undefined)
+      inline def setSetStyleForFlexibleRowElementUndefined: Self = StObject.set(x, "setStyleForFlexibleRowElement", js.undefined)
       
-      @scala.inline
-      def setSetStyleForTitleElement(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyleForTitleElement", js.Any.fromFunction2(value))
+      inline def setSetStyleForTitleElement(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyleForTitleElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStyleForTitleElementUndefined: Self = StObject.set(x, "setStyleForTitleElement", js.undefined)
+      inline def setSetStyleForTitleElementUndefined: Self = StObject.set(x, "setStyleForTitleElement", js.undefined)
       
-      @scala.inline
-      def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
+      inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
     }
   }
 }

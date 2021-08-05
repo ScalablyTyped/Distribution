@@ -18,25 +18,19 @@ trait AttributePayload extends StObject {
 }
 object AttributePayload {
   
-  @scala.inline
-  def apply(): AttributePayload = {
+  inline def apply(): AttributePayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributePayload]
   }
   
-  @scala.inline
-  implicit class AttributePayloadMutableBuilder[Self <: AttributePayload] (val x: Self) extends AnyVal {
+  extension [Self <: AttributePayload](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setMerge(value: Flag): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: Flag): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
   }
 }

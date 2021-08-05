@@ -32,8 +32,7 @@ object SearchBox {
   
   //#endregion Properties
   /* static member */
-  @scala.inline
-  def createResultSuggestionImage(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createResultSuggestionImage")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createResultSuggestionImage(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createResultSuggestionImage")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Indicates that the object is compatibile with declarative processing.
@@ -42,6 +41,5 @@ object SearchBox {
   @JSImport("winjs", "UI.SearchBox.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

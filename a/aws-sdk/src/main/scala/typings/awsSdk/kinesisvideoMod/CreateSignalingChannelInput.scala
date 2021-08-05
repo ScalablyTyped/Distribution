@@ -28,37 +28,27 @@ trait CreateSignalingChannelInput extends StObject {
 }
 object CreateSignalingChannelInput {
   
-  @scala.inline
-  def apply(ChannelName: ChannelName): CreateSignalingChannelInput = {
+  inline def apply(ChannelName: ChannelName): CreateSignalingChannelInput = {
     val __obj = js.Dynamic.literal(ChannelName = ChannelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSignalingChannelInput]
   }
   
-  @scala.inline
-  implicit class CreateSignalingChannelInputMutableBuilder[Self <: CreateSignalingChannelInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSignalingChannelInput](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
+    inline def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
+    inline def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
     
-    @scala.inline
-    def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = StObject.set(x, "SingleMasterConfiguration", value.asInstanceOf[js.Any])
+    inline def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = StObject.set(x, "SingleMasterConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleMasterConfigurationUndefined: Self = StObject.set(x, "SingleMasterConfiguration", js.undefined)
+    inline def setSingleMasterConfigurationUndefined: Self = StObject.set(x, "SingleMasterConfiguration", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagOnCreateList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagOnCreateList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

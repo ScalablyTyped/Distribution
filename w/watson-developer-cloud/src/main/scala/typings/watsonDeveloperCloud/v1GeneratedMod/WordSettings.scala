@@ -11,19 +11,15 @@ trait WordSettings extends StObject {
 }
 object WordSettings {
   
-  @scala.inline
-  def apply(): WordSettings = {
+  inline def apply(): WordSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WordSettings]
   }
   
-  @scala.inline
-  implicit class WordSettingsMutableBuilder[Self <: WordSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WordSettings](x: Self) {
     
-    @scala.inline
-    def setHeading(value: WordHeadingDetection): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: WordHeadingDetection): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
   }
 }

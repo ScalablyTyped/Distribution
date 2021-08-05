@@ -13,19 +13,15 @@ trait ExpectationHeaderValue extends StObject {
 }
 object ExpectationHeaderValue {
   
-  @scala.inline
-  def apply(expectationHeaderValue: HttpExpectationHeaderValue, returnValue: Boolean): ExpectationHeaderValue = {
+  inline def apply(expectationHeaderValue: HttpExpectationHeaderValue, returnValue: Boolean): ExpectationHeaderValue = {
     val __obj = js.Dynamic.literal(expectationHeaderValue = expectationHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpectationHeaderValue]
   }
   
-  @scala.inline
-  implicit class ExpectationHeaderValueMutableBuilder[Self <: ExpectationHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ExpectationHeaderValue](x: Self) {
     
-    @scala.inline
-    def setExpectationHeaderValue(value: HttpExpectationHeaderValue): Self = StObject.set(x, "expectationHeaderValue", value.asInstanceOf[js.Any])
+    inline def setExpectationHeaderValue(value: HttpExpectationHeaderValue): Self = StObject.set(x, "expectationHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

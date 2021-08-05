@@ -28,8 +28,7 @@ trait Parents extends StObject {
 }
 object Parents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cidVersion: js.Any,
     ctx: IpfsAny,
     dest: js.Any,
@@ -45,37 +44,26 @@ object Parents {
     __obj.asInstanceOf[Parents]
   }
   
-  @scala.inline
-  implicit class ParentsMutableBuilder[Self <: Parents] (val x: Self) extends AnyVal {
+  extension [Self <: Parents](x: Self) {
     
-    @scala.inline
-    def setCidVersion(value: js.Any): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+    inline def setCidVersion(value: js.Any): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtx(value: IpfsAny): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: IpfsAny): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDest(value: js.Any): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+    inline def setDest(value: js.Any): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlush(value: js.Any): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+    inline def setFlush(value: js.Any): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashAlg(value: js.Any): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: js.Any): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParents(value: js.Any): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+    inline def setParents(value: js.Any): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardSplitThreshold(value: js.Any): Self = StObject.set(x, "shardSplitThreshold", value.asInstanceOf[js.Any])
+    inline def setShardSplitThreshold(value: js.Any): Self = StObject.set(x, "shardSplitThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

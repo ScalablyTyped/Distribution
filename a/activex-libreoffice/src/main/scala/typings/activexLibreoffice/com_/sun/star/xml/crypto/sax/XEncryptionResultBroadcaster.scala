@@ -33,8 +33,7 @@ trait XEncryptionResultBroadcaster
 }
 object XEncryptionResultBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEncryptionResultListener: XEncryptionResultListener => Unit,
     queryInterface: `type` => js.Any,
@@ -45,13 +44,10 @@ object XEncryptionResultBroadcaster {
     __obj.asInstanceOf[XEncryptionResultBroadcaster]
   }
   
-  @scala.inline
-  implicit class XEncryptionResultBroadcasterMutableBuilder[Self <: XEncryptionResultBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XEncryptionResultBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddEncryptionResultListener(value: XEncryptionResultListener => Unit): Self = StObject.set(x, "addEncryptionResultListener", js.Any.fromFunction1(value))
+    inline def setAddEncryptionResultListener(value: XEncryptionResultListener => Unit): Self = StObject.set(x, "addEncryptionResultListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveEncryptionResultListener(value: XEncryptionResultListener => Unit): Self = StObject.set(x, "removeEncryptionResultListener", js.Any.fromFunction1(value))
+    inline def setRemoveEncryptionResultListener(value: XEncryptionResultListener => Unit): Self = StObject.set(x, "removeEncryptionResultListener", js.Any.fromFunction1(value))
   }
 }

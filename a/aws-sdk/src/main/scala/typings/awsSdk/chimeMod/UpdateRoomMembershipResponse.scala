@@ -13,19 +13,15 @@ trait UpdateRoomMembershipResponse extends StObject {
 }
 object UpdateRoomMembershipResponse {
   
-  @scala.inline
-  def apply(): UpdateRoomMembershipResponse = {
+  inline def apply(): UpdateRoomMembershipResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRoomMembershipResponse]
   }
   
-  @scala.inline
-  implicit class UpdateRoomMembershipResponseMutableBuilder[Self <: UpdateRoomMembershipResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRoomMembershipResponse](x: Self) {
     
-    @scala.inline
-    def setRoomMembership(value: RoomMembership): Self = StObject.set(x, "RoomMembership", value.asInstanceOf[js.Any])
+    inline def setRoomMembership(value: RoomMembership): Self = StObject.set(x, "RoomMembership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomMembershipUndefined: Self = StObject.set(x, "RoomMembership", js.undefined)
+    inline def setRoomMembershipUndefined: Self = StObject.set(x, "RoomMembership", js.undefined)
   }
 }

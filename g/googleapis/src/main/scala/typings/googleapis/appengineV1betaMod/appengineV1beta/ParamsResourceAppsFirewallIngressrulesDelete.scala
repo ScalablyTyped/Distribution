@@ -30,31 +30,23 @@ trait ParamsResourceAppsFirewallIngressrulesDelete
 }
 object ParamsResourceAppsFirewallIngressrulesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceAppsFirewallIngressrulesDelete = {
+  inline def apply(): ParamsResourceAppsFirewallIngressrulesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAppsFirewallIngressrulesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAppsFirewallIngressrulesDeleteMutableBuilder[Self <: ParamsResourceAppsFirewallIngressrulesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAppsFirewallIngressrulesDelete](x: Self) {
     
-    @scala.inline
-    def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
+    inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
+    inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIngressRulesId(value: String): Self = StObject.set(x, "ingressRulesId", value.asInstanceOf[js.Any])
+    inline def setIngressRulesId(value: String): Self = StObject.set(x, "ingressRulesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressRulesIdUndefined: Self = StObject.set(x, "ingressRulesId", js.undefined)
+    inline def setIngressRulesIdUndefined: Self = StObject.set(x, "ingressRulesId", js.undefined)
   }
 }

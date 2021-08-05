@@ -18,27 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uPressure extends StObject
 object uPressure {
   
-  @scala.inline
-  def MPa: typings.convertUnits.convertUnitsStrings.MPa = "MPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.MPa]
+  inline def MPa: typings.convertUnits.convertUnitsStrings.MPa = "MPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.MPa]
   
-  @scala.inline
-  def Pa: typings.convertUnits.convertUnitsStrings.Pa = "Pa".asInstanceOf[typings.convertUnits.convertUnitsStrings.Pa]
+  inline def Pa: typings.convertUnits.convertUnitsStrings.Pa = "Pa".asInstanceOf[typings.convertUnits.convertUnitsStrings.Pa]
   
-  @scala.inline
-  def bar: typings.convertUnits.convertUnitsStrings.bar = "bar".asInstanceOf[typings.convertUnits.convertUnitsStrings.bar]
+  inline def bar: typings.convertUnits.convertUnitsStrings.bar = "bar".asInstanceOf[typings.convertUnits.convertUnitsStrings.bar]
   
-  @scala.inline
-  def hPa: typings.convertUnits.convertUnitsStrings.hPa = "hPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.hPa]
+  inline def hPa: typings.convertUnits.convertUnitsStrings.hPa = "hPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.hPa]
   
-  @scala.inline
-  def kPa: typings.convertUnits.convertUnitsStrings.kPa = "kPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.kPa]
+  inline def kPa: typings.convertUnits.convertUnitsStrings.kPa = "kPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.kPa]
   
-  @scala.inline
-  def ksi: typings.convertUnits.convertUnitsStrings.ksi = "ksi".asInstanceOf[typings.convertUnits.convertUnitsStrings.ksi]
+  inline def ksi: typings.convertUnits.convertUnitsStrings.ksi = "ksi".asInstanceOf[typings.convertUnits.convertUnitsStrings.ksi]
   
-  @scala.inline
-  def psi: typings.convertUnits.convertUnitsStrings.psi = "psi".asInstanceOf[typings.convertUnits.convertUnitsStrings.psi]
+  inline def psi: typings.convertUnits.convertUnitsStrings.psi = "psi".asInstanceOf[typings.convertUnits.convertUnitsStrings.psi]
   
-  @scala.inline
-  def torr: typings.convertUnits.convertUnitsStrings.torr = "torr".asInstanceOf[typings.convertUnits.convertUnitsStrings.torr]
+  inline def torr: typings.convertUnits.convertUnitsStrings.torr = "torr".asInstanceOf[typings.convertUnits.convertUnitsStrings.torr]
 }

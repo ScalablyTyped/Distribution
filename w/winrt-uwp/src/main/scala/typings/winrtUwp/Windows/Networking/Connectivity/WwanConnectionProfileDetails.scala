@@ -27,8 +27,7 @@ trait WwanConnectionProfileDetails extends StObject {
 }
 object WwanConnectionProfileDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessPointName: String,
     getCurrentDataClass: () => WwanDataClass,
     getNetworkRegistrationState: () => WwanNetworkRegistrationState,
@@ -38,19 +37,14 @@ object WwanConnectionProfileDetails {
     __obj.asInstanceOf[WwanConnectionProfileDetails]
   }
   
-  @scala.inline
-  implicit class WwanConnectionProfileDetailsMutableBuilder[Self <: WwanConnectionProfileDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WwanConnectionProfileDetails](x: Self) {
     
-    @scala.inline
-    def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
+    inline def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentDataClass(value: () => WwanDataClass): Self = StObject.set(x, "getCurrentDataClass", js.Any.fromFunction0(value))
+    inline def setGetCurrentDataClass(value: () => WwanDataClass): Self = StObject.set(x, "getCurrentDataClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNetworkRegistrationState(value: () => WwanNetworkRegistrationState): Self = StObject.set(x, "getNetworkRegistrationState", js.Any.fromFunction0(value))
+    inline def setGetNetworkRegistrationState(value: () => WwanNetworkRegistrationState): Self = StObject.set(x, "getNetworkRegistrationState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHomeProviderId(value: String): Self = StObject.set(x, "homeProviderId", value.asInstanceOf[js.Any])
+    inline def setHomeProviderId(value: String): Self = StObject.set(x, "homeProviderId", value.asInstanceOf[js.Any])
   }
 }

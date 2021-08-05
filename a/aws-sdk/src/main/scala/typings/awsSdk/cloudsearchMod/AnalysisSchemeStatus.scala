@@ -12,19 +12,15 @@ trait AnalysisSchemeStatus extends StObject {
 }
 object AnalysisSchemeStatus {
   
-  @scala.inline
-  def apply(Options: AnalysisScheme, Status: OptionStatus): AnalysisSchemeStatus = {
+  inline def apply(Options: AnalysisScheme, Status: OptionStatus): AnalysisSchemeStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalysisSchemeStatus]
   }
   
-  @scala.inline
-  implicit class AnalysisSchemeStatusMutableBuilder[Self <: AnalysisSchemeStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AnalysisSchemeStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: AnalysisScheme): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AnalysisScheme): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

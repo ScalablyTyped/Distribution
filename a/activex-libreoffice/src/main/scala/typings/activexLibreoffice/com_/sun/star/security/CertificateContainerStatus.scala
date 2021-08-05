@@ -17,14 +17,11 @@ trait CertificateContainerStatus extends StObject
 object CertificateContainerStatus {
   
   /** The certificate was not found. */
-  @scala.inline
-  def NOCERT: `0` = 0.asInstanceOf[`0`]
+  inline def NOCERT: `0` = 0.asInstanceOf[`0`]
   
   /** The certificate was found and is trusted. */
-  @scala.inline
-  def TRUSTED: `1` = 1.asInstanceOf[`1`]
+  inline def TRUSTED: `1` = 1.asInstanceOf[`1`]
   
   /** The certificate was found but is untrusted. */
-  @scala.inline
-  def UNTRUSTED: `2` = 2.asInstanceOf[`2`]
+  inline def UNTRUSTED: `2` = 2.asInstanceOf[`2`]
 }

@@ -28,34 +28,25 @@ trait ContactDetail
 }
 object ContactDetail {
   
-  @scala.inline
-  def apply(): ContactDetail = {
+  inline def apply(): ContactDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactDetail]
   }
   
-  @scala.inline
-  implicit class ContactDetailMutableBuilder[Self <: ContactDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ContactDetail](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
+    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
+    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
     
-    @scala.inline
-    def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
+    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

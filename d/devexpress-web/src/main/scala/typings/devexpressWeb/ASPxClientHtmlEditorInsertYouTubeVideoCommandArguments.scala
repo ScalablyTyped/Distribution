@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments
 }
 object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCommandName: () => String,
     align: String,
     allowFullscreen: Boolean,
@@ -56,22 +55,16 @@ object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorInsertYouTubeVideoCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments](x: Self) {
     
-    @scala.inline
-    def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
+    inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivacyEnhancedMode(value: Boolean): Self = StObject.set(x, "enablePrivacyEnhancedMode", value.asInstanceOf[js.Any])
+    inline def setEnablePrivacyEnhancedMode(value: Boolean): Self = StObject.set(x, "enablePrivacyEnhancedMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPlayerControls(value: Boolean): Self = StObject.set(x, "showPlayerControls", value.asInstanceOf[js.Any])
+    inline def setShowPlayerControls(value: Boolean): Self = StObject.set(x, "showPlayerControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRelatedVideos(value: Boolean): Self = StObject.set(x, "showRelatedVideos", value.asInstanceOf[js.Any])
+    inline def setShowRelatedVideos(value: Boolean): Self = StObject.set(x, "showRelatedVideos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowVideoInfo(value: Boolean): Self = StObject.set(x, "showVideoInfo", value.asInstanceOf[js.Any])
+    inline def setShowVideoInfo(value: Boolean): Self = StObject.set(x, "showVideoInfo", value.asInstanceOf[js.Any])
   }
 }

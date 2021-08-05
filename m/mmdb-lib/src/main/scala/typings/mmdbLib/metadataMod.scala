@@ -12,11 +12,9 @@ object metadataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isLegacyFormat(db: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyFormat")(db.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLegacyFormat(db: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyFormat")(db.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseMetadata(db: Buffer): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMetadata")(db.asInstanceOf[js.Any]).asInstanceOf[Metadata]
+  inline def parseMetadata(db: Buffer): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMetadata")(db.asInstanceOf[js.Any]).asInstanceOf[Metadata]
   
   trait Metadata extends StObject {
     
@@ -46,8 +44,7 @@ object metadataMod {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       binaryFormatMajorVersion: Double,
       binaryFormatMinorVersion: Double,
       buildEpoch: Date,
@@ -65,47 +62,33 @@ object metadataMod {
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setBinaryFormatMajorVersion(value: Double): Self = StObject.set(x, "binaryFormatMajorVersion", value.asInstanceOf[js.Any])
+      inline def setBinaryFormatMajorVersion(value: Double): Self = StObject.set(x, "binaryFormatMajorVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryFormatMinorVersion(value: Double): Self = StObject.set(x, "binaryFormatMinorVersion", value.asInstanceOf[js.Any])
+      inline def setBinaryFormatMinorVersion(value: Double): Self = StObject.set(x, "binaryFormatMinorVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildEpoch(value: Date): Self = StObject.set(x, "buildEpoch", value.asInstanceOf[js.Any])
+      inline def setBuildEpoch(value: Date): Self = StObject.set(x, "buildEpoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseType(value: String): Self = StObject.set(x, "databaseType", value.asInstanceOf[js.Any])
+      inline def setDatabaseType(value: String): Self = StObject.set(x, "databaseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpVersion(value: Double): Self = StObject.set(x, "ipVersion", value.asInstanceOf[js.Any])
+      inline def setIpVersion(value: Double): Self = StObject.set(x, "ipVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeByteSize(value: Double): Self = StObject.set(x, "nodeByteSize", value.asInstanceOf[js.Any])
+      inline def setNodeByteSize(value: Double): Self = StObject.set(x, "nodeByteSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
+      inline def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordSize(value: Double): Self = StObject.set(x, "recordSize", value.asInstanceOf[js.Any])
+      inline def setRecordSize(value: Double): Self = StObject.set(x, "recordSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchTreeSize(value: Double): Self = StObject.set(x, "searchTreeSize", value.asInstanceOf[js.Any])
+      inline def setSearchTreeSize(value: Double): Self = StObject.set(x, "searchTreeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeDepth(value: Double): Self = StObject.set(x, "treeDepth", value.asInstanceOf[js.Any])
+      inline def setTreeDepth(value: Double): Self = StObject.set(x, "treeDepth", value.asInstanceOf[js.Any])
     }
   }
 }

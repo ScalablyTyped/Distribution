@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontVariant extends StObject
 object FontVariant {
   
-  @scala.inline
-  def `lining-nums`: typings.reactNative.reactNativeStrings.`lining-nums` = "lining-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`lining-nums`]
+  inline def `lining-nums`: typings.reactNative.reactNativeStrings.`lining-nums` = "lining-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`lining-nums`]
   
-  @scala.inline
-  def `oldstyle-nums`: typings.reactNative.reactNativeStrings.`oldstyle-nums` = "oldstyle-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`oldstyle-nums`]
+  inline def `oldstyle-nums`: typings.reactNative.reactNativeStrings.`oldstyle-nums` = "oldstyle-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`oldstyle-nums`]
   
-  @scala.inline
-  def `proportional-nums`: typings.reactNative.reactNativeStrings.`proportional-nums` = "proportional-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`proportional-nums`]
+  inline def `proportional-nums`: typings.reactNative.reactNativeStrings.`proportional-nums` = "proportional-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`proportional-nums`]
   
-  @scala.inline
-  def `small-caps`: typings.reactNative.reactNativeStrings.`small-caps` = "small-caps".asInstanceOf[typings.reactNative.reactNativeStrings.`small-caps`]
+  inline def `small-caps`: typings.reactNative.reactNativeStrings.`small-caps` = "small-caps".asInstanceOf[typings.reactNative.reactNativeStrings.`small-caps`]
   
-  @scala.inline
-  def `tabular-nums`: typings.reactNative.reactNativeStrings.`tabular-nums` = "tabular-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`tabular-nums`]
+  inline def `tabular-nums`: typings.reactNative.reactNativeStrings.`tabular-nums` = "tabular-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`tabular-nums`]
 }

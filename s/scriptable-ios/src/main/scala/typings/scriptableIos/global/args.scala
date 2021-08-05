@@ -29,8 +29,7 @@ object args {
   @JSGlobal("args.fileURLs")
   @js.native
   def fileURLs: js.Array[String] = js.native
-  @scala.inline
-  def fileURLs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileURLs")(x.asInstanceOf[js.Any])
+  inline def fileURLs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileURLs")(x.asInstanceOf[js.Any])
   
   /**
     * _Images supplied by a share sheet or a shortcut action._
@@ -46,8 +45,7 @@ object args {
   @JSGlobal("args.images")
   @js.native
   def images: js.Array[typings.scriptableIos.Image] = js.native
-  @scala.inline
-  def images_=(x: js.Array[typings.scriptableIos.Image]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
+  inline def images_=(x: js.Array[typings.scriptableIos.Image]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
   
   /**
     * _Notification being handled by the script._
@@ -61,8 +59,7 @@ object args {
   @JSGlobal("args.notification")
   @js.native
   def notification: typings.scriptableIos.Notification = js.native
-  @scala.inline
-  def notification_=(x: typings.scriptableIos.Notification): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notification")(x.asInstanceOf[js.Any])
+  inline def notification_=(x: typings.scriptableIos.Notification): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notification")(x.asInstanceOf[js.Any])
   
   /**
     * _Plain texts supplied by a share sheet or a shortcut action._
@@ -75,8 +72,7 @@ object args {
   @JSGlobal("args.plainTexts")
   @js.native
   def plainTexts: js.Array[String] = js.native
-  @scala.inline
-  def plainTexts_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plainTexts")(x.asInstanceOf[js.Any])
+  inline def plainTexts_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plainTexts")(x.asInstanceOf[js.Any])
   
   /**
     * _Parameter passed to a Shortcut._
@@ -90,8 +86,7 @@ object args {
   @JSGlobal("args.shortcutParameter")
   @js.native
   def shortcutParameter: js.Any = js.native
-  @scala.inline
-  def shortcutParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortcutParameter")(x.asInstanceOf[js.Any])
+  inline def shortcutParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortcutParameter")(x.asInstanceOf[js.Any])
   
   /**
     * _URLs supplied by a share sheet or a shortcut action._
@@ -104,8 +99,7 @@ object args {
   @JSGlobal("args.urls")
   @js.native
   def urls: js.Array[String] = js.native
-  @scala.inline
-  def urls_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urls")(x.asInstanceOf[js.Any])
+  inline def urls_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urls")(x.asInstanceOf[js.Any])
   
   /**
     * _Parameter passed to a widget._
@@ -118,8 +112,7 @@ object args {
   @JSGlobal("args.widgetParameter")
   @js.native
   def widgetParameter: js.Any = js.native
-  @scala.inline
-  def widgetParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetParameter")(x.asInstanceOf[js.Any])
+  inline def widgetParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetParameter")(x.asInstanceOf[js.Any])
   
   /**
     * _Query parameters from a URL scheme._

@@ -28,8 +28,7 @@ trait PlaybackMediaMarkerSequence extends StObject {
 }
 object PlaybackMediaMarkerSequence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     first: () => IIterator[PlaybackMediaMarker],
     insert: PlaybackMediaMarker => Unit,
@@ -39,19 +38,14 @@ object PlaybackMediaMarkerSequence {
     __obj.asInstanceOf[PlaybackMediaMarkerSequence]
   }
   
-  @scala.inline
-  implicit class PlaybackMediaMarkerSequenceMutableBuilder[Self <: PlaybackMediaMarkerSequence] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackMediaMarkerSequence](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFirst(value: () => IIterator[PlaybackMediaMarker]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[PlaybackMediaMarker]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsert(value: PlaybackMediaMarker => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: PlaybackMediaMarker => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

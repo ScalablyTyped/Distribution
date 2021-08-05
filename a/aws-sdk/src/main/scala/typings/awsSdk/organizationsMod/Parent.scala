@@ -18,25 +18,19 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  @scala.inline
-  def apply(): Parent = {
+  inline def apply(): Parent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parent]
   }
   
-  @scala.inline
-  implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+  extension [Self <: Parent](x: Self) {
     
-    @scala.inline
-    def setId(value: ParentId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ParentId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setType(value: ParentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ParentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait UsersGetContextForUserResponseData extends StObject {
 }
 object UsersGetContextForUserResponseData {
   
-  @scala.inline
-  def apply(contexts: js.Array[Octicon]): UsersGetContextForUserResponseData = {
+  inline def apply(contexts: js.Array[Octicon]): UsersGetContextForUserResponseData = {
     val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersGetContextForUserResponseData]
   }
   
-  @scala.inline
-  implicit class UsersGetContextForUserResponseDataMutableBuilder[Self <: UsersGetContextForUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: UsersGetContextForUserResponseData](x: Self) {
     
-    @scala.inline
-    def setContexts(value: js.Array[Octicon]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setContexts(value: js.Array[Octicon]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextsVarargs(value: Octicon*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: Octicon*): Self = StObject.set(x, "contexts", js.Array(value :_*))
   }
 }

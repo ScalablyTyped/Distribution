@@ -39,103 +39,71 @@ trait CommonProps extends StObject {
 }
 object CommonProps {
   
-  @scala.inline
-  def apply(): CommonProps = {
+  inline def apply(): CommonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonProps]
   }
   
-  @scala.inline
-  implicit class CommonPropsMutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
+  extension [Self <: CommonProps](x: Self) {
     
-    @scala.inline
-    def setBeaconComponent(value: ElementType[BeaconRenderProps]): Self = StObject.set(x, "beaconComponent", value.asInstanceOf[js.Any])
+    inline def setBeaconComponent(value: ElementType[BeaconRenderProps]): Self = StObject.set(x, "beaconComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconComponentUndefined: Self = StObject.set(x, "beaconComponent", js.undefined)
+    inline def setBeaconComponentUndefined: Self = StObject.set(x, "beaconComponent", js.undefined)
     
-    @scala.inline
-    def setDisableCloseOnEsc(value: Boolean): Self = StObject.set(x, "disableCloseOnEsc", value.asInstanceOf[js.Any])
+    inline def setDisableCloseOnEsc(value: Boolean): Self = StObject.set(x, "disableCloseOnEsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCloseOnEscUndefined: Self = StObject.set(x, "disableCloseOnEsc", js.undefined)
+    inline def setDisableCloseOnEscUndefined: Self = StObject.set(x, "disableCloseOnEsc", js.undefined)
     
-    @scala.inline
-    def setDisableOverlay(value: Boolean): Self = StObject.set(x, "disableOverlay", value.asInstanceOf[js.Any])
+    inline def setDisableOverlay(value: Boolean): Self = StObject.set(x, "disableOverlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableOverlayClose(value: Boolean): Self = StObject.set(x, "disableOverlayClose", value.asInstanceOf[js.Any])
+    inline def setDisableOverlayClose(value: Boolean): Self = StObject.set(x, "disableOverlayClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableOverlayCloseUndefined: Self = StObject.set(x, "disableOverlayClose", js.undefined)
+    inline def setDisableOverlayCloseUndefined: Self = StObject.set(x, "disableOverlayClose", js.undefined)
     
-    @scala.inline
-    def setDisableOverlayUndefined: Self = StObject.set(x, "disableOverlay", js.undefined)
+    inline def setDisableOverlayUndefined: Self = StObject.set(x, "disableOverlay", js.undefined)
     
-    @scala.inline
-    def setDisableScrollParentFix(value: Boolean): Self = StObject.set(x, "disableScrollParentFix", value.asInstanceOf[js.Any])
+    inline def setDisableScrollParentFix(value: Boolean): Self = StObject.set(x, "disableScrollParentFix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableScrollParentFixUndefined: Self = StObject.set(x, "disableScrollParentFix", js.undefined)
+    inline def setDisableScrollParentFixUndefined: Self = StObject.set(x, "disableScrollParentFix", js.undefined)
     
-    @scala.inline
-    def setDisableScrolling(value: Boolean): Self = StObject.set(x, "disableScrolling", value.asInstanceOf[js.Any])
+    inline def setDisableScrolling(value: Boolean): Self = StObject.set(x, "disableScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableScrollingUndefined: Self = StObject.set(x, "disableScrolling", js.undefined)
+    inline def setDisableScrollingUndefined: Self = StObject.set(x, "disableScrolling", js.undefined)
     
-    @scala.inline
-    def setFloaterProps(value: FloaterProps): Self = StObject.set(x, "floaterProps", value.asInstanceOf[js.Any])
+    inline def setFloaterProps(value: FloaterProps): Self = StObject.set(x, "floaterProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloaterPropsUndefined: Self = StObject.set(x, "floaterProps", js.undefined)
+    inline def setFloaterPropsUndefined: Self = StObject.set(x, "floaterProps", js.undefined)
     
-    @scala.inline
-    def setHideBackButton(value: Boolean): Self = StObject.set(x, "hideBackButton", value.asInstanceOf[js.Any])
+    inline def setHideBackButton(value: Boolean): Self = StObject.set(x, "hideBackButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
+    inline def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setShowProgress(value: Boolean): Self = StObject.set(x, "showProgress", value.asInstanceOf[js.Any])
+    inline def setShowProgress(value: Boolean): Self = StObject.set(x, "showProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowProgressUndefined: Self = StObject.set(x, "showProgress", js.undefined)
+    inline def setShowProgressUndefined: Self = StObject.set(x, "showProgress", js.undefined)
     
-    @scala.inline
-    def setShowSkipButton(value: Boolean): Self = StObject.set(x, "showSkipButton", value.asInstanceOf[js.Any])
+    inline def setShowSkipButton(value: Boolean): Self = StObject.set(x, "showSkipButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSkipButtonUndefined: Self = StObject.set(x, "showSkipButton", js.undefined)
+    inline def setShowSkipButtonUndefined: Self = StObject.set(x, "showSkipButton", js.undefined)
     
-    @scala.inline
-    def setSpotlightClicks(value: Boolean): Self = StObject.set(x, "spotlightClicks", value.asInstanceOf[js.Any])
+    inline def setSpotlightClicks(value: Boolean): Self = StObject.set(x, "spotlightClicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotlightClicksUndefined: Self = StObject.set(x, "spotlightClicks", js.undefined)
+    inline def setSpotlightClicksUndefined: Self = StObject.set(x, "spotlightClicks", js.undefined)
     
-    @scala.inline
-    def setSpotlightPadding(value: Double): Self = StObject.set(x, "spotlightPadding", value.asInstanceOf[js.Any])
+    inline def setSpotlightPadding(value: Double): Self = StObject.set(x, "spotlightPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotlightPaddingUndefined: Self = StObject.set(x, "spotlightPadding", js.undefined)
+    inline def setSpotlightPaddingUndefined: Self = StObject.set(x, "spotlightPadding", js.undefined)
     
-    @scala.inline
-    def setStyles(value: Styles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Styles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setTooltipComponent(value: ElementType[TooltipRenderProps]): Self = StObject.set(x, "tooltipComponent", value.asInstanceOf[js.Any])
+    inline def setTooltipComponent(value: ElementType[TooltipRenderProps]): Self = StObject.set(x, "tooltipComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipComponentUndefined: Self = StObject.set(x, "tooltipComponent", js.undefined)
+    inline def setTooltipComponentUndefined: Self = StObject.set(x, "tooltipComponent", js.undefined)
   }
 }

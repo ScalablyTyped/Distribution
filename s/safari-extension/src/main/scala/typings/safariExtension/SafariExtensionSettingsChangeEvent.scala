@@ -39,8 +39,7 @@ trait SafariExtensionSettingsChangeEvent
 }
 object SafariExtensionSettingsChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: SafariExtensionSettings | SafariExtensionSecureSettings,
@@ -60,22 +59,16 @@ object SafariExtensionSettingsChangeEvent {
     __obj.asInstanceOf[SafariExtensionSettingsChangeEvent]
   }
   
-  @scala.inline
-  implicit class SafariExtensionSettingsChangeEventMutableBuilder[Self <: SafariExtensionSettingsChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SafariExtensionSettingsChangeEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

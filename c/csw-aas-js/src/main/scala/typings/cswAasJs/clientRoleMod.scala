@@ -12,8 +12,7 @@ object clientRoleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasClientRoleClientChildrenError: ClientRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClientRoleClientChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasClientRoleClientChildrenError: ClientRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClientRoleClientChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ClientRoleProps extends StObject {
     
@@ -27,35 +26,26 @@ object clientRoleMod {
   }
   object ClientRoleProps {
     
-    @scala.inline
-    def apply(clientRole: String): ClientRoleProps = {
+    inline def apply(clientRole: String): ClientRoleProps = {
       val __obj = js.Dynamic.literal(clientRole = clientRole.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientRoleProps]
     }
     
-    @scala.inline
-    implicit class ClientRolePropsMutableBuilder[Self <: ClientRoleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClientRoleProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRole(value: String): Self = StObject.set(x, "clientRole", value.asInstanceOf[js.Any])
+      inline def setClientRole(value: String): Self = StObject.set(x, "clientRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }
   }
 }

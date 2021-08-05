@@ -14,22 +14,17 @@ trait Direction extends StObject {
 }
 object Direction {
   
-  @scala.inline
-  def apply(direction: String, originalEvent: typings.std.Event, value: js.Any): Direction = {
+  inline def apply(direction: String, originalEvent: typings.std.Event, value: js.Any): Direction = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Direction]
   }
   
-  @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+  extension [Self <: Direction](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

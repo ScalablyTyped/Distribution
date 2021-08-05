@@ -50,21 +50,16 @@ object fileSystemPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
+    inline def get(name: String, id: Input[ID]): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
+    inline def get(name: String, id: Input[ID], state: FileSystemPolicyState): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
+    inline def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
     
     /**
       * Returns true if the given object is an instance of FileSystemPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean]
   }
   
   trait FileSystemPolicyArgs extends StObject {
@@ -81,20 +76,16 @@ object fileSystemPolicyMod {
   }
   object FileSystemPolicyArgs {
     
-    @scala.inline
-    def apply(fileSystemId: Input[String], policy: Input[String]): FileSystemPolicyArgs = {
+    inline def apply(fileSystemId: Input[String], policy: Input[String]): FileSystemPolicyArgs = {
       val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileSystemPolicyArgs]
     }
     
-    @scala.inline
-    implicit class FileSystemPolicyArgsMutableBuilder[Self <: FileSystemPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object fileSystemPolicyMod {
   }
   object FileSystemPolicyState {
     
-    @scala.inline
-    def apply(): FileSystemPolicyState = {
+    inline def apply(): FileSystemPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileSystemPolicyState]
     }
     
-    @scala.inline
-    implicit class FileSystemPolicyStateMutableBuilder[Self <: FileSystemPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemPolicyState](x: Self) {
       
-      @scala.inline
-      def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemIdUndefined: Self = StObject.set(x, "fileSystemId", js.undefined)
+      inline def setFileSystemIdUndefined: Self = StObject.set(x, "fileSystemId", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     }
   }
 }

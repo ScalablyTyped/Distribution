@@ -11,6 +11,5 @@ object doerrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](f: js.Function): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
+  inline def default[V](f: js.Function): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
 }

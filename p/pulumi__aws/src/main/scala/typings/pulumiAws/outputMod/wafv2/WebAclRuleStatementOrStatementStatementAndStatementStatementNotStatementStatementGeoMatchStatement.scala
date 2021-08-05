@@ -20,27 +20,21 @@ trait WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementSt
 }
 object WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatement {
   
-  @scala.inline
-  def apply(countryCodes: js.Array[String]): WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatement = {
+  inline def apply(countryCodes: js.Array[String]): WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatement = {
     val __obj = js.Dynamic.literal(countryCodes = countryCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatementMutableBuilder[Self <: WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatement](x: Self) {
     
-    @scala.inline
-    def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
+    inline def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardedIpConfig(
+    inline def setForwardedIpConfig(
       value: WebAclRuleStatementOrStatementStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig
     ): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
+    inline def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
   }
 }

@@ -25,23 +25,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(bps: Double): Options = {
+    inline def apply(bps: Double): Options = {
       val __obj = js.Dynamic.literal(bps = bps.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBps(value: Double): Self = StObject.set(x, "bps", value.asInstanceOf[js.Any])
+      inline def setBps(value: Double): Self = StObject.set(x, "bps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     }
   }
   

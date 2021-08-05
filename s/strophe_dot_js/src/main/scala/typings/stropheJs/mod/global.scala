@@ -197,110 +197,92 @@ object global {
       @JSGlobal("Strophe.NS.AUTH")
       @js.native
       def AUTH: String = js.native
-      @scala.inline
-      def AUTH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTH")(x.asInstanceOf[js.Any])
+      inline def AUTH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTH")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.BIND")
       @js.native
       def BIND: String = js.native
-      @scala.inline
-      def BIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIND")(x.asInstanceOf[js.Any])
+      inline def BIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIND")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.BOSH")
       @js.native
       def BOSH: String = js.native
-      @scala.inline
-      def BOSH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOSH")(x.asInstanceOf[js.Any])
+      inline def BOSH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOSH")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.CLIENT")
       @js.native
       def CLIENT: String = js.native
-      @scala.inline
-      def CLIENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT")(x.asInstanceOf[js.Any])
+      inline def CLIENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.DISCO_INFO")
       @js.native
       def DISCO_INFO: String = js.native
-      @scala.inline
-      def DISCO_INFO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCO_INFO")(x.asInstanceOf[js.Any])
+      inline def DISCO_INFO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCO_INFO")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.DISCO_ITEMS")
       @js.native
       def DISCO_ITEMS: String = js.native
-      @scala.inline
-      def DISCO_ITEMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCO_ITEMS")(x.asInstanceOf[js.Any])
+      inline def DISCO_ITEMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCO_ITEMS")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.FRAMING")
       @js.native
       def FRAMING: String = js.native
-      @scala.inline
-      def FRAMING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAMING")(x.asInstanceOf[js.Any])
+      inline def FRAMING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAMING")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.HTTPBIND")
       @js.native
       def HTTPBIND: String = js.native
-      @scala.inline
-      def HTTPBIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPBIND")(x.asInstanceOf[js.Any])
+      inline def HTTPBIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPBIND")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.MUC")
       @js.native
       def MUC: String = js.native
-      @scala.inline
-      def MUC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MUC")(x.asInstanceOf[js.Any])
+      inline def MUC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MUC")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.PROFILE")
       @js.native
       def PROFILE: String = js.native
-      @scala.inline
-      def PROFILE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROFILE")(x.asInstanceOf[js.Any])
+      inline def PROFILE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROFILE")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.ROSTER")
       @js.native
       def ROSTER: String = js.native
-      @scala.inline
-      def ROSTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSTER")(x.asInstanceOf[js.Any])
+      inline def ROSTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSTER")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.SASL")
       @js.native
       def SASL: String = js.native
-      @scala.inline
-      def SASL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASL")(x.asInstanceOf[js.Any])
+      inline def SASL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASL")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.SESSION")
       @js.native
       def SESSION: String = js.native
-      @scala.inline
-      def SESSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION")(x.asInstanceOf[js.Any])
+      inline def SESSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.STANZAS")
       @js.native
       def STANZAS: String = js.native
-      @scala.inline
-      def STANZAS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STANZAS")(x.asInstanceOf[js.Any])
+      inline def STANZAS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STANZAS")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.STREAM")
       @js.native
       def STREAM: String = js.native
-      @scala.inline
-      def STREAM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STREAM")(x.asInstanceOf[js.Any])
+      inline def STREAM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STREAM")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.VERSION")
       @js.native
       def VERSION: String = js.native
-      @scala.inline
-      def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+      inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.XHTML")
       @js.native
       def XHTML: String = js.native
-      @scala.inline
-      def XHTML_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XHTML")(x.asInstanceOf[js.Any])
+      inline def XHTML_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XHTML")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Strophe.NS.XHTML_IM")
       @js.native
       def XHTML_IM: String = js.native
-      @scala.inline
-      def XHTML_IM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XHTML_IM")(x.asInstanceOf[js.Any])
+      inline def XHTML_IM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XHTML_IM")(x.asInstanceOf[js.Any])
     }
     
     /** Constants: SASL mechanisms
@@ -387,8 +369,7 @@ object global {
       *    (String) name - The name of the extension.
       *    (Object) ptype - The plugin's prototype.
       */
-    @scala.inline
-    def addConnectionPlugin(name: String, ptype: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addConnectionPlugin")(name.asInstanceOf[js.Any], ptype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addConnectionPlugin(name: String, ptype: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addConnectionPlugin")(name.asInstanceOf[js.Any], ptype.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: addNamespace
       *  This function is used to extend the current namespaces in
@@ -402,8 +383,7 @@ object global {
       *      referenced under Strophe.NS
       *    (String) value - The actual namespace.
       */
-    @scala.inline
-    def addNamespace(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamespace")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addNamespace(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamespace")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: copyElement
       *  Copy an XML DOM element.
@@ -417,8 +397,7 @@ object global {
       *  Returns:
       *    A new, copied DOM element tree.
       */
-    @scala.inline
-    def copyElement(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("copyElement")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def copyElement(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("copyElement")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /** Function: createHtml
       *  Copy an HTML DOM element into an XML DOM.
@@ -432,8 +411,7 @@ object global {
       *  Returns:
       *    A new, copied DOM element tree.
       */
-    @scala.inline
-    def createHtml(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtml")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def createHtml(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtml")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /** Functions: debug, info, warn, error
       *  Log a message at the appropriate Strophe.LogLevel
@@ -441,11 +419,9 @@ object global {
       *  Parameters:
       *    (String) msg - The log message.
       */
-    @scala.inline
-    def debug(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def error(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: escapeNode
       *  Escape the node part (also called local part) of a JID.
@@ -456,11 +432,9 @@ object global {
       *  Returns:
       *    An escaped node (or local part).
       */
-    @scala.inline
-    def escapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def fatal(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def fatal(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: forEachChild
       *  Map a function over some or all child elements of a given element.
@@ -476,8 +450,7 @@ object global {
       *    (Function) func - The function to apply to each child.  This
       *      function should take a single argument, a DOM element.
       */
-    @scala.inline
-    def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachChild")(elem.asInstanceOf[js.Any], elemName.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachChild")(elem.asInstanceOf[js.Any], elemName.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: getBareJidFromJid
       *  Get the bare JID from a JID String.
@@ -488,8 +461,7 @@ object global {
       *  Returns:
       *    A String containing the bare JID.
       */
-    @scala.inline
-    def getBareJidFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBareJidFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getBareJidFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBareJidFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getDomainFromJid
       *  Get the domain portion of a JID String.
@@ -500,8 +472,7 @@ object global {
       *  Returns:
       *    A String containing the domain.
       */
-    @scala.inline
-    def getDomainFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDomainFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getNodeFromJid
       *  Get the node portion of a JID String.
@@ -512,8 +483,7 @@ object global {
       *  Returns:
       *    A String containing the node.
       */
-    @scala.inline
-    def getNodeFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getNodeFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getResourceFromJid
       *  Get the resource portion of a JID String.
@@ -524,8 +494,7 @@ object global {
       *  Returns:
       *    A String containing the resource.
       */
-    @scala.inline
-    def getResourceFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getResourceFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getText
       *  Get the concatenation of all text children of an element.
@@ -536,11 +505,9 @@ object global {
       *  Returns:
       *    A String with the concatenated text of all text element children.
       */
-    @scala.inline
-    def getText(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getText(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def info(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def info(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: isTagEqual
       *  Compare an element's tag name with a string.
@@ -555,8 +522,7 @@ object global {
       *    true if the element's tag name matches _el_, and false
       *    otherwise.
       */
-    @scala.inline
-    def isTagEqual(el: Element, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTagEqual")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTagEqual(el: Element, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTagEqual")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** Function: log
       *  User overrideable logging function.
@@ -587,8 +553,7 @@ object global {
       *      be one of the values in Strophe.LogLevel.
       *    (String) msg - The log message.
       */
-    @scala.inline
-    def log(level: typings.stropheJs.mod.Strophe.LogLevel, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def log(level: typings.stropheJs.mod.Strophe.LogLevel, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: serialize
       *  Render a DOM element and all descendants to a String.
@@ -599,10 +564,8 @@ object global {
       *  Returns:
       *    The serialized element tree as a String.
       */
-    @scala.inline
-    def serialize(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def serialize(elem: typings.stropheJs.mod.Strophe.Builder): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def serialize(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def serialize(elem: typings.stropheJs.mod.Strophe.Builder): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: unescapeNode
       *  Unescape a node part (also called local part) of a JID.
@@ -613,11 +576,9 @@ object global {
       *  Returns:
       *    An unescaped node (or local part).
       */
-    @scala.inline
-    def unescapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def unescapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def warn(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def warn(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: xmlElement
       *  Create an XML DOM element.
@@ -637,20 +598,13 @@ object global {
       *  Returns:
       *    A new XML DOM element.
       */
-    @scala.inline
-    def xmlElement(name: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any]).asInstanceOf[Element]
-    @scala.inline
-    def xmlElement(name: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
-    @scala.inline
-    def xmlElement(name: String, attrs: js.Any, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
-    @scala.inline
-    def xmlElement(name: String, attrs: Unit, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
-    @scala.inline
-    def xmlElement(name: String, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
-    @scala.inline
-    def xmlElement(name: String, text: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
-    @scala.inline
-    def xmlElement(name: String, text: Unit, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def xmlElement(name: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def xmlElement(name: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def xmlElement(name: String, attrs: js.Any, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def xmlElement(name: String, attrs: Unit, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def xmlElement(name: String, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def xmlElement(name: String, text: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def xmlElement(name: String, text: Unit, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /** Function: xmlGenerator
       *  Get the DOM document to generate elements.
@@ -658,8 +612,7 @@ object global {
       *  Returns:
       *    The currently used DOM document.
       */
-    @scala.inline
-    def xmlGenerator(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlGenerator")().asInstanceOf[Document]
+    inline def xmlGenerator(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlGenerator")().asInstanceOf[Document]
     
     /** Function: xmlHtmlNode
       *  Creates an XML DOM html node.
@@ -670,8 +623,7 @@ object global {
       *  Returns:
       *    A new XML DOM text node.
       */
-    @scala.inline
-    def xmlHtmlNode(html: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHtmlNode")(html.asInstanceOf[js.Any]).asInstanceOf[Document]
+    inline def xmlHtmlNode(html: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHtmlNode")(html.asInstanceOf[js.Any]).asInstanceOf[Document]
     
     /** Function: xmlTextNode
       *  Creates an XML DOM text node.
@@ -684,8 +636,7 @@ object global {
       *  Returns:
       *    A new XML DOM text node.
       */
-    @scala.inline
-    def xmlTextNode(text: String): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlTextNode")(text.asInstanceOf[js.Any]).asInstanceOf[Text]
+    inline def xmlTextNode(text: String): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlTextNode")(text.asInstanceOf[js.Any]).asInstanceOf[Text]
     
     /*  Function: xmlescape
       *  Excapes invalid xml characters.
@@ -696,8 +647,7 @@ object global {
       *  Returns:
       *      Escaped text.
       */
-    @scala.inline
-    def xmlescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def xmlescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /*  Function: xmlunescape
       *  Unexcapes invalid xml characters.
@@ -708,8 +658,7 @@ object global {
       *  Returns:
       *      Unescaped text.
       */
-    @scala.inline
-    def xmlunescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlunescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def xmlunescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlunescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
     type ConnectionOptions = typings.stropheJs.mod.Strophe.ConnectionOptions
     
@@ -717,26 +666,18 @@ object global {
   }
   
   /* was `typeof _$build` */
-  @scala.inline
-  def build(name: String): Builder = js.Dynamic.global.applyDynamic("$build")(name.asInstanceOf[js.Any]).asInstanceOf[Builder]
-  @scala.inline
-  def build(name: String, attrs: js.Any): Builder = (js.Dynamic.global.applyDynamic("$build")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Builder]
+  inline def build(name: String): Builder = js.Dynamic.global.applyDynamic("$build")(name.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def build(name: String, attrs: js.Any): Builder = (js.Dynamic.global.applyDynamic("$build")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Builder]
   
   /* was `typeof _$iq` */
-  @scala.inline
-  def iq(): Builder = js.Dynamic.global.applyDynamic("$iq")().asInstanceOf[Builder]
-  @scala.inline
-  def iq(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$iq")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def iq(): Builder = js.Dynamic.global.applyDynamic("$iq")().asInstanceOf[Builder]
+  inline def iq(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$iq")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
   /* was `typeof _$msg` */
-  @scala.inline
-  def msg(): Builder = js.Dynamic.global.applyDynamic("$msg")().asInstanceOf[Builder]
-  @scala.inline
-  def msg(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$msg")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def msg(): Builder = js.Dynamic.global.applyDynamic("$msg")().asInstanceOf[Builder]
+  inline def msg(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$msg")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
   /* was `typeof _$pres` */
-  @scala.inline
-  def pres(): Builder = js.Dynamic.global.applyDynamic("$pres")().asInstanceOf[Builder]
-  @scala.inline
-  def pres(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$pres")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def pres(): Builder = js.Dynamic.global.applyDynamic("$pres")().asInstanceOf[Builder]
+  inline def pres(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$pres")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
 }

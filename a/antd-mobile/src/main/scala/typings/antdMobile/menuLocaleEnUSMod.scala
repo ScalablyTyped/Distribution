@@ -15,13 +15,11 @@ object menuLocaleEnUSMod {
     @JSImport("antd-mobile/lib/menu/locale/en_US", "default.cancelText")
     @js.native
     def cancelText: String = js.native
-    @scala.inline
-    def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
+    inline def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/menu/locale/en_US", "default.okText")
     @js.native
     def okText: String = js.native
-    @scala.inline
-    def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
+    inline def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
   }
 }

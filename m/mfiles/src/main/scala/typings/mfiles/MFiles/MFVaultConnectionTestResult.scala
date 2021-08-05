@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFVaultConnectionTestResult extends StObject
 object MFVaultConnectionTestResult {
   
-  @scala.inline
-  def OK: `0` = 0.asInstanceOf[`0`]
+  inline def OK: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def UserCancelledLoginAttempt: `1` = 1.asInstanceOf[`1`]
+  inline def UserCancelledLoginAttempt: `1` = 1.asInstanceOf[`1`]
 }

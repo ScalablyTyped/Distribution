@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Broadcast")
 @js.native
-class Broadcast protected ()
+/* private */ class Broadcast ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Broadcast {
   
@@ -25,7 +25,7 @@ class Broadcast protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Broadcast_typekey")
   var PowerPointDotBroadcast_typekey: typings.activexPowerpoint.PowerPoint.Broadcast = js.native
   

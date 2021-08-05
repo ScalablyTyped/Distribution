@@ -29,9 +29,7 @@ object VarDictionary {
   @JSImport("kdbxweb", "VarDictionary.ValueType")
   @js.native
   def ValueType: Bool = js.native
-  @scala.inline
-  def ValueType_=(x: Bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueType")(x.asInstanceOf[js.Any])
+  inline def ValueType_=(x: Bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueType")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def read(stm: BinaryStream): VarDictionary = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any]).asInstanceOf[VarDictionary]
+  inline def read(stm: BinaryStream): VarDictionary = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any]).asInstanceOf[VarDictionary]
 }

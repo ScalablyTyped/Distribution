@@ -11,13 +11,11 @@ object eggCoreStrings {
   sealed trait agent
     extends StObject
        with EggType
-  @scala.inline
-  def agent: agent = "agent".asInstanceOf[agent]
+  inline def agent: agent = "agent".asInstanceOf[agent]
   
   @js.native
   sealed trait application
     extends StObject
        with EggType
-  @scala.inline
-  def application: application = "application".asInstanceOf[application]
+  inline def application: application = "application".asInstanceOf[application]
 }

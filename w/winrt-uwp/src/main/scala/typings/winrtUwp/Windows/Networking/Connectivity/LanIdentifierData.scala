@@ -16,20 +16,16 @@ trait LanIdentifierData extends StObject {
 }
 object LanIdentifierData {
   
-  @scala.inline
-  def apply(`type`: Double, value: IVectorView[Double]): LanIdentifierData = {
+  inline def apply(`type`: Double, value: IVectorView[Double]): LanIdentifierData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanIdentifierData]
   }
   
-  @scala.inline
-  implicit class LanIdentifierDataMutableBuilder[Self <: LanIdentifierData] (val x: Self) extends AnyVal {
+  extension [Self <: LanIdentifierData](x: Self) {
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: IVectorView[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: IVectorView[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

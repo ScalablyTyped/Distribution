@@ -36,8 +36,7 @@ trait Leg extends StObject {
 }
 object Leg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotation: js.Array[DirectionsAnnotation],
     distance: Double,
     duration: Double,
@@ -49,31 +48,22 @@ object Leg {
     __obj.asInstanceOf[Leg]
   }
   
-  @scala.inline
-  implicit class LegMutableBuilder[Self <: Leg] (val x: Self) extends AnyVal {
+  extension [Self <: Leg](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: js.Array[DirectionsAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: js.Array[DirectionsAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationVarargs(value: DirectionsAnnotation*): Self = StObject.set(x, "annotation", js.Array(value :_*))
+    inline def setAnnotationVarargs(value: DirectionsAnnotation*): Self = StObject.set(x, "annotation", js.Array(value :_*))
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

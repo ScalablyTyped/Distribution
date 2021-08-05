@@ -20,8 +20,7 @@ trait JQueryFileUploadXhr extends StObject {
 }
 object JQueryFileUploadXhr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorThrown: js.Any,
     headers: StringDictionary[js.Any],
     jqXHR: JQueryXHR,
@@ -32,22 +31,16 @@ object JQueryFileUploadXhr {
     __obj.asInstanceOf[JQueryFileUploadXhr]
   }
   
-  @scala.inline
-  implicit class JQueryFileUploadXhrMutableBuilder[Self <: JQueryFileUploadXhr] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryFileUploadXhr](x: Self) {
     
-    @scala.inline
-    def setErrorThrown(value: js.Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
+    inline def setErrorThrown(value: js.Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
+    inline def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStatus(value: String): Self = StObject.set(x, "textStatus", value.asInstanceOf[js.Any])
+    inline def setTextStatus(value: String): Self = StObject.set(x, "textStatus", value.asInstanceOf[js.Any])
   }
 }

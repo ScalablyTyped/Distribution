@@ -38,8 +38,7 @@ trait BackendEnvironment extends StObject {
 }
 object BackendEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backendEnvironmentArn: BackendEnvironmentArn,
     createTime: CreateTime,
     environmentName: EnvironmentName,
@@ -49,31 +48,22 @@ object BackendEnvironment {
     __obj.asInstanceOf[BackendEnvironment]
   }
   
-  @scala.inline
-  implicit class BackendEnvironmentMutableBuilder[Self <: BackendEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: BackendEnvironment](x: Self) {
     
-    @scala.inline
-    def setBackendEnvironmentArn(value: BackendEnvironmentArn): Self = StObject.set(x, "backendEnvironmentArn", value.asInstanceOf[js.Any])
+    inline def setBackendEnvironmentArn(value: BackendEnvironmentArn): Self = StObject.set(x, "backendEnvironmentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentArtifacts(value: DeploymentArtifacts): Self = StObject.set(x, "deploymentArtifacts", value.asInstanceOf[js.Any])
+    inline def setDeploymentArtifacts(value: DeploymentArtifacts): Self = StObject.set(x, "deploymentArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentArtifactsUndefined: Self = StObject.set(x, "deploymentArtifacts", js.undefined)
+    inline def setDeploymentArtifactsUndefined: Self = StObject.set(x, "deploymentArtifacts", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

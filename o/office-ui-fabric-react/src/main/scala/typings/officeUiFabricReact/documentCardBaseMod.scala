@@ -16,15 +16,15 @@ object documentCardBaseMod {
        with IDocumentCard {
     def this(props: IDocumentCardProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _onAction: js.Any = js.native
+    /* private */ var _onAction: js.Any = js.native
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _rootElement: js.Any = js.native
+    /* private */ var _rootElement: js.Any = js.native
     
     /**
       * Sets focus to the DocumentCard.
@@ -42,7 +42,6 @@ object documentCardBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCard.base", "DocumentCardBase.defaultProps")
     @js.native
     def defaultProps: IDocumentCardProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDocumentCardProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDocumentCardProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

@@ -16,37 +16,27 @@ trait PrintObjects extends StObject {
 }
 object PrintObjects {
   
-  @scala.inline
-  def apply(): PrintObjects = {
+  inline def apply(): PrintObjects = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintObjects]
   }
   
-  @scala.inline
-  implicit class PrintObjectsMutableBuilder[Self <: PrintObjects] (val x: Self) extends AnyVal {
+  extension [Self <: PrintObjects](x: Self) {
     
-    @scala.inline
-    def `setDocument-number`(value: Double): Self = StObject.set(x, "document-number", value.asInstanceOf[js.Any])
+    inline def `setDocument-number`(value: Double): Self = StObject.set(x, "document-number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDocument-numberUndefined`: Self = StObject.set(x, "document-number", js.undefined)
+    inline def `setDocument-numberUndefined`: Self = StObject.set(x, "document-number", js.undefined)
     
-    @scala.inline
-    def `setObject-offset`(value: ObjectOffset): Self = StObject.set(x, "object-offset", value.asInstanceOf[js.Any])
+    inline def `setObject-offset`(value: ObjectOffset): Self = StObject.set(x, "object-offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setObject-offsetUndefined`: Self = StObject.set(x, "object-offset", js.undefined)
+    inline def `setObject-offsetUndefined`: Self = StObject.set(x, "object-offset", js.undefined)
     
-    @scala.inline
-    def `setObject-size`(value: ObjectSize): Self = StObject.set(x, "object-size", value.asInstanceOf[js.Any])
+    inline def `setObject-size`(value: ObjectSize): Self = StObject.set(x, "object-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setObject-sizeUndefined`: Self = StObject.set(x, "object-size", js.undefined)
+    inline def `setObject-sizeUndefined`: Self = StObject.set(x, "object-size", js.undefined)
     
-    @scala.inline
-    def `setObject-uuid`(value: String): Self = StObject.set(x, "object-uuid", value.asInstanceOf[js.Any])
+    inline def `setObject-uuid`(value: String): Self = StObject.set(x, "object-uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setObject-uuidUndefined`: Self = StObject.set(x, "object-uuid", js.undefined)
+    inline def `setObject-uuidUndefined`: Self = StObject.set(x, "object-uuid", js.undefined)
   }
 }

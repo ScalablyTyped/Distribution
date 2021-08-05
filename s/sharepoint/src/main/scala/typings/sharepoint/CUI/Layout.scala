@@ -10,8 +10,7 @@ trait Layout
      with RibbonComponent
 object Layout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _lastHeightUpdate: Double,
     _lastLeftUpdate: Double,
     _lastTopUpdate: Double,

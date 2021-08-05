@@ -17,8 +17,7 @@ trait Timeline
 }
 object Timeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeId: Double,
     id: String,
     lastChangedBy: String,
@@ -30,19 +29,14 @@ object Timeline {
     __obj.asInstanceOf[Timeline]
   }
   
-  @scala.inline
-  implicit class TimelineMutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
+  extension [Self <: Timeline](x: Self) {
     
-    @scala.inline
-    def setLastChangedBy(value: String): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
+    inline def setLastChangedBy(value: String): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
+    inline def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
   }
 }

@@ -12,20 +12,16 @@ object anon {
   }
   object Standalone {
     
-    @scala.inline
-    def apply(): Standalone = {
+    inline def apply(): Standalone = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Standalone]
     }
     
-    @scala.inline
-    implicit class StandaloneMutableBuilder[Self <: Standalone] (val x: Self) extends AnyVal {
+    extension [Self <: Standalone](x: Self) {
       
-      @scala.inline
-      def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     }
   }
 }

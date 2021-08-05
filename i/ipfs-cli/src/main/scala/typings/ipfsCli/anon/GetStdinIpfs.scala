@@ -12,19 +12,15 @@ trait GetStdinIpfs extends StObject {
 }
 object GetStdinIpfs {
   
-  @scala.inline
-  def apply(getStdin: js.Any, ipfs: js.Any): GetStdinIpfs = {
+  inline def apply(getStdin: js.Any, ipfs: js.Any): GetStdinIpfs = {
     val __obj = js.Dynamic.literal(getStdin = getStdin.asInstanceOf[js.Any], ipfs = ipfs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStdinIpfs]
   }
   
-  @scala.inline
-  implicit class GetStdinIpfsMutableBuilder[Self <: GetStdinIpfs] (val x: Self) extends AnyVal {
+  extension [Self <: GetStdinIpfs](x: Self) {
     
-    @scala.inline
-    def setGetStdin(value: js.Any): Self = StObject.set(x, "getStdin", value.asInstanceOf[js.Any])
+    inline def setGetStdin(value: js.Any): Self = StObject.set(x, "getStdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+    inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait UpdateGraphqlApiResponse extends StObject {
 }
 object UpdateGraphqlApiResponse {
   
-  @scala.inline
-  def apply(): UpdateGraphqlApiResponse = {
+  inline def apply(): UpdateGraphqlApiResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGraphqlApiResponse]
   }
   
-  @scala.inline
-  implicit class UpdateGraphqlApiResponseMutableBuilder[Self <: UpdateGraphqlApiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGraphqlApiResponse](x: Self) {
     
-    @scala.inline
-    def setGraphqlApi(value: GraphqlApi): Self = StObject.set(x, "graphqlApi", value.asInstanceOf[js.Any])
+    inline def setGraphqlApi(value: GraphqlApi): Self = StObject.set(x, "graphqlApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphqlApiUndefined: Self = StObject.set(x, "graphqlApi", js.undefined)
+    inline def setGraphqlApiUndefined: Self = StObject.set(x, "graphqlApi", js.undefined)
   }
 }

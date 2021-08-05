@@ -18,25 +18,19 @@ trait NodeInitializationAction extends StObject {
 }
 object NodeInitializationAction {
   
-  @scala.inline
-  def apply(): NodeInitializationAction = {
+  inline def apply(): NodeInitializationAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeInitializationAction]
   }
   
-  @scala.inline
-  implicit class NodeInitializationActionMutableBuilder[Self <: NodeInitializationAction] (val x: Self) extends AnyVal {
+  extension [Self <: NodeInitializationAction](x: Self) {
     
-    @scala.inline
-    def setExecutableFile(value: String): Self = StObject.set(x, "executableFile", value.asInstanceOf[js.Any])
+    inline def setExecutableFile(value: String): Self = StObject.set(x, "executableFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutableFileUndefined: Self = StObject.set(x, "executableFile", js.undefined)
+    inline def setExecutableFileUndefined: Self = StObject.set(x, "executableFile", js.undefined)
     
-    @scala.inline
-    def setExecutionTimeout(value: String): Self = StObject.set(x, "executionTimeout", value.asInstanceOf[js.Any])
+    inline def setExecutionTimeout(value: String): Self = StObject.set(x, "executionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionTimeoutUndefined: Self = StObject.set(x, "executionTimeout", js.undefined)
+    inline def setExecutionTimeoutUndefined: Self = StObject.set(x, "executionTimeout", js.undefined)
   }
 }

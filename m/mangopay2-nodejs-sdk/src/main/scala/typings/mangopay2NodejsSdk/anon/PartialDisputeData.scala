@@ -45,103 +45,71 @@ trait PartialDisputeData extends StObject {
 }
 object PartialDisputeData {
   
-  @scala.inline
-  def apply(): PartialDisputeData = {
+  inline def apply(): PartialDisputeData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDisputeData]
   }
   
-  @scala.inline
-  implicit class PartialDisputeDataMutableBuilder[Self <: PartialDisputeData] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDisputeData](x: Self) {
     
-    @scala.inline
-    def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
+    inline def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContestDeadlineDateUndefined: Self = StObject.set(x, "ContestDeadlineDate", js.undefined)
+    inline def setContestDeadlineDateUndefined: Self = StObject.set(x, "ContestDeadlineDate", js.undefined)
     
-    @scala.inline
-    def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
+    inline def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContestedFundsUndefined: Self = StObject.set(x, "ContestedFunds", js.undefined)
+    inline def setContestedFundsUndefined: Self = StObject.set(x, "ContestedFunds", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setDisputeReason(value: DisputeReason): Self = StObject.set(x, "DisputeReason", value.asInstanceOf[js.Any])
+    inline def setDisputeReason(value: DisputeReason): Self = StObject.set(x, "DisputeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisputeReasonUndefined: Self = StObject.set(x, "DisputeReason", js.undefined)
+    inline def setDisputeReasonUndefined: Self = StObject.set(x, "DisputeReason", js.undefined)
     
-    @scala.inline
-    def setDisputeType(value: DisputeType): Self = StObject.set(x, "DisputeType", value.asInstanceOf[js.Any])
+    inline def setDisputeType(value: DisputeType): Self = StObject.set(x, "DisputeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisputeTypeUndefined: Self = StObject.set(x, "DisputeType", js.undefined)
+    inline def setDisputeTypeUndefined: Self = StObject.set(x, "DisputeType", js.undefined)
     
-    @scala.inline
-    def setDisputedFunds(value: MoneyData): Self = StObject.set(x, "DisputedFunds", value.asInstanceOf[js.Any])
+    inline def setDisputedFunds(value: MoneyData): Self = StObject.set(x, "DisputedFunds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisputedFundsUndefined: Self = StObject.set(x, "DisputedFunds", js.undefined)
+    inline def setDisputedFundsUndefined: Self = StObject.set(x, "DisputedFunds", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
+    inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialTransactionIdUndefined: Self = StObject.set(x, "InitialTransactionId", js.undefined)
+    inline def setInitialTransactionIdUndefined: Self = StObject.set(x, "InitialTransactionId", js.undefined)
     
-    @scala.inline
-    def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
+    inline def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialTransactionTypeUndefined: Self = StObject.set(x, "InitialTransactionType", js.undefined)
+    inline def setInitialTransactionTypeUndefined: Self = StObject.set(x, "InitialTransactionType", js.undefined)
     
-    @scala.inline
-    def setRepudiationId(value: String): Self = StObject.set(x, "RepudiationId", value.asInstanceOf[js.Any])
+    inline def setRepudiationId(value: String): Self = StObject.set(x, "RepudiationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepudiationIdUndefined: Self = StObject.set(x, "RepudiationId", js.undefined)
+    inline def setRepudiationIdUndefined: Self = StObject.set(x, "RepudiationId", js.undefined)
     
-    @scala.inline
-    def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
+    inline def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultCodeUndefined: Self = StObject.set(x, "ResultCode", js.undefined)
+    inline def setResultCodeUndefined: Self = StObject.set(x, "ResultCode", js.undefined)
     
-    @scala.inline
-    def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
+    inline def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultMessageUndefined: Self = StObject.set(x, "ResultMessage", js.undefined)
+    inline def setResultMessageUndefined: Self = StObject.set(x, "ResultMessage", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DisputeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DisputeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

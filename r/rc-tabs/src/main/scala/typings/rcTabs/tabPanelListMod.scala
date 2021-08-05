@@ -14,8 +14,7 @@ object tabPanelListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasIdActiveKeyAnimatedTabPositionRtlDestroyInactiveTabPane: TabPanelListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIdActiveKeyAnimatedTabPositionRtlDestroyInactiveTabPane.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasIdActiveKeyAnimatedTabPositionRtlDestroyInactiveTabPane: TabPanelListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIdActiveKeyAnimatedTabPositionRtlDestroyInactiveTabPane.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TabPanelListProps extends StObject {
     
@@ -33,41 +32,30 @@ object tabPanelListMod {
   }
   object TabPanelListProps {
     
-    @scala.inline
-    def apply(activeKey: Key, id: String, rtl: Boolean): TabPanelListProps = {
+    inline def apply(activeKey: Key, id: String, rtl: Boolean): TabPanelListProps = {
       val __obj = js.Dynamic.literal(activeKey = activeKey.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabPanelListProps]
     }
     
-    @scala.inline
-    implicit class TabPanelListPropsMutableBuilder[Self <: TabPanelListProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabPanelListProps](x: Self) {
       
-      @scala.inline
-      def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimated(value: AnimatedConfig): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: AnimatedConfig): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setDestroyInactiveTabPane(value: Boolean): Self = StObject.set(x, "destroyInactiveTabPane", value.asInstanceOf[js.Any])
+      inline def setDestroyInactiveTabPane(value: Boolean): Self = StObject.set(x, "destroyInactiveTabPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyInactiveTabPaneUndefined: Self = StObject.set(x, "destroyInactiveTabPane", js.undefined)
+      inline def setDestroyInactiveTabPaneUndefined: Self = StObject.set(x, "destroyInactiveTabPane", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabPosition(value: TabPosition): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
+      inline def setTabPosition(value: TabPosition): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
+      inline def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
     }
   }
 }

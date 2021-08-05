@@ -59,8 +59,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.AsyncMirror")
     @js.native
     def AsyncMirror: TypeofAsyncMirror = js.native
-    @scala.inline
-    def AsyncMirror_=(x: TypeofAsyncMirror): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsyncMirror")(x.asInstanceOf[js.Any])
+    inline def AsyncMirror_=(x: TypeofAsyncMirror): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsyncMirror")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.Dropbox")
@@ -80,8 +79,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.Dropbox")
     @js.native
     def Dropbox: TypeofDropbox = js.native
-    @scala.inline
-    def Dropbox_=(x: TypeofDropbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dropbox")(x.asInstanceOf[js.Any])
+    inline def Dropbox_=(x: TypeofDropbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dropbox")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.Emscripten")
@@ -97,8 +95,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.Emscripten")
     @js.native
     def Emscripten: TypeofEmscripten = js.native
-    @scala.inline
-    def Emscripten_=(x: TypeofEmscripten): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Emscripten")(x.asInstanceOf[js.Any])
+    inline def Emscripten_=(x: TypeofEmscripten): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Emscripten")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.FolderAdapter")
@@ -116,8 +113,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.FolderAdapter")
     @js.native
     def FolderAdapter: TypeofFolderAdapter = js.native
-    @scala.inline
-    def FolderAdapter_=(x: TypeofFolderAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FolderAdapter")(x.asInstanceOf[js.Any])
+    inline def FolderAdapter_=(x: TypeofFolderAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FolderAdapter")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.HTML5FS")
@@ -147,8 +143,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.HTML5FS")
     @js.native
     def HTML5FS: TypeofHTML5FS = js.native
-    @scala.inline
-    def HTML5FS_=(x: TypeofHTML5FS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTML5FS")(x.asInstanceOf[js.Any])
+    inline def HTML5FS_=(x: TypeofHTML5FS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTML5FS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.InMemory")
@@ -158,8 +153,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.InMemory")
     @js.native
     def InMemory: TypeofInMemory = js.native
-    @scala.inline
-    def InMemory_=(x: TypeofInMemory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InMemory")(x.asInstanceOf[js.Any])
+    inline def InMemory_=(x: TypeofInMemory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InMemory")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.IndexedDB")
@@ -184,8 +178,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.IndexedDB")
     @js.native
     def IndexedDB: TypeofIndexedDB = js.native
-    @scala.inline
-    def IndexedDB_=(x: TypeofIndexedDB): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexedDB")(x.asInstanceOf[js.Any])
+    inline def IndexedDB_=(x: TypeofIndexedDB): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexedDB")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.IsoFS")
@@ -207,8 +200,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.IsoFS")
     @js.native
     def IsoFS: TypeofIsoFS = js.native
-    @scala.inline
-    def IsoFS_=(x: TypeofIsoFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsoFS")(x.asInstanceOf[js.Any])
+    inline def IsoFS_=(x: TypeofIsoFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsoFS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.LocalStorage")
@@ -221,8 +213,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.LocalStorage")
     @js.native
     def LocalStorage: TypeofLocalStorage = js.native
-    @scala.inline
-    def LocalStorage_=(x: TypeofLocalStorage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocalStorage")(x.asInstanceOf[js.Any])
+    inline def LocalStorage_=(x: TypeofLocalStorage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocalStorage")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.MountableFileSystem")
@@ -235,8 +226,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.MountableFileSystem")
     @js.native
     def MountableFileSystem: TypeofMountableFileSystem = js.native
-    @scala.inline
-    def MountableFileSystem_=(x: TypeofMountableFileSystem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MountableFileSystem")(x.asInstanceOf[js.Any])
+    inline def MountableFileSystem_=(x: TypeofMountableFileSystem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MountableFileSystem")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.OverlayFS")
@@ -254,8 +244,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.OverlayFS")
     @js.native
     def OverlayFS: TypeofOverlayFS = js.native
-    @scala.inline
-    def OverlayFS_=(x: TypeofOverlayFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverlayFS")(x.asInstanceOf[js.Any])
+    inline def OverlayFS_=(x: TypeofOverlayFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverlayFS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.WorkerFS")
@@ -274,8 +263,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.WorkerFS")
     @js.native
     def WorkerFS: TypeofWorkerFS = js.native
-    @scala.inline
-    def WorkerFS_=(x: TypeofWorkerFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkerFS")(x.asInstanceOf[js.Any])
+    inline def WorkerFS_=(x: TypeofWorkerFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkerFS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.XmlHttpRequest")
@@ -310,8 +298,7 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.XmlHttpRequest")
     @js.native
     def XmlHttpRequest: TypeofXmlHttpRequest = js.native
-    @scala.inline
-    def XmlHttpRequest_=(x: TypeofXmlHttpRequest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlHttpRequest")(x.asInstanceOf[js.Any])
+    inline def XmlHttpRequest_=(x: TypeofXmlHttpRequest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlHttpRequest")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.ZipFS")
@@ -333,7 +320,6 @@ object backendsMod {
     @JSImport("browserfs/dist/node/core/backends", "default.ZipFS")
     @js.native
     def ZipFS: TypeofZipFS = js.native
-    @scala.inline
-    def ZipFS_=(x: TypeofZipFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZipFS")(x.asInstanceOf[js.Any])
+    inline def ZipFS_=(x: TypeofZipFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZipFS")(x.asInstanceOf[js.Any])
   }
 }

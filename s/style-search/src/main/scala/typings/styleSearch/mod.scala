@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options, callback: StyleSearchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(options: Options, callback: StyleSearchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("style-search", JSImport.Namespace)
   @js.native
@@ -69,59 +68,42 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(source: String, target: String | js.Array[String]): Options = {
+    inline def apply(source: String, target: String | js.Array[String]): Options = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setComments(value: SyntaxFeatureOption): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: SyntaxFeatureOption): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setFunctionArguments(value: SyntaxFeatureOption): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
+      inline def setFunctionArguments(value: SyntaxFeatureOption): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionArgumentsUndefined: Self = StObject.set(x, "functionArguments", js.undefined)
+      inline def setFunctionArgumentsUndefined: Self = StObject.set(x, "functionArguments", js.undefined)
       
-      @scala.inline
-      def setFunctionNames(value: SyntaxFeatureOption): Self = StObject.set(x, "functionNames", value.asInstanceOf[js.Any])
+      inline def setFunctionNames(value: SyntaxFeatureOption): Self = StObject.set(x, "functionNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNamesUndefined: Self = StObject.set(x, "functionNames", js.undefined)
+      inline def setFunctionNamesUndefined: Self = StObject.set(x, "functionNames", js.undefined)
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      @scala.inline
-      def setParentheticals(value: SyntaxFeatureOption): Self = StObject.set(x, "parentheticals", value.asInstanceOf[js.Any])
+      inline def setParentheticals(value: SyntaxFeatureOption): Self = StObject.set(x, "parentheticals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentheticalsUndefined: Self = StObject.set(x, "parentheticals", js.undefined)
+      inline def setParentheticalsUndefined: Self = StObject.set(x, "parentheticals", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrings(value: SyntaxFeatureOption): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: SyntaxFeatureOption): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+      inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String | js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String | js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
     }
   }
   
@@ -154,8 +136,7 @@ object mod {
   }
   object StyleSearchMatch {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endIndex: Double,
       insideComment: Boolean,
       insideFunctionArguments: Boolean,
@@ -167,26 +148,19 @@ object mod {
       __obj.asInstanceOf[StyleSearchMatch]
     }
     
-    @scala.inline
-    implicit class StyleSearchMatchMutableBuilder[Self <: StyleSearchMatch] (val x: Self) extends AnyVal {
+    extension [Self <: StyleSearchMatch](x: Self) {
       
-      @scala.inline
-      def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+      inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsideComment(value: Boolean): Self = StObject.set(x, "insideComment", value.asInstanceOf[js.Any])
+      inline def setInsideComment(value: Boolean): Self = StObject.set(x, "insideComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsideFunctionArguments(value: Boolean): Self = StObject.set(x, "insideFunctionArguments", value.asInstanceOf[js.Any])
+      inline def setInsideFunctionArguments(value: Boolean): Self = StObject.set(x, "insideFunctionArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsideString(value: Boolean): Self = StObject.set(x, "insideString", value.asInstanceOf[js.Any])
+      inline def setInsideString(value: Boolean): Self = StObject.set(x, "insideString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,13 +176,10 @@ object mod {
   trait SyntaxFeatureOption extends StObject
   object SyntaxFeatureOption {
     
-    @scala.inline
-    def check: typings.styleSearch.styleSearchStrings.check = "check".asInstanceOf[typings.styleSearch.styleSearchStrings.check]
+    inline def check: typings.styleSearch.styleSearchStrings.check = "check".asInstanceOf[typings.styleSearch.styleSearchStrings.check]
     
-    @scala.inline
-    def only: typings.styleSearch.styleSearchStrings.only = "only".asInstanceOf[typings.styleSearch.styleSearchStrings.only]
+    inline def only: typings.styleSearch.styleSearchStrings.only = "only".asInstanceOf[typings.styleSearch.styleSearchStrings.only]
     
-    @scala.inline
-    def skip: typings.styleSearch.styleSearchStrings.skip = "skip".asInstanceOf[typings.styleSearch.styleSearchStrings.skip]
+    inline def skip: typings.styleSearch.styleSearchStrings.skip = "skip".asInstanceOf[typings.styleSearch.styleSearchStrings.skip]
   }
 }

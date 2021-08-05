@@ -13,6 +13,5 @@ class SigAndRefsTimeStamp ()
   extends typings.xadesjs.xmlMod.SigAndRefsTimeStamp
 object SigAndRefsTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SigAndRefsTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigAndRefsTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigAndRefsTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SigAndRefsTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigAndRefsTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigAndRefsTimeStamp]]
 }

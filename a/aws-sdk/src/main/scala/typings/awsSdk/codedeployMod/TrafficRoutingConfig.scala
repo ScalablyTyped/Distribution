@@ -23,31 +23,23 @@ trait TrafficRoutingConfig extends StObject {
 }
 object TrafficRoutingConfig {
   
-  @scala.inline
-  def apply(): TrafficRoutingConfig = {
+  inline def apply(): TrafficRoutingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficRoutingConfig]
   }
   
-  @scala.inline
-  implicit class TrafficRoutingConfigMutableBuilder[Self <: TrafficRoutingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficRoutingConfig](x: Self) {
     
-    @scala.inline
-    def setTimeBasedCanary(value: TimeBasedCanary): Self = StObject.set(x, "timeBasedCanary", value.asInstanceOf[js.Any])
+    inline def setTimeBasedCanary(value: TimeBasedCanary): Self = StObject.set(x, "timeBasedCanary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeBasedCanaryUndefined: Self = StObject.set(x, "timeBasedCanary", js.undefined)
+    inline def setTimeBasedCanaryUndefined: Self = StObject.set(x, "timeBasedCanary", js.undefined)
     
-    @scala.inline
-    def setTimeBasedLinear(value: TimeBasedLinear): Self = StObject.set(x, "timeBasedLinear", value.asInstanceOf[js.Any])
+    inline def setTimeBasedLinear(value: TimeBasedLinear): Self = StObject.set(x, "timeBasedLinear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeBasedLinearUndefined: Self = StObject.set(x, "timeBasedLinear", js.undefined)
+    inline def setTimeBasedLinearUndefined: Self = StObject.set(x, "timeBasedLinear", js.undefined)
     
-    @scala.inline
-    def setType(value: TrafficRoutingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TrafficRoutingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

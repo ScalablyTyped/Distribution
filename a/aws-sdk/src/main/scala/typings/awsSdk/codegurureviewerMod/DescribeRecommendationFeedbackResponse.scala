@@ -13,19 +13,15 @@ trait DescribeRecommendationFeedbackResponse extends StObject {
 }
 object DescribeRecommendationFeedbackResponse {
   
-  @scala.inline
-  def apply(): DescribeRecommendationFeedbackResponse = {
+  inline def apply(): DescribeRecommendationFeedbackResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRecommendationFeedbackResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRecommendationFeedbackResponseMutableBuilder[Self <: DescribeRecommendationFeedbackResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRecommendationFeedbackResponse](x: Self) {
     
-    @scala.inline
-    def setRecommendationFeedback(value: RecommendationFeedback): Self = StObject.set(x, "RecommendationFeedback", value.asInstanceOf[js.Any])
+    inline def setRecommendationFeedback(value: RecommendationFeedback): Self = StObject.set(x, "RecommendationFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationFeedbackUndefined: Self = StObject.set(x, "RecommendationFeedback", js.undefined)
+    inline def setRecommendationFeedbackUndefined: Self = StObject.set(x, "RecommendationFeedback", js.undefined)
   }
 }

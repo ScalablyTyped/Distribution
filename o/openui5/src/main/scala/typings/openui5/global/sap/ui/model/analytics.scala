@@ -65,8 +65,7 @@ object analytics {
   /**
     * If called on an instance of an (v1/v2) ODataModel it will enrich it with analytics capabilities.
     */
-  @scala.inline
-  def ODataModelAdapter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ODataModelAdapter")().asInstanceOf[Unit]
+  inline def ODataModelAdapter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ODataModelAdapter")().asInstanceOf[Unit]
   
   object odata4analytics {
     
@@ -1624,7 +1623,6 @@ object analytics {
       * @param bIncludeAttributes Indicator whether or not to include all dimension attributes           (if
       * available) in the value set.
       */
-    @scala.inline
-    def includeDimensionTextAttributes(bIncludeText: js.Any, bIncludeAttributes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("includeDimensionTextAttributes")(bIncludeText.asInstanceOf[js.Any], bIncludeAttributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def includeDimensionTextAttributes(bIncludeText: js.Any, bIncludeAttributes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("includeDimensionTextAttributes")(bIncludeText.asInstanceOf[js.Any], bIncludeAttributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

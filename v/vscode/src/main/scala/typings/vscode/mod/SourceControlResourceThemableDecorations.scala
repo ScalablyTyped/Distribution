@@ -14,19 +14,15 @@ trait SourceControlResourceThemableDecorations extends StObject {
 }
 object SourceControlResourceThemableDecorations {
   
-  @scala.inline
-  def apply(): SourceControlResourceThemableDecorations = {
+  inline def apply(): SourceControlResourceThemableDecorations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceControlResourceThemableDecorations]
   }
   
-  @scala.inline
-  implicit class SourceControlResourceThemableDecorationsMutableBuilder[Self <: SourceControlResourceThemableDecorations] (val x: Self) extends AnyVal {
+  extension [Self <: SourceControlResourceThemableDecorations](x: Self) {
     
-    @scala.inline
-    def setIconPath(value: String | Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: String | Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
+    inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
   }
 }

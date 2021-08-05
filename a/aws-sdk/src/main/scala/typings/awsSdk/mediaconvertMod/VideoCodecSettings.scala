@@ -63,79 +63,55 @@ trait VideoCodecSettings extends StObject {
 }
 object VideoCodecSettings {
   
-  @scala.inline
-  def apply(): VideoCodecSettings = {
+  inline def apply(): VideoCodecSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoCodecSettings]
   }
   
-  @scala.inline
-  implicit class VideoCodecSettingsMutableBuilder[Self <: VideoCodecSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoCodecSettings](x: Self) {
     
-    @scala.inline
-    def setAv1Settings(value: Av1Settings): Self = StObject.set(x, "Av1Settings", value.asInstanceOf[js.Any])
+    inline def setAv1Settings(value: Av1Settings): Self = StObject.set(x, "Av1Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAv1SettingsUndefined: Self = StObject.set(x, "Av1Settings", js.undefined)
+    inline def setAv1SettingsUndefined: Self = StObject.set(x, "Av1Settings", js.undefined)
     
-    @scala.inline
-    def setAvcIntraSettings(value: AvcIntraSettings): Self = StObject.set(x, "AvcIntraSettings", value.asInstanceOf[js.Any])
+    inline def setAvcIntraSettings(value: AvcIntraSettings): Self = StObject.set(x, "AvcIntraSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvcIntraSettingsUndefined: Self = StObject.set(x, "AvcIntraSettings", js.undefined)
+    inline def setAvcIntraSettingsUndefined: Self = StObject.set(x, "AvcIntraSettings", js.undefined)
     
-    @scala.inline
-    def setCodec(value: VideoCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: VideoCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
-    @scala.inline
-    def setFrameCaptureSettings(value: FrameCaptureSettings): Self = StObject.set(x, "FrameCaptureSettings", value.asInstanceOf[js.Any])
+    inline def setFrameCaptureSettings(value: FrameCaptureSettings): Self = StObject.set(x, "FrameCaptureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCaptureSettingsUndefined: Self = StObject.set(x, "FrameCaptureSettings", js.undefined)
+    inline def setFrameCaptureSettingsUndefined: Self = StObject.set(x, "FrameCaptureSettings", js.undefined)
     
-    @scala.inline
-    def setH264Settings(value: H264Settings): Self = StObject.set(x, "H264Settings", value.asInstanceOf[js.Any])
+    inline def setH264Settings(value: H264Settings): Self = StObject.set(x, "H264Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH264SettingsUndefined: Self = StObject.set(x, "H264Settings", js.undefined)
+    inline def setH264SettingsUndefined: Self = StObject.set(x, "H264Settings", js.undefined)
     
-    @scala.inline
-    def setH265Settings(value: H265Settings): Self = StObject.set(x, "H265Settings", value.asInstanceOf[js.Any])
+    inline def setH265Settings(value: H265Settings): Self = StObject.set(x, "H265Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH265SettingsUndefined: Self = StObject.set(x, "H265Settings", js.undefined)
+    inline def setH265SettingsUndefined: Self = StObject.set(x, "H265Settings", js.undefined)
     
-    @scala.inline
-    def setMpeg2Settings(value: Mpeg2Settings): Self = StObject.set(x, "Mpeg2Settings", value.asInstanceOf[js.Any])
+    inline def setMpeg2Settings(value: Mpeg2Settings): Self = StObject.set(x, "Mpeg2Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpeg2SettingsUndefined: Self = StObject.set(x, "Mpeg2Settings", js.undefined)
+    inline def setMpeg2SettingsUndefined: Self = StObject.set(x, "Mpeg2Settings", js.undefined)
     
-    @scala.inline
-    def setProresSettings(value: ProresSettings): Self = StObject.set(x, "ProresSettings", value.asInstanceOf[js.Any])
+    inline def setProresSettings(value: ProresSettings): Self = StObject.set(x, "ProresSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProresSettingsUndefined: Self = StObject.set(x, "ProresSettings", js.undefined)
+    inline def setProresSettingsUndefined: Self = StObject.set(x, "ProresSettings", js.undefined)
     
-    @scala.inline
-    def setVc3Settings(value: Vc3Settings): Self = StObject.set(x, "Vc3Settings", value.asInstanceOf[js.Any])
+    inline def setVc3Settings(value: Vc3Settings): Self = StObject.set(x, "Vc3Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVc3SettingsUndefined: Self = StObject.set(x, "Vc3Settings", js.undefined)
+    inline def setVc3SettingsUndefined: Self = StObject.set(x, "Vc3Settings", js.undefined)
     
-    @scala.inline
-    def setVp8Settings(value: Vp8Settings): Self = StObject.set(x, "Vp8Settings", value.asInstanceOf[js.Any])
+    inline def setVp8Settings(value: Vp8Settings): Self = StObject.set(x, "Vp8Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVp8SettingsUndefined: Self = StObject.set(x, "Vp8Settings", js.undefined)
+    inline def setVp8SettingsUndefined: Self = StObject.set(x, "Vp8Settings", js.undefined)
     
-    @scala.inline
-    def setVp9Settings(value: Vp9Settings): Self = StObject.set(x, "Vp9Settings", value.asInstanceOf[js.Any])
+    inline def setVp9Settings(value: Vp9Settings): Self = StObject.set(x, "Vp9Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVp9SettingsUndefined: Self = StObject.set(x, "Vp9Settings", js.undefined)
+    inline def setVp9SettingsUndefined: Self = StObject.set(x, "Vp9Settings", js.undefined)
   }
 }

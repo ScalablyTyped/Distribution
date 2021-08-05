@@ -55,8 +55,7 @@ trait DeviceConf extends StObject {
 }
 object DeviceConf {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audio: Audio,
     browser: Browser,
     canvasFeatures: CanvasFeatures,
@@ -70,31 +69,22 @@ object DeviceConf {
     __obj.asInstanceOf[DeviceConf]
   }
   
-  @scala.inline
-  implicit class DeviceConfMutableBuilder[Self <: DeviceConf] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConf](x: Self) {
     
-    @scala.inline
-    def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasFeatures(value: CanvasFeatures): Self = StObject.set(x, "canvasFeatures", value.asInstanceOf[js.Any])
+    inline def setCanvasFeatures(value: CanvasFeatures): Self = StObject.set(x, "canvasFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreen(value: Fullscreen): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: Fullscreen): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: typings.phaser.Phaser.Device.Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: typings.phaser.Phaser.Device.Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: OS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: OS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

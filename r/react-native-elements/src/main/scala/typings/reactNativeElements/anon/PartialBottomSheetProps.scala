@@ -14,25 +14,19 @@ trait PartialBottomSheetProps extends StObject {
 }
 object PartialBottomSheetProps {
   
-  @scala.inline
-  def apply(): PartialBottomSheetProps = {
+  inline def apply(): PartialBottomSheetProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialBottomSheetProps]
   }
   
-  @scala.inline
-  implicit class PartialBottomSheetPropsMutableBuilder[Self <: PartialBottomSheetProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialBottomSheetProps](x: Self) {
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+    inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
-    @scala.inline
-    def setModalProps(value: ModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
+    inline def setModalProps(value: ModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
+    inline def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
   }
 }

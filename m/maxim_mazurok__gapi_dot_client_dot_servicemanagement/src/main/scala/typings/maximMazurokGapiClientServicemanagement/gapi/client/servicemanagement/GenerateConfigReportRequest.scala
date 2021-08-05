@@ -29,33 +29,27 @@ trait GenerateConfigReportRequest extends StObject {
 }
 object GenerateConfigReportRequest {
   
-  @scala.inline
-  def apply(): GenerateConfigReportRequest = {
+  inline def apply(): GenerateConfigReportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateConfigReportRequest]
   }
   
-  @scala.inline
-  implicit class GenerateConfigReportRequestMutableBuilder[Self <: GenerateConfigReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateConfigReportRequest](x: Self) {
     
-    @scala.inline
-    def setNewConfig(
+    inline def setNewConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "newConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewConfigUndefined: Self = StObject.set(x, "newConfig", js.undefined)
+    inline def setNewConfigUndefined: Self = StObject.set(x, "newConfig", js.undefined)
     
-    @scala.inline
-    def setOldConfig(
+    inline def setOldConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "oldConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldConfigUndefined: Self = StObject.set(x, "oldConfig", js.undefined)
+    inline def setOldConfigUndefined: Self = StObject.set(x, "oldConfig", js.undefined)
   }
 }

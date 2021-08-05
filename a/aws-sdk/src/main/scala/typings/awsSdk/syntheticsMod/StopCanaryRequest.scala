@@ -13,16 +13,13 @@ trait StopCanaryRequest extends StObject {
 }
 object StopCanaryRequest {
   
-  @scala.inline
-  def apply(Name: CanaryName): StopCanaryRequest = {
+  inline def apply(Name: CanaryName): StopCanaryRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopCanaryRequest]
   }
   
-  @scala.inline
-  implicit class StopCanaryRequestMutableBuilder[Self <: StopCanaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopCanaryRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

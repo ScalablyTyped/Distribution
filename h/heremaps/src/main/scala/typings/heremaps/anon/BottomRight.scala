@@ -12,19 +12,15 @@ trait BottomRight extends StObject {
 }
 object BottomRight {
   
-  @scala.inline
-  def apply(BottomRight: Longitude, TopLeft: Longitude): BottomRight = {
+  inline def apply(BottomRight: Longitude, TopLeft: Longitude): BottomRight = {
     val __obj = js.Dynamic.literal(BottomRight = BottomRight.asInstanceOf[js.Any], TopLeft = TopLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomRight]
   }
   
-  @scala.inline
-  implicit class BottomRightMutableBuilder[Self <: BottomRight] (val x: Self) extends AnyVal {
+  extension [Self <: BottomRight](x: Self) {
     
-    @scala.inline
-    def setBottomRight(value: Longitude): Self = StObject.set(x, "BottomRight", value.asInstanceOf[js.Any])
+    inline def setBottomRight(value: Longitude): Self = StObject.set(x, "BottomRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLeft(value: Longitude): Self = StObject.set(x, "TopLeft", value.asInstanceOf[js.Any])
+    inline def setTopLeft(value: Longitude): Self = StObject.set(x, "TopLeft", value.asInstanceOf[js.Any])
   }
 }

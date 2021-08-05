@@ -16,28 +16,21 @@ trait GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard extends StObject {
 }
 object GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard = {
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard](x: Self) {
     
-    @scala.inline
-    def setImageDisplayOptions(value: String): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
+    inline def setImageDisplayOptions(value: String): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDisplayOptionsUndefined: Self = StObject.set(x, "imageDisplayOptions", js.undefined)
+    inline def setImageDisplayOptionsUndefined: Self = StObject.set(x, "imageDisplayOptions", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

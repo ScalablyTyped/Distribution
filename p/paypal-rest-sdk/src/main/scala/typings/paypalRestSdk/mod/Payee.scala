@@ -15,25 +15,19 @@ trait Payee extends StObject {
 }
 object Payee {
   
-  @scala.inline
-  def apply(email: String, merchant_id: String): Payee = {
+  inline def apply(email: String, merchant_id: String): Payee = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], merchant_id = merchant_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payee]
   }
   
-  @scala.inline
-  implicit class PayeeMutableBuilder[Self <: Payee] (val x: Self) extends AnyVal {
+  extension [Self <: Payee](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchant_id(value: String): Self = StObject.set(x, "merchant_id", value.asInstanceOf[js.Any])
+    inline def setMerchant_id(value: String): Self = StObject.set(x, "merchant_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayee_display_metadata(value: Brandname): Self = StObject.set(x, "payee_display_metadata", value.asInstanceOf[js.Any])
+    inline def setPayee_display_metadata(value: Brandname): Self = StObject.set(x, "payee_display_metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayee_display_metadataUndefined: Self = StObject.set(x, "payee_display_metadata", js.undefined)
+    inline def setPayee_display_metadataUndefined: Self = StObject.set(x, "payee_display_metadata", js.undefined)
   }
 }

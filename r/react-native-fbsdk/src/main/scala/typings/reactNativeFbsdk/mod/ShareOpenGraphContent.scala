@@ -36,34 +36,25 @@ trait ShareOpenGraphContent
 }
 object ShareOpenGraphContent {
   
-  @scala.inline
-  def apply(action: ShareOpenGraphAction, previewPropertyName: String): ShareOpenGraphContent = {
+  inline def apply(action: ShareOpenGraphAction, previewPropertyName: String): ShareOpenGraphContent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], contentType = "open-graph", previewPropertyName = previewPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOpenGraphContent]
   }
   
-  @scala.inline
-  implicit class ShareOpenGraphContentMutableBuilder[Self <: ShareOpenGraphContent] (val x: Self) extends AnyVal {
+  extension [Self <: ShareOpenGraphContent](x: Self) {
     
-    @scala.inline
-    def setAction(value: ShareOpenGraphAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ShareOpenGraphAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
+    inline def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
+    inline def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
     
-    @scala.inline
-    def setContentType(value: `open-graph`): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: `open-graph`): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
-    @scala.inline
-    def setPreviewPropertyName(value: String): Self = StObject.set(x, "previewPropertyName", value.asInstanceOf[js.Any])
+    inline def setPreviewPropertyName(value: String): Self = StObject.set(x, "previewPropertyName", value.asInstanceOf[js.Any])
   }
 }

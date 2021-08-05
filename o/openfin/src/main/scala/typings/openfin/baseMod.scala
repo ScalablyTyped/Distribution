@@ -17,7 +17,7 @@ object baseMod {
   class Base protected () extends StObject {
     def this(wire: default) = this()
     
-    var _topic: js.Any = js.native
+    /* private */ var _topic: js.Any = js.native
     
     /* protected */ def isNodeEnvironment(): Boolean = js.native
     
@@ -88,7 +88,7 @@ object baseMod {
       options: SubOptions
     ): js.Promise[this.type] = js.native
     
-    var deleteEmitterIfNothingRegistered: js.Any = js.native
+    /* private */ var deleteEmitterIfNothingRegistered: js.Any = js.native
     
     /* protected */ def deregisterAllListeners(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[EventEmitter | Unit] = js.native
     /* protected */ def deregisterAllListeners(eventType: js.Symbol): js.Promise[EventEmitter | Unit] = js.native
@@ -114,15 +114,15 @@ object baseMod {
       args: js.Any*
     ): Boolean = js.native
     
-    var emitterAccessor: js.Any = js.native
+    /* private */ var emitterAccessor: js.Any = js.native
     
     def eventNames(): js.Array[String | js.Symbol] = js.native
     
-    var getEmitter: js.Any = js.native
+    /* private */ var getEmitter: js.Any = js.native
     
-    var hasEmitter: js.Any = js.native
+    /* private */ var hasEmitter: js.Any = js.native
     
-    var identity: Identity = js.native
+    /* protected */ var identity: Identity = js.native
     
     def listenerCount(`type`: String): Double = js.native
     def listenerCount(`type`: js.Symbol): Double = js.native
@@ -420,20 +420,16 @@ object baseMod {
   }
   object SubOptions {
     
-    @scala.inline
-    def apply(): SubOptions = {
+    inline def apply(): SubOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubOptions]
     }
     
-    @scala.inline
-    implicit class SubOptionsMutableBuilder[Self <: SubOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubOptions](x: Self) {
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
 }

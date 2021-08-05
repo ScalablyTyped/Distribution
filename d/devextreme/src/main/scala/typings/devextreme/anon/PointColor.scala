@@ -14,31 +14,23 @@ trait PointColor extends StObject {
 }
 object PointColor {
   
-  @scala.inline
-  def apply(): PointColor = {
+  inline def apply(): PointColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointColor]
   }
   
-  @scala.inline
-  implicit class PointColorMutableBuilder[Self <: PointColor] (val x: Self) extends AnyVal {
+  extension [Self <: PointColor](x: Self) {
     
-    @scala.inline
-    def setPointColor(value: String): Self = StObject.set(x, "pointColor", value.asInstanceOf[js.Any])
+    inline def setPointColor(value: String): Self = StObject.set(x, "pointColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointColorUndefined: Self = StObject.set(x, "pointColor", js.undefined)
+    inline def setPointColorUndefined: Self = StObject.set(x, "pointColor", js.undefined)
     
-    @scala.inline
-    def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
+    inline def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
+    inline def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
     
-    @scala.inline
-    def setPointName(value: js.Any): Self = StObject.set(x, "pointName", value.asInstanceOf[js.Any])
+    inline def setPointName(value: js.Any): Self = StObject.set(x, "pointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointNameUndefined: Self = StObject.set(x, "pointName", js.undefined)
+    inline def setPointNameUndefined: Self = StObject.set(x, "pointName", js.undefined)
   }
 }

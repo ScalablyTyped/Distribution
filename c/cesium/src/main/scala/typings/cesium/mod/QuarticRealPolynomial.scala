@@ -10,9 +10,7 @@ object QuarticRealPolynomial {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeDiscriminant(a: Double, b: Double, c: Double, d: Double, e: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDiscriminant")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def computeDiscriminant(a: Double, b: Double, c: Double, d: Double, e: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDiscriminant")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def computeRealRoots(a: Double, b: Double, c: Double, d: Double, e: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeRealRoots")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def computeRealRoots(a: Double, b: Double, c: Double, d: Double, e: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeRealRoots")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

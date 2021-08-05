@@ -45,8 +45,7 @@ trait BuildDefinitionRevision extends StObject {
 }
 object BuildDefinitionRevision {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeType: AuditAction,
     changedBy: IdentityRef,
     changedDate: Date,
@@ -59,28 +58,20 @@ object BuildDefinitionRevision {
     __obj.asInstanceOf[BuildDefinitionRevision]
   }
   
-  @scala.inline
-  implicit class BuildDefinitionRevisionMutableBuilder[Self <: BuildDefinitionRevision] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDefinitionRevision](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
+    inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUrl(value: String): Self = StObject.set(x, "definitionUrl", value.asInstanceOf[js.Any])
+    inline def setDefinitionUrl(value: String): Self = StObject.set(x, "definitionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

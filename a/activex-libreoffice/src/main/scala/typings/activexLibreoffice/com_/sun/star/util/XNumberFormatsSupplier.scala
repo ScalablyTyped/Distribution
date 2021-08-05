@@ -26,8 +26,7 @@ trait XNumberFormatsSupplier
 }
 object XNumberFormatsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NumberFormatSettings: XPropertySet,
     NumberFormats: XNumberFormats,
     acquire: () => Unit,
@@ -40,19 +39,14 @@ object XNumberFormatsSupplier {
     __obj.asInstanceOf[XNumberFormatsSupplier]
   }
   
-  @scala.inline
-  implicit class XNumberFormatsSupplierMutableBuilder[Self <: XNumberFormatsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberFormatsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetNumberFormatSettings(value: () => XPropertySet): Self = StObject.set(x, "getNumberFormatSettings", js.Any.fromFunction0(value))
+    inline def setGetNumberFormatSettings(value: () => XPropertySet): Self = StObject.set(x, "getNumberFormatSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberFormats(value: () => XNumberFormats): Self = StObject.set(x, "getNumberFormats", js.Any.fromFunction0(value))
+    inline def setGetNumberFormats(value: () => XNumberFormats): Self = StObject.set(x, "getNumberFormats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberFormatSettings(value: XPropertySet): Self = StObject.set(x, "NumberFormatSettings", value.asInstanceOf[js.Any])
+    inline def setNumberFormatSettings(value: XPropertySet): Self = StObject.set(x, "NumberFormatSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormats(value: XNumberFormats): Self = StObject.set(x, "NumberFormats", value.asInstanceOf[js.Any])
+    inline def setNumberFormats(value: XNumberFormats): Self = StObject.set(x, "NumberFormats", value.asInstanceOf[js.Any])
   }
 }

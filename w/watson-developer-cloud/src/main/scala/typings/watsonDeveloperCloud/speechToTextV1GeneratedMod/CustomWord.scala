@@ -18,34 +18,25 @@ trait CustomWord extends StObject {
 }
 object CustomWord {
   
-  @scala.inline
-  def apply(): CustomWord = {
+  inline def apply(): CustomWord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomWord]
   }
   
-  @scala.inline
-  implicit class CustomWordMutableBuilder[Self <: CustomWord] (val x: Self) extends AnyVal {
+  extension [Self <: CustomWord](x: Self) {
     
-    @scala.inline
-    def setDisplay_as(value: String): Self = StObject.set(x, "display_as", value.asInstanceOf[js.Any])
+    inline def setDisplay_as(value: String): Self = StObject.set(x, "display_as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_asUndefined: Self = StObject.set(x, "display_as", js.undefined)
+    inline def setDisplay_asUndefined: Self = StObject.set(x, "display_as", js.undefined)
     
-    @scala.inline
-    def setSounds_like(value: js.Array[String]): Self = StObject.set(x, "sounds_like", value.asInstanceOf[js.Any])
+    inline def setSounds_like(value: js.Array[String]): Self = StObject.set(x, "sounds_like", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSounds_likeUndefined: Self = StObject.set(x, "sounds_like", js.undefined)
+    inline def setSounds_likeUndefined: Self = StObject.set(x, "sounds_like", js.undefined)
     
-    @scala.inline
-    def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
+    inline def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+    inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

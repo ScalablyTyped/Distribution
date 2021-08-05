@@ -18,43 +18,31 @@ trait UrlMapValidationResult extends StObject {
 }
 object UrlMapValidationResult {
   
-  @scala.inline
-  def apply(): UrlMapValidationResult = {
+  inline def apply(): UrlMapValidationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlMapValidationResult]
   }
   
-  @scala.inline
-  implicit class UrlMapValidationResultMutableBuilder[Self <: UrlMapValidationResult] (val x: Self) extends AnyVal {
+  extension [Self <: UrlMapValidationResult](x: Self) {
     
-    @scala.inline
-    def setLoadErrors(value: js.Array[String]): Self = StObject.set(x, "loadErrors", value.asInstanceOf[js.Any])
+    inline def setLoadErrors(value: js.Array[String]): Self = StObject.set(x, "loadErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadErrorsUndefined: Self = StObject.set(x, "loadErrors", js.undefined)
+    inline def setLoadErrorsUndefined: Self = StObject.set(x, "loadErrors", js.undefined)
     
-    @scala.inline
-    def setLoadErrorsVarargs(value: String*): Self = StObject.set(x, "loadErrors", js.Array(value :_*))
+    inline def setLoadErrorsVarargs(value: String*): Self = StObject.set(x, "loadErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadSucceeded(value: Boolean): Self = StObject.set(x, "loadSucceeded", value.asInstanceOf[js.Any])
+    inline def setLoadSucceeded(value: Boolean): Self = StObject.set(x, "loadSucceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadSucceededUndefined: Self = StObject.set(x, "loadSucceeded", js.undefined)
+    inline def setLoadSucceededUndefined: Self = StObject.set(x, "loadSucceeded", js.undefined)
     
-    @scala.inline
-    def setTestFailures(value: js.Array[TestFailure]): Self = StObject.set(x, "testFailures", value.asInstanceOf[js.Any])
+    inline def setTestFailures(value: js.Array[TestFailure]): Self = StObject.set(x, "testFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestFailuresUndefined: Self = StObject.set(x, "testFailures", js.undefined)
+    inline def setTestFailuresUndefined: Self = StObject.set(x, "testFailures", js.undefined)
     
-    @scala.inline
-    def setTestFailuresVarargs(value: TestFailure*): Self = StObject.set(x, "testFailures", js.Array(value :_*))
+    inline def setTestFailuresVarargs(value: TestFailure*): Self = StObject.set(x, "testFailures", js.Array(value :_*))
     
-    @scala.inline
-    def setTestPassed(value: Boolean): Self = StObject.set(x, "testPassed", value.asInstanceOf[js.Any])
+    inline def setTestPassed(value: Boolean): Self = StObject.set(x, "testPassed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPassedUndefined: Self = StObject.set(x, "testPassed", js.undefined)
+    inline def setTestPassedUndefined: Self = StObject.set(x, "testPassed", js.undefined)
   }
 }

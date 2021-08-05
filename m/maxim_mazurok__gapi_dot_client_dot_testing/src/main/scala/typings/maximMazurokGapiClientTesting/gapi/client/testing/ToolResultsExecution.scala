@@ -17,31 +17,23 @@ trait ToolResultsExecution extends StObject {
 }
 object ToolResultsExecution {
   
-  @scala.inline
-  def apply(): ToolResultsExecution = {
+  inline def apply(): ToolResultsExecution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolResultsExecution]
   }
   
-  @scala.inline
-  implicit class ToolResultsExecutionMutableBuilder[Self <: ToolResultsExecution] (val x: Self) extends AnyVal {
+  extension [Self <: ToolResultsExecution](x: Self) {
     
-    @scala.inline
-    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
-    @scala.inline
-    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+    inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+    inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

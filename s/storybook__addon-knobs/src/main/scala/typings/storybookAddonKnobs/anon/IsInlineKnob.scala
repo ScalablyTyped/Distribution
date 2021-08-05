@@ -18,8 +18,7 @@ trait IsInlineKnob extends StObject {
 }
 object IsInlineKnob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isInline: Validator[Boolean],
     knob: Validator[RadiosTypeKnob],
     onChange: Validator[
@@ -30,17 +29,13 @@ object IsInlineKnob {
     __obj.asInstanceOf[IsInlineKnob]
   }
   
-  @scala.inline
-  implicit class IsInlineKnobMutableBuilder[Self <: IsInlineKnob] (val x: Self) extends AnyVal {
+  extension [Self <: IsInlineKnob](x: Self) {
     
-    @scala.inline
-    def setIsInline(value: Validator[Boolean]): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+    inline def setIsInline(value: Validator[Boolean]): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnob(value: Validator[RadiosTypeKnob]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[RadiosTypeKnob]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(
+    inline def setOnChange(
       value: Validator[
           js.Function1[/* value */ js.UndefOr[String | Double | Null], js.UndefOr[String | Double | Null]]
         ]

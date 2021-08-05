@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlMSApplication extends StObject
 object XlMSApplication {
   
-  @scala.inline
-  def xlMicrosoftAccess: `4` = 4.asInstanceOf[`4`]
+  inline def xlMicrosoftAccess: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlMicrosoftFoxPro: `5` = 5.asInstanceOf[`5`]
+  inline def xlMicrosoftFoxPro: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlMicrosoftMail: `3` = 3.asInstanceOf[`3`]
+  inline def xlMicrosoftMail: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlMicrosoftPowerPoint: `2` = 2.asInstanceOf[`2`]
+  inline def xlMicrosoftPowerPoint: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlMicrosoftProject: `6` = 6.asInstanceOf[`6`]
+  inline def xlMicrosoftProject: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlMicrosoftSchedulePlus: `7` = 7.asInstanceOf[`7`]
+  inline def xlMicrosoftSchedulePlus: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlMicrosoftWord: `1` = 1.asInstanceOf[`1`]
+  inline def xlMicrosoftWord: `1` = 1.asInstanceOf[`1`]
 }

@@ -18,19 +18,15 @@ trait GetBucketRequest extends StObject {
 }
 object GetBucketRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Bucket: BucketName): GetBucketRequest = {
+  inline def apply(AccountId: AccountId, Bucket: BucketName): GetBucketRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketRequest]
   }
   
-  @scala.inline
-  implicit class GetBucketRequestMutableBuilder[Self <: GetBucketRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
   }
 }

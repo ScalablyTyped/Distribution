@@ -86,8 +86,7 @@ object SpatialLayer {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultStyle: (Zoom, StyleState) => js.Any,
       featureToSpatialId: Feature => String,
       rowToSpatialId: Row => String,
@@ -98,29 +97,21 @@ object SpatialLayer {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDataToRows(value: (/* data */ Data, /* x */ X, /* y */ Y, /* z */ Zoom) => js.Array[Row]): Self = StObject.set(x, "dataToRows", js.Any.fromFunction4(value))
+      inline def setDataToRows(value: (/* data */ Data, /* x */ X, /* y */ Y, /* z */ Zoom) => js.Array[Row]): Self = StObject.set(x, "dataToRows", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
+      inline def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
       
-      @scala.inline
-      def setDefaultStyle(value: (Zoom, StyleState) => js.Any): Self = StObject.set(x, "defaultStyle", js.Any.fromFunction2(value))
+      inline def setDefaultStyle(value: (Zoom, StyleState) => js.Any): Self = StObject.set(x, "defaultStyle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFeatureToSpatialId(value: Feature => String): Self = StObject.set(x, "featureToSpatialId", js.Any.fromFunction1(value))
+      inline def setFeatureToSpatialId(value: Feature => String): Self = StObject.set(x, "featureToSpatialId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRowToSpatialId(value: Row => String): Self = StObject.set(x, "rowToSpatialId", js.Any.fromFunction1(value))
+      inline def setRowToSpatialId(value: Row => String): Self = StObject.set(x, "rowToSpatialId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRowToStyle(value: (Row, Zoom, StyleState) => js.Any): Self = StObject.set(x, "rowToStyle", js.Any.fromFunction3(value))
+      inline def setRowToStyle(value: (Row, Zoom, StyleState) => js.Any): Self = StObject.set(x, "rowToStyle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformFeature(value: transformFeature): Self = StObject.set(x, "transformFeature", value.asInstanceOf[js.Any])
+      inline def setTransformFeature(value: transformFeature): Self = StObject.set(x, "transformFeature", value.asInstanceOf[js.Any])
     }
   }
   

@@ -25,43 +25,31 @@ trait ThrowsExpectation extends StObject {
 }
 object ThrowsExpectation {
   
-  @scala.inline
-  def apply(): ThrowsExpectation = {
+  inline def apply(): ThrowsExpectation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThrowsExpectation]
   }
   
-  @scala.inline
-  implicit class ThrowsExpectationMutableBuilder[Self <: ThrowsExpectation] (val x: Self) extends AnyVal {
+  extension [Self <: ThrowsExpectation](x: Self) {
     
-    @scala.inline
-    def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setInstanceOf(value: Constructor): Self = StObject.set(x, "instanceOf", value.asInstanceOf[js.Any])
+    inline def setInstanceOf(value: Constructor): Self = StObject.set(x, "instanceOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceOfUndefined: Self = StObject.set(x, "instanceOf", js.undefined)
+    inline def setInstanceOfUndefined: Self = StObject.set(x, "instanceOf", js.undefined)
     
-    @scala.inline
-    def setIs(value: Error): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: Error): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+    inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String | RegExp): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | RegExp): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

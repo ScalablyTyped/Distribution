@@ -35,8 +35,7 @@ object gapi {
     }
     object AuthResponse {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         access_token: String,
         expires_at: Double,
         expires_in: Double,
@@ -49,29 +48,21 @@ object gapi {
         __obj.asInstanceOf[AuthResponse]
       }
       
-      @scala.inline
-      implicit class AuthResponseMutableBuilder[Self <: AuthResponse] (val x: Self) extends AnyVal {
+      extension [Self <: AuthResponse](x: Self) {
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+        inline def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+        inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirst_issued_at(value: Double): Self = StObject.set(x, "first_issued_at", value.asInstanceOf[js.Any])
+        inline def setFirst_issued_at(value: Double): Self = StObject.set(x, "first_issued_at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
+        inline def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogin_hint(value: String): Self = StObject.set(x, "login_hint", value.asInstanceOf[js.Any])
+        inline def setLogin_hint(value: String): Self = StObject.set(x, "login_hint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       }
     }
     
@@ -102,68 +93,48 @@ object gapi {
     }
     object AuthorizeConfig {
       
-      @scala.inline
-      def apply(client_id: String, scope: String): AuthorizeConfig = {
+      inline def apply(client_id: String, scope: String): AuthorizeConfig = {
         val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
         __obj.asInstanceOf[AuthorizeConfig]
       }
       
-      @scala.inline
-      implicit class AuthorizeConfigMutableBuilder[Self <: AuthorizeConfig] (val x: Self) extends AnyVal {
+      extension [Self <: AuthorizeConfig](x: Self) {
         
-        @scala.inline
-        def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
+        inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
+        inline def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
         
-        @scala.inline
-        def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+        inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCookie_policy(value: String): Self = StObject.set(x, "cookie_policy", value.asInstanceOf[js.Any])
+        inline def setCookie_policy(value: String): Self = StObject.set(x, "cookie_policy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCookie_policyUndefined: Self = StObject.set(x, "cookie_policy", js.undefined)
+        inline def setCookie_policyUndefined: Self = StObject.set(x, "cookie_policy", js.undefined)
         
-        @scala.inline
-        def setHosted_domain(value: String): Self = StObject.set(x, "hosted_domain", value.asInstanceOf[js.Any])
+        inline def setHosted_domain(value: String): Self = StObject.set(x, "hosted_domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHosted_domainUndefined: Self = StObject.set(x, "hosted_domain", js.undefined)
+        inline def setHosted_domainUndefined: Self = StObject.set(x, "hosted_domain", js.undefined)
         
-        @scala.inline
-        def setInclude_granted_scopes(value: Boolean): Self = StObject.set(x, "include_granted_scopes", value.asInstanceOf[js.Any])
+        inline def setInclude_granted_scopes(value: Boolean): Self = StObject.set(x, "include_granted_scopes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInclude_granted_scopesUndefined: Self = StObject.set(x, "include_granted_scopes", js.undefined)
+        inline def setInclude_granted_scopesUndefined: Self = StObject.set(x, "include_granted_scopes", js.undefined)
         
-        @scala.inline
-        def setLogin_hint(value: String): Self = StObject.set(x, "login_hint", value.asInstanceOf[js.Any])
+        inline def setLogin_hint(value: String): Self = StObject.set(x, "login_hint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogin_hintUndefined: Self = StObject.set(x, "login_hint", js.undefined)
+        inline def setLogin_hintUndefined: Self = StObject.set(x, "login_hint", js.undefined)
         
-        @scala.inline
-        def setOpenid_realm(value: String): Self = StObject.set(x, "openid_realm", value.asInstanceOf[js.Any])
+        inline def setOpenid_realm(value: String): Self = StObject.set(x, "openid_realm", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpenid_realmUndefined: Self = StObject.set(x, "openid_realm", js.undefined)
+        inline def setOpenid_realmUndefined: Self = StObject.set(x, "openid_realm", js.undefined)
         
-        @scala.inline
-        def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+        inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+        inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
         
-        @scala.inline
-        def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+        inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+        inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       }
     }
     
@@ -192,8 +163,7 @@ object gapi {
     }
     object AuthorizeResponse {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         access_token: String,
         code: String,
         error: String,
@@ -208,35 +178,25 @@ object gapi {
         __obj.asInstanceOf[AuthorizeResponse]
       }
       
-      @scala.inline
-      implicit class AuthorizeResponseMutableBuilder[Self <: AuthorizeResponse] (val x: Self) extends AnyVal {
+      extension [Self <: AuthorizeResponse](x: Self) {
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError_subtype(value: String): Self = StObject.set(x, "error_subtype", value.asInstanceOf[js.Any])
+        inline def setError_subtype(value: String): Self = StObject.set(x, "error_subtype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+        inline def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+        inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirst_issued_at(value: Double): Self = StObject.set(x, "first_issued_at", value.asInstanceOf[js.Any])
+        inline def setFirst_issued_at(value: Double): Self = StObject.set(x, "first_issued_at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
+        inline def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       }
     }
     
@@ -256,8 +216,7 @@ object gapi {
     }
     object BasicProfile {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getEmail: () => String,
         getFamilyName: () => String,
         getGivenName: () => String,
@@ -269,26 +228,19 @@ object gapi {
         __obj.asInstanceOf[BasicProfile]
       }
       
-      @scala.inline
-      implicit class BasicProfileMutableBuilder[Self <: BasicProfile] (val x: Self) extends AnyVal {
+      extension [Self <: BasicProfile](x: Self) {
         
-        @scala.inline
-        def setGetEmail(value: () => String): Self = StObject.set(x, "getEmail", js.Any.fromFunction0(value))
+        inline def setGetEmail(value: () => String): Self = StObject.set(x, "getEmail", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetFamilyName(value: () => String): Self = StObject.set(x, "getFamilyName", js.Any.fromFunction0(value))
+        inline def setGetFamilyName(value: () => String): Self = StObject.set(x, "getFamilyName", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetGivenName(value: () => String): Self = StObject.set(x, "getGivenName", js.Any.fromFunction0(value))
+        inline def setGetGivenName(value: () => String): Self = StObject.set(x, "getGivenName", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+        inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetImageUrl(value: () => String): Self = StObject.set(x, "getImageUrl", js.Any.fromFunction0(value))
+        inline def setGetImageUrl(value: () => String): Self = StObject.set(x, "getImageUrl", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+        inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       }
     }
     
@@ -346,62 +298,44 @@ object gapi {
     }
     object ClientConfig {
       
-      @scala.inline
-      def apply(): ClientConfig = {
+      inline def apply(): ClientConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ClientConfig]
       }
       
-      @scala.inline
-      implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+      extension [Self <: ClientConfig](x: Self) {
         
-        @scala.inline
-        def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+        inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+        inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
         
-        @scala.inline
-        def setCookie_policy(value: String): Self = StObject.set(x, "cookie_policy", value.asInstanceOf[js.Any])
+        inline def setCookie_policy(value: String): Self = StObject.set(x, "cookie_policy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCookie_policyUndefined: Self = StObject.set(x, "cookie_policy", js.undefined)
+        inline def setCookie_policyUndefined: Self = StObject.set(x, "cookie_policy", js.undefined)
         
-        @scala.inline
-        def setFetch_basic_profile(value: Boolean): Self = StObject.set(x, "fetch_basic_profile", value.asInstanceOf[js.Any])
+        inline def setFetch_basic_profile(value: Boolean): Self = StObject.set(x, "fetch_basic_profile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetch_basic_profileUndefined: Self = StObject.set(x, "fetch_basic_profile", js.undefined)
+        inline def setFetch_basic_profileUndefined: Self = StObject.set(x, "fetch_basic_profile", js.undefined)
         
-        @scala.inline
-        def setHosted_domain(value: String): Self = StObject.set(x, "hosted_domain", value.asInstanceOf[js.Any])
+        inline def setHosted_domain(value: String): Self = StObject.set(x, "hosted_domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHosted_domainUndefined: Self = StObject.set(x, "hosted_domain", js.undefined)
+        inline def setHosted_domainUndefined: Self = StObject.set(x, "hosted_domain", js.undefined)
         
-        @scala.inline
-        def setOpenid_realm(value: String): Self = StObject.set(x, "openid_realm", value.asInstanceOf[js.Any])
+        inline def setOpenid_realm(value: String): Self = StObject.set(x, "openid_realm", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpenid_realmUndefined: Self = StObject.set(x, "openid_realm", js.undefined)
+        inline def setOpenid_realmUndefined: Self = StObject.set(x, "openid_realm", js.undefined)
         
-        @scala.inline
-        def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+        inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+        inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+        inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
         
-        @scala.inline
-        def setUx_mode(value: popup | redirect): Self = StObject.set(x, "ux_mode", value.asInstanceOf[js.Any])
+        inline def setUx_mode(value: popup | redirect): Self = StObject.set(x, "ux_mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUx_modeUndefined: Self = StObject.set(x, "ux_mode", js.undefined)
+        inline def setUx_modeUndefined: Self = StObject.set(x, "ux_mode", js.undefined)
       }
     }
     
@@ -421,20 +355,16 @@ object gapi {
     }
     object CurrentUser {
       
-      @scala.inline
-      def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, js.Any] => Unit): CurrentUser = {
+      inline def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, js.Any] => Unit): CurrentUser = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[CurrentUser]
       }
       
-      @scala.inline
-      implicit class CurrentUserMutableBuilder[Self <: CurrentUser] (val x: Self) extends AnyVal {
+      extension [Self <: CurrentUser](x: Self) {
         
-        @scala.inline
-        def setGet(value: () => GoogleUser): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+        inline def setGet(value: () => GoogleUser): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setListen(value: js.Function1[/* user */ GoogleUser, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        inline def setListen(value: js.Function1[/* user */ GoogleUser, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       }
     }
     
@@ -586,20 +516,16 @@ object gapi {
     }
     object IsSignedIn {
       
-      @scala.inline
-      def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): IsSignedIn = {
+      inline def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): IsSignedIn = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[IsSignedIn]
       }
       
-      @scala.inline
-      implicit class IsSignedInMutableBuilder[Self <: IsSignedIn] (val x: Self) extends AnyVal {
+      extension [Self <: IsSignedIn](x: Self) {
         
-        @scala.inline
-        def setGet(value: () => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+        inline def setGet(value: () => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setListen(value: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        inline def setListen(value: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       }
     }
     
@@ -618,32 +544,24 @@ object gapi {
     }
     object OfflineAccessOptions {
       
-      @scala.inline
-      def apply(): OfflineAccessOptions = {
+      inline def apply(): OfflineAccessOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OfflineAccessOptions]
       }
       
-      @scala.inline
-      implicit class OfflineAccessOptionsMutableBuilder[Self <: OfflineAccessOptions] (val x: Self) extends AnyVal {
+      extension [Self <: OfflineAccessOptions](x: Self) {
         
-        @scala.inline
-        def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
+        inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
+        inline def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
         
-        @scala.inline
-        def setPrompt(value: select_account | consent): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+        inline def setPrompt(value: select_account | consent): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+        inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+        inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       }
     }
     
@@ -699,56 +617,40 @@ object gapi {
     }
     object SigninOptions {
       
-      @scala.inline
-      def apply(): SigninOptions = {
+      inline def apply(): SigninOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SigninOptions]
       }
       
-      @scala.inline
-      implicit class SigninOptionsMutableBuilder[Self <: SigninOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SigninOptions](x: Self) {
         
-        @scala.inline
-        def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
+        inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
+        inline def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
         
-        @scala.inline
-        def setFetch_basic_profile(value: Boolean): Self = StObject.set(x, "fetch_basic_profile", value.asInstanceOf[js.Any])
+        inline def setFetch_basic_profile(value: Boolean): Self = StObject.set(x, "fetch_basic_profile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetch_basic_profileUndefined: Self = StObject.set(x, "fetch_basic_profile", js.undefined)
+        inline def setFetch_basic_profileUndefined: Self = StObject.set(x, "fetch_basic_profile", js.undefined)
         
-        @scala.inline
-        def setLogin_hint(value: String): Self = StObject.set(x, "login_hint", value.asInstanceOf[js.Any])
+        inline def setLogin_hint(value: String): Self = StObject.set(x, "login_hint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogin_hintUndefined: Self = StObject.set(x, "login_hint", js.undefined)
+        inline def setLogin_hintUndefined: Self = StObject.set(x, "login_hint", js.undefined)
         
-        @scala.inline
-        def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+        inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+        inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
         
-        @scala.inline
-        def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+        inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+        inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+        inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
         
-        @scala.inline
-        def setUx_mode(value: popup | redirect): Self = StObject.set(x, "ux_mode", value.asInstanceOf[js.Any])
+        inline def setUx_mode(value: popup | redirect): Self = StObject.set(x, "ux_mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUx_modeUndefined: Self = StObject.set(x, "ux_mode", js.undefined)
+        inline def setUx_modeUndefined: Self = StObject.set(x, "ux_mode", js.undefined)
       }
     }
     
@@ -766,8 +668,7 @@ object gapi {
     }
     object SigninOptionsBuilder {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         setAppPackageName: String => js.Any,
         setFetchBasicProfile: Boolean => js.Any,
         setLoginHint: String => js.Any,
@@ -778,23 +679,17 @@ object gapi {
         __obj.asInstanceOf[SigninOptionsBuilder]
       }
       
-      @scala.inline
-      implicit class SigninOptionsBuilderMutableBuilder[Self <: SigninOptionsBuilder] (val x: Self) extends AnyVal {
+      extension [Self <: SigninOptionsBuilder](x: Self) {
         
-        @scala.inline
-        def setSetAppPackageName(value: String => js.Any): Self = StObject.set(x, "setAppPackageName", js.Any.fromFunction1(value))
+        inline def setSetAppPackageName(value: String => js.Any): Self = StObject.set(x, "setAppPackageName", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetFetchBasicProfile(value: Boolean => js.Any): Self = StObject.set(x, "setFetchBasicProfile", js.Any.fromFunction1(value))
+        inline def setSetFetchBasicProfile(value: Boolean => js.Any): Self = StObject.set(x, "setFetchBasicProfile", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetLoginHint(value: String => js.Any): Self = StObject.set(x, "setLoginHint", js.Any.fromFunction1(value))
+        inline def setSetLoginHint(value: String => js.Any): Self = StObject.set(x, "setLoginHint", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetPrompt(value: String => js.Any): Self = StObject.set(x, "setPrompt", js.Any.fromFunction1(value))
+        inline def setSetPrompt(value: String => js.Any): Self = StObject.set(x, "setPrompt", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetScope(value: String => js.Any): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+        inline def setSetScope(value: String => js.Any): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
       }
     }
   }

@@ -13,19 +13,15 @@ trait BatchRetryStrategy extends StObject {
 }
 object BatchRetryStrategy {
   
-  @scala.inline
-  def apply(): BatchRetryStrategy = {
+  inline def apply(): BatchRetryStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchRetryStrategy]
   }
   
-  @scala.inline
-  implicit class BatchRetryStrategyMutableBuilder[Self <: BatchRetryStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: BatchRetryStrategy](x: Self) {
     
-    @scala.inline
-    def setAttempts(value: Integer): Self = StObject.set(x, "Attempts", value.asInstanceOf[js.Any])
+    inline def setAttempts(value: Integer): Self = StObject.set(x, "Attempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptsUndefined: Self = StObject.set(x, "Attempts", js.undefined)
+    inline def setAttemptsUndefined: Self = StObject.set(x, "Attempts", js.undefined)
   }
 }

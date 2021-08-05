@@ -13,19 +13,15 @@ trait SetRemoteLocationsRequest extends StObject {
 }
 object SetRemoteLocationsRequest {
   
-  @scala.inline
-  def apply(locations: js.Array[RemoteLocation]): SetRemoteLocationsRequest = {
+  inline def apply(locations: js.Array[RemoteLocation]): SetRemoteLocationsRequest = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetRemoteLocationsRequest]
   }
   
-  @scala.inline
-  implicit class SetRemoteLocationsRequestMutableBuilder[Self <: SetRemoteLocationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetRemoteLocationsRequest](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[RemoteLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[RemoteLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: RemoteLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: RemoteLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

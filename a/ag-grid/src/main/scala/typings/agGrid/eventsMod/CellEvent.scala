@@ -21,8 +21,7 @@ trait CellEvent
 }
 object CellEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     colDef: ColDef,
     column: Column,
@@ -40,16 +39,12 @@ object CellEvent {
     __obj.asInstanceOf[CellEvent]
   }
   
-  @scala.inline
-  implicit class CellEventMutableBuilder[Self <: CellEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CellEvent](x: Self) {
     
-    @scala.inline
-    def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
+    inline def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -66,6 +66,5 @@ class Tombstone protected ()
 }
 object Tombstone {
   
-  @scala.inline
-  def apply: TombstoneConstructor = js.Dynamic.global.selectDynamic("Tombstone").asInstanceOf[TombstoneConstructor]
+  inline def apply: TombstoneConstructor = js.Dynamic.global.selectDynamic("Tombstone").asInstanceOf[TombstoneConstructor]
 }

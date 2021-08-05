@@ -21,8 +21,7 @@ trait FiveBoxesSet
 }
 object FiveBoxesSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fourFilledBoxes: Icon,
     noFilledBoxes: Icon,
     oneFilledBox: Icon,
@@ -33,22 +32,16 @@ object FiveBoxesSet {
     __obj.asInstanceOf[FiveBoxesSet]
   }
   
-  @scala.inline
-  implicit class FiveBoxesSetMutableBuilder[Self <: FiveBoxesSet] (val x: Self) extends AnyVal {
+  extension [Self <: FiveBoxesSet](x: Self) {
     
-    @scala.inline
-    def setFourFilledBoxes(value: Icon): Self = StObject.set(x, "fourFilledBoxes", value.asInstanceOf[js.Any])
+    inline def setFourFilledBoxes(value: Icon): Self = StObject.set(x, "fourFilledBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoFilledBoxes(value: Icon): Self = StObject.set(x, "noFilledBoxes", value.asInstanceOf[js.Any])
+    inline def setNoFilledBoxes(value: Icon): Self = StObject.set(x, "noFilledBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneFilledBox(value: Icon): Self = StObject.set(x, "oneFilledBox", value.asInstanceOf[js.Any])
+    inline def setOneFilledBox(value: Icon): Self = StObject.set(x, "oneFilledBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeFilledBoxes(value: Icon): Self = StObject.set(x, "threeFilledBoxes", value.asInstanceOf[js.Any])
+    inline def setThreeFilledBoxes(value: Icon): Self = StObject.set(x, "threeFilledBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoFilledBoxes(value: Icon): Self = StObject.set(x, "twoFilledBoxes", value.asInstanceOf[js.Any])
+    inline def setTwoFilledBoxes(value: Icon): Self = StObject.set(x, "twoFilledBoxes", value.asInstanceOf[js.Any])
   }
 }

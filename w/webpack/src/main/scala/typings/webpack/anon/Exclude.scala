@@ -43,58 +43,41 @@ trait Exclude
 }
 object Exclude {
   
-  @scala.inline
-  def apply(): Exclude = {
+  inline def apply(): Exclude = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Exclude]
   }
   
-  @scala.inline
-  implicit class ExcludeMutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
+  extension [Self <: Exclude](x: Self) {
     
-    @scala.inline
-    def setAnd(value: RuleSetConditionsAbsolute): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAnd(value: RuleSetConditionsAbsolute): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
+    inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
-    @scala.inline
-    def setExclude(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
+    inline def setExcludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setInclude(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
+    inline def setIncludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setNot(value: RuleSetConditionsAbsolute): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: RuleSetConditionsAbsolute): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+    inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
-    @scala.inline
-    def setOr(value: RuleSetConditionsAbsolute): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+    inline def setOr(value: RuleSetConditionsAbsolute): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
+    inline def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
     
-    @scala.inline
-    def setTest(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+    inline def setTestFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

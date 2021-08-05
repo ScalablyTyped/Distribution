@@ -15,31 +15,23 @@ trait BatchGetChannelResponse extends StObject {
 }
 object BatchGetChannelResponse {
   
-  @scala.inline
-  def apply(): BatchGetChannelResponse = {
+  inline def apply(): BatchGetChannelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetChannelResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetChannelResponseMutableBuilder[Self <: BatchGetChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetChannelResponse](x: Self) {
     
-    @scala.inline
-    def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: BatchErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: BatchError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchError*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

@@ -24,8 +24,7 @@ trait StripeTokenResponse extends StObject {
 }
 object StripeTokenResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client_ip: String,
     created: Double,
     id: String,
@@ -40,34 +39,24 @@ object StripeTokenResponse {
     __obj.asInstanceOf[StripeTokenResponse]
   }
   
-  @scala.inline
-  implicit class StripeTokenResponseMutableBuilder[Self <: StripeTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StripeTokenResponse](x: Self) {
     
-    @scala.inline
-    def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
+    inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+    inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

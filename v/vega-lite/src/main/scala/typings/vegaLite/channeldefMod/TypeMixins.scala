@@ -41,19 +41,15 @@ trait TypeMixins[T /* <: Type */] extends StObject {
 }
 object TypeMixins {
   
-  @scala.inline
-  def apply[T /* <: Type */](): TypeMixins[T] = {
+  inline def apply[T /* <: Type */](): TypeMixins[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypeMixins[T]]
   }
   
-  @scala.inline
-  implicit class TypeMixinsMutableBuilder[Self <: TypeMixins[?], T /* <: Type */] (val x: Self & TypeMixins[T]) extends AnyVal {
+  extension [Self <: TypeMixins[?], T /* <: Type */](x: Self & TypeMixins[T]) {
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

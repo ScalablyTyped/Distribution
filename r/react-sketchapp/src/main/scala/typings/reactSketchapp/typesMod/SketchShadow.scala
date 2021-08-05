@@ -21,8 +21,7 @@ trait SketchShadow extends StObject {
 }
 object SketchShadow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     shadowColor: Color,
     shadowInner: Boolean,
     shadowOffset: Width,
@@ -34,25 +33,18 @@ object SketchShadow {
     __obj.asInstanceOf[SketchShadow]
   }
   
-  @scala.inline
-  implicit class SketchShadowMutableBuilder[Self <: SketchShadow] (val x: Self) extends AnyVal {
+  extension [Self <: SketchShadow](x: Self) {
     
-    @scala.inline
-    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowInner(value: Boolean): Self = StObject.set(x, "shadowInner", value.asInstanceOf[js.Any])
+    inline def setShadowInner(value: Boolean): Self = StObject.set(x, "shadowInner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffset(value: Width): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Width): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
+    inline def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
+    inline def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowSpread(value: Double): Self = StObject.set(x, "shadowSpread", value.asInstanceOf[js.Any])
+    inline def setShadowSpread(value: Double): Self = StObject.set(x, "shadowSpread", value.asInstanceOf[js.Any])
   }
 }

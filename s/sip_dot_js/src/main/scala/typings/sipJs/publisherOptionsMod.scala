@@ -37,53 +37,38 @@ object publisherOptionsMod {
   }
   object PublisherOptions {
     
-    @scala.inline
-    def apply(): PublisherOptions = {
+    inline def apply(): PublisherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PublisherOptions]
     }
     
-    @scala.inline
-    implicit class PublisherOptionsMutableBuilder[Self <: PublisherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PublisherOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      @scala.inline
-      def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setParams(value: FromTag): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: FromTag): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setUnpublishOnClose(value: Boolean): Self = StObject.set(x, "unpublishOnClose", value.asInstanceOf[js.Any])
+      inline def setUnpublishOnClose(value: Boolean): Self = StObject.set(x, "unpublishOnClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnpublishOnCloseUndefined: Self = StObject.set(x, "unpublishOnClose", js.undefined)
+      inline def setUnpublishOnCloseUndefined: Self = StObject.set(x, "unpublishOnClose", js.undefined)
     }
   }
 }

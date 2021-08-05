@@ -21,20 +21,20 @@ object datasetMod {
     def this(data: js.Array[js.Any], metadata: js.Any) = this()
     def this(data: Unit, metadata: js.Any) = this()
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
     /* private */ def _dispatchUpdate(): js.Any = js.native
     
-    var _metadata: js.Any = js.native
+    /* private */ var _metadata: js.Any = js.native
     
     /**
       * Store an update id for fast detection of changes to the dataset. Also, this
       * uses a global monotonically increasing value so that it may be used as a
       * combination update-aware memoize key.
       */
-    var _updateId: js.Any = js.native
+    /* private */ var _updateId: js.Any = js.native
     
     /**
       * Gets the data.

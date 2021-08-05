@@ -28,37 +28,27 @@ trait CreateArchiveResponse extends StObject {
 }
 object CreateArchiveResponse {
   
-  @scala.inline
-  def apply(): CreateArchiveResponse = {
+  inline def apply(): CreateArchiveResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateArchiveResponse]
   }
   
-  @scala.inline
-  implicit class CreateArchiveResponseMutableBuilder[Self <: CreateArchiveResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateArchiveResponse](x: Self) {
     
-    @scala.inline
-    def setArchiveArn(value: ArchiveArn): Self = StObject.set(x, "ArchiveArn", value.asInstanceOf[js.Any])
+    inline def setArchiveArn(value: ArchiveArn): Self = StObject.set(x, "ArchiveArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveArnUndefined: Self = StObject.set(x, "ArchiveArn", js.undefined)
+    inline def setArchiveArnUndefined: Self = StObject.set(x, "ArchiveArn", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setState(value: ArchiveState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ArchiveState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: ArchiveStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: ArchiveStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait Tip extends StObject {
 }
 object Tip {
   
-  @scala.inline
-  def apply(): Tip = {
+  inline def apply(): Tip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tip]
   }
   
-  @scala.inline
-  implicit class TipMutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
+  extension [Self <: Tip](x: Self) {
     
-    @scala.inline
-    def setTip(value: String): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+    inline def setTip(value: String): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTipUndefined: Self = StObject.set(x, "tip", js.undefined)
+    inline def setTipUndefined: Self = StObject.set(x, "tip", js.undefined)
   }
 }

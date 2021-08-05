@@ -18,10 +18,8 @@ object setStyleMod {
     * https://github.com/ant-design/ant-design/issues/19393
     *
     */
-  @scala.inline
-  def default(style: CSSProperties): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
-  @scala.inline
-  def default(style: CSSProperties, options: SetStyleOptions): CSSProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CSSProperties]
+  inline def default(style: CSSProperties): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def default(style: CSSProperties, options: SetStyleOptions): CSSProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CSSProperties]
   
   trait SetStyleOptions extends StObject {
     
@@ -29,20 +27,16 @@ object setStyleMod {
   }
   object SetStyleOptions {
     
-    @scala.inline
-    def apply(): SetStyleOptions = {
+    inline def apply(): SetStyleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetStyleOptions]
     }
     
-    @scala.inline
-    implicit class SetStyleOptionsMutableBuilder[Self <: SetStyleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetStyleOptions](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
   }
 }

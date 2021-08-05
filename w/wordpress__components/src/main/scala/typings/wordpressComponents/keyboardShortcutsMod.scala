@@ -63,29 +63,22 @@ object keyboardShortcutsMod {
     }
     object BaseProps {
       
-      @scala.inline
-      def apply(shortcuts: Record[String, js.Function0[Unit]]): BaseProps = {
+      inline def apply(shortcuts: Record[String, js.Function0[Unit]]): BaseProps = {
         val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseProps]
       }
       
-      @scala.inline
-      implicit class BasePropsMutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
+      extension [Self <: BaseProps](x: Self) {
         
-        @scala.inline
-        def setBindGlobal(value: Boolean): Self = StObject.set(x, "bindGlobal", value.asInstanceOf[js.Any])
+        inline def setBindGlobal(value: Boolean): Self = StObject.set(x, "bindGlobal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBindGlobalUndefined: Self = StObject.set(x, "bindGlobal", js.undefined)
+        inline def setBindGlobalUndefined: Self = StObject.set(x, "bindGlobal", js.undefined)
         
-        @scala.inline
-        def setEventName(value: keydown | keypress | keyup): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+        inline def setEventName(value: keydown | keypress | keyup): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+        inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
         
-        @scala.inline
-        def setShortcuts(value: Record[String, js.Function0[Unit]]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+        inline def setShortcuts(value: Record[String, js.Function0[Unit]]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       }
     }
     
@@ -96,14 +89,12 @@ object keyboardShortcutsMod {
     trait Props extends StObject
     object Props {
       
-      @scala.inline
-      def PropsWithChildren(shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithChildren = {
+      inline def PropsWithChildren(shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithChildren = {
         val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithChildren]
       }
       
-      @scala.inline
-      def PropsWithoutChildren(shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren = {
+      inline def PropsWithoutChildren(shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren = {
         val __obj = js.Dynamic.literal(bindGlobal = true, shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren]
       }
@@ -118,20 +109,16 @@ object keyboardShortcutsMod {
     }
     object PropsWithChildren {
       
-      @scala.inline
-      def apply(shortcuts: Record[String, js.Function0[Unit]]): PropsWithChildren = {
+      inline def apply(shortcuts: Record[String, js.Function0[Unit]]): PropsWithChildren = {
         val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[PropsWithChildren]
       }
       
-      @scala.inline
-      implicit class PropsWithChildrenMutableBuilder[Self <: PropsWithChildren] (val x: Self) extends AnyVal {
+      extension [Self <: PropsWithChildren](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       }
     }
     
@@ -147,17 +134,14 @@ object keyboardShortcutsMod {
     }
     object PropsWithoutChildren {
       
-      @scala.inline
-      def apply(shortcuts: Record[String, js.Function0[Unit]]): PropsWithoutChildren = {
+      inline def apply(shortcuts: Record[String, js.Function0[Unit]]): PropsWithoutChildren = {
         val __obj = js.Dynamic.literal(bindGlobal = true, shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[PropsWithoutChildren]
       }
       
-      @scala.inline
-      implicit class PropsWithoutChildrenMutableBuilder[Self <: PropsWithoutChildren] (val x: Self) extends AnyVal {
+      extension [Self <: PropsWithoutChildren](x: Self) {
         
-        @scala.inline
-        def setBindGlobal(value: `true`): Self = StObject.set(x, "bindGlobal", value.asInstanceOf[js.Any])
+        inline def setBindGlobal(value: `true`): Self = StObject.set(x, "bindGlobal", value.asInstanceOf[js.Any])
       }
     }
   }

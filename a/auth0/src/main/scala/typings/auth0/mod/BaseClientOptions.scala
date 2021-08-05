@@ -12,22 +12,17 @@ trait BaseClientOptions extends StObject {
 }
 object BaseClientOptions {
   
-  @scala.inline
-  def apply(baseUrl: String): BaseClientOptions = {
+  inline def apply(baseUrl: String): BaseClientOptions = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseClientOptions]
   }
   
-  @scala.inline
-  implicit class BaseClientOptionsMutableBuilder[Self <: BaseClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseClientOptions](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait MitigationAction extends StObject {
 }
 object MitigationAction {
   
-  @scala.inline
-  def apply(): MitigationAction = {
+  inline def apply(): MitigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MitigationAction]
   }
   
-  @scala.inline
-  implicit class MitigationActionMutableBuilder[Self <: MitigationAction] (val x: Self) extends AnyVal {
+  extension [Self <: MitigationAction](x: Self) {
     
-    @scala.inline
-    def setActionParams(value: MitigationActionParams): Self = StObject.set(x, "actionParams", value.asInstanceOf[js.Any])
+    inline def setActionParams(value: MitigationActionParams): Self = StObject.set(x, "actionParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionParamsUndefined: Self = StObject.set(x, "actionParams", js.undefined)
+    inline def setActionParamsUndefined: Self = StObject.set(x, "actionParams", js.undefined)
     
-    @scala.inline
-    def setId(value: MitigationActionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: MitigationActionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: MitigationActionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: MitigationActionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

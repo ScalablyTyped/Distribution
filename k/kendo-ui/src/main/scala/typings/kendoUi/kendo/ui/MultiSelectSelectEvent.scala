@@ -15,25 +15,19 @@ trait MultiSelectSelectEvent
 }
 object MultiSelectSelectEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: MultiSelect): MultiSelectSelectEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: MultiSelect): MultiSelectSelectEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectSelectEvent]
   }
   
-  @scala.inline
-  implicit class MultiSelectSelectEventMutableBuilder[Self <: MultiSelectSelectEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MultiSelectSelectEvent](x: Self) {
     
-    @scala.inline
-    def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    inline def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
+    inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
-    @scala.inline
-    def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ trait XInterfaceMemberTypeDescription
 }
 object XInterfaceMemberTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemberName: String,
     Name: String,
     Position: Double,
@@ -59,19 +58,14 @@ object XInterfaceMemberTypeDescription {
     __obj.asInstanceOf[XInterfaceMemberTypeDescription]
   }
   
-  @scala.inline
-  implicit class XInterfaceMemberTypeDescriptionMutableBuilder[Self <: XInterfaceMemberTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XInterfaceMemberTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetMemberName(value: () => String): Self = StObject.set(x, "getMemberName", js.Any.fromFunction0(value))
+    inline def setGetMemberName(value: () => String): Self = StObject.set(x, "getMemberName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMemberName(value: String): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
+    inline def setMemberName(value: String): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

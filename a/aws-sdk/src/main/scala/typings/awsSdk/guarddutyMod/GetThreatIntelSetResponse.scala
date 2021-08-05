@@ -33,31 +33,23 @@ trait GetThreatIntelSetResponse extends StObject {
 }
 object GetThreatIntelSetResponse {
   
-  @scala.inline
-  def apply(Format: ThreatIntelSetFormat, Location: Location, Name: Name, Status: ThreatIntelSetStatus): GetThreatIntelSetResponse = {
+  inline def apply(Format: ThreatIntelSetFormat, Location: Location, Name: Name, Status: ThreatIntelSetStatus): GetThreatIntelSetResponse = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetThreatIntelSetResponse]
   }
   
-  @scala.inline
-  implicit class GetThreatIntelSetResponseMutableBuilder[Self <: GetThreatIntelSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetThreatIntelSetResponse](x: Self) {
     
-    @scala.inline
-    def setFormat(value: ThreatIntelSetFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ThreatIntelSetFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ThreatIntelSetStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ThreatIntelSetStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

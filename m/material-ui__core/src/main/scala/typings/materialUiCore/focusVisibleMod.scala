@@ -13,12 +13,9 @@ object focusVisibleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def detectFocusVisible(instance: FocusVisibleCheckTime, element: Element, cb: js.Function0[Unit], attempt: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFocusVisible")(instance.asInstanceOf[js.Any], element.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], attempt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def detectFocusVisible(instance: FocusVisibleCheckTime, element: Element, cb: js.Function0[Unit], attempt: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFocusVisible")(instance.asInstanceOf[js.Any], element.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], attempt.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def focusKeyPressed(pressed: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusKeyPressed")(pressed.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def focusKeyPressed(pressed: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusKeyPressed")(pressed.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def listenForFocusKeys(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listenForFocusKeys")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def listenForFocusKeys(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listenForFocusKeys")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxEventLogging Class */
 trait FaxEventLogging extends StObject {
   
-  @JSName("FAXCOMEXLib.FaxEventLogging_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxEventLogging_typekey")
   var FAXCOMEXLibDotFaxEventLogging_typekey: FaxEventLogging
   
   /** Detail level of event logs for general (other) events */
@@ -30,8 +30,7 @@ trait FaxEventLogging extends StObject {
 }
 object FaxEventLogging {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FAXCOMEXLibDotFaxEventLogging_typekey: FaxEventLogging,
     GeneralEventsLevel: FAX_LOG_LEVEL_ENUM,
     InboundEventsLevel: FAX_LOG_LEVEL_ENUM,
@@ -45,28 +44,20 @@ object FaxEventLogging {
     __obj.asInstanceOf[FaxEventLogging]
   }
   
-  @scala.inline
-  implicit class FaxEventLoggingMutableBuilder[Self <: FaxEventLogging] (val x: Self) extends AnyVal {
+  extension [Self <: FaxEventLogging](x: Self) {
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxEventLogging_typekey(value: FaxEventLogging): Self = StObject.set(x, "FAXCOMEXLib.FaxEventLogging_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxEventLogging_typekey(value: FaxEventLogging): Self = StObject.set(x, "FAXCOMEXLib.FaxEventLogging_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "GeneralEventsLevel", value.asInstanceOf[js.Any])
+    inline def setGeneralEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "GeneralEventsLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "InboundEventsLevel", value.asInstanceOf[js.Any])
+    inline def setInboundEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "InboundEventsLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "InitEventsLevel", value.asInstanceOf[js.Any])
+    inline def setInitEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "InitEventsLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "OutboundEventsLevel", value.asInstanceOf[js.Any])
+    inline def setOutboundEventsLevel(value: FAX_LOG_LEVEL_ENUM): Self = StObject.set(x, "OutboundEventsLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
   }
 }

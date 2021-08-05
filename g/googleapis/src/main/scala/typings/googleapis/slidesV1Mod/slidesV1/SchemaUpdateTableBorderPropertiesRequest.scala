@@ -46,43 +46,31 @@ trait SchemaUpdateTableBorderPropertiesRequest extends StObject {
 }
 object SchemaUpdateTableBorderPropertiesRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateTableBorderPropertiesRequest = {
+  inline def apply(): SchemaUpdateTableBorderPropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateTableBorderPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateTableBorderPropertiesRequestMutableBuilder[Self <: SchemaUpdateTableBorderPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateTableBorderPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setBorderPosition(value: String): Self = StObject.set(x, "borderPosition", value.asInstanceOf[js.Any])
+    inline def setBorderPosition(value: String): Self = StObject.set(x, "borderPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderPositionUndefined: Self = StObject.set(x, "borderPosition", js.undefined)
+    inline def setBorderPositionUndefined: Self = StObject.set(x, "borderPosition", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setTableBorderProperties(value: SchemaTableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
+    inline def setTableBorderProperties(value: SchemaTableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
+    inline def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
     
-    @scala.inline
-    def setTableRange(value: SchemaTableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+    inline def setTableRange(value: SchemaTableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+    inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
   }
 }

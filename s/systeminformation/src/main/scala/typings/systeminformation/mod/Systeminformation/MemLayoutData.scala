@@ -28,8 +28,7 @@ trait MemLayoutData extends StObject {
 }
 object MemLayoutData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bank: String,
     clockSpeed: Double,
     formFactor: String,
@@ -46,37 +45,26 @@ object MemLayoutData {
     __obj.asInstanceOf[MemLayoutData]
   }
   
-  @scala.inline
-  implicit class MemLayoutDataMutableBuilder[Self <: MemLayoutData] (val x: Self) extends AnyVal {
+  extension [Self <: MemLayoutData](x: Self) {
     
-    @scala.inline
-    def setBank(value: String): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
+    inline def setBank(value: String): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockSpeed(value: Double): Self = StObject.set(x, "clockSpeed", value.asInstanceOf[js.Any])
+    inline def setClockSpeed(value: Double): Self = StObject.set(x, "clockSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
+    inline def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartNum(value: String): Self = StObject.set(x, "partNum", value.asInstanceOf[js.Any])
+    inline def setPartNum(value: String): Self = StObject.set(x, "partNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNum(value: String): Self = StObject.set(x, "serialNum", value.asInstanceOf[js.Any])
+    inline def setSerialNum(value: String): Self = StObject.set(x, "serialNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoltageConfigured(value: Double): Self = StObject.set(x, "voltageConfigured", value.asInstanceOf[js.Any])
+    inline def setVoltageConfigured(value: Double): Self = StObject.set(x, "voltageConfigured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoltageMax(value: Double): Self = StObject.set(x, "voltageMax", value.asInstanceOf[js.Any])
+    inline def setVoltageMax(value: Double): Self = StObject.set(x, "voltageMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoltageMin(value: Double): Self = StObject.set(x, "voltageMin", value.asInstanceOf[js.Any])
+    inline def setVoltageMin(value: Double): Self = StObject.set(x, "voltageMin", value.asInstanceOf[js.Any])
   }
 }

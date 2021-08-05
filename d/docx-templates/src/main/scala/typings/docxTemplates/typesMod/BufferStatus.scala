@@ -14,22 +14,17 @@ trait BufferStatus extends StObject {
 }
 object BufferStatus {
   
-  @scala.inline
-  def apply(cmds: String, fInsertedText: Boolean, text: String): BufferStatus = {
+  inline def apply(cmds: String, fInsertedText: Boolean, text: String): BufferStatus = {
     val __obj = js.Dynamic.literal(cmds = cmds.asInstanceOf[js.Any], fInsertedText = fInsertedText.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferStatus]
   }
   
-  @scala.inline
-  implicit class BufferStatusMutableBuilder[Self <: BufferStatus] (val x: Self) extends AnyVal {
+  extension [Self <: BufferStatus](x: Self) {
     
-    @scala.inline
-    def setCmds(value: String): Self = StObject.set(x, "cmds", value.asInstanceOf[js.Any])
+    inline def setCmds(value: String): Self = StObject.set(x, "cmds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFInsertedText(value: Boolean): Self = StObject.set(x, "fInsertedText", value.asInstanceOf[js.Any])
+    inline def setFInsertedText(value: Boolean): Self = StObject.set(x, "fInsertedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

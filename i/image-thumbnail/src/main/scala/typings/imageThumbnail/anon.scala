@@ -14,17 +14,14 @@ object anon {
   }
   object Uri {
     
-    @scala.inline
-    def apply(uri: String): Uri = {
+    inline def apply(uri: String): Uri = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Uri]
     }
     
-    @scala.inline
-    implicit class UriMutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
+    extension [Self <: Uri](x: Self) {
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,35 +38,26 @@ object anon {
   }
   object responseTypebase64Options {
     
-    @scala.inline
-    def apply(responseType: base64 & js.UndefOr[String]): responseTypebase64Options = {
+    inline def apply(responseType: base64 & js.UndefOr[String]): responseTypebase64Options = {
       val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
       __obj.asInstanceOf[responseTypebase64Options]
     }
     
-    @scala.inline
-    implicit class responseTypebase64OptionsMutableBuilder[Self <: responseTypebase64Options] (val x: Self) extends AnyVal {
+    extension [Self <: responseTypebase64Options](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: base64 & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: base64 & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -86,35 +74,26 @@ object anon {
   }
   object responseTypebufferOptions {
     
-    @scala.inline
-    def apply(responseType: buffer & js.UndefOr[String]): responseTypebufferOptions = {
+    inline def apply(responseType: buffer & js.UndefOr[String]): responseTypebufferOptions = {
       val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
       __obj.asInstanceOf[responseTypebufferOptions]
     }
     
-    @scala.inline
-    implicit class responseTypebufferOptionsMutableBuilder[Self <: responseTypebufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: responseTypebufferOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: buffer & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: buffer & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

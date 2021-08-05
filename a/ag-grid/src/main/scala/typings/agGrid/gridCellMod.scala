@@ -38,23 +38,18 @@ object gridCellMod {
   }
   object GridCellDef {
     
-    @scala.inline
-    def apply(column: Column, floating: String, rowIndex: Double): GridCellDef = {
+    inline def apply(column: Column, floating: String, rowIndex: Double): GridCellDef = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], floating = floating.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[GridCellDef]
     }
     
-    @scala.inline
-    implicit class GridCellDefMutableBuilder[Self <: GridCellDef] (val x: Self) extends AnyVal {
+    extension [Self <: GridCellDef](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloating(value: String): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+      inline def setFloating(value: String): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }
   }
 }

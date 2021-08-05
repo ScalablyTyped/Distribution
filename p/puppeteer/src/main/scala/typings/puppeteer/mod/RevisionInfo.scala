@@ -25,8 +25,7 @@ trait RevisionInfo extends StObject {
 }
 object RevisionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     executablePath: String,
     folderPath: String,
     local: Boolean,
@@ -38,25 +37,18 @@ object RevisionInfo {
     __obj.asInstanceOf[RevisionInfo]
   }
   
-  @scala.inline
-  implicit class RevisionInfoMutableBuilder[Self <: RevisionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionInfo](x: Self) {
     
-    @scala.inline
-    def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
+    inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
+    inline def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct(value: Product_): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: Product_): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setSource(value: SourcesConfiguration): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: SourcesConfiguration): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -42,29 +38,22 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply(config: LoggerConfiguration): Config = {
+    inline def apply(config: LoggerConfiguration): Config = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfig(value: LoggerConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: LoggerConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Source): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Source): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setSource(value: `0`): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: `0`): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -74,20 +63,16 @@ object anon {
   }
   object Source {
     
-    @scala.inline
-    def apply(): Source = {
+    inline def apply(): Source = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setSource(value: FileConfiguration): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: FileConfiguration): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
 }

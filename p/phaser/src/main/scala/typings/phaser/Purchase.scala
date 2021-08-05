@@ -38,49 +38,35 @@ trait Purchase extends StObject {
 }
 object Purchase {
   
-  @scala.inline
-  def apply(): Purchase = {
+  inline def apply(): Purchase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Purchase]
   }
   
-  @scala.inline
-  implicit class PurchaseMutableBuilder[Self <: Purchase] (val x: Self) extends AnyVal {
+  extension [Self <: Purchase](x: Self) {
     
-    @scala.inline
-    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
+    inline def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
+    inline def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
-    @scala.inline
-    def setPaymentID(value: String): Self = StObject.set(x, "paymentID", value.asInstanceOf[js.Any])
+    inline def setPaymentID(value: String): Self = StObject.set(x, "paymentID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentIDUndefined: Self = StObject.set(x, "paymentID", js.undefined)
+    inline def setPaymentIDUndefined: Self = StObject.set(x, "paymentID", js.undefined)
     
-    @scala.inline
-    def setProductID(value: String): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
+    inline def setProductID(value: String): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIDUndefined: Self = StObject.set(x, "productID", js.undefined)
+    inline def setProductIDUndefined: Self = StObject.set(x, "productID", js.undefined)
     
-    @scala.inline
-    def setPurchaseTime(value: String): Self = StObject.set(x, "purchaseTime", value.asInstanceOf[js.Any])
+    inline def setPurchaseTime(value: String): Self = StObject.set(x, "purchaseTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTimeUndefined: Self = StObject.set(x, "purchaseTime", js.undefined)
+    inline def setPurchaseTimeUndefined: Self = StObject.set(x, "purchaseTime", js.undefined)
     
-    @scala.inline
-    def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
+    inline def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
+    inline def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
     
-    @scala.inline
-    def setSignedRequest(value: String): Self = StObject.set(x, "signedRequest", value.asInstanceOf[js.Any])
+    inline def setSignedRequest(value: String): Self = StObject.set(x, "signedRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedRequestUndefined: Self = StObject.set(x, "signedRequest", js.undefined)
+    inline def setSignedRequestUndefined: Self = StObject.set(x, "signedRequest", js.undefined)
   }
 }

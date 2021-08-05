@@ -34,31 +34,23 @@ trait PlusShareShareServerIdentity extends StObject {
 }
 object PlusShareShareServerIdentity {
   
-  @scala.inline
-  def apply(): PlusShareShareServerIdentity = {
+  inline def apply(): PlusShareShareServerIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusShareShareServerIdentity]
   }
   
-  @scala.inline
-  implicit class PlusShareShareServerIdentityMutableBuilder[Self <: PlusShareShareServerIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: PlusShareShareServerIdentity](x: Self) {
     
-    @scala.inline
-    def setSinaweibo(value: String): Self = StObject.set(x, "sinaweibo", value.asInstanceOf[js.Any])
+    inline def setSinaweibo(value: String): Self = StObject.set(x, "sinaweibo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinaweiboUndefined: Self = StObject.set(x, "sinaweibo", js.undefined)
+    inline def setSinaweiboUndefined: Self = StObject.set(x, "sinaweibo", js.undefined)
     
-    @scala.inline
-    def setTencentweibo(value: String): Self = StObject.set(x, "tencentweibo", value.asInstanceOf[js.Any])
+    inline def setTencentweibo(value: String): Self = StObject.set(x, "tencentweibo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTencentweiboUndefined: Self = StObject.set(x, "tencentweibo", js.undefined)
+    inline def setTencentweiboUndefined: Self = StObject.set(x, "tencentweibo", js.undefined)
     
-    @scala.inline
-    def setWeixin(value: String): Self = StObject.set(x, "weixin", value.asInstanceOf[js.Any])
+    inline def setWeixin(value: String): Self = StObject.set(x, "weixin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeixinUndefined: Self = StObject.set(x, "weixin", js.undefined)
+    inline def setWeixinUndefined: Self = StObject.set(x, "weixin", js.undefined)
   }
 }

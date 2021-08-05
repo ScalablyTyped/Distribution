@@ -23,8 +23,7 @@ trait BasicViewFactory
 }
 object BasicViewFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: XController => Unit,
     createResource: XResourceId => XResource,
     releaseResource: XResource => Unit
@@ -33,10 +32,8 @@ object BasicViewFactory {
     __obj.asInstanceOf[BasicViewFactory]
   }
   
-  @scala.inline
-  implicit class BasicViewFactoryMutableBuilder[Self <: BasicViewFactory] (val x: Self) extends AnyVal {
+  extension [Self <: BasicViewFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

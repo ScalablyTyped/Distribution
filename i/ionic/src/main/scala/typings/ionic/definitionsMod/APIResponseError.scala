@@ -14,19 +14,15 @@ trait APIResponseError
 }
 object APIResponseError {
   
-  @scala.inline
-  def apply(error: APIResponseErrorError, meta: APIResponseMeta): APIResponseError = {
+  inline def apply(error: APIResponseErrorError, meta: APIResponseMeta): APIResponseError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIResponseError]
   }
   
-  @scala.inline
-  implicit class APIResponseErrorMutableBuilder[Self <: APIResponseError] (val x: Self) extends AnyVal {
+  extension [Self <: APIResponseError](x: Self) {
     
-    @scala.inline
-    def setError(value: APIResponseErrorError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: APIResponseErrorError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: APIResponseMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: APIResponseMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

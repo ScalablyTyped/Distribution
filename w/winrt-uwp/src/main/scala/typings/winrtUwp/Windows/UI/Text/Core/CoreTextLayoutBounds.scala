@@ -16,19 +16,15 @@ trait CoreTextLayoutBounds extends StObject {
 }
 object CoreTextLayoutBounds {
   
-  @scala.inline
-  def apply(controlBounds: Rect, textBounds: Rect): CoreTextLayoutBounds = {
+  inline def apply(controlBounds: Rect, textBounds: Rect): CoreTextLayoutBounds = {
     val __obj = js.Dynamic.literal(controlBounds = controlBounds.asInstanceOf[js.Any], textBounds = textBounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreTextLayoutBounds]
   }
   
-  @scala.inline
-  implicit class CoreTextLayoutBoundsMutableBuilder[Self <: CoreTextLayoutBounds] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextLayoutBounds](x: Self) {
     
-    @scala.inline
-    def setControlBounds(value: Rect): Self = StObject.set(x, "controlBounds", value.asInstanceOf[js.Any])
+    inline def setControlBounds(value: Rect): Self = StObject.set(x, "controlBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBounds(value: Rect): Self = StObject.set(x, "textBounds", value.asInstanceOf[js.Any])
+    inline def setTextBounds(value: Rect): Self = StObject.set(x, "textBounds", value.asInstanceOf[js.Any])
   }
 }

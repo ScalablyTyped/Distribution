@@ -23,40 +23,29 @@ trait UpdateTableRowStyleRequest extends StObject {
 }
 object UpdateTableRowStyleRequest {
   
-  @scala.inline
-  def apply(): UpdateTableRowStyleRequest = {
+  inline def apply(): UpdateTableRowStyleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTableRowStyleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTableRowStyleRequestMutableBuilder[Self <: UpdateTableRowStyleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTableRowStyleRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setRowIndices(value: js.Array[Double]): Self = StObject.set(x, "rowIndices", value.asInstanceOf[js.Any])
+    inline def setRowIndices(value: js.Array[Double]): Self = StObject.set(x, "rowIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
+    inline def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
     
-    @scala.inline
-    def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
+    inline def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
+    inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
+    inline def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
     
-    @scala.inline
-    def setTableStartLocation(value: Location): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
+    inline def setTableStartLocation(value: Location): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
+    inline def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
   }
 }

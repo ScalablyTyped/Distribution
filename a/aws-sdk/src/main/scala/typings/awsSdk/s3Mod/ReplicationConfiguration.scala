@@ -18,22 +18,17 @@ trait ReplicationConfiguration extends StObject {
 }
 object ReplicationConfiguration {
   
-  @scala.inline
-  def apply(Role: Role, Rules: ReplicationRules): ReplicationConfiguration = {
+  inline def apply(Role: Role, Rules: ReplicationRules): ReplicationConfiguration = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationConfiguration]
   }
   
-  @scala.inline
-  implicit class ReplicationConfigurationMutableBuilder[Self <: ReplicationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationConfiguration](x: Self) {
     
-    @scala.inline
-    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: ReplicationRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: ReplicationRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: ReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

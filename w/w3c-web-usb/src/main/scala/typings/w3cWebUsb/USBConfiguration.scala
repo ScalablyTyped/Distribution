@@ -14,28 +14,21 @@ trait USBConfiguration extends StObject {
 }
 object USBConfiguration {
   
-  @scala.inline
-  def apply(configurationValue: Double, interfaces: js.Array[USBInterface]): USBConfiguration = {
+  inline def apply(configurationValue: Double, interfaces: js.Array[USBInterface]): USBConfiguration = {
     val __obj = js.Dynamic.literal(configurationValue = configurationValue.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBConfiguration]
   }
   
-  @scala.inline
-  implicit class USBConfigurationMutableBuilder[Self <: USBConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: USBConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
+    inline def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
+    inline def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
     
-    @scala.inline
-    def setConfigurationValue(value: Double): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
+    inline def setConfigurationValue(value: Double): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaces(value: js.Array[USBInterface]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+    inline def setInterfaces(value: js.Array[USBInterface]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfacesVarargs(value: USBInterface*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: USBInterface*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
   }
 }

@@ -26,49 +26,35 @@ trait ThreatMatch extends StObject {
 }
 object ThreatMatch {
   
-  @scala.inline
-  def apply(): ThreatMatch = {
+  inline def apply(): ThreatMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatMatch]
   }
   
-  @scala.inline
-  implicit class ThreatMatchMutableBuilder[Self <: ThreatMatch] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatMatch](x: Self) {
     
-    @scala.inline
-    def setCacheDuration(value: String): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
+    inline def setCacheDuration(value: String): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheDurationUndefined: Self = StObject.set(x, "cacheDuration", js.undefined)
+    inline def setCacheDurationUndefined: Self = StObject.set(x, "cacheDuration", js.undefined)
     
-    @scala.inline
-    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
+    inline def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
+    inline def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
-    @scala.inline
-    def setThreat(value: ThreatEntry): Self = StObject.set(x, "threat", value.asInstanceOf[js.Any])
+    inline def setThreat(value: ThreatEntry): Self = StObject.set(x, "threat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatEntryMetadata(value: ThreatEntryMetadata): Self = StObject.set(x, "threatEntryMetadata", value.asInstanceOf[js.Any])
+    inline def setThreatEntryMetadata(value: ThreatEntryMetadata): Self = StObject.set(x, "threatEntryMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatEntryMetadataUndefined: Self = StObject.set(x, "threatEntryMetadata", js.undefined)
+    inline def setThreatEntryMetadataUndefined: Self = StObject.set(x, "threatEntryMetadata", js.undefined)
     
-    @scala.inline
-    def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
+    inline def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
+    inline def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
     
-    @scala.inline
-    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
+    inline def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
+    inline def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
     
-    @scala.inline
-    def setThreatUndefined: Self = StObject.set(x, "threat", js.undefined)
+    inline def setThreatUndefined: Self = StObject.set(x, "threat", js.undefined)
   }
 }

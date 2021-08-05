@@ -23,28 +23,21 @@ trait UpdateEnvironmentRequest extends StObject {
 }
 object UpdateEnvironmentRequest {
   
-  @scala.inline
-  def apply(environmentId: EnvironmentId): UpdateEnvironmentRequest = {
+  inline def apply(environmentId: EnvironmentId): UpdateEnvironmentRequest = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class UpdateEnvironmentRequestMutableBuilder[Self <: UpdateEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: EnvironmentDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: EnvironmentDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EnvironmentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: EnvironmentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

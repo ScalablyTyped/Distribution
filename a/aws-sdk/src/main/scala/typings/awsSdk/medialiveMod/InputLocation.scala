@@ -23,28 +23,21 @@ trait InputLocation extends StObject {
 }
 object InputLocation {
   
-  @scala.inline
-  def apply(Uri: string): InputLocation = {
+  inline def apply(Uri: string): InputLocation = {
     val __obj = js.Dynamic.literal(Uri = Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLocation]
   }
   
-  @scala.inline
-  implicit class InputLocationMutableBuilder[Self <: InputLocation] (val x: Self) extends AnyVal {
+  extension [Self <: InputLocation](x: Self) {
     
-    @scala.inline
-    def setPasswordParam(value: string): Self = StObject.set(x, "PasswordParam", value.asInstanceOf[js.Any])
+    inline def setPasswordParam(value: string): Self = StObject.set(x, "PasswordParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordParamUndefined: Self = StObject.set(x, "PasswordParam", js.undefined)
+    inline def setPasswordParamUndefined: Self = StObject.set(x, "PasswordParam", js.undefined)
     
-    @scala.inline
-    def setUri(value: string): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: string): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

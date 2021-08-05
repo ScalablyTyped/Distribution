@@ -8,11 +8,9 @@ object lexicographicIntegerStrings {
   
   @js.native
   sealed trait array extends StObject
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait hex extends StObject
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
 }

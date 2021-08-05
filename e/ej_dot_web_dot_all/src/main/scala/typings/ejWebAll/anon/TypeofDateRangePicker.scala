@@ -15,19 +15,15 @@ trait TypeofDateRangePicker extends StObject {
 }
 object TypeofDateRangePicker {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: DateRangePicker): TypeofDateRangePicker = {
+  inline def apply(Locale: js.Any, fn: DateRangePicker): TypeofDateRangePicker = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDateRangePicker]
   }
   
-  @scala.inline
-  implicit class TypeofDateRangePickerMutableBuilder[Self <: TypeofDateRangePicker] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDateRangePicker](x: Self) {
     
-    @scala.inline
-    def setFn(value: DateRangePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: DateRangePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

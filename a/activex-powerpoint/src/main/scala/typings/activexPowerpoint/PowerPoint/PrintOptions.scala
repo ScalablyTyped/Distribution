@@ -27,7 +27,7 @@ trait PrintOptions extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.PrintOptions_typekey")
+  /* private */ @JSName("PowerPoint.PrintOptions_typekey")
   var PowerPointDotPrintOptions_typekey: PrintOptions
   
   var PrintColorType: PpPrintColorType
@@ -50,8 +50,7 @@ trait PrintOptions extends StObject {
 }
 object PrintOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivePrinter: String,
     Application: Application,
     Collate: MsoTriState,
@@ -78,67 +77,46 @@ object PrintOptions {
     __obj.asInstanceOf[PrintOptions]
   }
   
-  @scala.inline
-  implicit class PrintOptionsMutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrintOptions](x: Self) {
     
-    @scala.inline
-    def setActivePrinter(value: String): Self = StObject.set(x, "ActivePrinter", value.asInstanceOf[js.Any])
+    inline def setActivePrinter(value: String): Self = StObject.set(x, "ActivePrinter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollate(value: MsoTriState): Self = StObject.set(x, "Collate", value.asInstanceOf[js.Any])
+    inline def setCollate(value: MsoTriState): Self = StObject.set(x, "Collate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitToPage(value: MsoTriState): Self = StObject.set(x, "FitToPage", value.asInstanceOf[js.Any])
+    inline def setFitToPage(value: MsoTriState): Self = StObject.set(x, "FitToPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameSlides(value: MsoTriState): Self = StObject.set(x, "FrameSlides", value.asInstanceOf[js.Any])
+    inline def setFrameSlides(value: MsoTriState): Self = StObject.set(x, "FrameSlides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandoutOrder(value: PpPrintHandoutOrder): Self = StObject.set(x, "HandoutOrder", value.asInstanceOf[js.Any])
+    inline def setHandoutOrder(value: PpPrintHandoutOrder): Self = StObject.set(x, "HandoutOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighQuality(value: MsoTriState): Self = StObject.set(x, "HighQuality", value.asInstanceOf[js.Any])
+    inline def setHighQuality(value: MsoTriState): Self = StObject.set(x, "HighQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfCopies(value: Double): Self = StObject.set(x, "NumberOfCopies", value.asInstanceOf[js.Any])
+    inline def setNumberOfCopies(value: Double): Self = StObject.set(x, "NumberOfCopies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputType(value: PpPrintOutputType): Self = StObject.set(x, "OutputType", value.asInstanceOf[js.Any])
+    inline def setOutputType(value: PpPrintOutputType): Self = StObject.set(x, "OutputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPrintOptions_typekey(value: PrintOptions): Self = StObject.set(x, "PowerPoint.PrintOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPrintOptions_typekey(value: PrintOptions): Self = StObject.set(x, "PowerPoint.PrintOptions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintColorType(value: PpPrintColorType): Self = StObject.set(x, "PrintColorType", value.asInstanceOf[js.Any])
+    inline def setPrintColorType(value: PpPrintColorType): Self = StObject.set(x, "PrintColorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintComments(value: MsoTriState): Self = StObject.set(x, "PrintComments", value.asInstanceOf[js.Any])
+    inline def setPrintComments(value: MsoTriState): Self = StObject.set(x, "PrintComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintFontsAsGraphics(value: MsoTriState): Self = StObject.set(x, "PrintFontsAsGraphics", value.asInstanceOf[js.Any])
+    inline def setPrintFontsAsGraphics(value: MsoTriState): Self = StObject.set(x, "PrintFontsAsGraphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintHiddenSlides(value: MsoTriState): Self = StObject.set(x, "PrintHiddenSlides", value.asInstanceOf[js.Any])
+    inline def setPrintHiddenSlides(value: MsoTriState): Self = StObject.set(x, "PrintHiddenSlides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintInBackground(value: MsoTriState): Self = StObject.set(x, "PrintInBackground", value.asInstanceOf[js.Any])
+    inline def setPrintInBackground(value: MsoTriState): Self = StObject.set(x, "PrintInBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeType(value: PpPrintRangeType): Self = StObject.set(x, "RangeType", value.asInstanceOf[js.Any])
+    inline def setRangeType(value: PpPrintRangeType): Self = StObject.set(x, "RangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanges(value: PrintRanges): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: PrintRanges): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionIndex(value: Double): Self = StObject.set(x, "sectionIndex", value.asInstanceOf[js.Any])
+    inline def setSectionIndex(value: Double): Self = StObject.set(x, "sectionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
+    inline def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
   }
 }

@@ -49,43 +49,31 @@ trait DocumentViewUpdateData extends StObject {
 }
 object DocumentViewUpdateData {
   
-  @scala.inline
-  def apply(): DocumentViewUpdateData = {
+  inline def apply(): DocumentViewUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentViewUpdateData]
   }
   
-  @scala.inline
-  implicit class DocumentViewUpdateDataMutableBuilder[Self <: DocumentViewUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentViewUpdateData](x: Self) {
     
-    @scala.inline
-    def setDisableHyperlinks(value: Boolean): Self = StObject.set(x, "disableHyperlinks", value.asInstanceOf[js.Any])
+    inline def setDisableHyperlinks(value: Boolean): Self = StObject.set(x, "disableHyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableHyperlinksUndefined: Self = StObject.set(x, "disableHyperlinks", js.undefined)
+    inline def setDisableHyperlinksUndefined: Self = StObject.set(x, "disableHyperlinks", js.undefined)
     
-    @scala.inline
-    def setDisablePan(value: Boolean): Self = StObject.set(x, "disablePan", value.asInstanceOf[js.Any])
+    inline def setDisablePan(value: Boolean): Self = StObject.set(x, "disablePan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablePanUndefined: Self = StObject.set(x, "disablePan", js.undefined)
+    inline def setDisablePanUndefined: Self = StObject.set(x, "disablePan", js.undefined)
     
-    @scala.inline
-    def setDisablePanZoomWindow(value: Boolean): Self = StObject.set(x, "disablePanZoomWindow", value.asInstanceOf[js.Any])
+    inline def setDisablePanZoomWindow(value: Boolean): Self = StObject.set(x, "disablePanZoomWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablePanZoomWindowUndefined: Self = StObject.set(x, "disablePanZoomWindow", js.undefined)
+    inline def setDisablePanZoomWindowUndefined: Self = StObject.set(x, "disablePanZoomWindow", js.undefined)
     
-    @scala.inline
-    def setDisableZoom(value: Boolean): Self = StObject.set(x, "disableZoom", value.asInstanceOf[js.Any])
+    inline def setDisableZoom(value: Boolean): Self = StObject.set(x, "disableZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableZoomUndefined: Self = StObject.set(x, "disableZoom", js.undefined)
+    inline def setDisableZoomUndefined: Self = StObject.set(x, "disableZoom", js.undefined)
     
-    @scala.inline
-    def setHideDiagramBoundary(value: Boolean): Self = StObject.set(x, "hideDiagramBoundary", value.asInstanceOf[js.Any])
+    inline def setHideDiagramBoundary(value: Boolean): Self = StObject.set(x, "hideDiagramBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDiagramBoundaryUndefined: Self = StObject.set(x, "hideDiagramBoundary", js.undefined)
+    inline def setHideDiagramBoundaryUndefined: Self = StObject.set(x, "hideDiagramBoundary", js.undefined)
   }
 }

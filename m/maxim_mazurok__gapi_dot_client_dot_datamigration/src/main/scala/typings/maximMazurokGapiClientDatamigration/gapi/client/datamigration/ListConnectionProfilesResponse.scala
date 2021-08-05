@@ -17,37 +17,27 @@ trait ListConnectionProfilesResponse extends StObject {
 }
 object ListConnectionProfilesResponse {
   
-  @scala.inline
-  def apply(): ListConnectionProfilesResponse = {
+  inline def apply(): ListConnectionProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListConnectionProfilesResponse]
   }
   
-  @scala.inline
-  implicit class ListConnectionProfilesResponseMutableBuilder[Self <: ListConnectionProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListConnectionProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setConnectionProfiles(value: js.Array[ConnectionProfile]): Self = StObject.set(x, "connectionProfiles", value.asInstanceOf[js.Any])
+    inline def setConnectionProfiles(value: js.Array[ConnectionProfile]): Self = StObject.set(x, "connectionProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionProfilesUndefined: Self = StObject.set(x, "connectionProfiles", js.undefined)
+    inline def setConnectionProfilesUndefined: Self = StObject.set(x, "connectionProfiles", js.undefined)
     
-    @scala.inline
-    def setConnectionProfilesVarargs(value: ConnectionProfile*): Self = StObject.set(x, "connectionProfiles", js.Array(value :_*))
+    inline def setConnectionProfilesVarargs(value: ConnectionProfile*): Self = StObject.set(x, "connectionProfiles", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
+    inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
+    inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

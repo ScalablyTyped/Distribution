@@ -23,10 +23,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def forRoot(): ModuleWithProviders[IonicStorageModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")().asInstanceOf[ModuleWithProviders[IonicStorageModule]]
-    @scala.inline
-    def forRoot(storageConfig: StorageConfig): ModuleWithProviders[IonicStorageModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(storageConfig.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[IonicStorageModule]]
+    inline def forRoot(): ModuleWithProviders[IonicStorageModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")().asInstanceOf[ModuleWithProviders[IonicStorageModule]]
+    inline def forRoot(storageConfig: StorageConfig): ModuleWithProviders[IonicStorageModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(storageConfig.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[IonicStorageModule]]
   }
   
   @JSImport("@ionic/storage", "Storage")
@@ -47,6 +45,5 @@ object mod {
   @js.native
   val StorageConfigToken: InjectionToken[js.Any] = js.native
   
-  @scala.inline
-  def ɵa(storageConfig: StorageConfig, platformID: js.Object): typings.ionicStorage.storageMod.Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275a")(storageConfig.asInstanceOf[js.Any], platformID.asInstanceOf[js.Any])).asInstanceOf[typings.ionicStorage.storageMod.Storage]
+  inline def ɵa(storageConfig: StorageConfig, platformID: js.Object): typings.ionicStorage.storageMod.Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275a")(storageConfig.asInstanceOf[js.Any], platformID.asInstanceOf[js.Any])).asInstanceOf[typings.ionicStorage.storageMod.Storage]
 }

@@ -88,80 +88,56 @@ object simpleUserDelegateMod {
   }
   object SimpleUserDelegate {
     
-    @scala.inline
-    def apply(): SimpleUserDelegate = {
+    inline def apply(): SimpleUserDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SimpleUserDelegate]
     }
     
-    @scala.inline
-    implicit class SimpleUserDelegateMutableBuilder[Self <: SimpleUserDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleUserDelegate](x: Self) {
       
-      @scala.inline
-      def setOnCallAnswered(value: () => Unit): Self = StObject.set(x, "onCallAnswered", js.Any.fromFunction0(value))
+      inline def setOnCallAnswered(value: () => Unit): Self = StObject.set(x, "onCallAnswered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCallAnsweredUndefined: Self = StObject.set(x, "onCallAnswered", js.undefined)
+      inline def setOnCallAnsweredUndefined: Self = StObject.set(x, "onCallAnswered", js.undefined)
       
-      @scala.inline
-      def setOnCallCreated(value: () => Unit): Self = StObject.set(x, "onCallCreated", js.Any.fromFunction0(value))
+      inline def setOnCallCreated(value: () => Unit): Self = StObject.set(x, "onCallCreated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCallCreatedUndefined: Self = StObject.set(x, "onCallCreated", js.undefined)
+      inline def setOnCallCreatedUndefined: Self = StObject.set(x, "onCallCreated", js.undefined)
       
-      @scala.inline
-      def setOnCallDTMFReceived(value: (/* tone */ String, /* duration */ Double) => Unit): Self = StObject.set(x, "onCallDTMFReceived", js.Any.fromFunction2(value))
+      inline def setOnCallDTMFReceived(value: (/* tone */ String, /* duration */ Double) => Unit): Self = StObject.set(x, "onCallDTMFReceived", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCallDTMFReceivedUndefined: Self = StObject.set(x, "onCallDTMFReceived", js.undefined)
+      inline def setOnCallDTMFReceivedUndefined: Self = StObject.set(x, "onCallDTMFReceived", js.undefined)
       
-      @scala.inline
-      def setOnCallHangup(value: () => Unit): Self = StObject.set(x, "onCallHangup", js.Any.fromFunction0(value))
+      inline def setOnCallHangup(value: () => Unit): Self = StObject.set(x, "onCallHangup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCallHangupUndefined: Self = StObject.set(x, "onCallHangup", js.undefined)
+      inline def setOnCallHangupUndefined: Self = StObject.set(x, "onCallHangup", js.undefined)
       
-      @scala.inline
-      def setOnCallHold(value: /* held */ Boolean => Unit): Self = StObject.set(x, "onCallHold", js.Any.fromFunction1(value))
+      inline def setOnCallHold(value: /* held */ Boolean => Unit): Self = StObject.set(x, "onCallHold", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCallHoldUndefined: Self = StObject.set(x, "onCallHold", js.undefined)
+      inline def setOnCallHoldUndefined: Self = StObject.set(x, "onCallHold", js.undefined)
       
-      @scala.inline
-      def setOnCallReceived(value: () => Unit): Self = StObject.set(x, "onCallReceived", js.Any.fromFunction0(value))
+      inline def setOnCallReceived(value: () => Unit): Self = StObject.set(x, "onCallReceived", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCallReceivedUndefined: Self = StObject.set(x, "onCallReceived", js.undefined)
+      inline def setOnCallReceivedUndefined: Self = StObject.set(x, "onCallReceived", js.undefined)
       
-      @scala.inline
-      def setOnMessageReceived(value: /* message */ String => Unit): Self = StObject.set(x, "onMessageReceived", js.Any.fromFunction1(value))
+      inline def setOnMessageReceived(value: /* message */ String => Unit): Self = StObject.set(x, "onMessageReceived", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessageReceivedUndefined: Self = StObject.set(x, "onMessageReceived", js.undefined)
+      inline def setOnMessageReceivedUndefined: Self = StObject.set(x, "onMessageReceived", js.undefined)
       
-      @scala.inline
-      def setOnRegistered(value: () => Unit): Self = StObject.set(x, "onRegistered", js.Any.fromFunction0(value))
+      inline def setOnRegistered(value: () => Unit): Self = StObject.set(x, "onRegistered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRegisteredUndefined: Self = StObject.set(x, "onRegistered", js.undefined)
+      inline def setOnRegisteredUndefined: Self = StObject.set(x, "onRegistered", js.undefined)
       
-      @scala.inline
-      def setOnServerConnect(value: () => Unit): Self = StObject.set(x, "onServerConnect", js.Any.fromFunction0(value))
+      inline def setOnServerConnect(value: () => Unit): Self = StObject.set(x, "onServerConnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnServerConnectUndefined: Self = StObject.set(x, "onServerConnect", js.undefined)
+      inline def setOnServerConnectUndefined: Self = StObject.set(x, "onServerConnect", js.undefined)
       
-      @scala.inline
-      def setOnServerDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onServerDisconnect", js.Any.fromFunction1(value))
+      inline def setOnServerDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onServerDisconnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnServerDisconnectUndefined: Self = StObject.set(x, "onServerDisconnect", js.undefined)
+      inline def setOnServerDisconnectUndefined: Self = StObject.set(x, "onServerDisconnect", js.undefined)
       
-      @scala.inline
-      def setOnUnregistered(value: () => Unit): Self = StObject.set(x, "onUnregistered", js.Any.fromFunction0(value))
+      inline def setOnUnregistered(value: () => Unit): Self = StObject.set(x, "onUnregistered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnregisteredUndefined: Self = StObject.set(x, "onUnregistered", js.undefined)
+      inline def setOnUnregisteredUndefined: Self = StObject.set(x, "onUnregistered", js.undefined)
     }
   }
 }

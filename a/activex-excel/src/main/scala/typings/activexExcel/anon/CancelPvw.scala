@@ -13,19 +13,15 @@ trait CancelPvw extends StObject {
 }
 object CancelPvw {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Pvw: ProtectedViewWindow): CancelPvw = {
+  inline def apply(Cancel: Boolean, Pvw: ProtectedViewWindow): CancelPvw = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Pvw = Pvw.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelPvw]
   }
   
-  @scala.inline
-  implicit class CancelPvwMutableBuilder[Self <: CancelPvw] (val x: Self) extends AnyVal {
+  extension [Self <: CancelPvw](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPvw(value: ProtectedViewWindow): Self = StObject.set(x, "Pvw", value.asInstanceOf[js.Any])
+    inline def setPvw(value: ProtectedViewWindow): Self = StObject.set(x, "Pvw", value.asInstanceOf[js.Any])
   }
 }

@@ -25,16 +25,13 @@ trait BackendSetupException
 }
 object BackendSetupException {
   
-  @scala.inline
-  def apply(BackendException: js.Any, Context: XInterface, Message: String): BackendSetupException = {
+  inline def apply(BackendException: js.Any, Context: XInterface, Message: String): BackendSetupException = {
     val __obj = js.Dynamic.literal(BackendException = BackendException.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendSetupException]
   }
   
-  @scala.inline
-  implicit class BackendSetupExceptionMutableBuilder[Self <: BackendSetupException] (val x: Self) extends AnyVal {
+  extension [Self <: BackendSetupException](x: Self) {
     
-    @scala.inline
-    def setBackendException(value: js.Any): Self = StObject.set(x, "BackendException", value.asInstanceOf[js.Any])
+    inline def setBackendException(value: js.Any): Self = StObject.set(x, "BackendException", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait DeleteVpcEndpointServiceConfigurationsResult extends StObject {
 }
 object DeleteVpcEndpointServiceConfigurationsResult {
   
-  @scala.inline
-  def apply(): DeleteVpcEndpointServiceConfigurationsResult = {
+  inline def apply(): DeleteVpcEndpointServiceConfigurationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteVpcEndpointServiceConfigurationsResult]
   }
   
-  @scala.inline
-  implicit class DeleteVpcEndpointServiceConfigurationsResultMutableBuilder[Self <: DeleteVpcEndpointServiceConfigurationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpcEndpointServiceConfigurationsResult](x: Self) {
     
-    @scala.inline
-    def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
+    inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
+    inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
   }
 }

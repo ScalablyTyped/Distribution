@@ -18,28 +18,21 @@ trait Direction extends StObject {
 }
 object Direction {
   
-  @scala.inline
-  def apply(current: Double, direction: String, iconPrefix: String, labelPlacement: String, prefixCls: String): Direction = {
+  inline def apply(current: Double, direction: String, iconPrefix: String, labelPlacement: String, prefixCls: String): Direction = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], iconPrefix = iconPrefix.asInstanceOf[js.Any], labelPlacement = labelPlacement.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Direction]
   }
   
-  @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+  extension [Self <: Direction](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPrefix(value: String): Self = StObject.set(x, "iconPrefix", value.asInstanceOf[js.Any])
+    inline def setIconPrefix(value: String): Self = StObject.set(x, "iconPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPlacement(value: String): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
+    inline def setLabelPlacement(value: String): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

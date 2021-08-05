@@ -18,19 +18,15 @@ trait AuthenticationSessionAccountInformation extends StObject {
 }
 object AuthenticationSessionAccountInformation {
   
-  @scala.inline
-  def apply(id: String, label: String): AuthenticationSessionAccountInformation = {
+  inline def apply(id: String, label: String): AuthenticationSessionAccountInformation = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationSessionAccountInformation]
   }
   
-  @scala.inline
-  implicit class AuthenticationSessionAccountInformationMutableBuilder[Self <: AuthenticationSessionAccountInformation] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationSessionAccountInformation](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

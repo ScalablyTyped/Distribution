@@ -16,22 +16,17 @@ trait SchemaVulnerableParameters extends StObject {
 }
 object SchemaVulnerableParameters {
   
-  @scala.inline
-  def apply(): SchemaVulnerableParameters = {
+  inline def apply(): SchemaVulnerableParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVulnerableParameters]
   }
   
-  @scala.inline
-  implicit class SchemaVulnerableParametersMutableBuilder[Self <: SchemaVulnerableParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVulnerableParameters](x: Self) {
     
-    @scala.inline
-    def setParameterNames(value: js.Array[String]): Self = StObject.set(x, "parameterNames", value.asInstanceOf[js.Any])
+    inline def setParameterNames(value: js.Array[String]): Self = StObject.set(x, "parameterNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNamesUndefined: Self = StObject.set(x, "parameterNames", js.undefined)
+    inline def setParameterNamesUndefined: Self = StObject.set(x, "parameterNames", js.undefined)
     
-    @scala.inline
-    def setParameterNamesVarargs(value: String*): Self = StObject.set(x, "parameterNames", js.Array(value :_*))
+    inline def setParameterNamesVarargs(value: String*): Self = StObject.set(x, "parameterNames", js.Array(value :_*))
   }
 }

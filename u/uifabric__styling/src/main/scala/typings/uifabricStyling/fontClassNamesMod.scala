@@ -16,8 +16,7 @@ object fontClassNamesMod {
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.large")
     @js.native
     def large: js.UndefOr[String] = js.native
-    @scala.inline
-    def large_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("large")(x.asInstanceOf[js.Any])
+    inline def large_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("large")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.medium")
     @js.native
@@ -26,17 +25,14 @@ object fontClassNamesMod {
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.mediumPlus")
     @js.native
     def mediumPlus: js.UndefOr[String] = js.native
-    @scala.inline
-    def mediumPlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mediumPlus")(x.asInstanceOf[js.Any])
+    inline def mediumPlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mediumPlus")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def medium_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
+    inline def medium_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.mega")
     @js.native
     def mega: js.UndefOr[String] = js.native
-    @scala.inline
-    def mega_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mega")(x.asInstanceOf[js.Any])
+    inline def mega_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mega")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.small")
     @js.native
@@ -45,23 +41,19 @@ object fontClassNamesMod {
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.smallPlus")
     @js.native
     def smallPlus: js.UndefOr[String] = js.native
-    @scala.inline
-    def smallPlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smallPlus")(x.asInstanceOf[js.Any])
+    inline def smallPlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smallPlus")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def small_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
+    inline def small_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.superLarge")
     @js.native
     def superLarge: js.UndefOr[String] = js.native
-    @scala.inline
-    def superLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("superLarge")(x.asInstanceOf[js.Any])
+    inline def superLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("superLarge")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.tiny")
     @js.native
     def tiny: js.UndefOr[String] = js.native
-    @scala.inline
-    def tiny_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tiny")(x.asInstanceOf[js.Any])
+    inline def tiny_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tiny")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.xLarge")
     @js.native
@@ -70,17 +62,14 @@ object fontClassNamesMod {
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.xLargePlus")
     @js.native
     def xLargePlus: js.UndefOr[String] = js.native
-    @scala.inline
-    def xLargePlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xLargePlus")(x.asInstanceOf[js.Any])
+    inline def xLargePlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xLargePlus")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def xLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xLarge")(x.asInstanceOf[js.Any])
+    inline def xLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xLarge")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.xSmall")
     @js.native
     def xSmall: js.UndefOr[String] = js.native
-    @scala.inline
-    def xSmall_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xSmall")(x.asInstanceOf[js.Any])
+    inline def xSmall_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xSmall")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.xxLarge")
     @js.native
@@ -89,10 +78,8 @@ object fontClassNamesMod {
     @JSImport("@uifabric/styling/lib/classNames/FontClassNames", "FontClassNames.xxLargePlus")
     @js.native
     def xxLargePlus: js.UndefOr[String] = js.native
-    @scala.inline
-    def xxLargePlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxLargePlus")(x.asInstanceOf[js.Any])
+    inline def xxLargePlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxLargePlus")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def xxLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxLarge")(x.asInstanceOf[js.Any])
+    inline def xxLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxLarge")(x.asInstanceOf[js.Any])
   }
 }

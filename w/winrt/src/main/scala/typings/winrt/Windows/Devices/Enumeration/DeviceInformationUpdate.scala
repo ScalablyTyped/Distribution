@@ -10,8 +10,7 @@ trait DeviceInformationUpdate
      with IDeviceInformationUpdate
 object DeviceInformationUpdate {
   
-  @scala.inline
-  def apply(id: String, properties: IMapView[String, js.Any]): DeviceInformationUpdate = {
+  inline def apply(id: String, properties: IMapView[String, js.Any]): DeviceInformationUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInformationUpdate]
   }

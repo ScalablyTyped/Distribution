@@ -26,8 +26,7 @@ trait sizeCreateAgeRendererParamsLegendOptions
 }
 object sizeCreateAgeRendererParamsLegendOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object sizeCreateAgeRendererParamsLegendOptions {
     __obj.asInstanceOf[sizeCreateAgeRendererParamsLegendOptions]
   }
   
-  @scala.inline
-  implicit class sizeCreateAgeRendererParamsLegendOptionsMutableBuilder[Self <: sizeCreateAgeRendererParamsLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: sizeCreateAgeRendererParamsLegendOptions](x: Self) {
     
-    @scala.inline
-    def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
+    inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLegendUndefined: Self = StObject.set(x, "showLegend", js.undefined)
+    inline def setShowLegendUndefined: Self = StObject.set(x, "showLegend", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object addMatchingCardsToResultsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addMatchingCardsToResults(cardNumber: String, cardConfiguration: CreditCardType, results: js.Array[CreditCardType]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMatchingCardsToResults")(cardNumber.asInstanceOf[js.Any], cardConfiguration.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMatchingCardsToResults(cardNumber: String, cardConfiguration: CreditCardType, results: js.Array[CreditCardType]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMatchingCardsToResults")(cardNumber.asInstanceOf[js.Any], cardConfiguration.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

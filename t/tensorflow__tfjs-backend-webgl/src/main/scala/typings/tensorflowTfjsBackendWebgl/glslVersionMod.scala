@@ -10,8 +10,7 @@ object glslVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getGlslDifferences(): GLSL = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlslDifferences")().asInstanceOf[GLSL]
+  inline def getGlslDifferences(): GLSL = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlslDifferences")().asInstanceOf[GLSL]
   
   trait GLSL extends StObject {
     
@@ -37,8 +36,7 @@ object glslVersionMod {
   }
   object GLSL {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attribute: String,
       defineOutput: String,
       defineRound: String,
@@ -54,38 +52,27 @@ object glslVersionMod {
       __obj.asInstanceOf[GLSL]
     }
     
-    @scala.inline
-    implicit class GLSLMutableBuilder[Self <: GLSL] (val x: Self) extends AnyVal {
+    extension [Self <: GLSL](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefineOutput(value: String): Self = StObject.set(x, "defineOutput", value.asInstanceOf[js.Any])
+      inline def setDefineOutput(value: String): Self = StObject.set(x, "defineOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefineRound(value: String): Self = StObject.set(x, "defineRound", value.asInstanceOf[js.Any])
+      inline def setDefineRound(value: String): Self = StObject.set(x, "defineRound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefineSpecialInf(value: String): Self = StObject.set(x, "defineSpecialInf", value.asInstanceOf[js.Any])
+      inline def setDefineSpecialInf(value: String): Self = StObject.set(x, "defineSpecialInf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefineSpecialNaN(value: String): Self = StObject.set(x, "defineSpecialNaN", value.asInstanceOf[js.Any])
+      inline def setDefineSpecialNaN(value: String): Self = StObject.set(x, "defineSpecialNaN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTexture2D(value: String): Self = StObject.set(x, "texture2D", value.asInstanceOf[js.Any])
+      inline def setTexture2D(value: String): Self = StObject.set(x, "texture2D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaryingFs(value: String): Self = StObject.set(x, "varyingFs", value.asInstanceOf[js.Any])
+      inline def setVaryingFs(value: String): Self = StObject.set(x, "varyingFs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaryingVs(value: String): Self = StObject.set(x, "varyingVs", value.asInstanceOf[js.Any])
+      inline def setVaryingVs(value: String): Self = StObject.set(x, "varyingVs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

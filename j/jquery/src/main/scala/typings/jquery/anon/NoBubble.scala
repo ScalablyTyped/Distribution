@@ -17,16 +17,13 @@ trait NoBubble
 }
 object NoBubble {
   
-  @scala.inline
-  def apply(noBubble: Boolean): NoBubble = {
+  inline def apply(noBubble: Boolean): NoBubble = {
     val __obj = js.Dynamic.literal(noBubble = noBubble.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoBubble]
   }
   
-  @scala.inline
-  implicit class NoBubbleMutableBuilder[Self <: NoBubble] (val x: Self) extends AnyVal {
+  extension [Self <: NoBubble](x: Self) {
     
-    @scala.inline
-    def setNoBubble(value: Boolean): Self = StObject.set(x, "noBubble", value.asInstanceOf[js.Any])
+    inline def setNoBubble(value: Boolean): Self = StObject.set(x, "noBubble", value.asInstanceOf[js.Any])
   }
 }

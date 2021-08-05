@@ -11,16 +11,13 @@ trait PickImplcannotPlace extends StObject {
 }
 object PickImplcannotPlace {
   
-  @scala.inline
-  def apply(cannotPlace: String): PickImplcannotPlace = {
+  inline def apply(cannotPlace: String): PickImplcannotPlace = {
     val __obj = js.Dynamic.literal(cannotPlace = cannotPlace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcannotPlace]
   }
   
-  @scala.inline
-  implicit class PickImplcannotPlaceMutableBuilder[Self <: PickImplcannotPlace] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcannotPlace](x: Self) {
     
-    @scala.inline
-    def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
+    inline def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
   }
 }

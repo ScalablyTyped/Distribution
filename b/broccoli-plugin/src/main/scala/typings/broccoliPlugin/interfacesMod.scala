@@ -44,50 +44,36 @@ object interfacesMod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(): PluginOptions = {
+    inline def apply(): PluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+      inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
+      inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNeedsCache(value: Boolean): Self = StObject.set(x, "needsCache", value.asInstanceOf[js.Any])
+      inline def setNeedsCache(value: Boolean): Self = StObject.set(x, "needsCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedsCacheUndefined: Self = StObject.set(x, "needsCache", js.undefined)
+      inline def setNeedsCacheUndefined: Self = StObject.set(x, "needsCache", js.undefined)
       
-      @scala.inline
-      def setPersistentOutput(value: Boolean): Self = StObject.set(x, "persistentOutput", value.asInstanceOf[js.Any])
+      inline def setPersistentOutput(value: Boolean): Self = StObject.set(x, "persistentOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentOutputUndefined: Self = StObject.set(x, "persistentOutput", js.undefined)
+      inline def setPersistentOutputUndefined: Self = StObject.set(x, "persistentOutput", js.undefined)
       
-      @scala.inline
-      def setTrackInputChanges(value: Boolean): Self = StObject.set(x, "trackInputChanges", value.asInstanceOf[js.Any])
+      inline def setTrackInputChanges(value: Boolean): Self = StObject.set(x, "trackInputChanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackInputChangesUndefined: Self = StObject.set(x, "trackInputChanges", js.undefined)
+      inline def setTrackInputChangesUndefined: Self = StObject.set(x, "trackInputChanges", js.undefined)
       
-      @scala.inline
-      def setVolatile(value: Boolean): Self = StObject.set(x, "volatile", value.asInstanceOf[js.Any])
+      inline def setVolatile(value: Boolean): Self = StObject.set(x, "volatile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolatileUndefined: Self = StObject.set(x, "volatile", js.undefined)
+      inline def setVolatileUndefined: Self = StObject.set(x, "volatile", js.undefined)
     }
   }
 }

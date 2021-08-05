@@ -90,26 +90,22 @@ object WebUI {
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onactivated")
     @js.native
     def onactivated: js.Any = js.native
-    @scala.inline
-    def onactivated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onactivated")(x.asInstanceOf[js.Any])
+    inline def onactivated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onactivated")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onnavigated")
     @js.native
     def onnavigated: js.Any = js.native
-    @scala.inline
-    def onnavigated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnavigated")(x.asInstanceOf[js.Any])
+    inline def onnavigated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnavigated")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onresuming")
     @js.native
     def onresuming: js.Any = js.native
-    @scala.inline
-    def onresuming_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onresuming")(x.asInstanceOf[js.Any])
+    inline def onresuming_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onresuming")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onsuspending")
     @js.native
     def onsuspending: js.Any = js.native
-    @scala.inline
-    def onsuspending_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsuspending")(x.asInstanceOf[js.Any])
+    inline def onsuspending_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsuspending")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance")
@@ -127,8 +123,7 @@ object WebUI {
     @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance.current")
     @js.native
     def current: IWebUIBackgroundTaskInstance = js.native
-    @scala.inline
-    def current_=(x: IWebUIBackgroundTaskInstance): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+    inline def current_=(x: IWebUIBackgroundTaskInstance): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstanceRuntimeClass")

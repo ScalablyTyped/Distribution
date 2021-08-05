@@ -13,8 +13,7 @@ trait S extends StObject {
 }
 object S {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     S: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     V: Uint8Array
   ): S = {
@@ -22,15 +21,12 @@ object S {
     __obj.asInstanceOf[S]
   }
   
-  @scala.inline
-  implicit class SMutableBuilder[Self <: S] (val x: Self) extends AnyVal {
+  extension [Self <: S](x: Self) {
     
-    @scala.inline
-    def setS(
+    inline def setS(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: Uint8Array): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
+    inline def setV(value: Uint8Array): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }
 }

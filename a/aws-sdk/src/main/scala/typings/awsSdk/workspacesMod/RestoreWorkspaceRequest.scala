@@ -13,16 +13,13 @@ trait RestoreWorkspaceRequest extends StObject {
 }
 object RestoreWorkspaceRequest {
   
-  @scala.inline
-  def apply(WorkspaceId: WorkspaceId): RestoreWorkspaceRequest = {
+  inline def apply(WorkspaceId: WorkspaceId): RestoreWorkspaceRequest = {
     val __obj = js.Dynamic.literal(WorkspaceId = WorkspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreWorkspaceRequest]
   }
   
-  @scala.inline
-  implicit class RestoreWorkspaceRequestMutableBuilder[Self <: RestoreWorkspaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreWorkspaceRequest](x: Self) {
     
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
   }
 }

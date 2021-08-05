@@ -14,25 +14,19 @@ trait InsightsServicePostResponseNodesItem extends StObject {
 }
 object InsightsServicePostResponseNodesItem {
   
-  @scala.inline
-  def apply(__typename: String, value: Double): InsightsServicePostResponseNodesItem = {
+  inline def apply(__typename: String, value: Double): InsightsServicePostResponseNodesItem = {
     val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseNodesItem]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseNodesItemMutableBuilder[Self <: InsightsServicePostResponseNodesItem] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseNodesItem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
+    inline def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
   }
 }

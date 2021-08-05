@@ -14,8 +14,7 @@ trait KnobOnChange extends StObject {
 }
 object KnobOnChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     knob: Validator[KnobControlConfig[Double]],
     onChange: Validator[js.Function1[/* value */ Double, Double]]
   ): KnobOnChange = {
@@ -23,13 +22,10 @@ object KnobOnChange {
     __obj.asInstanceOf[KnobOnChange]
   }
   
-  @scala.inline
-  implicit class KnobOnChangeMutableBuilder[Self <: KnobOnChange] (val x: Self) extends AnyVal {
+  extension [Self <: KnobOnChange](x: Self) {
     
-    @scala.inline
-    def setKnob(value: Validator[KnobControlConfig[Double]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[KnobControlConfig[Double]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: Validator[js.Function1[/* value */ Double, Double]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Validator[js.Function1[/* value */ Double, Double]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
   }
 }

@@ -34,20 +34,16 @@ object s3outpostsMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -75,23 +71,18 @@ object s3outpostsMod {
   }
   object CreateEndpointRequest {
     
-    @scala.inline
-    def apply(OutpostId: OutpostId, SecurityGroupId: SecurityGroupId, SubnetId: SubnetId): CreateEndpointRequest = {
+    inline def apply(OutpostId: OutpostId, SecurityGroupId: SecurityGroupId, SubnetId: SubnetId): CreateEndpointRequest = {
       val __obj = js.Dynamic.literal(OutpostId = OutpostId.asInstanceOf[js.Any], SecurityGroupId = SecurityGroupId.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateEndpointRequest]
     }
     
-    @scala.inline
-    implicit class CreateEndpointRequestMutableBuilder[Self <: CreateEndpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CreateEndpointRequest](x: Self) {
       
-      @scala.inline
-      def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+      inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "SecurityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "SecurityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,20 +95,16 @@ object s3outpostsMod {
   }
   object CreateEndpointResult {
     
-    @scala.inline
-    def apply(): CreateEndpointResult = {
+    inline def apply(): CreateEndpointResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateEndpointResult]
     }
     
-    @scala.inline
-    implicit class CreateEndpointResultMutableBuilder[Self <: CreateEndpointResult] (val x: Self) extends AnyVal {
+    extension [Self <: CreateEndpointResult](x: Self) {
       
-      @scala.inline
-      def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+      inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
+      inline def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
     }
   }
   
@@ -137,20 +124,16 @@ object s3outpostsMod {
   }
   object DeleteEndpointRequest {
     
-    @scala.inline
-    def apply(EndpointId: EndpointId, OutpostId: OutpostId): DeleteEndpointRequest = {
+    inline def apply(EndpointId: EndpointId, OutpostId: OutpostId): DeleteEndpointRequest = {
       val __obj = js.Dynamic.literal(EndpointId = EndpointId.asInstanceOf[js.Any], OutpostId = OutpostId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteEndpointRequest]
     }
     
-    @scala.inline
-    implicit class DeleteEndpointRequestMutableBuilder[Self <: DeleteEndpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteEndpointRequest](x: Self) {
       
-      @scala.inline
-      def setEndpointId(value: EndpointId): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
+      inline def setEndpointId(value: EndpointId): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+      inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,53 +171,38 @@ object s3outpostsMod {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply(): Endpoint = {
+    inline def apply(): Endpoint = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Endpoint]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Endpoint](x: Self) {
       
-      @scala.inline
-      def setCidrBlock(value: CidrBlock): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
+      inline def setCidrBlock(value: CidrBlock): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
+      inline def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
       
-      @scala.inline
-      def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+      inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
       
-      @scala.inline
-      def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+      inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
+      inline def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
+      inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+      inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
       
-      @scala.inline
-      def setOutpostsId(value: OutpostId): Self = StObject.set(x, "OutpostsId", value.asInstanceOf[js.Any])
+      inline def setOutpostsId(value: OutpostId): Self = StObject.set(x, "OutpostsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostsIdUndefined: Self = StObject.set(x, "OutpostsId", js.undefined)
+      inline def setOutpostsIdUndefined: Self = StObject.set(x, "OutpostsId", js.undefined)
       
-      @scala.inline
-      def setStatus(value: EndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: EndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     }
   }
   
@@ -265,26 +233,20 @@ object s3outpostsMod {
   }
   object ListEndpointsRequest {
     
-    @scala.inline
-    def apply(): ListEndpointsRequest = {
+    inline def apply(): ListEndpointsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListEndpointsRequest]
     }
     
-    @scala.inline
-    implicit class ListEndpointsRequestMutableBuilder[Self <: ListEndpointsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ListEndpointsRequest](x: Self) {
       
-      @scala.inline
-      def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -302,29 +264,22 @@ object s3outpostsMod {
   }
   object ListEndpointsResult {
     
-    @scala.inline
-    def apply(): ListEndpointsResult = {
+    inline def apply(): ListEndpointsResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListEndpointsResult]
     }
     
-    @scala.inline
-    implicit class ListEndpointsResultMutableBuilder[Self <: ListEndpointsResult] (val x: Self) extends AnyVal {
+    extension [Self <: ListEndpointsResult](x: Self) {
       
-      @scala.inline
-      def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+      inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
       
-      @scala.inline
-      def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -339,20 +294,16 @@ object s3outpostsMod {
   }
   object NetworkInterface {
     
-    @scala.inline
-    def apply(): NetworkInterface = {
+    inline def apply(): NetworkInterface = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkInterface]
     }
     
-    @scala.inline
-    implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInterface](x: Self) {
       
-      @scala.inline
-      def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
+      inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     }
   }
   

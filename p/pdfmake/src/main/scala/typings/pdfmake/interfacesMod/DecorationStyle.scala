@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DecorationStyle extends StObject
 object DecorationStyle {
   
-  @scala.inline
-  def dashed: typings.pdfmake.pdfmakeStrings.dashed = "dashed".asInstanceOf[typings.pdfmake.pdfmakeStrings.dashed]
+  inline def dashed: typings.pdfmake.pdfmakeStrings.dashed = "dashed".asInstanceOf[typings.pdfmake.pdfmakeStrings.dashed]
   
-  @scala.inline
-  def dotted: typings.pdfmake.pdfmakeStrings.dotted = "dotted".asInstanceOf[typings.pdfmake.pdfmakeStrings.dotted]
+  inline def dotted: typings.pdfmake.pdfmakeStrings.dotted = "dotted".asInstanceOf[typings.pdfmake.pdfmakeStrings.dotted]
   
-  @scala.inline
-  def double: typings.pdfmake.pdfmakeStrings.double = "double".asInstanceOf[typings.pdfmake.pdfmakeStrings.double]
+  inline def double: typings.pdfmake.pdfmakeStrings.double = "double".asInstanceOf[typings.pdfmake.pdfmakeStrings.double]
   
-  @scala.inline
-  def wavy: typings.pdfmake.pdfmakeStrings.wavy = "wavy".asInstanceOf[typings.pdfmake.pdfmakeStrings.wavy]
+  inline def wavy: typings.pdfmake.pdfmakeStrings.wavy = "wavy".asInstanceOf[typings.pdfmake.pdfmakeStrings.wavy]
 }

@@ -8,6 +8,5 @@ object aggregateErrorStrings {
   
   @js.native
   sealed trait AggregateError extends StObject
-  @scala.inline
-  def AggregateError: AggregateError = "AggregateError".asInstanceOf[AggregateError]
+  inline def AggregateError: AggregateError = "AggregateError".asInstanceOf[AggregateError]
 }

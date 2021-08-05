@@ -24,28 +24,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object AtomicStateNodeConfig {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](initial: Unit, onDone: Unit, states: Unit): AtomicStateNodeConfig[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](initial: Unit, onDone: Unit, states: Unit): AtomicStateNodeConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any], onDone = onDone.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtomicStateNodeConfig[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class AtomicStateNodeConfigMutableBuilder[Self <: AtomicStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (AtomicStateNodeConfig[TContext, TEvent])) extends AnyVal {
+  extension [Self <: AtomicStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (AtomicStateNodeConfig[TContext, TEvent])) {
     
-    @scala.inline
-    def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDone(value: Unit): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
+    inline def setOnDone(value: Unit): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallel(value: `false`): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+    inline def setParallel(value: `false`): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+    inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
     
-    @scala.inline
-    def setStates(value: Unit): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: Unit): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
   }
 }

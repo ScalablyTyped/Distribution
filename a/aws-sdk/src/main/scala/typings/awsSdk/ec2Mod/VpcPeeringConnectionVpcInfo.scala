@@ -43,61 +43,43 @@ trait VpcPeeringConnectionVpcInfo extends StObject {
 }
 object VpcPeeringConnectionVpcInfo {
   
-  @scala.inline
-  def apply(): VpcPeeringConnectionVpcInfo = {
+  inline def apply(): VpcPeeringConnectionVpcInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcPeeringConnectionVpcInfo]
   }
   
-  @scala.inline
-  implicit class VpcPeeringConnectionVpcInfoMutableBuilder[Self <: VpcPeeringConnectionVpcInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VpcPeeringConnectionVpcInfo](x: Self) {
     
-    @scala.inline
-    def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
+    inline def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockSet(value: CidrBlockSet): Self = StObject.set(x, "CidrBlockSet", value.asInstanceOf[js.Any])
+    inline def setCidrBlockSet(value: CidrBlockSet): Self = StObject.set(x, "CidrBlockSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockSetUndefined: Self = StObject.set(x, "CidrBlockSet", js.undefined)
+    inline def setCidrBlockSetUndefined: Self = StObject.set(x, "CidrBlockSet", js.undefined)
     
-    @scala.inline
-    def setCidrBlockSetVarargs(value: CidrBlock*): Self = StObject.set(x, "CidrBlockSet", js.Array(value :_*))
+    inline def setCidrBlockSetVarargs(value: CidrBlock*): Self = StObject.set(x, "CidrBlockSet", js.Array(value :_*))
     
-    @scala.inline
-    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
+    inline def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlockSet(value: Ipv6CidrBlockSet): Self = StObject.set(x, "Ipv6CidrBlockSet", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlockSet(value: Ipv6CidrBlockSet): Self = StObject.set(x, "Ipv6CidrBlockSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockSet", js.undefined)
+    inline def setIpv6CidrBlockSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockSet", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlockSetVarargs(value: Ipv6CidrBlock*): Self = StObject.set(x, "Ipv6CidrBlockSet", js.Array(value :_*))
+    inline def setIpv6CidrBlockSetVarargs(value: Ipv6CidrBlock*): Self = StObject.set(x, "Ipv6CidrBlockSet", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setPeeringOptions(value: VpcPeeringConnectionOptionsDescription): Self = StObject.set(x, "PeeringOptions", value.asInstanceOf[js.Any])
+    inline def setPeeringOptions(value: VpcPeeringConnectionOptionsDescription): Self = StObject.set(x, "PeeringOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeeringOptionsUndefined: Self = StObject.set(x, "PeeringOptions", js.undefined)
+    inline def setPeeringOptionsUndefined: Self = StObject.set(x, "PeeringOptions", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

@@ -98,6 +98,5 @@ object ExternalModuleReferenceSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(stringLiteral: ISyntaxToken): typings.typescriptServices.TypeScript.ExternalModuleReferenceSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(stringLiteral.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ExternalModuleReferenceSyntax]
+  inline def create1(stringLiteral: ISyntaxToken): typings.typescriptServices.TypeScript.ExternalModuleReferenceSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(stringLiteral.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ExternalModuleReferenceSyntax]
 }

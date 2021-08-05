@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdDefaultListBehavior extends StObject
 object WdDefaultListBehavior {
   
-  @scala.inline
-  def wdWord10ListBehavior: `2` = 2.asInstanceOf[`2`]
+  inline def wdWord10ListBehavior: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdWord8ListBehavior: `0` = 0.asInstanceOf[`0`]
+  inline def wdWord8ListBehavior: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdWord9ListBehavior: `1` = 1.asInstanceOf[`1`]
+  inline def wdWord9ListBehavior: `1` = 1.asInstanceOf[`1`]
 }

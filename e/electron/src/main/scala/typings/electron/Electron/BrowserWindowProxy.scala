@@ -45,8 +45,7 @@ trait BrowserWindowProxy extends StObject {
 }
 object BrowserWindowProxy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => Unit,
     close: () => Unit,
     closed: Boolean,
@@ -59,28 +58,20 @@ object BrowserWindowProxy {
     __obj.asInstanceOf[BrowserWindowProxy]
   }
   
-  @scala.inline
-  implicit class BrowserWindowProxyMutableBuilder[Self <: BrowserWindowProxy] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserWindowProxy](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEval(value: String => Unit): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
+    inline def setEval(value: String => Unit): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostMessage(value: (js.Any, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
+    inline def setPostMessage(value: (js.Any, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
+    inline def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
   }
 }

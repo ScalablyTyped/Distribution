@@ -86,8 +86,7 @@ trait AutosuggestPropsBase[TSuggestion] extends StObject {
 }
 object AutosuggestPropsBase {
   
-  @scala.inline
-  def apply[TSuggestion](
+  inline def apply[TSuggestion](
     getSuggestionValue: TSuggestion => String,
     inputProps: InputProps[TSuggestion],
     onSuggestionsFetchRequested: /* request */ SuggestionsFetchRequestedParams => Unit,
@@ -97,87 +96,60 @@ object AutosuggestPropsBase {
     __obj.asInstanceOf[AutosuggestPropsBase[TSuggestion]]
   }
   
-  @scala.inline
-  implicit class AutosuggestPropsBaseMutableBuilder[Self <: AutosuggestPropsBase[?], TSuggestion] (val x: Self & AutosuggestPropsBase[TSuggestion]) extends AnyVal {
+  extension [Self <: AutosuggestPropsBase[?], TSuggestion](x: Self & AutosuggestPropsBase[TSuggestion]) {
     
-    @scala.inline
-    def setAlwaysRenderSuggestions(value: Boolean): Self = StObject.set(x, "alwaysRenderSuggestions", value.asInstanceOf[js.Any])
+    inline def setAlwaysRenderSuggestions(value: Boolean): Self = StObject.set(x, "alwaysRenderSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysRenderSuggestionsUndefined: Self = StObject.set(x, "alwaysRenderSuggestions", js.undefined)
+    inline def setAlwaysRenderSuggestionsUndefined: Self = StObject.set(x, "alwaysRenderSuggestions", js.undefined)
     
-    @scala.inline
-    def setFocusInputOnSuggestionClick(value: Boolean): Self = StObject.set(x, "focusInputOnSuggestionClick", value.asInstanceOf[js.Any])
+    inline def setFocusInputOnSuggestionClick(value: Boolean): Self = StObject.set(x, "focusInputOnSuggestionClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusInputOnSuggestionClickUndefined: Self = StObject.set(x, "focusInputOnSuggestionClick", js.undefined)
+    inline def setFocusInputOnSuggestionClickUndefined: Self = StObject.set(x, "focusInputOnSuggestionClick", js.undefined)
     
-    @scala.inline
-    def setGetSuggestionValue(value: TSuggestion => String): Self = StObject.set(x, "getSuggestionValue", js.Any.fromFunction1(value))
+    inline def setGetSuggestionValue(value: TSuggestion => String): Self = StObject.set(x, "getSuggestionValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHighlightFirstSuggestion(value: Boolean): Self = StObject.set(x, "highlightFirstSuggestion", value.asInstanceOf[js.Any])
+    inline def setHighlightFirstSuggestion(value: Boolean): Self = StObject.set(x, "highlightFirstSuggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightFirstSuggestionUndefined: Self = StObject.set(x, "highlightFirstSuggestion", js.undefined)
+    inline def setHighlightFirstSuggestionUndefined: Self = StObject.set(x, "highlightFirstSuggestion", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInputProps(value: InputProps[TSuggestion]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    inline def setInputProps(value: InputProps[TSuggestion]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSuggestionHighlighted(value: /* params */ SuggestionHighlightedParams => Unit): Self = StObject.set(x, "onSuggestionHighlighted", js.Any.fromFunction1(value))
+    inline def setOnSuggestionHighlighted(value: /* params */ SuggestionHighlightedParams => Unit): Self = StObject.set(x, "onSuggestionHighlighted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSuggestionHighlightedUndefined: Self = StObject.set(x, "onSuggestionHighlighted", js.undefined)
+    inline def setOnSuggestionHighlightedUndefined: Self = StObject.set(x, "onSuggestionHighlighted", js.undefined)
     
-    @scala.inline
-    def setOnSuggestionSelected(
+    inline def setOnSuggestionSelected(
       value: (/* event */ FormEvent[js.Any], /* data */ SuggestionSelectedEventData[TSuggestion]) => Unit
     ): Self = StObject.set(x, "onSuggestionSelected", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSuggestionSelectedUndefined: Self = StObject.set(x, "onSuggestionSelected", js.undefined)
+    inline def setOnSuggestionSelectedUndefined: Self = StObject.set(x, "onSuggestionSelected", js.undefined)
     
-    @scala.inline
-    def setOnSuggestionsClearRequested(value: () => Unit): Self = StObject.set(x, "onSuggestionsClearRequested", js.Any.fromFunction0(value))
+    inline def setOnSuggestionsClearRequested(value: () => Unit): Self = StObject.set(x, "onSuggestionsClearRequested", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSuggestionsClearRequestedUndefined: Self = StObject.set(x, "onSuggestionsClearRequested", js.undefined)
+    inline def setOnSuggestionsClearRequestedUndefined: Self = StObject.set(x, "onSuggestionsClearRequested", js.undefined)
     
-    @scala.inline
-    def setOnSuggestionsFetchRequested(value: /* request */ SuggestionsFetchRequestedParams => Unit): Self = StObject.set(x, "onSuggestionsFetchRequested", js.Any.fromFunction1(value))
+    inline def setOnSuggestionsFetchRequested(value: /* request */ SuggestionsFetchRequestedParams => Unit): Self = StObject.set(x, "onSuggestionsFetchRequested", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderInputComponent(value: /* inputProps */ InputProps[TSuggestion] => ReactNode): Self = StObject.set(x, "renderInputComponent", js.Any.fromFunction1(value))
+    inline def setRenderInputComponent(value: /* inputProps */ InputProps[TSuggestion] => ReactNode): Self = StObject.set(x, "renderInputComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderInputComponentUndefined: Self = StObject.set(x, "renderInputComponent", js.undefined)
+    inline def setRenderInputComponentUndefined: Self = StObject.set(x, "renderInputComponent", js.undefined)
     
-    @scala.inline
-    def setRenderSuggestion(value: (TSuggestion, /* params */ RenderSuggestionParams) => ReactNode): Self = StObject.set(x, "renderSuggestion", js.Any.fromFunction2(value))
+    inline def setRenderSuggestion(value: (TSuggestion, /* params */ RenderSuggestionParams) => ReactNode): Self = StObject.set(x, "renderSuggestion", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderSuggestionsContainer(value: /* params */ RenderSuggestionsContainerParams => ReactNode): Self = StObject.set(x, "renderSuggestionsContainer", js.Any.fromFunction1(value))
+    inline def setRenderSuggestionsContainer(value: /* params */ RenderSuggestionsContainerParams => ReactNode): Self = StObject.set(x, "renderSuggestionsContainer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderSuggestionsContainerUndefined: Self = StObject.set(x, "renderSuggestionsContainer", js.undefined)
+    inline def setRenderSuggestionsContainerUndefined: Self = StObject.set(x, "renderSuggestionsContainer", js.undefined)
     
-    @scala.inline
-    def setShouldRenderSuggestions(value: (/* value */ String, /* reason */ ShouldRenderReasons) => Boolean): Self = StObject.set(x, "shouldRenderSuggestions", js.Any.fromFunction2(value))
+    inline def setShouldRenderSuggestions(value: (/* value */ String, /* reason */ ShouldRenderReasons) => Boolean): Self = StObject.set(x, "shouldRenderSuggestions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShouldRenderSuggestionsUndefined: Self = StObject.set(x, "shouldRenderSuggestions", js.undefined)
+    inline def setShouldRenderSuggestionsUndefined: Self = StObject.set(x, "shouldRenderSuggestions", js.undefined)
     
-    @scala.inline
-    def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

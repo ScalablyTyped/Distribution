@@ -14,19 +14,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConnection(opts: ConnectOpts): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any]).asInstanceOf[Connection]
-  @scala.inline
-  def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
-  @scala.inline
-  def createConnection(url: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any]).asInstanceOf[Connection]
-  @scala.inline
-  def createConnection(url: String, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def createConnection(opts: ConnectOpts): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  inline def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def createConnection(url: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  inline def createConnection(url: String, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
-  @scala.inline
-  def createPool(opts: ConnectOpts, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(opts.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
-  @scala.inline
-  def createPool(url: String, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
+  inline def createPool(opts: ConnectOpts, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(opts.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
+  inline def createPool(url: String, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
   
   @js.native
   trait Adapter extends StObject {
@@ -66,17 +60,14 @@ object mod {
   }
   object ConnectOpts {
     
-    @scala.inline
-    def apply(adapter: String): ConnectOpts = {
+    inline def apply(adapter: String): ConnectOpts = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectOpts]
     }
     
-    @scala.inline
-    implicit class ConnectOptsMutableBuilder[Self <: ConnectOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectOpts](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,17 +123,14 @@ object mod {
   }
   object Field {
     
-    @scala.inline
-    def apply(name: String): Field = {
+    inline def apply(name: String): Field = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Field]
     }
     
-    @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+    extension [Self <: Field](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,64 +194,46 @@ object mod {
   }
   object PoolConfig {
     
-    @scala.inline
-    def apply(): PoolConfig = {
+    inline def apply(): PoolConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PoolConfig]
     }
     
-    @scala.inline
-    implicit class PoolConfigMutableBuilder[Self <: PoolConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PoolConfig](x: Self) {
       
-      @scala.inline
-      def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOnConnect(
+      inline def setOnConnect(
         value: (/* connection */ Connection, /* ready */ js.Function2[/* error */ Error, /* result */ Connection, Unit]) => Unit
       ): Self = StObject.set(x, "onConnect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setReapInterval(value: Double): Self = StObject.set(x, "reapInterval", value.asInstanceOf[js.Any])
+      inline def setReapInterval(value: Double): Self = StObject.set(x, "reapInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReapIntervalUndefined: Self = StObject.set(x, "reapInterval", js.undefined)
+      inline def setReapIntervalUndefined: Self = StObject.set(x, "reapInterval", js.undefined)
       
-      @scala.inline
-      def setRefreshIdle(value: Boolean): Self = StObject.set(x, "refreshIdle", value.asInstanceOf[js.Any])
+      inline def setRefreshIdle(value: Boolean): Self = StObject.set(x, "refreshIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshIdleUndefined: Self = StObject.set(x, "refreshIdle", js.undefined)
+      inline def setRefreshIdleUndefined: Self = StObject.set(x, "refreshIdle", js.undefined)
       
-      @scala.inline
-      def setReset(value: (/* connection */ Connection, /* done */ js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
+      inline def setReset(value: (/* connection */ Connection, /* done */ js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      @scala.inline
-      def setShouldDestroyConnection(value: /* error */ Error => Boolean): Self = StObject.set(x, "shouldDestroyConnection", js.Any.fromFunction1(value))
+      inline def setShouldDestroyConnection(value: /* error */ Error => Boolean): Self = StObject.set(x, "shouldDestroyConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldDestroyConnectionUndefined: Self = StObject.set(x, "shouldDestroyConnection", js.undefined)
+      inline def setShouldDestroyConnectionUndefined: Self = StObject.set(x, "shouldDestroyConnection", js.undefined)
     }
   }
   
@@ -360,53 +330,38 @@ object mod {
   }
   object ResultSet {
     
-    @scala.inline
-    def apply(fields: js.Array[Field], rowCount: Double, rows: js.Array[js.Any]): ResultSet = {
+    inline def apply(fields: js.Array[Field], rowCount: Double, rows: js.Array[js.Any]): ResultSet = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultSet]
     }
     
-    @scala.inline
-    implicit class ResultSetMutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
+    extension [Self <: ResultSet](x: Self) {
       
-      @scala.inline
-      def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
+      inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAffectedRowsUndefined: Self = StObject.set(x, "affectedRows", js.undefined)
+      inline def setAffectedRowsUndefined: Self = StObject.set(x, "affectedRows", js.undefined)
       
-      @scala.inline
-      def setChangedRows(value: Double): Self = StObject.set(x, "changedRows", value.asInstanceOf[js.Any])
+      inline def setChangedRows(value: Double): Self = StObject.set(x, "changedRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedRowsUndefined: Self = StObject.set(x, "changedRows", js.undefined)
+      inline def setChangedRowsUndefined: Self = StObject.set(x, "changedRows", js.undefined)
       
-      @scala.inline
-      def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
+      inline def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldCountUndefined: Self = StObject.set(x, "fieldCount", js.undefined)
+      inline def setFieldCountUndefined: Self = StObject.set(x, "fieldCount", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setLastInsertId(value: js.Any): Self = StObject.set(x, "lastInsertId", value.asInstanceOf[js.Any])
+      inline def setLastInsertId(value: js.Any): Self = StObject.set(x, "lastInsertId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastInsertIdUndefined: Self = StObject.set(x, "lastInsertId", js.undefined)
+      inline def setLastInsertIdUndefined: Self = StObject.set(x, "lastInsertId", js.undefined)
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
 }

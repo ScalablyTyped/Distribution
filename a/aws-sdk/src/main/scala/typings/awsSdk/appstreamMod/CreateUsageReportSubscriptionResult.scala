@@ -18,25 +18,19 @@ trait CreateUsageReportSubscriptionResult extends StObject {
 }
 object CreateUsageReportSubscriptionResult {
   
-  @scala.inline
-  def apply(): CreateUsageReportSubscriptionResult = {
+  inline def apply(): CreateUsageReportSubscriptionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateUsageReportSubscriptionResult]
   }
   
-  @scala.inline
-  implicit class CreateUsageReportSubscriptionResultMutableBuilder[Self <: CreateUsageReportSubscriptionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUsageReportSubscriptionResult](x: Self) {
     
-    @scala.inline
-    def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: UsageReportSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: UsageReportSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
   }
 }

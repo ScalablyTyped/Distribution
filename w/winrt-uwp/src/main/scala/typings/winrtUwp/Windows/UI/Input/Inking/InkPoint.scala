@@ -14,19 +14,15 @@ trait InkPoint extends StObject {
 }
 object InkPoint {
   
-  @scala.inline
-  def apply(position: Point, pressure: js.Any): InkPoint = {
+  inline def apply(position: Point, pressure: js.Any): InkPoint = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkPoint]
   }
   
-  @scala.inline
-  implicit class InkPointMutableBuilder[Self <: InkPoint] (val x: Self) extends AnyVal {
+  extension [Self <: InkPoint](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPressure(value: js.Any): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
+    inline def setPressure(value: js.Any): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
   }
 }

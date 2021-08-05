@@ -14,17 +14,14 @@ trait Super
 }
 object Super {
   
-  @scala.inline
-  def apply(): Super = {
+  inline def apply(): Super = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Super")
     __obj.asInstanceOf[Super]
   }
   
-  @scala.inline
-  implicit class SuperMutableBuilder[Self <: Super] (val x: Self) extends AnyVal {
+  extension [Self <: Super](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.Super): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.Super): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

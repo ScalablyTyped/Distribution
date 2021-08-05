@@ -18,8 +18,7 @@ object useWarningsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useWarnings[P](options: IWarningOptions[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWarnings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useWarnings[P](options: IWarningOptions[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWarnings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IWarningOptions[P] extends StObject {
     
@@ -66,61 +65,45 @@ object useWarningsMod {
   }
   object IWarningOptions {
     
-    @scala.inline
-    def apply[P](name: String, props: P): IWarningOptions[P] = {
+    inline def apply[P](name: String, props: P): IWarningOptions[P] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWarningOptions[P]]
     }
     
-    @scala.inline
-    implicit class IWarningOptionsMutableBuilder[Self <: IWarningOptions[?], P] (val x: Self & IWarningOptions[P]) extends AnyVal {
+    extension [Self <: IWarningOptions[?], P](x: Self & IWarningOptions[P]) {
       
-      @scala.inline
-      def setConditionallyRequired(value: js.Array[Condition]): Self = StObject.set(x, "conditionallyRequired", value.asInstanceOf[js.Any])
+      inline def setConditionallyRequired(value: js.Array[Condition]): Self = StObject.set(x, "conditionallyRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionallyRequiredUndefined: Self = StObject.set(x, "conditionallyRequired", js.undefined)
+      inline def setConditionallyRequiredUndefined: Self = StObject.set(x, "conditionallyRequired", js.undefined)
       
-      @scala.inline
-      def setConditionallyRequiredVarargs(value: Condition*): Self = StObject.set(x, "conditionallyRequired", js.Array(value :_*))
+      inline def setConditionallyRequiredVarargs(value: Condition*): Self = StObject.set(x, "conditionallyRequired", js.Array(value :_*))
       
-      @scala.inline
-      def setControlledUsage(
+      inline def setControlledUsage(
         value: Pick[
               IWarnControlledUsageParams[P], 
               valueProp | defaultValueProp | onChangeProp | readOnlyProp
             ]
       ): Self = StObject.set(x, "controlledUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlledUsageUndefined: Self = StObject.set(x, "controlledUsage", js.undefined)
+      inline def setControlledUsageUndefined: Self = StObject.set(x, "controlledUsage", js.undefined)
       
-      @scala.inline
-      def setDeprecations(value: ISettingsMap[P]): Self = StObject.set(x, "deprecations", value.asInstanceOf[js.Any])
+      inline def setDeprecations(value: ISettingsMap[P]): Self = StObject.set(x, "deprecations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecationsUndefined: Self = StObject.set(x, "deprecations", js.undefined)
+      inline def setDeprecationsUndefined: Self = StObject.set(x, "deprecations", js.undefined)
       
-      @scala.inline
-      def setMutuallyExclusive(value: ISettingsMap[P]): Self = StObject.set(x, "mutuallyExclusive", value.asInstanceOf[js.Any])
+      inline def setMutuallyExclusive(value: ISettingsMap[P]): Self = StObject.set(x, "mutuallyExclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutuallyExclusiveUndefined: Self = StObject.set(x, "mutuallyExclusive", js.undefined)
+      inline def setMutuallyExclusiveUndefined: Self = StObject.set(x, "mutuallyExclusive", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOther(value: js.Array[String]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: js.Array[String]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      @scala.inline
-      def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value :_*))
+      inline def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value :_*))
       
-      @scala.inline
-      def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

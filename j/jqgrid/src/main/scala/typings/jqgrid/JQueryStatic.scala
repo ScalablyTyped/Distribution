@@ -10,19 +10,15 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(): JQueryStatic = {
+  inline def apply(): JQueryStatic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setJqGrid(value: JQueryJqGridStatic): Self = StObject.set(x, "jqGrid", value.asInstanceOf[js.Any])
+    inline def setJqGrid(value: JQueryJqGridStatic): Self = StObject.set(x, "jqGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJqGridUndefined: Self = StObject.set(x, "jqGrid", js.undefined)
+    inline def setJqGridUndefined: Self = StObject.set(x, "jqGrid", js.undefined)
   }
 }

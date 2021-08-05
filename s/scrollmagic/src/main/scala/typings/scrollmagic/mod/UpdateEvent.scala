@@ -18,8 +18,7 @@ trait UpdateEvent
 }
 object UpdateEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTarget: Scene,
     endPos: Double,
     namespace: String,
@@ -34,16 +33,12 @@ object UpdateEvent {
     __obj.asInstanceOf[UpdateEvent]
   }
   
-  @scala.inline
-  implicit class UpdateEventMutableBuilder[Self <: UpdateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEvent](x: Self) {
     
-    @scala.inline
-    def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
+    inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollPos(value: Double): Self = StObject.set(x, "scrollPos", value.asInstanceOf[js.Any])
+    inline def setScrollPos(value: Double): Self = StObject.set(x, "scrollPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
+    inline def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
   }
 }

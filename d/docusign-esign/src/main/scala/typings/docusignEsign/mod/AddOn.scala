@@ -28,37 +28,27 @@ trait AddOn extends StObject {
 }
 object AddOn {
   
-  @scala.inline
-  def apply(): AddOn = {
+  inline def apply(): AddOn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddOn]
   }
   
-  @scala.inline
-  implicit class AddOnMutableBuilder[Self <: AddOn] (val x: Self) extends AnyVal {
+  extension [Self <: AddOn](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAddOnId(value: String): Self = StObject.set(x, "addOnId", value.asInstanceOf[js.Any])
+    inline def setAddOnId(value: String): Self = StObject.set(x, "addOnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnIdUndefined: Self = StObject.set(x, "addOnId", js.undefined)
+    inline def setAddOnIdUndefined: Self = StObject.set(x, "addOnId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

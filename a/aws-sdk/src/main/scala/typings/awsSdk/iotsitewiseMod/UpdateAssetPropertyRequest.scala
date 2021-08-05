@@ -33,37 +33,27 @@ trait UpdateAssetPropertyRequest extends StObject {
 }
 object UpdateAssetPropertyRequest {
   
-  @scala.inline
-  def apply(assetId: ID, propertyId: ID): UpdateAssetPropertyRequest = {
+  inline def apply(assetId: ID, propertyId: ID): UpdateAssetPropertyRequest = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], propertyId = propertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAssetPropertyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAssetPropertyRequestMutableBuilder[Self <: UpdateAssetPropertyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAssetPropertyRequest](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setPropertyAlias(value: PropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
+    inline def setPropertyAlias(value: PropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
+    inline def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
     
-    @scala.inline
-    def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNotificationState(value: PropertyNotificationState): Self = StObject.set(x, "propertyNotificationState", value.asInstanceOf[js.Any])
+    inline def setPropertyNotificationState(value: PropertyNotificationState): Self = StObject.set(x, "propertyNotificationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNotificationStateUndefined: Self = StObject.set(x, "propertyNotificationState", js.undefined)
+    inline def setPropertyNotificationStateUndefined: Self = StObject.set(x, "propertyNotificationState", js.undefined)
   }
 }

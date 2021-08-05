@@ -13,16 +13,13 @@ trait FilterOperation extends StObject {
 }
 object FilterOperation {
   
-  @scala.inline
-  def apply(ConditionExpression: Expression): FilterOperation = {
+  inline def apply(ConditionExpression: Expression): FilterOperation = {
     val __obj = js.Dynamic.literal(ConditionExpression = ConditionExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperation]
   }
   
-  @scala.inline
-  implicit class FilterOperationMutableBuilder[Self <: FilterOperation] (val x: Self) extends AnyVal {
+  extension [Self <: FilterOperation](x: Self) {
     
-    @scala.inline
-    def setConditionExpression(value: Expression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+    inline def setConditionExpression(value: Expression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
   }
 }

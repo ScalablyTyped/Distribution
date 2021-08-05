@@ -31,70 +31,49 @@ trait OnenoteSection
 }
 object OnenoteSection {
   
-  @scala.inline
-  def apply(): OnenoteSection = {
+  inline def apply(): OnenoteSection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenoteSection]
   }
   
-  @scala.inline
-  implicit class OnenoteSectionMutableBuilder[Self <: OnenoteSection] (val x: Self) extends AnyVal {
+  extension [Self <: OnenoteSection](x: Self) {
     
-    @scala.inline
-    def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
+    inline def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setLinks(value: NullableOption[SectionLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: NullableOption[SectionLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksNull: Self = StObject.set(x, "links", null)
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setPages(value: NullableOption[js.Array[OnenotePage]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: NullableOption[js.Array[OnenotePage]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesNull: Self = StObject.set(x, "pages", null)
+    inline def setPagesNull: Self = StObject.set(x, "pages", null)
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesUrl(value: NullableOption[String]): Self = StObject.set(x, "pagesUrl", value.asInstanceOf[js.Any])
+    inline def setPagesUrl(value: NullableOption[String]): Self = StObject.set(x, "pagesUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUrlNull: Self = StObject.set(x, "pagesUrl", null)
+    inline def setPagesUrlNull: Self = StObject.set(x, "pagesUrl", null)
     
-    @scala.inline
-    def setPagesUrlUndefined: Self = StObject.set(x, "pagesUrl", js.undefined)
+    inline def setPagesUrlUndefined: Self = StObject.set(x, "pagesUrl", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
+    inline def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNotebookNull: Self = StObject.set(x, "parentNotebook", null)
+    inline def setParentNotebookNull: Self = StObject.set(x, "parentNotebook", null)
     
-    @scala.inline
-    def setParentNotebookUndefined: Self = StObject.set(x, "parentNotebook", js.undefined)
+    inline def setParentNotebookUndefined: Self = StObject.set(x, "parentNotebook", js.undefined)
     
-    @scala.inline
-    def setParentSectionGroup(value: NullableOption[SectionGroup]): Self = StObject.set(x, "parentSectionGroup", value.asInstanceOf[js.Any])
+    inline def setParentSectionGroup(value: NullableOption[SectionGroup]): Self = StObject.set(x, "parentSectionGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSectionGroupNull: Self = StObject.set(x, "parentSectionGroup", null)
+    inline def setParentSectionGroupNull: Self = StObject.set(x, "parentSectionGroup", null)
     
-    @scala.inline
-    def setParentSectionGroupUndefined: Self = StObject.set(x, "parentSectionGroup", js.undefined)
+    inline def setParentSectionGroupUndefined: Self = StObject.set(x, "parentSectionGroup", js.undefined)
   }
 }

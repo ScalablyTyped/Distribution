@@ -27,49 +27,35 @@ trait Query extends StObject {
 }
 object Query {
   
-  @scala.inline
-  def apply(query: String, sortBy: String): Query = {
+  inline def apply(query: String, sortBy: String): Query = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], sortBy = sortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+  extension [Self <: Query](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
   }
 }

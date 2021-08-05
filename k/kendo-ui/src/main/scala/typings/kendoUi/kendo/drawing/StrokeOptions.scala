@@ -20,49 +20,35 @@ trait StrokeOptions extends StObject {
 }
 object StrokeOptions {
   
-  @scala.inline
-  def apply(): StrokeOptions = {
+  inline def apply(): StrokeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrokeOptions]
   }
   
-  @scala.inline
-  implicit class StrokeOptionsMutableBuilder[Self <: StrokeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StrokeOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
+    inline def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
+    inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
     
-    @scala.inline
-    def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+    inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
-    @scala.inline
-    def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+    inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

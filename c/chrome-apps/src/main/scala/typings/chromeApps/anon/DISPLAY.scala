@@ -14,19 +14,15 @@ trait DISPLAY extends StObject {
 }
 object DISPLAY {
   
-  @scala.inline
-  def apply(): DISPLAY = {
+  inline def apply(): DISPLAY = {
     val __obj = js.Dynamic.literal(DISPLAY = "display", SYSTEM = "system")
     __obj.asInstanceOf[DISPLAY]
   }
   
-  @scala.inline
-  implicit class DISPLAYMutableBuilder[Self <: DISPLAY] (val x: Self) extends AnyVal {
+  extension [Self <: DISPLAY](x: Self) {
     
-    @scala.inline
-    def setDISPLAY(value: display_): Self = StObject.set(x, "DISPLAY", value.asInstanceOf[js.Any])
+    inline def setDISPLAY(value: display_): Self = StObject.set(x, "DISPLAY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSYSTEM(value: system_): Self = StObject.set(x, "SYSTEM", value.asInstanceOf[js.Any])
+    inline def setSYSTEM(value: system_): Self = StObject.set(x, "SYSTEM", value.asInstanceOf[js.Any])
   }
 }

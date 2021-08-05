@@ -30,32 +30,24 @@ object webTwainMod {
   }
   object Addon {
     
-    @scala.inline
-    def apply(BarcodeReader: BarcodeReader, Camera: Camera, OCR: OCR, OCRPro: OCRPro, PDF: PDF, Webcam: Webcam): Addon = {
+    inline def apply(BarcodeReader: BarcodeReader, Camera: Camera, OCR: OCR, OCRPro: OCRPro, PDF: PDF, Webcam: Webcam): Addon = {
       val __obj = js.Dynamic.literal(BarcodeReader = BarcodeReader.asInstanceOf[js.Any], Camera = Camera.asInstanceOf[js.Any], OCR = OCR.asInstanceOf[js.Any], OCRPro = OCRPro.asInstanceOf[js.Any], PDF = PDF.asInstanceOf[js.Any], Webcam = Webcam.asInstanceOf[js.Any])
       __obj.asInstanceOf[Addon]
     }
     
-    @scala.inline
-    implicit class AddonMutableBuilder[Self <: Addon] (val x: Self) extends AnyVal {
+    extension [Self <: Addon](x: Self) {
       
-      @scala.inline
-      def setBarcodeReader(value: BarcodeReader): Self = StObject.set(x, "BarcodeReader", value.asInstanceOf[js.Any])
+      inline def setBarcodeReader(value: BarcodeReader): Self = StObject.set(x, "BarcodeReader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Camera): Self = StObject.set(x, "Camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Camera): Self = StObject.set(x, "Camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOCR(value: OCR): Self = StObject.set(x, "OCR", value.asInstanceOf[js.Any])
+      inline def setOCR(value: OCR): Self = StObject.set(x, "OCR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOCRPro(value: OCRPro): Self = StObject.set(x, "OCRPro", value.asInstanceOf[js.Any])
+      inline def setOCRPro(value: OCRPro): Self = StObject.set(x, "OCRPro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPDF(value: PDF): Self = StObject.set(x, "PDF", value.asInstanceOf[js.Any])
+      inline def setPDF(value: PDF): Self = StObject.set(x, "PDF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebcam(value: Webcam): Self = StObject.set(x, "Webcam", value.asInstanceOf[js.Any])
+      inline def setWebcam(value: Webcam): Self = StObject.set(x, "Webcam", value.asInstanceOf[js.Any])
     }
   }
   

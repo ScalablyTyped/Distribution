@@ -14,16 +14,13 @@ trait BuildHandlerOptions
 }
 object BuildHandlerOptions {
   
-  @scala.inline
-  def apply(): BuildHandlerOptions = {
+  inline def apply(): BuildHandlerOptions = {
     val __obj = js.Dynamic.literal(step = "build")
     __obj.asInstanceOf[BuildHandlerOptions]
   }
   
-  @scala.inline
-  implicit class BuildHandlerOptionsMutableBuilder[Self <: BuildHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BuildHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setStep(value: build): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: build): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

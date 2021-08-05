@@ -40,38 +40,28 @@ object integrationReactMod {
   }
   object PersistGateProps {
     
-    @scala.inline
-    def apply(persistor: Persistor): PersistGateProps = {
+    inline def apply(persistor: Persistor): PersistGateProps = {
       val __obj = js.Dynamic.literal(persistor = persistor.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersistGateProps]
     }
     
-    @scala.inline
-    implicit class PersistGatePropsMutableBuilder[Self <: PersistGateProps] (val x: Self) extends AnyVal {
+    extension [Self <: PersistGateProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode | (js.Function1[/* bootstrapped */ Boolean, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | (js.Function1[/* bootstrapped */ Boolean, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* bootstrapped */ Boolean => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* bootstrapped */ Boolean => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLoading(value: ReactNode): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: ReactNode): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setOnBeforeLift(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onBeforeLift", js.Any.fromFunction0(value))
+      inline def setOnBeforeLift(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onBeforeLift", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBeforeLiftUndefined: Self = StObject.set(x, "onBeforeLift", js.undefined)
+      inline def setOnBeforeLiftUndefined: Self = StObject.set(x, "onBeforeLift", js.undefined)
       
-      @scala.inline
-      def setPersistor(value: Persistor): Self = StObject.set(x, "persistor", value.asInstanceOf[js.Any])
+      inline def setPersistor(value: Persistor): Self = StObject.set(x, "persistor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,17 +72,14 @@ object integrationReactMod {
   }
   object PersistorGateState {
     
-    @scala.inline
-    def apply(bootstrapped: Boolean): PersistorGateState = {
+    inline def apply(bootstrapped: Boolean): PersistorGateState = {
       val __obj = js.Dynamic.literal(bootstrapped = bootstrapped.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersistorGateState]
     }
     
-    @scala.inline
-    implicit class PersistorGateStateMutableBuilder[Self <: PersistorGateState] (val x: Self) extends AnyVal {
+    extension [Self <: PersistorGateState](x: Self) {
       
-      @scala.inline
-      def setBootstrapped(value: Boolean): Self = StObject.set(x, "bootstrapped", value.asInstanceOf[js.Any])
+      inline def setBootstrapped(value: Boolean): Self = StObject.set(x, "bootstrapped", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,20 +12,16 @@ trait Organization extends StObject {
 }
 object Organization {
   
-  @scala.inline
-  def apply(organization: String, `type`: String): Organization = {
+  inline def apply(organization: String, `type`: String): Organization = {
     val __obj = js.Dynamic.literal(organization = organization.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Organization]
   }
   
-  @scala.inline
-  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
+  extension [Self <: Organization](x: Self) {
     
-    @scala.inline
-    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

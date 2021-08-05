@@ -18,22 +18,17 @@ trait BatchGetCommitsInput extends StObject {
 }
 object BatchGetCommitsInput {
   
-  @scala.inline
-  def apply(commitIds: CommitIdsInputList, repositoryName: RepositoryName): BatchGetCommitsInput = {
+  inline def apply(commitIds: CommitIdsInputList, repositoryName: RepositoryName): BatchGetCommitsInput = {
     val __obj = js.Dynamic.literal(commitIds = commitIds.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetCommitsInput]
   }
   
-  @scala.inline
-  implicit class BatchGetCommitsInputMutableBuilder[Self <: BatchGetCommitsInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCommitsInput](x: Self) {
     
-    @scala.inline
-    def setCommitIds(value: CommitIdsInputList): Self = StObject.set(x, "commitIds", value.asInstanceOf[js.Any])
+    inline def setCommitIds(value: CommitIdsInputList): Self = StObject.set(x, "commitIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitIdsVarargs(value: ObjectId*): Self = StObject.set(x, "commitIds", js.Array(value :_*))
+    inline def setCommitIdsVarargs(value: ObjectId*): Self = StObject.set(x, "commitIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

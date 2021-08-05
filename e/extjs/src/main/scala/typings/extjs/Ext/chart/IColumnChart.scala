@@ -15,19 +15,15 @@ trait IColumnChart
 }
 object IColumnChart {
   
-  @scala.inline
-  def apply(): IColumnChart = {
+  inline def apply(): IColumnChart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnChart]
   }
   
-  @scala.inline
-  implicit class IColumnChartMutableBuilder[Self <: IColumnChart] (val x: Self) extends AnyVal {
+  extension [Self <: IColumnChart](x: Self) {
     
-    @scala.inline
-    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
   }
 }

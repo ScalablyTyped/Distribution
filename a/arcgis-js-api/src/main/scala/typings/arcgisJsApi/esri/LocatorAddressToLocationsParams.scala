@@ -82,8 +82,7 @@ trait LocatorAddressToLocationsParams
 }
 object LocatorAddressToLocationsParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: js.Any,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -93,70 +92,48 @@ object LocatorAddressToLocationsParams {
     __obj.asInstanceOf[LocatorAddressToLocationsParams]
   }
   
-  @scala.inline
-  implicit class LocatorAddressToLocationsParamsMutableBuilder[Self <: LocatorAddressToLocationsParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocatorAddressToLocationsParams](x: Self) {
     
-    @scala.inline
-    def setAddress(value: js.Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: js.Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setForStorage(value: Boolean): Self = StObject.set(x, "forStorage", value.asInstanceOf[js.Any])
+    inline def setForStorage(value: Boolean): Self = StObject.set(x, "forStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForStorageUndefined: Self = StObject.set(x, "forStorage", js.undefined)
+    inline def setForStorageUndefined: Self = StObject.set(x, "forStorage", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMagicKey(value: String): Self = StObject.set(x, "magicKey", value.asInstanceOf[js.Any])
+    inline def setMagicKey(value: String): Self = StObject.set(x, "magicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagicKeyUndefined: Self = StObject.set(x, "magicKey", js.undefined)
+    inline def setMagicKeyUndefined: Self = StObject.set(x, "magicKey", js.undefined)
     
-    @scala.inline
-    def setMaxLocations(value: Double): Self = StObject.set(x, "maxLocations", value.asInstanceOf[js.Any])
+    inline def setMaxLocations(value: Double): Self = StObject.set(x, "maxLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLocationsUndefined: Self = StObject.set(x, "maxLocations", js.undefined)
+    inline def setMaxLocationsUndefined: Self = StObject.set(x, "maxLocations", js.undefined)
     
-    @scala.inline
-    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchExtent(value: Extent): Self = StObject.set(x, "searchExtent", value.asInstanceOf[js.Any])
+    inline def setSearchExtent(value: Extent): Self = StObject.set(x, "searchExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchExtentUndefined: Self = StObject.set(x, "searchExtent", js.undefined)
+    inline def setSearchExtentUndefined: Self = StObject.set(x, "searchExtent", js.undefined)
   }
 }

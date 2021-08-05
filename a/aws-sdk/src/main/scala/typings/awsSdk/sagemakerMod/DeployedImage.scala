@@ -23,31 +23,23 @@ trait DeployedImage extends StObject {
 }
 object DeployedImage {
   
-  @scala.inline
-  def apply(): DeployedImage = {
+  inline def apply(): DeployedImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeployedImage]
   }
   
-  @scala.inline
-  implicit class DeployedImageMutableBuilder[Self <: DeployedImage] (val x: Self) extends AnyVal {
+  extension [Self <: DeployedImage](x: Self) {
     
-    @scala.inline
-    def setResolutionTime(value: Timestamp): Self = StObject.set(x, "ResolutionTime", value.asInstanceOf[js.Any])
+    inline def setResolutionTime(value: Timestamp): Self = StObject.set(x, "ResolutionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionTimeUndefined: Self = StObject.set(x, "ResolutionTime", js.undefined)
+    inline def setResolutionTimeUndefined: Self = StObject.set(x, "ResolutionTime", js.undefined)
     
-    @scala.inline
-    def setResolvedImage(value: ContainerImage): Self = StObject.set(x, "ResolvedImage", value.asInstanceOf[js.Any])
+    inline def setResolvedImage(value: ContainerImage): Self = StObject.set(x, "ResolvedImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedImageUndefined: Self = StObject.set(x, "ResolvedImage", js.undefined)
+    inline def setResolvedImageUndefined: Self = StObject.set(x, "ResolvedImage", js.undefined)
     
-    @scala.inline
-    def setSpecifiedImage(value: ContainerImage): Self = StObject.set(x, "SpecifiedImage", value.asInstanceOf[js.Any])
+    inline def setSpecifiedImage(value: ContainerImage): Self = StObject.set(x, "SpecifiedImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecifiedImageUndefined: Self = StObject.set(x, "SpecifiedImage", js.undefined)
+    inline def setSpecifiedImageUndefined: Self = StObject.set(x, "SpecifiedImage", js.undefined)
   }
 }

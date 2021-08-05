@@ -12,25 +12,19 @@ trait BatchSizeReadPreference extends StObject {
 }
 object BatchSizeReadPreference {
   
-  @scala.inline
-  def apply(): BatchSizeReadPreference = {
+  inline def apply(): BatchSizeReadPreference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchSizeReadPreference]
   }
   
-  @scala.inline
-  implicit class BatchSizeReadPreferenceMutableBuilder[Self <: BatchSizeReadPreference] (val x: Self) extends AnyVal {
+  extension [Self <: BatchSizeReadPreference](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: typings.typeorm.mongodbTypingsMod.ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: typings.typeorm.mongodbTypingsMod.ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

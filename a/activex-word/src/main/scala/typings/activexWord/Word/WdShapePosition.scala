@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdShapePosition extends StObject
 object WdShapePosition {
   
-  @scala.inline
-  def wdShapeBottom: `-999997` = -999997.asInstanceOf[`-999997`]
+  inline def wdShapeBottom: `-999997` = -999997.asInstanceOf[`-999997`]
   
-  @scala.inline
-  def wdShapeCenter: `-999995` = -999995.asInstanceOf[`-999995`]
+  inline def wdShapeCenter: `-999995` = -999995.asInstanceOf[`-999995`]
   
-  @scala.inline
-  def wdShapeInside: `-999994` = -999994.asInstanceOf[`-999994`]
+  inline def wdShapeInside: `-999994` = -999994.asInstanceOf[`-999994`]
   
-  @scala.inline
-  def wdShapeLeft: `-999998` = -999998.asInstanceOf[`-999998`]
+  inline def wdShapeLeft: `-999998` = -999998.asInstanceOf[`-999998`]
   
-  @scala.inline
-  def wdShapeOutside: `-999993` = -999993.asInstanceOf[`-999993`]
+  inline def wdShapeOutside: `-999993` = -999993.asInstanceOf[`-999993`]
   
-  @scala.inline
-  def wdShapeRight: `-999996` = -999996.asInstanceOf[`-999996`]
+  inline def wdShapeRight: `-999996` = -999996.asInstanceOf[`-999996`]
   
-  @scala.inline
-  def wdShapeTop: `-999999` = -999999.asInstanceOf[`-999999`]
+  inline def wdShapeTop: `-999999` = -999999.asInstanceOf[`-999999`]
 }

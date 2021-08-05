@@ -18,25 +18,19 @@ trait ListScriptsInput extends StObject {
 }
 object ListScriptsInput {
   
-  @scala.inline
-  def apply(): ListScriptsInput = {
+  inline def apply(): ListScriptsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListScriptsInput]
   }
   
-  @scala.inline
-  implicit class ListScriptsInputMutableBuilder[Self <: ListScriptsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListScriptsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

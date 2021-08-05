@@ -16,19 +16,15 @@ trait SchemaAttachment extends StObject {
 }
 object SchemaAttachment {
   
-  @scala.inline
-  def apply(): SchemaAttachment = {
+  inline def apply(): SchemaAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttachment]
   }
   
-  @scala.inline
-  implicit class SchemaAttachmentMutableBuilder[Self <: SchemaAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttachment](x: Self) {
     
-    @scala.inline
-    def setCsv(value: SchemaCsv): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    inline def setCsv(value: SchemaCsv): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+    inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
   }
 }

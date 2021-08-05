@@ -31,34 +31,25 @@ trait HighlightSourceOrderRequest extends StObject {
 }
 object HighlightSourceOrderRequest {
   
-  @scala.inline
-  def apply(sourceOrderConfig: SourceOrderConfig): HighlightSourceOrderRequest = {
+  inline def apply(sourceOrderConfig: SourceOrderConfig): HighlightSourceOrderRequest = {
     val __obj = js.Dynamic.literal(sourceOrderConfig = sourceOrderConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightSourceOrderRequest]
   }
   
-  @scala.inline
-  implicit class HighlightSourceOrderRequestMutableBuilder[Self <: HighlightSourceOrderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightSourceOrderRequest](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+    inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setSourceOrderConfig(value: SourceOrderConfig): Self = StObject.set(x, "sourceOrderConfig", value.asInstanceOf[js.Any])
+    inline def setSourceOrderConfig(value: SourceOrderConfig): Self = StObject.set(x, "sourceOrderConfig", value.asInstanceOf[js.Any])
   }
 }

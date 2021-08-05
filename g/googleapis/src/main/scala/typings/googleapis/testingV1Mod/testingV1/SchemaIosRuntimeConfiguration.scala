@@ -21,31 +21,23 @@ trait SchemaIosRuntimeConfiguration extends StObject {
 }
 object SchemaIosRuntimeConfiguration {
   
-  @scala.inline
-  def apply(): SchemaIosRuntimeConfiguration = {
+  inline def apply(): SchemaIosRuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIosRuntimeConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaIosRuntimeConfigurationMutableBuilder[Self <: SchemaIosRuntimeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIosRuntimeConfiguration](x: Self) {
     
-    @scala.inline
-    def setLocales(value: js.Array[SchemaLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    inline def setLocales(value: js.Array[SchemaLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    @scala.inline
-    def setLocalesVarargs(value: SchemaLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setLocalesVarargs(value: SchemaLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
-    @scala.inline
-    def setOrientations(value: js.Array[SchemaOrientation]): Self = StObject.set(x, "orientations", value.asInstanceOf[js.Any])
+    inline def setOrientations(value: js.Array[SchemaOrientation]): Self = StObject.set(x, "orientations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationsUndefined: Self = StObject.set(x, "orientations", js.undefined)
+    inline def setOrientationsUndefined: Self = StObject.set(x, "orientations", js.undefined)
     
-    @scala.inline
-    def setOrientationsVarargs(value: SchemaOrientation*): Self = StObject.set(x, "orientations", js.Array(value :_*))
+    inline def setOrientationsVarargs(value: SchemaOrientation*): Self = StObject.set(x, "orientations", js.Array(value :_*))
   }
 }

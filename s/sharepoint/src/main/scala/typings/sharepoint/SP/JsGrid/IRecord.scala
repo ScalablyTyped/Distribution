@@ -41,8 +41,7 @@ trait IRecord extends StObject {
 }
 object IRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddFieldValue: (String, js.Any) => Unit,
     GetDataValue: String => js.Any,
     GetLocalizedValue: String => String,
@@ -59,40 +58,28 @@ object IRecord {
     __obj.asInstanceOf[IRecord]
   }
   
-  @scala.inline
-  implicit class IRecordMutableBuilder[Self <: IRecord] (val x: Self) extends AnyVal {
+  extension [Self <: IRecord](x: Self) {
     
-    @scala.inline
-    def setAddFieldValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "AddFieldValue", js.Any.fromFunction2(value))
+    inline def setAddFieldValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "AddFieldValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBIsNewRow(value: Boolean): Self = StObject.set(x, "bIsNewRow", value.asInstanceOf[js.Any])
+    inline def setBIsNewRow(value: Boolean): Self = StObject.set(x, "bIsNewRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataValue(value: String => js.Any): Self = StObject.set(x, "GetDataValue", js.Any.fromFunction1(value))
+    inline def setGetDataValue(value: String => js.Any): Self = StObject.set(x, "GetDataValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLocalizedValue(value: String => String): Self = StObject.set(x, "GetLocalizedValue", js.Any.fromFunction1(value))
+    inline def setGetLocalizedValue(value: String => String): Self = StObject.set(x, "GetLocalizedValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProp(value: String => IPropertyBase): Self = StObject.set(x, "GetProp", js.Any.fromFunction1(value))
+    inline def setGetProp(value: String => IPropertyBase): Self = StObject.set(x, "GetProp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasDataValue(value: String => Boolean): Self = StObject.set(x, "HasDataValue", js.Any.fromFunction1(value))
+    inline def setHasDataValue(value: String => Boolean): Self = StObject.set(x, "HasDataValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasLocalizedValue(value: String => Boolean): Self = StObject.set(x, "HasLocalizedValue", js.Any.fromFunction1(value))
+    inline def setHasLocalizedValue(value: String => Boolean): Self = StObject.set(x, "HasLocalizedValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKey(value: () => Double): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+    inline def setKey(value: () => Double): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProperties(value: StringDictionary[IPropertyBase]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[IPropertyBase]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFieldValue(value: String => Unit): Self = StObject.set(x, "RemoveFieldValue", js.Any.fromFunction1(value))
+    inline def setRemoveFieldValue(value: String => Unit): Self = StObject.set(x, "RemoveFieldValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProp(value: (String, IPropertyBase) => Unit): Self = StObject.set(x, "SetProp", js.Any.fromFunction2(value))
+    inline def setSetProp(value: (String, IPropertyBase) => Unit): Self = StObject.set(x, "SetProp", js.Any.fromFunction2(value))
   }
 }

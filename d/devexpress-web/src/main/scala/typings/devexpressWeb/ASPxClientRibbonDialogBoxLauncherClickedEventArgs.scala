@@ -18,16 +18,13 @@ trait ASPxClientRibbonDialogBoxLauncherClickedEventArgs
 }
 object ASPxClientRibbonDialogBoxLauncherClickedEventArgs {
   
-  @scala.inline
-  def apply(group: ASPxClientRibbonGroup, processOnServer: Boolean): ASPxClientRibbonDialogBoxLauncherClickedEventArgs = {
+  inline def apply(group: ASPxClientRibbonGroup, processOnServer: Boolean): ASPxClientRibbonDialogBoxLauncherClickedEventArgs = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRibbonDialogBoxLauncherClickedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRibbonDialogBoxLauncherClickedEventArgsMutableBuilder[Self <: ASPxClientRibbonDialogBoxLauncherClickedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRibbonDialogBoxLauncherClickedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGroup(value: ASPxClientRibbonGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: ASPxClientRibbonGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

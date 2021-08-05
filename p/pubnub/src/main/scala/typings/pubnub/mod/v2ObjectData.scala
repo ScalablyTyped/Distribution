@@ -16,31 +16,23 @@ trait v2ObjectData[Custom /* <: ObjectCustom */] extends StObject {
 }
 object v2ObjectData {
   
-  @scala.inline
-  def apply[Custom /* <: ObjectCustom */](eTag: String, id: String, updated: String): v2ObjectData[Custom] = {
+  inline def apply[Custom /* <: ObjectCustom */](eTag: String, id: String, updated: String): v2ObjectData[Custom] = {
     val __obj = js.Dynamic.literal(eTag = eTag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[v2ObjectData[Custom]]
   }
   
-  @scala.inline
-  implicit class v2ObjectDataMutableBuilder[Self <: v2ObjectData[?], Custom /* <: ObjectCustom */] (val x: Self & v2ObjectData[Custom]) extends AnyVal {
+  extension [Self <: v2ObjectData[?], Custom /* <: ObjectCustom */](x: Self & v2ObjectData[Custom]) {
     
-    @scala.inline
-    def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomNull: Self = StObject.set(x, "custom", null)
+    inline def setCustomNull: Self = StObject.set(x, "custom", null)
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

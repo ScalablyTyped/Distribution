@@ -21,8 +21,7 @@ trait ISQLDatabase extends StObject {
 }
 object ISQLDatabase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdminUser: IImpersonation,
     BasicUser: IImpersonation,
     Clone: () => ISQLDatabase,
@@ -34,25 +33,18 @@ object ISQLDatabase {
     __obj.asInstanceOf[ISQLDatabase]
   }
   
-  @scala.inline
-  implicit class ISQLDatabaseMutableBuilder[Self <: ISQLDatabase] (val x: Self) extends AnyVal {
+  extension [Self <: ISQLDatabase](x: Self) {
     
-    @scala.inline
-    def setAdminUser(value: IImpersonation): Self = StObject.set(x, "AdminUser", value.asInstanceOf[js.Any])
+    inline def setAdminUser(value: IImpersonation): Self = StObject.set(x, "AdminUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicUser(value: IImpersonation): Self = StObject.set(x, "BasicUser", value.asInstanceOf[js.Any])
+    inline def setBasicUser(value: IImpersonation): Self = StObject.set(x, "BasicUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => ISQLDatabase): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISQLDatabase): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEngine(value: MFDBEngine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: MFDBEngine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait PlanGateway extends StObject {
 }
 object PlanGateway {
   
-  @scala.inline
-  def apply(all: () => js.Promise[Plans]): PlanGateway = {
+  inline def apply(all: () => js.Promise[Plans]): PlanGateway = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all))
     __obj.asInstanceOf[PlanGateway]
   }
   
-  @scala.inline
-  implicit class PlanGatewayMutableBuilder[Self <: PlanGateway] (val x: Self) extends AnyVal {
+  extension [Self <: PlanGateway](x: Self) {
     
-    @scala.inline
-    def setAll(value: () => js.Promise[Plans]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+    inline def setAll(value: () => js.Promise[Plans]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
   }
 }

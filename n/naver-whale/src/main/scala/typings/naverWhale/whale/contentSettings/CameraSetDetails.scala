@@ -16,16 +16,13 @@ trait CameraSetDetails
 }
 object CameraSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | ask): CameraSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | ask): CameraSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraSetDetails]
   }
   
-  @scala.inline
-  implicit class CameraSetDetailsMutableBuilder[Self <: CameraSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CameraSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

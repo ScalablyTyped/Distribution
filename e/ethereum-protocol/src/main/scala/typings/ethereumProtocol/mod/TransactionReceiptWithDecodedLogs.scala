@@ -13,8 +13,7 @@ trait TransactionReceiptWithDecodedLogs
 }
 object TransactionReceiptWithDecodedLogs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blockHash: String,
     blockNumber: Double,
     cumulativeGasUsed: Double,
@@ -29,13 +28,10 @@ object TransactionReceiptWithDecodedLogs {
     __obj.asInstanceOf[TransactionReceiptWithDecodedLogs]
   }
   
-  @scala.inline
-  implicit class TransactionReceiptWithDecodedLogsMutableBuilder[Self <: TransactionReceiptWithDecodedLogs] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionReceiptWithDecodedLogs](x: Self) {
     
-    @scala.inline
-    def setLogs(value: js.Array[LogWithDecodedArgs[DecodedLogArgs] | LogEntry]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    inline def setLogs(value: js.Array[LogWithDecodedArgs[DecodedLogArgs] | LogEntry]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogsVarargs(value: (LogWithDecodedArgs[DecodedLogArgs] | LogEntry)*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: (LogWithDecodedArgs[DecodedLogArgs] | LogEntry)*): Self = StObject.set(x, "logs", js.Array(value :_*))
   }
 }

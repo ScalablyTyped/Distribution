@@ -173,8 +173,7 @@ object macroMod {
   }
   object MacroContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: MacroArgsArray,
       contextHas: js.Function1[/* context */ MacroContextObject, Boolean] => Boolean,
       contextSelect: js.Function1[/* context */ MacroContextObject, Boolean] => js.Object,
@@ -190,38 +189,27 @@ object macroMod {
       __obj.asInstanceOf[MacroContext]
     }
     
-    @scala.inline
-    implicit class MacroContextMutableBuilder[Self <: MacroContext] (val x: Self) extends AnyVal {
+    extension [Self <: MacroContext](x: Self) {
       
-      @scala.inline
-      def setArgs(value: MacroArgsArray): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: MacroArgsArray): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextHas(value: js.Function1[/* context */ MacroContextObject, Boolean] => Boolean): Self = StObject.set(x, "contextHas", js.Any.fromFunction1(value))
+      inline def setContextHas(value: js.Function1[/* context */ MacroContextObject, Boolean] => Boolean): Self = StObject.set(x, "contextHas", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextSelect(value: js.Function1[/* context */ MacroContextObject, Boolean] => js.Object): Self = StObject.set(x, "contextSelect", js.Any.fromFunction1(value))
+      inline def setContextSelect(value: js.Function1[/* context */ MacroContextObject, Boolean] => js.Object): Self = StObject.set(x, "contextSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextSelectAll(value: js.Function1[/* context */ MacroContextObject, Boolean] => Array[js.Object]): Self = StObject.set(x, "contextSelectAll", js.Any.fromFunction1(value))
+      inline def setContextSelectAll(value: js.Function1[/* context */ MacroContextObject, Boolean] => Array[js.Object]): Self = StObject.set(x, "contextSelectAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: String => `false`): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: String => `false`): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: HTMLElement): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: HTMLElement): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Array[MacroContextObject]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Array[MacroContextObject]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelf(value: js.Object): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+      inline def setSelf(value: js.Object): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,23 +233,18 @@ object macroMod {
   }
   object MacroContextObject {
     
-    @scala.inline
-    def apply(args: MacroArgsArray, contents: String, name: String): MacroContextObject = {
+    inline def apply(args: MacroArgsArray, contents: String, name: String): MacroContextObject = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[MacroContextObject]
     }
     
-    @scala.inline
-    implicit class MacroContextObjectMutableBuilder[Self <: MacroContextObject] (val x: Self) extends AnyVal {
+    extension [Self <: MacroContextObject](x: Self) {
       
-      @scala.inline
-      def setArgs(value: MacroArgsArray): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: MacroArgsArray): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -275,29 +258,22 @@ object macroMod {
   }
   object MacroDefinition {
     
-    @scala.inline
-    def apply(handler: () => Unit): MacroDefinition = {
+    inline def apply(handler: () => Unit): MacroDefinition = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction0(handler))
       __obj.asInstanceOf[MacroDefinition]
     }
     
-    @scala.inline
-    implicit class MacroDefinitionMutableBuilder[Self <: MacroDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: MacroDefinition](x: Self) {
       
-      @scala.inline
-      def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
+      inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSkipArgs(value: Boolean): Self = StObject.set(x, "skipArgs", value.asInstanceOf[js.Any])
+      inline def setSkipArgs(value: Boolean): Self = StObject.set(x, "skipArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipArgsUndefined: Self = StObject.set(x, "skipArgs", js.undefined)
+      inline def setSkipArgsUndefined: Self = StObject.set(x, "skipArgs", js.undefined)
       
-      @scala.inline
-      def setTags(value: Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -322,20 +298,16 @@ object macroMod {
   }
   object MacroTags {
     
-    @scala.inline
-    def apply(get: String => Array[String], has: String => Boolean): MacroTags = {
+    inline def apply(get: String => Array[String], has: String => Boolean): MacroTags = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
       __obj.asInstanceOf[MacroTags]
     }
     
-    @scala.inline
-    implicit class MacroTagsMutableBuilder[Self <: MacroTags] (val x: Self) extends AnyVal {
+    extension [Self <: MacroTags](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => Array[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Array[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     }
   }
 }

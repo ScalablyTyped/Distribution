@@ -13,19 +13,15 @@ trait ReferenceClientCapabilities extends StObject {
 }
 object ReferenceClientCapabilities {
   
-  @scala.inline
-  def apply(): ReferenceClientCapabilities = {
+  inline def apply(): ReferenceClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReferenceClientCapabilities]
   }
   
-  @scala.inline
-  implicit class ReferenceClientCapabilitiesMutableBuilder[Self <: ReferenceClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

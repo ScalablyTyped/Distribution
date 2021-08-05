@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(str: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("fast-chunk-string", JSImport.Namespace)
   @js.native
@@ -21,23 +20,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(size: Double): Options = {
+    inline def apply(size: Double): Options = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeAware(value: Boolean): Self = StObject.set(x, "unicodeAware", value.asInstanceOf[js.Any])
+      inline def setUnicodeAware(value: Boolean): Self = StObject.set(x, "unicodeAware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeAwareUndefined: Self = StObject.set(x, "unicodeAware", js.undefined)
+      inline def setUnicodeAwareUndefined: Self = StObject.set(x, "unicodeAware", js.undefined)
     }
   }
 }

@@ -15,25 +15,19 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(message: java.lang.String, name: java.lang.String): Error = {
+  inline def apply(message: java.lang.String, name: java.lang.String): Error = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: java.lang.String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: java.lang.String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

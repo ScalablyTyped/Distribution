@@ -18,9 +18,9 @@ object hostMod {
        with typings.typescript.mod.LanguageServiceHost {
     def this(parsedConfig: ParsedCommandLine, transformers: js.Array[TransformerFactoryCreator], cwd: String) = this()
     
-    var cwd: js.Any = js.native
+    /* private */ var cwd: js.Any = js.native
     
-    var fileNames: js.Any = js.native
+    /* private */ var fileNames: js.Any = js.native
     
     /* CompleteClass */
     override def getCompilationSettings(): CompilerOptions = js.native
@@ -41,20 +41,20 @@ object hostMod {
     /* CompleteClass */
     override def getScriptVersion(fileName: String): String = js.native
     
-    var parsedConfig: js.Any = js.native
+    /* private */ var parsedConfig: js.Any = js.native
     
     def reset(): Unit = js.native
     
-    var service: js.Any = js.native
+    /* private */ var service: js.Any = js.native
     
     def setLanguageService(service: LanguageService): Unit = js.native
     
     def setSnapshot(fileName: String, data: String): IScriptSnapshot = js.native
     
-    var snapshots: js.Any = js.native
+    /* private */ var snapshots: js.Any = js.native
     
-    var transformers: js.Any = js.native
+    /* private */ var transformers: js.Any = js.native
     
-    var versions: js.Any = js.native
+    /* private */ var versions: js.Any = js.native
   }
 }

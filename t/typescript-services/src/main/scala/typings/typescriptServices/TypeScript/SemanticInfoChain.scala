@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SemanticInfoChain extends StObject {
   
-  var _binder: js.Any = js.native
+  /* private */ var _binder: js.Any = js.native
   
-  var _fileNames: js.Any = js.native
+  /* private */ var _fileNames: js.Any = js.native
   
-  var _resolver: js.Any = js.native
+  /* private */ var _resolver: js.Any = js.native
   
-  var _topLevelDecls: js.Any = js.native
+  /* private */ var _topLevelDecls: js.Any = js.native
   
   def addDiagnostic(diagnostic: Diagnostic): Unit = js.native
   
@@ -48,11 +48,11 @@ trait SemanticInfoChain extends StObject {
   
   var anyTypeSymbol: PullPrimitiveTypeSymbol = js.native
   
-  var astAliasSymbolMap: js.Any = js.native
+  /* private */ var astAliasSymbolMap: js.Any = js.native
   
-  var astCallResolutionDataMap: js.Any = js.native
+  /* private */ var astCallResolutionDataMap: js.Any = js.native
   
-  var astSymbolMap: js.Any = js.native
+  /* private */ var astSymbolMap: js.Any = js.native
   
   /* private */ def bindPrimitiveSymbol[TSymbol /* <: PullSymbol */](decl: js.Any, newSymbol: js.Any): js.Any = js.native
   
@@ -62,13 +62,13 @@ trait SemanticInfoChain extends StObject {
   
   def cacheGlobalSymbol(symbol: PullSymbol, kind: PullElementKind): Unit = js.native
   
-  var compiler: js.Any = js.native
+  /* private */ var compiler: js.Any = js.native
   
-  var declCache: js.Any = js.native
+  /* private */ var declCache: js.Any = js.native
   
-  var declSignatureSymbolMap: js.Any = js.native
+  /* private */ var declSignatureSymbolMap: js.Any = js.native
   
-  var declSymbolMap: js.Any = js.native
+  /* private */ var declSymbolMap: js.Any = js.native
   
   def diagnosticFromAST(ast: AST, diagnosticKey: String): Diagnostic = js.native
   def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[js.Any]): Diagnostic = js.native
@@ -80,15 +80,15 @@ trait SemanticInfoChain extends StObject {
   ): Diagnostic = js.native
   def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: Unit, additionalLocations: js.Array[Location]): Diagnostic = js.native
   
-  var documents: js.Any = js.native
+  /* private */ var documents: js.Any = js.native
   
   def duplicateIdentifierDiagnosticFromAST(ast: AST, identifier: String, additionalLocationAST: AST): Diagnostic = js.native
   
   var emptyTypeSymbol: PullTypeSymbol = js.native
   
-  var fileNameToDiagnostics: js.Any = js.native
+  /* private */ var fileNameToDiagnostics: js.Any = js.native
   
-  var fileNameToDocument: js.Any = js.native
+  /* private */ var fileNameToDocument: js.Any = js.native
   
   def fileNames(): js.Array[String] = js.native
   
@@ -141,7 +141,7 @@ trait SemanticInfoChain extends StObject {
   
   def locationFromAST(ast: AST): Location = js.native
   
-  var logger: js.Any = js.native
+  /* private */ var logger: js.Any = js.native
   
   var nullTypeDecl: PullDecl = js.native
   
@@ -175,7 +175,7 @@ trait SemanticInfoChain extends StObject {
   
   var stringTypeSymbol: PullPrimitiveTypeSymbol = js.native
   
-  var symbolCache: js.Any = js.native
+  /* private */ var symbolCache: js.Any = js.native
   
   def topLevelDecl(fileName: String): PullDecl = js.native
   

@@ -10,6 +10,5 @@ object idMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def id(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def id(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

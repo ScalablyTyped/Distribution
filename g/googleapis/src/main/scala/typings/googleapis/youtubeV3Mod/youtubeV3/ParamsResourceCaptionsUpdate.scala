@@ -68,55 +68,39 @@ trait ParamsResourceCaptionsUpdate
 }
 object ParamsResourceCaptionsUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceCaptionsUpdate = {
+  inline def apply(): ParamsResourceCaptionsUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCaptionsUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCaptionsUpdateMutableBuilder[Self <: ParamsResourceCaptionsUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCaptionsUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOf(value: String): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOf(value: String): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
+    inline def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCaption): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCaption): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

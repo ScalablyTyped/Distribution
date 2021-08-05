@@ -19,8 +19,7 @@ trait StreamLayerGetFieldDomainOptions
 }
 object StreamLayerGetFieldDomainOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     feature: Graphic,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object StreamLayerGetFieldDomainOptions {
     __obj.asInstanceOf[StreamLayerGetFieldDomainOptions]
   }
   
-  @scala.inline
-  implicit class StreamLayerGetFieldDomainOptionsMutableBuilder[Self <: StreamLayerGetFieldDomainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StreamLayerGetFieldDomainOptions](x: Self) {
     
-    @scala.inline
-    def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }
 }

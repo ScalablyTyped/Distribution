@@ -64,8 +64,7 @@ trait DirectionsRoute extends StObject {
 }
 object DirectionsRoute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: LatLngBounds,
     copyrights: String,
     fare: TransitFare,
@@ -79,43 +78,30 @@ object DirectionsRoute {
     __obj.asInstanceOf[DirectionsRoute]
   }
   
-  @scala.inline
-  implicit class DirectionsRouteMutableBuilder[Self <: DirectionsRoute] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsRoute](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrights(value: String): Self = StObject.set(x, "copyrights", value.asInstanceOf[js.Any])
+    inline def setCopyrights(value: String): Self = StObject.set(x, "copyrights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFare(value: TransitFare): Self = StObject.set(x, "fare", value.asInstanceOf[js.Any])
+    inline def setFare(value: TransitFare): Self = StObject.set(x, "fare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegs(value: js.Array[DirectionsLeg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
+    inline def setLegs(value: js.Array[DirectionsLeg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegsVarargs(value: DirectionsLeg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+    inline def setLegsVarargs(value: DirectionsLeg*): Self = StObject.set(x, "legs", js.Array(value :_*))
     
-    @scala.inline
-    def setOverview_path(value: js.Array[LatLng]): Self = StObject.set(x, "overview_path", value.asInstanceOf[js.Any])
+    inline def setOverview_path(value: js.Array[LatLng]): Self = StObject.set(x, "overview_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverview_pathVarargs(value: LatLng*): Self = StObject.set(x, "overview_path", js.Array(value :_*))
+    inline def setOverview_pathVarargs(value: LatLng*): Self = StObject.set(x, "overview_path", js.Array(value :_*))
     
-    @scala.inline
-    def setOverview_polyline(value: String): Self = StObject.set(x, "overview_polyline", value.asInstanceOf[js.Any])
+    inline def setOverview_polyline(value: String): Self = StObject.set(x, "overview_polyline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     
-    @scala.inline
-    def setWaypoint_order(value: js.Array[Double]): Self = StObject.set(x, "waypoint_order", value.asInstanceOf[js.Any])
+    inline def setWaypoint_order(value: js.Array[Double]): Self = StObject.set(x, "waypoint_order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypoint_orderVarargs(value: Double*): Self = StObject.set(x, "waypoint_order", js.Array(value :_*))
+    inline def setWaypoint_orderVarargs(value: Double*): Self = StObject.set(x, "waypoint_order", js.Array(value :_*))
   }
 }

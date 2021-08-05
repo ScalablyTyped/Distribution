@@ -15,28 +15,21 @@ trait IValidatorFce extends StObject {
 }
 object IValidatorFce {
   
-  @scala.inline
-  def apply(Name: String): IValidatorFce = {
+  inline def apply(Name: String): IValidatorFce = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidatorFce]
   }
   
-  @scala.inline
-  implicit class IValidatorFceMutableBuilder[Self <: IValidatorFce] (val x: Self) extends AnyVal {
+  extension [Self <: IValidatorFce](x: Self) {
     
-    @scala.inline
-    def setAsyncValidationFce(value: /* args */ IError => Promise[js.Any]): Self = StObject.set(x, "AsyncValidationFce", js.Any.fromFunction1(value))
+    inline def setAsyncValidationFce(value: /* args */ IError => Promise[js.Any]): Self = StObject.set(x, "AsyncValidationFce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAsyncValidationFceUndefined: Self = StObject.set(x, "AsyncValidationFce", js.undefined)
+    inline def setAsyncValidationFceUndefined: Self = StObject.set(x, "AsyncValidationFce", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationFce(value: /* args */ IError => Unit): Self = StObject.set(x, "ValidationFce", js.Any.fromFunction1(value))
+    inline def setValidationFce(value: /* args */ IError => Unit): Self = StObject.set(x, "ValidationFce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidationFceUndefined: Self = StObject.set(x, "ValidationFce", js.undefined)
+    inline def setValidationFceUndefined: Self = StObject.set(x, "ValidationFce", js.undefined)
   }
 }

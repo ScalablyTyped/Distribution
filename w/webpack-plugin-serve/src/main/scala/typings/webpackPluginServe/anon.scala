@@ -21,32 +21,24 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(): Address = {
+    inline def apply(): Address = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -59,29 +51,22 @@ object anon {
   }
   object App {
     
-    @scala.inline
-    def apply(): App = {
+    inline def apply(): App = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[App]
     }
     
-    @scala.inline
-    implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+    extension [Self <: App](x: Self) {
       
-      @scala.inline
-      def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
+      inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
       
-      @scala.inline
-      def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
   
@@ -92,17 +77,14 @@ object anon {
   }
   object Apply {
     
-    @scala.inline
-    def apply[Compiler](apply: Compiler => Unit): Apply[Compiler] = {
+    inline def apply[Compiler](apply: Compiler => Unit): Apply[Compiler] = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[Apply[Compiler]]
     }
     
-    @scala.inline
-    implicit class ApplyMutableBuilder[Self <: Apply[?], Compiler] (val x: Self & Apply[Compiler]) extends AnyVal {
+    extension [Self <: Apply[?], Compiler](x: Self & Apply[Compiler]) {
       
-      @scala.inline
-      def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
   
@@ -114,23 +96,18 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(level: trace | debug | info | warn | error): Level = {
+    inline def apply(level: trace | debug | info | warn | error): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: trace | debug | info | warn | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: trace | debug | info | warn | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
 }

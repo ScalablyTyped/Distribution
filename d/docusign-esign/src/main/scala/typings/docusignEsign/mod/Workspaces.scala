@@ -83,99 +83,71 @@ trait Workspaces extends StObject {
 }
 object Workspaces {
   
-  @scala.inline
-  def apply(): Workspaces = {
+  inline def apply(): Workspaces = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Workspaces]
   }
   
-  @scala.inline
-  implicit class WorkspacesMutableBuilder[Self <: Workspaces] (val x: Self) extends AnyVal {
+  extension [Self <: Workspaces](x: Self) {
     
-    @scala.inline
-    def setBillableAccountId(value: String): Self = StObject.set(x, "billableAccountId", value.asInstanceOf[js.Any])
+    inline def setBillableAccountId(value: String): Self = StObject.set(x, "billableAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillableAccountIdUndefined: Self = StObject.set(x, "billableAccountId", js.undefined)
+    inline def setBillableAccountIdUndefined: Self = StObject.set(x, "billableAccountId", js.undefined)
     
-    @scala.inline
-    def setCallerInformation(
+    inline def setCallerInformation(
       value: /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
     ): Self = StObject.set(x, "callerInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerInformationUndefined: Self = StObject.set(x, "callerInformation", js.undefined)
+    inline def setCallerInformationUndefined: Self = StObject.set(x, "callerInformation", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByInformation(
+    inline def setCreatedByInformation(
       value: /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
     ): Self = StObject.set(x, "createdByInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByInformationUndefined: Self = StObject.set(x, "createdByInformation", js.undefined)
+    inline def setCreatedByInformationUndefined: Self = StObject.set(x, "createdByInformation", js.undefined)
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByInformation(
+    inline def setLastModifiedByInformation(
       value: /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
     ): Self = StObject.set(x, "lastModifiedByInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByInformationUndefined: Self = StObject.set(x, "lastModifiedByInformation", js.undefined)
+    inline def setLastModifiedByInformationUndefined: Self = StObject.set(x, "lastModifiedByInformation", js.undefined)
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    @scala.inline
-    def setSettings(
+    inline def setSettings(
       value: /* This object provides information about the settings for the workspace. */ WorkspaceSettings
     ): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setWorkspaceBaseUrl(value: String): Self = StObject.set(x, "workspaceBaseUrl", value.asInstanceOf[js.Any])
+    inline def setWorkspaceBaseUrl(value: String): Self = StObject.set(x, "workspaceBaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceBaseUrlUndefined: Self = StObject.set(x, "workspaceBaseUrl", js.undefined)
+    inline def setWorkspaceBaseUrlUndefined: Self = StObject.set(x, "workspaceBaseUrl", js.undefined)
     
-    @scala.inline
-    def setWorkspaceDescription(value: String): Self = StObject.set(x, "workspaceDescription", value.asInstanceOf[js.Any])
+    inline def setWorkspaceDescription(value: String): Self = StObject.set(x, "workspaceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceDescriptionUndefined: Self = StObject.set(x, "workspaceDescription", js.undefined)
+    inline def setWorkspaceDescriptionUndefined: Self = StObject.set(x, "workspaceDescription", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
     
-    @scala.inline
-    def setWorkspaceName(value: String): Self = StObject.set(x, "workspaceName", value.asInstanceOf[js.Any])
+    inline def setWorkspaceName(value: String): Self = StObject.set(x, "workspaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceNameUndefined: Self = StObject.set(x, "workspaceName", js.undefined)
+    inline def setWorkspaceNameUndefined: Self = StObject.set(x, "workspaceName", js.undefined)
     
-    @scala.inline
-    def setWorkspaceUri(value: String): Self = StObject.set(x, "workspaceUri", value.asInstanceOf[js.Any])
+    inline def setWorkspaceUri(value: String): Self = StObject.set(x, "workspaceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUriUndefined: Self = StObject.set(x, "workspaceUri", js.undefined)
+    inline def setWorkspaceUriUndefined: Self = StObject.set(x, "workspaceUri", js.undefined)
   }
 }

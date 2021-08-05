@@ -21,19 +21,15 @@ trait BlockCipherOption extends StObject {
 }
 object BlockCipherOption {
   
-  @scala.inline
-  def apply(mode: Mode_, padding: Padding): BlockCipherOption = {
+  inline def apply(mode: Mode_, padding: Padding): BlockCipherOption = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockCipherOption]
   }
   
-  @scala.inline
-  implicit class BlockCipherOptionMutableBuilder[Self <: BlockCipherOption] (val x: Self) extends AnyVal {
+  extension [Self <: BlockCipherOption](x: Self) {
     
-    @scala.inline
-    def setMode(value: Mode_): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode_): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
   }
 }

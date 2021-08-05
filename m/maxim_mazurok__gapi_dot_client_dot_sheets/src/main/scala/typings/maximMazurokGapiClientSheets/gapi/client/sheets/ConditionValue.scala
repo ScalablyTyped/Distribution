@@ -17,25 +17,19 @@ trait ConditionValue extends StObject {
 }
 object ConditionValue {
   
-  @scala.inline
-  def apply(): ConditionValue = {
+  inline def apply(): ConditionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionValue]
   }
   
-  @scala.inline
-  implicit class ConditionValueMutableBuilder[Self <: ConditionValue] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionValue](x: Self) {
     
-    @scala.inline
-    def setRelativeDate(value: String): Self = StObject.set(x, "relativeDate", value.asInstanceOf[js.Any])
+    inline def setRelativeDate(value: String): Self = StObject.set(x, "relativeDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeDateUndefined: Self = StObject.set(x, "relativeDate", js.undefined)
+    inline def setRelativeDateUndefined: Self = StObject.set(x, "relativeDate", js.undefined)
     
-    @scala.inline
-    def setUserEnteredValue(value: String): Self = StObject.set(x, "userEnteredValue", value.asInstanceOf[js.Any])
+    inline def setUserEnteredValue(value: String): Self = StObject.set(x, "userEnteredValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEnteredValueUndefined: Self = StObject.set(x, "userEnteredValue", js.undefined)
+    inline def setUserEnteredValueUndefined: Self = StObject.set(x, "userEnteredValue", js.undefined)
   }
 }

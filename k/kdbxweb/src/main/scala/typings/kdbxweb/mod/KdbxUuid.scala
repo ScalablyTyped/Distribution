@@ -27,6 +27,5 @@ object KdbxUuid {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def random(): KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[KdbxUuid]
+  inline def random(): KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[KdbxUuid]
 }

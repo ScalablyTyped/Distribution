@@ -21,25 +21,19 @@ trait CreateMacBuiltinOption extends StObject {
 }
 object CreateMacBuiltinOption {
   
-  @scala.inline
-  def apply(): CreateMacBuiltinOption = {
+  inline def apply(): CreateMacBuiltinOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMacBuiltinOption]
   }
   
-  @scala.inline
-  implicit class CreateMacBuiltinOptionMutableBuilder[Self <: CreateMacBuiltinOption] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMacBuiltinOption](x: Self) {
     
-    @scala.inline
-    def setHideEdit(value: Boolean): Self = StObject.set(x, "hideEdit", value.asInstanceOf[js.Any])
+    inline def setHideEdit(value: Boolean): Self = StObject.set(x, "hideEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideEditUndefined: Self = StObject.set(x, "hideEdit", js.undefined)
+    inline def setHideEditUndefined: Self = StObject.set(x, "hideEdit", js.undefined)
     
-    @scala.inline
-    def setHideWindow(value: Boolean): Self = StObject.set(x, "hideWindow", value.asInstanceOf[js.Any])
+    inline def setHideWindow(value: Boolean): Self = StObject.set(x, "hideWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideWindowUndefined: Self = StObject.set(x, "hideWindow", js.undefined)
+    inline def setHideWindowUndefined: Self = StObject.set(x, "hideWindow", js.undefined)
   }
 }

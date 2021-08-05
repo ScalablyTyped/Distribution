@@ -23,31 +23,23 @@ trait ClusterNode extends StObject {
 }
 object ClusterNode {
   
-  @scala.inline
-  def apply(): ClusterNode = {
+  inline def apply(): ClusterNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterNode]
   }
   
-  @scala.inline
-  implicit class ClusterNodeMutableBuilder[Self <: ClusterNode] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterNode](x: Self) {
     
-    @scala.inline
-    def setNodeRole(value: String): Self = StObject.set(x, "NodeRole", value.asInstanceOf[js.Any])
+    inline def setNodeRole(value: String): Self = StObject.set(x, "NodeRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRoleUndefined: Self = StObject.set(x, "NodeRole", js.undefined)
+    inline def setNodeRoleUndefined: Self = StObject.set(x, "NodeRole", js.undefined)
     
-    @scala.inline
-    def setPrivateIPAddress(value: String): Self = StObject.set(x, "PrivateIPAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIPAddress(value: String): Self = StObject.set(x, "PrivateIPAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIPAddressUndefined: Self = StObject.set(x, "PrivateIPAddress", js.undefined)
+    inline def setPrivateIPAddressUndefined: Self = StObject.set(x, "PrivateIPAddress", js.undefined)
     
-    @scala.inline
-    def setPublicIPAddress(value: String): Self = StObject.set(x, "PublicIPAddress", value.asInstanceOf[js.Any])
+    inline def setPublicIPAddress(value: String): Self = StObject.set(x, "PublicIPAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIPAddressUndefined: Self = StObject.set(x, "PublicIPAddress", js.undefined)
+    inline def setPublicIPAddressUndefined: Self = StObject.set(x, "PublicIPAddress", js.undefined)
   }
 }

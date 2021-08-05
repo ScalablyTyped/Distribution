@@ -16,15 +16,13 @@ object mod {
   @js.native
   def preprocessorHtmlDetailed: js.Tuple2[factory, js.Any] = js.native
   
-  @scala.inline
-  def preprocessorHtmlDetailed_=(x: js.Tuple2[factory, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessor:htmlDetailed")(x.asInstanceOf[js.Any])
+  inline def preprocessorHtmlDetailed_=(x: js.Tuple2[factory, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessor:htmlDetailed")(x.asInstanceOf[js.Any])
   
   @JSImport("karma-html-detailed-reporter", "reporter:htmlDetailed")
   @js.native
   def reporterHtmlDetailed: js.Tuple2[`type`, js.Any] = js.native
   
-  @scala.inline
-  def reporterHtmlDetailed_=(x: js.Tuple2[`type`, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reporter:htmlDetailed")(x.asInstanceOf[js.Any])
+  inline def reporterHtmlDetailed_=(x: js.Tuple2[`type`, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reporter:htmlDetailed")(x.asInstanceOf[js.Any])
   
   /* augmented module */
   object karmaAugmentingMod {
@@ -39,20 +37,16 @@ object mod {
     }
     object ConfigOptions {
       
-      @scala.inline
-      def apply(): ConfigOptions = {
+      inline def apply(): ConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      @scala.inline
-      implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConfigOptions](x: Self) {
         
-        @scala.inline
-        def setHtmlDetailed(value: HtmlDetailedOptions): Self = StObject.set(x, "htmlDetailed", value.asInstanceOf[js.Any])
+        inline def setHtmlDetailed(value: HtmlDetailedOptions): Self = StObject.set(x, "htmlDetailed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtmlDetailedUndefined: Self = StObject.set(x, "htmlDetailed", js.undefined)
+        inline def setHtmlDetailedUndefined: Self = StObject.set(x, "htmlDetailed", js.undefined)
       }
     }
     
@@ -112,62 +106,44 @@ object mod {
     }
     object HtmlDetailedOptions {
       
-      @scala.inline
-      def apply(): HtmlDetailedOptions = {
+      inline def apply(): HtmlDetailedOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HtmlDetailedOptions]
       }
       
-      @scala.inline
-      implicit class HtmlDetailedOptionsMutableBuilder[Self <: HtmlDetailedOptions] (val x: Self) extends AnyVal {
+      extension [Self <: HtmlDetailedOptions](x: Self) {
         
-        @scala.inline
-        def setAutoReload(value: Boolean): Self = StObject.set(x, "autoReload", value.asInstanceOf[js.Any])
+        inline def setAutoReload(value: Boolean): Self = StObject.set(x, "autoReload", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoReloadUndefined: Self = StObject.set(x, "autoReload", js.undefined)
+        inline def setAutoReloadUndefined: Self = StObject.set(x, "autoReload", js.undefined)
         
-        @scala.inline
-        def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+        inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+        inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
         
-        @scala.inline
-        def setRefreshTimeout(value: Double): Self = StObject.set(x, "refreshTimeout", value.asInstanceOf[js.Any])
+        inline def setRefreshTimeout(value: Double): Self = StObject.set(x, "refreshTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshTimeoutUndefined: Self = StObject.set(x, "refreshTimeout", js.undefined)
+        inline def setRefreshTimeoutUndefined: Self = StObject.set(x, "refreshTimeout", js.undefined)
         
-        @scala.inline
-        def setShowFailed(value: Boolean): Self = StObject.set(x, "showFailed", value.asInstanceOf[js.Any])
+        inline def setShowFailed(value: Boolean): Self = StObject.set(x, "showFailed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowFailedUndefined: Self = StObject.set(x, "showFailed", js.undefined)
+        inline def setShowFailedUndefined: Self = StObject.set(x, "showFailed", js.undefined)
         
-        @scala.inline
-        def setShowSkipped(value: Boolean): Self = StObject.set(x, "showSkipped", value.asInstanceOf[js.Any])
+        inline def setShowSkipped(value: Boolean): Self = StObject.set(x, "showSkipped", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowSkippedUndefined: Self = StObject.set(x, "showSkipped", js.undefined)
+        inline def setShowSkippedUndefined: Self = StObject.set(x, "showSkipped", js.undefined)
         
-        @scala.inline
-        def setShowSuccess(value: Boolean): Self = StObject.set(x, "showSuccess", value.asInstanceOf[js.Any])
+        inline def setShowSuccess(value: Boolean): Self = StObject.set(x, "showSuccess", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowSuccessUndefined: Self = StObject.set(x, "showSuccess", js.undefined)
+        inline def setShowSuccessUndefined: Self = StObject.set(x, "showSuccess", js.undefined)
         
-        @scala.inline
-        def setSplitResults(value: Boolean): Self = StObject.set(x, "splitResults", value.asInstanceOf[js.Any])
+        inline def setSplitResults(value: Boolean): Self = StObject.set(x, "splitResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSplitResultsUndefined: Self = StObject.set(x, "splitResults", js.undefined)
+        inline def setSplitResultsUndefined: Self = StObject.set(x, "splitResults", js.undefined)
         
-        @scala.inline
-        def setUseHostedBootstrap(value: Boolean): Self = StObject.set(x, "useHostedBootstrap", value.asInstanceOf[js.Any])
+        inline def setUseHostedBootstrap(value: Boolean): Self = StObject.set(x, "useHostedBootstrap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseHostedBootstrapUndefined: Self = StObject.set(x, "useHostedBootstrap", js.undefined)
+        inline def setUseHostedBootstrapUndefined: Self = StObject.set(x, "useHostedBootstrap", js.undefined)
       }
     }
   }

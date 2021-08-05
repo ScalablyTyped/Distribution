@@ -29,8 +29,7 @@ trait RelationDesign
      with XInitialization
 object RelationDesign {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     Model: XModel,
     ViewData: js.Any,

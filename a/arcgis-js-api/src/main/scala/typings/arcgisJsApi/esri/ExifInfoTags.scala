@@ -33,8 +33,7 @@ trait ExifInfoTags
 }
 object ExifInfoTags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     description: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object ExifInfoTags {
     __obj.asInstanceOf[ExifInfoTags]
   }
   
-  @scala.inline
-  implicit class ExifInfoTagsMutableBuilder[Self <: ExifInfoTags] (val x: Self) extends AnyVal {
+  extension [Self <: ExifInfoTags](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

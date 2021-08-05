@@ -21,25 +21,19 @@ trait LineBreaks extends StObject {
 }
 object LineBreaks {
   
-  @scala.inline
-  def apply(): LineBreaks = {
+  inline def apply(): LineBreaks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineBreaks]
   }
   
-  @scala.inline
-  implicit class LineBreaksMutableBuilder[Self <: LineBreaks] (val x: Self) extends AnyVal {
+  extension [Self <: LineBreaks](x: Self) {
     
-    @scala.inline
-    def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
+    inline def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

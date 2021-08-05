@@ -43,8 +43,7 @@ trait Member extends StObject {
 }
 object Member {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountId: AccountId,
     Email: Email,
     MasterId: String,
@@ -55,34 +54,24 @@ object Member {
     __obj.asInstanceOf[Member]
   }
   
-  @scala.inline
-  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
+  extension [Self <: Member](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorIdUndefined: Self = StObject.set(x, "DetectorId", js.undefined)
+    inline def setDetectorIdUndefined: Self = StObject.set(x, "DetectorId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedAt(value: String): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: String): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
+    inline def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
     
-    @scala.inline
-    def setMasterId(value: String): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
+    inline def setMasterId(value: String): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipStatus(value: String): Self = StObject.set(x, "RelationshipStatus", value.asInstanceOf[js.Any])
+    inline def setRelationshipStatus(value: String): Self = StObject.set(x, "RelationshipStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

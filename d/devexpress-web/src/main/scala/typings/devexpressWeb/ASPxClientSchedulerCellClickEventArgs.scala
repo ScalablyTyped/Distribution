@@ -28,22 +28,17 @@ trait ASPxClientSchedulerCellClickEventArgs
 }
 object ASPxClientSchedulerCellClickEventArgs {
   
-  @scala.inline
-  def apply(htmlElement: js.Any, interval: ASPxClientTimeInterval, resource: String): ASPxClientSchedulerCellClickEventArgs = {
+  inline def apply(htmlElement: js.Any, interval: ASPxClientTimeInterval, resource: String): ASPxClientSchedulerCellClickEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSchedulerCellClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSchedulerCellClickEventArgsMutableBuilder[Self <: ASPxClientSchedulerCellClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSchedulerCellClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

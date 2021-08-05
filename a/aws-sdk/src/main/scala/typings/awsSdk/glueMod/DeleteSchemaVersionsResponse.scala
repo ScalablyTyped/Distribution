@@ -13,22 +13,17 @@ trait DeleteSchemaVersionsResponse extends StObject {
 }
 object DeleteSchemaVersionsResponse {
   
-  @scala.inline
-  def apply(): DeleteSchemaVersionsResponse = {
+  inline def apply(): DeleteSchemaVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSchemaVersionsResponse]
   }
   
-  @scala.inline
-  implicit class DeleteSchemaVersionsResponseMutableBuilder[Self <: DeleteSchemaVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSchemaVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setSchemaVersionErrors(value: SchemaVersionErrorList): Self = StObject.set(x, "SchemaVersionErrors", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionErrors(value: SchemaVersionErrorList): Self = StObject.set(x, "SchemaVersionErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionErrorsUndefined: Self = StObject.set(x, "SchemaVersionErrors", js.undefined)
+    inline def setSchemaVersionErrorsUndefined: Self = StObject.set(x, "SchemaVersionErrors", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionErrorsVarargs(value: SchemaVersionErrorItem*): Self = StObject.set(x, "SchemaVersionErrors", js.Array(value :_*))
+    inline def setSchemaVersionErrorsVarargs(value: SchemaVersionErrorItem*): Self = StObject.set(x, "SchemaVersionErrors", js.Array(value :_*))
   }
 }

@@ -17,8 +17,7 @@ trait SocketConnection
 }
 object SocketConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => js.Promise[Unit],
     input: InputStream,
     output: OutputStream,
@@ -28,10 +27,8 @@ object SocketConnection {
     __obj.asInstanceOf[SocketConnection]
   }
   
-  @scala.inline
-  implicit class SocketConnectionMutableBuilder[Self <: SocketConnection] (val x: Self) extends AnyVal {
+  extension [Self <: SocketConnection](x: Self) {
     
-    @scala.inline
-    def setSetNoDelay(value: Boolean => js.Promise[Unit]): Self = StObject.set(x, "setNoDelay", js.Any.fromFunction1(value))
+    inline def setSetNoDelay(value: Boolean => js.Promise[Unit]): Self = StObject.set(x, "setNoDelay", js.Any.fromFunction1(value))
   }
 }

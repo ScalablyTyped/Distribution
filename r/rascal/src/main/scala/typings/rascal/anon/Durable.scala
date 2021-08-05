@@ -10,16 +10,13 @@ trait Durable extends StObject {
 }
 object Durable {
   
-  @scala.inline
-  def apply(durable: Boolean): Durable = {
+  inline def apply(durable: Boolean): Durable = {
     val __obj = js.Dynamic.literal(durable = durable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Durable]
   }
   
-  @scala.inline
-  implicit class DurableMutableBuilder[Self <: Durable] (val x: Self) extends AnyVal {
+  extension [Self <: Durable](x: Self) {
     
-    @scala.inline
-    def setDurable(value: Boolean): Self = StObject.set(x, "durable", value.asInstanceOf[js.Any])
+    inline def setDurable(value: Boolean): Self = StObject.set(x, "durable", value.asInstanceOf[js.Any])
   }
 }

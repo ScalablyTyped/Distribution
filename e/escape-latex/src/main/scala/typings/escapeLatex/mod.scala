@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(texString: String): String = ^.asInstanceOf[js.Dynamic].apply(texString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(texString: String): String = ^.asInstanceOf[js.Dynamic].apply(texString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("escape-latex", JSImport.Namespace)
   @js.native

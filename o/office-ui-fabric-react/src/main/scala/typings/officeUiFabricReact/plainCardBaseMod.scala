@@ -14,8 +14,8 @@ object plainCardBaseMod {
     extends Component[IPlainCardProps, js.Object, js.Any] {
     def this(props: IPlainCardProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
   }
 }

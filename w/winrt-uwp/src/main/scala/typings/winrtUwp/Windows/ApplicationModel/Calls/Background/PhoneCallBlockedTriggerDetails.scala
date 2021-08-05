@@ -18,22 +18,17 @@ trait PhoneCallBlockedTriggerDetails extends StObject {
 }
 object PhoneCallBlockedTriggerDetails {
   
-  @scala.inline
-  def apply(callBlockedReason: PhoneCallBlockedReason, lineId: String, phoneNumber: String): PhoneCallBlockedTriggerDetails = {
+  inline def apply(callBlockedReason: PhoneCallBlockedReason, lineId: String, phoneNumber: String): PhoneCallBlockedTriggerDetails = {
     val __obj = js.Dynamic.literal(callBlockedReason = callBlockedReason.asInstanceOf[js.Any], lineId = lineId.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneCallBlockedTriggerDetails]
   }
   
-  @scala.inline
-  implicit class PhoneCallBlockedTriggerDetailsMutableBuilder[Self <: PhoneCallBlockedTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneCallBlockedTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setCallBlockedReason(value: PhoneCallBlockedReason): Self = StObject.set(x, "callBlockedReason", value.asInstanceOf[js.Any])
+    inline def setCallBlockedReason(value: PhoneCallBlockedReason): Self = StObject.set(x, "callBlockedReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
+    inline def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

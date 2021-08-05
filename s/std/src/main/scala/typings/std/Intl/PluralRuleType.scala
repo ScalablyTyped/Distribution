@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PluralRuleType extends StObject
 object PluralRuleType {
   
-  @scala.inline
-  def cardinal: typings.std.stdStrings.cardinal = "cardinal".asInstanceOf[typings.std.stdStrings.cardinal]
+  inline def cardinal: typings.std.stdStrings.cardinal = "cardinal".asInstanceOf[typings.std.stdStrings.cardinal]
   
-  @scala.inline
-  def ordinal: typings.std.stdStrings.ordinal = "ordinal".asInstanceOf[typings.std.stdStrings.ordinal]
+  inline def ordinal: typings.std.stdStrings.ordinal = "ordinal".asInstanceOf[typings.std.stdStrings.ordinal]
 }

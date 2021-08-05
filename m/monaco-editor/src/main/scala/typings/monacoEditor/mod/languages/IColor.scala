@@ -28,25 +28,19 @@ trait IColor extends StObject {
 }
 object IColor {
   
-  @scala.inline
-  def apply(alpha: Double, blue: Double, green: Double, red: Double): IColor = {
+  inline def apply(alpha: Double, blue: Double, green: Double, red: Double): IColor = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColor]
   }
   
-  @scala.inline
-  implicit class IColorMutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
+  extension [Self <: IColor](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
   }
 }

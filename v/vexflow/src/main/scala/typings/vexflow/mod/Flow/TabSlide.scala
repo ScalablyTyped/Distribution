@@ -59,10 +59,8 @@ object TabSlide {
   val SLIDE_UP: Double = js.native
   
   /* static member */
-  @scala.inline
-  def createSlideDown(notes: Firstindices): typings.vexflow.Vex.Flow.TabSlide = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlideDown")(notes.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.TabSlide]
+  inline def createSlideDown(notes: Firstindices): typings.vexflow.Vex.Flow.TabSlide = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlideDown")(notes.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.TabSlide]
   
   /* static member */
-  @scala.inline
-  def createSlideUp(notes: Firstindices): typings.vexflow.Vex.Flow.TabSlide = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlideUp")(notes.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.TabSlide]
+  inline def createSlideUp(notes: Firstindices): typings.vexflow.Vex.Flow.TabSlide = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlideUp")(notes.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.TabSlide]
 }

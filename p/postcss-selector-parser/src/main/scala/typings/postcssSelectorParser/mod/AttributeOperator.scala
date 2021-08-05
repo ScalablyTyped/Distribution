@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttributeOperator extends StObject
 object AttributeOperator {
   
-  @scala.inline
-  def $Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.$Equalssign = "$=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.$Equalssign]
+  inline def $Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.$Equalssign = "$=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.$Equalssign]
   
-  @scala.inline
-  def AsteriskEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.AsteriskEqualssign = "*=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.AsteriskEqualssign]
+  inline def AsteriskEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.AsteriskEqualssign = "*=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.AsteriskEqualssign]
   
-  @scala.inline
-  def Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.Equalssign = "=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.Equalssign]
+  inline def Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.Equalssign = "=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.Equalssign]
   
-  @scala.inline
-  def TildeEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.TildeEqualssign = "~=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.TildeEqualssign]
+  inline def TildeEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.TildeEqualssign = "~=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.TildeEqualssign]
   
-  @scala.inline
-  def VerticallineEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.VerticallineEqualssign = "|=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.VerticallineEqualssign]
+  inline def VerticallineEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.VerticallineEqualssign = "|=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.VerticallineEqualssign]
   
-  @scala.inline
-  def `^Equalssign`: typings.postcssSelectorParser.postcssSelectorParserStrings.`^Equalssign` = "^=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.`^Equalssign`]
+  inline def `^Equalssign`: typings.postcssSelectorParser.postcssSelectorParserStrings.`^Equalssign` = "^=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.`^Equalssign`]
 }

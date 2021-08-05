@@ -27,7 +27,7 @@ object onceSignalMod {
       */
     def this(valueClasses: js.Any*) = this()
     
-    var _valueClasses: js.Array[js.Any] = js.native
+    /* protected */ var _valueClasses: js.Array[js.Any] = js.native
     
     /**
       * Subscribes a one-time listener for this signal.
@@ -72,7 +72,7 @@ object onceSignalMod {
     /* CompleteClass */
     override def removeAll(): Unit = js.native
     
-    var slots: SlotList = js.native
+    /* protected */ var slots: SlotList = js.native
     
     /**
       * An optional array of classes defining the types of parameters sent to listeners.

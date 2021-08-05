@@ -23,22 +23,17 @@ trait SigV4Authorization extends StObject {
 }
 object SigV4Authorization {
   
-  @scala.inline
-  def apply(roleArn: AwsArn, serviceName: ServiceName, signingRegion: SigningRegion): SigV4Authorization = {
+  inline def apply(roleArn: AwsArn, serviceName: ServiceName, signingRegion: SigningRegion): SigV4Authorization = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], signingRegion = signingRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigV4Authorization]
   }
   
-  @scala.inline
-  implicit class SigV4AuthorizationMutableBuilder[Self <: SigV4Authorization] (val x: Self) extends AnyVal {
+  extension [Self <: SigV4Authorization](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningRegion(value: SigningRegion): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
+    inline def setSigningRegion(value: SigningRegion): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
   }
 }

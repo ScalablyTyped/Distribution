@@ -17,14 +17,14 @@ object eventStackMod {
   @js.native
   trait EventStack extends StObject {
     
-    var getTarget: js.Any = js.native
+    /* private */ var getTarget: js.Any = js.native
     
-    var removeTarget: js.Any = js.native
+    /* private */ var removeTarget: js.Any = js.native
     
     def sub(eventName: String, eventHandlers: InputEventListener): Unit = js.native
     def sub(eventName: String, eventHandlers: InputEventListener, options: Options): Unit = js.native
     
-    val targets: js.Any = js.native
+    /* private */ val targets: js.Any = js.native
     
     def unsub(eventName: String, eventHandlers: InputEventListener): Unit = js.native
     def unsub(eventName: String, eventHandlers: InputEventListener, options: Options): Unit = js.native

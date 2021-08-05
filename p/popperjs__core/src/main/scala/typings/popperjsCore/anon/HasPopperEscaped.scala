@@ -17,8 +17,7 @@ trait HasPopperEscaped extends StObject {
 }
 object HasPopperEscaped {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasPopperEscaped: Boolean,
     isReferenceHidden: Boolean,
     popperEscapeOffsets: SideObject,
@@ -28,19 +27,14 @@ object HasPopperEscaped {
     __obj.asInstanceOf[HasPopperEscaped]
   }
   
-  @scala.inline
-  implicit class HasPopperEscapedMutableBuilder[Self <: HasPopperEscaped] (val x: Self) extends AnyVal {
+  extension [Self <: HasPopperEscaped](x: Self) {
     
-    @scala.inline
-    def setHasPopperEscaped(value: Boolean): Self = StObject.set(x, "hasPopperEscaped", value.asInstanceOf[js.Any])
+    inline def setHasPopperEscaped(value: Boolean): Self = StObject.set(x, "hasPopperEscaped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReferenceHidden(value: Boolean): Self = StObject.set(x, "isReferenceHidden", value.asInstanceOf[js.Any])
+    inline def setIsReferenceHidden(value: Boolean): Self = StObject.set(x, "isReferenceHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopperEscapeOffsets(value: SideObject): Self = StObject.set(x, "popperEscapeOffsets", value.asInstanceOf[js.Any])
+    inline def setPopperEscapeOffsets(value: SideObject): Self = StObject.set(x, "popperEscapeOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceClippingOffsets(value: SideObject): Self = StObject.set(x, "referenceClippingOffsets", value.asInstanceOf[js.Any])
+    inline def setReferenceClippingOffsets(value: SideObject): Self = StObject.set(x, "referenceClippingOffsets", value.asInstanceOf[js.Any])
   }
 }

@@ -19,25 +19,19 @@ trait CaptionRenderedEventUIParam extends StObject {
 }
 object CaptionRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): CaptionRenderedEventUIParam = {
+  inline def apply(): CaptionRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class CaptionRenderedEventUIParamMutableBuilder[Self <: CaptionRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCaptionContainer(value: Element): Self = StObject.set(x, "captionContainer", value.asInstanceOf[js.Any])
+    inline def setCaptionContainer(value: Element): Self = StObject.set(x, "captionContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionContainerUndefined: Self = StObject.set(x, "captionContainer", js.undefined)
+    inline def setCaptionContainerUndefined: Self = StObject.set(x, "captionContainer", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

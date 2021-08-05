@@ -26,8 +26,7 @@ trait StreamPlaceholder
 }
 object StreamPlaceholder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     label: String,
     node: NormalizationSelectableNode,
     parentID: DataID,
@@ -38,28 +37,20 @@ object StreamPlaceholder {
     __obj.asInstanceOf[StreamPlaceholder]
   }
   
-  @scala.inline
-  implicit class StreamPlaceholderMutableBuilder[Self <: StreamPlaceholder] (val x: Self) extends AnyVal {
+  extension [Self <: StreamPlaceholder](x: Self) {
     
-    @scala.inline
-    def setKind(value: stream_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: stream_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: NormalizationSelectableNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: NormalizationSelectableNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentID(value: DataID): Self = StObject.set(x, "parentID", value.asInstanceOf[js.Any])
+    inline def setParentID(value: DataID): Self = StObject.set(x, "parentID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

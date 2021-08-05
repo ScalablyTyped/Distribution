@@ -14,6 +14,6 @@ object xmlTextMod {
        with Stringable {
     def this(value: String) = this()
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
   }
 }

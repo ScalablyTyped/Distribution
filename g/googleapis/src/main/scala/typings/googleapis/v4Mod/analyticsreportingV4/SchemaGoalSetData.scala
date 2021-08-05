@@ -16,22 +16,17 @@ trait SchemaGoalSetData extends StObject {
 }
 object SchemaGoalSetData {
   
-  @scala.inline
-  def apply(): SchemaGoalSetData = {
+  inline def apply(): SchemaGoalSetData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoalSetData]
   }
   
-  @scala.inline
-  implicit class SchemaGoalSetDataMutableBuilder[Self <: SchemaGoalSetData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoalSetData](x: Self) {
     
-    @scala.inline
-    def setGoals(value: js.Array[SchemaGoalData]): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
+    inline def setGoals(value: js.Array[SchemaGoalData]): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
+    inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
     
-    @scala.inline
-    def setGoalsVarargs(value: SchemaGoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
+    inline def setGoalsVarargs(value: SchemaGoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
   }
 }

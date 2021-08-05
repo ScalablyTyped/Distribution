@@ -16,7 +16,7 @@ object cognitoIdentityClientMod {
   class CognitoIdentityClient protected () extends StObject {
     def this(configuration: CognitoIdentityConfiguration) = this()
     
-    val config: CognitoIdentityResolvedConfiguration = js.native
+    /* protected */ val config: CognitoIdentityResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

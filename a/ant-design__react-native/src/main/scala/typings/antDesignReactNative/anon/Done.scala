@@ -26,8 +26,7 @@ trait Done extends StObject {
 }
 object Done {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     done: String,
     loading: String,
     noData: String,
@@ -39,25 +38,18 @@ object Done {
     __obj.asInstanceOf[Done]
   }
   
-  @scala.inline
-  implicit class DoneMutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
+  extension [Self <: Done](x: Self) {
     
-    @scala.inline
-    def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+    inline def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshableTitlePull(value: String): Self = StObject.set(x, "refreshableTitlePull", value.asInstanceOf[js.Any])
+    inline def setRefreshableTitlePull(value: String): Self = StObject.set(x, "refreshableTitlePull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshableTitleRefreshing(value: String): Self = StObject.set(x, "refreshableTitleRefreshing", value.asInstanceOf[js.Any])
+    inline def setRefreshableTitleRefreshing(value: String): Self = StObject.set(x, "refreshableTitleRefreshing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshableTitleRelease(value: String): Self = StObject.set(x, "refreshableTitleRelease", value.asInstanceOf[js.Any])
+    inline def setRefreshableTitleRelease(value: String): Self = StObject.set(x, "refreshableTitleRelease", value.asInstanceOf[js.Any])
   }
 }

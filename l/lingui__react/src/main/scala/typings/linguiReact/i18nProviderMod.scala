@@ -35,59 +35,42 @@ object i18nProviderMod {
   }
   object I18nProviderProps {
     
-    @scala.inline
-    def apply(language: String): I18nProviderProps = {
+    inline def apply(language: String): I18nProviderProps = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18nProviderProps]
     }
     
-    @scala.inline
-    implicit class I18nProviderPropsMutableBuilder[Self <: I18nProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: I18nProviderProps](x: Self) {
       
-      @scala.inline
-      def setCatalogs(value: Catalogs): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
+      inline def setCatalogs(value: Catalogs): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
+      inline def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultRender(value: ReactNode): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
+      inline def setDefaultRender(value: ReactNode): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRenderUndefined: Self = StObject.set(x, "defaultRender", js.undefined)
+      inline def setDefaultRenderUndefined: Self = StObject.set(x, "defaultRender", js.undefined)
       
-      @scala.inline
-      def setI18n(value: I18n_): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: I18n_): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
+      inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+      inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setMissing(value: String | (js.Function2[/* language */ String, /* id */ String, String])): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+      inline def setMissing(value: String | (js.Function2[/* language */ String, /* id */ String, String])): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingFunction2(value: (/* language */ String, /* id */ String) => String): Self = StObject.set(x, "missing", js.Any.fromFunction2(value))
+      inline def setMissingFunction2(value: (/* language */ String, /* id */ String) => String): Self = StObject.set(x, "missing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+      inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     }
   }
 }

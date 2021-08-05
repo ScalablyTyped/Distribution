@@ -13,17 +13,14 @@ object typesObjectNotInActiveTierErrorMod {
   }
   object ObjectNotInActiveTierError {
     
-    @scala.inline
-    def apply(): ObjectNotInActiveTierError = {
+    inline def apply(): ObjectNotInActiveTierError = {
       val __obj = js.Dynamic.literal(name = "ObjectNotInActiveTierError")
       __obj.asInstanceOf[ObjectNotInActiveTierError]
     }
     
-    @scala.inline
-    implicit class ObjectNotInActiveTierErrorMutableBuilder[Self <: ObjectNotInActiveTierError] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectNotInActiveTierError](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.ObjectNotInActiveTierError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.ObjectNotInActiveTierError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

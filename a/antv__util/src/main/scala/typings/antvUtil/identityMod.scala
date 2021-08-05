@@ -10,6 +10,5 @@ object identityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](v: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(v.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](v: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(v.asInstanceOf[js.Any]).asInstanceOf[T]
 }

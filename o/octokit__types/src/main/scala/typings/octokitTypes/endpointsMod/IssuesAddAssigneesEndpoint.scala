@@ -19,31 +19,23 @@ trait IssuesAddAssigneesEndpoint extends StObject {
 }
 object IssuesAddAssigneesEndpoint {
   
-  @scala.inline
-  def apply(issue_number: Double, owner: String, repo: String): IssuesAddAssigneesEndpoint = {
+  inline def apply(issue_number: Double, owner: String, repo: String): IssuesAddAssigneesEndpoint = {
     val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesAddAssigneesEndpoint]
   }
   
-  @scala.inline
-  implicit class IssuesAddAssigneesEndpointMutableBuilder[Self <: IssuesAddAssigneesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesAddAssigneesEndpoint](x: Self) {
     
-    @scala.inline
-    def setAssignees(value: js.Array[String]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+    inline def setAssignees(value: js.Array[String]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
+    inline def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
     
-    @scala.inline
-    def setAssigneesVarargs(value: String*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+    inline def setAssigneesVarargs(value: String*): Self = StObject.set(x, "assignees", js.Array(value :_*))
     
-    @scala.inline
-    def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
+    inline def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

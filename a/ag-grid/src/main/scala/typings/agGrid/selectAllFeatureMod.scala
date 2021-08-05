@@ -14,27 +14,27 @@ object selectAllFeatureMod {
   class SelectAllFeature protected () extends BeanStub {
     def this(cbSelectAll: AgCheckbox, column: Column) = this()
     
-    var cbSelectAll: js.Any = js.native
+    /* private */ var cbSelectAll: js.Any = js.native
     
-    var cbSelectAllVisible: js.Any = js.native
+    /* private */ var cbSelectAllVisible: js.Any = js.native
     
     /* private */ def checkRightRowModelType(): js.Any = js.native
     
-    var column: js.Any = js.native
+    /* private */ var column: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var filteredOnly: js.Any = js.native
+    /* private */ var filteredOnly: js.Any = js.native
     
     /* private */ def getNextCheckboxState(selectionCount: js.Any): js.Any = js.native
     
     /* private */ def getSelectionCount(): js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def isCheckboxSelection(): js.Any = js.native
     
@@ -46,11 +46,11 @@ object selectAllFeatureMod {
     
     /* private */ def postConstruct(): js.Any = js.native
     
-    var processingEventFromCheckbox: js.Any = js.native
+    /* private */ var processingEventFromCheckbox: js.Any = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
-    var selectionController: js.Any = js.native
+    /* private */ var selectionController: js.Any = js.native
     
     /* private */ def showOrHideSelectAll(): js.Any = js.native
     

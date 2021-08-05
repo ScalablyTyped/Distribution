@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommandQueueProperties extends StObject
 object CommandQueueProperties {
   
-  @scala.inline
-  def QUEUE_OUT_OF_ORDER_EXEC_MODE_ENABLE: `0x1` = 0x1.asInstanceOf[`0x1`]
+  inline def QUEUE_OUT_OF_ORDER_EXEC_MODE_ENABLE: `0x1` = 0x1.asInstanceOf[`0x1`]
   
-  @scala.inline
-  def QUEUE_PROFILING_ENABLE: `0x2` = 0x2.asInstanceOf[`0x2`]
+  inline def QUEUE_PROFILING_ENABLE: `0x2` = 0x2.asInstanceOf[`0x2`]
 }

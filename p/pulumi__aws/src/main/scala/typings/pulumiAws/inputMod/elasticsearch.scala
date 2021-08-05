@@ -26,29 +26,22 @@ object elasticsearch {
   }
   object DomainAdvancedSecurityOptions {
     
-    @scala.inline
-    def apply(enabled: Input[Boolean]): DomainAdvancedSecurityOptions = {
+    inline def apply(enabled: Input[Boolean]): DomainAdvancedSecurityOptions = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainAdvancedSecurityOptions]
     }
     
-    @scala.inline
-    implicit class DomainAdvancedSecurityOptionsMutableBuilder[Self <: DomainAdvancedSecurityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainAdvancedSecurityOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalUserDatabaseEnabled(value: Input[Boolean]): Self = StObject.set(x, "internalUserDatabaseEnabled", value.asInstanceOf[js.Any])
+      inline def setInternalUserDatabaseEnabled(value: Input[Boolean]): Self = StObject.set(x, "internalUserDatabaseEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalUserDatabaseEnabledUndefined: Self = StObject.set(x, "internalUserDatabaseEnabled", js.undefined)
+      inline def setInternalUserDatabaseEnabledUndefined: Self = StObject.set(x, "internalUserDatabaseEnabled", js.undefined)
       
-      @scala.inline
-      def setMasterUserOptions(value: Input[DomainAdvancedSecurityOptionsMasterUserOptions]): Self = StObject.set(x, "masterUserOptions", value.asInstanceOf[js.Any])
+      inline def setMasterUserOptions(value: Input[DomainAdvancedSecurityOptionsMasterUserOptions]): Self = StObject.set(x, "masterUserOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterUserOptionsUndefined: Self = StObject.set(x, "masterUserOptions", js.undefined)
+      inline def setMasterUserOptionsUndefined: Self = StObject.set(x, "masterUserOptions", js.undefined)
     }
   }
   
@@ -71,32 +64,24 @@ object elasticsearch {
   }
   object DomainAdvancedSecurityOptionsMasterUserOptions {
     
-    @scala.inline
-    def apply(): DomainAdvancedSecurityOptionsMasterUserOptions = {
+    inline def apply(): DomainAdvancedSecurityOptionsMasterUserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainAdvancedSecurityOptionsMasterUserOptions]
     }
     
-    @scala.inline
-    implicit class DomainAdvancedSecurityOptionsMasterUserOptionsMutableBuilder[Self <: DomainAdvancedSecurityOptionsMasterUserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainAdvancedSecurityOptionsMasterUserOptions](x: Self) {
       
-      @scala.inline
-      def setMasterUserArn(value: Input[String]): Self = StObject.set(x, "masterUserArn", value.asInstanceOf[js.Any])
+      inline def setMasterUserArn(value: Input[String]): Self = StObject.set(x, "masterUserArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterUserArnUndefined: Self = StObject.set(x, "masterUserArn", js.undefined)
+      inline def setMasterUserArnUndefined: Self = StObject.set(x, "masterUserArn", js.undefined)
       
-      @scala.inline
-      def setMasterUserName(value: Input[String]): Self = StObject.set(x, "masterUserName", value.asInstanceOf[js.Any])
+      inline def setMasterUserName(value: Input[String]): Self = StObject.set(x, "masterUserName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterUserNameUndefined: Self = StObject.set(x, "masterUserName", js.undefined)
+      inline def setMasterUserNameUndefined: Self = StObject.set(x, "masterUserName", js.undefined)
       
-      @scala.inline
-      def setMasterUserPassword(value: Input[String]): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
+      inline def setMasterUserPassword(value: Input[String]): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
+      inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
     }
   }
   
@@ -154,74 +139,52 @@ object elasticsearch {
   }
   object DomainClusterConfig {
     
-    @scala.inline
-    def apply(): DomainClusterConfig = {
+    inline def apply(): DomainClusterConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainClusterConfig]
     }
     
-    @scala.inline
-    implicit class DomainClusterConfigMutableBuilder[Self <: DomainClusterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DomainClusterConfig](x: Self) {
       
-      @scala.inline
-      def setDedicatedMasterCount(value: Input[Double]): Self = StObject.set(x, "dedicatedMasterCount", value.asInstanceOf[js.Any])
+      inline def setDedicatedMasterCount(value: Input[Double]): Self = StObject.set(x, "dedicatedMasterCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedicatedMasterCountUndefined: Self = StObject.set(x, "dedicatedMasterCount", js.undefined)
+      inline def setDedicatedMasterCountUndefined: Self = StObject.set(x, "dedicatedMasterCount", js.undefined)
       
-      @scala.inline
-      def setDedicatedMasterEnabled(value: Input[Boolean]): Self = StObject.set(x, "dedicatedMasterEnabled", value.asInstanceOf[js.Any])
+      inline def setDedicatedMasterEnabled(value: Input[Boolean]): Self = StObject.set(x, "dedicatedMasterEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedicatedMasterEnabledUndefined: Self = StObject.set(x, "dedicatedMasterEnabled", js.undefined)
+      inline def setDedicatedMasterEnabledUndefined: Self = StObject.set(x, "dedicatedMasterEnabled", js.undefined)
       
-      @scala.inline
-      def setDedicatedMasterType(value: Input[String]): Self = StObject.set(x, "dedicatedMasterType", value.asInstanceOf[js.Any])
+      inline def setDedicatedMasterType(value: Input[String]): Self = StObject.set(x, "dedicatedMasterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedicatedMasterTypeUndefined: Self = StObject.set(x, "dedicatedMasterType", js.undefined)
+      inline def setDedicatedMasterTypeUndefined: Self = StObject.set(x, "dedicatedMasterType", js.undefined)
       
-      @scala.inline
-      def setInstanceCount(value: Input[Double]): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
+      inline def setInstanceCount(value: Input[Double]): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
+      inline def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
       
-      @scala.inline
-      def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
       
-      @scala.inline
-      def setWarmCount(value: Input[Double]): Self = StObject.set(x, "warmCount", value.asInstanceOf[js.Any])
+      inline def setWarmCount(value: Input[Double]): Self = StObject.set(x, "warmCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarmCountUndefined: Self = StObject.set(x, "warmCount", js.undefined)
+      inline def setWarmCountUndefined: Self = StObject.set(x, "warmCount", js.undefined)
       
-      @scala.inline
-      def setWarmEnabled(value: Input[Boolean]): Self = StObject.set(x, "warmEnabled", value.asInstanceOf[js.Any])
+      inline def setWarmEnabled(value: Input[Boolean]): Self = StObject.set(x, "warmEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarmEnabledUndefined: Self = StObject.set(x, "warmEnabled", js.undefined)
+      inline def setWarmEnabledUndefined: Self = StObject.set(x, "warmEnabled", js.undefined)
       
-      @scala.inline
-      def setWarmType(value: Input[String]): Self = StObject.set(x, "warmType", value.asInstanceOf[js.Any])
+      inline def setWarmType(value: Input[String]): Self = StObject.set(x, "warmType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarmTypeUndefined: Self = StObject.set(x, "warmType", js.undefined)
+      inline def setWarmTypeUndefined: Self = StObject.set(x, "warmType", js.undefined)
       
-      @scala.inline
-      def setZoneAwarenessConfig(value: Input[DomainClusterConfigZoneAwarenessConfig]): Self = StObject.set(x, "zoneAwarenessConfig", value.asInstanceOf[js.Any])
+      inline def setZoneAwarenessConfig(value: Input[DomainClusterConfigZoneAwarenessConfig]): Self = StObject.set(x, "zoneAwarenessConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneAwarenessConfigUndefined: Self = StObject.set(x, "zoneAwarenessConfig", js.undefined)
+      inline def setZoneAwarenessConfigUndefined: Self = StObject.set(x, "zoneAwarenessConfig", js.undefined)
       
-      @scala.inline
-      def setZoneAwarenessEnabled(value: Input[Boolean]): Self = StObject.set(x, "zoneAwarenessEnabled", value.asInstanceOf[js.Any])
+      inline def setZoneAwarenessEnabled(value: Input[Boolean]): Self = StObject.set(x, "zoneAwarenessEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneAwarenessEnabledUndefined: Self = StObject.set(x, "zoneAwarenessEnabled", js.undefined)
+      inline def setZoneAwarenessEnabledUndefined: Self = StObject.set(x, "zoneAwarenessEnabled", js.undefined)
     }
   }
   
@@ -234,20 +197,16 @@ object elasticsearch {
   }
   object DomainClusterConfigZoneAwarenessConfig {
     
-    @scala.inline
-    def apply(): DomainClusterConfigZoneAwarenessConfig = {
+    inline def apply(): DomainClusterConfigZoneAwarenessConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainClusterConfigZoneAwarenessConfig]
     }
     
-    @scala.inline
-    implicit class DomainClusterConfigZoneAwarenessConfigMutableBuilder[Self <: DomainClusterConfigZoneAwarenessConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DomainClusterConfigZoneAwarenessConfig](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZoneCount(value: Input[Double]): Self = StObject.set(x, "availabilityZoneCount", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZoneCount(value: Input[Double]): Self = StObject.set(x, "availabilityZoneCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneCountUndefined: Self = StObject.set(x, "availabilityZoneCount", js.undefined)
+      inline def setAvailabilityZoneCountUndefined: Self = StObject.set(x, "availabilityZoneCount", js.undefined)
     }
   }
   
@@ -275,29 +234,22 @@ object elasticsearch {
   }
   object DomainCognitoOptions {
     
-    @scala.inline
-    def apply(identityPoolId: Input[String], roleArn: Input[String], userPoolId: Input[String]): DomainCognitoOptions = {
+    inline def apply(identityPoolId: Input[String], roleArn: Input[String], userPoolId: Input[String]): DomainCognitoOptions = {
       val __obj = js.Dynamic.literal(identityPoolId = identityPoolId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainCognitoOptions]
     }
     
-    @scala.inline
-    implicit class DomainCognitoOptionsMutableBuilder[Self <: DomainCognitoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainCognitoOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setIdentityPoolId(value: Input[String]): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolId(value: Input[String]): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,23 +267,18 @@ object elasticsearch {
   }
   object DomainDomainEndpointOptions {
     
-    @scala.inline
-    def apply(enforceHttps: Input[Boolean]): DomainDomainEndpointOptions = {
+    inline def apply(enforceHttps: Input[Boolean]): DomainDomainEndpointOptions = {
       val __obj = js.Dynamic.literal(enforceHttps = enforceHttps.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainDomainEndpointOptions]
     }
     
-    @scala.inline
-    implicit class DomainDomainEndpointOptionsMutableBuilder[Self <: DomainDomainEndpointOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainDomainEndpointOptions](x: Self) {
       
-      @scala.inline
-      def setEnforceHttps(value: Input[Boolean]): Self = StObject.set(x, "enforceHttps", value.asInstanceOf[js.Any])
+      inline def setEnforceHttps(value: Input[Boolean]): Self = StObject.set(x, "enforceHttps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsSecurityPolicy(value: Input[String]): Self = StObject.set(x, "tlsSecurityPolicy", value.asInstanceOf[js.Any])
+      inline def setTlsSecurityPolicy(value: Input[String]): Self = StObject.set(x, "tlsSecurityPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsSecurityPolicyUndefined: Self = StObject.set(x, "tlsSecurityPolicy", js.undefined)
+      inline def setTlsSecurityPolicyUndefined: Self = StObject.set(x, "tlsSecurityPolicy", js.undefined)
     }
   }
   
@@ -360,35 +307,26 @@ object elasticsearch {
   }
   object DomainEbsOptions {
     
-    @scala.inline
-    def apply(ebsEnabled: Input[Boolean]): DomainEbsOptions = {
+    inline def apply(ebsEnabled: Input[Boolean]): DomainEbsOptions = {
       val __obj = js.Dynamic.literal(ebsEnabled = ebsEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainEbsOptions]
     }
     
-    @scala.inline
-    implicit class DomainEbsOptionsMutableBuilder[Self <: DomainEbsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainEbsOptions](x: Self) {
       
-      @scala.inline
-      def setEbsEnabled(value: Input[Boolean]): Self = StObject.set(x, "ebsEnabled", value.asInstanceOf[js.Any])
+      inline def setEbsEnabled(value: Input[Boolean]): Self = StObject.set(x, "ebsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+      inline def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+      inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
       
-      @scala.inline
-      def setVolumeSize(value: Input[Double]): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
+      inline def setVolumeSize(value: Input[Double]): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeSizeUndefined: Self = StObject.set(x, "volumeSize", js.undefined)
+      inline def setVolumeSizeUndefined: Self = StObject.set(x, "volumeSize", js.undefined)
       
-      @scala.inline
-      def setVolumeType(value: Input[String]): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
+      inline def setVolumeType(value: Input[String]): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeTypeUndefined: Self = StObject.set(x, "volumeType", js.undefined)
+      inline def setVolumeTypeUndefined: Self = StObject.set(x, "volumeType", js.undefined)
     }
   }
   
@@ -406,23 +344,18 @@ object elasticsearch {
   }
   object DomainEncryptAtRest {
     
-    @scala.inline
-    def apply(enabled: Input[Boolean]): DomainEncryptAtRest = {
+    inline def apply(enabled: Input[Boolean]): DomainEncryptAtRest = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainEncryptAtRest]
     }
     
-    @scala.inline
-    implicit class DomainEncryptAtRestMutableBuilder[Self <: DomainEncryptAtRest] (val x: Self) extends AnyVal {
+    extension [Self <: DomainEncryptAtRest](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     }
   }
   
@@ -445,26 +378,20 @@ object elasticsearch {
   }
   object DomainLogPublishingOption {
     
-    @scala.inline
-    def apply(cloudwatchLogGroupArn: Input[String], logType: Input[String]): DomainLogPublishingOption = {
+    inline def apply(cloudwatchLogGroupArn: Input[String], logType: Input[String]): DomainLogPublishingOption = {
       val __obj = js.Dynamic.literal(cloudwatchLogGroupArn = cloudwatchLogGroupArn.asInstanceOf[js.Any], logType = logType.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainLogPublishingOption]
     }
     
-    @scala.inline
-    implicit class DomainLogPublishingOptionMutableBuilder[Self <: DomainLogPublishingOption] (val x: Self) extends AnyVal {
+    extension [Self <: DomainLogPublishingOption](x: Self) {
       
-      @scala.inline
-      def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
+      inline def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -477,17 +404,14 @@ object elasticsearch {
   }
   object DomainNodeToNodeEncryption {
     
-    @scala.inline
-    def apply(enabled: Input[Boolean]): DomainNodeToNodeEncryption = {
+    inline def apply(enabled: Input[Boolean]): DomainNodeToNodeEncryption = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainNodeToNodeEncryption]
     }
     
-    @scala.inline
-    implicit class DomainNodeToNodeEncryptionMutableBuilder[Self <: DomainNodeToNodeEncryption] (val x: Self) extends AnyVal {
+    extension [Self <: DomainNodeToNodeEncryption](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -500,17 +424,14 @@ object elasticsearch {
   }
   object DomainSnapshotOptions {
     
-    @scala.inline
-    def apply(automatedSnapshotStartHour: Input[Double]): DomainSnapshotOptions = {
+    inline def apply(automatedSnapshotStartHour: Input[Double]): DomainSnapshotOptions = {
       val __obj = js.Dynamic.literal(automatedSnapshotStartHour = automatedSnapshotStartHour.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainSnapshotOptions]
     }
     
-    @scala.inline
-    implicit class DomainSnapshotOptionsMutableBuilder[Self <: DomainSnapshotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainSnapshotOptions](x: Self) {
       
-      @scala.inline
-      def setAutomatedSnapshotStartHour(value: Input[Double]): Self = StObject.set(x, "automatedSnapshotStartHour", value.asInstanceOf[js.Any])
+      inline def setAutomatedSnapshotStartHour(value: Input[Double]): Self = StObject.set(x, "automatedSnapshotStartHour", value.asInstanceOf[js.Any])
     }
   }
   
@@ -532,47 +453,34 @@ object elasticsearch {
   }
   object DomainVpcOptions {
     
-    @scala.inline
-    def apply(): DomainVpcOptions = {
+    inline def apply(): DomainVpcOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainVpcOptions]
     }
     
-    @scala.inline
-    implicit class DomainVpcOptionsMutableBuilder[Self <: DomainVpcOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainVpcOptions](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
+      inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
+      inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

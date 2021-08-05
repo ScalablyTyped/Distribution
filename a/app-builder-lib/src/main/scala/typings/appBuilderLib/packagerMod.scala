@@ -32,7 +32,7 @@ object packagerMod {
     def this(options: PackagerOptions) = this()
     def this(options: PackagerOptions, cancellationToken: CancellationToken) = this()
     
-    var _appDir: js.Any = js.native
+    /* private */ var _appDir: js.Any = js.native
     
     var _appInfo: AppInfo | Null = js.native
     
@@ -51,27 +51,27 @@ object packagerMod {
       repositoryInfo: SourceRepositoryInfo
     ): js.Promise[BuildResult] = js.native
     
-    var _buildResourcesDir: js.Any = js.native
+    /* private */ var _buildResourcesDir: js.Any = js.native
     
-    var _configuration: js.Any = js.native
+    /* private */ var _configuration: js.Any = js.native
     
-    var _devMetadata: js.Any = js.native
+    /* private */ var _devMetadata: js.Any = js.native
     
-    var _framework: js.Any = js.native
+    /* private */ var _framework: js.Any = js.native
     
-    var _isPrepackedAppAsar: js.Any = js.native
+    /* private */ var _isPrepackedAppAsar: js.Any = js.native
     
-    var _metadata: js.Any = js.native
+    /* private */ var _metadata: js.Any = js.native
     
-    var _nodeModulesHandledExternally: js.Any = js.native
+    /* private */ var _nodeModulesHandledExternally: js.Any = js.native
     
-    var _repositoryInfo: js.Any = js.native
+    /* private */ var _repositoryInfo: js.Any = js.native
     
     def addAfterPackHandler(handler: js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | Null]): Unit = js.native
     
     def afterPack(context: AfterPackContext): js.Promise[js.Any] = js.native
     
-    val afterPackHandlers: js.Any = js.native
+    /* private */ val afterPackHandlers: js.Any = js.native
     
     def appDir: String = js.native
     
@@ -96,7 +96,7 @@ object packagerMod {
     
     def config: Configuration = js.native
     
-    var createHelper: js.Any = js.native
+    /* private */ var createHelper: js.Any = js.native
     
     val debugLogger: DebugLogger = js.native
     
@@ -109,7 +109,7 @@ object packagerMod {
     
     def disposeOnBuildFinish(disposer: js.Function0[js.Promise[Unit]]): Unit = js.native
     
-    var doBuild: js.Any = js.native
+    /* private */ var doBuild: js.Any = js.native
     
     val eventEmitter: EventEmitter = js.native
     
@@ -118,7 +118,7 @@ object packagerMod {
     def getNodeDependencyInfo(): Lazy[js.Array[NodeModuleDirInfo]] = js.native
     def getNodeDependencyInfo(platform: Platform): Lazy[js.Array[NodeModuleDirInfo]] = js.native
     
-    var installAppDependencies: js.Any = js.native
+    /* private */ var installAppDependencies: js.Any = js.native
     
     def isPrepackedAppAsar: Boolean = js.native
     
@@ -126,13 +126,13 @@ object packagerMod {
     
     def metadata: Metadata = js.native
     
-    var nodeDependencyInfo: js.Any = js.native
+    /* private */ var nodeDependencyInfo: js.Any = js.native
     
     val options: PackagerOptions = js.native
     
     val projectDir: String = js.native
     
-    var readProjectMetadataIfTwoPackageStructureOrPrepacked: js.Any = js.native
+    /* private */ var readProjectMetadataIfTwoPackageStructureOrPrepacked: js.Any = js.native
     
     def relativeBuildResourcesDirname: String = js.native
     
@@ -142,7 +142,7 @@ object packagerMod {
     
     val tempDirManager: TmpDir = js.native
     
-    val toDispose: js.Any = js.native
+    /* private */ val toDispose: js.Any = js.native
   }
   
   trait BuildResult extends StObject {
@@ -157,8 +157,7 @@ object packagerMod {
   }
   object BuildResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       artifactPaths: js.Array[String],
       configuration: Configuration,
       outDir: String,
@@ -168,23 +167,17 @@ object packagerMod {
       __obj.asInstanceOf[BuildResult]
     }
     
-    @scala.inline
-    implicit class BuildResultMutableBuilder[Self <: BuildResult] (val x: Self) extends AnyVal {
+    extension [Self <: BuildResult](x: Self) {
       
-      @scala.inline
-      def setArtifactPaths(value: js.Array[String]): Self = StObject.set(x, "artifactPaths", value.asInstanceOf[js.Any])
+      inline def setArtifactPaths(value: js.Array[String]): Self = StObject.set(x, "artifactPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtifactPathsVarargs(value: String*): Self = StObject.set(x, "artifactPaths", js.Array(value :_*))
+      inline def setArtifactPathsVarargs(value: String*): Self = StObject.set(x, "artifactPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
+      inline def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformToTargets(value: Map[Platform, Map[String, Target]]): Self = StObject.set(x, "platformToTargets", value.asInstanceOf[js.Any])
+      inline def setPlatformToTargets(value: Map[Platform, Map[String, Target]]): Self = StObject.set(x, "platformToTargets", value.asInstanceOf[js.Any])
     }
   }
 }

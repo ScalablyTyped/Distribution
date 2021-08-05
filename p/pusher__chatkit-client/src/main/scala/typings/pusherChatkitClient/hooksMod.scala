@@ -20,17 +20,14 @@ object hooksMod {
   }
   object RoomParams {
     
-    @scala.inline
-    def apply(roomId: String): RoomParams = {
+    inline def apply(roomId: String): RoomParams = {
       val __obj = js.Dynamic.literal(roomId = roomId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoomParams]
     }
     
-    @scala.inline
-    implicit class RoomParamsMutableBuilder[Self <: RoomParams] (val x: Self) extends AnyVal {
+    extension [Self <: RoomParams](x: Self) {
       
-      @scala.inline
-      def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
+      inline def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,17 +41,14 @@ object hooksMod {
   }
   object UserAndRoomParams {
     
-    @scala.inline
-    def apply(roomId: String, userId: String): UserAndRoomParams = {
+    inline def apply(roomId: String, userId: String): UserAndRoomParams = {
       val __obj = js.Dynamic.literal(roomId = roomId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAndRoomParams]
     }
     
-    @scala.inline
-    implicit class UserAndRoomParamsMutableBuilder[Self <: UserAndRoomParams] (val x: Self) extends AnyVal {
+    extension [Self <: UserAndRoomParams](x: Self) {
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,17 +60,14 @@ object hooksMod {
   }
   object UserParams {
     
-    @scala.inline
-    def apply(userId: String): UserParams = {
+    inline def apply(userId: String): UserParams = {
       val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserParams]
     }
     
-    @scala.inline
-    implicit class UserParamsMutableBuilder[Self <: UserParams] (val x: Self) extends AnyVal {
+    extension [Self <: UserParams](x: Self) {
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,20 +81,16 @@ object hooksMod {
   }
   object UserPresenceState {
     
-    @scala.inline
-    def apply(current: PusherUserPresence, previous: PusherUserPresence): UserPresenceState = {
+    inline def apply(current: PusherUserPresence, previous: PusherUserPresence): UserPresenceState = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserPresenceState]
     }
     
-    @scala.inline
-    implicit class UserPresenceStateMutableBuilder[Self <: UserPresenceState] (val x: Self) extends AnyVal {
+    extension [Self <: UserPresenceState](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: PusherUserPresence): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: PusherUserPresence): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: PusherUserPresence): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: PusherUserPresence): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     }
   }
 }

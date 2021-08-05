@@ -10,16 +10,13 @@ trait EnumValuesDeliveryPreferencesEditable extends StObject {
 }
 object EnumValuesDeliveryPreferencesEditable {
   
-  @scala.inline
-  def apply(enumValues: DeliveryPreferencesEditable): EnumValuesDeliveryPreferencesEditable = {
+  inline def apply(enumValues: DeliveryPreferencesEditable): EnumValuesDeliveryPreferencesEditable = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDeliveryPreferencesEditable]
   }
   
-  @scala.inline
-  implicit class EnumValuesDeliveryPreferencesEditableMutableBuilder[Self <: EnumValuesDeliveryPreferencesEditable] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDeliveryPreferencesEditable](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: DeliveryPreferencesEditable): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: DeliveryPreferencesEditable): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

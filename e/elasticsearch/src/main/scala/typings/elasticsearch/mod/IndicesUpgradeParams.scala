@@ -20,43 +20,31 @@ trait IndicesUpgradeParams
 }
 object IndicesUpgradeParams {
   
-  @scala.inline
-  def apply(index: NameList): IndicesUpgradeParams = {
+  inline def apply(index: NameList): IndicesUpgradeParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesUpgradeParams]
   }
   
-  @scala.inline
-  implicit class IndicesUpgradeParamsMutableBuilder[Self <: IndicesUpgradeParams] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesUpgradeParams](x: Self) {
     
-    @scala.inline
-    def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
+    inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
+    inline def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
     
-    @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
-    @scala.inline
-    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
-    @scala.inline
-    def setOnlyAncientSegments(value: Boolean): Self = StObject.set(x, "onlyAncientSegments", value.asInstanceOf[js.Any])
+    inline def setOnlyAncientSegments(value: Boolean): Self = StObject.set(x, "onlyAncientSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyAncientSegmentsUndefined: Self = StObject.set(x, "onlyAncientSegments", js.undefined)
+    inline def setOnlyAncientSegmentsUndefined: Self = StObject.set(x, "onlyAncientSegments", js.undefined)
     
-    @scala.inline
-    def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
+    inline def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForCompletionUndefined: Self = StObject.set(x, "waitForCompletion", js.undefined)
+    inline def setWaitForCompletionUndefined: Self = StObject.set(x, "waitForCompletion", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait StructurePowerBank
 }
 object StructurePowerBank {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -45,13 +44,10 @@ object StructurePowerBank {
     __obj.asInstanceOf[StructurePowerBank]
   }
   
-  @scala.inline
-  implicit class StructurePowerBankMutableBuilder[Self <: StructurePowerBank] (val x: Self) extends AnyVal {
+  extension [Self <: StructurePowerBank](x: Self) {
     
-    @scala.inline
-    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+    inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

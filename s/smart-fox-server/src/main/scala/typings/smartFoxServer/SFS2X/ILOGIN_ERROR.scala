@@ -12,19 +12,15 @@ trait ILOGIN_ERROR extends StObject {
 }
 object ILOGIN_ERROR {
   
-  @scala.inline
-  def apply(errorCode: Double, errorMessage: String): ILOGIN_ERROR = {
+  inline def apply(errorCode: Double, errorMessage: String): ILOGIN_ERROR = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILOGIN_ERROR]
   }
   
-  @scala.inline
-  implicit class ILOGIN_ERRORMutableBuilder[Self <: ILOGIN_ERROR] (val x: Self) extends AnyVal {
+  extension [Self <: ILOGIN_ERROR](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

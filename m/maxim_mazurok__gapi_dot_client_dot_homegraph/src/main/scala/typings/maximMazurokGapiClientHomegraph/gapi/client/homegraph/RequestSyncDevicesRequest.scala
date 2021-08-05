@@ -17,25 +17,19 @@ trait RequestSyncDevicesRequest extends StObject {
 }
 object RequestSyncDevicesRequest {
   
-  @scala.inline
-  def apply(): RequestSyncDevicesRequest = {
+  inline def apply(): RequestSyncDevicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestSyncDevicesRequest]
   }
   
-  @scala.inline
-  implicit class RequestSyncDevicesRequestMutableBuilder[Self <: RequestSyncDevicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSyncDevicesRequest](x: Self) {
     
-    @scala.inline
-    def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
+    inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
+    inline def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
   }
 }

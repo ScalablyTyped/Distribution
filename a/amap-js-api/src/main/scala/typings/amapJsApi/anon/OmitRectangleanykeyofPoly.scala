@@ -15,16 +15,13 @@ trait OmitRectangleanykeyofPoly extends StObject {
 }
 object OmitRectangleanykeyofPoly {
   
-  @scala.inline
-  def apply(setBounds: (/* bounds */ Bounds, /* preventEvent */ js.UndefOr[Boolean]) => Unit): OmitRectangleanykeyofPoly = {
+  inline def apply(setBounds: (/* bounds */ Bounds, /* preventEvent */ js.UndefOr[Boolean]) => Unit): OmitRectangleanykeyofPoly = {
     val __obj = js.Dynamic.literal(setBounds = js.Any.fromFunction2(setBounds))
     __obj.asInstanceOf[OmitRectangleanykeyofPoly]
   }
   
-  @scala.inline
-  implicit class OmitRectangleanykeyofPolyMutableBuilder[Self <: OmitRectangleanykeyofPoly] (val x: Self) extends AnyVal {
+  extension [Self <: OmitRectangleanykeyofPoly](x: Self) {
     
-    @scala.inline
-    def setSetBounds(value: (/* bounds */ Bounds, /* preventEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction2(value))
+    inline def setSetBounds(value: (/* bounds */ Bounds, /* preventEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction2(value))
   }
 }

@@ -34,8 +34,7 @@ trait XConfigurationControllerBroadcaster extends StObject {
 }
 object XConfigurationControllerBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addConfigurationChangeListener: (XConfigurationChangeListener, String, js.Any) => Unit,
     notifyEvent: ConfigurationChangeEvent => Unit,
     removeConfigurationChangeListener: XConfigurationChangeListener => Unit
@@ -44,16 +43,12 @@ object XConfigurationControllerBroadcaster {
     __obj.asInstanceOf[XConfigurationControllerBroadcaster]
   }
   
-  @scala.inline
-  implicit class XConfigurationControllerBroadcasterMutableBuilder[Self <: XConfigurationControllerBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XConfigurationControllerBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddConfigurationChangeListener(value: (XConfigurationChangeListener, String, js.Any) => Unit): Self = StObject.set(x, "addConfigurationChangeListener", js.Any.fromFunction3(value))
+    inline def setAddConfigurationChangeListener(value: (XConfigurationChangeListener, String, js.Any) => Unit): Self = StObject.set(x, "addConfigurationChangeListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNotifyEvent(value: ConfigurationChangeEvent => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
+    inline def setNotifyEvent(value: ConfigurationChangeEvent => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveConfigurationChangeListener(value: XConfigurationChangeListener => Unit): Self = StObject.set(x, "removeConfigurationChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveConfigurationChangeListener(value: XConfigurationChangeListener => Unit): Self = StObject.set(x, "removeConfigurationChangeListener", js.Any.fromFunction1(value))
   }
 }

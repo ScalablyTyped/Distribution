@@ -14,22 +14,17 @@ trait SFCParseResult extends StObject {
 }
 object SFCParseResult {
   
-  @scala.inline
-  def apply(descriptor: SFCDescriptor, errors: js.Array[CompilerError | SyntaxError]): SFCParseResult = {
+  inline def apply(descriptor: SFCDescriptor, errors: js.Array[CompilerError | SyntaxError]): SFCParseResult = {
     val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCParseResult]
   }
   
-  @scala.inline
-  implicit class SFCParseResultMutableBuilder[Self <: SFCParseResult] (val x: Self) extends AnyVal {
+  extension [Self <: SFCParseResult](x: Self) {
     
-    @scala.inline
-    def setDescriptor(value: SFCDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: SFCDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: js.Array[CompilerError | SyntaxError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[CompilerError | SyntaxError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: (CompilerError | SyntaxError)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: (CompilerError | SyntaxError)*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

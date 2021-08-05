@@ -45,8 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Slider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeIndex: Double,
     el: Element,
     next: () => Unit,
@@ -59,28 +58,20 @@ object Slider {
     __obj.asInstanceOf[Slider]
   }
   
-  @scala.inline
-  implicit class SliderMutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
+  extension [Self <: Slider](x: Self) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptions(value: SliderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SliderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+    inline def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
   }
 }

@@ -33,37 +33,27 @@ trait ParamsResourceAutoscalersGet
 }
 object ParamsResourceAutoscalersGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAutoscalersGet = {
+  inline def apply(): ParamsResourceAutoscalersGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAutoscalersGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAutoscalersGetMutableBuilder[Self <: ParamsResourceAutoscalersGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAutoscalersGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
+    inline def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalerUndefined: Self = StObject.set(x, "autoscaler", js.undefined)
+    inline def setAutoscalerUndefined: Self = StObject.set(x, "autoscaler", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

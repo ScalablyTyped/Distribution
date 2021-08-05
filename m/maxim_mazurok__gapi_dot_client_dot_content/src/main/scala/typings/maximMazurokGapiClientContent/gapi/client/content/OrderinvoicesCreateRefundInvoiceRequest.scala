@@ -23,46 +23,33 @@ trait OrderinvoicesCreateRefundInvoiceRequest extends StObject {
 }
 object OrderinvoicesCreateRefundInvoiceRequest {
   
-  @scala.inline
-  def apply(): OrderinvoicesCreateRefundInvoiceRequest = {
+  inline def apply(): OrderinvoicesCreateRefundInvoiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderinvoicesCreateRefundInvoiceRequest]
   }
   
-  @scala.inline
-  implicit class OrderinvoicesCreateRefundInvoiceRequestMutableBuilder[Self <: OrderinvoicesCreateRefundInvoiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OrderinvoicesCreateRefundInvoiceRequest](x: Self) {
     
-    @scala.inline
-    def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
+    inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
+    inline def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setRefundOnlyOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption): Self = StObject.set(x, "refundOnlyOption", value.asInstanceOf[js.Any])
+    inline def setRefundOnlyOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption): Self = StObject.set(x, "refundOnlyOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundOnlyOptionUndefined: Self = StObject.set(x, "refundOnlyOption", js.undefined)
+    inline def setRefundOnlyOptionUndefined: Self = StObject.set(x, "refundOnlyOption", js.undefined)
     
-    @scala.inline
-    def setReturnOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption): Self = StObject.set(x, "returnOption", value.asInstanceOf[js.Any])
+    inline def setReturnOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption): Self = StObject.set(x, "returnOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnOptionUndefined: Self = StObject.set(x, "returnOption", js.undefined)
+    inline def setReturnOptionUndefined: Self = StObject.set(x, "returnOption", js.undefined)
     
-    @scala.inline
-    def setShipmentInvoices(value: js.Array[ShipmentInvoice]): Self = StObject.set(x, "shipmentInvoices", value.asInstanceOf[js.Any])
+    inline def setShipmentInvoices(value: js.Array[ShipmentInvoice]): Self = StObject.set(x, "shipmentInvoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentInvoicesUndefined: Self = StObject.set(x, "shipmentInvoices", js.undefined)
+    inline def setShipmentInvoicesUndefined: Self = StObject.set(x, "shipmentInvoices", js.undefined)
     
-    @scala.inline
-    def setShipmentInvoicesVarargs(value: ShipmentInvoice*): Self = StObject.set(x, "shipmentInvoices", js.Array(value :_*))
+    inline def setShipmentInvoicesVarargs(value: ShipmentInvoice*): Self = StObject.set(x, "shipmentInvoices", js.Array(value :_*))
   }
 }

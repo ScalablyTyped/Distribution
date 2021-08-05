@@ -29,52 +29,37 @@ trait SearchResult extends StObject {
 }
 object SearchResult {
   
-  @scala.inline
-  def apply(): SearchResult = {
+  inline def apply(): SearchResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchResult]
   }
   
-  @scala.inline
-  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResult](x: Self) {
     
-    @scala.inline
-    def setClusteredResults(value: js.Array[SearchResult]): Self = StObject.set(x, "clusteredResults", value.asInstanceOf[js.Any])
+    inline def setClusteredResults(value: js.Array[SearchResult]): Self = StObject.set(x, "clusteredResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusteredResultsUndefined: Self = StObject.set(x, "clusteredResults", js.undefined)
+    inline def setClusteredResultsUndefined: Self = StObject.set(x, "clusteredResults", js.undefined)
     
-    @scala.inline
-    def setClusteredResultsVarargs(value: SearchResult*): Self = StObject.set(x, "clusteredResults", js.Array(value :_*))
+    inline def setClusteredResultsVarargs(value: SearchResult*): Self = StObject.set(x, "clusteredResults", js.Array(value :_*))
     
-    @scala.inline
-    def setDebugInfo(value: ResultDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
+    inline def setDebugInfo(value: ResultDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
+    inline def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: Snippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: Snippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

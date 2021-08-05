@@ -10,16 +10,13 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(wakeLock: WakeLock): Navigator = {
+  inline def apply(wakeLock: WakeLock): Navigator = {
     val __obj = js.Dynamic.literal(wakeLock = wakeLock.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setWakeLock(value: WakeLock): Self = StObject.set(x, "wakeLock", value.asInstanceOf[js.Any])
+    inline def setWakeLock(value: WakeLock): Self = StObject.set(x, "wakeLock", value.asInstanceOf[js.Any])
   }
 }

@@ -50,21 +50,16 @@ object queryLogMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueryLogState): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
+    inline def get(name: String, id: Input[ID]): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
+    inline def get(name: String, id: Input[ID], state: QueryLogState): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
+    inline def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
     
     /**
       * Returns true if the given object is an instance of QueryLog.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean]
   }
   
   trait QueryLogArgs extends StObject {
@@ -81,20 +76,16 @@ object queryLogMod {
   }
   object QueryLogArgs {
     
-    @scala.inline
-    def apply(cloudwatchLogGroupArn: Input[String], zoneId: Input[String]): QueryLogArgs = {
+    inline def apply(cloudwatchLogGroupArn: Input[String], zoneId: Input[String]): QueryLogArgs = {
       val __obj = js.Dynamic.literal(cloudwatchLogGroupArn = cloudwatchLogGroupArn.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryLogArgs]
     }
     
-    @scala.inline
-    implicit class QueryLogArgsMutableBuilder[Self <: QueryLogArgs] (val x: Self) extends AnyVal {
+    extension [Self <: QueryLogArgs](x: Self) {
       
-      @scala.inline
-      def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object queryLogMod {
   }
   object QueryLogState {
     
-    @scala.inline
-    def apply(): QueryLogState = {
+    inline def apply(): QueryLogState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryLogState]
     }
     
-    @scala.inline
-    implicit class QueryLogStateMutableBuilder[Self <: QueryLogState] (val x: Self) extends AnyVal {
+    extension [Self <: QueryLogState](x: Self) {
       
-      @scala.inline
-      def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroupArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
+      inline def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+      inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
     }
   }
 }

@@ -20,46 +20,33 @@ trait FontName extends StObject {
 }
 object FontName {
   
-  @scala.inline
-  def apply(fontName: String): FontName = {
+  inline def apply(fontName: String): FontName = {
     val __obj = js.Dynamic.literal(fontName = fontName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontName]
   }
   
-  @scala.inline
-  implicit class FontNameMutableBuilder[Self <: FontName] (val x: Self) extends AnyVal {
+  extension [Self <: FontName](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+    inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
+    inline def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
   }
 }

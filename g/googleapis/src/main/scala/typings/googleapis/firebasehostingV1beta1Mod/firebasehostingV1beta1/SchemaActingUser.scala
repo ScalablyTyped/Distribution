@@ -23,25 +23,19 @@ trait SchemaActingUser extends StObject {
 }
 object SchemaActingUser {
   
-  @scala.inline
-  def apply(): SchemaActingUser = {
+  inline def apply(): SchemaActingUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActingUser]
   }
   
-  @scala.inline
-  implicit class SchemaActingUserMutableBuilder[Self <: SchemaActingUser] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActingUser](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
   }
 }

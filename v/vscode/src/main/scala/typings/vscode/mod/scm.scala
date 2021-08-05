@@ -10,10 +10,8 @@ object scm {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSourceControl(id: String, label: String): SourceControl = (^.asInstanceOf[js.Dynamic].applyDynamic("createSourceControl")(id.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[SourceControl]
-  @scala.inline
-  def createSourceControl(id: String, label: String, rootUri: Uri): SourceControl = (^.asInstanceOf[js.Dynamic].applyDynamic("createSourceControl")(id.asInstanceOf[js.Any], label.asInstanceOf[js.Any], rootUri.asInstanceOf[js.Any])).asInstanceOf[SourceControl]
+  inline def createSourceControl(id: String, label: String): SourceControl = (^.asInstanceOf[js.Dynamic].applyDynamic("createSourceControl")(id.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[SourceControl]
+  inline def createSourceControl(id: String, label: String, rootUri: Uri): SourceControl = (^.asInstanceOf[js.Dynamic].applyDynamic("createSourceControl")(id.asInstanceOf[js.Any], label.asInstanceOf[js.Any], rootUri.asInstanceOf[js.Any])).asInstanceOf[SourceControl]
   
   @JSImport("vscode", "scm.inputBox")
   @js.native

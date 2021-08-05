@@ -24,19 +24,16 @@ object noDuplicateSuperRuleMod {
     @JSImport("tslint/lib/rules/noDuplicateSuperRule", "Rule.FAILURE_STRING_DUPLICATE")
     @js.native
     def FAILURE_STRING_DUPLICATE: String = js.native
-    @scala.inline
-    def FAILURE_STRING_DUPLICATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_DUPLICATE")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_DUPLICATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_DUPLICATE")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/noDuplicateSuperRule", "Rule.FAILURE_STRING_LOOP")
     @js.native
     def FAILURE_STRING_LOOP: String = js.native
-    @scala.inline
-    def FAILURE_STRING_LOOP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_LOOP")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_LOOP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_LOOP")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/noDuplicateSuperRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

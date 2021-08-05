@@ -14,31 +14,23 @@ trait IgnoreScroll extends StObject {
 }
 object IgnoreScroll {
   
-  @scala.inline
-  def apply(): IgnoreScroll = {
+  inline def apply(): IgnoreScroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreScroll]
   }
   
-  @scala.inline
-  implicit class IgnoreScrollMutableBuilder[Self <: IgnoreScroll] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreScroll](x: Self) {
     
-    @scala.inline
-    def setIgnoreScroll(value: Boolean): Self = StObject.set(x, "ignoreScroll", value.asInstanceOf[js.Any])
+    inline def setIgnoreScroll(value: Boolean): Self = StObject.set(x, "ignoreScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreScrollUndefined: Self = StObject.set(x, "ignoreScroll", js.undefined)
+    inline def setIgnoreScrollUndefined: Self = StObject.set(x, "ignoreScroll", js.undefined)
     
-    @scala.inline
-    def setIgnoreSorting(value: Boolean): Self = StObject.set(x, "ignoreSorting", value.asInstanceOf[js.Any])
+    inline def setIgnoreSorting(value: Boolean): Self = StObject.set(x, "ignoreSorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSortingUndefined: Self = StObject.set(x, "ignoreSorting", js.undefined)
+    inline def setIgnoreSortingUndefined: Self = StObject.set(x, "ignoreSorting", js.undefined)
     
-    @scala.inline
-    def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+    inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+    inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
   }
 }

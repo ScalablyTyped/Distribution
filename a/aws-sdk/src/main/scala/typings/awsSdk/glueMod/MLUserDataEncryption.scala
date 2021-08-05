@@ -18,22 +18,17 @@ trait MLUserDataEncryption extends StObject {
 }
 object MLUserDataEncryption {
   
-  @scala.inline
-  def apply(MlUserDataEncryptionMode: MLUserDataEncryptionModeString): MLUserDataEncryption = {
+  inline def apply(MlUserDataEncryptionMode: MLUserDataEncryptionModeString): MLUserDataEncryption = {
     val __obj = js.Dynamic.literal(MlUserDataEncryptionMode = MlUserDataEncryptionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MLUserDataEncryption]
   }
   
-  @scala.inline
-  implicit class MLUserDataEncryptionMutableBuilder[Self <: MLUserDataEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: MLUserDataEncryption](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: NameString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: NameString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setMlUserDataEncryptionMode(value: MLUserDataEncryptionModeString): Self = StObject.set(x, "MlUserDataEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setMlUserDataEncryptionMode(value: MLUserDataEncryptionModeString): Self = StObject.set(x, "MlUserDataEncryptionMode", value.asInstanceOf[js.Any])
   }
 }

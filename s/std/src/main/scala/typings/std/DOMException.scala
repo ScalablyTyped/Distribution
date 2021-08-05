@@ -65,8 +65,7 @@ trait DOMException extends StObject {
 }
 object DOMException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ABORT_ERR: Double,
     DATA_CLONE_ERR: Double,
     DOMSTRING_SIZE_ERR: Double,
@@ -100,91 +99,62 @@ object DOMException {
     __obj.asInstanceOf[DOMException]
   }
   
-  @scala.inline
-  implicit class DOMExceptionMutableBuilder[Self <: DOMException] (val x: Self) extends AnyVal {
+  extension [Self <: DOMException](x: Self) {
     
-    @scala.inline
-    def setABORT_ERR(value: Double): Self = StObject.set(x, "ABORT_ERR", value.asInstanceOf[js.Any])
+    inline def setABORT_ERR(value: Double): Self = StObject.set(x, "ABORT_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDATA_CLONE_ERR(value: Double): Self = StObject.set(x, "DATA_CLONE_ERR", value.asInstanceOf[js.Any])
+    inline def setDATA_CLONE_ERR(value: Double): Self = StObject.set(x, "DATA_CLONE_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOMSTRING_SIZE_ERR(value: Double): Self = StObject.set(x, "DOMSTRING_SIZE_ERR", value.asInstanceOf[js.Any])
+    inline def setDOMSTRING_SIZE_ERR(value: Double): Self = StObject.set(x, "DOMSTRING_SIZE_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHIERARCHY_REQUEST_ERR(value: Double): Self = StObject.set(x, "HIERARCHY_REQUEST_ERR", value.asInstanceOf[js.Any])
+    inline def setHIERARCHY_REQUEST_ERR(value: Double): Self = StObject.set(x, "HIERARCHY_REQUEST_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINDEX_SIZE_ERR(value: Double): Self = StObject.set(x, "INDEX_SIZE_ERR", value.asInstanceOf[js.Any])
+    inline def setINDEX_SIZE_ERR(value: Double): Self = StObject.set(x, "INDEX_SIZE_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINUSE_ATTRIBUTE_ERR(value: Double): Self = StObject.set(x, "INUSE_ATTRIBUTE_ERR", value.asInstanceOf[js.Any])
+    inline def setINUSE_ATTRIBUTE_ERR(value: Double): Self = StObject.set(x, "INUSE_ATTRIBUTE_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINVALID_ACCESS_ERR(value: Double): Self = StObject.set(x, "INVALID_ACCESS_ERR", value.asInstanceOf[js.Any])
+    inline def setINVALID_ACCESS_ERR(value: Double): Self = StObject.set(x, "INVALID_ACCESS_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINVALID_CHARACTER_ERR(value: Double): Self = StObject.set(x, "INVALID_CHARACTER_ERR", value.asInstanceOf[js.Any])
+    inline def setINVALID_CHARACTER_ERR(value: Double): Self = StObject.set(x, "INVALID_CHARACTER_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINVALID_MODIFICATION_ERR(value: Double): Self = StObject.set(x, "INVALID_MODIFICATION_ERR", value.asInstanceOf[js.Any])
+    inline def setINVALID_MODIFICATION_ERR(value: Double): Self = StObject.set(x, "INVALID_MODIFICATION_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINVALID_NODE_TYPE_ERR(value: Double): Self = StObject.set(x, "INVALID_NODE_TYPE_ERR", value.asInstanceOf[js.Any])
+    inline def setINVALID_NODE_TYPE_ERR(value: Double): Self = StObject.set(x, "INVALID_NODE_TYPE_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINVALID_STATE_ERR(value: Double): Self = StObject.set(x, "INVALID_STATE_ERR", value.asInstanceOf[js.Any])
+    inline def setINVALID_STATE_ERR(value: Double): Self = StObject.set(x, "INVALID_STATE_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNAMESPACE_ERR(value: Double): Self = StObject.set(x, "NAMESPACE_ERR", value.asInstanceOf[js.Any])
+    inline def setNAMESPACE_ERR(value: Double): Self = StObject.set(x, "NAMESPACE_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNETWORK_ERR(value: Double): Self = StObject.set(x, "NETWORK_ERR", value.asInstanceOf[js.Any])
+    inline def setNETWORK_ERR(value: Double): Self = StObject.set(x, "NETWORK_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOT_FOUND_ERR(value: Double): Self = StObject.set(x, "NOT_FOUND_ERR", value.asInstanceOf[js.Any])
+    inline def setNOT_FOUND_ERR(value: Double): Self = StObject.set(x, "NOT_FOUND_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOT_SUPPORTED_ERR(value: Double): Self = StObject.set(x, "NOT_SUPPORTED_ERR", value.asInstanceOf[js.Any])
+    inline def setNOT_SUPPORTED_ERR(value: Double): Self = StObject.set(x, "NOT_SUPPORTED_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNO_DATA_ALLOWED_ERR(value: Double): Self = StObject.set(x, "NO_DATA_ALLOWED_ERR", value.asInstanceOf[js.Any])
+    inline def setNO_DATA_ALLOWED_ERR(value: Double): Self = StObject.set(x, "NO_DATA_ALLOWED_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNO_MODIFICATION_ALLOWED_ERR(value: Double): Self = StObject.set(x, "NO_MODIFICATION_ALLOWED_ERR", value.asInstanceOf[js.Any])
+    inline def setNO_MODIFICATION_ALLOWED_ERR(value: Double): Self = StObject.set(x, "NO_MODIFICATION_ALLOWED_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUOTA_EXCEEDED_ERR(value: Double): Self = StObject.set(x, "QUOTA_EXCEEDED_ERR", value.asInstanceOf[js.Any])
+    inline def setQUOTA_EXCEEDED_ERR(value: Double): Self = StObject.set(x, "QUOTA_EXCEEDED_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSECURITY_ERR(value: Double): Self = StObject.set(x, "SECURITY_ERR", value.asInstanceOf[js.Any])
+    inline def setSECURITY_ERR(value: Double): Self = StObject.set(x, "SECURITY_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSYNTAX_ERR(value: Double): Self = StObject.set(x, "SYNTAX_ERR", value.asInstanceOf[js.Any])
+    inline def setSYNTAX_ERR(value: Double): Self = StObject.set(x, "SYNTAX_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTIMEOUT_ERR(value: Double): Self = StObject.set(x, "TIMEOUT_ERR", value.asInstanceOf[js.Any])
+    inline def setTIMEOUT_ERR(value: Double): Self = StObject.set(x, "TIMEOUT_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTYPE_MISMATCH_ERR(value: Double): Self = StObject.set(x, "TYPE_MISMATCH_ERR", value.asInstanceOf[js.Any])
+    inline def setTYPE_MISMATCH_ERR(value: Double): Self = StObject.set(x, "TYPE_MISMATCH_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL_MISMATCH_ERR(value: Double): Self = StObject.set(x, "URL_MISMATCH_ERR", value.asInstanceOf[js.Any])
+    inline def setURL_MISMATCH_ERR(value: Double): Self = StObject.set(x, "URL_MISMATCH_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVALIDATION_ERR(value: Double): Self = StObject.set(x, "VALIDATION_ERR", value.asInstanceOf[js.Any])
+    inline def setVALIDATION_ERR(value: Double): Self = StObject.set(x, "VALIDATION_ERR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWRONG_DOCUMENT_ERR(value: Double): Self = StObject.set(x, "WRONG_DOCUMENT_ERR", value.asInstanceOf[js.Any])
+    inline def setWRONG_DOCUMENT_ERR(value: Double): Self = StObject.set(x, "WRONG_DOCUMENT_ERR", value.asInstanceOf[js.Any])
   }
 }

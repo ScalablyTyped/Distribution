@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlOLEType extends StObject
 object XlOLEType {
   
-  @scala.inline
-  def xlOLEControl: `2` = 2.asInstanceOf[`2`]
+  inline def xlOLEControl: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlOLEEmbed: `1` = 1.asInstanceOf[`1`]
+  inline def xlOLEEmbed: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlOLELink: `0` = 0.asInstanceOf[`0`]
+  inline def xlOLELink: `0` = 0.asInstanceOf[`0`]
 }

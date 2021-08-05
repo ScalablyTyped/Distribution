@@ -13,16 +13,13 @@ trait IfBindingData
 }
 object IfBindingData {
   
-  @scala.inline
-  def apply(template: TemplateChunk[js.Any, js.Any]): IfBindingData = {
+  inline def apply(template: TemplateChunk[js.Any, js.Any]): IfBindingData = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[IfBindingData]
   }
   
-  @scala.inline
-  implicit class IfBindingDataMutableBuilder[Self <: IfBindingData] (val x: Self) extends AnyVal {
+  extension [Self <: IfBindingData](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

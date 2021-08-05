@@ -25,8 +25,7 @@ object urlMod {
       * Preserves the `'/'` separators.
       * Should not include the base url, since all parts are escaped.
       */
-    @scala.inline
-    def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Test whether the url is a local url.
@@ -35,8 +34,7 @@ object urlMod {
       * This function returns `false` for any fully qualified url, including
       * `data:`, `file:`, and `//` protocol URLs.
       */
-    @scala.inline
-    def isLocal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLocal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Join a sequence of url components and normalizes as in node `path.join`.
@@ -45,21 +43,16 @@ object urlMod {
       *
       * @returns the joined url.
       */
-    @scala.inline
-    def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
+    inline def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
     /**
       * Normalize a url.
       */
-    @scala.inline
-    def normalize(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def normalize(url: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def normalize(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalize(url: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def normalize_Union(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def normalize_Union(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /**
       * Return a serialized object string suitable for a query.
@@ -71,8 +64,7 @@ object urlMod {
       * #### Notes
       * Modified version of [stackoverflow](http://stackoverflow.com/a/30707423).
       */
-    @scala.inline
-    def objectToQueryString(value: PartialJSONObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def objectToQueryString(value: PartialJSONObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parse a url into a URL object.
@@ -81,14 +73,12 @@ object urlMod {
       *
       * @returns A URL object.
       */
-    @scala.inline
-    def parse(url: String): IUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[IUrl]
+    inline def parse(url: String): IUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[IUrl]
     
     /**
       * Return a parsed object that represents the values in a query string.
       */
-    @scala.inline
-    def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(value.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String]]]
+    inline def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(value.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String]]]
     
     /**
       * The interface for a URL object
@@ -142,8 +132,7 @@ object urlMod {
     }
     object IUrl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         hash: String,
         host: String,
         hostname: String,
@@ -156,35 +145,25 @@ object urlMod {
         __obj.asInstanceOf[IUrl]
       }
       
-      @scala.inline
-      implicit class IUrlMutableBuilder[Self <: IUrl] (val x: Self) extends AnyVal {
+      extension [Self <: IUrl](x: Self) {
         
-        @scala.inline
-        def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+        inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+        inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+        inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+        inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+        inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+        inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+        inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+        inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       }
     }
   }

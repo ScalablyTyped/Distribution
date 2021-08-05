@@ -8,6 +8,5 @@ object xelibStrings {
   
   @js.native
   sealed trait XELib extends StObject
-  @scala.inline
-  def XELib: XELib = "XELib".asInstanceOf[XELib]
+  inline def XELib: XELib = "XELib".asInstanceOf[XELib]
 }

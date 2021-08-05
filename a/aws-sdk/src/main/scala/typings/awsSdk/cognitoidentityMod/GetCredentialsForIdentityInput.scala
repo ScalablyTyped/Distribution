@@ -26,28 +26,21 @@ trait GetCredentialsForIdentityInput
 }
 object GetCredentialsForIdentityInput {
   
-  @scala.inline
-  def apply(IdentityId: IdentityId): GetCredentialsForIdentityInput = {
+  inline def apply(IdentityId: IdentityId): GetCredentialsForIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCredentialsForIdentityInput]
   }
   
-  @scala.inline
-  implicit class GetCredentialsForIdentityInputMutableBuilder[Self <: GetCredentialsForIdentityInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCredentialsForIdentityInput](x: Self) {
     
-    @scala.inline
-    def setCustomRoleArn(value: ARNString): Self = StObject.set(x, "CustomRoleArn", value.asInstanceOf[js.Any])
+    inline def setCustomRoleArn(value: ARNString): Self = StObject.set(x, "CustomRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomRoleArnUndefined: Self = StObject.set(x, "CustomRoleArn", js.undefined)
+    inline def setCustomRoleArnUndefined: Self = StObject.set(x, "CustomRoleArn", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }
 }

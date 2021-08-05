@@ -12,19 +12,15 @@ trait PollOption extends StObject {
 }
 object PollOption {
   
-  @scala.inline
-  def apply(text: String, voter_count: Double): PollOption = {
+  inline def apply(text: String, voter_count: Double): PollOption = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], voter_count = voter_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollOption]
   }
   
-  @scala.inline
-  implicit class PollOptionMutableBuilder[Self <: PollOption] (val x: Self) extends AnyVal {
+  extension [Self <: PollOption](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoter_count(value: Double): Self = StObject.set(x, "voter_count", value.asInstanceOf[js.Any])
+    inline def setVoter_count(value: Double): Self = StObject.set(x, "voter_count", value.asInstanceOf[js.Any])
   }
 }

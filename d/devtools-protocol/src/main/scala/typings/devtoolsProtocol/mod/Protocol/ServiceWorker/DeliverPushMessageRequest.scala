@@ -14,22 +14,17 @@ trait DeliverPushMessageRequest extends StObject {
 }
 object DeliverPushMessageRequest {
   
-  @scala.inline
-  def apply(data: String, origin: String, registrationId: RegistrationID): DeliverPushMessageRequest = {
+  inline def apply(data: String, origin: String, registrationId: RegistrationID): DeliverPushMessageRequest = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], registrationId = registrationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliverPushMessageRequest]
   }
   
-  @scala.inline
-  implicit class DeliverPushMessageRequestMutableBuilder[Self <: DeliverPushMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeliverPushMessageRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    inline def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
   }
 }

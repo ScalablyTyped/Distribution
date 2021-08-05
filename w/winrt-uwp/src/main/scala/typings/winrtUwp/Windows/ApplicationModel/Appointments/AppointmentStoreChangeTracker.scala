@@ -17,22 +17,17 @@ trait AppointmentStoreChangeTracker extends StObject {
 }
 object AppointmentStoreChangeTracker {
   
-  @scala.inline
-  def apply(enable: js.Any, getChangeReader: js.Any, reset: js.Any): AppointmentStoreChangeTracker = {
+  inline def apply(enable: js.Any, getChangeReader: js.Any, reset: js.Any): AppointmentStoreChangeTracker = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], getChangeReader = getChangeReader.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentStoreChangeTracker]
   }
   
-  @scala.inline
-  implicit class AppointmentStoreChangeTrackerMutableBuilder[Self <: AppointmentStoreChangeTracker] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentStoreChangeTracker](x: Self) {
     
-    @scala.inline
-    def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChangeReader(value: js.Any): Self = StObject.set(x, "getChangeReader", value.asInstanceOf[js.Any])
+    inline def setGetChangeReader(value: js.Any): Self = StObject.set(x, "getChangeReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: js.Any): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: js.Any): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }
 }

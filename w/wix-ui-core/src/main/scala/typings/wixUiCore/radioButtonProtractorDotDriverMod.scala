@@ -23,8 +23,7 @@ object radioButtonProtractorDotDriverMod {
   }
   object RadioButtonDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: () => ElementFinder,
       isSelected: () => js.Promise[Boolean],
       select: () => js.Promise[Unit]
@@ -33,14 +32,11 @@ object radioButtonProtractorDotDriverMod {
       __obj.asInstanceOf[RadioButtonDriver]
     }
     
-    @scala.inline
-    implicit class RadioButtonDriverMutableBuilder[Self <: RadioButtonDriver] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonDriver](x: Self) {
       
-      @scala.inline
-      def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
+      inline def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelect(value: () => js.Promise[Unit]): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => js.Promise[Unit]): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     }
   }
 }

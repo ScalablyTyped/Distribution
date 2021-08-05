@@ -16,25 +16,19 @@ trait MoveContest extends StObject {
 }
 object MoveContest {
   
-  @scala.inline
-  def apply(appeal: Double, condition: String, contest: String, jam: Double): MoveContest = {
+  inline def apply(appeal: Double, condition: String, contest: String, jam: Double): MoveContest = {
     val __obj = js.Dynamic.literal(appeal = appeal.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], contest = contest.asInstanceOf[js.Any], jam = jam.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveContest]
   }
   
-  @scala.inline
-  implicit class MoveContestMutableBuilder[Self <: MoveContest] (val x: Self) extends AnyVal {
+  extension [Self <: MoveContest](x: Self) {
     
-    @scala.inline
-    def setAppeal(value: Double): Self = StObject.set(x, "appeal", value.asInstanceOf[js.Any])
+    inline def setAppeal(value: Double): Self = StObject.set(x, "appeal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContest(value: String): Self = StObject.set(x, "contest", value.asInstanceOf[js.Any])
+    inline def setContest(value: String): Self = StObject.set(x, "contest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJam(value: Double): Self = StObject.set(x, "jam", value.asInstanceOf[js.Any])
+    inline def setJam(value: Double): Self = StObject.set(x, "jam", value.asInstanceOf[js.Any])
   }
 }

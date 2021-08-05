@@ -25,11 +25,9 @@ object checkboxMod {
   trait CheckboxLabelSize extends StObject
   object CheckboxLabelSize {
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
   
   trait CheckboxProps extends StObject {
@@ -62,92 +60,64 @@ object checkboxMod {
   }
   object CheckboxProps {
     
-    @scala.inline
-    def apply(): CheckboxProps = {
+    inline def apply(): CheckboxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    @scala.inline
-    implicit class CheckboxPropsMutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxProps](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasErrorUndefined: Self = StObject.set(x, "hasError", js.undefined)
+      inline def setHasErrorUndefined: Self = StObject.set(x, "hasError", js.undefined)
       
-      @scala.inline
-      def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+      inline def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+      inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+      inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+      inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSelectionArea(value: CheckboxSelectionArea): Self = StObject.set(x, "selectionArea", value.asInstanceOf[js.Any])
+      inline def setSelectionArea(value: CheckboxSelectionArea): Self = StObject.set(x, "selectionArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionAreaUndefined: Self = StObject.set(x, "selectionArea", js.undefined)
+      inline def setSelectionAreaUndefined: Self = StObject.set(x, "selectionArea", js.undefined)
       
-      @scala.inline
-      def setSize(value: CheckboxLabelSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: CheckboxLabelSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setVAlign(value: CheckboxVAlign): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: CheckboxVAlign): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
+      inline def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
     }
   }
   
@@ -159,14 +129,11 @@ object checkboxMod {
   trait CheckboxSelectionArea extends StObject
   object CheckboxSelectionArea {
     
-    @scala.inline
-    def always: typings.wixStyleReact.wixStyleReactStrings.always = "always".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.always]
+    inline def always: typings.wixStyleReact.wixStyleReactStrings.always = "always".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.always]
     
-    @scala.inline
-    def hover: typings.wixStyleReact.wixStyleReactStrings.hover = "hover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.hover]
+    inline def hover: typings.wixStyleReact.wixStyleReactStrings.hover = "hover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.hover]
     
-    @scala.inline
-    def none: none_ = "none".asInstanceOf[none_]
+    inline def none: none_ = "none".asInstanceOf[none_]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -176,10 +143,8 @@ object checkboxMod {
   trait CheckboxVAlign extends StObject
   object CheckboxVAlign {
     
-    @scala.inline
-    def center: typings.wixStyleReact.wixStyleReactStrings.center = "center".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.center]
+    inline def center: typings.wixStyleReact.wixStyleReactStrings.center = "center".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.center]
     
-    @scala.inline
-    def top: typings.wixStyleReact.wixStyleReactStrings.top = "top".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.top]
+    inline def top: typings.wixStyleReact.wixStyleReactStrings.top = "top".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.top]
   }
 }

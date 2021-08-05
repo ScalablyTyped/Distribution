@@ -67,32 +67,24 @@ object PivotSchemaDesigner {
   }
   object AfterServiceInvokeEventArgs {
     
-    @scala.inline
-    def apply(): AfterServiceInvokeEventArgs = {
+    inline def apply(): AfterServiceInvokeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AfterServiceInvokeEventArgs]
     }
     
-    @scala.inline
-    implicit class AfterServiceInvokeEventArgsMutableBuilder[Self <: AfterServiceInvokeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AfterServiceInvokeEventArgs](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
+      inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      @scala.inline
-      def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
   }
   
@@ -112,32 +104,24 @@ object PivotSchemaDesigner {
   }
   object BeforeServiceInvokeEventArgs {
     
-    @scala.inline
-    def apply(): BeforeServiceInvokeEventArgs = {
+    inline def apply(): BeforeServiceInvokeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeforeServiceInvokeEventArgs]
     }
     
-    @scala.inline
-    implicit class BeforeServiceInvokeEventArgsMutableBuilder[Self <: BeforeServiceInvokeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeServiceInvokeEventArgs](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
+      inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      @scala.inline
-      def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
   }
   
@@ -161,38 +145,28 @@ object PivotSchemaDesigner {
   }
   object DragMoveEventArgs {
     
-    @scala.inline
-    def apply(): DragMoveEventArgs = {
+    inline def apply(): DragMoveEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragMoveEventArgs]
     }
     
-    @scala.inline
-    implicit class DragMoveEventArgsMutableBuilder[Self <: DragMoveEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DragMoveEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setDragTarget(value: js.Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
+      inline def setDragTarget(value: js.Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
+      inline def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
       
-      @scala.inline
-      def setDraggedElementData(value: js.Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
+      inline def setDraggedElementData(value: js.Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggedElementDataUndefined: Self = StObject.set(x, "draggedElementData", js.undefined)
+      inline def setDraggedElementDataUndefined: Self = StObject.set(x, "draggedElementData", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     }
   }
   
@@ -204,20 +178,16 @@ object PivotSchemaDesigner {
   }
   object LoadEventArgs {
     
-    @scala.inline
-    def apply(): LoadEventArgs = {
+    inline def apply(): LoadEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    @scala.inline
-    implicit class LoadEventArgsMutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LoadEventArgs](x: Self) {
       
-      @scala.inline
-      def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
   }
   
@@ -307,116 +277,80 @@ object PivotSchemaDesigner {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.PivotSchemaDesigner.Model = {
+    inline def apply(): typings.ejWebAll.ej.PivotSchemaDesigner.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.PivotSchemaDesigner.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.PivotSchemaDesigner.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.PivotSchemaDesigner.Model](x: Self) {
       
-      @scala.inline
-      def setAfterServiceInvoke(value: /* e */ AfterServiceInvokeEventArgs => Unit): Self = StObject.set(x, "afterServiceInvoke", js.Any.fromFunction1(value))
+      inline def setAfterServiceInvoke(value: /* e */ AfterServiceInvokeEventArgs => Unit): Self = StObject.set(x, "afterServiceInvoke", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterServiceInvokeUndefined: Self = StObject.set(x, "afterServiceInvoke", js.undefined)
+      inline def setAfterServiceInvokeUndefined: Self = StObject.set(x, "afterServiceInvoke", js.undefined)
       
-      @scala.inline
-      def setBeforeServiceInvoke(value: /* e */ BeforeServiceInvokeEventArgs => Unit): Self = StObject.set(x, "beforeServiceInvoke", js.Any.fromFunction1(value))
+      inline def setBeforeServiceInvoke(value: /* e */ BeforeServiceInvokeEventArgs => Unit): Self = StObject.set(x, "beforeServiceInvoke", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeServiceInvokeUndefined: Self = StObject.set(x, "beforeServiceInvoke", js.undefined)
+      inline def setBeforeServiceInvokeUndefined: Self = StObject.set(x, "beforeServiceInvoke", js.undefined)
       
-      @scala.inline
-      def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      @scala.inline
-      def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
+      inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      @scala.inline
-      def setDragMove(value: /* e */ DragMoveEventArgs => Unit): Self = StObject.set(x, "dragMove", js.Any.fromFunction1(value))
+      inline def setDragMove(value: /* e */ DragMoveEventArgs => Unit): Self = StObject.set(x, "dragMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragMoveUndefined: Self = StObject.set(x, "dragMove", js.undefined)
+      inline def setDragMoveUndefined: Self = StObject.set(x, "dragMove", js.undefined)
       
-      @scala.inline
-      def setEnableDragDrop(value: Boolean): Self = StObject.set(x, "enableDragDrop", value.asInstanceOf[js.Any])
+      inline def setEnableDragDrop(value: Boolean): Self = StObject.set(x, "enableDragDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableDragDropUndefined: Self = StObject.set(x, "enableDragDrop", js.undefined)
+      inline def setEnableDragDropUndefined: Self = StObject.set(x, "enableDragDrop", js.undefined)
       
-      @scala.inline
-      def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
+      inline def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
+      inline def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
       
-      @scala.inline
-      def setEnableWrapper(value: Boolean): Self = StObject.set(x, "enableWrapper", value.asInstanceOf[js.Any])
+      inline def setEnableWrapper(value: Boolean): Self = StObject.set(x, "enableWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableWrapperUndefined: Self = StObject.set(x, "enableWrapper", js.undefined)
+      inline def setEnableWrapperUndefined: Self = StObject.set(x, "enableWrapper", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLayout(value: Layouts | String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layouts | String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setLoad(value: /* e */ LoadEventArgs => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: /* e */ LoadEventArgs => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setOlap(value: Olap): Self = StObject.set(x, "olap", value.asInstanceOf[js.Any])
+      inline def setOlap(value: Olap): Self = StObject.set(x, "olap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOlapUndefined: Self = StObject.set(x, "olap", js.undefined)
+      inline def setOlapUndefined: Self = StObject.set(x, "olap", js.undefined)
       
-      @scala.inline
-      def setPivotControl(value: js.Any): Self = StObject.set(x, "pivotControl", value.asInstanceOf[js.Any])
+      inline def setPivotControl(value: js.Any): Self = StObject.set(x, "pivotControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPivotControlUndefined: Self = StObject.set(x, "pivotControl", js.undefined)
+      inline def setPivotControlUndefined: Self = StObject.set(x, "pivotControl", js.undefined)
       
-      @scala.inline
-      def setServiceMethods(value: js.Any): Self = StObject.set(x, "serviceMethods", value.asInstanceOf[js.Any])
+      inline def setServiceMethods(value: js.Any): Self = StObject.set(x, "serviceMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceMethodsUndefined: Self = StObject.set(x, "serviceMethods", js.undefined)
+      inline def setServiceMethodsUndefined: Self = StObject.set(x, "serviceMethods", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -434,26 +368,20 @@ object PivotSchemaDesigner {
   }
   object Olap {
     
-    @scala.inline
-    def apply(): Olap = {
+    inline def apply(): Olap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Olap]
     }
     
-    @scala.inline
-    implicit class OlapMutableBuilder[Self <: Olap] (val x: Self) extends AnyVal {
+    extension [Self <: Olap](x: Self) {
       
-      @scala.inline
-      def setShowKPI(value: Boolean): Self = StObject.set(x, "showKPI", value.asInstanceOf[js.Any])
+      inline def setShowKPI(value: Boolean): Self = StObject.set(x, "showKPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowKPIUndefined: Self = StObject.set(x, "showKPI", js.undefined)
+      inline def setShowKPIUndefined: Self = StObject.set(x, "showKPI", js.undefined)
       
-      @scala.inline
-      def setShowNamedSets(value: Boolean): Self = StObject.set(x, "showNamedSets", value.asInstanceOf[js.Any])
+      inline def setShowNamedSets(value: Boolean): Self = StObject.set(x, "showNamedSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNamedSetsUndefined: Self = StObject.set(x, "showNamedSets", js.undefined)
+      inline def setShowNamedSetsUndefined: Self = StObject.set(x, "showNamedSets", js.undefined)
     }
   }
 }

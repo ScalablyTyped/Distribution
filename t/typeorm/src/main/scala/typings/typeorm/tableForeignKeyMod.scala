@@ -61,7 +61,6 @@ object tableForeignKeyMod {
     /**
       * Creates a new table foreign key from the given foreign key metadata.
       */
-    @scala.inline
-    def create(metadata: ForeignKeyMetadata): TableForeignKey = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(metadata.asInstanceOf[js.Any]).asInstanceOf[TableForeignKey]
+    inline def create(metadata: ForeignKeyMetadata): TableForeignKey = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(metadata.asInstanceOf[js.Any]).asInstanceOf[TableForeignKey]
   }
 }

@@ -14,25 +14,19 @@ trait ProductApprovalEvent extends StObject {
 }
 object ProductApprovalEvent {
   
-  @scala.inline
-  def apply(): ProductApprovalEvent = {
+  inline def apply(): ProductApprovalEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductApprovalEvent]
   }
   
-  @scala.inline
-  implicit class ProductApprovalEventMutableBuilder[Self <: ProductApprovalEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ProductApprovalEvent](x: Self) {
     
-    @scala.inline
-    def setApproved(value: String): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+    inline def setApproved(value: String): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
+    inline def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

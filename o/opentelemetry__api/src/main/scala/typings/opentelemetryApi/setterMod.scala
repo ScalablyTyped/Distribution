@@ -10,8 +10,7 @@ object setterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultSetter(carrier: js.Any, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defaultSetter(carrier: js.Any, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type SetterFunction[Carrier] = js.Function3[/* carrier */ Carrier, /* key */ String, /* value */ js.Any, Unit]
 }

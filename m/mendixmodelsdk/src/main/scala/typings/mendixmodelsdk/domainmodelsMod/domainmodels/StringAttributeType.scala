@@ -54,8 +54,7 @@ object StringAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  inline def create(model: IModel): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
   
   /**
     * Creates and returns a new StringAttributeType instance in the SDK and on the server.
@@ -66,8 +65,7 @@ object StringAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: Attribute): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  inline def createIn(container: Attribute): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
   
   /**
     * Creates and returns a new StringAttributeType instance in the SDK and on the server.
@@ -75,8 +73,7 @@ object StringAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInAttributeUnderType(container: Attribute): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  inline def createInAttributeUnderType(container: Attribute): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
   
   /**
     * Creates and returns a new StringAttributeType instance in the SDK and on the server.
@@ -87,8 +84,7 @@ object StringAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEntityKeyPartUnderType(container: EntityKeyPart): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  inline def createInEntityKeyPartUnderType(container: EntityKeyPart): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
   
   /**
     * Creates and returns a new StringAttributeType instance in the SDK and on the server.
@@ -99,20 +95,17 @@ object StringAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInODataKeyPartUnderType(container: ODataKeyPart): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  inline def createInODataKeyPartUnderType(container: ODataKeyPart): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

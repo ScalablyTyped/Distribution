@@ -57,8 +57,7 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Action: Instantiable3[
       /* action */ String, 
       /* icon */ String, 
@@ -81,11 +80,9 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setAction(
+    inline def setAction(
       value: Instantiable3[
           /* action */ String, 
           /* icon */ String, 
@@ -94,52 +91,41 @@ object Action {
         ]
     ): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeIconType(
+    inline def setBadgeIconType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.BadgeIconType */ js.Any
     ): Self = StObject.set(x, "BadgeIconType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: Category): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Category): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(
+    inline def setChannel(
       value: Instantiable3[/* channelId */ String, /* name */ String, /* importance */ Importance, Channel]
     ): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelGroup(value: Instantiable2[/* groupId */ String, /* name */ String, ChannelGroup]): Self = StObject.set(x, "ChannelGroup", value.asInstanceOf[js.Any])
+    inline def setChannelGroup(value: Instantiable2[/* groupId */ String, /* name */ String, ChannelGroup]): Self = StObject.set(x, "ChannelGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaults(
+    inline def setDefaults(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Defaults */ js.Any
     ): Self = StObject.set(x, "Defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupAlert(
+    inline def setGroupAlert(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.GroupAlert */ js.Any
     ): Self = StObject.set(x, "GroupAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportance(
+    inline def setImportance(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Importance */ js.Any
     ): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(
+    inline def setPriority(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Priority */ js.Any
     ): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteInput(value: Instantiable1[/* resultKey */ String, RemoteInput]): Self = StObject.set(x, "RemoteInput", value.asInstanceOf[js.Any])
+    inline def setRemoteInput(value: Instantiable1[/* resultKey */ String, RemoteInput]): Self = StObject.set(x, "RemoteInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticAction(
+    inline def setSemanticAction(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.SemanticAction */ js.Any
     ): Self = StObject.set(x, "SemanticAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(
+    inline def setVisibility(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Visibility */ js.Any
     ): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
   }

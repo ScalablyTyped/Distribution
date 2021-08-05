@@ -18,8 +18,7 @@ trait TreeWalkerValue extends StObject {
 }
 object TreeWalkerValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     item: Item,
     length: Double,
     nextPosition: Position,
@@ -31,22 +30,16 @@ object TreeWalkerValue {
     __obj.asInstanceOf[TreeWalkerValue]
   }
   
-  @scala.inline
-  implicit class TreeWalkerValueMutableBuilder[Self <: TreeWalkerValue] (val x: Self) extends AnyVal {
+  extension [Self <: TreeWalkerValue](x: Self) {
     
-    @scala.inline
-    def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPosition(value: Position): Self = StObject.set(x, "nextPosition", value.asInstanceOf[js.Any])
+    inline def setNextPosition(value: Position): Self = StObject.set(x, "nextPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousPosition(value: Position): Self = StObject.set(x, "previousPosition", value.asInstanceOf[js.Any])
+    inline def setPreviousPosition(value: Position): Self = StObject.set(x, "previousPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TreeWalkerValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TreeWalkerValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

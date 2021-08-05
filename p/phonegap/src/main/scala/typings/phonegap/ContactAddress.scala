@@ -24,8 +24,7 @@ trait ContactAddress extends StObject {
 }
 object ContactAddress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     country: String,
     formatted: String,
     locality: String,
@@ -40,31 +39,22 @@ object ContactAddress {
     __obj.asInstanceOf[ContactAddress]
   }
   
-  @scala.inline
-  implicit class ContactAddressMutableBuilder[Self <: ContactAddress] (val x: Self) extends AnyVal {
+  extension [Self <: ContactAddress](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+    inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPref(value: Boolean): Self = StObject.set(x, "pref", value.asInstanceOf[js.Any])
+    inline def setPref(value: Boolean): Self = StObject.set(x, "pref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
+    inline def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

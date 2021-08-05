@@ -35,7 +35,7 @@ object baseHttpControllerMod {
     /* protected */ def created[T](location: String, content: T): CreatedNegotiatedContentResult[T] = js.native
     /* protected */ def created[T](location: URL_, content: T): CreatedNegotiatedContentResult[T] = js.native
     
-    val httpContext: HttpContext = js.native
+    /* protected */ val httpContext: HttpContext = js.native
     
     /* protected */ def internalServerError(): InternalServerErrorResult = js.native
     /* protected */ def internalServerError(error: Error): ExceptionResult = js.native

@@ -48,61 +48,43 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(): Settings = {
+  inline def apply(): Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setChannelIdentification(value: Boolean): Self = StObject.set(x, "ChannelIdentification", value.asInstanceOf[js.Any])
+    inline def setChannelIdentification(value: Boolean): Self = StObject.set(x, "ChannelIdentification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdentificationUndefined: Self = StObject.set(x, "ChannelIdentification", js.undefined)
+    inline def setChannelIdentificationUndefined: Self = StObject.set(x, "ChannelIdentification", js.undefined)
     
-    @scala.inline
-    def setMaxAlternatives(value: MaxAlternatives): Self = StObject.set(x, "MaxAlternatives", value.asInstanceOf[js.Any])
+    inline def setMaxAlternatives(value: MaxAlternatives): Self = StObject.set(x, "MaxAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAlternativesUndefined: Self = StObject.set(x, "MaxAlternatives", js.undefined)
+    inline def setMaxAlternativesUndefined: Self = StObject.set(x, "MaxAlternatives", js.undefined)
     
-    @scala.inline
-    def setMaxSpeakerLabels(value: MaxSpeakers): Self = StObject.set(x, "MaxSpeakerLabels", value.asInstanceOf[js.Any])
+    inline def setMaxSpeakerLabels(value: MaxSpeakers): Self = StObject.set(x, "MaxSpeakerLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeakerLabelsUndefined: Self = StObject.set(x, "MaxSpeakerLabels", js.undefined)
+    inline def setMaxSpeakerLabelsUndefined: Self = StObject.set(x, "MaxSpeakerLabels", js.undefined)
     
-    @scala.inline
-    def setShowAlternatives(value: Boolean): Self = StObject.set(x, "ShowAlternatives", value.asInstanceOf[js.Any])
+    inline def setShowAlternatives(value: Boolean): Self = StObject.set(x, "ShowAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAlternativesUndefined: Self = StObject.set(x, "ShowAlternatives", js.undefined)
+    inline def setShowAlternativesUndefined: Self = StObject.set(x, "ShowAlternatives", js.undefined)
     
-    @scala.inline
-    def setShowSpeakerLabels(value: Boolean): Self = StObject.set(x, "ShowSpeakerLabels", value.asInstanceOf[js.Any])
+    inline def setShowSpeakerLabels(value: Boolean): Self = StObject.set(x, "ShowSpeakerLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSpeakerLabelsUndefined: Self = StObject.set(x, "ShowSpeakerLabels", js.undefined)
+    inline def setShowSpeakerLabelsUndefined: Self = StObject.set(x, "ShowSpeakerLabels", js.undefined)
     
-    @scala.inline
-    def setVocabularyFilterMethod(value: VocabularyFilterMethod): Self = StObject.set(x, "VocabularyFilterMethod", value.asInstanceOf[js.Any])
+    inline def setVocabularyFilterMethod(value: VocabularyFilterMethod): Self = StObject.set(x, "VocabularyFilterMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFilterMethodUndefined: Self = StObject.set(x, "VocabularyFilterMethod", js.undefined)
+    inline def setVocabularyFilterMethodUndefined: Self = StObject.set(x, "VocabularyFilterMethod", js.undefined)
     
-    @scala.inline
-    def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
+    inline def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFilterNameUndefined: Self = StObject.set(x, "VocabularyFilterName", js.undefined)
+    inline def setVocabularyFilterNameUndefined: Self = StObject.set(x, "VocabularyFilterName", js.undefined)
     
-    @scala.inline
-    def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
+    inline def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyNameUndefined: Self = StObject.set(x, "VocabularyName", js.undefined)
+    inline def setVocabularyNameUndefined: Self = StObject.set(x, "VocabularyName", js.undefined)
   }
 }

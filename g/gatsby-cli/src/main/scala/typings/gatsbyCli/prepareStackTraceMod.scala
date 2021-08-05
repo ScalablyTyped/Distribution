@@ -27,6 +27,5 @@ object prepareStackTraceMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def prepareStackTrace(error: Error, source: String): js.Promise[ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareStackTrace")(error.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ErrorWithCodeFrame]]
+  inline def prepareStackTrace(error: Error, source: String): js.Promise[ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareStackTrace")(error.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ErrorWithCodeFrame]]
 }

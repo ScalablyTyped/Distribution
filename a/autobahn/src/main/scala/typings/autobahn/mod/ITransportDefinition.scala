@@ -14,32 +14,24 @@ trait ITransportDefinition extends StObject {
 }
 object ITransportDefinition {
   
-  @scala.inline
-  def apply(`type`: TransportType): ITransportDefinition = {
+  inline def apply(`type`: TransportType): ITransportDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransportDefinition]
   }
   
-  @scala.inline
-  implicit class ITransportDefinitionMutableBuilder[Self <: ITransportDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ITransportDefinition](x: Self) {
     
-    @scala.inline
-    def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    @scala.inline
-    def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TransportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TransportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

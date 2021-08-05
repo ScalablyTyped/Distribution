@@ -13,19 +13,15 @@ trait InstanceIpv6Address extends StObject {
 }
 object InstanceIpv6Address {
   
-  @scala.inline
-  def apply(): InstanceIpv6Address = {
+  inline def apply(): InstanceIpv6Address = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceIpv6Address]
   }
   
-  @scala.inline
-  implicit class InstanceIpv6AddressMutableBuilder[Self <: InstanceIpv6Address] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceIpv6Address](x: Self) {
     
-    @scala.inline
-    def setIpv6Address(value: String): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
+    inline def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
   }
 }

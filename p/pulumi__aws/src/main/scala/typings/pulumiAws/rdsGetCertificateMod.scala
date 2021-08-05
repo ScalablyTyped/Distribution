@@ -11,14 +11,10 @@ object rdsGetCertificateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCertificate(): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")().asInstanceOf[js.Promise[GetCertificateResult]]
-  @scala.inline
-  def getCertificate(args: Unit, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
-  @scala.inline
-  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateResult]]
-  @scala.inline
-  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
+  inline def getCertificate(): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")().asInstanceOf[js.Promise[GetCertificateResult]]
+  inline def getCertificate(args: Unit, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
+  inline def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateResult]]
+  inline def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
   
   trait GetCertificateArgs extends StObject {
     
@@ -34,26 +30,20 @@ object rdsGetCertificateMod {
   }
   object GetCertificateArgs {
     
-    @scala.inline
-    def apply(): GetCertificateArgs = {
+    inline def apply(): GetCertificateArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCertificateArgs]
     }
     
-    @scala.inline
-    implicit class GetCertificateArgsMutableBuilder[Self <: GetCertificateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLatestValidTill(value: Boolean): Self = StObject.set(x, "latestValidTill", value.asInstanceOf[js.Any])
+      inline def setLatestValidTill(value: Boolean): Self = StObject.set(x, "latestValidTill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestValidTillUndefined: Self = StObject.set(x, "latestValidTill", js.undefined)
+      inline def setLatestValidTillUndefined: Self = StObject.set(x, "latestValidTill", js.undefined)
     }
   }
   
@@ -100,8 +90,7 @@ object rdsGetCertificateMod {
   }
   object GetCertificateResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       certificateType: String,
       customerOverride: Boolean,
@@ -115,38 +104,27 @@ object rdsGetCertificateMod {
       __obj.asInstanceOf[GetCertificateResult]
     }
     
-    @scala.inline
-    implicit class GetCertificateResultMutableBuilder[Self <: GetCertificateResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateType(value: String): Self = StObject.set(x, "certificateType", value.asInstanceOf[js.Any])
+      inline def setCertificateType(value: String): Self = StObject.set(x, "certificateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerOverride(value: Boolean): Self = StObject.set(x, "customerOverride", value.asInstanceOf[js.Any])
+      inline def setCustomerOverride(value: Boolean): Self = StObject.set(x, "customerOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerOverrideValidTill(value: String): Self = StObject.set(x, "customerOverrideValidTill", value.asInstanceOf[js.Any])
+      inline def setCustomerOverrideValidTill(value: String): Self = StObject.set(x, "customerOverrideValidTill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestValidTill(value: Boolean): Self = StObject.set(x, "latestValidTill", value.asInstanceOf[js.Any])
+      inline def setLatestValidTill(value: Boolean): Self = StObject.set(x, "latestValidTill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestValidTillUndefined: Self = StObject.set(x, "latestValidTill", js.undefined)
+      inline def setLatestValidTillUndefined: Self = StObject.set(x, "latestValidTill", js.undefined)
       
-      @scala.inline
-      def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
+      inline def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidFrom(value: String): Self = StObject.set(x, "validFrom", value.asInstanceOf[js.Any])
+      inline def setValidFrom(value: String): Self = StObject.set(x, "validFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidTill(value: String): Self = StObject.set(x, "validTill", value.asInstanceOf[js.Any])
+      inline def setValidTill(value: String): Self = StObject.set(x, "validTill", value.asInstanceOf[js.Any])
     }
   }
 }

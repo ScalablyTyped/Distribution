@@ -22,37 +22,27 @@ trait MetadataOptions extends StObject {
 }
 object MetadataOptions {
   
-  @scala.inline
-  def apply(): MetadataOptions = {
+  inline def apply(): MetadataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetadataOptions]
   }
   
-  @scala.inline
-  implicit class MetadataOptionsMutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataOptions](x: Self) {
     
-    @scala.inline
-    def setCacheableRequest(value: Boolean): Self = StObject.set(x, "cacheableRequest", value.asInstanceOf[js.Any])
+    inline def setCacheableRequest(value: Boolean): Self = StObject.set(x, "cacheableRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheableRequestUndefined: Self = StObject.set(x, "cacheableRequest", js.undefined)
+    inline def setCacheableRequestUndefined: Self = StObject.set(x, "cacheableRequest", js.undefined)
     
-    @scala.inline
-    def setCorked(value: Boolean): Self = StObject.set(x, "corked", value.asInstanceOf[js.Any])
+    inline def setCorked(value: Boolean): Self = StObject.set(x, "corked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorkedUndefined: Self = StObject.set(x, "corked", js.undefined)
+    inline def setCorkedUndefined: Self = StObject.set(x, "corked", js.undefined)
     
-    @scala.inline
-    def setIdempotentRequest(value: Boolean): Self = StObject.set(x, "idempotentRequest", value.asInstanceOf[js.Any])
+    inline def setIdempotentRequest(value: Boolean): Self = StObject.set(x, "idempotentRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotentRequestUndefined: Self = StObject.set(x, "idempotentRequest", js.undefined)
+    inline def setIdempotentRequestUndefined: Self = StObject.set(x, "idempotentRequest", js.undefined)
     
-    @scala.inline
-    def setWaitForReady(value: Boolean): Self = StObject.set(x, "waitForReady", value.asInstanceOf[js.Any])
+    inline def setWaitForReady(value: Boolean): Self = StObject.set(x, "waitForReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForReadyUndefined: Self = StObject.set(x, "waitForReady", js.undefined)
+    inline def setWaitForReadyUndefined: Self = StObject.set(x, "waitForReady", js.undefined)
   }
 }

@@ -28,40 +28,29 @@ trait TagScopeTerm extends StObject {
 }
 object TagScopeTerm {
   
-  @scala.inline
-  def apply(): TagScopeTerm = {
+  inline def apply(): TagScopeTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagScopeTerm]
   }
   
-  @scala.inline
-  implicit class TagScopeTermMutableBuilder[Self <: TagScopeTerm] (val x: Self) extends AnyVal {
+  extension [Self <: TagScopeTerm](x: Self) {
     
-    @scala.inline
-    def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
-    @scala.inline
-    def setKey(value: string): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: string): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setTagValues(value: listOfTagValuePair): Self = StObject.set(x, "tagValues", value.asInstanceOf[js.Any])
+    inline def setTagValues(value: listOfTagValuePair): Self = StObject.set(x, "tagValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagValuesUndefined: Self = StObject.set(x, "tagValues", js.undefined)
+    inline def setTagValuesUndefined: Self = StObject.set(x, "tagValues", js.undefined)
     
-    @scala.inline
-    def setTagValuesVarargs(value: TagValuePair*): Self = StObject.set(x, "tagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: TagValuePair*): Self = StObject.set(x, "tagValues", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: TagTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TagTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

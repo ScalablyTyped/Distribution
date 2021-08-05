@@ -10,16 +10,13 @@ trait IgtvBrowseFeedResponseExplore extends StObject {
 }
 object IgtvBrowseFeedResponseExplore {
   
-  @scala.inline
-  def apply(explanation: String): IgtvBrowseFeedResponseExplore = {
+  inline def apply(explanation: String): IgtvBrowseFeedResponseExplore = {
     val __obj = js.Dynamic.literal(explanation = explanation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvBrowseFeedResponseExplore]
   }
   
-  @scala.inline
-  implicit class IgtvBrowseFeedResponseExploreMutableBuilder[Self <: IgtvBrowseFeedResponseExplore] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvBrowseFeedResponseExplore](x: Self) {
     
-    @scala.inline
-    def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+    inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
   }
 }

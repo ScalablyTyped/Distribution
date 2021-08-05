@@ -15,16 +15,13 @@ trait ITerminalAddon
 }
 object ITerminalAddon {
   
-  @scala.inline
-  def apply(activate: Terminal => Unit, dispose: () => Unit): ITerminalAddon = {
+  inline def apply(activate: Terminal => Unit, dispose: () => Unit): ITerminalAddon = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[ITerminalAddon]
   }
   
-  @scala.inline
-  implicit class ITerminalAddonMutableBuilder[Self <: ITerminalAddon] (val x: Self) extends AnyVal {
+  extension [Self <: ITerminalAddon](x: Self) {
     
-    @scala.inline
-    def setActivate(value: Terminal => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+    inline def setActivate(value: Terminal => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
   }
 }

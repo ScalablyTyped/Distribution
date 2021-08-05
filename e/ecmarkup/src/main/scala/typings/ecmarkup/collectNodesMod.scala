@@ -18,8 +18,7 @@ object collectNodesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def collectNodes(report: js.Function1[/* e */ Warning, Unit], mainSource: String, spec: Spec, document: Document): CollectNodesReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("collectNodes")(report.asInstanceOf[js.Any], mainSource.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[CollectNodesReturnType]
+  inline def collectNodes(report: js.Function1[/* e */ Warning, Unit], mainSource: String, spec: Spec, document: Document): CollectNodesReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("collectNodes")(report.asInstanceOf[js.Any], mainSource.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[CollectNodesReturnType]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ecmarkup.anon.Algorithms
@@ -28,8 +27,7 @@ object collectNodesMod {
   trait CollectNodesReturnType extends StObject
   object CollectNodesReturnType {
     
-    @scala.inline
-    def Algorithms(
+    inline def Algorithms(
       algorithms: js.Array[Element],
       earlyErrors: js.Array[Grammar],
       headers: js.Array[Contents],
@@ -40,8 +38,7 @@ object collectNodesMod {
       __obj.asInstanceOf[typings.ecmarkup.anon.Algorithms]
     }
     
-    @scala.inline
-    def Success(): typings.ecmarkup.anon.Success = {
+    inline def Success(): typings.ecmarkup.anon.Success = {
       val __obj = js.Dynamic.literal(success = false)
       __obj.asInstanceOf[typings.ecmarkup.anon.Success]
     }

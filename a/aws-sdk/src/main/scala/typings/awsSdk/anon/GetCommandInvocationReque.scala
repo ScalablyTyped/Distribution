@@ -31,31 +31,23 @@ trait GetCommandInvocationReque extends StObject {
 }
 object GetCommandInvocationReque {
   
-  @scala.inline
-  def apply(CommandId: CommandId, InstanceId: InstanceId): GetCommandInvocationReque = {
+  inline def apply(CommandId: CommandId, InstanceId: InstanceId): GetCommandInvocationReque = {
     val __obj = js.Dynamic.literal(CommandId = CommandId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommandInvocationReque]
   }
   
-  @scala.inline
-  implicit class GetCommandInvocationRequeMutableBuilder[Self <: GetCommandInvocationReque] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommandInvocationReque](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
+    inline def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginName(value: CommandPluginName): Self = StObject.set(x, "PluginName", value.asInstanceOf[js.Any])
+    inline def setPluginName(value: CommandPluginName): Self = StObject.set(x, "PluginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginNameUndefined: Self = StObject.set(x, "PluginName", js.undefined)
+    inline def setPluginNameUndefined: Self = StObject.set(x, "PluginName", js.undefined)
   }
 }

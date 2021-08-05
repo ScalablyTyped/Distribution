@@ -37,91 +37,63 @@ trait AsDestination extends StObject {
 }
 object AsDestination {
   
-  @scala.inline
-  def apply(): AsDestination = {
+  inline def apply(): AsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsDestination]
   }
   
-  @scala.inline
-  implicit class AsDestinationMutableBuilder[Self <: AsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: AsDestination](x: Self) {
     
-    @scala.inline
-    def setAsDestination(value: Boolean): Self = StObject.set(x, "asDestination", value.asInstanceOf[js.Any])
+    inline def setAsDestination(value: Boolean): Self = StObject.set(x, "asDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsDestinationUndefined: Self = StObject.set(x, "asDestination", js.undefined)
+    inline def setAsDestinationUndefined: Self = StObject.set(x, "asDestination", js.undefined)
     
-    @scala.inline
-    def setAsOrigin(value: Boolean): Self = StObject.set(x, "asOrigin", value.asInstanceOf[js.Any])
+    inline def setAsOrigin(value: Boolean): Self = StObject.set(x, "asOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsOriginUndefined: Self = StObject.set(x, "asOrigin", js.undefined)
+    inline def setAsOriginUndefined: Self = StObject.set(x, "asOrigin", js.undefined)
     
-    @scala.inline
-    def setAutoMove(value: Boolean): Self = StObject.set(x, "autoMove", value.asInstanceOf[js.Any])
+    inline def setAutoMove(value: Boolean): Self = StObject.set(x, "autoMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMoveUndefined: Self = StObject.set(x, "autoMove", js.undefined)
+    inline def setAutoMoveUndefined: Self = StObject.set(x, "autoMove", js.undefined)
     
-    @scala.inline
-    def setCloseWhenClickMap(value: Boolean): Self = StObject.set(x, "closeWhenClickMap", value.asInstanceOf[js.Any])
+    inline def setCloseWhenClickMap(value: Boolean): Self = StObject.set(x, "closeWhenClickMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseWhenClickMapUndefined: Self = StObject.set(x, "closeWhenClickMap", js.undefined)
+    inline def setCloseWhenClickMapUndefined: Self = StObject.set(x, "closeWhenClickMap", js.undefined)
     
-    @scala.inline
-    def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDriving(value: Boolean): Self = StObject.set(x, "driving", value.asInstanceOf[js.Any])
+    inline def setDriving(value: Boolean): Self = StObject.set(x, "driving", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrivingUndefined: Self = StObject.set(x, "driving", js.undefined)
+    inline def setDrivingUndefined: Self = StObject.set(x, "driving", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+    inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
-    @scala.inline
-    def setPlaceSearch(value: Boolean): Self = StObject.set(x, "placeSearch", value.asInstanceOf[js.Any])
+    inline def setPlaceSearch(value: Boolean): Self = StObject.set(x, "placeSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceSearchUndefined: Self = StObject.set(x, "placeSearch", js.undefined)
+    inline def setPlaceSearchUndefined: Self = StObject.set(x, "placeSearch", js.undefined)
     
-    @scala.inline
-    def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSearchRadius(value: Double): Self = StObject.set(x, "searchRadius", value.asInstanceOf[js.Any])
+    inline def setSearchRadius(value: Double): Self = StObject.set(x, "searchRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchRadiusUndefined: Self = StObject.set(x, "searchRadius", js.undefined)
+    inline def setSearchRadiusUndefined: Self = StObject.set(x, "searchRadius", js.undefined)
     
-    @scala.inline
-    def setTransit(value: Boolean): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
+    inline def setTransit(value: Boolean): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitUndefined: Self = StObject.set(x, "transit", js.undefined)
+    inline def setTransitUndefined: Self = StObject.set(x, "transit", js.undefined)
     
-    @scala.inline
-    def setWalking(value: Boolean): Self = StObject.set(x, "walking", value.asInstanceOf[js.Any])
+    inline def setWalking(value: Boolean): Self = StObject.set(x, "walking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalkingUndefined: Self = StObject.set(x, "walking", js.undefined)
+    inline def setWalkingUndefined: Self = StObject.set(x, "walking", js.undefined)
   }
 }

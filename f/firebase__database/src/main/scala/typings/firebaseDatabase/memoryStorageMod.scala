@@ -10,7 +10,7 @@ object memoryStorageMod {
   @js.native
   class MemoryStorage () extends StObject {
     
-    var cache_ : js.Any = js.native
+    /* private */ var cache_ : js.Any = js.native
     
     def get(key: String): js.Any = js.native
     

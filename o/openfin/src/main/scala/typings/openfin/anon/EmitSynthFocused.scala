@@ -10,16 +10,13 @@ trait EmitSynthFocused extends StObject {
 }
 object EmitSynthFocused {
   
-  @scala.inline
-  def apply(emitSynthFocused: Boolean): EmitSynthFocused = {
+  inline def apply(emitSynthFocused: Boolean): EmitSynthFocused = {
     val __obj = js.Dynamic.literal(emitSynthFocused = emitSynthFocused.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitSynthFocused]
   }
   
-  @scala.inline
-  implicit class EmitSynthFocusedMutableBuilder[Self <: EmitSynthFocused] (val x: Self) extends AnyVal {
+  extension [Self <: EmitSynthFocused](x: Self) {
     
-    @scala.inline
-    def setEmitSynthFocused(value: Boolean): Self = StObject.set(x, "emitSynthFocused", value.asInstanceOf[js.Any])
+    inline def setEmitSynthFocused(value: Boolean): Self = StObject.set(x, "emitSynthFocused", value.asInstanceOf[js.Any])
   }
 }

@@ -10,15 +10,13 @@ object operatorsDelayWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def delayWhen[T](
+  inline def delayWhen[T](
     delayDurationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("delayWhen")(delayDurationSelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def delayWhen[T](
+  inline def delayWhen[T](
     delayDurationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any

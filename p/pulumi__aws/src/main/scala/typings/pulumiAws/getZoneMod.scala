@@ -12,14 +12,10 @@ object getZoneMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getZone(): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")().asInstanceOf[js.Promise[GetZoneResult]]
-  @scala.inline
-  def getZone(args: Unit, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
-  @scala.inline
-  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetZoneResult]]
-  @scala.inline
-  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
+  inline def getZone(): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")().asInstanceOf[js.Promise[GetZoneResult]]
+  inline def getZone(args: Unit, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
+  inline def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetZoneResult]]
+  inline def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
   
   trait GetZoneArgs extends StObject {
     
@@ -55,50 +51,36 @@ object getZoneMod {
   }
   object GetZoneArgs {
     
-    @scala.inline
-    def apply(): GetZoneArgs = {
+    inline def apply(): GetZoneArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetZoneArgs]
     }
     
-    @scala.inline
-    implicit class GetZoneArgsMutableBuilder[Self <: GetZoneArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetZoneArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrivateZone(value: Boolean): Self = StObject.set(x, "privateZone", value.asInstanceOf[js.Any])
+      inline def setPrivateZone(value: Boolean): Self = StObject.set(x, "privateZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateZoneUndefined: Self = StObject.set(x, "privateZone", js.undefined)
+      inline def setPrivateZoneUndefined: Self = StObject.set(x, "privateZone", js.undefined)
       
-      @scala.inline
-      def setResourceRecordSetCount(value: Double): Self = StObject.set(x, "resourceRecordSetCount", value.asInstanceOf[js.Any])
+      inline def setResourceRecordSetCount(value: Double): Self = StObject.set(x, "resourceRecordSetCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceRecordSetCountUndefined: Self = StObject.set(x, "resourceRecordSetCount", js.undefined)
+      inline def setResourceRecordSetCountUndefined: Self = StObject.set(x, "resourceRecordSetCount", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
       
-      @scala.inline
-      def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+      inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
     }
   }
   
@@ -151,8 +133,7 @@ object getZoneMod {
   }
   object GetZoneResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callerReference: String,
       comment: String,
       id: String,
@@ -169,50 +150,35 @@ object getZoneMod {
       __obj.asInstanceOf[GetZoneResult]
     }
     
-    @scala.inline
-    implicit class GetZoneResultMutableBuilder[Self <: GetZoneResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetZoneResult](x: Self) {
       
-      @scala.inline
-      def setCallerReference(value: String): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
+      inline def setCallerReference(value: String): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedServiceDescription(value: String): Self = StObject.set(x, "linkedServiceDescription", value.asInstanceOf[js.Any])
+      inline def setLinkedServiceDescription(value: String): Self = StObject.set(x, "linkedServiceDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedServicePrincipal(value: String): Self = StObject.set(x, "linkedServicePrincipal", value.asInstanceOf[js.Any])
+      inline def setLinkedServicePrincipal(value: String): Self = StObject.set(x, "linkedServicePrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+      inline def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+      inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
       
-      @scala.inline
-      def setPrivateZone(value: Boolean): Self = StObject.set(x, "privateZone", value.asInstanceOf[js.Any])
+      inline def setPrivateZone(value: Boolean): Self = StObject.set(x, "privateZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateZoneUndefined: Self = StObject.set(x, "privateZone", js.undefined)
+      inline def setPrivateZoneUndefined: Self = StObject.set(x, "privateZone", js.undefined)
       
-      @scala.inline
-      def setResourceRecordSetCount(value: Double): Self = StObject.set(x, "resourceRecordSetCount", value.asInstanceOf[js.Any])
+      inline def setResourceRecordSetCount(value: Double): Self = StObject.set(x, "resourceRecordSetCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     }
   }
 }

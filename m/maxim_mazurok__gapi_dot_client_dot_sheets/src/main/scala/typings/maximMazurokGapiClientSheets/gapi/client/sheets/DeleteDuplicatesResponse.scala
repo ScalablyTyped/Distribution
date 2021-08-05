@@ -11,19 +11,15 @@ trait DeleteDuplicatesResponse extends StObject {
 }
 object DeleteDuplicatesResponse {
   
-  @scala.inline
-  def apply(): DeleteDuplicatesResponse = {
+  inline def apply(): DeleteDuplicatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDuplicatesResponse]
   }
   
-  @scala.inline
-  implicit class DeleteDuplicatesResponseMutableBuilder[Self <: DeleteDuplicatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDuplicatesResponse](x: Self) {
     
-    @scala.inline
-    def setDuplicatesRemovedCount(value: Double): Self = StObject.set(x, "duplicatesRemovedCount", value.asInstanceOf[js.Any])
+    inline def setDuplicatesRemovedCount(value: Double): Self = StObject.set(x, "duplicatesRemovedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicatesRemovedCountUndefined: Self = StObject.set(x, "duplicatesRemovedCount", js.undefined)
+    inline def setDuplicatesRemovedCountUndefined: Self = StObject.set(x, "duplicatesRemovedCount", js.undefined)
   }
 }

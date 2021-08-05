@@ -25,19 +25,19 @@ object truncatedFormatMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTruncatedFormat(): Unit = js.native
     
-    var contentDiv: js.Any = js.native
+    /* private */ var contentDiv: js.Any = js.native
     
-    var handleContentDivRef: js.Any = js.native
+    /* private */ var handleContentDivRef: js.Any = js.native
     
-    var handlePopoverClose: js.Any = js.native
+    /* private */ var handlePopoverClose: js.Any = js.native
     
-    var handlePopoverOpen: js.Any = js.native
+    /* private */ var handlePopoverOpen: js.Any = js.native
     
-    var renderPopover: js.Any = js.native
+    /* private */ var renderPopover: js.Any = js.native
     
-    var setTruncationState: js.Any = js.native
+    /* private */ var setTruncationState: js.Any = js.native
     
-    var shouldShowPopover: js.Any = js.native
+    /* private */ var shouldShowPopover: js.Any = js.native
   }
   /* static members */
   object TruncatedFormat {
@@ -49,14 +49,12 @@ object truncatedFormatMod {
     @JSImport("@blueprintjs/table/lib/esm/cell/formats/truncatedFormat", "TruncatedFormat.defaultProps")
     @js.native
     def defaultProps: ITruncatedFormatProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ITruncatedFormatProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ITruncatedFormatProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/cell/formats/truncatedFormat", "TruncatedFormat.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -130,8 +128,7 @@ object truncatedFormatMod {
   }
   object ITrucatedFormateMeasureByApproximateOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       approximateCharWidth: Double,
       approximateLineHeight: Double,
       cellHorizontalPadding: Double,
@@ -141,20 +138,15 @@ object truncatedFormatMod {
       __obj.asInstanceOf[ITrucatedFormateMeasureByApproximateOptions]
     }
     
-    @scala.inline
-    implicit class ITrucatedFormateMeasureByApproximateOptionsMutableBuilder[Self <: ITrucatedFormateMeasureByApproximateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITrucatedFormateMeasureByApproximateOptions](x: Self) {
       
-      @scala.inline
-      def setApproximateCharWidth(value: Double): Self = StObject.set(x, "approximateCharWidth", value.asInstanceOf[js.Any])
+      inline def setApproximateCharWidth(value: Double): Self = StObject.set(x, "approximateCharWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApproximateLineHeight(value: Double): Self = StObject.set(x, "approximateLineHeight", value.asInstanceOf[js.Any])
+      inline def setApproximateLineHeight(value: Double): Self = StObject.set(x, "approximateLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellHorizontalPadding(value: Double): Self = StObject.set(x, "cellHorizontalPadding", value.asInstanceOf[js.Any])
+      inline def setCellHorizontalPadding(value: Double): Self = StObject.set(x, "cellHorizontalPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumBufferLines(value: Double): Self = StObject.set(x, "numBufferLines", value.asInstanceOf[js.Any])
+      inline def setNumBufferLines(value: Double): Self = StObject.set(x, "numBufferLines", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,68 +218,48 @@ object truncatedFormatMod {
   }
   object ITruncatedFormatProps {
     
-    @scala.inline
-    def apply(): ITruncatedFormatProps = {
+    inline def apply(): ITruncatedFormatProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITruncatedFormatProps]
     }
     
-    @scala.inline
-    implicit class ITruncatedFormatPropsMutableBuilder[Self <: ITruncatedFormatProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITruncatedFormatProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDetectTruncation(value: Boolean): Self = StObject.set(x, "detectTruncation", value.asInstanceOf[js.Any])
+      inline def setDetectTruncation(value: Boolean): Self = StObject.set(x, "detectTruncation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectTruncationUndefined: Self = StObject.set(x, "detectTruncation", js.undefined)
+      inline def setDetectTruncationUndefined: Self = StObject.set(x, "detectTruncation", js.undefined)
       
-      @scala.inline
-      def setMeasureByApproxOptions(value: ITrucatedFormateMeasureByApproximateOptions): Self = StObject.set(x, "measureByApproxOptions", value.asInstanceOf[js.Any])
+      inline def setMeasureByApproxOptions(value: ITrucatedFormateMeasureByApproximateOptions): Self = StObject.set(x, "measureByApproxOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasureByApproxOptionsUndefined: Self = StObject.set(x, "measureByApproxOptions", js.undefined)
+      inline def setMeasureByApproxOptionsUndefined: Self = StObject.set(x, "measureByApproxOptions", js.undefined)
       
-      @scala.inline
-      def setParentCellHeight(value: Double): Self = StObject.set(x, "parentCellHeight", value.asInstanceOf[js.Any])
+      inline def setParentCellHeight(value: Double): Self = StObject.set(x, "parentCellHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentCellHeightUndefined: Self = StObject.set(x, "parentCellHeight", js.undefined)
+      inline def setParentCellHeightUndefined: Self = StObject.set(x, "parentCellHeight", js.undefined)
       
-      @scala.inline
-      def setParentCellWidth(value: Double): Self = StObject.set(x, "parentCellWidth", value.asInstanceOf[js.Any])
+      inline def setParentCellWidth(value: Double): Self = StObject.set(x, "parentCellWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentCellWidthUndefined: Self = StObject.set(x, "parentCellWidth", js.undefined)
+      inline def setParentCellWidthUndefined: Self = StObject.set(x, "parentCellWidth", js.undefined)
       
-      @scala.inline
-      def setPreformatted(value: Boolean): Self = StObject.set(x, "preformatted", value.asInstanceOf[js.Any])
+      inline def setPreformatted(value: Boolean): Self = StObject.set(x, "preformatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreformattedUndefined: Self = StObject.set(x, "preformatted", js.undefined)
+      inline def setPreformattedUndefined: Self = StObject.set(x, "preformatted", js.undefined)
       
-      @scala.inline
-      def setShowPopover(value: TruncatedPopoverMode): Self = StObject.set(x, "showPopover", value.asInstanceOf[js.Any])
+      inline def setShowPopover(value: TruncatedPopoverMode): Self = StObject.set(x, "showPopover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPopoverUndefined: Self = StObject.set(x, "showPopover", js.undefined)
+      inline def setShowPopoverUndefined: Self = StObject.set(x, "showPopover", js.undefined)
       
-      @scala.inline
-      def setTruncateLength(value: Double): Self = StObject.set(x, "truncateLength", value.asInstanceOf[js.Any])
+      inline def setTruncateLength(value: Double): Self = StObject.set(x, "truncateLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateLengthUndefined: Self = StObject.set(x, "truncateLength", js.undefined)
+      inline def setTruncateLengthUndefined: Self = StObject.set(x, "truncateLength", js.undefined)
       
-      @scala.inline
-      def setTruncationSuffix(value: String): Self = StObject.set(x, "truncationSuffix", value.asInstanceOf[js.Any])
+      inline def setTruncationSuffix(value: String): Self = StObject.set(x, "truncationSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncationSuffixUndefined: Self = StObject.set(x, "truncationSuffix", js.undefined)
+      inline def setTruncationSuffixUndefined: Self = StObject.set(x, "truncationSuffix", js.undefined)
     }
   }
   
@@ -299,26 +271,20 @@ object truncatedFormatMod {
   }
   object ITruncatedFormatState {
     
-    @scala.inline
-    def apply(): ITruncatedFormatState = {
+    inline def apply(): ITruncatedFormatState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITruncatedFormatState]
     }
     
-    @scala.inline
-    implicit class ITruncatedFormatStateMutableBuilder[Self <: ITruncatedFormatState] (val x: Self) extends AnyVal {
+    extension [Self <: ITruncatedFormatState](x: Self) {
       
-      @scala.inline
-      def setIsPopoverOpen(value: Boolean): Self = StObject.set(x, "isPopoverOpen", value.asInstanceOf[js.Any])
+      inline def setIsPopoverOpen(value: Boolean): Self = StObject.set(x, "isPopoverOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPopoverOpenUndefined: Self = StObject.set(x, "isPopoverOpen", js.undefined)
+      inline def setIsPopoverOpenUndefined: Self = StObject.set(x, "isPopoverOpen", js.undefined)
       
-      @scala.inline
-      def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
+      inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTruncatedUndefined: Self = StObject.set(x, "isTruncated", js.undefined)
+      inline def setIsTruncatedUndefined: Self = StObject.set(x, "isTruncated", js.undefined)
     }
   }
 }

@@ -14,18 +14,18 @@ object remoteBuilderMod {
   class RemoteBuilder protected () extends StObject {
     def this(packager: PlatformPackager[js.Any]) = this()
     
-    var _build: js.Any = js.native
+    /* private */ var _build: js.Any = js.native
     
-    var artifactInfoToArtifactCreatedEvent: js.Any = js.native
+    /* private */ var artifactInfoToArtifactCreatedEvent: js.Any = js.native
     
     def build(): js.Promise[js.Any] = js.native
     
-    var buildStarted: js.Any = js.native
+    /* private */ var buildStarted: js.Any = js.native
     
     val packager: PlatformPackager[js.Any] = js.native
     
     def scheduleBuild(target: Target, arch: Arch, unpackedDirectory: String): Unit = js.native
     
-    val toBuild: js.Any = js.native
+    /* private */ val toBuild: js.Any = js.native
   }
 }

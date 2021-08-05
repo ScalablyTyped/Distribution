@@ -16,8 +16,7 @@ trait CaseSensitive extends StObject {
 }
 object CaseSensitive {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caseSensitive: scala.Double,
     none: scala.Double,
     objectTooLarge: scala.Double,
@@ -27,19 +26,14 @@ object CaseSensitive {
     __obj.asInstanceOf[CaseSensitive]
   }
   
-  @scala.inline
-  implicit class CaseSensitiveMutableBuilder[Self <: CaseSensitive] (val x: Self) extends AnyVal {
+  extension [Self <: CaseSensitive](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: scala.Double): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: scala.Double): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTooLarge(value: scala.Double): Self = StObject.set(x, "objectTooLarge", value.asInstanceOf[js.Any])
+    inline def setObjectTooLarge(value: scala.Double): Self = StObject.set(x, "objectTooLarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

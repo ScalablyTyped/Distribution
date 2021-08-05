@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("git-semver-tags", JSImport.Namespace)
   @js.native
@@ -43,38 +41,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLernaTags(value: Boolean): Self = StObject.set(x, "lernaTags", value.asInstanceOf[js.Any])
+      inline def setLernaTags(value: Boolean): Self = StObject.set(x, "lernaTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLernaTagsUndefined: Self = StObject.set(x, "lernaTags", js.undefined)
+      inline def setLernaTagsUndefined: Self = StObject.set(x, "lernaTags", js.undefined)
       
-      @scala.inline
-      def setSkipUnstable(value: Boolean): Self = StObject.set(x, "skipUnstable", value.asInstanceOf[js.Any])
+      inline def setSkipUnstable(value: Boolean): Self = StObject.set(x, "skipUnstable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUnstableUndefined: Self = StObject.set(x, "skipUnstable", js.undefined)
+      inline def setSkipUnstableUndefined: Self = StObject.set(x, "skipUnstable", js.undefined)
       
-      @scala.inline
-      def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
+      inline def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
+      inline def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
       
-      @scala.inline
-      def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     }
   }
 }

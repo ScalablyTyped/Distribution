@@ -10,7 +10,7 @@ trait XmlSchema extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.XmlSchema_typekey")
+  /* private */ @JSName("Excel.XmlSchema_typekey")
   var ExcelDotXmlSchema_typekey: XmlSchema
   
   val Name: String
@@ -23,8 +23,7 @@ trait XmlSchema extends StObject {
 }
 object XmlSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotXmlSchema_typekey: XmlSchema,
@@ -38,28 +37,20 @@ object XmlSchema {
     __obj.asInstanceOf[XmlSchema]
   }
   
-  @scala.inline
-  implicit class XmlSchemaMutableBuilder[Self <: XmlSchema] (val x: Self) extends AnyVal {
+  extension [Self <: XmlSchema](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotXmlSchema_typekey(value: XmlSchema): Self = StObject.set(x, "Excel.XmlSchema_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotXmlSchema_typekey(value: XmlSchema): Self = StObject.set(x, "Excel.XmlSchema_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: XmlNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: XmlNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
+    inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
   }
 }

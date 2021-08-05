@@ -14,22 +14,17 @@ trait BottomPosition extends StObject {
 }
 object BottomPosition {
   
-  @scala.inline
-  def apply(bottom: Double, position: String, right: Double): BottomPosition = {
+  inline def apply(bottom: Double, position: String, right: Double): BottomPosition = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomPosition]
   }
   
-  @scala.inline
-  implicit class BottomPositionMutableBuilder[Self <: BottomPosition] (val x: Self) extends AnyVal {
+  extension [Self <: BottomPosition](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

@@ -11,34 +11,29 @@ object framesyncStrings {
   sealed trait postRender
     extends StObject
        with StepId
-  @scala.inline
-  def postRender: postRender = "postRender".asInstanceOf[postRender]
+  inline def postRender: postRender = "postRender".asInstanceOf[postRender]
   
   @js.native
   sealed trait preRender
     extends StObject
        with StepId
-  @scala.inline
-  def preRender: preRender = "preRender".asInstanceOf[preRender]
+  inline def preRender: preRender = "preRender".asInstanceOf[preRender]
   
   @js.native
   sealed trait read
     extends StObject
        with StepId
-  @scala.inline
-  def read: read = "read".asInstanceOf[read]
+  inline def read: read = "read".asInstanceOf[read]
   
   @js.native
   sealed trait render
     extends StObject
        with StepId
-  @scala.inline
-  def render: render = "render".asInstanceOf[render]
+  inline def render: render = "render".asInstanceOf[render]
   
   @js.native
   sealed trait update
     extends StObject
        with StepId
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
 }

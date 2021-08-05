@@ -28,34 +28,25 @@ trait VirtualGatewayListener extends StObject {
 }
 object VirtualGatewayListener {
   
-  @scala.inline
-  def apply(portMapping: VirtualGatewayPortMapping): VirtualGatewayListener = {
+  inline def apply(portMapping: VirtualGatewayPortMapping): VirtualGatewayListener = {
     val __obj = js.Dynamic.literal(portMapping = portMapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayListener]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayListenerMutableBuilder[Self <: VirtualGatewayListener] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayListener](x: Self) {
     
-    @scala.inline
-    def setConnectionPool(value: VirtualGatewayConnectionPool): Self = StObject.set(x, "connectionPool", value.asInstanceOf[js.Any])
+    inline def setConnectionPool(value: VirtualGatewayConnectionPool): Self = StObject.set(x, "connectionPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPoolUndefined: Self = StObject.set(x, "connectionPool", js.undefined)
+    inline def setConnectionPoolUndefined: Self = StObject.set(x, "connectionPool", js.undefined)
     
-    @scala.inline
-    def setHealthCheck(value: VirtualGatewayHealthCheckPolicy): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: VirtualGatewayHealthCheckPolicy): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
-    @scala.inline
-    def setPortMapping(value: VirtualGatewayPortMapping): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
+    inline def setPortMapping(value: VirtualGatewayPortMapping): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTls(value: VirtualGatewayListenerTls): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: VirtualGatewayListenerTls): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

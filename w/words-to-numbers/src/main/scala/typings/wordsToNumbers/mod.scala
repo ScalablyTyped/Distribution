@@ -11,13 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(text: String): String | Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String | Double | Null]
-  @scala.inline
-  def default(text: String, options: Fuzzy): String | Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Double | Null]
+  inline def default(text: String): String | Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String | Double | Null]
+  inline def default(text: String, options: Fuzzy): String | Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Double | Null]
   
-  @scala.inline
-  def wordsToNumbers(text: String): String | Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("wordsToNumbers")(text.asInstanceOf[js.Any]).asInstanceOf[String | Double | Null]
-  @scala.inline
-  def wordsToNumbers(text: String, options: Fuzzy): String | Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("wordsToNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Double | Null]
+  inline def wordsToNumbers(text: String): String | Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("wordsToNumbers")(text.asInstanceOf[js.Any]).asInstanceOf[String | Double | Null]
+  inline def wordsToNumbers(text: String, options: Fuzzy): String | Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("wordsToNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Double | Null]
 }

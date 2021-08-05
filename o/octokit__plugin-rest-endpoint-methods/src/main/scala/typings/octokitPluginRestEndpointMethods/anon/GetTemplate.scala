@@ -12,19 +12,15 @@ trait GetTemplate extends StObject {
 }
 object GetTemplate {
   
-  @scala.inline
-  def apply(getAllTemplates: `710`, getTemplate: `711`): GetTemplate = {
+  inline def apply(getAllTemplates: `710`, getTemplate: `711`): GetTemplate = {
     val __obj = js.Dynamic.literal(getAllTemplates = getAllTemplates.asInstanceOf[js.Any], getTemplate = getTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplate]
   }
   
-  @scala.inline
-  implicit class GetTemplateMutableBuilder[Self <: GetTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: GetTemplate](x: Self) {
     
-    @scala.inline
-    def setGetAllTemplates(value: `710`): Self = StObject.set(x, "getAllTemplates", value.asInstanceOf[js.Any])
+    inline def setGetAllTemplates(value: `710`): Self = StObject.set(x, "getAllTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTemplate(value: `711`): Self = StObject.set(x, "getTemplate", value.asInstanceOf[js.Any])
+    inline def setGetTemplate(value: `711`): Self = StObject.set(x, "getTemplate", value.asInstanceOf[js.Any])
   }
 }

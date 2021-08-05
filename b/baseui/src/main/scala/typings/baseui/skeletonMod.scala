@@ -31,30 +31,24 @@ object skeletonMod {
   }
   object SkeletonOverrides {
     
-    @scala.inline
-    def apply(): SkeletonOverrides = {
+    inline def apply(): SkeletonOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkeletonOverrides]
     }
     
-    @scala.inline
-    implicit class SkeletonOverridesMutableBuilder[Self <: SkeletonOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setRow(
+      inline def setRow(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "Row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "Row", js.undefined)
     }
   }
   
@@ -72,44 +66,32 @@ object skeletonMod {
   }
   object SkeletonPropsT {
     
-    @scala.inline
-    def apply(): SkeletonPropsT = {
+    inline def apply(): SkeletonPropsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkeletonPropsT]
     }
     
-    @scala.inline
-    implicit class SkeletonPropsTMutableBuilder[Self <: SkeletonPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonPropsT](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: SkeletonOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: SkeletonOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

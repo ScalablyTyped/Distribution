@@ -12,8 +12,7 @@ trait BootstrapCheckBoxEventMap
 }
 object BootstrapCheckBoxEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkedChanged: ProcessingModeEventArgs,
     gotFocus: EventArgs,
     init: EventArgs,
@@ -25,10 +24,8 @@ object BootstrapCheckBoxEventMap {
     __obj.asInstanceOf[BootstrapCheckBoxEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapCheckBoxEventMapMutableBuilder[Self <: BootstrapCheckBoxEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapCheckBoxEventMap](x: Self) {
     
-    @scala.inline
-    def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
+    inline def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
   }
 }

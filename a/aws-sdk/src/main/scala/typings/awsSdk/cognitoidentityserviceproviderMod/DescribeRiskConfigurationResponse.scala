@@ -13,16 +13,13 @@ trait DescribeRiskConfigurationResponse extends StObject {
 }
 object DescribeRiskConfigurationResponse {
   
-  @scala.inline
-  def apply(RiskConfiguration: RiskConfigurationType): DescribeRiskConfigurationResponse = {
+  inline def apply(RiskConfiguration: RiskConfigurationType): DescribeRiskConfigurationResponse = {
     val __obj = js.Dynamic.literal(RiskConfiguration = RiskConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRiskConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRiskConfigurationResponseMutableBuilder[Self <: DescribeRiskConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRiskConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setRiskConfiguration(value: RiskConfigurationType): Self = StObject.set(x, "RiskConfiguration", value.asInstanceOf[js.Any])
+    inline def setRiskConfiguration(value: RiskConfigurationType): Self = StObject.set(x, "RiskConfiguration", value.asInstanceOf[js.Any])
   }
 }

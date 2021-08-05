@@ -21,8 +21,7 @@ trait UsbControlRequestType extends StObject {
 }
 object UsbControlRequestType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asByte: Double,
     controlTransferType: UsbControlTransferType,
     direction: UsbTransferDirection,
@@ -32,19 +31,14 @@ object UsbControlRequestType {
     __obj.asInstanceOf[UsbControlRequestType]
   }
   
-  @scala.inline
-  implicit class UsbControlRequestTypeMutableBuilder[Self <: UsbControlRequestType] (val x: Self) extends AnyVal {
+  extension [Self <: UsbControlRequestType](x: Self) {
     
-    @scala.inline
-    def setAsByte(value: Double): Self = StObject.set(x, "asByte", value.asInstanceOf[js.Any])
+    inline def setAsByte(value: Double): Self = StObject.set(x, "asByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlTransferType(value: UsbControlTransferType): Self = StObject.set(x, "controlTransferType", value.asInstanceOf[js.Any])
+    inline def setControlTransferType(value: UsbControlTransferType): Self = StObject.set(x, "controlTransferType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: UsbTransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: UsbTransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient(value: UsbControlRecipient): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: UsbControlRecipient): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
   }
 }

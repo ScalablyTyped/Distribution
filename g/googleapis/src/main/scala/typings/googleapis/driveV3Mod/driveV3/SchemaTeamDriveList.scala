@@ -31,34 +31,25 @@ trait SchemaTeamDriveList extends StObject {
 }
 object SchemaTeamDriveList {
   
-  @scala.inline
-  def apply(): SchemaTeamDriveList = {
+  inline def apply(): SchemaTeamDriveList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTeamDriveList]
   }
   
-  @scala.inline
-  implicit class SchemaTeamDriveListMutableBuilder[Self <: SchemaTeamDriveList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTeamDriveList](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTeamDrives(value: js.Array[SchemaTeamDrive]): Self = StObject.set(x, "teamDrives", value.asInstanceOf[js.Any])
+    inline def setTeamDrives(value: js.Array[SchemaTeamDrive]): Self = StObject.set(x, "teamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDrivesUndefined: Self = StObject.set(x, "teamDrives", js.undefined)
+    inline def setTeamDrivesUndefined: Self = StObject.set(x, "teamDrives", js.undefined)
     
-    @scala.inline
-    def setTeamDrivesVarargs(value: SchemaTeamDrive*): Self = StObject.set(x, "teamDrives", js.Array(value :_*))
+    inline def setTeamDrivesVarargs(value: SchemaTeamDrive*): Self = StObject.set(x, "teamDrives", js.Array(value :_*))
   }
 }

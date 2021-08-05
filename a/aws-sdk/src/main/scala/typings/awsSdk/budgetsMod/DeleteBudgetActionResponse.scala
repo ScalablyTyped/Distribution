@@ -14,22 +14,17 @@ trait DeleteBudgetActionResponse extends StObject {
 }
 object DeleteBudgetActionResponse {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Action: Action, BudgetName: BudgetName): DeleteBudgetActionResponse = {
+  inline def apply(AccountId: AccountId, Action: Action, BudgetName: BudgetName): DeleteBudgetActionResponse = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Action = Action.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBudgetActionResponse]
   }
   
-  @scala.inline
-  implicit class DeleteBudgetActionResponseMutableBuilder[Self <: DeleteBudgetActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBudgetActionResponse](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
   }
 }

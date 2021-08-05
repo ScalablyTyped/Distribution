@@ -56,8 +56,7 @@ trait ChartTitle
 }
 object ChartTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     GluePoints: XIndexContainer,
     Hyperlink: String,
@@ -112,16 +111,12 @@ object ChartTitle {
     __obj.asInstanceOf[ChartTitle]
   }
   
-  @scala.inline
-  implicit class ChartTitleMutableBuilder[Self <: ChartTitle] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTitle](x: Self) {
     
-    @scala.inline
-    def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
+    inline def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRotation(value: Double): Self = StObject.set(x, "TextRotation", value.asInstanceOf[js.Any])
+    inline def setTextRotation(value: Double): Self = StObject.set(x, "TextRotation", value.asInstanceOf[js.Any])
   }
 }

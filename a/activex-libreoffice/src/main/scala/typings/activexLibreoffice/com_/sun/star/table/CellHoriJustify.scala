@@ -23,28 +23,23 @@ trait CellHoriJustify extends StObject
 object CellHoriJustify {
   
   /** contents are justified to the cell width. */
-  @scala.inline
-  def BLOCK: `4` = 4.asInstanceOf[`4`]
+  inline def BLOCK: `4` = 4.asInstanceOf[`4`]
   
   /**
     * contents are horizontally centered.
     *
     * contents are aligned to the vertical middle of the cell.
     */
-  @scala.inline
-  def CENTER: `2` = 2.asInstanceOf[`2`]
+  inline def CENTER: `2` = 2.asInstanceOf[`2`]
   
   /** contents are aligned to the left edge of the cell. */
-  @scala.inline
-  def LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def LEFT: `1` = 1.asInstanceOf[`1`]
   
   /** contents are repeated to fill the cell. */
-  @scala.inline
-  def REPEAT: `5` = 5.asInstanceOf[`5`]
+  inline def REPEAT: `5` = 5.asInstanceOf[`5`]
   
   /** contents are aligned to the right edge of the cell. */
-  @scala.inline
-  def RIGHT: `3` = 3.asInstanceOf[`3`]
+  inline def RIGHT: `3` = 3.asInstanceOf[`3`]
   
   /**
     * default alignment is used (left for numbers, right for text).
@@ -53,6 +48,5 @@ object CellHoriJustify {
     *
     * default alignment is used.
     */
-  @scala.inline
-  def STANDARD: `0` = 0.asInstanceOf[`0`]
+  inline def STANDARD: `0` = 0.asInstanceOf[`0`]
 }

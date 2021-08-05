@@ -40,8 +40,7 @@ trait FeatureLayerCapabilitiesData
 }
 object FeatureLayerCapabilitiesData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     isVersioned: Boolean,
@@ -54,19 +53,14 @@ object FeatureLayerCapabilitiesData {
     __obj.asInstanceOf[FeatureLayerCapabilitiesData]
   }
   
-  @scala.inline
-  implicit class FeatureLayerCapabilitiesDataMutableBuilder[Self <: FeatureLayerCapabilitiesData] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerCapabilitiesData](x: Self) {
     
-    @scala.inline
-    def setIsVersioned(value: Boolean): Self = StObject.set(x, "isVersioned", value.asInstanceOf[js.Any])
+    inline def setIsVersioned(value: Boolean): Self = StObject.set(x, "isVersioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
+    inline def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsM(value: Boolean): Self = StObject.set(x, "supportsM", value.asInstanceOf[js.Any])
+    inline def setSupportsM(value: Boolean): Self = StObject.set(x, "supportsM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
+    inline def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
   }
 }

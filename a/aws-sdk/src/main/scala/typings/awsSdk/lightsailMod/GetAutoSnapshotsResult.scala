@@ -23,34 +23,25 @@ trait GetAutoSnapshotsResult extends StObject {
 }
 object GetAutoSnapshotsResult {
   
-  @scala.inline
-  def apply(): GetAutoSnapshotsResult = {
+  inline def apply(): GetAutoSnapshotsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAutoSnapshotsResult]
   }
   
-  @scala.inline
-  implicit class GetAutoSnapshotsResultMutableBuilder[Self <: GetAutoSnapshotsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetAutoSnapshotsResult](x: Self) {
     
-    @scala.inline
-    def setAutoSnapshots(value: AutoSnapshotDetailsList): Self = StObject.set(x, "autoSnapshots", value.asInstanceOf[js.Any])
+    inline def setAutoSnapshots(value: AutoSnapshotDetailsList): Self = StObject.set(x, "autoSnapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSnapshotsUndefined: Self = StObject.set(x, "autoSnapshots", js.undefined)
+    inline def setAutoSnapshotsUndefined: Self = StObject.set(x, "autoSnapshots", js.undefined)
     
-    @scala.inline
-    def setAutoSnapshotsVarargs(value: AutoSnapshotDetails*): Self = StObject.set(x, "autoSnapshots", js.Array(value :_*))
+    inline def setAutoSnapshotsVarargs(value: AutoSnapshotDetails*): Self = StObject.set(x, "autoSnapshots", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

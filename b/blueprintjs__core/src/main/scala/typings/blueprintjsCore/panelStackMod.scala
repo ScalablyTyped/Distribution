@@ -21,13 +21,13 @@ object panelStackMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MPanelStack(prevProps: IPanelStackProps, prevState: IPanelStackState): Unit = js.native
     
-    var handlePanelClose: js.Any = js.native
+    /* private */ var handlePanelClose: js.Any = js.native
     
-    var handlePanelOpen: js.Any = js.native
+    /* private */ var handlePanelOpen: js.Any = js.native
     
-    var renderPanel: js.Any = js.native
+    /* private */ var renderPanel: js.Any = js.native
     
-    var renderPanels: js.Any = js.native
+    /* private */ var renderPanels: js.Any = js.native
   }
   
   trait IPanelStackProps
@@ -76,53 +76,38 @@ object panelStackMod {
   }
   object IPanelStackProps {
     
-    @scala.inline
-    def apply(): IPanelStackProps = {
+    inline def apply(): IPanelStackProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPanelStackProps]
     }
     
-    @scala.inline
-    implicit class IPanelStackPropsMutableBuilder[Self <: IPanelStackProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPanelStackProps](x: Self) {
       
-      @scala.inline
-      def setInitialPanel(value: IPanel[js.Any]): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
+      inline def setInitialPanel(value: IPanel[js.Any]): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPanelUndefined: Self = StObject.set(x, "initialPanel", js.undefined)
+      inline def setInitialPanelUndefined: Self = StObject.set(x, "initialPanel", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* removedPanel */ IPanel[js.Object] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* removedPanel */ IPanel[js.Object] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: /* addedPanel */ IPanel[js.Object] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setOnOpen(value: /* addedPanel */ IPanel[js.Object] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setRenderActivePanelOnly(value: Boolean): Self = StObject.set(x, "renderActivePanelOnly", value.asInstanceOf[js.Any])
+      inline def setRenderActivePanelOnly(value: Boolean): Self = StObject.set(x, "renderActivePanelOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderActivePanelOnlyUndefined: Self = StObject.set(x, "renderActivePanelOnly", js.undefined)
+      inline def setRenderActivePanelOnlyUndefined: Self = StObject.set(x, "renderActivePanelOnly", js.undefined)
       
-      @scala.inline
-      def setShowPanelHeader(value: Boolean): Self = StObject.set(x, "showPanelHeader", value.asInstanceOf[js.Any])
+      inline def setShowPanelHeader(value: Boolean): Self = StObject.set(x, "showPanelHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPanelHeaderUndefined: Self = StObject.set(x, "showPanelHeader", js.undefined)
+      inline def setShowPanelHeaderUndefined: Self = StObject.set(x, "showPanelHeader", js.undefined)
       
-      @scala.inline
-      def setStack(value: js.Array[IPanel[js.Any]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[IPanel[js.Any]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
-      @scala.inline
-      def setStackVarargs(value: IPanel[js.Any]*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: IPanel[js.Any]*): Self = StObject.set(x, "stack", js.Array(value :_*))
     }
   }
   
@@ -136,23 +121,18 @@ object panelStackMod {
   }
   object IPanelStackState {
     
-    @scala.inline
-    def apply(direction: push | pop, stack: js.Array[IPanel[js.Object]]): IPanelStackState = {
+    inline def apply(direction: push | pop, stack: js.Array[IPanel[js.Object]]): IPanelStackState = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPanelStackState]
     }
     
-    @scala.inline
-    implicit class IPanelStackStateMutableBuilder[Self <: IPanelStackState] (val x: Self) extends AnyVal {
+    extension [Self <: IPanelStackState](x: Self) {
       
-      @scala.inline
-      def setDirection(value: push | pop): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: push | pop): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Array[IPanel[js.Object]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[IPanel[js.Object]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: IPanel[js.Object]*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: IPanel[js.Object]*): Self = StObject.set(x, "stack", js.Array(value :_*))
     }
   }
 }

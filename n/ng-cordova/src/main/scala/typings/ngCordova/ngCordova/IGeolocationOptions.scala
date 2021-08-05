@@ -14,31 +14,23 @@ trait IGeolocationOptions extends StObject {
 }
 object IGeolocationOptions {
   
-  @scala.inline
-  def apply(): IGeolocationOptions = {
+  inline def apply(): IGeolocationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeolocationOptions]
   }
   
-  @scala.inline
-  implicit class IGeolocationOptionsMutableBuilder[Self <: IGeolocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGeolocationOptions](x: Self) {
     
-    @scala.inline
-    def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
+    inline def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
+    inline def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
     
-    @scala.inline
-    def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
+    inline def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
+    inline def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

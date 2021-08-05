@@ -18,22 +18,17 @@ trait ParamInfo extends StObject {
 }
 object ParamInfo {
   
-  @scala.inline
-  def apply(aMode: ParamMode, aName: String, aType: XIdlClass[js.Any]): ParamInfo = {
+  inline def apply(aMode: ParamMode, aName: String, aType: XIdlClass[js.Any]): ParamInfo = {
     val __obj = js.Dynamic.literal(aMode = aMode.asInstanceOf[js.Any], aName = aName.asInstanceOf[js.Any], aType = aType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamInfo]
   }
   
-  @scala.inline
-  implicit class ParamInfoMutableBuilder[Self <: ParamInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ParamInfo](x: Self) {
     
-    @scala.inline
-    def setAMode(value: ParamMode): Self = StObject.set(x, "aMode", value.asInstanceOf[js.Any])
+    inline def setAMode(value: ParamMode): Self = StObject.set(x, "aMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
+    inline def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAType(value: XIdlClass[js.Any]): Self = StObject.set(x, "aType", value.asInstanceOf[js.Any])
+    inline def setAType(value: XIdlClass[js.Any]): Self = StObject.set(x, "aType", value.asInstanceOf[js.Any])
   }
 }

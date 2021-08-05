@@ -20,20 +20,17 @@ object layoutMod {
     @JSImport("@storybook/api/dist/modules/layout", "ActiveTabs.ADDONS")
     @js.native
     def ADDONS: addons = js.native
-    @scala.inline
-    def ADDONS_=(x: addons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDONS")(x.asInstanceOf[js.Any])
+    inline def ADDONS_=(x: addons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDONS")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/api/dist/modules/layout", "ActiveTabs.CANVAS")
     @js.native
     def CANVAS: canvas = js.native
-    @scala.inline
-    def CANVAS_=(x: canvas): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANVAS")(x.asInstanceOf[js.Any])
+    inline def CANVAS_=(x: canvas): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANVAS")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/api/dist/modules/layout", "ActiveTabs.SIDEBAR")
     @js.native
     def SIDEBAR: sidebar = js.native
-    @scala.inline
-    def SIDEBAR_=(x: sidebar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDEBAR")(x.asInstanceOf[js.Any])
+    inline def SIDEBAR_=(x: sidebar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDEBAR")(x.asInstanceOf[js.Any])
   }
   
   object focusableUIElements {
@@ -45,20 +42,17 @@ object layoutMod {
     @JSImport("@storybook/api/dist/modules/layout", "focusableUIElements.storyListMenu")
     @js.native
     def storyListMenu: String = js.native
-    @scala.inline
-    def storyListMenu_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyListMenu")(x.asInstanceOf[js.Any])
+    inline def storyListMenu_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyListMenu")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/api/dist/modules/layout", "focusableUIElements.storyPanelRoot")
     @js.native
     def storyPanelRoot: String = js.native
-    @scala.inline
-    def storyPanelRoot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyPanelRoot")(x.asInstanceOf[js.Any])
+    inline def storyPanelRoot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyPanelRoot")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/api/dist/modules/layout", "focusableUIElements.storySearchField")
     @js.native
     def storySearchField: String = js.native
-    @scala.inline
-    def storySearchField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storySearchField")(x.asInstanceOf[js.Any])
+    inline def storySearchField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storySearchField")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/api/dist/modules/layout", "init")
@@ -73,14 +67,11 @@ object layoutMod {
   trait ActiveTabsType extends StObject
   object ActiveTabsType {
     
-    @scala.inline
-    def addons: typings.storybookApi.storybookApiStrings.addons = "addons".asInstanceOf[typings.storybookApi.storybookApiStrings.addons]
+    inline def addons: typings.storybookApi.storybookApiStrings.addons = "addons".asInstanceOf[typings.storybookApi.storybookApiStrings.addons]
     
-    @scala.inline
-    def canvas: typings.storybookApi.storybookApiStrings.canvas = "canvas".asInstanceOf[typings.storybookApi.storybookApiStrings.canvas]
+    inline def canvas: typings.storybookApi.storybookApiStrings.canvas = "canvas".asInstanceOf[typings.storybookApi.storybookApiStrings.canvas]
     
-    @scala.inline
-    def sidebar: typings.storybookApi.storybookApiStrings.sidebar = "sidebar".asInstanceOf[typings.storybookApi.storybookApiStrings.sidebar]
+    inline def sidebar: typings.storybookApi.storybookApiStrings.sidebar = "sidebar".asInstanceOf[typings.storybookApi.storybookApiStrings.sidebar]
   }
   
   trait Layout extends StObject {
@@ -99,8 +90,7 @@ object layoutMod {
   }
   object Layout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initialActive: ActiveTabsType,
       isFullscreen: Boolean,
       isToolshown: Boolean,
@@ -112,26 +102,19 @@ object layoutMod {
       __obj.asInstanceOf[Layout]
     }
     
-    @scala.inline
-    implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+    extension [Self <: Layout](x: Self) {
       
-      @scala.inline
-      def setInitialActive(value: ActiveTabsType): Self = StObject.set(x, "initialActive", value.asInstanceOf[js.Any])
+      inline def setInitialActive(value: ActiveTabsType): Self = StObject.set(x, "initialActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+      inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
+      inline def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelPosition(value: PanelPositions): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
+      inline def setPanelPosition(value: PanelPositions): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNav(value: Boolean): Self = StObject.set(x, "showNav", value.asInstanceOf[js.Any])
+      inline def setShowNav(value: Boolean): Self = StObject.set(x, "showNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPanel(value: Boolean): Self = StObject.set(x, "showPanel", value.asInstanceOf[js.Any])
+      inline def setShowPanel(value: Boolean): Self = StObject.set(x, "showPanel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,11 +125,9 @@ object layoutMod {
   trait PanelPositions extends StObject
   object PanelPositions {
     
-    @scala.inline
-    def bottom: typings.storybookApi.storybookApiStrings.bottom = "bottom".asInstanceOf[typings.storybookApi.storybookApiStrings.bottom]
+    inline def bottom: typings.storybookApi.storybookApiStrings.bottom = "bottom".asInstanceOf[typings.storybookApi.storybookApiStrings.bottom]
     
-    @scala.inline
-    def right: typings.storybookApi.storybookApiStrings.right = "right".asInstanceOf[typings.storybookApi.storybookApiStrings.right]
+    inline def right: typings.storybookApi.storybookApiStrings.right = "right".asInstanceOf[typings.storybookApi.storybookApiStrings.right]
   }
   
   @js.native
@@ -182,29 +163,22 @@ object layoutMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(layout: Layout, theme: ThemeVars, ui: UI): SubState = {
+    inline def apply(layout: Layout, theme: ThemeVars, ui: UI): SubState = {
       val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
+      inline def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
+      inline def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,35 +196,26 @@ object layoutMod {
   }
   object UI {
     
-    @scala.inline
-    def apply(docsMode: Boolean, enableShortcuts: Boolean, sidebarAnimations: Boolean): UI = {
+    inline def apply(docsMode: Boolean, enableShortcuts: Boolean, sidebarAnimations: Boolean): UI = {
       val __obj = js.Dynamic.literal(docsMode = docsMode.asInstanceOf[js.Any], enableShortcuts = enableShortcuts.asInstanceOf[js.Any], sidebarAnimations = sidebarAnimations.asInstanceOf[js.Any])
       __obj.asInstanceOf[UI]
     }
     
-    @scala.inline
-    implicit class UIMutableBuilder[Self <: UI] (val x: Self) extends AnyVal {
+    extension [Self <: UI](x: Self) {
       
-      @scala.inline
-      def setDocsMode(value: Boolean): Self = StObject.set(x, "docsMode", value.asInstanceOf[js.Any])
+      inline def setDocsMode(value: Boolean): Self = StObject.set(x, "docsMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableShortcuts(value: Boolean): Self = StObject.set(x, "enableShortcuts", value.asInstanceOf[js.Any])
+      inline def setEnableShortcuts(value: Boolean): Self = StObject.set(x, "enableShortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSidebarAnimations(value: Boolean): Self = StObject.set(x, "sidebarAnimations", value.asInstanceOf[js.Any])
+      inline def setSidebarAnimations(value: Boolean): Self = StObject.set(x, "sidebarAnimations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -274,8 +239,7 @@ object layoutMod {
   }
   object UIOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addonPanelInRight: Boolean,
       goFullScreen: Boolean,
       showAddonPanel: Boolean,
@@ -285,44 +249,31 @@ object layoutMod {
       __obj.asInstanceOf[UIOptions]
     }
     
-    @scala.inline
-    implicit class UIOptionsMutableBuilder[Self <: UIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIOptions](x: Self) {
       
-      @scala.inline
-      def setAddonPanelInRight(value: Boolean): Self = StObject.set(x, "addonPanelInRight", value.asInstanceOf[js.Any])
+      inline def setAddonPanelInRight(value: Boolean): Self = StObject.set(x, "addonPanelInRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoFullScreen(value: Boolean): Self = StObject.set(x, "goFullScreen", value.asInstanceOf[js.Any])
+      inline def setGoFullScreen(value: Boolean): Self = StObject.set(x, "goFullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
+      inline def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
+      inline def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
       
-      @scala.inline
-      def setShowAddonPanel(value: Boolean): Self = StObject.set(x, "showAddonPanel", value.asInstanceOf[js.Any])
+      inline def setShowAddonPanel(value: Boolean): Self = StObject.set(x, "showAddonPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowStoriesPanel(value: Boolean): Self = StObject.set(x, "showStoriesPanel", value.asInstanceOf[js.Any])
+      inline def setShowStoriesPanel(value: Boolean): Self = StObject.set(x, "showStoriesPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

@@ -12,16 +12,13 @@ trait PickImplclassName extends StObject {
 }
 object PickImplclassName {
   
-  @scala.inline
-  def apply(className: ClassNameSettings): PickImplclassName = {
+  inline def apply(className: ClassNameSettings): PickImplclassName = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclassName]
   }
   
-  @scala.inline
-  implicit class PickImplclassNameMutableBuilder[Self <: PickImplclassName] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplclassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
   }
 }

@@ -45,99 +45,69 @@ trait GeoJSONSourceOptions extends StObject {
 }
 object GeoJSONSourceOptions {
   
-  @scala.inline
-  def apply(): GeoJSONSourceOptions = {
+  inline def apply(): GeoJSONSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoJSONSourceOptions]
   }
   
-  @scala.inline
-  implicit class GeoJSONSourceOptionsMutableBuilder[Self <: GeoJSONSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONSourceOptions](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
-    @scala.inline
-    def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
-    @scala.inline
-    def setCluster(value: Double | Boolean): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Double | Boolean): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterMaxZoom(value: Double): Self = StObject.set(x, "clusterMaxZoom", value.asInstanceOf[js.Any])
+    inline def setClusterMaxZoom(value: Double): Self = StObject.set(x, "clusterMaxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterMaxZoomUndefined: Self = StObject.set(x, "clusterMaxZoom", js.undefined)
+    inline def setClusterMaxZoomUndefined: Self = StObject.set(x, "clusterMaxZoom", js.undefined)
     
-    @scala.inline
-    def setClusterMinPoints(value: Double): Self = StObject.set(x, "clusterMinPoints", value.asInstanceOf[js.Any])
+    inline def setClusterMinPoints(value: Double): Self = StObject.set(x, "clusterMinPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterMinPointsUndefined: Self = StObject.set(x, "clusterMinPoints", js.undefined)
+    inline def setClusterMinPointsUndefined: Self = StObject.set(x, "clusterMinPoints", js.undefined)
     
-    @scala.inline
-    def setClusterProperties(value: js.Object): Self = StObject.set(x, "clusterProperties", value.asInstanceOf[js.Any])
+    inline def setClusterProperties(value: js.Object): Self = StObject.set(x, "clusterProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterPropertiesUndefined: Self = StObject.set(x, "clusterProperties", js.undefined)
+    inline def setClusterPropertiesUndefined: Self = StObject.set(x, "clusterProperties", js.undefined)
     
-    @scala.inline
-    def setClusterRadius(value: Double): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
+    inline def setClusterRadius(value: Double): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
+    inline def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGenerateId(value: Boolean): Self = StObject.set(x, "generateId", value.asInstanceOf[js.Any])
+    inline def setGenerateId(value: Boolean): Self = StObject.set(x, "generateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
+    inline def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
     
-    @scala.inline
-    def setLineMetrics(value: Boolean): Self = StObject.set(x, "lineMetrics", value.asInstanceOf[js.Any])
+    inline def setLineMetrics(value: Boolean): Self = StObject.set(x, "lineMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineMetricsUndefined: Self = StObject.set(x, "lineMetrics", js.undefined)
+    inline def setLineMetricsUndefined: Self = StObject.set(x, "lineMetrics", js.undefined)
     
-    @scala.inline
-    def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
+    inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
+    inline def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
     
-    @scala.inline
-    def setPromoteId(value: PromoteIdSpecification): Self = StObject.set(x, "promoteId", value.asInstanceOf[js.Any])
+    inline def setPromoteId(value: PromoteIdSpecification): Self = StObject.set(x, "promoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromoteIdUndefined: Self = StObject.set(x, "promoteId", js.undefined)
+    inline def setPromoteIdUndefined: Self = StObject.set(x, "promoteId", js.undefined)
     
-    @scala.inline
-    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
   }
 }

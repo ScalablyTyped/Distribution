@@ -26,49 +26,35 @@ trait InitMarkerClusterOption extends StObject {
 }
 object InitMarkerClusterOption {
   
-  @scala.inline
-  def apply(): InitMarkerClusterOption = {
+  inline def apply(): InitMarkerClusterOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitMarkerClusterOption]
   }
   
-  @scala.inline
-  implicit class InitMarkerClusterOptionMutableBuilder[Self <: InitMarkerClusterOption] (val x: Self) extends AnyVal {
+  extension [Self <: InitMarkerClusterOption](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setEnableDefaultStyle(value: Boolean): Self = StObject.set(x, "enableDefaultStyle", value.asInstanceOf[js.Any])
+    inline def setEnableDefaultStyle(value: Boolean): Self = StObject.set(x, "enableDefaultStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDefaultStyleUndefined: Self = StObject.set(x, "enableDefaultStyle", js.undefined)
+    inline def setEnableDefaultStyleUndefined: Self = StObject.set(x, "enableDefaultStyle", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setGridSize(value: Boolean): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    inline def setGridSize(value: Boolean): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
+    inline def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setZoomOnClick(value: Boolean): Self = StObject.set(x, "zoomOnClick", value.asInstanceOf[js.Any])
+    inline def setZoomOnClick(value: Boolean): Self = StObject.set(x, "zoomOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOnClickUndefined: Self = StObject.set(x, "zoomOnClick", js.undefined)
+    inline def setZoomOnClickUndefined: Self = StObject.set(x, "zoomOnClick", js.undefined)
   }
 }

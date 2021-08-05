@@ -13,16 +13,13 @@ trait GetDiskSnapshotRequest extends StObject {
 }
 object GetDiskSnapshotRequest {
   
-  @scala.inline
-  def apply(diskSnapshotName: ResourceName): GetDiskSnapshotRequest = {
+  inline def apply(diskSnapshotName: ResourceName): GetDiskSnapshotRequest = {
     val __obj = js.Dynamic.literal(diskSnapshotName = diskSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDiskSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class GetDiskSnapshotRequestMutableBuilder[Self <: GetDiskSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiskSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setDiskSnapshotName(value: ResourceName): Self = StObject.set(x, "diskSnapshotName", value.asInstanceOf[js.Any])
+    inline def setDiskSnapshotName(value: ResourceName): Self = StObject.set(x, "diskSnapshotName", value.asInstanceOf[js.Any])
   }
 }

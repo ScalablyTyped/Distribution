@@ -18,40 +18,29 @@ trait PatchVersionsParams extends StObject {
 }
 object PatchVersionsParams {
   
-  @scala.inline
-  def apply(name: String): PatchVersionsParams = {
+  inline def apply(name: String): PatchVersionsParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchVersionsParams]
   }
   
-  @scala.inline
-  implicit class PatchVersionsParamsMutableBuilder[Self <: PatchVersionsParams] (val x: Self) extends AnyVal {
+  extension [Self <: PatchVersionsParams](x: Self) {
     
-    @scala.inline
-    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDueDate(value: String): Self = StObject.set(x, "releaseDueDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDueDate(value: String): Self = StObject.set(x, "releaseDueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDueDateUndefined: Self = StObject.set(x, "releaseDueDate", js.undefined)
+    inline def setReleaseDueDateUndefined: Self = StObject.set(x, "releaseDueDate", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

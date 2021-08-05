@@ -18,22 +18,17 @@ trait ScheduledActionFilter extends StObject {
 }
 object ScheduledActionFilter {
   
-  @scala.inline
-  def apply(Name: ScheduledActionFilterName, Values: ValueStringList): ScheduledActionFilter = {
+  inline def apply(Name: ScheduledActionFilterName, Values: ValueStringList): ScheduledActionFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledActionFilter]
   }
   
-  @scala.inline
-  implicit class ScheduledActionFilterMutableBuilder[Self <: ScheduledActionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledActionFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: ScheduledActionFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ScheduledActionFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -12,25 +12,19 @@ trait AppointmentData extends StObject {
 }
 object AppointmentData {
   
-  @scala.inline
-  def apply(): AppointmentData = {
+  inline def apply(): AppointmentData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppointmentData]
   }
   
-  @scala.inline
-  implicit class AppointmentDataMutableBuilder[Self <: AppointmentData] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentData](x: Self) {
     
-    @scala.inline
-    def setAppointmentData(value: js.Any): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
+    inline def setAppointmentData(value: js.Any): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentDataUndefined: Self = StObject.set(x, "appointmentData", js.undefined)
+    inline def setAppointmentDataUndefined: Self = StObject.set(x, "appointmentData", js.undefined)
     
-    @scala.inline
-    def setTargetedAppointmentData(value: js.Any): Self = StObject.set(x, "targetedAppointmentData", value.asInstanceOf[js.Any])
+    inline def setTargetedAppointmentData(value: js.Any): Self = StObject.set(x, "targetedAppointmentData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedAppointmentDataUndefined: Self = StObject.set(x, "targetedAppointmentData", js.undefined)
+    inline def setTargetedAppointmentDataUndefined: Self = StObject.set(x, "targetedAppointmentData", js.undefined)
   }
 }

@@ -34,19 +34,15 @@ trait StreamPlayError extends StObject {
 }
 object StreamPlayError {
   
-  @scala.inline
-  def apply(reason: String, status: String): StreamPlayError = {
+  inline def apply(reason: String, status: String): StreamPlayError = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamPlayError]
   }
   
-  @scala.inline
-  implicit class StreamPlayErrorMutableBuilder[Self <: StreamPlayError] (val x: Self) extends AnyVal {
+  extension [Self <: StreamPlayError](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

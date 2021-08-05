@@ -26,31 +26,23 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testFileNode extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testFileNode {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testFileNode = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testFileNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testFileNodeMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testFileNode] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testFileNode](x: Self) {
     
-    @scala.inline
-    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
+    inline def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
+    inline def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -93,118 +93,81 @@ trait InputTemplate extends StObject {
 }
 object InputTemplate {
   
-  @scala.inline
-  def apply(): InputTemplate = {
+  inline def apply(): InputTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputTemplate]
   }
   
-  @scala.inline
-  implicit class InputTemplateMutableBuilder[Self <: InputTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: InputTemplate](x: Self) {
     
-    @scala.inline
-    def setAudioSelectorGroups(value: mapOfAudioSelectorGroup): Self = StObject.set(x, "AudioSelectorGroups", value.asInstanceOf[js.Any])
+    inline def setAudioSelectorGroups(value: mapOfAudioSelectorGroup): Self = StObject.set(x, "AudioSelectorGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSelectorGroupsUndefined: Self = StObject.set(x, "AudioSelectorGroups", js.undefined)
+    inline def setAudioSelectorGroupsUndefined: Self = StObject.set(x, "AudioSelectorGroups", js.undefined)
     
-    @scala.inline
-    def setAudioSelectors(value: mapOfAudioSelector): Self = StObject.set(x, "AudioSelectors", value.asInstanceOf[js.Any])
+    inline def setAudioSelectors(value: mapOfAudioSelector): Self = StObject.set(x, "AudioSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSelectorsUndefined: Self = StObject.set(x, "AudioSelectors", js.undefined)
+    inline def setAudioSelectorsUndefined: Self = StObject.set(x, "AudioSelectors", js.undefined)
     
-    @scala.inline
-    def setCaptionSelectors(value: mapOfCaptionSelector): Self = StObject.set(x, "CaptionSelectors", value.asInstanceOf[js.Any])
+    inline def setCaptionSelectors(value: mapOfCaptionSelector): Self = StObject.set(x, "CaptionSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionSelectorsUndefined: Self = StObject.set(x, "CaptionSelectors", js.undefined)
+    inline def setCaptionSelectorsUndefined: Self = StObject.set(x, "CaptionSelectors", js.undefined)
     
-    @scala.inline
-    def setCrop(value: Rectangle): Self = StObject.set(x, "Crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: Rectangle): Self = StObject.set(x, "Crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropUndefined: Self = StObject.set(x, "Crop", js.undefined)
+    inline def setCropUndefined: Self = StObject.set(x, "Crop", js.undefined)
     
-    @scala.inline
-    def setDeblockFilter(value: InputDeblockFilter): Self = StObject.set(x, "DeblockFilter", value.asInstanceOf[js.Any])
+    inline def setDeblockFilter(value: InputDeblockFilter): Self = StObject.set(x, "DeblockFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeblockFilterUndefined: Self = StObject.set(x, "DeblockFilter", js.undefined)
+    inline def setDeblockFilterUndefined: Self = StObject.set(x, "DeblockFilter", js.undefined)
     
-    @scala.inline
-    def setDenoiseFilter(value: InputDenoiseFilter): Self = StObject.set(x, "DenoiseFilter", value.asInstanceOf[js.Any])
+    inline def setDenoiseFilter(value: InputDenoiseFilter): Self = StObject.set(x, "DenoiseFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenoiseFilterUndefined: Self = StObject.set(x, "DenoiseFilter", js.undefined)
+    inline def setDenoiseFilterUndefined: Self = StObject.set(x, "DenoiseFilter", js.undefined)
     
-    @scala.inline
-    def setFilterEnable(value: InputFilterEnable): Self = StObject.set(x, "FilterEnable", value.asInstanceOf[js.Any])
+    inline def setFilterEnable(value: InputFilterEnable): Self = StObject.set(x, "FilterEnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterEnableUndefined: Self = StObject.set(x, "FilterEnable", js.undefined)
+    inline def setFilterEnableUndefined: Self = StObject.set(x, "FilterEnable", js.undefined)
     
-    @scala.inline
-    def setFilterStrength(value: integerMinNegative5Max5): Self = StObject.set(x, "FilterStrength", value.asInstanceOf[js.Any])
+    inline def setFilterStrength(value: integerMinNegative5Max5): Self = StObject.set(x, "FilterStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterStrengthUndefined: Self = StObject.set(x, "FilterStrength", js.undefined)
+    inline def setFilterStrengthUndefined: Self = StObject.set(x, "FilterStrength", js.undefined)
     
-    @scala.inline
-    def setImageInserter(value: ImageInserter): Self = StObject.set(x, "ImageInserter", value.asInstanceOf[js.Any])
+    inline def setImageInserter(value: ImageInserter): Self = StObject.set(x, "ImageInserter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageInserterUndefined: Self = StObject.set(x, "ImageInserter", js.undefined)
+    inline def setImageInserterUndefined: Self = StObject.set(x, "ImageInserter", js.undefined)
     
-    @scala.inline
-    def setInputClippings(value: listOfInputClipping): Self = StObject.set(x, "InputClippings", value.asInstanceOf[js.Any])
+    inline def setInputClippings(value: listOfInputClipping): Self = StObject.set(x, "InputClippings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputClippingsUndefined: Self = StObject.set(x, "InputClippings", js.undefined)
+    inline def setInputClippingsUndefined: Self = StObject.set(x, "InputClippings", js.undefined)
     
-    @scala.inline
-    def setInputClippingsVarargs(value: InputClipping*): Self = StObject.set(x, "InputClippings", js.Array(value :_*))
+    inline def setInputClippingsVarargs(value: InputClipping*): Self = StObject.set(x, "InputClippings", js.Array(value :_*))
     
-    @scala.inline
-    def setInputScanType(value: InputScanType): Self = StObject.set(x, "InputScanType", value.asInstanceOf[js.Any])
+    inline def setInputScanType(value: InputScanType): Self = StObject.set(x, "InputScanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputScanTypeUndefined: Self = StObject.set(x, "InputScanType", js.undefined)
+    inline def setInputScanTypeUndefined: Self = StObject.set(x, "InputScanType", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Rectangle): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Rectangle): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
     
-    @scala.inline
-    def setProgramNumber(value: integerMin1Max2147483647): Self = StObject.set(x, "ProgramNumber", value.asInstanceOf[js.Any])
+    inline def setProgramNumber(value: integerMin1Max2147483647): Self = StObject.set(x, "ProgramNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramNumberUndefined: Self = StObject.set(x, "ProgramNumber", js.undefined)
+    inline def setProgramNumberUndefined: Self = StObject.set(x, "ProgramNumber", js.undefined)
     
-    @scala.inline
-    def setPsiControl(value: InputPsiControl): Self = StObject.set(x, "PsiControl", value.asInstanceOf[js.Any])
+    inline def setPsiControl(value: InputPsiControl): Self = StObject.set(x, "PsiControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPsiControlUndefined: Self = StObject.set(x, "PsiControl", js.undefined)
+    inline def setPsiControlUndefined: Self = StObject.set(x, "PsiControl", js.undefined)
     
-    @scala.inline
-    def setTimecodeSource(value: InputTimecodeSource): Self = StObject.set(x, "TimecodeSource", value.asInstanceOf[js.Any])
+    inline def setTimecodeSource(value: InputTimecodeSource): Self = StObject.set(x, "TimecodeSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeSourceUndefined: Self = StObject.set(x, "TimecodeSource", js.undefined)
+    inline def setTimecodeSourceUndefined: Self = StObject.set(x, "TimecodeSource", js.undefined)
     
-    @scala.inline
-    def setTimecodeStart(value: stringMin11Max11Pattern01D20305D205D): Self = StObject.set(x, "TimecodeStart", value.asInstanceOf[js.Any])
+    inline def setTimecodeStart(value: stringMin11Max11Pattern01D20305D205D): Self = StObject.set(x, "TimecodeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeStartUndefined: Self = StObject.set(x, "TimecodeStart", js.undefined)
+    inline def setTimecodeStartUndefined: Self = StObject.set(x, "TimecodeStart", js.undefined)
     
-    @scala.inline
-    def setVideoSelector(value: VideoSelector): Self = StObject.set(x, "VideoSelector", value.asInstanceOf[js.Any])
+    inline def setVideoSelector(value: VideoSelector): Self = StObject.set(x, "VideoSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSelectorUndefined: Self = StObject.set(x, "VideoSelector", js.undefined)
+    inline def setVideoSelectorUndefined: Self = StObject.set(x, "VideoSelector", js.undefined)
   }
 }

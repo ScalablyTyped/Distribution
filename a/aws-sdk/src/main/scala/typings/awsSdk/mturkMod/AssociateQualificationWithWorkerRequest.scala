@@ -28,31 +28,23 @@ trait AssociateQualificationWithWorkerRequest extends StObject {
 }
 object AssociateQualificationWithWorkerRequest {
   
-  @scala.inline
-  def apply(QualificationTypeId: EntityId, WorkerId: CustomerId): AssociateQualificationWithWorkerRequest = {
+  inline def apply(QualificationTypeId: EntityId, WorkerId: CustomerId): AssociateQualificationWithWorkerRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any], WorkerId = WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateQualificationWithWorkerRequest]
   }
   
-  @scala.inline
-  implicit class AssociateQualificationWithWorkerRequestMutableBuilder[Self <: AssociateQualificationWithWorkerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateQualificationWithWorkerRequest](x: Self) {
     
-    @scala.inline
-    def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "IntegerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "IntegerValue", js.undefined)
     
-    @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotification(value: Boolean): Self = StObject.set(x, "SendNotification", value.asInstanceOf[js.Any])
+    inline def setSendNotification(value: Boolean): Self = StObject.set(x, "SendNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotificationUndefined: Self = StObject.set(x, "SendNotification", js.undefined)
+    inline def setSendNotificationUndefined: Self = StObject.set(x, "SendNotification", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
   }
 }

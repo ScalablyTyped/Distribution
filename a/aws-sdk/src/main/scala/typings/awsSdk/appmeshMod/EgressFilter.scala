@@ -13,17 +13,14 @@ trait EgressFilter extends StObject {
 }
 object EgressFilter {
   
-  @scala.inline
-  def apply(`type`: EgressFilterType): EgressFilter = {
+  inline def apply(`type`: EgressFilterType): EgressFilter = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EgressFilter]
   }
   
-  @scala.inline
-  implicit class EgressFilterMutableBuilder[Self <: EgressFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EgressFilter](x: Self) {
     
-    @scala.inline
-    def setType(value: EgressFilterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EgressFilterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

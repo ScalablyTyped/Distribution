@@ -32,25 +32,19 @@ trait CELLULAR extends StObject {
 }
 object CELLULAR {
   
-  @scala.inline
-  def apply(): CELLULAR = {
+  inline def apply(): CELLULAR = {
     val __obj = js.Dynamic.literal(CELLULAR = 2, DISCONNECTED = 0, ETHERNET = 3, WIFI = 1)
     __obj.asInstanceOf[CELLULAR]
   }
   
-  @scala.inline
-  implicit class CELLULARMutableBuilder[Self <: CELLULAR] (val x: Self) extends AnyVal {
+  extension [Self <: CELLULAR](x: Self) {
     
-    @scala.inline
-    def setCELLULAR(value: `2`): Self = StObject.set(x, "CELLULAR", value.asInstanceOf[js.Any])
+    inline def setCELLULAR(value: `2`): Self = StObject.set(x, "CELLULAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDISCONNECTED(value: `0`): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
+    inline def setDISCONNECTED(value: `0`): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETHERNET(value: `3`): Self = StObject.set(x, "ETHERNET", value.asInstanceOf[js.Any])
+    inline def setETHERNET(value: `3`): Self = StObject.set(x, "ETHERNET", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIFI(value: `1`): Self = StObject.set(x, "WIFI", value.asInstanceOf[js.Any])
+    inline def setWIFI(value: `1`): Self = StObject.set(x, "WIFI", value.asInstanceOf[js.Any])
   }
 }

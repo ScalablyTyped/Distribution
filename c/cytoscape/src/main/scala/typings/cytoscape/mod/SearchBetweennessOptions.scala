@@ -24,25 +24,19 @@ trait SearchBetweennessOptions extends StObject {
 }
 object SearchBetweennessOptions {
   
-  @scala.inline
-  def apply(): SearchBetweennessOptions = {
+  inline def apply(): SearchBetweennessOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBetweennessOptions]
   }
   
-  @scala.inline
-  implicit class SearchBetweennessOptionsMutableBuilder[Self <: SearchBetweennessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBetweennessOptions](x: Self) {
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    inline def setWeight(value: /* edge */ EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

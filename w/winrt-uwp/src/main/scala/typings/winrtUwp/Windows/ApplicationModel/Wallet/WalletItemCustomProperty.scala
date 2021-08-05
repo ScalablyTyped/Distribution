@@ -24,8 +24,7 @@ trait WalletItemCustomProperty extends StObject {
 }
 object WalletItemCustomProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoDetectLinks: Boolean,
     detailViewPosition: WalletDetailViewPosition,
     name: String,
@@ -36,22 +35,16 @@ object WalletItemCustomProperty {
     __obj.asInstanceOf[WalletItemCustomProperty]
   }
   
-  @scala.inline
-  implicit class WalletItemCustomPropertyMutableBuilder[Self <: WalletItemCustomProperty] (val x: Self) extends AnyVal {
+  extension [Self <: WalletItemCustomProperty](x: Self) {
     
-    @scala.inline
-    def setAutoDetectLinks(value: Boolean): Self = StObject.set(x, "autoDetectLinks", value.asInstanceOf[js.Any])
+    inline def setAutoDetectLinks(value: Boolean): Self = StObject.set(x, "autoDetectLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailViewPosition(value: WalletDetailViewPosition): Self = StObject.set(x, "detailViewPosition", value.asInstanceOf[js.Any])
+    inline def setDetailViewPosition(value: WalletDetailViewPosition): Self = StObject.set(x, "detailViewPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryViewPosition(value: WalletSummaryViewPosition): Self = StObject.set(x, "summaryViewPosition", value.asInstanceOf[js.Any])
+    inline def setSummaryViewPosition(value: WalletSummaryViewPosition): Self = StObject.set(x, "summaryViewPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

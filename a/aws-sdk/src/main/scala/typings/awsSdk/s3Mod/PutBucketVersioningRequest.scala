@@ -33,37 +33,27 @@ trait PutBucketVersioningRequest extends StObject {
 }
 object PutBucketVersioningRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, VersioningConfiguration: VersioningConfiguration): PutBucketVersioningRequest = {
+  inline def apply(Bucket: BucketName, VersioningConfiguration: VersioningConfiguration): PutBucketVersioningRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], VersioningConfiguration = VersioningConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketVersioningRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketVersioningRequestMutableBuilder[Self <: PutBucketVersioningRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketVersioningRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
+    inline def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
+    inline def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setMFA(value: MFA): Self = StObject.set(x, "MFA", value.asInstanceOf[js.Any])
+    inline def setMFA(value: MFA): Self = StObject.set(x, "MFA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFAUndefined: Self = StObject.set(x, "MFA", js.undefined)
+    inline def setMFAUndefined: Self = StObject.set(x, "MFA", js.undefined)
     
-    @scala.inline
-    def setVersioningConfiguration(value: VersioningConfiguration): Self = StObject.set(x, "VersioningConfiguration", value.asInstanceOf[js.Any])
+    inline def setVersioningConfiguration(value: VersioningConfiguration): Self = StObject.set(x, "VersioningConfiguration", value.asInstanceOf[js.Any])
   }
 }

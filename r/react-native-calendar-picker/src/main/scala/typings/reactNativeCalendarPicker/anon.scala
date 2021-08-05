@@ -18,32 +18,24 @@ object anon {
   }
   object ContainerStyle {
     
-    @scala.inline
-    def apply(): ContainerStyle = {
+    inline def apply(): ContainerStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerStyle]
     }
     
-    @scala.inline
-    implicit class ContainerStyleMutableBuilder[Self <: ContainerStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerStyle](x: Self) {
       
-      @scala.inline
-      def setContainerStyle(value: ViewStyle): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: ViewStyle): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     }
   }
   
@@ -55,26 +47,20 @@ object anon {
   }
   object Style {
     
-    @scala.inline
-    def apply(): Style = {
+    inline def apply(): Style = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Style]
     }
     
-    @scala.inline
-    implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+    extension [Self <: Style](x: Self) {
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     }
   }
 }

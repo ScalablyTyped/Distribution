@@ -17,16 +17,13 @@ trait DoCheck extends StObject {
 }
 object DoCheck {
   
-  @scala.inline
-  def apply(ngDoCheck: () => Unit): DoCheck = {
+  inline def apply(ngDoCheck: () => Unit): DoCheck = {
     val __obj = js.Dynamic.literal(ngDoCheck = js.Any.fromFunction0(ngDoCheck))
     __obj.asInstanceOf[DoCheck]
   }
   
-  @scala.inline
-  implicit class DoCheckMutableBuilder[Self <: DoCheck] (val x: Self) extends AnyVal {
+  extension [Self <: DoCheck](x: Self) {
     
-    @scala.inline
-    def setNgDoCheck(value: () => Unit): Self = StObject.set(x, "ngDoCheck", js.Any.fromFunction0(value))
+    inline def setNgDoCheck(value: () => Unit): Self = StObject.set(x, "ngDoCheck", js.Any.fromFunction0(value))
   }
 }

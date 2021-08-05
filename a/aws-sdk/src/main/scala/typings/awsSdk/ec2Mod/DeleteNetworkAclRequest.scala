@@ -18,22 +18,17 @@ trait DeleteNetworkAclRequest extends StObject {
 }
 object DeleteNetworkAclRequest {
   
-  @scala.inline
-  def apply(NetworkAclId: NetworkAclId): DeleteNetworkAclRequest = {
+  inline def apply(NetworkAclId: NetworkAclId): DeleteNetworkAclRequest = {
     val __obj = js.Dynamic.literal(NetworkAclId = NetworkAclId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNetworkAclRequest]
   }
   
-  @scala.inline
-  implicit class DeleteNetworkAclRequestMutableBuilder[Self <: DeleteNetworkAclRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNetworkAclRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setNetworkAclId(value: NetworkAclId): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
+    inline def setNetworkAclId(value: NetworkAclId): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
   }
 }

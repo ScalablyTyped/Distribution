@@ -14,19 +14,15 @@ trait GoogleCloudDatacatalogV1beta1TableSpec extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1TableSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1TableSpec = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1TableSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1TableSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1TableSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1TableSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1TableSpec](x: Self) {
     
-    @scala.inline
-    def setGroupedEntry(value: String): Self = StObject.set(x, "groupedEntry", value.asInstanceOf[js.Any])
+    inline def setGroupedEntry(value: String): Self = StObject.set(x, "groupedEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedEntryUndefined: Self = StObject.set(x, "groupedEntry", js.undefined)
+    inline def setGroupedEntryUndefined: Self = StObject.set(x, "groupedEntry", js.undefined)
   }
 }

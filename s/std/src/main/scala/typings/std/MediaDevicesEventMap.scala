@@ -10,16 +10,13 @@ trait MediaDevicesEventMap extends StObject {
 }
 object MediaDevicesEventMap {
   
-  @scala.inline
-  def apply(devicechange: Event): MediaDevicesEventMap = {
+  inline def apply(devicechange: Event): MediaDevicesEventMap = {
     val __obj = js.Dynamic.literal(devicechange = devicechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaDevicesEventMap]
   }
   
-  @scala.inline
-  implicit class MediaDevicesEventMapMutableBuilder[Self <: MediaDevicesEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MediaDevicesEventMap](x: Self) {
     
-    @scala.inline
-    def setDevicechange(value: Event): Self = StObject.set(x, "devicechange", value.asInstanceOf[js.Any])
+    inline def setDevicechange(value: Event): Self = StObject.set(x, "devicechange", value.asInstanceOf[js.Any])
   }
 }

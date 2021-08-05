@@ -53,56 +53,40 @@ object typesTreatmentResourceMod {
   }
   object TreatmentResource {
     
-    @scala.inline
-    def apply(): TreatmentResource = {
+    inline def apply(): TreatmentResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreatmentResource]
     }
     
-    @scala.inline
-    implicit class TreatmentResourceMutableBuilder[Self <: TreatmentResource] (val x: Self) extends AnyVal {
+    extension [Self <: TreatmentResource](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+      inline def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
+      inline def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
       
-      @scala.inline
-      def setSizePercent(value: Double): Self = StObject.set(x, "SizePercent", value.asInstanceOf[js.Any])
+      inline def setSizePercent(value: Double): Self = StObject.set(x, "SizePercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizePercentUndefined: Self = StObject.set(x, "SizePercent", js.undefined)
+      inline def setSizePercentUndefined: Self = StObject.set(x, "SizePercent", js.undefined)
       
-      @scala.inline
-      def setState(value: CampaignState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: CampaignState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
       
-      @scala.inline
-      def setTreatmentDescription(value: String): Self = StObject.set(x, "TreatmentDescription", value.asInstanceOf[js.Any])
+      inline def setTreatmentDescription(value: String): Self = StObject.set(x, "TreatmentDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreatmentDescriptionUndefined: Self = StObject.set(x, "TreatmentDescription", js.undefined)
+      inline def setTreatmentDescriptionUndefined: Self = StObject.set(x, "TreatmentDescription", js.undefined)
       
-      @scala.inline
-      def setTreatmentName(value: String): Self = StObject.set(x, "TreatmentName", value.asInstanceOf[js.Any])
+      inline def setTreatmentName(value: String): Self = StObject.set(x, "TreatmentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreatmentNameUndefined: Self = StObject.set(x, "TreatmentName", js.undefined)
+      inline def setTreatmentNameUndefined: Self = StObject.set(x, "TreatmentName", js.undefined)
     }
   }
   
@@ -130,32 +114,24 @@ object typesTreatmentResourceMod {
   }
   object UnmarshalledTreatmentResource {
     
-    @scala.inline
-    def apply(): UnmarshalledTreatmentResource = {
+    inline def apply(): UnmarshalledTreatmentResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledTreatmentResource]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTreatmentResourceMutableBuilder[Self <: UnmarshalledTreatmentResource] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTreatmentResource](x: Self) {
       
-      @scala.inline
-      def setMessageConfiguration(value: UnmarshalledMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+      inline def setMessageConfiguration(value: UnmarshalledMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
+      inline def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: UnmarshalledSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: UnmarshalledSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
       
-      @scala.inline
-      def setState(value: UnmarshalledCampaignState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: UnmarshalledCampaignState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     }
   }
 }

@@ -27,8 +27,7 @@ trait XFootnotesSupplier
 }
 object XFootnotesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FootnoteSettings: XPropertySet,
     Footnotes: XIndexAccess,
     acquire: () => Unit,
@@ -41,19 +40,14 @@ object XFootnotesSupplier {
     __obj.asInstanceOf[XFootnotesSupplier]
   }
   
-  @scala.inline
-  implicit class XFootnotesSupplierMutableBuilder[Self <: XFootnotesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XFootnotesSupplier](x: Self) {
     
-    @scala.inline
-    def setFootnoteSettings(value: XPropertySet): Self = StObject.set(x, "FootnoteSettings", value.asInstanceOf[js.Any])
+    inline def setFootnoteSettings(value: XPropertySet): Self = StObject.set(x, "FootnoteSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnotes(value: XIndexAccess): Self = StObject.set(x, "Footnotes", value.asInstanceOf[js.Any])
+    inline def setFootnotes(value: XIndexAccess): Self = StObject.set(x, "Footnotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFootnoteSettings(value: () => XPropertySet): Self = StObject.set(x, "getFootnoteSettings", js.Any.fromFunction0(value))
+    inline def setGetFootnoteSettings(value: () => XPropertySet): Self = StObject.set(x, "getFootnoteSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFootnotes(value: () => XIndexAccess): Self = StObject.set(x, "getFootnotes", js.Any.fromFunction0(value))
+    inline def setGetFootnotes(value: () => XIndexAccess): Self = StObject.set(x, "getFootnotes", js.Any.fromFunction0(value))
   }
 }

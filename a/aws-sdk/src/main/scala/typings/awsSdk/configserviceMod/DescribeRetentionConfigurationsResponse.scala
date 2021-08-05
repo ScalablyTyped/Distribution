@@ -18,28 +18,21 @@ trait DescribeRetentionConfigurationsResponse extends StObject {
 }
 object DescribeRetentionConfigurationsResponse {
   
-  @scala.inline
-  def apply(): DescribeRetentionConfigurationsResponse = {
+  inline def apply(): DescribeRetentionConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRetentionConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRetentionConfigurationsResponseMutableBuilder[Self <: DescribeRetentionConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRetentionConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRetentionConfigurations(value: RetentionConfigurationList): Self = StObject.set(x, "RetentionConfigurations", value.asInstanceOf[js.Any])
+    inline def setRetentionConfigurations(value: RetentionConfigurationList): Self = StObject.set(x, "RetentionConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionConfigurationsUndefined: Self = StObject.set(x, "RetentionConfigurations", js.undefined)
+    inline def setRetentionConfigurationsUndefined: Self = StObject.set(x, "RetentionConfigurations", js.undefined)
     
-    @scala.inline
-    def setRetentionConfigurationsVarargs(value: RetentionConfiguration*): Self = StObject.set(x, "RetentionConfigurations", js.Array(value :_*))
+    inline def setRetentionConfigurationsVarargs(value: RetentionConfiguration*): Self = StObject.set(x, "RetentionConfigurations", js.Array(value :_*))
   }
 }

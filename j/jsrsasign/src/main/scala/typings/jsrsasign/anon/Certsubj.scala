@@ -13,16 +13,13 @@ trait Certsubj
 }
 object Certsubj {
   
-  @scala.inline
-  def apply(certsubj: String): Certsubj = {
+  inline def apply(certsubj: String): Certsubj = {
     val __obj = js.Dynamic.literal(certsubj = certsubj.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certsubj]
   }
   
-  @scala.inline
-  implicit class CertsubjMutableBuilder[Self <: Certsubj] (val x: Self) extends AnyVal {
+  extension [Self <: Certsubj](x: Self) {
     
-    @scala.inline
-    def setCertsubj(value: String): Self = StObject.set(x, "certsubj", value.asInstanceOf[js.Any])
+    inline def setCertsubj(value: String): Self = StObject.set(x, "certsubj", value.asInstanceOf[js.Any])
   }
 }

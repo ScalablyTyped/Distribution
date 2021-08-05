@@ -28,40 +28,29 @@ trait OpenTunnelRequest extends StObject {
 }
 object OpenTunnelRequest {
   
-  @scala.inline
-  def apply(): OpenTunnelRequest = {
+  inline def apply(): OpenTunnelRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenTunnelRequest]
   }
   
-  @scala.inline
-  implicit class OpenTunnelRequestMutableBuilder[Self <: OpenTunnelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OpenTunnelRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
+    inline def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
+    inline def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeoutConfig(value: TimeoutConfig): Self = StObject.set(x, "timeoutConfig", value.asInstanceOf[js.Any])
+    inline def setTimeoutConfig(value: TimeoutConfig): Self = StObject.set(x, "timeoutConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutConfigUndefined: Self = StObject.set(x, "timeoutConfig", js.undefined)
+    inline def setTimeoutConfigUndefined: Self = StObject.set(x, "timeoutConfig", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait IGetPolicyOptions extends StObject {
 }
 object IGetPolicyOptions {
   
-  @scala.inline
-  def apply(): IGetPolicyOptions = {
+  inline def apply(): IGetPolicyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetPolicyOptions]
   }
   
-  @scala.inline
-  implicit class IGetPolicyOptionsMutableBuilder[Self <: IGetPolicyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGetPolicyOptions](x: Self) {
     
-    @scala.inline
-    def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
+    inline def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedPolicyVersionNull: Self = StObject.set(x, "requestedPolicyVersion", null)
+    inline def setRequestedPolicyVersionNull: Self = StObject.set(x, "requestedPolicyVersion", null)
     
-    @scala.inline
-    def setRequestedPolicyVersionUndefined: Self = StObject.set(x, "requestedPolicyVersion", js.undefined)
+    inline def setRequestedPolicyVersionUndefined: Self = StObject.set(x, "requestedPolicyVersion", js.undefined)
   }
 }

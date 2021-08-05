@@ -8,11 +8,9 @@ object bluebirdStrings {
   
   @js.native
   sealed trait Object extends StObject
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
+  inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
   sealed trait ResolvableProps extends StObject
-  @scala.inline
-  def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
+  inline def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
 }

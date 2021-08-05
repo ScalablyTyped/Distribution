@@ -14,19 +14,15 @@ trait ChannelGroupCopy
 }
 object ChannelGroupCopy {
   
-  @scala.inline
-  def apply(): ChannelGroupCopy = {
+  inline def apply(): ChannelGroupCopy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelGroupCopy]
   }
   
-  @scala.inline
-  implicit class ChannelGroupCopyMutableBuilder[Self <: ChannelGroupCopy] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelGroupCopy](x: Self) {
     
-    @scala.inline
-    def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
+    inline def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCgidUndefined: Self = StObject.set(x, "cgid", js.undefined)
+    inline def setCgidUndefined: Self = StObject.set(x, "cgid", js.undefined)
   }
 }

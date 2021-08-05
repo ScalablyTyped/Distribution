@@ -35,8 +35,7 @@ trait ResultEvent
 }
 object ResultEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     download: DownloadUploadData,
     interface: InterfaceData,
     isp: String,
@@ -52,37 +51,26 @@ object ResultEvent {
     __obj.asInstanceOf[ResultEvent]
   }
   
-  @scala.inline
-  implicit class ResultEventMutableBuilder[Self <: ResultEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ResultEvent](x: Self) {
     
-    @scala.inline
-    def setDownload(value: DownloadUploadData): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: DownloadUploadData): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterface(value: InterfaceData): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: InterfaceData): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsp(value: String): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
+    inline def setIsp(value: String): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketLoss(value: Double): Self = StObject.set(x, "packetLoss", value.asInstanceOf[js.Any])
+    inline def setPacketLoss(value: Double): Self = StObject.set(x, "packetLoss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPing(value: PingData): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
+    inline def setPing(value: PingData): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Id): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Id): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer(value: ServerData): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: ServerData): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: result): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: result): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload(value: DownloadUploadData): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: DownloadUploadData): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
   }
 }

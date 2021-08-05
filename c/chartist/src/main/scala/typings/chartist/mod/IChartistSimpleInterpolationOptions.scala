@@ -12,19 +12,15 @@ trait IChartistSimpleInterpolationOptions
 }
 object IChartistSimpleInterpolationOptions {
   
-  @scala.inline
-  def apply(): IChartistSimpleInterpolationOptions = {
+  inline def apply(): IChartistSimpleInterpolationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChartistSimpleInterpolationOptions]
   }
   
-  @scala.inline
-  implicit class IChartistSimpleInterpolationOptionsMutableBuilder[Self <: IChartistSimpleInterpolationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistSimpleInterpolationOptions](x: Self) {
     
-    @scala.inline
-    def setDivisor(value: Double): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
+    inline def setDivisor(value: Double): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivisorUndefined: Self = StObject.set(x, "divisor", js.undefined)
+    inline def setDivisorUndefined: Self = StObject.set(x, "divisor", js.undefined)
   }
 }

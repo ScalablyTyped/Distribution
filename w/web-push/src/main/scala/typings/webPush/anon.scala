@@ -17,20 +17,16 @@ object anon {
   }
   object Auth {
     
-    @scala.inline
-    def apply(auth: String, p256dh: String): Auth = {
+    inline def apply(auth: String, p256dh: String): Auth = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], p256dh = p256dh.asInstanceOf[js.Any])
       __obj.asInstanceOf[Auth]
     }
     
-    @scala.inline
-    implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+    extension [Self <: Auth](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP256dh(value: String): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
+      inline def setP256dh(value: String): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,17 +36,14 @@ object anon {
   }
   object Authorization {
     
-    @scala.inline
-    def apply(Authorization: String): Authorization = {
+    inline def apply(Authorization: String): Authorization = {
       val __obj = js.Dynamic.literal(Authorization = Authorization.asInstanceOf[js.Any])
       __obj.asInstanceOf[Authorization]
     }
     
-    @scala.inline
-    implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
+    extension [Self <: Authorization](x: Self) {
       
-      @scala.inline
-      def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,23 +55,18 @@ object anon {
   }
   object AuthorizationCryptoKey {
     
-    @scala.inline
-    def apply(Authorization: String): AuthorizationCryptoKey = {
+    inline def apply(Authorization: String): AuthorizationCryptoKey = {
       val __obj = js.Dynamic.literal(Authorization = Authorization.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizationCryptoKey]
     }
     
-    @scala.inline
-    implicit class AuthorizationCryptoKeyMutableBuilder[Self <: AuthorizationCryptoKey] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationCryptoKey](x: Self) {
       
-      @scala.inline
-      def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCrypto-Key`(value: String): Self = StObject.set(x, "Crypto-Key", value.asInstanceOf[js.Any])
+      inline def `setCrypto-Key`(value: String): Self = StObject.set(x, "Crypto-Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCrypto-KeyUndefined`: Self = StObject.set(x, "Crypto-Key", js.undefined)
+      inline def `setCrypto-KeyUndefined`: Self = StObject.set(x, "Crypto-Key", js.undefined)
     }
   }
   
@@ -90,21 +78,17 @@ object anon {
   }
   object CryptoKey {
     
-    @scala.inline
-    def apply(Authorization: String, `Crypto-Key`: String): CryptoKey = {
+    inline def apply(Authorization: String, `Crypto-Key`: String): CryptoKey = {
       val __obj = js.Dynamic.literal(Authorization = Authorization.asInstanceOf[js.Any])
       __obj.updateDynamic("Crypto-Key")(`Crypto-Key`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CryptoKey]
     }
     
-    @scala.inline
-    implicit class CryptoKeyMutableBuilder[Self <: CryptoKey] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoKey](x: Self) {
       
-      @scala.inline
-      def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCrypto-Key`(value: String): Self = StObject.set(x, "Crypto-Key", value.asInstanceOf[js.Any])
+      inline def `setCrypto-Key`(value: String): Self = StObject.set(x, "Crypto-Key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,23 +103,18 @@ object anon {
   }
   object PrivateKey {
     
-    @scala.inline
-    def apply(privateKey: String, publicKey: String, subject: String): PrivateKey = {
+    inline def apply(privateKey: String, publicKey: String, subject: String): PrivateKey = {
       val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrivateKey]
     }
     
-    @scala.inline
-    implicit class PrivateKeyMutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateKey](x: Self) {
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,32 +133,24 @@ object anon {
   }
   object RequestDetailsbodyBuffer {
     
-    @scala.inline
-    def apply(body: (Buffer | Null) & Buffer, endpoint: String, headers: Headers): RequestDetailsbodyBuffer = {
+    inline def apply(body: (Buffer | Null) & Buffer, endpoint: String, headers: Headers): RequestDetailsbodyBuffer = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST")
       __obj.asInstanceOf[RequestDetailsbodyBuffer]
     }
     
-    @scala.inline
-    implicit class RequestDetailsbodyBufferMutableBuilder[Self <: RequestDetailsbodyBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: RequestDetailsbodyBuffer](x: Self) {
       
-      @scala.inline
-      def setBody(value: (Buffer | Null) & Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: (Buffer | Null) & Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     }
   }
   
@@ -198,32 +169,24 @@ object anon {
   }
   object RequestDetailsbodynull {
     
-    @scala.inline
-    def apply(body: (Buffer | Null) & Null, endpoint: String, headers: Headers): RequestDetailsbodynull = {
+    inline def apply(body: (Buffer | Null) & Null, endpoint: String, headers: Headers): RequestDetailsbodynull = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST")
       __obj.asInstanceOf[RequestDetailsbodynull]
     }
     
-    @scala.inline
-    implicit class RequestDetailsbodynullMutableBuilder[Self <: RequestDetailsbodynull] (val x: Self) extends AnyVal {
+    extension [Self <: RequestDetailsbodynull](x: Self) {
       
-      @scala.inline
-      def setBody(value: (Buffer | Null) & Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: (Buffer | Null) & Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     }
   }
 }

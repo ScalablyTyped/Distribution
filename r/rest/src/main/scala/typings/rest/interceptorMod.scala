@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object interceptorMod {
   
-  @scala.inline
-  def apply[T, U](config: Config[T, U]): Interceptor[T] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Interceptor[T]]
+  inline def apply[T, U](config: Config[T, U]): Interceptor[T] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Interceptor[T]]
   
   @JSImport("rest/interceptor", JSImport.Namespace)
   @js.native
@@ -40,44 +39,32 @@ object interceptorMod {
   }
   object Config {
     
-    @scala.inline
-    def apply[T, U](): Config[T, U] = {
+    inline def apply[T, U](): Config[T, U] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config[T, U]]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[?, ?], T, U] (val x: Self & (Config[T, U])) extends AnyVal {
+    extension [Self <: Config[?, ?], T, U](x: Self & (Config[T, U])) {
       
-      @scala.inline
-      def setError(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      inline def setError(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInit(value: /* config */ T => U): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* config */ T => U): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setRequest(value: (/* request */ Request, /* config */ U, /* meta */ Meta) => Request | Promise[Request]): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
+      inline def setRequest(value: (/* request */ Request, /* config */ U, /* meta */ Meta) => Request | Promise[Request]): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setResponse(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "response", js.Any.fromFunction3(value))
+      inline def setResponse(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "response", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
 }

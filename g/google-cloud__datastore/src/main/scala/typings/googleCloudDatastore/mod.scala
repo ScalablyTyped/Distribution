@@ -139,44 +139,32 @@ object mod {
   }
   object InitOptions {
     
-    @scala.inline
-    def apply(): InitOptions = {
+    inline def apply(): InitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitOptions]
     }
     
-    @scala.inline
-    implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitOptions](x: Self) {
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+      inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
+      inline def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
+      inline def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     }
   }
 }

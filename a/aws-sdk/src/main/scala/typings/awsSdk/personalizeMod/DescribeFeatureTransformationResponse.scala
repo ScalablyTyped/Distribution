@@ -13,19 +13,15 @@ trait DescribeFeatureTransformationResponse extends StObject {
 }
 object DescribeFeatureTransformationResponse {
   
-  @scala.inline
-  def apply(): DescribeFeatureTransformationResponse = {
+  inline def apply(): DescribeFeatureTransformationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFeatureTransformationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeFeatureTransformationResponseMutableBuilder[Self <: DescribeFeatureTransformationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFeatureTransformationResponse](x: Self) {
     
-    @scala.inline
-    def setFeatureTransformation(value: FeatureTransformation): Self = StObject.set(x, "featureTransformation", value.asInstanceOf[js.Any])
+    inline def setFeatureTransformation(value: FeatureTransformation): Self = StObject.set(x, "featureTransformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTransformationUndefined: Self = StObject.set(x, "featureTransformation", js.undefined)
+    inline def setFeatureTransformationUndefined: Self = StObject.set(x, "featureTransformation", js.undefined)
   }
 }

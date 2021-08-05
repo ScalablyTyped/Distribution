@@ -52,61 +52,43 @@ trait SchemaPeerChannelDiagnostics extends StObject {
 }
 object SchemaPeerChannelDiagnostics {
   
-  @scala.inline
-  def apply(): SchemaPeerChannelDiagnostics = {
+  inline def apply(): SchemaPeerChannelDiagnostics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPeerChannelDiagnostics]
   }
   
-  @scala.inline
-  implicit class SchemaPeerChannelDiagnosticsMutableBuilder[Self <: SchemaPeerChannelDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPeerChannelDiagnostics](x: Self) {
     
-    @scala.inline
-    def setBytesReceived(value: SchemaAggregateStats): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    inline def setBytesReceived(value: SchemaAggregateStats): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
+    inline def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
     
-    @scala.inline
-    def setBytesSent(value: SchemaAggregateStats): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: SchemaAggregateStats): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
+    inline def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNumMessagesLost(value: Double): Self = StObject.set(x, "numMessagesLost", value.asInstanceOf[js.Any])
+    inline def setNumMessagesLost(value: Double): Self = StObject.set(x, "numMessagesLost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumMessagesLostUndefined: Self = StObject.set(x, "numMessagesLost", js.undefined)
+    inline def setNumMessagesLostUndefined: Self = StObject.set(x, "numMessagesLost", js.undefined)
     
-    @scala.inline
-    def setNumMessagesReceived(value: Double): Self = StObject.set(x, "numMessagesReceived", value.asInstanceOf[js.Any])
+    inline def setNumMessagesReceived(value: Double): Self = StObject.set(x, "numMessagesReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumMessagesReceivedUndefined: Self = StObject.set(x, "numMessagesReceived", js.undefined)
+    inline def setNumMessagesReceivedUndefined: Self = StObject.set(x, "numMessagesReceived", js.undefined)
     
-    @scala.inline
-    def setNumMessagesSent(value: Double): Self = StObject.set(x, "numMessagesSent", value.asInstanceOf[js.Any])
+    inline def setNumMessagesSent(value: Double): Self = StObject.set(x, "numMessagesSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumMessagesSentUndefined: Self = StObject.set(x, "numMessagesSent", js.undefined)
+    inline def setNumMessagesSentUndefined: Self = StObject.set(x, "numMessagesSent", js.undefined)
     
-    @scala.inline
-    def setNumSendFailures(value: Double): Self = StObject.set(x, "numSendFailures", value.asInstanceOf[js.Any])
+    inline def setNumSendFailures(value: Double): Self = StObject.set(x, "numSendFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumSendFailuresUndefined: Self = StObject.set(x, "numSendFailures", js.undefined)
+    inline def setNumSendFailuresUndefined: Self = StObject.set(x, "numSendFailures", js.undefined)
     
-    @scala.inline
-    def setRoundtripLatencyMillis(value: SchemaAggregateStats): Self = StObject.set(x, "roundtripLatencyMillis", value.asInstanceOf[js.Any])
+    inline def setRoundtripLatencyMillis(value: SchemaAggregateStats): Self = StObject.set(x, "roundtripLatencyMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundtripLatencyMillisUndefined: Self = StObject.set(x, "roundtripLatencyMillis", js.undefined)
+    inline def setRoundtripLatencyMillisUndefined: Self = StObject.set(x, "roundtripLatencyMillis", js.undefined)
   }
 }

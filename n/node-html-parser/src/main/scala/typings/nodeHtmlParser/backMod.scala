@@ -10,6 +10,5 @@ object backMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](arr: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](arr: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[T]
 }

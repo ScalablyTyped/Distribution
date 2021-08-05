@@ -22,27 +22,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait paymentMethodCardBrand extends StObject
 object paymentMethodCardBrand {
   
-  @scala.inline
-  def amex: typings.stripeV3.stripeV3Strings.amex = "amex".asInstanceOf[typings.stripeV3.stripeV3Strings.amex]
+  inline def amex: typings.stripeV3.stripeV3Strings.amex = "amex".asInstanceOf[typings.stripeV3.stripeV3Strings.amex]
   
-  @scala.inline
-  def diners: typings.stripeV3.stripeV3Strings.diners = "diners".asInstanceOf[typings.stripeV3.stripeV3Strings.diners]
+  inline def diners: typings.stripeV3.stripeV3Strings.diners = "diners".asInstanceOf[typings.stripeV3.stripeV3Strings.diners]
   
-  @scala.inline
-  def discover: discover_ = "discover".asInstanceOf[discover_]
+  inline def discover: discover_ = "discover".asInstanceOf[discover_]
   
-  @scala.inline
-  def jcb: jcb_ = "jcb".asInstanceOf[jcb_]
+  inline def jcb: jcb_ = "jcb".asInstanceOf[jcb_]
   
-  @scala.inline
-  def mastercard: mastercard_ = "mastercard".asInstanceOf[mastercard_]
+  inline def mastercard: mastercard_ = "mastercard".asInstanceOf[mastercard_]
   
-  @scala.inline
-  def unionpay: typings.stripeV3.stripeV3Strings.unionpay = "unionpay".asInstanceOf[typings.stripeV3.stripeV3Strings.unionpay]
+  inline def unionpay: typings.stripeV3.stripeV3Strings.unionpay = "unionpay".asInstanceOf[typings.stripeV3.stripeV3Strings.unionpay]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def visa: visa_ = "visa".asInstanceOf[visa_]
+  inline def visa: visa_ = "visa".asInstanceOf[visa_]
 }

@@ -17,22 +17,17 @@ trait AgentStateChange extends StObject {
 }
 object AgentStateChange {
   
-  @scala.inline
-  def apply(agent: Agent, newState: String, oldState: String): AgentStateChange = {
+  inline def apply(agent: Agent, newState: String, oldState: String): AgentStateChange = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentStateChange]
   }
   
-  @scala.inline
-  implicit class AgentStateChangeMutableBuilder[Self <: AgentStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: AgentStateChange](x: Self) {
     
-    @scala.inline
-    def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewState(value: String): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+    inline def setNewState(value: String): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldState(value: String): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+    inline def setOldState(value: String): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
   }
 }

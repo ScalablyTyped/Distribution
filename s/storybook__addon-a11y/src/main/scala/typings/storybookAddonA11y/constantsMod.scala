@@ -19,38 +19,32 @@ object constantsMod {
     @JSImport("@storybook/addon-a11y/dist/constants", "EVENTS.ERROR")
     @js.native
     def ERROR: String = js.native
-    @scala.inline
-    def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+    inline def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-a11y/dist/constants", "EVENTS.HIGHLIGHT")
     @js.native
     def HIGHLIGHT: String = js.native
-    @scala.inline
-    def HIGHLIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGHLIGHT")(x.asInstanceOf[js.Any])
+    inline def HIGHLIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGHLIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-a11y/dist/constants", "EVENTS.MANUAL")
     @js.native
     def MANUAL: String = js.native
-    @scala.inline
-    def MANUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANUAL")(x.asInstanceOf[js.Any])
+    inline def MANUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANUAL")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-a11y/dist/constants", "EVENTS.REQUEST")
     @js.native
     def REQUEST: String = js.native
-    @scala.inline
-    def REQUEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
+    inline def REQUEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-a11y/dist/constants", "EVENTS.RESULT")
     @js.native
     def RESULT: String = js.native
-    @scala.inline
-    def RESULT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESULT")(x.asInstanceOf[js.Any])
+    inline def RESULT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESULT")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-a11y/dist/constants", "EVENTS.RUNNING")
     @js.native
     def RUNNING: String = js.native
-    @scala.inline
-    def RUNNING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
+    inline def RUNNING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/addon-a11y/dist/constants", "HIGHLIGHT_STYLE_ID")

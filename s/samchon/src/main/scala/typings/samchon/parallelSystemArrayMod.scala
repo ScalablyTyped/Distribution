@@ -30,7 +30,7 @@ object parallelSystemArrayMod {
     /**
       * @hidden
       */
-    var history_sequence_ : js.Any = js.native
+    /* private */ var history_sequence_ : js.Any = js.native
     
     /**
       * Send an {@link Invoke} message with range of pieces.

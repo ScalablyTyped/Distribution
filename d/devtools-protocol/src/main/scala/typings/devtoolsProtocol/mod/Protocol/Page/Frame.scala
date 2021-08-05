@@ -77,8 +77,7 @@ trait Frame extends StObject {
 }
 object Frame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     crossOriginIsolatedContextType: CrossOriginIsolatedContextType,
     domainAndRegistry: String,
     id: FrameId,
@@ -92,61 +91,42 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   
-  @scala.inline
-  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
+  extension [Self <: Frame](x: Self) {
     
-    @scala.inline
-    def setAdFrameType(value: AdFrameType): Self = StObject.set(x, "adFrameType", value.asInstanceOf[js.Any])
+    inline def setAdFrameType(value: AdFrameType): Self = StObject.set(x, "adFrameType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdFrameTypeUndefined: Self = StObject.set(x, "adFrameType", js.undefined)
+    inline def setAdFrameTypeUndefined: Self = StObject.set(x, "adFrameType", js.undefined)
     
-    @scala.inline
-    def setCrossOriginIsolatedContextType(value: CrossOriginIsolatedContextType): Self = StObject.set(x, "crossOriginIsolatedContextType", value.asInstanceOf[js.Any])
+    inline def setCrossOriginIsolatedContextType(value: CrossOriginIsolatedContextType): Self = StObject.set(x, "crossOriginIsolatedContextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainAndRegistry(value: String): Self = StObject.set(x, "domainAndRegistry", value.asInstanceOf[js.Any])
+    inline def setDomainAndRegistry(value: String): Self = StObject.set(x, "domainAndRegistry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: FrameId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FrameId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
+    inline def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setSecureContextType(value: SecureContextType): Self = StObject.set(x, "secureContextType", value.asInstanceOf[js.Any])
+    inline def setSecureContextType(value: SecureContextType): Self = StObject.set(x, "secureContextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreachableUrl(value: String): Self = StObject.set(x, "unreachableUrl", value.asInstanceOf[js.Any])
+    inline def setUnreachableUrl(value: String): Self = StObject.set(x, "unreachableUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreachableUrlUndefined: Self = StObject.set(x, "unreachableUrl", js.undefined)
+    inline def setUnreachableUrlUndefined: Self = StObject.set(x, "unreachableUrl", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlFragment(value: String): Self = StObject.set(x, "urlFragment", value.asInstanceOf[js.Any])
+    inline def setUrlFragment(value: String): Self = StObject.set(x, "urlFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlFragmentUndefined: Self = StObject.set(x, "urlFragment", js.undefined)
+    inline def setUrlFragmentUndefined: Self = StObject.set(x, "urlFragment", js.undefined)
   }
 }

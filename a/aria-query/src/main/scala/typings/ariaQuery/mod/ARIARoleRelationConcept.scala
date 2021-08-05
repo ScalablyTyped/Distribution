@@ -24,40 +24,31 @@ trait ARIARoleRelationConcept extends StObject {
 }
 object ARIARoleRelationConcept {
   
-  @scala.inline
-  def apply(name: String): ARIARoleRelationConcept = {
+  inline def apply(name: String): ARIARoleRelationConcept = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIARoleRelationConcept]
   }
   
-  @scala.inline
-  implicit class ARIARoleRelationConceptMutableBuilder[Self <: ARIARoleRelationConcept] (val x: Self) extends AnyVal {
+  extension [Self <: ARIARoleRelationConcept](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[ARIARoleRelationConceptAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[ARIARoleRelationConceptAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: ARIARoleRelationConceptAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: ARIARoleRelationConceptAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setConstraints(
+    inline def setConstraints(
       value: js.Array[
           (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (`direct descendant of details element with the open attribute defined`) | (`descendant of table`)
         ]
     ): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+    inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    @scala.inline
-    def setConstraintsVarargs(
+    inline def setConstraintsVarargs(
       value: ((`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (`direct descendant of details element with the open attribute defined`) | (`descendant of table`))*
     ): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

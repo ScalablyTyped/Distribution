@@ -13,16 +13,13 @@ trait EmbedHtml extends StObject {
 }
 object EmbedHtml {
   
-  @scala.inline
-  def apply(embedHtml: String): EmbedHtml = {
+  inline def apply(embedHtml: String): EmbedHtml = {
     val __obj = js.Dynamic.literal(embedHtml = embedHtml.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbedHtml]
   }
   
-  @scala.inline
-  implicit class EmbedHtmlMutableBuilder[Self <: EmbedHtml] (val x: Self) extends AnyVal {
+  extension [Self <: EmbedHtml](x: Self) {
     
-    @scala.inline
-    def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
+    inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
   }
 }

@@ -56,79 +56,55 @@ trait ParseOptions[S /* <: Schema[js.Any, js.Any] */] extends StObject {
 }
 object ParseOptions {
   
-  @scala.inline
-  def apply[S /* <: Schema[js.Any, js.Any] */](): ParseOptions[S] = {
+  inline def apply[S /* <: Schema[js.Any, js.Any] */](): ParseOptions[S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParseOptions[S]]
   }
   
-  @scala.inline
-  implicit class ParseOptionsMutableBuilder[Self <: ParseOptions[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & ParseOptions[S]) extends AnyVal {
+  extension [Self <: ParseOptions[?], S /* <: Schema[js.Any, js.Any] */](x: Self & ParseOptions[S]) {
     
-    @scala.inline
-    def setContext(value: ResolvedPos[S]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ResolvedPos[S]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContextNull: Self = StObject.set(x, "context", null)
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setFindPositions(value: js.Array[typings.prosemirrorModel.anon.Node]): Self = StObject.set(x, "findPositions", value.asInstanceOf[js.Any])
+    inline def setFindPositions(value: js.Array[typings.prosemirrorModel.anon.Node]): Self = StObject.set(x, "findPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindPositionsNull: Self = StObject.set(x, "findPositions", null)
+    inline def setFindPositionsNull: Self = StObject.set(x, "findPositions", null)
     
-    @scala.inline
-    def setFindPositionsUndefined: Self = StObject.set(x, "findPositions", js.undefined)
+    inline def setFindPositionsUndefined: Self = StObject.set(x, "findPositions", js.undefined)
     
-    @scala.inline
-    def setFindPositionsVarargs(value: typings.prosemirrorModel.anon.Node*): Self = StObject.set(x, "findPositions", js.Array(value :_*))
+    inline def setFindPositionsVarargs(value: typings.prosemirrorModel.anon.Node*): Self = StObject.set(x, "findPositions", js.Array(value :_*))
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromNull: Self = StObject.set(x, "from", null)
+    inline def setFromNull: Self = StObject.set(x, "from", null)
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setPreserveWhitespace(value: Boolean | full): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
+    inline def setPreserveWhitespace(value: Boolean | full): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveWhitespaceNull: Self = StObject.set(x, "preserveWhitespace", null)
+    inline def setPreserveWhitespaceNull: Self = StObject.set(x, "preserveWhitespace", null)
     
-    @scala.inline
-    def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
+    inline def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToNull: Self = StObject.set(x, "to", null)
+    inline def setToNull: Self = StObject.set(x, "to", null)
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def setTopMatch(value: ContentMatch[js.Any]): Self = StObject.set(x, "topMatch", value.asInstanceOf[js.Any])
+    inline def setTopMatch(value: ContentMatch[js.Any]): Self = StObject.set(x, "topMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMatchNull: Self = StObject.set(x, "topMatch", null)
+    inline def setTopMatchNull: Self = StObject.set(x, "topMatch", null)
     
-    @scala.inline
-    def setTopMatchUndefined: Self = StObject.set(x, "topMatch", js.undefined)
+    inline def setTopMatchUndefined: Self = StObject.set(x, "topMatch", js.undefined)
     
-    @scala.inline
-    def setTopNode(value: ProsemirrorNode[S]): Self = StObject.set(x, "topNode", value.asInstanceOf[js.Any])
+    inline def setTopNode(value: ProsemirrorNode[S]): Self = StObject.set(x, "topNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopNodeNull: Self = StObject.set(x, "topNode", null)
+    inline def setTopNodeNull: Self = StObject.set(x, "topNode", null)
     
-    @scala.inline
-    def setTopNodeUndefined: Self = StObject.set(x, "topNode", js.undefined)
+    inline def setTopNodeUndefined: Self = StObject.set(x, "topNode", js.undefined)
   }
 }

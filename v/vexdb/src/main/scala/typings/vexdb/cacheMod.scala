@@ -33,51 +33,37 @@ object cacheMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolve_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[APIResponse[AwardsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[AwardsRequestObject]]]
+  inline def resolve_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[APIResponse[AwardsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[AwardsRequestObject]]]
   
-  @scala.inline
-  def resolve_events(endpoint: events, params: EventsRequestObject): js.Promise[APIResponse[EventsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[EventsRequestObject]]]
+  inline def resolve_events(endpoint: events, params: EventsRequestObject): js.Promise[APIResponse[EventsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[EventsRequestObject]]]
   
-  @scala.inline
-  def resolve_matches(endpoint: matches, params: MatchesRequestObject): js.Promise[APIResponse[MatchesRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[MatchesRequestObject]]]
+  inline def resolve_matches(endpoint: matches, params: MatchesRequestObject): js.Promise[APIResponse[MatchesRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[MatchesRequestObject]]]
   
-  @scala.inline
-  def resolve_rankings(endpoint: rankings, params: RankingsRequestObject): js.Promise[APIResponse[RankingsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[RankingsRequestObject]]]
+  inline def resolve_rankings(endpoint: rankings, params: RankingsRequestObject): js.Promise[APIResponse[RankingsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[RankingsRequestObject]]]
   
-  @scala.inline
-  def resolve_seasonrankings(endpoint: season_rankings, params: SeasonRankingsRequestObject): js.Promise[APIResponse[SeasonRankingsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[SeasonRankingsRequestObject]]]
+  inline def resolve_seasonrankings(endpoint: season_rankings, params: SeasonRankingsRequestObject): js.Promise[APIResponse[SeasonRankingsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[SeasonRankingsRequestObject]]]
   
-  @scala.inline
-  def resolve_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[APIResponse[SkillsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[SkillsRequestObject]]]
+  inline def resolve_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[APIResponse[SkillsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[SkillsRequestObject]]]
   
-  @scala.inline
-  def resolve_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[APIResponse[TeamsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[TeamsRequestObject]]]
+  inline def resolve_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[APIResponse[TeamsRequestObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[APIResponse[TeamsRequestObject]]]
   
-  @scala.inline
-  def store_awards(endpoint: awards, params: AwardsRequestObject, data: APIResponse[AwardsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def store_awards(endpoint: awards, params: AwardsRequestObject, data: APIResponse[AwardsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def store_events(endpoint: events, params: EventsRequestObject, data: APIResponse[EventsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def store_events(endpoint: events, params: EventsRequestObject, data: APIResponse[EventsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def store_matches(endpoint: matches, params: MatchesRequestObject, data: APIResponse[MatchesResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def store_matches(endpoint: matches, params: MatchesRequestObject, data: APIResponse[MatchesResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def store_rankings(endpoint: rankings, params: RankingsRequestObject, data: APIResponse[RankingsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def store_rankings(endpoint: rankings, params: RankingsRequestObject, data: APIResponse[RankingsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def store_seasonrankings(
+  inline def store_seasonrankings(
     endpoint: season_rankings,
     params: SeasonRankingsRequestObject,
     data: APIResponse[SeasonRankingsResponseObject]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def store_skills(endpoint: skills, params: SkillsRequestObject, data: APIResponse[SkillsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def store_skills(endpoint: skills, params: SkillsRequestObject, data: APIResponse[SkillsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def store_teams(endpoint: teams, params: TeamsRequestObject, data: APIResponse[TeamsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def store_teams(endpoint: teams, params: TeamsRequestObject, data: APIResponse[TeamsResponseObject]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("store")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   trait APIFailure[T]
     extends StObject
@@ -91,23 +77,18 @@ object cacheMod {
   }
   object APIFailure {
     
-    @scala.inline
-    def apply[T](error_code: Double, error_text: String): APIFailure[T] = {
+    inline def apply[T](error_code: Double, error_text: String): APIFailure[T] = {
       val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_text = error_text.asInstanceOf[js.Any], status = 0)
       __obj.asInstanceOf[APIFailure[T]]
     }
     
-    @scala.inline
-    implicit class APIFailureMutableBuilder[Self <: APIFailure[?], T] (val x: Self & APIFailure[T]) extends AnyVal {
+    extension [Self <: APIFailure[?], T](x: Self & APIFailure[T]) {
       
-      @scala.inline
-      def setError_code(value: Double): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
+      inline def setError_code(value: Double): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError_text(value: String): Self = StObject.set(x, "error_text", value.asInstanceOf[js.Any])
+      inline def setError_text(value: String): Self = StObject.set(x, "error_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,14 +99,12 @@ object cacheMod {
   trait APIResponse[T] extends StObject
   object APIResponse {
     
-    @scala.inline
-    def APIFailure[T](error_code: Double, error_text: String): typings.vexdb.cacheMod.APIFailure[T] = {
+    inline def APIFailure[T](error_code: Double, error_text: String): typings.vexdb.cacheMod.APIFailure[T] = {
       val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_text = error_text.asInstanceOf[js.Any], status = 0)
       __obj.asInstanceOf[typings.vexdb.cacheMod.APIFailure[T]]
     }
     
-    @scala.inline
-    def APISuccess[T](result: js.Array[T], size: Double): typings.vexdb.cacheMod.APISuccess[T] = {
+    inline def APISuccess[T](result: js.Array[T], size: Double): typings.vexdb.cacheMod.APISuccess[T] = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = 1)
       __obj.asInstanceOf[typings.vexdb.cacheMod.APISuccess[T]]
     }
@@ -143,26 +122,20 @@ object cacheMod {
   }
   object APISuccess {
     
-    @scala.inline
-    def apply[T](result: js.Array[T], size: Double): APISuccess[T] = {
+    inline def apply[T](result: js.Array[T], size: Double): APISuccess[T] = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = 1)
       __obj.asInstanceOf[APISuccess[T]]
     }
     
-    @scala.inline
-    implicit class APISuccessMutableBuilder[Self <: APISuccess[?], T] (val x: Self & APISuccess[T]) extends AnyVal {
+    extension [Self <: APISuccess[?], T](x: Self & APISuccess[T]) {
       
-      @scala.inline
-      def setResult(value: js.Array[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultVarargs(value: T*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: T*): Self = StObject.set(x, "result", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,20 +147,16 @@ object cacheMod {
   }
   object CacheEntry {
     
-    @scala.inline
-    def apply[T](expires: Double, value: APIResponse[T]): CacheEntry[T] = {
+    inline def apply[T](expires: Double, value: APIResponse[T]): CacheEntry[T] = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheEntry[T]]
     }
     
-    @scala.inline
-    implicit class CacheEntryMutableBuilder[Self <: CacheEntry[?], T] (val x: Self & CacheEntry[T]) extends AnyVal {
+    extension [Self <: CacheEntry[?], T](x: Self & CacheEntry[T]) {
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: APIResponse[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: APIResponse[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

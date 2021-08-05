@@ -10,19 +10,15 @@ trait LocalSimpleStringBlockParams extends StObject {
 }
 object LocalSimpleStringBlockParams {
   
-  @scala.inline
-  def apply(): LocalSimpleStringBlockParams = {
+  inline def apply(): LocalSimpleStringBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalSimpleStringBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalSimpleStringBlockParamsMutableBuilder[Self <: LocalSimpleStringBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalSimpleStringBlockParams](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

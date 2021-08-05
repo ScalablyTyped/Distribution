@@ -14,20 +14,16 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(`type`: WindowEventType): Type = {
+  inline def apply(`type`: WindowEventType): Type = {
     val __obj = js.Dynamic.literal(source = "window")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setSource(value: window): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: window): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WindowEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WindowEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

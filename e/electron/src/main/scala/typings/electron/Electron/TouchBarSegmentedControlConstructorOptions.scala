@@ -47,45 +47,33 @@ trait TouchBarSegmentedControlConstructorOptions extends StObject {
 }
 object TouchBarSegmentedControlConstructorOptions {
   
-  @scala.inline
-  def apply(segments: js.Array[SegmentedControlSegment]): TouchBarSegmentedControlConstructorOptions = {
+  inline def apply(segments: js.Array[SegmentedControlSegment]): TouchBarSegmentedControlConstructorOptions = {
     val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarSegmentedControlConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarSegmentedControlConstructorOptionsMutableBuilder[Self <: TouchBarSegmentedControlConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarSegmentedControlConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: (/* selectedIndex */ Double, /* isSelected */ Boolean) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+    inline def setChange(value: (/* selectedIndex */ Double, /* isSelected */ Boolean) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setMode(value: single | multiple | buttons): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: single | multiple | buttons): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSegmentStyle(
+    inline def setSegmentStyle(
       value: automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated
     ): Self = StObject.set(x, "segmentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentStyleUndefined: Self = StObject.set(x, "segmentStyle", js.undefined)
+    inline def setSegmentStyleUndefined: Self = StObject.set(x, "segmentStyle", js.undefined)
     
-    @scala.inline
-    def setSegments(value: js.Array[SegmentedControlSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[SegmentedControlSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsVarargs(value: SegmentedControlSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SegmentedControlSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
   }
 }

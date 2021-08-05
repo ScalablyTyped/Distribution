@@ -20,16 +20,13 @@ trait HTMLTrackElementList
 }
 object HTMLTrackElementList {
   
-  @scala.inline
-  def apply(length: Double): HTMLTrackElementList = {
+  inline def apply(length: Double): HTMLTrackElementList = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLTrackElementList]
   }
   
-  @scala.inline
-  implicit class HTMLTrackElementListMutableBuilder[Self <: HTMLTrackElementList] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLTrackElementList](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

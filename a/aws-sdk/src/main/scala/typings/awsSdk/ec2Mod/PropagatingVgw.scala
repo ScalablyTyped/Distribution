@@ -13,19 +13,15 @@ trait PropagatingVgw extends StObject {
 }
 object PropagatingVgw {
   
-  @scala.inline
-  def apply(): PropagatingVgw = {
+  inline def apply(): PropagatingVgw = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropagatingVgw]
   }
   
-  @scala.inline
-  implicit class PropagatingVgwMutableBuilder[Self <: PropagatingVgw] (val x: Self) extends AnyVal {
+  extension [Self <: PropagatingVgw](x: Self) {
     
-    @scala.inline
-    def setGatewayId(value: String): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: String): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
+    inline def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
   }
 }

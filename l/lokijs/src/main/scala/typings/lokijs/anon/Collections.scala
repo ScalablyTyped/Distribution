@@ -17,31 +17,23 @@ trait Collections extends StObject {
 }
 object Collections {
   
-  @scala.inline
-  def apply(collections: js.Array[Collection[js.Any]], databaseVersion: Double, throttledSaves: Boolean): Collections = {
+  inline def apply(collections: js.Array[Collection[js.Any]], databaseVersion: Double, throttledSaves: Boolean): Collections = {
     val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any], databaseVersion = databaseVersion.asInstanceOf[js.Any], throttledSaves = throttledSaves.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collections]
   }
   
-  @scala.inline
-  implicit class CollectionsMutableBuilder[Self <: Collections] (val x: Self) extends AnyVal {
+  extension [Self <: Collections](x: Self) {
     
-    @scala.inline
-    def setCollections(value: js.Array[Collection[js.Any]]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: js.Array[Collection[js.Any]]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionsVarargs(value: Collection[js.Any]*): Self = StObject.set(x, "collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: Collection[js.Any]*): Self = StObject.set(x, "collections", js.Array(value :_*))
     
-    @scala.inline
-    def setDatabaseVersion(value: Double): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
+    inline def setDatabaseVersion(value: Double): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
+    inline def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
   }
 }

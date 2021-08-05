@@ -18,8 +18,7 @@ trait MessageFlow
 }
 object MessageFlow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -32,19 +31,14 @@ object MessageFlow {
     __obj.asInstanceOf[MessageFlow]
   }
   
-  @scala.inline
-  implicit class MessageFlowMutableBuilder[Self <: MessageFlow] (val x: Self) extends AnyVal {
+  extension [Self <: MessageFlow](x: Self) {
     
-    @scala.inline
-    def setMessageRef(value: Message): Self = StObject.set(x, "messageRef", value.asInstanceOf[js.Any])
+    inline def setMessageRef(value: Message): Self = StObject.set(x, "messageRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRef(value: InteractionNode): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
+    inline def setSourceRef(value: InteractionNode): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRef(value: InteractionNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: InteractionNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

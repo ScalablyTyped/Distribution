@@ -24,19 +24,16 @@ trait DocumentRangeFormattingEditProvider extends StObject {
 }
 object DocumentRangeFormattingEditProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideDocumentRangeFormattingEdits: (TextDocument, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): DocumentRangeFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideDocumentRangeFormattingEdits = js.Any.fromFunction4(provideDocumentRangeFormattingEdits))
     __obj.asInstanceOf[DocumentRangeFormattingEditProvider]
   }
   
-  @scala.inline
-  implicit class DocumentRangeFormattingEditProviderMutableBuilder[Self <: DocumentRangeFormattingEditProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentRangeFormattingEditProvider](x: Self) {
     
-    @scala.inline
-    def setProvideDocumentRangeFormattingEdits(
+    inline def setProvideDocumentRangeFormattingEdits(
       value: (TextDocument, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
     ): Self = StObject.set(x, "provideDocumentRangeFormattingEdits", js.Any.fromFunction4(value))
   }

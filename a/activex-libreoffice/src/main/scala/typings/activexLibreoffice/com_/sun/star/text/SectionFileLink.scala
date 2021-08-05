@@ -25,19 +25,15 @@ trait SectionFileLink extends StObject {
 }
 object SectionFileLink {
   
-  @scala.inline
-  def apply(FileURL: String, FilterName: String): SectionFileLink = {
+  inline def apply(FileURL: String, FilterName: String): SectionFileLink = {
     val __obj = js.Dynamic.literal(FileURL = FileURL.asInstanceOf[js.Any], FilterName = FilterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionFileLink]
   }
   
-  @scala.inline
-  implicit class SectionFileLinkMutableBuilder[Self <: SectionFileLink] (val x: Self) extends AnyVal {
+  extension [Self <: SectionFileLink](x: Self) {
     
-    @scala.inline
-    def setFileURL(value: String): Self = StObject.set(x, "FileURL", value.asInstanceOf[js.Any])
+    inline def setFileURL(value: String): Self = StObject.set(x, "FileURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterName(value: String): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: String): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
   }
 }

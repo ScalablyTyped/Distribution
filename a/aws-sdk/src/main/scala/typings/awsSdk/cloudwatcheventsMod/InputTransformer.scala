@@ -18,22 +18,17 @@ trait InputTransformer extends StObject {
 }
 object InputTransformer {
   
-  @scala.inline
-  def apply(InputTemplate: TransformerInput): InputTransformer = {
+  inline def apply(InputTemplate: TransformerInput): InputTransformer = {
     val __obj = js.Dynamic.literal(InputTemplate = InputTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTransformer]
   }
   
-  @scala.inline
-  implicit class InputTransformerMutableBuilder[Self <: InputTransformer] (val x: Self) extends AnyVal {
+  extension [Self <: InputTransformer](x: Self) {
     
-    @scala.inline
-    def setInputPathsMap(value: TransformerPaths): Self = StObject.set(x, "InputPathsMap", value.asInstanceOf[js.Any])
+    inline def setInputPathsMap(value: TransformerPaths): Self = StObject.set(x, "InputPathsMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPathsMapUndefined: Self = StObject.set(x, "InputPathsMap", js.undefined)
+    inline def setInputPathsMapUndefined: Self = StObject.set(x, "InputPathsMap", js.undefined)
     
-    @scala.inline
-    def setInputTemplate(value: TransformerInput): Self = StObject.set(x, "InputTemplate", value.asInstanceOf[js.Any])
+    inline def setInputTemplate(value: TransformerInput): Self = StObject.set(x, "InputTemplate", value.asInstanceOf[js.Any])
   }
 }

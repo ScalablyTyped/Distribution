@@ -20,37 +20,27 @@ trait GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata extends 
 }
 object GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata = {
+  inline def apply(): GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadataMutableBuilder[Self <: GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setComplianceRegime(value: String): Self = StObject.set(x, "complianceRegime", value.asInstanceOf[js.Any])
+    inline def setComplianceRegime(value: String): Self = StObject.set(x, "complianceRegime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceRegimeUndefined: Self = StObject.set(x, "complianceRegime", js.undefined)
+    inline def setComplianceRegimeUndefined: Self = StObject.set(x, "complianceRegime", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

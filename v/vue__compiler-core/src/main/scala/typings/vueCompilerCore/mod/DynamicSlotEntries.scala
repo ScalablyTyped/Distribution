@@ -13,20 +13,16 @@ trait DynamicSlotEntries
 }
 object DynamicSlotEntries {
   
-  @scala.inline
-  def apply(elements: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode], loc: SourceLocation): DynamicSlotEntries = {
+  inline def apply(elements: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode], loc: SourceLocation): DynamicSlotEntries = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[DynamicSlotEntries]
   }
   
-  @scala.inline
-  implicit class DynamicSlotEntriesMutableBuilder[Self <: DynamicSlotEntries] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicSlotEntries](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: (ConditionalDynamicSlotNode | ListDynamicSlotNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (ConditionalDynamicSlotNode | ListDynamicSlotNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

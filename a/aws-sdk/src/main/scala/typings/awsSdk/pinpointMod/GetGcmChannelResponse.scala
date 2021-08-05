@@ -10,16 +10,13 @@ trait GetGcmChannelResponse extends StObject {
 }
 object GetGcmChannelResponse {
   
-  @scala.inline
-  def apply(GCMChannelResponse: GCMChannelResponse): GetGcmChannelResponse = {
+  inline def apply(GCMChannelResponse: GCMChannelResponse): GetGcmChannelResponse = {
     val __obj = js.Dynamic.literal(GCMChannelResponse = GCMChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGcmChannelResponse]
   }
   
-  @scala.inline
-  implicit class GetGcmChannelResponseMutableBuilder[Self <: GetGcmChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGcmChannelResponse](x: Self) {
     
-    @scala.inline
-    def setGCMChannelResponse(value: GCMChannelResponse): Self = StObject.set(x, "GCMChannelResponse", value.asInstanceOf[js.Any])
+    inline def setGCMChannelResponse(value: GCMChannelResponse): Self = StObject.set(x, "GCMChannelResponse", value.asInstanceOf[js.Any])
   }
 }

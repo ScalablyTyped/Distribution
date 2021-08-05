@@ -53,61 +53,43 @@ trait CreateRecommenderConfiguration extends StObject {
 }
 object CreateRecommenderConfiguration {
   
-  @scala.inline
-  def apply(RecommendationProviderRoleArn: string, RecommendationProviderUri: string): CreateRecommenderConfiguration = {
+  inline def apply(RecommendationProviderRoleArn: string, RecommendationProviderUri: string): CreateRecommenderConfiguration = {
     val __obj = js.Dynamic.literal(RecommendationProviderRoleArn = RecommendationProviderRoleArn.asInstanceOf[js.Any], RecommendationProviderUri = RecommendationProviderUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRecommenderConfiguration]
   }
   
-  @scala.inline
-  implicit class CreateRecommenderConfigurationMutableBuilder[Self <: CreateRecommenderConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRecommenderConfiguration](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRecommendationProviderIdType(value: string): Self = StObject.set(x, "RecommendationProviderIdType", value.asInstanceOf[js.Any])
+    inline def setRecommendationProviderIdType(value: string): Self = StObject.set(x, "RecommendationProviderIdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationProviderIdTypeUndefined: Self = StObject.set(x, "RecommendationProviderIdType", js.undefined)
+    inline def setRecommendationProviderIdTypeUndefined: Self = StObject.set(x, "RecommendationProviderIdType", js.undefined)
     
-    @scala.inline
-    def setRecommendationProviderRoleArn(value: string): Self = StObject.set(x, "RecommendationProviderRoleArn", value.asInstanceOf[js.Any])
+    inline def setRecommendationProviderRoleArn(value: string): Self = StObject.set(x, "RecommendationProviderRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationProviderUri(value: string): Self = StObject.set(x, "RecommendationProviderUri", value.asInstanceOf[js.Any])
+    inline def setRecommendationProviderUri(value: string): Self = StObject.set(x, "RecommendationProviderUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationTransformerUri(value: string): Self = StObject.set(x, "RecommendationTransformerUri", value.asInstanceOf[js.Any])
+    inline def setRecommendationTransformerUri(value: string): Self = StObject.set(x, "RecommendationTransformerUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationTransformerUriUndefined: Self = StObject.set(x, "RecommendationTransformerUri", js.undefined)
+    inline def setRecommendationTransformerUriUndefined: Self = StObject.set(x, "RecommendationTransformerUri", js.undefined)
     
-    @scala.inline
-    def setRecommendationsDisplayName(value: string): Self = StObject.set(x, "RecommendationsDisplayName", value.asInstanceOf[js.Any])
+    inline def setRecommendationsDisplayName(value: string): Self = StObject.set(x, "RecommendationsDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationsDisplayNameUndefined: Self = StObject.set(x, "RecommendationsDisplayName", js.undefined)
+    inline def setRecommendationsDisplayNameUndefined: Self = StObject.set(x, "RecommendationsDisplayName", js.undefined)
     
-    @scala.inline
-    def setRecommendationsPerMessage(value: integer): Self = StObject.set(x, "RecommendationsPerMessage", value.asInstanceOf[js.Any])
+    inline def setRecommendationsPerMessage(value: integer): Self = StObject.set(x, "RecommendationsPerMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationsPerMessageUndefined: Self = StObject.set(x, "RecommendationsPerMessage", js.undefined)
+    inline def setRecommendationsPerMessageUndefined: Self = StObject.set(x, "RecommendationsPerMessage", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait `18` extends StObject {
 }
 object `18` {
   
-  @scala.inline
-  def apply(): `18` = {
+  inline def apply(): `18` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`18`]
   }
   
-  @scala.inline
-  implicit class `18MutableBuilder`[Self <: `18`] (val x: Self) extends AnyVal {
+  extension [Self <: `18`](x: Self) {
     
-    @scala.inline
-    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

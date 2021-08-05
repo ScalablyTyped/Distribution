@@ -38,49 +38,35 @@ trait InstanceTypeConfig extends StObject {
 }
 object InstanceTypeConfig {
   
-  @scala.inline
-  def apply(InstanceType: InstanceType): InstanceTypeConfig = {
+  inline def apply(InstanceType: InstanceType): InstanceTypeConfig = {
     val __obj = js.Dynamic.literal(InstanceType = InstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceTypeConfig]
   }
   
-  @scala.inline
-  implicit class InstanceTypeConfigMutableBuilder[Self <: InstanceTypeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceTypeConfig](x: Self) {
     
-    @scala.inline
-    def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
+    inline def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceAsPercentageOfOnDemandPrice(value: NonNegativeDouble): Self = StObject.set(x, "BidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
+    inline def setBidPriceAsPercentageOfOnDemandPrice(value: NonNegativeDouble): Self = StObject.set(x, "BidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceAsPercentageOfOnDemandPriceUndefined: Self = StObject.set(x, "BidPriceAsPercentageOfOnDemandPrice", js.undefined)
+    inline def setBidPriceAsPercentageOfOnDemandPriceUndefined: Self = StObject.set(x, "BidPriceAsPercentageOfOnDemandPrice", js.undefined)
     
-    @scala.inline
-    def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
+    inline def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
     
-    @scala.inline
-    def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
     
-    @scala.inline
-    def setEbsConfiguration(value: EbsConfiguration): Self = StObject.set(x, "EbsConfiguration", value.asInstanceOf[js.Any])
+    inline def setEbsConfiguration(value: EbsConfiguration): Self = StObject.set(x, "EbsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsConfigurationUndefined: Self = StObject.set(x, "EbsConfiguration", js.undefined)
+    inline def setEbsConfigurationUndefined: Self = StObject.set(x, "EbsConfiguration", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacity(value: WholeNumber): Self = StObject.set(x, "WeightedCapacity", value.asInstanceOf[js.Any])
+    inline def setWeightedCapacity(value: WholeNumber): Self = StObject.set(x, "WeightedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacityUndefined: Self = StObject.set(x, "WeightedCapacity", js.undefined)
+    inline def setWeightedCapacityUndefined: Self = StObject.set(x, "WeightedCapacity", js.undefined)
   }
 }

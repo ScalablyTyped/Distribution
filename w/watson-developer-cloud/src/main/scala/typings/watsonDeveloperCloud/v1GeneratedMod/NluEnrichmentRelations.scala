@@ -12,19 +12,15 @@ trait NluEnrichmentRelations extends StObject {
 }
 object NluEnrichmentRelations {
   
-  @scala.inline
-  def apply(): NluEnrichmentRelations = {
+  inline def apply(): NluEnrichmentRelations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NluEnrichmentRelations]
   }
   
-  @scala.inline
-  implicit class NluEnrichmentRelationsMutableBuilder[Self <: NluEnrichmentRelations] (val x: Self) extends AnyVal {
+  extension [Self <: NluEnrichmentRelations](x: Self) {
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

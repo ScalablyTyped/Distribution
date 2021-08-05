@@ -33,31 +33,23 @@ trait PageBreakCollectionLoadOptions extends StObject {
 }
 object PageBreakCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): PageBreakCollectionLoadOptions = {
+  inline def apply(): PageBreakCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageBreakCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class PageBreakCollectionLoadOptionsMutableBuilder[Self <: PageBreakCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageBreakCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

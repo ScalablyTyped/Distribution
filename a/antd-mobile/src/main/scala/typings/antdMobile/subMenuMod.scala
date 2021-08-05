@@ -12,8 +12,7 @@ object subMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: PropsType): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: PropsType): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PropsType extends StObject {
     
@@ -33,8 +32,7 @@ object subMenuMod {
   }
   object PropsType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onSel: DataItem => Unit,
       selItem: js.Array[DataItem],
       showSelect: Boolean,
@@ -44,44 +42,31 @@ object subMenuMod {
       __obj.asInstanceOf[PropsType]
     }
     
-    @scala.inline
-    implicit class PropsTypeMutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
+    extension [Self <: PropsType](x: Self) {
       
-      @scala.inline
-      def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+      inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+      inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
       
-      @scala.inline
-      def setOnSel(value: DataItem => Unit): Self = StObject.set(x, "onSel", js.Any.fromFunction1(value))
+      inline def setOnSel(value: DataItem => Unit): Self = StObject.set(x, "onSel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRadioPrefixCls(value: String): Self = StObject.set(x, "radioPrefixCls", value.asInstanceOf[js.Any])
+      inline def setRadioPrefixCls(value: String): Self = StObject.set(x, "radioPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioPrefixClsUndefined: Self = StObject.set(x, "radioPrefixCls", js.undefined)
+      inline def setRadioPrefixClsUndefined: Self = StObject.set(x, "radioPrefixCls", js.undefined)
       
-      @scala.inline
-      def setSelItem(value: js.Array[DataItem]): Self = StObject.set(x, "selItem", value.asInstanceOf[js.Any])
+      inline def setSelItem(value: js.Array[DataItem]): Self = StObject.set(x, "selItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelItemVarargs(value: DataItem*): Self = StObject.set(x, "selItem", js.Array(value :_*))
+      inline def setSelItemVarargs(value: DataItem*): Self = StObject.set(x, "selItem", js.Array(value :_*))
       
-      @scala.inline
-      def setShowSelect(value: Boolean): Self = StObject.set(x, "showSelect", value.asInstanceOf[js.Any])
+      inline def setShowSelect(value: Boolean): Self = StObject.set(x, "showSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubMenuData(value: js.Array[DataItem]): Self = StObject.set(x, "subMenuData", value.asInstanceOf[js.Any])
+      inline def setSubMenuData(value: js.Array[DataItem]): Self = StObject.set(x, "subMenuData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubMenuDataVarargs(value: DataItem*): Self = StObject.set(x, "subMenuData", js.Array(value :_*))
+      inline def setSubMenuDataVarargs(value: DataItem*): Self = StObject.set(x, "subMenuData", js.Array(value :_*))
       
-      @scala.inline
-      def setSubMenuPrefixCls(value: String): Self = StObject.set(x, "subMenuPrefixCls", value.asInstanceOf[js.Any])
+      inline def setSubMenuPrefixCls(value: String): Self = StObject.set(x, "subMenuPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubMenuPrefixClsUndefined: Self = StObject.set(x, "subMenuPrefixCls", js.undefined)
+      inline def setSubMenuPrefixClsUndefined: Self = StObject.set(x, "subMenuPrefixCls", js.undefined)
     }
   }
 }

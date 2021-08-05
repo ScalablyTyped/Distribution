@@ -61,37 +61,27 @@ trait PlusAudioRecordOptions extends StObject {
 }
 object PlusAudioRecordOptions {
   
-  @scala.inline
-  def apply(): PlusAudioRecordOptions = {
+  inline def apply(): PlusAudioRecordOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusAudioRecordOptions]
   }
   
-  @scala.inline
-  implicit class PlusAudioRecordOptionsMutableBuilder[Self <: PlusAudioRecordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusAudioRecordOptions](x: Self) {
     
-    @scala.inline
-    def setChannels(value: mono | stereo): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: mono | stereo): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setFilename(value: _wwwSlash | _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: _wwwSlash | _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setSamplerate(value: String): Self = StObject.set(x, "samplerate", value.asInstanceOf[js.Any])
+    inline def setSamplerate(value: String): Self = StObject.set(x, "samplerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplerateUndefined: Self = StObject.set(x, "samplerate", js.undefined)
+    inline def setSamplerateUndefined: Self = StObject.set(x, "samplerate", js.undefined)
   }
 }

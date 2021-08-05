@@ -58,8 +58,7 @@ trait XProofreadingIterator
 }
 object XProofreadingIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     checkSentenceAtPosition: (XInterface, XFlatParagraph, String, Locale, Double, Double, Double) => ProofreadingResult,
     isProofreading: XInterface => Boolean,
@@ -72,19 +71,14 @@ object XProofreadingIterator {
     __obj.asInstanceOf[XProofreadingIterator]
   }
   
-  @scala.inline
-  implicit class XProofreadingIteratorMutableBuilder[Self <: XProofreadingIterator] (val x: Self) extends AnyVal {
+  extension [Self <: XProofreadingIterator](x: Self) {
     
-    @scala.inline
-    def setCheckSentenceAtPosition(value: (XInterface, XFlatParagraph, String, Locale, Double, Double, Double) => ProofreadingResult): Self = StObject.set(x, "checkSentenceAtPosition", js.Any.fromFunction7(value))
+    inline def setCheckSentenceAtPosition(value: (XInterface, XFlatParagraph, String, Locale, Double, Double, Double) => ProofreadingResult): Self = StObject.set(x, "checkSentenceAtPosition", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setIsProofreading(value: XInterface => Boolean): Self = StObject.set(x, "isProofreading", js.Any.fromFunction1(value))
+    inline def setIsProofreading(value: XInterface => Boolean): Self = StObject.set(x, "isProofreading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetIgnoreRules(value: () => Unit): Self = StObject.set(x, "resetIgnoreRules", js.Any.fromFunction0(value))
+    inline def setResetIgnoreRules(value: () => Unit): Self = StObject.set(x, "resetIgnoreRules", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartProofreading(value: (XInterface, XFlatParagraphIteratorProvider) => Unit): Self = StObject.set(x, "startProofreading", js.Any.fromFunction2(value))
+    inline def setStartProofreading(value: (XInterface, XFlatParagraphIteratorProvider) => Unit): Self = StObject.set(x, "startProofreading", js.Any.fromFunction2(value))
   }
 }

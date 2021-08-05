@@ -17,6 +17,5 @@ object useAppSizeMod {
   @js.native
   val AppSizeContext: Context[AppSizeinitializedboolean] = js.native
   
-  @scala.inline
-  def useAppSize(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSize")().asInstanceOf[AppSize]
+  inline def useAppSize(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSize")().asInstanceOf[AppSize]
 }

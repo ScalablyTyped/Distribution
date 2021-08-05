@@ -13,8 +13,7 @@ trait KnuddelsJson
      with _KnuddelsJsonData
 object KnuddelsJson {
   
-  @scala.inline
-  def apply(): KnuddelsJson = {
+  inline def apply(): KnuddelsJson = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KnuddelsJson]
   }

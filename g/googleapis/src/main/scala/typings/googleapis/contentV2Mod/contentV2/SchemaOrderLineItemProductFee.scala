@@ -18,25 +18,19 @@ trait SchemaOrderLineItemProductFee extends StObject {
 }
 object SchemaOrderLineItemProductFee {
   
-  @scala.inline
-  def apply(): SchemaOrderLineItemProductFee = {
+  inline def apply(): SchemaOrderLineItemProductFee = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderLineItemProductFee]
   }
   
-  @scala.inline
-  implicit class SchemaOrderLineItemProductFeeMutableBuilder[Self <: SchemaOrderLineItemProductFee] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderLineItemProductFee](x: Self) {
     
-    @scala.inline
-    def setAmount(value: SchemaPrice): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: SchemaPrice): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

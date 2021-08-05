@@ -17,8 +17,7 @@ object audioPlayerUniDriverMod {
   }
   object AudioPlayerUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickOnPlayPauseButton: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -29,14 +28,11 @@ object audioPlayerUniDriverMod {
       __obj.asInstanceOf[AudioPlayerUniDriver]
     }
     
-    @scala.inline
-    implicit class AudioPlayerUniDriverMutableBuilder[Self <: AudioPlayerUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AudioPlayerUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnPlayPauseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPlayPauseButton", js.Any.fromFunction0(value))
+      inline def setClickOnPlayPauseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPlayPauseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimeIndicatorText(value: () => js.Promise[String]): Self = StObject.set(x, "timeIndicatorText", js.Any.fromFunction0(value))
+      inline def setTimeIndicatorText(value: () => js.Promise[String]): Self = StObject.set(x, "timeIndicatorText", js.Any.fromFunction0(value))
     }
   }
 }

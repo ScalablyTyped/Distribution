@@ -15,7 +15,7 @@ trait PageSetup extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.PageSetup_typekey")
+  /* private */ @JSName("PowerPoint.PageSetup_typekey")
   var PowerPointDotPageSetup_typekey: PageSetup
   
   var SlideHeight: Double
@@ -28,8 +28,7 @@ trait PageSetup extends StObject {
 }
 object PageSetup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     FirstSlideNumber: Double,
     NotesOrientation: MsoOrientation,
@@ -45,34 +44,24 @@ object PageSetup {
     __obj.asInstanceOf[PageSetup]
   }
   
-  @scala.inline
-  implicit class PageSetupMutableBuilder[Self <: PageSetup] (val x: Self) extends AnyVal {
+  extension [Self <: PageSetup](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstSlideNumber(value: Double): Self = StObject.set(x, "FirstSlideNumber", value.asInstanceOf[js.Any])
+    inline def setFirstSlideNumber(value: Double): Self = StObject.set(x, "FirstSlideNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesOrientation(value: MsoOrientation): Self = StObject.set(x, "NotesOrientation", value.asInstanceOf[js.Any])
+    inline def setNotesOrientation(value: MsoOrientation): Self = StObject.set(x, "NotesOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "PowerPoint.PageSetup_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "PowerPoint.PageSetup_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideHeight(value: Double): Self = StObject.set(x, "SlideHeight", value.asInstanceOf[js.Any])
+    inline def setSlideHeight(value: Double): Self = StObject.set(x, "SlideHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideOrientation(value: MsoOrientation): Self = StObject.set(x, "SlideOrientation", value.asInstanceOf[js.Any])
+    inline def setSlideOrientation(value: MsoOrientation): Self = StObject.set(x, "SlideOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideSize(value: PpSlideSizeType): Self = StObject.set(x, "SlideSize", value.asInstanceOf[js.Any])
+    inline def setSlideSize(value: PpSlideSizeType): Self = StObject.set(x, "SlideSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideWidth(value: Double): Self = StObject.set(x, "SlideWidth", value.asInstanceOf[js.Any])
+    inline def setSlideWidth(value: Double): Self = StObject.set(x, "SlideWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait SpecName extends StObject {
 }
 object SpecName {
   
-  @scala.inline
-  def apply(): SpecName = {
+  inline def apply(): SpecName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpecName]
   }
   
-  @scala.inline
-  implicit class SpecNameMutableBuilder[Self <: SpecName] (val x: Self) extends AnyVal {
+  extension [Self <: SpecName](x: Self) {
     
-    @scala.inline
-    def setSpecName(value: String): Self = StObject.set(x, "specName", value.asInstanceOf[js.Any])
+    inline def setSpecName(value: String): Self = StObject.set(x, "specName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecNameUndefined: Self = StObject.set(x, "specName", js.undefined)
+    inline def setSpecNameUndefined: Self = StObject.set(x, "specName", js.undefined)
     
-    @scala.inline
-    def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+    inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
   }
 }

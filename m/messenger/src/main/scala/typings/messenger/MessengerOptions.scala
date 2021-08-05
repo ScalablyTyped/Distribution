@@ -37,46 +37,33 @@ trait MessengerOptions extends StObject {
 }
 object MessengerOptions {
   
-  @scala.inline
-  def apply(): MessengerOptions = {
+  inline def apply(): MessengerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessengerOptions]
   }
   
-  @scala.inline
-  implicit class MessengerOptionsMutableBuilder[Self <: MessengerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessengerOptions](x: Self) {
     
-    @scala.inline
-    def setExtraClasses(value: String): Self = StObject.set(x, "extraClasses", value.asInstanceOf[js.Any])
+    inline def setExtraClasses(value: String): Self = StObject.set(x, "extraClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraClassesUndefined: Self = StObject.set(x, "extraClasses", js.undefined)
+    inline def setExtraClassesUndefined: Self = StObject.set(x, "extraClasses", js.undefined)
     
-    @scala.inline
-    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+    inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
+    inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
-    @scala.inline
-    def setMessageDefaults(value: MessageOptions): Self = StObject.set(x, "messageDefaults", value.asInstanceOf[js.Any])
+    inline def setMessageDefaults(value: MessageOptions): Self = StObject.set(x, "messageDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageDefaultsUndefined: Self = StObject.set(x, "messageDefaults", js.undefined)
+    inline def setMessageDefaultsUndefined: Self = StObject.set(x, "messageDefaults", js.undefined)
     
-    @scala.inline
-    def setParentLocations(value: js.Array[String]): Self = StObject.set(x, "parentLocations", value.asInstanceOf[js.Any])
+    inline def setParentLocations(value: js.Array[String]): Self = StObject.set(x, "parentLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLocationsUndefined: Self = StObject.set(x, "parentLocations", js.undefined)
+    inline def setParentLocationsUndefined: Self = StObject.set(x, "parentLocations", js.undefined)
     
-    @scala.inline
-    def setParentLocationsVarargs(value: String*): Self = StObject.set(x, "parentLocations", js.Array(value :_*))
+    inline def setParentLocationsVarargs(value: String*): Self = StObject.set(x, "parentLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

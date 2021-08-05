@@ -13,16 +13,13 @@ trait DeleteDBParameterGroupMessage extends StObject {
 }
 object DeleteDBParameterGroupMessage {
   
-  @scala.inline
-  def apply(DBParameterGroupName: String): DeleteDBParameterGroupMessage = {
+  inline def apply(DBParameterGroupName: String): DeleteDBParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBParameterGroupName = DBParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBParameterGroupMessageMutableBuilder[Self <: DeleteDBParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
   }
 }

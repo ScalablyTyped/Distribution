@@ -58,21 +58,16 @@ object trafficMirrorFilterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TrafficMirrorFilterState): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TrafficMirrorFilterState, opts: CustomResourceOptions): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
+    inline def get(name: String, id: Input[ID]): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
+    inline def get(name: String, id: Input[ID], state: TrafficMirrorFilterState): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
+    inline def get(name: String, id: Input[ID], state: TrafficMirrorFilterState, opts: CustomResourceOptions): TrafficMirrorFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilter]
     
     /**
       * Returns true if the given object is an instance of TrafficMirrorFilter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilter.TrafficMirrorFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilter.TrafficMirrorFilter */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilter.TrafficMirrorFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilter.TrafficMirrorFilter */ Boolean]
   }
   
   trait TrafficMirrorFilterArgs extends StObject {
@@ -94,35 +89,26 @@ object trafficMirrorFilterMod {
   }
   object TrafficMirrorFilterArgs {
     
-    @scala.inline
-    def apply(): TrafficMirrorFilterArgs = {
+    inline def apply(): TrafficMirrorFilterArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrafficMirrorFilterArgs]
     }
     
-    @scala.inline
-    implicit class TrafficMirrorFilterArgsMutableBuilder[Self <: TrafficMirrorFilterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TrafficMirrorFilterArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setNetworkServices(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "networkServices", value.asInstanceOf[js.Any])
+      inline def setNetworkServices(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "networkServices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkServicesUndefined: Self = StObject.set(x, "networkServices", js.undefined)
+      inline def setNetworkServicesUndefined: Self = StObject.set(x, "networkServices", js.undefined)
       
-      @scala.inline
-      def setNetworkServicesVarargs(value: Input[String]*): Self = StObject.set(x, "networkServices", js.Array(value :_*))
+      inline def setNetworkServicesVarargs(value: Input[String]*): Self = StObject.set(x, "networkServices", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -145,35 +131,26 @@ object trafficMirrorFilterMod {
   }
   object TrafficMirrorFilterState {
     
-    @scala.inline
-    def apply(): TrafficMirrorFilterState = {
+    inline def apply(): TrafficMirrorFilterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrafficMirrorFilterState]
     }
     
-    @scala.inline
-    implicit class TrafficMirrorFilterStateMutableBuilder[Self <: TrafficMirrorFilterState] (val x: Self) extends AnyVal {
+    extension [Self <: TrafficMirrorFilterState](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setNetworkServices(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "networkServices", value.asInstanceOf[js.Any])
+      inline def setNetworkServices(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "networkServices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkServicesUndefined: Self = StObject.set(x, "networkServices", js.undefined)
+      inline def setNetworkServicesUndefined: Self = StObject.set(x, "networkServices", js.undefined)
       
-      @scala.inline
-      def setNetworkServicesVarargs(value: Input[String]*): Self = StObject.set(x, "networkServices", js.Array(value :_*))
+      inline def setNetworkServicesVarargs(value: Input[String]*): Self = StObject.set(x, "networkServices", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

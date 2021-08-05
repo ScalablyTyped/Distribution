@@ -74,8 +74,7 @@ trait HyperParameterTrainingJobDefinition extends StObject {
 }
 object HyperParameterTrainingJobDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlgorithmSpecification: HyperParameterAlgorithmSpecification,
     OutputDataConfig: OutputDataConfig,
     ResourceConfig: ResourceConfig,
@@ -86,85 +85,58 @@ object HyperParameterTrainingJobDefinition {
     __obj.asInstanceOf[HyperParameterTrainingJobDefinition]
   }
   
-  @scala.inline
-  implicit class HyperParameterTrainingJobDefinitionMutableBuilder[Self <: HyperParameterTrainingJobDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: HyperParameterTrainingJobDefinition](x: Self) {
     
-    @scala.inline
-    def setAlgorithmSpecification(value: HyperParameterAlgorithmSpecification): Self = StObject.set(x, "AlgorithmSpecification", value.asInstanceOf[js.Any])
+    inline def setAlgorithmSpecification(value: HyperParameterAlgorithmSpecification): Self = StObject.set(x, "AlgorithmSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointConfig(value: CheckpointConfig): Self = StObject.set(x, "CheckpointConfig", value.asInstanceOf[js.Any])
+    inline def setCheckpointConfig(value: CheckpointConfig): Self = StObject.set(x, "CheckpointConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointConfigUndefined: Self = StObject.set(x, "CheckpointConfig", js.undefined)
+    inline def setCheckpointConfigUndefined: Self = StObject.set(x, "CheckpointConfig", js.undefined)
     
-    @scala.inline
-    def setDefinitionName(value: HyperParameterTrainingJobDefinitionName): Self = StObject.set(x, "DefinitionName", value.asInstanceOf[js.Any])
+    inline def setDefinitionName(value: HyperParameterTrainingJobDefinitionName): Self = StObject.set(x, "DefinitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionNameUndefined: Self = StObject.set(x, "DefinitionName", js.undefined)
+    inline def setDefinitionNameUndefined: Self = StObject.set(x, "DefinitionName", js.undefined)
     
-    @scala.inline
-    def setEnableInterContainerTrafficEncryption(value: Boolean): Self = StObject.set(x, "EnableInterContainerTrafficEncryption", value.asInstanceOf[js.Any])
+    inline def setEnableInterContainerTrafficEncryption(value: Boolean): Self = StObject.set(x, "EnableInterContainerTrafficEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableInterContainerTrafficEncryptionUndefined: Self = StObject.set(x, "EnableInterContainerTrafficEncryption", js.undefined)
+    inline def setEnableInterContainerTrafficEncryptionUndefined: Self = StObject.set(x, "EnableInterContainerTrafficEncryption", js.undefined)
     
-    @scala.inline
-    def setEnableManagedSpotTraining(value: Boolean): Self = StObject.set(x, "EnableManagedSpotTraining", value.asInstanceOf[js.Any])
+    inline def setEnableManagedSpotTraining(value: Boolean): Self = StObject.set(x, "EnableManagedSpotTraining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableManagedSpotTrainingUndefined: Self = StObject.set(x, "EnableManagedSpotTraining", js.undefined)
+    inline def setEnableManagedSpotTrainingUndefined: Self = StObject.set(x, "EnableManagedSpotTraining", js.undefined)
     
-    @scala.inline
-    def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
+    inline def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
+    inline def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
     
-    @scala.inline
-    def setHyperParameterRanges(value: ParameterRanges): Self = StObject.set(x, "HyperParameterRanges", value.asInstanceOf[js.Any])
+    inline def setHyperParameterRanges(value: ParameterRanges): Self = StObject.set(x, "HyperParameterRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperParameterRangesUndefined: Self = StObject.set(x, "HyperParameterRanges", js.undefined)
+    inline def setHyperParameterRangesUndefined: Self = StObject.set(x, "HyperParameterRanges", js.undefined)
     
-    @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
+    inline def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
     
-    @scala.inline
-    def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
+    inline def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
+    inline def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceConfig(value: ResourceConfig): Self = StObject.set(x, "ResourceConfig", value.asInstanceOf[js.Any])
+    inline def setResourceConfig(value: ResourceConfig): Self = StObject.set(x, "ResourceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticHyperParameters(value: HyperParameters): Self = StObject.set(x, "StaticHyperParameters", value.asInstanceOf[js.Any])
+    inline def setStaticHyperParameters(value: HyperParameters): Self = StObject.set(x, "StaticHyperParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticHyperParametersUndefined: Self = StObject.set(x, "StaticHyperParameters", js.undefined)
+    inline def setStaticHyperParametersUndefined: Self = StObject.set(x, "StaticHyperParameters", js.undefined)
     
-    @scala.inline
-    def setStoppingCondition(value: StoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
+    inline def setStoppingCondition(value: StoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuningObjective(value: HyperParameterTuningJobObjective): Self = StObject.set(x, "TuningObjective", value.asInstanceOf[js.Any])
+    inline def setTuningObjective(value: HyperParameterTuningJobObjective): Self = StObject.set(x, "TuningObjective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuningObjectiveUndefined: Self = StObject.set(x, "TuningObjective", js.undefined)
+    inline def setTuningObjectiveUndefined: Self = StObject.set(x, "TuningObjective", js.undefined)
     
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

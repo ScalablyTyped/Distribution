@@ -13,19 +13,15 @@ trait StreamJournalToKinesisResponse extends StObject {
 }
 object StreamJournalToKinesisResponse {
   
-  @scala.inline
-  def apply(): StreamJournalToKinesisResponse = {
+  inline def apply(): StreamJournalToKinesisResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamJournalToKinesisResponse]
   }
   
-  @scala.inline
-  implicit class StreamJournalToKinesisResponseMutableBuilder[Self <: StreamJournalToKinesisResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StreamJournalToKinesisResponse](x: Self) {
     
-    @scala.inline
-    def setStreamId(value: UniqueId): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: UniqueId): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
   }
 }

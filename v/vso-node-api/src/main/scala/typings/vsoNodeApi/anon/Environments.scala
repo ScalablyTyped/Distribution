@@ -20,8 +20,7 @@ trait Environments extends StObject {
 }
 object Environments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     details: scala.Double,
     environments: scala.Double,
     issues: scala.Double,
@@ -33,25 +32,18 @@ object Environments {
     __obj.asInstanceOf[Environments]
   }
   
-  @scala.inline
-  implicit class EnvironmentsMutableBuilder[Self <: Environments] (val x: Self) extends AnyVal {
+  extension [Self <: Environments](x: Self) {
     
-    @scala.inline
-    def setDetails(value: scala.Double): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: scala.Double): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironments(value: scala.Double): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+    inline def setEnvironments(value: scala.Double): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssues(value: scala.Double): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+    inline def setIssues(value: scala.Double): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseInfo(value: scala.Double): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
+    inline def setReleaseInfo(value: scala.Double): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResults(value: scala.Double): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
+    inline def setTestResults(value: scala.Double): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItems(value: scala.Double): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: scala.Double): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
   }
 }

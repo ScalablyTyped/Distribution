@@ -52,16 +52,12 @@ object Notifications {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createBadgeUpdaterForApplication(): typings.winrt.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")().asInstanceOf[typings.winrt.Windows.UI.Notifications.BadgeUpdater]
-    @scala.inline
-    def createBadgeUpdaterForApplication(applicationId: String): typings.winrt.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.BadgeUpdater]
+    inline def createBadgeUpdaterForApplication(): typings.winrt.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")().asInstanceOf[typings.winrt.Windows.UI.Notifications.BadgeUpdater]
+    inline def createBadgeUpdaterForApplication(applicationId: String): typings.winrt.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.BadgeUpdater]
     
-    @scala.inline
-    def createBadgeUpdaterForSecondaryTile(tileId: String): typings.winrt.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.BadgeUpdater]
+    inline def createBadgeUpdaterForSecondaryTile(tileId: String): typings.winrt.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.BadgeUpdater]
     
-    @scala.inline
-    def getTemplateContent(`type`: BadgeTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
+    inline def getTemplateContent(`type`: BadgeTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
   }
   
   @JSGlobal("Windows.UI.Notifications.BadgeUpdater")
@@ -282,16 +278,12 @@ object Notifications {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createTileUpdaterForApplication(): typings.winrt.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")().asInstanceOf[typings.winrt.Windows.UI.Notifications.TileUpdater]
-    @scala.inline
-    def createTileUpdaterForApplication(applicationId: String): typings.winrt.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.TileUpdater]
+    inline def createTileUpdaterForApplication(): typings.winrt.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")().asInstanceOf[typings.winrt.Windows.UI.Notifications.TileUpdater]
+    inline def createTileUpdaterForApplication(applicationId: String): typings.winrt.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.TileUpdater]
     
-    @scala.inline
-    def createTileUpdaterForSecondaryTile(tileId: String): typings.winrt.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.TileUpdater]
+    inline def createTileUpdaterForSecondaryTile(tileId: String): typings.winrt.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.TileUpdater]
     
-    @scala.inline
-    def getTemplateContent(`type`: TileTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
+    inline def getTemplateContent(`type`: TileTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
   }
   
   @JSGlobal("Windows.UI.Notifications.TileUpdater")
@@ -369,13 +361,10 @@ object Notifications {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createToastNotifier(): typings.winrt.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")().asInstanceOf[typings.winrt.Windows.UI.Notifications.ToastNotifier]
-    @scala.inline
-    def createToastNotifier(applicationId: String): typings.winrt.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.ToastNotifier]
+    inline def createToastNotifier(): typings.winrt.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")().asInstanceOf[typings.winrt.Windows.UI.Notifications.ToastNotifier]
+    inline def createToastNotifier(applicationId: String): typings.winrt.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Notifications.ToastNotifier]
     
-    @scala.inline
-    def getTemplateContent(`type`: ToastTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
+    inline def getTemplateContent(`type`: ToastTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
   }
   
   @JSGlobal("Windows.UI.Notifications.ToastNotifier")

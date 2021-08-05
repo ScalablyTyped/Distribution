@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DependencyInfo extends StObject {
   
-  @JSName("Access.DependencyInfo_typekey")
+  /* private */ @JSName("Access.DependencyInfo_typekey")
   var AccessDotDependencyInfo_typekey: DependencyInfo
   
   def Dependants(Index: String): AccessObject
@@ -40,8 +40,7 @@ trait DependencyInfo extends StObject {
 }
 object DependencyInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotDependencyInfo_typekey: DependencyInfo,
     Dependants: DependencyObjects,
     Dependencies: DependencyObjects,
@@ -56,31 +55,22 @@ object DependencyInfo {
     __obj.asInstanceOf[DependencyInfo]
   }
   
-  @scala.inline
-  implicit class DependencyInfoMutableBuilder[Self <: DependencyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DependencyInfo](x: Self) {
     
-    @scala.inline
-    def setAccessDotDependencyInfo_typekey(value: DependencyInfo): Self = StObject.set(x, "Access.DependencyInfo_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotDependencyInfo_typekey(value: DependencyInfo): Self = StObject.set(x, "Access.DependencyInfo_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependants(value: DependencyObjects): Self = StObject.set(x, "Dependants", value.asInstanceOf[js.Any])
+    inline def setDependants(value: DependencyObjects): Self = StObject.set(x, "Dependants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencies(value: DependencyObjects): Self = StObject.set(x, "Dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: DependencyObjects): Self = StObject.set(x, "Dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsufficientPermissions(value: DependencyObjects): Self = StObject.set(x, "InsufficientPermissions", value.asInstanceOf[js.Any])
+    inline def setInsufficientPermissions(value: DependencyObjects): Self = StObject.set(x, "InsufficientPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutOfDateObjects(value: DependencyObjects): Self = StObject.set(x, "OutOfDateObjects", value.asInstanceOf[js.Any])
+    inline def setOutOfDateObjects(value: DependencyObjects): Self = StObject.set(x, "OutOfDateObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsupportedObjects(value: DependencyObjects): Self = StObject.set(x, "UnsupportedObjects", value.asInstanceOf[js.Any])
+    inline def setUnsupportedObjects(value: DependencyObjects): Self = StObject.set(x, "UnsupportedObjects", value.asInstanceOf[js.Any])
   }
 }

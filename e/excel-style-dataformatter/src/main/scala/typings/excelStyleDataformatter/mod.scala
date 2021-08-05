@@ -59,26 +59,20 @@ object mod {
   }
   object FormatResult {
     
-    @scala.inline
-    def apply(align: String, color: String, pattern: String, value: String): FormatResult = {
+    inline def apply(align: String, color: String, pattern: String, value: String): FormatResult = {
       val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatResult]
     }
     
-    @scala.inline
-    implicit class FormatResultMutableBuilder[Self <: FormatResult] (val x: Self) extends AnyVal {
+    extension [Self <: FormatResult](x: Self) {
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,50 +90,36 @@ object mod {
   }
   object FormatterOptions {
     
-    @scala.inline
-    def apply(): FormatterOptions = {
+    inline def apply(): FormatterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatterOptions]
     }
     
-    @scala.inline
-    implicit class FormatterOptionsMutableBuilder[Self <: FormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormatterOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLocales(value: js.Array[LocalesOptions]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[LocalesOptions]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+      inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      @scala.inline
-      def setLocalesVarargs(value: LocalesOptions*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: LocalesOptions*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setTransformCode(value: /* code */ js.Any => js.Any): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
+      inline def setTransformCode(value: /* code */ js.Any => js.Any): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformCodeUndefined: Self = StObject.set(x, "transformCode", js.undefined)
+      inline def setTransformCodeUndefined: Self = StObject.set(x, "transformCode", js.undefined)
       
-      @scala.inline
-      def setUTCOffset(value: Double): Self = StObject.set(x, "UTCOffset", value.asInstanceOf[js.Any])
+      inline def setUTCOffset(value: Double): Self = StObject.set(x, "UTCOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUTCOffsetNull: Self = StObject.set(x, "UTCOffset", null)
+      inline def setUTCOffsetNull: Self = StObject.set(x, "UTCOffset", null)
       
-      @scala.inline
-      def setUTCOffsetUndefined: Self = StObject.set(x, "UTCOffset", js.undefined)
+      inline def setUTCOffsetUndefined: Self = StObject.set(x, "UTCOffset", js.undefined)
     }
   }
   
@@ -163,8 +143,7 @@ object mod {
   }
   object LocalesOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       days: js.Array[String],
       daysShort: js.Array[String],
       decimalSeparator: String,
@@ -178,44 +157,31 @@ object mod {
       __obj.asInstanceOf[LocalesOptions]
     }
     
-    @scala.inline
-    implicit class LocalesOptionsMutableBuilder[Self <: LocalesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LocalesOptions](x: Self) {
       
-      @scala.inline
-      def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysShort(value: js.Array[String]): Self = StObject.set(x, "daysShort", value.asInstanceOf[js.Any])
+      inline def setDaysShort(value: js.Array[String]): Self = StObject.set(x, "daysShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysShortVarargs(value: String*): Self = StObject.set(x, "daysShort", js.Array(value :_*))
+      inline def setDaysShortVarargs(value: String*): Self = StObject.set(x, "daysShort", js.Array(value :_*))
       
-      @scala.inline
-      def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
       
-      @scala.inline
-      def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+      inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormats(value: StringDictionary[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: StringDictionary[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
+      inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandSeparator(value: String): Self = StObject.set(x, "thousandSeparator", value.asInstanceOf[js.Any])
+      inline def setThousandSeparator(value: String): Self = StObject.set(x, "thousandSeparator", value.asInstanceOf[js.Any])
     }
   }
 }

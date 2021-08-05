@@ -33,34 +33,25 @@ trait InkAnalysisParagraphData extends StObject {
 }
 object InkAnalysisParagraphData {
   
-  @scala.inline
-  def apply(): InkAnalysisParagraphData = {
+  inline def apply(): InkAnalysisParagraphData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkAnalysisParagraphData]
   }
   
-  @scala.inline
-  implicit class InkAnalysisParagraphDataMutableBuilder[Self <: InkAnalysisParagraphData] (val x: Self) extends AnyVal {
+  extension [Self <: InkAnalysisParagraphData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInkAnalysis(value: InkAnalysisData): Self = StObject.set(x, "inkAnalysis", value.asInstanceOf[js.Any])
+    inline def setInkAnalysis(value: InkAnalysisData): Self = StObject.set(x, "inkAnalysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkAnalysisUndefined: Self = StObject.set(x, "inkAnalysis", js.undefined)
+    inline def setInkAnalysisUndefined: Self = StObject.set(x, "inkAnalysis", js.undefined)
     
-    @scala.inline
-    def setLines(value: js.Array[InkAnalysisLineData]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[InkAnalysisLineData]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setLinesVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

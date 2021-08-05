@@ -28,6 +28,5 @@ object EntityKey {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def equals(k1: typings.breeze.breeze.EntityKey, k2: typings.breeze.breeze.EntityKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(k1.asInstanceOf[js.Any], k2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals(k1: typings.breeze.breeze.EntityKey, k2: typings.breeze.breeze.EntityKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(k1.asInstanceOf[js.Any], k2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

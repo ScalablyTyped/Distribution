@@ -10,10 +10,8 @@ object esmParseISOIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(argument: String): Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
-    @scala.inline
-    def apply(argument: String, options: AdditionalDigits): Date = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(argument: String): Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def apply(argument: String, options: AdditionalDigits): Date = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/parseISO/index", JSImport.Default)
     @js.native

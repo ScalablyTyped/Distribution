@@ -58,61 +58,43 @@ trait ParamsResourcePermissionsUpdate
 }
 object ParamsResourcePermissionsUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourcePermissionsUpdate = {
+  inline def apply(): ParamsResourcePermissionsUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePermissionsUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePermissionsUpdateMutableBuilder[Self <: ParamsResourcePermissionsUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePermissionsUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+    inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+    inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
-    @scala.inline
-    def setRemoveExpiration(value: Boolean): Self = StObject.set(x, "removeExpiration", value.asInstanceOf[js.Any])
+    inline def setRemoveExpiration(value: Boolean): Self = StObject.set(x, "removeExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveExpirationUndefined: Self = StObject.set(x, "removeExpiration", js.undefined)
+    inline def setRemoveExpirationUndefined: Self = StObject.set(x, "removeExpiration", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaPermission): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaPermission): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
-    @scala.inline
-    def setTransferOwnership(value: Boolean): Self = StObject.set(x, "transferOwnership", value.asInstanceOf[js.Any])
+    inline def setTransferOwnership(value: Boolean): Self = StObject.set(x, "transferOwnership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferOwnershipUndefined: Self = StObject.set(x, "transferOwnership", js.undefined)
+    inline def setTransferOwnershipUndefined: Self = StObject.set(x, "transferOwnership", js.undefined)
     
-    @scala.inline
-    def setUseDomainAdminAccess(value: Boolean): Self = StObject.set(x, "useDomainAdminAccess", value.asInstanceOf[js.Any])
+    inline def setUseDomainAdminAccess(value: Boolean): Self = StObject.set(x, "useDomainAdminAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDomainAdminAccessUndefined: Self = StObject.set(x, "useDomainAdminAccess", js.undefined)
+    inline def setUseDomainAdminAccessUndefined: Self = StObject.set(x, "useDomainAdminAccess", js.undefined)
   }
 }

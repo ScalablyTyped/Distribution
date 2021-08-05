@@ -11,6 +11,5 @@ object utilsUnidriverDepLogWrapperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unidriverDepLogWrapper[T](originalDriverFactory: js.Function1[/* base */ UniDriver[js.Any], T], driverFactoryName: String): js.Function1[/* base */ UniDriver[js.Any], T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unidriverDepLogWrapper")(originalDriverFactory.asInstanceOf[js.Any], driverFactoryName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* base */ UniDriver[js.Any], T]]
+  inline def unidriverDepLogWrapper[T](originalDriverFactory: js.Function1[/* base */ UniDriver[js.Any], T], driverFactoryName: String): js.Function1[/* base */ UniDriver[js.Any], T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unidriverDepLogWrapper")(originalDriverFactory.asInstanceOf[js.Any], driverFactoryName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* base */ UniDriver[js.Any], T]]
 }

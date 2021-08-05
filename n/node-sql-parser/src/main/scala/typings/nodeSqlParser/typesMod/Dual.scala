@@ -11,17 +11,14 @@ trait Dual extends StObject {
 }
 object Dual {
   
-  @scala.inline
-  def apply(): Dual = {
+  inline def apply(): Dual = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("dual")
     __obj.asInstanceOf[Dual]
   }
   
-  @scala.inline
-  implicit class DualMutableBuilder[Self <: Dual] (val x: Self) extends AnyVal {
+  extension [Self <: Dual](x: Self) {
     
-    @scala.inline
-    def setType(value: dual): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dual): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

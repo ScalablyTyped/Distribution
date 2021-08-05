@@ -33,37 +33,27 @@ trait PutAnomalyDetectorInput extends StObject {
 }
 object PutAnomalyDetectorInput {
   
-  @scala.inline
-  def apply(MetricName: MetricName, Namespace: Namespace, Stat: AnomalyDetectorMetricStat): PutAnomalyDetectorInput = {
+  inline def apply(MetricName: MetricName, Namespace: Namespace, Stat: AnomalyDetectorMetricStat): PutAnomalyDetectorInput = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Stat = Stat.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAnomalyDetectorInput]
   }
   
-  @scala.inline
-  implicit class PutAnomalyDetectorInputMutableBuilder[Self <: PutAnomalyDetectorInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutAnomalyDetectorInput](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: AnomalyDetectorConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: AnomalyDetectorConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStat(value: AnomalyDetectorMetricStat): Self = StObject.set(x, "Stat", value.asInstanceOf[js.Any])
+    inline def setStat(value: AnomalyDetectorMetricStat): Self = StObject.set(x, "Stat", value.asInstanceOf[js.Any])
   }
 }

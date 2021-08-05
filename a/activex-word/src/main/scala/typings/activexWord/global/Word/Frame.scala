@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Frame")
 @js.native
-class Frame protected ()
+/* private */ class Frame ()
   extends StObject
      with typings.activexWord.Word.Frame {
   
@@ -79,7 +79,7 @@ class Frame protected ()
   /* CompleteClass */
   var WidthRule: WdFrameSizeRule = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Frame_typekey")
   var WordDotFrame_typekey: typings.activexWord.Word.Frame = js.native
 }

@@ -17,8 +17,7 @@ trait ParametersActivityListOrgEventsForAuthenticatedUserEndpoint extends StObje
 }
 object ParametersActivityListOrgEventsForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListOrgEventsForAuthenticatedUserEndpoint,
     request: ActivityListOrgEventsForAuthenticatedUserRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityListOrgEventsForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersActivityListOrgEventsForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListOrgEventsForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersActivityListOrgEventsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListOrgEventsForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListOrgEventsForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListOrgEventsForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityListOrgEventsForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityListOrgEventsForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

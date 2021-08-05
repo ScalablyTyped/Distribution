@@ -39,8 +39,7 @@ trait ViewMixin
 }
 object ViewMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChildren: js.Any,
     beforeEl: js.Any,
     bindEvents: js.Any,
@@ -74,49 +73,34 @@ object ViewMixin {
     __obj.asInstanceOf[ViewMixin]
   }
   
-  @scala.inline
-  implicit class ViewMixinMutableBuilder[Self <: ViewMixin] (val x: Self) extends AnyVal {
+  extension [Self <: ViewMixin](x: Self) {
     
-    @scala.inline
-    def setBindUIElements(value: js.Any): Self = StObject.set(x, "bindUIElements", value.asInstanceOf[js.Any])
+    inline def setBindUIElements(value: js.Any): Self = StObject.set(x, "bindUIElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildViewEventPrefix(value: js.Any): Self = StObject.set(x, "childViewEventPrefix", value.asInstanceOf[js.Any])
+    inline def setChildViewEventPrefix(value: js.Any): Self = StObject.set(x, "childViewEventPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateEntityEvents(value: js.Any): Self = StObject.set(x, "delegateEntityEvents", value.asInstanceOf[js.Any])
+    inline def setDelegateEntityEvents(value: js.Any): Self = StObject.set(x, "delegateEntityEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateEvents(value: js.Any): Self = StObject.set(x, "delegateEvents", value.asInstanceOf[js.Any])
+    inline def setDelegateEvents(value: js.Any): Self = StObject.set(x, "delegateEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTriggers(value: js.Any): Self = StObject.set(x, "getTriggers", value.asInstanceOf[js.Any])
+    inline def setGetTriggers(value: js.Any): Self = StObject.set(x, "getTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAttached(value: js.Any): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
+    inline def setIsAttached(value: js.Any): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDestroyed(value: js.Any): Self = StObject.set(x, "isDestroyed", value.asInstanceOf[js.Any])
+    inline def setIsDestroyed(value: js.Any): Self = StObject.set(x, "isDestroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRendered(value: js.Any): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
+    inline def setIsRendered(value: js.Any): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDestroyLifecycle(value: js.Any): Self = StObject.set(x, "supportsDestroyLifecycle", value.asInstanceOf[js.Any])
+    inline def setSupportsDestroyLifecycle(value: js.Any): Self = StObject.set(x, "supportsDestroyLifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsRenderLifecycle(value: js.Any): Self = StObject.set(x, "supportsRenderLifecycle", value.asInstanceOf[js.Any])
+    inline def setSupportsRenderLifecycle(value: js.Any): Self = StObject.set(x, "supportsRenderLifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerMethod(value: js.Any): Self = StObject.set(x, "triggerMethod", value.asInstanceOf[js.Any])
+    inline def setTriggerMethod(value: js.Any): Self = StObject.set(x, "triggerMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnbindUIElements(value: js.Any): Self = StObject.set(x, "unbindUIElements", value.asInstanceOf[js.Any])
+    inline def setUnbindUIElements(value: js.Any): Self = StObject.set(x, "unbindUIElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndelegateEntityEvents(value: js.Any): Self = StObject.set(x, "undelegateEntityEvents", value.asInstanceOf[js.Any])
+    inline def setUndelegateEntityEvents(value: js.Any): Self = StObject.set(x, "undelegateEntityEvents", value.asInstanceOf[js.Any])
   }
 }

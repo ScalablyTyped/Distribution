@@ -11,16 +11,13 @@ trait Commands extends StObject {
 }
 object Commands {
   
-  @scala.inline
-  def apply(Commands: StringDictionary[Double]): Commands = {
+  inline def apply(Commands: StringDictionary[Double]): Commands = {
     val __obj = js.Dynamic.literal(Commands = Commands.asInstanceOf[js.Any])
     __obj.asInstanceOf[Commands]
   }
   
-  @scala.inline
-  implicit class CommandsMutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
+  extension [Self <: Commands](x: Self) {
     
-    @scala.inline
-    def setCommands(value: StringDictionary[Double]): Self = StObject.set(x, "Commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: StringDictionary[Double]): Self = StObject.set(x, "Commands", value.asInstanceOf[js.Any])
   }
 }

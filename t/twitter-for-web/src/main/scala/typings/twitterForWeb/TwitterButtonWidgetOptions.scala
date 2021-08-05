@@ -42,43 +42,31 @@ trait TwitterButtonWidgetOptions
 }
 object TwitterButtonWidgetOptions {
   
-  @scala.inline
-  def apply(): TwitterButtonWidgetOptions = {
+  inline def apply(): TwitterButtonWidgetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TwitterButtonWidgetOptions]
   }
   
-  @scala.inline
-  implicit class TwitterButtonWidgetOptionsMutableBuilder[Self <: TwitterButtonWidgetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterButtonWidgetOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setCounturl(value: String): Self = StObject.set(x, "counturl", value.asInstanceOf[js.Any])
+    inline def setCounturl(value: String): Self = StObject.set(x, "counturl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounturlUndefined: Self = StObject.set(x, "counturl", js.undefined)
+    inline def setCounturlUndefined: Self = StObject.set(x, "counturl", js.undefined)
     
-    @scala.inline
-    def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

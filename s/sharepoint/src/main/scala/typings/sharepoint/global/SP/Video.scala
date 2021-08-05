@@ -100,8 +100,7 @@ object Video {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def createVideo(
+    inline def createVideo(
       context: typings.sharepoint.SP.ClientContext,
       parentFolder: typings.sharepoint.SP.Folder,
       name: String,
@@ -109,20 +108,17 @@ object Video {
     ): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideo")(context.asInstanceOf[js.Any], parentFolder.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ctid.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def getEmbedCode(
+    inline def getEmbedCode(
       context: typings.sharepoint.SP.ClientContext,
       videoPath: String,
       properties: typings.sharepoint.SP.Video.EmbedCodeConfiguration
     ): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getEmbedCode")(context.asInstanceOf[js.Any], videoPath.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
     
     /* static member */
-    @scala.inline
-    def migrateVideo[T](context: typings.sharepoint.SP.ClientContext, videoFile: typings.sharepoint.SP.File): typings.sharepoint.SP.ListItem[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("migrateVideo")(context.asInstanceOf[js.Any], videoFile.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ListItem[T]]
+    inline def migrateVideo[T](context: typings.sharepoint.SP.ClientContext, videoFile: typings.sharepoint.SP.File): typings.sharepoint.SP.ListItem[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("migrateVideo")(context.asInstanceOf[js.Any], videoFile.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ListItem[T]]
     
     /* static member */
-    @scala.inline
-    def uploadVideo(
+    inline def uploadVideo(
       context: typings.sharepoint.SP.ClientContext,
       list: typings.sharepoint.SP.List[js.Any],
       fileName: String,

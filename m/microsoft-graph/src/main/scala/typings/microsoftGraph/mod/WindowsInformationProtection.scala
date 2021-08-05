@@ -135,250 +135,169 @@ trait WindowsInformationProtection
 }
 object WindowsInformationProtection {
   
-  @scala.inline
-  def apply(): WindowsInformationProtection = {
+  inline def apply(): WindowsInformationProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtection]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionMutableBuilder[Self <: WindowsInformationProtection] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtection](x: Self) {
     
-    @scala.inline
-    def setAssignments(value: NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    inline def setAssignments(value: NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
     
-    @scala.inline
-    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    @scala.inline
-    def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
     
-    @scala.inline
-    def setAzureRightsManagementServicesAllowed(value: Boolean): Self = StObject.set(x, "azureRightsManagementServicesAllowed", value.asInstanceOf[js.Any])
+    inline def setAzureRightsManagementServicesAllowed(value: Boolean): Self = StObject.set(x, "azureRightsManagementServicesAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzureRightsManagementServicesAllowedUndefined: Self = StObject.set(x, "azureRightsManagementServicesAllowed", js.undefined)
+    inline def setAzureRightsManagementServicesAllowedUndefined: Self = StObject.set(x, "azureRightsManagementServicesAllowed", js.undefined)
     
-    @scala.inline
-    def setDataRecoveryCertificate(value: NullableOption[WindowsInformationProtectionDataRecoveryCertificate]): Self = StObject.set(x, "dataRecoveryCertificate", value.asInstanceOf[js.Any])
+    inline def setDataRecoveryCertificate(value: NullableOption[WindowsInformationProtectionDataRecoveryCertificate]): Self = StObject.set(x, "dataRecoveryCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRecoveryCertificateNull: Self = StObject.set(x, "dataRecoveryCertificate", null)
+    inline def setDataRecoveryCertificateNull: Self = StObject.set(x, "dataRecoveryCertificate", null)
     
-    @scala.inline
-    def setDataRecoveryCertificateUndefined: Self = StObject.set(x, "dataRecoveryCertificate", js.undefined)
+    inline def setDataRecoveryCertificateUndefined: Self = StObject.set(x, "dataRecoveryCertificate", js.undefined)
     
-    @scala.inline
-    def setEnforcementLevel(value: WindowsInformationProtectionEnforcementLevel): Self = StObject.set(x, "enforcementLevel", value.asInstanceOf[js.Any])
+    inline def setEnforcementLevel(value: WindowsInformationProtectionEnforcementLevel): Self = StObject.set(x, "enforcementLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcementLevelUndefined: Self = StObject.set(x, "enforcementLevel", js.undefined)
+    inline def setEnforcementLevelUndefined: Self = StObject.set(x, "enforcementLevel", js.undefined)
     
-    @scala.inline
-    def setEnterpriseDomain(value: NullableOption[String]): Self = StObject.set(x, "enterpriseDomain", value.asInstanceOf[js.Any])
+    inline def setEnterpriseDomain(value: NullableOption[String]): Self = StObject.set(x, "enterpriseDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseDomainNull: Self = StObject.set(x, "enterpriseDomain", null)
+    inline def setEnterpriseDomainNull: Self = StObject.set(x, "enterpriseDomain", null)
     
-    @scala.inline
-    def setEnterpriseDomainUndefined: Self = StObject.set(x, "enterpriseDomain", js.undefined)
+    inline def setEnterpriseDomainUndefined: Self = StObject.set(x, "enterpriseDomain", js.undefined)
     
-    @scala.inline
-    def setEnterpriseIPRanges(value: NullableOption[js.Array[WindowsInformationProtectionIPRangeCollection]]): Self = StObject.set(x, "enterpriseIPRanges", value.asInstanceOf[js.Any])
+    inline def setEnterpriseIPRanges(value: NullableOption[js.Array[WindowsInformationProtectionIPRangeCollection]]): Self = StObject.set(x, "enterpriseIPRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseIPRangesAreAuthoritative(value: Boolean): Self = StObject.set(x, "enterpriseIPRangesAreAuthoritative", value.asInstanceOf[js.Any])
+    inline def setEnterpriseIPRangesAreAuthoritative(value: Boolean): Self = StObject.set(x, "enterpriseIPRangesAreAuthoritative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseIPRangesAreAuthoritativeUndefined: Self = StObject.set(x, "enterpriseIPRangesAreAuthoritative", js.undefined)
+    inline def setEnterpriseIPRangesAreAuthoritativeUndefined: Self = StObject.set(x, "enterpriseIPRangesAreAuthoritative", js.undefined)
     
-    @scala.inline
-    def setEnterpriseIPRangesNull: Self = StObject.set(x, "enterpriseIPRanges", null)
+    inline def setEnterpriseIPRangesNull: Self = StObject.set(x, "enterpriseIPRanges", null)
     
-    @scala.inline
-    def setEnterpriseIPRangesUndefined: Self = StObject.set(x, "enterpriseIPRanges", js.undefined)
+    inline def setEnterpriseIPRangesUndefined: Self = StObject.set(x, "enterpriseIPRanges", js.undefined)
     
-    @scala.inline
-    def setEnterpriseIPRangesVarargs(value: WindowsInformationProtectionIPRangeCollection*): Self = StObject.set(x, "enterpriseIPRanges", js.Array(value :_*))
+    inline def setEnterpriseIPRangesVarargs(value: WindowsInformationProtectionIPRangeCollection*): Self = StObject.set(x, "enterpriseIPRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterpriseInternalProxyServers(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseInternalProxyServers", value.asInstanceOf[js.Any])
+    inline def setEnterpriseInternalProxyServers(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseInternalProxyServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseInternalProxyServersNull: Self = StObject.set(x, "enterpriseInternalProxyServers", null)
+    inline def setEnterpriseInternalProxyServersNull: Self = StObject.set(x, "enterpriseInternalProxyServers", null)
     
-    @scala.inline
-    def setEnterpriseInternalProxyServersUndefined: Self = StObject.set(x, "enterpriseInternalProxyServers", js.undefined)
+    inline def setEnterpriseInternalProxyServersUndefined: Self = StObject.set(x, "enterpriseInternalProxyServers", js.undefined)
     
-    @scala.inline
-    def setEnterpriseInternalProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseInternalProxyServers", js.Array(value :_*))
+    inline def setEnterpriseInternalProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseInternalProxyServers", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterpriseNetworkDomainNames(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseNetworkDomainNames", value.asInstanceOf[js.Any])
+    inline def setEnterpriseNetworkDomainNames(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseNetworkDomainNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseNetworkDomainNamesNull: Self = StObject.set(x, "enterpriseNetworkDomainNames", null)
+    inline def setEnterpriseNetworkDomainNamesNull: Self = StObject.set(x, "enterpriseNetworkDomainNames", null)
     
-    @scala.inline
-    def setEnterpriseNetworkDomainNamesUndefined: Self = StObject.set(x, "enterpriseNetworkDomainNames", js.undefined)
+    inline def setEnterpriseNetworkDomainNamesUndefined: Self = StObject.set(x, "enterpriseNetworkDomainNames", js.undefined)
     
-    @scala.inline
-    def setEnterpriseNetworkDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseNetworkDomainNames", js.Array(value :_*))
+    inline def setEnterpriseNetworkDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseNetworkDomainNames", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterpriseProtectedDomainNames(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseProtectedDomainNames", value.asInstanceOf[js.Any])
+    inline def setEnterpriseProtectedDomainNames(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseProtectedDomainNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseProtectedDomainNamesNull: Self = StObject.set(x, "enterpriseProtectedDomainNames", null)
+    inline def setEnterpriseProtectedDomainNamesNull: Self = StObject.set(x, "enterpriseProtectedDomainNames", null)
     
-    @scala.inline
-    def setEnterpriseProtectedDomainNamesUndefined: Self = StObject.set(x, "enterpriseProtectedDomainNames", js.undefined)
+    inline def setEnterpriseProtectedDomainNamesUndefined: Self = StObject.set(x, "enterpriseProtectedDomainNames", js.undefined)
     
-    @scala.inline
-    def setEnterpriseProtectedDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProtectedDomainNames", js.Array(value :_*))
+    inline def setEnterpriseProtectedDomainNamesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProtectedDomainNames", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterpriseProxiedDomains(value: NullableOption[js.Array[WindowsInformationProtectionProxiedDomainCollection]]): Self = StObject.set(x, "enterpriseProxiedDomains", value.asInstanceOf[js.Any])
+    inline def setEnterpriseProxiedDomains(value: NullableOption[js.Array[WindowsInformationProtectionProxiedDomainCollection]]): Self = StObject.set(x, "enterpriseProxiedDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseProxiedDomainsNull: Self = StObject.set(x, "enterpriseProxiedDomains", null)
+    inline def setEnterpriseProxiedDomainsNull: Self = StObject.set(x, "enterpriseProxiedDomains", null)
     
-    @scala.inline
-    def setEnterpriseProxiedDomainsUndefined: Self = StObject.set(x, "enterpriseProxiedDomains", js.undefined)
+    inline def setEnterpriseProxiedDomainsUndefined: Self = StObject.set(x, "enterpriseProxiedDomains", js.undefined)
     
-    @scala.inline
-    def setEnterpriseProxiedDomainsVarargs(value: WindowsInformationProtectionProxiedDomainCollection*): Self = StObject.set(x, "enterpriseProxiedDomains", js.Array(value :_*))
+    inline def setEnterpriseProxiedDomainsVarargs(value: WindowsInformationProtectionProxiedDomainCollection*): Self = StObject.set(x, "enterpriseProxiedDomains", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterpriseProxyServers(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseProxyServers", value.asInstanceOf[js.Any])
+    inline def setEnterpriseProxyServers(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "enterpriseProxyServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseProxyServersAreAuthoritative(value: Boolean): Self = StObject.set(x, "enterpriseProxyServersAreAuthoritative", value.asInstanceOf[js.Any])
+    inline def setEnterpriseProxyServersAreAuthoritative(value: Boolean): Self = StObject.set(x, "enterpriseProxyServersAreAuthoritative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseProxyServersAreAuthoritativeUndefined: Self = StObject.set(x, "enterpriseProxyServersAreAuthoritative", js.undefined)
+    inline def setEnterpriseProxyServersAreAuthoritativeUndefined: Self = StObject.set(x, "enterpriseProxyServersAreAuthoritative", js.undefined)
     
-    @scala.inline
-    def setEnterpriseProxyServersNull: Self = StObject.set(x, "enterpriseProxyServers", null)
+    inline def setEnterpriseProxyServersNull: Self = StObject.set(x, "enterpriseProxyServers", null)
     
-    @scala.inline
-    def setEnterpriseProxyServersUndefined: Self = StObject.set(x, "enterpriseProxyServers", js.undefined)
+    inline def setEnterpriseProxyServersUndefined: Self = StObject.set(x, "enterpriseProxyServers", js.undefined)
     
-    @scala.inline
-    def setEnterpriseProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProxyServers", js.Array(value :_*))
+    inline def setEnterpriseProxyServersVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "enterpriseProxyServers", js.Array(value :_*))
     
-    @scala.inline
-    def setExemptAppLockerFiles(value: NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]): Self = StObject.set(x, "exemptAppLockerFiles", value.asInstanceOf[js.Any])
+    inline def setExemptAppLockerFiles(value: NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]): Self = StObject.set(x, "exemptAppLockerFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExemptAppLockerFilesNull: Self = StObject.set(x, "exemptAppLockerFiles", null)
+    inline def setExemptAppLockerFilesNull: Self = StObject.set(x, "exemptAppLockerFiles", null)
     
-    @scala.inline
-    def setExemptAppLockerFilesUndefined: Self = StObject.set(x, "exemptAppLockerFiles", js.undefined)
+    inline def setExemptAppLockerFilesUndefined: Self = StObject.set(x, "exemptAppLockerFiles", js.undefined)
     
-    @scala.inline
-    def setExemptAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "exemptAppLockerFiles", js.Array(value :_*))
+    inline def setExemptAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "exemptAppLockerFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setExemptApps(value: NullableOption[js.Array[WindowsInformationProtectionApp]]): Self = StObject.set(x, "exemptApps", value.asInstanceOf[js.Any])
+    inline def setExemptApps(value: NullableOption[js.Array[WindowsInformationProtectionApp]]): Self = StObject.set(x, "exemptApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExemptAppsNull: Self = StObject.set(x, "exemptApps", null)
+    inline def setExemptAppsNull: Self = StObject.set(x, "exemptApps", null)
     
-    @scala.inline
-    def setExemptAppsUndefined: Self = StObject.set(x, "exemptApps", js.undefined)
+    inline def setExemptAppsUndefined: Self = StObject.set(x, "exemptApps", js.undefined)
     
-    @scala.inline
-    def setExemptAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "exemptApps", js.Array(value :_*))
+    inline def setExemptAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "exemptApps", js.Array(value :_*))
     
-    @scala.inline
-    def setIconsVisible(value: Boolean): Self = StObject.set(x, "iconsVisible", value.asInstanceOf[js.Any])
+    inline def setIconsVisible(value: Boolean): Self = StObject.set(x, "iconsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsVisibleUndefined: Self = StObject.set(x, "iconsVisible", js.undefined)
+    inline def setIconsVisibleUndefined: Self = StObject.set(x, "iconsVisible", js.undefined)
     
-    @scala.inline
-    def setIndexingEncryptedStoresOrItemsBlocked(value: Boolean): Self = StObject.set(x, "indexingEncryptedStoresOrItemsBlocked", value.asInstanceOf[js.Any])
+    inline def setIndexingEncryptedStoresOrItemsBlocked(value: Boolean): Self = StObject.set(x, "indexingEncryptedStoresOrItemsBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexingEncryptedStoresOrItemsBlockedUndefined: Self = StObject.set(x, "indexingEncryptedStoresOrItemsBlocked", js.undefined)
+    inline def setIndexingEncryptedStoresOrItemsBlockedUndefined: Self = StObject.set(x, "indexingEncryptedStoresOrItemsBlocked", js.undefined)
     
-    @scala.inline
-    def setIsAssigned(value: Boolean): Self = StObject.set(x, "isAssigned", value.asInstanceOf[js.Any])
+    inline def setIsAssigned(value: Boolean): Self = StObject.set(x, "isAssigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAssignedUndefined: Self = StObject.set(x, "isAssigned", js.undefined)
+    inline def setIsAssignedUndefined: Self = StObject.set(x, "isAssigned", js.undefined)
     
-    @scala.inline
-    def setNeutralDomainResources(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "neutralDomainResources", value.asInstanceOf[js.Any])
+    inline def setNeutralDomainResources(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "neutralDomainResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeutralDomainResourcesNull: Self = StObject.set(x, "neutralDomainResources", null)
+    inline def setNeutralDomainResourcesNull: Self = StObject.set(x, "neutralDomainResources", null)
     
-    @scala.inline
-    def setNeutralDomainResourcesUndefined: Self = StObject.set(x, "neutralDomainResources", js.undefined)
+    inline def setNeutralDomainResourcesUndefined: Self = StObject.set(x, "neutralDomainResources", js.undefined)
     
-    @scala.inline
-    def setNeutralDomainResourcesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "neutralDomainResources", js.Array(value :_*))
+    inline def setNeutralDomainResourcesVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "neutralDomainResources", js.Array(value :_*))
     
-    @scala.inline
-    def setProtectedAppLockerFiles(value: NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]): Self = StObject.set(x, "protectedAppLockerFiles", value.asInstanceOf[js.Any])
+    inline def setProtectedAppLockerFiles(value: NullableOption[js.Array[WindowsInformationProtectionAppLockerFile]]): Self = StObject.set(x, "protectedAppLockerFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedAppLockerFilesNull: Self = StObject.set(x, "protectedAppLockerFiles", null)
+    inline def setProtectedAppLockerFilesNull: Self = StObject.set(x, "protectedAppLockerFiles", null)
     
-    @scala.inline
-    def setProtectedAppLockerFilesUndefined: Self = StObject.set(x, "protectedAppLockerFiles", js.undefined)
+    inline def setProtectedAppLockerFilesUndefined: Self = StObject.set(x, "protectedAppLockerFiles", js.undefined)
     
-    @scala.inline
-    def setProtectedAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "protectedAppLockerFiles", js.Array(value :_*))
+    inline def setProtectedAppLockerFilesVarargs(value: WindowsInformationProtectionAppLockerFile*): Self = StObject.set(x, "protectedAppLockerFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setProtectedApps(value: NullableOption[js.Array[WindowsInformationProtectionApp]]): Self = StObject.set(x, "protectedApps", value.asInstanceOf[js.Any])
+    inline def setProtectedApps(value: NullableOption[js.Array[WindowsInformationProtectionApp]]): Self = StObject.set(x, "protectedApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedAppsNull: Self = StObject.set(x, "protectedApps", null)
+    inline def setProtectedAppsNull: Self = StObject.set(x, "protectedApps", null)
     
-    @scala.inline
-    def setProtectedAppsUndefined: Self = StObject.set(x, "protectedApps", js.undefined)
+    inline def setProtectedAppsUndefined: Self = StObject.set(x, "protectedApps", js.undefined)
     
-    @scala.inline
-    def setProtectedAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "protectedApps", js.Array(value :_*))
+    inline def setProtectedAppsVarargs(value: WindowsInformationProtectionApp*): Self = StObject.set(x, "protectedApps", js.Array(value :_*))
     
-    @scala.inline
-    def setProtectionUnderLockConfigRequired(value: Boolean): Self = StObject.set(x, "protectionUnderLockConfigRequired", value.asInstanceOf[js.Any])
+    inline def setProtectionUnderLockConfigRequired(value: Boolean): Self = StObject.set(x, "protectionUnderLockConfigRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionUnderLockConfigRequiredUndefined: Self = StObject.set(x, "protectionUnderLockConfigRequired", js.undefined)
+    inline def setProtectionUnderLockConfigRequiredUndefined: Self = StObject.set(x, "protectionUnderLockConfigRequired", js.undefined)
     
-    @scala.inline
-    def setRevokeOnUnenrollDisabled(value: Boolean): Self = StObject.set(x, "revokeOnUnenrollDisabled", value.asInstanceOf[js.Any])
+    inline def setRevokeOnUnenrollDisabled(value: Boolean): Self = StObject.set(x, "revokeOnUnenrollDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokeOnUnenrollDisabledUndefined: Self = StObject.set(x, "revokeOnUnenrollDisabled", js.undefined)
+    inline def setRevokeOnUnenrollDisabledUndefined: Self = StObject.set(x, "revokeOnUnenrollDisabled", js.undefined)
     
-    @scala.inline
-    def setRightsManagementServicesTemplateId(value: NullableOption[String]): Self = StObject.set(x, "rightsManagementServicesTemplateId", value.asInstanceOf[js.Any])
+    inline def setRightsManagementServicesTemplateId(value: NullableOption[String]): Self = StObject.set(x, "rightsManagementServicesTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightsManagementServicesTemplateIdNull: Self = StObject.set(x, "rightsManagementServicesTemplateId", null)
+    inline def setRightsManagementServicesTemplateIdNull: Self = StObject.set(x, "rightsManagementServicesTemplateId", null)
     
-    @scala.inline
-    def setRightsManagementServicesTemplateIdUndefined: Self = StObject.set(x, "rightsManagementServicesTemplateId", js.undefined)
+    inline def setRightsManagementServicesTemplateIdUndefined: Self = StObject.set(x, "rightsManagementServicesTemplateId", js.undefined)
     
-    @scala.inline
-    def setSmbAutoEncryptedFileExtensions(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "smbAutoEncryptedFileExtensions", value.asInstanceOf[js.Any])
+    inline def setSmbAutoEncryptedFileExtensions(value: NullableOption[js.Array[WindowsInformationProtectionResourceCollection]]): Self = StObject.set(x, "smbAutoEncryptedFileExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmbAutoEncryptedFileExtensionsNull: Self = StObject.set(x, "smbAutoEncryptedFileExtensions", null)
+    inline def setSmbAutoEncryptedFileExtensionsNull: Self = StObject.set(x, "smbAutoEncryptedFileExtensions", null)
     
-    @scala.inline
-    def setSmbAutoEncryptedFileExtensionsUndefined: Self = StObject.set(x, "smbAutoEncryptedFileExtensions", js.undefined)
+    inline def setSmbAutoEncryptedFileExtensionsUndefined: Self = StObject.set(x, "smbAutoEncryptedFileExtensions", js.undefined)
     
-    @scala.inline
-    def setSmbAutoEncryptedFileExtensionsVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "smbAutoEncryptedFileExtensions", js.Array(value :_*))
+    inline def setSmbAutoEncryptedFileExtensionsVarargs(value: WindowsInformationProtectionResourceCollection*): Self = StObject.set(x, "smbAutoEncryptedFileExtensions", js.Array(value :_*))
   }
 }

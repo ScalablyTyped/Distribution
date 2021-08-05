@@ -28,37 +28,27 @@ trait ThumbDragMoveEventUIParam extends StObject {
 }
 object ThumbDragMoveEventUIParam {
   
-  @scala.inline
-  def apply(): ThumbDragMoveEventUIParam = {
+  inline def apply(): ThumbDragMoveEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThumbDragMoveEventUIParam]
   }
   
-  @scala.inline
-  implicit class ThumbDragMoveEventUIParamMutableBuilder[Self <: ThumbDragMoveEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbDragMoveEventUIParam](x: Self) {
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
+    inline def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
+    inline def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
     
-    @scala.inline
-    def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
+    inline def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
+    inline def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
   }
 }

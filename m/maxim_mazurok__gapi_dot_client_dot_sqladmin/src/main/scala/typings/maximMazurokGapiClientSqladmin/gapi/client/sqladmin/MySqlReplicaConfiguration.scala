@@ -44,79 +44,55 @@ trait MySqlReplicaConfiguration extends StObject {
 }
 object MySqlReplicaConfiguration {
   
-  @scala.inline
-  def apply(): MySqlReplicaConfiguration = {
+  inline def apply(): MySqlReplicaConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MySqlReplicaConfiguration]
   }
   
-  @scala.inline
-  implicit class MySqlReplicaConfigurationMutableBuilder[Self <: MySqlReplicaConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MySqlReplicaConfiguration](x: Self) {
     
-    @scala.inline
-    def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
+    inline def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificateUndefined: Self = StObject.set(x, "caCertificate", js.undefined)
+    inline def setCaCertificateUndefined: Self = StObject.set(x, "caCertificate", js.undefined)
     
-    @scala.inline
-    def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
+    inline def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
+    inline def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
     
-    @scala.inline
-    def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
+    inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
+    inline def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
     
-    @scala.inline
-    def setConnectRetryInterval(value: Double): Self = StObject.set(x, "connectRetryInterval", value.asInstanceOf[js.Any])
+    inline def setConnectRetryInterval(value: Double): Self = StObject.set(x, "connectRetryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectRetryIntervalUndefined: Self = StObject.set(x, "connectRetryInterval", js.undefined)
+    inline def setConnectRetryIntervalUndefined: Self = StObject.set(x, "connectRetryInterval", js.undefined)
     
-    @scala.inline
-    def setDumpFilePath(value: String): Self = StObject.set(x, "dumpFilePath", value.asInstanceOf[js.Any])
+    inline def setDumpFilePath(value: String): Self = StObject.set(x, "dumpFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDumpFilePathUndefined: Self = StObject.set(x, "dumpFilePath", js.undefined)
+    inline def setDumpFilePathUndefined: Self = StObject.set(x, "dumpFilePath", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMasterHeartbeatPeriod(value: String): Self = StObject.set(x, "masterHeartbeatPeriod", value.asInstanceOf[js.Any])
+    inline def setMasterHeartbeatPeriod(value: String): Self = StObject.set(x, "masterHeartbeatPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterHeartbeatPeriodUndefined: Self = StObject.set(x, "masterHeartbeatPeriod", js.undefined)
+    inline def setMasterHeartbeatPeriodUndefined: Self = StObject.set(x, "masterHeartbeatPeriod", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setSslCipher(value: String): Self = StObject.set(x, "sslCipher", value.asInstanceOf[js.Any])
+    inline def setSslCipher(value: String): Self = StObject.set(x, "sslCipher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCipherUndefined: Self = StObject.set(x, "sslCipher", js.undefined)
+    inline def setSslCipherUndefined: Self = StObject.set(x, "sslCipher", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    @scala.inline
-    def setVerifyServerCertificate(value: Boolean): Self = StObject.set(x, "verifyServerCertificate", value.asInstanceOf[js.Any])
+    inline def setVerifyServerCertificate(value: Boolean): Self = StObject.set(x, "verifyServerCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyServerCertificateUndefined: Self = StObject.set(x, "verifyServerCertificate", js.undefined)
+    inline def setVerifyServerCertificateUndefined: Self = StObject.set(x, "verifyServerCertificate", js.undefined)
   }
 }

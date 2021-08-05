@@ -16,29 +16,22 @@ object anon {
   }
   object CachePath {
     
-    @scala.inline
-    def apply(inputPaths: js.Array[String], outputPath: String): CachePath = {
+    inline def apply(inputPaths: js.Array[String], outputPath: String): CachePath = {
       val __obj = js.Dynamic.literal(inputPaths = inputPaths.asInstanceOf[js.Any], outputPath = outputPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[CachePath]
     }
     
-    @scala.inline
-    implicit class CachePathMutableBuilder[Self <: CachePath] (val x: Self) extends AnyVal {
+    extension [Self <: CachePath](x: Self) {
       
-      @scala.inline
-      def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
+      inline def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachePathUndefined: Self = StObject.set(x, "cachePath", js.undefined)
+      inline def setCachePathUndefined: Self = StObject.set(x, "cachePath", js.undefined)
       
-      @scala.inline
-      def setInputPaths(value: js.Array[String]): Self = StObject.set(x, "inputPaths", value.asInstanceOf[js.Any])
+      inline def setInputPaths(value: js.Array[String]): Self = StObject.set(x, "inputPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value :_*))
+      inline def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
     }
   }
 }

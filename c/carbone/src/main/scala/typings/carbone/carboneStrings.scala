@@ -11,34 +11,29 @@ object carboneStrings {
   sealed trait document
     extends StObject
        with DocumentType
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait graphics
     extends StObject
        with DocumentType
-  @scala.inline
-  def graphics: graphics = "graphics".asInstanceOf[graphics]
+  inline def graphics: graphics = "graphics".asInstanceOf[graphics]
   
   @js.native
   sealed trait presentation
     extends StObject
        with DocumentType
-  @scala.inline
-  def presentation: presentation = "presentation".asInstanceOf[presentation]
+  inline def presentation: presentation = "presentation".asInstanceOf[presentation]
   
   @js.native
   sealed trait spreadsheet
     extends StObject
        with DocumentType
-  @scala.inline
-  def spreadsheet: spreadsheet = "spreadsheet".asInstanceOf[spreadsheet]
+  inline def spreadsheet: spreadsheet = "spreadsheet".asInstanceOf[spreadsheet]
   
   @js.native
   sealed trait web
     extends StObject
        with DocumentType
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
+  inline def web: web = "web".asInstanceOf[web]
 }

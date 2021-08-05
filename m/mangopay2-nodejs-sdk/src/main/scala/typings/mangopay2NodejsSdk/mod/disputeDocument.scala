@@ -19,23 +19,18 @@ object disputeDocument {
   }
   object CreateDisputeDocument {
     
-    @scala.inline
-    def apply(Type: DisputeDocumentType): CreateDisputeDocument = {
+    inline def apply(Type: DisputeDocumentType): CreateDisputeDocument = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateDisputeDocument]
     }
     
-    @scala.inline
-    implicit class CreateDisputeDocumentMutableBuilder[Self <: CreateDisputeDocument] (val x: Self) extends AnyVal {
+    extension [Self <: CreateDisputeDocument](x: Self) {
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
       
-      @scala.inline
-      def setType(value: DisputeDocumentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: DisputeDocumentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,17 +60,14 @@ object disputeDocument {
   }
   object CreateDisputeDocumentPage {
     
-    @scala.inline
-    def apply(File: String): CreateDisputeDocumentPage = {
+    inline def apply(File: String): CreateDisputeDocumentPage = {
       val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateDisputeDocumentPage]
     }
     
-    @scala.inline
-    implicit class CreateDisputeDocumentPageMutableBuilder[Self <: CreateDisputeDocumentPage] (val x: Self) extends AnyVal {
+    extension [Self <: CreateDisputeDocumentPage](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,8 +112,7 @@ object disputeDocument {
   }
   object DisputeDocumentData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CreationDate: Double,
       DisputeId: String,
       Id: String,
@@ -137,29 +128,21 @@ object disputeDocument {
       __obj.asInstanceOf[DisputeDocumentData]
     }
     
-    @scala.inline
-    implicit class DisputeDocumentDataMutableBuilder[Self <: DisputeDocumentData] (val x: Self) extends AnyVal {
+    extension [Self <: DisputeDocumentData](x: Self) {
       
-      @scala.inline
-      def setDisputeId(value: String): Self = StObject.set(x, "DisputeId", value.asInstanceOf[js.Any])
+      inline def setDisputeId(value: String): Self = StObject.set(x, "DisputeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessedDate(value: Timestamp): Self = StObject.set(x, "ProcessedDate", value.asInstanceOf[js.Any])
+      inline def setProcessedDate(value: Timestamp): Self = StObject.set(x, "ProcessedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefusedReasonMessage(value: String): Self = StObject.set(x, "RefusedReasonMessage", value.asInstanceOf[js.Any])
+      inline def setRefusedReasonMessage(value: String): Self = StObject.set(x, "RefusedReasonMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefusedReasonType(value: RefusedReasonType): Self = StObject.set(x, "RefusedReasonType", value.asInstanceOf[js.Any])
+      inline def setRefusedReasonType(value: RefusedReasonType): Self = StObject.set(x, "RefusedReasonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: DisputeDocumentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: DisputeDocumentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,26 +158,19 @@ object disputeDocument {
   trait DisputeDocumentType extends StObject
   object DisputeDocumentType {
     
-    @scala.inline
-    def DELIVERY_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DELIVERY_PROOF = "DELIVERY_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DELIVERY_PROOF]
+    inline def DELIVERY_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DELIVERY_PROOF = "DELIVERY_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DELIVERY_PROOF]
     
-    @scala.inline
-    def INVOICE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVOICE = "INVOICE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVOICE]
+    inline def INVOICE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVOICE = "INVOICE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVOICE]
     
-    @scala.inline
-    def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
+    inline def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
     
-    @scala.inline
-    def PRODUCT_REPLACEMENT_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_REPLACEMENT_PROOF = "PRODUCT_REPLACEMENT_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_REPLACEMENT_PROOF]
+    inline def PRODUCT_REPLACEMENT_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_REPLACEMENT_PROOF = "PRODUCT_REPLACEMENT_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_REPLACEMENT_PROOF]
     
-    @scala.inline
-    def REFUND_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_PROOF = "REFUND_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_PROOF]
+    inline def REFUND_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_PROOF = "REFUND_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_PROOF]
     
-    @scala.inline
-    def USER_ACCEPTANCE_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_ACCEPTANCE_PROOF = "USER_ACCEPTANCE_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_ACCEPTANCE_PROOF]
+    inline def USER_ACCEPTANCE_PROOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_ACCEPTANCE_PROOF = "USER_ACCEPTANCE_PROOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_ACCEPTANCE_PROOF]
     
-    @scala.inline
-    def USER_CORRESPONDANCE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_CORRESPONDANCE = "USER_CORRESPONDANCE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_CORRESPONDANCE]
+    inline def USER_CORRESPONDANCE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_CORRESPONDANCE = "USER_CORRESPONDANCE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_CORRESPONDANCE]
   }
   
   trait DocumentPageConsult extends StObject {
@@ -211,20 +187,16 @@ object disputeDocument {
   }
   object DocumentPageConsult {
     
-    @scala.inline
-    def apply(ExpirationDate: Timestamp, Url: String): DocumentPageConsult = {
+    inline def apply(ExpirationDate: Timestamp, Url: String): DocumentPageConsult = {
       val __obj = js.Dynamic.literal(ExpirationDate = ExpirationDate.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentPageConsult]
     }
     
-    @scala.inline
-    implicit class DocumentPageConsultMutableBuilder[Self <: DocumentPageConsult] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentPageConsult](x: Self) {
       
-      @scala.inline
-      def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,17 +209,13 @@ object disputeDocument {
   trait DocumentStatus extends StObject
   object DocumentStatus {
     
-    @scala.inline
-    def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
+    inline def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
     
-    @scala.inline
-    def REFUSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUSED = "REFUSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUSED]
+    inline def REFUSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUSED = "REFUSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUSED]
     
-    @scala.inline
-    def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = "VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED]
+    inline def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = "VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED]
     
-    @scala.inline
-    def VALIDATION_ASKED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED = "VALIDATION_ASKED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED]
+    inline def VALIDATION_ASKED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED = "VALIDATION_ASKED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -263,29 +231,21 @@ object disputeDocument {
   trait RefusedReasonType extends StObject
   object RefusedReasonType {
     
-    @scala.inline
-    def DOCUMENT_FALSIFIED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_FALSIFIED = "DOCUMENT_FALSIFIED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_FALSIFIED]
+    inline def DOCUMENT_FALSIFIED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_FALSIFIED = "DOCUMENT_FALSIFIED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_FALSIFIED]
     
-    @scala.inline
-    def DOCUMENT_HAS_EXPIRED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_HAS_EXPIRED = "DOCUMENT_HAS_EXPIRED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_HAS_EXPIRED]
+    inline def DOCUMENT_HAS_EXPIRED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_HAS_EXPIRED = "DOCUMENT_HAS_EXPIRED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_HAS_EXPIRED]
     
-    @scala.inline
-    def DOCUMENT_INCOMPLETE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_INCOMPLETE = "DOCUMENT_INCOMPLETE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_INCOMPLETE]
+    inline def DOCUMENT_INCOMPLETE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_INCOMPLETE = "DOCUMENT_INCOMPLETE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_INCOMPLETE]
     
-    @scala.inline
-    def DOCUMENT_MISSING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_MISSING = "DOCUMENT_MISSING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_MISSING]
+    inline def DOCUMENT_MISSING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_MISSING = "DOCUMENT_MISSING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_MISSING]
     
-    @scala.inline
-    def DOCUMENT_NOT_ACCEPTED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_NOT_ACCEPTED = "DOCUMENT_NOT_ACCEPTED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_NOT_ACCEPTED]
+    inline def DOCUMENT_NOT_ACCEPTED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_NOT_ACCEPTED = "DOCUMENT_NOT_ACCEPTED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_NOT_ACCEPTED]
     
-    @scala.inline
-    def DOCUMENT_UNREADABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_UNREADABLE = "DOCUMENT_UNREADABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_UNREADABLE]
+    inline def DOCUMENT_UNREADABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_UNREADABLE = "DOCUMENT_UNREADABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOCUMENT_UNREADABLE]
     
-    @scala.inline
-    def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
+    inline def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
     
-    @scala.inline
-    def SPECIFIC_CASE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPECIFIC_CASE = "SPECIFIC_CASE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPECIFIC_CASE]
+    inline def SPECIFIC_CASE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPECIFIC_CASE = "SPECIFIC_CASE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPECIFIC_CASE]
   }
   
   trait SubmitDisputeDocument extends StObject {
@@ -299,23 +259,18 @@ object disputeDocument {
   }
   object SubmitDisputeDocument {
     
-    @scala.inline
-    def apply(): SubmitDisputeDocument = {
+    inline def apply(): SubmitDisputeDocument = {
       val __obj = js.Dynamic.literal(Status = "VALIDATION_ASKED")
       __obj.asInstanceOf[SubmitDisputeDocument]
     }
     
-    @scala.inline
-    implicit class SubmitDisputeDocumentMutableBuilder[Self <: SubmitDisputeDocument] (val x: Self) extends AnyVal {
+    extension [Self <: SubmitDisputeDocument](x: Self) {
       
-      @scala.inline
-      def setStatus(value: VALIDATION_ASKED): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: VALIDATION_ASKED): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
 }

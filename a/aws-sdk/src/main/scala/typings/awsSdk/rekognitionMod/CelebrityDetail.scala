@@ -38,52 +38,37 @@ trait CelebrityDetail extends StObject {
 }
 object CelebrityDetail {
   
-  @scala.inline
-  def apply(): CelebrityDetail = {
+  inline def apply(): CelebrityDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CelebrityDetail]
   }
   
-  @scala.inline
-  implicit class CelebrityDetailMutableBuilder[Self <: CelebrityDetail] (val x: Self) extends AnyVal {
+  extension [Self <: CelebrityDetail](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
+    inline def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
+    inline def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
     
-    @scala.inline
-    def setId(value: RekognitionUniqueId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: RekognitionUniqueId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setUrls(value: Urls): Self = StObject.set(x, "Urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: Urls): Self = StObject.set(x, "Urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "Urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "Urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value :_*))
   }
 }

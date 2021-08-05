@@ -28,8 +28,7 @@ trait StorePrice extends StObject {
 }
 object StorePrice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currencyCode: String,
     formattedBasePrice: String,
     formattedPrice: String,
@@ -41,25 +40,18 @@ object StorePrice {
     __obj.asInstanceOf[StorePrice]
   }
   
-  @scala.inline
-  implicit class StorePriceMutableBuilder[Self <: StorePrice] (val x: Self) extends AnyVal {
+  extension [Self <: StorePrice](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedBasePrice(value: String): Self = StObject.set(x, "formattedBasePrice", value.asInstanceOf[js.Any])
+    inline def setFormattedBasePrice(value: String): Self = StObject.set(x, "formattedBasePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
+    inline def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedRecurrencePrice(value: String): Self = StObject.set(x, "formattedRecurrencePrice", value.asInstanceOf[js.Any])
+    inline def setFormattedRecurrencePrice(value: String): Self = StObject.set(x, "formattedRecurrencePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOnSale(value: Boolean): Self = StObject.set(x, "isOnSale", value.asInstanceOf[js.Any])
+    inline def setIsOnSale(value: Boolean): Self = StObject.set(x, "isOnSale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleEndDate(value: Date): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
+    inline def setSaleEndDate(value: Date): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
   }
 }

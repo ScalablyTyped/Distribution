@@ -81,56 +81,40 @@ object dropdownMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(renderContent: RenderProps => Element, renderToggle: RenderProps => Element): Props = {
+      inline def apply(renderContent: RenderProps => Element, renderToggle: RenderProps => Element): Props = {
         val __obj = js.Dynamic.literal(renderContent = js.Any.fromFunction1(renderContent), renderToggle = js.Any.fromFunction1(renderToggle))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+        inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+        inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
         
-        @scala.inline
-        def setExpandOnMobile(value: Boolean): Self = StObject.set(x, "expandOnMobile", value.asInstanceOf[js.Any])
+        inline def setExpandOnMobile(value: Boolean): Self = StObject.set(x, "expandOnMobile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpandOnMobileUndefined: Self = StObject.set(x, "expandOnMobile", js.undefined)
+        inline def setExpandOnMobileUndefined: Self = StObject.set(x, "expandOnMobile", js.undefined)
         
-        @scala.inline
-        def setFocusOnMount(value: firstElement | container | `false`): Self = StObject.set(x, "focusOnMount", value.asInstanceOf[js.Any])
+        inline def setFocusOnMount(value: firstElement | container | `false`): Self = StObject.set(x, "focusOnMount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocusOnMountUndefined: Self = StObject.set(x, "focusOnMount", js.undefined)
+        inline def setFocusOnMountUndefined: Self = StObject.set(x, "focusOnMount", js.undefined)
         
-        @scala.inline
-        def setHeaderTitle(value: ReactNode): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+        inline def setHeaderTitle(value: ReactNode): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
+        inline def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setRenderContent(value: RenderProps => Element): Self = StObject.set(x, "renderContent", js.Any.fromFunction1(value))
+        inline def setRenderContent(value: RenderProps => Element): Self = StObject.set(x, "renderContent", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRenderToggle(value: RenderProps => Element): Self = StObject.set(x, "renderToggle", js.Any.fromFunction1(value))
+        inline def setRenderToggle(value: RenderProps => Element): Self = StObject.set(x, "renderToggle", js.Any.fromFunction1(value))
       }
     }
     
@@ -154,23 +138,18 @@ object dropdownMod {
     }
     object RenderProps {
       
-      @scala.inline
-      def apply(isOpen: Boolean, onClose: () => Unit, onToggle: () => Unit): RenderProps = {
+      inline def apply(isOpen: Boolean, onClose: () => Unit, onToggle: () => Unit): RenderProps = {
         val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onToggle = js.Any.fromFunction0(onToggle))
         __obj.asInstanceOf[RenderProps]
       }
       
-      @scala.inline
-      implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+      extension [Self <: RenderProps](x: Self) {
         
-        @scala.inline
-        def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+        inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+        inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnToggle(value: () => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction0(value))
+        inline def setOnToggle(value: () => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction0(value))
       }
     }
   }

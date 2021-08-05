@@ -31,8 +31,7 @@ object singleMonthMod {
     @JSImport("rmc-calendar/lib/date/SingleMonth", "default.defaultProps")
     @js.native
     def defaultProps: PropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait PropsType extends StObject {
@@ -49,38 +48,28 @@ object singleMonthMod {
   }
   object PropsType {
     
-    @scala.inline
-    def apply(locale: Locale, monthData: MonthData): PropsType = {
+    inline def apply(locale: Locale, monthData: MonthData): PropsType = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], monthData = monthData.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropsType]
     }
     
-    @scala.inline
-    implicit class PropsTypeMutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
+    extension [Self <: PropsType](x: Self) {
       
-      @scala.inline
-      def setGetDateExtra(value: /* date */ Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
+      inline def setGetDateExtra(value: /* date */ Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDateExtraUndefined: Self = StObject.set(x, "getDateExtra", js.undefined)
+      inline def setGetDateExtraUndefined: Self = StObject.set(x, "getDateExtra", js.undefined)
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthData(value: MonthData): Self = StObject.set(x, "monthData", value.asInstanceOf[js.Any])
+      inline def setMonthData(value: MonthData): Self = StObject.set(x, "monthData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCellClick(value: (/* data */ CellData, /* monthData */ MonthData) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
+      inline def setOnCellClick(value: (/* data */ CellData, /* monthData */ MonthData) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+      inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
-      @scala.inline
-      def setRowSize(value: normal | xl): Self = StObject.set(x, "rowSize", value.asInstanceOf[js.Any])
+      inline def setRowSize(value: normal | xl): Self = StObject.set(x, "rowSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSizeUndefined: Self = StObject.set(x, "rowSize", js.undefined)
+      inline def setRowSizeUndefined: Self = StObject.set(x, "rowSize", js.undefined)
     }
   }
   

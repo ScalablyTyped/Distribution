@@ -27,35 +27,29 @@ object promptDotnativeMod {
     @JSImport("antd-mobile-rn/lib/modal/style/prompt.native", "default.inputFirst")
     @js.native
     def inputFirst: BorderTopLeftRadius = js.native
-    @scala.inline
-    def inputFirst_=(x: BorderTopLeftRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputFirst")(x.asInstanceOf[js.Any])
+    inline def inputFirst_=(x: BorderTopLeftRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputFirst")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/prompt.native", "default.inputGroup")
     @js.native
     def inputGroup: FlexDirectionMarginTop = js.native
-    @scala.inline
-    def inputGroup_=(x: FlexDirectionMarginTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputGroup")(x.asInstanceOf[js.Any])
+    inline def inputGroup_=(x: FlexDirectionMarginTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputGroup")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/prompt.native", "default.inputLast")
     @js.native
     def inputLast: BorderBottomRightRadius = js.native
-    @scala.inline
-    def inputLast_=(x: BorderBottomRightRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputLast")(x.asInstanceOf[js.Any])
+    inline def inputLast_=(x: BorderBottomRightRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputLast")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/prompt.native", "default.inputWrapper")
     @js.native
     def inputWrapper: BorderTopWidthBorderWidth = js.native
-    @scala.inline
-    def inputWrapper_=(x: BorderTopWidthBorderWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputWrapper")(x.asInstanceOf[js.Any])
+    inline def inputWrapper_=(x: BorderTopWidthBorderWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputWrapper")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def input_=(x: HeightPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
+    inline def input_=(x: HeightPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/prompt.native", "default.message")
     @js.native
     def message: FontSizeMarginTop = js.native
-    @scala.inline
-    def message_=(x: FontSizeMarginTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+    inline def message_=(x: FontSizeMarginTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
   }
   
   trait IPromptStyle extends StObject {
@@ -74,8 +68,7 @@ object promptDotnativeMod {
   }
   object IPromptStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       input: TextStyle,
       inputFirst: ViewStyle,
       inputGroup: ViewStyle,
@@ -87,26 +80,19 @@ object promptDotnativeMod {
       __obj.asInstanceOf[IPromptStyle]
     }
     
-    @scala.inline
-    implicit class IPromptStyleMutableBuilder[Self <: IPromptStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IPromptStyle](x: Self) {
       
-      @scala.inline
-      def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFirst(value: ViewStyle): Self = StObject.set(x, "inputFirst", value.asInstanceOf[js.Any])
+      inline def setInputFirst(value: ViewStyle): Self = StObject.set(x, "inputFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputGroup(value: ViewStyle): Self = StObject.set(x, "inputGroup", value.asInstanceOf[js.Any])
+      inline def setInputGroup(value: ViewStyle): Self = StObject.set(x, "inputGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputLast(value: ViewStyle): Self = StObject.set(x, "inputLast", value.asInstanceOf[js.Any])
+      inline def setInputLast(value: ViewStyle): Self = StObject.set(x, "inputLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
+      inline def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: TextStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: TextStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

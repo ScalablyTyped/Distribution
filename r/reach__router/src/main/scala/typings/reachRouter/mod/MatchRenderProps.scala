@@ -16,26 +16,20 @@ trait MatchRenderProps[TParams] extends StObject {
 }
 object MatchRenderProps {
   
-  @scala.inline
-  def apply[TParams](location: WindowLocation[LocationState], navigate: NavigateFn): MatchRenderProps[TParams] = {
+  inline def apply[TParams](location: WindowLocation[LocationState], navigate: NavigateFn): MatchRenderProps[TParams] = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(null)
     __obj.asInstanceOf[MatchRenderProps[TParams]]
   }
   
-  @scala.inline
-  implicit class MatchRenderPropsMutableBuilder[Self <: MatchRenderProps[?], TParams] (val x: Self & MatchRenderProps[TParams]) extends AnyVal {
+  extension [Self <: MatchRenderProps[?], TParams](x: Self & MatchRenderProps[TParams]) {
     
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: Path & TParams): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: Path & TParams): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchNull: Self = StObject.set(x, "match", null)
+    inline def setMatchNull: Self = StObject.set(x, "match", null)
     
-    @scala.inline
-    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
+    inline def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
   }
 }

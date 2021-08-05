@@ -11,9 +11,7 @@ object factoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCoordinate(`type`: String): CoordinateCtor = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoordinate")(`type`.asInstanceOf[js.Any]).asInstanceOf[CoordinateCtor]
+  inline def getCoordinate(`type`: String): CoordinateCtor = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoordinate")(`type`.asInstanceOf[js.Any]).asInstanceOf[CoordinateCtor]
   
-  @scala.inline
-  def registerCoordinate(`type`: String, ctor: CoordinateCtor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCoordinate")(`type`.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerCoordinate(`type`: String, ctor: CoordinateCtor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCoordinate")(`type`.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

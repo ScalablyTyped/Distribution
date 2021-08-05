@@ -17,19 +17,15 @@ trait SchemaStartEnvironmentResponse extends StObject {
 }
 object SchemaStartEnvironmentResponse {
   
-  @scala.inline
-  def apply(): SchemaStartEnvironmentResponse = {
+  inline def apply(): SchemaStartEnvironmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStartEnvironmentResponse]
   }
   
-  @scala.inline
-  implicit class SchemaStartEnvironmentResponseMutableBuilder[Self <: SchemaStartEnvironmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStartEnvironmentResponse](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: SchemaEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: SchemaEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
   }
 }

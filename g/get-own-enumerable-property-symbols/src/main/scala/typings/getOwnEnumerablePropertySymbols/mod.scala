@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(`object`: js.Object): js.Array[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Symbol]]
+  inline def default(`object`: js.Object): js.Array[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Symbol]]
 }

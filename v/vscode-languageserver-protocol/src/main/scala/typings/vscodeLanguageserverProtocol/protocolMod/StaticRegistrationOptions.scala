@@ -14,8 +14,7 @@ trait StaticRegistrationOptions extends StObject {
 }
 object StaticRegistrationOptions {
   
-  @scala.inline
-  def apply(): StaticRegistrationOptions = {
+  inline def apply(): StaticRegistrationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StaticRegistrationOptions]
   }
@@ -24,16 +23,12 @@ object StaticRegistrationOptions {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasId(value: js.Object): /* is vscode-languageserver-protocol.anon.Id */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasId")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Id */ Boolean]
+  inline def hasId(value: js.Object): /* is vscode-languageserver-protocol.anon.Id */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasId")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Id */ Boolean]
   
-  @scala.inline
-  implicit class StaticRegistrationOptionsMutableBuilder[Self <: StaticRegistrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StaticRegistrationOptions](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

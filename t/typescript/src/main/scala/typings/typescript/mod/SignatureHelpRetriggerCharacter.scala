@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SignatureHelpRetriggerCharacter extends StObject
 object SignatureHelpRetriggerCharacter {
   
-  @scala.inline
-  def Comma: typings.typescript.typescriptStrings.Comma = ",".asInstanceOf[typings.typescript.typescriptStrings.Comma]
+  inline def Comma: typings.typescript.typescriptStrings.Comma = ",".asInstanceOf[typings.typescript.typescriptStrings.Comma]
   
-  @scala.inline
-  def Leftparenthesis: typings.typescript.typescriptStrings.Leftparenthesis = "(".asInstanceOf[typings.typescript.typescriptStrings.Leftparenthesis]
+  inline def Leftparenthesis: typings.typescript.typescriptStrings.Leftparenthesis = "(".asInstanceOf[typings.typescript.typescriptStrings.Leftparenthesis]
   
-  @scala.inline
-  def Lessthansign: typings.typescript.typescriptStrings.Lessthansign = "<".asInstanceOf[typings.typescript.typescriptStrings.Lessthansign]
+  inline def Lessthansign: typings.typescript.typescriptStrings.Lessthansign = "<".asInstanceOf[typings.typescript.typescriptStrings.Lessthansign]
   
-  @scala.inline
-  def Rightparenthesis: typings.typescript.typescriptStrings.Rightparenthesis = ")".asInstanceOf[typings.typescript.typescriptStrings.Rightparenthesis]
+  inline def Rightparenthesis: typings.typescript.typescriptStrings.Rightparenthesis = ")".asInstanceOf[typings.typescript.typescriptStrings.Rightparenthesis]
 }

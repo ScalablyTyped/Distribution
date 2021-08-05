@@ -63,8 +63,7 @@ trait IListObjectDef extends StObject {
 }
 object IListObjectDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAutoSortByState: INxAutoSortByStateDef,
     qDef: INxInlineDimensionDef,
     qInitialDataFetch: js.Array[INxPage],
@@ -75,46 +74,32 @@ object IListObjectDef {
     __obj.asInstanceOf[IListObjectDef]
   }
   
-  @scala.inline
-  implicit class IListObjectDefMutableBuilder[Self <: IListObjectDef] (val x: Self) extends AnyVal {
+  extension [Self <: IListObjectDef](x: Self) {
     
-    @scala.inline
-    def setQAutoSortByState(value: INxAutoSortByStateDef): Self = StObject.set(x, "qAutoSortByState", value.asInstanceOf[js.Any])
+    inline def setQAutoSortByState(value: INxAutoSortByStateDef): Self = StObject.set(x, "qAutoSortByState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDef(value: INxInlineDimensionDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
+    inline def setQDef(value: INxInlineDimensionDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExpressions(value: js.Array[INxListObjectExpressionDef]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
+    inline def setQExpressions(value: js.Array[INxListObjectExpressionDef]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExpressionsUndefined: Self = StObject.set(x, "qExpressions", js.undefined)
+    inline def setQExpressionsUndefined: Self = StObject.set(x, "qExpressions", js.undefined)
     
-    @scala.inline
-    def setQExpressionsVarargs(value: INxListObjectExpressionDef*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
+    inline def setQExpressionsVarargs(value: INxListObjectExpressionDef*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setQFrequencyMode(value: FrequencyModeType): Self = StObject.set(x, "qFrequencyMode", value.asInstanceOf[js.Any])
+    inline def setQFrequencyMode(value: FrequencyModeType): Self = StObject.set(x, "qFrequencyMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFrequencyModeUndefined: Self = StObject.set(x, "qFrequencyMode", js.undefined)
+    inline def setQFrequencyModeUndefined: Self = StObject.set(x, "qFrequencyMode", js.undefined)
     
-    @scala.inline
-    def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
+    inline def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
+    inline def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
     
-    @scala.inline
-    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
+    inline def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQShowAlternatives(value: Boolean): Self = StObject.set(x, "qShowAlternatives", value.asInstanceOf[js.Any])
+    inline def setQShowAlternatives(value: Boolean): Self = StObject.set(x, "qShowAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQShowAlternativesUndefined: Self = StObject.set(x, "qShowAlternatives", js.undefined)
+    inline def setQShowAlternativesUndefined: Self = StObject.set(x, "qShowAlternatives", js.undefined)
     
-    @scala.inline
-    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
+    inline def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }
 }

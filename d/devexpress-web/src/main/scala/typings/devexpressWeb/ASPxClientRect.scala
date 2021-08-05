@@ -41,8 +41,7 @@ trait ASPxClientRect extends StObject {
 }
 object ASPxClientRect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetBottom: () => Double,
     GetHeight: () => Double,
     GetLeft: () => Double,
@@ -54,25 +53,18 @@ object ASPxClientRect {
     __obj.asInstanceOf[ASPxClientRect]
   }
   
-  @scala.inline
-  implicit class ASPxClientRectMutableBuilder[Self <: ASPxClientRect] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRect](x: Self) {
     
-    @scala.inline
-    def setGetBottom(value: () => Double): Self = StObject.set(x, "GetBottom", js.Any.fromFunction0(value))
+    inline def setGetBottom(value: () => Double): Self = StObject.set(x, "GetBottom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeight(value: () => Double): Self = StObject.set(x, "GetHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Double): Self = StObject.set(x, "GetHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLeft(value: () => Double): Self = StObject.set(x, "GetLeft", js.Any.fromFunction0(value))
+    inline def setGetLeft(value: () => Double): Self = StObject.set(x, "GetLeft", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRight(value: () => Double): Self = StObject.set(x, "GetRight", js.Any.fromFunction0(value))
+    inline def setGetRight(value: () => Double): Self = StObject.set(x, "GetRight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTop(value: () => Double): Self = StObject.set(x, "GetTop", js.Any.fromFunction0(value))
+    inline def setGetTop(value: () => Double): Self = StObject.set(x, "GetTop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "GetWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "GetWidth", js.Any.fromFunction0(value))
   }
 }

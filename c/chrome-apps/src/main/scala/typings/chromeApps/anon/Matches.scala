@@ -17,25 +17,19 @@ trait Matches extends StObject {
 }
 object Matches {
   
-  @scala.inline
-  def apply(matches: js.Array[String]): Matches = {
+  inline def apply(matches: js.Array[String]): Matches = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[Matches]
   }
   
-  @scala.inline
-  implicit class MatchesMutableBuilder[Self <: Matches] (val x: Self) extends AnyVal {
+  extension [Self <: Matches](x: Self) {
     
-    @scala.inline
-    def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

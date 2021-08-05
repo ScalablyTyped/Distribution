@@ -12,19 +12,15 @@ trait CountryRecord
 }
 object CountryRecord {
   
-  @scala.inline
-  def apply(geoname_id: Double, iso_code: String, names: Names): CountryRecord = {
+  inline def apply(geoname_id: Double, iso_code: String, names: Names): CountryRecord = {
     val __obj = js.Dynamic.literal(geoname_id = geoname_id.asInstanceOf[js.Any], iso_code = iso_code.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountryRecord]
   }
   
-  @scala.inline
-  implicit class CountryRecordMutableBuilder[Self <: CountryRecord] (val x: Self) extends AnyVal {
+  extension [Self <: CountryRecord](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
   }
 }

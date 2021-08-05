@@ -13,19 +13,15 @@ trait ResendContactReachabilityEmailRequest extends StObject {
 }
 object ResendContactReachabilityEmailRequest {
   
-  @scala.inline
-  def apply(): ResendContactReachabilityEmailRequest = {
+  inline def apply(): ResendContactReachabilityEmailRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResendContactReachabilityEmailRequest]
   }
   
-  @scala.inline
-  implicit class ResendContactReachabilityEmailRequestMutableBuilder[Self <: ResendContactReachabilityEmailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResendContactReachabilityEmailRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
   }
 }

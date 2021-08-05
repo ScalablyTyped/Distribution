@@ -50,52 +50,37 @@ trait BrokerNodeInfo extends StObject {
 }
 object BrokerNodeInfo {
   
-  @scala.inline
-  def apply(): BrokerNodeInfo = {
+  inline def apply(): BrokerNodeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrokerNodeInfo]
   }
   
-  @scala.inline
-  implicit class BrokerNodeInfoMutableBuilder[Self <: BrokerNodeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerNodeInfo](x: Self) {
     
-    @scala.inline
-    def setAttachedENIId(value: string): Self = StObject.set(x, "AttachedENIId", value.asInstanceOf[js.Any])
+    inline def setAttachedENIId(value: string): Self = StObject.set(x, "AttachedENIId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedENIIdUndefined: Self = StObject.set(x, "AttachedENIId", js.undefined)
+    inline def setAttachedENIIdUndefined: Self = StObject.set(x, "AttachedENIId", js.undefined)
     
-    @scala.inline
-    def setBrokerId(value: double): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
+    inline def setBrokerId(value: double): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
+    inline def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
     
-    @scala.inline
-    def setClientSubnet(value: string): Self = StObject.set(x, "ClientSubnet", value.asInstanceOf[js.Any])
+    inline def setClientSubnet(value: string): Self = StObject.set(x, "ClientSubnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSubnetUndefined: Self = StObject.set(x, "ClientSubnet", js.undefined)
+    inline def setClientSubnetUndefined: Self = StObject.set(x, "ClientSubnet", js.undefined)
     
-    @scala.inline
-    def setClientVpcIpAddress(value: string): Self = StObject.set(x, "ClientVpcIpAddress", value.asInstanceOf[js.Any])
+    inline def setClientVpcIpAddress(value: string): Self = StObject.set(x, "ClientVpcIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVpcIpAddressUndefined: Self = StObject.set(x, "ClientVpcIpAddress", js.undefined)
+    inline def setClientVpcIpAddressUndefined: Self = StObject.set(x, "ClientVpcIpAddress", js.undefined)
     
-    @scala.inline
-    def setCurrentBrokerSoftwareInfo(value: BrokerSoftwareInfo): Self = StObject.set(x, "CurrentBrokerSoftwareInfo", value.asInstanceOf[js.Any])
+    inline def setCurrentBrokerSoftwareInfo(value: BrokerSoftwareInfo): Self = StObject.set(x, "CurrentBrokerSoftwareInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentBrokerSoftwareInfoUndefined: Self = StObject.set(x, "CurrentBrokerSoftwareInfo", js.undefined)
+    inline def setCurrentBrokerSoftwareInfoUndefined: Self = StObject.set(x, "CurrentBrokerSoftwareInfo", js.undefined)
     
-    @scala.inline
-    def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    @scala.inline
-    def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
   }
 }

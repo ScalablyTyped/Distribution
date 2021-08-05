@@ -22,49 +22,35 @@ trait ScoredEmailAddress extends StObject {
 }
 object ScoredEmailAddress {
   
-  @scala.inline
-  def apply(): ScoredEmailAddress = {
+  inline def apply(): ScoredEmailAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScoredEmailAddress]
   }
   
-  @scala.inline
-  implicit class ScoredEmailAddressMutableBuilder[Self <: ScoredEmailAddress] (val x: Self) extends AnyVal {
+  extension [Self <: ScoredEmailAddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressNull: Self = StObject.set(x, "address", null)
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setItemId(value: NullableOption[String]): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: NullableOption[String]): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdNull: Self = StObject.set(x, "itemId", null)
+    inline def setItemIdNull: Self = StObject.set(x, "itemId", null)
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setRelevanceScore(value: NullableOption[Double]): Self = StObject.set(x, "relevanceScore", value.asInstanceOf[js.Any])
+    inline def setRelevanceScore(value: NullableOption[Double]): Self = StObject.set(x, "relevanceScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevanceScoreNull: Self = StObject.set(x, "relevanceScore", null)
+    inline def setRelevanceScoreNull: Self = StObject.set(x, "relevanceScore", null)
     
-    @scala.inline
-    def setRelevanceScoreUndefined: Self = StObject.set(x, "relevanceScore", js.undefined)
+    inline def setRelevanceScoreUndefined: Self = StObject.set(x, "relevanceScore", js.undefined)
     
-    @scala.inline
-    def setSelectionLikelihood(value: NullableOption[SelectionLikelihoodInfo]): Self = StObject.set(x, "selectionLikelihood", value.asInstanceOf[js.Any])
+    inline def setSelectionLikelihood(value: NullableOption[SelectionLikelihoodInfo]): Self = StObject.set(x, "selectionLikelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionLikelihoodNull: Self = StObject.set(x, "selectionLikelihood", null)
+    inline def setSelectionLikelihoodNull: Self = StObject.set(x, "selectionLikelihood", null)
     
-    @scala.inline
-    def setSelectionLikelihoodUndefined: Self = StObject.set(x, "selectionLikelihood", js.undefined)
+    inline def setSelectionLikelihoodUndefined: Self = StObject.set(x, "selectionLikelihood", js.undefined)
   }
 }

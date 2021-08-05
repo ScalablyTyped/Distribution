@@ -12,137 +12,114 @@ object forkTsCheckerWebpackPluginStrings {
   
   @js.native
   sealed trait Dotjs extends StObject
-  @scala.inline
-  def Dotjs: Dotjs = ".js".asInstanceOf[Dotjs]
+  inline def Dotjs: Dotjs = ".js".asInstanceOf[Dotjs]
   
   @js.native
   sealed trait Dotts extends StObject
-  @scala.inline
-  def Dotts: Dotts = ".ts".asInstanceOf[Dotts]
+  inline def Dotts: Dotts = ".ts".asInstanceOf[Dotts]
   
   @js.native
   sealed trait Dottsx extends StObject
-  @scala.inline
-  def Dottsx: Dottsx = ".tsx".asInstanceOf[Dottsx]
+  inline def Dottsx: Dottsx = ".tsx".asInstanceOf[Dottsx]
   
   @js.native
   sealed trait basic extends StObject
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
   sealed trait call extends StObject
-  @scala.inline
-  def call: call = "call".asInstanceOf[call]
+  inline def call: call = "call".asInstanceOf[call]
   
   @js.native
   sealed trait codeframe extends StObject
-  @scala.inline
-  def codeframe: codeframe = "codeframe".asInstanceOf[codeframe]
+  inline def codeframe: codeframe = "codeframe".asInstanceOf[codeframe]
   
   @js.native
   sealed trait console
     extends StObject
        with LoggerType
-  @scala.inline
-  def console: console = "console".asInstanceOf[console]
+  inline def console: console = "console".asInstanceOf[console]
   
   @js.native
   sealed trait dts extends StObject
-  @scala.inline
-  def dts: dts = "dts".asInstanceOf[dts]
+  inline def dts: dts = "dts".asInstanceOf[dts]
   
   @js.native
   sealed trait error
     extends StObject
        with IssueSeverity
        with LoggerMethods
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait info
     extends StObject
        with LoggerMethods
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait js_ extends StObject
-  @scala.inline
-  def js_ : js_ = "js".asInstanceOf[js_]
+  inline def js_ : js_ = "js".asInstanceOf[js_]
   
   @js.native
   sealed trait line extends StObject
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait log
     extends StObject
        with LoggerMethods
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait quit extends StObject
-  @scala.inline
-  def quit: quit = "quit".asInstanceOf[quit]
+  inline def quit: quit = "quit".asInstanceOf[quit]
   
   @js.native
   sealed trait readonly
     extends StObject
        with FileSystemMode
-  @scala.inline
-  def readonly: readonly = "readonly".asInstanceOf[readonly]
+  inline def readonly: readonly = "readonly".asInstanceOf[readonly]
   
   @js.native
   sealed trait `return` extends StObject
-  @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
+  inline def `return`: `return` = "return".asInstanceOf[`return`]
   
   @js.native
   sealed trait silent
     extends StObject
        with LoggerType
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait space extends StObject
-  @scala.inline
-  def space: space = "space".asInstanceOf[space]
+  inline def space: space = "space".asInstanceOf[space]
   
   @js.native
   sealed trait `throw` extends StObject
-  @scala.inline
-  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  inline def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   
   @js.native
   sealed trait warning
     extends StObject
        with IssueSeverity
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
   sealed trait `webpack-infrastructure`
     extends StObject
        with LoggerType
-  @scala.inline
-  def `webpack-infrastructure`: `webpack-infrastructure` = "webpack-infrastructure".asInstanceOf[`webpack-infrastructure`]
+  inline def `webpack-infrastructure`: `webpack-infrastructure` = "webpack-infrastructure".asInstanceOf[`webpack-infrastructure`]
   
   @js.native
   sealed trait `write-references`
     extends StObject
        with FileSystemMode
-  @scala.inline
-  def `write-references`: `write-references` = "write-references".asInstanceOf[`write-references`]
+  inline def `write-references`: `write-references` = "write-references".asInstanceOf[`write-references`]
   
   @js.native
   sealed trait `write-tsbuildinfo`
     extends StObject
        with FileSystemMode
-  @scala.inline
-  def `write-tsbuildinfo`: `write-tsbuildinfo` = "write-tsbuildinfo".asInstanceOf[`write-tsbuildinfo`]
+  inline def `write-tsbuildinfo`: `write-tsbuildinfo` = "write-tsbuildinfo".asInstanceOf[`write-tsbuildinfo`]
 }

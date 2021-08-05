@@ -17,28 +17,21 @@ trait UpdatePageElementsZOrderRequest extends StObject {
 }
 object UpdatePageElementsZOrderRequest {
   
-  @scala.inline
-  def apply(): UpdatePageElementsZOrderRequest = {
+  inline def apply(): UpdatePageElementsZOrderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatePageElementsZOrderRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePageElementsZOrderRequestMutableBuilder[Self <: UpdatePageElementsZOrderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePageElementsZOrderRequest](x: Self) {
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setPageElementObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageElementObjectIds", value.asInstanceOf[js.Any])
+    inline def setPageElementObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageElementObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageElementObjectIdsUndefined: Self = StObject.set(x, "pageElementObjectIds", js.undefined)
+    inline def setPageElementObjectIdsUndefined: Self = StObject.set(x, "pageElementObjectIds", js.undefined)
     
-    @scala.inline
-    def setPageElementObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageElementObjectIds", js.Array(value :_*))
+    inline def setPageElementObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageElementObjectIds", js.Array(value :_*))
   }
 }

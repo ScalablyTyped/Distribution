@@ -16,19 +16,15 @@ trait SchemaGlobalPermission extends StObject {
 }
 object SchemaGlobalPermission {
   
-  @scala.inline
-  def apply(): SchemaGlobalPermission = {
+  inline def apply(): SchemaGlobalPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGlobalPermission]
   }
   
-  @scala.inline
-  implicit class SchemaGlobalPermissionMutableBuilder[Self <: SchemaGlobalPermission] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGlobalPermission](x: Self) {
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
   }
 }

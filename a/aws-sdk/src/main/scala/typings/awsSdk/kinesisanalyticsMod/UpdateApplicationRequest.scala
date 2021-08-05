@@ -23,8 +23,7 @@ trait UpdateApplicationRequest extends StObject {
 }
 object UpdateApplicationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationName: ApplicationName,
     ApplicationUpdate: ApplicationUpdate,
     CurrentApplicationVersionId: ApplicationVersionId
@@ -33,16 +32,12 @@ object UpdateApplicationRequest {
     __obj.asInstanceOf[UpdateApplicationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationRequestMutableBuilder[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationUpdate(value: ApplicationUpdate): Self = StObject.set(x, "ApplicationUpdate", value.asInstanceOf[js.Any])
+    inline def setApplicationUpdate(value: ApplicationUpdate): Self = StObject.set(x, "ApplicationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
   }
 }

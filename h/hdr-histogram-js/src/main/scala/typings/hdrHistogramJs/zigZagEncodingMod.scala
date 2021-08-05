@@ -40,8 +40,7 @@ object zigZagEncodingMod {
       * @return the value read from the buffer
       */
     /* static member */
-    @scala.inline
-    def decode(buffer: typings.hdrHistogramJs.byteBufferMod.default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def decode(buffer: typings.hdrHistogramJs.byteBufferMod.default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Writes a long value to the given buffer in LEB128 ZigZag encoded format
@@ -50,8 +49,7 @@ object zigZagEncodingMod {
       * @param value  the value to write to the buffer
       */
     /* static member */
-    @scala.inline
-    def encode(buffer: typings.hdrHistogramJs.byteBufferMod.default, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def encode(buffer: typings.hdrHistogramJs.byteBufferMod.default, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**

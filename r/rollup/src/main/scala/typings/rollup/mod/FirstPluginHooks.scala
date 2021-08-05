@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirstPluginHooks extends StObject
 object FirstPluginHooks {
   
-  @scala.inline
-  def load: typings.rollup.rollupStrings.load = "load".asInstanceOf[typings.rollup.rollupStrings.load]
+  inline def load: typings.rollup.rollupStrings.load = "load".asInstanceOf[typings.rollup.rollupStrings.load]
   
-  @scala.inline
-  def renderDynamicImport: typings.rollup.rollupStrings.renderDynamicImport = "renderDynamicImport".asInstanceOf[typings.rollup.rollupStrings.renderDynamicImport]
+  inline def renderDynamicImport: typings.rollup.rollupStrings.renderDynamicImport = "renderDynamicImport".asInstanceOf[typings.rollup.rollupStrings.renderDynamicImport]
   
-  @scala.inline
-  def resolveAssetUrl: typings.rollup.rollupStrings.resolveAssetUrl = "resolveAssetUrl".asInstanceOf[typings.rollup.rollupStrings.resolveAssetUrl]
+  inline def resolveAssetUrl: typings.rollup.rollupStrings.resolveAssetUrl = "resolveAssetUrl".asInstanceOf[typings.rollup.rollupStrings.resolveAssetUrl]
   
-  @scala.inline
-  def resolveDynamicImport: typings.rollup.rollupStrings.resolveDynamicImport = "resolveDynamicImport".asInstanceOf[typings.rollup.rollupStrings.resolveDynamicImport]
+  inline def resolveDynamicImport: typings.rollup.rollupStrings.resolveDynamicImport = "resolveDynamicImport".asInstanceOf[typings.rollup.rollupStrings.resolveDynamicImport]
   
-  @scala.inline
-  def resolveFileUrl: typings.rollup.rollupStrings.resolveFileUrl = "resolveFileUrl".asInstanceOf[typings.rollup.rollupStrings.resolveFileUrl]
+  inline def resolveFileUrl: typings.rollup.rollupStrings.resolveFileUrl = "resolveFileUrl".asInstanceOf[typings.rollup.rollupStrings.resolveFileUrl]
   
-  @scala.inline
-  def resolveId: typings.rollup.rollupStrings.resolveId = "resolveId".asInstanceOf[typings.rollup.rollupStrings.resolveId]
+  inline def resolveId: typings.rollup.rollupStrings.resolveId = "resolveId".asInstanceOf[typings.rollup.rollupStrings.resolveId]
   
-  @scala.inline
-  def resolveImportMeta: typings.rollup.rollupStrings.resolveImportMeta = "resolveImportMeta".asInstanceOf[typings.rollup.rollupStrings.resolveImportMeta]
+  inline def resolveImportMeta: typings.rollup.rollupStrings.resolveImportMeta = "resolveImportMeta".asInstanceOf[typings.rollup.rollupStrings.resolveImportMeta]
 }

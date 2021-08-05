@@ -20,8 +20,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(packageName: String): js.Promise[Set[String]] = ^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Set[String]]]
+  inline def apply(packageName: String): js.Promise[Set[String]] = ^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Set[String]]]
   
   @JSImport("pkg-versions", JSImport.Namespace)
   @js.native
@@ -48,8 +47,6 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function pkgVersions(packageName: string): Promise<Set<string>>;
   // export = pkgVersions;
-  @scala.inline
-  def default(packageName: String): js.Promise[Set[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Set[String]]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(packageName: String): js.Promise[Set[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Set[String]]]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

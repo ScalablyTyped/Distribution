@@ -10,16 +10,13 @@ trait AppsGetInstallationEndpoint extends StObject {
 }
 object AppsGetInstallationEndpoint {
   
-  @scala.inline
-  def apply(installation_id: Double): AppsGetInstallationEndpoint = {
+  inline def apply(installation_id: Double): AppsGetInstallationEndpoint = {
     val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsGetInstallationEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsGetInstallationEndpointMutableBuilder[Self <: AppsGetInstallationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsGetInstallationEndpoint](x: Self) {
     
-    @scala.inline
-    def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
+    inline def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
   }
 }

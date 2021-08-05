@@ -30,66 +30,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppearanceProperty extends StObject
 object AppearanceProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   
-  @scala.inline
-  def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
+  inline def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
   
-  @scala.inline
-  def button: typings.csstype.csstypeStrings.button = "button".asInstanceOf[typings.csstype.csstypeStrings.button]
+  inline def button: typings.csstype.csstypeStrings.button = "button".asInstanceOf[typings.csstype.csstypeStrings.button]
   
-  @scala.inline
-  def checkbox: typings.csstype.csstypeStrings.checkbox = "checkbox".asInstanceOf[typings.csstype.csstypeStrings.checkbox]
+  inline def checkbox: typings.csstype.csstypeStrings.checkbox = "checkbox".asInstanceOf[typings.csstype.csstypeStrings.checkbox]
   
-  @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   
-  @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   
-  @scala.inline
-  def listbox: typings.csstype.csstypeStrings.listbox = "listbox".asInstanceOf[typings.csstype.csstypeStrings.listbox]
+  inline def listbox: typings.csstype.csstypeStrings.listbox = "listbox".asInstanceOf[typings.csstype.csstypeStrings.listbox]
   
-  @scala.inline
-  def menulist: typings.csstype.csstypeStrings.menulist = "menulist".asInstanceOf[typings.csstype.csstypeStrings.menulist]
+  inline def menulist: typings.csstype.csstypeStrings.menulist = "menulist".asInstanceOf[typings.csstype.csstypeStrings.menulist]
   
-  @scala.inline
-  def `menulist-button`: typings.csstype.csstypeStrings.`menulist-button` = "menulist-button".asInstanceOf[typings.csstype.csstypeStrings.`menulist-button`]
+  inline def `menulist-button`: typings.csstype.csstypeStrings.`menulist-button` = "menulist-button".asInstanceOf[typings.csstype.csstypeStrings.`menulist-button`]
   
-  @scala.inline
-  def meter: typings.csstype.csstypeStrings.meter = "meter".asInstanceOf[typings.csstype.csstypeStrings.meter]
+  inline def meter: typings.csstype.csstypeStrings.meter = "meter".asInstanceOf[typings.csstype.csstypeStrings.meter]
   
-  @scala.inline
-  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
+  inline def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   
-  @scala.inline
-  def `progress-bar`: typings.csstype.csstypeStrings.`progress-bar` = "progress-bar".asInstanceOf[typings.csstype.csstypeStrings.`progress-bar`]
+  inline def `progress-bar`: typings.csstype.csstypeStrings.`progress-bar` = "progress-bar".asInstanceOf[typings.csstype.csstypeStrings.`progress-bar`]
   
-  @scala.inline
-  def `push-button`: typings.csstype.csstypeStrings.`push-button` = "push-button".asInstanceOf[typings.csstype.csstypeStrings.`push-button`]
+  inline def `push-button`: typings.csstype.csstypeStrings.`push-button` = "push-button".asInstanceOf[typings.csstype.csstypeStrings.`push-button`]
   
-  @scala.inline
-  def radio: typings.csstype.csstypeStrings.radio = "radio".asInstanceOf[typings.csstype.csstypeStrings.radio]
+  inline def radio: typings.csstype.csstypeStrings.radio = "radio".asInstanceOf[typings.csstype.csstypeStrings.radio]
   
-  @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   
-  @scala.inline
-  def searchfield: typings.csstype.csstypeStrings.searchfield = "searchfield".asInstanceOf[typings.csstype.csstypeStrings.searchfield]
+  inline def searchfield: typings.csstype.csstypeStrings.searchfield = "searchfield".asInstanceOf[typings.csstype.csstypeStrings.searchfield]
   
-  @scala.inline
-  def `slider-horizontal`: typings.csstype.csstypeStrings.`slider-horizontal` = "slider-horizontal".asInstanceOf[typings.csstype.csstypeStrings.`slider-horizontal`]
+  inline def `slider-horizontal`: typings.csstype.csstypeStrings.`slider-horizontal` = "slider-horizontal".asInstanceOf[typings.csstype.csstypeStrings.`slider-horizontal`]
   
-  @scala.inline
-  def `square-button`: typings.csstype.csstypeStrings.`square-button` = "square-button".asInstanceOf[typings.csstype.csstypeStrings.`square-button`]
+  inline def `square-button`: typings.csstype.csstypeStrings.`square-button` = "square-button".asInstanceOf[typings.csstype.csstypeStrings.`square-button`]
   
-  @scala.inline
-  def textarea: typings.csstype.csstypeStrings.textarea = "textarea".asInstanceOf[typings.csstype.csstypeStrings.textarea]
+  inline def textarea: typings.csstype.csstypeStrings.textarea = "textarea".asInstanceOf[typings.csstype.csstypeStrings.textarea]
   
-  @scala.inline
-  def textfield: typings.csstype.csstypeStrings.textfield = "textfield".asInstanceOf[typings.csstype.csstypeStrings.textfield]
+  inline def textfield: typings.csstype.csstypeStrings.textfield = "textfield".asInstanceOf[typings.csstype.csstypeStrings.textfield]
   
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }

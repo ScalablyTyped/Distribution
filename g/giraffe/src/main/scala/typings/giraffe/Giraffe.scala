@@ -40,32 +40,24 @@ object Giraffe {
   }
   object AttachmentOptions {
     
-    @scala.inline
-    def apply(): AttachmentOptions = {
+    inline def apply(): AttachmentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttachmentOptions]
     }
     
-    @scala.inline
-    implicit class AttachmentOptionsMutableBuilder[Self <: AttachmentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AttachmentOptions](x: Self) {
       
-      @scala.inline
-      def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setSuppressRender(value: Boolean): Self = StObject.set(x, "suppressRender", value.asInstanceOf[js.Any])
+      inline def setSuppressRender(value: Boolean): Self = StObject.set(x, "suppressRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressRenderUndefined: Self = StObject.set(x, "suppressRender", js.undefined)
+      inline def setSuppressRenderUndefined: Self = StObject.set(x, "suppressRender", js.undefined)
     }
   }
   
@@ -175,38 +167,28 @@ object Giraffe {
   }
   object DefaultOptions {
     
-    @scala.inline
-    def apply(): DefaultOptions = {
+    inline def apply(): DefaultOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    @scala.inline
-    implicit class DefaultOptionsMutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultOptions](x: Self) {
       
-      @scala.inline
-      def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
+      inline def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysRenderUndefined: Self = StObject.set(x, "alwaysRender", js.undefined)
+      inline def setAlwaysRenderUndefined: Self = StObject.set(x, "alwaysRender", js.undefined)
       
-      @scala.inline
-      def setDisposeOnDetach(value: Boolean): Self = StObject.set(x, "disposeOnDetach", value.asInstanceOf[js.Any])
+      inline def setDisposeOnDetach(value: Boolean): Self = StObject.set(x, "disposeOnDetach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisposeOnDetachUndefined: Self = StObject.set(x, "disposeOnDetach", js.undefined)
+      inline def setDisposeOnDetachUndefined: Self = StObject.set(x, "disposeOnDetach", js.undefined)
       
-      @scala.inline
-      def setDocumentTitle(value: String): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
+      inline def setDocumentTitle(value: String): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTitleUndefined: Self = StObject.set(x, "documentTitle", js.undefined)
+      inline def setDocumentTitleUndefined: Self = StObject.set(x, "documentTitle", js.undefined)
       
-      @scala.inline
-      def setSaveScrollPosition(value: Boolean): Self = StObject.set(x, "saveScrollPosition", value.asInstanceOf[js.Any])
+      inline def setSaveScrollPosition(value: Boolean): Self = StObject.set(x, "saveScrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveScrollPositionUndefined: Self = StObject.set(x, "saveScrollPosition", js.undefined)
+      inline def setSaveScrollPositionUndefined: Self = StObject.set(x, "saveScrollPosition", js.undefined)
     }
   }
   
@@ -234,71 +216,50 @@ object Giraffe {
   }
   object GiraffeObject {
     
-    @scala.inline
-    def apply(app: App): GiraffeObject = {
+    inline def apply(app: App): GiraffeObject = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
       __obj.asInstanceOf[GiraffeObject]
     }
     
-    @scala.inline
-    implicit class GiraffeObjectMutableBuilder[Self <: GiraffeObject] (val x: Self) extends AnyVal {
+    extension [Self <: GiraffeObject](x: Self) {
       
-      @scala.inline
-      def setAfterDispose(value: () => js.Any): Self = StObject.set(x, "afterDispose", js.Any.fromFunction0(value))
+      inline def setAfterDispose(value: () => js.Any): Self = StObject.set(x, "afterDispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterDisposeUndefined: Self = StObject.set(x, "afterDispose", js.undefined)
+      inline def setAfterDisposeUndefined: Self = StObject.set(x, "afterDispose", js.undefined)
       
-      @scala.inline
-      def setAfterInitialize(value: () => js.Any): Self = StObject.set(x, "afterInitialize", js.Any.fromFunction0(value))
+      inline def setAfterInitialize(value: () => js.Any): Self = StObject.set(x, "afterInitialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterInitializeUndefined: Self = StObject.set(x, "afterInitialize", js.undefined)
+      inline def setAfterInitializeUndefined: Self = StObject.set(x, "afterInitialize", js.undefined)
       
-      @scala.inline
-      def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppEvents(value: StringMap): Self = StObject.set(x, "appEvents", value.asInstanceOf[js.Any])
+      inline def setAppEvents(value: StringMap): Self = StObject.set(x, "appEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppEventsUndefined: Self = StObject.set(x, "appEvents", js.undefined)
+      inline def setAppEventsUndefined: Self = StObject.set(x, "appEvents", js.undefined)
       
-      @scala.inline
-      def setBeforeDispose(value: () => js.Any): Self = StObject.set(x, "beforeDispose", js.Any.fromFunction0(value))
+      inline def setBeforeDispose(value: () => js.Any): Self = StObject.set(x, "beforeDispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeDisposeUndefined: Self = StObject.set(x, "beforeDispose", js.undefined)
+      inline def setBeforeDisposeUndefined: Self = StObject.set(x, "beforeDispose", js.undefined)
       
-      @scala.inline
-      def setBeforeInitialize(value: () => js.Any): Self = StObject.set(x, "beforeInitialize", js.Any.fromFunction0(value))
+      inline def setBeforeInitialize(value: () => js.Any): Self = StObject.set(x, "beforeInitialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeInitializeUndefined: Self = StObject.set(x, "beforeInitialize", js.undefined)
+      inline def setBeforeInitializeUndefined: Self = StObject.set(x, "beforeInitialize", js.undefined)
       
-      @scala.inline
-      def setDataEvents(value: StringMap): Self = StObject.set(x, "dataEvents", value.asInstanceOf[js.Any])
+      inline def setDataEvents(value: StringMap): Self = StObject.set(x, "dataEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataEventsUndefined: Self = StObject.set(x, "dataEvents", js.undefined)
+      inline def setDataEventsUndefined: Self = StObject.set(x, "dataEvents", js.undefined)
       
-      @scala.inline
-      def setDefaultOptions(value: DefaultOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+      inline def setDefaultOptions(value: DefaultOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
+      inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
       
-      @scala.inline
-      def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+      inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
       
-      @scala.inline
-      def setInitialize(value: () => js.Any): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+      inline def setInitialize(value: () => js.Any): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+      inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     }
   }
   

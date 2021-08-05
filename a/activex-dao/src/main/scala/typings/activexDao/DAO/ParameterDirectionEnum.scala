@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterDirectionEnum extends StObject
 object ParameterDirectionEnum {
   
-  @scala.inline
-  def dbParamInput: `1` = 1.asInstanceOf[`1`]
+  inline def dbParamInput: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbParamInputOutput: `3` = 3.asInstanceOf[`3`]
+  inline def dbParamInputOutput: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def dbParamOutput: `2` = 2.asInstanceOf[`2`]
+  inline def dbParamOutput: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def dbParamReturnValue: `4` = 4.asInstanceOf[`4`]
+  inline def dbParamReturnValue: `4` = 4.asInstanceOf[`4`]
 }

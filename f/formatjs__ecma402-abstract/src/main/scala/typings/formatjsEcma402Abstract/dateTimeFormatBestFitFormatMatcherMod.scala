@@ -12,9 +12,7 @@ object dateTimeFormatBestFitFormatMatcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BestFitFormatMatcher(options: DateTimeFormatOptions, formats: js.Array[Formats]): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("BestFitFormatMatcher")(options.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  inline def BestFitFormatMatcher(options: DateTimeFormatOptions, formats: js.Array[Formats]): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("BestFitFormatMatcher")(options.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @scala.inline
-  def bestFitFormatMatcherScore(options: DateTimeFormatOptions, format: Formats): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bestFitFormatMatcherScore")(options.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def bestFitFormatMatcherScore(options: DateTimeFormatOptions, format: Formats): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bestFitFormatMatcherScore")(options.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

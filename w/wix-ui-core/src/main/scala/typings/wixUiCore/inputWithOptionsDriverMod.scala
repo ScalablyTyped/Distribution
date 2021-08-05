@@ -12,6 +12,5 @@ object inputWithOptionsDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inputWithOptionsDriverFactory(hasElementEventTrigger: Element): Click = ^.asInstanceOf[js.Dynamic].applyDynamic("inputWithOptionsDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Click]
+  inline def inputWithOptionsDriverFactory(hasElementEventTrigger: Element): Click = ^.asInstanceOf[js.Dynamic].applyDynamic("inputWithOptionsDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Click]
 }

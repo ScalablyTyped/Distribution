@@ -14,25 +14,19 @@ trait PinchGestureHandlerProperties
 }
 object PinchGestureHandlerProperties {
   
-  @scala.inline
-  def apply(): PinchGestureHandlerProperties = {
+  inline def apply(): PinchGestureHandlerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PinchGestureHandlerProperties]
   }
   
-  @scala.inline
-  implicit class PinchGestureHandlerPropertiesMutableBuilder[Self <: PinchGestureHandlerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PinchGestureHandlerProperties](x: Self) {
     
-    @scala.inline
-    def setOnGestureEvent(value: /* event */ PinchGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
+    inline def setOnGestureEvent(value: /* event */ PinchGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
+    inline def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ PinchGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
+    inline def setOnHandlerStateChange(value: /* event */ PinchGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
+    inline def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

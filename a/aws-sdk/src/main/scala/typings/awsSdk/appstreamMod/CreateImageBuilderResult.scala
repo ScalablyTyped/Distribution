@@ -13,19 +13,15 @@ trait CreateImageBuilderResult extends StObject {
 }
 object CreateImageBuilderResult {
   
-  @scala.inline
-  def apply(): CreateImageBuilderResult = {
+  inline def apply(): CreateImageBuilderResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateImageBuilderResult]
   }
   
-  @scala.inline
-  implicit class CreateImageBuilderResultMutableBuilder[Self <: CreateImageBuilderResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateImageBuilderResult](x: Self) {
     
-    @scala.inline
-    def setImageBuilder(value: ImageBuilder): Self = StObject.set(x, "ImageBuilder", value.asInstanceOf[js.Any])
+    inline def setImageBuilder(value: ImageBuilder): Self = StObject.set(x, "ImageBuilder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBuilderUndefined: Self = StObject.set(x, "ImageBuilder", js.undefined)
+    inline def setImageBuilderUndefined: Self = StObject.set(x, "ImageBuilder", js.undefined)
   }
 }

@@ -27,25 +27,19 @@ trait SchemaSchemaConfig extends StObject {
 }
 object SchemaSchemaConfig {
   
-  @scala.inline
-  def apply(): SchemaSchemaConfig = {
+  inline def apply(): SchemaSchemaConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSchemaConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSchemaConfigMutableBuilder[Self <: SchemaSchemaConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSchemaConfig](x: Self) {
     
-    @scala.inline
-    def setRecursiveStructureDepth(value: String): Self = StObject.set(x, "recursiveStructureDepth", value.asInstanceOf[js.Any])
+    inline def setRecursiveStructureDepth(value: String): Self = StObject.set(x, "recursiveStructureDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveStructureDepthUndefined: Self = StObject.set(x, "recursiveStructureDepth", js.undefined)
+    inline def setRecursiveStructureDepthUndefined: Self = StObject.set(x, "recursiveStructureDepth", js.undefined)
     
-    @scala.inline
-    def setSchemaType(value: String): Self = StObject.set(x, "schemaType", value.asInstanceOf[js.Any])
+    inline def setSchemaType(value: String): Self = StObject.set(x, "schemaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaTypeUndefined: Self = StObject.set(x, "schemaType", js.undefined)
+    inline def setSchemaTypeUndefined: Self = StObject.set(x, "schemaType", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait ThreatListDescriptor extends StObject {
 }
 object ThreatListDescriptor {
   
-  @scala.inline
-  def apply(): ThreatListDescriptor = {
+  inline def apply(): ThreatListDescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatListDescriptor]
   }
   
-  @scala.inline
-  implicit class ThreatListDescriptorMutableBuilder[Self <: ThreatListDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatListDescriptor](x: Self) {
     
-    @scala.inline
-    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
+    inline def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
+    inline def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
-    @scala.inline
-    def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
+    inline def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
+    inline def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
     
-    @scala.inline
-    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
+    inline def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
+    inline def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
   }
 }

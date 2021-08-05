@@ -10,16 +10,13 @@ trait SystemapksResource extends StObject {
 }
 object SystemapksResource {
   
-  @scala.inline
-  def apply(variants: VariantsResource): SystemapksResource = {
+  inline def apply(variants: VariantsResource): SystemapksResource = {
     val __obj = js.Dynamic.literal(variants = variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemapksResource]
   }
   
-  @scala.inline
-  implicit class SystemapksResourceMutableBuilder[Self <: SystemapksResource] (val x: Self) extends AnyVal {
+  extension [Self <: SystemapksResource](x: Self) {
     
-    @scala.inline
-    def setVariants(value: VariantsResource): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: VariantsResource): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
   }
 }

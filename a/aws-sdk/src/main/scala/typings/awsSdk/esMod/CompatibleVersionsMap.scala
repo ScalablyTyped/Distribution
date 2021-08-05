@@ -15,28 +15,21 @@ trait CompatibleVersionsMap extends StObject {
 }
 object CompatibleVersionsMap {
   
-  @scala.inline
-  def apply(): CompatibleVersionsMap = {
+  inline def apply(): CompatibleVersionsMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompatibleVersionsMap]
   }
   
-  @scala.inline
-  implicit class CompatibleVersionsMapMutableBuilder[Self <: CompatibleVersionsMap] (val x: Self) extends AnyVal {
+  extension [Self <: CompatibleVersionsMap](x: Self) {
     
-    @scala.inline
-    def setSourceVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "SourceVersion", value.asInstanceOf[js.Any])
+    inline def setSourceVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "SourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVersionUndefined: Self = StObject.set(x, "SourceVersion", js.undefined)
+    inline def setSourceVersionUndefined: Self = StObject.set(x, "SourceVersion", js.undefined)
     
-    @scala.inline
-    def setTargetVersions(value: ElasticsearchVersionList): Self = StObject.set(x, "TargetVersions", value.asInstanceOf[js.Any])
+    inline def setTargetVersions(value: ElasticsearchVersionList): Self = StObject.set(x, "TargetVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersionsUndefined: Self = StObject.set(x, "TargetVersions", js.undefined)
+    inline def setTargetVersionsUndefined: Self = StObject.set(x, "TargetVersions", js.undefined)
     
-    @scala.inline
-    def setTargetVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "TargetVersions", js.Array(value :_*))
+    inline def setTargetVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "TargetVersions", js.Array(value :_*))
   }
 }

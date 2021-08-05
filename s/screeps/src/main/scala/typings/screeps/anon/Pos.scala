@@ -11,16 +11,13 @@ trait Pos extends StObject {
 }
 object Pos {
   
-  @scala.inline
-  def apply(pos: RoomPosition): Pos = {
+  inline def apply(pos: RoomPosition): Pos = {
     val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pos]
   }
   
-  @scala.inline
-  implicit class PosMutableBuilder[Self <: Pos] (val x: Self) extends AnyVal {
+  extension [Self <: Pos](x: Self) {
     
-    @scala.inline
-    def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }
 }

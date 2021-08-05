@@ -13,19 +13,15 @@ trait DescribeClientPropertiesRequest extends StObject {
 }
 object DescribeClientPropertiesRequest {
   
-  @scala.inline
-  def apply(ResourceIds: ResourceIdList): DescribeClientPropertiesRequest = {
+  inline def apply(ResourceIds: ResourceIdList): DescribeClientPropertiesRequest = {
     val __obj = js.Dynamic.literal(ResourceIds = ResourceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClientPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeClientPropertiesRequestMutableBuilder[Self <: DescribeClientPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClientPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setResourceIds(value: ResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: ResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
   }
 }

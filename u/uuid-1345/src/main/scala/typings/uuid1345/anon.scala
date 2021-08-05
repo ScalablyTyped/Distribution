@@ -18,23 +18,18 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(encoding = "object")
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+      inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     }
   }
   
@@ -44,17 +39,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal(encoding = "ascii")
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,17 +56,14 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply(): `2` = {
+    inline def apply(): `2` = {
       val __obj = js.Dynamic.literal(encoding = "binary")
       __obj.asInstanceOf[`2`]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+    extension [Self <: `2`](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +73,14 @@ object anon {
   }
   object `3` {
     
-    @scala.inline
-    def apply(): `3` = {
+    inline def apply(): `3` = {
       val __obj = js.Dynamic.literal(encoding = "object")
       __obj.asInstanceOf[`3`]
     }
     
-    @scala.inline
-    implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+    extension [Self <: `3`](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,23 +92,18 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(): Encoding = {
+    inline def apply(): Encoding = {
       val __obj = js.Dynamic.literal(encoding = "ascii")
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+      inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     }
   }
   
@@ -134,23 +115,18 @@ object anon {
   }
   object EncodingMac {
     
-    @scala.inline
-    def apply(): EncodingMac = {
+    inline def apply(): EncodingMac = {
       val __obj = js.Dynamic.literal(encoding = "binary")
       __obj.asInstanceOf[EncodingMac]
     }
     
-    @scala.inline
-    implicit class EncodingMacMutableBuilder[Self <: EncodingMac] (val x: Self) extends AnyVal {
+    extension [Self <: EncodingMac](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+      inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     }
   }
   
@@ -164,23 +140,18 @@ object anon {
   }
   object EncodingName {
     
-    @scala.inline
-    def apply(name: String, namespace: UuidTypes): EncodingName = {
+    inline def apply(name: String, namespace: UuidTypes): EncodingName = {
       val __obj = js.Dynamic.literal(encoding = "binary", name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncodingName]
     }
     
-    @scala.inline
-    implicit class EncodingNameMutableBuilder[Self <: EncodingName] (val x: Self) extends AnyVal {
+    extension [Self <: EncodingName](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,26 +165,20 @@ object anon {
   }
   object Format {
     
-    @scala.inline
-    def apply(format: String, variant: String): Format = {
+    inline def apply(format: String, variant: String): Format = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -223,20 +188,16 @@ object anon {
   }
   object Mac {
     
-    @scala.inline
-    def apply(): Mac = {
+    inline def apply(): Mac = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mac]
     }
     
-    @scala.inline
-    implicit class MacMutableBuilder[Self <: Mac] (val x: Self) extends AnyVal {
+    extension [Self <: Mac](x: Self) {
       
-      @scala.inline
-      def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+      inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     }
   }
   
@@ -248,20 +209,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, namespace: UuidTypes): Name = {
+    inline def apply(name: String, namespace: UuidTypes): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -275,23 +232,18 @@ object anon {
   }
   object NameNamespace {
     
-    @scala.inline
-    def apply(name: String, namespace: UuidTypes): NameNamespace = {
+    inline def apply(name: String, namespace: UuidTypes): NameNamespace = {
       val __obj = js.Dynamic.literal(encoding = "object", name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameNamespace]
     }
     
-    @scala.inline
-    implicit class NameNamespaceMutableBuilder[Self <: NameNamespace] (val x: Self) extends AnyVal {
+    extension [Self <: NameNamespace](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,23 +257,18 @@ object anon {
   }
   object Namespace {
     
-    @scala.inline
-    def apply(name: String, namespace: UuidTypes): Namespace = {
+    inline def apply(name: String, namespace: UuidTypes): Namespace = {
       val __obj = js.Dynamic.literal(encoding = "ascii", name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[Namespace]
     }
     
-    @scala.inline
-    implicit class NamespaceMutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
+    extension [Self <: Namespace](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: UuidTypes): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,31 +28,23 @@ trait BatchGetPartitionRequest extends StObject {
 }
 object BatchGetPartitionRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, PartitionsToGet: BatchGetPartitionValueList, TableName: NameString): BatchGetPartitionRequest = {
+  inline def apply(DatabaseName: NameString, PartitionsToGet: BatchGetPartitionValueList, TableName: NameString): BatchGetPartitionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], PartitionsToGet = PartitionsToGet.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetPartitionRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetPartitionRequestMutableBuilder[Self <: BatchGetPartitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetPartitionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsToGet(value: BatchGetPartitionValueList): Self = StObject.set(x, "PartitionsToGet", value.asInstanceOf[js.Any])
+    inline def setPartitionsToGet(value: BatchGetPartitionValueList): Self = StObject.set(x, "PartitionsToGet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsToGetVarargs(value: PartitionValueList*): Self = StObject.set(x, "PartitionsToGet", js.Array(value :_*))
+    inline def setPartitionsToGetVarargs(value: PartitionValueList*): Self = StObject.set(x, "PartitionsToGet", js.Array(value :_*))
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

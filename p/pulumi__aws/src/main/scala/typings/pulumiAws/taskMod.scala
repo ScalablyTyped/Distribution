@@ -78,21 +78,16 @@ object taskMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TaskState): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Task]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TaskState, opts: CustomResourceOptions): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def get(name: String, id: Input[ID]): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def get(name: String, id: Input[ID], state: TaskState): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Task]
+    inline def get(name: String, id: Input[ID], state: TaskState, opts: CustomResourceOptions): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
     
     /**
       * Returns true if the given object is an instance of Task.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean]
   }
   
   trait TaskArgs extends StObject {
@@ -129,38 +124,27 @@ object taskMod {
   }
   object TaskArgs {
     
-    @scala.inline
-    implicit class TaskArgsMutableBuilder[Self <: TaskArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TaskArgs](x: Self) {
       
-      @scala.inline
-      def setCloudwatchLogGroupArn(value: Input[ARN]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroupArn(value: Input[ARN]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
+      inline def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
       
-      @scala.inline
-      def setDestinationLocationArn(value: Input[ARN]): Self = StObject.set(x, "destinationLocationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationLocationArn(value: Input[ARN]): Self = StObject.set(x, "destinationLocationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Input[typings.pulumiAws.inputMod.datasync.TaskOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Input[typings.pulumiAws.inputMod.datasync.TaskOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setSourceLocationArn(value: Input[ARN]): Self = StObject.set(x, "sourceLocationArn", value.asInstanceOf[js.Any])
+      inline def setSourceLocationArn(value: Input[ARN]): Self = StObject.set(x, "sourceLocationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -203,56 +187,40 @@ object taskMod {
   }
   object TaskState {
     
-    @scala.inline
-    def apply(): TaskState = {
+    inline def apply(): TaskState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskState]
     }
     
-    @scala.inline
-    implicit class TaskStateMutableBuilder[Self <: TaskState] (val x: Self) extends AnyVal {
+    extension [Self <: TaskState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCloudwatchLogGroupArn(value: Input[ARN]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogGroupArn(value: Input[ARN]): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
+      inline def setCloudwatchLogGroupArnUndefined: Self = StObject.set(x, "cloudwatchLogGroupArn", js.undefined)
       
-      @scala.inline
-      def setDestinationLocationArn(value: Input[ARN]): Self = StObject.set(x, "destinationLocationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationLocationArn(value: Input[ARN]): Self = StObject.set(x, "destinationLocationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationLocationArnUndefined: Self = StObject.set(x, "destinationLocationArn", js.undefined)
+      inline def setDestinationLocationArnUndefined: Self = StObject.set(x, "destinationLocationArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Input[typings.pulumiAws.inputMod.datasync.TaskOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Input[typings.pulumiAws.inputMod.datasync.TaskOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setSourceLocationArn(value: Input[ARN]): Self = StObject.set(x, "sourceLocationArn", value.asInstanceOf[js.Any])
+      inline def setSourceLocationArn(value: Input[ARN]): Self = StObject.set(x, "sourceLocationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLocationArnUndefined: Self = StObject.set(x, "sourceLocationArn", js.undefined)
+      inline def setSourceLocationArnUndefined: Self = StObject.set(x, "sourceLocationArn", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

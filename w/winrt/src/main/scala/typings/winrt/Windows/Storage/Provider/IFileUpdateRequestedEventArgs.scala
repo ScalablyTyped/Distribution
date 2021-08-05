@@ -10,16 +10,13 @@ trait IFileUpdateRequestedEventArgs extends StObject {
 }
 object IFileUpdateRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: FileUpdateRequest): IFileUpdateRequestedEventArgs = {
+  inline def apply(request: FileUpdateRequest): IFileUpdateRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileUpdateRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class IFileUpdateRequestedEventArgsMutableBuilder[Self <: IFileUpdateRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IFileUpdateRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: FileUpdateRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: FileUpdateRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

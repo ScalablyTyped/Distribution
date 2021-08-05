@@ -18,19 +18,15 @@ trait GetGroupCertificateAuthorityRequest extends StObject {
 }
 object GetGroupCertificateAuthorityRequest {
   
-  @scala.inline
-  def apply(CertificateAuthorityId: string, GroupId: string): GetGroupCertificateAuthorityRequest = {
+  inline def apply(CertificateAuthorityId: string, GroupId: string): GetGroupCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityId = CertificateAuthorityId.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGroupCertificateAuthorityRequest]
   }
   
-  @scala.inline
-  implicit class GetGroupCertificateAuthorityRequestMutableBuilder[Self <: GetGroupCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupCertificateAuthorityRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityId(value: string): Self = StObject.set(x, "CertificateAuthorityId", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityId(value: string): Self = StObject.set(x, "CertificateAuthorityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

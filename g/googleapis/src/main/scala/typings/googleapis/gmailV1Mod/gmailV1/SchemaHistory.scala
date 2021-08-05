@@ -44,64 +44,45 @@ trait SchemaHistory extends StObject {
 }
 object SchemaHistory {
   
-  @scala.inline
-  def apply(): SchemaHistory = {
+  inline def apply(): SchemaHistory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistory]
   }
   
-  @scala.inline
-  implicit class SchemaHistoryMutableBuilder[Self <: SchemaHistory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistory](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabelsAdded(value: js.Array[SchemaHistoryLabelAdded]): Self = StObject.set(x, "labelsAdded", value.asInstanceOf[js.Any])
+    inline def setLabelsAdded(value: js.Array[SchemaHistoryLabelAdded]): Self = StObject.set(x, "labelsAdded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsAddedUndefined: Self = StObject.set(x, "labelsAdded", js.undefined)
+    inline def setLabelsAddedUndefined: Self = StObject.set(x, "labelsAdded", js.undefined)
     
-    @scala.inline
-    def setLabelsAddedVarargs(value: SchemaHistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value :_*))
+    inline def setLabelsAddedVarargs(value: SchemaHistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelsRemoved(value: js.Array[SchemaHistoryLabelRemoved]): Self = StObject.set(x, "labelsRemoved", value.asInstanceOf[js.Any])
+    inline def setLabelsRemoved(value: js.Array[SchemaHistoryLabelRemoved]): Self = StObject.set(x, "labelsRemoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsRemovedUndefined: Self = StObject.set(x, "labelsRemoved", js.undefined)
+    inline def setLabelsRemovedUndefined: Self = StObject.set(x, "labelsRemoved", js.undefined)
     
-    @scala.inline
-    def setLabelsRemovedVarargs(value: SchemaHistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value :_*))
+    inline def setLabelsRemovedVarargs(value: SchemaHistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value :_*))
     
-    @scala.inline
-    def setMessages(value: js.Array[SchemaMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[SchemaMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesAdded(value: js.Array[SchemaHistoryMessageAdded]): Self = StObject.set(x, "messagesAdded", value.asInstanceOf[js.Any])
+    inline def setMessagesAdded(value: js.Array[SchemaHistoryMessageAdded]): Self = StObject.set(x, "messagesAdded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesAddedUndefined: Self = StObject.set(x, "messagesAdded", js.undefined)
+    inline def setMessagesAddedUndefined: Self = StObject.set(x, "messagesAdded", js.undefined)
     
-    @scala.inline
-    def setMessagesAddedVarargs(value: SchemaHistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value :_*))
+    inline def setMessagesAddedVarargs(value: SchemaHistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value :_*))
     
-    @scala.inline
-    def setMessagesDeleted(value: js.Array[SchemaHistoryMessageDeleted]): Self = StObject.set(x, "messagesDeleted", value.asInstanceOf[js.Any])
+    inline def setMessagesDeleted(value: js.Array[SchemaHistoryMessageDeleted]): Self = StObject.set(x, "messagesDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesDeletedUndefined: Self = StObject.set(x, "messagesDeleted", js.undefined)
+    inline def setMessagesDeletedUndefined: Self = StObject.set(x, "messagesDeleted", js.undefined)
     
-    @scala.inline
-    def setMessagesDeletedVarargs(value: SchemaHistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value :_*))
+    inline def setMessagesDeletedVarargs(value: SchemaHistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value :_*))
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: SchemaMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SchemaMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

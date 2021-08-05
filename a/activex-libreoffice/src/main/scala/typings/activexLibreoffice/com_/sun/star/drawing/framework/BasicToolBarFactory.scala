@@ -22,8 +22,7 @@ trait BasicToolBarFactory
 }
 object BasicToolBarFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: XController => Unit,
     createResource: XResourceId => XResource,
     releaseResource: XResource => Unit
@@ -32,10 +31,8 @@ object BasicToolBarFactory {
     __obj.asInstanceOf[BasicToolBarFactory]
   }
   
-  @scala.inline
-  implicit class BasicToolBarFactoryMutableBuilder[Self <: BasicToolBarFactory] (val x: Self) extends AnyVal {
+  extension [Self <: BasicToolBarFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

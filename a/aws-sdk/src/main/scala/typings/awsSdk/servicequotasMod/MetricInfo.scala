@@ -28,37 +28,27 @@ trait MetricInfo extends StObject {
 }
 object MetricInfo {
   
-  @scala.inline
-  def apply(): MetricInfo = {
+  inline def apply(): MetricInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricInfo]
   }
   
-  @scala.inline
-  implicit class MetricInfoMutableBuilder[Self <: MetricInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MetricInfo](x: Self) {
     
-    @scala.inline
-    def setMetricDimensions(value: MetricDimensionsMapDefinition): Self = StObject.set(x, "MetricDimensions", value.asInstanceOf[js.Any])
+    inline def setMetricDimensions(value: MetricDimensionsMapDefinition): Self = StObject.set(x, "MetricDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDimensionsUndefined: Self = StObject.set(x, "MetricDimensions", js.undefined)
+    inline def setMetricDimensionsUndefined: Self = StObject.set(x, "MetricDimensions", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: QuotaMetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: QuotaMetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setMetricNamespace(value: QuotaMetricNamespace): Self = StObject.set(x, "MetricNamespace", value.asInstanceOf[js.Any])
+    inline def setMetricNamespace(value: QuotaMetricNamespace): Self = StObject.set(x, "MetricNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamespaceUndefined: Self = StObject.set(x, "MetricNamespace", js.undefined)
+    inline def setMetricNamespaceUndefined: Self = StObject.set(x, "MetricNamespace", js.undefined)
     
-    @scala.inline
-    def setMetricStatisticRecommendation(value: Statistic): Self = StObject.set(x, "MetricStatisticRecommendation", value.asInstanceOf[js.Any])
+    inline def setMetricStatisticRecommendation(value: Statistic): Self = StObject.set(x, "MetricStatisticRecommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricStatisticRecommendationUndefined: Self = StObject.set(x, "MetricStatisticRecommendation", js.undefined)
+    inline def setMetricStatisticRecommendationUndefined: Self = StObject.set(x, "MetricStatisticRecommendation", js.undefined)
   }
 }

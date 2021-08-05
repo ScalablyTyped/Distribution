@@ -17,28 +17,21 @@ trait ScaleMultiFieldsRefsortVg extends StObject {
 }
 object ScaleMultiFieldsRefsortVg {
   
-  @scala.inline
-  def apply(data: String, fields: js.Array[ScaleField]): ScaleMultiFieldsRefsortVg = {
+  inline def apply(data: String, fields: js.Array[ScaleField]): ScaleMultiFieldsRefsortVg = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleMultiFieldsRefsortVg]
   }
   
-  @scala.inline
-  implicit class ScaleMultiFieldsRefsortVgMutableBuilder[Self <: ScaleMultiFieldsRefsortVg] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleMultiFieldsRefsortVg](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[ScaleField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[ScaleField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

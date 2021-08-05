@@ -18,8 +18,7 @@ trait ParametersReposGetCombinedStatusForRefEndpoint extends StObject {
 }
 object ParametersReposGetCombinedStatusForRefEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetCombinedStatusForRefEndpoint,
     request: ReposGetCombinedStatusForRefRequestOptions,
     response: OctokitResponse[ReposGetCombinedStatusForRefResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetCombinedStatusForRefEndpoint {
     __obj.asInstanceOf[ParametersReposGetCombinedStatusForRefEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetCombinedStatusForRefEndpointMutableBuilder[Self <: ParametersReposGetCombinedStatusForRefEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetCombinedStatusForRefEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetCombinedStatusForRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetCombinedStatusForRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetCombinedStatusForRefRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetCombinedStatusForRefRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetCombinedStatusForRefResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetCombinedStatusForRefResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait SizeString extends StObject {
 }
 object SizeString {
   
-  @scala.inline
-  def apply(size: String): SizeString = {
+  inline def apply(size: String): SizeString = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeString]
   }
   
-  @scala.inline
-  implicit class SizeStringMutableBuilder[Self <: SizeString] (val x: Self) extends AnyVal {
+  extension [Self <: SizeString](x: Self) {
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

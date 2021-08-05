@@ -21,22 +21,17 @@ trait HostAlias extends StObject {
 }
 object HostAlias {
   
-  @scala.inline
-  def apply(hostnames: js.Array[String], ip: String): HostAlias = {
+  inline def apply(hostnames: js.Array[String], ip: String): HostAlias = {
     val __obj = js.Dynamic.literal(hostnames = hostnames.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostAlias]
   }
   
-  @scala.inline
-  implicit class HostAliasMutableBuilder[Self <: HostAlias] (val x: Self) extends AnyVal {
+  extension [Self <: HostAlias](x: Self) {
     
-    @scala.inline
-    def setHostnames(value: js.Array[String]): Self = StObject.set(x, "hostnames", value.asInstanceOf[js.Any])
+    inline def setHostnames(value: js.Array[String]): Self = StObject.set(x, "hostnames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value :_*))
+    inline def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value :_*))
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }
 }

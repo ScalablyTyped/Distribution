@@ -20,25 +20,19 @@ trait IMapTypeChangeEventArgs extends StObject {
 }
 object IMapTypeChangeEventArgs {
   
-  @scala.inline
-  def apply(newMapTypeId: MapTypeId, oldMapTypeId: MapTypeId, target: Map, targetType: String): IMapTypeChangeEventArgs = {
+  inline def apply(newMapTypeId: MapTypeId, oldMapTypeId: MapTypeId, target: Map, targetType: String): IMapTypeChangeEventArgs = {
     val __obj = js.Dynamic.literal(newMapTypeId = newMapTypeId.asInstanceOf[js.Any], oldMapTypeId = oldMapTypeId.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapTypeChangeEventArgs]
   }
   
-  @scala.inline
-  implicit class IMapTypeChangeEventArgsMutableBuilder[Self <: IMapTypeChangeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IMapTypeChangeEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewMapTypeId(value: MapTypeId): Self = StObject.set(x, "newMapTypeId", value.asInstanceOf[js.Any])
+    inline def setNewMapTypeId(value: MapTypeId): Self = StObject.set(x, "newMapTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldMapTypeId(value: MapTypeId): Self = StObject.set(x, "oldMapTypeId", value.asInstanceOf[js.Any])
+    inline def setOldMapTypeId(value: MapTypeId): Self = StObject.set(x, "oldMapTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Map): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Map): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
   }
 }

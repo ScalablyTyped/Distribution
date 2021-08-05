@@ -28,34 +28,25 @@ trait CompletionItemLabel extends StObject {
 }
 object CompletionItemLabel {
   
-  @scala.inline
-  def apply(name: String): CompletionItemLabel = {
+  inline def apply(name: String): CompletionItemLabel = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionItemLabel]
   }
   
-  @scala.inline
-  implicit class CompletionItemLabelMutableBuilder[Self <: CompletionItemLabel] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionItemLabel](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: String): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: String): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

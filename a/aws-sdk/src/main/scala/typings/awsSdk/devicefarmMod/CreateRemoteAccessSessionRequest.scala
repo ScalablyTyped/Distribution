@@ -68,79 +68,55 @@ trait CreateRemoteAccessSessionRequest extends StObject {
 }
 object CreateRemoteAccessSessionRequest {
   
-  @scala.inline
-  def apply(deviceArn: AmazonResourceName, projectArn: AmazonResourceName): CreateRemoteAccessSessionRequest = {
+  inline def apply(deviceArn: AmazonResourceName, projectArn: AmazonResourceName): CreateRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(deviceArn = deviceArn.asInstanceOf[js.Any], projectArn = projectArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRemoteAccessSessionRequest]
   }
   
-  @scala.inline
-  implicit class CreateRemoteAccessSessionRequestMutableBuilder[Self <: CreateRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRemoteAccessSessionRequest](x: Self) {
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setConfiguration(value: CreateRemoteAccessSessionConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: CreateRemoteAccessSessionConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setDeviceArn(value: AmazonResourceName): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: AmazonResourceName): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArn(value: AmazonResourceName): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: AmazonResourceName): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
+    inline def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
     
-    @scala.inline
-    def setInteractionMode(value: InteractionMode): Self = StObject.set(x, "interactionMode", value.asInstanceOf[js.Any])
+    inline def setInteractionMode(value: InteractionMode): Self = StObject.set(x, "interactionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractionModeUndefined: Self = StObject.set(x, "interactionMode", js.undefined)
+    inline def setInteractionModeUndefined: Self = StObject.set(x, "interactionMode", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectArn(value: AmazonResourceName): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: AmazonResourceName): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteDebugEnabled(value: Boolean): Self = StObject.set(x, "remoteDebugEnabled", value.asInstanceOf[js.Any])
+    inline def setRemoteDebugEnabled(value: Boolean): Self = StObject.set(x, "remoteDebugEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteDebugEnabledUndefined: Self = StObject.set(x, "remoteDebugEnabled", js.undefined)
+    inline def setRemoteDebugEnabledUndefined: Self = StObject.set(x, "remoteDebugEnabled", js.undefined)
     
-    @scala.inline
-    def setRemoteRecordAppArn(value: AmazonResourceName): Self = StObject.set(x, "remoteRecordAppArn", value.asInstanceOf[js.Any])
+    inline def setRemoteRecordAppArn(value: AmazonResourceName): Self = StObject.set(x, "remoteRecordAppArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteRecordAppArnUndefined: Self = StObject.set(x, "remoteRecordAppArn", js.undefined)
+    inline def setRemoteRecordAppArnUndefined: Self = StObject.set(x, "remoteRecordAppArn", js.undefined)
     
-    @scala.inline
-    def setRemoteRecordEnabled(value: Boolean): Self = StObject.set(x, "remoteRecordEnabled", value.asInstanceOf[js.Any])
+    inline def setRemoteRecordEnabled(value: Boolean): Self = StObject.set(x, "remoteRecordEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteRecordEnabledUndefined: Self = StObject.set(x, "remoteRecordEnabled", js.undefined)
+    inline def setRemoteRecordEnabledUndefined: Self = StObject.set(x, "remoteRecordEnabled", js.undefined)
     
-    @scala.inline
-    def setSkipAppResign(value: Boolean): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
+    inline def setSkipAppResign(value: Boolean): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
+    inline def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
-    @scala.inline
-    def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
+    inline def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
+    inline def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
   }
 }

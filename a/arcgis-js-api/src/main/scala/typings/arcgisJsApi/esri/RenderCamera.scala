@@ -97,8 +97,7 @@ trait RenderCamera
 }
 object RenderCamera {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     center: ArrayLike[Double],
     constructor: js.Function,
     eye: ArrayLike[Double],
@@ -119,43 +118,30 @@ object RenderCamera {
     __obj.asInstanceOf[RenderCamera]
   }
   
-  @scala.inline
-  implicit class RenderCameraMutableBuilder[Self <: RenderCamera] (val x: Self) extends AnyVal {
+  extension [Self <: RenderCamera](x: Self) {
     
-    @scala.inline
-    def setCenter(value: ArrayLike[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: ArrayLike[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEye(value: ArrayLike[Double]): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
+    inline def setEye(value: ArrayLike[Double]): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
+    inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFovX(value: Double): Self = StObject.set(x, "fovX", value.asInstanceOf[js.Any])
+    inline def setFovX(value: Double): Self = StObject.set(x, "fovX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFovY(value: Double): Self = StObject.set(x, "fovY", value.asInstanceOf[js.Any])
+    inline def setFovY(value: Double): Self = StObject.set(x, "fovY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
+    inline def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+    inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
+    inline def setProjectionMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUp(value: ArrayLike[Double]): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: ArrayLike[Double]): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewInverseTransposeMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "viewInverseTransposeMatrix", value.asInstanceOf[js.Any])
+    inline def setViewInverseTransposeMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "viewInverseTransposeMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "viewMatrix", value.asInstanceOf[js.Any])
+    inline def setViewMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "viewMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: js.Any): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: js.Any): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

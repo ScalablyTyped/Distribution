@@ -14,25 +14,19 @@ trait ExchangeReviewStatus extends StObject {
 }
 object ExchangeReviewStatus {
   
-  @scala.inline
-  def apply(): ExchangeReviewStatus = {
+  inline def apply(): ExchangeReviewStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExchangeReviewStatus]
   }
   
-  @scala.inline
-  implicit class ExchangeReviewStatusMutableBuilder[Self <: ExchangeReviewStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeReviewStatus](x: Self) {
     
-    @scala.inline
-    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+    inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
+    inline def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

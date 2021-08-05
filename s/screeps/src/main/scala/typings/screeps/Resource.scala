@@ -28,8 +28,7 @@ trait Resource[T /* <: ResourceConstant */]
 }
 object Resource {
   
-  @scala.inline
-  def apply[T /* <: ResourceConstant */](
+  inline def apply[T /* <: ResourceConstant */](
     amount: Double,
     effects: js.Array[RoomObjectEffect],
     id: Id[Resource[T]],
@@ -40,16 +39,12 @@ object Resource {
     __obj.asInstanceOf[Resource[T]]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource[?], T /* <: ResourceConstant */] (val x: Self & Resource[T]) extends AnyVal {
+  extension [Self <: Resource[?], T /* <: ResourceConstant */](x: Self & Resource[T]) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id[Resource[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[Resource[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: T): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: T): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

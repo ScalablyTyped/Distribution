@@ -18,22 +18,17 @@ trait StartProjectSessionRequest extends StObject {
 }
 object StartProjectSessionRequest {
   
-  @scala.inline
-  def apply(Name: ProjectName): StartProjectSessionRequest = {
+  inline def apply(Name: ProjectName): StartProjectSessionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartProjectSessionRequest]
   }
   
-  @scala.inline
-  implicit class StartProjectSessionRequestMutableBuilder[Self <: StartProjectSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartProjectSessionRequest](x: Self) {
     
-    @scala.inline
-    def setAssumeControl(value: AssumeControl): Self = StObject.set(x, "AssumeControl", value.asInstanceOf[js.Any])
+    inline def setAssumeControl(value: AssumeControl): Self = StObject.set(x, "AssumeControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssumeControlUndefined: Self = StObject.set(x, "AssumeControl", js.undefined)
+    inline def setAssumeControlUndefined: Self = StObject.set(x, "AssumeControl", js.undefined)
     
-    @scala.inline
-    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ZoomChangingEventUIParam extends StObject {
 }
 object ZoomChangingEventUIParam {
   
-  @scala.inline
-  def apply(): ZoomChangingEventUIParam = {
+  inline def apply(): ZoomChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoomChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ZoomChangingEventUIParamMutableBuilder[Self <: ZoomChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

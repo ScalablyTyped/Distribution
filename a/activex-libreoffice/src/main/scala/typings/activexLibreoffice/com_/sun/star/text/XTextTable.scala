@@ -74,8 +74,7 @@ trait XTextTable
 }
 object XTextTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     CellNames: SafeArray[String],
     Columns: XTableColumns,
@@ -99,34 +98,24 @@ object XTextTable {
     __obj.asInstanceOf[XTextTable]
   }
   
-  @scala.inline
-  implicit class XTextTableMutableBuilder[Self <: XTextTable] (val x: Self) extends AnyVal {
+  extension [Self <: XTextTable](x: Self) {
     
-    @scala.inline
-    def setCellNames(value: SafeArray[String]): Self = StObject.set(x, "CellNames", value.asInstanceOf[js.Any])
+    inline def setCellNames(value: SafeArray[String]): Self = StObject.set(x, "CellNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: XTableColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: XTableColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCursorByCellName(value: String => XTextTableCursor): Self = StObject.set(x, "createCursorByCellName", js.Any.fromFunction1(value))
+    inline def setCreateCursorByCellName(value: String => XTextTableCursor): Self = StObject.set(x, "createCursorByCellName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCellByName(value: String => XCell): Self = StObject.set(x, "getCellByName", js.Any.fromFunction1(value))
+    inline def setGetCellByName(value: String => XCell): Self = StObject.set(x, "getCellByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCellNames(value: () => SafeArray[String]): Self = StObject.set(x, "getCellNames", js.Any.fromFunction0(value))
+    inline def setGetCellNames(value: () => SafeArray[String]): Self = StObject.set(x, "getCellNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColumns(value: () => XTableColumns): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => XTableColumns): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRows(value: () => XTableRows): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
+    inline def setGetRows(value: () => XTableRows): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialize(value: (Double, Double) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+    inline def setInitialize(value: (Double, Double) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRows(value: XTableRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: XTableRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
   }
 }

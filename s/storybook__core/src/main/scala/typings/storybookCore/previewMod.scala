@@ -30,8 +30,7 @@ object previewMod {
         /* hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose */ ClientApiParams, 
         typings.storybookClientApi.mod.ClientApi
       ] = js.native
-    @scala.inline
-    def ClientApi_=(
+    inline def ClientApi_=(
       x: Instantiable1[
           /* hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose */ ClientApiParams, 
           typings.storybookClientApi.mod.ClientApi
@@ -51,8 +50,7 @@ object previewMod {
         /* hasStoryStore */ typings.storybookClientApi.anon.StoryStore, 
         typings.storybookClientApi.mod.ConfigApi
       ] = js.native
-    @scala.inline
-    def ConfigApi_=(
+    inline def ConfigApi_=(
       x: Instantiable1[
           /* hasStoryStore */ typings.storybookClientApi.anon.StoryStore, 
           typings.storybookClientApi.mod.ConfigApi
@@ -69,8 +67,7 @@ object previewMod {
     @JSImport("@storybook/core/dist/client/preview", "default.StoryStore")
     @js.native
     def StoryStore: Instantiable1[/* params */ Channel, typings.storybookClientApi.mod.StoryStore] = js.native
-    @scala.inline
-    def StoryStore_=(x: Instantiable1[/* params */ Channel, typings.storybookClientApi.mod.StoryStore]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StoryStore")(x.asInstanceOf[js.Any])
+    inline def StoryStore_=(x: Instantiable1[/* params */ Channel, typings.storybookClientApi.mod.StoryStore]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StoryStore")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/core/dist/client/preview", "default.start")
     @js.native
@@ -79,8 +76,7 @@ object previewMod {
         /* hasDecorateStory */ js.UndefOr[DecorateStory], 
         typings.storybookCore.anon.Channel
       ] = js.native
-    @scala.inline
-    def start_=(
+    inline def start_=(
       x: js.Function2[
           /* render */ RenderStoryFunction, 
           /* hasDecorateStory */ js.UndefOr[DecorateStory], 
@@ -88,7 +84,6 @@ object previewMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def toId(kind: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toId(kind: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

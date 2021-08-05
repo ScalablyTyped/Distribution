@@ -20,29 +20,21 @@ object domMod {
   @js.native
   val TEXT_NAME: /* "#text" */ String = js.native
   
-  @scala.inline
-  def appendChildNode(node: DOMElement, childNode: DOMElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendChildNode")(node.asInstanceOf[js.Any], childNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def appendChildNode(node: DOMElement, childNode: DOMElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendChildNode")(node.asInstanceOf[js.Any], childNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createNode(nodeName: ElementNames): DOMElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(nodeName.asInstanceOf[js.Any]).asInstanceOf[DOMElement]
+  inline def createNode(nodeName: ElementNames): DOMElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(nodeName.asInstanceOf[js.Any]).asInstanceOf[DOMElement]
   
-  @scala.inline
-  def createTextNode(text: String): TextNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTextNode")(text.asInstanceOf[js.Any]).asInstanceOf[TextNode]
+  inline def createTextNode(text: String): TextNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTextNode")(text.asInstanceOf[js.Any]).asInstanceOf[TextNode]
   
-  @scala.inline
-  def insertBeforeNode(node: DOMElement, newChildNode: DOMNode[NodeName], beforeChildNode: DOMNode[NodeName]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBeforeNode")(node.asInstanceOf[js.Any], newChildNode.asInstanceOf[js.Any], beforeChildNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertBeforeNode(node: DOMElement, newChildNode: DOMNode[NodeName], beforeChildNode: DOMNode[NodeName]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBeforeNode")(node.asInstanceOf[js.Any], newChildNode.asInstanceOf[js.Any], beforeChildNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeChildNode(node: DOMElement, removeNode: DOMNode[NodeName]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeChildNode")(node.asInstanceOf[js.Any], removeNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeChildNode(node: DOMElement, removeNode: DOMNode[NodeName]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeChildNode")(node.asInstanceOf[js.Any], removeNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setAttribute(node: DOMElement, key: String, value: DOMNodeAttribute): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttribute")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setAttribute(node: DOMElement, key: String, value: DOMNodeAttribute): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttribute")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setStyle(node: DOMNode[NodeName], style: Styles): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(node.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setStyle(node: DOMNode[NodeName], style: Styles): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(node.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setTextNodeValue(node: TextNode, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTextNodeValue")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setTextNodeValue(node: TextNode, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTextNodeValue")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait DOMElement
     extends StObject
@@ -67,8 +59,7 @@ object domMod {
   }
   object DOMElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: StringDictionary[DOMNodeAttribute],
       childNodes: js.Array[DOMNode[NodeName]],
       nodeName: ElementNames,
@@ -78,50 +69,35 @@ object domMod {
       __obj.asInstanceOf[DOMElement]
     }
     
-    @scala.inline
-    implicit class DOMElementMutableBuilder[Self <: DOMElement] (val x: Self) extends AnyVal {
+    extension [Self <: DOMElement](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[DOMNodeAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[DOMNodeAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildNodes(value: js.Array[DOMNode[NodeName]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+      inline def setChildNodes(value: js.Array[DOMNode[NodeName]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildNodesVarargs(value: DOMNode[NodeName]*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+      inline def setChildNodesVarargs(value: DOMNode[NodeName]*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setInternal_transform(value: /* s */ String => String): Self = StObject.set(x, "internal_transform", js.Any.fromFunction1(value))
+      inline def setInternal_transform(value: /* s */ String => String): Self = StObject.set(x, "internal_transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInternal_transformUndefined: Self = StObject.set(x, "internal_transform", js.undefined)
+      inline def setInternal_transformUndefined: Self = StObject.set(x, "internal_transform", js.undefined)
       
-      @scala.inline
-      def setIsStaticDirty(value: Boolean): Self = StObject.set(x, "isStaticDirty", value.asInstanceOf[js.Any])
+      inline def setIsStaticDirty(value: Boolean): Self = StObject.set(x, "isStaticDirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStaticDirtyUndefined: Self = StObject.set(x, "isStaticDirty", js.undefined)
+      inline def setIsStaticDirtyUndefined: Self = StObject.set(x, "isStaticDirty", js.undefined)
       
-      @scala.inline
-      def setNodeName(value: ElementNames): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: ElementNames): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnImmediateRender(value: () => Unit): Self = StObject.set(x, "onImmediateRender", js.Any.fromFunction0(value))
+      inline def setOnImmediateRender(value: () => Unit): Self = StObject.set(x, "onImmediateRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnImmediateRenderUndefined: Self = StObject.set(x, "onImmediateRender", js.undefined)
+      inline def setOnImmediateRenderUndefined: Self = StObject.set(x, "onImmediateRender", js.undefined)
       
-      @scala.inline
-      def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
+      inline def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+      inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
-      @scala.inline
-      def setStaticNode(value: js.Any): Self = StObject.set(x, "staticNode", value.asInstanceOf[js.Any])
+      inline def setStaticNode(value: js.Any): Self = StObject.set(x, "staticNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticNodeUndefined: Self = StObject.set(x, "staticNode", js.undefined)
+      inline def setStaticNodeUndefined: Self = StObject.set(x, "staticNode", js.undefined)
     }
   }
   
@@ -132,8 +108,7 @@ object domMod {
   trait DOMNode[T] extends StObject
   object DOMNode {
     
-    @scala.inline
-    def DOMElement(
+    inline def DOMElement(
       attributes: StringDictionary[DOMNodeAttribute],
       childNodes: js.Array[DOMNode[NodeName]],
       nodeName: ElementNames,
@@ -143,8 +118,7 @@ object domMod {
       __obj.asInstanceOf[typings.ink.domMod.DOMElement]
     }
     
-    @scala.inline
-    def TextNode(nodeName: TextName, nodeValue: String, style: Styles): typings.ink.domMod.TextNode = {
+    inline def TextNode(nodeName: TextName, nodeValue: String, style: Styles): typings.ink.domMod.TextNode = {
       val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], parentNode = null)
       __obj.asInstanceOf[typings.ink.domMod.TextNode]
     }
@@ -161,17 +135,13 @@ object domMod {
   trait ElementNames extends StObject
   object ElementNames {
     
-    @scala.inline
-    def `ink-box`: typings.ink.inkStrings.`ink-box` = "ink-box".asInstanceOf[typings.ink.inkStrings.`ink-box`]
+    inline def `ink-box`: typings.ink.inkStrings.`ink-box` = "ink-box".asInstanceOf[typings.ink.inkStrings.`ink-box`]
     
-    @scala.inline
-    def `ink-root`: typings.ink.inkStrings.`ink-root` = "ink-root".asInstanceOf[typings.ink.inkStrings.`ink-root`]
+    inline def `ink-root`: typings.ink.inkStrings.`ink-root` = "ink-root".asInstanceOf[typings.ink.inkStrings.`ink-root`]
     
-    @scala.inline
-    def `ink-text`: typings.ink.inkStrings.`ink-text` = "ink-text".asInstanceOf[typings.ink.inkStrings.`ink-text`]
+    inline def `ink-text`: typings.ink.inkStrings.`ink-text` = "ink-text".asInstanceOf[typings.ink.inkStrings.`ink-text`]
     
-    @scala.inline
-    def `ink-virtual-text`: typings.ink.inkStrings.`ink-virtual-text` = "ink-virtual-text".asInstanceOf[typings.ink.inkStrings.`ink-virtual-text`]
+    inline def `ink-virtual-text`: typings.ink.inkStrings.`ink-virtual-text` = "ink-virtual-text".asInstanceOf[typings.ink.inkStrings.`ink-virtual-text`]
   }
   
   trait InkNode extends StObject {
@@ -186,35 +156,26 @@ object domMod {
   }
   object InkNode {
     
-    @scala.inline
-    def apply(style: Styles): InkNode = {
+    inline def apply(style: Styles): InkNode = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], parentNode = null)
       __obj.asInstanceOf[InkNode]
     }
     
-    @scala.inline
-    implicit class InkNodeMutableBuilder[Self <: InkNode] (val x: Self) extends AnyVal {
+    extension [Self <: InkNode](x: Self) {
       
-      @scala.inline
-      def setInternal_static(value: Boolean): Self = StObject.set(x, "internal_static", value.asInstanceOf[js.Any])
+      inline def setInternal_static(value: Boolean): Self = StObject.set(x, "internal_static", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternal_staticUndefined: Self = StObject.set(x, "internal_static", js.undefined)
+      inline def setInternal_staticUndefined: Self = StObject.set(x, "internal_static", js.undefined)
       
-      @scala.inline
-      def setParentNode(value: DOMElement): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+      inline def setParentNode(value: DOMElement): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
+      inline def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
       
-      @scala.inline
-      def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYogaNode(value: YogaNode): Self = StObject.set(x, "yogaNode", value.asInstanceOf[js.Any])
+      inline def setYogaNode(value: YogaNode): Self = StObject.set(x, "yogaNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYogaNodeUndefined: Self = StObject.set(x, "yogaNode", js.undefined)
+      inline def setYogaNodeUndefined: Self = StObject.set(x, "yogaNode", js.undefined)
     }
   }
   
@@ -233,20 +194,16 @@ object domMod {
   }
   object TextNode {
     
-    @scala.inline
-    def apply(nodeName: TextName, nodeValue: String, style: Styles): TextNode = {
+    inline def apply(nodeName: TextName, nodeValue: String, style: Styles): TextNode = {
       val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], parentNode = null)
       __obj.asInstanceOf[TextNode]
     }
     
-    @scala.inline
-    implicit class TextNodeMutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
+    extension [Self <: TextNode](x: Self) {
       
-      @scala.inline
-      def setNodeName(value: TextName): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: TextName): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+      inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     }
   }
 }

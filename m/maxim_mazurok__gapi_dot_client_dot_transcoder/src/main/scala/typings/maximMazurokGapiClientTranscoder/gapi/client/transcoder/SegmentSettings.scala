@@ -14,25 +14,19 @@ trait SegmentSettings extends StObject {
 }
 object SegmentSettings {
   
-  @scala.inline
-  def apply(): SegmentSettings = {
+  inline def apply(): SegmentSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentSettings]
   }
   
-  @scala.inline
-  implicit class SegmentSettingsMutableBuilder[Self <: SegmentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentSettings](x: Self) {
     
-    @scala.inline
-    def setIndividualSegments(value: Boolean): Self = StObject.set(x, "individualSegments", value.asInstanceOf[js.Any])
+    inline def setIndividualSegments(value: Boolean): Self = StObject.set(x, "individualSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualSegmentsUndefined: Self = StObject.set(x, "individualSegments", js.undefined)
+    inline def setIndividualSegmentsUndefined: Self = StObject.set(x, "individualSegments", js.undefined)
     
-    @scala.inline
-    def setSegmentDuration(value: String): Self = StObject.set(x, "segmentDuration", value.asInstanceOf[js.Any])
+    inline def setSegmentDuration(value: String): Self = StObject.set(x, "segmentDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentDurationUndefined: Self = StObject.set(x, "segmentDuration", js.undefined)
+    inline def setSegmentDurationUndefined: Self = StObject.set(x, "segmentDuration", js.undefined)
   }
 }

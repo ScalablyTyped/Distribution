@@ -17,10 +17,8 @@ object global {
     @JSGlobal("ShopifyBuy.NO_IMAGE_URI")
     @js.native
     def NO_IMAGE_URI: String = js.native
-    @scala.inline
-    def NO_IMAGE_URI_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_IMAGE_URI")(x.asInstanceOf[js.Any])
+    inline def NO_IMAGE_URI_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_IMAGE_URI")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def buildClient(config: Config): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClient")(config.asInstanceOf[js.Any]).asInstanceOf[Client]
+    inline def buildClient(config: Config): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClient")(config.asInstanceOf[js.Any]).asInstanceOf[Client]
   }
 }

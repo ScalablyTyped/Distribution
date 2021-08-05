@@ -21,22 +21,17 @@ trait INxMatchingFieldInfo extends StObject {
 }
 object INxMatchingFieldInfo {
   
-  @scala.inline
-  def apply(qName: String, qTags: js.Array[String]): INxMatchingFieldInfo = {
+  inline def apply(qName: String, qTags: js.Array[String]): INxMatchingFieldInfo = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMatchingFieldInfo]
   }
   
-  @scala.inline
-  implicit class INxMatchingFieldInfoMutableBuilder[Self <: INxMatchingFieldInfo] (val x: Self) extends AnyVal {
+  extension [Self <: INxMatchingFieldInfo](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

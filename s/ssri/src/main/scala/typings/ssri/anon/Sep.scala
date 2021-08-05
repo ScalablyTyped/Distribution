@@ -12,25 +12,19 @@ trait Sep extends StObject {
 }
 object Sep {
   
-  @scala.inline
-  def apply(): Sep = {
+  inline def apply(): Sep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sep]
   }
   
-  @scala.inline
-  implicit class SepMutableBuilder[Self <: Sep] (val x: Self) extends AnyVal {
+  extension [Self <: Sep](x: Self) {
     
-    @scala.inline
-    def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+    inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+    inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

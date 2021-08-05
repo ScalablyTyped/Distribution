@@ -15,6 +15,5 @@ object Subject {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderFrp.subjectMod.Subject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.subjectMod.Subject]
+  inline def create(): typings.wonderFrp.subjectMod.Subject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.subjectMod.Subject]
 }

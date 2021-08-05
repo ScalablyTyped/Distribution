@@ -12,25 +12,19 @@ trait MoveToOptions extends StObject {
 }
 object MoveToOptions {
   
-  @scala.inline
-  def apply(): MoveToOptions = {
+  inline def apply(): MoveToOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveToOptions]
   }
   
-  @scala.inline
-  implicit class MoveToOptionsMutableBuilder[Self <: MoveToOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MoveToOptions](x: Self) {
     
-    @scala.inline
-    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+    inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+    inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
     
-    @scala.inline
-    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
+    inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

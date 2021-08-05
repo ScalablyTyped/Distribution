@@ -23,25 +23,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTemplate")().asInstanceOf[String]
-  @scala.inline
-  def defaultTemplate(options: PluginContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTemplate")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def defaultTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTemplate")().asInstanceOf[String]
+  inline def defaultTemplate(options: PluginContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTemplate")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def generateAttributes(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAttributes")().asInstanceOf[String]
-  @scala.inline
-  def generateAttributes(options: GenerateAttributesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAttributes")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateAttributes(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAttributes")().asInstanceOf[String]
+  inline def generateAttributes(options: GenerateAttributesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAttributes")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def generateCSSReferences(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCSSReferences")().asInstanceOf[String]
-  @scala.inline
-  def generateCSSReferences(options: GenerateCSSReferencesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCSSReferences")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateCSSReferences(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCSSReferences")().asInstanceOf[String]
+  inline def generateCSSReferences(options: GenerateCSSReferencesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCSSReferences")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def generateJSReferences(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateJSReferences")().asInstanceOf[String]
-  @scala.inline
-  def generateJSReferences(options: GenerateJSReferencesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateJSReferences")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateJSReferences(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateJSReferences")().asInstanceOf[String]
+  inline def generateJSReferences(options: GenerateJSReferencesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateJSReferences")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type AttributesType = StringDictionary[String | Boolean]
   
@@ -53,29 +45,22 @@ object mod {
   }
   object FilesOptions {
     
-    @scala.inline
-    def apply(): FilesOptions = {
+    inline def apply(): FilesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilesOptions]
     }
     
-    @scala.inline
-    implicit class FilesOptionsMutableBuilder[Self <: FilesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FilesOptions](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
     }
   }
   
@@ -85,20 +70,16 @@ object mod {
   }
   object GenerateAttributesOptions {
     
-    @scala.inline
-    def apply(): GenerateAttributesOptions = {
+    inline def apply(): GenerateAttributesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateAttributesOptions]
     }
     
-    @scala.inline
-    implicit class GenerateAttributesOptionsMutableBuilder[Self <: GenerateAttributesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateAttributesOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributesType): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributesType): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
   
@@ -108,8 +89,7 @@ object mod {
        with FilesOptions
   object GenerateCSSReferencesOptions {
     
-    @scala.inline
-    def apply(): GenerateCSSReferencesOptions = {
+    inline def apply(): GenerateCSSReferencesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateCSSReferencesOptions]
     }
@@ -121,8 +101,7 @@ object mod {
        with FilesOptions
   object GenerateJSReferencesOptions {
     
-    @scala.inline
-    def apply(): GenerateJSReferencesOptions = {
+    inline def apply(): GenerateJSReferencesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateJSReferencesOptions]
     }
@@ -169,74 +148,52 @@ object mod {
   }
   object PluginContext {
     
-    @scala.inline
-    def apply(): PluginContext = {
+    inline def apply(): PluginContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginContext]
     }
     
-    @scala.inline
-    implicit class PluginContextMutableBuilder[Self <: PluginContext] (val x: Self) extends AnyVal {
+    extension [Self <: PluginContext](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssAttributes(value: AttributesType): Self = StObject.set(x, "cssAttributes", value.asInstanceOf[js.Any])
+      inline def setCssAttributes(value: AttributesType): Self = StObject.set(x, "cssAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssAttributesUndefined: Self = StObject.set(x, "cssAttributes", js.undefined)
+      inline def setCssAttributesUndefined: Self = StObject.set(x, "cssAttributes", js.undefined)
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
       
-      @scala.inline
-      def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setHtmlAttributes(value: AttributesType): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: AttributesType): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
+      inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
-      @scala.inline
-      def setJsAttributes(value: AttributesType): Self = StObject.set(x, "jsAttributes", value.asInstanceOf[js.Any])
+      inline def setJsAttributes(value: AttributesType): Self = StObject.set(x, "jsAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsAttributesUndefined: Self = StObject.set(x, "jsAttributes", js.undefined)
+      inline def setJsAttributesUndefined: Self = StObject.set(x, "jsAttributes", js.undefined)
       
-      @scala.inline
-      def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+      inline def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
+      inline def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
       
-      @scala.inline
-      def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -257,47 +214,34 @@ object mod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(): PluginOptions = {
+    inline def apply(): PluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setChunks(value: js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      inline def setChunks(value: js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
+      inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
       
-      @scala.inline
-      def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value :_*))
       
-      @scala.inline
-      def setContext(value: PluginContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: PluginContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: /* context */ PluginContext => String | js.Promise[String]): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+      inline def setTemplate(value: /* context */ PluginContext => String | js.Promise[String]): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
 }

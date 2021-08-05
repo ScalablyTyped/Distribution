@@ -20,8 +20,7 @@ trait SelectWrapper extends StObject {
 }
 object SelectWrapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     control: String,
     onError: String,
     other: String,
@@ -33,25 +32,18 @@ object SelectWrapper {
     __obj.asInstanceOf[SelectWrapper]
   }
   
-  @scala.inline
-  implicit class SelectWrapperMutableBuilder[Self <: SelectWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: SelectWrapper](x: Self) {
     
-    @scala.inline
-    def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(value: String): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: String): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectWrapper(value: String): Self = StObject.set(x, "selectWrapper", value.asInstanceOf[js.Any])
+    inline def setSelectWrapper(value: String): Self = StObject.set(x, "selectWrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
   }
 }

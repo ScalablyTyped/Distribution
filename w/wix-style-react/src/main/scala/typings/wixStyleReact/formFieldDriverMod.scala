@@ -32,8 +32,7 @@ object formFieldDriverMod {
   }
   object FormFieldDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: () => HTMLElement,
       exists: () => Boolean,
       getChildren: () => HTMLElement | Null,
@@ -49,35 +48,25 @@ object formFieldDriverMod {
       __obj.asInstanceOf[FormFieldDriver]
     }
     
-    @scala.inline
-    implicit class FormFieldDriverMutableBuilder[Self <: FormFieldDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FormFieldDriver](x: Self) {
       
-      @scala.inline
-      def setElement(value: () => HTMLElement): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => HTMLElement): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChildren(value: () => HTMLElement | Null): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => HTMLElement | Null): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInfoContent(value: () => String): Self = StObject.set(x, "getInfoContent", js.Any.fromFunction0(value))
+      inline def setGetInfoContent(value: () => String): Self = StObject.set(x, "getInfoContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabel(value: () => HTMLElement | Null): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => HTMLElement | Null): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLengthLeft(value: () => Double | Null): Self = StObject.set(x, "getLengthLeft", js.Any.fromFunction0(value))
+      inline def setGetLengthLeft(value: () => Double | Null): Self = StObject.set(x, "getLengthLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSuffix(value: () => HTMLElement | Null): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
+      inline def setGetSuffix(value: () => HTMLElement | Null): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTooltip(value: () => Boolean): Self = StObject.set(x, "hasTooltip", js.Any.fromFunction0(value))
+      inline def setHasTooltip(value: () => Boolean): Self = StObject.set(x, "hasTooltip", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLengthExceeded(value: () => Boolean): Self = StObject.set(x, "isLengthExceeded", js.Any.fromFunction0(value))
+      inline def setIsLengthExceeded(value: () => Boolean): Self = StObject.set(x, "isLengthExceeded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
+      inline def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
     }
   }
 }

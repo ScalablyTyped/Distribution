@@ -15,20 +15,16 @@ object iSerializedSetFilterMod {
   }
   object SerializedSetFilter {
     
-    @scala.inline
-    def apply(filterType: String, values: js.Array[String]): SerializedSetFilter = {
+    inline def apply(filterType: String, values: js.Array[String]): SerializedSetFilter = {
       val __obj = js.Dynamic.literal(filterType = filterType.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedSetFilter]
     }
     
-    @scala.inline
-    implicit class SerializedSetFilterMutableBuilder[Self <: SerializedSetFilter] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedSetFilter](x: Self) {
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

@@ -12,22 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportDeclaration extends StObject
 object ExportDeclaration {
   
-  @scala.inline
-  def ExportAllDeclaration_(end: Double, loc: SourceLocation, source: StringLiteral_, start: Double): typings.babelTypes.ts36Mod.ExportAllDeclaration_ = {
+  inline def ExportAllDeclaration_(end: Double, loc: SourceLocation, source: StringLiteral_, start: Double): typings.babelTypes.ts36Mod.ExportAllDeclaration_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportAllDeclaration_]
   }
   
-  @scala.inline
-  def ExportDefaultDeclaration_(declaration: Declaration | Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ExportDefaultDeclaration_ = {
+  inline def ExportDefaultDeclaration_(declaration: Declaration | Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportDefaultDeclaration_]
   }
   
-  @scala.inline
-  def ExportNamedDeclaration_(
+  inline def ExportNamedDeclaration_(
     declaration: Declaration,
     end: Double,
     loc: SourceLocation,

@@ -13,19 +13,15 @@ trait InputFormatConfiguration extends StObject {
 }
 object InputFormatConfiguration {
   
-  @scala.inline
-  def apply(): InputFormatConfiguration = {
+  inline def apply(): InputFormatConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputFormatConfiguration]
   }
   
-  @scala.inline
-  implicit class InputFormatConfigurationMutableBuilder[Self <: InputFormatConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: InputFormatConfiguration](x: Self) {
     
-    @scala.inline
-    def setDeserializer(value: Deserializer): Self = StObject.set(x, "Deserializer", value.asInstanceOf[js.Any])
+    inline def setDeserializer(value: Deserializer): Self = StObject.set(x, "Deserializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeserializerUndefined: Self = StObject.set(x, "Deserializer", js.undefined)
+    inline def setDeserializerUndefined: Self = StObject.set(x, "Deserializer", js.undefined)
   }
 }

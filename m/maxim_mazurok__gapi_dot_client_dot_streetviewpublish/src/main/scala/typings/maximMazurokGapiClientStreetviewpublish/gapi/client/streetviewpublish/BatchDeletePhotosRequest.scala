@@ -11,22 +11,17 @@ trait BatchDeletePhotosRequest extends StObject {
 }
 object BatchDeletePhotosRequest {
   
-  @scala.inline
-  def apply(): BatchDeletePhotosRequest = {
+  inline def apply(): BatchDeletePhotosRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeletePhotosRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeletePhotosRequestMutableBuilder[Self <: BatchDeletePhotosRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeletePhotosRequest](x: Self) {
     
-    @scala.inline
-    def setPhotoIds(value: js.Array[String]): Self = StObject.set(x, "photoIds", value.asInstanceOf[js.Any])
+    inline def setPhotoIds(value: js.Array[String]): Self = StObject.set(x, "photoIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
+    inline def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
     
-    @scala.inline
-    def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
+    inline def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
   }
 }

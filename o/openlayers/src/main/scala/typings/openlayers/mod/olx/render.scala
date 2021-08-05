@@ -15,26 +15,20 @@ object render {
   }
   object ToContextOptions {
     
-    @scala.inline
-    def apply(): ToContextOptions = {
+    inline def apply(): ToContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToContextOptions]
     }
     
-    @scala.inline
-    implicit class ToContextOptionsMutableBuilder[Self <: ToContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ToContextOptions](x: Self) {
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

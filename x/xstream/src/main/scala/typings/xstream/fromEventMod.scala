@@ -16,12 +16,9 @@ object fromEventMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](element: EventEmitter, eventName: String): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
-  @scala.inline
-  def default[T /* <: Event */](element: EventTarget, eventName: String): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
-  @scala.inline
-  def default[T /* <: Event */](element: EventTarget, eventName: String, useCapture: Boolean): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
+  inline def default[T](element: EventEmitter, eventName: String): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
+  inline def default[T /* <: Event */](element: EventTarget, eventName: String): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
+  inline def default[T /* <: Event */](element: EventTarget, eventName: String, useCapture: Boolean): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
   
   @JSImport("xstream/extra/fromEvent", "DOMEventProducer")
   @js.native
@@ -36,15 +33,15 @@ object fromEventMod {
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    var eventType: js.Any = js.native
+    /* private */ var eventType: js.Any = js.native
     
-    var listener: js.Any = js.native
+    /* private */ var listener: js.Any = js.native
     
-    var node: js.Any = js.native
+    /* private */ var node: js.Any = js.native
     
     var `type`: String = js.native
     
-    var useCapture: js.Any = js.native
+    /* private */ var useCapture: js.Any = js.native
   }
   
   @JSImport("xstream/extra/fromEvent", "NodeEventProducer")
@@ -60,11 +57,11 @@ object fromEventMod {
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    var eventName: js.Any = js.native
+    /* private */ var eventName: js.Any = js.native
     
-    var listener: js.Any = js.native
+    /* private */ var listener: js.Any = js.native
     
-    var node: js.Any = js.native
+    /* private */ var node: js.Any = js.native
     
     var `type`: String = js.native
   }

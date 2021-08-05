@@ -30,71 +30,50 @@ trait DOMOutputSpecArray extends StObject {
 }
 object DOMOutputSpecArray {
   
-  @scala.inline
-  def apply(`0`: String): DOMOutputSpecArray = {
+  inline def apply(`0`: String): DOMOutputSpecArray = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMOutputSpecArray]
   }
   
-  @scala.inline
-  implicit class DOMOutputSpecArrayMutableBuilder[Self <: DOMOutputSpecArray] (val x: Self) extends AnyVal {
+  extension [Self <: DOMOutputSpecArray](x: Self) {
     
-    @scala.inline
-    def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1(value: DOMOutputSpec | `0` | (StringDictionary[js.UndefOr[String | Null]])): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: DOMOutputSpec | `0` | (StringDictionary[js.UndefOr[String | Null]])): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1Undefined: Self = StObject.set(x, "1", js.undefined)
+    inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
     
-    @scala.inline
-    def set2(value: DOMOutputSpec | `0`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: DOMOutputSpec | `0`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2Undefined: Self = StObject.set(x, "2", js.undefined)
+    inline def set2Undefined: Self = StObject.set(x, "2", js.undefined)
     
-    @scala.inline
-    def set3(value: DOMOutputSpec | `0`): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: DOMOutputSpec | `0`): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3Undefined: Self = StObject.set(x, "3", js.undefined)
+    inline def set3Undefined: Self = StObject.set(x, "3", js.undefined)
     
-    @scala.inline
-    def set4(value: DOMOutputSpec | `0`): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+    inline def set4(value: DOMOutputSpec | `0`): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set4Undefined: Self = StObject.set(x, "4", js.undefined)
+    inline def set4Undefined: Self = StObject.set(x, "4", js.undefined)
     
-    @scala.inline
-    def set5(value: DOMOutputSpec | `0`): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+    inline def set5(value: DOMOutputSpec | `0`): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set5Undefined: Self = StObject.set(x, "5", js.undefined)
+    inline def set5Undefined: Self = StObject.set(x, "5", js.undefined)
     
-    @scala.inline
-    def set6(value: DOMOutputSpec | `0`): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+    inline def set6(value: DOMOutputSpec | `0`): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set6Undefined: Self = StObject.set(x, "6", js.undefined)
+    inline def set6Undefined: Self = StObject.set(x, "6", js.undefined)
     
-    @scala.inline
-    def set7(value: DOMOutputSpec | `0`): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+    inline def set7(value: DOMOutputSpec | `0`): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set7Undefined: Self = StObject.set(x, "7", js.undefined)
+    inline def set7Undefined: Self = StObject.set(x, "7", js.undefined)
     
-    @scala.inline
-    def set8(value: DOMOutputSpec | `0`): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+    inline def set8(value: DOMOutputSpec | `0`): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set8Undefined: Self = StObject.set(x, "8", js.undefined)
+    inline def set8Undefined: Self = StObject.set(x, "8", js.undefined)
     
-    @scala.inline
-    def set9(value: DOMOutputSpec | `0`): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+    inline def set9(value: DOMOutputSpec | `0`): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set9Undefined: Self = StObject.set(x, "9", js.undefined)
+    inline def set9Undefined: Self = StObject.set(x, "9", js.undefined)
   }
 }

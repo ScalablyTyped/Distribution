@@ -14,8 +14,7 @@ trait EventInfo[T] extends StObject {
 }
 object EventInfo {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     eventArgsTransformFunc: js.Any => js.Promise[T],
     registerFunc: js.Function1[/* args */ js.Any, Unit] => js.Promise[js.Any],
     unregisterFunc: js.Function1[/* args */ js.Any, Unit] => js.Promise[js.Any]
@@ -24,16 +23,12 @@ object EventInfo {
     __obj.asInstanceOf[EventInfo[T]]
   }
   
-  @scala.inline
-  implicit class EventInfoMutableBuilder[Self <: EventInfo[?], T] (val x: Self & EventInfo[T]) extends AnyVal {
+  extension [Self <: EventInfo[?], T](x: Self & EventInfo[T]) {
     
-    @scala.inline
-    def setEventArgsTransformFunc(value: js.Any => js.Promise[T]): Self = StObject.set(x, "eventArgsTransformFunc", js.Any.fromFunction1(value))
+    inline def setEventArgsTransformFunc(value: js.Any => js.Promise[T]): Self = StObject.set(x, "eventArgsTransformFunc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[js.Any]): Self = StObject.set(x, "registerFunc", js.Any.fromFunction1(value))
+    inline def setRegisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[js.Any]): Self = StObject.set(x, "registerFunc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[js.Any]): Self = StObject.set(x, "unregisterFunc", js.Any.fromFunction1(value))
+    inline def setUnregisterFunc(value: js.Function1[/* args */ js.Any, Unit] => js.Promise[js.Any]): Self = StObject.set(x, "unregisterFunc", js.Any.fromFunction1(value))
   }
 }

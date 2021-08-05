@@ -12,16 +12,13 @@ trait ProximitySensorDisplayOnOffController extends StObject {
 }
 object ProximitySensorDisplayOnOffController {
   
-  @scala.inline
-  def apply(close: () => Unit): ProximitySensorDisplayOnOffController = {
+  inline def apply(close: () => Unit): ProximitySensorDisplayOnOffController = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[ProximitySensorDisplayOnOffController]
   }
   
-  @scala.inline
-  implicit class ProximitySensorDisplayOnOffControllerMutableBuilder[Self <: ProximitySensorDisplayOnOffController] (val x: Self) extends AnyVal {
+  extension [Self <: ProximitySensorDisplayOnOffController](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

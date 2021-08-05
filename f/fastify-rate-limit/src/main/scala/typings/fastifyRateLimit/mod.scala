@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
   
   @JSImport("fastify-rate-limit", JSImport.Namespace)
   @js.native
@@ -75,59 +74,42 @@ object mod {
   }
   object FastifyRateLimitOptions {
     
-    @scala.inline
-    def apply[T](): FastifyRateLimitOptions[T] = {
+    inline def apply[T](): FastifyRateLimitOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastifyRateLimitOptions[T]]
     }
     
-    @scala.inline
-    implicit class FastifyRateLimitOptionsMutableBuilder[Self <: FastifyRateLimitOptions[?], T] (val x: Self & FastifyRateLimitOptions[T]) extends AnyVal {
+    extension [Self <: FastifyRateLimitOptions[?], T](x: Self & FastifyRateLimitOptions[T]) {
       
-      @scala.inline
-      def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setKeyGenerator(value: /* req */ T => String): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction1(value))
+      inline def setKeyGenerator(value: /* req */ T => String): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
+      inline def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setRedis(value: Redis): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(value: Redis): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
+      inline def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
       
-      @scala.inline
-      def setSkipOnError(value: Boolean): Self = StObject.set(x, "skipOnError", value.asInstanceOf[js.Any])
+      inline def setSkipOnError(value: Boolean): Self = StObject.set(x, "skipOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipOnErrorUndefined: Self = StObject.set(x, "skipOnError", js.undefined)
+      inline def setSkipOnErrorUndefined: Self = StObject.set(x, "skipOnError", js.undefined)
       
-      @scala.inline
-      def setTimeWindow(value: Double): Self = StObject.set(x, "timeWindow", value.asInstanceOf[js.Any])
+      inline def setTimeWindow(value: Double): Self = StObject.set(x, "timeWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeWindowUndefined: Self = StObject.set(x, "timeWindow", js.undefined)
+      inline def setTimeWindowUndefined: Self = StObject.set(x, "timeWindow", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
 }

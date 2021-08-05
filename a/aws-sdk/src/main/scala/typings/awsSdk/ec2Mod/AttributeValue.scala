@@ -13,19 +13,15 @@ trait AttributeValue extends StObject {
 }
 object AttributeValue {
   
-  @scala.inline
-  def apply(): AttributeValue = {
+  inline def apply(): AttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeValue]
   }
   
-  @scala.inline
-  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

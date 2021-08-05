@@ -10,16 +10,13 @@ trait Min extends StObject {
 }
 object Min {
   
-  @scala.inline
-  def apply(min: Double): Min = {
+  inline def apply(min: Double): Min = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[Min]
   }
   
-  @scala.inline
-  implicit class MinMutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
+  extension [Self <: Min](x: Self) {
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

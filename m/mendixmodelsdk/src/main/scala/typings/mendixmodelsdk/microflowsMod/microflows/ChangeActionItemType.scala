@@ -21,20 +21,17 @@ object ChangeActionItemType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ChangeActionItemType.Add")
   @js.native
   def Add: ChangeActionItemType = js.native
-  @scala.inline
-  def Add_=(x: ChangeActionItemType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Add")(x.asInstanceOf[js.Any])
+  inline def Add_=(x: ChangeActionItemType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Add")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ChangeActionItemType.Remove")
   @js.native
   def Remove: ChangeActionItemType = js.native
-  @scala.inline
-  def Remove_=(x: ChangeActionItemType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Remove")(x.asInstanceOf[js.Any])
+  inline def Remove_=(x: ChangeActionItemType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Remove")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ChangeActionItemType.Set")
   @js.native
   def Set: ChangeActionItemType = js.native
-  @scala.inline
-  def Set_=(x: ChangeActionItemType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Set")(x.asInstanceOf[js.Any])
+  inline def Set_=(x: ChangeActionItemType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Set")(x.asInstanceOf[js.Any])
 }

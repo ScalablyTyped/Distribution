@@ -14,23 +14,18 @@ trait RegisterResponse extends StObject {
 }
 object RegisterResponse {
   
-  @scala.inline
-  def apply(token: String, `type`: String, uuid: String): RegisterResponse = {
+  inline def apply(token: String, `type`: String, uuid: String): RegisterResponse = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterResponse]
   }
   
-  @scala.inline
-  implicit class RegisterResponseMutableBuilder[Self <: RegisterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterResponse](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

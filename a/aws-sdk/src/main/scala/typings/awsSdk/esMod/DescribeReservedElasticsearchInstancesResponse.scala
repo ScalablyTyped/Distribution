@@ -18,28 +18,21 @@ trait DescribeReservedElasticsearchInstancesResponse extends StObject {
 }
 object DescribeReservedElasticsearchInstancesResponse {
   
-  @scala.inline
-  def apply(): DescribeReservedElasticsearchInstancesResponse = {
+  inline def apply(): DescribeReservedElasticsearchInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedElasticsearchInstancesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeReservedElasticsearchInstancesResponseMutableBuilder[Self <: DescribeReservedElasticsearchInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedElasticsearchInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setReservedElasticsearchInstances(value: ReservedElasticsearchInstanceList): Self = StObject.set(x, "ReservedElasticsearchInstances", value.asInstanceOf[js.Any])
+    inline def setReservedElasticsearchInstances(value: ReservedElasticsearchInstanceList): Self = StObject.set(x, "ReservedElasticsearchInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedElasticsearchInstancesUndefined: Self = StObject.set(x, "ReservedElasticsearchInstances", js.undefined)
+    inline def setReservedElasticsearchInstancesUndefined: Self = StObject.set(x, "ReservedElasticsearchInstances", js.undefined)
     
-    @scala.inline
-    def setReservedElasticsearchInstancesVarargs(value: ReservedElasticsearchInstance*): Self = StObject.set(x, "ReservedElasticsearchInstances", js.Array(value :_*))
+    inline def setReservedElasticsearchInstancesVarargs(value: ReservedElasticsearchInstance*): Self = StObject.set(x, "ReservedElasticsearchInstances", js.Array(value :_*))
   }
 }

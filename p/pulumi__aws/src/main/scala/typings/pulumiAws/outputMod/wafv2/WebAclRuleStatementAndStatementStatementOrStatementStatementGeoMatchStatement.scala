@@ -20,27 +20,21 @@ trait WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatem
 }
 object WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement {
   
-  @scala.inline
-  def apply(countryCodes: js.Array[String]): WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement = {
+  inline def apply(countryCodes: js.Array[String]): WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement = {
     val __obj = js.Dynamic.literal(countryCodes = countryCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementMutableBuilder[Self <: WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement](x: Self) {
     
-    @scala.inline
-    def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
+    inline def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardedIpConfig(
+    inline def setForwardedIpConfig(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig
     ): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
+    inline def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
   }
 }

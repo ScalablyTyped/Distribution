@@ -23,31 +23,23 @@ trait MongoDistinctPreferences extends StObject {
 }
 object MongoDistinctPreferences {
   
-  @scala.inline
-  def apply(): MongoDistinctPreferences = {
+  inline def apply(): MongoDistinctPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MongoDistinctPreferences]
   }
   
-  @scala.inline
-  implicit class MongoDistinctPreferencesMutableBuilder[Self <: MongoDistinctPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: MongoDistinctPreferences](x: Self) {
     
-    @scala.inline
-    def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
+    inline def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

@@ -28,49 +28,35 @@ trait GetBucketSignedUrlConfig extends StObject {
 }
 object GetBucketSignedUrlConfig {
   
-  @scala.inline
-  def apply(expires: String | Double | Date): GetBucketSignedUrlConfig = {
+  inline def apply(expires: String | Double | Date): GetBucketSignedUrlConfig = {
     val __obj = js.Dynamic.literal(action = "list", expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketSignedUrlConfig]
   }
   
-  @scala.inline
-  implicit class GetBucketSignedUrlConfigMutableBuilder[Self <: GetBucketSignedUrlConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketSignedUrlConfig](x: Self) {
     
-    @scala.inline
-    def setAction(value: list): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: list): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
+    inline def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
+    inline def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
-    @scala.inline
-    def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
+    inline def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionHeadersUndefined: Self = StObject.set(x, "extensionHeaders", js.undefined)
+    inline def setExtensionHeadersUndefined: Self = StObject.set(x, "extensionHeaders", js.undefined)
     
-    @scala.inline
-    def setQueryParams(value: Query): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+    inline def setQueryParams(value: Query): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+    inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
-    @scala.inline
-    def setVersion(value: v2 | v4): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: v2 | v4): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
+    inline def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
+    inline def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
   }
 }

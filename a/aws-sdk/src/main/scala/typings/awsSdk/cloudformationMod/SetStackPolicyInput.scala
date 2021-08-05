@@ -23,28 +23,21 @@ trait SetStackPolicyInput extends StObject {
 }
 object SetStackPolicyInput {
   
-  @scala.inline
-  def apply(StackName: StackName): SetStackPolicyInput = {
+  inline def apply(StackName: StackName): SetStackPolicyInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStackPolicyInput]
   }
   
-  @scala.inline
-  implicit class SetStackPolicyInputMutableBuilder[Self <: SetStackPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetStackPolicyInput](x: Self) {
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
+    inline def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackPolicyBodyUndefined: Self = StObject.set(x, "StackPolicyBody", js.undefined)
+    inline def setStackPolicyBodyUndefined: Self = StObject.set(x, "StackPolicyBody", js.undefined)
     
-    @scala.inline
-    def setStackPolicyURL(value: StackPolicyURL): Self = StObject.set(x, "StackPolicyURL", value.asInstanceOf[js.Any])
+    inline def setStackPolicyURL(value: StackPolicyURL): Self = StObject.set(x, "StackPolicyURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackPolicyURLUndefined: Self = StObject.set(x, "StackPolicyURL", js.undefined)
+    inline def setStackPolicyURLUndefined: Self = StObject.set(x, "StackPolicyURL", js.undefined)
   }
 }

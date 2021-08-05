@@ -24,61 +24,43 @@ trait GeckodriverCapabilities extends StObject {
 }
 object GeckodriverCapabilities {
   
-  @scala.inline
-  def apply(): GeckodriverCapabilities = {
+  inline def apply(): GeckodriverCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeckodriverCapabilities]
   }
   
-  @scala.inline
-  implicit class GeckodriverCapabilitiesMutableBuilder[Self <: GeckodriverCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: GeckodriverCapabilities](x: Self) {
     
-    @scala.inline
-    def setAddCustomRequestHeaders(value: Boolean): Self = StObject.set(x, "addCustomRequestHeaders", value.asInstanceOf[js.Any])
+    inline def setAddCustomRequestHeaders(value: Boolean): Self = StObject.set(x, "addCustomRequestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddCustomRequestHeadersUndefined: Self = StObject.set(x, "addCustomRequestHeaders", js.undefined)
+    inline def setAddCustomRequestHeadersUndefined: Self = StObject.set(x, "addCustomRequestHeaders", js.undefined)
     
-    @scala.inline
-    def setCaptureNetworkTraffic(value: Boolean): Self = StObject.set(x, "captureNetworkTraffic", value.asInstanceOf[js.Any])
+    inline def setCaptureNetworkTraffic(value: Boolean): Self = StObject.set(x, "captureNetworkTraffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureNetworkTrafficUndefined: Self = StObject.set(x, "captureNetworkTraffic", js.undefined)
+    inline def setCaptureNetworkTrafficUndefined: Self = StObject.set(x, "captureNetworkTraffic", js.undefined)
     
-    @scala.inline
-    def setChangeMaxConnections(value: Boolean): Self = StObject.set(x, "changeMaxConnections", value.asInstanceOf[js.Any])
+    inline def setChangeMaxConnections(value: Boolean): Self = StObject.set(x, "changeMaxConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeMaxConnectionsUndefined: Self = StObject.set(x, "changeMaxConnections", js.undefined)
+    inline def setChangeMaxConnectionsUndefined: Self = StObject.set(x, "changeMaxConnections", js.undefined)
     
-    @scala.inline
-    def setFirefoxProfileTemplate(value: String): Self = StObject.set(x, "firefoxProfileTemplate", value.asInstanceOf[js.Any])
+    inline def setFirefoxProfileTemplate(value: String): Self = StObject.set(x, "firefoxProfileTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirefoxProfileTemplateUndefined: Self = StObject.set(x, "firefoxProfileTemplate", js.undefined)
+    inline def setFirefoxProfileTemplateUndefined: Self = StObject.set(x, "firefoxProfileTemplate", js.undefined)
     
-    @scala.inline
-    def setFirefox_binary(value: String): Self = StObject.set(x, "firefox_binary", value.asInstanceOf[js.Any])
+    inline def setFirefox_binary(value: String): Self = StObject.set(x, "firefox_binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirefox_binaryUndefined: Self = StObject.set(x, "firefox_binary", js.undefined)
+    inline def setFirefox_binaryUndefined: Self = StObject.set(x, "firefox_binary", js.undefined)
     
-    @scala.inline
-    def setPageLoadingStrategy(value: String): Self = StObject.set(x, "pageLoadingStrategy", value.asInstanceOf[js.Any])
+    inline def setPageLoadingStrategy(value: String): Self = StObject.set(x, "pageLoadingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLoadingStrategyUndefined: Self = StObject.set(x, "pageLoadingStrategy", js.undefined)
+    inline def setPageLoadingStrategyUndefined: Self = StObject.set(x, "pageLoadingStrategy", js.undefined)
     
-    @scala.inline
-    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setTrustAllSSLCertificates(value: Boolean): Self = StObject.set(x, "trustAllSSLCertificates", value.asInstanceOf[js.Any])
+    inline def setTrustAllSSLCertificates(value: Boolean): Self = StObject.set(x, "trustAllSSLCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustAllSSLCertificatesUndefined: Self = StObject.set(x, "trustAllSSLCertificates", js.undefined)
+    inline def setTrustAllSSLCertificatesUndefined: Self = StObject.set(x, "trustAllSSLCertificates", js.undefined)
   }
 }

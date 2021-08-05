@@ -12,16 +12,13 @@ trait PathTemplateBasedRequestPrepareOptions
 }
 object PathTemplateBasedRequestPrepareOptions {
   
-  @scala.inline
-  def apply(deserializationMapper: Mapper, method: String, pathTemplate: String, serializationMapper: Mapper): PathTemplateBasedRequestPrepareOptions = {
+  inline def apply(deserializationMapper: Mapper, method: String, pathTemplate: String, serializationMapper: Mapper): PathTemplateBasedRequestPrepareOptions = {
     val __obj = js.Dynamic.literal(deserializationMapper = deserializationMapper.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], pathTemplate = pathTemplate.asInstanceOf[js.Any], serializationMapper = serializationMapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathTemplateBasedRequestPrepareOptions]
   }
   
-  @scala.inline
-  implicit class PathTemplateBasedRequestPrepareOptionsMutableBuilder[Self <: PathTemplateBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PathTemplateBasedRequestPrepareOptions](x: Self) {
     
-    @scala.inline
-    def setPathTemplate(value: String): Self = StObject.set(x, "pathTemplate", value.asInstanceOf[js.Any])
+    inline def setPathTemplate(value: String): Self = StObject.set(x, "pathTemplate", value.asInstanceOf[js.Any])
   }
 }

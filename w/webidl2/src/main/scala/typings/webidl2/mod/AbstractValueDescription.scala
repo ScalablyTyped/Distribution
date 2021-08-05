@@ -13,17 +13,14 @@ trait AbstractValueDescription
 }
 object AbstractValueDescription {
   
-  @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): AbstractValueDescription = {
+  inline def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): AbstractValueDescription = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[AbstractValueDescription]
   }
   
-  @scala.inline
-  implicit class AbstractValueDescriptionMutableBuilder[Self <: AbstractValueDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractValueDescription](x: Self) {
     
-    @scala.inline
-    def setParent(value: Argument | ConstantMemberType | FieldType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Argument | ConstantMemberType | FieldType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }
 }

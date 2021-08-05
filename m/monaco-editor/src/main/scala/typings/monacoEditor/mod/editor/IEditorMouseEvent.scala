@@ -13,19 +13,15 @@ trait IEditorMouseEvent extends StObject {
 }
 object IEditorMouseEvent {
   
-  @scala.inline
-  def apply(event: IMouseEvent, target: IMouseTarget): IEditorMouseEvent = {
+  inline def apply(event: IMouseEvent, target: IMouseTarget): IEditorMouseEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorMouseEvent]
   }
   
-  @scala.inline
-  implicit class IEditorMouseEventMutableBuilder[Self <: IEditorMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorMouseEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: IMouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: IMouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: IMouseTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: IMouseTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

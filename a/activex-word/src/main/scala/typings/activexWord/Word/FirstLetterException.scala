@@ -18,13 +18,12 @@ trait FirstLetterException extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.FirstLetterException_typekey")
+  /* private */ @JSName("Word.FirstLetterException_typekey")
   var WordDotFirstLetterException_typekey: FirstLetterException
 }
 object FirstLetterException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -38,28 +37,20 @@ object FirstLetterException {
     __obj.asInstanceOf[FirstLetterException]
   }
   
-  @scala.inline
-  implicit class FirstLetterExceptionMutableBuilder[Self <: FirstLetterException] (val x: Self) extends AnyVal {
+  extension [Self <: FirstLetterException](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotFirstLetterException_typekey(value: FirstLetterException): Self = StObject.set(x, "Word.FirstLetterException_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotFirstLetterException_typekey(value: FirstLetterException): Self = StObject.set(x, "Word.FirstLetterException_typekey", value.asInstanceOf[js.Any])
   }
 }

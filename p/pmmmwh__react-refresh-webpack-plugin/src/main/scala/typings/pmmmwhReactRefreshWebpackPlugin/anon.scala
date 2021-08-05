@@ -13,18 +13,15 @@ object anon {
   }
   object _empty {
     
-    @scala.inline
-    def apply(_underscore: Unit): _empty = {
+    inline def apply(_underscore: Unit): _empty = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
       __obj.asInstanceOf[_empty]
     }
     
-    @scala.inline
-    implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+    extension [Self <: _empty](x: Self) {
       
-      @scala.inline
-      def set_underscore(value: Unit): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+      inline def set_underscore(value: Unit): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
     }
   }
 }

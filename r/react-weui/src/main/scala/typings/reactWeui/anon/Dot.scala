@@ -12,19 +12,15 @@ trait Dot extends StObject {
 }
 object Dot {
   
-  @scala.inline
-  def apply(dot: Boolean, preset: String): Dot = {
+  inline def apply(dot: Boolean, preset: String): Dot = {
     val __obj = js.Dynamic.literal(dot = dot.asInstanceOf[js.Any], preset = preset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dot]
   }
   
-  @scala.inline
-  implicit class DotMutableBuilder[Self <: Dot] (val x: Self) extends AnyVal {
+  extension [Self <: Dot](x: Self) {
     
-    @scala.inline
-    def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+    inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
   }
 }

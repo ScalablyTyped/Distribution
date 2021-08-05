@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MozUserInputProperty extends StObject
 object MozUserInputProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   
-  @scala.inline
-  def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
+  inline def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
   
-  @scala.inline
-  def disabled: typings.csstype.csstypeStrings.disabled = "disabled".asInstanceOf[typings.csstype.csstypeStrings.disabled]
+  inline def disabled: typings.csstype.csstypeStrings.disabled = "disabled".asInstanceOf[typings.csstype.csstypeStrings.disabled]
   
-  @scala.inline
-  def enabled: typings.csstype.csstypeStrings.enabled = "enabled".asInstanceOf[typings.csstype.csstypeStrings.enabled]
+  inline def enabled: typings.csstype.csstypeStrings.enabled = "enabled".asInstanceOf[typings.csstype.csstypeStrings.enabled]
   
-  @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   
-  @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   
-  @scala.inline
-  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
+  inline def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   
-  @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }

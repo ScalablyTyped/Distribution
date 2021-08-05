@@ -14,8 +14,7 @@ object mod {
   @JSImport("uuid-apikey", JSImport.Default)
   @js.native
   def default: UUIDAPIKey = js.native
-  @scala.inline
-  def default_=(x: UUIDAPIKey): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: UUIDAPIKey): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait ApiKeyInfo extends StObject {
     
@@ -25,20 +24,16 @@ object mod {
   }
   object ApiKeyInfo {
     
-    @scala.inline
-    def apply(apiKey: String, uuid: String): ApiKeyInfo = {
+    inline def apply(apiKey: String, uuid: String): ApiKeyInfo = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiKeyInfo]
     }
     
-    @scala.inline
-    implicit class ApiKeyInfoMutableBuilder[Self <: ApiKeyInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ApiKeyInfo](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,17 +63,14 @@ object mod {
   }
   object UUIDOptions {
     
-    @scala.inline
-    def apply(noDashes: Boolean): UUIDOptions = {
+    inline def apply(noDashes: Boolean): UUIDOptions = {
       val __obj = js.Dynamic.literal(noDashes = noDashes.asInstanceOf[js.Any])
       __obj.asInstanceOf[UUIDOptions]
     }
     
-    @scala.inline
-    implicit class UUIDOptionsMutableBuilder[Self <: UUIDOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UUIDOptions](x: Self) {
       
-      @scala.inline
-      def setNoDashes(value: Boolean): Self = StObject.set(x, "noDashes", value.asInstanceOf[js.Any])
+      inline def setNoDashes(value: Boolean): Self = StObject.set(x, "noDashes", value.asInstanceOf[js.Any])
     }
   }
 }

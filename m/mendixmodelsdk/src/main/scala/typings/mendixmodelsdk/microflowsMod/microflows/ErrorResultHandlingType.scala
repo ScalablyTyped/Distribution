@@ -21,13 +21,11 @@ object ErrorResultHandlingType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorResultHandlingType.HttpResponse")
   @js.native
   def HttpResponse: ErrorResultHandlingType = js.native
-  @scala.inline
-  def HttpResponse_=(x: ErrorResultHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpResponse")(x.asInstanceOf[js.Any])
+  inline def HttpResponse_=(x: ErrorResultHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpResponse")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorResultHandlingType.None")
   @js.native
   def None: ErrorResultHandlingType = js.native
-  @scala.inline
-  def None_=(x: ErrorResultHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: ErrorResultHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
 }

@@ -18,16 +18,13 @@ trait HoverProvider extends StObject {
 }
 object HoverProvider {
   
-  @scala.inline
-  def apply(provideHover: (ITextModel, Position, CancellationToken) => ProviderResult[Hover]): HoverProvider = {
+  inline def apply(provideHover: (ITextModel, Position, CancellationToken) => ProviderResult[Hover]): HoverProvider = {
     val __obj = js.Dynamic.literal(provideHover = js.Any.fromFunction3(provideHover))
     __obj.asInstanceOf[HoverProvider]
   }
   
-  @scala.inline
-  implicit class HoverProviderMutableBuilder[Self <: HoverProvider] (val x: Self) extends AnyVal {
+  extension [Self <: HoverProvider](x: Self) {
     
-    @scala.inline
-    def setProvideHover(value: (ITextModel, Position, CancellationToken) => ProviderResult[Hover]): Self = StObject.set(x, "provideHover", js.Any.fromFunction3(value))
+    inline def setProvideHover(value: (ITextModel, Position, CancellationToken) => ProviderResult[Hover]): Self = StObject.set(x, "provideHover", js.Any.fromFunction3(value))
   }
 }

@@ -44,33 +44,25 @@ trait SearchLayerFieldProperties extends StObject {
 }
 object SearchLayerFieldProperties {
   
-  @scala.inline
-  def apply(): SearchLayerFieldProperties = {
+  inline def apply(): SearchLayerFieldProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchLayerFieldProperties]
   }
   
-  @scala.inline
-  implicit class SearchLayerFieldPropertiesMutableBuilder[Self <: SearchLayerFieldProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SearchLayerFieldProperties](x: Self) {
     
-    @scala.inline
-    def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

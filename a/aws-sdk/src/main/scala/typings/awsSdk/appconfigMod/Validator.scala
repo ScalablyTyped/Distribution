@@ -18,19 +18,15 @@ trait Validator extends StObject {
 }
 object Validator {
   
-  @scala.inline
-  def apply(Content: StringWithLengthBetween0And32768, Type: ValidatorType): Validator = {
+  inline def apply(Content: StringWithLengthBetween0And32768, Type: ValidatorType): Validator = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Validator]
   }
   
-  @scala.inline
-  implicit class ValidatorMutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
+  extension [Self <: Validator](x: Self) {
     
-    @scala.inline
-    def setContent(value: StringWithLengthBetween0And32768): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: StringWithLengthBetween0And32768): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ValidatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ValidatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

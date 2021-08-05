@@ -42,8 +42,7 @@ trait TeamSetting
 }
 object TeamSetting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     backlogIteration: TeamSettingsIteration,
     backlogVisibilities: StringDictionary[Boolean],
@@ -57,28 +56,20 @@ object TeamSetting {
     __obj.asInstanceOf[TeamSetting]
   }
   
-  @scala.inline
-  implicit class TeamSettingMutableBuilder[Self <: TeamSetting] (val x: Self) extends AnyVal {
+  extension [Self <: TeamSetting](x: Self) {
     
-    @scala.inline
-    def setBacklogIteration(value: TeamSettingsIteration): Self = StObject.set(x, "backlogIteration", value.asInstanceOf[js.Any])
+    inline def setBacklogIteration(value: TeamSettingsIteration): Self = StObject.set(x, "backlogIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacklogVisibilities(value: StringDictionary[Boolean]): Self = StObject.set(x, "backlogVisibilities", value.asInstanceOf[js.Any])
+    inline def setBacklogVisibilities(value: StringDictionary[Boolean]): Self = StObject.set(x, "backlogVisibilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBugsBehavior(value: BugsBehavior): Self = StObject.set(x, "bugsBehavior", value.asInstanceOf[js.Any])
+    inline def setBugsBehavior(value: BugsBehavior): Self = StObject.set(x, "bugsBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultIteration(value: TeamSettingsIteration): Self = StObject.set(x, "defaultIteration", value.asInstanceOf[js.Any])
+    inline def setDefaultIteration(value: TeamSettingsIteration): Self = StObject.set(x, "defaultIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultIterationMacro(value: String): Self = StObject.set(x, "defaultIterationMacro", value.asInstanceOf[js.Any])
+    inline def setDefaultIterationMacro(value: String): Self = StObject.set(x, "defaultIterationMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "workingDays", value.asInstanceOf[js.Any])
+    inline def setWorkingDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "workingDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workingDays", js.Array(value :_*))
+    inline def setWorkingDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workingDays", js.Array(value :_*))
   }
 }

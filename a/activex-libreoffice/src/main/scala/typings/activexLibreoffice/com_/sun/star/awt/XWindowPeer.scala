@@ -40,8 +40,7 @@ trait XWindowPeer
 }
 object XWindowPeer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Toolkit: XToolkit,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -59,25 +58,18 @@ object XWindowPeer {
     __obj.asInstanceOf[XWindowPeer]
   }
   
-  @scala.inline
-  implicit class XWindowPeerMutableBuilder[Self <: XWindowPeer] (val x: Self) extends AnyVal {
+  extension [Self <: XWindowPeer](x: Self) {
     
-    @scala.inline
-    def setGetToolkit(value: () => XToolkit): Self = StObject.set(x, "getToolkit", js.Any.fromFunction0(value))
+    inline def setGetToolkit(value: () => XToolkit): Self = StObject.set(x, "getToolkit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInvalidate(value: Double => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction1(value))
+    inline def setInvalidate(value: Double => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInvalidateRect(value: (Rectangle, Double) => Unit): Self = StObject.set(x, "invalidateRect", js.Any.fromFunction2(value))
+    inline def setInvalidateRect(value: (Rectangle, Double) => Unit): Self = StObject.set(x, "invalidateRect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBackground(value: Color => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
+    inline def setSetBackground(value: Color => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPointer(value: XPointer => Unit): Self = StObject.set(x, "setPointer", js.Any.fromFunction1(value))
+    inline def setSetPointer(value: XPointer => Unit): Self = StObject.set(x, "setPointer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToolkit(value: XToolkit): Self = StObject.set(x, "Toolkit", value.asInstanceOf[js.Any])
+    inline def setToolkit(value: XToolkit): Self = StObject.set(x, "Toolkit", value.asInstanceOf[js.Any])
   }
 }

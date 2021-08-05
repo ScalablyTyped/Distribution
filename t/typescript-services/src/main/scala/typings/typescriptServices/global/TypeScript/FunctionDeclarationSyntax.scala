@@ -101,14 +101,12 @@ object FunctionDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     functionKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax
   ): typings.typescriptServices.TypeScript.FunctionDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(functionKeyword.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], callSignature.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.FunctionDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.FunctionDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.FunctionDeclarationSyntax]
+  inline def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.FunctionDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.FunctionDeclarationSyntax]
 }

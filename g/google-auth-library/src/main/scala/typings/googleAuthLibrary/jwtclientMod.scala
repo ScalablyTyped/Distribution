@@ -42,7 +42,7 @@ object jwtclientMod {
       keyId: js.UndefOr[String]
     ) = this()
     
-    var access: js.Any = js.native
+    /* private */ var access: js.Any = js.native
     
     var additionalClaims: js.UndefOr[js.Object] = js.native
     
@@ -54,12 +54,12 @@ object jwtclientMod {
     def authorize(): js.Promise[Credentials] = js.native
     def authorize(callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Credentials], Unit]): Unit = js.native
     
-    var authorizeAsync: js.Any = js.native
+    /* private */ var authorizeAsync: js.Any = js.native
     
     /**
       * Create a gToken if it doesn't already exist.
       */
-    var createGToken: js.Any = js.native
+    /* private */ var createGToken: js.Any = js.native
     
     /**
       * Creates a copy of the credential with the specified scopes.
@@ -97,7 +97,7 @@ object jwtclientMod {
     def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
     def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
     
-    var fromStreamAsync: js.Any = js.native
+    /* private */ var fromStreamAsync: js.Any = js.native
     
     /**
       * Using the key or keyFile on the JWT client, obtain an object that contains
@@ -110,12 +110,12 @@ object jwtclientMod {
     /**
       * Are there any default or user scopes defined.
       */
-    var hasAnyScopes: js.Any = js.native
+    /* private */ var hasAnyScopes: js.Any = js.native
     
     /**
       * Determine if there are currently scopes available.
       */
-    var hasUserScopes: js.Any = js.native
+    /* private */ var hasUserScopes: js.Any = js.native
     
     var key: js.UndefOr[String] = js.native
     
@@ -150,59 +150,42 @@ object jwtclientMod {
   }
   object JWTOptions {
     
-    @scala.inline
-    def apply(): JWTOptions = {
+    inline def apply(): JWTOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JWTOptions]
     }
     
-    @scala.inline
-    implicit class JWTOptionsMutableBuilder[Self <: JWTOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JWTOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalClaims(value: js.Object): Self = StObject.set(x, "additionalClaims", value.asInstanceOf[js.Any])
+      inline def setAdditionalClaims(value: js.Object): Self = StObject.set(x, "additionalClaims", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalClaimsUndefined: Self = StObject.set(x, "additionalClaims", js.undefined)
+      inline def setAdditionalClaimsUndefined: Self = StObject.set(x, "additionalClaims", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
+      inline def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
+      inline def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     }
   }
 }

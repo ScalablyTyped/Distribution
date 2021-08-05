@@ -42,46 +42,33 @@ trait PullsCreateEndpoint extends StObject {
 }
 object PullsCreateEndpoint {
   
-  @scala.inline
-  def apply(base: String, head: String, owner: String, repo: String, title: String): PullsCreateEndpoint = {
+  inline def apply(base: String, head: String, owner: String, repo: String, title: String): PullsCreateEndpoint = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsCreateEndpoint]
   }
   
-  @scala.inline
-  implicit class PullsCreateEndpointMutableBuilder[Self <: PullsCreateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: PullsCreateEndpoint](x: Self) {
     
-    @scala.inline
-    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
-    @scala.inline
-    def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintainer_can_modify(value: Boolean): Self = StObject.set(x, "maintainer_can_modify", value.asInstanceOf[js.Any])
+    inline def setMaintainer_can_modify(value: Boolean): Self = StObject.set(x, "maintainer_can_modify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintainer_can_modifyUndefined: Self = StObject.set(x, "maintainer_can_modify", js.undefined)
+    inline def setMaintainer_can_modifyUndefined: Self = StObject.set(x, "maintainer_can_modify", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

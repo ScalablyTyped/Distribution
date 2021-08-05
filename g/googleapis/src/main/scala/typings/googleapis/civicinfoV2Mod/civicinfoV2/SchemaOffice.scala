@@ -50,61 +50,43 @@ trait SchemaOffice extends StObject {
 }
 object SchemaOffice {
   
-  @scala.inline
-  def apply(): SchemaOffice = {
+  inline def apply(): SchemaOffice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOffice]
   }
   
-  @scala.inline
-  implicit class SchemaOfficeMutableBuilder[Self <: SchemaOffice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOffice](x: Self) {
     
-    @scala.inline
-    def setDivisionId(value: String): Self = StObject.set(x, "divisionId", value.asInstanceOf[js.Any])
+    inline def setDivisionId(value: String): Self = StObject.set(x, "divisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivisionIdUndefined: Self = StObject.set(x, "divisionId", js.undefined)
+    inline def setDivisionIdUndefined: Self = StObject.set(x, "divisionId", js.undefined)
     
-    @scala.inline
-    def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOfficialIndices(value: js.Array[Double]): Self = StObject.set(x, "officialIndices", value.asInstanceOf[js.Any])
+    inline def setOfficialIndices(value: js.Array[Double]): Self = StObject.set(x, "officialIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficialIndicesUndefined: Self = StObject.set(x, "officialIndices", js.undefined)
+    inline def setOfficialIndicesUndefined: Self = StObject.set(x, "officialIndices", js.undefined)
     
-    @scala.inline
-    def setOfficialIndicesVarargs(value: Double*): Self = StObject.set(x, "officialIndices", js.Array(value :_*))
+    inline def setOfficialIndicesVarargs(value: Double*): Self = StObject.set(x, "officialIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
-    @scala.inline
-    def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

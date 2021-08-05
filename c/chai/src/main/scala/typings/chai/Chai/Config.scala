@@ -33,8 +33,7 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeStack: Boolean,
     proxyExcludedKeys: js.Array[String],
     showDiff: Boolean,
@@ -45,25 +44,18 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setIncludeStack(value: Boolean): Self = StObject.set(x, "includeStack", value.asInstanceOf[js.Any])
+    inline def setIncludeStack(value: Boolean): Self = StObject.set(x, "includeStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyExcludedKeys(value: js.Array[String]): Self = StObject.set(x, "proxyExcludedKeys", value.asInstanceOf[js.Any])
+    inline def setProxyExcludedKeys(value: js.Array[String]): Self = StObject.set(x, "proxyExcludedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyExcludedKeysVarargs(value: String*): Self = StObject.set(x, "proxyExcludedKeys", js.Array(value :_*))
+    inline def setProxyExcludedKeysVarargs(value: String*): Self = StObject.set(x, "proxyExcludedKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
+    inline def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncateThreshold(value: Double): Self = StObject.set(x, "truncateThreshold", value.asInstanceOf[js.Any])
+    inline def setTruncateThreshold(value: Double): Self = StObject.set(x, "truncateThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseProxy(value: Boolean): Self = StObject.set(x, "useProxy", value.asInstanceOf[js.Any])
+    inline def setUseProxy(value: Boolean): Self = StObject.set(x, "useProxy", value.asInstanceOf[js.Any])
   }
 }

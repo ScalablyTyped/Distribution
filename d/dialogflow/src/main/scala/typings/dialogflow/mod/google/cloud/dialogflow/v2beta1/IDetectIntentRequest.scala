@@ -25,58 +25,41 @@ trait IDetectIntentRequest extends StObject {
 }
 object IDetectIntentRequest {
   
-  @scala.inline
-  def apply(): IDetectIntentRequest = {
+  inline def apply(): IDetectIntentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDetectIntentRequest]
   }
   
-  @scala.inline
-  implicit class IDetectIntentRequestMutableBuilder[Self <: IDetectIntentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IDetectIntentRequest](x: Self) {
     
-    @scala.inline
-    def setInputAudio(value: Uint8Array | String): Self = StObject.set(x, "inputAudio", value.asInstanceOf[js.Any])
+    inline def setInputAudio(value: Uint8Array | String): Self = StObject.set(x, "inputAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputAudioNull: Self = StObject.set(x, "inputAudio", null)
+    inline def setInputAudioNull: Self = StObject.set(x, "inputAudio", null)
     
-    @scala.inline
-    def setInputAudioUndefined: Self = StObject.set(x, "inputAudio", js.undefined)
+    inline def setInputAudioUndefined: Self = StObject.set(x, "inputAudio", js.undefined)
     
-    @scala.inline
-    def setOutputAudioConfig(value: IOutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
+    inline def setOutputAudioConfig(value: IOutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputAudioConfigNull: Self = StObject.set(x, "outputAudioConfig", null)
+    inline def setOutputAudioConfigNull: Self = StObject.set(x, "outputAudioConfig", null)
     
-    @scala.inline
-    def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
+    inline def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
     
-    @scala.inline
-    def setQueryInput(value: IQueryInput): Self = StObject.set(x, "queryInput", value.asInstanceOf[js.Any])
+    inline def setQueryInput(value: IQueryInput): Self = StObject.set(x, "queryInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryInputNull: Self = StObject.set(x, "queryInput", null)
+    inline def setQueryInputNull: Self = StObject.set(x, "queryInput", null)
     
-    @scala.inline
-    def setQueryInputUndefined: Self = StObject.set(x, "queryInput", js.undefined)
+    inline def setQueryInputUndefined: Self = StObject.set(x, "queryInput", js.undefined)
     
-    @scala.inline
-    def setQueryParams(value: IQueryParameters): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+    inline def setQueryParams(value: IQueryParameters): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParamsNull: Self = StObject.set(x, "queryParams", null)
+    inline def setQueryParamsNull: Self = StObject.set(x, "queryParams", null)
     
-    @scala.inline
-    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+    inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
-    @scala.inline
-    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionNull: Self = StObject.set(x, "session", null)
+    inline def setSessionNull: Self = StObject.set(x, "session", null)
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

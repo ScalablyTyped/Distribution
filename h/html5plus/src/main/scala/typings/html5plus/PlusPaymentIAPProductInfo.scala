@@ -28,25 +28,19 @@ trait PlusPaymentIAPProductInfo extends StObject {
 }
 object PlusPaymentIAPProductInfo {
   
-  @scala.inline
-  def apply(): PlusPaymentIAPProductInfo = {
+  inline def apply(): PlusPaymentIAPProductInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusPaymentIAPProductInfo]
   }
   
-  @scala.inline
-  implicit class PlusPaymentIAPProductInfoMutableBuilder[Self <: PlusPaymentIAPProductInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlusPaymentIAPProductInfo](x: Self) {
     
-    @scala.inline
-    def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
+    inline def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdentifierUndefined: Self = StObject.set(x, "productIdentifier", js.undefined)
+    inline def setProductIdentifierUndefined: Self = StObject.set(x, "productIdentifier", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

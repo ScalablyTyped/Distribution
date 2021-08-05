@@ -26,23 +26,18 @@ object typesGenerateRandomOutputMod {
   }
   object GenerateRandomOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GenerateRandomOutput = {
+    inline def apply($metadata: ResponseMetadata): GenerateRandomOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateRandomOutput]
     }
     
-    @scala.inline
-    implicit class GenerateRandomOutputMutableBuilder[Self <: GenerateRandomOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateRandomOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintext(value: Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
+      inline def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
     }
   }
 }

@@ -21,35 +21,26 @@ trait RippleBackgroundPropType
 }
 object RippleBackgroundPropType {
   
-  @scala.inline
-  def apply(): RippleBackgroundPropType = {
+  inline def apply(): RippleBackgroundPropType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("RippleAndroid")
     __obj.asInstanceOf[RippleBackgroundPropType]
   }
   
-  @scala.inline
-  implicit class RippleBackgroundPropTypeMutableBuilder[Self <: RippleBackgroundPropType] (val x: Self) extends AnyVal {
+  extension [Self <: RippleBackgroundPropType](x: Self) {
     
-    @scala.inline
-    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    @scala.inline
-    def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setType(value: RippleAndroid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RippleAndroid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

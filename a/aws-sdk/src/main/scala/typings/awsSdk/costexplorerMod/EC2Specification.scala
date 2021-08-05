@@ -13,19 +13,15 @@ trait EC2Specification extends StObject {
 }
 object EC2Specification {
   
-  @scala.inline
-  def apply(): EC2Specification = {
+  inline def apply(): EC2Specification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EC2Specification]
   }
   
-  @scala.inline
-  implicit class EC2SpecificationMutableBuilder[Self <: EC2Specification] (val x: Self) extends AnyVal {
+  extension [Self <: EC2Specification](x: Self) {
     
-    @scala.inline
-    def setOfferingClass(value: OfferingClass): Self = StObject.set(x, "OfferingClass", value.asInstanceOf[js.Any])
+    inline def setOfferingClass(value: OfferingClass): Self = StObject.set(x, "OfferingClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingClassUndefined: Self = StObject.set(x, "OfferingClass", js.undefined)
+    inline def setOfferingClassUndefined: Self = StObject.set(x, "OfferingClass", js.undefined)
   }
 }

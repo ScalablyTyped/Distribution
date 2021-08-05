@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlayerState extends StObject
 object PlayerState {
   
-  @scala.inline
-  def BUFFERING: `3` = 3.asInstanceOf[`3`]
+  inline def BUFFERING: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def CUED: `5` = 5.asInstanceOf[`5`]
+  inline def CUED: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ENDED: `0` = 0.asInstanceOf[`0`]
+  inline def ENDED: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def PAUSED: `2` = 2.asInstanceOf[`2`]
+  inline def PAUSED: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def PLAYING: `1` = 1.asInstanceOf[`1`]
+  inline def PLAYING: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def UNSTARTED: `-1` = -1.asInstanceOf[`-1`]
+  inline def UNSTARTED: `-1` = -1.asInstanceOf[`-1`]
 }

@@ -22,28 +22,21 @@ trait SchemaListServicePerimetersResponse extends StObject {
 }
 object SchemaListServicePerimetersResponse {
   
-  @scala.inline
-  def apply(): SchemaListServicePerimetersResponse = {
+  inline def apply(): SchemaListServicePerimetersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListServicePerimetersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListServicePerimetersResponseMutableBuilder[Self <: SchemaListServicePerimetersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListServicePerimetersResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setServicePerimeters(value: js.Array[SchemaServicePerimeter]): Self = StObject.set(x, "servicePerimeters", value.asInstanceOf[js.Any])
+    inline def setServicePerimeters(value: js.Array[SchemaServicePerimeter]): Self = StObject.set(x, "servicePerimeters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePerimetersUndefined: Self = StObject.set(x, "servicePerimeters", js.undefined)
+    inline def setServicePerimetersUndefined: Self = StObject.set(x, "servicePerimeters", js.undefined)
     
-    @scala.inline
-    def setServicePerimetersVarargs(value: SchemaServicePerimeter*): Self = StObject.set(x, "servicePerimeters", js.Array(value :_*))
+    inline def setServicePerimetersVarargs(value: SchemaServicePerimeter*): Self = StObject.set(x, "servicePerimeters", js.Array(value :_*))
   }
 }

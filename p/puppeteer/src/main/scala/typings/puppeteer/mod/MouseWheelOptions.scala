@@ -12,25 +12,19 @@ trait MouseWheelOptions extends StObject {
 }
 object MouseWheelOptions {
   
-  @scala.inline
-  def apply(): MouseWheelOptions = {
+  inline def apply(): MouseWheelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MouseWheelOptions]
   }
   
-  @scala.inline
-  implicit class MouseWheelOptionsMutableBuilder[Self <: MouseWheelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MouseWheelOptions](x: Self) {
     
-    @scala.inline
-    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+    inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
+    inline def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
     
-    @scala.inline
-    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+    inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
+    inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
   }
 }

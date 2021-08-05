@@ -21,25 +21,19 @@ trait SchemaSignJwtResponse extends StObject {
 }
 object SchemaSignJwtResponse {
   
-  @scala.inline
-  def apply(): SchemaSignJwtResponse = {
+  inline def apply(): SchemaSignJwtResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignJwtResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSignJwtResponseMutableBuilder[Self <: SchemaSignJwtResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSignJwtResponse](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setSignedJwt(value: String): Self = StObject.set(x, "signedJwt", value.asInstanceOf[js.Any])
+    inline def setSignedJwt(value: String): Self = StObject.set(x, "signedJwt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedJwtUndefined: Self = StObject.set(x, "signedJwt", js.undefined)
+    inline def setSignedJwtUndefined: Self = StObject.set(x, "signedJwt", js.undefined)
   }
 }

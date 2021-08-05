@@ -10,13 +10,10 @@ object lang {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def detect(defaultLanguage: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(defaultLanguage.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def detect(defaultLanguage: String, probeLanguage: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(defaultLanguage.asInstanceOf[js.Any], probeLanguage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def detect(defaultLanguage: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(defaultLanguage.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def detect(defaultLanguage: String, probeLanguage: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(defaultLanguage.asInstanceOf[js.Any], probeLanguage.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def load(
+  inline def load(
     languageCode: String,
     defaultLanguage: String,
     callback: js.Function2[/* code */ String, /* entries */ js.Any, Unit]

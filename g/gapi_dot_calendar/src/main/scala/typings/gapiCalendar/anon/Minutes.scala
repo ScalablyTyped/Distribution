@@ -13,19 +13,15 @@ trait Minutes extends StObject {
 }
 object Minutes {
   
-  @scala.inline
-  def apply(method: String, minutes: integer): Minutes = {
+  inline def apply(method: String, minutes: integer): Minutes = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Minutes]
   }
   
-  @scala.inline
-  implicit class MinutesMutableBuilder[Self <: Minutes] (val x: Self) extends AnyVal {
+  extension [Self <: Minutes](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutes(value: integer): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: integer): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait IPingreqPacket
 }
 object IPingreqPacket {
   
-  @scala.inline
-  def apply(): IPingreqPacket = {
+  inline def apply(): IPingreqPacket = {
     val __obj = js.Dynamic.literal(cmd = "pingreq")
     __obj.asInstanceOf[IPingreqPacket]
   }
   
-  @scala.inline
-  implicit class IPingreqPacketMutableBuilder[Self <: IPingreqPacket] (val x: Self) extends AnyVal {
+  extension [Self <: IPingreqPacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: pingreq): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: pingreq): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait PlotCoordinate extends StObject {
 }
 object PlotCoordinate {
   
-  @scala.inline
-  def apply(pointNumber: Double, x: Double, y: Double): PlotCoordinate = {
+  inline def apply(pointNumber: Double, x: Double, y: Double): PlotCoordinate = {
     val __obj = js.Dynamic.literal(pointNumber = pointNumber.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotCoordinate]
   }
   
-  @scala.inline
-  implicit class PlotCoordinateMutableBuilder[Self <: PlotCoordinate] (val x: Self) extends AnyVal {
+  extension [Self <: PlotCoordinate](x: Self) {
     
-    @scala.inline
-    def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
+    inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

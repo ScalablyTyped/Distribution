@@ -26,16 +26,13 @@ trait BlankNode
 }
 object BlankNode {
   
-  @scala.inline
-  def apply(StringValue: String, create: String => Unit): BlankNode = {
+  inline def apply(StringValue: String, create: String => Unit): BlankNode = {
     val __obj = js.Dynamic.literal(StringValue = StringValue.asInstanceOf[js.Any], create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[BlankNode]
   }
   
-  @scala.inline
-  implicit class BlankNodeMutableBuilder[Self <: BlankNode] (val x: Self) extends AnyVal {
+  extension [Self <: BlankNode](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

@@ -14,19 +14,15 @@ trait AsyncOptions extends StObject {
 }
 object AsyncOptions {
   
-  @scala.inline
-  def apply(): AsyncOptions = {
+  inline def apply(): AsyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncOptions]
   }
   
-  @scala.inline
-  implicit class AsyncOptionsMutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncOptions](x: Self) {
     
-    @scala.inline
-    def setConsume(value: Boolean): Self = StObject.set(x, "consume", value.asInstanceOf[js.Any])
+    inline def setConsume(value: Boolean): Self = StObject.set(x, "consume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumeUndefined: Self = StObject.set(x, "consume", js.undefined)
+    inline def setConsumeUndefined: Self = StObject.set(x, "consume", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ object specLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isLayerSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean]
+  inline def isLayerSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/layer.GenericLayerSpec<any> */ Boolean]
   
   trait GenericLayerSpec[U /* <: GenericUnitSpec[js.Any, js.Any] */]
     extends StObject
@@ -39,20 +38,16 @@ object specLayerMod {
   }
   object GenericLayerSpec {
     
-    @scala.inline
-    def apply[U /* <: GenericUnitSpec[js.Any, js.Any] */](layer: js.Array[GenericLayerSpec[U] | U]): GenericLayerSpec[U] = {
+    inline def apply[U /* <: GenericUnitSpec[js.Any, js.Any] */](layer: js.Array[GenericLayerSpec[U] | U]): GenericLayerSpec[U] = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericLayerSpec[U]]
     }
     
-    @scala.inline
-    implicit class GenericLayerSpecMutableBuilder[Self <: GenericLayerSpec[?], U /* <: GenericUnitSpec[js.Any, js.Any] */] (val x: Self & GenericLayerSpec[U]) extends AnyVal {
+    extension [Self <: GenericLayerSpec[?], U /* <: GenericUnitSpec[js.Any, js.Any] */](x: Self & GenericLayerSpec[U]) {
       
-      @scala.inline
-      def setLayer(value: js.Array[GenericLayerSpec[U] | U]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: js.Array[GenericLayerSpec[U] | U]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerVarargs(value: (GenericLayerSpec[U] | U)*): Self = StObject.set(x, "layer", js.Array(value :_*))
+      inline def setLayerVarargs(value: (GenericLayerSpec[U] | U)*): Self = StObject.set(x, "layer", js.Array(value :_*))
     }
   }
   
@@ -81,32 +76,24 @@ object specLayerMod {
   }
   object LayerSpec {
     
-    @scala.inline
-    def apply(layer: js.Array[LayerSpec | UnitSpec]): LayerSpec = {
+    inline def apply(layer: js.Array[LayerSpec | UnitSpec]): LayerSpec = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayerSpec]
     }
     
-    @scala.inline
-    implicit class LayerSpecMutableBuilder[Self <: LayerSpec] (val x: Self) extends AnyVal {
+    extension [Self <: LayerSpec](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: SharedCompositeEncoding[Field]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: SharedCompositeEncoding[Field]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setLayer(value: js.Array[LayerSpec | UnitSpec]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: js.Array[LayerSpec | UnitSpec]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerVarargs(value: (LayerSpec | UnitSpec)*): Self = StObject.set(x, "layer", js.Array(value :_*))
+      inline def setLayerVarargs(value: (LayerSpec | UnitSpec)*): Self = StObject.set(x, "layer", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     }
   }
   

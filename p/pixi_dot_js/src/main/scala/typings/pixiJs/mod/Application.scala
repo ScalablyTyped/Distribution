@@ -43,6 +43,5 @@ object Application {
     * @param {PIXI.Application.Plugin} plugin - Plugin being installed
     */
   /* static member */
-  @scala.inline
-  def registerPlugin(plugin: Plugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerPlugin(plugin: Plugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

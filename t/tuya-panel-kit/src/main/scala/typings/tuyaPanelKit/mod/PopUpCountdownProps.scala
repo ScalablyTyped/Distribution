@@ -46,121 +46,83 @@ trait PopUpCountdownProps
 }
 object PopUpCountdownProps {
   
-  @scala.inline
-  def apply(value: Double): PopUpCountdownProps = {
+  inline def apply(value: Double): PopUpCountdownProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopUpCountdownProps]
   }
   
-  @scala.inline
-  implicit class PopUpCountdownPropsMutableBuilder[Self <: PopUpCountdownProps] (val x: Self) extends AnyVal {
+  extension [Self <: PopUpCountdownProps](x: Self) {
     
-    @scala.inline
-    def setCountdownWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "countdownWrapperStyle", value.asInstanceOf[js.Any])
+    inline def setCountdownWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "countdownWrapperStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountdownWrapperStyleNull: Self = StObject.set(x, "countdownWrapperStyle", null)
+    inline def setCountdownWrapperStyleNull: Self = StObject.set(x, "countdownWrapperStyle", null)
     
-    @scala.inline
-    def setCountdownWrapperStyleUndefined: Self = StObject.set(x, "countdownWrapperStyle", js.undefined)
+    inline def setCountdownWrapperStyleUndefined: Self = StObject.set(x, "countdownWrapperStyle", js.undefined)
     
-    @scala.inline
-    def setHourPickerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "hourPickerStyle", value.asInstanceOf[js.Any])
+    inline def setHourPickerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "hourPickerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourPickerStyleNull: Self = StObject.set(x, "hourPickerStyle", null)
+    inline def setHourPickerStyleNull: Self = StObject.set(x, "hourPickerStyle", null)
     
-    @scala.inline
-    def setHourPickerStyleUndefined: Self = StObject.set(x, "hourPickerStyle", js.undefined)
+    inline def setHourPickerStyleUndefined: Self = StObject.set(x, "hourPickerStyle", js.undefined)
     
-    @scala.inline
-    def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
+    inline def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourTextUndefined: Self = StObject.set(x, "hourText", js.undefined)
+    inline def setHourTextUndefined: Self = StObject.set(x, "hourText", js.undefined)
     
-    @scala.inline
-    def setHourUnitStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "hourUnitStyle", value.asInstanceOf[js.Any])
+    inline def setHourUnitStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "hourUnitStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourUnitStyleNull: Self = StObject.set(x, "hourUnitStyle", null)
+    inline def setHourUnitStyleNull: Self = StObject.set(x, "hourUnitStyle", null)
     
-    @scala.inline
-    def setHourUnitStyleUndefined: Self = StObject.set(x, "hourUnitStyle", js.undefined)
+    inline def setHourUnitStyleUndefined: Self = StObject.set(x, "hourUnitStyle", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMinutePickerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "minutePickerStyle", value.asInstanceOf[js.Any])
+    inline def setMinutePickerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "minutePickerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutePickerStyleNull: Self = StObject.set(x, "minutePickerStyle", null)
+    inline def setMinutePickerStyleNull: Self = StObject.set(x, "minutePickerStyle", null)
     
-    @scala.inline
-    def setMinutePickerStyleUndefined: Self = StObject.set(x, "minutePickerStyle", js.undefined)
+    inline def setMinutePickerStyleUndefined: Self = StObject.set(x, "minutePickerStyle", js.undefined)
     
-    @scala.inline
-    def setMinuteText(value: String): Self = StObject.set(x, "minuteText", value.asInstanceOf[js.Any])
+    inline def setMinuteText(value: String): Self = StObject.set(x, "minuteText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteTextUndefined: Self = StObject.set(x, "minuteText", js.undefined)
+    inline def setMinuteTextUndefined: Self = StObject.set(x, "minuteText", js.undefined)
     
-    @scala.inline
-    def setMinuteUnitStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "minuteUnitStyle", value.asInstanceOf[js.Any])
+    inline def setMinuteUnitStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "minuteUnitStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteUnitStyleNull: Self = StObject.set(x, "minuteUnitStyle", null)
+    inline def setMinuteUnitStyleNull: Self = StObject.set(x, "minuteUnitStyle", null)
     
-    @scala.inline
-    def setMinuteUnitStyleUndefined: Self = StObject.set(x, "minuteUnitStyle", js.undefined)
+    inline def setMinuteUnitStyleUndefined: Self = StObject.set(x, "minuteUnitStyle", js.undefined)
     
-    @scala.inline
-    def setOnValueChange(value: /* data */ js.UndefOr[valueChangeProps] => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    inline def setOnValueChange(value: /* data */ js.UndefOr[valueChangeProps] => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+    inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
-    @scala.inline
-    def setOnlyone(value: Boolean): Self = StObject.set(x, "onlyone", value.asInstanceOf[js.Any])
+    inline def setOnlyone(value: Boolean): Self = StObject.set(x, "onlyone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyoneUndefined: Self = StObject.set(x, "onlyone", js.undefined)
+    inline def setOnlyoneUndefined: Self = StObject.set(x, "onlyone", js.undefined)
     
-    @scala.inline
-    def setPickerFontColor(value: String): Self = StObject.set(x, "pickerFontColor", value.asInstanceOf[js.Any])
+    inline def setPickerFontColor(value: String): Self = StObject.set(x, "pickerFontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerFontColorUndefined: Self = StObject.set(x, "pickerFontColor", js.undefined)
+    inline def setPickerFontColorUndefined: Self = StObject.set(x, "pickerFontColor", js.undefined)
     
-    @scala.inline
-    def setPickerUnitColor(value: String): Self = StObject.set(x, "pickerUnitColor", value.asInstanceOf[js.Any])
+    inline def setPickerUnitColor(value: String): Self = StObject.set(x, "pickerUnitColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerUnitColorUndefined: Self = StObject.set(x, "pickerUnitColor", js.undefined)
+    inline def setPickerUnitColorUndefined: Self = StObject.set(x, "pickerUnitColor", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_onDataChange(value: /* date */ Date => Unit): Self = StObject.set(x, "_onDataChange", js.Any.fromFunction1(value))
+    inline def set_onDataChange(value: /* date */ Date => Unit): Self = StObject.set(x, "_onDataChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_onDataChangeUndefined: Self = StObject.set(x, "_onDataChange", js.undefined)
+    inline def set_onDataChangeUndefined: Self = StObject.set(x, "_onDataChange", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait NumberFormatLocaleInternalData extends StObject {
 }
 object NumberFormatLocaleInternalData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currencies: Record[String, CurrencyData],
     nu: js.Array[String],
     numbers: RawNumberData,
@@ -28,22 +27,16 @@ object NumberFormatLocaleInternalData {
     __obj.asInstanceOf[NumberFormatLocaleInternalData]
   }
   
-  @scala.inline
-  implicit class NumberFormatLocaleInternalDataMutableBuilder[Self <: NumberFormatLocaleInternalData] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatLocaleInternalData](x: Self) {
     
-    @scala.inline
-    def setCurrencies(value: Record[String, CurrencyData]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
+    inline def setCurrencies(value: Record[String, CurrencyData]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
+    inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
+    inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
     
-    @scala.inline
-    def setNumbers(value: RawNumberData): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+    inline def setNumbers(value: RawNumberData): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnits(value: UnitDataTable): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: UnitDataTable): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
   }
 }

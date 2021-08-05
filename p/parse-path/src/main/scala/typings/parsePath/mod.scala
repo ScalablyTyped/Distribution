@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): ParsedPath = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
+  inline def apply(url: String): ParsedPath = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
   
   @JSImport("parse-path", JSImport.Namespace)
   @js.native
@@ -47,8 +46,7 @@ object mod {
   }
   object ParsedPath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hash: String,
       href: String,
       pathname: String,
@@ -63,44 +61,31 @@ object mod {
       __obj.asInstanceOf[ParsedPath]
     }
     
-    @scala.inline
-    implicit class ParsedPathMutableBuilder[Self <: ParsedPath] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedPath](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortNull: Self = StObject.set(x, "port", null)
+      inline def setPortNull: Self = StObject.set(x, "port", null)
       
-      @scala.inline
-      def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
       
-      @scala.inline
-      def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,19 +99,14 @@ object mod {
   trait Protocol extends StObject
   object Protocol {
     
-    @scala.inline
-    def file: typings.parsePath.parsePathStrings.file = "file".asInstanceOf[typings.parsePath.parsePathStrings.file]
+    inline def file: typings.parsePath.parsePathStrings.file = "file".asInstanceOf[typings.parsePath.parsePathStrings.file]
     
-    @scala.inline
-    def git: typings.parsePath.parsePathStrings.git = "git".asInstanceOf[typings.parsePath.parsePathStrings.git]
+    inline def git: typings.parsePath.parsePathStrings.git = "git".asInstanceOf[typings.parsePath.parsePathStrings.git]
     
-    @scala.inline
-    def http: typings.parsePath.parsePathStrings.http = "http".asInstanceOf[typings.parsePath.parsePathStrings.http]
+    inline def http: typings.parsePath.parsePathStrings.http = "http".asInstanceOf[typings.parsePath.parsePathStrings.http]
     
-    @scala.inline
-    def https: typings.parsePath.parsePathStrings.https = "https".asInstanceOf[typings.parsePath.parsePathStrings.https]
+    inline def https: typings.parsePath.parsePathStrings.https = "https".asInstanceOf[typings.parsePath.parsePathStrings.https]
     
-    @scala.inline
-    def ssh: typings.parsePath.parsePathStrings.ssh = "ssh".asInstanceOf[typings.parsePath.parsePathStrings.ssh]
+    inline def ssh: typings.parsePath.parsePathStrings.ssh = "ssh".asInstanceOf[typings.parsePath.parsePathStrings.ssh]
   }
 }

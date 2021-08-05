@@ -19,29 +19,22 @@ trait RewriteRules extends StObject {
 }
 object RewriteRules {
   
-  @scala.inline
-  def apply(`match`: RegExp): RewriteRules = {
+  inline def apply(`match`: RegExp): RewriteRules = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RewriteRules]
   }
   
-  @scala.inline
-  implicit class RewriteRulesMutableBuilder[Self <: RewriteRules] (val x: Self) extends AnyVal {
+  extension [Self <: RewriteRules](x: Self) {
     
-    @scala.inline
-    def setFn(value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* match */ String) => String): Self = StObject.set(x, "fn", js.Any.fromFunction3(value))
+    inline def setFn(value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* match */ String) => String): Self = StObject.set(x, "fn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+    inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
     
-    @scala.inline
-    def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: String): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: String): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

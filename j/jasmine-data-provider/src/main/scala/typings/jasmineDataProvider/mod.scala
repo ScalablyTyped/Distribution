@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: js.Array[js.Any] */](values: ValueType[js.Array[T]], func: js.Function1[/* repeated */ ArrayFuncArgType[T], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(values.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply[T](
+  inline def apply[T /* <: js.Array[js.Any] */](values: ValueType[js.Array[T]], func: js.Function1[/* repeated */ ArrayFuncArgType[T], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(values.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[T](
     values: ValueType[Record[String, T]],
     func: js.Function2[/* data */ T, /* description */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(values.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]

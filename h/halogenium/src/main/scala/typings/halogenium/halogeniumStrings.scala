@@ -11,76 +11,65 @@ object halogeniumStrings {
   sealed trait baseline
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
   sealed trait bottom
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait inherit
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
   sealed trait initial
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
   sealed trait length
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def length: length = "length".asInstanceOf[length]
+  inline def length: length = "length".asInstanceOf[length]
   
   @js.native
   sealed trait middle
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait sub
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
+  inline def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
   sealed trait `super`
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def `super`: `super` = "super".asInstanceOf[`super`]
+  inline def `super`: `super` = "super".asInstanceOf[`super`]
   
   @js.native
   sealed trait `text-bottom`
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
+  inline def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
   
   @js.native
   sealed trait `text-top`
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
+  inline def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
   
   @js.native
   sealed trait top
     extends StObject
        with VerticalAlign
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
 }

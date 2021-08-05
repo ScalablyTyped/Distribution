@@ -68,67 +68,47 @@ trait PathMatcher extends StObject {
 }
 object PathMatcher {
   
-  @scala.inline
-  def apply(): PathMatcher = {
+  inline def apply(): PathMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathMatcher]
   }
   
-  @scala.inline
-  implicit class PathMatcherMutableBuilder[Self <: PathMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: PathMatcher](x: Self) {
     
-    @scala.inline
-    def setDefaultRouteAction(value: HttpRouteAction): Self = StObject.set(x, "defaultRouteAction", value.asInstanceOf[js.Any])
+    inline def setDefaultRouteAction(value: HttpRouteAction): Self = StObject.set(x, "defaultRouteAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRouteActionUndefined: Self = StObject.set(x, "defaultRouteAction", js.undefined)
+    inline def setDefaultRouteActionUndefined: Self = StObject.set(x, "defaultRouteAction", js.undefined)
     
-    @scala.inline
-    def setDefaultService(value: String): Self = StObject.set(x, "defaultService", value.asInstanceOf[js.Any])
+    inline def setDefaultService(value: String): Self = StObject.set(x, "defaultService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultServiceUndefined: Self = StObject.set(x, "defaultService", js.undefined)
+    inline def setDefaultServiceUndefined: Self = StObject.set(x, "defaultService", js.undefined)
     
-    @scala.inline
-    def setDefaultUrlRedirect(value: HttpRedirectAction): Self = StObject.set(x, "defaultUrlRedirect", value.asInstanceOf[js.Any])
+    inline def setDefaultUrlRedirect(value: HttpRedirectAction): Self = StObject.set(x, "defaultUrlRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUrlRedirectUndefined: Self = StObject.set(x, "defaultUrlRedirect", js.undefined)
+    inline def setDefaultUrlRedirectUndefined: Self = StObject.set(x, "defaultUrlRedirect", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHeaderAction(value: HttpHeaderAction): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
+    inline def setHeaderAction(value: HttpHeaderAction): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
+    inline def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPathRules(value: js.Array[PathRule]): Self = StObject.set(x, "pathRules", value.asInstanceOf[js.Any])
+    inline def setPathRules(value: js.Array[PathRule]): Self = StObject.set(x, "pathRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathRulesUndefined: Self = StObject.set(x, "pathRules", js.undefined)
+    inline def setPathRulesUndefined: Self = StObject.set(x, "pathRules", js.undefined)
     
-    @scala.inline
-    def setPathRulesVarargs(value: PathRule*): Self = StObject.set(x, "pathRules", js.Array(value :_*))
+    inline def setPathRulesVarargs(value: PathRule*): Self = StObject.set(x, "pathRules", js.Array(value :_*))
     
-    @scala.inline
-    def setRouteRules(value: js.Array[HttpRouteRule]): Self = StObject.set(x, "routeRules", value.asInstanceOf[js.Any])
+    inline def setRouteRules(value: js.Array[HttpRouteRule]): Self = StObject.set(x, "routeRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteRulesUndefined: Self = StObject.set(x, "routeRules", js.undefined)
+    inline def setRouteRulesUndefined: Self = StObject.set(x, "routeRules", js.undefined)
     
-    @scala.inline
-    def setRouteRulesVarargs(value: HttpRouteRule*): Self = StObject.set(x, "routeRules", js.Array(value :_*))
+    inline def setRouteRulesVarargs(value: HttpRouteRule*): Self = StObject.set(x, "routeRules", js.Array(value :_*))
   }
 }

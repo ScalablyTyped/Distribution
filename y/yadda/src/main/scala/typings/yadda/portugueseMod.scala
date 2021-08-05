@@ -1834,8 +1834,7 @@ object portugueseMod extends Shortcut {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _steps: js.Array[String],
       background: String,
       dada: String,
@@ -1862,35 +1861,25 @@ object portugueseMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def setDada(value: String): Self = StObject.set(x, "dada", value.asInstanceOf[js.Any])
+      inline def setDada(value: String): Self = StObject.set(x, "dada", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDadas(value: String): Self = StObject.set(x, "dadas", value.asInstanceOf[js.Any])
+      inline def setDadas(value: String): Self = StObject.set(x, "dadas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDado(value: String): Self = StObject.set(x, "dado", value.asInstanceOf[js.Any])
+      inline def setDado(value: String): Self = StObject.set(x, "dado", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDados(value: String): Self = StObject.set(x, "dados", value.asInstanceOf[js.Any])
+      inline def setDados(value: String): Self = StObject.set(x, "dados", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntao(value: String): Self = StObject.set(x, "entao", value.asInstanceOf[js.Any])
+      inline def setEntao(value: String): Self = StObject.set(x, "entao", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuando(value: String): Self = StObject.set(x, "quando", value.asInstanceOf[js.Any])
+      inline def setQuando(value: String): Self = StObject.set(x, "quando", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSe(value: String): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
+      inline def setSe(value: String): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeja(value: String): Self = StObject.set(x, "seja", value.asInstanceOf[js.Any])
+      inline def setSeja(value: String): Self = StObject.set(x, "seja", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSejam(value: String): Self = StObject.set(x, "sejam", value.asInstanceOf[js.Any])
+      inline def setSejam(value: String): Self = StObject.set(x, "sejam", value.asInstanceOf[js.Any])
     }
   }
   

@@ -10,16 +10,13 @@ trait ISocketErrorStatics extends StObject {
 }
 object ISocketErrorStatics {
   
-  @scala.inline
-  def apply(getStatus: Double => SocketErrorStatus): ISocketErrorStatics = {
+  inline def apply(getStatus: Double => SocketErrorStatus): ISocketErrorStatics = {
     val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
     __obj.asInstanceOf[ISocketErrorStatics]
   }
   
-  @scala.inline
-  implicit class ISocketErrorStaticsMutableBuilder[Self <: ISocketErrorStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ISocketErrorStatics](x: Self) {
     
-    @scala.inline
-    def setGetStatus(value: Double => SocketErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
+    inline def setGetStatus(value: Double => SocketErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }
 }

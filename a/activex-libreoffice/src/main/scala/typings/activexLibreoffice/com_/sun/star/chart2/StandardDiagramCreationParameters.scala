@@ -15,19 +15,15 @@ trait StandardDiagramCreationParameters extends StObject {
 }
 object StandardDiagramCreationParameters {
   
-  @scala.inline
-  def apply(HasCategories: Boolean, UseCategoriesAsX: Boolean): StandardDiagramCreationParameters = {
+  inline def apply(HasCategories: Boolean, UseCategoriesAsX: Boolean): StandardDiagramCreationParameters = {
     val __obj = js.Dynamic.literal(HasCategories = HasCategories.asInstanceOf[js.Any], UseCategoriesAsX = UseCategoriesAsX.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardDiagramCreationParameters]
   }
   
-  @scala.inline
-  implicit class StandardDiagramCreationParametersMutableBuilder[Self <: StandardDiagramCreationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: StandardDiagramCreationParameters](x: Self) {
     
-    @scala.inline
-    def setHasCategories(value: Boolean): Self = StObject.set(x, "HasCategories", value.asInstanceOf[js.Any])
+    inline def setHasCategories(value: Boolean): Self = StObject.set(x, "HasCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCategoriesAsX(value: Boolean): Self = StObject.set(x, "UseCategoriesAsX", value.asInstanceOf[js.Any])
+    inline def setUseCategoriesAsX(value: Boolean): Self = StObject.set(x, "UseCategoriesAsX", value.asInstanceOf[js.Any])
   }
 }

@@ -17,17 +17,14 @@ object descriptionMod {
   }
   object DescriptionProps {
     
-    @scala.inline
-    def apply(markdown: String): DescriptionProps = {
+    inline def apply(markdown: String): DescriptionProps = {
       val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescriptionProps]
     }
     
-    @scala.inline
-    implicit class DescriptionPropsMutableBuilder[Self <: DescriptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: DescriptionProps](x: Self) {
       
-      @scala.inline
-      def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+      inline def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     }
   }
 }

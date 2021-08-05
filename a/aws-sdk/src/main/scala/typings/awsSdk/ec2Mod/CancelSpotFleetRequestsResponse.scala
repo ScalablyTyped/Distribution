@@ -18,31 +18,23 @@ trait CancelSpotFleetRequestsResponse extends StObject {
 }
 object CancelSpotFleetRequestsResponse {
   
-  @scala.inline
-  def apply(): CancelSpotFleetRequestsResponse = {
+  inline def apply(): CancelSpotFleetRequestsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelSpotFleetRequestsResponse]
   }
   
-  @scala.inline
-  implicit class CancelSpotFleetRequestsResponseMutableBuilder[Self <: CancelSpotFleetRequestsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSpotFleetRequestsResponse](x: Self) {
     
-    @scala.inline
-    def setSuccessfulFleetRequests(value: CancelSpotFleetRequestsSuccessSet): Self = StObject.set(x, "SuccessfulFleetRequests", value.asInstanceOf[js.Any])
+    inline def setSuccessfulFleetRequests(value: CancelSpotFleetRequestsSuccessSet): Self = StObject.set(x, "SuccessfulFleetRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulFleetRequestsUndefined: Self = StObject.set(x, "SuccessfulFleetRequests", js.undefined)
+    inline def setSuccessfulFleetRequestsUndefined: Self = StObject.set(x, "SuccessfulFleetRequests", js.undefined)
     
-    @scala.inline
-    def setSuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsSuccessItem*): Self = StObject.set(x, "SuccessfulFleetRequests", js.Array(value :_*))
+    inline def setSuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsSuccessItem*): Self = StObject.set(x, "SuccessfulFleetRequests", js.Array(value :_*))
     
-    @scala.inline
-    def setUnsuccessfulFleetRequests(value: CancelSpotFleetRequestsErrorSet): Self = StObject.set(x, "UnsuccessfulFleetRequests", value.asInstanceOf[js.Any])
+    inline def setUnsuccessfulFleetRequests(value: CancelSpotFleetRequestsErrorSet): Self = StObject.set(x, "UnsuccessfulFleetRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulFleetRequestsUndefined: Self = StObject.set(x, "UnsuccessfulFleetRequests", js.undefined)
+    inline def setUnsuccessfulFleetRequestsUndefined: Self = StObject.set(x, "UnsuccessfulFleetRequests", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetRequests", js.Array(value :_*))
+    inline def setUnsuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetRequests", js.Array(value :_*))
   }
 }

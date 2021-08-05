@@ -9,20 +9,17 @@ object graspStrings {
   
   @js.native
   sealed trait buffer extends StObject
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait equery
     extends StObject
        with QueryEngineType
-  @scala.inline
-  def equery: equery = "equery".asInstanceOf[equery]
+  inline def equery: equery = "equery".asInstanceOf[equery]
   
   @js.native
   sealed trait squery
     extends StObject
        with QueryEngineType
-  @scala.inline
-  def squery: squery = "squery".asInstanceOf[squery]
+  inline def squery: squery = "squery".asInstanceOf[squery]
 }

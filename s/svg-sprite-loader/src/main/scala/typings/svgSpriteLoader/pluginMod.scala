@@ -26,26 +26,20 @@ object pluginMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPlainSprite(value: Boolean): Self = StObject.set(x, "plainSprite", value.asInstanceOf[js.Any])
+      inline def setPlainSprite(value: Boolean): Self = StObject.set(x, "plainSprite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlainSpriteUndefined: Self = StObject.set(x, "plainSprite", js.undefined)
+      inline def setPlainSpriteUndefined: Self = StObject.set(x, "plainSprite", js.undefined)
       
-      @scala.inline
-      def setSpriteAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "spriteAttrs", value.asInstanceOf[js.Any])
+      inline def setSpriteAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "spriteAttrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpriteAttrsUndefined: Self = StObject.set(x, "spriteAttrs", js.undefined)
+      inline def setSpriteAttrsUndefined: Self = StObject.set(x, "spriteAttrs", js.undefined)
     }
   }
   

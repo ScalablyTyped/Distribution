@@ -45,8 +45,7 @@ trait XUpdateInformationProvider extends StObject {
 }
 object XUpdateInformationProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => Unit,
     getUpdateInformation: (SeqEquiv[String], String) => SafeArray[XElement],
     getUpdateInformationEnumeration: (SeqEquiv[String], String) => XEnumeration,
@@ -56,19 +55,14 @@ object XUpdateInformationProvider {
     __obj.asInstanceOf[XUpdateInformationProvider]
   }
   
-  @scala.inline
-  implicit class XUpdateInformationProviderMutableBuilder[Self <: XUpdateInformationProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdateInformationProvider](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpdateInformation(value: (SeqEquiv[String], String) => SafeArray[XElement]): Self = StObject.set(x, "getUpdateInformation", js.Any.fromFunction2(value))
+    inline def setGetUpdateInformation(value: (SeqEquiv[String], String) => SafeArray[XElement]): Self = StObject.set(x, "getUpdateInformation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUpdateInformationEnumeration(value: (SeqEquiv[String], String) => XEnumeration): Self = StObject.set(x, "getUpdateInformationEnumeration", js.Any.fromFunction2(value))
+    inline def setGetUpdateInformationEnumeration(value: (SeqEquiv[String], String) => XEnumeration): Self = StObject.set(x, "getUpdateInformationEnumeration", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetInteractionHandler(value: XInteractionHandler => Unit): Self = StObject.set(x, "setInteractionHandler", js.Any.fromFunction1(value))
+    inline def setSetInteractionHandler(value: XInteractionHandler => Unit): Self = StObject.set(x, "setInteractionHandler", js.Any.fromFunction1(value))
   }
 }

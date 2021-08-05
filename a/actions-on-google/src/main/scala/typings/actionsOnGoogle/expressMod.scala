@@ -52,20 +52,16 @@ object expressMod {
   }
   object ExpressMetadata {
     
-    @scala.inline
-    def apply(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): ExpressMetadata = {
+    inline def apply(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): ExpressMetadata = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpressMetadata]
     }
     
-    @scala.inline
-    implicit class ExpressMetadataMutableBuilder[Self <: ExpressMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressMetadata](x: Self) {
       
-      @scala.inline
-      def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

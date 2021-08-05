@@ -12,16 +12,13 @@ trait RPCResult
 }
 object RPCResult {
   
-  @scala.inline
-  def apply(argsDict: Dict, argsList: js.Array[js.Any], options: RPCOptions): RPCResult = {
+  inline def apply(argsDict: Dict, argsList: js.Array[js.Any], options: RPCOptions): RPCResult = {
     val __obj = js.Dynamic.literal(argsDict = argsDict.asInstanceOf[js.Any], argsList = argsList.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[RPCResult]
   }
   
-  @scala.inline
-  implicit class RPCResultMutableBuilder[Self <: RPCResult] (val x: Self) extends AnyVal {
+  extension [Self <: RPCResult](x: Self) {
     
-    @scala.inline
-    def setOptions(value: RPCOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: RPCOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

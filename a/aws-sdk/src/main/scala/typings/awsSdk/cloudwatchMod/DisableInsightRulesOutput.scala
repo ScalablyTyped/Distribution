@@ -13,22 +13,17 @@ trait DisableInsightRulesOutput extends StObject {
 }
 object DisableInsightRulesOutput {
   
-  @scala.inline
-  def apply(): DisableInsightRulesOutput = {
+  inline def apply(): DisableInsightRulesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableInsightRulesOutput]
   }
   
-  @scala.inline
-  implicit class DisableInsightRulesOutputMutableBuilder[Self <: DisableInsightRulesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DisableInsightRulesOutput](x: Self) {
     
-    @scala.inline
-    def setFailures(value: BatchFailures): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: BatchFailures): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: PartialFailure*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: PartialFailure*): Self = StObject.set(x, "Failures", js.Array(value :_*))
   }
 }

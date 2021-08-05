@@ -21,27 +21,23 @@ object BorderStyle {
   @JSImport("mendixmodelsdk", "documenttemplates.BorderStyle.Dashed")
   @js.native
   def Dashed: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle = js.native
-  @scala.inline
-  def Dashed_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dashed")(x.asInstanceOf[js.Any])
+  inline def Dashed_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dashed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.BorderStyle.Dotted")
   @js.native
   def Dotted: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle = js.native
-  @scala.inline
-  def Dotted_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dotted")(x.asInstanceOf[js.Any])
+  inline def Dotted_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dotted")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.BorderStyle.None")
   @js.native
   def None: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle = js.native
-  @scala.inline
-  def None_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.BorderStyle.Solid")
   @js.native
   def Solid: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle = js.native
-  @scala.inline
-  def Solid_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solid")(x.asInstanceOf[js.Any])
+  inline def Solid_=(x: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solid")(x.asInstanceOf[js.Any])
 }

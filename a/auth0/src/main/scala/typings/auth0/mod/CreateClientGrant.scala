@@ -20,25 +20,19 @@ trait CreateClientGrant extends StObject {
 }
 object CreateClientGrant {
   
-  @scala.inline
-  def apply(audience: String, client_id: String, scope: js.Array[String]): CreateClientGrant = {
+  inline def apply(audience: String, client_id: String, scope: js.Array[String]): CreateClientGrant = {
     val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientGrant]
   }
   
-  @scala.inline
-  implicit class CreateClientGrantMutableBuilder[Self <: CreateClientGrant] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClientGrant](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

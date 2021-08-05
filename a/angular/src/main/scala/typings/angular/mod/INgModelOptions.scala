@@ -34,55 +34,39 @@ trait INgModelOptions extends StObject {
 }
 object INgModelOptions {
   
-  @scala.inline
-  def apply(): INgModelOptions = {
+  inline def apply(): INgModelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INgModelOptions]
   }
   
-  @scala.inline
-  implicit class INgModelOptionsMutableBuilder[Self <: INgModelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: INgModelOptions](x: Self) {
     
-    @scala.inline
-    def setAllowInvalid(value: Boolean): Self = StObject.set(x, "allowInvalid", value.asInstanceOf[js.Any])
+    inline def setAllowInvalid(value: Boolean): Self = StObject.set(x, "allowInvalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInvalidUndefined: Self = StObject.set(x, "allowInvalid", js.undefined)
+    inline def setAllowInvalidUndefined: Self = StObject.set(x, "allowInvalid", js.undefined)
     
-    @scala.inline
-    def setDebounce(value: Double | StringDictionary[Double]): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+    inline def setDebounce(value: Double | StringDictionary[Double]): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
+    inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
     
-    @scala.inline
-    def setGetterSetter(value: Boolean): Self = StObject.set(x, "getterSetter", value.asInstanceOf[js.Any])
+    inline def setGetterSetter(value: Boolean): Self = StObject.set(x, "getterSetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetterSetterUndefined: Self = StObject.set(x, "getterSetter", js.undefined)
+    inline def setGetterSetterUndefined: Self = StObject.set(x, "getterSetter", js.undefined)
     
-    @scala.inline
-    def setTimeSecondsFormat(value: String): Self = StObject.set(x, "timeSecondsFormat", value.asInstanceOf[js.Any])
+    inline def setTimeSecondsFormat(value: String): Self = StObject.set(x, "timeSecondsFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSecondsFormatUndefined: Self = StObject.set(x, "timeSecondsFormat", js.undefined)
+    inline def setTimeSecondsFormatUndefined: Self = StObject.set(x, "timeSecondsFormat", js.undefined)
     
-    @scala.inline
-    def setTimeStripZeroSeconds(value: Boolean): Self = StObject.set(x, "timeStripZeroSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeStripZeroSeconds(value: Boolean): Self = StObject.set(x, "timeStripZeroSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStripZeroSecondsUndefined: Self = StObject.set(x, "timeStripZeroSeconds", js.undefined)
+    inline def setTimeStripZeroSecondsUndefined: Self = StObject.set(x, "timeStripZeroSeconds", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    @scala.inline
-    def setUpdateOn(value: String): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
+    inline def setUpdateOn(value: String): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
+    inline def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
   }
 }

@@ -29,40 +29,29 @@ trait ocrIdCardOptions
 }
 object ocrIdCardOptions {
   
-  @scala.inline
-  def apply(image: String): ocrIdCardOptions = {
+  inline def apply(image: String): ocrIdCardOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrIdCardOptions]
   }
   
-  @scala.inline
-  implicit class ocrIdCardOptionsMutableBuilder[Self <: ocrIdCardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ocrIdCardOptions](x: Self) {
     
-    @scala.inline
-    def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
+    inline def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetect_directionUndefined: Self = StObject.set(x, "detect_direction", js.undefined)
+    inline def setDetect_directionUndefined: Self = StObject.set(x, "detect_direction", js.undefined)
     
-    @scala.inline
-    def setDetect_risk(value: Boolean): Self = StObject.set(x, "detect_risk", value.asInstanceOf[js.Any])
+    inline def setDetect_risk(value: Boolean): Self = StObject.set(x, "detect_risk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetect_riskUndefined: Self = StObject.set(x, "detect_risk", js.undefined)
+    inline def setDetect_riskUndefined: Self = StObject.set(x, "detect_risk", js.undefined)
     
-    @scala.inline
-    def setId_card_side(value: String): Self = StObject.set(x, "id_card_side", value.asInstanceOf[js.Any])
+    inline def setId_card_side(value: String): Self = StObject.set(x, "id_card_side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_card_sideUndefined: Self = StObject.set(x, "id_card_side", js.undefined)
+    inline def setId_card_sideUndefined: Self = StObject.set(x, "id_card_side", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ ocrIdCardResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ocrIdCardResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

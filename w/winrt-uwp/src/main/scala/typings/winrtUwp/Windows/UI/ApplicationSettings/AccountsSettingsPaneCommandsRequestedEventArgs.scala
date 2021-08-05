@@ -31,8 +31,7 @@ trait AccountsSettingsPaneCommandsRequestedEventArgs extends StObject {
 }
 object AccountsSettingsPaneCommandsRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commands: IVector[SettingsCommand],
     credentialCommands: IVector[CredentialCommand],
     getDeferral: () => AccountsSettingsPaneEventDeferral,
@@ -44,25 +43,18 @@ object AccountsSettingsPaneCommandsRequestedEventArgs {
     __obj.asInstanceOf[AccountsSettingsPaneCommandsRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class AccountsSettingsPaneCommandsRequestedEventArgsMutableBuilder[Self <: AccountsSettingsPaneCommandsRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AccountsSettingsPaneCommandsRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialCommands(value: IVector[CredentialCommand]): Self = StObject.set(x, "credentialCommands", value.asInstanceOf[js.Any])
+    inline def setCredentialCommands(value: IVector[CredentialCommand]): Self = StObject.set(x, "credentialCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => AccountsSettingsPaneEventDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => AccountsSettingsPaneEventDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
+    inline def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAccountCommands(value: IVector[WebAccountCommand]): Self = StObject.set(x, "webAccountCommands", value.asInstanceOf[js.Any])
+    inline def setWebAccountCommands(value: IVector[WebAccountCommand]): Self = StObject.set(x, "webAccountCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAccountProviderCommands(value: IVector[WebAccountProviderCommand]): Self = StObject.set(x, "webAccountProviderCommands", value.asInstanceOf[js.Any])
+    inline def setWebAccountProviderCommands(value: IVector[WebAccountProviderCommand]): Self = StObject.set(x, "webAccountProviderCommands", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait OpenStreetMapProviderReverseSearch extends StObject {
 }
 object OpenStreetMapProviderReverseSearch {
   
-  @scala.inline
-  def apply(data: Raw): OpenStreetMapProviderReverseSearch = {
+  inline def apply(data: Raw): OpenStreetMapProviderReverseSearch = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderReverseSearch]
   }
   
-  @scala.inline
-  implicit class OpenStreetMapProviderReverseSearchMutableBuilder[Self <: OpenStreetMapProviderReverseSearch] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStreetMapProviderReverseSearch](x: Self) {
     
-    @scala.inline
-    def setData(value: Raw): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Raw): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

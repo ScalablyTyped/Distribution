@@ -20,8 +20,7 @@ trait AdminResponseForReview extends StObject {
 }
 object AdminResponseForReview {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adminResponseForReview: scala.Double,
     deleteAdminReply: scala.Double,
     deletePublisherReply: scala.Double,
@@ -33,25 +32,18 @@ object AdminResponseForReview {
     __obj.asInstanceOf[AdminResponseForReview]
   }
   
-  @scala.inline
-  implicit class AdminResponseForReviewMutableBuilder[Self <: AdminResponseForReview] (val x: Self) extends AnyVal {
+  extension [Self <: AdminResponseForReview](x: Self) {
     
-    @scala.inline
-    def setAdminResponseForReview(value: scala.Double): Self = StObject.set(x, "adminResponseForReview", value.asInstanceOf[js.Any])
+    inline def setAdminResponseForReview(value: scala.Double): Self = StObject.set(x, "adminResponseForReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAdminReply(value: scala.Double): Self = StObject.set(x, "deleteAdminReply", value.asInstanceOf[js.Any])
+    inline def setDeleteAdminReply(value: scala.Double): Self = StObject.set(x, "deleteAdminReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePublisherReply(value: scala.Double): Self = StObject.set(x, "deletePublisherReply", value.asInstanceOf[js.Any])
+    inline def setDeletePublisherReply(value: scala.Double): Self = StObject.set(x, "deletePublisherReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagReview(value: scala.Double): Self = StObject.set(x, "flagReview", value.asInstanceOf[js.Any])
+    inline def setFlagReview(value: scala.Double): Self = StObject.set(x, "flagReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToReview(value: scala.Double): Self = StObject.set(x, "replyToReview", value.asInstanceOf[js.Any])
+    inline def setReplyToReview(value: scala.Double): Self = StObject.set(x, "replyToReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateReview(value: scala.Double): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
+    inline def setUpdateReview(value: scala.Double): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
   }
 }

@@ -42,8 +42,7 @@ trait CustomResourceDefinitionSpec extends StObject {
 }
 object CustomResourceDefinitionSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     group: Input[String],
     names: Input[CustomResourceDefinitionNames],
     scope: Input[String],
@@ -53,34 +52,24 @@ object CustomResourceDefinitionSpec {
     __obj.asInstanceOf[CustomResourceDefinitionSpec]
   }
   
-  @scala.inline
-  implicit class CustomResourceDefinitionSpecMutableBuilder[Self <: CustomResourceDefinitionSpec] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceDefinitionSpec](x: Self) {
     
-    @scala.inline
-    def setConversion(value: Input[CustomResourceConversion]): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
+    inline def setConversion(value: Input[CustomResourceConversion]): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
+    inline def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
-    @scala.inline
-    def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNames(value: Input[CustomResourceDefinitionNames]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Input[CustomResourceDefinitionNames]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveUnknownFields(value: Input[Boolean]): Self = StObject.set(x, "preserveUnknownFields", value.asInstanceOf[js.Any])
+    inline def setPreserveUnknownFields(value: Input[Boolean]): Self = StObject.set(x, "preserveUnknownFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveUnknownFieldsUndefined: Self = StObject.set(x, "preserveUnknownFields", js.undefined)
+    inline def setPreserveUnknownFieldsUndefined: Self = StObject.set(x, "preserveUnknownFields", js.undefined)
     
-    @scala.inline
-    def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersions(value: Input[js.Array[Input[CustomResourceDefinitionVersion]]]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: Input[js.Array[Input[CustomResourceDefinitionVersion]]]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsVarargs(value: Input[CustomResourceDefinitionVersion]*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: Input[CustomResourceDefinitionVersion]*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

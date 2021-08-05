@@ -12,28 +12,21 @@ trait WorkbookFilterDatetime extends StObject {
 }
 object WorkbookFilterDatetime {
   
-  @scala.inline
-  def apply(): WorkbookFilterDatetime = {
+  inline def apply(): WorkbookFilterDatetime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookFilterDatetime]
   }
   
-  @scala.inline
-  implicit class WorkbookFilterDatetimeMutableBuilder[Self <: WorkbookFilterDatetime] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookFilterDatetime](x: Self) {
     
-    @scala.inline
-    def setDate(value: NullableOption[String]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: NullableOption[String]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateNull: Self = StObject.set(x, "date", null)
+    inline def setDateNull: Self = StObject.set(x, "date", null)
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setSpecificity(value: String): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
+    inline def setSpecificity(value: String): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecificityUndefined: Self = StObject.set(x, "specificity", js.undefined)
+    inline def setSpecificityUndefined: Self = StObject.set(x, "specificity", js.undefined)
   }
 }

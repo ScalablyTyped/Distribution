@@ -18,22 +18,17 @@ trait ListBootstrapActionsInput extends StObject {
 }
 object ListBootstrapActionsInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId): ListBootstrapActionsInput = {
+  inline def apply(ClusterId: ClusterId): ListBootstrapActionsInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBootstrapActionsInput]
   }
   
-  @scala.inline
-  implicit class ListBootstrapActionsInputMutableBuilder[Self <: ListBootstrapActionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBootstrapActionsInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

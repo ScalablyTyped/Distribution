@@ -18,25 +18,19 @@ trait SendMessageResponse extends StObject {
 }
 object SendMessageResponse {
   
-  @scala.inline
-  def apply(): SendMessageResponse = {
+  inline def apply(): SendMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendMessageResponse]
   }
   
-  @scala.inline
-  implicit class SendMessageResponseMutableBuilder[Self <: SendMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageResponse](x: Self) {
     
-    @scala.inline
-    def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
+    inline def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteTimeUndefined: Self = StObject.set(x, "AbsoluteTime", js.undefined)
+    inline def setAbsoluteTimeUndefined: Self = StObject.set(x, "AbsoluteTime", js.undefined)
     
-    @scala.inline
-    def setId(value: ChatItemId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ChatItemId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

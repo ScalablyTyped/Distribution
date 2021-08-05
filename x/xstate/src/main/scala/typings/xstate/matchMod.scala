@@ -14,14 +14,12 @@ object matchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def matchState[T, TContext, TEvent /* <: EventObject */](
+  inline def matchState[T, TContext, TEvent /* <: EventObject */](
     state: State[TContext, TEvent, js.Any, ContextTContext[TContext]],
     patterns: js.Array[StatePatternTuple[T, TContext, TEvent]],
     defaultValue: ValueFromStateGetter[T, TContext, TEvent]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matchState")(state.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def matchState[T, TContext, TEvent /* <: EventObject */](
+  inline def matchState[T, TContext, TEvent /* <: EventObject */](
     state: StateValue,
     patterns: js.Array[StatePatternTuple[T, TContext, TEvent]],
     defaultValue: ValueFromStateGetter[T, TContext, TEvent]

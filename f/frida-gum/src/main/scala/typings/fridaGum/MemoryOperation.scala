@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MemoryOperation extends StObject
 object MemoryOperation {
   
-  @scala.inline
-  def execute: typings.fridaGum.fridaGumStrings.execute = "execute".asInstanceOf[typings.fridaGum.fridaGumStrings.execute]
+  inline def execute: typings.fridaGum.fridaGumStrings.execute = "execute".asInstanceOf[typings.fridaGum.fridaGumStrings.execute]
   
-  @scala.inline
-  def read: typings.fridaGum.fridaGumStrings.read = "read".asInstanceOf[typings.fridaGum.fridaGumStrings.read]
+  inline def read: typings.fridaGum.fridaGumStrings.read = "read".asInstanceOf[typings.fridaGum.fridaGumStrings.read]
   
-  @scala.inline
-  def write: typings.fridaGum.fridaGumStrings.write = "write".asInstanceOf[typings.fridaGum.fridaGumStrings.write]
+  inline def write: typings.fridaGum.fridaGumStrings.write = "write".asInstanceOf[typings.fridaGum.fridaGumStrings.write]
 }

@@ -9,8 +9,7 @@ trait ListKeyPoliciesInput
      with typings.awsSdkClientKmsNode.typesListKeyPoliciesInputMod.ListKeyPoliciesInput
 object ListKeyPoliciesInput {
   
-  @scala.inline
-  def apply(KeyId: String): ListKeyPoliciesInput = {
+  inline def apply(KeyId: String): ListKeyPoliciesInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeyPoliciesInput]
   }

@@ -43,8 +43,7 @@ trait VirtualGatewayHealthCheckPolicy extends StObject {
 }
 object VirtualGatewayHealthCheckPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     healthyThreshold: VirtualGatewayHealthCheckThreshold,
     intervalMillis: VirtualGatewayHealthCheckIntervalMillis,
     protocol: VirtualGatewayPortProtocol,
@@ -55,34 +54,24 @@ object VirtualGatewayHealthCheckPolicy {
     __obj.asInstanceOf[VirtualGatewayHealthCheckPolicy]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayHealthCheckPolicyMutableBuilder[Self <: VirtualGatewayHealthCheckPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayHealthCheckPolicy](x: Self) {
     
-    @scala.inline
-    def setHealthyThreshold(value: VirtualGatewayHealthCheckThreshold): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
+    inline def setHealthyThreshold(value: VirtualGatewayHealthCheckThreshold): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalMillis(value: VirtualGatewayHealthCheckIntervalMillis): Self = StObject.set(x, "intervalMillis", value.asInstanceOf[js.Any])
+    inline def setIntervalMillis(value: VirtualGatewayHealthCheckIntervalMillis): Self = StObject.set(x, "intervalMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPort(value: PortNumber): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: PortNumber): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: VirtualGatewayPortProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: VirtualGatewayPortProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutMillis(value: VirtualGatewayHealthCheckTimeoutMillis): Self = StObject.set(x, "timeoutMillis", value.asInstanceOf[js.Any])
+    inline def setTimeoutMillis(value: VirtualGatewayHealthCheckTimeoutMillis): Self = StObject.set(x, "timeoutMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhealthyThreshold(value: VirtualGatewayHealthCheckThreshold): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
+    inline def setUnhealthyThreshold(value: VirtualGatewayHealthCheckThreshold): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
   }
 }

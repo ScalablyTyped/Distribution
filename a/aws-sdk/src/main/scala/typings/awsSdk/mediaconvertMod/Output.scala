@@ -48,67 +48,47 @@ trait Output extends StObject {
 }
 object Output {
   
-  @scala.inline
-  def apply(): Output = {
+  inline def apply(): Output = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Output]
   }
   
-  @scala.inline
-  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+  extension [Self <: Output](x: Self) {
     
-    @scala.inline
-    def setAudioDescriptions(value: listOfAudioDescription): Self = StObject.set(x, "AudioDescriptions", value.asInstanceOf[js.Any])
+    inline def setAudioDescriptions(value: listOfAudioDescription): Self = StObject.set(x, "AudioDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioDescriptionsUndefined: Self = StObject.set(x, "AudioDescriptions", js.undefined)
+    inline def setAudioDescriptionsUndefined: Self = StObject.set(x, "AudioDescriptions", js.undefined)
     
-    @scala.inline
-    def setAudioDescriptionsVarargs(value: AudioDescription*): Self = StObject.set(x, "AudioDescriptions", js.Array(value :_*))
+    inline def setAudioDescriptionsVarargs(value: AudioDescription*): Self = StObject.set(x, "AudioDescriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setCaptionDescriptions(value: listOfCaptionDescription): Self = StObject.set(x, "CaptionDescriptions", value.asInstanceOf[js.Any])
+    inline def setCaptionDescriptions(value: listOfCaptionDescription): Self = StObject.set(x, "CaptionDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionDescriptionsUndefined: Self = StObject.set(x, "CaptionDescriptions", js.undefined)
+    inline def setCaptionDescriptionsUndefined: Self = StObject.set(x, "CaptionDescriptions", js.undefined)
     
-    @scala.inline
-    def setCaptionDescriptionsVarargs(value: CaptionDescription*): Self = StObject.set(x, "CaptionDescriptions", js.Array(value :_*))
+    inline def setCaptionDescriptionsVarargs(value: CaptionDescription*): Self = StObject.set(x, "CaptionDescriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerSettings(value: ContainerSettings): Self = StObject.set(x, "ContainerSettings", value.asInstanceOf[js.Any])
+    inline def setContainerSettings(value: ContainerSettings): Self = StObject.set(x, "ContainerSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerSettingsUndefined: Self = StObject.set(x, "ContainerSettings", js.undefined)
+    inline def setContainerSettingsUndefined: Self = StObject.set(x, "ContainerSettings", js.undefined)
     
-    @scala.inline
-    def setExtension(value: string): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: string): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "Extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "Extension", js.undefined)
     
-    @scala.inline
-    def setNameModifier(value: stringMin1): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
+    inline def setNameModifier(value: stringMin1): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
+    inline def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
     
-    @scala.inline
-    def setOutputSettings(value: OutputSettings): Self = StObject.set(x, "OutputSettings", value.asInstanceOf[js.Any])
+    inline def setOutputSettings(value: OutputSettings): Self = StObject.set(x, "OutputSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSettingsUndefined: Self = StObject.set(x, "OutputSettings", js.undefined)
+    inline def setOutputSettingsUndefined: Self = StObject.set(x, "OutputSettings", js.undefined)
     
-    @scala.inline
-    def setPreset(value: stringMin0): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: stringMin0): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
+    inline def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
     
-    @scala.inline
-    def setVideoDescription(value: VideoDescription): Self = StObject.set(x, "VideoDescription", value.asInstanceOf[js.Any])
+    inline def setVideoDescription(value: VideoDescription): Self = StObject.set(x, "VideoDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDescriptionUndefined: Self = StObject.set(x, "VideoDescription", js.undefined)
+    inline def setVideoDescriptionUndefined: Self = StObject.set(x, "VideoDescription", js.undefined)
   }
 }

@@ -30,79 +30,55 @@ trait ILocale extends StObject {
 }
 object ILocale {
   
-  @scala.inline
-  def apply(formats: PartialLTstringLTSstringL, name: String, relativeTime: Partialfuturestringpastst): ILocale = {
+  inline def apply(formats: PartialLTstringLTSstringL, name: String, relativeTime: Partialfuturestringpastst): ILocale = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], relativeTime = relativeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILocale]
   }
   
-  @scala.inline
-  implicit class ILocaleMutableBuilder[Self <: ILocale] (val x: Self) extends AnyVal {
+  extension [Self <: ILocale](x: Self) {
     
-    @scala.inline
-    def setFormats(value: PartialLTstringLTSstringL): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: PartialLTstringLTSstringL): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
+    inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
+    inline def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
     
-    @scala.inline
-    def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
     
-    @scala.inline
-    def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+    inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
-    @scala.inline
-    def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinal(value: /* n */ Double => Double | String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
+    inline def setOrdinal(value: /* n */ Double => Double | String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
-    @scala.inline
-    def setRelativeTime(value: Partialfuturestringpastst): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
+    inline def setRelativeTime(value: Partialfuturestringpastst): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekStart(value: Double): Self = StObject.set(x, "weekStart", value.asInstanceOf[js.Any])
+    inline def setWeekStart(value: Double): Self = StObject.set(x, "weekStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekStartUndefined: Self = StObject.set(x, "weekStart", js.undefined)
+    inline def setWeekStartUndefined: Self = StObject.set(x, "weekStart", js.undefined)
     
-    @scala.inline
-    def setWeekdays(value: js.Array[String]): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+    inline def setWeekdays(value: js.Array[String]): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdaysMin(value: js.Array[String]): Self = StObject.set(x, "weekdaysMin", value.asInstanceOf[js.Any])
+    inline def setWeekdaysMin(value: js.Array[String]): Self = StObject.set(x, "weekdaysMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdaysMinUndefined: Self = StObject.set(x, "weekdaysMin", js.undefined)
+    inline def setWeekdaysMinUndefined: Self = StObject.set(x, "weekdaysMin", js.undefined)
     
-    @scala.inline
-    def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value :_*))
+    inline def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value :_*))
     
-    @scala.inline
-    def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
+    inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
+    inline def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
     
-    @scala.inline
-    def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
     
-    @scala.inline
-    def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
+    inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
-    @scala.inline
-    def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+    inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
   }
 }

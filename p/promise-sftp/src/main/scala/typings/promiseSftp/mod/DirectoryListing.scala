@@ -38,53 +38,38 @@ trait DirectoryListing extends StObject {
 }
 object DirectoryListing {
   
-  @scala.inline
-  def apply(date: Date, name: String, `type`: d | `-_` | l): DirectoryListing = {
+  inline def apply(date: Date, name: String, `type`: d | `-_` | l): DirectoryListing = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryListing]
   }
   
-  @scala.inline
-  implicit class DirectoryListingMutableBuilder[Self <: DirectoryListing] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryListing](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRights(value: Group): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
+    inline def setRights(value: Group): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightsUndefined: Self = StObject.set(x, "rights", js.undefined)
+    inline def setRightsUndefined: Self = StObject.set(x, "rights", js.undefined)
     
-    @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+    inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: d | `-_` | l): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: d | `-_` | l): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

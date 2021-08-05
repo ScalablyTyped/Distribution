@@ -21,16 +21,13 @@ trait ModuleController
 }
 object ModuleController {
   
-  @scala.inline
-  def apply(create: XController => Unit, requestResource: String => Unit): ModuleController = {
+  inline def apply(create: XController => Unit, requestResource: String => Unit): ModuleController = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), requestResource = js.Any.fromFunction1(requestResource))
     __obj.asInstanceOf[ModuleController]
   }
   
-  @scala.inline
-  implicit class ModuleControllerMutableBuilder[Self <: ModuleController] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleController](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

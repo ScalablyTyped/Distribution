@@ -47,8 +47,7 @@ trait SpatialReferenceInfo
 }
 object SpatialReferenceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -62,22 +61,16 @@ object SpatialReferenceInfo {
     __obj.asInstanceOf[SpatialReferenceInfo]
   }
   
-  @scala.inline
-  implicit class SpatialReferenceInfoMutableBuilder[Self <: SpatialReferenceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialReferenceInfo](x: Self) {
     
-    @scala.inline
-    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitBaseFactor(value: Double): Self = StObject.set(x, "unitBaseFactor", value.asInstanceOf[js.Any])
+    inline def setUnitBaseFactor(value: Double): Self = StObject.set(x, "unitBaseFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitID(value: Double): Self = StObject.set(x, "unitID", value.asInstanceOf[js.Any])
+    inline def setUnitID(value: Double): Self = StObject.set(x, "unitID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitSquareDerivative(value: Double): Self = StObject.set(x, "unitSquareDerivative", value.asInstanceOf[js.Any])
+    inline def setUnitSquareDerivative(value: Double): Self = StObject.set(x, "unitSquareDerivative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
+    inline def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
   }
 }

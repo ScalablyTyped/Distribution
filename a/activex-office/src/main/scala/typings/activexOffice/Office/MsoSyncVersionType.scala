@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSyncVersionType extends StObject
 object MsoSyncVersionType {
   
-  @scala.inline
-  def msoSyncVersionLastViewed: `0` = 0.asInstanceOf[`0`]
+  inline def msoSyncVersionLastViewed: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoSyncVersionServer: `1` = 1.asInstanceOf[`1`]
+  inline def msoSyncVersionServer: `1` = 1.asInstanceOf[`1`]
 }

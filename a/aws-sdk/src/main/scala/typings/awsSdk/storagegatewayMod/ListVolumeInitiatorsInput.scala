@@ -13,16 +13,13 @@ trait ListVolumeInitiatorsInput extends StObject {
 }
 object ListVolumeInitiatorsInput {
   
-  @scala.inline
-  def apply(VolumeARN: VolumeARN): ListVolumeInitiatorsInput = {
+  inline def apply(VolumeARN: VolumeARN): ListVolumeInitiatorsInput = {
     val __obj = js.Dynamic.literal(VolumeARN = VolumeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVolumeInitiatorsInput]
   }
   
-  @scala.inline
-  implicit class ListVolumeInitiatorsInputMutableBuilder[Self <: ListVolumeInitiatorsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVolumeInitiatorsInput](x: Self) {
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
   }
 }

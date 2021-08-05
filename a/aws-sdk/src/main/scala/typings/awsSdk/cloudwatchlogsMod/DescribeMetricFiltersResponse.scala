@@ -15,28 +15,21 @@ trait DescribeMetricFiltersResponse extends StObject {
 }
 object DescribeMetricFiltersResponse {
   
-  @scala.inline
-  def apply(): DescribeMetricFiltersResponse = {
+  inline def apply(): DescribeMetricFiltersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMetricFiltersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeMetricFiltersResponseMutableBuilder[Self <: DescribeMetricFiltersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMetricFiltersResponse](x: Self) {
     
-    @scala.inline
-    def setMetricFilters(value: MetricFilters): Self = StObject.set(x, "metricFilters", value.asInstanceOf[js.Any])
+    inline def setMetricFilters(value: MetricFilters): Self = StObject.set(x, "metricFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricFiltersUndefined: Self = StObject.set(x, "metricFilters", js.undefined)
+    inline def setMetricFiltersUndefined: Self = StObject.set(x, "metricFilters", js.undefined)
     
-    @scala.inline
-    def setMetricFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "metricFilters", js.Array(value :_*))
+    inline def setMetricFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "metricFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

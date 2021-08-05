@@ -42,70 +42,49 @@ trait IQueryAPIOptions extends StObject {
 }
 object IQueryAPIOptions {
   
-  @scala.inline
-  def apply(queryUrl: String): IQueryAPIOptions = {
+  inline def apply(queryUrl: String): IQueryAPIOptions = {
     val __obj = js.Dynamic.literal(queryUrl = queryUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryAPIOptions]
   }
   
-  @scala.inline
-  implicit class IQueryAPIOptionsMutableBuilder[Self <: IQueryAPIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IQueryAPIOptions](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String | IFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String | IFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setInlineCount(value: Boolean): Self = StObject.set(x, "inlineCount", value.asInstanceOf[js.Any])
+    inline def setInlineCount(value: Boolean): Self = StObject.set(x, "inlineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineCountUndefined: Self = StObject.set(x, "inlineCount", js.undefined)
+    inline def setInlineCountUndefined: Self = StObject.set(x, "inlineCount", js.undefined)
     
-    @scala.inline
-    def setIsStaging(value: Boolean): Self = StObject.set(x, "isStaging", value.asInstanceOf[js.Any])
+    inline def setIsStaging(value: Boolean): Self = StObject.set(x, "isStaging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStagingUndefined: Self = StObject.set(x, "isStaging", js.undefined)
+    inline def setIsStagingUndefined: Self = StObject.set(x, "isStaging", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: js.Array[String]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: js.Array[String]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryUrl(value: String): Self = StObject.set(x, "queryUrl", value.asInstanceOf[js.Any])
+    inline def setQueryUrl(value: String): Self = StObject.set(x, "queryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
+    inline def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setSpatialFilter(value: ISpatialFilterOptions | IFindNearRouteOptions): Self = StObject.set(x, "spatialFilter", value.asInstanceOf[js.Any])
+    inline def setSpatialFilter(value: ISpatialFilterOptions | IFindNearRouteOptions): Self = StObject.set(x, "spatialFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialFilterUndefined: Self = StObject.set(x, "spatialFilter", js.undefined)
+    inline def setSpatialFilterUndefined: Self = StObject.set(x, "spatialFilter", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

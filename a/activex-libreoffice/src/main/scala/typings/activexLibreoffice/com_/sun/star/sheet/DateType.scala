@@ -37,43 +37,30 @@ object DateType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def LAST7DAYS: `3` = 3.asInstanceOf[`3`]
+    inline def LAST7DAYS: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def LASTMONTH: `8` = 8.asInstanceOf[`8`]
+    inline def LASTMONTH: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def LASTWEEK: `5` = 5.asInstanceOf[`5`]
+    inline def LASTWEEK: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def LASTYEAR: `11` = 11.asInstanceOf[`11`]
+    inline def LASTYEAR: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def NEXTMONTH: `9` = 9.asInstanceOf[`9`]
+    inline def NEXTMONTH: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def NEXTWEEK: `6` = 6.asInstanceOf[`6`]
+    inline def NEXTWEEK: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def NEXTYEAR: `12` = 12.asInstanceOf[`12`]
+    inline def NEXTYEAR: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def THISMONTH: `7` = 7.asInstanceOf[`7`]
+    inline def THISMONTH: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def THISWEEK: `4` = 4.asInstanceOf[`4`]
+    inline def THISWEEK: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def THISYEAR: `10` = 10.asInstanceOf[`10`]
+    inline def THISYEAR: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def TODAY: `0` = 0.asInstanceOf[`0`]
+    inline def TODAY: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def TOMORROW: `2` = 2.asInstanceOf[`2`]
+    inline def TOMORROW: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def YESTERDAY: `1` = 1.asInstanceOf[`1`]
+    inline def YESTERDAY: `1` = 1.asInstanceOf[`1`]
   }
 }

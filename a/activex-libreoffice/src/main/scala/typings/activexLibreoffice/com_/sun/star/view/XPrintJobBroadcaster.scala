@@ -26,8 +26,7 @@ trait XPrintJobBroadcaster
 }
 object XPrintJobBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addPrintJobListener: XPrintJobListener => Unit,
     queryInterface: `type` => js.Any,
@@ -38,13 +37,10 @@ object XPrintJobBroadcaster {
     __obj.asInstanceOf[XPrintJobBroadcaster]
   }
   
-  @scala.inline
-  implicit class XPrintJobBroadcasterMutableBuilder[Self <: XPrintJobBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XPrintJobBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddPrintJobListener(value: XPrintJobListener => Unit): Self = StObject.set(x, "addPrintJobListener", js.Any.fromFunction1(value))
+    inline def setAddPrintJobListener(value: XPrintJobListener => Unit): Self = StObject.set(x, "addPrintJobListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovePrintJobListener(value: XPrintJobListener => Unit): Self = StObject.set(x, "removePrintJobListener", js.Any.fromFunction1(value))
+    inline def setRemovePrintJobListener(value: XPrintJobListener => Unit): Self = StObject.set(x, "removePrintJobListener", js.Any.fromFunction1(value))
   }
 }

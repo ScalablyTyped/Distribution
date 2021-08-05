@@ -14,19 +14,15 @@ trait RangeLike extends StObject {
 }
 object RangeLike {
   
-  @scala.inline
-  def apply(end: PointLike, start: PointLike): RangeLike = {
+  inline def apply(end: PointLike, start: PointLike): RangeLike = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeLike]
   }
   
-  @scala.inline
-  implicit class RangeLikeMutableBuilder[Self <: RangeLike] (val x: Self) extends AnyVal {
+  extension [Self <: RangeLike](x: Self) {
     
-    @scala.inline
-    def setEnd(value: PointLike): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: PointLike): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: PointLike): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: PointLike): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

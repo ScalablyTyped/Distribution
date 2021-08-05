@@ -45,8 +45,7 @@ trait SpeechRecognitionResult extends StObject {
 }
 object SpeechRecognitionResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     confidence: SpeechRecognitionConfidence,
     constraint: ISpeechRecognitionConstraint,
     getAlternates: Double => IVectorView[SpeechRecognitionResult],
@@ -62,37 +61,26 @@ object SpeechRecognitionResult {
     __obj.asInstanceOf[SpeechRecognitionResult]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionResultMutableBuilder[Self <: SpeechRecognitionResult] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionResult](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: SpeechRecognitionConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: SpeechRecognitionConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraint(value: ISpeechRecognitionConstraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: ISpeechRecognitionConstraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAlternates(value: Double => IVectorView[SpeechRecognitionResult]): Self = StObject.set(x, "getAlternates", js.Any.fromFunction1(value))
+    inline def setGetAlternates(value: Double => IVectorView[SpeechRecognitionResult]): Self = StObject.set(x, "getAlternates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPhraseDuration(value: Double): Self = StObject.set(x, "phraseDuration", value.asInstanceOf[js.Any])
+    inline def setPhraseDuration(value: Double): Self = StObject.set(x, "phraseDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhraseStartTime(value: Date): Self = StObject.set(x, "phraseStartTime", value.asInstanceOf[js.Any])
+    inline def setPhraseStartTime(value: Date): Self = StObject.set(x, "phraseStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawConfidence(value: Double): Self = StObject.set(x, "rawConfidence", value.asInstanceOf[js.Any])
+    inline def setRawConfidence(value: Double): Self = StObject.set(x, "rawConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulePath(value: IVectorView[String]): Self = StObject.set(x, "rulePath", value.asInstanceOf[js.Any])
+    inline def setRulePath(value: IVectorView[String]): Self = StObject.set(x, "rulePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticInterpretation(value: SpeechRecognitionSemanticInterpretation): Self = StObject.set(x, "semanticInterpretation", value.asInstanceOf[js.Any])
+    inline def setSemanticInterpretation(value: SpeechRecognitionSemanticInterpretation): Self = StObject.set(x, "semanticInterpretation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

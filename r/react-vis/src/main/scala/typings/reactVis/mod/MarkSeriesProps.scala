@@ -14,25 +14,19 @@ trait MarkSeriesProps
 }
 object MarkSeriesProps {
   
-  @scala.inline
-  def apply(): MarkSeriesProps = {
+  inline def apply(): MarkSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkSeriesProps]
   }
   
-  @scala.inline
-  implicit class MarkSeriesPropsMutableBuilder[Self <: MarkSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: MarkSeriesProps](x: Self) {
     
-    @scala.inline
-    def setGetNull(value: MarkSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
+    inline def setGetNull(value: MarkSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
+    inline def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

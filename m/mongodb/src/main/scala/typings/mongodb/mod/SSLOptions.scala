@@ -78,100 +78,69 @@ trait SSLOptions extends StObject {
 }
 object SSLOptions {
   
-  @scala.inline
-  def apply(): SSLOptions = {
+  inline def apply(): SSLOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSLOptions]
   }
   
-  @scala.inline
-  implicit class SSLOptionsMutableBuilder[Self <: SSLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SSLOptions](x: Self) {
     
-    @scala.inline
-    def setCheckServerIdentity(value: Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]])): Self = StObject.set(x, "checkServerIdentity", value.asInstanceOf[js.Any])
+    inline def setCheckServerIdentity(value: Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]])): Self = StObject.set(x, "checkServerIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckServerIdentityFunction2(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+    inline def setCheckServerIdentityFunction2(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
+    inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
     
-    @scala.inline
-    def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
+    inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
+    inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
     
-    @scala.inline
-    def setEcdhCurve(value: String): Self = StObject.set(x, "ecdhCurve", value.asInstanceOf[js.Any])
+    inline def setEcdhCurve(value: String): Self = StObject.set(x, "ecdhCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdhCurveUndefined: Self = StObject.set(x, "ecdhCurve", js.undefined)
+    inline def setEcdhCurveUndefined: Self = StObject.set(x, "ecdhCurve", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: scala.Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: scala.Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
-    @scala.inline
-    def setPoolSize(value: scala.Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
+    inline def setPoolSize(value: scala.Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
+    inline def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
     
-    @scala.inline
-    def setServername(value: String): Self = StObject.set(x, "servername", value.asInstanceOf[js.Any])
+    inline def setServername(value: String): Self = StObject.set(x, "servername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServernameUndefined: Self = StObject.set(x, "servername", js.undefined)
+    inline def setServernameUndefined: Self = StObject.set(x, "servername", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCA(value: js.Array[Buffer | String]): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
+    inline def setSslCA(value: js.Array[Buffer | String]): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCAUndefined: Self = StObject.set(x, "sslCA", js.undefined)
+    inline def setSslCAUndefined: Self = StObject.set(x, "sslCA", js.undefined)
     
-    @scala.inline
-    def setSslCAVarargs(value: (Buffer | String)*): Self = StObject.set(x, "sslCA", js.Array(value :_*))
+    inline def setSslCAVarargs(value: (Buffer | String)*): Self = StObject.set(x, "sslCA", js.Array(value :_*))
     
-    @scala.inline
-    def setSslCRL(value: js.Array[Buffer | String]): Self = StObject.set(x, "sslCRL", value.asInstanceOf[js.Any])
+    inline def setSslCRL(value: js.Array[Buffer | String]): Self = StObject.set(x, "sslCRL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCRLUndefined: Self = StObject.set(x, "sslCRL", js.undefined)
+    inline def setSslCRLUndefined: Self = StObject.set(x, "sslCRL", js.undefined)
     
-    @scala.inline
-    def setSslCRLVarargs(value: (Buffer | String)*): Self = StObject.set(x, "sslCRL", js.Array(value :_*))
+    inline def setSslCRLVarargs(value: (Buffer | String)*): Self = StObject.set(x, "sslCRL", js.Array(value :_*))
     
-    @scala.inline
-    def setSslCert(value: Buffer | String): Self = StObject.set(x, "sslCert", value.asInstanceOf[js.Any])
+    inline def setSslCert(value: Buffer | String): Self = StObject.set(x, "sslCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCertUndefined: Self = StObject.set(x, "sslCert", js.undefined)
+    inline def setSslCertUndefined: Self = StObject.set(x, "sslCert", js.undefined)
     
-    @scala.inline
-    def setSslKey(value: Buffer | String): Self = StObject.set(x, "sslKey", value.asInstanceOf[js.Any])
+    inline def setSslKey(value: Buffer | String): Self = StObject.set(x, "sslKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslKeyUndefined: Self = StObject.set(x, "sslKey", js.undefined)
+    inline def setSslKeyUndefined: Self = StObject.set(x, "sslKey", js.undefined)
     
-    @scala.inline
-    def setSslPass(value: Buffer | String): Self = StObject.set(x, "sslPass", value.asInstanceOf[js.Any])
+    inline def setSslPass(value: Buffer | String): Self = StObject.set(x, "sslPass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslPassUndefined: Self = StObject.set(x, "sslPass", js.undefined)
+    inline def setSslPassUndefined: Self = StObject.set(x, "sslPass", js.undefined)
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setSslValidate(value: Boolean): Self = StObject.set(x, "sslValidate", value.asInstanceOf[js.Any])
+    inline def setSslValidate(value: Boolean): Self = StObject.set(x, "sslValidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslValidateUndefined: Self = StObject.set(x, "sslValidate", js.undefined)
+    inline def setSslValidateUndefined: Self = StObject.set(x, "sslValidate", js.undefined)
   }
 }

@@ -173,8 +173,7 @@ object Image {
   @JSImport("fabric/fabric-impl", "Image.ATTRIBUTE_NAMES")
   @js.native
   def ATTRIBUTE_NAMES: js.Array[String] = js.native
-  @scala.inline
-  def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
+  inline def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
   
   /**
     * Default CSS class name for canvas
@@ -182,14 +181,12 @@ object Image {
   @JSImport("fabric/fabric-impl", "Image.CSS_CANVAS")
   @js.native
   def CSS_CANVAS: String = js.native
-  @scala.inline
-  def CSS_CANVAS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CSS_CANVAS")(x.asInstanceOf[js.Any])
+  inline def CSS_CANVAS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CSS_CANVAS")(x.asInstanceOf[js.Any])
   
   @JSImport("fabric/fabric-impl", "Image.filters")
   @js.native
   def filters: IAllFilters = js.native
-  @scala.inline
-  def filters_=(x: IAllFilters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filters")(x.asInstanceOf[js.Any])
+  inline def filters_=(x: IAllFilters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filters")(x.asInstanceOf[js.Any])
   
   /**
     * Returns Image instance from an SVG element
@@ -197,10 +194,8 @@ object Image {
     * @param callback Callback to execute when fabric.Image object is created
     * @param [options] Options object
     */
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Image]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function, options: IImageOptions): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Image]
+  inline def fromElement(element: SVGElement, callback: js.Function): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Image]
+  inline def fromElement(element: SVGElement, callback: js.Function, options: IImageOptions): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Image]
   
   /**
     * Creates an instance of fabric.Image from an URL string
@@ -208,12 +203,8 @@ object Image {
     * @param [callback] Callback to invoke when image is created (newly created image is passed as a first argument)
     * @param [imgOptions] Options object
     */
-  @scala.inline
-  def fromURL(url: String): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[Image]
-  @scala.inline
-  def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit]): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Image]
-  @scala.inline
-  def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit], imgOptions: IImageOptions): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], imgOptions.asInstanceOf[js.Any])).asInstanceOf[Image]
-  @scala.inline
-  def fromURL(url: String, callback: Unit, imgOptions: IImageOptions): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], imgOptions.asInstanceOf[js.Any])).asInstanceOf[Image]
+  inline def fromURL(url: String): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[Image]
+  inline def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit]): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Image]
+  inline def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit], imgOptions: IImageOptions): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], imgOptions.asInstanceOf[js.Any])).asInstanceOf[Image]
+  inline def fromURL(url: String, callback: Unit, imgOptions: IImageOptions): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], imgOptions.asInstanceOf[js.Any])).asInstanceOf[Image]
 }

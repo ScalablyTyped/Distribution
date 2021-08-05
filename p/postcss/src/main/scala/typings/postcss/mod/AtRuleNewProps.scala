@@ -24,31 +24,23 @@ trait AtRuleNewProps
 }
 object AtRuleNewProps {
   
-  @scala.inline
-  def apply(): AtRuleNewProps = {
+  inline def apply(): AtRuleNewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AtRuleNewProps]
   }
   
-  @scala.inline
-  implicit class AtRuleNewPropsMutableBuilder[Self <: AtRuleNewProps] (val x: Self) extends AnyVal {
+  extension [Self <: AtRuleNewProps](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParams(value: String | Double): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: String | Double): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRaws(value: AtRuleRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: AtRuleRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
+    inline def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
   }
 }

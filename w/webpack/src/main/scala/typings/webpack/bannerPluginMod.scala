@@ -46,59 +46,42 @@ object bannerPluginMod {
   }
   object BannerPluginOptions {
     
-    @scala.inline
-    def apply(banner: BannerFunction | String): BannerPluginOptions = {
+    inline def apply(banner: BannerFunction | String): BannerPluginOptions = {
       val __obj = js.Dynamic.literal(banner = banner.asInstanceOf[js.Any])
       __obj.asInstanceOf[BannerPluginOptions]
     }
     
-    @scala.inline
-    implicit class BannerPluginOptionsMutableBuilder[Self <: BannerPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BannerPluginOptions](x: Self) {
       
-      @scala.inline
-      def setBanner(value: BannerFunction | String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+      inline def setBanner(value: BannerFunction | String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBannerFunction1(value: /* data */ Basename => String): Self = StObject.set(x, "banner", js.Any.fromFunction1(value))
+      inline def setBannerFunction1(value: /* data */ Basename => String): Self = StObject.set(x, "banner", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntryOnly(value: Boolean): Self = StObject.set(x, "entryOnly", value.asInstanceOf[js.Any])
+      inline def setEntryOnly(value: Boolean): Self = StObject.set(x, "entryOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryOnlyUndefined: Self = StObject.set(x, "entryOnly", js.undefined)
+      inline def setEntryOnlyUndefined: Self = StObject.set(x, "entryOnly", js.undefined)
       
-      @scala.inline
-      def setExclude(value: Rules): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: Rules): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: Rules): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: Rules): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setTest(value: Rules): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Rules): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value :_*))
     }
   }
   

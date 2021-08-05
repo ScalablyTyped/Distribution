@@ -13,19 +13,15 @@ trait SplunkRetryOptions extends StObject {
 }
 object SplunkRetryOptions {
   
-  @scala.inline
-  def apply(): SplunkRetryOptions = {
+  inline def apply(): SplunkRetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplunkRetryOptions]
   }
   
-  @scala.inline
-  implicit class SplunkRetryOptionsMutableBuilder[Self <: SplunkRetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SplunkRetryOptions](x: Self) {
     
-    @scala.inline
-    def setDurationInSeconds(value: SplunkRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: SplunkRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
   }
 }

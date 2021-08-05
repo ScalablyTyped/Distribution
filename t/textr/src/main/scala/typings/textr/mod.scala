@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): typings.textr.mod.textr = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.textr.mod.textr]
-  @scala.inline
-  def apply(defaults: TextrArgs): typings.textr.mod.textr = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[typings.textr.mod.textr]
+  inline def apply(): typings.textr.mod.textr = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.textr.mod.textr]
+  inline def apply(defaults: TextrArgs): typings.textr.mod.textr = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[typings.textr.mod.textr]
   
   @JSImport("textr", JSImport.Namespace)
   @js.native

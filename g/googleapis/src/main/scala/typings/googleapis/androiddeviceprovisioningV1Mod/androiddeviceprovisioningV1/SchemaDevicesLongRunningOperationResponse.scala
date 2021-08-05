@@ -26,28 +26,21 @@ trait SchemaDevicesLongRunningOperationResponse extends StObject {
 }
 object SchemaDevicesLongRunningOperationResponse {
   
-  @scala.inline
-  def apply(): SchemaDevicesLongRunningOperationResponse = {
+  inline def apply(): SchemaDevicesLongRunningOperationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDevicesLongRunningOperationResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDevicesLongRunningOperationResponseMutableBuilder[Self <: SchemaDevicesLongRunningOperationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDevicesLongRunningOperationResponse](x: Self) {
     
-    @scala.inline
-    def setPerDeviceStatus(value: js.Array[SchemaOperationPerDevice]): Self = StObject.set(x, "perDeviceStatus", value.asInstanceOf[js.Any])
+    inline def setPerDeviceStatus(value: js.Array[SchemaOperationPerDevice]): Self = StObject.set(x, "perDeviceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerDeviceStatusUndefined: Self = StObject.set(x, "perDeviceStatus", js.undefined)
+    inline def setPerDeviceStatusUndefined: Self = StObject.set(x, "perDeviceStatus", js.undefined)
     
-    @scala.inline
-    def setPerDeviceStatusVarargs(value: SchemaOperationPerDevice*): Self = StObject.set(x, "perDeviceStatus", js.Array(value :_*))
+    inline def setPerDeviceStatusVarargs(value: SchemaOperationPerDevice*): Self = StObject.set(x, "perDeviceStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
+    inline def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
   }
 }

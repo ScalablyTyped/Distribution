@@ -23,22 +23,17 @@ trait WINDOWS extends StObject {
 }
 object WINDOWS {
   
-  @scala.inline
-  def apply(MACOS: Double, UBUNTU: Double, WINDOWS: Double): WINDOWS = {
+  inline def apply(MACOS: Double, UBUNTU: Double, WINDOWS: Double): WINDOWS = {
     val __obj = js.Dynamic.literal(MACOS = MACOS.asInstanceOf[js.Any], UBUNTU = UBUNTU.asInstanceOf[js.Any], WINDOWS = WINDOWS.asInstanceOf[js.Any])
     __obj.asInstanceOf[WINDOWS]
   }
   
-  @scala.inline
-  implicit class WINDOWSMutableBuilder[Self <: WINDOWS] (val x: Self) extends AnyVal {
+  extension [Self <: WINDOWS](x: Self) {
     
-    @scala.inline
-    def setMACOS(value: Double): Self = StObject.set(x, "MACOS", value.asInstanceOf[js.Any])
+    inline def setMACOS(value: Double): Self = StObject.set(x, "MACOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUBUNTU(value: Double): Self = StObject.set(x, "UBUNTU", value.asInstanceOf[js.Any])
+    inline def setUBUNTU(value: Double): Self = StObject.set(x, "UBUNTU", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWINDOWS(value: Double): Self = StObject.set(x, "WINDOWS", value.asInstanceOf[js.Any])
+    inline def setWINDOWS(value: Double): Self = StObject.set(x, "WINDOWS", value.asInstanceOf[js.Any])
   }
 }

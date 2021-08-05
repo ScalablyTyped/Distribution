@@ -76,67 +76,47 @@ trait RelationshipProperties extends StObject {
 }
 object RelationshipProperties {
   
-  @scala.inline
-  def apply(): RelationshipProperties = {
+  inline def apply(): RelationshipProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationshipProperties]
   }
   
-  @scala.inline
-  implicit class RelationshipPropertiesMutableBuilder[Self <: RelationshipProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipProperties](x: Self) {
     
-    @scala.inline
-    def setCardinality(value: `one-to-one` | `one-to-many` | `many-to-many`): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
+    inline def setCardinality(value: `one-to-one` | `one-to-many` | `many-to-many`): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
+    inline def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
     
-    @scala.inline
-    def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+    inline def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+    inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKeyField(value: String): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
+    inline def setKeyField(value: String): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFieldInRelationshipTable(value: String): Self = StObject.set(x, "keyFieldInRelationshipTable", value.asInstanceOf[js.Any])
+    inline def setKeyFieldInRelationshipTable(value: String): Self = StObject.set(x, "keyFieldInRelationshipTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFieldInRelationshipTableUndefined: Self = StObject.set(x, "keyFieldInRelationshipTable", js.undefined)
+    inline def setKeyFieldInRelationshipTableUndefined: Self = StObject.set(x, "keyFieldInRelationshipTable", js.undefined)
     
-    @scala.inline
-    def setKeyFieldUndefined: Self = StObject.set(x, "keyField", js.undefined)
+    inline def setKeyFieldUndefined: Self = StObject.set(x, "keyField", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRelatedTableId(value: Double): Self = StObject.set(x, "relatedTableId", value.asInstanceOf[js.Any])
+    inline def setRelatedTableId(value: Double): Self = StObject.set(x, "relatedTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedTableIdUndefined: Self = StObject.set(x, "relatedTableId", js.undefined)
+    inline def setRelatedTableIdUndefined: Self = StObject.set(x, "relatedTableId", js.undefined)
     
-    @scala.inline
-    def setRelationshipTableId(value: Double): Self = StObject.set(x, "relationshipTableId", value.asInstanceOf[js.Any])
+    inline def setRelationshipTableId(value: Double): Self = StObject.set(x, "relationshipTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipTableIdUndefined: Self = StObject.set(x, "relationshipTableId", js.undefined)
+    inline def setRelationshipTableIdUndefined: Self = StObject.set(x, "relationshipTableId", js.undefined)
     
-    @scala.inline
-    def setRole(value: origin | destination): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: origin | destination): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

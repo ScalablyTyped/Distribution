@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType]): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType]): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
   /**
   [Debounce](https://davidwalsh.name/javascript-debounce-function) a function.
   @param input - Function to debounce.
@@ -23,12 +22,9 @@ object mod {
   }, {wait: 100});
   ```
   */
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: BeforeOptions): DebouncedFunction[ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, ReturnType]]
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: NoBeforeNoAfterOptions): DebouncedFunction[ArgumentsType, Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, Unit]]
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: BeforeOptions): DebouncedFunction[ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, ReturnType]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: NoBeforeNoAfterOptions): DebouncedFunction[ArgumentsType, Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, Unit]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
   
   @JSImport("debounce-fn", JSImport.Namespace)
   @js.native
@@ -43,17 +39,14 @@ object mod {
   }
   object BeforeOptions {
     
-    @scala.inline
-    def apply(): BeforeOptions = {
+    inline def apply(): BeforeOptions = {
       val __obj = js.Dynamic.literal(before = true)
       __obj.asInstanceOf[BeforeOptions]
     }
     
-    @scala.inline
-    implicit class BeforeOptionsMutableBuilder[Self <: BeforeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeOptions](x: Self) {
       
-      @scala.inline
-      def setBefore(value: `true`): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: `true`): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,23 +72,18 @@ object mod {
   }
   object NoBeforeNoAfterOptions {
     
-    @scala.inline
-    def apply(): NoBeforeNoAfterOptions = {
+    inline def apply(): NoBeforeNoAfterOptions = {
       val __obj = js.Dynamic.literal(after = false)
       __obj.asInstanceOf[NoBeforeNoAfterOptions]
     }
     
-    @scala.inline
-    implicit class NoBeforeNoAfterOptionsMutableBuilder[Self <: NoBeforeNoAfterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NoBeforeNoAfterOptions](x: Self) {
       
-      @scala.inline
-      def setAfter(value: `false`): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: `false`): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: `false`): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: `false`): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     }
   }
   
@@ -123,32 +111,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Boolean): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: Boolean): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
 }

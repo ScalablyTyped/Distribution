@@ -38,26 +38,20 @@ object defaultLinkModelMod {
   }
   object DefaultLinkModelListener {
     
-    @scala.inline
-    def apply(): DefaultLinkModelListener = {
+    inline def apply(): DefaultLinkModelListener = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultLinkModelListener]
     }
     
-    @scala.inline
-    implicit class DefaultLinkModelListenerMutableBuilder[Self <: DefaultLinkModelListener] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultLinkModelListener](x: Self) {
       
-      @scala.inline
-      def setColorChanged(value: /* event */ BaseEventDefaultLinkModel => Unit): Self = StObject.set(x, "colorChanged", js.Any.fromFunction1(value))
+      inline def setColorChanged(value: /* event */ BaseEventDefaultLinkModel => Unit): Self = StObject.set(x, "colorChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColorChangedUndefined: Self = StObject.set(x, "colorChanged", js.undefined)
+      inline def setColorChangedUndefined: Self = StObject.set(x, "colorChanged", js.undefined)
       
-      @scala.inline
-      def setWidthChanged(value: /* event */ BaseEventDefaultLinkModelEntity => Unit): Self = StObject.set(x, "widthChanged", js.Any.fromFunction1(value))
+      inline def setWidthChanged(value: /* event */ BaseEventDefaultLinkModelEntity => Unit): Self = StObject.set(x, "widthChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWidthChangedUndefined: Self = StObject.set(x, "widthChanged", js.undefined)
+      inline def setWidthChangedUndefined: Self = StObject.set(x, "widthChanged", js.undefined)
     }
   }
 }

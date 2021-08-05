@@ -25,6 +25,5 @@ object Svg {
     * @param {Number} [sampleLength=15]
     * @return {Vector[]} points
     */
-  @scala.inline
-  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToVertices")(path.asInstanceOf[js.Any], sampleLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
+  inline def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToVertices")(path.asInstanceOf[js.Any], sampleLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
 }

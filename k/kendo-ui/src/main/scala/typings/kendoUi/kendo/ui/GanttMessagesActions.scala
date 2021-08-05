@@ -18,43 +18,31 @@ trait GanttMessagesActions extends StObject {
 }
 object GanttMessagesActions {
   
-  @scala.inline
-  def apply(): GanttMessagesActions = {
+  inline def apply(): GanttMessagesActions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GanttMessagesActions]
   }
   
-  @scala.inline
-  implicit class GanttMessagesActionsMutableBuilder[Self <: GanttMessagesActions] (val x: Self) extends AnyVal {
+  extension [Self <: GanttMessagesActions](x: Self) {
     
-    @scala.inline
-    def setAddChild(value: String): Self = StObject.set(x, "addChild", value.asInstanceOf[js.Any])
+    inline def setAddChild(value: String): Self = StObject.set(x, "addChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddChildUndefined: Self = StObject.set(x, "addChild", js.undefined)
+    inline def setAddChildUndefined: Self = StObject.set(x, "addChild", js.undefined)
     
-    @scala.inline
-    def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
-    @scala.inline
-    def setInsertAfter(value: String): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
+    inline def setInsertAfter(value: String): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
+    inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
     
-    @scala.inline
-    def setInsertBefore(value: String): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+    inline def setInsertBefore(value: String): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+    inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
-    @scala.inline
-    def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    inline def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
   }
 }

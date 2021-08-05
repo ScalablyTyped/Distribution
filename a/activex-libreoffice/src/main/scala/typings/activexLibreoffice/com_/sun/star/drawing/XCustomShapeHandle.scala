@@ -29,8 +29,7 @@ trait XCustomShapeHandle
 }
 object XCustomShapeHandle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Position: Point,
     acquire: () => Unit,
     getPosition: () => Point,
@@ -42,16 +41,12 @@ object XCustomShapeHandle {
     __obj.asInstanceOf[XCustomShapeHandle]
   }
   
-  @scala.inline
-  implicit class XCustomShapeHandleMutableBuilder[Self <: XCustomShapeHandle] (val x: Self) extends AnyVal {
+  extension [Self <: XCustomShapeHandle](x: Self) {
     
-    @scala.inline
-    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetControllerPosition(value: Point => Unit): Self = StObject.set(x, "setControllerPosition", js.Any.fromFunction1(value))
+    inline def setSetControllerPosition(value: Point => Unit): Self = StObject.set(x, "setControllerPosition", js.Any.fromFunction1(value))
   }
 }

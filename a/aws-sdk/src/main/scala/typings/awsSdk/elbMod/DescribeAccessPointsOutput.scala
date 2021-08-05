@@ -18,28 +18,21 @@ trait DescribeAccessPointsOutput extends StObject {
 }
 object DescribeAccessPointsOutput {
   
-  @scala.inline
-  def apply(): DescribeAccessPointsOutput = {
+  inline def apply(): DescribeAccessPointsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccessPointsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeAccessPointsOutputMutableBuilder[Self <: DescribeAccessPointsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccessPointsOutput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerDescriptions(value: LoadBalancerDescriptions): Self = StObject.set(x, "LoadBalancerDescriptions", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerDescriptions(value: LoadBalancerDescriptions): Self = StObject.set(x, "LoadBalancerDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerDescriptionsUndefined: Self = StObject.set(x, "LoadBalancerDescriptions", js.undefined)
+    inline def setLoadBalancerDescriptionsUndefined: Self = StObject.set(x, "LoadBalancerDescriptions", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerDescriptionsVarargs(value: LoadBalancerDescription*): Self = StObject.set(x, "LoadBalancerDescriptions", js.Array(value :_*))
+    inline def setLoadBalancerDescriptionsVarargs(value: LoadBalancerDescription*): Self = StObject.set(x, "LoadBalancerDescriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

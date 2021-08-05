@@ -12,10 +12,8 @@ object mod {
     * The function `previewEmail` returns a `Promise` which resolves with a URL.
     * We automatically open the browser to this URL unless you specify options.open as false
     */
-  @scala.inline
-  def apply(message: typings.nodemailer.mailerMod.Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(message: typings.nodemailer.mailerMod.Options, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(message: typings.nodemailer.mailerMod.Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(message: typings.nodemailer.mailerMod.Options, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("preview-email", JSImport.Namespace)
   @js.native
@@ -29,20 +27,16 @@ object mod {
   }
   object OpenOptions {
     
-    @scala.inline
-    def apply(): OpenOptions = {
+    inline def apply(): OpenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenOptions]
     }
     
-    @scala.inline
-    implicit class OpenOptionsMutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenOptions](x: Self) {
       
-      @scala.inline
-      def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
   
@@ -81,44 +75,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOpen(value: OpenOptions | Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: OpenOptions | Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setUrlTransform(value: /* path */ String => String): Self = StObject.set(x, "urlTransform", js.Any.fromFunction1(value))
+      inline def setUrlTransform(value: /* path */ String => String): Self = StObject.set(x, "urlTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlTransformUndefined: Self = StObject.set(x, "urlTransform", js.undefined)
+      inline def setUrlTransformUndefined: Self = StObject.set(x, "urlTransform", js.undefined)
     }
   }
   

@@ -12,17 +12,14 @@ object anon {
   }
   object TYPE {
     
-    @scala.inline
-    def apply[K](__TYPE__ : K): TYPE[K] = {
+    inline def apply[K](__TYPE__ : K): TYPE[K] = {
       val __obj = js.Dynamic.literal(__TYPE__ = __TYPE__.asInstanceOf[js.Any])
       __obj.asInstanceOf[TYPE[K]]
     }
     
-    @scala.inline
-    implicit class TYPEMutableBuilder[Self <: TYPE[?], K] (val x: Self & TYPE[K]) extends AnyVal {
+    extension [Self <: TYPE[?], K](x: Self & TYPE[K]) {
       
-      @scala.inline
-      def set__TYPE__(value: K): Self = StObject.set(x, "__TYPE__", value.asInstanceOf[js.Any])
+      inline def set__TYPE__(value: K): Self = StObject.set(x, "__TYPE__", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,31 +18,23 @@ trait OnEnd extends StObject {
 }
 object OnEnd {
   
-  @scala.inline
-  def apply(): OnEnd = {
+  inline def apply(): OnEnd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnEnd]
   }
   
-  @scala.inline
-  implicit class OnEndMutableBuilder[Self <: OnEnd] (val x: Self) extends AnyVal {
+  extension [Self <: OnEnd](x: Self) {
     
-    @scala.inline
-    def setOnEnd(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
+    inline def setOnEnd(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
-    @scala.inline
-    def setOnStart(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+    inline def setOnStart(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
-    @scala.inline
-    def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
+    inline def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlineUndefined: Self = StObject.set(x, "online", js.undefined)
+    inline def setOnlineUndefined: Self = StObject.set(x, "online", js.undefined)
   }
 }

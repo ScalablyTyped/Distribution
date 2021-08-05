@@ -19,28 +19,21 @@ trait GitGetTreeEndpoint extends StObject {
 }
 object GitGetTreeEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, tree_sha: String): GitGetTreeEndpoint = {
+  inline def apply(owner: String, repo: String, tree_sha: String): GitGetTreeEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tree_sha = tree_sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitGetTreeEndpoint]
   }
   
-  @scala.inline
-  implicit class GitGetTreeEndpointMutableBuilder[Self <: GitGetTreeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GitGetTreeEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: String): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: String): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree_sha(value: String): Self = StObject.set(x, "tree_sha", value.asInstanceOf[js.Any])
+    inline def setTree_sha(value: String): Self = StObject.set(x, "tree_sha", value.asInstanceOf[js.Any])
   }
 }

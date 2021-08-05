@@ -14,19 +14,15 @@ trait PlotXrangePartialFillOptions extends StObject {
 }
 object PlotXrangePartialFillOptions {
   
-  @scala.inline
-  def apply(): PlotXrangePartialFillOptions = {
+  inline def apply(): PlotXrangePartialFillOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotXrangePartialFillOptions]
   }
   
-  @scala.inline
-  implicit class PlotXrangePartialFillOptionsMutableBuilder[Self <: PlotXrangePartialFillOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotXrangePartialFillOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

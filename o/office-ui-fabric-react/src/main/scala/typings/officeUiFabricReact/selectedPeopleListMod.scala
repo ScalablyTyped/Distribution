@@ -26,13 +26,13 @@ object selectedPeopleListMod {
   class SelectedPeopleList protected () extends BasePeopleSelectedItemsList {
     def this(basePickerProps: ISelectedPeopleProps) = this()
     
-    var _beginEditing: js.Any = js.native
+    /* private */ var _beginEditing: js.Any = js.native
     
-    var _completeEditing: js.Any = js.native
+    /* private */ var _completeEditing: js.Any = js.native
     
-    var _createMenuItems: js.Any = js.native
+    /* private */ var _createMenuItems: js.Any = js.native
     
-    var _renderItem: js.Any = js.native
+    /* private */ var _renderItem: js.Any = js.native
   }
   /* static members */
   object SelectedPeopleList {
@@ -44,8 +44,7 @@ object selectedPeopleListMod {
     @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/SelectedPeopleList", "SelectedPeopleList.defaultProps")
     @js.native
     def defaultProps: js.Any = js.native
-    @scala.inline
-    def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IExtendedPersonaProps
@@ -66,47 +65,34 @@ object selectedPeopleListMod {
   }
   object IExtendedPersonaProps {
     
-    @scala.inline
-    def apply(isValid: Boolean): IExtendedPersonaProps = {
+    inline def apply(isValid: Boolean): IExtendedPersonaProps = {
       val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[IExtendedPersonaProps]
     }
     
-    @scala.inline
-    implicit class IExtendedPersonaPropsMutableBuilder[Self <: IExtendedPersonaProps] (val x: Self) extends AnyVal {
+    extension [Self <: IExtendedPersonaProps](x: Self) {
       
-      @scala.inline
-      def setBlockRecipientRemoval(value: Boolean): Self = StObject.set(x, "blockRecipientRemoval", value.asInstanceOf[js.Any])
+      inline def setBlockRecipientRemoval(value: Boolean): Self = StObject.set(x, "blockRecipientRemoval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockRecipientRemovalUndefined: Self = StObject.set(x, "blockRecipientRemoval", js.undefined)
+      inline def setBlockRecipientRemovalUndefined: Self = StObject.set(x, "blockRecipientRemoval", js.undefined)
       
-      @scala.inline
-      def setCanExpand(value: Boolean): Self = StObject.set(x, "canExpand", value.asInstanceOf[js.Any])
+      inline def setCanExpand(value: Boolean): Self = StObject.set(x, "canExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanExpandUndefined: Self = StObject.set(x, "canExpand", js.undefined)
+      inline def setCanExpandUndefined: Self = StObject.set(x, "canExpand", js.undefined)
       
-      @scala.inline
-      def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
+      inline def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
+      inline def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setShouldBlockSelection(value: Boolean): Self = StObject.set(x, "shouldBlockSelection", value.asInstanceOf[js.Any])
+      inline def setShouldBlockSelection(value: Boolean): Self = StObject.set(x, "shouldBlockSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldBlockSelectionUndefined: Self = StObject.set(x, "shouldBlockSelection", js.undefined)
+      inline def setShouldBlockSelectionUndefined: Self = StObject.set(x, "shouldBlockSelection", js.undefined)
     }
   }
   
@@ -122,37 +108,29 @@ object selectedPeopleListMod {
   }
   object ISelectedPeopleItemProps {
     
-    @scala.inline
-    def apply(ISelectedItemProps: ISelectedItemProps[IExtendedPersonaProps]): ISelectedPeopleItemProps = {
+    inline def apply(ISelectedItemProps: ISelectedItemProps[IExtendedPersonaProps]): ISelectedPeopleItemProps = {
       val __obj = js.Dynamic.literal()
       js.Dynamic.global.Object.assign(__obj, ISelectedItemProps)
       __obj.asInstanceOf[ISelectedPeopleItemProps]
     }
     
-    @scala.inline
-    implicit class ISelectedPeopleItemPropsMutableBuilder[Self <: ISelectedPeopleItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectedPeopleItemProps](x: Self) {
       
-      @scala.inline
-      def setOnExpandItem(value: () => Unit): Self = StObject.set(x, "onExpandItem", js.Any.fromFunction0(value))
+      inline def setOnExpandItem(value: () => Unit): Self = StObject.set(x, "onExpandItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnExpandItemUndefined: Self = StObject.set(x, "onExpandItem", js.undefined)
+      inline def setOnExpandItemUndefined: Self = StObject.set(x, "onExpandItem", js.undefined)
       
-      @scala.inline
-      def setRenderPersonaCoin(
+      inline def setRenderPersonaCoin(
         value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "renderPersonaCoin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderPersonaCoinUndefined: Self = StObject.set(x, "renderPersonaCoin", js.undefined)
+      inline def setRenderPersonaCoinUndefined: Self = StObject.set(x, "renderPersonaCoin", js.undefined)
       
-      @scala.inline
-      def setRenderPrimaryText(
+      inline def setRenderPrimaryText(
         value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "renderPrimaryText", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderPrimaryTextUndefined: Self = StObject.set(x, "renderPrimaryText", js.undefined)
+      inline def setRenderPrimaryTextUndefined: Self = StObject.set(x, "renderPrimaryText", js.undefined)
     }
   }
   
@@ -176,56 +154,40 @@ object selectedPeopleListMod {
   }
   object ISelectedPeopleProps {
     
-    @scala.inline
-    def apply(): ISelectedPeopleProps = {
+    inline def apply(): ISelectedPeopleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISelectedPeopleProps]
     }
     
-    @scala.inline
-    implicit class ISelectedPeoplePropsMutableBuilder[Self <: ISelectedPeopleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectedPeopleProps](x: Self) {
       
-      @scala.inline
-      def setCopyMenuItemText(value: String): Self = StObject.set(x, "copyMenuItemText", value.asInstanceOf[js.Any])
+      inline def setCopyMenuItemText(value: String): Self = StObject.set(x, "copyMenuItemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyMenuItemTextUndefined: Self = StObject.set(x, "copyMenuItemText", js.undefined)
+      inline def setCopyMenuItemTextUndefined: Self = StObject.set(x, "copyMenuItemText", js.undefined)
       
-      @scala.inline
-      def setEditMenuItemText(value: String): Self = StObject.set(x, "editMenuItemText", value.asInstanceOf[js.Any])
+      inline def setEditMenuItemText(value: String): Self = StObject.set(x, "editMenuItemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditMenuItemTextUndefined: Self = StObject.set(x, "editMenuItemText", js.undefined)
+      inline def setEditMenuItemTextUndefined: Self = StObject.set(x, "editMenuItemText", js.undefined)
       
-      @scala.inline
-      def setFloatingPickerProps(value: IBaseFloatingPickerProps[IPersonaProps]): Self = StObject.set(x, "floatingPickerProps", value.asInstanceOf[js.Any])
+      inline def setFloatingPickerProps(value: IBaseFloatingPickerProps[IPersonaProps]): Self = StObject.set(x, "floatingPickerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatingPickerPropsUndefined: Self = StObject.set(x, "floatingPickerProps", js.undefined)
+      inline def setFloatingPickerPropsUndefined: Self = StObject.set(x, "floatingPickerProps", js.undefined)
       
-      @scala.inline
-      def setGetEditingItemText(value: /* item */ IExtendedPersonaProps => String): Self = StObject.set(x, "getEditingItemText", js.Any.fromFunction1(value))
+      inline def setGetEditingItemText(value: /* item */ IExtendedPersonaProps => String): Self = StObject.set(x, "getEditingItemText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEditingItemTextUndefined: Self = StObject.set(x, "getEditingItemText", js.undefined)
+      inline def setGetEditingItemTextUndefined: Self = StObject.set(x, "getEditingItemText", js.undefined)
       
-      @scala.inline
-      def setOnExpandGroup(value: /* item */ IExtendedPersonaProps => Unit): Self = StObject.set(x, "onExpandGroup", js.Any.fromFunction1(value))
+      inline def setOnExpandGroup(value: /* item */ IExtendedPersonaProps => Unit): Self = StObject.set(x, "onExpandGroup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandGroupUndefined: Self = StObject.set(x, "onExpandGroup", js.undefined)
+      inline def setOnExpandGroupUndefined: Self = StObject.set(x, "onExpandGroup", js.undefined)
       
-      @scala.inline
-      def setOnRenderFloatingPicker(value: ComponentType[IBaseFloatingPickerProps[IPersonaProps]]): Self = StObject.set(x, "onRenderFloatingPicker", value.asInstanceOf[js.Any])
+      inline def setOnRenderFloatingPicker(value: ComponentType[IBaseFloatingPickerProps[IPersonaProps]]): Self = StObject.set(x, "onRenderFloatingPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRenderFloatingPickerUndefined: Self = StObject.set(x, "onRenderFloatingPicker", js.undefined)
+      inline def setOnRenderFloatingPickerUndefined: Self = StObject.set(x, "onRenderFloatingPicker", js.undefined)
       
-      @scala.inline
-      def setRemoveMenuItemText(value: String): Self = StObject.set(x, "removeMenuItemText", value.asInstanceOf[js.Any])
+      inline def setRemoveMenuItemText(value: String): Self = StObject.set(x, "removeMenuItemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveMenuItemTextUndefined: Self = StObject.set(x, "removeMenuItemText", js.undefined)
+      inline def setRemoveMenuItemTextUndefined: Self = StObject.set(x, "removeMenuItemText", js.undefined)
     }
   }
 }

@@ -25,7 +25,7 @@ object readonlyRestClientMod {
       authTokenProvider_ : AuthTokenProvider
     ) = this()
     
-    var authTokenProvider_ : js.Any = js.native
+    /* private */ var authTokenProvider_ : js.Any = js.native
     
     /**
       * We don't actually need to track listens, except to prevent us calling an onComplete for a listen
@@ -33,14 +33,14 @@ object readonlyRestClientMod {
       *
       * @private {!Object.<string, !Object>}
       */
-    var listens_ : js.Any = js.native
+    /* private */ var listens_ : js.Any = js.native
     
     /** @private {function(...[*])} */
-    var log_ : js.Any = js.native
+    /* private */ var log_ : js.Any = js.native
     
-    var onDataUpdate_ : js.Any = js.native
+    /* private */ var onDataUpdate_ : js.Any = js.native
     
-    var repoInfo_ : js.Any = js.native
+    /* private */ var repoInfo_ : js.Any = js.native
     
     /**
       * Performs a REST request to the given path, with the provided query string parameters,
@@ -51,7 +51,7 @@ object readonlyRestClientMod {
       * @param {?function(?number, *=)} callback
       * @private
       */
-    var restRequest_ : js.Any = js.native
+    /* private */ var restRequest_ : js.Any = js.native
   }
   /* static members */
   object ReadonlyRestClient {
@@ -66,9 +66,7 @@ object readonlyRestClientMod {
       * @return {string}
       * @private
       */
-    @scala.inline
-    def getListenId_(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getListenId_")(query.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def getListenId_(query: Query, tag: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getListenId_")(query.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getListenId_(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getListenId_")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getListenId_(query: Query, tag: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getListenId_")(query.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

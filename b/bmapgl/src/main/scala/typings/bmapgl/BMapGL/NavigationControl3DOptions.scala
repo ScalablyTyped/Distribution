@@ -12,25 +12,19 @@ trait NavigationControl3DOptions extends StObject {
 }
 object NavigationControl3DOptions {
   
-  @scala.inline
-  def apply(): NavigationControl3DOptions = {
+  inline def apply(): NavigationControl3DOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationControl3DOptions]
   }
   
-  @scala.inline
-  implicit class NavigationControl3DOptionsMutableBuilder[Self <: NavigationControl3DOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationControl3DOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

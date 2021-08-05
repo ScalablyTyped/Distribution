@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPathFormat extends StObject
 object MsoPathFormat {
   
-  @scala.inline
-  def msoPathType1: `1` = 1.asInstanceOf[`1`]
+  inline def msoPathType1: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoPathType2: `2` = 2.asInstanceOf[`2`]
+  inline def msoPathType2: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoPathType3: `3` = 3.asInstanceOf[`3`]
+  inline def msoPathType3: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoPathType4: `4` = 4.asInstanceOf[`4`]
+  inline def msoPathType4: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoPathTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoPathTypeMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoPathTypeNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoPathTypeNone: `0` = 0.asInstanceOf[`0`]
 }

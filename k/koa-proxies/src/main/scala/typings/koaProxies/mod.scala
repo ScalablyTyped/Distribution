@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(context: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(context: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-proxies", JSImport.Namespace)
   @js.native
@@ -30,32 +29,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEvents(value: StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setLogs(value: Boolean): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: Boolean): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
+      inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
       
-      @scala.inline
-      def setRewrite(value: (/* url */ String, /* ctx */ DefaultContext) => String): Self = StObject.set(x, "rewrite", js.Any.fromFunction2(value))
+      inline def setRewrite(value: (/* url */ String, /* ctx */ DefaultContext) => String): Self = StObject.set(x, "rewrite", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
+      inline def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
     }
   }
 }

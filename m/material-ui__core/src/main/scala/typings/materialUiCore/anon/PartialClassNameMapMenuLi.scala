@@ -17,37 +17,27 @@ trait PartialClassNameMapMenuLi extends StObject {
 }
 object PartialClassNameMapMenuLi {
   
-  @scala.inline
-  def apply(): PartialClassNameMapMenuLi = {
+  inline def apply(): PartialClassNameMapMenuLi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapMenuLi]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapMenuLiMutableBuilder[Self <: PartialClassNameMapMenuLi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapMenuLi](x: Self) {
     
-    @scala.inline
-    def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
-    @scala.inline
-    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSubheader(value: String): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
+    inline def setSubheader(value: String): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
+    inline def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
   }
 }

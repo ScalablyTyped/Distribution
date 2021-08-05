@@ -18,8 +18,7 @@ object mod {
     def this(options: MapboxGLOptions) = this()
   }
   
-  @scala.inline
-  def mapboxGL(options: MapboxGLOptions): MapboxGL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapboxGL")(options.asInstanceOf[js.Any]).asInstanceOf[MapboxGL_]
+  inline def mapboxGL(options: MapboxGLOptions): MapboxGL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapboxGL")(options.asInstanceOf[js.Any]).asInstanceOf[MapboxGL_]
   
   trait MapboxGLOptions extends StObject {
     
@@ -29,20 +28,16 @@ object mod {
   }
   object MapboxGLOptions {
     
-    @scala.inline
-    def apply(accessToken: String, style: String): MapboxGLOptions = {
+    inline def apply(accessToken: String, style: String): MapboxGLOptions = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapboxGLOptions]
     }
     
-    @scala.inline
-    implicit class MapboxGLOptionsMutableBuilder[Self <: MapboxGLOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapboxGLOptions](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,25 +16,19 @@ trait ModeCallbacks extends StObject {
 }
 object ModeCallbacks {
   
-  @scala.inline
-  def apply(): ModeCallbacks = {
+  inline def apply(): ModeCallbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModeCallbacks]
   }
   
-  @scala.inline
-  implicit class ModeCallbacksMutableBuilder[Self <: ModeCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: ModeCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnColonbegin(value: (/* match */ RegExpMatchArray, /* response */ CallbackResponse) => Unit): Self = StObject.set(x, "on:begin", js.Any.fromFunction2(value))
+    inline def setOnColonbegin(value: (/* match */ RegExpMatchArray, /* response */ CallbackResponse) => Unit): Self = StObject.set(x, "on:begin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnColonbeginUndefined: Self = StObject.set(x, "on:begin", js.undefined)
+    inline def setOnColonbeginUndefined: Self = StObject.set(x, "on:begin", js.undefined)
     
-    @scala.inline
-    def setOnColonend(value: js.Function): Self = StObject.set(x, "on:end", value.asInstanceOf[js.Any])
+    inline def setOnColonend(value: js.Function): Self = StObject.set(x, "on:end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnColonendUndefined: Self = StObject.set(x, "on:end", js.undefined)
+    inline def setOnColonendUndefined: Self = StObject.set(x, "on:end", js.undefined)
   }
 }

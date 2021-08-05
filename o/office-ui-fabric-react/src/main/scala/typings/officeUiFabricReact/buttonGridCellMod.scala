@@ -20,15 +20,15 @@ object buttonGridCellMod {
       */
     def this(props: P, context: js.Any) = this()
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: js.Any = js.native
     
-    var _onMouseEnter: js.Any = js.native
+    /* private */ var _onMouseEnter: js.Any = js.native
     
-    var _onMouseLeave: js.Any = js.native
+    /* private */ var _onMouseLeave: js.Any = js.native
     
-    var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: js.Any = js.native
   }
   /* static members */
   object ButtonGridCell {
@@ -40,8 +40,7 @@ object buttonGridCellMod {
     @JSImport("office-ui-fabric-react/lib/utilities/ButtonGrid/ButtonGridCell", "ButtonGridCell.defaultProps")
     @js.native
     def defaultProps: Disabled = js.native
-    @scala.inline
-    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -57,7 +56,6 @@ object buttonGridCellMod {
     @JSImport("office-ui-fabric-react/lib/utilities/ButtonGrid/ButtonGridCell", "GridCell.defaultProps")
     @js.native
     def defaultProps: Disabled = js.native
-    @scala.inline
-    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

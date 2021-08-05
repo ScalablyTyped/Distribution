@@ -11,19 +11,15 @@ trait ConfigConnectorConfig extends StObject {
 }
 object ConfigConnectorConfig {
   
-  @scala.inline
-  def apply(): ConfigConnectorConfig = {
+  inline def apply(): ConfigConnectorConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigConnectorConfig]
   }
   
-  @scala.inline
-  implicit class ConfigConnectorConfigMutableBuilder[Self <: ConfigConnectorConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigConnectorConfig](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

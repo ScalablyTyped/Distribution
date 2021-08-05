@@ -17,8 +17,7 @@ object poolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pool[T /* <: Tensor3D | Tensor4D */](
+  inline def pool[T /* <: Tensor3D | Tensor4D */](
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
     poolingType: avg | max,

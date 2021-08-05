@@ -33,8 +33,7 @@ object animatorMod {
   }
   object IAnimator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animate: (SimpleSelection[js.Any], AttributeToAppliedProjector) => SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any]),
       totalTime: Double => Double
     ): IAnimator = {
@@ -42,16 +41,13 @@ object animatorMod {
       __obj.asInstanceOf[IAnimator]
     }
     
-    @scala.inline
-    implicit class IAnimatorMutableBuilder[Self <: IAnimator] (val x: Self) extends AnyVal {
+    extension [Self <: IAnimator](x: Self) {
       
-      @scala.inline
-      def setAnimate(
+      inline def setAnimate(
         value: (SimpleSelection[js.Any], AttributeToAppliedProjector) => SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any])
       ): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTotalTime(value: Double => Double): Self = StObject.set(x, "totalTime", js.Any.fromFunction1(value))
+      inline def setTotalTime(value: Double => Double): Self = StObject.set(x, "totalTime", js.Any.fromFunction1(value))
     }
   }
 }

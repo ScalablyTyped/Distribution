@@ -18,25 +18,19 @@ trait EnumerationValue extends StObject {
 }
 object EnumerationValue {
   
-  @scala.inline
-  def apply(value: Value): EnumerationValue = {
+  inline def apply(value: Value): EnumerationValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumerationValue]
   }
   
-  @scala.inline
-  implicit class EnumerationValueMutableBuilder[Self <: EnumerationValue] (val x: Self) extends AnyVal {
+  extension [Self <: EnumerationValue](x: Self) {
     
-    @scala.inline
-    def setSynonyms(value: SynonymList): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: SynonymList): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
+    inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    @scala.inline
-    def setSynonymsVarargs(value: Value*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: Value*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

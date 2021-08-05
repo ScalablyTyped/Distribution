@@ -44,8 +44,7 @@ trait ChartFill
 }
 object ChartFill {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     context: RequestContext,
     isNullObject: Boolean,
@@ -56,19 +55,14 @@ object ChartFill {
     __obj.asInstanceOf[ChartFill]
   }
   
-  @scala.inline
-  implicit class ChartFillMutableBuilder[Self <: ChartFill] (val x: Self) extends AnyVal {
+  extension [Self <: ChartFill](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSolidColor(value: String => Unit): Self = StObject.set(x, "setSolidColor", js.Any.fromFunction1(value))
+    inline def setSetSolidColor(value: String => Unit): Self = StObject.set(x, "setSolidColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => StringDictionary[String]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => StringDictionary[String]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

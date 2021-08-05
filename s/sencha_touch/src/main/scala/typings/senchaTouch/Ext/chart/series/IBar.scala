@@ -9,8 +9,7 @@ trait IBar
      with IStackedCartesian
 object IBar {
   
-  @scala.inline
-  def apply(): IBar = {
+  inline def apply(): IBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBar]
   }

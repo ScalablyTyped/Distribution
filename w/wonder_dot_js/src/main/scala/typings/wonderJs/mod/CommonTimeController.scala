@@ -15,6 +15,5 @@ object CommonTimeController {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.commonTimeControllerMod.CommonTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.commonTimeControllerMod.CommonTimeController]
+  inline def create(): typings.wonderJs.commonTimeControllerMod.CommonTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.commonTimeControllerMod.CommonTimeController]
 }

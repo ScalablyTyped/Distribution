@@ -16,14 +16,14 @@ object platformMod {
   class Platform protected () extends StObject {
     def this(doc: js.Any, zone: NgZone) = this()
     
-    var _readyPromise: js.Any = js.native
+    /* private */ var _readyPromise: js.Any = js.native
     
     /**
       * @hidden
       */
     var backButton: BackButtonEmitter = js.native
     
-    var doc: js.Any = js.native
+    /* private */ var doc: js.Any = js.native
     
     /**
       * Get the query string parameter
@@ -195,7 +195,7 @@ object platformMod {
       */
     def width(): js.Any = js.native
     
-    var win: js.Any = js.native
+    /* private */ var win: js.Any = js.native
   }
   
   @js.native

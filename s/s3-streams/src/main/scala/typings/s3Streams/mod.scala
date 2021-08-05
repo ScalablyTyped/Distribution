@@ -38,20 +38,16 @@ object mod {
   }
   object StreamOptions {
     
-    @scala.inline
-    def apply(): StreamOptions = {
+    inline def apply(): StreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StreamOptions]
     }
     
-    @scala.inline
-    implicit class StreamOptionsMutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamOptions](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     }
   }
 }

@@ -37,54 +37,45 @@ object DataTransfer {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Removes all data from the Clipboard. */
     /* static member */
-    @scala.inline
-    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     /** Adds the content to the Clipboard and releases the DataPackage object from the source app. This method allows the content to remain available after the application shuts down. */
     /* static member */
-    @scala.inline
-    def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+    inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
     /**
       * Gets the current content that is stored in the clipboard object.
       * @return Contains the content of the Clipboard.
       */
     /* static member */
-    @scala.inline
-    def getContent(): typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackageView = ^.asInstanceOf[js.Dynamic].applyDynamic("getContent")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackageView]
+    inline def getContent(): typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackageView = ^.asInstanceOf[js.Dynamic].applyDynamic("getContent")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackageView]
     
     /** Occurs when the data stored in the Clipboard changes. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard.oncontentchanged")
     @js.native
     def oncontentchanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def oncontentchanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
+    inline def oncontentchanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the current content that is stored in the clipboard object.
       * @param content Contains the content of the clipboard. If NULL, the clipboard is emptied.
       */
     /* static member */
-    @scala.inline
-    def setContent(content: typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContent")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setContent(content: typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContent")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /** Contains the data that a user wants to exchange with another app. */
@@ -433,13 +424,11 @@ object DataTransfer {
       * @return The DataTransferManager object associated with the current window.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataTransferManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataTransferManager]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataTransferManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataTransferManager]
     
     /** Programmatically initiates the user interface for sharing content with another app. */
     /* static member */
-    @scala.inline
-    def showShareUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareUI")().asInstanceOf[Unit]
+    inline def showShareUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareUI")().asInstanceOf[Unit]
   }
   
   /** Responsible for formatting HTML content that you want to share or add to the Clipboard. Also allows you to get HTML fragments from the content. */
@@ -460,8 +449,7 @@ object DataTransfer {
       * @return A string representing the formatted HTML.
       */
     /* static member */
-    @scala.inline
-    def createHtmlFormat(htmlFragment: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlFormat")(htmlFragment.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createHtmlFormat(htmlFragment: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlFormat")(htmlFragment.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets a string that represents an HTML fragment.
@@ -469,8 +457,7 @@ object DataTransfer {
       * @return An HTML fragment based on the formatted HTML.
       */
     /* static member */
-    @scala.inline
-    def getStaticFragment(htmlFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStaticFragment")(htmlFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getStaticFragment(htmlFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStaticFragment")(htmlFormat.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Contains info about the action that a target app completed during a paste operation. */
@@ -547,8 +534,7 @@ object DataTransfer {
       * @return The sharing token to provide to the target app as part of a Uri activation.
       */
     /* static member */
-    @scala.inline
-    def addFile(file: IStorageFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addFile")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def addFile(file: IStorageFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addFile")(file.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets a file shared by another app by providing the sharing token received from the source app.
@@ -556,16 +542,14 @@ object DataTransfer {
       * @return A wrapper object that contains the shared file.
       */
     /* static member */
-    @scala.inline
-    def redeemTokenForFileAsync(token: String): IPromiseWithIAsyncOperation[StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("redeemTokenForFileAsync")(token.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[StorageFile]]
+    inline def redeemTokenForFileAsync(token: String): IPromiseWithIAsyncOperation[StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("redeemTokenForFileAsync")(token.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[StorageFile]]
     
     /**
       * Revokes an existing sharing token.
       * @param token The sharing token to revoke.
       */
     /* static member */
-    @scala.inline
-    def removeFile(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFile")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeFile(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFile")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /** Contains static properties that return string values. Each string corresponds to a known format ID. Use this class to avoid errors in using string constants to specify data formats. */
@@ -585,64 +569,56 @@ object DataTransfer {
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.applicationLink")
     @js.native
     def applicationLink: String = js.native
-    @scala.inline
-    def applicationLink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applicationLink")(x.asInstanceOf[js.Any])
+    inline def applicationLink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applicationLink")(x.asInstanceOf[js.Any])
     
     /** A read-only property that returns the format ID string value corresponding to the Bitmap format. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.bitmap")
     @js.native
     def bitmap: String = js.native
-    @scala.inline
-    def bitmap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmap")(x.asInstanceOf[js.Any])
+    inline def bitmap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmap")(x.asInstanceOf[js.Any])
     
     /** A read-only property that returns the format ID string value corresponding to the HTML format. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.html")
     @js.native
     def html: String = js.native
-    @scala.inline
-    def html_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
+    inline def html_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
     
     /** A read-only property that returns the format ID string value corresponding to the Rich Text Format (RTF). */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.rtf")
     @js.native
     def rtf: String = js.native
-    @scala.inline
-    def rtf_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtf")(x.asInstanceOf[js.Any])
+    inline def rtf_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtf")(x.asInstanceOf[js.Any])
     
     /** A read-only property that returns the format ID string value corresponding to the StorageItem format. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.storageItems")
     @js.native
     def storageItems: String = js.native
-    @scala.inline
-    def storageItems_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageItems")(x.asInstanceOf[js.Any])
+    inline def storageItems_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageItems")(x.asInstanceOf[js.Any])
     
     /** A read-only property that returns the format ID string value corresponding to the Text format. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.text")
     @js.native
     def text: String = js.native
-    @scala.inline
-    def text_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+    inline def text_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
     
     /** A read-only property that returns the format ID string value corresponding to the Uniform Resource Identifier (URI) format. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.uri")
     @js.native
     def uri: String = js.native
-    @scala.inline
-    def uri_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uri")(x.asInstanceOf[js.Any])
+    inline def uri_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uri")(x.asInstanceOf[js.Any])
     
     /** A read-only property that returns the format ID string value corresponding to the web link format. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.webLink")
     @js.native
     def webLink: String = js.native
-    @scala.inline
-    def webLink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("webLink")(x.asInstanceOf[js.Any])
+    inline def webLink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("webLink")(x.asInstanceOf[js.Any])
   }
   
   /** Contains information about the target app the user chose to share content with. To get this object, you must handle the TargetApplicationChosen event. */

@@ -16,20 +16,16 @@ object mod {
     }
     object ConfigOptions {
       
-      @scala.inline
-      def apply(): ConfigOptions = {
+      inline def apply(): ConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      @scala.inline
-      implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConfigOptions](x: Self) {
         
-        @scala.inline
-        def setAwsConfig(value: Config_): Self = StObject.set(x, "awsConfig", value.asInstanceOf[js.Any])
+        inline def setAwsConfig(value: Config_): Self = StObject.set(x, "awsConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAwsConfigUndefined: Self = StObject.set(x, "awsConfig", js.undefined)
+        inline def setAwsConfigUndefined: Self = StObject.set(x, "awsConfig", js.undefined)
       }
     }
   }

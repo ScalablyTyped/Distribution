@@ -16,46 +16,33 @@ trait Derivatives extends StObject {
 }
 object Derivatives {
   
-  @scala.inline
-  def apply(): Derivatives = {
+  inline def apply(): Derivatives = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Derivatives]
   }
   
-  @scala.inline
-  implicit class DerivativesMutableBuilder[Self <: Derivatives] (val x: Self) extends AnyVal {
+  extension [Self <: Derivatives](x: Self) {
     
-    @scala.inline
-    def setDerivatives(value: js.Array[Source]): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
+    inline def setDerivatives(value: js.Array[Source]): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDerivativesUndefined: Self = StObject.set(x, "derivatives", js.undefined)
+    inline def setDerivativesUndefined: Self = StObject.set(x, "derivatives", js.undefined)
     
-    @scala.inline
-    def setDerivativesVarargs(value: Source*): Self = StObject.set(x, "derivatives", js.Array(value :_*))
+    inline def setDerivativesVarargs(value: Source*): Self = StObject.set(x, "derivatives", js.Array(value :_*))
     
-    @scala.inline
-    def setExamples(value: js.Array[Source]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: js.Array[Source]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    @scala.inline
-    def setExamplesVarargs(value: Source*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: Source*): Self = StObject.set(x, "examples", js.Array(value :_*))
     
-    @scala.inline
-    def setSenses(value: js.Array[Conjugations]): Self = StObject.set(x, "senses", value.asInstanceOf[js.Any])
+    inline def setSenses(value: js.Array[Conjugations]): Self = StObject.set(x, "senses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensesUndefined: Self = StObject.set(x, "senses", js.undefined)
+    inline def setSensesUndefined: Self = StObject.set(x, "senses", js.undefined)
     
-    @scala.inline
-    def setSensesVarargs(value: Conjugations*): Self = StObject.set(x, "senses", js.Array(value :_*))
+    inline def setSensesVarargs(value: Conjugations*): Self = StObject.set(x, "senses", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: Attribution): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Attribution): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

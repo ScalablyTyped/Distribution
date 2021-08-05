@@ -20,8 +20,7 @@ trait CandidateInferenceInfo extends StObject {
 }
 object CandidateInferenceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _inferredTypeAfterFixing: PullTypeSymbol,
     addCandidate: PullTypeSymbol => Unit,
     fixTypeParameter: (PullTypeResolver, PullTypeResolutionContext) => Unit,
@@ -33,28 +32,20 @@ object CandidateInferenceInfo {
     __obj.asInstanceOf[CandidateInferenceInfo]
   }
   
-  @scala.inline
-  implicit class CandidateInferenceInfoMutableBuilder[Self <: CandidateInferenceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CandidateInferenceInfo](x: Self) {
     
-    @scala.inline
-    def setAddCandidate(value: PullTypeSymbol => Unit): Self = StObject.set(x, "addCandidate", js.Any.fromFunction1(value))
+    inline def setAddCandidate(value: PullTypeSymbol => Unit): Self = StObject.set(x, "addCandidate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFixTypeParameter(value: (PullTypeResolver, PullTypeResolutionContext) => Unit): Self = StObject.set(x, "fixTypeParameter", js.Any.fromFunction2(value))
+    inline def setFixTypeParameter(value: (PullTypeResolver, PullTypeResolutionContext) => Unit): Self = StObject.set(x, "fixTypeParameter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInferenceCandidates(value: js.Array[PullTypeSymbol]): Self = StObject.set(x, "inferenceCandidates", value.asInstanceOf[js.Any])
+    inline def setInferenceCandidates(value: js.Array[PullTypeSymbol]): Self = StObject.set(x, "inferenceCandidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferenceCandidatesVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "inferenceCandidates", js.Array(value :_*))
+    inline def setInferenceCandidatesVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "inferenceCandidates", js.Array(value :_*))
     
-    @scala.inline
-    def setIsFixed(value: () => Boolean): Self = StObject.set(x, "isFixed", js.Any.fromFunction0(value))
+    inline def setIsFixed(value: () => Boolean): Self = StObject.set(x, "isFixed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTypeParameter(value: PullTypeParameterSymbol): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
+    inline def setTypeParameter(value: PullTypeParameterSymbol): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_inferredTypeAfterFixing(value: PullTypeSymbol): Self = StObject.set(x, "_inferredTypeAfterFixing", value.asInstanceOf[js.Any])
+    inline def set_inferredTypeAfterFixing(value: PullTypeSymbol): Self = StObject.set(x, "_inferredTypeAfterFixing", value.asInstanceOf[js.Any])
   }
 }

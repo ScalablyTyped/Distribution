@@ -14,8 +14,7 @@ trait HasuraAggregateQueryResponse[K /* <: String */, T /* <: Record[String, js.
 }
 object HasuraAggregateQueryResponse {
   
-  @scala.inline
-  def apply[K /* <: String */, T /* <: Record[String, js.Any] */](
+  inline def apply[K /* <: String */, T /* <: Record[String, js.Any] */](
     data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: hasura.hasura.HasuraAggregateResult<T>}
     */ typings.hasura.hasuraStrings.HasuraAggregateQueryResponse & TopLevel[js.Any]
@@ -24,11 +23,9 @@ object HasuraAggregateQueryResponse {
     __obj.asInstanceOf[HasuraAggregateQueryResponse[K, T]]
   }
   
-  @scala.inline
-  implicit class HasuraAggregateQueryResponseMutableBuilder[Self <: HasuraAggregateQueryResponse[?, ?], K /* <: String */, T /* <: Record[String, js.Any] */] (val x: Self & (HasuraAggregateQueryResponse[K, T])) extends AnyVal {
+  extension [Self <: HasuraAggregateQueryResponse[?, ?], K /* <: String */, T /* <: Record[String, js.Any] */](x: Self & (HasuraAggregateQueryResponse[K, T])) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in K ]: hasura.hasura.HasuraAggregateResult<T>}
       */ typings.hasura.hasuraStrings.HasuraAggregateQueryResponse & TopLevel[js.Any]

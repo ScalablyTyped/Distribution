@@ -16,20 +16,16 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: String, stack: String): Message = {
+    inline def apply(message: String, stack: String): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,23 +38,18 @@ object anon {
   }
   object PickProjectConfigrootDirt {
     
-    @scala.inline
-    def apply(rootDir: Path, testMatch: js.Array[Glob]): PickProjectConfigrootDirt = {
+    inline def apply(rootDir: Path, testMatch: js.Array[Glob]): PickProjectConfigrootDirt = {
       val __obj = js.Dynamic.literal(rootDir = rootDir.asInstanceOf[js.Any], testMatch = testMatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickProjectConfigrootDirt]
     }
     
-    @scala.inline
-    implicit class PickProjectConfigrootDirtMutableBuilder[Self <: PickProjectConfigrootDirt] (val x: Self) extends AnyVal {
+    extension [Self <: PickProjectConfigrootDirt](x: Self) {
       
-      @scala.inline
-      def setRootDir(value: Path): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+      inline def setRootDir(value: Path): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestMatch(value: js.Array[Glob]): Self = StObject.set(x, "testMatch", value.asInstanceOf[js.Any])
+      inline def setTestMatch(value: js.Array[Glob]): Self = StObject.set(x, "testMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestMatchVarargs(value: Glob*): Self = StObject.set(x, "testMatch", js.Array(value :_*))
+      inline def setTestMatchVarargs(value: Glob*): Self = StObject.set(x, "testMatch", js.Array(value :_*))
     }
   }
 }

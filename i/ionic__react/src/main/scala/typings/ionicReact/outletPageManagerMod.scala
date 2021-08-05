@@ -60,35 +60,26 @@ object outletPageManagerMod {
   }
   object OutletPageManagerProps {
     
-    @scala.inline
-    def apply(StackManager: js.Any): OutletPageManagerProps = {
+    inline def apply(StackManager: js.Any): OutletPageManagerProps = {
       val __obj = js.Dynamic.literal(StackManager = StackManager.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutletPageManagerProps]
     }
     
-    @scala.inline
-    implicit class OutletPageManagerPropsMutableBuilder[Self <: OutletPageManagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: OutletPageManagerProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setForwardedRef(value: RefObject[HTMLIonRouterOutletElement]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+      inline def setForwardedRef(value: RefObject[HTMLIonRouterOutletElement]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+      inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
       
-      @scala.inline
-      def setRouteInfo(value: RouteInfo[js.Any]): Self = StObject.set(x, "routeInfo", value.asInstanceOf[js.Any])
+      inline def setRouteInfo(value: RouteInfo[js.Any]): Self = StObject.set(x, "routeInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteInfoUndefined: Self = StObject.set(x, "routeInfo", js.undefined)
+      inline def setRouteInfoUndefined: Self = StObject.set(x, "routeInfo", js.undefined)
       
-      @scala.inline
-      def setStackManager(value: js.Any): Self = StObject.set(x, "StackManager", value.asInstanceOf[js.Any])
+      inline def setStackManager(value: js.Any): Self = StObject.set(x, "StackManager", value.asInstanceOf[js.Any])
     }
   }
 }

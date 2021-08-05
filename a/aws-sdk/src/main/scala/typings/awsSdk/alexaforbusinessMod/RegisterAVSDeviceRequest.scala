@@ -38,37 +38,27 @@ trait RegisterAVSDeviceRequest extends StObject {
 }
 object RegisterAVSDeviceRequest {
   
-  @scala.inline
-  def apply(AmazonId: AmazonId, ClientId: ClientId, ProductId: ProductId, UserCode: UserCode): RegisterAVSDeviceRequest = {
+  inline def apply(AmazonId: AmazonId, ClientId: ClientId, ProductId: ProductId, UserCode: UserCode): RegisterAVSDeviceRequest = {
     val __obj = js.Dynamic.literal(AmazonId = AmazonId.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], ProductId = ProductId.asInstanceOf[js.Any], UserCode = UserCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterAVSDeviceRequest]
   }
   
-  @scala.inline
-  implicit class RegisterAVSDeviceRequestMutableBuilder[Self <: RegisterAVSDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterAVSDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setAmazonId(value: AmazonId): Self = StObject.set(x, "AmazonId", value.asInstanceOf[js.Any])
+    inline def setAmazonId(value: AmazonId): Self = StObject.set(x, "AmazonId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceSerialNumber(value: DeviceSerialNumberForAVS): Self = StObject.set(x, "DeviceSerialNumber", value.asInstanceOf[js.Any])
+    inline def setDeviceSerialNumber(value: DeviceSerialNumberForAVS): Self = StObject.set(x, "DeviceSerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceSerialNumberUndefined: Self = StObject.set(x, "DeviceSerialNumber", js.undefined)
+    inline def setDeviceSerialNumberUndefined: Self = StObject.set(x, "DeviceSerialNumber", js.undefined)
     
-    @scala.inline
-    def setProductId(value: ProductId): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: ProductId): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
-    @scala.inline
-    def setUserCode(value: UserCode): Self = StObject.set(x, "UserCode", value.asInstanceOf[js.Any])
+    inline def setUserCode(value: UserCode): Self = StObject.set(x, "UserCode", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dagGetMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): APIWithExtraOptions[
+  inline def apply(clientOptions: ClientOptions): APIWithExtraOptions[
     js.Function2[
       /* ipfsPath */ typings.cids.mod.^, 
       /* options */ js.UndefOr[

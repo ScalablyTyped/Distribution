@@ -16,14 +16,12 @@ object fetchQueryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fetchQuery[TQuery /* <: OperationType */](environment: Environment, query: GraphQLTaggedNode, variables: VariablesOf[TQuery]): Observable[
+  inline def fetchQuery[TQuery /* <: OperationType */](environment: Environment, query: GraphQLTaggedNode, variables: VariablesOf[TQuery]): Observable[
     /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], query.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Observable[
     /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ]]
-  @scala.inline
-  def fetchQuery[TQuery /* <: OperationType */](
+  inline def fetchQuery[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
     variables: VariablesOf[TQuery],

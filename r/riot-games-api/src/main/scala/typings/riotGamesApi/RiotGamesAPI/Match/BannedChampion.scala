@@ -12,19 +12,15 @@ trait BannedChampion extends StObject {
 }
 object BannedChampion {
   
-  @scala.inline
-  def apply(championId: Double, pickTurn: Double): BannedChampion = {
+  inline def apply(championId: Double, pickTurn: Double): BannedChampion = {
     val __obj = js.Dynamic.literal(championId = championId.asInstanceOf[js.Any], pickTurn = pickTurn.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannedChampion]
   }
   
-  @scala.inline
-  implicit class BannedChampionMutableBuilder[Self <: BannedChampion] (val x: Self) extends AnyVal {
+  extension [Self <: BannedChampion](x: Self) {
     
-    @scala.inline
-    def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
+    inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickTurn(value: Double): Self = StObject.set(x, "pickTurn", value.asInstanceOf[js.Any])
+    inline def setPickTurn(value: Double): Self = StObject.set(x, "pickTurn", value.asInstanceOf[js.Any])
   }
 }

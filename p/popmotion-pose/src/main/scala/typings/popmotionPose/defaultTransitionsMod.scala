@@ -23,6 +23,5 @@ object defaultTransitionsMod {
     ]
   ] = js.native
   
-  @scala.inline
-  def just(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def just(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

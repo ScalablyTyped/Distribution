@@ -16,31 +16,23 @@ trait IUpdateDocumentRequest extends StObject {
 }
 object IUpdateDocumentRequest {
   
-  @scala.inline
-  def apply(): IUpdateDocumentRequest = {
+  inline def apply(): IUpdateDocumentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpdateDocumentRequest]
   }
   
-  @scala.inline
-  implicit class IUpdateDocumentRequestMutableBuilder[Self <: IUpdateDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDocument(value: IDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: IDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentNull: Self = StObject.set(x, "document", null)
+    inline def setDocumentNull: Self = StObject.set(x, "document", null)
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

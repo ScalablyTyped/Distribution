@@ -24,8 +24,7 @@ trait Autokeep extends StObject {
 }
 object Autokeep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auto_keep: Boolean,
     error_rate: Boolean,
     event_count: Boolean,
@@ -39,31 +38,22 @@ object Autokeep {
     __obj.asInstanceOf[Autokeep]
   }
   
-  @scala.inline
-  implicit class AutokeepMutableBuilder[Self <: Autokeep] (val x: Self) extends AnyVal {
+  extension [Self <: Autokeep](x: Self) {
     
-    @scala.inline
-    def setAuto_keep(value: Boolean): Self = StObject.set(x, "auto_keep", value.asInstanceOf[js.Any])
+    inline def setAuto_keep(value: Boolean): Self = StObject.set(x, "auto_keep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_rate(value: Boolean): Self = StObject.set(x, "error_rate", value.asInstanceOf[js.Any])
+    inline def setError_rate(value: Boolean): Self = StObject.set(x, "error_rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_count(value: Boolean): Self = StObject.set(x, "event_count", value.asInstanceOf[js.Any])
+    inline def setEvent_count(value: Boolean): Self = StObject.set(x, "event_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefailure(value: Boolean): Self = StObject.set(x, "prefailure", value.asInstanceOf[js.Any])
+    inline def setPrefailure(value: Boolean): Self = StObject.set(x, "prefailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_online(value: Boolean): Self = StObject.set(x, "updated_online", value.asInstanceOf[js.Any])
+    inline def setUpdated_online(value: Boolean): Self = StObject.set(x, "updated_online", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

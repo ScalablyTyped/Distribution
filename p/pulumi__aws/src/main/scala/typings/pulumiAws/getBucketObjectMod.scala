@@ -12,10 +12,8 @@ object getBucketObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBucketObject(args: GetBucketObjectArgs): js.Promise[GetBucketObjectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectResult]]
-  @scala.inline
-  def getBucketObject(args: GetBucketObjectArgs, opts: InvokeOptions): js.Promise[GetBucketObjectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectResult]]
+  inline def getBucketObject(args: GetBucketObjectArgs): js.Promise[GetBucketObjectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectResult]]
+  inline def getBucketObject(args: GetBucketObjectArgs, opts: InvokeOptions): js.Promise[GetBucketObjectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObject")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectResult]]
   
   trait GetBucketObjectArgs extends StObject {
     
@@ -43,38 +41,28 @@ object getBucketObjectMod {
   }
   object GetBucketObjectArgs {
     
-    @scala.inline
-    def apply(bucket: String, key: String): GetBucketObjectArgs = {
+    inline def apply(bucket: String, key: String): GetBucketObjectArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketObjectArgs]
     }
     
-    @scala.inline
-    implicit class GetBucketObjectArgsMutableBuilder[Self <: GetBucketObjectArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketObjectArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
     }
   }
   
@@ -198,8 +186,7 @@ object getBucketObjectMod {
   }
   object GetBucketObjectResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: String,
       bucket: String,
       cacheControl: String,
@@ -229,86 +216,59 @@ object getBucketObjectMod {
       __obj.asInstanceOf[GetBucketObjectResult]
     }
     
-    @scala.inline
-    implicit class GetBucketObjectResultMutableBuilder[Self <: GetBucketObjectResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketObjectResult](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+      inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+      inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectLockLegalHoldStatus(value: String): Self = StObject.set(x, "objectLockLegalHoldStatus", value.asInstanceOf[js.Any])
+      inline def setObjectLockLegalHoldStatus(value: String): Self = StObject.set(x, "objectLockLegalHoldStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectLockMode(value: String): Self = StObject.set(x, "objectLockMode", value.asInstanceOf[js.Any])
+      inline def setObjectLockMode(value: String): Self = StObject.set(x, "objectLockMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectLockRetainUntilDate(value: String): Self = StObject.set(x, "objectLockRetainUntilDate", value.asInstanceOf[js.Any])
+      inline def setObjectLockRetainUntilDate(value: String): Self = StObject.set(x, "objectLockRetainUntilDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryption(value: String): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: String): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSseKmsKeyId(value: String): Self = StObject.set(x, "sseKmsKeyId", value.asInstanceOf[js.Any])
+      inline def setSseKmsKeyId(value: String): Self = StObject.set(x, "sseKmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteRedirectLocation(value: String): Self = StObject.set(x, "websiteRedirectLocation", value.asInstanceOf[js.Any])
+      inline def setWebsiteRedirectLocation(value: String): Self = StObject.set(x, "websiteRedirectLocation", value.asInstanceOf[js.Any])
     }
   }
 }

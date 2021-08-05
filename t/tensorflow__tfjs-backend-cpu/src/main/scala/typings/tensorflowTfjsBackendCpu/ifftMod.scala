@@ -13,8 +13,7 @@ object ifftMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ifft(args: InputsIFFTInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("ifft")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def ifft(args: InputsIFFTInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("ifft")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/IFFT", "ifftConfig")
   @js.native

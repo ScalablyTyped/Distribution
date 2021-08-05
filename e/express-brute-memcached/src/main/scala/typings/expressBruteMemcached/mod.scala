@@ -115,8 +115,7 @@ object mod {
   }
   object MemcachedStoreOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       algorithm: String,
       failOverServers: js.Array[js.Any],
       failures: Double,
@@ -137,56 +136,39 @@ object mod {
       __obj.asInstanceOf[MemcachedStoreOptions]
     }
     
-    @scala.inline
-    implicit class MemcachedStoreOptionsMutableBuilder[Self <: MemcachedStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MemcachedStoreOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOverServers(value: js.Array[js.Any]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
+      inline def setFailOverServers(value: js.Array[js.Any]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOverServersVarargs(value: js.Any*): Self = StObject.set(x, "failOverServers", js.Array(value :_*))
+      inline def setFailOverServersVarargs(value: js.Any*): Self = StObject.set(x, "failOverServers", js.Array(value :_*))
       
-      @scala.inline
-      def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCompression(value: Boolean): Self = StObject.set(x, "keyCompression", value.asInstanceOf[js.Any])
+      inline def setKeyCompression(value: Boolean): Self = StObject.set(x, "keyCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxExpiration(value: Double): Self = StObject.set(x, "maxExpiration", value.asInstanceOf[js.Any])
+      inline def setMaxExpiration(value: Double): Self = StObject.set(x, "maxExpiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeySize(value: Double): Self = StObject.set(x, "maxKeySize", value.asInstanceOf[js.Any])
+      inline def setMaxKeySize(value: Double): Self = StObject.set(x, "maxKeySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
+      inline def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnect(value: Double): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+      inline def setReconnect(value: Double): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
 }

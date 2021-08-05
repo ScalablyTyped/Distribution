@@ -94,88 +94,61 @@ trait INxDimension extends StObject {
 }
 object INxDimension {
   
-  @scala.inline
-  def apply(qDef: INxInlineDimensionDef): INxDimension = {
+  inline def apply(qDef: INxInlineDimensionDef): INxDimension = {
     val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxDimension]
   }
   
-  @scala.inline
-  implicit class INxDimensionMutableBuilder[Self <: INxDimension] (val x: Self) extends AnyVal {
+  extension [Self <: INxDimension](x: Self) {
     
-    @scala.inline
-    def setQAttributeDimensions(value: js.Array[INxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
+    inline def setQAttributeDimensions(value: js.Array[INxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttributeDimensionsUndefined: Self = StObject.set(x, "qAttributeDimensions", js.undefined)
+    inline def setQAttributeDimensionsUndefined: Self = StObject.set(x, "qAttributeDimensions", js.undefined)
     
-    @scala.inline
-    def setQAttributeDimensionsVarargs(value: INxAttrDimDef*): Self = StObject.set(x, "qAttributeDimensions", js.Array(value :_*))
+    inline def setQAttributeDimensionsVarargs(value: INxAttrDimDef*): Self = StObject.set(x, "qAttributeDimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setQAttributeExpressions(value: js.Array[INxAttrExprDef]): Self = StObject.set(x, "qAttributeExpressions", value.asInstanceOf[js.Any])
+    inline def setQAttributeExpressions(value: js.Array[INxAttrExprDef]): Self = StObject.set(x, "qAttributeExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttributeExpressionsUndefined: Self = StObject.set(x, "qAttributeExpressions", js.undefined)
+    inline def setQAttributeExpressionsUndefined: Self = StObject.set(x, "qAttributeExpressions", js.undefined)
     
-    @scala.inline
-    def setQAttributeExpressionsVarargs(value: INxAttrExprDef*): Self = StObject.set(x, "qAttributeExpressions", js.Array(value :_*))
+    inline def setQAttributeExpressionsVarargs(value: INxAttrExprDef*): Self = StObject.set(x, "qAttributeExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setQCalcCond(value: IValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
+    inline def setQCalcCond(value: IValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCalcCondUndefined: Self = StObject.set(x, "qCalcCond", js.undefined)
+    inline def setQCalcCondUndefined: Self = StObject.set(x, "qCalcCond", js.undefined)
     
-    @scala.inline
-    def setQDef(value: INxInlineDimensionDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
+    inline def setQDef(value: INxInlineDimensionDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIncludeElemValue(value: Boolean): Self = StObject.set(x, "qIncludeElemValue", value.asInstanceOf[js.Any])
+    inline def setQIncludeElemValue(value: Boolean): Self = StObject.set(x, "qIncludeElemValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIncludeElemValueUndefined: Self = StObject.set(x, "qIncludeElemValue", js.undefined)
+    inline def setQIncludeElemValueUndefined: Self = StObject.set(x, "qIncludeElemValue", js.undefined)
     
-    @scala.inline
-    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
+    inline def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLibraryIdUndefined: Self = StObject.set(x, "qLibraryId", js.undefined)
+    inline def setQLibraryIdUndefined: Self = StObject.set(x, "qLibraryId", js.undefined)
     
-    @scala.inline
-    def setQNullSuppression(value: Boolean): Self = StObject.set(x, "qNullSuppression", value.asInstanceOf[js.Any])
+    inline def setQNullSuppression(value: Boolean): Self = StObject.set(x, "qNullSuppression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNullSuppressionUndefined: Self = StObject.set(x, "qNullSuppression", js.undefined)
+    inline def setQNullSuppressionUndefined: Self = StObject.set(x, "qNullSuppression", js.undefined)
     
-    @scala.inline
-    def setQOtherLabel(value: IStringExpressionContainer): Self = StObject.set(x, "qOtherLabel", value.asInstanceOf[js.Any])
+    inline def setQOtherLabel(value: IStringExpressionContainer): Self = StObject.set(x, "qOtherLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherLabelUndefined: Self = StObject.set(x, "qOtherLabel", js.undefined)
+    inline def setQOtherLabelUndefined: Self = StObject.set(x, "qOtherLabel", js.undefined)
     
-    @scala.inline
-    def setQOtherTotalSpec(value: IOtherTotalSpecProp): Self = StObject.set(x, "qOtherTotalSpec", value.asInstanceOf[js.Any])
+    inline def setQOtherTotalSpec(value: IOtherTotalSpecProp): Self = StObject.set(x, "qOtherTotalSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOtherTotalSpecUndefined: Self = StObject.set(x, "qOtherTotalSpec", js.undefined)
+    inline def setQOtherTotalSpecUndefined: Self = StObject.set(x, "qOtherTotalSpec", js.undefined)
     
-    @scala.inline
-    def setQShowAll(value: Boolean): Self = StObject.set(x, "qShowAll", value.asInstanceOf[js.Any])
+    inline def setQShowAll(value: Boolean): Self = StObject.set(x, "qShowAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQShowAllUndefined: Self = StObject.set(x, "qShowAll", js.undefined)
+    inline def setQShowAllUndefined: Self = StObject.set(x, "qShowAll", js.undefined)
     
-    @scala.inline
-    def setQShowTotal(value: Boolean): Self = StObject.set(x, "qShowTotal", value.asInstanceOf[js.Any])
+    inline def setQShowTotal(value: Boolean): Self = StObject.set(x, "qShowTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQShowTotalUndefined: Self = StObject.set(x, "qShowTotal", js.undefined)
+    inline def setQShowTotalUndefined: Self = StObject.set(x, "qShowTotal", js.undefined)
     
-    @scala.inline
-    def setQTotalLabel(value: IStringExpressionContainer): Self = StObject.set(x, "qTotalLabel", value.asInstanceOf[js.Any])
+    inline def setQTotalLabel(value: IStringExpressionContainer): Self = StObject.set(x, "qTotalLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTotalLabelUndefined: Self = StObject.set(x, "qTotalLabel", js.undefined)
+    inline def setQTotalLabelUndefined: Self = StObject.set(x, "qTotalLabel", js.undefined)
   }
 }

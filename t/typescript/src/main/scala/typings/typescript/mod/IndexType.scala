@@ -12,8 +12,7 @@ trait IndexType
 }
 object IndexType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -45,10 +44,8 @@ object IndexType {
     __obj.asInstanceOf[IndexType]
   }
   
-  @scala.inline
-  implicit class IndexTypeMutableBuilder[Self <: IndexType] (val x: Self) extends AnyVal {
+  extension [Self <: IndexType](x: Self) {
     
-    @scala.inline
-    def setType(value: InstantiableType | UnionOrIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: InstantiableType | UnionOrIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsAdvancedParallelChannelOptions extends StObject {
 }
 object StockToolsGuiDefinitionsAdvancedParallelChannelOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsAdvancedParallelChannelOptions = {
+  inline def apply(): StockToolsGuiDefinitionsAdvancedParallelChannelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsAdvancedParallelChannelOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsAdvancedParallelChannelOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsAdvancedParallelChannelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsAdvancedParallelChannelOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

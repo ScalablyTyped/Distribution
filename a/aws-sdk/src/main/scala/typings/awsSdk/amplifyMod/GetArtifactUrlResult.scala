@@ -18,19 +18,15 @@ trait GetArtifactUrlResult extends StObject {
 }
 object GetArtifactUrlResult {
   
-  @scala.inline
-  def apply(artifactId: ArtifactId, artifactUrl: ArtifactUrl): GetArtifactUrlResult = {
+  inline def apply(artifactId: ArtifactId, artifactUrl: ArtifactUrl): GetArtifactUrlResult = {
     val __obj = js.Dynamic.literal(artifactId = artifactId.asInstanceOf[js.Any], artifactUrl = artifactUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetArtifactUrlResult]
   }
   
-  @scala.inline
-  implicit class GetArtifactUrlResultMutableBuilder[Self <: GetArtifactUrlResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetArtifactUrlResult](x: Self) {
     
-    @scala.inline
-    def setArtifactId(value: ArtifactId): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
+    inline def setArtifactId(value: ArtifactId): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactUrl(value: ArtifactUrl): Self = StObject.set(x, "artifactUrl", value.asInstanceOf[js.Any])
+    inline def setArtifactUrl(value: ArtifactUrl): Self = StObject.set(x, "artifactUrl", value.asInstanceOf[js.Any])
   }
 }

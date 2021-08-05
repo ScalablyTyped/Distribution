@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait popoverLinkLinkOptions extends StObject
 object popoverLinkLinkOptions {
   
-  @scala.inline
-  def linkDialogShow: typings.summernote.summernoteStrings.linkDialogShow = "linkDialogShow".asInstanceOf[typings.summernote.summernoteStrings.linkDialogShow]
+  inline def linkDialogShow: typings.summernote.summernoteStrings.linkDialogShow = "linkDialogShow".asInstanceOf[typings.summernote.summernoteStrings.linkDialogShow]
   
-  @scala.inline
-  def unlink: typings.summernote.summernoteStrings.unlink = "unlink".asInstanceOf[typings.summernote.summernoteStrings.unlink]
+  inline def unlink: typings.summernote.summernoteStrings.unlink = "unlink".asInstanceOf[typings.summernote.summernoteStrings.unlink]
 }

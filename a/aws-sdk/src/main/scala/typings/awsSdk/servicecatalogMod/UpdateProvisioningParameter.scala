@@ -23,31 +23,23 @@ trait UpdateProvisioningParameter extends StObject {
 }
 object UpdateProvisioningParameter {
   
-  @scala.inline
-  def apply(): UpdateProvisioningParameter = {
+  inline def apply(): UpdateProvisioningParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateProvisioningParameter]
   }
   
-  @scala.inline
-  implicit class UpdateProvisioningParameterMutableBuilder[Self <: UpdateProvisioningParameter] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProvisioningParameter](x: Self) {
     
-    @scala.inline
-    def setKey(value: ParameterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ParameterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setUsePreviousValue(value: UsePreviousValue): Self = StObject.set(x, "UsePreviousValue", value.asInstanceOf[js.Any])
+    inline def setUsePreviousValue(value: UsePreviousValue): Self = StObject.set(x, "UsePreviousValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePreviousValueUndefined: Self = StObject.set(x, "UsePreviousValue", js.undefined)
+    inline def setUsePreviousValueUndefined: Self = StObject.set(x, "UsePreviousValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: ParameterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ParameterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

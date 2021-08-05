@@ -15,22 +15,17 @@ trait CreateTimeSeriesRequest extends StObject {
 }
 object CreateTimeSeriesRequest {
   
-  @scala.inline
-  def apply(): CreateTimeSeriesRequest = {
+  inline def apply(): CreateTimeSeriesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTimeSeriesRequest]
   }
   
-  @scala.inline
-  implicit class CreateTimeSeriesRequestMutableBuilder[Self <: CreateTimeSeriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTimeSeriesRequest](x: Self) {
     
-    @scala.inline
-    def setTimeSeries(value: js.Array[TimeSeries]): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
+    inline def setTimeSeries(value: js.Array[TimeSeries]): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
+    inline def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesVarargs(value: TimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value :_*))
+    inline def setTimeSeriesVarargs(value: TimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value :_*))
   }
 }

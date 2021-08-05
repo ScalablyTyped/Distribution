@@ -16,20 +16,16 @@ trait ThirdPartyModule
 }
 object ThirdPartyModule {
   
-  @scala.inline
-  def apply(init: i18n => Unit): ThirdPartyModule = {
+  inline def apply(init: i18n => Unit): ThirdPartyModule = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     __obj.updateDynamic("type")("3rdParty")
     __obj.asInstanceOf[ThirdPartyModule]
   }
   
-  @scala.inline
-  implicit class ThirdPartyModuleMutableBuilder[Self <: ThirdPartyModule] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyModule](x: Self) {
     
-    @scala.inline
-    def setInit(value: i18n => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: i18n => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: `3rdParty`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `3rdParty`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

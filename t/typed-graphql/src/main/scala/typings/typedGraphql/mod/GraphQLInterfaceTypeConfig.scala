@@ -16,36 +16,27 @@ trait GraphQLInterfaceTypeConfig extends StObject {
 }
 object GraphQLInterfaceTypeConfig {
   
-  @scala.inline
-  def apply(fields: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap, name: String): GraphQLInterfaceTypeConfig = {
+  inline def apply(fields: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap, name: String): GraphQLInterfaceTypeConfig = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLInterfaceTypeConfig]
   }
   
-  @scala.inline
-  implicit class GraphQLInterfaceTypeConfigMutableBuilder[Self <: GraphQLInterfaceTypeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLInterfaceTypeConfig](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFields(value: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsFunction0(value: () => GraphQLFieldConfigMap): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
+    inline def setFieldsFunction0(value: () => GraphQLFieldConfigMap): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveType(
+    inline def setResolveType(
       value: (/* value */ js.Any, /* context */ js.Any, /* info */ GraphQLResolveInfo) => GraphQLObjectType
     ): Self = StObject.set(x, "resolveType", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveTypeUndefined: Self = StObject.set(x, "resolveType", js.undefined)
+    inline def setResolveTypeUndefined: Self = StObject.set(x, "resolveType", js.undefined)
   }
 }

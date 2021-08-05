@@ -14,19 +14,15 @@ trait TransitioningViewProps
 }
 object TransitioningViewProps {
   
-  @scala.inline
-  def apply(): TransitioningViewProps = {
+  inline def apply(): TransitioningViewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitioningViewProps]
   }
   
-  @scala.inline
-  implicit class TransitioningViewPropsMutableBuilder[Self <: TransitioningViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: TransitioningViewProps](x: Self) {
     
-    @scala.inline
-    def setTransition(value: ReactNode): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: ReactNode): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

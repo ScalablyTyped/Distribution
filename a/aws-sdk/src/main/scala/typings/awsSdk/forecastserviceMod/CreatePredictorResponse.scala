@@ -13,19 +13,15 @@ trait CreatePredictorResponse extends StObject {
 }
 object CreatePredictorResponse {
   
-  @scala.inline
-  def apply(): CreatePredictorResponse = {
+  inline def apply(): CreatePredictorResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePredictorResponse]
   }
   
-  @scala.inline
-  implicit class CreatePredictorResponseMutableBuilder[Self <: CreatePredictorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePredictorResponse](x: Self) {
     
-    @scala.inline
-    def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
+    inline def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictorArnUndefined: Self = StObject.set(x, "PredictorArn", js.undefined)
+    inline def setPredictorArnUndefined: Self = StObject.set(x, "PredictorArn", js.undefined)
   }
 }

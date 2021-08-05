@@ -8,41 +8,33 @@ object loremIpsumStrings {
   
   @js.native
   sealed trait html extends StObject
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait paragraph extends StObject
-  @scala.inline
-  def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
+  inline def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   
   @js.native
   sealed trait paragraphs extends StObject
-  @scala.inline
-  def paragraphs: paragraphs = "paragraphs".asInstanceOf[paragraphs]
+  inline def paragraphs: paragraphs = "paragraphs".asInstanceOf[paragraphs]
   
   @js.native
   sealed trait plain extends StObject
-  @scala.inline
-  def plain: plain = "plain".asInstanceOf[plain]
+  inline def plain: plain = "plain".asInstanceOf[plain]
   
   @js.native
   sealed trait sentence extends StObject
-  @scala.inline
-  def sentence: sentence = "sentence".asInstanceOf[sentence]
+  inline def sentence: sentence = "sentence".asInstanceOf[sentence]
   
   @js.native
   sealed trait sentences extends StObject
-  @scala.inline
-  def sentences: sentences = "sentences".asInstanceOf[sentences]
+  inline def sentences: sentences = "sentences".asInstanceOf[sentences]
   
   @js.native
   sealed trait word extends StObject
-  @scala.inline
-  def word: word = "word".asInstanceOf[word]
+  inline def word: word = "word".asInstanceOf[word]
   
   @js.native
   sealed trait words extends StObject
-  @scala.inline
-  def words: words = "words".asInstanceOf[words]
+  inline def words: words = "words".asInstanceOf[words]
 }

@@ -17,22 +17,17 @@ trait AnimationFrame extends StObject {
 }
 object AnimationFrame {
   
-  @scala.inline
-  def apply(): AnimationFrame = {
+  inline def apply(): AnimationFrame = {
     val __obj = js.Dynamic.literal(animationFrame = "animationFrame", immediate = "immediate", timeout = "timeout")
     __obj.asInstanceOf[AnimationFrame]
   }
   
-  @scala.inline
-  implicit class AnimationFrameMutableBuilder[Self <: AnimationFrame] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationFrame](x: Self) {
     
-    @scala.inline
-    def setAnimationFrame(value: animationFrame): Self = StObject.set(x, "animationFrame", value.asInstanceOf[js.Any])
+    inline def setAnimationFrame(value: animationFrame): Self = StObject.set(x, "animationFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmediate(value: immediate): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+    inline def setImmediate(value: immediate): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: timeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: timeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

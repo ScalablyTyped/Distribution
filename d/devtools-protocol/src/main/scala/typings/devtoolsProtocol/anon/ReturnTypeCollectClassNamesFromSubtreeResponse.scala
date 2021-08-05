@@ -14,8 +14,7 @@ trait ReturnTypeCollectClassNamesFromSubtreeResponse extends StObject {
 }
 object ReturnTypeCollectClassNamesFromSubtreeResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[CollectClassNamesFromSubtreeRequest],
     returnType: CollectClassNamesFromSubtreeResponse
   ): ReturnTypeCollectClassNamesFromSubtreeResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeCollectClassNamesFromSubtreeResponse {
     __obj.asInstanceOf[ReturnTypeCollectClassNamesFromSubtreeResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeCollectClassNamesFromSubtreeResponseMutableBuilder[Self <: ReturnTypeCollectClassNamesFromSubtreeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeCollectClassNamesFromSubtreeResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[CollectClassNamesFromSubtreeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[CollectClassNamesFromSubtreeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: CollectClassNamesFromSubtreeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: CollectClassNamesFromSubtreeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: CollectClassNamesFromSubtreeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: CollectClassNamesFromSubtreeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetConnectionInput extends StObject {
 }
 object GetConnectionInput {
   
-  @scala.inline
-  def apply(ConnectionArn: ConnectionArn): GetConnectionInput = {
+  inline def apply(ConnectionArn: ConnectionArn): GetConnectionInput = {
     val __obj = js.Dynamic.literal(ConnectionArn = ConnectionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionInput]
   }
   
-  @scala.inline
-  implicit class GetConnectionInputMutableBuilder[Self <: GetConnectionInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectionInput](x: Self) {
     
-    @scala.inline
-    def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
+    inline def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
   }
 }

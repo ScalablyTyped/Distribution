@@ -24,8 +24,7 @@ trait ClassDeclaration
 }
 object ClassDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -57,31 +56,22 @@ object ClassDeclaration {
     __obj.asInstanceOf[ClassDeclaration]
   }
   
-  @scala.inline
-  implicit class ClassDeclarationMutableBuilder[Self <: ClassDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: ClassDeclaration](x: Self) {
     
-    @scala.inline
-    def setClassElements(value: ISyntaxList2): Self = StObject.set(x, "classElements", value.asInstanceOf[js.Any])
+    inline def setClassElements(value: ISyntaxList2): Self = StObject.set(x, "classElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseBraceToken(value: ASTSpan): Self = StObject.set(x, "closeBraceToken", value.asInstanceOf[js.Any])
+    inline def setCloseBraceToken(value: ASTSpan): Self = StObject.set(x, "closeBraceToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeritageClauses(value: ISyntaxList2): Self = StObject.set(x, "heritageClauses", value.asInstanceOf[js.Any])
+    inline def setHeritageClauses(value: ISyntaxList2): Self = StObject.set(x, "heritageClauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setStructuralEquals(value: (ClassDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ClassDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTypeParameterList(value: TypeParameterList): Self = StObject.set(x, "typeParameterList", value.asInstanceOf[js.Any])
+    inline def setTypeParameterList(value: TypeParameterList): Self = StObject.set(x, "typeParameterList", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait SceneViewHitTestResult
 }
 object SceneViewHitTestResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     ground: HitTestResultGround,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,19 +46,14 @@ object SceneViewHitTestResult {
     __obj.asInstanceOf[SceneViewHitTestResult]
   }
   
-  @scala.inline
-  implicit class SceneViewHitTestResultMutableBuilder[Self <: SceneViewHitTestResult] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewHitTestResult](x: Self) {
     
-    @scala.inline
-    def setGround(value: HitTestResultGround): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
+    inline def setGround(value: HitTestResultGround): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[SceneViewHitTestResultResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SceneViewHitTestResultResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SceneViewHitTestResultResults*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SceneViewHitTestResultResults*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setScreenPoint(value: SceneViewScreenPoint | MouseEvent): Self = StObject.set(x, "screenPoint", value.asInstanceOf[js.Any])
+    inline def setScreenPoint(value: SceneViewScreenPoint | MouseEvent): Self = StObject.set(x, "screenPoint", value.asInstanceOf[js.Any])
   }
 }

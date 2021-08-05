@@ -43,43 +43,31 @@ trait CodeScanningUploadSarifEndpoint extends StObject {
 }
 object CodeScanningUploadSarifEndpoint {
   
-  @scala.inline
-  def apply(commit_sha: String, owner: String, ref: String, repo: String, sarif: String, tool_name: String): CodeScanningUploadSarifEndpoint = {
+  inline def apply(commit_sha: String, owner: String, ref: String, repo: String, sarif: String, tool_name: String): CodeScanningUploadSarifEndpoint = {
     val __obj = js.Dynamic.literal(commit_sha = commit_sha.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sarif = sarif.asInstanceOf[js.Any], tool_name = tool_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeScanningUploadSarifEndpoint]
   }
   
-  @scala.inline
-  implicit class CodeScanningUploadSarifEndpointMutableBuilder[Self <: CodeScanningUploadSarifEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CodeScanningUploadSarifEndpoint](x: Self) {
     
-    @scala.inline
-    def setCheckout_uri(value: String): Self = StObject.set(x, "checkout_uri", value.asInstanceOf[js.Any])
+    inline def setCheckout_uri(value: String): Self = StObject.set(x, "checkout_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckout_uriUndefined: Self = StObject.set(x, "checkout_uri", js.undefined)
+    inline def setCheckout_uriUndefined: Self = StObject.set(x, "checkout_uri", js.undefined)
     
-    @scala.inline
-    def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
+    inline def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSarif(value: String): Self = StObject.set(x, "sarif", value.asInstanceOf[js.Any])
+    inline def setSarif(value: String): Self = StObject.set(x, "sarif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
+    inline def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
+    inline def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
     
-    @scala.inline
-    def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
+    inline def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
   }
 }

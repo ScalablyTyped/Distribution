@@ -18,19 +18,15 @@ trait DeleteSizeConstraintSetRequest extends StObject {
 }
 object DeleteSizeConstraintSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, SizeConstraintSetId: ResourceId): DeleteSizeConstraintSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, SizeConstraintSetId: ResourceId): DeleteSizeConstraintSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSizeConstraintSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSizeConstraintSetRequestMutableBuilder[Self <: DeleteSizeConstraintSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSizeConstraintSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
   }
 }

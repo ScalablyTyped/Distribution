@@ -5,20 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def HASURA_ROLE_ADMIN: /* "admin" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HASURA_ROLE_ADMIN").asInstanceOf[/* "admin" */ java.lang.String]
+inline def HASURA_ROLE_ADMIN: /* "admin" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HASURA_ROLE_ADMIN").asInstanceOf[/* "admin" */ java.lang.String]
 
-@scala.inline
-def XHasuraAdminSecret: /* "x-hasura-admin-secret" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraAdminSecret").asInstanceOf[/* "x-hasura-admin-secret" */ java.lang.String]
+inline def XHasuraAdminSecret: /* "x-hasura-admin-secret" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraAdminSecret").asInstanceOf[/* "x-hasura-admin-secret" */ java.lang.String]
 
-@scala.inline
-def XHasuraClientName: /* "hasura-client-name" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraClientName").asInstanceOf[/* "hasura-client-name" */ java.lang.String]
+inline def XHasuraClientName: /* "hasura-client-name" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraClientName").asInstanceOf[/* "hasura-client-name" */ java.lang.String]
 
-@scala.inline
-def XHasuraRole: /* "x-hasura-role" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraRole").asInstanceOf[/* "x-hasura-role" */ java.lang.String]
+inline def XHasuraRole: /* "x-hasura-role" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraRole").asInstanceOf[/* "x-hasura-role" */ java.lang.String]
 
-@scala.inline
-def XHasuraUserID: /* "x-hasura-user-id" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraUserID").asInstanceOf[/* "x-hasura-user-id" */ java.lang.String]
+inline def XHasuraUserID: /* "x-hasura-user-id" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraUserID").asInstanceOf[/* "x-hasura-user-id" */ java.lang.String]
 
 type Aggregate[T] = T & typings.hasura.anon.Aggregate
 

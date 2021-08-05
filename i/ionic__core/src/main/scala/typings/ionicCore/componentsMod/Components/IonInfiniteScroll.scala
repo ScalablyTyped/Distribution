@@ -30,25 +30,19 @@ trait IonInfiniteScroll extends StObject {
 }
 object IonInfiniteScroll {
   
-  @scala.inline
-  def apply(complete: () => js.Promise[Unit], disabled: Boolean, position: top | bottom, threshold: String): IonInfiniteScroll = {
+  inline def apply(complete: () => js.Promise[Unit], disabled: Boolean, position: top | bottom, threshold: String): IonInfiniteScroll = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), disabled = disabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonInfiniteScroll]
   }
   
-  @scala.inline
-  implicit class IonInfiniteScrollMutableBuilder[Self <: IonInfiniteScroll] (val x: Self) extends AnyVal {
+  extension [Self <: IonInfiniteScroll](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => js.Promise[Unit]): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => js.Promise[Unit]): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

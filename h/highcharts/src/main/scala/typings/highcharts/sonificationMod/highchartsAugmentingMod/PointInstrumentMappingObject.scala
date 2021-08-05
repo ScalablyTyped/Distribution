@@ -75,8 +75,7 @@ trait PointInstrumentMappingObject extends StObject {
 }
 object PointInstrumentMappingObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double | String | js.Function,
     frequency: Double | String | js.Function,
     volume: Double | String | js.Function
@@ -85,22 +84,16 @@ object PointInstrumentMappingObject {
     __obj.asInstanceOf[PointInstrumentMappingObject]
   }
   
-  @scala.inline
-  implicit class PointInstrumentMappingObjectMutableBuilder[Self <: PointInstrumentMappingObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointInstrumentMappingObject](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double | String | js.Function): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double | String | js.Function): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequency(value: Double | String | js.Function): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double | String | js.Function): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPan(value: Double | String | js.Function): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: Double | String | js.Function): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
-    @scala.inline
-    def setVolume(value: Double | String | js.Function): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double | String | js.Function): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

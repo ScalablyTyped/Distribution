@@ -13,10 +13,10 @@ object twilsockupstreamerrorMod {
     def this(status: Double, description: String) = this()
     def this(status: Double, description: String, body: js.Any) = this()
     
-    val body: js.Any = js.native
+    /* private */ val body: js.Any = js.native
     
-    val description: js.Any = js.native
+    /* private */ val description: js.Any = js.native
     
-    val status: js.Any = js.native
+    /* private */ val status: js.Any = js.native
   }
 }

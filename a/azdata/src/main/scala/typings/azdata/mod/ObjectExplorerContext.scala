@@ -23,19 +23,15 @@ trait ObjectExplorerContext
 }
 object ObjectExplorerContext {
   
-  @scala.inline
-  def apply(connectionProfile: IConnectionProfile, isConnectionNode: Boolean, nodeInfo: NodeInfo): ObjectExplorerContext = {
+  inline def apply(connectionProfile: IConnectionProfile, isConnectionNode: Boolean, nodeInfo: NodeInfo): ObjectExplorerContext = {
     val __obj = js.Dynamic.literal(connectionProfile = connectionProfile.asInstanceOf[js.Any], isConnectionNode = isConnectionNode.asInstanceOf[js.Any], nodeInfo = nodeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectExplorerContext]
   }
   
-  @scala.inline
-  implicit class ObjectExplorerContextMutableBuilder[Self <: ObjectExplorerContext] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExplorerContext](x: Self) {
     
-    @scala.inline
-    def setIsConnectionNode(value: Boolean): Self = StObject.set(x, "isConnectionNode", value.asInstanceOf[js.Any])
+    inline def setIsConnectionNode(value: Boolean): Self = StObject.set(x, "isConnectionNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeInfo(value: NodeInfo): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    inline def setNodeInfo(value: NodeInfo): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
   }
 }

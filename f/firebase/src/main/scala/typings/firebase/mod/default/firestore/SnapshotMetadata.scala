@@ -35,8 +35,7 @@ trait SnapshotMetadata extends StObject {
 }
 object SnapshotMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromCache: Boolean,
     hasPendingWrites: Boolean,
     isEqual: typings.firebase.mod.firebase.firestore.SnapshotMetadata => Boolean
@@ -45,16 +44,12 @@ object SnapshotMetadata {
     __obj.asInstanceOf[SnapshotMetadata]
   }
   
-  @scala.inline
-  implicit class SnapshotMetadataMutableBuilder[Self <: SnapshotMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotMetadata](x: Self) {
     
-    @scala.inline
-    def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+    inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPendingWrites(value: Boolean): Self = StObject.set(x, "hasPendingWrites", value.asInstanceOf[js.Any])
+    inline def setHasPendingWrites(value: Boolean): Self = StObject.set(x, "hasPendingWrites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEqual(value: typings.firebase.mod.firebase.firestore.SnapshotMetadata => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: typings.firebase.mod.firebase.firestore.SnapshotMetadata => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
   }
 }

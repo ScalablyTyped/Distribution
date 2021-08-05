@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataType extends StObject
 object DataType {
   
-  @scala.inline
-  def add: typings.wechatMiniprogram.wechatMiniprogramStrings.add = "add".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.add]
+  inline def add: typings.wechatMiniprogram.wechatMiniprogramStrings.add = "add".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.add]
   
-  @scala.inline
-  def init: typings.wechatMiniprogram.wechatMiniprogramStrings.init = "init".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.init]
+  inline def init: typings.wechatMiniprogram.wechatMiniprogramStrings.init = "init".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.init]
   
-  @scala.inline
-  def limit: typings.wechatMiniprogram.wechatMiniprogramStrings.limit = "limit".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.limit]
+  inline def limit: typings.wechatMiniprogram.wechatMiniprogramStrings.limit = "limit".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.limit]
   
-  @scala.inline
-  def remove: typings.wechatMiniprogram.wechatMiniprogramStrings.remove = "remove".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.remove]
+  inline def remove: typings.wechatMiniprogram.wechatMiniprogramStrings.remove = "remove".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.remove]
   
-  @scala.inline
-  def replace: typings.wechatMiniprogram.wechatMiniprogramStrings.replace = "replace".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.replace]
+  inline def replace: typings.wechatMiniprogram.wechatMiniprogramStrings.replace = "replace".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.replace]
   
-  @scala.inline
-  def update: typings.wechatMiniprogram.wechatMiniprogramStrings.update = "update".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.update]
+  inline def update: typings.wechatMiniprogram.wechatMiniprogramStrings.update = "update".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.update]
 }

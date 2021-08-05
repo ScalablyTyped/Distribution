@@ -21,31 +21,23 @@ trait EnvVar extends StObject {
 }
 object EnvVar {
   
-  @scala.inline
-  def apply(): EnvVar = {
+  inline def apply(): EnvVar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvVar]
   }
   
-  @scala.inline
-  implicit class EnvVarMutableBuilder[Self <: EnvVar] (val x: Self) extends AnyVal {
+  extension [Self <: EnvVar](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFrom(value: EnvVarSource): Self = StObject.set(x, "valueFrom", value.asInstanceOf[js.Any])
+    inline def setValueFrom(value: EnvVarSource): Self = StObject.set(x, "valueFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFromUndefined: Self = StObject.set(x, "valueFrom", js.undefined)
+    inline def setValueFromUndefined: Self = StObject.set(x, "valueFrom", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

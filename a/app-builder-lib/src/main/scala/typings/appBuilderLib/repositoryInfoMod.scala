@@ -12,12 +12,8 @@ object repositoryInfoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRepositoryInfo(projectDir: String): js.Promise[SourceRepositoryInfo | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
-  @scala.inline
-  def getRepositoryInfo(projectDir: String, metadata: Unit, devMetadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], devMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
-  @scala.inline
-  def getRepositoryInfo(projectDir: String, metadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
-  @scala.inline
-  def getRepositoryInfo(projectDir: String, metadata: Metadata, devMetadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], devMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
+  inline def getRepositoryInfo(projectDir: String): js.Promise[SourceRepositoryInfo | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
+  inline def getRepositoryInfo(projectDir: String, metadata: Unit, devMetadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], devMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
+  inline def getRepositoryInfo(projectDir: String, metadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
+  inline def getRepositoryInfo(projectDir: String, metadata: Metadata, devMetadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryInfo")(projectDir.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], devMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceRepositoryInfo | Null]]
 }

@@ -41,10 +41,8 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply[ValuesType /* <: js.Any */](textColumns: String): js.Array[StringDictionary[ValuesType]] = ^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any]).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
-  @scala.inline
-  def apply[ValuesType /* <: js.Any */](textColumns: String, options: Options[ValuesType]): js.Array[StringDictionary[ValuesType]] = (^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
+  inline def apply[ValuesType /* <: js.Any */](textColumns: String): js.Array[StringDictionary[ValuesType]] = ^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any]).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
+  inline def apply[ValuesType /* <: js.Any */](textColumns: String, options: Options[ValuesType]): js.Array[StringDictionary[ValuesType]] = (^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
   
   @JSImport("parse-columns", JSImport.Namespace)
   @js.native
@@ -79,37 +77,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[ValuesType /* <: js.Any */](): Options[ValuesType] = {
+    inline def apply[ValuesType /* <: js.Any */](): Options[ValuesType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[ValuesType]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], ValuesType /* <: js.Any */] (val x: Self & Options[ValuesType]) extends AnyVal {
+    extension [Self <: Options[?], ValuesType /* <: js.Any */](x: Self & Options[ValuesType]) {
       
-      @scala.inline
-      def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (/* element */ String, /* header */ String, /* columnIndex */ Double, /* rowIndex */ Double) => ValuesType
       ): Self = StObject.set(x, "transform", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
 }

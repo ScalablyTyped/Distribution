@@ -11,19 +11,15 @@ trait GoogleCloudMlV1ExplainRequest extends StObject {
 }
 object GoogleCloudMlV1ExplainRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ExplainRequest = {
+  inline def apply(): GoogleCloudMlV1ExplainRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ExplainRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ExplainRequestMutableBuilder[Self <: GoogleCloudMlV1ExplainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ExplainRequest](x: Self) {
     
-    @scala.inline
-    def setHttpBody(value: GoogleApiHttpBody): Self = StObject.set(x, "httpBody", value.asInstanceOf[js.Any])
+    inline def setHttpBody(value: GoogleApiHttpBody): Self = StObject.set(x, "httpBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpBodyUndefined: Self = StObject.set(x, "httpBody", js.undefined)
+    inline def setHttpBodyUndefined: Self = StObject.set(x, "httpBody", js.undefined)
   }
 }

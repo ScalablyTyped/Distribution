@@ -35,25 +35,19 @@ trait Fit extends StObject {
 }
 object Fit {
   
-  @scala.inline
-  def apply(): Fit = {
+  inline def apply(): Fit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fit]
   }
   
-  @scala.inline
-  implicit class FitMutableBuilder[Self <: Fit] (val x: Self) extends AnyVal {
+  extension [Self <: Fit](x: Self) {
     
-    @scala.inline
-    def setFit(value: cover | contain): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: cover | contain): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
   }
 }

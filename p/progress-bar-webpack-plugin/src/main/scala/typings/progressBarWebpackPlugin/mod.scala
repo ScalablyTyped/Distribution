@@ -54,44 +54,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(total: Double): Options = {
+    inline def apply(total: Double): Options = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCustomSummary(value: /* summary */ String => Unit): Self = StObject.set(x, "customSummary", js.Any.fromFunction1(value))
+      inline def setCustomSummary(value: /* summary */ String => Unit): Self = StObject.set(x, "customSummary", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomSummaryUndefined: Self = StObject.set(x, "customSummary", js.undefined)
+      inline def setCustomSummaryUndefined: Self = StObject.set(x, "customSummary", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setSummary(value: Boolean): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: Boolean): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryContent(value: Boolean): Self = StObject.set(x, "summaryContent", value.asInstanceOf[js.Any])
+      inline def setSummaryContent(value: Boolean): Self = StObject.set(x, "summaryContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryContentUndefined: Self = StObject.set(x, "summaryContent", js.undefined)
+      inline def setSummaryContentUndefined: Self = StObject.set(x, "summaryContent", js.undefined)
       
-      @scala.inline
-      def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     }
   }
   

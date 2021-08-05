@@ -10,6 +10,5 @@ object getNextUniqueIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNextUniqueId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextUniqueId")().asInstanceOf[Double]
+  inline def getNextUniqueId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextUniqueId")().asInstanceOf[Double]
 }

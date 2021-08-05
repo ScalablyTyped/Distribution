@@ -14,22 +14,17 @@ trait CumsumAttrs extends StObject {
 }
 object CumsumAttrs {
   
-  @scala.inline
-  def apply(axis: Double, exclusive: Boolean, reverse: Boolean): CumsumAttrs = {
+  inline def apply(axis: Double, exclusive: Boolean, reverse: Boolean): CumsumAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], reverse = reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[CumsumAttrs]
   }
   
-  @scala.inline
-  implicit class CumsumAttrsMutableBuilder[Self <: CumsumAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: CumsumAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
   }
 }

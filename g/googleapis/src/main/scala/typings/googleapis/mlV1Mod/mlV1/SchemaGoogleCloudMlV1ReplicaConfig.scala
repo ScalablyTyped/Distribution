@@ -25,25 +25,19 @@ trait SchemaGoogleCloudMlV1ReplicaConfig extends StObject {
 }
 object SchemaGoogleCloudMlV1ReplicaConfig {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1ReplicaConfig = {
+  inline def apply(): SchemaGoogleCloudMlV1ReplicaConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1ReplicaConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1ReplicaConfigMutableBuilder[Self <: SchemaGoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1ReplicaConfig](x: Self) {
     
-    @scala.inline
-    def setAcceleratorConfig(value: SchemaGoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
+    inline def setAcceleratorConfig(value: SchemaGoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
+    inline def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

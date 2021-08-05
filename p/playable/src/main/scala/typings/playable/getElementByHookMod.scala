@@ -11,6 +11,5 @@ object getElementByHookMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: HTMLElement, hook: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def default(element: HTMLElement, hook: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
 }

@@ -24,34 +24,25 @@ trait ReposUpdateReleaseAssetEndpoint extends StObject {
 }
 object ReposUpdateReleaseAssetEndpoint {
   
-  @scala.inline
-  def apply(asset_id: Double, owner: String, repo: String): ReposUpdateReleaseAssetEndpoint = {
+  inline def apply(asset_id: Double, owner: String, repo: String): ReposUpdateReleaseAssetEndpoint = {
     val __obj = js.Dynamic.literal(asset_id = asset_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateReleaseAssetEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposUpdateReleaseAssetEndpointMutableBuilder[Self <: ReposUpdateReleaseAssetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposUpdateReleaseAssetEndpoint](x: Self) {
     
-    @scala.inline
-    def setAsset_id(value: Double): Self = StObject.set(x, "asset_id", value.asInstanceOf[js.Any])
+    inline def setAsset_id(value: Double): Self = StObject.set(x, "asset_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

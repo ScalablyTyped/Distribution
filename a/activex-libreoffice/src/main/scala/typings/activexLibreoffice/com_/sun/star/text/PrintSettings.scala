@@ -58,8 +58,7 @@ trait PrintSettings extends StObject {
 }
 object PrintSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PrintAnnotationMode: NotePrintMode,
     PrintBlackFonts: Boolean,
     PrintControls: Boolean,
@@ -79,49 +78,34 @@ object PrintSettings {
     __obj.asInstanceOf[PrintSettings]
   }
   
-  @scala.inline
-  implicit class PrintSettingsMutableBuilder[Self <: PrintSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PrintSettings](x: Self) {
     
-    @scala.inline
-    def setPrintAnnotationMode(value: NotePrintMode): Self = StObject.set(x, "PrintAnnotationMode", value.asInstanceOf[js.Any])
+    inline def setPrintAnnotationMode(value: NotePrintMode): Self = StObject.set(x, "PrintAnnotationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintBlackFonts(value: Boolean): Self = StObject.set(x, "PrintBlackFonts", value.asInstanceOf[js.Any])
+    inline def setPrintBlackFonts(value: Boolean): Self = StObject.set(x, "PrintBlackFonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintControls(value: Boolean): Self = StObject.set(x, "PrintControls", value.asInstanceOf[js.Any])
+    inline def setPrintControls(value: Boolean): Self = StObject.set(x, "PrintControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintDrawings(value: Boolean): Self = StObject.set(x, "PrintDrawings", value.asInstanceOf[js.Any])
+    inline def setPrintDrawings(value: Boolean): Self = StObject.set(x, "PrintDrawings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintEmptyPages(value: Boolean): Self = StObject.set(x, "PrintEmptyPages", value.asInstanceOf[js.Any])
+    inline def setPrintEmptyPages(value: Boolean): Self = StObject.set(x, "PrintEmptyPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintFaxName(value: String): Self = StObject.set(x, "PrintFaxName", value.asInstanceOf[js.Any])
+    inline def setPrintFaxName(value: String): Self = StObject.set(x, "PrintFaxName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintGraphics(value: Boolean): Self = StObject.set(x, "PrintGraphics", value.asInstanceOf[js.Any])
+    inline def setPrintGraphics(value: Boolean): Self = StObject.set(x, "PrintGraphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintLeftPages(value: Boolean): Self = StObject.set(x, "PrintLeftPages", value.asInstanceOf[js.Any])
+    inline def setPrintLeftPages(value: Boolean): Self = StObject.set(x, "PrintLeftPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintPageBackground(value: Boolean): Self = StObject.set(x, "PrintPageBackground", value.asInstanceOf[js.Any])
+    inline def setPrintPageBackground(value: Boolean): Self = StObject.set(x, "PrintPageBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintPaperFromSetup(value: Boolean): Self = StObject.set(x, "PrintPaperFromSetup", value.asInstanceOf[js.Any])
+    inline def setPrintPaperFromSetup(value: Boolean): Self = StObject.set(x, "PrintPaperFromSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintProspect(value: Boolean): Self = StObject.set(x, "PrintProspect", value.asInstanceOf[js.Any])
+    inline def setPrintProspect(value: Boolean): Self = StObject.set(x, "PrintProspect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintReversed(value: Boolean): Self = StObject.set(x, "PrintReversed", value.asInstanceOf[js.Any])
+    inline def setPrintReversed(value: Boolean): Self = StObject.set(x, "PrintReversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintRightPages(value: Boolean): Self = StObject.set(x, "PrintRightPages", value.asInstanceOf[js.Any])
+    inline def setPrintRightPages(value: Boolean): Self = StObject.set(x, "PrintRightPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintTables(value: Boolean): Self = StObject.set(x, "PrintTables", value.asInstanceOf[js.Any])
+    inline def setPrintTables(value: Boolean): Self = StObject.set(x, "PrintTables", value.asInstanceOf[js.Any])
   }
 }

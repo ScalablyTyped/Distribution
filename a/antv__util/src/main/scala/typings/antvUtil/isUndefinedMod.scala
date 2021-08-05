@@ -10,6 +10,5 @@ object isUndefinedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(value: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
+  inline def default(value: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
 }

@@ -50,8 +50,7 @@ object stepGroupMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object StepGroupProps {
     
-    @scala.inline
-    def apply(): StepGroupProps = {
+    inline def apply(): StepGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepGroupProps]
     }
@@ -102,97 +101,68 @@ object stepGroupMod extends Shortcut {
   }
   object StrictStepGroupProps {
     
-    @scala.inline
-    def apply(): StrictStepGroupProps = {
+    inline def apply(): StrictStepGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictStepGroupProps]
     }
     
-    @scala.inline
-    implicit class StrictStepGroupPropsMutableBuilder[Self <: StrictStepGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictStepGroupProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAttached(value: Boolean | bottom | top): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | bottom | top): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
+      inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+      inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      @scala.inline
-      def setItems(value: SemanticShorthandCollection[StepProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: SemanticShorthandCollection[StepProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: SemanticShorthandItem[StepProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[StepProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+      inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
+      inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStackable(value: tablet): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
+      inline def setStackable(value: tablet): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
+      inline def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
       
-      @scala.inline
-      def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
+      inline def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
+      inline def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
-      @scala.inline
-      def setWidths(
+      inline def setWidths(
         value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | typings.semanticUiReact.semanticUiReactStrings.`1` | typings.semanticUiReact.semanticUiReactStrings.`2` | typings.semanticUiReact.semanticUiReactStrings.`3` | typings.semanticUiReact.semanticUiReactStrings.`4` | typings.semanticUiReact.semanticUiReactStrings.`5` | typings.semanticUiReact.semanticUiReactStrings.`6` | typings.semanticUiReact.semanticUiReactStrings.`7` | typings.semanticUiReact.semanticUiReactStrings.`8` | one | two | three | four | five | six | seven | eight
       ): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+      inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
     }
   }
   

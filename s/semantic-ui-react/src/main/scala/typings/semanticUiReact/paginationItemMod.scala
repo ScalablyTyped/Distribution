@@ -30,8 +30,7 @@ object paginationItemMod {
        with /* key */ StringDictionary[js.Any]
   object PaginationItemProps {
     
-    @scala.inline
-    def apply(): PaginationItemProps = {
+    inline def apply(): PaginationItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationItemProps]
     }
@@ -78,48 +77,36 @@ object paginationItemMod {
   }
   object StrictPaginationItemProps {
     
-    @scala.inline
-    def apply(): StrictPaginationItemProps = {
+    inline def apply(): StrictPaginationItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictPaginationItemProps]
     }
     
-    @scala.inline
-    implicit class StrictPaginationItemPropsMutableBuilder[Self <: StrictPaginationItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictPaginationItemProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(
+      inline def setOnClick(
         value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ PaginationItemProps) => Unit
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(
+      inline def setOnKeyDown(
         value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ PaginationItemProps) => Unit
       ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setType(value: ellipsisItem | firstItem | prevItem | pageItem | nextItem | lastItem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ellipsisItem | firstItem | prevItem | pageItem | nextItem | lastItem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -11,6 +11,5 @@ object typeScriptVueExtensionSupportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assertTypeScriptVueExtensionSupport(configuration: TypeScriptVueExtensionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScriptVueExtensionSupport")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assertTypeScriptVueExtensionSupport(configuration: TypeScriptVueExtensionConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScriptVueExtensionSupport")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

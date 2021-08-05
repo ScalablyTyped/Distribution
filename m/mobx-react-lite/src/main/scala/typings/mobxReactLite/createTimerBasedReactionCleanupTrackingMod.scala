@@ -11,6 +11,5 @@ object createTimerBasedReactionCleanupTrackingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTimerBasedReactionCleanupTracking(): ReactionCleanupTracking = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimerBasedReactionCleanupTracking")().asInstanceOf[ReactionCleanupTracking]
+  inline def createTimerBasedReactionCleanupTracking(): ReactionCleanupTracking = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimerBasedReactionCleanupTracking")().asInstanceOf[ReactionCleanupTracking]
 }

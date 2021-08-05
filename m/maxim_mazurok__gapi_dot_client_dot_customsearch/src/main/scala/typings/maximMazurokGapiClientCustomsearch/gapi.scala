@@ -53,53 +53,38 @@ object gapi {
       }
       object Promotion {
         
-        @scala.inline
-        def apply(): Promotion = {
+        inline def apply(): Promotion = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Promotion]
         }
         
-        @scala.inline
-        implicit class PromotionMutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
+        extension [Self <: Promotion](x: Self) {
           
-          @scala.inline
-          def setBodyLines(value: js.Array[HtmlTitle]): Self = StObject.set(x, "bodyLines", value.asInstanceOf[js.Any])
+          inline def setBodyLines(value: js.Array[HtmlTitle]): Self = StObject.set(x, "bodyLines", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBodyLinesUndefined: Self = StObject.set(x, "bodyLines", js.undefined)
+          inline def setBodyLinesUndefined: Self = StObject.set(x, "bodyLines", js.undefined)
           
-          @scala.inline
-          def setBodyLinesVarargs(value: HtmlTitle*): Self = StObject.set(x, "bodyLines", js.Array(value :_*))
+          inline def setBodyLinesVarargs(value: HtmlTitle*): Self = StObject.set(x, "bodyLines", js.Array(value :_*))
           
-          @scala.inline
-          def setDisplayLink(value: String): Self = StObject.set(x, "displayLink", value.asInstanceOf[js.Any])
+          inline def setDisplayLink(value: String): Self = StObject.set(x, "displayLink", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayLinkUndefined: Self = StObject.set(x, "displayLink", js.undefined)
+          inline def setDisplayLinkUndefined: Self = StObject.set(x, "displayLink", js.undefined)
           
-          @scala.inline
-          def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
+          inline def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
+          inline def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
           
-          @scala.inline
-          def setImage(value: Height): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+          inline def setImage(value: Height): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+          inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
           
-          @scala.inline
-          def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+          inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+          inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
       
@@ -156,111 +141,78 @@ object gapi {
       }
       object Result {
         
-        @scala.inline
-        def apply(): Result = {
+        inline def apply(): Result = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Result]
         }
         
-        @scala.inline
-        implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+        extension [Self <: Result](x: Self) {
           
-          @scala.inline
-          def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+          inline def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCacheIdUndefined: Self = StObject.set(x, "cacheId", js.undefined)
+          inline def setCacheIdUndefined: Self = StObject.set(x, "cacheId", js.undefined)
           
-          @scala.inline
-          def setDisplayLink(value: String): Self = StObject.set(x, "displayLink", value.asInstanceOf[js.Any])
+          inline def setDisplayLink(value: String): Self = StObject.set(x, "displayLink", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayLinkUndefined: Self = StObject.set(x, "displayLink", js.undefined)
+          inline def setDisplayLinkUndefined: Self = StObject.set(x, "displayLink", js.undefined)
           
-          @scala.inline
-          def setFileFormat(value: String): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
+          inline def setFileFormat(value: String): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
+          inline def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
           
-          @scala.inline
-          def setFormattedUrl(value: String): Self = StObject.set(x, "formattedUrl", value.asInstanceOf[js.Any])
+          inline def setFormattedUrl(value: String): Self = StObject.set(x, "formattedUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFormattedUrlUndefined: Self = StObject.set(x, "formattedUrl", js.undefined)
+          inline def setFormattedUrlUndefined: Self = StObject.set(x, "formattedUrl", js.undefined)
           
-          @scala.inline
-          def setHtmlFormattedUrl(value: String): Self = StObject.set(x, "htmlFormattedUrl", value.asInstanceOf[js.Any])
+          inline def setHtmlFormattedUrl(value: String): Self = StObject.set(x, "htmlFormattedUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHtmlFormattedUrlUndefined: Self = StObject.set(x, "htmlFormattedUrl", js.undefined)
+          inline def setHtmlFormattedUrlUndefined: Self = StObject.set(x, "htmlFormattedUrl", js.undefined)
           
-          @scala.inline
-          def setHtmlSnippet(value: String): Self = StObject.set(x, "htmlSnippet", value.asInstanceOf[js.Any])
+          inline def setHtmlSnippet(value: String): Self = StObject.set(x, "htmlSnippet", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHtmlSnippetUndefined: Self = StObject.set(x, "htmlSnippet", js.undefined)
+          inline def setHtmlSnippetUndefined: Self = StObject.set(x, "htmlSnippet", js.undefined)
           
-          @scala.inline
-          def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
+          inline def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
+          inline def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
           
-          @scala.inline
-          def setImage(value: ByteSize): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+          inline def setImage(value: ByteSize): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+          inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setLabels(value: js.Array[DisplayName]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+          inline def setLabels(value: js.Array[DisplayName]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+          inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          @scala.inline
-          def setLabelsVarargs(value: DisplayName*): Self = StObject.set(x, "labels", js.Array(value :_*))
+          inline def setLabelsVarargs(value: DisplayName*): Self = StObject.set(x, "labels", js.Array(value :_*))
           
-          @scala.inline
-          def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+          inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+          inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
           
-          @scala.inline
-          def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+          inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+          inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
           
-          @scala.inline
-          def setPagemap(
+          inline def setPagemap(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[js.Any]
           ): Self = StObject.set(x, "pagemap", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPagemapUndefined: Self = StObject.set(x, "pagemap", js.undefined)
+          inline def setPagemapUndefined: Self = StObject.set(x, "pagemap", js.undefined)
           
-          @scala.inline
-          def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+          inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+          inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
       
@@ -302,72 +254,52 @@ object gapi {
       }
       object Search {
         
-        @scala.inline
-        def apply(): Search = {
+        inline def apply(): Search = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Search]
         }
         
-        @scala.inline
-        implicit class SearchMutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
+        extension [Self <: Search](x: Self) {
           
-          @scala.inline
-          def setContext(
+          inline def setContext(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[js.Any]
           ): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+          inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
           
-          @scala.inline
-          def setItems(value: js.Array[Result]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[Result]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+          inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          @scala.inline
-          def setItemsVarargs(value: Result*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: Result*): Self = StObject.set(x, "items", js.Array(value :_*))
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setPromotions(value: js.Array[Promotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
+          inline def setPromotions(value: js.Array[Promotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
+          inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
           
-          @scala.inline
-          def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+          inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
           
-          @scala.inline
-          def setQueries(value: NextPage): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+          inline def setQueries(value: NextPage): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+          inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
           
-          @scala.inline
-          def setSearchInformation(value: FormattedSearchTime): Self = StObject.set(x, "searchInformation", value.asInstanceOf[js.Any])
+          inline def setSearchInformation(value: FormattedSearchTime): Self = StObject.set(x, "searchInformation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSearchInformationUndefined: Self = StObject.set(x, "searchInformation", js.undefined)
+          inline def setSearchInformationUndefined: Self = StObject.set(x, "searchInformation", js.undefined)
           
-          @scala.inline
-          def setSpelling(value: CorrectedQuery): Self = StObject.set(x, "spelling", value.asInstanceOf[js.Any])
+          inline def setSpelling(value: CorrectedQuery): Self = StObject.set(x, "spelling", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpellingUndefined: Self = StObject.set(x, "spelling", js.undefined)
+          inline def setSpellingUndefined: Self = StObject.set(x, "spelling", js.undefined)
           
-          @scala.inline
-          def setUrl(value: Template): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: Template): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         }
       }
       

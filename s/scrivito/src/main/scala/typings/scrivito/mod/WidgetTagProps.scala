@@ -15,16 +15,13 @@ trait WidgetTagProps
 }
 object WidgetTagProps {
   
-  @scala.inline
-  def apply(tag: String): WidgetTagProps = {
+  inline def apply(tag: String): WidgetTagProps = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetTagProps]
   }
   
-  @scala.inline
-  implicit class WidgetTagPropsMutableBuilder[Self <: WidgetTagProps] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetTagProps](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait ProtocolMethodDescription extends StObject {
 }
 object ProtocolMethodDescription {
   
-  @scala.inline
-  def apply(required: Boolean, types: String): ProtocolMethodDescription = {
+  inline def apply(required: Boolean, types: String): ProtocolMethodDescription = {
     val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolMethodDescription]
   }
   
-  @scala.inline
-  implicit class ProtocolMethodDescriptionMutableBuilder[Self <: ProtocolMethodDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolMethodDescription](x: Self) {
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
   }
 }

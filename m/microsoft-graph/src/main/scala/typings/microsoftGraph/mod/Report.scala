@@ -11,22 +11,17 @@ trait Report extends StObject {
 }
 object Report {
   
-  @scala.inline
-  def apply(): Report = {
+  inline def apply(): Report = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Report]
   }
   
-  @scala.inline
-  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+  extension [Self <: Report](x: Self) {
     
-    @scala.inline
-    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

@@ -61,64 +61,45 @@ trait SchemaContactGroup extends StObject {
 }
 object SchemaContactGroup {
   
-  @scala.inline
-  def apply(): SchemaContactGroup = {
+  inline def apply(): SchemaContactGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContactGroup]
   }
   
-  @scala.inline
-  implicit class SchemaContactGroupMutableBuilder[Self <: SchemaContactGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContactGroup](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setFormattedName(value: String): Self = StObject.set(x, "formattedName", value.asInstanceOf[js.Any])
+    inline def setFormattedName(value: String): Self = StObject.set(x, "formattedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedNameUndefined: Self = StObject.set(x, "formattedName", js.undefined)
+    inline def setFormattedNameUndefined: Self = StObject.set(x, "formattedName", js.undefined)
     
-    @scala.inline
-    def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
+    inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
+    inline def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
     
-    @scala.inline
-    def setMemberCount(value: Double): Self = StObject.set(x, "memberCount", value.asInstanceOf[js.Any])
+    inline def setMemberCount(value: Double): Self = StObject.set(x, "memberCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberCountUndefined: Self = StObject.set(x, "memberCount", js.undefined)
+    inline def setMemberCountUndefined: Self = StObject.set(x, "memberCount", js.undefined)
     
-    @scala.inline
-    def setMemberResourceNames(value: js.Array[String]): Self = StObject.set(x, "memberResourceNames", value.asInstanceOf[js.Any])
+    inline def setMemberResourceNames(value: js.Array[String]): Self = StObject.set(x, "memberResourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberResourceNamesUndefined: Self = StObject.set(x, "memberResourceNames", js.undefined)
+    inline def setMemberResourceNamesUndefined: Self = StObject.set(x, "memberResourceNames", js.undefined)
     
-    @scala.inline
-    def setMemberResourceNamesVarargs(value: String*): Self = StObject.set(x, "memberResourceNames", js.Array(value :_*))
+    inline def setMemberResourceNamesVarargs(value: String*): Self = StObject.set(x, "memberResourceNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: SchemaContactGroupMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaContactGroupMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait WithStatement_
 }
 object WithStatement_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: BlockStatement_ | Statement,
     end: Double,
     loc: SourceLocation,
@@ -33,16 +32,12 @@ object WithStatement_ {
     __obj.asInstanceOf[WithStatement_]
   }
   
-  @scala.inline
-  implicit class WithStatement_MutableBuilder[Self <: WithStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: WithStatement_](x: Self) {
     
-    @scala.inline
-    def setBody(value: BlockStatement_ | Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BlockStatement_ | Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WithStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WithStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetBoxModelResponse extends StObject {
 }
 object GetBoxModelResponse {
   
-  @scala.inline
-  def apply(model: BoxModel): GetBoxModelResponse = {
+  inline def apply(model: BoxModel): GetBoxModelResponse = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBoxModelResponse]
   }
   
-  @scala.inline
-  implicit class GetBoxModelResponseMutableBuilder[Self <: GetBoxModelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBoxModelResponse](x: Self) {
     
-    @scala.inline
-    def setModel(value: BoxModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: BoxModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

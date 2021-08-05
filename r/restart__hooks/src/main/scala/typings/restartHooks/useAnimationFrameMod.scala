@@ -11,8 +11,7 @@ object useAnimationFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): UseAnimationFrameReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UseAnimationFrameReturn]
+  inline def default(): UseAnimationFrameReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UseAnimationFrameReturn]
   
   @js.native
   trait UseAnimationFrameReturn extends StObject {

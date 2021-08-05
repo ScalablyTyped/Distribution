@@ -8,21 +8,17 @@ object pQueueStrings {
   
   @js.native
   sealed trait active extends StObject
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait add extends StObject
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait idle extends StObject
-  @scala.inline
-  def idle: idle = "idle".asInstanceOf[idle]
+  inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
   sealed trait next extends StObject
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
+  inline def next: next = "next".asInstanceOf[next]
 }

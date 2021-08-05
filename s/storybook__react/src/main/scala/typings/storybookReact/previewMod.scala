@@ -72,8 +72,7 @@ object previewMod {
   }
   object ClientApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDecorator: DecoratorFunction[StoryFnReactReturnType] => StoryApi[StoryFnReactReturnType],
       addParameters: Parameters => StoryApi[StoryFnReactReturnType],
       clearDecorators: () => Unit,
@@ -88,26 +87,19 @@ object previewMod {
       __obj.asInstanceOf[ClientApi]
     }
     
-    @scala.inline
-    implicit class ClientApiMutableBuilder[Self <: ClientApi] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApi](x: Self) {
       
-      @scala.inline
-      def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
+      inline def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConfigure(value: (Loadable, NodeModule) => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction2(value))
+      inline def setConfigure(value: (Loadable, NodeModule) => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForceReRender(value: () => Unit): Self = StObject.set(x, "forceReRender", js.Any.fromFunction0(value))
+      inline def setForceReRender(value: () => Unit): Self = StObject.set(x, "forceReRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStorybook(value: () => js.Array[IStorybookSection]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
+      inline def setGetStorybook(value: () => js.Array[IStorybookSection]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRaw(value: () => js.Any): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      inline def setRaw(value: () => js.Any): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
+      inline def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
     }
   }
   

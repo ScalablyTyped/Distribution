@@ -24,8 +24,7 @@ object global {
       * NB: Turn off browser-sync else mocha detects the browser-sync globals
       * like ` ___browserSync___`
       */
-    @scala.inline
-    def addGlobals(globals: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobals")(globals.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addGlobals(globals: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobals")(globals.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Prepare ngMocked application feature module
@@ -37,44 +36,37 @@ object global {
       * DO NOT USE IF YOU NEED THE REAL ROUTER SERVICES!
       * Fall back to `angular.mock.module(...)` or just `module(...)`
       */
-    @scala.inline
-    def appModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appModule")(fns.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+    inline def appModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appModule")(fns.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
     
     /**
       * Assert a failure in mocha, without condition
       */
-    @scala.inline
-    def assertFail(message: String): AssertionError = ^.asInstanceOf[js.Dynamic].applyDynamic("assertFail")(message.asInstanceOf[js.Any]).asInstanceOf[AssertionError]
+    inline def assertFail(message: String): AssertionError = ^.asInstanceOf[js.Dynamic].applyDynamic("assertFail")(message.asInstanceOf[js.Any]).asInstanceOf[AssertionError]
     
     /**
       * Prepare ngMocked module definition that makes real $http and $q calls
       * Also adds fakeLogger to the end of the definition
       * Use it as you would the ngMocks#module method
       */
-    @scala.inline
-    def asyncModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncModule")(fns.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+    inline def asyncModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncModule")(fns.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
     
     /**
       * Get or set bard debugging flag
       */
-    @scala.inline
-    def debugging(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("debugging")().asInstanceOf[Boolean]
-    @scala.inline
-    def debugging(newFlag: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("debugging")(newFlag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def debugging(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("debugging")().asInstanceOf[Boolean]
+    inline def debugging(newFlag: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("debugging")(newFlag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Registers a fake logger service that you can spy on
       */
-    @scala.inline
-    def fakeLogger(
+    inline def fakeLogger(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fakeLogger")($provide.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Registers a fake route helper provider service that you can spy on
       */
-    @scala.inline
-    def fakeRouteHelperProvider(
+    inline def fakeRouteHelperProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fakeRouteHelperProvider")($provide.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -84,8 +76,7 @@ object global {
       * which runs on every test otherwise.
       * Make sure this goes before the inject in the spec.
       */
-    @scala.inline
-    def fakeRouteProvider(
+    inline def fakeRouteProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fakeRouteProvider")($provide.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -95,16 +86,14 @@ object global {
       * which runs on every test otherwise.
       * Make sure this goes before the inject in the spec.
       */
-    @scala.inline
-    def fakeStateProvider(
+    inline def fakeStateProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fakeStateProvider")($provide.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Registers a fake toastr service that you can spy on
       */
-    @scala.inline
-    def fakeToastr(
+    inline def fakeToastr(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fakeToastr")($provide.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -117,8 +106,7 @@ object global {
       *
       *  Could restore $q with $qReal in which case don't need to flush.
       */
-    @scala.inline
-    def httpBackend(
+    inline def httpBackend(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("$httpBackend")($provide.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
@@ -139,18 +127,14 @@ object global {
       *    [strings]   - same string array you'd use to set fn.$inject
       *    (...string) - string arguments turned into a string array
       */
-    @scala.inline
-    def inject(context: js.Function, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def inject(context: Unit, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def inject(context: Context, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def inject(context: js.Function, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def inject(context: Unit, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def inject(context: Context, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Write to console if bard debugging flag is on
       */
-    @scala.inline
-    def log(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def log(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *  Listen to mocha test runner events
@@ -158,8 +142,7 @@ object global {
       *     var runner = mocha.run();
       *     bard.mochaRunnerListener(runner);
       */
-    @scala.inline
-    def mochaRunnerListener(runner: Runner): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mochaRunnerListener")(runner.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mochaRunnerListener(runner: Runner): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mochaRunnerListener")(runner.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Mocks out a service with sinon stubbed functions
@@ -179,16 +162,14 @@ object global {
       * If there is a config entry that is NOT a member of the service
       * add mocked function to the service using the config value
       */
-    @scala.inline
-    def mockService(service: js.Any, config: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mockService")(service.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def mockService(service: js.Any, config: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mockService")(service.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       *  Replaces the ngMock'ed $q with the real one from ng thus
       *  obviating the need to flush $http and $q queues
       *  at the expense of ability to control $q timing.
       */
-    @scala.inline
-    def q(
+    inline def q(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("$q")($provide.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
@@ -199,15 +180,13 @@ object global {
       * Ex: replaceAccentChars(a.Name) < replaceAccentChars(b.Name)
       * instead of:            a.Name  <                    b.Name
       */
-    @scala.inline
-    def replaceAccentChars(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceAccentChars")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def replaceAccentChars(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceAccentChars")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       *  Assert that there are no outstanding HTTP requests after test is complete
       *  For use with ngMocks; doesn't work for async server integration tests
       */
-    @scala.inline
-    def verifyNoOutstandingHttpRequests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyNoOutstandingHttpRequests")().asInstanceOf[Unit]
+    inline def verifyNoOutstandingHttpRequests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyNoOutstandingHttpRequests")().asInstanceOf[Unit]
     
     /**
       * Returns a function that execute a callback function
@@ -215,7 +194,6 @@ object global {
       * The try/catch then calls the ambient "done" function
       * in the appropriate way for both success and failure
       */
-    @scala.inline
-    def wrapWithDone(callback: js.Function, done: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWithDone")(callback.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def wrapWithDone(callback: js.Function, done: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWithDone")(callback.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   }
 }

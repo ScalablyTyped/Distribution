@@ -26,8 +26,7 @@ object touchableItemIosMod {
     @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/TouchableItem.ios", "default.defaultProps")
     @js.native
     def defaultProps: Enabled = js.native
-    @scala.inline
-    def defaultProps_=(x: Enabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Enabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type Props = (ComponentProps[Instantiable1[/* props */ ReadonlyBaseButtonPropert, BaseButton]]) & ActiveOpacity
@@ -36,8 +35,8 @@ object touchableItemIosMod {
   trait TouchableItem
     extends Component[Props, js.Object, js.Any] {
     
-    var handleActiveStateChange: js.Any = js.native
+    /* private */ var handleActiveStateChange: js.Any = js.native
     
-    var opacity: js.Any = js.native
+    /* private */ var opacity: js.Any = js.native
   }
 }

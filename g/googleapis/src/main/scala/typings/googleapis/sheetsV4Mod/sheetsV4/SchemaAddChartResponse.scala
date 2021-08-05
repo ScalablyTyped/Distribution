@@ -16,19 +16,15 @@ trait SchemaAddChartResponse extends StObject {
 }
 object SchemaAddChartResponse {
   
-  @scala.inline
-  def apply(): SchemaAddChartResponse = {
+  inline def apply(): SchemaAddChartResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddChartResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAddChartResponseMutableBuilder[Self <: SchemaAddChartResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddChartResponse](x: Self) {
     
-    @scala.inline
-    def setChart(value: SchemaEmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: SchemaEmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
   }
 }

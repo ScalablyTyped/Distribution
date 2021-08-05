@@ -20,37 +20,27 @@ trait EqlSearch[T]
 }
 object EqlSearch {
   
-  @scala.inline
-  def apply[T](body: T, index: String): EqlSearch[T] = {
+  inline def apply[T](body: T, index: String): EqlSearch[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[EqlSearch[T]]
   }
   
-  @scala.inline
-  implicit class EqlSearchMutableBuilder[Self <: EqlSearch[?], T] (val x: Self & EqlSearch[T]) extends AnyVal {
+  extension [Self <: EqlSearch[?], T](x: Self & EqlSearch[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
+    inline def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
+    inline def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
     
-    @scala.inline
-    def setKeep_on_completion(value: Boolean): Self = StObject.set(x, "keep_on_completion", value.asInstanceOf[js.Any])
+    inline def setKeep_on_completion(value: Boolean): Self = StObject.set(x, "keep_on_completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_on_completionUndefined: Self = StObject.set(x, "keep_on_completion", js.undefined)
+    inline def setKeep_on_completionUndefined: Self = StObject.set(x, "keep_on_completion", js.undefined)
     
-    @scala.inline
-    def setWait_for_completion_timeout(value: String): Self = StObject.set(x, "wait_for_completion_timeout", value.asInstanceOf[js.Any])
+    inline def setWait_for_completion_timeout(value: String): Self = StObject.set(x, "wait_for_completion_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completion_timeoutUndefined: Self = StObject.set(x, "wait_for_completion_timeout", js.undefined)
+    inline def setWait_for_completion_timeoutUndefined: Self = StObject.set(x, "wait_for_completion_timeout", js.undefined)
   }
 }

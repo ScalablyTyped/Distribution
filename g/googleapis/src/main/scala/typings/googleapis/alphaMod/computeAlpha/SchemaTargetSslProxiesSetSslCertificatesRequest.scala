@@ -14,22 +14,17 @@ trait SchemaTargetSslProxiesSetSslCertificatesRequest extends StObject {
 }
 object SchemaTargetSslProxiesSetSslCertificatesRequest {
   
-  @scala.inline
-  def apply(): SchemaTargetSslProxiesSetSslCertificatesRequest = {
+  inline def apply(): SchemaTargetSslProxiesSetSslCertificatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetSslProxiesSetSslCertificatesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTargetSslProxiesSetSslCertificatesRequestMutableBuilder[Self <: SchemaTargetSslProxiesSetSslCertificatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetSslProxiesSetSslCertificatesRequest](x: Self) {
     
-    @scala.inline
-    def setSslCertificates(value: js.Array[String]): Self = StObject.set(x, "sslCertificates", value.asInstanceOf[js.Any])
+    inline def setSslCertificates(value: js.Array[String]): Self = StObject.set(x, "sslCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
+    inline def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
-    @scala.inline
-    def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
+    inline def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
   }
 }

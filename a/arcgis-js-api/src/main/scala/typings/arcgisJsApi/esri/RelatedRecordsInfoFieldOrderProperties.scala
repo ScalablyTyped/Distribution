@@ -24,25 +24,19 @@ trait RelatedRecordsInfoFieldOrderProperties extends StObject {
 }
 object RelatedRecordsInfoFieldOrderProperties {
   
-  @scala.inline
-  def apply(): RelatedRecordsInfoFieldOrderProperties = {
+  inline def apply(): RelatedRecordsInfoFieldOrderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelatedRecordsInfoFieldOrderProperties]
   }
   
-  @scala.inline
-  implicit class RelatedRecordsInfoFieldOrderPropertiesMutableBuilder[Self <: RelatedRecordsInfoFieldOrderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RelatedRecordsInfoFieldOrderProperties](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setOrder(value: asc_ | desc_): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: asc_ | desc_): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

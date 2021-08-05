@@ -43,26 +43,22 @@ object componentsSignatureInputSignatureInputMod {
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/SignatureInput", "SignatureInput.ClearButton")
     @js.native
     def ClearButton: FunctionComponent[PickClearButtonPropschildChildren] = js.native
-    @scala.inline
-    def ClearButton_=(x: FunctionComponent[PickClearButtonPropschildChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearButton")(x.asInstanceOf[js.Any])
+    inline def ClearButton_=(x: FunctionComponent[PickClearButtonPropschildChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearButton")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/SignatureInput", "SignatureInput.SigningPad")
     @js.native
     def SigningPad: FunctionComponent[PickSigningPadPropsrequirAbout] = js.native
-    @scala.inline
-    def SigningPad_=(x: FunctionComponent[PickSigningPadPropsrequirAbout]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SigningPad")(x.asInstanceOf[js.Any])
+    inline def SigningPad_=(x: FunctionComponent[PickSigningPadPropsrequirAbout]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SigningPad")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/SignatureInput", "SignatureInput.Title")
     @js.native
     def Title: FunctionComponent[PickTitlePropschildrenChildren] = js.native
-    @scala.inline
-    def Title_=(x: FunctionComponent[PickTitlePropschildrenChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    inline def Title_=(x: FunctionComponent[PickTitlePropschildrenChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/SignatureInput", "SignatureInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined std.Readonly<wix-ui-core.wix-ui-core/dist/standalone/src/components/signature-input/SignatureInputContext.SignatureInputContextValue> */
@@ -82,8 +78,7 @@ object componentsSignatureInputSignatureInputMod {
   }
   object SignatureInputState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setInputId: /* id */ js.UndefOr[String] => Unit,
       setSignaturePadContext: /* api */ SignaturePadApiContext => Unit,
       setSignatureTitleId: /* id */ js.UndefOr[String] => Unit
@@ -92,35 +87,25 @@ object componentsSignatureInputSignatureInputMod {
       __obj.asInstanceOf[SignatureInputState]
     }
     
-    @scala.inline
-    implicit class SignatureInputStateMutableBuilder[Self <: SignatureInputState] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureInputState](x: Self) {
       
-      @scala.inline
-      def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+      inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
+      inline def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
       
-      @scala.inline
-      def setPadApi(value: SignaturePadApiContext): Self = StObject.set(x, "padApi", value.asInstanceOf[js.Any])
+      inline def setPadApi(value: SignaturePadApiContext): Self = StObject.set(x, "padApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadApiUndefined: Self = StObject.set(x, "padApi", js.undefined)
+      inline def setPadApiUndefined: Self = StObject.set(x, "padApi", js.undefined)
       
-      @scala.inline
-      def setSetInputId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInputId", js.Any.fromFunction1(value))
+      inline def setSetInputId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInputId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSignaturePadContext(value: /* api */ SignaturePadApiContext => Unit): Self = StObject.set(x, "setSignaturePadContext", js.Any.fromFunction1(value))
+      inline def setSetSignaturePadContext(value: /* api */ SignaturePadApiContext => Unit): Self = StObject.set(x, "setSignaturePadContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSignatureTitleId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSignatureTitleId", js.Any.fromFunction1(value))
+      inline def setSetSignatureTitleId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSignatureTitleId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitleId(value: String): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
+      inline def setTitleId(value: String): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleIdUndefined: Self = StObject.set(x, "titleId", js.undefined)
+      inline def setTitleIdUndefined: Self = StObject.set(x, "titleId", js.undefined)
     }
   }
 }

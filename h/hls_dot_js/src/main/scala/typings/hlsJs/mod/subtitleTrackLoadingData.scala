@@ -12,19 +12,15 @@ trait subtitleTrackLoadingData extends StObject {
 }
 object subtitleTrackLoadingData {
   
-  @scala.inline
-  def apply(id: String, url: String): subtitleTrackLoadingData = {
+  inline def apply(id: String, url: String): subtitleTrackLoadingData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[subtitleTrackLoadingData]
   }
   
-  @scala.inline
-  implicit class subtitleTrackLoadingDataMutableBuilder[Self <: subtitleTrackLoadingData] (val x: Self) extends AnyVal {
+  extension [Self <: subtitleTrackLoadingData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait UpdateCachePolicyRequest extends StObject {
 }
 object UpdateCachePolicyRequest {
   
-  @scala.inline
-  def apply(CachePolicyConfig: CachePolicyConfig, Id: String): UpdateCachePolicyRequest = {
+  inline def apply(CachePolicyConfig: CachePolicyConfig, Id: String): UpdateCachePolicyRequest = {
     val __obj = js.Dynamic.literal(CachePolicyConfig = CachePolicyConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCachePolicyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCachePolicyRequestMutableBuilder[Self <: UpdateCachePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCachePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setCachePolicyConfig(value: CachePolicyConfig): Self = StObject.set(x, "CachePolicyConfig", value.asInstanceOf[js.Any])
+    inline def setCachePolicyConfig(value: CachePolicyConfig): Self = StObject.set(x, "CachePolicyConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

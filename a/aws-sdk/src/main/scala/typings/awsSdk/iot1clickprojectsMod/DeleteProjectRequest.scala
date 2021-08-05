@@ -13,16 +13,13 @@ trait DeleteProjectRequest extends StObject {
 }
 object DeleteProjectRequest {
   
-  @scala.inline
-  def apply(projectName: ProjectName): DeleteProjectRequest = {
+  inline def apply(projectName: ProjectName): DeleteProjectRequest = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProjectRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProjectRequestMutableBuilder[Self <: DeleteProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectRequest](x: Self) {
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

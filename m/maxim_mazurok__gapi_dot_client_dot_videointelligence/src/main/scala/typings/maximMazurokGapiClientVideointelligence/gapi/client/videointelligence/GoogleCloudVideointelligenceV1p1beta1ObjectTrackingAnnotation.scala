@@ -32,52 +32,37 @@ trait GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation extends StOb
 }
 object GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation = {
+  inline def apply(): GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setEntity(value: GoogleCloudVideointelligenceV1p1beta1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: GoogleCloudVideointelligenceV1p1beta1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setSegment(value: GoogleCloudVideointelligenceV1p1beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: GoogleCloudVideointelligenceV1p1beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
-    @scala.inline
-    def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
+    inline def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
+    inline def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

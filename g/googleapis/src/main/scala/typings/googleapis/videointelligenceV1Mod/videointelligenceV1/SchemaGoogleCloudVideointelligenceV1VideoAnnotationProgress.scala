@@ -33,37 +33,27 @@ trait SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgress extends StObje
 }
 object SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgress {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgress = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgress]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgressMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1VideoAnnotationProgress](x: Self) {
     
-    @scala.inline
-    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
+    inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
+    inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
-    @scala.inline
-    def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

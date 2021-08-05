@@ -20,8 +20,7 @@ trait DirectInboxFeedResponseReelShare extends StObject {
 }
 object DirectInboxFeedResponseReelShare {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     is_reel_persisted: Boolean,
     media: DirectInboxFeedResponseMedia,
     reel_owner_id: Double,
@@ -34,25 +33,18 @@ object DirectInboxFeedResponseReelShare {
     __obj.asInstanceOf[DirectInboxFeedResponseReelShare]
   }
   
-  @scala.inline
-  implicit class DirectInboxFeedResponseReelShareMutableBuilder[Self <: DirectInboxFeedResponseReelShare] (val x: Self) extends AnyVal {
+  extension [Self <: DirectInboxFeedResponseReelShare](x: Self) {
     
-    @scala.inline
-    def setIs_reel_persisted(value: Boolean): Self = StObject.set(x, "is_reel_persisted", value.asInstanceOf[js.Any])
+    inline def setIs_reel_persisted(value: Boolean): Self = StObject.set(x, "is_reel_persisted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: DirectInboxFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: DirectInboxFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReel_owner_id(value: Double): Self = StObject.set(x, "reel_owner_id", value.asInstanceOf[js.Any])
+    inline def setReel_owner_id(value: Double): Self = StObject.set(x, "reel_owner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
+    inline def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

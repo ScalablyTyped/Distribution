@@ -14,6 +14,5 @@ object mod {
   @JSImport("@reach/visually-hidden", JSImport.Default)
   @js.native
   def default: FC[js.Any] = js.native
-  @scala.inline
-  def default_=(x: FC[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: FC[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

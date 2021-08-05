@@ -10,6 +10,5 @@ object notMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def not(predicate: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def not(predicate: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -30,51 +30,37 @@ trait AbstractControlOptions extends StObject {
 }
 object AbstractControlOptions {
   
-  @scala.inline
-  def apply(): AbstractControlOptions = {
+  inline def apply(): AbstractControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AbstractControlOptions]
   }
   
-  @scala.inline
-  implicit class AbstractControlOptionsMutableBuilder[Self <: AbstractControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractControlOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncValidators(value: AsyncValidatorFn | js.Array[AsyncValidatorFn]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+    inline def setAsyncValidators(value: AsyncValidatorFn | js.Array[AsyncValidatorFn]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncValidatorsFunction1(
+    inline def setAsyncValidatorsFunction1(
       value: /* control */ AbstractControl => (js.Promise[ValidationErrors | Null]) | (Observable_[ValidationErrors | Null])
     ): Self = StObject.set(x, "asyncValidators", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAsyncValidatorsNull: Self = StObject.set(x, "asyncValidators", null)
+    inline def setAsyncValidatorsNull: Self = StObject.set(x, "asyncValidators", null)
     
-    @scala.inline
-    def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
+    inline def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
-    @scala.inline
-    def setAsyncValidatorsVarargs(value: AsyncValidatorFn*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
+    inline def setAsyncValidatorsVarargs(value: AsyncValidatorFn*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateOn(value: change | blur | submit): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
+    inline def setUpdateOn(value: change | blur | submit): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
+    inline def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
     
-    @scala.inline
-    def setValidators(value: ValidatorFn | js.Array[ValidatorFn]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: ValidatorFn | js.Array[ValidatorFn]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsFunction1(value: /* control */ AbstractControl => ValidationErrors | Null): Self = StObject.set(x, "validators", js.Any.fromFunction1(value))
+    inline def setValidatorsFunction1(value: /* control */ AbstractControl => ValidationErrors | Null): Self = StObject.set(x, "validators", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidatorsNull: Self = StObject.set(x, "validators", null)
+    inline def setValidatorsNull: Self = StObject.set(x, "validators", null)
     
-    @scala.inline
-    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
+    inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    @scala.inline
-    def setValidatorsVarargs(value: ValidatorFn*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: ValidatorFn*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

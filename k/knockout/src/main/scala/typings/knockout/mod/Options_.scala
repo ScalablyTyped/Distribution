@@ -16,8 +16,7 @@ trait Options_ extends StObject {
 }
 object Options_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createChildContextWithAs: Boolean,
     deferUpdates: Boolean,
     foreachHidesDestroyed: Boolean,
@@ -27,19 +26,14 @@ object Options_ {
     __obj.asInstanceOf[Options_]
   }
   
-  @scala.inline
-  implicit class Options_MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
+  extension [Self <: Options_](x: Self) {
     
-    @scala.inline
-    def setCreateChildContextWithAs(value: Boolean): Self = StObject.set(x, "createChildContextWithAs", value.asInstanceOf[js.Any])
+    inline def setCreateChildContextWithAs(value: Boolean): Self = StObject.set(x, "createChildContextWithAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
+    inline def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeachHidesDestroyed(value: Boolean): Self = StObject.set(x, "foreachHidesDestroyed", value.asInstanceOf[js.Any])
+    inline def setForeachHidesDestroyed(value: Boolean): Self = StObject.set(x, "foreachHidesDestroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseOnlyNativeEvents(value: Boolean): Self = StObject.set(x, "useOnlyNativeEvents", value.asInstanceOf[js.Any])
+    inline def setUseOnlyNativeEvents(value: Boolean): Self = StObject.set(x, "useOnlyNativeEvents", value.asInstanceOf[js.Any])
   }
 }

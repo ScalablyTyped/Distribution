@@ -20,20 +20,16 @@ object mod {
   }
   object Measurement {
     
-    @scala.inline
-    def apply(scrollbarHeight: Double, scrollbarWidth: Double): Measurement = {
+    inline def apply(scrollbarHeight: Double, scrollbarWidth: Double): Measurement = {
       val __obj = js.Dynamic.literal(scrollbarHeight = scrollbarHeight.asInstanceOf[js.Any], scrollbarWidth = scrollbarWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[Measurement]
     }
     
-    @scala.inline
-    implicit class MeasurementMutableBuilder[Self <: Measurement] (val x: Self) extends AnyVal {
+    extension [Self <: Measurement](x: Self) {
       
-      @scala.inline
-      def setScrollbarHeight(value: Double): Self = StObject.set(x, "scrollbarHeight", value.asInstanceOf[js.Any])
+      inline def setScrollbarHeight(value: Double): Self = StObject.set(x, "scrollbarHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollbarWidth(value: Double): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
+      inline def setScrollbarWidth(value: Double): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,26 +43,20 @@ object mod {
   }
   object ScrollbarSizeProps {
     
-    @scala.inline
-    def apply(): ScrollbarSizeProps = {
+    inline def apply(): ScrollbarSizeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollbarSizeProps]
     }
     
-    @scala.inline
-    implicit class ScrollbarSizePropsMutableBuilder[Self <: ScrollbarSizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarSizeProps](x: Self) {
       
-      @scala.inline
-      def setOnChange(value: /* measurement */ Measurement => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* measurement */ Measurement => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: /* measurement */ Measurement => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: /* measurement */ Measurement => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     }
   }
 }

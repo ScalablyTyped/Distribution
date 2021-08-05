@@ -18,31 +18,23 @@ trait EnvelopeIdsRequest extends StObject {
 }
 object EnvelopeIdsRequest {
   
-  @scala.inline
-  def apply(): EnvelopeIdsRequest = {
+  inline def apply(): EnvelopeIdsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeIdsRequest]
   }
   
-  @scala.inline
-  implicit class EnvelopeIdsRequestMutableBuilder[Self <: EnvelopeIdsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeIdsRequest](x: Self) {
     
-    @scala.inline
-    def setEnvelopeIds(value: js.Array[String]): Self = StObject.set(x, "envelopeIds", value.asInstanceOf[js.Any])
+    inline def setEnvelopeIds(value: js.Array[String]): Self = StObject.set(x, "envelopeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdsUndefined: Self = StObject.set(x, "envelopeIds", js.undefined)
+    inline def setEnvelopeIdsUndefined: Self = StObject.set(x, "envelopeIds", js.undefined)
     
-    @scala.inline
-    def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value :_*))
+    inline def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
+    inline def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
+    inline def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
-    @scala.inline
-    def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
+    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
   }
 }

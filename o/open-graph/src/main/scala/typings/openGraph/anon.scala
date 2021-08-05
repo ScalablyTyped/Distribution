@@ -13,23 +13,18 @@ object anon {
   }
   object Alternate {
     
-    @scala.inline
-    def apply(): Alternate = {
+    inline def apply(): Alternate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Alternate]
     }
     
-    @scala.inline
-    implicit class AlternateMutableBuilder[Self <: Alternate] (val x: Self) extends AnyVal {
+    extension [Self <: Alternate](x: Self) {
       
-      @scala.inline
-      def setAlternate(value: String | js.Array[String]): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+      inline def setAlternate(value: String | js.Array[String]): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
+      inline def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
       
-      @scala.inline
-      def setAlternateVarargs(value: String*): Self = StObject.set(x, "alternate", js.Array(value :_*))
+      inline def setAlternateVarargs(value: String*): Self = StObject.set(x, "alternate", js.Array(value :_*))
     }
   }
 }

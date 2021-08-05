@@ -18,25 +18,19 @@ trait DeleteAttributesRequest extends StObject {
 }
 object DeleteAttributesRequest {
   
-  @scala.inline
-  def apply(attributes: Attributes): DeleteAttributesRequest = {
+  inline def apply(attributes: Attributes): DeleteAttributesRequest = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAttributesRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAttributesRequestMutableBuilder[Self <: DeleteAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait MoveReplicationTaskMessage extends StObject {
 }
 object MoveReplicationTaskMessage {
   
-  @scala.inline
-  def apply(ReplicationTaskArn: String, TargetReplicationInstanceArn: String): MoveReplicationTaskMessage = {
+  inline def apply(ReplicationTaskArn: String, TargetReplicationInstanceArn: String): MoveReplicationTaskMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any], TargetReplicationInstanceArn = TargetReplicationInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveReplicationTaskMessage]
   }
   
-  @scala.inline
-  implicit class MoveReplicationTaskMessageMutableBuilder[Self <: MoveReplicationTaskMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MoveReplicationTaskMessage](x: Self) {
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetReplicationInstanceArn(value: String): Self = StObject.set(x, "TargetReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setTargetReplicationInstanceArn(value: String): Self = StObject.set(x, "TargetReplicationInstanceArn", value.asInstanceOf[js.Any])
   }
 }

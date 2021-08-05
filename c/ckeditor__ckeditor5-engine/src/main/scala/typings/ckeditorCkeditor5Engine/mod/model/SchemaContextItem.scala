@@ -15,22 +15,17 @@ trait SchemaContextItem extends StObject {
 }
 object SchemaContextItem {
   
-  @scala.inline
-  def apply(getAttribute: String => String, getAttributeKeys: Iterable[String], name: String): SchemaContextItem = {
+  inline def apply(getAttribute: String => String, getAttributeKeys: Iterable[String], name: String): SchemaContextItem = {
     val __obj = js.Dynamic.literal(getAttribute = js.Any.fromFunction1(getAttribute), getAttributeKeys = getAttributeKeys.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContextItem]
   }
   
-  @scala.inline
-  implicit class SchemaContextItemMutableBuilder[Self <: SchemaContextItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContextItem](x: Self) {
     
-    @scala.inline
-    def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+    inline def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAttributeKeys(value: Iterable[String]): Self = StObject.set(x, "getAttributeKeys", value.asInstanceOf[js.Any])
+    inline def setGetAttributeKeys(value: Iterable[String]): Self = StObject.set(x, "getAttributeKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

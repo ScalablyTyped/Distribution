@@ -33,8 +33,7 @@ class default protected ()
 }
 object default {
   
-  @scala.inline
-  def apply(options: GhostContentAPIOptions): GhostAPI = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[GhostAPI]
+  inline def apply(options: GhostContentAPIOptions): GhostAPI = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[GhostAPI]
   
   @JSImport("@tryghost/content-api", JSImport.Default)
   @js.native

@@ -60,21 +60,16 @@ object elasticbeanstalkMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.elasticbeanstalkApplicationMod.Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean]
   }
   
   @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion")
@@ -107,21 +102,16 @@ object elasticbeanstalkMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationVersionState): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationVersionState, opts: CustomResourceOptions): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
+    inline def get(name: String, id: Input[ID], state: ApplicationVersionState): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
+    inline def get(name: String, id: Input[ID], state: ApplicationVersionState, opts: CustomResourceOptions): typings.pulumiAws.applicationVersionMod.ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.applicationVersionMod.ApplicationVersion]
     
     /**
       * Returns true if the given object is an instance of ApplicationVersion.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean]
   }
   
   @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate")
@@ -154,21 +144,16 @@ object elasticbeanstalkMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationTemplateState): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID], state: ConfigurationTemplateState): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate]
     
     /**
       * Returns true if the given object is an instance of ConfigurationTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean]
   }
   
   @JSImport("@pulumi/aws/elasticbeanstalk", "Environment")
@@ -201,39 +186,26 @@ object elasticbeanstalkMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EnvironmentState): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EnvironmentState, opts: CustomResourceOptions): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
+    inline def get(name: String, id: Input[ID], state: EnvironmentState): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
+    inline def get(name: String, id: Input[ID], state: EnvironmentState, opts: CustomResourceOptions): typings.pulumiAws.environmentMod.Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.environmentMod.Environment]
     
     /**
       * Returns true if the given object is an instance of Environment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean]
   }
   
-  @scala.inline
-  def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetApplicationResult]]
-  @scala.inline
-  def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetApplicationResult]]
+  inline def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetApplicationResult]]
+  inline def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetApplicationResult]]
   
-  @scala.inline
-  def getHostedZone(): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")().asInstanceOf[js.Promise[GetHostedZoneResult]]
-  @scala.inline
-  def getHostedZone(args: Unit, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
-  @scala.inline
-  def getHostedZone(args: GetHostedZoneArgs): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetHostedZoneResult]]
-  @scala.inline
-  def getHostedZone(args: GetHostedZoneArgs, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")().asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(args: Unit, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(args: GetHostedZoneArgs): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(args: GetHostedZoneArgs, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
   
-  @scala.inline
-  def getSolutionStack(args: GetSolutionStackArgs): js.Promise[GetSolutionStackResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSolutionStackResult]]
-  @scala.inline
-  def getSolutionStack(args: GetSolutionStackArgs, opts: InvokeOptions): js.Promise[GetSolutionStackResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSolutionStackResult]]
+  inline def getSolutionStack(args: GetSolutionStackArgs): js.Promise[GetSolutionStackResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSolutionStackResult]]
+  inline def getSolutionStack(args: GetSolutionStackArgs, opts: InvokeOptions): js.Promise[GetSolutionStackResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSolutionStackResult]]
 }

@@ -25,32 +25,24 @@ object typesSmschannelrequestMod {
   }
   object SMSChannelRequest {
     
-    @scala.inline
-    def apply(): SMSChannelRequest = {
+    inline def apply(): SMSChannelRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SMSChannelRequest]
     }
     
-    @scala.inline
-    implicit class SMSChannelRequestMutableBuilder[Self <: SMSChannelRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SMSChannelRequest](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
       
-      @scala.inline
-      def setSenderId(value: String): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
+      inline def setSenderId(value: String): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
+      inline def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
       
-      @scala.inline
-      def setShortCode(value: String): Self = StObject.set(x, "ShortCode", value.asInstanceOf[js.Any])
+      inline def setShortCode(value: String): Self = StObject.set(x, "ShortCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortCodeUndefined: Self = StObject.set(x, "ShortCode", js.undefined)
+      inline def setShortCodeUndefined: Self = StObject.set(x, "ShortCode", js.undefined)
     }
   }
   

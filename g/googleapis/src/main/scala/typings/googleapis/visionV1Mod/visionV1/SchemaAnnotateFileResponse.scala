@@ -22,28 +22,21 @@ trait SchemaAnnotateFileResponse extends StObject {
 }
 object SchemaAnnotateFileResponse {
   
-  @scala.inline
-  def apply(): SchemaAnnotateFileResponse = {
+  inline def apply(): SchemaAnnotateFileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnnotateFileResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAnnotateFileResponseMutableBuilder[Self <: SchemaAnnotateFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnnotateFileResponse](x: Self) {
     
-    @scala.inline
-    def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setResponses(value: js.Array[SchemaAnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[SchemaAnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: SchemaAnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaAnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

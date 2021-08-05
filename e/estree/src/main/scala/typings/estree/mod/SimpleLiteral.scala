@@ -18,29 +18,22 @@ trait SimpleLiteral
 }
 object SimpleLiteral {
   
-  @scala.inline
-  def apply(): SimpleLiteral = {
+  inline def apply(): SimpleLiteral = {
     val __obj = js.Dynamic.literal(value = null)
     __obj.updateDynamic("type")("Literal")
     __obj.asInstanceOf[SimpleLiteral]
   }
   
-  @scala.inline
-  implicit class SimpleLiteralMutableBuilder[Self <: SimpleLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleLiteral](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.Literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.Literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | Boolean | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Boolean | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

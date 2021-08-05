@@ -24,18 +24,12 @@ object loggerMod {
     def this(hasLevelHandlers: LoggerOptions) = this()
   }
   
-  @scala.inline
-  def createDefaultLoggerHandlers(): Set[StreamHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLoggerHandlers")().asInstanceOf[Set[StreamHandler]]
-  @scala.inline
-  def createDefaultLoggerHandlers(formatter: LoggerFormatter): Set[StreamHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLoggerHandlers")(formatter.asInstanceOf[js.Any]).asInstanceOf[Set[StreamHandler]]
+  inline def createDefaultLoggerHandlers(): Set[StreamHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLoggerHandlers")().asInstanceOf[Set[StreamHandler]]
+  inline def createDefaultLoggerHandlers(formatter: LoggerFormatter): Set[StreamHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLoggerHandlers")(formatter.asInstanceOf[js.Any]).asInstanceOf[Set[StreamHandler]]
   
-  @scala.inline
-  def createFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")().asInstanceOf[LoggerFormatter]
-  @scala.inline
-  def createFormatter(options: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(options.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  inline def createFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")().asInstanceOf[LoggerFormatter]
+  inline def createFormatter(options: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(options.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @scala.inline
-  def createPrefixedWriteStream(log: ILogger, prefix: String): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedWriteStream")(log.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
-  @scala.inline
-  def createPrefixedWriteStream(log: ILogger, prefix: String, level: LoggerLevelWeight): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedWriteStream")(log.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+  inline def createPrefixedWriteStream(log: ILogger, prefix: String): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedWriteStream")(log.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+  inline def createPrefixedWriteStream(log: ILogger, prefix: String, level: LoggerLevelWeight): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedWriteStream")(log.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
 }

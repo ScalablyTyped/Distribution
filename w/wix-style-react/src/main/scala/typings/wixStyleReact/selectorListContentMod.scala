@@ -47,98 +47,68 @@ object selectorListContentMod extends Shortcut {
   }
   object SelectorListContentProps {
     
-    @scala.inline
-    def apply(items: js.Array[SelectorListItem], loadMore: () => Unit, searchValue: String): SelectorListContentProps = {
+    inline def apply(items: js.Array[SelectorListItem], loadMore: () => Unit, searchValue: String): SelectorListContentProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], loadMore = js.Any.fromFunction0(loadMore), searchValue = searchValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectorListContentProps]
     }
     
-    @scala.inline
-    implicit class SelectorListContentPropsMutableBuilder[Self <: SelectorListContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorListContentProps](x: Self) {
       
-      @scala.inline
-      def setCheckIsSelected(value: /* item */ SelectorListItem => Boolean): Self = StObject.set(x, "checkIsSelected", js.Any.fromFunction1(value))
+      inline def setCheckIsSelected(value: /* item */ SelectorListItem => Boolean): Self = StObject.set(x, "checkIsSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCheckIsSelectedUndefined: Self = StObject.set(x, "checkIsSelected", js.undefined)
+      inline def setCheckIsSelectedUndefined: Self = StObject.set(x, "checkIsSelected", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setEmptyState(value: ReactNode): Self = StObject.set(x, "emptyState", value.asInstanceOf[js.Any])
+      inline def setEmptyState(value: ReactNode): Self = StObject.set(x, "emptyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStateUndefined: Self = StObject.set(x, "emptyState", js.undefined)
+      inline def setEmptyStateUndefined: Self = StObject.set(x, "emptyState", js.undefined)
       
-      @scala.inline
-      def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+      inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
+      inline def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
       
-      @scala.inline
-      def setImageShape(value: SelectorListImageShape): Self = StObject.set(x, "imageShape", value.asInstanceOf[js.Any])
+      inline def setImageShape(value: SelectorListImageShape): Self = StObject.set(x, "imageShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageShapeUndefined: Self = StObject.set(x, "imageShape", js.undefined)
+      inline def setImageShapeUndefined: Self = StObject.set(x, "imageShape", js.undefined)
       
-      @scala.inline
-      def setImageSize(value: SelectorListImageSize): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
+      inline def setImageSize(value: SelectorListImageSize): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
+      inline def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
       
-      @scala.inline
-      def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
+      inline def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+      inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[SelectorListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[SelectorListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: SelectorListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SelectorListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadMore(value: () => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction0(value))
+      inline def setLoadMore(value: () => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setNoResultsFound(value: Boolean): Self = StObject.set(x, "noResultsFound", value.asInstanceOf[js.Any])
+      inline def setNoResultsFound(value: Boolean): Self = StObject.set(x, "noResultsFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoResultsFoundUndefined: Self = StObject.set(x, "noResultsFound", js.undefined)
+      inline def setNoResultsFoundUndefined: Self = StObject.set(x, "noResultsFound", js.undefined)
       
-      @scala.inline
-      def setOnToggle(value: /* item */ SelectorListItem => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: /* item */ SelectorListItem => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+      inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
-      @scala.inline
-      def setRenderNoResults(value: /* searchValue */ String => ReactNode): Self = StObject.set(x, "renderNoResults", js.Any.fromFunction1(value))
+      inline def setRenderNoResults(value: /* searchValue */ String => ReactNode): Self = StObject.set(x, "renderNoResults", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderNoResultsUndefined: Self = StObject.set(x, "renderNoResults", js.undefined)
+      inline def setRenderNoResultsUndefined: Self = StObject.set(x, "renderNoResults", js.undefined)
       
-      @scala.inline
-      def setSearchValue(value: String): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
+      inline def setSearchValue(value: String): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,11 +119,9 @@ object selectorListContentMod extends Shortcut {
   trait SelectorListImageShape extends StObject
   object SelectorListImageShape {
     
-    @scala.inline
-    def circle: typings.wixStyleReact.wixStyleReactStrings.circle = "circle".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.circle]
+    inline def circle: typings.wixStyleReact.wixStyleReactStrings.circle = "circle".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.circle]
     
-    @scala.inline
-    def rectangular: typings.wixStyleReact.wixStyleReactStrings.rectangular = "rectangular".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.rectangular]
+    inline def rectangular: typings.wixStyleReact.wixStyleReactStrings.rectangular = "rectangular".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.rectangular]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -166,20 +134,15 @@ object selectorListContentMod extends Shortcut {
   trait SelectorListImageSize extends StObject
   object SelectorListImageSize {
     
-    @scala.inline
-    def cinema: typings.wixStyleReact.wixStyleReactStrings.cinema = "cinema".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.cinema]
+    inline def cinema: typings.wixStyleReact.wixStyleReactStrings.cinema = "cinema".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.cinema]
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def portrait: typings.wixStyleReact.wixStyleReactStrings.portrait = "portrait".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.portrait]
+    inline def portrait: typings.wixStyleReact.wixStyleReactStrings.portrait = "portrait".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.portrait]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
     
-    @scala.inline
-    def tiny: typings.wixStyleReact.wixStyleReactStrings.tiny = "tiny".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.tiny]
+    inline def tiny: typings.wixStyleReact.wixStyleReactStrings.tiny = "tiny".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.tiny]
   }
   
   trait SelectorListItem extends StObject {
@@ -208,77 +171,54 @@ object selectorListContentMod extends Shortcut {
   }
   object SelectorListItem {
     
-    @scala.inline
-    def apply(id: Double | String): SelectorListItem = {
+    inline def apply(id: Double | String): SelectorListItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectorListItem]
     }
     
-    @scala.inline
-    implicit class SelectorListItemMutableBuilder[Self <: SelectorListItem] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorListItem](x: Self) {
       
-      @scala.inline
-      def setBelowNode(value: ReactNode): Self = StObject.set(x, "belowNode", value.asInstanceOf[js.Any])
+      inline def setBelowNode(value: ReactNode): Self = StObject.set(x, "belowNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBelowNodeUndefined: Self = StObject.set(x, "belowNode", js.undefined)
+      inline def setBelowNodeUndefined: Self = StObject.set(x, "belowNode", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setExtraNode(value: ReactNode): Self = StObject.set(x, "extraNode", value.asInstanceOf[js.Any])
+      inline def setExtraNode(value: ReactNode): Self = StObject.set(x, "extraNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraNodeUndefined: Self = StObject.set(x, "extraNode", js.undefined)
+      inline def setExtraNodeUndefined: Self = StObject.set(x, "extraNode", js.undefined)
       
-      @scala.inline
-      def setExtraText(value: String): Self = StObject.set(x, "extraText", value.asInstanceOf[js.Any])
+      inline def setExtraText(value: String): Self = StObject.set(x, "extraText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraTextUndefined: Self = StObject.set(x, "extraText", js.undefined)
+      inline def setExtraTextUndefined: Self = StObject.set(x, "extraText", js.undefined)
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setShowBelowNodeOnSelect(value: Boolean): Self = StObject.set(x, "showBelowNodeOnSelect", value.asInstanceOf[js.Any])
+      inline def setShowBelowNodeOnSelect(value: Boolean): Self = StObject.set(x, "showBelowNodeOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowBelowNodeOnSelectUndefined: Self = StObject.set(x, "showBelowNodeOnSelect", js.undefined)
+      inline def setShowBelowNodeOnSelectUndefined: Self = StObject.set(x, "showBelowNodeOnSelect", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleNode(value: ReactNode): Self = StObject.set(x, "subtitleNode", value.asInstanceOf[js.Any])
+      inline def setSubtitleNode(value: ReactNode): Self = StObject.set(x, "subtitleNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleNodeUndefined: Self = StObject.set(x, "subtitleNode", js.undefined)
+      inline def setSubtitleNodeUndefined: Self = StObject.set(x, "subtitleNode", js.undefined)
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

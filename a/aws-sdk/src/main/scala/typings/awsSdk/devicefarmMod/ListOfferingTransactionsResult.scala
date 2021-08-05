@@ -18,28 +18,21 @@ trait ListOfferingTransactionsResult extends StObject {
 }
 object ListOfferingTransactionsResult {
   
-  @scala.inline
-  def apply(): ListOfferingTransactionsResult = {
+  inline def apply(): ListOfferingTransactionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOfferingTransactionsResult]
   }
   
-  @scala.inline
-  implicit class ListOfferingTransactionsResultMutableBuilder[Self <: ListOfferingTransactionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListOfferingTransactionsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOfferingTransactions(value: OfferingTransactions): Self = StObject.set(x, "offeringTransactions", value.asInstanceOf[js.Any])
+    inline def setOfferingTransactions(value: OfferingTransactions): Self = StObject.set(x, "offeringTransactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTransactionsUndefined: Self = StObject.set(x, "offeringTransactions", js.undefined)
+    inline def setOfferingTransactionsUndefined: Self = StObject.set(x, "offeringTransactions", js.undefined)
     
-    @scala.inline
-    def setOfferingTransactionsVarargs(value: OfferingTransaction*): Self = StObject.set(x, "offeringTransactions", js.Array(value :_*))
+    inline def setOfferingTransactionsVarargs(value: OfferingTransaction*): Self = StObject.set(x, "offeringTransactions", js.Array(value :_*))
   }
 }

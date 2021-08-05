@@ -15,6 +15,6 @@ object logScaleMod {
   class Log () extends QuantitativeScale[Double] {
     def this(base: Double) = this()
     
-    var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: js.Any = js.native
   }
 }

@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(gulp: Gulp): GulpHelp = ^.asInstanceOf[js.Dynamic].apply(gulp.asInstanceOf[js.Any]).asInstanceOf[GulpHelp]
-  @scala.inline
-  def apply(gulp: Gulp, options: GulpHelpOptions): GulpHelp = (^.asInstanceOf[js.Dynamic].apply(gulp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GulpHelp]
+  inline def apply(gulp: Gulp): GulpHelp = ^.asInstanceOf[js.Dynamic].apply(gulp.asInstanceOf[js.Any]).asInstanceOf[GulpHelp]
+  inline def apply(gulp: Gulp, options: GulpHelpOptions): GulpHelp = (^.asInstanceOf[js.Dynamic].apply(gulp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GulpHelp]
   
   @JSImport("gulp-help", JSImport.Namespace)
   @js.native
@@ -63,47 +61,34 @@ object mod {
   }
   object GulpHelpOptions {
     
-    @scala.inline
-    def apply(): GulpHelpOptions = {
+    inline def apply(): GulpHelpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GulpHelpOptions]
     }
     
-    @scala.inline
-    implicit class GulpHelpOptionsMutableBuilder[Self <: GulpHelpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GulpHelpOptions](x: Self) {
       
-      @scala.inline
-      def setAfterPrintCallback(value: js.Function): Self = StObject.set(x, "afterPrintCallback", value.asInstanceOf[js.Any])
+      inline def setAfterPrintCallback(value: js.Function): Self = StObject.set(x, "afterPrintCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterPrintCallbackUndefined: Self = StObject.set(x, "afterPrintCallback", js.undefined)
+      inline def setAfterPrintCallbackUndefined: Self = StObject.set(x, "afterPrintCallback", js.undefined)
       
-      @scala.inline
-      def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setHideDepsMessage(value: Boolean): Self = StObject.set(x, "hideDepsMessage", value.asInstanceOf[js.Any])
+      inline def setHideDepsMessage(value: Boolean): Self = StObject.set(x, "hideDepsMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDepsMessageUndefined: Self = StObject.set(x, "hideDepsMessage", js.undefined)
+      inline def setHideDepsMessageUndefined: Self = StObject.set(x, "hideDepsMessage", js.undefined)
       
-      @scala.inline
-      def setHideEmpty(value: Boolean): Self = StObject.set(x, "hideEmpty", value.asInstanceOf[js.Any])
+      inline def setHideEmpty(value: Boolean): Self = StObject.set(x, "hideEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideEmptyUndefined: Self = StObject.set(x, "hideEmpty", js.undefined)
+      inline def setHideEmptyUndefined: Self = StObject.set(x, "hideEmpty", js.undefined)
     }
   }
   
@@ -176,29 +161,22 @@ object mod {
   }
   object TaskOptions {
     
-    @scala.inline
-    def apply(): TaskOptions = {
+    inline def apply(): TaskOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskOptions]
     }
     
-    @scala.inline
-    implicit class TaskOptionsMutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TaskOptions](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

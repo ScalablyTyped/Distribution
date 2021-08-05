@@ -33,34 +33,25 @@ trait Length extends StObject {
 }
 object Length {
   
-  @scala.inline
-  def apply(length: Double, offset: Double, types: js.Array[String], typos: Double, words: js.Array[String]): Length = {
+  inline def apply(length: Double, offset: Double, types: js.Array[String], typos: Double, words: js.Array[String]): Length = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], typos = typos.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Length]
   }
   
-  @scala.inline
-  implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+  extension [Self <: Length](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setTypos(value: Double): Self = StObject.set(x, "typos", value.asInstanceOf[js.Any])
+    inline def setTypos(value: Double): Self = StObject.set(x, "typos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

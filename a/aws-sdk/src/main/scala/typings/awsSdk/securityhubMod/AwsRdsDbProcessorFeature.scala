@@ -18,25 +18,19 @@ trait AwsRdsDbProcessorFeature extends StObject {
 }
 object AwsRdsDbProcessorFeature {
   
-  @scala.inline
-  def apply(): AwsRdsDbProcessorFeature = {
+  inline def apply(): AwsRdsDbProcessorFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbProcessorFeature]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbProcessorFeatureMutableBuilder[Self <: AwsRdsDbProcessorFeature] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbProcessorFeature](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

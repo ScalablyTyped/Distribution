@@ -22,38 +22,28 @@ object tab {
   }
   object ITabOptions {
     
-    @scala.inline
-    def apply(): ITabOptions = {
+    inline def apply(): ITabOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITabOptions]
     }
     
-    @scala.inline
-    implicit class ITabOptionsMutableBuilder[Self <: ITabOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITabOptions](x: Self) {
       
-      @scala.inline
-      def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+      inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+      inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setNavClass(value: String): Self = StObject.set(x, "navClass", value.asInstanceOf[js.Any])
+      inline def setNavClass(value: String): Self = StObject.set(x, "navClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavClassUndefined: Self = StObject.set(x, "navClass", js.undefined)
+      inline def setNavClassUndefined: Self = StObject.set(x, "navClass", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -63,17 +53,14 @@ object tab {
   }
   object ITabProvider {
     
-    @scala.inline
-    def apply(defaults: ITabOptions): ITabProvider = {
+    inline def apply(defaults: ITabOptions): ITabProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITabProvider]
     }
     
-    @scala.inline
-    implicit class ITabProviderMutableBuilder[Self <: ITabProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ITabProvider](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: ITabOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: ITabOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,20 +72,16 @@ object tab {
   }
   object ITabService {
     
-    @scala.inline
-    def apply(controller: js.Any, defaults: ITabOptions): ITabService = {
+    inline def apply(controller: js.Any, defaults: ITabOptions): ITabService = {
       val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITabService]
     }
     
-    @scala.inline
-    implicit class ITabServiceMutableBuilder[Self <: ITabService] (val x: Self) extends AnyVal {
+    extension [Self <: ITabService](x: Self) {
       
-      @scala.inline
-      def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaults(value: ITabOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: ITabOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
 }

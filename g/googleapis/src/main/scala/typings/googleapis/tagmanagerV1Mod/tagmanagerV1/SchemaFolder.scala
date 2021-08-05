@@ -37,43 +37,31 @@ trait SchemaFolder extends StObject {
 }
 object SchemaFolder {
   
-  @scala.inline
-  def apply(): SchemaFolder = {
+  inline def apply(): SchemaFolder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFolder]
   }
   
-  @scala.inline
-  implicit class SchemaFolderMutableBuilder[Self <: SchemaFolder] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFolder](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
+    inline def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

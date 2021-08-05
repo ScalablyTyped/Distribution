@@ -10,16 +10,13 @@ trait AutoFocus extends StObject {
 }
 object AutoFocus {
   
-  @scala.inline
-  def apply(autoFocus: Boolean): AutoFocus = {
+  inline def apply(autoFocus: Boolean): AutoFocus = {
     val __obj = js.Dynamic.literal(autoFocus = autoFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFocus]
   }
   
-  @scala.inline
-  implicit class AutoFocusMutableBuilder[Self <: AutoFocus] (val x: Self) extends AnyVal {
+  extension [Self <: AutoFocus](x: Self) {
     
-    @scala.inline
-    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
   }
 }

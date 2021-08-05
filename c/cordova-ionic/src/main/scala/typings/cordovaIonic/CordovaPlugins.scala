@@ -11,16 +11,13 @@ trait CordovaPlugins extends StObject {
 }
 object CordovaPlugins {
   
-  @scala.inline
-  def apply(Keyboard: Keyboard): CordovaPlugins = {
+  inline def apply(Keyboard: Keyboard): CordovaPlugins = {
     val __obj = js.Dynamic.literal(Keyboard = Keyboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPlugins](x: Self) {
     
-    @scala.inline
-    def setKeyboard(value: Keyboard): Self = StObject.set(x, "Keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Keyboard): Self = StObject.set(x, "Keyboard", value.asInstanceOf[js.Any])
   }
 }

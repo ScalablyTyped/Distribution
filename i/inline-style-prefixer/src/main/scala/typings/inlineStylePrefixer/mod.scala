@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPrefixer(staticData: StaticData): Prefix_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixer")(staticData.asInstanceOf[js.Any]).asInstanceOf[Prefix_]
+  inline def createPrefixer(staticData: StaticData): Prefix_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixer")(staticData.asInstanceOf[js.Any]).asInstanceOf[Prefix_]
   
   @JSImport("inline-style-prefixer", "prefix")
   @js.native
@@ -36,23 +35,18 @@ object mod {
   }
   object StaticData {
     
-    @scala.inline
-    def apply(plugins: js.Array[Plugin], prefixMap: Record[String, js.Array[String]]): StaticData = {
+    inline def apply(plugins: js.Array[Plugin], prefixMap: Record[String, js.Array[String]]): StaticData = {
       val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any], prefixMap = prefixMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticData]
     }
     
-    @scala.inline
-    implicit class StaticDataMutableBuilder[Self <: StaticData] (val x: Self) extends AnyVal {
+    extension [Self <: StaticData](x: Self) {
       
-      @scala.inline
-      def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixMap(value: Record[String, js.Array[String]]): Self = StObject.set(x, "prefixMap", value.asInstanceOf[js.Any])
+      inline def setPrefixMap(value: Record[String, js.Array[String]]): Self = StObject.set(x, "prefixMap", value.asInstanceOf[js.Any])
     }
   }
 }

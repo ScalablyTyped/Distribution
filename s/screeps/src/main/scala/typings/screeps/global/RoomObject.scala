@@ -28,6 +28,5 @@ class RoomObject protected ()
 }
 object RoomObject {
   
-  @scala.inline
-  def apply: RoomObjectConstructor = js.Dynamic.global.selectDynamic("RoomObject").asInstanceOf[RoomObjectConstructor]
+  inline def apply: RoomObjectConstructor = js.Dynamic.global.selectDynamic("RoomObject").asInstanceOf[RoomObjectConstructor]
 }

@@ -24,58 +24,41 @@ trait InlineKeyboardButton extends StObject {
 }
 object InlineKeyboardButton {
   
-  @scala.inline
-  def apply(text: String): InlineKeyboardButton = {
+  inline def apply(text: String): InlineKeyboardButton = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineKeyboardButton]
   }
   
-  @scala.inline
-  implicit class InlineKeyboardButtonMutableBuilder[Self <: InlineKeyboardButton] (val x: Self) extends AnyVal {
+  extension [Self <: InlineKeyboardButton](x: Self) {
     
-    @scala.inline
-    def setCallback_data(value: String): Self = StObject.set(x, "callback_data", value.asInstanceOf[js.Any])
+    inline def setCallback_data(value: String): Self = StObject.set(x, "callback_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallback_dataUndefined: Self = StObject.set(x, "callback_data", js.undefined)
+    inline def setCallback_dataUndefined: Self = StObject.set(x, "callback_data", js.undefined)
     
-    @scala.inline
-    def setCallback_game(value: CallbackGame): Self = StObject.set(x, "callback_game", value.asInstanceOf[js.Any])
+    inline def setCallback_game(value: CallbackGame): Self = StObject.set(x, "callback_game", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallback_gameUndefined: Self = StObject.set(x, "callback_game", js.undefined)
+    inline def setCallback_gameUndefined: Self = StObject.set(x, "callback_game", js.undefined)
     
-    @scala.inline
-    def setLogin_url(value: LoginUrl): Self = StObject.set(x, "login_url", value.asInstanceOf[js.Any])
+    inline def setLogin_url(value: LoginUrl): Self = StObject.set(x, "login_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogin_urlUndefined: Self = StObject.set(x, "login_url", js.undefined)
+    inline def setLogin_urlUndefined: Self = StObject.set(x, "login_url", js.undefined)
     
-    @scala.inline
-    def setPay(value: Boolean): Self = StObject.set(x, "pay", value.asInstanceOf[js.Any])
+    inline def setPay(value: Boolean): Self = StObject.set(x, "pay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayUndefined: Self = StObject.set(x, "pay", js.undefined)
+    inline def setPayUndefined: Self = StObject.set(x, "pay", js.undefined)
     
-    @scala.inline
-    def setSwitch_inline_query(value: String): Self = StObject.set(x, "switch_inline_query", value.asInstanceOf[js.Any])
+    inline def setSwitch_inline_query(value: String): Self = StObject.set(x, "switch_inline_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitch_inline_queryUndefined: Self = StObject.set(x, "switch_inline_query", js.undefined)
+    inline def setSwitch_inline_queryUndefined: Self = StObject.set(x, "switch_inline_query", js.undefined)
     
-    @scala.inline
-    def setSwitch_inline_query_current_chat(value: String): Self = StObject.set(x, "switch_inline_query_current_chat", value.asInstanceOf[js.Any])
+    inline def setSwitch_inline_query_current_chat(value: String): Self = StObject.set(x, "switch_inline_query_current_chat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitch_inline_query_current_chatUndefined: Self = StObject.set(x, "switch_inline_query_current_chat", js.undefined)
+    inline def setSwitch_inline_query_current_chatUndefined: Self = StObject.set(x, "switch_inline_query_current_chat", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -94,26 +94,20 @@ object mod extends Shortcut {
   }
   object NpmWhichOptions {
     
-    @scala.inline
-    def apply(): NpmWhichOptions = {
+    inline def apply(): NpmWhichOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NpmWhichOptions]
     }
     
-    @scala.inline
-    implicit class NpmWhichOptionsMutableBuilder[Self <: NpmWhichOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NpmWhichOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   
@@ -162,23 +156,18 @@ object mod extends Shortcut {
   }
   object StaticWhichOptions {
     
-    @scala.inline
-    def apply(cwd: String): StaticWhichOptions = {
+    inline def apply(cwd: String): StaticWhichOptions = {
       val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticWhichOptions]
     }
     
-    @scala.inline
-    implicit class StaticWhichOptionsMutableBuilder[Self <: StaticWhichOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StaticWhichOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   

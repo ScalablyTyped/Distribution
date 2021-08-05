@@ -37,17 +37,14 @@ object anon {
   }
   object Required {
     
-    @scala.inline
-    def apply(required: Boolean): Required = {
+    inline def apply(required: Boolean): Required = {
       val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
       __obj.asInstanceOf[Required]
     }
     
-    @scala.inline
-    implicit class RequiredMutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
+    extension [Self <: Required](x: Self) {
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     }
   }
 }

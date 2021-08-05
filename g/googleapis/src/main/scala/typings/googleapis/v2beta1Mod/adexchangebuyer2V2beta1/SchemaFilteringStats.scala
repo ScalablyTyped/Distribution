@@ -24,28 +24,21 @@ trait SchemaFilteringStats extends StObject {
 }
 object SchemaFilteringStats {
   
-  @scala.inline
-  def apply(): SchemaFilteringStats = {
+  inline def apply(): SchemaFilteringStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilteringStats]
   }
   
-  @scala.inline
-  implicit class SchemaFilteringStatsMutableBuilder[Self <: SchemaFilteringStats] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilteringStats](x: Self) {
     
-    @scala.inline
-    def setDate(value: SchemaDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: SchemaDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setReasons(value: js.Array[SchemaReason]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
+    inline def setReasons(value: js.Array[SchemaReason]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
+    inline def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
-    @scala.inline
-    def setReasonsVarargs(value: SchemaReason*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: SchemaReason*): Self = StObject.set(x, "reasons", js.Array(value :_*))
   }
 }

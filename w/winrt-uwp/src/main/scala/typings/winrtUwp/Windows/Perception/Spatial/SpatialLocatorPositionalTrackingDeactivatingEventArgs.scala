@@ -10,16 +10,13 @@ trait SpatialLocatorPositionalTrackingDeactivatingEventArgs extends StObject {
 }
 object SpatialLocatorPositionalTrackingDeactivatingEventArgs {
   
-  @scala.inline
-  def apply(canceled: js.Any): SpatialLocatorPositionalTrackingDeactivatingEventArgs = {
+  inline def apply(canceled: js.Any): SpatialLocatorPositionalTrackingDeactivatingEventArgs = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialLocatorPositionalTrackingDeactivatingEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialLocatorPositionalTrackingDeactivatingEventArgsMutableBuilder[Self <: SpatialLocatorPositionalTrackingDeactivatingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialLocatorPositionalTrackingDeactivatingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCanceled(value: js.Any): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: js.Any): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
   }
 }

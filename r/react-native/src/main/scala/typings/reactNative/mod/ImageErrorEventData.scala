@@ -10,16 +10,13 @@ trait ImageErrorEventData extends StObject {
 }
 object ImageErrorEventData {
   
-  @scala.inline
-  def apply(error: js.Any): ImageErrorEventData = {
+  inline def apply(error: js.Any): ImageErrorEventData = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageErrorEventData]
   }
   
-  @scala.inline
-  implicit class ImageErrorEventDataMutableBuilder[Self <: ImageErrorEventData] (val x: Self) extends AnyVal {
+  extension [Self <: ImageErrorEventData](x: Self) {
     
-    @scala.inline
-    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

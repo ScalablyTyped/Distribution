@@ -18,22 +18,17 @@ trait AddTagsToResourceMessage extends StObject {
 }
 object AddTagsToResourceMessage {
   
-  @scala.inline
-  def apply(ResourceArn: String, Tags: TagList): AddTagsToResourceMessage = {
+  inline def apply(ResourceArn: String, Tags: TagList): AddTagsToResourceMessage = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddTagsToResourceMessage]
   }
   
-  @scala.inline
-  implicit class AddTagsToResourceMessageMutableBuilder[Self <: AddTagsToResourceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AddTagsToResourceMessage](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -33,13 +33,11 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType, ReducedValueType](
+  inline def apply[ValueType, ReducedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     reducer: ReducerFunction[ValueType, ReducedValueType]
   ): js.Promise[ReducedValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReducedValueType]]
-  @scala.inline
-  def apply[ValueType, ReducedValueType](
+  inline def apply[ValueType, ReducedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     reducer: ReducerFunction[ValueType, ReducedValueType],
     initialValue: ReducedValueType
@@ -59,8 +57,7 @@ object mod {
   @JSImport("p-reduce", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type ReducerFunction[ValueType, ReducedValueType] = js.Function3[
     /* previousValue */ ReducedValueType, 

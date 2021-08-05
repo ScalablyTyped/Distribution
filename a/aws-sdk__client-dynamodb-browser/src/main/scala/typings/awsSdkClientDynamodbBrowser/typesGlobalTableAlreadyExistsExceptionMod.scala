@@ -16,17 +16,14 @@ object typesGlobalTableAlreadyExistsExceptionMod {
   }
   object GlobalTableAlreadyExistsException {
     
-    @scala.inline
-    def apply(): GlobalTableAlreadyExistsException = {
+    inline def apply(): GlobalTableAlreadyExistsException = {
       val __obj = js.Dynamic.literal(name = "GlobalTableAlreadyExistsException")
       __obj.asInstanceOf[GlobalTableAlreadyExistsException]
     }
     
-    @scala.inline
-    implicit class GlobalTableAlreadyExistsExceptionMutableBuilder[Self <: GlobalTableAlreadyExistsException] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTableAlreadyExistsException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.GlobalTableAlreadyExistsException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,20 +38,16 @@ object typesGlobalTableAlreadyExistsExceptionMod {
   }
   object GlobalTableAlreadyExistsExceptionDetails {
     
-    @scala.inline
-    def apply(): GlobalTableAlreadyExistsExceptionDetails = {
+    inline def apply(): GlobalTableAlreadyExistsExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalTableAlreadyExistsExceptionDetails]
     }
     
-    @scala.inline
-    implicit class GlobalTableAlreadyExistsExceptionDetailsMutableBuilder[Self <: GlobalTableAlreadyExistsExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTableAlreadyExistsExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

@@ -28,37 +28,27 @@ trait ListConnectionsInput extends StObject {
 }
 object ListConnectionsInput {
   
-  @scala.inline
-  def apply(): ListConnectionsInput = {
+  inline def apply(): ListConnectionsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListConnectionsInput]
   }
   
-  @scala.inline
-  implicit class ListConnectionsInputMutableBuilder[Self <: ListConnectionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListConnectionsInput](x: Self) {
     
-    @scala.inline
-    def setHostArnFilter(value: HostArn): Self = StObject.set(x, "HostArnFilter", value.asInstanceOf[js.Any])
+    inline def setHostArnFilter(value: HostArn): Self = StObject.set(x, "HostArnFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostArnFilterUndefined: Self = StObject.set(x, "HostArnFilter", js.undefined)
+    inline def setHostArnFilterUndefined: Self = StObject.set(x, "HostArnFilter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProviderTypeFilter(value: ProviderType): Self = StObject.set(x, "ProviderTypeFilter", value.asInstanceOf[js.Any])
+    inline def setProviderTypeFilter(value: ProviderType): Self = StObject.set(x, "ProviderTypeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderTypeFilterUndefined: Self = StObject.set(x, "ProviderTypeFilter", js.undefined)
+    inline def setProviderTypeFilterUndefined: Self = StObject.set(x, "ProviderTypeFilter", js.undefined)
   }
 }

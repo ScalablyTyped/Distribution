@@ -18,43 +18,31 @@ trait Envelope extends StObject {
 }
 object Envelope {
   
-  @scala.inline
-  def apply(): Envelope = {
+  inline def apply(): Envelope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Envelope]
   }
   
-  @scala.inline
-  implicit class EnvelopeMutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
+  extension [Self <: Envelope](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setPp(value: String): Self = StObject.set(x, "pp", value.asInstanceOf[js.Any])
+    inline def setPp(value: String): Self = StObject.set(x, "pp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPpUndefined: Self = StObject.set(x, "pp", js.undefined)
+    inline def setPpUndefined: Self = StObject.set(x, "pp", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

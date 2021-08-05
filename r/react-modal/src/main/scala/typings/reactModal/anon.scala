@@ -15,26 +15,20 @@ object anon {
   }
   object Content {
     
-    @scala.inline
-    def apply(): Content = {
+    inline def apply(): Content = {
       val __obj = js.Dynamic.literal(content = null, overlay = null)
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setContent(value: HTMLDivElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: HTMLDivElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      @scala.inline
-      def setOverlay(value: HTMLDivElement): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: HTMLDivElement): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayNull: Self = StObject.set(x, "overlay", null)
+      inline def setOverlayNull: Self = StObject.set(x, "overlay", null)
     }
   }
 }

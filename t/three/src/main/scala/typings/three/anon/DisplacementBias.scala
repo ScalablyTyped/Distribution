@@ -15,22 +15,17 @@ trait DisplacementBias extends StObject {
 }
 object DisplacementBias {
   
-  @scala.inline
-  def apply(displacementBias: IUniform, displacementMap: IUniform, displacementScale: IUniform): DisplacementBias = {
+  inline def apply(displacementBias: IUniform, displacementMap: IUniform, displacementScale: IUniform): DisplacementBias = {
     val __obj = js.Dynamic.literal(displacementBias = displacementBias.asInstanceOf[js.Any], displacementMap = displacementMap.asInstanceOf[js.Any], displacementScale = displacementScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplacementBias]
   }
   
-  @scala.inline
-  implicit class DisplacementBiasMutableBuilder[Self <: DisplacementBias] (val x: Self) extends AnyVal {
+  extension [Self <: DisplacementBias](x: Self) {
     
-    @scala.inline
-    def setDisplacementBias(value: IUniform): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
+    inline def setDisplacementBias(value: IUniform): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplacementMap(value: IUniform): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
+    inline def setDisplacementMap(value: IUniform): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplacementScale(value: IUniform): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
+    inline def setDisplacementScale(value: IUniform): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
   }
 }

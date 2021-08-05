@@ -18,23 +18,18 @@ trait IntArraySupportOption
 }
 object IntArraySupportOption {
   
-  @scala.inline
-  def apply(category: String, default: js.Array[Value], since: String): IntArraySupportOption = {
+  inline def apply(category: String, default: js.Array[Value], since: String): IntArraySupportOption = {
     val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("int")
     __obj.asInstanceOf[IntArraySupportOption]
   }
   
-  @scala.inline
-  implicit class IntArraySupportOptionMutableBuilder[Self <: IntArraySupportOption] (val x: Self) extends AnyVal {
+  extension [Self <: IntArraySupportOption](x: Self) {
     
-    @scala.inline
-    def setArray(value: `true`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: `true`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: js.Array[Value]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Array[Value]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVarargs(value: Value*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultVarargs(value: Value*): Self = StObject.set(x, "default", js.Array(value :_*))
   }
 }

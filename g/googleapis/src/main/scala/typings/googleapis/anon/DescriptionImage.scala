@@ -14,31 +14,23 @@ trait DescriptionImage extends StObject {
 }
 object DescriptionImage {
   
-  @scala.inline
-  def apply(): DescriptionImage = {
+  inline def apply(): DescriptionImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescriptionImage]
   }
   
-  @scala.inline
-  implicit class DescriptionImageMutableBuilder[Self <: DescriptionImage] (val x: Self) extends AnyVal {
+  extension [Self <: DescriptionImage](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setImage(value: HeightType): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: HeightType): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

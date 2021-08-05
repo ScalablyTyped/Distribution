@@ -18,22 +18,17 @@ trait OriginGroupMembers extends StObject {
 }
 object OriginGroupMembers {
   
-  @scala.inline
-  def apply(Items: OriginGroupMemberList, Quantity: integer): OriginGroupMembers = {
+  inline def apply(Items: OriginGroupMemberList, Quantity: integer): OriginGroupMembers = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginGroupMembers]
   }
   
-  @scala.inline
-  implicit class OriginGroupMembersMutableBuilder[Self <: OriginGroupMembers] (val x: Self) extends AnyVal {
+  extension [Self <: OriginGroupMembers](x: Self) {
     
-    @scala.inline
-    def setItems(value: OriginGroupMemberList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: OriginGroupMemberList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: OriginGroupMember*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: OriginGroupMember*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

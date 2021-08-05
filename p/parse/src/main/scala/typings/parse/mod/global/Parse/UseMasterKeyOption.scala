@@ -13,19 +13,15 @@ trait UseMasterKeyOption extends StObject {
 }
 object UseMasterKeyOption {
   
-  @scala.inline
-  def apply(): UseMasterKeyOption = {
+  inline def apply(): UseMasterKeyOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseMasterKeyOption]
   }
   
-  @scala.inline
-  implicit class UseMasterKeyOptionMutableBuilder[Self <: UseMasterKeyOption] (val x: Self) extends AnyVal {
+  extension [Self <: UseMasterKeyOption](x: Self) {
     
-    @scala.inline
-    def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
+    inline def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMasterKeyUndefined: Self = StObject.set(x, "useMasterKey", js.undefined)
+    inline def setUseMasterKeyUndefined: Self = StObject.set(x, "useMasterKey", js.undefined)
   }
 }

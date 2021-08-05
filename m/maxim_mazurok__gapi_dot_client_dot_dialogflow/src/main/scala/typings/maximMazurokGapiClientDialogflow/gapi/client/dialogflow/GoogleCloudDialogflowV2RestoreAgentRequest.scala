@@ -14,25 +14,19 @@ trait GoogleCloudDialogflowV2RestoreAgentRequest extends StObject {
 }
 object GoogleCloudDialogflowV2RestoreAgentRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2RestoreAgentRequest = {
+  inline def apply(): GoogleCloudDialogflowV2RestoreAgentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2RestoreAgentRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2RestoreAgentRequestMutableBuilder[Self <: GoogleCloudDialogflowV2RestoreAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2RestoreAgentRequest](x: Self) {
     
-    @scala.inline
-    def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
+    inline def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
+    inline def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
     
-    @scala.inline
-    def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
+    inline def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
+    inline def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
   }
 }

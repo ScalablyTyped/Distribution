@@ -75,100 +75,69 @@ trait ListPartsOutput extends StObject {
 }
 object ListPartsOutput {
   
-  @scala.inline
-  def apply(): ListPartsOutput = {
+  inline def apply(): ListPartsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPartsOutput]
   }
   
-  @scala.inline
-  implicit class ListPartsOutputMutableBuilder[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPartsOutput](x: Self) {
     
-    @scala.inline
-    def setAbortDate(value: AbortDate): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
+    inline def setAbortDate(value: AbortDate): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortDateUndefined: Self = StObject.set(x, "AbortDate", js.undefined)
+    inline def setAbortDateUndefined: Self = StObject.set(x, "AbortDate", js.undefined)
     
-    @scala.inline
-    def setAbortRuleId(value: AbortRuleId): Self = StObject.set(x, "AbortRuleId", value.asInstanceOf[js.Any])
+    inline def setAbortRuleId(value: AbortRuleId): Self = StObject.set(x, "AbortRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortRuleIdUndefined: Self = StObject.set(x, "AbortRuleId", js.undefined)
+    inline def setAbortRuleIdUndefined: Self = StObject.set(x, "AbortRuleId", js.undefined)
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setInitiator(value: Initiator): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
+    inline def setInitiator(value: Initiator): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
+    inline def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
     
-    @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setMaxParts(value: MaxParts): Self = StObject.set(x, "MaxParts", value.asInstanceOf[js.Any])
+    inline def setMaxParts(value: MaxParts): Self = StObject.set(x, "MaxParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPartsUndefined: Self = StObject.set(x, "MaxParts", js.undefined)
+    inline def setMaxPartsUndefined: Self = StObject.set(x, "MaxParts", js.undefined)
     
-    @scala.inline
-    def setNextPartNumberMarker(value: NextPartNumberMarker): Self = StObject.set(x, "NextPartNumberMarker", value.asInstanceOf[js.Any])
+    inline def setNextPartNumberMarker(value: NextPartNumberMarker): Self = StObject.set(x, "NextPartNumberMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPartNumberMarkerUndefined: Self = StObject.set(x, "NextPartNumberMarker", js.undefined)
+    inline def setNextPartNumberMarkerUndefined: Self = StObject.set(x, "NextPartNumberMarker", js.undefined)
     
-    @scala.inline
-    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
-    @scala.inline
-    def setPartNumberMarker(value: PartNumberMarker): Self = StObject.set(x, "PartNumberMarker", value.asInstanceOf[js.Any])
+    inline def setPartNumberMarker(value: PartNumberMarker): Self = StObject.set(x, "PartNumberMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartNumberMarkerUndefined: Self = StObject.set(x, "PartNumberMarker", js.undefined)
+    inline def setPartNumberMarkerUndefined: Self = StObject.set(x, "PartNumberMarker", js.undefined)
     
-    @scala.inline
-    def setParts(value: Parts): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: Parts): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
+    inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
     
-    @scala.inline
-    def setPartsVarargs(value: Part*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: Part*): Self = StObject.set(x, "Parts", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+    inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+    inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
-    @scala.inline
-    def setUploadId(value: MultipartUploadId): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: MultipartUploadId): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
+    inline def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
   }
 }

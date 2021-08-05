@@ -20,25 +20,19 @@ trait ConsoleViewRequest extends StObject {
 }
 object ConsoleViewRequest {
   
-  @scala.inline
-  def apply(): ConsoleViewRequest = {
+  inline def apply(): ConsoleViewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConsoleViewRequest]
   }
   
-  @scala.inline
-  implicit class ConsoleViewRequestMutableBuilder[Self <: ConsoleViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleViewRequest](x: Self) {
     
-    @scala.inline
-    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
+    inline def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
-    @scala.inline
-    def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
+    inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
+    inline def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
   }
 }

@@ -30,32 +30,24 @@ object typesListBranchesOutputMod {
   }
   object ListBranchesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListBranchesOutput = {
+    inline def apply($metadata: ResponseMetadata): ListBranchesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListBranchesOutput]
     }
     
-    @scala.inline
-    implicit class ListBranchesOutputMutableBuilder[Self <: ListBranchesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBranchesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      @scala.inline
-      def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     }
   }
 }

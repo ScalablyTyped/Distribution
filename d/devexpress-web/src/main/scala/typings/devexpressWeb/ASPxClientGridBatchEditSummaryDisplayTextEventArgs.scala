@@ -63,8 +63,7 @@ trait ASPxClientGridBatchEditSummaryDisplayTextEventArgs
 }
 object ASPxClientGridBatchEditSummaryDisplayTextEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayText: String,
     groupRowVisibleIndex: Double,
     isGroupSummary: Boolean,
@@ -80,37 +79,26 @@ object ASPxClientGridBatchEditSummaryDisplayTextEventArgs {
     __obj.asInstanceOf[ASPxClientGridBatchEditSummaryDisplayTextEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridBatchEditSummaryDisplayTextEventArgsMutableBuilder[Self <: ASPxClientGridBatchEditSummaryDisplayTextEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridBatchEditSummaryDisplayTextEventArgs](x: Self) {
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupRowVisibleIndex(value: Double): Self = StObject.set(x, "groupRowVisibleIndex", value.asInstanceOf[js.Any])
+    inline def setGroupRowVisibleIndex(value: Double): Self = StObject.set(x, "groupRowVisibleIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupSummary(value: Boolean): Self = StObject.set(x, "isGroupSummary", value.asInstanceOf[js.Any])
+    inline def setIsGroupSummary(value: Boolean): Self = StObject.set(x, "isGroupSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTotalSummary(value: Boolean): Self = StObject.set(x, "isTotalSummary", value.asInstanceOf[js.Any])
+    inline def setIsTotalSummary(value: Boolean): Self = StObject.set(x, "isTotalSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerValue(value: Double): Self = StObject.set(x, "serverValue", value.asInstanceOf[js.Any])
+    inline def setServerValue(value: Double): Self = StObject.set(x, "serverValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryElement(value: js.Any): Self = StObject.set(x, "summaryElement", value.asInstanceOf[js.Any])
+    inline def setSummaryElement(value: js.Any): Self = StObject.set(x, "summaryElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryFieldName(value: String): Self = StObject.set(x, "summaryFieldName", value.asInstanceOf[js.Any])
+    inline def setSummaryFieldName(value: String): Self = StObject.set(x, "summaryFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryItemIndex(value: Double): Self = StObject.set(x, "summaryItemIndex", value.asInstanceOf[js.Any])
+    inline def setSummaryItemIndex(value: Double): Self = StObject.set(x, "summaryItemIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryType(value: ASPxClientSummaryItemType): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
+    inline def setSummaryType(value: ASPxClientSummaryItemType): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

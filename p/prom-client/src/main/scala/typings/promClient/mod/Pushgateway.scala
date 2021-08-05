@@ -81,23 +81,18 @@ object Pushgateway {
   }
   object Parameters {
     
-    @scala.inline
-    def apply(jobName: String): Parameters = {
+    inline def apply(jobName: String): Parameters = {
       val __obj = js.Dynamic.literal(jobName = jobName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parameters]
     }
     
-    @scala.inline
-    implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+    extension [Self <: Parameters](x: Self) {
       
-      @scala.inline
-      def setGroupings(value: StringDictionary[String]): Self = StObject.set(x, "groupings", value.asInstanceOf[js.Any])
+      inline def setGroupings(value: StringDictionary[String]): Self = StObject.set(x, "groupings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingsUndefined: Self = StObject.set(x, "groupings", js.undefined)
+      inline def setGroupingsUndefined: Self = StObject.set(x, "groupings", js.undefined)
       
-      @scala.inline
-      def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+      inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     }
   }
 }

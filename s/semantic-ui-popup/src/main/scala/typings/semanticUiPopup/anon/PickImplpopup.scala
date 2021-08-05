@@ -13,16 +13,13 @@ trait PickImplpopup extends StObject {
 }
 object PickImplpopup {
   
-  @scala.inline
-  def apply(popup: `false` | String | JQuery): PickImplpopup = {
+  inline def apply(popup: `false` | String | JQuery): PickImplpopup = {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpopup]
   }
   
-  @scala.inline
-  implicit class PickImplpopupMutableBuilder[Self <: PickImplpopup] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpopup](x: Self) {
     
-    @scala.inline
-    def setPopup(value: `false` | String | JQuery): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: `false` | String | JQuery): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
   }
 }

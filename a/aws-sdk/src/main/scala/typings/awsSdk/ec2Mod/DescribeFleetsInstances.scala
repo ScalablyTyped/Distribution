@@ -33,46 +33,33 @@ trait DescribeFleetsInstances extends StObject {
 }
 object DescribeFleetsInstances {
   
-  @scala.inline
-  def apply(): DescribeFleetsInstances = {
+  inline def apply(): DescribeFleetsInstances = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetsInstances]
   }
   
-  @scala.inline
-  implicit class DescribeFleetsInstancesMutableBuilder[Self <: DescribeFleetsInstances] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetsInstances](x: Self) {
     
-    @scala.inline
-    def setInstanceIds(value: InstanceIdsSet): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
+    inline def setInstanceIds(value: InstanceIdsSet): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
+    inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    @scala.inline
-    def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateAndOverrides(value: LaunchTemplateAndOverridesResponse): Self = StObject.set(x, "LaunchTemplateAndOverrides", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateAndOverrides(value: LaunchTemplateAndOverridesResponse): Self = StObject.set(x, "LaunchTemplateAndOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateAndOverridesUndefined: Self = StObject.set(x, "LaunchTemplateAndOverrides", js.undefined)
+    inline def setLaunchTemplateAndOverridesUndefined: Self = StObject.set(x, "LaunchTemplateAndOverrides", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: InstanceLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: InstanceLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
   }
 }

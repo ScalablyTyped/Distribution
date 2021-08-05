@@ -42,62 +42,44 @@ object navbarMod {
   }
   object NavbarProps {
     
-    @scala.inline
-    def apply(): NavbarProps = {
+    inline def apply(): NavbarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavbarProps]
     }
     
-    @scala.inline
-    implicit class NavbarPropsMutableBuilder[Self <: NavbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavbarProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+      inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+      inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
       
-      @scala.inline
-      def setExpand(value: Boolean | String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean | String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+      inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
       
-      @scala.inline
-      def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+      inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
       
-      @scala.inline
-      def setSticky(value: String): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      inline def setSticky(value: String): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

@@ -12,19 +12,15 @@ trait StatusResponse extends StObject {
 }
 object StatusResponse {
   
-  @scala.inline
-  def apply(authResponse: AuthResponse, status: LoginStatus): StatusResponse = {
+  inline def apply(authResponse: AuthResponse, status: LoginStatus): StatusResponse = {
     val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusResponse]
   }
   
-  @scala.inline
-  implicit class StatusResponseMutableBuilder[Self <: StatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StatusResponse](x: Self) {
     
-    @scala.inline
-    def setAuthResponse(value: AuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
+    inline def setAuthResponse(value: AuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: LoginStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LoginStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

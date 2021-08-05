@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CellIsOperators extends StObject
 object CellIsOperators {
   
-  @scala.inline
-  def between: typings.exceljs.exceljsStrings.between = "between".asInstanceOf[typings.exceljs.exceljsStrings.between]
+  inline def between: typings.exceljs.exceljsStrings.between = "between".asInstanceOf[typings.exceljs.exceljsStrings.between]
   
-  @scala.inline
-  def equal: typings.exceljs.exceljsStrings.equal = "equal".asInstanceOf[typings.exceljs.exceljsStrings.equal]
+  inline def equal: typings.exceljs.exceljsStrings.equal = "equal".asInstanceOf[typings.exceljs.exceljsStrings.equal]
   
-  @scala.inline
-  def greaterThan: typings.exceljs.exceljsStrings.greaterThan = "greaterThan".asInstanceOf[typings.exceljs.exceljsStrings.greaterThan]
+  inline def greaterThan: typings.exceljs.exceljsStrings.greaterThan = "greaterThan".asInstanceOf[typings.exceljs.exceljsStrings.greaterThan]
   
-  @scala.inline
-  def lessThan: typings.exceljs.exceljsStrings.lessThan = "lessThan".asInstanceOf[typings.exceljs.exceljsStrings.lessThan]
+  inline def lessThan: typings.exceljs.exceljsStrings.lessThan = "lessThan".asInstanceOf[typings.exceljs.exceljsStrings.lessThan]
 }

@@ -13,16 +13,13 @@ trait ReportTaskProgressOutput extends StObject {
 }
 object ReportTaskProgressOutput {
   
-  @scala.inline
-  def apply(canceled: Boolean): ReportTaskProgressOutput = {
+  inline def apply(canceled: Boolean): ReportTaskProgressOutput = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportTaskProgressOutput]
   }
   
-  @scala.inline
-  implicit class ReportTaskProgressOutputMutableBuilder[Self <: ReportTaskProgressOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ReportTaskProgressOutput](x: Self) {
     
-    @scala.inline
-    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
   }
 }

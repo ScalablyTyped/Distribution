@@ -126,8 +126,7 @@ object Core {
   }
   object ResourceCandidate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getQualifierValue: String => String,
       getValueAsFileAsync: () => IPromiseWithIAsyncOperation[StorageFile],
       getValueAsStreamAsync: () => IPromiseWithIAsyncOperation[IRandomAccessStream],
@@ -141,32 +140,23 @@ object Core {
       __obj.asInstanceOf[ResourceCandidate]
     }
     
-    @scala.inline
-    implicit class ResourceCandidateMutableBuilder[Self <: ResourceCandidate] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceCandidate](x: Self) {
       
-      @scala.inline
-      def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
+      inline def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueAsFileAsync(value: () => IPromiseWithIAsyncOperation[StorageFile]): Self = StObject.set(x, "getValueAsFileAsync", js.Any.fromFunction0(value))
+      inline def setGetValueAsFileAsync(value: () => IPromiseWithIAsyncOperation[StorageFile]): Self = StObject.set(x, "getValueAsFileAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValueAsStreamAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStream]): Self = StObject.set(x, "getValueAsStreamAsync", js.Any.fromFunction0(value))
+      inline def setGetValueAsStreamAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStream]): Self = StObject.set(x, "getValueAsStreamAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+      inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+      inline def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMatchAsDefault(value: Boolean): Self = StObject.set(x, "isMatchAsDefault", value.asInstanceOf[js.Any])
+      inline def setIsMatchAsDefault(value: Boolean): Self = StObject.set(x, "isMatchAsDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiers(value: IVectorView[ResourceQualifier]): Self = StObject.set(x, "qualifiers", value.asInstanceOf[js.Any])
+      inline def setQualifiers(value: IVectorView[ResourceQualifier]): Self = StObject.set(x, "qualifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
+      inline def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,8 +273,7 @@ object Core {
   }
   object ResourceLayoutInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checksum: Double,
       majorVersion: Double,
       minorVersion: Double,
@@ -295,23 +284,17 @@ object Core {
       __obj.asInstanceOf[ResourceLayoutInfo]
     }
     
-    @scala.inline
-    implicit class ResourceLayoutInfoMutableBuilder[Self <: ResourceLayoutInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceLayoutInfo](x: Self) {
       
-      @scala.inline
-      def setChecksum(value: Double): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: Double): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+      inline def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
+      inline def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedResourceCount(value: Double): Self = StObject.set(x, "namedResourceCount", value.asInstanceOf[js.Any])
+      inline def setNamedResourceCount(value: Double): Self = StObject.set(x, "namedResourceCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceSubtreeCount(value: Double): Self = StObject.set(x, "resourceSubtreeCount", value.asInstanceOf[js.Any])
+      inline def setResourceSubtreeCount(value: Double): Self = StObject.set(x, "resourceSubtreeCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -357,8 +340,7 @@ object Core {
   }
   object ResourceManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allResourceMaps: IMapView[String, ResourceMap],
       defaultContext: ResourceContext,
       getAllNamedResourcesForPackage: (String, ResourceLayoutInfo) => IVectorView[NamedResource],
@@ -371,29 +353,21 @@ object Core {
       __obj.asInstanceOf[ResourceManager]
     }
     
-    @scala.inline
-    implicit class ResourceManagerMutableBuilder[Self <: ResourceManager] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceManager](x: Self) {
       
-      @scala.inline
-      def setAllResourceMaps(value: IMapView[String, ResourceMap]): Self = StObject.set(x, "allResourceMaps", value.asInstanceOf[js.Any])
+      inline def setAllResourceMaps(value: IMapView[String, ResourceMap]): Self = StObject.set(x, "allResourceMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultContext(value: ResourceContext): Self = StObject.set(x, "defaultContext", value.asInstanceOf[js.Any])
+      inline def setDefaultContext(value: ResourceContext): Self = StObject.set(x, "defaultContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAllNamedResourcesForPackage(value: (String, ResourceLayoutInfo) => IVectorView[NamedResource]): Self = StObject.set(x, "getAllNamedResourcesForPackage", js.Any.fromFunction2(value))
+      inline def setGetAllNamedResourcesForPackage(value: (String, ResourceLayoutInfo) => IVectorView[NamedResource]): Self = StObject.set(x, "getAllNamedResourcesForPackage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAllSubtreesForPackage(value: (String, ResourceLayoutInfo) => IVectorView[ResourceMap]): Self = StObject.set(x, "getAllSubtreesForPackage", js.Any.fromFunction2(value))
+      inline def setGetAllSubtreesForPackage(value: (String, ResourceLayoutInfo) => IVectorView[ResourceMap]): Self = StObject.set(x, "getAllSubtreesForPackage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "loadPriFiles", js.Any.fromFunction1(value))
+      inline def setLoadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "loadPriFiles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMainResourceMap(value: ResourceMap): Self = StObject.set(x, "mainResourceMap", value.asInstanceOf[js.Any])
+      inline def setMainResourceMap(value: ResourceMap): Self = StObject.set(x, "mainResourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnloadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "unloadPriFiles", js.Any.fromFunction1(value))
+      inline def setUnloadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "unloadPriFiles", js.Any.fromFunction1(value))
     }
   }
   
@@ -476,8 +450,7 @@ object Core {
   }
   object ResourceMapIterator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: IKeyValuePair[String, NamedResource],
       getMany: () => ItemsIKeyValuePair,
       hasCurrent: Boolean,
@@ -487,20 +460,15 @@ object Core {
       __obj.asInstanceOf[ResourceMapIterator]
     }
     
-    @scala.inline
-    implicit class ResourceMapIteratorMutableBuilder[Self <: ResourceMapIterator] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceMapIterator](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: IKeyValuePair[String, NamedResource]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: IKeyValuePair[String, NamedResource]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetMany(value: () => ItemsIKeyValuePair): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
+      inline def setGetMany(value: () => ItemsIKeyValuePair): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
+      inline def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+      inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
     }
   }
   
@@ -537,8 +505,7 @@ object Core {
   }
   object ResourceMapMapView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       hasKey: String => Boolean,
       lookup: String => ResourceMap,
@@ -549,23 +516,17 @@ object Core {
       __obj.asInstanceOf[ResourceMapMapView]
     }
     
-    @scala.inline
-    implicit class ResourceMapMapViewMutableBuilder[Self <: ResourceMapMapView] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceMapMapView](x: Self) {
       
-      @scala.inline
-      def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+      inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLookup(value: String => ResourceMap): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => ResourceMap): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplit(value: () => FirstIMapView): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
+      inline def setSplit(value: () => FirstIMapView): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     }
   }
   
@@ -591,8 +552,7 @@ object Core {
   }
   object ResourceMapMapViewIterator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: IKeyValuePair[String, ResourceMap],
       getMany: () => ItemsIKeyValuePair,
       hasCurrent: Boolean,
@@ -602,20 +562,15 @@ object Core {
       __obj.asInstanceOf[ResourceMapMapViewIterator]
     }
     
-    @scala.inline
-    implicit class ResourceMapMapViewIteratorMutableBuilder[Self <: ResourceMapMapViewIterator] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceMapMapViewIterator](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: IKeyValuePair[String, ResourceMap]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: IKeyValuePair[String, ResourceMap]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetMany(value: () => ItemsIKeyValuePair): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
+      inline def setGetMany(value: () => ItemsIKeyValuePair): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
+      inline def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+      inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
     }
   }
   
@@ -639,29 +594,22 @@ object Core {
   }
   object ResourceQualifier {
     
-    @scala.inline
-    def apply(isDefault: Boolean, isMatch: Boolean, qualifierName: String, qualifierValue: String, score: Double): ResourceQualifier = {
+    inline def apply(isDefault: Boolean, isMatch: Boolean, qualifierName: String, qualifierValue: String, score: Double): ResourceQualifier = {
       val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], isMatch = isMatch.asInstanceOf[js.Any], qualifierName = qualifierName.asInstanceOf[js.Any], qualifierValue = qualifierValue.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceQualifier]
     }
     
-    @scala.inline
-    implicit class ResourceQualifierMutableBuilder[Self <: ResourceQualifier] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceQualifier](x: Self) {
       
-      @scala.inline
-      def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+      inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+      inline def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierName(value: String): Self = StObject.set(x, "qualifierName", value.asInstanceOf[js.Any])
+      inline def setQualifierName(value: String): Self = StObject.set(x, "qualifierName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierValue(value: String): Self = StObject.set(x, "qualifierValue", value.asInstanceOf[js.Any])
+      inline def setQualifierValue(value: String): Self = StObject.set(x, "qualifierValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -698,8 +646,7 @@ object Core {
   }
   object ResourceQualifierMapView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       hasKey: String => Boolean,
       lookup: String => String,
@@ -710,23 +657,17 @@ object Core {
       __obj.asInstanceOf[ResourceQualifierMapView]
     }
     
-    @scala.inline
-    implicit class ResourceQualifierMapViewMutableBuilder[Self <: ResourceQualifierMapView] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceQualifierMapView](x: Self) {
       
-      @scala.inline
-      def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+      inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLookup(value: String => String): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => String): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplit(value: () => SecondIMapView): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
+      inline def setSplit(value: () => SecondIMapView): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     }
   }
   

@@ -17,22 +17,17 @@ trait Def
 }
 object Def {
   
-  @scala.inline
-  def apply(href: String, raw: String, title: String): Def = {
+  inline def apply(href: String, raw: String, title: String): Def = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Def]
   }
   
-  @scala.inline
-  implicit class DefMutableBuilder[Self <: Def] (val x: Self) extends AnyVal {
+  extension [Self <: Def](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

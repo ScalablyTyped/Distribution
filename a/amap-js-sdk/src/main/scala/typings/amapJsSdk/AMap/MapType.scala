@@ -9,8 +9,7 @@ trait MapType
      with MapControl
 object MapType {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: () => Unit): MapType = {
+  inline def apply(hide: () => Unit, show: () => Unit): MapType = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[MapType]
   }

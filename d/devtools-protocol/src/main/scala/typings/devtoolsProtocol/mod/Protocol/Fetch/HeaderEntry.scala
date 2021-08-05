@@ -12,19 +12,15 @@ trait HeaderEntry extends StObject {
 }
 object HeaderEntry {
   
-  @scala.inline
-  def apply(name: String, value: String): HeaderEntry = {
+  inline def apply(name: String, value: String): HeaderEntry = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderEntry]
   }
   
-  @scala.inline
-  implicit class HeaderEntryMutableBuilder[Self <: HeaderEntry] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderEntry](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

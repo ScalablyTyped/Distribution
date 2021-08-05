@@ -49,61 +49,42 @@ object KeyFunction {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CLOSE: `6` = 6.asInstanceOf[`6`]
+    inline def CLOSE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def COPY: `9` = 9.asInstanceOf[`9`]
+    inline def COPY: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def CUT: `8` = 8.asInstanceOf[`8`]
+    inline def CUT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def DELETE: `13` = 13.asInstanceOf[`13`]
+    inline def DELETE: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def DONTKNOW: `0` = 0.asInstanceOf[`0`]
+    inline def DONTKNOW: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def FIND: `15` = 15.asInstanceOf[`15`]
+    inline def FIND: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def FINDBACKWARD: `16` = 16.asInstanceOf[`16`]
+    inline def FINDBACKWARD: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def FRONT: `18` = 18.asInstanceOf[`18`]
+    inline def FRONT: `18` = 18.asInstanceOf[`18`]
     
-    @scala.inline
-    def NEW: `1` = 1.asInstanceOf[`1`]
+    inline def NEW: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def OPEN: `2` = 2.asInstanceOf[`2`]
+    inline def OPEN: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def PASTE: `10` = 10.asInstanceOf[`10`]
+    inline def PASTE: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def PRINT: `5` = 5.asInstanceOf[`5`]
+    inline def PRINT: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def PROPERTIES: `17` = 17.asInstanceOf[`17`]
+    inline def PROPERTIES: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def QUIT: `7` = 7.asInstanceOf[`7`]
+    inline def QUIT: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def REDO: `12` = 12.asInstanceOf[`12`]
+    inline def REDO: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def REPEAT: `14` = 14.asInstanceOf[`14`]
+    inline def REPEAT: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def SAVE: `3` = 3.asInstanceOf[`3`]
+    inline def SAVE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def SAVEAS: `4` = 4.asInstanceOf[`4`]
+    inline def SAVEAS: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def UNDO: `11` = 11.asInstanceOf[`11`]
+    inline def UNDO: `11` = 11.asInstanceOf[`11`]
   }
 }

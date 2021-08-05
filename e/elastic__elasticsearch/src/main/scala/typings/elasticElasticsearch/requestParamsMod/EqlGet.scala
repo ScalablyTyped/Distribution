@@ -16,28 +16,21 @@ trait EqlGet
 }
 object EqlGet {
   
-  @scala.inline
-  def apply(id: String): EqlGet = {
+  inline def apply(id: String): EqlGet = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EqlGet]
   }
   
-  @scala.inline
-  implicit class EqlGetMutableBuilder[Self <: EqlGet] (val x: Self) extends AnyVal {
+  extension [Self <: EqlGet](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
+    inline def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
+    inline def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
     
-    @scala.inline
-    def setWait_for_completion_timeout(value: String): Self = StObject.set(x, "wait_for_completion_timeout", value.asInstanceOf[js.Any])
+    inline def setWait_for_completion_timeout(value: String): Self = StObject.set(x, "wait_for_completion_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completion_timeoutUndefined: Self = StObject.set(x, "wait_for_completion_timeout", js.undefined)
+    inline def setWait_for_completion_timeoutUndefined: Self = StObject.set(x, "wait_for_completion_timeout", js.undefined)
   }
 }

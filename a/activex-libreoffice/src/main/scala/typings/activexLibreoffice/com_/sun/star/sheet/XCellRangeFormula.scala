@@ -45,8 +45,7 @@ trait XCellRangeFormula
 }
 object XCellRangeFormula {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FormulaArray: SafeArray[SafeArray[String]],
     acquire: () => Unit,
     getFormulaArray: () => SafeArray[SafeArray[String]],
@@ -58,16 +57,12 @@ object XCellRangeFormula {
     __obj.asInstanceOf[XCellRangeFormula]
   }
   
-  @scala.inline
-  implicit class XCellRangeFormulaMutableBuilder[Self <: XCellRangeFormula] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRangeFormula](x: Self) {
     
-    @scala.inline
-    def setFormulaArray(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "FormulaArray", value.asInstanceOf[js.Any])
+    inline def setFormulaArray(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "FormulaArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFormulaArray(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getFormulaArray", js.Any.fromFunction0(value))
+    inline def setGetFormulaArray(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getFormulaArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFormulaArray(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setFormulaArray", js.Any.fromFunction1(value))
+    inline def setSetFormulaArray(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setFormulaArray", js.Any.fromFunction1(value))
   }
 }

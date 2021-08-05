@@ -24,23 +24,18 @@ trait Msg extends StObject {
 }
 object Msg {
   
-  @scala.inline
-  def apply(msg: String, title: String, `type`: EditValidatorType): Msg = {
+  inline def apply(msg: String, title: String, `type`: EditValidatorType): Msg = {
     val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Msg]
   }
   
-  @scala.inline
-  implicit class MsgMutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
+  extension [Self <: Msg](x: Self) {
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EditValidatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EditValidatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

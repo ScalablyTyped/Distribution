@@ -33,37 +33,27 @@ trait StartReplicationTaskMessage extends StObject {
 }
 object StartReplicationTaskMessage {
   
-  @scala.inline
-  def apply(ReplicationTaskArn: String, StartReplicationTaskType: StartReplicationTaskTypeValue): StartReplicationTaskMessage = {
+  inline def apply(ReplicationTaskArn: String, StartReplicationTaskType: StartReplicationTaskTypeValue): StartReplicationTaskMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any], StartReplicationTaskType = StartReplicationTaskType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartReplicationTaskMessage]
   }
   
-  @scala.inline
-  implicit class StartReplicationTaskMessageMutableBuilder[Self <: StartReplicationTaskMessage] (val x: Self) extends AnyVal {
+  extension [Self <: StartReplicationTaskMessage](x: Self) {
     
-    @scala.inline
-    def setCdcStartPosition(value: String): Self = StObject.set(x, "CdcStartPosition", value.asInstanceOf[js.Any])
+    inline def setCdcStartPosition(value: String): Self = StObject.set(x, "CdcStartPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdcStartPositionUndefined: Self = StObject.set(x, "CdcStartPosition", js.undefined)
+    inline def setCdcStartPositionUndefined: Self = StObject.set(x, "CdcStartPosition", js.undefined)
     
-    @scala.inline
-    def setCdcStartTime(value: TStamp): Self = StObject.set(x, "CdcStartTime", value.asInstanceOf[js.Any])
+    inline def setCdcStartTime(value: TStamp): Self = StObject.set(x, "CdcStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdcStartTimeUndefined: Self = StObject.set(x, "CdcStartTime", js.undefined)
+    inline def setCdcStartTimeUndefined: Self = StObject.set(x, "CdcStartTime", js.undefined)
     
-    @scala.inline
-    def setCdcStopPosition(value: String): Self = StObject.set(x, "CdcStopPosition", value.asInstanceOf[js.Any])
+    inline def setCdcStopPosition(value: String): Self = StObject.set(x, "CdcStopPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdcStopPositionUndefined: Self = StObject.set(x, "CdcStopPosition", js.undefined)
+    inline def setCdcStopPositionUndefined: Self = StObject.set(x, "CdcStopPosition", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartReplicationTaskType(value: StartReplicationTaskTypeValue): Self = StObject.set(x, "StartReplicationTaskType", value.asInstanceOf[js.Any])
+    inline def setStartReplicationTaskType(value: StartReplicationTaskTypeValue): Self = StObject.set(x, "StartReplicationTaskType", value.asInstanceOf[js.Any])
   }
 }

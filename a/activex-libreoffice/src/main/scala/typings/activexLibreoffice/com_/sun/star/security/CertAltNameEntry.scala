@@ -18,19 +18,15 @@ trait CertAltNameEntry extends StObject {
 }
 object CertAltNameEntry {
   
-  @scala.inline
-  def apply(Type: ExtAltNameType, Value: js.Any): CertAltNameEntry = {
+  inline def apply(Type: ExtAltNameType, Value: js.Any): CertAltNameEntry = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertAltNameEntry]
   }
   
-  @scala.inline
-  implicit class CertAltNameEntryMutableBuilder[Self <: CertAltNameEntry] (val x: Self) extends AnyVal {
+  extension [Self <: CertAltNameEntry](x: Self) {
     
-    @scala.inline
-    def setType(value: ExtAltNameType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExtAltNameType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

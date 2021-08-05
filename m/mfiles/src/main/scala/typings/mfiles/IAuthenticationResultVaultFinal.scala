@@ -10,16 +10,13 @@ trait IAuthenticationResultVaultFinal extends StObject {
 }
 object IAuthenticationResultVaultFinal {
   
-  @scala.inline
-  def apply(Vault: IVault): IAuthenticationResultVaultFinal = {
+  inline def apply(Vault: IVault): IAuthenticationResultVaultFinal = {
     val __obj = js.Dynamic.literal(Vault = Vault.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAuthenticationResultVaultFinal]
   }
   
-  @scala.inline
-  implicit class IAuthenticationResultVaultFinalMutableBuilder[Self <: IAuthenticationResultVaultFinal] (val x: Self) extends AnyVal {
+  extension [Self <: IAuthenticationResultVaultFinal](x: Self) {
     
-    @scala.inline
-    def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
+    inline def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
   }
 }

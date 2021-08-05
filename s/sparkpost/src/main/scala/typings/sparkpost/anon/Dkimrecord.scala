@@ -12,19 +12,15 @@ trait Dkimrecord extends StObject {
 }
 object Dkimrecord {
   
-  @scala.inline
-  def apply(dkim_record: String, spf_record: String): Dkimrecord = {
+  inline def apply(dkim_record: String, spf_record: String): Dkimrecord = {
     val __obj = js.Dynamic.literal(dkim_record = dkim_record.asInstanceOf[js.Any], spf_record = spf_record.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dkimrecord]
   }
   
-  @scala.inline
-  implicit class DkimrecordMutableBuilder[Self <: Dkimrecord] (val x: Self) extends AnyVal {
+  extension [Self <: Dkimrecord](x: Self) {
     
-    @scala.inline
-    def setDkim_record(value: String): Self = StObject.set(x, "dkim_record", value.asInstanceOf[js.Any])
+    inline def setDkim_record(value: String): Self = StObject.set(x, "dkim_record", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpf_record(value: String): Self = StObject.set(x, "spf_record", value.asInstanceOf[js.Any])
+    inline def setSpf_record(value: String): Self = StObject.set(x, "spf_record", value.asInstanceOf[js.Any])
   }
 }

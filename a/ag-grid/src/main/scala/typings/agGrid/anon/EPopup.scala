@@ -13,19 +13,15 @@ trait EPopup extends StObject {
 }
 object EPopup {
   
-  @scala.inline
-  def apply(ePopup: HTMLElement, eventSource: js.Any): EPopup = {
+  inline def apply(ePopup: HTMLElement, eventSource: js.Any): EPopup = {
     val __obj = js.Dynamic.literal(ePopup = ePopup.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[EPopup]
   }
   
-  @scala.inline
-  implicit class EPopupMutableBuilder[Self <: EPopup] (val x: Self) extends AnyVal {
+  extension [Self <: EPopup](x: Self) {
     
-    @scala.inline
-    def setEPopup(value: HTMLElement): Self = StObject.set(x, "ePopup", value.asInstanceOf[js.Any])
+    inline def setEPopup(value: HTMLElement): Self = StObject.set(x, "ePopup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSource(value: js.Any): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: js.Any): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
   }
 }

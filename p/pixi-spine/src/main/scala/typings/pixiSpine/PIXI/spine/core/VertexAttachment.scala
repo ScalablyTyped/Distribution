@@ -33,8 +33,7 @@ trait VertexAttachment
 }
 object VertexAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bones: js.Array[Double],
     computeWorldVertices: (Slot, Double, Double, ArrayLike[Double], Double, Double) => Unit,
     computeWorldVerticesOld: (Slot, ArrayLike[Double]) => Unit,
@@ -50,34 +49,24 @@ object VertexAttachment {
     __obj.asInstanceOf[VertexAttachment]
   }
   
-  @scala.inline
-  implicit class VertexAttachmentMutableBuilder[Self <: VertexAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: VertexAttachment](x: Self) {
     
-    @scala.inline
-    def setBones(value: js.Array[Double]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
+    inline def setBones(value: js.Array[Double]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonesVarargs(value: Double*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: Double*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
-    @scala.inline
-    def setComputeWorldVertices(value: (Slot, Double, Double, ArrayLike[Double], Double, Double) => Unit): Self = StObject.set(x, "computeWorldVertices", js.Any.fromFunction6(value))
+    inline def setComputeWorldVertices(value: (Slot, Double, Double, ArrayLike[Double], Double, Double) => Unit): Self = StObject.set(x, "computeWorldVertices", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setComputeWorldVerticesOld(value: (Slot, ArrayLike[Double]) => Unit): Self = StObject.set(x, "computeWorldVerticesOld", js.Any.fromFunction2(value))
+    inline def setComputeWorldVerticesOld(value: (Slot, ArrayLike[Double]) => Unit): Self = StObject.set(x, "computeWorldVerticesOld", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCopyTo(value: VertexAttachment => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
+    inline def setCopyTo(value: VertexAttachment => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeformAttachment(value: VertexAttachment): Self = StObject.set(x, "deformAttachment", value.asInstanceOf[js.Any])
+    inline def setDeformAttachment(value: VertexAttachment): Self = StObject.set(x, "deformAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertices(value: ArrayLike[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: ArrayLike[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldVerticesLength(value: Double): Self = StObject.set(x, "worldVerticesLength", value.asInstanceOf[js.Any])
+    inline def setWorldVerticesLength(value: Double): Self = StObject.set(x, "worldVerticesLength", value.asInstanceOf[js.Any])
   }
 }

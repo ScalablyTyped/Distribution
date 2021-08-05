@@ -18,28 +18,21 @@ trait ListDevicesResponse extends StObject {
 }
 object ListDevicesResponse {
   
-  @scala.inline
-  def apply(): ListDevicesResponse = {
+  inline def apply(): ListDevicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDevicesResponse]
   }
   
-  @scala.inline
-  implicit class ListDevicesResponseMutableBuilder[Self <: ListDevicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDevicesResponse](x: Self) {
     
-    @scala.inline
-    def setDevices(value: DeviceListType): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: DeviceListType): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: DeviceType*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: DeviceType*): Self = StObject.set(x, "Devices", js.Array(value :_*))
     
-    @scala.inline
-    def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
   }
 }

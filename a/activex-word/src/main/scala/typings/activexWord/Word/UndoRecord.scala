@@ -25,6 +25,6 @@ trait UndoRecord extends StObject {
   def StartCustomRecord(): Unit = js.native
   def StartCustomRecord(Name: String): Unit = js.native
   
-  @JSName("Word.UndoRecord_typekey")
+  /* private */ @JSName("Word.UndoRecord_typekey")
   var WordDotUndoRecord_typekey: UndoRecord = js.native
 }

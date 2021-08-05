@@ -19,6 +19,5 @@ class RatingIcon protected ()
 }
 object RatingIcon {
   
-  @scala.inline
-  def apply: ComponentClass[RatingIconProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("RatingIcon").asInstanceOf[ComponentClass[RatingIconProps, ComponentState]]
+  inline def apply: ComponentClass[RatingIconProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("RatingIcon").asInstanceOf[ComponentClass[RatingIconProps, ComponentState]]
 }

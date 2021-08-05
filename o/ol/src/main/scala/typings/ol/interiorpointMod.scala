@@ -10,8 +10,7 @@ object interiorpointMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInteriorPointOfArray(
+  inline def getInteriorPointOfArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -19,8 +18,7 @@ object interiorpointMod {
     flatCenters: js.Array[Double],
     flatCentersOffset: Double
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInteriorPointOfArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], flatCenters.asInstanceOf[js.Any], flatCentersOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getInteriorPointOfArray(
+  inline def getInteriorPointOfArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -30,8 +28,7 @@ object interiorpointMod {
     opt_dest: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInteriorPointOfArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], flatCenters.asInstanceOf[js.Any], flatCentersOffset.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def getInteriorPointsOfMultiArray(
+  inline def getInteriorPointsOfMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],

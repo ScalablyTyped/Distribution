@@ -22,28 +22,21 @@ trait SchemaRoomP2PStatuses extends StObject {
 }
 object SchemaRoomP2PStatuses {
   
-  @scala.inline
-  def apply(): SchemaRoomP2PStatuses = {
+  inline def apply(): SchemaRoomP2PStatuses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoomP2PStatuses]
   }
   
-  @scala.inline
-  implicit class SchemaRoomP2PStatusesMutableBuilder[Self <: SchemaRoomP2PStatuses] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoomP2PStatuses](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUpdates(value: js.Array[SchemaRoomP2PStatus]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: js.Array[SchemaRoomP2PStatus]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    @scala.inline
-    def setUpdatesVarargs(value: SchemaRoomP2PStatus*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: SchemaRoomP2PStatus*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

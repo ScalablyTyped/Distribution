@@ -26,25 +26,19 @@ trait ScopedResourceSelectorRequirement extends StObject {
 }
 object ScopedResourceSelectorRequirement {
   
-  @scala.inline
-  def apply(operator: String, scopeName: String, values: js.Array[String]): ScopedResourceSelectorRequirement = {
+  inline def apply(operator: String, scopeName: String, values: js.Array[String]): ScopedResourceSelectorRequirement = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedResourceSelectorRequirement]
   }
   
-  @scala.inline
-  implicit class ScopedResourceSelectorRequirementMutableBuilder[Self <: ScopedResourceSelectorRequirement] (val x: Self) extends AnyVal {
+  extension [Self <: ScopedResourceSelectorRequirement](x: Self) {
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
+    inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

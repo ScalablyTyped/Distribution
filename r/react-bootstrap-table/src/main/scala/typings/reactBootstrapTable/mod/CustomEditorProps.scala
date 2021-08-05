@@ -25,8 +25,7 @@ trait CustomEditorProps[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String
 }
 object CustomEditorProps {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
+  inline def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any,
     row: TRow
   ): CustomEditorProps[TRow, K] = {
@@ -34,13 +33,10 @@ object CustomEditorProps {
     __obj.asInstanceOf[CustomEditorProps[TRow, K]]
   }
   
-  @scala.inline
-  implicit class CustomEditorPropsMutableBuilder[Self <: CustomEditorProps[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self & (CustomEditorProps[TRow, K])) extends AnyVal {
+  extension [Self <: CustomEditorProps[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](x: Self & (CustomEditorProps[TRow, K])) {
     
-    @scala.inline
-    def setDefaultValue(value: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: TRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: TRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

@@ -16,18 +16,15 @@ object mod {
   @js.native
   val i18n: typings.i18next.mod.i18n = js.native
   
-  @scala.inline
-  def init(
+  inline def init(
     resourceStore: i18nextkoResourceStore,
     language: String,
     ko: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutStatic */ js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(resourceStore.asInstanceOf[js.Any], language.asInstanceOf[js.Any], ko.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def t(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def t(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type i18nextkoResourceStore = StringDictionary[Translation]
 }

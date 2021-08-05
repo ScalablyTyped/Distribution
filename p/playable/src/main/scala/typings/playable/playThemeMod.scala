@@ -16,7 +16,6 @@ object playThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/play/play.theme", "default.playSvgFill")
     @js.native
     def playSvgFill: Fill = js.native
-    @scala.inline
-    def playSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("playSvgFill")(x.asInstanceOf[js.Any])
+    inline def playSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("playSvgFill")(x.asInstanceOf[js.Any])
   }
 }

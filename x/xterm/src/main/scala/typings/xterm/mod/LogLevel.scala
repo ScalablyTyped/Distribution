@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogLevel extends StObject
 object LogLevel {
   
-  @scala.inline
-  def debug: typings.xterm.xtermStrings.debug = "debug".asInstanceOf[typings.xterm.xtermStrings.debug]
+  inline def debug: typings.xterm.xtermStrings.debug = "debug".asInstanceOf[typings.xterm.xtermStrings.debug]
   
-  @scala.inline
-  def error: typings.xterm.xtermStrings.error = "error".asInstanceOf[typings.xterm.xtermStrings.error]
+  inline def error: typings.xterm.xtermStrings.error = "error".asInstanceOf[typings.xterm.xtermStrings.error]
   
-  @scala.inline
-  def info: typings.xterm.xtermStrings.info = "info".asInstanceOf[typings.xterm.xtermStrings.info]
+  inline def info: typings.xterm.xtermStrings.info = "info".asInstanceOf[typings.xterm.xtermStrings.info]
   
-  @scala.inline
-  def off: typings.xterm.xtermStrings.off = "off".asInstanceOf[typings.xterm.xtermStrings.off]
+  inline def off: typings.xterm.xtermStrings.off = "off".asInstanceOf[typings.xterm.xtermStrings.off]
   
-  @scala.inline
-  def warn: typings.xterm.xtermStrings.warn = "warn".asInstanceOf[typings.xterm.xtermStrings.warn]
+  inline def warn: typings.xterm.xtermStrings.warn = "warn".asInstanceOf[typings.xterm.xtermStrings.warn]
 }

@@ -46,8 +46,7 @@ trait LeaderboardEntry extends StObject {
 }
 object LeaderboardEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getExtraData: () => String | Null,
     getFormattedScore: () => String,
     getPlayer: () => LeaderboardPlayer,
@@ -59,25 +58,18 @@ object LeaderboardEntry {
     __obj.asInstanceOf[LeaderboardEntry]
   }
   
-  @scala.inline
-  implicit class LeaderboardEntryMutableBuilder[Self <: LeaderboardEntry] (val x: Self) extends AnyVal {
+  extension [Self <: LeaderboardEntry](x: Self) {
     
-    @scala.inline
-    def setGetExtraData(value: () => String | Null): Self = StObject.set(x, "getExtraData", js.Any.fromFunction0(value))
+    inline def setGetExtraData(value: () => String | Null): Self = StObject.set(x, "getExtraData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormattedScore(value: () => String): Self = StObject.set(x, "getFormattedScore", js.Any.fromFunction0(value))
+    inline def setGetFormattedScore(value: () => String): Self = StObject.set(x, "getFormattedScore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlayer(value: () => LeaderboardPlayer): Self = StObject.set(x, "getPlayer", js.Any.fromFunction0(value))
+    inline def setGetPlayer(value: () => LeaderboardPlayer): Self = StObject.set(x, "getPlayer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRank(value: () => Double): Self = StObject.set(x, "getRank", js.Any.fromFunction0(value))
+    inline def setGetRank(value: () => Double): Self = StObject.set(x, "getRank", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScore(value: () => Double): Self = StObject.set(x, "getScore", js.Any.fromFunction0(value))
+    inline def setGetScore(value: () => Double): Self = StObject.set(x, "getScore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimestamp(value: () => Double): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
+    inline def setGetTimestamp(value: () => Double): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
   }
 }

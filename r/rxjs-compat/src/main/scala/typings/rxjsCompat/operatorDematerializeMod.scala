@@ -10,6 +10,5 @@ object operatorDematerializeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dematerialize[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dematerialize")().asInstanceOf[js.Any]
+  inline def dematerialize[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dematerialize")().asInstanceOf[js.Any]
 }

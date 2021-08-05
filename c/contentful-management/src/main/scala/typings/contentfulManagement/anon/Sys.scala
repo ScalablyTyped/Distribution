@@ -11,16 +11,13 @@ trait Sys extends StObject {
 }
 object Sys {
   
-  @scala.inline
-  def apply(sys: MetaLinkProps): Sys = {
+  inline def apply(sys: MetaLinkProps): Sys = {
     val __obj = js.Dynamic.literal(sys = sys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sys]
   }
   
-  @scala.inline
-  implicit class SysMutableBuilder[Self <: Sys] (val x: Self) extends AnyVal {
+  extension [Self <: Sys](x: Self) {
     
-    @scala.inline
-    def setSys(value: MetaLinkProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+    inline def setSys(value: MetaLinkProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
   }
 }

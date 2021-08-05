@@ -18,25 +18,19 @@ trait CreateSqlInjectionMatchSetResponse extends StObject {
 }
 object CreateSqlInjectionMatchSetResponse {
   
-  @scala.inline
-  def apply(): CreateSqlInjectionMatchSetResponse = {
+  inline def apply(): CreateSqlInjectionMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSqlInjectionMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateSqlInjectionMatchSetResponseMutableBuilder[Self <: CreateSqlInjectionMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSqlInjectionMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setSqlInjectionMatchSet(value: SqlInjectionMatchSet): Self = StObject.set(x, "SqlInjectionMatchSet", value.asInstanceOf[js.Any])
+    inline def setSqlInjectionMatchSet(value: SqlInjectionMatchSet): Self = StObject.set(x, "SqlInjectionMatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlInjectionMatchSetUndefined: Self = StObject.set(x, "SqlInjectionMatchSet", js.undefined)
+    inline def setSqlInjectionMatchSetUndefined: Self = StObject.set(x, "SqlInjectionMatchSet", js.undefined)
   }
 }

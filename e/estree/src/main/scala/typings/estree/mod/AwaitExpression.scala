@@ -16,20 +16,16 @@ trait AwaitExpression
 }
 object AwaitExpression {
   
-  @scala.inline
-  def apply(argument: Expression): AwaitExpression = {
+  inline def apply(argument: Expression): AwaitExpression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AwaitExpression")
     __obj.asInstanceOf[AwaitExpression]
   }
   
-  @scala.inline
-  implicit class AwaitExpressionMutableBuilder[Self <: AwaitExpression] (val x: Self) extends AnyVal {
+  extension [Self <: AwaitExpression](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.AwaitExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.AwaitExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

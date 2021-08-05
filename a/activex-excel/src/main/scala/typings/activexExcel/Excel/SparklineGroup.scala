@@ -22,7 +22,7 @@ trait SparklineGroup extends StObject {
   
   var DisplayHidden: Boolean
   
-  @JSName("Excel.SparklineGroup_typekey")
+  /* private */ @JSName("Excel.SparklineGroup_typekey")
   var ExcelDotSparklineGroup_typekey: SparklineGroup
   
   def Item(Index: js.Any): Sparkline
@@ -57,8 +57,7 @@ trait SparklineGroup extends StObject {
 }
 object SparklineGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Axes: SparkAxes,
     Count: Double,
@@ -87,73 +86,50 @@ object SparklineGroup {
     __obj.asInstanceOf[SparklineGroup]
   }
   
-  @scala.inline
-  implicit class SparklineGroupMutableBuilder[Self <: SparklineGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineGroup](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxes(value: SparkAxes): Self = StObject.set(x, "Axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: SparkAxes): Self = StObject.set(x, "Axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRange(value: String): Self = StObject.set(x, "DateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: String): Self = StObject.set(x, "DateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayBlanksAs(value: XlDisplayBlanksAs): Self = StObject.set(x, "DisplayBlanksAs", value.asInstanceOf[js.Any])
+    inline def setDisplayBlanksAs(value: XlDisplayBlanksAs): Self = StObject.set(x, "DisplayBlanksAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayHidden(value: Boolean): Self = StObject.set(x, "DisplayHidden", value.asInstanceOf[js.Any])
+    inline def setDisplayHidden(value: Boolean): Self = StObject.set(x, "DisplayHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSparklineGroup_typekey(value: SparklineGroup): Self = StObject.set(x, "Excel.SparklineGroup_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSparklineGroup_typekey(value: SparklineGroup): Self = StObject.set(x, "Excel.SparklineGroup_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Sparkline): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Sparkline): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLineWeight(value: js.Any): Self = StObject.set(x, "LineWeight", value.asInstanceOf[js.Any])
+    inline def setLineWeight(value: js.Any): Self = StObject.set(x, "LineWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModify(value: (Range, String) => Unit): Self = StObject.set(x, "Modify", js.Any.fromFunction2(value))
+    inline def setModify(value: (Range, String) => Unit): Self = StObject.set(x, "Modify", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setModifyDateRange(value: String => Unit): Self = StObject.set(x, "ModifyDateRange", js.Any.fromFunction1(value))
+    inline def setModifyDateRange(value: String => Unit): Self = StObject.set(x, "ModifyDateRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifyLocation(value: Range => Unit): Self = StObject.set(x, "ModifyLocation", js.Any.fromFunction1(value))
+    inline def setModifyLocation(value: Range => Unit): Self = StObject.set(x, "ModifyLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifySourceData(value: String => Unit): Self = StObject.set(x, "ModifySourceData", js.Any.fromFunction1(value))
+    inline def setModifySourceData(value: String => Unit): Self = StObject.set(x, "ModifySourceData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlotBy(value: XlSparklineRowCol): Self = StObject.set(x, "PlotBy", value.asInstanceOf[js.Any])
+    inline def setPlotBy(value: XlSparklineRowCol): Self = StObject.set(x, "PlotBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: SparkPoints): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: SparkPoints): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesColor(value: FormatColor): Self = StObject.set(x, "SeriesColor", value.asInstanceOf[js.Any])
+    inline def setSeriesColor(value: FormatColor): Self = StObject.set(x, "SeriesColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceData(value: String): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
+    inline def setSourceData(value: String): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlSparkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlSparkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

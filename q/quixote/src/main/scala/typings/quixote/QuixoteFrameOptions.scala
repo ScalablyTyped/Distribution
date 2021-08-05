@@ -20,37 +20,27 @@ trait QuixoteFrameOptions extends StObject {
 }
 object QuixoteFrameOptions {
   
-  @scala.inline
-  def apply(): QuixoteFrameOptions = {
+  inline def apply(): QuixoteFrameOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuixoteFrameOptions]
   }
   
-  @scala.inline
-  implicit class QuixoteFrameOptionsMutableBuilder[Self <: QuixoteFrameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QuixoteFrameOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    inline def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
+    inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

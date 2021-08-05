@@ -29,31 +29,23 @@ trait RasterDataProperties extends StObject {
 }
 object RasterDataProperties {
   
-  @scala.inline
-  def apply(): RasterDataProperties = {
+  inline def apply(): RasterDataProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RasterDataProperties]
   }
   
-  @scala.inline
-  implicit class RasterDataPropertiesMutableBuilder[Self <: RasterDataProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RasterDataProperties](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

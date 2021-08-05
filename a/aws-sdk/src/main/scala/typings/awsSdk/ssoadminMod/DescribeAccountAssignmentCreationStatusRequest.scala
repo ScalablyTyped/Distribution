@@ -18,19 +18,15 @@ trait DescribeAccountAssignmentCreationStatusRequest extends StObject {
 }
 object DescribeAccountAssignmentCreationStatusRequest {
   
-  @scala.inline
-  def apply(AccountAssignmentCreationRequestId: UUId, InstanceArn: InstanceArn): DescribeAccountAssignmentCreationStatusRequest = {
+  inline def apply(AccountAssignmentCreationRequestId: UUId, InstanceArn: InstanceArn): DescribeAccountAssignmentCreationStatusRequest = {
     val __obj = js.Dynamic.literal(AccountAssignmentCreationRequestId = AccountAssignmentCreationRequestId.asInstanceOf[js.Any], InstanceArn = InstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountAssignmentCreationStatusRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAccountAssignmentCreationStatusRequestMutableBuilder[Self <: DescribeAccountAssignmentCreationStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountAssignmentCreationStatusRequest](x: Self) {
     
-    @scala.inline
-    def setAccountAssignmentCreationRequestId(value: UUId): Self = StObject.set(x, "AccountAssignmentCreationRequestId", value.asInstanceOf[js.Any])
+    inline def setAccountAssignmentCreationRequestId(value: UUId): Self = StObject.set(x, "AccountAssignmentCreationRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
   }
 }

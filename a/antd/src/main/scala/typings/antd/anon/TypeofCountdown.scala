@@ -11,16 +11,13 @@ trait TypeofCountdown extends StObject {
 }
 object TypeofCountdown {
   
-  @scala.inline
-  def apply(defaultProps: PartialCountdownProps): TypeofCountdown = {
+  inline def apply(defaultProps: PartialCountdownProps): TypeofCountdown = {
     val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofCountdown]
   }
   
-  @scala.inline
-  implicit class TypeofCountdownMutableBuilder[Self <: TypeofCountdown] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofCountdown](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: PartialCountdownProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialCountdownProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }
 }

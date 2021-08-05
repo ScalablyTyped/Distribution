@@ -17,8 +17,7 @@ trait IResult[T] extends StObject {
 }
 object IResult {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     output: StringDictionary[js.Any],
     recordset: IRecordSet[T],
     recordsets: js.Array[IRecordSet[T]],
@@ -28,25 +27,18 @@ object IResult {
     __obj.asInstanceOf[IResult[T]]
   }
   
-  @scala.inline
-  implicit class IResultMutableBuilder[Self <: IResult[?], T] (val x: Self & IResult[T]) extends AnyVal {
+  extension [Self <: IResult[?], T](x: Self & IResult[T]) {
     
-    @scala.inline
-    def setOutput(value: StringDictionary[js.Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: StringDictionary[js.Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordset(value: IRecordSet[T]): Self = StObject.set(x, "recordset", value.asInstanceOf[js.Any])
+    inline def setRecordset(value: IRecordSet[T]): Self = StObject.set(x, "recordset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsets(value: js.Array[IRecordSet[T]]): Self = StObject.set(x, "recordsets", value.asInstanceOf[js.Any])
+    inline def setRecordsets(value: js.Array[IRecordSet[T]]): Self = StObject.set(x, "recordsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsetsVarargs(value: IRecordSet[T]*): Self = StObject.set(x, "recordsets", js.Array(value :_*))
+    inline def setRecordsetsVarargs(value: IRecordSet[T]*): Self = StObject.set(x, "recordsets", js.Array(value :_*))
     
-    @scala.inline
-    def setRowsAffected(value: js.Array[Double]): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
+    inline def setRowsAffected(value: js.Array[Double]): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsAffectedVarargs(value: Double*): Self = StObject.set(x, "rowsAffected", js.Array(value :_*))
+    inline def setRowsAffectedVarargs(value: Double*): Self = StObject.set(x, "rowsAffected", js.Array(value :_*))
   }
 }

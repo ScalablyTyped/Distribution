@@ -82,79 +82,55 @@ trait SwipeProperties
 }
 object SwipeProperties {
   
-  @scala.inline
-  def apply(): SwipeProperties = {
+  inline def apply(): SwipeProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwipeProperties]
   }
   
-  @scala.inline
-  implicit class SwipePropertiesMutableBuilder[Self <: SwipeProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SwipeProperties](x: Self) {
     
-    @scala.inline
-    def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDragLabel(value: String): Self = StObject.set(x, "dragLabel", value.asInstanceOf[js.Any])
+    inline def setDragLabel(value: String): Self = StObject.set(x, "dragLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragLabelUndefined: Self = StObject.set(x, "dragLabel", js.undefined)
+    inline def setDragLabelUndefined: Self = StObject.set(x, "dragLabel", js.undefined)
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setLeadingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "leadingLayers", value.asInstanceOf[js.Any])
+    inline def setLeadingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "leadingLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingLayersUndefined: Self = StObject.set(x, "leadingLayers", js.undefined)
+    inline def setLeadingLayersUndefined: Self = StObject.set(x, "leadingLayers", js.undefined)
     
-    @scala.inline
-    def setLeadingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "leadingLayers", js.Array(value :_*))
+    inline def setLeadingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "leadingLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTrailingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "trailingLayers", value.asInstanceOf[js.Any])
+    inline def setTrailingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "trailingLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingLayersUndefined: Self = StObject.set(x, "trailingLayers", js.undefined)
+    inline def setTrailingLayersUndefined: Self = StObject.set(x, "trailingLayers", js.undefined)
     
-    @scala.inline
-    def setTrailingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "trailingLayers", js.Array(value :_*))
+    inline def setTrailingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "trailingLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: SwipeViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: SwipeViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setVisibleElements(value: widgetsSwipeVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    inline def setVisibleElements(value: widgetsSwipeVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

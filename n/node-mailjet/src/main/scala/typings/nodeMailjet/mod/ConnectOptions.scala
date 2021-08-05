@@ -18,43 +18,31 @@ trait ConnectOptions extends StObject {
 }
 object ConnectOptions {
   
-  @scala.inline
-  def apply(): ConnectOptions = {
+  inline def apply(): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectOptions]
   }
   
-  @scala.inline
-  implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectOptions](x: Self) {
     
-    @scala.inline
-    def setPerform_api_call(value: Boolean): Self = StObject.set(x, "perform_api_call", value.asInstanceOf[js.Any])
+    inline def setPerform_api_call(value: Boolean): Self = StObject.set(x, "perform_api_call", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerform_api_callUndefined: Self = StObject.set(x, "perform_api_call", js.undefined)
+    inline def setPerform_api_callUndefined: Self = StObject.set(x, "perform_api_call", js.undefined)
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FacebookEventType extends StObject
 object FacebookEventType {
   
-  @scala.inline
-  def authDotauthResponseChange: typings.facebookJsSdk.facebookJsSdkStrings.authDotauthResponseChange = "auth.authResponseChange".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotauthResponseChange]
+  inline def authDotauthResponseChange: typings.facebookJsSdk.facebookJsSdkStrings.authDotauthResponseChange = "auth.authResponseChange".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotauthResponseChange]
   
-  @scala.inline
-  def authDotlogin: typings.facebookJsSdk.facebookJsSdkStrings.authDotlogin = "auth.login".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotlogin]
+  inline def authDotlogin: typings.facebookJsSdk.facebookJsSdkStrings.authDotlogin = "auth.login".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotlogin]
   
-  @scala.inline
-  def authDotlogout: typings.facebookJsSdk.facebookJsSdkStrings.authDotlogout = "auth.logout".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotlogout]
+  inline def authDotlogout: typings.facebookJsSdk.facebookJsSdkStrings.authDotlogout = "auth.logout".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotlogout]
   
-  @scala.inline
-  def authDotstatusChange: typings.facebookJsSdk.facebookJsSdkStrings.authDotstatusChange = "auth.statusChange".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotstatusChange]
+  inline def authDotstatusChange: typings.facebookJsSdk.facebookJsSdkStrings.authDotstatusChange = "auth.statusChange".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authDotstatusChange]
   
-  @scala.inline
-  def xfbmlDotrender: typings.facebookJsSdk.facebookJsSdkStrings.xfbmlDotrender = "xfbml.render".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.xfbmlDotrender]
+  inline def xfbmlDotrender: typings.facebookJsSdk.facebookJsSdkStrings.xfbmlDotrender = "xfbml.render".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.xfbmlDotrender]
 }

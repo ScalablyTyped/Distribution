@@ -25,8 +25,7 @@ trait BootstrapMacroExpander
      with XInitialization
 object BootstrapMacroExpander {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ToggleButtonInOption extends StObject {
   
-  @JSName("Access._ToggleButtonInOption_typekey")
+  /* private */ @JSName("Access._ToggleButtonInOption_typekey")
   var AccessDot_ToggleButtonInOption_typekey: ToggleButtonInOption = js.native
   
   var AddColon: Boolean = js.native

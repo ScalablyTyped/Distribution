@@ -10,8 +10,7 @@ object catchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def `catch`[T, R](
+  inline def `catch`[T, R](
     selector: js.Function2[
       /* err */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* caught */ js.Any, 

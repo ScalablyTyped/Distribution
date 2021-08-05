@@ -13,19 +13,15 @@ trait ProductInfoHeaderValue extends StObject {
 }
 object ProductInfoHeaderValue {
   
-  @scala.inline
-  def apply(productInfoHeaderValue: HttpProductInfoHeaderValue, returnValue: Boolean): ProductInfoHeaderValue = {
+  inline def apply(productInfoHeaderValue: HttpProductInfoHeaderValue, returnValue: Boolean): ProductInfoHeaderValue = {
     val __obj = js.Dynamic.literal(productInfoHeaderValue = productInfoHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductInfoHeaderValue]
   }
   
-  @scala.inline
-  implicit class ProductInfoHeaderValueMutableBuilder[Self <: ProductInfoHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ProductInfoHeaderValue](x: Self) {
     
-    @scala.inline
-    def setProductInfoHeaderValue(value: HttpProductInfoHeaderValue): Self = StObject.set(x, "productInfoHeaderValue", value.asInstanceOf[js.Any])
+    inline def setProductInfoHeaderValue(value: HttpProductInfoHeaderValue): Self = StObject.set(x, "productInfoHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions extends StObjec
 }
 object GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptionsMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions](x: Self) {
     
-    @scala.inline
-    def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
+    inline def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIouThresholdUndefined: Self = StObject.set(x, "iouThreshold", js.undefined)
+    inline def setIouThresholdUndefined: Self = StObject.set(x, "iouThreshold", js.undefined)
   }
 }

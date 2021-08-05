@@ -18,28 +18,21 @@ trait SchemaPosDataProviders extends StObject {
 }
 object SchemaPosDataProviders {
   
-  @scala.inline
-  def apply(): SchemaPosDataProviders = {
+  inline def apply(): SchemaPosDataProviders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPosDataProviders]
   }
   
-  @scala.inline
-  implicit class SchemaPosDataProvidersMutableBuilder[Self <: SchemaPosDataProviders] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPosDataProviders](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setPosDataProviders(value: js.Array[SchemaPosDataProvidersPosDataProvider]): Self = StObject.set(x, "posDataProviders", value.asInstanceOf[js.Any])
+    inline def setPosDataProviders(value: js.Array[SchemaPosDataProvidersPosDataProvider]): Self = StObject.set(x, "posDataProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
+    inline def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
-    @scala.inline
-    def setPosDataProvidersVarargs(value: SchemaPosDataProvidersPosDataProvider*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
+    inline def setPosDataProvidersVarargs(value: SchemaPosDataProvidersPosDataProvider*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
   }
 }

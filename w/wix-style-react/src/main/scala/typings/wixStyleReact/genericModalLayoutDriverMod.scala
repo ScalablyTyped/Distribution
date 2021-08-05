@@ -15,17 +15,14 @@ object genericModalLayoutDriverMod {
   }
   object GenericModalLayoutDriver {
     
-    @scala.inline
-    def apply(exists: () => Boolean, isFullscreen: () => Boolean): GenericModalLayoutDriver = {
+    inline def apply(exists: () => Boolean, isFullscreen: () => Boolean): GenericModalLayoutDriver = {
       val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), isFullscreen = js.Any.fromFunction0(isFullscreen))
       __obj.asInstanceOf[GenericModalLayoutDriver]
     }
     
-    @scala.inline
-    implicit class GenericModalLayoutDriverMutableBuilder[Self <: GenericModalLayoutDriver] (val x: Self) extends AnyVal {
+    extension [Self <: GenericModalLayoutDriver](x: Self) {
       
-      @scala.inline
-      def setIsFullscreen(value: () => Boolean): Self = StObject.set(x, "isFullscreen", js.Any.fromFunction0(value))
+      inline def setIsFullscreen(value: () => Boolean): Self = StObject.set(x, "isFullscreen", js.Any.fromFunction0(value))
     }
   }
 }

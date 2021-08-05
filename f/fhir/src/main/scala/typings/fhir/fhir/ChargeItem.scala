@@ -169,220 +169,149 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ChargeItem {
   
-  @scala.inline
-  def apply(code: CodeableConcept, status: code, subject: Reference): ChargeItem = {
+  inline def apply(code: CodeableConcept, status: code, subject: Reference): ChargeItem = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChargeItem]
   }
   
-  @scala.inline
-  implicit class ChargeItemMutableBuilder[Self <: ChargeItem] (val x: Self) extends AnyVal {
+  extension [Self <: ChargeItem](x: Self) {
     
-    @scala.inline
-    def setAccount(value: js.Array[Reference]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: js.Array[Reference]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setAccountVarargs(value: Reference*): Self = StObject.set(x, "account", js.Array(value :_*))
+    inline def setAccountVarargs(value: Reference*): Self = StObject.set(x, "account", js.Array(value :_*))
     
-    @scala.inline
-    def setBodysite(value: js.Array[CodeableConcept]): Self = StObject.set(x, "bodysite", value.asInstanceOf[js.Any])
+    inline def setBodysite(value: js.Array[CodeableConcept]): Self = StObject.set(x, "bodysite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodysiteUndefined: Self = StObject.set(x, "bodysite", js.undefined)
+    inline def setBodysiteUndefined: Self = StObject.set(x, "bodysite", js.undefined)
     
-    @scala.inline
-    def setBodysiteVarargs(value: CodeableConcept*): Self = StObject.set(x, "bodysite", js.Array(value :_*))
+    inline def setBodysiteVarargs(value: CodeableConcept*): Self = StObject.set(x, "bodysite", js.Array(value :_*))
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: js.Array[uri]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: js.Array[uri]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setDefinitionVarargs(value: uri*): Self = StObject.set(x, "definition", js.Array(value :_*))
+    inline def setDefinitionVarargs(value: uri*): Self = StObject.set(x, "definition", js.Array(value :_*))
     
-    @scala.inline
-    def setEnteredDate(value: dateTime): Self = StObject.set(x, "enteredDate", value.asInstanceOf[js.Any])
+    inline def setEnteredDate(value: dateTime): Self = StObject.set(x, "enteredDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnteredDateUndefined: Self = StObject.set(x, "enteredDate", js.undefined)
+    inline def setEnteredDateUndefined: Self = StObject.set(x, "enteredDate", js.undefined)
     
-    @scala.inline
-    def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
+    inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
+    inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
     
-    @scala.inline
-    def setFactorOverride(value: decimal): Self = StObject.set(x, "factorOverride", value.asInstanceOf[js.Any])
+    inline def setFactorOverride(value: decimal): Self = StObject.set(x, "factorOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactorOverrideUndefined: Self = StObject.set(x, "factorOverride", js.undefined)
+    inline def setFactorOverrideUndefined: Self = StObject.set(x, "factorOverride", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
+    inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
-    @scala.inline
-    def setOccurrenceDateTime(value: dateTime): Self = StObject.set(x, "occurrenceDateTime", value.asInstanceOf[js.Any])
+    inline def setOccurrenceDateTime(value: dateTime): Self = StObject.set(x, "occurrenceDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceDateTimeUndefined: Self = StObject.set(x, "occurrenceDateTime", js.undefined)
+    inline def setOccurrenceDateTimeUndefined: Self = StObject.set(x, "occurrenceDateTime", js.undefined)
     
-    @scala.inline
-    def setOccurrencePeriod(value: Period): Self = StObject.set(x, "occurrencePeriod", value.asInstanceOf[js.Any])
+    inline def setOccurrencePeriod(value: Period): Self = StObject.set(x, "occurrencePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencePeriodUndefined: Self = StObject.set(x, "occurrencePeriod", js.undefined)
+    inline def setOccurrencePeriodUndefined: Self = StObject.set(x, "occurrencePeriod", js.undefined)
     
-    @scala.inline
-    def setOccurrenceTiming(value: Timing): Self = StObject.set(x, "occurrenceTiming", value.asInstanceOf[js.Any])
+    inline def setOccurrenceTiming(value: Timing): Self = StObject.set(x, "occurrenceTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceTimingUndefined: Self = StObject.set(x, "occurrenceTiming", js.undefined)
+    inline def setOccurrenceTimingUndefined: Self = StObject.set(x, "occurrenceTiming", js.undefined)
     
-    @scala.inline
-    def setOverrideReason(value: String): Self = StObject.set(x, "overrideReason", value.asInstanceOf[js.Any])
+    inline def setOverrideReason(value: String): Self = StObject.set(x, "overrideReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideReasonUndefined: Self = StObject.set(x, "overrideReason", js.undefined)
+    inline def setOverrideReasonUndefined: Self = StObject.set(x, "overrideReason", js.undefined)
     
-    @scala.inline
-    def setPartOf(value: js.Array[Reference]): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
+    inline def setPartOf(value: js.Array[Reference]): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
+    inline def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
     
-    @scala.inline
-    def setPartOfVarargs(value: Reference*): Self = StObject.set(x, "partOf", js.Array(value :_*))
+    inline def setPartOfVarargs(value: Reference*): Self = StObject.set(x, "partOf", js.Array(value :_*))
     
-    @scala.inline
-    def setParticipant(value: js.Array[ChargeItemParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
+    inline def setParticipant(value: js.Array[ChargeItemParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
+    inline def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
     
-    @scala.inline
-    def setParticipantVarargs(value: ChargeItemParticipant*): Self = StObject.set(x, "participant", js.Array(value :_*))
+    inline def setParticipantVarargs(value: ChargeItemParticipant*): Self = StObject.set(x, "participant", js.Array(value :_*))
     
-    @scala.inline
-    def setPerformingOrganization(value: Reference): Self = StObject.set(x, "performingOrganization", value.asInstanceOf[js.Any])
+    inline def setPerformingOrganization(value: Reference): Self = StObject.set(x, "performingOrganization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformingOrganizationUndefined: Self = StObject.set(x, "performingOrganization", js.undefined)
+    inline def setPerformingOrganizationUndefined: Self = StObject.set(x, "performingOrganization", js.undefined)
     
-    @scala.inline
-    def setPriceOverride(value: Money): Self = StObject.set(x, "priceOverride", value.asInstanceOf[js.Any])
+    inline def setPriceOverride(value: Money): Self = StObject.set(x, "priceOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceOverrideUndefined: Self = StObject.set(x, "priceOverride", js.undefined)
+    inline def setPriceOverrideUndefined: Self = StObject.set(x, "priceOverride", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
+    inline def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestingOrganization(value: Reference): Self = StObject.set(x, "requestingOrganization", value.asInstanceOf[js.Any])
+    inline def setRequestingOrganization(value: Reference): Self = StObject.set(x, "requestingOrganization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestingOrganizationUndefined: Self = StObject.set(x, "requestingOrganization", js.undefined)
+    inline def setRequestingOrganizationUndefined: Self = StObject.set(x, "requestingOrganization", js.undefined)
     
-    @scala.inline
-    def setService(value: js.Array[Reference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: js.Array[Reference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setServiceVarargs(value: Reference*): Self = StObject.set(x, "service", js.Array(value :_*))
+    inline def setServiceVarargs(value: Reference*): Self = StObject.set(x, "service", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportingInformation(value: js.Array[Reference]): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
+    inline def setSupportingInformation(value: js.Array[Reference]): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportingInformationUndefined: Self = StObject.set(x, "supportingInformation", js.undefined)
+    inline def setSupportingInformationUndefined: Self = StObject.set(x, "supportingInformation", js.undefined)
     
-    @scala.inline
-    def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value :_*))
+    inline def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value :_*))
     
-    @scala.inline
-    def set_definition(value: js.Array[Element]): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
+    inline def set_definition(value: js.Array[Element]): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
+    inline def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
     
-    @scala.inline
-    def set_definitionVarargs(value: Element*): Self = StObject.set(x, "_definition", js.Array(value :_*))
+    inline def set_definitionVarargs(value: Element*): Self = StObject.set(x, "_definition", js.Array(value :_*))
     
-    @scala.inline
-    def set_enteredDate(value: Element): Self = StObject.set(x, "_enteredDate", value.asInstanceOf[js.Any])
+    inline def set_enteredDate(value: Element): Self = StObject.set(x, "_enteredDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_enteredDateUndefined: Self = StObject.set(x, "_enteredDate", js.undefined)
+    inline def set_enteredDateUndefined: Self = StObject.set(x, "_enteredDate", js.undefined)
     
-    @scala.inline
-    def set_factorOverride(value: Element): Self = StObject.set(x, "_factorOverride", value.asInstanceOf[js.Any])
+    inline def set_factorOverride(value: Element): Self = StObject.set(x, "_factorOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_factorOverrideUndefined: Self = StObject.set(x, "_factorOverride", js.undefined)
+    inline def set_factorOverrideUndefined: Self = StObject.set(x, "_factorOverride", js.undefined)
     
-    @scala.inline
-    def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
+    inline def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_occurrenceDateTimeUndefined: Self = StObject.set(x, "_occurrenceDateTime", js.undefined)
+    inline def set_occurrenceDateTimeUndefined: Self = StObject.set(x, "_occurrenceDateTime", js.undefined)
     
-    @scala.inline
-    def set_overrideReason(value: Element): Self = StObject.set(x, "_overrideReason", value.asInstanceOf[js.Any])
+    inline def set_overrideReason(value: Element): Self = StObject.set(x, "_overrideReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_overrideReasonUndefined: Self = StObject.set(x, "_overrideReason", js.undefined)
+    inline def set_overrideReasonUndefined: Self = StObject.set(x, "_overrideReason", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

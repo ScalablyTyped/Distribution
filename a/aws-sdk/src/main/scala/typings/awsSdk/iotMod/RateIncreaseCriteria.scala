@@ -18,25 +18,19 @@ trait RateIncreaseCriteria extends StObject {
 }
 object RateIncreaseCriteria {
   
-  @scala.inline
-  def apply(): RateIncreaseCriteria = {
+  inline def apply(): RateIncreaseCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RateIncreaseCriteria]
   }
   
-  @scala.inline
-  implicit class RateIncreaseCriteriaMutableBuilder[Self <: RateIncreaseCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: RateIncreaseCriteria](x: Self) {
     
-    @scala.inline
-    def setNumberOfNotifiedThings(value: NumberOfThings): Self = StObject.set(x, "numberOfNotifiedThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfNotifiedThings(value: NumberOfThings): Self = StObject.set(x, "numberOfNotifiedThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNotifiedThingsUndefined: Self = StObject.set(x, "numberOfNotifiedThings", js.undefined)
+    inline def setNumberOfNotifiedThingsUndefined: Self = StObject.set(x, "numberOfNotifiedThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfSucceededThings(value: NumberOfThings): Self = StObject.set(x, "numberOfSucceededThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfSucceededThings(value: NumberOfThings): Self = StObject.set(x, "numberOfSucceededThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfSucceededThingsUndefined: Self = StObject.set(x, "numberOfSucceededThings", js.undefined)
+    inline def setNumberOfSucceededThingsUndefined: Self = StObject.set(x, "numberOfSucceededThings", js.undefined)
   }
 }

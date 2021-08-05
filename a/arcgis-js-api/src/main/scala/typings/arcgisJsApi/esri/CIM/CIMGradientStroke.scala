@@ -50,59 +50,44 @@ trait CIMGradientStroke
 }
 object CIMGradientStroke {
   
-  @scala.inline
-  def apply(): CIMGradientStroke = {
+  inline def apply(): CIMGradientStroke = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGradientStroke")
     __obj.asInstanceOf[CIMGradientStroke]
   }
   
-  @scala.inline
-  implicit class CIMGradientStrokeMutableBuilder[Self <: CIMGradientStroke] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGradientStroke](x: Self) {
     
-    @scala.inline
-    def setColorRamp(value: js.Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
+    inline def setColorRamp(value: js.Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
+    inline def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     
-    @scala.inline
-    def setGradientMethod(
+    inline def setGradientMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientStrokeMethod * / any */ String
     ): Self = StObject.set(x, "gradientMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientMethodUndefined: Self = StObject.set(x, "gradientMethod", js.undefined)
+    inline def setGradientMethodUndefined: Self = StObject.set(x, "gradientMethod", js.undefined)
     
-    @scala.inline
-    def setGradientSize(value: Double): Self = StObject.set(x, "gradientSize", value.asInstanceOf[js.Any])
+    inline def setGradientSize(value: Double): Self = StObject.set(x, "gradientSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientSizeUndefined: Self = StObject.set(x, "gradientSize", js.undefined)
+    inline def setGradientSizeUndefined: Self = StObject.set(x, "gradientSize", js.undefined)
     
-    @scala.inline
-    def setGradientSizeUnits(
+    inline def setGradientSizeUnits(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SymbolUnits * / any */ String
     ): Self = StObject.set(x, "gradientSizeUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientSizeUnitsUndefined: Self = StObject.set(x, "gradientSizeUnits", js.undefined)
+    inline def setGradientSizeUnitsUndefined: Self = StObject.set(x, "gradientSizeUnits", js.undefined)
     
-    @scala.inline
-    def setGradientType(
+    inline def setGradientType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientStrokeType * / any */ String
     ): Self = StObject.set(x, "gradientType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientTypeUndefined: Self = StObject.set(x, "gradientType", js.undefined)
+    inline def setGradientTypeUndefined: Self = StObject.set(x, "gradientType", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGradientStroke): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGradientStroke): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

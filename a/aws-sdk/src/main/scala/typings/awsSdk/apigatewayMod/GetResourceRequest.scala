@@ -23,28 +23,21 @@ trait GetResourceRequest extends StObject {
 }
 object GetResourceRequest {
   
-  @scala.inline
-  def apply(resourceId: String, restApiId: String): GetResourceRequest = {
+  inline def apply(resourceId: String, restApiId: String): GetResourceRequest = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceRequestMutableBuilder[Self <: GetResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceRequest](x: Self) {
     
-    @scala.inline
-    def setEmbed(value: ListOfString): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: ListOfString): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
+    inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
-    @scala.inline
-    def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value :_*))
+    inline def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

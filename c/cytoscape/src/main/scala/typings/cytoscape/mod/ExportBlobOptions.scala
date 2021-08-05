@@ -16,19 +16,15 @@ trait ExportBlobOptions
 }
 object ExportBlobOptions {
   
-  @scala.inline
-  def apply(): ExportBlobOptions = {
+  inline def apply(): ExportBlobOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportBlobOptions]
   }
   
-  @scala.inline
-  implicit class ExportBlobOptionsMutableBuilder[Self <: ExportBlobOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportBlobOptions](x: Self) {
     
-    @scala.inline
-    def setOutput(value: blob): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: blob): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

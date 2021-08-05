@@ -42,8 +42,7 @@ trait CallableStatement
      with XOutParameters
 object CallableStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connection: XConnection,
     CursorName: String,
     FetchDirection: Double,

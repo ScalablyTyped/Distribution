@@ -34,8 +34,7 @@ trait Device extends StObject {
 }
 object Device {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     columns: CbCallback => Unit,
     count: (Query, CbCallback) => Unit,
@@ -54,46 +53,32 @@ object Device {
     __obj.asInstanceOf[Device]
   }
   
-  @scala.inline
-  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+  extension [Self <: Device](x: Self) {
     
-    @scala.inline
-    def setColumns(value: CbCallback => Unit): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
+    inline def setColumns(value: CbCallback => Unit): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
+    inline def setCount(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDelete(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+    inline def setDelete(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeleteDeviceByName(value: (String, CbCallback) => Unit): Self = StObject.set(x, "deleteDeviceByName", js.Any.fromFunction2(value))
+    inline def setDeleteDeviceByName(value: (String, CbCallback) => Unit): Self = StObject.set(x, "deleteDeviceByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFetch(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
+    inline def setFetch(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDeviceByName(value: (String, CbCallback) => Unit): Self = StObject.set(x, "getDeviceByName", js.Any.fromFunction2(value))
+    inline def setGetDeviceByName(value: (String, CbCallback) => Unit): Self = StObject.set(x, "getDeviceByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (Query, js.Object, Boolean, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
+    inline def setUpdate(value: (Query, js.Object, Boolean, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUpdateDeviceByName(value: (String, js.Object, Boolean, CbCallback) => Unit): Self = StObject.set(x, "updateDeviceByName", js.Any.fromFunction4(value))
+    inline def setUpdateDeviceByName(value: (String, js.Object, Boolean, CbCallback) => Unit): Self = StObject.set(x, "updateDeviceByName", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

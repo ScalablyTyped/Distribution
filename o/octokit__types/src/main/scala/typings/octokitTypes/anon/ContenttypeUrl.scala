@@ -12,19 +12,15 @@ trait ContenttypeUrl extends StObject {
 }
 object ContenttypeUrl {
   
-  @scala.inline
-  def apply(content_type: String, url: String): ContenttypeUrl = {
+  inline def apply(content_type: String, url: String): ContenttypeUrl = {
     val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContenttypeUrl]
   }
   
-  @scala.inline
-  implicit class ContenttypeUrlMutableBuilder[Self <: ContenttypeUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ContenttypeUrl](x: Self) {
     
-    @scala.inline
-    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

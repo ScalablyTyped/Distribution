@@ -36,8 +36,7 @@ object ConfirmationInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
@@ -48,8 +47,7 @@ object ConfirmationInfo {
     *  6.0.0 to 7.7.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
@@ -60,8 +58,7 @@ object ConfirmationInfo {
     *  7.8.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCallNanoflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.CallNanoflowClientAction): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def createInCallNanoflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.CallNanoflowClientAction): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
@@ -69,20 +66,17 @@ object ConfirmationInfo {
     * of the parent MicroflowSettings element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowSettingsUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def createInMicroflowSettingsUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ConfirmationInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ConfirmationInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

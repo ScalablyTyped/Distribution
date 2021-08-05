@@ -24,32 +24,23 @@ object pkgOptionsMod {
   trait BackgroundAlignment extends StObject
   object BackgroundAlignment {
     
-    @scala.inline
-    def bottom: typings.appBuilderLib.appBuilderLibStrings.bottom = "bottom".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.bottom]
+    inline def bottom: typings.appBuilderLib.appBuilderLibStrings.bottom = "bottom".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.bottom]
     
-    @scala.inline
-    def bottomleft: typings.appBuilderLib.appBuilderLibStrings.bottomleft = "bottomleft".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.bottomleft]
+    inline def bottomleft: typings.appBuilderLib.appBuilderLibStrings.bottomleft = "bottomleft".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.bottomleft]
     
-    @scala.inline
-    def bottomright: typings.appBuilderLib.appBuilderLibStrings.bottomright = "bottomright".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.bottomright]
+    inline def bottomright: typings.appBuilderLib.appBuilderLibStrings.bottomright = "bottomright".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.bottomright]
     
-    @scala.inline
-    def center: typings.appBuilderLib.appBuilderLibStrings.center = "center".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.center]
+    inline def center: typings.appBuilderLib.appBuilderLibStrings.center = "center".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.center]
     
-    @scala.inline
-    def left: typings.appBuilderLib.appBuilderLibStrings.left = "left".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.left]
+    inline def left: typings.appBuilderLib.appBuilderLibStrings.left = "left".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.left]
     
-    @scala.inline
-    def right: typings.appBuilderLib.appBuilderLibStrings.right = "right".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.right]
+    inline def right: typings.appBuilderLib.appBuilderLibStrings.right = "right".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.right]
     
-    @scala.inline
-    def top: typings.appBuilderLib.appBuilderLibStrings.top = "top".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.top]
+    inline def top: typings.appBuilderLib.appBuilderLibStrings.top = "top".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.top]
     
-    @scala.inline
-    def topleft: typings.appBuilderLib.appBuilderLibStrings.topleft = "topleft".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.topleft]
+    inline def topleft: typings.appBuilderLib.appBuilderLibStrings.topleft = "topleft".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.topleft]
     
-    @scala.inline
-    def topright: typings.appBuilderLib.appBuilderLibStrings.topright = "topright".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.topright]
+    inline def topright: typings.appBuilderLib.appBuilderLibStrings.topright = "topright".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.topright]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -60,14 +51,11 @@ object pkgOptionsMod {
   trait BackgroundScaling extends StObject
   object BackgroundScaling {
     
-    @scala.inline
-    def none: none_ = "none".asInstanceOf[none_]
+    inline def none: none_ = "none".asInstanceOf[none_]
     
-    @scala.inline
-    def proportional: typings.appBuilderLib.appBuilderLibStrings.proportional = "proportional".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.proportional]
+    inline def proportional: typings.appBuilderLib.appBuilderLibStrings.proportional = "proportional".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.proportional]
     
-    @scala.inline
-    def tofit: typings.appBuilderLib.appBuilderLibStrings.tofit = "tofit".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.tofit]
+    inline def tofit: typings.appBuilderLib.appBuilderLibStrings.tofit = "tofit".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.tofit]
   }
   
   trait PkgBackgroundOptions extends StObject {
@@ -93,38 +81,28 @@ object pkgOptionsMod {
   }
   object PkgBackgroundOptions {
     
-    @scala.inline
-    def apply(): PkgBackgroundOptions = {
+    inline def apply(): PkgBackgroundOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PkgBackgroundOptions]
     }
     
-    @scala.inline
-    implicit class PkgBackgroundOptionsMutableBuilder[Self <: PkgBackgroundOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PkgBackgroundOptions](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: BackgroundAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: BackgroundAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentNull: Self = StObject.set(x, "alignment", null)
+      inline def setAlignmentNull: Self = StObject.set(x, "alignment", null)
       
-      @scala.inline
-      def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setScaling(value: BackgroundScaling): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
+      inline def setScaling(value: BackgroundScaling): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingNull: Self = StObject.set(x, "scaling", null)
+      inline def setScalingNull: Self = StObject.set(x, "scaling", null)
       
-      @scala.inline
-      def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
+      inline def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
     }
   }
   
@@ -250,164 +228,112 @@ object pkgOptionsMod {
   }
   object PkgOptions {
     
-    @scala.inline
-    def apply(): PkgOptions = {
+    inline def apply(): PkgOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PkgOptions]
     }
     
-    @scala.inline
-    implicit class PkgOptionsMutableBuilder[Self <: PkgOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PkgOptions](x: Self) {
       
-      @scala.inline
-      def setAllowAnywhere(value: Boolean): Self = StObject.set(x, "allowAnywhere", value.asInstanceOf[js.Any])
+      inline def setAllowAnywhere(value: Boolean): Self = StObject.set(x, "allowAnywhere", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAnywhereNull: Self = StObject.set(x, "allowAnywhere", null)
+      inline def setAllowAnywhereNull: Self = StObject.set(x, "allowAnywhere", null)
       
-      @scala.inline
-      def setAllowAnywhereUndefined: Self = StObject.set(x, "allowAnywhere", js.undefined)
+      inline def setAllowAnywhereUndefined: Self = StObject.set(x, "allowAnywhere", js.undefined)
       
-      @scala.inline
-      def setAllowCurrentUserHome(value: Boolean): Self = StObject.set(x, "allowCurrentUserHome", value.asInstanceOf[js.Any])
+      inline def setAllowCurrentUserHome(value: Boolean): Self = StObject.set(x, "allowCurrentUserHome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCurrentUserHomeNull: Self = StObject.set(x, "allowCurrentUserHome", null)
+      inline def setAllowCurrentUserHomeNull: Self = StObject.set(x, "allowCurrentUserHome", null)
       
-      @scala.inline
-      def setAllowCurrentUserHomeUndefined: Self = StObject.set(x, "allowCurrentUserHome", js.undefined)
+      inline def setAllowCurrentUserHomeUndefined: Self = StObject.set(x, "allowCurrentUserHome", js.undefined)
       
-      @scala.inline
-      def setAllowRootDirectory(value: Boolean): Self = StObject.set(x, "allowRootDirectory", value.asInstanceOf[js.Any])
+      inline def setAllowRootDirectory(value: Boolean): Self = StObject.set(x, "allowRootDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRootDirectoryNull: Self = StObject.set(x, "allowRootDirectory", null)
+      inline def setAllowRootDirectoryNull: Self = StObject.set(x, "allowRootDirectory", null)
       
-      @scala.inline
-      def setAllowRootDirectoryUndefined: Self = StObject.set(x, "allowRootDirectory", js.undefined)
+      inline def setAllowRootDirectoryUndefined: Self = StObject.set(x, "allowRootDirectory", js.undefined)
       
-      @scala.inline
-      def setBackground(value: PkgBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: PkgBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundNull: Self = StObject.set(x, "background", null)
+      inline def setBackgroundNull: Self = StObject.set(x, "background", null)
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
+      inline def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConclusionNull: Self = StObject.set(x, "conclusion", null)
+      inline def setConclusionNull: Self = StObject.set(x, "conclusion", null)
       
-      @scala.inline
-      def setConclusionUndefined: Self = StObject.set(x, "conclusion", js.undefined)
+      inline def setConclusionUndefined: Self = StObject.set(x, "conclusion", js.undefined)
       
-      @scala.inline
-      def setHasStrictIdentifier(value: Boolean): Self = StObject.set(x, "hasStrictIdentifier", value.asInstanceOf[js.Any])
+      inline def setHasStrictIdentifier(value: Boolean): Self = StObject.set(x, "hasStrictIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasStrictIdentifierNull: Self = StObject.set(x, "hasStrictIdentifier", null)
+      inline def setHasStrictIdentifierNull: Self = StObject.set(x, "hasStrictIdentifier", null)
       
-      @scala.inline
-      def setHasStrictIdentifierUndefined: Self = StObject.set(x, "hasStrictIdentifier", js.undefined)
+      inline def setHasStrictIdentifierUndefined: Self = StObject.set(x, "hasStrictIdentifier", js.undefined)
       
-      @scala.inline
-      def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityNull: Self = StObject.set(x, "identity", null)
+      inline def setIdentityNull: Self = StObject.set(x, "identity", null)
       
-      @scala.inline
-      def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+      inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      @scala.inline
-      def setInstallLocation(value: String): Self = StObject.set(x, "installLocation", value.asInstanceOf[js.Any])
+      inline def setInstallLocation(value: String): Self = StObject.set(x, "installLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallLocationNull: Self = StObject.set(x, "installLocation", null)
+      inline def setInstallLocationNull: Self = StObject.set(x, "installLocation", null)
       
-      @scala.inline
-      def setInstallLocationUndefined: Self = StObject.set(x, "installLocation", js.undefined)
+      inline def setInstallLocationUndefined: Self = StObject.set(x, "installLocation", js.undefined)
       
-      @scala.inline
-      def setIsRelocatable(value: Boolean): Self = StObject.set(x, "isRelocatable", value.asInstanceOf[js.Any])
+      inline def setIsRelocatable(value: Boolean): Self = StObject.set(x, "isRelocatable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRelocatableNull: Self = StObject.set(x, "isRelocatable", null)
+      inline def setIsRelocatableNull: Self = StObject.set(x, "isRelocatable", null)
       
-      @scala.inline
-      def setIsRelocatableUndefined: Self = StObject.set(x, "isRelocatable", js.undefined)
+      inline def setIsRelocatableUndefined: Self = StObject.set(x, "isRelocatable", js.undefined)
       
-      @scala.inline
-      def setIsVersionChecked(value: Boolean): Self = StObject.set(x, "isVersionChecked", value.asInstanceOf[js.Any])
+      inline def setIsVersionChecked(value: Boolean): Self = StObject.set(x, "isVersionChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVersionCheckedNull: Self = StObject.set(x, "isVersionChecked", null)
+      inline def setIsVersionCheckedNull: Self = StObject.set(x, "isVersionChecked", null)
       
-      @scala.inline
-      def setIsVersionCheckedUndefined: Self = StObject.set(x, "isVersionChecked", js.undefined)
+      inline def setIsVersionCheckedUndefined: Self = StObject.set(x, "isVersionChecked", js.undefined)
       
-      @scala.inline
-      def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+      inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseNull: Self = StObject.set(x, "license", null)
+      inline def setLicenseNull: Self = StObject.set(x, "license", null)
       
-      @scala.inline
-      def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+      inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
       
-      @scala.inline
-      def setMustClose(value: js.Array[String]): Self = StObject.set(x, "mustClose", value.asInstanceOf[js.Any])
+      inline def setMustClose(value: js.Array[String]): Self = StObject.set(x, "mustClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMustCloseNull: Self = StObject.set(x, "mustClose", null)
+      inline def setMustCloseNull: Self = StObject.set(x, "mustClose", null)
       
-      @scala.inline
-      def setMustCloseUndefined: Self = StObject.set(x, "mustClose", js.undefined)
+      inline def setMustCloseUndefined: Self = StObject.set(x, "mustClose", js.undefined)
       
-      @scala.inline
-      def setMustCloseVarargs(value: String*): Self = StObject.set(x, "mustClose", js.Array(value :_*))
+      inline def setMustCloseVarargs(value: String*): Self = StObject.set(x, "mustClose", js.Array(value :_*))
       
-      @scala.inline
-      def setOverwriteAction(value: upgrade | update): Self = StObject.set(x, "overwriteAction", value.asInstanceOf[js.Any])
+      inline def setOverwriteAction(value: upgrade | update): Self = StObject.set(x, "overwriteAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteActionNull: Self = StObject.set(x, "overwriteAction", null)
+      inline def setOverwriteActionNull: Self = StObject.set(x, "overwriteAction", null)
       
-      @scala.inline
-      def setOverwriteActionUndefined: Self = StObject.set(x, "overwriteAction", js.undefined)
+      inline def setOverwriteActionUndefined: Self = StObject.set(x, "overwriteAction", js.undefined)
       
-      @scala.inline
-      def setProductbuild(value: js.Array[String]): Self = StObject.set(x, "productbuild", value.asInstanceOf[js.Any])
+      inline def setProductbuild(value: js.Array[String]): Self = StObject.set(x, "productbuild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductbuildNull: Self = StObject.set(x, "productbuild", null)
+      inline def setProductbuildNull: Self = StObject.set(x, "productbuild", null)
       
-      @scala.inline
-      def setProductbuildUndefined: Self = StObject.set(x, "productbuild", js.undefined)
+      inline def setProductbuildUndefined: Self = StObject.set(x, "productbuild", js.undefined)
       
-      @scala.inline
-      def setProductbuildVarargs(value: String*): Self = StObject.set(x, "productbuild", js.Array(value :_*))
+      inline def setProductbuildVarargs(value: String*): Self = StObject.set(x, "productbuild", js.Array(value :_*))
       
-      @scala.inline
-      def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsNull: Self = StObject.set(x, "scripts", null)
+      inline def setScriptsNull: Self = StObject.set(x, "scripts", null)
       
-      @scala.inline
-      def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      @scala.inline
-      def setWelcome(value: String): Self = StObject.set(x, "welcome", value.asInstanceOf[js.Any])
+      inline def setWelcome(value: String): Self = StObject.set(x, "welcome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWelcomeNull: Self = StObject.set(x, "welcome", null)
+      inline def setWelcomeNull: Self = StObject.set(x, "welcome", null)
       
-      @scala.inline
-      def setWelcomeUndefined: Self = StObject.set(x, "welcome", js.undefined)
+      inline def setWelcomeUndefined: Self = StObject.set(x, "welcome", js.undefined)
     }
   }
 }

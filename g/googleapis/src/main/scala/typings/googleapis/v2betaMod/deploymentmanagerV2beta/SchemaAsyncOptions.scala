@@ -23,25 +23,19 @@ trait SchemaAsyncOptions extends StObject {
 }
 object SchemaAsyncOptions {
   
-  @scala.inline
-  def apply(): SchemaAsyncOptions = {
+  inline def apply(): SchemaAsyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsyncOptions]
   }
   
-  @scala.inline
-  implicit class SchemaAsyncOptionsMutableBuilder[Self <: SchemaAsyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsyncOptions](x: Self) {
     
-    @scala.inline
-    def setMethodMatch(value: String): Self = StObject.set(x, "methodMatch", value.asInstanceOf[js.Any])
+    inline def setMethodMatch(value: String): Self = StObject.set(x, "methodMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodMatchUndefined: Self = StObject.set(x, "methodMatch", js.undefined)
+    inline def setMethodMatchUndefined: Self = StObject.set(x, "methodMatch", js.undefined)
     
-    @scala.inline
-    def setPollingOptions(value: SchemaPollingOptions): Self = StObject.set(x, "pollingOptions", value.asInstanceOf[js.Any])
+    inline def setPollingOptions(value: SchemaPollingOptions): Self = StObject.set(x, "pollingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingOptionsUndefined: Self = StObject.set(x, "pollingOptions", js.undefined)
+    inline def setPollingOptionsUndefined: Self = StObject.set(x, "pollingOptions", js.undefined)
   }
 }

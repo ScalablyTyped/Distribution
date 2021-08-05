@@ -23,28 +23,21 @@ trait PollForJobsInput extends StObject {
 }
 object PollForJobsInput {
   
-  @scala.inline
-  def apply(actionTypeId: ActionTypeId): PollForJobsInput = {
+  inline def apply(actionTypeId: ActionTypeId): PollForJobsInput = {
     val __obj = js.Dynamic.literal(actionTypeId = actionTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollForJobsInput]
   }
   
-  @scala.inline
-  implicit class PollForJobsInputMutableBuilder[Self <: PollForJobsInput] (val x: Self) extends AnyVal {
+  extension [Self <: PollForJobsInput](x: Self) {
     
-    @scala.inline
-    def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
+    inline def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+    inline def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
+    inline def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
     
-    @scala.inline
-    def setQueryParam(value: QueryParamMap): Self = StObject.set(x, "queryParam", value.asInstanceOf[js.Any])
+    inline def setQueryParam(value: QueryParamMap): Self = StObject.set(x, "queryParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
+    inline def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
   }
 }

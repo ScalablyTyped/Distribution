@@ -19,8 +19,7 @@ trait SlideCreateFromOptions
 }
 object SlideCreateFromOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object SlideCreateFromOptions {
     __obj.asInstanceOf[SlideCreateFromOptions]
   }
   
-  @scala.inline
-  implicit class SlideCreateFromOptionsMutableBuilder[Self <: SlideCreateFromOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SlideCreateFromOptions](x: Self) {
     
-    @scala.inline
-    def setScreenshot(value: SlideCreateFromOptionsScreenshot): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
+    inline def setScreenshot(value: SlideCreateFromOptionsScreenshot): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
+    inline def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
   }
 }

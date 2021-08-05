@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SafetyTipStatus extends StObject
 object SafetyTipStatus {
   
-  @scala.inline
-  def badReputation: typings.devtoolsProtocol.devtoolsProtocolStrings.badReputation = "badReputation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.badReputation]
+  inline def badReputation: typings.devtoolsProtocol.devtoolsProtocolStrings.badReputation = "badReputation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.badReputation]
   
-  @scala.inline
-  def lookalike: typings.devtoolsProtocol.devtoolsProtocolStrings.lookalike = "lookalike".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.lookalike]
+  inline def lookalike: typings.devtoolsProtocol.devtoolsProtocolStrings.lookalike = "lookalike".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.lookalike]
 }

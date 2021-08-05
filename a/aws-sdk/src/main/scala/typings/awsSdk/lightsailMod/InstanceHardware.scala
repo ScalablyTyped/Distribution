@@ -23,34 +23,25 @@ trait InstanceHardware extends StObject {
 }
 object InstanceHardware {
   
-  @scala.inline
-  def apply(): InstanceHardware = {
+  inline def apply(): InstanceHardware = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceHardware]
   }
   
-  @scala.inline
-  implicit class InstanceHardwareMutableBuilder[Self <: InstanceHardware] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceHardware](x: Self) {
     
-    @scala.inline
-    def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
+    inline def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
+    inline def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
     
-    @scala.inline
-    def setDisks(value: DiskList): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: DiskList): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
-    @scala.inline
-    def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
+    inline def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
+    inline def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
   }
 }

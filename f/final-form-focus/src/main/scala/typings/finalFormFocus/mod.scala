@@ -12,17 +12,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[FormValues](): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
-  @scala.inline
-  def default[FormValues](getInputs: Unit, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
-  @scala.inline
-  def default[FormValues](getInputs: GetInputs): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any]).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
-  @scala.inline
-  def default[FormValues](getInputs: GetInputs, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  inline def default[FormValues](): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  inline def default[FormValues](getInputs: Unit, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  inline def default[FormValues](getInputs: GetInputs): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any]).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  inline def default[FormValues](getInputs: GetInputs, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
   
-  @scala.inline
-  def getFormInputs(formName: String): GetInputs = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormInputs")(formName.asInstanceOf[js.Any]).asInstanceOf[GetInputs]
+  inline def getFormInputs(formName: String): GetInputs = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormInputs")(formName.asInstanceOf[js.Any]).asInstanceOf[GetInputs]
   
   type FindInput = js.Function2[
     /* inputs */ js.Array[FocusableInput], 
@@ -38,20 +33,16 @@ object mod {
   }
   object FocusableInput {
     
-    @scala.inline
-    def apply(focus: () => Unit, name: String): FocusableInput = {
+    inline def apply(focus: () => Unit, name: String): FocusableInput = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FocusableInput]
     }
     
-    @scala.inline
-    implicit class FocusableInputMutableBuilder[Self <: FocusableInput] (val x: Self) extends AnyVal {
+    extension [Self <: FocusableInput](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

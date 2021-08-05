@@ -10,16 +10,13 @@ trait ValueExpr extends StObject {
 }
 object ValueExpr {
   
-  @scala.inline
-  def apply(qv: String): ValueExpr = {
+  inline def apply(qv: String): ValueExpr = {
     val __obj = js.Dynamic.literal(qv = qv.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueExpr]
   }
   
-  @scala.inline
-  implicit class ValueExprMutableBuilder[Self <: ValueExpr] (val x: Self) extends AnyVal {
+  extension [Self <: ValueExpr](x: Self) {
     
-    @scala.inline
-    def setQv(value: String): Self = StObject.set(x, "qv", value.asInstanceOf[js.Any])
+    inline def setQv(value: String): Self = StObject.set(x, "qv", value.asInstanceOf[js.Any])
   }
 }

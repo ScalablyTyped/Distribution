@@ -85,8 +85,7 @@ trait ReverbEffectDefinition extends StObject {
 }
 object ReverbEffectDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatableClassId: String,
     decayTime: Double,
     density: Double,
@@ -117,82 +116,56 @@ object ReverbEffectDefinition {
     __obj.asInstanceOf[ReverbEffectDefinition]
   }
   
-  @scala.inline
-  implicit class ReverbEffectDefinitionMutableBuilder[Self <: ReverbEffectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ReverbEffectDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecayTime(value: Double): Self = StObject.set(x, "decayTime", value.asInstanceOf[js.Any])
+    inline def setDecayTime(value: Double): Self = StObject.set(x, "decayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableLateField(value: Boolean): Self = StObject.set(x, "disableLateField", value.asInstanceOf[js.Any])
+    inline def setDisableLateField(value: Boolean): Self = StObject.set(x, "disableLateField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarlyDiffusion(value: Double): Self = StObject.set(x, "earlyDiffusion", value.asInstanceOf[js.Any])
+    inline def setEarlyDiffusion(value: Double): Self = StObject.set(x, "earlyDiffusion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighEQCutoff(value: Double): Self = StObject.set(x, "highEQCutoff", value.asInstanceOf[js.Any])
+    inline def setHighEQCutoff(value: Double): Self = StObject.set(x, "highEQCutoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighEQGain(value: Double): Self = StObject.set(x, "highEQGain", value.asInstanceOf[js.Any])
+    inline def setHighEQGain(value: Double): Self = StObject.set(x, "highEQGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLateDiffusion(value: Double): Self = StObject.set(x, "lateDiffusion", value.asInstanceOf[js.Any])
+    inline def setLateDiffusion(value: Double): Self = StObject.set(x, "lateDiffusion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowEQCutoff(value: Double): Self = StObject.set(x, "lowEQCutoff", value.asInstanceOf[js.Any])
+    inline def setLowEQCutoff(value: Double): Self = StObject.set(x, "lowEQCutoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowEQGain(value: Double): Self = StObject.set(x, "lowEQGain", value.asInstanceOf[js.Any])
+    inline def setLowEQGain(value: Double): Self = StObject.set(x, "lowEQGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionLeft(value: Double): Self = StObject.set(x, "positionLeft", value.asInstanceOf[js.Any])
+    inline def setPositionLeft(value: Double): Self = StObject.set(x, "positionLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionMatrixLeft(value: Double): Self = StObject.set(x, "positionMatrixLeft", value.asInstanceOf[js.Any])
+    inline def setPositionMatrixLeft(value: Double): Self = StObject.set(x, "positionMatrixLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionMatrixRight(value: Double): Self = StObject.set(x, "positionMatrixRight", value.asInstanceOf[js.Any])
+    inline def setPositionMatrixRight(value: Double): Self = StObject.set(x, "positionMatrixRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionRight(value: Double): Self = StObject.set(x, "positionRight", value.asInstanceOf[js.Any])
+    inline def setPositionRight(value: Double): Self = StObject.set(x, "positionRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRearDelay(value: Double): Self = StObject.set(x, "rearDelay", value.asInstanceOf[js.Any])
+    inline def setRearDelay(value: Double): Self = StObject.set(x, "rearDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflectionsDelay(value: Double): Self = StObject.set(x, "reflectionsDelay", value.asInstanceOf[js.Any])
+    inline def setReflectionsDelay(value: Double): Self = StObject.set(x, "reflectionsDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflectionsGain(value: Double): Self = StObject.set(x, "reflectionsGain", value.asInstanceOf[js.Any])
+    inline def setReflectionsGain(value: Double): Self = StObject.set(x, "reflectionsGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverbDelay(value: Double): Self = StObject.set(x, "reverbDelay", value.asInstanceOf[js.Any])
+    inline def setReverbDelay(value: Double): Self = StObject.set(x, "reverbDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverbGain(value: Double): Self = StObject.set(x, "reverbGain", value.asInstanceOf[js.Any])
+    inline def setReverbGain(value: Double): Self = StObject.set(x, "reverbGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomFilterFreq(value: Double): Self = StObject.set(x, "roomFilterFreq", value.asInstanceOf[js.Any])
+    inline def setRoomFilterFreq(value: Double): Self = StObject.set(x, "roomFilterFreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomFilterHF(value: Double): Self = StObject.set(x, "roomFilterHF", value.asInstanceOf[js.Any])
+    inline def setRoomFilterHF(value: Double): Self = StObject.set(x, "roomFilterHF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomFilterMain(value: Double): Self = StObject.set(x, "roomFilterMain", value.asInstanceOf[js.Any])
+    inline def setRoomFilterMain(value: Double): Self = StObject.set(x, "roomFilterMain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomSize(value: Double): Self = StObject.set(x, "roomSize", value.asInstanceOf[js.Any])
+    inline def setRoomSize(value: Double): Self = StObject.set(x, "roomSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWetDryMix(value: Double): Self = StObject.set(x, "wetDryMix", value.asInstanceOf[js.Any])
+    inline def setWetDryMix(value: Double): Self = StObject.set(x, "wetDryMix", value.asInstanceOf[js.Any])
   }
 }

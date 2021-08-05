@@ -17,22 +17,17 @@ trait Stencil extends StObject {
 }
 object Stencil {
   
-  @scala.inline
-  def apply(color: WebGLColorBuffer, depth: WebGLDepthBuffer, stencil: WebGLStencilBuffer): Stencil = {
+  inline def apply(color: WebGLColorBuffer, depth: WebGLDepthBuffer, stencil: WebGLStencilBuffer): Stencil = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], stencil = stencil.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stencil]
   }
   
-  @scala.inline
-  implicit class StencilMutableBuilder[Self <: Stencil] (val x: Self) extends AnyVal {
+  extension [Self <: Stencil](x: Self) {
     
-    @scala.inline
-    def setColor(value: WebGLColorBuffer): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: WebGLColorBuffer): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: WebGLDepthBuffer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: WebGLDepthBuffer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStencil(value: WebGLStencilBuffer): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+    inline def setStencil(value: WebGLStencilBuffer): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
   }
 }

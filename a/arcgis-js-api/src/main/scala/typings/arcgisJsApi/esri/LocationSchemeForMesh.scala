@@ -27,8 +27,7 @@ trait LocationSchemeForMesh
 }
 object LocationSchemeForMesh {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -39,13 +38,10 @@ object LocationSchemeForMesh {
     __obj.asInstanceOf[LocationSchemeForMesh]
   }
   
-  @scala.inline
-  implicit class LocationSchemeForMeshMutableBuilder[Self <: LocationSchemeForMesh] (val x: Self) extends AnyVal {
+  extension [Self <: LocationSchemeForMesh](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait ApplicationApplicationConfigurationEnvironmentProperties extends StObject 
 }
 object ApplicationApplicationConfigurationEnvironmentProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     propertyGroups: Input[
       js.Array[Input[ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup]]
     ]
@@ -26,17 +25,14 @@ object ApplicationApplicationConfigurationEnvironmentProperties {
     __obj.asInstanceOf[ApplicationApplicationConfigurationEnvironmentProperties]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationEnvironmentPropertiesMutableBuilder[Self <: ApplicationApplicationConfigurationEnvironmentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationEnvironmentProperties](x: Self) {
     
-    @scala.inline
-    def setPropertyGroups(
+    inline def setPropertyGroups(
       value: Input[
           js.Array[Input[ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup]]
         ]
     ): Self = StObject.set(x, "propertyGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyGroupsVarargs(value: Input[ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup]*): Self = StObject.set(x, "propertyGroups", js.Array(value :_*))
+    inline def setPropertyGroupsVarargs(value: Input[ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup]*): Self = StObject.set(x, "propertyGroups", js.Array(value :_*))
   }
 }

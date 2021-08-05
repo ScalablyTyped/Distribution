@@ -42,43 +42,31 @@ trait VolumeMount extends StObject {
 }
 object VolumeMount {
   
-  @scala.inline
-  def apply(mountPath: Input[String], name: Input[String]): VolumeMount = {
+  inline def apply(mountPath: Input[String], name: Input[String]): VolumeMount = {
     val __obj = js.Dynamic.literal(mountPath = mountPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeMount]
   }
   
-  @scala.inline
-  implicit class VolumeMountMutableBuilder[Self <: VolumeMount] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeMount](x: Self) {
     
-    @scala.inline
-    def setMountPath(value: Input[String]): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
+    inline def setMountPath(value: Input[String]): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPropagation(value: Input[String]): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
+    inline def setMountPropagation(value: Input[String]): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPropagationUndefined: Self = StObject.set(x, "mountPropagation", js.undefined)
+    inline def setMountPropagationUndefined: Self = StObject.set(x, "mountPropagation", js.undefined)
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSubPath(value: Input[String]): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
+    inline def setSubPath(value: Input[String]): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPathExpr(value: Input[String]): Self = StObject.set(x, "subPathExpr", value.asInstanceOf[js.Any])
+    inline def setSubPathExpr(value: Input[String]): Self = StObject.set(x, "subPathExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPathExprUndefined: Self = StObject.set(x, "subPathExpr", js.undefined)
+    inline def setSubPathExprUndefined: Self = StObject.set(x, "subPathExpr", js.undefined)
     
-    @scala.inline
-    def setSubPathUndefined: Self = StObject.set(x, "subPath", js.undefined)
+    inline def setSubPathUndefined: Self = StObject.set(x, "subPath", js.undefined)
   }
 }

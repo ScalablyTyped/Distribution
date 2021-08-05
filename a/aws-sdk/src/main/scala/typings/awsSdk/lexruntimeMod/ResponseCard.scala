@@ -23,34 +23,25 @@ trait ResponseCard extends StObject {
 }
 object ResponseCard {
   
-  @scala.inline
-  def apply(): ResponseCard = {
+  inline def apply(): ResponseCard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseCard]
   }
   
-  @scala.inline
-  implicit class ResponseCardMutableBuilder[Self <: ResponseCard] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseCard](x: Self) {
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setGenericAttachments(value: genericAttachmentList): Self = StObject.set(x, "genericAttachments", value.asInstanceOf[js.Any])
+    inline def setGenericAttachments(value: genericAttachmentList): Self = StObject.set(x, "genericAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericAttachmentsUndefined: Self = StObject.set(x, "genericAttachments", js.undefined)
+    inline def setGenericAttachmentsUndefined: Self = StObject.set(x, "genericAttachments", js.undefined)
     
-    @scala.inline
-    def setGenericAttachmentsVarargs(value: GenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value :_*))
+    inline def setGenericAttachmentsVarargs(value: GenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

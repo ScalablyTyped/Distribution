@@ -33,7 +33,7 @@ object userAgentMod {
   class UserAgent () extends StObject {
     def this(options: PartialUserAgentOptions) = this()
     
-    var _contact: js.Any = js.native
+    /* private */ var _contact: js.Any = js.native
     
     /**
       * Used to avoid circular references.
@@ -51,22 +51,22 @@ object userAgentMod {
     /** @internal */
     var _sessions: StringDictionary[Session] = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: js.Any = js.native
     
     /** @internal */
     var _subscriptions: StringDictionary[Subscription] = js.native
     
-    var _transport: js.Any = js.native
+    /* private */ var _transport: js.Any = js.native
     
-    var _userAgentCore: js.Any = js.native
+    /* private */ var _userAgentCore: js.Any = js.native
     
     /**
       * Attempt reconnection up to `maxReconnectionAttempts` times.
       * @param reconnectionAttempt - Current attempt number.
       */
-    var attemptReconnection: js.Any = js.native
+    /* private */ var attemptReconnection: js.Any = js.native
     
     /**
       * User agent configuration.
@@ -103,14 +103,14 @@ object userAgentMod {
     /**
       * Initialize contact.
       */
-    var initContact: js.Any = js.native
+    /* private */ var initContact: js.Any = js.native
     
     /**
       * Initialize user agent core.
       */
-    var initCore: js.Any = js.native
+    /* private */ var initCore: js.Any = js.native
     
-    var initTransportCallbacks: js.Any = js.native
+    /* private */ var initTransportCallbacks: js.Any = js.native
     
     /**
       * True if transport is connected.
@@ -118,19 +118,19 @@ object userAgentMod {
     def isConnected(): Boolean = js.native
     
     /** Logger. */
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /** LoggerFactory. */
-    var loggerFactory: js.Any = js.native
+    /* private */ var loggerFactory: js.Any = js.native
     
-    var onTransportConnect: js.Any = js.native
+    /* private */ var onTransportConnect: js.Any = js.native
     
-    var onTransportDisconnect: js.Any = js.native
+    /* private */ var onTransportDisconnect: js.Any = js.native
     
-    var onTransportMessage: js.Any = js.native
+    /* private */ var onTransportMessage: js.Any = js.native
     
     /** Options. */
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Reconnect the transport.
@@ -199,7 +199,7 @@ object userAgentMod {
     /**
       * Transition state.
       */
-    var transitionState: js.Any = js.native
+    /* private */ var transitionState: js.Any = js.native
     
     /**
       * User agent transport.
@@ -207,7 +207,7 @@ object userAgentMod {
     def transport: Transport = js.native
     
     /** Unload listener. */
-    var unloadListener: js.Any = js.native
+    /* private */ var unloadListener: js.Any = js.native
     
     /**
       * User agent core.
@@ -225,8 +225,7 @@ object userAgentMod {
     @JSImport("sip.js/lib/api/user-agent", "UserAgent.defaultOptions")
     @js.native
     def defaultOptions: js.Any = js.native
-    @scala.inline
-    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     /**
       * Create a URI instance from a string.
@@ -237,8 +236,7 @@ object userAgentMod {
       * const uri = UserAgent.makeURI("sip:edgar@example.com");
       * ```
       */
-    @scala.inline
-    def makeURI(uri: String): js.UndefOr[URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[URI]]
+    inline def makeURI(uri: String): js.UndefOr[URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[URI]]
     
     /**
       * Strip properties with undefined values from options.
@@ -249,7 +247,6 @@ object userAgentMod {
     @JSImport("sip.js/lib/api/user-agent", "UserAgent.stripUndefinedProperties")
     @js.native
     def stripUndefinedProperties: js.Any = js.native
-    @scala.inline
-    def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+    inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
   }
 }

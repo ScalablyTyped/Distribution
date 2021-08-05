@@ -122,32 +122,24 @@ object onScreenKeyboardMod {
   }
   object Key {
     
-    @scala.inline
-    def apply(keysym: Double, modifier: String, name: String, requires: js.Array[String], title: String): Key = {
+    inline def apply(keysym: Double, modifier: String, name: String, requires: js.Array[String], title: String): Key = {
       val __obj = js.Dynamic.literal(keysym = keysym.asInstanceOf[js.Any], modifier = modifier.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], requires = requires.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKeysym(value: Double): Self = StObject.set(x, "keysym", value.asInstanceOf[js.Any])
+      inline def setKeysym(value: Double): Self = StObject.set(x, "keysym", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+      inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,8 +202,7 @@ object onScreenKeyboardMod {
   }
   object Layout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       keyWidths: Record[String, Double],
       keys: Record[String, Double | String | Key | js.Array[Key]],
       language: String,
@@ -224,26 +215,19 @@ object onScreenKeyboardMod {
       __obj.asInstanceOf[Layout]
     }
     
-    @scala.inline
-    implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+    extension [Self <: Layout](x: Self) {
       
-      @scala.inline
-      def setKeyWidths(value: Record[String, Double]): Self = StObject.set(x, "keyWidths", value.asInstanceOf[js.Any])
+      inline def setKeyWidths(value: Record[String, Double]): Self = StObject.set(x, "keyWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: Record[String, Double | String | Key | js.Array[Key]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Record[String, Double | String | Key | js.Array[Key]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

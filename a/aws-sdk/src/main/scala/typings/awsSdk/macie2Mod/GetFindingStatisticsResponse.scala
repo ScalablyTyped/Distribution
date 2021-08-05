@@ -13,22 +13,17 @@ trait GetFindingStatisticsResponse extends StObject {
 }
 object GetFindingStatisticsResponse {
   
-  @scala.inline
-  def apply(): GetFindingStatisticsResponse = {
+  inline def apply(): GetFindingStatisticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFindingStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class GetFindingStatisticsResponseMutableBuilder[Self <: GetFindingStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setCountsByGroup(value: listOfGroupCount): Self = StObject.set(x, "countsByGroup", value.asInstanceOf[js.Any])
+    inline def setCountsByGroup(value: listOfGroupCount): Self = StObject.set(x, "countsByGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountsByGroupUndefined: Self = StObject.set(x, "countsByGroup", js.undefined)
+    inline def setCountsByGroupUndefined: Self = StObject.set(x, "countsByGroup", js.undefined)
     
-    @scala.inline
-    def setCountsByGroupVarargs(value: GroupCount*): Self = StObject.set(x, "countsByGroup", js.Array(value :_*))
+    inline def setCountsByGroupVarargs(value: GroupCount*): Self = StObject.set(x, "countsByGroup", js.Array(value :_*))
   }
 }

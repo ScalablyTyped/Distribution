@@ -14,25 +14,19 @@ trait Events[T] extends StObject {
 }
 object Events {
   
-  @scala.inline
-  def apply[T](calls: js.Array[EventCall[T]], reset: () => Unit, send: (EventUrl, T) => js.Promise[Unit]): Events[T] = {
+  inline def apply[T](calls: js.Array[EventCall[T]], reset: () => Unit, send: (EventUrl, T) => js.Promise[Unit]): Events[T] = {
     val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
     __obj.asInstanceOf[Events[T]]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events[?], T] (val x: Self & Events[T]) extends AnyVal {
+  extension [Self <: Events[?], T](x: Self & Events[T]) {
     
-    @scala.inline
-    def setCalls(value: js.Array[EventCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: js.Array[EventCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallsVarargs(value: EventCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: EventCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSend(value: (EventUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (EventUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
   }
 }

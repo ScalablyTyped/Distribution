@@ -8,6 +8,5 @@ object rushaStrings {
   
   @js.native
   sealed trait hex extends StObject
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
 }

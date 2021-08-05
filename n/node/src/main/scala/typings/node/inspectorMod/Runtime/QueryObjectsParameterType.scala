@@ -13,16 +13,13 @@ trait QueryObjectsParameterType extends StObject {
 }
 object QueryObjectsParameterType {
   
-  @scala.inline
-  def apply(prototypeObjectId: RemoteObjectId): QueryObjectsParameterType = {
+  inline def apply(prototypeObjectId: RemoteObjectId): QueryObjectsParameterType = {
     val __obj = js.Dynamic.literal(prototypeObjectId = prototypeObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryObjectsParameterType]
   }
   
-  @scala.inline
-  implicit class QueryObjectsParameterTypeMutableBuilder[Self <: QueryObjectsParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: QueryObjectsParameterType](x: Self) {
     
-    @scala.inline
-    def setPrototypeObjectId(value: RemoteObjectId): Self = StObject.set(x, "prototypeObjectId", value.asInstanceOf[js.Any])
+    inline def setPrototypeObjectId(value: RemoteObjectId): Self = StObject.set(x, "prototypeObjectId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait KeyRing extends StObject {
 }
 object KeyRing {
   
-  @scala.inline
-  def apply(createTime: AsObject, name: String): KeyRing = {
+  inline def apply(createTime: AsObject, name: String): KeyRing = {
     val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyRing]
   }
   
-  @scala.inline
-  implicit class KeyRingMutableBuilder[Self <: KeyRing] (val x: Self) extends AnyVal {
+  extension [Self <: KeyRing](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: AsObject): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: AsObject): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

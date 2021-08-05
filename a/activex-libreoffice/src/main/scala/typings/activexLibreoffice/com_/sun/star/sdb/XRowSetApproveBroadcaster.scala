@@ -19,8 +19,7 @@ trait XRowSetApproveBroadcaster
 }
 object XRowSetApproveBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addRowSetApproveListener: XRowSetApproveListener => Unit,
     queryInterface: `type` => js.Any,
@@ -31,13 +30,10 @@ object XRowSetApproveBroadcaster {
     __obj.asInstanceOf[XRowSetApproveBroadcaster]
   }
   
-  @scala.inline
-  implicit class XRowSetApproveBroadcasterMutableBuilder[Self <: XRowSetApproveBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XRowSetApproveBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = StObject.set(x, "addRowSetApproveListener", js.Any.fromFunction1(value))
+    inline def setAddRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = StObject.set(x, "addRowSetApproveListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = StObject.set(x, "removeRowSetApproveListener", js.Any.fromFunction1(value))
+    inline def setRemoveRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = StObject.set(x, "removeRowSetApproveListener", js.Any.fromFunction1(value))
   }
 }

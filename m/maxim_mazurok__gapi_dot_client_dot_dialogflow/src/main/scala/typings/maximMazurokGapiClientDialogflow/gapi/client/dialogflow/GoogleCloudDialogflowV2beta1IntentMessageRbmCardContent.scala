@@ -20,40 +20,29 @@ trait GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent extends StObject {
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setMedia(value: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setSuggestions(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+    inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    @scala.inline
-    def setSuggestionsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

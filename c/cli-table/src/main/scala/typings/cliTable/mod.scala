@@ -28,8 +28,7 @@ object mod {
   @JSImport("cli-table", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Table
@@ -56,8 +55,7 @@ object mod {
   }
   object TableOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chars: PartialRecordtoptopmidtop,
       colAligns: js.Array[left | middle | right],
       colWidths: js.Array[Double],
@@ -70,38 +68,27 @@ object mod {
       __obj.asInstanceOf[TableOptions]
     }
     
-    @scala.inline
-    implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableOptions](x: Self) {
       
-      @scala.inline
-      def setChars(value: PartialRecordtoptopmidtop): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: PartialRecordtoptopmidtop): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColAligns(value: js.Array[left | middle | right]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
+      inline def setColAligns(value: js.Array[left | middle | right]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColAlignsVarargs(value: (left | middle | right)*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: (left | middle | right)*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
       
-      @scala.inline
-      def setColWidths(value: js.Array[Double]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
+      inline def setColWidths(value: js.Array[Double]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
       
-      @scala.inline
-      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: Partialpaddingleftnumberp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Partialpaddingleftnumberp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
     }
   }
 }

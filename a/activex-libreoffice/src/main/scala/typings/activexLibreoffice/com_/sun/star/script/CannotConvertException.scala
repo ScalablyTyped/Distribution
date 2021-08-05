@@ -23,8 +23,7 @@ trait CannotConvertException
 }
 object CannotConvertException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ArgumentIndex: Double,
     Context: XInterface,
     DestinationTypeClass: TypeClass,
@@ -35,16 +34,12 @@ object CannotConvertException {
     __obj.asInstanceOf[CannotConvertException]
   }
   
-  @scala.inline
-  implicit class CannotConvertExceptionMutableBuilder[Self <: CannotConvertException] (val x: Self) extends AnyVal {
+  extension [Self <: CannotConvertException](x: Self) {
     
-    @scala.inline
-    def setArgumentIndex(value: Double): Self = StObject.set(x, "ArgumentIndex", value.asInstanceOf[js.Any])
+    inline def setArgumentIndex(value: Double): Self = StObject.set(x, "ArgumentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationTypeClass(value: TypeClass): Self = StObject.set(x, "DestinationTypeClass", value.asInstanceOf[js.Any])
+    inline def setDestinationTypeClass(value: TypeClass): Self = StObject.set(x, "DestinationTypeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

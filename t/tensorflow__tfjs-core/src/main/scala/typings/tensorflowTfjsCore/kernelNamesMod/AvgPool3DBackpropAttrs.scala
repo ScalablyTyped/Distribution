@@ -23,8 +23,7 @@ trait AvgPool3DBackpropAttrs extends StObject {
 }
 object AvgPool3DBackpropAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dilations: (js.Tuple3[Double, Double, Double]) | Double,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid_ | same_ | Double,
@@ -34,25 +33,18 @@ object AvgPool3DBackpropAttrs {
     __obj.asInstanceOf[AvgPool3DBackpropAttrs]
   }
   
-  @scala.inline
-  implicit class AvgPool3DBackpropAttrsMutableBuilder[Self <: AvgPool3DBackpropAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AvgPool3DBackpropAttrs](x: Self) {
     
-    @scala.inline
-    def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
+    inline def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
+    inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
+    inline def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
     
-    @scala.inline
-    def setFilterSize(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
+    inline def setFilterSize(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

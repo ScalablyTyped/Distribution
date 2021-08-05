@@ -21,8 +21,7 @@ trait PickImplonSuccess extends StObject {
 }
 object PickImplonSuccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onSuccess: js.ThisFunction2[
       /* this */ JQuery, 
       /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
@@ -34,11 +33,9 @@ object PickImplonSuccess {
     __obj.asInstanceOf[PickImplonSuccess]
   }
   
-  @scala.inline
-  implicit class PickImplonSuccessMutableBuilder[Self <: PickImplonSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonSuccess](x: Self) {
     
-    @scala.inline
-    def setOnSuccess(
+    inline def setOnSuccess(
       value: js.ThisFunction2[
           /* this */ JQuery, 
           /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 

@@ -157,8 +157,7 @@ object mod {
   }
   object FileItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alias: String,
       cancel: () => Unit,
       file: FileLikeObject,
@@ -190,89 +189,61 @@ object mod {
       __obj.asInstanceOf[FileItem]
     }
     
-    @scala.inline
-    implicit class FileItemMutableBuilder[Self <: FileItem] (val x: Self) extends AnyVal {
+    extension [Self <: FileItem](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFile(value: FileLikeObject): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: FileLikeObject): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormData(value: js.Array[FormData]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+      inline def setFormData(value: js.Array[FormData]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value :_*))
+      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCancel(value: Boolean): Self = StObject.set(x, "isCancel", value.asInstanceOf[js.Any])
+      inline def setIsCancel(value: Boolean): Self = StObject.set(x, "isCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
+      inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
+      inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
+      inline def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUploaded(value: Boolean): Self = StObject.set(x, "isUploaded", value.asInstanceOf[js.Any])
+      inline def setIsUploaded(value: Boolean): Self = StObject.set(x, "isUploaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUploading(value: Boolean): Self = StObject.set(x, "isUploading", value.asInstanceOf[js.Any])
+      inline def setIsUploading(value: Boolean): Self = StObject.set(x, "isUploading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBeforeUpload(value: () => Unit): Self = StObject.set(x, "onBeforeUpload", js.Any.fromFunction0(value))
+      inline def setOnBeforeUpload(value: () => Unit): Self = StObject.set(x, "onBeforeUpload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCancel(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction3(value))
+      inline def setOnCancel(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnComplete(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
+      inline def setOnComplete(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnError(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+      inline def setOnError(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnProgress(value: Double => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: Double => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccess(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+      inline def setOnSuccess(value: (Response, Double, Headers) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveAfterUpload(value: Boolean): Self = StObject.set(x, "removeAfterUpload", value.asInstanceOf[js.Any])
+      inline def setRemoveAfterUpload(value: Boolean): Self = StObject.set(x, "removeAfterUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload(value: () => Unit): Self = StObject.set(x, "upload", js.Any.fromFunction0(value))
+      inline def setUpload(value: () => Unit): Self = StObject.set(x, "upload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUploader(value: FileUploader): Self = StObject.set(x, "uploader", value.asInstanceOf[js.Any])
+      inline def setUploader(value: FileUploader): Self = StObject.set(x, "uploader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,27 +271,21 @@ object mod {
   }
   object FileLikeObject {
     
-    @scala.inline
-    def apply(lastModifiedDate: js.Any, name: String, size: Double, `type`: String): FileLikeObject = {
+    inline def apply(lastModifiedDate: js.Any, name: String, size: Double, `type`: String): FileLikeObject = {
       val __obj = js.Dynamic.literal(lastModifiedDate = lastModifiedDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileLikeObject]
     }
     
-    @scala.inline
-    implicit class FileLikeObjectMutableBuilder[Self <: FileLikeObject] (val x: Self) extends AnyVal {
+    extension [Self <: FileLikeObject](x: Self) {
       
-      @scala.inline
-      def setLastModifiedDate(value: js.Any): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: js.Any): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -561,8 +526,7 @@ object mod {
   }
   object FileUploaderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alias: String,
       autoUpload: Boolean,
       disableMultipart: Boolean,
@@ -580,53 +544,37 @@ object mod {
       __obj.asInstanceOf[FileUploaderOptions]
     }
     
-    @scala.inline
-    implicit class FileUploaderOptionsMutableBuilder[Self <: FileUploaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploaderOptions](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
+      inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableMultipart(value: Boolean): Self = StObject.set(x, "disableMultipart", value.asInstanceOf[js.Any])
+      inline def setDisableMultipart(value: Boolean): Self = StObject.set(x, "disableMultipart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setFormData(value: js.Array[FormData]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+      inline def setFormData(value: js.Array[FormData]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value :_*))
+      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: js.Array[FileItem]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: js.Array[FileItem]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
+      inline def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueVarargs(value: FileItem*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: FileItem*): Self = StObject.set(x, "queue", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoveAfterUpload(value: Boolean): Self = StObject.set(x, "removeAfterUpload", value.asInstanceOf[js.Any])
+      inline def setRemoveAfterUpload(value: Boolean): Self = StObject.set(x, "removeAfterUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     }
   }
   
@@ -638,28 +586,22 @@ object mod {
   }
   object Filter {
     
-    @scala.inline
-    def apply(fn: SyncFilter | AsyncFilter, name: String): Filter = {
+    inline def apply(fn: SyncFilter | AsyncFilter, name: String): Filter = {
       val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setFn(value: SyncFilter | AsyncFilter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: SyncFilter | AsyncFilter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFnFunction2(value: (/* item */ File | FileLikeObject, /* options */ js.UndefOr[js.Object]) => Boolean): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFnFunction2(value: (/* item */ File | FileLikeObject, /* options */ js.UndefOr[js.Object]) => Boolean): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnFunction3(
+      inline def setFnFunction3(
         value: (/* item */ File | FileLikeObject, /* options */ js.UndefOr[js.Object], /* deferred */ IDeferred[js.Any]) => Unit
       ): Self = StObject.set(x, "fn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

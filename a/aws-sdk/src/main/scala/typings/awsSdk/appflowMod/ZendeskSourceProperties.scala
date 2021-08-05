@@ -13,17 +13,14 @@ trait ZendeskSourceProperties extends StObject {
 }
 object ZendeskSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): ZendeskSourceProperties = {
+  inline def apply(`object`: Object): ZendeskSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZendeskSourceProperties]
   }
   
-  @scala.inline
-  implicit class ZendeskSourcePropertiesMutableBuilder[Self <: ZendeskSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ZendeskSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

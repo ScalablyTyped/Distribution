@@ -10,19 +10,15 @@ trait IsLatLongOptions extends StObject {
 }
 object IsLatLongOptions {
   
-  @scala.inline
-  def apply(): IsLatLongOptions = {
+  inline def apply(): IsLatLongOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsLatLongOptions]
   }
   
-  @scala.inline
-  implicit class IsLatLongOptionsMutableBuilder[Self <: IsLatLongOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsLatLongOptions](x: Self) {
     
-    @scala.inline
-    def setCheckDMS(value: Boolean): Self = StObject.set(x, "checkDMS", value.asInstanceOf[js.Any])
+    inline def setCheckDMS(value: Boolean): Self = StObject.set(x, "checkDMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckDMSUndefined: Self = StObject.set(x, "checkDMS", js.undefined)
+    inline def setCheckDMSUndefined: Self = StObject.set(x, "checkDMS", js.undefined)
   }
 }

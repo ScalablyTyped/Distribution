@@ -18,8 +18,7 @@ trait Map
 }
 object Map {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem],
@@ -33,16 +32,12 @@ object Map {
     __obj.asInstanceOf[Map]
   }
   
-  @scala.inline
-  implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+  extension [Self <: Map](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[BlankLine | Comment | Alias | Scalar | MapItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[BlankLine | Comment | Alias | Scalar | MapItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: (BlankLine | Comment | Alias | Scalar | MapItem)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (BlankLine | Comment | Alias | Scalar | MapItem)*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: MAP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MAP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

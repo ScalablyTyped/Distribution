@@ -12,136 +12,115 @@ object azureSbStrings {
   sealed trait activity
     extends StObject
        with badges
-  @scala.inline
-  def activity: activity = "activity".asInstanceOf[activity]
+  inline def activity: activity = "activity".asInstanceOf[activity]
   
   @js.native
   sealed trait adm extends StObject
-  @scala.inline
-  def adm: adm = "adm".asInstanceOf[adm]
+  inline def adm: adm = "adm".asInstanceOf[adm]
   
   @js.native
   sealed trait alert
     extends StObject
        with badges
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
+  inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
   sealed trait apns extends StObject
-  @scala.inline
-  def apns: apns = "apns".asInstanceOf[apns]
+  inline def apns: apns = "apns".asInstanceOf[apns]
   
   @js.native
   sealed trait attention
     extends StObject
        with badges
-  @scala.inline
-  def attention: attention = "attention".asInstanceOf[attention]
+  inline def attention: attention = "attention".asInstanceOf[attention]
   
   @js.native
   sealed trait available
     extends StObject
        with badges
-  @scala.inline
-  def available: available = "available".asInstanceOf[available]
+  inline def available: available = "available".asInstanceOf[available]
   
   @js.native
   sealed trait away
     extends StObject
        with badges
-  @scala.inline
-  def away: away = "away".asInstanceOf[away]
+  inline def away: away = "away".asInstanceOf[away]
   
   @js.native
   sealed trait busy
     extends StObject
        with badges
-  @scala.inline
-  def busy: busy = "busy".asInstanceOf[busy]
+  inline def busy: busy = "busy".asInstanceOf[busy]
   
   @js.native
   sealed trait error
     extends StObject
        with badges
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait gcm extends StObject
-  @scala.inline
-  def gcm: gcm = "gcm".asInstanceOf[gcm]
+  inline def gcm: gcm = "gcm".asInstanceOf[gcm]
   
   @js.native
   sealed trait mpns extends StObject
-  @scala.inline
-  def mpns: mpns = "mpns".asInstanceOf[mpns]
+  inline def mpns: mpns = "mpns".asInstanceOf[mpns]
   
   @js.native
   sealed trait newMessage
     extends StObject
        with badges
-  @scala.inline
-  def newMessage: newMessage = "newMessage".asInstanceOf[newMessage]
+  inline def newMessage: newMessage = "newMessage".asInstanceOf[newMessage]
   
   @js.native
   sealed trait none
     extends StObject
        with badges
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait paused
     extends StObject
        with badges
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
   sealed trait playing
     extends StObject
        with badges
-  @scala.inline
-  def playing: playing = "playing".asInstanceOf[playing]
+  inline def playing: playing = "playing".asInstanceOf[playing]
   
   @js.native
   sealed trait unavailable
     extends StObject
        with badges
-  @scala.inline
-  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
+  inline def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   
   @js.native
   sealed trait wns extends StObject
-  @scala.inline
-  def wns: wns = "wns".asInstanceOf[wns]
+  inline def wns: wns = "wns".asInstanceOf[wns]
   
   @js.native
   sealed trait wnsSlashbadge
     extends StObject
        with types
-  @scala.inline
-  def wnsSlashbadge: wnsSlashbadge = "wns/badge".asInstanceOf[wnsSlashbadge]
+  inline def wnsSlashbadge: wnsSlashbadge = "wns/badge".asInstanceOf[wnsSlashbadge]
   
   @js.native
   sealed trait wnsSlashraw
     extends StObject
        with types
-  @scala.inline
-  def wnsSlashraw: wnsSlashraw = "wns/raw".asInstanceOf[wnsSlashraw]
+  inline def wnsSlashraw: wnsSlashraw = "wns/raw".asInstanceOf[wnsSlashraw]
   
   @js.native
   sealed trait wnsSlashtile
     extends StObject
        with types
-  @scala.inline
-  def wnsSlashtile: wnsSlashtile = "wns/tile".asInstanceOf[wnsSlashtile]
+  inline def wnsSlashtile: wnsSlashtile = "wns/tile".asInstanceOf[wnsSlashtile]
   
   @js.native
   sealed trait wnsSlashtoast
     extends StObject
        with types
-  @scala.inline
-  def wnsSlashtoast: wnsSlashtoast = "wns/toast".asInstanceOf[wnsSlashtoast]
+  inline def wnsSlashtoast: wnsSlashtoast = "wns/toast".asInstanceOf[wnsSlashtoast]
 }

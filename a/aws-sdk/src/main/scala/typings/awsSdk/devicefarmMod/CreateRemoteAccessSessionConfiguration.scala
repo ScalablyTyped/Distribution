@@ -18,28 +18,21 @@ trait CreateRemoteAccessSessionConfiguration extends StObject {
 }
 object CreateRemoteAccessSessionConfiguration {
   
-  @scala.inline
-  def apply(): CreateRemoteAccessSessionConfiguration = {
+  inline def apply(): CreateRemoteAccessSessionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRemoteAccessSessionConfiguration]
   }
   
-  @scala.inline
-  implicit class CreateRemoteAccessSessionConfigurationMutableBuilder[Self <: CreateRemoteAccessSessionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRemoteAccessSessionConfiguration](x: Self) {
     
-    @scala.inline
-    def setBillingMethod(value: BillingMethod): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
+    inline def setBillingMethod(value: BillingMethod): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingMethodUndefined: Self = StObject.set(x, "billingMethod", js.undefined)
+    inline def setBillingMethodUndefined: Self = StObject.set(x, "billingMethod", js.undefined)
     
-    @scala.inline
-    def setVpceConfigurationArns(value: AmazonResourceNames): Self = StObject.set(x, "vpceConfigurationArns", value.asInstanceOf[js.Any])
+    inline def setVpceConfigurationArns(value: AmazonResourceNames): Self = StObject.set(x, "vpceConfigurationArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceConfigurationArnsUndefined: Self = StObject.set(x, "vpceConfigurationArns", js.undefined)
+    inline def setVpceConfigurationArnsUndefined: Self = StObject.set(x, "vpceConfigurationArns", js.undefined)
     
-    @scala.inline
-    def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "vpceConfigurationArns", js.Array(value :_*))
+    inline def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "vpceConfigurationArns", js.Array(value :_*))
   }
 }

@@ -21,31 +21,25 @@ trait OrderProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject
 }
 object OrderProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): OrderProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): OrderProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class OrderPropsMutableBuilder[Self <: OrderProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & OrderProps[ThemeType]) extends AnyVal {
+  extension [Self <: OrderProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & OrderProps[ThemeType]) {
     
-    @scala.inline
-    def setOrder(
+    inline def setOrder(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderNull: Self = StObject.set(x, "order", null)
+    inline def setOrderNull: Self = StObject.set(x, "order", null)
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setOrderVarargs(
+    inline def setOrderVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
     ): Self = StObject.set(x, "order", js.Array(value :_*))
   }

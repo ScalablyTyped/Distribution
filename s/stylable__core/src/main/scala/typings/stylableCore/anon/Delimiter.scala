@@ -15,22 +15,17 @@ trait Delimiter extends StObject {
 }
 object Delimiter {
   
-  @scala.inline
-  def apply(delimiter: Comma | Space, parts: js.Array[String | (Box_[String, js.Any])]): Delimiter = {
+  inline def apply(delimiter: Comma | Space, parts: js.Array[String | (Box_[String, js.Any])]): Delimiter = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delimiter]
   }
   
-  @scala.inline
-  implicit class DelimiterMutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
+  extension [Self <: Delimiter](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: Comma | Space): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: Comma | Space): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParts(value: js.Array[String | (Box_[String, js.Any])]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: js.Array[String | (Box_[String, js.Any])]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsVarargs(value: (String | (Box_[String, js.Any]))*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: (String | (Box_[String, js.Any]))*): Self = StObject.set(x, "parts", js.Array(value :_*))
   }
 }

@@ -16,8 +16,7 @@ trait Redeliveries extends StObject {
 }
 object Redeliveries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     publications: Confirm,
     redeliveries: Counters,
     subscriptions: DeferCloseChannel,
@@ -27,19 +26,14 @@ object Redeliveries {
     __obj.asInstanceOf[Redeliveries]
   }
   
-  @scala.inline
-  implicit class RedeliveriesMutableBuilder[Self <: Redeliveries] (val x: Self) extends AnyVal {
+  extension [Self <: Redeliveries](x: Self) {
     
-    @scala.inline
-    def setPublications(value: Confirm): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
+    inline def setPublications(value: Confirm): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedeliveries(value: Counters): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
+    inline def setRedeliveries(value: Counters): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptions(value: DeferCloseChannel): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: DeferCloseChannel): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhosts(value: Connection): Self = StObject.set(x, "vhosts", value.asInstanceOf[js.Any])
+    inline def setVhosts(value: Connection): Self = StObject.set(x, "vhosts", value.asInstanceOf[js.Any])
   }
 }

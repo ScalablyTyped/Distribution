@@ -16,25 +16,19 @@ trait mergerequestIIdnumberunde
 }
 object mergerequestIIdnumberunde {
   
-  @scala.inline
-  def apply(): mergerequestIIdnumberunde = {
+  inline def apply(): mergerequestIIdnumberunde = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[mergerequestIIdnumberunde]
   }
   
-  @scala.inline
-  implicit class mergerequestIIdnumberundeMutableBuilder[Self <: mergerequestIIdnumberunde] (val x: Self) extends AnyVal {
+  extension [Self <: mergerequestIIdnumberunde](x: Self) {
     
-    @scala.inline
-    def setMergerequestIId(value: Double): Self = StObject.set(x, "mergerequestIId", value.asInstanceOf[js.Any])
+    inline def setMergerequestIId(value: Double): Self = StObject.set(x, "mergerequestIId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergerequestIIdUndefined: Self = StObject.set(x, "mergerequestIId", js.undefined)
+    inline def setMergerequestIIdUndefined: Self = StObject.set(x, "mergerequestIId", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

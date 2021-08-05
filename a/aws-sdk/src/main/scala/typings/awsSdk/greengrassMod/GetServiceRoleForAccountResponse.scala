@@ -18,25 +18,19 @@ trait GetServiceRoleForAccountResponse extends StObject {
 }
 object GetServiceRoleForAccountResponse {
   
-  @scala.inline
-  def apply(): GetServiceRoleForAccountResponse = {
+  inline def apply(): GetServiceRoleForAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetServiceRoleForAccountResponse]
   }
   
-  @scala.inline
-  implicit class GetServiceRoleForAccountResponseMutableBuilder[Self <: GetServiceRoleForAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceRoleForAccountResponse](x: Self) {
     
-    @scala.inline
-    def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
+    inline def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
+    inline def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

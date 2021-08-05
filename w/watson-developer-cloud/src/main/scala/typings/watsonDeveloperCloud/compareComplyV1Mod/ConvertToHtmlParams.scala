@@ -33,43 +33,31 @@ trait ConvertToHtmlParams extends StObject {
 }
 object ConvertToHtmlParams {
   
-  @scala.inline
-  def apply(file: ReadableStream | FileObject | Buffer, filename: String): ConvertToHtmlParams = {
+  inline def apply(file: ReadableStream | FileObject | Buffer, filename: String): ConvertToHtmlParams = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertToHtmlParams]
   }
   
-  @scala.inline
-  implicit class ConvertToHtmlParamsMutableBuilder[Self <: ConvertToHtmlParams] (val x: Self) extends AnyVal {
+  extension [Self <: ConvertToHtmlParams](x: Self) {
     
-    @scala.inline
-    def setFile(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_content_type(value: FileContentType | String): Self = StObject.set(x, "file_content_type", value.asInstanceOf[js.Any])
+    inline def setFile_content_type(value: FileContentType | String): Self = StObject.set(x, "file_content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_content_typeUndefined: Self = StObject.set(x, "file_content_type", js.undefined)
+    inline def setFile_content_typeUndefined: Self = StObject.set(x, "file_content_type", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

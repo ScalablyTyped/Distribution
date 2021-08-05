@@ -83,8 +83,7 @@ trait DocumentSnapshot extends StObject {
 }
 object DocumentSnapshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseURL: StringIndex,
     contentLanguage: StringIndex,
     documentURL: StringIndex,
@@ -101,64 +100,44 @@ object DocumentSnapshot {
     __obj.asInstanceOf[DocumentSnapshot]
   }
   
-  @scala.inline
-  implicit class DocumentSnapshotMutableBuilder[Self <: DocumentSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSnapshot](x: Self) {
     
-    @scala.inline
-    def setBaseURL(value: StringIndex): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+    inline def setBaseURL(value: StringIndex): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
+    inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
+    inline def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
     
-    @scala.inline
-    def setContentLanguage(value: StringIndex): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+    inline def setContentLanguage(value: StringIndex): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+    inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
+    inline def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
     
-    @scala.inline
-    def setDocumentURL(value: StringIndex): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: StringIndex): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingName(value: StringIndex): Self = StObject.set(x, "encodingName", value.asInstanceOf[js.Any])
+    inline def setEncodingName(value: StringIndex): Self = StObject.set(x, "encodingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameId(value: StringIndex): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: StringIndex): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: LayoutTreeSnapshot): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: LayoutTreeSnapshot): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: NodeTreeSnapshot): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: NodeTreeSnapshot): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicId(value: StringIndex): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: StringIndex): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetX(value: Double): Self = StObject.set(x, "scrollOffsetX", value.asInstanceOf[js.Any])
+    inline def setScrollOffsetX(value: Double): Self = StObject.set(x, "scrollOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetXUndefined: Self = StObject.set(x, "scrollOffsetX", js.undefined)
+    inline def setScrollOffsetXUndefined: Self = StObject.set(x, "scrollOffsetX", js.undefined)
     
-    @scala.inline
-    def setScrollOffsetY(value: Double): Self = StObject.set(x, "scrollOffsetY", value.asInstanceOf[js.Any])
+    inline def setScrollOffsetY(value: Double): Self = StObject.set(x, "scrollOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetYUndefined: Self = StObject.set(x, "scrollOffsetY", js.undefined)
+    inline def setScrollOffsetYUndefined: Self = StObject.set(x, "scrollOffsetY", js.undefined)
     
-    @scala.inline
-    def setSystemId(value: StringIndex): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: StringIndex): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBoxes(value: TextBoxSnapshot): Self = StObject.set(x, "textBoxes", value.asInstanceOf[js.Any])
+    inline def setTextBoxes(value: TextBoxSnapshot): Self = StObject.set(x, "textBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: StringIndex): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: StringIndex): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

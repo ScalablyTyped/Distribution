@@ -15,34 +15,25 @@ trait IManagerOptions extends StObject {
 }
 object IManagerOptions {
   
-  @scala.inline
-  def apply(): IManagerOptions = {
+  inline def apply(): IManagerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IManagerOptions]
   }
   
-  @scala.inline
-  implicit class IManagerOptionsMutableBuilder[Self <: IManagerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IManagerOptions](x: Self) {
     
-    @scala.inline
-    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setPane(value: IPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: IPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
-    @scala.inline
-    def setStates(value: js.Array[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: js.Array[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    @scala.inline
-    def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait DescribeChannelBanResponse extends StObject {
 }
 object DescribeChannelBanResponse {
   
-  @scala.inline
-  def apply(): DescribeChannelBanResponse = {
+  inline def apply(): DescribeChannelBanResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeChannelBanResponse]
   }
   
-  @scala.inline
-  implicit class DescribeChannelBanResponseMutableBuilder[Self <: DescribeChannelBanResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelBanResponse](x: Self) {
     
-    @scala.inline
-    def setChannelBan(value: ChannelBan): Self = StObject.set(x, "ChannelBan", value.asInstanceOf[js.Any])
+    inline def setChannelBan(value: ChannelBan): Self = StObject.set(x, "ChannelBan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelBanUndefined: Self = StObject.set(x, "ChannelBan", js.undefined)
+    inline def setChannelBanUndefined: Self = StObject.set(x, "ChannelBan", js.undefined)
   }
 }

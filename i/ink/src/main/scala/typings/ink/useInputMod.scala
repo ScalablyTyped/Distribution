@@ -34,10 +34,8 @@ object useInputMod {
     * };
     * ```
     */
-  @scala.inline
-  def default(inputHandler: Handler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(inputHandler: Handler, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(inputHandler: Handler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(inputHandler: Handler, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Handler = js.Function2[/* input */ String, /* key */ Key, Unit]
   
@@ -115,8 +113,7 @@ object useInputMod {
   }
   object Key {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backspace: Boolean,
       ctrl: Boolean,
       delete: Boolean,
@@ -137,50 +134,35 @@ object useInputMod {
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setBackspace(value: Boolean): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
+      inline def setBackspace(value: Boolean): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
+      inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownArrow(value: Boolean): Self = StObject.set(x, "downArrow", value.asInstanceOf[js.Any])
+      inline def setDownArrow(value: Boolean): Self = StObject.set(x, "downArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftArrow(value: Boolean): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
+      inline def setLeftArrow(value: Boolean): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageDown(value: Boolean): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
+      inline def setPageDown(value: Boolean): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUp(value: Boolean): Self = StObject.set(x, "pageUp", value.asInstanceOf[js.Any])
+      inline def setPageUp(value: Boolean): Self = StObject.set(x, "pageUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturn(value: Boolean): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
+      inline def setReturn(value: Boolean): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightArrow(value: Boolean): Self = StObject.set(x, "rightArrow", value.asInstanceOf[js.Any])
+      inline def setRightArrow(value: Boolean): Self = StObject.set(x, "rightArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTab(value: Boolean): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+      inline def setTab(value: Boolean): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpArrow(value: Boolean): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
+      inline def setUpArrow(value: Boolean): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,20 +178,16 @@ object useInputMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     }
   }
 }

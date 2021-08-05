@@ -28,31 +28,23 @@ trait UpdateApiKeyRequest extends StObject {
 }
 object UpdateApiKeyRequest {
   
-  @scala.inline
-  def apply(apiId: String, id: String): UpdateApiKeyRequest = {
+  inline def apply(apiId: String, id: String): UpdateApiKeyRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApiKeyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateApiKeyRequestMutableBuilder[Self <: UpdateApiKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApiKeyRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpires(value: Long): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Long): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

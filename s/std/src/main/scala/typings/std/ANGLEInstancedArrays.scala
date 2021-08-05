@@ -17,8 +17,7 @@ trait ANGLEInstancedArrays extends StObject {
 }
 object ANGLEInstancedArrays {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum,
     drawArraysInstancedANGLE: (GLenum, GLint, GLsizei, GLsizei) => Unit,
     drawElementsInstancedANGLE: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit,
@@ -28,19 +27,14 @@ object ANGLEInstancedArrays {
     __obj.asInstanceOf[ANGLEInstancedArrays]
   }
   
-  @scala.inline
-  implicit class ANGLEInstancedArraysMutableBuilder[Self <: ANGLEInstancedArrays] (val x: Self) extends AnyVal {
+  extension [Self <: ANGLEInstancedArrays](x: Self) {
     
-    @scala.inline
-    def setDrawArraysInstancedANGLE(value: (GLenum, GLint, GLsizei, GLsizei) => Unit): Self = StObject.set(x, "drawArraysInstancedANGLE", js.Any.fromFunction4(value))
+    inline def setDrawArraysInstancedANGLE(value: (GLenum, GLint, GLsizei, GLsizei) => Unit): Self = StObject.set(x, "drawArraysInstancedANGLE", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDrawElementsInstancedANGLE(value: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit): Self = StObject.set(x, "drawElementsInstancedANGLE", js.Any.fromFunction5(value))
+    inline def setDrawElementsInstancedANGLE(value: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit): Self = StObject.set(x, "drawElementsInstancedANGLE", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: GLenum): Self = StObject.set(x, "VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
+    inline def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: GLenum): Self = StObject.set(x, "VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexAttribDivisorANGLE(value: (GLuint, GLuint) => Unit): Self = StObject.set(x, "vertexAttribDivisorANGLE", js.Any.fromFunction2(value))
+    inline def setVertexAttribDivisorANGLE(value: (GLuint, GLuint) => Unit): Self = StObject.set(x, "vertexAttribDivisorANGLE", js.Any.fromFunction2(value))
   }
 }

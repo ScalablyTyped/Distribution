@@ -35,8 +35,7 @@ object tabsDriverMod {
   }
   object TabsDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickTabAt: Double => Unit,
       exists: () => Boolean,
       getActiveTabIndex: () => Double,
@@ -53,41 +52,29 @@ object tabsDriverMod {
       __obj.asInstanceOf[TabsDriver]
     }
     
-    @scala.inline
-    implicit class TabsDriverMutableBuilder[Self <: TabsDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TabsDriver](x: Self) {
       
-      @scala.inline
-      def setClickTabAt(value: Double => Unit): Self = StObject.set(x, "clickTabAt", js.Any.fromFunction1(value))
+      inline def setClickTabAt(value: Double => Unit): Self = StObject.set(x, "clickTabAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetActiveTabIndex(value: () => Double): Self = StObject.set(x, "getActiveTabIndex", js.Any.fromFunction0(value))
+      inline def setGetActiveTabIndex(value: () => Double): Self = StObject.set(x, "getActiveTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDataHook(value: () => String): Self = StObject.set(x, "getDataHook", js.Any.fromFunction0(value))
+      inline def setGetDataHook(value: () => String): Self = StObject.set(x, "getDataHook", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemsContainerType(value: () => String): Self = StObject.set(x, "getItemsContainerType", js.Any.fromFunction0(value))
+      inline def setGetItemsContainerType(value: () => String): Self = StObject.set(x, "getItemsContainerType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemsMaxWidths(value: () => js.Array[String]): Self = StObject.set(x, "getItemsMaxWidths", js.Any.fromFunction0(value))
+      inline def setGetItemsMaxWidths(value: () => js.Array[String]): Self = StObject.set(x, "getItemsMaxWidths", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemsWidth(value: () => Set[String]): Self = StObject.set(x, "getItemsWidth", js.Any.fromFunction0(value))
+      inline def setGetItemsWidth(value: () => Set[String]): Self = StObject.set(x, "getItemsWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSideContent(value: js.Array[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getSideContent", value.asInstanceOf[js.Any])
+      inline def setGetSideContent(value: js.Array[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getSideContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetSideContentVarargs(value: (UniDriver[js.Any] | Null)*): Self = StObject.set(x, "getSideContent", js.Array(value :_*))
+      inline def setGetSideContentVarargs(value: (UniDriver[js.Any] | Null)*): Self = StObject.set(x, "getSideContent", js.Array(value :_*))
       
-      @scala.inline
-      def setGetTitles(value: () => js.Array[String]): Self = StObject.set(x, "getTitles", js.Any.fromFunction0(value))
+      inline def setGetTitles(value: () => js.Array[String]): Self = StObject.set(x, "getTitles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasDivider(value: () => Boolean): Self = StObject.set(x, "hasDivider", js.Any.fromFunction0(value))
+      inline def setHasDivider(value: () => Boolean): Self = StObject.set(x, "hasDivider", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDefaultType(value: () => Boolean): Self = StObject.set(x, "isDefaultType", js.Any.fromFunction0(value))
+      inline def setIsDefaultType(value: () => Boolean): Self = StObject.set(x, "isDefaultType", js.Any.fromFunction0(value))
     }
   }
 }

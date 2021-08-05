@@ -26,8 +26,7 @@ trait XSEInitializer
 }
 object XSEInitializer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createSecurityContext: String => XXMLSecurityContext,
     freeSecurityContext: XXMLSecurityContext => Unit,
@@ -38,13 +37,10 @@ object XSEInitializer {
     __obj.asInstanceOf[XSEInitializer]
   }
   
-  @scala.inline
-  implicit class XSEInitializerMutableBuilder[Self <: XSEInitializer] (val x: Self) extends AnyVal {
+  extension [Self <: XSEInitializer](x: Self) {
     
-    @scala.inline
-    def setCreateSecurityContext(value: String => XXMLSecurityContext): Self = StObject.set(x, "createSecurityContext", js.Any.fromFunction1(value))
+    inline def setCreateSecurityContext(value: String => XXMLSecurityContext): Self = StObject.set(x, "createSecurityContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFreeSecurityContext(value: XXMLSecurityContext => Unit): Self = StObject.set(x, "freeSecurityContext", js.Any.fromFunction1(value))
+    inline def setFreeSecurityContext(value: XXMLSecurityContext => Unit): Self = StObject.set(x, "freeSecurityContext", js.Any.fromFunction1(value))
   }
 }

@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorAdjustProperty extends StObject
 object ColorAdjustProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def economy: typings.preact.preactStrings.economy = "economy".asInstanceOf[typings.preact.preactStrings.economy]
+  inline def economy: typings.preact.preactStrings.economy = "economy".asInstanceOf[typings.preact.preactStrings.economy]
   
-  @scala.inline
-  def exact: typings.preact.preactStrings.exact = "exact".asInstanceOf[typings.preact.preactStrings.exact]
+  inline def exact: typings.preact.preactStrings.exact = "exact".asInstanceOf[typings.preact.preactStrings.exact]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
 }

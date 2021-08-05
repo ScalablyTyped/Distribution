@@ -13,19 +13,15 @@ trait InputParallelism extends StObject {
 }
 object InputParallelism {
   
-  @scala.inline
-  def apply(): InputParallelism = {
+  inline def apply(): InputParallelism = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputParallelism]
   }
   
-  @scala.inline
-  implicit class InputParallelismMutableBuilder[Self <: InputParallelism] (val x: Self) extends AnyVal {
+  extension [Self <: InputParallelism](x: Self) {
     
-    @scala.inline
-    def setCount(value: InputParallelismCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: InputParallelismCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait ASPxClientMenu
 }
 object ASPxClientMenu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CloseUp: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]],
     GetClientVisible: () => Boolean,
@@ -65,16 +64,12 @@ object ASPxClientMenu {
     __obj.asInstanceOf[ASPxClientMenu]
   }
   
-  @scala.inline
-  implicit class ASPxClientMenuMutableBuilder[Self <: ASPxClientMenu] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMenu](x: Self) {
     
-    @scala.inline
-    def setGetOrientation(value: () => String): Self = StObject.set(x, "GetOrientation", js.Any.fromFunction0(value))
+    inline def setGetOrientation(value: () => String): Self = StObject.set(x, "GetOrientation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetOrientation(value: String => Unit): Self = StObject.set(x, "SetOrientation", js.Any.fromFunction1(value))
+    inline def setSetOrientation(value: String => Unit): Self = StObject.set(x, "SetOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleSideMenu(value: () => Unit): Self = StObject.set(x, "ToggleSideMenu", js.Any.fromFunction0(value))
+    inline def setToggleSideMenu(value: () => Unit): Self = StObject.set(x, "ToggleSideMenu", js.Any.fromFunction0(value))
   }
 }

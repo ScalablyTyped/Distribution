@@ -11,8 +11,7 @@ trait RemoveAttributesOutput
      with typings.awsSdkClientPinpointBrowser.typesRemoveAttributesOutputMod.RemoveAttributesOutput
 object RemoveAttributesOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, AttributesResource: UnmarshalledAttributesResource): RemoveAttributesOutput = {
+  inline def apply($metadata: ResponseMetadata, AttributesResource: UnmarshalledAttributesResource): RemoveAttributesOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], AttributesResource = AttributesResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAttributesOutput]
   }

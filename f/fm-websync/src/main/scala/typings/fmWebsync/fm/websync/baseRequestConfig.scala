@@ -31,37 +31,27 @@ trait baseRequestConfig extends StObject {
 }
 object baseRequestConfig {
   
-  @scala.inline
-  def apply(): baseRequestConfig = {
+  inline def apply(): baseRequestConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[baseRequestConfig]
   }
   
-  @scala.inline
-  implicit class baseRequestConfigMutableBuilder[Self <: baseRequestConfig] (val x: Self) extends AnyVal {
+  extension [Self <: baseRequestConfig](x: Self) {
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
+    inline def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
+    inline def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
     
-    @scala.inline
-    def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
+    inline def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
+    inline def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
     
-    @scala.inline
-    def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

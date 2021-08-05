@@ -14,19 +14,19 @@ object explorerMod {
   class Explorer protected () extends ExplorerBase[ExplorerOptions] {
     def this(options: ExplorerOptions) = this()
     
-    var createCosmiconfigResult: js.Any = js.native
+    /* private */ var createCosmiconfigResult: js.Any = js.native
     
     def load(filepath: String): js.Promise[CosmiconfigResult] = js.native
     
-    var loadFileContent: js.Any = js.native
+    /* private */ var loadFileContent: js.Any = js.native
     
-    var loadSearchPlace: js.Any = js.native
+    /* private */ var loadSearchPlace: js.Any = js.native
     
     def search(): js.Promise[CosmiconfigResult] = js.native
     def search(searchFrom: String): js.Promise[CosmiconfigResult] = js.native
     
-    var searchDirectory: js.Any = js.native
+    /* private */ var searchDirectory: js.Any = js.native
     
-    var searchFromDirectory: js.Any = js.native
+    /* private */ var searchFromDirectory: js.Any = js.native
   }
 }

@@ -14,25 +14,19 @@ trait CategoryGroupV5 extends StObject {
 }
 object CategoryGroupV5 {
   
-  @scala.inline
-  def apply(): CategoryGroupV5 = {
+  inline def apply(): CategoryGroupV5 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CategoryGroupV5]
   }
   
-  @scala.inline
-  implicit class CategoryGroupV5MutableBuilder[Self <: CategoryGroupV5] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryGroupV5](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

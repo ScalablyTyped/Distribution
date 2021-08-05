@@ -33,43 +33,31 @@ trait HttpInstanceSummary extends StObject {
 }
 object HttpInstanceSummary {
   
-  @scala.inline
-  def apply(): HttpInstanceSummary = {
+  inline def apply(): HttpInstanceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpInstanceSummary]
   }
   
-  @scala.inline
-  implicit class HttpInstanceSummaryMutableBuilder[Self <: HttpInstanceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: HttpInstanceSummary](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setHealthStatus(value: HealthStatus): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: HealthStatus): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceNameUndefined: Self = StObject.set(x, "NamespaceName", js.undefined)
+    inline def setNamespaceNameUndefined: Self = StObject.set(x, "NamespaceName", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
   }
 }

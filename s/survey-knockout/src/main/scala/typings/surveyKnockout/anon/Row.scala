@@ -18,28 +18,21 @@ trait Row extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply(cell: String, item: String, itemTitle: String, root: String, row: String): Row = {
+  inline def apply(cell: String, item: String, itemTitle: String, root: String, row: String): Row = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemTitle = itemTitle.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTitle(value: String): Self = StObject.set(x, "itemTitle", value.asInstanceOf[js.Any])
+    inline def setItemTitle(value: String): Self = StObject.set(x, "itemTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

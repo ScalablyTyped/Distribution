@@ -39,38 +39,28 @@ object typesInventoryS3BucketDestinationMod {
   }
   object InventoryS3BucketDestination {
     
-    @scala.inline
-    def apply(Bucket: String, Format: CSV | ORC | String): InventoryS3BucketDestination = {
+    inline def apply(Bucket: String, Format: CSV | ORC | String): InventoryS3BucketDestination = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
       __obj.asInstanceOf[InventoryS3BucketDestination]
     }
     
-    @scala.inline
-    implicit class InventoryS3BucketDestinationMutableBuilder[Self <: InventoryS3BucketDestination] (val x: Self) extends AnyVal {
+    extension [Self <: InventoryS3BucketDestination](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryption(value: InventoryEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+      inline def setEncryption(value: InventoryEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+      inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
       
-      @scala.inline
-      def setFormat(value: CSV | ORC | String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: CSV | ORC | String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     }
   }
   
@@ -86,20 +76,16 @@ object typesInventoryS3BucketDestinationMod {
   }
   object UnmarshalledInventoryS3BucketDestination {
     
-    @scala.inline
-    def apply(Bucket: String, Format: CSV | ORC | String): UnmarshalledInventoryS3BucketDestination = {
+    inline def apply(Bucket: String, Format: CSV | ORC | String): UnmarshalledInventoryS3BucketDestination = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledInventoryS3BucketDestination]
     }
     
-    @scala.inline
-    implicit class UnmarshalledInventoryS3BucketDestinationMutableBuilder[Self <: UnmarshalledInventoryS3BucketDestination] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledInventoryS3BucketDestination](x: Self) {
       
-      @scala.inline
-      def setEncryption(value: UnmarshalledInventoryEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+      inline def setEncryption(value: UnmarshalledInventoryEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+      inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     }
   }
 }

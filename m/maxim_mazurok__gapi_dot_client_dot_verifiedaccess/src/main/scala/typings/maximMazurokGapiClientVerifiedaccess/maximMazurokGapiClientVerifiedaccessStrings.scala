@@ -8,11 +8,9 @@ object maximMazurokGapiClientVerifiedaccessStrings {
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
   
   @js.native
   sealed trait verifiedaccess extends StObject
-  @scala.inline
-  def verifiedaccess: verifiedaccess = "verifiedaccess".asInstanceOf[verifiedaccess]
+  inline def verifiedaccess: verifiedaccess = "verifiedaccess".asInstanceOf[verifiedaccess]
 }

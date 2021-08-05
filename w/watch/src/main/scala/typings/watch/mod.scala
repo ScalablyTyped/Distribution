@@ -17,21 +17,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMonitor(root: String, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createMonitor")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createMonitor(root: String, options: Options, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createMonitor")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createMonitor(root: String, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createMonitor")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createMonitor(root: String, options: Options, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createMonitor")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def unwatchTree(root: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchTree")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unwatchTree(root: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchTree")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def watchTree(
+  inline def watchTree(
     root: String,
     callback: js.Function3[/* f */ FileOrFiles, /* curr */ Stats, /* prev */ Stats, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchTree")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def watchTree(
+  inline def watchTree(
     root: String,
     options: Options,
     callback: js.Function3[/* f */ FileOrFiles, /* curr */ Stats, /* prev */ Stats, Unit]
@@ -73,50 +68,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFilter(value: (/* path */ String, /* stat */ Stats) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (/* path */ String, /* stat */ Stats) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIgnoreDirectoryPattern(value: RegExp): Self = StObject.set(x, "ignoreDirectoryPattern", value.asInstanceOf[js.Any])
+      inline def setIgnoreDirectoryPattern(value: RegExp): Self = StObject.set(x, "ignoreDirectoryPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDirectoryPatternUndefined: Self = StObject.set(x, "ignoreDirectoryPattern", js.undefined)
+      inline def setIgnoreDirectoryPatternUndefined: Self = StObject.set(x, "ignoreDirectoryPattern", js.undefined)
       
-      @scala.inline
-      def setIgnoreDotFiles(value: Boolean): Self = StObject.set(x, "ignoreDotFiles", value.asInstanceOf[js.Any])
+      inline def setIgnoreDotFiles(value: Boolean): Self = StObject.set(x, "ignoreDotFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDotFilesUndefined: Self = StObject.set(x, "ignoreDotFiles", js.undefined)
+      inline def setIgnoreDotFilesUndefined: Self = StObject.set(x, "ignoreDotFiles", js.undefined)
       
-      @scala.inline
-      def setIgnoreNotPermitted(value: Boolean): Self = StObject.set(x, "ignoreNotPermitted", value.asInstanceOf[js.Any])
+      inline def setIgnoreNotPermitted(value: Boolean): Self = StObject.set(x, "ignoreNotPermitted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNotPermittedUndefined: Self = StObject.set(x, "ignoreNotPermitted", js.undefined)
+      inline def setIgnoreNotPermittedUndefined: Self = StObject.set(x, "ignoreNotPermitted", js.undefined)
       
-      @scala.inline
-      def setIgnoreUnreadableDir(value: Boolean): Self = StObject.set(x, "ignoreUnreadableDir", value.asInstanceOf[js.Any])
+      inline def setIgnoreUnreadableDir(value: Boolean): Self = StObject.set(x, "ignoreUnreadableDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUnreadableDirUndefined: Self = StObject.set(x, "ignoreUnreadableDir", js.undefined)
+      inline def setIgnoreUnreadableDirUndefined: Self = StObject.set(x, "ignoreUnreadableDir", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     }
   }
 }

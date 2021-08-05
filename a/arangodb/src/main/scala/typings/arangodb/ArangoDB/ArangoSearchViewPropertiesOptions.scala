@@ -18,37 +18,27 @@ trait ArangoSearchViewPropertiesOptions extends StObject {
 }
 object ArangoSearchViewPropertiesOptions {
   
-  @scala.inline
-  def apply(): ArangoSearchViewPropertiesOptions = {
+  inline def apply(): ArangoSearchViewPropertiesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArangoSearchViewPropertiesOptions]
   }
   
-  @scala.inline
-  implicit class ArangoSearchViewPropertiesOptionsMutableBuilder[Self <: ArangoSearchViewPropertiesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ArangoSearchViewPropertiesOptions](x: Self) {
     
-    @scala.inline
-    def setCleanupIntervalStep(value: Double): Self = StObject.set(x, "cleanupIntervalStep", value.asInstanceOf[js.Any])
+    inline def setCleanupIntervalStep(value: Double): Self = StObject.set(x, "cleanupIntervalStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCleanupIntervalStepUndefined: Self = StObject.set(x, "cleanupIntervalStep", js.undefined)
+    inline def setCleanupIntervalStepUndefined: Self = StObject.set(x, "cleanupIntervalStep", js.undefined)
     
-    @scala.inline
-    def setConsolidationIntervalMsec(value: Double): Self = StObject.set(x, "consolidationIntervalMsec", value.asInstanceOf[js.Any])
+    inline def setConsolidationIntervalMsec(value: Double): Self = StObject.set(x, "consolidationIntervalMsec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsolidationIntervalMsecUndefined: Self = StObject.set(x, "consolidationIntervalMsec", js.undefined)
+    inline def setConsolidationIntervalMsecUndefined: Self = StObject.set(x, "consolidationIntervalMsec", js.undefined)
     
-    @scala.inline
-    def setConsolidationPolicy(value: Threshold): Self = StObject.set(x, "consolidationPolicy", value.asInstanceOf[js.Any])
+    inline def setConsolidationPolicy(value: Threshold): Self = StObject.set(x, "consolidationPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsolidationPolicyUndefined: Self = StObject.set(x, "consolidationPolicy", js.undefined)
+    inline def setConsolidationPolicyUndefined: Self = StObject.set(x, "consolidationPolicy", js.undefined)
     
-    @scala.inline
-    def setLinks(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
   }
 }

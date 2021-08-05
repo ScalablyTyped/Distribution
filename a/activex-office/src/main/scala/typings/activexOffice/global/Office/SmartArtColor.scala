@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SmartArtColor")
 @js.native
-class SmartArtColor protected ()
+/* private */ class SmartArtColor ()
   extends StObject
      with typings.activexOffice.Office.SmartArtColor {
   
@@ -28,7 +28,7 @@ class SmartArtColor protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.SmartArtColor_typekey")
   var OfficeDotSmartArtColor_typekey: typings.activexOffice.Office.SmartArtColor = js.native
   

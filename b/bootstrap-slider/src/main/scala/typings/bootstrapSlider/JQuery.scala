@@ -30,8 +30,7 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bootstrapSlider: SliderPlugin[JQuery],
     on: (slide, js.Function1[/* slideEvt */ SliderEvent, `false` | Unit]) => JQuery,
     slider: SliderPlugin[JQuery]
@@ -40,16 +39,12 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setBootstrapSlider(value: SliderPlugin[JQuery]): Self = StObject.set(x, "bootstrapSlider", value.asInstanceOf[js.Any])
+    inline def setBootstrapSlider(value: SliderPlugin[JQuery]): Self = StObject.set(x, "bootstrapSlider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn(value: (slide, js.Function1[/* slideEvt */ SliderEvent, `false` | Unit]) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (slide, js.Function1[/* slideEvt */ SliderEvent, `false` | Unit]) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSlider(value: SliderPlugin[JQuery]): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: SliderPlugin[JQuery]): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
   }
 }

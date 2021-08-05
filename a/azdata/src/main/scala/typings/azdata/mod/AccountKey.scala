@@ -23,25 +23,19 @@ trait AccountKey extends StObject {
 }
 object AccountKey {
   
-  @scala.inline
-  def apply(accountId: String, providerId: String): AccountKey = {
+  inline def apply(accountId: String, providerId: String): AccountKey = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountKey]
   }
   
-  @scala.inline
-  implicit class AccountKeyMutableBuilder[Self <: AccountKey] (val x: Self) extends AnyVal {
+  extension [Self <: AccountKey](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderArgs(value: js.Any): Self = StObject.set(x, "providerArgs", value.asInstanceOf[js.Any])
+    inline def setProviderArgs(value: js.Any): Self = StObject.set(x, "providerArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderArgsUndefined: Self = StObject.set(x, "providerArgs", js.undefined)
+    inline def setProviderArgsUndefined: Self = StObject.set(x, "providerArgs", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
   }
 }

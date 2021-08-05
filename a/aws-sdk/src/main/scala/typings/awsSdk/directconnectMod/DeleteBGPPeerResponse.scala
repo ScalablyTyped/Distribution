@@ -13,19 +13,15 @@ trait DeleteBGPPeerResponse extends StObject {
 }
 object DeleteBGPPeerResponse {
   
-  @scala.inline
-  def apply(): DeleteBGPPeerResponse = {
+  inline def apply(): DeleteBGPPeerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteBGPPeerResponse]
   }
   
-  @scala.inline
-  implicit class DeleteBGPPeerResponseMutableBuilder[Self <: DeleteBGPPeerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBGPPeerResponse](x: Self) {
     
-    @scala.inline
-    def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
+    inline def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceUndefined: Self = StObject.set(x, "virtualInterface", js.undefined)
+    inline def setVirtualInterfaceUndefined: Self = StObject.set(x, "virtualInterface", js.undefined)
   }
 }

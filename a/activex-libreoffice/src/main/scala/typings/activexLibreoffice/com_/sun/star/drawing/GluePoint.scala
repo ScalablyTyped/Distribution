@@ -28,25 +28,19 @@ trait GluePoint extends StObject {
 }
 object GluePoint {
   
-  @scala.inline
-  def apply(Alignment: Double, EscapeDirection: Double, Position: Point, PositionAbsolute: Boolean): GluePoint = {
+  inline def apply(Alignment: Double, EscapeDirection: Double, Position: Point, PositionAbsolute: Boolean): GluePoint = {
     val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], EscapeDirection = EscapeDirection.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PositionAbsolute = PositionAbsolute.asInstanceOf[js.Any])
     __obj.asInstanceOf[GluePoint]
   }
   
-  @scala.inline
-  implicit class GluePointMutableBuilder[Self <: GluePoint] (val x: Self) extends AnyVal {
+  extension [Self <: GluePoint](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeDirection(value: Double): Self = StObject.set(x, "EscapeDirection", value.asInstanceOf[js.Any])
+    inline def setEscapeDirection(value: Double): Self = StObject.set(x, "EscapeDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionAbsolute(value: Boolean): Self = StObject.set(x, "PositionAbsolute", value.asInstanceOf[js.Any])
+    inline def setPositionAbsolute(value: Boolean): Self = StObject.set(x, "PositionAbsolute", value.asInstanceOf[js.Any])
   }
 }

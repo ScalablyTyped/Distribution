@@ -38,46 +38,33 @@ trait GetProfileRequest extends StObject {
 }
 object GetProfileRequest {
   
-  @scala.inline
-  def apply(profilingGroupName: ProfilingGroupName): GetProfileRequest = {
+  inline def apply(profilingGroupName: ProfilingGroupName): GetProfileRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProfileRequest]
   }
   
-  @scala.inline
-  implicit class GetProfileRequestMutableBuilder[Self <: GetProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetProfileRequest](x: Self) {
     
-    @scala.inline
-    def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+    inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setMaxDepth(value: MaxDepth): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+    inline def setMaxDepth(value: MaxDepth): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+    inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

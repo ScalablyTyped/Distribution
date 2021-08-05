@@ -38,8 +38,7 @@ trait DescribeMergeConflictsOutput extends StObject {
 }
 object DescribeMergeConflictsOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     conflictMetadata: ConflictMetadata,
     destinationCommitId: ObjectId,
     mergeHunks: MergeHunks,
@@ -49,34 +48,24 @@ object DescribeMergeConflictsOutput {
     __obj.asInstanceOf[DescribeMergeConflictsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeMergeConflictsOutputMutableBuilder[Self <: DescribeMergeConflictsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMergeConflictsOutput](x: Self) {
     
-    @scala.inline
-    def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
+    inline def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
+    inline def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
     
-    @scala.inline
-    def setConflictMetadata(value: ConflictMetadata): Self = StObject.set(x, "conflictMetadata", value.asInstanceOf[js.Any])
+    inline def setConflictMetadata(value: ConflictMetadata): Self = StObject.set(x, "conflictMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
+    inline def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeHunks(value: MergeHunks): Self = StObject.set(x, "mergeHunks", value.asInstanceOf[js.Any])
+    inline def setMergeHunks(value: MergeHunks): Self = StObject.set(x, "mergeHunks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeHunksVarargs(value: MergeHunk*): Self = StObject.set(x, "mergeHunks", js.Array(value :_*))
+    inline def setMergeHunksVarargs(value: MergeHunk*): Self = StObject.set(x, "mergeHunks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
+    inline def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
   }
 }

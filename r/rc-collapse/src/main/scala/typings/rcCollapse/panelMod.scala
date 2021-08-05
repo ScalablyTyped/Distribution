@@ -25,29 +25,24 @@ object panelMod {
       @JSImport("rc-collapse/es/Panel", "default.defaultProps.forceRender")
       @js.native
       def forceRender: Boolean = js.native
-      @scala.inline
-      def forceRender_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceRender")(x.asInstanceOf[js.Any])
+      inline def forceRender_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceRender")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-collapse/es/Panel", "default.defaultProps.headerClass")
       @js.native
       def headerClass: String = js.native
-      @scala.inline
-      def headerClass_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerClass")(x.asInstanceOf[js.Any])
+      inline def headerClass_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerClass")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-collapse/es/Panel", "default.defaultProps.isActive")
       @js.native
       def isActive: Boolean = js.native
-      @scala.inline
-      def isActive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isActive")(x.asInstanceOf[js.Any])
+      inline def isActive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isActive")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def onItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onItemClick")().asInstanceOf[Unit]
+      inline def onItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onItemClick")().asInstanceOf[Unit]
       
       @JSImport("rc-collapse/es/Panel", "default.defaultProps.showArrow")
       @js.native
       def showArrow: Boolean = js.native
-      @scala.inline
-      def showArrow_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showArrow")(x.asInstanceOf[js.Any])
+      inline def showArrow_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showArrow")(x.asInstanceOf[js.Any])
     }
   }
   

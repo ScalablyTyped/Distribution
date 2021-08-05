@@ -23,34 +23,25 @@ trait DescribeTasksRequest extends StObject {
 }
 object DescribeTasksRequest {
   
-  @scala.inline
-  def apply(tasks: StringList): DescribeTasksRequest = {
+  inline def apply(tasks: StringList): DescribeTasksRequest = {
     val __obj = js.Dynamic.literal(tasks = tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTasksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTasksRequestMutableBuilder[Self <: DescribeTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTasksRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setInclude(value: TaskFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: TaskFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: TaskField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: TaskField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setTasks(value: StringList): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: StringList): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

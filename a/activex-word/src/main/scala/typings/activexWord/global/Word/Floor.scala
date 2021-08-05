@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Floor")
 @js.native
-class Floor protected ()
+/* private */ class Floor ()
   extends StObject
      with typings.activexWord.Word.Floor {
   
@@ -49,7 +49,7 @@ class Floor protected ()
   /* CompleteClass */
   var Thickness: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Floor_typekey")
   var WordDotFloor_typekey: typings.activexWord.Word.Floor = js.native
 }

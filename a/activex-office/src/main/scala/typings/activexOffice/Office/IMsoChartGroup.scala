@@ -61,7 +61,7 @@ trait IMsoChartGroup extends StObject {
   
   val Index: Double = js.native
   
-  @JSName("Office.IMsoChartGroup_typekey")
+  /* private */ @JSName("Office.IMsoChartGroup_typekey")
   var OfficeDotIMsoChartGroup_typekey: IMsoChartGroup = js.native
   
   var Overlap: Double = js.native

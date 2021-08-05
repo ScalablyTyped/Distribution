@@ -12,19 +12,15 @@ trait Token extends StObject {
 }
 object Token {
   
-  @scala.inline
-  def apply(aud: String, jti: String): Token = {
+  inline def apply(aud: String, jti: String): Token = {
     val __obj = js.Dynamic.literal(aud = aud.asInstanceOf[js.Any], jti = jti.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   
-  @scala.inline
-  implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+  extension [Self <: Token](x: Self) {
     
-    @scala.inline
-    def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
+    inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
+    inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
   }
 }

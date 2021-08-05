@@ -15,19 +15,15 @@ trait RcsEndUserMessageAvailableEventArgs extends StObject {
 }
 object RcsEndUserMessageAvailableEventArgs {
   
-  @scala.inline
-  def apply(isMessageAvailable: Boolean, message: RcsEndUserMessage): RcsEndUserMessageAvailableEventArgs = {
+  inline def apply(isMessageAvailable: Boolean, message: RcsEndUserMessage): RcsEndUserMessageAvailableEventArgs = {
     val __obj = js.Dynamic.literal(isMessageAvailable = isMessageAvailable.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[RcsEndUserMessageAvailableEventArgs]
   }
   
-  @scala.inline
-  implicit class RcsEndUserMessageAvailableEventArgsMutableBuilder[Self <: RcsEndUserMessageAvailableEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RcsEndUserMessageAvailableEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsMessageAvailable(value: Boolean): Self = StObject.set(x, "isMessageAvailable", value.asInstanceOf[js.Any])
+    inline def setIsMessageAvailable(value: Boolean): Self = StObject.set(x, "isMessageAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: RcsEndUserMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: RcsEndUserMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

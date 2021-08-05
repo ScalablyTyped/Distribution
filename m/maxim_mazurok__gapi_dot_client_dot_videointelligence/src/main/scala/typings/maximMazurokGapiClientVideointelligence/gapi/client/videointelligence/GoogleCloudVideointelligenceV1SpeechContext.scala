@@ -15,22 +15,17 @@ trait GoogleCloudVideointelligenceV1SpeechContext extends StObject {
 }
 object GoogleCloudVideointelligenceV1SpeechContext {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1SpeechContext = {
+  inline def apply(): GoogleCloudVideointelligenceV1SpeechContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1SpeechContext]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1SpeechContextMutableBuilder[Self <: GoogleCloudVideointelligenceV1SpeechContext] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1SpeechContext](x: Self) {
     
-    @scala.inline
-    def setPhrases(value: js.Array[String]): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
+    inline def setPhrases(value: js.Array[String]): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
+    inline def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
-    @scala.inline
-    def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
+    inline def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
   }
 }

@@ -17,25 +17,19 @@ trait GoogleCloudDialogflowV2TextInput extends StObject {
 }
 object GoogleCloudDialogflowV2TextInput {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2TextInput = {
+  inline def apply(): GoogleCloudDialogflowV2TextInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2TextInput]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2TextInputMutableBuilder[Self <: GoogleCloudDialogflowV2TextInput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2TextInput](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

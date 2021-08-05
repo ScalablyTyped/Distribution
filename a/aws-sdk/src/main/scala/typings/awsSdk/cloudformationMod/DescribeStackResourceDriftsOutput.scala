@@ -18,25 +18,19 @@ trait DescribeStackResourceDriftsOutput extends StObject {
 }
 object DescribeStackResourceDriftsOutput {
   
-  @scala.inline
-  def apply(StackResourceDrifts: StackResourceDrifts): DescribeStackResourceDriftsOutput = {
+  inline def apply(StackResourceDrifts: StackResourceDrifts): DescribeStackResourceDriftsOutput = {
     val __obj = js.Dynamic.literal(StackResourceDrifts = StackResourceDrifts.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackResourceDriftsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStackResourceDriftsOutputMutableBuilder[Self <: DescribeStackResourceDriftsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackResourceDriftsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackResourceDrifts(value: StackResourceDrifts): Self = StObject.set(x, "StackResourceDrifts", value.asInstanceOf[js.Any])
+    inline def setStackResourceDrifts(value: StackResourceDrifts): Self = StObject.set(x, "StackResourceDrifts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackResourceDriftsVarargs(value: StackResourceDrift*): Self = StObject.set(x, "StackResourceDrifts", js.Array(value :_*))
+    inline def setStackResourceDriftsVarargs(value: StackResourceDrift*): Self = StObject.set(x, "StackResourceDrifts", js.Array(value :_*))
   }
 }

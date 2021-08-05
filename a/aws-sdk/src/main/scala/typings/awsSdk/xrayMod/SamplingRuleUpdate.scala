@@ -68,85 +68,59 @@ trait SamplingRuleUpdate extends StObject {
 }
 object SamplingRuleUpdate {
   
-  @scala.inline
-  def apply(): SamplingRuleUpdate = {
+  inline def apply(): SamplingRuleUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SamplingRuleUpdate]
   }
   
-  @scala.inline
-  implicit class SamplingRuleUpdateMutableBuilder[Self <: SamplingRuleUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SamplingRuleUpdate](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setFixedRate(value: NullableDouble): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
+    inline def setFixedRate(value: NullableDouble): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedRateUndefined: Self = StObject.set(x, "FixedRate", js.undefined)
+    inline def setFixedRateUndefined: Self = StObject.set(x, "FixedRate", js.undefined)
     
-    @scala.inline
-    def setHTTPMethod(value: HTTPMethod): Self = StObject.set(x, "HTTPMethod", value.asInstanceOf[js.Any])
+    inline def setHTTPMethod(value: HTTPMethod): Self = StObject.set(x, "HTTPMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTTPMethodUndefined: Self = StObject.set(x, "HTTPMethod", js.undefined)
+    inline def setHTTPMethodUndefined: Self = StObject.set(x, "HTTPMethod", js.undefined)
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
-    @scala.inline
-    def setPriority(value: NullableInteger): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: NullableInteger): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setReservoirSize(value: NullableInteger): Self = StObject.set(x, "ReservoirSize", value.asInstanceOf[js.Any])
+    inline def setReservoirSize(value: NullableInteger): Self = StObject.set(x, "ReservoirSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservoirSizeUndefined: Self = StObject.set(x, "ReservoirSize", js.undefined)
+    inline def setReservoirSizeUndefined: Self = StObject.set(x, "ReservoirSize", js.undefined)
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
-    @scala.inline
-    def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
+    inline def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
+    inline def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
     
-    @scala.inline
-    def setURLPath(value: URLPath): Self = StObject.set(x, "URLPath", value.asInstanceOf[js.Any])
+    inline def setURLPath(value: URLPath): Self = StObject.set(x, "URLPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURLPathUndefined: Self = StObject.set(x, "URLPath", js.undefined)
+    inline def setURLPathUndefined: Self = StObject.set(x, "URLPath", js.undefined)
   }
 }

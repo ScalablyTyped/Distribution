@@ -22,34 +22,25 @@ trait UpdateContactPhotoRequest extends StObject {
 }
 object UpdateContactPhotoRequest {
   
-  @scala.inline
-  def apply(): UpdateContactPhotoRequest = {
+  inline def apply(): UpdateContactPhotoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateContactPhotoRequest]
   }
   
-  @scala.inline
-  implicit class UpdateContactPhotoRequestMutableBuilder[Self <: UpdateContactPhotoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContactPhotoRequest](x: Self) {
     
-    @scala.inline
-    def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
+    inline def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonFieldsUndefined: Self = StObject.set(x, "personFields", js.undefined)
+    inline def setPersonFieldsUndefined: Self = StObject.set(x, "personFields", js.undefined)
     
-    @scala.inline
-    def setPhotoBytes(value: String): Self = StObject.set(x, "photoBytes", value.asInstanceOf[js.Any])
+    inline def setPhotoBytes(value: String): Self = StObject.set(x, "photoBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoBytesUndefined: Self = StObject.set(x, "photoBytes", js.undefined)
+    inline def setPhotoBytesUndefined: Self = StObject.set(x, "photoBytes", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

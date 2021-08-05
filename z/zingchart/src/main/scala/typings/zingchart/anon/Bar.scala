@@ -12,25 +12,19 @@ trait Bar extends StObject {
 }
 object Bar {
   
-  @scala.inline
-  def apply(): Bar = {
+  inline def apply(): Bar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bar]
   }
   
-  @scala.inline
-  implicit class BarMutableBuilder[Self <: Bar] (val x: Self) extends AnyVal {
+  extension [Self <: Bar](x: Self) {
     
-    @scala.inline
-    def setBar(value: Borderradius): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: Borderradius): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
+    inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
-    @scala.inline
-    def setHandle(value: Borderradius): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Borderradius): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
   }
 }

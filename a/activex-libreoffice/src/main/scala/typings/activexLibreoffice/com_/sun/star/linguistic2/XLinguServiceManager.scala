@@ -91,8 +91,7 @@ trait XLinguServiceManager
 }
 object XLinguServiceManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Hyphenator: XHyphenator,
     SpellChecker: XSpellChecker,
     Thesaurus: XThesaurus,
@@ -112,40 +111,28 @@ object XLinguServiceManager {
     __obj.asInstanceOf[XLinguServiceManager]
   }
   
-  @scala.inline
-  implicit class XLinguServiceManagerMutableBuilder[Self <: XLinguServiceManager] (val x: Self) extends AnyVal {
+  extension [Self <: XLinguServiceManager](x: Self) {
     
-    @scala.inline
-    def setAddLinguServiceManagerListener(value: XEventListener => Boolean): Self = StObject.set(x, "addLinguServiceManagerListener", js.Any.fromFunction1(value))
+    inline def setAddLinguServiceManagerListener(value: XEventListener => Boolean): Self = StObject.set(x, "addLinguServiceManagerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAvailableServices(value: (String, Locale) => SafeArray[String]): Self = StObject.set(x, "getAvailableServices", js.Any.fromFunction2(value))
+    inline def setGetAvailableServices(value: (String, Locale) => SafeArray[String]): Self = StObject.set(x, "getAvailableServices", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetConfiguredServices(value: (String, Locale) => SafeArray[String]): Self = StObject.set(x, "getConfiguredServices", js.Any.fromFunction2(value))
+    inline def setGetConfiguredServices(value: (String, Locale) => SafeArray[String]): Self = StObject.set(x, "getConfiguredServices", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetHyphenator(value: () => XHyphenator): Self = StObject.set(x, "getHyphenator", js.Any.fromFunction0(value))
+    inline def setGetHyphenator(value: () => XHyphenator): Self = StObject.set(x, "getHyphenator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSpellChecker(value: () => XSpellChecker): Self = StObject.set(x, "getSpellChecker", js.Any.fromFunction0(value))
+    inline def setGetSpellChecker(value: () => XSpellChecker): Self = StObject.set(x, "getSpellChecker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetThesaurus(value: () => XThesaurus): Self = StObject.set(x, "getThesaurus", js.Any.fromFunction0(value))
+    inline def setGetThesaurus(value: () => XThesaurus): Self = StObject.set(x, "getThesaurus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHyphenator(value: XHyphenator): Self = StObject.set(x, "Hyphenator", value.asInstanceOf[js.Any])
+    inline def setHyphenator(value: XHyphenator): Self = StObject.set(x, "Hyphenator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveLinguServiceManagerListener(value: XEventListener => Boolean): Self = StObject.set(x, "removeLinguServiceManagerListener", js.Any.fromFunction1(value))
+    inline def setRemoveLinguServiceManagerListener(value: XEventListener => Boolean): Self = StObject.set(x, "removeLinguServiceManagerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetConfiguredServices(value: (String, Locale, SeqEquiv[String]) => Unit): Self = StObject.set(x, "setConfiguredServices", js.Any.fromFunction3(value))
+    inline def setSetConfiguredServices(value: (String, Locale, SeqEquiv[String]) => Unit): Self = StObject.set(x, "setConfiguredServices", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSpellChecker(value: XSpellChecker): Self = StObject.set(x, "SpellChecker", value.asInstanceOf[js.Any])
+    inline def setSpellChecker(value: XSpellChecker): Self = StObject.set(x, "SpellChecker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThesaurus(value: XThesaurus): Self = StObject.set(x, "Thesaurus", value.asInstanceOf[js.Any])
+    inline def setThesaurus(value: XThesaurus): Self = StObject.set(x, "Thesaurus", value.asInstanceOf[js.Any])
   }
 }

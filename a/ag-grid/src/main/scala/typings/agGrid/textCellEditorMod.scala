@@ -20,7 +20,7 @@ object textCellEditorMod {
     @JSName("afterGuiAttached")
     def afterGuiAttached_MTextCellEditor(): Unit = js.native
     
-    var focusAfterAttached: js.Any = js.native
+    /* private */ var focusAfterAttached: js.Any = js.native
     
     @JSName("focusIn")
     def focusIn_MTextCellEditor(): Unit = js.native
@@ -31,12 +31,12 @@ object textCellEditorMod {
     /* CompleteClass */
     override def getValue(): js.Any = js.native
     
-    var highlightAllOnFocus: js.Any = js.native
+    /* private */ var highlightAllOnFocus: js.Any = js.native
     
     @JSName("init")
     def init_MTextCellEditor(params: ITextCellEditorParams): Unit = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
   }
   /* static members */
   object TextCellEditor {
@@ -48,8 +48,7 @@ object textCellEditorMod {
     @JSImport("ag-grid/dist/lib/rendering/cellEditors/textCellEditor", "TextCellEditor.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   @js.native

@@ -15,31 +15,23 @@ trait INameAttrList extends StObject {
 }
 object INameAttrList {
   
-  @scala.inline
-  def apply(): INameAttrList = {
+  inline def apply(): INameAttrList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INameAttrList]
   }
   
-  @scala.inline
-  implicit class INameAttrListMutableBuilder[Self <: INameAttrList] (val x: Self) extends AnyVal {
+  extension [Self <: INameAttrList](x: Self) {
     
-    @scala.inline
-    def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrNull: Self = StObject.set(x, "attr", null)
+    inline def setAttrNull: Self = StObject.set(x, "attr", null)
     
-    @scala.inline
-    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

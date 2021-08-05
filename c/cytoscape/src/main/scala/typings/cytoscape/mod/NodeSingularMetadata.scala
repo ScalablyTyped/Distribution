@@ -29,22 +29,17 @@ trait NodeSingularMetadata extends StObject {
 }
 object NodeSingularMetadata {
   
-  @scala.inline
-  def apply(degree: Boolean => Double, indegree: Boolean => Double, outdegree: Boolean => Double): NodeSingularMetadata = {
+  inline def apply(degree: Boolean => Double, indegree: Boolean => Double, outdegree: Boolean => Double): NodeSingularMetadata = {
     val __obj = js.Dynamic.literal(degree = js.Any.fromFunction1(degree), indegree = js.Any.fromFunction1(indegree), outdegree = js.Any.fromFunction1(outdegree))
     __obj.asInstanceOf[NodeSingularMetadata]
   }
   
-  @scala.inline
-  implicit class NodeSingularMetadataMutableBuilder[Self <: NodeSingularMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSingularMetadata](x: Self) {
     
-    @scala.inline
-    def setDegree(value: Boolean => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
+    inline def setDegree(value: Boolean => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndegree(value: Boolean => Double): Self = StObject.set(x, "indegree", js.Any.fromFunction1(value))
+    inline def setIndegree(value: Boolean => Double): Self = StObject.set(x, "indegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutdegree(value: Boolean => Double): Self = StObject.set(x, "outdegree", js.Any.fromFunction1(value))
+    inline def setOutdegree(value: Boolean => Double): Self = StObject.set(x, "outdegree", js.Any.fromFunction1(value))
   }
 }

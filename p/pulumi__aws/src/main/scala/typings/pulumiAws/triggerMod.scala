@@ -50,21 +50,16 @@ object triggerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trigger]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TriggerState): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trigger]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID]): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID], state: TriggerState): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    inline def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
     
     /**
       * Returns true if the given object is an instance of Trigger.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean]
   }
   
   trait TriggerArgs extends StObject {
@@ -78,8 +73,7 @@ object triggerMod {
   }
   object TriggerArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       repositoryName: Input[String],
       triggers: Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]
     ): TriggerArgs = {
@@ -87,17 +81,13 @@ object triggerMod {
       __obj.asInstanceOf[TriggerArgs]
     }
     
-    @scala.inline
-    implicit class TriggerArgsMutableBuilder[Self <: TriggerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerArgs](x: Self) {
       
-      @scala.inline
-      def setRepositoryName(value: Input[String]): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: Input[String]): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggersVarargs(value: Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+      inline def setTriggersVarargs(value: Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]*): Self = StObject.set(x, "triggers", js.Array(value :_*))
     }
   }
   
@@ -114,35 +104,26 @@ object triggerMod {
   }
   object TriggerState {
     
-    @scala.inline
-    def apply(): TriggerState = {
+    inline def apply(): TriggerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TriggerState]
     }
     
-    @scala.inline
-    implicit class TriggerStateMutableBuilder[Self <: TriggerState] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerState](x: Self) {
       
-      @scala.inline
-      def setConfigurationId(value: Input[String]): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+      inline def setConfigurationId(value: Input[String]): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
+      inline def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: Input[String]): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: Input[String]): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+      inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
       
-      @scala.inline
-      def setTriggers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
+      inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
       
-      @scala.inline
-      def setTriggersVarargs(value: Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+      inline def setTriggersVarargs(value: Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]*): Self = StObject.set(x, "triggers", js.Array(value :_*))
     }
   }
 }

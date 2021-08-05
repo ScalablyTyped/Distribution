@@ -28,37 +28,27 @@ trait IamUser extends StObject {
 }
 object IamUser {
   
-  @scala.inline
-  def apply(): IamUser = {
+  inline def apply(): IamUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IamUser]
   }
   
-  @scala.inline
-  implicit class IamUserMutableBuilder[Self <: IamUser] (val x: Self) extends AnyVal {
+  extension [Self <: IamUser](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: string): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: string): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
-    @scala.inline
-    def setUserName(value: string): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: string): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

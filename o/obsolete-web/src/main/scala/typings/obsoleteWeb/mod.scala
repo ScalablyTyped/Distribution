@@ -79,38 +79,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPosition(value: afterbeing | beforened): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: afterbeing | beforened): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setPromptOnNonTargetBrowser(value: Boolean): Self = StObject.set(x, "promptOnNonTargetBrowser", value.asInstanceOf[js.Any])
+      inline def setPromptOnNonTargetBrowser(value: Boolean): Self = StObject.set(x, "promptOnNonTargetBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptOnNonTargetBrowserUndefined: Self = StObject.set(x, "promptOnNonTargetBrowser", js.undefined)
+      inline def setPromptOnNonTargetBrowserUndefined: Self = StObject.set(x, "promptOnNonTargetBrowser", js.undefined)
       
-      @scala.inline
-      def setPromptOnUnknownBrowser(value: Boolean): Self = StObject.set(x, "promptOnUnknownBrowser", value.asInstanceOf[js.Any])
+      inline def setPromptOnUnknownBrowser(value: Boolean): Self = StObject.set(x, "promptOnUnknownBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptOnUnknownBrowserUndefined: Self = StObject.set(x, "promptOnUnknownBrowser", js.undefined)
+      inline def setPromptOnUnknownBrowserUndefined: Self = StObject.set(x, "promptOnUnknownBrowser", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yup", "Ref")
 @js.native
-class Ref_ protected () extends StObject {
+/* private */ class Ref_ () extends StObject {
   
-  val __isYupRef: `true` = js.native
+  /* private */ val __isYupRef: `true` = js.native
 }

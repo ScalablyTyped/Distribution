@@ -10,6 +10,5 @@ object toIntegerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toInteger(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toInteger(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

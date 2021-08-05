@@ -26,8 +26,7 @@ trait TaxonomyFieldValue
 }
 object TaxonomyFieldValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -44,25 +43,18 @@ object TaxonomyFieldValue {
     __obj.asInstanceOf[TaxonomyFieldValue]
   }
   
-  @scala.inline
-  implicit class TaxonomyFieldValueMutableBuilder[Self <: TaxonomyFieldValue] (val x: Self) extends AnyVal {
+  extension [Self <: TaxonomyFieldValue](x: Self) {
     
-    @scala.inline
-    def setGet_label(value: () => String): Self = StObject.set(x, "get_label", js.Any.fromFunction0(value))
+    inline def setGet_label(value: () => String): Self = StObject.set(x, "get_label", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_termGuid(value: () => Guid): Self = StObject.set(x, "get_termGuid", js.Any.fromFunction0(value))
+    inline def setGet_termGuid(value: () => Guid): Self = StObject.set(x, "get_termGuid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_wssId(value: () => Double): Self = StObject.set(x, "get_wssId", js.Any.fromFunction0(value))
+    inline def setGet_wssId(value: () => Double): Self = StObject.set(x, "get_wssId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_label(value: String => Unit): Self = StObject.set(x, "set_label", js.Any.fromFunction1(value))
+    inline def setSet_label(value: String => Unit): Self = StObject.set(x, "set_label", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_termGuid(value: Guid => Unit): Self = StObject.set(x, "set_termGuid", js.Any.fromFunction1(value))
+    inline def setSet_termGuid(value: Guid => Unit): Self = StObject.set(x, "set_termGuid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_wssId(value: Double => Unit): Self = StObject.set(x, "set_wssId", js.Any.fromFunction1(value))
+    inline def setSet_wssId(value: Double => Unit): Self = StObject.set(x, "set_wssId", js.Any.fromFunction1(value))
   }
 }

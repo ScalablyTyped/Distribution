@@ -16,16 +16,13 @@ trait ComponentBind extends StObject {
 }
 object ComponentBind {
   
-  @scala.inline
-  def apply(bind: (js.Any, js.Any) => Unit): ComponentBind = {
+  inline def apply(bind: (js.Any, js.Any) => Unit): ComponentBind = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction2(bind))
     __obj.asInstanceOf[ComponentBind]
   }
   
-  @scala.inline
-  implicit class ComponentBindMutableBuilder[Self <: ComponentBind] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentBind](x: Self) {
     
-    @scala.inline
-    def setBind(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+    inline def setBind(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
   }
 }

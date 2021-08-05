@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InterceptionStage extends StObject
 object InterceptionStage {
   
-  @scala.inline
-  def HeadersReceived: typings.devtoolsProtocol.devtoolsProtocolStrings.HeadersReceived = "HeadersReceived".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeadersReceived]
+  inline def HeadersReceived: typings.devtoolsProtocol.devtoolsProtocolStrings.HeadersReceived = "HeadersReceived".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeadersReceived]
   
-  @scala.inline
-  def Request: typings.devtoolsProtocol.devtoolsProtocolStrings.Request = "Request".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Request]
+  inline def Request: typings.devtoolsProtocol.devtoolsProtocolStrings.Request = "Request".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Request]
 }

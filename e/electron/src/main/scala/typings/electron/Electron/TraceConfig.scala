@@ -71,81 +71,57 @@ trait TraceConfig extends StObject {
 }
 object TraceConfig {
   
-  @scala.inline
-  def apply(): TraceConfig = {
+  inline def apply(): TraceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TraceConfig]
   }
   
-  @scala.inline
-  implicit class TraceConfigMutableBuilder[Self <: TraceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TraceConfig](x: Self) {
     
-    @scala.inline
-    def setEnable_argument_filter(value: Boolean): Self = StObject.set(x, "enable_argument_filter", value.asInstanceOf[js.Any])
+    inline def setEnable_argument_filter(value: Boolean): Self = StObject.set(x, "enable_argument_filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable_argument_filterUndefined: Self = StObject.set(x, "enable_argument_filter", js.undefined)
+    inline def setEnable_argument_filterUndefined: Self = StObject.set(x, "enable_argument_filter", js.undefined)
     
-    @scala.inline
-    def setExcluded_categories(value: js.Array[String]): Self = StObject.set(x, "excluded_categories", value.asInstanceOf[js.Any])
+    inline def setExcluded_categories(value: js.Array[String]): Self = StObject.set(x, "excluded_categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcluded_categoriesUndefined: Self = StObject.set(x, "excluded_categories", js.undefined)
+    inline def setExcluded_categoriesUndefined: Self = StObject.set(x, "excluded_categories", js.undefined)
     
-    @scala.inline
-    def setExcluded_categoriesVarargs(value: String*): Self = StObject.set(x, "excluded_categories", js.Array(value :_*))
+    inline def setExcluded_categoriesVarargs(value: String*): Self = StObject.set(x, "excluded_categories", js.Array(value :_*))
     
-    @scala.inline
-    def setHistogram_names(value: js.Array[String]): Self = StObject.set(x, "histogram_names", value.asInstanceOf[js.Any])
+    inline def setHistogram_names(value: js.Array[String]): Self = StObject.set(x, "histogram_names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogram_namesUndefined: Self = StObject.set(x, "histogram_names", js.undefined)
+    inline def setHistogram_namesUndefined: Self = StObject.set(x, "histogram_names", js.undefined)
     
-    @scala.inline
-    def setHistogram_namesVarargs(value: String*): Self = StObject.set(x, "histogram_names", js.Array(value :_*))
+    inline def setHistogram_namesVarargs(value: String*): Self = StObject.set(x, "histogram_names", js.Array(value :_*))
     
-    @scala.inline
-    def setIncluded_categories(value: js.Array[String]): Self = StObject.set(x, "included_categories", value.asInstanceOf[js.Any])
+    inline def setIncluded_categories(value: js.Array[String]): Self = StObject.set(x, "included_categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncluded_categoriesUndefined: Self = StObject.set(x, "included_categories", js.undefined)
+    inline def setIncluded_categoriesUndefined: Self = StObject.set(x, "included_categories", js.undefined)
     
-    @scala.inline
-    def setIncluded_categoriesVarargs(value: String*): Self = StObject.set(x, "included_categories", js.Array(value :_*))
+    inline def setIncluded_categoriesVarargs(value: String*): Self = StObject.set(x, "included_categories", js.Array(value :_*))
     
-    @scala.inline
-    def setIncluded_process_ids(value: js.Array[Double]): Self = StObject.set(x, "included_process_ids", value.asInstanceOf[js.Any])
+    inline def setIncluded_process_ids(value: js.Array[Double]): Self = StObject.set(x, "included_process_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncluded_process_idsUndefined: Self = StObject.set(x, "included_process_ids", js.undefined)
+    inline def setIncluded_process_idsUndefined: Self = StObject.set(x, "included_process_ids", js.undefined)
     
-    @scala.inline
-    def setIncluded_process_idsVarargs(value: Double*): Self = StObject.set(x, "included_process_ids", js.Array(value :_*))
+    inline def setIncluded_process_idsVarargs(value: Double*): Self = StObject.set(x, "included_process_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setMemory_dump_config(value: Record[String, js.Any]): Self = StObject.set(x, "memory_dump_config", value.asInstanceOf[js.Any])
+    inline def setMemory_dump_config(value: Record[String, js.Any]): Self = StObject.set(x, "memory_dump_config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory_dump_configUndefined: Self = StObject.set(x, "memory_dump_config", js.undefined)
+    inline def setMemory_dump_configUndefined: Self = StObject.set(x, "memory_dump_config", js.undefined)
     
-    @scala.inline
-    def setRecording_mode(
+    inline def setRecording_mode(
       value: `record-until-full` | `record-continuously` | `record-as-much-as-possible` | `trace-to-console`
     ): Self = StObject.set(x, "recording_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecording_modeUndefined: Self = StObject.set(x, "recording_mode", js.undefined)
+    inline def setRecording_modeUndefined: Self = StObject.set(x, "recording_mode", js.undefined)
     
-    @scala.inline
-    def setTrace_buffer_size_in_events(value: Double): Self = StObject.set(x, "trace_buffer_size_in_events", value.asInstanceOf[js.Any])
+    inline def setTrace_buffer_size_in_events(value: Double): Self = StObject.set(x, "trace_buffer_size_in_events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrace_buffer_size_in_eventsUndefined: Self = StObject.set(x, "trace_buffer_size_in_events", js.undefined)
+    inline def setTrace_buffer_size_in_eventsUndefined: Self = StObject.set(x, "trace_buffer_size_in_events", js.undefined)
     
-    @scala.inline
-    def setTrace_buffer_size_in_kb(value: Double): Self = StObject.set(x, "trace_buffer_size_in_kb", value.asInstanceOf[js.Any])
+    inline def setTrace_buffer_size_in_kb(value: Double): Self = StObject.set(x, "trace_buffer_size_in_kb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrace_buffer_size_in_kbUndefined: Self = StObject.set(x, "trace_buffer_size_in_kb", js.undefined)
+    inline def setTrace_buffer_size_in_kbUndefined: Self = StObject.set(x, "trace_buffer_size_in_kb", js.undefined)
   }
 }

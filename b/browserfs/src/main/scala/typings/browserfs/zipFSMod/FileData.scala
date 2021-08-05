@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class FileData protected () extends StObject {
   def this(header: FileHeader, record: CentralDirectory, data: Buffer) = this()
   
-  var data: js.Any = js.native
+  /* private */ var data: js.Any = js.native
   
   def decompress(): Buffer = js.native
   
@@ -20,7 +20,7 @@ class FileData protected () extends StObject {
   
   def getRecord(): CentralDirectory = js.native
   
-  var header: js.Any = js.native
+  /* private */ var header: js.Any = js.native
   
-  var record: js.Any = js.native
+  /* private */ var record: js.Any = js.native
 }

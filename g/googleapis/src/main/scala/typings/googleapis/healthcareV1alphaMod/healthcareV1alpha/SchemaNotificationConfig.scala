@@ -27,19 +27,15 @@ trait SchemaNotificationConfig extends StObject {
 }
 object SchemaNotificationConfig {
   
-  @scala.inline
-  def apply(): SchemaNotificationConfig = {
+  inline def apply(): SchemaNotificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotificationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationConfigMutableBuilder[Self <: SchemaNotificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotificationConfig](x: Self) {
     
-    @scala.inline
-    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
+    inline def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
+    inline def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
   }
 }

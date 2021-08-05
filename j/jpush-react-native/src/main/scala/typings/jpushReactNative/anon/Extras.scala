@@ -33,8 +33,7 @@ trait Extras extends StObject {
 }
 object Extras {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: String,
     extras: Extra,
     messageID: String,
@@ -45,22 +44,16 @@ object Extras {
     __obj.asInstanceOf[Extras]
   }
   
-  @scala.inline
-  implicit class ExtrasMutableBuilder[Self <: Extras] (val x: Self) extends AnyVal {
+  extension [Self <: Extras](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtras(value: Extra): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: Extra): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
+    inline def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEventType(value: notificationArrived | notificationOpened): Self = StObject.set(x, "notificationEventType", value.asInstanceOf[js.Any])
+    inline def setNotificationEventType(value: notificationArrived | notificationOpened): Self = StObject.set(x, "notificationEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

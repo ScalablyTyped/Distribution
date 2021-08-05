@@ -27,8 +27,7 @@ trait XCertificateExtension
 }
 object XCertificateExtension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExtensionId: SafeArray[Double],
     ExtensionValue: SafeArray[Double],
     acquire: () => Unit,
@@ -40,16 +39,12 @@ object XCertificateExtension {
     __obj.asInstanceOf[XCertificateExtension]
   }
   
-  @scala.inline
-  implicit class XCertificateExtensionMutableBuilder[Self <: XCertificateExtension] (val x: Self) extends AnyVal {
+  extension [Self <: XCertificateExtension](x: Self) {
     
-    @scala.inline
-    def setExtensionId(value: SafeArray[Double]): Self = StObject.set(x, "ExtensionId", value.asInstanceOf[js.Any])
+    inline def setExtensionId(value: SafeArray[Double]): Self = StObject.set(x, "ExtensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionValue(value: SafeArray[Double]): Self = StObject.set(x, "ExtensionValue", value.asInstanceOf[js.Any])
+    inline def setExtensionValue(value: SafeArray[Double]): Self = StObject.set(x, "ExtensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCritical(value: () => Boolean): Self = StObject.set(x, "isCritical", js.Any.fromFunction0(value))
+    inline def setIsCritical(value: () => Boolean): Self = StObject.set(x, "isCritical", js.Any.fromFunction0(value))
   }
 }

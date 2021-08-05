@@ -14,25 +14,19 @@ trait ControlBarOptions
 }
 object ControlBarOptions {
   
-  @scala.inline
-  def apply(): ControlBarOptions = {
+  inline def apply(): ControlBarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControlBarOptions]
   }
   
-  @scala.inline
-  implicit class ControlBarOptionsMutableBuilder[Self <: ControlBarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ControlBarOptions](x: Self) {
     
-    @scala.inline
-    def setFullscreenToggle(value: Boolean): Self = StObject.set(x, "fullscreenToggle", value.asInstanceOf[js.Any])
+    inline def setFullscreenToggle(value: Boolean): Self = StObject.set(x, "fullscreenToggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenToggleUndefined: Self = StObject.set(x, "fullscreenToggle", js.undefined)
+    inline def setFullscreenToggleUndefined: Self = StObject.set(x, "fullscreenToggle", js.undefined)
     
-    @scala.inline
-    def setVolumePanel(value: VolumePanelOptions): Self = StObject.set(x, "volumePanel", value.asInstanceOf[js.Any])
+    inline def setVolumePanel(value: VolumePanelOptions): Self = StObject.set(x, "volumePanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumePanelUndefined: Self = StObject.set(x, "volumePanel", js.undefined)
+    inline def setVolumePanelUndefined: Self = StObject.set(x, "volumePanel", js.undefined)
   }
 }

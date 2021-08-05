@@ -13,19 +13,15 @@ trait CreateMultiplexProgramResponse extends StObject {
 }
 object CreateMultiplexProgramResponse {
   
-  @scala.inline
-  def apply(): CreateMultiplexProgramResponse = {
+  inline def apply(): CreateMultiplexProgramResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMultiplexProgramResponse]
   }
   
-  @scala.inline
-  implicit class CreateMultiplexProgramResponseMutableBuilder[Self <: CreateMultiplexProgramResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMultiplexProgramResponse](x: Self) {
     
-    @scala.inline
-    def setMultiplexProgram(value: MultiplexProgram): Self = StObject.set(x, "MultiplexProgram", value.asInstanceOf[js.Any])
+    inline def setMultiplexProgram(value: MultiplexProgram): Self = StObject.set(x, "MultiplexProgram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexProgramUndefined: Self = StObject.set(x, "MultiplexProgram", js.undefined)
+    inline def setMultiplexProgramUndefined: Self = StObject.set(x, "MultiplexProgram", js.undefined)
   }
 }

@@ -18,31 +18,23 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(): Data = {
+  inline def apply(): Data = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setData(value: (/* name */ js.UndefOr[String], /* object */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    inline def setData(value: (/* name */ js.UndefOr[String], /* object */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
+    inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
+    inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
     
-    @scala.inline
-    def setSignals(value: (/* name */ js.UndefOr[String], /* operator */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "signals", js.Any.fromFunction2(value))
+    inline def setSignals(value: (/* name */ js.UndefOr[String], /* operator */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "signals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+    inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
   }
 }

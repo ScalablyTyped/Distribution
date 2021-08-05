@@ -22,20 +22,16 @@ object help24Mod extends Shortcut {
   }
   object Help24Props {
     
-    @scala.inline
-    def apply(): Help24Props = {
+    inline def apply(): Help24Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Help24Props]
     }
     
-    @scala.inline
-    implicit class Help24PropsMutableBuilder[Self <: Help24Props] (val x: Self) extends AnyVal {
+    extension [Self <: Help24Props](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

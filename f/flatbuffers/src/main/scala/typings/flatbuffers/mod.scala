@@ -34,8 +34,7 @@ object mod {
         * to it. The data is located at the end of the buffer.
         */
       /* static member */
-      @scala.inline
-      def growByteBuffer(bb: typings.flatbuffers.mod.global.flatbuffers.ByteBuffer): typings.flatbuffers.mod.global.flatbuffers.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("growByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[typings.flatbuffers.mod.global.flatbuffers.ByteBuffer]
+      inline def growByteBuffer(bb: typings.flatbuffers.mod.global.flatbuffers.ByteBuffer): typings.flatbuffers.mod.global.flatbuffers.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("growByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[typings.flatbuffers.mod.global.flatbuffers.ByteBuffer]
     }
     
     ////////////////////////////////////////////////////////////////////////////////
@@ -52,8 +51,7 @@ object mod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def allocate(byte_size: Double): typings.flatbuffers.mod.global.flatbuffers.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(byte_size.asInstanceOf[js.Any]).asInstanceOf[typings.flatbuffers.mod.global.flatbuffers.ByteBuffer]
+      inline def allocate(byte_size: Double): typings.flatbuffers.mod.global.flatbuffers.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(byte_size.asInstanceOf[js.Any]).asInstanceOf[typings.flatbuffers.mod.global.flatbuffers.ByteBuffer]
     }
     
     @JSImport("flatbuffers", "flatbuffers.Encoding")
@@ -89,12 +87,10 @@ object mod {
       @JSImport("flatbuffers", "flatbuffers.Long.ZERO")
       @js.native
       def ZERO: typings.flatbuffers.mod.global.flatbuffers.Long = js.native
-      @scala.inline
-      def ZERO_=(x: typings.flatbuffers.mod.global.flatbuffers.Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+      inline def ZERO_=(x: typings.flatbuffers.mod.global.flatbuffers.Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @scala.inline
-      def create(low: Double, high: Double): typings.flatbuffers.mod.global.flatbuffers.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[typings.flatbuffers.mod.global.flatbuffers.Long]
+      inline def create(low: Double, high: Double): typings.flatbuffers.mod.global.flatbuffers.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[typings.flatbuffers.mod.global.flatbuffers.Long]
     }
     
     @JSImport("flatbuffers", "flatbuffers.SIZEOF_INT")
@@ -331,8 +327,7 @@ object mod {
           * to it. The data is located at the end of the buffer.
           */
         /* static member */
-        @scala.inline
-        def growByteBuffer(bb: ByteBuffer): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("growByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+        inline def growByteBuffer(bb: ByteBuffer): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("growByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
       }
       
       ////////////////////////////////////////////////////////////////////////////////
@@ -447,8 +442,7 @@ object mod {
         val ^ : js.Any = js.native
         
         /* static member */
-        @scala.inline
-        def allocate(byte_size: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(byte_size.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+        inline def allocate(byte_size: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(byte_size.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
       }
       
       @js.native
@@ -501,12 +495,10 @@ object mod {
         @JSGlobal("flatbuffers.Long.ZERO")
         @js.native
         def ZERO: Long = js.native
-        @scala.inline
-        def ZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+        inline def ZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
         
         /* static member */
-        @scala.inline
-        def create(low: Double, high: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Long]
+        inline def create(low: Double, high: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Long]
       }
       
       @JSGlobal("flatbuffers.SIZEOF_INT")
@@ -547,23 +539,18 @@ object mod {
       }
       object Table {
         
-        @scala.inline
-        def apply(bb_pos: Double): Table = {
+        inline def apply(bb_pos: Double): Table = {
           val __obj = js.Dynamic.literal(bb_pos = bb_pos.asInstanceOf[js.Any], bb = null)
           __obj.asInstanceOf[Table]
         }
         
-        @scala.inline
-        implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+        extension [Self <: Table](x: Self) {
           
-          @scala.inline
-          def setBb(value: ByteBuffer): Self = StObject.set(x, "bb", value.asInstanceOf[js.Any])
+          inline def setBb(value: ByteBuffer): Self = StObject.set(x, "bb", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBbNull: Self = StObject.set(x, "bb", null)
+          inline def setBbNull: Self = StObject.set(x, "bb", null)
           
-          @scala.inline
-          def setBb_pos(value: Double): Self = StObject.set(x, "bb_pos", value.asInstanceOf[js.Any])
+          inline def setBb_pos(value: Double): Self = StObject.set(x, "bb_pos", value.asInstanceOf[js.Any])
         }
       }
     }

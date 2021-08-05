@@ -22,8 +22,7 @@ trait ManualInterventions extends StObject {
 }
 object ManualInterventions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approvals: scala.Double,
     artifacts: scala.Double,
     environments: scala.Double,
@@ -36,28 +35,20 @@ object ManualInterventions {
     __obj.asInstanceOf[ManualInterventions]
   }
   
-  @scala.inline
-  implicit class ManualInterventionsMutableBuilder[Self <: ManualInterventions] (val x: Self) extends AnyVal {
+  extension [Self <: ManualInterventions](x: Self) {
     
-    @scala.inline
-    def setApprovals(value: scala.Double): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
+    inline def setApprovals(value: scala.Double): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifacts(value: scala.Double): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: scala.Double): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironments(value: scala.Double): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+    inline def setEnvironments(value: scala.Double): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualInterventions(value: scala.Double): Self = StObject.set(x, "manualInterventions", value.asInstanceOf[js.Any])
+    inline def setManualInterventions(value: scala.Double): Self = StObject.set(x, "manualInterventions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: scala.Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: scala.Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: scala.Double): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: scala.Double): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

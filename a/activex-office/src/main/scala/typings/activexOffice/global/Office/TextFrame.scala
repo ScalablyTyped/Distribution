@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.TextFrame")
 @js.native
-class TextFrame protected ()
+/* private */ class TextFrame ()
   extends StObject
      with typings.activexOffice.Office.TextFrame {
   
@@ -29,7 +29,7 @@ class TextFrame protected ()
   /* CompleteClass */
   var MarginTop: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.TextFrame_typekey")
   var OfficeDotTextFrame_typekey: typings.activexOffice.Office.TextFrame = js.native
   

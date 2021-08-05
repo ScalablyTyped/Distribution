@@ -15,19 +15,15 @@ trait ReadonlyArrayTypeProps extends StObject {
 }
 object ReadonlyArrayTypeProps {
   
-  @scala.inline
-  def apply(knob: ArrayTypeKnob, onChange: /* value */ ArrayTypeKnobValue => ArrayTypeKnobValue): ReadonlyArrayTypeProps = {
+  inline def apply(knob: ArrayTypeKnob, onChange: /* value */ ArrayTypeKnobValue => ArrayTypeKnobValue): ReadonlyArrayTypeProps = {
     val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[ReadonlyArrayTypeProps]
   }
   
-  @scala.inline
-  implicit class ReadonlyArrayTypePropsMutableBuilder[Self <: ReadonlyArrayTypeProps] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyArrayTypeProps](x: Self) {
     
-    @scala.inline
-    def setKnob(value: ArrayTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: ArrayTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: /* value */ ArrayTypeKnobValue => ArrayTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ ArrayTypeKnobValue => ArrayTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
   }
 }

@@ -24,8 +24,7 @@ trait EmailMailboxChangeTracker extends StObject {
 }
 object EmailMailboxChangeTracker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enable: () => Unit,
     getChangeReader: () => EmailMailboxChangeReader,
     isTracking: Boolean,
@@ -35,19 +34,14 @@ object EmailMailboxChangeTracker {
     __obj.asInstanceOf[EmailMailboxChangeTracker]
   }
   
-  @scala.inline
-  implicit class EmailMailboxChangeTrackerMutableBuilder[Self <: EmailMailboxChangeTracker] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxChangeTracker](x: Self) {
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChangeReader(value: () => EmailMailboxChangeReader): Self = StObject.set(x, "getChangeReader", js.Any.fromFunction0(value))
+    inline def setGetChangeReader(value: () => EmailMailboxChangeReader): Self = StObject.set(x, "getChangeReader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTracking(value: Boolean): Self = StObject.set(x, "isTracking", value.asInstanceOf[js.Any])
+    inline def setIsTracking(value: Boolean): Self = StObject.set(x, "isTracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

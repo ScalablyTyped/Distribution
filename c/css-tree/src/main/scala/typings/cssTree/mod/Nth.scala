@@ -18,26 +18,20 @@ trait Nth
 }
 object Nth {
   
-  @scala.inline
-  def apply(nth: AnPlusB | Identifier): Nth = {
+  inline def apply(nth: AnPlusB | Identifier): Nth = {
     val __obj = js.Dynamic.literal(nth = nth.asInstanceOf[js.Any], selector = null)
     __obj.updateDynamic("type")("Nth")
     __obj.asInstanceOf[Nth]
   }
   
-  @scala.inline
-  implicit class NthMutableBuilder[Self <: Nth] (val x: Self) extends AnyVal {
+  extension [Self <: Nth](x: Self) {
     
-    @scala.inline
-    def setNth(value: AnPlusB | Identifier): Self = StObject.set(x, "nth", value.asInstanceOf[js.Any])
+    inline def setNth(value: AnPlusB | Identifier): Self = StObject.set(x, "nth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: SelectorList): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: SelectorList): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorNull: Self = StObject.set(x, "selector", null)
+    inline def setSelectorNull: Self = StObject.set(x, "selector", null)
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Nth): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Nth): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

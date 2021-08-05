@@ -18,31 +18,23 @@ trait GetColumnStatisticsForPartitionResponse extends StObject {
 }
 object GetColumnStatisticsForPartitionResponse {
   
-  @scala.inline
-  def apply(): GetColumnStatisticsForPartitionResponse = {
+  inline def apply(): GetColumnStatisticsForPartitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetColumnStatisticsForPartitionResponse]
   }
   
-  @scala.inline
-  implicit class GetColumnStatisticsForPartitionResponseMutableBuilder[Self <: GetColumnStatisticsForPartitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetColumnStatisticsForPartitionResponse](x: Self) {
     
-    @scala.inline
-    def setColumnStatisticsList(value: ColumnStatisticsList): Self = StObject.set(x, "ColumnStatisticsList", value.asInstanceOf[js.Any])
+    inline def setColumnStatisticsList(value: ColumnStatisticsList): Self = StObject.set(x, "ColumnStatisticsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnStatisticsListUndefined: Self = StObject.set(x, "ColumnStatisticsList", js.undefined)
+    inline def setColumnStatisticsListUndefined: Self = StObject.set(x, "ColumnStatisticsList", js.undefined)
     
-    @scala.inline
-    def setColumnStatisticsListVarargs(value: ColumnStatistics*): Self = StObject.set(x, "ColumnStatisticsList", js.Array(value :_*))
+    inline def setColumnStatisticsListVarargs(value: ColumnStatistics*): Self = StObject.set(x, "ColumnStatisticsList", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: ColumnErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: ColumnErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: ColumnError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ColumnError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

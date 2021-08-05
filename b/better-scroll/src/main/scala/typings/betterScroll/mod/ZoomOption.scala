@@ -14,22 +14,17 @@ trait ZoomOption extends StObject {
 }
 object ZoomOption {
   
-  @scala.inline
-  def apply(max: Double, min: Double, start: Double): ZoomOption = {
+  inline def apply(max: Double, min: Double, start: Double): ZoomOption = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOption]
   }
   
-  @scala.inline
-  implicit class ZoomOptionMutableBuilder[Self <: ZoomOption] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomOption](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

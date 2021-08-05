@@ -18,8 +18,7 @@ trait Mozosxfontsmoothing extends StObject {
 }
 object Mozosxfontsmoothing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `-moz-osx-font-smoothing`: String,
     `-webkit-font-smoothing`: String,
     fontFamily: String,
@@ -32,22 +31,16 @@ object Mozosxfontsmoothing {
     __obj.asInstanceOf[Mozosxfontsmoothing]
   }
   
-  @scala.inline
-  implicit class MozosxfontsmoothingMutableBuilder[Self <: Mozosxfontsmoothing] (val x: Self) extends AnyVal {
+  extension [Self <: Mozosxfontsmoothing](x: Self) {
     
-    @scala.inline
-    def `set-moz-osx-font-smoothing`(value: String): Self = StObject.set(x, "-moz-osx-font-smoothing", value.asInstanceOf[js.Any])
+    inline def `set-moz-osx-font-smoothing`(value: String): Self = StObject.set(x, "-moz-osx-font-smoothing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-font-smoothing`(value: String): Self = StObject.set(x, "-webkit-font-smoothing", value.asInstanceOf[js.Any])
+    inline def `set-webkit-font-smoothing`(value: String): Self = StObject.set(x, "-webkit-font-smoothing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRendering(value: String): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
+    inline def setTextRendering(value: String): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
   }
 }

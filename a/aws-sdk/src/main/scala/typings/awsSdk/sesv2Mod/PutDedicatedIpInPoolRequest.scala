@@ -18,19 +18,15 @@ trait PutDedicatedIpInPoolRequest extends StObject {
 }
 object PutDedicatedIpInPoolRequest {
   
-  @scala.inline
-  def apply(DestinationPoolName: PoolName, Ip: Ip): PutDedicatedIpInPoolRequest = {
+  inline def apply(DestinationPoolName: PoolName, Ip: Ip): PutDedicatedIpInPoolRequest = {
     val __obj = js.Dynamic.literal(DestinationPoolName = DestinationPoolName.asInstanceOf[js.Any], Ip = Ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDedicatedIpInPoolRequest]
   }
   
-  @scala.inline
-  implicit class PutDedicatedIpInPoolRequestMutableBuilder[Self <: PutDedicatedIpInPoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutDedicatedIpInPoolRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationPoolName(value: PoolName): Self = StObject.set(x, "DestinationPoolName", value.asInstanceOf[js.Any])
+    inline def setDestinationPoolName(value: PoolName): Self = StObject.set(x, "DestinationPoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
   }
 }

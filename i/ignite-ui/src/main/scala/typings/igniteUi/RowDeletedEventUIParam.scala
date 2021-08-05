@@ -23,31 +23,23 @@ trait RowDeletedEventUIParam extends StObject {
 }
 object RowDeletedEventUIParam {
   
-  @scala.inline
-  def apply(): RowDeletedEventUIParam = {
+  inline def apply(): RowDeletedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowDeletedEventUIParam]
   }
   
-  @scala.inline
-  implicit class RowDeletedEventUIParamMutableBuilder[Self <: RowDeletedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: RowDeletedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
+    inline def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
+    inline def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
   }
 }

@@ -8,26 +8,21 @@ object ganacheCoreStrings {
   
   @js.native
   sealed trait byzantium extends StObject
-  @scala.inline
-  def byzantium: byzantium = "byzantium".asInstanceOf[byzantium]
+  inline def byzantium: byzantium = "byzantium".asInstanceOf[byzantium]
   
   @js.native
   sealed trait constantinople extends StObject
-  @scala.inline
-  def constantinople: constantinople = "constantinople".asInstanceOf[constantinople]
+  inline def constantinople: constantinople = "constantinople".asInstanceOf[constantinople]
   
   @js.native
   sealed trait istanbul extends StObject
-  @scala.inline
-  def istanbul: istanbul = "istanbul".asInstanceOf[istanbul]
+  inline def istanbul: istanbul = "istanbul".asInstanceOf[istanbul]
   
   @js.native
   sealed trait muirGlacier extends StObject
-  @scala.inline
-  def muirGlacier: muirGlacier = "muirGlacier".asInstanceOf[muirGlacier]
+  inline def muirGlacier: muirGlacier = "muirGlacier".asInstanceOf[muirGlacier]
   
   @js.native
   sealed trait petersburg extends StObject
-  @scala.inline
-  def petersburg: petersburg = "petersburg".asInstanceOf[petersburg]
+  inline def petersburg: petersburg = "petersburg".asInstanceOf[petersburg]
 }

@@ -12,16 +12,13 @@ trait AccessTokenGatewayConfig
 }
 object AccessTokenGatewayConfig {
   
-  @scala.inline
-  def apply(accessToken: String): AccessTokenGatewayConfig = {
+  inline def apply(accessToken: String): AccessTokenGatewayConfig = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessTokenGatewayConfig]
   }
   
-  @scala.inline
-  implicit class AccessTokenGatewayConfigMutableBuilder[Self <: AccessTokenGatewayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AccessTokenGatewayConfig](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
   }
 }

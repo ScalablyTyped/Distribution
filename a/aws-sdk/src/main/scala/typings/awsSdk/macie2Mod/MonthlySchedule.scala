@@ -13,19 +13,15 @@ trait MonthlySchedule extends StObject {
 }
 object MonthlySchedule {
   
-  @scala.inline
-  def apply(): MonthlySchedule = {
+  inline def apply(): MonthlySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonthlySchedule]
   }
   
-  @scala.inline
-  implicit class MonthlyScheduleMutableBuilder[Self <: MonthlySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: MonthlySchedule](x: Self) {
     
-    @scala.inline
-    def setDayOfMonth(value: integer): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
+    inline def setDayOfMonth(value: integer): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
+    inline def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
   }
 }

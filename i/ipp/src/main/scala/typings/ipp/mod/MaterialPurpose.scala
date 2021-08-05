@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MaterialPurpose extends StObject
 object MaterialPurpose {
   
-  @scala.inline
-  def all: typings.ipp.ippStrings.all = "all".asInstanceOf[typings.ipp.ippStrings.all]
+  inline def all: typings.ipp.ippStrings.all = "all".asInstanceOf[typings.ipp.ippStrings.all]
   
-  @scala.inline
-  def base: typings.ipp.ippStrings.base = "base".asInstanceOf[typings.ipp.ippStrings.base]
+  inline def base: typings.ipp.ippStrings.base = "base".asInstanceOf[typings.ipp.ippStrings.base]
   
-  @scala.inline
-  def `in-fill`: typings.ipp.ippStrings.`in-fill` = "in-fill".asInstanceOf[typings.ipp.ippStrings.`in-fill`]
+  inline def `in-fill`: typings.ipp.ippStrings.`in-fill` = "in-fill".asInstanceOf[typings.ipp.ippStrings.`in-fill`]
   
-  @scala.inline
-  def shell: typings.ipp.ippStrings.shell = "shell".asInstanceOf[typings.ipp.ippStrings.shell]
+  inline def shell: typings.ipp.ippStrings.shell = "shell".asInstanceOf[typings.ipp.ippStrings.shell]
   
-  @scala.inline
-  def support: typings.ipp.ippStrings.support = "support".asInstanceOf[typings.ipp.ippStrings.support]
+  inline def support: typings.ipp.ippStrings.support = "support".asInstanceOf[typings.ipp.ippStrings.support]
 }

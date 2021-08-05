@@ -54,21 +54,15 @@ object optionalMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def empty[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Optional[T]]
+    inline def empty[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Optional[T]]
     
-    @scala.inline
-    def from[T](option: Option[T]): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(option.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+    inline def from[T](option: Option[T]): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(option.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
     
-    @scala.inline
-    def of[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+    inline def of[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
     
-    @scala.inline
-    def ofNonNull[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNonNull")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+    inline def ofNonNull[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNonNull")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
     
-    @scala.inline
-    def ofNullable[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[Optional[T]]
-    @scala.inline
-    def ofNullable[T](nullable: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+    inline def ofNullable[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[Optional[T]]
+    inline def ofNullable[T](nullable: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
   }
 }

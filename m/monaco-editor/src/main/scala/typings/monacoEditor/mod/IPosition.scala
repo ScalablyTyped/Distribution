@@ -18,19 +18,15 @@ trait IPosition extends StObject {
 }
 object IPosition {
   
-  @scala.inline
-  def apply(column: Double, lineNumber: Double): IPosition = {
+  inline def apply(column: Double, lineNumber: Double): IPosition = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPosition]
   }
   
-  @scala.inline
-  implicit class IPositionMutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
+  extension [Self <: IPosition](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
   }
 }

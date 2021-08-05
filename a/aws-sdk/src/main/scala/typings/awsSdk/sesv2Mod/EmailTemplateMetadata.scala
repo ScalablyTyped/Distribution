@@ -18,25 +18,19 @@ trait EmailTemplateMetadata extends StObject {
 }
 object EmailTemplateMetadata {
   
-  @scala.inline
-  def apply(): EmailTemplateMetadata = {
+  inline def apply(): EmailTemplateMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailTemplateMetadata]
   }
   
-  @scala.inline
-  implicit class EmailTemplateMetadataMutableBuilder[Self <: EmailTemplateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: EmailTemplateMetadata](x: Self) {
     
-    @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
   }
 }

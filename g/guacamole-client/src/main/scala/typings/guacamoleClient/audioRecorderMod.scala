@@ -51,8 +51,7 @@ object audioRecorderMod {
       * @return A Guacamole.AudioRecorder instance supporting the given mimetype and
       * writing to the given stream, or null if support for the given mimetype is absent.
       */
-    @scala.inline
-    def getInstance(stream: OutputStream, mimetype: Mimetype): AudioRecorder | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[AudioRecorder | Null]
+    inline def getInstance(stream: OutputStream, mimetype: Mimetype): AudioRecorder | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[AudioRecorder | Null]
     
     /**
       * Returns a list of all mimetypes supported by any built-in
@@ -66,8 +65,7 @@ object audioRecorderMod {
       * A list of all mimetypes supported by any built-in
       * Guacamole.AudioRecorder, excluding any parameters.
       */
-    @scala.inline
-    def getSupportedTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[String]]
+    inline def getSupportedTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[String]]
     
     /**
       * Determines whether the given mimetype is supported by any built-in
@@ -78,7 +76,6 @@ object audioRecorderMod {
       *
       * @returns true if the given mimetype is supported by any built-in Guacamole.AudioRecorder, false otherwise.
       */
-    @scala.inline
-    def isSupportedType(mimetype: Mimetype): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSupportedType(mimetype: Mimetype): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

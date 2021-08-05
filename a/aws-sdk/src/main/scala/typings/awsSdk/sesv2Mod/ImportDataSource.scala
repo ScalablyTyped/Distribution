@@ -18,19 +18,15 @@ trait ImportDataSource extends StObject {
 }
 object ImportDataSource {
   
-  @scala.inline
-  def apply(DataFormat: DataFormat, S3Url: S3Url): ImportDataSource = {
+  inline def apply(DataFormat: DataFormat, S3Url: S3Url): ImportDataSource = {
     val __obj = js.Dynamic.literal(DataFormat = DataFormat.asInstanceOf[js.Any], S3Url = S3Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportDataSource]
   }
   
-  @scala.inline
-  implicit class ImportDataSourceMutableBuilder[Self <: ImportDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: ImportDataSource](x: Self) {
     
-    @scala.inline
-    def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Url(value: S3Url): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
+    inline def setS3Url(value: S3Url): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
   }
 }

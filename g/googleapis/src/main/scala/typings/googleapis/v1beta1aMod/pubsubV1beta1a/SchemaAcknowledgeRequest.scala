@@ -22,28 +22,21 @@ trait SchemaAcknowledgeRequest extends StObject {
 }
 object SchemaAcknowledgeRequest {
   
-  @scala.inline
-  def apply(): SchemaAcknowledgeRequest = {
+  inline def apply(): SchemaAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAcknowledgeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAcknowledgeRequestMutableBuilder[Self <: SchemaAcknowledgeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAcknowledgeRequest](x: Self) {
     
-    @scala.inline
-    def setAckId(value: js.Array[String]): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
+    inline def setAckId(value: js.Array[String]): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
+    inline def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     
-    @scala.inline
-    def setAckIdVarargs(value: String*): Self = StObject.set(x, "ackId", js.Array(value :_*))
+    inline def setAckIdVarargs(value: String*): Self = StObject.set(x, "ackId", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

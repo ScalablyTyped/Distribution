@@ -19,8 +19,7 @@ trait XMasterPagesSupplier
 }
 object XMasterPagesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MasterPages: XDrawPages,
     acquire: () => Unit,
     getMasterPages: () => XDrawPages,
@@ -31,13 +30,10 @@ object XMasterPagesSupplier {
     __obj.asInstanceOf[XMasterPagesSupplier]
   }
   
-  @scala.inline
-  implicit class XMasterPagesSupplierMutableBuilder[Self <: XMasterPagesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XMasterPagesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetMasterPages(value: () => XDrawPages): Self = StObject.set(x, "getMasterPages", js.Any.fromFunction0(value))
+    inline def setGetMasterPages(value: () => XDrawPages): Self = StObject.set(x, "getMasterPages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMasterPages(value: XDrawPages): Self = StObject.set(x, "MasterPages", value.asInstanceOf[js.Any])
+    inline def setMasterPages(value: XDrawPages): Self = StObject.set(x, "MasterPages", value.asInstanceOf[js.Any])
   }
 }

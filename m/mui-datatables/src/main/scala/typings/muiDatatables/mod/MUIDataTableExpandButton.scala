@@ -26,8 +26,7 @@ trait MUIDataTableExpandButton extends StObject {
 }
 object MUIDataTableExpandButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     areAllRowsExpanded: () => Boolean,
     buttonClass: String,
     expandableRowsHeader: Boolean,
@@ -39,43 +38,30 @@ object MUIDataTableExpandButton {
     __obj.asInstanceOf[MUIDataTableExpandButton]
   }
   
-  @scala.inline
-  implicit class MUIDataTableExpandButtonMutableBuilder[Self <: MUIDataTableExpandButton] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableExpandButton](x: Self) {
     
-    @scala.inline
-    def setAreAllRowsExpanded(value: () => Boolean): Self = StObject.set(x, "areAllRowsExpanded", js.Any.fromFunction0(value))
+    inline def setAreAllRowsExpanded(value: () => Boolean): Self = StObject.set(x, "areAllRowsExpanded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setButtonClass(value: String): Self = StObject.set(x, "buttonClass", value.asInstanceOf[js.Any])
+    inline def setButtonClass(value: String): Self = StObject.set(x, "buttonClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
+    inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
+    inline def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
     
-    @scala.inline
-    def setExpandableRowsHeader(value: Boolean): Self = StObject.set(x, "expandableRowsHeader", value.asInstanceOf[js.Any])
+    inline def setExpandableRowsHeader(value: Boolean): Self = StObject.set(x, "expandableRowsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedRows(value: js.Any): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
+    inline def setExpandedRows(value: js.Any): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedRowsUndefined: Self = StObject.set(x, "expandedRows", js.undefined)
+    inline def setExpandedRowsUndefined: Self = StObject.set(x, "expandedRows", js.undefined)
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconIndeterminateClass(value: String): Self = StObject.set(x, "iconIndeterminateClass", value.asInstanceOf[js.Any])
+    inline def setIconIndeterminateClass(value: String): Self = StObject.set(x, "iconIndeterminateClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHeaderCell(value: Boolean): Self = StObject.set(x, "isHeaderCell", value.asInstanceOf[js.Any])
+    inline def setIsHeaderCell(value: Boolean): Self = StObject.set(x, "isHeaderCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExpand(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    inline def setOnExpand(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+    inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
   }
 }

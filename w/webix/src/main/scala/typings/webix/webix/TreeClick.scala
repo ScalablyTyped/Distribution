@@ -15,8 +15,7 @@ trait TreeClick extends StObject {
 }
 object TreeClick {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     webix_tree_checkbox: (js.Any, StringDictionary[js.Any]) => String,
     webix_tree_close: (js.Any, StringDictionary[js.Any]) => String,
     webix_tree_open: (js.Any, StringDictionary[js.Any]) => String
@@ -25,16 +24,12 @@ object TreeClick {
     __obj.asInstanceOf[TreeClick]
   }
   
-  @scala.inline
-  implicit class TreeClickMutableBuilder[Self <: TreeClick] (val x: Self) extends AnyVal {
+  extension [Self <: TreeClick](x: Self) {
     
-    @scala.inline
-    def setWebix_tree_checkbox(value: (js.Any, StringDictionary[js.Any]) => String): Self = StObject.set(x, "webix_tree_checkbox", js.Any.fromFunction2(value))
+    inline def setWebix_tree_checkbox(value: (js.Any, StringDictionary[js.Any]) => String): Self = StObject.set(x, "webix_tree_checkbox", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWebix_tree_close(value: (js.Any, StringDictionary[js.Any]) => String): Self = StObject.set(x, "webix_tree_close", js.Any.fromFunction2(value))
+    inline def setWebix_tree_close(value: (js.Any, StringDictionary[js.Any]) => String): Self = StObject.set(x, "webix_tree_close", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWebix_tree_open(value: (js.Any, StringDictionary[js.Any]) => String): Self = StObject.set(x, "webix_tree_open", js.Any.fromFunction2(value))
+    inline def setWebix_tree_open(value: (js.Any, StringDictionary[js.Any]) => String): Self = StObject.set(x, "webix_tree_open", js.Any.fromFunction2(value))
   }
 }

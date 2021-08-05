@@ -11,16 +11,13 @@ trait IPixelDataProvider extends StObject {
 }
 object IPixelDataProvider {
   
-  @scala.inline
-  def apply(detachPixelData: () => Uint8Array): IPixelDataProvider = {
+  inline def apply(detachPixelData: () => Uint8Array): IPixelDataProvider = {
     val __obj = js.Dynamic.literal(detachPixelData = js.Any.fromFunction0(detachPixelData))
     __obj.asInstanceOf[IPixelDataProvider]
   }
   
-  @scala.inline
-  implicit class IPixelDataProviderMutableBuilder[Self <: IPixelDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IPixelDataProvider](x: Self) {
     
-    @scala.inline
-    def setDetachPixelData(value: () => Uint8Array): Self = StObject.set(x, "detachPixelData", js.Any.fromFunction0(value))
+    inline def setDetachPixelData(value: () => Uint8Array): Self = StObject.set(x, "detachPixelData", js.Any.fromFunction0(value))
   }
 }

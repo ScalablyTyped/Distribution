@@ -33,43 +33,31 @@ trait DeleteCustomMetadataRequest extends StObject {
 }
 object DeleteCustomMetadataRequest {
   
-  @scala.inline
-  def apply(ResourceId: ResourceIdType): DeleteCustomMetadataRequest = {
+  inline def apply(ResourceId: ResourceIdType): DeleteCustomMetadataRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomMetadataRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCustomMetadataRequestMutableBuilder[Self <: DeleteCustomMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCustomMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDeleteAll(value: BooleanType): Self = StObject.set(x, "DeleteAll", value.asInstanceOf[js.Any])
+    inline def setDeleteAll(value: BooleanType): Self = StObject.set(x, "DeleteAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAllUndefined: Self = StObject.set(x, "DeleteAll", js.undefined)
+    inline def setDeleteAllUndefined: Self = StObject.set(x, "DeleteAll", js.undefined)
     
-    @scala.inline
-    def setKeys(value: CustomMetadataKeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: CustomMetadataKeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: CustomMetadataKeyType*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: CustomMetadataKeyType*): Self = StObject.set(x, "Keys", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

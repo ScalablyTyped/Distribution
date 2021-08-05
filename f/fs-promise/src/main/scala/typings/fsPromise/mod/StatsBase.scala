@@ -10,8 +10,7 @@ trait StatsBase[T]
      with typings.node.fsMod.StatsBase[T]
 object StatsBase {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     atime: Date,
     atimeMs: T,
     birthtime: Date,

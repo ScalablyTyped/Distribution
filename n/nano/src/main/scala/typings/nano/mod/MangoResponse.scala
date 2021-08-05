@@ -22,37 +22,27 @@ trait MangoResponse[D] extends StObject {
 }
 object MangoResponse {
   
-  @scala.inline
-  def apply[D](docs: js.Array[D & IdRev]): MangoResponse[D] = {
+  inline def apply[D](docs: js.Array[D & IdRev]): MangoResponse[D] = {
     val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangoResponse[D]]
   }
   
-  @scala.inline
-  implicit class MangoResponseMutableBuilder[Self <: MangoResponse[?], D] (val x: Self & MangoResponse[D]) extends AnyVal {
+  extension [Self <: MangoResponse[?], D](x: Self & MangoResponse[D]) {
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
+    inline def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
     
-    @scala.inline
-    def setDocs(value: js.Array[D & IdRev]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: js.Array[D & IdRev]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsVarargs(value: (D & IdRev)*): Self = StObject.set(x, "docs", js.Array(value :_*))
+    inline def setDocsVarargs(value: (D & IdRev)*): Self = StObject.set(x, "docs", js.Array(value :_*))
     
-    @scala.inline
-    def setExecution_stats(value: MangoExecutionStats): Self = StObject.set(x, "execution_stats", value.asInstanceOf[js.Any])
+    inline def setExecution_stats(value: MangoExecutionStats): Self = StObject.set(x, "execution_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_statsUndefined: Self = StObject.set(x, "execution_stats", js.undefined)
+    inline def setExecution_statsUndefined: Self = StObject.set(x, "execution_stats", js.undefined)
     
-    @scala.inline
-    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

@@ -11,7 +11,7 @@ object statsCollectionMod {
   @js.native
   class StatsCollection () extends StObject {
     
-    var counters_ : js.Any = js.native
+    /* private */ var counters_ : js.Any = js.native
     
     def get(): StringDictionary[Double] = js.native
     

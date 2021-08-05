@@ -34,58 +34,41 @@ trait Win32LobAppFileSystemRule
 }
 object Win32LobAppFileSystemRule {
   
-  @scala.inline
-  def apply(): Win32LobAppFileSystemRule = {
+  inline def apply(): Win32LobAppFileSystemRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Win32LobAppFileSystemRule]
   }
   
-  @scala.inline
-  implicit class Win32LobAppFileSystemRuleMutableBuilder[Self <: Win32LobAppFileSystemRule] (val x: Self) extends AnyVal {
+  extension [Self <: Win32LobAppFileSystemRule](x: Self) {
     
-    @scala.inline
-    def setCheck32BitOn64System(value: Boolean): Self = StObject.set(x, "check32BitOn64System", value.asInstanceOf[js.Any])
+    inline def setCheck32BitOn64System(value: Boolean): Self = StObject.set(x, "check32BitOn64System", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheck32BitOn64SystemUndefined: Self = StObject.set(x, "check32BitOn64System", js.undefined)
+    inline def setCheck32BitOn64SystemUndefined: Self = StObject.set(x, "check32BitOn64System", js.undefined)
     
-    @scala.inline
-    def setComparisonValue(value: NullableOption[String]): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
+    inline def setComparisonValue(value: NullableOption[String]): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonValueNull: Self = StObject.set(x, "comparisonValue", null)
+    inline def setComparisonValueNull: Self = StObject.set(x, "comparisonValue", null)
     
-    @scala.inline
-    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
+    inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
-    @scala.inline
-    def setFileOrFolderName(value: NullableOption[String]): Self = StObject.set(x, "fileOrFolderName", value.asInstanceOf[js.Any])
+    inline def setFileOrFolderName(value: NullableOption[String]): Self = StObject.set(x, "fileOrFolderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileOrFolderNameNull: Self = StObject.set(x, "fileOrFolderName", null)
+    inline def setFileOrFolderNameNull: Self = StObject.set(x, "fileOrFolderName", null)
     
-    @scala.inline
-    def setFileOrFolderNameUndefined: Self = StObject.set(x, "fileOrFolderName", js.undefined)
+    inline def setFileOrFolderNameUndefined: Self = StObject.set(x, "fileOrFolderName", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: Win32LobAppFileSystemOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: Win32LobAppFileSystemOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathNull: Self = StObject.set(x, "path", null)
+    inline def setPathNull: Self = StObject.set(x, "path", null)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

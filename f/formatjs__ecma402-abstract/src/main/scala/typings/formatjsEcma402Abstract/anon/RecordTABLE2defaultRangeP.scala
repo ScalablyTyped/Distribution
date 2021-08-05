@@ -28,8 +28,7 @@ trait RecordTABLE2defaultRangeP extends StObject {
 }
 object RecordTABLE2defaultRangeP {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ampm: RangePatterns,
     day: RangePatterns,
     default: RangePatterns,
@@ -44,34 +43,24 @@ object RecordTABLE2defaultRangeP {
     __obj.asInstanceOf[RecordTABLE2defaultRangeP]
   }
   
-  @scala.inline
-  implicit class RecordTABLE2defaultRangePMutableBuilder[Self <: RecordTABLE2defaultRangeP] (val x: Self) extends AnyVal {
+  extension [Self <: RecordTABLE2defaultRangeP](x: Self) {
     
-    @scala.inline
-    def setAmpm(value: RangePatterns): Self = StObject.set(x, "ampm", value.asInstanceOf[js.Any])
+    inline def setAmpm(value: RangePatterns): Self = StObject.set(x, "ampm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay(value: RangePatterns): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: RangePatterns): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: RangePatterns): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: RangePatterns): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEra(value: RangePatterns): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+    inline def setEra(value: RangePatterns): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHour(value: RangePatterns): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: RangePatterns): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinute(value: RangePatterns): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: RangePatterns): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: RangePatterns): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: RangePatterns): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: RangePatterns): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: RangePatterns): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: RangePatterns): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: RangePatterns): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

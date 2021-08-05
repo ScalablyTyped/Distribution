@@ -100,8 +100,7 @@ trait ASPxClientTrackBar
 }
 object ASPxClientTrackBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Focus: () => Unit,
     GetCaption: () => String,
@@ -157,55 +156,38 @@ object ASPxClientTrackBar {
     __obj.asInstanceOf[ASPxClientTrackBar]
   }
   
-  @scala.inline
-  implicit class ASPxClientTrackBarMutableBuilder[Self <: ASPxClientTrackBar] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTrackBar](x: Self) {
     
-    @scala.inline
-    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
+    inline def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemIndexByValue(value: js.Any => Double): Self = StObject.set(x, "GetItemIndexByValue", js.Any.fromFunction1(value))
+    inline def setGetItemIndexByValue(value: js.Any => Double): Self = StObject.set(x, "GetItemIndexByValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemText(value: Double => String): Self = StObject.set(x, "GetItemText", js.Any.fromFunction1(value))
+    inline def setGetItemText(value: Double => String): Self = StObject.set(x, "GetItemText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemToolTip(value: Double => String): Self = StObject.set(x, "GetItemToolTip", js.Any.fromFunction1(value))
+    inline def setGetItemToolTip(value: Double => String): Self = StObject.set(x, "GetItemToolTip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemValue(value: Double => js.Any): Self = StObject.set(x, "GetItemValue", js.Any.fromFunction1(value))
+    inline def setGetItemValue(value: Double => js.Any): Self = StObject.set(x, "GetItemValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Double): Self = StObject.set(x, "GetPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Double): Self = StObject.set(x, "GetPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPositionEnd(value: () => Double): Self = StObject.set(x, "GetPositionEnd", js.Any.fromFunction0(value))
+    inline def setGetPositionEnd(value: () => Double): Self = StObject.set(x, "GetPositionEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPositionStart(value: () => Double): Self = StObject.set(x, "GetPositionStart", js.Any.fromFunction0(value))
+    inline def setGetPositionStart(value: () => Double): Self = StObject.set(x, "GetPositionStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPositionChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "PositionChanged", value.asInstanceOf[js.Any])
+    inline def setPositionChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "PositionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionChanging(value: ASPxClientEvent[ASPxClientTrackBarPositionChangingEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "PositionChanging", value.asInstanceOf[js.Any])
+    inline def setPositionChanging(value: ASPxClientEvent[ASPxClientTrackBarPositionChangingEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "PositionChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPosition(value: Double => Unit): Self = StObject.set(x, "SetPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: Double => Unit): Self = StObject.set(x, "SetPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPositionEnd(value: Double => Unit): Self = StObject.set(x, "SetPositionEnd", js.Any.fromFunction1(value))
+    inline def setSetPositionEnd(value: Double => Unit): Self = StObject.set(x, "SetPositionEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPositionStart(value: Double => Unit): Self = StObject.set(x, "SetPositionStart", js.Any.fromFunction1(value))
+    inline def setSetPositionStart(value: Double => Unit): Self = StObject.set(x, "SetPositionStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrack(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackEnd(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "TrackEnd", value.asInstanceOf[js.Any])
+    inline def setTrackEnd(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "TrackEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackStart(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "TrackStart", value.asInstanceOf[js.Any])
+    inline def setTrackStart(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "TrackStart", value.asInstanceOf[js.Any])
   }
 }

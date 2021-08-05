@@ -31,37 +31,27 @@ trait OAuthCallbackChecks extends StObject {
 }
 object OAuthCallbackChecks {
   
-  @scala.inline
-  def apply(): OAuthCallbackChecks = {
+  inline def apply(): OAuthCallbackChecks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuthCallbackChecks]
   }
   
-  @scala.inline
-  implicit class OAuthCallbackChecksMutableBuilder[Self <: OAuthCallbackChecks] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthCallbackChecks](x: Self) {
     
-    @scala.inline
-    def setCode_verifier(value: String): Self = StObject.set(x, "code_verifier", value.asInstanceOf[js.Any])
+    inline def setCode_verifier(value: String): Self = StObject.set(x, "code_verifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode_verifierUndefined: Self = StObject.set(x, "code_verifier", js.undefined)
+    inline def setCode_verifierUndefined: Self = StObject.set(x, "code_verifier", js.undefined)
     
-    @scala.inline
-    def setJarm(value: Boolean): Self = StObject.set(x, "jarm", value.asInstanceOf[js.Any])
+    inline def setJarm(value: Boolean): Self = StObject.set(x, "jarm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJarmUndefined: Self = StObject.set(x, "jarm", js.undefined)
+    inline def setJarmUndefined: Self = StObject.set(x, "jarm", js.undefined)
     
-    @scala.inline
-    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+    inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

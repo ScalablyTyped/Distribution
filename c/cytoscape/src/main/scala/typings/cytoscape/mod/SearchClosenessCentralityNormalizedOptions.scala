@@ -30,31 +30,23 @@ trait SearchClosenessCentralityNormalizedOptions extends StObject {
 }
 object SearchClosenessCentralityNormalizedOptions {
   
-  @scala.inline
-  def apply(): SearchClosenessCentralityNormalizedOptions = {
+  inline def apply(): SearchClosenessCentralityNormalizedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchClosenessCentralityNormalizedOptions]
   }
   
-  @scala.inline
-  implicit class SearchClosenessCentralityNormalizedOptionsMutableBuilder[Self <: SearchClosenessCentralityNormalizedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchClosenessCentralityNormalizedOptions](x: Self) {
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
-    @scala.inline
-    def setHarmonic(value: Boolean): Self = StObject.set(x, "harmonic", value.asInstanceOf[js.Any])
+    inline def setHarmonic(value: Boolean): Self = StObject.set(x, "harmonic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHarmonicUndefined: Self = StObject.set(x, "harmonic", js.undefined)
+    inline def setHarmonicUndefined: Self = StObject.set(x, "harmonic", js.undefined)
     
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    inline def setWeight(value: /* edge */ EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

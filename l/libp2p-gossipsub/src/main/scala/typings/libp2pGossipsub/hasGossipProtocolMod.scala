@@ -10,6 +10,5 @@ object hasGossipProtocolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasGossipProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasGossipProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasGossipProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasGossipProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

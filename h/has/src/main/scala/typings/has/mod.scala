@@ -6,12 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(target: js.Object, property: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(target: js.Object, property: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(target: js.Object, property: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: js.Object, property: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: js.Object, property: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: js.Object, property: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("has", JSImport.Namespace)
   @js.native

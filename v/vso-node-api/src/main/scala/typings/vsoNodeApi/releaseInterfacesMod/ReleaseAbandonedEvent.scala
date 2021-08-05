@@ -12,19 +12,15 @@ trait ReleaseAbandonedEvent extends StObject {
 }
 object ReleaseAbandonedEvent {
   
-  @scala.inline
-  def apply(project: ProjectReference, release: Release): ReleaseAbandonedEvent = {
+  inline def apply(project: ProjectReference, release: Release): ReleaseAbandonedEvent = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseAbandonedEvent]
   }
   
-  @scala.inline
-  implicit class ReleaseAbandonedEventMutableBuilder[Self <: ReleaseAbandonedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseAbandonedEvent](x: Self) {
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait CallAdvancedOptions extends StObject {
 }
 object CallAdvancedOptions {
   
-  @scala.inline
-  def apply(): CallAdvancedOptions = {
+  inline def apply(): CallAdvancedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallAdvancedOptions]
   }
   
-  @scala.inline
-  implicit class CallAdvancedOptionsMutableBuilder[Self <: CallAdvancedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CallAdvancedOptions](x: Self) {
     
-    @scala.inline
-    def setDisclose_me(value: Boolean): Self = StObject.set(x, "disclose_me", value.asInstanceOf[js.Any])
+    inline def setDisclose_me(value: Boolean): Self = StObject.set(x, "disclose_me", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisclose_meUndefined: Self = StObject.set(x, "disclose_me", js.undefined)
+    inline def setDisclose_meUndefined: Self = StObject.set(x, "disclose_me", js.undefined)
     
-    @scala.inline
-    def setReceive_progress(value: Boolean): Self = StObject.set(x, "receive_progress", value.asInstanceOf[js.Any])
+    inline def setReceive_progress(value: Boolean): Self = StObject.set(x, "receive_progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceive_progressUndefined: Self = StObject.set(x, "receive_progress", js.undefined)
+    inline def setReceive_progressUndefined: Self = StObject.set(x, "receive_progress", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

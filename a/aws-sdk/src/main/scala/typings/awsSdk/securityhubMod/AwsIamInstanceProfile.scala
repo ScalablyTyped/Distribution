@@ -38,52 +38,37 @@ trait AwsIamInstanceProfile extends StObject {
 }
 object AwsIamInstanceProfile {
   
-  @scala.inline
-  def apply(): AwsIamInstanceProfile = {
+  inline def apply(): AwsIamInstanceProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamInstanceProfile]
   }
   
-  @scala.inline
-  implicit class AwsIamInstanceProfileMutableBuilder[Self <: AwsIamInstanceProfile] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamInstanceProfile](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setInstanceProfileId(value: NonEmptyString): Self = StObject.set(x, "InstanceProfileId", value.asInstanceOf[js.Any])
+    inline def setInstanceProfileId(value: NonEmptyString): Self = StObject.set(x, "InstanceProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProfileIdUndefined: Self = StObject.set(x, "InstanceProfileId", js.undefined)
+    inline def setInstanceProfileIdUndefined: Self = StObject.set(x, "InstanceProfileId", js.undefined)
     
-    @scala.inline
-    def setInstanceProfileName(value: NonEmptyString): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
+    inline def setInstanceProfileName(value: NonEmptyString): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProfileNameUndefined: Self = StObject.set(x, "InstanceProfileName", js.undefined)
+    inline def setInstanceProfileNameUndefined: Self = StObject.set(x, "InstanceProfileName", js.undefined)
     
-    @scala.inline
-    def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setRoles(value: AwsIamInstanceProfileRoles): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: AwsIamInstanceProfileRoles): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: AwsIamInstanceProfileRole*): Self = StObject.set(x, "Roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: AwsIamInstanceProfileRole*): Self = StObject.set(x, "Roles", js.Array(value :_*))
   }
 }

@@ -15,19 +15,15 @@ trait SetLocalConsolePasswordInput extends StObject {
 }
 object SetLocalConsolePasswordInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN, LocalConsolePassword: LocalConsolePassword): SetLocalConsolePasswordInput = {
+  inline def apply(GatewayARN: GatewayARN, LocalConsolePassword: LocalConsolePassword): SetLocalConsolePasswordInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], LocalConsolePassword = LocalConsolePassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLocalConsolePasswordInput]
   }
   
-  @scala.inline
-  implicit class SetLocalConsolePasswordInputMutableBuilder[Self <: SetLocalConsolePasswordInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetLocalConsolePasswordInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalConsolePassword(value: LocalConsolePassword): Self = StObject.set(x, "LocalConsolePassword", value.asInstanceOf[js.Any])
+    inline def setLocalConsolePassword(value: LocalConsolePassword): Self = StObject.set(x, "LocalConsolePassword", value.asInstanceOf[js.Any])
   }
 }

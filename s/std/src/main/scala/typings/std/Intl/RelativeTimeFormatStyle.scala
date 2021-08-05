@@ -19,12 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelativeTimeFormatStyle extends StObject
 object RelativeTimeFormatStyle {
   
-  @scala.inline
-  def long: typings.std.stdStrings.long = "long".asInstanceOf[typings.std.stdStrings.long]
+  inline def long: typings.std.stdStrings.long = "long".asInstanceOf[typings.std.stdStrings.long]
   
-  @scala.inline
-  def narrow: typings.std.stdStrings.narrow = "narrow".asInstanceOf[typings.std.stdStrings.narrow]
+  inline def narrow: typings.std.stdStrings.narrow = "narrow".asInstanceOf[typings.std.stdStrings.narrow]
   
-  @scala.inline
-  def short: typings.std.stdStrings.short = "short".asInstanceOf[typings.std.stdStrings.short]
+  inline def short: typings.std.stdStrings.short = "short".asInstanceOf[typings.std.stdStrings.short]
 }

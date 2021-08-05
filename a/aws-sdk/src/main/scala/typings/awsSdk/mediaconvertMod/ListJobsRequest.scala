@@ -33,43 +33,31 @@ trait ListJobsRequest extends StObject {
 }
 object ListJobsRequest {
   
-  @scala.inline
-  def apply(): ListJobsRequest = {
+  inline def apply(): ListJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobsRequest]
   }
   
-  @scala.inline
-  implicit class ListJobsRequestMutableBuilder[Self <: ListJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: integerMin1Max20): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integerMin1Max20): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Order): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Order): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
     
-    @scala.inline
-    def setQueue(value: string): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: string): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
     
-    @scala.inline
-    def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

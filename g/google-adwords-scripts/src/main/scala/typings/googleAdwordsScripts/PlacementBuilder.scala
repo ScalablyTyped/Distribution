@@ -12,8 +12,7 @@ trait PlacementBuilder[Placement]
 }
 object PlacementBuilder {
   
-  @scala.inline
-  def apply[Placement](
+  inline def apply[Placement](
     build: () => AdWordsOperation[PlacementBuilder[Placement]],
     exclude: () => AdWordsOperation[PlacementBuilder[Placement]],
     withCpc: Double => PlacementBuilder[Placement],
@@ -24,10 +23,8 @@ object PlacementBuilder {
     __obj.asInstanceOf[PlacementBuilder[Placement]]
   }
   
-  @scala.inline
-  implicit class PlacementBuilderMutableBuilder[Self <: PlacementBuilder[?], Placement] (val x: Self & PlacementBuilder[Placement]) extends AnyVal {
+  extension [Self <: PlacementBuilder[?], Placement](x: Self & PlacementBuilder[Placement]) {
     
-    @scala.inline
-    def setWithUrl(value: String => PlacementBuilder[Placement]): Self = StObject.set(x, "withUrl", js.Any.fromFunction1(value))
+    inline def setWithUrl(value: String => PlacementBuilder[Placement]): Self = StObject.set(x, "withUrl", js.Any.fromFunction1(value))
   }
 }

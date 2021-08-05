@@ -15,19 +15,15 @@ trait DefineContextOptions extends StObject {
 }
 object DefineContextOptions {
   
-  @scala.inline
-  def apply(): DefineContextOptions = {
+  inline def apply(): DefineContextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefineContextOptions]
   }
   
-  @scala.inline
-  implicit class DefineContextOptionsMutableBuilder[Self <: DefineContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefineContextOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExcelDataType extends StObject
 object ExcelDataType {
   
-  @scala.inline
-  def b: typings.xlsx.xlsxStrings.b = "b".asInstanceOf[typings.xlsx.xlsxStrings.b]
+  inline def b: typings.xlsx.xlsxStrings.b = "b".asInstanceOf[typings.xlsx.xlsxStrings.b]
   
-  @scala.inline
-  def d: typings.xlsx.xlsxStrings.d = "d".asInstanceOf[typings.xlsx.xlsxStrings.d]
+  inline def d: typings.xlsx.xlsxStrings.d = "d".asInstanceOf[typings.xlsx.xlsxStrings.d]
   
-  @scala.inline
-  def e: typings.xlsx.xlsxStrings.e = "e".asInstanceOf[typings.xlsx.xlsxStrings.e]
+  inline def e: typings.xlsx.xlsxStrings.e = "e".asInstanceOf[typings.xlsx.xlsxStrings.e]
   
-  @scala.inline
-  def n: typings.xlsx.xlsxStrings.n = "n".asInstanceOf[typings.xlsx.xlsxStrings.n]
+  inline def n: typings.xlsx.xlsxStrings.n = "n".asInstanceOf[typings.xlsx.xlsxStrings.n]
   
-  @scala.inline
-  def s: typings.xlsx.xlsxStrings.s = "s".asInstanceOf[typings.xlsx.xlsxStrings.s]
+  inline def s: typings.xlsx.xlsxStrings.s = "s".asInstanceOf[typings.xlsx.xlsxStrings.s]
   
-  @scala.inline
-  def z: typings.xlsx.xlsxStrings.z = "z".asInstanceOf[typings.xlsx.xlsxStrings.z]
+  inline def z: typings.xlsx.xlsxStrings.z = "z".asInstanceOf[typings.xlsx.xlsxStrings.z]
 }

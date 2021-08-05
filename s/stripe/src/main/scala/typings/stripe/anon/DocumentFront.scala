@@ -13,16 +13,13 @@ trait DocumentFront extends StObject {
 }
 object DocumentFront {
   
-  @scala.inline
-  def apply(document: Front): DocumentFront = {
+  inline def apply(document: Front): DocumentFront = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentFront]
   }
   
-  @scala.inline
-  implicit class DocumentFrontMutableBuilder[Self <: DocumentFront] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentFront](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Front): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Front): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }
 }

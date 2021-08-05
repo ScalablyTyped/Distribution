@@ -18,22 +18,17 @@ trait ListSubscriptionsByTopicInput extends StObject {
 }
 object ListSubscriptionsByTopicInput {
   
-  @scala.inline
-  def apply(TopicArn: topicARN): ListSubscriptionsByTopicInput = {
+  inline def apply(TopicArn: topicARN): ListSubscriptionsByTopicInput = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSubscriptionsByTopicInput]
   }
   
-  @scala.inline
-  implicit class ListSubscriptionsByTopicInputMutableBuilder[Self <: ListSubscriptionsByTopicInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSubscriptionsByTopicInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

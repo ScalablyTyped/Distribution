@@ -20,20 +20,16 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(patterns: js.Array[String]): Options = {
+    inline def apply(patterns: js.Array[String]): Options = {
       val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     }
   }
   

@@ -11,7 +11,7 @@ class InjectionToken[T] protected () extends StObject {
   def this(_desc: String) = this()
   def this(_desc: String, options: FactoryProvidedIn[T]) = this()
   
-  var _desc: String = js.native
+  /* protected */ var _desc: String = js.native
   
   val ɵprov: js.UndefOr[scala.Nothing] = js.native
 }

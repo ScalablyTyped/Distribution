@@ -39,8 +39,7 @@ object loaderDriverMod {
   }
   object LoaderDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       component: () => HTMLElement,
       exists: () => Boolean,
       getColor: () => LoaderColor,
@@ -59,44 +58,31 @@ object loaderDriverMod {
       __obj.asInstanceOf[LoaderDriver]
     }
     
-    @scala.inline
-    implicit class LoaderDriverMutableBuilder[Self <: LoaderDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderDriver](x: Self) {
       
-      @scala.inline
-      def setComponent(value: () => HTMLElement): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
+      inline def setComponent(value: () => HTMLElement): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetColor(value: () => LoaderColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
+      inline def setGetColor(value: () => LoaderColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasText(value: () => Boolean): Self = StObject.set(x, "hasText", js.Any.fromFunction0(value))
+      inline def setHasText(value: () => Boolean): Self = StObject.set(x, "hasText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsError(value: () => Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction0(value))
+      inline def setIsError(value: () => Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLarge(value: () => Boolean): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
+      inline def setIsLarge(value: () => Boolean): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+      inline def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMedium(value: () => Boolean): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
+      inline def setIsMedium(value: () => Boolean): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSmall(value: () => Boolean): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
+      inline def setIsSmall(value: () => Boolean): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccess(value: () => Boolean): Self = StObject.set(x, "isSuccess", js.Any.fromFunction0(value))
+      inline def setIsSuccess(value: () => Boolean): Self = StObject.set(x, "isSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTiny(value: () => Boolean): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
+      inline def setIsTiny(value: () => Boolean): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
     }
   }
 }

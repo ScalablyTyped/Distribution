@@ -16,20 +16,16 @@ trait SelectorList
 }
 object SelectorList {
   
-  @scala.inline
-  def apply(children: List[CssNode]): SelectorList = {
+  inline def apply(children: List[CssNode]): SelectorList = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SelectorList")
     __obj.asInstanceOf[SelectorList]
   }
   
-  @scala.inline
-  implicit class SelectorListMutableBuilder[Self <: SelectorList] (val x: Self) extends AnyVal {
+  extension [Self <: SelectorList](x: Self) {
     
-    @scala.inline
-    def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.SelectorList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.SelectorList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

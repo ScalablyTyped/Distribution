@@ -12,19 +12,15 @@ trait EnableDragHandle extends StObject {
 }
 object EnableDragHandle {
   
-  @scala.inline
-  def apply(enableDragHandle: Boolean, prefixCls: String): EnableDragHandle = {
+  inline def apply(enableDragHandle: Boolean, prefixCls: String): EnableDragHandle = {
     val __obj = js.Dynamic.literal(enableDragHandle = enableDragHandle.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableDragHandle]
   }
   
-  @scala.inline
-  implicit class EnableDragHandleMutableBuilder[Self <: EnableDragHandle] (val x: Self) extends AnyVal {
+  extension [Self <: EnableDragHandle](x: Self) {
     
-    @scala.inline
-    def setEnableDragHandle(value: Boolean): Self = StObject.set(x, "enableDragHandle", value.asInstanceOf[js.Any])
+    inline def setEnableDragHandle(value: Boolean): Self = StObject.set(x, "enableDragHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

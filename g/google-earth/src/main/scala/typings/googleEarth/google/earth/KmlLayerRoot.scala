@@ -33,8 +33,7 @@ trait KmlLayerRoot
 }
 object KmlLayerRoot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     enableLayerById: (String, Boolean) => Unit,
@@ -93,19 +92,14 @@ object KmlLayerRoot {
     __obj.asInstanceOf[KmlLayerRoot]
   }
   
-  @scala.inline
-  implicit class KmlLayerRootMutableBuilder[Self <: KmlLayerRoot] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLayerRoot](x: Self) {
     
-    @scala.inline
-    def setEnableLayerById(value: (String, Boolean) => Unit): Self = StObject.set(x, "enableLayerById", js.Any.fromFunction2(value))
+    inline def setEnableLayerById(value: (String, Boolean) => Unit): Self = StObject.set(x, "enableLayerById", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDrawOrder(value: () => Double): Self = StObject.set(x, "getDrawOrder", js.Any.fromFunction0(value))
+    inline def setGetDrawOrder(value: () => Double): Self = StObject.set(x, "getDrawOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayerById(value: String => KmlLayer): Self = StObject.set(x, "getLayerById", js.Any.fromFunction1(value))
+    inline def setGetLayerById(value: String => KmlLayer): Self = StObject.set(x, "getLayerById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDrawOrder(value: Double => Unit): Self = StObject.set(x, "setDrawOrder", js.Any.fromFunction1(value))
+    inline def setSetDrawOrder(value: Double => Unit): Self = StObject.set(x, "setDrawOrder", js.Any.fromFunction1(value))
   }
 }

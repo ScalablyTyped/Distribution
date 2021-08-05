@@ -40,16 +40,14 @@ object mod {
     
     def loadModel(): js.Promise[GraphModel] = js.native
     
-    var model: js.Any = js.native
+    /* private */ var model: js.Any = js.native
     
-    var tokenizer: js.Any = js.native
+    /* private */ var tokenizer: js.Any = js.native
   }
   
-  @scala.inline
-  def load(): js.Promise[UniversalSentenceEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[UniversalSentenceEncoder]]
+  inline def load(): js.Promise[UniversalSentenceEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[UniversalSentenceEncoder]]
   
-  @scala.inline
-  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
+  inline def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
   
   @JSImport("@tensorflow-models/universal-sentence-encoder", "version")
   @js.native

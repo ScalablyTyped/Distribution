@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.CollectionReference")
 @js.native
-class CollectionReference[T] protected ()
+/* private */ class CollectionReference[T] ()
   extends StObject
      with typings.firebase.mod.firebase.firestore.Query[T] {
   

@@ -48,61 +48,43 @@ trait ServiceSoftwareOptions extends StObject {
 }
 object ServiceSoftwareOptions {
   
-  @scala.inline
-  def apply(): ServiceSoftwareOptions = {
+  inline def apply(): ServiceSoftwareOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceSoftwareOptions]
   }
   
-  @scala.inline
-  implicit class ServiceSoftwareOptionsMutableBuilder[Self <: ServiceSoftwareOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSoftwareOptions](x: Self) {
     
-    @scala.inline
-    def setAutomatedUpdateDate(value: DeploymentCloseDateTimeStamp): Self = StObject.set(x, "AutomatedUpdateDate", value.asInstanceOf[js.Any])
+    inline def setAutomatedUpdateDate(value: DeploymentCloseDateTimeStamp): Self = StObject.set(x, "AutomatedUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedUpdateDateUndefined: Self = StObject.set(x, "AutomatedUpdateDate", js.undefined)
+    inline def setAutomatedUpdateDateUndefined: Self = StObject.set(x, "AutomatedUpdateDate", js.undefined)
     
-    @scala.inline
-    def setCancellable(value: Boolean): Self = StObject.set(x, "Cancellable", value.asInstanceOf[js.Any])
+    inline def setCancellable(value: Boolean): Self = StObject.set(x, "Cancellable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancellableUndefined: Self = StObject.set(x, "Cancellable", js.undefined)
+    inline def setCancellableUndefined: Self = StObject.set(x, "Cancellable", js.undefined)
     
-    @scala.inline
-    def setCurrentVersion(value: String): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: String): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setNewVersion(value: String): Self = StObject.set(x, "NewVersion", value.asInstanceOf[js.Any])
+    inline def setNewVersion(value: String): Self = StObject.set(x, "NewVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewVersionUndefined: Self = StObject.set(x, "NewVersion", js.undefined)
+    inline def setNewVersionUndefined: Self = StObject.set(x, "NewVersion", js.undefined)
     
-    @scala.inline
-    def setOptionalDeployment(value: Boolean): Self = StObject.set(x, "OptionalDeployment", value.asInstanceOf[js.Any])
+    inline def setOptionalDeployment(value: Boolean): Self = StObject.set(x, "OptionalDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalDeploymentUndefined: Self = StObject.set(x, "OptionalDeployment", js.undefined)
+    inline def setOptionalDeploymentUndefined: Self = StObject.set(x, "OptionalDeployment", js.undefined)
     
-    @scala.inline
-    def setUpdateAvailable(value: Boolean): Self = StObject.set(x, "UpdateAvailable", value.asInstanceOf[js.Any])
+    inline def setUpdateAvailable(value: Boolean): Self = StObject.set(x, "UpdateAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAvailableUndefined: Self = StObject.set(x, "UpdateAvailable", js.undefined)
+    inline def setUpdateAvailableUndefined: Self = StObject.set(x, "UpdateAvailable", js.undefined)
     
-    @scala.inline
-    def setUpdateStatus(value: DeploymentStatus): Self = StObject.set(x, "UpdateStatus", value.asInstanceOf[js.Any])
+    inline def setUpdateStatus(value: DeploymentStatus): Self = StObject.set(x, "UpdateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatusUndefined: Self = StObject.set(x, "UpdateStatus", js.undefined)
+    inline def setUpdateStatusUndefined: Self = StObject.set(x, "UpdateStatus", js.undefined)
   }
 }

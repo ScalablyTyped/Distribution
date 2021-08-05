@@ -38,58 +38,41 @@ trait DescribedSecurityPolicy extends StObject {
 }
 object DescribedSecurityPolicy {
   
-  @scala.inline
-  def apply(SecurityPolicyName: SecurityPolicyName): DescribedSecurityPolicy = {
+  inline def apply(SecurityPolicyName: SecurityPolicyName): DescribedSecurityPolicy = {
     val __obj = js.Dynamic.literal(SecurityPolicyName = SecurityPolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribedSecurityPolicy]
   }
   
-  @scala.inline
-  implicit class DescribedSecurityPolicyMutableBuilder[Self <: DescribedSecurityPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: DescribedSecurityPolicy](x: Self) {
     
-    @scala.inline
-    def setFips(value: Fips): Self = StObject.set(x, "Fips", value.asInstanceOf[js.Any])
+    inline def setFips(value: Fips): Self = StObject.set(x, "Fips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFipsUndefined: Self = StObject.set(x, "Fips", js.undefined)
+    inline def setFipsUndefined: Self = StObject.set(x, "Fips", js.undefined)
     
-    @scala.inline
-    def setSecurityPolicyName(value: SecurityPolicyName): Self = StObject.set(x, "SecurityPolicyName", value.asInstanceOf[js.Any])
+    inline def setSecurityPolicyName(value: SecurityPolicyName): Self = StObject.set(x, "SecurityPolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshCiphers(value: SecurityPolicyOptions): Self = StObject.set(x, "SshCiphers", value.asInstanceOf[js.Any])
+    inline def setSshCiphers(value: SecurityPolicyOptions): Self = StObject.set(x, "SshCiphers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshCiphersUndefined: Self = StObject.set(x, "SshCiphers", js.undefined)
+    inline def setSshCiphersUndefined: Self = StObject.set(x, "SshCiphers", js.undefined)
     
-    @scala.inline
-    def setSshCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshCiphers", js.Array(value :_*))
+    inline def setSshCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshCiphers", js.Array(value :_*))
     
-    @scala.inline
-    def setSshKexs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshKexs", value.asInstanceOf[js.Any])
+    inline def setSshKexs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshKexs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshKexsUndefined: Self = StObject.set(x, "SshKexs", js.undefined)
+    inline def setSshKexsUndefined: Self = StObject.set(x, "SshKexs", js.undefined)
     
-    @scala.inline
-    def setSshKexsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshKexs", js.Array(value :_*))
+    inline def setSshKexsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshKexs", js.Array(value :_*))
     
-    @scala.inline
-    def setSshMacs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshMacs", value.asInstanceOf[js.Any])
+    inline def setSshMacs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshMacs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshMacsUndefined: Self = StObject.set(x, "SshMacs", js.undefined)
+    inline def setSshMacsUndefined: Self = StObject.set(x, "SshMacs", js.undefined)
     
-    @scala.inline
-    def setSshMacsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshMacs", js.Array(value :_*))
+    inline def setSshMacsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshMacs", js.Array(value :_*))
     
-    @scala.inline
-    def setTlsCiphers(value: SecurityPolicyOptions): Self = StObject.set(x, "TlsCiphers", value.asInstanceOf[js.Any])
+    inline def setTlsCiphers(value: SecurityPolicyOptions): Self = StObject.set(x, "TlsCiphers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsCiphersUndefined: Self = StObject.set(x, "TlsCiphers", js.undefined)
+    inline def setTlsCiphersUndefined: Self = StObject.set(x, "TlsCiphers", js.undefined)
     
-    @scala.inline
-    def setTlsCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "TlsCiphers", js.Array(value :_*))
+    inline def setTlsCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "TlsCiphers", js.Array(value :_*))
   }
 }

@@ -28,43 +28,31 @@ trait OutputDestination extends StObject {
 }
 object OutputDestination {
   
-  @scala.inline
-  def apply(): OutputDestination = {
+  inline def apply(): OutputDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputDestination]
   }
   
-  @scala.inline
-  implicit class OutputDestinationMutableBuilder[Self <: OutputDestination] (val x: Self) extends AnyVal {
+  extension [Self <: OutputDestination](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setMediaPackageSettings(value: listOfMediaPackageOutputDestinationSettings): Self = StObject.set(x, "MediaPackageSettings", value.asInstanceOf[js.Any])
+    inline def setMediaPackageSettings(value: listOfMediaPackageOutputDestinationSettings): Self = StObject.set(x, "MediaPackageSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaPackageSettingsUndefined: Self = StObject.set(x, "MediaPackageSettings", js.undefined)
+    inline def setMediaPackageSettingsUndefined: Self = StObject.set(x, "MediaPackageSettings", js.undefined)
     
-    @scala.inline
-    def setMediaPackageSettingsVarargs(value: MediaPackageOutputDestinationSettings*): Self = StObject.set(x, "MediaPackageSettings", js.Array(value :_*))
+    inline def setMediaPackageSettingsVarargs(value: MediaPackageOutputDestinationSettings*): Self = StObject.set(x, "MediaPackageSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setMultiplexSettings(value: MultiplexProgramChannelDestinationSettings): Self = StObject.set(x, "MultiplexSettings", value.asInstanceOf[js.Any])
+    inline def setMultiplexSettings(value: MultiplexProgramChannelDestinationSettings): Self = StObject.set(x, "MultiplexSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexSettingsUndefined: Self = StObject.set(x, "MultiplexSettings", js.undefined)
+    inline def setMultiplexSettingsUndefined: Self = StObject.set(x, "MultiplexSettings", js.undefined)
     
-    @scala.inline
-    def setSettings(value: listOfOutputDestinationSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: listOfOutputDestinationSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: OutputDestinationSettings*): Self = StObject.set(x, "Settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: OutputDestinationSettings*): Self = StObject.set(x, "Settings", js.Array(value :_*))
   }
 }

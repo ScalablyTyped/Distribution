@@ -27,25 +27,19 @@ trait SchemaInterconnectDiagnosticsLinkOpticalPower extends StObject {
 }
 object SchemaInterconnectDiagnosticsLinkOpticalPower {
   
-  @scala.inline
-  def apply(): SchemaInterconnectDiagnosticsLinkOpticalPower = {
+  inline def apply(): SchemaInterconnectDiagnosticsLinkOpticalPower = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterconnectDiagnosticsLinkOpticalPower]
   }
   
-  @scala.inline
-  implicit class SchemaInterconnectDiagnosticsLinkOpticalPowerMutableBuilder[Self <: SchemaInterconnectDiagnosticsLinkOpticalPower] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterconnectDiagnosticsLinkOpticalPower](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

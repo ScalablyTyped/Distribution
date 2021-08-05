@@ -12,19 +12,15 @@ trait SelectionPosition extends StObject {
 }
 object SelectionPosition {
   
-  @scala.inline
-  def apply(column: Double, row: Double): SelectionPosition = {
+  inline def apply(column: Double, row: Double): SelectionPosition = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionPosition]
   }
   
-  @scala.inline
-  implicit class SelectionPositionMutableBuilder[Self <: SelectionPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionPosition](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

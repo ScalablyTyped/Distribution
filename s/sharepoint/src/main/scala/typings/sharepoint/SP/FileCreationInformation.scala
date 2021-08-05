@@ -22,8 +22,7 @@ trait FileCreationInformation
 }
 object FileCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -40,25 +39,18 @@ object FileCreationInformation {
     __obj.asInstanceOf[FileCreationInformation]
   }
   
-  @scala.inline
-  implicit class FileCreationInformationMutableBuilder[Self <: FileCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: FileCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_content(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_content", js.Any.fromFunction0(value))
+    inline def setGet_content(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_content", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_overwrite(value: () => Boolean): Self = StObject.set(x, "get_overwrite", js.Any.fromFunction0(value))
+    inline def setGet_overwrite(value: () => Boolean): Self = StObject.set(x, "get_overwrite", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_content(value: Base64EncodedByteArray => Unit): Self = StObject.set(x, "set_content", js.Any.fromFunction1(value))
+    inline def setSet_content(value: Base64EncodedByteArray => Unit): Self = StObject.set(x, "set_content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_overwrite(value: Boolean => Unit): Self = StObject.set(x, "set_overwrite", js.Any.fromFunction1(value))
+    inline def setSet_overwrite(value: Boolean => Unit): Self = StObject.set(x, "set_overwrite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
   }
 }

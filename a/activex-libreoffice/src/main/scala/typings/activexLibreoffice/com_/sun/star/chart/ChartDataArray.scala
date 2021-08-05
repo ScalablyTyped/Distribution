@@ -17,8 +17,7 @@ trait ChartDataArray
      with XChartDataArray
 object ChartDataArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnDescriptions: SafeArray[String],
     Data: SafeArray[SafeArray[Double]],
     NotANumber: Double,

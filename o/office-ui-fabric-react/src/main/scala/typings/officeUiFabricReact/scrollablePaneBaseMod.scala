@@ -18,43 +18,43 @@ object scrollablePaneBaseMod {
        with IScrollablePane {
     def this(props: IScrollablePaneProps) = this()
     
-    var _addToStickyContainer: js.Any = js.native
+    /* private */ var _addToStickyContainer: js.Any = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _checkStickyStatus: js.Any = js.native
+    /* private */ var _checkStickyStatus: js.Any = js.native
     
-    var _contentContainer: js.Any = js.native
+    /* private */ var _contentContainer: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _getScrollablePaneContext: js.Any = js.native
+    /* private */ var _getScrollablePaneContext: js.Any = js.native
     
-    var _getScrollbarHeight: js.Any = js.native
+    /* private */ var _getScrollbarHeight: js.Any = js.native
     
-    var _getScrollbarWidth: js.Any = js.native
+    /* private */ var _getScrollbarWidth: js.Any = js.native
     
-    var _getStickyContainerStyle: js.Any = js.native
+    /* private */ var _getStickyContainerStyle: js.Any = js.native
     
-    var _mutationObserver: js.Any = js.native
+    /* private */ var _mutationObserver: js.Any = js.native
     
-    var _notifyThrottled: js.Any = js.native
+    /* private */ var _notifyThrottled: js.Any = js.native
     
-    var _onScroll: js.Any = js.native
+    /* private */ var _onScroll: js.Any = js.native
     
-    var _onWindowResize: js.Any = js.native
+    /* private */ var _onWindowResize: js.Any = js.native
     
-    var _removeStickyFromContainers: js.Any = js.native
+    /* private */ var _removeStickyFromContainers: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _stickies: js.Any = js.native
+    /* private */ var _stickies: js.Any = js.native
     
-    var _stickyAboveRef: js.Any = js.native
+    /* private */ var _stickyAboveRef: js.Any = js.native
     
-    var _stickyBelowRef: js.Any = js.native
+    /* private */ var _stickyBelowRef: js.Any = js.native
     
-    var _subscribers: js.Any = js.native
+    /* private */ var _subscribers: js.Any = js.native
     
     def addSticky(sticky: Sticky): Unit = js.native
     
@@ -116,8 +116,7 @@ object scrollablePaneBaseMod {
   }
   object IScrollablePaneState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       scrollbarHeight: Double,
       scrollbarWidth: Double,
       stickyBottomHeight: Double,
@@ -127,20 +126,15 @@ object scrollablePaneBaseMod {
       __obj.asInstanceOf[IScrollablePaneState]
     }
     
-    @scala.inline
-    implicit class IScrollablePaneStateMutableBuilder[Self <: IScrollablePaneState] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollablePaneState](x: Self) {
       
-      @scala.inline
-      def setScrollbarHeight(value: Double): Self = StObject.set(x, "scrollbarHeight", value.asInstanceOf[js.Any])
+      inline def setScrollbarHeight(value: Double): Self = StObject.set(x, "scrollbarHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollbarWidth(value: Double): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
+      inline def setScrollbarWidth(value: Double): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyBottomHeight(value: Double): Self = StObject.set(x, "stickyBottomHeight", value.asInstanceOf[js.Any])
+      inline def setStickyBottomHeight(value: Double): Self = StObject.set(x, "stickyBottomHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyTopHeight(value: Double): Self = StObject.set(x, "stickyTopHeight", value.asInstanceOf[js.Any])
+      inline def setStickyTopHeight(value: Double): Self = StObject.set(x, "stickyTopHeight", value.asInstanceOf[js.Any])
     }
   }
 }

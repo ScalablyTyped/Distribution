@@ -27,21 +27,17 @@ object formatterMod {
   }
   object JSONFormatter {
     
-    @scala.inline
-    def apply(format: js.Any => js.Any, toString_ : js.Any => String): JSONFormatter = {
+    inline def apply(format: js.Any => js.Any, toString_ : js.Any => String): JSONFormatter = {
       val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format))
       __obj.updateDynamic("toString")(js.Any.fromFunction1(toString_))
       __obj.asInstanceOf[JSONFormatter]
     }
     
-    @scala.inline
-    implicit class JSONFormatterMutableBuilder[Self <: JSONFormatter] (val x: Self) extends AnyVal {
+    extension [Self <: JSONFormatter](x: Self) {
       
-      @scala.inline
-      def setFormat(value: js.Any => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: js.Any => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToString_(value: js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+      inline def setToString_(value: js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     }
   }
 }

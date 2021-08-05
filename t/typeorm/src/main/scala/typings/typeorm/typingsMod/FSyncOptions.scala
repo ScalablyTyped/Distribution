@@ -28,37 +28,27 @@ trait FSyncOptions extends StObject {
 }
 object FSyncOptions {
   
-  @scala.inline
-  def apply(): FSyncOptions = {
+  inline def apply(): FSyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FSyncOptions]
   }
   
-  @scala.inline
-  implicit class FSyncOptionsMutableBuilder[Self <: FSyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FSyncOptions](x: Self) {
     
-    @scala.inline
-    def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
+    inline def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
+    inline def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
     
-    @scala.inline
-    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
-    @scala.inline
-    def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
+    inline def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
+    inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

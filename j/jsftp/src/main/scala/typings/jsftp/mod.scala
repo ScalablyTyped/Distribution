@@ -71,50 +71,36 @@ object mod {
   }
   object JsftpOpts {
     
-    @scala.inline
-    def apply(): JsftpOpts = {
+    inline def apply(): JsftpOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsftpOpts]
     }
     
-    @scala.inline
-    implicit class JsftpOptsMutableBuilder[Self <: JsftpOpts] (val x: Self) extends AnyVal {
+    extension [Self <: JsftpOpts](x: Self) {
       
-      @scala.inline
-      def setCreateSocket(value: (/* hasPortHost */ Host, /* firstAction */ js.Function0[js.Object]) => Socket): Self = StObject.set(x, "createSocket", js.Any.fromFunction2(value))
+      inline def setCreateSocket(value: (/* hasPortHost */ Host, /* firstAction */ js.Function0[js.Object]) => Socket): Self = StObject.set(x, "createSocket", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateSocketUndefined: Self = StObject.set(x, "createSocket", js.undefined)
+      inline def setCreateSocketUndefined: Self = StObject.set(x, "createSocket", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setUseList(value: Boolean): Self = StObject.set(x, "useList", value.asInstanceOf[js.Any])
+      inline def setUseList(value: Boolean): Self = StObject.set(x, "useList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseListUndefined: Self = StObject.set(x, "useList", js.undefined)
+      inline def setUseListUndefined: Self = StObject.set(x, "useList", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MutationRecordType extends StObject
 object MutationRecordType {
   
-  @scala.inline
-  def attributes: typings.std.stdStrings.attributes = "attributes".asInstanceOf[typings.std.stdStrings.attributes]
+  inline def attributes: typings.std.stdStrings.attributes = "attributes".asInstanceOf[typings.std.stdStrings.attributes]
   
-  @scala.inline
-  def characterData: typings.std.stdStrings.characterData = "characterData".asInstanceOf[typings.std.stdStrings.characterData]
+  inline def characterData: typings.std.stdStrings.characterData = "characterData".asInstanceOf[typings.std.stdStrings.characterData]
   
-  @scala.inline
-  def childList: typings.std.stdStrings.childList = "childList".asInstanceOf[typings.std.stdStrings.childList]
+  inline def childList: typings.std.stdStrings.childList = "childList".asInstanceOf[typings.std.stdStrings.childList]
 }

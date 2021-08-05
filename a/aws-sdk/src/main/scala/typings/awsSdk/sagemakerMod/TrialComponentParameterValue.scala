@@ -18,25 +18,19 @@ trait TrialComponentParameterValue extends StObject {
 }
 object TrialComponentParameterValue {
   
-  @scala.inline
-  def apply(): TrialComponentParameterValue = {
+  inline def apply(): TrialComponentParameterValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrialComponentParameterValue]
   }
   
-  @scala.inline
-  implicit class TrialComponentParameterValueMutableBuilder[Self <: TrialComponentParameterValue] (val x: Self) extends AnyVal {
+  extension [Self <: TrialComponentParameterValue](x: Self) {
     
-    @scala.inline
-    def setNumberValue(value: DoubleParameterValue): Self = StObject.set(x, "NumberValue", value.asInstanceOf[js.Any])
+    inline def setNumberValue(value: DoubleParameterValue): Self = StObject.set(x, "NumberValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberValueUndefined: Self = StObject.set(x, "NumberValue", js.undefined)
+    inline def setNumberValueUndefined: Self = StObject.set(x, "NumberValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: StringParameterValue): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: StringParameterValue): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
   }
 }

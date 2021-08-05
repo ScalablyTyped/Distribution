@@ -41,13 +41,10 @@ object pbkdf2paramsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait PBKDF2Params extends StObject {
@@ -68,8 +65,7 @@ object pbkdf2paramsMod {
   }
   object PBKDF2Params {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromSchema: js.Any => Unit,
       iterationCount: Double,
       keyLength: Double,
@@ -82,29 +78,21 @@ object pbkdf2paramsMod {
       __obj.asInstanceOf[PBKDF2Params]
     }
     
-    @scala.inline
-    implicit class PBKDF2ParamsMutableBuilder[Self <: PBKDF2Params] (val x: Self) extends AnyVal {
+    extension [Self <: PBKDF2Params](x: Self) {
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
+      inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrf(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "prf", value.asInstanceOf[js.Any])
+      inline def setPrf(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "prf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

@@ -23,22 +23,17 @@ trait DeleteCustomActionTypeInput extends StObject {
 }
 object DeleteCustomActionTypeInput {
   
-  @scala.inline
-  def apply(category: ActionCategory, provider: ActionProvider, version: Version): DeleteCustomActionTypeInput = {
+  inline def apply(category: ActionCategory, provider: ActionProvider, version: Version): DeleteCustomActionTypeInput = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomActionTypeInput]
   }
   
-  @scala.inline
-  implicit class DeleteCustomActionTypeInputMutableBuilder[Self <: DeleteCustomActionTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCustomActionTypeInput](x: Self) {
     
-    @scala.inline
-    def setCategory(value: ActionCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: ActionCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: ActionProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: ActionProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

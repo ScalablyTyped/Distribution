@@ -17,19 +17,15 @@ trait SchemaGooglePrivacyDlpV2DocumentLocation extends StObject {
 }
 object SchemaGooglePrivacyDlpV2DocumentLocation {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2DocumentLocation = {
+  inline def apply(): SchemaGooglePrivacyDlpV2DocumentLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DocumentLocation]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DocumentLocationMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DocumentLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2DocumentLocation](x: Self) {
     
-    @scala.inline
-    def setFileOffset(value: String): Self = StObject.set(x, "fileOffset", value.asInstanceOf[js.Any])
+    inline def setFileOffset(value: String): Self = StObject.set(x, "fileOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileOffsetUndefined: Self = StObject.set(x, "fileOffset", js.undefined)
+    inline def setFileOffsetUndefined: Self = StObject.set(x, "fileOffset", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait RegistrationConfig extends StObject {
 }
 object RegistrationConfig {
   
-  @scala.inline
-  def apply(): RegistrationConfig = {
+  inline def apply(): RegistrationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegistrationConfig]
   }
   
-  @scala.inline
-  implicit class RegistrationConfigMutableBuilder[Self <: RegistrationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RegistrationConfig](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
   }
 }

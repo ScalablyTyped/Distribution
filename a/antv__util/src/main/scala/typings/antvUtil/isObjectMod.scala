@@ -10,6 +10,5 @@ object isObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](value: js.Any): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
+  inline def default[T](value: js.Any): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
 }

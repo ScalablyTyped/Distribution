@@ -23,37 +23,27 @@ trait DescribeAffectedEntitiesForOrganizationResponse extends StObject {
 }
 object DescribeAffectedEntitiesForOrganizationResponse {
   
-  @scala.inline
-  def apply(): DescribeAffectedEntitiesForOrganizationResponse = {
+  inline def apply(): DescribeAffectedEntitiesForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAffectedEntitiesForOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAffectedEntitiesForOrganizationResponseMutableBuilder[Self <: DescribeAffectedEntitiesForOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAffectedEntitiesForOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setEntities(value: EntityList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: EntityList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setFailedSet(value: DescribeAffectedEntitiesForOrganizationFailedSet): Self = StObject.set(x, "failedSet", value.asInstanceOf[js.Any])
+    inline def setFailedSet(value: DescribeAffectedEntitiesForOrganizationFailedSet): Self = StObject.set(x, "failedSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedSetUndefined: Self = StObject.set(x, "failedSet", js.undefined)
+    inline def setFailedSetUndefined: Self = StObject.set(x, "failedSet", js.undefined)
     
-    @scala.inline
-    def setFailedSetVarargs(value: OrganizationAffectedEntitiesErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value :_*))
+    inline def setFailedSetVarargs(value: OrganizationAffectedEntitiesErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait ScriptsPainlessExecute[T]
 }
 object ScriptsPainlessExecute {
   
-  @scala.inline
-  def apply[T](): ScriptsPainlessExecute[T] = {
+  inline def apply[T](): ScriptsPainlessExecute[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptsPainlessExecute[T]]
   }
   
-  @scala.inline
-  implicit class ScriptsPainlessExecuteMutableBuilder[Self <: ScriptsPainlessExecute[?], T] (val x: Self & ScriptsPainlessExecute[T]) extends AnyVal {
+  extension [Self <: ScriptsPainlessExecute[?], T](x: Self & ScriptsPainlessExecute[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

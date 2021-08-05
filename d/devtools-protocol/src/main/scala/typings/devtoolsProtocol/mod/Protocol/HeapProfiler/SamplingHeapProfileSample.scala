@@ -25,22 +25,17 @@ trait SamplingHeapProfileSample extends StObject {
 }
 object SamplingHeapProfileSample {
   
-  @scala.inline
-  def apply(nodeId: integer, ordinal: Double, size: Double): SamplingHeapProfileSample = {
+  inline def apply(nodeId: integer, ordinal: Double, size: Double): SamplingHeapProfileSample = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any], ordinal = ordinal.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingHeapProfileSample]
   }
   
-  @scala.inline
-  implicit class SamplingHeapProfileSampleMutableBuilder[Self <: SamplingHeapProfileSample] (val x: Self) extends AnyVal {
+  extension [Self <: SamplingHeapProfileSample](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: integer): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: integer): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

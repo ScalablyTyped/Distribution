@@ -21,26 +21,20 @@ trait HidCollection extends StObject {
 }
 object HidCollection {
   
-  @scala.inline
-  def apply(id: Double, `type`: HidCollectionType, usageId: Double, usagePage: Double): HidCollection = {
+  inline def apply(id: Double, `type`: HidCollectionType, usageId: Double, usagePage: Double): HidCollection = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], usageId = usageId.asInstanceOf[js.Any], usagePage = usagePage.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HidCollection]
   }
   
-  @scala.inline
-  implicit class HidCollectionMutableBuilder[Self <: HidCollection] (val x: Self) extends AnyVal {
+  extension [Self <: HidCollection](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: HidCollectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HidCollectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
+    inline def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+    inline def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

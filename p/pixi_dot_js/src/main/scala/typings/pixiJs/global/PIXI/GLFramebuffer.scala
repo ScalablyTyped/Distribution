@@ -30,7 +30,7 @@ class GLFramebuffer ()
     * @member {number} PIXI.GLFramebuffer#dirtyFormat
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var dirtyFormat: Double = js.native
   
   /**
@@ -38,7 +38,7 @@ class GLFramebuffer ()
     * @member {number} PIXI.GLFramebuffer#dirtyId
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var dirtyId: Double = js.native
   
   /**
@@ -46,7 +46,7 @@ class GLFramebuffer ()
     * @member {number} PIXI.GLFramebuffer#dirtySize
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var dirtySize: Double = js.native
   
   /**

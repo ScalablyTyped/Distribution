@@ -14,23 +14,18 @@ trait AcornNode extends StObject {
 }
 object AcornNode {
   
-  @scala.inline
-  def apply(end: Double, start: Double, `type`: String): AcornNode = {
+  inline def apply(end: Double, start: Double, `type`: String): AcornNode = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcornNode]
   }
   
-  @scala.inline
-  implicit class AcornNodeMutableBuilder[Self <: AcornNode] (val x: Self) extends AnyVal {
+  extension [Self <: AcornNode](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

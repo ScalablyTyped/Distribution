@@ -11,6 +11,5 @@ object raiseClickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def raiseClick(target: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raiseClick")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def raiseClick(target: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raiseClick")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

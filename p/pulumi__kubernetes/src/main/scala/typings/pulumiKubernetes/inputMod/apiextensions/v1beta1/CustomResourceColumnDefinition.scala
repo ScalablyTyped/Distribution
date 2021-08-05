@@ -42,41 +42,30 @@ trait CustomResourceColumnDefinition extends StObject {
 }
 object CustomResourceColumnDefinition {
   
-  @scala.inline
-  def apply(JSONPath: Input[String], name: Input[String], `type`: Input[String]): CustomResourceColumnDefinition = {
+  inline def apply(JSONPath: Input[String], name: Input[String], `type`: Input[String]): CustomResourceColumnDefinition = {
     val __obj = js.Dynamic.literal(JSONPath = JSONPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceColumnDefinition]
   }
   
-  @scala.inline
-  implicit class CustomResourceColumnDefinitionMutableBuilder[Self <: CustomResourceColumnDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceColumnDefinition](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setJSONPath(value: Input[String]): Self = StObject.set(x, "JSONPath", value.asInstanceOf[js.Any])
+    inline def setJSONPath(value: Input[String]): Self = StObject.set(x, "JSONPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -61,8 +61,7 @@ trait XBitmapPalette
 }
 object XBitmapPalette {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColorSpace: XColorSpace,
     NumberOfEntries: Double,
     acquire: () => Unit,
@@ -77,25 +76,18 @@ object XBitmapPalette {
     __obj.asInstanceOf[XBitmapPalette]
   }
   
-  @scala.inline
-  implicit class XBitmapPaletteMutableBuilder[Self <: XBitmapPalette] (val x: Self) extends AnyVal {
+  extension [Self <: XBitmapPalette](x: Self) {
     
-    @scala.inline
-    def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getColorSpace", js.Any.fromFunction0(value))
+    inline def setGetColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getColorSpace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: (js.Array[SeqEquiv[ColorComponent]], Double) => Boolean): Self = StObject.set(x, "getIndex", js.Any.fromFunction2(value))
+    inline def setGetIndex(value: (js.Array[SeqEquiv[ColorComponent]], Double) => Boolean): Self = StObject.set(x, "getIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetNumberOfEntries(value: () => Double): Self = StObject.set(x, "getNumberOfEntries", js.Any.fromFunction0(value))
+    inline def setGetNumberOfEntries(value: () => Double): Self = StObject.set(x, "getNumberOfEntries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberOfEntries(value: Double): Self = StObject.set(x, "NumberOfEntries", value.asInstanceOf[js.Any])
+    inline def setNumberOfEntries(value: Double): Self = StObject.set(x, "NumberOfEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIndex(value: (SeqEquiv[ColorComponent], Boolean, Double) => Boolean): Self = StObject.set(x, "setIndex", js.Any.fromFunction3(value))
+    inline def setSetIndex(value: (SeqEquiv[ColorComponent], Boolean, Double) => Boolean): Self = StObject.set(x, "setIndex", js.Any.fromFunction3(value))
   }
 }

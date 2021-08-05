@@ -23,8 +23,7 @@ object toggleButtonUniDriverMod {
   }
   object ToggleButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -38,23 +37,17 @@ object toggleButtonUniDriverMod {
       __obj.asInstanceOf[ToggleButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class ToggleButtonUniDriverMutableBuilder[Self <: ToggleButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetLabelPlacement(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelPlacement", js.Any.fromFunction0(value))
+      inline def setGetLabelPlacement(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelPlacement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelValue(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelValue", js.Any.fromFunction0(value))
+      inline def setGetLabelValue(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
+      inline def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsButtonSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonSelected", js.Any.fromFunction0(value))
+      inline def setIsButtonSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonSelected", js.Any.fromFunction0(value))
     }
   }
 }

@@ -12,8 +12,6 @@ object canReportErrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def canReportError(observer: Subject[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReportError")(observer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def canReportError(observer: Subscriber[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReportError")(observer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def canReportError(observer: Subject[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReportError")(observer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def canReportError(observer: Subscriber[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReportError")(observer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -285,8 +285,7 @@ trait DataTypes extends StObject {
 }
 object DataTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ABSTRACT: DataTypeAbstract,
     ARRAY: DataTypeArray,
     BIGINT: DataTypeBigInt,
@@ -327,109 +326,74 @@ object DataTypes {
     __obj.asInstanceOf[DataTypes]
   }
   
-  @scala.inline
-  implicit class DataTypesMutableBuilder[Self <: DataTypes] (val x: Self) extends AnyVal {
+  extension [Self <: DataTypes](x: Self) {
     
-    @scala.inline
-    def setABSTRACT(value: DataTypeAbstract): Self = StObject.set(x, "ABSTRACT", value.asInstanceOf[js.Any])
+    inline def setABSTRACT(value: DataTypeAbstract): Self = StObject.set(x, "ABSTRACT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARRAY(value: DataTypeArray): Self = StObject.set(x, "ARRAY", value.asInstanceOf[js.Any])
+    inline def setARRAY(value: DataTypeArray): Self = StObject.set(x, "ARRAY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBIGINT(value: DataTypeBigInt): Self = StObject.set(x, "BIGINT", value.asInstanceOf[js.Any])
+    inline def setBIGINT(value: DataTypeBigInt): Self = StObject.set(x, "BIGINT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBLOB(value: DataTypeBlob): Self = StObject.set(x, "BLOB", value.asInstanceOf[js.Any])
+    inline def setBLOB(value: DataTypeBlob): Self = StObject.set(x, "BLOB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBOOLEAN(value: DataTypeBoolean): Self = StObject.set(x, "BOOLEAN", value.asInstanceOf[js.Any])
+    inline def setBOOLEAN(value: DataTypeBoolean): Self = StObject.set(x, "BOOLEAN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCHAR(value: DataTypeChar): Self = StObject.set(x, "CHAR", value.asInstanceOf[js.Any])
+    inline def setCHAR(value: DataTypeChar): Self = StObject.set(x, "CHAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDATE(value: DataTypeDate): Self = StObject.set(x, "DATE", value.asInstanceOf[js.Any])
+    inline def setDATE(value: DataTypeDate): Self = StObject.set(x, "DATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDATEONLY(value: DataTypeDateOnly): Self = StObject.set(x, "DATEONLY", value.asInstanceOf[js.Any])
+    inline def setDATEONLY(value: DataTypeDateOnly): Self = StObject.set(x, "DATEONLY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDECIMAL(value: DataTypeDecimal): Self = StObject.set(x, "DECIMAL", value.asInstanceOf[js.Any])
+    inline def setDECIMAL(value: DataTypeDecimal): Self = StObject.set(x, "DECIMAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOUBLE(value: DataTypeDouble): Self = StObject.set(x, "DOUBLE", value.asInstanceOf[js.Any])
+    inline def setDOUBLE(value: DataTypeDouble): Self = StObject.set(x, "DOUBLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDOUBLE PRECISION`(value: DataTypeDouble): Self = StObject.set(x, "DOUBLE PRECISION", value.asInstanceOf[js.Any])
+    inline def `setDOUBLE PRECISION`(value: DataTypeDouble): Self = StObject.set(x, "DOUBLE PRECISION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENUM(value: DataTypeEnum): Self = StObject.set(x, "ENUM", value.asInstanceOf[js.Any])
+    inline def setENUM(value: DataTypeEnum): Self = StObject.set(x, "ENUM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFLOAT(value: DataTypeFloat): Self = StObject.set(x, "FLOAT", value.asInstanceOf[js.Any])
+    inline def setFLOAT(value: DataTypeFloat): Self = StObject.set(x, "FLOAT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGEOMETRY(value: DataTypeGeometry): Self = StObject.set(x, "GEOMETRY", value.asInstanceOf[js.Any])
+    inline def setGEOMETRY(value: DataTypeGeometry): Self = StObject.set(x, "GEOMETRY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHSTORE(value: DataTypeHStore): Self = StObject.set(x, "HSTORE", value.asInstanceOf[js.Any])
+    inline def setHSTORE(value: DataTypeHStore): Self = StObject.set(x, "HSTORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINTEGER(value: DataTypeInteger): Self = StObject.set(x, "INTEGER", value.asInstanceOf[js.Any])
+    inline def setINTEGER(value: DataTypeInteger): Self = StObject.set(x, "INTEGER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJSON(value: DataTypeJSONType): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+    inline def setJSON(value: DataTypeJSONType): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJSONB(value: DataTypeJSONB): Self = StObject.set(x, "JSONB", value.asInstanceOf[js.Any])
+    inline def setJSONB(value: DataTypeJSONB): Self = StObject.set(x, "JSONB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIUMINT(value: DataTypeMediumInt): Self = StObject.set(x, "MEDIUMINT", value.asInstanceOf[js.Any])
+    inline def setMEDIUMINT(value: DataTypeMediumInt): Self = StObject.set(x, "MEDIUMINT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNONE(value: DataTypeVirtual): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: DataTypeVirtual): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOW(value: DataTypeNow): Self = StObject.set(x, "NOW", value.asInstanceOf[js.Any])
+    inline def setNOW(value: DataTypeNow): Self = StObject.set(x, "NOW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMBER(value: DataTypeNumber): Self = StObject.set(x, "NUMBER", value.asInstanceOf[js.Any])
+    inline def setNUMBER(value: DataTypeNumber): Self = StObject.set(x, "NUMBER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMERIC(value: DataTypeDecimal): Self = StObject.set(x, "NUMERIC", value.asInstanceOf[js.Any])
+    inline def setNUMERIC(value: DataTypeDecimal): Self = StObject.set(x, "NUMERIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRANGE(value: DataTypeRange): Self = StObject.set(x, "RANGE", value.asInstanceOf[js.Any])
+    inline def setRANGE(value: DataTypeRange): Self = StObject.set(x, "RANGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREAL(value: DataTypeReal): Self = StObject.set(x, "REAL", value.asInstanceOf[js.Any])
+    inline def setREAL(value: DataTypeReal): Self = StObject.set(x, "REAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMALLINT(value: DataTypeSmallInt): Self = StObject.set(x, "SMALLINT", value.asInstanceOf[js.Any])
+    inline def setSMALLINT(value: DataTypeSmallInt): Self = StObject.set(x, "SMALLINT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTRING(value: DataTypeString): Self = StObject.set(x, "STRING", value.asInstanceOf[js.Any])
+    inline def setSTRING(value: DataTypeString): Self = StObject.set(x, "STRING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEXT(value: DataTypeText): Self = StObject.set(x, "TEXT", value.asInstanceOf[js.Any])
+    inline def setTEXT(value: DataTypeText): Self = StObject.set(x, "TEXT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTIME(value: DataTypeTime): Self = StObject.set(x, "TIME", value.asInstanceOf[js.Any])
+    inline def setTIME(value: DataTypeTime): Self = StObject.set(x, "TIME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTINYINT(value: DataTypeTinyInt): Self = StObject.set(x, "TINYINT", value.asInstanceOf[js.Any])
+    inline def setTINYINT(value: DataTypeTinyInt): Self = StObject.set(x, "TINYINT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUUID(value: DataTypeUUID): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
+    inline def setUUID(value: DataTypeUUID): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUUIDV1(value: DataTypeUUIDv1): Self = StObject.set(x, "UUIDV1", value.asInstanceOf[js.Any])
+    inline def setUUIDV1(value: DataTypeUUIDv1): Self = StObject.set(x, "UUIDV1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUUIDV4(value: DataTypeUUIDv4): Self = StObject.set(x, "UUIDV4", value.asInstanceOf[js.Any])
+    inline def setUUIDV4(value: DataTypeUUIDv4): Self = StObject.set(x, "UUIDV4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVIRTUAL(value: DataTypeVirtual): Self = StObject.set(x, "VIRTUAL", value.asInstanceOf[js.Any])
+    inline def setVIRTUAL(value: DataTypeVirtual): Self = StObject.set(x, "VIRTUAL", value.asInstanceOf[js.Any])
   }
 }

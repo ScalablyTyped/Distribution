@@ -27,8 +27,7 @@ trait BaseTileLayerFetchTileOptions
 }
 object BaseTileLayerFetchTileOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -37,19 +36,14 @@ object BaseTileLayerFetchTileOptions {
     __obj.asInstanceOf[BaseTileLayerFetchTileOptions]
   }
   
-  @scala.inline
-  implicit class BaseTileLayerFetchTileOptionsMutableBuilder[Self <: BaseTileLayerFetchTileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseTileLayerFetchTileOptions](x: Self) {
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait SchemaThreatEntryMetadata extends StObject {
 }
 object SchemaThreatEntryMetadata {
   
-  @scala.inline
-  def apply(): SchemaThreatEntryMetadata = {
+  inline def apply(): SchemaThreatEntryMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaThreatEntryMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaThreatEntryMetadataMutableBuilder[Self <: SchemaThreatEntryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaThreatEntryMetadata](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[SchemaMetadataEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[SchemaMetadataEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: SchemaMetadataEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaMetadataEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

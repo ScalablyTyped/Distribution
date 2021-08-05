@@ -15,22 +15,17 @@ trait BoardCardRuleSettings extends StObject {
 }
 object BoardCardRuleSettings {
   
-  @scala.inline
-  def apply(_links: js.Any, rules: StringDictionary[js.Array[Rule]], url: String): BoardCardRuleSettings = {
+  inline def apply(_links: js.Any, rules: StringDictionary[js.Array[Rule]], url: String): BoardCardRuleSettings = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardCardRuleSettings]
   }
   
-  @scala.inline
-  implicit class BoardCardRuleSettingsMutableBuilder[Self <: BoardCardRuleSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BoardCardRuleSettings](x: Self) {
     
-    @scala.inline
-    def setRules(value: StringDictionary[js.Array[Rule]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: StringDictionary[js.Array[Rule]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

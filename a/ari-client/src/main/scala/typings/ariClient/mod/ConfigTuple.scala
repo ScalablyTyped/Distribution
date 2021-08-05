@@ -18,19 +18,15 @@ trait ConfigTuple extends StObject {
 }
 object ConfigTuple {
   
-  @scala.inline
-  def apply(attribute: String, value: String): ConfigTuple = {
+  inline def apply(attribute: String, value: String): ConfigTuple = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigTuple]
   }
   
-  @scala.inline
-  implicit class ConfigTupleMutableBuilder[Self <: ConfigTuple] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigTuple](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

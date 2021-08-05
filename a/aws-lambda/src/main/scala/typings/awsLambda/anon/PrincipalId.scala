@@ -10,16 +10,13 @@ trait PrincipalId extends StObject {
 }
 object PrincipalId {
   
-  @scala.inline
-  def apply(principalId: String): PrincipalId = {
+  inline def apply(principalId: String): PrincipalId = {
     val __obj = js.Dynamic.literal(principalId = principalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrincipalId]
   }
   
-  @scala.inline
-  implicit class PrincipalIdMutableBuilder[Self <: PrincipalId] (val x: Self) extends AnyVal {
+  extension [Self <: PrincipalId](x: Self) {
     
-    @scala.inline
-    def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
   }
 }

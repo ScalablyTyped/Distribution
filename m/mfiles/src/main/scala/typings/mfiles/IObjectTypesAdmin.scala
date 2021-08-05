@@ -12,19 +12,15 @@ trait IObjectTypesAdmin extends StObject {
 }
 object IObjectTypesAdmin {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => IObjectTypeAdmin): IObjectTypesAdmin = {
+  inline def apply(Count: Double, Item: Double => IObjectTypeAdmin): IObjectTypesAdmin = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IObjectTypesAdmin]
   }
   
-  @scala.inline
-  implicit class IObjectTypesAdminMutableBuilder[Self <: IObjectTypesAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectTypesAdmin](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IObjectTypeAdmin): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IObjectTypeAdmin): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

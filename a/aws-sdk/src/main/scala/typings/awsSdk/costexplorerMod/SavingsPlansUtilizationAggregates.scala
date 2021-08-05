@@ -23,28 +23,21 @@ trait SavingsPlansUtilizationAggregates extends StObject {
 }
 object SavingsPlansUtilizationAggregates {
   
-  @scala.inline
-  def apply(Utilization: SavingsPlansUtilization): SavingsPlansUtilizationAggregates = {
+  inline def apply(Utilization: SavingsPlansUtilization): SavingsPlansUtilizationAggregates = {
     val __obj = js.Dynamic.literal(Utilization = Utilization.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansUtilizationAggregates]
   }
   
-  @scala.inline
-  implicit class SavingsPlansUtilizationAggregatesMutableBuilder[Self <: SavingsPlansUtilizationAggregates] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansUtilizationAggregates](x: Self) {
     
-    @scala.inline
-    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
+    inline def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
+    inline def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
     
-    @scala.inline
-    def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
+    inline def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
+    inline def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
     
-    @scala.inline
-    def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
+    inline def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
   }
 }

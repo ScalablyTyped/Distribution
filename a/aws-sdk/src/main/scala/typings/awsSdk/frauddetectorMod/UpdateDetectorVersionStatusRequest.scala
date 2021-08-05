@@ -23,22 +23,17 @@ trait UpdateDetectorVersionStatusRequest extends StObject {
 }
 object UpdateDetectorVersionStatusRequest {
   
-  @scala.inline
-  def apply(detectorId: identifier, detectorVersionId: wholeNumberVersionString, status: DetectorVersionStatus): UpdateDetectorVersionStatusRequest = {
+  inline def apply(detectorId: identifier, detectorVersionId: wholeNumberVersionString, status: DetectorVersionStatus): UpdateDetectorVersionStatusRequest = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], detectorVersionId = detectorVersionId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDetectorVersionStatusRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDetectorVersionStatusRequestMutableBuilder[Self <: UpdateDetectorVersionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDetectorVersionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
+    inline def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DetectorVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DetectorVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -39,8 +39,7 @@ object mod {
   }
   object Frecency {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       save: SearchQuery[T] => Unit,
       sort: (/* arg */ KeepScores[T]) | (/* arg */ SearchResults[T]) => js.Array[(T & FrecencyScore) | T]
     ): Frecency[T] = {
@@ -48,14 +47,11 @@ object mod {
       __obj.asInstanceOf[Frecency[T]]
     }
     
-    @scala.inline
-    implicit class FrecencyMutableBuilder[Self <: Frecency[?], T] (val x: Self & Frecency[T]) extends AnyVal {
+    extension [Self <: Frecency[?], T](x: Self & Frecency[T]) {
       
-      @scala.inline
-      def setSave(value: SearchQuery[T] => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setSave(value: SearchQuery[T] => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSort(
+      inline def setSort(
         value: (/* arg */ KeepScores[T]) | (/* arg */ SearchResults[T]) => js.Array[(T & FrecencyScore) | T]
       ): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     }

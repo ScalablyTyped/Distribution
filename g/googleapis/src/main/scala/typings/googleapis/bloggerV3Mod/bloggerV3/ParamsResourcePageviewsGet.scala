@@ -29,34 +29,25 @@ trait ParamsResourcePageviewsGet
 }
 object ParamsResourcePageviewsGet {
   
-  @scala.inline
-  def apply(): ParamsResourcePageviewsGet = {
+  inline def apply(): ParamsResourcePageviewsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePageviewsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePageviewsGetMutableBuilder[Self <: ParamsResourcePageviewsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePageviewsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
+    inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
+    inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
-    @scala.inline
-    def setRange(value: js.Array[String]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Array[String]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRangeVarargs(value: String*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: String*): Self = StObject.set(x, "range", js.Array(value :_*))
   }
 }

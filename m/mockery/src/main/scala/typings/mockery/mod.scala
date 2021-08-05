@@ -10,51 +10,35 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deregisterAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAll")().asInstanceOf[Unit]
+  inline def deregisterAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAll")().asInstanceOf[Unit]
   
-  @scala.inline
-  def deregisterAllowable(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAllowable")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deregisterAllowable(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAllowable")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def deregisterAllowables(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAllowables")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deregisterAllowables(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAllowables")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def deregisterMock(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterMock")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deregisterMock(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterMock")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def deregisterSubstitute(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterSubstitute")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deregisterSubstitute(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterSubstitute")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
+  inline def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
-  @scala.inline
-  def enable(args: MockeryEnableArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(args: MockeryEnableArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerAllowable(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowable")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def registerAllowable(name: String, unhook: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowable")(name.asInstanceOf[js.Any], unhook.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerAllowable(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowable")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerAllowable(name: String, unhook: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowable")(name.asInstanceOf[js.Any], unhook.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerAllowables(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowables")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerAllowables(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowables")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerMock(name: String, mock: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMock")(name.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerMock(name: String, mock: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMock")(name.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerSubstitute(name: String, substitute: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSubstitute")(name.asInstanceOf[js.Any], substitute.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerSubstitute(name: String, substitute: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSubstitute")(name.asInstanceOf[js.Any], substitute.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def resetCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCache")().asInstanceOf[Unit]
+  inline def resetCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCache")().asInstanceOf[Unit]
   
-  @scala.inline
-  def warnOnReplace(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnReplace")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warnOnReplace(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnReplace")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def warnOnUnregistered(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnUnregistered")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warnOnUnregistered(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnUnregistered")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait MockeryEnableArgs extends StObject {
     
@@ -66,32 +50,24 @@ object mod {
   }
   object MockeryEnableArgs {
     
-    @scala.inline
-    def apply(): MockeryEnableArgs = {
+    inline def apply(): MockeryEnableArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockeryEnableArgs]
     }
     
-    @scala.inline
-    implicit class MockeryEnableArgsMutableBuilder[Self <: MockeryEnableArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MockeryEnableArgs](x: Self) {
       
-      @scala.inline
-      def setUseCleanCache(value: Boolean): Self = StObject.set(x, "useCleanCache", value.asInstanceOf[js.Any])
+      inline def setUseCleanCache(value: Boolean): Self = StObject.set(x, "useCleanCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCleanCacheUndefined: Self = StObject.set(x, "useCleanCache", js.undefined)
+      inline def setUseCleanCacheUndefined: Self = StObject.set(x, "useCleanCache", js.undefined)
       
-      @scala.inline
-      def setWarnOnReplace(value: Boolean): Self = StObject.set(x, "warnOnReplace", value.asInstanceOf[js.Any])
+      inline def setWarnOnReplace(value: Boolean): Self = StObject.set(x, "warnOnReplace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnOnReplaceUndefined: Self = StObject.set(x, "warnOnReplace", js.undefined)
+      inline def setWarnOnReplaceUndefined: Self = StObject.set(x, "warnOnReplace", js.undefined)
       
-      @scala.inline
-      def setWarnOnUnregistered(value: Boolean): Self = StObject.set(x, "warnOnUnregistered", value.asInstanceOf[js.Any])
+      inline def setWarnOnUnregistered(value: Boolean): Self = StObject.set(x, "warnOnUnregistered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnOnUnregisteredUndefined: Self = StObject.set(x, "warnOnUnregistered", js.undefined)
+      inline def setWarnOnUnregisteredUndefined: Self = StObject.set(x, "warnOnUnregistered", js.undefined)
     }
   }
 }

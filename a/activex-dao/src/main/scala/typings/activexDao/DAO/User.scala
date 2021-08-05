@@ -12,7 +12,7 @@ trait User extends StObject {
   def CreateGroup(Name: String, PID: String): Group = js.native
   def CreateGroup(Name: Unit, PID: String): Group = js.native
   
-  @JSName("DAO.User_typekey")
+  /* private */ @JSName("DAO.User_typekey")
   var DAODotUser_typekey: User = js.native
   
   def Groups(Item: String): Group = js.native

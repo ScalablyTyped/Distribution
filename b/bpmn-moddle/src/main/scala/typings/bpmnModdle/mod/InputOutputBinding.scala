@@ -16,8 +16,7 @@ trait InputOutputBinding
 }
 object InputOutputBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     inputDataRef: InputSet,
@@ -28,16 +27,12 @@ object InputOutputBinding {
     __obj.asInstanceOf[InputOutputBinding]
   }
   
-  @scala.inline
-  implicit class InputOutputBindingMutableBuilder[Self <: InputOutputBinding] (val x: Self) extends AnyVal {
+  extension [Self <: InputOutputBinding](x: Self) {
     
-    @scala.inline
-    def setInputDataRef(value: InputSet): Self = StObject.set(x, "inputDataRef", value.asInstanceOf[js.Any])
+    inline def setInputDataRef(value: InputSet): Self = StObject.set(x, "inputDataRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationRef(value: Operation): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
+    inline def setOperationRef(value: Operation): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDataRef(value: OutputSet): Self = StObject.set(x, "outputDataRef", value.asInstanceOf[js.Any])
+    inline def setOutputDataRef(value: OutputSet): Self = StObject.set(x, "outputDataRef", value.asInstanceOf[js.Any])
   }
 }

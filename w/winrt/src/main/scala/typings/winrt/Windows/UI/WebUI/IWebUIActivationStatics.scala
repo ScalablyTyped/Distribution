@@ -16,25 +16,19 @@ trait IWebUIActivationStatics extends StObject {
 }
 object IWebUIActivationStatics {
   
-  @scala.inline
-  def apply(onactivated: js.Any, onnavigated: js.Any, onresuming: js.Any, onsuspending: js.Any): IWebUIActivationStatics = {
+  inline def apply(onactivated: js.Any, onnavigated: js.Any, onresuming: js.Any, onsuspending: js.Any): IWebUIActivationStatics = {
     val __obj = js.Dynamic.literal(onactivated = onactivated.asInstanceOf[js.Any], onnavigated = onnavigated.asInstanceOf[js.Any], onresuming = onresuming.asInstanceOf[js.Any], onsuspending = onsuspending.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebUIActivationStatics]
   }
   
-  @scala.inline
-  implicit class IWebUIActivationStaticsMutableBuilder[Self <: IWebUIActivationStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IWebUIActivationStatics](x: Self) {
     
-    @scala.inline
-    def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
+    inline def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnnavigated(value: js.Any): Self = StObject.set(x, "onnavigated", value.asInstanceOf[js.Any])
+    inline def setOnnavigated(value: js.Any): Self = StObject.set(x, "onnavigated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnresuming(value: js.Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
+    inline def setOnresuming(value: js.Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsuspending(value: js.Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
+    inline def setOnsuspending(value: js.Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
   }
 }

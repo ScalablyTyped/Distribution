@@ -16,8 +16,7 @@ trait GetLaunchTemplateBlockDeviceMapping extends StObject {
 }
 object GetLaunchTemplateBlockDeviceMapping {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceName: String,
     ebs: js.Array[GetLaunchTemplateBlockDeviceMappingEb],
     noDevice: String,
@@ -27,22 +26,16 @@ object GetLaunchTemplateBlockDeviceMapping {
     __obj.asInstanceOf[GetLaunchTemplateBlockDeviceMapping]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateBlockDeviceMappingMutableBuilder[Self <: GetLaunchTemplateBlockDeviceMapping] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateBlockDeviceMapping](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbs(value: js.Array[GetLaunchTemplateBlockDeviceMappingEb]): Self = StObject.set(x, "ebs", value.asInstanceOf[js.Any])
+    inline def setEbs(value: js.Array[GetLaunchTemplateBlockDeviceMappingEb]): Self = StObject.set(x, "ebs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsVarargs(value: GetLaunchTemplateBlockDeviceMappingEb*): Self = StObject.set(x, "ebs", js.Array(value :_*))
+    inline def setEbsVarargs(value: GetLaunchTemplateBlockDeviceMappingEb*): Self = StObject.set(x, "ebs", js.Array(value :_*))
     
-    @scala.inline
-    def setNoDevice(value: String): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
+    inline def setNoDevice(value: String): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualName(value: String): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
+    inline def setVirtualName(value: String): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
   }
 }

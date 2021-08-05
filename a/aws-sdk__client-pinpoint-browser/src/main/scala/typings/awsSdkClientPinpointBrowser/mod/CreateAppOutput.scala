@@ -11,8 +11,7 @@ trait CreateAppOutput
      with typings.awsSdkClientPinpointBrowser.typesCreateAppOutputMod.CreateAppOutput
 object CreateAppOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): CreateAppOutput = {
+  inline def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): CreateAppOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationResponse = ApplicationResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAppOutput]
   }

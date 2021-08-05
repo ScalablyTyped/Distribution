@@ -12,16 +12,13 @@ trait RsaPssParams
 }
 object RsaPssParams {
   
-  @scala.inline
-  def apply(name: java.lang.String, saltLength: Double): RsaPssParams = {
+  inline def apply(name: java.lang.String, saltLength: Double): RsaPssParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], saltLength = saltLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaPssParams]
   }
   
-  @scala.inline
-  implicit class RsaPssParamsMutableBuilder[Self <: RsaPssParams] (val x: Self) extends AnyVal {
+  extension [Self <: RsaPssParams](x: Self) {
     
-    @scala.inline
-    def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
+    inline def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
   }
 }

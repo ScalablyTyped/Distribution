@@ -18,25 +18,19 @@ trait S3AccessControlList extends StObject {
 }
 object S3AccessControlList {
   
-  @scala.inline
-  def apply(Owner: S3ObjectOwner): S3AccessControlList = {
+  inline def apply(Owner: S3ObjectOwner): S3AccessControlList = {
     val __obj = js.Dynamic.literal(Owner = Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3AccessControlList]
   }
   
-  @scala.inline
-  implicit class S3AccessControlListMutableBuilder[Self <: S3AccessControlList] (val x: Self) extends AnyVal {
+  extension [Self <: S3AccessControlList](x: Self) {
     
-    @scala.inline
-    def setGrants(value: S3GrantList): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
+    inline def setGrants(value: S3GrantList): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
+    inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
     
-    @scala.inline
-    def setGrantsVarargs(value: S3Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+    inline def setGrantsVarargs(value: S3Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: S3ObjectOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: S3ObjectOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
   }
 }

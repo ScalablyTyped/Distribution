@@ -23,20 +23,16 @@ object configMod extends Shortcut {
   }
   object AbstractConfigSet {
     
-    @scala.inline
-    def apply(colors: AbstractConfigSetColors, levels: AbstractConfigSetLevels): AbstractConfigSet = {
+    inline def apply(colors: AbstractConfigSetColors, levels: AbstractConfigSetLevels): AbstractConfigSet = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbstractConfigSet]
     }
     
-    @scala.inline
-    implicit class AbstractConfigSetMutableBuilder[Self <: AbstractConfigSet] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractConfigSet](x: Self) {
       
-      @scala.inline
-      def setColors(value: AbstractConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: AbstractConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevels(value: AbstractConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: AbstractConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,8 +66,7 @@ object configMod extends Shortcut {
   }
   object CliConfigSetColors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: String | js.Array[String],
       debug: String | js.Array[String],
       error: String | js.Array[String],
@@ -87,68 +82,47 @@ object configMod extends Shortcut {
       __obj.asInstanceOf[CliConfigSetColors]
     }
     
-    @scala.inline
-    implicit class CliConfigSetColorsMutableBuilder[Self <: CliConfigSetColors] (val x: Self) extends AnyVal {
+    extension [Self <: CliConfigSetColors](x: Self) {
       
-      @scala.inline
-      def setData(value: String | js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
       
-      @scala.inline
-      def setHelp(value: String | js.Array[String]): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: String | js.Array[String]): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpVarargs(value: String*): Self = StObject.set(x, "help", js.Array(value :_*))
+      inline def setHelpVarargs(value: String*): Self = StObject.set(x, "help", js.Array(value :_*))
       
-      @scala.inline
-      def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
       
-      @scala.inline
-      def setInput(value: String | js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String | js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+      inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
       
-      @scala.inline
-      def setPrompt(value: String | js.Array[String]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String | js.Array[String]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptVarargs(value: String*): Self = StObject.set(x, "prompt", js.Array(value :_*))
+      inline def setPromptVarargs(value: String*): Self = StObject.set(x, "prompt", js.Array(value :_*))
       
-      @scala.inline
-      def setSilly(value: String | js.Array[String]): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
+      inline def setSilly(value: String | js.Array[String]): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value :_*))
+      inline def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value :_*))
       
-      @scala.inline
-      def setVerbose(value: String | js.Array[String]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: String | js.Array[String]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value :_*))
+      inline def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value :_*))
       
-      @scala.inline
-      def setWarn(value: String | js.Array[String]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: String | js.Array[String]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value :_*))
     }
   }
   
@@ -178,8 +152,7 @@ object configMod extends Shortcut {
   }
   object CliConfigSetLevels {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: Double,
       debug: Double,
       error: Double,
@@ -195,38 +168,27 @@ object configMod extends Shortcut {
       __obj.asInstanceOf[CliConfigSetLevels]
     }
     
-    @scala.inline
-    implicit class CliConfigSetLevelsMutableBuilder[Self <: CliConfigSetLevels] (val x: Self) extends AnyVal {
+    extension [Self <: CliConfigSetLevels](x: Self) {
       
-      @scala.inline
-      def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelp(value: Double): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: Double): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: Double): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Double): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt(value: Double): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: Double): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilly(value: Double): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
+      inline def setSilly(value: Double): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: Double): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Double): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,8 +206,7 @@ object configMod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addColors: AbstractConfigSetColors => Unit,
       allColors: AbstractConfigSetColors,
       cli: Colors,
@@ -256,23 +217,17 @@ object configMod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAddColors(value: AbstractConfigSetColors => Unit): Self = StObject.set(x, "addColors", js.Any.fromFunction1(value))
+      inline def setAddColors(value: AbstractConfigSetColors => Unit): Self = StObject.set(x, "addColors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAllColors(value: AbstractConfigSetColors): Self = StObject.set(x, "allColors", value.asInstanceOf[js.Any])
+      inline def setAllColors(value: AbstractConfigSetColors): Self = StObject.set(x, "allColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCli(value: Colors): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
+      inline def setCli(value: Colors): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNpm(value: Levels): Self = StObject.set(x, "npm", value.asInstanceOf[js.Any])
+      inline def setNpm(value: Levels): Self = StObject.set(x, "npm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyslog(value: ColorsLevels): Self = StObject.set(x, "syslog", value.asInstanceOf[js.Any])
+      inline def setSyslog(value: ColorsLevels): Self = StObject.set(x, "syslog", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,8 +249,7 @@ object configMod extends Shortcut {
   }
   object NpmConfigSetColors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: String | js.Array[String],
       error: String | js.Array[String],
       info: String | js.Array[String],
@@ -307,44 +261,31 @@ object configMod extends Shortcut {
       __obj.asInstanceOf[NpmConfigSetColors]
     }
     
-    @scala.inline
-    implicit class NpmConfigSetColorsMutableBuilder[Self <: NpmConfigSetColors] (val x: Self) extends AnyVal {
+    extension [Self <: NpmConfigSetColors](x: Self) {
       
-      @scala.inline
-      def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
       
-      @scala.inline
-      def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
       
-      @scala.inline
-      def setSilly(value: String | js.Array[String]): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
+      inline def setSilly(value: String | js.Array[String]): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value :_*))
+      inline def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value :_*))
       
-      @scala.inline
-      def setVerbose(value: String | js.Array[String]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: String | js.Array[String]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value :_*))
+      inline def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value :_*))
       
-      @scala.inline
-      def setWarn(value: String | js.Array[String]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: String | js.Array[String]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value :_*))
     }
   }
   
@@ -368,8 +309,7 @@ object configMod extends Shortcut {
   }
   object NpmConfigSetLevels {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: Double,
       error: Double,
       http: Double,
@@ -382,29 +322,21 @@ object configMod extends Shortcut {
       __obj.asInstanceOf[NpmConfigSetLevels]
     }
     
-    @scala.inline
-    implicit class NpmConfigSetLevelsMutableBuilder[Self <: NpmConfigSetLevels] (val x: Self) extends AnyVal {
+    extension [Self <: NpmConfigSetLevels](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttp(value: Double): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Double): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilly(value: Double): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
+      inline def setSilly(value: Double): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: Double): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Double): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -430,8 +362,7 @@ object configMod extends Shortcut {
   }
   object SyslogConfigSetColors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alert: String | js.Array[String],
       crit: String | js.Array[String],
       debug: String | js.Array[String],
@@ -445,56 +376,39 @@ object configMod extends Shortcut {
       __obj.asInstanceOf[SyslogConfigSetColors]
     }
     
-    @scala.inline
-    implicit class SyslogConfigSetColorsMutableBuilder[Self <: SyslogConfigSetColors] (val x: Self) extends AnyVal {
+    extension [Self <: SyslogConfigSetColors](x: Self) {
       
-      @scala.inline
-      def setAlert(value: String | js.Array[String]): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: String | js.Array[String]): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlertVarargs(value: String*): Self = StObject.set(x, "alert", js.Array(value :_*))
+      inline def setAlertVarargs(value: String*): Self = StObject.set(x, "alert", js.Array(value :_*))
       
-      @scala.inline
-      def setCrit(value: String | js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: String | js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
       
-      @scala.inline
-      def setEmerg(value: String | js.Array[String]): Self = StObject.set(x, "emerg", value.asInstanceOf[js.Any])
+      inline def setEmerg(value: String | js.Array[String]): Self = StObject.set(x, "emerg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmergVarargs(value: String*): Self = StObject.set(x, "emerg", js.Array(value :_*))
+      inline def setEmergVarargs(value: String*): Self = StObject.set(x, "emerg", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
       
-      @scala.inline
-      def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
       
-      @scala.inline
-      def setNotice(value: String | js.Array[String]): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
+      inline def setNotice(value: String | js.Array[String]): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoticeVarargs(value: String*): Self = StObject.set(x, "notice", js.Array(value :_*))
+      inline def setNoticeVarargs(value: String*): Self = StObject.set(x, "notice", js.Array(value :_*))
       
-      @scala.inline
-      def setWarning(value: String | js.Array[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: String | js.Array[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value :_*))
+      inline def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value :_*))
     }
   }
   
@@ -520,8 +434,7 @@ object configMod extends Shortcut {
   }
   object SyslogConfigSetLevels {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alert: Double,
       crit: Double,
       debug: Double,
@@ -535,32 +448,23 @@ object configMod extends Shortcut {
       __obj.asInstanceOf[SyslogConfigSetLevels]
     }
     
-    @scala.inline
-    implicit class SyslogConfigSetLevelsMutableBuilder[Self <: SyslogConfigSetLevels] (val x: Self) extends AnyVal {
+    extension [Self <: SyslogConfigSetLevels](x: Self) {
       
-      @scala.inline
-      def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrit(value: Double): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: Double): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmerg(value: Double): Self = StObject.set(x, "emerg", value.asInstanceOf[js.Any])
+      inline def setEmerg(value: Double): Self = StObject.set(x, "emerg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotice(value: Double): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
+      inline def setNotice(value: Double): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
   

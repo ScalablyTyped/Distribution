@@ -37,8 +37,7 @@ trait UniversalContentBroker
 }
 object UniversalContentBroker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: Double => Unit,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -62,10 +61,8 @@ object UniversalContentBroker {
     __obj.asInstanceOf[UniversalContentBroker]
   }
   
-  @scala.inline
-  implicit class UniversalContentBrokerMutableBuilder[Self <: UniversalContentBroker] (val x: Self) extends AnyVal {
+  extension [Self <: UniversalContentBroker](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

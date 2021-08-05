@@ -110,20 +110,14 @@ object mod {
       def initialize(options: MarkerOptions): Unit = js.native
     }
     
-    @scala.inline
-    def arrowHead(): ArrowHead_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrowHead")().asInstanceOf[ArrowHead_]
-    @scala.inline
-    def arrowHead(options: ArrowHeadOptions): ArrowHead_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrowHead")(options.asInstanceOf[js.Any]).asInstanceOf[ArrowHead_]
+    inline def arrowHead(): ArrowHead_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrowHead")().asInstanceOf[ArrowHead_]
+    inline def arrowHead(options: ArrowHeadOptions): ArrowHead_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrowHead")(options.asInstanceOf[js.Any]).asInstanceOf[ArrowHead_]
     
-    @scala.inline
-    def dash(): Dash_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dash")().asInstanceOf[Dash_]
-    @scala.inline
-    def dash(options: DashOptions): Dash_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dash")(options.asInstanceOf[js.Any]).asInstanceOf[Dash_]
+    inline def dash(): Dash_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dash")().asInstanceOf[Dash_]
+    inline def dash(options: DashOptions): Dash_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dash")(options.asInstanceOf[js.Any]).asInstanceOf[Dash_]
     
-    @scala.inline
-    def marker(): Marker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("marker")().asInstanceOf[Marker_]
-    @scala.inline
-    def marker(options: MarkerOptions): Marker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("marker")(options.asInstanceOf[js.Any]).asInstanceOf[Marker_]
+    inline def marker(): Marker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("marker")().asInstanceOf[Marker_]
+    inline def marker(options: MarkerOptions): Marker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("marker")(options.asInstanceOf[js.Any]).asInstanceOf[Marker_]
     
     trait ArrowHeadOptions extends StObject {
       
@@ -137,38 +131,28 @@ object mod {
     }
     object ArrowHeadOptions {
       
-      @scala.inline
-      def apply(): ArrowHeadOptions = {
+      inline def apply(): ArrowHeadOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ArrowHeadOptions]
       }
       
-      @scala.inline
-      implicit class ArrowHeadOptionsMutableBuilder[Self <: ArrowHeadOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ArrowHeadOptions](x: Self) {
         
-        @scala.inline
-        def setHeadAngle(value: Double): Self = StObject.set(x, "headAngle", value.asInstanceOf[js.Any])
+        inline def setHeadAngle(value: Double): Self = StObject.set(x, "headAngle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadAngleUndefined: Self = StObject.set(x, "headAngle", js.undefined)
+        inline def setHeadAngleUndefined: Self = StObject.set(x, "headAngle", js.undefined)
         
-        @scala.inline
-        def setPathOptions(value: PathOptions): Self = StObject.set(x, "pathOptions", value.asInstanceOf[js.Any])
+        inline def setPathOptions(value: PathOptions): Self = StObject.set(x, "pathOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathOptionsUndefined: Self = StObject.set(x, "pathOptions", js.undefined)
+        inline def setPathOptionsUndefined: Self = StObject.set(x, "pathOptions", js.undefined)
         
-        @scala.inline
-        def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+        inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+        inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
         
-        @scala.inline
-        def setPolygon(value: Boolean): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+        inline def setPolygon(value: Boolean): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
+        inline def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
       }
     }
     
@@ -180,26 +164,20 @@ object mod {
     }
     object DashOptions {
       
-      @scala.inline
-      def apply(): DashOptions = {
+      inline def apply(): DashOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DashOptions]
       }
       
-      @scala.inline
-      implicit class DashOptionsMutableBuilder[Self <: DashOptions] (val x: Self) extends AnyVal {
+      extension [Self <: DashOptions](x: Self) {
         
-        @scala.inline
-        def setPathOptions(value: PathOptions): Self = StObject.set(x, "pathOptions", value.asInstanceOf[js.Any])
+        inline def setPathOptions(value: PathOptions): Self = StObject.set(x, "pathOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathOptionsUndefined: Self = StObject.set(x, "pathOptions", js.undefined)
+        inline def setPathOptionsUndefined: Self = StObject.set(x, "pathOptions", js.undefined)
         
-        @scala.inline
-        def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+        inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+        inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
       }
     }
     
@@ -211,38 +189,29 @@ object mod {
     }
     object MarkerOptions {
       
-      @scala.inline
-      def apply(): MarkerOptions = {
+      inline def apply(): MarkerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MarkerOptions]
       }
       
-      @scala.inline
-      implicit class MarkerOptionsMutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: MarkerOptions](x: Self) {
         
-        @scala.inline
-        def setMarkerOptions(value: typings.leaflet.mod.MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+        inline def setMarkerOptions(value: typings.leaflet.mod.MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
+        inline def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
         
-        @scala.inline
-        def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+        inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+        inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def isCoord(c: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoord")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCoord(c: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoord")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isCoordArray(c: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoordArray")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCoordArray(c: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoordArray")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def polylineDecorator(
+  inline def polylineDecorator(
     paths: (Polyline_[LineString | MultiLineString, js.Any]) | (js.Array[Polyline_[LineString | MultiLineString, js.Any]]),
     options: js.UndefOr[PolylineDecoratorOptions]
   ): PolylineDecorator_ = (^.asInstanceOf[js.Dynamic].applyDynamic("polylineDecorator")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PolylineDecorator_]
@@ -259,32 +228,24 @@ object mod {
   }
   object Pattern {
     
-    @scala.inline
-    def apply(repeat: Double | String, symbol: Dash_ | ArrowHead_ | Marker_): Pattern = {
+    inline def apply(repeat: Double | String, symbol: Dash_ | ArrowHead_ | Marker_): Pattern = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pattern]
     }
     
-    @scala.inline
-    implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+    extension [Self <: Pattern](x: Self) {
       
-      @scala.inline
-      def setEndOffset(value: Double | String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+      inline def setEndOffset(value: Double | String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
+      inline def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double | String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double | String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: Dash_ | ArrowHead_ | Marker_): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Dash_ | ArrowHead_ | Marker_): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,20 +255,16 @@ object mod {
   }
   object PolylineDecoratorOptions {
     
-    @scala.inline
-    def apply(patterns: js.Array[Pattern]): PolylineDecoratorOptions = {
+    inline def apply(patterns: js.Array[Pattern]): PolylineDecoratorOptions = {
       val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolylineDecoratorOptions]
     }
     
-    @scala.inline
-    implicit class PolylineDecoratorOptionsMutableBuilder[Self <: PolylineDecoratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PolylineDecoratorOptions](x: Self) {
       
-      @scala.inline
-      def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     }
   }
 }

@@ -20,16 +20,13 @@ trait summaryStatistics extends StObject {
 }
 object summaryStatistics {
   
-  @scala.inline
-  def apply(summaryStatistics: summaryStatisticsSummaryStatisticsParams => js.Promise[SummaryStatisticsResult]): summaryStatistics = {
+  inline def apply(summaryStatistics: summaryStatisticsSummaryStatisticsParams => js.Promise[SummaryStatisticsResult]): summaryStatistics = {
     val __obj = js.Dynamic.literal(summaryStatistics = js.Any.fromFunction1(summaryStatistics))
     __obj.asInstanceOf[summaryStatistics]
   }
   
-  @scala.inline
-  implicit class summaryStatisticsMutableBuilder[Self <: summaryStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: summaryStatistics](x: Self) {
     
-    @scala.inline
-    def setSummaryStatistics(value: summaryStatisticsSummaryStatisticsParams => js.Promise[SummaryStatisticsResult]): Self = StObject.set(x, "summaryStatistics", js.Any.fromFunction1(value))
+    inline def setSummaryStatistics(value: summaryStatisticsSummaryStatisticsParams => js.Promise[SummaryStatisticsResult]): Self = StObject.set(x, "summaryStatistics", js.Any.fromFunction1(value))
   }
 }

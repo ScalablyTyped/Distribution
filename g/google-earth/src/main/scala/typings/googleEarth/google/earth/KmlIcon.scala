@@ -50,8 +50,7 @@ trait KmlIcon
 }
 object KmlIcon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -94,31 +93,22 @@ object KmlIcon {
     __obj.asInstanceOf[KmlIcon]
   }
   
-  @scala.inline
-  implicit class KmlIconMutableBuilder[Self <: KmlIcon] (val x: Self) extends AnyVal {
+  extension [Self <: KmlIcon](x: Self) {
     
-    @scala.inline
-    def setGetH(value: () => Double): Self = StObject.set(x, "getH", js.Any.fromFunction0(value))
+    inline def setGetH(value: () => Double): Self = StObject.set(x, "getH", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetW(value: () => Double): Self = StObject.set(x, "getW", js.Any.fromFunction0(value))
+    inline def setGetW(value: () => Double): Self = StObject.set(x, "getW", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+    inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+    inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetH(value: Double => Unit): Self = StObject.set(x, "setH", js.Any.fromFunction1(value))
+    inline def setSetH(value: Double => Unit): Self = StObject.set(x, "setH", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetW(value: Double => Unit): Self = StObject.set(x, "setW", js.Any.fromFunction1(value))
+    inline def setSetW(value: Double => Unit): Self = StObject.set(x, "setW", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetX(value: Double => Double): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
+    inline def setSetX(value: Double => Double): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
+    inline def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
   }
 }

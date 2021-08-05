@@ -47,17 +47,14 @@ object mod extends Shortcut {
   }
   object DownToOptions {
     
-    @scala.inline
-    def apply(to: String | `0`): DownToOptions = {
+    inline def apply(to: String | `0`): DownToOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownToOptions]
     }
     
-    @scala.inline
-    implicit class DownToOptionsMutableBuilder[Self <: DownToOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DownToOptions](x: Self) {
       
-      @scala.inline
-      def setTo(value: String | `0`): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String | `0`): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,29 +66,22 @@ object mod extends Shortcut {
   }
   object ExecuteOptions {
     
-    @scala.inline
-    def apply(): ExecuteOptions = {
+    inline def apply(): ExecuteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecuteOptions]
     }
     
-    @scala.inline
-    implicit class ExecuteOptionsMutableBuilder[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExecuteOptions](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMigrations(value: js.Array[String]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
+      inline def setMigrations(value: js.Array[String]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
+      inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
       
-      @scala.inline
-      def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+      inline def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value :_*))
     }
   }
   
@@ -107,8 +97,7 @@ object mod extends Shortcut {
   }
   object JSONStorageOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       executed: () => js.Promise[js.Array[String]],
       logMigration: String => js.Promise[Unit],
       unlogMigration: String => js.Promise[Unit]
@@ -117,14 +106,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JSONStorageOptions]
     }
     
-    @scala.inline
-    implicit class JSONStorageOptionsMutableBuilder[Self <: JSONStorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JSONStorageOptions](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -142,8 +128,7 @@ object mod extends Shortcut {
   }
   object Migration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       down: () => js.Promise[js.Any],
       file: String,
       migration: () => js.Promise[js.Any],
@@ -154,23 +139,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Migration]
     }
     
-    @scala.inline
-    implicit class MigrationMutableBuilder[Self <: Migration] (val x: Self) extends AnyVal {
+    extension [Self <: Migration](x: Self) {
       
-      @scala.inline
-      def setDown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
+      inline def setDown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigration(value: () => js.Promise[js.Any]): Self = StObject.set(x, "migration", js.Any.fromFunction0(value))
+      inline def setMigration(value: () => js.Promise[js.Any]): Self = StObject.set(x, "migration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTestFileName(value: String => Boolean): Self = StObject.set(x, "testFileName", js.Any.fromFunction1(value))
+      inline def setTestFileName(value: String => Boolean): Self = StObject.set(x, "testFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUp(value: () => js.Promise[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
+      inline def setUp(value: () => js.Promise[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
     }
   }
   
@@ -182,8 +161,7 @@ object mod extends Shortcut {
   }
   object MigrationDefinitionWithName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       down: () => js.Promise[js.Any],
       file: String,
       migration: () => js.Promise[js.Any],
@@ -195,11 +173,9 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MigrationDefinitionWithName]
     }
     
-    @scala.inline
-    implicit class MigrationDefinitionWithNameMutableBuilder[Self <: MigrationDefinitionWithName] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationDefinitionWithName](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,47 +211,34 @@ object mod extends Shortcut {
   }
   object MigrationOptions {
     
-    @scala.inline
-    def apply(): MigrationOptions = {
+    inline def apply(): MigrationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MigrationOptions]
     }
     
-    @scala.inline
-    implicit class MigrationOptionsMutableBuilder[Self <: MigrationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationOptions](x: Self) {
       
-      @scala.inline
-      def setCustomResolver(value: /* path */ String => Down): Self = StObject.set(x, "customResolver", js.Any.fromFunction1(value))
+      inline def setCustomResolver(value: /* path */ String => Down): Self = StObject.set(x, "customResolver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomResolverUndefined: Self = StObject.set(x, "customResolver", js.undefined)
+      inline def setCustomResolverUndefined: Self = StObject.set(x, "customResolver", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setWrap(value: /* fn */ js.Any => js.Any): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
+      inline def setWrap(value: /* fn */ js.Any => js.Any): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -302,8 +265,7 @@ object mod extends Shortcut {
   }
   object MongoDBStorageOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       executed: () => js.Promise[js.Array[String]],
       logMigration: String => js.Promise[Unit],
       unlogMigration: String => js.Promise[Unit]
@@ -312,26 +274,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MongoDBStorageOptions]
     }
     
-    @scala.inline
-    implicit class MongoDBStorageOptionsMutableBuilder[Self <: MongoDBStorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MongoDBStorageOptions](x: Self) {
       
-      @scala.inline
-      def setCollection(value: Collection[DefaultSchema]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Collection[DefaultSchema]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
+      inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
+      inline def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
       
-      @scala.inline
-      def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
       
-      @scala.inline
-      def setConnection(value: Db): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Db): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     }
   }
   
@@ -378,8 +333,7 @@ object mod extends Shortcut {
   }
   object SequelizeStorageOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnName: String,
       columnType: DataTypeAbstract,
       executed: () => js.Promise[js.Array[String]],
@@ -390,38 +344,27 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SequelizeStorageOptions]
     }
     
-    @scala.inline
-    implicit class SequelizeStorageOptionsMutableBuilder[Self <: SequelizeStorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SequelizeStorageOptions](x: Self) {
       
-      @scala.inline
-      def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+      inline def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnType(value: DataTypeAbstract): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
+      inline def setColumnType(value: DataTypeAbstract): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
+      inline def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setSequelize(value: Sequelize): Self = StObject.set(x, "sequelize", value.asInstanceOf[js.Any])
+      inline def setSequelize(value: Sequelize): Self = StObject.set(x, "sequelize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequelizeUndefined: Self = StObject.set(x, "sequelize", js.undefined)
+      inline def setSequelizeUndefined: Self = StObject.set(x, "sequelize", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     }
   }
   
@@ -451,8 +394,7 @@ object mod extends Shortcut {
   }
   object Storage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       executed: () => js.Promise[js.Array[String]],
       logMigration: String => js.Promise[Unit],
       unlogMigration: String => js.Promise[Unit]
@@ -461,17 +403,13 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Storage]
     }
     
-    @scala.inline
-    implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+    extension [Self <: Storage](x: Self) {
       
-      @scala.inline
-      def setExecuted(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "executed", js.Any.fromFunction0(value))
+      inline def setExecuted(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "executed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLogMigration(value: String => js.Promise[Unit]): Self = StObject.set(x, "logMigration", js.Any.fromFunction1(value))
+      inline def setLogMigration(value: String => js.Promise[Unit]): Self = StObject.set(x, "logMigration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnlogMigration(value: String => js.Promise[Unit]): Self = StObject.set(x, "unlogMigration", js.Any.fromFunction1(value))
+      inline def setUnlogMigration(value: String => js.Promise[Unit]): Self = StObject.set(x, "unlogMigration", js.Any.fromFunction1(value))
     }
   }
   
@@ -600,53 +538,38 @@ object mod extends Shortcut {
   }
   object UmzugOptions {
     
-    @scala.inline
-    def apply(): UmzugOptions = {
+    inline def apply(): UmzugOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UmzugOptions]
     }
     
-    @scala.inline
-    implicit class UmzugOptionsMutableBuilder[Self <: UmzugOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UmzugOptions](x: Self) {
       
-      @scala.inline
-      def setDownName(value: String): Self = StObject.set(x, "downName", value.asInstanceOf[js.Any])
+      inline def setDownName(value: String): Self = StObject.set(x, "downName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownNameUndefined: Self = StObject.set(x, "downName", js.undefined)
+      inline def setDownNameUndefined: Self = StObject.set(x, "downName", js.undefined)
       
-      @scala.inline
-      def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      @scala.inline
-      def setMigrations(value: MigrationOptions | js.Array[Migration]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
+      inline def setMigrations(value: MigrationOptions | js.Array[Migration]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
+      inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
       
-      @scala.inline
-      def setMigrationsVarargs(value: Migration*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+      inline def setMigrationsVarargs(value: Migration*): Self = StObject.set(x, "migrations", js.Array(value :_*))
       
-      @scala.inline
-      def setStorage(value: json | sequelize | mongodb | Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: json | sequelize | mongodb | Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageOptions(value: JSONStorageOptions | SequelizeStorageOptions | MongoDBStorageOptions | js.Object): Self = StObject.set(x, "storageOptions", value.asInstanceOf[js.Any])
+      inline def setStorageOptions(value: JSONStorageOptions | SequelizeStorageOptions | MongoDBStorageOptions | js.Object): Self = StObject.set(x, "storageOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageOptionsUndefined: Self = StObject.set(x, "storageOptions", js.undefined)
+      inline def setStorageOptionsUndefined: Self = StObject.set(x, "storageOptions", js.undefined)
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       
-      @scala.inline
-      def setUpName(value: String): Self = StObject.set(x, "upName", value.asInstanceOf[js.Any])
+      inline def setUpName(value: String): Self = StObject.set(x, "upName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpNameUndefined: Self = StObject.set(x, "upName", js.undefined)
+      inline def setUpNameUndefined: Self = StObject.set(x, "upName", js.undefined)
     }
   }
   
@@ -670,20 +593,16 @@ object mod extends Shortcut {
   }
   object UpDownMigrationsOptions {
     
-    @scala.inline
-    def apply(migrations: js.Array[String]): UpDownMigrationsOptions = {
+    inline def apply(migrations: js.Array[String]): UpDownMigrationsOptions = {
       val __obj = js.Dynamic.literal(migrations = migrations.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpDownMigrationsOptions]
     }
     
-    @scala.inline
-    implicit class UpDownMigrationsOptionsMutableBuilder[Self <: UpDownMigrationsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpDownMigrationsOptions](x: Self) {
       
-      @scala.inline
-      def setMigrations(value: js.Array[String]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
+      inline def setMigrations(value: js.Array[String]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+      inline def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value :_*))
     }
   }
   
@@ -698,17 +617,14 @@ object mod extends Shortcut {
   }
   object UpToOptions {
     
-    @scala.inline
-    def apply(to: String): UpToOptions = {
+    inline def apply(to: String): UpToOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpToOptions]
     }
     
-    @scala.inline
-    implicit class UpToOptionsMutableBuilder[Self <: UpToOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpToOptions](x: Self) {
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   

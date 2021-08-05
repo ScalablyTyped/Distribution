@@ -15,15 +15,13 @@ object Graph {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def aheadBehind(
+  inline def aheadBehind(
     repo: typings.nodegit.repositoryMod.Repository,
     local: typings.nodegit.oidMod.Oid,
     upstream: typings.nodegit.oidMod.Oid
   ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("aheadBehind")(repo.asInstanceOf[js.Any], local.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @scala.inline
-  def descendantOf(
+  inline def descendantOf(
     repo: typings.nodegit.repositoryMod.Repository,
     commit: typings.nodegit.oidMod.Oid,
     ancestor: typings.nodegit.oidMod.Oid

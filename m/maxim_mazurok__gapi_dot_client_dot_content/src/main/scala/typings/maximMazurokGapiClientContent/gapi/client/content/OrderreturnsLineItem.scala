@@ -14,25 +14,19 @@ trait OrderreturnsLineItem extends StObject {
 }
 object OrderreturnsLineItem {
   
-  @scala.inline
-  def apply(): OrderreturnsLineItem = {
+  inline def apply(): OrderreturnsLineItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderreturnsLineItem]
   }
   
-  @scala.inline
-  implicit class OrderreturnsLineItemMutableBuilder[Self <: OrderreturnsLineItem] (val x: Self) extends AnyVal {
+  extension [Self <: OrderreturnsLineItem](x: Self) {
     
-    @scala.inline
-    def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
+    inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

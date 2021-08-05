@@ -18,28 +18,21 @@ trait TransactWriteItemsOutput extends StObject {
 }
 object TransactWriteItemsOutput {
   
-  @scala.inline
-  def apply(): TransactWriteItemsOutput = {
+  inline def apply(): TransactWriteItemsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransactWriteItemsOutput]
   }
   
-  @scala.inline
-  implicit class TransactWriteItemsOutputMutableBuilder[Self <: TransactWriteItemsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: TransactWriteItemsOutput](x: Self) {
     
-    @scala.inline
-    def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+    inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+    inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
     
-    @scala.inline
-    def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+    inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
     
-    @scala.inline
-    def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
+    inline def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
+    inline def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
   }
 }

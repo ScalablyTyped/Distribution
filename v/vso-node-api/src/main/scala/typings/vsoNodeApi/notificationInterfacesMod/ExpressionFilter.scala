@@ -12,17 +12,14 @@ trait ExpressionFilter
 }
 object ExpressionFilter {
   
-  @scala.inline
-  def apply(criteria: ExpressionFilterModel, eventType: String, `type`: String): ExpressionFilter = {
+  inline def apply(criteria: ExpressionFilterModel, eventType: String, `type`: String): ExpressionFilter = {
     val __obj = js.Dynamic.literal(criteria = criteria.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressionFilter]
   }
   
-  @scala.inline
-  implicit class ExpressionFilterMutableBuilder[Self <: ExpressionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ExpressionFilter](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: ExpressionFilterModel): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: ExpressionFilterModel): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
   }
 }

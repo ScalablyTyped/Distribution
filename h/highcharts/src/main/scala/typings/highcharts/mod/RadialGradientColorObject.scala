@@ -23,22 +23,17 @@ trait RadialGradientColorObject extends StObject {
 }
 object RadialGradientColorObject {
   
-  @scala.inline
-  def apply(cx: Double, cy: Double, r: Double): RadialGradientColorObject = {
+  inline def apply(cx: Double, cy: Double, r: Double): RadialGradientColorObject = {
     val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGradientColorObject]
   }
   
-  @scala.inline
-  implicit class RadialGradientColorObjectMutableBuilder[Self <: RadialGradientColorObject] (val x: Self) extends AnyVal {
+  extension [Self <: RadialGradientColorObject](x: Self) {
     
-    @scala.inline
-    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

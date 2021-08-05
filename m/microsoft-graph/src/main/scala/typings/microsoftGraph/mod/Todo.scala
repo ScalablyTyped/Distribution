@@ -13,25 +13,19 @@ trait Todo
 }
 object Todo {
   
-  @scala.inline
-  def apply(): Todo = {
+  inline def apply(): Todo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Todo]
   }
   
-  @scala.inline
-  implicit class TodoMutableBuilder[Self <: Todo] (val x: Self) extends AnyVal {
+  extension [Self <: Todo](x: Self) {
     
-    @scala.inline
-    def setLists(value: NullableOption[js.Array[TodoTaskList]]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+    inline def setLists(value: NullableOption[js.Array[TodoTaskList]]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListsNull: Self = StObject.set(x, "lists", null)
+    inline def setListsNull: Self = StObject.set(x, "lists", null)
     
-    @scala.inline
-    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
+    inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
-    @scala.inline
-    def setListsVarargs(value: TodoTaskList*): Self = StObject.set(x, "lists", js.Array(value :_*))
+    inline def setListsVarargs(value: TodoTaskList*): Self = StObject.set(x, "lists", js.Array(value :_*))
   }
 }

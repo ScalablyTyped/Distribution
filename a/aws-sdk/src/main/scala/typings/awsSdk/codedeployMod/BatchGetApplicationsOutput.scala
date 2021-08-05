@@ -13,22 +13,17 @@ trait BatchGetApplicationsOutput extends StObject {
 }
 object BatchGetApplicationsOutput {
   
-  @scala.inline
-  def apply(): BatchGetApplicationsOutput = {
+  inline def apply(): BatchGetApplicationsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetApplicationsOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetApplicationsOutputMutableBuilder[Self <: BatchGetApplicationsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetApplicationsOutput](x: Self) {
     
-    @scala.inline
-    def setApplicationsInfo(value: ApplicationsInfoList): Self = StObject.set(x, "applicationsInfo", value.asInstanceOf[js.Any])
+    inline def setApplicationsInfo(value: ApplicationsInfoList): Self = StObject.set(x, "applicationsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationsInfoUndefined: Self = StObject.set(x, "applicationsInfo", js.undefined)
+    inline def setApplicationsInfoUndefined: Self = StObject.set(x, "applicationsInfo", js.undefined)
     
-    @scala.inline
-    def setApplicationsInfoVarargs(value: ApplicationInfo*): Self = StObject.set(x, "applicationsInfo", js.Array(value :_*))
+    inline def setApplicationsInfoVarargs(value: ApplicationInfo*): Self = StObject.set(x, "applicationsInfo", js.Array(value :_*))
   }
 }

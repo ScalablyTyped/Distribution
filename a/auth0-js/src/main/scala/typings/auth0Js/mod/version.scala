@@ -13,6 +13,5 @@ object version {
   @JSImport("auth0-js", "version.raw")
   @js.native
   def raw: String = js.native
-  @scala.inline
-  def raw_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("raw")(x.asInstanceOf[js.Any])
+  inline def raw_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("raw")(x.asInstanceOf[js.Any])
 }

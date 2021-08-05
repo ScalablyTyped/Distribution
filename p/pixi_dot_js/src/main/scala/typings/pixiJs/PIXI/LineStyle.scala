@@ -64,8 +64,7 @@ trait LineStyle
 }
 object LineStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignment: Double,
     alpha: Double,
     cap: LINE_CAP,
@@ -84,25 +83,18 @@ object LineStyle {
     __obj.asInstanceOf[LineStyle]
   }
   
-  @scala.inline
-  implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: LineStyle](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCap(value: LINE_CAP): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: LINE_CAP): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoin(value: LINE_JOIN): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+    inline def setJoin(value: LINE_JOIN): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+    inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait FragmentPointer extends StObject {
 }
 object FragmentPointer {
   
-  @scala.inline
-  def apply(__fragmentOwner: RequestDescriptor, __fragments: StringDictionary[Variables], __id: DataID): FragmentPointer = {
+  inline def apply(__fragmentOwner: RequestDescriptor, __fragments: StringDictionary[Variables], __id: DataID): FragmentPointer = {
     val __obj = js.Dynamic.literal(__fragmentOwner = __fragmentOwner.asInstanceOf[js.Any], __fragments = __fragments.asInstanceOf[js.Any], __id = __id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentPointer]
   }
   
-  @scala.inline
-  implicit class FragmentPointerMutableBuilder[Self <: FragmentPointer] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentPointer](x: Self) {
     
-    @scala.inline
-    def set__fragmentOwner(value: RequestDescriptor): Self = StObject.set(x, "__fragmentOwner", value.asInstanceOf[js.Any])
+    inline def set__fragmentOwner(value: RequestDescriptor): Self = StObject.set(x, "__fragmentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__fragments(value: StringDictionary[Variables]): Self = StObject.set(x, "__fragments", value.asInstanceOf[js.Any])
+    inline def set__fragments(value: StringDictionary[Variables]): Self = StObject.set(x, "__fragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__id(value: DataID): Self = StObject.set(x, "__id", value.asInstanceOf[js.Any])
+    inline def set__id(value: DataID): Self = StObject.set(x, "__id", value.asInstanceOf[js.Any])
   }
 }

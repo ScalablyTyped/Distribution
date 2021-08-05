@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintToPDFRequestTransferMode extends StObject
 object PrintToPDFRequestTransferMode {
   
-  @scala.inline
-  def ReturnAsBase64: typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsBase64 = "ReturnAsBase64".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsBase64]
+  inline def ReturnAsBase64: typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsBase64 = "ReturnAsBase64".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsBase64]
   
-  @scala.inline
-  def ReturnAsStream: typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream = "ReturnAsStream".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream]
+  inline def ReturnAsStream: typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream = "ReturnAsStream".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream]
 }

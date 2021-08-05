@@ -12,17 +12,14 @@ object anon {
   }
   object NormalizeWhitespace {
     
-    @scala.inline
-    def apply(normalizeWhitespace: Boolean): NormalizeWhitespace = {
+    inline def apply(normalizeWhitespace: Boolean): NormalizeWhitespace = {
       val __obj = js.Dynamic.literal(normalizeWhitespace = normalizeWhitespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizeWhitespace]
     }
     
-    @scala.inline
-    implicit class NormalizeWhitespaceMutableBuilder[Self <: NormalizeWhitespace] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizeWhitespace](x: Self) {
       
-      @scala.inline
-      def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
+      inline def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
     }
   }
 }

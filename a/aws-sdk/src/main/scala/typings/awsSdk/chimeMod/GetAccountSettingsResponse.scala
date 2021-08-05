@@ -13,19 +13,15 @@ trait GetAccountSettingsResponse extends StObject {
 }
 object GetAccountSettingsResponse {
   
-  @scala.inline
-  def apply(): GetAccountSettingsResponse = {
+  inline def apply(): GetAccountSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountSettingsResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountSettingsResponseMutableBuilder[Self <: GetAccountSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setAccountSettings(value: AccountSettings): Self = StObject.set(x, "AccountSettings", value.asInstanceOf[js.Any])
+    inline def setAccountSettings(value: AccountSettings): Self = StObject.set(x, "AccountSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountSettingsUndefined: Self = StObject.set(x, "AccountSettings", js.undefined)
+    inline def setAccountSettingsUndefined: Self = StObject.set(x, "AccountSettings", js.undefined)
   }
 }

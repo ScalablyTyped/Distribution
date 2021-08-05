@@ -86,73 +86,51 @@ trait SchemaConfiguration extends StObject {
 }
 object SchemaConfiguration {
   
-  @scala.inline
-  def apply(): SchemaConfiguration = {
+  inline def apply(): SchemaConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaConfigurationMutableBuilder[Self <: SchemaConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfiguration](x: Self) {
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
-    @scala.inline
-    def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
+    inline def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
     
-    @scala.inline
-    def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
+    inline def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
+    inline def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
     
-    @scala.inline
-    def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
+    inline def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
+    inline def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
-    @scala.inline
-    def setContactPhone(value: String): Self = StObject.set(x, "contactPhone", value.asInstanceOf[js.Any])
+    inline def setContactPhone(value: String): Self = StObject.set(x, "contactPhone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactPhoneUndefined: Self = StObject.set(x, "contactPhone", js.undefined)
+    inline def setContactPhoneUndefined: Self = StObject.set(x, "contactPhone", js.undefined)
     
-    @scala.inline
-    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
+    inline def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
+    inline def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
-    @scala.inline
-    def setDpcExtras(value: String): Self = StObject.set(x, "dpcExtras", value.asInstanceOf[js.Any])
+    inline def setDpcExtras(value: String): Self = StObject.set(x, "dpcExtras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpcExtrasUndefined: Self = StObject.set(x, "dpcExtras", js.undefined)
+    inline def setDpcExtrasUndefined: Self = StObject.set(x, "dpcExtras", js.undefined)
     
-    @scala.inline
-    def setDpcResourcePath(value: String): Self = StObject.set(x, "dpcResourcePath", value.asInstanceOf[js.Any])
+    inline def setDpcResourcePath(value: String): Self = StObject.set(x, "dpcResourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpcResourcePathUndefined: Self = StObject.set(x, "dpcResourcePath", js.undefined)
+    inline def setDpcResourcePathUndefined: Self = StObject.set(x, "dpcResourcePath", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

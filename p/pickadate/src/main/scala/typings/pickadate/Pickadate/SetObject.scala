@@ -24,61 +24,43 @@ trait SetObject extends StObject {
 }
 object SetObject {
   
-  @scala.inline
-  def apply(): SetObject = {
+  inline def apply(): SetObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetObject]
   }
   
-  @scala.inline
-  implicit class SetObjectMutableBuilder[Self <: SetObject] (val x: Self) extends AnyVal {
+  extension [Self <: SetObject](x: Self) {
     
-    @scala.inline
-    def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setSelect(value: js.Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: js.Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

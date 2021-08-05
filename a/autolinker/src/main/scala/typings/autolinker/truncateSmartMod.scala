@@ -10,8 +10,6 @@ object truncateSmartMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def truncateSmart(url: String, truncateLen: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSmart")(url.asInstanceOf[js.Any], truncateLen.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def truncateSmart(url: String, truncateLen: Double, ellipsisChars: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSmart")(url.asInstanceOf[js.Any], truncateLen.asInstanceOf[js.Any], ellipsisChars.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def truncateSmart(url: String, truncateLen: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSmart")(url.asInstanceOf[js.Any], truncateLen.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def truncateSmart(url: String, truncateLen: Double, ellipsisChars: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSmart")(url.asInstanceOf[js.Any], truncateLen.asInstanceOf[js.Any], ellipsisChars.asInstanceOf[js.Any])).asInstanceOf[String]
 }

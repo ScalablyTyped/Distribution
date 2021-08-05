@@ -17,7 +17,7 @@ object outputMod {
   class Output protected () extends StObject {
     def this(_project: ProjectInfo, streamFull: Readable, streamJs: Readable, streamDts: Readable) = this()
     
-    var applySourceMap: js.Any = js.native
+    /* private */ var applySourceMap: js.Any = js.native
     
     def diagnostic(info: Diagnostic): Unit = js.native
     
@@ -25,13 +25,13 @@ object outputMod {
     
     def finish(result: CompilationResult): Unit = js.native
     
-    var getError: js.Any = js.native
+    /* private */ var getError: js.Any = js.native
     
-    var mightFinish: js.Any = js.native
+    /* private */ var mightFinish: js.Any = js.native
     
-    var pendingIO: js.Any = js.native
+    /* private */ var pendingIO: js.Any = js.native
     
-    var pipeRejection: js.Any = js.native
+    /* private */ var pipeRejection: js.Any = js.native
     
     var project: ProjectInfo = js.native
     
@@ -52,7 +52,7 @@ object outputMod {
       original: File
     ): Unit = js.native
     
-    var writeDtsAsync: js.Any = js.native
+    /* private */ var writeDtsAsync: js.Any = js.native
     
     def writeJs(
       base: String,
@@ -63,6 +63,6 @@ object outputMod {
       original: File
     ): Unit = js.native
     
-    var writeJsAsync: js.Any = js.native
+    /* private */ var writeJsAsync: js.Any = js.native
   }
 }

@@ -27,8 +27,7 @@ trait JSONEditorSearchBox extends StObject {
 }
 object JSONEditorSearchBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearDelay: () => Unit,
     focusActiveResult: () => Unit,
     next: () => Unit,
@@ -43,34 +42,24 @@ object JSONEditorSearchBox {
     __obj.asInstanceOf[JSONEditorSearchBox]
   }
   
-  @scala.inline
-  implicit class JSONEditorSearchBoxMutableBuilder[Self <: JSONEditorSearchBox] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorSearchBox](x: Self) {
     
-    @scala.inline
-    def setClearDelay(value: () => Unit): Self = StObject.set(x, "clearDelay", js.Any.fromFunction0(value))
+    inline def setClearDelay(value: () => Unit): Self = StObject.set(x, "clearDelay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocusActiveResult(value: () => Unit): Self = StObject.set(x, "focusActiveResult", js.Any.fromFunction0(value))
+    inline def setFocusActiveResult(value: () => Unit): Self = StObject.set(x, "focusActiveResult", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDelayedSearch(value: Event => Unit): Self = StObject.set(x, "onDelayedSearch", js.Any.fromFunction1(value))
+    inline def setOnDelayedSearch(value: Event => Unit): Self = StObject.set(x, "onDelayedSearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyDown(value: Event => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: Event => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyUp(value: Event => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    inline def setOnKeyUp(value: Event => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSearch(value: (Event, Boolean) => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction2(value))
+    inline def setOnSearch(value: (Event, Boolean) => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
+    inline def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActiveResult(value: Double => Unit): Self = StObject.set(x, "setActiveResult", js.Any.fromFunction1(value))
+    inline def setSetActiveResult(value: Double => Unit): Self = StObject.set(x, "setActiveResult", js.Any.fromFunction1(value))
   }
 }

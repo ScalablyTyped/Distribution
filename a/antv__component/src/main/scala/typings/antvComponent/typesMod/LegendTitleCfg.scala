@@ -21,25 +21,19 @@ trait LegendTitleCfg extends StObject {
 }
 object LegendTitleCfg {
   
-  @scala.inline
-  def apply(): LegendTitleCfg = {
+  inline def apply(): LegendTitleCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendTitleCfg]
   }
   
-  @scala.inline
-  implicit class LegendTitleCfgMutableBuilder[Self <: LegendTitleCfg] (val x: Self) extends AnyVal {
+  extension [Self <: LegendTitleCfg](x: Self) {
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

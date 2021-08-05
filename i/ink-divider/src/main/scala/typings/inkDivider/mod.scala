@@ -30,56 +30,40 @@ object mod extends Shortcut {
   }
   object DividerProps {
     
-    @scala.inline
-    def apply(): DividerProps = {
+    inline def apply(): DividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DividerProps]
     }
     
-    @scala.inline
-    implicit class DividerPropsMutableBuilder[Self <: DividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: DividerProps](x: Self) {
       
-      @scala.inline
-      def setDividerChar(value: String): Self = StObject.set(x, "dividerChar", value.asInstanceOf[js.Any])
+      inline def setDividerChar(value: String): Self = StObject.set(x, "dividerChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerCharUndefined: Self = StObject.set(x, "dividerChar", js.undefined)
+      inline def setDividerCharUndefined: Self = StObject.set(x, "dividerChar", js.undefined)
       
-      @scala.inline
-      def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
+      inline def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
+      inline def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+      inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTitlePadding(value: Double): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
+      inline def setTitlePadding(value: Double): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
+      inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

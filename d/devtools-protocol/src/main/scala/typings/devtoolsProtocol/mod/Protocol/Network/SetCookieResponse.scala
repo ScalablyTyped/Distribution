@@ -13,16 +13,13 @@ trait SetCookieResponse extends StObject {
 }
 object SetCookieResponse {
   
-  @scala.inline
-  def apply(success: Boolean): SetCookieResponse = {
+  inline def apply(success: Boolean): SetCookieResponse = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCookieResponse]
   }
   
-  @scala.inline
-  implicit class SetCookieResponseMutableBuilder[Self <: SetCookieResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetCookieResponse](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

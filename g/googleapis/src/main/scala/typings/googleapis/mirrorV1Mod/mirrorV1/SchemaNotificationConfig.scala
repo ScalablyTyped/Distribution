@@ -23,25 +23,19 @@ trait SchemaNotificationConfig extends StObject {
 }
 object SchemaNotificationConfig {
   
-  @scala.inline
-  def apply(): SchemaNotificationConfig = {
+  inline def apply(): SchemaNotificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotificationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationConfigMutableBuilder[Self <: SchemaNotificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotificationConfig](x: Self) {
     
-    @scala.inline
-    def setDeliveryTime(value: String): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
+    inline def setDeliveryTime(value: String): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryTimeUndefined: Self = StObject.set(x, "deliveryTime", js.undefined)
+    inline def setDeliveryTimeUndefined: Self = StObject.set(x, "deliveryTime", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

@@ -34,8 +34,7 @@ trait Focus extends StObject {
 }
 object Focus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => js.Any,
     exists: () => Boolean,
     focus: () => js.Any,
@@ -54,46 +53,32 @@ object Focus {
     __obj.asInstanceOf[Focus]
   }
   
-  @scala.inline
-  implicit class FocusMutableBuilder[Self <: Focus] (val x: Self) extends AnyVal {
+  extension [Self <: Focus](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInput(value: () => js.Any): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
+    inline def setGetInput(value: () => js.Any): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlaceholder(value: () => js.Any): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
+    inline def setGetPlaceholder(value: () => js.Any): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrefix(value: () => js.Any): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
+    inline def setGetPrefix(value: () => js.Any): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSuffix(value: () => js.Any): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
+    inline def setGetSuffix(value: () => js.Any): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasStyleState(value: js.Any => Boolean): Self = StObject.set(x, "hasStyleState", js.Any.fromFunction1(value))
+    inline def setHasStyleState(value: js.Any => Boolean): Self = StObject.set(x, "hasStyleState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => js.Any): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => js.Any): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsReadOnly(value: () => js.Any): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+    inline def setIsReadOnly(value: () => js.Any): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+    inline def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

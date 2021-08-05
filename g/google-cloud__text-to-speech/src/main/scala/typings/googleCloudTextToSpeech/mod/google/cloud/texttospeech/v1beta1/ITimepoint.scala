@@ -15,31 +15,23 @@ trait ITimepoint extends StObject {
 }
 object ITimepoint {
   
-  @scala.inline
-  def apply(): ITimepoint = {
+  inline def apply(): ITimepoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITimepoint]
   }
   
-  @scala.inline
-  implicit class ITimepointMutableBuilder[Self <: ITimepoint] (val x: Self) extends AnyVal {
+  extension [Self <: ITimepoint](x: Self) {
     
-    @scala.inline
-    def setMarkName(value: String): Self = StObject.set(x, "markName", value.asInstanceOf[js.Any])
+    inline def setMarkName(value: String): Self = StObject.set(x, "markName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkNameNull: Self = StObject.set(x, "markName", null)
+    inline def setMarkNameNull: Self = StObject.set(x, "markName", null)
     
-    @scala.inline
-    def setMarkNameUndefined: Self = StObject.set(x, "markName", js.undefined)
+    inline def setMarkNameUndefined: Self = StObject.set(x, "markName", js.undefined)
     
-    @scala.inline
-    def setTimeSeconds(value: Double): Self = StObject.set(x, "timeSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeSeconds(value: Double): Self = StObject.set(x, "timeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSecondsNull: Self = StObject.set(x, "timeSeconds", null)
+    inline def setTimeSecondsNull: Self = StObject.set(x, "timeSeconds", null)
     
-    @scala.inline
-    def setTimeSecondsUndefined: Self = StObject.set(x, "timeSeconds", js.undefined)
+    inline def setTimeSecondsUndefined: Self = StObject.set(x, "timeSeconds", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ object circularProgressBarDriverMod {
   }
   object CircularProgressBarDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getLabelTextContent: () => String,
       getSize: () => CircularProgressBarSize,
@@ -41,20 +40,15 @@ object circularProgressBarDriverMod {
       __obj.asInstanceOf[CircularProgressBarDriver]
     }
     
-    @scala.inline
-    implicit class CircularProgressBarDriverMutableBuilder[Self <: CircularProgressBarDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressBarDriver](x: Self) {
       
-      @scala.inline
-      def setGetSize(value: () => CircularProgressBarSize): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => CircularProgressBarSize): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipErrorMessage(value: () => String): Self = StObject.set(x, "getTooltipErrorMessage", js.Any.fromFunction0(value))
+      inline def setGetTooltipErrorMessage(value: () => String): Self = StObject.set(x, "getTooltipErrorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorIconShown(value: () => Boolean): Self = StObject.set(x, "isErrorIconShown", js.Any.fromFunction0(value))
+      inline def setIsErrorIconShown(value: () => Boolean): Self = StObject.set(x, "isErrorIconShown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccessIconShown(value: () => Boolean): Self = StObject.set(x, "isSuccessIconShown", js.Any.fromFunction0(value))
+      inline def setIsSuccessIconShown(value: () => Boolean): Self = StObject.set(x, "isSuccessIconShown", js.Any.fromFunction0(value))
     }
   }
 }

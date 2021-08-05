@@ -52,26 +52,20 @@ object mod {
   }
   object Position {
     
-    @scala.inline
-    def apply(): Position = {
+    inline def apply(): Position = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -91,8 +85,7 @@ object mod {
   }
   object ScrollBooster {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getState: () => ScrollingState,
       scrollTo: Position => Unit,
@@ -104,26 +97,19 @@ object mod {
       __obj.asInstanceOf[ScrollBooster]
     }
     
-    @scala.inline
-    implicit class ScrollBoosterMutableBuilder[Self <: ScrollBooster] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollBooster](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetState(value: () => ScrollingState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => ScrollingState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScrollTo(value: Position => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      inline def setScrollTo(value: Position => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPosition(value: Position => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+      inline def setSetPosition(value: Position => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateMetrics(value: () => Unit): Self = StObject.set(x, "updateMetrics", js.Any.fromFunction0(value))
+      inline def setUpdateMetrics(value: () => Unit): Self = StObject.set(x, "updateMetrics", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateOptions(value: PartialScrollBoosterOptio => Unit): Self = StObject.set(x, "updateOptions", js.Any.fromFunction1(value))
+      inline def setUpdateOptions(value: PartialScrollBoosterOptio => Unit): Self = StObject.set(x, "updateOptions", js.Any.fromFunction1(value))
     }
   }
   
@@ -159,101 +145,70 @@ object mod {
   }
   object ScrollBoosterOptions {
     
-    @scala.inline
-    def apply(): ScrollBoosterOptions = {
+    inline def apply(): ScrollBoosterOptions = {
       val __obj = js.Dynamic.literal(viewport = null)
       __obj.asInstanceOf[ScrollBoosterOptions]
     }
     
-    @scala.inline
-    implicit class ScrollBoosterOptionsMutableBuilder[Self <: ScrollBoosterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollBoosterOptions](x: Self) {
       
-      @scala.inline
-      def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceForce(value: Double): Self = StObject.set(x, "bounceForce", value.asInstanceOf[js.Any])
+      inline def setBounceForce(value: Double): Self = StObject.set(x, "bounceForce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceForceUndefined: Self = StObject.set(x, "bounceForce", js.undefined)
+      inline def setBounceForceUndefined: Self = StObject.set(x, "bounceForce", js.undefined)
       
-      @scala.inline
-      def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+      inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
-      @scala.inline
-      def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDirection(value: horizontal | vertical | all): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: horizontal | vertical | all): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setEmulateScroll(value: Boolean): Self = StObject.set(x, "emulateScroll", value.asInstanceOf[js.Any])
+      inline def setEmulateScroll(value: Boolean): Self = StObject.set(x, "emulateScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmulateScrollUndefined: Self = StObject.set(x, "emulateScroll", js.undefined)
+      inline def setEmulateScrollUndefined: Self = StObject.set(x, "emulateScroll", js.undefined)
       
-      @scala.inline
-      def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+      inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+      inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
       
-      @scala.inline
-      def setInputsFocus(value: Boolean): Self = StObject.set(x, "inputsFocus", value.asInstanceOf[js.Any])
+      inline def setInputsFocus(value: Boolean): Self = StObject.set(x, "inputsFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsFocusUndefined: Self = StObject.set(x, "inputsFocus", js.undefined)
+      inline def setInputsFocusUndefined: Self = StObject.set(x, "inputsFocus", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* state */ ScrollingState, /* event */ Event) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* state */ ScrollingState, /* event */ Event) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* state */ ScrollingState => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* state */ ScrollingState => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPointerMode(value: touch | mouse | all): Self = StObject.set(x, "pointerMode", value.asInstanceOf[js.Any])
+      inline def setPointerMode(value: touch | mouse | all): Self = StObject.set(x, "pointerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerModeUndefined: Self = StObject.set(x, "pointerMode", js.undefined)
+      inline def setPointerModeUndefined: Self = StObject.set(x, "pointerMode", js.undefined)
       
-      @scala.inline
-      def setScrollMode(value: transform | native): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
+      inline def setScrollMode(value: transform | native): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollModeUndefined: Self = StObject.set(x, "scrollMode", js.undefined)
+      inline def setScrollModeUndefined: Self = StObject.set(x, "scrollMode", js.undefined)
       
-      @scala.inline
-      def setShouldScroll(value: (/* state */ ScrollingState, /* event */ Event) => Boolean): Self = StObject.set(x, "shouldScroll", js.Any.fromFunction2(value))
+      inline def setShouldScroll(value: (/* state */ ScrollingState, /* event */ Event) => Boolean): Self = StObject.set(x, "shouldScroll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldScrollUndefined: Self = StObject.set(x, "shouldScroll", js.undefined)
+      inline def setShouldScrollUndefined: Self = StObject.set(x, "shouldScroll", js.undefined)
       
-      @scala.inline
-      def setTextSelection(value: Boolean): Self = StObject.set(x, "textSelection", value.asInstanceOf[js.Any])
+      inline def setTextSelection(value: Boolean): Self = StObject.set(x, "textSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSelectionUndefined: Self = StObject.set(x, "textSelection", js.undefined)
+      inline def setTextSelectionUndefined: Self = StObject.set(x, "textSelection", js.undefined)
       
-      @scala.inline
-      def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+      inline def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportNull: Self = StObject.set(x, "viewport", null)
+      inline def setViewportNull: Self = StObject.set(x, "viewport", null)
     }
   }
   
@@ -271,8 +226,7 @@ object mod {
   }
   object ScrollingState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       borderCollision: Bottom,
       dragOffset: Double,
       isDragging: Boolean,
@@ -283,23 +237,17 @@ object mod {
       __obj.asInstanceOf[ScrollingState]
     }
     
-    @scala.inline
-    implicit class ScrollingStateMutableBuilder[Self <: ScrollingState] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollingState](x: Self) {
       
-      @scala.inline
-      def setBorderCollision(value: Bottom): Self = StObject.set(x, "borderCollision", value.asInstanceOf[js.Any])
+      inline def setBorderCollision(value: Bottom): Self = StObject.set(x, "borderCollision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOffset(value: Double): Self = StObject.set(x, "dragOffset", value.asInstanceOf[js.Any])
+      inline def setDragOffset(value: Double): Self = StObject.set(x, "dragOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
+      inline def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: RequiredPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: RequiredPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
 }

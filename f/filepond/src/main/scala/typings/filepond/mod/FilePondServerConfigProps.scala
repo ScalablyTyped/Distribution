@@ -60,70 +60,49 @@ trait FilePondServerConfigProps extends StObject {
 }
 object FilePondServerConfigProps {
   
-  @scala.inline
-  def apply(): FilePondServerConfigProps = {
+  inline def apply(): FilePondServerConfigProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilePondServerConfigProps]
   }
   
-  @scala.inline
-  implicit class FilePondServerConfigPropsMutableBuilder[Self <: FilePondServerConfigProps] (val x: Self) extends AnyVal {
+  extension [Self <: FilePondServerConfigProps](x: Self) {
     
-    @scala.inline
-    def setChunkForce(value: Boolean): Self = StObject.set(x, "chunkForce", value.asInstanceOf[js.Any])
+    inline def setChunkForce(value: Boolean): Self = StObject.set(x, "chunkForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkForceUndefined: Self = StObject.set(x, "chunkForce", js.undefined)
+    inline def setChunkForceUndefined: Self = StObject.set(x, "chunkForce", js.undefined)
     
-    @scala.inline
-    def setChunkRetryDelays(value: js.Array[Double]): Self = StObject.set(x, "chunkRetryDelays", value.asInstanceOf[js.Any])
+    inline def setChunkRetryDelays(value: js.Array[Double]): Self = StObject.set(x, "chunkRetryDelays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkRetryDelaysUndefined: Self = StObject.set(x, "chunkRetryDelays", js.undefined)
+    inline def setChunkRetryDelaysUndefined: Self = StObject.set(x, "chunkRetryDelays", js.undefined)
     
-    @scala.inline
-    def setChunkRetryDelaysVarargs(value: Double*): Self = StObject.set(x, "chunkRetryDelays", js.Array(value :_*))
+    inline def setChunkRetryDelaysVarargs(value: Double*): Self = StObject.set(x, "chunkRetryDelays", js.Array(value :_*))
     
-    @scala.inline
-    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    @scala.inline
-    def setChunkUploads(value: Boolean): Self = StObject.set(x, "chunkUploads", value.asInstanceOf[js.Any])
+    inline def setChunkUploads(value: Boolean): Self = StObject.set(x, "chunkUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkUploadsUndefined: Self = StObject.set(x, "chunkUploads", js.undefined)
+    inline def setChunkUploadsUndefined: Self = StObject.set(x, "chunkUploads", js.undefined)
     
-    @scala.inline
-    def setFiles(value: js.Array[FilePondInitialFile | ActualFileObject | Blob | String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[FilePondInitialFile | ActualFileObject | Blob | String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: (FilePondInitialFile | ActualFileObject | Blob | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: (FilePondInitialFile | ActualFileObject | Blob | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setInstantUpload(value: Boolean): Self = StObject.set(x, "instantUpload", value.asInstanceOf[js.Any])
+    inline def setInstantUpload(value: Boolean): Self = StObject.set(x, "instantUpload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstantUploadUndefined: Self = StObject.set(x, "instantUpload", js.undefined)
+    inline def setInstantUploadUndefined: Self = StObject.set(x, "instantUpload", js.undefined)
     
-    @scala.inline
-    def setMaxParallelUploads(value: Double): Self = StObject.set(x, "maxParallelUploads", value.asInstanceOf[js.Any])
+    inline def setMaxParallelUploads(value: Double): Self = StObject.set(x, "maxParallelUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxParallelUploadsUndefined: Self = StObject.set(x, "maxParallelUploads", js.undefined)
+    inline def setMaxParallelUploadsUndefined: Self = StObject.set(x, "maxParallelUploads", js.undefined)
     
-    @scala.inline
-    def setServer(value: String | Fetch): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String | Fetch): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNull: Self = StObject.set(x, "server", null)
+    inline def setServerNull: Self = StObject.set(x, "server", null)
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

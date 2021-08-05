@@ -11,19 +11,15 @@ trait OnScreenPositionTargetingOptionDetails extends StObject {
 }
 object OnScreenPositionTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): OnScreenPositionTargetingOptionDetails = {
+  inline def apply(): OnScreenPositionTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnScreenPositionTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class OnScreenPositionTargetingOptionDetailsMutableBuilder[Self <: OnScreenPositionTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnScreenPositionTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setOnScreenPosition(value: String): Self = StObject.set(x, "onScreenPosition", value.asInstanceOf[js.Any])
+    inline def setOnScreenPosition(value: String): Self = StObject.set(x, "onScreenPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnScreenPositionUndefined: Self = StObject.set(x, "onScreenPosition", js.undefined)
+    inline def setOnScreenPositionUndefined: Self = StObject.set(x, "onScreenPosition", js.undefined)
   }
 }

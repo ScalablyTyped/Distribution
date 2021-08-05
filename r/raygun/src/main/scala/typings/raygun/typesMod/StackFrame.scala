@@ -18,31 +18,23 @@ trait StackFrame extends StObject {
 }
 object StackFrame {
   
-  @scala.inline
-  def apply(className: String, fileName: String, lineNumber: Double, methodName: String): StackFrame = {
+  inline def apply(className: String, fileName: String, lineNumber: Double, methodName: String): StackFrame = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }
   
-  @scala.inline
-  implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+  extension [Self <: StackFrame](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+    inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
   }
 }

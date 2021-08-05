@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IVBSAXDTDHandler interface */
 trait IVBSAXDTDHandler extends StObject {
   
-  @JSName("MSXML2.IVBSAXDTDHandler_typekey")
+  /* private */ @JSName("MSXML2.IVBSAXDTDHandler_typekey")
   var MSXML2DotIVBSAXDTDHandler_typekey: IVBSAXDTDHandler
   
   /** Receive notification of a notation declaration event. */
@@ -18,8 +18,7 @@ trait IVBSAXDTDHandler extends StObject {
 }
 object IVBSAXDTDHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotIVBSAXDTDHandler_typekey: IVBSAXDTDHandler,
     notationDecl: (String, String, String) => Unit,
     unparsedEntityDecl: (String, String, String, String) => Unit
@@ -29,16 +28,12 @@ object IVBSAXDTDHandler {
     __obj.asInstanceOf[IVBSAXDTDHandler]
   }
   
-  @scala.inline
-  implicit class IVBSAXDTDHandlerMutableBuilder[Self <: IVBSAXDTDHandler] (val x: Self) extends AnyVal {
+  extension [Self <: IVBSAXDTDHandler](x: Self) {
     
-    @scala.inline
-    def setMSXML2DotIVBSAXDTDHandler_typekey(value: IVBSAXDTDHandler): Self = StObject.set(x, "MSXML2.IVBSAXDTDHandler_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotIVBSAXDTDHandler_typekey(value: IVBSAXDTDHandler): Self = StObject.set(x, "MSXML2.IVBSAXDTDHandler_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotationDecl(value: (String, String, String) => Unit): Self = StObject.set(x, "notationDecl", js.Any.fromFunction3(value))
+    inline def setNotationDecl(value: (String, String, String) => Unit): Self = StObject.set(x, "notationDecl", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUnparsedEntityDecl(value: (String, String, String, String) => Unit): Self = StObject.set(x, "unparsedEntityDecl", js.Any.fromFunction4(value))
+    inline def setUnparsedEntityDecl(value: (String, String, String, String) => Unit): Self = StObject.set(x, "unparsedEntityDecl", js.Any.fromFunction4(value))
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parseLinkTitleMod {
   
-  @scala.inline
-  def apply(str: String, pos: Double, max: Double): ParseResult = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
+  inline def apply(str: String, pos: Double, max: Double): ParseResult = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
   
   @JSImport("markdown-it/lib/helpers/parse_link_title", JSImport.Namespace)
   @js.native

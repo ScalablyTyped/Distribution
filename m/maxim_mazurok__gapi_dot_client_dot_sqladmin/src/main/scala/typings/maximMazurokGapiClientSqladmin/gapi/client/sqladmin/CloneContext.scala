@@ -26,43 +26,31 @@ trait CloneContext extends StObject {
 }
 object CloneContext {
   
-  @scala.inline
-  def apply(): CloneContext = {
+  inline def apply(): CloneContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloneContext]
   }
   
-  @scala.inline
-  implicit class CloneContextMutableBuilder[Self <: CloneContext] (val x: Self) extends AnyVal {
+  extension [Self <: CloneContext](x: Self) {
     
-    @scala.inline
-    def setBinLogCoordinates(value: BinLogCoordinates): Self = StObject.set(x, "binLogCoordinates", value.asInstanceOf[js.Any])
+    inline def setBinLogCoordinates(value: BinLogCoordinates): Self = StObject.set(x, "binLogCoordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinLogCoordinatesUndefined: Self = StObject.set(x, "binLogCoordinates", js.undefined)
+    inline def setBinLogCoordinatesUndefined: Self = StObject.set(x, "binLogCoordinates", js.undefined)
     
-    @scala.inline
-    def setDestinationInstanceName(value: String): Self = StObject.set(x, "destinationInstanceName", value.asInstanceOf[js.Any])
+    inline def setDestinationInstanceName(value: String): Self = StObject.set(x, "destinationInstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationInstanceNameUndefined: Self = StObject.set(x, "destinationInstanceName", js.undefined)
+    inline def setDestinationInstanceNameUndefined: Self = StObject.set(x, "destinationInstanceName", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPitrTimestampMs(value: String): Self = StObject.set(x, "pitrTimestampMs", value.asInstanceOf[js.Any])
+    inline def setPitrTimestampMs(value: String): Self = StObject.set(x, "pitrTimestampMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitrTimestampMsUndefined: Self = StObject.set(x, "pitrTimestampMs", js.undefined)
+    inline def setPitrTimestampMsUndefined: Self = StObject.set(x, "pitrTimestampMs", js.undefined)
     
-    @scala.inline
-    def setPointInTime(value: String): Self = StObject.set(x, "pointInTime", value.asInstanceOf[js.Any])
+    inline def setPointInTime(value: String): Self = StObject.set(x, "pointInTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointInTimeUndefined: Self = StObject.set(x, "pointInTime", js.undefined)
+    inline def setPointInTimeUndefined: Self = StObject.set(x, "pointInTime", js.undefined)
   }
 }

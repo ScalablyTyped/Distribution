@@ -23,31 +23,23 @@ trait JobWatermark extends StObject {
 }
 object JobWatermark {
   
-  @scala.inline
-  def apply(): JobWatermark = {
+  inline def apply(): JobWatermark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobWatermark]
   }
   
-  @scala.inline
-  implicit class JobWatermarkMutableBuilder[Self <: JobWatermark] (val x: Self) extends AnyVal {
+  extension [Self <: JobWatermark](x: Self) {
     
-    @scala.inline
-    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setInputKey(value: WatermarkKey): Self = StObject.set(x, "InputKey", value.asInstanceOf[js.Any])
+    inline def setInputKey(value: WatermarkKey): Self = StObject.set(x, "InputKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputKeyUndefined: Self = StObject.set(x, "InputKey", js.undefined)
+    inline def setInputKeyUndefined: Self = StObject.set(x, "InputKey", js.undefined)
     
-    @scala.inline
-    def setPresetWatermarkId(value: PresetWatermarkId): Self = StObject.set(x, "PresetWatermarkId", value.asInstanceOf[js.Any])
+    inline def setPresetWatermarkId(value: PresetWatermarkId): Self = StObject.set(x, "PresetWatermarkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetWatermarkIdUndefined: Self = StObject.set(x, "PresetWatermarkId", js.undefined)
+    inline def setPresetWatermarkIdUndefined: Self = StObject.set(x, "PresetWatermarkId", js.undefined)
   }
 }

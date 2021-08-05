@@ -23,31 +23,23 @@ trait GetCallerIdentityResponse extends StObject {
 }
 object GetCallerIdentityResponse {
   
-  @scala.inline
-  def apply(): GetCallerIdentityResponse = {
+  inline def apply(): GetCallerIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCallerIdentityResponse]
   }
   
-  @scala.inline
-  implicit class GetCallerIdentityResponseMutableBuilder[Self <: GetCallerIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCallerIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setAccount(value: accountType): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: accountType): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setUserId(value: userIdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: userIdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

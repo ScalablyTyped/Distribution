@@ -67,73 +67,51 @@ trait ISCSIPersistentVolumeSource extends StObject {
 }
 object ISCSIPersistentVolumeSource {
   
-  @scala.inline
-  def apply(iqn: Input[String], lun: Input[Double], targetPortal: Input[String]): ISCSIPersistentVolumeSource = {
+  inline def apply(iqn: Input[String], lun: Input[Double], targetPortal: Input[String]): ISCSIPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(iqn = iqn.asInstanceOf[js.Any], lun = lun.asInstanceOf[js.Any], targetPortal = targetPortal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISCSIPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class ISCSIPersistentVolumeSourceMutableBuilder[Self <: ISCSIPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: ISCSIPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setChapAuthDiscovery(value: Input[Boolean]): Self = StObject.set(x, "chapAuthDiscovery", value.asInstanceOf[js.Any])
+    inline def setChapAuthDiscovery(value: Input[Boolean]): Self = StObject.set(x, "chapAuthDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChapAuthDiscoveryUndefined: Self = StObject.set(x, "chapAuthDiscovery", js.undefined)
+    inline def setChapAuthDiscoveryUndefined: Self = StObject.set(x, "chapAuthDiscovery", js.undefined)
     
-    @scala.inline
-    def setChapAuthSession(value: Input[Boolean]): Self = StObject.set(x, "chapAuthSession", value.asInstanceOf[js.Any])
+    inline def setChapAuthSession(value: Input[Boolean]): Self = StObject.set(x, "chapAuthSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChapAuthSessionUndefined: Self = StObject.set(x, "chapAuthSession", js.undefined)
+    inline def setChapAuthSessionUndefined: Self = StObject.set(x, "chapAuthSession", js.undefined)
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setInitiatorName(value: Input[String]): Self = StObject.set(x, "initiatorName", value.asInstanceOf[js.Any])
+    inline def setInitiatorName(value: Input[String]): Self = StObject.set(x, "initiatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorNameUndefined: Self = StObject.set(x, "initiatorName", js.undefined)
+    inline def setInitiatorNameUndefined: Self = StObject.set(x, "initiatorName", js.undefined)
     
-    @scala.inline
-    def setIqn(value: Input[String]): Self = StObject.set(x, "iqn", value.asInstanceOf[js.Any])
+    inline def setIqn(value: Input[String]): Self = StObject.set(x, "iqn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIscsiInterface(value: Input[String]): Self = StObject.set(x, "iscsiInterface", value.asInstanceOf[js.Any])
+    inline def setIscsiInterface(value: Input[String]): Self = StObject.set(x, "iscsiInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIscsiInterfaceUndefined: Self = StObject.set(x, "iscsiInterface", js.undefined)
+    inline def setIscsiInterfaceUndefined: Self = StObject.set(x, "iscsiInterface", js.undefined)
     
-    @scala.inline
-    def setLun(value: Input[Double]): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
+    inline def setLun(value: Input[Double]): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortals(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
+    inline def setPortals(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalsUndefined: Self = StObject.set(x, "portals", js.undefined)
+    inline def setPortalsUndefined: Self = StObject.set(x, "portals", js.undefined)
     
-    @scala.inline
-    def setPortalsVarargs(value: Input[String]*): Self = StObject.set(x, "portals", js.Array(value :_*))
+    inline def setPortalsVarargs(value: Input[String]*): Self = StObject.set(x, "portals", js.Array(value :_*))
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
+    inline def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
     
-    @scala.inline
-    def setTargetPortal(value: Input[String]): Self = StObject.set(x, "targetPortal", value.asInstanceOf[js.Any])
+    inline def setTargetPortal(value: Input[String]): Self = StObject.set(x, "targetPortal", value.asInstanceOf[js.Any])
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentDigitalSignature extends StObject
 object DocumentDigitalSignature {
   
-  @scala.inline
-  def dss: typings.ipp.ippStrings.dss = "dss".asInstanceOf[typings.ipp.ippStrings.dss]
+  inline def dss: typings.ipp.ippStrings.dss = "dss".asInstanceOf[typings.ipp.ippStrings.dss]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def pgp: typings.ipp.ippStrings.pgp = "pgp".asInstanceOf[typings.ipp.ippStrings.pgp]
+  inline def pgp: typings.ipp.ippStrings.pgp = "pgp".asInstanceOf[typings.ipp.ippStrings.pgp]
   
-  @scala.inline
-  def smime: typings.ipp.ippStrings.smime = "smime".asInstanceOf[typings.ipp.ippStrings.smime]
+  inline def smime: typings.ipp.ippStrings.smime = "smime".asInstanceOf[typings.ipp.ippStrings.smime]
   
-  @scala.inline
-  def xmldsig: typings.ipp.ippStrings.xmldsig = "xmldsig".asInstanceOf[typings.ipp.ippStrings.xmldsig]
+  inline def xmldsig: typings.ipp.ippStrings.xmldsig = "xmldsig".asInstanceOf[typings.ipp.ippStrings.xmldsig]
 }

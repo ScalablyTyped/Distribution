@@ -10,16 +10,13 @@ trait OnDismissStart extends StObject {
 }
 object OnDismissStart {
   
-  @scala.inline
-  def apply(onDismissStart: () => Unit): OnDismissStart = {
+  inline def apply(onDismissStart: () => Unit): OnDismissStart = {
     val __obj = js.Dynamic.literal(onDismissStart = js.Any.fromFunction0(onDismissStart))
     __obj.asInstanceOf[OnDismissStart]
   }
   
-  @scala.inline
-  implicit class OnDismissStartMutableBuilder[Self <: OnDismissStart] (val x: Self) extends AnyVal {
+  extension [Self <: OnDismissStart](x: Self) {
     
-    @scala.inline
-    def setOnDismissStart(value: () => Unit): Self = StObject.set(x, "onDismissStart", js.Any.fromFunction0(value))
+    inline def setOnDismissStart(value: () => Unit): Self = StObject.set(x, "onDismissStart", js.Any.fromFunction0(value))
   }
 }

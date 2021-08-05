@@ -40,31 +40,23 @@ trait ColumnProperties
 }
 object ColumnProperties {
   
-  @scala.inline
-  def apply(): ColumnProperties = {
+  inline def apply(): ColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnProperties]
   }
   
-  @scala.inline
-  implicit class ColumnPropertiesMutableBuilder[Self <: ColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnProperties](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    inline def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
   }
 }

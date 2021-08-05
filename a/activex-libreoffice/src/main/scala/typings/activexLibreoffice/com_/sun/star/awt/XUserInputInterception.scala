@@ -42,8 +42,7 @@ trait XUserInputInterception
 }
 object XUserInputInterception {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addKeyHandler: XKeyHandler => Unit,
     addMouseClickHandler: XMouseClickHandler => Unit,
@@ -56,19 +55,14 @@ object XUserInputInterception {
     __obj.asInstanceOf[XUserInputInterception]
   }
   
-  @scala.inline
-  implicit class XUserInputInterceptionMutableBuilder[Self <: XUserInputInterception] (val x: Self) extends AnyVal {
+  extension [Self <: XUserInputInterception](x: Self) {
     
-    @scala.inline
-    def setAddKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "addKeyHandler", js.Any.fromFunction1(value))
+    inline def setAddKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "addKeyHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMouseClickHandler(value: XMouseClickHandler => Unit): Self = StObject.set(x, "addMouseClickHandler", js.Any.fromFunction1(value))
+    inline def setAddMouseClickHandler(value: XMouseClickHandler => Unit): Self = StObject.set(x, "addMouseClickHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "removeKeyHandler", js.Any.fromFunction1(value))
+    inline def setRemoveKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "removeKeyHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMouseClickHandler(value: XMouseClickHandler => Unit): Self = StObject.set(x, "removeMouseClickHandler", js.Any.fromFunction1(value))
+    inline def setRemoveMouseClickHandler(value: XMouseClickHandler => Unit): Self = StObject.set(x, "removeMouseClickHandler", js.Any.fromFunction1(value))
   }
 }

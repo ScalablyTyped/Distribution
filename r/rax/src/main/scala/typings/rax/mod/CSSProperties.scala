@@ -20,8 +20,7 @@ trait CSSProperties
 /* key */ StringDictionary[js.Any]
 object CSSProperties {
   
-  @scala.inline
-  def apply(): CSSProperties = {
+  inline def apply(): CSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSProperties]
   }

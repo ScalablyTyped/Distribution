@@ -23,22 +23,17 @@ trait ThreadDetails extends StObject {
 }
 object ThreadDetails {
   
-  @scala.inline
-  def apply(context: CpuContext, id: ThreadId, state: ThreadState): ThreadDetails = {
+  inline def apply(context: CpuContext, id: ThreadId, state: ThreadState): ThreadDetails = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadDetails]
   }
   
-  @scala.inline
-  implicit class ThreadDetailsMutableBuilder[Self <: ThreadDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadDetails](x: Self) {
     
-    @scala.inline
-    def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: ThreadId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ThreadId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ThreadState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ThreadState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

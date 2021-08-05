@@ -12,22 +12,17 @@ trait NewsRepositoryInboxResponseAymf extends StObject {
 }
 object NewsRepositoryInboxResponseAymf {
   
-  @scala.inline
-  def apply(items: js.Array[NewsRepositoryInboxResponseItemsItem], more_available: Boolean): NewsRepositoryInboxResponseAymf = {
+  inline def apply(items: js.Array[NewsRepositoryInboxResponseItemsItem], more_available: Boolean): NewsRepositoryInboxResponseAymf = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseAymf]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseAymfMutableBuilder[Self <: NewsRepositoryInboxResponseAymf] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseAymf](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[NewsRepositoryInboxResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[NewsRepositoryInboxResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: NewsRepositoryInboxResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: NewsRepositoryInboxResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
   }
 }

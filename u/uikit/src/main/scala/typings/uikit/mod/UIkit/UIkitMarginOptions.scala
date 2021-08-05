@@ -12,25 +12,19 @@ trait UIkitMarginOptions extends StObject {
 }
 object UIkitMarginOptions {
   
-  @scala.inline
-  def apply(): UIkitMarginOptions = {
+  inline def apply(): UIkitMarginOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitMarginOptions]
   }
   
-  @scala.inline
-  implicit class UIkitMarginOptionsMutableBuilder[Self <: UIkitMarginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitMarginOptions](x: Self) {
     
-    @scala.inline
-    def `setFirst-column`(value: String): Self = StObject.set(x, "first-column", value.asInstanceOf[js.Any])
+    inline def `setFirst-column`(value: String): Self = StObject.set(x, "first-column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFirst-columnUndefined`: Self = StObject.set(x, "first-column", js.undefined)
+    inline def `setFirst-columnUndefined`: Self = StObject.set(x, "first-column", js.undefined)
     
-    @scala.inline
-    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait ListPackagingConfigurationsRequest extends StObject {
 }
 object ListPackagingConfigurationsRequest {
   
-  @scala.inline
-  def apply(): ListPackagingConfigurationsRequest = {
+  inline def apply(): ListPackagingConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPackagingConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class ListPackagingConfigurationsRequestMutableBuilder[Self <: ListPackagingConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPackagingConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPackagingGroupId(value: string): Self = StObject.set(x, "PackagingGroupId", value.asInstanceOf[js.Any])
+    inline def setPackagingGroupId(value: string): Self = StObject.set(x, "PackagingGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagingGroupIdUndefined: Self = StObject.set(x, "PackagingGroupId", js.undefined)
+    inline def setPackagingGroupIdUndefined: Self = StObject.set(x, "PackagingGroupId", js.undefined)
   }
 }

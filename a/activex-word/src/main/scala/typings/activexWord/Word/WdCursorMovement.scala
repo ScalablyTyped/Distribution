@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCursorMovement extends StObject
 object WdCursorMovement {
   
-  @scala.inline
-  def wdCursorMovementLogical: `0` = 0.asInstanceOf[`0`]
+  inline def wdCursorMovementLogical: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdCursorMovementVisual: `1` = 1.asInstanceOf[`1`]
+  inline def wdCursorMovementVisual: `1` = 1.asInstanceOf[`1`]
 }

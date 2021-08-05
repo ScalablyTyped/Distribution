@@ -12,23 +12,18 @@ object diffLinesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def diffLinesRaw(aLines: js.Array[String], bLines: js.Array[String]): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffLinesRaw")(aLines.asInstanceOf[js.Any], bLines.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  inline def diffLinesRaw(aLines: js.Array[String], bLines: js.Array[String]): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffLinesRaw")(aLines.asInstanceOf[js.Any], bLines.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
   
-  @scala.inline
-  def diffLinesUnified(aLines: js.Array[String], bLines: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("diffLinesUnified")(aLines.asInstanceOf[js.Any], bLines.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def diffLinesUnified(aLines: js.Array[String], bLines: js.Array[String], options: DiffOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("diffLinesUnified")(aLines.asInstanceOf[js.Any], bLines.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def diffLinesUnified(aLines: js.Array[String], bLines: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("diffLinesUnified")(aLines.asInstanceOf[js.Any], bLines.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def diffLinesUnified(aLines: js.Array[String], bLines: js.Array[String], options: DiffOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("diffLinesUnified")(aLines.asInstanceOf[js.Any], bLines.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def diffLinesUnified2(
+  inline def diffLinesUnified2(
     aLinesDisplay: js.Array[String],
     bLinesDisplay: js.Array[String],
     aLinesCompare: js.Array[String],
     bLinesCompare: js.Array[String]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("diffLinesUnified2")(aLinesDisplay.asInstanceOf[js.Any], bLinesDisplay.asInstanceOf[js.Any], aLinesCompare.asInstanceOf[js.Any], bLinesCompare.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def diffLinesUnified2(
+  inline def diffLinesUnified2(
     aLinesDisplay: js.Array[String],
     bLinesDisplay: js.Array[String],
     aLinesCompare: js.Array[String],

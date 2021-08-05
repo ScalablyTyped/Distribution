@@ -10,6 +10,5 @@ object mergeDeepMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeDeep(defaults: js.Any, options: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def mergeDeep(defaults: js.Any, options: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 }

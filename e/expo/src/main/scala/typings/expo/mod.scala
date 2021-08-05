@@ -26,16 +26,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def disableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableExpoCliLogging")().asInstanceOf[Unit]
+    inline def disableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableExpoCliLogging")().asInstanceOf[Unit]
     
-    @scala.inline
-    def enableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableExpoCliLogging")().asInstanceOf[Unit]
+    inline def enableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableExpoCliLogging")().asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def apisAreAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("apisAreAvailable")().asInstanceOf[Boolean]
+  inline def apisAreAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("apisAreAvailable")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def registerRootComponent[P](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRootComponent")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerRootComponent[P](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRootComponent")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

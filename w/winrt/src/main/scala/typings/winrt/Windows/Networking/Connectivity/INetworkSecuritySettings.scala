@@ -12,19 +12,15 @@ trait INetworkSecuritySettings extends StObject {
 }
 object INetworkSecuritySettings {
   
-  @scala.inline
-  def apply(networkAuthenticationType: NetworkAuthenticationType, networkEncryptionType: NetworkEncryptionType): INetworkSecuritySettings = {
+  inline def apply(networkAuthenticationType: NetworkAuthenticationType, networkEncryptionType: NetworkEncryptionType): INetworkSecuritySettings = {
     val __obj = js.Dynamic.literal(networkAuthenticationType = networkAuthenticationType.asInstanceOf[js.Any], networkEncryptionType = networkEncryptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[INetworkSecuritySettings]
   }
   
-  @scala.inline
-  implicit class INetworkSecuritySettingsMutableBuilder[Self <: INetworkSecuritySettings] (val x: Self) extends AnyVal {
+  extension [Self <: INetworkSecuritySettings](x: Self) {
     
-    @scala.inline
-    def setNetworkAuthenticationType(value: NetworkAuthenticationType): Self = StObject.set(x, "networkAuthenticationType", value.asInstanceOf[js.Any])
+    inline def setNetworkAuthenticationType(value: NetworkAuthenticationType): Self = StObject.set(x, "networkAuthenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkEncryptionType(value: NetworkEncryptionType): Self = StObject.set(x, "networkEncryptionType", value.asInstanceOf[js.Any])
+    inline def setNetworkEncryptionType(value: NetworkEncryptionType): Self = StObject.set(x, "networkEncryptionType", value.asInstanceOf[js.Any])
   }
 }

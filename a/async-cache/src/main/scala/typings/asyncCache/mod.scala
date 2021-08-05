@@ -60,19 +60,16 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       load: (String, js.Function3[/* error */ js.Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]) => Unit
     ): Options[T] = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load))
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setLoad(
+      inline def setLoad(
         value: (String, js.Function3[/* error */ js.Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]) => Unit
       ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     }

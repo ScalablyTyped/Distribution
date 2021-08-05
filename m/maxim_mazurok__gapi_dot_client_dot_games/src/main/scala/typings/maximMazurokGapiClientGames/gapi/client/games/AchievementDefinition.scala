@@ -47,91 +47,63 @@ trait AchievementDefinition extends StObject {
 }
 object AchievementDefinition {
   
-  @scala.inline
-  def apply(): AchievementDefinition = {
+  inline def apply(): AchievementDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AchievementDefinition]
   }
   
-  @scala.inline
-  implicit class AchievementDefinitionMutableBuilder[Self <: AchievementDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AchievementDefinition](x: Self) {
     
-    @scala.inline
-    def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
+    inline def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
+    inline def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExperiencePoints(value: String): Self = StObject.set(x, "experiencePoints", value.asInstanceOf[js.Any])
+    inline def setExperiencePoints(value: String): Self = StObject.set(x, "experiencePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperiencePointsUndefined: Self = StObject.set(x, "experiencePoints", js.undefined)
+    inline def setExperiencePointsUndefined: Self = StObject.set(x, "experiencePoints", js.undefined)
     
-    @scala.inline
-    def setFormattedTotalSteps(value: String): Self = StObject.set(x, "formattedTotalSteps", value.asInstanceOf[js.Any])
+    inline def setFormattedTotalSteps(value: String): Self = StObject.set(x, "formattedTotalSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedTotalStepsUndefined: Self = StObject.set(x, "formattedTotalSteps", js.undefined)
+    inline def setFormattedTotalStepsUndefined: Self = StObject.set(x, "formattedTotalSteps", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setIsRevealedIconUrlDefault(value: Boolean): Self = StObject.set(x, "isRevealedIconUrlDefault", value.asInstanceOf[js.Any])
+    inline def setIsRevealedIconUrlDefault(value: Boolean): Self = StObject.set(x, "isRevealedIconUrlDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRevealedIconUrlDefaultUndefined: Self = StObject.set(x, "isRevealedIconUrlDefault", js.undefined)
+    inline def setIsRevealedIconUrlDefaultUndefined: Self = StObject.set(x, "isRevealedIconUrlDefault", js.undefined)
     
-    @scala.inline
-    def setIsUnlockedIconUrlDefault(value: Boolean): Self = StObject.set(x, "isUnlockedIconUrlDefault", value.asInstanceOf[js.Any])
+    inline def setIsUnlockedIconUrlDefault(value: Boolean): Self = StObject.set(x, "isUnlockedIconUrlDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnlockedIconUrlDefaultUndefined: Self = StObject.set(x, "isUnlockedIconUrlDefault", js.undefined)
+    inline def setIsUnlockedIconUrlDefaultUndefined: Self = StObject.set(x, "isUnlockedIconUrlDefault", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRevealedIconUrl(value: String): Self = StObject.set(x, "revealedIconUrl", value.asInstanceOf[js.Any])
+    inline def setRevealedIconUrl(value: String): Self = StObject.set(x, "revealedIconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevealedIconUrlUndefined: Self = StObject.set(x, "revealedIconUrl", js.undefined)
+    inline def setRevealedIconUrlUndefined: Self = StObject.set(x, "revealedIconUrl", js.undefined)
     
-    @scala.inline
-    def setTotalSteps(value: Double): Self = StObject.set(x, "totalSteps", value.asInstanceOf[js.Any])
+    inline def setTotalSteps(value: Double): Self = StObject.set(x, "totalSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalStepsUndefined: Self = StObject.set(x, "totalSteps", js.undefined)
+    inline def setTotalStepsUndefined: Self = StObject.set(x, "totalSteps", js.undefined)
     
-    @scala.inline
-    def setUnlockedIconUrl(value: String): Self = StObject.set(x, "unlockedIconUrl", value.asInstanceOf[js.Any])
+    inline def setUnlockedIconUrl(value: String): Self = StObject.set(x, "unlockedIconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockedIconUrlUndefined: Self = StObject.set(x, "unlockedIconUrl", js.undefined)
+    inline def setUnlockedIconUrlUndefined: Self = StObject.set(x, "unlockedIconUrl", js.undefined)
   }
 }

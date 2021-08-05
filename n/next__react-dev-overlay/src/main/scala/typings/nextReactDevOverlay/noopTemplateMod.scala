@@ -11,6 +11,5 @@ object noopTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def noop(strings: TemplateStringsArray, keys: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(strings.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def noop(strings: TemplateStringsArray, keys: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(strings.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[String]
 }

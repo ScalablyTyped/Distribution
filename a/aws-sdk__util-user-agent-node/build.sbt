@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-user-agent-node"
-version := "1.0.0-rc.7-4de5c2"
+version := "1.0.0-rc.7-f0ce2b"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -18,19 +18,15 @@ trait GetGatewayResponseRequest extends StObject {
 }
 object GetGatewayResponseRequest {
   
-  @scala.inline
-  def apply(responseType: GatewayResponseType, restApiId: String): GetGatewayResponseRequest = {
+  inline def apply(responseType: GatewayResponseType, restApiId: String): GetGatewayResponseRequest = {
     val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGatewayResponseRequest]
   }
   
-  @scala.inline
-  implicit class GetGatewayResponseRequestMutableBuilder[Self <: GetGatewayResponseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGatewayResponseRequest](x: Self) {
     
-    @scala.inline
-    def setResponseType(value: GatewayResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: GatewayResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

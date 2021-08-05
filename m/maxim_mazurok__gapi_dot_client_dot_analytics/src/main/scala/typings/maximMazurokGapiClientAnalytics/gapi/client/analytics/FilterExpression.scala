@@ -117,49 +117,35 @@ trait FilterExpression extends StObject {
 }
 object FilterExpression {
   
-  @scala.inline
-  def apply(): FilterExpression = {
+  inline def apply(): FilterExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterExpression]
   }
   
-  @scala.inline
-  implicit class FilterExpressionMutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
+  extension [Self <: FilterExpression](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setExpressionValue(value: String): Self = StObject.set(x, "expressionValue", value.asInstanceOf[js.Any])
+    inline def setExpressionValue(value: String): Self = StObject.set(x, "expressionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionValueUndefined: Self = StObject.set(x, "expressionValue", js.undefined)
+    inline def setExpressionValueUndefined: Self = StObject.set(x, "expressionValue", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldIndex(value: Double): Self = StObject.set(x, "fieldIndex", value.asInstanceOf[js.Any])
+    inline def setFieldIndex(value: Double): Self = StObject.set(x, "fieldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldIndexUndefined: Self = StObject.set(x, "fieldIndex", js.undefined)
+    inline def setFieldIndexUndefined: Self = StObject.set(x, "fieldIndex", js.undefined)
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
+    inline def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
   }
 }

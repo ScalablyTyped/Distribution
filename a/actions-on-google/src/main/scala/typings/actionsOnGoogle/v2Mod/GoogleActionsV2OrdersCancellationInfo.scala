@@ -13,19 +13,15 @@ trait GoogleActionsV2OrdersCancellationInfo extends StObject {
 }
 object GoogleActionsV2OrdersCancellationInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersCancellationInfo = {
+  inline def apply(): GoogleActionsV2OrdersCancellationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersCancellationInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersCancellationInfoMutableBuilder[Self <: GoogleActionsV2OrdersCancellationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersCancellationInfo](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

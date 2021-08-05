@@ -11,19 +11,15 @@ trait NotifierSecretRef extends StObject {
 }
 object NotifierSecretRef {
   
-  @scala.inline
-  def apply(): NotifierSecretRef = {
+  inline def apply(): NotifierSecretRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifierSecretRef]
   }
   
-  @scala.inline
-  implicit class NotifierSecretRefMutableBuilder[Self <: NotifierSecretRef] (val x: Self) extends AnyVal {
+  extension [Self <: NotifierSecretRef](x: Self) {
     
-    @scala.inline
-    def setSecretRef(value: String): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: String): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
+    inline def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
   }
 }

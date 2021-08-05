@@ -13,22 +13,17 @@ trait Design extends StObject {
 }
 object Design {
   
-  @scala.inline
-  def apply(body: Rows): Design = {
+  inline def apply(body: Rows): Design = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[Design]
   }
   
-  @scala.inline
-  implicit class DesignMutableBuilder[Self <: Design] (val x: Self) extends AnyVal {
+  extension [Self <: Design](x: Self) {
     
-    @scala.inline
-    def setBody(value: Rows): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Rows): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounters(value: js.Object): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
+    inline def setCounters(value: js.Object): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
+    inline def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
   }
 }

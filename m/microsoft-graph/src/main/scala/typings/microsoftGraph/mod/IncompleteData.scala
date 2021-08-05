@@ -14,31 +14,23 @@ trait IncompleteData extends StObject {
 }
 object IncompleteData {
   
-  @scala.inline
-  def apply(): IncompleteData = {
+  inline def apply(): IncompleteData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncompleteData]
   }
   
-  @scala.inline
-  implicit class IncompleteDataMutableBuilder[Self <: IncompleteData] (val x: Self) extends AnyVal {
+  extension [Self <: IncompleteData](x: Self) {
     
-    @scala.inline
-    def setMissingDataBeforeDateTime(value: NullableOption[String]): Self = StObject.set(x, "missingDataBeforeDateTime", value.asInstanceOf[js.Any])
+    inline def setMissingDataBeforeDateTime(value: NullableOption[String]): Self = StObject.set(x, "missingDataBeforeDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingDataBeforeDateTimeNull: Self = StObject.set(x, "missingDataBeforeDateTime", null)
+    inline def setMissingDataBeforeDateTimeNull: Self = StObject.set(x, "missingDataBeforeDateTime", null)
     
-    @scala.inline
-    def setMissingDataBeforeDateTimeUndefined: Self = StObject.set(x, "missingDataBeforeDateTime", js.undefined)
+    inline def setMissingDataBeforeDateTimeUndefined: Self = StObject.set(x, "missingDataBeforeDateTime", js.undefined)
     
-    @scala.inline
-    def setWasThrottled(value: NullableOption[Boolean]): Self = StObject.set(x, "wasThrottled", value.asInstanceOf[js.Any])
+    inline def setWasThrottled(value: NullableOption[Boolean]): Self = StObject.set(x, "wasThrottled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasThrottledNull: Self = StObject.set(x, "wasThrottled", null)
+    inline def setWasThrottledNull: Self = StObject.set(x, "wasThrottled", null)
     
-    @scala.inline
-    def setWasThrottledUndefined: Self = StObject.set(x, "wasThrottled", js.undefined)
+    inline def setWasThrottledUndefined: Self = StObject.set(x, "wasThrottled", js.undefined)
   }
 }

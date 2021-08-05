@@ -22,8 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object WebRequestFullDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: integer,
     method: String,
     parentFrameId: integer,
@@ -39,10 +38,8 @@ object WebRequestFullDetails {
     __obj.asInstanceOf[WebRequestFullDetails]
   }
   
-  @scala.inline
-  implicit class WebRequestFullDetailsMutableBuilder[Self <: WebRequestFullDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebRequestFullDetails](x: Self) {
     
-    @scala.inline
-    def setRequestBody(value: WebRequestBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: WebRequestBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
   }
 }

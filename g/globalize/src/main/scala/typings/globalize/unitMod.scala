@@ -85,28 +85,22 @@ object unitMod extends Shortcut {
     }
     object UnitFormatterOptions {
       
-      @scala.inline
-      def apply(): UnitFormatterOptions = {
+      inline def apply(): UnitFormatterOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UnitFormatterOptions]
       }
       
-      @scala.inline
-      implicit class UnitFormatterOptionsMutableBuilder[Self <: UnitFormatterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: UnitFormatterOptions](x: Self) {
         
-        @scala.inline
-        def setForm(value: long | short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+        inline def setForm(value: long | short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+        inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
         
-        @scala.inline
-        def setNumberFormatter(
+        inline def setNumberFormatter(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
         ): Self = StObject.set(x, "numberFormatter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumberFormatterUndefined: Self = StObject.set(x, "numberFormatter", js.undefined)
+        inline def setNumberFormatterUndefined: Self = StObject.set(x, "numberFormatter", js.undefined)
       }
     }
   }

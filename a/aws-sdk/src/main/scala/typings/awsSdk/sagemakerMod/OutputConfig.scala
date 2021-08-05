@@ -28,34 +28,25 @@ trait OutputConfig extends StObject {
 }
 object OutputConfig {
   
-  @scala.inline
-  def apply(S3OutputLocation: S3Uri): OutputConfig = {
+  inline def apply(S3OutputLocation: S3Uri): OutputConfig = {
     val __obj = js.Dynamic.literal(S3OutputLocation = S3OutputLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputConfig]
   }
   
-  @scala.inline
-  implicit class OutputConfigMutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OutputConfig](x: Self) {
     
-    @scala.inline
-    def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "CompilerOptions", value.asInstanceOf[js.Any])
+    inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "CompilerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilerOptionsUndefined: Self = StObject.set(x, "CompilerOptions", js.undefined)
+    inline def setCompilerOptionsUndefined: Self = StObject.set(x, "CompilerOptions", js.undefined)
     
-    @scala.inline
-    def setS3OutputLocation(value: S3Uri): Self = StObject.set(x, "S3OutputLocation", value.asInstanceOf[js.Any])
+    inline def setS3OutputLocation(value: S3Uri): Self = StObject.set(x, "S3OutputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDevice(value: TargetDevice): Self = StObject.set(x, "TargetDevice", value.asInstanceOf[js.Any])
+    inline def setTargetDevice(value: TargetDevice): Self = StObject.set(x, "TargetDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDeviceUndefined: Self = StObject.set(x, "TargetDevice", js.undefined)
+    inline def setTargetDeviceUndefined: Self = StObject.set(x, "TargetDevice", js.undefined)
     
-    @scala.inline
-    def setTargetPlatform(value: TargetPlatform): Self = StObject.set(x, "TargetPlatform", value.asInstanceOf[js.Any])
+    inline def setTargetPlatform(value: TargetPlatform): Self = StObject.set(x, "TargetPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPlatformUndefined: Self = StObject.set(x, "TargetPlatform", js.undefined)
+    inline def setTargetPlatformUndefined: Self = StObject.set(x, "TargetPlatform", js.undefined)
   }
 }

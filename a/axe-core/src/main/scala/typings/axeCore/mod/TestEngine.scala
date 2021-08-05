@@ -12,19 +12,15 @@ trait TestEngine extends StObject {
 }
 object TestEngine {
   
-  @scala.inline
-  def apply(name: String, version: String): TestEngine = {
+  inline def apply(name: String, version: String): TestEngine = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEngine]
   }
   
-  @scala.inline
-  implicit class TestEngineMutableBuilder[Self <: TestEngine] (val x: Self) extends AnyVal {
+  extension [Self <: TestEngine](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

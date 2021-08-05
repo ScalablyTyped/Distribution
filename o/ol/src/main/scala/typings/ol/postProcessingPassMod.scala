@@ -33,41 +33,30 @@ object postProcessingPassMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(webGlContext: WebGLRenderingContext): Options = {
+    inline def apply(webGlContext: WebGLRenderingContext): Options = {
       val __obj = js.Dynamic.literal(webGlContext = webGlContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
+      inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
+      inline def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
       
-      @scala.inline
-      def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
+      inline def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
+      inline def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      @scala.inline
-      def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
+      inline def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
+      inline def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
       
-      @scala.inline
-      def setWebGlContext(value: WebGLRenderingContext): Self = StObject.set(x, "webGlContext", value.asInstanceOf[js.Any])
+      inline def setWebGlContext(value: WebGLRenderingContext): Self = StObject.set(x, "webGlContext", value.asInstanceOf[js.Any])
     }
   }
   

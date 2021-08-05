@@ -13,19 +13,15 @@ trait ActionExecutionFilter extends StObject {
 }
 object ActionExecutionFilter {
   
-  @scala.inline
-  def apply(): ActionExecutionFilter = {
+  inline def apply(): ActionExecutionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionExecutionFilter]
   }
   
-  @scala.inline
-  implicit class ActionExecutionFilterMutableBuilder[Self <: ActionExecutionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ActionExecutionFilter](x: Self) {
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
+    inline def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
   }
 }

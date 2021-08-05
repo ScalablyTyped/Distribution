@@ -14,25 +14,19 @@ trait RQDeleteFileParam extends StObject {
 }
 object RQDeleteFileParam {
   
-  @scala.inline
-  def apply(fileList: js.Array[String]): RQDeleteFileParam = {
+  inline def apply(fileList: js.Array[String]): RQDeleteFileParam = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[RQDeleteFileParam]
   }
   
-  @scala.inline
-  implicit class RQDeleteFileParamMutableBuilder[Self <: RQDeleteFileParam] (val x: Self) extends AnyVal {
+  extension [Self <: RQDeleteFileParam](x: Self) {
     
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setFileList(value: js.Array[String]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[String]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: String*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: String*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

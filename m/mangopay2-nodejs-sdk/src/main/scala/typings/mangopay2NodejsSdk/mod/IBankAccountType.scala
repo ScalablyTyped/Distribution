@@ -26,31 +26,23 @@ trait IBankAccountType extends StObject {
 }
 object IBankAccountType {
   
-  @scala.inline
-  def apply(): IBankAccountType = {
+  inline def apply(): IBankAccountType = {
     val __obj = js.Dynamic.literal(CA = "CA", GB = "GB", IBAN = "IBAN", NotSpecified = "NotSpecified", OTHER = "OTHER", US = "US")
     __obj.asInstanceOf[IBankAccountType]
   }
   
-  @scala.inline
-  implicit class IBankAccountTypeMutableBuilder[Self <: IBankAccountType] (val x: Self) extends AnyVal {
+  extension [Self <: IBankAccountType](x: Self) {
     
-    @scala.inline
-    def setCA(value: CA): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
+    inline def setCA(value: CA): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGB(value: GB): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
+    inline def setGB(value: GB): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIBAN(value: IBAN): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
+    inline def setIBAN(value: IBAN): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
+    inline def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOTHER(value: OTHER): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
+    inline def setOTHER(value: OTHER): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUS(value: US): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
+    inline def setUS(value: US): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
   }
 }

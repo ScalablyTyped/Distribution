@@ -13,19 +13,15 @@ trait AcceptReservedNodeExchangeOutputMessage extends StObject {
 }
 object AcceptReservedNodeExchangeOutputMessage {
   
-  @scala.inline
-  def apply(): AcceptReservedNodeExchangeOutputMessage = {
+  inline def apply(): AcceptReservedNodeExchangeOutputMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcceptReservedNodeExchangeOutputMessage]
   }
   
-  @scala.inline
-  implicit class AcceptReservedNodeExchangeOutputMessageMutableBuilder[Self <: AcceptReservedNodeExchangeOutputMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptReservedNodeExchangeOutputMessage](x: Self) {
     
-    @scala.inline
-    def setExchangedReservedNode(value: ReservedNode): Self = StObject.set(x, "ExchangedReservedNode", value.asInstanceOf[js.Any])
+    inline def setExchangedReservedNode(value: ReservedNode): Self = StObject.set(x, "ExchangedReservedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangedReservedNodeUndefined: Self = StObject.set(x, "ExchangedReservedNode", js.undefined)
+    inline def setExchangedReservedNodeUndefined: Self = StObject.set(x, "ExchangedReservedNode", js.undefined)
   }
 }

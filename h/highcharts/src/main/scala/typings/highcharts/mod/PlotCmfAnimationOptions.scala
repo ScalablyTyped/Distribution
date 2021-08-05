@@ -10,19 +10,15 @@ trait PlotCmfAnimationOptions extends StObject {
 }
 object PlotCmfAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotCmfAnimationOptions = {
+  inline def apply(): PlotCmfAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotCmfAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotCmfAnimationOptionsMutableBuilder[Self <: PlotCmfAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotCmfAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

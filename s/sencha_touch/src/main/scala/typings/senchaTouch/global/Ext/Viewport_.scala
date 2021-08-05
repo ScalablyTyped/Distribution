@@ -29,10 +29,8 @@ object Viewport_ {
     * @param newItems Object/Object[]/Ext.Component/Ext.Component[] The new items to add to the Container.
     * @returns Ext.Component The last item added to the Container from the newItems array.
     */
-  @scala.inline
-  def add(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[IComponent]
-  @scala.inline
-  def add(newItems: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(newItems.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def add(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[IComponent]
+  inline def add(newItems: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(newItems.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Appends an after event handler
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -40,47 +38,29 @@ object Viewport_ {
     * @param scope Object The scope for fn.
     * @param options Object An object containing handler configuration.
     */
-  @scala.inline
-  def addAfterListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")().asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAfterListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")().asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAfterListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Adds an array of Components to this Container
     * @param items Array The array of items to add to this container.
     * @returns Array The array of items after they have been added.
     */
-  @scala.inline
-  def addAll(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("addAll")().asInstanceOf[typings.senchaTouch.Ext.Array]
-  @scala.inline
-  def addAll(items: typings.senchaTouch.Ext.Array): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("addAll")(items.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def addAll(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("addAll")().asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def addAll(items: typings.senchaTouch.Ext.Array): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("addAll")(items.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
   
   /** [Method] Appends a before event handler
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -88,68 +68,42 @@ object Viewport_ {
     * @param scope Object The scope for fn.
     * @param options Object An object containing handler configuration.
     */
-  @scala.inline
-  def addBeforeListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")().asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBeforeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")().asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBeforeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Adds a CSS class or classes to this Component s rendered element
     * @param cls String The CSS class to add.
     * @param prefix String Optional prefix to add to each class.
     * @param suffix String Optional suffix to add to each class.
     */
-  @scala.inline
-  def addCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCls")().asInstanceOf[Unit]
-  @scala.inline
-  def addCls(cls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addCls(cls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addCls(cls: java.lang.String, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addCls(cls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addCls(cls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addCls(cls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addCls(cls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCls")().asInstanceOf[Unit]
+  inline def addCls(cls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addCls(cls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCls(cls: java.lang.String, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCls(cls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCls(cls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCls(cls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCls(cls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Adds the specified events to the list of events which this Observable may fire
     * @param eventNames Object/String... Either an object with event names as properties with a value of true or the first event name string if multiple event names are being passed as separate parameters.
     */
-  @scala.inline
-  def addEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEvents")().asInstanceOf[Unit]
-  @scala.inline
-  def addEvents(eventNames: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEvents")(eventNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEvents")().asInstanceOf[Unit]
+  inline def addEvents(eventNames: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEvents")(eventNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Appends an event handler to this object
     * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -158,70 +112,38 @@ object Viewport_ {
     * @param options Object An object containing handler configuration.  This object may contain any of the following properties:
     * @param order String The order of when the listener should be added into the listener queue. Possible values are before, current and after.
     */
-  @scala.inline
-  def addListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")().asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")().asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -230,161 +152,107 @@ object Viewport_ {
     * @param scope Object If the eventName parameter was an event name, this is the scope in which the handler function is executed.
     * @param options Object If the eventName parameter was an event name, this is the addListener options.
     */
-  @scala.inline
-  def addManagedListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")().asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")().asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Animates to the supplied activeItem with a specified animation
     * @param activeItem Object/Number The item or item index to make active.
     * @param animation Object/Ext.fx.layout.Card Card animation configuration or instance.
     */
-  @scala.inline
-  def animateActiveItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")().asInstanceOf[Unit]
-  @scala.inline
-  def animateActiveItem(activeItem: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")(activeItem.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def animateActiveItem(activeItem: js.Any, animation: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")(activeItem.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def animateActiveItem(activeItem: Unit, animation: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")(activeItem.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def animateActiveItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")().asInstanceOf[Unit]
+  inline def animateActiveItem(activeItem: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")(activeItem.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def animateActiveItem(activeItem: js.Any, animation: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")(activeItem.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def animateActiveItem(activeItem: Unit, animation: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animateActiveItem")(activeItem.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Changes the masked configuration when its setter is called which will convert the value into a proper object instanc
     * @param masked Boolean/Object/Ext.Mask/Ext.LoadMask
     * @returns Object
     */
-  @scala.inline
-  def applyMasked(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMasked")().asInstanceOf[js.Any]
-  @scala.inline
-  def applyMasked(masked: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMasked")(masked.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def applyMasked(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMasked")().asInstanceOf[js.Any]
+  inline def applyMasked(masked: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMasked")(masked.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  @scala.inline
-  def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-  @scala.inline
-  def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+  inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  @scala.inline
-  def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-  @scala.inline
-  def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+  inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  @scala.inline
-  def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-  @scala.inline
-  def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+  inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Retrieves the first direct child of this container which matches the passed selector
     * @param selector String An Ext.ComponentQuery selector.
     * @returns Ext.Component
     */
-  @scala.inline
-  def child(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("child")().asInstanceOf[IComponent]
-  @scala.inline
-  def child(selector: java.lang.String): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("child")(selector.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def child(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("child")().asInstanceOf[IComponent]
+  inline def child(selector: java.lang.String): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("child")(selector.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Removes all listeners for this object  */
-  @scala.inline
-  def clearListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearListeners")().asInstanceOf[Unit]
+  inline def clearListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearListeners")().asInstanceOf[Unit]
   
   /** [Method]  */
-  @scala.inline
-  def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
+  inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
   
   /** [Method] Disables this Component */
-  @scala.inline
-  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
+  inline def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
   /** [Method] Retrieves the first descendant of this container which matches the passed selector
     * @param selector String An Ext.ComponentQuery selector.
     * @returns Ext.Component
     */
-  @scala.inline
-  def down(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[IComponent]
-  @scala.inline
-  def down(selector: java.lang.String): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(selector.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def down(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[IComponent]
+  inline def down(selector: java.lang.String): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(selector.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Enables this Component */
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
     * @param events String/String[] The event name to bubble, or an Array of event names.
     */
-  @scala.inline
-  def enableBubble(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBubble")().asInstanceOf[Unit]
-  @scala.inline
-  def enableBubble(events: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBubble")(events.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableBubble(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBubble")().asInstanceOf[Unit]
+  inline def enableBubble(events: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBubble")(events.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Fires the specified event with the passed parameters and execute a function action at the end if there are no liste
     * @param eventName String The name of the event to fire.
@@ -393,615 +261,491 @@ object Viewport_ {
     * @param scope Object Scope of fn.
     * @returns Object
     */
-  @scala.inline
-  def fireAction(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")().asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String, args: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String, args: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String, args: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: Unit, args: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: Unit, args: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: Unit, args: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")().asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String, args: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String, args: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String, args: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: java.lang.String, args: typings.senchaTouch.Ext.Array, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: Unit, args: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: Unit, args: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: Unit, args: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fireAction(eventName: Unit, args: typings.senchaTouch.Ext.Array, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAction")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
     * @param eventName String The name of the event to fire.
     * @param args Object... Variable number of parameters are passed to handlers.
     * @returns Boolean Returns false if any of the handlers return false.
     */
-  @scala.inline
-  def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Returns the value of activeItem
     * @returns Object/String/Number
     */
-  @scala.inline
-  def getActiveItem(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveItem")().asInstanceOf[js.Any]
+  inline def getActiveItem(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveItem")().asInstanceOf[js.Any]
   
   /** [Method] Prepares information on aligning this to component using alignment
     * @param component Object
     * @param alignment Object
     */
-  @scala.inline
-  def getAlignmentInfo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")().asInstanceOf[Unit]
-  @scala.inline
-  def getAlignmentInfo(component: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def getAlignmentInfo(component: js.Any, alignment: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getAlignmentInfo(component: Unit, alignment: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getAlignmentInfo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")().asInstanceOf[Unit]
+  inline def getAlignmentInfo(component: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAlignmentInfo(component: js.Any, alignment: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getAlignmentInfo(component: Unit, alignment: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignmentInfo")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Returns the Component for a given index in the Container s items
     * @param index Number The index of the Component to return.
     * @returns Ext.Component The item at the specified index, if found.
     */
-  @scala.inline
-  def getAt(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")().asInstanceOf[IComponent]
-  @scala.inline
-  def getAt(index: Double): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")(index.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def getAt(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")().asInstanceOf[IComponent]
+  inline def getAt(index: Double): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getAt")(index.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Returns the value of autoDestroy
     * @returns Boolean
     */
-  @scala.inline
-  def getAutoDestroy(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoDestroy")().asInstanceOf[Boolean]
+  inline def getAutoDestroy(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoDestroy")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of autoMaximize
     * @returns Boolean
     */
-  @scala.inline
-  def getAutoMaximize(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoMaximize")().asInstanceOf[Boolean]
+  inline def getAutoMaximize(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoMaximize")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of baseCls
     * @returns String
     */
-  @scala.inline
-  def getBaseCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseCls")().asInstanceOf[java.lang.String]
+  inline def getBaseCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseCls")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of border
     * @returns Number/String
     */
-  @scala.inline
-  def getBorder(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBorder")().asInstanceOf[js.Any]
+  inline def getBorder(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBorder")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of bottom
     * @returns Number/String
     */
-  @scala.inline
-  def getBottom(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottom")().asInstanceOf[js.Any]
+  inline def getBottom(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottom")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of bubbleEvents
     * @returns String/String[]
     */
-  @scala.inline
-  def getBubbleEvents(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBubbleEvents")().asInstanceOf[js.Any]
+  inline def getBubbleEvents(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBubbleEvents")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of centered
     * @returns Boolean
     */
-  @scala.inline
-  def getCentered(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCentered")().asInstanceOf[Boolean]
+  inline def getCentered(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCentered")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of cls
     * @returns String/String[]
     */
-  @scala.inline
-  def getCls(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCls")().asInstanceOf[js.Any]
+  inline def getCls(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCls")().asInstanceOf[js.Any]
   
   /** [Method] Examines this container s items property and gets a direct child component of this container
     * @param component String/Number This parameter may be any of the following:  {String} : representing the itemId or id of the child component. {Number} : representing the position of the child component within the items property. For additional information see Ext.util.MixedCollection.get.
     * @returns Ext.Component The component (if found).
     */
-  @scala.inline
-  def getComponent(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")().asInstanceOf[IComponent]
-  @scala.inline
-  def getComponent(component: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def getComponent(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")().asInstanceOf[IComponent]
+  inline def getComponent(component: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Returns the value of contentEl
     * @returns Ext.Element/HTMLElement/String
     */
-  @scala.inline
-  def getContentEl(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentEl")().asInstanceOf[js.Any]
+  inline def getContentEl(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentEl")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of control
     * @returns Object
     */
-  @scala.inline
-  def getControl(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getControl")().asInstanceOf[js.Any]
+  inline def getControl(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getControl")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of data
     * @returns Object
     */
-  @scala.inline
-  def getData(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")().asInstanceOf[js.Any]
+  inline def getData(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of defaultType
     * @returns String
     */
-  @scala.inline
-  def getDefaultType(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultType")().asInstanceOf[java.lang.String]
+  inline def getDefaultType(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultType")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of defaults
     * @returns Object
     */
-  @scala.inline
-  def getDefaults(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")().asInstanceOf[js.Any]
+  inline def getDefaults(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of disabled
     * @returns Boolean
     */
-  @scala.inline
-  def getDisabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisabled")().asInstanceOf[Boolean]
+  inline def getDisabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisabled")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of disabledCls
     * @returns String
     */
-  @scala.inline
-  def getDisabledCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisabledCls")().asInstanceOf[java.lang.String]
+  inline def getDisabledCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisabledCls")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of docked
     * @returns String
     */
-  @scala.inline
-  def getDocked(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocked")().asInstanceOf[java.lang.String]
+  inline def getDocked(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocked")().asInstanceOf[java.lang.String]
   
   /** [Method] Finds a docked item of this container using a reference idor an index of its location in getDockedItems
     * @param component String/Number The id or index of the component to find.
     * @returns Ext.Component/Boolean The docked component, if found.
     */
-  @scala.inline
-  def getDockedComponent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedComponent")().asInstanceOf[js.Any]
-  @scala.inline
-  def getDockedComponent(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getDockedComponent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedComponent")().asInstanceOf[js.Any]
+  inline def getDockedComponent(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Returns all the Ext Component docked items in this container
     * @returns Array The docked items of this container.
     */
-  @scala.inline
-  def getDockedItems(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedItems")().asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def getDockedItems(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedItems")().asInstanceOf[typings.senchaTouch.Ext.Array]
   
   /** [Method] Retrieves the top level element representing this component
     * @returns Ext.dom.Element
     */
-  @scala.inline
-  def getEl(): IElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getEl")().asInstanceOf[IElement]
+  inline def getEl(): IElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getEl")().asInstanceOf[IElement]
   
   /** [Method] Returns the value of enterAnimation
     * @returns String/Mixed
     */
-  @scala.inline
-  def getEnterAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnterAnimation")().asInstanceOf[js.Any]
+  inline def getEnterAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnterAnimation")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of exitAnimation
     * @returns String/Mixed
     */
-  @scala.inline
-  def getExitAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExitAnimation")().asInstanceOf[js.Any]
+  inline def getExitAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExitAnimation")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of flex
     * @returns Number
     */
-  @scala.inline
-  def getFlex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlex")().asInstanceOf[Double]
+  inline def getFlex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlex")().asInstanceOf[Double]
   
   /** [Method] Returns the value of floatingCls
     * @returns String
     */
-  @scala.inline
-  def getFloatingCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingCls")().asInstanceOf[java.lang.String]
+  inline def getFloatingCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingCls")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of hidden
     * @returns Boolean
     */
-  @scala.inline
-  def getHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getHidden")().asInstanceOf[Boolean]
+  inline def getHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getHidden")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of hiddenCls
     * @returns String
     */
-  @scala.inline
-  def getHiddenCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHiddenCls")().asInstanceOf[java.lang.String]
+  inline def getHiddenCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHiddenCls")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of hideAnimation
     * @returns String/Mixed
     */
-  @scala.inline
-  def getHideAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHideAnimation")().asInstanceOf[js.Any]
+  inline def getHideAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHideAnimation")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of hideOnMaskTap
     * @returns Boolean
     */
-  @scala.inline
-  def getHideOnMaskTap(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getHideOnMaskTap")().asInstanceOf[Boolean]
+  inline def getHideOnMaskTap(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getHideOnMaskTap")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of html
     * @returns String/Ext.Element/HTMLElement
     */
-  @scala.inline
-  def getHtml(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHtml")().asInstanceOf[js.Any]
+  inline def getHtml(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHtml")().asInstanceOf[js.Any]
   
   /** [Method] Retrieves the id of this component
     * @returns String id
     */
-  @scala.inline
-  def getId(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[java.lang.String]
+  inline def getId(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the initial configuration passed to constructor
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  @scala.inline
-  def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-  @scala.inline
-  def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+  inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Returns all inner items of this container
     * @returns Array The inner items of this container.
     */
-  @scala.inline
-  def getInnerItems(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerItems")().asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def getInnerItems(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerItems")().asInstanceOf[typings.senchaTouch.Ext.Array]
   
   /** [Method] Returns the value of itemId
     * @returns String
     */
-  @scala.inline
-  def getItemId(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemId")().asInstanceOf[java.lang.String]
+  inline def getItemId(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemId")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of items
     * @returns Array/Object
     */
-  @scala.inline
-  def getItems(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItems")().asInstanceOf[js.Any]
+  inline def getItems(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItems")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of layout
     * @returns Object/String
     */
-  @scala.inline
-  def getLayout(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayout")().asInstanceOf[js.Any]
+  inline def getLayout(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayout")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of left
     * @returns Number/String
     */
-  @scala.inline
-  def getLeft(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeft")().asInstanceOf[js.Any]
+  inline def getLeft(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeft")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of listeners
     * @returns Object
     */
-  @scala.inline
-  def getListeners(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getListeners")().asInstanceOf[js.Any]
+  inline def getListeners(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getListeners")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of margin
     * @returns Number/String
     */
-  @scala.inline
-  def getMargin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMargin")().asInstanceOf[js.Any]
+  inline def getMargin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMargin")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of masked
     * @returns Boolean/Object/Ext.Mask/Ext.LoadMask
     */
-  @scala.inline
-  def getMasked(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMasked")().asInstanceOf[js.Any]
+  inline def getMasked(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMasked")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of maxHeight
     * @returns Number/String
     */
-  @scala.inline
-  def getMaxHeight(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")().asInstanceOf[js.Any]
+  inline def getMaxHeight(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of maxWidth
     * @returns Number/String
     */
-  @scala.inline
-  def getMaxWidth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxWidth")().asInstanceOf[js.Any]
+  inline def getMaxWidth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxWidth")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of minHeight
     * @returns Number/String
     */
-  @scala.inline
-  def getMinHeight(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinHeight")().asInstanceOf[js.Any]
+  inline def getMinHeight(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinHeight")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of minWidth
     * @returns Number/String
     */
-  @scala.inline
-  def getMinWidth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinWidth")().asInstanceOf[js.Any]
+  inline def getMinWidth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinWidth")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of modal
     * @returns Boolean
     */
-  @scala.inline
-  def getModal(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getModal")().asInstanceOf[Boolean]
+  inline def getModal(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getModal")().asInstanceOf[Boolean]
   
   /** [Method] Returns the current orientation
     * @returns String portrait or landscape
     */
-  @scala.inline
-  def getOrientation(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrientation")().asInstanceOf[java.lang.String]
+  inline def getOrientation(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrientation")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of padding
     * @returns Number/String
     */
-  @scala.inline
-  def getPadding(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")().asInstanceOf[js.Any]
+  inline def getPadding(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")().asInstanceOf[js.Any]
   
   /** [Method] Returns the parent of this component if it has one
     * @returns Ext.Component The parent of this component.
     */
-  @scala.inline
-  def getParent(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")().asInstanceOf[IComponent]
+  inline def getParent(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")().asInstanceOf[IComponent]
   
   /** [Method] Returns the value of plugins
     * @returns Object/Array
     */
-  @scala.inline
-  def getPlugins(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugins")().asInstanceOf[js.Any]
+  inline def getPlugins(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugins")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of preventPanning
     * @returns Boolean
     */
-  @scala.inline
-  def getPreventPanning(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreventPanning")().asInstanceOf[Boolean]
+  inline def getPreventPanning(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreventPanning")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of preventZooming
     * @returns Boolean
     */
-  @scala.inline
-  def getPreventZooming(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreventZooming")().asInstanceOf[Boolean]
+  inline def getPreventZooming(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreventZooming")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of record
     * @returns Ext.data.Model
     */
-  @scala.inline
-  def getRecord(): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecord")().asInstanceOf[IModel]
+  inline def getRecord(): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecord")().asInstanceOf[IModel]
   
   /** [Method] Returns the value of renderTo
     * @returns Ext.Element
     */
-  @scala.inline
-  def getRenderTo(): typings.senchaTouch.Ext.IElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getRenderTo")().asInstanceOf[typings.senchaTouch.Ext.IElement]
+  inline def getRenderTo(): typings.senchaTouch.Ext.IElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getRenderTo")().asInstanceOf[typings.senchaTouch.Ext.IElement]
   
   /** [Method] Returns the value of right
     * @returns Number/String
     */
-  @scala.inline
-  def getRight(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRight")().asInstanceOf[js.Any]
+  inline def getRight(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRight")().asInstanceOf[js.Any]
   
   /** [Method] Returns an the scrollable instance for this container which is a Ext scroll View class
     * @returns Ext.scroll.View The scroll view.
     */
-  @scala.inline
-  def getScrollable(): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollable")().asInstanceOf[IView]
+  inline def getScrollable(): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollable")().asInstanceOf[IView]
   
   /** [Method] Returns the value of showAnimation
     * @returns String/Mixed
     */
-  @scala.inline
-  def getShowAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getShowAnimation")().asInstanceOf[js.Any]
+  inline def getShowAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getShowAnimation")().asInstanceOf[js.Any]
   
   /** [Method] Returns the height and width of the Component
     * @returns Object The current height and width of the Component.
     */
-  @scala.inline
-  def getSize(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")().asInstanceOf[js.Any]
+  inline def getSize(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of style
     * @returns String/Object
     */
-  @scala.inline
-  def getStyle(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")().asInstanceOf[js.Any]
+  inline def getStyle(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of styleHtmlCls
     * @returns String
     */
-  @scala.inline
-  def getStyleHtmlCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleHtmlCls")().asInstanceOf[java.lang.String]
+  inline def getStyleHtmlCls(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleHtmlCls")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of styleHtmlContent
     * @returns Boolean
     */
-  @scala.inline
-  def getStyleHtmlContent(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleHtmlContent")().asInstanceOf[Boolean]
+  inline def getStyleHtmlContent(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleHtmlContent")().asInstanceOf[Boolean]
   
   /** [Method] Returns the value of top
     * @returns Number/String
     */
-  @scala.inline
-  def getTop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Any]
+  inline def getTop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of tpl
     * @returns String/String[]/Ext.Template/Ext.XTemplate[]
     */
-  @scala.inline
-  def getTpl(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTpl")().asInstanceOf[js.Any]
+  inline def getTpl(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTpl")().asInstanceOf[js.Any]
   
   /** [Method] Returns the value of tplWriteMode
     * @returns String
     */
-  @scala.inline
-  def getTplWriteMode(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTplWriteMode")().asInstanceOf[java.lang.String]
+  inline def getTplWriteMode(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTplWriteMode")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of ui
     * @returns String
     */
-  @scala.inline
-  def getUi(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUi")().asInstanceOf[java.lang.String]
+  inline def getUi(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUi")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of useBodyElement
     * @returns Boolean
     */
-  @scala.inline
-  def getUseBodyElement(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUseBodyElement")().asInstanceOf[Boolean]
+  inline def getUseBodyElement(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUseBodyElement")().asInstanceOf[Boolean]
   
   /** [Method] Retrieves the document height
     * @returns Number height in pixels.
     */
-  @scala.inline
-  def getWindowHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowHeight")().asInstanceOf[Double]
+  inline def getWindowHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowHeight")().asInstanceOf[Double]
   
   /** [Method] Retrieves the document width
     * @returns Number width in pixels.
     */
-  @scala.inline
-  def getWindowWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowWidth")().asInstanceOf[Double]
+  inline def getWindowWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowWidth")().asInstanceOf[Double]
   
   /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
     * @returns String The xtype hierarchy string.
     */
-  @scala.inline
-  def getXTypes(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getXTypes")().asInstanceOf[java.lang.String]
+  inline def getXTypes(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getXTypes")().asInstanceOf[java.lang.String]
   
   /** [Method] Returns the value of zIndex
     * @returns Number
     */
-  @scala.inline
-  def getZIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getZIndex")().asInstanceOf[Double]
+  inline def getZIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getZIndex")().asInstanceOf[Double]
   
   /** [Method] Checks to see if this object has any listeners for a specified event
     * @param eventName String The name of the event to check for
     * @returns Boolean True if the event is being listened for, else false
     */
-  @scala.inline
-  def hasListener(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasListener")().asInstanceOf[Boolean]
-  @scala.inline
-  def hasListener(eventName: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasListener(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasListener")().asInstanceOf[Boolean]
+  inline def hasListener(eventName: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** [Method] Returns true if this component has a parent
     * @returns Boolean true if this component has a parent.
     */
-  @scala.inline
-  def hasParent(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasParent")().asInstanceOf[Boolean]
+  inline def hasParent(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasParent")().asInstanceOf[Boolean]
   
   /** [Method] Hides this Component optionally using an animation
     * @returns Ext.Component
     */
-  @scala.inline
-  def hide(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[IComponent]
+  inline def hide(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[IComponent]
   
   /** [Method] Hides all visible menus
     * @param animation Object
     */
-  @scala.inline
-  def hideAllMenus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllMenus")().asInstanceOf[Unit]
-  @scala.inline
-  def hideAllMenus(animation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllMenus")(animation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hideAllMenus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllMenus")().asInstanceOf[Unit]
+  inline def hideAllMenus(animation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllMenus")(animation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Hides a menu specified by the menu s side
     * @param side String The side which the menu is placed.
     */
-  @scala.inline
-  def hideMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")().asInstanceOf[Unit]
-  @scala.inline
-  def hideMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hideMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")().asInstanceOf[Unit]
+  inline def hideMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Hides all menus except for the side specified
     * @param side String Side(s) not to hide
     * @param animation String Animation to hide with
     */
-  @scala.inline
-  def hideOtherMenus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")().asInstanceOf[Unit]
-  @scala.inline
-  def hideOtherMenus(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def hideOtherMenus(side: java.lang.String, animation: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")(side.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hideOtherMenus(side: Unit, animation: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")(side.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hideOtherMenus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")().asInstanceOf[Unit]
+  inline def hideOtherMenus(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hideOtherMenus(side: java.lang.String, animation: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")(side.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hideOtherMenus(side: Unit, animation: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideOtherMenus")(side.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Initialize configuration for this class
     * @param instanceConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  @scala.inline
-  def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
-  @scala.inline
-  def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+  inline def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Allows addition of behavior to the rendering phase  */
-  @scala.inline
-  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
   
   /** [Method] Adds a child Component at the given index
     * @param index Number The index to insert the Component at.
     * @param item Object The Component to insert.
     */
-  @scala.inline
-  def insert(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")().asInstanceOf[Unit]
-  @scala.inline
-  def insert(index: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def insert(index: Double, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def insert(index: Unit, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insert(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")().asInstanceOf[Unit]
+  inline def insert(index: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def insert(index: Double, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insert(index: Unit, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Returns true if this Component is currently disabled
     * @returns Boolean true if currently disabled.
     */
-  @scala.inline
-  def isDisabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")().asInstanceOf[Boolean]
+  inline def isDisabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")().asInstanceOf[Boolean]
   
   /** [Method] Returns true if this Component is currently hidden
     * @returns Boolean true if currently hidden.
     */
-  @scala.inline
-  def isHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHidden")().asInstanceOf[Boolean]
+  inline def isHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHidden")().asInstanceOf[Boolean]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.Viewport.isReady")
   @js.native
   def isReady: Boolean = js.native
-  @scala.inline
-  def isReady_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isReady")(x.asInstanceOf[js.Any])
+  inline def isReady_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isReady")(x.asInstanceOf[js.Any])
   
   /** [Method] Tests whether or not this Component is of a specific xtype
     * @param xtype String The xtype to check for this Component.
     * @param shallow Boolean false to check whether this Component is descended from the xtype (this is the default), or true to check whether this Component is directly of the specified xtype.
     * @returns Boolean true if this component descends from the specified xtype, false otherwise.
     */
-  @scala.inline
-  def isXType(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXType")().asInstanceOf[Boolean]
-  @scala.inline
-  def isXType(xtype: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXType")(xtype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isXType(xtype: java.lang.String, shallow: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isXType")(xtype.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isXType(xtype: Unit, shallow: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isXType")(xtype.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isXType(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXType")().asInstanceOf[Boolean]
+  inline def isXType(xtype: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXType")(xtype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isXType(xtype: java.lang.String, shallow: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isXType")(xtype.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isXType(xtype: Unit, shallow: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isXType")(xtype.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Property] (Ext.util.MixedCollection) */
   @JSGlobal("Ext.Viewport.items")
   @js.native
   def items: IMixedCollection = js.native
-  @scala.inline
-  def items_=(x: IMixedCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("items")(x.asInstanceOf[js.Any])
+  inline def items_=(x: IMixedCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("items")(x.asInstanceOf[js.Any])
   
   /** [Method] Convenience method which calls setMasked with a value of true to show the mask
     * @param mask Object
     */
-  @scala.inline
-  def mask(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mask")().asInstanceOf[Unit]
-  @scala.inline
-  def mask(mask: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mask")(mask.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mask(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mask")().asInstanceOf[Unit]
+  inline def mask(mask: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mask")(mask.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Alias for addManagedListener
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -1010,70 +754,38 @@ object Viewport_ {
     * @param scope Object If the eventName parameter was an event name, this is the scope in which the handler function is executed.
     * @param options Object If the eventName parameter was an event name, this is the addListener options.
     */
-  @scala.inline
-  def mon(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")().asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: js.Any, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mon(`object`: Unit, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")().asInstanceOf[Unit]
+  inline def mon(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: js.Any, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mon(`object`: Unit, eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Alias for removeManagedListener
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -1081,38 +793,22 @@ object Viewport_ {
     * @param fn Function If the eventName parameter was an event name, this is the handler function.
     * @param scope Object If the eventName parameter was an event name, this is the scope in which the handler function is executed.
     */
-  @scala.inline
-  def mun(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mun")().asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mun(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mun")().asInstanceOf[Unit]
+  inline def mun(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mun(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Alias for addListener
     * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -1121,70 +817,38 @@ object Viewport_ {
     * @param options Object An object containing handler configuration.  This object may contain any of the following properties:
     * @param order String The order of when the listener should be added into the listener queue. Possible values are before, current and after.
     */
-  @scala.inline
-  def on(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def on(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[Unit]
+  inline def on(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Alias for addAfterListener
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -1192,38 +856,22 @@ object Viewport_ {
     * @param scope Object The scope for fn.
     * @param options Object An object containing handler configuration.
     */
-  @scala.inline
-  def onAfter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")().asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onAfter(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")().asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onAfter(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Alias for addBeforeListener
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -1231,75 +879,49 @@ object Viewport_ {
     * @param scope Object The scope for fn.
     * @param options Object An object containing handler configuration.
     */
-  @scala.inline
-  def onBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")().asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def onBefore(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")().asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBefore(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Retrieves all descendant components which match the passed selector
     * @param selector String Selector complying to an Ext.ComponentQuery selector.
     * @returns Array Ext.Component's which matched the selector.
     */
-  @scala.inline
-  def query(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("query")().asInstanceOf[typings.senchaTouch.Ext.Array]
-  @scala.inline
-  def query(selector: java.lang.String): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def query(): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("query")().asInstanceOf[typings.senchaTouch.Ext.Array]
+  inline def query(selector: java.lang.String): typings.senchaTouch.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.senchaTouch.Ext.Array]
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
     * @param events String/Array/Object Array of event names to relay.
     * @returns Ext.mixin.Observable this
     */
-  @scala.inline
-  def relayEvents(): IObservable = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")().asInstanceOf[IObservable]
-  @scala.inline
-  def relayEvents(`object`: js.Any): IObservable = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(`object`.asInstanceOf[js.Any]).asInstanceOf[IObservable]
-  @scala.inline
-  def relayEvents(`object`: js.Any, events: js.Any): IObservable = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(`object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[IObservable]
-  @scala.inline
-  def relayEvents(`object`: Unit, events: js.Any): IObservable = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(`object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[IObservable]
+  inline def relayEvents(): IObservable = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")().asInstanceOf[IObservable]
+  inline def relayEvents(`object`: js.Any): IObservable = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(`object`.asInstanceOf[js.Any]).asInstanceOf[IObservable]
+  inline def relayEvents(`object`: js.Any, events: js.Any): IObservable = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(`object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[IObservable]
+  inline def relayEvents(`object`: Unit, events: js.Any): IObservable = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(`object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[IObservable]
   
   /** [Method] Removes an item from this Container optionally destroying it
     * @param item Object The item to remove.
     * @param destroy Boolean Calls the Component's destroy method if true.
     * @returns Ext.Component this
     */
-  @scala.inline
-  def remove(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[IComponent]
-  @scala.inline
-  def remove(item: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  @scala.inline
-  def remove(item: js.Any, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  @scala.inline
-  def remove(item: Unit, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def remove(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[IComponent]
+  inline def remove(item: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def remove(item: js.Any, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def remove(item: Unit, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Removes a before event handler
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -1307,61 +929,39 @@ object Viewport_ {
     * @param scope Object The scope originally specified for fn.
     * @param options Object Extra options object.
     */
-  @scala.inline
-  def removeAfterListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")().asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeAfterListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")().asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAfterListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAfterListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Removes all items currently in the Container optionally destroying them all
     * @param destroy Boolean If true, destroys each removed Component.
     * @param everything Boolean If true, completely remove all items including docked / centered and floating items.
     * @returns Ext.Component this
     */
-  @scala.inline
-  def removeAll(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[IComponent]
-  @scala.inline
-  def removeAll(destroy: Boolean): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(destroy.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  @scala.inline
-  def removeAll(destroy: Boolean, everything: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(destroy.asInstanceOf[js.Any], everything.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  @scala.inline
-  def removeAll(destroy: Unit, everything: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(destroy.asInstanceOf[js.Any], everything.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def removeAll(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[IComponent]
+  inline def removeAll(destroy: Boolean): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(destroy.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def removeAll(destroy: Boolean, everything: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(destroy.asInstanceOf[js.Any], everything.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def removeAll(destroy: Unit, everything: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(destroy.asInstanceOf[js.Any], everything.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Removes the Component at the specified index  myContainer removeAt 0 removes the first item
     * @param index Number The index of the Component to remove.
     * @returns Ext.Container this
     */
-  @scala.inline
-  def removeAt(): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")().asInstanceOf[IContainer]
-  @scala.inline
-  def removeAt(index: Double): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(index.asInstanceOf[js.Any]).asInstanceOf[IContainer]
+  inline def removeAt(): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")().asInstanceOf[IContainer]
+  inline def removeAt(index: Double): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(index.asInstanceOf[js.Any]).asInstanceOf[IContainer]
   
   /** [Method] Removes a before event handler
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -1369,83 +969,53 @@ object Viewport_ {
     * @param scope Object The scope originally specified for fn.
     * @param options Object Extra options object.
     */
-  @scala.inline
-  def removeBeforeListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")().asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBeforeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")().asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBeforeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBeforeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Removes the given CSS class es from this Component s rendered element
     * @param cls String The class(es) to remove.
     * @param prefix String Optional prefix to prepend before each class.
     * @param suffix String Optional suffix to append to each class.
     */
-  @scala.inline
-  def removeCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")().asInstanceOf[Unit]
-  @scala.inline
-  def removeCls(cls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeCls(cls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeCls(cls: java.lang.String, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeCls(cls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeCls(cls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeCls(cls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeCls(cls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")().asInstanceOf[Unit]
+  inline def removeCls(cls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeCls(cls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCls(cls: java.lang.String, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCls(cls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCls(cls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCls(cls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCls(cls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Removes a docked item from this Container
     * @param item Object The item to remove.
     * @param destroy Boolean Calls the Component's destroy method if true.
     * @returns Ext.Component this
     */
-  @scala.inline
-  def removeDocked(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")().asInstanceOf[IComponent]
-  @scala.inline
-  def removeDocked(item: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")(item.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  @scala.inline
-  def removeDocked(item: js.Any, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  @scala.inline
-  def removeDocked(item: Unit, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def removeDocked(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")().asInstanceOf[IComponent]
+  inline def removeDocked(item: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")(item.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def removeDocked(item: js.Any, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def removeDocked(item: Unit, destroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDocked")(item.asInstanceOf[js.Any], destroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Removes an inner Component at the specified index  myContainer removeInnerAt 0 removes the first item of the in
     * @param index Number The index of the Component to remove.
     * @returns Ext.Container this
     */
-  @scala.inline
-  def removeInnerAt(): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInnerAt")().asInstanceOf[IContainer]
-  @scala.inline
-  def removeInnerAt(index: Double): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInnerAt")(index.asInstanceOf[js.Any]).asInstanceOf[IContainer]
+  inline def removeInnerAt(): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInnerAt")().asInstanceOf[IContainer]
+  inline def removeInnerAt(index: Double): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInnerAt")(index.asInstanceOf[js.Any]).asInstanceOf[IContainer]
   
   /** [Method] Removes an event handler
     * @param eventName String/String[]/Object The type of event the handler was associated with.
@@ -1454,70 +1024,38 @@ object Viewport_ {
     * @param options Object Extra options object. See addListener for details.
     * @param order String The order of the listener to remove. Possible values are before, current and after.
     */
-  @scala.inline
-  def removeListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")().asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeListener(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")().asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -1525,46 +1063,28 @@ object Viewport_ {
     * @param fn Function If the eventName parameter was an event name, this is the handler function.
     * @param scope Object If the eventName parameter was an event name, this is the scope in which the handler function is executed.
     */
-  @scala.inline
-  def removeManagedListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")().asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")().asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: js.Any, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: Unit, eventName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: Unit, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: Unit, eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: Unit, eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: Unit, eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(`object`: Unit, eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(`object`.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Removes a menu from a specified side
     * @param side String The side to remove the menu from
     */
-  @scala.inline
-  def removeMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMenu")().asInstanceOf[Unit]
-  @scala.inline
-  def removeMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMenu")().asInstanceOf[Unit]
+  inline def removeMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Replaces specified classes with the newly specified classes
     * @param oldCls String The class(es) to remove.
@@ -1572,598 +1092,443 @@ object Viewport_ {
     * @param prefix String Optional prefix to prepend before each class.
     * @param suffix String Optional suffix to append to each class.
     */
-  @scala.inline
-  def replaceCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")().asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: java.lang.String, newCls: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: java.lang.String, newCls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(
+  inline def replaceCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")().asInstanceOf[Unit]
+  inline def replaceCls(oldCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: java.lang.String, newCls: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: java.lang.String, newCls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(
     oldCls: java.lang.String,
     newCls: java.lang.String,
     prefix: java.lang.String,
     suffix: java.lang.String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: java.lang.String, newCls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: java.lang.String, newCls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: java.lang.String, newCls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: java.lang.String, newCls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: Unit, newCls: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: Unit, newCls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: Unit, newCls: java.lang.String, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: Unit, newCls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: Unit, newCls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: Unit, newCls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def replaceCls(oldCls: Unit, newCls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: java.lang.String, newCls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: java.lang.String, newCls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: java.lang.String, newCls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: java.lang.String, newCls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: Unit, newCls: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: Unit, newCls: java.lang.String, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: Unit, newCls: java.lang.String, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: Unit, newCls: java.lang.String, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: Unit, newCls: Unit, prefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: Unit, newCls: Unit, prefix: java.lang.String, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceCls(oldCls: Unit, newCls: Unit, prefix: Unit, suffix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceCls")(oldCls.asInstanceOf[js.Any], newCls.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Resets top right bottom and left configurations to null which will un float this component  */
-  @scala.inline
-  def resetFloating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetFloating")().asInstanceOf[Unit]
+  inline def resetFloating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetFloating")().asInstanceOf[Unit]
   
   /** [Method] Resumes firing events see suspendEvents
     * @param discardQueuedEvents Boolean Pass as true to discard any queued events.
     */
-  @scala.inline
-  def resumeEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeEvents")().asInstanceOf[Unit]
-  @scala.inline
-  def resumeEvents(discardQueuedEvents: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeEvents")(discardQueuedEvents.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resumeEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeEvents")().asInstanceOf[Unit]
+  inline def resumeEvents(discardQueuedEvents: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeEvents")(discardQueuedEvents.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.Viewport.self")
   @js.native
   def self: IClass = js.native
-  @scala.inline
-  def self_=(x: IClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
+  inline def self_=(x: IClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
   
   /** [Method] Sets the value of activeItem
     * @param activeItem Object/String/Number The new value.
     */
-  @scala.inline
-  def setActiveItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveItem")().asInstanceOf[Unit]
-  @scala.inline
-  def setActiveItem(activeItem: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveItem")(activeItem.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setActiveItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveItem")().asInstanceOf[Unit]
+  inline def setActiveItem(activeItem: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveItem")(activeItem.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of autoDestroy
     * @param autoDestroy Boolean The new value.
     */
-  @scala.inline
-  def setAutoDestroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoDestroy")().asInstanceOf[Unit]
-  @scala.inline
-  def setAutoDestroy(autoDestroy: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoDestroy")(autoDestroy.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAutoDestroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoDestroy")().asInstanceOf[Unit]
+  inline def setAutoDestroy(autoDestroy: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoDestroy")(autoDestroy.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of autoMaximize
     * @param autoMaximize Boolean The new value.
     */
-  @scala.inline
-  def setAutoMaximize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoMaximize")().asInstanceOf[Unit]
-  @scala.inline
-  def setAutoMaximize(autoMaximize: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoMaximize")(autoMaximize.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAutoMaximize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoMaximize")().asInstanceOf[Unit]
+  inline def setAutoMaximize(autoMaximize: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoMaximize")(autoMaximize.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of baseCls
     * @param baseCls String The new value.
     */
-  @scala.inline
-  def setBaseCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseCls")().asInstanceOf[Unit]
-  @scala.inline
-  def setBaseCls(baseCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseCls")(baseCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBaseCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseCls")().asInstanceOf[Unit]
+  inline def setBaseCls(baseCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseCls")(baseCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of border
     * @param border Number/String The new value.
     */
-  @scala.inline
-  def setBorder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")().asInstanceOf[Unit]
-  @scala.inline
-  def setBorder(border: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBorder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")().asInstanceOf[Unit]
+  inline def setBorder(border: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of bottom
     * @param bottom Number/String The new value.
     */
-  @scala.inline
-  def setBottom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBottom")().asInstanceOf[Unit]
-  @scala.inline
-  def setBottom(bottom: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBottom")(bottom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBottom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBottom")().asInstanceOf[Unit]
+  inline def setBottom(bottom: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBottom")(bottom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of bubbleEvents
     * @param bubbleEvents String/String[] The new value.
     */
-  @scala.inline
-  def setBubbleEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleEvents")().asInstanceOf[Unit]
-  @scala.inline
-  def setBubbleEvents(bubbleEvents: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleEvents")(bubbleEvents.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBubbleEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleEvents")().asInstanceOf[Unit]
+  inline def setBubbleEvents(bubbleEvents: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleEvents")(bubbleEvents.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of centered
     * @param centered Boolean The new value.
     */
-  @scala.inline
-  def setCentered(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCentered")().asInstanceOf[Unit]
-  @scala.inline
-  def setCentered(centered: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCentered")(centered.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setCentered(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCentered")().asInstanceOf[Unit]
+  inline def setCentered(centered: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCentered")(centered.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of cls
     * @param cls String/String[] The new value.
     */
-  @scala.inline
-  def setCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCls")().asInstanceOf[Unit]
-  @scala.inline
-  def setCls(cls: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCls")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCls")().asInstanceOf[Unit]
+  inline def setCls(cls: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCls")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of contentEl
     * @param contentEl Ext.Element/HTMLElement/String The new value.
     */
-  @scala.inline
-  def setContentEl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentEl")().asInstanceOf[Unit]
-  @scala.inline
-  def setContentEl(contentEl: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentEl")(contentEl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setContentEl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentEl")().asInstanceOf[Unit]
+  inline def setContentEl(contentEl: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentEl")(contentEl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of control
     * @param control Object The new value.
     */
-  @scala.inline
-  def setControl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setControl")().asInstanceOf[Unit]
-  @scala.inline
-  def setControl(control: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setControl")(control.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setControl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setControl")().asInstanceOf[Unit]
+  inline def setControl(control: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setControl")(control.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of data
     * @param data Object The new value.
     */
-  @scala.inline
-  def setData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setData")().asInstanceOf[Unit]
-  @scala.inline
-  def setData(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setData")().asInstanceOf[Unit]
+  inline def setData(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of defaultType
     * @param defaultType String The new value.
     */
-  @scala.inline
-  def setDefaultType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultType")().asInstanceOf[Unit]
-  @scala.inline
-  def setDefaultType(defaultType: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultType")(defaultType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultType")().asInstanceOf[Unit]
+  inline def setDefaultType(defaultType: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultType")(defaultType.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of defaults
     * @param defaults Object The new value.
     */
-  @scala.inline
-  def setDefaults(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")().asInstanceOf[Unit]
-  @scala.inline
-  def setDefaults(defaults: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaults(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")().asInstanceOf[Unit]
+  inline def setDefaults(defaults: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of disabled
     * @param disabled Boolean The new value.
     */
-  @scala.inline
-  def setDisabled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabled")().asInstanceOf[Unit]
-  @scala.inline
-  def setDisabled(disabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabled")(disabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDisabled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabled")().asInstanceOf[Unit]
+  inline def setDisabled(disabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabled")(disabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of disabledCls
     * @param disabledCls String The new value.
     */
-  @scala.inline
-  def setDisabledCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabledCls")().asInstanceOf[Unit]
-  @scala.inline
-  def setDisabledCls(disabledCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabledCls")(disabledCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDisabledCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabledCls")().asInstanceOf[Unit]
+  inline def setDisabledCls(disabledCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisabledCls")(disabledCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of docked
     * @param docked String The new value.
     */
-  @scala.inline
-  def setDocked(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")().asInstanceOf[Unit]
-  @scala.inline
-  def setDocked(docked: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")(docked.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDocked(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")().asInstanceOf[Unit]
+  inline def setDocked(docked: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")(docked.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of draggable
     * @param draggable Object The new value.
     */
-  @scala.inline
-  def setDraggable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDraggable")().asInstanceOf[Unit]
-  @scala.inline
-  def setDraggable(draggable: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDraggable")(draggable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDraggable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDraggable")().asInstanceOf[Unit]
+  inline def setDraggable(draggable: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDraggable")(draggable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of enterAnimation
     * @param enterAnimation String/Mixed The new value.
     */
-  @scala.inline
-  def setEnterAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterAnimation")().asInstanceOf[Unit]
-  @scala.inline
-  def setEnterAnimation(enterAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterAnimation")(enterAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEnterAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterAnimation")().asInstanceOf[Unit]
+  inline def setEnterAnimation(enterAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterAnimation")(enterAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of exitAnimation
     * @param exitAnimation String/Mixed The new value.
     */
-  @scala.inline
-  def setExitAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExitAnimation")().asInstanceOf[Unit]
-  @scala.inline
-  def setExitAnimation(exitAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExitAnimation")(exitAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setExitAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExitAnimation")().asInstanceOf[Unit]
+  inline def setExitAnimation(exitAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExitAnimation")(exitAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of flex
     * @param flex Number The new value.
     */
-  @scala.inline
-  def setFlex(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlex")().asInstanceOf[Unit]
-  @scala.inline
-  def setFlex(flex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlex")(flex.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFlex(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlex")().asInstanceOf[Unit]
+  inline def setFlex(flex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlex")(flex.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Used to update the floating state of this component
     * @param floating Boolean true if you want to float this component.
     */
-  @scala.inline
-  def setFloating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloating")().asInstanceOf[Unit]
-  @scala.inline
-  def setFloating(floating: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloating")(floating.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFloating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloating")().asInstanceOf[Unit]
+  inline def setFloating(floating: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloating")(floating.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of floatingCls
     * @param floatingCls String The new value.
     */
-  @scala.inline
-  def setFloatingCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloatingCls")().asInstanceOf[Unit]
-  @scala.inline
-  def setFloatingCls(floatingCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloatingCls")(floatingCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFloatingCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloatingCls")().asInstanceOf[Unit]
+  inline def setFloatingCls(floatingCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFloatingCls")(floatingCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of hidden
     * @param hidden Boolean The new value.
     */
-  @scala.inline
-  def setHidden(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")().asInstanceOf[Unit]
-  @scala.inline
-  def setHidden(hidden: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(hidden.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHidden(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")().asInstanceOf[Unit]
+  inline def setHidden(hidden: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(hidden.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of hiddenCls
     * @param hiddenCls String The new value.
     */
-  @scala.inline
-  def setHiddenCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHiddenCls")().asInstanceOf[Unit]
-  @scala.inline
-  def setHiddenCls(hiddenCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHiddenCls")(hiddenCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHiddenCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHiddenCls")().asInstanceOf[Unit]
+  inline def setHiddenCls(hiddenCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHiddenCls")(hiddenCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of hideAnimation
     * @param hideAnimation String/Mixed The new value.
     */
-  @scala.inline
-  def setHideAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideAnimation")().asInstanceOf[Unit]
-  @scala.inline
-  def setHideAnimation(hideAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideAnimation")(hideAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHideAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideAnimation")().asInstanceOf[Unit]
+  inline def setHideAnimation(hideAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideAnimation")(hideAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of hideOnMaskTap
     * @param hideOnMaskTap Boolean The new value.
     */
-  @scala.inline
-  def setHideOnMaskTap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideOnMaskTap")().asInstanceOf[Unit]
-  @scala.inline
-  def setHideOnMaskTap(hideOnMaskTap: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideOnMaskTap")(hideOnMaskTap.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHideOnMaskTap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideOnMaskTap")().asInstanceOf[Unit]
+  inline def setHideOnMaskTap(hideOnMaskTap: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHideOnMaskTap")(hideOnMaskTap.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of html
     * @param html String/Ext.Element/HTMLElement The new value.
     */
-  @scala.inline
-  def setHtml(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHtml")().asInstanceOf[Unit]
-  @scala.inline
-  def setHtml(html: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHtml")(html.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHtml(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHtml")().asInstanceOf[Unit]
+  inline def setHtml(html: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHtml")(html.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of itemId
     * @param itemId String The new value.
     */
-  @scala.inline
-  def setItemId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItemId")().asInstanceOf[Unit]
-  @scala.inline
-  def setItemId(itemId: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItemId")(itemId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setItemId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItemId")().asInstanceOf[Unit]
+  inline def setItemId(itemId: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItemId")(itemId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of items
     * @param items Array/Object The new value.
     */
-  @scala.inline
-  def setItems(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItems")().asInstanceOf[Unit]
-  @scala.inline
-  def setItems(items: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItems")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setItems(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItems")().asInstanceOf[Unit]
+  inline def setItems(items: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setItems")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of layout
     * @param layout Object/String The new value.
     */
-  @scala.inline
-  def setLayout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayout")().asInstanceOf[Unit]
-  @scala.inline
-  def setLayout(layout: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLayout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayout")().asInstanceOf[Unit]
+  inline def setLayout(layout: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of left
     * @param left Number/String The new value.
     */
-  @scala.inline
-  def setLeft(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLeft")().asInstanceOf[Unit]
-  @scala.inline
-  def setLeft(left: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLeft")(left.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLeft(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLeft")().asInstanceOf[Unit]
+  inline def setLeft(left: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLeft")(left.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of listeners
     * @param listeners Object The new value.
     */
-  @scala.inline
-  def setListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setListeners")().asInstanceOf[Unit]
-  @scala.inline
-  def setListeners(listeners: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setListeners")(listeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setListeners")().asInstanceOf[Unit]
+  inline def setListeners(listeners: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setListeners")(listeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of margin
     * @param margin Number/String The new value.
     */
-  @scala.inline
-  def setMargin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMargin")().asInstanceOf[Unit]
-  @scala.inline
-  def setMargin(margin: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMargin")(margin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMargin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMargin")().asInstanceOf[Unit]
+  inline def setMargin(margin: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMargin")(margin.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of masked
     * @param masked Boolean/Object/Ext.Mask/Ext.LoadMask The new value.
     */
-  @scala.inline
-  def setMasked(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMasked")().asInstanceOf[Unit]
-  @scala.inline
-  def setMasked(masked: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMasked")(masked.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMasked(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMasked")().asInstanceOf[Unit]
+  inline def setMasked(masked: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMasked")(masked.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of maxHeight
     * @param maxHeight Number/String The new value.
     */
-  @scala.inline
-  def setMaxHeight(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxHeight")().asInstanceOf[Unit]
-  @scala.inline
-  def setMaxHeight(maxHeight: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxHeight")(maxHeight.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMaxHeight(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxHeight")().asInstanceOf[Unit]
+  inline def setMaxHeight(maxHeight: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxHeight")(maxHeight.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of maxWidth
     * @param maxWidth Number/String The new value.
     */
-  @scala.inline
-  def setMaxWidth(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxWidth")().asInstanceOf[Unit]
-  @scala.inline
-  def setMaxWidth(maxWidth: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxWidth")(maxWidth.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMaxWidth(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxWidth")().asInstanceOf[Unit]
+  inline def setMaxWidth(maxWidth: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxWidth")(maxWidth.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets a menu for a given side of the Viewport
     * @param menu Ext.Menu The menu to assign to the viewport
     * @param config Object The configuration for the menu.
     */
-  @scala.inline
-  def setMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")().asInstanceOf[Unit]
-  @scala.inline
-  def setMenu(menu: Unit, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")(menu.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setMenu(menu: IMenu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setMenu(menu: IMenu, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")(menu.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")().asInstanceOf[Unit]
+  inline def setMenu(menu: Unit, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")(menu.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setMenu(menu: IMenu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMenu(menu: IMenu, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMenu")(menu.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Sets the value of minHeight
     * @param minHeight Number/String The new value.
     */
-  @scala.inline
-  def setMinHeight(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinHeight")().asInstanceOf[Unit]
-  @scala.inline
-  def setMinHeight(minHeight: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinHeight")(minHeight.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMinHeight(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinHeight")().asInstanceOf[Unit]
+  inline def setMinHeight(minHeight: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinHeight")(minHeight.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of minWidth
     * @param minWidth Number/String The new value.
     */
-  @scala.inline
-  def setMinWidth(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinWidth")().asInstanceOf[Unit]
-  @scala.inline
-  def setMinWidth(minWidth: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinWidth")(minWidth.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMinWidth(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinWidth")().asInstanceOf[Unit]
+  inline def setMinWidth(minWidth: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMinWidth")(minWidth.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of modal
     * @param modal Boolean The new value.
     */
-  @scala.inline
-  def setModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setModal")().asInstanceOf[Unit]
-  @scala.inline
-  def setModal(modal: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setModal")(modal.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setModal")().asInstanceOf[Unit]
+  inline def setModal(modal: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setModal")(modal.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of padding
     * @param padding Number/String The new value.
     */
-  @scala.inline
-  def setPadding(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPadding")().asInstanceOf[Unit]
-  @scala.inline
-  def setPadding(padding: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPadding")(padding.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPadding(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPadding")().asInstanceOf[Unit]
+  inline def setPadding(padding: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPadding")(padding.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of plugins
     * @param plugins Object/Array The new value.
     */
-  @scala.inline
-  def setPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPlugins")().asInstanceOf[Unit]
-  @scala.inline
-  def setPlugins(plugins: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPlugins")().asInstanceOf[Unit]
+  inline def setPlugins(plugins: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of preventPanning
     * @param preventPanning Boolean The new value.
     */
-  @scala.inline
-  def setPreventPanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventPanning")().asInstanceOf[Unit]
-  @scala.inline
-  def setPreventPanning(preventPanning: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventPanning")(preventPanning.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPreventPanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventPanning")().asInstanceOf[Unit]
+  inline def setPreventPanning(preventPanning: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventPanning")(preventPanning.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of preventZooming
     * @param preventZooming Boolean The new value.
     */
-  @scala.inline
-  def setPreventZooming(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventZooming")().asInstanceOf[Unit]
-  @scala.inline
-  def setPreventZooming(preventZooming: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventZooming")(preventZooming.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPreventZooming(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventZooming")().asInstanceOf[Unit]
+  inline def setPreventZooming(preventZooming: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPreventZooming")(preventZooming.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of record
     * @param record Ext.data.Model The new value.
     */
-  @scala.inline
-  def setRecord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecord")().asInstanceOf[Unit]
-  @scala.inline
-  def setRecord(record: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecord")(record.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRecord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecord")().asInstanceOf[Unit]
+  inline def setRecord(record: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecord")(record.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of renderTo
     * @param renderTo Ext.Element The new value.
     */
-  @scala.inline
-  def setRenderTo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRenderTo")().asInstanceOf[Unit]
-  @scala.inline
-  def setRenderTo(renderTo: typings.senchaTouch.Ext.IElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRenderTo")(renderTo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRenderTo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRenderTo")().asInstanceOf[Unit]
+  inline def setRenderTo(renderTo: typings.senchaTouch.Ext.IElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRenderTo")(renderTo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of right
     * @param right Number/String The new value.
     */
-  @scala.inline
-  def setRight(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRight")().asInstanceOf[Unit]
-  @scala.inline
-  def setRight(right: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRight")(right.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRight(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRight")().asInstanceOf[Unit]
+  inline def setRight(right: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRight")(right.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of scrollable
     * @param scrollable Boolean/String/Object The new value.
     * @returns Ext.scroll.View The scroll view.
     */
-  @scala.inline
-  def setScrollable(): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("setScrollable")().asInstanceOf[IView]
-  @scala.inline
-  def setScrollable(scrollable: js.Any): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("setScrollable")(scrollable.asInstanceOf[js.Any]).asInstanceOf[IView]
+  inline def setScrollable(): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("setScrollable")().asInstanceOf[IView]
+  inline def setScrollable(scrollable: js.Any): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("setScrollable")(scrollable.asInstanceOf[js.Any]).asInstanceOf[IView]
   
   /** [Method] Sets the value of showAnimation
     * @param showAnimation String/Mixed The new value.
     */
-  @scala.inline
-  def setShowAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShowAnimation")().asInstanceOf[Unit]
-  @scala.inline
-  def setShowAnimation(showAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShowAnimation")(showAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShowAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShowAnimation")().asInstanceOf[Unit]
+  inline def setShowAnimation(showAnimation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShowAnimation")(showAnimation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the size of the Component
     * @param width Number The new width for the Component.
     * @param height Number The new height for the Component.
     */
-  @scala.inline
-  def setSize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSize")().asInstanceOf[Unit]
-  @scala.inline
-  def setSize(width: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setSize(width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSize(width: Unit, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSize")().asInstanceOf[Unit]
+  inline def setSize(width: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSize(width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSize(width: Unit, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Sets the value of style
     * @param style String/Object The new value.
     */
-  @scala.inline
-  def setStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")().asInstanceOf[Unit]
-  @scala.inline
-  def setStyle(style: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(style.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")().asInstanceOf[Unit]
+  inline def setStyle(style: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(style.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of styleHtmlCls
     * @param styleHtmlCls String The new value.
     */
-  @scala.inline
-  def setStyleHtmlCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlCls")().asInstanceOf[Unit]
-  @scala.inline
-  def setStyleHtmlCls(styleHtmlCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlCls")(styleHtmlCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setStyleHtmlCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlCls")().asInstanceOf[Unit]
+  inline def setStyleHtmlCls(styleHtmlCls: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlCls")(styleHtmlCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of styleHtmlContent
     * @param styleHtmlContent Boolean The new value.
     */
-  @scala.inline
-  def setStyleHtmlContent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlContent")().asInstanceOf[Unit]
-  @scala.inline
-  def setStyleHtmlContent(styleHtmlContent: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlContent")(styleHtmlContent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setStyleHtmlContent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlContent")().asInstanceOf[Unit]
+  inline def setStyleHtmlContent(styleHtmlContent: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStyleHtmlContent")(styleHtmlContent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of top
     * @param top Number/String The new value.
     */
-  @scala.inline
-  def setTop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTop")().asInstanceOf[Unit]
-  @scala.inline
-  def setTop(top: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTop")(top.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTop")().asInstanceOf[Unit]
+  inline def setTop(top: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTop")(top.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of tpl
     * @param tpl String/String[]/Ext.Template/Ext.XTemplate[] The new value.
     */
-  @scala.inline
-  def setTpl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTpl")().asInstanceOf[Unit]
-  @scala.inline
-  def setTpl(tpl: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTpl")(tpl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTpl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTpl")().asInstanceOf[Unit]
+  inline def setTpl(tpl: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTpl")(tpl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of tplWriteMode
     * @param tplWriteMode String The new value.
     */
-  @scala.inline
-  def setTplWriteMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTplWriteMode")().asInstanceOf[Unit]
-  @scala.inline
-  def setTplWriteMode(tplWriteMode: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTplWriteMode")(tplWriteMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTplWriteMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTplWriteMode")().asInstanceOf[Unit]
+  inline def setTplWriteMode(tplWriteMode: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTplWriteMode")(tplWriteMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of ui
     * @param ui String The new value.
     */
-  @scala.inline
-  def setUi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUi")().asInstanceOf[Unit]
-  @scala.inline
-  def setUi(ui: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUi")(ui.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUi")().asInstanceOf[Unit]
+  inline def setUi(ui: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUi")(ui.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of useBodyElement
     * @param useBodyElement Boolean The new value.
     */
-  @scala.inline
-  def setUseBodyElement(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseBodyElement")().asInstanceOf[Unit]
-  @scala.inline
-  def setUseBodyElement(useBodyElement: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseBodyElement")(useBodyElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUseBodyElement(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseBodyElement")().asInstanceOf[Unit]
+  inline def setUseBodyElement(useBodyElement: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseBodyElement")(useBodyElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the value of zIndex
     * @param zIndex Number The new value.
     */
-  @scala.inline
-  def setZIndex(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setZIndex")().asInstanceOf[Unit]
-  @scala.inline
-  def setZIndex(zIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setZIndex")(zIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setZIndex(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setZIndex")().asInstanceOf[Unit]
+  inline def setZIndex(zIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setZIndex")(zIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Shows this component optionally using an animation
     * @returns Ext.Component
     */
-  @scala.inline
-  def show(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[IComponent]
+  inline def show(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[IComponent]
   
   /** [Method] Shows this component by another component
     * @param component Ext.Component The target component to show this component by.
     * @param alignment String The specific alignment.
     */
-  @scala.inline
-  def showBy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBy")().asInstanceOf[Unit]
-  @scala.inline
-  def showBy(component: Unit, alignment: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def showBy(component: IComponent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def showBy(component: IComponent, alignment: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showBy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBy")().asInstanceOf[Unit]
+  inline def showBy(component: Unit, alignment: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showBy(component: IComponent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def showBy(component: IComponent, alignment: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], alignment.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Shows a menu specified by the menu s side
     * @param side String The side which the menu is placed.
     */
-  @scala.inline
-  def showMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showMenu")().asInstanceOf[Unit]
-  @scala.inline
-  def showMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def showMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showMenu")().asInstanceOf[Unit]
+  inline def showMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Get the reference to the class from which this object was instantiated
     * @returns Ext.Class
     */
-  @scala.inline
-  def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
+  inline def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   
   /** [Method] Suspends the firing of all events  */
-  @scala.inline
-  def suspendEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("suspendEvents")().asInstanceOf[Unit]
+  inline def suspendEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("suspendEvents")().asInstanceOf[Unit]
   
   /** [Method] Toggles the menu specified by side
     * @param side String The side which the menu is placed.
     */
-  @scala.inline
-  def toggleMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMenu")().asInstanceOf[Unit]
-  @scala.inline
-  def toggleMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def toggleMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMenu")().asInstanceOf[Unit]
+  inline def toggleMenu(side: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMenu")(side.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Alias for removeListener
     * @param eventName String/String[]/Object The type of event the handler was associated with.
@@ -2172,70 +1537,38 @@ object Viewport_ {
     * @param options Object Extra options object. See addListener for details.
     * @param order String The order of the listener to remove. Possible values are before, current and after.
     */
-  @scala.inline
-  def un(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("un")().asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def un(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("un")().asInstanceOf[Unit]
+  inline def un(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: js.Any, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: js.Any, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: js.Any, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: Unit, options: js.Any, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: Unit, options: Unit, order: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Alias for removeAfterListener
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -2243,38 +1576,22 @@ object Viewport_ {
     * @param scope Object The scope originally specified for fn.
     * @param options Object Extra options object.
     */
-  @scala.inline
-  def unAfter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")().asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unAfter(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")().asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unAfter(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unAfter")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Alias for removeBeforeListener
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -2282,66 +1599,42 @@ object Viewport_ {
     * @param scope Object The scope originally specified for fn.
     * @param options Object Extra options object.
     */
-  @scala.inline
-  def unBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")().asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unBefore(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")().asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unBefore(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unBefore")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Convenience method which calls setMasked with a value of false to hide the mask */
-  @scala.inline
-  def unmask(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmask")().asInstanceOf[Unit]
+  inline def unmask(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmask")().asInstanceOf[Unit]
   
   /** [Method] Walks up the ownerCt axis looking for an ancestor Container which matches the passed simple selector
     * @param selector String The simple selector to test.
     * @returns Ext.Container The matching ancestor Container (or undefined if no match was found).
     */
-  @scala.inline
-  def up(): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[IContainer]
-  @scala.inline
-  def up(selector: java.lang.String): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any]).asInstanceOf[IContainer]
+  inline def up(): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[IContainer]
+  inline def up(selector: java.lang.String): IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any]).asInstanceOf[IContainer]
   
   /** [Method] Updates the HTML content of the Component  */
-  @scala.inline
-  def update(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")().asInstanceOf[Unit]
+  inline def update(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")().asInstanceOf[Unit]
   
   /** [Method] Updates the styleHtmlCls configuration
     * @param newHtmlCls Object
     * @param oldHtmlCls Object
     */
-  @scala.inline
-  def updateStyleHtmlCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")().asInstanceOf[Unit]
-  @scala.inline
-  def updateStyleHtmlCls(newHtmlCls: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")(newHtmlCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def updateStyleHtmlCls(newHtmlCls: js.Any, oldHtmlCls: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")(newHtmlCls.asInstanceOf[js.Any], oldHtmlCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateStyleHtmlCls(newHtmlCls: Unit, oldHtmlCls: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")(newHtmlCls.asInstanceOf[js.Any], oldHtmlCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateStyleHtmlCls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")().asInstanceOf[Unit]
+  inline def updateStyleHtmlCls(newHtmlCls: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")(newHtmlCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def updateStyleHtmlCls(newHtmlCls: js.Any, oldHtmlCls: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")(newHtmlCls.asInstanceOf[js.Any], oldHtmlCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateStyleHtmlCls(newHtmlCls: Unit, oldHtmlCls: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateStyleHtmlCls")(newHtmlCls.asInstanceOf[js.Any], oldHtmlCls.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

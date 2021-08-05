@@ -14,31 +14,23 @@ trait GitCreateCommitParamsCommitter extends StObject {
 }
 object GitCreateCommitParamsCommitter {
   
-  @scala.inline
-  def apply(): GitCreateCommitParamsCommitter = {
+  inline def apply(): GitCreateCommitParamsCommitter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GitCreateCommitParamsCommitter]
   }
   
-  @scala.inline
-  implicit class GitCreateCommitParamsCommitterMutableBuilder[Self <: GitCreateCommitParamsCommitter] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateCommitParamsCommitter](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

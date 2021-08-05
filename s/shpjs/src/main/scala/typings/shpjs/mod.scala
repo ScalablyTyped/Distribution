@@ -25,21 +25,17 @@ object mod extends Shortcut {
   }
   object FeatureCollectionWithFilename {
     
-    @scala.inline
-    def apply(features: js.Array[Feature[Geometry, GeoJsonProperties]]): FeatureCollectionWithFilename = {
+    inline def apply(features: js.Array[Feature[Geometry, GeoJsonProperties]]): FeatureCollectionWithFilename = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("FeatureCollection")
       __obj.asInstanceOf[FeatureCollectionWithFilename]
     }
     
-    @scala.inline
-    implicit class FeatureCollectionWithFilenameMutableBuilder[Self <: FeatureCollectionWithFilename] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureCollectionWithFilename](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     }
   }
   

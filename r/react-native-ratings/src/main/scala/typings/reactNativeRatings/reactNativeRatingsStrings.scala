@@ -8,26 +8,21 @@ object reactNativeRatingsStrings {
   
   @js.native
   sealed trait bell extends StObject
-  @scala.inline
-  def bell: bell = "bell".asInstanceOf[bell]
+  inline def bell: bell = "bell".asInstanceOf[bell]
   
   @js.native
   sealed trait custom extends StObject
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait heart extends StObject
-  @scala.inline
-  def heart: heart = "heart".asInstanceOf[heart]
+  inline def heart: heart = "heart".asInstanceOf[heart]
   
   @js.native
   sealed trait rocket extends StObject
-  @scala.inline
-  def rocket: rocket = "rocket".asInstanceOf[rocket]
+  inline def rocket: rocket = "rocket".asInstanceOf[rocket]
   
   @js.native
   sealed trait star extends StObject
-  @scala.inline
-  def star: star = "star".asInstanceOf[star]
+  inline def star: star = "star".asInstanceOf[star]
 }

@@ -32,32 +32,24 @@ object mod {
   }
   object Binding {
     
-    @scala.inline
-    def apply(destination: Exchange | Queue, source: Exchange): Binding = {
+    inline def apply(destination: Exchange | Queue, source: Exchange): Binding = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Binding]
     }
     
-    @scala.inline
-    implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
+    extension [Self <: Binding](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setDestination(value: Exchange | Queue): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Exchange | Queue): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
+      inline def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingPatternUndefined: Self = StObject.set(x, "routingPattern", js.undefined)
+      inline def setRoutingPatternUndefined: Self = StObject.set(x, "routingPattern", js.undefined)
       
-      @scala.inline
-      def setSource(value: Exchange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Exchange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,17 +62,14 @@ object mod {
   }
   object DirectBinding {
     
-    @scala.inline
-    def apply(destination: Exchange | Queue, routingPattern: String, source: Exchange): DirectBinding = {
+    inline def apply(destination: Exchange | Queue, routingPattern: String, source: Exchange): DirectBinding = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], routingPattern = routingPattern.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectBinding]
     }
     
-    @scala.inline
-    implicit class DirectBindingMutableBuilder[Self <: DirectBinding] (val x: Self) extends AnyVal {
+    extension [Self <: DirectBinding](x: Self) {
       
-      @scala.inline
-      def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
+      inline def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,24 +85,19 @@ object mod {
   }
   object DirectExchange {
     
-    @scala.inline
-    def apply(bindings: js.Array[DirectBinding], exchange: String): DirectExchange = {
+    inline def apply(bindings: js.Array[DirectBinding], exchange: String): DirectExchange = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("direct")
       __obj.asInstanceOf[DirectExchange]
     }
     
-    @scala.inline
-    implicit class DirectExchangeMutableBuilder[Self <: DirectExchange] (val x: Self) extends AnyVal {
+    extension [Self <: DirectExchange](x: Self) {
       
-      @scala.inline
-      def setBindings(value: js.Array[DirectBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: js.Array[DirectBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingsVarargs(value: DirectBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: DirectBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: direct): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: direct): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,27 +113,21 @@ object mod {
   }
   object Exchange {
     
-    @scala.inline
-    def apply(bindings: js.Array[Binding], exchange: String, `type`: String): Exchange = {
+    inline def apply(bindings: js.Array[Binding], exchange: String, `type`: String): Exchange = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exchange]
     }
     
-    @scala.inline
-    implicit class ExchangeMutableBuilder[Self <: Exchange] (val x: Self) extends AnyVal {
+    extension [Self <: Exchange](x: Self) {
       
-      @scala.inline
-      def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
       
-      @scala.inline
-      def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+      inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,18 +140,15 @@ object mod {
   }
   object FanoutExchange {
     
-    @scala.inline
-    def apply(bindings: js.Array[Binding], exchange: String): FanoutExchange = {
+    inline def apply(bindings: js.Array[Binding], exchange: String): FanoutExchange = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fanout")
       __obj.asInstanceOf[FanoutExchange]
     }
     
-    @scala.inline
-    implicit class FanoutExchangeMutableBuilder[Self <: FanoutExchange] (val x: Self) extends AnyVal {
+    extension [Self <: FanoutExchange](x: Self) {
       
-      @scala.inline
-      def setType(value: fanout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fanout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,20 +162,16 @@ object mod {
   }
   object Queue {
     
-    @scala.inline
-    def apply(messageSchema: js.Object, queue: String): Queue = {
+    inline def apply(messageSchema: js.Object, queue: String): Queue = {
       val __obj = js.Dynamic.literal(messageSchema = messageSchema.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[Queue]
     }
     
-    @scala.inline
-    implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
+    extension [Self <: Queue](x: Self) {
       
-      @scala.inline
-      def setMessageSchema(value: js.Object): Self = StObject.set(x, "messageSchema", value.asInstanceOf[js.Any])
+      inline def setMessageSchema(value: js.Object): Self = StObject.set(x, "messageSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,17 +207,14 @@ object mod {
   }
   object TopicBinding {
     
-    @scala.inline
-    def apply(destination: Exchange | Queue, routingPattern: String, source: Exchange): TopicBinding = {
+    inline def apply(destination: Exchange | Queue, routingPattern: String, source: Exchange): TopicBinding = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], routingPattern = routingPattern.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopicBinding]
     }
     
-    @scala.inline
-    implicit class TopicBindingMutableBuilder[Self <: TopicBinding] (val x: Self) extends AnyVal {
+    extension [Self <: TopicBinding](x: Self) {
       
-      @scala.inline
-      def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
+      inline def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,24 +230,19 @@ object mod {
   }
   object TopicExchange {
     
-    @scala.inline
-    def apply(bindings: js.Array[TopicBinding], exchange: String): TopicExchange = {
+    inline def apply(bindings: js.Array[TopicBinding], exchange: String): TopicExchange = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("topic")
       __obj.asInstanceOf[TopicExchange]
     }
     
-    @scala.inline
-    implicit class TopicExchangeMutableBuilder[Self <: TopicExchange] (val x: Self) extends AnyVal {
+    extension [Self <: TopicExchange](x: Self) {
       
-      @scala.inline
-      def setBindings(value: js.Array[TopicBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: js.Array[TopicBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingsVarargs(value: TopicBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: TopicBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: topic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: topic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,20 +252,16 @@ object mod {
   }
   object Topology {
     
-    @scala.inline
-    def apply(): Topology = {
+    inline def apply(): Topology = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Topology]
     }
     
-    @scala.inline
-    implicit class TopologyMutableBuilder[Self <: Topology] (val x: Self) extends AnyVal {
+    extension [Self <: Topology](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

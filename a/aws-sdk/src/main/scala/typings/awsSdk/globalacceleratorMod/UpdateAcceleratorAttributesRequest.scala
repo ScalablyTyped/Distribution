@@ -28,34 +28,25 @@ trait UpdateAcceleratorAttributesRequest extends StObject {
 }
 object UpdateAcceleratorAttributesRequest {
   
-  @scala.inline
-  def apply(AcceleratorArn: GenericString): UpdateAcceleratorAttributesRequest = {
+  inline def apply(AcceleratorArn: GenericString): UpdateAcceleratorAttributesRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAcceleratorAttributesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAcceleratorAttributesRequestMutableBuilder[Self <: UpdateAcceleratorAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAcceleratorAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
+    inline def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogsEnabled(value: GenericBoolean): Self = StObject.set(x, "FlowLogsEnabled", value.asInstanceOf[js.Any])
+    inline def setFlowLogsEnabled(value: GenericBoolean): Self = StObject.set(x, "FlowLogsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogsEnabledUndefined: Self = StObject.set(x, "FlowLogsEnabled", js.undefined)
+    inline def setFlowLogsEnabledUndefined: Self = StObject.set(x, "FlowLogsEnabled", js.undefined)
     
-    @scala.inline
-    def setFlowLogsS3Bucket(value: GenericString): Self = StObject.set(x, "FlowLogsS3Bucket", value.asInstanceOf[js.Any])
+    inline def setFlowLogsS3Bucket(value: GenericString): Self = StObject.set(x, "FlowLogsS3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogsS3BucketUndefined: Self = StObject.set(x, "FlowLogsS3Bucket", js.undefined)
+    inline def setFlowLogsS3BucketUndefined: Self = StObject.set(x, "FlowLogsS3Bucket", js.undefined)
     
-    @scala.inline
-    def setFlowLogsS3Prefix(value: GenericString): Self = StObject.set(x, "FlowLogsS3Prefix", value.asInstanceOf[js.Any])
+    inline def setFlowLogsS3Prefix(value: GenericString): Self = StObject.set(x, "FlowLogsS3Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogsS3PrefixUndefined: Self = StObject.set(x, "FlowLogsS3Prefix", js.undefined)
+    inline def setFlowLogsS3PrefixUndefined: Self = StObject.set(x, "FlowLogsS3Prefix", js.undefined)
   }
 }

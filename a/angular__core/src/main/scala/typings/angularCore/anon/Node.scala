@@ -13,28 +13,21 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(): Node = {
+  inline def apply(): Node = {
     val __obj = js.Dynamic.literal(node = null)
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setNode(value: typings.typescript.mod.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.typescript.mod.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeNull: Self = StObject.set(x, "node", null)
+    inline def setNodeNull: Self = StObject.set(x, "node", null)
     
-    @scala.inline
-    def setRequiredHelpers(value: js.Array[HelperFunction]): Self = StObject.set(x, "requiredHelpers", value.asInstanceOf[js.Any])
+    inline def setRequiredHelpers(value: js.Array[HelperFunction]): Self = StObject.set(x, "requiredHelpers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredHelpersUndefined: Self = StObject.set(x, "requiredHelpers", js.undefined)
+    inline def setRequiredHelpersUndefined: Self = StObject.set(x, "requiredHelpers", js.undefined)
     
-    @scala.inline
-    def setRequiredHelpersVarargs(value: HelperFunction*): Self = StObject.set(x, "requiredHelpers", js.Array(value :_*))
+    inline def setRequiredHelpersVarargs(value: HelperFunction*): Self = StObject.set(x, "requiredHelpers", js.Array(value :_*))
   }
 }

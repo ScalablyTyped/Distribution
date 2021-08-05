@@ -14,25 +14,19 @@ trait UpdateChartSpecRequest extends StObject {
 }
 object UpdateChartSpecRequest {
   
-  @scala.inline
-  def apply(): UpdateChartSpecRequest = {
+  inline def apply(): UpdateChartSpecRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateChartSpecRequest]
   }
   
-  @scala.inline
-  implicit class UpdateChartSpecRequestMutableBuilder[Self <: UpdateChartSpecRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateChartSpecRequest](x: Self) {
     
-    @scala.inline
-    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+    inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
-    @scala.inline
-    def setSpec(value: ChartSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: ChartSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

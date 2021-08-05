@@ -15,19 +15,15 @@ trait PutEventStreamRequest extends StObject {
 }
 object PutEventStreamRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, WriteEventStream: WriteEventStream): PutEventStreamRequest = {
+  inline def apply(ApplicationId: string, WriteEventStream: WriteEventStream): PutEventStreamRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteEventStream = WriteEventStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventStreamRequest]
   }
   
-  @scala.inline
-  implicit class PutEventStreamRequestMutableBuilder[Self <: PutEventStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventStreamRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteEventStream(value: WriteEventStream): Self = StObject.set(x, "WriteEventStream", value.asInstanceOf[js.Any])
+    inline def setWriteEventStream(value: WriteEventStream): Self = StObject.set(x, "WriteEventStream", value.asInstanceOf[js.Any])
   }
 }

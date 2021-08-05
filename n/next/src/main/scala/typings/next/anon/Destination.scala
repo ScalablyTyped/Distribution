@@ -22,25 +22,19 @@ trait Destination
 }
 object Destination {
   
-  @scala.inline
-  def apply(destination: String, statusCode: `301` | `302` | `303` | `307` | `308`): Destination = {
+  inline def apply(destination: String, statusCode: `301` | `302` | `303` | `307` | `308`): Destination = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Destination]
   }
   
-  @scala.inline
-  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+  extension [Self <: Destination](x: Self) {
     
-    @scala.inline
-    def setBasePath(value: `false`): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    inline def setBasePath(value: `false`): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: `301` | `302` | `303` | `307` | `308`): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: `301` | `302` | `303` | `307` | `308`): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

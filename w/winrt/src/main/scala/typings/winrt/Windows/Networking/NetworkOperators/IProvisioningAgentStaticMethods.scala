@@ -10,16 +10,13 @@ trait IProvisioningAgentStaticMethods extends StObject {
 }
 object IProvisioningAgentStaticMethods {
   
-  @scala.inline
-  def apply(createFromNetworkAccountId: String => ProvisioningAgent): IProvisioningAgentStaticMethods = {
+  inline def apply(createFromNetworkAccountId: String => ProvisioningAgent): IProvisioningAgentStaticMethods = {
     val __obj = js.Dynamic.literal(createFromNetworkAccountId = js.Any.fromFunction1(createFromNetworkAccountId))
     __obj.asInstanceOf[IProvisioningAgentStaticMethods]
   }
   
-  @scala.inline
-  implicit class IProvisioningAgentStaticMethodsMutableBuilder[Self <: IProvisioningAgentStaticMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IProvisioningAgentStaticMethods](x: Self) {
     
-    @scala.inline
-    def setCreateFromNetworkAccountId(value: String => ProvisioningAgent): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
+    inline def setCreateFromNetworkAccountId(value: String => ProvisioningAgent): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
   }
 }

@@ -100,10 +100,8 @@ object ModuleDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(moduleKeyword: ISyntaxToken, openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(moduleKeyword.asInstanceOf[js.Any], openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ModuleDeclarationSyntax]
+  inline def create(moduleKeyword: ISyntaxToken, openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(moduleKeyword.asInstanceOf[js.Any], openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ModuleDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ModuleDeclarationSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ModuleDeclarationSyntax]
 }

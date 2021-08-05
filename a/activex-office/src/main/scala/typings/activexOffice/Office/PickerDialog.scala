@@ -15,7 +15,7 @@ trait PickerDialog extends StObject {
   
   var DataHandlerId: String = js.native
   
-  @JSName("Office.PickerDialog_typekey")
+  /* private */ @JSName("Office.PickerDialog_typekey")
   var OfficeDotPickerDialog_typekey: PickerDialog = js.native
   
   def Properties(Index: Double): PickerProperty = js.native

@@ -20,23 +20,18 @@ object mod extends Shortcut {
   }
   object BaseArray {
     
-    @scala.inline
-    def apply(isNegative: Boolean, value: js.Array[Double]): BaseArray = {
+    inline def apply(isNegative: Boolean, value: js.Array[Double]): BaseArray = {
       val __obj = js.Dynamic.literal(isNegative = isNegative.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseArray]
     }
     
-    @scala.inline
-    implicit class BaseArrayMutableBuilder[Self <: BaseArray] (val x: Self) extends AnyVal {
+    extension [Self <: BaseArray](x: Self) {
       
-      @scala.inline
-      def setIsNegative(value: Boolean): Self = StObject.set(x, "isNegative", value.asInstanceOf[js.Any])
+      inline def setIsNegative(value: Boolean): Self = StObject.set(x, "isNegative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   

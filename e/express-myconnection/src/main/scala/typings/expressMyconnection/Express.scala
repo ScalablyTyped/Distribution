@@ -19,22 +19,18 @@ object Express {
   }
   object Request {
     
-    @scala.inline
-    def apply(): Request = {
+    inline def apply(): Request = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setGetConnection(
+      inline def setGetConnection(
         value: /* callback */ js.Function2[/* err */ MysqlError, /* connection */ Connection, Unit] => Unit
       ): Self = StObject.set(x, "getConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetConnectionUndefined: Self = StObject.set(x, "getConnection", js.undefined)
+      inline def setGetConnectionUndefined: Self = StObject.set(x, "getConnection", js.undefined)
     }
   }
 }

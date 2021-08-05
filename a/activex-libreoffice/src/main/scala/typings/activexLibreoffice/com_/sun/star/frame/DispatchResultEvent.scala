@@ -26,19 +26,15 @@ trait DispatchResultEvent
 }
 object DispatchResultEvent {
   
-  @scala.inline
-  def apply(Result: js.Any, Source: XInterface, State: Double): DispatchResultEvent = {
+  inline def apply(Result: js.Any, Source: XInterface, State: Double): DispatchResultEvent = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchResultEvent]
   }
   
-  @scala.inline
-  implicit class DispatchResultEventMutableBuilder[Self <: DispatchResultEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchResultEvent](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

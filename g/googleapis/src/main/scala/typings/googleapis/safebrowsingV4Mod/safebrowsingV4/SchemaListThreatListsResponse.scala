@@ -13,22 +13,17 @@ trait SchemaListThreatListsResponse extends StObject {
 }
 object SchemaListThreatListsResponse {
   
-  @scala.inline
-  def apply(): SchemaListThreatListsResponse = {
+  inline def apply(): SchemaListThreatListsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListThreatListsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListThreatListsResponseMutableBuilder[Self <: SchemaListThreatListsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListThreatListsResponse](x: Self) {
     
-    @scala.inline
-    def setThreatLists(value: js.Array[SchemaThreatListDescriptor]): Self = StObject.set(x, "threatLists", value.asInstanceOf[js.Any])
+    inline def setThreatLists(value: js.Array[SchemaThreatListDescriptor]): Self = StObject.set(x, "threatLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatListsUndefined: Self = StObject.set(x, "threatLists", js.undefined)
+    inline def setThreatListsUndefined: Self = StObject.set(x, "threatLists", js.undefined)
     
-    @scala.inline
-    def setThreatListsVarargs(value: SchemaThreatListDescriptor*): Self = StObject.set(x, "threatLists", js.Array(value :_*))
+    inline def setThreatListsVarargs(value: SchemaThreatListDescriptor*): Self = StObject.set(x, "threatLists", js.Array(value :_*))
   }
 }

@@ -16,17 +16,14 @@ object typesInvalidReferenceNameExceptionMod {
   }
   object InvalidReferenceNameException {
     
-    @scala.inline
-    def apply(): InvalidReferenceNameException = {
+    inline def apply(): InvalidReferenceNameException = {
       val __obj = js.Dynamic.literal(name = "InvalidReferenceNameException")
       __obj.asInstanceOf[InvalidReferenceNameException]
     }
     
-    @scala.inline
-    implicit class InvalidReferenceNameExceptionMutableBuilder[Self <: InvalidReferenceNameException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidReferenceNameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidReferenceNameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

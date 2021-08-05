@@ -22,19 +22,15 @@ trait PodsMetricSource extends StObject {
 }
 object PodsMetricSource {
   
-  @scala.inline
-  def apply(metric: Input[MetricIdentifier], target: Input[MetricTarget]): PodsMetricSource = {
+  inline def apply(metric: Input[MetricIdentifier], target: Input[MetricTarget]): PodsMetricSource = {
     val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodsMetricSource]
   }
   
-  @scala.inline
-  implicit class PodsMetricSourceMutableBuilder[Self <: PodsMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: PodsMetricSource](x: Self) {
     
-    @scala.inline
-    def setMetric(value: Input[MetricIdentifier]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Input[MetricIdentifier]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Input[MetricTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Input[MetricTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

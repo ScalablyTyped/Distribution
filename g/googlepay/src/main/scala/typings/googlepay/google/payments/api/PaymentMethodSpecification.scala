@@ -35,8 +35,7 @@ trait PaymentMethodSpecification extends StObject {
 }
 object PaymentMethodSpecification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: CardParameters,
     tokenizationSpecification: PaymentMethodTokenizationSpecification,
     `type`: PaymentMethodType
@@ -46,16 +45,12 @@ object PaymentMethodSpecification {
     __obj.asInstanceOf[PaymentMethodSpecification]
   }
   
-  @scala.inline
-  implicit class PaymentMethodSpecificationMutableBuilder[Self <: PaymentMethodSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodSpecification](x: Self) {
     
-    @scala.inline
-    def setParameters(value: CardParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: CardParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenizationSpecification(value: PaymentMethodTokenizationSpecification): Self = StObject.set(x, "tokenizationSpecification", value.asInstanceOf[js.Any])
+    inline def setTokenizationSpecification(value: PaymentMethodTokenizationSpecification): Self = StObject.set(x, "tokenizationSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

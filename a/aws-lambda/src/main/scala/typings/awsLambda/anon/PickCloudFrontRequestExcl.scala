@@ -23,34 +23,25 @@ trait PickCloudFrontRequestExcl extends StObject {
 }
 object PickCloudFrontRequestExcl {
   
-  @scala.inline
-  def apply(clientIp: String, headers: CloudFrontHeaders, method: String, querystring: String, uri: String): PickCloudFrontRequestExcl = {
+  inline def apply(clientIp: String, headers: CloudFrontHeaders, method: String, querystring: String, uri: String): PickCloudFrontRequestExcl = {
     val __obj = js.Dynamic.literal(clientIp = clientIp.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], querystring = querystring.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickCloudFrontRequestExcl]
   }
   
-  @scala.inline
-  implicit class PickCloudFrontRequestExclMutableBuilder[Self <: PickCloudFrontRequestExcl] (val x: Self) extends AnyVal {
+  extension [Self <: PickCloudFrontRequestExcl](x: Self) {
     
-    @scala.inline
-    def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
+    inline def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: CloudFrontHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: CloudFrontHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: CloudFrontOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: CloudFrontOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setQuerystring(value: String): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
+    inline def setQuerystring(value: String): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

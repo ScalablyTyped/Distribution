@@ -13,16 +13,13 @@ trait VpcConfiguration extends StObject {
 }
 object VpcConfiguration {
   
-  @scala.inline
-  def apply(VpcId: VpcId): VpcConfiguration = {
+  inline def apply(VpcId: VpcId): VpcConfiguration = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcConfiguration]
   }
   
-  @scala.inline
-  implicit class VpcConfigurationMutableBuilder[Self <: VpcConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VpcConfiguration](x: Self) {
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

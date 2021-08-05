@@ -19,16 +19,13 @@ trait UpdatePhoneMultiFactorInfoRequest
 }
 object UpdatePhoneMultiFactorInfoRequest {
   
-  @scala.inline
-  def apply(factorId: String, phoneNumber: String): UpdatePhoneMultiFactorInfoRequest = {
+  inline def apply(factorId: String, phoneNumber: String): UpdatePhoneMultiFactorInfoRequest = {
     val __obj = js.Dynamic.literal(factorId = factorId.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePhoneMultiFactorInfoRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePhoneMultiFactorInfoRequestMutableBuilder[Self <: UpdatePhoneMultiFactorInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePhoneMultiFactorInfoRequest](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

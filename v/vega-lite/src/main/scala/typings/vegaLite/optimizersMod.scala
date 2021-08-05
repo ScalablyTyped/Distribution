@@ -21,7 +21,7 @@ object optimizersMod {
   class MergeBins protected () extends BottomUpOptimizer {
     def this(model: Model) = this()
     
-    var model: js.Any = js.native
+    /* private */ var model: js.Any = js.native
   }
   
   @JSImport("vega-lite/build/src/compile/data/optimizers", "MergeIdenticalNodes")
@@ -59,7 +59,7 @@ object optimizersMod {
   class RemoveUnnecessaryIdentifierNodes protected () extends TopDownOptimizer {
     def this(model: Model) = this()
     
-    var requiresSelectionId: js.Any = js.native
+    /* private */ var requiresSelectionId: js.Any = js.native
   }
   
   @JSImport("vega-lite/build/src/compile/data/optimizers", "RemoveUnnecessaryOutputNodes")

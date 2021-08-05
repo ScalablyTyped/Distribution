@@ -14,25 +14,19 @@ trait Volume extends StObject {
 }
 object Volume {
   
-  @scala.inline
-  def apply(): Volume = {
+  inline def apply(): Volume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Volume]
   }
   
-  @scala.inline
-  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
+  extension [Self <: Volume](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

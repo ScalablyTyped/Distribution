@@ -13,19 +13,15 @@ trait SrcStatus extends StObject {
 }
 object SrcStatus {
   
-  @scala.inline
-  def apply(src: String, status: ImageStatus): SrcStatus = {
+  inline def apply(src: String, status: ImageStatus): SrcStatus = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SrcStatus]
   }
   
-  @scala.inline
-  implicit class SrcStatusMutableBuilder[Self <: SrcStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SrcStatus](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ImageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ImageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

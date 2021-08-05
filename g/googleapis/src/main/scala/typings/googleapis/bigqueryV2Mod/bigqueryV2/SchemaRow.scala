@@ -21,28 +21,21 @@ trait SchemaRow extends StObject {
 }
 object SchemaRow {
   
-  @scala.inline
-  def apply(): SchemaRow = {
+  inline def apply(): SchemaRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRow]
   }
   
-  @scala.inline
-  implicit class SchemaRowMutableBuilder[Self <: SchemaRow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRow](x: Self) {
     
-    @scala.inline
-    def setActualLabel(value: String): Self = StObject.set(x, "actualLabel", value.asInstanceOf[js.Any])
+    inline def setActualLabel(value: String): Self = StObject.set(x, "actualLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualLabelUndefined: Self = StObject.set(x, "actualLabel", js.undefined)
+    inline def setActualLabelUndefined: Self = StObject.set(x, "actualLabel", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[SchemaEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[SchemaEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: SchemaEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

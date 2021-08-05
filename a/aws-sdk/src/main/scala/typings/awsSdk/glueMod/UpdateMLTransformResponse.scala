@@ -13,19 +13,15 @@ trait UpdateMLTransformResponse extends StObject {
 }
 object UpdateMLTransformResponse {
   
-  @scala.inline
-  def apply(): UpdateMLTransformResponse = {
+  inline def apply(): UpdateMLTransformResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMLTransformResponse]
   }
   
-  @scala.inline
-  implicit class UpdateMLTransformResponseMutableBuilder[Self <: UpdateMLTransformResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMLTransformResponse](x: Self) {
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
+    inline def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
   }
 }

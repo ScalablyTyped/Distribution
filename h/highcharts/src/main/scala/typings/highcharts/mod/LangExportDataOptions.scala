@@ -24,31 +24,23 @@ trait LangExportDataOptions extends StObject {
 }
 object LangExportDataOptions {
   
-  @scala.inline
-  def apply(): LangExportDataOptions = {
+  inline def apply(): LangExportDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangExportDataOptions]
   }
   
-  @scala.inline
-  implicit class LangExportDataOptionsMutableBuilder[Self <: LangExportDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangExportDataOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotationHeader(value: String): Self = StObject.set(x, "annotationHeader", value.asInstanceOf[js.Any])
+    inline def setAnnotationHeader(value: String): Self = StObject.set(x, "annotationHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationHeaderUndefined: Self = StObject.set(x, "annotationHeader", js.undefined)
+    inline def setAnnotationHeaderUndefined: Self = StObject.set(x, "annotationHeader", js.undefined)
     
-    @scala.inline
-    def setCategoryDatetimeHeader(value: String): Self = StObject.set(x, "categoryDatetimeHeader", value.asInstanceOf[js.Any])
+    inline def setCategoryDatetimeHeader(value: String): Self = StObject.set(x, "categoryDatetimeHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryDatetimeHeaderUndefined: Self = StObject.set(x, "categoryDatetimeHeader", js.undefined)
+    inline def setCategoryDatetimeHeaderUndefined: Self = StObject.set(x, "categoryDatetimeHeader", js.undefined)
     
-    @scala.inline
-    def setCategoryHeader(value: String): Self = StObject.set(x, "categoryHeader", value.asInstanceOf[js.Any])
+    inline def setCategoryHeader(value: String): Self = StObject.set(x, "categoryHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryHeaderUndefined: Self = StObject.set(x, "categoryHeader", js.undefined)
+    inline def setCategoryHeaderUndefined: Self = StObject.set(x, "categoryHeader", js.undefined)
   }
 }

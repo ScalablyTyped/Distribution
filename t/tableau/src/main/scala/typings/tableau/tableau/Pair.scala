@@ -18,22 +18,17 @@ trait Pair extends StObject {
 }
 object Pair {
   
-  @scala.inline
-  def apply(fieldName: String, formattedValue: String, value: String | Double | Boolean | Date): Pair = {
+  inline def apply(fieldName: String, formattedValue: String, value: String | Double | Boolean | Date): Pair = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], formattedValue = formattedValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pair]
   }
   
-  @scala.inline
-  implicit class PairMutableBuilder[Self <: Pair] (val x: Self) extends AnyVal {
+  extension [Self <: Pair](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | Double | Boolean | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | Boolean | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

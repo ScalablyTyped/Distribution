@@ -43,55 +43,39 @@ trait Privileges extends StObject {
 }
 object Privileges {
   
-  @scala.inline
-  def apply(): Privileges = {
+  inline def apply(): Privileges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Privileges]
   }
   
-  @scala.inline
-  implicit class PrivilegesMutableBuilder[Self <: Privileges] (val x: Self) extends AnyVal {
+  extension [Self <: Privileges](x: Self) {
     
-    @scala.inline
-    def setAllowServiceWorkers(value: Boolean): Self = StObject.set(x, "allowServiceWorkers", value.asInstanceOf[js.Any])
+    inline def setAllowServiceWorkers(value: Boolean): Self = StObject.set(x, "allowServiceWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowServiceWorkersUndefined: Self = StObject.set(x, "allowServiceWorkers", js.undefined)
+    inline def setAllowServiceWorkersUndefined: Self = StObject.set(x, "allowServiceWorkers", js.undefined)
     
-    @scala.inline
-    def setBypassCSP(value: Boolean): Self = StObject.set(x, "bypassCSP", value.asInstanceOf[js.Any])
+    inline def setBypassCSP(value: Boolean): Self = StObject.set(x, "bypassCSP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassCSPUndefined: Self = StObject.set(x, "bypassCSP", js.undefined)
+    inline def setBypassCSPUndefined: Self = StObject.set(x, "bypassCSP", js.undefined)
     
-    @scala.inline
-    def setCorsEnabled(value: Boolean): Self = StObject.set(x, "corsEnabled", value.asInstanceOf[js.Any])
+    inline def setCorsEnabled(value: Boolean): Self = StObject.set(x, "corsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsEnabledUndefined: Self = StObject.set(x, "corsEnabled", js.undefined)
+    inline def setCorsEnabledUndefined: Self = StObject.set(x, "corsEnabled", js.undefined)
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
-    @scala.inline
-    def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
     
-    @scala.inline
-    def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
-    @scala.inline
-    def setSupportFetchAPI(value: Boolean): Self = StObject.set(x, "supportFetchAPI", value.asInstanceOf[js.Any])
+    inline def setSupportFetchAPI(value: Boolean): Self = StObject.set(x, "supportFetchAPI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportFetchAPIUndefined: Self = StObject.set(x, "supportFetchAPI", js.undefined)
+    inline def setSupportFetchAPIUndefined: Self = StObject.set(x, "supportFetchAPI", js.undefined)
   }
 }

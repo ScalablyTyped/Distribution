@@ -29,8 +29,7 @@ trait XTransientDocumentsDocumentContentFactory
 }
 object XTransientDocumentsDocumentContentFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDocumentContent: XModel => XContent,
     queryInterface: `type` => js.Any,
@@ -40,10 +39,8 @@ object XTransientDocumentsDocumentContentFactory {
     __obj.asInstanceOf[XTransientDocumentsDocumentContentFactory]
   }
   
-  @scala.inline
-  implicit class XTransientDocumentsDocumentContentFactoryMutableBuilder[Self <: XTransientDocumentsDocumentContentFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XTransientDocumentsDocumentContentFactory](x: Self) {
     
-    @scala.inline
-    def setCreateDocumentContent(value: XModel => XContent): Self = StObject.set(x, "createDocumentContent", js.Any.fromFunction1(value))
+    inline def setCreateDocumentContent(value: XModel => XContent): Self = StObject.set(x, "createDocumentContent", js.Any.fromFunction1(value))
   }
 }

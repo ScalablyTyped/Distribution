@@ -18,28 +18,21 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(file: Blob | ArrayBuffer | String, iconId: String, styleId: String): File = {
+  inline def apply(file: Blob | ArrayBuffer | String, iconId: String, styleId: String): File = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], iconId = iconId.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setFile(value: Blob | ArrayBuffer | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Blob | ArrayBuffer | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconId(value: String): Self = StObject.set(x, "iconId", value.asInstanceOf[js.Any])
+    inline def setIconId(value: String): Self = StObject.set(x, "iconId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
-    @scala.inline
-    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

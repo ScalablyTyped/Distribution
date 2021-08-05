@@ -16,26 +16,20 @@ trait PreRenderedAsset extends StObject {
 }
 object PreRenderedAsset {
   
-  @scala.inline
-  def apply(source: String | Uint8Array): PreRenderedAsset = {
+  inline def apply(source: String | Uint8Array): PreRenderedAsset = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("asset")
     __obj.asInstanceOf[PreRenderedAsset]
   }
   
-  @scala.inline
-  implicit class PreRenderedAssetMutableBuilder[Self <: PreRenderedAsset] (val x: Self) extends AnyVal {
+  extension [Self <: PreRenderedAsset](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSource(value: String | Uint8Array): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | Uint8Array): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: asset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: asset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

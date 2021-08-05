@@ -14,22 +14,17 @@ trait ReturnTypeCollectClassNamesResponse extends StObject {
 }
 object ReturnTypeCollectClassNamesResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[CollectClassNamesRequest], returnType: CollectClassNamesResponse): ReturnTypeCollectClassNamesResponse = {
+  inline def apply(paramsType: js.Array[CollectClassNamesRequest], returnType: CollectClassNamesResponse): ReturnTypeCollectClassNamesResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeCollectClassNamesResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeCollectClassNamesResponseMutableBuilder[Self <: ReturnTypeCollectClassNamesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeCollectClassNamesResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[CollectClassNamesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[CollectClassNamesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: CollectClassNamesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: CollectClassNamesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: CollectClassNamesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: CollectClassNamesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

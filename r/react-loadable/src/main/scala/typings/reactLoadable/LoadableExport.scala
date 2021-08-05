@@ -63,50 +63,36 @@ object LoadableExport {
   }
   object CommonOptions {
     
-    @scala.inline
-    def apply(loading: ComponentType[LoadingComponentProps]): CommonOptions = {
+    inline def apply(loading: ComponentType[LoadingComponentProps]): CommonOptions = {
       val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonOptions]
     }
     
-    @scala.inline
-    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double | `false`): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double | `false`): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayNull: Self = StObject.set(x, "delay", null)
+      inline def setDelayNull: Self = StObject.set(x, "delay", null)
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setLoading(value: ComponentType[LoadingComponentProps]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: ComponentType[LoadingComponentProps]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double | `false`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | `false`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutNull: Self = StObject.set(x, "timeout", null)
+      inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWebpack(value: () => js.Array[String | Double]): Self = StObject.set(x, "webpack", js.Any.fromFunction0(value))
+      inline def setWebpack(value: () => js.Array[String | Double]): Self = StObject.set(x, "webpack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWebpackUndefined: Self = StObject.set(x, "webpack", js.undefined)
+      inline def setWebpackUndefined: Self = StObject.set(x, "webpack", js.undefined)
     }
   }
   
@@ -158,17 +144,14 @@ object LoadableExport {
   }
   object LoadableCaptureProps {
     
-    @scala.inline
-    def apply(report: String => Unit): LoadableCaptureProps = {
+    inline def apply(report: String => Unit): LoadableCaptureProps = {
       val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
       __obj.asInstanceOf[LoadableCaptureProps]
     }
     
-    @scala.inline
-    implicit class LoadableCapturePropsMutableBuilder[Self <: LoadableCaptureProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoadableCaptureProps](x: Self) {
       
-      @scala.inline
-      def setReport(value: String => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
+      inline def setReport(value: String => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }
   }
   
@@ -186,17 +169,14 @@ object LoadableExport {
   }
   object LoadableComponent {
     
-    @scala.inline
-    def apply(preload: () => Unit): LoadableComponent = {
+    inline def apply(preload: () => Unit): LoadableComponent = {
       val __obj = js.Dynamic.literal(preload = js.Any.fromFunction0(preload))
       __obj.asInstanceOf[LoadableComponent]
     }
     
-    @scala.inline
-    implicit class LoadableComponentMutableBuilder[Self <: LoadableComponent] (val x: Self) extends AnyVal {
+    extension [Self <: LoadableComponent](x: Self) {
       
-      @scala.inline
-      def setPreload(value: () => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction0(value))
+      inline def setPreload(value: () => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction0(value))
     }
   }
   
@@ -214,29 +194,22 @@ object LoadableExport {
   }
   object LoadingComponentProps {
     
-    @scala.inline
-    def apply(error: js.Any, isLoading: Boolean, pastDelay: Boolean, retry: () => Unit, timedOut: Boolean): LoadingComponentProps = {
+    inline def apply(error: js.Any, isLoading: Boolean, pastDelay: Boolean, retry: () => Unit, timedOut: Boolean): LoadingComponentProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], pastDelay = pastDelay.asInstanceOf[js.Any], retry = js.Any.fromFunction0(retry), timedOut = timedOut.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadingComponentProps]
     }
     
-    @scala.inline
-    implicit class LoadingComponentPropsMutableBuilder[Self <: LoadingComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingComponentProps](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastDelay(value: Boolean): Self = StObject.set(x, "pastDelay", value.asInstanceOf[js.Any])
+      inline def setPastDelay(value: Boolean): Self = StObject.set(x, "pastDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
+      inline def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,8 +220,7 @@ object LoadableExport {
   trait Options[Props, Exports /* <: js.Object */] extends StObject
   object Options {
     
-    @scala.inline
-    def OptionsWithRender[Props, Exports /* <: js.Object */](
+    inline def OptionsWithRender[Props, Exports /* <: js.Object */](
       loader: () => js.Promise[Exports],
       loading: ComponentType[LoadingComponentProps],
       render: (Exports, Props) => ReactNode
@@ -257,8 +229,7 @@ object LoadableExport {
       __obj.asInstanceOf[typings.reactLoadable.LoadableExport.OptionsWithRender[Props, Exports]]
     }
     
-    @scala.inline
-    def OptionsWithoutRender[Props](
+    inline def OptionsWithoutRender[Props](
       loader: () => js.Promise[ComponentType[Props] | Default[Props]],
       loading: ComponentType[LoadingComponentProps]
     ): typings.reactLoadable.LoadableExport.OptionsWithoutRender[Props] = {
@@ -297,8 +268,7 @@ object LoadableExport {
   }
   object OptionsWithMap {
     
-    @scala.inline
-    def apply[Props, Exports /* <: StringDictionary[js.Any] */](
+    inline def apply[Props, Exports /* <: StringDictionary[js.Any] */](
       loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
       */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports],
@@ -309,18 +279,15 @@ object LoadableExport {
       __obj.asInstanceOf[OptionsWithMap[Props, Exports]]
     }
     
-    @scala.inline
-    implicit class OptionsWithMapMutableBuilder[Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[js.Any] */] (val x: Self & (OptionsWithMap[Props, Exports])) extends AnyVal {
+    extension [Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[js.Any] */](x: Self & (OptionsWithMap[Props, Exports])) {
       
-      @scala.inline
-      def setLoader(
+      inline def setLoader(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
         */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports]
       ): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: (Exports, Props) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (Exports, Props) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
   }
   
@@ -353,8 +320,7 @@ object LoadableExport {
   }
   object OptionsWithRender {
     
-    @scala.inline
-    def apply[Props, Exports /* <: js.Object */](
+    inline def apply[Props, Exports /* <: js.Object */](
       loader: () => js.Promise[Exports],
       loading: ComponentType[LoadingComponentProps],
       render: (Exports, Props) => ReactNode
@@ -363,14 +329,11 @@ object LoadableExport {
       __obj.asInstanceOf[OptionsWithRender[Props, Exports]]
     }
     
-    @scala.inline
-    implicit class OptionsWithRenderMutableBuilder[Self <: OptionsWithRender[?, ?], Props, Exports /* <: js.Object */] (val x: Self & (OptionsWithRender[Props, Exports])) extends AnyVal {
+    extension [Self <: OptionsWithRender[?, ?], Props, Exports /* <: js.Object */](x: Self & (OptionsWithRender[Props, Exports])) {
       
-      @scala.inline
-      def setLoader(value: () => js.Promise[Exports]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
+      inline def setLoader(value: () => js.Promise[Exports]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRender(value: (Exports, Props) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (Exports, Props) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
   }
   
@@ -388,8 +351,7 @@ object LoadableExport {
   }
   object OptionsWithoutRender {
     
-    @scala.inline
-    def apply[Props](
+    inline def apply[Props](
       loader: () => js.Promise[ComponentType[Props] | Default[Props]],
       loading: ComponentType[LoadingComponentProps]
     ): OptionsWithoutRender[Props] = {
@@ -397,11 +359,9 @@ object LoadableExport {
       __obj.asInstanceOf[OptionsWithoutRender[Props]]
     }
     
-    @scala.inline
-    implicit class OptionsWithoutRenderMutableBuilder[Self <: OptionsWithoutRender[?], Props] (val x: Self & OptionsWithoutRender[Props]) extends AnyVal {
+    extension [Self <: OptionsWithoutRender[?], Props](x: Self & OptionsWithoutRender[Props]) {
       
-      @scala.inline
-      def setLoader(value: () => js.Promise[ComponentType[Props] | Default[Props]]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
+      inline def setLoader(value: () => js.Promise[ComponentType[Props] | Default[Props]]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
     }
   }
 }

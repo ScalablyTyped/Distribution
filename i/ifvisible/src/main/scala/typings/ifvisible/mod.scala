@@ -35,26 +35,20 @@ object mod extends Shortcut {
   }
   object IdleInfo {
     
-    @scala.inline
-    def apply(idleFor: Double, isIdle: Boolean, timeLeft: Double, timeLeftPer: String): IdleInfo = {
+    inline def apply(idleFor: Double, isIdle: Boolean, timeLeft: Double, timeLeftPer: String): IdleInfo = {
       val __obj = js.Dynamic.literal(idleFor = idleFor.asInstanceOf[js.Any], isIdle = isIdle.asInstanceOf[js.Any], timeLeft = timeLeft.asInstanceOf[js.Any], timeLeftPer = timeLeftPer.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdleInfo]
     }
     
-    @scala.inline
-    implicit class IdleInfoMutableBuilder[Self <: IdleInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IdleInfo](x: Self) {
       
-      @scala.inline
-      def setIdleFor(value: Double): Self = StObject.set(x, "idleFor", value.asInstanceOf[js.Any])
+      inline def setIdleFor(value: Double): Self = StObject.set(x, "idleFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIdle(value: Boolean): Self = StObject.set(x, "isIdle", value.asInstanceOf[js.Any])
+      inline def setIsIdle(value: Boolean): Self = StObject.set(x, "isIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
+      inline def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLeftPer(value: String): Self = StObject.set(x, "timeLeftPer", value.asInstanceOf[js.Any])
+      inline def setTimeLeftPer(value: String): Self = StObject.set(x, "timeLeftPer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,8 +159,7 @@ object mod extends Shortcut {
   }
   object OnEveryReturn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callback: () => Unit,
       code: Double,
       pause: () => Boolean,
@@ -177,23 +170,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OnEveryReturn]
     }
     
-    @scala.inline
-    implicit class OnEveryReturnMutableBuilder[Self <: OnEveryReturn] (val x: Self) extends AnyVal {
+    extension [Self <: OnEveryReturn](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: () => Boolean): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Boolean): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResume(value: () => Boolean): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => Boolean): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Boolean): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Boolean): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   

@@ -16,8 +16,7 @@ trait ChangeEvent
 }
 object ChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTarget: Scene,
     namespace: String,
     newval: js.Any,
@@ -31,13 +30,10 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent]
   }
   
-  @scala.inline
-  implicit class ChangeEventMutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeEvent](x: Self) {
     
-    @scala.inline
-    def setNewval(value: js.Any): Self = StObject.set(x, "newval", value.asInstanceOf[js.Any])
+    inline def setNewval(value: js.Any): Self = StObject.set(x, "newval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhat(value: String): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
+    inline def setWhat(value: String): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
   }
 }

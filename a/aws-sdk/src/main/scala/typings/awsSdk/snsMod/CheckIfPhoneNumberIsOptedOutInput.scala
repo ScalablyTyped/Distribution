@@ -13,16 +13,13 @@ trait CheckIfPhoneNumberIsOptedOutInput extends StObject {
 }
 object CheckIfPhoneNumberIsOptedOutInput {
   
-  @scala.inline
-  def apply(phoneNumber: PhoneNumber): CheckIfPhoneNumberIsOptedOutInput = {
+  inline def apply(phoneNumber: PhoneNumber): CheckIfPhoneNumberIsOptedOutInput = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIfPhoneNumberIsOptedOutInput]
   }
   
-  @scala.inline
-  implicit class CheckIfPhoneNumberIsOptedOutInputMutableBuilder[Self <: CheckIfPhoneNumberIsOptedOutInput] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIfPhoneNumberIsOptedOutInput](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

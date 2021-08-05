@@ -34,8 +34,7 @@ trait b2TOIInput extends StObject {
 }
 object b2TOIInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     proxyA: b2DistanceProxy,
     proxyB: b2DistanceProxy,
     sweepA: b2Sweep,
@@ -46,22 +45,16 @@ object b2TOIInput {
     __obj.asInstanceOf[b2TOIInput]
   }
   
-  @scala.inline
-  implicit class b2TOIInputMutableBuilder[Self <: b2TOIInput] (val x: Self) extends AnyVal {
+  extension [Self <: b2TOIInput](x: Self) {
     
-    @scala.inline
-    def setProxyA(value: b2DistanceProxy): Self = StObject.set(x, "proxyA", value.asInstanceOf[js.Any])
+    inline def setProxyA(value: b2DistanceProxy): Self = StObject.set(x, "proxyA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyB(value: b2DistanceProxy): Self = StObject.set(x, "proxyB", value.asInstanceOf[js.Any])
+    inline def setProxyB(value: b2DistanceProxy): Self = StObject.set(x, "proxyB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSweepA(value: b2Sweep): Self = StObject.set(x, "sweepA", value.asInstanceOf[js.Any])
+    inline def setSweepA(value: b2Sweep): Self = StObject.set(x, "sweepA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSweepB(value: b2Sweep): Self = StObject.set(x, "sweepB", value.asInstanceOf[js.Any])
+    inline def setSweepB(value: b2Sweep): Self = StObject.set(x, "sweepB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
   }
 }

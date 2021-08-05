@@ -24,8 +24,7 @@ trait MasteryDto extends StObject {
 }
 object MasteryDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: js.Array[String],
     id: Double,
     image: ImageDto,
@@ -39,37 +38,26 @@ object MasteryDto {
     __obj.asInstanceOf[MasteryDto]
   }
   
-  @scala.inline
-  implicit class MasteryDtoMutableBuilder[Self <: MasteryDto] (val x: Self) extends AnyVal {
+  extension [Self <: MasteryDto](x: Self) {
     
-    @scala.inline
-    def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasteryTree(value: String): Self = StObject.set(x, "masteryTree", value.asInstanceOf[js.Any])
+    inline def setMasteryTree(value: String): Self = StObject.set(x, "masteryTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrereq(value: String): Self = StObject.set(x, "prereq", value.asInstanceOf[js.Any])
+    inline def setPrereq(value: String): Self = StObject.set(x, "prereq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanks(value: Double): Self = StObject.set(x, "ranks", value.asInstanceOf[js.Any])
+    inline def setRanks(value: Double): Self = StObject.set(x, "ranks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSanitizedDescription(value: js.Array[String]): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
+    inline def setSanitizedDescription(value: js.Array[String]): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSanitizedDescriptionVarargs(value: String*): Self = StObject.set(x, "sanitizedDescription", js.Array(value :_*))
+    inline def setSanitizedDescriptionVarargs(value: String*): Self = StObject.set(x, "sanitizedDescription", js.Array(value :_*))
   }
 }

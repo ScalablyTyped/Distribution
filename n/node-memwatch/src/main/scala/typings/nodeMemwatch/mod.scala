@@ -41,17 +41,14 @@ object mod extends Shortcut {
   }
   object HeapDiff {
     
-    @scala.inline
-    def apply(end: () => HeapDiffInformation): HeapDiff = {
+    inline def apply(end: () => HeapDiffInformation): HeapDiff = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end))
       __obj.asInstanceOf[HeapDiff]
     }
     
-    @scala.inline
-    implicit class HeapDiffMutableBuilder[Self <: HeapDiff] (val x: Self) extends AnyVal {
+    extension [Self <: HeapDiff](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => HeapDiffInformation): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => HeapDiffInformation): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     }
   }
   
@@ -69,8 +66,7 @@ object mod extends Shortcut {
   }
   object HeapDiffChange {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allocated_nodes: Double,
       details: js.Array[HeapDiffDetail],
       freed_nodes: Double,
@@ -81,26 +77,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HeapDiffChange]
     }
     
-    @scala.inline
-    implicit class HeapDiffChangeMutableBuilder[Self <: HeapDiffChange] (val x: Self) extends AnyVal {
+    extension [Self <: HeapDiffChange](x: Self) {
       
-      @scala.inline
-      def setAllocated_nodes(value: Double): Self = StObject.set(x, "allocated_nodes", value.asInstanceOf[js.Any])
+      inline def setAllocated_nodes(value: Double): Self = StObject.set(x, "allocated_nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: js.Array[HeapDiffDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Array[HeapDiffDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsVarargs(value: HeapDiffDetail*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: HeapDiffDetail*): Self = StObject.set(x, "details", js.Array(value :_*))
       
-      @scala.inline
-      def setFreed_nodes(value: Double): Self = StObject.set(x, "freed_nodes", value.asInstanceOf[js.Any])
+      inline def setFreed_nodes(value: Double): Self = StObject.set(x, "freed_nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize_bytes(value: Double): Self = StObject.set(x, "size_bytes", value.asInstanceOf[js.Any])
+      inline def setSize_bytes(value: Double): Self = StObject.set(x, "size_bytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,31 +109,24 @@ object mod extends Shortcut {
   }
   object HeapDiffDetail {
     
-    @scala.inline
-    def apply(Plussign: Double, _dash: Double, size: String, size_bytes: Double, what: String): HeapDiffDetail = {
+    inline def apply(Plussign: Double, _dash: Double, size: String, size_bytes: Double, what: String): HeapDiffDetail = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], size_bytes = size_bytes.asInstanceOf[js.Any], what = what.asInstanceOf[js.Any])
       __obj.updateDynamic("+")(Plussign.asInstanceOf[js.Any])
       __obj.updateDynamic("-")(_dash.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeapDiffDetail]
     }
     
-    @scala.inline
-    implicit class HeapDiffDetailMutableBuilder[Self <: HeapDiffDetail] (val x: Self) extends AnyVal {
+    extension [Self <: HeapDiffDetail](x: Self) {
       
-      @scala.inline
-      def setPlussign(value: Double): Self = StObject.set(x, "+", value.asInstanceOf[js.Any])
+      inline def setPlussign(value: Double): Self = StObject.set(x, "+", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize_bytes(value: Double): Self = StObject.set(x, "size_bytes", value.asInstanceOf[js.Any])
+      inline def setSize_bytes(value: Double): Self = StObject.set(x, "size_bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhat(value: String): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
+      inline def setWhat(value: String): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_dash(value: Double): Self = StObject.set(x, "-", value.asInstanceOf[js.Any])
+      inline def set_dash(value: Double): Self = StObject.set(x, "-", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,23 +140,18 @@ object mod extends Shortcut {
   }
   object HeapDiffInformation {
     
-    @scala.inline
-    def apply(after: HeapDiffSnapshot, before: HeapDiffSnapshot, change: HeapDiffChange): HeapDiffInformation = {
+    inline def apply(after: HeapDiffSnapshot, before: HeapDiffSnapshot, change: HeapDiffChange): HeapDiffInformation = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeapDiffInformation]
     }
     
-    @scala.inline
-    implicit class HeapDiffInformationMutableBuilder[Self <: HeapDiffInformation] (val x: Self) extends AnyVal {
+    extension [Self <: HeapDiffInformation](x: Self) {
       
-      @scala.inline
-      def setAfter(value: HeapDiffSnapshot): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: HeapDiffSnapshot): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: HeapDiffSnapshot): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: HeapDiffSnapshot): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChange(value: HeapDiffChange): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: HeapDiffChange): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,23 +165,18 @@ object mod extends Shortcut {
   }
   object HeapDiffSnapshot {
     
-    @scala.inline
-    def apply(nodes: Double, size: String, size_bytes: Double): HeapDiffSnapshot = {
+    inline def apply(nodes: Double, size: String, size_bytes: Double): HeapDiffSnapshot = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], size_bytes = size_bytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeapDiffSnapshot]
     }
     
-    @scala.inline
-    implicit class HeapDiffSnapshotMutableBuilder[Self <: HeapDiffSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: HeapDiffSnapshot](x: Self) {
       
-      @scala.inline
-      def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize_bytes(value: Double): Self = StObject.set(x, "size_bytes", value.asInstanceOf[js.Any])
+      inline def setSize_bytes(value: Double): Self = StObject.set(x, "size_bytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,20 +194,16 @@ object mod extends Shortcut {
   }
   object LeakInformation {
     
-    @scala.inline
-    def apply(growth: Double, reason: String): LeakInformation = {
+    inline def apply(growth: Double, reason: String): LeakInformation = {
       val __obj = js.Dynamic.literal(growth = growth.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[LeakInformation]
     }
     
-    @scala.inline
-    implicit class LeakInformationMutableBuilder[Self <: LeakInformation] (val x: Self) extends AnyVal {
+    extension [Self <: LeakInformation](x: Self) {
       
-      @scala.inline
-      def setGrowth(value: Double): Self = StObject.set(x, "growth", value.asInstanceOf[js.Any])
+      inline def setGrowth(value: Double): Self = StObject.set(x, "growth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,8 +245,7 @@ object mod extends Shortcut {
   }
   object StatsInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current_base: Double,
       estimated_base: Double,
       heap_compactions: Double,
@@ -292,32 +259,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StatsInformation]
     }
     
-    @scala.inline
-    implicit class StatsInformationMutableBuilder[Self <: StatsInformation] (val x: Self) extends AnyVal {
+    extension [Self <: StatsInformation](x: Self) {
       
-      @scala.inline
-      def setCurrent_base(value: Double): Self = StObject.set(x, "current_base", value.asInstanceOf[js.Any])
+      inline def setCurrent_base(value: Double): Self = StObject.set(x, "current_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEstimated_base(value: Double): Self = StObject.set(x, "estimated_base", value.asInstanceOf[js.Any])
+      inline def setEstimated_base(value: Double): Self = StObject.set(x, "estimated_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeap_compactions(value: Double): Self = StObject.set(x, "heap_compactions", value.asInstanceOf[js.Any])
+      inline def setHeap_compactions(value: Double): Self = StObject.set(x, "heap_compactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_full_gc(value: Double): Self = StObject.set(x, "num_full_gc", value.asInstanceOf[js.Any])
+      inline def setNum_full_gc(value: Double): Self = StObject.set(x, "num_full_gc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_inc_gc(value: Double): Self = StObject.set(x, "num_inc_gc", value.asInstanceOf[js.Any])
+      inline def setNum_inc_gc(value: Double): Self = StObject.set(x, "num_inc_gc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage_trend(value: Double): Self = StObject.set(x, "usage_trend", value.asInstanceOf[js.Any])
+      inline def setUsage_trend(value: Double): Self = StObject.set(x, "usage_trend", value.asInstanceOf[js.Any])
     }
   }
   

@@ -20,37 +20,27 @@ trait MaterializedViewDefinition extends StObject {
 }
 object MaterializedViewDefinition {
   
-  @scala.inline
-  def apply(): MaterializedViewDefinition = {
+  inline def apply(): MaterializedViewDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaterializedViewDefinition]
   }
   
-  @scala.inline
-  implicit class MaterializedViewDefinitionMutableBuilder[Self <: MaterializedViewDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: MaterializedViewDefinition](x: Self) {
     
-    @scala.inline
-    def setEnableRefresh(value: Boolean): Self = StObject.set(x, "enableRefresh", value.asInstanceOf[js.Any])
+    inline def setEnableRefresh(value: Boolean): Self = StObject.set(x, "enableRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRefreshUndefined: Self = StObject.set(x, "enableRefresh", js.undefined)
+    inline def setEnableRefreshUndefined: Self = StObject.set(x, "enableRefresh", js.undefined)
     
-    @scala.inline
-    def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
+    inline def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
+    inline def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRefreshIntervalMs(value: String): Self = StObject.set(x, "refreshIntervalMs", value.asInstanceOf[js.Any])
+    inline def setRefreshIntervalMs(value: String): Self = StObject.set(x, "refreshIntervalMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshIntervalMsUndefined: Self = StObject.set(x, "refreshIntervalMs", js.undefined)
+    inline def setRefreshIntervalMsUndefined: Self = StObject.set(x, "refreshIntervalMs", js.undefined)
   }
 }

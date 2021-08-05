@@ -22,8 +22,7 @@ trait Device extends StObject {
 }
 object Device {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     create: (js.Object, CbCallback) => Unit,
     delete: (Query, CbCallback) => Unit,
@@ -36,28 +35,20 @@ object Device {
     __obj.asInstanceOf[Device]
   }
   
-  @scala.inline
-  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+  extension [Self <: Device](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDelete(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+    inline def setDelete(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFetch(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
+    inline def setFetch(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (Query, js.Object, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (Query, js.Object, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

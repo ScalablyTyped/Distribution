@@ -29,8 +29,7 @@ trait NumberRangeFilterBuilder extends StObject {
 }
 object NumberRangeFilterBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setMaxValue: Integer => NumberRangeFilterBuilder,
     setMinValue: Integer => NumberRangeFilterBuilder,
     setOrientation: Orientation => NumberRangeFilterBuilder,
@@ -41,22 +40,16 @@ object NumberRangeFilterBuilder {
     __obj.asInstanceOf[NumberRangeFilterBuilder]
   }
   
-  @scala.inline
-  implicit class NumberRangeFilterBuilderMutableBuilder[Self <: NumberRangeFilterBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: NumberRangeFilterBuilder](x: Self) {
     
-    @scala.inline
-    def setSetMaxValue(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinValue(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrientation(value: Orientation => NumberRangeFilterBuilder): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
+    inline def setSetOrientation(value: Orientation => NumberRangeFilterBuilder): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetShowRangeValues(value: Boolean => NumberRangeFilterBuilder): Self = StObject.set(x, "setShowRangeValues", js.Any.fromFunction1(value))
+    inline def setSetShowRangeValues(value: Boolean => NumberRangeFilterBuilder): Self = StObject.set(x, "setShowRangeValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTicks(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setTicks", js.Any.fromFunction1(value))
+    inline def setSetTicks(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setTicks", js.Any.fromFunction1(value))
   }
 }

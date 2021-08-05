@@ -12,19 +12,15 @@ trait EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName extend
 }
 object EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName {
   
-  @scala.inline
-  def apply(familyName: String, givenName: String): EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName = {
+  inline def apply(familyName: String, givenName: String): EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName = {
     val __obj = js.Dynamic.literal(familyName = familyName.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsNameMutableBuilder[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName](x: Self) {
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
   }
 }

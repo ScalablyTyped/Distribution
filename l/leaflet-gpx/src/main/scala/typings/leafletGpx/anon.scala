@@ -15,17 +15,14 @@ object anon {
   }
   object ParseElements {
     
-    @scala.inline
-    def apply(parseElements: js.Tuple3[track, route, waypoint]): ParseElements = {
+    inline def apply(parseElements: js.Tuple3[track, route, waypoint]): ParseElements = {
       val __obj = js.Dynamic.literal(parseElements = parseElements.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseElements]
     }
     
-    @scala.inline
-    implicit class ParseElementsMutableBuilder[Self <: ParseElements] (val x: Self) extends AnyVal {
+    extension [Self <: ParseElements](x: Self) {
       
-      @scala.inline
-      def setParseElements(value: js.Tuple3[track, route, waypoint]): Self = StObject.set(x, "parseElements", value.asInstanceOf[js.Any])
+      inline def setParseElements(value: js.Tuple3[track, route, waypoint]): Self = StObject.set(x, "parseElements", value.asInstanceOf[js.Any])
     }
   }
 }

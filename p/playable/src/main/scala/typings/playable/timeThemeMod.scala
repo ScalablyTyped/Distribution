@@ -16,7 +16,6 @@ object timeThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/time/time.theme", "default.timeText")
     @js.native
     def timeText: Color = js.native
-    @scala.inline
-    def timeText_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeText")(x.asInstanceOf[js.Any])
+    inline def timeText_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeText")(x.asInstanceOf[js.Any])
   }
 }

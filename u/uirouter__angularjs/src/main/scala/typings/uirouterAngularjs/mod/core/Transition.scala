@@ -39,6 +39,5 @@ object Transition {
   @JSImport("@uirouter/angularjs", "core.Transition.diToken")
   @js.native
   def diToken: TypeofTransition = js.native
-  @scala.inline
-  def diToken_=(x: TypeofTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diToken")(x.asInstanceOf[js.Any])
+  inline def diToken_=(x: TypeofTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diToken")(x.asInstanceOf[js.Any])
 }

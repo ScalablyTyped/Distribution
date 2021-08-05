@@ -15,8 +15,7 @@ object activexDiskquotaNumbers {
        with AccountStatusConstants
        with QuotaStateConstants
        with UserNameResolutionConstants
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
@@ -24,8 +23,7 @@ object activexDiskquotaNumbers {
        with AccountStatusConstants
        with QuotaStateConstants
        with UserNameResolutionConstants
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `2`
@@ -33,27 +31,23 @@ object activexDiskquotaNumbers {
        with AccountStatusConstants
        with QuotaStateConstants
        with UserNameResolutionConstants
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
     extends StObject
        with AccountStatusConstants
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `4`
     extends StObject
        with AccountStatusConstants
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `5`
     extends StObject
        with AccountStatusConstants
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
 }

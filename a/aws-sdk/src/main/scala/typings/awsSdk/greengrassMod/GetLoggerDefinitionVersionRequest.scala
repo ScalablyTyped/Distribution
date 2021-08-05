@@ -23,25 +23,19 @@ trait GetLoggerDefinitionVersionRequest extends StObject {
 }
 object GetLoggerDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(LoggerDefinitionId: string, LoggerDefinitionVersionId: string): GetLoggerDefinitionVersionRequest = {
+  inline def apply(LoggerDefinitionId: string, LoggerDefinitionVersionId: string): GetLoggerDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(LoggerDefinitionId = LoggerDefinitionId.asInstanceOf[js.Any], LoggerDefinitionVersionId = LoggerDefinitionVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLoggerDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetLoggerDefinitionVersionRequestMutableBuilder[Self <: GetLoggerDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoggerDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
+    inline def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerDefinitionVersionId(value: string): Self = StObject.set(x, "LoggerDefinitionVersionId", value.asInstanceOf[js.Any])
+    inline def setLoggerDefinitionVersionId(value: string): Self = StObject.set(x, "LoggerDefinitionVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -23,37 +23,27 @@ trait GooglePrivacyDlpV2CreateDlpJobRequest extends StObject {
 }
 object GooglePrivacyDlpV2CreateDlpJobRequest {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2CreateDlpJobRequest = {
+  inline def apply(): GooglePrivacyDlpV2CreateDlpJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2CreateDlpJobRequest]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2CreateDlpJobRequestMutableBuilder[Self <: GooglePrivacyDlpV2CreateDlpJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2CreateDlpJobRequest](x: Self) {
     
-    @scala.inline
-    def setInspectJob(value: GooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "inspectJob", value.asInstanceOf[js.Any])
+    inline def setInspectJob(value: GooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "inspectJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectJobUndefined: Self = StObject.set(x, "inspectJob", js.undefined)
+    inline def setInspectJobUndefined: Self = StObject.set(x, "inspectJob", js.undefined)
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setRiskJob(value: GooglePrivacyDlpV2RiskAnalysisJobConfig): Self = StObject.set(x, "riskJob", value.asInstanceOf[js.Any])
+    inline def setRiskJob(value: GooglePrivacyDlpV2RiskAnalysisJobConfig): Self = StObject.set(x, "riskJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiskJobUndefined: Self = StObject.set(x, "riskJob", js.undefined)
+    inline def setRiskJobUndefined: Self = StObject.set(x, "riskJob", js.undefined)
   }
 }

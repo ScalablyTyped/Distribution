@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoTextTabAlign extends StObject
 object MsoTextTabAlign {
   
-  @scala.inline
-  def msoTabAlignCenter: `1` = 1.asInstanceOf[`1`]
+  inline def msoTabAlignCenter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoTabAlignDecimal: `3` = 3.asInstanceOf[`3`]
+  inline def msoTabAlignDecimal: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoTabAlignLeft: `0` = 0.asInstanceOf[`0`]
+  inline def msoTabAlignLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoTabAlignMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoTabAlignMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoTabAlignRight: `2` = 2.asInstanceOf[`2`]
+  inline def msoTabAlignRight: `2` = 2.asInstanceOf[`2`]
 }

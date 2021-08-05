@@ -13,8 +13,7 @@ trait IWalkModel
      with IRouteOffset
 object IWalkModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childId: String,
     childModel: IModel,
     layer: String,

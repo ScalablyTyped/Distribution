@@ -21,27 +21,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlEditionOptionsOption extends StObject
 object XlEditionOptionsOption {
   
-  @scala.inline
-  def xlAutomaticUpdate: `4` = 4.asInstanceOf[`4`]
+  inline def xlAutomaticUpdate: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlCancel: `1` = 1.asInstanceOf[`1`]
+  inline def xlCancel: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlChangeAttributes: `6` = 6.asInstanceOf[`6`]
+  inline def xlChangeAttributes: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlManualUpdate: `5` = 5.asInstanceOf[`5`]
+  inline def xlManualUpdate: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlOpenSource: `3` = 3.asInstanceOf[`3`]
+  inline def xlOpenSource: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlSelect: `3` = 3.asInstanceOf[`3`]
+  inline def xlSelect: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlSendPublisher: `2` = 2.asInstanceOf[`2`]
+  inline def xlSendPublisher: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlUpdateSubscriber: `2` = 2.asInstanceOf[`2`]
+  inline def xlUpdateSubscriber: `2` = 2.asInstanceOf[`2`]
 }

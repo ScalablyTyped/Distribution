@@ -36,8 +36,7 @@ trait SketchViewModelDefaultCreateOptions
 }
 object SketchViewModelDefaultCreateOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -46,25 +45,18 @@ object SketchViewModelDefaultCreateOptions {
     __obj.asInstanceOf[SketchViewModelDefaultCreateOptions]
   }
   
-  @scala.inline
-  implicit class SketchViewModelDefaultCreateOptionsMutableBuilder[Self <: SketchViewModelDefaultCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SketchViewModelDefaultCreateOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultZ(value: Double): Self = StObject.set(x, "defaultZ", value.asInstanceOf[js.Any])
+    inline def setDefaultZ(value: Double): Self = StObject.set(x, "defaultZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultZUndefined: Self = StObject.set(x, "defaultZ", js.undefined)
+    inline def setDefaultZUndefined: Self = StObject.set(x, "defaultZ", js.undefined)
     
-    @scala.inline
-    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+    inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+    inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     
-    @scala.inline
-    def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

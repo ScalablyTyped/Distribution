@@ -11,22 +11,17 @@ trait SitesListResponse extends StObject {
 }
 object SitesListResponse {
   
-  @scala.inline
-  def apply(): SitesListResponse = {
+  inline def apply(): SitesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SitesListResponse]
   }
   
-  @scala.inline
-  implicit class SitesListResponseMutableBuilder[Self <: SitesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SitesListResponse](x: Self) {
     
-    @scala.inline
-    def setSiteEntry(value: js.Array[WmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
+    inline def setSiteEntry(value: js.Array[WmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
+    inline def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
     
-    @scala.inline
-    def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
+    inline def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
   }
 }

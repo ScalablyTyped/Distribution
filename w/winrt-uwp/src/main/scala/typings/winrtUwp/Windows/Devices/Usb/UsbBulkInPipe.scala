@@ -32,8 +32,7 @@ trait UsbBulkInPipe extends StObject {
 }
 object UsbBulkInPipe {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearStallAsync: () => IPromiseWithIAsyncAction,
     endpointDescriptor: UsbBulkInEndpointDescriptor,
     flushBuffer: () => Unit,
@@ -45,25 +44,18 @@ object UsbBulkInPipe {
     __obj.asInstanceOf[UsbBulkInPipe]
   }
   
-  @scala.inline
-  implicit class UsbBulkInPipeMutableBuilder[Self <: UsbBulkInPipe] (val x: Self) extends AnyVal {
+  extension [Self <: UsbBulkInPipe](x: Self) {
     
-    @scala.inline
-    def setClearStallAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "clearStallAsync", js.Any.fromFunction0(value))
+    inline def setClearStallAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "clearStallAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndpointDescriptor(value: UsbBulkInEndpointDescriptor): Self = StObject.set(x, "endpointDescriptor", value.asInstanceOf[js.Any])
+    inline def setEndpointDescriptor(value: UsbBulkInEndpointDescriptor): Self = StObject.set(x, "endpointDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlushBuffer(value: () => Unit): Self = StObject.set(x, "flushBuffer", js.Any.fromFunction0(value))
+    inline def setFlushBuffer(value: () => Unit): Self = StObject.set(x, "flushBuffer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+    inline def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTransferSizeBytes(value: Double): Self = StObject.set(x, "maxTransferSizeBytes", value.asInstanceOf[js.Any])
+    inline def setMaxTransferSizeBytes(value: Double): Self = StObject.set(x, "maxTransferSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOptions(value: UsbReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
+    inline def setReadOptions(value: UsbReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
   }
 }

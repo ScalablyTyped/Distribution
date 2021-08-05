@@ -14,19 +14,15 @@ trait GetCenterLocationSuccessCallbackResult extends StObject {
 }
 object GetCenterLocationSuccessCallbackResult {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double): GetCenterLocationSuccessCallbackResult = {
+  inline def apply(latitude: Double, longitude: Double): GetCenterLocationSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCenterLocationSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetCenterLocationSuccessCallbackResultMutableBuilder[Self <: GetCenterLocationSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetCenterLocationSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

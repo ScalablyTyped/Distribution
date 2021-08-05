@@ -23,19 +23,15 @@ trait ASPxClientToolbarItemValueChangedEventArgs
 }
 object ASPxClientToolbarItemValueChangedEventArgs {
   
-  @scala.inline
-  def apply(editor: ASPxClientControl, item: ASPxClientMenuItem, processOnServer: Boolean): ASPxClientToolbarItemValueChangedEventArgs = {
+  inline def apply(editor: ASPxClientControl, item: ASPxClientMenuItem, processOnServer: Boolean): ASPxClientToolbarItemValueChangedEventArgs = {
     val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientToolbarItemValueChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientToolbarItemValueChangedEventArgsMutableBuilder[Self <: ASPxClientToolbarItemValueChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientToolbarItemValueChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEditor(value: ASPxClientControl): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: ASPxClientControl): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

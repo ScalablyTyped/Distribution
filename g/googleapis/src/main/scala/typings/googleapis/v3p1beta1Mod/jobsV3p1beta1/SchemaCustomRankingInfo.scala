@@ -32,25 +32,19 @@ trait SchemaCustomRankingInfo extends StObject {
 }
 object SchemaCustomRankingInfo {
   
-  @scala.inline
-  def apply(): SchemaCustomRankingInfo = {
+  inline def apply(): SchemaCustomRankingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomRankingInfo]
   }
   
-  @scala.inline
-  implicit class SchemaCustomRankingInfoMutableBuilder[Self <: SchemaCustomRankingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomRankingInfo](x: Self) {
     
-    @scala.inline
-    def setImportanceLevel(value: String): Self = StObject.set(x, "importanceLevel", value.asInstanceOf[js.Any])
+    inline def setImportanceLevel(value: String): Self = StObject.set(x, "importanceLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportanceLevelUndefined: Self = StObject.set(x, "importanceLevel", js.undefined)
+    inline def setImportanceLevelUndefined: Self = StObject.set(x, "importanceLevel", js.undefined)
     
-    @scala.inline
-    def setRankingExpression(value: String): Self = StObject.set(x, "rankingExpression", value.asInstanceOf[js.Any])
+    inline def setRankingExpression(value: String): Self = StObject.set(x, "rankingExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankingExpressionUndefined: Self = StObject.set(x, "rankingExpression", js.undefined)
+    inline def setRankingExpressionUndefined: Self = StObject.set(x, "rankingExpression", js.undefined)
   }
 }

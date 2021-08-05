@@ -66,67 +66,47 @@ trait SchemaFilterCriteria extends StObject {
 }
 object SchemaFilterCriteria {
   
-  @scala.inline
-  def apply(): SchemaFilterCriteria = {
+  inline def apply(): SchemaFilterCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilterCriteria]
   }
   
-  @scala.inline
-  implicit class SchemaFilterCriteriaMutableBuilder[Self <: SchemaFilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilterCriteria](x: Self) {
     
-    @scala.inline
-    def setExcludeChats(value: Boolean): Self = StObject.set(x, "excludeChats", value.asInstanceOf[js.Any])
+    inline def setExcludeChats(value: Boolean): Self = StObject.set(x, "excludeChats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeChatsUndefined: Self = StObject.set(x, "excludeChats", js.undefined)
+    inline def setExcludeChatsUndefined: Self = StObject.set(x, "excludeChats", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setHasAttachment(value: Boolean): Self = StObject.set(x, "hasAttachment", value.asInstanceOf[js.Any])
+    inline def setHasAttachment(value: Boolean): Self = StObject.set(x, "hasAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAttachmentUndefined: Self = StObject.set(x, "hasAttachment", js.undefined)
+    inline def setHasAttachmentUndefined: Self = StObject.set(x, "hasAttachment", js.undefined)
     
-    @scala.inline
-    def setNegatedQuery(value: String): Self = StObject.set(x, "negatedQuery", value.asInstanceOf[js.Any])
+    inline def setNegatedQuery(value: String): Self = StObject.set(x, "negatedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegatedQueryUndefined: Self = StObject.set(x, "negatedQuery", js.undefined)
+    inline def setNegatedQueryUndefined: Self = StObject.set(x, "negatedQuery", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeComparison(value: String): Self = StObject.set(x, "sizeComparison", value.asInstanceOf[js.Any])
+    inline def setSizeComparison(value: String): Self = StObject.set(x, "sizeComparison", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeComparisonUndefined: Self = StObject.set(x, "sizeComparison", js.undefined)
+    inline def setSizeComparisonUndefined: Self = StObject.set(x, "sizeComparison", js.undefined)
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

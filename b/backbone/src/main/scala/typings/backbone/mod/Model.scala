@@ -23,11 +23,11 @@ class Model[T, S, E] () extends StObject {
     options: CombinedModelConstructorOptions[E, Model[js.Any, ModelSetOptions, js.Object]]
   ) = this()
   
-  var _changing: Boolean = js.native
+  /* private */ var _changing: Boolean = js.native
   
-  var _pending: Boolean = js.native
+  /* private */ var _pending: Boolean = js.native
   
-  var _previousAttributes: js.Any = js.native
+  /* private */ var _previousAttributes: js.Any = js.native
   
   /* private */ def _validate(attributes: js.Any, options: js.Any): Boolean = js.native
   
@@ -203,8 +203,6 @@ object Model {
     * Do not use, prefer TypeScript's extend functionality.
     **/
   /* static member */
-  @scala.inline
-  def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

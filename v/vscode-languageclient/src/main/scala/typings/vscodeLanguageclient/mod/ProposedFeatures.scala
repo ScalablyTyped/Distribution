@@ -12,6 +12,5 @@ object ProposedFeatures {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAll(client: typings.vscodeLanguageclient.clientMod.BaseLanguageClient): js.Array[StaticFeature | DynamicFeature[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAll")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[StaticFeature | DynamicFeature[js.Any]]]
+  inline def createAll(client: typings.vscodeLanguageclient.clientMod.BaseLanguageClient): js.Array[StaticFeature | DynamicFeature[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAll")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[StaticFeature | DynamicFeature[js.Any]]]
 }

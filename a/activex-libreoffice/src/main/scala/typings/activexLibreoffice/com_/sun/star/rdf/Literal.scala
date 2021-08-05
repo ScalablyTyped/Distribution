@@ -35,8 +35,7 @@ trait Literal
 }
 object Literal {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Datatype: XURI,
     Language: String,
     StringValue: String,
@@ -49,16 +48,12 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   
-  @scala.inline
-  implicit class LiteralMutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
+  extension [Self <: Literal](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithLanguage(value: (String, String) => Unit): Self = StObject.set(x, "createWithLanguage", js.Any.fromFunction2(value))
+    inline def setCreateWithLanguage(value: (String, String) => Unit): Self = StObject.set(x, "createWithLanguage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateWithType(value: (String, XURI) => Unit): Self = StObject.set(x, "createWithType", js.Any.fromFunction2(value))
+    inline def setCreateWithType(value: (String, XURI) => Unit): Self = StObject.set(x, "createWithType", js.Any.fromFunction2(value))
   }
 }

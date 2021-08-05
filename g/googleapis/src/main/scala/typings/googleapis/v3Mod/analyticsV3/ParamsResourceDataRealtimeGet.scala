@@ -54,55 +54,39 @@ trait ParamsResourceDataRealtimeGet
 }
 object ParamsResourceDataRealtimeGet {
   
-  @scala.inline
-  def apply(): ParamsResourceDataRealtimeGet = {
+  inline def apply(): ParamsResourceDataRealtimeGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDataRealtimeGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDataRealtimeGetMutableBuilder[Self <: ParamsResourceDataRealtimeGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDataRealtimeGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
+    inline def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
+    inline def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: String): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: String): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

@@ -74,8 +74,7 @@ trait XMultipleResults
 }
 object XMultipleResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MoreResults: Boolean,
     ResultSet: XResultSet,
     UpdateCount: Double,
@@ -90,25 +89,18 @@ object XMultipleResults {
     __obj.asInstanceOf[XMultipleResults]
   }
   
-  @scala.inline
-  implicit class XMultipleResultsMutableBuilder[Self <: XMultipleResults] (val x: Self) extends AnyVal {
+  extension [Self <: XMultipleResults](x: Self) {
     
-    @scala.inline
-    def setGetMoreResults(value: () => Boolean): Self = StObject.set(x, "getMoreResults", js.Any.fromFunction0(value))
+    inline def setGetMoreResults(value: () => Boolean): Self = StObject.set(x, "getMoreResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResultSet(value: () => XResultSet): Self = StObject.set(x, "getResultSet", js.Any.fromFunction0(value))
+    inline def setGetResultSet(value: () => XResultSet): Self = StObject.set(x, "getResultSet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpdateCount(value: () => Double): Self = StObject.set(x, "getUpdateCount", js.Any.fromFunction0(value))
+    inline def setGetUpdateCount(value: () => Double): Self = StObject.set(x, "getUpdateCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
+    inline def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
+    inline def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCount(value: Double): Self = StObject.set(x, "UpdateCount", value.asInstanceOf[js.Any])
+    inline def setUpdateCount(value: Double): Self = StObject.set(x, "UpdateCount", value.asInstanceOf[js.Any])
   }
 }

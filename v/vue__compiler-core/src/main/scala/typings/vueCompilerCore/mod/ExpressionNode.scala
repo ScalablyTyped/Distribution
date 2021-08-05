@@ -14,8 +14,7 @@ trait ExpressionNode
      with PropsExpression
 object ExpressionNode {
   
-  @scala.inline
-  def CompoundExpressionNode(
+  inline def CompoundExpressionNode(
     children: js.Array[
       SimpleExpressionNode | typings.vueCompilerCore.mod.CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
     ],
@@ -26,8 +25,7 @@ object ExpressionNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.CompoundExpressionNode]
   }
   
-  @scala.inline
-  def SimpleExpressionNode(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
+  inline def SimpleExpressionNode(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isConstant = isConstant.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(4)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SimpleExpressionNode]

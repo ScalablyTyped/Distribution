@@ -72,32 +72,32 @@ object transitionTransitionMod {
     var _aborted: Boolean = js.native
     
     /** @internal If a transition doesn't exit/enter any states, returns any [[Param]] whose value changed */
-    var _changedParams: js.Any = js.native
+    /* private */ var _changedParams: js.Any = js.native
     
     /** @internal */
-    var _deferred: js.Any = js.native
+    /* private */ var _deferred: js.Any = js.native
     
     /** @internal */
-    var _error: js.Any = js.native
+    /* private */ var _error: js.Any = js.native
     
     /** @internal */
-    var _hookBuilder: js.Any = js.native
+    /* private */ var _hookBuilder: js.Any = js.native
     
     /** @internal */
     def _ignoredReason(): js.UndefOr[SameAsCurrent | SameAsPending] = js.native
     
     /** @internal */
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /** @internal Holds the hook registration functions such as those passed to Transition.onStart() */
     @JSName("_registeredHooks")
     var _registeredHooks_Transition: RegisteredHooks = js.native
     
     /** @internal */
-    var _targetState: js.Any = js.native
+    /* private */ var _targetState: js.Any = js.native
     
     /** @internal */
-    var _treeChanges: js.Any = js.native
+    /* private */ var _treeChanges: js.Any = js.native
     
     /**
       * Aborts this transition
@@ -141,13 +141,13 @@ object transitionTransitionMod {
     def addResolvable(resolvable: ResolvableLiteral): Unit = js.native
     def addResolvable(resolvable: ResolvableLiteral, state: StateOrName): Unit = js.native
     
-    var applyViewConfigs: js.Any = js.native
+    /* private */ var applyViewConfigs: js.Any = js.native
     
     /** @internal
       * Creates the transition-level hook registration functions
       * (which can then be used to register hooks)
       */
-    var createTransitionHookRegFns: js.Any = js.native
+    /* private */ var createTransitionHookRegFns: js.Any = js.native
     
     /**
       * Returns true if the transition is dynamic.
@@ -579,7 +579,6 @@ object transitionTransitionMod {
     @JSImport("@uirouter/core/lib/transition/transition", "Transition.diToken")
     @js.native
     def diToken: TypeofTransition = js.native
-    @scala.inline
-    def diToken_=(x: TypeofTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diToken")(x.asInstanceOf[js.Any])
+    inline def diToken_=(x: TypeofTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diToken")(x.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object JSXElement_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[
       JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
     ],
@@ -40,35 +39,26 @@ object JSXElement_ {
     __obj.asInstanceOf[JSXElement_]
   }
   
-  @scala.inline
-  implicit class JSXElement_MutableBuilder[Self <: JSXElement_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXElement_](x: Self) {
     
-    @scala.inline
-    def setChildren(
+    inline def setChildren(
       value: js.Array[
           JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setClosingElement(value: JSXClosingElement_): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
+    inline def setClosingElement(value: JSXClosingElement_): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosingElementNull: Self = StObject.set(x, "closingElement", null)
+    inline def setClosingElementNull: Self = StObject.set(x, "closingElement", null)
     
-    @scala.inline
-    def setOpeningElement(value: JSXOpeningElement_): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
+    inline def setOpeningElement(value: JSXOpeningElement_): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
+    inline def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfClosingNull: Self = StObject.set(x, "selfClosing", null)
+    inline def setSelfClosingNull: Self = StObject.set(x, "selfClosing", null)
     
-    @scala.inline
-    def setType(value: JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

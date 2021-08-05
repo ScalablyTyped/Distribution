@@ -23,20 +23,16 @@ object layout {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+      inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     }
   }
   
@@ -91,68 +87,48 @@ object layout {
   }
   object IBox {
     
-    @scala.inline
-    def apply(): IBox = {
+    inline def apply(): IBox = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBox]
     }
     
-    @scala.inline
-    implicit class IBoxMutableBuilder[Self <: IBox] (val x: Self) extends AnyVal {
+    extension [Self <: IBox](x: Self) {
       
-      @scala.inline
-      def setAlign(value: java.lang.String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: java.lang.String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setGetAlign(value: () => java.lang.String): Self = StObject.set(x, "getAlign", js.Any.fromFunction0(value))
+      inline def setGetAlign(value: () => java.lang.String): Self = StObject.set(x, "getAlign", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAlignUndefined: Self = StObject.set(x, "getAlign", js.undefined)
+      inline def setGetAlignUndefined: Self = StObject.set(x, "getAlign", js.undefined)
       
-      @scala.inline
-      def setGetOrient(value: () => java.lang.String): Self = StObject.set(x, "getOrient", js.Any.fromFunction0(value))
+      inline def setGetOrient(value: () => java.lang.String): Self = StObject.set(x, "getOrient", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOrientUndefined: Self = StObject.set(x, "getOrient", js.undefined)
+      inline def setGetOrientUndefined: Self = StObject.set(x, "getOrient", js.undefined)
       
-      @scala.inline
-      def setGetPack(value: () => java.lang.String): Self = StObject.set(x, "getPack", js.Any.fromFunction0(value))
+      inline def setGetPack(value: () => java.lang.String): Self = StObject.set(x, "getPack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPackUndefined: Self = StObject.set(x, "getPack", js.undefined)
+      inline def setGetPackUndefined: Self = StObject.set(x, "getPack", js.undefined)
       
-      @scala.inline
-      def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
+      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
+      inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
       
-      @scala.inline
-      def setPack(value: java.lang.String): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
+      inline def setPack(value: java.lang.String): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
+      inline def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
       
-      @scala.inline
-      def setSetAlign(value: /* align */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setAlign", js.Any.fromFunction1(value))
+      inline def setSetAlign(value: /* align */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setAlign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAlignUndefined: Self = StObject.set(x, "setAlign", js.undefined)
+      inline def setSetAlignUndefined: Self = StObject.set(x, "setAlign", js.undefined)
       
-      @scala.inline
-      def setSetOrient(value: /* orient */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setOrient", js.Any.fromFunction1(value))
+      inline def setSetOrient(value: /* orient */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setOrient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOrientUndefined: Self = StObject.set(x, "setOrient", js.undefined)
+      inline def setSetOrientUndefined: Self = StObject.set(x, "setOrient", js.undefined)
       
-      @scala.inline
-      def setSetPack(value: /* pack */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setPack", js.Any.fromFunction1(value))
+      inline def setSetPack(value: /* pack */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setPack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPackUndefined: Self = StObject.set(x, "setPack", js.undefined)
+      inline def setSetPackUndefined: Self = StObject.set(x, "setPack", js.undefined)
     }
   }
   
@@ -177,22 +153,18 @@ object layout {
   }
   object ICard {
     
-    @scala.inline
-    def apply(): ICard = {
+    inline def apply(): ICard = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICard]
     }
     
-    @scala.inline
-    implicit class ICardMutableBuilder[Self <: ICard] (val x: Self) extends AnyVal {
+    extension [Self <: ICard](x: Self) {
       
-      @scala.inline
-      def setOnItemInnerStateChange(
+      inline def setOnItemInnerStateChange(
         value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], /* destroying */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
+      inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
     }
   }
   
@@ -231,40 +203,30 @@ object layout {
   }
   object IDefault {
     
-    @scala.inline
-    def apply(): IDefault = {
+    inline def apply(): IDefault = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDefault]
     }
     
-    @scala.inline
-    implicit class IDefaultMutableBuilder[Self <: IDefault] (val x: Self) extends AnyVal {
+    extension [Self <: IDefault](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: typings.senchaTouch.Ext.fx.layout.ICard): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: typings.senchaTouch.Ext.fx.layout.ICard): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setGetAnimation(value: () => typings.senchaTouch.Ext.fx.layout.ICard): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
+      inline def setGetAnimation(value: () => typings.senchaTouch.Ext.fx.layout.ICard): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
+      inline def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
       
-      @scala.inline
-      def setOnItemInnerStateChange(
+      inline def setOnItemInnerStateChange(
         value: (/* item */ js.UndefOr[IComponent], /* isInner */ js.UndefOr[Boolean], /* destroying */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
+      inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
       
-      @scala.inline
-      def setSetAnimation(value: /* animation */ js.UndefOr[typings.senchaTouch.Ext.fx.layout.ICard] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
+      inline def setSetAnimation(value: /* animation */ js.UndefOr[typings.senchaTouch.Ext.fx.layout.ICard] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAnimationUndefined: Self = StObject.set(x, "setAnimation", js.undefined)
+      inline def setSetAnimationUndefined: Self = StObject.set(x, "setAnimation", js.undefined)
     }
   }
   
@@ -283,20 +245,16 @@ object layout {
   }
   object IFit {
     
-    @scala.inline
-    def apply(): IFit = {
+    inline def apply(): IFit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFit]
     }
     
-    @scala.inline
-    implicit class IFitMutableBuilder[Self <: IFit] (val x: Self) extends AnyVal {
+    extension [Self <: IFit](x: Self) {
       
-      @scala.inline
-      def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
+      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
+      inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
     }
   }
   
@@ -314,20 +272,16 @@ object layout {
   }
   object IFlexBox {
     
-    @scala.inline
-    def apply(): IFlexBox = {
+    inline def apply(): IFlexBox = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFlexBox]
     }
     
-    @scala.inline
-    implicit class IFlexBoxMutableBuilder[Self <: IFlexBox] (val x: Self) extends AnyVal {
+    extension [Self <: IFlexBox](x: Self) {
       
-      @scala.inline
-      def setSetItemFlex(value: (/* item */ js.UndefOr[IComponent], /* flex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setItemFlex", js.Any.fromFunction2(value))
+      inline def setSetItemFlex(value: (/* item */ js.UndefOr[IComponent], /* flex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setItemFlex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetItemFlexUndefined: Self = StObject.set(x, "setItemFlex", js.undefined)
+      inline def setSetItemFlexUndefined: Self = StObject.set(x, "setItemFlex", js.undefined)
     }
   }
   
@@ -356,32 +310,24 @@ object layout {
   }
   object IFloat {
     
-    @scala.inline
-    def apply(): IFloat = {
+    inline def apply(): IFloat = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFloat]
     }
     
-    @scala.inline
-    implicit class IFloatMutableBuilder[Self <: IFloat] (val x: Self) extends AnyVal {
+    extension [Self <: IFloat](x: Self) {
       
-      @scala.inline
-      def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
+      inline def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
+      inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
       
-      @scala.inline
-      def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
+      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
+      inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
       
-      @scala.inline
-      def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
+      inline def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
+      inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
     }
   }
   
@@ -392,8 +338,7 @@ object layout {
        with IFlexBox
   object IVBox {
     
-    @scala.inline
-    def apply(): IVBox = {
+    inline def apply(): IVBox = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVBox]
     }
@@ -467,86 +412,60 @@ object layout {
     }
     object IBoxDock {
       
-      @scala.inline
-      def apply(): IBoxDock = {
+      inline def apply(): IBoxDock = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IBoxDock]
       }
       
-      @scala.inline
-      implicit class IBoxDockMutableBuilder[Self <: IBoxDock] (val x: Self) extends AnyVal {
+      extension [Self <: IBoxDock](x: Self) {
         
-        @scala.inline
-        def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
+        inline def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
+        inline def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
         
-        @scala.inline
-        def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        inline def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+        inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
         
-        @scala.inline
-        def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
+        inline def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
+        inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
-        @scala.inline
-        def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+        inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
+        inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
         
-        @scala.inline
-        def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
+        inline def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
+        inline def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
         
-        @scala.inline
-        def setGetSizeState(value: () => Boolean): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
+        inline def setGetSizeState(value: () => Boolean): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
+        inline def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
         
-        @scala.inline
-        def setSetBodyElement(value: /* bodyElement */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
+        inline def setSetBodyElement(value: /* bodyElement */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetBodyElementUndefined: Self = StObject.set(x, "setBodyElement", js.undefined)
+        inline def setSetBodyElementUndefined: Self = StObject.set(x, "setBodyElement", js.undefined)
         
-        @scala.inline
-        def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
+        inline def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
+        inline def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
         
-        @scala.inline
-        def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
+        inline def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
+        inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
         
-        @scala.inline
-        def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+        inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
+        inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
         
-        @scala.inline
-        def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
+        inline def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetInnerWrapperUndefined: Self = StObject.set(x, "setInnerWrapper", js.undefined)
+        inline def setSetInnerWrapperUndefined: Self = StObject.set(x, "setInnerWrapper", js.undefined)
         
-        @scala.inline
-        def setSetSizeState(value: /* sizeState */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
+        inline def setSetSizeState(value: /* sizeState */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSizeStateUndefined: Self = StObject.set(x, "setSizeState", js.undefined)
+        inline def setSetSizeStateUndefined: Self = StObject.set(x, "setSizeState", js.undefined)
       }
     }
     
@@ -616,86 +535,60 @@ object layout {
     }
     object IDock {
       
-      @scala.inline
-      def apply(): IDock = {
+      inline def apply(): IDock = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IDock]
       }
       
-      @scala.inline
-      implicit class IDockMutableBuilder[Self <: IDock] (val x: Self) extends AnyVal {
+      extension [Self <: IDock](x: Self) {
         
-        @scala.inline
-        def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
+        inline def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
+        inline def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
         
-        @scala.inline
-        def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        inline def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+        inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
         
-        @scala.inline
-        def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
+        inline def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
+        inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
-        @scala.inline
-        def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+        inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
+        inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
         
-        @scala.inline
-        def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
+        inline def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
+        inline def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
         
-        @scala.inline
-        def setGetSizeState(value: () => Boolean): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
+        inline def setGetSizeState(value: () => Boolean): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
+        inline def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
         
-        @scala.inline
-        def setSetBodyElement(value: /* bodyElement */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
+        inline def setSetBodyElement(value: /* bodyElement */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetBodyElementUndefined: Self = StObject.set(x, "setBodyElement", js.undefined)
+        inline def setSetBodyElementUndefined: Self = StObject.set(x, "setBodyElement", js.undefined)
         
-        @scala.inline
-        def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
+        inline def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
+        inline def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
         
-        @scala.inline
-        def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
+        inline def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
+        inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
         
-        @scala.inline
-        def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+        inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
+        inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
         
-        @scala.inline
-        def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
+        inline def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetInnerWrapperUndefined: Self = StObject.set(x, "setInnerWrapper", js.undefined)
+        inline def setSetInnerWrapperUndefined: Self = StObject.set(x, "setInnerWrapper", js.undefined)
         
-        @scala.inline
-        def setSetSizeState(value: /* sizeState */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
+        inline def setSetSizeState(value: /* sizeState */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSizeStateUndefined: Self = StObject.set(x, "setSizeState", js.undefined)
+        inline def setSetSizeStateUndefined: Self = StObject.set(x, "setSizeState", js.undefined)
       }
     }
     
@@ -725,38 +618,28 @@ object layout {
     }
     object IInner {
       
-      @scala.inline
-      def apply(): IInner = {
+      inline def apply(): IInner = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IInner]
       }
       
-      @scala.inline
-      implicit class IInnerMutableBuilder[Self <: IInner] (val x: Self) extends AnyVal {
+      extension [Self <: IInner](x: Self) {
         
-        @scala.inline
-        def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        inline def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+        inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
         
-        @scala.inline
-        def setGetSizeState(value: () => js.Any): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
+        inline def setGetSizeState(value: () => js.Any): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
+        inline def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
         
-        @scala.inline
-        def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
+        inline def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
+        inline def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
         
-        @scala.inline
-        def setSetSizeState(value: /* sizeState */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
+        inline def setSetSizeState(value: /* sizeState */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSizeStateUndefined: Self = StObject.set(x, "setSizeState", js.undefined)
+        inline def setSetSizeStateUndefined: Self = StObject.set(x, "setSizeState", js.undefined)
       }
     }
   }

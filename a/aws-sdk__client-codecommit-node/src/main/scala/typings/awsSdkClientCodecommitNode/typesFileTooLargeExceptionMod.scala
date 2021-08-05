@@ -18,17 +18,14 @@ object typesFileTooLargeExceptionMod {
   }
   object FileTooLargeException {
     
-    @scala.inline
-    def apply(): FileTooLargeException = {
+    inline def apply(): FileTooLargeException = {
       val __obj = js.Dynamic.literal(name = "FileTooLargeException")
       __obj.asInstanceOf[FileTooLargeException]
     }
     
-    @scala.inline
-    implicit class FileTooLargeExceptionMutableBuilder[Self <: FileTooLargeException] (val x: Self) extends AnyVal {
+    extension [Self <: FileTooLargeException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileTooLargeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileTooLargeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

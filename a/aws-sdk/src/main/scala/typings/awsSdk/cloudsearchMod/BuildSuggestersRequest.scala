@@ -10,16 +10,13 @@ trait BuildSuggestersRequest extends StObject {
 }
 object BuildSuggestersRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): BuildSuggestersRequest = {
+  inline def apply(DomainName: DomainName): BuildSuggestersRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildSuggestersRequest]
   }
   
-  @scala.inline
-  implicit class BuildSuggestersRequestMutableBuilder[Self <: BuildSuggestersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BuildSuggestersRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

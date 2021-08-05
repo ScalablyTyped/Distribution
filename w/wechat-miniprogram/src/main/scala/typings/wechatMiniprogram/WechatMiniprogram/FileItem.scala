@@ -17,22 +17,17 @@ trait FileItem extends StObject {
 }
 object FileItem {
   
-  @scala.inline
-  def apply(createTime: Double, filePath: String, size: Double): FileItem = {
+  inline def apply(createTime: Double, filePath: String, size: Double): FileItem = {
     val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileItem]
   }
   
-  @scala.inline
-  implicit class FileItemMutableBuilder[Self <: FileItem] (val x: Self) extends AnyVal {
+  extension [Self <: FileItem](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

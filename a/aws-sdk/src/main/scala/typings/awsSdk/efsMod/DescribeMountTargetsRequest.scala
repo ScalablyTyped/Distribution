@@ -33,43 +33,31 @@ trait DescribeMountTargetsRequest extends StObject {
 }
 object DescribeMountTargetsRequest {
   
-  @scala.inline
-  def apply(): DescribeMountTargetsRequest = {
+  inline def apply(): DescribeMountTargetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMountTargetsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeMountTargetsRequestMutableBuilder[Self <: DescribeMountTargetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMountTargetsRequest](x: Self) {
     
-    @scala.inline
-    def setAccessPointId(value: AccessPointId): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
+    inline def setAccessPointId(value: AccessPointId): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPointIdUndefined: Self = StObject.set(x, "AccessPointId", js.undefined)
+    inline def setAccessPointIdUndefined: Self = StObject.set(x, "AccessPointId", js.undefined)
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
+    inline def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: MaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
+    inline def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountTargetIdUndefined: Self = StObject.set(x, "MountTargetId", js.undefined)
+    inline def setMountTargetIdUndefined: Self = StObject.set(x, "MountTargetId", js.undefined)
   }
 }

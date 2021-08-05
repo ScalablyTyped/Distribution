@@ -18,19 +18,15 @@ trait FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonA
 }
 object FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute {
   
-  @scala.inline
-  def apply(name: String, value: String): FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute = {
+  inline def apply(name: String, value: String): FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributeMutableBuilder[Self <: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -28,40 +28,29 @@ trait ProtocolsListDataSummary extends StObject {
 }
 object ProtocolsListDataSummary {
   
-  @scala.inline
-  def apply(): ProtocolsListDataSummary = {
+  inline def apply(): ProtocolsListDataSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProtocolsListDataSummary]
   }
   
-  @scala.inline
-  implicit class ProtocolsListDataSummaryMutableBuilder[Self <: ProtocolsListDataSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolsListDataSummary](x: Self) {
     
-    @scala.inline
-    def setListArn(value: ResourceArn): Self = StObject.set(x, "ListArn", value.asInstanceOf[js.Any])
+    inline def setListArn(value: ResourceArn): Self = StObject.set(x, "ListArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListArnUndefined: Self = StObject.set(x, "ListArn", js.undefined)
+    inline def setListArnUndefined: Self = StObject.set(x, "ListArn", js.undefined)
     
-    @scala.inline
-    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
+    inline def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
     
-    @scala.inline
-    def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
+    inline def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListNameUndefined: Self = StObject.set(x, "ListName", js.undefined)
+    inline def setListNameUndefined: Self = StObject.set(x, "ListName", js.undefined)
     
-    @scala.inline
-    def setProtocolsList(value: ProtocolsList): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
+    inline def setProtocolsList(value: ProtocolsList): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsListUndefined: Self = StObject.set(x, "ProtocolsList", js.undefined)
+    inline def setProtocolsListUndefined: Self = StObject.set(x, "ProtocolsList", js.undefined)
     
-    @scala.inline
-    def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
+    inline def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
   }
 }

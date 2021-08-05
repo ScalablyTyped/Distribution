@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "ActionCodeInfo")
 @js.native
-class ActionCodeInfo protected () extends StObject {
+/* private */ class ActionCodeInfo () extends StObject {
   
   var data: Email = js.native
   
@@ -24,6 +24,5 @@ object ActionCodeInfo {
   @JSImport("@firebase/auth-types", "ActionCodeInfo.Operation")
   @js.native
   def Operation: EMAILSIGNIN = js.native
-  @scala.inline
-  def Operation_=(x: EMAILSIGNIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operation")(x.asInstanceOf[js.Any])
+  inline def Operation_=(x: EMAILSIGNIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operation")(x.asInstanceOf[js.Any])
 }

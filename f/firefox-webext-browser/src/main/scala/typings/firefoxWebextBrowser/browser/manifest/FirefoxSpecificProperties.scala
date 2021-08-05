@@ -16,37 +16,27 @@ trait FirefoxSpecificProperties extends StObject {
 }
 object FirefoxSpecificProperties {
   
-  @scala.inline
-  def apply(): FirefoxSpecificProperties = {
+  inline def apply(): FirefoxSpecificProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirefoxSpecificProperties]
   }
   
-  @scala.inline
-  implicit class FirefoxSpecificPropertiesMutableBuilder[Self <: FirefoxSpecificProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FirefoxSpecificProperties](x: Self) {
     
-    @scala.inline
-    def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setStrict_max_version(value: String): Self = StObject.set(x, "strict_max_version", value.asInstanceOf[js.Any])
+    inline def setStrict_max_version(value: String): Self = StObject.set(x, "strict_max_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrict_max_versionUndefined: Self = StObject.set(x, "strict_max_version", js.undefined)
+    inline def setStrict_max_versionUndefined: Self = StObject.set(x, "strict_max_version", js.undefined)
     
-    @scala.inline
-    def setStrict_min_version(value: String): Self = StObject.set(x, "strict_min_version", value.asInstanceOf[js.Any])
+    inline def setStrict_min_version(value: String): Self = StObject.set(x, "strict_min_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrict_min_versionUndefined: Self = StObject.set(x, "strict_min_version", js.undefined)
+    inline def setStrict_min_versionUndefined: Self = StObject.set(x, "strict_min_version", js.undefined)
     
-    @scala.inline
-    def setUpdate_url(value: String): Self = StObject.set(x, "update_url", value.asInstanceOf[js.Any])
+    inline def setUpdate_url(value: String): Self = StObject.set(x, "update_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_urlUndefined: Self = StObject.set(x, "update_url", js.undefined)
+    inline def setUpdate_urlUndefined: Self = StObject.set(x, "update_url", js.undefined)
   }
 }

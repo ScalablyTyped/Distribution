@@ -77,17 +77,14 @@ object mod {
     }
     object JQueryStatic {
       
-      @scala.inline
-      def apply(browser: Matchs): JQueryStatic = {
+      inline def apply(browser: Matchs): JQueryStatic = {
         val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
         __obj.asInstanceOf[JQueryStatic]
       }
       
-      @scala.inline
-      implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+      extension [Self <: JQueryStatic](x: Self) {
         
-        @scala.inline
-        def setBrowser(value: Matchs): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+        inline def setBrowser(value: Matchs): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       }
     }
     
@@ -97,17 +94,14 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(jQBrowser: Matchs): Window = {
+      inline def apply(jQBrowser: Matchs): Window = {
         val __obj = js.Dynamic.literal(jQBrowser = jQBrowser.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setJQBrowser(value: Matchs): Self = StObject.set(x, "jQBrowser", value.asInstanceOf[js.Any])
+        inline def setJQBrowser(value: Matchs): Self = StObject.set(x, "jQBrowser", value.asInstanceOf[js.Any])
       }
     }
   }

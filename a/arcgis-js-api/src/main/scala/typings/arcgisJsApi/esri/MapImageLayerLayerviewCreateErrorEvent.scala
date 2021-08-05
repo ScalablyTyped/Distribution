@@ -12,19 +12,15 @@ trait MapImageLayerLayerviewCreateErrorEvent extends StObject {
 }
 object MapImageLayerLayerviewCreateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, view: View): MapImageLayerLayerviewCreateErrorEvent = {
+  inline def apply(error: Error, view: View): MapImageLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapImageLayerLayerviewCreateErrorEvent]
   }
   
-  @scala.inline
-  implicit class MapImageLayerLayerviewCreateErrorEventMutableBuilder[Self <: MapImageLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MapImageLayerLayerviewCreateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

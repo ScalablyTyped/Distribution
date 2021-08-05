@@ -11,34 +11,29 @@ object filterCssStrings {
   sealed trait declarationProperty
     extends StObject
        with Context
-  @scala.inline
-  def declarationProperty: declarationProperty = "declarationProperty".asInstanceOf[declarationProperty]
+  inline def declarationProperty: declarationProperty = "declarationProperty".asInstanceOf[declarationProperty]
   
   @js.native
   sealed trait declarationValue
     extends StObject
        with Context
-  @scala.inline
-  def declarationValue: declarationValue = "declarationValue".asInstanceOf[declarationValue]
+  inline def declarationValue: declarationValue = "declarationValue".asInstanceOf[declarationValue]
   
   @js.native
   sealed trait media
     extends StObject
        with Context
-  @scala.inline
-  def media: media = "media".asInstanceOf[media]
+  inline def media: media = "media".asInstanceOf[media]
   
   @js.native
   sealed trait selector
     extends StObject
        with Context
-  @scala.inline
-  def selector: selector = "selector".asInstanceOf[selector]
+  inline def selector: selector = "selector".asInstanceOf[selector]
   
   @js.native
   sealed trait `type`
     extends StObject
        with Context
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
 }

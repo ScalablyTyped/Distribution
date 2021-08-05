@@ -28,40 +28,29 @@ trait AutoScalingGroupRecommendationOption extends StObject {
 }
 object AutoScalingGroupRecommendationOption {
   
-  @scala.inline
-  def apply(): AutoScalingGroupRecommendationOption = {
+  inline def apply(): AutoScalingGroupRecommendationOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScalingGroupRecommendationOption]
   }
   
-  @scala.inline
-  implicit class AutoScalingGroupRecommendationOptionMutableBuilder[Self <: AutoScalingGroupRecommendationOption] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingGroupRecommendationOption](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: AutoScalingGroupConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: AutoScalingGroupConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setPerformanceRisk(value: PerformanceRisk): Self = StObject.set(x, "performanceRisk", value.asInstanceOf[js.Any])
+    inline def setPerformanceRisk(value: PerformanceRisk): Self = StObject.set(x, "performanceRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceRiskUndefined: Self = StObject.set(x, "performanceRisk", js.undefined)
+    inline def setPerformanceRiskUndefined: Self = StObject.set(x, "performanceRisk", js.undefined)
     
-    @scala.inline
-    def setProjectedUtilizationMetrics(value: ProjectedUtilizationMetrics): Self = StObject.set(x, "projectedUtilizationMetrics", value.asInstanceOf[js.Any])
+    inline def setProjectedUtilizationMetrics(value: ProjectedUtilizationMetrics): Self = StObject.set(x, "projectedUtilizationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectedUtilizationMetricsUndefined: Self = StObject.set(x, "projectedUtilizationMetrics", js.undefined)
+    inline def setProjectedUtilizationMetricsUndefined: Self = StObject.set(x, "projectedUtilizationMetrics", js.undefined)
     
-    @scala.inline
-    def setProjectedUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "projectedUtilizationMetrics", js.Array(value :_*))
+    inline def setProjectedUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "projectedUtilizationMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait RemovalChange
 }
 object RemovalChange {
   
-  @scala.inline
-  def apply(ccid: String, id: String): RemovalChange = {
+  inline def apply(ccid: String, id: String): RemovalChange = {
     val __obj = js.Dynamic.literal(ccid = ccid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], o = "-")
     __obj.asInstanceOf[RemovalChange]
   }
   
-  @scala.inline
-  implicit class RemovalChangeMutableBuilder[Self <: RemovalChange] (val x: Self) extends AnyVal {
+  extension [Self <: RemovalChange](x: Self) {
     
-    @scala.inline
-    def setCcid(value: String): Self = StObject.set(x, "ccid", value.asInstanceOf[js.Any])
+    inline def setCcid(value: String): Self = StObject.set(x, "ccid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setO(value: `-_`): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
+    inline def setO(value: `-_`): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
   }
 }

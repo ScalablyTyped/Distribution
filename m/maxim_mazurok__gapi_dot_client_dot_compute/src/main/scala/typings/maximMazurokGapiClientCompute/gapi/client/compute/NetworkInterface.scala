@@ -55,73 +55,51 @@ trait NetworkInterface extends StObject {
 }
 object NetworkInterface {
   
-  @scala.inline
-  def apply(): NetworkInterface = {
+  inline def apply(): NetworkInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInterface]
   }
   
-  @scala.inline
-  implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterface](x: Self) {
     
-    @scala.inline
-    def setAccessConfigs(value: js.Array[AccessConfig]): Self = StObject.set(x, "accessConfigs", value.asInstanceOf[js.Any])
+    inline def setAccessConfigs(value: js.Array[AccessConfig]): Self = StObject.set(x, "accessConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessConfigsUndefined: Self = StObject.set(x, "accessConfigs", js.undefined)
+    inline def setAccessConfigsUndefined: Self = StObject.set(x, "accessConfigs", js.undefined)
     
-    @scala.inline
-    def setAccessConfigsVarargs(value: AccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value :_*))
+    inline def setAccessConfigsVarargs(value: AccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setAliasIpRanges(value: js.Array[AliasIpRange]): Self = StObject.set(x, "aliasIpRanges", value.asInstanceOf[js.Any])
+    inline def setAliasIpRanges(value: js.Array[AliasIpRange]): Self = StObject.set(x, "aliasIpRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasIpRangesUndefined: Self = StObject.set(x, "aliasIpRanges", js.undefined)
+    inline def setAliasIpRangesUndefined: Self = StObject.set(x, "aliasIpRanges", js.undefined)
     
-    @scala.inline
-    def setAliasIpRangesVarargs(value: AliasIpRange*): Self = StObject.set(x, "aliasIpRanges", js.Array(value :_*))
+    inline def setAliasIpRangesVarargs(value: AliasIpRange*): Self = StObject.set(x, "aliasIpRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
+    inline def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIP(value: String): Self = StObject.set(x, "networkIP", value.asInstanceOf[js.Any])
+    inline def setNetworkIP(value: String): Self = StObject.set(x, "networkIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIPUndefined: Self = StObject.set(x, "networkIP", js.undefined)
+    inline def setNetworkIPUndefined: Self = StObject.set(x, "networkIP", js.undefined)
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
   }
 }

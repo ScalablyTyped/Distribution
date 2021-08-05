@@ -11,23 +11,19 @@ object memThunkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def memThunk[I1, O](arg1: Thunk[I1], compute: js.ThisFunction1[/* this */ Unit, /* arg1 */ I1, O]): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
-  @scala.inline
-  def memThunk[I1, I2, O](
+  inline def memThunk[I1, O](arg1: Thunk[I1], compute: js.ThisFunction1[/* this */ Unit, /* arg1 */ I1, O]): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
+  inline def memThunk[I1, I2, O](
     arg1: Thunk[I1],
     arg2: Thunk[I2],
     compute: js.ThisFunction2[/* this */ Unit, /* arg1 */ I1, /* arg2 */ I2, O]
   ): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
-  @scala.inline
-  def memThunk[I1, I2, I3, O](
+  inline def memThunk[I1, I2, I3, O](
     arg1: Thunk[I1],
     arg2: Thunk[I2],
     arg3: Thunk[I3],
     compute: js.ThisFunction3[/* this */ Unit, /* arg1 */ I1, /* arg2 */ I2, /* arg3 */ I3, O]
   ): MemoizedFunction[Thunk[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("memThunk")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], compute.asInstanceOf[js.Any])).asInstanceOf[MemoizedFunction[Thunk[O]]]
-  @scala.inline
-  def memThunk[I1, I2, I3, I4, O](
+  inline def memThunk[I1, I2, I3, I4, O](
     arg1: Thunk[I1],
     arg2: Thunk[I2],
     arg3: Thunk[I3],

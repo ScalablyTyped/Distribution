@@ -10,16 +10,13 @@ trait DebuggerResource extends StObject {
 }
 object DebuggerResource {
   
-  @scala.inline
-  def apply(debuggees: DebuggeesResource): DebuggerResource = {
+  inline def apply(debuggees: DebuggeesResource): DebuggerResource = {
     val __obj = js.Dynamic.literal(debuggees = debuggees.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebuggerResource]
   }
   
-  @scala.inline
-  implicit class DebuggerResourceMutableBuilder[Self <: DebuggerResource] (val x: Self) extends AnyVal {
+  extension [Self <: DebuggerResource](x: Self) {
     
-    @scala.inline
-    def setDebuggees(value: DebuggeesResource): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
+    inline def setDebuggees(value: DebuggeesResource): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
   }
 }

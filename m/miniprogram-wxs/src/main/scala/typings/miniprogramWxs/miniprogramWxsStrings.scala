@@ -8,26 +8,21 @@ object miniprogramWxsStrings {
   
   @js.native
   sealed trait Partial extends StObject
-  @scala.inline
-  def Partial: Partial = "Partial".asInstanceOf[Partial]
+  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
   
   @js.native
   sealed trait Pick extends StObject
-  @scala.inline
-  def Pick: Pick = "Pick".asInstanceOf[Pick]
+  inline def Pick: Pick = "Pick".asInstanceOf[Pick]
   
   @js.native
   sealed trait Readonly extends StObject
-  @scala.inline
-  def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
+  inline def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
   
   @js.native
   sealed trait Record extends StObject
-  @scala.inline
-  def Record: Record = "Record".asInstanceOf[Record]
+  inline def Record: Record = "Record".asInstanceOf[Record]
   
   @js.native
   sealed trait Required extends StObject
-  @scala.inline
-  def Required: Required = "Required".asInstanceOf[Required]
+  inline def Required: Required = "Required".asInstanceOf[Required]
 }

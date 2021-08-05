@@ -45,7 +45,7 @@ trait ChartGroup extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.ChartGroup_typekey")
+  /* private */ @JSName("PowerPoint.ChartGroup_typekey")
   var PowerPointDotChartGroup_typekey: ChartGroup = js.native
   
   val RadarAxisLabels: TickLabels = js.native

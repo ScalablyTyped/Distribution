@@ -32,10 +32,8 @@ object performance {
     * the default app.
     * If not passed, uses the default app.
     */
-  @scala.inline
-  def apply(): typings.firebase.mod.firebase.performance.Performance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebase.mod.firebase.performance.Performance]
-  @scala.inline
-  def apply(app: App): typings.firebase.mod.firebase.performance.Performance = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.performance.Performance]
+  inline def apply(): typings.firebase.mod.firebase.performance.Performance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebase.mod.firebase.performance.Performance]
+  inline def apply(app: App): typings.firebase.mod.firebase.performance.Performance = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.performance.Performance]
   
   @JSImport("firebase", "default.performance")
   @js.native
@@ -64,8 +62,7 @@ object performance {
   }
   object Performance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataCollectionEnabled: Boolean,
       instrumentationEnabled: Boolean,
       trace: String => typings.firebase.mod.firebase.performance.Trace
@@ -74,17 +71,13 @@ object performance {
       __obj.asInstanceOf[Performance]
     }
     
-    @scala.inline
-    implicit class PerformanceMutableBuilder[Self <: Performance] (val x: Self) extends AnyVal {
+    extension [Self <: Performance](x: Self) {
       
-      @scala.inline
-      def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
+      inline def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstrumentationEnabled(value: Boolean): Self = StObject.set(x, "instrumentationEnabled", value.asInstanceOf[js.Any])
+      inline def setInstrumentationEnabled(value: Boolean): Self = StObject.set(x, "instrumentationEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: String => typings.firebase.mod.firebase.performance.Trace): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: String => typings.firebase.mod.firebase.performance.Trace): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     }
   }
   

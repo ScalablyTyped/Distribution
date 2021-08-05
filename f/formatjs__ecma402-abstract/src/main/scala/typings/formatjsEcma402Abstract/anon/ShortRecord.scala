@@ -16,8 +16,7 @@ trait ShortRecord extends StObject {
 }
 object ShortRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     long: Record[RegionCode, String],
     narrow: Record[RegionCode, String],
     short: Record[RegionCode, String]
@@ -26,16 +25,12 @@ object ShortRecord {
     __obj.asInstanceOf[ShortRecord]
   }
   
-  @scala.inline
-  implicit class ShortRecordMutableBuilder[Self <: ShortRecord] (val x: Self) extends AnyVal {
+  extension [Self <: ShortRecord](x: Self) {
     
-    @scala.inline
-    def setLong(value: Record[RegionCode, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: Record[RegionCode, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrow(value: Record[RegionCode, String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: Record[RegionCode, String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: Record[RegionCode, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: Record[RegionCode, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

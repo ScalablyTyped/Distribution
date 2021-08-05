@@ -9,8 +9,7 @@ trait DataTransferManager
      with IDataTransferManager
 object DataTransferManager {
   
-  @scala.inline
-  def apply(ondatarequested: js.Any, ontargetapplicationchosen: js.Any): DataTransferManager = {
+  inline def apply(ondatarequested: js.Any, ontargetapplicationchosen: js.Any): DataTransferManager = {
     val __obj = js.Dynamic.literal(ondatarequested = ondatarequested.asInstanceOf[js.Any], ontargetapplicationchosen = ontargetapplicationchosen.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransferManager]
   }

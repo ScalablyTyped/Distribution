@@ -18,23 +18,18 @@ object linkMod {
   }
   object Link {
     
-    @scala.inline
-    def apply(context: LinkContext): Link = {
+    inline def apply(context: LinkContext): Link = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
       __obj.asInstanceOf[Link]
     }
     
-    @scala.inline
-    implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+    extension [Self <: Link](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setContext(value: LinkContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: LinkContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,37 +16,31 @@ object esESMod {
     @JSImport("antd-mobile-rn/lib/date-picker-view/locale/es_ES", "default.calendar")
     @js.native
     def calendar: FirstDayOfWeek = js.native
-    @scala.inline
-    def calendar_=(x: FirstDayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calendar")(x.asInstanceOf[js.Any])
+    inline def calendar_=(x: FirstDayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calendar")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/date-picker-view/locale/es_ES", "default.day")
     @js.native
     def day: String = js.native
-    @scala.inline
-    def day_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day")(x.asInstanceOf[js.Any])
+    inline def day_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/date-picker-view/locale/es_ES", "default.hour")
     @js.native
     def hour: String = js.native
-    @scala.inline
-    def hour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hour")(x.asInstanceOf[js.Any])
+    inline def hour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hour")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/date-picker-view/locale/es_ES", "default.minute")
     @js.native
     def minute: String = js.native
-    @scala.inline
-    def minute_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minute")(x.asInstanceOf[js.Any])
+    inline def minute_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minute")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/date-picker-view/locale/es_ES", "default.month")
     @js.native
     def month: String = js.native
-    @scala.inline
-    def month_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("month")(x.asInstanceOf[js.Any])
+    inline def month_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("month")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/date-picker-view/locale/es_ES", "default.year")
     @js.native
     def year: String = js.native
-    @scala.inline
-    def year_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("year")(x.asInstanceOf[js.Any])
+    inline def year_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("year")(x.asInstanceOf[js.Any])
   }
 }

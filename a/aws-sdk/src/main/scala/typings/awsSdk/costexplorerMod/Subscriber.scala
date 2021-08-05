@@ -23,31 +23,23 @@ trait Subscriber extends StObject {
 }
 object Subscriber {
   
-  @scala.inline
-  def apply(): Subscriber = {
+  inline def apply(): Subscriber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subscriber]
   }
   
-  @scala.inline
-  implicit class SubscriberMutableBuilder[Self <: Subscriber] (val x: Self) extends AnyVal {
+  extension [Self <: Subscriber](x: Self) {
     
-    @scala.inline
-    def setAddress(value: SubscriberAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: SubscriberAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SubscriberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SubscriberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setType(value: SubscriberType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SubscriberType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

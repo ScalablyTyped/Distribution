@@ -8,11 +8,9 @@ object fuzzaldrinPlusStrings {
   
   @js.native
   sealed trait Backslash extends StObject
-  @scala.inline
-  def Backslash: Backslash = "\\".asInstanceOf[Backslash]
+  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
   
   @js.native
   sealed trait Slash extends StObject
-  @scala.inline
-  def Slash: Slash = "/".asInstanceOf[Slash]
+  inline def Slash: Slash = "/".asInstanceOf[Slash]
 }

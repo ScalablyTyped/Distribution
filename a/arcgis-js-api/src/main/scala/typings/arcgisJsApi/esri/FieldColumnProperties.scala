@@ -40,37 +40,27 @@ trait FieldColumnProperties
 }
 object FieldColumnProperties {
   
-  @scala.inline
-  def apply(): FieldColumnProperties = {
+  inline def apply(): FieldColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldColumnProperties]
   }
   
-  @scala.inline
-  implicit class FieldColumnPropertiesMutableBuilder[Self <: FieldColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FieldColumnProperties](x: Self) {
     
-    @scala.inline
-    def setConfig(value: FieldColumnConfigProperties): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: FieldColumnConfigProperties): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDirection(value: asc_ | desc_ | js.Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc_ | desc_ | js.Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setField(value: FieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
   }
 }

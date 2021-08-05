@@ -128,6 +128,5 @@ object Curve {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def throughPoints(points: js.Array[PlainPoint]): js.Array[Curve] = ^.asInstanceOf[js.Dynamic].applyDynamic("throughPoints")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Curve]]
+  inline def throughPoints(points: js.Array[PlainPoint]): js.Array[Curve] = ^.asInstanceOf[js.Dynamic].applyDynamic("throughPoints")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Curve]]
 }

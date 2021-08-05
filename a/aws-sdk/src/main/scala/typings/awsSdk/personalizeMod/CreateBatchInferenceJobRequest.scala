@@ -48,8 +48,7 @@ trait CreateBatchInferenceJobRequest extends StObject {
 }
 object CreateBatchInferenceJobRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     jobInput: BatchInferenceJobInput,
     jobName: Name,
     jobOutput: BatchInferenceJobOutput,
@@ -60,40 +59,28 @@ object CreateBatchInferenceJobRequest {
     __obj.asInstanceOf[CreateBatchInferenceJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateBatchInferenceJobRequestMutableBuilder[Self <: CreateBatchInferenceJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBatchInferenceJobRequest](x: Self) {
     
-    @scala.inline
-    def setBatchInferenceJobConfig(value: BatchInferenceJobConfig): Self = StObject.set(x, "batchInferenceJobConfig", value.asInstanceOf[js.Any])
+    inline def setBatchInferenceJobConfig(value: BatchInferenceJobConfig): Self = StObject.set(x, "batchInferenceJobConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchInferenceJobConfigUndefined: Self = StObject.set(x, "batchInferenceJobConfig", js.undefined)
+    inline def setBatchInferenceJobConfigUndefined: Self = StObject.set(x, "batchInferenceJobConfig", js.undefined)
     
-    @scala.inline
-    def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
+    inline def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterArnUndefined: Self = StObject.set(x, "filterArn", js.undefined)
+    inline def setFilterArnUndefined: Self = StObject.set(x, "filterArn", js.undefined)
     
-    @scala.inline
-    def setJobInput(value: BatchInferenceJobInput): Self = StObject.set(x, "jobInput", value.asInstanceOf[js.Any])
+    inline def setJobInput(value: BatchInferenceJobInput): Self = StObject.set(x, "jobInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: Name): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: Name): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobOutput(value: BatchInferenceJobOutput): Self = StObject.set(x, "jobOutput", value.asInstanceOf[js.Any])
+    inline def setJobOutput(value: BatchInferenceJobOutput): Self = StObject.set(x, "jobOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResults(value: NumBatchResults): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: NumBatchResults): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
+    inline def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
   }
 }

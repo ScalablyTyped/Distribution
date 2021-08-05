@@ -17,31 +17,23 @@ trait MapPanEvent
 }
 object MapPanEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Map): MapPanEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Map): MapPanEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapPanEvent]
   }
   
-  @scala.inline
-  implicit class MapPanEventMutableBuilder[Self <: MapPanEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MapPanEvent](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: Location): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Location): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
   }
 }

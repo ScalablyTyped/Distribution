@@ -13,16 +13,13 @@ trait GetReusableDelegationSetResponse extends StObject {
 }
 object GetReusableDelegationSetResponse {
   
-  @scala.inline
-  def apply(DelegationSet: DelegationSet): GetReusableDelegationSetResponse = {
+  inline def apply(DelegationSet: DelegationSet): GetReusableDelegationSetResponse = {
     val __obj = js.Dynamic.literal(DelegationSet = DelegationSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReusableDelegationSetResponse]
   }
   
-  @scala.inline
-  implicit class GetReusableDelegationSetResponseMutableBuilder[Self <: GetReusableDelegationSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetReusableDelegationSetResponse](x: Self) {
     
-    @scala.inline
-    def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
+    inline def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
   }
 }

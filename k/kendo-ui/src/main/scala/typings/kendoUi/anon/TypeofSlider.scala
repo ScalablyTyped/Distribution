@@ -15,19 +15,15 @@ trait TypeofSlider extends StObject {
 }
 object TypeofSlider {
   
-  @scala.inline
-  def apply(extend: js.Object => Slider, fn: Slider): TypeofSlider = {
+  inline def apply(extend: js.Object => Slider, fn: Slider): TypeofSlider = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSlider]
   }
   
-  @scala.inline
-  implicit class TypeofSliderMutableBuilder[Self <: TypeofSlider] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSlider](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Slider): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Slider): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Slider): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Slider): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

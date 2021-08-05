@@ -14,19 +14,15 @@ trait PANEL extends StObject {
 }
 object PANEL {
   
-  @scala.inline
-  def apply(): PANEL = {
+  inline def apply(): PANEL = {
     val __obj = js.Dynamic.literal(PANEL = "panel", SHELL = "shell")
     __obj.asInstanceOf[PANEL]
   }
   
-  @scala.inline
-  implicit class PANELMutableBuilder[Self <: PANEL] (val x: Self) extends AnyVal {
+  extension [Self <: PANEL](x: Self) {
     
-    @scala.inline
-    def setPANEL(value: panel): Self = StObject.set(x, "PANEL", value.asInstanceOf[js.Any])
+    inline def setPANEL(value: panel): Self = StObject.set(x, "PANEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHELL(value: shell): Self = StObject.set(x, "SHELL", value.asInstanceOf[js.Any])
+    inline def setSHELL(value: shell): Self = StObject.set(x, "SHELL", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait DirectionFinderEnums extends StObject {
 }
 object DirectionFinderEnums {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Avoid: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Avoid */ js.Any,
     Mode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Mode */ js.Any
   ): DirectionFinderEnums = {
@@ -24,13 +23,10 @@ object DirectionFinderEnums {
     __obj.asInstanceOf[DirectionFinderEnums]
   }
   
-  @scala.inline
-  implicit class DirectionFinderEnumsMutableBuilder[Self <: DirectionFinderEnums] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionFinderEnums](x: Self) {
     
-    @scala.inline
-    def setAvoid(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Avoid */ js.Any): Self = StObject.set(x, "Avoid", value.asInstanceOf[js.Any])
+    inline def setAvoid(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Avoid */ js.Any): Self = StObject.set(x, "Avoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Mode */ js.Any): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Mode */ js.Any): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

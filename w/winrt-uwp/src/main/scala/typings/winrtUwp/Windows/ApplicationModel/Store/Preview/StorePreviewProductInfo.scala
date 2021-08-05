@@ -25,8 +25,7 @@ trait StorePreviewProductInfo extends StObject {
 }
 object StorePreviewProductInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     productId: String,
     productType: String,
@@ -37,22 +36,16 @@ object StorePreviewProductInfo {
     __obj.asInstanceOf[StorePreviewProductInfo]
   }
   
-  @scala.inline
-  implicit class StorePreviewProductInfoMutableBuilder[Self <: StorePreviewProductInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StorePreviewProductInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
+    inline def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuInfoList(value: IVectorView[StorePreviewSkuInfo]): Self = StObject.set(x, "skuInfoList", value.asInstanceOf[js.Any])
+    inline def setSkuInfoList(value: IVectorView[StorePreviewSkuInfo]): Self = StObject.set(x, "skuInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

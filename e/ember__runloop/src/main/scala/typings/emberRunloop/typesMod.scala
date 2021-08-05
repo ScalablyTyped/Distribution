@@ -12,17 +12,14 @@ object typesMod {
   }
   object EmberRunTimer {
     
-    @scala.inline
-    def apply(__ember_run_timer_brand__ : Boolean): EmberRunTimer = {
+    inline def apply(__ember_run_timer_brand__ : Boolean): EmberRunTimer = {
       val __obj = js.Dynamic.literal(__ember_run_timer_brand__ = __ember_run_timer_brand__.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmberRunTimer]
     }
     
-    @scala.inline
-    implicit class EmberRunTimerMutableBuilder[Self <: EmberRunTimer] (val x: Self) extends AnyVal {
+    extension [Self <: EmberRunTimer](x: Self) {
       
-      @scala.inline
-      def set__ember_run_timer_brand__(value: Boolean): Self = StObject.set(x, "__ember_run_timer_brand__", value.asInstanceOf[js.Any])
+      inline def set__ember_run_timer_brand__(value: Boolean): Self = StObject.set(x, "__ember_run_timer_brand__", value.asInstanceOf[js.Any])
     }
   }
 }

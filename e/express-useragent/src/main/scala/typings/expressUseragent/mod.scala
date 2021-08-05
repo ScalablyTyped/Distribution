@@ -72,8 +72,7 @@ object mod {
     var version: String = js.native
   }
   
-  @scala.inline
-  def express(): js.Function3[
+  inline def express(): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ js.UndefOr[NextFunction], 
@@ -85,56 +84,39 @@ object mod {
     Unit
   ]]
   
-  @scala.inline
-  def getBrowser(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowser")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getBrowser(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowser")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getBrowserVersion(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserVersion")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getBrowserVersion(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserVersion")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getOS(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOS")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getOS(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOS")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getPlatform(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPlatform(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(source: String): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Details]
+  inline def parse(source: String): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Details]
   
-  @scala.inline
-  def reset(): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Details]
+  inline def reset(): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Details]
   
-  @scala.inline
-  def testAndroidTablet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAndroidTablet")().asInstanceOf[Unit]
+  inline def testAndroidTablet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAndroidTablet")().asInstanceOf[Unit]
   
-  @scala.inline
-  def testBot(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testBot")().asInstanceOf[Unit]
+  inline def testBot(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testBot")().asInstanceOf[Unit]
   
-  @scala.inline
-  def testCaptiveNetwork(): CaptiveNetwork | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testCaptiveNetwork")().asInstanceOf[CaptiveNetwork | `false`]
+  inline def testCaptiveNetwork(): CaptiveNetwork | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testCaptiveNetwork")().asInstanceOf[CaptiveNetwork | `false`]
   
-  @scala.inline
-  def testCompatibilityMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testCompatibilityMode")().asInstanceOf[Unit]
+  inline def testCompatibilityMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testCompatibilityMode")().asInstanceOf[Unit]
   
-  @scala.inline
-  def testKindleFire(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testKindleFire")().asInstanceOf[String | `false`]
+  inline def testKindleFire(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testKindleFire")().asInstanceOf[String | `false`]
   
-  @scala.inline
-  def testMobile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testMobile")().asInstanceOf[Unit]
+  inline def testMobile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testMobile")().asInstanceOf[Unit]
   
-  @scala.inline
-  def testNginxGeoIP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testNginxGeoIP")().asInstanceOf[Unit]
+  inline def testNginxGeoIP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testNginxGeoIP")().asInstanceOf[Unit]
   
-  @scala.inline
-  def testSilk(): Silk | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testSilk")().asInstanceOf[Silk | `false`]
+  inline def testSilk(): Silk | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testSilk")().asInstanceOf[Silk | `false`]
   
-  @scala.inline
-  def testSmartTV(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSmartTV")().asInstanceOf[Unit]
+  inline def testSmartTV(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSmartTV")().asInstanceOf[Unit]
   
-  @scala.inline
-  def testTablet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testTablet")().asInstanceOf[Unit]
+  inline def testTablet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testTablet")().asInstanceOf[Unit]
   
-  @scala.inline
-  def testWebkit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testWebkit")().asInstanceOf[Unit]
+  inline def testWebkit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testWebkit")().asInstanceOf[Unit]
   
   @JSImport("express-useragent", "version")
   @js.native
@@ -236,8 +218,7 @@ object mod {
   }
   object Details {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       browser: String,
       geoIp: StringDictionary[js.Any],
       isAmaya: Boolean,
@@ -289,146 +270,99 @@ object mod {
       __obj.asInstanceOf[Details]
     }
     
-    @scala.inline
-    implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+    extension [Self <: Details](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoIp(value: StringDictionary[js.Any]): Self = StObject.set(x, "geoIp", value.asInstanceOf[js.Any])
+      inline def setGeoIp(value: StringDictionary[js.Any]): Self = StObject.set(x, "geoIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAmaya(value: Boolean): Self = StObject.set(x, "isAmaya", value.asInstanceOf[js.Any])
+      inline def setIsAmaya(value: Boolean): Self = StObject.set(x, "isAmaya", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+      inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAndroidTablet(value: Boolean): Self = StObject.set(x, "isAndroidTablet", value.asInstanceOf[js.Any])
+      inline def setIsAndroidTablet(value: Boolean): Self = StObject.set(x, "isAndroidTablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBada(value: Boolean): Self = StObject.set(x, "isBada", value.asInstanceOf[js.Any])
+      inline def setIsBada(value: Boolean): Self = StObject.set(x, "isBada", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBlackberry(value: Boolean): Self = StObject.set(x, "isBlackberry", value.asInstanceOf[js.Any])
+      inline def setIsBlackberry(value: Boolean): Self = StObject.set(x, "isBlackberry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBot(value: Boolean): Self = StObject.set(x, "isBot", value.asInstanceOf[js.Any])
+      inline def setIsBot(value: Boolean): Self = StObject.set(x, "isBot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCaptive(value: Boolean): Self = StObject.set(x, "isCaptive", value.asInstanceOf[js.Any])
+      inline def setIsCaptive(value: Boolean): Self = StObject.set(x, "isCaptive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+      inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChromeOS(value: Boolean): Self = StObject.set(x, "isChromeOS", value.asInstanceOf[js.Any])
+      inline def setIsChromeOS(value: Boolean): Self = StObject.set(x, "isChromeOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurl(value: Boolean): Self = StObject.set(x, "isCurl", value.asInstanceOf[js.Any])
+      inline def setIsCurl(value: Boolean): Self = StObject.set(x, "isCurl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDesktop(value: Boolean): Self = StObject.set(x, "isDesktop", value.asInstanceOf[js.Any])
+      inline def setIsDesktop(value: Boolean): Self = StObject.set(x, "isDesktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEdge(value: Boolean): Self = StObject.set(x, "isEdge", value.asInstanceOf[js.Any])
+      inline def setIsEdge(value: Boolean): Self = StObject.set(x, "isEdge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEpiphany(value: Boolean): Self = StObject.set(x, "isEpiphany", value.asInstanceOf[js.Any])
+      inline def setIsEpiphany(value: Boolean): Self = StObject.set(x, "isEpiphany", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
+      inline def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFlock(value: Boolean): Self = StObject.set(x, "isFlock", value.asInstanceOf[js.Any])
+      inline def setIsFlock(value: Boolean): Self = StObject.set(x, "isFlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
+      inline def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIECompatibilityMode(value: Boolean): Self = StObject.set(x, "isIECompatibilityMode", value.asInstanceOf[js.Any])
+      inline def setIsIECompatibilityMode(value: Boolean): Self = StObject.set(x, "isIECompatibilityMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsKindleFire(value: Boolean): Self = StObject.set(x, "isKindleFire", value.asInstanceOf[js.Any])
+      inline def setIsKindleFire(value: Boolean): Self = StObject.set(x, "isKindleFire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsKonqueror(value: Boolean): Self = StObject.set(x, "isKonqueror", value.asInstanceOf[js.Any])
+      inline def setIsKonqueror(value: Boolean): Self = StObject.set(x, "isKonqueror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLinux(value: Boolean): Self = StObject.set(x, "isLinux", value.asInstanceOf[js.Any])
+      inline def setIsLinux(value: Boolean): Self = StObject.set(x, "isLinux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLinux64(value: Boolean): Self = StObject.set(x, "isLinux64", value.asInstanceOf[js.Any])
+      inline def setIsLinux64(value: Boolean): Self = StObject.set(x, "isLinux64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMac(value: Boolean): Self = StObject.set(x, "isMac", value.asInstanceOf[js.Any])
+      inline def setIsMac(value: Boolean): Self = StObject.set(x, "isMac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOmniWeb(value: Boolean): Self = StObject.set(x, "isOmniWeb", value.asInstanceOf[js.Any])
+      inline def setIsOmniWeb(value: Boolean): Self = StObject.set(x, "isOmniWeb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
+      inline def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRaspberry(value: Boolean): Self = StObject.set(x, "isRaspberry", value.asInstanceOf[js.Any])
+      inline def setIsRaspberry(value: Boolean): Self = StObject.set(x, "isRaspberry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSafari(value: Boolean): Self = StObject.set(x, "isSafari", value.asInstanceOf[js.Any])
+      inline def setIsSafari(value: Boolean): Self = StObject.set(x, "isSafari", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSamsung(value: Boolean): Self = StObject.set(x, "isSamsung", value.asInstanceOf[js.Any])
+      inline def setIsSamsung(value: Boolean): Self = StObject.set(x, "isSamsung", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSeaMonkey(value: Boolean): Self = StObject.set(x, "isSeaMonkey", value.asInstanceOf[js.Any])
+      inline def setIsSeaMonkey(value: Boolean): Self = StObject.set(x, "isSeaMonkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSilk(value: Boolean): Self = StObject.set(x, "isSilk", value.asInstanceOf[js.Any])
+      inline def setIsSilk(value: Boolean): Self = StObject.set(x, "isSilk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSmartTV(value: Boolean): Self = StObject.set(x, "isSmartTV", value.asInstanceOf[js.Any])
+      inline def setIsSmartTV(value: Boolean): Self = StObject.set(x, "isSmartTV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
+      inline def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWebkit(value: Boolean): Self = StObject.set(x, "isWebkit", value.asInstanceOf[js.Any])
+      inline def setIsWebkit(value: Boolean): Self = StObject.set(x, "isWebkit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWinJs(value: Boolean): Self = StObject.set(x, "isWinJs", value.asInstanceOf[js.Any])
+      inline def setIsWinJs(value: Boolean): Self = StObject.set(x, "isWinJs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWindows(value: Boolean): Self = StObject.set(x, "isWindows", value.asInstanceOf[js.Any])
+      inline def setIsWindows(value: Boolean): Self = StObject.set(x, "isWindows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWindowsPhone(value: Boolean): Self = StObject.set(x, "isWindowsPhone", value.asInstanceOf[js.Any])
+      inline def setIsWindowsPhone(value: Boolean): Self = StObject.set(x, "isWindowsPhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsiPad(value: Boolean): Self = StObject.set(x, "isiPad", value.asInstanceOf[js.Any])
+      inline def setIsiPad(value: Boolean): Self = StObject.set(x, "isiPad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsiPhone(value: Boolean): Self = StObject.set(x, "isiPhone", value.asInstanceOf[js.Any])
+      inline def setIsiPhone(value: Boolean): Self = StObject.set(x, "isiPhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsiPod(value: Boolean): Self = StObject.set(x, "isiPod", value.asInstanceOf[js.Any])
+      inline def setIsiPod(value: Boolean): Self = StObject.set(x, "isiPod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilkAccelerated(value: Boolean): Self = StObject.set(x, "silkAccelerated", value.asInstanceOf[js.Any])
+      inline def setSilkAccelerated(value: Boolean): Self = StObject.set(x, "silkAccelerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -442,20 +376,16 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(): Request = {
+        inline def apply(): Request = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setUseragent(value: Details): Self = StObject.set(x, "useragent", value.asInstanceOf[js.Any])
+          inline def setUseragent(value: Details): Self = StObject.set(x, "useragent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUseragentUndefined: Self = StObject.set(x, "useragent", js.undefined)
+          inline def setUseragentUndefined: Self = StObject.set(x, "useragent", js.undefined)
         }
       }
     }

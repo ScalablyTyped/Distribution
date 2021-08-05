@@ -10,16 +10,13 @@ trait OptOutOfModalBackdrop extends StObject {
 }
 object OptOutOfModalBackdrop {
   
-  @scala.inline
-  def apply(optOutOfModalBackdrop: Boolean): OptOutOfModalBackdrop = {
+  inline def apply(optOutOfModalBackdrop: Boolean): OptOutOfModalBackdrop = {
     val __obj = js.Dynamic.literal(optOutOfModalBackdrop = optOutOfModalBackdrop.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptOutOfModalBackdrop]
   }
   
-  @scala.inline
-  implicit class OptOutOfModalBackdropMutableBuilder[Self <: OptOutOfModalBackdrop] (val x: Self) extends AnyVal {
+  extension [Self <: OptOutOfModalBackdrop](x: Self) {
     
-    @scala.inline
-    def setOptOutOfModalBackdrop(value: Boolean): Self = StObject.set(x, "optOutOfModalBackdrop", value.asInstanceOf[js.Any])
+    inline def setOptOutOfModalBackdrop(value: Boolean): Self = StObject.set(x, "optOutOfModalBackdrop", value.asInstanceOf[js.Any])
   }
 }

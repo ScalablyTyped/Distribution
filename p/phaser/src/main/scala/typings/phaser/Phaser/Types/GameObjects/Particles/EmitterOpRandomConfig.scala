@@ -18,19 +18,15 @@ trait EmitterOpRandomConfig
 }
 object EmitterOpRandomConfig {
   
-  @scala.inline
-  def apply(random: js.Array[Double]): EmitterOpRandomConfig = {
+  inline def apply(random: js.Array[Double]): EmitterOpRandomConfig = {
     val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitterOpRandomConfig]
   }
   
-  @scala.inline
-  implicit class EmitterOpRandomConfigMutableBuilder[Self <: EmitterOpRandomConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EmitterOpRandomConfig](x: Self) {
     
-    @scala.inline
-    def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+    inline def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomVarargs(value: Double*): Self = StObject.set(x, "random", js.Array(value :_*))
+    inline def setRandomVarargs(value: Double*): Self = StObject.set(x, "random", js.Array(value :_*))
   }
 }

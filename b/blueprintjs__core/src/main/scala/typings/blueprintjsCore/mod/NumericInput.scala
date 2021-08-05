@@ -25,51 +25,42 @@ object NumericInput {
   @JSImport("@blueprintjs/core", "NumericInput.CONTINUOUS_CHANGE_DELAY")
   @js.native
   def CONTINUOUS_CHANGE_DELAY: js.Any = js.native
-  @scala.inline
-  def CONTINUOUS_CHANGE_DELAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_DELAY")(x.asInstanceOf[js.Any])
+  inline def CONTINUOUS_CHANGE_DELAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_DELAY")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NumericInput.CONTINUOUS_CHANGE_INTERVAL")
   @js.native
   def CONTINUOUS_CHANGE_INTERVAL: js.Any = js.native
-  @scala.inline
-  def CONTINUOUS_CHANGE_INTERVAL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_INTERVAL")(x.asInstanceOf[js.Any])
+  inline def CONTINUOUS_CHANGE_INTERVAL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_INTERVAL")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NumericInput.VALUE_EMPTY")
   @js.native
   def VALUE_EMPTY: String = js.native
-  @scala.inline
-  def VALUE_EMPTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_EMPTY")(x.asInstanceOf[js.Any])
+  inline def VALUE_EMPTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_EMPTY")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NumericInput.VALUE_ZERO")
   @js.native
   def VALUE_ZERO: String = js.native
-  @scala.inline
-  def VALUE_ZERO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_ZERO")(x.asInstanceOf[js.Any])
+  inline def VALUE_ZERO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_ZERO")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NumericInput.defaultProps")
   @js.native
   def defaultProps: INumericInputProps = js.native
-  @scala.inline
-  def defaultProps_=(x: INumericInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: INumericInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NumericInput.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrevMaxProp]
+  inline def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrevMaxProp]
   
   @JSImport("@blueprintjs/core", "NumericInput.getStepMaxPrecision")
   @js.native
   def getStepMaxPrecision: js.Any = js.native
-  @scala.inline
-  def getStepMaxPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStepMaxPrecision")(x.asInstanceOf[js.Any])
+  inline def getStepMaxPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStepMaxPrecision")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NumericInput.roundAndClampValue")
   @js.native
   def roundAndClampValue: js.Any = js.native
-  @scala.inline
-  def roundAndClampValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundAndClampValue")(x.asInstanceOf[js.Any])
+  inline def roundAndClampValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundAndClampValue")(x.asInstanceOf[js.Any])
 }

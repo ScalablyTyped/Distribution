@@ -21,30 +21,22 @@ object JSON {
     * @param safe Boolean Whether to return null or throw an exception if the JSON is invalid.
     * @returns Object/null The resulting object.
     */
-  @scala.inline
-  def decode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")().asInstanceOf[js.Any]
-  @scala.inline
-  def decode(json: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(json.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def decode(json: java.lang.String, safe: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(json.asInstanceOf[js.Any], safe.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def decode(json: Unit, safe: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(json.asInstanceOf[js.Any], safe.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def decode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")().asInstanceOf[js.Any]
+  inline def decode(json: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(json.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def decode(json: java.lang.String, safe: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(json.asInstanceOf[js.Any], safe.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def decode(json: Unit, safe: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(json.asInstanceOf[js.Any], safe.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Encodes an Object Array or other value
     * @param o Object The variable to encode.
     * @returns String The JSON string.
     */
-  @scala.inline
-  def encode(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")().asInstanceOf[java.lang.String]
-  @scala.inline
-  def encode(o: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(o.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def encode(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")().asInstanceOf[java.lang.String]
+  inline def encode(o: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(o.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /** [Method] Encodes a Date
     * @param d Date The Date to encode.
     * @returns String The string literal to use in a JSON string.
     */
-  @scala.inline
-  def encodeDate(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDate")().asInstanceOf[java.lang.String]
-  @scala.inline
-  def encodeDate(d: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDate")(d.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def encodeDate(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDate")().asInstanceOf[java.lang.String]
+  inline def encodeDate(d: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDate")(d.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 }

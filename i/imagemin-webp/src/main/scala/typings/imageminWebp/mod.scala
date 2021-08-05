@@ -10,10 +10,8 @@ object mod {
   /**
     * WebP imagemin plugin
     */
-  @scala.inline
-  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  @scala.inline
-  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  inline def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   @JSImport("imagemin-webp", JSImport.Namespace)
   @js.native
@@ -29,20 +27,16 @@ object mod {
   }
   object Crop {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Crop = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Crop = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Crop]
     }
     
-    @scala.inline
-    implicit class CropMutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
+    extension [Self <: Crop](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,20 +50,15 @@ object mod {
   trait Metadata extends StObject
   object Metadata {
     
-    @scala.inline
-    def all: typings.imageminWebp.imageminWebpStrings.all = "all".asInstanceOf[typings.imageminWebp.imageminWebpStrings.all]
+    inline def all: typings.imageminWebp.imageminWebpStrings.all = "all".asInstanceOf[typings.imageminWebp.imageminWebpStrings.all]
     
-    @scala.inline
-    def exif: typings.imageminWebp.imageminWebpStrings.exif = "exif".asInstanceOf[typings.imageminWebp.imageminWebpStrings.exif]
+    inline def exif: typings.imageminWebp.imageminWebpStrings.exif = "exif".asInstanceOf[typings.imageminWebp.imageminWebpStrings.exif]
     
-    @scala.inline
-    def icc: typings.imageminWebp.imageminWebpStrings.icc = "icc".asInstanceOf[typings.imageminWebp.imageminWebpStrings.icc]
+    inline def icc: typings.imageminWebp.imageminWebpStrings.icc = "icc".asInstanceOf[typings.imageminWebp.imageminWebpStrings.icc]
     
-    @scala.inline
-    def none: typings.imageminWebp.imageminWebpStrings.none = "none".asInstanceOf[typings.imageminWebp.imageminWebpStrings.none]
+    inline def none: typings.imageminWebp.imageminWebpStrings.none = "none".asInstanceOf[typings.imageminWebp.imageminWebpStrings.none]
     
-    @scala.inline
-    def xmp: typings.imageminWebp.imageminWebpStrings.xmp = "xmp".asInstanceOf[typings.imageminWebp.imageminWebpStrings.xmp]
+    inline def xmp: typings.imageminWebp.imageminWebpStrings.xmp = "xmp".asInstanceOf[typings.imageminWebp.imageminWebpStrings.xmp]
   }
   
   trait Options extends StObject {
@@ -160,101 +149,70 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlphaQuality(value: Double): Self = StObject.set(x, "alphaQuality", value.asInstanceOf[js.Any])
+      inline def setAlphaQuality(value: Double): Self = StObject.set(x, "alphaQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaQualityUndefined: Self = StObject.set(x, "alphaQuality", js.undefined)
+      inline def setAlphaQualityUndefined: Self = StObject.set(x, "alphaQuality", js.undefined)
       
-      @scala.inline
-      def setAutoFilter(value: Boolean): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
+      inline def setAutoFilter(value: Boolean): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFilterUndefined: Self = StObject.set(x, "autoFilter", js.undefined)
+      inline def setAutoFilterUndefined: Self = StObject.set(x, "autoFilter", js.undefined)
       
-      @scala.inline
-      def setCrop(value: Crop): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: Crop): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
+      inline def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
+      inline def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Metadata | js.Array[Metadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Metadata | js.Array[Metadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setMetadataVarargs(value: Metadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: Metadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setNearLossless(value: Double): Self = StObject.set(x, "nearLossless", value.asInstanceOf[js.Any])
+      inline def setNearLossless(value: Double): Self = StObject.set(x, "nearLossless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearLosslessUndefined: Self = StObject.set(x, "nearLossless", js.undefined)
+      inline def setNearLosslessUndefined: Self = StObject.set(x, "nearLossless", js.undefined)
       
-      @scala.inline
-      def setPreset(value: Preset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: Preset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setResize(value: Resize): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Resize): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setSharpness(value: Double): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
+      inline def setSharpness(value: Double): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharpnessUndefined: Self = StObject.set(x, "sharpness", js.undefined)
+      inline def setSharpnessUndefined: Self = StObject.set(x, "sharpness", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSns(value: Double): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
+      inline def setSns(value: Double): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
+      inline def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
     }
   }
   
@@ -269,23 +227,17 @@ object mod {
   trait Preset extends StObject
   object Preset {
     
-    @scala.inline
-    def default: typings.imageminWebp.imageminWebpStrings.default = "default".asInstanceOf[typings.imageminWebp.imageminWebpStrings.default]
+    inline def default: typings.imageminWebp.imageminWebpStrings.default = "default".asInstanceOf[typings.imageminWebp.imageminWebpStrings.default]
     
-    @scala.inline
-    def drawing: typings.imageminWebp.imageminWebpStrings.drawing = "drawing".asInstanceOf[typings.imageminWebp.imageminWebpStrings.drawing]
+    inline def drawing: typings.imageminWebp.imageminWebpStrings.drawing = "drawing".asInstanceOf[typings.imageminWebp.imageminWebpStrings.drawing]
     
-    @scala.inline
-    def icon: typings.imageminWebp.imageminWebpStrings.icon = "icon".asInstanceOf[typings.imageminWebp.imageminWebpStrings.icon]
+    inline def icon: typings.imageminWebp.imageminWebpStrings.icon = "icon".asInstanceOf[typings.imageminWebp.imageminWebpStrings.icon]
     
-    @scala.inline
-    def photo: typings.imageminWebp.imageminWebpStrings.photo = "photo".asInstanceOf[typings.imageminWebp.imageminWebpStrings.photo]
+    inline def photo: typings.imageminWebp.imageminWebpStrings.photo = "photo".asInstanceOf[typings.imageminWebp.imageminWebpStrings.photo]
     
-    @scala.inline
-    def picture: typings.imageminWebp.imageminWebpStrings.picture = "picture".asInstanceOf[typings.imageminWebp.imageminWebpStrings.picture]
+    inline def picture: typings.imageminWebp.imageminWebpStrings.picture = "picture".asInstanceOf[typings.imageminWebp.imageminWebpStrings.picture]
     
-    @scala.inline
-    def text: typings.imageminWebp.imageminWebpStrings.text = "text".asInstanceOf[typings.imageminWebp.imageminWebpStrings.text]
+    inline def text: typings.imageminWebp.imageminWebpStrings.text = "text".asInstanceOf[typings.imageminWebp.imageminWebpStrings.text]
   }
   
   trait Resize extends StObject {
@@ -296,20 +248,16 @@ object mod {
   }
   object Resize {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Resize = {
+    inline def apply(height: Double, width: Double): Resize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resize]
     }
     
-    @scala.inline
-    implicit class ResizeMutableBuilder[Self <: Resize] (val x: Self) extends AnyVal {
+    extension [Self <: Resize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

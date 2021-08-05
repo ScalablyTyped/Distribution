@@ -22,28 +22,21 @@ trait SchemaListSourcesResponse extends StObject {
 }
 object SchemaListSourcesResponse {
   
-  @scala.inline
-  def apply(): SchemaListSourcesResponse = {
+  inline def apply(): SchemaListSourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListSourcesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListSourcesResponseMutableBuilder[Self <: SchemaListSourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListSourcesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

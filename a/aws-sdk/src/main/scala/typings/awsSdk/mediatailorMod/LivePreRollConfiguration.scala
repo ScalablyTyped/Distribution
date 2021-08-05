@@ -18,25 +18,19 @@ trait LivePreRollConfiguration extends StObject {
 }
 object LivePreRollConfiguration {
   
-  @scala.inline
-  def apply(): LivePreRollConfiguration = {
+  inline def apply(): LivePreRollConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LivePreRollConfiguration]
   }
   
-  @scala.inline
-  implicit class LivePreRollConfigurationMutableBuilder[Self <: LivePreRollConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LivePreRollConfiguration](x: Self) {
     
-    @scala.inline
-    def setAdDecisionServerUrl(value: string): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
+    inline def setAdDecisionServerUrl(value: string): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdDecisionServerUrlUndefined: Self = StObject.set(x, "AdDecisionServerUrl", js.undefined)
+    inline def setAdDecisionServerUrlUndefined: Self = StObject.set(x, "AdDecisionServerUrl", js.undefined)
     
-    @scala.inline
-    def setMaxDurationSeconds(value: integer): Self = StObject.set(x, "MaxDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxDurationSeconds(value: integer): Self = StObject.set(x, "MaxDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationSecondsUndefined: Self = StObject.set(x, "MaxDurationSeconds", js.undefined)
+    inline def setMaxDurationSecondsUndefined: Self = StObject.set(x, "MaxDurationSeconds", js.undefined)
   }
 }

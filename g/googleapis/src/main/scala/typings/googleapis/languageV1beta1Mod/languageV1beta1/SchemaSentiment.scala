@@ -32,31 +32,23 @@ trait SchemaSentiment extends StObject {
 }
 object SchemaSentiment {
   
-  @scala.inline
-  def apply(): SchemaSentiment = {
+  inline def apply(): SchemaSentiment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSentiment]
   }
   
-  @scala.inline
-  implicit class SchemaSentimentMutableBuilder[Self <: SchemaSentiment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSentiment](x: Self) {
     
-    @scala.inline
-    def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
+    inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
+    inline def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
     
-    @scala.inline
-    def setPolarity(value: Double): Self = StObject.set(x, "polarity", value.asInstanceOf[js.Any])
+    inline def setPolarity(value: Double): Self = StObject.set(x, "polarity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolarityUndefined: Self = StObject.set(x, "polarity", js.undefined)
+    inline def setPolarityUndefined: Self = StObject.set(x, "polarity", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

@@ -8,21 +8,17 @@ object simplePeerStrings {
   
   @js.native
   sealed trait answer extends StObject
-  @scala.inline
-  def answer: answer = "answer".asInstanceOf[answer]
+  inline def answer: answer = "answer".asInstanceOf[answer]
   
   @js.native
   sealed trait offer extends StObject
-  @scala.inline
-  def offer: offer = "offer".asInstanceOf[offer]
+  inline def offer: offer = "offer".asInstanceOf[offer]
   
   @js.native
   sealed trait pranswer extends StObject
-  @scala.inline
-  def pranswer: pranswer = "pranswer".asInstanceOf[pranswer]
+  inline def pranswer: pranswer = "pranswer".asInstanceOf[pranswer]
   
   @js.native
   sealed trait rollback extends StObject
-  @scala.inline
-  def rollback: rollback = "rollback".asInstanceOf[rollback]
+  inline def rollback: rollback = "rollback".asInstanceOf[rollback]
 }

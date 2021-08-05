@@ -23,22 +23,16 @@ object TransliterationModulesExtra {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def END_OF_MODULE: `0` = 0.asInstanceOf[`0`]
+    inline def END_OF_MODULE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def IGNORE_DIACRITICS_CTL: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
+    inline def IGNORE_DIACRITICS_CTL: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
     
-    @scala.inline
-    def IGNORE_KASHIDA_CTL: `2048` = 2048.asInstanceOf[`2048`]
+    inline def IGNORE_KASHIDA_CTL: `2048` = 2048.asInstanceOf[`2048`]
     
-    @scala.inline
-    def SENTENCE_CASE: `200` = 200.asInstanceOf[`200`]
+    inline def SENTENCE_CASE: `200` = 200.asInstanceOf[`200`]
     
-    @scala.inline
-    def TITLE_CASE: `201` = 201.asInstanceOf[`201`]
+    inline def TITLE_CASE: `201` = 201.asInstanceOf[`201`]
     
-    @scala.inline
-    def TOGGLE_CASE: `202` = 202.asInstanceOf[`202`]
+    inline def TOGGLE_CASE: `202` = 202.asInstanceOf[`202`]
   }
 }

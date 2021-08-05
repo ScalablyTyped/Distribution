@@ -21,28 +21,21 @@ trait SketchMSImageDataReference extends StObject {
 }
 object SketchMSImageDataReference {
   
-  @scala.inline
-  def apply(_ref: String, data: Data, sha1: Data): SketchMSImageDataReference = {
+  inline def apply(_ref: String, data: Data, sha1: Data): SketchMSImageDataReference = {
     val __obj = js.Dynamic.literal(_class = "jSONOriginalDataReference", _ref = _ref.asInstanceOf[js.Any], _ref_class = "imageData", data = data.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSImageDataReference]
   }
   
-  @scala.inline
-  implicit class SketchMSImageDataReferenceMutableBuilder[Self <: SketchMSImageDataReference] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSImageDataReference](x: Self) {
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1(value: Data): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: Data): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: jSONOriginalDataReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: jSONOriginalDataReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ref(value: String): Self = StObject.set(x, "_ref", value.asInstanceOf[js.Any])
+    inline def set_ref(value: String): Self = StObject.set(x, "_ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ref_class(value: imageData): Self = StObject.set(x, "_ref_class", value.asInstanceOf[js.Any])
+    inline def set_ref_class(value: imageData): Self = StObject.set(x, "_ref_class", value.asInstanceOf[js.Any])
   }
 }

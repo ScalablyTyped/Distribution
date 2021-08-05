@@ -14,25 +14,19 @@ trait pointsOptions
 }
 object pointsOptions {
   
-  @scala.inline
-  def apply(): pointsOptions = {
+  inline def apply(): pointsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[pointsOptions]
   }
   
-  @scala.inline
-  implicit class pointsOptionsMutableBuilder[Self <: pointsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: pointsOptions](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: js.Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: js.Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

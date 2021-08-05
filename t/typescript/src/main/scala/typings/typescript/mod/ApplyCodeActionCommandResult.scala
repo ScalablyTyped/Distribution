@@ -10,16 +10,13 @@ trait ApplyCodeActionCommandResult extends StObject {
 }
 object ApplyCodeActionCommandResult {
   
-  @scala.inline
-  def apply(successMessage: java.lang.String): ApplyCodeActionCommandResult = {
+  inline def apply(successMessage: java.lang.String): ApplyCodeActionCommandResult = {
     val __obj = js.Dynamic.literal(successMessage = successMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyCodeActionCommandResult]
   }
   
-  @scala.inline
-  implicit class ApplyCodeActionCommandResultMutableBuilder[Self <: ApplyCodeActionCommandResult] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyCodeActionCommandResult](x: Self) {
     
-    @scala.inline
-    def setSuccessMessage(value: java.lang.String): Self = StObject.set(x, "successMessage", value.asInstanceOf[js.Any])
+    inline def setSuccessMessage(value: java.lang.String): Self = StObject.set(x, "successMessage", value.asInstanceOf[js.Any])
   }
 }

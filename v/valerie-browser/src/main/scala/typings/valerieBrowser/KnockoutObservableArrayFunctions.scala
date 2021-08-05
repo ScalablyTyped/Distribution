@@ -21,16 +21,13 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
 }
 object KnockoutObservableArrayFunctions {
   
-  @scala.inline
-  def apply[T](validateAsModel: () => ValidatableModel[KnockoutObservableArray[T]]): KnockoutObservableArrayFunctions[T] = {
+  inline def apply[T](validateAsModel: () => ValidatableModel[KnockoutObservableArray[T]]): KnockoutObservableArrayFunctions[T] = {
     val __obj = js.Dynamic.literal(validateAsModel = js.Any.fromFunction0(validateAsModel))
     __obj.asInstanceOf[KnockoutObservableArrayFunctions[T]]
   }
   
-  @scala.inline
-  implicit class KnockoutObservableArrayFunctionsMutableBuilder[Self <: KnockoutObservableArrayFunctions[?], T] (val x: Self & KnockoutObservableArrayFunctions[T]) extends AnyVal {
+  extension [Self <: KnockoutObservableArrayFunctions[?], T](x: Self & KnockoutObservableArrayFunctions[T]) {
     
-    @scala.inline
-    def setValidateAsModel(value: () => ValidatableModel[KnockoutObservableArray[T]]): Self = StObject.set(x, "validateAsModel", js.Any.fromFunction0(value))
+    inline def setValidateAsModel(value: () => ValidatableModel[KnockoutObservableArray[T]]): Self = StObject.set(x, "validateAsModel", js.Any.fromFunction0(value))
   }
 }

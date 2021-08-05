@@ -68,8 +68,7 @@ object mod {
     var server: js.UndefOr[typings.node.httpMod.Server] = js.native
   }
   
-  @scala.inline
-  def registerExpressAPI(app: Express, config: PartialConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerExpressAPI")(app.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerExpressAPI(app: Express, config: PartialConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerExpressAPI")(app.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait APIResponse extends StObject {
     
@@ -79,23 +78,18 @@ object mod {
   }
   object APIResponse {
     
-    @scala.inline
-    def apply(status: Double): APIResponse = {
+    inline def apply(status: Double): APIResponse = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[APIResponse]
     }
     
-    @scala.inline
-    implicit class APIResponseMutableBuilder[Self <: APIResponse] (val x: Self) extends AnyVal {
+    extension [Self <: APIResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +107,7 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiNamespace: String,
       port: Double,
       quiet: Boolean,
@@ -125,23 +118,17 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setApiNamespace(value: String): Self = StObject.set(x, "apiNamespace", value.asInstanceOf[js.Any])
+      inline def setApiNamespace(value: String): Self = StObject.set(x, "apiNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordingSizeLimit(value: String): Self = StObject.set(x, "recordingSizeLimit", value.asInstanceOf[js.Any])
+      inline def setRecordingSizeLimit(value: String): Self = StObject.set(x, "recordingSizeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordingsDir(value: String): Self = StObject.set(x, "recordingsDir", value.asInstanceOf[js.Any])
+      inline def setRecordingsDir(value: String): Self = StObject.set(x, "recordingsDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,8 +140,7 @@ object mod {
   }
   object ServerConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiNamespace: String,
       port: Double,
       quiet: Boolean,
@@ -165,14 +151,11 @@ object mod {
       __obj.asInstanceOf[ServerConfig]
     }
     
-    @scala.inline
-    implicit class ServerConfigMutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServerConfig](x: Self) {
       
-      @scala.inline
-      def setCorsOptions(value: CorsOptions): Self = StObject.set(x, "corsOptions", value.asInstanceOf[js.Any])
+      inline def setCorsOptions(value: CorsOptions): Self = StObject.set(x, "corsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsOptionsUndefined: Self = StObject.set(x, "corsOptions", js.undefined)
+      inline def setCorsOptionsUndefined: Self = StObject.set(x, "corsOptions", js.undefined)
     }
   }
 }

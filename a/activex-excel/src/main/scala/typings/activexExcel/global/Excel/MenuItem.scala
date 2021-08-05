@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.MenuItem")
 @js.native
-class MenuItem protected ()
+/* private */ class MenuItem ()
   extends StObject
      with typings.activexExcel.Excel.MenuItem {
   
@@ -29,7 +29,7 @@ class MenuItem protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.MenuItem_typekey")
   var ExcelDotMenuItem_typekey: typings.activexExcel.Excel.MenuItem = js.native
   

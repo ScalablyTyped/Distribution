@@ -17,25 +17,19 @@ trait SubordinateConfig extends StObject {
 }
 object SubordinateConfig {
   
-  @scala.inline
-  def apply(): SubordinateConfig = {
+  inline def apply(): SubordinateConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubordinateConfig]
   }
   
-  @scala.inline
-  implicit class SubordinateConfigMutableBuilder[Self <: SubordinateConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SubordinateConfig](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthority(value: String): Self = StObject.set(x, "certificateAuthority", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthority(value: String): Self = StObject.set(x, "certificateAuthority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityUndefined: Self = StObject.set(x, "certificateAuthority", js.undefined)
+    inline def setCertificateAuthorityUndefined: Self = StObject.set(x, "certificateAuthority", js.undefined)
     
-    @scala.inline
-    def setPemIssuerChain(value: SubordinateConfigChain): Self = StObject.set(x, "pemIssuerChain", value.asInstanceOf[js.Any])
+    inline def setPemIssuerChain(value: SubordinateConfigChain): Self = StObject.set(x, "pemIssuerChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemIssuerChainUndefined: Self = StObject.set(x, "pemIssuerChain", js.undefined)
+    inline def setPemIssuerChainUndefined: Self = StObject.set(x, "pemIssuerChain", js.undefined)
   }
 }

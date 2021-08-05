@@ -26,20 +26,16 @@ object typesGetCommitOutputMod {
   }
   object GetCommitOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, commit: UnmarshalledCommit): GetCommitOutput = {
+    inline def apply($metadata: ResponseMetadata, commit: UnmarshalledCommit): GetCommitOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCommitOutput]
     }
     
-    @scala.inline
-    implicit class GetCommitOutputMutableBuilder[Self <: GetCommitOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetCommitOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommit(value: UnmarshalledCommit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: UnmarshalledCommit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     }
   }
 }

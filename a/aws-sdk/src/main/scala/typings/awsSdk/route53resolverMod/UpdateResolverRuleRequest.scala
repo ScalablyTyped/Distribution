@@ -18,19 +18,15 @@ trait UpdateResolverRuleRequest extends StObject {
 }
 object UpdateResolverRuleRequest {
   
-  @scala.inline
-  def apply(Config: ResolverRuleConfig, ResolverRuleId: ResourceId): UpdateResolverRuleRequest = {
+  inline def apply(Config: ResolverRuleConfig, ResolverRuleId: ResourceId): UpdateResolverRuleRequest = {
     val __obj = js.Dynamic.literal(Config = Config.asInstanceOf[js.Any], ResolverRuleId = ResolverRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResolverRuleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateResolverRuleRequestMutableBuilder[Self <: UpdateResolverRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateResolverRuleRequest](x: Self) {
     
-    @scala.inline
-    def setConfig(value: ResolverRuleConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ResolverRuleConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
+    inline def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
   }
 }

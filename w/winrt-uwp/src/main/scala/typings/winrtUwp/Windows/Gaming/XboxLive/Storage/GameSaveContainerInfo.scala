@@ -25,28 +25,21 @@ trait GameSaveContainerInfo extends StObject {
 }
 object GameSaveContainerInfo {
   
-  @scala.inline
-  def apply(displayName: String, lastModifiedTime: Date, name: String, needsSync: Boolean, totalSize: Double): GameSaveContainerInfo = {
+  inline def apply(displayName: String, lastModifiedTime: Date, name: String, needsSync: Boolean, totalSize: Double): GameSaveContainerInfo = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], lastModifiedTime = lastModifiedTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsSync = needsSync.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSaveContainerInfo]
   }
   
-  @scala.inline
-  implicit class GameSaveContainerInfoMutableBuilder[Self <: GameSaveContainerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GameSaveContainerInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: Date): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: Date): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsSync(value: Boolean): Self = StObject.set(x, "needsSync", value.asInstanceOf[js.Any])
+    inline def setNeedsSync(value: Boolean): Self = StObject.set(x, "needsSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
   }
 }

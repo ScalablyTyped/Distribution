@@ -14,25 +14,19 @@ trait IssuanceModes extends StObject {
 }
 object IssuanceModes {
   
-  @scala.inline
-  def apply(): IssuanceModes = {
+  inline def apply(): IssuanceModes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IssuanceModes]
   }
   
-  @scala.inline
-  implicit class IssuanceModesMutableBuilder[Self <: IssuanceModes] (val x: Self) extends AnyVal {
+  extension [Self <: IssuanceModes](x: Self) {
     
-    @scala.inline
-    def setAllowConfigBasedIssuance(value: Boolean): Self = StObject.set(x, "allowConfigBasedIssuance", value.asInstanceOf[js.Any])
+    inline def setAllowConfigBasedIssuance(value: Boolean): Self = StObject.set(x, "allowConfigBasedIssuance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowConfigBasedIssuanceUndefined: Self = StObject.set(x, "allowConfigBasedIssuance", js.undefined)
+    inline def setAllowConfigBasedIssuanceUndefined: Self = StObject.set(x, "allowConfigBasedIssuance", js.undefined)
     
-    @scala.inline
-    def setAllowCsrBasedIssuance(value: Boolean): Self = StObject.set(x, "allowCsrBasedIssuance", value.asInstanceOf[js.Any])
+    inline def setAllowCsrBasedIssuance(value: Boolean): Self = StObject.set(x, "allowCsrBasedIssuance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCsrBasedIssuanceUndefined: Self = StObject.set(x, "allowCsrBasedIssuance", js.undefined)
+    inline def setAllowCsrBasedIssuanceUndefined: Self = StObject.set(x, "allowCsrBasedIssuance", js.undefined)
   }
 }

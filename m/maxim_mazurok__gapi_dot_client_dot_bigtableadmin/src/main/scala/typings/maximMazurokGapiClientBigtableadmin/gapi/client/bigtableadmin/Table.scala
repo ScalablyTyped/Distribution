@@ -38,51 +38,39 @@ trait Table extends StObject {
 }
 object Table {
   
-  @scala.inline
-  def apply(): Table = {
+  inline def apply(): Table = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Table]
   }
   
-  @scala.inline
-  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+  extension [Self <: Table](x: Self) {
     
-    @scala.inline
-    def setClusterStates(
+    inline def setClusterStates(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState}
       */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[js.Any]
     ): Self = StObject.set(x, "clusterStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterStatesUndefined: Self = StObject.set(x, "clusterStates", js.undefined)
+    inline def setClusterStatesUndefined: Self = StObject.set(x, "clusterStates", js.undefined)
     
-    @scala.inline
-    def setColumnFamilies(
+    inline def setColumnFamilies(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily}
       */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[js.Any]
     ): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)
+    inline def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)
     
-    @scala.inline
-    def setGranularity(value: String): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: String): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRestoreInfo(value: RestoreInfo): Self = StObject.set(x, "restoreInfo", value.asInstanceOf[js.Any])
+    inline def setRestoreInfo(value: RestoreInfo): Self = StObject.set(x, "restoreInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreInfoUndefined: Self = StObject.set(x, "restoreInfo", js.undefined)
+    inline def setRestoreInfoUndefined: Self = StObject.set(x, "restoreInfo", js.undefined)
   }
 }

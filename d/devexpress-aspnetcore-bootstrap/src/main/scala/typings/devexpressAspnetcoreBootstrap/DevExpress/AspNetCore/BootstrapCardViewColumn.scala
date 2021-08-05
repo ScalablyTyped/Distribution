@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BootstrapCardViewColumn extends StObject {
   
-  val instance: js.Any
+  /* protected */ val instance: js.Any
 }
 object BootstrapCardViewColumn {
   
-  @scala.inline
-  def apply(instance: js.Any): BootstrapCardViewColumn = {
+  inline def apply(instance: js.Any): BootstrapCardViewColumn = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapCardViewColumn]
   }
   
-  @scala.inline
-  implicit class BootstrapCardViewColumnMutableBuilder[Self <: BootstrapCardViewColumn] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapCardViewColumn](x: Self) {
     
-    @scala.inline
-    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
   }
 }

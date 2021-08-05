@@ -17,40 +17,29 @@ trait TransitOptions extends StObject {
 }
 object TransitOptions {
   
-  @scala.inline
-  def apply(): TransitOptions = {
+  inline def apply(): TransitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitOptions]
   }
   
-  @scala.inline
-  implicit class TransitOptionsMutableBuilder[Self <: TransitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransitOptions](x: Self) {
     
-    @scala.inline
-    def setArrivalTime(value: Date): Self = StObject.set(x, "arrivalTime", value.asInstanceOf[js.Any])
+    inline def setArrivalTime(value: Date): Self = StObject.set(x, "arrivalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrivalTimeUndefined: Self = StObject.set(x, "arrivalTime", js.undefined)
+    inline def setArrivalTimeUndefined: Self = StObject.set(x, "arrivalTime", js.undefined)
     
-    @scala.inline
-    def setDepartureTime(value: Date): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
+    inline def setDepartureTime(value: Date): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartureTimeUndefined: Self = StObject.set(x, "departureTime", js.undefined)
+    inline def setDepartureTimeUndefined: Self = StObject.set(x, "departureTime", js.undefined)
     
-    @scala.inline
-    def setModes(value: js.Array[TransitMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    inline def setModes(value: js.Array[TransitMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
+    inline def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
-    @scala.inline
-    def setModesVarargs(value: TransitMode*): Self = StObject.set(x, "modes", js.Array(value :_*))
+    inline def setModesVarargs(value: TransitMode*): Self = StObject.set(x, "modes", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutingPreference(value: TransitRoutePreference): Self = StObject.set(x, "routingPreference", value.asInstanceOf[js.Any])
+    inline def setRoutingPreference(value: TransitRoutePreference): Self = StObject.set(x, "routingPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingPreferenceUndefined: Self = StObject.set(x, "routingPreference", js.undefined)
+    inline def setRoutingPreferenceUndefined: Self = StObject.set(x, "routingPreference", js.undefined)
   }
 }

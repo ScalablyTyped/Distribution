@@ -21,8 +21,7 @@ object mod {
     @JSImport("rmc-steps/lib", "default.defaultProps")
     @js.native
     def defaultProps: Current = js.native
-    @scala.inline
-    def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rmc-steps/lib", "Step")

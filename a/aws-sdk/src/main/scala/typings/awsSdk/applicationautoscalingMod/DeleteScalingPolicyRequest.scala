@@ -28,8 +28,7 @@ trait DeleteScalingPolicyRequest extends StObject {
 }
 object DeleteScalingPolicyRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PolicyName: ResourceIdMaxLen1600,
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
@@ -39,19 +38,14 @@ object DeleteScalingPolicyRequest {
     __obj.asInstanceOf[DeleteScalingPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteScalingPolicyRequestMutableBuilder[Self <: DeleteScalingPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScalingPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyName(value: ResourceIdMaxLen1600): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: ResourceIdMaxLen1600): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
   }
 }

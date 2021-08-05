@@ -20,12 +20,12 @@ object angularGenerateMod {
   class AngularGenerateRunner protected () extends GenerateRunner[AngularGenerateOptions] {
     def this(e: AngularGenerateRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_AngularGenerateRunner: AngularGenerateRunnerDeps = js.native
     
-    var generateComponent: js.Any = js.native
+    /* private */ var generateComponent: js.Any = js.native
     
-    var validateFeatureType: js.Any = js.native
+    /* private */ var validateFeatureType: js.Any = js.native
   }
   
   trait AngularGenerateRunnerDeps
@@ -37,8 +37,7 @@ object angularGenerateMod {
   }
   object AngularGenerateRunnerDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: IConfig,
       ctx: IonicContext,
       log: ILogger,
@@ -50,11 +49,9 @@ object angularGenerateMod {
       __obj.asInstanceOf[AngularGenerateRunnerDeps]
     }
     
-    @scala.inline
-    implicit class AngularGenerateRunnerDepsMutableBuilder[Self <: AngularGenerateRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: AngularGenerateRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

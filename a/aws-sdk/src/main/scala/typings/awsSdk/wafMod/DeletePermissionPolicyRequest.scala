@@ -13,16 +13,13 @@ trait DeletePermissionPolicyRequest extends StObject {
 }
 object DeletePermissionPolicyRequest {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArn): DeletePermissionPolicyRequest = {
+  inline def apply(ResourceArn: ResourceArn): DeletePermissionPolicyRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePermissionPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeletePermissionPolicyRequestMutableBuilder[Self <: DeletePermissionPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePermissionPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

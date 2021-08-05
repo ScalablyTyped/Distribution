@@ -33,43 +33,31 @@ trait OTAUpdateFile extends StObject {
 }
 object OTAUpdateFile {
   
-  @scala.inline
-  def apply(): OTAUpdateFile = {
+  inline def apply(): OTAUpdateFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OTAUpdateFile]
   }
   
-  @scala.inline
-  implicit class OTAUpdateFileMutableBuilder[Self <: OTAUpdateFile] (val x: Self) extends AnyVal {
+  extension [Self <: OTAUpdateFile](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributesMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributesMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setCodeSigning(value: CodeSigning): Self = StObject.set(x, "codeSigning", value.asInstanceOf[js.Any])
+    inline def setCodeSigning(value: CodeSigning): Self = StObject.set(x, "codeSigning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSigningUndefined: Self = StObject.set(x, "codeSigning", js.undefined)
+    inline def setCodeSigningUndefined: Self = StObject.set(x, "codeSigning", js.undefined)
     
-    @scala.inline
-    def setFileLocation(value: FileLocation): Self = StObject.set(x, "fileLocation", value.asInstanceOf[js.Any])
+    inline def setFileLocation(value: FileLocation): Self = StObject.set(x, "fileLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileLocationUndefined: Self = StObject.set(x, "fileLocation", js.undefined)
+    inline def setFileLocationUndefined: Self = StObject.set(x, "fileLocation", js.undefined)
     
-    @scala.inline
-    def setFileName(value: FileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: FileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFileVersion(value: OTAUpdateFileVersion): Self = StObject.set(x, "fileVersion", value.asInstanceOf[js.Any])
+    inline def setFileVersion(value: OTAUpdateFileVersion): Self = StObject.set(x, "fileVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileVersionUndefined: Self = StObject.set(x, "fileVersion", js.undefined)
+    inline def setFileVersionUndefined: Self = StObject.set(x, "fileVersion", js.undefined)
   }
 }

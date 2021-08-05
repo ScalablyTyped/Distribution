@@ -10,8 +10,7 @@ object getRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(values: js.Array[Double]): RangeType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[RangeType]
+  inline def default(values: js.Array[Double]): RangeType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[RangeType]
   
   trait RangeType extends StObject {
     
@@ -21,20 +20,16 @@ object getRangeMod {
   }
   object RangeType {
     
-    @scala.inline
-    def apply(max: Double, min: Double): RangeType = {
+    inline def apply(max: Double, min: Double): RangeType = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangeType]
     }
     
-    @scala.inline
-    implicit class RangeTypeMutableBuilder[Self <: RangeType] (val x: Self) extends AnyVal {
+    extension [Self <: RangeType](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
 }

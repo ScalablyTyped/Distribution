@@ -20,8 +20,7 @@ trait CompletionEntryDetails extends StObject {
 }
 object CompletionEntryDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     docComment: String,
     fullSymbolName: String,
     kind: String,
@@ -34,25 +33,18 @@ object CompletionEntryDetails {
     __obj.asInstanceOf[CompletionEntryDetails]
   }
   
-  @scala.inline
-  implicit class CompletionEntryDetailsMutableBuilder[Self <: CompletionEntryDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionEntryDetails](x: Self) {
     
-    @scala.inline
-    def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
+    inline def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullSymbolName(value: String): Self = StObject.set(x, "fullSymbolName", value.asInstanceOf[js.Any])
+    inline def setFullSymbolName(value: String): Self = StObject.set(x, "fullSymbolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindModifiers(value: String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
+    inline def setKindModifiers(value: String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

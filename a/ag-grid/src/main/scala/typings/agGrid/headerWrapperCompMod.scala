@@ -22,44 +22,44 @@ object headerWrapperCompMod {
     
     /* private */ def appendHeaderComp(displayName: js.Any, enableSorting: js.Any, enableMenu: js.Any): js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    var cbSelectAll: js.Any = js.native
+    /* private */ var cbSelectAll: js.Any = js.native
     
-    var column: js.Any = js.native
+    /* private */ var column: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var columnHoverService: js.Any = js.native
+    /* private */ var columnHoverService: js.Any = js.native
     
-    var componentRecipes: js.Any = js.native
+    /* private */ var componentRecipes: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createDragItem(): js.Any = js.native
     
-    var dragAndDropService: js.Any = js.native
+    /* private */ var dragAndDropService: js.Any = js.native
     
-    var dragSourceDropTarget: js.Any = js.native
+    /* private */ var dragSourceDropTarget: js.Any = js.native
     
-    var eResize: js.Any = js.native
+    /* private */ var eResize: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     def getColumn(): Column = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var horizontalResizeService: js.Any = js.native
+    /* private */ var horizontalResizeService: js.Any = js.native
     
     @JSName("init")
     def init_MHeaderWrapperComp(): Unit = js.native
     
-    var menuFactory: js.Any = js.native
+    /* private */ var menuFactory: js.Any = js.native
     
     /* private */ def normaliseResizeAmount(dragChange: js.Any): js.Any = js.native
     
@@ -77,11 +77,11 @@ object headerWrapperCompMod {
     
     def onResizing(finished: Boolean, resizeAmount: Double): Unit = js.native
     
-    var pinned: js.Any = js.native
+    /* private */ var pinned: js.Any = js.native
     
-    var resizeStartWidth: js.Any = js.native
+    /* private */ var resizeStartWidth: js.Any = js.native
     
-    var resizeWithShiftKey: js.Any = js.native
+    /* private */ var resizeWithShiftKey: js.Any = js.native
     
     /* private */ def setupMenuClass(): js.Any = js.native
     
@@ -97,7 +97,7 @@ object headerWrapperCompMod {
     
     /* private */ def setupWidth(): js.Any = js.native
     
-    var sortController: js.Any = js.native
+    /* private */ var sortController: js.Any = js.native
   }
   /* static members */
   object HeaderWrapperComp {
@@ -109,7 +109,6 @@ object headerWrapperCompMod {
     @JSImport("ag-grid/dist/lib/headerRendering/header/headerWrapperComp", "HeaderWrapperComp.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
 }

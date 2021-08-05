@@ -14,25 +14,19 @@ trait CompletionInfo extends StObject {
 }
 object CompletionInfo {
   
-  @scala.inline
-  def apply(entries: js.Array[CompletionEntry], isMemberCompletion: Boolean, maybeInaccurate: Boolean): CompletionInfo = {
+  inline def apply(entries: js.Array[CompletionEntry], isMemberCompletion: Boolean, maybeInaccurate: Boolean): CompletionInfo = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], isMemberCompletion = isMemberCompletion.asInstanceOf[js.Any], maybeInaccurate = maybeInaccurate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionInfo]
   }
   
-  @scala.inline
-  implicit class CompletionInfoMutableBuilder[Self <: CompletionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionInfo](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[CompletionEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[CompletionEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: CompletionEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: CompletionEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setIsMemberCompletion(value: Boolean): Self = StObject.set(x, "isMemberCompletion", value.asInstanceOf[js.Any])
+    inline def setIsMemberCompletion(value: Boolean): Self = StObject.set(x, "isMemberCompletion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaybeInaccurate(value: Boolean): Self = StObject.set(x, "maybeInaccurate", value.asInstanceOf[js.Any])
+    inline def setMaybeInaccurate(value: Boolean): Self = StObject.set(x, "maybeInaccurate", value.asInstanceOf[js.Any])
   }
 }

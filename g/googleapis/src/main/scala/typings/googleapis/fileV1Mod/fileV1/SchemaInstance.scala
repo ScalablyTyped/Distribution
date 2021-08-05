@@ -67,79 +67,55 @@ trait SchemaInstance extends StObject {
 }
 object SchemaInstance {
   
-  @scala.inline
-  def apply(): SchemaInstance = {
+  inline def apply(): SchemaInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstance]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceMutableBuilder[Self <: SchemaInstance] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstance](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setFileShares(value: js.Array[SchemaFileShareConfig]): Self = StObject.set(x, "fileShares", value.asInstanceOf[js.Any])
+    inline def setFileShares(value: js.Array[SchemaFileShareConfig]): Self = StObject.set(x, "fileShares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSharesUndefined: Self = StObject.set(x, "fileShares", js.undefined)
+    inline def setFileSharesUndefined: Self = StObject.set(x, "fileShares", js.undefined)
     
-    @scala.inline
-    def setFileSharesVarargs(value: SchemaFileShareConfig*): Self = StObject.set(x, "fileShares", js.Array(value :_*))
+    inline def setFileSharesVarargs(value: SchemaFileShareConfig*): Self = StObject.set(x, "fileShares", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetworks(value: js.Array[SchemaNetworkConfig]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: js.Array[SchemaNetworkConfig]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
+    inline def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
-    @scala.inline
-    def setNetworksVarargs(value: SchemaNetworkConfig*): Self = StObject.set(x, "networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: SchemaNetworkConfig*): Self = StObject.set(x, "networks", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

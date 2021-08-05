@@ -33,37 +33,27 @@ trait SchemaGoogleDevtoolsRemotebuildbotCommandEvents extends StObject {
 }
 object SchemaGoogleDevtoolsRemotebuildbotCommandEvents {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemotebuildbotCommandEvents = {
+  inline def apply(): SchemaGoogleDevtoolsRemotebuildbotCommandEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildbotCommandEvents]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemotebuildbotCommandEventsMutableBuilder[Self <: SchemaGoogleDevtoolsRemotebuildbotCommandEvents] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemotebuildbotCommandEvents](x: Self) {
     
-    @scala.inline
-    def setDockerCacheHit(value: Boolean): Self = StObject.set(x, "dockerCacheHit", value.asInstanceOf[js.Any])
+    inline def setDockerCacheHit(value: Boolean): Self = StObject.set(x, "dockerCacheHit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerCacheHitUndefined: Self = StObject.set(x, "dockerCacheHit", js.undefined)
+    inline def setDockerCacheHitUndefined: Self = StObject.set(x, "dockerCacheHit", js.undefined)
     
-    @scala.inline
-    def setInputCacheMiss(value: Double): Self = StObject.set(x, "inputCacheMiss", value.asInstanceOf[js.Any])
+    inline def setInputCacheMiss(value: Double): Self = StObject.set(x, "inputCacheMiss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputCacheMissUndefined: Self = StObject.set(x, "inputCacheMiss", js.undefined)
+    inline def setInputCacheMissUndefined: Self = StObject.set(x, "inputCacheMiss", js.undefined)
     
-    @scala.inline
-    def setNumErrors(value: String): Self = StObject.set(x, "numErrors", value.asInstanceOf[js.Any])
+    inline def setNumErrors(value: String): Self = StObject.set(x, "numErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumErrorsUndefined: Self = StObject.set(x, "numErrors", js.undefined)
+    inline def setNumErrorsUndefined: Self = StObject.set(x, "numErrors", js.undefined)
     
-    @scala.inline
-    def setNumWarnings(value: String): Self = StObject.set(x, "numWarnings", value.asInstanceOf[js.Any])
+    inline def setNumWarnings(value: String): Self = StObject.set(x, "numWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumWarningsUndefined: Self = StObject.set(x, "numWarnings", js.undefined)
+    inline def setNumWarningsUndefined: Self = StObject.set(x, "numWarnings", js.undefined)
   }
 }

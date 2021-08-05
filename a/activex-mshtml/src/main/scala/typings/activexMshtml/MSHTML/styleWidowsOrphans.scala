@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleWidowsOrphans extends StObject
 object styleWidowsOrphans {
   
-  @scala.inline
-  def styleWidowsOrphansNotSet: `-2147483647` = -2147483647.asInstanceOf[`-2147483647`]
+  inline def styleWidowsOrphansNotSet: `-2147483647` = -2147483647.asInstanceOf[`-2147483647`]
   
-  @scala.inline
-  def styleWidowsOrphans_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleWidowsOrphans_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

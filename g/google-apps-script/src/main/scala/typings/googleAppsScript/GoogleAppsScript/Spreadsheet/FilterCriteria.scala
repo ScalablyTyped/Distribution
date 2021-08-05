@@ -21,8 +21,7 @@ trait FilterCriteria extends StObject {
 }
 object FilterCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => FilterCriteriaBuilder,
     getCriteriaType: () => BooleanCriteria,
     getCriteriaValues: () => js.Array[js.Any],
@@ -33,22 +32,16 @@ object FilterCriteria {
     __obj.asInstanceOf[FilterCriteria]
   }
   
-  @scala.inline
-  implicit class FilterCriteriaMutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: FilterCriteria](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => FilterCriteriaBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => FilterCriteriaBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
+    inline def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    inline def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHiddenValues(value: () => js.Array[String]): Self = StObject.set(x, "getHiddenValues", js.Any.fromFunction0(value))
+    inline def setGetHiddenValues(value: () => js.Array[String]): Self = StObject.set(x, "getHiddenValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisibleValues(value: () => js.Array[String]): Self = StObject.set(x, "getVisibleValues", js.Any.fromFunction0(value))
+    inline def setGetVisibleValues(value: () => js.Array[String]): Self = StObject.set(x, "getVisibleValues", js.Any.fromFunction0(value))
   }
 }

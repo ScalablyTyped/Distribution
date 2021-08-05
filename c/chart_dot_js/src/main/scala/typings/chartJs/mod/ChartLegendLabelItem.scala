@@ -12,19 +12,15 @@ trait ChartLegendLabelItem
 }
 object ChartLegendLabelItem {
   
-  @scala.inline
-  def apply(): ChartLegendLabelItem = {
+  inline def apply(): ChartLegendLabelItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartLegendLabelItem]
   }
   
-  @scala.inline
-  implicit class ChartLegendLabelItemMutableBuilder[Self <: ChartLegendLabelItem] (val x: Self) extends AnyVal {
+  extension [Self <: ChartLegendLabelItem](x: Self) {
     
-    @scala.inline
-    def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
+    inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
+    inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
   }
 }

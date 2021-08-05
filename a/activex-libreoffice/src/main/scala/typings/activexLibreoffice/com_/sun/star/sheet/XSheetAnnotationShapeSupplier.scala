@@ -24,8 +24,7 @@ trait XSheetAnnotationShapeSupplier
 }
 object XSheetAnnotationShapeSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnnotationShape: XShape,
     acquire: () => Unit,
     getAnnotationShape: () => XShape,
@@ -36,13 +35,10 @@ object XSheetAnnotationShapeSupplier {
     __obj.asInstanceOf[XSheetAnnotationShapeSupplier]
   }
   
-  @scala.inline
-  implicit class XSheetAnnotationShapeSupplierMutableBuilder[Self <: XSheetAnnotationShapeSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetAnnotationShapeSupplier](x: Self) {
     
-    @scala.inline
-    def setAnnotationShape(value: XShape): Self = StObject.set(x, "AnnotationShape", value.asInstanceOf[js.Any])
+    inline def setAnnotationShape(value: XShape): Self = StObject.set(x, "AnnotationShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAnnotationShape(value: () => XShape): Self = StObject.set(x, "getAnnotationShape", js.Any.fromFunction0(value))
+    inline def setGetAnnotationShape(value: () => XShape): Self = StObject.set(x, "getAnnotationShape", js.Any.fromFunction0(value))
   }
 }

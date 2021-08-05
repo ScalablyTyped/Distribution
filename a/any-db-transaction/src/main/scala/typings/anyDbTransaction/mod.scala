@@ -12,60 +12,47 @@ object mod {
   /**
     * Start a transaction
     */
-  @scala.inline
-  def apply(q: Queryable): Transaction = ^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any]).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(q: Queryable, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(
+  inline def apply(q: Queryable): Transaction = ^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+  inline def apply(q: Queryable, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def apply(
     q: Queryable,
     beginStatement: String,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(q: Queryable, callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(q: Queryable, options: Unit, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(
+  inline def apply(q: Queryable, callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def apply(q: Queryable, options: Unit, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def apply(
     q: Queryable,
     options: Unit,
     beginStatement: String,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(
+  inline def apply(
     q: Queryable,
     options: Unit,
     beginStatement: Unit,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(
+  inline def apply(
     q: Queryable,
     options: Unit,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(q: Queryable, options: TransactionOptions): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(q: Queryable, options: TransactionOptions, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(
+  inline def apply(q: Queryable, options: TransactionOptions): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def apply(q: Queryable, options: TransactionOptions, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def apply(
     q: Queryable,
     options: TransactionOptions,
     beginStatement: String,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(
+  inline def apply(
     q: Queryable,
     options: TransactionOptions,
     beginStatement: Unit,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
-  @scala.inline
-  def apply(
+  inline def apply(
     q: Queryable,
     options: TransactionOptions,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
@@ -153,50 +140,36 @@ object mod {
   }
   object TransactionOptions {
     
-    @scala.inline
-    def apply(): TransactionOptions = {
+    inline def apply(): TransactionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    @scala.inline
-    implicit class TransactionOptionsMutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionOptions](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: Adapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: Adapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setAutoRollback(value: Boolean): Self = StObject.set(x, "autoRollback", value.asInstanceOf[js.Any])
+      inline def setAutoRollback(value: Boolean): Self = StObject.set(x, "autoRollback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRollbackUndefined: Self = StObject.set(x, "autoRollback", js.undefined)
+      inline def setAutoRollbackUndefined: Self = StObject.set(x, "autoRollback", js.undefined)
       
-      @scala.inline
-      def setBegin(value: String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+      inline def setBegin(value: String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+      inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (/* error */ Error, /* transaction */ Transaction) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ Error, /* transaction */ Transaction) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+      inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
       
-      @scala.inline
-      def setRollback(value: String): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
+      inline def setRollback(value: String): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollbackUndefined: Self = StObject.set(x, "rollback", js.undefined)
+      inline def setRollbackUndefined: Self = StObject.set(x, "rollback", js.undefined)
     }
   }
 }

@@ -10,19 +10,15 @@ trait JPYArray extends StObject {
 }
 object JPYArray {
   
-  @scala.inline
-  def apply(JPY: js.Array[String]): JPYArray = {
+  inline def apply(JPY: js.Array[String]): JPYArray = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any])
     __obj.asInstanceOf[JPYArray]
   }
   
-  @scala.inline
-  implicit class JPYArrayMutableBuilder[Self <: JPYArray] (val x: Self) extends AnyVal {
+  extension [Self <: JPYArray](x: Self) {
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
   }
 }

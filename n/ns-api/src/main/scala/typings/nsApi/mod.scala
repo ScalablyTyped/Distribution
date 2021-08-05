@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(conf: Configuration): typings.nsApi.mod.nsApi = ^.asInstanceOf[js.Dynamic].apply(conf.asInstanceOf[js.Any]).asInstanceOf[typings.nsApi.mod.nsApi]
+  inline def apply(conf: Configuration): typings.nsApi.mod.nsApi = ^.asInstanceOf[js.Dynamic].apply(conf.asInstanceOf[js.Any]).asInstanceOf[typings.nsApi.mod.nsApi]
   
   @JSImport("ns-api", JSImport.Namespace)
   @js.native
@@ -23,26 +22,20 @@ object mod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(password: String, username: String): Configuration = {
+    inline def apply(password: String, username: String): Configuration = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   

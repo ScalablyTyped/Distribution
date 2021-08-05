@@ -14,22 +14,17 @@ trait UsersResource extends StObject {
 }
 object UsersResource {
   
-  @scala.inline
-  def apply(dataSources: DataSourcesResource, dataset: DatasetResource, sessions: SessionsResource): UsersResource = {
+  inline def apply(dataSources: DataSourcesResource, dataset: DatasetResource, sessions: SessionsResource): UsersResource = {
     val __obj = js.Dynamic.literal(dataSources = dataSources.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersResource]
   }
   
-  @scala.inline
-  implicit class UsersResourceMutableBuilder[Self <: UsersResource] (val x: Self) extends AnyVal {
+  extension [Self <: UsersResource](x: Self) {
     
-    @scala.inline
-    def setDataSources(value: DataSourcesResource): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: DataSourcesResource): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataset(value: DatasetResource): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: DatasetResource): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessions(value: SessionsResource): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+    inline def setSessions(value: SessionsResource): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
   }
 }

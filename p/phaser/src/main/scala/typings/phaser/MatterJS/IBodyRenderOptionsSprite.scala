@@ -26,19 +26,15 @@ trait IBodyRenderOptionsSprite extends StObject {
 }
 object IBodyRenderOptionsSprite {
   
-  @scala.inline
-  def apply(xOffset: Double, yOffset: Double): IBodyRenderOptionsSprite = {
+  inline def apply(xOffset: Double, yOffset: Double): IBodyRenderOptionsSprite = {
     val __obj = js.Dynamic.literal(xOffset = xOffset.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyRenderOptionsSprite]
   }
   
-  @scala.inline
-  implicit class IBodyRenderOptionsSpriteMutableBuilder[Self <: IBodyRenderOptionsSprite] (val x: Self) extends AnyVal {
+  extension [Self <: IBodyRenderOptionsSprite](x: Self) {
     
-    @scala.inline
-    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+    inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
   }
 }

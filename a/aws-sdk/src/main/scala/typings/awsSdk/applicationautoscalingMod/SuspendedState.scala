@@ -23,31 +23,23 @@ trait SuspendedState extends StObject {
 }
 object SuspendedState {
   
-  @scala.inline
-  def apply(): SuspendedState = {
+  inline def apply(): SuspendedState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuspendedState]
   }
   
-  @scala.inline
-  implicit class SuspendedStateMutableBuilder[Self <: SuspendedState] (val x: Self) extends AnyVal {
+  extension [Self <: SuspendedState](x: Self) {
     
-    @scala.inline
-    def setDynamicScalingInSuspended(value: ScalingSuspended): Self = StObject.set(x, "DynamicScalingInSuspended", value.asInstanceOf[js.Any])
+    inline def setDynamicScalingInSuspended(value: ScalingSuspended): Self = StObject.set(x, "DynamicScalingInSuspended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicScalingInSuspendedUndefined: Self = StObject.set(x, "DynamicScalingInSuspended", js.undefined)
+    inline def setDynamicScalingInSuspendedUndefined: Self = StObject.set(x, "DynamicScalingInSuspended", js.undefined)
     
-    @scala.inline
-    def setDynamicScalingOutSuspended(value: ScalingSuspended): Self = StObject.set(x, "DynamicScalingOutSuspended", value.asInstanceOf[js.Any])
+    inline def setDynamicScalingOutSuspended(value: ScalingSuspended): Self = StObject.set(x, "DynamicScalingOutSuspended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicScalingOutSuspendedUndefined: Self = StObject.set(x, "DynamicScalingOutSuspended", js.undefined)
+    inline def setDynamicScalingOutSuspendedUndefined: Self = StObject.set(x, "DynamicScalingOutSuspended", js.undefined)
     
-    @scala.inline
-    def setScheduledScalingSuspended(value: ScalingSuspended): Self = StObject.set(x, "ScheduledScalingSuspended", value.asInstanceOf[js.Any])
+    inline def setScheduledScalingSuspended(value: ScalingSuspended): Self = StObject.set(x, "ScheduledScalingSuspended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledScalingSuspendedUndefined: Self = StObject.set(x, "ScheduledScalingSuspended", js.undefined)
+    inline def setScheduledScalingSuspendedUndefined: Self = StObject.set(x, "ScheduledScalingSuspended", js.undefined)
   }
 }

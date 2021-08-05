@@ -11,22 +11,17 @@ trait NodeGroupsDeleteNodesRequest extends StObject {
 }
 object NodeGroupsDeleteNodesRequest {
   
-  @scala.inline
-  def apply(): NodeGroupsDeleteNodesRequest = {
+  inline def apply(): NodeGroupsDeleteNodesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupsDeleteNodesRequest]
   }
   
-  @scala.inline
-  implicit class NodeGroupsDeleteNodesRequestMutableBuilder[Self <: NodeGroupsDeleteNodesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupsDeleteNodesRequest](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

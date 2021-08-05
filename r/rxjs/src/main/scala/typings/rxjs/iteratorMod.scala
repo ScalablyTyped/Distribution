@@ -14,8 +14,7 @@ object iteratorMod {
   @js.native
   val $iterator: js.Symbol = js.native
   
-  @scala.inline
-  def getSymbolIterator(): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("getSymbolIterator")().asInstanceOf[js.Symbol]
+  inline def getSymbolIterator(): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("getSymbolIterator")().asInstanceOf[js.Symbol]
   
   @JSImport("rxjs/internal/symbol/iterator", "iterator")
   @js.native

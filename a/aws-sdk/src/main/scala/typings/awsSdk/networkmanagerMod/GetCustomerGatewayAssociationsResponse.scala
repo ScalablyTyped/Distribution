@@ -18,28 +18,21 @@ trait GetCustomerGatewayAssociationsResponse extends StObject {
 }
 object GetCustomerGatewayAssociationsResponse {
   
-  @scala.inline
-  def apply(): GetCustomerGatewayAssociationsResponse = {
+  inline def apply(): GetCustomerGatewayAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCustomerGatewayAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class GetCustomerGatewayAssociationsResponseMutableBuilder[Self <: GetCustomerGatewayAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCustomerGatewayAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setCustomerGatewayAssociations(value: CustomerGatewayAssociationList): Self = StObject.set(x, "CustomerGatewayAssociations", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayAssociations(value: CustomerGatewayAssociationList): Self = StObject.set(x, "CustomerGatewayAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerGatewayAssociationsUndefined: Self = StObject.set(x, "CustomerGatewayAssociations", js.undefined)
+    inline def setCustomerGatewayAssociationsUndefined: Self = StObject.set(x, "CustomerGatewayAssociations", js.undefined)
     
-    @scala.inline
-    def setCustomerGatewayAssociationsVarargs(value: CustomerGatewayAssociation*): Self = StObject.set(x, "CustomerGatewayAssociations", js.Array(value :_*))
+    inline def setCustomerGatewayAssociationsVarargs(value: CustomerGatewayAssociation*): Self = StObject.set(x, "CustomerGatewayAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -18,17 +18,14 @@ object anon {
   }
   object CleanCache {
     
-    @scala.inline
-    def apply(cleanCache: () => Unit): CleanCache = {
+    inline def apply(cleanCache: () => Unit): CleanCache = {
       val __obj = js.Dynamic.literal(cleanCache = js.Any.fromFunction0(cleanCache))
       __obj.asInstanceOf[CleanCache]
     }
     
-    @scala.inline
-    implicit class CleanCacheMutableBuilder[Self <: CleanCache] (val x: Self) extends AnyVal {
+    extension [Self <: CleanCache](x: Self) {
       
-      @scala.inline
-      def setCleanCache(value: () => Unit): Self = StObject.set(x, "cleanCache", js.Any.fromFunction0(value))
+      inline def setCleanCache(value: () => Unit): Self = StObject.set(x, "cleanCache", js.Any.fromFunction0(value))
     }
   }
   

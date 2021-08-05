@@ -12,6 +12,5 @@ object colorRectangleStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IColorRectangleStyleProps): IColorRectangleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IColorRectangleStyles]
+  inline def getStyles(props: IColorRectangleStyleProps): IColorRectangleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IColorRectangleStyles]
 }

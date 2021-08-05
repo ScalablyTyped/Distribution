@@ -10,16 +10,13 @@ trait TypeofAddon extends StObject {
 }
 object TypeofAddon {
   
-  @scala.inline
-  def apply(OCRPro: TypeofOCRPro): TypeofAddon = {
+  inline def apply(OCRPro: TypeofOCRPro): TypeofAddon = {
     val __obj = js.Dynamic.literal(OCRPro = OCRPro.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAddon]
   }
   
-  @scala.inline
-  implicit class TypeofAddonMutableBuilder[Self <: TypeofAddon] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAddon](x: Self) {
     
-    @scala.inline
-    def setOCRPro(value: TypeofOCRPro): Self = StObject.set(x, "OCRPro", value.asInstanceOf[js.Any])
+    inline def setOCRPro(value: TypeofOCRPro): Self = StObject.set(x, "OCRPro", value.asInstanceOf[js.Any])
   }
 }

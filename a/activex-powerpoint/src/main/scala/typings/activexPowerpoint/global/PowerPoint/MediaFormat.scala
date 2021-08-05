@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.MediaFormat")
 @js.native
-class MediaFormat protected ()
+/* private */ class MediaFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.MediaFormat

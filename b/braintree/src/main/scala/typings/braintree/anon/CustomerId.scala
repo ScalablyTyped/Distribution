@@ -15,22 +15,17 @@ trait CustomerId extends StObject {
 }
 object CustomerId {
   
-  @scala.inline
-  def apply(customerId: String, revokedPaymentMethod: PaymentMethod, token: String): CustomerId = {
+  inline def apply(customerId: String, revokedPaymentMethod: PaymentMethod, token: String): CustomerId = {
     val __obj = js.Dynamic.literal(customerId = customerId.asInstanceOf[js.Any], revokedPaymentMethod = revokedPaymentMethod.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerId]
   }
   
-  @scala.inline
-  implicit class CustomerIdMutableBuilder[Self <: CustomerId] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerId](x: Self) {
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokedPaymentMethod(value: PaymentMethod): Self = StObject.set(x, "revokedPaymentMethod", value.asInstanceOf[js.Any])
+    inline def setRevokedPaymentMethod(value: PaymentMethod): Self = StObject.set(x, "revokedPaymentMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

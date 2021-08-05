@@ -27,31 +27,23 @@ trait HtmlComponentCfg
 }
 object HtmlComponentCfg {
   
-  @scala.inline
-  def apply(): HtmlComponentCfg = {
+  inline def apply(): HtmlComponentCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlComponentCfg]
   }
   
-  @scala.inline
-  implicit class HtmlComponentCfgMutableBuilder[Self <: HtmlComponentCfg] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlComponentCfg](x: Self) {
     
-    @scala.inline
-    def setContainer(value: HTMLElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDomStyles(value: LooseObject): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
+    inline def setDomStyles(value: LooseObject): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomStylesUndefined: Self = StObject.set(x, "domStyles", js.undefined)
+    inline def setDomStylesUndefined: Self = StObject.set(x, "domStyles", js.undefined)
     
-    @scala.inline
-    def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

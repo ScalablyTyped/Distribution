@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SyntaxTree extends StObject {
   
-  var _allDiagnostics: js.Any
+  /* private */ var _allDiagnostics: js.Any
   
-  var _fileName: js.Any
+  /* private */ var _fileName: js.Any
   
-  var _isDeclaration: js.Any
+  /* private */ var _isDeclaration: js.Any
   
-  var _lineMap: js.Any
+  /* private */ var _lineMap: js.Any
   
-  var _parseOptions: js.Any
+  /* private */ var _parseOptions: js.Any
   
-  var _parserDiagnostics: js.Any
+  /* private */ var _parserDiagnostics: js.Any
   
-  var _sourceUnit: js.Any
+  /* private */ var _sourceUnit: js.Any
   
   /* private */ def computeDiagnostics(): js.Any
   
@@ -40,8 +40,7 @@ trait SyntaxTree extends StObject {
 }
 object SyntaxTree {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _allDiagnostics: js.Any,
     _fileName: js.Any,
     _isDeclaration: js.Any,
@@ -63,55 +62,38 @@ object SyntaxTree {
     __obj.asInstanceOf[SyntaxTree]
   }
   
-  @scala.inline
-  implicit class SyntaxTreeMutableBuilder[Self <: SyntaxTree] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxTree](x: Self) {
     
-    @scala.inline
-    def setComputeDiagnostics(value: () => js.Any): Self = StObject.set(x, "computeDiagnostics", js.Any.fromFunction0(value))
+    inline def setComputeDiagnostics(value: () => js.Any): Self = StObject.set(x, "computeDiagnostics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDiagnostics(value: () => js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", js.Any.fromFunction0(value))
+    inline def setDiagnostics(value: () => js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
+    inline def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDeclaration(value: () => Boolean): Self = StObject.set(x, "isDeclaration", js.Any.fromFunction0(value))
+    inline def setIsDeclaration(value: () => Boolean): Self = StObject.set(x, "isDeclaration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
+    inline def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParseOptions(value: () => ParseOptions): Self = StObject.set(x, "parseOptions", js.Any.fromFunction0(value))
+    inline def setParseOptions(value: () => ParseOptions): Self = StObject.set(x, "parseOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSourceUnit(value: () => SourceUnitSyntax): Self = StObject.set(x, "sourceUnit", js.Any.fromFunction0(value))
+    inline def setSourceUnit(value: () => SourceUnitSyntax): Self = StObject.set(x, "sourceUnit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStructuralEquals(value: SyntaxTree => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction1(value))
+    inline def setStructuralEquals(value: SyntaxTree => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+    inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_allDiagnostics(value: js.Any): Self = StObject.set(x, "_allDiagnostics", value.asInstanceOf[js.Any])
+    inline def set_allDiagnostics(value: js.Any): Self = StObject.set(x, "_allDiagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_isDeclaration(value: js.Any): Self = StObject.set(x, "_isDeclaration", value.asInstanceOf[js.Any])
+    inline def set_isDeclaration(value: js.Any): Self = StObject.set(x, "_isDeclaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
+    inline def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_parseOptions(value: js.Any): Self = StObject.set(x, "_parseOptions", value.asInstanceOf[js.Any])
+    inline def set_parseOptions(value: js.Any): Self = StObject.set(x, "_parseOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_parserDiagnostics(value: js.Any): Self = StObject.set(x, "_parserDiagnostics", value.asInstanceOf[js.Any])
+    inline def set_parserDiagnostics(value: js.Any): Self = StObject.set(x, "_parserDiagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sourceUnit(value: js.Any): Self = StObject.set(x, "_sourceUnit", value.asInstanceOf[js.Any])
+    inline def set_sourceUnit(value: js.Any): Self = StObject.set(x, "_sourceUnit", value.asInstanceOf[js.Any])
   }
 }

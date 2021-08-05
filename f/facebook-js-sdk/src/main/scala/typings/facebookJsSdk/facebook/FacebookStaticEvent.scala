@@ -12,8 +12,7 @@ trait FacebookStaticEvent extends StObject {
 }
 object FacebookStaticEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     subscribe: (js.Any, FacebookEventCallback[js.Any]) => Unit,
     unsubscribe: (js.Any, FacebookEventCallback[js.Any]) => Unit
   ): FacebookStaticEvent = {
@@ -21,13 +20,10 @@ object FacebookStaticEvent {
     __obj.asInstanceOf[FacebookStaticEvent]
   }
   
-  @scala.inline
-  implicit class FacebookStaticEventMutableBuilder[Self <: FacebookStaticEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FacebookStaticEvent](x: Self) {
     
-    @scala.inline
-    def setSubscribe(value: (js.Any, FacebookEventCallback[js.Any]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+    inline def setSubscribe(value: (js.Any, FacebookEventCallback[js.Any]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnsubscribe(value: (js.Any, FacebookEventCallback[js.Any]) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+    inline def setUnsubscribe(value: (js.Any, FacebookEventCallback[js.Any]) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
   }
 }

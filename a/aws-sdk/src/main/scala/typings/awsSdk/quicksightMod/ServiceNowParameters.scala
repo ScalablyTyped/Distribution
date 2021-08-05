@@ -13,16 +13,13 @@ trait ServiceNowParameters extends StObject {
 }
 object ServiceNowParameters {
   
-  @scala.inline
-  def apply(SiteBaseUrl: SiteBaseUrl): ServiceNowParameters = {
+  inline def apply(SiteBaseUrl: SiteBaseUrl): ServiceNowParameters = {
     val __obj = js.Dynamic.literal(SiteBaseUrl = SiteBaseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceNowParameters]
   }
   
-  @scala.inline
-  implicit class ServiceNowParametersMutableBuilder[Self <: ServiceNowParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceNowParameters](x: Self) {
     
-    @scala.inline
-    def setSiteBaseUrl(value: SiteBaseUrl): Self = StObject.set(x, "SiteBaseUrl", value.asInstanceOf[js.Any])
+    inline def setSiteBaseUrl(value: SiteBaseUrl): Self = StObject.set(x, "SiteBaseUrl", value.asInstanceOf[js.Any])
   }
 }

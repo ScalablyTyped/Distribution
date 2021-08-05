@@ -21,26 +21,20 @@ object ecr {
   }
   object RepositoryEncryptionConfiguration {
     
-    @scala.inline
-    def apply(): RepositoryEncryptionConfiguration = {
+    inline def apply(): RepositoryEncryptionConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepositoryEncryptionConfiguration]
     }
     
-    @scala.inline
-    implicit class RepositoryEncryptionConfigurationMutableBuilder[Self <: RepositoryEncryptionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryEncryptionConfiguration](x: Self) {
       
-      @scala.inline
-      def setEncryptionType(value: Input[String]): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
+      inline def setEncryptionType(value: Input[String]): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
+      inline def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
       
-      @scala.inline
-      def setKmsKey(value: Input[String]): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
+      inline def setKmsKey(value: Input[String]): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
+      inline def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
     }
   }
   
@@ -53,17 +47,14 @@ object ecr {
   }
   object RepositoryImageScanningConfiguration {
     
-    @scala.inline
-    def apply(scanOnPush: Input[Boolean]): RepositoryImageScanningConfiguration = {
+    inline def apply(scanOnPush: Input[Boolean]): RepositoryImageScanningConfiguration = {
       val __obj = js.Dynamic.literal(scanOnPush = scanOnPush.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepositoryImageScanningConfiguration]
     }
     
-    @scala.inline
-    implicit class RepositoryImageScanningConfigurationMutableBuilder[Self <: RepositoryImageScanningConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryImageScanningConfiguration](x: Self) {
       
-      @scala.inline
-      def setScanOnPush(value: Input[Boolean]): Self = StObject.set(x, "scanOnPush", value.asInstanceOf[js.Any])
+      inline def setScanOnPush(value: Input[Boolean]): Self = StObject.set(x, "scanOnPush", value.asInstanceOf[js.Any])
     }
   }
 }

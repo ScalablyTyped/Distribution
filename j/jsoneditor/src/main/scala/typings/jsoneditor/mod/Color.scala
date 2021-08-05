@@ -22,8 +22,7 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hex: String,
     hslString: String,
     hsla: js.Array[Double],
@@ -36,34 +35,24 @@ object Color {
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+    inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHslString(value: String): Self = StObject.set(x, "hslString", value.asInstanceOf[js.Any])
+    inline def setHslString(value: String): Self = StObject.set(x, "hslString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsla(value: js.Array[Double]): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
+    inline def setHsla(value: js.Array[Double]): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHslaString(value: String): Self = StObject.set(x, "hslaString", value.asInstanceOf[js.Any])
+    inline def setHslaString(value: String): Self = StObject.set(x, "hslaString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHslaVarargs(value: Double*): Self = StObject.set(x, "hsla", js.Array(value :_*))
+    inline def setHslaVarargs(value: Double*): Self = StObject.set(x, "hsla", js.Array(value :_*))
     
-    @scala.inline
-    def setRgbString(value: String): Self = StObject.set(x, "rgbString", value.asInstanceOf[js.Any])
+    inline def setRgbString(value: String): Self = StObject.set(x, "rgbString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgba(value: js.Array[Double]): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
+    inline def setRgba(value: js.Array[Double]): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgbaString(value: String): Self = StObject.set(x, "rgbaString", value.asInstanceOf[js.Any])
+    inline def setRgbaString(value: String): Self = StObject.set(x, "rgbaString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgbaVarargs(value: Double*): Self = StObject.set(x, "rgba", js.Array(value :_*))
+    inline def setRgbaVarargs(value: Double*): Self = StObject.set(x, "rgba", js.Array(value :_*))
   }
 }

@@ -26,31 +26,23 @@ trait TimeSeriesRatio extends StObject {
 }
 object TimeSeriesRatio {
   
-  @scala.inline
-  def apply(): TimeSeriesRatio = {
+  inline def apply(): TimeSeriesRatio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeSeriesRatio]
   }
   
-  @scala.inline
-  implicit class TimeSeriesRatioMutableBuilder[Self <: TimeSeriesRatio] (val x: Self) extends AnyVal {
+  extension [Self <: TimeSeriesRatio](x: Self) {
     
-    @scala.inline
-    def setBadServiceFilter(value: String): Self = StObject.set(x, "badServiceFilter", value.asInstanceOf[js.Any])
+    inline def setBadServiceFilter(value: String): Self = StObject.set(x, "badServiceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadServiceFilterUndefined: Self = StObject.set(x, "badServiceFilter", js.undefined)
+    inline def setBadServiceFilterUndefined: Self = StObject.set(x, "badServiceFilter", js.undefined)
     
-    @scala.inline
-    def setGoodServiceFilter(value: String): Self = StObject.set(x, "goodServiceFilter", value.asInstanceOf[js.Any])
+    inline def setGoodServiceFilter(value: String): Self = StObject.set(x, "goodServiceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoodServiceFilterUndefined: Self = StObject.set(x, "goodServiceFilter", js.undefined)
+    inline def setGoodServiceFilterUndefined: Self = StObject.set(x, "goodServiceFilter", js.undefined)
     
-    @scala.inline
-    def setTotalServiceFilter(value: String): Self = StObject.set(x, "totalServiceFilter", value.asInstanceOf[js.Any])
+    inline def setTotalServiceFilter(value: String): Self = StObject.set(x, "totalServiceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalServiceFilterUndefined: Self = StObject.set(x, "totalServiceFilter", js.undefined)
+    inline def setTotalServiceFilterUndefined: Self = StObject.set(x, "totalServiceFilter", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait OSActionButton extends StObject {
 }
 object OSActionButton {
   
-  @scala.inline
-  def apply(icon: String, id: String, text: String): OSActionButton = {
+  inline def apply(icon: String, id: String, text: String): OSActionButton = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSActionButton]
   }
   
-  @scala.inline
-  implicit class OSActionButtonMutableBuilder[Self <: OSActionButton] (val x: Self) extends AnyVal {
+  extension [Self <: OSActionButton](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

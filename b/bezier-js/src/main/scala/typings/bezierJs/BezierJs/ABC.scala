@@ -14,22 +14,17 @@ trait ABC extends StObject {
 }
 object ABC {
   
-  @scala.inline
-  def apply(A: Point, B: Point, C: Point): ABC = {
+  inline def apply(A: Point, B: Point, C: Point): ABC = {
     val __obj = js.Dynamic.literal(A = A.asInstanceOf[js.Any], B = B.asInstanceOf[js.Any], C = C.asInstanceOf[js.Any])
     __obj.asInstanceOf[ABC]
   }
   
-  @scala.inline
-  implicit class ABCMutableBuilder[Self <: ABC] (val x: Self) extends AnyVal {
+  extension [Self <: ABC](x: Self) {
     
-    @scala.inline
-    def setA(value: Point): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+    inline def setA(value: Point): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: Point): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+    inline def setB(value: Point): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC(value: Point): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
+    inline def setC(value: Point): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
   }
 }

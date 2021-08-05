@@ -14,28 +14,21 @@ trait datapoints extends StObject {
 }
 object datapoints {
   
-  @scala.inline
-  def apply(format: js.Array[datapointFormat], points: js.Array[Double], pointsize: Double): datapoints = {
+  inline def apply(format: js.Array[datapointFormat], points: js.Array[Double], pointsize: Double): datapoints = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], pointsize = pointsize.asInstanceOf[js.Any])
     __obj.asInstanceOf[datapoints]
   }
   
-  @scala.inline
-  implicit class datapointsMutableBuilder[Self <: datapoints] (val x: Self) extends AnyVal {
+  extension [Self <: datapoints](x: Self) {
     
-    @scala.inline
-    def setFormat(value: js.Array[datapointFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: js.Array[datapointFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatVarargs(value: datapointFormat*): Self = StObject.set(x, "format", js.Array(value :_*))
+    inline def setFormatVarargs(value: datapointFormat*): Self = StObject.set(x, "format", js.Array(value :_*))
     
-    @scala.inline
-    def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setPointsize(value: Double): Self = StObject.set(x, "pointsize", value.asInstanceOf[js.Any])
+    inline def setPointsize(value: Double): Self = StObject.set(x, "pointsize", value.asInstanceOf[js.Any])
   }
 }

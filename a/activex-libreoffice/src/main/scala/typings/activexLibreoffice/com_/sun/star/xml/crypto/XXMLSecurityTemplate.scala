@@ -40,8 +40,7 @@ trait XXMLSecurityTemplate
 }
 object XXMLSecurityTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Status: SecurityOperationStatus,
     Template: XXMLElementWrapper,
     acquire: () => Unit,
@@ -57,28 +56,20 @@ object XXMLSecurityTemplate {
     __obj.asInstanceOf[XXMLSecurityTemplate]
   }
   
-  @scala.inline
-  implicit class XXMLSecurityTemplateMutableBuilder[Self <: XXMLSecurityTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: XXMLSecurityTemplate](x: Self) {
     
-    @scala.inline
-    def setGetStatus(value: () => SecurityOperationStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
+    inline def setGetStatus(value: () => SecurityOperationStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTemplate(value: () => XXMLElementWrapper): Self = StObject.set(x, "getTemplate", js.Any.fromFunction0(value))
+    inline def setGetTemplate(value: () => XXMLElementWrapper): Self = StObject.set(x, "getTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetStatus(value: SecurityOperationStatus => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
+    inline def setSetStatus(value: SecurityOperationStatus => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTarget(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
+    inline def setSetTarget(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTemplate(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
+    inline def setSetTemplate(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStatus(value: SecurityOperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SecurityOperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: XXMLElementWrapper): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: XXMLElementWrapper): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
   }
 }

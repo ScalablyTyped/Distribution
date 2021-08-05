@@ -14,25 +14,19 @@ trait SdfConfig extends StObject {
 }
 object SdfConfig {
   
-  @scala.inline
-  def apply(): SdfConfig = {
+  inline def apply(): SdfConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SdfConfig]
   }
   
-  @scala.inline
-  implicit class SdfConfigMutableBuilder[Self <: SdfConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SdfConfig](x: Self) {
     
-    @scala.inline
-    def setAdminEmail(value: String): Self = StObject.set(x, "adminEmail", value.asInstanceOf[js.Any])
+    inline def setAdminEmail(value: String): Self = StObject.set(x, "adminEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminEmailUndefined: Self = StObject.set(x, "adminEmail", js.undefined)
+    inline def setAdminEmailUndefined: Self = StObject.set(x, "adminEmail", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

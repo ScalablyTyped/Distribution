@@ -10,16 +10,13 @@ trait ImageState extends StObject {
 }
 object ImageState {
   
-  @scala.inline
-  def apply(load: String): ImageState = {
+  inline def apply(load: String): ImageState = {
     val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageState]
   }
   
-  @scala.inline
-  implicit class ImageStateMutableBuilder[Self <: ImageState] (val x: Self) extends AnyVal {
+  extension [Self <: ImageState](x: Self) {
     
-    @scala.inline
-    def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
   }
 }

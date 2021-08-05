@@ -23,25 +23,19 @@ trait ManufacturerId extends StObject {
 }
 object ManufacturerId {
   
-  @scala.inline
-  def apply(manufacturerId: String, productId: String): ManufacturerId = {
+  inline def apply(manufacturerId: String, productId: String): ManufacturerId = {
     val __obj = js.Dynamic.literal(manufacturerId = manufacturerId.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManufacturerId]
   }
   
-  @scala.inline
-  implicit class ManufacturerIdMutableBuilder[Self <: ManufacturerId] (val x: Self) extends AnyVal {
+  extension [Self <: ManufacturerId](x: Self) {
     
-    @scala.inline
-    def setManufacturerId(value: String): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
+    inline def setManufacturerId(value: String): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearOfManufacture(value: String): Self = StObject.set(x, "yearOfManufacture", value.asInstanceOf[js.Any])
+    inline def setYearOfManufacture(value: String): Self = StObject.set(x, "yearOfManufacture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearOfManufactureUndefined: Self = StObject.set(x, "yearOfManufacture", js.undefined)
+    inline def setYearOfManufactureUndefined: Self = StObject.set(x, "yearOfManufacture", js.undefined)
   }
 }

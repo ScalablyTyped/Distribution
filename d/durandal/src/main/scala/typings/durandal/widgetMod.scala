@@ -18,38 +18,27 @@ object widgetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertKindToModulePath(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKindToModulePath")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertKindToModulePath(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKindToModulePath")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def convertKindToViewPath(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKindToViewPath")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertKindToViewPath(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKindToViewPath")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def create(element: HTMLElement, settings: WidgetSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def create(
+  inline def create(element: HTMLElement, settings: WidgetSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(
     element: HTMLElement,
     settings: WidgetSettings,
     bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], bindingContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def mapKind(kind: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def mapKind(kind: String, viewId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any], viewId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mapKind(kind: String, viewId: String, moduleId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any], viewId.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mapKind(kind: String, viewId: Unit, moduleId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any], viewId.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mapKind(kind: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mapKind(kind: String, viewId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any], viewId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mapKind(kind: String, viewId: String, moduleId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any], viewId.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mapKind(kind: String, viewId: Unit, moduleId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any], viewId.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def mapKindToModuleId(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mapKindToModuleId")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def mapKindToModuleId(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mapKindToModuleId")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def mapKindToViewId(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mapKindToViewId")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def mapKindToViewId(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mapKindToViewId")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def registerKind(kind: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerKind(kind: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait WidgetSettings extends StObject {
     
@@ -61,29 +50,22 @@ object widgetMod {
   }
   object WidgetSettings {
     
-    @scala.inline
-    def apply(kind: String): WidgetSettings = {
+    inline def apply(kind: String): WidgetSettings = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
       __obj.asInstanceOf[WidgetSettings]
     }
     
-    @scala.inline
-    implicit class WidgetSettingsMutableBuilder[Self <: WidgetSettings] (val x: Self) extends AnyVal {
+    extension [Self <: WidgetSettings](x: Self) {
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait DescribeHandshakeRequest extends StObject {
 }
 object DescribeHandshakeRequest {
   
-  @scala.inline
-  def apply(HandshakeId: HandshakeId): DescribeHandshakeRequest = {
+  inline def apply(HandshakeId: HandshakeId): DescribeHandshakeRequest = {
     val __obj = js.Dynamic.literal(HandshakeId = HandshakeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHandshakeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeHandshakeRequestMutableBuilder[Self <: DescribeHandshakeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHandshakeRequest](x: Self) {
     
-    @scala.inline
-    def setHandshakeId(value: HandshakeId): Self = StObject.set(x, "HandshakeId", value.asInstanceOf[js.Any])
+    inline def setHandshakeId(value: HandshakeId): Self = StObject.set(x, "HandshakeId", value.asInstanceOf[js.Any])
   }
 }

@@ -26,23 +26,17 @@ object pseudoStatesMod {
   @js.native
   val booleanStateDelimiter: /* "--" */ String = js.native
   
-  @scala.inline
-  def createAttributeState(stateName: String, namespace: String, param: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAttributeState")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createAttributeState(stateName: String, namespace: String, param: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAttributeState")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createBooleanStateClassName(stateName: String, namespace: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createBooleanStateClassName")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createBooleanStateClassName(stateName: String, namespace: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createBooleanStateClassName")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createStateWithParamClassName(stateName: String, namespace: String, param: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createStateWithParamClassName")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createStateWithParamClassName(stateName: String, namespace: String, param: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createStateWithParamClassName")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def processPseudoStates(value: String, decl: Declaration, diagnostics: Diagnostics): MappedStates = (^.asInstanceOf[js.Dynamic].applyDynamic("processPseudoStates")(value.asInstanceOf[js.Any], decl.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[MappedStates]
+  inline def processPseudoStates(value: String, decl: Declaration, diagnostics: Diagnostics): MappedStates = (^.asInstanceOf[js.Dynamic].applyDynamic("processPseudoStates")(value.asInstanceOf[js.Any], decl.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[MappedStates]
   
-  @scala.inline
-  def resolveStateParam(param: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveStateParam")(param.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolveStateParam(param: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveStateParam")(param.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def setStateToNode(
+  inline def setStateToNode(
     states: MappedStates,
     meta: StylableMeta,
     name: String,
@@ -51,8 +45,7 @@ object pseudoStatesMod {
     resolver: StylableResolver,
     diagnostics: Diagnostics
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStateToNode")(states.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setStateToNode(
+  inline def setStateToNode(
     states: MappedStates,
     meta: StylableMeta,
     name: String,
@@ -69,23 +62,17 @@ object pseudoStatesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def NO_STATE_TYPE_GIVEN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_STATE_TYPE_GIVEN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def NO_STATE_TYPE_GIVEN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_STATE_TYPE_GIVEN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def STATE_STARTS_WITH_HYPHEN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STATE_STARTS_WITH_HYPHEN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def STATE_STARTS_WITH_HYPHEN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STATE_STARTS_WITH_HYPHEN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def TOO_MANY_ARGS_IN_VALIDATOR(name: String, validator: String, args: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("TOO_MANY_ARGS_IN_VALIDATOR")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def TOO_MANY_ARGS_IN_VALIDATOR(name: String, validator: String, args: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("TOO_MANY_ARGS_IN_VALIDATOR")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def TOO_MANY_STATE_TYPES(name: String, types: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("TOO_MANY_STATE_TYPES")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def TOO_MANY_STATE_TYPES(name: String, types: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("TOO_MANY_STATE_TYPES")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def UNKNOWN_STATE_TYPE(name: String, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_STATE_TYPE")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def UNKNOWN_STATE_TYPE(name: String, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_STATE_TYPE")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def UNKNOWN_STATE_USAGE(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_STATE_USAGE")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def UNKNOWN_STATE_USAGE(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_STATE_USAGE")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("@stylable/core/cjs/pseudo-states", "stateMiddleDelimiter")
@@ -96,8 +83,7 @@ object pseudoStatesMod {
   @js.native
   val stateWithParamDelimiter: String = js.native
   
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -107,8 +93,7 @@ object pseudoStatesMod {
     resolver: StylableResolver,
     diagnostics: Diagnostics
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -119,8 +104,7 @@ object pseudoStatesMod {
     diagnostics: Diagnostics,
     rule: Rule_
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -130,8 +114,7 @@ object pseudoStatesMod {
     resolver: StylableResolver,
     diagnostics: Diagnostics
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -142,8 +125,7 @@ object pseudoStatesMod {
     diagnostics: Diagnostics,
     rule: Rule_
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -153,8 +135,7 @@ object pseudoStatesMod {
     resolver: StylableResolver,
     diagnostics: Diagnostics
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -165,8 +146,7 @@ object pseudoStatesMod {
     diagnostics: Diagnostics,
     rule: Rule_
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -176,8 +156,7 @@ object pseudoStatesMod {
     resolver: StylableResolver,
     diagnostics: Diagnostics
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
-  @scala.inline
-  def transformPseudoStateSelector(
+  inline def transformPseudoStateSelector(
     meta: StylableMeta,
     node: SelectorAstNode,
     name: String,
@@ -189,16 +168,14 @@ object pseudoStatesMod {
     rule: Rule_
   ): StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[StylableMeta]
   
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
     resolver: StylableResolver,
     diagnostics: Diagnostics
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[StateResult]
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
@@ -207,8 +184,7 @@ object pseudoStatesMod {
     rule: Unit,
     validateDefinition: Boolean
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any])).asInstanceOf[StateResult]
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
@@ -218,8 +194,7 @@ object pseudoStatesMod {
     validateDefinition: Boolean,
     validateValue: Boolean
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
@@ -229,8 +204,7 @@ object pseudoStatesMod {
     validateDefinition: Unit,
     validateValue: Boolean
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
@@ -238,8 +212,7 @@ object pseudoStatesMod {
     diagnostics: Diagnostics,
     rule: Rule_
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[StateResult]
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
@@ -248,8 +221,7 @@ object pseudoStatesMod {
     rule: Rule_,
     validateDefinition: Boolean
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any])).asInstanceOf[StateResult]
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
@@ -259,8 +231,7 @@ object pseudoStatesMod {
     validateDefinition: Boolean,
     validateValue: Boolean
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
-  @scala.inline
-  def validateStateArgument(
+  inline def validateStateArgument(
     stateAst: StateParsedValue,
     meta: StylableMeta,
     value: String,
@@ -271,6 +242,5 @@ object pseudoStatesMod {
     validateValue: Boolean
   ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
   
-  @scala.inline
-  def validateStateDefinition(decl: Declaration, meta: StylableMeta, resolver: StylableResolver, diagnostics: Diagnostics): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateDefinition")(decl.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateStateDefinition(decl: Declaration, meta: StylableMeta, resolver: StylableResolver, diagnostics: Diagnostics): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateDefinition")(decl.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

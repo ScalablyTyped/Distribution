@@ -22,8 +22,7 @@ object androidMod {
   }
   object AndroidDependencyConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       folder: String,
       manifestPath: String,
       packageImportPath: String,
@@ -35,26 +34,19 @@ object androidMod {
       __obj.asInstanceOf[AndroidDependencyConfig]
     }
     
-    @scala.inline
-    implicit class AndroidDependencyConfigMutableBuilder[Self <: AndroidDependencyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AndroidDependencyConfig](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
+      inline def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageImportPath(value: String): Self = StObject.set(x, "packageImportPath", value.asInstanceOf[js.Any])
+      inline def setPackageImportPath(value: String): Self = StObject.set(x, "packageImportPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageInstance(value: String): Self = StObject.set(x, "packageInstance", value.asInstanceOf[js.Any])
+      inline def setPackageInstance(value: String): Self = StObject.set(x, "packageInstance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,50 +67,36 @@ object androidMod {
   }
   object AndroidDependencyParams {
     
-    @scala.inline
-    def apply(): AndroidDependencyParams = {
+    inline def apply(): AndroidDependencyParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AndroidDependencyParams]
     }
     
-    @scala.inline
-    implicit class AndroidDependencyParamsMutableBuilder[Self <: AndroidDependencyParams] (val x: Self) extends AnyVal {
+    extension [Self <: AndroidDependencyParams](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
+      inline def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestPathUndefined: Self = StObject.set(x, "manifestPath", js.undefined)
+      inline def setManifestPathUndefined: Self = StObject.set(x, "manifestPath", js.undefined)
       
-      @scala.inline
-      def setPackageImportPath(value: String): Self = StObject.set(x, "packageImportPath", value.asInstanceOf[js.Any])
+      inline def setPackageImportPath(value: String): Self = StObject.set(x, "packageImportPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageImportPathUndefined: Self = StObject.set(x, "packageImportPath", js.undefined)
+      inline def setPackageImportPathUndefined: Self = StObject.set(x, "packageImportPath", js.undefined)
       
-      @scala.inline
-      def setPackageInstance(value: String): Self = StObject.set(x, "packageInstance", value.asInstanceOf[js.Any])
+      inline def setPackageInstance(value: String): Self = StObject.set(x, "packageInstance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageInstanceUndefined: Self = StObject.set(x, "packageInstance", js.undefined)
+      inline def setPackageInstanceUndefined: Self = StObject.set(x, "packageInstance", js.undefined)
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+      inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
+      inline def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
     }
   }
   
@@ -150,8 +128,7 @@ object androidMod {
   }
   object AndroidProjectConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appName: String,
       assetsPath: String,
       buildGradlePath: String,
@@ -169,44 +146,31 @@ object androidMod {
       __obj.asInstanceOf[AndroidProjectConfig]
     }
     
-    @scala.inline
-    implicit class AndroidProjectConfigMutableBuilder[Self <: AndroidProjectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AndroidProjectConfig](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
+      inline def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildGradlePath(value: String): Self = StObject.set(x, "buildGradlePath", value.asInstanceOf[js.Any])
+      inline def setBuildGradlePath(value: String): Self = StObject.set(x, "buildGradlePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFlat(value: Boolean): Self = StObject.set(x, "isFlat", value.asInstanceOf[js.Any])
+      inline def setIsFlat(value: Boolean): Self = StObject.set(x, "isFlat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFilePath(value: String): Self = StObject.set(x, "mainFilePath", value.asInstanceOf[js.Any])
+      inline def setMainFilePath(value: String): Self = StObject.set(x, "mainFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
+      inline def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageFolder(value: String): Self = StObject.set(x, "packageFolder", value.asInstanceOf[js.Any])
+      inline def setPackageFolder(value: String): Self = StObject.set(x, "packageFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsGradlePath(value: String): Self = StObject.set(x, "settingsGradlePath", value.asInstanceOf[js.Any])
+      inline def setSettingsGradlePath(value: String): Self = StObject.set(x, "settingsGradlePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringsPath(value: String): Self = StObject.set(x, "stringsPath", value.asInstanceOf[js.Any])
+      inline def setStringsPath(value: String): Self = StObject.set(x, "stringsPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,86 +203,60 @@ object androidMod {
   }
   object AndroidProjectParams {
     
-    @scala.inline
-    def apply(): AndroidProjectParams = {
+    inline def apply(): AndroidProjectParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AndroidProjectParams]
     }
     
-    @scala.inline
-    implicit class AndroidProjectParamsMutableBuilder[Self <: AndroidProjectParams] (val x: Self) extends AnyVal {
+    extension [Self <: AndroidProjectParams](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+      inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
       
-      @scala.inline
-      def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
+      inline def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
+      inline def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
       
-      @scala.inline
-      def setBuildGradlePath(value: String): Self = StObject.set(x, "buildGradlePath", value.asInstanceOf[js.Any])
+      inline def setBuildGradlePath(value: String): Self = StObject.set(x, "buildGradlePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildGradlePathUndefined: Self = StObject.set(x, "buildGradlePath", js.undefined)
+      inline def setBuildGradlePathUndefined: Self = StObject.set(x, "buildGradlePath", js.undefined)
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setIsFlat(value: Boolean): Self = StObject.set(x, "isFlat", value.asInstanceOf[js.Any])
+      inline def setIsFlat(value: Boolean): Self = StObject.set(x, "isFlat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFlatUndefined: Self = StObject.set(x, "isFlat", js.undefined)
+      inline def setIsFlatUndefined: Self = StObject.set(x, "isFlat", js.undefined)
       
-      @scala.inline
-      def setMainFilePath(value: String): Self = StObject.set(x, "mainFilePath", value.asInstanceOf[js.Any])
+      inline def setMainFilePath(value: String): Self = StObject.set(x, "mainFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFilePathUndefined: Self = StObject.set(x, "mainFilePath", js.undefined)
+      inline def setMainFilePathUndefined: Self = StObject.set(x, "mainFilePath", js.undefined)
       
-      @scala.inline
-      def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
+      inline def setManifestPath(value: String): Self = StObject.set(x, "manifestPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestPathUndefined: Self = StObject.set(x, "manifestPath", js.undefined)
+      inline def setManifestPathUndefined: Self = StObject.set(x, "manifestPath", js.undefined)
       
-      @scala.inline
-      def setPackageFolder(value: String): Self = StObject.set(x, "packageFolder", value.asInstanceOf[js.Any])
+      inline def setPackageFolder(value: String): Self = StObject.set(x, "packageFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageFolderUndefined: Self = StObject.set(x, "packageFolder", js.undefined)
+      inline def setPackageFolderUndefined: Self = StObject.set(x, "packageFolder", js.undefined)
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+      inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
       
-      @scala.inline
-      def setSettingsGradlePath(value: String): Self = StObject.set(x, "settingsGradlePath", value.asInstanceOf[js.Any])
+      inline def setSettingsGradlePath(value: String): Self = StObject.set(x, "settingsGradlePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsGradlePathUndefined: Self = StObject.set(x, "settingsGradlePath", js.undefined)
+      inline def setSettingsGradlePathUndefined: Self = StObject.set(x, "settingsGradlePath", js.undefined)
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
+      inline def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
       
-      @scala.inline
-      def setStringsPath(value: String): Self = StObject.set(x, "stringsPath", value.asInstanceOf[js.Any])
+      inline def setStringsPath(value: String): Self = StObject.set(x, "stringsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringsPathUndefined: Self = StObject.set(x, "stringsPath", js.undefined)
+      inline def setStringsPathUndefined: Self = StObject.set(x, "stringsPath", js.undefined)
     }
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Name")
 @js.native
-class Name protected ()
+/* private */ class Name ()
   extends StObject
      with typings.activexExcel.Excel.Name {
   
@@ -31,7 +31,7 @@ class Name protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Name_typekey")
   var ExcelDotName_typekey: typings.activexExcel.Excel.Name = js.native
   

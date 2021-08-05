@@ -38,49 +38,35 @@ trait PlayReadyDrm extends StObject {
 }
 object PlayReadyDrm {
   
-  @scala.inline
-  def apply(): PlayReadyDrm = {
+  inline def apply(): PlayReadyDrm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayReadyDrm]
   }
   
-  @scala.inline
-  implicit class PlayReadyDrmMutableBuilder[Self <: PlayReadyDrm] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyDrm](x: Self) {
     
-    @scala.inline
-    def setFormat(value: PlayReadyDrmFormatString): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PlayReadyDrmFormatString): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
+    inline def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
+    inline def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
-    @scala.inline
-    def setKey(value: NonEmptyBase64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: NonEmptyBase64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyId(value: KeyIdGuid): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdGuid): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setKeyMd5(value: NonEmptyBase64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
+    inline def setKeyMd5(value: NonEmptyBase64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
+    inline def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setLicenseAcquisitionUrl(value: OneTo512String): Self = StObject.set(x, "LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
+    inline def setLicenseAcquisitionUrl(value: OneTo512String): Self = StObject.set(x, "LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseAcquisitionUrlUndefined: Self = StObject.set(x, "LicenseAcquisitionUrl", js.undefined)
+    inline def setLicenseAcquisitionUrlUndefined: Self = StObject.set(x, "LicenseAcquisitionUrl", js.undefined)
   }
 }

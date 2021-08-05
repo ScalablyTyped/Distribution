@@ -16,37 +16,27 @@ trait FoursquareId extends StObject {
 }
 object FoursquareId {
   
-  @scala.inline
-  def apply(): FoursquareId = {
+  inline def apply(): FoursquareId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FoursquareId]
   }
   
-  @scala.inline
-  implicit class FoursquareIdMutableBuilder[Self <: FoursquareId] (val x: Self) extends AnyVal {
+  extension [Self <: FoursquareId](x: Self) {
     
-    @scala.inline
-    def setFoursquareId(value: String): Self = StObject.set(x, "foursquareId", value.asInstanceOf[js.Any])
+    inline def setFoursquareId(value: String): Self = StObject.set(x, "foursquareId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoursquareIdUndefined: Self = StObject.set(x, "foursquareId", js.undefined)
+    inline def setFoursquareIdUndefined: Self = StObject.set(x, "foursquareId", js.undefined)
     
-    @scala.inline
-    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
+    inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
-    @scala.inline
-    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
+    inline def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
+    inline def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
   }
 }

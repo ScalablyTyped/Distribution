@@ -21,19 +21,15 @@ trait ChartDataRow extends StObject {
 }
 object ChartDataRow {
   
-  @scala.inline
-  def apply(Name: String, Points: SafeArray[SafeArray[ChartDataValue]]): ChartDataRow = {
+  inline def apply(Name: String, Points: SafeArray[SafeArray[ChartDataValue]]): ChartDataRow = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Points = Points.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartDataRow]
   }
   
-  @scala.inline
-  implicit class ChartDataRowMutableBuilder[Self <: ChartDataRow] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDataRow](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: SafeArray[SafeArray[ChartDataValue]]): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: SafeArray[SafeArray[ChartDataValue]]): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
   }
 }

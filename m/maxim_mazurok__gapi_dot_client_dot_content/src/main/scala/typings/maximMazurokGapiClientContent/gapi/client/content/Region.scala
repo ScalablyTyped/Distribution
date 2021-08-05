@@ -29,55 +29,39 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(): Region = {
+  inline def apply(): Region = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setGeotargetArea(value: RegionGeoTargetArea): Self = StObject.set(x, "geotargetArea", value.asInstanceOf[js.Any])
+    inline def setGeotargetArea(value: RegionGeoTargetArea): Self = StObject.set(x, "geotargetArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeotargetAreaUndefined: Self = StObject.set(x, "geotargetArea", js.undefined)
+    inline def setGeotargetAreaUndefined: Self = StObject.set(x, "geotargetArea", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setPostalCodeArea(value: RegionPostalCodeArea): Self = StObject.set(x, "postalCodeArea", value.asInstanceOf[js.Any])
+    inline def setPostalCodeArea(value: RegionPostalCodeArea): Self = StObject.set(x, "postalCodeArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeAreaUndefined: Self = StObject.set(x, "postalCodeArea", js.undefined)
+    inline def setPostalCodeAreaUndefined: Self = StObject.set(x, "postalCodeArea", js.undefined)
     
-    @scala.inline
-    def setRegionId(value: String): Self = StObject.set(x, "regionId", value.asInstanceOf[js.Any])
+    inline def setRegionId(value: String): Self = StObject.set(x, "regionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionIdUndefined: Self = StObject.set(x, "regionId", js.undefined)
+    inline def setRegionIdUndefined: Self = StObject.set(x, "regionId", js.undefined)
     
-    @scala.inline
-    def setRegionalInventoryEligible(value: Boolean): Self = StObject.set(x, "regionalInventoryEligible", value.asInstanceOf[js.Any])
+    inline def setRegionalInventoryEligible(value: Boolean): Self = StObject.set(x, "regionalInventoryEligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalInventoryEligibleUndefined: Self = StObject.set(x, "regionalInventoryEligible", js.undefined)
+    inline def setRegionalInventoryEligibleUndefined: Self = StObject.set(x, "regionalInventoryEligible", js.undefined)
     
-    @scala.inline
-    def setShippingEligible(value: Boolean): Self = StObject.set(x, "shippingEligible", value.asInstanceOf[js.Any])
+    inline def setShippingEligible(value: Boolean): Self = StObject.set(x, "shippingEligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingEligibleUndefined: Self = StObject.set(x, "shippingEligible", js.undefined)
+    inline def setShippingEligibleUndefined: Self = StObject.set(x, "shippingEligible", js.undefined)
   }
 }

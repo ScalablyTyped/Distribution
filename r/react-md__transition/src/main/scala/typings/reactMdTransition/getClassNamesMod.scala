@@ -12,10 +12,8 @@ object getClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClassNames(classNames: String, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[DefinedCSSTransitionClassNames]
-  @scala.inline
-  def getClassNames(classNames: CSSTransitionClassNames, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[DefinedCSSTransitionClassNames]
+  inline def getClassNames(classNames: String, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[DefinedCSSTransitionClassNames]
+  inline def getClassNames(classNames: CSSTransitionClassNames, timeout: DefinedTimeout): DefinedCSSTransitionClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[DefinedCSSTransitionClassNames]
   
   /* Inlined std.Required<react-transition-group.react-transition-group/CSSTransition.CSSTransitionClassNames> */
   trait DefinedCSSTransitionClassNames extends StObject {
@@ -40,8 +38,7 @@ object getClassNamesMod {
   }
   object DefinedCSSTransitionClassNames {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appear: String,
       appearActive: String,
       appearDone: String,
@@ -56,35 +53,25 @@ object getClassNamesMod {
       __obj.asInstanceOf[DefinedCSSTransitionClassNames]
     }
     
-    @scala.inline
-    implicit class DefinedCSSTransitionClassNamesMutableBuilder[Self <: DefinedCSSTransitionClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: DefinedCSSTransitionClassNames](x: Self) {
       
-      @scala.inline
-      def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearActive(value: String): Self = StObject.set(x, "appearActive", value.asInstanceOf[js.Any])
+      inline def setAppearActive(value: String): Self = StObject.set(x, "appearActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearDone(value: String): Self = StObject.set(x, "appearDone", value.asInstanceOf[js.Any])
+      inline def setAppearDone(value: String): Self = StObject.set(x, "appearDone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterActive(value: String): Self = StObject.set(x, "enterActive", value.asInstanceOf[js.Any])
+      inline def setEnterActive(value: String): Self = StObject.set(x, "enterActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterDone(value: String): Self = StObject.set(x, "enterDone", value.asInstanceOf[js.Any])
+      inline def setEnterDone(value: String): Self = StObject.set(x, "enterDone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit(value: String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitActive(value: String): Self = StObject.set(x, "exitActive", value.asInstanceOf[js.Any])
+      inline def setExitActive(value: String): Self = StObject.set(x, "exitActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitDone(value: String): Self = StObject.set(x, "exitDone", value.asInstanceOf[js.Any])
+      inline def setExitDone(value: String): Self = StObject.set(x, "exitDone", value.asInstanceOf[js.Any])
     }
   }
 }

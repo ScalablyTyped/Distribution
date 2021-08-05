@@ -43,55 +43,39 @@ trait Artwork extends StObject {
 }
 object Artwork {
   
-  @scala.inline
-  def apply(): Artwork = {
+  inline def apply(): Artwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Artwork]
   }
   
-  @scala.inline
-  implicit class ArtworkMutableBuilder[Self <: Artwork] (val x: Self) extends AnyVal {
+  extension [Self <: Artwork](x: Self) {
     
-    @scala.inline
-    def setAlbumArtFormat(value: JpgOrPng): Self = StObject.set(x, "AlbumArtFormat", value.asInstanceOf[js.Any])
+    inline def setAlbumArtFormat(value: JpgOrPng): Self = StObject.set(x, "AlbumArtFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumArtFormatUndefined: Self = StObject.set(x, "AlbumArtFormat", js.undefined)
+    inline def setAlbumArtFormatUndefined: Self = StObject.set(x, "AlbumArtFormat", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setInputKey(value: WatermarkKey): Self = StObject.set(x, "InputKey", value.asInstanceOf[js.Any])
+    inline def setInputKey(value: WatermarkKey): Self = StObject.set(x, "InputKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputKeyUndefined: Self = StObject.set(x, "InputKey", js.undefined)
+    inline def setInputKeyUndefined: Self = StObject.set(x, "InputKey", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
     
-    @scala.inline
-    def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
+    inline def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
+    inline def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
     
-    @scala.inline
-    def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
+    inline def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
+    inline def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
   }
 }

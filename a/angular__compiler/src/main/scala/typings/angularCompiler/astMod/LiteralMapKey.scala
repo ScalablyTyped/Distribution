@@ -12,19 +12,15 @@ trait LiteralMapKey extends StObject {
 }
 object LiteralMapKey {
   
-  @scala.inline
-  def apply(key: String, quoted: Boolean): LiteralMapKey = {
+  inline def apply(key: String, quoted: Boolean): LiteralMapKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiteralMapKey]
   }
   
-  @scala.inline
-  implicit class LiteralMapKeyMutableBuilder[Self <: LiteralMapKey] (val x: Self) extends AnyVal {
+  extension [Self <: LiteralMapKey](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
+    inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
   }
 }

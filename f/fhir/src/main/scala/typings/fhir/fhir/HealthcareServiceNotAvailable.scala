@@ -28,28 +28,21 @@ trait HealthcareServiceNotAvailable
 }
 object HealthcareServiceNotAvailable {
   
-  @scala.inline
-  def apply(description: String): HealthcareServiceNotAvailable = {
+  inline def apply(description: String): HealthcareServiceNotAvailable = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthcareServiceNotAvailable]
   }
   
-  @scala.inline
-  implicit class HealthcareServiceNotAvailableMutableBuilder[Self <: HealthcareServiceNotAvailable] (val x: Self) extends AnyVal {
+  extension [Self <: HealthcareServiceNotAvailable](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuring(value: Period): Self = StObject.set(x, "during", value.asInstanceOf[js.Any])
+    inline def setDuring(value: Period): Self = StObject.set(x, "during", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuringUndefined: Self = StObject.set(x, "during", js.undefined)
+    inline def setDuringUndefined: Self = StObject.set(x, "during", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
   }
 }

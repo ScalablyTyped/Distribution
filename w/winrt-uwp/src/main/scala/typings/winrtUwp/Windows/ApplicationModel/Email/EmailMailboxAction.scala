@@ -15,19 +15,15 @@ trait EmailMailboxAction extends StObject {
 }
 object EmailMailboxAction {
   
-  @scala.inline
-  def apply(changeNumber: Double, kind: EmailMailboxActionKind): EmailMailboxAction = {
+  inline def apply(changeNumber: Double, kind: EmailMailboxActionKind): EmailMailboxAction = {
     val __obj = js.Dynamic.literal(changeNumber = changeNumber.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailMailboxAction]
   }
   
-  @scala.inline
-  implicit class EmailMailboxActionMutableBuilder[Self <: EmailMailboxAction] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxAction](x: Self) {
     
-    @scala.inline
-    def setChangeNumber(value: Double): Self = StObject.set(x, "changeNumber", value.asInstanceOf[js.Any])
+    inline def setChangeNumber(value: Double): Self = StObject.set(x, "changeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: EmailMailboxActionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: EmailMailboxActionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

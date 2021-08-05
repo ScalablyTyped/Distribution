@@ -16,37 +16,27 @@ trait TransitionDefinitionCommonProps extends StObject {
 }
 object TransitionDefinitionCommonProps {
   
-  @scala.inline
-  def apply(): TransitionDefinitionCommonProps = {
+  inline def apply(): TransitionDefinitionCommonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitionDefinitionCommonProps]
   }
   
-  @scala.inline
-  implicit class TransitionDefinitionCommonPropsMutableBuilder[Self <: TransitionDefinitionCommonProps] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionDefinitionCommonProps](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait SchemaInventoryPickup extends StObject {
 }
 object SchemaInventoryPickup {
   
-  @scala.inline
-  def apply(): SchemaInventoryPickup = {
+  inline def apply(): SchemaInventoryPickup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInventoryPickup]
   }
   
-  @scala.inline
-  implicit class SchemaInventoryPickupMutableBuilder[Self <: SchemaInventoryPickup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInventoryPickup](x: Self) {
     
-    @scala.inline
-    def setPickupMethod(value: String): Self = StObject.set(x, "pickupMethod", value.asInstanceOf[js.Any])
+    inline def setPickupMethod(value: String): Self = StObject.set(x, "pickupMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickupMethodUndefined: Self = StObject.set(x, "pickupMethod", js.undefined)
+    inline def setPickupMethodUndefined: Self = StObject.set(x, "pickupMethod", js.undefined)
     
-    @scala.inline
-    def setPickupSla(value: String): Self = StObject.set(x, "pickupSla", value.asInstanceOf[js.Any])
+    inline def setPickupSla(value: String): Self = StObject.set(x, "pickupSla", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickupSlaUndefined: Self = StObject.set(x, "pickupSla", js.undefined)
+    inline def setPickupSlaUndefined: Self = StObject.set(x, "pickupSla", js.undefined)
   }
 }

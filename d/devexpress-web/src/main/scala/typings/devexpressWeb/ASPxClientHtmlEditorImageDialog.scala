@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorImageDialog
 }
 object ASPxClientHtmlEditorImageDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetBorderColorColorEdit: () => ASPxClientColorEdit,
     GetBorderStyleComboBox: () => ASPxClientComboBox,
     GetBorderWidthSpinEdit: () => ASPxClientSpinEdit,
@@ -66,22 +65,16 @@ object ASPxClientHtmlEditorImageDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorImageDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorImageDialogMutableBuilder[Self <: ASPxClientHtmlEditorImageDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorImageDialog](x: Self) {
     
-    @scala.inline
-    def setGetCreateThumbnailCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetCreateThumbnailCheckBox", js.Any.fromFunction0(value))
+    inline def setGetCreateThumbnailCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetCreateThumbnailCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDescriptionTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetDescriptionTextBox", js.Any.fromFunction0(value))
+    inline def setGetDescriptionTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetDescriptionTextBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSizeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetSizeComboBox", js.Any.fromFunction0(value))
+    inline def setGetSizeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetSizeComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetThumbnailNameTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetThumbnailNameTextBox", js.Any.fromFunction0(value))
+    inline def setGetThumbnailNameTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetThumbnailNameTextBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWrapTextCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetWrapTextCheckBox", js.Any.fromFunction0(value))
+    inline def setGetWrapTextCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetWrapTextCheckBox", js.Any.fromFunction0(value))
   }
 }

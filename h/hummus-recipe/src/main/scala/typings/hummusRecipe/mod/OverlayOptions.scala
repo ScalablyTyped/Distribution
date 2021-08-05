@@ -16,37 +16,27 @@ trait OverlayOptions extends StObject {
 }
 object OverlayOptions {
   
-  @scala.inline
-  def apply(): OverlayOptions = {
+  inline def apply(): OverlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverlayOptions]
   }
   
-  @scala.inline
-  implicit class OverlayOptionsMutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayOptions](x: Self) {
     
-    @scala.inline
-    def setFitHeight(value: Boolean): Self = StObject.set(x, "fitHeight", value.asInstanceOf[js.Any])
+    inline def setFitHeight(value: Boolean): Self = StObject.set(x, "fitHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitHeightUndefined: Self = StObject.set(x, "fitHeight", js.undefined)
+    inline def setFitHeightUndefined: Self = StObject.set(x, "fitHeight", js.undefined)
     
-    @scala.inline
-    def setFitWidth(value: Boolean): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
+    inline def setFitWidth(value: Boolean): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
+    inline def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
     
-    @scala.inline
-    def setKeepAspectRatio(value: Boolean): Self = StObject.set(x, "keepAspectRatio", value.asInstanceOf[js.Any])
+    inline def setKeepAspectRatio(value: Boolean): Self = StObject.set(x, "keepAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepAspectRatioUndefined: Self = StObject.set(x, "keepAspectRatio", js.undefined)
+    inline def setKeepAspectRatioUndefined: Self = StObject.set(x, "keepAspectRatio", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

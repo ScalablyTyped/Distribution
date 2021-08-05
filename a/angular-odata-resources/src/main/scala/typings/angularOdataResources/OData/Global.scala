@@ -40,8 +40,7 @@ trait Global extends StObject {
 }
 object Global {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BinaryOperation: Instantiable3[
       /* propertyOrPredicate */ js.Any, 
       /* valueOrOperator */ js.UndefOr[js.Any], 
@@ -64,11 +63,9 @@ object Global {
     __obj.asInstanceOf[Global]
   }
   
-  @scala.inline
-  implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+  extension [Self <: Global](x: Self) {
     
-    @scala.inline
-    def setBinaryOperation(
+    inline def setBinaryOperation(
       value: Instantiable3[
           /* propertyOrPredicate */ js.Any, 
           /* valueOrOperator */ js.UndefOr[js.Any], 
@@ -77,16 +74,13 @@ object Global {
         ]
     ): Self = StObject.set(x, "BinaryOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunc(value: Instantiable2[/* methodName */ String, /* args (repeated) */ js.Any, MethodCall]): Self = StObject.set(x, "Func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: Instantiable2[/* methodName */ String, /* args (repeated) */ js.Any, MethodCall]): Self = StObject.set(x, "Func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBy(
+    inline def setOrderBy(
       value: Instantiable2[/* propertyName */ String, /* sortOrder */ js.UndefOr[String], OrderByStatement]
     ): Self = StObject.set(x, "OrderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicate(
+    inline def setPredicate(
       value: TypeofPredicate & (Instantiable3[
           /* propertyOrValueOrPredicate */ js.Any, 
           /* valueOrOperator */ js.UndefOr[js.Any], 
@@ -95,13 +89,10 @@ object Global {
         ])
     ): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Instantiable1[/* value */ String, Property]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Instantiable1[/* value */ String, Property]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: Provider[js.Any]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Provider[js.Any]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[String], Value]): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[String], Value]): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

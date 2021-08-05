@@ -11,20 +11,17 @@ object mitmStrings {
   sealed trait connect
     extends StObject
        with Event
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
   sealed trait connection
     extends StObject
        with Event
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
+  inline def connection: connection = "connection".asInstanceOf[connection]
   
   @js.native
   sealed trait request
     extends StObject
        with Event
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
+  inline def request: request = "request".asInstanceOf[request]
 }

@@ -5,35 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def default: typings.styledComponents.styledComponentsMod.StyledInterface = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.styledComponents.styledComponentsMod.StyledInterface]
+inline def default: typings.styledComponents.styledComponentsMod.StyledInterface = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.styledComponents.styledComponentsMod.StyledInterface]
 
-@scala.inline
-def ThemeConsumer: typings.react.mod.Consumer[
+inline def ThemeConsumer: typings.react.mod.Consumer[
 typings.styledComponents.styledComponentsMod.AnyIfEmpty[typings.styledComponents.styledComponentsMod.DefaultTheme]] = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ThemeConsumer").asInstanceOf[typings.react.mod.Consumer[
 typings.styledComponents.styledComponentsMod.AnyIfEmpty[typings.styledComponents.styledComponentsMod.DefaultTheme]]]
 
-@scala.inline
-def ThemeContext: typings.react.mod.Context[
+inline def ThemeContext: typings.react.mod.Context[
 typings.styledComponents.styledComponentsMod.AnyIfEmpty[typings.styledComponents.styledComponentsMod.DefaultTheme]] = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("ThemeContext").asInstanceOf[typings.react.mod.Context[
 typings.styledComponents.styledComponentsMod.AnyIfEmpty[typings.styledComponents.styledComponentsMod.DefaultTheme]]]
 
-@scala.inline
-def createGlobalStyle[P /* <: js.Object */](
+inline def createGlobalStyle[P /* <: js.Object */](
   first: typings.std.TemplateStringsArray,
   interpolations: (typings.styledComponents.styledComponentsMod.Interpolation[
   typings.styledComponents.styledComponentsMod.ThemedStyledProps[P, typings.styledComponents.styledComponentsMod.DefaultTheme]
 ])*
 ): typings.styledComponents.styledComponentsMod.GlobalStyleComponent[P, typings.styledComponents.styledComponentsMod.DefaultTheme] = (typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[typings.styledComponents.styledComponentsMod.GlobalStyleComponent[P, typings.styledComponents.styledComponentsMod.DefaultTheme]]
-@scala.inline
-def createGlobalStyle[P /* <: js.Object */](
+inline def createGlobalStyle[P /* <: js.Object */](
   first: typings.styledComponents.styledComponentsMod.CSSObject,
   interpolations: (typings.styledComponents.styledComponentsMod.Interpolation[
   typings.styledComponents.styledComponentsMod.ThemedStyledProps[P, typings.styledComponents.styledComponentsMod.DefaultTheme]
 ])*
 ): typings.styledComponents.styledComponentsMod.GlobalStyleComponent[P, typings.styledComponents.styledComponentsMod.DefaultTheme] = (typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[typings.styledComponents.styledComponentsMod.GlobalStyleComponent[P, typings.styledComponents.styledComponentsMod.DefaultTheme]]
-@scala.inline
-def createGlobalStyle[P /* <: js.Object */](
+inline def createGlobalStyle[P /* <: js.Object */](
   first: typings.styledComponents.styledComponentsMod.InterpolationFunction[
   typings.styledComponents.styledComponentsMod.ThemedStyledProps[P, typings.styledComponents.styledComponentsMod.DefaultTheme]
 ],
@@ -42,28 +36,22 @@ def createGlobalStyle[P /* <: js.Object */](
 ])*
 ): typings.styledComponents.styledComponentsMod.GlobalStyleComponent[P, typings.styledComponents.styledComponentsMod.DefaultTheme] = (typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[typings.styledComponents.styledComponentsMod.GlobalStyleComponent[P, typings.styledComponents.styledComponentsMod.DefaultTheme]]
 
-@scala.inline
-def css: typings.styledComponents.styledComponentsMod.ThemedCssFunction[typings.styledComponents.styledComponentsMod.DefaultTheme] = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("css").asInstanceOf[typings.styledComponents.styledComponentsMod.ThemedCssFunction[typings.styledComponents.styledComponentsMod.DefaultTheme]]
+inline def css: typings.styledComponents.styledComponentsMod.ThemedCssFunction[typings.styledComponents.styledComponentsMod.DefaultTheme] = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("css").asInstanceOf[typings.styledComponents.styledComponentsMod.ThemedCssFunction[typings.styledComponents.styledComponentsMod.DefaultTheme]]
 
-@scala.inline
-def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ scala.Boolean = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ scala.Boolean]
+inline def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ scala.Boolean = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ scala.Boolean]
 
-@scala.inline
-def keyframes(
+inline def keyframes(
   strings: typings.std.TemplateStringsArray,
   interpolations: typings.styledComponents.styledComponentsMod.SimpleInterpolation*
 ): typings.styledComponents.styledComponentsMod.Keyframes_ = (typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[typings.styledComponents.styledComponentsMod.Keyframes_]
-@scala.inline
-def keyframes(
+inline def keyframes(
   strings: typings.styledComponents.styledComponentsMod.CSSKeyframes,
   interpolations: typings.styledComponents.styledComponentsMod.SimpleInterpolation*
 ): typings.styledComponents.styledComponentsMod.Keyframes_ = (typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[typings.styledComponents.styledComponentsMod.Keyframes_]
 
-@scala.inline
-def useTheme(): typings.styledComponents.styledComponentsMod.DefaultTheme = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[typings.styledComponents.styledComponentsMod.DefaultTheme]
+inline def useTheme(): typings.styledComponents.styledComponentsMod.DefaultTheme = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[typings.styledComponents.styledComponentsMod.DefaultTheme]
 
-@scala.inline
-def withTheme: typings.styledComponents.styledComponentsMod.WithThemeFnInterface[typings.styledComponents.styledComponentsMod.DefaultTheme] = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("withTheme").asInstanceOf[typings.styledComponents.styledComponentsMod.WithThemeFnInterface[typings.styledComponents.styledComponentsMod.DefaultTheme]]
+inline def withTheme: typings.styledComponents.styledComponentsMod.WithThemeFnInterface[typings.styledComponents.styledComponentsMod.DefaultTheme] = typings.styledComponents.styledComponentsMod.^.asInstanceOf[js.Dynamic].selectDynamic("withTheme").asInstanceOf[typings.styledComponents.styledComponentsMod.WithThemeFnInterface[typings.styledComponents.styledComponentsMod.DefaultTheme]]
 
 type AnyIfEmpty[T /* <: js.Object */] = T
 

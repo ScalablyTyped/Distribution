@@ -58,8 +58,7 @@ trait ChipsOptions extends StObject {
 }
 object ChipsOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autocompleteOptions: PartialAutocompleteOption,
     data: js.Array[ChipData],
     limit: Double,
@@ -73,34 +72,24 @@ object ChipsOptions {
     __obj.asInstanceOf[ChipsOptions]
   }
   
-  @scala.inline
-  implicit class ChipsOptionsMutableBuilder[Self <: ChipsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChipsOptions](x: Self) {
     
-    @scala.inline
-    def setAutocompleteOptions(value: PartialAutocompleteOption): Self = StObject.set(x, "autocompleteOptions", value.asInstanceOf[js.Any])
+    inline def setAutocompleteOptions(value: PartialAutocompleteOption): Self = StObject.set(x, "autocompleteOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[ChipData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[ChipData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: ChipData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ChipData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChipAdd(value: (Element, Element) => Unit): Self = StObject.set(x, "onChipAdd", js.Any.fromFunction2(value))
+    inline def setOnChipAdd(value: (Element, Element) => Unit): Self = StObject.set(x, "onChipAdd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnChipDelete(value: (Element, Element) => Unit): Self = StObject.set(x, "onChipDelete", js.Any.fromFunction2(value))
+    inline def setOnChipDelete(value: (Element, Element) => Unit): Self = StObject.set(x, "onChipDelete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnChipSelect(value: (Element, Element) => Unit): Self = StObject.set(x, "onChipSelect", js.Any.fromFunction2(value))
+    inline def setOnChipSelect(value: (Element, Element) => Unit): Self = StObject.set(x, "onChipSelect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryPlaceholder(value: String): Self = StObject.set(x, "secondaryPlaceholder", value.asInstanceOf[js.Any])
+    inline def setSecondaryPlaceholder(value: String): Self = StObject.set(x, "secondaryPlaceholder", value.asInstanceOf[js.Any])
   }
 }

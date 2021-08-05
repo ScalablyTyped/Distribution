@@ -34,26 +34,20 @@ object columnMetadataArgsMod {
   }
   object ColumnMetadataArgs {
     
-    @scala.inline
-    def apply(mode: ColumnMode, options: ColumnOptions, propertyName: String, target: js.Function | String): ColumnMetadataArgs = {
+    inline def apply(mode: ColumnMode, options: ColumnOptions, propertyName: String, target: js.Function | String): ColumnMetadataArgs = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnMetadataArgs]
     }
     
-    @scala.inline
-    implicit class ColumnMetadataArgsMutableBuilder[Self <: ColumnMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setMode(value: ColumnMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: ColumnMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ColumnOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ColumnOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+      inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

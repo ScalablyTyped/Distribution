@@ -16,8 +16,7 @@ trait IActionSendNotification extends StObject {
 }
 object IActionSendNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IActionSendNotification,
     Message: String,
     RecipientsEx: IUserOrUserGroupIDExs,
@@ -27,19 +26,14 @@ object IActionSendNotification {
     __obj.asInstanceOf[IActionSendNotification]
   }
   
-  @scala.inline
-  implicit class IActionSendNotificationMutableBuilder[Self <: IActionSendNotification] (val x: Self) extends AnyVal {
+  extension [Self <: IActionSendNotification](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IActionSendNotification): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IActionSendNotification): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsEx(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "RecipientsEx", value.asInstanceOf[js.Any])
+    inline def setRecipientsEx(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "RecipientsEx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply(current: LDFlagValue, previous: LDFlagValue): Current = {
+    inline def apply(current: LDFlagValue, previous: LDFlagValue): Current = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
       __obj.asInstanceOf[Current]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+    extension [Self <: Current](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: LDFlagValue): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: LDFlagValue): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: LDFlagValue): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: LDFlagValue): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     }
   }
 }

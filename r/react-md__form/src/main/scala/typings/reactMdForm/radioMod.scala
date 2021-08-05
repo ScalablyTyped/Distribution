@@ -26,20 +26,16 @@ object radioMod {
   }
   object RadioProps {
     
-    @scala.inline
-    def apply(id: String, value: js.Array[String] | String | Double): RadioProps = {
+    inline def apply(id: String, value: js.Array[String] | String | Double): RadioProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioProps]
     }
     
-    @scala.inline
-    implicit class RadioPropsMutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioProps](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[String] | String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[String] | String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
 }

@@ -14,22 +14,17 @@ trait ReposCheckCollaboratorEndpoint extends StObject {
 }
 object ReposCheckCollaboratorEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, username: String): ReposCheckCollaboratorEndpoint = {
+  inline def apply(owner: String, repo: String, username: String): ReposCheckCollaboratorEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCheckCollaboratorEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCheckCollaboratorEndpointMutableBuilder[Self <: ReposCheckCollaboratorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCheckCollaboratorEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

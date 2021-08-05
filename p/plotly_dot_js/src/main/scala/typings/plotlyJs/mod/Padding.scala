@@ -31,28 +31,21 @@ trait Padding extends StObject {
 }
 object Padding {
   
-  @scala.inline
-  def apply(b: Double, l: Double, r: Double, t: Double): Padding = {
+  inline def apply(b: Double, l: Double, r: Double, t: Double): Padding = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], editType = "arraydraw", l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[Padding]
   }
   
-  @scala.inline
-  implicit class PaddingMutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
+  extension [Self <: Padding](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditType(value: arraydraw): Self = StObject.set(x, "editType", value.asInstanceOf[js.Any])
+    inline def setEditType(value: arraydraw): Self = StObject.set(x, "editType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

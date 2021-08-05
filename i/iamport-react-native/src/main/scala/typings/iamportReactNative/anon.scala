@@ -12,20 +12,16 @@ object anon {
   }
   object Cardquota {
     
-    @scala.inline
-    def apply(): Cardquota = {
+    inline def apply(): Cardquota = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cardquota]
     }
     
-    @scala.inline
-    implicit class CardquotaMutableBuilder[Self <: Cardquota] (val x: Self) extends AnyVal {
+    extension [Self <: Cardquota](x: Self) {
       
-      @scala.inline
-      def setCard_quota(value: Double): Self = StObject.set(x, "card_quota", value.asInstanceOf[js.Any])
+      inline def setCard_quota(value: Double): Self = StObject.set(x, "card_quota", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCard_quotaUndefined: Self = StObject.set(x, "card_quota", js.undefined)
+      inline def setCard_quotaUndefined: Self = StObject.set(x, "card_quota", js.undefined)
     }
   }
 }

@@ -30,25 +30,19 @@ trait SchemaEncryptRequest extends StObject {
 }
 object SchemaEncryptRequest {
   
-  @scala.inline
-  def apply(): SchemaEncryptRequest = {
+  inline def apply(): SchemaEncryptRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEncryptRequest]
   }
   
-  @scala.inline
-  implicit class SchemaEncryptRequestMutableBuilder[Self <: SchemaEncryptRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEncryptRequest](x: Self) {
     
-    @scala.inline
-    def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
+    inline def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
+    inline def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
     
-    @scala.inline
-    def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+    inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
+    inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
   }
 }

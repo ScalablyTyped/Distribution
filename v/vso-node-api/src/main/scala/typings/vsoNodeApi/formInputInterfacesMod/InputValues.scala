@@ -43,8 +43,7 @@ trait InputValues extends StObject {
 }
 object InputValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: String,
     error: InputValuesError,
     inputId: String,
@@ -57,31 +56,22 @@ object InputValues {
     __obj.asInstanceOf[InputValues]
   }
   
-  @scala.inline
-  implicit class InputValuesMutableBuilder[Self <: InputValues] (val x: Self) extends AnyVal {
+  extension [Self <: InputValues](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: InputValuesError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: InputValuesError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLimitedToPossibleValues(value: Boolean): Self = StObject.set(x, "isLimitedToPossibleValues", value.asInstanceOf[js.Any])
+    inline def setIsLimitedToPossibleValues(value: Boolean): Self = StObject.set(x, "isLimitedToPossibleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleValues(value: js.Array[InputValue]): Self = StObject.set(x, "possibleValues", value.asInstanceOf[js.Any])
+    inline def setPossibleValues(value: js.Array[InputValue]): Self = StObject.set(x, "possibleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleValuesVarargs(value: InputValue*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
+    inline def setPossibleValuesVarargs(value: InputValue*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
   }
 }

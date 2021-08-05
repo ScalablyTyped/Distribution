@@ -18,8 +18,7 @@ trait Reset extends StObject {
 }
 object Reset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     reset: MouseEvent[Element, NativeMouseEvent] => Unit,
     zoomIn: MouseEvent[Element, NativeMouseEvent] => Unit,
     zoomOut: MouseEvent[Element, NativeMouseEvent] => Unit
@@ -28,16 +27,12 @@ object Reset {
     __obj.asInstanceOf[Reset]
   }
   
-  @scala.inline
-  implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
+  extension [Self <: Reset](x: Self) {
     
-    @scala.inline
-    def setReset(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+    inline def setReset(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setZoomIn(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "zoomIn", js.Any.fromFunction1(value))
+    inline def setZoomIn(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "zoomIn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setZoomOut(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction1(value))
+    inline def setZoomOut(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction1(value))
   }
 }

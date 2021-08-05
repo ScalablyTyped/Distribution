@@ -23,25 +23,19 @@ trait AgentConfiguration extends StObject {
 }
 object AgentConfiguration {
   
-  @scala.inline
-  def apply(periodInSeconds: Integer, shouldProfile: Boolean): AgentConfiguration = {
+  inline def apply(periodInSeconds: Integer, shouldProfile: Boolean): AgentConfiguration = {
     val __obj = js.Dynamic.literal(periodInSeconds = periodInSeconds.asInstanceOf[js.Any], shouldProfile = shouldProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentConfiguration]
   }
   
-  @scala.inline
-  implicit class AgentConfigurationMutableBuilder[Self <: AgentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AgentConfiguration](x: Self) {
     
-    @scala.inline
-    def setAgentParameters(value: AgentParameters): Self = StObject.set(x, "agentParameters", value.asInstanceOf[js.Any])
+    inline def setAgentParameters(value: AgentParameters): Self = StObject.set(x, "agentParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentParametersUndefined: Self = StObject.set(x, "agentParameters", js.undefined)
+    inline def setAgentParametersUndefined: Self = StObject.set(x, "agentParameters", js.undefined)
     
-    @scala.inline
-    def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "periodInSeconds", value.asInstanceOf[js.Any])
+    inline def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "periodInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldProfile(value: Boolean): Self = StObject.set(x, "shouldProfile", value.asInstanceOf[js.Any])
+    inline def setShouldProfile(value: Boolean): Self = StObject.set(x, "shouldProfile", value.asInstanceOf[js.Any])
   }
 }

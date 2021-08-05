@@ -11,19 +11,16 @@ trait `12`[EventName /* <: Extract[/* keyof {} */ String, String] */] extends St
 }
 object `12` {
   
-  @scala.inline
-  def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](
+  inline def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](
     data: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
   ): `12`[EventName] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`12`[EventName]]
   }
   
-  @scala.inline
-  implicit class `12MutableBuilder`[Self <: `12`[?], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self & `12`[EventName]) extends AnyVal {
+  extension [Self <: `12`[?], EventName /* <: Extract[/* keyof {} */ String, String] */](x: Self & `12`[EventName]) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

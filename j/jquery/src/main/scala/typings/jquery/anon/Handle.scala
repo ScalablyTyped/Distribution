@@ -23,19 +23,16 @@ trait Handle[TTarget, TData]
 }
 object Handle {
   
-  @scala.inline
-  def apply[TTarget, TData](
+  inline def apply[TTarget, TData](
     handle: ((TriggeredEvent[TTarget, TData, js.Any, js.Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
   ): Handle[TTarget, TData] = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
     __obj.asInstanceOf[Handle[TTarget, TData]]
   }
   
-  @scala.inline
-  implicit class HandleMutableBuilder[Self <: Handle[?, ?], TTarget, TData] (val x: Self & (Handle[TTarget, TData])) extends AnyVal {
+  extension [Self <: Handle[?, ?], TTarget, TData](x: Self & (Handle[TTarget, TData])) {
     
-    @scala.inline
-    def setHandle(
+    inline def setHandle(
       value: ((TriggeredEvent[TTarget, TData, js.Any, js.Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
     ): Self = StObject.set(x, "handle", js.Any.fromFunction2(value))
   }

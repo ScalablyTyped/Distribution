@@ -21,25 +21,19 @@ trait OnBLECharacteristicValueChangeCallbackResult extends StObject {
 }
 object OnBLECharacteristicValueChangeCallbackResult {
   
-  @scala.inline
-  def apply(characteristicId: String, deviceId: String, serviceId: String, value: ArrayBuffer): OnBLECharacteristicValueChangeCallbackResult = {
+  inline def apply(characteristicId: String, deviceId: String, serviceId: String, value: ArrayBuffer): OnBLECharacteristicValueChangeCallbackResult = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBLECharacteristicValueChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnBLECharacteristicValueChangeCallbackResultMutableBuilder[Self <: OnBLECharacteristicValueChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnBLECharacteristicValueChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

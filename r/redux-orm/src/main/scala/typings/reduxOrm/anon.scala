@@ -16,17 +16,14 @@ object anon {
   }
   object GetId {
     
-    @scala.inline
-    def apply[M /* <: Model[Instantiable0[AnyModel], js.Any] */](getId: () => IdType[M]): GetId[M] = {
+    inline def apply[M /* <: Model[Instantiable0[AnyModel], js.Any] */](getId: () => IdType[M]): GetId[M] = {
       val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId))
       __obj.asInstanceOf[GetId[M]]
     }
     
-    @scala.inline
-    implicit class GetIdMutableBuilder[Self <: GetId[?], M /* <: Model[Instantiable0[AnyModel], js.Any] */] (val x: Self & GetId[M]) extends AnyVal {
+    extension [Self <: GetId[?], M /* <: Model[Instantiable0[AnyModel], js.Any] */](x: Self & GetId[M]) {
       
-      @scala.inline
-      def setGetId(value: () => IdType[M]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => IdType[M]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     }
   }
   
@@ -60,17 +57,14 @@ object anon {
   }
   object TypeofQuerySet {
     
-    @scala.inline
-    def apply(addSharedMethod: String => Unit): TypeofQuerySet = {
+    inline def apply(addSharedMethod: String => Unit): TypeofQuerySet = {
       val __obj = js.Dynamic.literal(addSharedMethod = js.Any.fromFunction1(addSharedMethod))
       __obj.asInstanceOf[TypeofQuerySet]
     }
     
-    @scala.inline
-    implicit class TypeofQuerySetMutableBuilder[Self <: TypeofQuerySet] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofQuerySet](x: Self) {
       
-      @scala.inline
-      def setAddSharedMethod(value: String => Unit): Self = StObject.set(x, "addSharedMethod", js.Any.fromFunction1(value))
+      inline def setAddSharedMethod(value: String => Unit): Self = StObject.set(x, "addSharedMethod", js.Any.fromFunction1(value))
     }
   }
 }

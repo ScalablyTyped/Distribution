@@ -24,8 +24,7 @@ trait item extends StObject {
 }
 object item {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataIndex: Double,
     datapoint: js.Array[Double],
     pageX: Double,
@@ -37,28 +36,20 @@ object item {
     __obj.asInstanceOf[item]
   }
   
-  @scala.inline
-  implicit class itemMutableBuilder[Self <: item] (val x: Self) extends AnyVal {
+  extension [Self <: item](x: Self) {
     
-    @scala.inline
-    def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
+    inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapoint(value: js.Array[Double]): Self = StObject.set(x, "datapoint", value.asInstanceOf[js.Any])
+    inline def setDatapoint(value: js.Array[Double]): Self = StObject.set(x, "datapoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapointVarargs(value: Double*): Self = StObject.set(x, "datapoint", js.Array(value :_*))
+    inline def setDatapointVarargs(value: Double*): Self = StObject.set(x, "datapoint", js.Array(value :_*))
     
-    @scala.inline
-    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries(value: dataSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: dataSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
+    inline def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
   }
 }

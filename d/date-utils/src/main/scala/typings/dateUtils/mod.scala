@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(lang: LanguageType): String = ^.asInstanceOf[js.Dynamic].apply(lang.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(lang: LanguageType): String = ^.asInstanceOf[js.Dynamic].apply(lang.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("date-utils", JSImport.Namespace)
   @js.native
@@ -21,13 +20,10 @@ object mod {
   trait LanguageType extends StObject
   object LanguageType {
     
-    @scala.inline
-    def es: typings.dateUtils.dateUtilsStrings.es = "es".asInstanceOf[typings.dateUtils.dateUtilsStrings.es]
+    inline def es: typings.dateUtils.dateUtilsStrings.es = "es".asInstanceOf[typings.dateUtils.dateUtilsStrings.es]
     
-    @scala.inline
-    def fr: typings.dateUtils.dateUtilsStrings.fr = "fr".asInstanceOf[typings.dateUtils.dateUtilsStrings.fr]
+    inline def fr: typings.dateUtils.dateUtilsStrings.fr = "fr".asInstanceOf[typings.dateUtils.dateUtilsStrings.fr]
     
-    @scala.inline
-    def `pt-BR`: typings.dateUtils.dateUtilsStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.dateUtils.dateUtilsStrings.`pt-BR`]
+    inline def `pt-BR`: typings.dateUtils.dateUtilsStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.dateUtils.dateUtilsStrings.`pt-BR`]
   }
 }

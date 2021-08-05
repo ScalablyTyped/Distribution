@@ -17,19 +17,15 @@ trait ApigatewayBackendConfig extends StObject {
 }
 object ApigatewayBackendConfig {
   
-  @scala.inline
-  def apply(): ApigatewayBackendConfig = {
+  inline def apply(): ApigatewayBackendConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayBackendConfig]
   }
   
-  @scala.inline
-  implicit class ApigatewayBackendConfigMutableBuilder[Self <: ApigatewayBackendConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayBackendConfig](x: Self) {
     
-    @scala.inline
-    def setGoogleServiceAccount(value: String): Self = StObject.set(x, "googleServiceAccount", value.asInstanceOf[js.Any])
+    inline def setGoogleServiceAccount(value: String): Self = StObject.set(x, "googleServiceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleServiceAccountUndefined: Self = StObject.set(x, "googleServiceAccount", js.undefined)
+    inline def setGoogleServiceAccountUndefined: Self = StObject.set(x, "googleServiceAccount", js.undefined)
   }
 }

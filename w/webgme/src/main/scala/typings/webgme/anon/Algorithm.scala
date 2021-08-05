@@ -57,8 +57,7 @@ trait Algorithm extends StObject {
 }
 object Algorithm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     algorithm: String,
     cookieId: String,
     expiresIn: Double,
@@ -71,28 +70,20 @@ object Algorithm {
     __obj.asInstanceOf[Algorithm]
   }
   
-  @scala.inline
-  implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
+  extension [Self <: Algorithm](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieId(value: String): Self = StObject.set(x, "cookieId", value.asInstanceOf[js.Any])
+    inline def setCookieId(value: String): Self = StObject.set(x, "cookieId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+    inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewBeforeExpires(value: Double): Self = StObject.set(x, "renewBeforeExpires", value.asInstanceOf[js.Any])
+    inline def setRenewBeforeExpires(value: Double): Self = StObject.set(x, "renewBeforeExpires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenGenerator(value: String): Self = StObject.set(x, "tokenGenerator", value.asInstanceOf[js.Any])
+    inline def setTokenGenerator(value: String): Self = StObject.set(x, "tokenGenerator", value.asInstanceOf[js.Any])
   }
 }

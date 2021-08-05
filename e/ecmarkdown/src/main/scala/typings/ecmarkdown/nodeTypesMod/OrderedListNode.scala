@@ -22,31 +22,23 @@ trait OrderedListNode
 }
 object OrderedListNode {
   
-  @scala.inline
-  def apply(contents: js.Array[OrderedListItemNode], indent: Double, location: LocationRange, start: Double): OrderedListNode = {
+  inline def apply(contents: js.Array[OrderedListItemNode], indent: Double, location: LocationRange, start: Double): OrderedListNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ol", start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderedListNode]
   }
   
-  @scala.inline
-  implicit class OrderedListNodeMutableBuilder[Self <: OrderedListNode] (val x: Self) extends AnyVal {
+  extension [Self <: OrderedListNode](x: Self) {
     
-    @scala.inline
-    def setContents(value: js.Array[OrderedListItemNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[OrderedListItemNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsVarargs(value: OrderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: OrderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait SchemaCreateCollectdTimeSeriesResponse extends StObject {
 }
 object SchemaCreateCollectdTimeSeriesResponse {
   
-  @scala.inline
-  def apply(): SchemaCreateCollectdTimeSeriesResponse = {
+  inline def apply(): SchemaCreateCollectdTimeSeriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateCollectdTimeSeriesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCreateCollectdTimeSeriesResponseMutableBuilder[Self <: SchemaCreateCollectdTimeSeriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateCollectdTimeSeriesResponse](x: Self) {
     
-    @scala.inline
-    def setPayloadErrors(value: js.Array[SchemaCollectdPayloadError]): Self = StObject.set(x, "payloadErrors", value.asInstanceOf[js.Any])
+    inline def setPayloadErrors(value: js.Array[SchemaCollectdPayloadError]): Self = StObject.set(x, "payloadErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadErrorsUndefined: Self = StObject.set(x, "payloadErrors", js.undefined)
+    inline def setPayloadErrorsUndefined: Self = StObject.set(x, "payloadErrors", js.undefined)
     
-    @scala.inline
-    def setPayloadErrorsVarargs(value: SchemaCollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value :_*))
+    inline def setPayloadErrorsVarargs(value: SchemaCollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value :_*))
   }
 }

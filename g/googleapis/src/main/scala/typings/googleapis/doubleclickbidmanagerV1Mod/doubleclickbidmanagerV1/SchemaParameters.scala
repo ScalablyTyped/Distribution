@@ -36,52 +36,37 @@ trait SchemaParameters extends StObject {
 }
 object SchemaParameters {
   
-  @scala.inline
-  def apply(): SchemaParameters = {
+  inline def apply(): SchemaParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParameters]
   }
   
-  @scala.inline
-  implicit class SchemaParametersMutableBuilder[Self <: SchemaParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParameters](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[SchemaFilterPair]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[SchemaFilterPair]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: SchemaFilterPair*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SchemaFilterPair*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupBys(value: js.Array[String]): Self = StObject.set(x, "groupBys", value.asInstanceOf[js.Any])
+    inline def setGroupBys(value: js.Array[String]): Self = StObject.set(x, "groupBys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBysUndefined: Self = StObject.set(x, "groupBys", js.undefined)
+    inline def setGroupBysUndefined: Self = StObject.set(x, "groupBys", js.undefined)
     
-    @scala.inline
-    def setGroupBysVarargs(value: String*): Self = StObject.set(x, "groupBys", js.Array(value :_*))
+    inline def setGroupBysVarargs(value: String*): Self = StObject.set(x, "groupBys", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeInviteData(value: Boolean): Self = StObject.set(x, "includeInviteData", value.asInstanceOf[js.Any])
+    inline def setIncludeInviteData(value: Boolean): Self = StObject.set(x, "includeInviteData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInviteDataUndefined: Self = StObject.set(x, "includeInviteData", js.undefined)
+    inline def setIncludeInviteDataUndefined: Self = StObject.set(x, "includeInviteData", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

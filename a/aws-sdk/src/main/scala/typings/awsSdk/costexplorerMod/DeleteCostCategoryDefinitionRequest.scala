@@ -13,16 +13,13 @@ trait DeleteCostCategoryDefinitionRequest extends StObject {
 }
 object DeleteCostCategoryDefinitionRequest {
   
-  @scala.inline
-  def apply(CostCategoryArn: Arn): DeleteCostCategoryDefinitionRequest = {
+  inline def apply(CostCategoryArn: Arn): DeleteCostCategoryDefinitionRequest = {
     val __obj = js.Dynamic.literal(CostCategoryArn = CostCategoryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCostCategoryDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCostCategoryDefinitionRequestMutableBuilder[Self <: DeleteCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCostCategoryDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
+    inline def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
   }
 }

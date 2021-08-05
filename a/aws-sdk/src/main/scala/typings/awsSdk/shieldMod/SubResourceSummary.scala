@@ -28,43 +28,31 @@ trait SubResourceSummary extends StObject {
 }
 object SubResourceSummary {
   
-  @scala.inline
-  def apply(): SubResourceSummary = {
+  inline def apply(): SubResourceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubResourceSummary]
   }
   
-  @scala.inline
-  implicit class SubResourceSummaryMutableBuilder[Self <: SubResourceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SubResourceSummary](x: Self) {
     
-    @scala.inline
-    def setAttackVectors(value: SummarizedAttackVectorList): Self = StObject.set(x, "AttackVectors", value.asInstanceOf[js.Any])
+    inline def setAttackVectors(value: SummarizedAttackVectorList): Self = StObject.set(x, "AttackVectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackVectorsUndefined: Self = StObject.set(x, "AttackVectors", js.undefined)
+    inline def setAttackVectorsUndefined: Self = StObject.set(x, "AttackVectors", js.undefined)
     
-    @scala.inline
-    def setAttackVectorsVarargs(value: SummarizedAttackVector*): Self = StObject.set(x, "AttackVectors", js.Array(value :_*))
+    inline def setAttackVectorsVarargs(value: SummarizedAttackVector*): Self = StObject.set(x, "AttackVectors", js.Array(value :_*))
     
-    @scala.inline
-    def setCounters(value: SummarizedCounterList): Self = StObject.set(x, "Counters", value.asInstanceOf[js.Any])
+    inline def setCounters(value: SummarizedCounterList): Self = StObject.set(x, "Counters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountersUndefined: Self = StObject.set(x, "Counters", js.undefined)
+    inline def setCountersUndefined: Self = StObject.set(x, "Counters", js.undefined)
     
-    @scala.inline
-    def setCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "Counters", js.Array(value :_*))
+    inline def setCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "Counters", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setType(value: SubResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SubResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.DropLines")
 @js.native
-class DropLines protected ()
+/* private */ class DropLines ()
   extends StObject
      with typings.activexWord.Word.DropLines {
   
@@ -34,7 +34,7 @@ class DropLines protected ()
   /* CompleteClass */
   override def Select(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.DropLines_typekey")
   var WordDotDropLines_typekey: typings.activexWord.Word.DropLines = js.native
 }

@@ -43,85 +43,59 @@ trait Collection extends StObject {
 }
 object Collection {
   
-  @scala.inline
-  def apply(): Collection = {
+  inline def apply(): Collection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Collection]
   }
   
-  @scala.inline
-  implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
+  extension [Self <: Collection](x: Self) {
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
+    inline def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
-    @scala.inline
-    def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
+    inline def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguration_idUndefined: Self = StObject.set(x, "configuration_id", js.undefined)
+    inline def setConfiguration_idUndefined: Self = StObject.set(x, "configuration_id", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisk_usage(value: CollectionDiskUsage): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
+    inline def setDisk_usage(value: CollectionDiskUsage): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisk_usageUndefined: Self = StObject.set(x, "disk_usage", js.undefined)
+    inline def setDisk_usageUndefined: Self = StObject.set(x, "disk_usage", js.undefined)
     
-    @scala.inline
-    def setDocument_counts(value: DocumentCounts): Self = StObject.set(x, "document_counts", value.asInstanceOf[js.Any])
+    inline def setDocument_counts(value: DocumentCounts): Self = StObject.set(x, "document_counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_countsUndefined: Self = StObject.set(x, "document_counts", js.undefined)
+    inline def setDocument_countsUndefined: Self = StObject.set(x, "document_counts", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSource_crawl(value: SourceStatus): Self = StObject.set(x, "source_crawl", value.asInstanceOf[js.Any])
+    inline def setSource_crawl(value: SourceStatus): Self = StObject.set(x, "source_crawl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_crawlUndefined: Self = StObject.set(x, "source_crawl", js.undefined)
+    inline def setSource_crawlUndefined: Self = StObject.set(x, "source_crawl", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTraining_status(value: TrainingStatus): Self = StObject.set(x, "training_status", value.asInstanceOf[js.Any])
+    inline def setTraining_status(value: TrainingStatus): Self = StObject.set(x, "training_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraining_statusUndefined: Self = StObject.set(x, "training_status", js.undefined)
+    inline def setTraining_statusUndefined: Self = StObject.set(x, "training_status", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

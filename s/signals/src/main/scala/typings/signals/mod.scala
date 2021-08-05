@@ -150,17 +150,14 @@ object mod extends Shortcut {
   }
   object SignalWrapper {
     
-    @scala.inline
-    def apply[T](Signal: Signal[T]): SignalWrapper[T] = {
+    inline def apply[T](Signal: Signal[T]): SignalWrapper[T] = {
       val __obj = js.Dynamic.literal(Signal = Signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignalWrapper[T]]
     }
     
-    @scala.inline
-    implicit class SignalWrapperMutableBuilder[Self <: SignalWrapper[?], T] (val x: Self & SignalWrapper[T]) extends AnyVal {
+    extension [Self <: SignalWrapper[?], T](x: Self & SignalWrapper[T]) {
       
-      @scala.inline
-      def setSignal(value: Signal[T]): Self = StObject.set(x, "Signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: Signal[T]): Self = StObject.set(x, "Signal", value.asInstanceOf[js.Any])
     }
   }
   

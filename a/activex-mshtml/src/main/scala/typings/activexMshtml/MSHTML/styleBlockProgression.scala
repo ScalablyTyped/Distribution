@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBlockProgression extends StObject
 object styleBlockProgression {
   
-  @scala.inline
-  def styleBlockProgressionBt: `2` = 2.asInstanceOf[`2`]
+  inline def styleBlockProgressionBt: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBlockProgressionLr: `3` = 3.asInstanceOf[`3`]
+  inline def styleBlockProgressionLr: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleBlockProgressionNotSet: `4` = 4.asInstanceOf[`4`]
+  inline def styleBlockProgressionNotSet: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleBlockProgressionRl: `1` = 1.asInstanceOf[`1`]
+  inline def styleBlockProgressionRl: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBlockProgressionTb: `0` = 0.asInstanceOf[`0`]
+  inline def styleBlockProgressionTb: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBlockProgression_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBlockProgression_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

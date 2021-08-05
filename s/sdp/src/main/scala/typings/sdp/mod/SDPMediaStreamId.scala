@@ -12,19 +12,15 @@ trait SDPMediaStreamId extends StObject {
 }
 object SDPMediaStreamId {
   
-  @scala.inline
-  def apply(stream: String, track: String): SDPMediaStreamId = {
+  inline def apply(stream: String, track: String): SDPMediaStreamId = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPMediaStreamId]
   }
   
-  @scala.inline
-  implicit class SDPMediaStreamIdMutableBuilder[Self <: SDPMediaStreamId] (val x: Self) extends AnyVal {
+  extension [Self <: SDPMediaStreamId](x: Self) {
     
-    @scala.inline
-    def setStream(value: String): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: String): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

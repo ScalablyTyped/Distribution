@@ -47,8 +47,7 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -61,82 +60,56 @@ object Node {
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorNull: Self = StObject.set(x, "anchor", null)
+    inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentNull: Self = StObject.set(x, "comment", null)
+    inline def setCommentNull: Self = StObject.set(x, "comment", null)
     
-    @scala.inline
-    def setContext(value: ParseContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ParseContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContextNull: Self = StObject.set(x, "context", null)
     
-    @scala.inline
-    def setError(value: YAMLSyntaxError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: YAMLSyntaxError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setHasComment(value: Boolean): Self = StObject.set(x, "hasComment", value.asInstanceOf[js.Any])
+    inline def setHasComment(value: Boolean): Self = StObject.set(x, "hasComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasProps(value: Boolean): Self = StObject.set(x, "hasProps", value.asInstanceOf[js.Any])
+    inline def setHasProps(value: Boolean): Self = StObject.set(x, "hasProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonLike(value: Boolean): Self = StObject.set(x, "jsonLike", value.asInstanceOf[js.Any])
+    inline def setJsonLike(value: Boolean): Self = StObject.set(x, "jsonLike", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: js.Array[Range]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: js.Array[Range]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsVarargs(value: Range*): Self = StObject.set(x, "props", js.Array(value :_*))
+    inline def setPropsVarargs(value: Range*): Self = StObject.set(x, "props", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeNull: Self = StObject.set(x, "range", null)
+    inline def setRangeNull: Self = StObject.set(x, "range", null)
     
-    @scala.inline
-    def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValueNull: Self = StObject.set(x, "rawValue", null)
+    inline def setRawValueNull: Self = StObject.set(x, "rawValue", null)
     
-    @scala.inline
-    def setTag(value: Verbatim | Handle): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Verbatim | Handle): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNull: Self = StObject.set(x, "tag", null)
+    inline def setTagNull: Self = StObject.set(x, "tag", null)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
+    inline def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangeContainsNewline(value: Boolean): Self = StObject.set(x, "valueRangeContainsNewline", value.asInstanceOf[js.Any])
+    inline def setValueRangeContainsNewline(value: Boolean): Self = StObject.set(x, "valueRangeContainsNewline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangeNull: Self = StObject.set(x, "valueRange", null)
+    inline def setValueRangeNull: Self = StObject.set(x, "valueRange", null)
   }
 }

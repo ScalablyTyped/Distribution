@@ -22,20 +22,16 @@ object lineChartSplitMod extends Shortcut {
   }
   object LineChartSplitProps {
     
-    @scala.inline
-    def apply(): LineChartSplitProps = {
+    inline def apply(): LineChartSplitProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineChartSplitProps]
     }
     
-    @scala.inline
-    implicit class LineChartSplitPropsMutableBuilder[Self <: LineChartSplitProps] (val x: Self) extends AnyVal {
+    extension [Self <: LineChartSplitProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

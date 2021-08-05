@@ -30,8 +30,7 @@ trait DeliveryViewPropertyCollection
 }
 object DeliveryViewPropertyCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cardSettings: CardSettings,
     criteria: js.Array[FilterClause],
     markers: js.Array[Marker],
@@ -41,28 +40,20 @@ object DeliveryViewPropertyCollection {
     __obj.asInstanceOf[DeliveryViewPropertyCollection]
   }
   
-  @scala.inline
-  implicit class DeliveryViewPropertyCollectionMutableBuilder[Self <: DeliveryViewPropertyCollection] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryViewPropertyCollection](x: Self) {
     
-    @scala.inline
-    def setCardSettings(value: CardSettings): Self = StObject.set(x, "cardSettings", value.asInstanceOf[js.Any])
+    inline def setCardSettings(value: CardSettings): Self = StObject.set(x, "cardSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteria(value: js.Array[FilterClause]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: js.Array[FilterClause]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaVarargs(value: FilterClause*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: FilterClause*): Self = StObject.set(x, "criteria", js.Array(value :_*))
     
-    @scala.inline
-    def setMarkers(value: js.Array[Marker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: js.Array[Marker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkersVarargs(value: Marker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: Marker*): Self = StObject.set(x, "markers", js.Array(value :_*))
     
-    @scala.inline
-    def setTeamBacklogMappings(value: js.Array[TeamBacklogMapping]): Self = StObject.set(x, "teamBacklogMappings", value.asInstanceOf[js.Any])
+    inline def setTeamBacklogMappings(value: js.Array[TeamBacklogMapping]): Self = StObject.set(x, "teamBacklogMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamBacklogMappingsVarargs(value: TeamBacklogMapping*): Self = StObject.set(x, "teamBacklogMappings", js.Array(value :_*))
+    inline def setTeamBacklogMappingsVarargs(value: TeamBacklogMapping*): Self = StObject.set(x, "teamBacklogMappings", js.Array(value :_*))
   }
 }

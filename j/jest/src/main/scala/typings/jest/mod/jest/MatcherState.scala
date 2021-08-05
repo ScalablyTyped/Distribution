@@ -23,8 +23,7 @@ trait MatcherState extends StObject {
 }
 object MatcherState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assertionCalls: Double,
     currentTestName: String,
     expand: Boolean,
@@ -36,34 +35,24 @@ object MatcherState {
     __obj.asInstanceOf[MatcherState]
   }
   
-  @scala.inline
-  implicit class MatcherStateMutableBuilder[Self <: MatcherState] (val x: Self) extends AnyVal {
+  extension [Self <: MatcherState](x: Self) {
     
-    @scala.inline
-    def setAssertionCalls(value: Double): Self = StObject.set(x, "assertionCalls", value.asInstanceOf[js.Any])
+    inline def setAssertionCalls(value: Double): Self = StObject.set(x, "assertionCalls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
+    inline def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedAssertionsNumber(value: Double): Self = StObject.set(x, "expectedAssertionsNumber", value.asInstanceOf[js.Any])
+    inline def setExpectedAssertionsNumber(value: Double): Self = StObject.set(x, "expectedAssertionsNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpectingAssertions(value: Boolean): Self = StObject.set(x, "isExpectingAssertions", value.asInstanceOf[js.Any])
+    inline def setIsExpectingAssertions(value: Boolean): Self = StObject.set(x, "isExpectingAssertions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpectingAssertionsUndefined: Self = StObject.set(x, "isExpectingAssertions", js.undefined)
+    inline def setIsExpectingAssertionsUndefined: Self = StObject.set(x, "isExpectingAssertions", js.undefined)
     
-    @scala.inline
-    def setSuppressedErrors(value: js.Array[Error]): Self = StObject.set(x, "suppressedErrors", value.asInstanceOf[js.Any])
+    inline def setSuppressedErrors(value: js.Array[Error]): Self = StObject.set(x, "suppressedErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressedErrorsVarargs(value: Error*): Self = StObject.set(x, "suppressedErrors", js.Array(value :_*))
+    inline def setSuppressedErrorsVarargs(value: Error*): Self = StObject.set(x, "suppressedErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
+    inline def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
   }
 }

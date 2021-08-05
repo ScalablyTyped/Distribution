@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transform(content: String): TransformOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(content.asInstanceOf[js.Any]).asInstanceOf[TransformOutput]
-  @scala.inline
-  def transform(content: String, options: TransformOptions): TransformOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformOutput]
+  inline def transform(content: String): TransformOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(content.asInstanceOf[js.Any]).asInstanceOf[TransformOutput]
+  inline def transform(content: String, options: TransformOptions): TransformOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformOutput]
   
   trait TransformOptions extends StObject {
     
@@ -47,62 +45,44 @@ object mod {
   }
   object TransformOptions {
     
-    @scala.inline
-    def apply(): TransformOptions = {
+    inline def apply(): TransformOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformOptions]
     }
     
-    @scala.inline
-    implicit class TransformOptionsMutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransformOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setIncludeContent(value: Boolean): Self = StObject.set(x, "includeContent", value.asInstanceOf[js.Any])
+      inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "includeContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContentUndefined: Self = StObject.set(x, "includeContent", js.undefined)
+      inline def setIncludeContentUndefined: Self = StObject.set(x, "includeContent", js.undefined)
       
-      @scala.inline
-      def setJsx(value: String): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+      inline def setJsx(value: String): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
+      inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
       
-      @scala.inline
-      def setNamedFunctionExpressions(value: Boolean): Self = StObject.set(x, "namedFunctionExpressions", value.asInstanceOf[js.Any])
+      inline def setNamedFunctionExpressions(value: Boolean): Self = StObject.set(x, "namedFunctionExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedFunctionExpressionsUndefined: Self = StObject.set(x, "namedFunctionExpressions", js.undefined)
+      inline def setNamedFunctionExpressionsUndefined: Self = StObject.set(x, "namedFunctionExpressions", js.undefined)
       
-      @scala.inline
-      def setObjectAssign(value: String | Boolean): Self = StObject.set(x, "objectAssign", value.asInstanceOf[js.Any])
+      inline def setObjectAssign(value: String | Boolean): Self = StObject.set(x, "objectAssign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectAssignUndefined: Self = StObject.set(x, "objectAssign", js.undefined)
+      inline def setObjectAssignUndefined: Self = StObject.set(x, "objectAssign", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Chrome): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Chrome): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTransforms(value: Arrow): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      inline def setTransforms(value: Arrow): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+      inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
     }
   }
   
@@ -114,20 +94,16 @@ object mod {
   }
   object TransformOutput {
     
-    @scala.inline
-    def apply(code: String, map: SourceMap): TransformOutput = {
+    inline def apply(code: String, map: SourceMap): TransformOutput = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformOutput]
     }
     
-    @scala.inline
-    implicit class TransformOutputMutableBuilder[Self <: TransformOutput] (val x: Self) extends AnyVal {
+    extension [Self <: TransformOutput](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: SourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: SourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesBlockData extends StObject {
 }
 object EnumValuesBlockData {
   
-  @scala.inline
-  def apply(enumValues: BlockData): EnumValuesBlockData = {
+  inline def apply(enumValues: BlockData): EnumValuesBlockData = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesBlockData]
   }
   
-  @scala.inline
-  implicit class EnumValuesBlockDataMutableBuilder[Self <: EnumValuesBlockData] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesBlockData](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: BlockData): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: BlockData): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

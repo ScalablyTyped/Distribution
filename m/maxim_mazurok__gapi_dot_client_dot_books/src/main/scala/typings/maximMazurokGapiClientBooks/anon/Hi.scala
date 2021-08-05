@@ -12,25 +12,19 @@ trait Hi extends StObject {
 }
 object Hi {
   
-  @scala.inline
-  def apply(): Hi = {
+  inline def apply(): Hi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hi]
   }
   
-  @scala.inline
-  implicit class HiMutableBuilder[Self <: Hi] (val x: Self) extends AnyVal {
+  extension [Self <: Hi](x: Self) {
     
-    @scala.inline
-    def setHi(value: Latitude): Self = StObject.set(x, "hi", value.asInstanceOf[js.Any])
+    inline def setHi(value: Latitude): Self = StObject.set(x, "hi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiUndefined: Self = StObject.set(x, "hi", js.undefined)
+    inline def setHiUndefined: Self = StObject.set(x, "hi", js.undefined)
     
-    @scala.inline
-    def setLo(value: Latitude): Self = StObject.set(x, "lo", value.asInstanceOf[js.Any])
+    inline def setLo(value: Latitude): Self = StObject.set(x, "lo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoUndefined: Self = StObject.set(x, "lo", js.undefined)
+    inline def setLoUndefined: Self = StObject.set(x, "lo", js.undefined)
   }
 }

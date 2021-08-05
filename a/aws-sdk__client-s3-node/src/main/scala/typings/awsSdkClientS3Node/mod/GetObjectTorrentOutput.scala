@@ -10,8 +10,7 @@ trait GetObjectTorrentOutput[StreamType]
      with typings.awsSdkClientS3Node.typesGetObjectTorrentOutputMod.GetObjectTorrentOutput[StreamType]
 object GetObjectTorrentOutput {
   
-  @scala.inline
-  def apply[StreamType]($metadata: ResponseMetadata): GetObjectTorrentOutput[StreamType] = {
+  inline def apply[StreamType]($metadata: ResponseMetadata): GetObjectTorrentOutput[StreamType] = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectTorrentOutput[StreamType]]
   }

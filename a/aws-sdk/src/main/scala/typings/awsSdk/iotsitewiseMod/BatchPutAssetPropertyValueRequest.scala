@@ -13,19 +13,15 @@ trait BatchPutAssetPropertyValueRequest extends StObject {
 }
 object BatchPutAssetPropertyValueRequest {
   
-  @scala.inline
-  def apply(entries: PutAssetPropertyValueEntries): BatchPutAssetPropertyValueRequest = {
+  inline def apply(entries: PutAssetPropertyValueEntries): BatchPutAssetPropertyValueRequest = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPutAssetPropertyValueRequest]
   }
   
-  @scala.inline
-  implicit class BatchPutAssetPropertyValueRequestMutableBuilder[Self <: BatchPutAssetPropertyValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutAssetPropertyValueRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: PutAssetPropertyValueEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: PutAssetPropertyValueEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: PutAssetPropertyValueEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: PutAssetPropertyValueEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

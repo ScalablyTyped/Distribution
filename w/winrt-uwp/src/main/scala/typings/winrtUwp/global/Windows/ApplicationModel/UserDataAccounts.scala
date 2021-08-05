@@ -127,8 +127,7 @@ object UserDataAccounts {
         * @return Returns an updated list of accounts.
         */
       /* static member */
-      @scala.inline
-      def addAndShowDeviceAccountsAsync(
+      inline def addAndShowDeviceAccountsAsync(
         accounts: IIterable[
               typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration
             ]
@@ -253,8 +252,7 @@ object UserDataAccounts {
       * @return Returns the UserDataAccountStore .
       */
     /* static member */
-    @scala.inline
-    def requestStoreAsync(storeAccessType: UserDataAccountStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(storeAccessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore]]
+    inline def requestStoreAsync(storeAccessType: UserDataAccountStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(storeAccessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore]]
     
     /**
       * This method shows the resolve message for an account error.
@@ -262,8 +260,7 @@ object UserDataAccounts {
       * @return An async action indicating success or failure.
       */
     /* static member */
-    @scala.inline
-    def showAccountErrorResolverAsync(id: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showAccountErrorResolverAsync")(id.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def showAccountErrorResolverAsync(id: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showAccountErrorResolverAsync")(id.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * This method shows the account settings.
@@ -271,8 +268,7 @@ object UserDataAccounts {
       * @return An async action indicating success or failure.
       */
     /* static member */
-    @scala.inline
-    def showAccountSettingsAsync(id: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showAccountSettingsAsync")(id.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def showAccountSettingsAsync(id: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showAccountSettingsAsync")(id.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Shows the add account UI.
@@ -280,8 +276,7 @@ object UserDataAccounts {
       * @return Returns the newly added or already existing account.
       */
     /* static member */
-    @scala.inline
-    def showAddAccountAsync(contentKinds: UserDataAccountContentKinds): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("showAddAccountAsync")(contentKinds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def showAddAccountAsync(contentKinds: UserDataAccountContentKinds): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("showAddAccountAsync")(contentKinds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
   }
   
   /** Specifies the rights granted to other apps for reading this UserDataAccount . */

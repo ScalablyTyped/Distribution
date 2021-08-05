@@ -14,25 +14,19 @@ trait DelayOptions
 }
 object DelayOptions {
   
-  @scala.inline
-  def apply(): DelayOptions = {
+  inline def apply(): DelayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DelayOptions]
   }
   
-  @scala.inline
-  implicit class DelayOptionsMutableBuilder[Self <: DelayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DelayOptions](x: Self) {
     
-    @scala.inline
-    def setDelayTime(value: Double): Self = StObject.set(x, "delayTime", value.asInstanceOf[js.Any])
+    inline def setDelayTime(value: Double): Self = StObject.set(x, "delayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayTimeUndefined: Self = StObject.set(x, "delayTime", js.undefined)
+    inline def setDelayTimeUndefined: Self = StObject.set(x, "delayTime", js.undefined)
     
-    @scala.inline
-    def setMaxDelayTime(value: Double): Self = StObject.set(x, "maxDelayTime", value.asInstanceOf[js.Any])
+    inline def setMaxDelayTime(value: Double): Self = StObject.set(x, "maxDelayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDelayTimeUndefined: Self = StObject.set(x, "maxDelayTime", js.undefined)
+    inline def setMaxDelayTimeUndefined: Self = StObject.set(x, "maxDelayTime", js.undefined)
   }
 }

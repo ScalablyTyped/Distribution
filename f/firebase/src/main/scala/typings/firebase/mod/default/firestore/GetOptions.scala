@@ -33,19 +33,15 @@ trait GetOptions extends StObject {
 }
 object GetOptions {
   
-  @scala.inline
-  def apply(): GetOptions = {
+  inline def apply(): GetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOptions]
   }
   
-  @scala.inline
-  implicit class GetOptionsMutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetOptions](x: Self) {
     
-    @scala.inline
-    def setSource(value: default | server | cache): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: default | server | cache): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

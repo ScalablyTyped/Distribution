@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "MultiFactorResolver")
 @js.native
-class MultiFactorResolver protected () extends StObject {
+/* private */ class MultiFactorResolver () extends StObject {
   
   var auth: FirebaseAuth = js.native
   

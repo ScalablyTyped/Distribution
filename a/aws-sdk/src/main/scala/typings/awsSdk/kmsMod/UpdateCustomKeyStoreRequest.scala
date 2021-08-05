@@ -28,34 +28,25 @@ trait UpdateCustomKeyStoreRequest extends StObject {
 }
 object UpdateCustomKeyStoreRequest {
   
-  @scala.inline
-  def apply(CustomKeyStoreId: CustomKeyStoreIdType): UpdateCustomKeyStoreRequest = {
+  inline def apply(CustomKeyStoreId: CustomKeyStoreIdType): UpdateCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCustomKeyStoreRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCustomKeyStoreRequestMutableBuilder[Self <: UpdateCustomKeyStoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCustomKeyStoreRequest](x: Self) {
     
-    @scala.inline
-    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
+    inline def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudHsmClusterIdUndefined: Self = StObject.set(x, "CloudHsmClusterId", js.undefined)
+    inline def setCloudHsmClusterIdUndefined: Self = StObject.set(x, "CloudHsmClusterId", js.undefined)
     
-    @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyStorePassword(value: KeyStorePasswordType): Self = StObject.set(x, "KeyStorePassword", value.asInstanceOf[js.Any])
+    inline def setKeyStorePassword(value: KeyStorePasswordType): Self = StObject.set(x, "KeyStorePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyStorePasswordUndefined: Self = StObject.set(x, "KeyStorePassword", js.undefined)
+    inline def setKeyStorePasswordUndefined: Self = StObject.set(x, "KeyStorePassword", js.undefined)
     
-    @scala.inline
-    def setNewCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "NewCustomKeyStoreName", value.asInstanceOf[js.Any])
+    inline def setNewCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "NewCustomKeyStoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewCustomKeyStoreNameUndefined: Self = StObject.set(x, "NewCustomKeyStoreName", js.undefined)
+    inline def setNewCustomKeyStoreNameUndefined: Self = StObject.set(x, "NewCustomKeyStoreName", js.undefined)
   }
 }

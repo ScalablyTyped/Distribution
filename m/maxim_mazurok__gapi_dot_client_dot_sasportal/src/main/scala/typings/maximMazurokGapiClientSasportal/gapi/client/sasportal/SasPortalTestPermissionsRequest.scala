@@ -14,28 +14,21 @@ trait SasPortalTestPermissionsRequest extends StObject {
 }
 object SasPortalTestPermissionsRequest {
   
-  @scala.inline
-  def apply(): SasPortalTestPermissionsRequest = {
+  inline def apply(): SasPortalTestPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalTestPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class SasPortalTestPermissionsRequestMutableBuilder[Self <: SasPortalTestPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalTestPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

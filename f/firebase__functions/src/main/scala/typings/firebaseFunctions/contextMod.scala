@@ -17,7 +17,7 @@ object contextMod {
       messagingProvider: Provider[FirebaseMessagingName]
     ) = this()
     
-    var auth: js.Any = js.native
+    /* private */ var auth: js.Any = js.native
     
     def getAuthToken(): js.Promise[js.UndefOr[String]] = js.native
     
@@ -25,7 +25,7 @@ object contextMod {
     
     def getInstanceIdToken(): js.Promise[js.UndefOr[String]] = js.native
     
-    var messaging: js.Any = js.native
+    /* private */ var messaging: js.Any = js.native
   }
   
   trait Context extends StObject {
@@ -36,26 +36,20 @@ object contextMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(): Context = {
+    inline def apply(): Context = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
+      inline def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
       
-      @scala.inline
-      def setInstanceIdToken(value: String): Self = StObject.set(x, "instanceIdToken", value.asInstanceOf[js.Any])
+      inline def setInstanceIdToken(value: String): Self = StObject.set(x, "instanceIdToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdTokenUndefined: Self = StObject.set(x, "instanceIdToken", js.undefined)
+      inline def setInstanceIdTokenUndefined: Self = StObject.set(x, "instanceIdToken", js.undefined)
     }
   }
 }

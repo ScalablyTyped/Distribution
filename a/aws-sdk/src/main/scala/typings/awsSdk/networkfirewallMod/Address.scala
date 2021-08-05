@@ -13,16 +13,13 @@ trait Address extends StObject {
 }
 object Address {
   
-  @scala.inline
-  def apply(AddressDefinition: AddressDefinition): Address = {
+  inline def apply(AddressDefinition: AddressDefinition): Address = {
     val __obj = js.Dynamic.literal(AddressDefinition = AddressDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
   
-  @scala.inline
-  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+  extension [Self <: Address](x: Self) {
     
-    @scala.inline
-    def setAddressDefinition(value: AddressDefinition): Self = StObject.set(x, "AddressDefinition", value.asInstanceOf[js.Any])
+    inline def setAddressDefinition(value: AddressDefinition): Self = StObject.set(x, "AddressDefinition", value.asInstanceOf[js.Any])
   }
 }

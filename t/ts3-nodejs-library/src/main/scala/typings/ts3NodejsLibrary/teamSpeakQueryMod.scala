@@ -21,16 +21,16 @@ object teamSpeakQueryMod {
   class TeamSpeakQuery protected () extends EventEmitter {
     def this(config: ConnectionParams) = this()
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     /**
       * start connecting to the teamspeak server
       */
     def connect(): Unit = js.native
     
-    var connected: js.Any = js.native
+    /* private */ var connected: js.Any = js.native
     
     val doubleEvents: js.Array[String] = js.native
     
@@ -40,7 +40,7 @@ object teamSpeakQueryMod {
     /** sends a priorized command to the TeamSpeak Server */
     def executePrio(command: String, args: executeArgs*): js.Promise[js.Array[Response]] = js.native
     
-    var floodTimeout: js.Any = js.native
+    /* private */ var floodTimeout: js.Any = js.native
     
     /** forcefully closes the socket connection */
     def forceQuit(): Unit = js.native
@@ -49,71 +49,71 @@ object teamSpeakQueryMod {
       * retrieves the next available queue item
       * respects priorized queue
       */
-    var getNextQueueItem: js.Any = js.native
+    /* private */ var getNextQueueItem: js.Any = js.native
     
     /** handles socket closing */
-    var handleClose: js.Any = js.native
+    /* private */ var handleClose: js.Any = js.native
     
     /**
       * @param command command to send
       * @param args arguments which gets parsed
       * @param prio wether this command should be handled as priority and be queued before others
       */
-    var handleCommand: js.Any = js.native
+    /* private */ var handleCommand: js.Any = js.native
     
     /** gets called when the underlying transport layer connects to a server */
-    var handleConnect: js.Any = js.native
+    /* private */ var handleConnect: js.Any = js.native
     
     /**
       * Emits an Error which the given arguments
       * @param {...any} args arguments which gets passed to the error event
       */
-    var handleError: js.Any = js.native
+    /* private */ var handleError: js.Any = js.native
     
     /** handles a flooding response from the teamspeak query */
-    var handleFloodingError: js.Any = js.native
+    /* private */ var handleFloodingError: js.Any = js.native
     
     /** handles a single line response from the teamspeak server */
-    var handleLine: js.Any = js.native
+    /* private */ var handleLine: js.Any = js.native
     
     /** handles the error line which finnishes a command */
-    var handleQueryError: js.Any = js.native
+    /* private */ var handleQueryError: js.Any = js.native
     
     /**
       * Handles an event which has been received from the TeamSpeak Server
       * @param line event response line from the teamspeak server
       */
-    var handleQueryEvent: js.Any = js.native
+    /* private */ var handleQueryEvent: js.Any = js.native
     
-    var ignoreLines: js.Any = js.native
+    /* private */ var ignoreLines: js.Any = js.native
     
     def isConnected(): Boolean = js.native
     
     /** handles the timer for the keepalive request */
-    var keepAlive: js.Any = js.native
+    /* private */ var keepAlive: js.Any = js.native
     
-    var keepAliveTimeout: js.Any = js.native
+    /* private */ var keepAliveTimeout: js.Any = js.native
     
-    var lastEvent: js.Any = js.native
+    /* private */ var lastEvent: js.Any = js.native
     
-    var lastcmd: js.Any = js.native
+    /* private */ var lastcmd: js.Any = js.native
     
     def pause(pause: Boolean): this.type = js.native
     
-    var pauseQueue: js.Any = js.native
+    /* private */ var pauseQueue: js.Any = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
     
     /** executes the next command */
-    var queueWorker: js.Any = js.native
+    /* private */ var queueWorker: js.Any = js.native
     
     /** sends data to the socket */
-    var send: js.Any = js.native
+    /* private */ var send: js.Any = js.native
     
     /** dispatches the keepalive */
-    var sendKeepAlive: js.Any = js.native
+    /* private */ var sendKeepAlive: js.Any = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
   }
   /* static members */
   object TeamSpeakQuery {
@@ -125,12 +125,10 @@ object teamSpeakQueryMod {
     @JSImport("ts3-nodejs-library/lib/transport/TeamSpeakQuery", "TeamSpeakQuery.IGNORE_LINES_INITIAL")
     @js.native
     def IGNORE_LINES_INITIAL: Double = js.native
-    @scala.inline
-    def IGNORE_LINES_INITIAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE_LINES_INITIAL")(x.asInstanceOf[js.Any])
+    inline def IGNORE_LINES_INITIAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE_LINES_INITIAL")(x.asInstanceOf[js.Any])
     
     /** returns a constructed Socket */
-    @scala.inline
-    def getSocket(config: ConnectionParams): QueryProtocolInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("getSocket")(config.asInstanceOf[js.Any]).asInstanceOf[QueryProtocolInterface]
+    inline def getSocket(config: ConnectionParams): QueryProtocolInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("getSocket")(config.asInstanceOf[js.Any]).asInstanceOf[QueryProtocolInterface]
     
     @js.native
     trait QueryProtocolInterface extends EventEmitter {
@@ -162,26 +160,20 @@ object teamSpeakQueryMod {
     }
     object QueueItem {
       
-      @scala.inline
-      def apply(cmd: Command, fulfill: js.Any => Unit, priority: Boolean, reject: js.Any => Unit): QueueItem = {
+      inline def apply(cmd: Command, fulfill: js.Any => Unit, priority: Boolean, reject: js.Any => Unit): QueueItem = {
         val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], fulfill = js.Any.fromFunction1(fulfill), priority = priority.asInstanceOf[js.Any], reject = js.Any.fromFunction1(reject))
         __obj.asInstanceOf[QueueItem]
       }
       
-      @scala.inline
-      implicit class QueueItemMutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
+      extension [Self <: QueueItem](x: Self) {
         
-        @scala.inline
-        def setCmd(value: Command): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+        inline def setCmd(value: Command): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFulfill(value: js.Any => Unit): Self = StObject.set(x, "fulfill", js.Any.fromFunction1(value))
+        inline def setFulfill(value: js.Any => Unit): Self = StObject.set(x, "fulfill", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+        inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReject(value: js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+        inline def setReject(value: js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       }
     }
     
@@ -192,8 +184,7 @@ object teamSpeakQueryMod {
          with /* x */ StringDictionary[ValueTypes]
     object ResponseEntry {
       
-      @scala.inline
-      def apply(): ResponseEntry = {
+      inline def apply(): ResponseEntry = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResponseEntry]
       }

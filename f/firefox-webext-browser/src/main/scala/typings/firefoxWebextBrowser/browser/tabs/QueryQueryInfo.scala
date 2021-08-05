@@ -73,142 +73,97 @@ trait QueryQueryInfo extends StObject {
 }
 object QueryQueryInfo {
   
-  @scala.inline
-  def apply(): QueryQueryInfo = {
+  inline def apply(): QueryQueryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryQueryInfo]
   }
   
-  @scala.inline
-  implicit class QueryQueryInfoMutableBuilder[Self <: QueryQueryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: QueryQueryInfo](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAttention(value: Boolean): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
+    inline def setAttention(value: Boolean): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttentionUndefined: Self = StObject.set(x, "attention", js.undefined)
+    inline def setAttentionUndefined: Self = StObject.set(x, "attention", js.undefined)
     
-    @scala.inline
-    def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
+    inline def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
+    inline def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
     
-    @scala.inline
-    def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+    inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+    inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
     
-    @scala.inline
-    def setCurrentWindow(value: Boolean): Self = StObject.set(x, "currentWindow", value.asInstanceOf[js.Any])
+    inline def setCurrentWindow(value: Boolean): Self = StObject.set(x, "currentWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentWindowUndefined: Self = StObject.set(x, "currentWindow", js.undefined)
+    inline def setCurrentWindowUndefined: Self = StObject.set(x, "currentWindow", js.undefined)
     
-    @scala.inline
-    def setDiscarded(value: Boolean): Self = StObject.set(x, "discarded", value.asInstanceOf[js.Any])
+    inline def setDiscarded(value: Boolean): Self = StObject.set(x, "discarded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
+    inline def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    inline def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
+    inline def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setLastFocusedWindow(value: Boolean): Self = StObject.set(x, "lastFocusedWindow", value.asInstanceOf[js.Any])
+    inline def setLastFocusedWindow(value: Boolean): Self = StObject.set(x, "lastFocusedWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFocusedWindowUndefined: Self = StObject.set(x, "lastFocusedWindow", js.undefined)
+    inline def setLastFocusedWindowUndefined: Self = StObject.set(x, "lastFocusedWindow", js.undefined)
     
-    @scala.inline
-    def setMicrophone(value: Boolean): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
+    inline def setMicrophone(value: Boolean): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrophoneUndefined: Self = StObject.set(x, "microphone", js.undefined)
+    inline def setMicrophoneUndefined: Self = StObject.set(x, "microphone", js.undefined)
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
-    @scala.inline
-    def setOpenerTabId(value: Double): Self = StObject.set(x, "openerTabId", value.asInstanceOf[js.Any])
+    inline def setOpenerTabId(value: Double): Self = StObject.set(x, "openerTabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenerTabIdUndefined: Self = StObject.set(x, "openerTabId", js.undefined)
+    inline def setOpenerTabIdUndefined: Self = StObject.set(x, "openerTabId", js.undefined)
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    @scala.inline
-    def setScreen(value: Boolean | QueryQueryInfoScreen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Boolean | QueryQueryInfoScreen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+    inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TabStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TabStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+    inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     
-    @scala.inline
-    def setWindowType(value: WindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
+    inline def setWindowType(value: WindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTypeUndefined: Self = StObject.set(x, "windowType", js.undefined)
+    inline def setWindowTypeUndefined: Self = StObject.set(x, "windowType", js.undefined)
   }
 }

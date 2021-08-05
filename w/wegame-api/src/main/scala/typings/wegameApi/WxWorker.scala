@@ -26,8 +26,7 @@ trait WxWorker extends StObject {
 }
 object WxWorker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onMessage: js.Function1[/* res */ Message, Unit] => Unit,
     postMessage: js.Any => Unit,
     terminate: () => Unit
@@ -36,16 +35,12 @@ object WxWorker {
     __obj.asInstanceOf[WxWorker]
   }
   
-  @scala.inline
-  implicit class WxWorkerMutableBuilder[Self <: WxWorker] (val x: Self) extends AnyVal {
+  extension [Self <: WxWorker](x: Self) {
     
-    @scala.inline
-    def setOnMessage(value: js.Function1[/* res */ Message, Unit] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: js.Function1[/* res */ Message, Unit] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+    inline def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

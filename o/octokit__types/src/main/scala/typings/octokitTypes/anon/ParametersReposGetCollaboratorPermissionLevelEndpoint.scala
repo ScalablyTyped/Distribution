@@ -18,8 +18,7 @@ trait ParametersReposGetCollaboratorPermissionLevelEndpoint extends StObject {
 }
 object ParametersReposGetCollaboratorPermissionLevelEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetCollaboratorPermissionLevelEndpoint,
     request: ReposGetCollaboratorPermissionLevelRequestOptions,
     response: OctokitResponse[ReposGetCollaboratorPermissionLevelResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetCollaboratorPermissionLevelEndpoint {
     __obj.asInstanceOf[ParametersReposGetCollaboratorPermissionLevelEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetCollaboratorPermissionLevelEndpointMutableBuilder[Self <: ParametersReposGetCollaboratorPermissionLevelEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetCollaboratorPermissionLevelEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetCollaboratorPermissionLevelEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetCollaboratorPermissionLevelEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetCollaboratorPermissionLevelRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetCollaboratorPermissionLevelRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetCollaboratorPermissionLevelResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetCollaboratorPermissionLevelResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

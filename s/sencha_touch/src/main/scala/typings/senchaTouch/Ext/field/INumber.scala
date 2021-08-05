@@ -49,67 +49,47 @@ trait INumber
 }
 object INumber {
   
-  @scala.inline
-  def apply(): INumber = {
+  inline def apply(): INumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INumber]
   }
   
-  @scala.inline
-  implicit class INumberMutableBuilder[Self <: INumber] (val x: Self) extends AnyVal {
+  extension [Self <: INumber](x: Self) {
     
-    @scala.inline
-    def setGetMaxValue(value: () => Double): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
+    inline def setGetMaxValue(value: () => Double): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxValueUndefined: Self = StObject.set(x, "getMaxValue", js.undefined)
+    inline def setGetMaxValueUndefined: Self = StObject.set(x, "getMaxValue", js.undefined)
     
-    @scala.inline
-    def setGetMinValue(value: () => Double): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
+    inline def setGetMinValue(value: () => Double): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinValueUndefined: Self = StObject.set(x, "getMinValue", js.undefined)
+    inline def setGetMinValueUndefined: Self = StObject.set(x, "getMinValue", js.undefined)
     
-    @scala.inline
-    def setGetStepValue(value: () => Double): Self = StObject.set(x, "getStepValue", js.Any.fromFunction0(value))
+    inline def setGetStepValue(value: () => Double): Self = StObject.set(x, "getStepValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStepValueUndefined: Self = StObject.set(x, "getStepValue", js.undefined)
+    inline def setGetStepValueUndefined: Self = StObject.set(x, "getStepValue", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setSetMaxValue(value: /* maxValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: /* maxValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
+    inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
-    @scala.inline
-    def setSetMinValue(value: /* minValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: /* minValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
+    inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
-    @scala.inline
-    def setSetStepValue(value: /* stepValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStepValue", js.Any.fromFunction1(value))
+    inline def setSetStepValue(value: /* stepValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStepValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStepValueUndefined: Self = StObject.set(x, "setStepValue", js.undefined)
+    inline def setSetStepValueUndefined: Self = StObject.set(x, "setStepValue", js.undefined)
     
-    @scala.inline
-    def setStepValue(value: Double): Self = StObject.set(x, "stepValue", value.asInstanceOf[js.Any])
+    inline def setStepValue(value: Double): Self = StObject.set(x, "stepValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepValueUndefined: Self = StObject.set(x, "stepValue", js.undefined)
+    inline def setStepValueUndefined: Self = StObject.set(x, "stepValue", js.undefined)
   }
 }

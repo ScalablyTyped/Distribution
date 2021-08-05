@@ -18,28 +18,21 @@ trait RegisterTaskDefinitionResponse extends StObject {
 }
 object RegisterTaskDefinitionResponse {
   
-  @scala.inline
-  def apply(): RegisterTaskDefinitionResponse = {
+  inline def apply(): RegisterTaskDefinitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterTaskDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class RegisterTaskDefinitionResponseMutableBuilder[Self <: RegisterTaskDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterTaskDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+    inline def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
+    inline def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
   }
 }

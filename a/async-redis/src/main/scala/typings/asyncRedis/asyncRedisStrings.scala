@@ -8,6 +8,5 @@ object asyncRedisStrings {
   
   @js.native
   sealed trait message extends StObject
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
+  inline def message: message = "message".asInstanceOf[message]
 }

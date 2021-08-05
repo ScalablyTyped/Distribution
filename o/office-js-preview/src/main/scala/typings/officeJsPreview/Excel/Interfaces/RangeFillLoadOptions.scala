@@ -63,49 +63,35 @@ trait RangeFillLoadOptions extends StObject {
 }
 object RangeFillLoadOptions {
   
-  @scala.inline
-  def apply(): RangeFillLoadOptions = {
+  inline def apply(): RangeFillLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeFillLoadOptions]
   }
   
-  @scala.inline
-  implicit class RangeFillLoadOptionsMutableBuilder[Self <: RangeFillLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeFillLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternColor(value: Boolean): Self = StObject.set(x, "patternColor", value.asInstanceOf[js.Any])
+    inline def setPatternColor(value: Boolean): Self = StObject.set(x, "patternColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternColorUndefined: Self = StObject.set(x, "patternColor", js.undefined)
+    inline def setPatternColorUndefined: Self = StObject.set(x, "patternColor", js.undefined)
     
-    @scala.inline
-    def setPatternTintAndShade(value: Boolean): Self = StObject.set(x, "patternTintAndShade", value.asInstanceOf[js.Any])
+    inline def setPatternTintAndShade(value: Boolean): Self = StObject.set(x, "patternTintAndShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternTintAndShadeUndefined: Self = StObject.set(x, "patternTintAndShade", js.undefined)
+    inline def setPatternTintAndShadeUndefined: Self = StObject.set(x, "patternTintAndShade", js.undefined)
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setTintAndShade(value: Boolean): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    inline def setTintAndShade(value: Boolean): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
   }
 }

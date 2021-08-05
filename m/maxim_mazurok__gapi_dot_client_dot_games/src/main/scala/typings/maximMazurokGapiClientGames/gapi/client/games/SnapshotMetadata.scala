@@ -26,49 +26,35 @@ trait SnapshotMetadata extends StObject {
 }
 object SnapshotMetadata {
   
-  @scala.inline
-  def apply(): SnapshotMetadata = {
+  inline def apply(): SnapshotMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotMetadata]
   }
   
-  @scala.inline
-  implicit class SnapshotMetadataMutableBuilder[Self <: SnapshotMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotMetadata](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setLastModifyTime(value: String): Self = StObject.set(x, "lastModifyTime", value.asInstanceOf[js.Any])
+    inline def setLastModifyTime(value: String): Self = StObject.set(x, "lastModifyTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifyTimeUndefined: Self = StObject.set(x, "lastModifyTime", js.undefined)
+    inline def setLastModifyTimeUndefined: Self = StObject.set(x, "lastModifyTime", js.undefined)
     
-    @scala.inline
-    def setProgressValue(value: String): Self = StObject.set(x, "progressValue", value.asInstanceOf[js.Any])
+    inline def setProgressValue(value: String): Self = StObject.set(x, "progressValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressValueUndefined: Self = StObject.set(x, "progressValue", js.undefined)
+    inline def setProgressValueUndefined: Self = StObject.set(x, "progressValue", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

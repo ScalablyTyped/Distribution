@@ -20,37 +20,27 @@ trait RiceDeltaEncoding extends StObject {
 }
 object RiceDeltaEncoding {
   
-  @scala.inline
-  def apply(): RiceDeltaEncoding = {
+  inline def apply(): RiceDeltaEncoding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RiceDeltaEncoding]
   }
   
-  @scala.inline
-  implicit class RiceDeltaEncodingMutableBuilder[Self <: RiceDeltaEncoding] (val x: Self) extends AnyVal {
+  extension [Self <: RiceDeltaEncoding](x: Self) {
     
-    @scala.inline
-    def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
+    inline def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedDataUndefined: Self = StObject.set(x, "encodedData", js.undefined)
+    inline def setEncodedDataUndefined: Self = StObject.set(x, "encodedData", js.undefined)
     
-    @scala.inline
-    def setFirstValue(value: String): Self = StObject.set(x, "firstValue", value.asInstanceOf[js.Any])
+    inline def setFirstValue(value: String): Self = StObject.set(x, "firstValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstValueUndefined: Self = StObject.set(x, "firstValue", js.undefined)
+    inline def setFirstValueUndefined: Self = StObject.set(x, "firstValue", js.undefined)
     
-    @scala.inline
-    def setNumEntries(value: Double): Self = StObject.set(x, "numEntries", value.asInstanceOf[js.Any])
+    inline def setNumEntries(value: Double): Self = StObject.set(x, "numEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumEntriesUndefined: Self = StObject.set(x, "numEntries", js.undefined)
+    inline def setNumEntriesUndefined: Self = StObject.set(x, "numEntries", js.undefined)
     
-    @scala.inline
-    def setRiceParameter(value: Double): Self = StObject.set(x, "riceParameter", value.asInstanceOf[js.Any])
+    inline def setRiceParameter(value: Double): Self = StObject.set(x, "riceParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiceParameterUndefined: Self = StObject.set(x, "riceParameter", js.undefined)
+    inline def setRiceParameterUndefined: Self = StObject.set(x, "riceParameter", js.undefined)
   }
 }

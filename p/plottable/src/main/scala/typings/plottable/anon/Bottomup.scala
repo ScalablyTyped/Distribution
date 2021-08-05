@@ -14,19 +14,15 @@ trait Bottomup extends StObject {
 }
 object Bottomup {
   
-  @scala.inline
-  def apply(): Bottomup = {
+  inline def apply(): Bottomup = {
     val __obj = js.Dynamic.literal(bottomup = "bottomup", topdown = "topdown")
     __obj.asInstanceOf[Bottomup]
   }
   
-  @scala.inline
-  implicit class BottomupMutableBuilder[Self <: Bottomup] (val x: Self) extends AnyVal {
+  extension [Self <: Bottomup](x: Self) {
     
-    @scala.inline
-    def setBottomup(value: bottomup): Self = StObject.set(x, "bottomup", value.asInstanceOf[js.Any])
+    inline def setBottomup(value: bottomup): Self = StObject.set(x, "bottomup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopdown(value: topdown): Self = StObject.set(x, "topdown", value.asInstanceOf[js.Any])
+    inline def setTopdown(value: topdown): Self = StObject.set(x, "topdown", value.asInstanceOf[js.Any])
   }
 }

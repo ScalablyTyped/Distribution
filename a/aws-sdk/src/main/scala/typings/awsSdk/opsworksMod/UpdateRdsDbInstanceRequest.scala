@@ -23,28 +23,21 @@ trait UpdateRdsDbInstanceRequest extends StObject {
 }
 object UpdateRdsDbInstanceRequest {
   
-  @scala.inline
-  def apply(RdsDbInstanceArn: String): UpdateRdsDbInstanceRequest = {
+  inline def apply(RdsDbInstanceArn: String): UpdateRdsDbInstanceRequest = {
     val __obj = js.Dynamic.literal(RdsDbInstanceArn = RdsDbInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRdsDbInstanceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRdsDbInstanceRequestMutableBuilder[Self <: UpdateRdsDbInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRdsDbInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setDbPassword(value: String): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
+    inline def setDbPassword(value: String): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
+    inline def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
     
-    @scala.inline
-    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
+    inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    @scala.inline
-    def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
+    inline def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
   }
 }

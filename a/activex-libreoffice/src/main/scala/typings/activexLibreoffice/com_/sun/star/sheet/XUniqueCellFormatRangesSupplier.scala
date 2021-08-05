@@ -44,8 +44,7 @@ trait XUniqueCellFormatRangesSupplier
 }
 object XUniqueCellFormatRangesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     UniqueCellFormatRanges: XIndexAccess,
     acquire: () => Unit,
     getUniqueCellFormatRanges: () => XIndexAccess,
@@ -56,13 +55,10 @@ object XUniqueCellFormatRangesSupplier {
     __obj.asInstanceOf[XUniqueCellFormatRangesSupplier]
   }
   
-  @scala.inline
-  implicit class XUniqueCellFormatRangesSupplierMutableBuilder[Self <: XUniqueCellFormatRangesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XUniqueCellFormatRangesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetUniqueCellFormatRanges(value: () => XIndexAccess): Self = StObject.set(x, "getUniqueCellFormatRanges", js.Any.fromFunction0(value))
+    inline def setGetUniqueCellFormatRanges(value: () => XIndexAccess): Self = StObject.set(x, "getUniqueCellFormatRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUniqueCellFormatRanges(value: XIndexAccess): Self = StObject.set(x, "UniqueCellFormatRanges", value.asInstanceOf[js.Any])
+    inline def setUniqueCellFormatRanges(value: XIndexAccess): Self = StObject.set(x, "UniqueCellFormatRanges", value.asInstanceOf[js.Any])
   }
 }

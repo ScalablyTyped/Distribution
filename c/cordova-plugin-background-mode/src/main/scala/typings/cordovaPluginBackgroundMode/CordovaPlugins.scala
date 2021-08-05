@@ -10,16 +10,13 @@ trait CordovaPlugins extends StObject {
 }
 object CordovaPlugins {
   
-  @scala.inline
-  def apply(backgroundMode: CordovaPluginBackgroundMode): CordovaPlugins = {
+  inline def apply(backgroundMode: CordovaPluginBackgroundMode): CordovaPlugins = {
     val __obj = js.Dynamic.literal(backgroundMode = backgroundMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPlugins](x: Self) {
     
-    @scala.inline
-    def setBackgroundMode(value: CordovaPluginBackgroundMode): Self = StObject.set(x, "backgroundMode", value.asInstanceOf[js.Any])
+    inline def setBackgroundMode(value: CordovaPluginBackgroundMode): Self = StObject.set(x, "backgroundMode", value.asInstanceOf[js.Any])
   }
 }

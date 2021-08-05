@@ -19,43 +19,31 @@ trait PartialClassNameMapTimeliAlignAlternate extends StObject {
 }
 object PartialClassNameMapTimeliAlignAlternate {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTimeliAlignAlternate = {
+  inline def apply(): PartialClassNameMapTimeliAlignAlternate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTimeliAlignAlternate]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTimeliAlignAlternateMutableBuilder[Self <: PartialClassNameMapTimeliAlignAlternate] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTimeliAlignAlternate](x: Self) {
     
-    @scala.inline
-    def setAlignAlternate(value: String): Self = StObject.set(x, "alignAlternate", value.asInstanceOf[js.Any])
+    inline def setAlignAlternate(value: String): Self = StObject.set(x, "alignAlternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignAlternateUndefined: Self = StObject.set(x, "alignAlternate", js.undefined)
+    inline def setAlignAlternateUndefined: Self = StObject.set(x, "alignAlternate", js.undefined)
     
-    @scala.inline
-    def setAlignLeft(value: String): Self = StObject.set(x, "alignLeft", value.asInstanceOf[js.Any])
+    inline def setAlignLeft(value: String): Self = StObject.set(x, "alignLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignLeftUndefined: Self = StObject.set(x, "alignLeft", js.undefined)
+    inline def setAlignLeftUndefined: Self = StObject.set(x, "alignLeft", js.undefined)
     
-    @scala.inline
-    def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
+    inline def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
+    inline def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
     
-    @scala.inline
-    def setMissingOppositeContent(value: String): Self = StObject.set(x, "missingOppositeContent", value.asInstanceOf[js.Any])
+    inline def setMissingOppositeContent(value: String): Self = StObject.set(x, "missingOppositeContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingOppositeContentUndefined: Self = StObject.set(x, "missingOppositeContent", js.undefined)
+    inline def setMissingOppositeContentUndefined: Self = StObject.set(x, "missingOppositeContent", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

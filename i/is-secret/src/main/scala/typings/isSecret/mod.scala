@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def key(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def key(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def value(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def value(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

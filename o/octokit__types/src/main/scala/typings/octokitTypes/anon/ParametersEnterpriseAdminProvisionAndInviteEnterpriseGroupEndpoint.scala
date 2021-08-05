@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint extends
 }
 object ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint,
     request: EnterpriseAdminProvisionAndInviteEnterpriseGroupRequestOptions,
     response: OctokitResponse[EnterpriseAdminProvisionAndInviteEnterpriseGroupResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpointMutableBuilder[Self <: ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminProvisionAndInviteEnterpriseGroupRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminProvisionAndInviteEnterpriseGroupRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminProvisionAndInviteEnterpriseGroupResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminProvisionAndInviteEnterpriseGroupResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

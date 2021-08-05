@@ -23,8 +23,7 @@ trait XLinguServiceEventListener
 }
 object XLinguServiceEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     processLinguServiceEvent: LinguServiceEvent => Unit,
@@ -35,10 +34,8 @@ object XLinguServiceEventListener {
     __obj.asInstanceOf[XLinguServiceEventListener]
   }
   
-  @scala.inline
-  implicit class XLinguServiceEventListenerMutableBuilder[Self <: XLinguServiceEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XLinguServiceEventListener](x: Self) {
     
-    @scala.inline
-    def setProcessLinguServiceEvent(value: LinguServiceEvent => Unit): Self = StObject.set(x, "processLinguServiceEvent", js.Any.fromFunction1(value))
+    inline def setProcessLinguServiceEvent(value: LinguServiceEvent => Unit): Self = StObject.set(x, "processLinguServiceEvent", js.Any.fromFunction1(value))
   }
 }

@@ -26,67 +26,47 @@ trait ParsedCommandLine extends StObject {
 }
 object ParsedCommandLine {
   
-  @scala.inline
-  def apply(errors: js.Array[Diagnostic], fileNames: js.Array[java.lang.String], options: CompilerOptions): ParsedCommandLine = {
+  inline def apply(errors: js.Array[Diagnostic], fileNames: js.Array[java.lang.String], options: CompilerOptions): ParsedCommandLine = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], fileNames = fileNames.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedCommandLine]
   }
   
-  @scala.inline
-  implicit class ParsedCommandLineMutableBuilder[Self <: ParsedCommandLine] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedCommandLine](x: Self) {
     
-    @scala.inline
-    def setCompileOnSave(value: Boolean): Self = StObject.set(x, "compileOnSave", value.asInstanceOf[js.Any])
+    inline def setCompileOnSave(value: Boolean): Self = StObject.set(x, "compileOnSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompileOnSaveUndefined: Self = StObject.set(x, "compileOnSave", js.undefined)
+    inline def setCompileOnSaveUndefined: Self = StObject.set(x, "compileOnSave", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setFileNames(value: js.Array[java.lang.String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
+    inline def setFileNames(value: js.Array[java.lang.String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNamesVarargs(value: java.lang.String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
+    inline def setFileNamesVarargs(value: java.lang.String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectReferences(value: js.Array[ProjectReference]): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
+    inline def setProjectReferences(value: js.Array[ProjectReference]): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectReferencesUndefined: Self = StObject.set(x, "projectReferences", js.undefined)
+    inline def setProjectReferencesUndefined: Self = StObject.set(x, "projectReferences", js.undefined)
     
-    @scala.inline
-    def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value :_*))
+    inline def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
+    inline def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAcquisitionUndefined: Self = StObject.set(x, "typeAcquisition", js.undefined)
+    inline def setTypeAcquisitionUndefined: Self = StObject.set(x, "typeAcquisition", js.undefined)
     
-    @scala.inline
-    def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
+    inline def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
+    inline def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
     
-    @scala.inline
-    def setWildcardDirectories(value: MapLike[WatchDirectoryFlags]): Self = StObject.set(x, "wildcardDirectories", value.asInstanceOf[js.Any])
+    inline def setWildcardDirectories(value: MapLike[WatchDirectoryFlags]): Self = StObject.set(x, "wildcardDirectories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWildcardDirectoriesUndefined: Self = StObject.set(x, "wildcardDirectories", js.undefined)
+    inline def setWildcardDirectoriesUndefined: Self = StObject.set(x, "wildcardDirectories", js.undefined)
   }
 }

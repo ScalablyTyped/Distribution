@@ -18,25 +18,19 @@ trait Schedule extends StObject {
 }
 object Schedule {
   
-  @scala.inline
-  def apply(): Schedule = {
+  inline def apply(): Schedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Schedule]
   }
   
-  @scala.inline
-  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
+  extension [Self <: Schedule](x: Self) {
     
-    @scala.inline
-    def setPipelineExecutionStartCondition(value: PipelineExecutionStartCondition): Self = StObject.set(x, "pipelineExecutionStartCondition", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionStartCondition(value: PipelineExecutionStartCondition): Self = StObject.set(x, "pipelineExecutionStartCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineExecutionStartConditionUndefined: Self = StObject.set(x, "pipelineExecutionStartCondition", js.undefined)
+    inline def setPipelineExecutionStartConditionUndefined: Self = StObject.set(x, "pipelineExecutionStartCondition", js.undefined)
     
-    @scala.inline
-    def setScheduleExpression(value: NonEmptyString): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
+    inline def setScheduleExpression(value: NonEmptyString): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
+    inline def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
   }
 }

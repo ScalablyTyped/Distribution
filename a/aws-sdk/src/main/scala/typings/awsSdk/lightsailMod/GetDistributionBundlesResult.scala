@@ -13,22 +13,17 @@ trait GetDistributionBundlesResult extends StObject {
 }
 object GetDistributionBundlesResult {
   
-  @scala.inline
-  def apply(): GetDistributionBundlesResult = {
+  inline def apply(): GetDistributionBundlesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDistributionBundlesResult]
   }
   
-  @scala.inline
-  implicit class GetDistributionBundlesResultMutableBuilder[Self <: GetDistributionBundlesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionBundlesResult](x: Self) {
     
-    @scala.inline
-    def setBundles(value: DistributionBundleList): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+    inline def setBundles(value: DistributionBundleList): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
+    inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    @scala.inline
-    def setBundlesVarargs(value: DistributionBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: DistributionBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
   }
 }

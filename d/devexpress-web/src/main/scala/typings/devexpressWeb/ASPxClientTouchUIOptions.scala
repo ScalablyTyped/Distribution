@@ -31,8 +31,7 @@ trait ASPxClientTouchUIOptions extends StObject {
 }
 object ASPxClientTouchUIOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hScrollClassName: String,
     showHorizontalScrollbar: Boolean,
     showVerticalScrollbar: Boolean,
@@ -42,19 +41,14 @@ object ASPxClientTouchUIOptions {
     __obj.asInstanceOf[ASPxClientTouchUIOptions]
   }
   
-  @scala.inline
-  implicit class ASPxClientTouchUIOptionsMutableBuilder[Self <: ASPxClientTouchUIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTouchUIOptions](x: Self) {
     
-    @scala.inline
-    def setHScrollClassName(value: String): Self = StObject.set(x, "hScrollClassName", value.asInstanceOf[js.Any])
+    inline def setHScrollClassName(value: String): Self = StObject.set(x, "hScrollClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHorizontalScrollbar(value: Boolean): Self = StObject.set(x, "showHorizontalScrollbar", value.asInstanceOf[js.Any])
+    inline def setShowHorizontalScrollbar(value: Boolean): Self = StObject.set(x, "showHorizontalScrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowVerticalScrollbar(value: Boolean): Self = StObject.set(x, "showVerticalScrollbar", value.asInstanceOf[js.Any])
+    inline def setShowVerticalScrollbar(value: Boolean): Self = StObject.set(x, "showVerticalScrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVScrollClassName(value: String): Self = StObject.set(x, "vScrollClassName", value.asInstanceOf[js.Any])
+    inline def setVScrollClassName(value: String): Self = StObject.set(x, "vScrollClassName", value.asInstanceOf[js.Any])
   }
 }

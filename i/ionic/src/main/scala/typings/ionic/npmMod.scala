@@ -13,11 +13,9 @@ object npmMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pkgFromRegistry(npmClient: NpmClient, options: PartialPkgManagerOptions): js.Promise[js.UndefOr[PackageJson]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pkgFromRegistry")(npmClient.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[PackageJson]]]
+  inline def pkgFromRegistry(npmClient: NpmClient, options: PartialPkgManagerOptions): js.Promise[js.UndefOr[PackageJson]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pkgFromRegistry")(npmClient.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[PackageJson]]]
   
-  @scala.inline
-  def pkgManagerArgs(npmClient: NpmClient, options: PkgManagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pkgManagerArgs")(npmClient.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def pkgManagerArgs(npmClient: NpmClient, options: PkgManagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pkgManagerArgs")(npmClient.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ionic.ionicStrings.dedupe
@@ -30,23 +28,17 @@ object npmMod {
   trait PkgManagerCommand extends StObject
   object PkgManagerCommand {
     
-    @scala.inline
-    def dedupe: typings.ionic.ionicStrings.dedupe = "dedupe".asInstanceOf[typings.ionic.ionicStrings.dedupe]
+    inline def dedupe: typings.ionic.ionicStrings.dedupe = "dedupe".asInstanceOf[typings.ionic.ionicStrings.dedupe]
     
-    @scala.inline
-    def info: typings.ionic.ionicStrings.info = "info".asInstanceOf[typings.ionic.ionicStrings.info]
+    inline def info: typings.ionic.ionicStrings.info = "info".asInstanceOf[typings.ionic.ionicStrings.info]
     
-    @scala.inline
-    def install: typings.ionic.ionicStrings.install = "install".asInstanceOf[typings.ionic.ionicStrings.install]
+    inline def install: typings.ionic.ionicStrings.install = "install".asInstanceOf[typings.ionic.ionicStrings.install]
     
-    @scala.inline
-    def rebuild: typings.ionic.ionicStrings.rebuild = "rebuild".asInstanceOf[typings.ionic.ionicStrings.rebuild]
+    inline def rebuild: typings.ionic.ionicStrings.rebuild = "rebuild".asInstanceOf[typings.ionic.ionicStrings.rebuild]
     
-    @scala.inline
-    def run: typings.ionic.ionicStrings.run = "run".asInstanceOf[typings.ionic.ionicStrings.run]
+    inline def run: typings.ionic.ionicStrings.run = "run".asInstanceOf[typings.ionic.ionicStrings.run]
     
-    @scala.inline
-    def uninstall: typings.ionic.ionicStrings.uninstall = "uninstall".asInstanceOf[typings.ionic.ionicStrings.uninstall]
+    inline def uninstall: typings.ionic.ionicStrings.uninstall = "uninstall".asInstanceOf[typings.ionic.ionicStrings.uninstall]
   }
   
   trait PkgManagerOptions extends StObject {
@@ -71,68 +63,48 @@ object npmMod {
   }
   object PkgManagerOptions {
     
-    @scala.inline
-    def apply(command: PkgManagerCommand): PkgManagerOptions = {
+    inline def apply(command: PkgManagerCommand): PkgManagerOptions = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[PkgManagerOptions]
     }
     
-    @scala.inline
-    implicit class PkgManagerOptionsMutableBuilder[Self <: PkgManagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PkgManagerOptions](x: Self) {
       
-      @scala.inline
-      def setCommand(value: PkgManagerCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: PkgManagerCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+      inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
       
-      @scala.inline
-      def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+      inline def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveDev(value: Boolean): Self = StObject.set(x, "saveDev", value.asInstanceOf[js.Any])
+      inline def setSaveDev(value: Boolean): Self = StObject.set(x, "saveDev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveDevUndefined: Self = StObject.set(x, "saveDev", js.undefined)
+      inline def setSaveDevUndefined: Self = StObject.set(x, "saveDev", js.undefined)
       
-      @scala.inline
-      def setSaveExact(value: Boolean): Self = StObject.set(x, "saveExact", value.asInstanceOf[js.Any])
+      inline def setSaveExact(value: Boolean): Self = StObject.set(x, "saveExact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveExactUndefined: Self = StObject.set(x, "saveExact", js.undefined)
+      inline def setSaveExactUndefined: Self = StObject.set(x, "saveExact", js.undefined)
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptArgs(value: js.Array[String]): Self = StObject.set(x, "scriptArgs", value.asInstanceOf[js.Any])
+      inline def setScriptArgs(value: js.Array[String]): Self = StObject.set(x, "scriptArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptArgsUndefined: Self = StObject.set(x, "scriptArgs", js.undefined)
+      inline def setScriptArgsUndefined: Self = StObject.set(x, "scriptArgs", js.undefined)
       
-      @scala.inline
-      def setScriptArgsVarargs(value: String*): Self = StObject.set(x, "scriptArgs", js.Array(value :_*))
+      inline def setScriptArgsVarargs(value: String*): Self = StObject.set(x, "scriptArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     }
   }
 }

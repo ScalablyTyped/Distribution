@@ -8,11 +8,9 @@ object miniStoreStrings {
   
   @js.native
   sealed trait Matching extends StObject
-  @scala.inline
-  def Matching: Matching = "Matching".asInstanceOf[Matching]
+  inline def Matching: Matching = "Matching".asInstanceOf[Matching]
   
   @js.native
   sealed trait Shared extends StObject
-  @scala.inline
-  def Shared: Shared = "Shared".asInstanceOf[Shared]
+  inline def Shared: Shared = "Shared".asInstanceOf[Shared]
 }

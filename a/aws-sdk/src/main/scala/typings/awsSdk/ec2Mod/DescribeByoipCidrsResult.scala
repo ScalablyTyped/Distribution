@@ -18,28 +18,21 @@ trait DescribeByoipCidrsResult extends StObject {
 }
 object DescribeByoipCidrsResult {
   
-  @scala.inline
-  def apply(): DescribeByoipCidrsResult = {
+  inline def apply(): DescribeByoipCidrsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeByoipCidrsResult]
   }
   
-  @scala.inline
-  implicit class DescribeByoipCidrsResultMutableBuilder[Self <: DescribeByoipCidrsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeByoipCidrsResult](x: Self) {
     
-    @scala.inline
-    def setByoipCidrs(value: ByoipCidrSet): Self = StObject.set(x, "ByoipCidrs", value.asInstanceOf[js.Any])
+    inline def setByoipCidrs(value: ByoipCidrSet): Self = StObject.set(x, "ByoipCidrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByoipCidrsUndefined: Self = StObject.set(x, "ByoipCidrs", js.undefined)
+    inline def setByoipCidrsUndefined: Self = StObject.set(x, "ByoipCidrs", js.undefined)
     
-    @scala.inline
-    def setByoipCidrsVarargs(value: ByoipCidr*): Self = StObject.set(x, "ByoipCidrs", js.Array(value :_*))
+    inline def setByoipCidrsVarargs(value: ByoipCidr*): Self = StObject.set(x, "ByoipCidrs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

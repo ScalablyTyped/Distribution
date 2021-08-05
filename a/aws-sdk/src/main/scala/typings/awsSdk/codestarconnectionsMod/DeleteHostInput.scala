@@ -13,16 +13,13 @@ trait DeleteHostInput extends StObject {
 }
 object DeleteHostInput {
   
-  @scala.inline
-  def apply(HostArn: HostArn): DeleteHostInput = {
+  inline def apply(HostArn: HostArn): DeleteHostInput = {
     val __obj = js.Dynamic.literal(HostArn = HostArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHostInput]
   }
   
-  @scala.inline
-  implicit class DeleteHostInputMutableBuilder[Self <: DeleteHostInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHostInput](x: Self) {
     
-    @scala.inline
-    def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
+    inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
   }
 }

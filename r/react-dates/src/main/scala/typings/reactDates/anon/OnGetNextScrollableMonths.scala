@@ -15,19 +15,15 @@ trait OnGetNextScrollableMonths extends StObject {
 }
 object OnGetNextScrollableMonths {
   
-  @scala.inline
-  def apply(): OnGetNextScrollableMonths = {
+  inline def apply(): OnGetNextScrollableMonths = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnGetNextScrollableMonths]
   }
   
-  @scala.inline
-  implicit class OnGetNextScrollableMonthsMutableBuilder[Self <: OnGetNextScrollableMonths] (val x: Self) extends AnyVal {
+  extension [Self <: OnGetNextScrollableMonths](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: OrientationShape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: OrientationShape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

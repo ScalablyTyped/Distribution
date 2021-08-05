@@ -11,8 +11,7 @@ trait TagResourceInput
      with typings.awsSdkClientKmsNode.typesTagResourceInputMod.TagResourceInput
 object TagResourceInput {
   
-  @scala.inline
-  def apply(KeyId: String, Tags: js.Array[Tag] | Iterable[Tag]): TagResourceInput = {
+  inline def apply(KeyId: String, Tags: js.Array[Tag] | Iterable[Tag]): TagResourceInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagResourceInput]
   }

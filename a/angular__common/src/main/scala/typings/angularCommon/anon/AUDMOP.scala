@@ -18,8 +18,7 @@ trait AUDMOP extends StObject {
 }
 object AUDMOP {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AUD: js.Array[String],
     MOP: js.Array[String],
     RON: js.Array[js.UndefOr[String]],
@@ -30,37 +29,26 @@ object AUDMOP {
     __obj.asInstanceOf[AUDMOP]
   }
   
-  @scala.inline
-  implicit class AUDMOPMutableBuilder[Self <: AUDMOP] (val x: Self) extends AnyVal {
+  extension [Self <: AUDMOP](x: Self) {
     
-    @scala.inline
-    def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
+    inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value :_*))
+    inline def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value :_*))
     
-    @scala.inline
-    def setMOP(value: js.Array[String]): Self = StObject.set(x, "MOP", value.asInstanceOf[js.Any])
+    inline def setMOP(value: js.Array[String]): Self = StObject.set(x, "MOP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMOPVarargs(value: String*): Self = StObject.set(x, "MOP", js.Array(value :_*))
+    inline def setMOPVarargs(value: String*): Self = StObject.set(x, "MOP", js.Array(value :_*))
     
-    @scala.inline
-    def setRON(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "RON", value.asInstanceOf[js.Any])
+    inline def setRON(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "RON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRONVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "RON", js.Array(value :_*))
+    inline def setRONVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "RON", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
     
-    @scala.inline
-    def setXXX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "XXX", value.asInstanceOf[js.Any])
+    inline def setXXX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "XXX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXXXVarargs(value: scala.Nothing*): Self = StObject.set(x, "XXX", js.Array(value :_*))
+    inline def setXXXVarargs(value: scala.Nothing*): Self = StObject.set(x, "XXX", js.Array(value :_*))
   }
 }

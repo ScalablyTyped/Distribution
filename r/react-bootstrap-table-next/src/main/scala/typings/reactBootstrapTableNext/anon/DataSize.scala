@@ -10,16 +10,13 @@ trait DataSize extends StObject {
 }
 object DataSize {
   
-  @scala.inline
-  def apply(dataSize: Double): DataSize = {
+  inline def apply(dataSize: Double): DataSize = {
     val __obj = js.Dynamic.literal(dataSize = dataSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSize]
   }
   
-  @scala.inline
-  implicit class DataSizeMutableBuilder[Self <: DataSize] (val x: Self) extends AnyVal {
+  extension [Self <: DataSize](x: Self) {
     
-    @scala.inline
-    def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
   }
 }

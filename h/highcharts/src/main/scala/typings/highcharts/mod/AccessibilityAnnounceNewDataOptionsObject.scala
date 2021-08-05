@@ -51,39 +51,29 @@ trait AccessibilityAnnounceNewDataOptionsObject extends StObject {
 }
 object AccessibilityAnnounceNewDataOptionsObject {
   
-  @scala.inline
-  def apply(): AccessibilityAnnounceNewDataOptionsObject = {
+  inline def apply(): AccessibilityAnnounceNewDataOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilityAnnounceNewDataOptionsObject]
   }
   
-  @scala.inline
-  implicit class AccessibilityAnnounceNewDataOptionsObjectMutableBuilder[Self <: AccessibilityAnnounceNewDataOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityAnnounceNewDataOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnnouncementFormatter(
+    inline def setAnnouncementFormatter(
       value: (/* updatedSeries */ js.Array[Series], /* addedSeries */ js.UndefOr[Series], /* addedPoint */ js.UndefOr[Point]) => `false` | String
     ): Self = StObject.set(x, "announcementFormatter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAnnouncementFormatterUndefined: Self = StObject.set(x, "announcementFormatter", js.undefined)
+    inline def setAnnouncementFormatterUndefined: Self = StObject.set(x, "announcementFormatter", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setInterruptUser(value: Boolean): Self = StObject.set(x, "interruptUser", value.asInstanceOf[js.Any])
+    inline def setInterruptUser(value: Boolean): Self = StObject.set(x, "interruptUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterruptUserUndefined: Self = StObject.set(x, "interruptUser", js.undefined)
+    inline def setInterruptUserUndefined: Self = StObject.set(x, "interruptUser", js.undefined)
     
-    @scala.inline
-    def setMinAnnounceInterval(value: Double): Self = StObject.set(x, "minAnnounceInterval", value.asInstanceOf[js.Any])
+    inline def setMinAnnounceInterval(value: Double): Self = StObject.set(x, "minAnnounceInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAnnounceIntervalUndefined: Self = StObject.set(x, "minAnnounceInterval", js.undefined)
+    inline def setMinAnnounceIntervalUndefined: Self = StObject.set(x, "minAnnounceInterval", js.undefined)
   }
 }

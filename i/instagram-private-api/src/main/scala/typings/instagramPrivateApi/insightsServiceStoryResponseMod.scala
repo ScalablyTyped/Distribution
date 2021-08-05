@@ -12,17 +12,14 @@ object insightsServiceStoryResponseMod {
   }
   object InsightsServiceStoryResponseData {
     
-    @scala.inline
-    def apply(media: InsightsServiceStoryResponseMedia): InsightsServiceStoryResponseData = {
+    inline def apply(media: InsightsServiceStoryResponseMedia): InsightsServiceStoryResponseData = {
       val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
       __obj.asInstanceOf[InsightsServiceStoryResponseData]
     }
     
-    @scala.inline
-    implicit class InsightsServiceStoryResponseDataMutableBuilder[Self <: InsightsServiceStoryResponseData] (val x: Self) extends AnyVal {
+    extension [Self <: InsightsServiceStoryResponseData](x: Self) {
       
-      @scala.inline
-      def setMedia(value: InsightsServiceStoryResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: InsightsServiceStoryResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object insightsServiceStoryResponseMod {
   }
   object InsightsServiceStoryResponseInlineInsightsNode {
     
-    @scala.inline
-    def apply(metrics: Null, state: String): InsightsServiceStoryResponseInlineInsightsNode = {
+    inline def apply(metrics: Null, state: String): InsightsServiceStoryResponseInlineInsightsNode = {
       val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[InsightsServiceStoryResponseInlineInsightsNode]
     }
     
-    @scala.inline
-    implicit class InsightsServiceStoryResponseInlineInsightsNodeMutableBuilder[Self <: InsightsServiceStoryResponseInlineInsightsNode] (val x: Self) extends AnyVal {
+    extension [Self <: InsightsServiceStoryResponseInlineInsightsNode](x: Self) {
       
-      @scala.inline
-      def setMetrics(value: Null): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: Null): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,20 +52,16 @@ object insightsServiceStoryResponseMod {
   }
   object InsightsServiceStoryResponseInstagramActor {
     
-    @scala.inline
-    def apply(id: String, instagram_actor_id: String): InsightsServiceStoryResponseInstagramActor = {
+    inline def apply(id: String, instagram_actor_id: String): InsightsServiceStoryResponseInstagramActor = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], instagram_actor_id = instagram_actor_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InsightsServiceStoryResponseInstagramActor]
     }
     
-    @scala.inline
-    implicit class InsightsServiceStoryResponseInstagramActorMutableBuilder[Self <: InsightsServiceStoryResponseInstagramActor] (val x: Self) extends AnyVal {
+    extension [Self <: InsightsServiceStoryResponseInstagramActor](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstagram_actor_id(value: String): Self = StObject.set(x, "instagram_actor_id", value.asInstanceOf[js.Any])
+      inline def setInstagram_actor_id(value: String): Self = StObject.set(x, "instagram_actor_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,8 +87,7 @@ object insightsServiceStoryResponseMod {
   }
   object InsightsServiceStoryResponseMedia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       creation_time: Double,
       id: String,
       inline_insights_node: InsightsServiceStoryResponseInlineInsightsNode,
@@ -114,35 +102,25 @@ object insightsServiceStoryResponseMod {
       __obj.asInstanceOf[InsightsServiceStoryResponseMedia]
     }
     
-    @scala.inline
-    implicit class InsightsServiceStoryResponseMediaMutableBuilder[Self <: InsightsServiceStoryResponseMedia] (val x: Self) extends AnyVal {
+    extension [Self <: InsightsServiceStoryResponseMedia](x: Self) {
       
-      @scala.inline
-      def setCreation_time(value: Double): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
+      inline def setCreation_time(value: Double): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInline_insights_node(value: InsightsServiceStoryResponseInlineInsightsNode): Self = StObject.set(x, "inline_insights_node", value.asInstanceOf[js.Any])
+      inline def setInline_insights_node(value: InsightsServiceStoryResponseInlineInsightsNode): Self = StObject.set(x, "inline_insights_node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstagram_actor(value: InsightsServiceStoryResponseInstagramActor): Self = StObject.set(x, "instagram_actor", value.asInstanceOf[js.Any])
+      inline def setInstagram_actor(value: InsightsServiceStoryResponseInstagramActor): Self = StObject.set(x, "instagram_actor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstagram_media_id(value: String): Self = StObject.set(x, "instagram_media_id", value.asInstanceOf[js.Any])
+      inline def setInstagram_media_id(value: String): Self = StObject.set(x, "instagram_media_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstagram_media_owner_id(value: String): Self = StObject.set(x, "instagram_media_owner_id", value.asInstanceOf[js.Any])
+      inline def setInstagram_media_owner_id(value: String): Self = StObject.set(x, "instagram_media_owner_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShopping_outbound_click_count(value: Double): Self = StObject.set(x, "shopping_outbound_click_count", value.asInstanceOf[js.Any])
+      inline def setShopping_outbound_click_count(value: Double): Self = StObject.set(x, "shopping_outbound_click_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaps_back_count(value: Double): Self = StObject.set(x, "taps_back_count", value.asInstanceOf[js.Any])
+      inline def setTaps_back_count(value: Double): Self = StObject.set(x, "taps_back_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaps_forward_count(value: Double): Self = StObject.set(x, "taps_forward_count", value.asInstanceOf[js.Any])
+      inline def setTaps_forward_count(value: Double): Self = StObject.set(x, "taps_forward_count", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,17 +130,14 @@ object insightsServiceStoryResponseMod {
   }
   object InsightsServiceStoryResponseRootObject {
     
-    @scala.inline
-    def apply(data: InsightsServiceStoryResponseData): InsightsServiceStoryResponseRootObject = {
+    inline def apply(data: InsightsServiceStoryResponseData): InsightsServiceStoryResponseRootObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[InsightsServiceStoryResponseRootObject]
     }
     
-    @scala.inline
-    implicit class InsightsServiceStoryResponseRootObjectMutableBuilder[Self <: InsightsServiceStoryResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: InsightsServiceStoryResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setData(value: InsightsServiceStoryResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: InsightsServiceStoryResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
 }

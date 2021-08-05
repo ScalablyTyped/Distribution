@@ -8,11 +8,9 @@ object reactShareStrings {
   
   @js.native
   sealed trait screenCenter extends StObject
-  @scala.inline
-  def screenCenter: screenCenter = "screenCenter".asInstanceOf[screenCenter]
+  inline def screenCenter: screenCenter = "screenCenter".asInstanceOf[screenCenter]
   
   @js.native
   sealed trait windowCenter extends StObject
-  @scala.inline
-  def windowCenter: windowCenter = "windowCenter".asInstanceOf[windowCenter]
+  inline def windowCenter: windowCenter = "windowCenter".asInstanceOf[windowCenter]
 }

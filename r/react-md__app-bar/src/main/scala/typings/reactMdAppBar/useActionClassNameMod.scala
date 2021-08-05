@@ -11,10 +11,8 @@ object useActionClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useActionClassName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")().asInstanceOf[String]
-  @scala.inline
-  def useActionClassName(hasFirstLastInheritColorClassName: AppBarActionClassNameProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")(hasFirstLastInheritColorClassName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def useActionClassName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")().asInstanceOf[String]
+  inline def useActionClassName(hasFirstLastInheritColorClassName: AppBarActionClassNameProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")(hasFirstLastInheritColorClassName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait AppBarActionClassNameProps
     extends StObject
@@ -42,32 +40,24 @@ object useActionClassNameMod {
   }
   object AppBarActionClassNameProps {
     
-    @scala.inline
-    def apply(): AppBarActionClassNameProps = {
+    inline def apply(): AppBarActionClassNameProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppBarActionClassNameProps]
     }
     
-    @scala.inline
-    implicit class AppBarActionClassNamePropsMutableBuilder[Self <: AppBarActionClassNameProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppBarActionClassNameProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     }
   }
 }

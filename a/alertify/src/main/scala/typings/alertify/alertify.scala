@@ -126,26 +126,20 @@ object alertify {
   }
   object ILabels {
     
-    @scala.inline
-    def apply(): ILabels = {
+    inline def apply(): ILabels = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILabels]
     }
     
-    @scala.inline
-    implicit class ILabelsMutableBuilder[Self <: ILabels] (val x: Self) extends AnyVal {
+    extension [Self <: ILabels](x: Self) {
       
-      @scala.inline
-      def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+      inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
     }
   }
   
@@ -168,38 +162,28 @@ object alertify {
   }
   object IProperties {
     
-    @scala.inline
-    def apply(): IProperties = {
+    inline def apply(): IProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProperties]
     }
     
-    @scala.inline
-    implicit class IPropertiesMutableBuilder[Self <: IProperties] (val x: Self) extends AnyVal {
+    extension [Self <: IProperties](x: Self) {
       
-      @scala.inline
-      def setButtonFocus(value: String): Self = StObject.set(x, "buttonFocus", value.asInstanceOf[js.Any])
+      inline def setButtonFocus(value: String): Self = StObject.set(x, "buttonFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonFocusUndefined: Self = StObject.set(x, "buttonFocus", js.undefined)
+      inline def setButtonFocusUndefined: Self = StObject.set(x, "buttonFocus", js.undefined)
       
-      @scala.inline
-      def setButtonReverse(value: Boolean): Self = StObject.set(x, "buttonReverse", value.asInstanceOf[js.Any])
+      inline def setButtonReverse(value: Boolean): Self = StObject.set(x, "buttonReverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonReverseUndefined: Self = StObject.set(x, "buttonReverse", js.undefined)
+      inline def setButtonReverseUndefined: Self = StObject.set(x, "buttonReverse", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setLabels(value: ILabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: ILabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     }
   }
 }

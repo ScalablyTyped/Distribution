@@ -18,25 +18,19 @@ trait QueryExecutionContext extends StObject {
 }
 object QueryExecutionContext {
   
-  @scala.inline
-  def apply(): QueryExecutionContext = {
+  inline def apply(): QueryExecutionContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryExecutionContext]
   }
   
-  @scala.inline
-  implicit class QueryExecutionContextMutableBuilder[Self <: QueryExecutionContext] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecutionContext](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: CatalogNameString): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: CatalogNameString): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogUndefined: Self = StObject.set(x, "Catalog", js.undefined)
+    inline def setCatalogUndefined: Self = StObject.set(x, "Catalog", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: DatabaseString): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: DatabaseString): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
   }
 }

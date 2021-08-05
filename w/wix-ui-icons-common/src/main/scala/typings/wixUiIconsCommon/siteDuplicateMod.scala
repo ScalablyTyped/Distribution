@@ -22,20 +22,16 @@ object siteDuplicateMod extends Shortcut {
   }
   object SiteDuplicateProps {
     
-    @scala.inline
-    def apply(): SiteDuplicateProps = {
+    inline def apply(): SiteDuplicateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SiteDuplicateProps]
     }
     
-    @scala.inline
-    implicit class SiteDuplicatePropsMutableBuilder[Self <: SiteDuplicateProps] (val x: Self) extends AnyVal {
+    extension [Self <: SiteDuplicateProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

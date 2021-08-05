@@ -13,6 +13,5 @@ class AttributeCertificateRefs ()
   extends typings.xadesjs.xmlMod.AttributeCertificateRefs
 object AttributeCertificateRefs {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.AttributeCertificateRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("AttributeCertificateRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AttributeCertificateRefs]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.AttributeCertificateRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("AttributeCertificateRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AttributeCertificateRefs]]
 }

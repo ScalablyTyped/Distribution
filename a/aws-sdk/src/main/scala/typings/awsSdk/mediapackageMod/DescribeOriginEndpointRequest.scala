@@ -13,16 +13,13 @@ trait DescribeOriginEndpointRequest extends StObject {
 }
 object DescribeOriginEndpointRequest {
   
-  @scala.inline
-  def apply(Id: string): DescribeOriginEndpointRequest = {
+  inline def apply(Id: string): DescribeOriginEndpointRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOriginEndpointRequest]
   }
   
-  @scala.inline
-  implicit class DescribeOriginEndpointRequestMutableBuilder[Self <: DescribeOriginEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOriginEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

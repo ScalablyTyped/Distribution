@@ -13,19 +13,15 @@ trait IPv6CidrRange
 }
 object IPv6CidrRange {
   
-  @scala.inline
-  def apply(): IPv6CidrRange = {
+  inline def apply(): IPv6CidrRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPv6CidrRange]
   }
   
-  @scala.inline
-  implicit class IPv6CidrRangeMutableBuilder[Self <: IPv6CidrRange] (val x: Self) extends AnyVal {
+  extension [Self <: IPv6CidrRange](x: Self) {
     
-    @scala.inline
-    def setCidrAddress(value: String): Self = StObject.set(x, "cidrAddress", value.asInstanceOf[js.Any])
+    inline def setCidrAddress(value: String): Self = StObject.set(x, "cidrAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrAddressUndefined: Self = StObject.set(x, "cidrAddress", js.undefined)
+    inline def setCidrAddressUndefined: Self = StObject.set(x, "cidrAddress", js.undefined)
   }
 }

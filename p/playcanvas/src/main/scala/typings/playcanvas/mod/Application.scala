@@ -49,8 +49,6 @@ object Application {
     * @returns The running application, if any.
     */
   /* static member */
-  @scala.inline
-  def getApplication(): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")().asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
-  @scala.inline
-  def getApplication(id: String): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
+  inline def getApplication(): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")().asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
+  inline def getApplication(id: String): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
 }

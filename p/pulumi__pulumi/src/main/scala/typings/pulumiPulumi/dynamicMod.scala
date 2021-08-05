@@ -40,20 +40,16 @@ object dynamicMod {
   }
   object CheckFailure {
     
-    @scala.inline
-    def apply(property: String, reason: String): CheckFailure = {
+    inline def apply(property: String, reason: String): CheckFailure = {
       val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckFailure]
     }
     
-    @scala.inline
-    implicit class CheckFailureMutableBuilder[Self <: CheckFailure] (val x: Self) extends AnyVal {
+    extension [Self <: CheckFailure](x: Self) {
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,29 +67,22 @@ object dynamicMod {
   }
   object CheckResult {
     
-    @scala.inline
-    def apply(): CheckResult = {
+    inline def apply(): CheckResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckResult]
     }
     
-    @scala.inline
-    implicit class CheckResultMutableBuilder[Self <: CheckResult] (val x: Self) extends AnyVal {
+    extension [Self <: CheckResult](x: Self) {
       
-      @scala.inline
-      def setFailures(value: js.Array[CheckFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: js.Array[CheckFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+      inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
       
-      @scala.inline
-      def setFailuresVarargs(value: CheckFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: CheckFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
       
-      @scala.inline
-      def setInputs(value: js.Any): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Any): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+      inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     }
   }
   
@@ -111,23 +100,18 @@ object dynamicMod {
   }
   object CreateResult {
     
-    @scala.inline
-    def apply(id: ID): CreateResult = {
+    inline def apply(id: ID): CreateResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateResult]
     }
     
-    @scala.inline
-    implicit class CreateResultMutableBuilder[Self <: CreateResult] (val x: Self) extends AnyVal {
+    extension [Self <: CreateResult](x: Self) {
       
-      @scala.inline
-      def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuts(value: js.Any): Self = StObject.set(x, "outs", value.asInstanceOf[js.Any])
+      inline def setOuts(value: js.Any): Self = StObject.set(x, "outs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutsUndefined: Self = StObject.set(x, "outs", js.undefined)
+      inline def setOutsUndefined: Self = StObject.set(x, "outs", js.undefined)
     }
   }
   
@@ -156,44 +140,32 @@ object dynamicMod {
   }
   object DiffResult {
     
-    @scala.inline
-    def apply(): DiffResult = {
+    inline def apply(): DiffResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiffResult]
     }
     
-    @scala.inline
-    implicit class DiffResultMutableBuilder[Self <: DiffResult] (val x: Self) extends AnyVal {
+    extension [Self <: DiffResult](x: Self) {
       
-      @scala.inline
-      def setChanges(value: Boolean): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      inline def setChanges(value: Boolean): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+      inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
       
-      @scala.inline
-      def setDeleteBeforeReplace(value: Boolean): Self = StObject.set(x, "deleteBeforeReplace", value.asInstanceOf[js.Any])
+      inline def setDeleteBeforeReplace(value: Boolean): Self = StObject.set(x, "deleteBeforeReplace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteBeforeReplaceUndefined: Self = StObject.set(x, "deleteBeforeReplace", js.undefined)
+      inline def setDeleteBeforeReplaceUndefined: Self = StObject.set(x, "deleteBeforeReplace", js.undefined)
       
-      @scala.inline
-      def setReplaces(value: js.Array[String]): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
+      inline def setReplaces(value: js.Array[String]): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacesUndefined: Self = StObject.set(x, "replaces", js.undefined)
+      inline def setReplacesUndefined: Self = StObject.set(x, "replaces", js.undefined)
       
-      @scala.inline
-      def setReplacesVarargs(value: String*): Self = StObject.set(x, "replaces", js.Array(value :_*))
+      inline def setReplacesVarargs(value: String*): Self = StObject.set(x, "replaces", js.Array(value :_*))
       
-      @scala.inline
-      def setStables(value: js.Array[String]): Self = StObject.set(x, "stables", value.asInstanceOf[js.Any])
+      inline def setStables(value: js.Array[String]): Self = StObject.set(x, "stables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStablesUndefined: Self = StObject.set(x, "stables", js.undefined)
+      inline def setStablesUndefined: Self = StObject.set(x, "stables", js.undefined)
       
-      @scala.inline
-      def setStablesVarargs(value: String*): Self = StObject.set(x, "stables", js.Array(value :_*))
+      inline def setStablesVarargs(value: String*): Self = StObject.set(x, "stables", js.Array(value :_*))
     }
   }
   
@@ -211,26 +183,20 @@ object dynamicMod {
   }
   object ReadResult {
     
-    @scala.inline
-    def apply(): ReadResult = {
+    inline def apply(): ReadResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadResult]
     }
     
-    @scala.inline
-    implicit class ReadResultMutableBuilder[Self <: ReadResult] (val x: Self) extends AnyVal {
+    extension [Self <: ReadResult](x: Self) {
       
-      @scala.inline
-      def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   
@@ -292,47 +258,34 @@ object dynamicMod {
   }
   object ResourceProvider {
     
-    @scala.inline
-    def apply(create: js.Any => js.Promise[CreateResult]): ResourceProvider = {
+    inline def apply(create: js.Any => js.Promise[CreateResult]): ResourceProvider = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[ResourceProvider]
     }
     
-    @scala.inline
-    implicit class ResourceProviderMutableBuilder[Self <: ResourceProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceProvider](x: Self) {
       
-      @scala.inline
-      def setCheck(value: (/* olds */ js.Any, /* news */ js.Any) => js.Promise[CheckResult]): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
+      inline def setCheck(value: (/* olds */ js.Any, /* news */ js.Any) => js.Promise[CheckResult]): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setCreate(value: js.Any => js.Promise[CreateResult]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: js.Any => js.Promise[CreateResult]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDelete(value: (/* id */ ID, /* props */ js.Any) => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+      inline def setDelete(value: (/* id */ ID, /* props */ js.Any) => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      @scala.inline
-      def setDiff(value: (/* id */ ID, /* olds */ js.Any, /* news */ js.Any) => js.Promise[DiffResult]): Self = StObject.set(x, "diff", js.Any.fromFunction3(value))
+      inline def setDiff(value: (/* id */ ID, /* olds */ js.Any, /* news */ js.Any) => js.Promise[DiffResult]): Self = StObject.set(x, "diff", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
+      inline def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
       
-      @scala.inline
-      def setRead(value: (/* id */ ID, /* props */ js.UndefOr[js.Any]) => js.Promise[ReadResult]): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      inline def setRead(value: (/* id */ ID, /* props */ js.UndefOr[js.Any]) => js.Promise[ReadResult]): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: (/* id */ ID, /* olds */ js.Any, /* news */ js.Any) => js.Promise[UpdateResult]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (/* id */ ID, /* olds */ js.Any, /* news */ js.Any) => js.Promise[UpdateResult]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -345,20 +298,16 @@ object dynamicMod {
   }
   object UpdateResult {
     
-    @scala.inline
-    def apply(): UpdateResult = {
+    inline def apply(): UpdateResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateResult]
     }
     
-    @scala.inline
-    implicit class UpdateResultMutableBuilder[Self <: UpdateResult] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateResult](x: Self) {
       
-      @scala.inline
-      def setOuts(value: js.Any): Self = StObject.set(x, "outs", value.asInstanceOf[js.Any])
+      inline def setOuts(value: js.Any): Self = StObject.set(x, "outs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutsUndefined: Self = StObject.set(x, "outs", js.undefined)
+      inline def setOutsUndefined: Self = StObject.set(x, "outs", js.undefined)
     }
   }
 }

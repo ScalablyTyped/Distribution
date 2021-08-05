@@ -23,6 +23,5 @@ object RTCSrtpSdesTransport {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLocalParameters(): js.Array[RTCSrtpSdesParameters] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalParameters")().asInstanceOf[js.Array[RTCSrtpSdesParameters]]
+  inline def getLocalParameters(): js.Array[RTCSrtpSdesParameters] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalParameters")().asInstanceOf[js.Array[RTCSrtpSdesParameters]]
 }

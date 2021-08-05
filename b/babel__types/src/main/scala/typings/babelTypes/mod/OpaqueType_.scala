@@ -27,35 +27,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object OpaqueType_ {
   
-  @scala.inline
-  def apply(id: Identifier_, impltype: FlowType): OpaqueType_ = {
+  inline def apply(id: Identifier_, impltype: FlowType): OpaqueType_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = impltype.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("OpaqueType")
     __obj.asInstanceOf[OpaqueType_]
   }
   
-  @scala.inline
-  implicit class OpaqueType_MutableBuilder[Self <: OpaqueType_] (val x: Self) extends AnyVal {
+  extension [Self <: OpaqueType_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpltype(value: FlowType): Self = StObject.set(x, "impltype", value.asInstanceOf[js.Any])
+    inline def setImpltype(value: FlowType): Self = StObject.set(x, "impltype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupertype(value: FlowType): Self = StObject.set(x, "supertype", value.asInstanceOf[js.Any])
+    inline def setSupertype(value: FlowType): Self = StObject.set(x, "supertype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupertypeNull: Self = StObject.set(x, "supertype", null)
+    inline def setSupertypeNull: Self = StObject.set(x, "supertype", null)
     
-    @scala.inline
-    def setType(value: OpaqueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OpaqueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
   }
 }

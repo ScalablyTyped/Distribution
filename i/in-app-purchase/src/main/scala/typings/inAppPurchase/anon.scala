@@ -16,20 +16,16 @@ object anon {
   }
   object ClientEmail {
     
-    @scala.inline
-    def apply(clientEmail: String, privateKey: String): ClientEmail = {
+    inline def apply(clientEmail: String, privateKey: String): ClientEmail = {
       val __obj = js.Dynamic.literal(clientEmail = clientEmail.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientEmail]
     }
     
-    @scala.inline
-    implicit class ClientEmailMutableBuilder[Self <: ClientEmail] (val x: Self) extends AnyVal {
+    extension [Self <: ClientEmail](x: Self) {
       
-      @scala.inline
-      def setClientEmail(value: String): Self = StObject.set(x, "clientEmail", value.asInstanceOf[js.Any])
+      inline def setClientEmail(value: String): Self = StObject.set(x, "clientEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +37,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: String, signature: String): Data = {
+    inline def apply(data: String, signature: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,20 +58,16 @@ object anon {
   }
   object IgnoreCanceled {
     
-    @scala.inline
-    def apply(ignoreCanceled: Boolean, ignoreExpired: Boolean): IgnoreCanceled = {
+    inline def apply(ignoreCanceled: Boolean, ignoreExpired: Boolean): IgnoreCanceled = {
       val __obj = js.Dynamic.literal(ignoreCanceled = ignoreCanceled.asInstanceOf[js.Any], ignoreExpired = ignoreExpired.asInstanceOf[js.Any])
       __obj.asInstanceOf[IgnoreCanceled]
     }
     
-    @scala.inline
-    implicit class IgnoreCanceledMutableBuilder[Self <: IgnoreCanceled] (val x: Self) extends AnyVal {
+    extension [Self <: IgnoreCanceled](x: Self) {
       
-      @scala.inline
-      def setIgnoreCanceled(value: Boolean): Self = StObject.set(x, "ignoreCanceled", value.asInstanceOf[js.Any])
+      inline def setIgnoreCanceled(value: Boolean): Self = StObject.set(x, "ignoreCanceled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpired(value: Boolean): Self = StObject.set(x, "ignoreExpired", value.asInstanceOf[js.Any])
+      inline def setIgnoreExpired(value: Boolean): Self = StObject.set(x, "ignoreExpired", value.asInstanceOf[js.Any])
     }
   }
 }

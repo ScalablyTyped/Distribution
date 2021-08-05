@@ -17,31 +17,23 @@ trait Disabled extends StObject {
 }
 object Disabled {
   
-  @scala.inline
-  def apply(): Disabled = {
+  inline def apply(): Disabled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Disabled]
   }
   
-  @scala.inline
-  implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+  extension [Self <: Disabled](x: Self) {
     
-    @scala.inline
-    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+    inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
+    inline def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
     
-    @scala.inline
-    def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
+    inline def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isHighlightedUndefined: Self = StObject.set(x, "$isHighlighted", js.undefined)
+    inline def set$isHighlightedUndefined: Self = StObject.set(x, "$isHighlighted", js.undefined)
     
-    @scala.inline
-    def set$selected(value: Boolean): Self = StObject.set(x, "$selected", value.asInstanceOf[js.Any])
+    inline def set$selected(value: Boolean): Self = StObject.set(x, "$selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$selectedUndefined: Self = StObject.set(x, "$selected", js.undefined)
+    inline def set$selectedUndefined: Self = StObject.set(x, "$selected", js.undefined)
   }
 }

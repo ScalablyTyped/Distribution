@@ -17,22 +17,17 @@ trait UseMultipleSelectionGetSelectedItemPropsOptions[Item]
 }
 object UseMultipleSelectionGetSelectedItemPropsOptions {
   
-  @scala.inline
-  def apply[Item](selectedItem: Item): UseMultipleSelectionGetSelectedItemPropsOptions[Item] = {
+  inline def apply[Item](selectedItem: Item): UseMultipleSelectionGetSelectedItemPropsOptions[Item] = {
     val __obj = js.Dynamic.literal(selectedItem = selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseMultipleSelectionGetSelectedItemPropsOptions[Item]]
   }
   
-  @scala.inline
-  implicit class UseMultipleSelectionGetSelectedItemPropsOptionsMutableBuilder[Self <: UseMultipleSelectionGetSelectedItemPropsOptions[?], Item] (val x: Self & UseMultipleSelectionGetSelectedItemPropsOptions[Item]) extends AnyVal {
+  extension [Self <: UseMultipleSelectionGetSelectedItemPropsOptions[?], Item](x: Self & UseMultipleSelectionGetSelectedItemPropsOptions[Item]) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
   }
 }

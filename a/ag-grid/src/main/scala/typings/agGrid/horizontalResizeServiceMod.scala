@@ -13,21 +13,21 @@ object horizontalResizeServiceMod {
     
     def addResizeBar(params: HorizontalResizeParams): js.Function0[Unit] = js.native
     
-    var dragService: js.Any = js.native
+    /* private */ var dragService: js.Any = js.native
     
-    var dragStartX: js.Any = js.native
+    /* private */ var dragStartX: js.Any = js.native
     
-    var draggingStarted: js.Any = js.native
+    /* private */ var draggingStarted: js.Any = js.native
     
-    var eGridDiv: js.Any = js.native
+    /* private */ var eGridDiv: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var oldBodyCursor: js.Any = js.native
+    /* private */ var oldBodyCursor: js.Any = js.native
     
-    var oldMsUserSelect: js.Any = js.native
+    /* private */ var oldMsUserSelect: js.Any = js.native
     
-    var oldWebkitUserSelect: js.Any = js.native
+    /* private */ var oldWebkitUserSelect: js.Any = js.native
     
     /* private */ def onDragStart(params: js.Any, mouseEvent: js.Any): js.Any = js.native
     
@@ -37,7 +37,7 @@ object horizontalResizeServiceMod {
     
     /* private */ def resetIcons(): js.Any = js.native
     
-    var resizeAmount: js.Any = js.native
+    /* private */ var resizeAmount: js.Any = js.native
     
     /* private */ def setResizeIcons(): js.Any = js.native
   }
@@ -54,8 +54,7 @@ object horizontalResizeServiceMod {
   }
   object HorizontalResizeParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       eResizeBar: HTMLElement,
       onResizeEnd: Double => Unit,
       onResizeStart: Boolean => Unit,
@@ -65,20 +64,15 @@ object horizontalResizeServiceMod {
       __obj.asInstanceOf[HorizontalResizeParams]
     }
     
-    @scala.inline
-    implicit class HorizontalResizeParamsMutableBuilder[Self <: HorizontalResizeParams] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalResizeParams](x: Self) {
       
-      @scala.inline
-      def setEResizeBar(value: HTMLElement): Self = StObject.set(x, "eResizeBar", value.asInstanceOf[js.Any])
+      inline def setEResizeBar(value: HTMLElement): Self = StObject.set(x, "eResizeBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResizeEnd(value: Double => Unit): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
+      inline def setOnResizeEnd(value: Double => Unit): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizeStart(value: Boolean => Unit): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction1(value))
+      inline def setOnResizeStart(value: Boolean => Unit): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizing(value: Double => Unit): Self = StObject.set(x, "onResizing", js.Any.fromFunction1(value))
+      inline def setOnResizing(value: Double => Unit): Self = StObject.set(x, "onResizing", js.Any.fromFunction1(value))
     }
   }
 }

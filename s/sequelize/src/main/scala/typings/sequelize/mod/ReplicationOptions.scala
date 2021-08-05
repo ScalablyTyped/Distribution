@@ -18,28 +18,21 @@ trait ReplicationOptions extends StObject {
 }
 object ReplicationOptions {
   
-  @scala.inline
-  def apply(): ReplicationOptions = {
+  inline def apply(): ReplicationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationOptions]
   }
   
-  @scala.inline
-  implicit class ReplicationOptionsMutableBuilder[Self <: ReplicationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationOptions](x: Self) {
     
-    @scala.inline
-    def setRead(value: js.Array[Database]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.Array[Database]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setReadVarargs(value: Database*): Self = StObject.set(x, "read", js.Array(value :_*))
+    inline def setReadVarargs(value: Database*): Self = StObject.set(x, "read", js.Array(value :_*))
     
-    @scala.inline
-    def setWrite(value: Database): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Database): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

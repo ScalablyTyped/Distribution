@@ -13,6 +13,5 @@ object parseTsconfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseTsConfig(context: IContext, pluginOptions: IOptions): FileName = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTsConfig")(context.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[FileName]
+  inline def parseTsConfig(context: IContext, pluginOptions: IOptions): FileName = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTsConfig")(context.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[FileName]
 }

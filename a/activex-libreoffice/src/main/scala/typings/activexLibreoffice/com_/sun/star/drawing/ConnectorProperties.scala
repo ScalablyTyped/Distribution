@@ -24,8 +24,7 @@ trait ConnectorProperties extends StObject {
 }
 object ConnectorProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EdgeKind: ConnectorType,
     EdgeNode1HorzDist: Double,
     EdgeNode1VertDist: Double,
@@ -36,22 +35,16 @@ object ConnectorProperties {
     __obj.asInstanceOf[ConnectorProperties]
   }
   
-  @scala.inline
-  implicit class ConnectorPropertiesMutableBuilder[Self <: ConnectorProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorProperties](x: Self) {
     
-    @scala.inline
-    def setEdgeKind(value: ConnectorType): Self = StObject.set(x, "EdgeKind", value.asInstanceOf[js.Any])
+    inline def setEdgeKind(value: ConnectorType): Self = StObject.set(x, "EdgeKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeNode1HorzDist(value: Double): Self = StObject.set(x, "EdgeNode1HorzDist", value.asInstanceOf[js.Any])
+    inline def setEdgeNode1HorzDist(value: Double): Self = StObject.set(x, "EdgeNode1HorzDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeNode1VertDist(value: Double): Self = StObject.set(x, "EdgeNode1VertDist", value.asInstanceOf[js.Any])
+    inline def setEdgeNode1VertDist(value: Double): Self = StObject.set(x, "EdgeNode1VertDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeNode2HorzDist(value: Double): Self = StObject.set(x, "EdgeNode2HorzDist", value.asInstanceOf[js.Any])
+    inline def setEdgeNode2HorzDist(value: Double): Self = StObject.set(x, "EdgeNode2HorzDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeNode2VertDist(value: Double): Self = StObject.set(x, "EdgeNode2VertDist", value.asInstanceOf[js.Any])
+    inline def setEdgeNode2VertDist(value: Double): Self = StObject.set(x, "EdgeNode2VertDist", value.asInstanceOf[js.Any])
   }
 }

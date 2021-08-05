@@ -23,22 +23,17 @@ trait GitVersionDescriptor extends StObject {
 }
 object GitVersionDescriptor {
   
-  @scala.inline
-  def apply(version: String, versionOptions: GitVersionOptions, versionType: GitVersionType): GitVersionDescriptor = {
+  inline def apply(version: String, versionOptions: GitVersionOptions, versionType: GitVersionType): GitVersionDescriptor = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any], versionOptions = versionOptions.asInstanceOf[js.Any], versionType = versionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitVersionDescriptor]
   }
   
-  @scala.inline
-  implicit class GitVersionDescriptorMutableBuilder[Self <: GitVersionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: GitVersionDescriptor](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionOptions(value: GitVersionOptions): Self = StObject.set(x, "versionOptions", value.asInstanceOf[js.Any])
+    inline def setVersionOptions(value: GitVersionOptions): Self = StObject.set(x, "versionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionType(value: GitVersionType): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
+    inline def setVersionType(value: GitVersionType): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
   }
 }

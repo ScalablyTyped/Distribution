@@ -38,46 +38,33 @@ trait UpdateFlowEntitlementRequest extends StObject {
 }
 object UpdateFlowEntitlementRequest {
   
-  @scala.inline
-  def apply(EntitlementArn: string, FlowArn: string): UpdateFlowEntitlementRequest = {
+  inline def apply(EntitlementArn: string, FlowArn: string): UpdateFlowEntitlementRequest = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn.asInstanceOf[js.Any], FlowArn = FlowArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFlowEntitlementRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFlowEntitlementRequestMutableBuilder[Self <: UpdateFlowEntitlementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFlowEntitlementRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: UpdateEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: UpdateEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
+    inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementStatus(value: EntitlementStatus): Self = StObject.set(x, "EntitlementStatus", value.asInstanceOf[js.Any])
+    inline def setEntitlementStatus(value: EntitlementStatus): Self = StObject.set(x, "EntitlementStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementStatusUndefined: Self = StObject.set(x, "EntitlementStatus", js.undefined)
+    inline def setEntitlementStatusUndefined: Self = StObject.set(x, "EntitlementStatus", js.undefined)
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribers(value: listOfString): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
+    inline def setSubscribers(value: listOfString): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
+    inline def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
-    @scala.inline
-    def setSubscribersVarargs(value: string*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: string*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
   }
 }

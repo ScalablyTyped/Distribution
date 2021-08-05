@@ -16,19 +16,15 @@ trait GetLaunchTemplateTagSpecification extends StObject {
 }
 object GetLaunchTemplateTagSpecification {
   
-  @scala.inline
-  def apply(resourceType: String, tags: StringDictionary[String]): GetLaunchTemplateTagSpecification = {
+  inline def apply(resourceType: String, tags: StringDictionary[String]): GetLaunchTemplateTagSpecification = {
     val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchTemplateTagSpecification]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateTagSpecificationMutableBuilder[Self <: GetLaunchTemplateTagSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateTagSpecification](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

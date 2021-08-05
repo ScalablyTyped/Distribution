@@ -14,25 +14,19 @@ trait DeploymentLabelEntry extends StObject {
 }
 object DeploymentLabelEntry {
   
-  @scala.inline
-  def apply(): DeploymentLabelEntry = {
+  inline def apply(): DeploymentLabelEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentLabelEntry]
   }
   
-  @scala.inline
-  implicit class DeploymentLabelEntryMutableBuilder[Self <: DeploymentLabelEntry] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentLabelEntry](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

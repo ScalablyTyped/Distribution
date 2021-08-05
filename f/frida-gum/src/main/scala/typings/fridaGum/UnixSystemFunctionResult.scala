@@ -14,22 +14,17 @@ trait UnixSystemFunctionResult
 }
 object UnixSystemFunctionResult {
   
-  @scala.inline
-  def apply(errno: Double, value: NativeReturnValue): UnixSystemFunctionResult = {
+  inline def apply(errno: Double, value: NativeReturnValue): UnixSystemFunctionResult = {
     val __obj = js.Dynamic.literal(errno = errno.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixSystemFunctionResult]
   }
   
-  @scala.inline
-  implicit class UnixSystemFunctionResultMutableBuilder[Self <: UnixSystemFunctionResult] (val x: Self) extends AnyVal {
+  extension [Self <: UnixSystemFunctionResult](x: Self) {
     
-    @scala.inline
-    def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
+    inline def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: NativeReturnValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NativeReturnValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

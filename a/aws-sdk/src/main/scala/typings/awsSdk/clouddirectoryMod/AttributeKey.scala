@@ -23,22 +23,17 @@ trait AttributeKey extends StObject {
 }
 object AttributeKey {
   
-  @scala.inline
-  def apply(FacetName: FacetName, Name: AttributeName, SchemaArn: Arn): AttributeKey = {
+  inline def apply(FacetName: FacetName, Name: AttributeName, SchemaArn: Arn): AttributeKey = {
     val __obj = js.Dynamic.literal(FacetName = FacetName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeKey]
   }
   
-  @scala.inline
-  implicit class AttributeKeyMutableBuilder[Self <: AttributeKey] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeKey](x: Self) {
     
-    @scala.inline
-    def setFacetName(value: FacetName): Self = StObject.set(x, "FacetName", value.asInstanceOf[js.Any])
+    inline def setFacetName(value: FacetName): Self = StObject.set(x, "FacetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

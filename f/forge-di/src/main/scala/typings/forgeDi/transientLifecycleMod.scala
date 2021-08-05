@@ -27,8 +27,7 @@ object transientLifecycleMod {
        with Lifecycle
   object TransientLifecycle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       resolve: (typings.forgeDi.resolverMod.default, typings.forgeDi.contextMod.default, Arguments) => js.Any
     ): TransientLifecycle = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve))

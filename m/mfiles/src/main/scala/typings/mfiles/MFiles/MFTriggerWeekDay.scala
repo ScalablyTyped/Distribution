@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFTriggerWeekDay extends StObject
 object MFTriggerWeekDay {
   
-  @scala.inline
-  def EveryDay: `125` = 125.asInstanceOf[`125`]
+  inline def EveryDay: `125` = 125.asInstanceOf[`125`]
   
-  @scala.inline
-  def Friday: `32` = 32.asInstanceOf[`32`]
+  inline def Friday: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def Monday: `2` = 2.asInstanceOf[`2`]
+  inline def Monday: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Saturday: `64` = 64.asInstanceOf[`64`]
+  inline def Saturday: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def Sunday: `1` = 1.asInstanceOf[`1`]
+  inline def Sunday: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Thursday: `16` = 16.asInstanceOf[`16`]
+  inline def Thursday: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def Tuesday: `4` = 4.asInstanceOf[`4`]
+  inline def Tuesday: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Wednesday: `8` = 8.asInstanceOf[`8`]
+  inline def Wednesday: `8` = 8.asInstanceOf[`8`]
 }

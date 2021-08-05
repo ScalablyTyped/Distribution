@@ -22,10 +22,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def identify(query: String): js.Array[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Result]]
-  @scala.inline
-  def identify(query: String, options: Options): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("identify")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
+  inline def identify(query: String): js.Array[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Result]]
+  inline def identify(query: String, options: Options): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("identify")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
   
   trait Options extends StObject {
     
@@ -36,17 +34,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(strict: Boolean): Options = {
+    inline def apply(strict: Boolean): Options = {
       val __obj = js.Dynamic.literal(strict = strict.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,8 +59,7 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       end: Double,
       executionType: LISTING | MODIFICATION | UNKNOWN,
       start: Double,
@@ -77,23 +71,17 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionType(value: LISTING | MODIFICATION | UNKNOWN): Self = StObject.set(x, "executionType", value.asInstanceOf[js.Any])
+      inline def setExecutionType(value: LISTING | MODIFICATION | UNKNOWN): Self = StObject.set(x, "executionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: SELECT | INSERT | UPDATE | DELETE | CREATE_TABLE | CREATE_DATABASE | DROP_TABLE | DROP_DATABASE | TRUNCATE | UNKNOWN
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

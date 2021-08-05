@@ -60,58 +60,41 @@ trait SchemaPolicy extends StObject {
 }
 object SchemaPolicy {
   
-  @scala.inline
-  def apply(): SchemaPolicy = {
+  inline def apply(): SchemaPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaPolicyMutableBuilder[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPolicy](x: Self) {
     
-    @scala.inline
-    def setAdmissionWhitelistPatterns(value: js.Array[SchemaAdmissionWhitelistPattern]): Self = StObject.set(x, "admissionWhitelistPatterns", value.asInstanceOf[js.Any])
+    inline def setAdmissionWhitelistPatterns(value: js.Array[SchemaAdmissionWhitelistPattern]): Self = StObject.set(x, "admissionWhitelistPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdmissionWhitelistPatternsUndefined: Self = StObject.set(x, "admissionWhitelistPatterns", js.undefined)
+    inline def setAdmissionWhitelistPatternsUndefined: Self = StObject.set(x, "admissionWhitelistPatterns", js.undefined)
     
-    @scala.inline
-    def setAdmissionWhitelistPatternsVarargs(value: SchemaAdmissionWhitelistPattern*): Self = StObject.set(x, "admissionWhitelistPatterns", js.Array(value :_*))
+    inline def setAdmissionWhitelistPatternsVarargs(value: SchemaAdmissionWhitelistPattern*): Self = StObject.set(x, "admissionWhitelistPatterns", js.Array(value :_*))
     
-    @scala.inline
-    def setClusterAdmissionRules(value: StringDictionary[SchemaAdmissionRule]): Self = StObject.set(x, "clusterAdmissionRules", value.asInstanceOf[js.Any])
+    inline def setClusterAdmissionRules(value: StringDictionary[SchemaAdmissionRule]): Self = StObject.set(x, "clusterAdmissionRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterAdmissionRulesUndefined: Self = StObject.set(x, "clusterAdmissionRules", js.undefined)
+    inline def setClusterAdmissionRulesUndefined: Self = StObject.set(x, "clusterAdmissionRules", js.undefined)
     
-    @scala.inline
-    def setDefaultAdmissionRule(value: SchemaAdmissionRule): Self = StObject.set(x, "defaultAdmissionRule", value.asInstanceOf[js.Any])
+    inline def setDefaultAdmissionRule(value: SchemaAdmissionRule): Self = StObject.set(x, "defaultAdmissionRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAdmissionRuleUndefined: Self = StObject.set(x, "defaultAdmissionRule", js.undefined)
+    inline def setDefaultAdmissionRuleUndefined: Self = StObject.set(x, "defaultAdmissionRule", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGlobalPolicyEvaluationMode(value: String): Self = StObject.set(x, "globalPolicyEvaluationMode", value.asInstanceOf[js.Any])
+    inline def setGlobalPolicyEvaluationMode(value: String): Self = StObject.set(x, "globalPolicyEvaluationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalPolicyEvaluationModeUndefined: Self = StObject.set(x, "globalPolicyEvaluationMode", js.undefined)
+    inline def setGlobalPolicyEvaluationModeUndefined: Self = StObject.set(x, "globalPolicyEvaluationMode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ trait Changes extends StObject {
 }
 object Changes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additions: Double,
     blob_url: String,
     changes: Double,
@@ -39,31 +38,22 @@ object Changes {
     __obj.asInstanceOf[Changes]
   }
   
-  @scala.inline
-  implicit class ChangesMutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
+  extension [Self <: Changes](x: Self) {
     
-    @scala.inline
-    def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+    inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlob_url(value: String): Self = StObject.set(x, "blob_url", value.asInstanceOf[js.Any])
+    inline def setBlob_url(value: String): Self = StObject.set(x, "blob_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+    inline def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_url(value: String): Self = StObject.set(x, "raw_url", value.asInstanceOf[js.Any])
+    inline def setRaw_url(value: String): Self = StObject.set(x, "raw_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

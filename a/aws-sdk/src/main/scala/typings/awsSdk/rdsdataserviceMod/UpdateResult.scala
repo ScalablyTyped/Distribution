@@ -13,22 +13,17 @@ trait UpdateResult extends StObject {
 }
 object UpdateResult {
   
-  @scala.inline
-  def apply(): UpdateResult = {
+  inline def apply(): UpdateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateResult]
   }
   
-  @scala.inline
-  implicit class UpdateResultMutableBuilder[Self <: UpdateResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateResult](x: Self) {
     
-    @scala.inline
-    def setGeneratedFields(value: FieldList): Self = StObject.set(x, "generatedFields", value.asInstanceOf[js.Any])
+    inline def setGeneratedFields(value: FieldList): Self = StObject.set(x, "generatedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratedFieldsUndefined: Self = StObject.set(x, "generatedFields", js.undefined)
+    inline def setGeneratedFieldsUndefined: Self = StObject.set(x, "generatedFields", js.undefined)
     
-    @scala.inline
-    def setGeneratedFieldsVarargs(value: Field*): Self = StObject.set(x, "generatedFields", js.Array(value :_*))
+    inline def setGeneratedFieldsVarargs(value: Field*): Self = StObject.set(x, "generatedFields", js.Array(value :_*))
   }
 }

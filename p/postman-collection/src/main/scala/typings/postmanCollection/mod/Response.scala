@@ -65,9 +65,7 @@ object Response {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFromNode(response: Body, cookies: js.Array[CookieDefinition]): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromNode")(response.asInstanceOf[js.Any], cookies.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def createFromNode(response: Body, cookies: js.Array[CookieDefinition]): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromNode")(response.asInstanceOf[js.Any], cookies.asInstanceOf[js.Any])).asInstanceOf[Response]
   
-  @scala.inline
-  def isResponse(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isResponse(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

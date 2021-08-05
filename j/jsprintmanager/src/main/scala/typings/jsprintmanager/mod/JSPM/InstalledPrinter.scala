@@ -23,13 +23,13 @@ class InstalledPrinter protected ()
   @JSName("Id")
   var Id_InstalledPrinter: String = js.native
   
-  var _name: js.Any = js.native
+  /* private */ var _name: js.Any = js.native
   
-  var _paper: js.Any = js.native
+  /* private */ var _paper: js.Any = js.native
   
-  var _printDefault: js.Any = js.native
+  /* private */ var _printDefault: js.Any = js.native
   
-  var _tray: js.Any = js.native
+  /* private */ var _tray: js.Any = js.native
   
   /* private */ def bool2str(value: js.Any, true_val: js.Any, false_val: js.Any): js.Any = js.native
   

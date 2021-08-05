@@ -23,22 +23,17 @@ trait Predicate extends StObject {
 }
 object Predicate {
   
-  @scala.inline
-  def apply(DataId: ResourceId, Negated: Negated, Type: PredicateType): Predicate = {
+  inline def apply(DataId: ResourceId, Negated: Negated, Type: PredicateType): Predicate = {
     val __obj = js.Dynamic.literal(DataId = DataId.asInstanceOf[js.Any], Negated = Negated.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Predicate]
   }
   
-  @scala.inline
-  implicit class PredicateMutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
+  extension [Self <: Predicate](x: Self) {
     
-    @scala.inline
-    def setDataId(value: ResourceId): Self = StObject.set(x, "DataId", value.asInstanceOf[js.Any])
+    inline def setDataId(value: ResourceId): Self = StObject.set(x, "DataId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegated(value: Negated): Self = StObject.set(x, "Negated", value.asInstanceOf[js.Any])
+    inline def setNegated(value: Negated): Self = StObject.set(x, "Negated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PredicateType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PredicateType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

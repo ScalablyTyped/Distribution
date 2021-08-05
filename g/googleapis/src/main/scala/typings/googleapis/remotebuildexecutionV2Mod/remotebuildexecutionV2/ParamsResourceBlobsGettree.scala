@@ -55,49 +55,35 @@ trait ParamsResourceBlobsGettree
 }
 object ParamsResourceBlobsGettree {
   
-  @scala.inline
-  def apply(): ParamsResourceBlobsGettree = {
+  inline def apply(): ParamsResourceBlobsGettree = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBlobsGettree]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBlobsGettreeMutableBuilder[Self <: ParamsResourceBlobsGettree] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBlobsGettree](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

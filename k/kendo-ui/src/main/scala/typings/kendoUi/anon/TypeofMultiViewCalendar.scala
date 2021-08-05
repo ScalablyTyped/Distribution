@@ -15,19 +15,15 @@ trait TypeofMultiViewCalendar extends StObject {
 }
 object TypeofMultiViewCalendar {
   
-  @scala.inline
-  def apply(extend: js.Object => MultiViewCalendar, fn: MultiViewCalendar): TypeofMultiViewCalendar = {
+  inline def apply(extend: js.Object => MultiViewCalendar, fn: MultiViewCalendar): TypeofMultiViewCalendar = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofMultiViewCalendar]
   }
   
-  @scala.inline
-  implicit class TypeofMultiViewCalendarMutableBuilder[Self <: TypeofMultiViewCalendar] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofMultiViewCalendar](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => MultiViewCalendar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => MultiViewCalendar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: MultiViewCalendar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: MultiViewCalendar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

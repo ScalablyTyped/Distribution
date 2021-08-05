@@ -12,19 +12,15 @@ trait IClientPrinter extends StObject {
 }
 object IClientPrinter {
   
-  @scala.inline
-  def apply(Id: js.Any, serialize: () => js.Any): IClientPrinter = {
+  inline def apply(Id: js.Any, serialize: () => js.Any): IClientPrinter = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize))
     __obj.asInstanceOf[IClientPrinter]
   }
   
-  @scala.inline
-  implicit class IClientPrinterMutableBuilder[Self <: IClientPrinter] (val x: Self) extends AnyVal {
+  extension [Self <: IClientPrinter](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
   }
 }

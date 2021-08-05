@@ -28,31 +28,23 @@ trait UpdateTeamMemberRequest extends StObject {
 }
 object UpdateTeamMemberRequest {
   
-  @scala.inline
-  def apply(projectId: ProjectId, userArn: UserArn): UpdateTeamMemberRequest = {
+  inline def apply(projectId: ProjectId, userArn: UserArn): UpdateTeamMemberRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTeamMemberRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTeamMemberRequestMutableBuilder[Self <: UpdateTeamMemberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTeamMemberRequest](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectRole(value: Role): Self = StObject.set(x, "projectRole", value.asInstanceOf[js.Any])
+    inline def setProjectRole(value: Role): Self = StObject.set(x, "projectRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectRoleUndefined: Self = StObject.set(x, "projectRole", js.undefined)
+    inline def setProjectRoleUndefined: Self = StObject.set(x, "projectRole", js.undefined)
     
-    @scala.inline
-    def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = StObject.set(x, "remoteAccessAllowed", value.asInstanceOf[js.Any])
+    inline def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = StObject.set(x, "remoteAccessAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAccessAllowedUndefined: Self = StObject.set(x, "remoteAccessAllowed", js.undefined)
+    inline def setRemoteAccessAllowedUndefined: Self = StObject.set(x, "remoteAccessAllowed", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
   }
 }

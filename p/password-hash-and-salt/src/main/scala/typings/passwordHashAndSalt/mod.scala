@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(password: String): Password = ^.asInstanceOf[js.Dynamic].apply(password.asInstanceOf[js.Any]).asInstanceOf[Password]
+  inline def apply(password: String): Password = ^.asInstanceOf[js.Dynamic].apply(password.asInstanceOf[js.Any]).asInstanceOf[Password]
   
   @JSImport("password-hash-and-salt", JSImport.Namespace)
   @js.native
@@ -21,8 +20,7 @@ object mod {
   }
   object Password {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hash: js.Function2[/* error */ String, /* hash */ String, Unit] => Unit,
       verifyAgainst: (String, js.Function2[/* error */ String, /* verified */ Boolean, Unit]) => Unit
     ): Password = {
@@ -30,14 +28,11 @@ object mod {
       __obj.asInstanceOf[Password]
     }
     
-    @scala.inline
-    implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+    extension [Self <: Password](x: Self) {
       
-      @scala.inline
-      def setHash(value: js.Function2[/* error */ String, /* hash */ String, Unit] => Unit): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
+      inline def setHash(value: js.Function2[/* error */ String, /* hash */ String, Unit] => Unit): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerifyAgainst(value: (String, js.Function2[/* error */ String, /* verified */ Boolean, Unit]) => Unit): Self = StObject.set(x, "verifyAgainst", js.Any.fromFunction2(value))
+      inline def setVerifyAgainst(value: (String, js.Function2[/* error */ String, /* verified */ Boolean, Unit]) => Unit): Self = StObject.set(x, "verifyAgainst", js.Any.fromFunction2(value))
     }
   }
 }

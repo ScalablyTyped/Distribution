@@ -14,25 +14,19 @@ trait PermissionGrant extends StObject {
 }
 object PermissionGrant {
   
-  @scala.inline
-  def apply(): PermissionGrant = {
+  inline def apply(): PermissionGrant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionGrant]
   }
   
-  @scala.inline
-  implicit class PermissionGrantMutableBuilder[Self <: PermissionGrant] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionGrant](x: Self) {
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait Immediate extends StObject {
 }
 object Immediate {
   
-  @scala.inline
-  def apply(): Immediate = {
+  inline def apply(): Immediate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Immediate]
   }
   
-  @scala.inline
-  implicit class ImmediateMutableBuilder[Self <: Immediate] (val x: Self) extends AnyVal {
+  extension [Self <: Immediate](x: Self) {
     
-    @scala.inline
-    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+    inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+    inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
   }
 }

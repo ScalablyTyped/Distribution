@@ -14,22 +14,17 @@ trait ListDebuggeesResponse extends StObject {
 }
 object ListDebuggeesResponse {
   
-  @scala.inline
-  def apply(): ListDebuggeesResponse = {
+  inline def apply(): ListDebuggeesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDebuggeesResponse]
   }
   
-  @scala.inline
-  implicit class ListDebuggeesResponseMutableBuilder[Self <: ListDebuggeesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDebuggeesResponse](x: Self) {
     
-    @scala.inline
-    def setDebuggees(value: js.Array[Debuggee]): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
+    inline def setDebuggees(value: js.Array[Debuggee]): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggeesUndefined: Self = StObject.set(x, "debuggees", js.undefined)
+    inline def setDebuggeesUndefined: Self = StObject.set(x, "debuggees", js.undefined)
     
-    @scala.inline
-    def setDebuggeesVarargs(value: Debuggee*): Self = StObject.set(x, "debuggees", js.Array(value :_*))
+    inline def setDebuggeesVarargs(value: Debuggee*): Self = StObject.set(x, "debuggees", js.Array(value :_*))
   }
 }

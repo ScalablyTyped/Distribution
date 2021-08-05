@@ -39,8 +39,7 @@ object GM {
   }
   object ProgressResponse {
     
-    @scala.inline
-    def apply[TContext](
+    inline def apply[TContext](
       finalUrl: String,
       lengthComputable: Boolean,
       loaded: Double,
@@ -57,17 +56,13 @@ object GM {
       __obj.asInstanceOf[ProgressResponse[TContext]]
     }
     
-    @scala.inline
-    implicit class ProgressResponseMutableBuilder[Self <: ProgressResponse[?], TContext] (val x: Self & ProgressResponse[TContext]) extends AnyVal {
+    extension [Self <: ProgressResponse[?], TContext](x: Self & ProgressResponse[TContext]) {
       
-      @scala.inline
-      def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+      inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,116 +154,80 @@ object GM {
   }
   object Request {
     
-    @scala.inline
-    def apply[TContext](method: GET | POST | PUT | DELETE | PATCH | HEAD | TRACE | OPTIONS | CONNECT, url: String): Request[TContext] = {
+    inline def apply[TContext](method: GET | POST | PUT | DELETE | PATCH | HEAD | TRACE | OPTIONS | CONNECT, url: String): Request[TContext] = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request[TContext]]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request[?], TContext] (val x: Self & Request[TContext]) extends AnyVal {
+    extension [Self <: Request[?], TContext](x: Self & Request[TContext]) {
       
-      @scala.inline
-      def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: GET | POST | PUT | DELETE | PATCH | HEAD | TRACE | OPTIONS | CONNECT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET | POST | PUT | DELETE | PATCH | HEAD | TRACE | OPTIONS | CONNECT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnabort(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
+      inline def setOnabort(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
+      inline def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
       
-      @scala.inline
-      def setOnerror(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+      inline def setOnerror(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setOnload(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+      inline def setOnload(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
+      inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
       
-      @scala.inline
-      def setOnprogress(value: /* response */ ProgressResponse[TContext] => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction1(value))
+      inline def setOnprogress(value: /* response */ ProgressResponse[TContext] => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
+      inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
       
-      @scala.inline
-      def setOnreadystatechange(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction1(value))
+      inline def setOnreadystatechange(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
+      inline def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
       
-      @scala.inline
-      def setOntimeout(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "ontimeout", js.Any.fromFunction1(value))
+      inline def setOntimeout(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "ontimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOntimeoutUndefined: Self = StObject.set(x, "ontimeout", js.undefined)
+      inline def setOntimeoutUndefined: Self = StObject.set(x, "ontimeout", js.undefined)
       
-      @scala.inline
-      def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
+      inline def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
+      inline def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
+      inline def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
+      inline def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUpload(value: Onabort[TContext]): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+      inline def setUpload(value: Onabort[TContext]): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+      inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -295,8 +254,7 @@ object GM {
   }
   object Response {
     
-    @scala.inline
-    def apply[TContext](
+    inline def apply[TContext](
       finalUrl: String,
       readyState: `1` | `2` | `3` | `4`,
       response: js.Any,
@@ -310,38 +268,27 @@ object GM {
       __obj.asInstanceOf[Response[TContext]]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response[?], TContext] (val x: Self & Response[TContext]) extends AnyVal {
+    extension [Self <: Response[?], TContext](x: Self & Response[TContext]) {
       
-      @scala.inline
-      def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+      inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadyState(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+      inline def setReadyState(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeaders(value: String): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+      inline def setResponseHeaders(value: String): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+      inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseXML(value: Document | `false`): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
+      inline def setResponseXML(value: Document | `false`): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -375,8 +322,7 @@ object GM {
   }
   object ScriptInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       excludes: js.Array[String],
       includes: js.Array[String],
@@ -391,50 +337,35 @@ object GM {
       __obj.asInstanceOf[ScriptInfo]
     }
     
-    @scala.inline
-    implicit class ScriptInfoMutableBuilder[Self <: ScriptInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptInfo](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+      inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludes(value: js.Array[String]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+      inline def setIncludes(value: js.Array[String]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value :_*))
+      inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value :_*))
       
-      @scala.inline
-      def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setResources(value: StringDictionary[Mimetype]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: StringDictionary[Mimetype]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunAt(value: start | end | idle): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
+      inline def setRunAt(value: start | end | idle): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

@@ -23,22 +23,17 @@ trait SuspendContactRecordingRequest extends StObject {
 }
 object SuspendContactRecordingRequest {
   
-  @scala.inline
-  def apply(ContactId: ContactId, InitialContactId: ContactId, InstanceId: InstanceId): SuspendContactRecordingRequest = {
+  inline def apply(ContactId: ContactId, InitialContactId: ContactId, InstanceId: InstanceId): SuspendContactRecordingRequest = {
     val __obj = js.Dynamic.literal(ContactId = ContactId.asInstanceOf[js.Any], InitialContactId = InitialContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspendContactRecordingRequest]
   }
   
-  @scala.inline
-  implicit class SuspendContactRecordingRequestMutableBuilder[Self <: SuspendContactRecordingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SuspendContactRecordingRequest](x: Self) {
     
-    @scala.inline
-    def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
+    inline def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

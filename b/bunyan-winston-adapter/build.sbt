@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "bunyan-winston-adapter"
-version := "0.2-dt-20200515Z-ae6b18"
+version := "0.2-dt-20200515Z-3e622b"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200515Z-af8262",
-  "org.scalablytyped" %%% "logform" % "2.2.0-99d644",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-814aa8",
-  "org.scalablytyped" %%% "std" % "4.1-044efb",
-  "org.scalablytyped" %%% "winston" % "3.3.3-aa0f1b",
-  "org.scalablytyped" %%% "winston-transport" % "4.4.0-6c3393")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200515Z-13582c",
+  "org.scalablytyped" %%% "logform" % "2.2.0-15b769",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855",
+  "org.scalablytyped" %%% "winston" % "3.3.3-c007df",
+  "org.scalablytyped" %%% "winston-transport" % "4.4.0-b49518")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

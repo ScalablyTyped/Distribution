@@ -13,19 +13,15 @@ trait ListItemActionProps
 }
 object ListItemActionProps {
   
-  @scala.inline
-  def apply(): ListItemActionProps = {
+  inline def apply(): ListItemActionProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemActionProps]
   }
   
-  @scala.inline
-  implicit class ListItemActionPropsMutableBuilder[Self <: ListItemActionProps] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemActionProps](x: Self) {
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
   }
 }

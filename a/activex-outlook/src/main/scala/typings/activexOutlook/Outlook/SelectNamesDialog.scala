@@ -26,7 +26,7 @@ trait SelectNamesDialog extends StObject {
   
   var NumberOfRecipientSelectors: OlRecipientSelectors
   
-  @JSName("Outlook.SelectNamesDialog_typekey")
+  /* private */ @JSName("Outlook.SelectNamesDialog_typekey")
   var OutlookDotSelectNamesDialog_typekey: SelectNamesDialog
   
   val Parent: js.Any
@@ -43,8 +43,7 @@ trait SelectNamesDialog extends StObject {
 }
 object SelectNamesDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowMultipleSelection: Boolean,
     Application: Application,
     BccLabel: String,
@@ -68,58 +67,40 @@ object SelectNamesDialog {
     __obj.asInstanceOf[SelectNamesDialog]
   }
   
-  @scala.inline
-  implicit class SelectNamesDialogMutableBuilder[Self <: SelectNamesDialog] (val x: Self) extends AnyVal {
+  extension [Self <: SelectNamesDialog](x: Self) {
     
-    @scala.inline
-    def setAllowMultipleSelection(value: Boolean): Self = StObject.set(x, "AllowMultipleSelection", value.asInstanceOf[js.Any])
+    inline def setAllowMultipleSelection(value: Boolean): Self = StObject.set(x, "AllowMultipleSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccLabel(value: String): Self = StObject.set(x, "BccLabel", value.asInstanceOf[js.Any])
+    inline def setBccLabel(value: String): Self = StObject.set(x, "BccLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcLabel(value: String): Self = StObject.set(x, "CcLabel", value.asInstanceOf[js.Any])
+    inline def setCcLabel(value: String): Self = StObject.set(x, "CcLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: () => Boolean): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
+    inline def setDisplay(value: () => Boolean): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForceResolution(value: Boolean): Self = StObject.set(x, "ForceResolution", value.asInstanceOf[js.Any])
+    inline def setForceResolution(value: Boolean): Self = StObject.set(x, "ForceResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialAddressList(value: AddressList): Self = StObject.set(x, "InitialAddressList", value.asInstanceOf[js.Any])
+    inline def setInitialAddressList(value: AddressList): Self = StObject.set(x, "InitialAddressList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRecipientSelectors(value: OlRecipientSelectors): Self = StObject.set(x, "NumberOfRecipientSelectors", value.asInstanceOf[js.Any])
+    inline def setNumberOfRecipientSelectors(value: OlRecipientSelectors): Self = StObject.set(x, "NumberOfRecipientSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotSelectNamesDialog_typekey(value: SelectNamesDialog): Self = StObject.set(x, "Outlook.SelectNamesDialog_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotSelectNamesDialog_typekey(value: SelectNamesDialog): Self = StObject.set(x, "Outlook.SelectNamesDialog_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipients(value: Recipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: Recipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultDisplayMode(value: OlDefaultSelectNamesDisplayMode => Unit): Self = StObject.set(x, "SetDefaultDisplayMode", js.Any.fromFunction1(value))
+    inline def setSetDefaultDisplayMode(value: OlDefaultSelectNamesDisplayMode => Unit): Self = StObject.set(x, "SetDefaultDisplayMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowOnlyInitialAddressList(value: Boolean): Self = StObject.set(x, "ShowOnlyInitialAddressList", value.asInstanceOf[js.Any])
+    inline def setShowOnlyInitialAddressList(value: Boolean): Self = StObject.set(x, "ShowOnlyInitialAddressList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToLabel(value: String): Self = StObject.set(x, "ToLabel", value.asInstanceOf[js.Any])
+    inline def setToLabel(value: String): Self = StObject.set(x, "ToLabel", value.asInstanceOf[js.Any])
   }
 }

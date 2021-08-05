@@ -13,16 +13,13 @@ trait Greengrass extends StObject {
 }
 object Greengrass {
   
-  @scala.inline
-  def apply(groupArn: ARN): Greengrass = {
+  inline def apply(groupArn: ARN): Greengrass = {
     val __obj = js.Dynamic.literal(groupArn = groupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Greengrass]
   }
   
-  @scala.inline
-  implicit class GreengrassMutableBuilder[Self <: Greengrass] (val x: Self) extends AnyVal {
+  extension [Self <: Greengrass](x: Self) {
     
-    @scala.inline
-    def setGroupArn(value: ARN): Self = StObject.set(x, "groupArn", value.asInstanceOf[js.Any])
+    inline def setGroupArn(value: ARN): Self = StObject.set(x, "groupArn", value.asInstanceOf[js.Any])
   }
 }

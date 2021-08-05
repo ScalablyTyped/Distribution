@@ -44,16 +44,16 @@ object checkboxMod {
     
     var el: HTMLElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var focusEl: js.Any = js.native
+    /* private */ var focusEl: js.Any = js.native
     
     /**
       * If `true`, the checkbox will visually appear as indeterminate.
       */
     var indeterminate: Boolean = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * Emitted when the checkbox loses focus.
@@ -81,16 +81,16 @@ object checkboxMod {
       */
     var name: String = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
     @JSName("render")
     def render_MCheckbox(): js.Any = js.native
     
-    var setFocus: js.Any = js.native
+    /* private */ var setFocus: js.Any = js.native
     
     /**
       * The value of the checkbox does not mean if it's checked or not, use the `checked`

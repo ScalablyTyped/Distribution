@@ -31,41 +31,30 @@ object mod {
   }
   object PanelWidth {
     
-    @scala.inline
-    def apply(): PanelWidth = {
+    inline def apply(): PanelWidth = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PanelWidth]
     }
     
-    @scala.inline
-    implicit class PanelWidthMutableBuilder[Self <: PanelWidth] (val x: Self) extends AnyVal {
+    extension [Self <: PanelWidth](x: Self) {
       
-      @scala.inline
-      def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
       
-      @scala.inline
-      def setResize(value: fixed | dynamic | stretch): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: fixed | dynamic | stretch): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSnap(value: js.Array[Double]): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+      inline def setSnap(value: js.Array[Double]): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+      inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
       
-      @scala.inline
-      def setSnapVarargs(value: Double*): Self = StObject.set(x, "snap", js.Array(value :_*))
+      inline def setSnapVarargs(value: Double*): Self = StObject.set(x, "snap", js.Array(value :_*))
     }
   }
   
@@ -85,53 +74,38 @@ object mod {
   }
   object PropTypes {
     
-    @scala.inline
-    def apply(): PropTypes = {
+    inline def apply(): PropTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropTypes]
     }
     
-    @scala.inline
-    implicit class PropTypesMutableBuilder[Self <: PropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: PropTypes](x: Self) {
       
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      @scala.inline
-      def setDirection(value: row | column): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: row | column): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* data */ PanelWidth => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* data */ PanelWidth => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPanelColor(value: String): Self = StObject.set(x, "panelColor", value.asInstanceOf[js.Any])
+      inline def setPanelColor(value: String): Self = StObject.set(x, "panelColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelColorUndefined: Self = StObject.set(x, "panelColor", js.undefined)
+      inline def setPanelColorUndefined: Self = StObject.set(x, "panelColor", js.undefined)
       
-      @scala.inline
-      def setPanelWidths(value: js.Array[PanelWidth | Null]): Self = StObject.set(x, "panelWidths", value.asInstanceOf[js.Any])
+      inline def setPanelWidths(value: js.Array[PanelWidth | Null]): Self = StObject.set(x, "panelWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelWidthsUndefined: Self = StObject.set(x, "panelWidths", js.undefined)
+      inline def setPanelWidthsUndefined: Self = StObject.set(x, "panelWidths", js.undefined)
       
-      @scala.inline
-      def setPanelWidthsVarargs(value: (PanelWidth | Null)*): Self = StObject.set(x, "panelWidths", js.Array(value :_*))
+      inline def setPanelWidthsVarargs(value: (PanelWidth | Null)*): Self = StObject.set(x, "panelWidths", js.Array(value :_*))
       
-      @scala.inline
-      def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     }
   }
 }

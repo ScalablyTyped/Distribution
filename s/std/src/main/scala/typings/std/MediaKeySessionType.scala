@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaKeySessionType extends StObject
 object MediaKeySessionType {
   
-  @scala.inline
-  def `persistent-license`: typings.std.stdStrings.`persistent-license` = "persistent-license".asInstanceOf[typings.std.stdStrings.`persistent-license`]
+  inline def `persistent-license`: typings.std.stdStrings.`persistent-license` = "persistent-license".asInstanceOf[typings.std.stdStrings.`persistent-license`]
   
-  @scala.inline
-  def temporary: typings.std.stdStrings.temporary = "temporary".asInstanceOf[typings.std.stdStrings.temporary]
+  inline def temporary: typings.std.stdStrings.temporary = "temporary".asInstanceOf[typings.std.stdStrings.temporary]
 }

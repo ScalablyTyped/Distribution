@@ -10,8 +10,7 @@ object withActionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withActions(
+  inline def withActions(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withActions")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

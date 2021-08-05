@@ -20,13 +20,12 @@ trait ChartBorder extends StObject {
   
   var Weight: js.Any
   
-  @JSName("Word.ChartBorder_typekey")
+  /* private */ @JSName("Word.ChartBorder_typekey")
   var WordDotChartBorder_typekey: ChartBorder
 }
 object ChartBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Color: js.Any,
     ColorIndex: js.Any,
@@ -41,31 +40,22 @@ object ChartBorder {
     __obj.asInstanceOf[ChartBorder]
   }
   
-  @scala.inline
-  implicit class ChartBorderMutableBuilder[Self <: ChartBorder] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBorder](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: js.Any): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: js.Any): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: js.Any): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: js.Any): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotChartBorder_typekey(value: ChartBorder): Self = StObject.set(x, "Word.ChartBorder_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotChartBorder_typekey(value: ChartBorder): Self = StObject.set(x, "Word.ChartBorder_typekey", value.asInstanceOf[js.Any])
   }
 }

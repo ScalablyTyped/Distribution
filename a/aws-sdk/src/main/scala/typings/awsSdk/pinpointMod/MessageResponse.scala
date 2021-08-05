@@ -28,34 +28,25 @@ trait MessageResponse extends StObject {
 }
 object MessageResponse {
   
-  @scala.inline
-  def apply(ApplicationId: string): MessageResponse = {
+  inline def apply(ApplicationId: string): MessageResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResponse]
   }
   
-  @scala.inline
-  implicit class MessageResponseMutableBuilder[Self <: MessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessageResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointResult(value: MapOfEndpointMessageResult): Self = StObject.set(x, "EndpointResult", value.asInstanceOf[js.Any])
+    inline def setEndpointResult(value: MapOfEndpointMessageResult): Self = StObject.set(x, "EndpointResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointResultUndefined: Self = StObject.set(x, "EndpointResult", js.undefined)
+    inline def setEndpointResultUndefined: Self = StObject.set(x, "EndpointResult", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setResult(value: MapOfMessageResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: MapOfMessageResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
   }
 }

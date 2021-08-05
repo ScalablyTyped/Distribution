@@ -14,28 +14,21 @@ trait MatchedValueRange extends StObject {
 }
 object MatchedValueRange {
   
-  @scala.inline
-  def apply(): MatchedValueRange = {
+  inline def apply(): MatchedValueRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchedValueRange]
   }
   
-  @scala.inline
-  implicit class MatchedValueRangeMutableBuilder[Self <: MatchedValueRange] (val x: Self) extends AnyVal {
+  extension [Self <: MatchedValueRange](x: Self) {
     
-    @scala.inline
-    def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
+    inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
+    inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    @scala.inline
-    def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setValueRange(value: ValueRange): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
+    inline def setValueRange(value: ValueRange): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
+    inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
   }
 }

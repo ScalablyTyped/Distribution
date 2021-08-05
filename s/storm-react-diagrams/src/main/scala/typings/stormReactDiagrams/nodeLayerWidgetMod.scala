@@ -28,17 +28,14 @@ object nodeLayerWidgetMod {
   }
   object NodeLayerProps {
     
-    @scala.inline
-    def apply(diagramEngine: DiagramEngine): NodeLayerProps = {
+    inline def apply(diagramEngine: DiagramEngine): NodeLayerProps = {
       val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeLayerProps]
     }
     
-    @scala.inline
-    implicit class NodeLayerPropsMutableBuilder[Self <: NodeLayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: NodeLayerProps](x: Self) {
       
-      @scala.inline
-      def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
+      inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
     }
   }
   

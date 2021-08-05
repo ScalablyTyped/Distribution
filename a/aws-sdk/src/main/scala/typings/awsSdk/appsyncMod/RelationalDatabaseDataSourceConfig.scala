@@ -18,25 +18,19 @@ trait RelationalDatabaseDataSourceConfig extends StObject {
 }
 object RelationalDatabaseDataSourceConfig {
   
-  @scala.inline
-  def apply(): RelationalDatabaseDataSourceConfig = {
+  inline def apply(): RelationalDatabaseDataSourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationalDatabaseDataSourceConfig]
   }
   
-  @scala.inline
-  implicit class RelationalDatabaseDataSourceConfigMutableBuilder[Self <: RelationalDatabaseDataSourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalDatabaseDataSourceConfig](x: Self) {
     
-    @scala.inline
-    def setRdsHttpEndpointConfig(value: RdsHttpEndpointConfig): Self = StObject.set(x, "rdsHttpEndpointConfig", value.asInstanceOf[js.Any])
+    inline def setRdsHttpEndpointConfig(value: RdsHttpEndpointConfig): Self = StObject.set(x, "rdsHttpEndpointConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdsHttpEndpointConfigUndefined: Self = StObject.set(x, "rdsHttpEndpointConfig", js.undefined)
+    inline def setRdsHttpEndpointConfigUndefined: Self = StObject.set(x, "rdsHttpEndpointConfig", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseSourceType(value: RelationalDatabaseSourceType): Self = StObject.set(x, "relationalDatabaseSourceType", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseSourceType(value: RelationalDatabaseSourceType): Self = StObject.set(x, "relationalDatabaseSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseSourceTypeUndefined: Self = StObject.set(x, "relationalDatabaseSourceType", js.undefined)
+    inline def setRelationalDatabaseSourceTypeUndefined: Self = StObject.set(x, "relationalDatabaseSourceType", js.undefined)
   }
 }

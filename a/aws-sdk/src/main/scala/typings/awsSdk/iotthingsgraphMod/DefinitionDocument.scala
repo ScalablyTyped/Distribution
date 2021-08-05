@@ -18,19 +18,15 @@ trait DefinitionDocument extends StObject {
 }
 object DefinitionDocument {
   
-  @scala.inline
-  def apply(language: DefinitionLanguage, text: DefinitionText): DefinitionDocument = {
+  inline def apply(language: DefinitionLanguage, text: DefinitionText): DefinitionDocument = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinitionDocument]
   }
   
-  @scala.inline
-  implicit class DefinitionDocumentMutableBuilder[Self <: DefinitionDocument] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionDocument](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: DefinitionLanguage): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: DefinitionLanguage): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: DefinitionText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: DefinitionText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -12,10 +12,8 @@ object ecsGetClusterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
-  @scala.inline
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
   
   trait GetClusterArgs extends StObject {
     
@@ -26,17 +24,14 @@ object ecsGetClusterMod {
   }
   object GetClusterArgs {
     
-    @scala.inline
-    def apply(clusterName: String): GetClusterArgs = {
+    inline def apply(clusterName: String): GetClusterArgs = {
       val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClusterArgs]
     }
     
-    @scala.inline
-    implicit class GetClusterArgsMutableBuilder[Self <: GetClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterArgs](x: Self) {
       
-      @scala.inline
-      def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +76,7 @@ object ecsGetClusterMod {
   }
   object GetClusterResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       clusterName: String,
       id: String,
@@ -96,35 +90,25 @@ object ecsGetClusterMod {
       __obj.asInstanceOf[GetClusterResult]
     }
     
-    @scala.inline
-    implicit class GetClusterResultMutableBuilder[Self <: GetClusterResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingTasksCount(value: Double): Self = StObject.set(x, "pendingTasksCount", value.asInstanceOf[js.Any])
+      inline def setPendingTasksCount(value: Double): Self = StObject.set(x, "pendingTasksCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisteredContainerInstancesCount(value: Double): Self = StObject.set(x, "registeredContainerInstancesCount", value.asInstanceOf[js.Any])
+      inline def setRegisteredContainerInstancesCount(value: Double): Self = StObject.set(x, "registeredContainerInstancesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningTasksCount(value: Double): Self = StObject.set(x, "runningTasksCount", value.asInstanceOf[js.Any])
+      inline def setRunningTasksCount(value: Double): Self = StObject.set(x, "runningTasksCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: js.Array[GetClusterSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: js.Array[GetClusterSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsVarargs(value: GetClusterSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+      inline def setSettingsVarargs(value: GetClusterSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

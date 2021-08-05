@@ -28,37 +28,27 @@ trait HexdumpOptions extends StObject {
 }
 object HexdumpOptions {
   
-  @scala.inline
-  def apply(): HexdumpOptions = {
+  inline def apply(): HexdumpOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HexdumpOptions]
   }
   
-  @scala.inline
-  implicit class HexdumpOptionsMutableBuilder[Self <: HexdumpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HexdumpOptions](x: Self) {
     
-    @scala.inline
-    def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
+    inline def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnsiUndefined: Self = StObject.set(x, "ansi", js.undefined)
+    inline def setAnsiUndefined: Self = StObject.set(x, "ansi", js.undefined)
     
-    @scala.inline
-    def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

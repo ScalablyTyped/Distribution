@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcExportXMLSchemaFormat extends StObject
 object AcExportXMLSchemaFormat {
   
-  @scala.inline
-  def acSchemaNone: `0` = 0.asInstanceOf[`0`]
+  inline def acSchemaNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acSchemaXSD: `1` = 1.asInstanceOf[`1`]
+  inline def acSchemaXSD: `1` = 1.asInstanceOf[`1`]
 }

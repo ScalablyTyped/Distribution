@@ -18,25 +18,19 @@ trait SessionContextAttributes extends StObject {
 }
 object SessionContextAttributes {
   
-  @scala.inline
-  def apply(): SessionContextAttributes = {
+  inline def apply(): SessionContextAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionContextAttributes]
   }
   
-  @scala.inline
-  implicit class SessionContextAttributesMutableBuilder[Self <: SessionContextAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SessionContextAttributes](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: timestampIso8601): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: timestampIso8601): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setMfaAuthenticated(value: boolean): Self = StObject.set(x, "mfaAuthenticated", value.asInstanceOf[js.Any])
+    inline def setMfaAuthenticated(value: boolean): Self = StObject.set(x, "mfaAuthenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMfaAuthenticatedUndefined: Self = StObject.set(x, "mfaAuthenticated", js.undefined)
+    inline def setMfaAuthenticatedUndefined: Self = StObject.set(x, "mfaAuthenticated", js.undefined)
   }
 }

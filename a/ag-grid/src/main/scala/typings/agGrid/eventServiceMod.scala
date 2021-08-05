@@ -22,11 +22,11 @@ object eventServiceMod {
     def addModalPriorityEventListener(eventType: String, listener: js.Function): Unit = js.native
     def addModalPriorityEventListener(eventType: String, listener: js.Function, async: Boolean): Unit = js.native
     
-    var allAsyncListeners: js.Any = js.native
+    /* private */ var allAsyncListeners: js.Any = js.native
     
-    var allSyncListeners: js.Any = js.native
+    /* private */ var allSyncListeners: js.Any = js.native
     
-    var asyncFunctionsQueue: js.Any = js.native
+    /* private */ var asyncFunctionsQueue: js.Any = js.native
     
     /* private */ def dispatchAsync(func: js.Any): js.Any = js.native
     
@@ -38,16 +38,16 @@ object eventServiceMod {
     
     /* private */ def getListenerList(eventType: js.Any, async: js.Any): js.Any = js.native
     
-    var globalAsyncListeners: js.Any = js.native
+    /* private */ var globalAsyncListeners: js.Any = js.native
     
-    var globalSyncListeners: js.Any = js.native
+    /* private */ var globalSyncListeners: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     def removeGlobalListener(listener: js.Function): Unit = js.native
     def removeGlobalListener(listener: js.Function, async: Boolean): Unit = js.native
     
-    var scheduled: js.Any = js.native
+    /* private */ var scheduled: js.Any = js.native
     
     def setBeans(loggerFactory: LoggerFactory, gridOptionsWrapper: GridOptionsWrapper): Unit = js.native
     def setBeans(
@@ -66,7 +66,6 @@ object eventServiceMod {
     @JSImport("ag-grid/dist/lib/eventService", "EventService.PRIORITY")
     @js.native
     def PRIORITY: js.Any = js.native
-    @scala.inline
-    def PRIORITY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
 }

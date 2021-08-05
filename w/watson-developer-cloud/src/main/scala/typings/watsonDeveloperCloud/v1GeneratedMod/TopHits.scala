@@ -14,25 +14,19 @@ trait TopHits extends StObject {
 }
 object TopHits {
   
-  @scala.inline
-  def apply(): TopHits = {
+  inline def apply(): TopHits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopHits]
   }
   
-  @scala.inline
-  implicit class TopHitsMutableBuilder[Self <: TopHits] (val x: Self) extends AnyVal {
+  extension [Self <: TopHits](x: Self) {
     
-    @scala.inline
-    def setHits(value: TopHitsResults): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: TopHitsResults): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
+    inline def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

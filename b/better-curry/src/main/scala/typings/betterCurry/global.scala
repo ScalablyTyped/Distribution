@@ -22,6 +22,5 @@ object global {
     }
   }
   
-  @scala.inline
-  def BetterCurry_=(x: BetterCurry): Unit = js.Dynamic.global.updateDynamic("BetterCurry")(x.asInstanceOf[js.Any])
+  inline def BetterCurry_=(x: BetterCurry): Unit = js.Dynamic.global.updateDynamic("BetterCurry")(x.asInstanceOf[js.Any])
 }

@@ -16,25 +16,19 @@ trait D extends StObject {
 }
 object D {
   
-  @scala.inline
-  def apply(d: H, f: String, il: String, url: String): D = {
+  inline def apply(d: H, f: String, il: String, url: String): D = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], il = il.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[D]
   }
   
-  @scala.inline
-  implicit class DMutableBuilder[Self <: D] (val x: Self) extends AnyVal {
+  extension [Self <: D](x: Self) {
     
-    @scala.inline
-    def setD(value: H): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: H): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIl(value: String): Self = StObject.set(x, "il", value.asInstanceOf[js.Any])
+    inline def setIl(value: String): Self = StObject.set(x, "il", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

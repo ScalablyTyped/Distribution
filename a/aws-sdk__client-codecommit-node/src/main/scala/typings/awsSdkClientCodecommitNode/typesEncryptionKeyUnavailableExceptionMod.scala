@@ -76,17 +76,14 @@ object typesEncryptionKeyUnavailableExceptionMod {
   }
   object EncryptionKeyUnavailableException {
     
-    @scala.inline
-    def apply(): EncryptionKeyUnavailableException = {
+    inline def apply(): EncryptionKeyUnavailableException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyUnavailableException")
       __obj.asInstanceOf[EncryptionKeyUnavailableException]
     }
     
-    @scala.inline
-    implicit class EncryptionKeyUnavailableExceptionMutableBuilder[Self <: EncryptionKeyUnavailableException] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionKeyUnavailableException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyUnavailableException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

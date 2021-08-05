@@ -54,8 +54,7 @@ trait KmlModel
 }
 object KmlModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -86,31 +85,22 @@ object KmlModel {
     __obj.asInstanceOf[KmlModel]
   }
   
-  @scala.inline
-  implicit class KmlModelMutableBuilder[Self <: KmlModel] (val x: Self) extends AnyVal {
+  extension [Self <: KmlModel](x: Self) {
     
-    @scala.inline
-    def setGetLink(value: () => KmlLink): Self = StObject.set(x, "getLink", js.Any.fromFunction0(value))
+    inline def setGetLink(value: () => KmlLink): Self = StObject.set(x, "getLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocation(value: () => KmlLocation): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+    inline def setGetLocation(value: () => KmlLocation): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrientation(value: () => KmlOrientation): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
+    inline def setGetOrientation(value: () => KmlOrientation): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScale(value: () => KmlScale): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
+    inline def setGetScale(value: () => KmlScale): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLink(value: KmlLink => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
+    inline def setSetLink(value: KmlLink => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocation(value: KmlLocation => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
+    inline def setSetLocation(value: KmlLocation => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrientation(value: KmlOrientation => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
+    inline def setSetOrientation(value: KmlOrientation => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScale(value: KmlScale => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
+    inline def setSetScale(value: KmlScale => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
   }
 }

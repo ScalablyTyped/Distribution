@@ -27,8 +27,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: TextAreaProps): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[Value]
+    inline def getDerivedStateFromProps(nextProps: TextAreaProps): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[Value]
   }
   
   @JSImport("rc-textarea", "ResizableTextArea")
@@ -74,38 +73,28 @@ object mod {
   }
   object TextAreaProps {
     
-    @scala.inline
-    def apply(): TextAreaProps = {
+    inline def apply(): TextAreaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAreaProps]
     }
     
-    @scala.inline
-    implicit class TextAreaPropsMutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaProps](x: Self) {
       
-      @scala.inline
-      def setAutoSize(value: Boolean | AutoSizeType): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
+      inline def setAutoSize(value: Boolean | AutoSizeType): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
+      inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
       
-      @scala.inline
-      def setOnPressEnter(value: KeyboardEvent[HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
+      inline def setOnPressEnter(value: KeyboardEvent[HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
+      inline def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* size */ Height => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* size */ Height => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
   
@@ -115,17 +104,14 @@ object mod {
   }
   object TextAreaState {
     
-    @scala.inline
-    def apply(value: js.Any): TextAreaState = {
+    inline def apply(value: js.Any): TextAreaState = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextAreaState]
     }
     
-    @scala.inline
-    implicit class TextAreaStateMutableBuilder[Self <: TextAreaState] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaState](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

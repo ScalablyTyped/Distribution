@@ -34,31 +34,23 @@ trait SchemaMonitorStreamInfo extends StObject {
 }
 object SchemaMonitorStreamInfo {
   
-  @scala.inline
-  def apply(): SchemaMonitorStreamInfo = {
+  inline def apply(): SchemaMonitorStreamInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMonitorStreamInfo]
   }
   
-  @scala.inline
-  implicit class SchemaMonitorStreamInfoMutableBuilder[Self <: SchemaMonitorStreamInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMonitorStreamInfo](x: Self) {
     
-    @scala.inline
-    def setBroadcastStreamDelayMs(value: Double): Self = StObject.set(x, "broadcastStreamDelayMs", value.asInstanceOf[js.Any])
+    inline def setBroadcastStreamDelayMs(value: Double): Self = StObject.set(x, "broadcastStreamDelayMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastStreamDelayMsUndefined: Self = StObject.set(x, "broadcastStreamDelayMs", js.undefined)
+    inline def setBroadcastStreamDelayMsUndefined: Self = StObject.set(x, "broadcastStreamDelayMs", js.undefined)
     
-    @scala.inline
-    def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
+    inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
+    inline def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
     
-    @scala.inline
-    def setEnableMonitorStream(value: Boolean): Self = StObject.set(x, "enableMonitorStream", value.asInstanceOf[js.Any])
+    inline def setEnableMonitorStream(value: Boolean): Self = StObject.set(x, "enableMonitorStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMonitorStreamUndefined: Self = StObject.set(x, "enableMonitorStream", js.undefined)
+    inline def setEnableMonitorStreamUndefined: Self = StObject.set(x, "enableMonitorStream", js.undefined)
   }
 }

@@ -14,34 +14,25 @@ trait Properties extends StObject {
 }
 object Properties {
   
-  @scala.inline
-  def apply(): Properties = {
+  inline def apply(): Properties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Properties]
   }
   
-  @scala.inline
-  implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+  extension [Self <: Properties](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setTiming(value: String): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: String): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+    inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

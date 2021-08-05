@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.WebPageFont")
 @js.native
-class WebPageFont protected ()
+/* private */ class WebPageFont ()
   extends StObject
      with typings.activexOffice.Office.WebPageFont {
   
@@ -22,7 +22,7 @@ class WebPageFont protected ()
   /* CompleteClass */
   var FixedWidthFontSize: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.WebPageFont_typekey")
   var OfficeDotWebPageFont_typekey: typings.activexOffice.Office.WebPageFont = js.native
   

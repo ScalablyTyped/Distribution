@@ -24,13 +24,12 @@ trait OMathEqArray extends StObject {
   
   var RowSpacingRule: WdOMathSpacingRule
   
-  @JSName("Word.OMathEqArray_typekey")
+  /* private */ @JSName("Word.OMathEqArray_typekey")
   var WordDotOMathEqArray_typekey: OMathEqArray
 }
 object OMathEqArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: WdOMathVertAlignType,
     Application: Application,
     Creator: Double,
@@ -47,37 +46,26 @@ object OMathEqArray {
     __obj.asInstanceOf[OMathEqArray]
   }
   
-  @scala.inline
-  implicit class OMathEqArrayMutableBuilder[Self <: OMathEqArray] (val x: Self) extends AnyVal {
+  extension [Self <: OMathEqArray](x: Self) {
     
-    @scala.inline
-    def setAlign(value: WdOMathVertAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: WdOMathVertAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMathArgs): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMathArgs): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDist(value: Boolean): Self = StObject.set(x, "MaxDist", value.asInstanceOf[js.Any])
+    inline def setMaxDist(value: Boolean): Self = StObject.set(x, "MaxDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjDist(value: Boolean): Self = StObject.set(x, "ObjDist", value.asInstanceOf[js.Any])
+    inline def setObjDist(value: Boolean): Self = StObject.set(x, "ObjDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpacing(value: Double): Self = StObject.set(x, "RowSpacing", value.asInstanceOf[js.Any])
+    inline def setRowSpacing(value: Double): Self = StObject.set(x, "RowSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpacingRule(value: WdOMathSpacingRule): Self = StObject.set(x, "RowSpacingRule", value.asInstanceOf[js.Any])
+    inline def setRowSpacingRule(value: WdOMathSpacingRule): Self = StObject.set(x, "RowSpacingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathEqArray_typekey(value: OMathEqArray): Self = StObject.set(x, "Word.OMathEqArray_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathEqArray_typekey(value: OMathEqArray): Self = StObject.set(x, "Word.OMathEqArray_typekey", value.asInstanceOf[js.Any])
   }
 }

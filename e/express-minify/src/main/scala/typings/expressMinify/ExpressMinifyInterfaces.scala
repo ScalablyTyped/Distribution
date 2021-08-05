@@ -67,80 +67,56 @@ object ExpressMinifyInterfaces {
   }
   object ExpressMinifyOptions {
     
-    @scala.inline
-    def apply(): ExpressMinifyOptions = {
+    inline def apply(): ExpressMinifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpressMinifyOptions]
     }
     
-    @scala.inline
-    implicit class ExpressMinifyOptionsMutableBuilder[Self <: ExpressMinifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressMinifyOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: String | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: String | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCoffee_match(value: RegExp): Self = StObject.set(x, "coffee_match", value.asInstanceOf[js.Any])
+      inline def setCoffee_match(value: RegExp): Self = StObject.set(x, "coffee_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoffee_matchUndefined: Self = StObject.set(x, "coffee_match", js.undefined)
+      inline def setCoffee_matchUndefined: Self = StObject.set(x, "coffee_match", js.undefined)
       
-      @scala.inline
-      def setCss_match(value: RegExp): Self = StObject.set(x, "css_match", value.asInstanceOf[js.Any])
+      inline def setCss_match(value: RegExp): Self = StObject.set(x, "css_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCss_matchUndefined: Self = StObject.set(x, "css_match", js.undefined)
+      inline def setCss_matchUndefined: Self = StObject.set(x, "css_match", js.undefined)
       
-      @scala.inline
-      def setCssmin(value: NodeRequire): Self = StObject.set(x, "cssmin", value.asInstanceOf[js.Any])
+      inline def setCssmin(value: NodeRequire): Self = StObject.set(x, "cssmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssminUndefined: Self = StObject.set(x, "cssmin", js.undefined)
+      inline def setCssminUndefined: Self = StObject.set(x, "cssmin", js.undefined)
       
-      @scala.inline
-      def setJs_match(value: RegExp): Self = StObject.set(x, "js_match", value.asInstanceOf[js.Any])
+      inline def setJs_match(value: RegExp): Self = StObject.set(x, "js_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJs_matchUndefined: Self = StObject.set(x, "js_match", js.undefined)
+      inline def setJs_matchUndefined: Self = StObject.set(x, "js_match", js.undefined)
       
-      @scala.inline
-      def setJson_match(value: RegExp): Self = StObject.set(x, "json_match", value.asInstanceOf[js.Any])
+      inline def setJson_match(value: RegExp): Self = StObject.set(x, "json_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson_matchUndefined: Self = StObject.set(x, "json_match", js.undefined)
+      inline def setJson_matchUndefined: Self = StObject.set(x, "json_match", js.undefined)
       
-      @scala.inline
-      def setLess_match(value: RegExp): Self = StObject.set(x, "less_match", value.asInstanceOf[js.Any])
+      inline def setLess_match(value: RegExp): Self = StObject.set(x, "less_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLess_matchUndefined: Self = StObject.set(x, "less_match", js.undefined)
+      inline def setLess_matchUndefined: Self = StObject.set(x, "less_match", js.undefined)
       
-      @scala.inline
-      def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+      inline def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setSass_match(value: RegExp): Self = StObject.set(x, "sass_match", value.asInstanceOf[js.Any])
+      inline def setSass_match(value: RegExp): Self = StObject.set(x, "sass_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSass_matchUndefined: Self = StObject.set(x, "sass_match", js.undefined)
+      inline def setSass_matchUndefined: Self = StObject.set(x, "sass_match", js.undefined)
       
-      @scala.inline
-      def setStylus_match(value: RegExp): Self = StObject.set(x, "stylus_match", value.asInstanceOf[js.Any])
+      inline def setStylus_match(value: RegExp): Self = StObject.set(x, "stylus_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylus_matchUndefined: Self = StObject.set(x, "stylus_match", js.undefined)
+      inline def setStylus_matchUndefined: Self = StObject.set(x, "stylus_match", js.undefined)
       
-      @scala.inline
-      def setUglifyJS(value: NodeRequire): Self = StObject.set(x, "uglifyJS", value.asInstanceOf[js.Any])
+      inline def setUglifyJS(value: NodeRequire): Self = StObject.set(x, "uglifyJS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUglifyJSUndefined: Self = StObject.set(x, "uglifyJS", js.undefined)
+      inline def setUglifyJSUndefined: Self = StObject.set(x, "uglifyJS", js.undefined)
     }
   }
   
@@ -178,8 +154,7 @@ object ExpressMinifyInterfaces {
   }
   object ExpressMinifyResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _no_cache: Boolean,
       _no_minify: Boolean,
       _skip: Boolean,
@@ -191,26 +166,19 @@ object ExpressMinifyInterfaces {
       __obj.asInstanceOf[ExpressMinifyResponse]
     }
     
-    @scala.inline
-    implicit class ExpressMinifyResponseMutableBuilder[Self <: ExpressMinifyResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressMinifyResponse](x: Self) {
       
-      @scala.inline
-      def set_no_cache(value: Boolean): Self = StObject.set(x, "_no_cache", value.asInstanceOf[js.Any])
+      inline def set_no_cache(value: Boolean): Self = StObject.set(x, "_no_cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_no_minify(value: Boolean): Self = StObject.set(x, "_no_minify", value.asInstanceOf[js.Any])
+      inline def set_no_minify(value: Boolean): Self = StObject.set(x, "_no_minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_skip(value: Boolean): Self = StObject.set(x, "_skip", value.asInstanceOf[js.Any])
+      inline def set_skip(value: Boolean): Self = StObject.set(x, "_skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_uglifyCompress(value: js.Object | Boolean): Self = StObject.set(x, "_uglifyCompress", value.asInstanceOf[js.Any])
+      inline def set_uglifyCompress(value: js.Object | Boolean): Self = StObject.set(x, "_uglifyCompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_uglifyMangle(value: Boolean): Self = StObject.set(x, "_uglifyMangle", value.asInstanceOf[js.Any])
+      inline def set_uglifyMangle(value: Boolean): Self = StObject.set(x, "_uglifyMangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_uglifyOutput(value: js.Object): Self = StObject.set(x, "_uglifyOutput", value.asInstanceOf[js.Any])
+      inline def set_uglifyOutput(value: js.Object): Self = StObject.set(x, "_uglifyOutput", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,19 +18,15 @@ trait ImageLocation extends StObject {
 }
 object ImageLocation {
   
-  @scala.inline
-  def apply(id: ID, url: Url): ImageLocation = {
+  inline def apply(id: ID, url: Url): ImageLocation = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLocation]
   }
   
-  @scala.inline
-  implicit class ImageLocationMutableBuilder[Self <: ImageLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ImageLocation](x: Self) {
     
-    @scala.inline
-    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

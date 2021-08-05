@@ -13,16 +13,13 @@ trait LambdaDataSourceConfig extends StObject {
 }
 object LambdaDataSourceConfig {
   
-  @scala.inline
-  def apply(lambdaFunctionArn: String): LambdaDataSourceConfig = {
+  inline def apply(lambdaFunctionArn: String): LambdaDataSourceConfig = {
     val __obj = js.Dynamic.literal(lambdaFunctionArn = lambdaFunctionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaDataSourceConfig]
   }
   
-  @scala.inline
-  implicit class LambdaDataSourceConfigMutableBuilder[Self <: LambdaDataSourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaDataSourceConfig](x: Self) {
     
-    @scala.inline
-    def setLambdaFunctionArn(value: String): Self = StObject.set(x, "lambdaFunctionArn", value.asInstanceOf[js.Any])
+    inline def setLambdaFunctionArn(value: String): Self = StObject.set(x, "lambdaFunctionArn", value.asInstanceOf[js.Any])
   }
 }

@@ -19,6 +19,5 @@ object generateFidMod {
   @js.native
   val VALID_FID_PATTERN: RegExp = js.native
   
-  @scala.inline
-  def generateFid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFid")().asInstanceOf[String]
+  inline def generateFid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFid")().asInstanceOf[String]
 }

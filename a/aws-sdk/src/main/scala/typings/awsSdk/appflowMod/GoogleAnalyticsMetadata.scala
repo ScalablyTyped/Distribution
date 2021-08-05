@@ -13,22 +13,17 @@ trait GoogleAnalyticsMetadata extends StObject {
 }
 object GoogleAnalyticsMetadata {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsMetadata = {
+  inline def apply(): GoogleAnalyticsMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsMetadataMutableBuilder[Self <: GoogleAnalyticsMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsMetadata](x: Self) {
     
-    @scala.inline
-    def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
+    inline def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOAuthScopesUndefined: Self = StObject.set(x, "oAuthScopes", js.undefined)
+    inline def setOAuthScopesUndefined: Self = StObject.set(x, "oAuthScopes", js.undefined)
     
-    @scala.inline
-    def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value :_*))
+    inline def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value :_*))
   }
 }

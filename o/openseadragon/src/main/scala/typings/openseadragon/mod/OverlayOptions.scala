@@ -25,55 +25,39 @@ trait OverlayOptions extends StObject {
 }
 object OverlayOptions {
   
-  @scala.inline
-  def apply(element: HTMLElement, location: Point | Rect): OverlayOptions = {
+  inline def apply(element: HTMLElement, location: Point | Rect): OverlayOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayOptions]
   }
   
-  @scala.inline
-  implicit class OverlayOptionsMutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayOptions](x: Self) {
     
-    @scala.inline
-    def setCheckResize(value: Boolean): Self = StObject.set(x, "checkResize", value.asInstanceOf[js.Any])
+    inline def setCheckResize(value: Boolean): Self = StObject.set(x, "checkResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckResizeUndefined: Self = StObject.set(x, "checkResize", js.undefined)
+    inline def setCheckResizeUndefined: Self = StObject.set(x, "checkResize", js.undefined)
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Point | Rect): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point | Rect): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDraw(value: (/* position */ Point, /* size */ Point, /* element */ HTMLElement) => Unit): Self = StObject.set(x, "onDraw", js.Any.fromFunction3(value))
+    inline def setOnDraw(value: (/* position */ Point, /* size */ Point, /* element */ HTMLElement) => Unit): Self = StObject.set(x, "onDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDrawUndefined: Self = StObject.set(x, "onDraw", js.undefined)
+    inline def setOnDrawUndefined: Self = StObject.set(x, "onDraw", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setRotationMode(value: Boolean): Self = StObject.set(x, "rotationMode", value.asInstanceOf[js.Any])
+    inline def setRotationMode(value: Boolean): Self = StObject.set(x, "rotationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationModeUndefined: Self = StObject.set(x, "rotationMode", js.undefined)
+    inline def setRotationModeUndefined: Self = StObject.set(x, "rotationMode", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -24,61 +24,43 @@ trait PrecisionOptions extends StObject {
 }
 object PrecisionOptions {
   
-  @scala.inline
-  def apply(): PrecisionOptions = {
+  inline def apply(): PrecisionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrecisionOptions]
   }
   
-  @scala.inline
-  implicit class PrecisionOptionsMutableBuilder[Self <: PrecisionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrecisionOptions](x: Self) {
     
-    @scala.inline
-    def setAc(value: Double): Self = StObject.set(x, "ac", value.asInstanceOf[js.Any])
+    inline def setAc(value: Double): Self = StObject.set(x, "ac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcUndefined: Self = StObject.set(x, "ac", js.undefined)
+    inline def setAcUndefined: Self = StObject.set(x, "ac", js.undefined)
     
-    @scala.inline
-    def setFt(value: Double): Self = StObject.set(x, "ft", value.asInstanceOf[js.Any])
+    inline def setFt(value: Double): Self = StObject.set(x, "ft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFtUndefined: Self = StObject.set(x, "ft", js.undefined)
+    inline def setFtUndefined: Self = StObject.set(x, "ft", js.undefined)
     
-    @scala.inline
-    def setHa(value: Double): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
+    inline def setHa(value: Double): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
+    inline def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
     
-    @scala.inline
-    def setKm(value: Double): Self = StObject.set(x, "km", value.asInstanceOf[js.Any])
+    inline def setKm(value: Double): Self = StObject.set(x, "km", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmUndefined: Self = StObject.set(x, "km", js.undefined)
+    inline def setKmUndefined: Self = StObject.set(x, "km", js.undefined)
     
-    @scala.inline
-    def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
+    inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
-    @scala.inline
-    def setMi(value: Double): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
+    inline def setMi(value: Double): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiUndefined: Self = StObject.set(x, "mi", js.undefined)
+    inline def setMiUndefined: Self = StObject.set(x, "mi", js.undefined)
     
-    @scala.inline
-    def setNm(value: Double): Self = StObject.set(x, "nm", value.asInstanceOf[js.Any])
+    inline def setNm(value: Double): Self = StObject.set(x, "nm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNmUndefined: Self = StObject.set(x, "nm", js.undefined)
+    inline def setNmUndefined: Self = StObject.set(x, "nm", js.undefined)
     
-    @scala.inline
-    def setYd(value: Double): Self = StObject.set(x, "yd", value.asInstanceOf[js.Any])
+    inline def setYd(value: Double): Self = StObject.set(x, "yd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYdUndefined: Self = StObject.set(x, "yd", js.undefined)
+    inline def setYdUndefined: Self = StObject.set(x, "yd", js.undefined)
   }
 }

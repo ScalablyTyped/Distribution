@@ -18,6 +18,5 @@ object AppContextSite {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, siteUrl: String): typings.sharepoint.SP.AppContextSite = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], siteUrl.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.AppContextSite]
+  inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, siteUrl: String): typings.sharepoint.SP.AppContextSite = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], siteUrl.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.AppContextSite]
 }

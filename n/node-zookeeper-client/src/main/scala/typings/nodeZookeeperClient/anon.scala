@@ -17,32 +17,24 @@ object anon {
   }
   object PartialOption {
     
-    @scala.inline
-    def apply(): PartialOption = {
+    inline def apply(): PartialOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOption]
     }
     
-    @scala.inline
-    implicit class PartialOptionMutableBuilder[Self <: PartialOption] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOption](x: Self) {
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+      inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+      inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
       
-      @scala.inline
-      def setSpinDelay(value: Double): Self = StObject.set(x, "spinDelay", value.asInstanceOf[js.Any])
+      inline def setSpinDelay(value: Double): Self = StObject.set(x, "spinDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinDelayUndefined: Self = StObject.set(x, "spinDelay", js.undefined)
+      inline def setSpinDelayUndefined: Self = StObject.set(x, "spinDelay", js.undefined)
     }
   }
 }

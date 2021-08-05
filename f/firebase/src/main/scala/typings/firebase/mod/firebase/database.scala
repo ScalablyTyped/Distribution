@@ -352,8 +352,7 @@ object database {
   }
   object DataSnapshot {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       child: String => DataSnapshot,
       exists: () => Boolean,
       exportVal: () => js.Any,
@@ -371,47 +370,33 @@ object database {
       __obj.asInstanceOf[DataSnapshot]
     }
     
-    @scala.inline
-    implicit class DataSnapshotMutableBuilder[Self <: DataSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: DataSnapshot](x: Self) {
       
-      @scala.inline
-      def setChild(value: String => DataSnapshot): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: String => DataSnapshot): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExportVal(value: () => js.Any): Self = StObject.set(x, "exportVal", js.Any.fromFunction0(value))
+      inline def setExportVal(value: () => js.Any): Self = StObject.set(x, "exportVal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setForEach(value: js.Function1[DataSnapshot, Boolean | Unit] => Boolean): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function1[DataSnapshot, Boolean | Unit] => Boolean): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPriority(value: () => String | Double | Null): Self = StObject.set(x, "getPriority", js.Any.fromFunction0(value))
+      inline def setGetPriority(value: () => String | Double | Null): Self = StObject.set(x, "getPriority", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasChild(value: String => Boolean): Self = StObject.set(x, "hasChild", js.Any.fromFunction1(value))
+      inline def setHasChild(value: String => Boolean): Self = StObject.set(x, "hasChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasChildren(value: () => Boolean): Self = StObject.set(x, "hasChildren", js.Any.fromFunction0(value))
+      inline def setHasChildren(value: () => Boolean): Self = StObject.set(x, "hasChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setNumChildren(value: () => Double): Self = StObject.set(x, "numChildren", js.Any.fromFunction0(value))
+      inline def setNumChildren(value: () => Double): Self = StObject.set(x, "numChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Object | Null): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object | Null): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+      inline def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
     }
   }
   
@@ -563,20 +548,15 @@ object database {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def child_added: typings.firebase.firebaseStrings.child_added = "child_added".asInstanceOf[typings.firebase.firebaseStrings.child_added]
+    inline def child_added: typings.firebase.firebaseStrings.child_added = "child_added".asInstanceOf[typings.firebase.firebaseStrings.child_added]
     
-    @scala.inline
-    def child_changed: typings.firebase.firebaseStrings.child_changed = "child_changed".asInstanceOf[typings.firebase.firebaseStrings.child_changed]
+    inline def child_changed: typings.firebase.firebaseStrings.child_changed = "child_changed".asInstanceOf[typings.firebase.firebaseStrings.child_changed]
     
-    @scala.inline
-    def child_moved: typings.firebase.firebaseStrings.child_moved = "child_moved".asInstanceOf[typings.firebase.firebaseStrings.child_moved]
+    inline def child_moved: typings.firebase.firebaseStrings.child_moved = "child_moved".asInstanceOf[typings.firebase.firebaseStrings.child_moved]
     
-    @scala.inline
-    def child_removed: typings.firebase.firebaseStrings.child_removed = "child_removed".asInstanceOf[typings.firebase.firebaseStrings.child_removed]
+    inline def child_removed: typings.firebase.firebaseStrings.child_removed = "child_removed".asInstanceOf[typings.firebase.firebaseStrings.child_removed]
     
-    @scala.inline
-    def value: typings.firebase.firebaseStrings.value = "value".asInstanceOf[typings.firebase.firebaseStrings.value]
+    inline def value: typings.firebase.firebaseStrings.value = "value".asInstanceOf[typings.firebase.firebaseStrings.value]
   }
   
   /**

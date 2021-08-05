@@ -13,69 +13,59 @@ object karmaMochaReporterStrings {
   sealed trait autowatch
     extends StObject
        with OutputOptions
-  @scala.inline
-  def autowatch: autowatch = "autowatch".asInstanceOf[autowatch]
+  inline def autowatch: autowatch = "autowatch".asInstanceOf[autowatch]
   
   @js.native
   sealed trait error
     extends StObject
        with ReporterColor
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait full
     extends StObject
        with OutputOptions
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait info
     extends StObject
        with ReporterColor
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait `inline`
     extends StObject
        with ShowDiffOptions
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait minimal
     extends StObject
        with OutputOptions
-  @scala.inline
-  def minimal: minimal = "minimal".asInstanceOf[minimal]
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
   sealed trait noFailures
     extends StObject
        with OutputOptions
-  @scala.inline
-  def noFailures: noFailures = "noFailures".asInstanceOf[noFailures]
+  inline def noFailures: noFailures = "noFailures".asInstanceOf[noFailures]
   
   @js.native
   sealed trait success
     extends StObject
        with ReporterColor
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait unified
     extends StObject
        with ShowDiffOptions
-  @scala.inline
-  def unified: unified = "unified".asInstanceOf[unified]
+  inline def unified: unified = "unified".asInstanceOf[unified]
   
   @js.native
   sealed trait warning
     extends StObject
        with ReporterColor
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

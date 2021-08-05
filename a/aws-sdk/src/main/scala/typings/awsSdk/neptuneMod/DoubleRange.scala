@@ -18,25 +18,19 @@ trait DoubleRange extends StObject {
 }
 object DoubleRange {
   
-  @scala.inline
-  def apply(): DoubleRange = {
+  inline def apply(): DoubleRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleRange]
   }
   
-  @scala.inline
-  implicit class DoubleRangeMutableBuilder[Self <: DoubleRange] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleRange](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

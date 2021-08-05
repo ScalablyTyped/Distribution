@@ -13,22 +13,17 @@ trait GetContainerImagesResult extends StObject {
 }
 object GetContainerImagesResult {
   
-  @scala.inline
-  def apply(): GetContainerImagesResult = {
+  inline def apply(): GetContainerImagesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContainerImagesResult]
   }
   
-  @scala.inline
-  implicit class GetContainerImagesResultMutableBuilder[Self <: GetContainerImagesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerImagesResult](x: Self) {
     
-    @scala.inline
-    def setContainerImages(value: ContainerImageList): Self = StObject.set(x, "containerImages", value.asInstanceOf[js.Any])
+    inline def setContainerImages(value: ContainerImageList): Self = StObject.set(x, "containerImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerImagesUndefined: Self = StObject.set(x, "containerImages", js.undefined)
+    inline def setContainerImagesUndefined: Self = StObject.set(x, "containerImages", js.undefined)
     
-    @scala.inline
-    def setContainerImagesVarargs(value: ContainerImage*): Self = StObject.set(x, "containerImages", js.Array(value :_*))
+    inline def setContainerImagesVarargs(value: ContainerImage*): Self = StObject.set(x, "containerImages", js.Array(value :_*))
   }
 }

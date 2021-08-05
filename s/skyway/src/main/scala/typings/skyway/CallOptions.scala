@@ -24,61 +24,43 @@ trait CallOptions extends StObject {
 }
 object CallOptions {
   
-  @scala.inline
-  def apply(): CallOptions = {
+  inline def apply(): CallOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallOptions]
   }
   
-  @scala.inline
-  implicit class CallOptionsMutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CallOptions](x: Self) {
     
-    @scala.inline
-    def setAudioBandwidth(value: Double): Self = StObject.set(x, "audioBandwidth", value.asInstanceOf[js.Any])
+    inline def setAudioBandwidth(value: Double): Self = StObject.set(x, "audioBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioBandwidthUndefined: Self = StObject.set(x, "audioBandwidth", js.undefined)
+    inline def setAudioBandwidthUndefined: Self = StObject.set(x, "audioBandwidth", js.undefined)
     
-    @scala.inline
-    def setAudioCodec(value: String): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
+    inline def setAudioCodec(value: String): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioCodecUndefined: Self = StObject.set(x, "audioCodec", js.undefined)
+    inline def setAudioCodecUndefined: Self = StObject.set(x, "audioCodec", js.undefined)
     
-    @scala.inline
-    def setAudioReceiveEnabled(value: Boolean): Self = StObject.set(x, "audioReceiveEnabled", value.asInstanceOf[js.Any])
+    inline def setAudioReceiveEnabled(value: Boolean): Self = StObject.set(x, "audioReceiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioReceiveEnabledUndefined: Self = StObject.set(x, "audioReceiveEnabled", js.undefined)
+    inline def setAudioReceiveEnabledUndefined: Self = StObject.set(x, "audioReceiveEnabled", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setVideoBandWidth(value: Double): Self = StObject.set(x, "videoBandWidth", value.asInstanceOf[js.Any])
+    inline def setVideoBandWidth(value: Double): Self = StObject.set(x, "videoBandWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoBandWidthUndefined: Self = StObject.set(x, "videoBandWidth", js.undefined)
+    inline def setVideoBandWidthUndefined: Self = StObject.set(x, "videoBandWidth", js.undefined)
     
-    @scala.inline
-    def setVideoCodec(value: String): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
+    inline def setVideoCodec(value: String): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCodecUndefined: Self = StObject.set(x, "videoCodec", js.undefined)
+    inline def setVideoCodecUndefined: Self = StObject.set(x, "videoCodec", js.undefined)
     
-    @scala.inline
-    def setVideoReceiveEnabled(value: Boolean): Self = StObject.set(x, "videoReceiveEnabled", value.asInstanceOf[js.Any])
+    inline def setVideoReceiveEnabled(value: Boolean): Self = StObject.set(x, "videoReceiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoReceiveEnabledUndefined: Self = StObject.set(x, "videoReceiveEnabled", js.undefined)
+    inline def setVideoReceiveEnabledUndefined: Self = StObject.set(x, "videoReceiveEnabled", js.undefined)
   }
 }

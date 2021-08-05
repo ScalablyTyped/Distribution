@@ -10,16 +10,13 @@ trait PostResponse extends StObject {
 }
 object PostResponse {
   
-  @scala.inline
-  def apply(body: PostResponseData): PostResponse = {
+  inline def apply(body: PostResponseData): PostResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostResponse]
   }
   
-  @scala.inline
-  implicit class PostResponseMutableBuilder[Self <: PostResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PostResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: PostResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: PostResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

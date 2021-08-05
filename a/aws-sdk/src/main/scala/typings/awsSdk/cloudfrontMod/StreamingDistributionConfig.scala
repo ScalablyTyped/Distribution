@@ -48,8 +48,7 @@ trait StreamingDistributionConfig extends StObject {
 }
 object StreamingDistributionConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CallerReference: String,
     Comment: String,
     Enabled: Boolean,
@@ -60,40 +59,28 @@ object StreamingDistributionConfig {
     __obj.asInstanceOf[StreamingDistributionConfig]
   }
   
-  @scala.inline
-  implicit class StreamingDistributionConfigMutableBuilder[Self <: StreamingDistributionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingDistributionConfig](x: Self) {
     
-    @scala.inline
-    def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    @scala.inline
-    def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogging(value: StreamingLoggingConfig): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: StreamingLoggingConfig): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
     
-    @scala.inline
-    def setPriceClass(value: PriceClass): Self = StObject.set(x, "PriceClass", value.asInstanceOf[js.Any])
+    inline def setPriceClass(value: PriceClass): Self = StObject.set(x, "PriceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceClassUndefined: Self = StObject.set(x, "PriceClass", js.undefined)
+    inline def setPriceClassUndefined: Self = StObject.set(x, "PriceClass", js.undefined)
     
-    @scala.inline
-    def setS3Origin(value: S3Origin): Self = StObject.set(x, "S3Origin", value.asInstanceOf[js.Any])
+    inline def setS3Origin(value: S3Origin): Self = StObject.set(x, "S3Origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustedSigners(value: TrustedSigners): Self = StObject.set(x, "TrustedSigners", value.asInstanceOf[js.Any])
+    inline def setTrustedSigners(value: TrustedSigners): Self = StObject.set(x, "TrustedSigners", value.asInstanceOf[js.Any])
   }
 }

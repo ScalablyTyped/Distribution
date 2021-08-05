@@ -13,15 +13,10 @@ object getScrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(target: Null, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default(target: Document, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default(target: HTMLElement, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default(target: Window, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(target: Null, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(target: Document, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(target: HTMLElement, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(target: Window, top: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def isWindow(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindow")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWindow(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindow")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

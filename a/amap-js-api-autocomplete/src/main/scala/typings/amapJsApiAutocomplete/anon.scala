@@ -12,17 +12,14 @@ object anon {
   }
   object Info {
     
-    @scala.inline
-    def apply(info: String): Info = {
+    inline def apply(info: String): Info = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object Tip {
     
-    @scala.inline
-    def apply(tip: typings.amapJsApiAutocomplete.AMap.Autocomplete.Tip): Tip = {
+    inline def apply(tip: typings.amapJsApiAutocomplete.AMap.Autocomplete.Tip): Tip = {
       val __obj = js.Dynamic.literal(tip = tip.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tip]
     }
     
-    @scala.inline
-    implicit class TipMutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
+    extension [Self <: Tip](x: Self) {
       
-      @scala.inline
-      def setTip(value: typings.amapJsApiAutocomplete.AMap.Autocomplete.Tip): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+      inline def setTip(value: typings.amapJsApiAutocomplete.AMap.Autocomplete.Tip): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     }
   }
 }

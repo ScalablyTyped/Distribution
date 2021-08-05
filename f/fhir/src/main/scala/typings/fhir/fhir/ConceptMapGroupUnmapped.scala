@@ -53,58 +53,41 @@ trait ConceptMapGroupUnmapped
 }
 object ConceptMapGroupUnmapped {
   
-  @scala.inline
-  def apply(mode: code): ConceptMapGroupUnmapped = {
+  inline def apply(mode: code): ConceptMapGroupUnmapped = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConceptMapGroupUnmapped]
   }
   
-  @scala.inline
-  implicit class ConceptMapGroupUnmappedMutableBuilder[Self <: ConceptMapGroupUnmapped] (val x: Self) extends AnyVal {
+  extension [Self <: ConceptMapGroupUnmapped](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
+    inline def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
+    inline def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
     
-    @scala.inline
-    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
+    inline def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
+    inline def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
-    @scala.inline
-    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
+    inline def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
+    inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
   }
 }

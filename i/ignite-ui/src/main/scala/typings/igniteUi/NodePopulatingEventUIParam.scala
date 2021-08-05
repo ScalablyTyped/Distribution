@@ -28,37 +28,27 @@ trait NodePopulatingEventUIParam extends StObject {
 }
 object NodePopulatingEventUIParam {
   
-  @scala.inline
-  def apply(): NodePopulatingEventUIParam = {
+  inline def apply(): NodePopulatingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodePopulatingEventUIParam]
   }
   
-  @scala.inline
-  implicit class NodePopulatingEventUIParamMutableBuilder[Self <: NodePopulatingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: NodePopulatingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+    inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

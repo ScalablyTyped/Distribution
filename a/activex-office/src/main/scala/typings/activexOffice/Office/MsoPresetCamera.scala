@@ -135,192 +135,129 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPresetCamera extends StObject
 object MsoPresetCamera {
   
-  @scala.inline
-  def msoCameraIsometricBottomDown: `23` = 23.asInstanceOf[`23`]
+  inline def msoCameraIsometricBottomDown: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def msoCameraIsometricBottomUp: `22` = 22.asInstanceOf[`22`]
+  inline def msoCameraIsometricBottomUp: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def msoCameraIsometricLeftDown: `25` = 25.asInstanceOf[`25`]
+  inline def msoCameraIsometricLeftDown: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def msoCameraIsometricLeftUp: `24` = 24.asInstanceOf[`24`]
+  inline def msoCameraIsometricLeftUp: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis1Left: `28` = 28.asInstanceOf[`28`]
+  inline def msoCameraIsometricOffAxis1Left: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis1Right: `29` = 29.asInstanceOf[`29`]
+  inline def msoCameraIsometricOffAxis1Right: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis1Top: `30` = 30.asInstanceOf[`30`]
+  inline def msoCameraIsometricOffAxis1Top: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis2Left: `31` = 31.asInstanceOf[`31`]
+  inline def msoCameraIsometricOffAxis2Left: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis2Right: `32` = 32.asInstanceOf[`32`]
+  inline def msoCameraIsometricOffAxis2Right: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis2Top: `33` = 33.asInstanceOf[`33`]
+  inline def msoCameraIsometricOffAxis2Top: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis3Bottom: `36` = 36.asInstanceOf[`36`]
+  inline def msoCameraIsometricOffAxis3Bottom: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis3Left: `34` = 34.asInstanceOf[`34`]
+  inline def msoCameraIsometricOffAxis3Left: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis3Right: `35` = 35.asInstanceOf[`35`]
+  inline def msoCameraIsometricOffAxis3Right: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis4Bottom: `39` = 39.asInstanceOf[`39`]
+  inline def msoCameraIsometricOffAxis4Bottom: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis4Left: `37` = 37.asInstanceOf[`37`]
+  inline def msoCameraIsometricOffAxis4Left: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def msoCameraIsometricOffAxis4Right: `38` = 38.asInstanceOf[`38`]
+  inline def msoCameraIsometricOffAxis4Right: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def msoCameraIsometricRightDown: `27` = 27.asInstanceOf[`27`]
+  inline def msoCameraIsometricRightDown: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def msoCameraIsometricRightUp: `26` = 26.asInstanceOf[`26`]
+  inline def msoCameraIsometricRightUp: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def msoCameraIsometricTopDown: `21` = 21.asInstanceOf[`21`]
+  inline def msoCameraIsometricTopDown: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def msoCameraIsometricTopUp: `20` = 20.asInstanceOf[`20`]
+  inline def msoCameraIsometricTopUp: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueBottom: `8` = 8.asInstanceOf[`8`]
+  inline def msoCameraLegacyObliqueBottom: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueBottomLeft: `7` = 7.asInstanceOf[`7`]
+  inline def msoCameraLegacyObliqueBottomLeft: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueBottomRight: `9` = 9.asInstanceOf[`9`]
+  inline def msoCameraLegacyObliqueBottomRight: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueFront: `5` = 5.asInstanceOf[`5`]
+  inline def msoCameraLegacyObliqueFront: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueLeft: `4` = 4.asInstanceOf[`4`]
+  inline def msoCameraLegacyObliqueLeft: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueRight: `6` = 6.asInstanceOf[`6`]
+  inline def msoCameraLegacyObliqueRight: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueTop: `2` = 2.asInstanceOf[`2`]
+  inline def msoCameraLegacyObliqueTop: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueTopLeft: `1` = 1.asInstanceOf[`1`]
+  inline def msoCameraLegacyObliqueTopLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCameraLegacyObliqueTopRight: `3` = 3.asInstanceOf[`3`]
+  inline def msoCameraLegacyObliqueTopRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveBottom: `17` = 17.asInstanceOf[`17`]
+  inline def msoCameraLegacyPerspectiveBottom: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveBottomLeft: `16` = 16.asInstanceOf[`16`]
+  inline def msoCameraLegacyPerspectiveBottomLeft: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveBottomRight: `18` = 18.asInstanceOf[`18`]
+  inline def msoCameraLegacyPerspectiveBottomRight: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveFront: `14` = 14.asInstanceOf[`14`]
+  inline def msoCameraLegacyPerspectiveFront: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveLeft: `13` = 13.asInstanceOf[`13`]
+  inline def msoCameraLegacyPerspectiveLeft: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveRight: `15` = 15.asInstanceOf[`15`]
+  inline def msoCameraLegacyPerspectiveRight: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveTop: `11` = 11.asInstanceOf[`11`]
+  inline def msoCameraLegacyPerspectiveTop: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveTopLeft: `10` = 10.asInstanceOf[`10`]
+  inline def msoCameraLegacyPerspectiveTopLeft: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoCameraLegacyPerspectiveTopRight: `12` = 12.asInstanceOf[`12`]
+  inline def msoCameraLegacyPerspectiveTopRight: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoCameraObliqueBottom: `46` = 46.asInstanceOf[`46`]
+  inline def msoCameraObliqueBottom: `46` = 46.asInstanceOf[`46`]
   
-  @scala.inline
-  def msoCameraObliqueBottomLeft: `45` = 45.asInstanceOf[`45`]
+  inline def msoCameraObliqueBottomLeft: `45` = 45.asInstanceOf[`45`]
   
-  @scala.inline
-  def msoCameraObliqueBottomRight: `47` = 47.asInstanceOf[`47`]
+  inline def msoCameraObliqueBottomRight: `47` = 47.asInstanceOf[`47`]
   
-  @scala.inline
-  def msoCameraObliqueLeft: `43` = 43.asInstanceOf[`43`]
+  inline def msoCameraObliqueLeft: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def msoCameraObliqueRight: `44` = 44.asInstanceOf[`44`]
+  inline def msoCameraObliqueRight: `44` = 44.asInstanceOf[`44`]
   
-  @scala.inline
-  def msoCameraObliqueTop: `41` = 41.asInstanceOf[`41`]
+  inline def msoCameraObliqueTop: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def msoCameraObliqueTopLeft: `40` = 40.asInstanceOf[`40`]
+  inline def msoCameraObliqueTopLeft: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def msoCameraObliqueTopRight: `42` = 42.asInstanceOf[`42`]
+  inline def msoCameraObliqueTopRight: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def msoCameraOrthographicFront: `19` = 19.asInstanceOf[`19`]
+  inline def msoCameraOrthographicFront: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def msoCameraPerspectiveAbove: `51` = 51.asInstanceOf[`51`]
+  inline def msoCameraPerspectiveAbove: `51` = 51.asInstanceOf[`51`]
   
-  @scala.inline
-  def msoCameraPerspectiveAboveLeftFacing: `53` = 53.asInstanceOf[`53`]
+  inline def msoCameraPerspectiveAboveLeftFacing: `53` = 53.asInstanceOf[`53`]
   
-  @scala.inline
-  def msoCameraPerspectiveAboveRightFacing: `54` = 54.asInstanceOf[`54`]
+  inline def msoCameraPerspectiveAboveRightFacing: `54` = 54.asInstanceOf[`54`]
   
-  @scala.inline
-  def msoCameraPerspectiveBelow: `52` = 52.asInstanceOf[`52`]
+  inline def msoCameraPerspectiveBelow: `52` = 52.asInstanceOf[`52`]
   
-  @scala.inline
-  def msoCameraPerspectiveContrastingLeftFacing: `55` = 55.asInstanceOf[`55`]
+  inline def msoCameraPerspectiveContrastingLeftFacing: `55` = 55.asInstanceOf[`55`]
   
-  @scala.inline
-  def msoCameraPerspectiveContrastingRightFacing: `56` = 56.asInstanceOf[`56`]
+  inline def msoCameraPerspectiveContrastingRightFacing: `56` = 56.asInstanceOf[`56`]
   
-  @scala.inline
-  def msoCameraPerspectiveFront: `48` = 48.asInstanceOf[`48`]
+  inline def msoCameraPerspectiveFront: `48` = 48.asInstanceOf[`48`]
   
-  @scala.inline
-  def msoCameraPerspectiveHeroicExtremeLeftFacing: `59` = 59.asInstanceOf[`59`]
+  inline def msoCameraPerspectiveHeroicExtremeLeftFacing: `59` = 59.asInstanceOf[`59`]
   
-  @scala.inline
-  def msoCameraPerspectiveHeroicExtremeRightFacing: `60` = 60.asInstanceOf[`60`]
+  inline def msoCameraPerspectiveHeroicExtremeRightFacing: `60` = 60.asInstanceOf[`60`]
   
-  @scala.inline
-  def msoCameraPerspectiveHeroicLeftFacing: `57` = 57.asInstanceOf[`57`]
+  inline def msoCameraPerspectiveHeroicLeftFacing: `57` = 57.asInstanceOf[`57`]
   
-  @scala.inline
-  def msoCameraPerspectiveHeroicRightFacing: `58` = 58.asInstanceOf[`58`]
+  inline def msoCameraPerspectiveHeroicRightFacing: `58` = 58.asInstanceOf[`58`]
   
-  @scala.inline
-  def msoCameraPerspectiveLeft: `49` = 49.asInstanceOf[`49`]
+  inline def msoCameraPerspectiveLeft: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def msoCameraPerspectiveRelaxed: `61` = 61.asInstanceOf[`61`]
+  inline def msoCameraPerspectiveRelaxed: `61` = 61.asInstanceOf[`61`]
   
-  @scala.inline
-  def msoCameraPerspectiveRelaxedModerately: `62` = 62.asInstanceOf[`62`]
+  inline def msoCameraPerspectiveRelaxedModerately: `62` = 62.asInstanceOf[`62`]
   
-  @scala.inline
-  def msoCameraPerspectiveRight: `50` = 50.asInstanceOf[`50`]
+  inline def msoCameraPerspectiveRight: `50` = 50.asInstanceOf[`50`]
   
-  @scala.inline
-  def msoPresetCameraMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoPresetCameraMixed: `-2` = -2.asInstanceOf[`-2`]
 }

@@ -11,20 +11,17 @@ object reduxLittleRouterStrings {
   sealed trait POP
     extends StObject
        with HistoryAction
-  @scala.inline
-  def POP: POP = "POP".asInstanceOf[POP]
+  inline def POP: POP = "POP".asInstanceOf[POP]
   
   @js.native
   sealed trait PUSH
     extends StObject
        with HistoryAction
-  @scala.inline
-  def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
+  inline def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
   
   @js.native
   sealed trait REPLACE
     extends StObject
        with HistoryAction
-  @scala.inline
-  def REPLACE: REPLACE = "REPLACE".asInstanceOf[REPLACE]
+  inline def REPLACE: REPLACE = "REPLACE".asInstanceOf[REPLACE]
 }

@@ -20,25 +20,19 @@ trait ExportingCsvAnnotationsOptions extends StObject {
 }
 object ExportingCsvAnnotationsOptions {
   
-  @scala.inline
-  def apply(): ExportingCsvAnnotationsOptions = {
+  inline def apply(): ExportingCsvAnnotationsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportingCsvAnnotationsOptions]
   }
   
-  @scala.inline
-  implicit class ExportingCsvAnnotationsOptionsMutableBuilder[Self <: ExportingCsvAnnotationsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportingCsvAnnotationsOptions](x: Self) {
     
-    @scala.inline
-    def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
+    inline def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
+    inline def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
     
-    @scala.inline
-    def setJoin(value: Boolean): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+    inline def setJoin(value: Boolean): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
+    inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
   }
 }

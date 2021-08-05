@@ -23,19 +23,15 @@ trait ASPxClientTabControlTabCancelEventArgs
 }
 object ASPxClientTabControlTabCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, processOnServer: Boolean, reloadContentOnCallback: Boolean, tab: ASPxClientTab): ASPxClientTabControlTabCancelEventArgs = {
+  inline def apply(cancel: Boolean, processOnServer: Boolean, reloadContentOnCallback: Boolean, tab: ASPxClientTab): ASPxClientTabControlTabCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], reloadContentOnCallback = reloadContentOnCallback.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTabControlTabCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTabControlTabCancelEventArgsMutableBuilder[Self <: ASPxClientTabControlTabCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTabControlTabCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setReloadContentOnCallback(value: Boolean): Self = StObject.set(x, "reloadContentOnCallback", value.asInstanceOf[js.Any])
+    inline def setReloadContentOnCallback(value: Boolean): Self = StObject.set(x, "reloadContentOnCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTab(value: ASPxClientTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: ASPxClientTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

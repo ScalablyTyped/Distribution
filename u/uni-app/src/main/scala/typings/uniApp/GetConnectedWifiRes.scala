@@ -13,19 +13,15 @@ trait GetConnectedWifiRes extends StObject {
 }
 object GetConnectedWifiRes {
   
-  @scala.inline
-  def apply(): GetConnectedWifiRes = {
+  inline def apply(): GetConnectedWifiRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConnectedWifiRes]
   }
   
-  @scala.inline
-  implicit class GetConnectedWifiResMutableBuilder[Self <: GetConnectedWifiRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectedWifiRes](x: Self) {
     
-    @scala.inline
-    def setWifi(value: WiFi): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
+    inline def setWifi(value: WiFi): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiUndefined: Self = StObject.set(x, "wifi", js.undefined)
+    inline def setWifiUndefined: Self = StObject.set(x, "wifi", js.undefined)
   }
 }

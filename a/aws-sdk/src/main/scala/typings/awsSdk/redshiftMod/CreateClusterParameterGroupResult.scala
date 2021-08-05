@@ -10,19 +10,15 @@ trait CreateClusterParameterGroupResult extends StObject {
 }
 object CreateClusterParameterGroupResult {
   
-  @scala.inline
-  def apply(): CreateClusterParameterGroupResult = {
+  inline def apply(): CreateClusterParameterGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClusterParameterGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateClusterParameterGroupResultMutableBuilder[Self <: CreateClusterParameterGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterParameterGroupResult](x: Self) {
     
-    @scala.inline
-    def setClusterParameterGroup(value: ClusterParameterGroup): Self = StObject.set(x, "ClusterParameterGroup", value.asInstanceOf[js.Any])
+    inline def setClusterParameterGroup(value: ClusterParameterGroup): Self = StObject.set(x, "ClusterParameterGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterParameterGroupUndefined: Self = StObject.set(x, "ClusterParameterGroup", js.undefined)
+    inline def setClusterParameterGroupUndefined: Self = StObject.set(x, "ClusterParameterGroup", js.undefined)
   }
 }

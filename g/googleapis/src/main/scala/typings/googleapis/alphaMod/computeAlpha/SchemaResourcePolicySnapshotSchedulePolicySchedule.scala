@@ -17,31 +17,23 @@ trait SchemaResourcePolicySnapshotSchedulePolicySchedule extends StObject {
 }
 object SchemaResourcePolicySnapshotSchedulePolicySchedule {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicySnapshotSchedulePolicySchedule = {
+  inline def apply(): SchemaResourcePolicySnapshotSchedulePolicySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicySchedule]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicySnapshotSchedulePolicyScheduleMutableBuilder[Self <: SchemaResourcePolicySnapshotSchedulePolicySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicySnapshotSchedulePolicySchedule](x: Self) {
     
-    @scala.inline
-    def setDailySchedule(value: SchemaResourcePolicyDailyCycle): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
+    inline def setDailySchedule(value: SchemaResourcePolicyDailyCycle): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyScheduleUndefined: Self = StObject.set(x, "dailySchedule", js.undefined)
+    inline def setDailyScheduleUndefined: Self = StObject.set(x, "dailySchedule", js.undefined)
     
-    @scala.inline
-    def setHourlySchedule(value: SchemaResourcePolicyHourlyCycle): Self = StObject.set(x, "hourlySchedule", value.asInstanceOf[js.Any])
+    inline def setHourlySchedule(value: SchemaResourcePolicyHourlyCycle): Self = StObject.set(x, "hourlySchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourlyScheduleUndefined: Self = StObject.set(x, "hourlySchedule", js.undefined)
+    inline def setHourlyScheduleUndefined: Self = StObject.set(x, "hourlySchedule", js.undefined)
     
-    @scala.inline
-    def setWeeklySchedule(value: SchemaResourcePolicyWeeklyCycle): Self = StObject.set(x, "weeklySchedule", value.asInstanceOf[js.Any])
+    inline def setWeeklySchedule(value: SchemaResourcePolicyWeeklyCycle): Self = StObject.set(x, "weeklySchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyScheduleUndefined: Self = StObject.set(x, "weeklySchedule", js.undefined)
+    inline def setWeeklyScheduleUndefined: Self = StObject.set(x, "weeklySchedule", js.undefined)
   }
 }

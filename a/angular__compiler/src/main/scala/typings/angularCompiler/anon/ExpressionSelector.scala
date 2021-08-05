@@ -12,19 +12,15 @@ trait ExpressionSelector extends StObject {
 }
 object ExpressionSelector {
   
-  @scala.inline
-  def apply(expression: typings.angularCompiler.outputAstMod.Expression, selector: String): ExpressionSelector = {
+  inline def apply(expression: typings.angularCompiler.outputAstMod.Expression, selector: String): ExpressionSelector = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressionSelector]
   }
   
-  @scala.inline
-  implicit class ExpressionSelectorMutableBuilder[Self <: ExpressionSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ExpressionSelector](x: Self) {
     
-    @scala.inline
-    def setExpression(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

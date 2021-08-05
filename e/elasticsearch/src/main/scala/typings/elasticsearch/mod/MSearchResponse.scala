@@ -10,22 +10,17 @@ trait MSearchResponse[T] extends StObject {
 }
 object MSearchResponse {
   
-  @scala.inline
-  def apply[T](): MSearchResponse[T] = {
+  inline def apply[T](): MSearchResponse[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MSearchResponse[T]]
   }
   
-  @scala.inline
-  implicit class MSearchResponseMutableBuilder[Self <: MSearchResponse[?], T] (val x: Self & MSearchResponse[T]) extends AnyVal {
+  extension [Self <: MSearchResponse[?], T](x: Self & MSearchResponse[T]) {
     
-    @scala.inline
-    def setResponses(value: js.Array[SearchResponse[T]]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[SearchResponse[T]]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: SearchResponse[T]*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SearchResponse[T]*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

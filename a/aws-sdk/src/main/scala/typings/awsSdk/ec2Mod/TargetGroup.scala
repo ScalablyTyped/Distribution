@@ -13,19 +13,15 @@ trait TargetGroup extends StObject {
 }
 object TargetGroup {
   
-  @scala.inline
-  def apply(): TargetGroup = {
+  inline def apply(): TargetGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetGroup]
   }
   
-  @scala.inline
-  implicit class TargetGroupMutableBuilder[Self <: TargetGroup] (val x: Self) extends AnyVal {
+  extension [Self <: TargetGroup](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

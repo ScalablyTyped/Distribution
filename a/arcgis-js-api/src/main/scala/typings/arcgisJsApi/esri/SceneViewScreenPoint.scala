@@ -26,8 +26,7 @@ trait SceneViewScreenPoint
 }
 object SceneViewScreenPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object SceneViewScreenPoint {
     __obj.asInstanceOf[SceneViewScreenPoint]
   }
   
-  @scala.inline
-  implicit class SceneViewScreenPointMutableBuilder[Self <: SceneViewScreenPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewScreenPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

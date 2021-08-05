@@ -11,8 +11,6 @@ object serverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderStatic(onRender: js.Function0[String]): Css = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")(onRender.asInstanceOf[js.Any]).asInstanceOf[Css]
-  @scala.inline
-  def renderStatic(onRender: js.Function0[String], namespace: String): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")(onRender.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def renderStatic(onRender: js.Function0[String]): Css = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")(onRender.asInstanceOf[js.Any]).asInstanceOf[Css]
+  inline def renderStatic(onRender: js.Function0[String], namespace: String): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")(onRender.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[Css]
 }

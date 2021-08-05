@@ -61,8 +61,7 @@ trait VisualVariablesResult
 }
 object VisualVariablesResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authoringInfo: AuthoringInfo,
     basemapId: String,
     basemapTheme: String,
@@ -78,28 +77,20 @@ object VisualVariablesResult {
     __obj.asInstanceOf[VisualVariablesResult]
   }
   
-  @scala.inline
-  implicit class VisualVariablesResultMutableBuilder[Self <: VisualVariablesResult] (val x: Self) extends AnyVal {
+  extension [Self <: VisualVariablesResult](x: Self) {
     
-    @scala.inline
-    def setAuthoringInfo(value: AuthoringInfo): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
+    inline def setAuthoringInfo(value: AuthoringInfo): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
+    inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: VisualVariablesResultColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: VisualVariablesResultColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
+    inline def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: VisualVariablesResultSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: VisualVariablesResultSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait Timing extends StObject {
 }
 object Timing {
   
-  @scala.inline
-  def apply(): Timing = {
+  inline def apply(): Timing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Timing]
   }
   
-  @scala.inline
-  implicit class TimingMutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
+  extension [Self <: Timing](x: Self) {
     
-    @scala.inline
-    def setFinishTimeMillis(value: NullableLong): Self = StObject.set(x, "FinishTimeMillis", value.asInstanceOf[js.Any])
+    inline def setFinishTimeMillis(value: NullableLong): Self = StObject.set(x, "FinishTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTimeMillisUndefined: Self = StObject.set(x, "FinishTimeMillis", js.undefined)
+    inline def setFinishTimeMillisUndefined: Self = StObject.set(x, "FinishTimeMillis", js.undefined)
     
-    @scala.inline
-    def setStartTimeMillis(value: NullableLong): Self = StObject.set(x, "StartTimeMillis", value.asInstanceOf[js.Any])
+    inline def setStartTimeMillis(value: NullableLong): Self = StObject.set(x, "StartTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeMillisUndefined: Self = StObject.set(x, "StartTimeMillis", js.undefined)
+    inline def setStartTimeMillisUndefined: Self = StObject.set(x, "StartTimeMillis", js.undefined)
     
-    @scala.inline
-    def setSubmitTimeMillis(value: NullableLong): Self = StObject.set(x, "SubmitTimeMillis", value.asInstanceOf[js.Any])
+    inline def setSubmitTimeMillis(value: NullableLong): Self = StObject.set(x, "SubmitTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeMillisUndefined: Self = StObject.set(x, "SubmitTimeMillis", js.undefined)
+    inline def setSubmitTimeMillisUndefined: Self = StObject.set(x, "SubmitTimeMillis", js.undefined)
   }
 }

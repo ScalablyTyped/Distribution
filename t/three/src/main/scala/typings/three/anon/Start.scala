@@ -12,19 +12,15 @@ trait Start extends StObject {
 }
 object Start {
   
-  @scala.inline
-  def apply(count: Double, start: Double): Start = {
+  inline def apply(count: Double, start: Double): Start = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Start]
   }
   
-  @scala.inline
-  implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+  extension [Self <: Start](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

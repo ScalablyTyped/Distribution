@@ -28,37 +28,27 @@ trait ResourceChangeDetail extends StObject {
 }
 object ResourceChangeDetail {
   
-  @scala.inline
-  def apply(): ResourceChangeDetail = {
+  inline def apply(): ResourceChangeDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceChangeDetail]
   }
   
-  @scala.inline
-  implicit class ResourceChangeDetailMutableBuilder[Self <: ResourceChangeDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceChangeDetail](x: Self) {
     
-    @scala.inline
-    def setCausingEntity(value: CausingEntity): Self = StObject.set(x, "CausingEntity", value.asInstanceOf[js.Any])
+    inline def setCausingEntity(value: CausingEntity): Self = StObject.set(x, "CausingEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCausingEntityUndefined: Self = StObject.set(x, "CausingEntity", js.undefined)
+    inline def setCausingEntityUndefined: Self = StObject.set(x, "CausingEntity", js.undefined)
     
-    @scala.inline
-    def setChangeSource(value: ChangeSource): Self = StObject.set(x, "ChangeSource", value.asInstanceOf[js.Any])
+    inline def setChangeSource(value: ChangeSource): Self = StObject.set(x, "ChangeSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSourceUndefined: Self = StObject.set(x, "ChangeSource", js.undefined)
+    inline def setChangeSourceUndefined: Self = StObject.set(x, "ChangeSource", js.undefined)
     
-    @scala.inline
-    def setEvaluation(value: EvaluationType): Self = StObject.set(x, "Evaluation", value.asInstanceOf[js.Any])
+    inline def setEvaluation(value: EvaluationType): Self = StObject.set(x, "Evaluation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationUndefined: Self = StObject.set(x, "Evaluation", js.undefined)
+    inline def setEvaluationUndefined: Self = StObject.set(x, "Evaluation", js.undefined)
     
-    @scala.inline
-    def setTarget(value: ResourceTargetDefinition): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: ResourceTargetDefinition): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
   }
 }

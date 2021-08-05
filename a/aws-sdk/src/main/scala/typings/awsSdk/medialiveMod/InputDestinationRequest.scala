@@ -14,19 +14,15 @@ trait InputDestinationRequest extends StObject {
 }
 object InputDestinationRequest {
   
-  @scala.inline
-  def apply(): InputDestinationRequest = {
+  inline def apply(): InputDestinationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputDestinationRequest]
   }
   
-  @scala.inline
-  implicit class InputDestinationRequestMutableBuilder[Self <: InputDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InputDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setStreamName(value: string): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: string): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

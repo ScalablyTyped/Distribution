@@ -10,6 +10,5 @@ object getCacheKeyForURLMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCacheKeyForURL(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKeyForURL")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getCacheKeyForURL(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKeyForURL")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

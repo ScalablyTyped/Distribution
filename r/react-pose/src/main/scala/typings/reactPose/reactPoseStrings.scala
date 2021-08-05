@@ -8,6 +8,5 @@ object reactPoseStrings {
   
   @js.native
   sealed trait absolute extends StObject
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
 }

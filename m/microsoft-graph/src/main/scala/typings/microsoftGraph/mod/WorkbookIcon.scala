@@ -19,25 +19,19 @@ trait WorkbookIcon extends StObject {
 }
 object WorkbookIcon {
   
-  @scala.inline
-  def apply(): WorkbookIcon = {
+  inline def apply(): WorkbookIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookIcon]
   }
   
-  @scala.inline
-  implicit class WorkbookIconMutableBuilder[Self <: WorkbookIcon] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookIcon](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSet(value: String): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: String): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

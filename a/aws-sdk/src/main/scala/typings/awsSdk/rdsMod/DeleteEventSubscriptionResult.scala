@@ -10,19 +10,15 @@ trait DeleteEventSubscriptionResult extends StObject {
 }
 object DeleteEventSubscriptionResult {
   
-  @scala.inline
-  def apply(): DeleteEventSubscriptionResult = {
+  inline def apply(): DeleteEventSubscriptionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteEventSubscriptionResult]
   }
   
-  @scala.inline
-  implicit class DeleteEventSubscriptionResultMutableBuilder[Self <: DeleteEventSubscriptionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventSubscriptionResult](x: Self) {
     
-    @scala.inline
-    def setEventSubscription(value: EventSubscription): Self = StObject.set(x, "EventSubscription", value.asInstanceOf[js.Any])
+    inline def setEventSubscription(value: EventSubscription): Self = StObject.set(x, "EventSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSubscriptionUndefined: Self = StObject.set(x, "EventSubscription", js.undefined)
+    inline def setEventSubscriptionUndefined: Self = StObject.set(x, "EventSubscription", js.undefined)
   }
 }

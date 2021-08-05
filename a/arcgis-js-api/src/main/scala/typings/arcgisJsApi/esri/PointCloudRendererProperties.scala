@@ -29,31 +29,23 @@ trait PointCloudRendererProperties extends StObject {
 }
 object PointCloudRendererProperties {
   
-  @scala.inline
-  def apply(): PointCloudRendererProperties = {
+  inline def apply(): PointCloudRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointCloudRendererProperties]
   }
   
-  @scala.inline
-  implicit class PointCloudRendererPropertiesMutableBuilder[Self <: PointCloudRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudRendererProperties](x: Self) {
     
-    @scala.inline
-    def setColorModulation(value: PointCloudRendererColorModulation): Self = StObject.set(x, "colorModulation", value.asInstanceOf[js.Any])
+    inline def setColorModulation(value: PointCloudRendererColorModulation): Self = StObject.set(x, "colorModulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorModulationUndefined: Self = StObject.set(x, "colorModulation", js.undefined)
+    inline def setColorModulationUndefined: Self = StObject.set(x, "colorModulation", js.undefined)
     
-    @scala.inline
-    def setPointSizeAlgorithm(value: PointCloudRendererPointSizeAlgorithm): Self = StObject.set(x, "pointSizeAlgorithm", value.asInstanceOf[js.Any])
+    inline def setPointSizeAlgorithm(value: PointCloudRendererPointSizeAlgorithm): Self = StObject.set(x, "pointSizeAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointSizeAlgorithmUndefined: Self = StObject.set(x, "pointSizeAlgorithm", js.undefined)
+    inline def setPointSizeAlgorithmUndefined: Self = StObject.set(x, "pointSizeAlgorithm", js.undefined)
     
-    @scala.inline
-    def setPointsPerInch(value: Double): Self = StObject.set(x, "pointsPerInch", value.asInstanceOf[js.Any])
+    inline def setPointsPerInch(value: Double): Self = StObject.set(x, "pointsPerInch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsPerInchUndefined: Self = StObject.set(x, "pointsPerInch", js.undefined)
+    inline def setPointsPerInchUndefined: Self = StObject.set(x, "pointsPerInch", js.undefined)
   }
 }

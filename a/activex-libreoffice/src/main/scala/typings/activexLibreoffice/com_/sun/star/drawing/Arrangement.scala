@@ -22,18 +22,14 @@ trait Arrangement extends StObject
 object Arrangement {
   
   /** Move this object behind all other objects. */
-  @scala.inline
-  def BACK: `3` = 3.asInstanceOf[`3`]
+  inline def BACK: `3` = 3.asInstanceOf[`3`]
   
   /** Move this object in front of all other objects. */
-  @scala.inline
-  def FRONT: `0` = 0.asInstanceOf[`0`]
+  inline def FRONT: `0` = 0.asInstanceOf[`0`]
   
   /** Move this object one object more to the back. */
-  @scala.inline
-  def MORE_BACK: `2` = 2.asInstanceOf[`2`]
+  inline def MORE_BACK: `2` = 2.asInstanceOf[`2`]
   
   /** Move this object one object more to the front. */
-  @scala.inline
-  def MORE_FRONT: `1` = 1.asInstanceOf[`1`]
+  inline def MORE_FRONT: `1` = 1.asInstanceOf[`1`]
 }

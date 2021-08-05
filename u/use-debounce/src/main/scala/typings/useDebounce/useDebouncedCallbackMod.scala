@@ -10,10 +10,8 @@ object useDebouncedCallbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: js.Array[js.Any] */](func: js.Function1[/* args */ T, js.Any], wait: Double): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]]]
-  @scala.inline
-  def default[T /* <: js.Array[js.Any] */](func: js.Function1[/* args */ T, js.Any], wait: Double, options: Options): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]]]
+  inline def default[T /* <: js.Array[js.Any] */](func: js.Function1[/* args */ T, js.Any], wait: Double): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]]]
+  inline def default[T /* <: js.Array[js.Any] */](func: js.Function1[/* args */ T, js.Any], wait: Double, options: Options): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]]]
   
   trait Options extends StObject {
     
@@ -25,32 +23,24 @@ object useDebouncedCallbackMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
+      inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
+      inline def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
 }

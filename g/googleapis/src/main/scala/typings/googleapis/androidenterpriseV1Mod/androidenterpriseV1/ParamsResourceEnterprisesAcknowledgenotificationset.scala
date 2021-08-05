@@ -25,25 +25,19 @@ trait ParamsResourceEnterprisesAcknowledgenotificationset
 }
 object ParamsResourceEnterprisesAcknowledgenotificationset {
   
-  @scala.inline
-  def apply(): ParamsResourceEnterprisesAcknowledgenotificationset = {
+  inline def apply(): ParamsResourceEnterprisesAcknowledgenotificationset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEnterprisesAcknowledgenotificationset]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEnterprisesAcknowledgenotificationsetMutableBuilder[Self <: ParamsResourceEnterprisesAcknowledgenotificationset] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEnterprisesAcknowledgenotificationset](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
+    inline def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
+    inline def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
   }
 }

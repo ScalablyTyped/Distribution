@@ -18,17 +18,14 @@ trait ImageReference
 }
 object ImageReference {
   
-  @scala.inline
-  def apply(identifier: String, referenceType: ReferenceType): ImageReference = {
+  inline def apply(identifier: String, referenceType: ReferenceType): ImageReference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("imageReference")
     __obj.asInstanceOf[ImageReference]
   }
   
-  @scala.inline
-  implicit class ImageReferenceMutableBuilder[Self <: ImageReference] (val x: Self) extends AnyVal {
+  extension [Self <: ImageReference](x: Self) {
     
-    @scala.inline
-    def setType(value: imageReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: imageReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

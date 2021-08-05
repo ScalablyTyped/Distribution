@@ -24,26 +24,20 @@ object typesReplicaUpdateMod {
   }
   object ReplicaUpdate {
     
-    @scala.inline
-    def apply(): ReplicaUpdate = {
+    inline def apply(): ReplicaUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicaUpdateMutableBuilder[Self <: ReplicaUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaUpdate](x: Self) {
       
-      @scala.inline
-      def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: DeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: DeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
     }
   }
   
@@ -65,26 +59,20 @@ object typesReplicaUpdateMod {
   }
   object UnmarshalledReplicaUpdate {
     
-    @scala.inline
-    def apply(): UnmarshalledReplicaUpdate = {
+    inline def apply(): UnmarshalledReplicaUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledReplicaUpdate]
     }
     
-    @scala.inline
-    implicit class UnmarshalledReplicaUpdateMutableBuilder[Self <: UnmarshalledReplicaUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledReplicaUpdate](x: Self) {
       
-      @scala.inline
-      def setCreate(value: UnmarshalledCreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: UnmarshalledCreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: UnmarshalledDeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: UnmarshalledDeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
     }
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XMLNamespaces")
 @js.native
-class XMLNamespaces protected ()
+/* private */ class XMLNamespaces ()
   extends StObject
      with typings.activexWord.Word.XMLNamespaces

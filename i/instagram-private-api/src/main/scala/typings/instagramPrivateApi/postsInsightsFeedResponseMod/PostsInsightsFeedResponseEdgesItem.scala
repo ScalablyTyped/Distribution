@@ -12,22 +12,17 @@ trait PostsInsightsFeedResponseEdgesItem extends StObject {
 }
 object PostsInsightsFeedResponseEdgesItem {
   
-  @scala.inline
-  def apply(node: PostsInsightsFeedResponseNode): PostsInsightsFeedResponseEdgesItem = {
+  inline def apply(node: PostsInsightsFeedResponseNode): PostsInsightsFeedResponseEdgesItem = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseEdgesItem]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseEdgesItemMutableBuilder[Self <: PostsInsightsFeedResponseEdgesItem] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseEdgesItem](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setNode(value: PostsInsightsFeedResponseNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: PostsInsightsFeedResponseNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

@@ -27,55 +27,39 @@ trait Algorithm extends StObject {
 }
 object Algorithm {
   
-  @scala.inline
-  def apply(): Algorithm = {
+  inline def apply(): Algorithm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Algorithm]
   }
   
-  @scala.inline
-  implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
+  extension [Self <: Algorithm](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+    inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
-    @scala.inline
-    def setGenerateLocalKeyId(value: Boolean): Self = StObject.set(x, "generateLocalKeyId", value.asInstanceOf[js.Any])
+    inline def setGenerateLocalKeyId(value: Boolean): Self = StObject.set(x, "generateLocalKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateLocalKeyIdUndefined: Self = StObject.set(x, "generateLocalKeyId", js.undefined)
+    inline def setGenerateLocalKeyIdUndefined: Self = StObject.set(x, "generateLocalKeyId", js.undefined)
     
-    @scala.inline
-    def setLocalKeyId(value: Hex): Self = StObject.set(x, "localKeyId", value.asInstanceOf[js.Any])
+    inline def setLocalKeyId(value: Hex): Self = StObject.set(x, "localKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalKeyIdUndefined: Self = StObject.set(x, "localKeyId", js.undefined)
+    inline def setLocalKeyIdUndefined: Self = StObject.set(x, "localKeyId", js.undefined)
     
-    @scala.inline
-    def setSaltSize(value: Double): Self = StObject.set(x, "saltSize", value.asInstanceOf[js.Any])
+    inline def setSaltSize(value: Double): Self = StObject.set(x, "saltSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltSizeUndefined: Self = StObject.set(x, "saltSize", js.undefined)
+    inline def setSaltSizeUndefined: Self = StObject.set(x, "saltSize", js.undefined)
     
-    @scala.inline
-    def setUseMac(value: Boolean): Self = StObject.set(x, "useMac", value.asInstanceOf[js.Any])
+    inline def setUseMac(value: Boolean): Self = StObject.set(x, "useMac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMacUndefined: Self = StObject.set(x, "useMac", js.undefined)
+    inline def setUseMacUndefined: Self = StObject.set(x, "useMac", js.undefined)
   }
 }

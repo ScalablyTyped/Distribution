@@ -21,7 +21,6 @@ object reactMod {
     @JSImport("@storybook/addon-links/dist/react", "default.defaultProps")
     @js.native
     def defaultProps: Props = js.native
-    @scala.inline
-    def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

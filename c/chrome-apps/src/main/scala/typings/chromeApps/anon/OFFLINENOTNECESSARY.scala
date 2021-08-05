@@ -17,22 +17,17 @@ trait OFFLINENOTNECESSARY extends StObject {
 }
 object OFFLINENOTNECESSARY {
   
-  @scala.inline
-  def apply(): OFFLINENOTNECESSARY = {
+  inline def apply(): OFFLINENOTNECESSARY = {
     val __obj = js.Dynamic.literal(OFFLINE_NOT_NECESSARY = "OFFLINE_NOT_NECESSARY", SAVE_FOR_OFFLINE = "SAVE_FOR_OFFLINE", SHARE = "SHARE")
     __obj.asInstanceOf[OFFLINENOTNECESSARY]
   }
   
-  @scala.inline
-  implicit class OFFLINENOTNECESSARYMutableBuilder[Self <: OFFLINENOTNECESSARY] (val x: Self) extends AnyVal {
+  extension [Self <: OFFLINENOTNECESSARY](x: Self) {
     
-    @scala.inline
-    def setOFFLINE_NOT_NECESSARY(value: OFFLINE_NOT_NECESSARY): Self = StObject.set(x, "OFFLINE_NOT_NECESSARY", value.asInstanceOf[js.Any])
+    inline def setOFFLINE_NOT_NECESSARY(value: OFFLINE_NOT_NECESSARY): Self = StObject.set(x, "OFFLINE_NOT_NECESSARY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAVE_FOR_OFFLINE(value: SAVE_FOR_OFFLINE): Self = StObject.set(x, "SAVE_FOR_OFFLINE", value.asInstanceOf[js.Any])
+    inline def setSAVE_FOR_OFFLINE(value: SAVE_FOR_OFFLINE): Self = StObject.set(x, "SAVE_FOR_OFFLINE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHARE(value: SHARE): Self = StObject.set(x, "SHARE", value.asInstanceOf[js.Any])
+    inline def setSHARE(value: SHARE): Self = StObject.set(x, "SHARE", value.asInstanceOf[js.Any])
   }
 }

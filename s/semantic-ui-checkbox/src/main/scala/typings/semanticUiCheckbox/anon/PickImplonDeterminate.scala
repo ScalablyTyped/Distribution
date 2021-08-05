@@ -14,16 +14,13 @@ trait PickImplonDeterminate extends StObject {
 }
 object PickImplonDeterminate {
   
-  @scala.inline
-  def apply(onDeterminate: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonDeterminate = {
+  inline def apply(onDeterminate: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonDeterminate = {
     val __obj = js.Dynamic.literal(onDeterminate = onDeterminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonDeterminate]
   }
   
-  @scala.inline
-  implicit class PickImplonDeterminateMutableBuilder[Self <: PickImplonDeterminate] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonDeterminate](x: Self) {
     
-    @scala.inline
-    def setOnDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDeterminate", value.asInstanceOf[js.Any])
+    inline def setOnDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDeterminate", value.asInstanceOf[js.Any])
   }
 }

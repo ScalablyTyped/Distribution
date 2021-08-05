@@ -48,7 +48,7 @@ object srcServiceMod {
     _url: String
     ) = this()
     
-    val _appId: String | Null = js.native
+    /* protected */ val _appId: String | Null = js.native
     
     /**
       * @internal
@@ -66,18 +66,18 @@ object srcServiceMod {
       */
     def _delete(): js.Promise[Unit] = js.native
     
-    var _deleted: js.Any = js.native
+    /* private */ var _deleted: js.Any = js.native
     
-    var _maxOperationRetryTime: js.Any = js.native
+    /* private */ var _maxOperationRetryTime: js.Any = js.native
     
-    var _maxUploadRetryTime: js.Any = js.native
+    /* private */ var _maxUploadRetryTime: js.Any = js.native
     
     /**
       * @internal
       */
     val _pool: XhrIoPool = js.native
     
-    val _requests: js.Any = js.native
+    /* private */ val _requests: js.Any = js.native
     
     /**
       * @internal
@@ -109,17 +109,11 @@ object srcServiceMod {
     def maxUploadRetryTime_=(time: Double): Unit = js.native
   }
   
-  @scala.inline
-  def isUrl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")().asInstanceOf[Boolean]
-  @scala.inline
-  def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUrl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")().asInstanceOf[Boolean]
+  inline def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def ref(storageOrRef: Reference): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any]).asInstanceOf[Reference]
-  @scala.inline
-  def ref(storageOrRef: Reference, path: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Reference]
-  @scala.inline
-  def ref(storage: StorageService): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any]).asInstanceOf[Reference]
-  @scala.inline
-  def ref(storage: StorageService, url: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  inline def ref(storageOrRef: Reference): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  inline def ref(storageOrRef: Reference, path: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  inline def ref(storage: StorageService): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  inline def ref(storage: StorageService, url: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Reference]
 }

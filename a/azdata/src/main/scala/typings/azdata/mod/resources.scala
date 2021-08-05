@@ -11,6 +11,5 @@ object resources {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerResourceProvider(providerMetadata: ResourceProviderMetadata, provider: ResourceProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceProvider")(providerMetadata.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  inline def registerResourceProvider(providerMetadata: ResourceProviderMetadata, provider: ResourceProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceProvider")(providerMetadata.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
 }

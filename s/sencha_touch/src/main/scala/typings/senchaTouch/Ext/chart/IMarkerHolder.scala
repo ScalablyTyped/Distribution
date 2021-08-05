@@ -19,19 +19,15 @@ trait IMarkerHolder
 }
 object IMarkerHolder {
   
-  @scala.inline
-  def apply(): IMarkerHolder = {
+  inline def apply(): IMarkerHolder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMarkerHolder]
   }
   
-  @scala.inline
-  implicit class IMarkerHolderMutableBuilder[Self <: IMarkerHolder] (val x: Self) extends AnyVal {
+  extension [Self <: IMarkerHolder](x: Self) {
     
-    @scala.inline
-    def setBindMarker(value: (/* name */ js.UndefOr[String], /* marker */ js.UndefOr[IMarkers]) => Unit): Self = StObject.set(x, "bindMarker", js.Any.fromFunction2(value))
+    inline def setBindMarker(value: (/* name */ js.UndefOr[String], /* marker */ js.UndefOr[IMarkers]) => Unit): Self = StObject.set(x, "bindMarker", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBindMarkerUndefined: Self = StObject.set(x, "bindMarker", js.undefined)
+    inline def setBindMarkerUndefined: Self = StObject.set(x, "bindMarker", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object cfnResponsePromiseStrings {
   
   @js.native
   sealed trait FAILED extends StObject
-  @scala.inline
-  def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
+  inline def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
   sealed trait SUCCESS extends StObject
-  @scala.inline
-  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
 }

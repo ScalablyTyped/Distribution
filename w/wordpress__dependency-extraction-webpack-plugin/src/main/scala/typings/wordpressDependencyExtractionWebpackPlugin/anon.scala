@@ -29,59 +29,42 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setCombineAssets(value: Boolean): Self = StObject.set(x, "combineAssets", value.asInstanceOf[js.Any])
+      inline def setCombineAssets(value: Boolean): Self = StObject.set(x, "combineAssets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombineAssetsUndefined: Self = StObject.set(x, "combineAssets", js.undefined)
+      inline def setCombineAssetsUndefined: Self = StObject.set(x, "combineAssets", js.undefined)
       
-      @scala.inline
-      def setCombinedOutputFile(value: String): Self = StObject.set(x, "combinedOutputFile", value.asInstanceOf[js.Any])
+      inline def setCombinedOutputFile(value: String): Self = StObject.set(x, "combinedOutputFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombinedOutputFileNull: Self = StObject.set(x, "combinedOutputFile", null)
+      inline def setCombinedOutputFileNull: Self = StObject.set(x, "combinedOutputFile", null)
       
-      @scala.inline
-      def setCombinedOutputFileUndefined: Self = StObject.set(x, "combinedOutputFile", js.undefined)
+      inline def setCombinedOutputFileUndefined: Self = StObject.set(x, "combinedOutputFile", js.undefined)
       
-      @scala.inline
-      def setInjectPolyfill(value: Boolean): Self = StObject.set(x, "injectPolyfill", value.asInstanceOf[js.Any])
+      inline def setInjectPolyfill(value: Boolean): Self = StObject.set(x, "injectPolyfill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectPolyfillUndefined: Self = StObject.set(x, "injectPolyfill", js.undefined)
+      inline def setInjectPolyfillUndefined: Self = StObject.set(x, "injectPolyfill", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: json | php): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: json | php): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+      inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
       
-      @scala.inline
-      def setRequestToExternal(value: /* request */ String => String | Unit | js.Array[String]): Self = StObject.set(x, "requestToExternal", js.Any.fromFunction1(value))
+      inline def setRequestToExternal(value: /* request */ String => String | Unit | js.Array[String]): Self = StObject.set(x, "requestToExternal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestToExternalUndefined: Self = StObject.set(x, "requestToExternal", js.undefined)
+      inline def setRequestToExternalUndefined: Self = StObject.set(x, "requestToExternal", js.undefined)
       
-      @scala.inline
-      def setRequestToHandle(value: /* request */ String => String | Unit): Self = StObject.set(x, "requestToHandle", js.Any.fromFunction1(value))
+      inline def setRequestToHandle(value: /* request */ String => String | Unit): Self = StObject.set(x, "requestToHandle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestToHandleUndefined: Self = StObject.set(x, "requestToHandle", js.undefined)
+      inline def setRequestToHandleUndefined: Self = StObject.set(x, "requestToHandle", js.undefined)
       
-      @scala.inline
-      def setUseDefaults(value: Boolean): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
+      inline def setUseDefaults(value: Boolean): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDefaultsUndefined: Self = StObject.set(x, "useDefaults", js.undefined)
+      inline def setUseDefaultsUndefined: Self = StObject.set(x, "useDefaults", js.undefined)
     }
   }
 }

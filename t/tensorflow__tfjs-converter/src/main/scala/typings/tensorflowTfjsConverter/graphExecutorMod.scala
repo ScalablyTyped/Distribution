@@ -34,7 +34,7 @@ object graphExecutorMod {
     def this(graph: Graph) = this()
     def this(graph: Graph, parent: GraphExecutor) = this()
     
-    var SEPERATOR: js.Any = js.native
+    /* private */ var SEPERATOR: js.Any = js.native
     
     /**
       * Executes the inference for given input tensors in Async fashion.
@@ -50,41 +50,41 @@ object graphExecutorMod {
       * @param tensorArrayMap Optinal global TensorList map by id. Used for
       * function execution.
       */
-    var _executeAsync: js.Any = js.native
+    /* private */ var _executeAsync: js.Any = js.native
     
-    var _functionExecutorMap: js.Any = js.native
+    /* private */ var _functionExecutorMap: js.Any = js.native
     
-    var _functions: js.Any = js.native
+    /* private */ var _functions: js.Any = js.native
     
-    var _initNodes: js.Any = js.native
+    /* private */ var _initNodes: js.Any = js.native
     
-    var _inputs: js.Any = js.native
+    /* private */ var _inputs: js.Any = js.native
     
-    var _outputs: js.Any = js.native
+    /* private */ var _outputs: js.Any = js.native
     
-    var _resourceManager: js.Any = js.native
+    /* private */ var _resourceManager: js.Any = js.native
     
-    var _signature: js.Any = js.native
+    /* private */ var _signature: js.Any = js.native
     
-    var _weightIds: js.Any = js.native
+    /* private */ var _weightIds: js.Any = js.native
     
-    var _weightMap: js.Any = js.native
+    /* private */ var _weightMap: js.Any = js.native
     
-    var checkInputShapeAndType: js.Any = js.native
+    /* private */ var checkInputShapeAndType: js.Any = js.native
     
-    var checkInputs: js.Any = js.native
+    /* private */ var checkInputs: js.Any = js.native
     
-    var checkOutputs: js.Any = js.native
+    /* private */ var checkOutputs: js.Any = js.native
     
-    var checkTensorForDisposal: js.Any = js.native
+    /* private */ var checkTensorForDisposal: js.Any = js.native
     
     /**
       * Compiles the inference graph and returns the minimal set of nodes that are
       * required for execution, in the correct execution order.
       */
-    var compile: js.Any = js.native
+    /* private */ var compile: js.Any = js.native
     
-    var compiledMap: js.Any = js.native
+    /* private */ var compiledMap: js.Any = js.native
     
     /**
       * Releases the memory used by the weight tensors.
@@ -129,35 +129,35 @@ object graphExecutorMod {
       * outputs array.
       * @param isFunctionExecution Flag for executing a function.
       */
-    var executeWithControlFlow: js.Any = js.native
+    /* private */ var executeWithControlFlow: js.Any = js.native
     
     val functionExecutorMap: StringDictionary[FunctionExecutor] = js.native
     
     val functions: StringDictionary[ISignatureDef] = js.native
     
-    var getCompilationKey: js.Any = js.native
+    /* private */ var getCompilationKey: js.Any = js.native
     
-    var getFrozenTensorIds: js.Any = js.native
+    /* private */ var getFrozenTensorIds: js.Any = js.native
     
-    var graph: js.Any = js.native
+    /* private */ var graph: js.Any = js.native
     
     val inputNodes: js.Array[String] = js.native
     
     val inputs: js.Array[TensorInfo] = js.native
     
-    var mapInputs: js.Any = js.native
+    /* private */ var mapInputs: js.Any = js.native
     
-    var mapOutputs: js.Any = js.native
+    /* private */ var mapOutputs: js.Any = js.native
     
     val outputNodes: js.Array[String] = js.native
     
     val outputs: js.Array[TensorInfo] = js.native
     
-    var parent: js.Any = js.native
+    /* private */ var parent: js.Any = js.native
     
-    var processChildNodes: js.Any = js.native
+    /* private */ var processChildNodes: js.Any = js.native
     
-    var processStack: js.Any = js.native
+    /* private */ var processStack: js.Any = js.native
     
     /**
       * Set `ResourceManager` shared by executors of a model.

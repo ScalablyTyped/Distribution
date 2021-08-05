@@ -15,25 +15,19 @@ trait SudokeepNstringolderThans extends StObject {
 }
 object SudokeepNstringolderThans {
   
-  @scala.inline
-  def apply(keepN: String, olderThan: String): SudokeepNstringolderThans = {
+  inline def apply(keepN: String, olderThan: String): SudokeepNstringolderThans = {
     val __obj = js.Dynamic.literal(keepN = keepN.asInstanceOf[js.Any], olderThan = olderThan.asInstanceOf[js.Any])
     __obj.asInstanceOf[SudokeepNstringolderThans]
   }
   
-  @scala.inline
-  implicit class SudokeepNstringolderThansMutableBuilder[Self <: SudokeepNstringolderThans] (val x: Self) extends AnyVal {
+  extension [Self <: SudokeepNstringolderThans](x: Self) {
     
-    @scala.inline
-    def setKeepN(value: String): Self = StObject.set(x, "keepN", value.asInstanceOf[js.Any])
+    inline def setKeepN(value: String): Self = StObject.set(x, "keepN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOlderThan(value: String): Self = StObject.set(x, "olderThan", value.asInstanceOf[js.Any])
+    inline def setOlderThan(value: String): Self = StObject.set(x, "olderThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

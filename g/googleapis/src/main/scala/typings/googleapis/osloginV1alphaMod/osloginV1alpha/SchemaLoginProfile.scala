@@ -28,34 +28,25 @@ trait SchemaLoginProfile extends StObject {
 }
 object SchemaLoginProfile {
   
-  @scala.inline
-  def apply(): SchemaLoginProfile = {
+  inline def apply(): SchemaLoginProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLoginProfile]
   }
   
-  @scala.inline
-  implicit class SchemaLoginProfileMutableBuilder[Self <: SchemaLoginProfile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLoginProfile](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPosixAccounts(value: js.Array[SchemaPosixAccount]): Self = StObject.set(x, "posixAccounts", value.asInstanceOf[js.Any])
+    inline def setPosixAccounts(value: js.Array[SchemaPosixAccount]): Self = StObject.set(x, "posixAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosixAccountsUndefined: Self = StObject.set(x, "posixAccounts", js.undefined)
+    inline def setPosixAccountsUndefined: Self = StObject.set(x, "posixAccounts", js.undefined)
     
-    @scala.inline
-    def setPosixAccountsVarargs(value: SchemaPosixAccount*): Self = StObject.set(x, "posixAccounts", js.Array(value :_*))
+    inline def setPosixAccountsVarargs(value: SchemaPosixAccount*): Self = StObject.set(x, "posixAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setSshPublicKeys(value: StringDictionary[SchemaSshPublicKey]): Self = StObject.set(x, "sshPublicKeys", value.asInstanceOf[js.Any])
+    inline def setSshPublicKeys(value: StringDictionary[SchemaSshPublicKey]): Self = StObject.set(x, "sshPublicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeysUndefined: Self = StObject.set(x, "sshPublicKeys", js.undefined)
+    inline def setSshPublicKeysUndefined: Self = StObject.set(x, "sshPublicKeys", js.undefined)
   }
 }

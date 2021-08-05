@@ -11,22 +11,17 @@ trait ListFindingTypeStatsResponse extends StObject {
 }
 object ListFindingTypeStatsResponse {
   
-  @scala.inline
-  def apply(): ListFindingTypeStatsResponse = {
+  inline def apply(): ListFindingTypeStatsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFindingTypeStatsResponse]
   }
   
-  @scala.inline
-  implicit class ListFindingTypeStatsResponseMutableBuilder[Self <: ListFindingTypeStatsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFindingTypeStatsResponse](x: Self) {
     
-    @scala.inline
-    def setFindingTypeStats(value: js.Array[FindingTypeStats]): Self = StObject.set(x, "findingTypeStats", value.asInstanceOf[js.Any])
+    inline def setFindingTypeStats(value: js.Array[FindingTypeStats]): Self = StObject.set(x, "findingTypeStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingTypeStatsUndefined: Self = StObject.set(x, "findingTypeStats", js.undefined)
+    inline def setFindingTypeStatsUndefined: Self = StObject.set(x, "findingTypeStats", js.undefined)
     
-    @scala.inline
-    def setFindingTypeStatsVarargs(value: FindingTypeStats*): Self = StObject.set(x, "findingTypeStats", js.Array(value :_*))
+    inline def setFindingTypeStatsVarargs(value: FindingTypeStats*): Self = StObject.set(x, "findingTypeStats", js.Array(value :_*))
   }
 }

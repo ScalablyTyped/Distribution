@@ -12,25 +12,19 @@ trait AudioContextOptions extends StObject {
 }
 object AudioContextOptions {
   
-  @scala.inline
-  def apply(): AudioContextOptions = {
+  inline def apply(): AudioContextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioContextOptions]
   }
   
-  @scala.inline
-  implicit class AudioContextOptionsMutableBuilder[Self <: AudioContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AudioContextOptions](x: Self) {
     
-    @scala.inline
-    def setLatencyHint(value: AudioContextLatencyCategory | Double): Self = StObject.set(x, "latencyHint", value.asInstanceOf[js.Any])
+    inline def setLatencyHint(value: AudioContextLatencyCategory | Double): Self = StObject.set(x, "latencyHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyHintUndefined: Self = StObject.set(x, "latencyHint", js.undefined)
+    inline def setLatencyHintUndefined: Self = StObject.set(x, "latencyHint", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
   }
 }

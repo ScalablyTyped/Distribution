@@ -20,19 +20,15 @@ trait SplitViewLayout
 }
 object SplitViewLayout {
   
-  @scala.inline
-  def apply(orientation: String, splitViewHeight: Double | String): SplitViewLayout = {
+  inline def apply(orientation: String, splitViewHeight: Double | String): SplitViewLayout = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any], splitViewHeight = splitViewHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitViewLayout]
   }
   
-  @scala.inline
-  implicit class SplitViewLayoutMutableBuilder[Self <: SplitViewLayout] (val x: Self) extends AnyVal {
+  extension [Self <: SplitViewLayout](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitViewHeight(value: Double | String): Self = StObject.set(x, "splitViewHeight", value.asInstanceOf[js.Any])
+    inline def setSplitViewHeight(value: Double | String): Self = StObject.set(x, "splitViewHeight", value.asInstanceOf[js.Any])
   }
 }

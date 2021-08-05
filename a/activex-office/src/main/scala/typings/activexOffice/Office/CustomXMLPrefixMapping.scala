@@ -12,7 +12,7 @@ trait CustomXMLPrefixMapping extends StObject {
   
   val NamespaceURI: String
   
-  @JSName("Office.CustomXMLPrefixMapping_typekey")
+  /* private */ @JSName("Office.CustomXMLPrefixMapping_typekey")
   var OfficeDotCustomXMLPrefixMapping_typekey: CustomXMLPrefixMapping
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait CustomXMLPrefixMapping extends StObject {
 }
 object CustomXMLPrefixMapping {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     NamespaceURI: String,
@@ -35,25 +34,18 @@ object CustomXMLPrefixMapping {
     __obj.asInstanceOf[CustomXMLPrefixMapping]
   }
   
-  @scala.inline
-  implicit class CustomXMLPrefixMappingMutableBuilder[Self <: CustomXMLPrefixMapping] (val x: Self) extends AnyVal {
+  extension [Self <: CustomXMLPrefixMapping](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
+    inline def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotCustomXMLPrefixMapping_typekey(value: CustomXMLPrefixMapping): Self = StObject.set(x, "Office.CustomXMLPrefixMapping_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotCustomXMLPrefixMapping_typekey(value: CustomXMLPrefixMapping): Self = StObject.set(x, "Office.CustomXMLPrefixMapping_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
   }
 }

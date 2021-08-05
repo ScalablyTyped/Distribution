@@ -19,28 +19,21 @@ trait imageAuditResponse extends StObject {
 }
 object imageAuditResponse {
   
-  @scala.inline
-  def apply(conclusion: String, conclusionType: Double, data: js.Array[imageAuditdata], log_id: String): imageAuditResponse = {
+  inline def apply(conclusion: String, conclusionType: Double, data: js.Array[imageAuditdata], log_id: String): imageAuditResponse = {
     val __obj = js.Dynamic.literal(conclusion = conclusion.asInstanceOf[js.Any], conclusionType = conclusionType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], log_id = log_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[imageAuditResponse]
   }
   
-  @scala.inline
-  implicit class imageAuditResponseMutableBuilder[Self <: imageAuditResponse] (val x: Self) extends AnyVal {
+  extension [Self <: imageAuditResponse](x: Self) {
     
-    @scala.inline
-    def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
+    inline def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConclusionType(value: Double): Self = StObject.set(x, "conclusionType", value.asInstanceOf[js.Any])
+    inline def setConclusionType(value: Double): Self = StObject.set(x, "conclusionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[imageAuditdata]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[imageAuditdata]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: imageAuditdata*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: imageAuditdata*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
   }
 }

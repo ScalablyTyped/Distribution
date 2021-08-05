@@ -56,21 +56,16 @@ object bucketMetricMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketMetricState): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketMetricState, opts: CustomResourceOptions): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
+    inline def get(name: String, id: Input[ID]): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
+    inline def get(name: String, id: Input[ID], state: BucketMetricState): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
+    inline def get(name: String, id: Input[ID], state: BucketMetricState, opts: CustomResourceOptions): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
     
     /**
       * Returns true if the given object is an instance of BucketMetric.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean]
   }
   
   trait BucketMetricArgs extends StObject {
@@ -92,29 +87,22 @@ object bucketMetricMod {
   }
   object BucketMetricArgs {
     
-    @scala.inline
-    def apply(bucket: Input[String]): BucketMetricArgs = {
+    inline def apply(bucket: Input[String]): BucketMetricArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketMetricArgs]
     }
     
-    @scala.inline
-    implicit class BucketMetricArgsMutableBuilder[Self <: BucketMetricArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BucketMetricArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -137,32 +125,24 @@ object bucketMetricMod {
   }
   object BucketMetricState {
     
-    @scala.inline
-    def apply(): BucketMetricState = {
+    inline def apply(): BucketMetricState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketMetricState]
     }
     
-    @scala.inline
-    implicit class BucketMetricStateMutableBuilder[Self <: BucketMetricState] (val x: Self) extends AnyVal {
+    extension [Self <: BucketMetricState](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

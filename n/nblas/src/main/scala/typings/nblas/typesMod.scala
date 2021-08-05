@@ -2503,11 +2503,9 @@ object typesMod {
   trait MatrixLeftRight extends StObject
   object MatrixLeftRight {
     
-    @scala.inline
-    def `141`: typings.nblas.nblasNumbers.`141` = 141.asInstanceOf[typings.nblas.nblasNumbers.`141`]
+    inline def `141`: typings.nblas.nblasNumbers.`141` = 141.asInstanceOf[typings.nblas.nblasNumbers.`141`]
     
-    @scala.inline
-    def `142`: typings.nblas.nblasNumbers.`142` = 142.asInstanceOf[typings.nblas.nblasNumbers.`142`]
+    inline def `142`: typings.nblas.nblasNumbers.`142` = 142.asInstanceOf[typings.nblas.nblasNumbers.`142`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -2518,14 +2516,11 @@ object typesMod {
   trait MatrixTrans extends StObject
   object MatrixTrans {
     
-    @scala.inline
-    def `111`: typings.nblas.nblasNumbers.`111` = 111.asInstanceOf[typings.nblas.nblasNumbers.`111`]
+    inline def `111`: typings.nblas.nblasNumbers.`111` = 111.asInstanceOf[typings.nblas.nblasNumbers.`111`]
     
-    @scala.inline
-    def `112`: typings.nblas.nblasNumbers.`112` = 112.asInstanceOf[typings.nblas.nblasNumbers.`112`]
+    inline def `112`: typings.nblas.nblasNumbers.`112` = 112.asInstanceOf[typings.nblas.nblasNumbers.`112`]
     
-    @scala.inline
-    def `113`: typings.nblas.nblasNumbers.`113` = 113.asInstanceOf[typings.nblas.nblasNumbers.`113`]
+    inline def `113`: typings.nblas.nblasNumbers.`113` = 113.asInstanceOf[typings.nblas.nblasNumbers.`113`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -2535,11 +2530,9 @@ object typesMod {
   trait MatrixUnit extends StObject
   object MatrixUnit {
     
-    @scala.inline
-    def `131`: typings.nblas.nblasNumbers.`131` = 131.asInstanceOf[typings.nblas.nblasNumbers.`131`]
+    inline def `131`: typings.nblas.nblasNumbers.`131` = 131.asInstanceOf[typings.nblas.nblasNumbers.`131`]
     
-    @scala.inline
-    def `132`: typings.nblas.nblasNumbers.`132` = 132.asInstanceOf[typings.nblas.nblasNumbers.`132`]
+    inline def `132`: typings.nblas.nblasNumbers.`132` = 132.asInstanceOf[typings.nblas.nblasNumbers.`132`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -2549,10 +2542,8 @@ object typesMod {
   trait MatrixUpperLower extends StObject
   object MatrixUpperLower {
     
-    @scala.inline
-    def `121`: typings.nblas.nblasNumbers.`121` = 121.asInstanceOf[typings.nblas.nblasNumbers.`121`]
+    inline def `121`: typings.nblas.nblasNumbers.`121` = 121.asInstanceOf[typings.nblas.nblasNumbers.`121`]
     
-    @scala.inline
-    def `122`: typings.nblas.nblasNumbers.`122` = 122.asInstanceOf[typings.nblas.nblasNumbers.`122`]
+    inline def `122`: typings.nblas.nblasNumbers.`122` = 122.asInstanceOf[typings.nblas.nblasNumbers.`122`]
   }
 }

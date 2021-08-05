@@ -38,46 +38,33 @@ trait ConnectorEntityField extends StObject {
 }
 object ConnectorEntityField {
   
-  @scala.inline
-  def apply(identifier: Identifier): ConnectorEntityField = {
+  inline def apply(identifier: Identifier): ConnectorEntityField = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorEntityField]
   }
   
-  @scala.inline
-  implicit class ConnectorEntityFieldMutableBuilder[Self <: ConnectorEntityField] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorEntityField](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDestinationProperties(value: DestinationFieldProperties): Self = StObject.set(x, "destinationProperties", value.asInstanceOf[js.Any])
+    inline def setDestinationProperties(value: DestinationFieldProperties): Self = StObject.set(x, "destinationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPropertiesUndefined: Self = StObject.set(x, "destinationProperties", js.undefined)
+    inline def setDestinationPropertiesUndefined: Self = StObject.set(x, "destinationProperties", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setSourceProperties(value: SourceFieldProperties): Self = StObject.set(x, "sourceProperties", value.asInstanceOf[js.Any])
+    inline def setSourceProperties(value: SourceFieldProperties): Self = StObject.set(x, "sourceProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePropertiesUndefined: Self = StObject.set(x, "sourceProperties", js.undefined)
+    inline def setSourcePropertiesUndefined: Self = StObject.set(x, "sourceProperties", js.undefined)
     
-    @scala.inline
-    def setSupportedFieldTypeDetails(value: SupportedFieldTypeDetails): Self = StObject.set(x, "supportedFieldTypeDetails", value.asInstanceOf[js.Any])
+    inline def setSupportedFieldTypeDetails(value: SupportedFieldTypeDetails): Self = StObject.set(x, "supportedFieldTypeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedFieldTypeDetailsUndefined: Self = StObject.set(x, "supportedFieldTypeDetails", js.undefined)
+    inline def setSupportedFieldTypeDetailsUndefined: Self = StObject.set(x, "supportedFieldTypeDetails", js.undefined)
   }
 }

@@ -15,36 +15,26 @@ object testUtilitiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def delay(millisecond: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millisecond.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def delay(millisecond: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millisecond.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def expectMissing(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectMissing")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expectMissing(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectMissing")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def expectNodes(
+  inline def expectNodes(
     wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]],
     className: String,
     n: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectNodes")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def expectOne(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectOne")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expectOne(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectOne")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def findNodes(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodes")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]]
+  inline def findNodes(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodes")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]]
   
-  @scala.inline
-  def flushPromises(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("flushPromises")().asInstanceOf[js.Promise[Unit]]
+  inline def flushPromises(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("flushPromises")().asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def mockEvent(): SyntheticEventData = ^.asInstanceOf[js.Dynamic].applyDynamic("mockEvent")().asInstanceOf[SyntheticEventData]
-  @scala.inline
-  def mockEvent(targetValue: String): SyntheticEventData = ^.asInstanceOf[js.Dynamic].applyDynamic("mockEvent")(targetValue.asInstanceOf[js.Any]).asInstanceOf[SyntheticEventData]
+  inline def mockEvent(): SyntheticEventData = ^.asInstanceOf[js.Dynamic].applyDynamic("mockEvent")().asInstanceOf[SyntheticEventData]
+  inline def mockEvent(targetValue: String): SyntheticEventData = ^.asInstanceOf[js.Dynamic].applyDynamic("mockEvent")(targetValue.asInstanceOf[js.Any]).asInstanceOf[SyntheticEventData]
   
-  @scala.inline
-  def mountAttached[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](element: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mountAttached")(element.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
+  inline def mountAttached[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](element: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mountAttached")(element.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
   
-  @scala.inline
-  def renderIntoDocument(element: ReactElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def renderIntoDocument(element: ReactElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

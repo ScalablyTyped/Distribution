@@ -36,8 +36,7 @@ trait Profile extends StObject {
 }
 object Profile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     needs: js.Array[Trait],
     personality: js.Array[Trait],
     processed_language: String,
@@ -49,61 +48,42 @@ object Profile {
     __obj.asInstanceOf[Profile]
   }
   
-  @scala.inline
-  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+  extension [Self <: Profile](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: js.Array[Behavior]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: js.Array[Behavior]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
-    @scala.inline
-    def setBehaviorVarargs(value: Behavior*): Self = StObject.set(x, "behavior", js.Array(value :_*))
+    inline def setBehaviorVarargs(value: Behavior*): Self = StObject.set(x, "behavior", js.Array(value :_*))
     
-    @scala.inline
-    def setConsumption_preferences(value: js.Array[ConsumptionPreferencesCategory]): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
+    inline def setConsumption_preferences(value: js.Array[ConsumptionPreferencesCategory]): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumption_preferencesUndefined: Self = StObject.set(x, "consumption_preferences", js.undefined)
+    inline def setConsumption_preferencesUndefined: Self = StObject.set(x, "consumption_preferences", js.undefined)
     
-    @scala.inline
-    def setConsumption_preferencesVarargs(value: ConsumptionPreferencesCategory*): Self = StObject.set(x, "consumption_preferences", js.Array(value :_*))
+    inline def setConsumption_preferencesVarargs(value: ConsumptionPreferencesCategory*): Self = StObject.set(x, "consumption_preferences", js.Array(value :_*))
     
-    @scala.inline
-    def setNeeds(value: js.Array[Trait]): Self = StObject.set(x, "needs", value.asInstanceOf[js.Any])
+    inline def setNeeds(value: js.Array[Trait]): Self = StObject.set(x, "needs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsVarargs(value: Trait*): Self = StObject.set(x, "needs", js.Array(value :_*))
+    inline def setNeedsVarargs(value: Trait*): Self = StObject.set(x, "needs", js.Array(value :_*))
     
-    @scala.inline
-    def setPersonality(value: js.Array[Trait]): Self = StObject.set(x, "personality", value.asInstanceOf[js.Any])
+    inline def setPersonality(value: js.Array[Trait]): Self = StObject.set(x, "personality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalityVarargs(value: Trait*): Self = StObject.set(x, "personality", js.Array(value :_*))
+    inline def setPersonalityVarargs(value: Trait*): Self = StObject.set(x, "personality", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessed_language(value: String): Self = StObject.set(x, "processed_language", value.asInstanceOf[js.Any])
+    inline def setProcessed_language(value: String): Self = StObject.set(x, "processed_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[Trait]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Trait]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Trait*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Trait*): Self = StObject.set(x, "values", js.Array(value :_*))
     
-    @scala.inline
-    def setWarnings(value: js.Array[Warning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[Warning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     
-    @scala.inline
-    def setWord_count(value: Double): Self = StObject.set(x, "word_count", value.asInstanceOf[js.Any])
+    inline def setWord_count(value: Double): Self = StObject.set(x, "word_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_count_message(value: String): Self = StObject.set(x, "word_count_message", value.asInstanceOf[js.Any])
+    inline def setWord_count_message(value: String): Self = StObject.set(x, "word_count_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_count_messageUndefined: Self = StObject.set(x, "word_count_message", js.undefined)
+    inline def setWord_count_messageUndefined: Self = StObject.set(x, "word_count_message", js.undefined)
   }
 }

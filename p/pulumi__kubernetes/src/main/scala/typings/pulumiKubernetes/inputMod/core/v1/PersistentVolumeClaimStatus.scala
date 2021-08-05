@@ -33,43 +33,31 @@ trait PersistentVolumeClaimStatus extends StObject {
 }
 object PersistentVolumeClaimStatus {
   
-  @scala.inline
-  def apply(): PersistentVolumeClaimStatus = {
+  inline def apply(): PersistentVolumeClaimStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistentVolumeClaimStatus]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimStatusMutableBuilder[Self <: PersistentVolumeClaimStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimStatus](x: Self) {
     
-    @scala.inline
-    def setAccessModes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
+    inline def setAccessModes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessModesUndefined: Self = StObject.set(x, "accessModes", js.undefined)
+    inline def setAccessModesUndefined: Self = StObject.set(x, "accessModes", js.undefined)
     
-    @scala.inline
-    def setAccessModesVarargs(value: Input[String]*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
+    inline def setAccessModesVarargs(value: Input[String]*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
     
-    @scala.inline
-    def setCapacity(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+    inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
     
-    @scala.inline
-    def setConditions(value: Input[js.Array[Input[PersistentVolumeClaimCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Input[js.Array[Input[PersistentVolumeClaimCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Input[PersistentVolumeClaimCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Input[PersistentVolumeClaimCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
   }
 }

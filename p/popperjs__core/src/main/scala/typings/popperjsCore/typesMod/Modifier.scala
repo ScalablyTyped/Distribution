@@ -28,8 +28,7 @@ trait Modifier[Name, Options] extends StObject {
 }
 object Modifier {
   
-  @scala.inline
-  def apply[Name, Options](
+  inline def apply[Name, Options](
     enabled: Boolean,
     fn: ModifierArguments[Options] => State | Unit,
     name: Name,
@@ -39,55 +38,38 @@ object Modifier {
     __obj.asInstanceOf[Modifier[Name, Options]]
   }
   
-  @scala.inline
-  implicit class ModifierMutableBuilder[Self <: Modifier[?, ?], Name, Options] (val x: Self & (Modifier[Name, Options])) extends AnyVal {
+  extension [Self <: Modifier[?, ?], Name, Options](x: Self & (Modifier[Name, Options])) {
     
-    @scala.inline
-    def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEffect(value: /* arg0 */ ModifierArguments[Options] => js.Function0[Unit] | Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
+    inline def setEffect(value: /* arg0 */ ModifierArguments[Options] => js.Function0[Unit] | Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFn(value: ModifierArguments[Options] => State | Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    inline def setFn(value: ModifierArguments[Options] => State | Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Partial[Options]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Partial[Options]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPhase(value: ModifierPhases_): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: ModifierPhases_): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+    inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresIfExists(value: js.Array[String]): Self = StObject.set(x, "requiresIfExists", value.asInstanceOf[js.Any])
+    inline def setRequiresIfExists(value: js.Array[String]): Self = StObject.set(x, "requiresIfExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresIfExistsUndefined: Self = StObject.set(x, "requiresIfExists", js.undefined)
+    inline def setRequiresIfExistsUndefined: Self = StObject.set(x, "requiresIfExists", js.undefined)
     
-    @scala.inline
-    def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value :_*))
+    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+    inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
     
-    @scala.inline
-    def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
   }
 }

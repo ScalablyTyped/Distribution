@@ -13,19 +13,15 @@ trait UsersDeleteEmailForAuthenticatedEndpoint extends StObject {
 }
 object UsersDeleteEmailForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(emails: js.Array[String]): UsersDeleteEmailForAuthenticatedEndpoint = {
+  inline def apply(emails: js.Array[String]): UsersDeleteEmailForAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal(emails = emails.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersDeleteEmailForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersDeleteEmailForAuthenticatedEndpointMutableBuilder[Self <: UsersDeleteEmailForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersDeleteEmailForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
   }
 }

@@ -31,64 +31,45 @@ trait TodoTaskList
 }
 object TodoTaskList {
   
-  @scala.inline
-  def apply(): TodoTaskList = {
+  inline def apply(): TodoTaskList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TodoTaskList]
   }
   
-  @scala.inline
-  implicit class TodoTaskListMutableBuilder[Self <: TodoTaskList] (val x: Self) extends AnyVal {
+  extension [Self <: TodoTaskList](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
+    inline def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setIsOwner(value: Boolean): Self = StObject.set(x, "isOwner", value.asInstanceOf[js.Any])
+    inline def setIsOwner(value: Boolean): Self = StObject.set(x, "isOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOwnerUndefined: Self = StObject.set(x, "isOwner", js.undefined)
+    inline def setIsOwnerUndefined: Self = StObject.set(x, "isOwner", js.undefined)
     
-    @scala.inline
-    def setIsShared(value: Boolean): Self = StObject.set(x, "isShared", value.asInstanceOf[js.Any])
+    inline def setIsShared(value: Boolean): Self = StObject.set(x, "isShared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSharedUndefined: Self = StObject.set(x, "isShared", js.undefined)
+    inline def setIsSharedUndefined: Self = StObject.set(x, "isShared", js.undefined)
     
-    @scala.inline
-    def setTasks(value: NullableOption[js.Array[TodoTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: NullableOption[js.Array[TodoTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksNull: Self = StObject.set(x, "tasks", null)
+    inline def setTasksNull: Self = StObject.set(x, "tasks", null)
     
-    @scala.inline
-    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
+    inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    @scala.inline
-    def setTasksVarargs(value: TodoTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: TodoTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
     
-    @scala.inline
-    def setWellknownListName(value: WellknownListName): Self = StObject.set(x, "wellknownListName", value.asInstanceOf[js.Any])
+    inline def setWellknownListName(value: WellknownListName): Self = StObject.set(x, "wellknownListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWellknownListNameUndefined: Self = StObject.set(x, "wellknownListName", js.undefined)
+    inline def setWellknownListNameUndefined: Self = StObject.set(x, "wellknownListName", js.undefined)
   }
 }

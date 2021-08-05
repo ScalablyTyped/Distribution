@@ -10,6 +10,5 @@ object asyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forget(promise: js.Thenable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forget")(promise.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def forget(promise: js.Thenable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forget")(promise.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -50,21 +50,16 @@ object domainIdentityVerificationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainIdentityVerificationState): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainIdentityVerificationState, opts: CustomResourceOptions): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
+    inline def get(name: String, id: Input[ID]): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
+    inline def get(name: String, id: Input[ID], state: DomainIdentityVerificationState): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
+    inline def get(name: String, id: Input[ID], state: DomainIdentityVerificationState, opts: CustomResourceOptions): DomainIdentityVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainIdentityVerification]
     
     /**
       * Returns true if the given object is an instance of DomainIdentityVerification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentityVerification.DomainIdentityVerification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/domainIdentityVerification.DomainIdentityVerification */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentityVerification.DomainIdentityVerification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/domainIdentityVerification.DomainIdentityVerification */ Boolean]
   }
   
   trait DomainIdentityVerificationArgs extends StObject {
@@ -76,17 +71,14 @@ object domainIdentityVerificationMod {
   }
   object DomainIdentityVerificationArgs {
     
-    @scala.inline
-    def apply(domain: Input[String]): DomainIdentityVerificationArgs = {
+    inline def apply(domain: Input[String]): DomainIdentityVerificationArgs = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainIdentityVerificationArgs]
     }
     
-    @scala.inline
-    implicit class DomainIdentityVerificationArgsMutableBuilder[Self <: DomainIdentityVerificationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DomainIdentityVerificationArgs](x: Self) {
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,26 +96,20 @@ object domainIdentityVerificationMod {
   }
   object DomainIdentityVerificationState {
     
-    @scala.inline
-    def apply(): DomainIdentityVerificationState = {
+    inline def apply(): DomainIdentityVerificationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainIdentityVerificationState]
     }
     
-    @scala.inline
-    implicit class DomainIdentityVerificationStateMutableBuilder[Self <: DomainIdentityVerificationState] (val x: Self) extends AnyVal {
+    extension [Self <: DomainIdentityVerificationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     }
   }
 }

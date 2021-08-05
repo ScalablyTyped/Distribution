@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CrosshairsType extends StObject
 object CrosshairsType {
   
-  @scala.inline
-  def cross: typings.bizcharts.bizchartsStrings.cross = "cross".asInstanceOf[typings.bizcharts.bizchartsStrings.cross]
+  inline def cross: typings.bizcharts.bizchartsStrings.cross = "cross".asInstanceOf[typings.bizcharts.bizchartsStrings.cross]
   
-  @scala.inline
-  def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
+  inline def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
   
-  @scala.inline
-  def x: typings.bizcharts.bizchartsStrings.x = "x".asInstanceOf[typings.bizcharts.bizchartsStrings.x]
+  inline def x: typings.bizcharts.bizchartsStrings.x = "x".asInstanceOf[typings.bizcharts.bizchartsStrings.x]
   
-  @scala.inline
-  def y: typings.bizcharts.bizchartsStrings.y = "y".asInstanceOf[typings.bizcharts.bizchartsStrings.y]
+  inline def y: typings.bizcharts.bizchartsStrings.y = "y".asInstanceOf[typings.bizcharts.bizchartsStrings.y]
 }

@@ -23,22 +23,17 @@ trait StatelessHost extends StObject {
 }
 object StatelessHost {
   
-  @scala.inline
-  def apply(accept: CallType, protocol: String, url: String): StatelessHost = {
+  inline def apply(accept: CallType, protocol: String, url: String): StatelessHost = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatelessHost]
   }
   
-  @scala.inline
-  implicit class StatelessHostMutableBuilder[Self <: StatelessHost] (val x: Self) extends AnyVal {
+  extension [Self <: StatelessHost](x: Self) {
     
-    @scala.inline
-    def setAccept(value: CallType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: CallType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

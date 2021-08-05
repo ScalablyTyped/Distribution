@@ -12,7 +12,7 @@ object websocketchannelMod {
   class WebSocketChannel protected () extends Channel {
     def this(url: String) = this()
     
-    var WebSocket: js.Any = js.native
+    /* private */ var WebSocket: js.Any = js.native
     
     def close(): Unit = js.native
     
@@ -21,8 +21,8 @@ object websocketchannelMod {
     @JSName("isConnected")
     def isConnected_MWebSocketChannel: Boolean = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
     
-    val url: js.Any = js.native
+    /* private */ val url: js.Any = js.native
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Borders")
 @js.native
-class Borders protected ()
+/* private */ class Borders ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Borders {
   
@@ -23,7 +23,7 @@ class Borders protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Borders_typekey")
   var PowerPointDotBorders_typekey: typings.activexPowerpoint.PowerPoint.Borders = js.native
 }

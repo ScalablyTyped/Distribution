@@ -13,16 +13,13 @@ trait IFileError
 }
 object IFileError {
   
-  @scala.inline
-  def apply(code: Double, message: String): IFileError = {
+  inline def apply(code: Double, message: String): IFileError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileError]
   }
   
-  @scala.inline
-  implicit class IFileErrorMutableBuilder[Self <: IFileError] (val x: Self) extends AnyVal {
+  extension [Self <: IFileError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

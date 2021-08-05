@@ -18,7 +18,7 @@ object formGroupMod {
     def this(props: IFormGroupProps) = this()
     def this(props: IFormGroupProps, context: js.Any) = this()
     
-    var getClassName: js.Any = js.native
+    /* private */ var getClassName: js.Any = js.native
   }
   /* static members */
   object FormGroup {
@@ -30,8 +30,7 @@ object formGroupMod {
     @JSImport("@blueprintjs/core/lib/esm/components/forms/formGroup", "FormGroup.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IFormGroupProps
@@ -80,62 +79,44 @@ object formGroupMod {
   }
   object IFormGroupProps {
     
-    @scala.inline
-    def apply(): IFormGroupProps = {
+    inline def apply(): IFormGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFormGroupProps]
     }
     
-    @scala.inline
-    implicit class IFormGroupPropsMutableBuilder[Self <: IFormGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFormGroupProps](x: Self) {
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHelperText(value: ReactNode): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
+      inline def setHelperText(value: ReactNode): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperTextUndefined: Self = StObject.set(x, "helperText", js.undefined)
+      inline def setHelperTextUndefined: Self = StObject.set(x, "helperText", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFor(value: String): Self = StObject.set(x, "labelFor", value.asInstanceOf[js.Any])
+      inline def setLabelFor(value: String): Self = StObject.set(x, "labelFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelForUndefined: Self = StObject.set(x, "labelFor", js.undefined)
+      inline def setLabelForUndefined: Self = StObject.set(x, "labelFor", js.undefined)
       
-      @scala.inline
-      def setLabelInfo(value: ReactNode): Self = StObject.set(x, "labelInfo", value.asInstanceOf[js.Any])
+      inline def setLabelInfo(value: ReactNode): Self = StObject.set(x, "labelInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelInfoUndefined: Self = StObject.set(x, "labelInfo", js.undefined)
+      inline def setLabelInfoUndefined: Self = StObject.set(x, "labelInfo", js.undefined)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

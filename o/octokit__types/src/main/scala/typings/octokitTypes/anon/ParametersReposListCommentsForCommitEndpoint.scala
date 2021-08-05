@@ -18,8 +18,7 @@ trait ParametersReposListCommentsForCommitEndpoint extends StObject {
 }
 object ParametersReposListCommentsForCommitEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposListCommentsForCommitEndpoint,
     request: ReposListCommentsForCommitRequestOptions,
     response: OctokitResponse[ReposListCommentsForCommitResponseData]
@@ -28,16 +27,12 @@ object ParametersReposListCommentsForCommitEndpoint {
     __obj.asInstanceOf[ParametersReposListCommentsForCommitEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListCommentsForCommitEndpointMutableBuilder[Self <: ParametersReposListCommentsForCommitEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListCommentsForCommitEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListCommentsForCommitEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListCommentsForCommitEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposListCommentsForCommitRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposListCommentsForCommitRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListCommentsForCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListCommentsForCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

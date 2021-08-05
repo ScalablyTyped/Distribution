@@ -16,28 +16,21 @@ trait DialogflowV1MessageQuickReplies
 }
 object DialogflowV1MessageQuickReplies {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageQuickReplies = {
+  inline def apply(): DialogflowV1MessageQuickReplies = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1MessageQuickReplies]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageQuickRepliesMutableBuilder[Self <: DialogflowV1MessageQuickReplies] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageQuickReplies](x: Self) {
     
-    @scala.inline
-    def setReplies(value: js.Array[String]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
+    inline def setReplies(value: js.Array[String]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
+    inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    @scala.inline
-    def setRepliesVarargs(value: String*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: String*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

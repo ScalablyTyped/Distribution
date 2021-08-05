@@ -13,16 +13,14 @@ object autolinkerStrings {
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait facebook
     extends StObject
        with HashtagConfig
        with HashtagServices
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  inline def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
   sealed trait instagram
@@ -31,40 +29,34 @@ object autolinkerStrings {
        with HashtagServices
        with MentionConfig
        with MentionServices
-  @scala.inline
-  def instagram: instagram = "instagram".asInstanceOf[instagram]
+  inline def instagram: instagram = "instagram".asInstanceOf[instagram]
   
   @js.native
   sealed trait middle extends StObject
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait scheme
     extends StObject
        with UrlMatchTypeOptions
-  @scala.inline
-  def scheme: scheme = "scheme".asInstanceOf[scheme]
+  inline def scheme: scheme = "scheme".asInstanceOf[scheme]
   
   @js.native
   sealed trait smart extends StObject
-  @scala.inline
-  def smart: smart = "smart".asInstanceOf[smart]
+  inline def smart: smart = "smart".asInstanceOf[smart]
   
   @js.native
   sealed trait soundcloud
     extends StObject
        with MentionConfig
        with MentionServices
-  @scala.inline
-  def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
+  inline def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
   
   @js.native
   sealed trait tld
     extends StObject
        with UrlMatchTypeOptions
-  @scala.inline
-  def tld: tld = "tld".asInstanceOf[tld]
+  inline def tld: tld = "tld".asInstanceOf[tld]
   
   @js.native
   sealed trait twitter
@@ -73,13 +65,11 @@ object autolinkerStrings {
        with HashtagServices
        with MentionConfig
        with MentionServices
-  @scala.inline
-  def twitter: twitter = "twitter".asInstanceOf[twitter]
+  inline def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
   sealed trait www
     extends StObject
        with UrlMatchTypeOptions
-  @scala.inline
-  def www: www = "www".asInstanceOf[www]
+  inline def www: www = "www".asInstanceOf[www]
 }

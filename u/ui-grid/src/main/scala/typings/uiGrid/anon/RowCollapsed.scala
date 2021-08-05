@@ -30,8 +30,7 @@ trait RowCollapsed[TEntity] extends StObject {
 }
 object RowCollapsed {
   
-  @scala.inline
-  def apply[TEntity](
+  inline def apply[TEntity](
     rowCollapsed: (IScope, rowCollapsedHandler[TEntity]) => Unit,
     rowExpanded: (IScope, rowExpandedHandler[TEntity]) => Unit
   ): RowCollapsed[TEntity] = {
@@ -39,13 +38,10 @@ object RowCollapsed {
     __obj.asInstanceOf[RowCollapsed[TEntity]]
   }
   
-  @scala.inline
-  implicit class RowCollapsedMutableBuilder[Self <: RowCollapsed[?], TEntity] (val x: Self & RowCollapsed[TEntity]) extends AnyVal {
+  extension [Self <: RowCollapsed[?], TEntity](x: Self & RowCollapsed[TEntity]) {
     
-    @scala.inline
-    def setRowCollapsed(value: (IScope, rowCollapsedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowCollapsed", js.Any.fromFunction2(value))
+    inline def setRowCollapsed(value: (IScope, rowCollapsedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowCollapsed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowExpanded(value: (IScope, rowExpandedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowExpanded", js.Any.fromFunction2(value))
+    inline def setRowExpanded(value: (IScope, rowExpandedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowExpanded", js.Any.fromFunction2(value))
   }
 }

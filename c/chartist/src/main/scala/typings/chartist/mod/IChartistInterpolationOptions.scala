@@ -10,19 +10,15 @@ trait IChartistInterpolationOptions extends StObject {
 }
 object IChartistInterpolationOptions {
   
-  @scala.inline
-  def apply(): IChartistInterpolationOptions = {
+  inline def apply(): IChartistInterpolationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChartistInterpolationOptions]
   }
   
-  @scala.inline
-  implicit class IChartistInterpolationOptionsMutableBuilder[Self <: IChartistInterpolationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistInterpolationOptions](x: Self) {
     
-    @scala.inline
-    def setFillHoles(value: Boolean): Self = StObject.set(x, "fillHoles", value.asInstanceOf[js.Any])
+    inline def setFillHoles(value: Boolean): Self = StObject.set(x, "fillHoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillHolesUndefined: Self = StObject.set(x, "fillHoles", js.undefined)
+    inline def setFillHolesUndefined: Self = StObject.set(x, "fillHoles", js.undefined)
   }
 }

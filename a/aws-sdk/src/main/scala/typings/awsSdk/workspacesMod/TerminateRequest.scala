@@ -13,16 +13,13 @@ trait TerminateRequest extends StObject {
 }
 object TerminateRequest {
   
-  @scala.inline
-  def apply(WorkspaceId: WorkspaceId): TerminateRequest = {
+  inline def apply(WorkspaceId: WorkspaceId): TerminateRequest = {
     val __obj = js.Dynamic.literal(WorkspaceId = WorkspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateRequest]
   }
   
-  @scala.inline
-  implicit class TerminateRequestMutableBuilder[Self <: TerminateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateRequest](x: Self) {
     
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
   }
 }

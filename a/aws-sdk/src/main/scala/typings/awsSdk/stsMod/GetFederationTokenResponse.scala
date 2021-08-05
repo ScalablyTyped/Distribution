@@ -23,31 +23,23 @@ trait GetFederationTokenResponse extends StObject {
 }
 object GetFederationTokenResponse {
   
-  @scala.inline
-  def apply(): GetFederationTokenResponse = {
+  inline def apply(): GetFederationTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFederationTokenResponse]
   }
   
-  @scala.inline
-  implicit class GetFederationTokenResponseMutableBuilder[Self <: GetFederationTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFederationTokenResponse](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    @scala.inline
-    def setFederatedUser(value: FederatedUser): Self = StObject.set(x, "FederatedUser", value.asInstanceOf[js.Any])
+    inline def setFederatedUser(value: FederatedUser): Self = StObject.set(x, "FederatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFederatedUserUndefined: Self = StObject.set(x, "FederatedUser", js.undefined)
+    inline def setFederatedUserUndefined: Self = StObject.set(x, "FederatedUser", js.undefined)
     
-    @scala.inline
-    def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
+    inline def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
+    inline def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
   }
 }

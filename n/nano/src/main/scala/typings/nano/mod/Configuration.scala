@@ -20,46 +20,33 @@ trait Configuration extends StObject {
 }
 object Configuration {
   
-  @scala.inline
-  def apply(url: String): Configuration = {
+  inline def apply(url: String): Configuration = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
   
-  @scala.inline
-  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+  extension [Self <: Configuration](x: Self) {
     
-    @scala.inline
-    def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+    inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     
-    @scala.inline
-    def setLog(value: (/* id */ String, /* args */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+    inline def setLog(value: (/* id */ String, /* args */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setParseUrl(value: Boolean): Self = StObject.set(x, "parseUrl", value.asInstanceOf[js.Any])
+    inline def setParseUrl(value: Boolean): Self = StObject.set(x, "parseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseUrlUndefined: Self = StObject.set(x, "parseUrl", js.undefined)
+    inline def setParseUrlUndefined: Self = StObject.set(x, "parseUrl", js.undefined)
     
-    @scala.inline
-    def setRequest(value: /* params */ js.Any => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: /* params */ js.Any => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestDefaults(value: requestDefaultsOptions): Self = StObject.set(x, "requestDefaults", value.asInstanceOf[js.Any])
+    inline def setRequestDefaults(value: requestDefaultsOptions): Self = StObject.set(x, "requestDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestDefaultsUndefined: Self = StObject.set(x, "requestDefaults", js.undefined)
+    inline def setRequestDefaultsUndefined: Self = StObject.set(x, "requestDefaults", js.undefined)
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

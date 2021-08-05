@@ -56,43 +56,31 @@ trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
 }
 object PlusWebviewWebviewOverrideResourceOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewOverrideResourceOptions = {
+  inline def apply(): PlusWebviewWebviewOverrideResourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewOverrideResourceOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewOverrideResourceOptionsMutableBuilder[Self <: PlusWebviewWebviewOverrideResourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewOverrideResourceOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
   }
 }

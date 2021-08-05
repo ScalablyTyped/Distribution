@@ -144,8 +144,7 @@ object UserProfile {
   }
   object FirstSignInSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       hasKey: String => Boolean,
       lookup: String => js.Any,
@@ -156,23 +155,17 @@ object UserProfile {
       __obj.asInstanceOf[FirstSignInSettings]
     }
     
-    @scala.inline
-    implicit class FirstSignInSettingsMutableBuilder[Self <: FirstSignInSettings] (val x: Self) extends AnyVal {
+    extension [Self <: FirstSignInSettings](x: Self) {
       
-      @scala.inline
-      def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+      inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplit(value: () => Second): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
+      inline def setSplit(value: () => Second): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     }
   }
   
@@ -204,8 +197,7 @@ object UserProfile {
   }
   object UserProfilePersonalizationSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       trySetLockScreenImageAsync: StorageFile => IPromiseWithIAsyncOperation[Boolean],
       trySetWallpaperImageAsync: StorageFile => IPromiseWithIAsyncOperation[Boolean]
     ): UserProfilePersonalizationSettings = {
@@ -213,14 +205,11 @@ object UserProfile {
       __obj.asInstanceOf[UserProfilePersonalizationSettings]
     }
     
-    @scala.inline
-    implicit class UserProfilePersonalizationSettingsMutableBuilder[Self <: UserProfilePersonalizationSettings] (val x: Self) extends AnyVal {
+    extension [Self <: UserProfilePersonalizationSettings](x: Self) {
       
-      @scala.inline
-      def setTrySetLockScreenImageAsync(value: StorageFile => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetLockScreenImageAsync", js.Any.fromFunction1(value))
+      inline def setTrySetLockScreenImageAsync(value: StorageFile => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetLockScreenImageAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrySetWallpaperImageAsync(value: StorageFile => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetWallpaperImageAsync", js.Any.fromFunction1(value))
+      inline def setTrySetWallpaperImageAsync(value: StorageFile => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetWallpaperImageAsync", js.Any.fromFunction1(value))
     }
   }
 }

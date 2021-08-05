@@ -62,50 +62,36 @@ object mod extends Shortcut {
   }
   object RequestRetryOptions {
     
-    @scala.inline
-    def apply(): RequestRetryOptions = {
+    inline def apply(): RequestRetryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestRetryOptions]
     }
     
-    @scala.inline
-    implicit class RequestRetryOptionsMutableBuilder[Self <: RequestRetryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestRetryOptions](x: Self) {
       
-      @scala.inline
-      def setDelayStrategy(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Double): Self = StObject.set(x, "delayStrategy", js.Any.fromFunction3(value))
+      inline def setDelayStrategy(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Double): Self = StObject.set(x, "delayStrategy", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDelayStrategyUndefined: Self = StObject.set(x, "delayStrategy", js.undefined)
+      inline def setDelayStrategyUndefined: Self = StObject.set(x, "delayStrategy", js.undefined)
       
-      @scala.inline
-      def setFullResponse(value: Boolean): Self = StObject.set(x, "fullResponse", value.asInstanceOf[js.Any])
+      inline def setFullResponse(value: Boolean): Self = StObject.set(x, "fullResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullResponseUndefined: Self = StObject.set(x, "fullResponse", js.undefined)
+      inline def setFullResponseUndefined: Self = StObject.set(x, "fullResponse", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setPromiseFactory(value: /* resolver */ js.Any => js.Any): Self = StObject.set(x, "promiseFactory", js.Any.fromFunction1(value))
+      inline def setPromiseFactory(value: /* resolver */ js.Any => js.Any): Self = StObject.set(x, "promiseFactory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPromiseFactoryUndefined: Self = StObject.set(x, "promiseFactory", js.undefined)
+      inline def setPromiseFactoryUndefined: Self = StObject.set(x, "promiseFactory", js.undefined)
       
-      @scala.inline
-      def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
-      @scala.inline
-      def setRetryStrategy(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction3(value))
+      inline def setRetryStrategy(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+      inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     }
   }
   

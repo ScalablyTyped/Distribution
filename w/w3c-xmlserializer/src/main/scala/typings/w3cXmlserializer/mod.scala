@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(root: Node): String = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(root: Node, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(root: Node): String = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(root: Node, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("w3c-xmlserializer", JSImport.Namespace)
   @js.native
@@ -28,20 +26,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setRequireWellFormed(value: Boolean): Self = StObject.set(x, "requireWellFormed", value.asInstanceOf[js.Any])
+      inline def setRequireWellFormed(value: Boolean): Self = StObject.set(x, "requireWellFormed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireWellFormedUndefined: Self = StObject.set(x, "requireWellFormed", js.undefined)
+      inline def setRequireWellFormedUndefined: Self = StObject.set(x, "requireWellFormed", js.undefined)
     }
   }
 }

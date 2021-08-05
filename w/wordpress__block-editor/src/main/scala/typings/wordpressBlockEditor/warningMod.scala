@@ -38,41 +38,30 @@ object warningMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setActions(value: ReactFragment): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+        inline def setActions(value: ReactFragment): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+        inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setSecondaryActions(value: js.Array[OnClick]): Self = StObject.set(x, "secondaryActions", value.asInstanceOf[js.Any])
+        inline def setSecondaryActions(value: js.Array[OnClick]): Self = StObject.set(x, "secondaryActions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecondaryActionsUndefined: Self = StObject.set(x, "secondaryActions", js.undefined)
+        inline def setSecondaryActionsUndefined: Self = StObject.set(x, "secondaryActions", js.undefined)
         
-        @scala.inline
-        def setSecondaryActionsVarargs(value: OnClick*): Self = StObject.set(x, "secondaryActions", js.Array(value :_*))
+        inline def setSecondaryActionsVarargs(value: OnClick*): Self = StObject.set(x, "secondaryActions", js.Array(value :_*))
       }
     }
   }

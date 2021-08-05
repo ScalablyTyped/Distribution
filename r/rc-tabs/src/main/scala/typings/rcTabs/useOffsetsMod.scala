@@ -13,6 +13,5 @@ object useOffsetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(tabs: js.Array[Tab], tabSizes: TabSizeMap, holderScrollWidth: Double): TabOffsetMap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tabs.asInstanceOf[js.Any], tabSizes.asInstanceOf[js.Any], holderScrollWidth.asInstanceOf[js.Any])).asInstanceOf[TabOffsetMap]
+  inline def default(tabs: js.Array[Tab], tabSizes: TabSizeMap, holderScrollWidth: Double): TabOffsetMap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tabs.asInstanceOf[js.Any], tabSizes.asInstanceOf[js.Any], holderScrollWidth.asInstanceOf[js.Any])).asInstanceOf[TabOffsetMap]
 }

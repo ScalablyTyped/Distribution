@@ -10,8 +10,7 @@ object curryRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(func: RangeFunction): js.Function3[/* min */ Double, /* max */ Double, /* v */ js.UndefOr[Double], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* min */ Double, /* max */ Double, /* v */ js.UndefOr[Double], js.Any]]
+  inline def default(func: RangeFunction): js.Function3[/* min */ Double, /* max */ Double, /* v */ js.UndefOr[Double], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* min */ Double, /* max */ Double, /* v */ js.UndefOr[Double], js.Any]]
   
   type RangeFunction = js.Function3[/* min */ Double, /* max */ Double, /* v */ Double, js.Any]
 }

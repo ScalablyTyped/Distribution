@@ -37,37 +37,27 @@ trait SchemaAddonsConfig extends StObject {
 }
 object SchemaAddonsConfig {
   
-  @scala.inline
-  def apply(): SchemaAddonsConfig = {
+  inline def apply(): SchemaAddonsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddonsConfig]
   }
   
-  @scala.inline
-  implicit class SchemaAddonsConfigMutableBuilder[Self <: SchemaAddonsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddonsConfig](x: Self) {
     
-    @scala.inline
-    def setHorizontalPodAutoscaling(value: SchemaHorizontalPodAutoscaling): Self = StObject.set(x, "horizontalPodAutoscaling", value.asInstanceOf[js.Any])
+    inline def setHorizontalPodAutoscaling(value: SchemaHorizontalPodAutoscaling): Self = StObject.set(x, "horizontalPodAutoscaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalPodAutoscalingUndefined: Self = StObject.set(x, "horizontalPodAutoscaling", js.undefined)
+    inline def setHorizontalPodAutoscalingUndefined: Self = StObject.set(x, "horizontalPodAutoscaling", js.undefined)
     
-    @scala.inline
-    def setHttpLoadBalancing(value: SchemaHttpLoadBalancing): Self = StObject.set(x, "httpLoadBalancing", value.asInstanceOf[js.Any])
+    inline def setHttpLoadBalancing(value: SchemaHttpLoadBalancing): Self = StObject.set(x, "httpLoadBalancing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpLoadBalancingUndefined: Self = StObject.set(x, "httpLoadBalancing", js.undefined)
+    inline def setHttpLoadBalancingUndefined: Self = StObject.set(x, "httpLoadBalancing", js.undefined)
     
-    @scala.inline
-    def setKubernetesDashboard(value: SchemaKubernetesDashboard): Self = StObject.set(x, "kubernetesDashboard", value.asInstanceOf[js.Any])
+    inline def setKubernetesDashboard(value: SchemaKubernetesDashboard): Self = StObject.set(x, "kubernetesDashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKubernetesDashboardUndefined: Self = StObject.set(x, "kubernetesDashboard", js.undefined)
+    inline def setKubernetesDashboardUndefined: Self = StObject.set(x, "kubernetesDashboard", js.undefined)
     
-    @scala.inline
-    def setNetworkPolicyConfig(value: SchemaNetworkPolicyConfig): Self = StObject.set(x, "networkPolicyConfig", value.asInstanceOf[js.Any])
+    inline def setNetworkPolicyConfig(value: SchemaNetworkPolicyConfig): Self = StObject.set(x, "networkPolicyConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPolicyConfigUndefined: Self = StObject.set(x, "networkPolicyConfig", js.undefined)
+    inline def setNetworkPolicyConfigUndefined: Self = StObject.set(x, "networkPolicyConfig", js.undefined)
   }
 }

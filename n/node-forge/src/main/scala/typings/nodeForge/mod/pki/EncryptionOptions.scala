@@ -27,43 +27,31 @@ trait EncryptionOptions extends StObject {
 }
 object EncryptionOptions {
   
-  @scala.inline
-  def apply(): EncryptionOptions = {
+  inline def apply(): EncryptionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionOptions]
   }
   
-  @scala.inline
-  implicit class EncryptionOptionsMutableBuilder[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionOptions](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+    inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
+    inline def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
     
-    @scala.inline
-    def setPrfAlgorithm(value: sha1 | sha224 | sha256 | sha384 | sha512): Self = StObject.set(x, "prfAlgorithm", value.asInstanceOf[js.Any])
+    inline def setPrfAlgorithm(value: sha1 | sha224 | sha256 | sha384 | sha512): Self = StObject.set(x, "prfAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrfAlgorithmUndefined: Self = StObject.set(x, "prfAlgorithm", js.undefined)
+    inline def setPrfAlgorithmUndefined: Self = StObject.set(x, "prfAlgorithm", js.undefined)
     
-    @scala.inline
-    def setSaltSize(value: Double): Self = StObject.set(x, "saltSize", value.asInstanceOf[js.Any])
+    inline def setSaltSize(value: Double): Self = StObject.set(x, "saltSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltSizeUndefined: Self = StObject.set(x, "saltSize", js.undefined)
+    inline def setSaltSizeUndefined: Self = StObject.set(x, "saltSize", js.undefined)
   }
 }

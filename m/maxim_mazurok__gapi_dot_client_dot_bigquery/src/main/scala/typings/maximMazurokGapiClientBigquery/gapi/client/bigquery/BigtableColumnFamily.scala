@@ -36,46 +36,33 @@ trait BigtableColumnFamily extends StObject {
 }
 object BigtableColumnFamily {
   
-  @scala.inline
-  def apply(): BigtableColumnFamily = {
+  inline def apply(): BigtableColumnFamily = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BigtableColumnFamily]
   }
   
-  @scala.inline
-  implicit class BigtableColumnFamilyMutableBuilder[Self <: BigtableColumnFamily] (val x: Self) extends AnyVal {
+  extension [Self <: BigtableColumnFamily](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[BigtableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[BigtableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: BigtableColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: BigtableColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFamilyId(value: String): Self = StObject.set(x, "familyId", value.asInstanceOf[js.Any])
+    inline def setFamilyId(value: String): Self = StObject.set(x, "familyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyIdUndefined: Self = StObject.set(x, "familyId", js.undefined)
+    inline def setFamilyIdUndefined: Self = StObject.set(x, "familyId", js.undefined)
     
-    @scala.inline
-    def setOnlyReadLatest(value: Boolean): Self = StObject.set(x, "onlyReadLatest", value.asInstanceOf[js.Any])
+    inline def setOnlyReadLatest(value: Boolean): Self = StObject.set(x, "onlyReadLatest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyReadLatestUndefined: Self = StObject.set(x, "onlyReadLatest", js.undefined)
+    inline def setOnlyReadLatestUndefined: Self = StObject.set(x, "onlyReadLatest", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

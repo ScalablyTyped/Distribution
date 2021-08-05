@@ -35,61 +35,43 @@ trait InventorySoftwarePackage extends StObject {
 }
 object InventorySoftwarePackage {
   
-  @scala.inline
-  def apply(): InventorySoftwarePackage = {
+  inline def apply(): InventorySoftwarePackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventorySoftwarePackage]
   }
   
-  @scala.inline
-  implicit class InventorySoftwarePackageMutableBuilder[Self <: InventorySoftwarePackage] (val x: Self) extends AnyVal {
+  extension [Self <: InventorySoftwarePackage](x: Self) {
     
-    @scala.inline
-    def setAptPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "aptPackage", value.asInstanceOf[js.Any])
+    inline def setAptPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "aptPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAptPackageUndefined: Self = StObject.set(x, "aptPackage", js.undefined)
+    inline def setAptPackageUndefined: Self = StObject.set(x, "aptPackage", js.undefined)
     
-    @scala.inline
-    def setCosPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "cosPackage", value.asInstanceOf[js.Any])
+    inline def setCosPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "cosPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCosPackageUndefined: Self = StObject.set(x, "cosPackage", js.undefined)
+    inline def setCosPackageUndefined: Self = StObject.set(x, "cosPackage", js.undefined)
     
-    @scala.inline
-    def setGoogetPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "googetPackage", value.asInstanceOf[js.Any])
+    inline def setGoogetPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "googetPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogetPackageUndefined: Self = StObject.set(x, "googetPackage", js.undefined)
+    inline def setGoogetPackageUndefined: Self = StObject.set(x, "googetPackage", js.undefined)
     
-    @scala.inline
-    def setQfePackage(value: InventoryWindowsQuickFixEngineeringPackage): Self = StObject.set(x, "qfePackage", value.asInstanceOf[js.Any])
+    inline def setQfePackage(value: InventoryWindowsQuickFixEngineeringPackage): Self = StObject.set(x, "qfePackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQfePackageUndefined: Self = StObject.set(x, "qfePackage", js.undefined)
+    inline def setQfePackageUndefined: Self = StObject.set(x, "qfePackage", js.undefined)
     
-    @scala.inline
-    def setWuaPackage(value: InventoryWindowsUpdatePackage): Self = StObject.set(x, "wuaPackage", value.asInstanceOf[js.Any])
+    inline def setWuaPackage(value: InventoryWindowsUpdatePackage): Self = StObject.set(x, "wuaPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWuaPackageUndefined: Self = StObject.set(x, "wuaPackage", js.undefined)
+    inline def setWuaPackageUndefined: Self = StObject.set(x, "wuaPackage", js.undefined)
     
-    @scala.inline
-    def setYumPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "yumPackage", value.asInstanceOf[js.Any])
+    inline def setYumPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "yumPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYumPackageUndefined: Self = StObject.set(x, "yumPackage", js.undefined)
+    inline def setYumPackageUndefined: Self = StObject.set(x, "yumPackage", js.undefined)
     
-    @scala.inline
-    def setZypperPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "zypperPackage", value.asInstanceOf[js.Any])
+    inline def setZypperPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "zypperPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZypperPackageUndefined: Self = StObject.set(x, "zypperPackage", js.undefined)
+    inline def setZypperPackageUndefined: Self = StObject.set(x, "zypperPackage", js.undefined)
     
-    @scala.inline
-    def setZypperPatch(value: InventoryZypperPatch): Self = StObject.set(x, "zypperPatch", value.asInstanceOf[js.Any])
+    inline def setZypperPatch(value: InventoryZypperPatch): Self = StObject.set(x, "zypperPatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZypperPatchUndefined: Self = StObject.set(x, "zypperPatch", js.undefined)
+    inline def setZypperPatchUndefined: Self = StObject.set(x, "zypperPatch", js.undefined)
   }
 }

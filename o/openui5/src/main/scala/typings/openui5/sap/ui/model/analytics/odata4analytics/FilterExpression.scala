@@ -81,8 +81,7 @@ trait FilterExpression extends StObject {
 }
 object FilterExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCondition: (String, TypeofFilterOperator, js.Any, js.Any) => FilterExpression,
     addSetCondition: (String, js.Array[js.Any]) => FilterExpression,
     addUI5FilterConditions: js.Array[Filter] => FilterExpression,
@@ -97,34 +96,24 @@ object FilterExpression {
     __obj.asInstanceOf[FilterExpression]
   }
   
-  @scala.inline
-  implicit class FilterExpressionMutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
+  extension [Self <: FilterExpression](x: Self) {
     
-    @scala.inline
-    def setAddCondition(value: (String, TypeofFilterOperator, js.Any, js.Any) => FilterExpression): Self = StObject.set(x, "addCondition", js.Any.fromFunction4(value))
+    inline def setAddCondition(value: (String, TypeofFilterOperator, js.Any, js.Any) => FilterExpression): Self = StObject.set(x, "addCondition", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAddSetCondition(value: (String, js.Array[js.Any]) => FilterExpression): Self = StObject.set(x, "addSetCondition", js.Any.fromFunction2(value))
+    inline def setAddSetCondition(value: (String, js.Array[js.Any]) => FilterExpression): Self = StObject.set(x, "addSetCondition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddUI5FilterConditions(value: js.Array[Filter] => FilterExpression): Self = StObject.set(x, "addUI5FilterConditions", js.Any.fromFunction1(value))
+    inline def setAddUI5FilterConditions(value: js.Array[Filter] => FilterExpression): Self = StObject.set(x, "addUI5FilterConditions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCheckValidity(value: () => Boolean): Self = StObject.set(x, "checkValidity", js.Any.fromFunction0(value))
+    inline def setCheckValidity(value: () => Boolean): Self = StObject.set(x, "checkValidity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
+    inline def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExpressionAsUI5FilterArray(value: () => js.Array[Filter]): Self = StObject.set(x, "getExpressionAsUI5FilterArray", js.Any.fromFunction0(value))
+    inline def setGetExpressionAsUI5FilterArray(value: () => js.Array[Filter]): Self = StObject.set(x, "getExpressionAsUI5FilterArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURIFilterOptionValue(value: () => String): Self = StObject.set(x, "getURIFilterOptionValue", js.Any.fromFunction0(value))
+    inline def setGetURIFilterOptionValue(value: () => String): Self = StObject.set(x, "getURIFilterOptionValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveConditions(value: String => FilterExpression): Self = StObject.set(x, "removeConditions", js.Any.fromFunction1(value))
+    inline def setRemoveConditions(value: String => FilterExpression): Self = StObject.set(x, "removeConditions", js.Any.fromFunction1(value))
   }
 }

@@ -31,37 +31,27 @@ trait SchemaChildReference extends StObject {
 }
 object SchemaChildReference {
   
-  @scala.inline
-  def apply(): SchemaChildReference = {
+  inline def apply(): SchemaChildReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChildReference]
   }
   
-  @scala.inline
-  implicit class SchemaChildReferenceMutableBuilder[Self <: SchemaChildReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChildReference](x: Self) {
     
-    @scala.inline
-    def setChildLink(value: String): Self = StObject.set(x, "childLink", value.asInstanceOf[js.Any])
+    inline def setChildLink(value: String): Self = StObject.set(x, "childLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildLinkUndefined: Self = StObject.set(x, "childLink", js.undefined)
+    inline def setChildLinkUndefined: Self = StObject.set(x, "childLink", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

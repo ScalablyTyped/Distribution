@@ -15,15 +15,11 @@ trait Quote
      with _ContentList
 object Quote {
   
-  @scala.inline
-  def `close-quote`: typings.preact.preactStrings.`close-quote` = "close-quote".asInstanceOf[typings.preact.preactStrings.`close-quote`]
+  inline def `close-quote`: typings.preact.preactStrings.`close-quote` = "close-quote".asInstanceOf[typings.preact.preactStrings.`close-quote`]
   
-  @scala.inline
-  def `no-close-quote`: typings.preact.preactStrings.`no-close-quote` = "no-close-quote".asInstanceOf[typings.preact.preactStrings.`no-close-quote`]
+  inline def `no-close-quote`: typings.preact.preactStrings.`no-close-quote` = "no-close-quote".asInstanceOf[typings.preact.preactStrings.`no-close-quote`]
   
-  @scala.inline
-  def `no-open-quote`: typings.preact.preactStrings.`no-open-quote` = "no-open-quote".asInstanceOf[typings.preact.preactStrings.`no-open-quote`]
+  inline def `no-open-quote`: typings.preact.preactStrings.`no-open-quote` = "no-open-quote".asInstanceOf[typings.preact.preactStrings.`no-open-quote`]
   
-  @scala.inline
-  def `open-quote`: typings.preact.preactStrings.`open-quote` = "open-quote".asInstanceOf[typings.preact.preactStrings.`open-quote`]
+  inline def `open-quote`: typings.preact.preactStrings.`open-quote` = "open-quote".asInstanceOf[typings.preact.preactStrings.`open-quote`]
 }

@@ -14,17 +14,14 @@ object reporterReporterMod {
   }
   object Reporter {
     
-    @scala.inline
-    def apply(getReport: FilesChange => js.Promise[Report]): Reporter = {
+    inline def apply(getReport: FilesChange => js.Promise[Report]): Reporter = {
       val __obj = js.Dynamic.literal(getReport = js.Any.fromFunction1(getReport))
       __obj.asInstanceOf[Reporter]
     }
     
-    @scala.inline
-    implicit class ReporterMutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
+    extension [Self <: Reporter](x: Self) {
       
-      @scala.inline
-      def setGetReport(value: FilesChange => js.Promise[Report]): Self = StObject.set(x, "getReport", js.Any.fromFunction1(value))
+      inline def setGetReport(value: FilesChange => js.Promise[Report]): Self = StObject.set(x, "getReport", js.Any.fromFunction1(value))
     }
   }
 }

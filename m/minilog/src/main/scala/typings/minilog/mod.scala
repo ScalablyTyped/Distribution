@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(namespace: String): Minilog = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[Minilog]
+  inline def apply(namespace: String): Minilog = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[Minilog]
   
   @JSImport("minilog", JSImport.Namespace)
   @js.native
@@ -96,35 +95,28 @@ object mod {
   @JSImport("minilog", "backends")
   @js.native
   def backends: MinilogBackends = js.native
-  @scala.inline
-  def backends_=(x: MinilogBackends): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backends")(x.asInstanceOf[js.Any])
+  inline def backends_=(x: MinilogBackends): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backends")(x.asInstanceOf[js.Any])
   
   @JSImport("minilog", "defaultBackend")
   @js.native
   def defaultBackend: js.Any = js.native
-  @scala.inline
-  def defaultBackend_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBackend")(x.asInstanceOf[js.Any])
+  inline def defaultBackend_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBackend")(x.asInstanceOf[js.Any])
   
   @JSImport("minilog", "defaultFormatter")
   @js.native
   def defaultFormatter: String = js.native
-  @scala.inline
-  def defaultFormatter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormatter")(x.asInstanceOf[js.Any])
+  inline def defaultFormatter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormatter")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def disable(): Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Minilog]
+  inline def disable(): Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Minilog]
   
-  @scala.inline
-  def enable(): Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Minilog]
+  inline def enable(): Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Minilog]
   
-  @scala.inline
-  def pipe(dest: js.Any): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def pipe(dest: js.Any): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("minilog", "suggest")
   @js.native
   def suggest: Filter = js.native
-  @scala.inline
-  def suggest_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suggest")(x.asInstanceOf[js.Any])
+  inline def suggest_=(x: Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suggest")(x.asInstanceOf[js.Any])
   
   trait Minilog extends StObject {
     
@@ -140,8 +132,7 @@ object mod {
   }
   object Minilog {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: /* repeated */ js.Any => Minilog,
       error: /* repeated */ js.Any => Minilog,
       info: /* repeated */ js.Any => Minilog,
@@ -152,23 +143,17 @@ object mod {
       __obj.asInstanceOf[Minilog]
     }
     
-    @scala.inline
-    implicit class MinilogMutableBuilder[Self <: Minilog] (val x: Self) extends AnyVal {
+    extension [Self <: Minilog](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLog(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -186,29 +171,22 @@ object mod {
   }
   object MinilogBackends {
     
-    @scala.inline
-    def apply(array: js.Any, browser: js.Any, console: Console, jQuery: js.Any, localstorage: js.Any): MinilogBackends = {
+    inline def apply(array: js.Any, browser: js.Any, console: Console, jQuery: js.Any, localstorage: js.Any): MinilogBackends = {
       val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], console = console.asInstanceOf[js.Any], jQuery = jQuery.asInstanceOf[js.Any], localstorage = localstorage.asInstanceOf[js.Any])
       __obj.asInstanceOf[MinilogBackends]
     }
     
-    @scala.inline
-    implicit class MinilogBackendsMutableBuilder[Self <: MinilogBackends] (val x: Self) extends AnyVal {
+    extension [Self <: MinilogBackends](x: Self) {
       
-      @scala.inline
-      def setArray(value: js.Any): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: js.Any): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowser(value: js.Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: js.Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJQuery(value: js.Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
+      inline def setJQuery(value: js.Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalstorage(value: js.Any): Self = StObject.set(x, "localstorage", value.asInstanceOf[js.Any])
+      inline def setLocalstorage(value: js.Any): Self = StObject.set(x, "localstorage", value.asInstanceOf[js.Any])
     }
   }
 }

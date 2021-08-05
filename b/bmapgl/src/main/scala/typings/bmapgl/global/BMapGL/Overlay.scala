@@ -16,8 +16,6 @@ object Overlay {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getZIndex(lat: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getZIndex")(lat.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getZIndex(lat: Double, coordTyppe: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getZIndex")(lat.asInstanceOf[js.Any], coordTyppe.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getZIndex(lat: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getZIndex")(lat.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getZIndex(lat: Double, coordTyppe: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getZIndex")(lat.asInstanceOf[js.Any], coordTyppe.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

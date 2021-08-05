@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResponseType extends StObject
 object ResponseType {
   
-  @scala.inline
-  def default: typings.std.stdStrings.default = "default".asInstanceOf[typings.std.stdStrings.default]
+  inline def default: typings.std.stdStrings.default = "default".asInstanceOf[typings.std.stdStrings.default]
   
-  @scala.inline
-  def basic: typings.std.stdStrings.basic = "basic".asInstanceOf[typings.std.stdStrings.basic]
+  inline def basic: typings.std.stdStrings.basic = "basic".asInstanceOf[typings.std.stdStrings.basic]
   
-  @scala.inline
-  def cors: typings.std.stdStrings.cors = "cors".asInstanceOf[typings.std.stdStrings.cors]
+  inline def cors: typings.std.stdStrings.cors = "cors".asInstanceOf[typings.std.stdStrings.cors]
   
-  @scala.inline
-  def error: typings.std.stdStrings.error = "error".asInstanceOf[typings.std.stdStrings.error]
+  inline def error: typings.std.stdStrings.error = "error".asInstanceOf[typings.std.stdStrings.error]
   
-  @scala.inline
-  def opaque: typings.std.stdStrings.opaque = "opaque".asInstanceOf[typings.std.stdStrings.opaque]
+  inline def opaque: typings.std.stdStrings.opaque = "opaque".asInstanceOf[typings.std.stdStrings.opaque]
   
-  @scala.inline
-  def opaqueredirect: typings.std.stdStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.std.stdStrings.opaqueredirect]
+  inline def opaqueredirect: typings.std.stdStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.std.stdStrings.opaqueredirect]
 }

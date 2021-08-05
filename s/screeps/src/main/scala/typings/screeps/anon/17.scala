@@ -10,16 +10,13 @@ trait `17` extends StObject {
 }
 object `17` {
   
-  @scala.inline
-  def apply(): `17` = {
+  inline def apply(): `17` = {
     val __obj = js.Dynamic.literal(OH = "GH2O")
     __obj.asInstanceOf[`17`]
   }
   
-  @scala.inline
-  implicit class `17MutableBuilder`[Self <: `17`] (val x: Self) extends AnyVal {
+  extension [Self <: `17`](x: Self) {
     
-    @scala.inline
-    def setOH(value: typings.screeps.screepsStrings.GH2O): Self = StObject.set(x, "OH", value.asInstanceOf[js.Any])
+    inline def setOH(value: typings.screeps.screepsStrings.GH2O): Self = StObject.set(x, "OH", value.asInstanceOf[js.Any])
   }
 }

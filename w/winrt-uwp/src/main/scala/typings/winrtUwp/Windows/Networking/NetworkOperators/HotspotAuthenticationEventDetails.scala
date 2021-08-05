@@ -12,16 +12,13 @@ trait HotspotAuthenticationEventDetails extends StObject {
 }
 object HotspotAuthenticationEventDetails {
   
-  @scala.inline
-  def apply(eventToken: String): HotspotAuthenticationEventDetails = {
+  inline def apply(eventToken: String): HotspotAuthenticationEventDetails = {
     val __obj = js.Dynamic.literal(eventToken = eventToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotspotAuthenticationEventDetails]
   }
   
-  @scala.inline
-  implicit class HotspotAuthenticationEventDetailsMutableBuilder[Self <: HotspotAuthenticationEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: HotspotAuthenticationEventDetails](x: Self) {
     
-    @scala.inline
-    def setEventToken(value: String): Self = StObject.set(x, "eventToken", value.asInstanceOf[js.Any])
+    inline def setEventToken(value: String): Self = StObject.set(x, "eventToken", value.asInstanceOf[js.Any])
   }
 }

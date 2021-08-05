@@ -13,22 +13,17 @@ trait EC2TagSet extends StObject {
 }
 object EC2TagSet {
   
-  @scala.inline
-  def apply(): EC2TagSet = {
+  inline def apply(): EC2TagSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EC2TagSet]
   }
   
-  @scala.inline
-  implicit class EC2TagSetMutableBuilder[Self <: EC2TagSet] (val x: Self) extends AnyVal {
+  extension [Self <: EC2TagSet](x: Self) {
     
-    @scala.inline
-    def setEc2TagSetList(value: EC2TagSetList): Self = StObject.set(x, "ec2TagSetList", value.asInstanceOf[js.Any])
+    inline def setEc2TagSetList(value: EC2TagSetList): Self = StObject.set(x, "ec2TagSetList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2TagSetListUndefined: Self = StObject.set(x, "ec2TagSetList", js.undefined)
+    inline def setEc2TagSetListUndefined: Self = StObject.set(x, "ec2TagSetList", js.undefined)
     
-    @scala.inline
-    def setEc2TagSetListVarargs(value: EC2TagFilterList*): Self = StObject.set(x, "ec2TagSetList", js.Array(value :_*))
+    inline def setEc2TagSetListVarargs(value: EC2TagFilterList*): Self = StObject.set(x, "ec2TagSetList", js.Array(value :_*))
   }
 }

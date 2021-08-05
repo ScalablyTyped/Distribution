@@ -9,8 +9,7 @@ trait GetBucketVersioningInput
      with typings.awsSdkClientS3Browser.typesGetBucketVersioningInputMod.GetBucketVersioningInput
 object GetBucketVersioningInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketVersioningInput = {
+  inline def apply(Bucket: String): GetBucketVersioningInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketVersioningInput]
   }

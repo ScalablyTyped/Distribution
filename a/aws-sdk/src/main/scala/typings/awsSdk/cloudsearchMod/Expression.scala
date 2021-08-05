@@ -12,19 +12,15 @@ trait Expression extends StObject {
 }
 object Expression {
   
-  @scala.inline
-  def apply(ExpressionName: StandardName, ExpressionValue: ExpressionValue): Expression = {
+  inline def apply(ExpressionName: StandardName, ExpressionValue: ExpressionValue): Expression = {
     val __obj = js.Dynamic.literal(ExpressionName = ExpressionName.asInstanceOf[js.Any], ExpressionValue = ExpressionValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   
-  @scala.inline
-  implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
+  extension [Self <: Expression](x: Self) {
     
-    @scala.inline
-    def setExpressionName(value: StandardName): Self = StObject.set(x, "ExpressionName", value.asInstanceOf[js.Any])
+    inline def setExpressionName(value: StandardName): Self = StObject.set(x, "ExpressionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionValue(value: ExpressionValue): Self = StObject.set(x, "ExpressionValue", value.asInstanceOf[js.Any])
+    inline def setExpressionValue(value: ExpressionValue): Self = StObject.set(x, "ExpressionValue", value.asInstanceOf[js.Any])
   }
 }

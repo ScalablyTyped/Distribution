@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpAfterEffect extends StObject
 object PpAfterEffect {
   
-  @scala.inline
-  def ppAfterEffectDim: `2` = 2.asInstanceOf[`2`]
+  inline def ppAfterEffectDim: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppAfterEffectHide: `1` = 1.asInstanceOf[`1`]
+  inline def ppAfterEffectHide: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppAfterEffectHideOnClick: `3` = 3.asInstanceOf[`3`]
+  inline def ppAfterEffectHideOnClick: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppAfterEffectMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppAfterEffectMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppAfterEffectNothing: `0` = 0.asInstanceOf[`0`]
+  inline def ppAfterEffectNothing: `0` = 0.asInstanceOf[`0`]
 }

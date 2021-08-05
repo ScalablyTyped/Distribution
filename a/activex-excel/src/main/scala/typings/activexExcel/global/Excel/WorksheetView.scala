@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.WorksheetView")
 @js.native
-class WorksheetView protected ()
+/* private */ class WorksheetView ()
   extends StObject
      with typings.activexExcel.Excel.WorksheetView {
   
@@ -32,7 +32,7 @@ class WorksheetView protected ()
   /* CompleteClass */
   var DisplayZeros: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.WorksheetView_typekey")
   var ExcelDotWorksheetView_typekey: typings.activexExcel.Excel.WorksheetView = js.native
   

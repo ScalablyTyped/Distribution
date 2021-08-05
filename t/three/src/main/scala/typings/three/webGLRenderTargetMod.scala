@@ -146,86 +146,60 @@ object webGLRenderTargetMod {
   }
   object WebGLRenderTargetOptions {
     
-    @scala.inline
-    def apply(): WebGLRenderTargetOptions = {
+    inline def apply(): WebGLRenderTargetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebGLRenderTargetOptions]
     }
     
-    @scala.inline
-    implicit class WebGLRenderTargetOptionsMutableBuilder[Self <: WebGLRenderTargetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLRenderTargetOptions](x: Self) {
       
-      @scala.inline
-      def setAnisotropy(value: Double): Self = StObject.set(x, "anisotropy", value.asInstanceOf[js.Any])
+      inline def setAnisotropy(value: Double): Self = StObject.set(x, "anisotropy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnisotropyUndefined: Self = StObject.set(x, "anisotropy", js.undefined)
+      inline def setAnisotropyUndefined: Self = StObject.set(x, "anisotropy", js.undefined)
       
-      @scala.inline
-      def setDepthBuffer(value: Boolean): Self = StObject.set(x, "depthBuffer", value.asInstanceOf[js.Any])
+      inline def setDepthBuffer(value: Boolean): Self = StObject.set(x, "depthBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthBufferUndefined: Self = StObject.set(x, "depthBuffer", js.undefined)
+      inline def setDepthBufferUndefined: Self = StObject.set(x, "depthBuffer", js.undefined)
       
-      @scala.inline
-      def setDepthTexture(value: DepthTexture): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
+      inline def setDepthTexture(value: DepthTexture): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthTextureUndefined: Self = StObject.set(x, "depthTexture", js.undefined)
+      inline def setDepthTextureUndefined: Self = StObject.set(x, "depthTexture", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: TextureEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: TextureEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setGenerateMipmaps(value: Boolean): Self = StObject.set(x, "generateMipmaps", value.asInstanceOf[js.Any])
+      inline def setGenerateMipmaps(value: Boolean): Self = StObject.set(x, "generateMipmaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateMipmapsUndefined: Self = StObject.set(x, "generateMipmaps", js.undefined)
+      inline def setGenerateMipmapsUndefined: Self = StObject.set(x, "generateMipmaps", js.undefined)
       
-      @scala.inline
-      def setMagFilter(value: TextureFilter): Self = StObject.set(x, "magFilter", value.asInstanceOf[js.Any])
+      inline def setMagFilter(value: TextureFilter): Self = StObject.set(x, "magFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagFilterUndefined: Self = StObject.set(x, "magFilter", js.undefined)
+      inline def setMagFilterUndefined: Self = StObject.set(x, "magFilter", js.undefined)
       
-      @scala.inline
-      def setMinFilter(value: TextureFilter): Self = StObject.set(x, "minFilter", value.asInstanceOf[js.Any])
+      inline def setMinFilter(value: TextureFilter): Self = StObject.set(x, "minFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinFilterUndefined: Self = StObject.set(x, "minFilter", js.undefined)
+      inline def setMinFilterUndefined: Self = StObject.set(x, "minFilter", js.undefined)
       
-      @scala.inline
-      def setStencilBuffer(value: Boolean): Self = StObject.set(x, "stencilBuffer", value.asInstanceOf[js.Any])
+      inline def setStencilBuffer(value: Boolean): Self = StObject.set(x, "stencilBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilBufferUndefined: Self = StObject.set(x, "stencilBuffer", js.undefined)
+      inline def setStencilBufferUndefined: Self = StObject.set(x, "stencilBuffer", js.undefined)
       
-      @scala.inline
-      def setType(value: TextureDataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TextureDataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWrapS(value: Wrapping): Self = StObject.set(x, "wrapS", value.asInstanceOf[js.Any])
+      inline def setWrapS(value: Wrapping): Self = StObject.set(x, "wrapS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapSUndefined: Self = StObject.set(x, "wrapS", js.undefined)
+      inline def setWrapSUndefined: Self = StObject.set(x, "wrapS", js.undefined)
       
-      @scala.inline
-      def setWrapT(value: Wrapping): Self = StObject.set(x, "wrapT", value.asInstanceOf[js.Any])
+      inline def setWrapT(value: Wrapping): Self = StObject.set(x, "wrapT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapTUndefined: Self = StObject.set(x, "wrapT", js.undefined)
+      inline def setWrapTUndefined: Self = StObject.set(x, "wrapT", js.undefined)
     }
   }
 }

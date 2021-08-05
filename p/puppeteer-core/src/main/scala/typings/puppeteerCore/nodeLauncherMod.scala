@@ -11,10 +11,8 @@ object nodeLauncherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(projectRoot: String, preferredRevision: String, isPuppeteerCore: Boolean): ProductLauncher = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRoot.asInstanceOf[js.Any], preferredRevision.asInstanceOf[js.Any], isPuppeteerCore.asInstanceOf[js.Any])).asInstanceOf[ProductLauncher]
-  @scala.inline
-  def default(projectRoot: String, preferredRevision: String, isPuppeteerCore: Boolean, product: String): ProductLauncher = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRoot.asInstanceOf[js.Any], preferredRevision.asInstanceOf[js.Any], isPuppeteerCore.asInstanceOf[js.Any], product.asInstanceOf[js.Any])).asInstanceOf[ProductLauncher]
+  inline def default(projectRoot: String, preferredRevision: String, isPuppeteerCore: Boolean): ProductLauncher = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRoot.asInstanceOf[js.Any], preferredRevision.asInstanceOf[js.Any], isPuppeteerCore.asInstanceOf[js.Any])).asInstanceOf[ProductLauncher]
+  inline def default(projectRoot: String, preferredRevision: String, isPuppeteerCore: Boolean, product: String): ProductLauncher = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRoot.asInstanceOf[js.Any], preferredRevision.asInstanceOf[js.Any], isPuppeteerCore.asInstanceOf[js.Any], product.asInstanceOf[js.Any])).asInstanceOf[ProductLauncher]
   
   trait ProductLauncher extends StObject {
     
@@ -28,8 +26,7 @@ object nodeLauncherMod {
   }
   object ProductLauncher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultArgs: js.Any => js.Any,
       executablePath: () => String,
       launch: js.Any => js.Any,
@@ -39,20 +36,15 @@ object nodeLauncherMod {
       __obj.asInstanceOf[ProductLauncher]
     }
     
-    @scala.inline
-    implicit class ProductLauncherMutableBuilder[Self <: ProductLauncher] (val x: Self) extends AnyVal {
+    extension [Self <: ProductLauncher](x: Self) {
       
-      @scala.inline
-      def setDefaultArgs(value: js.Any => js.Any): Self = StObject.set(x, "defaultArgs", js.Any.fromFunction1(value))
+      inline def setDefaultArgs(value: js.Any => js.Any): Self = StObject.set(x, "defaultArgs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecutablePath(value: () => String): Self = StObject.set(x, "executablePath", js.Any.fromFunction0(value))
+      inline def setExecutablePath(value: () => String): Self = StObject.set(x, "executablePath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLaunch(value: js.Any => js.Any): Self = StObject.set(x, "launch", js.Any.fromFunction1(value))
+      inline def setLaunch(value: js.Any => js.Any): Self = StObject.set(x, "launch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     }
   }
 }

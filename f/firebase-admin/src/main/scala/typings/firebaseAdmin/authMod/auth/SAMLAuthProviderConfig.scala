@@ -53,8 +53,7 @@ trait SAMLAuthProviderConfig
 }
 object SAMLAuthProviderConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enabled: Boolean,
     idpEntityId: String,
     providerId: String,
@@ -66,28 +65,20 @@ object SAMLAuthProviderConfig {
     __obj.asInstanceOf[SAMLAuthProviderConfig]
   }
   
-  @scala.inline
-  implicit class SAMLAuthProviderConfigMutableBuilder[Self <: SAMLAuthProviderConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SAMLAuthProviderConfig](x: Self) {
     
-    @scala.inline
-    def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
+    inline def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
+    inline def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
     
-    @scala.inline
-    def setIdpEntityId(value: String): Self = StObject.set(x, "idpEntityId", value.asInstanceOf[js.Any])
+    inline def setIdpEntityId(value: String): Self = StObject.set(x, "idpEntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRpEntityId(value: String): Self = StObject.set(x, "rpEntityId", value.asInstanceOf[js.Any])
+    inline def setRpEntityId(value: String): Self = StObject.set(x, "rpEntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsoURL(value: String): Self = StObject.set(x, "ssoURL", value.asInstanceOf[js.Any])
+    inline def setSsoURL(value: String): Self = StObject.set(x, "ssoURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX509Certificates(value: js.Array[String]): Self = StObject.set(x, "x509Certificates", value.asInstanceOf[js.Any])
+    inline def setX509Certificates(value: js.Array[String]): Self = StObject.set(x, "x509Certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX509CertificatesVarargs(value: String*): Self = StObject.set(x, "x509Certificates", js.Array(value :_*))
+    inline def setX509CertificatesVarargs(value: String*): Self = StObject.set(x, "x509Certificates", js.Array(value :_*))
   }
 }

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: ClientConfigmaxAttemptsnu): PgEars = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[PgEars]
+  inline def apply(opts: ClientConfigmaxAttemptsnu): PgEars = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[PgEars]
   
   @JSImport("pg-ears", JSImport.Namespace)
   @js.native

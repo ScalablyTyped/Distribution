@@ -25,16 +25,13 @@ trait XConfigurationChangeRequest extends StObject {
 }
 object XConfigurationChangeRequest {
   
-  @scala.inline
-  def apply(execute: XConfiguration => Unit): XConfigurationChangeRequest = {
+  inline def apply(execute: XConfiguration => Unit): XConfigurationChangeRequest = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[XConfigurationChangeRequest]
   }
   
-  @scala.inline
-  implicit class XConfigurationChangeRequestMutableBuilder[Self <: XConfigurationChangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: XConfigurationChangeRequest](x: Self) {
     
-    @scala.inline
-    def setExecute(value: XConfiguration => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: XConfiguration => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

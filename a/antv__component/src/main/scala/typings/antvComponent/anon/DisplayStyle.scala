@@ -13,25 +13,19 @@ trait DisplayStyle extends StObject {
 }
 object DisplayStyle {
   
-  @scala.inline
-  def apply(): DisplayStyle = {
+  inline def apply(): DisplayStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayStyle]
   }
   
-  @scala.inline
-  implicit class DisplayStyleMutableBuilder[Self <: DisplayStyle] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayStyle](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

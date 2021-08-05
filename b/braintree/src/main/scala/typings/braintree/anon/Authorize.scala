@@ -14,22 +14,17 @@ trait Authorize extends StObject {
 }
 object Authorize {
   
-  @scala.inline
-  def apply(Authorize: String, Decline: String, Fail: String): Authorize = {
+  inline def apply(Authorize: String, Decline: String, Fail: String): Authorize = {
     val __obj = js.Dynamic.literal(Authorize = Authorize.asInstanceOf[js.Any], Decline = Decline.asInstanceOf[js.Any], Fail = Fail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authorize]
   }
   
-  @scala.inline
-  implicit class AuthorizeMutableBuilder[Self <: Authorize] (val x: Self) extends AnyVal {
+  extension [Self <: Authorize](x: Self) {
     
-    @scala.inline
-    def setAuthorize(value: String): Self = StObject.set(x, "Authorize", value.asInstanceOf[js.Any])
+    inline def setAuthorize(value: String): Self = StObject.set(x, "Authorize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecline(value: String): Self = StObject.set(x, "Decline", value.asInstanceOf[js.Any])
+    inline def setDecline(value: String): Self = StObject.set(x, "Decline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFail(value: String): Self = StObject.set(x, "Fail", value.asInstanceOf[js.Any])
+    inline def setFail(value: String): Self = StObject.set(x, "Fail", value.asInstanceOf[js.Any])
   }
 }

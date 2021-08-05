@@ -64,8 +64,7 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addDataAttachment: (Data, String, String) => Unit,
     addFileAttachment: String => Unit,
     addImageAttachment: Image => Unit,
@@ -77,28 +76,20 @@ object Message {
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setAddDataAttachment(value: (Data, String, String) => Unit): Self = StObject.set(x, "addDataAttachment", js.Any.fromFunction3(value))
+    inline def setAddDataAttachment(value: (Data, String, String) => Unit): Self = StObject.set(x, "addDataAttachment", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddFileAttachment(value: String => Unit): Self = StObject.set(x, "addFileAttachment", js.Any.fromFunction1(value))
+    inline def setAddFileAttachment(value: String => Unit): Self = StObject.set(x, "addFileAttachment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddImageAttachment(value: Image => Unit): Self = StObject.set(x, "addImageAttachment", js.Any.fromFunction1(value))
+    inline def setAddImageAttachment(value: Image => Unit): Self = StObject.set(x, "addImageAttachment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
-    @scala.inline
-    def setSend(value: () => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction0(value))
+    inline def setSend(value: () => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction0(value))
   }
 }

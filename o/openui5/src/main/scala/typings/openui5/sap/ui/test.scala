@@ -306,8 +306,7 @@ object test {
   }
   object OpaPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAllControls: js.Any => js.Array[js.Any],
       getControlByGlobalId: js.Any => js.Array[Element],
       getControlConstructor: String => js.Any,
@@ -320,29 +319,21 @@ object test {
       __obj.asInstanceOf[OpaPlugin]
     }
     
-    @scala.inline
-    implicit class OpaPluginMutableBuilder[Self <: OpaPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: OpaPlugin](x: Self) {
       
-      @scala.inline
-      def setGetAllControls(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getAllControls", js.Any.fromFunction1(value))
+      inline def setGetAllControls(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getAllControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetControlByGlobalId(value: js.Any => js.Array[Element]): Self = StObject.set(x, "getControlByGlobalId", js.Any.fromFunction1(value))
+      inline def setGetControlByGlobalId(value: js.Any => js.Array[Element]): Self = StObject.set(x, "getControlByGlobalId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetControlConstructor(value: String => js.Any): Self = StObject.set(x, "getControlConstructor", js.Any.fromFunction1(value))
+      inline def setGetControlConstructor(value: String => js.Any): Self = StObject.set(x, "getControlConstructor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetControlInView(value: js.Any => Element | js.Array[Element] | js.Any): Self = StObject.set(x, "getControlInView", js.Any.fromFunction1(value))
+      inline def setGetControlInView(value: js.Any => Element | js.Array[Element] | js.Any): Self = StObject.set(x, "getControlInView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMatchingControls(value: js.Any => Element | js.Array[Element] | js.Any): Self = StObject.set(x, "getMatchingControls", js.Any.fromFunction1(value))
+      inline def setGetMatchingControls(value: js.Any => Element | js.Array[Element] | js.Any): Self = StObject.set(x, "getMatchingControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMetadata(value: () => Metadata): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
+      inline def setGetMetadata(value: () => Metadata): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetView(value: String => View): Self = StObject.set(x, "getView", js.Any.fromFunction1(value))
+      inline def setGetView(value: String => View): Self = StObject.set(x, "getView", js.Any.fromFunction1(value))
     }
   }
   

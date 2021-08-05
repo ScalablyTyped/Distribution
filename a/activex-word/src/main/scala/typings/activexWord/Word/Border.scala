@@ -28,13 +28,12 @@ trait Border extends StObject {
   
   var Visible: Boolean
   
-  @JSName("Word.Border_typekey")
+  /* private */ @JSName("Word.Border_typekey")
   var WordDotBorder_typekey: Border
 }
 object Border {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     ArtStyle: WdPageBorderArt,
     ArtWidth: Double,
@@ -53,43 +52,30 @@ object Border {
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtStyle(value: WdPageBorderArt): Self = StObject.set(x, "ArtStyle", value.asInstanceOf[js.Any])
+    inline def setArtStyle(value: WdPageBorderArt): Self = StObject.set(x, "ArtStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtWidth(value: Double): Self = StObject.set(x, "ArtWidth", value.asInstanceOf[js.Any])
+    inline def setArtWidth(value: Double): Self = StObject.set(x, "ArtWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: WdColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: WdColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: WdColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: WdColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInside(value: Boolean): Self = StObject.set(x, "Inside", value.asInstanceOf[js.Any])
+    inline def setInside(value: Boolean): Self = StObject.set(x, "Inside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: WdLineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: WdLineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: WdLineWidth): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: WdLineWidth): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotBorder_typekey(value: Border): Self = StObject.set(x, "Word.Border_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotBorder_typekey(value: Border): Self = StObject.set(x, "Word.Border_typekey", value.asInstanceOf[js.Any])
   }
 }

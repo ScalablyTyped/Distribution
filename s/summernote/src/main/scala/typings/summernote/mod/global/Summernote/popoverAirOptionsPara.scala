@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait popoverAirOptionsPara extends StObject
 object popoverAirOptionsPara {
   
-  @scala.inline
-  def paragraph: typings.summernote.summernoteStrings.paragraph = "paragraph".asInstanceOf[typings.summernote.summernoteStrings.paragraph]
+  inline def paragraph: typings.summernote.summernoteStrings.paragraph = "paragraph".asInstanceOf[typings.summernote.summernoteStrings.paragraph]
   
-  @scala.inline
-  def ul: typings.summernote.summernoteStrings.ul = "ul".asInstanceOf[typings.summernote.summernoteStrings.ul]
+  inline def ul: typings.summernote.summernoteStrings.ul = "ul".asInstanceOf[typings.summernote.summernoteStrings.ul]
 }

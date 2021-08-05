@@ -16,8 +16,7 @@ trait ShowObjectFull
 }
 object ShowObjectFull {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copyrights: js.Array[CopyrightObject],
     description: String,
     episodes: js.Array[EpisodeObjectSimplified],
@@ -38,13 +37,10 @@ object ShowObjectFull {
     __obj.asInstanceOf[ShowObjectFull]
   }
   
-  @scala.inline
-  implicit class ShowObjectFullMutableBuilder[Self <: ShowObjectFull] (val x: Self) extends AnyVal {
+  extension [Self <: ShowObjectFull](x: Self) {
     
-    @scala.inline
-    def setEpisodes(value: js.Array[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
+    inline def setEpisodes(value: js.Array[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpisodesVarargs(value: EpisodeObjectSimplified*): Self = StObject.set(x, "episodes", js.Array(value :_*))
+    inline def setEpisodesVarargs(value: EpisodeObjectSimplified*): Self = StObject.set(x, "episodes", js.Array(value :_*))
   }
 }

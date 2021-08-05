@@ -15,10 +15,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(opts: SamlOpts): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create(
+    inline def create(opts: SamlOpts): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create(
       opts: SamlOpts,
       cb: js.Function3[/* err */ Error | Null, /* result */ js.Array[js.Any], /* proofSecret */ Buffer, Unit]
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
@@ -30,10 +28,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(opts: SamlOpts): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create(opts: SamlOpts, cb: js.Function2[/* err */ Error | Null, /* signed */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create(opts: SamlOpts): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create(opts: SamlOpts, cb: js.Function2[/* err */ Error | Null, /* signed */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   trait KeyInfoProvider extends StObject {
@@ -42,17 +38,14 @@ object mod {
   }
   object KeyInfoProvider {
     
-    @scala.inline
-    def apply(getKeyInfo: (String, String) => String): KeyInfoProvider = {
+    inline def apply(getKeyInfo: (String, String) => String): KeyInfoProvider = {
       val __obj = js.Dynamic.literal(getKeyInfo = js.Any.fromFunction2(getKeyInfo))
       __obj.asInstanceOf[KeyInfoProvider]
     }
     
-    @scala.inline
-    implicit class KeyInfoProviderMutableBuilder[Self <: KeyInfoProvider] (val x: Self) extends AnyVal {
+    extension [Self <: KeyInfoProvider](x: Self) {
       
-      @scala.inline
-      def setGetKeyInfo(value: (String, String) => String): Self = StObject.set(x, "getKeyInfo", js.Any.fromFunction2(value))
+      inline def setGetKeyInfo(value: (String, String) => String): Self = StObject.set(x, "getKeyInfo", js.Any.fromFunction2(value))
     }
   }
   
@@ -117,173 +110,118 @@ object mod {
   }
   object SamlOpts {
     
-    @scala.inline
-    def apply(cert: Buffer, key: Buffer): SamlOpts = {
+    inline def apply(cert: Buffer, key: Buffer): SamlOpts = {
       val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamlOpts]
     }
     
-    @scala.inline
-    implicit class SamlOptsMutableBuilder[Self <: SamlOpts] (val x: Self) extends AnyVal {
+    extension [Self <: SamlOpts](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: SamlAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: SamlAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAudiences(value: String | js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+      inline def setAudiences(value: String | js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
+      inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
       
-      @scala.inline
-      def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+      inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
       
-      @scala.inline
-      def setAuthnContextClassRef(value: String): Self = StObject.set(x, "authnContextClassRef", value.asInstanceOf[js.Any])
+      inline def setAuthnContextClassRef(value: String): Self = StObject.set(x, "authnContextClassRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthnContextClassRefUndefined: Self = StObject.set(x, "authnContextClassRef", js.undefined)
+      inline def setAuthnContextClassRefUndefined: Self = StObject.set(x, "authnContextClassRef", js.undefined)
       
-      @scala.inline
-      def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+      inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+      inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
       
-      @scala.inline
-      def setEncryptionAlgorithm(value: String): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
+      inline def setEncryptionAlgorithm(value: String): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
+      inline def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
       
-      @scala.inline
-      def setEncryptionCert(value: Buffer): Self = StObject.set(x, "encryptionCert", value.asInstanceOf[js.Any])
+      inline def setEncryptionCert(value: Buffer): Self = StObject.set(x, "encryptionCert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionCertUndefined: Self = StObject.set(x, "encryptionCert", js.undefined)
+      inline def setEncryptionCertUndefined: Self = StObject.set(x, "encryptionCert", js.undefined)
       
-      @scala.inline
-      def setEncryptionPublicKey(value: Buffer): Self = StObject.set(x, "encryptionPublicKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionPublicKey(value: Buffer): Self = StObject.set(x, "encryptionPublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionPublicKeyUndefined: Self = StObject.set(x, "encryptionPublicKey", js.undefined)
+      inline def setEncryptionPublicKeyUndefined: Self = StObject.set(x, "encryptionPublicKey", js.undefined)
       
-      @scala.inline
-      def setHolderOfKeyProofSecret(value: String): Self = StObject.set(x, "holderOfKeyProofSecret", value.asInstanceOf[js.Any])
+      inline def setHolderOfKeyProofSecret(value: String): Self = StObject.set(x, "holderOfKeyProofSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHolderOfKeyProofSecretUndefined: Self = StObject.set(x, "holderOfKeyProofSecret", js.undefined)
+      inline def setHolderOfKeyProofSecretUndefined: Self = StObject.set(x, "holderOfKeyProofSecret", js.undefined)
       
-      @scala.inline
-      def setInResponseTo(value: String): Self = StObject.set(x, "inResponseTo", value.asInstanceOf[js.Any])
+      inline def setInResponseTo(value: String): Self = StObject.set(x, "inResponseTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInResponseToUndefined: Self = StObject.set(x, "inResponseTo", js.undefined)
+      inline def setInResponseToUndefined: Self = StObject.set(x, "inResponseTo", js.undefined)
       
-      @scala.inline
-      def setIncludeAttributeNameFormat(value: Boolean): Self = StObject.set(x, "includeAttributeNameFormat", value.asInstanceOf[js.Any])
+      inline def setIncludeAttributeNameFormat(value: Boolean): Self = StObject.set(x, "includeAttributeNameFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAttributeNameFormatUndefined: Self = StObject.set(x, "includeAttributeNameFormat", js.undefined)
+      inline def setIncludeAttributeNameFormatUndefined: Self = StObject.set(x, "includeAttributeNameFormat", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      @scala.inline
-      def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncryptionAlgorighm(value: String): Self = StObject.set(x, "keyEncryptionAlgorighm", value.asInstanceOf[js.Any])
+      inline def setKeyEncryptionAlgorighm(value: String): Self = StObject.set(x, "keyEncryptionAlgorighm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncryptionAlgorighmUndefined: Self = StObject.set(x, "keyEncryptionAlgorighm", js.undefined)
+      inline def setKeyEncryptionAlgorighmUndefined: Self = StObject.set(x, "keyEncryptionAlgorighm", js.undefined)
       
-      @scala.inline
-      def setKeyInfoProvider(value: KeyInfoProvider): Self = StObject.set(x, "keyInfoProvider", value.asInstanceOf[js.Any])
+      inline def setKeyInfoProvider(value: KeyInfoProvider): Self = StObject.set(x, "keyInfoProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyInfoProviderUndefined: Self = StObject.set(x, "keyInfoProvider", js.undefined)
+      inline def setKeyInfoProviderUndefined: Self = StObject.set(x, "keyInfoProvider", js.undefined)
       
-      @scala.inline
-      def setLifetimeInSeconds(value: Double): Self = StObject.set(x, "lifetimeInSeconds", value.asInstanceOf[js.Any])
+      inline def setLifetimeInSeconds(value: Double): Self = StObject.set(x, "lifetimeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetimeInSecondsUndefined: Self = StObject.set(x, "lifetimeInSeconds", js.undefined)
+      inline def setLifetimeInSecondsUndefined: Self = StObject.set(x, "lifetimeInSeconds", js.undefined)
       
-      @scala.inline
-      def setNameIdentifier(value: String): Self = StObject.set(x, "nameIdentifier", value.asInstanceOf[js.Any])
+      inline def setNameIdentifier(value: String): Self = StObject.set(x, "nameIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameIdentifierFormat(value: String): Self = StObject.set(x, "nameIdentifierFormat", value.asInstanceOf[js.Any])
+      inline def setNameIdentifierFormat(value: String): Self = StObject.set(x, "nameIdentifierFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameIdentifierFormatUndefined: Self = StObject.set(x, "nameIdentifierFormat", js.undefined)
+      inline def setNameIdentifierFormatUndefined: Self = StObject.set(x, "nameIdentifierFormat", js.undefined)
       
-      @scala.inline
-      def setNameIdentifierUndefined: Self = StObject.set(x, "nameIdentifier", js.undefined)
+      inline def setNameIdentifierUndefined: Self = StObject.set(x, "nameIdentifier", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+      inline def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
+      inline def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
       
-      @scala.inline
-      def setSessionIndex(value: String): Self = StObject.set(x, "sessionIndex", value.asInstanceOf[js.Any])
+      inline def setSessionIndex(value: String): Self = StObject.set(x, "sessionIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionIndexUndefined: Self = StObject.set(x, "sessionIndex", js.undefined)
+      inline def setSessionIndexUndefined: Self = StObject.set(x, "sessionIndex", js.undefined)
       
-      @scala.inline
-      def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
+      inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
       
-      @scala.inline
-      def setSignatureNamespacePrefix(value: String): Self = StObject.set(x, "signatureNamespacePrefix", value.asInstanceOf[js.Any])
+      inline def setSignatureNamespacePrefix(value: String): Self = StObject.set(x, "signatureNamespacePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureNamespacePrefixUndefined: Self = StObject.set(x, "signatureNamespacePrefix", js.undefined)
+      inline def setSignatureNamespacePrefixUndefined: Self = StObject.set(x, "signatureNamespacePrefix", js.undefined)
       
-      @scala.inline
-      def setSubjectConfirmationMethod(value: String): Self = StObject.set(x, "subjectConfirmationMethod", value.asInstanceOf[js.Any])
+      inline def setSubjectConfirmationMethod(value: String): Self = StObject.set(x, "subjectConfirmationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectConfirmationMethodUndefined: Self = StObject.set(x, "subjectConfirmationMethod", js.undefined)
+      inline def setSubjectConfirmationMethodUndefined: Self = StObject.set(x, "subjectConfirmationMethod", js.undefined)
       
-      @scala.inline
-      def setTypedAttributes(value: Boolean): Self = StObject.set(x, "typedAttributes", value.asInstanceOf[js.Any])
+      inline def setTypedAttributes(value: Boolean): Self = StObject.set(x, "typedAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypedAttributesUndefined: Self = StObject.set(x, "typedAttributes", js.undefined)
+      inline def setTypedAttributesUndefined: Self = StObject.set(x, "typedAttributes", js.undefined)
       
-      @scala.inline
-      def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       
-      @scala.inline
-      def setXpathToNodeBeforeSignature(value: String): Self = StObject.set(x, "xpathToNodeBeforeSignature", value.asInstanceOf[js.Any])
+      inline def setXpathToNodeBeforeSignature(value: String): Self = StObject.set(x, "xpathToNodeBeforeSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXpathToNodeBeforeSignatureUndefined: Self = StObject.set(x, "xpathToNodeBeforeSignature", js.undefined)
+      inline def setXpathToNodeBeforeSignatureUndefined: Self = StObject.set(x, "xpathToNodeBeforeSignature", js.undefined)
     }
   }
 }

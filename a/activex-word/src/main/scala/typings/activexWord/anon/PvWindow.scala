@@ -11,16 +11,13 @@ trait PvWindow extends StObject {
 }
 object PvWindow {
   
-  @scala.inline
-  def apply(PvWindow: ProtectedViewWindow): PvWindow = {
+  inline def apply(PvWindow: ProtectedViewWindow): PvWindow = {
     val __obj = js.Dynamic.literal(PvWindow = PvWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PvWindow]
   }
   
-  @scala.inline
-  implicit class PvWindowMutableBuilder[Self <: PvWindow] (val x: Self) extends AnyVal {
+  extension [Self <: PvWindow](x: Self) {
     
-    @scala.inline
-    def setPvWindow(value: ProtectedViewWindow): Self = StObject.set(x, "PvWindow", value.asInstanceOf[js.Any])
+    inline def setPvWindow(value: ProtectedViewWindow): Self = StObject.set(x, "PvWindow", value.asInstanceOf[js.Any])
   }
 }

@@ -51,17 +51,14 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(dm: DM): Window = {
+      inline def apply(dm: DM): Window = {
         val __obj = js.Dynamic.literal(dm = dm.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setDm(value: DM): Self = StObject.set(x, "dm", value.asInstanceOf[js.Any])
+        inline def setDm(value: DM): Self = StObject.set(x, "dm", value.asInstanceOf[js.Any])
       }
     }
   }

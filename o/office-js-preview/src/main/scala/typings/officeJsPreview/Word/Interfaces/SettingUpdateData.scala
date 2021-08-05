@@ -18,19 +18,15 @@ trait SettingUpdateData extends StObject {
 }
 object SettingUpdateData {
   
-  @scala.inline
-  def apply(): SettingUpdateData = {
+  inline def apply(): SettingUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettingUpdateData]
   }
   
-  @scala.inline
-  implicit class SettingUpdateDataMutableBuilder[Self <: SettingUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: SettingUpdateData](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

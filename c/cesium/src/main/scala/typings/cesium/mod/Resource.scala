@@ -111,68 +111,47 @@ object Resource {
   @JSImport("cesium", "Resource.DEFAULT")
   @js.native
   def DEFAULT: Resource = js.native
-  @scala.inline
-  def DEFAULT_=(x: Resource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_=(x: Resource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def delete(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def delete(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def delete(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def delete(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def fetch(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def fetch(options: RetryAttempts): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetch(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetch(options: RetryAttempts): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def fetchArrayBuffer(): js.UndefOr[js.Promise[ArrayBuffer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")().asInstanceOf[js.UndefOr[js.Promise[ArrayBuffer]]]
-  @scala.inline
-  def fetchArrayBuffer(options: QueryParameters): js.UndefOr[js.Promise[ArrayBuffer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[ArrayBuffer]]]
+  inline def fetchArrayBuffer(): js.UndefOr[js.Promise[ArrayBuffer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")().asInstanceOf[js.UndefOr[js.Promise[ArrayBuffer]]]
+  inline def fetchArrayBuffer(options: QueryParameters): js.UndefOr[js.Promise[ArrayBuffer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[ArrayBuffer]]]
   
   /* static member */
-  @scala.inline
-  def fetchBlob(): js.UndefOr[js.Promise[Blob]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchBlob")().asInstanceOf[js.UndefOr[js.Promise[Blob]]]
-  @scala.inline
-  def fetchBlob(options: QueryParameters): js.UndefOr[js.Promise[Blob]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchBlob")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[Blob]]]
+  inline def fetchBlob(): js.UndefOr[js.Promise[Blob]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchBlob")().asInstanceOf[js.UndefOr[js.Promise[Blob]]]
+  inline def fetchBlob(options: QueryParameters): js.UndefOr[js.Promise[Blob]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchBlob")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[Blob]]]
   
   /* static member */
-  @scala.inline
-  def fetchImage(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchImage")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def fetchImage(options: PreferBlob): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchImage")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetchImage(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchImage")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetchImage(options: PreferBlob): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchImage")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def fetchJson(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def fetchJson(options: QueryParameters): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetchJson(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetchJson(options: QueryParameters): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def fetchJsonp(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJsonp")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def fetchJsonp(options: typings.cesium.anon.RetryCallback): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJsonp")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetchJsonp(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJsonp")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def fetchJsonp(options: typings.cesium.anon.RetryCallback): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJsonp")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def fetchText(): js.UndefOr[js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchText")().asInstanceOf[js.UndefOr[js.Promise[String]]]
-  @scala.inline
-  def fetchText(options: QueryParameters): js.UndefOr[js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchText")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[String]]]
+  inline def fetchText(): js.UndefOr[js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchText")().asInstanceOf[js.UndefOr[js.Promise[String]]]
+  inline def fetchText(options: QueryParameters): js.UndefOr[js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchText")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[String]]]
   
   /* static member */
-  @scala.inline
-  def fetchXml(): js.UndefOr[js.Promise[XMLDocument]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchXml")().asInstanceOf[js.UndefOr[js.Promise[XMLDocument]]]
-  @scala.inline
-  def fetchXml(options: QueryParameters): js.UndefOr[js.Promise[XMLDocument]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchXml")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[XMLDocument]]]
+  inline def fetchXml(): js.UndefOr[js.Promise[XMLDocument]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchXml")().asInstanceOf[js.UndefOr[js.Promise[XMLDocument]]]
+  inline def fetchXml(options: QueryParameters): js.UndefOr[js.Promise[XMLDocument]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchXml")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[XMLDocument]]]
   
   /* static member */
-  @scala.inline
-  def head(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def head(options: RetryAttempts): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def head(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def head(options: RetryAttempts): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
   @JSImport("cesium", "Resource.isBlobSupported")
@@ -180,28 +159,20 @@ object Resource {
   val isBlobSupported: Boolean = js.native
   
   /* static member */
-  @scala.inline
-  def options(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def options(options: RetryAttempts): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def options(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def options(options: RetryAttempts): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def patch(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def patch(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def patch(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def patch(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def post(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def post(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def post(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def post(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   /* static member */
-  @scala.inline
-  def put(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
-  @scala.inline
-  def put(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def put(): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")().asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
+  inline def put(options: ResponseType): js.UndefOr[js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[js.Any]]]
   
   type RetryCallback = js.Function2[/* resource */ Resource, /* error */ Error, Unit]
 }

@@ -25,8 +25,7 @@ object calendarPanelFooterUniDriverMod {
   }
   object CalendarPanelFooterUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickOnPrimaryButton: () => js.Promise[Unit],
       clickOnSecondaryButton: () => js.Promise[Unit],
@@ -41,26 +40,19 @@ object calendarPanelFooterUniDriverMod {
       __obj.asInstanceOf[CalendarPanelFooterUniDriver]
     }
     
-    @scala.inline
-    implicit class CalendarPanelFooterUniDriverMutableBuilder[Self <: CalendarPanelFooterUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarPanelFooterUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnPrimaryButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPrimaryButton", js.Any.fromFunction0(value))
+      inline def setClickOnPrimaryButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPrimaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnSecondaryButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnSecondaryButton", js.Any.fromFunction0(value))
+      inline def setClickOnSecondaryButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnSecondaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryActionButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getPrimaryActionButtonLabel", js.Any.fromFunction0(value))
+      inline def setGetPrimaryActionButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getPrimaryActionButtonLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecondaryActionButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getSecondaryActionButtonLabel", js.Any.fromFunction0(value))
+      inline def setGetSecondaryActionButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getSecondaryActionButtonLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectedDaysText(value: () => js.Promise[String]): Self = StObject.set(x, "getSelectedDaysText", js.Any.fromFunction0(value))
+      inline def setGetSelectedDaysText(value: () => js.Promise[String]): Self = StObject.set(x, "getSelectedDaysText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPrimaryButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPrimaryButtonDisabled", js.Any.fromFunction0(value))
+      inline def setIsPrimaryButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPrimaryButtonDisabled", js.Any.fromFunction0(value))
     }
   }
 }

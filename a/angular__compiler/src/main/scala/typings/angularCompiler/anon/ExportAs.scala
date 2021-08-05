@@ -13,19 +13,15 @@ trait ExportAs extends StObject {
 }
 object ExportAs {
   
-  @scala.inline
-  def apply(exportAs: String, symbol: StaticSymbol): ExportAs = {
+  inline def apply(exportAs: String, symbol: StaticSymbol): ExportAs = {
     val __obj = js.Dynamic.literal(exportAs = exportAs.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportAs]
   }
   
-  @scala.inline
-  implicit class ExportAsMutableBuilder[Self <: ExportAs] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAs](x: Self) {
     
-    @scala.inline
-    def setExportAs(value: String): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+    inline def setExportAs(value: String): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: StaticSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: StaticSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

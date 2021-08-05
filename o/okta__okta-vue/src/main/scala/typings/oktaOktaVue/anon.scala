@@ -47,32 +47,24 @@ object anon {
   }
   object AutoRenew {
     
-    @scala.inline
-    def apply(): AutoRenew = {
+    inline def apply(): AutoRenew = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoRenew]
     }
     
-    @scala.inline
-    implicit class AutoRenewMutableBuilder[Self <: AutoRenew] (val x: Self) extends AnyVal {
+    extension [Self <: AutoRenew](x: Self) {
       
-      @scala.inline
-      def setAutoRenew(value: Boolean): Self = StObject.set(x, "autoRenew", value.asInstanceOf[js.Any])
+      inline def setAutoRenew(value: Boolean): Self = StObject.set(x, "autoRenew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRenewUndefined: Self = StObject.set(x, "autoRenew", js.undefined)
+      inline def setAutoRenewUndefined: Self = StObject.set(x, "autoRenew", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setStorage(value: localStorage | sessionStorage | cookie): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: localStorage | sessionStorage | cookie): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     }
   }
 }

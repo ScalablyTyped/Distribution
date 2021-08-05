@@ -15,19 +15,15 @@ trait ComponentLoadFailedEventArgs extends StObject {
 }
 object ComponentLoadFailedEventArgs {
   
-  @scala.inline
-  def apply(completion: MediaProtectionServiceCompletion, information: RevocationAndRenewalInformation): ComponentLoadFailedEventArgs = {
+  inline def apply(completion: MediaProtectionServiceCompletion, information: RevocationAndRenewalInformation): ComponentLoadFailedEventArgs = {
     val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentLoadFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class ComponentLoadFailedEventArgsMutableBuilder[Self <: ComponentLoadFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentLoadFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCompletion(value: MediaProtectionServiceCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+    inline def setCompletion(value: MediaProtectionServiceCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInformation(value: RevocationAndRenewalInformation): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
+    inline def setInformation(value: RevocationAndRenewalInformation): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
   }
 }

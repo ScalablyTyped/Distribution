@@ -12,19 +12,15 @@ trait BasemapToggleToggleEvent extends StObject {
 }
 object BasemapToggleToggleEvent {
   
-  @scala.inline
-  def apply(current: Basemap, previous: Basemap): BasemapToggleToggleEvent = {
+  inline def apply(current: Basemap, previous: Basemap): BasemapToggleToggleEvent = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapToggleToggleEvent]
   }
   
-  @scala.inline
-  implicit class BasemapToggleToggleEventMutableBuilder[Self <: BasemapToggleToggleEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapToggleToggleEvent](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Basemap): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Basemap): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious(value: Basemap): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: Basemap): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
   }
 }

@@ -21,8 +21,7 @@ object tableListItemUniDriverMod {
   }
   object TableListItemUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -35,20 +34,15 @@ object tableListItemUniDriverMod {
       __obj.asInstanceOf[TableListItemUniDriver]
     }
     
-    @scala.inline
-    implicit class TableListItemUniDriverMutableBuilder[Self <: TableListItemUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TableListItemUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetColumnTextAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getColumnTextAt", js.Any.fromFunction1(value))
+      inline def setGetColumnTextAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getColumnTextAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCheckboxChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCheckboxChecked", js.Any.fromFunction0(value))
+      inline def setIsCheckboxChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCheckboxChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCheckboxExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCheckboxExists", js.Any.fromFunction0(value))
+      inline def setIsCheckboxExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCheckboxExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleCheckbox(value: () => js.Promise[Unit]): Self = StObject.set(x, "toggleCheckbox", js.Any.fromFunction0(value))
+      inline def setToggleCheckbox(value: () => js.Promise[Unit]): Self = StObject.set(x, "toggleCheckbox", js.Any.fromFunction0(value))
     }
   }
 }

@@ -16,8 +16,7 @@ object typescriptMod {
   @js.native
   val IGNORED: ReadonlySet[String] = js.native
   
-  @scala.inline
-  def addTSOptions(container: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTSOptions")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addTSOptions(container: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTSOptions")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.typedoc.typedocStrings.out

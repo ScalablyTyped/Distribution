@@ -17,6 +17,5 @@ object units {
     * @param destUnitType unitType converting to.
     * @returns Numeric ratio of the conversion.
     */
-  @scala.inline
-  def conversionScale(srcUnitType: String, destUnitType: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("conversionScale")(srcUnitType.asInstanceOf[js.Any], destUnitType.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def conversionScale(srcUnitType: String, destUnitType: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("conversionScale")(srcUnitType.asInstanceOf[js.Any], destUnitType.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

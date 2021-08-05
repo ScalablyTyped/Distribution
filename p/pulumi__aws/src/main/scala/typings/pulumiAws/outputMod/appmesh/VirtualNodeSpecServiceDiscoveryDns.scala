@@ -13,16 +13,13 @@ trait VirtualNodeSpecServiceDiscoveryDns extends StObject {
 }
 object VirtualNodeSpecServiceDiscoveryDns {
   
-  @scala.inline
-  def apply(hostname: String): VirtualNodeSpecServiceDiscoveryDns = {
+  inline def apply(hostname: String): VirtualNodeSpecServiceDiscoveryDns = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecServiceDiscoveryDns]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecServiceDiscoveryDnsMutableBuilder[Self <: VirtualNodeSpecServiceDiscoveryDns] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecServiceDiscoveryDns](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
   }
 }

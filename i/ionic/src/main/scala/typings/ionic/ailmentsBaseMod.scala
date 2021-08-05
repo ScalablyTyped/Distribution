@@ -24,11 +24,11 @@ object ailmentsBaseMod {
        with IAilment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
     
-    var _debug: js.Any = js.native
+    /* private */ var _debug: js.Any = js.native
     
-    val client: IClient = js.native
+    /* protected */ val client: IClient = js.native
     
-    val config: IConfig = js.native
+    /* protected */ val config: IConfig = js.native
     
     def debug: Debugger = js.native
     
@@ -49,13 +49,13 @@ object ailmentsBaseMod {
     /* CompleteClass */
     var `implicit`: Boolean = js.native
     
-    val log: ILogger = js.native
+    /* protected */ val log: ILogger = js.native
     
-    val project: IProject = js.native
+    /* protected */ val project: IProject = js.native
     
-    val session: ISession = js.native
+    /* protected */ val session: ISession = js.native
     
-    val shell: IShell = js.native
+    /* protected */ val shell: IShell = js.native
   }
   
   @JSImport("ionic/lib/doctor/ailments/base", "AilmentRegistry")
@@ -64,7 +64,7 @@ object ailmentsBaseMod {
     extends StObject
        with IAilmentRegistry {
     
-    var _ailments: js.Array[IAilment] = js.native
+    /* protected */ var _ailments: js.Array[IAilment] = js.native
     
     /* CompleteClass */
     var ailments: js.Array[IAilment] = js.native
@@ -94,8 +94,7 @@ object ailmentsBaseMod {
   }
   object AilmentDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client: IClient,
       config: IConfig,
       log: ILogger,
@@ -107,26 +106,19 @@ object ailmentsBaseMod {
       __obj.asInstanceOf[AilmentDeps]
     }
     
-    @scala.inline
-    implicit class AilmentDepsMutableBuilder[Self <: AilmentDeps] (val x: Self) extends AnyVal {
+    extension [Self <: AilmentDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
 }

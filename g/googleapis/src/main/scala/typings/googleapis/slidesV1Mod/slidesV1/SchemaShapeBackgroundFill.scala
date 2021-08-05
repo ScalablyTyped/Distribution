@@ -25,25 +25,19 @@ trait SchemaShapeBackgroundFill extends StObject {
 }
 object SchemaShapeBackgroundFill {
   
-  @scala.inline
-  def apply(): SchemaShapeBackgroundFill = {
+  inline def apply(): SchemaShapeBackgroundFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShapeBackgroundFill]
   }
   
-  @scala.inline
-  implicit class SchemaShapeBackgroundFillMutableBuilder[Self <: SchemaShapeBackgroundFill] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShapeBackgroundFill](x: Self) {
     
-    @scala.inline
-    def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+    inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+    inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
     
-    @scala.inline
-    def setSolidFill(value: SchemaSolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+    inline def setSolidFill(value: SchemaSolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+    inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
   }
 }

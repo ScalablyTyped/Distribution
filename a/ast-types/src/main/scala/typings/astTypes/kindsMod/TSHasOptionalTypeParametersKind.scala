@@ -18,36 +18,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TSHasOptionalTypeParametersKind extends StObject
 object TSHasOptionalTypeParametersKind {
   
-  @scala.inline
-  def TSCallSignatureDeclaration(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSCallSignatureDeclaration = {
+  inline def TSCallSignatureDeclaration(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSCallSignatureDeclaration = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSCallSignatureDeclaration")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSCallSignatureDeclaration]
   }
   
-  @scala.inline
-  def TSConstructSignatureDeclaration(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSConstructSignatureDeclaration = {
+  inline def TSConstructSignatureDeclaration(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSConstructSignatureDeclaration = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSConstructSignatureDeclaration")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSConstructSignatureDeclaration]
   }
   
-  @scala.inline
-  def TSConstructorType(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSConstructorType = {
+  inline def TSConstructorType(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSConstructorType = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSConstructorType")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSConstructorType]
   }
   
-  @scala.inline
-  def TSDeclareFunction(params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSDeclareFunction = {
+  inline def TSDeclareFunction(params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSDeclareFunction = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSDeclareFunction")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSDeclareFunction]
   }
   
-  @scala.inline
-  def TSDeclareMethod(
+  inline def TSDeclareMethod(
     key: IdentifierKind | StringLiteralKind | NumericLiteralKind | ExpressionKind,
     params: js.Array[PatternKind]
   ): typings.astTypes.namedTypesMod.namedTypes.TSDeclareMethod = {
@@ -56,22 +51,19 @@ object TSHasOptionalTypeParametersKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSDeclareMethod]
   }
   
-  @scala.inline
-  def TSFunctionType(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSFunctionType = {
+  inline def TSFunctionType(parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): typings.astTypes.namedTypesMod.namedTypes.TSFunctionType = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSFunctionType")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSFunctionType]
   }
   
-  @scala.inline
-  def TSInterfaceDeclaration(body: TSInterfaceBodyKind, id: IdentifierKind | TSQualifiedNameKind): typings.astTypes.namedTypesMod.namedTypes.TSInterfaceDeclaration = {
+  inline def TSInterfaceDeclaration(body: TSInterfaceBodyKind, id: IdentifierKind | TSQualifiedNameKind): typings.astTypes.namedTypesMod.namedTypes.TSInterfaceDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSInterfaceDeclaration")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSInterfaceDeclaration]
   }
   
-  @scala.inline
-  def TSMethodSignature(
+  inline def TSMethodSignature(
     key: ExpressionKind,
     parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]
   ): typings.astTypes.namedTypesMod.namedTypes.TSMethodSignature = {
@@ -80,8 +72,7 @@ object TSHasOptionalTypeParametersKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSMethodSignature]
   }
   
-  @scala.inline
-  def TSTypeAliasDeclaration(id: IdentifierKind, typeAnnotation: TSTypeKind): typings.astTypes.namedTypesMod.namedTypes.TSTypeAliasDeclaration = {
+  inline def TSTypeAliasDeclaration(id: IdentifierKind, typeAnnotation: TSTypeKind): typings.astTypes.namedTypesMod.namedTypes.TSTypeAliasDeclaration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeAliasDeclaration")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSTypeAliasDeclaration]

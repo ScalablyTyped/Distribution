@@ -38,64 +38,45 @@ trait EntityFilter extends StObject {
 }
 object EntityFilter {
   
-  @scala.inline
-  def apply(eventArns: eventArnList): EntityFilter = {
+  inline def apply(eventArns: eventArnList): EntityFilter = {
     val __obj = js.Dynamic.literal(eventArns = eventArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityFilter]
   }
   
-  @scala.inline
-  implicit class EntityFilterMutableBuilder[Self <: EntityFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EntityFilter](x: Self) {
     
-    @scala.inline
-    def setEntityArns(value: entityArnList): Self = StObject.set(x, "entityArns", value.asInstanceOf[js.Any])
+    inline def setEntityArns(value: entityArnList): Self = StObject.set(x, "entityArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityArnsUndefined: Self = StObject.set(x, "entityArns", js.undefined)
+    inline def setEntityArnsUndefined: Self = StObject.set(x, "entityArns", js.undefined)
     
-    @scala.inline
-    def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value :_*))
+    inline def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value :_*))
     
-    @scala.inline
-    def setEntityValues(value: entityValueList): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
+    inline def setEntityValues(value: entityValueList): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
+    inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    @scala.inline
-    def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
     
-    @scala.inline
-    def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
+    inline def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
     
-    @scala.inline
-    def setLastUpdatedTimes(value: dateTimeRangeList): Self = StObject.set(x, "lastUpdatedTimes", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimes(value: dateTimeRangeList): Self = StObject.set(x, "lastUpdatedTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimesUndefined: Self = StObject.set(x, "lastUpdatedTimes", js.undefined)
+    inline def setLastUpdatedTimesUndefined: Self = StObject.set(x, "lastUpdatedTimes", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value :_*))
+    inline def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusCodes(value: entityStatusCodeList): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
+    inline def setStatusCodes(value: entityStatusCodeList): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
+    inline def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
     
-    @scala.inline
-    def setStatusCodesVarargs(value: entityStatusCode*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
+    inline def setStatusCodesVarargs(value: entityStatusCode*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: tagFilter): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagFilter): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

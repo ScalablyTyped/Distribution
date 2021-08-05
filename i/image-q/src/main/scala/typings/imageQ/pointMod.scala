@@ -42,13 +42,10 @@ object pointMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createByQuadruplet(quadruplet: js.Array[Double]): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByQuadruplet")(quadruplet.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def createByQuadruplet(quadruplet: js.Array[Double]): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByQuadruplet")(quadruplet.asInstanceOf[js.Any]).asInstanceOf[Point]
     
-    @scala.inline
-    def createByRGBA(red: Double, green: Double, blue: Double, alpha: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("createByRGBA")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def createByRGBA(red: Double, green: Double, blue: Double, alpha: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("createByRGBA")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Point]
     
-    @scala.inline
-    def createByUint32(uint32: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByUint32")(uint32.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def createByUint32(uint32: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByUint32")(uint32.asInstanceOf[js.Any]).asInstanceOf[Point]
   }
 }

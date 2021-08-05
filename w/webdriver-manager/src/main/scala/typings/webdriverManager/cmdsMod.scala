@@ -106,8 +106,7 @@ object cmdsMod {
   @JSImport("webdriver-manager/built/lib/cmds", "Opts")
   @js.native
   def Opts: Options = js.native
-  @scala.inline
-  def Opts_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Opts")(x.asInstanceOf[js.Any])
+  inline def Opts_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Opts")(x.asInstanceOf[js.Any])
   
   @JSImport("webdriver-manager/built/lib/cmds", "PROXY")
   @js.native

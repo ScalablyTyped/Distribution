@@ -14,16 +14,13 @@ trait DeviceCommon
 }
 object DeviceCommon {
   
-  @scala.inline
-  def apply(custom: Unit, name: StringOrTranslated): DeviceCommon = {
+  inline def apply(custom: Unit, name: StringOrTranslated): DeviceCommon = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCommon]
   }
   
-  @scala.inline
-  implicit class DeviceCommonMutableBuilder[Self <: DeviceCommon] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceCommon](x: Self) {
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
   }
 }

@@ -12,17 +12,14 @@ object NodeRuntime {
   }
   object NotifyWhenWaitingForDisconnectParameterType {
     
-    @scala.inline
-    def apply(enabled: Boolean): NotifyWhenWaitingForDisconnectParameterType = {
+    inline def apply(enabled: Boolean): NotifyWhenWaitingForDisconnectParameterType = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotifyWhenWaitingForDisconnectParameterType]
     }
     
-    @scala.inline
-    implicit class NotifyWhenWaitingForDisconnectParameterTypeMutableBuilder[Self <: NotifyWhenWaitingForDisconnectParameterType] (val x: Self) extends AnyVal {
+    extension [Self <: NotifyWhenWaitingForDisconnectParameterType](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
 }

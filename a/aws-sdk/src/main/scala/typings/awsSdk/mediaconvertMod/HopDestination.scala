@@ -23,31 +23,23 @@ trait HopDestination extends StObject {
 }
 object HopDestination {
   
-  @scala.inline
-  def apply(): HopDestination = {
+  inline def apply(): HopDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HopDestination]
   }
   
-  @scala.inline
-  implicit class HopDestinationMutableBuilder[Self <: HopDestination] (val x: Self) extends AnyVal {
+  extension [Self <: HopDestination](x: Self) {
     
-    @scala.inline
-    def setPriority(value: integerMinNegative50Max50): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: integerMinNegative50Max50): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setQueue(value: string): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: string): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
     
-    @scala.inline
-    def setWaitMinutes(value: integer): Self = StObject.set(x, "WaitMinutes", value.asInstanceOf[js.Any])
+    inline def setWaitMinutes(value: integer): Self = StObject.set(x, "WaitMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitMinutesUndefined: Self = StObject.set(x, "WaitMinutes", js.undefined)
+    inline def setWaitMinutesUndefined: Self = StObject.set(x, "WaitMinutes", js.undefined)
   }
 }

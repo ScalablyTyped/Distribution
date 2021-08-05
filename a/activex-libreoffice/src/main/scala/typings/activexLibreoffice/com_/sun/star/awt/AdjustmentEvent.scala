@@ -19,19 +19,15 @@ trait AdjustmentEvent
 }
 object AdjustmentEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, Type: AdjustmentType, Value: Double): AdjustmentEvent = {
+  inline def apply(Source: XInterface, Type: AdjustmentType, Value: Double): AdjustmentEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdjustmentEvent]
   }
   
-  @scala.inline
-  implicit class AdjustmentEventMutableBuilder[Self <: AdjustmentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AdjustmentEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: AdjustmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AdjustmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

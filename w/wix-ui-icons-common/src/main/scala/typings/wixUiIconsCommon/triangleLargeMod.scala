@@ -22,20 +22,16 @@ object triangleLargeMod extends Shortcut {
   }
   object TriangleLargeProps {
     
-    @scala.inline
-    def apply(): TriangleLargeProps = {
+    inline def apply(): TriangleLargeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TriangleLargeProps]
     }
     
-    @scala.inline
-    implicit class TriangleLargePropsMutableBuilder[Self <: TriangleLargeProps] (val x: Self) extends AnyVal {
+    extension [Self <: TriangleLargeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

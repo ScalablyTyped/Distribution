@@ -30,8 +30,7 @@ object anon {
   }
   object AutoBasePath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoBasePath: Boolean,
       autoTrackingFirstPage: Boolean,
       autoTrackingVirtualPages: Boolean,
@@ -47,47 +46,33 @@ object anon {
       __obj.asInstanceOf[AutoBasePath]
     }
     
-    @scala.inline
-    implicit class AutoBasePathMutableBuilder[Self <: AutoBasePath] (val x: Self) extends AnyVal {
+    extension [Self <: AutoBasePath](x: Self) {
       
-      @scala.inline
-      def setAutoBasePath(value: Boolean): Self = StObject.set(x, "autoBasePath", value.asInstanceOf[js.Any])
+      inline def setAutoBasePath(value: Boolean): Self = StObject.set(x, "autoBasePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoTrackingFirstPage(value: Boolean): Self = StObject.set(x, "autoTrackingFirstPage", value.asInstanceOf[js.Any])
+      inline def setAutoTrackingFirstPage(value: Boolean): Self = StObject.set(x, "autoTrackingFirstPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoTrackingVirtualPages(value: Boolean): Self = StObject.set(x, "autoTrackingVirtualPages", value.asInstanceOf[js.Any])
+      inline def setAutoTrackingVirtualPages(value: Boolean): Self = StObject.set(x, "autoTrackingVirtualPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedRoutes(value: js.Array[String]): Self = StObject.set(x, "excludedRoutes", value.asInstanceOf[js.Any])
+      inline def setExcludedRoutes(value: js.Array[String]): Self = StObject.set(x, "excludedRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedRoutesVarargs(value: String*): Self = StObject.set(x, "excludedRoutes", js.Array(value :_*))
+      inline def setExcludedRoutesVarargs(value: String*): Self = StObject.set(x, "excludedRoutes", js.Array(value :_*))
       
-      @scala.inline
-      def setQueryKeysBlacklisted(value: js.Array[String]): Self = StObject.set(x, "queryKeysBlacklisted", value.asInstanceOf[js.Any])
+      inline def setQueryKeysBlacklisted(value: js.Array[String]): Self = StObject.set(x, "queryKeysBlacklisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryKeysBlacklistedVarargs(value: String*): Self = StObject.set(x, "queryKeysBlacklisted", js.Array(value :_*))
+      inline def setQueryKeysBlacklistedVarargs(value: String*): Self = StObject.set(x, "queryKeysBlacklisted", js.Array(value :_*))
       
-      @scala.inline
-      def setQueryKeysWhitelisted(value: js.Array[String]): Self = StObject.set(x, "queryKeysWhitelisted", value.asInstanceOf[js.Any])
+      inline def setQueryKeysWhitelisted(value: js.Array[String]): Self = StObject.set(x, "queryKeysWhitelisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryKeysWhitelistedVarargs(value: String*): Self = StObject.set(x, "queryKeysWhitelisted", js.Array(value :_*))
+      inline def setQueryKeysWhitelistedVarargs(value: String*): Self = StObject.set(x, "queryKeysWhitelisted", js.Array(value :_*))
       
-      @scala.inline
-      def setTrackRelativePath(value: Boolean): Self = StObject.set(x, "trackRelativePath", value.asInstanceOf[js.Any])
+      inline def setTrackRelativePath(value: Boolean): Self = StObject.set(x, "trackRelativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackRoutes(value: Boolean): Self = StObject.set(x, "trackRoutes", value.asInstanceOf[js.Any])
+      inline def setTrackRoutes(value: Boolean): Self = StObject.set(x, "trackRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackStates(value: Boolean): Self = StObject.set(x, "trackStates", value.asInstanceOf[js.Any])
+      inline def setTrackStates(value: Boolean): Self = StObject.set(x, "trackStates", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +90,7 @@ object anon {
   }
   object BufferFlushDelay {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bufferFlushDelay: Double,
       developerMode: Boolean,
       optOut: Boolean,
@@ -117,23 +101,17 @@ object anon {
       __obj.asInstanceOf[BufferFlushDelay]
     }
     
-    @scala.inline
-    implicit class BufferFlushDelayMutableBuilder[Self <: BufferFlushDelay] (val x: Self) extends AnyVal {
+    extension [Self <: BufferFlushDelay](x: Self) {
       
-      @scala.inline
-      def setBufferFlushDelay(value: Double): Self = StObject.set(x, "bufferFlushDelay", value.asInstanceOf[js.Any])
+      inline def setBufferFlushDelay(value: Double): Self = StObject.set(x, "bufferFlushDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeveloperMode(value: Boolean): Self = StObject.set(x, "developerMode", value.asInstanceOf[js.Any])
+      inline def setDeveloperMode(value: Boolean): Self = StObject.set(x, "developerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptOut(value: Boolean): Self = StObject.set(x, "optOut", value.asInstanceOf[js.Any])
+      inline def setOptOut(value: Boolean): Self = StObject.set(x, "optOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageTracking(value: AutoBasePath): Self = StObject.set(x, "pageTracking", value.asInstanceOf[js.Any])
+      inline def setPageTracking(value: AutoBasePath): Self = StObject.set(x, "pageTracking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackExceptions(value: Boolean): Self = StObject.set(x, "trackExceptions", value.asInstanceOf[js.Any])
+      inline def setTrackExceptions(value: Boolean): Self = StObject.set(x, "trackExceptions", value.asInstanceOf[js.Any])
     }
   }
 }

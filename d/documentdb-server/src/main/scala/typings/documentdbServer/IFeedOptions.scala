@@ -24,37 +24,27 @@ trait IFeedOptions extends StObject {
 }
 object IFeedOptions {
   
-  @scala.inline
-  def apply(): IFeedOptions = {
+  inline def apply(): IFeedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFeedOptions]
   }
   
-  @scala.inline
-  implicit class IFeedOptionsMutableBuilder[Self <: IFeedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFeedOptions](x: Self) {
     
-    @scala.inline
-    def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
+    inline def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationUndefined: Self = StObject.set(x, "continuation", js.undefined)
+    inline def setContinuationUndefined: Self = StObject.set(x, "continuation", js.undefined)
     
-    @scala.inline
-    def setEnableLowPrecisionOrderBy(value: Boolean): Self = StObject.set(x, "enableLowPrecisionOrderBy", value.asInstanceOf[js.Any])
+    inline def setEnableLowPrecisionOrderBy(value: Boolean): Self = StObject.set(x, "enableLowPrecisionOrderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableLowPrecisionOrderByUndefined: Self = StObject.set(x, "enableLowPrecisionOrderBy", js.undefined)
+    inline def setEnableLowPrecisionOrderByUndefined: Self = StObject.set(x, "enableLowPrecisionOrderBy", js.undefined)
     
-    @scala.inline
-    def setEnableScan(value: Boolean): Self = StObject.set(x, "enableScan", value.asInstanceOf[js.Any])
+    inline def setEnableScan(value: Boolean): Self = StObject.set(x, "enableScan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableScanUndefined: Self = StObject.set(x, "enableScan", js.undefined)
+    inline def setEnableScanUndefined: Self = StObject.set(x, "enableScan", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

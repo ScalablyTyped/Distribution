@@ -33,8 +33,7 @@ trait LegendLayerInfos
 }
 object LegendLayerInfos {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     hideLayers: js.Array[Double],
@@ -45,22 +44,16 @@ object LegendLayerInfos {
     __obj.asInstanceOf[LegendLayerInfos]
   }
   
-  @scala.inline
-  implicit class LegendLayerInfosMutableBuilder[Self <: LegendLayerInfos] (val x: Self) extends AnyVal {
+  extension [Self <: LegendLayerInfos](x: Self) {
     
-    @scala.inline
-    def setHideLayers(value: js.Array[Double]): Self = StObject.set(x, "hideLayers", value.asInstanceOf[js.Any])
+    inline def setHideLayers(value: js.Array[Double]): Self = StObject.set(x, "hideLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideLayersVarargs(value: Double*): Self = StObject.set(x, "hideLayers", js.Array(value :_*))
+    inline def setHideLayersVarargs(value: Double*): Self = StObject.set(x, "hideLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

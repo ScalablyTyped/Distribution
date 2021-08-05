@@ -10,22 +10,17 @@ trait SessionSendInfoOptions extends StObject {
 }
 object SessionSendInfoOptions {
   
-  @scala.inline
-  def apply(): SessionSendInfoOptions = {
+  inline def apply(): SessionSendInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionSendInfoOptions]
   }
   
-  @scala.inline
-  implicit class SessionSendInfoOptionsMutableBuilder[Self <: SessionSendInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SessionSendInfoOptions](x: Self) {
     
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+    inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
   }
 }

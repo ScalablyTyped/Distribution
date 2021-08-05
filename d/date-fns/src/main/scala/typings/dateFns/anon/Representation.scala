@@ -17,25 +17,19 @@ trait Representation extends StObject {
 }
 object Representation {
   
-  @scala.inline
-  def apply(): Representation = {
+  inline def apply(): Representation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Representation]
   }
   
-  @scala.inline
-  implicit class RepresentationMutableBuilder[Self <: Representation] (val x: Self) extends AnyVal {
+  extension [Self <: Representation](x: Self) {
     
-    @scala.inline
-    def setFormat(value: extended | basic): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: extended | basic): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setRepresentation(value: complete | date | time): Self = StObject.set(x, "representation", value.asInstanceOf[js.Any])
+    inline def setRepresentation(value: complete | date | time): Self = StObject.set(x, "representation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepresentationUndefined: Self = StObject.set(x, "representation", js.undefined)
+    inline def setRepresentationUndefined: Self = StObject.set(x, "representation", js.undefined)
   }
 }

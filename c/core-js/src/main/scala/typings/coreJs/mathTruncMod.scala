@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mathTruncMod {
   
   /* was `typeof core.Math.trunc` */
-  @scala.inline
-  def apply(x: Double): Double = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(x: Double): Double = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("core-js/library/fn/math/trunc", JSImport.Namespace)
   @js.native

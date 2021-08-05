@@ -35,46 +35,33 @@ trait SchemaTableDataList extends StObject {
 }
 object SchemaTableDataList {
   
-  @scala.inline
-  def apply(): SchemaTableDataList = {
+  inline def apply(): SchemaTableDataList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableDataList]
   }
   
-  @scala.inline
-  implicit class SchemaTableDataListMutableBuilder[Self <: SchemaTableDataList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableDataList](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[SchemaTableRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[SchemaTableRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: SchemaTableRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaTableRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalRows(value: String): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
+    inline def setTotalRows(value: String): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRowsUndefined: Self = StObject.set(x, "totalRows", js.undefined)
+    inline def setTotalRowsUndefined: Self = StObject.set(x, "totalRows", js.undefined)
   }
 }

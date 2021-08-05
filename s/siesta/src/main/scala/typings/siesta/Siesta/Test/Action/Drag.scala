@@ -24,43 +24,31 @@ trait Drag
 }
 object Drag {
   
-  @scala.inline
-  def apply(): Drag = {
+  inline def apply(): Drag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Drag]
   }
   
-  @scala.inline
-  implicit class DragMutableBuilder[Self <: Drag] (val x: Self) extends AnyVal {
+  extension [Self <: Drag](x: Self) {
     
-    @scala.inline
-    def setBy(value: js.Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    inline def setBy(value: js.Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
-    @scala.inline
-    def setDragOnly(value: Boolean): Self = StObject.set(x, "dragOnly", value.asInstanceOf[js.Any])
+    inline def setDragOnly(value: Boolean): Self = StObject.set(x, "dragOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragOnlyUndefined: Self = StObject.set(x, "dragOnly", js.undefined)
+    inline def setDragOnlyUndefined: Self = StObject.set(x, "dragOnly", js.undefined)
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

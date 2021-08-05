@@ -12,19 +12,15 @@ trait IServer extends StObject {
 }
 object IServer {
   
-  @scala.inline
-  def apply(log: String => Unit, registerSystem: (Double, Double) => js.Any): IServer = {
+  inline def apply(log: String => Unit, registerSystem: (Double, Double) => js.Any): IServer = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log), registerSystem = js.Any.fromFunction2(registerSystem))
     __obj.asInstanceOf[IServer]
   }
   
-  @scala.inline
-  implicit class IServerMutableBuilder[Self <: IServer] (val x: Self) extends AnyVal {
+  extension [Self <: IServer](x: Self) {
     
-    @scala.inline
-    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterSystem(value: (Double, Double) => js.Any): Self = StObject.set(x, "registerSystem", js.Any.fromFunction2(value))
+    inline def setRegisterSystem(value: (Double, Double) => js.Any): Self = StObject.set(x, "registerSystem", js.Any.fromFunction2(value))
   }
 }

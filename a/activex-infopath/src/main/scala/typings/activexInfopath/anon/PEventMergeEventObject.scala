@@ -11,16 +11,13 @@ trait PEventMergeEventObject extends StObject {
 }
 object PEventMergeEventObject {
   
-  @scala.inline
-  def apply(pEvent: MergeEventObject): PEventMergeEventObject = {
+  inline def apply(pEvent: MergeEventObject): PEventMergeEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PEventMergeEventObject]
   }
   
-  @scala.inline
-  implicit class PEventMergeEventObjectMutableBuilder[Self <: PEventMergeEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PEventMergeEventObject](x: Self) {
     
-    @scala.inline
-    def setPEvent(value: MergeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
+    inline def setPEvent(value: MergeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }
 }

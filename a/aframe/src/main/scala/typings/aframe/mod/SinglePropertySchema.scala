@@ -16,37 +16,27 @@ trait SinglePropertySchema[T] extends StObject {
 }
 object SinglePropertySchema {
   
-  @scala.inline
-  def apply[T](): SinglePropertySchema[T] = {
+  inline def apply[T](): SinglePropertySchema[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SinglePropertySchema[T]]
   }
   
-  @scala.inline
-  implicit class SinglePropertySchemaMutableBuilder[Self <: SinglePropertySchema[?], T] (val x: Self & SinglePropertySchema[T]) extends AnyVal {
+  extension [Self <: SinglePropertySchema[?], T](x: Self & SinglePropertySchema[T]) {
     
-    @scala.inline
-    def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setParse(value: /* value */ String => T): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: /* value */ String => T): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
-    @scala.inline
-    def setStringify(value: /* value */ T => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    inline def setStringify(value: /* value */ T => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+    inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     
-    @scala.inline
-    def setType(value: PropertyTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropertyTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

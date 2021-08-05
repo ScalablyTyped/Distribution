@@ -22,8 +22,7 @@ trait LinksOneHopDoesNotContain extends StObject {
 }
 object LinksOneHopDoesNotContain {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     linksOneHopDoesNotContain: scala.Double,
     linksOneHopMayContain: scala.Double,
     linksOneHopMustContain: scala.Double,
@@ -36,28 +35,20 @@ object LinksOneHopDoesNotContain {
     __obj.asInstanceOf[LinksOneHopDoesNotContain]
   }
   
-  @scala.inline
-  implicit class LinksOneHopDoesNotContainMutableBuilder[Self <: LinksOneHopDoesNotContain] (val x: Self) extends AnyVal {
+  extension [Self <: LinksOneHopDoesNotContain](x: Self) {
     
-    @scala.inline
-    def setLinksOneHopDoesNotContain(value: scala.Double): Self = StObject.set(x, "linksOneHopDoesNotContain", value.asInstanceOf[js.Any])
+    inline def setLinksOneHopDoesNotContain(value: scala.Double): Self = StObject.set(x, "linksOneHopDoesNotContain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksOneHopMayContain(value: scala.Double): Self = StObject.set(x, "linksOneHopMayContain", value.asInstanceOf[js.Any])
+    inline def setLinksOneHopMayContain(value: scala.Double): Self = StObject.set(x, "linksOneHopMayContain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksOneHopMustContain(value: scala.Double): Self = StObject.set(x, "linksOneHopMustContain", value.asInstanceOf[js.Any])
+    inline def setLinksOneHopMustContain(value: scala.Double): Self = StObject.set(x, "linksOneHopMustContain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksRecursiveDoesNotContain(value: scala.Double): Self = StObject.set(x, "linksRecursiveDoesNotContain", value.asInstanceOf[js.Any])
+    inline def setLinksRecursiveDoesNotContain(value: scala.Double): Self = StObject.set(x, "linksRecursiveDoesNotContain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksRecursiveMayContain(value: scala.Double): Self = StObject.set(x, "linksRecursiveMayContain", value.asInstanceOf[js.Any])
+    inline def setLinksRecursiveMayContain(value: scala.Double): Self = StObject.set(x, "linksRecursiveMayContain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksRecursiveMustContain(value: scala.Double): Self = StObject.set(x, "linksRecursiveMustContain", value.asInstanceOf[js.Any])
+    inline def setLinksRecursiveMustContain(value: scala.Double): Self = StObject.set(x, "linksRecursiveMustContain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItems(value: scala.Double): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: scala.Double): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
   }
 }

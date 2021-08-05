@@ -20,8 +20,7 @@ trait IMediaDeviceControlCapabilities extends StObject {
 }
 object IMediaDeviceControlCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoModeSupported: Boolean,
     default: Double,
     max: Double,
@@ -33,25 +32,18 @@ object IMediaDeviceControlCapabilities {
     __obj.asInstanceOf[IMediaDeviceControlCapabilities]
   }
   
-  @scala.inline
-  implicit class IMediaDeviceControlCapabilitiesMutableBuilder[Self <: IMediaDeviceControlCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaDeviceControlCapabilities](x: Self) {
     
-    @scala.inline
-    def setAutoModeSupported(value: Boolean): Self = StObject.set(x, "autoModeSupported", value.asInstanceOf[js.Any])
+    inline def setAutoModeSupported(value: Boolean): Self = StObject.set(x, "autoModeSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

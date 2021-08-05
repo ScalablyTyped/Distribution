@@ -41,49 +41,35 @@ trait DescribeCacheClustersMess extends StObject {
 }
 object DescribeCacheClustersMess {
   
-  @scala.inline
-  def apply(): DescribeCacheClustersMess = {
+  inline def apply(): DescribeCacheClustersMess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCacheClustersMess]
   }
   
-  @scala.inline
-  implicit class DescribeCacheClustersMessMutableBuilder[Self <: DescribeCacheClustersMess] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCacheClustersMess](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
+    inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
+    inline def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setShowCacheClustersNotInReplicationGroups(value: BooleanOptional): Self = StObject.set(x, "ShowCacheClustersNotInReplicationGroups", value.asInstanceOf[js.Any])
+    inline def setShowCacheClustersNotInReplicationGroups(value: BooleanOptional): Self = StObject.set(x, "ShowCacheClustersNotInReplicationGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCacheClustersNotInReplicationGroupsUndefined: Self = StObject.set(x, "ShowCacheClustersNotInReplicationGroups", js.undefined)
+    inline def setShowCacheClustersNotInReplicationGroupsUndefined: Self = StObject.set(x, "ShowCacheClustersNotInReplicationGroups", js.undefined)
     
-    @scala.inline
-    def setShowCacheNodeInfo(value: BooleanOptional): Self = StObject.set(x, "ShowCacheNodeInfo", value.asInstanceOf[js.Any])
+    inline def setShowCacheNodeInfo(value: BooleanOptional): Self = StObject.set(x, "ShowCacheNodeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCacheNodeInfoUndefined: Self = StObject.set(x, "ShowCacheNodeInfo", js.undefined)
+    inline def setShowCacheNodeInfoUndefined: Self = StObject.set(x, "ShowCacheNodeInfo", js.undefined)
   }
 }

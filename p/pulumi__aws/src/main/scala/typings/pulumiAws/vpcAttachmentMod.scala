@@ -91,21 +91,16 @@ object vpcAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcAttachmentState): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
+    inline def get(name: String, id: Input[ID]): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
+    inline def get(name: String, id: Input[ID], state: VpcAttachmentState): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
+    inline def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): VpcAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAttachment]
     
     /**
       * Returns true if the given object is an instance of VpcAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ Boolean]
   }
   
   trait VpcAttachmentArgs extends StObject {
@@ -157,62 +152,44 @@ object vpcAttachmentMod {
   }
   object VpcAttachmentArgs {
     
-    @scala.inline
-    def apply(subnetIds: Input[js.Array[Input[String]]], transitGatewayId: Input[String], vpcId: Input[String]): VpcAttachmentArgs = {
+    inline def apply(subnetIds: Input[js.Array[Input[String]]], transitGatewayId: Input[String], vpcId: Input[String]): VpcAttachmentArgs = {
       val __obj = js.Dynamic.literal(subnetIds = subnetIds.asInstanceOf[js.Any], transitGatewayId = transitGatewayId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpcAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class VpcAttachmentArgsMutableBuilder[Self <: VpcAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setApplianceModeSupport(value: Input[String]): Self = StObject.set(x, "applianceModeSupport", value.asInstanceOf[js.Any])
+      inline def setApplianceModeSupport(value: Input[String]): Self = StObject.set(x, "applianceModeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplianceModeSupportUndefined: Self = StObject.set(x, "applianceModeSupport", js.undefined)
+      inline def setApplianceModeSupportUndefined: Self = StObject.set(x, "applianceModeSupport", js.undefined)
       
-      @scala.inline
-      def setDnsSupport(value: Input[String]): Self = StObject.set(x, "dnsSupport", value.asInstanceOf[js.Any])
+      inline def setDnsSupport(value: Input[String]): Self = StObject.set(x, "dnsSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsSupportUndefined: Self = StObject.set(x, "dnsSupport", js.undefined)
+      inline def setDnsSupportUndefined: Self = StObject.set(x, "dnsSupport", js.undefined)
       
-      @scala.inline
-      def setIpv6Support(value: Input[String]): Self = StObject.set(x, "ipv6Support", value.asInstanceOf[js.Any])
+      inline def setIpv6Support(value: Input[String]): Self = StObject.set(x, "ipv6Support", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6SupportUndefined: Self = StObject.set(x, "ipv6Support", js.undefined)
+      inline def setIpv6SupportUndefined: Self = StObject.set(x, "ipv6Support", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTableAssociation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayDefaultRouteTableAssociation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTableAssociationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", js.undefined)
+      inline def setTransitGatewayDefaultRouteTableAssociationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTablePropagation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayDefaultRouteTablePropagation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTablePropagationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", js.undefined)
+      inline def setTransitGatewayDefaultRouteTablePropagationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,77 +247,54 @@ object vpcAttachmentMod {
   }
   object VpcAttachmentState {
     
-    @scala.inline
-    def apply(): VpcAttachmentState = {
+    inline def apply(): VpcAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcAttachmentState]
     }
     
-    @scala.inline
-    implicit class VpcAttachmentStateMutableBuilder[Self <: VpcAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcAttachmentState](x: Self) {
       
-      @scala.inline
-      def setApplianceModeSupport(value: Input[String]): Self = StObject.set(x, "applianceModeSupport", value.asInstanceOf[js.Any])
+      inline def setApplianceModeSupport(value: Input[String]): Self = StObject.set(x, "applianceModeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplianceModeSupportUndefined: Self = StObject.set(x, "applianceModeSupport", js.undefined)
+      inline def setApplianceModeSupportUndefined: Self = StObject.set(x, "applianceModeSupport", js.undefined)
       
-      @scala.inline
-      def setDnsSupport(value: Input[String]): Self = StObject.set(x, "dnsSupport", value.asInstanceOf[js.Any])
+      inline def setDnsSupport(value: Input[String]): Self = StObject.set(x, "dnsSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsSupportUndefined: Self = StObject.set(x, "dnsSupport", js.undefined)
+      inline def setDnsSupportUndefined: Self = StObject.set(x, "dnsSupport", js.undefined)
       
-      @scala.inline
-      def setIpv6Support(value: Input[String]): Self = StObject.set(x, "ipv6Support", value.asInstanceOf[js.Any])
+      inline def setIpv6Support(value: Input[String]): Self = StObject.set(x, "ipv6Support", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6SupportUndefined: Self = StObject.set(x, "ipv6Support", js.undefined)
+      inline def setIpv6SupportUndefined: Self = StObject.set(x, "ipv6Support", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTableAssociation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayDefaultRouteTableAssociation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTableAssociationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", js.undefined)
+      inline def setTransitGatewayDefaultRouteTableAssociationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTableAssociation", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTablePropagation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayDefaultRouteTablePropagation(value: Input[Boolean]): Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayDefaultRouteTablePropagationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", js.undefined)
+      inline def setTransitGatewayDefaultRouteTablePropagationUndefined: Self = StObject.set(x, "transitGatewayDefaultRouteTablePropagation", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
       
-      @scala.inline
-      def setVpcOwnerId(value: Input[String]): Self = StObject.set(x, "vpcOwnerId", value.asInstanceOf[js.Any])
+      inline def setVpcOwnerId(value: Input[String]): Self = StObject.set(x, "vpcOwnerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcOwnerIdUndefined: Self = StObject.set(x, "vpcOwnerId", js.undefined)
+      inline def setVpcOwnerIdUndefined: Self = StObject.set(x, "vpcOwnerId", js.undefined)
     }
   }
 }

@@ -20,8 +20,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(opts: Options): RBAC = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[RBAC]
+  inline def create(opts: Options): RBAC = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[RBAC]
   
   type Options = Roles | js.Function0[js.Promise[Roles]] | js.Promise[Roles]
   
@@ -42,20 +41,16 @@ object mod {
   }
   object RoleObject {
     
-    @scala.inline
-    def apply(name: String, when: js.Object => js.Promise[Boolean]): RoleObject = {
+    inline def apply(name: String, when: js.Object => js.Promise[Boolean]): RoleObject = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], when = js.Any.fromFunction1(when))
       __obj.asInstanceOf[RoleObject]
     }
     
-    @scala.inline
-    implicit class RoleObjectMutableBuilder[Self <: RoleObject] (val x: Self) extends AnyVal {
+    extension [Self <: RoleObject](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhen(value: js.Object => js.Promise[Boolean]): Self = StObject.set(x, "when", js.Any.fromFunction1(value))
+      inline def setWhen(value: js.Object => js.Promise[Boolean]): Self = StObject.set(x, "when", js.Any.fromFunction1(value))
     }
   }
   

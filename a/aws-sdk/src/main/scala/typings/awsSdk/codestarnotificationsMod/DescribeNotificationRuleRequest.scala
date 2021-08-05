@@ -13,16 +13,13 @@ trait DescribeNotificationRuleRequest extends StObject {
 }
 object DescribeNotificationRuleRequest {
   
-  @scala.inline
-  def apply(Arn: NotificationRuleArn): DescribeNotificationRuleRequest = {
+  inline def apply(Arn: NotificationRuleArn): DescribeNotificationRuleRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotificationRuleRequest]
   }
   
-  @scala.inline
-  implicit class DescribeNotificationRuleRequestMutableBuilder[Self <: DescribeNotificationRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotificationRuleRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

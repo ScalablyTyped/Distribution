@@ -24,19 +24,15 @@ trait PointOverlayMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
 }
 object PointOverlayMixins {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): PointOverlayMixins[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): PointOverlayMixins[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointOverlayMixins[ES]]
   }
   
-  @scala.inline
-  implicit class PointOverlayMixinsMutableBuilder[Self <: PointOverlayMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & PointOverlayMixins[ES]) extends AnyVal {
+  extension [Self <: PointOverlayMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & PointOverlayMixins[ES]) {
     
-    @scala.inline
-    def setPoint(value: Boolean | OverlayMarkDef[ES] | transparent): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Boolean | OverlayMarkDef[ES] | transparent): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
   }
 }

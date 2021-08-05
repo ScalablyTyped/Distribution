@@ -39,64 +39,45 @@ trait WhenOptions extends StObject {
 }
 object WhenOptions {
   
-  @scala.inline
-  def apply(): WhenOptions = {
+  inline def apply(): WhenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WhenOptions]
   }
   
-  @scala.inline
-  implicit class WhenOptionsMutableBuilder[Self <: WhenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WhenOptions](x: Self) {
     
-    @scala.inline
-    def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
+    inline def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakUndefined: Self = StObject.set(x, "break", js.undefined)
+    inline def setBreakUndefined: Self = StObject.set(x, "break", js.undefined)
     
-    @scala.inline
-    def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNull: Self = StObject.set(x, "is", null)
+    inline def setIsNull: Self = StObject.set(x, "is", null)
     
-    @scala.inline
-    def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+    inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
-    @scala.inline
-    def setNot(value: SchemaLike): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: SchemaLike): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotNull: Self = StObject.set(x, "not", null)
+    inline def setNotNull: Self = StObject.set(x, "not", null)
     
-    @scala.inline
-    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+    inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
-    @scala.inline
-    def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
+    inline def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
+    inline def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
     
-    @scala.inline
-    def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
+    inline def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
     
-    @scala.inline
-    def setSwitch(value: js.Array[SwitchCases | SwitchDefault]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+    inline def setSwitch(value: js.Array[SwitchCases | SwitchDefault]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchUndefined: Self = StObject.set(x, "switch", js.undefined)
+    inline def setSwitchUndefined: Self = StObject.set(x, "switch", js.undefined)
     
-    @scala.inline
-    def setSwitchVarargs(value: (SwitchCases | SwitchDefault)*): Self = StObject.set(x, "switch", js.Array(value :_*))
+    inline def setSwitchVarargs(value: (SwitchCases | SwitchDefault)*): Self = StObject.set(x, "switch", js.Array(value :_*))
     
-    @scala.inline
-    def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    inline def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThenNull: Self = StObject.set(x, "then", null)
+    inline def setThenNull: Self = StObject.set(x, "then", null)
     
-    @scala.inline
-    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
+    inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

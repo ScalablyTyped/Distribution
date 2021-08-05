@@ -24,37 +24,27 @@ trait AttestationOccurrence extends StObject {
 }
 object AttestationOccurrence {
   
-  @scala.inline
-  def apply(): AttestationOccurrence = {
+  inline def apply(): AttestationOccurrence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttestationOccurrence]
   }
   
-  @scala.inline
-  implicit class AttestationOccurrenceMutableBuilder[Self <: AttestationOccurrence] (val x: Self) extends AnyVal {
+  extension [Self <: AttestationOccurrence](x: Self) {
     
-    @scala.inline
-    def setJwts(value: js.Array[Jwt]): Self = StObject.set(x, "jwts", value.asInstanceOf[js.Any])
+    inline def setJwts(value: js.Array[Jwt]): Self = StObject.set(x, "jwts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtsUndefined: Self = StObject.set(x, "jwts", js.undefined)
+    inline def setJwtsUndefined: Self = StObject.set(x, "jwts", js.undefined)
     
-    @scala.inline
-    def setJwtsVarargs(value: Jwt*): Self = StObject.set(x, "jwts", js.Array(value :_*))
+    inline def setJwtsVarargs(value: Jwt*): Self = StObject.set(x, "jwts", js.Array(value :_*))
     
-    @scala.inline
-    def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
+    inline def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializedPayloadUndefined: Self = StObject.set(x, "serializedPayload", js.undefined)
+    inline def setSerializedPayloadUndefined: Self = StObject.set(x, "serializedPayload", js.undefined)
     
-    @scala.inline
-    def setSignatures(value: js.Array[Signature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[Signature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
+    inline def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
-    @scala.inline
-    def setSignaturesVarargs(value: Signature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: Signature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

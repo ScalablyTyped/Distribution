@@ -543,8 +543,7 @@ object key {
     * @param signature The certificate or signature to check
     * @param keyId Check only certificates or signatures from a certain issuer key ID
     */
-  @scala.inline
-  def checkRevocationKey(signature: Signature, keyId: Keyid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRevocationKey")(signature.asInstanceOf[js.Any], keyId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkRevocationKey(signature: Signature, keyId: Keyid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRevocationKey")(signature.asInstanceOf[js.Any], keyId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create signature packet
@@ -555,16 +554,14 @@ object key {
     * @param userId (optional) user ID
     * @returns signature packet
     */
-  @scala.inline
-  def createSignaturePacket(
+  inline def createSignaturePacket(
     dataToSign: js.Object,
     signingKeyPacket: SecretKey,
     signatureProperties: js.Object,
     date: Date,
     userId: js.Object
   ): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignaturePacket")(dataToSign.asInstanceOf[js.Any], signingKeyPacket.asInstanceOf[js.Any], signatureProperties.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[Signature]
-  @scala.inline
-  def createSignaturePacket(
+  inline def createSignaturePacket(
     dataToSign: js.Object,
     signingKeyPacket: SecretSubkey,
     signatureProperties: js.Object,
@@ -588,8 +585,7 @@ object key {
     *        sign parameter defaults to false, and indicates whether the subkey should sign rather than encrypt
     * @returns
     */
-  @scala.inline
-  def generate(options: KeyOptions): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
+  inline def generate(options: KeyOptions): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
   
   /**
     * Returns the valid and non-expired signature that has the latest creation date, while ignoring signatures created in the future.
@@ -597,11 +593,9 @@ object key {
     * @param date Use the given date instead of the current time
     * @returns The latest valid signature
     */
-  @scala.inline
-  def getLatestValidSignature(signatures: js.Array[js.Any], date: Date): js.Promise[Signature] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLatestValidSignature")(signatures.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signature]]
+  inline def getLatestValidSignature(signatures: js.Array[js.Any], date: Date): js.Promise[Signature] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLatestValidSignature")(signatures.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signature]]
   
-  @scala.inline
-  def getPreferredAlgo_aead(`type`: aead, keys: js.Array[js.Any], date: Date, userIds: js.Array[js.Any]): js.Promise[symmetric] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredAlgo")(`type`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[symmetric]]
+  inline def getPreferredAlgo_aead(`type`: aead, keys: js.Array[js.Any], date: Date, userIds: js.Array[js.Any]): js.Promise[symmetric] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredAlgo")(`type`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[symmetric]]
   
   /**
     * Returns the preferred symmetric/aead algorithm for a set of keys
@@ -611,8 +605,7 @@ object key {
     * @param userIds (optional) user IDs
     * @returns Preferred symmetric algorithm
     */
-  @scala.inline
-  def getPreferredAlgo_symmetric(
+  inline def getPreferredAlgo_symmetric(
     `type`: typings.openpgp.openpgpStrings.symmetric,
     keys: js.Array[js.Any],
     date: Date,
@@ -627,10 +620,8 @@ object key {
     * @param userId (optional) user ID
     * @returns
     */
-  @scala.inline
-  def getPreferredHashAlgo(key: Key, keyPacket: SecretKey, date: Date, userId: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredHashAlgo")(key.asInstanceOf[js.Any], keyPacket.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getPreferredHashAlgo(key: Key, keyPacket: SecretSubkey, date: Date, userId: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredHashAlgo")(key.asInstanceOf[js.Any], keyPacket.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getPreferredHashAlgo(key: Key, keyPacket: SecretKey, date: Date, userId: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredHashAlgo")(key.asInstanceOf[js.Any], keyPacket.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getPreferredHashAlgo(key: Key, keyPacket: SecretSubkey, date: Date, userId: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredHashAlgo")(key.asInstanceOf[js.Any], keyPacket.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * Returns whether aead is supported by all keys in the set
@@ -639,11 +630,9 @@ object key {
     * @param userIds (optional) user IDs
     * @returns
     */
-  @scala.inline
-  def isAeadSupported(keys: js.Array[js.Any], date: Date, userIds: js.Array[js.Any]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isAeadSupported")(keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def isAeadSupported(keys: js.Array[js.Any], date: Date, userIds: js.Array[js.Any]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isAeadSupported")(keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -651,8 +640,7 @@ object key {
     key: PublicKey,
     date: Date
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -660,8 +648,7 @@ object key {
     key: PublicSubkey,
     date: Date
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -669,8 +656,7 @@ object key {
     key: SecretKey,
     date: Date
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -678,8 +664,7 @@ object key {
     key: SecretSubkey,
     date: Date
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -697,8 +682,7 @@ object key {
     * @param date Use the given date instead of the current time
     * @returns True if the signature revokes the data
     */
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -706,8 +690,7 @@ object key {
     key: PublicSubkey,
     date: Date
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -715,8 +698,7 @@ object key {
     key: SecretKey,
     date: Date
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def isDataRevoked(
+  inline def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
     revocations: js.Array[js.Any],
@@ -730,18 +712,15 @@ object key {
     * @param data to be parsed
     * @returns result object with key and error arrays
     */
-  @scala.inline
-  def read(data: Uint8Array): js.Promise[Err] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Err]]
+  inline def read(data: Uint8Array): js.Promise[Err] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Err]]
   
   /**
     * Reads an OpenPGP armored text and returns one or multiple key objects
     * @param armoredText text to be parsed
     * @returns result object with key and error arrays
     */
-  @scala.inline
-  def readArmored(armoredText: String): js.Promise[KeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyResult]]
-  @scala.inline
-  def readArmored(armoredText: ReadableStream[String]): js.Promise[KeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyResult]]
+  inline def readArmored(armoredText: String): js.Promise[KeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyResult]]
+  inline def readArmored(armoredText: ReadableStream[String]): js.Promise[KeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyResult]]
   
   /**
     * Reformats and signs an OpenPGP key with a given User ID. Currently only supports RSA keys.
@@ -755,8 +734,7 @@ object key {
     * @param subkeys (optional) options for each subkey, default to main key options. e.g. [ {sign: true, passphrase: '123'}]
     * @returns
     */
-  @scala.inline
-  def reformat(date: Date, subkeys: js.Array[js.Any]): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformat")(date.asInstanceOf[js.Any], subkeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def reformat(date: Date, subkeys: js.Array[js.Any]): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformat")(date.asInstanceOf[js.Any], subkeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
   trait KeyResult extends StObject {
     
@@ -766,29 +744,22 @@ object key {
   }
   object KeyResult {
     
-    @scala.inline
-    def apply(keys: js.Array[Key]): KeyResult = {
+    inline def apply(keys: js.Array[Key]): KeyResult = {
       val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], err = null)
       __obj.asInstanceOf[KeyResult]
     }
     
-    @scala.inline
-    implicit class KeyResultMutableBuilder[Self <: KeyResult] (val x: Self) extends AnyVal {
+    extension [Self <: KeyResult](x: Self) {
       
-      @scala.inline
-      def setErr(value: js.Array[Error]): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Array[Error]): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrNull: Self = StObject.set(x, "err", null)
+      inline def setErrNull: Self = StObject.set(x, "err", null)
       
-      @scala.inline
-      def setErrVarargs(value: Error*): Self = StObject.set(x, "err", js.Array(value :_*))
+      inline def setErrVarargs(value: Error*): Self = StObject.set(x, "err", js.Array(value :_*))
       
-      @scala.inline
-      def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
     }
   }
 }

@@ -53,8 +53,7 @@ trait AppletShape
 }
 object AppletShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AppletCode: String,
     AppletCodeBase: String,
     AppletCommands: SafeArray[PropertyValue],
@@ -110,22 +109,16 @@ object AppletShape {
     __obj.asInstanceOf[AppletShape]
   }
   
-  @scala.inline
-  implicit class AppletShapeMutableBuilder[Self <: AppletShape] (val x: Self) extends AnyVal {
+  extension [Self <: AppletShape](x: Self) {
     
-    @scala.inline
-    def setAppletCode(value: String): Self = StObject.set(x, "AppletCode", value.asInstanceOf[js.Any])
+    inline def setAppletCode(value: String): Self = StObject.set(x, "AppletCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppletCodeBase(value: String): Self = StObject.set(x, "AppletCodeBase", value.asInstanceOf[js.Any])
+    inline def setAppletCodeBase(value: String): Self = StObject.set(x, "AppletCodeBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppletCommands(value: SafeArray[PropertyValue]): Self = StObject.set(x, "AppletCommands", value.asInstanceOf[js.Any])
+    inline def setAppletCommands(value: SafeArray[PropertyValue]): Self = StObject.set(x, "AppletCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppletIsScript(value: Boolean): Self = StObject.set(x, "AppletIsScript", value.asInstanceOf[js.Any])
+    inline def setAppletIsScript(value: Boolean): Self = StObject.set(x, "AppletIsScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppletName(value: String): Self = StObject.set(x, "AppletName", value.asInstanceOf[js.Any])
+    inline def setAppletName(value: String): Self = StObject.set(x, "AppletName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait DeleteXssMatchSetRequest extends StObject {
 }
 object DeleteXssMatchSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, XssMatchSetId: ResourceId): DeleteXssMatchSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, XssMatchSetId: ResourceId): DeleteXssMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteXssMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteXssMatchSetRequestMutableBuilder[Self <: DeleteXssMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteXssMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
+    inline def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,10 +12,8 @@ object initializeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
-  @scala.inline
-  def initialize(options: InitializeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  inline def initialize(options: InitializeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait InitializeOptions extends StObject {
     
@@ -27,32 +25,24 @@ object initializeMod {
   }
   object InitializeOptions {
     
-    @scala.inline
-    def apply(): InitializeOptions = {
+    inline def apply(): InitializeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitializeOptions]
     }
     
-    @scala.inline
-    implicit class InitializeOptionsMutableBuilder[Self <: InitializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitializeOptions](x: Self) {
       
-      @scala.inline
-      def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
+      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
       
-      @scala.inline
-      def setHitFilter(value: /* params */ URLSearchParams => Unit): Self = StObject.set(x, "hitFilter", js.Any.fromFunction1(value))
+      inline def setHitFilter(value: /* params */ URLSearchParams => Unit): Self = StObject.set(x, "hitFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHitFilterUndefined: Self = StObject.set(x, "hitFilter", js.undefined)
+      inline def setHitFilterUndefined: Self = StObject.set(x, "hitFilter", js.undefined)
       
-      @scala.inline
-      def setParameterOverrides(value: Record[String, String]): Self = StObject.set(x, "parameterOverrides", value.asInstanceOf[js.Any])
+      inline def setParameterOverrides(value: Record[String, String]): Self = StObject.set(x, "parameterOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterOverridesUndefined: Self = StObject.set(x, "parameterOverrides", js.undefined)
+      inline def setParameterOverridesUndefined: Self = StObject.set(x, "parameterOverrides", js.undefined)
     }
   }
 }

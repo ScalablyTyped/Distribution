@@ -12,25 +12,19 @@ trait ProgressEvents extends StObject {
 }
 object ProgressEvents {
   
-  @scala.inline
-  def apply(): ProgressEvents = {
+  inline def apply(): ProgressEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressEvents]
   }
   
-  @scala.inline
-  implicit class ProgressEventsMutableBuilder[Self <: ProgressEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressEvents](x: Self) {
     
-    @scala.inline
-    def setProgressComplete(value: /* lobibox */ LobiboxStatic => Unit): Self = StObject.set(x, "progressComplete", js.Any.fromFunction1(value))
+    inline def setProgressComplete(value: /* lobibox */ LobiboxStatic => Unit): Self = StObject.set(x, "progressComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProgressCompleteUndefined: Self = StObject.set(x, "progressComplete", js.undefined)
+    inline def setProgressCompleteUndefined: Self = StObject.set(x, "progressComplete", js.undefined)
     
-    @scala.inline
-    def setProgressUpdated(value: /* lobibox */ LobiboxStatic => Unit): Self = StObject.set(x, "progressUpdated", js.Any.fromFunction1(value))
+    inline def setProgressUpdated(value: /* lobibox */ LobiboxStatic => Unit): Self = StObject.set(x, "progressUpdated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProgressUpdatedUndefined: Self = StObject.set(x, "progressUpdated", js.undefined)
+    inline def setProgressUpdatedUndefined: Self = StObject.set(x, "progressUpdated", js.undefined)
   }
 }

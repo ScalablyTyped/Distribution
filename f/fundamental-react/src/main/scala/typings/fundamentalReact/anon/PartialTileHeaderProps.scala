@@ -13,25 +13,19 @@ trait PartialTileHeaderProps extends StObject {
 }
 object PartialTileHeaderProps {
   
-  @scala.inline
-  def apply(): PartialTileHeaderProps = {
+  inline def apply(): PartialTileHeaderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTileHeaderProps]
   }
   
-  @scala.inline
-  implicit class PartialTileHeaderPropsMutableBuilder[Self <: PartialTileHeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTileHeaderProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
   }
 }

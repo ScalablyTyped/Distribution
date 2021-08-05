@@ -14,22 +14,17 @@ trait ColorFlexFontSize extends StObject {
 }
 object ColorFlexFontSize {
   
-  @scala.inline
-  def apply(color: String, flex: Double, fontSize: Double): ColorFlexFontSize = {
+  inline def apply(color: String, flex: Double, fontSize: Double): ColorFlexFontSize = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorFlexFontSize]
   }
   
-  @scala.inline
-  implicit class ColorFlexFontSizeMutableBuilder[Self <: ColorFlexFontSize] (val x: Self) extends AnyVal {
+  extension [Self <: ColorFlexFontSize](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
   }
 }

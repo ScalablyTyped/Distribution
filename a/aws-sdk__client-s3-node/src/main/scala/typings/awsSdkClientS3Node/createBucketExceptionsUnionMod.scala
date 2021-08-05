@@ -13,14 +13,12 @@ object createBucketExceptionsUnionMod {
   trait CreateBucketExceptionsUnion extends StObject
   object CreateBucketExceptionsUnion {
     
-    @scala.inline
-    def BucketAlreadyExists(): typings.awsSdkClientS3Node.typesBucketAlreadyExistsMod.BucketAlreadyExists = {
+    inline def BucketAlreadyExists(): typings.awsSdkClientS3Node.typesBucketAlreadyExistsMod.BucketAlreadyExists = {
       val __obj = js.Dynamic.literal(name = "BucketAlreadyExists")
       __obj.asInstanceOf[typings.awsSdkClientS3Node.typesBucketAlreadyExistsMod.BucketAlreadyExists]
     }
     
-    @scala.inline
-    def BucketAlreadyOwnedByYou(): typings.awsSdkClientS3Node.typesBucketAlreadyOwnedByYouMod.BucketAlreadyOwnedByYou = {
+    inline def BucketAlreadyOwnedByYou(): typings.awsSdkClientS3Node.typesBucketAlreadyOwnedByYouMod.BucketAlreadyOwnedByYou = {
       val __obj = js.Dynamic.literal(name = "BucketAlreadyOwnedByYou")
       __obj.asInstanceOf[typings.awsSdkClientS3Node.typesBucketAlreadyOwnedByYouMod.BucketAlreadyOwnedByYou]
     }

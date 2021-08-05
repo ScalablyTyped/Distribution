@@ -31,6 +31,5 @@ object mod {
     val URL: /* "__NATIVE_URL__" */ String = js.native
   }
   
-  @scala.inline
-  def getEmptyImage(): HTMLImageElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmptyImage")().asInstanceOf[HTMLImageElement]
+  inline def getEmptyImage(): HTMLImageElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmptyImage")().asInstanceOf[HTMLImageElement]
 }

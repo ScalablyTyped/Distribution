@@ -16,8 +16,7 @@ trait EmbindObject[T /* <: EmbindObject[T] */] extends StObject {
 }
 object EmbindObject {
   
-  @scala.inline
-  def apply[T /* <: EmbindObject[T] */](
+  inline def apply[T /* <: EmbindObject[T] */](
     delete: () => Unit,
     deleteAfter: () => Unit,
     isAliasOf: js.Any => Boolean,
@@ -27,19 +26,14 @@ object EmbindObject {
     __obj.asInstanceOf[EmbindObject[T]]
   }
   
-  @scala.inline
-  implicit class EmbindObjectMutableBuilder[Self <: EmbindObject[?], T /* <: EmbindObject[T] */] (val x: Self & EmbindObject[T]) extends AnyVal {
+  extension [Self <: EmbindObject[?], T /* <: EmbindObject[T] */](x: Self & EmbindObject[T]) {
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteAfter(value: () => Unit): Self = StObject.set(x, "deleteAfter", js.Any.fromFunction0(value))
+    inline def setDeleteAfter(value: () => Unit): Self = StObject.set(x, "deleteAfter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAliasOf(value: js.Any => Boolean): Self = StObject.set(x, "isAliasOf", js.Any.fromFunction1(value))
+    inline def setIsAliasOf(value: js.Any => Boolean): Self = StObject.set(x, "isAliasOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDeleted(value: () => Boolean): Self = StObject.set(x, "isDeleted", js.Any.fromFunction0(value))
+    inline def setIsDeleted(value: () => Boolean): Self = StObject.set(x, "isDeleted", js.Any.fromFunction0(value))
   }
 }

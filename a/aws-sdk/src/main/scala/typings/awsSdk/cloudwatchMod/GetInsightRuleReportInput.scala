@@ -43,46 +43,33 @@ trait GetInsightRuleReportInput extends StObject {
 }
 object GetInsightRuleReportInput {
   
-  @scala.inline
-  def apply(EndTime: Timestamp, Period: Period, RuleName: InsightRuleName, StartTime: Timestamp): GetInsightRuleReportInput = {
+  inline def apply(EndTime: Timestamp, Period: Period, RuleName: InsightRuleName, StartTime: Timestamp): GetInsightRuleReportInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightRuleReportInput]
   }
   
-  @scala.inline
-  implicit class GetInsightRuleReportInputMutableBuilder[Self <: GetInsightRuleReportInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightRuleReportInput](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxContributorCount(value: InsightRuleUnboundInteger): Self = StObject.set(x, "MaxContributorCount", value.asInstanceOf[js.Any])
+    inline def setMaxContributorCount(value: InsightRuleUnboundInteger): Self = StObject.set(x, "MaxContributorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxContributorCountUndefined: Self = StObject.set(x, "MaxContributorCount", js.undefined)
+    inline def setMaxContributorCountUndefined: Self = StObject.set(x, "MaxContributorCount", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: InsightRuleMetricList): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: InsightRuleMetricList): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: InsightRuleMetricName*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: InsightRuleMetricName*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderBy(value: InsightRuleOrderBy): Self = StObject.set(x, "OrderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: InsightRuleOrderBy): Self = StObject.set(x, "OrderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "OrderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "OrderBy", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleName(value: InsightRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: InsightRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

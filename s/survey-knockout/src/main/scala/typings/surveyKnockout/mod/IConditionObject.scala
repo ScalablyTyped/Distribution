@@ -14,22 +14,17 @@ trait IConditionObject extends StObject {
 }
 object IConditionObject {
   
-  @scala.inline
-  def apply(name: String, question: Question, text: String): IConditionObject = {
+  inline def apply(name: String, question: Question, text: String): IConditionObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConditionObject]
   }
   
-  @scala.inline
-  implicit class IConditionObjectMutableBuilder[Self <: IConditionObject] (val x: Self) extends AnyVal {
+  extension [Self <: IConditionObject](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: Question): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: Question): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -32,37 +32,27 @@ trait BoxProps
 }
 object BoxProps {
   
-  @scala.inline
-  def apply(): BoxProps = {
+  inline def apply(): BoxProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoxProps]
   }
   
-  @scala.inline
-  implicit class BoxPropsMutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
+  extension [Self <: BoxProps](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPadded(value: Boolean): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+    inline def setPadded(value: Boolean): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
+    inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

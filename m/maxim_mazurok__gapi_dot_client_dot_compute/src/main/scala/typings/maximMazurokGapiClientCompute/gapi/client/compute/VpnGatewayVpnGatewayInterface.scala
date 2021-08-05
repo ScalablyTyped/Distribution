@@ -14,25 +14,19 @@ trait VpnGatewayVpnGatewayInterface extends StObject {
 }
 object VpnGatewayVpnGatewayInterface {
   
-  @scala.inline
-  def apply(): VpnGatewayVpnGatewayInterface = {
+  inline def apply(): VpnGatewayVpnGatewayInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnGatewayVpnGatewayInterface]
   }
   
-  @scala.inline
-  implicit class VpnGatewayVpnGatewayInterfaceMutableBuilder[Self <: VpnGatewayVpnGatewayInterface] (val x: Self) extends AnyVal {
+  extension [Self <: VpnGatewayVpnGatewayInterface](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait BatchDeleteWorldsResponse extends StObject {
 }
 object BatchDeleteWorldsResponse {
   
-  @scala.inline
-  def apply(): BatchDeleteWorldsResponse = {
+  inline def apply(): BatchDeleteWorldsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteWorldsResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteWorldsResponseMutableBuilder[Self <: BatchDeleteWorldsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteWorldsResponse](x: Self) {
     
-    @scala.inline
-    def setUnprocessedWorlds(value: Arns): Self = StObject.set(x, "unprocessedWorlds", value.asInstanceOf[js.Any])
+    inline def setUnprocessedWorlds(value: Arns): Self = StObject.set(x, "unprocessedWorlds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedWorldsUndefined: Self = StObject.set(x, "unprocessedWorlds", js.undefined)
+    inline def setUnprocessedWorldsUndefined: Self = StObject.set(x, "unprocessedWorlds", js.undefined)
     
-    @scala.inline
-    def setUnprocessedWorldsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedWorlds", js.Array(value :_*))
+    inline def setUnprocessedWorldsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedWorlds", js.Array(value :_*))
   }
 }

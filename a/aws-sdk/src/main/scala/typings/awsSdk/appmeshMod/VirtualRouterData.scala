@@ -33,8 +33,7 @@ trait VirtualRouterData extends StObject {
 }
 object VirtualRouterData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     meshName: ResourceName,
     metadata: ResourceMetadata,
     spec: VirtualRouterSpec,
@@ -45,22 +44,16 @@ object VirtualRouterData {
     __obj.asInstanceOf[VirtualRouterData]
   }
   
-  @scala.inline
-  implicit class VirtualRouterDataMutableBuilder[Self <: VirtualRouterData] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualRouterData](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: VirtualRouterSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: VirtualRouterSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: VirtualRouterStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualRouterStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
+    inline def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
   }
 }

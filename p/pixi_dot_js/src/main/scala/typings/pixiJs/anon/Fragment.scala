@@ -16,37 +16,27 @@ trait Fragment extends StObject {
 }
 object Fragment {
   
-  @scala.inline
-  def apply(): Fragment = {
+  inline def apply(): Fragment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fragment]
   }
   
-  @scala.inline
-  implicit class FragmentMutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
+  extension [Self <: Fragment](x: Self) {
     
-    @scala.inline
-    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+    inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
-    @scala.inline
-    def setGeometryClass(value: js.Any): Self = StObject.set(x, "geometryClass", value.asInstanceOf[js.Any])
+    inline def setGeometryClass(value: js.Any): Self = StObject.set(x, "geometryClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryClassUndefined: Self = StObject.set(x, "geometryClass", js.undefined)
+    inline def setGeometryClassUndefined: Self = StObject.set(x, "geometryClass", js.undefined)
     
-    @scala.inline
-    def setVertex(value: String): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
+    inline def setVertex(value: String): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexSize(value: Double): Self = StObject.set(x, "vertexSize", value.asInstanceOf[js.Any])
+    inline def setVertexSize(value: Double): Self = StObject.set(x, "vertexSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexSizeUndefined: Self = StObject.set(x, "vertexSize", js.undefined)
+    inline def setVertexSizeUndefined: Self = StObject.set(x, "vertexSize", js.undefined)
     
-    @scala.inline
-    def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
+    inline def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
   }
 }

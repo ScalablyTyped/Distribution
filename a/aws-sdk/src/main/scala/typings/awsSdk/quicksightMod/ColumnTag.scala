@@ -18,25 +18,19 @@ trait ColumnTag extends StObject {
 }
 object ColumnTag {
   
-  @scala.inline
-  def apply(): ColumnTag = {
+  inline def apply(): ColumnTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnTag]
   }
   
-  @scala.inline
-  implicit class ColumnTagMutableBuilder[Self <: ColumnTag] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnTag](x: Self) {
     
-    @scala.inline
-    def setColumnDescription(value: ColumnDescription): Self = StObject.set(x, "ColumnDescription", value.asInstanceOf[js.Any])
+    inline def setColumnDescription(value: ColumnDescription): Self = StObject.set(x, "ColumnDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnDescriptionUndefined: Self = StObject.set(x, "ColumnDescription", js.undefined)
+    inline def setColumnDescriptionUndefined: Self = StObject.set(x, "ColumnDescription", js.undefined)
     
-    @scala.inline
-    def setColumnGeographicRole(value: GeoSpatialDataRole): Self = StObject.set(x, "ColumnGeographicRole", value.asInstanceOf[js.Any])
+    inline def setColumnGeographicRole(value: GeoSpatialDataRole): Self = StObject.set(x, "ColumnGeographicRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGeographicRoleUndefined: Self = StObject.set(x, "ColumnGeographicRole", js.undefined)
+    inline def setColumnGeographicRoleUndefined: Self = StObject.set(x, "ColumnGeographicRole", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait ButtonEvents extends StObject {
 }
 object ButtonEvents {
   
-  @scala.inline
-  def apply(): ButtonEvents = {
+  inline def apply(): ButtonEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonEvents]
   }
   
-  @scala.inline
-  implicit class ButtonEventsMutableBuilder[Self <: ButtonEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

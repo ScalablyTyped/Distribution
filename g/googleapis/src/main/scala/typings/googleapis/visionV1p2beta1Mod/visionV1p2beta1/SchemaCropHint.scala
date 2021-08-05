@@ -28,31 +28,23 @@ trait SchemaCropHint extends StObject {
 }
 object SchemaCropHint {
   
-  @scala.inline
-  def apply(): SchemaCropHint = {
+  inline def apply(): SchemaCropHint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCropHint]
   }
   
-  @scala.inline
-  implicit class SchemaCropHintMutableBuilder[Self <: SchemaCropHint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCropHint](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setImportanceFraction(value: Double): Self = StObject.set(x, "importanceFraction", value.asInstanceOf[js.Any])
+    inline def setImportanceFraction(value: Double): Self = StObject.set(x, "importanceFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportanceFractionUndefined: Self = StObject.set(x, "importanceFraction", js.undefined)
+    inline def setImportanceFractionUndefined: Self = StObject.set(x, "importanceFraction", js.undefined)
   }
 }

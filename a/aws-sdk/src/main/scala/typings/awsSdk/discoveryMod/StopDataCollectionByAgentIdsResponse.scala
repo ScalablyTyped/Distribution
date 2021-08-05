@@ -13,22 +13,17 @@ trait StopDataCollectionByAgentIdsResponse extends StObject {
 }
 object StopDataCollectionByAgentIdsResponse {
   
-  @scala.inline
-  def apply(): StopDataCollectionByAgentIdsResponse = {
+  inline def apply(): StopDataCollectionByAgentIdsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopDataCollectionByAgentIdsResponse]
   }
   
-  @scala.inline
-  implicit class StopDataCollectionByAgentIdsResponseMutableBuilder[Self <: StopDataCollectionByAgentIdsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopDataCollectionByAgentIdsResponse](x: Self) {
     
-    @scala.inline
-    def setAgentsConfigurationStatus(value: AgentConfigurationStatusList): Self = StObject.set(x, "agentsConfigurationStatus", value.asInstanceOf[js.Any])
+    inline def setAgentsConfigurationStatus(value: AgentConfigurationStatusList): Self = StObject.set(x, "agentsConfigurationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentsConfigurationStatusUndefined: Self = StObject.set(x, "agentsConfigurationStatus", js.undefined)
+    inline def setAgentsConfigurationStatusUndefined: Self = StObject.set(x, "agentsConfigurationStatus", js.undefined)
     
-    @scala.inline
-    def setAgentsConfigurationStatusVarargs(value: AgentConfigurationStatus*): Self = StObject.set(x, "agentsConfigurationStatus", js.Array(value :_*))
+    inline def setAgentsConfigurationStatusVarargs(value: AgentConfigurationStatus*): Self = StObject.set(x, "agentsConfigurationStatus", js.Array(value :_*))
   }
 }

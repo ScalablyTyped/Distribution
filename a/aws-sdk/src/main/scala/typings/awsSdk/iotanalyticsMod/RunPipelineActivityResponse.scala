@@ -18,28 +18,21 @@ trait RunPipelineActivityResponse extends StObject {
 }
 object RunPipelineActivityResponse {
   
-  @scala.inline
-  def apply(): RunPipelineActivityResponse = {
+  inline def apply(): RunPipelineActivityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunPipelineActivityResponse]
   }
   
-  @scala.inline
-  implicit class RunPipelineActivityResponseMutableBuilder[Self <: RunPipelineActivityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RunPipelineActivityResponse](x: Self) {
     
-    @scala.inline
-    def setLogResult(value: LogResult): Self = StObject.set(x, "logResult", value.asInstanceOf[js.Any])
+    inline def setLogResult(value: LogResult): Self = StObject.set(x, "logResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogResultUndefined: Self = StObject.set(x, "logResult", js.undefined)
+    inline def setLogResultUndefined: Self = StObject.set(x, "logResult", js.undefined)
     
-    @scala.inline
-    def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
+    inline def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
+    inline def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
     
-    @scala.inline
-    def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
+    inline def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait MomentBuiltinFormat extends StObject {
 }
 object MomentBuiltinFormat {
   
-  @scala.inline
-  def apply(__momentBuiltinFormatBrand: js.Any): MomentBuiltinFormat = {
+  inline def apply(__momentBuiltinFormatBrand: js.Any): MomentBuiltinFormat = {
     val __obj = js.Dynamic.literal(__momentBuiltinFormatBrand = __momentBuiltinFormatBrand.asInstanceOf[js.Any])
     __obj.asInstanceOf[MomentBuiltinFormat]
   }
   
-  @scala.inline
-  implicit class MomentBuiltinFormatMutableBuilder[Self <: MomentBuiltinFormat] (val x: Self) extends AnyVal {
+  extension [Self <: MomentBuiltinFormat](x: Self) {
     
-    @scala.inline
-    def set__momentBuiltinFormatBrand(value: js.Any): Self = StObject.set(x, "__momentBuiltinFormatBrand", value.asInstanceOf[js.Any])
+    inline def set__momentBuiltinFormatBrand(value: js.Any): Self = StObject.set(x, "__momentBuiltinFormatBrand", value.asInstanceOf[js.Any])
   }
 }

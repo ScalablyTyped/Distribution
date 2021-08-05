@@ -32,34 +32,25 @@ trait SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponse extends
 }
 object SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponse = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponseMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1alpha1ListServiceInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setInstances(value: js.Array[SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

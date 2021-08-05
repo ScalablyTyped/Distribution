@@ -8,11 +8,9 @@ object ignoreWalkStrings {
   
   @js.native
   sealed trait done extends StObject
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
 }

@@ -16,19 +16,15 @@ trait ArtistsTopTracksResponse extends StObject {
 }
 object ArtistsTopTracksResponse {
   
-  @scala.inline
-  def apply(tracks: js.Array[TrackObjectFull]): ArtistsTopTracksResponse = {
+  inline def apply(tracks: js.Array[TrackObjectFull]): ArtistsTopTracksResponse = {
     val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistsTopTracksResponse]
   }
   
-  @scala.inline
-  implicit class ArtistsTopTracksResponseMutableBuilder[Self <: ArtistsTopTracksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ArtistsTopTracksResponse](x: Self) {
     
-    @scala.inline
-    def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

@@ -35,44 +35,32 @@ object anon {
   }
   object MaxConnections {
     
-    @scala.inline
-    def apply(): MaxConnections = {
+    inline def apply(): MaxConnections = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxConnections]
     }
     
-    @scala.inline
-    implicit class MaxConnectionsMutableBuilder[Self <: MaxConnections] (val x: Self) extends AnyVal {
+    extension [Self <: MaxConnections](x: Self) {
       
-      @scala.inline
-      def setMaxConnections(value: Boolean): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+      inline def setMaxConnections(value: Boolean): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
+      inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
       
-      @scala.inline
-      def setMaxMessages(value: Boolean): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+      inline def setMaxMessages(value: Boolean): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
+      inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
       
-      @scala.inline
-      def setPool(value: Boolean): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: Boolean): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+      inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      @scala.inline
-      def setRateDelta(value: Boolean): Self = StObject.set(x, "rateDelta", value.asInstanceOf[js.Any])
+      inline def setRateDelta(value: Boolean): Self = StObject.set(x, "rateDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateDeltaUndefined: Self = StObject.set(x, "rateDelta", js.undefined)
+      inline def setRateDeltaUndefined: Self = StObject.set(x, "rateDelta", js.undefined)
       
-      @scala.inline
-      def setRateLimit(value: Boolean): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Boolean): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     }
   }
 }

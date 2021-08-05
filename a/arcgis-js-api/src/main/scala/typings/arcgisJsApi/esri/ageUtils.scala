@@ -20,16 +20,13 @@ trait ageUtils extends StObject {
 }
 object ageUtils {
   
-  @scala.inline
-  def apply(getAgeExpressions: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): ageUtils = {
+  inline def apply(getAgeExpressions: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): ageUtils = {
     val __obj = js.Dynamic.literal(getAgeExpressions = js.Any.fromFunction1(getAgeExpressions))
     __obj.asInstanceOf[ageUtils]
   }
   
-  @scala.inline
-  implicit class ageUtilsMutableBuilder[Self <: ageUtils] (val x: Self) extends AnyVal {
+  extension [Self <: ageUtils](x: Self) {
     
-    @scala.inline
-    def setGetAgeExpressions(value: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): Self = StObject.set(x, "getAgeExpressions", js.Any.fromFunction1(value))
+    inline def setGetAgeExpressions(value: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): Self = StObject.set(x, "getAgeExpressions", js.Any.fromFunction1(value))
   }
 }

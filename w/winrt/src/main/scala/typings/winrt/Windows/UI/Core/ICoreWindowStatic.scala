@@ -10,16 +10,13 @@ trait ICoreWindowStatic extends StObject {
 }
 object ICoreWindowStatic {
   
-  @scala.inline
-  def apply(getForCurrentThread: () => CoreWindow): ICoreWindowStatic = {
+  inline def apply(getForCurrentThread: () => CoreWindow): ICoreWindowStatic = {
     val __obj = js.Dynamic.literal(getForCurrentThread = js.Any.fromFunction0(getForCurrentThread))
     __obj.asInstanceOf[ICoreWindowStatic]
   }
   
-  @scala.inline
-  implicit class ICoreWindowStaticMutableBuilder[Self <: ICoreWindowStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreWindowStatic](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentThread(value: () => CoreWindow): Self = StObject.set(x, "getForCurrentThread", js.Any.fromFunction0(value))
+    inline def setGetForCurrentThread(value: () => CoreWindow): Self = StObject.set(x, "getForCurrentThread", js.Any.fromFunction0(value))
   }
 }

@@ -13,19 +13,15 @@ trait DisassociateResolverRuleResponse extends StObject {
 }
 object DisassociateResolverRuleResponse {
   
-  @scala.inline
-  def apply(): DisassociateResolverRuleResponse = {
+  inline def apply(): DisassociateResolverRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateResolverRuleResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateResolverRuleResponseMutableBuilder[Self <: DisassociateResolverRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateResolverRuleResponse](x: Self) {
     
-    @scala.inline
-    def setResolverRuleAssociation(value: ResolverRuleAssociation): Self = StObject.set(x, "ResolverRuleAssociation", value.asInstanceOf[js.Any])
+    inline def setResolverRuleAssociation(value: ResolverRuleAssociation): Self = StObject.set(x, "ResolverRuleAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRuleAssociationUndefined: Self = StObject.set(x, "ResolverRuleAssociation", js.undefined)
+    inline def setResolverRuleAssociationUndefined: Self = StObject.set(x, "ResolverRuleAssociation", js.undefined)
   }
 }

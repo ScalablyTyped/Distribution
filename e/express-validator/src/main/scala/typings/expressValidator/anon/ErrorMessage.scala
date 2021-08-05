@@ -24,38 +24,29 @@ trait ErrorMessage[K /* <: /* keyof express-validator.express-validator/src/chai
 }
 object ErrorMessage {
   
-  @scala.inline
-  def apply[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */](): ErrorMessage[K] = {
+  inline def apply[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */](): ErrorMessage[K] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorMessage[K]]
   }
   
-  @scala.inline
-  implicit class ErrorMessageMutableBuilder[Self <: ErrorMessage[?], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */] (val x: Self & ErrorMessage[K]) extends AnyVal {
+  extension [Self <: ErrorMessage[?], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */](x: Self & ErrorMessage[K]) {
     
-    @scala.inline
-    def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
+    inline def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setNegated(value: Boolean): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
+    inline def setNegated(value: Boolean): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegatedUndefined: Self = StObject.set(x, "negated", js.undefined)
+    inline def setNegatedUndefined: Self = StObject.set(x, "negated", js.undefined)
     
-    @scala.inline
-    def setOptions(
+    inline def setOptions(
       value: (Parameters[
           /* import warning: importer.ImportType#apply Failed type conversion: express-validator.express-validator/src/chain/validators.Validators<any>[K] */ js.Any
         ]) | (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<express-validator.express-validator/src/chain/validators.Validators<any>[K]>[0] */ js.Any)
     ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

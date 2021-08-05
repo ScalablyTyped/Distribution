@@ -11,17 +11,14 @@ trait Disconnectedcolor extends StObject {
 }
 object Disconnectedcolor {
   
-  @scala.inline
-  def apply(`--disconnected-color`: IThemeConfig => String): Disconnectedcolor = {
+  inline def apply(`--disconnected-color`: IThemeConfig => String): Disconnectedcolor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("--disconnected-color")(js.Any.fromFunction1(`--disconnected-color`))
     __obj.asInstanceOf[Disconnectedcolor]
   }
   
-  @scala.inline
-  implicit class DisconnectedcolorMutableBuilder[Self <: Disconnectedcolor] (val x: Self) extends AnyVal {
+  extension [Self <: Disconnectedcolor](x: Self) {
     
-    @scala.inline
-    def `set--disconnected-color`(value: IThemeConfig => String): Self = StObject.set(x, "--disconnected-color", js.Any.fromFunction1(value))
+    inline def `set--disconnected-color`(value: IThemeConfig => String): Self = StObject.set(x, "--disconnected-color", js.Any.fromFunction1(value))
   }
 }

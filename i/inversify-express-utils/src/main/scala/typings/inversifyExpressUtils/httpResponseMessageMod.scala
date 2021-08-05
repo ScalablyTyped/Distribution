@@ -13,11 +13,11 @@ object httpResponseMessageMod {
   class HttpResponseMessage () extends StObject {
     def this(statusCode: Double) = this()
     
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
-    var _headers: js.Any = js.native
+    /* private */ var _headers: js.Any = js.native
     
-    var _statusCode: js.Any = js.native
+    /* private */ var _statusCode: js.Any = js.native
     
     var content: HttpContent = js.native
     

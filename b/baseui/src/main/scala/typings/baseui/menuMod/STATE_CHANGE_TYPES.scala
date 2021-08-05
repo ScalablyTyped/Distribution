@@ -36,31 +36,22 @@ object STATE_CHANGE_TYPES {
   @js.native
   val ^ : STATE_CHANGE_TYPES = js.native
   
-  @scala.inline
-  implicit class STATE_CHANGE_TYPESMutableBuilder[Self <: STATE_CHANGE_TYPES] (val x: Self) extends AnyVal {
+  extension [Self <: STATE_CHANGE_TYPES](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: character): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: character): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: click): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: click): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnter(value: enter_): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: enter_): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: focus): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: focus): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseEnter(value: mouseEnter): Self = StObject.set(x, "mouseEnter", value.asInstanceOf[js.Any])
+    inline def setMouseEnter(value: mouseEnter): Self = StObject.set(x, "mouseEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveDown(value: moveDown): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
+    inline def setMoveDown(value: moveDown): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveUp(value: moveUp): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
+    inline def setMoveUp(value: moveUp): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: reset): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: reset): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }
 }

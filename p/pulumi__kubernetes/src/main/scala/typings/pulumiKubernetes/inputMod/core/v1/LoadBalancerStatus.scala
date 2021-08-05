@@ -17,22 +17,17 @@ trait LoadBalancerStatus extends StObject {
 }
 object LoadBalancerStatus {
   
-  @scala.inline
-  def apply(): LoadBalancerStatus = {
+  inline def apply(): LoadBalancerStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerStatus]
   }
   
-  @scala.inline
-  implicit class LoadBalancerStatusMutableBuilder[Self <: LoadBalancerStatus] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerStatus](x: Self) {
     
-    @scala.inline
-    def setIngress(value: Input[js.Array[Input[LoadBalancerIngress]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
+    inline def setIngress(value: Input[js.Array[Input[LoadBalancerIngress]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
+    inline def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
     
-    @scala.inline
-    def setIngressVarargs(value: Input[LoadBalancerIngress]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
+    inline def setIngressVarargs(value: Input[LoadBalancerIngress]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
   }
 }

@@ -27,34 +27,25 @@ trait IContentWidgetPosition extends StObject {
 }
 object IContentWidgetPosition {
   
-  @scala.inline
-  def apply(preference: js.Array[ContentWidgetPositionPreference]): IContentWidgetPosition = {
+  inline def apply(preference: js.Array[ContentWidgetPositionPreference]): IContentWidgetPosition = {
     val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any], position = null)
     __obj.asInstanceOf[IContentWidgetPosition]
   }
   
-  @scala.inline
-  implicit class IContentWidgetPositionMutableBuilder[Self <: IContentWidgetPosition] (val x: Self) extends AnyVal {
+  extension [Self <: IContentWidgetPosition](x: Self) {
     
-    @scala.inline
-    def setPosition(value: IPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: IPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
     
-    @scala.inline
-    def setPreference(value: js.Array[ContentWidgetPositionPreference]): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: js.Array[ContentWidgetPositionPreference]): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceVarargs(value: ContentWidgetPositionPreference*): Self = StObject.set(x, "preference", js.Array(value :_*))
+    inline def setPreferenceVarargs(value: ContentWidgetPositionPreference*): Self = StObject.set(x, "preference", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeNull: Self = StObject.set(x, "range", null)
+    inline def setRangeNull: Self = StObject.set(x, "range", null)
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

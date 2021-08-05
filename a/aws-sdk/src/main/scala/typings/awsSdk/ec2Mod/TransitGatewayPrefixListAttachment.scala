@@ -23,31 +23,23 @@ trait TransitGatewayPrefixListAttachment extends StObject {
 }
 object TransitGatewayPrefixListAttachment {
   
-  @scala.inline
-  def apply(): TransitGatewayPrefixListAttachment = {
+  inline def apply(): TransitGatewayPrefixListAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayPrefixListAttachment]
   }
   
-  @scala.inline
-  implicit class TransitGatewayPrefixListAttachmentMutableBuilder[Self <: TransitGatewayPrefixListAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayPrefixListAttachment](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
+    inline def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
   }
 }

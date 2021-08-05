@@ -11,8 +11,7 @@ trait Tremolo
      with Modifier
 object Tremolo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,

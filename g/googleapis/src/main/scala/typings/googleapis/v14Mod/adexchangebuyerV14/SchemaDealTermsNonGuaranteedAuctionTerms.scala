@@ -19,28 +19,21 @@ trait SchemaDealTermsNonGuaranteedAuctionTerms extends StObject {
 }
 object SchemaDealTermsNonGuaranteedAuctionTerms {
   
-  @scala.inline
-  def apply(): SchemaDealTermsNonGuaranteedAuctionTerms = {
+  inline def apply(): SchemaDealTermsNonGuaranteedAuctionTerms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDealTermsNonGuaranteedAuctionTerms]
   }
   
-  @scala.inline
-  implicit class SchemaDealTermsNonGuaranteedAuctionTermsMutableBuilder[Self <: SchemaDealTermsNonGuaranteedAuctionTerms] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDealTermsNonGuaranteedAuctionTerms](x: Self) {
     
-    @scala.inline
-    def setAutoOptimizePrivateAuction(value: Boolean): Self = StObject.set(x, "autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
+    inline def setAutoOptimizePrivateAuction(value: Boolean): Self = StObject.set(x, "autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoOptimizePrivateAuctionUndefined: Self = StObject.set(x, "autoOptimizePrivateAuction", js.undefined)
+    inline def setAutoOptimizePrivateAuctionUndefined: Self = StObject.set(x, "autoOptimizePrivateAuction", js.undefined)
     
-    @scala.inline
-    def setReservePricePerBuyers(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "reservePricePerBuyers", value.asInstanceOf[js.Any])
+    inline def setReservePricePerBuyers(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "reservePricePerBuyers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservePricePerBuyersUndefined: Self = StObject.set(x, "reservePricePerBuyers", js.undefined)
+    inline def setReservePricePerBuyersUndefined: Self = StObject.set(x, "reservePricePerBuyers", js.undefined)
     
-    @scala.inline
-    def setReservePricePerBuyersVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "reservePricePerBuyers", js.Array(value :_*))
+    inline def setReservePricePerBuyersVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "reservePricePerBuyers", js.Array(value :_*))
   }
 }

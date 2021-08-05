@@ -24,22 +24,17 @@ trait CertificateErrorEvent extends StObject {
 }
 object CertificateErrorEvent {
   
-  @scala.inline
-  def apply(errorType: String, eventId: integer, requestURL: String): CertificateErrorEvent = {
+  inline def apply(errorType: String, eventId: integer, requestURL: String): CertificateErrorEvent = {
     val __obj = js.Dynamic.literal(errorType = errorType.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any], requestURL = requestURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateErrorEvent]
   }
   
-  @scala.inline
-  implicit class CertificateErrorEventMutableBuilder[Self <: CertificateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventId(value: integer): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: integer): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
+    inline def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
   }
 }

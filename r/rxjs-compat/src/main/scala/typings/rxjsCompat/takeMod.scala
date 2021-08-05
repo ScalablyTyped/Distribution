@@ -10,6 +10,5 @@ object takeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def take[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def take[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -26,37 +26,27 @@ trait Application extends StObject {
 }
 object Application {
   
-  @scala.inline
-  def apply(): Application = {
+  inline def apply(): Application = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Application]
   }
   
-  @scala.inline
-  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+  extension [Self <: Application](x: Self) {
     
-    @scala.inline
-    def setDetailsUrl(value: String): Self = StObject.set(x, "detailsUrl", value.asInstanceOf[js.Any])
+    inline def setDetailsUrl(value: String): Self = StObject.set(x, "detailsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUrlUndefined: Self = StObject.set(x, "detailsUrl", js.undefined)
+    inline def setDetailsUrlUndefined: Self = StObject.set(x, "detailsUrl", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

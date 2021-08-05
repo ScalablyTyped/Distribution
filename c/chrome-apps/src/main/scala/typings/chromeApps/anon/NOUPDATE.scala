@@ -17,22 +17,17 @@ trait NOUPDATE extends StObject {
 }
 object NOUPDATE {
   
-  @scala.inline
-  def apply(): NOUPDATE = {
+  inline def apply(): NOUPDATE = {
     val __obj = js.Dynamic.literal(NO_UPDATE = "no_update", THROTTLED = "throttled", UPDATE_AVAILABLE = "update_available")
     __obj.asInstanceOf[NOUPDATE]
   }
   
-  @scala.inline
-  implicit class NOUPDATEMutableBuilder[Self <: NOUPDATE] (val x: Self) extends AnyVal {
+  extension [Self <: NOUPDATE](x: Self) {
     
-    @scala.inline
-    def setNO_UPDATE(value: no_update_): Self = StObject.set(x, "NO_UPDATE", value.asInstanceOf[js.Any])
+    inline def setNO_UPDATE(value: no_update_): Self = StObject.set(x, "NO_UPDATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTHROTTLED(value: throttled_): Self = StObject.set(x, "THROTTLED", value.asInstanceOf[js.Any])
+    inline def setTHROTTLED(value: throttled_): Self = StObject.set(x, "THROTTLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUPDATE_AVAILABLE(value: update_available_): Self = StObject.set(x, "UPDATE_AVAILABLE", value.asInstanceOf[js.Any])
+    inline def setUPDATE_AVAILABLE(value: update_available_): Self = StObject.set(x, "UPDATE_AVAILABLE", value.asInstanceOf[js.Any])
   }
 }

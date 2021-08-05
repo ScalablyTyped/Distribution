@@ -22,20 +22,16 @@ object imageMod extends Shortcut {
   }
   object ImageProps {
     
-    @scala.inline
-    def apply(): ImageProps = {
+    inline def apply(): ImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageProps]
     }
     
-    @scala.inline
-    implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

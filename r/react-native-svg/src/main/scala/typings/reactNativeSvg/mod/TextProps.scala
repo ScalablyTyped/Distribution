@@ -20,52 +20,37 @@ trait TextProps
 }
 object TextProps {
   
-  @scala.inline
-  def apply(): TextProps = {
+  inline def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextProps]
   }
   
-  @scala.inline
-  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextProps](x: Self) {
     
-    @scala.inline
-    def setDx(value: NumberArray): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: NumberArray): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+    inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
-    @scala.inline
-    def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value :_*))
+    inline def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value :_*))
     
-    @scala.inline
-    def setDy(value: NumberArray): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: NumberArray): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    @scala.inline
-    def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value :_*))
+    inline def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value :_*))
     
-    @scala.inline
-    def setInlineSize(value: NumberProp): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
+    inline def setInlineSize(value: NumberProp): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
+    inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setRotate(value: NumberArray): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: NumberArray): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setRotateVarargs(value: NumberProp*): Self = StObject.set(x, "rotate", js.Array(value :_*))
+    inline def setRotateVarargs(value: NumberProp*): Self = StObject.set(x, "rotate", js.Array(value :_*))
   }
 }

@@ -20,8 +20,7 @@ trait SheetsOnFormSubmit
 }
 object SheetsOnFormSubmit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authMode: AuthMode,
     namedValues: StringDictionary[js.Array[String]],
     range: Range,
@@ -33,19 +32,14 @@ object SheetsOnFormSubmit {
     __obj.asInstanceOf[SheetsOnFormSubmit]
   }
   
-  @scala.inline
-  implicit class SheetsOnFormSubmitMutableBuilder[Self <: SheetsOnFormSubmit] (val x: Self) extends AnyVal {
+  extension [Self <: SheetsOnFormSubmit](x: Self) {
     
-    @scala.inline
-    def setNamedValues(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "namedValues", value.asInstanceOf[js.Any])
+    inline def setNamedValues(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "namedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

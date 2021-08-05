@@ -16,8 +16,7 @@ object createNavigatorFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[js.Any] */](Navigator: NavigatorComponent): js.Function0[
+  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[js.Any] */](Navigator: NavigatorComponent): js.Function0[
     TypedNavigator[
       Record[String, js.UndefOr[js.Object]], 
       State, 

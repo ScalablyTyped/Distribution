@@ -16,34 +16,25 @@ trait Proxy extends StObject {
 }
 object Proxy {
   
-  @scala.inline
-  def apply(url: String): Proxy = {
+  inline def apply(url: String): Proxy = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proxy]
   }
   
-  @scala.inline
-  implicit class ProxyMutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
+  extension [Self <: Proxy](x: Self) {
     
-    @scala.inline
-    def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
+    inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
-    @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    @scala.inline
-    def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

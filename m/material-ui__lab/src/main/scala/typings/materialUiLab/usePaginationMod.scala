@@ -22,8 +22,7 @@ object usePaginationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: UsePaginationProps): UsePaginationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[UsePaginationResult]
+  inline def default(props: UsePaginationProps): UsePaginationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[UsePaginationResult]
   
   trait UsePaginationItem extends StObject {
     
@@ -39,8 +38,7 @@ object usePaginationMod {
   }
   object UsePaginationItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       onClick: SyntheticEvent[Element, Event] => Unit,
       page: Double,
@@ -52,23 +50,17 @@ object usePaginationMod {
       __obj.asInstanceOf[UsePaginationItem]
     }
     
-    @scala.inline
-    implicit class UsePaginationItemMutableBuilder[Self <: UsePaginationItem] (val x: Self) extends AnyVal {
+    extension [Self <: UsePaginationItem](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,86 +140,60 @@ object usePaginationMod {
   }
   object UsePaginationProps {
     
-    @scala.inline
-    def apply(): UsePaginationProps = {
+    inline def apply(): UsePaginationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsePaginationProps]
     }
     
-    @scala.inline
-    implicit class UsePaginationPropsMutableBuilder[Self <: UsePaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: UsePaginationProps](x: Self) {
       
-      @scala.inline
-      def setBoundaryCount(value: Double): Self = StObject.set(x, "boundaryCount", value.asInstanceOf[js.Any])
+      inline def setBoundaryCount(value: Double): Self = StObject.set(x, "boundaryCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryCountUndefined: Self = StObject.set(x, "boundaryCount", js.undefined)
+      inline def setBoundaryCountUndefined: Self = StObject.set(x, "boundaryCount", js.undefined)
       
-      @scala.inline
-      def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
+      inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentNameUndefined: Self = StObject.set(x, "componentName", js.undefined)
+      inline def setComponentNameUndefined: Self = StObject.set(x, "componentName", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setDefaultPage(value: Double): Self = StObject.set(x, "defaultPage", value.asInstanceOf[js.Any])
+      inline def setDefaultPage(value: Double): Self = StObject.set(x, "defaultPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPageUndefined: Self = StObject.set(x, "defaultPage", js.undefined)
+      inline def setDefaultPageUndefined: Self = StObject.set(x, "defaultPage", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHideNextButton(value: Boolean): Self = StObject.set(x, "hideNextButton", value.asInstanceOf[js.Any])
+      inline def setHideNextButton(value: Boolean): Self = StObject.set(x, "hideNextButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideNextButtonUndefined: Self = StObject.set(x, "hideNextButton", js.undefined)
+      inline def setHideNextButtonUndefined: Self = StObject.set(x, "hideNextButton", js.undefined)
       
-      @scala.inline
-      def setHidePrevButton(value: Boolean): Self = StObject.set(x, "hidePrevButton", value.asInstanceOf[js.Any])
+      inline def setHidePrevButton(value: Boolean): Self = StObject.set(x, "hidePrevButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePrevButtonUndefined: Self = StObject.set(x, "hidePrevButton", js.undefined)
+      inline def setHidePrevButtonUndefined: Self = StObject.set(x, "hidePrevButton", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* event */ ChangeEvent[js.Any], /* page */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ ChangeEvent[js.Any], /* page */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setShowFirstButton(value: Boolean): Self = StObject.set(x, "showFirstButton", value.asInstanceOf[js.Any])
+      inline def setShowFirstButton(value: Boolean): Self = StObject.set(x, "showFirstButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFirstButtonUndefined: Self = StObject.set(x, "showFirstButton", js.undefined)
+      inline def setShowFirstButtonUndefined: Self = StObject.set(x, "showFirstButton", js.undefined)
       
-      @scala.inline
-      def setShowLastButton(value: Boolean): Self = StObject.set(x, "showLastButton", value.asInstanceOf[js.Any])
+      inline def setShowLastButton(value: Boolean): Self = StObject.set(x, "showLastButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLastButtonUndefined: Self = StObject.set(x, "showLastButton", js.undefined)
+      inline def setShowLastButtonUndefined: Self = StObject.set(x, "showLastButton", js.undefined)
       
-      @scala.inline
-      def setSiblingCount(value: Double): Self = StObject.set(x, "siblingCount", value.asInstanceOf[js.Any])
+      inline def setSiblingCount(value: Double): Self = StObject.set(x, "siblingCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiblingCountUndefined: Self = StObject.set(x, "siblingCount", js.undefined)
+      inline def setSiblingCountUndefined: Self = StObject.set(x, "siblingCount", js.undefined)
     }
   }
   
@@ -237,20 +203,16 @@ object usePaginationMod {
   }
   object UsePaginationResult {
     
-    @scala.inline
-    def apply(items: js.Array[UsePaginationItem]): UsePaginationResult = {
+    inline def apply(items: js.Array[UsePaginationItem]): UsePaginationResult = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[UsePaginationResult]
     }
     
-    @scala.inline
-    implicit class UsePaginationResultMutableBuilder[Self <: UsePaginationResult] (val x: Self) extends AnyVal {
+    extension [Self <: UsePaginationResult](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[UsePaginationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[UsePaginationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: UsePaginationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: UsePaginationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
 }

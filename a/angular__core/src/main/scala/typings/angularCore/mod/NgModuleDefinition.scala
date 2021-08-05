@@ -21,8 +21,7 @@ trait NgModuleDefinition
 }
 object NgModuleDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     modules: js.Array[js.Any],
     providers: js.Array[NgModuleProviderDef],
     providersByKey: StringDictionary[NgModuleProviderDef]
@@ -31,28 +30,20 @@ object NgModuleDefinition {
     __obj.asInstanceOf[NgModuleDefinition]
   }
   
-  @scala.inline
-  implicit class NgModuleDefinitionMutableBuilder[Self <: NgModuleDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: NgModuleDefinition](x: Self) {
     
-    @scala.inline
-    def setModules(value: js.Array[js.Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: js.Array[js.Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulesVarargs(value: js.Any*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: js.Any*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
-    @scala.inline
-    def setProviders(value: js.Array[NgModuleProviderDef]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[NgModuleProviderDef]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersByKey(value: StringDictionary[NgModuleProviderDef]): Self = StObject.set(x, "providersByKey", value.asInstanceOf[js.Any])
+    inline def setProvidersByKey(value: StringDictionary[NgModuleProviderDef]): Self = StObject.set(x, "providersByKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersVarargs(value: NgModuleProviderDef*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: NgModuleProviderDef*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: root | platform): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: root | platform): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeNull: Self = StObject.set(x, "scope", null)
+    inline def setScopeNull: Self = StObject.set(x, "scope", null)
   }
 }

@@ -20,28 +20,21 @@ trait SchemaOrganizationSecurityPoliciesListAssociationsResponse extends StObjec
 }
 object SchemaOrganizationSecurityPoliciesListAssociationsResponse {
   
-  @scala.inline
-  def apply(): SchemaOrganizationSecurityPoliciesListAssociationsResponse = {
+  inline def apply(): SchemaOrganizationSecurityPoliciesListAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrganizationSecurityPoliciesListAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaOrganizationSecurityPoliciesListAssociationsResponseMutableBuilder[Self <: SchemaOrganizationSecurityPoliciesListAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrganizationSecurityPoliciesListAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setAssociations(value: js.Array[SchemaSecurityPolicyAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
+    inline def setAssociations(value: js.Array[SchemaSecurityPolicyAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
+    inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
     
-    @scala.inline
-    def setAssociationsVarargs(value: SchemaSecurityPolicyAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: SchemaSecurityPolicyAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

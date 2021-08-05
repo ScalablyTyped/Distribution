@@ -17,10 +17,8 @@ object emptyObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+    inline def create[T](
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }

@@ -25,30 +25,23 @@ object gamelift {
   }
   object AliasRoutingStrategy {
     
-    @scala.inline
-    def apply(`type`: String): AliasRoutingStrategy = {
+    inline def apply(`type`: String): AliasRoutingStrategy = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AliasRoutingStrategy]
     }
     
-    @scala.inline
-    implicit class AliasRoutingStrategyMutableBuilder[Self <: AliasRoutingStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: AliasRoutingStrategy](x: Self) {
       
-      @scala.inline
-      def setFleetId(value: String): Self = StObject.set(x, "fleetId", value.asInstanceOf[js.Any])
+      inline def setFleetId(value: String): Self = StObject.set(x, "fleetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFleetIdUndefined: Self = StObject.set(x, "fleetId", js.undefined)
+      inline def setFleetIdUndefined: Self = StObject.set(x, "fleetId", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,23 +64,18 @@ object gamelift {
   }
   object BuildStorageLocation {
     
-    @scala.inline
-    def apply(bucket: String, key: String, roleArn: String): BuildStorageLocation = {
+    inline def apply(bucket: String, key: String, roleArn: String): BuildStorageLocation = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildStorageLocation]
     }
     
-    @scala.inline
-    implicit class BuildStorageLocationMutableBuilder[Self <: BuildStorageLocation] (val x: Self) extends AnyVal {
+    extension [Self <: BuildStorageLocation](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,26 +103,20 @@ object gamelift {
   }
   object FleetEc2InboundPermission {
     
-    @scala.inline
-    def apply(fromPort: Double, ipRange: String, protocol: String, toPort: Double): FleetEc2InboundPermission = {
+    inline def apply(fromPort: Double, ipRange: String, protocol: String, toPort: Double): FleetEc2InboundPermission = {
       val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any], ipRange = ipRange.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
       __obj.asInstanceOf[FleetEc2InboundPermission]
     }
     
-    @scala.inline
-    implicit class FleetEc2InboundPermissionMutableBuilder[Self <: FleetEc2InboundPermission] (val x: Self) extends AnyVal {
+    extension [Self <: FleetEc2InboundPermission](x: Self) {
       
-      @scala.inline
-      def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
+      inline def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpRange(value: String): Self = StObject.set(x, "ipRange", value.asInstanceOf[js.Any])
+      inline def setIpRange(value: String): Self = StObject.set(x, "ipRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
+      inline def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,26 +134,20 @@ object gamelift {
   }
   object FleetResourceCreationLimitPolicy {
     
-    @scala.inline
-    def apply(): FleetResourceCreationLimitPolicy = {
+    inline def apply(): FleetResourceCreationLimitPolicy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FleetResourceCreationLimitPolicy]
     }
     
-    @scala.inline
-    implicit class FleetResourceCreationLimitPolicyMutableBuilder[Self <: FleetResourceCreationLimitPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: FleetResourceCreationLimitPolicy](x: Self) {
       
-      @scala.inline
-      def setNewGameSessionsPerCreator(value: Double): Self = StObject.set(x, "newGameSessionsPerCreator", value.asInstanceOf[js.Any])
+      inline def setNewGameSessionsPerCreator(value: Double): Self = StObject.set(x, "newGameSessionsPerCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewGameSessionsPerCreatorUndefined: Self = StObject.set(x, "newGameSessionsPerCreator", js.undefined)
+      inline def setNewGameSessionsPerCreatorUndefined: Self = StObject.set(x, "newGameSessionsPerCreator", js.undefined)
       
-      @scala.inline
-      def setPolicyPeriodInMinutes(value: Double): Self = StObject.set(x, "policyPeriodInMinutes", value.asInstanceOf[js.Any])
+      inline def setPolicyPeriodInMinutes(value: Double): Self = StObject.set(x, "policyPeriodInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyPeriodInMinutesUndefined: Self = StObject.set(x, "policyPeriodInMinutes", js.undefined)
+      inline def setPolicyPeriodInMinutesUndefined: Self = StObject.set(x, "policyPeriodInMinutes", js.undefined)
     }
   }
   
@@ -194,35 +170,26 @@ object gamelift {
   }
   object FleetRuntimeConfiguration {
     
-    @scala.inline
-    def apply(): FleetRuntimeConfiguration = {
+    inline def apply(): FleetRuntimeConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FleetRuntimeConfiguration]
     }
     
-    @scala.inline
-    implicit class FleetRuntimeConfigurationMutableBuilder[Self <: FleetRuntimeConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: FleetRuntimeConfiguration](x: Self) {
       
-      @scala.inline
-      def setGameSessionActivationTimeoutSeconds(value: Double): Self = StObject.set(x, "gameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setGameSessionActivationTimeoutSeconds(value: Double): Self = StObject.set(x, "gameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameSessionActivationTimeoutSecondsUndefined: Self = StObject.set(x, "gameSessionActivationTimeoutSeconds", js.undefined)
+      inline def setGameSessionActivationTimeoutSecondsUndefined: Self = StObject.set(x, "gameSessionActivationTimeoutSeconds", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrentGameSessionActivations(value: Double): Self = StObject.set(x, "maxConcurrentGameSessionActivations", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentGameSessionActivations(value: Double): Self = StObject.set(x, "maxConcurrentGameSessionActivations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentGameSessionActivationsUndefined: Self = StObject.set(x, "maxConcurrentGameSessionActivations", js.undefined)
+      inline def setMaxConcurrentGameSessionActivationsUndefined: Self = StObject.set(x, "maxConcurrentGameSessionActivations", js.undefined)
       
-      @scala.inline
-      def setServerProcesses(value: js.Array[FleetRuntimeConfigurationServerProcess]): Self = StObject.set(x, "serverProcesses", value.asInstanceOf[js.Any])
+      inline def setServerProcesses(value: js.Array[FleetRuntimeConfigurationServerProcess]): Self = StObject.set(x, "serverProcesses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerProcessesUndefined: Self = StObject.set(x, "serverProcesses", js.undefined)
+      inline def setServerProcessesUndefined: Self = StObject.set(x, "serverProcesses", js.undefined)
       
-      @scala.inline
-      def setServerProcessesVarargs(value: FleetRuntimeConfigurationServerProcess*): Self = StObject.set(x, "serverProcesses", js.Array(value :_*))
+      inline def setServerProcessesVarargs(value: FleetRuntimeConfigurationServerProcess*): Self = StObject.set(x, "serverProcesses", js.Array(value :_*))
     }
   }
   
@@ -245,26 +212,20 @@ object gamelift {
   }
   object FleetRuntimeConfigurationServerProcess {
     
-    @scala.inline
-    def apply(concurrentExecutions: Double, launchPath: String): FleetRuntimeConfigurationServerProcess = {
+    inline def apply(concurrentExecutions: Double, launchPath: String): FleetRuntimeConfigurationServerProcess = {
       val __obj = js.Dynamic.literal(concurrentExecutions = concurrentExecutions.asInstanceOf[js.Any], launchPath = launchPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FleetRuntimeConfigurationServerProcess]
     }
     
-    @scala.inline
-    implicit class FleetRuntimeConfigurationServerProcessMutableBuilder[Self <: FleetRuntimeConfigurationServerProcess] (val x: Self) extends AnyVal {
+    extension [Self <: FleetRuntimeConfigurationServerProcess](x: Self) {
       
-      @scala.inline
-      def setConcurrentExecutions(value: Double): Self = StObject.set(x, "concurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setConcurrentExecutions(value: Double): Self = StObject.set(x, "concurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchPath(value: String): Self = StObject.set(x, "launchPath", value.asInstanceOf[js.Any])
+      inline def setLaunchPath(value: String): Self = StObject.set(x, "launchPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: String): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: String): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     }
   }
   
@@ -282,23 +243,18 @@ object gamelift {
   }
   object GameSessionQueuePlayerLatencyPolicy {
     
-    @scala.inline
-    def apply(maximumIndividualPlayerLatencyMilliseconds: Double): GameSessionQueuePlayerLatencyPolicy = {
+    inline def apply(maximumIndividualPlayerLatencyMilliseconds: Double): GameSessionQueuePlayerLatencyPolicy = {
       val __obj = js.Dynamic.literal(maximumIndividualPlayerLatencyMilliseconds = maximumIndividualPlayerLatencyMilliseconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[GameSessionQueuePlayerLatencyPolicy]
     }
     
-    @scala.inline
-    implicit class GameSessionQueuePlayerLatencyPolicyMutableBuilder[Self <: GameSessionQueuePlayerLatencyPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: GameSessionQueuePlayerLatencyPolicy](x: Self) {
       
-      @scala.inline
-      def setMaximumIndividualPlayerLatencyMilliseconds(value: Double): Self = StObject.set(x, "maximumIndividualPlayerLatencyMilliseconds", value.asInstanceOf[js.Any])
+      inline def setMaximumIndividualPlayerLatencyMilliseconds(value: Double): Self = StObject.set(x, "maximumIndividualPlayerLatencyMilliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyDurationSeconds(value: Double): Self = StObject.set(x, "policyDurationSeconds", value.asInstanceOf[js.Any])
+      inline def setPolicyDurationSeconds(value: Double): Self = StObject.set(x, "policyDurationSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyDurationSecondsUndefined: Self = StObject.set(x, "policyDurationSeconds", js.undefined)
+      inline def setPolicyDurationSecondsUndefined: Self = StObject.set(x, "policyDurationSeconds", js.undefined)
     }
   }
 }

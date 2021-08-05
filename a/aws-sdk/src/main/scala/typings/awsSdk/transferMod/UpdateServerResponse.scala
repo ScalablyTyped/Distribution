@@ -13,16 +13,13 @@ trait UpdateServerResponse extends StObject {
 }
 object UpdateServerResponse {
   
-  @scala.inline
-  def apply(ServerId: ServerId): UpdateServerResponse = {
+  inline def apply(ServerId: ServerId): UpdateServerResponse = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServerResponse]
   }
   
-  @scala.inline
-  implicit class UpdateServerResponseMutableBuilder[Self <: UpdateServerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateServerResponse](x: Self) {
     
-    @scala.inline
-    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
   }
 }

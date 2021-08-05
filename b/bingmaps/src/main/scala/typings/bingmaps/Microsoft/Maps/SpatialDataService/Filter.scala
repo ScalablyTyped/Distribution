@@ -9,8 +9,7 @@ trait Filter
      with IFilter
 object Filter {
   
-  @scala.inline
-  def apply(execute: js.Any => Boolean): Filter = {
+  inline def apply(execute: js.Any => Boolean): Filter = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[Filter]
   }

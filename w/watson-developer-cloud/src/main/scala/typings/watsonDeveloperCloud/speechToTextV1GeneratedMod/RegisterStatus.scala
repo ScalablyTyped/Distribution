@@ -15,19 +15,15 @@ trait RegisterStatus extends StObject {
 }
 object RegisterStatus {
   
-  @scala.inline
-  def apply(status: String, url: String): RegisterStatus = {
+  inline def apply(status: String, url: String): RegisterStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterStatus]
   }
   
-  @scala.inline
-  implicit class RegisterStatusMutableBuilder[Self <: RegisterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

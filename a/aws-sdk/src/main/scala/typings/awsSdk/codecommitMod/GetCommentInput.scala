@@ -13,16 +13,13 @@ trait GetCommentInput extends StObject {
 }
 object GetCommentInput {
   
-  @scala.inline
-  def apply(commentId: CommentId): GetCommentInput = {
+  inline def apply(commentId: CommentId): GetCommentInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommentInput]
   }
   
-  @scala.inline
-  implicit class GetCommentInputMutableBuilder[Self <: GetCommentInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommentInput](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
   }
 }

@@ -39,8 +39,7 @@ trait XPane
 }
 object XPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Canvas: XCanvas,
     ResourceId: XResourceId,
     Window: XWindow,
@@ -53,19 +52,14 @@ object XPane {
     __obj.asInstanceOf[XPane]
   }
   
-  @scala.inline
-  implicit class XPaneMutableBuilder[Self <: XPane] (val x: Self) extends AnyVal {
+  extension [Self <: XPane](x: Self) {
     
-    @scala.inline
-    def setCanvas(value: XCanvas): Self = StObject.set(x, "Canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: XCanvas): Self = StObject.set(x, "Canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCanvas(value: () => XCanvas): Self = StObject.set(x, "getCanvas", js.Any.fromFunction0(value))
+    inline def setGetCanvas(value: () => XCanvas): Self = StObject.set(x, "getCanvas", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWindow(value: () => XWindow): Self = StObject.set(x, "getWindow", js.Any.fromFunction0(value))
+    inline def setGetWindow(value: () => XWindow): Self = StObject.set(x, "getWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait MergeConflict extends StObject {
 }
 object MergeConflict {
   
-  @scala.inline
-  def apply(): MergeConflict = {
+  inline def apply(): MergeConflict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeConflict]
   }
   
-  @scala.inline
-  implicit class MergeConflictMutableBuilder[Self <: MergeConflict] (val x: Self) extends AnyVal {
+  extension [Self <: MergeConflict](x: Self) {
     
-    @scala.inline
-    def setEntityInBaseVersion(value: Entity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
+    inline def setEntityInBaseVersion(value: Entity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityInBaseVersionUndefined: Self = StObject.set(x, "entityInBaseVersion", js.undefined)
+    inline def setEntityInBaseVersionUndefined: Self = StObject.set(x, "entityInBaseVersion", js.undefined)
     
-    @scala.inline
-    def setEntityInWorkspace(value: Entity): Self = StObject.set(x, "entityInWorkspace", value.asInstanceOf[js.Any])
+    inline def setEntityInWorkspace(value: Entity): Self = StObject.set(x, "entityInWorkspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityInWorkspaceUndefined: Self = StObject.set(x, "entityInWorkspace", js.undefined)
+    inline def setEntityInWorkspaceUndefined: Self = StObject.set(x, "entityInWorkspace", js.undefined)
   }
 }

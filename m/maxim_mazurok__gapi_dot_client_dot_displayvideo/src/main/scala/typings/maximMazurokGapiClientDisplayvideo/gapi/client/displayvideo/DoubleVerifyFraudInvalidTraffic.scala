@@ -14,25 +14,19 @@ trait DoubleVerifyFraudInvalidTraffic extends StObject {
 }
 object DoubleVerifyFraudInvalidTraffic {
   
-  @scala.inline
-  def apply(): DoubleVerifyFraudInvalidTraffic = {
+  inline def apply(): DoubleVerifyFraudInvalidTraffic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleVerifyFraudInvalidTraffic]
   }
   
-  @scala.inline
-  implicit class DoubleVerifyFraudInvalidTrafficMutableBuilder[Self <: DoubleVerifyFraudInvalidTraffic] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleVerifyFraudInvalidTraffic](x: Self) {
     
-    @scala.inline
-    def setAvoidInsufficientOption(value: Boolean): Self = StObject.set(x, "avoidInsufficientOption", value.asInstanceOf[js.Any])
+    inline def setAvoidInsufficientOption(value: Boolean): Self = StObject.set(x, "avoidInsufficientOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidInsufficientOptionUndefined: Self = StObject.set(x, "avoidInsufficientOption", js.undefined)
+    inline def setAvoidInsufficientOptionUndefined: Self = StObject.set(x, "avoidInsufficientOption", js.undefined)
     
-    @scala.inline
-    def setAvoidedFraudOption(value: String): Self = StObject.set(x, "avoidedFraudOption", value.asInstanceOf[js.Any])
+    inline def setAvoidedFraudOption(value: String): Self = StObject.set(x, "avoidedFraudOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidedFraudOptionUndefined: Self = StObject.set(x, "avoidedFraudOption", js.undefined)
+    inline def setAvoidedFraudOptionUndefined: Self = StObject.set(x, "avoidedFraudOption", js.undefined)
   }
 }

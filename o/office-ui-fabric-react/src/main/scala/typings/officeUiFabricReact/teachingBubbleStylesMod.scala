@@ -12,6 +12,5 @@ object teachingBubbleStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ITeachingBubbleStyleProps): ITeachingBubbleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITeachingBubbleStyles]
+  inline def getStyles(props: ITeachingBubbleStyleProps): ITeachingBubbleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITeachingBubbleStyles]
 }

@@ -8,16 +8,13 @@ object pdfjsDistStrings {
   
   @js.native
   sealed trait decode extends StObject
-  @scala.inline
-  def decode: decode = "decode".asInstanceOf[decode]
+  inline def decode: decode = "decode".asInstanceOf[decode]
   
   @js.native
   sealed trait display extends StObject
-  @scala.inline
-  def display: display = "display".asInstanceOf[display]
+  inline def display: display = "display".asInstanceOf[display]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

@@ -20,8 +20,7 @@ trait Cols extends StObject {
 }
 object Cols {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cascade: Boolean,
     cols: Double,
     onChange: () => Unit,
@@ -33,28 +32,20 @@ object Cols {
     __obj.asInstanceOf[Cols]
   }
   
-  @scala.inline
-  implicit class ColsMutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
+  extension [Self <: Cols](x: Self) {
     
-    @scala.inline
-    def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+    inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
+    inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[scala.Nothing]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[scala.Nothing]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: scala.Nothing*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: scala.Nothing*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

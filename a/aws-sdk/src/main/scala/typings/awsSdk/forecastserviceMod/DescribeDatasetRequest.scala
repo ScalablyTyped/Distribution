@@ -13,16 +13,13 @@ trait DescribeDatasetRequest extends StObject {
 }
 object DescribeDatasetRequest {
   
-  @scala.inline
-  def apply(DatasetArn: Arn): DescribeDatasetRequest = {
+  inline def apply(DatasetArn: Arn): DescribeDatasetRequest = {
     val __obj = js.Dynamic.literal(DatasetArn = DatasetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDatasetRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDatasetRequestMutableBuilder[Self <: DescribeDatasetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDatasetRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
+    inline def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
   }
 }

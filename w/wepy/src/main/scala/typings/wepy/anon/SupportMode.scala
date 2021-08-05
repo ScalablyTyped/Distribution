@@ -10,19 +10,15 @@ trait SupportMode extends StObject {
 }
 object SupportMode {
   
-  @scala.inline
-  def apply(supportMode: js.Array[String]): SupportMode = {
+  inline def apply(supportMode: js.Array[String]): SupportMode = {
     val __obj = js.Dynamic.literal(supportMode = supportMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportMode]
   }
   
-  @scala.inline
-  implicit class SupportModeMutableBuilder[Self <: SupportMode] (val x: Self) extends AnyVal {
+  extension [Self <: SupportMode](x: Self) {
     
-    @scala.inline
-    def setSupportMode(value: js.Array[String]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    inline def setSupportMode(value: js.Array[String]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportModeVarargs(value: String*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
+    inline def setSupportModeVarargs(value: String*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
   }
 }

@@ -40,8 +40,7 @@ trait PolyPolygonShape
      with RotationDescriptor
 object PolyPolygonShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FillBackground: Boolean,
     FillBitmap: XBitmap,
     FillBitmapLogicalSize: Boolean,

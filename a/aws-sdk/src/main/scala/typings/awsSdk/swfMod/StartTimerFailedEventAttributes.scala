@@ -23,22 +23,17 @@ trait StartTimerFailedEventAttributes extends StObject {
 }
 object StartTimerFailedEventAttributes {
   
-  @scala.inline
-  def apply(cause: StartTimerFailedCause, decisionTaskCompletedEventId: EventId, timerId: TimerId): StartTimerFailedEventAttributes = {
+  inline def apply(cause: StartTimerFailedCause, decisionTaskCompletedEventId: EventId, timerId: TimerId): StartTimerFailedEventAttributes = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], timerId = timerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTimerFailedEventAttributes]
   }
   
-  @scala.inline
-  implicit class StartTimerFailedEventAttributesMutableBuilder[Self <: StartTimerFailedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: StartTimerFailedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setCause(value: StartTimerFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: StartTimerFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
+    inline def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
   }
 }

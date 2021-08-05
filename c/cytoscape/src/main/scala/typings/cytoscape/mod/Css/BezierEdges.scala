@@ -50,8 +50,7 @@ trait BezierEdges extends StObject {
 }
 object BezierEdges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `control-point-distance`: PropertyValueEdge[Double],
     `control-point-step-size`: PropertyValueEdge[Double],
     `control-point-weight`: PropertyValueEdge[Double],
@@ -65,31 +64,22 @@ object BezierEdges {
     __obj.asInstanceOf[BezierEdges]
   }
   
-  @scala.inline
-  implicit class BezierEdgesMutableBuilder[Self <: BezierEdges] (val x: Self) extends AnyVal {
+  extension [Self <: BezierEdges](x: Self) {
     
-    @scala.inline
-    def `setControl-point-distance`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-distance", value.asInstanceOf[js.Any])
+    inline def `setControl-point-distance`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setControl-point-distanceFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-distance", js.Any.fromFunction1(value))
+    inline def `setControl-point-distanceFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-distance", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setControl-point-step-size`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-step-size", value.asInstanceOf[js.Any])
+    inline def `setControl-point-step-size`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-step-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setControl-point-step-sizeFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-step-size", js.Any.fromFunction1(value))
+    inline def `setControl-point-step-sizeFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-step-size", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setControl-point-weight`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-weight", value.asInstanceOf[js.Any])
+    inline def `setControl-point-weight`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setControl-point-weightFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-weight", js.Any.fromFunction1(value))
+    inline def `setControl-point-weightFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-weight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
+    inline def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
+    inline def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
   }
 }

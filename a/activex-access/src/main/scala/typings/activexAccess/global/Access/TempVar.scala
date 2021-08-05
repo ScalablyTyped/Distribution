@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.TempVar")
 @js.native
-class TempVar protected ()
+/* private */ class TempVar ()
   extends StObject
      with typings.activexAccess.Access.TempVar {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.TempVar_typekey")
   var AccessDotTempVar_typekey: typings.activexAccess.Access.TempVar = js.native
   

@@ -21,13 +21,11 @@ object ContentType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ContentType.Json")
   @js.native
   def Json: ContentType = js.native
-  @scala.inline
-  def Json_=(x: ContentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Json")(x.asInstanceOf[js.Any])
+  inline def Json_=(x: ContentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Json")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ContentType.Xml")
   @js.native
   def Xml: ContentType = js.native
-  @scala.inline
-  def Xml_=(x: ContentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Xml")(x.asInstanceOf[js.Any])
+  inline def Xml_=(x: ContentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Xml")(x.asInstanceOf[js.Any])
 }

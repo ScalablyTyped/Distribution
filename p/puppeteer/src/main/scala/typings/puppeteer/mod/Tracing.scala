@@ -13,19 +13,15 @@ trait Tracing extends StObject {
 }
 object Tracing {
   
-  @scala.inline
-  def apply(start: TracingStartOptions => js.Promise[Unit], stop: () => js.Promise[Buffer]): Tracing = {
+  inline def apply(start: TracingStartOptions => js.Promise[Unit], stop: () => js.Promise[Buffer]): Tracing = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[Tracing]
   }
   
-  @scala.inline
-  implicit class TracingMutableBuilder[Self <: Tracing] (val x: Self) extends AnyVal {
+  extension [Self <: Tracing](x: Self) {
     
-    @scala.inline
-    def setStart(value: TracingStartOptions => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: TracingStartOptions => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: () => js.Promise[Buffer]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => js.Promise[Buffer]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

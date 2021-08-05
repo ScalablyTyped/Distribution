@@ -18,25 +18,19 @@ trait FilterDropDownClosingEventUIParam extends StObject {
 }
 object FilterDropDownClosingEventUIParam {
   
-  @scala.inline
-  def apply(): FilterDropDownClosingEventUIParam = {
+  inline def apply(): FilterDropDownClosingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterDropDownClosingEventUIParam]
   }
   
-  @scala.inline
-  implicit class FilterDropDownClosingEventUIParamMutableBuilder[Self <: FilterDropDownClosingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FilterDropDownClosingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDropDownElement(value: String): Self = StObject.set(x, "dropDownElement", value.asInstanceOf[js.Any])
+    inline def setDropDownElement(value: String): Self = StObject.set(x, "dropDownElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownElementUndefined: Self = StObject.set(x, "dropDownElement", js.undefined)
+    inline def setDropDownElementUndefined: Self = StObject.set(x, "dropDownElement", js.undefined)
     
-    @scala.inline
-    def setHierarchy(value: js.Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+    inline def setHierarchy(value: js.Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
+    inline def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
   }
 }

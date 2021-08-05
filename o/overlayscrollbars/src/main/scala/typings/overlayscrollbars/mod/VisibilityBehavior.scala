@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisibilityBehavior extends StObject
 object VisibilityBehavior {
   
-  @scala.inline
-  def a: typings.overlayscrollbars.overlayscrollbarsStrings.a = "a".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.a]
+  inline def a: typings.overlayscrollbars.overlayscrollbarsStrings.a = "a".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.a]
   
-  @scala.inline
-  def auto: typings.overlayscrollbars.overlayscrollbarsStrings.auto = "auto".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.auto]
+  inline def auto: typings.overlayscrollbars.overlayscrollbarsStrings.auto = "auto".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.auto]
   
-  @scala.inline
-  def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = "h".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.h]
+  inline def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = "h".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.h]
   
-  @scala.inline
-  def hidden: typings.overlayscrollbars.overlayscrollbarsStrings.hidden = "hidden".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.hidden]
+  inline def hidden: typings.overlayscrollbars.overlayscrollbarsStrings.hidden = "hidden".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.hidden]
   
-  @scala.inline
-  def v: typings.overlayscrollbars.overlayscrollbarsStrings.v = "v".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.v]
+  inline def v: typings.overlayscrollbars.overlayscrollbarsStrings.v = "v".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.v]
   
-  @scala.inline
-  def visible: typings.overlayscrollbars.overlayscrollbarsStrings.visible = "visible".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.visible]
+  inline def visible: typings.overlayscrollbars.overlayscrollbarsStrings.visible = "visible".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.visible]
 }

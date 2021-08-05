@@ -22,28 +22,21 @@ trait JsonRule
 }
 object JsonRule {
   
-  @scala.inline
-  def apply(): JsonRule = {
+  inline def apply(): JsonRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonRule]
   }
   
-  @scala.inline
-  implicit class JsonRuleMutableBuilder[Self <: JsonRule] (val x: Self) extends AnyVal {
+  extension [Self <: JsonRule](x: Self) {
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    @scala.inline
-    def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

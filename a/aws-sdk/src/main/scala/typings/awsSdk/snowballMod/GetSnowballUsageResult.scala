@@ -18,25 +18,19 @@ trait GetSnowballUsageResult extends StObject {
 }
 object GetSnowballUsageResult {
   
-  @scala.inline
-  def apply(): GetSnowballUsageResult = {
+  inline def apply(): GetSnowballUsageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSnowballUsageResult]
   }
   
-  @scala.inline
-  implicit class GetSnowballUsageResultMutableBuilder[Self <: GetSnowballUsageResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSnowballUsageResult](x: Self) {
     
-    @scala.inline
-    def setSnowballLimit(value: Integer): Self = StObject.set(x, "SnowballLimit", value.asInstanceOf[js.Any])
+    inline def setSnowballLimit(value: Integer): Self = StObject.set(x, "SnowballLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowballLimitUndefined: Self = StObject.set(x, "SnowballLimit", js.undefined)
+    inline def setSnowballLimitUndefined: Self = StObject.set(x, "SnowballLimit", js.undefined)
     
-    @scala.inline
-    def setSnowballsInUse(value: Integer): Self = StObject.set(x, "SnowballsInUse", value.asInstanceOf[js.Any])
+    inline def setSnowballsInUse(value: Integer): Self = StObject.set(x, "SnowballsInUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowballsInUseUndefined: Self = StObject.set(x, "SnowballsInUse", js.undefined)
+    inline def setSnowballsInUseUndefined: Self = StObject.set(x, "SnowballsInUse", js.undefined)
   }
 }

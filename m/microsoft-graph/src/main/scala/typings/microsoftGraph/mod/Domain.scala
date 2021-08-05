@@ -91,148 +91,101 @@ trait Domain
 }
 object Domain {
   
-  @scala.inline
-  def apply(): Domain = {
+  inline def apply(): Domain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Domain]
   }
   
-  @scala.inline
-  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+  extension [Self <: Domain](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
-    @scala.inline
-    def setAvailabilityStatus(value: NullableOption[String]): Self = StObject.set(x, "availabilityStatus", value.asInstanceOf[js.Any])
+    inline def setAvailabilityStatus(value: NullableOption[String]): Self = StObject.set(x, "availabilityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityStatusNull: Self = StObject.set(x, "availabilityStatus", null)
+    inline def setAvailabilityStatusNull: Self = StObject.set(x, "availabilityStatus", null)
     
-    @scala.inline
-    def setAvailabilityStatusUndefined: Self = StObject.set(x, "availabilityStatus", js.undefined)
+    inline def setAvailabilityStatusUndefined: Self = StObject.set(x, "availabilityStatus", js.undefined)
     
-    @scala.inline
-    def setDomainNameReferences(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "domainNameReferences", value.asInstanceOf[js.Any])
+    inline def setDomainNameReferences(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "domainNameReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameReferencesNull: Self = StObject.set(x, "domainNameReferences", null)
+    inline def setDomainNameReferencesNull: Self = StObject.set(x, "domainNameReferences", null)
     
-    @scala.inline
-    def setDomainNameReferencesUndefined: Self = StObject.set(x, "domainNameReferences", js.undefined)
+    inline def setDomainNameReferencesUndefined: Self = StObject.set(x, "domainNameReferences", js.undefined)
     
-    @scala.inline
-    def setDomainNameReferencesVarargs(value: DirectoryObject*): Self = StObject.set(x, "domainNameReferences", js.Array(value :_*))
+    inline def setDomainNameReferencesVarargs(value: DirectoryObject*): Self = StObject.set(x, "domainNameReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setIsAdminManaged(value: Boolean): Self = StObject.set(x, "isAdminManaged", value.asInstanceOf[js.Any])
+    inline def setIsAdminManaged(value: Boolean): Self = StObject.set(x, "isAdminManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAdminManagedUndefined: Self = StObject.set(x, "isAdminManaged", js.undefined)
+    inline def setIsAdminManagedUndefined: Self = StObject.set(x, "isAdminManaged", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
+    inline def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInitialUndefined: Self = StObject.set(x, "isInitial", js.undefined)
+    inline def setIsInitialUndefined: Self = StObject.set(x, "isInitial", js.undefined)
     
-    @scala.inline
-    def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+    inline def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
+    inline def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
     
-    @scala.inline
-    def setIsVerified(value: Boolean): Self = StObject.set(x, "isVerified", value.asInstanceOf[js.Any])
+    inline def setIsVerified(value: Boolean): Self = StObject.set(x, "isVerified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVerifiedUndefined: Self = StObject.set(x, "isVerified", js.undefined)
+    inline def setIsVerifiedUndefined: Self = StObject.set(x, "isVerified", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: NullableOption[String]): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: NullableOption[String]): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerNull: Self = StObject.set(x, "manufacturer", null)
+    inline def setManufacturerNull: Self = StObject.set(x, "manufacturer", null)
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    @scala.inline
-    def setModel(value: NullableOption[String]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: NullableOption[String]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNull: Self = StObject.set(x, "model", null)
+    inline def setModelNull: Self = StObject.set(x, "model", null)
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setPasswordNotificationWindowInDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordNotificationWindowInDays", value.asInstanceOf[js.Any])
+    inline def setPasswordNotificationWindowInDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordNotificationWindowInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordNotificationWindowInDaysNull: Self = StObject.set(x, "passwordNotificationWindowInDays", null)
+    inline def setPasswordNotificationWindowInDaysNull: Self = StObject.set(x, "passwordNotificationWindowInDays", null)
     
-    @scala.inline
-    def setPasswordNotificationWindowInDaysUndefined: Self = StObject.set(x, "passwordNotificationWindowInDays", js.undefined)
+    inline def setPasswordNotificationWindowInDaysUndefined: Self = StObject.set(x, "passwordNotificationWindowInDays", js.undefined)
     
-    @scala.inline
-    def setPasswordValidityPeriodInDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordValidityPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setPasswordValidityPeriodInDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordValidityPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordValidityPeriodInDaysNull: Self = StObject.set(x, "passwordValidityPeriodInDays", null)
+    inline def setPasswordValidityPeriodInDaysNull: Self = StObject.set(x, "passwordValidityPeriodInDays", null)
     
-    @scala.inline
-    def setPasswordValidityPeriodInDaysUndefined: Self = StObject.set(x, "passwordValidityPeriodInDays", js.undefined)
+    inline def setPasswordValidityPeriodInDaysUndefined: Self = StObject.set(x, "passwordValidityPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setServiceConfigurationRecords(value: NullableOption[js.Array[DomainDnsRecord]]): Self = StObject.set(x, "serviceConfigurationRecords", value.asInstanceOf[js.Any])
+    inline def setServiceConfigurationRecords(value: NullableOption[js.Array[DomainDnsRecord]]): Self = StObject.set(x, "serviceConfigurationRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigurationRecordsNull: Self = StObject.set(x, "serviceConfigurationRecords", null)
+    inline def setServiceConfigurationRecordsNull: Self = StObject.set(x, "serviceConfigurationRecords", null)
     
-    @scala.inline
-    def setServiceConfigurationRecordsUndefined: Self = StObject.set(x, "serviceConfigurationRecords", js.undefined)
+    inline def setServiceConfigurationRecordsUndefined: Self = StObject.set(x, "serviceConfigurationRecords", js.undefined)
     
-    @scala.inline
-    def setServiceConfigurationRecordsVarargs(value: DomainDnsRecord*): Self = StObject.set(x, "serviceConfigurationRecords", js.Array(value :_*))
+    inline def setServiceConfigurationRecordsVarargs(value: DomainDnsRecord*): Self = StObject.set(x, "serviceConfigurationRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: NullableOption[DomainState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NullableOption[DomainState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSupportedServices(value: js.Array[String]): Self = StObject.set(x, "supportedServices", value.asInstanceOf[js.Any])
+    inline def setSupportedServices(value: js.Array[String]): Self = StObject.set(x, "supportedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedServicesUndefined: Self = StObject.set(x, "supportedServices", js.undefined)
+    inline def setSupportedServicesUndefined: Self = StObject.set(x, "supportedServices", js.undefined)
     
-    @scala.inline
-    def setSupportedServicesVarargs(value: String*): Self = StObject.set(x, "supportedServices", js.Array(value :_*))
+    inline def setSupportedServicesVarargs(value: String*): Self = StObject.set(x, "supportedServices", js.Array(value :_*))
     
-    @scala.inline
-    def setVerificationDnsRecords(value: NullableOption[js.Array[DomainDnsRecord]]): Self = StObject.set(x, "verificationDnsRecords", value.asInstanceOf[js.Any])
+    inline def setVerificationDnsRecords(value: NullableOption[js.Array[DomainDnsRecord]]): Self = StObject.set(x, "verificationDnsRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationDnsRecordsNull: Self = StObject.set(x, "verificationDnsRecords", null)
+    inline def setVerificationDnsRecordsNull: Self = StObject.set(x, "verificationDnsRecords", null)
     
-    @scala.inline
-    def setVerificationDnsRecordsUndefined: Self = StObject.set(x, "verificationDnsRecords", js.undefined)
+    inline def setVerificationDnsRecordsUndefined: Self = StObject.set(x, "verificationDnsRecords", js.undefined)
     
-    @scala.inline
-    def setVerificationDnsRecordsVarargs(value: DomainDnsRecord*): Self = StObject.set(x, "verificationDnsRecords", js.Array(value :_*))
+    inline def setVerificationDnsRecordsVarargs(value: DomainDnsRecord*): Self = StObject.set(x, "verificationDnsRecords", js.Array(value :_*))
   }
 }

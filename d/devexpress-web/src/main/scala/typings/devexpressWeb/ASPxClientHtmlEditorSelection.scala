@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorSelection extends StObject {
 }
 object ASPxClientHtmlEditorSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetElements: () => js.Array[js.Any],
     GetHtml: () => String,
     GetSelectedElement: () => js.Any,
@@ -50,22 +49,16 @@ object ASPxClientHtmlEditorSelection {
     __obj.asInstanceOf[ASPxClientHtmlEditorSelection]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorSelectionMutableBuilder[Self <: ASPxClientHtmlEditorSelection] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorSelection](x: Self) {
     
-    @scala.inline
-    def setGetElements(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetElements", js.Any.fromFunction0(value))
+    inline def setGetElements(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetElements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHtml(value: () => String): Self = StObject.set(x, "GetHtml", js.Any.fromFunction0(value))
+    inline def setGetHtml(value: () => String): Self = StObject.set(x, "GetHtml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedElement(value: () => js.Any): Self = StObject.set(x, "GetSelectedElement", js.Any.fromFunction0(value))
+    inline def setGetSelectedElement(value: () => js.Any): Self = StObject.set(x, "GetSelectedElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHtml(value: (String, Boolean) => Unit): Self = StObject.set(x, "SetHtml", js.Any.fromFunction2(value))
+    inline def setSetHtml(value: (String, Boolean) => Unit): Self = StObject.set(x, "SetHtml", js.Any.fromFunction2(value))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.XmlNamespace")
 @js.native
-class XmlNamespace protected ()
+/* private */ class XmlNamespace ()
   extends StObject
      with typings.activexExcel.Excel.XmlNamespace {
   
@@ -17,7 +17,7 @@ class XmlNamespace protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.XmlNamespace_typekey")
   var ExcelDotXmlNamespace_typekey: typings.activexExcel.Excel.XmlNamespace = js.native
   

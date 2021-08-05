@@ -52,8 +52,7 @@ trait GetVideoInfoSuccessCallbackResult extends StObject {
 }
 object GetVideoInfoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitrate: Double,
     duration: Double,
     errMsg: String,
@@ -69,36 +68,26 @@ object GetVideoInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetVideoInfoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetVideoInfoSuccessCallbackResultMutableBuilder[Self <: GetVideoInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetVideoInfoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(
+    inline def setOrientation(
       value: up | down | left | right | `up-mirrored` | `down-mirrored` | `left-mirrored` | `right-mirrored`
     ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

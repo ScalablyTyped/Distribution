@@ -42,26 +42,20 @@ object mod {
   }
   object TerminalInfo {
     
-    @scala.inline
-    def apply(ci: Boolean, shell: String, tty: Boolean, windows: Boolean): TerminalInfo = {
+    inline def apply(ci: Boolean, shell: String, tty: Boolean, windows: Boolean): TerminalInfo = {
       val __obj = js.Dynamic.literal(ci = ci.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], tty = tty.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
       __obj.asInstanceOf[TerminalInfo]
     }
     
-    @scala.inline
-    implicit class TerminalInfoMutableBuilder[Self <: TerminalInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TerminalInfo](x: Self) {
       
-      @scala.inline
-      def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
+      inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTty(value: Boolean): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
+      inline def setTty(value: Boolean): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     }
   }
 }

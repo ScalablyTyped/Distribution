@@ -23,31 +23,23 @@ trait AuthorizationData extends StObject {
 }
 object AuthorizationData {
   
-  @scala.inline
-  def apply(): AuthorizationData = {
+  inline def apply(): AuthorizationData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizationData]
   }
   
-  @scala.inline
-  implicit class AuthorizationDataMutableBuilder[Self <: AuthorizationData] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationData](x: Self) {
     
-    @scala.inline
-    def setAuthorizationToken(value: Base64): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
+    inline def setAuthorizationToken(value: Base64): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationTokenUndefined: Self = StObject.set(x, "authorizationToken", js.undefined)
+    inline def setAuthorizationTokenUndefined: Self = StObject.set(x, "authorizationToken", js.undefined)
     
-    @scala.inline
-    def setExpiresAt(value: ExpirationTimestamp): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: ExpirationTimestamp): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
+    inline def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
     
-    @scala.inline
-    def setProxyEndpoint(value: ProxyEndpoint): Self = StObject.set(x, "proxyEndpoint", value.asInstanceOf[js.Any])
+    inline def setProxyEndpoint(value: ProxyEndpoint): Self = StObject.set(x, "proxyEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyEndpointUndefined: Self = StObject.set(x, "proxyEndpoint", js.undefined)
+    inline def setProxyEndpointUndefined: Self = StObject.set(x, "proxyEndpoint", js.undefined)
   }
 }

@@ -11,15 +11,13 @@ object Parser {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def incrementalParse(
+  inline def incrementalParse(
     oldSyntaxTree: typings.typescriptServices.TypeScript.SyntaxTree,
     textChangeRange: typings.typescriptServices.TypeScript.TextChangeRange,
     newText: ISimpleText
   ): typings.typescriptServices.TypeScript.SyntaxTree = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementalParse")(oldSyntaxTree.asInstanceOf[js.Any], textChangeRange.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxTree]
   
-  @scala.inline
-  def parse(
+  inline def parse(
     fileName: String,
     text: ISimpleText,
     isDeclaration: Boolean,

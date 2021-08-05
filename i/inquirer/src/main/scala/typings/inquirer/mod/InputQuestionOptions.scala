@@ -36,19 +36,15 @@ trait InputQuestionOptions[T /* <: Answers */]
 }
 object InputQuestionOptions {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): InputQuestionOptions[T] = {
+  inline def apply[T /* <: Answers */](): InputQuestionOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputQuestionOptions[T]]
   }
   
-  @scala.inline
-  implicit class InputQuestionOptionsMutableBuilder[Self <: InputQuestionOptions[?], T /* <: Answers */] (val x: Self & InputQuestionOptions[T]) extends AnyVal {
+  extension [Self <: InputQuestionOptions[?], T /* <: Answers */](x: Self & InputQuestionOptions[T]) {
     
-    @scala.inline
-    def setTransformer(value: (/* input */ js.Any, /* answers */ T, /* flags */ IsFinal) => String | js.Promise[String]): Self = StObject.set(x, "transformer", js.Any.fromFunction3(value))
+    inline def setTransformer(value: (/* input */ js.Any, /* answers */ T, /* flags */ IsFinal) => String | js.Promise[String]): Self = StObject.set(x, "transformer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTransformerUndefined: Self = StObject.set(x, "transformer", js.undefined)
+    inline def setTransformerUndefined: Self = StObject.set(x, "transformer", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait TypeofTabStripExtend extends StObject {
 }
 object TypeofTabStripExtend {
   
-  @scala.inline
-  def apply(extend: js.Object => TabStrip, fn: TabStrip): TypeofTabStripExtend = {
+  inline def apply(extend: js.Object => TabStrip, fn: TabStrip): TypeofTabStripExtend = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTabStripExtend]
   }
   
-  @scala.inline
-  implicit class TypeofTabStripExtendMutableBuilder[Self <: TypeofTabStripExtend] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTabStripExtend](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => TabStrip): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => TabStrip): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: TabStrip): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TabStrip): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

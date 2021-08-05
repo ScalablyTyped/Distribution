@@ -176,8 +176,7 @@ trait XSQLInput
 }
 object XSQLInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     readArray: () => XArray,
@@ -206,67 +205,46 @@ object XSQLInput {
     __obj.asInstanceOf[XSQLInput]
   }
   
-  @scala.inline
-  implicit class XSQLInputMutableBuilder[Self <: XSQLInput] (val x: Self) extends AnyVal {
+  extension [Self <: XSQLInput](x: Self) {
     
-    @scala.inline
-    def setReadArray(value: () => XArray): Self = StObject.set(x, "readArray", js.Any.fromFunction0(value))
+    inline def setReadArray(value: () => XArray): Self = StObject.set(x, "readArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadBinaryStream(value: () => XInputStream): Self = StObject.set(x, "readBinaryStream", js.Any.fromFunction0(value))
+    inline def setReadBinaryStream(value: () => XInputStream): Self = StObject.set(x, "readBinaryStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadBlob(value: () => XBlob): Self = StObject.set(x, "readBlob", js.Any.fromFunction0(value))
+    inline def setReadBlob(value: () => XBlob): Self = StObject.set(x, "readBlob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadBoolean(value: () => Boolean): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
+    inline def setReadBoolean(value: () => Boolean): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadByte(value: () => Double): Self = StObject.set(x, "readByte", js.Any.fromFunction0(value))
+    inline def setReadByte(value: () => Double): Self = StObject.set(x, "readByte", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadBytes(value: () => SafeArray[Double]): Self = StObject.set(x, "readBytes", js.Any.fromFunction0(value))
+    inline def setReadBytes(value: () => SafeArray[Double]): Self = StObject.set(x, "readBytes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadCharacterStream(value: () => XInputStream): Self = StObject.set(x, "readCharacterStream", js.Any.fromFunction0(value))
+    inline def setReadCharacterStream(value: () => XInputStream): Self = StObject.set(x, "readCharacterStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadClob(value: () => XClob): Self = StObject.set(x, "readClob", js.Any.fromFunction0(value))
+    inline def setReadClob(value: () => XClob): Self = StObject.set(x, "readClob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadDate(value: () => Date): Self = StObject.set(x, "readDate", js.Any.fromFunction0(value))
+    inline def setReadDate(value: () => Date): Self = StObject.set(x, "readDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadDouble(value: () => Double): Self = StObject.set(x, "readDouble", js.Any.fromFunction0(value))
+    inline def setReadDouble(value: () => Double): Self = StObject.set(x, "readDouble", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadFloat(value: () => Double): Self = StObject.set(x, "readFloat", js.Any.fromFunction0(value))
+    inline def setReadFloat(value: () => Double): Self = StObject.set(x, "readFloat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadInt(value: () => Double): Self = StObject.set(x, "readInt", js.Any.fromFunction0(value))
+    inline def setReadInt(value: () => Double): Self = StObject.set(x, "readInt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadLong(value: () => Double): Self = StObject.set(x, "readLong", js.Any.fromFunction0(value))
+    inline def setReadLong(value: () => Double): Self = StObject.set(x, "readLong", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadObject(value: () => js.Any): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
+    inline def setReadObject(value: () => js.Any): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadRef(value: () => XRef): Self = StObject.set(x, "readRef", js.Any.fromFunction0(value))
+    inline def setReadRef(value: () => XRef): Self = StObject.set(x, "readRef", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadShort(value: () => Double): Self = StObject.set(x, "readShort", js.Any.fromFunction0(value))
+    inline def setReadShort(value: () => Double): Self = StObject.set(x, "readShort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadString(value: () => String): Self = StObject.set(x, "readString", js.Any.fromFunction0(value))
+    inline def setReadString(value: () => String): Self = StObject.set(x, "readString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadTime(value: () => Time): Self = StObject.set(x, "readTime", js.Any.fromFunction0(value))
+    inline def setReadTime(value: () => Time): Self = StObject.set(x, "readTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadTimestamp(value: () => DateTime): Self = StObject.set(x, "readTimestamp", js.Any.fromFunction0(value))
+    inline def setReadTimestamp(value: () => DateTime): Self = StObject.set(x, "readTimestamp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWasNull(value: () => Boolean): Self = StObject.set(x, "wasNull", js.Any.fromFunction0(value))
+    inline def setWasNull(value: () => Boolean): Self = StObject.set(x, "wasNull", js.Any.fromFunction0(value))
   }
 }

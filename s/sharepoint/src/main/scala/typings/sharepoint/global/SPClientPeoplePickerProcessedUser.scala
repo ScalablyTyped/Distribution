@@ -84,28 +84,21 @@ object SPClientPeoplePickerProcessedUser {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def BuildUserPresenceHtml(elmId: String, strSip: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildUserPresenceHtml")(elmId.asInstanceOf[js.Any], strSip.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def BuildUserPresenceHtml(elmId: String, strSip: String, bResolved: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildUserPresenceHtml")(elmId.asInstanceOf[js.Any], strSip.asInstanceOf[js.Any], bResolved.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def BuildUserPresenceHtml(elmId: String, strSip: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildUserPresenceHtml")(elmId.asInstanceOf[js.Any], strSip.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def BuildUserPresenceHtml(elmId: String, strSip: String, bResolved: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildUserPresenceHtml")(elmId.asInstanceOf[js.Any], strSip.asInstanceOf[js.Any], bResolved.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def DeleteProcessedUser(elmToRemove: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteProcessedUser")(elmToRemove.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def DeleteProcessedUser(elmToRemove: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteProcessedUser")(elmToRemove.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def GetUserContainerElement(elmChild: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetUserContainerElement")(elmChild.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def GetUserContainerElement(elmChild: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetUserContainerElement")(elmChild.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /* static member */
-  @scala.inline
-  def HandleDeleteProcessedUserKey(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleDeleteProcessedUserKey")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def HandleDeleteProcessedUserKey(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleDeleteProcessedUserKey")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def HandleProcessedUserClick(ndClicked: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleProcessedUserClick")(ndClicked.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def HandleProcessedUserClick(ndClicked: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleProcessedUserClick")(ndClicked.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def HandleResolveProcessedUserKey(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleResolveProcessedUserKey")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def HandleResolveProcessedUserKey(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleResolveProcessedUserKey")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

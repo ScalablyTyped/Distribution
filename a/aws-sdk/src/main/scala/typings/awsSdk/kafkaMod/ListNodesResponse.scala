@@ -23,28 +23,21 @@ trait ListNodesResponse extends StObject {
 }
 object ListNodesResponse {
   
-  @scala.inline
-  def apply(): ListNodesResponse = {
+  inline def apply(): ListNodesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNodesResponse]
   }
   
-  @scala.inline
-  implicit class ListNodesResponseMutableBuilder[Self <: ListNodesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListNodesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNodeInfoList(value: listOfNodeInfo): Self = StObject.set(x, "NodeInfoList", value.asInstanceOf[js.Any])
+    inline def setNodeInfoList(value: listOfNodeInfo): Self = StObject.set(x, "NodeInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeInfoListUndefined: Self = StObject.set(x, "NodeInfoList", js.undefined)
+    inline def setNodeInfoListUndefined: Self = StObject.set(x, "NodeInfoList", js.undefined)
     
-    @scala.inline
-    def setNodeInfoListVarargs(value: NodeInfo*): Self = StObject.set(x, "NodeInfoList", js.Array(value :_*))
+    inline def setNodeInfoListVarargs(value: NodeInfo*): Self = StObject.set(x, "NodeInfoList", js.Array(value :_*))
   }
 }

@@ -56,56 +56,40 @@ object WDIOProtocols {
   }
   object CommandEndpoint {
     
-    @scala.inline
-    def apply(command: String, description: String, parameters: js.Array[CommandParameters], ref: String): CommandEndpoint = {
+    inline def apply(command: String, description: String, parameters: js.Array[CommandParameters], ref: String): CommandEndpoint = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandEndpoint]
     }
     
-    @scala.inline
-    implicit class CommandEndpointMutableBuilder[Self <: CommandEndpoint] (val x: Self) extends AnyVal {
+    extension [Self <: CommandEndpoint](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHubCommand(value: Boolean): Self = StObject.set(x, "isHubCommand", value.asInstanceOf[js.Any])
+      inline def setIsHubCommand(value: Boolean): Self = StObject.set(x, "isHubCommand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHubCommandUndefined: Self = StObject.set(x, "isHubCommand", js.undefined)
+      inline def setIsHubCommandUndefined: Self = StObject.set(x, "isHubCommand", js.undefined)
       
-      @scala.inline
-      def setParameters(value: js.Array[CommandParameters]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[CommandParameters]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersVarargs(value: CommandParameters*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: CommandParameters*): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturns(value: CommandReturnObject): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+      inline def setReturns(value: CommandReturnObject): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
+      inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
       
-      @scala.inline
-      def setSupport(value: SupportedEnvironments): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
+      inline def setSupport(value: SupportedEnvironments): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
+      inline def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
       
-      @scala.inline
-      def setVariables(value: js.Array[CommandPathVariables]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Array[CommandPathVariables]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
       
-      @scala.inline
-      def setVariablesVarargs(value: CommandPathVariables*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: CommandPathVariables*): Self = StObject.set(x, "variables", js.Array(value :_*))
     }
   }
   
@@ -117,14 +101,11 @@ object WDIOProtocols {
   trait CommandMethod extends StObject
   object CommandMethod {
     
-    @scala.inline
-    def DELETE: typings.wdioProtocols.wdioProtocolsStrings.DELETE = "DELETE".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.DELETE]
+    inline def DELETE: typings.wdioProtocols.wdioProtocolsStrings.DELETE = "DELETE".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.wdioProtocols.wdioProtocolsStrings.GET = "GET".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.GET]
+    inline def GET: typings.wdioProtocols.wdioProtocolsStrings.GET = "GET".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.GET]
     
-    @scala.inline
-    def POST: typings.wdioProtocols.wdioProtocolsStrings.POST = "POST".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.POST]
+    inline def POST: typings.wdioProtocols.wdioProtocolsStrings.POST = "POST".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.POST]
   }
   
   trait CommandParameters extends StObject {
@@ -139,27 +120,21 @@ object WDIOProtocols {
   }
   object CommandParameters {
     
-    @scala.inline
-    def apply(description: String, name: String, required: Boolean, `type`: String): CommandParameters = {
+    inline def apply(description: String, name: String, required: Boolean, `type`: String): CommandParameters = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandParameters]
     }
     
-    @scala.inline
-    implicit class CommandParametersMutableBuilder[Self <: CommandParameters] (val x: Self) extends AnyVal {
+    extension [Self <: CommandParameters](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,32 +156,24 @@ object WDIOProtocols {
   }
   object CommandPathVariables {
     
-    @scala.inline
-    def apply(description: String, name: String): CommandPathVariables = {
+    inline def apply(description: String, name: String): CommandPathVariables = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandPathVariables]
     }
     
-    @scala.inline
-    implicit class CommandPathVariablesMutableBuilder[Self <: CommandPathVariables] (val x: Self) extends AnyVal {
+    extension [Self <: CommandPathVariables](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -220,24 +187,19 @@ object WDIOProtocols {
   }
   object CommandReturnObject {
     
-    @scala.inline
-    def apply(description: String, name: String, `type`: String): CommandReturnObject = {
+    inline def apply(description: String, name: String, `type`: String): CommandReturnObject = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandReturnObject]
     }
     
-    @scala.inline
-    implicit class CommandReturnObjectMutableBuilder[Self <: CommandReturnObject] (val x: Self) extends AnyVal {
+    extension [Self <: CommandReturnObject](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,14 +211,11 @@ object WDIOProtocols {
   trait Environments extends StObject
   object Environments {
     
-    @scala.inline
-    def UIAutomation: typings.wdioProtocols.wdioProtocolsStrings.UIAutomation = "UIAutomation".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.UIAutomation]
+    inline def UIAutomation: typings.wdioProtocols.wdioProtocolsStrings.UIAutomation = "UIAutomation".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.UIAutomation]
     
-    @scala.inline
-    def UiAutomator: typings.wdioProtocols.wdioProtocolsStrings.UiAutomator = "UiAutomator".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.UiAutomator]
+    inline def UiAutomator: typings.wdioProtocols.wdioProtocolsStrings.UiAutomator = "UiAutomator".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.UiAutomator]
     
-    @scala.inline
-    def XCUITest: typings.wdioProtocols.wdioProtocolsStrings.XCUITest = "XCUITest".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.XCUITest]
+    inline def XCUITest: typings.wdioProtocols.wdioProtocolsStrings.XCUITest = "XCUITest".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.XCUITest]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -266,11 +225,9 @@ object WDIOProtocols {
   trait Platform extends StObject
   object Platform {
     
-    @scala.inline
-    def android: typings.wdioProtocols.wdioProtocolsStrings.android = "android".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.android]
+    inline def android: typings.wdioProtocols.wdioProtocolsStrings.android = "android".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.android]
     
-    @scala.inline
-    def ios: typings.wdioProtocols.wdioProtocolsStrings.ios = "ios".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.ios]
+    inline def ios: typings.wdioProtocols.wdioProtocolsStrings.ios = "ios".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.ios]
   }
   
   /* Inlined std.Record<@wdio/protocols.WDIOProtocols.CommandPath, std.Record<@wdio/protocols.WDIOProtocols.CommandMethod, @wdio/protocols.WDIOProtocols.CommandEndpoint>> */
@@ -280,17 +237,14 @@ object WDIOProtocols {
   }
   object Protocol {
     
-    @scala.inline
-    def apply(string: RecordCommandMethodComman): Protocol = {
+    inline def apply(string: RecordCommandMethodComman): Protocol = {
       val __obj = js.Dynamic.literal(string = string.asInstanceOf[js.Any])
       __obj.asInstanceOf[Protocol]
     }
     
-    @scala.inline
-    implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
+    extension [Self <: Protocol](x: Self) {
       
-      @scala.inline
-      def setString(value: RecordCommandMethodComman): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: RecordCommandMethodComman): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
   
@@ -311,20 +265,16 @@ object WDIOProtocols {
   }
   object SupportedEnvironments {
     
-    @scala.inline
-    def apply(android: RecordEnvironmentsstring, ios: RecordEnvironmentsstring): SupportedEnvironments = {
+    inline def apply(android: RecordEnvironmentsstring, ios: RecordEnvironmentsstring): SupportedEnvironments = {
       val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], ios = ios.asInstanceOf[js.Any])
       __obj.asInstanceOf[SupportedEnvironments]
     }
     
-    @scala.inline
-    implicit class SupportedEnvironmentsMutableBuilder[Self <: SupportedEnvironments] (val x: Self) extends AnyVal {
+    extension [Self <: SupportedEnvironments](x: Self) {
       
-      @scala.inline
-      def setAndroid(value: RecordEnvironmentsstring): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: RecordEnvironmentsstring): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIos(value: RecordEnvironmentsstring): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+      inline def setIos(value: RecordEnvironmentsstring): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     }
   }
 }

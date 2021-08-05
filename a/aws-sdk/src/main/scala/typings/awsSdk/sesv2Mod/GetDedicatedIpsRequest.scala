@@ -23,31 +23,23 @@ trait GetDedicatedIpsRequest extends StObject {
 }
 object GetDedicatedIpsRequest {
   
-  @scala.inline
-  def apply(): GetDedicatedIpsRequest = {
+  inline def apply(): GetDedicatedIpsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDedicatedIpsRequest]
   }
   
-  @scala.inline
-  implicit class GetDedicatedIpsRequestMutableBuilder[Self <: GetDedicatedIpsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDedicatedIpsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
+    inline def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
+    inline def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
   }
 }

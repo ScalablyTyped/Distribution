@@ -11,69 +11,59 @@ object annyangStrings {
   sealed trait end
     extends StObject
        with Events
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error
     extends StObject
        with Events
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait errorNetwork
     extends StObject
        with Events
-  @scala.inline
-  def errorNetwork: errorNetwork = "errorNetwork".asInstanceOf[errorNetwork]
+  inline def errorNetwork: errorNetwork = "errorNetwork".asInstanceOf[errorNetwork]
   
   @js.native
   sealed trait errorPermissionBlocked
     extends StObject
        with Events
-  @scala.inline
-  def errorPermissionBlocked: errorPermissionBlocked = "errorPermissionBlocked".asInstanceOf[errorPermissionBlocked]
+  inline def errorPermissionBlocked: errorPermissionBlocked = "errorPermissionBlocked".asInstanceOf[errorPermissionBlocked]
   
   @js.native
   sealed trait errorPermissionDenied
     extends StObject
        with Events
-  @scala.inline
-  def errorPermissionDenied: errorPermissionDenied = "errorPermissionDenied".asInstanceOf[errorPermissionDenied]
+  inline def errorPermissionDenied: errorPermissionDenied = "errorPermissionDenied".asInstanceOf[errorPermissionDenied]
   
   @js.native
   sealed trait result
     extends StObject
        with Events
-  @scala.inline
-  def result: result = "result".asInstanceOf[result]
+  inline def result: result = "result".asInstanceOf[result]
   
   @js.native
   sealed trait resultMatch
     extends StObject
        with Events
-  @scala.inline
-  def resultMatch: resultMatch = "resultMatch".asInstanceOf[resultMatch]
+  inline def resultMatch: resultMatch = "resultMatch".asInstanceOf[resultMatch]
   
   @js.native
   sealed trait resultNoMatch
     extends StObject
        with Events
-  @scala.inline
-  def resultNoMatch: resultNoMatch = "resultNoMatch".asInstanceOf[resultNoMatch]
+  inline def resultNoMatch: resultNoMatch = "resultNoMatch".asInstanceOf[resultNoMatch]
   
   @js.native
   sealed trait soundstart
     extends StObject
        with Events
-  @scala.inline
-  def soundstart: soundstart = "soundstart".asInstanceOf[soundstart]
+  inline def soundstart: soundstart = "soundstart".asInstanceOf[soundstart]
   
   @js.native
   sealed trait start
     extends StObject
        with Events
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
 }

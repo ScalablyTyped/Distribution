@@ -90,103 +90,71 @@ trait ParamsResourceVolumesList
 }
 object ParamsResourceVolumesList {
   
-  @scala.inline
-  def apply(): ParamsResourceVolumesList = {
+  inline def apply(): ParamsResourceVolumesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVolumesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVolumesListMutableBuilder[Self <: ParamsResourceVolumesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVolumesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setLangRestrict(value: String): Self = StObject.set(x, "langRestrict", value.asInstanceOf[js.Any])
+    inline def setLangRestrict(value: String): Self = StObject.set(x, "langRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangRestrictUndefined: Self = StObject.set(x, "langRestrict", js.undefined)
+    inline def setLangRestrictUndefined: Self = StObject.set(x, "langRestrict", js.undefined)
     
-    @scala.inline
-    def setLibraryRestrict(value: String): Self = StObject.set(x, "libraryRestrict", value.asInstanceOf[js.Any])
+    inline def setLibraryRestrict(value: String): Self = StObject.set(x, "libraryRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibraryRestrictUndefined: Self = StObject.set(x, "libraryRestrict", js.undefined)
+    inline def setLibraryRestrictUndefined: Self = StObject.set(x, "libraryRestrict", js.undefined)
     
-    @scala.inline
-    def setMaxAllowedMaturityRating(value: String): Self = StObject.set(x, "maxAllowedMaturityRating", value.asInstanceOf[js.Any])
+    inline def setMaxAllowedMaturityRating(value: String): Self = StObject.set(x, "maxAllowedMaturityRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAllowedMaturityRatingUndefined: Self = StObject.set(x, "maxAllowedMaturityRating", js.undefined)
+    inline def setMaxAllowedMaturityRatingUndefined: Self = StObject.set(x, "maxAllowedMaturityRating", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
+    inline def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
+    inline def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
     
-    @scala.inline
-    def setPrintType(value: String): Self = StObject.set(x, "printType", value.asInstanceOf[js.Any])
+    inline def setPrintType(value: String): Self = StObject.set(x, "printType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintTypeUndefined: Self = StObject.set(x, "printType", js.undefined)
+    inline def setPrintTypeUndefined: Self = StObject.set(x, "printType", js.undefined)
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setShowPreorders(value: Boolean): Self = StObject.set(x, "showPreorders", value.asInstanceOf[js.Any])
+    inline def setShowPreorders(value: Boolean): Self = StObject.set(x, "showPreorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPreordersUndefined: Self = StObject.set(x, "showPreorders", js.undefined)
+    inline def setShowPreordersUndefined: Self = StObject.set(x, "showPreorders", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait WrappedComponentPropsintlIntl extends StObject {
 }
 object WrappedComponentPropsintlIntl {
   
-  @scala.inline
-  def apply(intl: IntlShape): WrappedComponentPropsintlIntl = {
+  inline def apply(intl: IntlShape): WrappedComponentPropsintlIntl = {
     val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedComponentPropsintlIntl]
   }
   
-  @scala.inline
-  implicit class WrappedComponentPropsintlIntlMutableBuilder[Self <: WrappedComponentPropsintlIntl] (val x: Self) extends AnyVal {
+  extension [Self <: WrappedComponentPropsintlIntl](x: Self) {
     
-    @scala.inline
-    def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
+    inline def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
   }
 }

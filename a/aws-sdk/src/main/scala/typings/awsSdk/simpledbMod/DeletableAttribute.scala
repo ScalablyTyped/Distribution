@@ -18,22 +18,17 @@ trait DeletableAttribute extends StObject {
 }
 object DeletableAttribute {
   
-  @scala.inline
-  def apply(Name: String): DeletableAttribute = {
+  inline def apply(Name: String): DeletableAttribute = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletableAttribute]
   }
   
-  @scala.inline
-  implicit class DeletableAttributeMutableBuilder[Self <: DeletableAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: DeletableAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait ListReleasesResponse extends StObject {
 }
 object ListReleasesResponse {
   
-  @scala.inline
-  def apply(): ListReleasesResponse = {
+  inline def apply(): ListReleasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReleasesResponse]
   }
   
-  @scala.inline
-  implicit class ListReleasesResponseMutableBuilder[Self <: ListReleasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReleasesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
+    inline def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
+    inline def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
-    @scala.inline
-    def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
   }
 }

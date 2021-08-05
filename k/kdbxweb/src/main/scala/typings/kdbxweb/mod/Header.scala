@@ -54,9 +54,7 @@ object Header {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Header]
+  inline def create(): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Header]
   
-  @scala.inline
-  def read(stm: BinaryStream, ctx: Context): Header = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Header]
+  inline def read(stm: BinaryStream, ctx: Context): Header = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Header]
 }

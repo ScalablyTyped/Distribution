@@ -14,28 +14,21 @@ trait MonitoringDestination extends StObject {
 }
 object MonitoringDestination {
   
-  @scala.inline
-  def apply(): MonitoringDestination = {
+  inline def apply(): MonitoringDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoringDestination]
   }
   
-  @scala.inline
-  implicit class MonitoringDestinationMutableBuilder[Self <: MonitoringDestination] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringDestination](x: Self) {
     
-    @scala.inline
-    def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setMonitoredResource(value: String): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
+    inline def setMonitoredResource(value: String): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
+    inline def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
   }
 }

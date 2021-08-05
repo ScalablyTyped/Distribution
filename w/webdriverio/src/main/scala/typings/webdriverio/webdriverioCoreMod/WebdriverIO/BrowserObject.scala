@@ -11,19 +11,15 @@ trait BrowserObject extends StObject {
 }
 object BrowserObject {
   
-  @scala.inline
-  def apply(): BrowserObject = {
+  inline def apply(): BrowserObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrowserObject]
   }
   
-  @scala.inline
-  implicit class BrowserObjectMutableBuilder[Self <: BrowserObject] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserObject](x: Self) {
     
-    @scala.inline
-    def setIsMultiremote(value: `false`): Self = StObject.set(x, "isMultiremote", value.asInstanceOf[js.Any])
+    inline def setIsMultiremote(value: `false`): Self = StObject.set(x, "isMultiremote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMultiremoteUndefined: Self = StObject.set(x, "isMultiremote", js.undefined)
+    inline def setIsMultiremoteUndefined: Self = StObject.set(x, "isMultiremote", js.undefined)
   }
 }

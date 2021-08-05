@@ -14,8 +14,7 @@ trait EventStreamMarshaller extends StObject {
 }
 object EventStreamMarshaller {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deserialize: (js.Any, js.Function1[/* input */ StringDictionary[Message], js.Any]) => AsyncIterable[js.Any],
     serialize: (AsyncIterable[js.Any], js.Function1[/* event */ js.Any, Message]) => js.Any
   ): EventStreamMarshaller = {
@@ -23,15 +22,12 @@ object EventStreamMarshaller {
     __obj.asInstanceOf[EventStreamMarshaller]
   }
   
-  @scala.inline
-  implicit class EventStreamMarshallerMutableBuilder[Self <: EventStreamMarshaller] (val x: Self) extends AnyVal {
+  extension [Self <: EventStreamMarshaller](x: Self) {
     
-    @scala.inline
-    def setDeserialize(
+    inline def setDeserialize(
       value: (js.Any, js.Function1[/* input */ StringDictionary[Message], js.Any]) => AsyncIterable[js.Any]
     ): Self = StObject.set(x, "deserialize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSerialize(value: (AsyncIterable[js.Any], js.Function1[/* event */ js.Any, Message]) => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
+    inline def setSerialize(value: (AsyncIterable[js.Any], js.Function1[/* event */ js.Any, Message]) => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
   }
 }

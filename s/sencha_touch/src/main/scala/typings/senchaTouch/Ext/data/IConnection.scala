@@ -253,297 +253,201 @@ trait IConnection
 }
 object IConnection {
   
-  @scala.inline
-  def apply(): IConnection = {
+  inline def apply(): IConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConnection]
   }
   
-  @scala.inline
-  implicit class IConnectionMutableBuilder[Self <: IConnection] (val x: Self) extends AnyVal {
+  extension [Self <: IConnection](x: Self) {
     
-    @scala.inline
-    def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+    inline def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAbortAll(value: () => Unit): Self = StObject.set(x, "abortAll", js.Any.fromFunction0(value))
+    inline def setAbortAll(value: () => Unit): Self = StObject.set(x, "abortAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAbortAllUndefined: Self = StObject.set(x, "abortAll", js.undefined)
+    inline def setAbortAllUndefined: Self = StObject.set(x, "abortAll", js.undefined)
     
-    @scala.inline
-    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+    inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    @scala.inline
-    def setDefaultHeaders(value: js.Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+    inline def setDefaultHeaders(value: js.Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
+    inline def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
     
-    @scala.inline
-    def setDefaultXhrHeader(value: String): Self = StObject.set(x, "defaultXhrHeader", value.asInstanceOf[js.Any])
+    inline def setDefaultXhrHeader(value: String): Self = StObject.set(x, "defaultXhrHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultXhrHeaderUndefined: Self = StObject.set(x, "defaultXhrHeader", js.undefined)
+    inline def setDefaultXhrHeaderUndefined: Self = StObject.set(x, "defaultXhrHeader", js.undefined)
     
-    @scala.inline
-    def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
+    inline def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCachingParam(value: String): Self = StObject.set(x, "disableCachingParam", value.asInstanceOf[js.Any])
+    inline def setDisableCachingParam(value: String): Self = StObject.set(x, "disableCachingParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCachingParamUndefined: Self = StObject.set(x, "disableCachingParam", js.undefined)
+    inline def setDisableCachingParamUndefined: Self = StObject.set(x, "disableCachingParam", js.undefined)
     
-    @scala.inline
-    def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
+    inline def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
     
-    @scala.inline
-    def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
+    inline def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
+    inline def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
     
-    @scala.inline
-    def setGetAsync(value: () => Boolean): Self = StObject.set(x, "getAsync", js.Any.fromFunction0(value))
+    inline def setGetAsync(value: () => Boolean): Self = StObject.set(x, "getAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAsyncUndefined: Self = StObject.set(x, "getAsync", js.undefined)
+    inline def setGetAsyncUndefined: Self = StObject.set(x, "getAsync", js.undefined)
     
-    @scala.inline
-    def setGetAutoAbort(value: () => Boolean): Self = StObject.set(x, "getAutoAbort", js.Any.fromFunction0(value))
+    inline def setGetAutoAbort(value: () => Boolean): Self = StObject.set(x, "getAutoAbort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAutoAbortUndefined: Self = StObject.set(x, "getAutoAbort", js.undefined)
+    inline def setGetAutoAbortUndefined: Self = StObject.set(x, "getAutoAbort", js.undefined)
     
-    @scala.inline
-    def setGetDefaultHeaders(value: () => js.Any): Self = StObject.set(x, "getDefaultHeaders", js.Any.fromFunction0(value))
+    inline def setGetDefaultHeaders(value: () => js.Any): Self = StObject.set(x, "getDefaultHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultHeadersUndefined: Self = StObject.set(x, "getDefaultHeaders", js.undefined)
+    inline def setGetDefaultHeadersUndefined: Self = StObject.set(x, "getDefaultHeaders", js.undefined)
     
-    @scala.inline
-    def setGetDefaultPostHeader(value: () => String): Self = StObject.set(x, "getDefaultPostHeader", js.Any.fromFunction0(value))
+    inline def setGetDefaultPostHeader(value: () => String): Self = StObject.set(x, "getDefaultPostHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultPostHeaderUndefined: Self = StObject.set(x, "getDefaultPostHeader", js.undefined)
+    inline def setGetDefaultPostHeaderUndefined: Self = StObject.set(x, "getDefaultPostHeader", js.undefined)
     
-    @scala.inline
-    def setGetDefaultXhrHeader(value: () => String): Self = StObject.set(x, "getDefaultXhrHeader", js.Any.fromFunction0(value))
+    inline def setGetDefaultXhrHeader(value: () => String): Self = StObject.set(x, "getDefaultXhrHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultXhrHeaderUndefined: Self = StObject.set(x, "getDefaultXhrHeader", js.undefined)
+    inline def setGetDefaultXhrHeaderUndefined: Self = StObject.set(x, "getDefaultXhrHeader", js.undefined)
     
-    @scala.inline
-    def setGetDisableCaching(value: () => Boolean): Self = StObject.set(x, "getDisableCaching", js.Any.fromFunction0(value))
+    inline def setGetDisableCaching(value: () => Boolean): Self = StObject.set(x, "getDisableCaching", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisableCachingParam(value: () => String): Self = StObject.set(x, "getDisableCachingParam", js.Any.fromFunction0(value))
+    inline def setGetDisableCachingParam(value: () => String): Self = StObject.set(x, "getDisableCachingParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisableCachingParamUndefined: Self = StObject.set(x, "getDisableCachingParam", js.undefined)
+    inline def setGetDisableCachingParamUndefined: Self = StObject.set(x, "getDisableCachingParam", js.undefined)
     
-    @scala.inline
-    def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
+    inline def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
     
-    @scala.inline
-    def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
+    inline def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
+    inline def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
     
-    @scala.inline
-    def setGetMethod(value: () => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
+    inline def setGetMethod(value: () => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
+    inline def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
     
-    @scala.inline
-    def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
+    inline def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPasswordUndefined: Self = StObject.set(x, "getPassword", js.undefined)
+    inline def setGetPasswordUndefined: Self = StObject.set(x, "getPassword", js.undefined)
     
-    @scala.inline
-    def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
+    inline def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
+    inline def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
+    inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
-    @scala.inline
-    def setGetUseDefaultHeader(value: () => Boolean): Self = StObject.set(x, "getUseDefaultHeader", js.Any.fromFunction0(value))
+    inline def setGetUseDefaultHeader(value: () => Boolean): Self = StObject.set(x, "getUseDefaultHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUseDefaultHeaderUndefined: Self = StObject.set(x, "getUseDefaultHeader", js.undefined)
+    inline def setGetUseDefaultHeaderUndefined: Self = StObject.set(x, "getUseDefaultHeader", js.undefined)
     
-    @scala.inline
-    def setGetUseDefaultXhrHeader(value: () => Boolean): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
+    inline def setGetUseDefaultXhrHeader(value: () => Boolean): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
+    inline def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
     
-    @scala.inline
-    def setGetUsername(value: () => String): Self = StObject.set(x, "getUsername", js.Any.fromFunction0(value))
+    inline def setGetUsername(value: () => String): Self = StObject.set(x, "getUsername", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUsernameUndefined: Self = StObject.set(x, "getUsername", js.undefined)
+    inline def setGetUsernameUndefined: Self = StObject.set(x, "getUsername", js.undefined)
     
-    @scala.inline
-    def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
+    inline def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+    inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setParseStatus(value: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction2(value))
+    inline def setParseStatus(value: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
+    inline def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
     
-    @scala.inline
-    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+    inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
-    @scala.inline
-    def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setSetAsync(value: /* async */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAsync", js.Any.fromFunction1(value))
+    inline def setSetAsync(value: /* async */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAsyncUndefined: Self = StObject.set(x, "setAsync", js.undefined)
+    inline def setSetAsyncUndefined: Self = StObject.set(x, "setAsync", js.undefined)
     
-    @scala.inline
-    def setSetAutoAbort(value: /* autoAbort */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoAbort", js.Any.fromFunction1(value))
+    inline def setSetAutoAbort(value: /* autoAbort */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoAbort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoAbortUndefined: Self = StObject.set(x, "setAutoAbort", js.undefined)
+    inline def setSetAutoAbortUndefined: Self = StObject.set(x, "setAutoAbort", js.undefined)
     
-    @scala.inline
-    def setSetDefaultHeaders(value: /* defaultHeaders */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultHeaders", js.Any.fromFunction1(value))
+    inline def setSetDefaultHeaders(value: /* defaultHeaders */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultHeadersUndefined: Self = StObject.set(x, "setDefaultHeaders", js.undefined)
+    inline def setSetDefaultHeadersUndefined: Self = StObject.set(x, "setDefaultHeaders", js.undefined)
     
-    @scala.inline
-    def setSetDefaultPostHeader(value: /* defaultPostHeader */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultPostHeader", js.Any.fromFunction1(value))
+    inline def setSetDefaultPostHeader(value: /* defaultPostHeader */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultPostHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultPostHeaderUndefined: Self = StObject.set(x, "setDefaultPostHeader", js.undefined)
+    inline def setSetDefaultPostHeaderUndefined: Self = StObject.set(x, "setDefaultPostHeader", js.undefined)
     
-    @scala.inline
-    def setSetDefaultXhrHeader(value: /* defaultXhrHeader */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultXhrHeader", js.Any.fromFunction1(value))
+    inline def setSetDefaultXhrHeader(value: /* defaultXhrHeader */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultXhrHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultXhrHeaderUndefined: Self = StObject.set(x, "setDefaultXhrHeader", js.undefined)
+    inline def setSetDefaultXhrHeaderUndefined: Self = StObject.set(x, "setDefaultXhrHeader", js.undefined)
     
-    @scala.inline
-    def setSetDisableCaching(value: /* disableCaching */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisableCaching", js.Any.fromFunction1(value))
+    inline def setSetDisableCaching(value: /* disableCaching */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisableCaching", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisableCachingParam(value: /* disableCachingParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDisableCachingParam", js.Any.fromFunction1(value))
+    inline def setSetDisableCachingParam(value: /* disableCachingParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDisableCachingParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisableCachingParamUndefined: Self = StObject.set(x, "setDisableCachingParam", js.undefined)
+    inline def setSetDisableCachingParamUndefined: Self = StObject.set(x, "setDisableCachingParam", js.undefined)
     
-    @scala.inline
-    def setSetDisableCachingUndefined: Self = StObject.set(x, "setDisableCaching", js.undefined)
+    inline def setSetDisableCachingUndefined: Self = StObject.set(x, "setDisableCaching", js.undefined)
     
-    @scala.inline
-    def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
+    inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExtraParamsUndefined: Self = StObject.set(x, "setExtraParams", js.undefined)
+    inline def setSetExtraParamsUndefined: Self = StObject.set(x, "setExtraParams", js.undefined)
     
-    @scala.inline
-    def setSetMethod(value: /* method */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMethod", js.Any.fromFunction1(value))
+    inline def setSetMethod(value: /* method */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
+    inline def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
     
-    @scala.inline
-    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
+    inline def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
+    inline def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
     
-    @scala.inline
-    def setSetPassword(value: /* password */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
+    inline def setSetPassword(value: /* password */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPasswordUndefined: Self = StObject.set(x, "setPassword", js.undefined)
+    inline def setSetPasswordUndefined: Self = StObject.set(x, "setPassword", js.undefined)
     
-    @scala.inline
-    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+    inline def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+    inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
     
-    @scala.inline
-    def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
+    inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
-    @scala.inline
-    def setSetUseDefaultHeader(value: /* useDefaultHeader */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseDefaultHeader", js.Any.fromFunction1(value))
+    inline def setSetUseDefaultHeader(value: /* useDefaultHeader */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseDefaultHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseDefaultHeaderUndefined: Self = StObject.set(x, "setUseDefaultHeader", js.undefined)
+    inline def setSetUseDefaultHeaderUndefined: Self = StObject.set(x, "setUseDefaultHeader", js.undefined)
     
-    @scala.inline
-    def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1(value))
+    inline def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "setUseDefaultXhrHeader", js.undefined)
+    inline def setSetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "setUseDefaultXhrHeader", js.undefined)
     
-    @scala.inline
-    def setSetUsername(value: /* username */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUsername", js.Any.fromFunction1(value))
+    inline def setSetUsername(value: /* username */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUsername", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUsernameUndefined: Self = StObject.set(x, "setUsername", js.undefined)
+    inline def setSetUsernameUndefined: Self = StObject.set(x, "setUsername", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUpload(
+    inline def setUpload(
       value: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "upload", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUseDefaultXhrHeader(value: Boolean): Self = StObject.set(x, "useDefaultXhrHeader", value.asInstanceOf[js.Any])
+    inline def setUseDefaultXhrHeader(value: Boolean): Self = StObject.set(x, "useDefaultXhrHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "useDefaultXhrHeader", js.undefined)
+    inline def setUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "useDefaultXhrHeader", js.undefined)
   }
 }

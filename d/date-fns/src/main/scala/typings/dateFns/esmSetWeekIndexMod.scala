@@ -10,14 +10,10 @@ object esmSetWeekIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Double, week: Double, options: `0`): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, week: Double, options: `0`): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, week: Double, options: `0`): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, week: Double, options: `0`): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/setWeek/index", JSImport.Default)
     @js.native

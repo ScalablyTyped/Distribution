@@ -26,67 +26,47 @@ trait Email extends StObject {
 }
 object Email {
   
-  @scala.inline
-  def apply(): Email = {
+  inline def apply(): Email = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Email]
   }
   
-  @scala.inline
-  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+  extension [Self <: Email](x: Self) {
     
-    @scala.inline
-    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    @scala.inline
-    def setCustomFields(value: js.Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: js.Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
+    inline def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
+    inline def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+    inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+    inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+    inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

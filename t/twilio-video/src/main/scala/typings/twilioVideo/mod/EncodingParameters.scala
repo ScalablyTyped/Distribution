@@ -12,31 +12,23 @@ trait EncodingParameters extends StObject {
 }
 object EncodingParameters {
   
-  @scala.inline
-  def apply(): EncodingParameters = {
+  inline def apply(): EncodingParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncodingParameters]
   }
   
-  @scala.inline
-  implicit class EncodingParametersMutableBuilder[Self <: EncodingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: EncodingParameters](x: Self) {
     
-    @scala.inline
-    def setMaxAudioBitrate(value: Double): Self = StObject.set(x, "maxAudioBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxAudioBitrate(value: Double): Self = StObject.set(x, "maxAudioBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAudioBitrateNull: Self = StObject.set(x, "maxAudioBitrate", null)
+    inline def setMaxAudioBitrateNull: Self = StObject.set(x, "maxAudioBitrate", null)
     
-    @scala.inline
-    def setMaxAudioBitrateUndefined: Self = StObject.set(x, "maxAudioBitrate", js.undefined)
+    inline def setMaxAudioBitrateUndefined: Self = StObject.set(x, "maxAudioBitrate", js.undefined)
     
-    @scala.inline
-    def setMaxVideoBitrate(value: Double): Self = StObject.set(x, "maxVideoBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxVideoBitrate(value: Double): Self = StObject.set(x, "maxVideoBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVideoBitrateNull: Self = StObject.set(x, "maxVideoBitrate", null)
+    inline def setMaxVideoBitrateNull: Self = StObject.set(x, "maxVideoBitrate", null)
     
-    @scala.inline
-    def setMaxVideoBitrateUndefined: Self = StObject.set(x, "maxVideoBitrate", js.undefined)
+    inline def setMaxVideoBitrateUndefined: Self = StObject.set(x, "maxVideoBitrate", js.undefined)
   }
 }

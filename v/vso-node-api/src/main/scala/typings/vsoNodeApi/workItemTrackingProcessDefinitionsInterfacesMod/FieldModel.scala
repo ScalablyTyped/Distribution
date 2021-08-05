@@ -38,8 +38,7 @@ trait FieldModel extends StObject {
 }
 object FieldModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     id: String,
     name: String,
@@ -52,25 +51,18 @@ object FieldModel {
     __obj.asInstanceOf[FieldModel]
   }
   
-  @scala.inline
-  implicit class FieldModelMutableBuilder[Self <: FieldModel] (val x: Self) extends AnyVal {
+  extension [Self <: FieldModel](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickList(value: PickListMetadataModel): Self = StObject.set(x, "pickList", value.asInstanceOf[js.Any])
+    inline def setPickList(value: PickListMetadataModel): Self = StObject.set(x, "pickList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

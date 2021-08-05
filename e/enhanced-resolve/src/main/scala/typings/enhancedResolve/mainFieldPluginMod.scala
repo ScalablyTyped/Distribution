@@ -41,8 +41,7 @@ object mainFieldPluginMod {
   }
   object MainFieldPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: typings.enhancedResolve.resolverMod.^ => Unit,
       options: ForceRelative,
       source: String,
@@ -52,20 +51,15 @@ object mainFieldPluginMod {
       __obj.asInstanceOf[MainFieldPlugin]
     }
     
-    @scala.inline
-    implicit class MainFieldPluginMutableBuilder[Self <: MainFieldPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: MainFieldPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: ForceRelative): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ForceRelative): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

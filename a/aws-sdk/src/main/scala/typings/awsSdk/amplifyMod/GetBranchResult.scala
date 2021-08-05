@@ -10,16 +10,13 @@ trait GetBranchResult extends StObject {
 }
 object GetBranchResult {
   
-  @scala.inline
-  def apply(branch: Branch): GetBranchResult = {
+  inline def apply(branch: Branch): GetBranchResult = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBranchResult]
   }
   
-  @scala.inline
-  implicit class GetBranchResultMutableBuilder[Self <: GetBranchResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBranchResult](x: Self) {
     
-    @scala.inline
-    def setBranch(value: Branch): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: Branch): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
   }
 }

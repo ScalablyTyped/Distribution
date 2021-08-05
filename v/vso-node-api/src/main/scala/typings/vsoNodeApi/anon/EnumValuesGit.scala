@@ -10,16 +10,13 @@ trait EnumValuesGit extends StObject {
 }
 object EnumValuesGit {
   
-  @scala.inline
-  def apply(enumValues: Git): EnumValuesGit = {
+  inline def apply(enumValues: Git): EnumValuesGit = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesGit]
   }
   
-  @scala.inline
-  implicit class EnumValuesGitMutableBuilder[Self <: EnumValuesGit] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesGit](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Git): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Git): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

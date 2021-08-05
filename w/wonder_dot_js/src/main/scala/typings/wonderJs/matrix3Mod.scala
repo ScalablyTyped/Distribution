@@ -75,9 +75,7 @@ object matrix3Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Matrix3]
-    @scala.inline
-    def create(mat: Float32Array): Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix3]
+    inline def create(): Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Matrix3]
+    inline def create(mat: Float32Array): Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix3]
   }
 }

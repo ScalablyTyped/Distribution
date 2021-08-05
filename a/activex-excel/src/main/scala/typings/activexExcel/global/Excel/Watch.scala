@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Watch")
 @js.native
-class Watch protected ()
+/* private */ class Watch ()
   extends StObject
      with typings.activexExcel.Excel.Watch {
   
@@ -20,7 +20,7 @@ class Watch protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Watch_typekey")
   var ExcelDotWatch_typekey: typings.activexExcel.Excel.Watch = js.native
   

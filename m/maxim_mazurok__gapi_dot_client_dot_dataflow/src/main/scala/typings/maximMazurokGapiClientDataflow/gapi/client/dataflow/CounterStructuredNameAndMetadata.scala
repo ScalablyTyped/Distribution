@@ -14,25 +14,19 @@ trait CounterStructuredNameAndMetadata extends StObject {
 }
 object CounterStructuredNameAndMetadata {
   
-  @scala.inline
-  def apply(): CounterStructuredNameAndMetadata = {
+  inline def apply(): CounterStructuredNameAndMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CounterStructuredNameAndMetadata]
   }
   
-  @scala.inline
-  implicit class CounterStructuredNameAndMetadataMutableBuilder[Self <: CounterStructuredNameAndMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CounterStructuredNameAndMetadata](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: CounterMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: CounterMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: CounterStructuredName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: CounterStructuredName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

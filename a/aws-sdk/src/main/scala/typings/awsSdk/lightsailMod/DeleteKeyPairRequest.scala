@@ -13,16 +13,13 @@ trait DeleteKeyPairRequest extends StObject {
 }
 object DeleteKeyPairRequest {
   
-  @scala.inline
-  def apply(keyPairName: ResourceName): DeleteKeyPairRequest = {
+  inline def apply(keyPairName: ResourceName): DeleteKeyPairRequest = {
     val __obj = js.Dynamic.literal(keyPairName = keyPairName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class DeleteKeyPairRequestMutableBuilder[Self <: DeleteKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
+    inline def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
   }
 }

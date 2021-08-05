@@ -81,106 +81,73 @@ trait PodStatus extends StObject {
 }
 object PodStatus {
   
-  @scala.inline
-  def apply(): PodStatus = {
+  inline def apply(): PodStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PodStatus]
   }
   
-  @scala.inline
-  implicit class PodStatusMutableBuilder[Self <: PodStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PodStatus](x: Self) {
     
-    @scala.inline
-    def setConditions(value: Input[js.Array[Input[PodCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Input[js.Array[Input[PodCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Input[PodCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Input[PodCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerStatuses(value: Input[js.Array[Input[ContainerStatus]]]): Self = StObject.set(x, "containerStatuses", value.asInstanceOf[js.Any])
+    inline def setContainerStatuses(value: Input[js.Array[Input[ContainerStatus]]]): Self = StObject.set(x, "containerStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStatusesUndefined: Self = StObject.set(x, "containerStatuses", js.undefined)
+    inline def setContainerStatusesUndefined: Self = StObject.set(x, "containerStatuses", js.undefined)
     
-    @scala.inline
-    def setContainerStatusesVarargs(value: Input[ContainerStatus]*): Self = StObject.set(x, "containerStatuses", js.Array(value :_*))
+    inline def setContainerStatusesVarargs(value: Input[ContainerStatus]*): Self = StObject.set(x, "containerStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setEphemeralContainerStatuses(value: Input[js.Array[Input[ContainerStatus]]]): Self = StObject.set(x, "ephemeralContainerStatuses", value.asInstanceOf[js.Any])
+    inline def setEphemeralContainerStatuses(value: Input[js.Array[Input[ContainerStatus]]]): Self = StObject.set(x, "ephemeralContainerStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEphemeralContainerStatusesUndefined: Self = StObject.set(x, "ephemeralContainerStatuses", js.undefined)
+    inline def setEphemeralContainerStatusesUndefined: Self = StObject.set(x, "ephemeralContainerStatuses", js.undefined)
     
-    @scala.inline
-    def setEphemeralContainerStatusesVarargs(value: Input[ContainerStatus]*): Self = StObject.set(x, "ephemeralContainerStatuses", js.Array(value :_*))
+    inline def setEphemeralContainerStatusesVarargs(value: Input[ContainerStatus]*): Self = StObject.set(x, "ephemeralContainerStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setHostIP(value: Input[String]): Self = StObject.set(x, "hostIP", value.asInstanceOf[js.Any])
+    inline def setHostIP(value: Input[String]): Self = StObject.set(x, "hostIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIPUndefined: Self = StObject.set(x, "hostIP", js.undefined)
+    inline def setHostIPUndefined: Self = StObject.set(x, "hostIP", js.undefined)
     
-    @scala.inline
-    def setInitContainerStatuses(value: Input[js.Array[Input[ContainerStatus]]]): Self = StObject.set(x, "initContainerStatuses", value.asInstanceOf[js.Any])
+    inline def setInitContainerStatuses(value: Input[js.Array[Input[ContainerStatus]]]): Self = StObject.set(x, "initContainerStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitContainerStatusesUndefined: Self = StObject.set(x, "initContainerStatuses", js.undefined)
+    inline def setInitContainerStatusesUndefined: Self = StObject.set(x, "initContainerStatuses", js.undefined)
     
-    @scala.inline
-    def setInitContainerStatusesVarargs(value: Input[ContainerStatus]*): Self = StObject.set(x, "initContainerStatuses", js.Array(value :_*))
+    inline def setInitContainerStatusesVarargs(value: Input[ContainerStatus]*): Self = StObject.set(x, "initContainerStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setNominatedNodeName(value: Input[String]): Self = StObject.set(x, "nominatedNodeName", value.asInstanceOf[js.Any])
+    inline def setNominatedNodeName(value: Input[String]): Self = StObject.set(x, "nominatedNodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNominatedNodeNameUndefined: Self = StObject.set(x, "nominatedNodeName", js.undefined)
+    inline def setNominatedNodeNameUndefined: Self = StObject.set(x, "nominatedNodeName", js.undefined)
     
-    @scala.inline
-    def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
-    @scala.inline
-    def setPodIP(value: Input[String]): Self = StObject.set(x, "podIP", value.asInstanceOf[js.Any])
+    inline def setPodIP(value: Input[String]): Self = StObject.set(x, "podIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodIPUndefined: Self = StObject.set(x, "podIP", js.undefined)
+    inline def setPodIPUndefined: Self = StObject.set(x, "podIP", js.undefined)
     
-    @scala.inline
-    def setPodIPs(value: Input[js.Array[Input[PodIP]]]): Self = StObject.set(x, "podIPs", value.asInstanceOf[js.Any])
+    inline def setPodIPs(value: Input[js.Array[Input[PodIP]]]): Self = StObject.set(x, "podIPs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodIPsUndefined: Self = StObject.set(x, "podIPs", js.undefined)
+    inline def setPodIPsUndefined: Self = StObject.set(x, "podIPs", js.undefined)
     
-    @scala.inline
-    def setPodIPsVarargs(value: Input[PodIP]*): Self = StObject.set(x, "podIPs", js.Array(value :_*))
+    inline def setPodIPsVarargs(value: Input[PodIP]*): Self = StObject.set(x, "podIPs", js.Array(value :_*))
     
-    @scala.inline
-    def setQosClass(value: Input[String]): Self = StObject.set(x, "qosClass", value.asInstanceOf[js.Any])
+    inline def setQosClass(value: Input[String]): Self = StObject.set(x, "qosClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQosClassUndefined: Self = StObject.set(x, "qosClass", js.undefined)
+    inline def setQosClassUndefined: Self = StObject.set(x, "qosClass", js.undefined)
     
-    @scala.inline
-    def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

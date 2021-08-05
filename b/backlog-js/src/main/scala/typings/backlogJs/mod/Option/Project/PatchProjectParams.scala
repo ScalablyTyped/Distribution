@@ -22,55 +22,39 @@ trait PatchProjectParams extends StObject {
 }
 object PatchProjectParams {
   
-  @scala.inline
-  def apply(): PatchProjectParams = {
+  inline def apply(): PatchProjectParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchProjectParams]
   }
   
-  @scala.inline
-  implicit class PatchProjectParamsMutableBuilder[Self <: PatchProjectParams] (val x: Self) extends AnyVal {
+  extension [Self <: PatchProjectParams](x: Self) {
     
-    @scala.inline
-    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
-    @scala.inline
-    def setChartEnabled(value: Boolean): Self = StObject.set(x, "chartEnabled", value.asInstanceOf[js.Any])
+    inline def setChartEnabled(value: Boolean): Self = StObject.set(x, "chartEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartEnabledUndefined: Self = StObject.set(x, "chartEnabled", js.undefined)
+    inline def setChartEnabledUndefined: Self = StObject.set(x, "chartEnabled", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectLeaderCanEditProjectLeader(value: Boolean): Self = StObject.set(x, "projectLeaderCanEditProjectLeader", value.asInstanceOf[js.Any])
+    inline def setProjectLeaderCanEditProjectLeader(value: Boolean): Self = StObject.set(x, "projectLeaderCanEditProjectLeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectLeaderCanEditProjectLeaderUndefined: Self = StObject.set(x, "projectLeaderCanEditProjectLeader", js.undefined)
+    inline def setProjectLeaderCanEditProjectLeaderUndefined: Self = StObject.set(x, "projectLeaderCanEditProjectLeader", js.undefined)
     
-    @scala.inline
-    def setSubtaskingEnabled(value: Boolean): Self = StObject.set(x, "subtaskingEnabled", value.asInstanceOf[js.Any])
+    inline def setSubtaskingEnabled(value: Boolean): Self = StObject.set(x, "subtaskingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtaskingEnabledUndefined: Self = StObject.set(x, "subtaskingEnabled", js.undefined)
+    inline def setSubtaskingEnabledUndefined: Self = StObject.set(x, "subtaskingEnabled", js.undefined)
     
-    @scala.inline
-    def setTextFormattingRule(value: TextFormattingRule): Self = StObject.set(x, "textFormattingRule", value.asInstanceOf[js.Any])
+    inline def setTextFormattingRule(value: TextFormattingRule): Self = StObject.set(x, "textFormattingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormattingRuleUndefined: Self = StObject.set(x, "textFormattingRule", js.undefined)
+    inline def setTextFormattingRuleUndefined: Self = StObject.set(x, "textFormattingRule", js.undefined)
   }
 }

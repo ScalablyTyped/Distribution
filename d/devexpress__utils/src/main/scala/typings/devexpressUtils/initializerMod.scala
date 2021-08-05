@@ -12,8 +12,7 @@ object initializerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Initialize[TOptions](options: TOptions): Set[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("Initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Set[TOptions]]
+  inline def Initialize[TOptions](options: TOptions): Set[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("Initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Set[TOptions]]
   
   @JSImport("@devexpress/utils/lib/class/initializer", "Initializer")
   @js.native

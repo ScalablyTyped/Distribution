@@ -17,8 +17,7 @@ trait ContentIndexMark
 }
 object ContentIndexMark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlternativeText: String,
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
@@ -38,10 +37,8 @@ object ContentIndexMark {
     __obj.asInstanceOf[ContentIndexMark]
   }
   
-  @scala.inline
-  implicit class ContentIndexMarkMutableBuilder[Self <: ContentIndexMark] (val x: Self) extends AnyVal {
+  extension [Self <: ContentIndexMark](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
   }
 }

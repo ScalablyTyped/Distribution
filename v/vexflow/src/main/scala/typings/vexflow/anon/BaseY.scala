@@ -12,19 +12,15 @@ trait BaseY extends StObject {
 }
 object BaseY {
   
-  @scala.inline
-  def apply(baseY: Double, topY: Double): BaseY = {
+  inline def apply(baseY: Double, topY: Double): BaseY = {
     val __obj = js.Dynamic.literal(baseY = baseY.asInstanceOf[js.Any], topY = topY.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseY]
   }
   
-  @scala.inline
-  implicit class BaseYMutableBuilder[Self <: BaseY] (val x: Self) extends AnyVal {
+  extension [Self <: BaseY](x: Self) {
     
-    @scala.inline
-    def setBaseY(value: Double): Self = StObject.set(x, "baseY", value.asInstanceOf[js.Any])
+    inline def setBaseY(value: Double): Self = StObject.set(x, "baseY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopY(value: Double): Self = StObject.set(x, "topY", value.asInstanceOf[js.Any])
+    inline def setTopY(value: Double): Self = StObject.set(x, "topY", value.asInstanceOf[js.Any])
   }
 }

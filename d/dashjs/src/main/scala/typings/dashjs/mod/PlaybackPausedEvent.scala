@@ -16,23 +16,18 @@ trait PlaybackPausedEvent
 }
 object PlaybackPausedEvent {
   
-  @scala.inline
-  def apply(): PlaybackPausedEvent = {
+  inline def apply(): PlaybackPausedEvent = {
     val __obj = js.Dynamic.literal(ended = null)
     __obj.updateDynamic("type")("playbackPaused")
     __obj.asInstanceOf[PlaybackPausedEvent]
   }
   
-  @scala.inline
-  implicit class PlaybackPausedEventMutableBuilder[Self <: PlaybackPausedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackPausedEvent](x: Self) {
     
-    @scala.inline
-    def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndedNull: Self = StObject.set(x, "ended", null)
+    inline def setEndedNull: Self = StObject.set(x, "ended", null)
     
-    @scala.inline
-    def setType(value: playbackPaused): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: playbackPaused): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

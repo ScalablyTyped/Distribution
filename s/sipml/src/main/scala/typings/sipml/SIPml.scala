@@ -29,8 +29,7 @@ object SIPml {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       getContent: () => js.Object,
       getContentString: () => String,
@@ -43,26 +42,19 @@ object SIPml {
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetContent(value: () => js.Object): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => js.Object): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentString(value: () => String): Self = StObject.set(x, "getContentString", js.Any.fromFunction0(value))
+      inline def setGetContentString(value: () => String): Self = StObject.set(x, "getContentString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentType(value: () => js.Object): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
+      inline def setGetContentType(value: () => js.Object): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSipResponseCode(value: () => Double): Self = StObject.set(x, "getSipResponseCode", js.Any.fromFunction0(value))
+      inline def setGetSipResponseCode(value: () => Double): Self = StObject.set(x, "getSipResponseCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,8 +66,7 @@ object SIPml {
   }
   object EventTarget {
     
-    @scala.inline
-    def apply[EventSubscriptionType /* <: String */, EventType /* <: Event */](
+    inline def apply[EventSubscriptionType /* <: String */, EventType /* <: Event */](
       addEventListener: (EventSubscriptionType, js.Function1[/* e */ EventType, Unit]) => Unit,
       removeEventListener: EventSubscriptionType => Unit
     ): EventTarget[EventSubscriptionType, EventType] = {
@@ -83,14 +74,11 @@ object SIPml {
       __obj.asInstanceOf[EventTarget[EventSubscriptionType, EventType]]
     }
     
-    @scala.inline
-    implicit class EventTargetMutableBuilder[Self <: EventTarget[?, ?], EventSubscriptionType /* <: String */, EventType /* <: Event */] (val x: Self & (EventTarget[EventSubscriptionType, EventType])) extends AnyVal {
+    extension [Self <: EventTarget[?, ?], EventSubscriptionType /* <: String */, EventType /* <: Event */](x: Self & (EventTarget[EventSubscriptionType, EventType])) {
       
-      @scala.inline
-      def setAddEventListener(value: (EventSubscriptionType, js.Function1[/* e */ EventType, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (EventSubscriptionType, js.Function1[/* e */ EventType, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: EventSubscriptionType => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction1(value))
+      inline def setRemoveEventListener(value: EventSubscriptionType => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -204,80 +192,56 @@ object SIPml {
     }
     object Configuration {
       
-      @scala.inline
-      def apply(): Configuration = {
+      inline def apply(): Configuration = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Configuration]
       }
       
-      @scala.inline
-      implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+      extension [Self <: Configuration](x: Self) {
         
-        @scala.inline
-        def setAudio_remote(value: HTMLElement): Self = StObject.set(x, "audio_remote", value.asInstanceOf[js.Any])
+        inline def setAudio_remote(value: HTMLElement): Self = StObject.set(x, "audio_remote", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudio_remoteUndefined: Self = StObject.set(x, "audio_remote", js.undefined)
+        inline def setAudio_remoteUndefined: Self = StObject.set(x, "audio_remote", js.undefined)
         
-        @scala.inline
-        def setBandwidth(value: Audio): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+        inline def setBandwidth(value: Audio): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+        inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
         
-        @scala.inline
-        def setEvents_listener(value: Events): Self = StObject.set(x, "events_listener", value.asInstanceOf[js.Any])
+        inline def setEvents_listener(value: Events): Self = StObject.set(x, "events_listener", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvents_listenerUndefined: Self = StObject.set(x, "events_listener", js.undefined)
+        inline def setEvents_listenerUndefined: Self = StObject.set(x, "events_listener", js.undefined)
         
-        @scala.inline
-        def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+        inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
-        @scala.inline
-        def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+        inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+        inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
         
-        @scala.inline
-        def setSip_caps(value: js.Array[js.Object]): Self = StObject.set(x, "sip_caps", value.asInstanceOf[js.Any])
+        inline def setSip_caps(value: js.Array[js.Object]): Self = StObject.set(x, "sip_caps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSip_capsUndefined: Self = StObject.set(x, "sip_caps", js.undefined)
+        inline def setSip_capsUndefined: Self = StObject.set(x, "sip_caps", js.undefined)
         
-        @scala.inline
-        def setSip_capsVarargs(value: js.Object*): Self = StObject.set(x, "sip_caps", js.Array(value :_*))
+        inline def setSip_capsVarargs(value: js.Object*): Self = StObject.set(x, "sip_caps", js.Array(value :_*))
         
-        @scala.inline
-        def setSip_headers(value: js.Array[js.Object]): Self = StObject.set(x, "sip_headers", value.asInstanceOf[js.Any])
+        inline def setSip_headers(value: js.Array[js.Object]): Self = StObject.set(x, "sip_headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSip_headersUndefined: Self = StObject.set(x, "sip_headers", js.undefined)
+        inline def setSip_headersUndefined: Self = StObject.set(x, "sip_headers", js.undefined)
         
-        @scala.inline
-        def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value :_*))
+        inline def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value :_*))
         
-        @scala.inline
-        def setVideo_local(value: HTMLElement): Self = StObject.set(x, "video_local", value.asInstanceOf[js.Any])
+        inline def setVideo_local(value: HTMLElement): Self = StObject.set(x, "video_local", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideo_localUndefined: Self = StObject.set(x, "video_local", js.undefined)
+        inline def setVideo_localUndefined: Self = StObject.set(x, "video_local", js.undefined)
         
-        @scala.inline
-        def setVideo_remote(value: HTMLElement): Self = StObject.set(x, "video_remote", value.asInstanceOf[js.Any])
+        inline def setVideo_remote(value: HTMLElement): Self = StObject.set(x, "video_remote", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideo_remoteUndefined: Self = StObject.set(x, "video_remote", js.undefined)
+        inline def setVideo_remoteUndefined: Self = StObject.set(x, "video_remote", js.undefined)
         
-        @scala.inline
-        def setVideo_size(value: MaxHeight): Self = StObject.set(x, "video_size", value.asInstanceOf[js.Any])
+        inline def setVideo_size(value: MaxHeight): Self = StObject.set(x, "video_size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideo_sizeUndefined: Self = StObject.set(x, "video_size", js.undefined)
+        inline def setVideo_sizeUndefined: Self = StObject.set(x, "video_size", js.undefined)
       }
     }
     
@@ -291,8 +255,7 @@ object SIPml {
     }
     object Event {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         description: String,
         getContent: () => js.Object,
         getContentString: () => String,
@@ -307,14 +270,11 @@ object SIPml {
         __obj.asInstanceOf[typings.sipml.SIPml.Session.Event]
       }
       
-      @scala.inline
-      implicit class EventMutableBuilder[Self <: typings.sipml.SIPml.Session.Event] (val x: Self) extends AnyVal {
+      extension [Self <: typings.sipml.SIPml.Session.Event](x: Self) {
         
-        @scala.inline
-        def setGetTransferDestinationFriendlyName(value: () => String): Self = StObject.set(x, "getTransferDestinationFriendlyName", js.Any.fromFunction0(value))
+        inline def setGetTransferDestinationFriendlyName(value: () => String): Self = StObject.set(x, "getTransferDestinationFriendlyName", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+        inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       }
     }
     
@@ -460,116 +420,80 @@ object SIPml {
     }
     object Configuration {
       
-      @scala.inline
-      def apply(): typings.sipml.SIPml.Stack.Configuration = {
+      inline def apply(): typings.sipml.SIPml.Stack.Configuration = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.sipml.SIPml.Stack.Configuration]
       }
       
-      @scala.inline
-      implicit class ConfigurationMutableBuilder[Self <: typings.sipml.SIPml.Stack.Configuration] (val x: Self) extends AnyVal {
+      extension [Self <: typings.sipml.SIPml.Stack.Configuration](x: Self) {
         
-        @scala.inline
-        def setBandwidth(value: Audio): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+        inline def setBandwidth(value: Audio): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+        inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
         
-        @scala.inline
-        def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+        inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+        inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
         
-        @scala.inline
-        def setEnable_click2call(value: Boolean): Self = StObject.set(x, "enable_click2call", value.asInstanceOf[js.Any])
+        inline def setEnable_click2call(value: Boolean): Self = StObject.set(x, "enable_click2call", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnable_click2callUndefined: Self = StObject.set(x, "enable_click2call", js.undefined)
+        inline def setEnable_click2callUndefined: Self = StObject.set(x, "enable_click2call", js.undefined)
         
-        @scala.inline
-        def setEnable_early_ims(value: Boolean): Self = StObject.set(x, "enable_early_ims", value.asInstanceOf[js.Any])
+        inline def setEnable_early_ims(value: Boolean): Self = StObject.set(x, "enable_early_ims", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnable_early_imsUndefined: Self = StObject.set(x, "enable_early_ims", js.undefined)
+        inline def setEnable_early_imsUndefined: Self = StObject.set(x, "enable_early_ims", js.undefined)
         
-        @scala.inline
-        def setEnable_media_stream_cache(value: Boolean): Self = StObject.set(x, "enable_media_stream_cache", value.asInstanceOf[js.Any])
+        inline def setEnable_media_stream_cache(value: Boolean): Self = StObject.set(x, "enable_media_stream_cache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnable_media_stream_cacheUndefined: Self = StObject.set(x, "enable_media_stream_cache", js.undefined)
+        inline def setEnable_media_stream_cacheUndefined: Self = StObject.set(x, "enable_media_stream_cache", js.undefined)
         
-        @scala.inline
-        def setEnable_rtcweb_breaker(value: Boolean): Self = StObject.set(x, "enable_rtcweb_breaker", value.asInstanceOf[js.Any])
+        inline def setEnable_rtcweb_breaker(value: Boolean): Self = StObject.set(x, "enable_rtcweb_breaker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnable_rtcweb_breakerUndefined: Self = StObject.set(x, "enable_rtcweb_breaker", js.undefined)
+        inline def setEnable_rtcweb_breakerUndefined: Self = StObject.set(x, "enable_rtcweb_breaker", js.undefined)
         
-        @scala.inline
-        def setEvents_listener(value: Listener): Self = StObject.set(x, "events_listener", value.asInstanceOf[js.Any])
+        inline def setEvents_listener(value: Listener): Self = StObject.set(x, "events_listener", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvents_listenerUndefined: Self = StObject.set(x, "events_listener", js.undefined)
+        inline def setEvents_listenerUndefined: Self = StObject.set(x, "events_listener", js.undefined)
         
-        @scala.inline
-        def setIce_servers(value: js.Array[js.Object]): Self = StObject.set(x, "ice_servers", value.asInstanceOf[js.Any])
+        inline def setIce_servers(value: js.Array[js.Object]): Self = StObject.set(x, "ice_servers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIce_serversUndefined: Self = StObject.set(x, "ice_servers", js.undefined)
+        inline def setIce_serversUndefined: Self = StObject.set(x, "ice_servers", js.undefined)
         
-        @scala.inline
-        def setIce_serversVarargs(value: js.Object*): Self = StObject.set(x, "ice_servers", js.Array(value :_*))
+        inline def setIce_serversVarargs(value: js.Object*): Self = StObject.set(x, "ice_servers", js.Array(value :_*))
         
-        @scala.inline
-        def setImpi(value: String): Self = StObject.set(x, "impi", value.asInstanceOf[js.Any])
+        inline def setImpi(value: String): Self = StObject.set(x, "impi", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImpiUndefined: Self = StObject.set(x, "impi", js.undefined)
+        inline def setImpiUndefined: Self = StObject.set(x, "impi", js.undefined)
         
-        @scala.inline
-        def setImpu(value: String): Self = StObject.set(x, "impu", value.asInstanceOf[js.Any])
+        inline def setImpu(value: String): Self = StObject.set(x, "impu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImpuUndefined: Self = StObject.set(x, "impu", js.undefined)
+        inline def setImpuUndefined: Self = StObject.set(x, "impu", js.undefined)
         
-        @scala.inline
-        def setOutbound_proxy_url(value: String): Self = StObject.set(x, "outbound_proxy_url", value.asInstanceOf[js.Any])
+        inline def setOutbound_proxy_url(value: String): Self = StObject.set(x, "outbound_proxy_url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutbound_proxy_urlUndefined: Self = StObject.set(x, "outbound_proxy_url", js.undefined)
+        inline def setOutbound_proxy_urlUndefined: Self = StObject.set(x, "outbound_proxy_url", js.undefined)
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+        inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
         
-        @scala.inline
-        def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+        inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+        inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
         
-        @scala.inline
-        def setSip_headers(value: js.Array[js.Object]): Self = StObject.set(x, "sip_headers", value.asInstanceOf[js.Any])
+        inline def setSip_headers(value: js.Array[js.Object]): Self = StObject.set(x, "sip_headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSip_headersUndefined: Self = StObject.set(x, "sip_headers", js.undefined)
+        inline def setSip_headersUndefined: Self = StObject.set(x, "sip_headers", js.undefined)
         
-        @scala.inline
-        def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value :_*))
+        inline def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value :_*))
         
-        @scala.inline
-        def setVideo_size(value: MaxHeight): Self = StObject.set(x, "video_size", value.asInstanceOf[js.Any])
+        inline def setVideo_size(value: MaxHeight): Self = StObject.set(x, "video_size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideo_sizeUndefined: Self = StObject.set(x, "video_size", js.undefined)
+        inline def setVideo_sizeUndefined: Self = StObject.set(x, "video_size", js.undefined)
         
-        @scala.inline
-        def setWebsocket_proxy_url(value: String): Self = StObject.set(x, "websocket_proxy_url", value.asInstanceOf[js.Any])
+        inline def setWebsocket_proxy_url(value: String): Self = StObject.set(x, "websocket_proxy_url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebsocket_proxy_urlUndefined: Self = StObject.set(x, "websocket_proxy_url", js.undefined)
+        inline def setWebsocket_proxy_urlUndefined: Self = StObject.set(x, "websocket_proxy_url", js.undefined)
       }
     }
     
@@ -581,8 +505,7 @@ object SIPml {
     }
     object Event {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         description: String,
         getContent: () => js.Object,
         getContentString: () => String,
@@ -596,11 +519,9 @@ object SIPml {
         __obj.asInstanceOf[typings.sipml.SIPml.Stack.Event]
       }
       
-      @scala.inline
-      implicit class EventMutableBuilder[Self <: typings.sipml.SIPml.Stack.Event] (val x: Self) extends AnyVal {
+      extension [Self <: typings.sipml.SIPml.Stack.Event](x: Self) {
         
-        @scala.inline
-        def setNewSession(value: Session): Self = StObject.set(x, "newSession", value.asInstanceOf[js.Any])
+        inline def setNewSession(value: Session): Self = StObject.set(x, "newSession", value.asInstanceOf[js.Any])
       }
     }
     

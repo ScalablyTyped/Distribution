@@ -18,22 +18,17 @@ trait DeploymentCommand extends StObject {
 }
 object DeploymentCommand {
   
-  @scala.inline
-  def apply(Name: DeploymentCommandName): DeploymentCommand = {
+  inline def apply(Name: DeploymentCommandName): DeploymentCommand = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentCommand]
   }
   
-  @scala.inline
-  implicit class DeploymentCommandMutableBuilder[Self <: DeploymentCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentCommand](x: Self) {
     
-    @scala.inline
-    def setArgs(value: DeploymentCommandArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: DeploymentCommandArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    @scala.inline
-    def setName(value: DeploymentCommandName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DeploymentCommandName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait DescribeListenersOutput extends StObject {
 }
 object DescribeListenersOutput {
   
-  @scala.inline
-  def apply(): DescribeListenersOutput = {
+  inline def apply(): DescribeListenersOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeListenersOutput]
   }
   
-  @scala.inline
-  implicit class DescribeListenersOutputMutableBuilder[Self <: DescribeListenersOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeListenersOutput](x: Self) {
     
-    @scala.inline
-    def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
+    inline def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
-    @scala.inline
-    def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

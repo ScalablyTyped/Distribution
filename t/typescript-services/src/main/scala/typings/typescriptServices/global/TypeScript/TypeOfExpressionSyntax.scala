@@ -96,6 +96,5 @@ object TypeOfExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(expression: IUnaryExpressionSyntax): typings.typescriptServices.TypeScript.TypeOfExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeOfExpressionSyntax]
+  inline def create1(expression: IUnaryExpressionSyntax): typings.typescriptServices.TypeScript.TypeOfExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeOfExpressionSyntax]
 }

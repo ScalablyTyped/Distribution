@@ -8,41 +8,33 @@ object webshotNodeStrings {
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait html extends StObject
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait jpeg extends StObject
-  @scala.inline
-  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  inline def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
   @js.native
   sealed trait jpg extends StObject
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
   
   @js.native
   sealed trait png extends StObject
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
+  inline def png: png = "png".asInstanceOf[png]
   
   @js.native
   sealed trait url extends StObject
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
   sealed trait window extends StObject
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  inline def window: window = "window".asInstanceOf[window]
 }

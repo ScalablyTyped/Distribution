@@ -39,8 +39,7 @@ trait ɵangularPackagesCoreCoreBh
 }
 object ɵangularPackagesCoreCoreBh {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classBindings: TStylingRange,
     directiveEnd: Double,
     directiveStart: Double,
@@ -59,36 +58,26 @@ object ɵangularPackagesCoreCoreBh {
     __obj.asInstanceOf[ɵangularPackagesCoreCoreBh]
   }
   
-  @scala.inline
-  implicit class ɵangularPackagesCoreCoreBhMutableBuilder[Self <: ɵangularPackagesCoreCoreBh] (val x: Self) extends AnyVal {
+  extension [Self <: ɵangularPackagesCoreCoreBh](x: Self) {
     
-    @scala.inline
-    def setChild(
+    inline def setChild(
       value: ɵangularPackagesCoreCoreBh | TTextNode | TElementContainerNode | TContainerNode | TProjectionNode
     ): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNull: Self = StObject.set(x, "child", null)
+    inline def setChildNull: Self = StObject.set(x, "child", null)
     
-    @scala.inline
-    def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setProjection(value: js.Array[TNode | js.Array[RNode]]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: js.Array[TNode | js.Array[RNode]]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionNull: Self = StObject.set(x, "projection", null)
+    inline def setProjectionNull: Self = StObject.set(x, "projection", null)
     
-    @scala.inline
-    def setProjectionVarargs(value: (TNode | js.Array[RNode])*): Self = StObject.set(x, "projection", js.Array(value :_*))
+    inline def setProjectionVarargs(value: (TNode | js.Array[RNode])*): Self = StObject.set(x, "projection", js.Array(value :_*))
     
-    @scala.inline
-    def setTViews(value: Null): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
+    inline def setTViews(value: Null): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

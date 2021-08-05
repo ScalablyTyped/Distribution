@@ -21,28 +21,21 @@ trait SchemaListTenancyUnitsResponse extends StObject {
 }
 object SchemaListTenancyUnitsResponse {
   
-  @scala.inline
-  def apply(): SchemaListTenancyUnitsResponse = {
+  inline def apply(): SchemaListTenancyUnitsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListTenancyUnitsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListTenancyUnitsResponseMutableBuilder[Self <: SchemaListTenancyUnitsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListTenancyUnitsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTenancyUnits(value: js.Array[SchemaTenancyUnit]): Self = StObject.set(x, "tenancyUnits", value.asInstanceOf[js.Any])
+    inline def setTenancyUnits(value: js.Array[SchemaTenancyUnit]): Self = StObject.set(x, "tenancyUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUnitsUndefined: Self = StObject.set(x, "tenancyUnits", js.undefined)
+    inline def setTenancyUnitsUndefined: Self = StObject.set(x, "tenancyUnits", js.undefined)
     
-    @scala.inline
-    def setTenancyUnitsVarargs(value: SchemaTenancyUnit*): Self = StObject.set(x, "tenancyUnits", js.Array(value :_*))
+    inline def setTenancyUnitsVarargs(value: SchemaTenancyUnit*): Self = StObject.set(x, "tenancyUnits", js.Array(value :_*))
   }
 }

@@ -20,49 +20,35 @@ trait AutomaticRepliesMailTips extends StObject {
 }
 object AutomaticRepliesMailTips {
   
-  @scala.inline
-  def apply(): AutomaticRepliesMailTips = {
+  inline def apply(): AutomaticRepliesMailTips = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomaticRepliesMailTips]
   }
   
-  @scala.inline
-  implicit class AutomaticRepliesMailTipsMutableBuilder[Self <: AutomaticRepliesMailTips] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticRepliesMailTips](x: Self) {
     
-    @scala.inline
-    def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageLanguage(value: NullableOption[LocaleInfo]): Self = StObject.set(x, "messageLanguage", value.asInstanceOf[js.Any])
+    inline def setMessageLanguage(value: NullableOption[LocaleInfo]): Self = StObject.set(x, "messageLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageLanguageNull: Self = StObject.set(x, "messageLanguage", null)
+    inline def setMessageLanguageNull: Self = StObject.set(x, "messageLanguage", null)
     
-    @scala.inline
-    def setMessageLanguageUndefined: Self = StObject.set(x, "messageLanguage", js.undefined)
+    inline def setMessageLanguageUndefined: Self = StObject.set(x, "messageLanguage", js.undefined)
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setScheduledEndTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledEndTime", value.asInstanceOf[js.Any])
+    inline def setScheduledEndTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledEndTimeNull: Self = StObject.set(x, "scheduledEndTime", null)
+    inline def setScheduledEndTimeNull: Self = StObject.set(x, "scheduledEndTime", null)
     
-    @scala.inline
-    def setScheduledEndTimeUndefined: Self = StObject.set(x, "scheduledEndTime", js.undefined)
+    inline def setScheduledEndTimeUndefined: Self = StObject.set(x, "scheduledEndTime", js.undefined)
     
-    @scala.inline
-    def setScheduledStartTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
+    inline def setScheduledStartTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledStartTimeNull: Self = StObject.set(x, "scheduledStartTime", null)
+    inline def setScheduledStartTimeNull: Self = StObject.set(x, "scheduledStartTime", null)
     
-    @scala.inline
-    def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
+    inline def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
   }
 }

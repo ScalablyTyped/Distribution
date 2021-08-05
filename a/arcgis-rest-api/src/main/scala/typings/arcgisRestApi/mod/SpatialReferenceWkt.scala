@@ -14,25 +14,19 @@ trait SpatialReferenceWkt
 }
 object SpatialReferenceWkt {
   
-  @scala.inline
-  def apply(): SpatialReferenceWkt = {
+  inline def apply(): SpatialReferenceWkt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpatialReferenceWkt]
   }
   
-  @scala.inline
-  implicit class SpatialReferenceWktMutableBuilder[Self <: SpatialReferenceWkt] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialReferenceWkt](x: Self) {
     
-    @scala.inline
-    def setLatestWkt(value: String): Self = StObject.set(x, "latestWkt", value.asInstanceOf[js.Any])
+    inline def setLatestWkt(value: String): Self = StObject.set(x, "latestWkt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestWktUndefined: Self = StObject.set(x, "latestWkt", js.undefined)
+    inline def setLatestWktUndefined: Self = StObject.set(x, "latestWkt", js.undefined)
     
-    @scala.inline
-    def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
+    inline def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
+    inline def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
   }
 }

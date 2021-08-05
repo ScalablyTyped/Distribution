@@ -18,19 +18,15 @@ trait PseudoElementRemovedEvent extends StObject {
 }
 object PseudoElementRemovedEvent {
   
-  @scala.inline
-  def apply(parentId: NodeId, pseudoElementId: NodeId): PseudoElementRemovedEvent = {
+  inline def apply(parentId: NodeId, pseudoElementId: NodeId): PseudoElementRemovedEvent = {
     val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any], pseudoElementId = pseudoElementId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PseudoElementRemovedEvent]
   }
   
-  @scala.inline
-  implicit class PseudoElementRemovedEventMutableBuilder[Self <: PseudoElementRemovedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoElementRemovedEvent](x: Self) {
     
-    @scala.inline
-    def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoElementId(value: NodeId): Self = StObject.set(x, "pseudoElementId", value.asInstanceOf[js.Any])
+    inline def setPseudoElementId(value: NodeId): Self = StObject.set(x, "pseudoElementId", value.asInstanceOf[js.Any])
   }
 }

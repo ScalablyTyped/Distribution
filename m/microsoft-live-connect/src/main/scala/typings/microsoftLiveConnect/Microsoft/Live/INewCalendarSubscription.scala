@@ -23,19 +23,15 @@ trait INewCalendarSubscription extends StObject {
 }
 object INewCalendarSubscription {
   
-  @scala.inline
-  def apply(name: String, subscription_location: String): INewCalendarSubscription = {
+  inline def apply(name: String, subscription_location: String): INewCalendarSubscription = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subscription_location = subscription_location.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewCalendarSubscription]
   }
   
-  @scala.inline
-  implicit class INewCalendarSubscriptionMutableBuilder[Self <: INewCalendarSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: INewCalendarSubscription](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription_location(value: String): Self = StObject.set(x, "subscription_location", value.asInstanceOf[js.Any])
+    inline def setSubscription_location(value: String): Self = StObject.set(x, "subscription_location", value.asInstanceOf[js.Any])
   }
 }

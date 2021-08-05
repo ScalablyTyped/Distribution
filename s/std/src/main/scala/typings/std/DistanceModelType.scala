@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DistanceModelType extends StObject
 object DistanceModelType {
   
-  @scala.inline
-  def exponential: typings.std.stdStrings.exponential = "exponential".asInstanceOf[typings.std.stdStrings.exponential]
+  inline def exponential: typings.std.stdStrings.exponential = "exponential".asInstanceOf[typings.std.stdStrings.exponential]
   
-  @scala.inline
-  def inverse: typings.std.stdStrings.inverse = "inverse".asInstanceOf[typings.std.stdStrings.inverse]
+  inline def inverse: typings.std.stdStrings.inverse = "inverse".asInstanceOf[typings.std.stdStrings.inverse]
   
-  @scala.inline
-  def linear: typings.std.stdStrings.linear = "linear".asInstanceOf[typings.std.stdStrings.linear]
+  inline def linear: typings.std.stdStrings.linear = "linear".asInstanceOf[typings.std.stdStrings.linear]
 }

@@ -11,22 +11,17 @@ trait InstancesAddResourcePoliciesRequest extends StObject {
 }
 object InstancesAddResourcePoliciesRequest {
   
-  @scala.inline
-  def apply(): InstancesAddResourcePoliciesRequest = {
+  inline def apply(): InstancesAddResourcePoliciesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancesAddResourcePoliciesRequest]
   }
   
-  @scala.inline
-  implicit class InstancesAddResourcePoliciesRequestMutableBuilder[Self <: InstancesAddResourcePoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstancesAddResourcePoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
+    inline def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
+    inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    @scala.inline
-    def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
   }
 }

@@ -21,25 +21,19 @@ trait PartitionOptions extends StObject {
 }
 object PartitionOptions {
   
-  @scala.inline
-  def apply(): PartitionOptions = {
+  inline def apply(): PartitionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionOptions]
   }
   
-  @scala.inline
-  implicit class PartitionOptionsMutableBuilder[Self <: PartitionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionOptions](x: Self) {
     
-    @scala.inline
-    def setMaxPartitions(value: String): Self = StObject.set(x, "maxPartitions", value.asInstanceOf[js.Any])
+    inline def setMaxPartitions(value: String): Self = StObject.set(x, "maxPartitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPartitionsUndefined: Self = StObject.set(x, "maxPartitions", js.undefined)
+    inline def setMaxPartitionsUndefined: Self = StObject.set(x, "maxPartitions", js.undefined)
     
-    @scala.inline
-    def setPartitionSizeBytes(value: String): Self = StObject.set(x, "partitionSizeBytes", value.asInstanceOf[js.Any])
+    inline def setPartitionSizeBytes(value: String): Self = StObject.set(x, "partitionSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionSizeBytesUndefined: Self = StObject.set(x, "partitionSizeBytes", js.undefined)
+    inline def setPartitionSizeBytesUndefined: Self = StObject.set(x, "partitionSizeBytes", js.undefined)
   }
 }

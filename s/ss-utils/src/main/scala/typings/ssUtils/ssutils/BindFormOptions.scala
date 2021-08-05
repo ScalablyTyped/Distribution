@@ -19,43 +19,31 @@ trait BindFormOptions extends StObject {
 }
 object BindFormOptions {
   
-  @scala.inline
-  def apply(): BindFormOptions = {
+  inline def apply(): BindFormOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindFormOptions]
   }
   
-  @scala.inline
-  implicit class BindFormOptionsMutableBuilder[Self <: BindFormOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BindFormOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setOnSubmitDisable(value: String): Self = StObject.set(x, "onSubmitDisable", value.asInstanceOf[js.Any])
+    inline def setOnSubmitDisable(value: String): Self = StObject.set(x, "onSubmitDisable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSubmitDisableUndefined: Self = StObject.set(x, "onSubmitDisable", js.undefined)
+    inline def setOnSubmitDisableUndefined: Self = StObject.set(x, "onSubmitDisable", js.undefined)
     
-    @scala.inline
-    def setValidate(value: /* form */ HTMLFormElement => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: /* form */ HTMLFormElement => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    @scala.inline
-    def setValidation(value: ValidationOptional): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: ValidationOptional): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

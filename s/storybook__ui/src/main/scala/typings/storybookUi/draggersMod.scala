@@ -34,8 +34,7 @@ object draggersMod {
     @JSImport("@storybook/ui/dist/components/layout/draggers", "Draggable.defaultProps")
     @js.native
     def defaultProps: DraggableProps = js.native
-    @scala.inline
-    def defaultProps_=(x: DraggableProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DraggableProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/ui/dist/components/layout/draggers", "Handle")
@@ -53,10 +52,8 @@ object draggersMod {
   trait Axis extends StObject
   object Axis {
     
-    @scala.inline
-    def x: typings.storybookUi.storybookUiStrings.x = "x".asInstanceOf[typings.storybookUi.storybookUiStrings.x]
+    inline def x: typings.storybookUi.storybookUiStrings.x = "x".asInstanceOf[typings.storybookUi.storybookUiStrings.x]
     
-    @scala.inline
-    def y: typings.storybookUi.storybookUiStrings.y = "y".asInstanceOf[typings.storybookUi.storybookUiStrings.y]
+    inline def y: typings.storybookUi.storybookUiStrings.y = "y".asInstanceOf[typings.storybookUi.storybookUiStrings.y]
   }
 }

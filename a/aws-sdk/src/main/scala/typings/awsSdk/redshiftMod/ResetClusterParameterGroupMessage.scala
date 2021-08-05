@@ -23,31 +23,23 @@ trait ResetClusterParameterGroupMessage extends StObject {
 }
 object ResetClusterParameterGroupMessage {
   
-  @scala.inline
-  def apply(ParameterGroupName: String): ResetClusterParameterGroupMessage = {
+  inline def apply(ParameterGroupName: String): ResetClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetClusterParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class ResetClusterParameterGroupMessageMutableBuilder[Self <: ResetClusterParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ResetClusterParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: ParametersList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParametersList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setResetAllParameters(value: Boolean): Self = StObject.set(x, "ResetAllParameters", value.asInstanceOf[js.Any])
+    inline def setResetAllParameters(value: Boolean): Self = StObject.set(x, "ResetAllParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetAllParametersUndefined: Self = StObject.set(x, "ResetAllParameters", js.undefined)
+    inline def setResetAllParametersUndefined: Self = StObject.set(x, "ResetAllParameters", js.undefined)
   }
 }

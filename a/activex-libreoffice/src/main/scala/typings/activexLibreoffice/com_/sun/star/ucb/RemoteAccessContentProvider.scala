@@ -11,8 +11,7 @@ trait RemoteAccessContentProvider
      with ContentProvider
 object RemoteAccessContentProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     compareContentIds: (XContentIdentifier, XContentIdentifier) => Double,
     createContentIdentifier: String => XContentIdentifier,

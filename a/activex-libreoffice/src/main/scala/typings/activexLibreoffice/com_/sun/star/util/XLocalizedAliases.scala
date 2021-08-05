@@ -43,8 +43,7 @@ trait XLocalizedAliases
 }
 object XLocalizedAliases {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     bindAlias: (String, Locale, String) => Unit,
     listAliases: Locale => SafeArray[AliasProgrammaticPair],
@@ -61,31 +60,22 @@ object XLocalizedAliases {
     __obj.asInstanceOf[XLocalizedAliases]
   }
   
-  @scala.inline
-  implicit class XLocalizedAliasesMutableBuilder[Self <: XLocalizedAliases] (val x: Self) extends AnyVal {
+  extension [Self <: XLocalizedAliases](x: Self) {
     
-    @scala.inline
-    def setBindAlias(value: (String, Locale, String) => Unit): Self = StObject.set(x, "bindAlias", js.Any.fromFunction3(value))
+    inline def setBindAlias(value: (String, Locale, String) => Unit): Self = StObject.set(x, "bindAlias", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setListAliases(value: Locale => SafeArray[AliasProgrammaticPair]): Self = StObject.set(x, "listAliases", js.Any.fromFunction1(value))
+    inline def setListAliases(value: Locale => SafeArray[AliasProgrammaticPair]): Self = StObject.set(x, "listAliases", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLookupAlias(value: (Locale, String) => String): Self = StObject.set(x, "lookupAlias", js.Any.fromFunction2(value))
+    inline def setLookupAlias(value: (Locale, String) => String): Self = StObject.set(x, "lookupAlias", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLookupProgrammatic(value: (Locale, String) => String): Self = StObject.set(x, "lookupProgrammatic", js.Any.fromFunction2(value))
+    inline def setLookupProgrammatic(value: (Locale, String) => String): Self = StObject.set(x, "lookupProgrammatic", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRebindAliases(value: (String, String) => Unit): Self = StObject.set(x, "rebindAliases", js.Any.fromFunction2(value))
+    inline def setRebindAliases(value: (String, String) => Unit): Self = StObject.set(x, "rebindAliases", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenameAlias(value: (Locale, String, String) => Unit): Self = StObject.set(x, "renameAlias", js.Any.fromFunction3(value))
+    inline def setRenameAlias(value: (Locale, String, String) => Unit): Self = StObject.set(x, "renameAlias", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUnbindAlias(value: (Locale, String) => Unit): Self = StObject.set(x, "unbindAlias", js.Any.fromFunction2(value))
+    inline def setUnbindAlias(value: (Locale, String) => Unit): Self = StObject.set(x, "unbindAlias", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnbindAliases(value: String => Unit): Self = StObject.set(x, "unbindAliases", js.Any.fromFunction1(value))
+    inline def setUnbindAliases(value: String => Unit): Self = StObject.set(x, "unbindAliases", js.Any.fromFunction1(value))
   }
 }

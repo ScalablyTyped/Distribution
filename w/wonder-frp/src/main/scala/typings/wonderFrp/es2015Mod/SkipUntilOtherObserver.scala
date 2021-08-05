@@ -21,8 +21,7 @@ object SkipUntilOtherObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     prevObserver: IObserver,
     skipUntilStream: typings.wonderFrp.streamSkipUntilStreamMod.SkipUntilStream
   ): typings.wonderFrp.observerSkipUntilOtherObserverMod.SkipUntilOtherObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any], skipUntilStream.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.observerSkipUntilOtherObserverMod.SkipUntilOtherObserver]

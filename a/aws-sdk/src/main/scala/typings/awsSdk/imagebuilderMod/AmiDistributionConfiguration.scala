@@ -38,52 +38,37 @@ trait AmiDistributionConfiguration extends StObject {
 }
 object AmiDistributionConfiguration {
   
-  @scala.inline
-  def apply(): AmiDistributionConfiguration = {
+  inline def apply(): AmiDistributionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AmiDistributionConfiguration]
   }
   
-  @scala.inline
-  implicit class AmiDistributionConfigurationMutableBuilder[Self <: AmiDistributionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AmiDistributionConfiguration](x: Self) {
     
-    @scala.inline
-    def setAmiTags(value: TagMap): Self = StObject.set(x, "amiTags", value.asInstanceOf[js.Any])
+    inline def setAmiTags(value: TagMap): Self = StObject.set(x, "amiTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmiTagsUndefined: Self = StObject.set(x, "amiTags", js.undefined)
+    inline def setAmiTagsUndefined: Self = StObject.set(x, "amiTags", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
-    @scala.inline
-    def setLaunchPermission(value: LaunchPermissionConfiguration): Self = StObject.set(x, "launchPermission", value.asInstanceOf[js.Any])
+    inline def setLaunchPermission(value: LaunchPermissionConfiguration): Self = StObject.set(x, "launchPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchPermissionUndefined: Self = StObject.set(x, "launchPermission", js.undefined)
+    inline def setLaunchPermissionUndefined: Self = StObject.set(x, "launchPermission", js.undefined)
     
-    @scala.inline
-    def setName(value: AmiNameString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AmiNameString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTargetAccountIds(value: AccountList): Self = StObject.set(x, "targetAccountIds", value.asInstanceOf[js.Any])
+    inline def setTargetAccountIds(value: AccountList): Self = StObject.set(x, "targetAccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAccountIdsUndefined: Self = StObject.set(x, "targetAccountIds", js.undefined)
+    inline def setTargetAccountIdsUndefined: Self = StObject.set(x, "targetAccountIds", js.undefined)
     
-    @scala.inline
-    def setTargetAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "targetAccountIds", js.Array(value :_*))
+    inline def setTargetAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "targetAccountIds", js.Array(value :_*))
   }
 }

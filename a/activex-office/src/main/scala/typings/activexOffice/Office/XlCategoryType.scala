@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCategoryType extends StObject
 object XlCategoryType {
   
-  @scala.inline
-  def xlAutomaticScale: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlAutomaticScale: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlCategoryScale: `2` = 2.asInstanceOf[`2`]
+  inline def xlCategoryScale: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlTimeScale: `3` = 3.asInstanceOf[`3`]
+  inline def xlTimeScale: `3` = 3.asInstanceOf[`3`]
 }

@@ -13,16 +13,13 @@ trait DeleteConfigurationSetRequest extends StObject {
 }
 object DeleteConfigurationSetRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: _String): DeleteConfigurationSetRequest = {
+  inline def apply(ConfigurationSetName: _String): DeleteConfigurationSetRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigurationSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConfigurationSetRequestMutableBuilder[Self <: DeleteConfigurationSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigurationSetRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }
 }

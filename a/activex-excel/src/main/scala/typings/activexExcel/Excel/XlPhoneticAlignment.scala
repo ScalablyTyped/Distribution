@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPhoneticAlignment extends StObject
 object XlPhoneticAlignment {
   
-  @scala.inline
-  def xlPhoneticAlignCenter: `2` = 2.asInstanceOf[`2`]
+  inline def xlPhoneticAlignCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPhoneticAlignDistributed: `3` = 3.asInstanceOf[`3`]
+  inline def xlPhoneticAlignDistributed: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlPhoneticAlignLeft: `1` = 1.asInstanceOf[`1`]
+  inline def xlPhoneticAlignLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlPhoneticAlignNoControl: `0` = 0.asInstanceOf[`0`]
+  inline def xlPhoneticAlignNoControl: `0` = 0.asInstanceOf[`0`]
 }

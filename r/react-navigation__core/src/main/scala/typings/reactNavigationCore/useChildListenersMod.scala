@@ -11,6 +11,5 @@ object useChildListenersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): AddListener = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[AddListener]
+  inline def default(): AddListener = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[AddListener]
 }

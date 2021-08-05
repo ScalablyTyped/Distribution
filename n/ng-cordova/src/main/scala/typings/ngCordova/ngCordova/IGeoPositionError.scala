@@ -12,19 +12,15 @@ trait IGeoPositionError extends StObject {
 }
 object IGeoPositionError {
   
-  @scala.inline
-  def apply(code: Double, message: String): IGeoPositionError = {
+  inline def apply(code: Double, message: String): IGeoPositionError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoPositionError]
   }
   
-  @scala.inline
-  implicit class IGeoPositionErrorMutableBuilder[Self <: IGeoPositionError] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoPositionError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

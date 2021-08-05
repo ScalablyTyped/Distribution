@@ -108,11 +108,9 @@ object mod {
     var state: `0` | `1` = js.native
   }
   
-  @scala.inline
-  def dumpToBuffer(`val`: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpToBuffer")(`val`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def dumpToBuffer(`val`: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpToBuffer")(`val`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def loadFromBuffer(input: InputWrapper): AnyWrapper | js.Array[AnyWrapper] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[AnyWrapper | js.Array[AnyWrapper]]
+  inline def loadFromBuffer(input: InputWrapper): AnyWrapper | js.Array[AnyWrapper] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[AnyWrapper | js.Array[AnyWrapper]]
   
   type AnyWrapper = Boolean | IntWrapper | Null | String | js.Object
   

@@ -20,13 +20,10 @@ object base32Mod {
     @JSImport("ts-nkeys/lib/base32", "base32.alphabet")
     @js.native
     def alphabet: String = js.native
-    @scala.inline
-    def alphabet_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphabet")(x.asInstanceOf[js.Any])
+    inline def alphabet_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphabet")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def decode(src: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def decode(src: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @scala.inline
-    def encode(src: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(src.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def encode(src: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(src.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   }
 }

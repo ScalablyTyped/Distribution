@@ -18,16 +18,13 @@ trait ASPxClientPopupWindowResizeEventArgs
 }
 object ASPxClientPopupWindowResizeEventArgs {
   
-  @scala.inline
-  def apply(resizeState: Double, window: ASPxClientPopupWindow): ASPxClientPopupWindowResizeEventArgs = {
+  inline def apply(resizeState: Double, window: ASPxClientPopupWindow): ASPxClientPopupWindowResizeEventArgs = {
     val __obj = js.Dynamic.literal(resizeState = resizeState.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientPopupWindowResizeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientPopupWindowResizeEventArgsMutableBuilder[Self <: ASPxClientPopupWindowResizeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPopupWindowResizeEventArgs](x: Self) {
     
-    @scala.inline
-    def setResizeState(value: Double): Self = StObject.set(x, "resizeState", value.asInstanceOf[js.Any])
+    inline def setResizeState(value: Double): Self = StObject.set(x, "resizeState", value.asInstanceOf[js.Any])
   }
 }

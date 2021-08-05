@@ -33,8 +33,7 @@ trait NodeInjectorDebug extends StObject {
 }
 object NodeInjectorDebug {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bloom: String,
     cumulativeBloom: String,
     parentInjectorIndex: Double,
@@ -45,28 +44,20 @@ object NodeInjectorDebug {
     __obj.asInstanceOf[NodeInjectorDebug]
   }
   
-  @scala.inline
-  implicit class NodeInjectorDebugMutableBuilder[Self <: NodeInjectorDebug] (val x: Self) extends AnyVal {
+  extension [Self <: NodeInjectorDebug](x: Self) {
     
-    @scala.inline
-    def setBloom(value: String): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
+    inline def setBloom(value: String): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulativeBloom(value: String): Self = StObject.set(x, "cumulativeBloom", value.asInstanceOf[js.Any])
+    inline def setCumulativeBloom(value: String): Self = StObject.set(x, "cumulativeBloom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentInjectorIndex(value: Double): Self = StObject.set(x, "parentInjectorIndex", value.asInstanceOf[js.Any])
+    inline def setParentInjectorIndex(value: Double): Self = StObject.set(x, "parentInjectorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviders(value: js.Array[Type[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any]]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Type[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any]]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersVarargs(value: (Type[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any])*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: (Type[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any])*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
-    @scala.inline
-    def setViewProviders(value: js.Array[Type[js.Any]]): Self = StObject.set(x, "viewProviders", value.asInstanceOf[js.Any])
+    inline def setViewProviders(value: js.Array[Type[js.Any]]): Self = StObject.set(x, "viewProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewProvidersVarargs(value: Type[js.Any]*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
+    inline def setViewProvidersVarargs(value: Type[js.Any]*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
   }
 }

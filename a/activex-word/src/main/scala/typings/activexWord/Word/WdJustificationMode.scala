@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdJustificationMode extends StObject
 object WdJustificationMode {
   
-  @scala.inline
-  def wdJustificationModeCompress: `1` = 1.asInstanceOf[`1`]
+  inline def wdJustificationModeCompress: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdJustificationModeCompressKana: `2` = 2.asInstanceOf[`2`]
+  inline def wdJustificationModeCompressKana: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdJustificationModeExpand: `0` = 0.asInstanceOf[`0`]
+  inline def wdJustificationModeExpand: `0` = 0.asInstanceOf[`0`]
 }

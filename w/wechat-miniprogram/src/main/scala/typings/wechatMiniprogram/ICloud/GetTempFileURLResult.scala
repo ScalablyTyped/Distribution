@@ -15,19 +15,15 @@ trait GetTempFileURLResult
 }
 object GetTempFileURLResult {
   
-  @scala.inline
-  def apply(errMsg: String, fileList: js.Array[GetTempFileURLResultItem]): GetTempFileURLResult = {
+  inline def apply(errMsg: String, fileList: js.Array[GetTempFileURLResultItem]): GetTempFileURLResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTempFileURLResult]
   }
   
-  @scala.inline
-  implicit class GetTempFileURLResultMutableBuilder[Self <: GetTempFileURLResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetTempFileURLResult](x: Self) {
     
-    @scala.inline
-    def setFileList(value: js.Array[GetTempFileURLResultItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[GetTempFileURLResultItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: GetTempFileURLResultItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: GetTempFileURLResultItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

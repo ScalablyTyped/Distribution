@@ -13,16 +13,13 @@ trait RemoveNodeRequest extends StObject {
 }
 object RemoveNodeRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): RemoveNodeRequest = {
+  inline def apply(nodeId: NodeId): RemoveNodeRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveNodeRequest]
   }
   
-  @scala.inline
-  implicit class RemoveNodeRequestMutableBuilder[Self <: RemoveNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveNodeRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

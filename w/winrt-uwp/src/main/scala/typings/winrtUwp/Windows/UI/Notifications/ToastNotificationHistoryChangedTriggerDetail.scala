@@ -12,16 +12,13 @@ trait ToastNotificationHistoryChangedTriggerDetail extends StObject {
 }
 object ToastNotificationHistoryChangedTriggerDetail {
   
-  @scala.inline
-  def apply(changeType: ToastHistoryChangedType): ToastNotificationHistoryChangedTriggerDetail = {
+  inline def apply(changeType: ToastHistoryChangedType): ToastNotificationHistoryChangedTriggerDetail = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastNotificationHistoryChangedTriggerDetail]
   }
   
-  @scala.inline
-  implicit class ToastNotificationHistoryChangedTriggerDetailMutableBuilder[Self <: ToastNotificationHistoryChangedTriggerDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ToastNotificationHistoryChangedTriggerDetail](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: ToastHistoryChangedType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: ToastHistoryChangedType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
   }
 }

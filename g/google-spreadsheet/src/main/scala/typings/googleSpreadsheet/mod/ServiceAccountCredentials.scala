@@ -20,19 +20,15 @@ trait ServiceAccountCredentials extends StObject {
 }
 object ServiceAccountCredentials {
   
-  @scala.inline
-  def apply(client_email: String, private_key: String): ServiceAccountCredentials = {
+  inline def apply(client_email: String, private_key: String): ServiceAccountCredentials = {
     val __obj = js.Dynamic.literal(client_email = client_email.asInstanceOf[js.Any], private_key = private_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccountCredentials]
   }
   
-  @scala.inline
-  implicit class ServiceAccountCredentialsMutableBuilder[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccountCredentials](x: Self) {
     
-    @scala.inline
-    def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
+    inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
+    inline def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
   }
 }

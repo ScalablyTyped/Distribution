@@ -10,16 +10,13 @@ trait External extends StObject {
 }
 object External {
   
-  @scala.inline
-  def apply(getUnityObject: Double => Unity): External = {
+  inline def apply(getUnityObject: Double => Unity): External = {
     val __obj = js.Dynamic.literal(getUnityObject = js.Any.fromFunction1(getUnityObject))
     __obj.asInstanceOf[External]
   }
   
-  @scala.inline
-  implicit class ExternalMutableBuilder[Self <: External] (val x: Self) extends AnyVal {
+  extension [Self <: External](x: Self) {
     
-    @scala.inline
-    def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
+    inline def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
   }
 }

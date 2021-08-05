@@ -15,22 +15,17 @@ trait ISyndicationGenerator extends StObject {
 }
 object ISyndicationGenerator {
   
-  @scala.inline
-  def apply(text: String, uri: Uri, version: String): ISyndicationGenerator = {
+  inline def apply(text: String, uri: Uri, version: String): ISyndicationGenerator = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISyndicationGenerator]
   }
   
-  @scala.inline
-  implicit class ISyndicationGeneratorMutableBuilder[Self <: ISyndicationGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationGenerator](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

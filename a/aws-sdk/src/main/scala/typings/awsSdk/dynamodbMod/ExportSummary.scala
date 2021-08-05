@@ -18,25 +18,19 @@ trait ExportSummary extends StObject {
 }
 object ExportSummary {
   
-  @scala.inline
-  def apply(): ExportSummary = {
+  inline def apply(): ExportSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportSummary]
   }
   
-  @scala.inline
-  implicit class ExportSummaryMutableBuilder[Self <: ExportSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSummary](x: Self) {
     
-    @scala.inline
-    def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
+    inline def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
+    inline def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
     
-    @scala.inline
-    def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
+    inline def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
+    inline def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
   }
 }

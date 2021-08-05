@@ -39,8 +39,7 @@ trait XCellSeries
 }
 object XCellSeries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     fillAuto: (FillDirection, Double) => Unit,
     fillSeries: (FillDirection, FillMode, FillDateMode, Double, Double) => Unit,
@@ -51,13 +50,10 @@ object XCellSeries {
     __obj.asInstanceOf[XCellSeries]
   }
   
-  @scala.inline
-  implicit class XCellSeriesMutableBuilder[Self <: XCellSeries] (val x: Self) extends AnyVal {
+  extension [Self <: XCellSeries](x: Self) {
     
-    @scala.inline
-    def setFillAuto(value: (FillDirection, Double) => Unit): Self = StObject.set(x, "fillAuto", js.Any.fromFunction2(value))
+    inline def setFillAuto(value: (FillDirection, Double) => Unit): Self = StObject.set(x, "fillAuto", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFillSeries(value: (FillDirection, FillMode, FillDateMode, Double, Double) => Unit): Self = StObject.set(x, "fillSeries", js.Any.fromFunction5(value))
+    inline def setFillSeries(value: (FillDirection, FillMode, FillDateMode, Double, Double) => Unit): Self = StObject.set(x, "fillSeries", js.Any.fromFunction5(value))
   }
 }

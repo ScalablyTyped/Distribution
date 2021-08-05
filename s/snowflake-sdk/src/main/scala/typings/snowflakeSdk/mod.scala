@@ -60,16 +60,12 @@ object mod {
     /* "fetching" */ val Fetching: typings.snowflakeSdk.mod.StatementStatus.Fetching & String = js.native
   }
   
-  @scala.inline
-  def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
-  @scala.inline
-  def configure(options: ConfigureOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
+  inline def configure(options: ConfigureOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def createConnection(options: ConnectionOptions): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  inline def createConnection(options: ConnectionOptions): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Connection]
   
-  @scala.inline
-  def deserializeConnection(options: ConnectionOptions, serializedConnection: String): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConnection")(options.asInstanceOf[js.Any], serializedConnection.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def deserializeConnection(options: ConnectionOptions, serializedConnection: String): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConnection")(options.asInstanceOf[js.Any], serializedConnection.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
   @js.native
   sealed trait ocspModes extends StObject
@@ -99,8 +95,7 @@ object mod {
     /* "INSECURE" */ val INSECURE: typings.snowflakeSdk.mod.ocspModes.INSECURE & String = js.native
   }
   
-  @scala.inline
-  def serializeConnection(connection: Connection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeConnection")(connection.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serializeConnection(connection: Connection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeConnection")(connection.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Bind = String | Double
   
@@ -140,8 +135,7 @@ object mod {
   }
   object Column {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getId: () => Double,
       getIndex: () => Double,
       getName: () => String,
@@ -153,26 +147,19 @@ object mod {
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+      inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
+      inline def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsNullable(value: () => Boolean): Self = StObject.set(x, "isNullable", js.Any.fromFunction0(value))
+      inline def setIsNullable(value: () => Boolean): Self = StObject.set(x, "isNullable", js.Any.fromFunction0(value))
     }
   }
   
@@ -190,32 +177,24 @@ object mod {
   }
   object ConfigureOptions {
     
-    @scala.inline
-    def apply(): ConfigureOptions = {
+    inline def apply(): ConfigureOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigureOptions]
     }
     
-    @scala.inline
-    implicit class ConfigureOptionsMutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigureOptions](x: Self) {
       
-      @scala.inline
-      def setInsecureConnect(value: Boolean): Self = StObject.set(x, "insecureConnect", value.asInstanceOf[js.Any])
+      inline def setInsecureConnect(value: Boolean): Self = StObject.set(x, "insecureConnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsecureConnectUndefined: Self = StObject.set(x, "insecureConnect", js.undefined)
+      inline def setInsecureConnectUndefined: Self = StObject.set(x, "insecureConnect", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: ERROR | WARN | INFO | DEBUG | TRACE): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: ERROR | WARN | INFO | DEBUG | TRACE): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setOcspFailOpen(value: Boolean): Self = StObject.set(x, "ocspFailOpen", value.asInstanceOf[js.Any])
+      inline def setOcspFailOpen(value: Boolean): Self = StObject.set(x, "ocspFailOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOcspFailOpenUndefined: Self = StObject.set(x, "ocspFailOpen", js.undefined)
+      inline def setOcspFailOpenUndefined: Self = StObject.set(x, "ocspFailOpen", js.undefined)
     }
   }
   
@@ -356,71 +335,50 @@ object mod {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(account: String, password: String, username: String): ConnectionOptions = {
+    inline def apply(account: String, password: String, username: String): ConnectionOptions = {
       val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSessionKeepAlive(value: Boolean): Self = StObject.set(x, "clientSessionKeepAlive", value.asInstanceOf[js.Any])
+      inline def setClientSessionKeepAlive(value: Boolean): Self = StObject.set(x, "clientSessionKeepAlive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSessionKeepAliveHeartbeatFrequency(value: Double): Self = StObject.set(x, "clientSessionKeepAliveHeartbeatFrequency", value.asInstanceOf[js.Any])
+      inline def setClientSessionKeepAliveHeartbeatFrequency(value: Double): Self = StObject.set(x, "clientSessionKeepAliveHeartbeatFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSessionKeepAliveHeartbeatFrequencyUndefined: Self = StObject.set(x, "clientSessionKeepAliveHeartbeatFrequency", js.undefined)
+      inline def setClientSessionKeepAliveHeartbeatFrequencyUndefined: Self = StObject.set(x, "clientSessionKeepAliveHeartbeatFrequency", js.undefined)
       
-      @scala.inline
-      def setClientSessionKeepAliveUndefined: Self = StObject.set(x, "clientSessionKeepAlive", js.undefined)
+      inline def setClientSessionKeepAliveUndefined: Self = StObject.set(x, "clientSessionKeepAlive", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setJsTreatIntegerAsBigInt(value: Boolean): Self = StObject.set(x, "jsTreatIntegerAsBigInt", value.asInstanceOf[js.Any])
+      inline def setJsTreatIntegerAsBigInt(value: Boolean): Self = StObject.set(x, "jsTreatIntegerAsBigInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsTreatIntegerAsBigIntUndefined: Self = StObject.set(x, "jsTreatIntegerAsBigInt", js.undefined)
+      inline def setJsTreatIntegerAsBigIntUndefined: Self = StObject.set(x, "jsTreatIntegerAsBigInt", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarehouse(value: String): Self = StObject.set(x, "warehouse", value.asInstanceOf[js.Any])
+      inline def setWarehouse(value: String): Self = StObject.set(x, "warehouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarehouseUndefined: Self = StObject.set(x, "warehouse", js.undefined)
+      inline def setWarehouseUndefined: Self = StObject.set(x, "warehouse", js.undefined)
     }
   }
   

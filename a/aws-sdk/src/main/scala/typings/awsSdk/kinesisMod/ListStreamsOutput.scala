@@ -18,22 +18,17 @@ trait ListStreamsOutput extends StObject {
 }
 object ListStreamsOutput {
   
-  @scala.inline
-  def apply(HasMoreStreams: BooleanObject, StreamNames: StreamNameList): ListStreamsOutput = {
+  inline def apply(HasMoreStreams: BooleanObject, StreamNames: StreamNameList): ListStreamsOutput = {
     val __obj = js.Dynamic.literal(HasMoreStreams = HasMoreStreams.asInstanceOf[js.Any], StreamNames = StreamNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamsOutput]
   }
   
-  @scala.inline
-  implicit class ListStreamsOutputMutableBuilder[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStreamsOutput](x: Self) {
     
-    @scala.inline
-    def setHasMoreStreams(value: BooleanObject): Self = StObject.set(x, "HasMoreStreams", value.asInstanceOf[js.Any])
+    inline def setHasMoreStreams(value: BooleanObject): Self = StObject.set(x, "HasMoreStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNames(value: StreamNameList): Self = StObject.set(x, "StreamNames", value.asInstanceOf[js.Any])
+    inline def setStreamNames(value: StreamNameList): Self = StObject.set(x, "StreamNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNamesVarargs(value: StreamName*): Self = StObject.set(x, "StreamNames", js.Array(value :_*))
+    inline def setStreamNamesVarargs(value: StreamName*): Self = StObject.set(x, "StreamNames", js.Array(value :_*))
   }
 }

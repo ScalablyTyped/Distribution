@@ -30,37 +30,27 @@ trait RouteSpecHttpRouteMatch extends StObject {
 }
 object RouteSpecHttpRouteMatch {
   
-  @scala.inline
-  def apply(prefix: Input[String]): RouteSpecHttpRouteMatch = {
+  inline def apply(prefix: Input[String]): RouteSpecHttpRouteMatch = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRouteMatch]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttpRouteMatchMutableBuilder[Self <: RouteSpecHttpRouteMatch] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttpRouteMatch](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Input[js.Array[Input[RouteSpecHttpRouteMatchHeader]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Input[js.Array[Input[RouteSpecHttpRouteMatchHeader]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: Input[RouteSpecHttpRouteMatchHeader]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Input[RouteSpecHttpRouteMatchHeader]*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: Input[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: Input[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: Input[String]): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: Input[String]): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }
 }

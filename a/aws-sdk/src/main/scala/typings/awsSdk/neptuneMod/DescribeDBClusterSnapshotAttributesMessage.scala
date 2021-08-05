@@ -13,16 +13,13 @@ trait DescribeDBClusterSnapshotAttributesMessage extends StObject {
 }
 object DescribeDBClusterSnapshotAttributesMessage {
   
-  @scala.inline
-  def apply(DBClusterSnapshotIdentifier: String): DescribeDBClusterSnapshotAttributesMessage = {
+  inline def apply(DBClusterSnapshotIdentifier: String): DescribeDBClusterSnapshotAttributesMessage = {
     val __obj = js.Dynamic.literal(DBClusterSnapshotIdentifier = DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBClusterSnapshotAttributesMessage]
   }
   
-  @scala.inline
-  implicit class DescribeDBClusterSnapshotAttributesMessageMutableBuilder[Self <: DescribeDBClusterSnapshotAttributesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBClusterSnapshotAttributesMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
   }
 }

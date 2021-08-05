@@ -35,28 +35,21 @@ trait DataPilotTableHeaderData extends StObject {
 }
 object DataPilotTableHeaderData {
   
-  @scala.inline
-  def apply(Dimension: Double, Flags: Double, Hierarchy: Double, Level: Double, MemberName: String): DataPilotTableHeaderData = {
+  inline def apply(Dimension: Double, Flags: Double, Hierarchy: Double, Level: Double, MemberName: String): DataPilotTableHeaderData = {
     val __obj = js.Dynamic.literal(Dimension = Dimension.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Hierarchy = Hierarchy.asInstanceOf[js.Any], Level = Level.asInstanceOf[js.Any], MemberName = MemberName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotTableHeaderData]
   }
   
-  @scala.inline
-  implicit class DataPilotTableHeaderDataMutableBuilder[Self <: DataPilotTableHeaderData] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotTableHeaderData](x: Self) {
     
-    @scala.inline
-    def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchy(value: Double): Self = StObject.set(x, "Hierarchy", value.asInstanceOf[js.Any])
+    inline def setHierarchy(value: Double): Self = StObject.set(x, "Hierarchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberName(value: String): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
+    inline def setMemberName(value: String): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
   }
 }

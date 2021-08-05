@@ -27,8 +27,7 @@ trait WrappedException extends StObject {
 }
 object WrappedException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customProperties: StringDictionary[js.Any],
     errorCode: Double,
     eventId: Double,
@@ -43,34 +42,24 @@ object WrappedException {
     __obj.asInstanceOf[WrappedException]
   }
   
-  @scala.inline
-  implicit class WrappedExceptionMutableBuilder[Self <: WrappedException] (val x: Self) extends AnyVal {
+  extension [Self <: WrappedException](x: Self) {
     
-    @scala.inline
-    def setCustomProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
+    inline def setCustomProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpLink(value: String): Self = StObject.set(x, "helpLink", value.asInstanceOf[js.Any])
+    inline def setHelpLink(value: String): Self = StObject.set(x, "helpLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerException(value: WrappedException): Self = StObject.set(x, "innerException", value.asInstanceOf[js.Any])
+    inline def setInnerException(value: WrappedException): Self = StObject.set(x, "innerException", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeKey(value: String): Self = StObject.set(x, "typeKey", value.asInstanceOf[js.Any])
+    inline def setTypeKey(value: String): Self = StObject.set(x, "typeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

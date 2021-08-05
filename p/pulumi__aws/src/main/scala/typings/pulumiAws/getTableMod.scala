@@ -19,10 +19,8 @@ object getTableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTable(args: GetTableArgs): js.Promise[GetTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTableResult]]
-  @scala.inline
-  def getTable(args: GetTableArgs, opts: InvokeOptions): js.Promise[GetTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTableResult]]
+  inline def getTable(args: GetTableArgs): js.Promise[GetTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTableResult]]
+  inline def getTable(args: GetTableArgs, opts: InvokeOptions): js.Promise[GetTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTableResult]]
   
   trait GetTableArgs extends StObject {
     
@@ -37,29 +35,22 @@ object getTableMod {
   }
   object GetTableArgs {
     
-    @scala.inline
-    def apply(name: String): GetTableArgs = {
+    inline def apply(name: String): GetTableArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTableArgs]
     }
     
-    @scala.inline
-    implicit class GetTableArgsMutableBuilder[Self <: GetTableArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetTableArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryption(value: GetTableServerSideEncryption): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: GetTableServerSideEncryption): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -110,8 +101,7 @@ object getTableMod {
   }
   object GetTableResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       attributes: js.Array[GetTableAttribute],
       billingMode: String,
@@ -137,80 +127,55 @@ object getTableMod {
       __obj.asInstanceOf[GetTableResult]
     }
     
-    @scala.inline
-    implicit class GetTableResultMutableBuilder[Self <: GetTableResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetTableResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributes(value: js.Array[GetTableAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[GetTableAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: GetTableAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: GetTableAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingMode(value: String): Self = StObject.set(x, "billingMode", value.asInstanceOf[js.Any])
+      inline def setBillingMode(value: String): Self = StObject.set(x, "billingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: js.Array[GetTableGlobalSecondaryIndex]): Self = StObject.set(x, "globalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: js.Array[GetTableGlobalSecondaryIndex]): Self = StObject.set(x, "globalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: GetTableGlobalSecondaryIndex*): Self = StObject.set(x, "globalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GetTableGlobalSecondaryIndex*): Self = StObject.set(x, "globalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+      inline def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: js.Array[GetTableLocalSecondaryIndex]): Self = StObject.set(x, "localSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: js.Array[GetTableLocalSecondaryIndex]): Self = StObject.set(x, "localSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesVarargs(value: GetTableLocalSecondaryIndex*): Self = StObject.set(x, "localSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: GetTableLocalSecondaryIndex*): Self = StObject.set(x, "localSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecovery(value: GetTablePointInTimeRecovery): Self = StObject.set(x, "pointInTimeRecovery", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecovery(value: GetTablePointInTimeRecovery): Self = StObject.set(x, "pointInTimeRecovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+      inline def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
+      inline def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicas(value: js.Array[GetTableReplica]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: js.Array[GetTableReplica]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasVarargs(value: GetTableReplica*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: GetTableReplica*): Self = StObject.set(x, "replicas", js.Array(value :_*))
       
-      @scala.inline
-      def setServerSideEncryption(value: typings.pulumiAws.outputMod.dynamodb.GetTableServerSideEncryption): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: typings.pulumiAws.outputMod.dynamodb.GetTableServerSideEncryption): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamArn(value: String): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
+      inline def setStreamArn(value: String): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamEnabled(value: Boolean): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
+      inline def setStreamEnabled(value: Boolean): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamLabel(value: String): Self = StObject.set(x, "streamLabel", value.asInstanceOf[js.Any])
+      inline def setStreamLabel(value: String): Self = StObject.set(x, "streamLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamViewType(value: String): Self = StObject.set(x, "streamViewType", value.asInstanceOf[js.Any])
+      inline def setStreamViewType(value: String): Self = StObject.set(x, "streamViewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: GetTableTtl): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: GetTableTtl): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
+      inline def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
     }
   }
 }

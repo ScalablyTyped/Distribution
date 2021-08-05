@@ -47,10 +47,8 @@ object tileRangeMod {
     override def intersects(tileRange: TileRange): Boolean = js.native
   }
   
-  @scala.inline
-  def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double): TileRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any])).asInstanceOf[TileRange]
-  @scala.inline
-  def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double, tileRange: TileRange): TileRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any], tileRange.asInstanceOf[js.Any])).asInstanceOf[TileRange]
+  inline def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double): TileRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any])).asInstanceOf[TileRange]
+  inline def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double, tileRange: TileRange): TileRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any], tileRange.asInstanceOf[js.Any])).asInstanceOf[TileRange]
   
   trait TileRange extends StObject {
     
@@ -74,8 +72,7 @@ object tileRangeMod {
   }
   object TileRange {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contains: TileCoord => Boolean,
       containsTileRange: TileRange => Boolean,
       containsXY: (Double, Double) => Boolean,
@@ -91,35 +88,25 @@ object tileRangeMod {
       __obj.asInstanceOf[TileRange]
     }
     
-    @scala.inline
-    implicit class TileRangeMutableBuilder[Self <: TileRange] (val x: Self) extends AnyVal {
+    extension [Self <: TileRange](x: Self) {
       
-      @scala.inline
-      def setContains(value: TileCoord => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: TileCoord => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainsTileRange(value: TileRange => Boolean): Self = StObject.set(x, "containsTileRange", js.Any.fromFunction1(value))
+      inline def setContainsTileRange(value: TileRange => Boolean): Self = StObject.set(x, "containsTileRange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainsXY(value: (Double, Double) => Boolean): Self = StObject.set(x, "containsXY", js.Any.fromFunction2(value))
+      inline def setContainsXY(value: (Double, Double) => Boolean): Self = StObject.set(x, "containsXY", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_(value: TileRange => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: TileRange => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtend(value: TileRange => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+      inline def setExtend(value: TileRange => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIntersects(value: TileRange => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
+      inline def setIntersects(value: TileRange => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     }
   }
 }

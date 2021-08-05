@@ -44,92 +44,64 @@ trait EBMLTagSchemaBase
 }
 object EBMLTagSchemaBase {
   
-  @scala.inline
-  def apply(description: String, level: Double, name: String, `type`: TagType): EBMLTagSchemaBase = {
+  inline def apply(description: String, level: Double, name: String, `type`: TagType): EBMLTagSchemaBase = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBMLTagSchemaBase]
   }
   
-  @scala.inline
-  implicit class EBMLTagSchemaBaseMutableBuilder[Self <: EBMLTagSchemaBase] (val x: Self) extends AnyVal {
+  extension [Self <: EBMLTagSchemaBase](x: Self) {
     
-    @scala.inline
-    def setCppname(value: String): Self = StObject.set(x, "cppname", value.asInstanceOf[js.Any])
+    inline def setCppname(value: String): Self = StObject.set(x, "cppname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCppnameUndefined: Self = StObject.set(x, "cppname", js.undefined)
+    inline def setCppnameUndefined: Self = StObject.set(x, "cppname", js.undefined)
     
-    @scala.inline
-    def setDel(value: (js.Tuple2[`1 - bzlibComma`, `2 - lzo1x`]) | (`1 - bzlibComma`) | (`2 - lzo1x`)): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+    inline def setDel(value: (js.Tuple2[`1 - bzlibComma`, `2 - lzo1x`]) | (`1 - bzlibComma`) | (`2 - lzo1x`)): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
+    inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivx(value: Boolean): Self = StObject.set(x, "divx", value.asInstanceOf[js.Any])
+    inline def setDivx(value: Boolean): Self = StObject.set(x, "divx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivxUndefined: Self = StObject.set(x, "divx", js.undefined)
+    inline def setDivxUndefined: Self = StObject.set(x, "divx", js.undefined)
     
-    @scala.inline
-    def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+    inline def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIUndefined: Self = StObject.set(x, "i", js.undefined)
+    inline def setIUndefined: Self = StObject.set(x, "i", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+    inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+    inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
-    @scala.inline
-    def setMaxver(value: String): Self = StObject.set(x, "maxver", value.asInstanceOf[js.Any])
+    inline def setMaxver(value: String): Self = StObject.set(x, "maxver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxverUndefined: Self = StObject.set(x, "maxver", js.undefined)
+    inline def setMaxverUndefined: Self = StObject.set(x, "maxver", js.undefined)
     
-    @scala.inline
-    def setMinver(value: Double): Self = StObject.set(x, "minver", value.asInstanceOf[js.Any])
+    inline def setMinver(value: Double): Self = StObject.set(x, "minver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinverUndefined: Self = StObject.set(x, "minver", js.undefined)
+    inline def setMinverUndefined: Self = StObject.set(x, "minver", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
-    @scala.inline
-    def setStrong(value: informational_ | Informational): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+    inline def setStrong(value: informational_ | Informational): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+    inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
     
-    @scala.inline
-    def setType(value: TagType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TagType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebm(value: Boolean): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
+    inline def setWebm(value: Boolean): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebmUndefined: Self = StObject.set(x, "webm", js.undefined)
+    inline def setWebmUndefined: Self = StObject.set(x, "webm", js.undefined)
   }
 }

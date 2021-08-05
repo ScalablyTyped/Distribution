@@ -6,15 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLDocumentCompatibleInfoCollection extends StObject {
   
-  @JSName("MSHTML.HTMLDocumentCompatibleInfoCollection_typekey")
+  /* private */ @JSName("MSHTML.HTMLDocumentCompatibleInfoCollection_typekey")
   var MSHTMLDotHTMLDocumentCompatibleInfoCollection_typekey: HTMLDocumentCompatibleInfoCollection
   
   val constructor: js.Any
 }
 object HTMLDocumentCompatibleInfoCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLDocumentCompatibleInfoCollection_typekey: HTMLDocumentCompatibleInfoCollection,
     constructor: js.Any
   ): HTMLDocumentCompatibleInfoCollection = {
@@ -23,13 +22,10 @@ object HTMLDocumentCompatibleInfoCollection {
     __obj.asInstanceOf[HTMLDocumentCompatibleInfoCollection]
   }
   
-  @scala.inline
-  implicit class HTMLDocumentCompatibleInfoCollectionMutableBuilder[Self <: HTMLDocumentCompatibleInfoCollection] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLDocumentCompatibleInfoCollection](x: Self) {
     
-    @scala.inline
-    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLDocumentCompatibleInfoCollection_typekey(value: HTMLDocumentCompatibleInfoCollection): Self = StObject.set(x, "MSHTML.HTMLDocumentCompatibleInfoCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLDocumentCompatibleInfoCollection_typekey(value: HTMLDocumentCompatibleInfoCollection): Self = StObject.set(x, "MSHTML.HTMLDocumentCompatibleInfoCollection_typekey", value.asInstanceOf[js.Any])
   }
 }

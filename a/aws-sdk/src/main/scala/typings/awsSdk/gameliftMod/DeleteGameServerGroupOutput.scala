@@ -13,19 +13,15 @@ trait DeleteGameServerGroupOutput extends StObject {
 }
 object DeleteGameServerGroupOutput {
   
-  @scala.inline
-  def apply(): DeleteGameServerGroupOutput = {
+  inline def apply(): DeleteGameServerGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteGameServerGroupOutput]
   }
   
-  @scala.inline
-  implicit class DeleteGameServerGroupOutputMutableBuilder[Self <: DeleteGameServerGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGameServerGroupOutput](x: Self) {
     
-    @scala.inline
-    def setGameServerGroup(value: GameServerGroup): Self = StObject.set(x, "GameServerGroup", value.asInstanceOf[js.Any])
+    inline def setGameServerGroup(value: GameServerGroup): Self = StObject.set(x, "GameServerGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerGroupUndefined: Self = StObject.set(x, "GameServerGroup", js.undefined)
+    inline def setGameServerGroupUndefined: Self = StObject.set(x, "GameServerGroup", js.undefined)
   }
 }

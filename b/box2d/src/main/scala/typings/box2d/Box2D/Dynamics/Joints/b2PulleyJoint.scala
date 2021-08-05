@@ -37,8 +37,7 @@ trait b2PulleyJoint
 }
 object b2PulleyJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAnchorA: () => b2Vec2,
     GetAnchorB: () => b2Vec2,
     GetBodyA: () => b2Body,
@@ -60,22 +59,16 @@ object b2PulleyJoint {
     __obj.asInstanceOf[b2PulleyJoint]
   }
   
-  @scala.inline
-  implicit class b2PulleyJointMutableBuilder[Self <: b2PulleyJoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2PulleyJoint](x: Self) {
     
-    @scala.inline
-    def setGetGroundAnchorA(value: () => b2Vec2): Self = StObject.set(x, "GetGroundAnchorA", js.Any.fromFunction0(value))
+    inline def setGetGroundAnchorA(value: () => b2Vec2): Self = StObject.set(x, "GetGroundAnchorA", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroundAnchorB(value: () => b2Vec2): Self = StObject.set(x, "GetGroundAnchorB", js.Any.fromFunction0(value))
+    inline def setGetGroundAnchorB(value: () => b2Vec2): Self = StObject.set(x, "GetGroundAnchorB", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength1(value: () => Double): Self = StObject.set(x, "GetLength1", js.Any.fromFunction0(value))
+    inline def setGetLength1(value: () => Double): Self = StObject.set(x, "GetLength1", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength2(value: () => Double): Self = StObject.set(x, "GetLength2", js.Any.fromFunction0(value))
+    inline def setGetLength2(value: () => Double): Self = StObject.set(x, "GetLength2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRatio(value: () => Double): Self = StObject.set(x, "GetRatio", js.Any.fromFunction0(value))
+    inline def setGetRatio(value: () => Double): Self = StObject.set(x, "GetRatio", js.Any.fromFunction0(value))
   }
 }

@@ -38,17 +38,14 @@ object mod {
   }
   object ResolveContext {
     
-    @scala.inline
-    def apply(pathname: String): ResolveContext = {
+    inline def apply(pathname: String): ResolveContext = {
       val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveContext]
     }
     
-    @scala.inline
-    implicit class ResolveContextMutableBuilder[Self <: ResolveContext] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveContext](x: Self) {
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,62 +88,44 @@ object mod {
   }
   object Route {
     
-    @scala.inline
-    def apply[R, C /* <: RouterContext */](): Route[R, C] = {
+    inline def apply[R, C /* <: RouterContext */](): Route[R, C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Route[R, C]]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route[?, ?], R, C /* <: RouterContext */] (val x: Self & (Route[R, C])) extends AnyVal {
+    extension [Self <: Route[?, ?], R, C /* <: RouterContext */](x: Self & (Route[R, C])) {
       
-      @scala.inline
-      def setAction(value: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResult[R]): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+      inline def setAction(value: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResult[R]): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setChildren(value: Routes[R, C]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Routes[R, C]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: (Route[R, C])*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (Route[R, C])*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setMatch(value: /* path */ String => Match_[RouteParams]): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: /* path */ String => Match_[RouteParams]): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParent(value: Route[R, C]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Route[R, C]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNull: Self = StObject.set(x, "parent", null)
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: (String | RegExp)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | RegExp)*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   
@@ -195,20 +174,16 @@ object mod {
   }
   object RouteError {
     
-    @scala.inline
-    def apply(message: String, name: String): RouteError = {
+    inline def apply(message: String, name: String): RouteError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteError]
     }
     
-    @scala.inline
-    implicit class RouteErrorMutableBuilder[Self <: RouteError] (val x: Self) extends AnyVal {
+    extension [Self <: RouteError](x: Self) {
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -224,26 +199,20 @@ object mod {
   }
   object RouteMatch {
     
-    @scala.inline
-    def apply[R, C /* <: RouterContext */](baseUrl: String, params: RouteParams, path: String, route: Route[R, C]): RouteMatch[R, C] = {
+    inline def apply[R, C /* <: RouterContext */](baseUrl: String, params: RouteParams, path: String, route: Route[R, C]): RouteMatch[R, C] = {
       val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteMatch[R, C]]
     }
     
-    @scala.inline
-    implicit class RouteMatchMutableBuilder[Self <: RouteMatch[?, ?], R, C /* <: RouterContext */] (val x: Self & (RouteMatch[R, C])) extends AnyVal {
+    extension [Self <: RouteMatch[?, ?], R, C /* <: RouterContext */](x: Self & (RouteMatch[R, C])) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: RouteParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: RouteParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: Route[R, C]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Route[R, C]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -299,74 +268,52 @@ object mod {
   }
   object RouterOptions {
     
-    @scala.inline
-    def apply[R, C /* <: RouterContext */](): RouterOptions[R, C] = {
+    inline def apply[R, C /* <: RouterContext */](): RouterOptions[R, C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouterOptions[R, C]]
     }
     
-    @scala.inline
-    implicit class RouterOptionsMutableBuilder[Self <: RouterOptions[?, ?], R, C /* <: RouterContext */] (val x: Self & (RouterOptions[R, C])) extends AnyVal {
+    extension [Self <: RouterOptions[?, ?], R, C /* <: RouterContext */](x: Self & (RouterOptions[R, C])) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEncode(value: /* value */ String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: /* value */ String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setEndsWith(value: String): Self = StObject.set(x, "endsWith", value.asInstanceOf[js.Any])
+      inline def setEndsWith(value: String): Self = StObject.set(x, "endsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndsWithUndefined: Self = StObject.set(x, "endsWith", js.undefined)
+      inline def setEndsWithUndefined: Self = StObject.set(x, "endsWith", js.undefined)
       
-      @scala.inline
-      def setErrorHandler(value: (/* error */ RouteError, /* context */ ResolveContext) => RouteResult[R]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+      inline def setErrorHandler(value: (/* error */ RouteError, /* context */ ResolveContext) => RouteResult[R]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setResolveRoute(value: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResult[R]): Self = StObject.set(x, "resolveRoute", js.Any.fromFunction2(value))
+      inline def setResolveRoute(value: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResult[R]): Self = StObject.set(x, "resolveRoute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolveRouteUndefined: Self = StObject.set(x, "resolveRoute", js.undefined)
+      inline def setResolveRouteUndefined: Self = StObject.set(x, "resolveRoute", js.undefined)
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
       
-      @scala.inline
-      def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   

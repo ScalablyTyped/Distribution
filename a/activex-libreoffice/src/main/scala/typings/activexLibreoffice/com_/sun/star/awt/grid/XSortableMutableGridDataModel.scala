@@ -17,8 +17,7 @@ trait XSortableMutableGridDataModel
      with XSortableGridData
 object XSortableMutableGridDataModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnCount: Double,
     CurrentSortOrder: Pair[Double, Boolean],
     RowCount: Double,

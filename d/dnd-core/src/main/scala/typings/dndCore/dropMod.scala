@@ -11,6 +11,5 @@ object dropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDrop(manager: DragDropManager): js.Function1[/* options */ js.UndefOr[js.Object], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDrop")(manager.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], Unit]]
+  inline def createDrop(manager: DragDropManager): js.Function1[/* options */ js.UndefOr[js.Object], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDrop")(manager.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], Unit]]
 }

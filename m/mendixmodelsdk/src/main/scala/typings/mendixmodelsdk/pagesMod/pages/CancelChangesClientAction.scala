@@ -44,8 +44,7 @@ object CancelChangesClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def create(model: IModel): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -56,8 +55,7 @@ object CancelChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionButtonUnderAction(container: ActionButton): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInActionButtonUnderAction(container: ActionButton): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -68,8 +66,7 @@ object CancelChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionItemUnderAction(container: ActionItem): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInActionItemUnderAction(container: ActionItem): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -80,8 +77,7 @@ object CancelChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -92,8 +88,7 @@ object CancelChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -104,8 +99,7 @@ object CancelChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -116,8 +110,7 @@ object CancelChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -128,8 +121,7 @@ object CancelChangesClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBottomBarItemUnderAction(container: BottomBarItem): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInBottomBarItemUnderAction(container: BottomBarItem): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -140,8 +132,7 @@ object CancelChangesClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderOnClickAction(container: DivContainer): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInDivContainerUnderOnClickAction(container: DivContainer): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -152,8 +143,7 @@ object CancelChangesClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -164,8 +154,7 @@ object CancelChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGridActionButtonUnderAction(container: GridActionButton): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInGridActionButtonUnderAction(container: GridActionButton): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -176,8 +165,7 @@ object CancelChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderClickAction(container: ListView): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInListViewUnderClickAction(container: ListView): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -188,8 +176,7 @@ object CancelChangesClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderPullDownAction(container: ListView): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInListViewUnderPullDownAction(container: ListView): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -200,8 +187,7 @@ object CancelChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMenuItemUnderAction(container: MenuItem): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInMenuItemUnderAction(container: MenuItem): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -212,8 +198,7 @@ object CancelChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -224,8 +209,7 @@ object CancelChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -236,8 +220,7 @@ object CancelChangesClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /**
     * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
@@ -248,20 +231,17 @@ object CancelChangesClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderAction(container: WidgetValue): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
+  inline def createInWidgetValueUnderAction(container: WidgetValue): CancelChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CancelChangesClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelChangesClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelChangesClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

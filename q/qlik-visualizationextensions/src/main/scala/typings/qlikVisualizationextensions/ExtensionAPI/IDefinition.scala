@@ -17,23 +17,18 @@ trait IDefinition extends StObject {
 }
 object IDefinition {
   
-  @scala.inline
-  def apply(items: IItems): IDefinition = {
+  inline def apply(items: IItems): IDefinition = {
     val __obj = js.Dynamic.literal(component = "accordion", items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("items")
     __obj.asInstanceOf[IDefinition]
   }
   
-  @scala.inline
-  implicit class IDefinitionMutableBuilder[Self <: IDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IDefinition](x: Self) {
     
-    @scala.inline
-    def setComponent(value: accordion): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: accordion): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: IItems): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IItems): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait OldSession extends StObject {
 }
 object OldSession {
   
-  @scala.inline
-  def apply(oldSession: EditSession, session: EditSession): OldSession = {
+  inline def apply(oldSession: EditSession, session: EditSession): OldSession = {
     val __obj = js.Dynamic.literal(oldSession = oldSession.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[OldSession]
   }
   
-  @scala.inline
-  implicit class OldSessionMutableBuilder[Self <: OldSession] (val x: Self) extends AnyVal {
+  extension [Self <: OldSession](x: Self) {
     
-    @scala.inline
-    def setOldSession(value: EditSession): Self = StObject.set(x, "oldSession", value.asInstanceOf[js.Any])
+    inline def setOldSession(value: EditSession): Self = StObject.set(x, "oldSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: EditSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: EditSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait AsyncCallbackFailObject
 }
 object AsyncCallbackFailObject {
   
-  @scala.inline
-  def apply(error: Double): AsyncCallbackFailObject = {
+  inline def apply(error: Double): AsyncCallbackFailObject = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncCallbackFailObject]
   }
   
-  @scala.inline
-  implicit class AsyncCallbackFailObjectMutableBuilder[Self <: AsyncCallbackFailObject] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncCallbackFailObject](x: Self) {
     
-    @scala.inline
-    def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait CurState extends StObject {
 }
 object CurState {
   
-  @scala.inline
-  def apply(curState: String, prevState: String): CurState = {
+  inline def apply(curState: String, prevState: String): CurState = {
     val __obj = js.Dynamic.literal(curState = curState.asInstanceOf[js.Any], prevState = prevState.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurState]
   }
   
-  @scala.inline
-  implicit class CurStateMutableBuilder[Self <: CurState] (val x: Self) extends AnyVal {
+  extension [Self <: CurState](x: Self) {
     
-    @scala.inline
-    def setCurState(value: String): Self = StObject.set(x, "curState", value.asInstanceOf[js.Any])
+    inline def setCurState(value: String): Self = StObject.set(x, "curState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevState(value: String): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
+    inline def setPrevState(value: String): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
   }
 }

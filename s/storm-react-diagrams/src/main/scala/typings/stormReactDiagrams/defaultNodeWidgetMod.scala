@@ -29,20 +29,16 @@ object defaultNodeWidgetMod {
   }
   object DefaultNodeProps {
     
-    @scala.inline
-    def apply(diagramEngine: DiagramEngine, node: DefaultNodeModel): DefaultNodeProps = {
+    inline def apply(diagramEngine: DiagramEngine, node: DefaultNodeModel): DefaultNodeProps = {
       val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultNodeProps]
     }
     
-    @scala.inline
-    implicit class DefaultNodePropsMutableBuilder[Self <: DefaultNodeProps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultNodeProps](x: Self) {
       
-      @scala.inline
-      def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
+      inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: DefaultNodeModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: DefaultNodeModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   

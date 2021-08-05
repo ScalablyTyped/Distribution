@@ -23,25 +23,19 @@ trait ImportClientVpnClientCertificateRevocationListRequest extends StObject {
 }
 object ImportClientVpnClientCertificateRevocationListRequest {
   
-  @scala.inline
-  def apply(CertificateRevocationList: String, ClientVpnEndpointId: ClientVpnEndpointId): ImportClientVpnClientCertificateRevocationListRequest = {
+  inline def apply(CertificateRevocationList: String, ClientVpnEndpointId: ClientVpnEndpointId): ImportClientVpnClientCertificateRevocationListRequest = {
     val __obj = js.Dynamic.literal(CertificateRevocationList = CertificateRevocationList.asInstanceOf[js.Any], ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportClientVpnClientCertificateRevocationListRequest]
   }
   
-  @scala.inline
-  implicit class ImportClientVpnClientCertificateRevocationListRequestMutableBuilder[Self <: ImportClientVpnClientCertificateRevocationListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportClientVpnClientCertificateRevocationListRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateRevocationList(value: String): Self = StObject.set(x, "CertificateRevocationList", value.asInstanceOf[js.Any])
+    inline def setCertificateRevocationList(value: String): Self = StObject.set(x, "CertificateRevocationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

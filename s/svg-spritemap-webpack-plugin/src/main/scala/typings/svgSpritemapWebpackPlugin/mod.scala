@@ -50,38 +50,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInput(value: typings.svgSpritemapWebpackPlugin.anon.Options): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: typings.svgSpritemapWebpackPlugin.anon.Options): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setOutput(value: Chunk): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Chunk): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setSprite(value: Generate): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
+      inline def setSprite(value: Generate): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
+      inline def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
       
-      @scala.inline
-      def setStyles(value: Boolean | String | Filename): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Boolean | String | Filename): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   

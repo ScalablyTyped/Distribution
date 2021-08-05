@@ -35,6 +35,5 @@ object TextInput {
   @JSImport("react-native", "TextInput.State")
   @js.native
   def State: TextInputState = js.native
-  @scala.inline
-  def State_=(x: TextInputState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("State")(x.asInstanceOf[js.Any])
+  inline def State_=(x: TextInputState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("State")(x.asInstanceOf[js.Any])
 }

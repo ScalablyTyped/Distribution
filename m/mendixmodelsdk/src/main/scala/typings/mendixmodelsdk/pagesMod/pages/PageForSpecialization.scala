@@ -50,8 +50,7 @@ object PageForSpecialization {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PageForSpecialization]
+  inline def create(model: IModel): PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PageForSpecialization]
   
   /**
     * Creates and returns a new PageForSpecialization instance in the SDK and on the server.
@@ -62,8 +61,7 @@ object PageForSpecialization {
     *  6.0.0 to 7.16.0
     */
   /* static member */
-  @scala.inline
-  def createInGridEditButtonUnderPagesForSpecializations(container: GridEditButton): PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridEditButtonUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[PageForSpecialization]
+  inline def createInGridEditButtonUnderPagesForSpecializations(container: GridEditButton): PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridEditButtonUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[PageForSpecialization]
   
   /**
     * Creates and returns a new PageForSpecialization instance in the SDK and on the server.
@@ -74,20 +72,17 @@ object PageForSpecialization {
     *  7.17.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPageClientActionUnderPagesForSpecializations(container: PageClientAction): PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageClientActionUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[PageForSpecialization]
+  inline def createInPageClientActionUnderPagesForSpecializations(container: PageClientAction): PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageClientActionUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[PageForSpecialization]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageForSpecialization.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageForSpecialization.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

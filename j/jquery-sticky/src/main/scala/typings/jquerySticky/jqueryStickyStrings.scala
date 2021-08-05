@@ -8,6 +8,5 @@ object jqueryStickyStrings {
   
   @js.native
   sealed trait update extends StObject
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
 }

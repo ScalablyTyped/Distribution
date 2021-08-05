@@ -50,8 +50,7 @@ trait HumanLoopConfig extends StObject {
 }
 object HumanLoopConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HumanTaskUiArn: HumanTaskUiArn,
     TaskCount: FlowDefinitionTaskCount,
     TaskDescription: FlowDefinitionTaskDescription,
@@ -62,49 +61,34 @@ object HumanLoopConfig {
     __obj.asInstanceOf[HumanLoopConfig]
   }
   
-  @scala.inline
-  implicit class HumanLoopConfigMutableBuilder[Self <: HumanLoopConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HumanLoopConfig](x: Self) {
     
-    @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicWorkforceTaskPrice(value: PublicWorkforceTaskPrice): Self = StObject.set(x, "PublicWorkforceTaskPrice", value.asInstanceOf[js.Any])
+    inline def setPublicWorkforceTaskPrice(value: PublicWorkforceTaskPrice): Self = StObject.set(x, "PublicWorkforceTaskPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicWorkforceTaskPriceUndefined: Self = StObject.set(x, "PublicWorkforceTaskPrice", js.undefined)
+    inline def setPublicWorkforceTaskPriceUndefined: Self = StObject.set(x, "PublicWorkforceTaskPrice", js.undefined)
     
-    @scala.inline
-    def setTaskAvailabilityLifetimeInSeconds(value: FlowDefinitionTaskAvailabilityLifetimeInSeconds): Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setTaskAvailabilityLifetimeInSeconds(value: FlowDefinitionTaskAvailabilityLifetimeInSeconds): Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskAvailabilityLifetimeInSecondsUndefined: Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", js.undefined)
+    inline def setTaskAvailabilityLifetimeInSecondsUndefined: Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", js.undefined)
     
-    @scala.inline
-    def setTaskCount(value: FlowDefinitionTaskCount): Self = StObject.set(x, "TaskCount", value.asInstanceOf[js.Any])
+    inline def setTaskCount(value: FlowDefinitionTaskCount): Self = StObject.set(x, "TaskCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDescription(value: FlowDefinitionTaskDescription): Self = StObject.set(x, "TaskDescription", value.asInstanceOf[js.Any])
+    inline def setTaskDescription(value: FlowDefinitionTaskDescription): Self = StObject.set(x, "TaskDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskKeywords(value: FlowDefinitionTaskKeywords): Self = StObject.set(x, "TaskKeywords", value.asInstanceOf[js.Any])
+    inline def setTaskKeywords(value: FlowDefinitionTaskKeywords): Self = StObject.set(x, "TaskKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskKeywordsUndefined: Self = StObject.set(x, "TaskKeywords", js.undefined)
+    inline def setTaskKeywordsUndefined: Self = StObject.set(x, "TaskKeywords", js.undefined)
     
-    @scala.inline
-    def setTaskKeywordsVarargs(value: FlowDefinitionTaskKeyword*): Self = StObject.set(x, "TaskKeywords", js.Array(value :_*))
+    inline def setTaskKeywordsVarargs(value: FlowDefinitionTaskKeyword*): Self = StObject.set(x, "TaskKeywords", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskTimeLimitInSeconds(value: FlowDefinitionTaskTimeLimitInSeconds): Self = StObject.set(x, "TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
+    inline def setTaskTimeLimitInSeconds(value: FlowDefinitionTaskTimeLimitInSeconds): Self = StObject.set(x, "TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTimeLimitInSecondsUndefined: Self = StObject.set(x, "TaskTimeLimitInSeconds", js.undefined)
+    inline def setTaskTimeLimitInSecondsUndefined: Self = StObject.set(x, "TaskTimeLimitInSeconds", js.undefined)
     
-    @scala.inline
-    def setTaskTitle(value: FlowDefinitionTaskTitle): Self = StObject.set(x, "TaskTitle", value.asInstanceOf[js.Any])
+    inline def setTaskTitle(value: FlowDefinitionTaskTitle): Self = StObject.set(x, "TaskTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
+    inline def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
   }
 }

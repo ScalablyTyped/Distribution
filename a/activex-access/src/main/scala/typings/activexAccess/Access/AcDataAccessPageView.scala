@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcDataAccessPageView extends StObject
 object AcDataAccessPageView {
   
-  @scala.inline
-  def acDataAccessPageBrowse: `0` = 0.asInstanceOf[`0`]
+  inline def acDataAccessPageBrowse: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acDataAccessPageDesign: `1` = 1.asInstanceOf[`1`]
+  inline def acDataAccessPageDesign: `1` = 1.asInstanceOf[`1`]
 }

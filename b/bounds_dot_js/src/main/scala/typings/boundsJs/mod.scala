@@ -10,10 +10,8 @@ object mod {
   /**
     * Asynchronous boundary detection. 1KB, no dependencies.
     */
-  @scala.inline
-  def apply(): Boundary = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boundary]
-  @scala.inline
-  def apply(options: Options): Boundary = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Boundary]
+  inline def apply(): Boundary = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boundary]
+  inline def apply(options: Options): Boundary = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Boundary]
   
   @JSImport("bounds.js", JSImport.Namespace)
   @js.native
@@ -69,8 +67,7 @@ object mod {
       * The static `checkCompatibility` method will throw an error if `Bounds.js` is not supported in the user's browser.
       */
     /* static member */
-    @scala.inline
-    def checkCompatibility(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatibility")().asInstanceOf[Unit]
+    inline def checkCompatibility(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatibility")().asInstanceOf[Unit]
   }
   
   trait Action extends StObject {
@@ -85,26 +82,20 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply(el: Element, inside: Boolean, outside: Boolean, ratio: Double): Action = {
+    inline def apply(el: Element, inside: Boolean, outside: Boolean, ratio: Double): Action = {
       val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], inside = inside.asInstanceOf[js.Any], outside = outside.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
+      inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutside(value: Boolean): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
+      inline def setOutside(value: Boolean): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,38 +112,28 @@ object mod {
   }
   object Margins {
     
-    @scala.inline
-    def apply(): Margins = {
+    inline def apply(): Margins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Margins]
     }
     
-    @scala.inline
-    implicit class MarginsMutableBuilder[Self <: Margins] (val x: Self) extends AnyVal {
+    extension [Self <: Margins](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -192,41 +173,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMargins(value: Margins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+      inline def setMargins(value: Margins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
+      inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
       
-      @scala.inline
-      def setOnEmit(value: /* actions */ js.Array[Action] => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction1(value))
+      inline def setOnEmit(value: /* actions */ js.Array[Action] => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEmitUndefined: Self = StObject.set(x, "onEmit", js.undefined)
+      inline def setOnEmitUndefined: Self = StObject.set(x, "onEmit", js.undefined)
       
-      @scala.inline
-      def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
   
@@ -247,20 +217,16 @@ object mod {
   }
   object WatchOptions {
     
-    @scala.inline
-    def apply(onEnter: /* ratio */ Double => Unit, onLeave: /* ratio */ Double => Unit): WatchOptions = {
+    inline def apply(onEnter: /* ratio */ Double => Unit, onLeave: /* ratio */ Double => Unit): WatchOptions = {
       val __obj = js.Dynamic.literal(onEnter = js.Any.fromFunction1(onEnter), onLeave = js.Any.fromFunction1(onLeave))
       __obj.asInstanceOf[WatchOptions]
     }
     
-    @scala.inline
-    implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatchOptions](x: Self) {
       
-      @scala.inline
-      def setOnEnter(value: /* ratio */ Double => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      inline def setOnEnter(value: /* ratio */ Double => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLeave(value: /* ratio */ Double => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
+      inline def setOnLeave(value: /* ratio */ Double => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
     }
   }
 }

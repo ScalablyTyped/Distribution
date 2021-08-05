@@ -18,19 +18,15 @@ trait SchemaGooglePrivacyDlpV2DetectionRule extends StObject {
 }
 object SchemaGooglePrivacyDlpV2DetectionRule {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2DetectionRule = {
+  inline def apply(): SchemaGooglePrivacyDlpV2DetectionRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DetectionRule]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DetectionRuleMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DetectionRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2DetectionRule](x: Self) {
     
-    @scala.inline
-    def setHotwordRule(value: SchemaGooglePrivacyDlpV2HotwordRule): Self = StObject.set(x, "hotwordRule", value.asInstanceOf[js.Any])
+    inline def setHotwordRule(value: SchemaGooglePrivacyDlpV2HotwordRule): Self = StObject.set(x, "hotwordRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotwordRuleUndefined: Self = StObject.set(x, "hotwordRule", js.undefined)
+    inline def setHotwordRuleUndefined: Self = StObject.set(x, "hotwordRule", js.undefined)
   }
 }

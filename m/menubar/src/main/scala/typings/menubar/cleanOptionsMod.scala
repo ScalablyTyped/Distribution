@@ -12,8 +12,6 @@ object cleanOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanOptions")().asInstanceOf[Options]
-  @scala.inline
-  def cleanOptions(opts: PartialOptions): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[Options]
+  inline def cleanOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanOptions")().asInstanceOf[Options]
+  inline def cleanOptions(opts: PartialOptions): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[Options]
 }

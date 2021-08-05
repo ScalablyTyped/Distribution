@@ -18,25 +18,19 @@ trait Subnet extends StObject {
 }
 object Subnet {
   
-  @scala.inline
-  def apply(): Subnet = {
+  inline def apply(): Subnet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subnet]
   }
   
-  @scala.inline
-  implicit class SubnetMutableBuilder[Self <: Subnet] (val x: Self) extends AnyVal {
+  extension [Self <: Subnet](x: Self) {
     
-    @scala.inline
-    def setSubnetAvailabilityZone(value: String): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setSubnetAvailabilityZone(value: String): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetAvailabilityZoneUndefined: Self = StObject.set(x, "SubnetAvailabilityZone", js.undefined)
+    inline def setSubnetAvailabilityZoneUndefined: Self = StObject.set(x, "SubnetAvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setSubnetIdentifier(value: String): Self = StObject.set(x, "SubnetIdentifier", value.asInstanceOf[js.Any])
+    inline def setSubnetIdentifier(value: String): Self = StObject.set(x, "SubnetIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdentifierUndefined: Self = StObject.set(x, "SubnetIdentifier", js.undefined)
+    inline def setSubnetIdentifierUndefined: Self = StObject.set(x, "SubnetIdentifier", js.undefined)
   }
 }

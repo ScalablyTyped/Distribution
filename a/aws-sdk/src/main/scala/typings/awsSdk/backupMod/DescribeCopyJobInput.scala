@@ -13,16 +13,13 @@ trait DescribeCopyJobInput extends StObject {
 }
 object DescribeCopyJobInput {
   
-  @scala.inline
-  def apply(CopyJobId: String): DescribeCopyJobInput = {
+  inline def apply(CopyJobId: String): DescribeCopyJobInput = {
     val __obj = js.Dynamic.literal(CopyJobId = CopyJobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCopyJobInput]
   }
   
-  @scala.inline
-  implicit class DescribeCopyJobInputMutableBuilder[Self <: DescribeCopyJobInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCopyJobInput](x: Self) {
     
-    @scala.inline
-    def setCopyJobId(value: String): Self = StObject.set(x, "CopyJobId", value.asInstanceOf[js.Any])
+    inline def setCopyJobId(value: String): Self = StObject.set(x, "CopyJobId", value.asInstanceOf[js.Any])
   }
 }

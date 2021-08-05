@@ -15,16 +15,13 @@ trait ImagesSetDetails
 }
 object ImagesSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block): ImagesSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block): ImagesSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagesSetDetails]
   }
   
-  @scala.inline
-  implicit class ImagesSetDetailsMutableBuilder[Self <: ImagesSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ImagesSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

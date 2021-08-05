@@ -12,19 +12,15 @@ trait OverlayBox extends StObject {
 }
 object OverlayBox {
   
-  @scala.inline
-  def apply(hideOverlay: () => Unit, showOverlay: () => Unit): OverlayBox = {
+  inline def apply(hideOverlay: () => Unit, showOverlay: () => Unit): OverlayBox = {
     val __obj = js.Dynamic.literal(hideOverlay = js.Any.fromFunction0(hideOverlay), showOverlay = js.Any.fromFunction0(showOverlay))
     __obj.asInstanceOf[OverlayBox]
   }
   
-  @scala.inline
-  implicit class OverlayBoxMutableBuilder[Self <: OverlayBox] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayBox](x: Self) {
     
-    @scala.inline
-    def setHideOverlay(value: () => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction0(value))
+    inline def setHideOverlay(value: () => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowOverlay(value: () => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction0(value))
+    inline def setShowOverlay(value: () => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction0(value))
   }
 }

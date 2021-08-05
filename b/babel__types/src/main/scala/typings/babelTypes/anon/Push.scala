@@ -13,19 +13,15 @@ trait Push extends StObject {
 }
 object Push {
   
-  @scala.inline
-  def apply(buildUndefinedNode: () => Node, push: Init => Unit): Push = {
+  inline def apply(buildUndefinedNode: () => Node, push: Init => Unit): Push = {
     val __obj = js.Dynamic.literal(buildUndefinedNode = js.Any.fromFunction0(buildUndefinedNode), push = js.Any.fromFunction1(push))
     __obj.asInstanceOf[Push]
   }
   
-  @scala.inline
-  implicit class PushMutableBuilder[Self <: Push] (val x: Self) extends AnyVal {
+  extension [Self <: Push](x: Self) {
     
-    @scala.inline
-    def setBuildUndefinedNode(value: () => Node): Self = StObject.set(x, "buildUndefinedNode", js.Any.fromFunction0(value))
+    inline def setBuildUndefinedNode(value: () => Node): Self = StObject.set(x, "buildUndefinedNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: Init => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: Init => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
   }
 }

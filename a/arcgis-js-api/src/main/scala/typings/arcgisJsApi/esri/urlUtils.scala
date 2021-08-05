@@ -29,8 +29,7 @@ trait urlUtils extends StObject {
 }
 object urlUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addProxyRule: urlUtilsAddProxyRuleRule => Double,
     getProxyRule: String => js.Any,
     urlToObject: String => js.Any
@@ -39,16 +38,12 @@ object urlUtils {
     __obj.asInstanceOf[urlUtils]
   }
   
-  @scala.inline
-  implicit class urlUtilsMutableBuilder[Self <: urlUtils] (val x: Self) extends AnyVal {
+  extension [Self <: urlUtils](x: Self) {
     
-    @scala.inline
-    def setAddProxyRule(value: urlUtilsAddProxyRuleRule => Double): Self = StObject.set(x, "addProxyRule", js.Any.fromFunction1(value))
+    inline def setAddProxyRule(value: urlUtilsAddProxyRuleRule => Double): Self = StObject.set(x, "addProxyRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProxyRule(value: String => js.Any): Self = StObject.set(x, "getProxyRule", js.Any.fromFunction1(value))
+    inline def setGetProxyRule(value: String => js.Any): Self = StObject.set(x, "getProxyRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUrlToObject(value: String => js.Any): Self = StObject.set(x, "urlToObject", js.Any.fromFunction1(value))
+    inline def setUrlToObject(value: String => js.Any): Self = StObject.set(x, "urlToObject", js.Any.fromFunction1(value))
   }
 }

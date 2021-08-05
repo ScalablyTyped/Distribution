@@ -14,28 +14,21 @@ trait ListMembershipsResponse extends StObject {
 }
 object ListMembershipsResponse {
   
-  @scala.inline
-  def apply(): ListMembershipsResponse = {
+  inline def apply(): ListMembershipsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMembershipsResponse]
   }
   
-  @scala.inline
-  implicit class ListMembershipsResponseMutableBuilder[Self <: ListMembershipsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMembershipsResponse](x: Self) {
     
-    @scala.inline
-    def setMemberships(value: js.Array[Membership]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
+    inline def setMemberships(value: js.Array[Membership]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
+    inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    @scala.inline
-    def setMembershipsVarargs(value: Membership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: Membership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

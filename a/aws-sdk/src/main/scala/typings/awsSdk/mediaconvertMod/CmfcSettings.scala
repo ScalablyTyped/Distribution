@@ -18,25 +18,19 @@ trait CmfcSettings extends StObject {
 }
 object CmfcSettings {
   
-  @scala.inline
-  def apply(): CmfcSettings = {
+  inline def apply(): CmfcSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CmfcSettings]
   }
   
-  @scala.inline
-  implicit class CmfcSettingsMutableBuilder[Self <: CmfcSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CmfcSettings](x: Self) {
     
-    @scala.inline
-    def setScte35Esam(value: CmfcScte35Esam): Self = StObject.set(x, "Scte35Esam", value.asInstanceOf[js.Any])
+    inline def setScte35Esam(value: CmfcScte35Esam): Self = StObject.set(x, "Scte35Esam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35EsamUndefined: Self = StObject.set(x, "Scte35Esam", js.undefined)
+    inline def setScte35EsamUndefined: Self = StObject.set(x, "Scte35Esam", js.undefined)
     
-    @scala.inline
-    def setScte35Source(value: CmfcScte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
+    inline def setScte35Source(value: CmfcScte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
+    inline def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
   }
 }

@@ -18,17 +18,14 @@ object customizerContextMod {
   }
   object ICustomizerContext {
     
-    @scala.inline
-    def apply(customizations: ICustomizations): ICustomizerContext = {
+    inline def apply(customizations: ICustomizations): ICustomizerContext = {
       val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomizerContext]
     }
     
-    @scala.inline
-    implicit class ICustomizerContextMutableBuilder[Self <: ICustomizerContext] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomizerContext](x: Self) {
       
-      @scala.inline
-      def setCustomizations(value: ICustomizations): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
+      inline def setCustomizations(value: ICustomizations): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     }
   }
 }

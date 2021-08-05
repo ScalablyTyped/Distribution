@@ -23,20 +23,16 @@ trait RecipientsChangedEventArgs extends StObject {
 }
 object RecipientsChangedEventArgs {
   
-  @scala.inline
-  def apply(changedRecipientFields: RecipientsChangedFields): RecipientsChangedEventArgs = {
+  inline def apply(changedRecipientFields: RecipientsChangedFields): RecipientsChangedEventArgs = {
     val __obj = js.Dynamic.literal(changedRecipientFields = changedRecipientFields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("olkRecipientsChanged")
     __obj.asInstanceOf[RecipientsChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class RecipientsChangedEventArgsMutableBuilder[Self <: RecipientsChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientsChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setChangedRecipientFields(value: RecipientsChangedFields): Self = StObject.set(x, "changedRecipientFields", value.asInstanceOf[js.Any])
+    inline def setChangedRecipientFields(value: RecipientsChangedFields): Self = StObject.set(x, "changedRecipientFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: olkRecipientsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: olkRecipientsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -33,38 +33,28 @@ object pagerItemMod {
   }
   object PagerItemProps {
     
-    @scala.inline
-    def apply(): PagerItemProps = {
+    inline def apply(): PagerItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PagerItemProps]
     }
     
-    @scala.inline
-    implicit class PagerItemPropsMutableBuilder[Self <: PagerItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: PagerItemProps](x: Self) {
       
-      @scala.inline
-      def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+      inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       
-      @scala.inline
-      def setNext(value: Boolean): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Boolean): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: SelectCallback): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+      inline def setOnSelect(value: SelectCallback): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
 }

@@ -22,8 +22,7 @@ trait ImageView2FopOptions
 }
 object ImageView2FopOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: jpg | gif | png | webp | String,
     h: Double,
     mode: `0` | `1` | `2` | `3` | `4` | `5`,
@@ -34,10 +33,8 @@ object ImageView2FopOptions {
     __obj.asInstanceOf[ImageView2FopOptions]
   }
   
-  @scala.inline
-  implicit class ImageView2FopOptionsMutableBuilder[Self <: ImageView2FopOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageView2FopOptions](x: Self) {
     
-    @scala.inline
-    def setFop(value: typings.qiniuJs.qiniuJsStrings.imageView2): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
+    inline def setFop(value: typings.qiniuJs.qiniuJsStrings.imageView2): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
   }
 }

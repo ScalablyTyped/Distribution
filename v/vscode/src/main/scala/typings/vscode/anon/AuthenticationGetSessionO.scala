@@ -32,22 +32,17 @@ trait AuthenticationGetSessionO extends StObject {
 }
 object AuthenticationGetSessionO {
   
-  @scala.inline
-  def apply(createIfNone: js.UndefOr[Boolean] & `true`): AuthenticationGetSessionO = {
+  inline def apply(createIfNone: js.UndefOr[Boolean] & `true`): AuthenticationGetSessionO = {
     val __obj = js.Dynamic.literal(createIfNone = createIfNone.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationGetSessionO]
   }
   
-  @scala.inline
-  implicit class AuthenticationGetSessionOMutableBuilder[Self <: AuthenticationGetSessionO] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationGetSessionO](x: Self) {
     
-    @scala.inline
-    def setClearSessionPreference(value: Boolean): Self = StObject.set(x, "clearSessionPreference", value.asInstanceOf[js.Any])
+    inline def setClearSessionPreference(value: Boolean): Self = StObject.set(x, "clearSessionPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearSessionPreferenceUndefined: Self = StObject.set(x, "clearSessionPreference", js.undefined)
+    inline def setClearSessionPreferenceUndefined: Self = StObject.set(x, "clearSessionPreference", js.undefined)
     
-    @scala.inline
-    def setCreateIfNone(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
+    inline def setCreateIfNone(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ArrayArray extends StObject {
 }
 object ArrayArray {
   
-  @scala.inline
-  def apply(array: js.Array[ObjectIdentifierParam | HexParam | NameParam]): ArrayArray = {
+  inline def apply(array: js.Array[ObjectIdentifierParam | HexParam | NameParam]): ArrayArray = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayArray]
   }
   
-  @scala.inline
-  implicit class ArrayArrayMutableBuilder[Self <: ArrayArray] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayArray](x: Self) {
     
-    @scala.inline
-    def setArray(value: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayVarargs(value: (ObjectIdentifierParam | HexParam | NameParam)*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: (ObjectIdentifierParam | HexParam | NameParam)*): Self = StObject.set(x, "array", js.Array(value :_*))
   }
 }

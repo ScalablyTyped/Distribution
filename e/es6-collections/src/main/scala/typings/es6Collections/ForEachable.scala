@@ -10,16 +10,13 @@ trait ForEachable[T] extends StObject {
 }
 object ForEachable {
   
-  @scala.inline
-  def apply[T](forEach: js.Function1[/* value */ T, Unit] => Unit): ForEachable[T] = {
+  inline def apply[T](forEach: js.Function1[/* value */ T, Unit] => Unit): ForEachable[T] = {
     val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach))
     __obj.asInstanceOf[ForEachable[T]]
   }
   
-  @scala.inline
-  implicit class ForEachableMutableBuilder[Self <: ForEachable[?], T] (val x: Self & ForEachable[T]) extends AnyVal {
+  extension [Self <: ForEachable[?], T](x: Self & ForEachable[T]) {
     
-    @scala.inline
-    def setForEach(value: js.Function1[/* value */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+    inline def setForEach(value: js.Function1[/* value */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
   }
 }

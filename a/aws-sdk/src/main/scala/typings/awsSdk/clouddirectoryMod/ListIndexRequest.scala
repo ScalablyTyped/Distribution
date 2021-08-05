@@ -38,46 +38,33 @@ trait ListIndexRequest extends StObject {
 }
 object ListIndexRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn, IndexReference: ObjectReference): ListIndexRequest = {
+  inline def apply(DirectoryArn: Arn, IndexReference: ObjectReference): ListIndexRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], IndexReference = IndexReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIndexRequest]
   }
   
-  @scala.inline
-  implicit class ListIndexRequestMutableBuilder[Self <: ListIndexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListIndexRequest](x: Self) {
     
-    @scala.inline
-    def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
+    inline def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistencyLevelUndefined: Self = StObject.set(x, "ConsistencyLevel", js.undefined)
+    inline def setConsistencyLevelUndefined: Self = StObject.set(x, "ConsistencyLevel", js.undefined)
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexReference(value: ObjectReference): Self = StObject.set(x, "IndexReference", value.asInstanceOf[js.Any])
+    inline def setIndexReference(value: ObjectReference): Self = StObject.set(x, "IndexReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRangesOnIndexedValues(value: ObjectAttributeRangeList): Self = StObject.set(x, "RangesOnIndexedValues", value.asInstanceOf[js.Any])
+    inline def setRangesOnIndexedValues(value: ObjectAttributeRangeList): Self = StObject.set(x, "RangesOnIndexedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesOnIndexedValuesUndefined: Self = StObject.set(x, "RangesOnIndexedValues", js.undefined)
+    inline def setRangesOnIndexedValuesUndefined: Self = StObject.set(x, "RangesOnIndexedValues", js.undefined)
     
-    @scala.inline
-    def setRangesOnIndexedValuesVarargs(value: ObjectAttributeRange*): Self = StObject.set(x, "RangesOnIndexedValues", js.Array(value :_*))
+    inline def setRangesOnIndexedValuesVarargs(value: ObjectAttributeRange*): Self = StObject.set(x, "RangesOnIndexedValues", js.Array(value :_*))
   }
 }

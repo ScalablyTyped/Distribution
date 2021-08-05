@@ -30,37 +30,27 @@ trait ConfirmArgs
 }
 object ConfirmArgs {
   
-  @scala.inline
-  def apply(): ConfirmArgs = {
+  inline def apply(): ConfirmArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmArgs]
   }
   
-  @scala.inline
-  implicit class ConfirmArgsMutableBuilder[Self <: ConfirmArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmArgs](x: Self) {
     
-    @scala.inline
-    def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
+    inline def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
+    inline def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
     
-    @scala.inline
-    def setConfirmButtonText(value: String): Self = StObject.set(x, "confirmButtonText", value.asInstanceOf[js.Any])
+    inline def setConfirmButtonText(value: String): Self = StObject.set(x, "confirmButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmButtonTextUndefined: Self = StObject.set(x, "confirmButtonText", js.undefined)
+    inline def setConfirmButtonTextUndefined: Self = StObject.set(x, "confirmButtonText", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

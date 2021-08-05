@@ -14,20 +14,16 @@ object anon {
   }
   object Errors {
     
-    @scala.inline
-    def apply(errors: js.Array[HotError]): Errors = {
+    inline def apply(errors: js.Array[HotError]): Errors = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[HotError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[HotError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: HotError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: HotError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
@@ -68,104 +64,72 @@ object anon {
   }
   object PartialConfig {
     
-    @scala.inline
-    def apply(): PartialConfig = {
+    inline def apply(): PartialConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialConfig]
     }
     
-    @scala.inline
-    implicit class PartialConfigMutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialConfig](x: Self) {
       
-      @scala.inline
-      def setAllowSFC(value: Boolean): Self = StObject.set(x, "allowSFC", value.asInstanceOf[js.Any])
+      inline def setAllowSFC(value: Boolean): Self = StObject.set(x, "allowSFC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSFCUndefined: Self = StObject.set(x, "allowSFC", js.undefined)
+      inline def setAllowSFCUndefined: Self = StObject.set(x, "allowSFC", js.undefined)
       
-      @scala.inline
-      def setDisableHotRenderer(value: Boolean): Self = StObject.set(x, "disableHotRenderer", value.asInstanceOf[js.Any])
+      inline def setDisableHotRenderer(value: Boolean): Self = StObject.set(x, "disableHotRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHotRendererUndefined: Self = StObject.set(x, "disableHotRenderer", js.undefined)
+      inline def setDisableHotRendererUndefined: Self = StObject.set(x, "disableHotRenderer", js.undefined)
       
-      @scala.inline
-      def setDisableHotRendererWhenInjected(value: Boolean): Self = StObject.set(x, "disableHotRendererWhenInjected", value.asInstanceOf[js.Any])
+      inline def setDisableHotRendererWhenInjected(value: Boolean): Self = StObject.set(x, "disableHotRendererWhenInjected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHotRendererWhenInjectedUndefined: Self = StObject.set(x, "disableHotRendererWhenInjected", js.undefined)
+      inline def setDisableHotRendererWhenInjectedUndefined: Self = StObject.set(x, "disableHotRendererWhenInjected", js.undefined)
       
-      @scala.inline
-      def setErrorOverlay(value: ComponentType[Errors]): Self = StObject.set(x, "ErrorOverlay", value.asInstanceOf[js.Any])
+      inline def setErrorOverlay(value: ComponentType[Errors]): Self = StObject.set(x, "ErrorOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOverlayUndefined: Self = StObject.set(x, "ErrorOverlay", js.undefined)
+      inline def setErrorOverlayUndefined: Self = StObject.set(x, "ErrorOverlay", js.undefined)
       
-      @scala.inline
-      def setErrorReporter(value: ComponentType[HotError]): Self = StObject.set(x, "errorReporter", value.asInstanceOf[js.Any])
+      inline def setErrorReporter(value: ComponentType[HotError]): Self = StObject.set(x, "errorReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorReporterUndefined: Self = StObject.set(x, "errorReporter", js.undefined)
+      inline def setErrorReporterUndefined: Self = StObject.set(x, "errorReporter", js.undefined)
       
-      @scala.inline
-      def setIgnoreComponents(value: Boolean): Self = StObject.set(x, "ignoreComponents", value.asInstanceOf[js.Any])
+      inline def setIgnoreComponents(value: Boolean): Self = StObject.set(x, "ignoreComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreComponentsUndefined: Self = StObject.set(x, "ignoreComponents", js.undefined)
+      inline def setIgnoreComponentsUndefined: Self = StObject.set(x, "ignoreComponents", js.undefined)
       
-      @scala.inline
-      def setIgnoreSFC(value: Boolean): Self = StObject.set(x, "ignoreSFC", value.asInstanceOf[js.Any])
+      inline def setIgnoreSFC(value: Boolean): Self = StObject.set(x, "ignoreSFC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSFCUndefined: Self = StObject.set(x, "ignoreSFC", js.undefined)
+      inline def setIgnoreSFCUndefined: Self = StObject.set(x, "ignoreSFC", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setOnComponentCreate(value: (/* type */ js.Any, /* displayName */ String) => js.Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
+      inline def setOnComponentCreate(value: (/* type */ js.Any, /* displayName */ String) => js.Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnComponentCreateUndefined: Self = StObject.set(x, "onComponentCreate", js.undefined)
+      inline def setOnComponentCreateUndefined: Self = StObject.set(x, "onComponentCreate", js.undefined)
       
-      @scala.inline
-      def setOnComponentRegister(value: (/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String) => js.Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
+      inline def setOnComponentRegister(value: (/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String) => js.Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnComponentRegisterUndefined: Self = StObject.set(x, "onComponentRegister", js.undefined)
+      inline def setOnComponentRegisterUndefined: Self = StObject.set(x, "onComponentRegister", js.undefined)
       
-      @scala.inline
-      def setPureRender(value: Boolean): Self = StObject.set(x, "pureRender", value.asInstanceOf[js.Any])
+      inline def setPureRender(value: Boolean): Self = StObject.set(x, "pureRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPureRenderUndefined: Self = StObject.set(x, "pureRender", js.undefined)
+      inline def setPureRenderUndefined: Self = StObject.set(x, "pureRender", js.undefined)
       
-      @scala.inline
-      def setPureSFC(value: Boolean): Self = StObject.set(x, "pureSFC", value.asInstanceOf[js.Any])
+      inline def setPureSFC(value: Boolean): Self = StObject.set(x, "pureSFC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPureSFCUndefined: Self = StObject.set(x, "pureSFC", js.undefined)
+      inline def setPureSFCUndefined: Self = StObject.set(x, "pureSFC", js.undefined)
       
-      @scala.inline
-      def setReloadHooks(value: Boolean): Self = StObject.set(x, "reloadHooks", value.asInstanceOf[js.Any])
+      inline def setReloadHooks(value: Boolean): Self = StObject.set(x, "reloadHooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadHooksUndefined: Self = StObject.set(x, "reloadHooks", js.undefined)
+      inline def setReloadHooksUndefined: Self = StObject.set(x, "reloadHooks", js.undefined)
       
-      @scala.inline
-      def setShowReactDomPatchNotification(value: Boolean): Self = StObject.set(x, "showReactDomPatchNotification", value.asInstanceOf[js.Any])
+      inline def setShowReactDomPatchNotification(value: Boolean): Self = StObject.set(x, "showReactDomPatchNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowReactDomPatchNotificationUndefined: Self = StObject.set(x, "showReactDomPatchNotification", js.undefined)
+      inline def setShowReactDomPatchNotificationUndefined: Self = StObject.set(x, "showReactDomPatchNotification", js.undefined)
       
-      @scala.inline
-      def setTrackTailUpdates(value: Boolean): Self = StObject.set(x, "trackTailUpdates", value.asInstanceOf[js.Any])
+      inline def setTrackTailUpdates(value: Boolean): Self = StObject.set(x, "trackTailUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackTailUpdatesUndefined: Self = StObject.set(x, "trackTailUpdates", js.undefined)
+      inline def setTrackTailUpdatesUndefined: Self = StObject.set(x, "trackTailUpdates", js.undefined)
     }
   }
 }

@@ -14,27 +14,22 @@ trait BorderLeftProps[TLength] extends StObject {
 }
 object BorderLeftProps {
   
-  @scala.inline
-  def apply[TLength](): BorderLeftProps[TLength] = {
+  inline def apply[TLength](): BorderLeftProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderLeftProps[TLength]]
   }
   
-  @scala.inline
-  implicit class BorderLeftPropsMutableBuilder[Self <: BorderLeftProps[?], TLength] (val x: Self & BorderLeftProps[TLength]) extends AnyVal {
+  extension [Self <: BorderLeftProps[?], TLength](x: Self & BorderLeftProps[TLength]) {
     
-    @scala.inline
-    def setBorderLeft(
+    inline def setBorderLeft(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+    inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
-    @scala.inline
-    def setBorderLeftVarargs(
+    inline def setBorderLeftVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any)*
     ): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
   }

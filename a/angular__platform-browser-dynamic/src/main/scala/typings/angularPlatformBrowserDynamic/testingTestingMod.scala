@@ -20,17 +20,15 @@ object testingTestingMod {
   @js.native
   class BrowserDynamicTestingModule () extends StObject
   
-  @scala.inline
-  def platformBrowserDynamicTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamicTesting")().asInstanceOf[PlatformRef]
-  @scala.inline
-  def platformBrowserDynamicTesting(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamicTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+  inline def platformBrowserDynamicTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamicTesting")().asInstanceOf[PlatformRef]
+  inline def platformBrowserDynamicTesting(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamicTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
   
   @JSImport("@angular/platform-browser-dynamic/testing/testing", "\u0275DOMTestComponentRenderer")
   @js.native
   class ɵDOMTestComponentRenderer protected () extends TestComponentRenderer {
     def this(_doc: js.Any) = this()
     
-    var _doc: js.Any = js.native
+    /* private */ var _doc: js.Any = js.native
   }
   
   @JSImport("@angular/platform-browser-dynamic/testing/testing", "\u0275angular_packages_platform_browser_dynamic_testing_testing_a")
@@ -42,13 +40,11 @@ object testingTestingMod {
   class ɵangularPackagesPlatformBrowserDynamicTestingTestingB protected () extends ɵTestingCompilerFactory {
     def this(_injector: Injector, _compilerFactory: CompilerFactory) = this()
     
-    var _compilerFactory: js.Any = js.native
+    /* private */ var _compilerFactory: js.Any = js.native
     
-    var _injector: js.Any = js.native
+    /* private */ var _injector: js.Any = js.native
   }
   
-  @scala.inline
-  def ɵplatformCoreDynamicTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamicTesting")().asInstanceOf[PlatformRef]
-  @scala.inline
-  def ɵplatformCoreDynamicTesting(extraProviders: js.Array[js.Any]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamicTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+  inline def ɵplatformCoreDynamicTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamicTesting")().asInstanceOf[PlatformRef]
+  inline def ɵplatformCoreDynamicTesting(extraProviders: js.Array[js.Any]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamicTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
 }

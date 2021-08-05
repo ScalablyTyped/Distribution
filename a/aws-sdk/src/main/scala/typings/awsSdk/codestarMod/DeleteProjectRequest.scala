@@ -23,28 +23,21 @@ trait DeleteProjectRequest extends StObject {
 }
 object DeleteProjectRequest {
   
-  @scala.inline
-  def apply(id: ProjectId): DeleteProjectRequest = {
+  inline def apply(id: ProjectId): DeleteProjectRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProjectRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProjectRequestMutableBuilder[Self <: DeleteProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setDeleteStack(value: DeleteStack): Self = StObject.set(x, "deleteStack", value.asInstanceOf[js.Any])
+    inline def setDeleteStack(value: DeleteStack): Self = StObject.set(x, "deleteStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteStackUndefined: Self = StObject.set(x, "deleteStack", js.undefined)
+    inline def setDeleteStackUndefined: Self = StObject.set(x, "deleteStack", js.undefined)
     
-    @scala.inline
-    def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

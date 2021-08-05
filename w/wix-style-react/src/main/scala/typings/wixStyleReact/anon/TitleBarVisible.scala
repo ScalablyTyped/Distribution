@@ -12,25 +12,19 @@ trait TitleBarVisible extends StObject {
 }
 object TitleBarVisible {
   
-  @scala.inline
-  def apply(): TitleBarVisible = {
+  inline def apply(): TitleBarVisible = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TitleBarVisible]
   }
   
-  @scala.inline
-  implicit class TitleBarVisibleMutableBuilder[Self <: TitleBarVisible] (val x: Self) extends AnyVal {
+  extension [Self <: TitleBarVisible](x: Self) {
     
-    @scala.inline
-    def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     
-    @scala.inline
-    def setTitleBarVisible(value: Boolean): Self = StObject.set(x, "titleBarVisible", value.asInstanceOf[js.Any])
+    inline def setTitleBarVisible(value: Boolean): Self = StObject.set(x, "titleBarVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleBarVisibleUndefined: Self = StObject.set(x, "titleBarVisible", js.undefined)
+    inline def setTitleBarVisibleUndefined: Self = StObject.set(x, "titleBarVisible", js.undefined)
   }
 }

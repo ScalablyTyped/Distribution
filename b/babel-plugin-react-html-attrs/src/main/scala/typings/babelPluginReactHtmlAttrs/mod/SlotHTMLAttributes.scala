@@ -12,19 +12,15 @@ trait SlotHTMLAttributes[T]
 }
 object SlotHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): SlotHTMLAttributes[T] = {
+  inline def apply[T](): SlotHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlotHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class SlotHTMLAttributesMutableBuilder[Self <: SlotHTMLAttributes[?], T] (val x: Self & SlotHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: SlotHTMLAttributes[?], T](x: Self & SlotHTMLAttributes[T]) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

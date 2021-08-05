@@ -10,19 +10,15 @@ trait UpdateFlowResponse extends StObject {
 }
 object UpdateFlowResponse {
   
-  @scala.inline
-  def apply(): UpdateFlowResponse = {
+  inline def apply(): UpdateFlowResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateFlowResponse]
   }
   
-  @scala.inline
-  implicit class UpdateFlowResponseMutableBuilder[Self <: UpdateFlowResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFlowResponse](x: Self) {
     
-    @scala.inline
-    def setFlow(value: Flow): Self = StObject.set(x, "Flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: Flow): Self = StObject.set(x, "Flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowUndefined: Self = StObject.set(x, "Flow", js.undefined)
+    inline def setFlowUndefined: Self = StObject.set(x, "Flow", js.undefined)
   }
 }

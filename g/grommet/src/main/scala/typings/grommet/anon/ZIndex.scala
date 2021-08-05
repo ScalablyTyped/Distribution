@@ -10,19 +10,15 @@ trait ZIndex extends StObject {
 }
 object ZIndex {
   
-  @scala.inline
-  def apply(): ZIndex = {
+  inline def apply(): ZIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZIndex]
   }
   
-  @scala.inline
-  implicit class ZIndexMutableBuilder[Self <: ZIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ZIndex](x: Self) {
     
-    @scala.inline
-    def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

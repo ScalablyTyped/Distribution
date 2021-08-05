@@ -107,92 +107,64 @@ object transitionTransitionMod {
   }
   object StrictTransitionProps {
     
-    @scala.inline
-    def apply(): StrictTransitionProps = {
+    inline def apply(): StrictTransitionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTransitionProps]
     }
     
-    @scala.inline
-    implicit class StrictTransitionPropsMutableBuilder[Self <: StrictTransitionProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTransitionProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: SemanticTRANSITIONS | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: SemanticTRANSITIONS | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDirectional(value: Boolean): Self = StObject.set(x, "directional", value.asInstanceOf[js.Any])
+      inline def setDirectional(value: Boolean): Self = StObject.set(x, "directional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalUndefined: Self = StObject.set(x, "directional", js.undefined)
+      inline def setDirectionalUndefined: Self = StObject.set(x, "directional", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double | String | TransitionPropDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double | String | TransitionPropDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setMountOnShow(value: Boolean): Self = StObject.set(x, "mountOnShow", value.asInstanceOf[js.Any])
+      inline def setMountOnShow(value: Boolean): Self = StObject.set(x, "mountOnShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountOnShowUndefined: Self = StObject.set(x, "mountOnShow", js.undefined)
+      inline def setMountOnShowUndefined: Self = StObject.set(x, "mountOnShow", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction2(value))
+      inline def setOnComplete(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
+      inline def setOnHide(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction2(value))
+      inline def setOnShow(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+      inline def setOnStart(value: (/* nothing */ Null, /* data */ TransitionEventData) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setReactKey(value: String): Self = StObject.set(x, "reactKey", value.asInstanceOf[js.Any])
+      inline def setReactKey(value: String): Self = StObject.set(x, "reactKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactKeyUndefined: Self = StObject.set(x, "reactKey", js.undefined)
+      inline def setReactKeyUndefined: Self = StObject.set(x, "reactKey", js.undefined)
       
-      @scala.inline
-      def setTransitionOnMount(value: Boolean): Self = StObject.set(x, "transitionOnMount", value.asInstanceOf[js.Any])
+      inline def setTransitionOnMount(value: Boolean): Self = StObject.set(x, "transitionOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionOnMountUndefined: Self = StObject.set(x, "transitionOnMount", js.undefined)
+      inline def setTransitionOnMountUndefined: Self = StObject.set(x, "transitionOnMount", js.undefined)
       
-      @scala.inline
-      def setUnmountOnHide(value: Boolean): Self = StObject.set(x, "unmountOnHide", value.asInstanceOf[js.Any])
+      inline def setUnmountOnHide(value: Boolean): Self = StObject.set(x, "unmountOnHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountOnHideUndefined: Self = StObject.set(x, "unmountOnHide", js.undefined)
+      inline def setUnmountOnHideUndefined: Self = StObject.set(x, "unmountOnHide", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -206,20 +178,15 @@ object transitionTransitionMod {
   trait TRANSITION_STATUSES extends StObject
   object TRANSITION_STATUSES {
     
-    @scala.inline
-    def ENTERED: typings.semanticUiReact.semanticUiReactStrings.ENTERED = "ENTERED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERED]
+    inline def ENTERED: typings.semanticUiReact.semanticUiReactStrings.ENTERED = "ENTERED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERED]
     
-    @scala.inline
-    def ENTERING: typings.semanticUiReact.semanticUiReactStrings.ENTERING = "ENTERING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERING]
+    inline def ENTERING: typings.semanticUiReact.semanticUiReactStrings.ENTERING = "ENTERING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERING]
     
-    @scala.inline
-    def EXITED: typings.semanticUiReact.semanticUiReactStrings.EXITED = "EXITED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITED]
+    inline def EXITED: typings.semanticUiReact.semanticUiReactStrings.EXITED = "EXITED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITED]
     
-    @scala.inline
-    def EXITING: typings.semanticUiReact.semanticUiReactStrings.EXITING = "EXITING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITING]
+    inline def EXITING: typings.semanticUiReact.semanticUiReactStrings.EXITING = "EXITING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITING]
     
-    @scala.inline
-    def UNMOUNTED: typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED = "UNMOUNTED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED]
+    inline def UNMOUNTED: typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED = "UNMOUNTED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED]
   }
   
   @js.native
@@ -248,17 +215,14 @@ object transitionTransitionMod {
   }
   object TransitionEventData {
     
-    @scala.inline
-    def apply(status: TRANSITION_STATUSES): TransitionEventData = {
+    inline def apply(status: TRANSITION_STATUSES): TransitionEventData = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionEventData]
     }
     
-    @scala.inline
-    implicit class TransitionEventDataMutableBuilder[Self <: TransitionEventData] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionEventData](x: Self) {
       
-      @scala.inline
-      def setStatus(value: TRANSITION_STATUSES): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: TRANSITION_STATUSES): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,20 +234,16 @@ object transitionTransitionMod {
   }
   object TransitionPropDuration {
     
-    @scala.inline
-    def apply(hide: Double, show: Double): TransitionPropDuration = {
+    inline def apply(hide: Double, show: Double): TransitionPropDuration = {
       val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionPropDuration]
     }
     
-    @scala.inline
-    implicit class TransitionPropDurationMutableBuilder[Self <: TransitionPropDuration] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionPropDuration](x: Self) {
       
-      @scala.inline
-      def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,8 +253,7 @@ object transitionTransitionMod {
        with /* key */ StringDictionary[js.Any]
   object TransitionProps {
     
-    @scala.inline
-    def apply(): TransitionProps = {
+    inline def apply(): TransitionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionProps]
     }

@@ -97,8 +97,7 @@ object Adc {
     }
     object IAdcControllerProvider {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         acquireChannel: Double => Unit,
         channelCount: Double,
         channelMode: ProviderAdcChannelMode,
@@ -113,35 +112,25 @@ object Adc {
         __obj.asInstanceOf[IAdcControllerProvider]
       }
       
-      @scala.inline
-      implicit class IAdcControllerProviderMutableBuilder[Self <: IAdcControllerProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IAdcControllerProvider](x: Self) {
         
-        @scala.inline
-        def setAcquireChannel(value: Double => Unit): Self = StObject.set(x, "acquireChannel", js.Any.fromFunction1(value))
+        inline def setAcquireChannel(value: Double => Unit): Self = StObject.set(x, "acquireChannel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+        inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChannelMode(value: ProviderAdcChannelMode): Self = StObject.set(x, "channelMode", value.asInstanceOf[js.Any])
+        inline def setChannelMode(value: ProviderAdcChannelMode): Self = StObject.set(x, "channelMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsChannelModeSupported(value: ProviderAdcChannelMode => Boolean): Self = StObject.set(x, "isChannelModeSupported", js.Any.fromFunction1(value))
+        inline def setIsChannelModeSupported(value: ProviderAdcChannelMode => Boolean): Self = StObject.set(x, "isChannelModeSupported", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+        inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+        inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadValue(value: Double => Double): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
+        inline def setReadValue(value: Double => Double): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setReleaseChannel(value: Double => Unit): Self = StObject.set(x, "releaseChannel", js.Any.fromFunction1(value))
+        inline def setReleaseChannel(value: Double => Unit): Self = StObject.set(x, "releaseChannel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setResolutionInBits(value: Double): Self = StObject.set(x, "resolutionInBits", value.asInstanceOf[js.Any])
+        inline def setResolutionInBits(value: Double): Self = StObject.set(x, "resolutionInBits", value.asInstanceOf[js.Any])
       }
     }
     
@@ -156,17 +145,14 @@ object Adc {
     }
     object IAdcProvider {
       
-      @scala.inline
-      def apply(getControllers: () => IVectorView[IAdcControllerProvider]): IAdcProvider = {
+      inline def apply(getControllers: () => IVectorView[IAdcControllerProvider]): IAdcProvider = {
         val __obj = js.Dynamic.literal(getControllers = js.Any.fromFunction0(getControllers))
         __obj.asInstanceOf[IAdcProvider]
       }
       
-      @scala.inline
-      implicit class IAdcProviderMutableBuilder[Self <: IAdcProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IAdcProvider](x: Self) {
         
-        @scala.inline
-        def setGetControllers(value: () => IVectorView[IAdcControllerProvider]): Self = StObject.set(x, "getControllers", js.Any.fromFunction0(value))
+        inline def setGetControllers(value: () => IVectorView[IAdcControllerProvider]): Self = StObject.set(x, "getControllers", js.Any.fromFunction0(value))
       }
     }
   }
@@ -194,26 +180,20 @@ object Adc {
   }
   object AdcChannel {
     
-    @scala.inline
-    def apply(close: () => Unit, controller: AdcController, readRatio: () => Double, readValue: () => Double): AdcChannel = {
+    inline def apply(close: () => Unit, controller: AdcController, readRatio: () => Double, readValue: () => Double): AdcChannel = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), controller = controller.asInstanceOf[js.Any], readRatio = js.Any.fromFunction0(readRatio), readValue = js.Any.fromFunction0(readValue))
       __obj.asInstanceOf[AdcChannel]
     }
     
-    @scala.inline
-    implicit class AdcChannelMutableBuilder[Self <: AdcChannel] (val x: Self) extends AnyVal {
+    extension [Self <: AdcChannel](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setController(value: AdcController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: AdcController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadRatio(value: () => Double): Self = StObject.set(x, "readRatio", js.Any.fromFunction0(value))
+      inline def setReadRatio(value: () => Double): Self = StObject.set(x, "readRatio", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadValue(value: () => Double): Self = StObject.set(x, "readValue", js.Any.fromFunction0(value))
+      inline def setReadValue(value: () => Double): Self = StObject.set(x, "readValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -251,8 +231,7 @@ object Adc {
   }
   object AdcController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       channelCount: Double,
       channelMode: AdcChannelMode,
       isChannelModeSupported: AdcChannelMode => Boolean,
@@ -265,29 +244,21 @@ object Adc {
       __obj.asInstanceOf[AdcController]
     }
     
-    @scala.inline
-    implicit class AdcControllerMutableBuilder[Self <: AdcController] (val x: Self) extends AnyVal {
+    extension [Self <: AdcController](x: Self) {
       
-      @scala.inline
-      def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+      inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelMode(value: AdcChannelMode): Self = StObject.set(x, "channelMode", value.asInstanceOf[js.Any])
+      inline def setChannelMode(value: AdcChannelMode): Self = StObject.set(x, "channelMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChannelModeSupported(value: AdcChannelMode => Boolean): Self = StObject.set(x, "isChannelModeSupported", js.Any.fromFunction1(value))
+      inline def setIsChannelModeSupported(value: AdcChannelMode => Boolean): Self = StObject.set(x, "isChannelModeSupported", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenChannel(value: Double => AdcChannel): Self = StObject.set(x, "openChannel", js.Any.fromFunction1(value))
+      inline def setOpenChannel(value: Double => AdcChannel): Self = StObject.set(x, "openChannel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolutionInBits(value: Double): Self = StObject.set(x, "resolutionInBits", value.asInstanceOf[js.Any])
+      inline def setResolutionInBits(value: Double): Self = StObject.set(x, "resolutionInBits", value.asInstanceOf[js.Any])
     }
   }
 }

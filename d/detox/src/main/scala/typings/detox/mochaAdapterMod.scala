@@ -22,23 +22,18 @@ object mochaAdapterMod extends Shortcut {
   }
   object DetoxMochaAdapter {
     
-    @scala.inline
-    def apply(afterEach: js.Any => js.Promise[Unit], beforeEach: js.Any => js.Promise[Unit], detox: Detox): DetoxMochaAdapter = {
+    inline def apply(afterEach: js.Any => js.Promise[Unit], beforeEach: js.Any => js.Promise[Unit], detox: Detox): DetoxMochaAdapter = {
       val __obj = js.Dynamic.literal(afterEach = js.Any.fromFunction1(afterEach), beforeEach = js.Any.fromFunction1(beforeEach), detox = detox.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetoxMochaAdapter]
     }
     
-    @scala.inline
-    implicit class DetoxMochaAdapterMutableBuilder[Self <: DetoxMochaAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: DetoxMochaAdapter](x: Self) {
       
-      @scala.inline
-      def setAfterEach(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
+      inline def setAfterEach(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeEach(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
+      inline def setBeforeEach(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDetox(value: Detox): Self = StObject.set(x, "detox", value.asInstanceOf[js.Any])
+      inline def setDetox(value: Detox): Self = StObject.set(x, "detox", value.asInstanceOf[js.Any])
     }
   }
   

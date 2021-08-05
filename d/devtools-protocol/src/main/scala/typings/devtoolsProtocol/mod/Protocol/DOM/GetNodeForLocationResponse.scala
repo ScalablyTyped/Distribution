@@ -24,25 +24,19 @@ trait GetNodeForLocationResponse extends StObject {
 }
 object GetNodeForLocationResponse {
   
-  @scala.inline
-  def apply(backendNodeId: BackendNodeId, frameId: FrameId): GetNodeForLocationResponse = {
+  inline def apply(backendNodeId: BackendNodeId, frameId: FrameId): GetNodeForLocationResponse = {
     val __obj = js.Dynamic.literal(backendNodeId = backendNodeId.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNodeForLocationResponse]
   }
   
-  @scala.inline
-  implicit class GetNodeForLocationResponseMutableBuilder[Self <: GetNodeForLocationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNodeForLocationResponse](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
   }
 }

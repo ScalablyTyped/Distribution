@@ -27,67 +27,47 @@ trait ImageTileOptions extends StObject {
 }
 object ImageTileOptions {
   
-  @scala.inline
-  def apply(urls: js.Array[String]): ImageTileOptions = {
+  inline def apply(urls: js.Array[String]): ImageTileOptions = {
     val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageTileOptions]
   }
   
-  @scala.inline
-  implicit class ImageTileOptionsMutableBuilder[Self <: ImageTileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageTileOptions](x: Self) {
     
-    @scala.inline
-    def setImgonerror(value: () => js.Any): Self = StObject.set(x, "imgonerror", js.Any.fromFunction0(value))
+    inline def setImgonerror(value: () => js.Any): Self = StObject.set(x, "imgonerror", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImgonerrorUndefined: Self = StObject.set(x, "imgonerror", js.undefined)
+    inline def setImgonerrorUndefined: Self = StObject.set(x, "imgonerror", js.undefined)
     
-    @scala.inline
-    def setImgonload(value: () => js.Any): Self = StObject.set(x, "imgonload", js.Any.fromFunction0(value))
+    inline def setImgonload(value: () => js.Any): Self = StObject.set(x, "imgonload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImgonloadUndefined: Self = StObject.set(x, "imgonload", js.undefined)
+    inline def setImgonloadUndefined: Self = StObject.set(x, "imgonload", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setPane(value: HTMLElement): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: HTMLElement): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

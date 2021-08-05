@@ -24,28 +24,21 @@ trait SchemaMetricFilterClause extends StObject {
 }
 object SchemaMetricFilterClause {
   
-  @scala.inline
-  def apply(): SchemaMetricFilterClause = {
+  inline def apply(): SchemaMetricFilterClause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetricFilterClause]
   }
   
-  @scala.inline
-  implicit class SchemaMetricFilterClauseMutableBuilder[Self <: SchemaMetricFilterClause] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetricFilterClause](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[SchemaMetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[SchemaMetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: SchemaMetricFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SchemaMetricFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
   }
 }

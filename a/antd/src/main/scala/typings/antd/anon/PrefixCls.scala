@@ -15,28 +15,21 @@ trait PrefixCls extends StObject {
 }
 object PrefixCls {
   
-  @scala.inline
-  def apply(info: HandleGeneratorInfo): PrefixCls = {
+  inline def apply(info: HandleGeneratorInfo): PrefixCls = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrefixCls]
   }
   
-  @scala.inline
-  implicit class PrefixClsMutableBuilder[Self <: PrefixCls] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixCls](x: Self) {
     
-    @scala.inline
-    def setInfo(value: HandleGeneratorInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: HandleGeneratorInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+    inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
-    @scala.inline
-    def setTooltipPrefixCls(value: String): Self = StObject.set(x, "tooltipPrefixCls", value.asInstanceOf[js.Any])
+    inline def setTooltipPrefixCls(value: String): Self = StObject.set(x, "tooltipPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPrefixClsUndefined: Self = StObject.set(x, "tooltipPrefixCls", js.undefined)
+    inline def setTooltipPrefixClsUndefined: Self = StObject.set(x, "tooltipPrefixCls", js.undefined)
   }
 }

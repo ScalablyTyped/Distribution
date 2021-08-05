@@ -964,10 +964,8 @@ object leafletAugmentingMod {
       * `L.esri.basemapLayer` is used to display Esri hosted basemaps and attributes data providers appropriately.
       * The Terms of Use for Esri hosted services apply to all Leaflet applications.
       */
-    @scala.inline
-    def basemapLayer(key: Basemaps): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("basemapLayer")(key.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_]
-    @scala.inline
-    def basemapLayer(key: Basemaps, options: BasemapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("basemapLayer")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_]
+    inline def basemapLayer(key: Basemaps): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("basemapLayer")(key.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_]
+    inline def basemapLayer(key: Basemaps, options: BasemapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("basemapLayer")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_]
     
     /**
       * Render and visualize Map Services from ArcGIS Online and ArcGIS Server. L.esri.DynamicMapLayer also supports
@@ -977,8 +975,7 @@ object leafletAugmentingMod {
       * and pass back the image which was generated on the fly. They also expose capabilities for querying and
       * identifying individual features.
       */
-    @scala.inline
-    def dynamicMapLayer(options: DynamicMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamicMapLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_]
+    inline def dynamicMapLayer(options: DynamicMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamicMapLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_]
     
     /**
       * `L.esri.FeatureLayer` is used to visualize, style, query and edit vector geographic data hosted in both
@@ -1002,49 +999,41 @@ object leafletAugmentingMod {
       * queries to fetch nearby features. This technique is comparable to MODE_ONDEMAND in the ArcGIS API for
       * JavaScript.
       */
-    @scala.inline
-    def featureLayer(options: FeatureLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_]
+    inline def featureLayer(options: FeatureLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_]
     
     /**
       * `L.esri.FeatureLayerService` is an abstraction for interacting with Feature Layers running on ArcGIS Online
       * and ArcGIS Server that allows you to make requests to the API, as well as query, add, update and remove
       * features from the service.
       */
-    @scala.inline
-    def featureLayerService(options: FeatureLayerServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayerService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerService_]
+    inline def featureLayerService(options: FeatureLayerServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayerService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerService_]
     
     /**
       * L.esri.Find is an abstraction for the find API included in Map Services. It provides a chainable API for
       * building request parameters and executing find tasks.
       */
-    @scala.inline
-    def find(options: FindOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_]
-    @scala.inline
-    def find(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_]
+    inline def find(options: FindOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_]
+    inline def find(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_]
     
     /**
       * `L.esri.IdentifyFeatures` is an abstraction for the Identify API found in Map Services. It provides a
       * chainable API for building request parameters and executing the request.
       */
-    @scala.inline
-    def identifyFeatures(options: IdentifyFeaturesOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyFeatures")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_]
-    @scala.inline
-    def identifyFeatures(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyFeatures")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_]
+    inline def identifyFeatures(options: IdentifyFeaturesOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyFeatures")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_]
+    inline def identifyFeatures(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyFeatures")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_]
     
     /**
       * `L.esri.ImageService` is an abstraction for interacting with Image Services running on ArcGIS Online and
       * ArcGIS Server that allows you to make requests to the API, as well as query and identify features on the
       * service.
       */
-    @scala.inline
-    def imageService(options: ImageServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("imageService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_]
+    inline def imageService(options: ImageServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("imageService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_]
     
     /**
       * `L.esri.MapService` is an abstraction for interacting with Map Services running on ArcGIS Online and ArcGIS
       * Server that allows you to make requests to the API, as well as query and identify published features.
       */
-    @scala.inline
-    def mapService(options: MapServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_]
+    inline def mapService(options: MapServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_]
     
     /**
       * `L.esri.Query` is an abstraction for the query API included in Feature Layers and Image Services. It provides
@@ -1053,24 +1042,20 @@ object leafletAugmentingMod {
       * Note Depending on the type of service you are querying (Feature Layer, Map Service, Image Service) and the
       * version of ArcGIS Server that hosts the service some of these options may not be available.
       */
-    @scala.inline
-    def query(options: QueryOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_ = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_]
+    inline def query(options: QueryOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_ = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_]
     
-    @scala.inline
-    def task(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_]
+    inline def task(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_]
     /**
       * `L.esri.Task` is a generic class that provides the foundation for calling operations on ArcGIS Online and
       * ArcGIS Server Services like query, find and identify.
       */
-    @scala.inline
-    def task(options: TaskOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_]
+    inline def task(options: TaskOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_]
     
     /**
       * Access tiles from ArcGIS Online and ArcGIS Server to visualize and identify features. Copyright text from the
       * service is added to map attribution automatically.
       */
-    @scala.inline
-    def tiledMapLayer(options: TiledMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tiledMapLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_]
+    inline def tiledMapLayer(options: TiledMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tiledMapLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_]
     
     /**
       * Options for `L.esri.BasemapLayer`
@@ -1087,20 +1072,16 @@ object leafletAugmentingMod {
     }
     object BasemapLayerOptions {
       
-      @scala.inline
-      def apply(): BasemapLayerOptions = {
+      inline def apply(): BasemapLayerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BasemapLayerOptions]
       }
       
-      @scala.inline
-      implicit class BasemapLayerOptionsMutableBuilder[Self <: BasemapLayerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: BasemapLayerOptions](x: Self) {
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+        inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       }
     }
     
@@ -1127,59 +1108,41 @@ object leafletAugmentingMod {
     trait Basemaps extends StObject
     object Basemaps {
       
-      @scala.inline
-      def DarkGray: typings.esriLeaflet.esriLeafletStrings.DarkGray = "DarkGray".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.DarkGray]
+      inline def DarkGray: typings.esriLeaflet.esriLeafletStrings.DarkGray = "DarkGray".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.DarkGray]
       
-      @scala.inline
-      def DarkGrayLabels: typings.esriLeaflet.esriLeafletStrings.DarkGrayLabels = "DarkGrayLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.DarkGrayLabels]
+      inline def DarkGrayLabels: typings.esriLeaflet.esriLeafletStrings.DarkGrayLabels = "DarkGrayLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.DarkGrayLabels]
       
-      @scala.inline
-      def Gray: typings.esriLeaflet.esriLeafletStrings.Gray = "Gray".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Gray]
+      inline def Gray: typings.esriLeaflet.esriLeafletStrings.Gray = "Gray".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Gray]
       
-      @scala.inline
-      def GrayLabels: typings.esriLeaflet.esriLeafletStrings.GrayLabels = "GrayLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.GrayLabels]
+      inline def GrayLabels: typings.esriLeaflet.esriLeafletStrings.GrayLabels = "GrayLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.GrayLabels]
       
-      @scala.inline
-      def Imagery: typings.esriLeaflet.esriLeafletStrings.Imagery = "Imagery".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Imagery]
+      inline def Imagery: typings.esriLeaflet.esriLeafletStrings.Imagery = "Imagery".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Imagery]
       
-      @scala.inline
-      def ImageryClarity: typings.esriLeaflet.esriLeafletStrings.ImageryClarity = "ImageryClarity".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ImageryClarity]
+      inline def ImageryClarity: typings.esriLeaflet.esriLeafletStrings.ImageryClarity = "ImageryClarity".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ImageryClarity]
       
-      @scala.inline
-      def ImageryLabels: typings.esriLeaflet.esriLeafletStrings.ImageryLabels = "ImageryLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ImageryLabels]
+      inline def ImageryLabels: typings.esriLeaflet.esriLeafletStrings.ImageryLabels = "ImageryLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ImageryLabels]
       
-      @scala.inline
-      def ImageryTransportation: typings.esriLeaflet.esriLeafletStrings.ImageryTransportation = "ImageryTransportation".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ImageryTransportation]
+      inline def ImageryTransportation: typings.esriLeaflet.esriLeafletStrings.ImageryTransportation = "ImageryTransportation".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ImageryTransportation]
       
-      @scala.inline
-      def NationalGeographic: typings.esriLeaflet.esriLeafletStrings.NationalGeographic = "NationalGeographic".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.NationalGeographic]
+      inline def NationalGeographic: typings.esriLeaflet.esriLeafletStrings.NationalGeographic = "NationalGeographic".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.NationalGeographic]
       
-      @scala.inline
-      def Oceans: typings.esriLeaflet.esriLeafletStrings.Oceans = "Oceans".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Oceans]
+      inline def Oceans: typings.esriLeaflet.esriLeafletStrings.Oceans = "Oceans".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Oceans]
       
-      @scala.inline
-      def OceansLabels: typings.esriLeaflet.esriLeafletStrings.OceansLabels = "OceansLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.OceansLabels]
+      inline def OceansLabels: typings.esriLeaflet.esriLeafletStrings.OceansLabels = "OceansLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.OceansLabels]
       
-      @scala.inline
-      def ShadedRelief: typings.esriLeaflet.esriLeafletStrings.ShadedRelief = "ShadedRelief".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ShadedRelief]
+      inline def ShadedRelief: typings.esriLeaflet.esriLeafletStrings.ShadedRelief = "ShadedRelief".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ShadedRelief]
       
-      @scala.inline
-      def ShadedReliefLabels: typings.esriLeaflet.esriLeafletStrings.ShadedReliefLabels = "ShadedReliefLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ShadedReliefLabels]
+      inline def ShadedReliefLabels: typings.esriLeaflet.esriLeafletStrings.ShadedReliefLabels = "ShadedReliefLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.ShadedReliefLabels]
       
-      @scala.inline
-      def Streets: typings.esriLeaflet.esriLeafletStrings.Streets = "Streets".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Streets]
+      inline def Streets: typings.esriLeaflet.esriLeafletStrings.Streets = "Streets".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Streets]
       
-      @scala.inline
-      def Terrain: typings.esriLeaflet.esriLeafletStrings.Terrain = "Terrain".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Terrain]
+      inline def Terrain: typings.esriLeaflet.esriLeafletStrings.Terrain = "Terrain".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Terrain]
       
-      @scala.inline
-      def TerrainLabels: typings.esriLeaflet.esriLeafletStrings.TerrainLabels = "TerrainLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.TerrainLabels]
+      inline def TerrainLabels: typings.esriLeaflet.esriLeafletStrings.TerrainLabels = "TerrainLabels".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.TerrainLabels]
       
-      @scala.inline
-      def Topographic: typings.esriLeaflet.esriLeafletStrings.Topographic = "Topographic".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Topographic]
+      inline def Topographic: typings.esriLeaflet.esriLeafletStrings.Topographic = "Topographic".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.Topographic]
       
-      @scala.inline
-      def USATopo: typings.esriLeaflet.esriLeafletStrings.USATopo = "USATopo".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.USATopo]
+      inline def USATopo: typings.esriLeaflet.esriLeafletStrings.USATopo = "USATopo".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.USATopo]
     }
     
     type CallbackHandler = js.Function2[/* error */ js.Any, /* metadata */ js.Any, Unit]
@@ -1229,53 +1192,38 @@ object leafletAugmentingMod {
     }
     object DynamicMapLayerOptions {
       
-      @scala.inline
-      def apply(url: String): DynamicMapLayerOptions = {
+      inline def apply(url: String): DynamicMapLayerOptions = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[DynamicMapLayerOptions]
       }
       
-      @scala.inline
-      implicit class DynamicMapLayerOptionsMutableBuilder[Self <: DynamicMapLayerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: DynamicMapLayerOptions](x: Self) {
         
-        @scala.inline
-        def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
+        inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableCacheUndefined: Self = StObject.set(x, "disableCache", js.undefined)
+        inline def setDisableCacheUndefined: Self = StObject.set(x, "disableCache", js.undefined)
         
-        @scala.inline
-        def setDynamicLayers(value: js.Any): Self = StObject.set(x, "dynamicLayers", value.asInstanceOf[js.Any])
+        inline def setDynamicLayers(value: js.Any): Self = StObject.set(x, "dynamicLayers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDynamicLayersUndefined: Self = StObject.set(x, "dynamicLayers", js.undefined)
+        inline def setDynamicLayersUndefined: Self = StObject.set(x, "dynamicLayers", js.undefined)
         
-        @scala.inline
-        def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+        inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        @scala.inline
-        def setLayerDefs(value: js.Any): Self = StObject.set(x, "layerDefs", value.asInstanceOf[js.Any])
+        inline def setLayerDefs(value: js.Any): Self = StObject.set(x, "layerDefs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerDefsUndefined: Self = StObject.set(x, "layerDefs", js.undefined)
+        inline def setLayerDefsUndefined: Self = StObject.set(x, "layerDefs", js.undefined)
         
-        @scala.inline
-        def setLayers(value: js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        inline def setLayers(value: js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+        inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
         
-        @scala.inline
-        def setLayersVarargs(value: js.Any*): Self = StObject.set(x, "layers", js.Array(value :_*))
+        inline def setLayersVarargs(value: js.Any*): Self = StObject.set(x, "layers", js.Array(value :_*))
         
-        @scala.inline
-        def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+        inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+        inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
       }
     }
     
@@ -1392,119 +1340,82 @@ object leafletAugmentingMod {
     }
     object FeatureLayerOptions {
       
-      @scala.inline
-      def apply(url: String): FeatureLayerOptions = {
+      inline def apply(url: String): FeatureLayerOptions = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[FeatureLayerOptions]
       }
       
-      @scala.inline
-      implicit class FeatureLayerOptionsMutableBuilder[Self <: FeatureLayerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FeatureLayerOptions](x: Self) {
         
-        @scala.inline
-        def setCacheLayers(value: Boolean): Self = StObject.set(x, "cacheLayers", value.asInstanceOf[js.Any])
+        inline def setCacheLayers(value: Boolean): Self = StObject.set(x, "cacheLayers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheLayersUndefined: Self = StObject.set(x, "cacheLayers", js.undefined)
+        inline def setCacheLayersUndefined: Self = StObject.set(x, "cacheLayers", js.undefined)
         
-        @scala.inline
-        def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+        inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+        inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
         
-        @scala.inline
-        def setIgnoreRenderer(value: Boolean): Self = StObject.set(x, "ignoreRenderer", value.asInstanceOf[js.Any])
+        inline def setIgnoreRenderer(value: Boolean): Self = StObject.set(x, "ignoreRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreRendererUndefined: Self = StObject.set(x, "ignoreRenderer", js.undefined)
+        inline def setIgnoreRendererUndefined: Self = StObject.set(x, "ignoreRenderer", js.undefined)
         
-        @scala.inline
-        def setIsModern(value: Boolean): Self = StObject.set(x, "isModern", value.asInstanceOf[js.Any])
+        inline def setIsModern(value: Boolean): Self = StObject.set(x, "isModern", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsModernUndefined: Self = StObject.set(x, "isModern", js.undefined)
+        inline def setIsModernUndefined: Self = StObject.set(x, "isModern", js.undefined)
         
-        @scala.inline
-        def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+        inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+        inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
         
-        @scala.inline
-        def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+        inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+        inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
         
-        @scala.inline
-        def setOnEachFeature(value: (/* feature */ js.Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
+        inline def setOnEachFeature(value: (/* feature */ js.Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
+        inline def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
         
-        @scala.inline
-        def setPointToLayer(value: (/* feature */ js.Any, /* latLng */ LatLngExpression) => Unit): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
+        inline def setPointToLayer(value: (/* feature */ js.Any, /* latLng */ LatLngExpression) => Unit): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
+        inline def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
         
-        @scala.inline
-        def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+        inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+        inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: SVG_ | Canvas_): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: SVG_ | Canvas_): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setSimplifyFactor(value: Double): Self = StObject.set(x, "simplifyFactor", value.asInstanceOf[js.Any])
+        inline def setSimplifyFactor(value: Double): Self = StObject.set(x, "simplifyFactor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSimplifyFactorUndefined: Self = StObject.set(x, "simplifyFactor", js.undefined)
+        inline def setSimplifyFactorUndefined: Self = StObject.set(x, "simplifyFactor", js.undefined)
         
-        @scala.inline
-        def setStyle(value: (/* feature */ js.Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
+        inline def setStyle(value: (/* feature */ js.Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        @scala.inline
-        def setTimeField(value: js.Any): Self = StObject.set(x, "timeField", value.asInstanceOf[js.Any])
+        inline def setTimeField(value: js.Any): Self = StObject.set(x, "timeField", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeFieldUndefined: Self = StObject.set(x, "timeField", js.undefined)
+        inline def setTimeFieldUndefined: Self = StObject.set(x, "timeField", js.undefined)
         
-        @scala.inline
-        def setTimeFilterMode(value: server | client): Self = StObject.set(x, "timeFilterMode", value.asInstanceOf[js.Any])
+        inline def setTimeFilterMode(value: server | client): Self = StObject.set(x, "timeFilterMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeFilterModeUndefined: Self = StObject.set(x, "timeFilterMode", js.undefined)
+        inline def setTimeFilterModeUndefined: Self = StObject.set(x, "timeFilterMode", js.undefined)
         
-        @scala.inline
-        def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+        inline def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+        inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
         
-        @scala.inline
-        def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+        inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+        inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
       }
     }
     
@@ -1556,35 +1467,26 @@ object leafletAugmentingMod {
     }
     object LayerOptionsBase {
       
-      @scala.inline
-      def apply(url: String): LayerOptionsBase = {
+      inline def apply(url: String): LayerOptionsBase = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[LayerOptionsBase]
       }
       
-      @scala.inline
-      implicit class LayerOptionsBaseMutableBuilder[Self <: LayerOptionsBase] (val x: Self) extends AnyVal {
+      extension [Self <: LayerOptionsBase](x: Self) {
         
-        @scala.inline
-        def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+        inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+        inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+        inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseCors(value: Boolean): Self = StObject.set(x, "useCors", value.asInstanceOf[js.Any])
+        inline def setUseCors(value: Boolean): Self = StObject.set(x, "useCors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseCorsUndefined: Self = StObject.set(x, "useCors", js.undefined)
+        inline def setUseCorsUndefined: Self = StObject.set(x, "useCors", js.undefined)
       }
     }
     
@@ -1631,38 +1533,28 @@ object leafletAugmentingMod {
     }
     object RasterLayerOptions {
       
-      @scala.inline
-      def apply(): RasterLayerOptions = {
+      inline def apply(): RasterLayerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RasterLayerOptions]
       }
       
-      @scala.inline
-      implicit class RasterLayerOptionsMutableBuilder[Self <: RasterLayerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RasterLayerOptions](x: Self) {
         
-        @scala.inline
-        def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+        inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFUndefined: Self = StObject.set(x, "f", js.undefined)
+        inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
         
-        @scala.inline
-        def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+        inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+        inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
         
-        @scala.inline
-        def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+        inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+        inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
         
-        @scala.inline
-        def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       }
     }
     
@@ -1695,38 +1587,28 @@ object leafletAugmentingMod {
     }
     object ServiceOptions {
       
-      @scala.inline
-      def apply(): ServiceOptions = {
+      inline def apply(): ServiceOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ServiceOptions]
       }
       
-      @scala.inline
-      implicit class ServiceOptionsMutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ServiceOptions](x: Self) {
         
-        @scala.inline
-        def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+        inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+        inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         
-        @scala.inline
-        def setUseCors(value: Boolean): Self = StObject.set(x, "useCors", value.asInstanceOf[js.Any])
+        inline def setUseCors(value: Boolean): Self = StObject.set(x, "useCors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseCorsUndefined: Self = StObject.set(x, "useCors", js.undefined)
+        inline def setUseCorsUndefined: Self = StObject.set(x, "useCors", js.undefined)
       }
     }
     
@@ -1738,26 +1620,20 @@ object leafletAugmentingMod {
     }
     object SpatialReference {
       
-      @scala.inline
-      def apply(): SpatialReference = {
+      inline def apply(): SpatialReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SpatialReference]
       }
       
-      @scala.inline
-      implicit class SpatialReferenceMutableBuilder[Self <: SpatialReference] (val x: Self) extends AnyVal {
+      extension [Self <: SpatialReference](x: Self) {
         
-        @scala.inline
-        def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
+        inline def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
+        inline def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
         
-        @scala.inline
-        def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
+        inline def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
+        inline def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
       }
     }
     
@@ -1788,20 +1664,16 @@ object leafletAugmentingMod {
     }
     object TiledMapLayerOptions {
       
-      @scala.inline
-      def apply(url: String): TiledMapLayerOptions = {
+      inline def apply(url: String): TiledMapLayerOptions = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[TiledMapLayerOptions]
       }
       
-      @scala.inline
-      implicit class TiledMapLayerOptionsMutableBuilder[Self <: TiledMapLayerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TiledMapLayerOptions](x: Self) {
         
-        @scala.inline
-        def setZoomOffsetAllowance(value: Double): Self = StObject.set(x, "zoomOffsetAllowance", value.asInstanceOf[js.Any])
+        inline def setZoomOffsetAllowance(value: Double): Self = StObject.set(x, "zoomOffsetAllowance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomOffsetAllowanceUndefined: Self = StObject.set(x, "zoomOffsetAllowance", js.undefined)
+        inline def setZoomOffsetAllowanceUndefined: Self = StObject.set(x, "zoomOffsetAllowance", js.undefined)
       }
     }
   }

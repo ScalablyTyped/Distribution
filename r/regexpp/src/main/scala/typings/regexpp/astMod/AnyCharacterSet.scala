@@ -20,23 +20,18 @@ trait AnyCharacterSet
 }
 object AnyCharacterSet {
   
-  @scala.inline
-  def apply(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): AnyCharacterSet = {
+  inline def apply(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): AnyCharacterSet = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "any", parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[AnyCharacterSet]
   }
   
-  @scala.inline
-  implicit class AnyCharacterSetMutableBuilder[Self <: AnyCharacterSet] (val x: Self) extends AnyVal {
+  extension [Self <: AnyCharacterSet](x: Self) {
     
-    @scala.inline
-    def setKind(value: any): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: any): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.CharacterSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.CharacterSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

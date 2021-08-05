@@ -53,8 +53,7 @@ trait CameraContext extends StObject {
 }
 object CameraContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onCameraFrame: OnCameraFrameCallback => CameraFrameListener,
     setZoom: SetZoomOption => Unit,
     startRecord: CameraContextStartRecordOption => Unit,
@@ -65,22 +64,16 @@ object CameraContext {
     __obj.asInstanceOf[CameraContext]
   }
   
-  @scala.inline
-  implicit class CameraContextMutableBuilder[Self <: CameraContext] (val x: Self) extends AnyVal {
+  extension [Self <: CameraContext](x: Self) {
     
-    @scala.inline
-    def setOnCameraFrame(value: OnCameraFrameCallback => CameraFrameListener): Self = StObject.set(x, "onCameraFrame", js.Any.fromFunction1(value))
+    inline def setOnCameraFrame(value: OnCameraFrameCallback => CameraFrameListener): Self = StObject.set(x, "onCameraFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetZoom(value: SetZoomOption => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
+    inline def setSetZoom(value: SetZoomOption => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartRecord(value: CameraContextStartRecordOption => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction1(value))
+    inline def setStartRecord(value: CameraContextStartRecordOption => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopRecord(value: CameraContextStopRecordOption => Unit): Self = StObject.set(x, "stopRecord", js.Any.fromFunction1(value))
+    inline def setStopRecord(value: CameraContextStopRecordOption => Unit): Self = StObject.set(x, "stopRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTakePhoto(value: TakePhotoOption => Unit): Self = StObject.set(x, "takePhoto", js.Any.fromFunction1(value))
+    inline def setTakePhoto(value: TakePhotoOption => Unit): Self = StObject.set(x, "takePhoto", js.Any.fromFunction1(value))
   }
 }

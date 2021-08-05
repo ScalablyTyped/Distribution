@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CSSMediaSource extends StObject
 object CSSMediaSource {
   
-  @scala.inline
-  def ImportRule: importRule = "importRule".asInstanceOf[importRule]
+  inline def ImportRule: importRule = "importRule".asInstanceOf[importRule]
   
-  @scala.inline
-  def InlineSheet: inlineSheet = "inlineSheet".asInstanceOf[inlineSheet]
+  inline def InlineSheet: inlineSheet = "inlineSheet".asInstanceOf[inlineSheet]
   
-  @scala.inline
-  def LinkedSheet: linkedSheet = "linkedSheet".asInstanceOf[linkedSheet]
+  inline def LinkedSheet: linkedSheet = "linkedSheet".asInstanceOf[linkedSheet]
   
-  @scala.inline
-  def MediaRule: mediaRule = "mediaRule".asInstanceOf[mediaRule]
+  inline def MediaRule: mediaRule = "mediaRule".asInstanceOf[mediaRule]
 }

@@ -133,71 +133,50 @@ object mod {
   }
   object DynamicDNSOptions {
     
-    @scala.inline
-    def apply(hostname: String, password: String, username: String): DynamicDNSOptions = {
+    inline def apply(hostname: String, password: String, username: String): DynamicDNSOptions = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[DynamicDNSOptions]
     }
     
-    @scala.inline
-    implicit class DynamicDNSOptionsMutableBuilder[Self <: DynamicDNSOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DynamicDNSOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFailOnUnresolvedHostName(value: Boolean): Self = StObject.set(x, "failOnUnresolvedHostName", value.asInstanceOf[js.Any])
+      inline def setFailOnUnresolvedHostName(value: Boolean): Self = StObject.set(x, "failOnUnresolvedHostName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOnUnresolvedHostNameUndefined: Self = StObject.set(x, "failOnUnresolvedHostName", js.undefined)
+      inline def setFailOnUnresolvedHostNameUndefined: Self = StObject.set(x, "failOnUnresolvedHostName", js.undefined)
       
-      @scala.inline
-      def setHostIPAddressCacheExpires(value: Double): Self = StObject.set(x, "hostIPAddressCacheExpires", value.asInstanceOf[js.Any])
+      inline def setHostIPAddressCacheExpires(value: Double): Self = StObject.set(x, "hostIPAddressCacheExpires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostIPAddressCacheExpiresUndefined: Self = StObject.set(x, "hostIPAddressCacheExpires", js.undefined)
+      inline def setHostIPAddressCacheExpiresUndefined: Self = StObject.set(x, "hostIPAddressCacheExpires", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUnresolvedHostNameFail(value: Double): Self = StObject.set(x, "maxUnresolvedHostNameFail", value.asInstanceOf[js.Any])
+      inline def setMaxUnresolvedHostNameFail(value: Double): Self = StObject.set(x, "maxUnresolvedHostNameFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUnresolvedHostNameFailUndefined: Self = StObject.set(x, "maxUnresolvedHostNameFail", js.undefined)
+      inline def setMaxUnresolvedHostNameFailUndefined: Self = StObject.set(x, "maxUnresolvedHostNameFail", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpUrl(value: String): Self = StObject.set(x, "publicIpUrl", value.asInstanceOf[js.Any])
+      inline def setPublicIpUrl(value: String): Self = StObject.set(x, "publicIpUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpUrlUndefined: Self = StObject.set(x, "publicIpUrl", js.undefined)
+      inline def setPublicIpUrlUndefined: Self = StObject.set(x, "publicIpUrl", js.undefined)
       
-      @scala.inline
-      def setUpdateIpUrl(value: String): Self = StObject.set(x, "updateIpUrl", value.asInstanceOf[js.Any])
+      inline def setUpdateIpUrl(value: String): Self = StObject.set(x, "updateIpUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateIpUrlUndefined: Self = StObject.set(x, "updateIpUrl", js.undefined)
+      inline def setUpdateIpUrlUndefined: Self = StObject.set(x, "updateIpUrl", js.undefined)
       
-      @scala.inline
-      def setUseHostIPAddressCache(value: Boolean): Self = StObject.set(x, "useHostIPAddressCache", value.asInstanceOf[js.Any])
+      inline def setUseHostIPAddressCache(value: Boolean): Self = StObject.set(x, "useHostIPAddressCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHostIPAddressCacheUndefined: Self = StObject.set(x, "useHostIPAddressCache", js.undefined)
+      inline def setUseHostIPAddressCacheUndefined: Self = StObject.set(x, "useHostIPAddressCache", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,8 +204,7 @@ object mod {
   }
   object ErrorResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ip: Unit,
       message: String,
       response: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg
@@ -235,20 +213,15 @@ object mod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    @scala.inline
-    implicit class ErrorResponseMutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorResponse](x: Self) {
       
-      @scala.inline
-      def setIp(value: Unit): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: Unit): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,44 +259,32 @@ object mod {
   }
   object ServiceOptions {
     
-    @scala.inline
-    def apply(hostname: String, password: String, username: String): ServiceOptions = {
+    inline def apply(hostname: String, password: String, username: String): ServiceOptions = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    @scala.inline
-    implicit class ServiceOptionsMutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceOptions](x: Self) {
       
-      @scala.inline
-      def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
+      inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
+      inline def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
       
-      @scala.inline
-      def setExitOnMaxErrors(value: Boolean): Self = StObject.set(x, "exitOnMaxErrors", value.asInstanceOf[js.Any])
+      inline def setExitOnMaxErrors(value: Boolean): Self = StObject.set(x, "exitOnMaxErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitOnMaxErrorsUndefined: Self = StObject.set(x, "exitOnMaxErrors", js.undefined)
+      inline def setExitOnMaxErrorsUndefined: Self = StObject.set(x, "exitOnMaxErrors", js.undefined)
       
-      @scala.inline
-      def setLogPath(value: String | `false`): Self = StObject.set(x, "logPath", value.asInstanceOf[js.Any])
+      inline def setLogPath(value: String | `false`): Self = StObject.set(x, "logPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogPathUndefined: Self = StObject.set(x, "logPath", js.undefined)
+      inline def setLogPathUndefined: Self = StObject.set(x, "logPath", js.undefined)
       
-      @scala.inline
-      def setLogToConsole(value: Boolean): Self = StObject.set(x, "logToConsole", value.asInstanceOf[js.Any])
+      inline def setLogToConsole(value: Boolean): Self = StObject.set(x, "logToConsole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogToConsoleUndefined: Self = StObject.set(x, "logToConsole", js.undefined)
+      inline def setLogToConsoleUndefined: Self = StObject.set(x, "logToConsole", js.undefined)
       
-      @scala.inline
-      def setMaxConsecutiveErrors(value: Double): Self = StObject.set(x, "maxConsecutiveErrors", value.asInstanceOf[js.Any])
+      inline def setMaxConsecutiveErrors(value: Double): Self = StObject.set(x, "maxConsecutiveErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConsecutiveErrorsUndefined: Self = StObject.set(x, "maxConsecutiveErrors", js.undefined)
+      inline def setMaxConsecutiveErrorsUndefined: Self = StObject.set(x, "maxConsecutiveErrors", js.undefined)
     }
   }
   
@@ -351,26 +312,20 @@ object mod {
   }
   object SuccessResponse {
     
-    @scala.inline
-    def apply(ip: String, message: String, response: good | nochg): SuccessResponse = {
+    inline def apply(ip: String, message: String, response: good | nochg): SuccessResponse = {
       val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[SuccessResponse]
     }
     
-    @scala.inline
-    implicit class SuccessResponseMutableBuilder[Self <: SuccessResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SuccessResponse](x: Self) {
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: good | nochg): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: good | nochg): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

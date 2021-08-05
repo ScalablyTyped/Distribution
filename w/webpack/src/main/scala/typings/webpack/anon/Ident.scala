@@ -30,37 +30,27 @@ trait Ident extends StObject {
 }
 object Ident {
   
-  @scala.inline
-  def apply(): Ident = {
+  inline def apply(): Ident = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ident]
   }
   
-  @scala.inline
-  implicit class IdentMutableBuilder[Self <: Ident] (val x: Self) extends AnyVal {
+  extension [Self <: Ident](x: Self) {
     
-    @scala.inline
-    def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
+    inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
+    inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
     
-    @scala.inline
-    def setLoader(value: RuleSetLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: RuleSetLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+    inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
-    @scala.inline
-    def setOptions(value: RuleSetQuery): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: RuleSetQuery): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setQuery(value: RuleSetQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: RuleSetQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

@@ -40,8 +40,7 @@ trait BackEaseIn extends StObject {
 }
 object BackEaseIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackEaseIn: (js.Any, js.Any, js.Any, js.Any) => js.Any,
     BackEaseInOut: (js.Any, js.Any, js.Any, js.Any) => js.Any,
     BackEaseOut: (js.Any, js.Any, js.Any, js.Any) => js.Any,
@@ -63,55 +62,38 @@ object BackEaseIn {
     __obj.asInstanceOf[BackEaseIn]
   }
   
-  @scala.inline
-  implicit class BackEaseInMutableBuilder[Self <: BackEaseIn] (val x: Self) extends AnyVal {
+  extension [Self <: BackEaseIn](x: Self) {
     
-    @scala.inline
-    def setBackEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseIn", js.Any.fromFunction4(value))
+    inline def setBackEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseIn", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBackEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseInOut", js.Any.fromFunction4(value))
+    inline def setBackEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseInOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBackEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseOut", js.Any.fromFunction4(value))
+    inline def setBackEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBounceEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseIn", js.Any.fromFunction4(value))
+    inline def setBounceEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseIn", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBounceEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseInOut", js.Any.fromFunction4(value))
+    inline def setBounceEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseInOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBounceEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseOut", js.Any.fromFunction4(value))
+    inline def setBounceEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseIn", js.Any.fromFunction4(value))
+    inline def setEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseIn", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseInOut", js.Any.fromFunction4(value))
+    inline def setEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseInOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseOut", js.Any.fromFunction4(value))
+    inline def setEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setElasticEaseIn(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseIn", js.Any.fromFunction6(value))
+    inline def setElasticEaseIn(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseIn", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setElasticEaseInOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseInOut", js.Any.fromFunction6(value))
+    inline def setElasticEaseInOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseInOut", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setElasticEaseOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseOut", js.Any.fromFunction6(value))
+    inline def setElasticEaseOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseOut", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setLinear(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "Linear", js.Any.fromFunction4(value))
+    inline def setLinear(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "Linear", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStrongEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseIn", js.Any.fromFunction4(value))
+    inline def setStrongEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseIn", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStrongEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseInOut", js.Any.fromFunction4(value))
+    inline def setStrongEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseInOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStrongEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseOut", js.Any.fromFunction4(value))
+    inline def setStrongEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseOut", js.Any.fromFunction4(value))
   }
 }

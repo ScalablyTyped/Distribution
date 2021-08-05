@@ -23,31 +23,23 @@ trait FileExtensionsValidatingEventUIParam extends StObject {
 }
 object FileExtensionsValidatingEventUIParam {
   
-  @scala.inline
-  def apply(): FileExtensionsValidatingEventUIParam = {
+  inline def apply(): FileExtensionsValidatingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileExtensionsValidatingEventUIParam]
   }
   
-  @scala.inline
-  implicit class FileExtensionsValidatingEventUIParamMutableBuilder[Self <: FileExtensionsValidatingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FileExtensionsValidatingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
+    inline def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
+    inline def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

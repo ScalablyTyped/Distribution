@@ -34,8 +34,7 @@ object esArrowKeyStepperMod {
     @JSImport("react-virtualized/dist/es/ArrowKeyStepper", "ArrowKeyStepper.defaultProps")
     @js.native
     def defaultProps: Disabled = js.native
-    @scala.inline
-    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ArrowKeyStepperProps
@@ -71,65 +70,46 @@ object esArrowKeyStepperMod {
   }
   object ArrowKeyStepperProps {
     
-    @scala.inline
-    def apply(children: ChildProps => ReactNode, columnCount: Double, rowCount: Double): ArrowKeyStepperProps = {
+    inline def apply(children: ChildProps => ReactNode, columnCount: Double, rowCount: Double): ArrowKeyStepperProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), columnCount = columnCount.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrowKeyStepperProps]
     }
     
-    @scala.inline
-    implicit class ArrowKeyStepperPropsMutableBuilder[Self <: ArrowKeyStepperProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArrowKeyStepperProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: ChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIsControlled(value: Boolean): Self = StObject.set(x, "isControlled", value.asInstanceOf[js.Any])
+      inline def setIsControlled(value: Boolean): Self = StObject.set(x, "isControlled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsControlledUndefined: Self = StObject.set(x, "isControlled", js.undefined)
+      inline def setIsControlledUndefined: Self = StObject.set(x, "isControlled", js.undefined)
       
-      @scala.inline
-      def setMode(value: edges | cells): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: edges | cells): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnScrollToChange(value: /* params */ ScrollIndices => Unit): Self = StObject.set(x, "onScrollToChange", js.Any.fromFunction1(value))
+      inline def setOnScrollToChange(value: /* params */ ScrollIndices => Unit): Self = StObject.set(x, "onScrollToChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollToChangeUndefined: Self = StObject.set(x, "onScrollToChange", js.undefined)
+      inline def setOnScrollToChangeUndefined: Self = StObject.set(x, "onScrollToChange", js.undefined)
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToColumn(value: Double): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
+      inline def setScrollToColumn(value: Double): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToColumnUndefined: Self = StObject.set(x, "scrollToColumn", js.undefined)
+      inline def setScrollToColumnUndefined: Self = StObject.set(x, "scrollToColumn", js.undefined)
       
-      @scala.inline
-      def setScrollToRow(value: Double): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
+      inline def setScrollToRow(value: Double): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToRowUndefined: Self = StObject.set(x, "scrollToRow", js.undefined)
+      inline def setScrollToRowUndefined: Self = StObject.set(x, "scrollToRow", js.undefined)
     }
   }
   
@@ -143,23 +123,18 @@ object esArrowKeyStepperMod {
   }
   object ChildProps {
     
-    @scala.inline
-    def apply(onSectionRendered: RenderedSection => Unit, scrollToColumn: Double, scrollToRow: Double): ChildProps = {
+    inline def apply(onSectionRendered: RenderedSection => Unit, scrollToColumn: Double, scrollToRow: Double): ChildProps = {
       val __obj = js.Dynamic.literal(onSectionRendered = js.Any.fromFunction1(onSectionRendered), scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChildProps]
     }
     
-    @scala.inline
-    implicit class ChildPropsMutableBuilder[Self <: ChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChildProps](x: Self) {
       
-      @scala.inline
-      def setOnSectionRendered(value: RenderedSection => Unit): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+      inline def setOnSectionRendered(value: RenderedSection => Unit): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollToColumn(value: Double): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
+      inline def setScrollToColumn(value: Double): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToRow(value: Double): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
+      inline def setScrollToRow(value: Double): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,20 +150,16 @@ object esArrowKeyStepperMod {
   }
   object ScrollIndices {
     
-    @scala.inline
-    def apply(scrollToColumn: Double, scrollToRow: Double): ScrollIndices = {
+    inline def apply(scrollToColumn: Double, scrollToRow: Double): ScrollIndices = {
       val __obj = js.Dynamic.literal(scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollIndices]
     }
     
-    @scala.inline
-    implicit class ScrollIndicesMutableBuilder[Self <: ScrollIndices] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollIndices](x: Self) {
       
-      @scala.inline
-      def setScrollToColumn(value: Double): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
+      inline def setScrollToColumn(value: Double): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToRow(value: Double): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
+      inline def setScrollToRow(value: Double): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
     }
   }
 }

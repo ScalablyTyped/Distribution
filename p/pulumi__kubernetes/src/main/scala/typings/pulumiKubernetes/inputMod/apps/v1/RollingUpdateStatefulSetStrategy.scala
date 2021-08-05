@@ -17,19 +17,15 @@ trait RollingUpdateStatefulSetStrategy extends StObject {
 }
 object RollingUpdateStatefulSetStrategy {
   
-  @scala.inline
-  def apply(): RollingUpdateStatefulSetStrategy = {
+  inline def apply(): RollingUpdateStatefulSetStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RollingUpdateStatefulSetStrategy]
   }
   
-  @scala.inline
-  implicit class RollingUpdateStatefulSetStrategyMutableBuilder[Self <: RollingUpdateStatefulSetStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: RollingUpdateStatefulSetStrategy](x: Self) {
     
-    @scala.inline
-    def setPartition(value: Input[Double]): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Input[Double]): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
   }
 }

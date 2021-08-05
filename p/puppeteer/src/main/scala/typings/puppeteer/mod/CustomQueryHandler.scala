@@ -23,27 +23,21 @@ trait CustomQueryHandler extends StObject {
 }
 object CustomQueryHandler {
   
-  @scala.inline
-  def apply(): CustomQueryHandler = {
+  inline def apply(): CustomQueryHandler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomQueryHandler]
   }
   
-  @scala.inline
-  implicit class CustomQueryHandlerMutableBuilder[Self <: CustomQueryHandler] (val x: Self) extends AnyVal {
+  extension [Self <: CustomQueryHandler](x: Self) {
     
-    @scala.inline
-    def setQueryAll(
+    inline def setQueryAll(
       value: (/* element */ Element | Document, /* selector */ String) => js.Array[Element] | NodeListOf[Element]
     ): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
+    inline def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
     
-    @scala.inline
-    def setQueryOne(value: (/* element */ Element | Document, /* selector */ String) => Element | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
+    inline def setQueryOne(value: (/* element */ Element | Document, /* selector */ String) => Element | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
+    inline def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
   }
 }

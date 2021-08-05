@@ -12,19 +12,15 @@ trait AppUuid extends StObject {
 }
 object AppUuid {
   
-  @scala.inline
-  def apply(appUuid: String, windowName: String): AppUuid = {
+  inline def apply(appUuid: String, windowName: String): AppUuid = {
     val __obj = js.Dynamic.literal(appUuid = appUuid.asInstanceOf[js.Any], windowName = windowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppUuid]
   }
   
-  @scala.inline
-  implicit class AppUuidMutableBuilder[Self <: AppUuid] (val x: Self) extends AnyVal {
+  extension [Self <: AppUuid](x: Self) {
     
-    @scala.inline
-    def setAppUuid(value: String): Self = StObject.set(x, "appUuid", value.asInstanceOf[js.Any])
+    inline def setAppUuid(value: String): Self = StObject.set(x, "appUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
+    inline def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait CustomerContactNotification extends StObject {
 }
 object CustomerContactNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customerContactNotification: scala.Double,
     publisherMemberUpdateNotification: scala.Double,
     qnaNotification: scala.Double,
@@ -27,19 +26,14 @@ object CustomerContactNotification {
     __obj.asInstanceOf[CustomerContactNotification]
   }
   
-  @scala.inline
-  implicit class CustomerContactNotificationMutableBuilder[Self <: CustomerContactNotification] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerContactNotification](x: Self) {
     
-    @scala.inline
-    def setCustomerContactNotification(value: scala.Double): Self = StObject.set(x, "customerContactNotification", value.asInstanceOf[js.Any])
+    inline def setCustomerContactNotification(value: scala.Double): Self = StObject.set(x, "customerContactNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherMemberUpdateNotification(value: scala.Double): Self = StObject.set(x, "publisherMemberUpdateNotification", value.asInstanceOf[js.Any])
+    inline def setPublisherMemberUpdateNotification(value: scala.Double): Self = StObject.set(x, "publisherMemberUpdateNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQnaNotification(value: scala.Double): Self = StObject.set(x, "qnaNotification", value.asInstanceOf[js.Any])
+    inline def setQnaNotification(value: scala.Double): Self = StObject.set(x, "qnaNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewNotification(value: scala.Double): Self = StObject.set(x, "reviewNotification", value.asInstanceOf[js.Any])
+    inline def setReviewNotification(value: scala.Double): Self = StObject.set(x, "reviewNotification", value.asInstanceOf[js.Any])
   }
 }

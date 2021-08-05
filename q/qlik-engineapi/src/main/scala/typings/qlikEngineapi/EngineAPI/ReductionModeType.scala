@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReductionModeType extends StObject
 object ReductionModeType {
   
-  @scala.inline
-  def C: typings.qlikEngineapi.qlikEngineapiStrings.C = "C".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.C]
+  inline def C: typings.qlikEngineapi.qlikEngineapiStrings.C = "C".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.C]
   
-  @scala.inline
-  def D1: typings.qlikEngineapi.qlikEngineapiStrings.D1 = "D1".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D1]
+  inline def D1: typings.qlikEngineapi.qlikEngineapiStrings.D1 = "D1".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D1]
   
-  @scala.inline
-  def N: typings.qlikEngineapi.qlikEngineapiStrings.N = "N".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.N]
+  inline def N: typings.qlikEngineapi.qlikEngineapiStrings.N = "N".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.N]
   
-  @scala.inline
-  def S: typings.qlikEngineapi.qlikEngineapiStrings.S = "S".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.S]
+  inline def S: typings.qlikEngineapi.qlikEngineapiStrings.S = "S".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.S]
   
-  @scala.inline
-  def ST: typings.qlikEngineapi.qlikEngineapiStrings.ST = "ST".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.ST]
+  inline def ST: typings.qlikEngineapi.qlikEngineapiStrings.ST = "ST".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.ST]
 }

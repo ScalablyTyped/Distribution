@@ -53,8 +53,7 @@ trait Input extends StObject {
 }
 object Input {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alt: Boolean,
     code: String,
     control: Boolean,
@@ -70,34 +69,24 @@ object Input {
     __obj.asInstanceOf[Input]
   }
   
-  @scala.inline
-  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+  extension [Self <: Input](x: Self) {
     
-    @scala.inline
-    def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControl(value: Boolean): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Boolean): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoRepeat(value: Boolean): Self = StObject.set(x, "isAutoRepeat", value.asInstanceOf[js.Any])
+    inline def setIsAutoRepeat(value: Boolean): Self = StObject.set(x, "isAutoRepeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
+    inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+    inline def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

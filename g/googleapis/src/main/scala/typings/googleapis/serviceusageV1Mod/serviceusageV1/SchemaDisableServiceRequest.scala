@@ -20,19 +20,15 @@ trait SchemaDisableServiceRequest extends StObject {
 }
 object SchemaDisableServiceRequest {
   
-  @scala.inline
-  def apply(): SchemaDisableServiceRequest = {
+  inline def apply(): SchemaDisableServiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisableServiceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDisableServiceRequestMutableBuilder[Self <: SchemaDisableServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDisableServiceRequest](x: Self) {
     
-    @scala.inline
-    def setDisableDependentServices(value: Boolean): Self = StObject.set(x, "disableDependentServices", value.asInstanceOf[js.Any])
+    inline def setDisableDependentServices(value: Boolean): Self = StObject.set(x, "disableDependentServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableDependentServicesUndefined: Self = StObject.set(x, "disableDependentServices", js.undefined)
+    inline def setDisableDependentServicesUndefined: Self = StObject.set(x, "disableDependentServices", js.undefined)
   }
 }

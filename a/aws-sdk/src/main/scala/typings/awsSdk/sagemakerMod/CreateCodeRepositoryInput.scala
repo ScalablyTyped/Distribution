@@ -18,19 +18,15 @@ trait CreateCodeRepositoryInput extends StObject {
 }
 object CreateCodeRepositoryInput {
   
-  @scala.inline
-  def apply(CodeRepositoryName: EntityName, GitConfig: GitConfig): CreateCodeRepositoryInput = {
+  inline def apply(CodeRepositoryName: EntityName, GitConfig: GitConfig): CreateCodeRepositoryInput = {
     val __obj = js.Dynamic.literal(CodeRepositoryName = CodeRepositoryName.asInstanceOf[js.Any], GitConfig = GitConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCodeRepositoryInput]
   }
   
-  @scala.inline
-  implicit class CreateCodeRepositoryInputMutableBuilder[Self <: CreateCodeRepositoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCodeRepositoryInput](x: Self) {
     
-    @scala.inline
-    def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
+    inline def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitConfig(value: GitConfig): Self = StObject.set(x, "GitConfig", value.asInstanceOf[js.Any])
+    inline def setGitConfig(value: GitConfig): Self = StObject.set(x, "GitConfig", value.asInstanceOf[js.Any])
   }
 }

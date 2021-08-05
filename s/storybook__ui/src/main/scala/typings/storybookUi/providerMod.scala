@@ -33,23 +33,18 @@ object providerMod {
   }
   object Provider {
     
-    @scala.inline
-    def apply(getConfig: () => js.Object, getElements: Types_ => Unit, handleAPI: js.Any => Unit): Provider = {
+    inline def apply(getConfig: () => js.Object, getElements: Types_ => Unit, handleAPI: js.Any => Unit): Provider = {
       val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction0(getConfig), getElements = js.Any.fromFunction1(getElements), handleAPI = js.Any.fromFunction1(handleAPI))
       __obj.asInstanceOf[Provider]
     }
     
-    @scala.inline
-    implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
+    extension [Self <: Provider](x: Self) {
       
-      @scala.inline
-      def setGetConfig(value: () => js.Object): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
+      inline def setGetConfig(value: () => js.Object): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElements(value: Types_ => Unit): Self = StObject.set(x, "getElements", js.Any.fromFunction1(value))
+      inline def setGetElements(value: Types_ => Unit): Self = StObject.set(x, "getElements", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleAPI(value: js.Any => Unit): Self = StObject.set(x, "handleAPI", js.Any.fromFunction1(value))
+      inline def setHandleAPI(value: js.Any => Unit): Self = StObject.set(x, "handleAPI", js.Any.fromFunction1(value))
     }
   }
 }

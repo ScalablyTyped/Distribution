@@ -31,8 +31,7 @@ trait BankAccount extends StObject {
 }
 object BankAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bankAccount: String,
     bankName: String,
     companyAddress: String,
@@ -47,31 +46,22 @@ object BankAccount {
     __obj.asInstanceOf[BankAccount]
   }
   
-  @scala.inline
-  implicit class BankAccountMutableBuilder[Self <: BankAccount] (val x: Self) extends AnyVal {
+  extension [Self <: BankAccount](x: Self) {
     
-    @scala.inline
-    def setBankAccount(value: String): Self = StObject.set(x, "bankAccount", value.asInstanceOf[js.Any])
+    inline def setBankAccount(value: String): Self = StObject.set(x, "bankAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankName(value: String): Self = StObject.set(x, "bankName", value.asInstanceOf[js.Any])
+    inline def setBankName(value: String): Self = StObject.set(x, "bankName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyAddress(value: String): Self = StObject.set(x, "companyAddress", value.asInstanceOf[js.Any])
+    inline def setCompanyAddress(value: String): Self = StObject.set(x, "companyAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxNumber(value: String): Self = StObject.set(x, "taxNumber", value.asInstanceOf[js.Any])
+    inline def setTaxNumber(value: String): Self = StObject.set(x, "taxNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelephone(value: String): Self = StObject.set(x, "telephone", value.asInstanceOf[js.Any])
+    inline def setTelephone(value: String): Self = StObject.set(x, "telephone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

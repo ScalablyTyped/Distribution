@@ -16,20 +16,16 @@ object jsf {
     }
     object RequestData {
       
-      @scala.inline
-      def apply(description: String, status: String): RequestData = {
+      inline def apply(description: String, status: String): RequestData = {
         val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[RequestData]
       }
       
-      @scala.inline
-      implicit class RequestDataMutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
+      extension [Self <: RequestData](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -70,50 +66,36 @@ object jsf {
     }
     object RequestOptions {
       
-      @scala.inline
-      def apply(): RequestOptions = {
+      inline def apply(): RequestOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RequestOptions]
       }
       
-      @scala.inline
-      implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RequestOptions](x: Self) {
         
-        @scala.inline
-        def setExecute(value: String): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+        inline def setExecute(value: String): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+        inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
         
-        @scala.inline
-        def setJavaxDotfacesDotbehaviorDotevent(value: js.Any): Self = StObject.set(x, "javax.faces.behavior.event", value.asInstanceOf[js.Any])
+        inline def setJavaxDotfacesDotbehaviorDotevent(value: js.Any): Self = StObject.set(x, "javax.faces.behavior.event", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJavaxDotfacesDotbehaviorDoteventUndefined: Self = StObject.set(x, "javax.faces.behavior.event", js.undefined)
+        inline def setJavaxDotfacesDotbehaviorDoteventUndefined: Self = StObject.set(x, "javax.faces.behavior.event", js.undefined)
         
-        @scala.inline
-        def setOnerror(value: /* callback */ js.Function1[/* data */ RequestData, Unit] => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+        inline def setOnerror(value: /* callback */ js.Function1[/* data */ RequestData, Unit] => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+        inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
         
-        @scala.inline
-        def setOnevent(value: /* callback */ js.Function1[/* data */ RequestData, Unit] => Unit): Self = StObject.set(x, "onevent", js.Any.fromFunction1(value))
+        inline def setOnevent(value: /* callback */ js.Function1[/* data */ RequestData, Unit] => Unit): Self = StObject.set(x, "onevent", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOneventUndefined: Self = StObject.set(x, "onevent", js.undefined)
+        inline def setOneventUndefined: Self = StObject.set(x, "onevent", js.undefined)
         
-        @scala.inline
-        def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setRender(value: String): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+        inline def setRender(value: String): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+        inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       }
     }
   }

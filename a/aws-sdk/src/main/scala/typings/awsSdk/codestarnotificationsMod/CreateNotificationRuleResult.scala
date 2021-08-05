@@ -13,19 +13,15 @@ trait CreateNotificationRuleResult extends StObject {
 }
 object CreateNotificationRuleResult {
   
-  @scala.inline
-  def apply(): CreateNotificationRuleResult = {
+  inline def apply(): CreateNotificationRuleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNotificationRuleResult]
   }
   
-  @scala.inline
-  implicit class CreateNotificationRuleResultMutableBuilder[Self <: CreateNotificationRuleResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotificationRuleResult](x: Self) {
     
-    @scala.inline
-    def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

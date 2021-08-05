@@ -23,8 +23,7 @@ object monadTaskMod {
   }
   object MonadTask {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[
@@ -40,11 +39,9 @@ object monadTaskMod {
       __obj.asInstanceOf[MonadTask[M]]
     }
     
-    @scala.inline
-    implicit class MonadTaskMutableBuilder[Self <: MonadTask[?], M] (val x: Self & MonadTask[M]) extends AnyVal {
+    extension [Self <: MonadTask[?], M](x: Self & MonadTask[M]) {
       
-      @scala.inline
-      def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
   
@@ -56,8 +53,7 @@ object monadTaskMod {
   }
   object MonadTask1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[
@@ -73,11 +69,9 @@ object monadTaskMod {
       __obj.asInstanceOf[MonadTask1[M]]
     }
     
-    @scala.inline
-    implicit class MonadTask1MutableBuilder[Self <: MonadTask1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & MonadTask1[M]) extends AnyVal {
+    extension [Self <: MonadTask1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & MonadTask1[M]) {
       
-      @scala.inline
-      def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
   
@@ -89,8 +83,7 @@ object monadTaskMod {
   }
   object MonadTask2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[
@@ -106,11 +99,9 @@ object monadTaskMod {
       __obj.asInstanceOf[MonadTask2[M]]
     }
     
-    @scala.inline
-    implicit class MonadTask2MutableBuilder[Self <: MonadTask2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & MonadTask2[M]) extends AnyVal {
+    extension [Self <: MonadTask2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & MonadTask2[M]) {
       
-      @scala.inline
-      def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
   
@@ -122,8 +113,7 @@ object monadTaskMod {
   }
   object MonadTask2C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: M,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
@@ -140,11 +130,9 @@ object monadTaskMod {
       __obj.asInstanceOf[MonadTask2C[M, E]]
     }
     
-    @scala.inline
-    implicit class MonadTask2CMutableBuilder[Self <: MonadTask2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (MonadTask2C[M, E])) extends AnyVal {
+    extension [Self <: MonadTask2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (MonadTask2C[M, E])) {
       
-      @scala.inline
-      def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
   
@@ -156,8 +144,7 @@ object monadTaskMod {
   }
   object MonadTask3 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[
@@ -173,11 +160,9 @@ object monadTaskMod {
       __obj.asInstanceOf[MonadTask3[M]]
     }
     
-    @scala.inline
-    implicit class MonadTask3MutableBuilder[Self <: MonadTask3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & MonadTask3[M]) extends AnyVal {
+    extension [Self <: MonadTask3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & MonadTask3[M]) {
       
-      @scala.inline
-      def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
   
@@ -189,8 +174,7 @@ object monadTaskMod {
   }
   object MonadTask3C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       URI: M,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
@@ -207,11 +191,9 @@ object monadTaskMod {
       __obj.asInstanceOf[MonadTask3C[M, E]]
     }
     
-    @scala.inline
-    implicit class MonadTask3CMutableBuilder[Self <: MonadTask3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (MonadTask3C[M, E])) extends AnyVal {
+    extension [Self <: MonadTask3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (MonadTask3C[M, E])) {
       
-      @scala.inline
-      def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
   
@@ -223,8 +205,7 @@ object monadTaskMod {
   }
   object MonadTask4 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[
@@ -240,11 +221,9 @@ object monadTaskMod {
       __obj.asInstanceOf[MonadTask4[M]]
     }
     
-    @scala.inline
-    implicit class MonadTask4MutableBuilder[Self <: MonadTask4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & MonadTask4[M]) extends AnyVal {
+    extension [Self <: MonadTask4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & MonadTask4[M]) {
       
-      @scala.inline
-      def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
 }

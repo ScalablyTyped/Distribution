@@ -84,23 +84,18 @@ object nscontextMod {
   }
   object INamespace {
     
-    @scala.inline
-    def apply(declared: Boolean, prefix: String, uri: String): INamespace = {
+    inline def apply(declared: Boolean, prefix: String, uri: String): INamespace = {
       val __obj = js.Dynamic.literal(declared = declared.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[INamespace]
     }
     
-    @scala.inline
-    implicit class INamespaceMutableBuilder[Self <: INamespace] (val x: Self) extends AnyVal {
+    extension [Self <: INamespace](x: Self) {
       
-      @scala.inline
-      def setDeclared(value: Boolean): Self = StObject.set(x, "declared", value.asInstanceOf[js.Any])
+      inline def setDeclared(value: Boolean): Self = StObject.set(x, "declared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   

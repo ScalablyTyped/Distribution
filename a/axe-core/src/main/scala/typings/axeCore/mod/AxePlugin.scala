@@ -17,31 +17,23 @@ trait AxePlugin extends StObject {
 }
 object AxePlugin {
   
-  @scala.inline
-  def apply(commands: js.Array[Callback], id: String, run: /* repeated */ js.Any => js.Any): AxePlugin = {
+  inline def apply(commands: js.Array[Callback], id: String, run: /* repeated */ js.Any => js.Any): AxePlugin = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[AxePlugin]
   }
   
-  @scala.inline
-  implicit class AxePluginMutableBuilder[Self <: AxePlugin] (val x: Self) extends AnyVal {
+  extension [Self <: AxePlugin](x: Self) {
     
-    @scala.inline
-    def setCleanup(value: /* callback */ js.Function => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction1(value))
+    inline def setCleanup(value: /* callback */ js.Function => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
+    inline def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
     
-    @scala.inline
-    def setCommands(value: js.Array[Callback]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[Callback]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsVarargs(value: Callback*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: Callback*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

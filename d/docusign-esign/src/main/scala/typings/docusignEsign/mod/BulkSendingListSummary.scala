@@ -28,37 +28,27 @@ trait BulkSendingListSummary extends StObject {
 }
 object BulkSendingListSummary {
   
-  @scala.inline
-  def apply(): BulkSendingListSummary = {
+  inline def apply(): BulkSendingListSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendingListSummary]
   }
   
-  @scala.inline
-  implicit class BulkSendingListSummaryMutableBuilder[Self <: BulkSendingListSummary] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendingListSummary](x: Self) {
     
-    @scala.inline
-    def setBulkSendListId(value: String): Self = StObject.set(x, "bulkSendListId", value.asInstanceOf[js.Any])
+    inline def setBulkSendListId(value: String): Self = StObject.set(x, "bulkSendListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkSendListIdUndefined: Self = StObject.set(x, "bulkSendListId", js.undefined)
+    inline def setBulkSendListIdUndefined: Self = StObject.set(x, "bulkSendListId", js.undefined)
     
-    @scala.inline
-    def setCreatedByUser(value: String): Self = StObject.set(x, "createdByUser", value.asInstanceOf[js.Any])
+    inline def setCreatedByUser(value: String): Self = StObject.set(x, "createdByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUserUndefined: Self = StObject.set(x, "createdByUser", js.undefined)
+    inline def setCreatedByUserUndefined: Self = StObject.set(x, "createdByUser", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

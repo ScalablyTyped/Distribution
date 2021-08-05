@@ -11,22 +11,17 @@ trait Mismatch extends StObject {
 }
 object Mismatch {
   
-  @scala.inline
-  def apply(): Mismatch = {
+  inline def apply(): Mismatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mismatch]
   }
   
-  @scala.inline
-  implicit class MismatchMutableBuilder[Self <: Mismatch] (val x: Self) extends AnyVal {
+  extension [Self <: Mismatch](x: Self) {
     
-    @scala.inline
-    def setMismatch(value: ValidateMessage): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
+    inline def setMismatch(value: ValidateMessage): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMismatchFunction0(value: () => String): Self = StObject.set(x, "mismatch", js.Any.fromFunction0(value))
+    inline def setMismatchFunction0(value: () => String): Self = StObject.set(x, "mismatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMismatchUndefined: Self = StObject.set(x, "mismatch", js.undefined)
+    inline def setMismatchUndefined: Self = StObject.set(x, "mismatch", js.undefined)
   }
 }

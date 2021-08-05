@@ -13,19 +13,15 @@ trait Zerobased extends StObject {
 }
 object Zerobased {
   
-  @scala.inline
-  def apply(): Zerobased = {
+  inline def apply(): Zerobased = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Zerobased]
   }
   
-  @scala.inline
-  implicit class ZerobasedMutableBuilder[Self <: Zerobased] (val x: Self) extends AnyVal {
+  extension [Self <: Zerobased](x: Self) {
     
-    @scala.inline
-    def setZerobased(value: Boolean): Self = StObject.set(x, "zerobased", value.asInstanceOf[js.Any])
+    inline def setZerobased(value: Boolean): Self = StObject.set(x, "zerobased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZerobasedUndefined: Self = StObject.set(x, "zerobased", js.undefined)
+    inline def setZerobasedUndefined: Self = StObject.set(x, "zerobased", js.undefined)
   }
 }

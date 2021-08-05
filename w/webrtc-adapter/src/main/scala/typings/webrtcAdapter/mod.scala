@@ -29,8 +29,7 @@ object mod extends Shortcut {
   }
   object IAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       browserDetails: IBrowserDetails,
       commonShim: ICommonShim,
       disableLog: Boolean => Unit,
@@ -41,29 +40,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IAdapter]
     }
     
-    @scala.inline
-    implicit class IAdapterMutableBuilder[Self <: IAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: IAdapter](x: Self) {
       
-      @scala.inline
-      def setBrowserDetails(value: IBrowserDetails): Self = StObject.set(x, "browserDetails", value.asInstanceOf[js.Any])
+      inline def setBrowserDetails(value: IBrowserDetails): Self = StObject.set(x, "browserDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserShim(value: IChromeShim | IEdgeShim | IFirefoxShim | ISafariShim): Self = StObject.set(x, "browserShim", value.asInstanceOf[js.Any])
+      inline def setBrowserShim(value: IChromeShim | IEdgeShim | IFirefoxShim | ISafariShim): Self = StObject.set(x, "browserShim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserShimUndefined: Self = StObject.set(x, "browserShim", js.undefined)
+      inline def setBrowserShimUndefined: Self = StObject.set(x, "browserShim", js.undefined)
       
-      @scala.inline
-      def setCommonShim(value: ICommonShim): Self = StObject.set(x, "commonShim", value.asInstanceOf[js.Any])
+      inline def setCommonShim(value: ICommonShim): Self = StObject.set(x, "commonShim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableLog(value: Boolean => Unit): Self = StObject.set(x, "disableLog", js.Any.fromFunction1(value))
+      inline def setDisableLog(value: Boolean => Unit): Self = StObject.set(x, "disableLog", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisableWarnings(value: Boolean => Unit): Self = StObject.set(x, "disableWarnings", js.Any.fromFunction1(value))
+      inline def setDisableWarnings(value: Boolean => Unit): Self = StObject.set(x, "disableWarnings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtractVersion(value: (String, String, Double) => Double): Self = StObject.set(x, "extractVersion", js.Any.fromFunction3(value))
+      inline def setExtractVersion(value: (String, String, Double) => Double): Self = StObject.set(x, "extractVersion", js.Any.fromFunction3(value))
     }
   }
   
@@ -77,29 +68,22 @@ object mod extends Shortcut {
   }
   object IBrowserDetails {
     
-    @scala.inline
-    def apply(browser: String): IBrowserDetails = {
+    inline def apply(browser: String): IBrowserDetails = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBrowserDetails]
     }
     
-    @scala.inline
-    implicit class IBrowserDetailsMutableBuilder[Self <: IBrowserDetails] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowserDetails](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsUnifiedPlan(value: Boolean): Self = StObject.set(x, "supportsUnifiedPlan", value.asInstanceOf[js.Any])
+      inline def setSupportsUnifiedPlan(value: Boolean): Self = StObject.set(x, "supportsUnifiedPlan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsUnifiedPlanUndefined: Self = StObject.set(x, "supportsUnifiedPlan", js.undefined)
+      inline def setSupportsUnifiedPlanUndefined: Self = StObject.set(x, "supportsUnifiedPlan", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -125,8 +109,7 @@ object mod extends Shortcut {
   }
   object IChromeShim {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fixNegotiationNeeded: Window => Unit,
       shimAddTrackRemoveTrack: Window => Unit,
       shimAddTrackRemoveTrackWithNative: Window => Unit,
@@ -141,35 +124,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IChromeShim]
     }
     
-    @scala.inline
-    implicit class IChromeShimMutableBuilder[Self <: IChromeShim] (val x: Self) extends AnyVal {
+    extension [Self <: IChromeShim](x: Self) {
       
-      @scala.inline
-      def setFixNegotiationNeeded(value: Window => Unit): Self = StObject.set(x, "fixNegotiationNeeded", js.Any.fromFunction1(value))
+      inline def setFixNegotiationNeeded(value: Window => Unit): Self = StObject.set(x, "fixNegotiationNeeded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimAddTrackRemoveTrack(value: Window => Unit): Self = StObject.set(x, "shimAddTrackRemoveTrack", js.Any.fromFunction1(value))
+      inline def setShimAddTrackRemoveTrack(value: Window => Unit): Self = StObject.set(x, "shimAddTrackRemoveTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimAddTrackRemoveTrackWithNative(value: Window => Unit): Self = StObject.set(x, "shimAddTrackRemoveTrackWithNative", js.Any.fromFunction1(value))
+      inline def setShimAddTrackRemoveTrackWithNative(value: Window => Unit): Self = StObject.set(x, "shimAddTrackRemoveTrackWithNative", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimGetSendersWithDtmf(value: Window => Unit): Self = StObject.set(x, "shimGetSendersWithDtmf", js.Any.fromFunction1(value))
+      inline def setShimGetSendersWithDtmf(value: Window => Unit): Self = StObject.set(x, "shimGetSendersWithDtmf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimGetStats(value: Window => Unit): Self = StObject.set(x, "shimGetStats", js.Any.fromFunction1(value))
+      inline def setShimGetStats(value: Window => Unit): Self = StObject.set(x, "shimGetStats", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimMediaStream(value: Window => Unit): Self = StObject.set(x, "shimMediaStream", js.Any.fromFunction1(value))
+      inline def setShimMediaStream(value: Window => Unit): Self = StObject.set(x, "shimMediaStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimOnTrack(value: Window => Unit): Self = StObject.set(x, "shimOnTrack", js.Any.fromFunction1(value))
+      inline def setShimOnTrack(value: Window => Unit): Self = StObject.set(x, "shimOnTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimPeerConnection(value: Window => Unit): Self = StObject.set(x, "shimPeerConnection", js.Any.fromFunction1(value))
+      inline def setShimPeerConnection(value: Window => Unit): Self = StObject.set(x, "shimPeerConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimSenderReceiverGetStats(value: Window => Unit): Self = StObject.set(x, "shimSenderReceiverGetStats", js.Any.fromFunction1(value))
+      inline def setShimSenderReceiverGetStats(value: Window => Unit): Self = StObject.set(x, "shimSenderReceiverGetStats", js.Any.fromFunction1(value))
     }
   }
   
@@ -187,8 +160,7 @@ object mod extends Shortcut {
   }
   object ICommonShim {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       removeAllowExtmapMixed: Window => Unit,
       shimConnectionState: Window => Unit,
       shimMaxMessageSize: Window => Unit,
@@ -199,23 +171,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ICommonShim]
     }
     
-    @scala.inline
-    implicit class ICommonShimMutableBuilder[Self <: ICommonShim] (val x: Self) extends AnyVal {
+    extension [Self <: ICommonShim](x: Self) {
       
-      @scala.inline
-      def setRemoveAllowExtmapMixed(value: Window => Unit): Self = StObject.set(x, "removeAllowExtmapMixed", js.Any.fromFunction1(value))
+      inline def setRemoveAllowExtmapMixed(value: Window => Unit): Self = StObject.set(x, "removeAllowExtmapMixed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimConnectionState(value: Window => Unit): Self = StObject.set(x, "shimConnectionState", js.Any.fromFunction1(value))
+      inline def setShimConnectionState(value: Window => Unit): Self = StObject.set(x, "shimConnectionState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimMaxMessageSize(value: Window => Unit): Self = StObject.set(x, "shimMaxMessageSize", js.Any.fromFunction1(value))
+      inline def setShimMaxMessageSize(value: Window => Unit): Self = StObject.set(x, "shimMaxMessageSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimRTCIceCandidate(value: Window => Unit): Self = StObject.set(x, "shimRTCIceCandidate", js.Any.fromFunction1(value))
+      inline def setShimRTCIceCandidate(value: Window => Unit): Self = StObject.set(x, "shimRTCIceCandidate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimSendThrowTypeError(value: Window => Unit): Self = StObject.set(x, "shimSendThrowTypeError", js.Any.fromFunction1(value))
+      inline def setShimSendThrowTypeError(value: Window => Unit): Self = StObject.set(x, "shimSendThrowTypeError", js.Any.fromFunction1(value))
     }
   }
   
@@ -227,20 +193,16 @@ object mod extends Shortcut {
   }
   object IEdgeShim {
     
-    @scala.inline
-    def apply(shimPeerConnection: Window => Unit, shimReplaceTrack: Window => Unit): IEdgeShim = {
+    inline def apply(shimPeerConnection: Window => Unit, shimReplaceTrack: Window => Unit): IEdgeShim = {
       val __obj = js.Dynamic.literal(shimPeerConnection = js.Any.fromFunction1(shimPeerConnection), shimReplaceTrack = js.Any.fromFunction1(shimReplaceTrack))
       __obj.asInstanceOf[IEdgeShim]
     }
     
-    @scala.inline
-    implicit class IEdgeShimMutableBuilder[Self <: IEdgeShim] (val x: Self) extends AnyVal {
+    extension [Self <: IEdgeShim](x: Self) {
       
-      @scala.inline
-      def setShimPeerConnection(value: Window => Unit): Self = StObject.set(x, "shimPeerConnection", js.Any.fromFunction1(value))
+      inline def setShimPeerConnection(value: Window => Unit): Self = StObject.set(x, "shimPeerConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimReplaceTrack(value: Window => Unit): Self = StObject.set(x, "shimReplaceTrack", js.Any.fromFunction1(value))
+      inline def setShimReplaceTrack(value: Window => Unit): Self = StObject.set(x, "shimReplaceTrack", js.Any.fromFunction1(value))
     }
   }
   
@@ -260,8 +222,7 @@ object mod extends Shortcut {
   }
   object IFirefoxShim {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       shimOnTrack: Window => Unit,
       shimPeerConnection: Window => Unit,
       shimRTCDataChannel: Window => Unit,
@@ -273,26 +234,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IFirefoxShim]
     }
     
-    @scala.inline
-    implicit class IFirefoxShimMutableBuilder[Self <: IFirefoxShim] (val x: Self) extends AnyVal {
+    extension [Self <: IFirefoxShim](x: Self) {
       
-      @scala.inline
-      def setShimOnTrack(value: Window => Unit): Self = StObject.set(x, "shimOnTrack", js.Any.fromFunction1(value))
+      inline def setShimOnTrack(value: Window => Unit): Self = StObject.set(x, "shimOnTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimPeerConnection(value: Window => Unit): Self = StObject.set(x, "shimPeerConnection", js.Any.fromFunction1(value))
+      inline def setShimPeerConnection(value: Window => Unit): Self = StObject.set(x, "shimPeerConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimRTCDataChannel(value: Window => Unit): Self = StObject.set(x, "shimRTCDataChannel", js.Any.fromFunction1(value))
+      inline def setShimRTCDataChannel(value: Window => Unit): Self = StObject.set(x, "shimRTCDataChannel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimReceiverGetStats(value: Window => Unit): Self = StObject.set(x, "shimReceiverGetStats", js.Any.fromFunction1(value))
+      inline def setShimReceiverGetStats(value: Window => Unit): Self = StObject.set(x, "shimReceiverGetStats", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimRemoveStream(value: Window => Unit): Self = StObject.set(x, "shimRemoveStream", js.Any.fromFunction1(value))
+      inline def setShimRemoveStream(value: Window => Unit): Self = StObject.set(x, "shimRemoveStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimSenderGetStats(value: Window => Unit): Self = StObject.set(x, "shimSenderGetStats", js.Any.fromFunction1(value))
+      inline def setShimSenderGetStats(value: Window => Unit): Self = StObject.set(x, "shimSenderGetStats", js.Any.fromFunction1(value))
     }
   }
   
@@ -316,8 +270,7 @@ object mod extends Shortcut {
   }
   object ISafariShim {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       shimCallbacksAPI: Window => Unit,
       shimConstraints: MediaStreamConstraints => Unit,
       shimCreateOfferLegacy: Window => Unit,
@@ -331,32 +284,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ISafariShim]
     }
     
-    @scala.inline
-    implicit class ISafariShimMutableBuilder[Self <: ISafariShim] (val x: Self) extends AnyVal {
+    extension [Self <: ISafariShim](x: Self) {
       
-      @scala.inline
-      def setShimCallbacksAPI(value: Window => Unit): Self = StObject.set(x, "shimCallbacksAPI", js.Any.fromFunction1(value))
+      inline def setShimCallbacksAPI(value: Window => Unit): Self = StObject.set(x, "shimCallbacksAPI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimConstraints(value: MediaStreamConstraints => Unit): Self = StObject.set(x, "shimConstraints", js.Any.fromFunction1(value))
+      inline def setShimConstraints(value: MediaStreamConstraints => Unit): Self = StObject.set(x, "shimConstraints", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimCreateOfferLegacy(value: Window => Unit): Self = StObject.set(x, "shimCreateOfferLegacy", js.Any.fromFunction1(value))
+      inline def setShimCreateOfferLegacy(value: Window => Unit): Self = StObject.set(x, "shimCreateOfferLegacy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimGetUserMedia(value: Window => Unit): Self = StObject.set(x, "shimGetUserMedia", js.Any.fromFunction1(value))
+      inline def setShimGetUserMedia(value: Window => Unit): Self = StObject.set(x, "shimGetUserMedia", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimLocalStreamsAPI(value: Window => Unit): Self = StObject.set(x, "shimLocalStreamsAPI", js.Any.fromFunction1(value))
+      inline def setShimLocalStreamsAPI(value: Window => Unit): Self = StObject.set(x, "shimLocalStreamsAPI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimRTCIceServerUrls(value: Window => Unit): Self = StObject.set(x, "shimRTCIceServerUrls", js.Any.fromFunction1(value))
+      inline def setShimRTCIceServerUrls(value: Window => Unit): Self = StObject.set(x, "shimRTCIceServerUrls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimRemoteStreamsAPI(value: Window => Unit): Self = StObject.set(x, "shimRemoteStreamsAPI", js.Any.fromFunction1(value))
+      inline def setShimRemoteStreamsAPI(value: Window => Unit): Self = StObject.set(x, "shimRemoteStreamsAPI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimTrackEventTransceiver(value: Window => Unit): Self = StObject.set(x, "shimTrackEventTransceiver", js.Any.fromFunction1(value))
+      inline def setShimTrackEventTransceiver(value: Window => Unit): Self = StObject.set(x, "shimTrackEventTransceiver", js.Any.fromFunction1(value))
     }
   }
   

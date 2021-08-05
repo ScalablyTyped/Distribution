@@ -12,19 +12,15 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(Config: js.Any, Type: String): Config = {
+  inline def apply(Config: js.Any, Type: String): Config = {
     val __obj = js.Dynamic.literal(Config = Config.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Any): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Any): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

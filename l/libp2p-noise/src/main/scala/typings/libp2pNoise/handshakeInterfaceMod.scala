@@ -25,8 +25,7 @@ object handshakeInterfaceMod {
   }
   object IHandshake {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decrypt: (bytes, NoiseSession) => Plaintext,
       encrypt: (bytes, NoiseSession) => bytes,
       remoteEarlyData: Buffer,
@@ -37,23 +36,17 @@ object handshakeInterfaceMod {
       __obj.asInstanceOf[IHandshake]
     }
     
-    @scala.inline
-    implicit class IHandshakeMutableBuilder[Self <: IHandshake] (val x: Self) extends AnyVal {
+    extension [Self <: IHandshake](x: Self) {
       
-      @scala.inline
-      def setDecrypt(value: (bytes, NoiseSession) => Plaintext): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
+      inline def setDecrypt(value: (bytes, NoiseSession) => Plaintext): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEncrypt(value: (bytes, NoiseSession) => bytes): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
+      inline def setEncrypt(value: (bytes, NoiseSession) => bytes): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoteEarlyData(value: Buffer): Self = StObject.set(x, "remoteEarlyData", value.asInstanceOf[js.Any])
+      inline def setRemoteEarlyData(value: Buffer): Self = StObject.set(x, "remoteEarlyData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotePeer(value: ^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
+      inline def setRemotePeer(value: ^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: NoiseSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: NoiseSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     }
   }
 }

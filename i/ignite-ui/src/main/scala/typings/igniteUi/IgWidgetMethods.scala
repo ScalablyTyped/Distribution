@@ -34,8 +34,7 @@ trait IgWidgetMethods extends StObject {
 }
 object IgWidgetMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: js.Object => Unit,
@@ -45,19 +44,14 @@ object IgWidgetMethods {
     __obj.asInstanceOf[IgWidgetMethods]
   }
   
-  @scala.inline
-  implicit class IgWidgetMethodsMutableBuilder[Self <: IgWidgetMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgWidgetMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
+    inline def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

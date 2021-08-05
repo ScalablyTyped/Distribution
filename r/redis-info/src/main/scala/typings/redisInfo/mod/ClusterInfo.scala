@@ -10,16 +10,13 @@ trait ClusterInfo extends StObject {
 }
 object ClusterInfo {
   
-  @scala.inline
-  def apply(cluster_enabled: Flag): ClusterInfo = {
+  inline def apply(cluster_enabled: Flag): ClusterInfo = {
     val __obj = js.Dynamic.literal(cluster_enabled = cluster_enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterInfo]
   }
   
-  @scala.inline
-  implicit class ClusterInfoMutableBuilder[Self <: ClusterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterInfo](x: Self) {
     
-    @scala.inline
-    def setCluster_enabled(value: Flag): Self = StObject.set(x, "cluster_enabled", value.asInstanceOf[js.Any])
+    inline def setCluster_enabled(value: Flag): Self = StObject.set(x, "cluster_enabled", value.asInstanceOf[js.Any])
   }
 }

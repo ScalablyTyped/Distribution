@@ -18,25 +18,19 @@ trait CreateTestGridUrlResult extends StObject {
 }
 object CreateTestGridUrlResult {
   
-  @scala.inline
-  def apply(): CreateTestGridUrlResult = {
+  inline def apply(): CreateTestGridUrlResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTestGridUrlResult]
   }
   
-  @scala.inline
-  implicit class CreateTestGridUrlResultMutableBuilder[Self <: CreateTestGridUrlResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTestGridUrlResult](x: Self) {
     
-    @scala.inline
-    def setExpires(value: DateTime): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: DateTime): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

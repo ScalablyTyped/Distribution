@@ -13,22 +13,17 @@ trait DescribeTimeBasedAutoScalingResult extends StObject {
 }
 object DescribeTimeBasedAutoScalingResult {
   
-  @scala.inline
-  def apply(): DescribeTimeBasedAutoScalingResult = {
+  inline def apply(): DescribeTimeBasedAutoScalingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTimeBasedAutoScalingResult]
   }
   
-  @scala.inline
-  implicit class DescribeTimeBasedAutoScalingResultMutableBuilder[Self <: DescribeTimeBasedAutoScalingResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTimeBasedAutoScalingResult](x: Self) {
     
-    @scala.inline
-    def setTimeBasedAutoScalingConfigurations(value: TimeBasedAutoScalingConfigurations): Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", value.asInstanceOf[js.Any])
+    inline def setTimeBasedAutoScalingConfigurations(value: TimeBasedAutoScalingConfigurations): Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeBasedAutoScalingConfigurationsUndefined: Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", js.undefined)
+    inline def setTimeBasedAutoScalingConfigurationsUndefined: Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", js.undefined)
     
-    @scala.inline
-    def setTimeBasedAutoScalingConfigurationsVarargs(value: TimeBasedAutoScalingConfiguration*): Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", js.Array(value :_*))
+    inline def setTimeBasedAutoScalingConfigurationsVarargs(value: TimeBasedAutoScalingConfiguration*): Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", js.Array(value :_*))
   }
 }

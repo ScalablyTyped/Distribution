@@ -16,19 +16,15 @@ trait SchemaOpenLink extends StObject {
 }
 object SchemaOpenLink {
   
-  @scala.inline
-  def apply(): SchemaOpenLink = {
+  inline def apply(): SchemaOpenLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOpenLink]
   }
   
-  @scala.inline
-  implicit class SchemaOpenLinkMutableBuilder[Self <: SchemaOpenLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOpenLink](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

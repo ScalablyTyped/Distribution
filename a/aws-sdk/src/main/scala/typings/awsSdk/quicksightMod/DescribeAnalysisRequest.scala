@@ -18,19 +18,15 @@ trait DescribeAnalysisRequest extends StObject {
 }
 object DescribeAnalysisRequest {
   
-  @scala.inline
-  def apply(AnalysisId: RestrictiveResourceId, AwsAccountId: AwsAccountId): DescribeAnalysisRequest = {
+  inline def apply(AnalysisId: RestrictiveResourceId, AwsAccountId: AwsAccountId): DescribeAnalysisRequest = {
     val __obj = js.Dynamic.literal(AnalysisId = AnalysisId.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAnalysisRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAnalysisRequestMutableBuilder[Self <: DescribeAnalysisRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAnalysisRequest](x: Self) {
     
-    @scala.inline
-    def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
   }
 }

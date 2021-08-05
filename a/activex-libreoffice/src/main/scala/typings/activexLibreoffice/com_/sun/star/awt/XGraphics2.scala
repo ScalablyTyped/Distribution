@@ -35,8 +35,7 @@ trait XGraphics2
 }
 object XGraphics2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Device: XDevice,
     FontMetric: SimpleFontMetric,
     acquire: () => Unit,
@@ -78,13 +77,10 @@ object XGraphics2 {
     __obj.asInstanceOf[XGraphics2]
   }
   
-  @scala.inline
-  implicit class XGraphics2MutableBuilder[Self <: XGraphics2] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphics2](x: Self) {
     
-    @scala.inline
-    def setClear(value: Rectangle => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: Rectangle => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrawImage(value: (Double, Double, Double, Double, Double, XGraphic) => Unit): Self = StObject.set(x, "drawImage", js.Any.fromFunction6(value))
+    inline def setDrawImage(value: (Double, Double, Double, Double, Double, XGraphic) => Unit): Self = StObject.set(x, "drawImage", js.Any.fromFunction6(value))
   }
 }

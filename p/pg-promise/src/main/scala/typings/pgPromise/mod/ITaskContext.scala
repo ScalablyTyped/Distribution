@@ -48,8 +48,7 @@ trait ITaskContext extends StObject {
 }
 object ITaskContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connected: Boolean,
     context: js.Any,
     dc: js.Any,
@@ -65,73 +64,50 @@ object ITaskContext {
     __obj.asInstanceOf[ITaskContext]
   }
   
-  @scala.inline
-  implicit class ITaskContextMutableBuilder[Self <: ITaskContext] (val x: Self) extends AnyVal {
+  extension [Self <: ITaskContext](x: Self) {
     
-    @scala.inline
-    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+    inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDc(value: js.Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
+    inline def setDc(value: js.Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFinish(value: Date): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
+    inline def setFinish(value: Date): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+    inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
-    @scala.inline
-    def setInTransaction(value: Boolean): Self = StObject.set(x, "inTransaction", value.asInstanceOf[js.Any])
+    inline def setInTransaction(value: Boolean): Self = StObject.set(x, "inTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTX(value: Boolean): Self = StObject.set(x, "isTX", value.asInstanceOf[js.Any])
+    inline def setIsTX(value: Boolean): Self = StObject.set(x, "isTX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: ITaskContext): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ITaskContext): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setServerVersion(value: String): Self = StObject.set(x, "serverVersion", value.asInstanceOf[js.Any])
+    inline def setServerVersion(value: String): Self = StObject.set(x, "serverVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTxLevel(value: Double): Self = StObject.set(x, "txLevel", value.asInstanceOf[js.Any])
+    inline def setTxLevel(value: Double): Self = StObject.set(x, "txLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTxLevelUndefined: Self = StObject.set(x, "txLevel", js.undefined)
+    inline def setTxLevelUndefined: Self = StObject.set(x, "txLevel", js.undefined)
     
-    @scala.inline
-    def setUseCount(value: Double): Self = StObject.set(x, "useCount", value.asInstanceOf[js.Any])
+    inline def setUseCount(value: Double): Self = StObject.set(x, "useCount", value.asInstanceOf[js.Any])
   }
 }

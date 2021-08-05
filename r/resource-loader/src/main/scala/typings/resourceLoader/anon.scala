@@ -23,44 +23,32 @@ object anon {
   }
   object CrossOrigin {
     
-    @scala.inline
-    def apply(): CrossOrigin = {
+    inline def apply(): CrossOrigin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CrossOrigin]
     }
     
-    @scala.inline
-    implicit class CrossOriginMutableBuilder[Self <: CrossOrigin] (val x: Self) extends AnyVal {
+    extension [Self <: CrossOrigin](x: Self) {
       
-      @scala.inline
-      def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setLoadType(value: LOAD_TYPE): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
+      inline def setLoadType(value: LOAD_TYPE): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadTypeUndefined: Self = StObject.set(x, "loadType", js.undefined)
+      inline def setLoadTypeUndefined: Self = StObject.set(x, "loadType", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setXhrType(value: XHR_RESPONSE_TYPE): Self = StObject.set(x, "xhrType", value.asInstanceOf[js.Any])
+      inline def setXhrType(value: XHR_RESPONSE_TYPE): Self = StObject.set(x, "xhrType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrTypeUndefined: Self = StObject.set(x, "xhrType", js.undefined)
+      inline def setXhrTypeUndefined: Self = StObject.set(x, "xhrType", js.undefined)
     }
   }
 }

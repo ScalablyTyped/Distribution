@@ -27,43 +27,31 @@ trait EditionUpgradeConfiguration
 }
 object EditionUpgradeConfiguration {
   
-  @scala.inline
-  def apply(): EditionUpgradeConfiguration = {
+  inline def apply(): EditionUpgradeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditionUpgradeConfiguration]
   }
   
-  @scala.inline
-  implicit class EditionUpgradeConfigurationMutableBuilder[Self <: EditionUpgradeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EditionUpgradeConfiguration](x: Self) {
     
-    @scala.inline
-    def setLicense(value: NullableOption[String]): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: NullableOption[String]): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseNull: Self = StObject.set(x, "license", null)
+    inline def setLicenseNull: Self = StObject.set(x, "license", null)
     
-    @scala.inline
-    def setLicenseType(value: EditionUpgradeLicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
+    inline def setLicenseType(value: EditionUpgradeLicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
+    inline def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
     
-    @scala.inline
-    def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+    inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
-    @scala.inline
-    def setProductKey(value: NullableOption[String]): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
+    inline def setProductKey(value: NullableOption[String]): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductKeyNull: Self = StObject.set(x, "productKey", null)
+    inline def setProductKeyNull: Self = StObject.set(x, "productKey", null)
     
-    @scala.inline
-    def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
+    inline def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
     
-    @scala.inline
-    def setTargetEdition(value: Windows10EditionType): Self = StObject.set(x, "targetEdition", value.asInstanceOf[js.Any])
+    inline def setTargetEdition(value: Windows10EditionType): Self = StObject.set(x, "targetEdition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetEditionUndefined: Self = StObject.set(x, "targetEdition", js.undefined)
+    inline def setTargetEditionUndefined: Self = StObject.set(x, "targetEdition", js.undefined)
   }
 }

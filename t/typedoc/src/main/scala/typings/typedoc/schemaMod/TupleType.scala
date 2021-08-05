@@ -17,29 +17,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TupleType {
   
-  @scala.inline
-  def apply(`type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): TupleType = {
+  inline def apply(`type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): TupleType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TupleType]
   }
   
-  @scala.inline
-  implicit class TupleTypeMutableBuilder[Self <: TupleType] (val x: Self) extends AnyVal {
+  extension [Self <: TupleType](x: Self) {
     
-    @scala.inline
-    def setElements(value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

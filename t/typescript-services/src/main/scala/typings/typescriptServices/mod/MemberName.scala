@@ -32,25 +32,19 @@ object MemberName {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(entry: typings.typescriptServices.TypeScript.MemberName, prefix: String, suffix: String): typings.typescriptServices.TypeScript.MemberName = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entry.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberName]
+  inline def create(entry: typings.typescriptServices.TypeScript.MemberName, prefix: String, suffix: String): typings.typescriptServices.TypeScript.MemberName = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entry.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberName]
   /* static member */
-  @scala.inline
-  def create(text: String): typings.typescriptServices.TypeScript.MemberName = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MemberName]
+  inline def create(text: String): typings.typescriptServices.TypeScript.MemberName = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MemberName]
   
   /* static member */
-  @scala.inline
-  def memberNameToString(memberName: typings.typescriptServices.TypeScript.MemberName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("memberNameToString")(memberName.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def memberNameToString(memberName: typings.typescriptServices.TypeScript.MemberName, markerInfo: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("memberNameToString")(memberName.asInstanceOf[js.Any], markerInfo.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def memberNameToString(
+  inline def memberNameToString(memberName: typings.typescriptServices.TypeScript.MemberName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("memberNameToString")(memberName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def memberNameToString(memberName: typings.typescriptServices.TypeScript.MemberName, markerInfo: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("memberNameToString")(memberName.asInstanceOf[js.Any], markerInfo.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def memberNameToString(
     memberName: typings.typescriptServices.TypeScript.MemberName,
     markerInfo: js.Array[Double],
     markerBaseLength: Double
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("memberNameToString")(memberName.asInstanceOf[js.Any], markerInfo.asInstanceOf[js.Any], markerBaseLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def memberNameToString(
+  inline def memberNameToString(
     memberName: typings.typescriptServices.TypeScript.MemberName,
     markerInfo: Unit,
     markerBaseLength: Double

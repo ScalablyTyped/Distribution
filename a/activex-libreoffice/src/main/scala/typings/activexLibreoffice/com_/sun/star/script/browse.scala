@@ -25,8 +25,7 @@ object browse {
        with XInvocation
   object BrowseNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ChildNodes: SafeArray[XBrowseNode],
       Introspection: XIntrospectionAccess,
       Name: String,
@@ -66,11 +65,9 @@ object browse {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def MACROORGANIZER: `1` = 1.asInstanceOf[`1`]
+      inline def MACROORGANIZER: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def MACROSELECTOR: `0` = 0.asInstanceOf[`0`]
+      inline def MACROSELECTOR: `0` = 0.asInstanceOf[`0`]
     }
   }
   
@@ -84,14 +81,11 @@ object browse {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def CONTAINER: `1` = 1.asInstanceOf[`1`]
+      inline def CONTAINER: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def ROOT: `2` = 2.asInstanceOf[`2`]
+      inline def ROOT: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def SCRIPT: `0` = 0.asInstanceOf[`0`]
+      inline def SCRIPT: `0` = 0.asInstanceOf[`0`]
     }
   }
   
@@ -147,8 +141,7 @@ object browse {
   }
   object XBrowseNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ChildNodes: SafeArray[XBrowseNode],
       Name: String,
       Type: Double,
@@ -164,29 +157,21 @@ object browse {
       __obj.asInstanceOf[XBrowseNode]
     }
     
-    @scala.inline
-    implicit class XBrowseNodeMutableBuilder[Self <: XBrowseNode] (val x: Self) extends AnyVal {
+    extension [Self <: XBrowseNode](x: Self) {
       
-      @scala.inline
-      def setChildNodes(value: SafeArray[XBrowseNode]): Self = StObject.set(x, "ChildNodes", value.asInstanceOf[js.Any])
+      inline def setChildNodes(value: SafeArray[XBrowseNode]): Self = StObject.set(x, "ChildNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetChildNodes(value: () => SafeArray[XBrowseNode]): Self = StObject.set(x, "getChildNodes", js.Any.fromFunction0(value))
+      inline def setGetChildNodes(value: () => SafeArray[XBrowseNode]): Self = StObject.set(x, "getChildNodes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
+      inline def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,8 +189,7 @@ object browse {
   }
   object XBrowseNodeFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       createView: Double => XBrowseNode,
       queryInterface: `type` => js.Any,
@@ -215,11 +199,9 @@ object browse {
       __obj.asInstanceOf[XBrowseNodeFactory]
     }
     
-    @scala.inline
-    implicit class XBrowseNodeFactoryMutableBuilder[Self <: XBrowseNodeFactory] (val x: Self) extends AnyVal {
+    extension [Self <: XBrowseNodeFactory](x: Self) {
       
-      @scala.inline
-      def setCreateView(value: Double => XBrowseNode): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
+      inline def setCreateView(value: Double => XBrowseNode): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
     }
   }
   

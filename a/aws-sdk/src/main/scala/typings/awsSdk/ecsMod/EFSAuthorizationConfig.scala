@@ -18,25 +18,19 @@ trait EFSAuthorizationConfig extends StObject {
 }
 object EFSAuthorizationConfig {
   
-  @scala.inline
-  def apply(): EFSAuthorizationConfig = {
+  inline def apply(): EFSAuthorizationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EFSAuthorizationConfig]
   }
   
-  @scala.inline
-  implicit class EFSAuthorizationConfigMutableBuilder[Self <: EFSAuthorizationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EFSAuthorizationConfig](x: Self) {
     
-    @scala.inline
-    def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
+    inline def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPointIdUndefined: Self = StObject.set(x, "accessPointId", js.undefined)
+    inline def setAccessPointIdUndefined: Self = StObject.set(x, "accessPointId", js.undefined)
     
-    @scala.inline
-    def setIam(value: EFSAuthorizationConfigIAM): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
+    inline def setIam(value: EFSAuthorizationConfigIAM): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
+    inline def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
   }
 }

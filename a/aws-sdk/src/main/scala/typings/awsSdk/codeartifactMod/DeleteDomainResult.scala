@@ -13,19 +13,15 @@ trait DeleteDomainResult extends StObject {
 }
 object DeleteDomainResult {
   
-  @scala.inline
-  def apply(): DeleteDomainResult = {
+  inline def apply(): DeleteDomainResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDomainResult]
   }
   
-  @scala.inline
-  implicit class DeleteDomainResultMutableBuilder[Self <: DeleteDomainResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDomainResult](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainDescription): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainDescription): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
   }
 }

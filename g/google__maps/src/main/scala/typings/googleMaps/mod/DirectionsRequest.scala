@@ -140,106 +140,73 @@ trait DirectionsRequest extends StObject {
 }
 object DirectionsRequest {
   
-  @scala.inline
-  def apply(destination: LatLng, origin: LatLng): DirectionsRequest = {
+  inline def apply(destination: LatLng, origin: LatLng): DirectionsRequest = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequest]
   }
   
-  @scala.inline
-  implicit class DirectionsRequestMutableBuilder[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsRequest](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
+    inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
-    @scala.inline
-    def setArrival_time(value: Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
+    inline def setArrival_time(value: Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrival_timeUndefined: Self = StObject.set(x, "arrival_time", js.undefined)
+    inline def setArrival_timeUndefined: Self = StObject.set(x, "arrival_time", js.undefined)
     
-    @scala.inline
-    def setAvoid(value: js.Array[TravelRestriction]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+    inline def setAvoid(value: js.Array[TravelRestriction]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
+    inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
-    @scala.inline
-    def setAvoidVarargs(value: TravelRestriction*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+    inline def setAvoidVarargs(value: TravelRestriction*): Self = StObject.set(x, "avoid", js.Array(value :_*))
     
-    @scala.inline
-    def setDeparture_time(value: Date | Double | now): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
+    inline def setDeparture_time(value: Date | Double | now): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeparture_timeUndefined: Self = StObject.set(x, "departure_time", js.undefined)
+    inline def setDeparture_timeUndefined: Self = StObject.set(x, "departure_time", js.undefined)
     
-    @scala.inline
-    def setDestination(value: LatLng): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: LatLng): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setMode(value: TravelMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: TravelMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOptimize(value: Boolean): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
+    inline def setOptimize(value: Boolean): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
+    inline def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: LatLng): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: LatLng): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setTraffic_model(value: TrafficModel): Self = StObject.set(x, "traffic_model", value.asInstanceOf[js.Any])
+    inline def setTraffic_model(value: TrafficModel): Self = StObject.set(x, "traffic_model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraffic_modelUndefined: Self = StObject.set(x, "traffic_model", js.undefined)
+    inline def setTraffic_modelUndefined: Self = StObject.set(x, "traffic_model", js.undefined)
     
-    @scala.inline
-    def setTransit_mode(value: js.Array[TransitMode]): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
+    inline def setTransit_mode(value: js.Array[TransitMode]): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransit_modeUndefined: Self = StObject.set(x, "transit_mode", js.undefined)
+    inline def setTransit_modeUndefined: Self = StObject.set(x, "transit_mode", js.undefined)
     
-    @scala.inline
-    def setTransit_modeVarargs(value: TransitMode*): Self = StObject.set(x, "transit_mode", js.Array(value :_*))
+    inline def setTransit_modeVarargs(value: TransitMode*): Self = StObject.set(x, "transit_mode", js.Array(value :_*))
     
-    @scala.inline
-    def setTransit_routing_preference(value: TransitRoutingPreference): Self = StObject.set(x, "transit_routing_preference", value.asInstanceOf[js.Any])
+    inline def setTransit_routing_preference(value: TransitRoutingPreference): Self = StObject.set(x, "transit_routing_preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransit_routing_preferenceUndefined: Self = StObject.set(x, "transit_routing_preference", js.undefined)
+    inline def setTransit_routing_preferenceUndefined: Self = StObject.set(x, "transit_routing_preference", js.undefined)
     
-    @scala.inline
-    def setUnits(value: UnitSystem): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: UnitSystem): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    @scala.inline
-    def setWaypoints(value: js.Array[LatLng]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[LatLng]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
+    inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
     
-    @scala.inline
-    def setWaypointsVarargs(value: LatLng*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: LatLng*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

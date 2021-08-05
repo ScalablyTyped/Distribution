@@ -20,23 +20,23 @@ object rowDragFeatureMod {
     
     /* private */ def checkCenterForScrolling(pixel: js.Any): js.Any = js.native
     
-    var clientSideRowModel: js.Any = js.native
+    /* private */ var clientSideRowModel: js.Any = js.native
     
     def dispatchEvent(`type`: String, draggingEvent: DraggingEvent): Unit = js.native
     
     /* private */ def doManagedDrag(draggingEvent: js.Any, pixel: js.Any): js.Any = js.native
     
-    var dragAndDropService: js.Any = js.native
+    /* private */ var dragAndDropService: js.Any = js.native
     
-    var eContainer: js.Any = js.native
+    /* private */ var eContainer: js.Any = js.native
     
     /* private */ def ensureIntervalCleared(): js.Any = js.native
     
     /* private */ def ensureIntervalStarted(): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var focusedCellController: js.Any = js.native
+    /* private */ var focusedCellController: js.Any = js.native
     
     /** The main container that will get the drop. */
     /* CompleteClass */
@@ -45,24 +45,24 @@ object rowDragFeatureMod {
     @JSName("getIconName")
     def getIconName_MRowDragFeature(): String = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
-    var intervalCount: js.Any = js.native
+    /* private */ var intervalCount: js.Any = js.native
     
     /* CompleteClass */
     override def isInterestedIn(`type`: DragSourceType): Boolean = js.native
     
-    var lastDraggingEvent: js.Any = js.native
+    /* private */ var lastDraggingEvent: js.Any = js.native
     
     /* private */ def moveInterval(): js.Any = js.native
     
-    var movingIntervalId: js.Any = js.native
+    /* private */ var movingIntervalId: js.Any = js.native
     
-    var needToMoveDown: js.Any = js.native
+    /* private */ var needToMoveDown: js.Any = js.native
     
-    var needToMoveUp: js.Any = js.native
+    /* private */ var needToMoveUp: js.Any = js.native
     
     /* private */ def normaliseForScroll(pixel: js.Any): js.Any = js.native
     
@@ -82,9 +82,9 @@ object rowDragFeatureMod {
     
     /* private */ def postConstruct(): js.Any = js.native
     
-    var rangeController: js.Any = js.native
+    /* private */ var rangeController: js.Any = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
     /* private */ def stopDragging(draggingEvent: js.Any): js.Any = js.native
   }

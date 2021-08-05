@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Button extends StObject {
   
-  @JSName("InfoPath.Button_typekey")
+  /* private */ @JSName("InfoPath.Button_typekey")
   var InfoPathDotButton_typekey: Button
 }
 object Button {
   
-  @scala.inline
-  def apply(InfoPathDotButton_typekey: Button): Button = {
+  inline def apply(InfoPathDotButton_typekey: Button): Button = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("InfoPath.Button_typekey")(InfoPathDotButton_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Button]
   }
   
-  @scala.inline
-  implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+  extension [Self <: Button](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotButton_typekey(value: Button): Self = StObject.set(x, "InfoPath.Button_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotButton_typekey(value: Button): Self = StObject.set(x, "InfoPath.Button_typekey", value.asInstanceOf[js.Any])
   }
 }

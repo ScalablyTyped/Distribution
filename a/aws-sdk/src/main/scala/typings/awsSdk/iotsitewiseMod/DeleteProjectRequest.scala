@@ -18,22 +18,17 @@ trait DeleteProjectRequest extends StObject {
 }
 object DeleteProjectRequest {
   
-  @scala.inline
-  def apply(projectId: ID): DeleteProjectRequest = {
+  inline def apply(projectId: ID): DeleteProjectRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProjectRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProjectRequestMutableBuilder[Self <: DeleteProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
   }
 }

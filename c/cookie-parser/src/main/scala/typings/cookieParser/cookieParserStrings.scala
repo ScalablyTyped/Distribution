@@ -8,11 +8,9 @@ object cookieParserStrings {
   
   @js.native
   sealed trait JSONCookies extends StObject
-  @scala.inline
-  def JSONCookies: JSONCookies = "JSONCookies".asInstanceOf[JSONCookies]
+  inline def JSONCookies: JSONCookies = "JSONCookies".asInstanceOf[JSONCookies]
   
   @js.native
   sealed trait signedCookies extends StObject
-  @scala.inline
-  def signedCookies: signedCookies = "signedCookies".asInstanceOf[signedCookies]
+  inline def signedCookies: signedCookies = "signedCookies".asInstanceOf[signedCookies]
 }

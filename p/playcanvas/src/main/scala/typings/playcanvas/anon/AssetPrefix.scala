@@ -31,70 +31,49 @@ trait AssetPrefix extends StObject {
 }
 object AssetPrefix {
   
-  @scala.inline
-  def apply(): AssetPrefix = {
+  inline def apply(): AssetPrefix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssetPrefix]
   }
   
-  @scala.inline
-  implicit class AssetPrefixMutableBuilder[Self <: AssetPrefix] (val x: Self) extends AnyVal {
+  extension [Self <: AssetPrefix](x: Self) {
     
-    @scala.inline
-    def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
+    inline def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
+    inline def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
     
-    @scala.inline
-    def setElementInput(value: ElementInput): Self = StObject.set(x, "elementInput", value.asInstanceOf[js.Any])
+    inline def setElementInput(value: ElementInput): Self = StObject.set(x, "elementInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementInputUndefined: Self = StObject.set(x, "elementInput", js.undefined)
+    inline def setElementInputUndefined: Self = StObject.set(x, "elementInput", js.undefined)
     
-    @scala.inline
-    def setGamepads(value: GamePads): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
+    inline def setGamepads(value: GamePads): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamepadsUndefined: Self = StObject.set(x, "gamepads", js.undefined)
+    inline def setGamepadsUndefined: Self = StObject.set(x, "gamepads", js.undefined)
     
-    @scala.inline
-    def setGraphicsDeviceOptions(value: js.Any): Self = StObject.set(x, "graphicsDeviceOptions", value.asInstanceOf[js.Any])
+    inline def setGraphicsDeviceOptions(value: js.Any): Self = StObject.set(x, "graphicsDeviceOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicsDeviceOptionsUndefined: Self = StObject.set(x, "graphicsDeviceOptions", js.undefined)
+    inline def setGraphicsDeviceOptionsUndefined: Self = StObject.set(x, "graphicsDeviceOptions", js.undefined)
     
-    @scala.inline
-    def setKeyboard(value: Keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    @scala.inline
-    def setMouse(value: Mouse): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Mouse): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
+    inline def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
-    @scala.inline
-    def setScriptPrefix(value: String): Self = StObject.set(x, "scriptPrefix", value.asInstanceOf[js.Any])
+    inline def setScriptPrefix(value: String): Self = StObject.set(x, "scriptPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptPrefixUndefined: Self = StObject.set(x, "scriptPrefix", js.undefined)
+    inline def setScriptPrefixUndefined: Self = StObject.set(x, "scriptPrefix", js.undefined)
     
-    @scala.inline
-    def setScriptsOrder(value: js.Array[String]): Self = StObject.set(x, "scriptsOrder", value.asInstanceOf[js.Any])
+    inline def setScriptsOrder(value: js.Array[String]): Self = StObject.set(x, "scriptsOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptsOrderUndefined: Self = StObject.set(x, "scriptsOrder", js.undefined)
+    inline def setScriptsOrderUndefined: Self = StObject.set(x, "scriptsOrder", js.undefined)
     
-    @scala.inline
-    def setScriptsOrderVarargs(value: String*): Self = StObject.set(x, "scriptsOrder", js.Array(value :_*))
+    inline def setScriptsOrderVarargs(value: String*): Self = StObject.set(x, "scriptsOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setTouch(value: TouchDevice): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: TouchDevice): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+    inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
   }
 }

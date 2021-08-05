@@ -16,16 +16,13 @@ trait ProtocolForResultsOperation extends StObject {
 }
 object ProtocolForResultsOperation {
   
-  @scala.inline
-  def apply(reportCompleted: ValueSet => Unit): ProtocolForResultsOperation = {
+  inline def apply(reportCompleted: ValueSet => Unit): ProtocolForResultsOperation = {
     val __obj = js.Dynamic.literal(reportCompleted = js.Any.fromFunction1(reportCompleted))
     __obj.asInstanceOf[ProtocolForResultsOperation]
   }
   
-  @scala.inline
-  implicit class ProtocolForResultsOperationMutableBuilder[Self <: ProtocolForResultsOperation] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolForResultsOperation](x: Self) {
     
-    @scala.inline
-    def setReportCompleted(value: ValueSet => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction1(value))
+    inline def setReportCompleted(value: ValueSet => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction1(value))
   }
 }

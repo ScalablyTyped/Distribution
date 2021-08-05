@@ -20,8 +20,7 @@ trait KmlLineStyle
 }
 object KmlLineStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -47,13 +46,10 @@ object KmlLineStyle {
     __obj.asInstanceOf[KmlLineStyle]
   }
   
-  @scala.inline
-  implicit class KmlLineStyleMutableBuilder[Self <: KmlLineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLineStyle](x: Self) {
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
   }
 }

@@ -26,8 +26,7 @@ trait ScreenModeDelegate extends StObject {
 }
 object ScreenModeDelegate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     doScreenModeChange: (ScreenMode, ScreenMode) => Unit,
     fullscreenEventListener: () => Unit,
     getEscapeMode: () => js.UndefOr[ScreenMode],
@@ -42,34 +41,24 @@ object ScreenModeDelegate {
     __obj.asInstanceOf[ScreenModeDelegate]
   }
   
-  @scala.inline
-  implicit class ScreenModeDelegateMutableBuilder[Self <: ScreenModeDelegate] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenModeDelegate](x: Self) {
     
-    @scala.inline
-    def setDoScreenModeChange(value: (ScreenMode, ScreenMode) => Unit): Self = StObject.set(x, "doScreenModeChange", js.Any.fromFunction2(value))
+    inline def setDoScreenModeChange(value: (ScreenMode, ScreenMode) => Unit): Self = StObject.set(x, "doScreenModeChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFullscreenEventListener(value: () => Unit): Self = StObject.set(x, "fullscreenEventListener", js.Any.fromFunction0(value))
+    inline def setFullscreenEventListener(value: () => Unit): Self = StObject.set(x, "fullscreenEventListener", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEscapeMode(value: () => js.UndefOr[ScreenMode]): Self = StObject.set(x, "getEscapeMode", js.Any.fromFunction0(value))
+    inline def setGetEscapeMode(value: () => js.UndefOr[ScreenMode]): Self = StObject.set(x, "getEscapeMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMode(value: () => ScreenMode): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
+    inline def setGetMode(value: () => ScreenMode): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextMode(value: () => js.UndefOr[ScreenMode]): Self = StObject.set(x, "getNextMode", js.Any.fromFunction0(value))
+    inline def setGetNextMode(value: () => js.UndefOr[ScreenMode]): Self = StObject.set(x, "getNextMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsModeSupported(value: ScreenMode => Boolean): Self = StObject.set(x, "isModeSupported", js.Any.fromFunction1(value))
+    inline def setIsModeSupported(value: ScreenMode => Boolean): Self = StObject.set(x, "isModeSupported", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnScreenModeChanged(value: (ScreenMode, ScreenMode) => Unit): Self = StObject.set(x, "onScreenModeChanged", js.Any.fromFunction2(value))
+    inline def setOnScreenModeChanged(value: (ScreenMode, ScreenMode) => Unit): Self = StObject.set(x, "onScreenModeChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMode(value: ScreenMode => Boolean): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
+    inline def setSetMode(value: ScreenMode => Boolean): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
+    inline def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
   }
 }

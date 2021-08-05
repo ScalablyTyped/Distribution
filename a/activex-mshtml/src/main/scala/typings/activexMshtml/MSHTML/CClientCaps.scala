@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CClientCaps extends StObject {
   
-  @JSName("MSHTML.CClientCaps_typekey")
+  /* private */ @JSName("MSHTML.CClientCaps_typekey")
   var MSHTMLDotCClientCaps_typekey: CClientCaps = js.native
   
   /** @param bStrVer [bStrVer=''] */

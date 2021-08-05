@@ -10,16 +10,13 @@ trait IndexingResource extends StObject {
 }
 object IndexingResource {
   
-  @scala.inline
-  def apply(datasources: DatasourcesResource): IndexingResource = {
+  inline def apply(datasources: DatasourcesResource): IndexingResource = {
     val __obj = js.Dynamic.literal(datasources = datasources.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexingResource]
   }
   
-  @scala.inline
-  implicit class IndexingResourceMutableBuilder[Self <: IndexingResource] (val x: Self) extends AnyVal {
+  extension [Self <: IndexingResource](x: Self) {
     
-    @scala.inline
-    def setDatasources(value: DatasourcesResource): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
+    inline def setDatasources(value: DatasourcesResource): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
   }
 }

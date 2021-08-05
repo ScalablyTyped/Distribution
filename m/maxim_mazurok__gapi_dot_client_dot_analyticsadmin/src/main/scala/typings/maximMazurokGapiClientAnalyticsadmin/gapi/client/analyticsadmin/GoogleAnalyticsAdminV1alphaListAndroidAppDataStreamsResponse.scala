@@ -14,28 +14,21 @@ trait GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse extends StObj
 }
 object GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse](x: Self) {
     
-    @scala.inline
-    def setAndroidAppDataStreams(value: js.Array[GoogleAnalyticsAdminV1alphaAndroidAppDataStream]): Self = StObject.set(x, "androidAppDataStreams", value.asInstanceOf[js.Any])
+    inline def setAndroidAppDataStreams(value: js.Array[GoogleAnalyticsAdminV1alphaAndroidAppDataStream]): Self = StObject.set(x, "androidAppDataStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidAppDataStreamsUndefined: Self = StObject.set(x, "androidAppDataStreams", js.undefined)
+    inline def setAndroidAppDataStreamsUndefined: Self = StObject.set(x, "androidAppDataStreams", js.undefined)
     
-    @scala.inline
-    def setAndroidAppDataStreamsVarargs(value: GoogleAnalyticsAdminV1alphaAndroidAppDataStream*): Self = StObject.set(x, "androidAppDataStreams", js.Array(value :_*))
+    inline def setAndroidAppDataStreamsVarargs(value: GoogleAnalyticsAdminV1alphaAndroidAppDataStream*): Self = StObject.set(x, "androidAppDataStreams", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

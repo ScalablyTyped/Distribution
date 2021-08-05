@@ -24,28 +24,21 @@ trait SchemaListNotificationChannelDescriptorsResponse extends StObject {
 }
 object SchemaListNotificationChannelDescriptorsResponse {
   
-  @scala.inline
-  def apply(): SchemaListNotificationChannelDescriptorsResponse = {
+  inline def apply(): SchemaListNotificationChannelDescriptorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListNotificationChannelDescriptorsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListNotificationChannelDescriptorsResponseMutableBuilder[Self <: SchemaListNotificationChannelDescriptorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListNotificationChannelDescriptorsResponse](x: Self) {
     
-    @scala.inline
-    def setChannelDescriptors(value: js.Array[SchemaNotificationChannelDescriptor]): Self = StObject.set(x, "channelDescriptors", value.asInstanceOf[js.Any])
+    inline def setChannelDescriptors(value: js.Array[SchemaNotificationChannelDescriptor]): Self = StObject.set(x, "channelDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelDescriptorsUndefined: Self = StObject.set(x, "channelDescriptors", js.undefined)
+    inline def setChannelDescriptorsUndefined: Self = StObject.set(x, "channelDescriptors", js.undefined)
     
-    @scala.inline
-    def setChannelDescriptorsVarargs(value: SchemaNotificationChannelDescriptor*): Self = StObject.set(x, "channelDescriptors", js.Array(value :_*))
+    inline def setChannelDescriptorsVarargs(value: SchemaNotificationChannelDescriptor*): Self = StObject.set(x, "channelDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

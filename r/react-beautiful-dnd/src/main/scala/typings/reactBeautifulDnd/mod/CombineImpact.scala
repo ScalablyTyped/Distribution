@@ -15,20 +15,16 @@ trait CombineImpact
 }
 object CombineImpact {
   
-  @scala.inline
-  def apply(combine: Combine): CombineImpact = {
+  inline def apply(combine: Combine): CombineImpact = {
     val __obj = js.Dynamic.literal(combine = combine.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("COMBINE")
     __obj.asInstanceOf[CombineImpact]
   }
   
-  @scala.inline
-  implicit class CombineImpactMutableBuilder[Self <: CombineImpact] (val x: Self) extends AnyVal {
+  extension [Self <: CombineImpact](x: Self) {
     
-    @scala.inline
-    def setCombine(value: Combine): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
+    inline def setCombine(value: Combine): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: COMBINE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: COMBINE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

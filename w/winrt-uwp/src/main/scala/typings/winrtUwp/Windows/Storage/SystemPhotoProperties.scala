@@ -24,8 +24,7 @@ trait SystemPhotoProperties extends StObject {
 }
 object SystemPhotoProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cameraManufacturer: String,
     cameraModel: String,
     dateTaken: String,
@@ -36,22 +35,16 @@ object SystemPhotoProperties {
     __obj.asInstanceOf[SystemPhotoProperties]
   }
   
-  @scala.inline
-  implicit class SystemPhotoPropertiesMutableBuilder[Self <: SystemPhotoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemPhotoProperties](x: Self) {
     
-    @scala.inline
-    def setCameraManufacturer(value: String): Self = StObject.set(x, "cameraManufacturer", value.asInstanceOf[js.Any])
+    inline def setCameraManufacturer(value: String): Self = StObject.set(x, "cameraManufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraModel(value: String): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
+    inline def setCameraModel(value: String): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTaken(value: String): Self = StObject.set(x, "dateTaken", value.asInstanceOf[js.Any])
+    inline def setDateTaken(value: String): Self = StObject.set(x, "dateTaken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleNames(value: String): Self = StObject.set(x, "peopleNames", value.asInstanceOf[js.Any])
+    inline def setPeopleNames(value: String): Self = StObject.set(x, "peopleNames", value.asInstanceOf[js.Any])
   }
 }

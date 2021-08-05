@@ -36,53 +36,38 @@ object dropdownToggleMod {
   }
   object DropdownToggleProps {
     
-    @scala.inline
-    def apply(): DropdownToggleProps = {
+    inline def apply(): DropdownToggleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownToggleProps]
     }
     
-    @scala.inline
-    implicit class DropdownTogglePropsMutableBuilder[Self <: DropdownToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownToggleProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setBsRole(value: String): Self = StObject.set(x, "bsRole", value.asInstanceOf[js.Any])
+      inline def setBsRole(value: String): Self = StObject.set(x, "bsRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsRoleUndefined: Self = StObject.set(x, "bsRole", js.undefined)
+      inline def setBsRoleUndefined: Self = StObject.set(x, "bsRole", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: String): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: String): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
+      inline def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsStyleNull: Self = StObject.set(x, "bsStyle", null)
+      inline def setBsStyleNull: Self = StObject.set(x, "bsStyle", null)
       
-      @scala.inline
-      def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
+      inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      @scala.inline
-      def setNoCaret(value: Boolean): Self = StObject.set(x, "noCaret", value.asInstanceOf[js.Any])
+      inline def setNoCaret(value: Boolean): Self = StObject.set(x, "noCaret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoCaretUndefined: Self = StObject.set(x, "noCaret", js.undefined)
+      inline def setNoCaretUndefined: Self = StObject.set(x, "noCaret", js.undefined)
       
-      @scala.inline
-      def setUseAnchor(value: Boolean): Self = StObject.set(x, "useAnchor", value.asInstanceOf[js.Any])
+      inline def setUseAnchor(value: Boolean): Self = StObject.set(x, "useAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAnchorUndefined: Self = StObject.set(x, "useAnchor", js.undefined)
+      inline def setUseAnchorUndefined: Self = StObject.set(x, "useAnchor", js.undefined)
     }
   }
 }

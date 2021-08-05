@@ -31,25 +31,19 @@ trait SchemaCreateSnapshotRequest extends StObject {
 }
 object SchemaCreateSnapshotRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateSnapshotRequest = {
+  inline def apply(): SchemaCreateSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateSnapshotRequestMutableBuilder[Self <: SchemaCreateSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

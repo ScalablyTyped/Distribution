@@ -14,31 +14,23 @@ trait Item[ItemT] extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply[ItemT](item: ItemT): Item[ItemT] = {
+  inline def apply[ItemT](item: ItemT): Item[ItemT] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item[ItemT]]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item[?], ItemT] (val x: Self & Item[ItemT]) extends AnyVal {
+  extension [Self <: Item[?], ItemT](x: Self & Item[ItemT]) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedNull: Self = StObject.set(x, "animated", null)
+    inline def setAnimatedNull: Self = StObject.set(x, "animated", null)
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setItem(value: ItemT): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ItemT): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPosition(value: Double): Self = StObject.set(x, "viewPosition", value.asInstanceOf[js.Any])
+    inline def setViewPosition(value: Double): Self = StObject.set(x, "viewPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPositionUndefined: Self = StObject.set(x, "viewPosition", js.undefined)
+    inline def setViewPositionUndefined: Self = StObject.set(x, "viewPosition", js.undefined)
   }
 }

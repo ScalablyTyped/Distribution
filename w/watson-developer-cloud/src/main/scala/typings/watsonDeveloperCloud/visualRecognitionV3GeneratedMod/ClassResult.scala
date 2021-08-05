@@ -18,25 +18,19 @@ trait ClassResult extends StObject {
 }
 object ClassResult {
   
-  @scala.inline
-  def apply(class_name: String, score: Double): ClassResult = {
+  inline def apply(class_name: String, score: Double): ClassResult = {
     val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassResult]
   }
   
-  @scala.inline
-  implicit class ClassResultMutableBuilder[Self <: ClassResult] (val x: Self) extends AnyVal {
+  extension [Self <: ClassResult](x: Self) {
     
-    @scala.inline
-    def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
+    inline def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType_hierarchy(value: String): Self = StObject.set(x, "type_hierarchy", value.asInstanceOf[js.Any])
+    inline def setType_hierarchy(value: String): Self = StObject.set(x, "type_hierarchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType_hierarchyUndefined: Self = StObject.set(x, "type_hierarchy", js.undefined)
+    inline def setType_hierarchyUndefined: Self = StObject.set(x, "type_hierarchy", js.undefined)
   }
 }

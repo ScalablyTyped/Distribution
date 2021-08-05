@@ -18,25 +18,19 @@ trait CreateResourceShareResponse extends StObject {
 }
 object CreateResourceShareResponse {
   
-  @scala.inline
-  def apply(): CreateResourceShareResponse = {
+  inline def apply(): CreateResourceShareResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateResourceShareResponse]
   }
   
-  @scala.inline
-  implicit class CreateResourceShareResponseMutableBuilder[Self <: CreateResourceShareResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResourceShareResponse](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setResourceShare(value: ResourceShare): Self = StObject.set(x, "resourceShare", value.asInstanceOf[js.Any])
+    inline def setResourceShare(value: ResourceShare): Self = StObject.set(x, "resourceShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareUndefined: Self = StObject.set(x, "resourceShare", js.undefined)
+    inline def setResourceShareUndefined: Self = StObject.set(x, "resourceShare", js.undefined)
   }
 }

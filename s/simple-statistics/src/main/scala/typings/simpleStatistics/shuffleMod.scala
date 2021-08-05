@@ -10,8 +10,6 @@ object shuffleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: js.Array[js.Any] */](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def default[T /* <: js.Array[js.Any] */](x: T, randomSource: js.Function0[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T /* <: js.Array[js.Any] */](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T /* <: js.Array[js.Any] */](x: T, randomSource: js.Function0[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[T]
 }

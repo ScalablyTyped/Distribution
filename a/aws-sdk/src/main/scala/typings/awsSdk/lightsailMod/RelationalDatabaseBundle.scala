@@ -53,67 +53,47 @@ trait RelationalDatabaseBundle extends StObject {
 }
 object RelationalDatabaseBundle {
   
-  @scala.inline
-  def apply(): RelationalDatabaseBundle = {
+  inline def apply(): RelationalDatabaseBundle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationalDatabaseBundle]
   }
   
-  @scala.inline
-  implicit class RelationalDatabaseBundleMutableBuilder[Self <: RelationalDatabaseBundle] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalDatabaseBundle](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
+    inline def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
+    inline def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
     
-    @scala.inline
-    def setDiskSizeInGb(value: integer): Self = StObject.set(x, "diskSizeInGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeInGb(value: integer): Self = StObject.set(x, "diskSizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeInGbUndefined: Self = StObject.set(x, "diskSizeInGb", js.undefined)
+    inline def setDiskSizeInGbUndefined: Self = StObject.set(x, "diskSizeInGb", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
+    inline def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
+    inline def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrice(value: float): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: float): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
-    @scala.inline
-    def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
+    inline def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
+    inline def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
     
-    @scala.inline
-    def setTransferPerMonthInGb(value: integer): Self = StObject.set(x, "transferPerMonthInGb", value.asInstanceOf[js.Any])
+    inline def setTransferPerMonthInGb(value: integer): Self = StObject.set(x, "transferPerMonthInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferPerMonthInGbUndefined: Self = StObject.set(x, "transferPerMonthInGb", js.undefined)
+    inline def setTransferPerMonthInGbUndefined: Self = StObject.set(x, "transferPerMonthInGb", js.undefined)
   }
 }

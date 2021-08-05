@@ -10,16 +10,13 @@ trait EnumValuesCodeChange extends StObject {
 }
 object EnumValuesCodeChange {
   
-  @scala.inline
-  def apply(enumValues: CodeChange): EnumValuesCodeChange = {
+  inline def apply(enumValues: CodeChange): EnumValuesCodeChange = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCodeChange]
   }
   
-  @scala.inline
-  implicit class EnumValuesCodeChangeMutableBuilder[Self <: EnumValuesCodeChange] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCodeChange](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: CodeChange): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: CodeChange): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

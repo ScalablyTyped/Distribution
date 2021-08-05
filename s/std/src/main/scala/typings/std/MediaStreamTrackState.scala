@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaStreamTrackState extends StObject
 object MediaStreamTrackState {
   
-  @scala.inline
-  def ended: typings.std.stdStrings.ended = "ended".asInstanceOf[typings.std.stdStrings.ended]
+  inline def ended: typings.std.stdStrings.ended = "ended".asInstanceOf[typings.std.stdStrings.ended]
   
-  @scala.inline
-  def live: typings.std.stdStrings.live = "live".asInstanceOf[typings.std.stdStrings.live]
+  inline def live: typings.std.stdStrings.live = "live".asInstanceOf[typings.std.stdStrings.live]
 }

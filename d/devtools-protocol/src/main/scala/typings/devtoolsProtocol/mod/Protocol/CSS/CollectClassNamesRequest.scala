@@ -10,16 +10,13 @@ trait CollectClassNamesRequest extends StObject {
 }
 object CollectClassNamesRequest {
   
-  @scala.inline
-  def apply(styleSheetId: StyleSheetId): CollectClassNamesRequest = {
+  inline def apply(styleSheetId: StyleSheetId): CollectClassNamesRequest = {
     val __obj = js.Dynamic.literal(styleSheetId = styleSheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectClassNamesRequest]
   }
   
-  @scala.inline
-  implicit class CollectClassNamesRequestMutableBuilder[Self <: CollectClassNamesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CollectClassNamesRequest](x: Self) {
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }
 }

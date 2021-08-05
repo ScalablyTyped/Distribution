@@ -18,16 +18,13 @@ trait ASPxClientHtmlEditorCustomDialogEventArgs
 }
 object ASPxClientHtmlEditorCustomDialogEventArgs {
   
-  @scala.inline
-  def apply(name: String): ASPxClientHtmlEditorCustomDialogEventArgs = {
+  inline def apply(name: String): ASPxClientHtmlEditorCustomDialogEventArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorCustomDialogEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorCustomDialogEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorCustomDialogEventArgs](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait SpeechSynthesisErrorEventInit
 }
 object SpeechSynthesisErrorEventInit {
   
-  @scala.inline
-  def apply(error: SpeechSynthesisErrorCode, utterance: SpeechSynthesisUtterance): SpeechSynthesisErrorEventInit = {
+  inline def apply(error: SpeechSynthesisErrorCode, utterance: SpeechSynthesisUtterance): SpeechSynthesisErrorEventInit = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], utterance = utterance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechSynthesisErrorEventInit]
   }
   
-  @scala.inline
-  implicit class SpeechSynthesisErrorEventInitMutableBuilder[Self <: SpeechSynthesisErrorEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechSynthesisErrorEventInit](x: Self) {
     
-    @scala.inline
-    def setError(value: SpeechSynthesisErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SpeechSynthesisErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

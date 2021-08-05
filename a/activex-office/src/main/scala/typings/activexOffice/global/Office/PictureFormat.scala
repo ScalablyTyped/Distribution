@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PictureFormat")
 @js.native
-class PictureFormat protected ()
+/* private */ class PictureFormat ()
   extends StObject
      with typings.activexOffice.Office.PictureFormat {
   
@@ -48,7 +48,7 @@ class PictureFormat protected ()
   /* CompleteClass */
   override def IncrementContrast(Increment: Double): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.PictureFormat_typekey")
   var OfficeDotPictureFormat_typekey: typings.activexOffice.Office.PictureFormat = js.native
   

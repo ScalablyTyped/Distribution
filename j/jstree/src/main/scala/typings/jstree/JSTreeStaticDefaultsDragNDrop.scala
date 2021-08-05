@@ -98,8 +98,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
 }
 object JSTreeStaticDefaultsDragNDrop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     always_copy: Boolean,
     check_while_dragging: Boolean,
     copy: Boolean,
@@ -116,40 +115,28 @@ object JSTreeStaticDefaultsDragNDrop {
     __obj.asInstanceOf[JSTreeStaticDefaultsDragNDrop]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsDragNDropMutableBuilder[Self <: JSTreeStaticDefaultsDragNDrop] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsDragNDrop](x: Self) {
     
-    @scala.inline
-    def setAlways_copy(value: Boolean): Self = StObject.set(x, "always_copy", value.asInstanceOf[js.Any])
+    inline def setAlways_copy(value: Boolean): Self = StObject.set(x, "always_copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheck_while_dragging(value: Boolean): Self = StObject.set(x, "check_while_dragging", value.asInstanceOf[js.Any])
+    inline def setCheck_while_dragging(value: Boolean): Self = StObject.set(x, "check_while_dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_selection(value: Boolean): Self = StObject.set(x, "drag_selection", value.asInstanceOf[js.Any])
+    inline def setDrag_selection(value: Boolean): Self = StObject.set(x, "drag_selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInside_pos(value: js.Any): Self = StObject.set(x, "inside_pos", value.asInstanceOf[js.Any])
+    inline def setInside_pos(value: js.Any): Self = StObject.set(x, "inside_pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_draggable(value: Boolean): Self = StObject.set(x, "is_draggable", value.asInstanceOf[js.Any])
+    inline def setIs_draggable(value: Boolean): Self = StObject.set(x, "is_draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLarge_drag_target(value: Boolean): Self = StObject.set(x, "large_drag_target", value.asInstanceOf[js.Any])
+    inline def setLarge_drag_target(value: Boolean): Self = StObject.set(x, "large_drag_target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLarge_drop_target(value: Boolean): Self = StObject.set(x, "large_drop_target", value.asInstanceOf[js.Any])
+    inline def setLarge_drop_target(value: Boolean): Self = StObject.set(x, "large_drop_target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen_timeout(value: Double): Self = StObject.set(x, "open_timeout", value.asInstanceOf[js.Any])
+    inline def setOpen_timeout(value: Double): Self = StObject.set(x, "open_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_html5(value: Boolean): Self = StObject.set(x, "use_html5", value.asInstanceOf[js.Any])
+    inline def setUse_html5(value: Boolean): Self = StObject.set(x, "use_html5", value.asInstanceOf[js.Any])
   }
 }

@@ -19,43 +19,31 @@ trait OddColor extends StObject {
 }
 object OddColor {
   
-  @scala.inline
-  def apply(): OddColor = {
+  inline def apply(): OddColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OddColor]
   }
   
-  @scala.inline
-  implicit class OddColorMutableBuilder[Self <: OddColor] (val x: Self) extends AnyVal {
+  extension [Self <: OddColor](x: Self) {
     
-    @scala.inline
-    def setEvenColor(value: Property): Self = StObject.set(x, "evenColor", value.asInstanceOf[js.Any])
+    inline def setEvenColor(value: Property): Self = StObject.set(x, "evenColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvenColorUndefined: Self = StObject.set(x, "evenColor", js.undefined)
+    inline def setEvenColorUndefined: Self = StObject.set(x, "evenColor", js.undefined)
     
-    @scala.inline
-    def setOddColor(value: Property): Self = StObject.set(x, "oddColor", value.asInstanceOf[js.Any])
+    inline def setOddColor(value: Property): Self = StObject.set(x, "oddColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddColorUndefined: Self = StObject.set(x, "oddColor", js.undefined)
+    inline def setOddColorUndefined: Self = StObject.set(x, "oddColor", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Property): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Property): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: Property): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Property): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: Property): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Property): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
   }
 }

@@ -17,34 +17,25 @@ trait DocumentRemove extends StObject {
 }
 object DocumentRemove {
   
-  @scala.inline
-  def apply(): DocumentRemove = {
+  inline def apply(): DocumentRemove = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentRemove]
   }
   
-  @scala.inline
-  implicit class DocumentRemoveMutableBuilder[Self <: DocumentRemove] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentRemove](x: Self) {
     
-    @scala.inline
-    def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setRemovedTargetIds(value: js.Array[Double]): Self = StObject.set(x, "removedTargetIds", value.asInstanceOf[js.Any])
+    inline def setRemovedTargetIds(value: js.Array[Double]): Self = StObject.set(x, "removedTargetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedTargetIdsUndefined: Self = StObject.set(x, "removedTargetIds", js.undefined)
+    inline def setRemovedTargetIdsUndefined: Self = StObject.set(x, "removedTargetIds", js.undefined)
     
-    @scala.inline
-    def setRemovedTargetIdsVarargs(value: Double*): Self = StObject.set(x, "removedTargetIds", js.Array(value :_*))
+    inline def setRemovedTargetIdsVarargs(value: Double*): Self = StObject.set(x, "removedTargetIds", js.Array(value :_*))
   }
 }

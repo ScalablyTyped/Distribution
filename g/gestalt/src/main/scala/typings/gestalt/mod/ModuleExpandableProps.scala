@@ -17,8 +17,7 @@ trait ModuleExpandableProps extends StObject {
 }
 object ModuleExpandableProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessibilityCollapseLabel: String,
     accessibilityExpandLabel: String,
     id: String,
@@ -28,22 +27,16 @@ object ModuleExpandableProps {
     __obj.asInstanceOf[ModuleExpandableProps]
   }
   
-  @scala.inline
-  implicit class ModuleExpandablePropsMutableBuilder[Self <: ModuleExpandableProps] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleExpandableProps](x: Self) {
     
-    @scala.inline
-    def setAccessibilityCollapseLabel(value: String): Self = StObject.set(x, "accessibilityCollapseLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityCollapseLabel(value: String): Self = StObject.set(x, "accessibilityCollapseLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityExpandLabel(value: String): Self = StObject.set(x, "accessibilityExpandLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityExpandLabel(value: String): Self = StObject.set(x, "accessibilityExpandLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Children]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Children]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Children*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Children*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

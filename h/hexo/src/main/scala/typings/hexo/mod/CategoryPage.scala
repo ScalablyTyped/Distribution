@@ -12,16 +12,13 @@ trait CategoryPage
 }
 object CategoryPage {
   
-  @scala.inline
-  def apply(category: String): CategoryPage = {
+  inline def apply(category: String): CategoryPage = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryPage]
   }
   
-  @scala.inline
-  implicit class CategoryPageMutableBuilder[Self <: CategoryPage] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryPage](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
   }
 }

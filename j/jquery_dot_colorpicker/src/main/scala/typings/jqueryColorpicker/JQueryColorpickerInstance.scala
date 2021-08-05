@@ -16,25 +16,19 @@ trait JQueryColorpickerInstance extends StObject {
 }
 object JQueryColorpickerInstance {
   
-  @scala.inline
-  def apply(close: () => Unit, destroy: () => Unit, open: () => Unit, setColor: js.Any => Unit): JQueryColorpickerInstance = {
+  inline def apply(close: () => Unit, destroy: () => Unit, open: () => Unit, setColor: js.Any => Unit): JQueryColorpickerInstance = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), open = js.Any.fromFunction0(open), setColor = js.Any.fromFunction1(setColor))
     __obj.asInstanceOf[JQueryColorpickerInstance]
   }
   
-  @scala.inline
-  implicit class JQueryColorpickerInstanceMutableBuilder[Self <: JQueryColorpickerInstance] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryColorpickerInstance](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetColor(value: js.Any => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: js.Any => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
   }
 }

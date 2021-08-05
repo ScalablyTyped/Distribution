@@ -16,37 +16,27 @@ trait DataValueConfig extends StObject {
 }
 object DataValueConfig {
   
-  @scala.inline
-  def apply(): DataValueConfig = {
+  inline def apply(): DataValueConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataValueConfig]
   }
   
-  @scala.inline
-  implicit class DataValueConfigMutableBuilder[Self <: DataValueConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DataValueConfig](x: Self) {
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    @scala.inline
-    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

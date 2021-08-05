@@ -10,19 +10,15 @@ trait Modifier extends StObject {
 }
 object Modifier {
   
-  @scala.inline
-  def apply(): Modifier = {
+  inline def apply(): Modifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Modifier]
   }
   
-  @scala.inline
-  implicit class ModifierMutableBuilder[Self <: Modifier] (val x: Self) extends AnyVal {
+  extension [Self <: Modifier](x: Self) {
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
   }
 }

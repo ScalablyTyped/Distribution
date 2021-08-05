@@ -42,41 +42,30 @@ object anon {
   }
   object Ca {
     
-    @scala.inline
-    def apply(rejectUnauthorized: Boolean): Ca = {
+    inline def apply(rejectUnauthorized: Boolean): Ca = {
       val __obj = js.Dynamic.literal(rejectUnauthorized = rejectUnauthorized.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ca]
     }
     
-    @scala.inline
-    implicit class CaMutableBuilder[Self <: Ca] (val x: Self) extends AnyVal {
+    extension [Self <: Ca](x: Self) {
       
-      @scala.inline
-      def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+      inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,8 +81,7 @@ object anon {
   }
   object Enabled {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exclude: js.Tuple3[
           ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
           ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
@@ -104,14 +92,11 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    @scala.inline
-    implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+    extension [Self <: Enabled](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: `false`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: `false`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclude(
+      inline def setExclude(
         value: js.Tuple3[
               ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
               ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
@@ -147,8 +132,7 @@ object anon {
   }
   object Group {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       group: js.Tuple5[dn, cn, description, distinguishedName, objectCategory],
       user: js.Tuple17[
           dn, 
@@ -174,14 +158,11 @@ object anon {
       __obj.asInstanceOf[Group]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+    extension [Self <: Group](x: Self) {
       
-      @scala.inline
-      def setGroup(value: js.Tuple5[dn, cn, description, distinguishedName, objectCategory]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: js.Tuple5[dn, cn, description, distinguishedName, objectCategory]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(
+      inline def setUser(
         value: js.Tuple17[
               dn, 
               distinguishedName, 

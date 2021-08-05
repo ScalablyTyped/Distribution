@@ -28,34 +28,25 @@ trait UpdateDomainContactPrivacyRequest extends StObject {
 }
 object UpdateDomainContactPrivacyRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): UpdateDomainContactPrivacyRequest = {
+  inline def apply(DomainName: DomainName): UpdateDomainContactPrivacyRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainContactPrivacyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDomainContactPrivacyRequestMutableBuilder[Self <: UpdateDomainContactPrivacyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDomainContactPrivacyRequest](x: Self) {
     
-    @scala.inline
-    def setAdminPrivacy(value: Boolean): Self = StObject.set(x, "AdminPrivacy", value.asInstanceOf[js.Any])
+    inline def setAdminPrivacy(value: Boolean): Self = StObject.set(x, "AdminPrivacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminPrivacyUndefined: Self = StObject.set(x, "AdminPrivacy", js.undefined)
+    inline def setAdminPrivacyUndefined: Self = StObject.set(x, "AdminPrivacy", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrantPrivacy(value: Boolean): Self = StObject.set(x, "RegistrantPrivacy", value.asInstanceOf[js.Any])
+    inline def setRegistrantPrivacy(value: Boolean): Self = StObject.set(x, "RegistrantPrivacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrantPrivacyUndefined: Self = StObject.set(x, "RegistrantPrivacy", js.undefined)
+    inline def setRegistrantPrivacyUndefined: Self = StObject.set(x, "RegistrantPrivacy", js.undefined)
     
-    @scala.inline
-    def setTechPrivacy(value: Boolean): Self = StObject.set(x, "TechPrivacy", value.asInstanceOf[js.Any])
+    inline def setTechPrivacy(value: Boolean): Self = StObject.set(x, "TechPrivacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTechPrivacyUndefined: Self = StObject.set(x, "TechPrivacy", js.undefined)
+    inline def setTechPrivacyUndefined: Self = StObject.set(x, "TechPrivacy", js.undefined)
   }
 }

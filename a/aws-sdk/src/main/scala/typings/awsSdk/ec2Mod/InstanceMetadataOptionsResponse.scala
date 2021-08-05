@@ -28,37 +28,27 @@ trait InstanceMetadataOptionsResponse extends StObject {
 }
 object InstanceMetadataOptionsResponse {
   
-  @scala.inline
-  def apply(): InstanceMetadataOptionsResponse = {
+  inline def apply(): InstanceMetadataOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceMetadataOptionsResponse]
   }
   
-  @scala.inline
-  implicit class InstanceMetadataOptionsResponseMutableBuilder[Self <: InstanceMetadataOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceMetadataOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setHttpEndpoint(value: InstanceMetadataEndpointState): Self = StObject.set(x, "HttpEndpoint", value.asInstanceOf[js.Any])
+    inline def setHttpEndpoint(value: InstanceMetadataEndpointState): Self = StObject.set(x, "HttpEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpEndpointUndefined: Self = StObject.set(x, "HttpEndpoint", js.undefined)
+    inline def setHttpEndpointUndefined: Self = StObject.set(x, "HttpEndpoint", js.undefined)
     
-    @scala.inline
-    def setHttpPutResponseHopLimit(value: Integer): Self = StObject.set(x, "HttpPutResponseHopLimit", value.asInstanceOf[js.Any])
+    inline def setHttpPutResponseHopLimit(value: Integer): Self = StObject.set(x, "HttpPutResponseHopLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpPutResponseHopLimitUndefined: Self = StObject.set(x, "HttpPutResponseHopLimit", js.undefined)
+    inline def setHttpPutResponseHopLimitUndefined: Self = StObject.set(x, "HttpPutResponseHopLimit", js.undefined)
     
-    @scala.inline
-    def setHttpTokens(value: HttpTokensState): Self = StObject.set(x, "HttpTokens", value.asInstanceOf[js.Any])
+    inline def setHttpTokens(value: HttpTokensState): Self = StObject.set(x, "HttpTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpTokensUndefined: Self = StObject.set(x, "HttpTokens", js.undefined)
+    inline def setHttpTokensUndefined: Self = StObject.set(x, "HttpTokens", js.undefined)
     
-    @scala.inline
-    def setState(value: InstanceMetadataOptionsState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: InstanceMetadataOptionsState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

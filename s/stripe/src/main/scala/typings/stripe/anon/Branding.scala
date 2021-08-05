@@ -34,43 +34,31 @@ trait Branding extends StObject {
 }
 object Branding {
   
-  @scala.inline
-  def apply(): Branding = {
+  inline def apply(): Branding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Branding]
   }
   
-  @scala.inline
-  implicit class BrandingMutableBuilder[Self <: Branding] (val x: Self) extends AnyVal {
+  extension [Self <: Branding](x: Self) {
     
-    @scala.inline
-    def setBranding(value: Icon): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
+    inline def setBranding(value: Icon): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
+    inline def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
     
-    @scala.inline
-    def setCard_payments(value: Declineon): Self = StObject.set(x, "card_payments", value.asInstanceOf[js.Any])
+    inline def setCard_payments(value: Declineon): Self = StObject.set(x, "card_payments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCard_paymentsUndefined: Self = StObject.set(x, "card_payments", js.undefined)
+    inline def setCard_paymentsUndefined: Self = StObject.set(x, "card_payments", js.undefined)
     
-    @scala.inline
-    def setDashboard(value: Displayname): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
+    inline def setDashboard(value: Displayname): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardUndefined: Self = StObject.set(x, "dashboard", js.undefined)
+    inline def setDashboardUndefined: Self = StObject.set(x, "dashboard", js.undefined)
     
-    @scala.inline
-    def setPayments(value: Statementdescriptor): Self = StObject.set(x, "payments", value.asInstanceOf[js.Any])
+    inline def setPayments(value: Statementdescriptor): Self = StObject.set(x, "payments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentsUndefined: Self = StObject.set(x, "payments", js.undefined)
+    inline def setPaymentsUndefined: Self = StObject.set(x, "payments", js.undefined)
     
-    @scala.inline
-    def setPayouts(value: Debitnegativebalances): Self = StObject.set(x, "payouts", value.asInstanceOf[js.Any])
+    inline def setPayouts(value: Debitnegativebalances): Self = StObject.set(x, "payouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayoutsUndefined: Self = StObject.set(x, "payouts", js.undefined)
+    inline def setPayoutsUndefined: Self = StObject.set(x, "payouts", js.undefined)
   }
 }

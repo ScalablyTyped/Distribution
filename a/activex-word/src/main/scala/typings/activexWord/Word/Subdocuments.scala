@@ -41,6 +41,6 @@ trait Subdocuments extends StObject {
   
   def Select(): Unit = js.native
   
-  @JSName("Word.Subdocuments_typekey")
+  /* private */ @JSName("Word.Subdocuments_typekey")
   var WordDotSubdocuments_typekey: Subdocuments = js.native
 }

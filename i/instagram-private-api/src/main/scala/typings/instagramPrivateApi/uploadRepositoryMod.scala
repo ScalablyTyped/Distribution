@@ -23,11 +23,11 @@ object uploadRepositoryMod {
   class UploadRepository protected () extends Repository {
     def this(client: IgApiClient) = this()
     
-    var chance: js.Any = js.native
+    /* private */ var chance: js.Any = js.native
     
     def endSegmentedVideo(hasRuploadParamsStreamId: StreamId_): js.Promise[js.Any] = js.native
     
-    var getBaseHeaders: js.Any = js.native
+    /* private */ var getBaseHeaders: js.Any = js.native
     
     def initVideo(hasNameRuploadParamsWaterfallId: RuploadParams): js.Promise[Offset] = js.native
     
@@ -51,22 +51,16 @@ object uploadRepositoryMod {
     @JSImport("instagram-private-api/dist/repositories/upload.repository", "UploadRepository.createPhotoRuploadParams")
     @js.native
     def createPhotoRuploadParams: js.Any = js.native
-    @scala.inline
-    def createPhotoRuploadParams_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createPhotoRuploadParams")(x.asInstanceOf[js.Any])
+    inline def createPhotoRuploadParams_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createPhotoRuploadParams")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def createVideoRuploadParams(options: UploadVideoOptions, uploadId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def createVideoRuploadParams(options: UploadVideoOptions, uploadId: String, retryContext: UploadRetryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any], retryContext.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def createVideoRuploadParams(options: UploadVideoOptions, uploadId: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def createVideoRuploadParams(options: UploadVideoOptions, uploadId: Double, retryContext: UploadRetryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any], retryContext.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createVideoRuploadParams(options: UploadVideoOptions, uploadId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createVideoRuploadParams(options: UploadVideoOptions, uploadId: String, retryContext: UploadRetryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any], retryContext.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createVideoRuploadParams(options: UploadVideoOptions, uploadId: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createVideoRuploadParams(options: UploadVideoOptions, uploadId: Double, retryContext: UploadRetryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createVideoRuploadParams")(options.asInstanceOf[js.Any], uploadId.asInstanceOf[js.Any], retryContext.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("instagram-private-api/dist/repositories/upload.repository", "UploadRepository.uploadDebug")
     @js.native
     def uploadDebug: js.Any = js.native
-    @scala.inline
-    def uploadDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uploadDebug")(x.asInstanceOf[js.Any])
+    inline def uploadDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uploadDebug")(x.asInstanceOf[js.Any])
   }
 }

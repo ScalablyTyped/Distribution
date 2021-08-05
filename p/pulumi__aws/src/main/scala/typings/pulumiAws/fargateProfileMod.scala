@@ -82,21 +82,16 @@ object fargateProfileMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FargateProfileState): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FargateProfileState, opts: CustomResourceOptions): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
+    inline def get(name: String, id: Input[ID]): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
+    inline def get(name: String, id: Input[ID], state: FargateProfileState): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
+    inline def get(name: String, id: Input[ID], state: FargateProfileState, opts: CustomResourceOptions): FargateProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FargateProfile]
     
     /**
       * Returns true if the given object is an instance of FargateProfile.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/fargateProfile.FargateProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/eks/fargateProfile.FargateProfile */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/fargateProfile.FargateProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/eks/fargateProfile.FargateProfile */ Boolean]
   }
   
   trait FargateProfileArgs extends StObject {
@@ -133,8 +128,7 @@ object fargateProfileMod {
   }
   object FargateProfileArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clusterName: Input[String],
       podExecutionRoleArn: Input[String],
       selectors: Input[js.Array[Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]]]
@@ -143,41 +137,29 @@ object fargateProfileMod {
       __obj.asInstanceOf[FargateProfileArgs]
     }
     
-    @scala.inline
-    implicit class FargateProfileArgsMutableBuilder[Self <: FargateProfileArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FargateProfileArgs](x: Self) {
       
-      @scala.inline
-      def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFargateProfileName(value: Input[String]): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
+      inline def setFargateProfileName(value: Input[String]): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFargateProfileNameUndefined: Self = StObject.set(x, "fargateProfileName", js.undefined)
+      inline def setFargateProfileNameUndefined: Self = StObject.set(x, "fargateProfileName", js.undefined)
       
-      @scala.inline
-      def setPodExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "podExecutionRoleArn", value.asInstanceOf[js.Any])
+      inline def setPodExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "podExecutionRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]]]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]]]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]*): Self = StObject.set(x, "selectors", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -225,68 +207,48 @@ object fargateProfileMod {
   }
   object FargateProfileState {
     
-    @scala.inline
-    def apply(): FargateProfileState = {
+    inline def apply(): FargateProfileState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FargateProfileState]
     }
     
-    @scala.inline
-    implicit class FargateProfileStateMutableBuilder[Self <: FargateProfileState] (val x: Self) extends AnyVal {
+    extension [Self <: FargateProfileState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+      inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
       
-      @scala.inline
-      def setFargateProfileName(value: Input[String]): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
+      inline def setFargateProfileName(value: Input[String]): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFargateProfileNameUndefined: Self = StObject.set(x, "fargateProfileName", js.undefined)
+      inline def setFargateProfileNameUndefined: Self = StObject.set(x, "fargateProfileName", js.undefined)
       
-      @scala.inline
-      def setPodExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "podExecutionRoleArn", value.asInstanceOf[js.Any])
+      inline def setPodExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "podExecutionRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodExecutionRoleArnUndefined: Self = StObject.set(x, "podExecutionRoleArn", js.undefined)
+      inline def setPodExecutionRoleArnUndefined: Self = StObject.set(x, "podExecutionRoleArn", js.undefined)
       
-      @scala.inline
-      def setSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]]]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]]]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+      inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
       
-      @scala.inline
-      def setSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.eks.FargateProfileSelector]*): Self = StObject.set(x, "selectors", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

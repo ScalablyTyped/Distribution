@@ -112,452 +112,377 @@ object inputTypesUnionMod {
   trait _InputTypesUnion extends StObject
   object _InputTypesUnion {
     
-    @scala.inline
-    def AbortMultipartUploadInput(Bucket: String, Key: String, UploadId: String): typings.awsSdkClientS3Browser.typesAbortMultipartUploadInputMod.AbortMultipartUploadInput = {
+    inline def AbortMultipartUploadInput(Bucket: String, Key: String, UploadId: String): typings.awsSdkClientS3Browser.typesAbortMultipartUploadInputMod.AbortMultipartUploadInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesAbortMultipartUploadInputMod.AbortMultipartUploadInput]
     }
     
-    @scala.inline
-    def CompleteMultipartUploadInput(Bucket: String, Key: String, UploadId: String): typings.awsSdkClientS3Browser.typesCompleteMultipartUploadInputMod.CompleteMultipartUploadInput = {
+    inline def CompleteMultipartUploadInput(Bucket: String, Key: String, UploadId: String): typings.awsSdkClientS3Browser.typesCompleteMultipartUploadInputMod.CompleteMultipartUploadInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesCompleteMultipartUploadInputMod.CompleteMultipartUploadInput]
     }
     
-    @scala.inline
-    def CopyObjectInput(Bucket: String, CopySource: String, Key: String): typings.awsSdkClientS3Browser.typesCopyObjectInputMod.CopyObjectInput = {
+    inline def CopyObjectInput(Bucket: String, CopySource: String, Key: String): typings.awsSdkClientS3Browser.typesCopyObjectInputMod.CopyObjectInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CopySource = CopySource.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesCopyObjectInputMod.CopyObjectInput]
     }
     
-    @scala.inline
-    def CreateBucketInput(Bucket: String): typings.awsSdkClientS3Browser.typesCreateBucketInputMod.CreateBucketInput = {
+    inline def CreateBucketInput(Bucket: String): typings.awsSdkClientS3Browser.typesCreateBucketInputMod.CreateBucketInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesCreateBucketInputMod.CreateBucketInput]
     }
     
-    @scala.inline
-    def CreateMultipartUploadInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesCreateMultipartUploadInputMod.CreateMultipartUploadInput = {
+    inline def CreateMultipartUploadInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesCreateMultipartUploadInputMod.CreateMultipartUploadInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesCreateMultipartUploadInputMod.CreateMultipartUploadInput]
     }
     
-    @scala.inline
-    def DeleteBucketAnalyticsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesDeleteBucketAnalyticsConfigurationInputMod.DeleteBucketAnalyticsConfigurationInput = {
+    inline def DeleteBucketAnalyticsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesDeleteBucketAnalyticsConfigurationInputMod.DeleteBucketAnalyticsConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketAnalyticsConfigurationInputMod.DeleteBucketAnalyticsConfigurationInput]
     }
     
-    @scala.inline
-    def DeleteBucketCorsInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketCorsInputMod.DeleteBucketCorsInput = {
+    inline def DeleteBucketCorsInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketCorsInputMod.DeleteBucketCorsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketCorsInputMod.DeleteBucketCorsInput]
     }
     
-    @scala.inline
-    def DeleteBucketEncryptionInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketEncryptionInputMod.DeleteBucketEncryptionInput = {
+    inline def DeleteBucketEncryptionInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketEncryptionInputMod.DeleteBucketEncryptionInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketEncryptionInputMod.DeleteBucketEncryptionInput]
     }
     
-    @scala.inline
-    def DeleteBucketInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketInputMod.DeleteBucketInput = {
+    inline def DeleteBucketInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketInputMod.DeleteBucketInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketInputMod.DeleteBucketInput]
     }
     
-    @scala.inline
-    def DeleteBucketInventoryConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesDeleteBucketInventoryConfigurationInputMod.DeleteBucketInventoryConfigurationInput = {
+    inline def DeleteBucketInventoryConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesDeleteBucketInventoryConfigurationInputMod.DeleteBucketInventoryConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketInventoryConfigurationInputMod.DeleteBucketInventoryConfigurationInput]
     }
     
-    @scala.inline
-    def DeleteBucketLifecycleInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketLifecycleInputMod.DeleteBucketLifecycleInput = {
+    inline def DeleteBucketLifecycleInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketLifecycleInputMod.DeleteBucketLifecycleInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketLifecycleInputMod.DeleteBucketLifecycleInput]
     }
     
-    @scala.inline
-    def DeleteBucketMetricsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesDeleteBucketMetricsConfigurationInputMod.DeleteBucketMetricsConfigurationInput = {
+    inline def DeleteBucketMetricsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesDeleteBucketMetricsConfigurationInputMod.DeleteBucketMetricsConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketMetricsConfigurationInputMod.DeleteBucketMetricsConfigurationInput]
     }
     
-    @scala.inline
-    def DeleteBucketPolicyInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketPolicyInputMod.DeleteBucketPolicyInput = {
+    inline def DeleteBucketPolicyInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketPolicyInputMod.DeleteBucketPolicyInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketPolicyInputMod.DeleteBucketPolicyInput]
     }
     
-    @scala.inline
-    def DeleteBucketReplicationInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketReplicationInputMod.DeleteBucketReplicationInput = {
+    inline def DeleteBucketReplicationInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketReplicationInputMod.DeleteBucketReplicationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketReplicationInputMod.DeleteBucketReplicationInput]
     }
     
-    @scala.inline
-    def DeleteBucketTaggingInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketTaggingInputMod.DeleteBucketTaggingInput = {
+    inline def DeleteBucketTaggingInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketTaggingInputMod.DeleteBucketTaggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketTaggingInputMod.DeleteBucketTaggingInput]
     }
     
-    @scala.inline
-    def DeleteBucketWebsiteInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketWebsiteInputMod.DeleteBucketWebsiteInput = {
+    inline def DeleteBucketWebsiteInput(Bucket: String): typings.awsSdkClientS3Browser.typesDeleteBucketWebsiteInputMod.DeleteBucketWebsiteInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteBucketWebsiteInputMod.DeleteBucketWebsiteInput]
     }
     
-    @scala.inline
-    def DeleteObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesDeleteObjectInputMod.DeleteObjectInput = {
+    inline def DeleteObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesDeleteObjectInputMod.DeleteObjectInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteObjectInputMod.DeleteObjectInput]
     }
     
-    @scala.inline
-    def DeleteObjectTaggingInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesDeleteObjectTaggingInputMod.DeleteObjectTaggingInput = {
+    inline def DeleteObjectTaggingInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesDeleteObjectTaggingInputMod.DeleteObjectTaggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteObjectTaggingInputMod.DeleteObjectTaggingInput]
     }
     
-    @scala.inline
-    def DeleteObjectsInput(Bucket: String, Delete: Delete): typings.awsSdkClientS3Browser.typesDeleteObjectsInputMod.DeleteObjectsInput = {
+    inline def DeleteObjectsInput(Bucket: String, Delete: Delete): typings.awsSdkClientS3Browser.typesDeleteObjectsInputMod.DeleteObjectsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Delete = Delete.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesDeleteObjectsInputMod.DeleteObjectsInput]
     }
     
-    @scala.inline
-    def GetBucketAccelerateConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketAccelerateConfigurationInputMod.GetBucketAccelerateConfigurationInput = {
+    inline def GetBucketAccelerateConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketAccelerateConfigurationInputMod.GetBucketAccelerateConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketAccelerateConfigurationInputMod.GetBucketAccelerateConfigurationInput]
     }
     
-    @scala.inline
-    def GetBucketAclInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketAclInputMod.GetBucketAclInput = {
+    inline def GetBucketAclInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketAclInputMod.GetBucketAclInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketAclInputMod.GetBucketAclInput]
     }
     
-    @scala.inline
-    def GetBucketAnalyticsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesGetBucketAnalyticsConfigurationInputMod.GetBucketAnalyticsConfigurationInput = {
+    inline def GetBucketAnalyticsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesGetBucketAnalyticsConfigurationInputMod.GetBucketAnalyticsConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketAnalyticsConfigurationInputMod.GetBucketAnalyticsConfigurationInput]
     }
     
-    @scala.inline
-    def GetBucketCorsInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketCorsInputMod.GetBucketCorsInput = {
+    inline def GetBucketCorsInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketCorsInputMod.GetBucketCorsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketCorsInputMod.GetBucketCorsInput]
     }
     
-    @scala.inline
-    def GetBucketEncryptionInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketEncryptionInputMod.GetBucketEncryptionInput = {
+    inline def GetBucketEncryptionInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketEncryptionInputMod.GetBucketEncryptionInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketEncryptionInputMod.GetBucketEncryptionInput]
     }
     
-    @scala.inline
-    def GetBucketInventoryConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesGetBucketInventoryConfigurationInputMod.GetBucketInventoryConfigurationInput = {
+    inline def GetBucketInventoryConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesGetBucketInventoryConfigurationInputMod.GetBucketInventoryConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketInventoryConfigurationInputMod.GetBucketInventoryConfigurationInput]
     }
     
-    @scala.inline
-    def GetBucketLifecycleConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLifecycleConfigurationInputMod.GetBucketLifecycleConfigurationInput = {
+    inline def GetBucketLifecycleConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLifecycleConfigurationInputMod.GetBucketLifecycleConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketLifecycleConfigurationInputMod.GetBucketLifecycleConfigurationInput]
     }
     
-    @scala.inline
-    def GetBucketLifecycleInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLifecycleInputMod.GetBucketLifecycleInput = {
+    inline def GetBucketLifecycleInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLifecycleInputMod.GetBucketLifecycleInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketLifecycleInputMod.GetBucketLifecycleInput]
     }
     
-    @scala.inline
-    def GetBucketLocationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLocationInputMod.GetBucketLocationInput = {
+    inline def GetBucketLocationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLocationInputMod.GetBucketLocationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketLocationInputMod.GetBucketLocationInput]
     }
     
-    @scala.inline
-    def GetBucketLoggingInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLoggingInputMod.GetBucketLoggingInput = {
+    inline def GetBucketLoggingInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketLoggingInputMod.GetBucketLoggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketLoggingInputMod.GetBucketLoggingInput]
     }
     
-    @scala.inline
-    def GetBucketMetricsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesGetBucketMetricsConfigurationInputMod.GetBucketMetricsConfigurationInput = {
+    inline def GetBucketMetricsConfigurationInput(Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesGetBucketMetricsConfigurationInputMod.GetBucketMetricsConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketMetricsConfigurationInputMod.GetBucketMetricsConfigurationInput]
     }
     
-    @scala.inline
-    def GetBucketNotificationConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketNotificationConfigurationInputMod.GetBucketNotificationConfigurationInput = {
+    inline def GetBucketNotificationConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketNotificationConfigurationInputMod.GetBucketNotificationConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketNotificationConfigurationInputMod.GetBucketNotificationConfigurationInput]
     }
     
-    @scala.inline
-    def GetBucketNotificationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketNotificationInputMod.GetBucketNotificationInput = {
+    inline def GetBucketNotificationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketNotificationInputMod.GetBucketNotificationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketNotificationInputMod.GetBucketNotificationInput]
     }
     
-    @scala.inline
-    def GetBucketPolicyInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketPolicyInputMod.GetBucketPolicyInput = {
+    inline def GetBucketPolicyInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketPolicyInputMod.GetBucketPolicyInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketPolicyInputMod.GetBucketPolicyInput]
     }
     
-    @scala.inline
-    def GetBucketReplicationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketReplicationInputMod.GetBucketReplicationInput = {
+    inline def GetBucketReplicationInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketReplicationInputMod.GetBucketReplicationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketReplicationInputMod.GetBucketReplicationInput]
     }
     
-    @scala.inline
-    def GetBucketRequestPaymentInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketRequestPaymentInputMod.GetBucketRequestPaymentInput = {
+    inline def GetBucketRequestPaymentInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketRequestPaymentInputMod.GetBucketRequestPaymentInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketRequestPaymentInputMod.GetBucketRequestPaymentInput]
     }
     
-    @scala.inline
-    def GetBucketTaggingInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketTaggingInputMod.GetBucketTaggingInput = {
+    inline def GetBucketTaggingInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketTaggingInputMod.GetBucketTaggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketTaggingInputMod.GetBucketTaggingInput]
     }
     
-    @scala.inline
-    def GetBucketVersioningInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketVersioningInputMod.GetBucketVersioningInput = {
+    inline def GetBucketVersioningInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketVersioningInputMod.GetBucketVersioningInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketVersioningInputMod.GetBucketVersioningInput]
     }
     
-    @scala.inline
-    def GetBucketWebsiteInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketWebsiteInputMod.GetBucketWebsiteInput = {
+    inline def GetBucketWebsiteInput(Bucket: String): typings.awsSdkClientS3Browser.typesGetBucketWebsiteInputMod.GetBucketWebsiteInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetBucketWebsiteInputMod.GetBucketWebsiteInput]
     }
     
-    @scala.inline
-    def GetObjectAclInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectAclInputMod.GetObjectAclInput = {
+    inline def GetObjectAclInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectAclInputMod.GetObjectAclInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetObjectAclInputMod.GetObjectAclInput]
     }
     
-    @scala.inline
-    def GetObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectInputMod.GetObjectInput = {
+    inline def GetObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectInputMod.GetObjectInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetObjectInputMod.GetObjectInput]
     }
     
-    @scala.inline
-    def GetObjectTaggingInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectTaggingInputMod.GetObjectTaggingInput = {
+    inline def GetObjectTaggingInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectTaggingInputMod.GetObjectTaggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetObjectTaggingInputMod.GetObjectTaggingInput]
     }
     
-    @scala.inline
-    def GetObjectTorrentInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectTorrentInputMod.GetObjectTorrentInput = {
+    inline def GetObjectTorrentInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesGetObjectTorrentInputMod.GetObjectTorrentInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesGetObjectTorrentInputMod.GetObjectTorrentInput]
     }
     
-    @scala.inline
-    def HeadBucketInput(Bucket: String): typings.awsSdkClientS3Browser.typesHeadBucketInputMod.HeadBucketInput = {
+    inline def HeadBucketInput(Bucket: String): typings.awsSdkClientS3Browser.typesHeadBucketInputMod.HeadBucketInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesHeadBucketInputMod.HeadBucketInput]
     }
     
-    @scala.inline
-    def HeadObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesHeadObjectInputMod.HeadObjectInput = {
+    inline def HeadObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesHeadObjectInputMod.HeadObjectInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesHeadObjectInputMod.HeadObjectInput]
     }
     
-    @scala.inline
-    def ListBucketAnalyticsConfigurationsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListBucketAnalyticsConfigurationsInputMod.ListBucketAnalyticsConfigurationsInput = {
+    inline def ListBucketAnalyticsConfigurationsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListBucketAnalyticsConfigurationsInputMod.ListBucketAnalyticsConfigurationsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListBucketAnalyticsConfigurationsInputMod.ListBucketAnalyticsConfigurationsInput]
     }
     
-    @scala.inline
-    def ListBucketInventoryConfigurationsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListBucketInventoryConfigurationsInputMod.ListBucketInventoryConfigurationsInput = {
+    inline def ListBucketInventoryConfigurationsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListBucketInventoryConfigurationsInputMod.ListBucketInventoryConfigurationsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListBucketInventoryConfigurationsInputMod.ListBucketInventoryConfigurationsInput]
     }
     
-    @scala.inline
-    def ListBucketMetricsConfigurationsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListBucketMetricsConfigurationsInputMod.ListBucketMetricsConfigurationsInput = {
+    inline def ListBucketMetricsConfigurationsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListBucketMetricsConfigurationsInputMod.ListBucketMetricsConfigurationsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListBucketMetricsConfigurationsInputMod.ListBucketMetricsConfigurationsInput]
     }
     
-    @scala.inline
-    def ListBucketsInput(): typings.awsSdkClientS3Browser.typesListBucketsInputMod.ListBucketsInput = {
+    inline def ListBucketsInput(): typings.awsSdkClientS3Browser.typesListBucketsInputMod.ListBucketsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListBucketsInputMod.ListBucketsInput]
     }
     
-    @scala.inline
-    def ListMultipartUploadsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListMultipartUploadsInputMod.ListMultipartUploadsInput = {
+    inline def ListMultipartUploadsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListMultipartUploadsInputMod.ListMultipartUploadsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListMultipartUploadsInputMod.ListMultipartUploadsInput]
     }
     
-    @scala.inline
-    def ListObjectVersionsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListObjectVersionsInputMod.ListObjectVersionsInput = {
+    inline def ListObjectVersionsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListObjectVersionsInputMod.ListObjectVersionsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListObjectVersionsInputMod.ListObjectVersionsInput]
     }
     
-    @scala.inline
-    def ListObjectsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListObjectsInputMod.ListObjectsInput = {
+    inline def ListObjectsInput(Bucket: String): typings.awsSdkClientS3Browser.typesListObjectsInputMod.ListObjectsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListObjectsInputMod.ListObjectsInput]
     }
     
-    @scala.inline
-    def ListObjectsV2Input(Bucket: String): typings.awsSdkClientS3Browser.typesListObjectsV2InputMod.ListObjectsV2Input = {
+    inline def ListObjectsV2Input(Bucket: String): typings.awsSdkClientS3Browser.typesListObjectsV2InputMod.ListObjectsV2Input = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListObjectsV2InputMod.ListObjectsV2Input]
     }
     
-    @scala.inline
-    def ListPartsInput(Bucket: String, Key: String, UploadId: String): typings.awsSdkClientS3Browser.typesListPartsInputMod.ListPartsInput = {
+    inline def ListPartsInput(Bucket: String, Key: String, UploadId: String): typings.awsSdkClientS3Browser.typesListPartsInputMod.ListPartsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesListPartsInputMod.ListPartsInput]
     }
     
-    @scala.inline
-    def PutBucketAccelerateConfigurationInput(AccelerateConfiguration: AccelerateConfiguration, Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketAccelerateConfigurationInputMod.PutBucketAccelerateConfigurationInput = {
+    inline def PutBucketAccelerateConfigurationInput(AccelerateConfiguration: AccelerateConfiguration, Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketAccelerateConfigurationInputMod.PutBucketAccelerateConfigurationInput = {
       val __obj = js.Dynamic.literal(AccelerateConfiguration = AccelerateConfiguration.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketAccelerateConfigurationInputMod.PutBucketAccelerateConfigurationInput]
     }
     
-    @scala.inline
-    def PutBucketAclInput(Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketAclInputMod.PutBucketAclInput = {
+    inline def PutBucketAclInput(Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketAclInputMod.PutBucketAclInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketAclInputMod.PutBucketAclInput]
     }
     
-    @scala.inline
-    def PutBucketAnalyticsConfigurationInput(AnalyticsConfiguration: AnalyticsConfiguration, Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesPutBucketAnalyticsConfigurationInputMod.PutBucketAnalyticsConfigurationInput = {
+    inline def PutBucketAnalyticsConfigurationInput(AnalyticsConfiguration: AnalyticsConfiguration, Bucket: String, Id: String): typings.awsSdkClientS3Browser.typesPutBucketAnalyticsConfigurationInputMod.PutBucketAnalyticsConfigurationInput = {
       val __obj = js.Dynamic.literal(AnalyticsConfiguration = AnalyticsConfiguration.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketAnalyticsConfigurationInputMod.PutBucketAnalyticsConfigurationInput]
     }
     
-    @scala.inline
-    def PutBucketCorsInput(Bucket: String, CORSConfiguration: CORSConfiguration): typings.awsSdkClientS3Browser.typesPutBucketCorsInputMod.PutBucketCorsInput = {
+    inline def PutBucketCorsInput(Bucket: String, CORSConfiguration: CORSConfiguration): typings.awsSdkClientS3Browser.typesPutBucketCorsInputMod.PutBucketCorsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CORSConfiguration = CORSConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketCorsInputMod.PutBucketCorsInput]
     }
     
-    @scala.inline
-    def PutBucketEncryptionInput(Bucket: String, ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration): typings.awsSdkClientS3Browser.typesPutBucketEncryptionInputMod.PutBucketEncryptionInput = {
+    inline def PutBucketEncryptionInput(Bucket: String, ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration): typings.awsSdkClientS3Browser.typesPutBucketEncryptionInputMod.PutBucketEncryptionInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ServerSideEncryptionConfiguration = ServerSideEncryptionConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketEncryptionInputMod.PutBucketEncryptionInput]
     }
     
-    @scala.inline
-    def PutBucketInventoryConfigurationInput(Bucket: String, Id: String, InventoryConfiguration: InventoryConfiguration): typings.awsSdkClientS3Browser.typesPutBucketInventoryConfigurationInputMod.PutBucketInventoryConfigurationInput = {
+    inline def PutBucketInventoryConfigurationInput(Bucket: String, Id: String, InventoryConfiguration: InventoryConfiguration): typings.awsSdkClientS3Browser.typesPutBucketInventoryConfigurationInputMod.PutBucketInventoryConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InventoryConfiguration = InventoryConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketInventoryConfigurationInputMod.PutBucketInventoryConfigurationInput]
     }
     
-    @scala.inline
-    def PutBucketLifecycleConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketLifecycleConfigurationInputMod.PutBucketLifecycleConfigurationInput = {
+    inline def PutBucketLifecycleConfigurationInput(Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketLifecycleConfigurationInputMod.PutBucketLifecycleConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketLifecycleConfigurationInputMod.PutBucketLifecycleConfigurationInput]
     }
     
-    @scala.inline
-    def PutBucketLifecycleInput(Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketLifecycleInputMod.PutBucketLifecycleInput = {
+    inline def PutBucketLifecycleInput(Bucket: String): typings.awsSdkClientS3Browser.typesPutBucketLifecycleInputMod.PutBucketLifecycleInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketLifecycleInputMod.PutBucketLifecycleInput]
     }
     
-    @scala.inline
-    def PutBucketLoggingInput(Bucket: String, BucketLoggingStatus: BucketLoggingStatus): typings.awsSdkClientS3Browser.typesPutBucketLoggingInputMod.PutBucketLoggingInput = {
+    inline def PutBucketLoggingInput(Bucket: String, BucketLoggingStatus: BucketLoggingStatus): typings.awsSdkClientS3Browser.typesPutBucketLoggingInputMod.PutBucketLoggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], BucketLoggingStatus = BucketLoggingStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketLoggingInputMod.PutBucketLoggingInput]
     }
     
-    @scala.inline
-    def PutBucketMetricsConfigurationInput(Bucket: String, Id: String, MetricsConfiguration: MetricsConfiguration): typings.awsSdkClientS3Browser.typesPutBucketMetricsConfigurationInputMod.PutBucketMetricsConfigurationInput = {
+    inline def PutBucketMetricsConfigurationInput(Bucket: String, Id: String, MetricsConfiguration: MetricsConfiguration): typings.awsSdkClientS3Browser.typesPutBucketMetricsConfigurationInputMod.PutBucketMetricsConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], MetricsConfiguration = MetricsConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketMetricsConfigurationInputMod.PutBucketMetricsConfigurationInput]
     }
     
-    @scala.inline
-    def PutBucketNotificationConfigurationInput(Bucket: String, NotificationConfiguration: NotificationConfiguration): typings.awsSdkClientS3Browser.typesPutBucketNotificationConfigurationInputMod.PutBucketNotificationConfigurationInput = {
+    inline def PutBucketNotificationConfigurationInput(Bucket: String, NotificationConfiguration: NotificationConfiguration): typings.awsSdkClientS3Browser.typesPutBucketNotificationConfigurationInputMod.PutBucketNotificationConfigurationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], NotificationConfiguration = NotificationConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketNotificationConfigurationInputMod.PutBucketNotificationConfigurationInput]
     }
     
-    @scala.inline
-    def PutBucketNotificationInput(Bucket: String, NotificationConfiguration: NotificationConfigurationDeprecated): typings.awsSdkClientS3Browser.typesPutBucketNotificationInputMod.PutBucketNotificationInput = {
+    inline def PutBucketNotificationInput(Bucket: String, NotificationConfiguration: NotificationConfigurationDeprecated): typings.awsSdkClientS3Browser.typesPutBucketNotificationInputMod.PutBucketNotificationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], NotificationConfiguration = NotificationConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketNotificationInputMod.PutBucketNotificationInput]
     }
     
-    @scala.inline
-    def PutBucketPolicyInput(Bucket: String, Policy: String): typings.awsSdkClientS3Browser.typesPutBucketPolicyInputMod.PutBucketPolicyInput = {
+    inline def PutBucketPolicyInput(Bucket: String, Policy: String): typings.awsSdkClientS3Browser.typesPutBucketPolicyInputMod.PutBucketPolicyInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketPolicyInputMod.PutBucketPolicyInput]
     }
     
-    @scala.inline
-    def PutBucketReplicationInput(Bucket: String, ReplicationConfiguration: ReplicationConfiguration): typings.awsSdkClientS3Browser.typesPutBucketReplicationInputMod.PutBucketReplicationInput = {
+    inline def PutBucketReplicationInput(Bucket: String, ReplicationConfiguration: ReplicationConfiguration): typings.awsSdkClientS3Browser.typesPutBucketReplicationInputMod.PutBucketReplicationInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ReplicationConfiguration = ReplicationConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketReplicationInputMod.PutBucketReplicationInput]
     }
     
-    @scala.inline
-    def PutBucketRequestPaymentInput(Bucket: String, RequestPaymentConfiguration: RequestPaymentConfiguration): typings.awsSdkClientS3Browser.typesPutBucketRequestPaymentInputMod.PutBucketRequestPaymentInput = {
+    inline def PutBucketRequestPaymentInput(Bucket: String, RequestPaymentConfiguration: RequestPaymentConfiguration): typings.awsSdkClientS3Browser.typesPutBucketRequestPaymentInputMod.PutBucketRequestPaymentInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], RequestPaymentConfiguration = RequestPaymentConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketRequestPaymentInputMod.PutBucketRequestPaymentInput]
     }
     
-    @scala.inline
-    def PutBucketTaggingInput(Bucket: String, Tagging: Tagging): typings.awsSdkClientS3Browser.typesPutBucketTaggingInputMod.PutBucketTaggingInput = {
+    inline def PutBucketTaggingInput(Bucket: String, Tagging: Tagging): typings.awsSdkClientS3Browser.typesPutBucketTaggingInputMod.PutBucketTaggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Tagging = Tagging.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketTaggingInputMod.PutBucketTaggingInput]
     }
     
-    @scala.inline
-    def PutBucketVersioningInput(Bucket: String, VersioningConfiguration: VersioningConfiguration): typings.awsSdkClientS3Browser.typesPutBucketVersioningInputMod.PutBucketVersioningInput = {
+    inline def PutBucketVersioningInput(Bucket: String, VersioningConfiguration: VersioningConfiguration): typings.awsSdkClientS3Browser.typesPutBucketVersioningInputMod.PutBucketVersioningInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], VersioningConfiguration = VersioningConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketVersioningInputMod.PutBucketVersioningInput]
     }
     
-    @scala.inline
-    def PutBucketWebsiteInput(Bucket: String, WebsiteConfiguration: WebsiteConfiguration): typings.awsSdkClientS3Browser.typesPutBucketWebsiteInputMod.PutBucketWebsiteInput = {
+    inline def PutBucketWebsiteInput(Bucket: String, WebsiteConfiguration: WebsiteConfiguration): typings.awsSdkClientS3Browser.typesPutBucketWebsiteInputMod.PutBucketWebsiteInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], WebsiteConfiguration = WebsiteConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutBucketWebsiteInputMod.PutBucketWebsiteInput]
     }
     
-    @scala.inline
-    def PutObjectAclInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesPutObjectAclInputMod.PutObjectAclInput = {
+    inline def PutObjectAclInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesPutObjectAclInputMod.PutObjectAclInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutObjectAclInputMod.PutObjectAclInput]
     }
     
-    @scala.inline
-    def PutObjectTaggingInput(Bucket: String, Key: String, Tagging: Tagging): typings.awsSdkClientS3Browser.typesPutObjectTaggingInputMod.PutObjectTaggingInput = {
+    inline def PutObjectTaggingInput(Bucket: String, Key: String, Tagging: Tagging): typings.awsSdkClientS3Browser.typesPutObjectTaggingInputMod.PutObjectTaggingInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], Tagging = Tagging.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesPutObjectTaggingInputMod.PutObjectTaggingInput]
     }
     
-    @scala.inline
-    def RestoreObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesRestoreObjectInputMod.RestoreObjectInput = {
+    inline def RestoreObjectInput(Bucket: String, Key: String): typings.awsSdkClientS3Browser.typesRestoreObjectInputMod.RestoreObjectInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesRestoreObjectInputMod.RestoreObjectInput]
     }
     
-    @scala.inline
-    def SelectObjectContentInput(
+    inline def SelectObjectContentInput(
       Bucket: String,
       Expression: String,
       ExpressionType: SQL | String,
@@ -569,8 +494,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesSelectObjectContentInputMod.SelectObjectContentInput]
     }
     
-    @scala.inline
-    def UploadPartCopyInput(Bucket: String, CopySource: String, Key: String, PartNumber: Double, UploadId: String): typings.awsSdkClientS3Browser.typesUploadPartCopyInputMod.UploadPartCopyInput = {
+    inline def UploadPartCopyInput(Bucket: String, CopySource: String, Key: String, PartNumber: Double, UploadId: String): typings.awsSdkClientS3Browser.typesUploadPartCopyInputMod.UploadPartCopyInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CopySource = CopySource.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], PartNumber = PartNumber.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientS3Browser.typesUploadPartCopyInputMod.UploadPartCopyInput]
     }

@@ -44,14 +44,11 @@ object rbtreeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def double_rotate(root: js.Any, dir: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("double_rotate")(root.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def double_rotate(root: js.Any, dir: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("double_rotate")(root.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def is_red(node: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("is_red")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def is_red(node: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("is_red")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def single_rotate(root: js.Any, dir: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("single_rotate")(root.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def single_rotate(root: js.Any, dir: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("single_rotate")(root.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("webcola/dist/src/rbtree", "TreeBase")

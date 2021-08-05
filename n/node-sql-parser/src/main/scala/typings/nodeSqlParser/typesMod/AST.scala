@@ -18,44 +18,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AST extends StObject
 object AST {
   
-  @scala.inline
-  def Alter(expr: js.Any, table: From): typings.nodeSqlParser.typesMod.Alter = {
+  inline def Alter(expr: js.Any, table: From): typings.nodeSqlParser.typesMod.Alter = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("alter")
     __obj.asInstanceOf[typings.nodeSqlParser.typesMod.Alter]
   }
   
-  @scala.inline
-  def Delete(from: js.Array[From | Dual], table: js.Any, where: js.Any): typings.nodeSqlParser.typesMod.Delete = {
+  inline def Delete(from: js.Array[From | Dual], table: js.Any, where: js.Any): typings.nodeSqlParser.typesMod.Delete = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[typings.nodeSqlParser.typesMod.Delete]
   }
   
-  @scala.inline
-  def InsertReplace(table: js.Any, `type`: replace | insert, values: js.Array[InsertReplaceValue]): typings.nodeSqlParser.typesMod.InsertReplace = {
+  inline def InsertReplace(table: js.Any, `type`: replace | insert, values: js.Array[InsertReplaceValue]): typings.nodeSqlParser.typesMod.InsertReplace = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], columns = null, db = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.nodeSqlParser.typesMod.InsertReplace]
   }
   
-  @scala.inline
-  def Select(columns: (js.Array[js.Any | Column]) | Asterisk, where: js.Any): typings.nodeSqlParser.typesMod.Select = {
+  inline def Select(columns: (js.Array[js.Any | Column]) | Asterisk, where: js.Any): typings.nodeSqlParser.typesMod.Select = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any], distinct = null, from = null, groupby = null, having = null, limit = null, options = null, orderby = null)
     __obj.updateDynamic("type")("select")
     __obj.updateDynamic("with")(null)
     __obj.asInstanceOf[typings.nodeSqlParser.typesMod.Select]
   }
   
-  @scala.inline
-  def Update(set: js.Array[SetList], where: js.Any): typings.nodeSqlParser.typesMod.Update = {
+  inline def Update(set: js.Array[SetList], where: js.Any): typings.nodeSqlParser.typesMod.Update = {
     val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any], db = null, table = null)
     __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[typings.nodeSqlParser.typesMod.Update]
   }
   
-  @scala.inline
-  def Use(db: String): typings.nodeSqlParser.typesMod.Use = {
+  inline def Use(db: String): typings.nodeSqlParser.typesMod.Use = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("use")
     __obj.asInstanceOf[typings.nodeSqlParser.typesMod.Use]

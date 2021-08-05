@@ -212,119 +212,82 @@ trait PoolAttributes extends StObject {
 }
 object PoolAttributes {
   
-  @scala.inline
-  def apply(): PoolAttributes = {
+  inline def apply(): PoolAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolAttributes]
   }
   
-  @scala.inline
-  implicit class PoolAttributesMutableBuilder[Self <: PoolAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: PoolAttributes](x: Self) {
     
-    @scala.inline
-    def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
+    inline def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectStringUndefined: Self = StObject.set(x, "connectString", js.undefined)
+    inline def setConnectStringUndefined: Self = StObject.set(x, "connectString", js.undefined)
     
-    @scala.inline
-    def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
+    inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
+    inline def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
     
-    @scala.inline
-    def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
+    inline def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
+    inline def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
     
-    @scala.inline
-    def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setExternalAuth(value: Boolean): Self = StObject.set(x, "externalAuth", value.asInstanceOf[js.Any])
+    inline def setExternalAuth(value: Boolean): Self = StObject.set(x, "externalAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalAuthUndefined: Self = StObject.set(x, "externalAuth", js.undefined)
+    inline def setExternalAuthUndefined: Self = StObject.set(x, "externalAuth", js.undefined)
     
-    @scala.inline
-    def setHomogeneous(value: Boolean): Self = StObject.set(x, "homogeneous", value.asInstanceOf[js.Any])
+    inline def setHomogeneous(value: Boolean): Self = StObject.set(x, "homogeneous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomogeneousUndefined: Self = StObject.set(x, "homogeneous", js.undefined)
+    inline def setHomogeneousUndefined: Self = StObject.set(x, "homogeneous", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPoolAlias(value: String): Self = StObject.set(x, "poolAlias", value.asInstanceOf[js.Any])
+    inline def setPoolAlias(value: String): Self = StObject.set(x, "poolAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolAliasUndefined: Self = StObject.set(x, "poolAlias", js.undefined)
+    inline def setPoolAliasUndefined: Self = StObject.set(x, "poolAlias", js.undefined)
     
-    @scala.inline
-    def setPoolIncrement(value: Double): Self = StObject.set(x, "poolIncrement", value.asInstanceOf[js.Any])
+    inline def setPoolIncrement(value: Double): Self = StObject.set(x, "poolIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIncrementUndefined: Self = StObject.set(x, "poolIncrement", js.undefined)
+    inline def setPoolIncrementUndefined: Self = StObject.set(x, "poolIncrement", js.undefined)
     
-    @scala.inline
-    def setPoolMax(value: Double): Self = StObject.set(x, "poolMax", value.asInstanceOf[js.Any])
+    inline def setPoolMax(value: Double): Self = StObject.set(x, "poolMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolMaxPerShard(value: Double): Self = StObject.set(x, "poolMaxPerShard", value.asInstanceOf[js.Any])
+    inline def setPoolMaxPerShard(value: Double): Self = StObject.set(x, "poolMaxPerShard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolMaxPerShardUndefined: Self = StObject.set(x, "poolMaxPerShard", js.undefined)
+    inline def setPoolMaxPerShardUndefined: Self = StObject.set(x, "poolMaxPerShard", js.undefined)
     
-    @scala.inline
-    def setPoolMaxUndefined: Self = StObject.set(x, "poolMax", js.undefined)
+    inline def setPoolMaxUndefined: Self = StObject.set(x, "poolMax", js.undefined)
     
-    @scala.inline
-    def setPoolMin(value: Double): Self = StObject.set(x, "poolMin", value.asInstanceOf[js.Any])
+    inline def setPoolMin(value: Double): Self = StObject.set(x, "poolMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolMinUndefined: Self = StObject.set(x, "poolMin", js.undefined)
+    inline def setPoolMinUndefined: Self = StObject.set(x, "poolMin", js.undefined)
     
-    @scala.inline
-    def setPoolPingInterval(value: Double): Self = StObject.set(x, "poolPingInterval", value.asInstanceOf[js.Any])
+    inline def setPoolPingInterval(value: Double): Self = StObject.set(x, "poolPingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolPingIntervalUndefined: Self = StObject.set(x, "poolPingInterval", js.undefined)
+    inline def setPoolPingIntervalUndefined: Self = StObject.set(x, "poolPingInterval", js.undefined)
     
-    @scala.inline
-    def setPoolTimeout(value: Double): Self = StObject.set(x, "poolTimeout", value.asInstanceOf[js.Any])
+    inline def setPoolTimeout(value: Double): Self = StObject.set(x, "poolTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolTimeoutUndefined: Self = StObject.set(x, "poolTimeout", js.undefined)
+    inline def setPoolTimeoutUndefined: Self = StObject.set(x, "poolTimeout", js.undefined)
     
-    @scala.inline
-    def setQueueMax(value: Double): Self = StObject.set(x, "queueMax", value.asInstanceOf[js.Any])
+    inline def setQueueMax(value: Double): Self = StObject.set(x, "queueMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueMaxUndefined: Self = StObject.set(x, "queueMax", js.undefined)
+    inline def setQueueMaxUndefined: Self = StObject.set(x, "queueMax", js.undefined)
     
-    @scala.inline
-    def setQueueRequests(value: Double): Self = StObject.set(x, "queueRequests", value.asInstanceOf[js.Any])
+    inline def setQueueRequests(value: Double): Self = StObject.set(x, "queueRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueRequestsUndefined: Self = StObject.set(x, "queueRequests", js.undefined)
+    inline def setQueueRequestsUndefined: Self = StObject.set(x, "queueRequests", js.undefined)
     
-    @scala.inline
-    def setQueueTimeout(value: Double): Self = StObject.set(x, "queueTimeout", value.asInstanceOf[js.Any])
+    inline def setQueueTimeout(value: Double): Self = StObject.set(x, "queueTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueTimeoutUndefined: Self = StObject.set(x, "queueTimeout", js.undefined)
+    inline def setQueueTimeoutUndefined: Self = StObject.set(x, "queueTimeout", js.undefined)
     
-    @scala.inline
-    def setSessionCallback(
+    inline def setSessionCallback(
       value: String | (js.Function3[
           /* connection */ Connection, 
           /* requestedTag */ String, 
@@ -333,30 +296,22 @@ object PoolAttributes {
         ])
     ): Self = StObject.set(x, "sessionCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionCallbackFunction3(
+    inline def setSessionCallbackFunction3(
       value: (/* connection */ Connection, /* requestedTag */ String, /* callback */ js.Function1[/* error */ js.UndefOr[DBError], Unit]) => Unit
     ): Self = StObject.set(x, "sessionCallback", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSessionCallbackUndefined: Self = StObject.set(x, "sessionCallback", js.undefined)
+    inline def setSessionCallbackUndefined: Self = StObject.set(x, "sessionCallback", js.undefined)
     
-    @scala.inline
-    def setStmtCacheSize(value: Double): Self = StObject.set(x, "stmtCacheSize", value.asInstanceOf[js.Any])
+    inline def setStmtCacheSize(value: Double): Self = StObject.set(x, "stmtCacheSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStmtCacheSizeUndefined: Self = StObject.set(x, "stmtCacheSize", js.undefined)
+    inline def setStmtCacheSizeUndefined: Self = StObject.set(x, "stmtCacheSize", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def set_enableStats(value: Boolean): Self = StObject.set(x, "_enableStats", value.asInstanceOf[js.Any])
+    inline def set_enableStats(value: Boolean): Self = StObject.set(x, "_enableStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_enableStatsUndefined: Self = StObject.set(x, "_enableStats", js.undefined)
+    inline def set_enableStatsUndefined: Self = StObject.set(x, "_enableStats", js.undefined)
   }
 }

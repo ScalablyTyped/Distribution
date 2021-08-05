@@ -26,7 +26,7 @@ object eventGeneratorMod {
       * @return {number}
       * @private
       */
-    var compareChanges_ : js.Any = js.native
+    /* private */ var compareChanges_ : js.Any = js.native
     
     /**
       * Given a set of raw changes (no moved events and prevName not specified yet), and a set of
@@ -54,9 +54,9 @@ object eventGeneratorMod {
       * @param {!Node} eventCache
       * @private
       */
-    var generateEventsForType_ : js.Any = js.native
+    /* private */ var generateEventsForType_ : js.Any = js.native
     
-    var index_ : js.Any = js.native
+    /* private */ var index_ : js.Any = js.native
     
     /**
       * @param {!Change} change
@@ -64,8 +64,8 @@ object eventGeneratorMod {
       * @return {!Change}
       * @private
       */
-    var materializeSingleChange_ : js.Any = js.native
+    /* private */ var materializeSingleChange_ : js.Any = js.native
     
-    var query_ : js.Any = js.native
+    /* private */ var query_ : js.Any = js.native
   }
 }

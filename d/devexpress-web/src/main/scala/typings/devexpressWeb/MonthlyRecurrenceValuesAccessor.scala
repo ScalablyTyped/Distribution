@@ -12,8 +12,7 @@ trait MonthlyRecurrenceValuesAccessor
      with DefaultRecurrenceRuleValuesAccessor
 object MonthlyRecurrenceValuesAccessor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetDayNumber: () => Double,
     GetMonth: () => Double,
     GetPeriodicity: () => Double,

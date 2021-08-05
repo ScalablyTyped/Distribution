@@ -48,8 +48,7 @@ object anon {
   }
   object Android {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       android: Boolean,
       bb10: Boolean,
       blackberry: Boolean,
@@ -68,47 +67,33 @@ object anon {
       __obj.asInstanceOf[Android]
     }
     
-    @scala.inline
-    implicit class AndroidMutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
+    extension [Self <: Android](x: Self) {
       
-      @scala.inline
-      def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBb10(value: Boolean): Self = StObject.set(x, "bb10", value.asInstanceOf[js.Any])
+      inline def setBb10(value: Boolean): Self = StObject.set(x, "bb10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackberry(value: Boolean): Self = StObject.set(x, "blackberry", value.asInstanceOf[js.Any])
+      inline def setBlackberry(value: Boolean): Self = StObject.set(x, "blackberry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+      inline def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpad(value: Boolean): Self = StObject.set(x, "ipad", value.asInstanceOf[js.Any])
+      inline def setIpad(value: Boolean): Self = StObject.set(x, "ipad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIphone(value: Boolean): Self = StObject.set(x, "iphone", value.asInstanceOf[js.Any])
+      inline def setIphone(value: Boolean): Self = StObject.set(x, "iphone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindle(value: Boolean): Self = StObject.set(x, "kindle", value.asInstanceOf[js.Any])
+      inline def setKindle(value: Boolean): Self = StObject.set(x, "kindle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRimtabletos(value: Boolean): Self = StObject.set(x, "rimtabletos", value.asInstanceOf[js.Any])
+      inline def setRimtabletos(value: Boolean): Self = StObject.set(x, "rimtabletos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+      inline def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchpad(value: Boolean): Self = StObject.set(x, "touchpad", value.asInstanceOf[js.Any])
+      inline def setTouchpad(value: Boolean): Self = StObject.set(x, "touchpad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebos(value: Boolean): Self = StObject.set(x, "webos", value.asInstanceOf[js.Any])
+      inline def setWebos(value: Boolean): Self = StObject.set(x, "webos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,29 +117,22 @@ object anon {
   }
   object Chrome {
     
-    @scala.inline
-    def apply(chrome: Boolean, firefox: Boolean, playbook: Boolean, silk: Boolean, version: String): Chrome = {
+    inline def apply(chrome: Boolean, firefox: Boolean, playbook: Boolean, silk: Boolean, version: String): Chrome = {
       val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any], playbook = playbook.asInstanceOf[js.Any], silk = silk.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chrome]
     }
     
-    @scala.inline
-    implicit class ChromeMutableBuilder[Self <: Chrome] (val x: Self) extends AnyVal {
+    extension [Self <: Chrome](x: Self) {
       
-      @scala.inline
-      def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+      inline def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaybook(value: Boolean): Self = StObject.set(x, "playbook", value.asInstanceOf[js.Any])
+      inline def setPlaybook(value: Boolean): Self = StObject.set(x, "playbook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilk(value: Boolean): Self = StObject.set(x, "silk", value.asInstanceOf[js.Any])
+      inline def setSilk(value: Boolean): Self = StObject.set(x, "silk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,8 +13,8 @@ object contextualMenuButtonMod {
   class ContextualMenuButton protected () extends ContextualMenuItemWrapper {
     def this(props: IContextualMenuItemWrapperProps) = this()
     
-    var _btn: js.Any = js.native
+    /* private */ var _btn: js.Any = js.native
     
-    var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
+    /* private */ var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
   }
 }

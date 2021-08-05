@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2ListSessionEntityTypesResponse extends StObject {
 }
 object GoogleCloudDialogflowV2ListSessionEntityTypesResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2ListSessionEntityTypesResponse = {
+  inline def apply(): GoogleCloudDialogflowV2ListSessionEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2ListSessionEntityTypesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2ListSessionEntityTypesResponseMutableBuilder[Self <: GoogleCloudDialogflowV2ListSessionEntityTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2ListSessionEntityTypesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypes(value: js.Array[GoogleCloudDialogflowV2SessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
+    inline def setSessionEntityTypes(value: js.Array[GoogleCloudDialogflowV2SessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
+    inline def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypesVarargs(value: GoogleCloudDialogflowV2SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
+    inline def setSessionEntityTypesVarargs(value: GoogleCloudDialogflowV2SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
   }
 }

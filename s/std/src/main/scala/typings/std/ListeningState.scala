@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListeningState extends StObject
 object ListeningState {
   
-  @scala.inline
-  def active: typings.std.stdStrings.active = "active".asInstanceOf[typings.std.stdStrings.active]
+  inline def active: typings.std.stdStrings.active = "active".asInstanceOf[typings.std.stdStrings.active]
   
-  @scala.inline
-  def disambiguation: typings.std.stdStrings.disambiguation = "disambiguation".asInstanceOf[typings.std.stdStrings.disambiguation]
+  inline def disambiguation: typings.std.stdStrings.disambiguation = "disambiguation".asInstanceOf[typings.std.stdStrings.disambiguation]
   
-  @scala.inline
-  def inactive: typings.std.stdStrings.inactive = "inactive".asInstanceOf[typings.std.stdStrings.inactive]
+  inline def inactive: typings.std.stdStrings.inactive = "inactive".asInstanceOf[typings.std.stdStrings.inactive]
 }

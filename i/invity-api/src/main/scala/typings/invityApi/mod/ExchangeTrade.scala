@@ -82,163 +82,111 @@ trait ExchangeTrade extends StObject {
 }
 object ExchangeTrade {
   
-  @scala.inline
-  def apply(): ExchangeTrade = {
+  inline def apply(): ExchangeTrade = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExchangeTrade]
   }
   
-  @scala.inline
-  implicit class ExchangeTradeMutableBuilder[Self <: ExchangeTrade] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeTrade](x: Self) {
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+    inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+    inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
+    inline def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
-    @scala.inline
-    def setExtraField(value: String): Self = StObject.set(x, "extraField", value.asInstanceOf[js.Any])
+    inline def setExtraField(value: String): Self = StObject.set(x, "extraField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraFieldDescription(value: CoinExtraField): Self = StObject.set(x, "extraFieldDescription", value.asInstanceOf[js.Any])
+    inline def setExtraFieldDescription(value: CoinExtraField): Self = StObject.set(x, "extraFieldDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraFieldDescriptionUndefined: Self = StObject.set(x, "extraFieldDescription", js.undefined)
+    inline def setExtraFieldDescriptionUndefined: Self = StObject.set(x, "extraFieldDescription", js.undefined)
     
-    @scala.inline
-    def setExtraFieldUndefined: Self = StObject.set(x, "extraField", js.undefined)
+    inline def setExtraFieldUndefined: Self = StObject.set(x, "extraField", js.undefined)
     
-    @scala.inline
-    def setFee(value: ExchangeFee): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
+    inline def setFee(value: ExchangeFee): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
+    inline def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
     
-    @scala.inline
-    def setMax(value: ExchangeMaximum): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: ExchangeMaximum): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setOfferReferenceId(value: String): Self = StObject.set(x, "offerReferenceId", value.asInstanceOf[js.Any])
+    inline def setOfferReferenceId(value: String): Self = StObject.set(x, "offerReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferReferenceIdUndefined: Self = StObject.set(x, "offerReferenceId", js.undefined)
+    inline def setOfferReferenceIdUndefined: Self = StObject.set(x, "offerReferenceId", js.undefined)
     
-    @scala.inline
-    def setOfferType(value: bestRate | favorite): Self = StObject.set(x, "offerType", value.asInstanceOf[js.Any])
+    inline def setOfferType(value: bestRate | favorite): Self = StObject.set(x, "offerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferTypeUndefined: Self = StObject.set(x, "offerType", js.undefined)
+    inline def setOfferTypeUndefined: Self = StObject.set(x, "offerType", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setPartnerPaymentExtraId(value: String): Self = StObject.set(x, "partnerPaymentExtraId", value.asInstanceOf[js.Any])
+    inline def setPartnerPaymentExtraId(value: String): Self = StObject.set(x, "partnerPaymentExtraId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerPaymentExtraIdUndefined: Self = StObject.set(x, "partnerPaymentExtraId", js.undefined)
+    inline def setPartnerPaymentExtraIdUndefined: Self = StObject.set(x, "partnerPaymentExtraId", js.undefined)
     
-    @scala.inline
-    def setQuoteToken(value: String): Self = StObject.set(x, "quoteToken", value.asInstanceOf[js.Any])
+    inline def setQuoteToken(value: String): Self = StObject.set(x, "quoteToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteTokenUndefined: Self = StObject.set(x, "quoteToken", js.undefined)
+    inline def setQuoteTokenUndefined: Self = StObject.set(x, "quoteToken", js.undefined)
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateIdentificator(value: String): Self = StObject.set(x, "rateIdentificator", value.asInstanceOf[js.Any])
+    inline def setRateIdentificator(value: String): Self = StObject.set(x, "rateIdentificator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateIdentificatorUndefined: Self = StObject.set(x, "rateIdentificator", js.undefined)
+    inline def setRateIdentificatorUndefined: Self = StObject.set(x, "rateIdentificator", js.undefined)
     
-    @scala.inline
-    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+    inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
-    @scala.inline
-    def setReceive(value: String): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
+    inline def setReceive(value: String): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveAddress(value: String): Self = StObject.set(x, "receiveAddress", value.asInstanceOf[js.Any])
+    inline def setReceiveAddress(value: String): Self = StObject.set(x, "receiveAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveAddressUndefined: Self = StObject.set(x, "receiveAddress", js.undefined)
+    inline def setReceiveAddressUndefined: Self = StObject.set(x, "receiveAddress", js.undefined)
     
-    @scala.inline
-    def setReceiveStringAmount(value: String): Self = StObject.set(x, "receiveStringAmount", value.asInstanceOf[js.Any])
+    inline def setReceiveStringAmount(value: String): Self = StObject.set(x, "receiveStringAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveStringAmountUndefined: Self = StObject.set(x, "receiveStringAmount", js.undefined)
+    inline def setReceiveStringAmountUndefined: Self = StObject.set(x, "receiveStringAmount", js.undefined)
     
-    @scala.inline
-    def setReceiveTxHash(value: String): Self = StObject.set(x, "receiveTxHash", value.asInstanceOf[js.Any])
+    inline def setReceiveTxHash(value: String): Self = StObject.set(x, "receiveTxHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveTxHashUndefined: Self = StObject.set(x, "receiveTxHash", js.undefined)
+    inline def setReceiveTxHashUndefined: Self = StObject.set(x, "receiveTxHash", js.undefined)
     
-    @scala.inline
-    def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
+    inline def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
     
-    @scala.inline
-    def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendAddress(value: String): Self = StObject.set(x, "sendAddress", value.asInstanceOf[js.Any])
+    inline def setSendAddress(value: String): Self = StObject.set(x, "sendAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendAddressUndefined: Self = StObject.set(x, "sendAddress", js.undefined)
+    inline def setSendAddressUndefined: Self = StObject.set(x, "sendAddress", js.undefined)
     
-    @scala.inline
-    def setSendStringAmount(value: String): Self = StObject.set(x, "sendStringAmount", value.asInstanceOf[js.Any])
+    inline def setSendStringAmount(value: String): Self = StObject.set(x, "sendStringAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendStringAmountUndefined: Self = StObject.set(x, "sendStringAmount", js.undefined)
+    inline def setSendStringAmountUndefined: Self = StObject.set(x, "sendStringAmount", js.undefined)
     
-    @scala.inline
-    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+    inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ExchangeTradeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExchangeTradeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
+    inline def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUrlUndefined: Self = StObject.set(x, "statusUrl", js.undefined)
+    inline def setStatusUrlUndefined: Self = StObject.set(x, "statusUrl", js.undefined)
   }
 }

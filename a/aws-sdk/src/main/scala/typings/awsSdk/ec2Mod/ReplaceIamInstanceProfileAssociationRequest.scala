@@ -18,8 +18,7 @@ trait ReplaceIamInstanceProfileAssociationRequest extends StObject {
 }
 object ReplaceIamInstanceProfileAssociationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssociationId: IamInstanceProfileAssociationId,
     IamInstanceProfile: IamInstanceProfileSpecification
   ): ReplaceIamInstanceProfileAssociationRequest = {
@@ -27,13 +26,10 @@ object ReplaceIamInstanceProfileAssociationRequest {
     __obj.asInstanceOf[ReplaceIamInstanceProfileAssociationRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceIamInstanceProfileAssociationRequestMutableBuilder[Self <: ReplaceIamInstanceProfileAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceIamInstanceProfileAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: IamInstanceProfileAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: IamInstanceProfileAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamInstanceProfile(value: IamInstanceProfileSpecification): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
+    inline def setIamInstanceProfile(value: IamInstanceProfileSpecification): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
   }
 }

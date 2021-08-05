@@ -18,19 +18,15 @@ trait StatelessRule extends StObject {
 }
 object StatelessRule {
   
-  @scala.inline
-  def apply(Priority: Priority, RuleDefinition: RuleDefinition): StatelessRule = {
+  inline def apply(Priority: Priority, RuleDefinition: RuleDefinition): StatelessRule = {
     val __obj = js.Dynamic.literal(Priority = Priority.asInstanceOf[js.Any], RuleDefinition = RuleDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatelessRule]
   }
   
-  @scala.inline
-  implicit class StatelessRuleMutableBuilder[Self <: StatelessRule] (val x: Self) extends AnyVal {
+  extension [Self <: StatelessRule](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleDefinition(value: RuleDefinition): Self = StObject.set(x, "RuleDefinition", value.asInstanceOf[js.Any])
+    inline def setRuleDefinition(value: RuleDefinition): Self = StObject.set(x, "RuleDefinition", value.asInstanceOf[js.Any])
   }
 }

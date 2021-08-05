@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFACLEnforcingMode extends StObject
 object MFACLEnforcingMode {
   
-  @scala.inline
-  def Automatic: `0` = 0.asInstanceOf[`0`]
+  inline def Automatic: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def None: `3` = 3.asInstanceOf[`3`]
+  inline def None: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Provided: `1` = 1.asInstanceOf[`1`]
+  inline def Provided: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ResetToDefault: `2` = 2.asInstanceOf[`2`]
+  inline def ResetToDefault: `2` = 2.asInstanceOf[`2`]
 }

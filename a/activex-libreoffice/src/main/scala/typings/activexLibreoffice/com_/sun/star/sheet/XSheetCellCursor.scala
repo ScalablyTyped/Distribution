@@ -55,8 +55,7 @@ trait XSheetCellCursor
 }
 object XSheetCellCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Spreadsheet: XSpreadsheet,
     acquire: () => Unit,
     collapseToCurrentArray: () => Unit,
@@ -76,25 +75,18 @@ object XSheetCellCursor {
     __obj.asInstanceOf[XSheetCellCursor]
   }
   
-  @scala.inline
-  implicit class XSheetCellCursorMutableBuilder[Self <: XSheetCellCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetCellCursor](x: Self) {
     
-    @scala.inline
-    def setCollapseToCurrentArray(value: () => Unit): Self = StObject.set(x, "collapseToCurrentArray", js.Any.fromFunction0(value))
+    inline def setCollapseToCurrentArray(value: () => Unit): Self = StObject.set(x, "collapseToCurrentArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapseToCurrentRegion(value: () => Unit): Self = StObject.set(x, "collapseToCurrentRegion", js.Any.fromFunction0(value))
+    inline def setCollapseToCurrentRegion(value: () => Unit): Self = StObject.set(x, "collapseToCurrentRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapseToMergedArea(value: () => Unit): Self = StObject.set(x, "collapseToMergedArea", js.Any.fromFunction0(value))
+    inline def setCollapseToMergedArea(value: () => Unit): Self = StObject.set(x, "collapseToMergedArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapseToSize(value: (Double, Double) => Unit): Self = StObject.set(x, "collapseToSize", js.Any.fromFunction2(value))
+    inline def setCollapseToSize(value: (Double, Double) => Unit): Self = StObject.set(x, "collapseToSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExpandToEntireColumns(value: () => Unit): Self = StObject.set(x, "expandToEntireColumns", js.Any.fromFunction0(value))
+    inline def setExpandToEntireColumns(value: () => Unit): Self = StObject.set(x, "expandToEntireColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandToEntireRows(value: () => Unit): Self = StObject.set(x, "expandToEntireRows", js.Any.fromFunction0(value))
+    inline def setExpandToEntireRows(value: () => Unit): Self = StObject.set(x, "expandToEntireRows", js.Any.fromFunction0(value))
   }
 }

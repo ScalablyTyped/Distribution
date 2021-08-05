@@ -6,6 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def installPromiseMatchers(): Unit = js.Dynamic.global.applyDynamic("installPromiseMatchers")().asInstanceOf[Unit]
+  inline def installPromiseMatchers(): Unit = js.Dynamic.global.applyDynamic("installPromiseMatchers")().asInstanceOf[Unit]
 }

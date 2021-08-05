@@ -15,20 +15,16 @@ trait DSNodeAtWord
 }
 object DSNodeAtWord {
   
-  @scala.inline
-  def apply(name: String): DSNodeAtWord = {
+  inline def apply(name: String): DSNodeAtWord = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AtKeyword")
     __obj.asInstanceOf[DSNodeAtWord]
   }
   
-  @scala.inline
-  implicit class DSNodeAtWordMutableBuilder[Self <: DSNodeAtWord] (val x: Self) extends AnyVal {
+  extension [Self <: DSNodeAtWord](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AtKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AtKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

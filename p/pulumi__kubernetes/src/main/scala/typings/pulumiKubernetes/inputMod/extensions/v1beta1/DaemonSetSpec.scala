@@ -44,46 +44,33 @@ trait DaemonSetSpec extends StObject {
 }
 object DaemonSetSpec {
   
-  @scala.inline
-  def apply(template: Input[PodTemplateSpec]): DaemonSetSpec = {
+  inline def apply(template: Input[PodTemplateSpec]): DaemonSetSpec = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaemonSetSpec]
   }
   
-  @scala.inline
-  implicit class DaemonSetSpecMutableBuilder[Self <: DaemonSetSpec] (val x: Self) extends AnyVal {
+  extension [Self <: DaemonSetSpec](x: Self) {
     
-    @scala.inline
-    def setMinReadySeconds(value: Input[Double]): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
+    inline def setMinReadySeconds(value: Input[Double]): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinReadySecondsUndefined: Self = StObject.set(x, "minReadySeconds", js.undefined)
+    inline def setMinReadySecondsUndefined: Self = StObject.set(x, "minReadySeconds", js.undefined)
     
-    @scala.inline
-    def setRevisionHistoryLimit(value: Input[Double]): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
+    inline def setRevisionHistoryLimit(value: Input[Double]): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionHistoryLimitUndefined: Self = StObject.set(x, "revisionHistoryLimit", js.undefined)
+    inline def setRevisionHistoryLimitUndefined: Self = StObject.set(x, "revisionHistoryLimit", js.undefined)
     
-    @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateGeneration(value: Input[Double]): Self = StObject.set(x, "templateGeneration", value.asInstanceOf[js.Any])
+    inline def setTemplateGeneration(value: Input[Double]): Self = StObject.set(x, "templateGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateGenerationUndefined: Self = StObject.set(x, "templateGeneration", js.undefined)
+    inline def setTemplateGenerationUndefined: Self = StObject.set(x, "templateGeneration", js.undefined)
     
-    @scala.inline
-    def setUpdateStrategy(value: Input[DaemonSetUpdateStrategy]): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
+    inline def setUpdateStrategy(value: Input[DaemonSetUpdateStrategy]): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStrategyUndefined: Self = StObject.set(x, "updateStrategy", js.undefined)
+    inline def setUpdateStrategyUndefined: Self = StObject.set(x, "updateStrategy", js.undefined)
   }
 }

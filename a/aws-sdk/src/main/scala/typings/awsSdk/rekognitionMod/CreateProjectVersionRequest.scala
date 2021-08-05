@@ -33,8 +33,7 @@ trait CreateProjectVersionRequest extends StObject {
 }
 object CreateProjectVersionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputConfig: OutputConfig,
     ProjectArn: ProjectArn,
     TestingData: TestingData,
@@ -45,22 +44,16 @@ object CreateProjectVersionRequest {
     __obj.asInstanceOf[CreateProjectVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateProjectVersionRequestMutableBuilder[Self <: CreateProjectVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProjectVersionRequest](x: Self) {
     
-    @scala.inline
-    def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectArn(value: ProjectArn): Self = StObject.set(x, "ProjectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: ProjectArn): Self = StObject.set(x, "ProjectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestingData(value: TestingData): Self = StObject.set(x, "TestingData", value.asInstanceOf[js.Any])
+    inline def setTestingData(value: TestingData): Self = StObject.set(x, "TestingData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingData(value: TrainingData): Self = StObject.set(x, "TrainingData", value.asInstanceOf[js.Any])
+    inline def setTrainingData(value: TrainingData): Self = StObject.set(x, "TrainingData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionName(value: VersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: VersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
   }
 }

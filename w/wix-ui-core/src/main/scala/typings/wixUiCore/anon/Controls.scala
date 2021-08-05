@@ -32,8 +32,7 @@ trait Controls extends StObject {
 }
 object Controls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controls: Boolean,
     `data-hook`: String,
     height: Double,
@@ -52,43 +51,30 @@ object Controls {
     __obj.asInstanceOf[Controls]
   }
   
-  @scala.inline
-  implicit class ControlsMutableBuilder[Self <: Controls] (val x: Self) extends AnyVal {
+  extension [Self <: Controls](x: Self) {
     
-    @scala.inline
-    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+    inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEnd(value: () => String): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
+    inline def setOnEnd(value: () => String): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPause(value: () => String): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
+    inline def setOnPause(value: () => String): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPlay(value: () => String): Self = StObject.set(x, "onPlay", js.Any.fromFunction0(value))
+    inline def setOnPlay(value: () => String): Self = StObject.set(x, "onPlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReady(value: () => String): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    inline def setOnReady(value: () => String): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlaying(value: Boolean): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
+    inline def setPlaying(value: Boolean): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

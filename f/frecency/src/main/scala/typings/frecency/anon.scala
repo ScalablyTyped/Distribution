@@ -27,62 +27,44 @@ object anon {
   }
   object ExactQueryMatchWeight {
     
-    @scala.inline
-    def apply(key: String): ExactQueryMatchWeight = {
+    inline def apply(key: String): ExactQueryMatchWeight = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExactQueryMatchWeight]
     }
     
-    @scala.inline
-    implicit class ExactQueryMatchWeightMutableBuilder[Self <: ExactQueryMatchWeight] (val x: Self) extends AnyVal {
+    extension [Self <: ExactQueryMatchWeight](x: Self) {
       
-      @scala.inline
-      def setExactQueryMatchWeight(value: Double): Self = StObject.set(x, "exactQueryMatchWeight", value.asInstanceOf[js.Any])
+      inline def setExactQueryMatchWeight(value: Double): Self = StObject.set(x, "exactQueryMatchWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactQueryMatchWeightUndefined: Self = StObject.set(x, "exactQueryMatchWeight", js.undefined)
+      inline def setExactQueryMatchWeightUndefined: Self = StObject.set(x, "exactQueryMatchWeight", js.undefined)
       
-      @scala.inline
-      def setIdAttribute(value: String | idAttrFn): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
+      inline def setIdAttribute(value: String | idAttrFn): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdAttributeFunction1(value: /* result */ String => String): Self = StObject.set(x, "idAttribute", js.Any.fromFunction1(value))
+      inline def setIdAttributeFunction1(value: /* result */ String => String): Self = StObject.set(x, "idAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
+      inline def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecentSelectionsLimit(value: Double): Self = StObject.set(x, "recentSelectionsLimit", value.asInstanceOf[js.Any])
+      inline def setRecentSelectionsLimit(value: Double): Self = StObject.set(x, "recentSelectionsLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecentSelectionsLimitUndefined: Self = StObject.set(x, "recentSelectionsLimit", js.undefined)
+      inline def setRecentSelectionsLimitUndefined: Self = StObject.set(x, "recentSelectionsLimit", js.undefined)
       
-      @scala.inline
-      def setRecentSelectionsMatchWeight(value: Double): Self = StObject.set(x, "recentSelectionsMatchWeight", value.asInstanceOf[js.Any])
+      inline def setRecentSelectionsMatchWeight(value: Double): Self = StObject.set(x, "recentSelectionsMatchWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecentSelectionsMatchWeightUndefined: Self = StObject.set(x, "recentSelectionsMatchWeight", js.undefined)
+      inline def setRecentSelectionsMatchWeightUndefined: Self = StObject.set(x, "recentSelectionsMatchWeight", js.undefined)
       
-      @scala.inline
-      def setStorageProvider(value: js.Object): Self = StObject.set(x, "storageProvider", value.asInstanceOf[js.Any])
+      inline def setStorageProvider(value: js.Object): Self = StObject.set(x, "storageProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageProviderUndefined: Self = StObject.set(x, "storageProvider", js.undefined)
+      inline def setStorageProviderUndefined: Self = StObject.set(x, "storageProvider", js.undefined)
       
-      @scala.inline
-      def setSubQueryMatchWeight(value: Double): Self = StObject.set(x, "subQueryMatchWeight", value.asInstanceOf[js.Any])
+      inline def setSubQueryMatchWeight(value: Double): Self = StObject.set(x, "subQueryMatchWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubQueryMatchWeightUndefined: Self = StObject.set(x, "subQueryMatchWeight", js.undefined)
+      inline def setSubQueryMatchWeightUndefined: Self = StObject.set(x, "subQueryMatchWeight", js.undefined)
       
-      @scala.inline
-      def setTimeStampsLimit(value: Double): Self = StObject.set(x, "timeStampsLimit", value.asInstanceOf[js.Any])
+      inline def setTimeStampsLimit(value: Double): Self = StObject.set(x, "timeStampsLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStampsLimitUndefined: Self = StObject.set(x, "timeStampsLimit", js.undefined)
+      inline def setTimeStampsLimitUndefined: Self = StObject.set(x, "timeStampsLimit", js.undefined)
     }
   }
   
@@ -92,20 +74,16 @@ object anon {
   }
   object FrecencyScore {
     
-    @scala.inline
-    def apply(): FrecencyScore = {
+    inline def apply(): FrecencyScore = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrecencyScore]
     }
     
-    @scala.inline
-    implicit class FrecencyScoreMutableBuilder[Self <: FrecencyScore] (val x: Self) extends AnyVal {
+    extension [Self <: FrecencyScore](x: Self) {
       
-      @scala.inline
-      def set_frecencyScore(value: Double): Self = StObject.set(x, "_frecencyScore", value.asInstanceOf[js.Any])
+      inline def set_frecencyScore(value: Double): Self = StObject.set(x, "_frecencyScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_frecencyScoreUndefined: Self = StObject.set(x, "_frecencyScore", js.undefined)
+      inline def set_frecencyScoreUndefined: Self = StObject.set(x, "_frecencyScore", js.undefined)
     }
   }
   
@@ -119,29 +97,22 @@ object anon {
   }
   object KeepScores {
     
-    @scala.inline
-    def apply[T](searchQuery: T, searchResults: js.Array[T]): KeepScores[T] = {
+    inline def apply[T](searchQuery: T, searchResults: js.Array[T]): KeepScores[T] = {
       val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], searchResults = searchResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeepScores[T]]
     }
     
-    @scala.inline
-    implicit class KeepScoresMutableBuilder[Self <: KeepScores[?], T] (val x: Self & KeepScores[T]) extends AnyVal {
+    extension [Self <: KeepScores[?], T](x: Self & KeepScores[T]) {
       
-      @scala.inline
-      def setKeepScores(value: Boolean): Self = StObject.set(x, "keepScores", value.asInstanceOf[js.Any])
+      inline def setKeepScores(value: Boolean): Self = StObject.set(x, "keepScores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepScoresUndefined: Self = StObject.set(x, "keepScores", js.undefined)
+      inline def setKeepScoresUndefined: Self = StObject.set(x, "keepScores", js.undefined)
       
-      @scala.inline
-      def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
+      inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchResults(value: js.Array[T]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+      inline def setSearchResults(value: js.Array[T]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchResultsVarargs(value: T*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
+      inline def setSearchResultsVarargs(value: T*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
     }
   }
   
@@ -153,20 +124,16 @@ object anon {
   }
   object SearchQuery {
     
-    @scala.inline
-    def apply[T](searchQuery: T, selectedId: String): SearchQuery[T] = {
+    inline def apply[T](searchQuery: T, selectedId: String): SearchQuery[T] = {
       val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], selectedId = selectedId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchQuery[T]]
     }
     
-    @scala.inline
-    implicit class SearchQueryMutableBuilder[Self <: SearchQuery[?], T] (val x: Self & SearchQuery[T]) extends AnyVal {
+    extension [Self <: SearchQuery[?], T](x: Self & SearchQuery[T]) {
       
-      @scala.inline
-      def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
+      inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+      inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,23 +145,18 @@ object anon {
   }
   object SearchResults {
     
-    @scala.inline
-    def apply[T](searchQuery: T, searchResults: js.Array[T]): SearchResults[T] = {
+    inline def apply[T](searchQuery: T, searchResults: js.Array[T]): SearchResults[T] = {
       val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], searchResults = searchResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchResults[T]]
     }
     
-    @scala.inline
-    implicit class SearchResultsMutableBuilder[Self <: SearchResults[?], T] (val x: Self & SearchResults[T]) extends AnyVal {
+    extension [Self <: SearchResults[?], T](x: Self & SearchResults[T]) {
       
-      @scala.inline
-      def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
+      inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchResults(value: js.Array[T]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+      inline def setSearchResults(value: js.Array[T]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchResultsVarargs(value: T*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
+      inline def setSearchResultsVarargs(value: T*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
     }
   }
 }

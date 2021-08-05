@@ -25,8 +25,7 @@ object accordionUniDriverMod {
   }
   object AccordionUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickItemAt: Double => js.Promise[Unit],
       clickToggleButtonAt: Double => js.Promise[Unit],
@@ -41,26 +40,19 @@ object accordionUniDriverMod {
       __obj.asInstanceOf[AccordionUniDriver]
     }
     
-    @scala.inline
-    implicit class AccordionUniDriverMutableBuilder[Self <: AccordionUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickItemAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickItemAt", js.Any.fromFunction1(value))
+      inline def setClickItemAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickItemAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickToggleButtonAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickToggleButtonAt", js.Any.fromFunction1(value))
+      inline def setClickToggleButtonAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickToggleButtonAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemTitleAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getItemTitleAt", js.Any.fromFunction1(value))
+      inline def setGetItemTitleAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getItemTitleAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetToggleButtonLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getToggleButtonLabelAt", js.Any.fromFunction1(value))
+      inline def setGetToggleButtonLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getToggleButtonLabelAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsIconExistsAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isIconExistsAt", js.Any.fromFunction1(value))
+      inline def setIsIconExistsAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isIconExistsAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsItemExpandedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isItemExpandedAt", js.Any.fromFunction1(value))
+      inline def setIsItemExpandedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isItemExpandedAt", js.Any.fromFunction1(value))
     }
   }
 }

@@ -18,22 +18,17 @@ trait Ec2AmiResource extends StObject {
 }
 object Ec2AmiResource {
   
-  @scala.inline
-  def apply(AmiId: AmiId): Ec2AmiResource = {
+  inline def apply(AmiId: AmiId): Ec2AmiResource = {
     val __obj = js.Dynamic.literal(AmiId = AmiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ec2AmiResource]
   }
   
-  @scala.inline
-  implicit class Ec2AmiResourceMutableBuilder[Self <: Ec2AmiResource] (val x: Self) extends AnyVal {
+  extension [Self <: Ec2AmiResource](x: Self) {
     
-    @scala.inline
-    def setAmiId(value: AmiId): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
+    inline def setAmiId(value: AmiId): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowballAmiId(value: String): Self = StObject.set(x, "SnowballAmiId", value.asInstanceOf[js.Any])
+    inline def setSnowballAmiId(value: String): Self = StObject.set(x, "SnowballAmiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowballAmiIdUndefined: Self = StObject.set(x, "SnowballAmiId", js.undefined)
+    inline def setSnowballAmiIdUndefined: Self = StObject.set(x, "SnowballAmiId", js.undefined)
   }
 }

@@ -20,19 +20,15 @@ trait WebApiTeam
 }
 object WebApiTeam {
   
-  @scala.inline
-  def apply(description: String, id: String, identityUrl: String, name: String, url: String): WebApiTeam = {
+  inline def apply(description: String, id: String, identityUrl: String, name: String, url: String): WebApiTeam = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identityUrl = identityUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebApiTeam]
   }
   
-  @scala.inline
-  implicit class WebApiTeamMutableBuilder[Self <: WebApiTeam] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiTeam](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUrl(value: String): Self = StObject.set(x, "identityUrl", value.asInstanceOf[js.Any])
+    inline def setIdentityUrl(value: String): Self = StObject.set(x, "identityUrl", value.asInstanceOf[js.Any])
   }
 }

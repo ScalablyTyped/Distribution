@@ -28,37 +28,27 @@ trait GetBuiltinIntentsRequest extends StObject {
 }
 object GetBuiltinIntentsRequest {
   
-  @scala.inline
-  def apply(): GetBuiltinIntentsRequest = {
+  inline def apply(): GetBuiltinIntentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBuiltinIntentsRequest]
   }
   
-  @scala.inline
-  implicit class GetBuiltinIntentsRequestMutableBuilder[Self <: GetBuiltinIntentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBuiltinIntentsRequest](x: Self) {
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSignatureContains(value: String): Self = StObject.set(x, "signatureContains", value.asInstanceOf[js.Any])
+    inline def setSignatureContains(value: String): Self = StObject.set(x, "signatureContains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureContainsUndefined: Self = StObject.set(x, "signatureContains", js.undefined)
+    inline def setSignatureContainsUndefined: Self = StObject.set(x, "signatureContains", js.undefined)
   }
 }

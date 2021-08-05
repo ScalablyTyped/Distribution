@@ -11,22 +11,17 @@ trait PageContentCollectionData extends StObject {
 }
 object PageContentCollectionData {
   
-  @scala.inline
-  def apply(): PageContentCollectionData = {
+  inline def apply(): PageContentCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageContentCollectionData]
   }
   
-  @scala.inline
-  implicit class PageContentCollectionDataMutableBuilder[Self <: PageContentCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: PageContentCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PageContentData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PageContentData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: PageContentData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PageContentData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

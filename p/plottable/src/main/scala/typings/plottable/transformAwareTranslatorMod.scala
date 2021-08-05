@@ -19,7 +19,7 @@ object transformAwareTranslatorMod {
   class Translator protected () extends StObject {
     def this(_rootElement: HTMLElement) = this()
     
-    var _rootElement: js.Any = js.native
+    /* private */ var _rootElement: js.Any = js.native
     
     /**
       * Given `document` client coordinates, computes the position relative to the
@@ -43,10 +43,8 @@ object transformAwareTranslatorMod {
     /**
       * Is the event's target part of the given component's DOM tree?
       */
-    @scala.inline
-    def isEventInside(component: Component, e: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEventInside")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isEventInside(component: Component, e: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEventInside")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
-  @scala.inline
-  def getTranslator(component: Component): Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslator")(component.asInstanceOf[js.Any]).asInstanceOf[Translator]
+  inline def getTranslator(component: Component): Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslator")(component.asInstanceOf[js.Any]).asInstanceOf[Translator]
 }

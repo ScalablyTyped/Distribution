@@ -24,8 +24,7 @@ trait IDomAccessProvider extends StObject {
 }
 object IDomAccessProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeUserSelect: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any, String) => Unit,
     focusCellElement: (IGridScope, Double) => Unit,
     grid: IGridInstance,
@@ -36,25 +35,19 @@ object IDomAccessProvider {
     __obj.asInstanceOf[IDomAccessProvider]
   }
   
-  @scala.inline
-  implicit class IDomAccessProviderMutableBuilder[Self <: IDomAccessProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IDomAccessProvider](x: Self) {
     
-    @scala.inline
-    def setChangeUserSelect(
+    inline def setChangeUserSelect(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any, String) => Unit
     ): Self = StObject.set(x, "changeUserSelect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocusCellElement(value: (IGridScope, Double) => Unit): Self = StObject.set(x, "focusCellElement", js.Any.fromFunction2(value))
+    inline def setFocusCellElement(value: (IGridScope, Double) => Unit): Self = StObject.set(x, "focusCellElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGrid(value: IGridInstance): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: IGridInstance): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousColumn(value: IColumn): Self = StObject.set(x, "previousColumn", value.asInstanceOf[js.Any])
+    inline def setPreviousColumn(value: IColumn): Self = StObject.set(x, "previousColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionHandlers(
+    inline def setSelectionHandlers(
       value: (IGridScope, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any) => Unit
     ): Self = StObject.set(x, "selectionHandlers", js.Any.fromFunction2(value))
   }

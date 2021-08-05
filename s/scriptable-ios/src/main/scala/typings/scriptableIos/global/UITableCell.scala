@@ -121,8 +121,7 @@ object UITableCell {
     * @see https://docs.scriptable.app/uitablecell/#button
     */
   /* static member */
-  @scala.inline
-  def button(title: String): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("button")(title.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
+  inline def button(title: String): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("button")(title.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
   
   /**
     * _Constructs an image cell._
@@ -132,8 +131,7 @@ object UITableCell {
     * @see https://docs.scriptable.app/uitablecell/#image
     */
   /* static member */
-  @scala.inline
-  def image(image: typings.scriptableIos.Image): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(image.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
+  inline def image(image: typings.scriptableIos.Image): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(image.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
   
   /**
     * _Constructs an image cell._
@@ -143,8 +141,7 @@ object UITableCell {
     * @see https://docs.scriptable.app/uitablecell/#imageaturl
     */
   /* static member */
-  @scala.inline
-  def imageAtURL(url: String): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("imageAtURL")(url.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
+  inline def imageAtURL(url: String): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("imageAtURL")(url.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
   
   /**
     * _Constructs a text cell._
@@ -155,12 +152,8 @@ object UITableCell {
     * @see https://docs.scriptable.app/uitablecell/#text
     */
   /* static member */
-  @scala.inline
-  def text(): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[typings.scriptableIos.UITableCell]
-  @scala.inline
-  def text(title: String): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(title.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
-  @scala.inline
-  def text(title: String, subtitle: String): typings.scriptableIos.UITableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(title.asInstanceOf[js.Any], subtitle.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.UITableCell]
-  @scala.inline
-  def text(title: Unit, subtitle: String): typings.scriptableIos.UITableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(title.asInstanceOf[js.Any], subtitle.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.UITableCell]
+  inline def text(): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[typings.scriptableIos.UITableCell]
+  inline def text(title: String): typings.scriptableIos.UITableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(title.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.UITableCell]
+  inline def text(title: String, subtitle: String): typings.scriptableIos.UITableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(title.asInstanceOf[js.Any], subtitle.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.UITableCell]
+  inline def text(title: Unit, subtitle: String): typings.scriptableIos.UITableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(title.asInstanceOf[js.Any], subtitle.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.UITableCell]
 }

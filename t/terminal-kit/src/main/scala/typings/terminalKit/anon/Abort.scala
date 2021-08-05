@@ -12,22 +12,17 @@ trait Abort extends StObject {
 }
 object Abort {
   
-  @scala.inline
-  def apply(abort: () => Unit): Abort = {
+  inline def apply(abort: () => Unit): Abort = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
     __obj.asInstanceOf[Abort]
   }
   
-  @scala.inline
-  implicit class AbortMutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
+  extension [Self <: Abort](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPromise(value: js.Promise[Boolean]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[Boolean]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

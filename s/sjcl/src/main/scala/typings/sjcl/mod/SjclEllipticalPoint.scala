@@ -22,8 +22,7 @@ trait SjclEllipticalPoint extends StObject {
 }
 object SjclEllipticalPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isValid: () => Boolean,
     mult: BigNumber => SjclEllipticalPoint,
     mult2: (BigNumber, BigNumber, SjclEllipticalPoint) => SjclEllipticalPoint,
@@ -36,28 +35,20 @@ object SjclEllipticalPoint {
     __obj.asInstanceOf[SjclEllipticalPoint]
   }
   
-  @scala.inline
-  implicit class SjclEllipticalPointMutableBuilder[Self <: SjclEllipticalPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SjclEllipticalPoint](x: Self) {
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMult(value: BigNumber => SjclEllipticalPoint): Self = StObject.set(x, "mult", js.Any.fromFunction1(value))
+    inline def setMult(value: BigNumber => SjclEllipticalPoint): Self = StObject.set(x, "mult", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMult2(value: (BigNumber, BigNumber, SjclEllipticalPoint) => SjclEllipticalPoint): Self = StObject.set(x, "mult2", js.Any.fromFunction3(value))
+    inline def setMult2(value: (BigNumber, BigNumber, SjclEllipticalPoint) => SjclEllipticalPoint): Self = StObject.set(x, "mult2", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMultiples(value: () => js.Array[SjclEllipticalPoint]): Self = StObject.set(x, "multiples", js.Any.fromFunction0(value))
+    inline def setMultiples(value: () => js.Array[SjclEllipticalPoint]): Self = StObject.set(x, "multiples", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNegate(value: () => SjclEllipticalPoint): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
+    inline def setNegate(value: () => SjclEllipticalPoint): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToBits(value: () => BitArray_): Self = StObject.set(x, "toBits", js.Any.fromFunction0(value))
+    inline def setToBits(value: () => BitArray_): Self = StObject.set(x, "toBits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJac(value: () => SjclPointJacobian): Self = StObject.set(x, "toJac", js.Any.fromFunction0(value))
+    inline def setToJac(value: () => SjclPointJacobian): Self = StObject.set(x, "toJac", js.Any.fromFunction0(value))
   }
 }

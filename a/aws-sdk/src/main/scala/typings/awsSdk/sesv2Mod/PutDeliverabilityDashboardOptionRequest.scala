@@ -18,25 +18,19 @@ trait PutDeliverabilityDashboardOptionRequest extends StObject {
 }
 object PutDeliverabilityDashboardOptionRequest {
   
-  @scala.inline
-  def apply(DashboardEnabled: Enabled): PutDeliverabilityDashboardOptionRequest = {
+  inline def apply(DashboardEnabled: Enabled): PutDeliverabilityDashboardOptionRequest = {
     val __obj = js.Dynamic.literal(DashboardEnabled = DashboardEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDeliverabilityDashboardOptionRequest]
   }
   
-  @scala.inline
-  implicit class PutDeliverabilityDashboardOptionRequestMutableBuilder[Self <: PutDeliverabilityDashboardOptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutDeliverabilityDashboardOptionRequest](x: Self) {
     
-    @scala.inline
-    def setDashboardEnabled(value: Enabled): Self = StObject.set(x, "DashboardEnabled", value.asInstanceOf[js.Any])
+    inline def setDashboardEnabled(value: Enabled): Self = StObject.set(x, "DashboardEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = StObject.set(x, "SubscribedDomains", value.asInstanceOf[js.Any])
+    inline def setSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = StObject.set(x, "SubscribedDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedDomainsUndefined: Self = StObject.set(x, "SubscribedDomains", js.undefined)
+    inline def setSubscribedDomainsUndefined: Self = StObject.set(x, "SubscribedDomains", js.undefined)
     
-    @scala.inline
-    def setSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "SubscribedDomains", js.Array(value :_*))
+    inline def setSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "SubscribedDomains", js.Array(value :_*))
   }
 }

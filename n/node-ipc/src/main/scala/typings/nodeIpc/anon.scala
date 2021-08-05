@@ -35,44 +35,32 @@ object anon {
   }
   object Family {
     
-    @scala.inline
-    def apply(): Family = {
+    inline def apply(): Family = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Family]
     }
     
-    @scala.inline
-    implicit class FamilyMutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
+    extension [Self <: Family](x: Self) {
       
-      @scala.inline
-      def setFamily(value: Boolean): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: Boolean): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setHints(value: Boolean): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+      inline def setHints(value: Boolean): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+      inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
       
-      @scala.inline
-      def setLocalAddress(value: Boolean): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: Boolean): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      @scala.inline
-      def setLocalPort(value: Boolean): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      inline def setLocalPort(value: Boolean): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
-      @scala.inline
-      def setLookup(value: Boolean): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      inline def setLookup(value: Boolean): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
     }
   }
   
@@ -86,32 +74,24 @@ object anon {
   }
   object Private {
     
-    @scala.inline
-    def apply(): Private = {
+    inline def apply(): Private = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Private]
     }
     
-    @scala.inline
-    implicit class PrivateMutableBuilder[Self <: Private] (val x: Self) extends AnyVal {
+    extension [Self <: Private](x: Self) {
       
-      @scala.inline
-      def setPrivate(value: String): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: String): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     }
   }
 }

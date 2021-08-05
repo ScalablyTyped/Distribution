@@ -13,14 +13,12 @@ object sendMessageExceptionsUnionMod {
   trait SendMessageExceptionsUnion extends StObject
   object SendMessageExceptionsUnion {
     
-    @scala.inline
-    def InvalidMessageContents(): typings.awsSdkClientSqsNode.typesInvalidMessageContentsMod.InvalidMessageContents = {
+    inline def InvalidMessageContents(): typings.awsSdkClientSqsNode.typesInvalidMessageContentsMod.InvalidMessageContents = {
       val __obj = js.Dynamic.literal(name = "InvalidMessageContents")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesInvalidMessageContentsMod.InvalidMessageContents]
     }
     
-    @scala.inline
-    def UnsupportedOperation(): typings.awsSdkClientSqsNode.typesUnsupportedOperationMod.UnsupportedOperation = {
+    inline def UnsupportedOperation(): typings.awsSdkClientSqsNode.typesUnsupportedOperationMod.UnsupportedOperation = {
       val __obj = js.Dynamic.literal(name = "UnsupportedOperation")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesUnsupportedOperationMod.UnsupportedOperation]
     }

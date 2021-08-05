@@ -100,103 +100,71 @@ trait SchemaFinding extends StObject {
 }
 object SchemaFinding {
   
-  @scala.inline
-  def apply(): SchemaFinding = {
+  inline def apply(): SchemaFinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFinding]
   }
   
-  @scala.inline
-  implicit class SchemaFindingMutableBuilder[Self <: SchemaFinding] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFinding](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+    inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUrlUndefined: Self = StObject.set(x, "finalUrl", js.undefined)
+    inline def setFinalUrlUndefined: Self = StObject.set(x, "finalUrl", js.undefined)
     
-    @scala.inline
-    def setFindingType(value: String): Self = StObject.set(x, "findingType", value.asInstanceOf[js.Any])
+    inline def setFindingType(value: String): Self = StObject.set(x, "findingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingTypeUndefined: Self = StObject.set(x, "findingType", js.undefined)
+    inline def setFindingTypeUndefined: Self = StObject.set(x, "findingType", js.undefined)
     
-    @scala.inline
-    def setFrameUrl(value: String): Self = StObject.set(x, "frameUrl", value.asInstanceOf[js.Any])
+    inline def setFrameUrl(value: String): Self = StObject.set(x, "frameUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameUrlUndefined: Self = StObject.set(x, "frameUrl", js.undefined)
+    inline def setFrameUrlUndefined: Self = StObject.set(x, "frameUrl", js.undefined)
     
-    @scala.inline
-    def setFuzzedUrl(value: String): Self = StObject.set(x, "fuzzedUrl", value.asInstanceOf[js.Any])
+    inline def setFuzzedUrl(value: String): Self = StObject.set(x, "fuzzedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuzzedUrlUndefined: Self = StObject.set(x, "fuzzedUrl", js.undefined)
+    inline def setFuzzedUrlUndefined: Self = StObject.set(x, "fuzzedUrl", js.undefined)
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+    inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutdatedLibrary(value: SchemaOutdatedLibrary): Self = StObject.set(x, "outdatedLibrary", value.asInstanceOf[js.Any])
+    inline def setOutdatedLibrary(value: SchemaOutdatedLibrary): Self = StObject.set(x, "outdatedLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutdatedLibraryUndefined: Self = StObject.set(x, "outdatedLibrary", js.undefined)
+    inline def setOutdatedLibraryUndefined: Self = StObject.set(x, "outdatedLibrary", js.undefined)
     
-    @scala.inline
-    def setReproductionUrl(value: String): Self = StObject.set(x, "reproductionUrl", value.asInstanceOf[js.Any])
+    inline def setReproductionUrl(value: String): Self = StObject.set(x, "reproductionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReproductionUrlUndefined: Self = StObject.set(x, "reproductionUrl", js.undefined)
+    inline def setReproductionUrlUndefined: Self = StObject.set(x, "reproductionUrl", js.undefined)
     
-    @scala.inline
-    def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
+    inline def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
+    inline def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
     
-    @scala.inline
-    def setViolatingResource(value: SchemaViolatingResource): Self = StObject.set(x, "violatingResource", value.asInstanceOf[js.Any])
+    inline def setViolatingResource(value: SchemaViolatingResource): Self = StObject.set(x, "violatingResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolatingResourceUndefined: Self = StObject.set(x, "violatingResource", js.undefined)
+    inline def setViolatingResourceUndefined: Self = StObject.set(x, "violatingResource", js.undefined)
     
-    @scala.inline
-    def setVulnerableHeaders(value: SchemaVulnerableHeaders): Self = StObject.set(x, "vulnerableHeaders", value.asInstanceOf[js.Any])
+    inline def setVulnerableHeaders(value: SchemaVulnerableHeaders): Self = StObject.set(x, "vulnerableHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVulnerableHeadersUndefined: Self = StObject.set(x, "vulnerableHeaders", js.undefined)
+    inline def setVulnerableHeadersUndefined: Self = StObject.set(x, "vulnerableHeaders", js.undefined)
     
-    @scala.inline
-    def setVulnerableParameters(value: SchemaVulnerableParameters): Self = StObject.set(x, "vulnerableParameters", value.asInstanceOf[js.Any])
+    inline def setVulnerableParameters(value: SchemaVulnerableParameters): Self = StObject.set(x, "vulnerableParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVulnerableParametersUndefined: Self = StObject.set(x, "vulnerableParameters", js.undefined)
+    inline def setVulnerableParametersUndefined: Self = StObject.set(x, "vulnerableParameters", js.undefined)
     
-    @scala.inline
-    def setXss(value: SchemaXss): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
+    inline def setXss(value: SchemaXss): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssUndefined: Self = StObject.set(x, "xss", js.undefined)
+    inline def setXssUndefined: Self = StObject.set(x, "xss", js.undefined)
   }
 }

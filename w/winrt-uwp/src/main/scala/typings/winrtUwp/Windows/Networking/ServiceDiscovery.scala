@@ -114,23 +114,18 @@ object ServiceDiscovery {
     }
     object DnssdRegistrationResult {
       
-      @scala.inline
-      def apply(hasInstanceNameChanged: Boolean, ipAddress: HostName, status: DnssdRegistrationStatus): DnssdRegistrationResult = {
+      inline def apply(hasInstanceNameChanged: Boolean, ipAddress: HostName, status: DnssdRegistrationStatus): DnssdRegistrationResult = {
         val __obj = js.Dynamic.literal(hasInstanceNameChanged = hasInstanceNameChanged.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[DnssdRegistrationResult]
       }
       
-      @scala.inline
-      implicit class DnssdRegistrationResultMutableBuilder[Self <: DnssdRegistrationResult] (val x: Self) extends AnyVal {
+      extension [Self <: DnssdRegistrationResult](x: Self) {
         
-        @scala.inline
-        def setHasInstanceNameChanged(value: Boolean): Self = StObject.set(x, "hasInstanceNameChanged", value.asInstanceOf[js.Any])
+        inline def setHasInstanceNameChanged(value: Boolean): Self = StObject.set(x, "hasInstanceNameChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIpAddress(value: HostName): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+        inline def setIpAddress(value: HostName): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: DnssdRegistrationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: DnssdRegistrationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     

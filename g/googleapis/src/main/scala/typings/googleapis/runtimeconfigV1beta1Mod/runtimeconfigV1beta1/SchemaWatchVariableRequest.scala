@@ -19,19 +19,15 @@ trait SchemaWatchVariableRequest extends StObject {
 }
 object SchemaWatchVariableRequest {
   
-  @scala.inline
-  def apply(): SchemaWatchVariableRequest = {
+  inline def apply(): SchemaWatchVariableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWatchVariableRequest]
   }
   
-  @scala.inline
-  implicit class SchemaWatchVariableRequestMutableBuilder[Self <: SchemaWatchVariableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWatchVariableRequest](x: Self) {
     
-    @scala.inline
-    def setNewerThan(value: String): Self = StObject.set(x, "newerThan", value.asInstanceOf[js.Any])
+    inline def setNewerThan(value: String): Self = StObject.set(x, "newerThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewerThanUndefined: Self = StObject.set(x, "newerThan", js.undefined)
+    inline def setNewerThanUndefined: Self = StObject.set(x, "newerThan", js.undefined)
   }
 }

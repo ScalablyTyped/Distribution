@@ -18,25 +18,19 @@ trait GetGroupInput extends StObject {
 }
 object GetGroupInput {
   
-  @scala.inline
-  def apply(): GetGroupInput = {
+  inline def apply(): GetGroupInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGroupInput]
   }
   
-  @scala.inline
-  implicit class GetGroupInputMutableBuilder[Self <: GetGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupInput](x: Self) {
     
-    @scala.inline
-    def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
   }
 }

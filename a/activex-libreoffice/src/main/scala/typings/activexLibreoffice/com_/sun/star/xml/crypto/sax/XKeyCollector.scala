@@ -23,8 +23,7 @@ trait XKeyCollector
 }
 object XKeyCollector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -34,10 +33,8 @@ object XKeyCollector {
     __obj.asInstanceOf[XKeyCollector]
   }
   
-  @scala.inline
-  implicit class XKeyCollectorMutableBuilder[Self <: XKeyCollector] (val x: Self) extends AnyVal {
+  extension [Self <: XKeyCollector](x: Self) {
     
-    @scala.inline
-    def setSetKeyId(value: Double => Unit): Self = StObject.set(x, "setKeyId", js.Any.fromFunction1(value))
+    inline def setSetKeyId(value: Double => Unit): Self = StObject.set(x, "setKeyId", js.Any.fromFunction1(value))
   }
 }

@@ -16,31 +16,23 @@ trait DriveItemVersion
 }
 object DriveItemVersion {
   
-  @scala.inline
-  def apply(): DriveItemVersion = {
+  inline def apply(): DriveItemVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveItemVersion]
   }
   
-  @scala.inline
-  implicit class DriveItemVersionMutableBuilder[Self <: DriveItemVersion] (val x: Self) extends AnyVal {
+  extension [Self <: DriveItemVersion](x: Self) {
     
-    @scala.inline
-    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeNull: Self = StObject.set(x, "size", null)
+    inline def setSizeNull: Self = StObject.set(x, "size", null)
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

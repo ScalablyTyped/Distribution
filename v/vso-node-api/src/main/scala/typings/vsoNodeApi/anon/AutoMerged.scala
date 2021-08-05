@@ -18,8 +18,7 @@ trait AutoMerged extends StObject {
 }
 object AutoMerged {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoMerged: scala.Double,
     takeSourceContent: scala.Double,
     takeTargetContent: scala.Double,
@@ -30,22 +29,16 @@ object AutoMerged {
     __obj.asInstanceOf[AutoMerged]
   }
   
-  @scala.inline
-  implicit class AutoMergedMutableBuilder[Self <: AutoMerged] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMerged](x: Self) {
     
-    @scala.inline
-    def setAutoMerged(value: scala.Double): Self = StObject.set(x, "autoMerged", value.asInstanceOf[js.Any])
+    inline def setAutoMerged(value: scala.Double): Self = StObject.set(x, "autoMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeSourceContent(value: scala.Double): Self = StObject.set(x, "takeSourceContent", value.asInstanceOf[js.Any])
+    inline def setTakeSourceContent(value: scala.Double): Self = StObject.set(x, "takeSourceContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeTargetContent(value: scala.Double): Self = StObject.set(x, "takeTargetContent", value.asInstanceOf[js.Any])
+    inline def setTakeTargetContent(value: scala.Double): Self = StObject.set(x, "takeTargetContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
+    inline def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserMerged(value: scala.Double): Self = StObject.set(x, "userMerged", value.asInstanceOf[js.Any])
+    inline def setUserMerged(value: scala.Double): Self = StObject.set(x, "userMerged", value.asInstanceOf[js.Any])
   }
 }

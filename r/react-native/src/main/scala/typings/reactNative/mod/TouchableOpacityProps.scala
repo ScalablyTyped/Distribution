@@ -16,19 +16,15 @@ trait TouchableOpacityProps
 }
 object TouchableOpacityProps {
   
-  @scala.inline
-  def apply(): TouchableOpacityProps = {
+  inline def apply(): TouchableOpacityProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchableOpacityProps]
   }
   
-  @scala.inline
-  implicit class TouchableOpacityPropsMutableBuilder[Self <: TouchableOpacityProps] (val x: Self) extends AnyVal {
+  extension [Self <: TouchableOpacityProps](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
   }
 }

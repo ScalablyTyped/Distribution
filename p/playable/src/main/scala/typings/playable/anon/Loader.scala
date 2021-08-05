@@ -29,8 +29,7 @@ trait Loader extends StObject {
 }
 object Loader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     config: IPlayerConfig,
     engine: IPlaybackEngine,
     eventEmitter: IEventEmitter,
@@ -43,28 +42,20 @@ object Loader {
     __obj.asInstanceOf[Loader]
   }
   
-  @scala.inline
-  implicit class LoaderMutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
+  extension [Self <: Loader](x: Self) {
     
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoader(value: ILoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: ILoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainUIBlock(value: IMainUIBlock): Self = StObject.set(x, "mainUIBlock", value.asInstanceOf[js.Any])
+    inline def setMainUIBlock(value: IMainUIBlock): Self = StObject.set(x, "mainUIBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
+    inline def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

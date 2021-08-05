@@ -23,31 +23,23 @@ trait MigrationsStartForAuthenticatedUserEndpoint extends StObject {
 }
 object MigrationsStartForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(repositories: js.Array[String]): MigrationsStartForAuthenticatedUserEndpoint = {
+  inline def apply(repositories: js.Array[String]): MigrationsStartForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(repositories = repositories.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsStartForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsStartForAuthenticatedUserEndpointMutableBuilder[Self <: MigrationsStartForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsStartForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setExclude_attachments(value: Boolean): Self = StObject.set(x, "exclude_attachments", value.asInstanceOf[js.Any])
+    inline def setExclude_attachments(value: Boolean): Self = StObject.set(x, "exclude_attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude_attachmentsUndefined: Self = StObject.set(x, "exclude_attachments", js.undefined)
+    inline def setExclude_attachmentsUndefined: Self = StObject.set(x, "exclude_attachments", js.undefined)
     
-    @scala.inline
-    def setLock_repositories(value: Boolean): Self = StObject.set(x, "lock_repositories", value.asInstanceOf[js.Any])
+    inline def setLock_repositories(value: Boolean): Self = StObject.set(x, "lock_repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLock_repositoriesUndefined: Self = StObject.set(x, "lock_repositories", js.undefined)
+    inline def setLock_repositoriesUndefined: Self = StObject.set(x, "lock_repositories", js.undefined)
     
-    @scala.inline
-    def setRepositories(value: js.Array[String]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(value: js.Array[String]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoriesVarargs(value: String*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+    inline def setRepositoriesVarargs(value: String*): Self = StObject.set(x, "repositories", js.Array(value :_*))
   }
 }

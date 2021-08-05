@@ -69,8 +69,7 @@ object Runner {
     * @param {} options
     */
   /* static member */
-  @scala.inline
-  def create(options: IRunnerOptions): typings.phaser.MatterJS.Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Runner]
+  inline def create(options: IRunnerOptions): typings.phaser.MatterJS.Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Runner]
   
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
@@ -78,16 +77,14 @@ object Runner {
     * @param {engine} engine
     */
   /* static member */
-  @scala.inline
-  def run(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Runner]
+  inline def run(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Runner]
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
   /* static member */
-  @scala.inline
-  def run(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Runner = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Runner]
+  inline def run(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Runner = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Runner]
   
   /**
     * Alias for `Runner.run`.
@@ -96,8 +93,7 @@ object Runner {
     * @param {engine} engine
     */
   /* static member */
-  @scala.inline
-  def start(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Ends execution of `Runner.run` on the given `runner`, by canceling the animation frame request event loop.
@@ -106,8 +102,7 @@ object Runner {
     * @param {runner} runner
     */
   /* static member */
-  @scala.inline
-  def stop(runner: typings.phaser.MatterJS.Runner): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(runner.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stop(runner: typings.phaser.MatterJS.Runner): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(runner.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A game loop utility that updates the engine and renderer by one step (a 'tick').
@@ -120,6 +115,5 @@ object Runner {
     * @param {number} time
     */
   /* static member */
-  @scala.inline
-  def tick(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine, time: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def tick(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine, time: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

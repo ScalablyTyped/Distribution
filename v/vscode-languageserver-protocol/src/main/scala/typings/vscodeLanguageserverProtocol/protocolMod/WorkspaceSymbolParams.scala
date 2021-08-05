@@ -17,16 +17,13 @@ trait WorkspaceSymbolParams
 }
 object WorkspaceSymbolParams {
   
-  @scala.inline
-  def apply(query: String): WorkspaceSymbolParams = {
+  inline def apply(query: String): WorkspaceSymbolParams = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceSymbolParams]
   }
   
-  @scala.inline
-  implicit class WorkspaceSymbolParamsMutableBuilder[Self <: WorkspaceSymbolParams] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceSymbolParams](x: Self) {
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

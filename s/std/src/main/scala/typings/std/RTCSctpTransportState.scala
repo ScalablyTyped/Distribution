@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCSctpTransportState extends StObject
 object RTCSctpTransportState {
   
-  @scala.inline
-  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
+  inline def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   
-  @scala.inline
-  def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
+  inline def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
   
-  @scala.inline
-  def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
+  inline def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
 }

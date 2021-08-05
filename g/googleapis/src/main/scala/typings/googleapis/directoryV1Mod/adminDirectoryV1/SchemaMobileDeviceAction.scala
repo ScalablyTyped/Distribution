@@ -17,19 +17,15 @@ trait SchemaMobileDeviceAction extends StObject {
 }
 object SchemaMobileDeviceAction {
   
-  @scala.inline
-  def apply(): SchemaMobileDeviceAction = {
+  inline def apply(): SchemaMobileDeviceAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMobileDeviceAction]
   }
   
-  @scala.inline
-  implicit class SchemaMobileDeviceActionMutableBuilder[Self <: SchemaMobileDeviceAction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMobileDeviceAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
   }
 }

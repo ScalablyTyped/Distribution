@@ -19,23 +19,18 @@ trait MemberExpression
 }
 object MemberExpression {
   
-  @scala.inline
-  def apply(base: Expression, identifier: Identifier, indexer: Dot | Colon): MemberExpression = {
+  inline def apply(base: Expression, identifier: Identifier, indexer: Dot | Colon): MemberExpression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], indexer = indexer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[MemberExpression]
   }
   
-  @scala.inline
-  implicit class MemberExpressionMutableBuilder[Self <: MemberExpression] (val x: Self) extends AnyVal {
+  extension [Self <: MemberExpression](x: Self) {
     
-    @scala.inline
-    def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexer(value: Dot | Colon): Self = StObject.set(x, "indexer", value.asInstanceOf[js.Any])
+    inline def setIndexer(value: Dot | Colon): Self = StObject.set(x, "indexer", value.asInstanceOf[js.Any])
   }
 }

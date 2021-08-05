@@ -32,8 +32,7 @@ trait `2a864886f70d010101` extends StObject {
 }
 object `2a864886f70d010101` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `2a864886f70d010101`: String,
     `2a8648ce380401`: String,
     `2a8648ce380403`: String,
@@ -63,43 +62,30 @@ object `2a864886f70d010101` {
     __obj.asInstanceOf[`2a864886f70d010101`]
   }
   
-  @scala.inline
-  implicit class `2a864886f70d010101MutableBuilder`[Self <: `2a864886f70d010101`] (val x: Self) extends AnyVal {
+  extension [Self <: `2a864886f70d010101`](x: Self) {
     
-    @scala.inline
-    def set2a864886f70d010101(value: String): Self = StObject.set(x, "2a864886f70d010101", value.asInstanceOf[js.Any])
+    inline def set2a864886f70d010101(value: String): Self = StObject.set(x, "2a864886f70d010101", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2a8648ce380401(value: String): Self = StObject.set(x, "2a8648ce380401", value.asInstanceOf[js.Any])
+    inline def set2a8648ce380401(value: String): Self = StObject.set(x, "2a8648ce380401", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2a8648ce380403(value: String): Self = StObject.set(x, "2a8648ce380403", value.asInstanceOf[js.Any])
+    inline def set2a8648ce380403(value: String): Self = StObject.set(x, "2a8648ce380403", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2a8648ce3d0201(value: String): Self = StObject.set(x, "2a8648ce3d0201", value.asInstanceOf[js.Any])
+    inline def set2a8648ce3d0201(value: String): Self = StObject.set(x, "2a8648ce3d0201", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2a8648ce3d030107(value: String): Self = StObject.set(x, "2a8648ce3d030107", value.asInstanceOf[js.Any])
+    inline def set2a8648ce3d030107(value: String): Self = StObject.set(x, "2a8648ce3d030107", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2b8104000a(value: String): Self = StObject.set(x, "2b8104000a", value.asInstanceOf[js.Any])
+    inline def set2b8104000a(value: String): Self = StObject.set(x, "2b8104000a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2b8104001f(value: String): Self = StObject.set(x, "2b8104001f", value.asInstanceOf[js.Any])
+    inline def set2b8104001f(value: String): Self = StObject.set(x, "2b8104001f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2b81040021(value: String): Self = StObject.set(x, "2b81040021", value.asInstanceOf[js.Any])
+    inline def set2b81040021(value: String): Self = StObject.set(x, "2b81040021", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2b81040022(value: String): Self = StObject.set(x, "2b81040022", value.asInstanceOf[js.Any])
+    inline def set2b81040022(value: String): Self = StObject.set(x, "2b81040022", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2b81040023(value: String): Self = StObject.set(x, "2b81040023", value.asInstanceOf[js.Any])
+    inline def set2b81040023(value: String): Self = StObject.set(x, "2b81040023", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set608648016503040301(value: String): Self = StObject.set(x, "608648016503040301", value.asInstanceOf[js.Any])
+    inline def set608648016503040301(value: String): Self = StObject.set(x, "608648016503040301", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set608648016503040302(value: String): Self = StObject.set(x, "608648016503040302", value.asInstanceOf[js.Any])
+    inline def set608648016503040302(value: String): Self = StObject.set(x, "608648016503040302", value.asInstanceOf[js.Any])
   }
 }

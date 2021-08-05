@@ -10,19 +10,15 @@ trait RegenerateSecurityTokenResponse extends StObject {
 }
 object RegenerateSecurityTokenResponse {
   
-  @scala.inline
-  def apply(): RegenerateSecurityTokenResponse = {
+  inline def apply(): RegenerateSecurityTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegenerateSecurityTokenResponse]
   }
   
-  @scala.inline
-  implicit class RegenerateSecurityTokenResponseMutableBuilder[Self <: RegenerateSecurityTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegenerateSecurityTokenResponse](x: Self) {
     
-    @scala.inline
-    def setBot(value: Bot): Self = StObject.set(x, "Bot", value.asInstanceOf[js.Any])
+    inline def setBot(value: Bot): Self = StObject.set(x, "Bot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotUndefined: Self = StObject.set(x, "Bot", js.undefined)
+    inline def setBotUndefined: Self = StObject.set(x, "Bot", js.undefined)
   }
 }

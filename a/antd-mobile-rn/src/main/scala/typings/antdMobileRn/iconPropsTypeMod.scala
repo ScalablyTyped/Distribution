@@ -14,24 +14,19 @@ object iconPropsTypeMod {
   }
   object IconPropsType {
     
-    @scala.inline
-    def apply(`type`: String): IconPropsType = {
+    inline def apply(`type`: String): IconPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconPropsType]
     }
     
-    @scala.inline
-    implicit class IconPropsTypeMutableBuilder[Self <: IconPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: IconPropsType](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

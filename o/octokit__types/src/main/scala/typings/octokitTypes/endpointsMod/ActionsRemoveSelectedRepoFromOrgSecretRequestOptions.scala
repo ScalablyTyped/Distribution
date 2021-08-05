@@ -20,26 +20,20 @@ trait ActionsRemoveSelectedRepoFromOrgSecretRequestOptions extends StObject {
 }
 object ActionsRemoveSelectedRepoFromOrgSecretRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsRemoveSelectedRepoFromOrgSecretRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsRemoveSelectedRepoFromOrgSecretRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/orgs/:org/actions/secrets/:secret_name/repositories/:repository_id")
     __obj.asInstanceOf[ActionsRemoveSelectedRepoFromOrgSecretRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActionsRemoveSelectedRepoFromOrgSecretRequestOptionsMutableBuilder[Self <: ActionsRemoveSelectedRepoFromOrgSecretRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsRemoveSelectedRepoFromOrgSecretRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(
+    inline def setUrl(
       value: SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositoriesSlashColonrepository_id
     ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

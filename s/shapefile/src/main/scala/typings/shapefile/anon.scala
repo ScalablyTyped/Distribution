@@ -14,20 +14,16 @@ object anon {
   }
   object Done {
     
-    @scala.inline
-    def apply[RecordType](done: Boolean, value: RecordType): Done[RecordType] = {
+    inline def apply[RecordType](done: Boolean, value: RecordType): Done[RecordType] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done[RecordType]]
     }
     
-    @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[?], RecordType] (val x: Self & Done[RecordType]) extends AnyVal {
+    extension [Self <: Done[?], RecordType](x: Self & Done[RecordType]) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: RecordType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: RecordType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

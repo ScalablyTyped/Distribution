@@ -28,37 +28,27 @@ trait VolumeStatusAction extends StObject {
 }
 object VolumeStatusAction {
   
-  @scala.inline
-  def apply(): VolumeStatusAction = {
+  inline def apply(): VolumeStatusAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeStatusAction]
   }
   
-  @scala.inline
-  implicit class VolumeStatusActionMutableBuilder[Self <: VolumeStatusAction] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeStatusAction](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
   }
 }

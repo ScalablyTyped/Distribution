@@ -65,8 +65,7 @@ trait EnhancedCustomShapeGeometry extends StObject {
 }
 object EnhancedCustomShapeGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustmentValues: SafeArray[EnhancedCustomShapeAdjustmentValue],
     Equations: SafeArray[String],
     Extrusion: SafeArray[PropertyValue],
@@ -83,40 +82,28 @@ object EnhancedCustomShapeGeometry {
     __obj.asInstanceOf[EnhancedCustomShapeGeometry]
   }
   
-  @scala.inline
-  implicit class EnhancedCustomShapeGeometryMutableBuilder[Self <: EnhancedCustomShapeGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedCustomShapeGeometry](x: Self) {
     
-    @scala.inline
-    def setAdjustmentValues(value: SafeArray[EnhancedCustomShapeAdjustmentValue]): Self = StObject.set(x, "AdjustmentValues", value.asInstanceOf[js.Any])
+    inline def setAdjustmentValues(value: SafeArray[EnhancedCustomShapeAdjustmentValue]): Self = StObject.set(x, "AdjustmentValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquations(value: SafeArray[String]): Self = StObject.set(x, "Equations", value.asInstanceOf[js.Any])
+    inline def setEquations(value: SafeArray[String]): Self = StObject.set(x, "Equations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrusion(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Extrusion", value.asInstanceOf[js.Any])
+    inline def setExtrusion(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Extrusion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandles(value: SafeArray[PropertyValues]): Self = StObject.set(x, "Handles", value.asInstanceOf[js.Any])
+    inline def setHandles(value: SafeArray[PropertyValues]): Self = StObject.set(x, "Handles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirroredX(value: Boolean): Self = StObject.set(x, "MirroredX", value.asInstanceOf[js.Any])
+    inline def setMirroredX(value: Boolean): Self = StObject.set(x, "MirroredX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirroredY(value: Boolean): Self = StObject.set(x, "MirroredY", value.asInstanceOf[js.Any])
+    inline def setMirroredY(value: Boolean): Self = StObject.set(x, "MirroredY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPath(value: SafeArray[PropertyValue]): Self = StObject.set(x, "TextPath", value.asInstanceOf[js.Any])
+    inline def setTextPath(value: SafeArray[PropertyValue]): Self = StObject.set(x, "TextPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRotateAngle(value: Double): Self = StObject.set(x, "TextRotateAngle", value.asInstanceOf[js.Any])
+    inline def setTextRotateAngle(value: Double): Self = StObject.set(x, "TextRotateAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewBox(value: Rectangle): Self = StObject.set(x, "ViewBox", value.asInstanceOf[js.Any])
+    inline def setViewBox(value: Rectangle): Self = StObject.set(x, "ViewBox", value.asInstanceOf[js.Any])
   }
 }

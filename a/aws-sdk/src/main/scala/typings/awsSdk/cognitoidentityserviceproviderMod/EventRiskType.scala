@@ -23,31 +23,23 @@ trait EventRiskType extends StObject {
 }
 object EventRiskType {
   
-  @scala.inline
-  def apply(): EventRiskType = {
+  inline def apply(): EventRiskType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventRiskType]
   }
   
-  @scala.inline
-  implicit class EventRiskTypeMutableBuilder[Self <: EventRiskType] (val x: Self) extends AnyVal {
+  extension [Self <: EventRiskType](x: Self) {
     
-    @scala.inline
-    def setCompromisedCredentialsDetected(value: WrappedBooleanType): Self = StObject.set(x, "CompromisedCredentialsDetected", value.asInstanceOf[js.Any])
+    inline def setCompromisedCredentialsDetected(value: WrappedBooleanType): Self = StObject.set(x, "CompromisedCredentialsDetected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompromisedCredentialsDetectedUndefined: Self = StObject.set(x, "CompromisedCredentialsDetected", js.undefined)
+    inline def setCompromisedCredentialsDetectedUndefined: Self = StObject.set(x, "CompromisedCredentialsDetected", js.undefined)
     
-    @scala.inline
-    def setRiskDecision(value: RiskDecisionType): Self = StObject.set(x, "RiskDecision", value.asInstanceOf[js.Any])
+    inline def setRiskDecision(value: RiskDecisionType): Self = StObject.set(x, "RiskDecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiskDecisionUndefined: Self = StObject.set(x, "RiskDecision", js.undefined)
+    inline def setRiskDecisionUndefined: Self = StObject.set(x, "RiskDecision", js.undefined)
     
-    @scala.inline
-    def setRiskLevel(value: RiskLevelType): Self = StObject.set(x, "RiskLevel", value.asInstanceOf[js.Any])
+    inline def setRiskLevel(value: RiskLevelType): Self = StObject.set(x, "RiskLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiskLevelUndefined: Self = StObject.set(x, "RiskLevel", js.undefined)
+    inline def setRiskLevelUndefined: Self = StObject.set(x, "RiskLevel", js.undefined)
   }
 }

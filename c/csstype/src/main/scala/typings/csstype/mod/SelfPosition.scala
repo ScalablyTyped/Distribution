@@ -23,24 +23,17 @@ trait SelfPosition
      with _PlaceSelfProperty
 object SelfPosition {
   
-  @scala.inline
-  def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
+  inline def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
   
-  @scala.inline
-  def end: typings.csstype.csstypeStrings.end = "end".asInstanceOf[typings.csstype.csstypeStrings.end]
+  inline def end: typings.csstype.csstypeStrings.end = "end".asInstanceOf[typings.csstype.csstypeStrings.end]
   
-  @scala.inline
-  def `flex-end`: typings.csstype.csstypeStrings.`flex-end` = "flex-end".asInstanceOf[typings.csstype.csstypeStrings.`flex-end`]
+  inline def `flex-end`: typings.csstype.csstypeStrings.`flex-end` = "flex-end".asInstanceOf[typings.csstype.csstypeStrings.`flex-end`]
   
-  @scala.inline
-  def `flex-start`: typings.csstype.csstypeStrings.`flex-start` = "flex-start".asInstanceOf[typings.csstype.csstypeStrings.`flex-start`]
+  inline def `flex-start`: typings.csstype.csstypeStrings.`flex-start` = "flex-start".asInstanceOf[typings.csstype.csstypeStrings.`flex-start`]
   
-  @scala.inline
-  def `self-end`: typings.csstype.csstypeStrings.`self-end` = "self-end".asInstanceOf[typings.csstype.csstypeStrings.`self-end`]
+  inline def `self-end`: typings.csstype.csstypeStrings.`self-end` = "self-end".asInstanceOf[typings.csstype.csstypeStrings.`self-end`]
   
-  @scala.inline
-  def `self-start`: typings.csstype.csstypeStrings.`self-start` = "self-start".asInstanceOf[typings.csstype.csstypeStrings.`self-start`]
+  inline def `self-start`: typings.csstype.csstypeStrings.`self-start` = "self-start".asInstanceOf[typings.csstype.csstypeStrings.`self-start`]
   
-  @scala.inline
-  def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
+  inline def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
 }

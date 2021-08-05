@@ -34,8 +34,7 @@ trait IDeployJobStatus extends StObject {
 }
 object IDeployJobStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     jobid: String,
     startTime: Double,
     status: IUpdateAppJobStatus,
@@ -47,55 +46,38 @@ object IDeployJobStatus {
     __obj.asInstanceOf[IDeployJobStatus]
   }
   
-  @scala.inline
-  implicit class IDeployJobStatusMutableBuilder[Self <: IDeployJobStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IDeployJobStatus](x: Self) {
     
-    @scala.inline
-    def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
+    inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
+    inline def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
-    @scala.inline
-    def setBuildErrors(value: js.Array[IBuildError]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
+    inline def setBuildErrors(value: js.Array[IBuildError]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildErrorsUndefined: Self = StObject.set(x, "buildErrors", js.undefined)
+    inline def setBuildErrorsUndefined: Self = StObject.set(x, "buildErrors", js.undefined)
     
-    @scala.inline
-    def setBuildErrorsVarargs(value: IBuildError*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
+    inline def setBuildErrorsVarargs(value: IBuildError*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildstatus(value: String): Self = StObject.set(x, "buildstatus", value.asInstanceOf[js.Any])
+    inline def setBuildstatus(value: String): Self = StObject.set(x, "buildstatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildstatusNull: Self = StObject.set(x, "buildstatus", null)
+    inline def setBuildstatusNull: Self = StObject.set(x, "buildstatus", null)
     
-    @scala.inline
-    def setConsistencyErrors(value: js.Array[IProblem]): Self = StObject.set(x, "consistencyErrors", value.asInstanceOf[js.Any])
+    inline def setConsistencyErrors(value: js.Array[IProblem]): Self = StObject.set(x, "consistencyErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistencyErrorsUndefined: Self = StObject.set(x, "consistencyErrors", js.undefined)
+    inline def setConsistencyErrorsUndefined: Self = StObject.set(x, "consistencyErrors", js.undefined)
     
-    @scala.inline
-    def setConsistencyErrorsVarargs(value: IProblem*): Self = StObject.set(x, "consistencyErrors", js.Array(value :_*))
+    inline def setConsistencyErrorsVarargs(value: IProblem*): Self = StObject.set(x, "consistencyErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setJobid(value: String): Self = StObject.set(x, "jobid", value.asInstanceOf[js.Any])
+    inline def setJobid(value: String): Self = StObject.set(x, "jobid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: IUpdateAppJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: IUpdateAppJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrace(value: js.Array[String]): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: js.Array[String]): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceVarargs(value: String*): Self = StObject.set(x, "trace", js.Array(value :_*))
+    inline def setTraceVarargs(value: String*): Self = StObject.set(x, "trace", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: full | fast): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: full | fast): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

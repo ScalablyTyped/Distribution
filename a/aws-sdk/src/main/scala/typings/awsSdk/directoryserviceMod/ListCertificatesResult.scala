@@ -18,28 +18,21 @@ trait ListCertificatesResult extends StObject {
 }
 object ListCertificatesResult {
   
-  @scala.inline
-  def apply(): ListCertificatesResult = {
+  inline def apply(): ListCertificatesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCertificatesResult]
   }
   
-  @scala.inline
-  implicit class ListCertificatesResultMutableBuilder[Self <: ListCertificatesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListCertificatesResult](x: Self) {
     
-    @scala.inline
-    def setCertificatesInfo(value: CertificatesInfo): Self = StObject.set(x, "CertificatesInfo", value.asInstanceOf[js.Any])
+    inline def setCertificatesInfo(value: CertificatesInfo): Self = StObject.set(x, "CertificatesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesInfoUndefined: Self = StObject.set(x, "CertificatesInfo", js.undefined)
+    inline def setCertificatesInfoUndefined: Self = StObject.set(x, "CertificatesInfo", js.undefined)
     
-    @scala.inline
-    def setCertificatesInfoVarargs(value: CertificateInfo*): Self = StObject.set(x, "CertificatesInfo", js.Array(value :_*))
+    inline def setCertificatesInfoVarargs(value: CertificateInfo*): Self = StObject.set(x, "CertificatesInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

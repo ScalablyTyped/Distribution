@@ -18,14 +18,11 @@ object Guid {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getEmpty(): typings.sharepoint.SP.Guid = ^.asInstanceOf[js.Dynamic].applyDynamic("get_empty")().asInstanceOf[typings.sharepoint.SP.Guid]
+  inline def getEmpty(): typings.sharepoint.SP.Guid = ^.asInstanceOf[js.Dynamic].applyDynamic("get_empty")().asInstanceOf[typings.sharepoint.SP.Guid]
   
   /* static member */
-  @scala.inline
-  def isValid(uuid: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(uuid.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(uuid: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(uuid.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def newGuid(): typings.sharepoint.SP.Guid = ^.asInstanceOf[js.Dynamic].applyDynamic("newGuid")().asInstanceOf[typings.sharepoint.SP.Guid]
+  inline def newGuid(): typings.sharepoint.SP.Guid = ^.asInstanceOf[js.Dynamic].applyDynamic("newGuid")().asInstanceOf[typings.sharepoint.SP.Guid]
 }

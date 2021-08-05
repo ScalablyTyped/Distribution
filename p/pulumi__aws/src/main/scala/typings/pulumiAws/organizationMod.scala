@@ -95,21 +95,16 @@ object organizationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Organization]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Organization]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationState): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Organization]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Organization]
+    inline def get(name: String, id: Input[ID]): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Organization]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Organization]
+    inline def get(name: String, id: Input[ID], state: OrganizationState): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Organization]
+    inline def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Organization]
     
     /**
       * Returns true if the given object is an instance of Organization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean]
   }
   
   trait OrganizationArgs extends StObject {
@@ -131,38 +126,28 @@ object organizationMod {
   }
   object OrganizationArgs {
     
-    @scala.inline
-    def apply(): OrganizationArgs = {
+    inline def apply(): OrganizationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrganizationArgs]
     }
     
-    @scala.inline
-    implicit class OrganizationArgsMutableBuilder[Self <: OrganizationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationArgs](x: Self) {
       
-      @scala.inline
-      def setAwsServiceAccessPrincipals(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
+      inline def setAwsServiceAccessPrincipals(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsServiceAccessPrincipalsUndefined: Self = StObject.set(x, "awsServiceAccessPrincipals", js.undefined)
+      inline def setAwsServiceAccessPrincipalsUndefined: Self = StObject.set(x, "awsServiceAccessPrincipals", js.undefined)
       
-      @scala.inline
-      def setAwsServiceAccessPrincipalsVarargs(value: Input[String]*): Self = StObject.set(x, "awsServiceAccessPrincipals", js.Array(value :_*))
+      inline def setAwsServiceAccessPrincipalsVarargs(value: Input[String]*): Self = StObject.set(x, "awsServiceAccessPrincipals", js.Array(value :_*))
       
-      @scala.inline
-      def setEnabledPolicyTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "enabledPolicyTypes", value.asInstanceOf[js.Any])
+      inline def setEnabledPolicyTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "enabledPolicyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledPolicyTypesUndefined: Self = StObject.set(x, "enabledPolicyTypes", js.undefined)
+      inline def setEnabledPolicyTypesUndefined: Self = StObject.set(x, "enabledPolicyTypes", js.undefined)
       
-      @scala.inline
-      def setEnabledPolicyTypesVarargs(value: Input[String]*): Self = StObject.set(x, "enabledPolicyTypes", js.Array(value :_*))
+      inline def setEnabledPolicyTypesVarargs(value: Input[String]*): Self = StObject.set(x, "enabledPolicyTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatureSet(value: Input[String]): Self = StObject.set(x, "featureSet", value.asInstanceOf[js.Any])
+      inline def setFeatureSet(value: Input[String]): Self = StObject.set(x, "featureSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureSetUndefined: Self = StObject.set(x, "featureSet", js.undefined)
+      inline def setFeatureSetUndefined: Self = StObject.set(x, "featureSet", js.undefined)
     }
   }
   
@@ -228,93 +213,66 @@ object organizationMod {
   }
   object OrganizationState {
     
-    @scala.inline
-    def apply(): OrganizationState = {
+    inline def apply(): OrganizationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrganizationState]
     }
     
-    @scala.inline
-    implicit class OrganizationStateMutableBuilder[Self <: OrganizationState] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationState](x: Self) {
       
-      @scala.inline
-      def setAccounts(value: Input[js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationAccount]]]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
+      inline def setAccounts(value: Input[js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationAccount]]]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
+      inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
       
-      @scala.inline
-      def setAccountsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationAccount]*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+      inline def setAccountsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationAccount]*): Self = StObject.set(x, "accounts", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAwsServiceAccessPrincipals(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
+      inline def setAwsServiceAccessPrincipals(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsServiceAccessPrincipalsUndefined: Self = StObject.set(x, "awsServiceAccessPrincipals", js.undefined)
+      inline def setAwsServiceAccessPrincipalsUndefined: Self = StObject.set(x, "awsServiceAccessPrincipals", js.undefined)
       
-      @scala.inline
-      def setAwsServiceAccessPrincipalsVarargs(value: Input[String]*): Self = StObject.set(x, "awsServiceAccessPrincipals", js.Array(value :_*))
+      inline def setAwsServiceAccessPrincipalsVarargs(value: Input[String]*): Self = StObject.set(x, "awsServiceAccessPrincipals", js.Array(value :_*))
       
-      @scala.inline
-      def setEnabledPolicyTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "enabledPolicyTypes", value.asInstanceOf[js.Any])
+      inline def setEnabledPolicyTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "enabledPolicyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledPolicyTypesUndefined: Self = StObject.set(x, "enabledPolicyTypes", js.undefined)
+      inline def setEnabledPolicyTypesUndefined: Self = StObject.set(x, "enabledPolicyTypes", js.undefined)
       
-      @scala.inline
-      def setEnabledPolicyTypesVarargs(value: Input[String]*): Self = StObject.set(x, "enabledPolicyTypes", js.Array(value :_*))
+      inline def setEnabledPolicyTypesVarargs(value: Input[String]*): Self = StObject.set(x, "enabledPolicyTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatureSet(value: Input[String]): Self = StObject.set(x, "featureSet", value.asInstanceOf[js.Any])
+      inline def setFeatureSet(value: Input[String]): Self = StObject.set(x, "featureSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureSetUndefined: Self = StObject.set(x, "featureSet", js.undefined)
+      inline def setFeatureSetUndefined: Self = StObject.set(x, "featureSet", js.undefined)
       
-      @scala.inline
-      def setMasterAccountArn(value: Input[String]): Self = StObject.set(x, "masterAccountArn", value.asInstanceOf[js.Any])
+      inline def setMasterAccountArn(value: Input[String]): Self = StObject.set(x, "masterAccountArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountArnUndefined: Self = StObject.set(x, "masterAccountArn", js.undefined)
+      inline def setMasterAccountArnUndefined: Self = StObject.set(x, "masterAccountArn", js.undefined)
       
-      @scala.inline
-      def setMasterAccountEmail(value: Input[String]): Self = StObject.set(x, "masterAccountEmail", value.asInstanceOf[js.Any])
+      inline def setMasterAccountEmail(value: Input[String]): Self = StObject.set(x, "masterAccountEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountEmailUndefined: Self = StObject.set(x, "masterAccountEmail", js.undefined)
+      inline def setMasterAccountEmailUndefined: Self = StObject.set(x, "masterAccountEmail", js.undefined)
       
-      @scala.inline
-      def setMasterAccountId(value: Input[String]): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
+      inline def setMasterAccountId(value: Input[String]): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountIdUndefined: Self = StObject.set(x, "masterAccountId", js.undefined)
+      inline def setMasterAccountIdUndefined: Self = StObject.set(x, "masterAccountId", js.undefined)
       
-      @scala.inline
-      def setNonMasterAccounts(
+      inline def setNonMasterAccounts(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationNonMasterAccount]]
             ]
       ): Self = StObject.set(x, "nonMasterAccounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonMasterAccountsUndefined: Self = StObject.set(x, "nonMasterAccounts", js.undefined)
+      inline def setNonMasterAccountsUndefined: Self = StObject.set(x, "nonMasterAccounts", js.undefined)
       
-      @scala.inline
-      def setNonMasterAccountsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationNonMasterAccount]*): Self = StObject.set(x, "nonMasterAccounts", js.Array(value :_*))
+      inline def setNonMasterAccountsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationNonMasterAccount]*): Self = StObject.set(x, "nonMasterAccounts", js.Array(value :_*))
       
-      @scala.inline
-      def setRoots(value: Input[js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationRoot]]]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
+      inline def setRoots(value: Input[js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationRoot]]]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
+      inline def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
       
-      @scala.inline
-      def setRootsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationRoot]*): Self = StObject.set(x, "roots", js.Array(value :_*))
+      inline def setRootsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationRoot]*): Self = StObject.set(x, "roots", js.Array(value :_*))
     }
   }
 }

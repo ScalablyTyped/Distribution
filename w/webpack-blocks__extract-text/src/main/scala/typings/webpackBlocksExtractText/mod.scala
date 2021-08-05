@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(outputFilePattern: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(outputFilePattern.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(outputFilePattern: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(outputFilePattern.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("@webpack-blocks/extract-text", JSImport.Namespace)
   @js.native

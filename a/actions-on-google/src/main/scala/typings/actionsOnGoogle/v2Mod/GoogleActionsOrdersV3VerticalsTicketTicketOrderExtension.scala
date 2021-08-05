@@ -13,19 +13,15 @@ trait GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension extends StObject 
 }
 object GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsTicketTicketOrderExtensionMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension](x: Self) {
     
-    @scala.inline
-    def setTicketEvent(value: GoogleActionsOrdersV3VerticalsTicketTicketEvent): Self = StObject.set(x, "ticketEvent", value.asInstanceOf[js.Any])
+    inline def setTicketEvent(value: GoogleActionsOrdersV3VerticalsTicketTicketEvent): Self = StObject.set(x, "ticketEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketEventUndefined: Self = StObject.set(x, "ticketEvent", js.undefined)
+    inline def setTicketEventUndefined: Self = StObject.set(x, "ticketEvent", js.undefined)
   }
 }

@@ -51,8 +51,7 @@ trait ansi16 extends StObject {
 }
 object ansi16 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ansi256: ANSI16_ => ANSI256_,
     apple: ANSI16_ => APPLE_,
     cmyk: ANSI16_ => CMYK_,
@@ -72,49 +71,34 @@ object ansi16 {
     __obj.asInstanceOf[ansi16]
   }
   
-  @scala.inline
-  implicit class ansi16MutableBuilder[Self <: ansi16] (val x: Self) extends AnyVal {
+  extension [Self <: ansi16](x: Self) {
     
-    @scala.inline
-    def setAnsi256(value: ANSI16_ => ANSI256_): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
+    inline def setAnsi256(value: ANSI16_ => ANSI256_): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApple(value: ANSI16_ => APPLE_): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
+    inline def setApple(value: ANSI16_ => APPLE_): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCmyk(value: ANSI16_ => CMYK_): Self = StObject.set(x, "cmyk", js.Any.fromFunction1(value))
+    inline def setCmyk(value: ANSI16_ => CMYK_): Self = StObject.set(x, "cmyk", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGray(value: ANSI16_ => GRAY_): Self = StObject.set(x, "gray", js.Any.fromFunction1(value))
+    inline def setGray(value: ANSI16_ => GRAY_): Self = StObject.set(x, "gray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHcg(value: ANSI16_ => HCG_): Self = StObject.set(x, "hcg", js.Any.fromFunction1(value))
+    inline def setHcg(value: ANSI16_ => HCG_): Self = StObject.set(x, "hcg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHex(value: ANSI16_ => HEX_): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
+    inline def setHex(value: ANSI16_ => HEX_): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHsl(value: ANSI16_ => HSL_): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
+    inline def setHsl(value: ANSI16_ => HSL_): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHsv(value: ANSI16_ => HSV_): Self = StObject.set(x, "hsv", js.Any.fromFunction1(value))
+    inline def setHsv(value: ANSI16_ => HSV_): Self = StObject.set(x, "hsv", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHwb(value: ANSI16_ => HWB_): Self = StObject.set(x, "hwb", js.Any.fromFunction1(value))
+    inline def setHwb(value: ANSI16_ => HWB_): Self = StObject.set(x, "hwb", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyword(value: ANSI16_ => KEYWORD_): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
+    inline def setKeyword(value: ANSI16_ => KEYWORD_): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLab(value: ANSI16_ => LAB_): Self = StObject.set(x, "lab", js.Any.fromFunction1(value))
+    inline def setLab(value: ANSI16_ => LAB_): Self = StObject.set(x, "lab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLch(value: ANSI16_ => LCH_): Self = StObject.set(x, "lch", js.Any.fromFunction1(value))
+    inline def setLch(value: ANSI16_ => LCH_): Self = StObject.set(x, "lch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRgb(value: ANSI16_ => RGB_): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
+    inline def setRgb(value: ANSI16_ => RGB_): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXyz(value: ANSI16_ => XYZ_): Self = StObject.set(x, "xyz", js.Any.fromFunction1(value))
+    inline def setXyz(value: ANSI16_ => XYZ_): Self = StObject.set(x, "xyz", js.Any.fromFunction1(value))
   }
 }

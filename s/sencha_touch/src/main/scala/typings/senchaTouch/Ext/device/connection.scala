@@ -59,86 +59,60 @@ object connection {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setCELL_2G(value: String): Self = StObject.set(x, "CELL_2G", value.asInstanceOf[js.Any])
+      inline def setCELL_2G(value: String): Self = StObject.set(x, "CELL_2G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCELL_2GUndefined: Self = StObject.set(x, "CELL_2G", js.undefined)
+      inline def setCELL_2GUndefined: Self = StObject.set(x, "CELL_2G", js.undefined)
       
-      @scala.inline
-      def setCELL_3G(value: String): Self = StObject.set(x, "CELL_3G", value.asInstanceOf[js.Any])
+      inline def setCELL_3G(value: String): Self = StObject.set(x, "CELL_3G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCELL_3GUndefined: Self = StObject.set(x, "CELL_3G", js.undefined)
+      inline def setCELL_3GUndefined: Self = StObject.set(x, "CELL_3G", js.undefined)
       
-      @scala.inline
-      def setCELL_4G(value: String): Self = StObject.set(x, "CELL_4G", value.asInstanceOf[js.Any])
+      inline def setCELL_4G(value: String): Self = StObject.set(x, "CELL_4G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCELL_4GUndefined: Self = StObject.set(x, "CELL_4G", js.undefined)
+      inline def setCELL_4GUndefined: Self = StObject.set(x, "CELL_4G", js.undefined)
       
-      @scala.inline
-      def setETHERNET(value: String): Self = StObject.set(x, "ETHERNET", value.asInstanceOf[js.Any])
+      inline def setETHERNET(value: String): Self = StObject.set(x, "ETHERNET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETHERNETUndefined: Self = StObject.set(x, "ETHERNET", js.undefined)
+      inline def setETHERNETUndefined: Self = StObject.set(x, "ETHERNET", js.undefined)
       
-      @scala.inline
-      def setGetOnline(value: () => Boolean): Self = StObject.set(x, "getOnline", js.Any.fromFunction0(value))
+      inline def setGetOnline(value: () => Boolean): Self = StObject.set(x, "getOnline", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOnlineUndefined: Self = StObject.set(x, "getOnline", js.undefined)
+      inline def setGetOnlineUndefined: Self = StObject.set(x, "getOnline", js.undefined)
       
-      @scala.inline
-      def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
+      inline def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
       
-      @scala.inline
-      def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
+      inline def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOnlineUndefined: Self = StObject.set(x, "isOnline", js.undefined)
+      inline def setIsOnlineUndefined: Self = StObject.set(x, "isOnline", js.undefined)
       
-      @scala.inline
-      def setNONE(value: String): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: String): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONEUndefined: Self = StObject.set(x, "NONE", js.undefined)
+      inline def setNONEUndefined: Self = StObject.set(x, "NONE", js.undefined)
       
-      @scala.inline
-      def setSetOnline(value: /* online */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setOnline", js.Any.fromFunction1(value))
+      inline def setSetOnline(value: /* online */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setOnline", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOnlineUndefined: Self = StObject.set(x, "setOnline", js.undefined)
+      inline def setSetOnlineUndefined: Self = StObject.set(x, "setOnline", js.undefined)
       
-      @scala.inline
-      def setSetType(value: /* type */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+      inline def setSetType(value: /* type */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
+      inline def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
       
-      @scala.inline
-      def setUNKNOWN(value: String): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN(value: String): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWNUndefined: Self = StObject.set(x, "UNKNOWN", js.undefined)
+      inline def setUNKNOWNUndefined: Self = StObject.set(x, "UNKNOWN", js.undefined)
       
-      @scala.inline
-      def setWIFI(value: String): Self = StObject.set(x, "WIFI", value.asInstanceOf[js.Any])
+      inline def setWIFI(value: String): Self = StObject.set(x, "WIFI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWIFIUndefined: Self = StObject.set(x, "WIFI", js.undefined)
+      inline def setWIFIUndefined: Self = StObject.set(x, "WIFI", js.undefined)
     }
   }
   
@@ -147,8 +121,7 @@ object connection {
        with IAbstract
   object ICordova {
     
-    @scala.inline
-    def apply(): ICordova = {
+    inline def apply(): ICordova = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICordova]
     }
@@ -159,8 +132,7 @@ object connection {
        with IAbstract
   object IPhoneGap {
     
-    @scala.inline
-    def apply(): IPhoneGap = {
+    inline def apply(): IPhoneGap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPhoneGap]
     }
@@ -173,8 +145,7 @@ object connection {
        with IAbstract
   object ISimulator {
     
-    @scala.inline
-    def apply(): ISimulator = {
+    inline def apply(): ISimulator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISimulator]
     }

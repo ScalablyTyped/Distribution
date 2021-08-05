@@ -31,7 +31,7 @@ class LanguageServiceCompiler protected ()
   /* CompleteClass */
   override def compilationSettings(): ImmutableCompilationSettings = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var compiler: js.Any = js.native
   
   /* CompleteClass */
@@ -82,27 +82,27 @@ class LanguageServiceCompiler protected ()
   /* CompleteClass */
   override def getVisibleMemberSymbolsFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var host: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var hostCache: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var logger: js.Any = js.native
   
   /* CompleteClass */
   override def pullGetDeclInformation(decl: PullDecl, ast: AST, document: Document): PullSymbolInfo = js.native
   
-  /* CompleteClass */
-  /* private */ override def synchronizeHostData(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def synchronizeHostData(): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def synchronizeHostDataWorker(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def synchronizeHostDataWorker(): js.Any = js.native
   
   /* CompleteClass */
   override def topLevelDeclaration(fileName: String): PullDecl = js.native
   
-  /* CompleteClass */
-  /* private */ override def tryUpdateFile(compiler: js.Any, fileName: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def tryUpdateFile(compiler: js.Any, fileName: js.Any): js.Any = js.native
 }

@@ -10,19 +10,15 @@ trait SerialPortRequestOptions extends StObject {
 }
 object SerialPortRequestOptions {
   
-  @scala.inline
-  def apply(filters: js.Array[SerialPortFilter]): SerialPortRequestOptions = {
+  inline def apply(filters: js.Array[SerialPortFilter]): SerialPortRequestOptions = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerialPortRequestOptions]
   }
   
-  @scala.inline
-  implicit class SerialPortRequestOptionsMutableBuilder[Self <: SerialPortRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SerialPortRequestOptions](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[SerialPortFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[SerialPortFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: SerialPortFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SerialPortFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

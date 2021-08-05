@@ -21,8 +21,7 @@ trait I18nManagerStatic extends StObject {
 }
 object I18nManagerStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowRTL: Boolean => Unit,
     doLeftAndRightSwapInRTL: Boolean,
     forceRTL: Boolean => Unit,
@@ -34,25 +33,18 @@ object I18nManagerStatic {
     __obj.asInstanceOf[I18nManagerStatic]
   }
   
-  @scala.inline
-  implicit class I18nManagerStaticMutableBuilder[Self <: I18nManagerStatic] (val x: Self) extends AnyVal {
+  extension [Self <: I18nManagerStatic](x: Self) {
     
-    @scala.inline
-    def setAllowRTL(value: Boolean => Unit): Self = StObject.set(x, "allowRTL", js.Any.fromFunction1(value))
+    inline def setAllowRTL(value: Boolean => Unit): Self = StObject.set(x, "allowRTL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoLeftAndRightSwapInRTL(value: Boolean): Self = StObject.set(x, "doLeftAndRightSwapInRTL", value.asInstanceOf[js.Any])
+    inline def setDoLeftAndRightSwapInRTL(value: Boolean): Self = StObject.set(x, "doLeftAndRightSwapInRTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceRTL(value: Boolean => Unit): Self = StObject.set(x, "forceRTL", js.Any.fromFunction1(value))
+    inline def setForceRTL(value: Boolean => Unit): Self = StObject.set(x, "forceRTL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetConstants(value: () => DoLeftAndRightSwapInRTL): Self = StObject.set(x, "getConstants", js.Any.fromFunction0(value))
+    inline def setGetConstants(value: () => DoLeftAndRightSwapInRTL): Self = StObject.set(x, "getConstants", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+    inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapLeftAndRightInRTL(value: Boolean => Unit): Self = StObject.set(x, "swapLeftAndRightInRTL", js.Any.fromFunction1(value))
+    inline def setSwapLeftAndRightInRTL(value: Boolean => Unit): Self = StObject.set(x, "swapLeftAndRightInRTL", js.Any.fromFunction1(value))
   }
 }

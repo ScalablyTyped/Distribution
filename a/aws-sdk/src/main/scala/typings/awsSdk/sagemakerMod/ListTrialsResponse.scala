@@ -18,28 +18,21 @@ trait ListTrialsResponse extends StObject {
 }
 object ListTrialsResponse {
   
-  @scala.inline
-  def apply(): ListTrialsResponse = {
+  inline def apply(): ListTrialsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTrialsResponse]
   }
   
-  @scala.inline
-  implicit class ListTrialsResponseMutableBuilder[Self <: ListTrialsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTrialsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTrialSummaries(value: TrialSummaries): Self = StObject.set(x, "TrialSummaries", value.asInstanceOf[js.Any])
+    inline def setTrialSummaries(value: TrialSummaries): Self = StObject.set(x, "TrialSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialSummariesUndefined: Self = StObject.set(x, "TrialSummaries", js.undefined)
+    inline def setTrialSummariesUndefined: Self = StObject.set(x, "TrialSummaries", js.undefined)
     
-    @scala.inline
-    def setTrialSummariesVarargs(value: TrialSummary*): Self = StObject.set(x, "TrialSummaries", js.Array(value :_*))
+    inline def setTrialSummariesVarargs(value: TrialSummary*): Self = StObject.set(x, "TrialSummaries", js.Array(value :_*))
   }
 }

@@ -63,76 +63,53 @@ trait GoogleActionsOrdersV3VerticalsReservationReservationItemExtension extends 
 }
 object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsReservationReservationItemExtension = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsReservationReservationItemExtension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsReservationReservationItemExtension]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension](x: Self) {
     
-    @scala.inline
-    def setConfirmationCode(value: String): Self = StObject.set(x, "confirmationCode", value.asInstanceOf[js.Any])
+    inline def setConfirmationCode(value: String): Self = StObject.set(x, "confirmationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmationCodeUndefined: Self = StObject.set(x, "confirmationCode", js.undefined)
+    inline def setConfirmationCodeUndefined: Self = StObject.set(x, "confirmationCode", js.undefined)
     
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPartySize(value: Double): Self = StObject.set(x, "partySize", value.asInstanceOf[js.Any])
+    inline def setPartySize(value: Double): Self = StObject.set(x, "partySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartySizeUndefined: Self = StObject.set(x, "partySize", js.undefined)
+    inline def setPartySizeUndefined: Self = StObject.set(x, "partySize", js.undefined)
     
-    @scala.inline
-    def setReservationTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "reservationTime", value.asInstanceOf[js.Any])
+    inline def setReservationTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "reservationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationTimeUndefined: Self = StObject.set(x, "reservationTime", js.undefined)
+    inline def setReservationTimeUndefined: Self = StObject.set(x, "reservationTime", js.undefined)
     
-    @scala.inline
-    def setStaffFacilitators(value: js.Array[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]): Self = StObject.set(x, "staffFacilitators", value.asInstanceOf[js.Any])
+    inline def setStaffFacilitators(value: js.Array[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]): Self = StObject.set(x, "staffFacilitators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaffFacilitatorsUndefined: Self = StObject.set(x, "staffFacilitators", js.undefined)
+    inline def setStaffFacilitatorsUndefined: Self = StObject.set(x, "staffFacilitators", js.undefined)
     
-    @scala.inline
-    def setStaffFacilitatorsVarargs(value: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator*): Self = StObject.set(x, "staffFacilitators", js.Array(value :_*))
+    inline def setStaffFacilitatorsVarargs(value: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator*): Self = StObject.set(x, "staffFacilitators", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUserAcceptableTimeRange(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "userAcceptableTimeRange", value.asInstanceOf[js.Any])
+    inline def setUserAcceptableTimeRange(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "userAcceptableTimeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAcceptableTimeRangeUndefined: Self = StObject.set(x, "userAcceptableTimeRange", js.undefined)
+    inline def setUserAcceptableTimeRangeUndefined: Self = StObject.set(x, "userAcceptableTimeRange", js.undefined)
     
-    @scala.inline
-    def setUserVisibleStatusLabel(value: String): Self = StObject.set(x, "userVisibleStatusLabel", value.asInstanceOf[js.Any])
+    inline def setUserVisibleStatusLabel(value: String): Self = StObject.set(x, "userVisibleStatusLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleStatusLabelUndefined: Self = StObject.set(x, "userVisibleStatusLabel", js.undefined)
+    inline def setUserVisibleStatusLabelUndefined: Self = StObject.set(x, "userVisibleStatusLabel", js.undefined)
   }
 }

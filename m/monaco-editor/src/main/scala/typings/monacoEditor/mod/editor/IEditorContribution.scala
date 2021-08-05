@@ -23,28 +23,21 @@ trait IEditorContribution extends StObject {
 }
 object IEditorContribution {
   
-  @scala.inline
-  def apply(dispose: () => Unit): IEditorContribution = {
+  inline def apply(dispose: () => Unit): IEditorContribution = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[IEditorContribution]
   }
   
-  @scala.inline
-  implicit class IEditorContributionMutableBuilder[Self <: IEditorContribution] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorContribution](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRestoreViewState(value: /* state */ js.Any => Unit): Self = StObject.set(x, "restoreViewState", js.Any.fromFunction1(value))
+    inline def setRestoreViewState(value: /* state */ js.Any => Unit): Self = StObject.set(x, "restoreViewState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRestoreViewStateUndefined: Self = StObject.set(x, "restoreViewState", js.undefined)
+    inline def setRestoreViewStateUndefined: Self = StObject.set(x, "restoreViewState", js.undefined)
     
-    @scala.inline
-    def setSaveViewState(value: () => js.Any): Self = StObject.set(x, "saveViewState", js.Any.fromFunction0(value))
+    inline def setSaveViewState(value: () => js.Any): Self = StObject.set(x, "saveViewState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveViewStateUndefined: Self = StObject.set(x, "saveViewState", js.undefined)
+    inline def setSaveViewStateUndefined: Self = StObject.set(x, "saveViewState", js.undefined)
   }
 }

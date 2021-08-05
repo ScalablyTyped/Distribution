@@ -62,8 +62,7 @@ trait AnchorAttributes extends StObject {
 }
 object AnchorAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anchorAttributes: Default,
     breaks: Type,
     emoji: Type,
@@ -96,88 +95,60 @@ object AnchorAttributes {
     __obj.asInstanceOf[AnchorAttributes]
   }
   
-  @scala.inline
-  implicit class AnchorAttributesMutableBuilder[Self <: AnchorAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: AnchorAttributes](x: Self) {
     
-    @scala.inline
-    def setAnchorAttributes(value: Default): Self = StObject.set(x, "anchorAttributes", value.asInstanceOf[js.Any])
+    inline def setAnchorAttributes(value: Default): Self = StObject.set(x, "anchorAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreaks(value: Type): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    inline def setBreaks(value: Type): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmoji(value: Type): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+    inline def setEmoji(value: Type): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlight(value: Type): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Type): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: Type): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Type): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangPrefix(value: DefaultType): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
+    inline def setLangPrefix(value: DefaultType): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkify(value: Type): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
+    inline def setLinkify(value: Type): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostrender(value: Default): Self = StObject.set(x, "postrender", value.asInstanceOf[js.Any])
+    inline def setPostrender(value: Default): Self = StObject.set(x, "postrender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrerender(value: Default): Self = StObject.set(x, "prerender", value.asInstanceOf[js.Any])
+    inline def setPrerender(value: Default): Self = StObject.set(x, "prerender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotes(value: DefaultType): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+    inline def setQuotes(value: DefaultType): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: Type): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Type): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: DefaultType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: DefaultType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableClass(value: DefaultType): Self = StObject.set(x, "tableClass", value.asInstanceOf[js.Any])
+    inline def setTableClass(value: DefaultType): Self = StObject.set(x, "tableClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskLists(value: Type): Self = StObject.set(x, "taskLists", value.asInstanceOf[js.Any])
+    inline def setTaskLists(value: Type): Self = StObject.set(x, "taskLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToc(value: Type): Self = StObject.set(x, "toc", value.asInstanceOf[js.Any])
+    inline def setToc(value: Type): Self = StObject.set(x, "toc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocAnchorClass(value: DefaultType): Self = StObject.set(x, "tocAnchorClass", value.asInstanceOf[js.Any])
+    inline def setTocAnchorClass(value: DefaultType): Self = StObject.set(x, "tocAnchorClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocAnchorLink(value: Type): Self = StObject.set(x, "tocAnchorLink", value.asInstanceOf[js.Any])
+    inline def setTocAnchorLink(value: Type): Self = StObject.set(x, "tocAnchorLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocAnchorLinkClass(value: DefaultType): Self = StObject.set(x, "tocAnchorLinkClass", value.asInstanceOf[js.Any])
+    inline def setTocAnchorLinkClass(value: DefaultType): Self = StObject.set(x, "tocAnchorLinkClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocAnchorLinkSpace(value: Type): Self = StObject.set(x, "tocAnchorLinkSpace", value.asInstanceOf[js.Any])
+    inline def setTocAnchorLinkSpace(value: Type): Self = StObject.set(x, "tocAnchorLinkSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocAnchorLinkSymbol(value: DefaultType): Self = StObject.set(x, "tocAnchorLinkSymbol", value.asInstanceOf[js.Any])
+    inline def setTocAnchorLinkSymbol(value: DefaultType): Self = StObject.set(x, "tocAnchorLinkSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocClass(value: DefaultType): Self = StObject.set(x, "tocClass", value.asInstanceOf[js.Any])
+    inline def setTocClass(value: DefaultType): Self = StObject.set(x, "tocClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocFirstLevel(value: DefaultNumber): Self = StObject.set(x, "tocFirstLevel", value.asInstanceOf[js.Any])
+    inline def setTocFirstLevel(value: DefaultNumber): Self = StObject.set(x, "tocFirstLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocId(value: TypeAny): Self = StObject.set(x, "tocId", value.asInstanceOf[js.Any])
+    inline def setTocId(value: TypeAny): Self = StObject.set(x, "tocId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocLastLevel(value: TypeAny): Self = StObject.set(x, "tocLastLevel", value.asInstanceOf[js.Any])
+    inline def setTocLastLevel(value: TypeAny): Self = StObject.set(x, "tocLastLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypographer(value: Type): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
+    inline def setTypographer(value: Type): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatches(value: Default): Self = StObject.set(x, "watches", value.asInstanceOf[js.Any])
+    inline def setWatches(value: Default): Self = StObject.set(x, "watches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhtmlOut(value: Type): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
+    inline def setXhtmlOut(value: Type): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
   }
 }

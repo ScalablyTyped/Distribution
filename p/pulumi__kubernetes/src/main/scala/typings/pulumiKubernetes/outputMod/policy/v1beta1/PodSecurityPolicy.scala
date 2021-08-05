@@ -33,25 +33,19 @@ trait PodSecurityPolicy extends StObject {
 }
 object PodSecurityPolicy {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: PodSecurityPolicySpec): PodSecurityPolicy = {
+  inline def apply(metadata: ObjectMeta, spec: PodSecurityPolicySpec): PodSecurityPolicy = {
     val __obj = js.Dynamic.literal(apiVersion = "policy/v1beta1", kind = "PodSecurityPolicy", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodSecurityPolicy]
   }
   
-  @scala.inline
-  implicit class PodSecurityPolicyMutableBuilder[Self <: PodSecurityPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: PodSecurityPolicy](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: policySlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: policySlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PodSecurityPolicy): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PodSecurityPolicy): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: PodSecurityPolicySpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: PodSecurityPolicySpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
   }
 }

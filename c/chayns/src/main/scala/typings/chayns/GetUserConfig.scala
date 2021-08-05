@@ -22,37 +22,27 @@ trait GetUserConfig extends StObject {
 }
 object GetUserConfig {
   
-  @scala.inline
-  def apply(): GetUserConfig = {
+  inline def apply(): GetUserConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserConfig]
   }
   
-  @scala.inline
-  implicit class GetUserConfigMutableBuilder[Self <: GetUserConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserConfig](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setFbId(value: String): Self = StObject.set(x, "fbId", value.asInstanceOf[js.Any])
+    inline def setFbId(value: String): Self = StObject.set(x, "fbId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFbIdUndefined: Self = StObject.set(x, "fbId", js.undefined)
+    inline def setFbIdUndefined: Self = StObject.set(x, "fbId", js.undefined)
     
-    @scala.inline
-    def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
+    inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonIdUndefined: Self = StObject.set(x, "personId", js.undefined)
+    inline def setPersonIdUndefined: Self = StObject.set(x, "personId", js.undefined)
     
-    @scala.inline
-    def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ trait ListGlobalTablesOutput
      with typings.awsSdkClientDynamodbNode.typesListGlobalTablesOutputMod.ListGlobalTablesOutput
 object ListGlobalTablesOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListGlobalTablesOutput = {
+  inline def apply($metadata: ResponseMetadata): ListGlobalTablesOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGlobalTablesOutput]
   }

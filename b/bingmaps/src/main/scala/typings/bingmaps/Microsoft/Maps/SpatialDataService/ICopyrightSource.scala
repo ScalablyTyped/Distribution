@@ -17,22 +17,17 @@ trait ICopyrightSource extends StObject {
 }
 object ICopyrightSource {
   
-  @scala.inline
-  def apply(Copyright: String, SourceID: String, SourceName: String): ICopyrightSource = {
+  inline def apply(Copyright: String, SourceID: String, SourceName: String): ICopyrightSource = {
     val __obj = js.Dynamic.literal(Copyright = Copyright.asInstanceOf[js.Any], SourceID = SourceID.asInstanceOf[js.Any], SourceName = SourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICopyrightSource]
   }
   
-  @scala.inline
-  implicit class ICopyrightSourceMutableBuilder[Self <: ICopyrightSource] (val x: Self) extends AnyVal {
+  extension [Self <: ICopyrightSource](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
+    inline def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
   }
 }

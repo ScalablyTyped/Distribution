@@ -20,44 +20,32 @@ object anon {
   }
   object ClickMoveLimit {
     
-    @scala.inline
-    def apply(): ClickMoveLimit = {
+    inline def apply(): ClickMoveLimit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClickMoveLimit]
     }
     
-    @scala.inline
-    implicit class ClickMoveLimitMutableBuilder[Self <: ClickMoveLimit] (val x: Self) extends AnyVal {
+    extension [Self <: ClickMoveLimit](x: Self) {
       
-      @scala.inline
-      def setClickMoveLimit(value: Double): Self = StObject.set(x, "clickMoveLimit", value.asInstanceOf[js.Any])
+      inline def setClickMoveLimit(value: Double): Self = StObject.set(x, "clickMoveLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickMoveLimitUndefined: Self = StObject.set(x, "clickMoveLimit", js.undefined)
+      inline def setClickMoveLimitUndefined: Self = StObject.set(x, "clickMoveLimit", js.undefined)
       
-      @scala.inline
-      def setDoubleTapDurationInMs(value: Double): Self = StObject.set(x, "doubleTapDurationInMs", value.asInstanceOf[js.Any])
+      inline def setDoubleTapDurationInMs(value: Double): Self = StObject.set(x, "doubleTapDurationInMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleTapDurationInMsUndefined: Self = StObject.set(x, "doubleTapDurationInMs", js.undefined)
+      inline def setDoubleTapDurationInMsUndefined: Self = StObject.set(x, "doubleTapDurationInMs", js.undefined)
       
-      @scala.inline
-      def setLongTouchDurationInMs(value: Double): Self = StObject.set(x, "longTouchDurationInMs", value.asInstanceOf[js.Any])
+      inline def setLongTouchDurationInMs(value: Double): Self = StObject.set(x, "longTouchDurationInMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongTouchDurationInMsUndefined: Self = StObject.set(x, "longTouchDurationInMs", js.undefined)
+      inline def setLongTouchDurationInMsUndefined: Self = StObject.set(x, "longTouchDurationInMs", js.undefined)
       
-      @scala.inline
-      def setLongTouchMoveLimit(value: Double): Self = StObject.set(x, "longTouchMoveLimit", value.asInstanceOf[js.Any])
+      inline def setLongTouchMoveLimit(value: Double): Self = StObject.set(x, "longTouchMoveLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongTouchMoveLimitUndefined: Self = StObject.set(x, "longTouchMoveLimit", js.undefined)
+      inline def setLongTouchMoveLimitUndefined: Self = StObject.set(x, "longTouchMoveLimit", js.undefined)
       
-      @scala.inline
-      def setTapDurationInMs(value: Double): Self = StObject.set(x, "tapDurationInMs", value.asInstanceOf[js.Any])
+      inline def setTapDurationInMs(value: Double): Self = StObject.set(x, "tapDurationInMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapDurationInMsUndefined: Self = StObject.set(x, "tapDurationInMs", js.undefined)
+      inline def setTapDurationInMsUndefined: Self = StObject.set(x, "tapDurationInMs", js.undefined)
     }
   }
 }

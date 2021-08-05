@@ -11,15 +11,11 @@ object shapeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isComplexShape(arg: Shape): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ComplexShape */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComplexShape")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ComplexShape */ Boolean]
+  inline def isComplexShape(arg: Shape): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ComplexShape */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComplexShape")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ComplexShape */ Boolean]
   
-  @scala.inline
-  def isShape(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Shape */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShape")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Shape */ Boolean]
+  inline def isShape(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Shape */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShape")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Shape */ Boolean]
   
-  @scala.inline
-  def isStructureMember(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.StructureMember */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStructureMember")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.StructureMember */ Boolean]
+  inline def isStructureMember(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.StructureMember */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStructureMember")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.StructureMember */ Boolean]
   
-  @scala.inline
-  def isXmlNamespace(arg: js.Any): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXmlNamespace")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace * / any */ Boolean]
+  inline def isXmlNamespace(arg: js.Any): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXmlNamespace")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace * / any */ Boolean]
 }

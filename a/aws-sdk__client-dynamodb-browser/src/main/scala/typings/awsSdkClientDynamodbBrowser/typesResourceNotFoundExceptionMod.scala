@@ -46,17 +46,14 @@ object typesResourceNotFoundExceptionMod {
   }
   object ResourceNotFoundException {
     
-    @scala.inline
-    def apply(): ResourceNotFoundException = {
+    inline def apply(): ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[ResourceNotFoundException]
     }
     
-    @scala.inline
-    implicit class ResourceNotFoundExceptionMutableBuilder[Self <: ResourceNotFoundException] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceNotFoundException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ResourceNotFoundException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -71,20 +68,16 @@ object typesResourceNotFoundExceptionMod {
   }
   object ResourceNotFoundExceptionDetails {
     
-    @scala.inline
-    def apply(): ResourceNotFoundExceptionDetails = {
+    inline def apply(): ResourceNotFoundExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceNotFoundExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ResourceNotFoundExceptionDetailsMutableBuilder[Self <: ResourceNotFoundExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceNotFoundExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

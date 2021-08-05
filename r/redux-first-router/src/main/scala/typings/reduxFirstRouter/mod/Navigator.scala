@@ -10,16 +10,13 @@ trait Navigator[TState] extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply[TState](router: Router[TState]): Navigator[TState] = {
+  inline def apply[TState](router: Router[TState]): Navigator[TState] = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator[TState]]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator[?], TState] (val x: Self & Navigator[TState]) extends AnyVal {
+  extension [Self <: Navigator[?], TState](x: Self & Navigator[TState]) {
     
-    @scala.inline
-    def setRouter(value: Router[TState]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: Router[TState]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }
 }

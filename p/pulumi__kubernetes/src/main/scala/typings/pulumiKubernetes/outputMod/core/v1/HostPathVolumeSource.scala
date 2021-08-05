@@ -21,20 +21,16 @@ trait HostPathVolumeSource extends StObject {
 }
 object HostPathVolumeSource {
   
-  @scala.inline
-  def apply(path: String, `type`: String): HostPathVolumeSource = {
+  inline def apply(path: String, `type`: String): HostPathVolumeSource = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostPathVolumeSource]
   }
   
-  @scala.inline
-  implicit class HostPathVolumeSourceMutableBuilder[Self <: HostPathVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: HostPathVolumeSource](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

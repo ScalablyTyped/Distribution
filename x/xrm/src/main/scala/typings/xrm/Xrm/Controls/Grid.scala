@@ -36,8 +36,7 @@ trait Grid extends StObject {
 }
 object Grid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRows: () => ItemCollection[GridRow],
     getSelectedRows: () => ItemCollection[GridRow],
     getTotalRecordCount: () => Double
@@ -89,8 +88,7 @@ object Grid {
   }
   object GridEntity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEntityName: () => String,
       getEntityReference: () => LookupValue,
       getId: () => String,
@@ -100,34 +98,25 @@ object Grid {
       __obj.asInstanceOf[GridEntity]
     }
     
-    @scala.inline
-    implicit class GridEntityMutableBuilder[Self <: GridEntity] (val x: Self) extends AnyVal {
+    extension [Self <: GridEntity](x: Self) {
       
-      @scala.inline
-      def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
+      inline def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEntityReference(value: () => LookupValue): Self = StObject.set(x, "getEntityReference", js.Any.fromFunction0(value))
+      inline def setGetEntityReference(value: () => LookupValue): Self = StObject.set(x, "getEntityReference", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryAttributeValue(value: () => String): Self = StObject.set(x, "getPrimaryAttributeValue", js.Any.fromFunction0(value))
+      inline def setGetPrimaryAttributeValue(value: () => String): Self = StObject.set(x, "getPrimaryAttributeValue", js.Any.fromFunction0(value))
     }
   }
   
-  @scala.inline
-  implicit class GridMutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
+  extension [Self <: Grid](x: Self) {
     
-    @scala.inline
-    def setGetRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
+    inline def setGetRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
+    inline def setGetSelectedRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTotalRecordCount(value: () => Double): Self = StObject.set(x, "getTotalRecordCount", js.Any.fromFunction0(value))
+    inline def setGetTotalRecordCount(value: () => Double): Self = StObject.set(x, "getTotalRecordCount", js.Any.fromFunction0(value))
   }
   
   /**
@@ -151,20 +140,16 @@ object Grid {
   }
   object GridRow {
     
-    @scala.inline
-    def apply(data: Data, getData: () => GridRowData): GridRow = {
+    inline def apply(data: Data, getData: () => GridRowData): GridRow = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getData = js.Any.fromFunction0(getData))
       __obj.asInstanceOf[GridRow]
     }
     
-    @scala.inline
-    implicit class GridRowMutableBuilder[Self <: GridRow] (val x: Self) extends AnyVal {
+    extension [Self <: GridRow](x: Self) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetData(value: () => GridRowData): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => GridRowData): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     }
   }
   
@@ -183,17 +168,14 @@ object Grid {
   }
   object GridRowData {
     
-    @scala.inline
-    def apply(getEntity: () => GridEntity): GridRowData = {
+    inline def apply(getEntity: () => GridEntity): GridRowData = {
       val __obj = js.Dynamic.literal(getEntity = js.Any.fromFunction0(getEntity))
       __obj.asInstanceOf[GridRowData]
     }
     
-    @scala.inline
-    implicit class GridRowDataMutableBuilder[Self <: GridRowData] (val x: Self) extends AnyVal {
+    extension [Self <: GridRowData](x: Self) {
       
-      @scala.inline
-      def setGetEntity(value: () => GridEntity): Self = StObject.set(x, "getEntity", js.Any.fromFunction0(value))
+      inline def setGetEntity(value: () => GridEntity): Self = StObject.set(x, "getEntity", js.Any.fromFunction0(value))
     }
   }
 }

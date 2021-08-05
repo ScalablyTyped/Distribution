@@ -14,22 +14,17 @@ trait DocumentMetadata extends StObject {
 }
 object DocumentMetadata {
   
-  @scala.inline
-  def apply(_id: String, _key: String, _rev: String): DocumentMetadata = {
+  inline def apply(_id: String, _key: String, _rev: String): DocumentMetadata = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _key = _key.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentMetadata]
   }
   
-  @scala.inline
-  implicit class DocumentMetadataMutableBuilder[Self <: DocumentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentMetadata](x: Self) {
     
-    @scala.inline
-    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
+    inline def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
+    inline def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
   }
 }

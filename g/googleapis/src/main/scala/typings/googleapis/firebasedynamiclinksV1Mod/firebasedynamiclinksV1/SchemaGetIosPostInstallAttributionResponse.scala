@@ -101,97 +101,67 @@ trait SchemaGetIosPostInstallAttributionResponse extends StObject {
 }
 object SchemaGetIosPostInstallAttributionResponse {
   
-  @scala.inline
-  def apply(): SchemaGetIosPostInstallAttributionResponse = {
+  inline def apply(): SchemaGetIosPostInstallAttributionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetIosPostInstallAttributionResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetIosPostInstallAttributionResponseMutableBuilder[Self <: SchemaGetIosPostInstallAttributionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetIosPostInstallAttributionResponse](x: Self) {
     
-    @scala.inline
-    def setAppMinimumVersion(value: String): Self = StObject.set(x, "appMinimumVersion", value.asInstanceOf[js.Any])
+    inline def setAppMinimumVersion(value: String): Self = StObject.set(x, "appMinimumVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppMinimumVersionUndefined: Self = StObject.set(x, "appMinimumVersion", js.undefined)
+    inline def setAppMinimumVersionUndefined: Self = StObject.set(x, "appMinimumVersion", js.undefined)
     
-    @scala.inline
-    def setAttributionConfidence(value: String): Self = StObject.set(x, "attributionConfidence", value.asInstanceOf[js.Any])
+    inline def setAttributionConfidence(value: String): Self = StObject.set(x, "attributionConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionConfidenceUndefined: Self = StObject.set(x, "attributionConfidence", js.undefined)
+    inline def setAttributionConfidenceUndefined: Self = StObject.set(x, "attributionConfidence", js.undefined)
     
-    @scala.inline
-    def setDeepLink(value: String): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
+    inline def setDeepLink(value: String): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
+    inline def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
     
-    @scala.inline
-    def setExternalBrowserDestinationLink(value: String): Self = StObject.set(x, "externalBrowserDestinationLink", value.asInstanceOf[js.Any])
+    inline def setExternalBrowserDestinationLink(value: String): Self = StObject.set(x, "externalBrowserDestinationLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalBrowserDestinationLinkUndefined: Self = StObject.set(x, "externalBrowserDestinationLink", js.undefined)
+    inline def setExternalBrowserDestinationLinkUndefined: Self = StObject.set(x, "externalBrowserDestinationLink", js.undefined)
     
-    @scala.inline
-    def setFallbackLink(value: String): Self = StObject.set(x, "fallbackLink", value.asInstanceOf[js.Any])
+    inline def setFallbackLink(value: String): Self = StObject.set(x, "fallbackLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackLinkUndefined: Self = StObject.set(x, "fallbackLink", js.undefined)
+    inline def setFallbackLinkUndefined: Self = StObject.set(x, "fallbackLink", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
     
-    @scala.inline
-    def setIsStrongMatchExecutable(value: Boolean): Self = StObject.set(x, "isStrongMatchExecutable", value.asInstanceOf[js.Any])
+    inline def setIsStrongMatchExecutable(value: Boolean): Self = StObject.set(x, "isStrongMatchExecutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStrongMatchExecutableUndefined: Self = StObject.set(x, "isStrongMatchExecutable", js.undefined)
+    inline def setIsStrongMatchExecutableUndefined: Self = StObject.set(x, "isStrongMatchExecutable", js.undefined)
     
-    @scala.inline
-    def setMatchMessage(value: String): Self = StObject.set(x, "matchMessage", value.asInstanceOf[js.Any])
+    inline def setMatchMessage(value: String): Self = StObject.set(x, "matchMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchMessageUndefined: Self = StObject.set(x, "matchMessage", js.undefined)
+    inline def setMatchMessageUndefined: Self = StObject.set(x, "matchMessage", js.undefined)
     
-    @scala.inline
-    def setRequestIpVersion(value: String): Self = StObject.set(x, "requestIpVersion", value.asInstanceOf[js.Any])
+    inline def setRequestIpVersion(value: String): Self = StObject.set(x, "requestIpVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIpVersionUndefined: Self = StObject.set(x, "requestIpVersion", js.undefined)
+    inline def setRequestIpVersionUndefined: Self = StObject.set(x, "requestIpVersion", js.undefined)
     
-    @scala.inline
-    def setRequestedLink(value: String): Self = StObject.set(x, "requestedLink", value.asInstanceOf[js.Any])
+    inline def setRequestedLink(value: String): Self = StObject.set(x, "requestedLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedLinkUndefined: Self = StObject.set(x, "requestedLink", js.undefined)
+    inline def setRequestedLinkUndefined: Self = StObject.set(x, "requestedLink", js.undefined)
     
-    @scala.inline
-    def setResolvedLink(value: String): Self = StObject.set(x, "resolvedLink", value.asInstanceOf[js.Any])
+    inline def setResolvedLink(value: String): Self = StObject.set(x, "resolvedLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedLinkUndefined: Self = StObject.set(x, "resolvedLink", js.undefined)
+    inline def setResolvedLinkUndefined: Self = StObject.set(x, "resolvedLink", js.undefined)
     
-    @scala.inline
-    def setUtmCampaign(value: String): Self = StObject.set(x, "utmCampaign", value.asInstanceOf[js.Any])
+    inline def setUtmCampaign(value: String): Self = StObject.set(x, "utmCampaign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmCampaignUndefined: Self = StObject.set(x, "utmCampaign", js.undefined)
+    inline def setUtmCampaignUndefined: Self = StObject.set(x, "utmCampaign", js.undefined)
     
-    @scala.inline
-    def setUtmMedium(value: String): Self = StObject.set(x, "utmMedium", value.asInstanceOf[js.Any])
+    inline def setUtmMedium(value: String): Self = StObject.set(x, "utmMedium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmMediumUndefined: Self = StObject.set(x, "utmMedium", js.undefined)
+    inline def setUtmMediumUndefined: Self = StObject.set(x, "utmMedium", js.undefined)
     
-    @scala.inline
-    def setUtmSource(value: String): Self = StObject.set(x, "utmSource", value.asInstanceOf[js.Any])
+    inline def setUtmSource(value: String): Self = StObject.set(x, "utmSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmSourceUndefined: Self = StObject.set(x, "utmSource", js.undefined)
+    inline def setUtmSourceUndefined: Self = StObject.set(x, "utmSource", js.undefined)
   }
 }

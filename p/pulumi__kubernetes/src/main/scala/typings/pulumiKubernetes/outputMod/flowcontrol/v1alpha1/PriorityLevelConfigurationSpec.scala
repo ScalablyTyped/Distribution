@@ -21,20 +21,16 @@ trait PriorityLevelConfigurationSpec extends StObject {
 }
 object PriorityLevelConfigurationSpec {
   
-  @scala.inline
-  def apply(limited: LimitedPriorityLevelConfiguration, `type`: String): PriorityLevelConfigurationSpec = {
+  inline def apply(limited: LimitedPriorityLevelConfiguration, `type`: String): PriorityLevelConfigurationSpec = {
     val __obj = js.Dynamic.literal(limited = limited.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityLevelConfigurationSpec]
   }
   
-  @scala.inline
-  implicit class PriorityLevelConfigurationSpecMutableBuilder[Self <: PriorityLevelConfigurationSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PriorityLevelConfigurationSpec](x: Self) {
     
-    @scala.inline
-    def setLimited(value: LimitedPriorityLevelConfiguration): Self = StObject.set(x, "limited", value.asInstanceOf[js.Any])
+    inline def setLimited(value: LimitedPriorityLevelConfiguration): Self = StObject.set(x, "limited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

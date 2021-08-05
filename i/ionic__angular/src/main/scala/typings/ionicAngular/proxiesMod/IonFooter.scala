@@ -15,7 +15,7 @@ class IonFooter protected ()
      with typings.ionicCore.componentsMod.Components.IonFooter {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If `true`, the footer will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).  Note: In order to scroll content behind the footer, the `fullscreen` attribute needs to be set on the content.
@@ -23,5 +23,5 @@ class IonFooter protected ()
   /* CompleteClass */
   var translucent: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

@@ -23,20 +23,17 @@ object propFormMod {
     @JSImport("@storybook/addon-knobs/dist/components/PropForm", "default.defaultProps")
     @js.native
     def defaultProps: OnFieldChange = js.native
-    @scala.inline
-    def defaultProps_=(x: OnFieldChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnFieldChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/PropForm", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/PropForm", "default.propTypes")
     @js.native
     def propTypes: OnFieldClick = js.native
-    @scala.inline
-    def propTypes_=(x: OnFieldClick): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: OnFieldClick): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -56,8 +53,7 @@ object propFormMod {
   }
   object PropFormProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       knobs: js.Array[KnobStoreKnob],
       onFieldChange: KnobStoreKnob => Unit,
       onFieldClick: KnobStoreKnob => Unit
@@ -66,20 +62,15 @@ object propFormMod {
       __obj.asInstanceOf[PropFormProps]
     }
     
-    @scala.inline
-    implicit class PropFormPropsMutableBuilder[Self <: PropFormProps] (val x: Self) extends AnyVal {
+    extension [Self <: PropFormProps](x: Self) {
       
-      @scala.inline
-      def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
+      inline def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKnobsVarargs(value: KnobStoreKnob*): Self = StObject.set(x, "knobs", js.Array(value :_*))
+      inline def setKnobsVarargs(value: KnobStoreKnob*): Self = StObject.set(x, "knobs", js.Array(value :_*))
       
-      @scala.inline
-      def setOnFieldChange(value: KnobStoreKnob => Unit): Self = StObject.set(x, "onFieldChange", js.Any.fromFunction1(value))
+      inline def setOnFieldChange(value: KnobStoreKnob => Unit): Self = StObject.set(x, "onFieldChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFieldClick(value: KnobStoreKnob => Unit): Self = StObject.set(x, "onFieldClick", js.Any.fromFunction1(value))
+      inline def setOnFieldClick(value: KnobStoreKnob => Unit): Self = StObject.set(x, "onFieldClick", js.Any.fromFunction1(value))
     }
   }
 }

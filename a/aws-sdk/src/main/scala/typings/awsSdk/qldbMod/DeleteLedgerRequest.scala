@@ -13,16 +13,13 @@ trait DeleteLedgerRequest extends StObject {
 }
 object DeleteLedgerRequest {
   
-  @scala.inline
-  def apply(Name: LedgerName): DeleteLedgerRequest = {
+  inline def apply(Name: LedgerName): DeleteLedgerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLedgerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLedgerRequestMutableBuilder[Self <: DeleteLedgerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLedgerRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

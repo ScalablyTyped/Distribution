@@ -15,17 +15,14 @@ trait InvokeActionObject[TContext, TEvent /* <: EventObject */]
 }
 object InvokeActionObject {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](activity: InvokeDefinition[TContext, TEvent], `type`: Start | Stop): InvokeActionObject[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](activity: InvokeDefinition[TContext, TEvent], `type`: Start | Stop): InvokeActionObject[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeActionObject[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class InvokeActionObjectMutableBuilder[Self <: InvokeActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (InvokeActionObject[TContext, TEvent])) extends AnyVal {
+  extension [Self <: InvokeActionObject[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (InvokeActionObject[TContext, TEvent])) {
     
-    @scala.inline
-    def setActivity(value: InvokeDefinition[TContext, TEvent]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: InvokeDefinition[TContext, TEvent]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
   }
 }

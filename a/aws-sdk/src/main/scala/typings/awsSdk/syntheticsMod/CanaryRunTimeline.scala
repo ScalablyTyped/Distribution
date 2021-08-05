@@ -18,25 +18,19 @@ trait CanaryRunTimeline extends StObject {
 }
 object CanaryRunTimeline {
   
-  @scala.inline
-  def apply(): CanaryRunTimeline = {
+  inline def apply(): CanaryRunTimeline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryRunTimeline]
   }
   
-  @scala.inline
-  implicit class CanaryRunTimelineMutableBuilder[Self <: CanaryRunTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryRunTimeline](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: Timestamp): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: Timestamp): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
+    inline def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
     
-    @scala.inline
-    def setStarted(value: Timestamp): Self = StObject.set(x, "Started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Timestamp): Self = StObject.set(x, "Started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedUndefined: Self = StObject.set(x, "Started", js.undefined)
+    inline def setStartedUndefined: Self = StObject.set(x, "Started", js.undefined)
   }
 }

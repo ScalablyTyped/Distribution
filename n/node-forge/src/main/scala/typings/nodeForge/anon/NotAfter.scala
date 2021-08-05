@@ -13,19 +13,15 @@ trait NotAfter extends StObject {
 }
 object NotAfter {
   
-  @scala.inline
-  def apply(notAfter: Date, notBefore: Date): NotAfter = {
+  inline def apply(notAfter: Date, notBefore: Date): NotAfter = {
     val __obj = js.Dynamic.literal(notAfter = notAfter.asInstanceOf[js.Any], notBefore = notBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotAfter]
   }
   
-  @scala.inline
-  implicit class NotAfterMutableBuilder[Self <: NotAfter] (val x: Self) extends AnyVal {
+  extension [Self <: NotAfter](x: Self) {
     
-    @scala.inline
-    def setNotAfter(value: Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBefore(value: Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
   }
 }

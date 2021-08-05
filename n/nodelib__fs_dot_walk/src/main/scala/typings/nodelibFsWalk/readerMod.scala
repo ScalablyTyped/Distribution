@@ -13,35 +13,31 @@ object readerMod {
        with Reader {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _root: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _settings: typings.nodelibFsWalk.settingsMod.default = js.native
   }
   
   trait Reader extends StObject {
     
-    val _root: String
+    /* protected */ val _root: String
     
-    val _settings: typings.nodelibFsWalk.settingsMod.default
+    /* protected */ val _settings: typings.nodelibFsWalk.settingsMod.default
   }
   object Reader {
     
-    @scala.inline
-    def apply(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default): Reader = {
+    inline def apply(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default): Reader = {
       val __obj = js.Dynamic.literal(_root = _root.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reader]
     }
     
-    @scala.inline
-    implicit class ReaderMutableBuilder[Self <: Reader] (val x: Self) extends AnyVal {
+    extension [Self <: Reader](x: Self) {
       
-      @scala.inline
-      def set_root(value: String): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
+      inline def set_root(value: String): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_settings(value: typings.nodelibFsWalk.settingsMod.default): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: typings.nodelibFsWalk.settingsMod.default): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     }
   }
 }

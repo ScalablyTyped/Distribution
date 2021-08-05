@@ -13,22 +13,17 @@ trait UntagResourceResponse extends StObject {
 }
 object UntagResourceResponse {
   
-  @scala.inline
-  def apply(): UntagResourceResponse = {
+  inline def apply(): UntagResourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UntagResourceResponse]
   }
   
-  @scala.inline
-  implicit class UntagResourceResponseMutableBuilder[Self <: UntagResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UntagResourceResponse](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -45,9 +45,7 @@ object mqMod {
     extends StObject
        with ClassRouting
   
-  @scala.inline
-  def invoke(hdlr: ClassHandler, v: ClassObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(hdlr.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def invoke(hdlr: ClassHandler, v: ClassObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(hdlr.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def nullHandler(): ClassHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("nullHandler")().asInstanceOf[ClassHandler]
+  inline def nullHandler(): ClassHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("nullHandler")().asInstanceOf[ClassHandler]
 }

@@ -20,8 +20,7 @@ trait ReleaseTasksUpdatedEvent
 }
 object ReleaseTasksUpdatedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     environmentId: Double,
     job: ReleaseTask,
     projectId: String,
@@ -34,25 +33,18 @@ object ReleaseTasksUpdatedEvent {
     __obj.asInstanceOf[ReleaseTasksUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class ReleaseTasksUpdatedEventMutableBuilder[Self <: ReleaseTasksUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseTasksUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob(value: ReleaseTask): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: ReleaseTask): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDeployPhaseId(value: Double): Self = StObject.set(x, "releaseDeployPhaseId", value.asInstanceOf[js.Any])
+    inline def setReleaseDeployPhaseId(value: Double): Self = StObject.set(x, "releaseDeployPhaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseStepId(value: Double): Self = StObject.set(x, "releaseStepId", value.asInstanceOf[js.Any])
+    inline def setReleaseStepId(value: Double): Self = StObject.set(x, "releaseStepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasks(value: js.Array[ReleaseTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[ReleaseTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: ReleaseTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: ReleaseTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

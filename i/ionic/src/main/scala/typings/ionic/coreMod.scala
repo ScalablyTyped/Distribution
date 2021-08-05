@@ -27,9 +27,9 @@ object coreMod {
     
     /* protected */ def getIosCapPlist(): js.Promise[String] = js.native
     
-    val optionsToPlistKeys: Appid = js.native
+    /* protected */ val optionsToPlistKeys: Appid = js.native
     
-    val optionsToStringXmlKeys: Appid = js.native
+    /* protected */ val optionsToStringXmlKeys: Appid = js.native
     
     /* protected */ def preRunCheckInputs(options: CommandLineOptions): js.Promise[Unit] = js.native
     

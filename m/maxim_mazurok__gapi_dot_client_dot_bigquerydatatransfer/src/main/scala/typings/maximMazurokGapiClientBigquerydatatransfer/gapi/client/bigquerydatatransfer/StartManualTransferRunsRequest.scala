@@ -14,25 +14,19 @@ trait StartManualTransferRunsRequest extends StObject {
 }
 object StartManualTransferRunsRequest {
   
-  @scala.inline
-  def apply(): StartManualTransferRunsRequest = {
+  inline def apply(): StartManualTransferRunsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartManualTransferRunsRequest]
   }
   
-  @scala.inline
-  implicit class StartManualTransferRunsRequestMutableBuilder[Self <: StartManualTransferRunsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartManualTransferRunsRequest](x: Self) {
     
-    @scala.inline
-    def setRequestedRunTime(value: String): Self = StObject.set(x, "requestedRunTime", value.asInstanceOf[js.Any])
+    inline def setRequestedRunTime(value: String): Self = StObject.set(x, "requestedRunTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedRunTimeUndefined: Self = StObject.set(x, "requestedRunTime", js.undefined)
+    inline def setRequestedRunTimeUndefined: Self = StObject.set(x, "requestedRunTime", js.undefined)
     
-    @scala.inline
-    def setRequestedTimeRange(value: TimeRange): Self = StObject.set(x, "requestedTimeRange", value.asInstanceOf[js.Any])
+    inline def setRequestedTimeRange(value: TimeRange): Self = StObject.set(x, "requestedTimeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedTimeRangeUndefined: Self = StObject.set(x, "requestedTimeRange", js.undefined)
+    inline def setRequestedTimeRangeUndefined: Self = StObject.set(x, "requestedTimeRange", js.undefined)
   }
 }

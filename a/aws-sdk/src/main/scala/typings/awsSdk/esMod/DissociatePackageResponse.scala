@@ -13,19 +13,15 @@ trait DissociatePackageResponse extends StObject {
 }
 object DissociatePackageResponse {
   
-  @scala.inline
-  def apply(): DissociatePackageResponse = {
+  inline def apply(): DissociatePackageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DissociatePackageResponse]
   }
   
-  @scala.inline
-  implicit class DissociatePackageResponseMutableBuilder[Self <: DissociatePackageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DissociatePackageResponse](x: Self) {
     
-    @scala.inline
-    def setDomainPackageDetails(value: DomainPackageDetails): Self = StObject.set(x, "DomainPackageDetails", value.asInstanceOf[js.Any])
+    inline def setDomainPackageDetails(value: DomainPackageDetails): Self = StObject.set(x, "DomainPackageDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainPackageDetailsUndefined: Self = StObject.set(x, "DomainPackageDetails", js.undefined)
+    inline def setDomainPackageDetailsUndefined: Self = StObject.set(x, "DomainPackageDetails", js.undefined)
   }
 }

@@ -18,20 +18,15 @@ object validationRulesMod {
   @js.native
   val default: Validations[js.Any] = js.native
   
-  @scala.inline
-  def addValidationRule[V](name: String, func: ValidationFunction[V]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValidationRule")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addValidationRule[V](name: String, func: ValidationFunction[V]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValidationRule")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isDefaultRequiredValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultRequiredValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDefaultRequiredValue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultRequiredValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEmpty[V](value: V): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmpty[V](value: V): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExisty[V](value: V): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExisty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExisty[V](value: V): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExisty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchRegexp[V](_values: Values, value: V, regexp: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRegexp")(_values.asInstanceOf[js.Any], value.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchRegexp[V](_values: Values, value: V, regexp: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRegexp")(_values.asInstanceOf[js.Any], value.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type Validations[V] = StringDictionary[ValidationFunction[V]]
 }

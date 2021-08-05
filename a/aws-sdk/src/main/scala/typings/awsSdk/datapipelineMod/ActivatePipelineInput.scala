@@ -23,31 +23,23 @@ trait ActivatePipelineInput extends StObject {
 }
 object ActivatePipelineInput {
   
-  @scala.inline
-  def apply(pipelineId: id): ActivatePipelineInput = {
+  inline def apply(pipelineId: id): ActivatePipelineInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivatePipelineInput]
   }
   
-  @scala.inline
-  implicit class ActivatePipelineInputMutableBuilder[Self <: ActivatePipelineInput] (val x: Self) extends AnyVal {
+  extension [Self <: ActivatePipelineInput](x: Self) {
     
-    @scala.inline
-    def setParameterValues(value: ParameterValueList): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
+    inline def setParameterValues(value: ParameterValueList): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
+    inline def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
     
-    @scala.inline
-    def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
+    inline def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimestamp(value: timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
+    inline def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
   }
 }

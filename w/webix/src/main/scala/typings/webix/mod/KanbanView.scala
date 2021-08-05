@@ -42,6 +42,5 @@ trait KanbanView extends StObject {
 }
 object KanbanView {
   
-  @scala.inline
-  def apply: KanbanView = ^.asInstanceOf[js.Dynamic].selectDynamic("KanbanView").asInstanceOf[KanbanView]
+  inline def apply: KanbanView = ^.asInstanceOf[js.Dynamic].selectDynamic("KanbanView").asInstanceOf[KanbanView]
 }

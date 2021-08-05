@@ -11,8 +11,7 @@ object schemableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def memoize[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
+  inline def memoize[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
   
   type Literal = String | Double | Boolean | Null
   
@@ -83,8 +82,7 @@ object schemableMod {
   }
   object Schemable {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       URI: S,
       array: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ js.Any => js.Any,
       boolean: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, boolean> */ js.Any,
@@ -122,66 +120,54 @@ object schemableMod {
       __obj.asInstanceOf[Schemable[S]]
     }
     
-    @scala.inline
-    implicit class SchemableMutableBuilder[Self <: Schemable[?], S] (val x: Self & Schemable[S]) extends AnyVal {
+    extension [Self <: Schemable[?], S](x: Self & Schemable[S]) {
       
-      @scala.inline
-      def setArray(
+      inline def setArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBoolean(
+      inline def setBoolean(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, boolean> */ js.Any
       ): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersect(
+      inline def setIntersect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, B> */ js.Any => js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ /* left */ js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A & B> */ js.Any
             ]
       ): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLazy(
+      inline def setLazy(
         value: (String, js.Function0[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "lazy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLiteral(value: js.Any => js.Any): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
+      inline def setLiteral(value: js.Any => js.Any): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNullable(
+      inline def setNullable(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "nullable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumber(
+      inline def setNumber(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, number> */ js.Any
       ): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartial(
+      inline def setPartial(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "partial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRecord(
+      inline def setRecord(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setString(
+      inline def setString(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, string> */ js.Any
       ): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSum(
+      inline def setSum(
         value: js.Any => js.Function1[
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof any ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A[K] & Record<T, K>> * / any}
@@ -190,22 +176,19 @@ object schemableMod {
             ]
       ): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTuple(
+      inline def setTuple(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "tuple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setURI(value: S): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: S): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,8 +259,7 @@ object schemableMod {
   }
   object Schemable1 {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: S,
       array: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any => js.Any,
       boolean: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, boolean> */ js.Any,
@@ -315,66 +297,54 @@ object schemableMod {
       __obj.asInstanceOf[Schemable1[S]]
     }
     
-    @scala.inline
-    implicit class Schemable1MutableBuilder[Self <: Schemable1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & Schemable1[S]) extends AnyVal {
+    extension [Self <: Schemable1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & Schemable1[S]) {
       
-      @scala.inline
-      def setArray(
+      inline def setArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBoolean(
+      inline def setBoolean(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, boolean> */ js.Any
       ): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersect(
+      inline def setIntersect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, B> */ js.Any => js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ /* left */ js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A & B> */ js.Any
             ]
       ): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLazy(
+      inline def setLazy(
         value: (String, js.Function0[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "lazy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLiteral(value: js.Any => js.Any): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
+      inline def setLiteral(value: js.Any => js.Any): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNullable(
+      inline def setNullable(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "nullable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumber(
+      inline def setNumber(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, number> */ js.Any
       ): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartial(
+      inline def setPartial(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable1 & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "partial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRecord(
+      inline def setRecord(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setString(
+      inline def setString(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, string> */ js.Any
       ): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSum(
+      inline def setSum(
         value: js.Any => js.Function1[
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof any ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A[K] & Record<T, K>> * / any}
@@ -383,22 +353,19 @@ object schemableMod {
             ]
       ): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTuple(
+      inline def setTuple(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable1 & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "tuple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable1 & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setURI(value: S): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: S): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -469,8 +436,7 @@ object schemableMod {
   }
   object Schemable2C {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: S,
       array: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ js.Any => js.Any,
       boolean: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, boolean> */ js.Any,
@@ -508,66 +474,54 @@ object schemableMod {
       __obj.asInstanceOf[Schemable2C[S, E]]
     }
     
-    @scala.inline
-    implicit class Schemable2CMutableBuilder[Self <: Schemable2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (Schemable2C[S, E])) extends AnyVal {
+    extension [Self <: Schemable2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (Schemable2C[S, E])) {
       
-      @scala.inline
-      def setArray(
+      inline def setArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBoolean(
+      inline def setBoolean(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, boolean> */ js.Any
       ): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersect(
+      inline def setIntersect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, B> */ js.Any => js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ /* left */ js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A & B> */ js.Any
             ]
       ): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLazy(
+      inline def setLazy(
         value: (String, js.Function0[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "lazy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLiteral(value: js.Any => js.Any): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
+      inline def setLiteral(value: js.Any => js.Any): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNullable(
+      inline def setNullable(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "nullable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumber(
+      inline def setNumber(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, number> */ js.Any
       ): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartial(
+      inline def setPartial(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable2C & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "partial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRecord(
+      inline def setRecord(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setString(
+      inline def setString(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, string> */ js.Any
       ): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSum(
+      inline def setSum(
         value: js.Any => js.Function1[
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof any ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A[K] & Record<T, K>> * / any}
@@ -576,22 +530,19 @@ object schemableMod {
             ]
       ): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTuple(
+      inline def setTuple(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable2C & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "tuple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.Schemable2C & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setURI(value: S): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: S): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -604,8 +555,7 @@ object schemableMod {
   }
   object WithRefine {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       refine: (js.Function1[js.Any, /* is B */ Boolean], String) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ /* from */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, B> */ js.Any
@@ -615,11 +565,9 @@ object schemableMod {
       __obj.asInstanceOf[WithRefine[S]]
     }
     
-    @scala.inline
-    implicit class WithRefineMutableBuilder[Self <: WithRefine[?], S] (val x: Self & WithRefine[S]) extends AnyVal {
+    extension [Self <: WithRefine[?], S](x: Self & WithRefine[S]) {
       
-      @scala.inline
-      def setRefine(
+      inline def setRefine(
         value: (js.Function1[js.Any, /* is B */ Boolean], String) => js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A> */ /* from */ js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, B> */ js.Any
@@ -637,8 +585,7 @@ object schemableMod {
   }
   object WithRefine1 {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       refine: (js.Function1[js.Any, /* is B */ Boolean], String) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ /* from */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, B> */ js.Any
@@ -648,11 +595,9 @@ object schemableMod {
       __obj.asInstanceOf[WithRefine1[S]]
     }
     
-    @scala.inline
-    implicit class WithRefine1MutableBuilder[Self <: WithRefine1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & WithRefine1[S]) extends AnyVal {
+    extension [Self <: WithRefine1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & WithRefine1[S]) {
       
-      @scala.inline
-      def setRefine(
+      inline def setRefine(
         value: (js.Function1[js.Any, /* is B */ Boolean], String) => js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A> */ /* from */ js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, B> */ js.Any
@@ -670,8 +615,7 @@ object schemableMod {
   }
   object WithRefine2C {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       refine: (js.Function1[js.Any, /* is B */ Boolean], String) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ /* from */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, B> */ js.Any
@@ -681,11 +625,9 @@ object schemableMod {
       __obj.asInstanceOf[WithRefine2C[S, E]]
     }
     
-    @scala.inline
-    implicit class WithRefine2CMutableBuilder[Self <: WithRefine2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (WithRefine2C[S, E])) extends AnyVal {
+    extension [Self <: WithRefine2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (WithRefine2C[S, E])) {
       
-      @scala.inline
-      def setRefine(
+      inline def setRefine(
         value: (js.Function1[js.Any, /* is B */ Boolean], String) => js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A> */ /* from */ js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, B> */ js.Any
@@ -704,8 +646,7 @@ object schemableMod {
   }
   object WithUnion {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       union: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A[K]> * / any}
       */ typings.ioTs.ioTsStrings.WithUnion & TopLevel[js.Any] => js.Any
@@ -714,11 +655,9 @@ object schemableMod {
       __obj.asInstanceOf[WithUnion[S]]
     }
     
-    @scala.inline
-    implicit class WithUnionMutableBuilder[Self <: WithUnion[?], S] (val x: Self & WithUnion[S]) extends AnyVal {
+    extension [Self <: WithUnion[?], S](x: Self & WithUnion[S]) {
       
-      @scala.inline
-      def setUnion(
+      inline def setUnion(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.WithUnion & TopLevel[js.Any] => js.Any
@@ -736,8 +675,7 @@ object schemableMod {
   }
   object WithUnion1 {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       union: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A[K]> * / any}
       */ typings.ioTs.ioTsStrings.WithUnion1 & TopLevel[js.Any] => js.Any
@@ -746,11 +684,9 @@ object schemableMod {
       __obj.asInstanceOf[WithUnion1[S]]
     }
     
-    @scala.inline
-    implicit class WithUnion1MutableBuilder[Self <: WithUnion1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & WithUnion1[S]) extends AnyVal {
+    extension [Self <: WithUnion1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & WithUnion1[S]) {
       
-      @scala.inline
-      def setUnion(
+      inline def setUnion(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.WithUnion1 & TopLevel[js.Any] => js.Any
@@ -768,8 +704,7 @@ object schemableMod {
   }
   object WithUnion2C {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       union: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A[K]> * / any}
       */ typings.ioTs.ioTsStrings.WithUnion2C & TopLevel[js.Any] => js.Any
@@ -778,11 +713,9 @@ object schemableMod {
       __obj.asInstanceOf[WithUnion2C[S, E]]
     }
     
-    @scala.inline
-    implicit class WithUnion2CMutableBuilder[Self <: WithUnion2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (WithUnion2C[S, E])) extends AnyVal {
+    extension [Self <: WithUnion2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (WithUnion2C[S, E])) {
       
-      @scala.inline
-      def setUnion(
+      inline def setUnion(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof A ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, A[K]> * / any}
         */ typings.ioTs.ioTsStrings.WithUnion2C & TopLevel[js.Any] => js.Any
@@ -798,8 +731,7 @@ object schemableMod {
   }
   object WithUnknownContainers {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       UnknownArray: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, Array<unknown>> */ js.Any,
       UnknownRecord: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, Record<string, unknown>> */ js.Any
     ): WithUnknownContainers[S] = {
@@ -807,16 +739,13 @@ object schemableMod {
       __obj.asInstanceOf[WithUnknownContainers[S]]
     }
     
-    @scala.inline
-    implicit class WithUnknownContainersMutableBuilder[Self <: WithUnknownContainers[?], S] (val x: Self & WithUnknownContainers[S]) extends AnyVal {
+    extension [Self <: WithUnknownContainers[?], S](x: Self & WithUnknownContainers[S]) {
       
-      @scala.inline
-      def setUnknownArray(
+      inline def setUnknownArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, Array<unknown>> */ js.Any
       ): Self = StObject.set(x, "UnknownArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownRecord(
+      inline def setUnknownRecord(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<S, Record<string, unknown>> */ js.Any
       ): Self = StObject.set(x, "UnknownRecord", value.asInstanceOf[js.Any])
     }
@@ -830,8 +759,7 @@ object schemableMod {
   }
   object WithUnknownContainers1 {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       UnknownArray: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, Array<unknown>> */ js.Any,
       UnknownRecord: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, Record<string, unknown>> */ js.Any
     ): WithUnknownContainers1[S] = {
@@ -839,16 +767,13 @@ object schemableMod {
       __obj.asInstanceOf[WithUnknownContainers1[S]]
     }
     
-    @scala.inline
-    implicit class WithUnknownContainers1MutableBuilder[Self <: WithUnknownContainers1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & WithUnknownContainers1[S]) extends AnyVal {
+    extension [Self <: WithUnknownContainers1[?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & WithUnknownContainers1[S]) {
       
-      @scala.inline
-      def setUnknownArray(
+      inline def setUnknownArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, Array<unknown>> */ js.Any
       ): Self = StObject.set(x, "UnknownArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownRecord(
+      inline def setUnknownRecord(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<S, Record<string, unknown>> */ js.Any
       ): Self = StObject.set(x, "UnknownRecord", value.asInstanceOf[js.Any])
     }
@@ -862,8 +787,7 @@ object schemableMod {
   }
   object WithUnknownContainers2C {
     
-    @scala.inline
-    def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       UnknownArray: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, Array<unknown>> */ js.Any,
       UnknownRecord: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, Record<string, unknown>> */ js.Any
     ): WithUnknownContainers2C[S, E] = {
@@ -871,16 +795,13 @@ object schemableMod {
       __obj.asInstanceOf[WithUnknownContainers2C[S, E]]
     }
     
-    @scala.inline
-    implicit class WithUnknownContainers2CMutableBuilder[Self <: WithUnknownContainers2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (WithUnknownContainers2C[S, E])) extends AnyVal {
+    extension [Self <: WithUnknownContainers2C[?, ?], S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (WithUnknownContainers2C[S, E])) {
       
-      @scala.inline
-      def setUnknownArray(
+      inline def setUnknownArray(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, Array<unknown>> */ js.Any
       ): Self = StObject.set(x, "UnknownArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownRecord(
+      inline def setUnknownRecord(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<S, E, Record<string, unknown>> */ js.Any
       ): Self = StObject.set(x, "UnknownRecord", value.asInstanceOf[js.Any])
     }

@@ -39,8 +39,7 @@ trait OffsetData extends StObject {
 }
 object OffsetData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auto: Offsets,
     `auto-end`: Offsets,
     `auto-start`: Offsets,
@@ -71,52 +70,36 @@ object OffsetData {
     __obj.asInstanceOf[OffsetData]
   }
   
-  @scala.inline
-  implicit class OffsetDataMutableBuilder[Self <: OffsetData] (val x: Self) extends AnyVal {
+  extension [Self <: OffsetData](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Offsets): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Offsets): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAuto-end`(value: Offsets): Self = StObject.set(x, "auto-end", value.asInstanceOf[js.Any])
+    inline def `setAuto-end`(value: Offsets): Self = StObject.set(x, "auto-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAuto-start`(value: Offsets): Self = StObject.set(x, "auto-start", value.asInstanceOf[js.Any])
+    inline def `setAuto-start`(value: Offsets): Self = StObject.set(x, "auto-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottom(value: Offsets): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Offsets): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBottom-end`(value: Offsets): Self = StObject.set(x, "bottom-end", value.asInstanceOf[js.Any])
+    inline def `setBottom-end`(value: Offsets): Self = StObject.set(x, "bottom-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBottom-start`(value: Offsets): Self = StObject.set(x, "bottom-start", value.asInstanceOf[js.Any])
+    inline def `setBottom-start`(value: Offsets): Self = StObject.set(x, "bottom-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Offsets): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Offsets): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLeft-end`(value: Offsets): Self = StObject.set(x, "left-end", value.asInstanceOf[js.Any])
+    inline def `setLeft-end`(value: Offsets): Self = StObject.set(x, "left-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLeft-start`(value: Offsets): Self = StObject.set(x, "left-start", value.asInstanceOf[js.Any])
+    inline def `setLeft-start`(value: Offsets): Self = StObject.set(x, "left-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Offsets): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Offsets): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRight-end`(value: Offsets): Self = StObject.set(x, "right-end", value.asInstanceOf[js.Any])
+    inline def `setRight-end`(value: Offsets): Self = StObject.set(x, "right-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRight-start`(value: Offsets): Self = StObject.set(x, "right-start", value.asInstanceOf[js.Any])
+    inline def `setRight-start`(value: Offsets): Self = StObject.set(x, "right-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Offsets): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Offsets): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTop-end`(value: Offsets): Self = StObject.set(x, "top-end", value.asInstanceOf[js.Any])
+    inline def `setTop-end`(value: Offsets): Self = StObject.set(x, "top-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTop-start`(value: Offsets): Self = StObject.set(x, "top-start", value.asInstanceOf[js.Any])
+    inline def `setTop-start`(value: Offsets): Self = StObject.set(x, "top-start", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait CreateEventTrackerRequest extends StObject {
 }
 object CreateEventTrackerRequest {
   
-  @scala.inline
-  def apply(datasetGroupArn: Arn, name: Name): CreateEventTrackerRequest = {
+  inline def apply(datasetGroupArn: Arn, name: Name): CreateEventTrackerRequest = {
     val __obj = js.Dynamic.literal(datasetGroupArn = datasetGroupArn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEventTrackerRequest]
   }
   
-  @scala.inline
-  implicit class CreateEventTrackerRequestMutableBuilder[Self <: CreateEventTrackerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEventTrackerRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

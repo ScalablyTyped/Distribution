@@ -248,8 +248,7 @@ trait TypeofBrowser extends StObject {
 }
 object TypeofBrowser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     android: Boolean,
     android23: Boolean,
     any3d: Boolean,
@@ -302,148 +301,100 @@ object TypeofBrowser {
     __obj.asInstanceOf[TypeofBrowser]
   }
   
-  @scala.inline
-  implicit class TypeofBrowserMutableBuilder[Self <: TypeofBrowser] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofBrowser](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroid23(value: Boolean): Self = StObject.set(x, "android23", value.asInstanceOf[js.Any])
+    inline def setAndroid23(value: Boolean): Self = StObject.set(x, "android23", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAny3d(value: Boolean): Self = StObject.set(x, "any3d", value.asInstanceOf[js.Any])
+    inline def setAny3d(value: Boolean): Self = StObject.set(x, "any3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaidu(value: Boolean): Self = StObject.set(x, "baidu", value.asInstanceOf[js.Any])
+    inline def setBaidu(value: Boolean): Self = StObject.set(x, "baidu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+    inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+    inline def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGecko3d(value: Boolean): Self = StObject.set(x, "gecko3d", value.asInstanceOf[js.Any])
+    inline def setGecko3d(value: Boolean): Self = StObject.set(x, "gecko3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
+    inline def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
+    inline def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+    inline def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe10(value: Boolean): Self = StObject.set(x, "ie10", value.asInstanceOf[js.Any])
+    inline def setIe10(value: Boolean): Self = StObject.set(x, "ie10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe11(value: Boolean): Self = StObject.set(x, "ie11", value.asInstanceOf[js.Any])
+    inline def setIe11(value: Boolean): Self = StObject.set(x, "ie11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe3d(value: Boolean): Self = StObject.set(x, "ie3d", value.asInstanceOf[js.Any])
+    inline def setIe3d(value: Boolean): Self = StObject.set(x, "ie3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe6(value: Boolean): Self = StObject.set(x, "ie6", value.asInstanceOf[js.Any])
+    inline def setIe6(value: Boolean): Self = StObject.set(x, "ie6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe7(value: Boolean): Self = StObject.set(x, "ie7", value.asInstanceOf[js.Any])
+    inline def setIe7(value: Boolean): Self = StObject.set(x, "ie7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe8(value: Boolean): Self = StObject.set(x, "ie8", value.asInstanceOf[js.Any])
+    inline def setIe8(value: Boolean): Self = StObject.set(x, "ie8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe9(value: Boolean): Self = StObject.set(x, "ie9", value.asInstanceOf[js.Any])
+    inline def setIe9(value: Boolean): Self = StObject.set(x, "ie9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIelt9(value: Boolean): Self = StObject.set(x, "ielt9", value.asInstanceOf[js.Any])
+    inline def setIelt9(value: Boolean): Self = StObject.set(x, "ielt9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCanvas(value: Boolean): Self = StObject.set(x, "isCanvas", value.asInstanceOf[js.Any])
+    inline def setIsCanvas(value: Boolean): Self = StObject.set(x, "isCanvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGeolocation(value: Boolean): Self = StObject.set(x, "isGeolocation", value.asInstanceOf[js.Any])
+    inline def setIsGeolocation(value: Boolean): Self = StObject.set(x, "isGeolocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocalStorage(value: Boolean): Self = StObject.set(x, "isLocalStorage", value.asInstanceOf[js.Any])
+    inline def setIsLocalStorage(value: Boolean): Self = StObject.set(x, "isLocalStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSvg(value: Boolean): Self = StObject.set(x, "isSvg", value.asInstanceOf[js.Any])
+    inline def setIsSvg(value: Boolean): Self = StObject.set(x, "isSvg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVML(value: Boolean): Self = StObject.set(x, "isVML", value.asInstanceOf[js.Any])
+    inline def setIsVML(value: Boolean): Self = StObject.set(x, "isVML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWebGL(value: () => Boolean): Self = StObject.set(x, "isWebGL", js.Any.fromFunction0(value))
+    inline def setIsWebGL(value: () => Boolean): Self = StObject.set(x, "isWebGL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsWebsocket(value: Boolean): Self = StObject.set(x, "isWebsocket", value.asInstanceOf[js.Any])
+    inline def setIsWebsocket(value: Boolean): Self = StObject.set(x, "isWebsocket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWorker(value: Boolean): Self = StObject.set(x, "isWorker", value.asInstanceOf[js.Any])
+    inline def setIsWorker(value: Boolean): Self = StObject.set(x, "isWorker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileOpera(value: Boolean): Self = StObject.set(x, "mobileOpera", value.asInstanceOf[js.Any])
+    inline def setMobileOpera(value: Boolean): Self = StObject.set(x, "mobileOpera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileWebkit(value: Boolean): Self = StObject.set(x, "mobileWebkit", value.asInstanceOf[js.Any])
+    inline def setMobileWebkit(value: Boolean): Self = StObject.set(x, "mobileWebkit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileWebkit3d(value: Boolean): Self = StObject.set(x, "mobileWebkit3d", value.asInstanceOf[js.Any])
+    inline def setMobileWebkit3d(value: Boolean): Self = StObject.set(x, "mobileWebkit3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsPointer(value: Boolean): Self = StObject.set(x, "msPointer", value.asInstanceOf[js.Any])
+    inline def setMsPointer(value: Boolean): Self = StObject.set(x, "msPointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpera3d(value: Boolean): Self = StObject.set(x, "opera3d", value.asInstanceOf[js.Any])
+    inline def setOpera3d(value: Boolean): Self = StObject.set(x, "opera3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlat(value: android | ios | windows | mac | other): Self = StObject.set(x, "plat", value.asInstanceOf[js.Any])
+    inline def setPlat(value: android | ios | windows | mac | other): Self = StObject.set(x, "plat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointer(value: Boolean): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+    inline def setPointer(value: Boolean): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQq(value: Boolean): Self = StObject.set(x, "qq", value.asInstanceOf[js.Any])
+    inline def setQq(value: Boolean): Self = StObject.set(x, "qq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
+    inline def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
+    inline def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUa(value: String): Self = StObject.set(x, "ua", value.asInstanceOf[js.Any])
+    inline def setUa(value: String): Self = StObject.set(x, "ua", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUc(value: Boolean): Self = StObject.set(x, "uc", value.asInstanceOf[js.Any])
+    inline def setUc(value: Boolean): Self = StObject.set(x, "uc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
+    inline def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkit3d(value: Boolean): Self = StObject.set(x, "webkit3d", value.asInstanceOf[js.Any])
+    inline def setWebkit3d(value: Boolean): Self = StObject.set(x, "webkit3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWechat(value: Boolean): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
+    inline def setWechat(value: Boolean): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
   }
 }

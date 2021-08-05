@@ -12,19 +12,15 @@ trait ValuePair extends StObject {
 }
 object ValuePair {
   
-  @scala.inline
-  def apply(First: js.Any, Second: js.Any): ValuePair = {
+  inline def apply(First: js.Any, Second: js.Any): ValuePair = {
     val __obj = js.Dynamic.literal(First = First.asInstanceOf[js.Any], Second = Second.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValuePair]
   }
   
-  @scala.inline
-  implicit class ValuePairMutableBuilder[Self <: ValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: ValuePair](x: Self) {
     
-    @scala.inline
-    def setFirst(value: js.Any): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
+    inline def setFirst(value: js.Any): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: js.Any): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: js.Any): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
   }
 }

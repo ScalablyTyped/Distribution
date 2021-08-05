@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObserverDescriptor[T /* <: Ractive[T] */] extends StObject
 object ObserverDescriptor {
   
-  @scala.inline
-  def ObserverArrayDescriptor[T /* <: Ractive[T] */](array: Boolean, handler: ObserverArrayCallback[T]): typings.ractive.mod.ObserverArrayDescriptor[T] = {
+  inline def ObserverArrayDescriptor[T /* <: Ractive[T] */](array: Boolean, handler: ObserverArrayCallback[T]): typings.ractive.mod.ObserverArrayDescriptor[T] = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ractive.mod.ObserverArrayDescriptor[T]]
   }
   
-  @scala.inline
-  def ObserverBaseDescriptor[T /* <: Ractive[T] */](handler: ObserverCallback[T]): typings.ractive.mod.ObserverBaseDescriptor[T] = {
+  inline def ObserverBaseDescriptor[T /* <: Ractive[T] */](handler: ObserverCallback[T]): typings.ractive.mod.ObserverBaseDescriptor[T] = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ractive.mod.ObserverBaseDescriptor[T]]
   }

@@ -39,23 +39,18 @@ object webTwainAcquireMod {
   }
   object Capabilities {
     
-    @scala.inline
-    def apply(capabilities: js.Array[CapabilitySetup], exceptition: String): Capabilities = {
+    inline def apply(capabilities: js.Array[CapabilitySetup], exceptition: String): Capabilities = {
       val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], exceptition = exceptition.asInstanceOf[js.Any])
       __obj.asInstanceOf[Capabilities]
     }
     
-    @scala.inline
-    implicit class CapabilitiesMutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
+    extension [Self <: Capabilities](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: js.Array[CapabilitySetup]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: js.Array[CapabilitySetup]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: CapabilitySetup*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: CapabilitySetup*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setExceptition(value: String): Self = StObject.set(x, "exceptition", value.asInstanceOf[js.Any])
+      inline def setExceptition(value: String): Self = StObject.set(x, "exceptition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,8 +111,7 @@ object webTwainAcquireMod {
   }
   object CapabilityDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capability: ValueAndLabel,
       conType: ValueAndLabel,
       curIndex: Double,
@@ -131,38 +125,27 @@ object webTwainAcquireMod {
       __obj.asInstanceOf[CapabilityDetails]
     }
     
-    @scala.inline
-    implicit class CapabilityDetailsMutableBuilder[Self <: CapabilityDetails] (val x: Self) extends AnyVal {
+    extension [Self <: CapabilityDetails](x: Self) {
       
-      @scala.inline
-      def setCapability(value: ValueAndLabel): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
+      inline def setCapability(value: ValueAndLabel): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConType(value: ValueAndLabel): Self = StObject.set(x, "conType", value.asInstanceOf[js.Any])
+      inline def setConType(value: ValueAndLabel): Self = StObject.set(x, "conType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
+      inline def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurValue(value: ValueAndLabel): Self = StObject.set(x, "curValue", value.asInstanceOf[js.Any])
+      inline def setCurValue(value: ValueAndLabel): Self = StObject.set(x, "curValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefIndex(value: Double): Self = StObject.set(x, "defIndex", value.asInstanceOf[js.Any])
+      inline def setDefIndex(value: Double): Self = StObject.set(x, "defIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
       
-      @scala.inline
-      def setValueType(value: ValueAndLabel): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: ValueAndLabel): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[ValueAndLabel]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[ValueAndLabel]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: ValueAndLabel*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: ValueAndLabel*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -189,38 +172,28 @@ object webTwainAcquireMod {
   }
   object CapabilitySetup {
     
-    @scala.inline
-    def apply(capability: EnumDWTCap | Double, curValue: Double | String): CapabilitySetup = {
+    inline def apply(capability: EnumDWTCap | Double, curValue: Double | String): CapabilitySetup = {
       val __obj = js.Dynamic.literal(capability = capability.asInstanceOf[js.Any], curValue = curValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[CapabilitySetup]
     }
     
-    @scala.inline
-    implicit class CapabilitySetupMutableBuilder[Self <: CapabilitySetup] (val x: Self) extends AnyVal {
+    extension [Self <: CapabilitySetup](x: Self) {
       
-      @scala.inline
-      def setCapability(value: EnumDWTCap | Double): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
+      inline def setCapability(value: EnumDWTCap | Double): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurValue(value: Double | String): Self = StObject.set(x, "curValue", value.asInstanceOf[js.Any])
+      inline def setCurValue(value: Double | String): Self = StObject.set(x, "curValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
       
-      @scala.inline
-      def setErrorString(value: String): Self = StObject.set(x, "errorString", value.asInstanceOf[js.Any])
+      inline def setErrorString(value: String): Self = StObject.set(x, "errorString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorStringUndefined: Self = StObject.set(x, "errorString", js.undefined)
+      inline def setErrorStringUndefined: Self = StObject.set(x, "errorString", js.undefined)
       
-      @scala.inline
-      def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+      inline def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+      inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     }
   }
   
@@ -273,68 +246,48 @@ object webTwainAcquireMod {
   }
   object DeviceConfiguration {
     
-    @scala.inline
-    def apply(): DeviceConfiguration = {
+    inline def apply(): DeviceConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeviceConfiguration]
     }
     
-    @scala.inline
-    implicit class DeviceConfigurationMutableBuilder[Self <: DeviceConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceConfiguration](x: Self) {
       
-      @scala.inline
-      def setExtendedImageInfoQueryLevel(value: Double): Self = StObject.set(x, "extendedImageInfoQueryLevel", value.asInstanceOf[js.Any])
+      inline def setExtendedImageInfoQueryLevel(value: Double): Self = StObject.set(x, "extendedImageInfoQueryLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedImageInfoQueryLevelUndefined: Self = StObject.set(x, "extendedImageInfoQueryLevel", js.undefined)
+      inline def setExtendedImageInfoQueryLevelUndefined: Self = StObject.set(x, "extendedImageInfoQueryLevel", js.undefined)
       
-      @scala.inline
-      def setIfDisableSourceAfterAcquire(value: Boolean): Self = StObject.set(x, "IfDisableSourceAfterAcquire", value.asInstanceOf[js.Any])
+      inline def setIfDisableSourceAfterAcquire(value: Boolean): Self = StObject.set(x, "IfDisableSourceAfterAcquire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfDisableSourceAfterAcquireUndefined: Self = StObject.set(x, "IfDisableSourceAfterAcquire", js.undefined)
+      inline def setIfDisableSourceAfterAcquireUndefined: Self = StObject.set(x, "IfDisableSourceAfterAcquire", js.undefined)
       
-      @scala.inline
-      def setIfDuplexEnabled(value: Boolean): Self = StObject.set(x, "IfDuplexEnabled", value.asInstanceOf[js.Any])
+      inline def setIfDuplexEnabled(value: Boolean): Self = StObject.set(x, "IfDuplexEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfDuplexEnabledUndefined: Self = StObject.set(x, "IfDuplexEnabled", js.undefined)
+      inline def setIfDuplexEnabledUndefined: Self = StObject.set(x, "IfDuplexEnabled", js.undefined)
       
-      @scala.inline
-      def setIfFeederEnabled(value: Boolean): Self = StObject.set(x, "IfFeederEnabled", value.asInstanceOf[js.Any])
+      inline def setIfFeederEnabled(value: Boolean): Self = StObject.set(x, "IfFeederEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfFeederEnabledUndefined: Self = StObject.set(x, "IfFeederEnabled", js.undefined)
+      inline def setIfFeederEnabledUndefined: Self = StObject.set(x, "IfFeederEnabled", js.undefined)
       
-      @scala.inline
-      def setIfGetExtImageInfo(value: Boolean): Self = StObject.set(x, "IfGetExtImageInfo", value.asInstanceOf[js.Any])
+      inline def setIfGetExtImageInfo(value: Boolean): Self = StObject.set(x, "IfGetExtImageInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfGetExtImageInfoUndefined: Self = StObject.set(x, "IfGetExtImageInfo", js.undefined)
+      inline def setIfGetExtImageInfoUndefined: Self = StObject.set(x, "IfGetExtImageInfo", js.undefined)
       
-      @scala.inline
-      def setIfGetImageInfo(value: Boolean): Self = StObject.set(x, "IfGetImageInfo", value.asInstanceOf[js.Any])
+      inline def setIfGetImageInfo(value: Boolean): Self = StObject.set(x, "IfGetImageInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfGetImageInfoUndefined: Self = StObject.set(x, "IfGetImageInfo", js.undefined)
+      inline def setIfGetImageInfoUndefined: Self = StObject.set(x, "IfGetImageInfo", js.undefined)
       
-      @scala.inline
-      def setIfShowUI(value: Boolean): Self = StObject.set(x, "IfShowUI", value.asInstanceOf[js.Any])
+      inline def setIfShowUI(value: Boolean): Self = StObject.set(x, "IfShowUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfShowUIUndefined: Self = StObject.set(x, "IfShowUI", js.undefined)
+      inline def setIfShowUIUndefined: Self = StObject.set(x, "IfShowUI", js.undefined)
       
-      @scala.inline
-      def setPixelType(value: EnumDWTPixelType | Double | String): Self = StObject.set(x, "PixelType", value.asInstanceOf[js.Any])
+      inline def setPixelType(value: EnumDWTPixelType | Double | String): Self = StObject.set(x, "PixelType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelTypeUndefined: Self = StObject.set(x, "PixelType", js.undefined)
+      inline def setPixelTypeUndefined: Self = StObject.set(x, "PixelType", js.undefined)
       
-      @scala.inline
-      def setResolution(value: Double): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Double): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     }
   }
   
@@ -396,86 +349,60 @@ object webTwainAcquireMod {
   }
   object ScanSetup {
     
-    @scala.inline
-    def apply(): ScanSetup = {
+    inline def apply(): ScanSetup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScanSetup]
     }
     
-    @scala.inline
-    implicit class ScanSetupMutableBuilder[Self <: ScanSetup] (val x: Self) extends AnyVal {
+    extension [Self <: ScanSetup](x: Self) {
       
-      @scala.inline
-      def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+      inline def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+      inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
       
-      @scala.inline
-      def setFileXfer(value: CompressionType): Self = StObject.set(x, "fileXfer", value.asInstanceOf[js.Any])
+      inline def setFileXfer(value: CompressionType): Self = StObject.set(x, "fileXfer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileXferUndefined: Self = StObject.set(x, "fileXfer", js.undefined)
+      inline def setFileXferUndefined: Self = StObject.set(x, "fileXfer", js.undefined)
       
-      @scala.inline
-      def setFuncScanStatus(value: /* status */ Status => Unit): Self = StObject.set(x, "funcScanStatus", js.Any.fromFunction1(value))
+      inline def setFuncScanStatus(value: /* status */ Status => Unit): Self = StObject.set(x, "funcScanStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFuncScanStatusUndefined: Self = StObject.set(x, "funcScanStatus", js.undefined)
+      inline def setFuncScanStatusUndefined: Self = StObject.set(x, "funcScanStatus", js.undefined)
       
-      @scala.inline
-      def setInsertingIndex(value: Double): Self = StObject.set(x, "insertingIndex", value.asInstanceOf[js.Any])
+      inline def setInsertingIndex(value: Double): Self = StObject.set(x, "insertingIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertingIndexUndefined: Self = StObject.set(x, "insertingIndex", js.undefined)
+      inline def setInsertingIndexUndefined: Self = StObject.set(x, "insertingIndex", js.undefined)
       
-      @scala.inline
-      def setMoreSettings(value: AutoBorderDetection): Self = StObject.set(x, "moreSettings", value.asInstanceOf[js.Any])
+      inline def setMoreSettings(value: AutoBorderDetection): Self = StObject.set(x, "moreSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoreSettingsUndefined: Self = StObject.set(x, "moreSettings", js.undefined)
+      inline def setMoreSettingsUndefined: Self = StObject.set(x, "moreSettings", js.undefined)
       
-      @scala.inline
-      def setOutputSetup(value: Format): Self = StObject.set(x, "outputSetup", value.asInstanceOf[js.Any])
+      inline def setOutputSetup(value: Format): Self = StObject.set(x, "outputSetup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputSetupUndefined: Self = StObject.set(x, "outputSetup", js.undefined)
+      inline def setOutputSetupUndefined: Self = StObject.set(x, "outputSetup", js.undefined)
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setScanner(value: String): Self = StObject.set(x, "scanner", value.asInstanceOf[js.Any])
+      inline def setScanner(value: String): Self = StObject.set(x, "scanner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScannerUndefined: Self = StObject.set(x, "scanner", js.undefined)
+      inline def setScannerUndefined: Self = StObject.set(x, "scanner", js.undefined)
       
-      @scala.inline
-      def setSettings(value: BDuplex): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: BDuplex): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSetupId(value: String): Self = StObject.set(x, "setupId", value.asInstanceOf[js.Any])
+      inline def setSetupId(value: String): Self = StObject.set(x, "setupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupIdUndefined: Self = StObject.set(x, "setupId", js.undefined)
+      inline def setSetupIdUndefined: Self = StObject.set(x, "setupId", js.undefined)
       
-      @scala.inline
-      def setTransferMode(value: EnumDWTTransferMode | Double): Self = StObject.set(x, "transferMode", value.asInstanceOf[js.Any])
+      inline def setTransferMode(value: EnumDWTTransferMode | Double): Self = StObject.set(x, "transferMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferModeUndefined: Self = StObject.set(x, "transferMode", js.undefined)
+      inline def setTransferModeUndefined: Self = StObject.set(x, "transferMode", js.undefined)
       
-      @scala.inline
-      def setUi(value: BShowIndicator): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: BShowIndicator): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+      inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
     }
   }
   
@@ -535,80 +462,56 @@ object webTwainAcquireMod {
   }
   object SourceDetails {
     
-    @scala.inline
-    def apply(): SourceDetails = {
+    inline def apply(): SourceDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceDetails]
     }
     
-    @scala.inline
-    implicit class SourceDetailsMutableBuilder[Self <: SourceDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SourceDetails](x: Self) {
       
-      @scala.inline
-      def setDeviceInfo(value: js.Any): Self = StObject.set(x, "DeviceInfo", value.asInstanceOf[js.Any])
+      inline def setDeviceInfo(value: js.Any): Self = StObject.set(x, "DeviceInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceInfoUndefined: Self = StObject.set(x, "DeviceInfo", js.undefined)
+      inline def setDeviceInfoUndefined: Self = StObject.set(x, "DeviceInfo", js.undefined)
       
-      @scala.inline
-      def setDriverType(value: String): Self = StObject.set(x, "DriverType", value.asInstanceOf[js.Any])
+      inline def setDriverType(value: String): Self = StObject.set(x, "DriverType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriverTypeUndefined: Self = StObject.set(x, "DriverType", js.undefined)
+      inline def setDriverTypeUndefined: Self = StObject.set(x, "DriverType", js.undefined)
       
-      @scala.inline
-      def setIsCurrentSource(value: Boolean): Self = StObject.set(x, "IsCurrentSource", value.asInstanceOf[js.Any])
+      inline def setIsCurrentSource(value: Boolean): Self = StObject.set(x, "IsCurrentSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrentSourceUndefined: Self = StObject.set(x, "IsCurrentSource", js.undefined)
+      inline def setIsCurrentSourceUndefined: Self = StObject.set(x, "IsCurrentSource", js.undefined)
       
-      @scala.inline
-      def setIsDefaultSource(value: Boolean): Self = StObject.set(x, "IsDefaultSource", value.asInstanceOf[js.Any])
+      inline def setIsDefaultSource(value: Boolean): Self = StObject.set(x, "IsDefaultSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDefaultSourceUndefined: Self = StObject.set(x, "IsDefaultSource", js.undefined)
+      inline def setIsDefaultSourceUndefined: Self = StObject.set(x, "IsDefaultSource", js.undefined)
       
-      @scala.inline
-      def setManufacturer(value: String): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
+      inline def setManufacturer(value: String): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
+      inline def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
       
-      @scala.inline
-      def setProductFamily(value: String): Self = StObject.set(x, "ProductFamily", value.asInstanceOf[js.Any])
+      inline def setProductFamily(value: String): Self = StObject.set(x, "ProductFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductFamilyUndefined: Self = StObject.set(x, "ProductFamily", js.undefined)
+      inline def setProductFamilyUndefined: Self = StObject.set(x, "ProductFamily", js.undefined)
       
-      @scala.inline
-      def setProductName(value: String): Self = StObject.set(x, "ProductName", value.asInstanceOf[js.Any])
+      inline def setProductName(value: String): Self = StObject.set(x, "ProductName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductNameUndefined: Self = StObject.set(x, "ProductName", js.undefined)
+      inline def setProductNameUndefined: Self = StObject.set(x, "ProductName", js.undefined)
       
-      @scala.inline
-      def setProtocolMajor(value: Double): Self = StObject.set(x, "ProtocolMajor", value.asInstanceOf[js.Any])
+      inline def setProtocolMajor(value: Double): Self = StObject.set(x, "ProtocolMajor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolMajorUndefined: Self = StObject.set(x, "ProtocolMajor", js.undefined)
+      inline def setProtocolMajorUndefined: Self = StObject.set(x, "ProtocolMajor", js.undefined)
       
-      @scala.inline
-      def setProtocolMinor(value: Double): Self = StObject.set(x, "ProtocolMinor", value.asInstanceOf[js.Any])
+      inline def setProtocolMinor(value: Double): Self = StObject.set(x, "ProtocolMinor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolMinorUndefined: Self = StObject.set(x, "ProtocolMinor", js.undefined)
+      inline def setProtocolMinorUndefined: Self = StObject.set(x, "ProtocolMinor", js.undefined)
       
-      @scala.inline
-      def setSupportedGroups(value: Double): Self = StObject.set(x, "SupportedGroups", value.asInstanceOf[js.Any])
+      inline def setSupportedGroups(value: Double): Self = StObject.set(x, "SupportedGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedGroupsUndefined: Self = StObject.set(x, "SupportedGroups", js.undefined)
+      inline def setSupportedGroupsUndefined: Self = StObject.set(x, "SupportedGroups", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     }
   }
   
@@ -622,32 +525,24 @@ object webTwainAcquireMod {
   }
   object Status {
     
-    @scala.inline
-    def apply(): Status = {
+    inline def apply(): Status = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Status]
     }
     
-    @scala.inline
-    implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+    extension [Self <: Status](x: Self) {
       
-      @scala.inline
-      def setBScanCompleted(value: Boolean): Self = StObject.set(x, "bScanCompleted", value.asInstanceOf[js.Any])
+      inline def setBScanCompleted(value: Boolean): Self = StObject.set(x, "bScanCompleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBScanCompletedUndefined: Self = StObject.set(x, "bScanCompleted", js.undefined)
+      inline def setBScanCompletedUndefined: Self = StObject.set(x, "bScanCompleted", js.undefined)
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setResult(value: CurrentPageNum): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: CurrentPageNum): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
   
@@ -661,32 +556,24 @@ object webTwainAcquireMod {
   }
   object TiffTag {
     
-    @scala.inline
-    def apply(): TiffTag = {
+    inline def apply(): TiffTag = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TiffTag]
     }
     
-    @scala.inline
-    implicit class TiffTagMutableBuilder[Self <: TiffTag] (val x: Self) extends AnyVal {
+    extension [Self <: TiffTag](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setTagIdentifier(value: Double): Self = StObject.set(x, "tagIdentifier", value.asInstanceOf[js.Any])
+      inline def setTagIdentifier(value: Double): Self = StObject.set(x, "tagIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagIdentifierUndefined: Self = StObject.set(x, "tagIdentifier", js.undefined)
+      inline def setTagIdentifierUndefined: Self = StObject.set(x, "tagIdentifier", js.undefined)
       
-      @scala.inline
-      def setUseBase64Encoding(value: Boolean): Self = StObject.set(x, "useBase64Encoding", value.asInstanceOf[js.Any])
+      inline def setUseBase64Encoding(value: Boolean): Self = StObject.set(x, "useBase64Encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBase64EncodingUndefined: Self = StObject.set(x, "useBase64Encoding", js.undefined)
+      inline def setUseBase64EncodingUndefined: Self = StObject.set(x, "useBase64Encoding", js.undefined)
     }
   }
   
@@ -704,20 +591,16 @@ object webTwainAcquireMod {
   }
   object ValueAndLabel {
     
-    @scala.inline
-    def apply(label: String, value: EnumDWTCap | EnumDWTCapType | EnumDWTCapValueType | Double): ValueAndLabel = {
+    inline def apply(label: String, value: EnumDWTCap | EnumDWTCapType | EnumDWTCapValueType | Double): ValueAndLabel = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueAndLabel]
     }
     
-    @scala.inline
-    implicit class ValueAndLabelMutableBuilder[Self <: ValueAndLabel] (val x: Self) extends AnyVal {
+    extension [Self <: ValueAndLabel](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: EnumDWTCap | EnumDWTCapType | EnumDWTCapValueType | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: EnumDWTCap | EnumDWTCapType | EnumDWTCapValueType | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -735,44 +618,32 @@ object webTwainAcquireMod {
   }
   object Version {
     
-    @scala.inline
-    def apply(): Version = {
+    inline def apply(): Version = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Version]
     }
     
-    @scala.inline
-    implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+    extension [Self <: Version](x: Self) {
       
-      @scala.inline
-      def setCountry(value: Double): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: Double): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: Double): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: Double): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
       
-      @scala.inline
-      def setMajorNum(value: Double): Self = StObject.set(x, "MajorNum", value.asInstanceOf[js.Any])
+      inline def setMajorNum(value: Double): Self = StObject.set(x, "MajorNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorNumUndefined: Self = StObject.set(x, "MajorNum", js.undefined)
+      inline def setMajorNumUndefined: Self = StObject.set(x, "MajorNum", js.undefined)
       
-      @scala.inline
-      def setMinorNum(value: Double): Self = StObject.set(x, "MinorNum", value.asInstanceOf[js.Any])
+      inline def setMinorNum(value: Double): Self = StObject.set(x, "MinorNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorNumUndefined: Self = StObject.set(x, "MinorNum", js.undefined)
+      inline def setMinorNumUndefined: Self = StObject.set(x, "MinorNum", js.undefined)
     }
   }
   

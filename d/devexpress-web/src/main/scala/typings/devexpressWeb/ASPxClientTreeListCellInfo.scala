@@ -21,19 +21,15 @@ trait ASPxClientTreeListCellInfo extends StObject {
 }
 object ASPxClientTreeListCellInfo {
   
-  @scala.inline
-  def apply(column: ASPxClientTreeListColumn, nodeKey: String): ASPxClientTreeListCellInfo = {
+  inline def apply(column: ASPxClientTreeListColumn, nodeKey: String): ASPxClientTreeListCellInfo = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListCellInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListCellInfoMutableBuilder[Self <: ASPxClientTreeListCellInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListCellInfo](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
+    inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
   }
 }

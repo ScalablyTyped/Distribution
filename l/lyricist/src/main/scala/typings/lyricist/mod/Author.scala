@@ -14,25 +14,19 @@ trait Author extends StObject {
 }
 object Author {
   
-  @scala.inline
-  def apply(attribution: Double, user: User): Author = {
+  inline def apply(attribution: Double, user: User): Author = {
     val __obj = js.Dynamic.literal(attribution = attribution.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Author]
   }
   
-  @scala.inline
-  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
+  extension [Self <: Author](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinned_role(value: js.Any): Self = StObject.set(x, "pinned_role", value.asInstanceOf[js.Any])
+    inline def setPinned_role(value: js.Any): Self = StObject.set(x, "pinned_role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinned_roleUndefined: Self = StObject.set(x, "pinned_role", js.undefined)
+    inline def setPinned_roleUndefined: Self = StObject.set(x, "pinned_role", js.undefined)
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

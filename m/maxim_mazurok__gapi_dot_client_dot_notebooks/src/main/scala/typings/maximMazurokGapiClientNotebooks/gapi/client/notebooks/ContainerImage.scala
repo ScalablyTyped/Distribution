@@ -14,25 +14,19 @@ trait ContainerImage extends StObject {
 }
 object ContainerImage {
   
-  @scala.inline
-  def apply(): ContainerImage = {
+  inline def apply(): ContainerImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerImage]
   }
   
-  @scala.inline
-  implicit class ContainerImageMutableBuilder[Self <: ContainerImage] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerImage](x: Self) {
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

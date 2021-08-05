@@ -43,58 +43,41 @@ trait CreateStackInstancesInput extends StObject {
 }
 object CreateStackInstancesInput {
   
-  @scala.inline
-  def apply(Regions: RegionList, StackSetName: StackSetName): CreateStackInstancesInput = {
+  inline def apply(Regions: RegionList, StackSetName: StackSetName): CreateStackInstancesInput = {
     val __obj = js.Dynamic.literal(Regions = Regions.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStackInstancesInput]
   }
   
-  @scala.inline
-  implicit class CreateStackInstancesInputMutableBuilder[Self <: CreateStackInstancesInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStackInstancesInput](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    @scala.inline
-    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setDeploymentTargets(value: DeploymentTargets): Self = StObject.set(x, "DeploymentTargets", value.asInstanceOf[js.Any])
+    inline def setDeploymentTargets(value: DeploymentTargets): Self = StObject.set(x, "DeploymentTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentTargetsUndefined: Self = StObject.set(x, "DeploymentTargets", js.undefined)
+    inline def setDeploymentTargetsUndefined: Self = StObject.set(x, "DeploymentTargets", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
-    @scala.inline
-    def setOperationPreferences(value: StackSetOperationPreferences): Self = StObject.set(x, "OperationPreferences", value.asInstanceOf[js.Any])
+    inline def setOperationPreferences(value: StackSetOperationPreferences): Self = StObject.set(x, "OperationPreferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationPreferencesUndefined: Self = StObject.set(x, "OperationPreferences", js.undefined)
+    inline def setOperationPreferencesUndefined: Self = StObject.set(x, "OperationPreferences", js.undefined)
     
-    @scala.inline
-    def setParameterOverrides(value: Parameters): Self = StObject.set(x, "ParameterOverrides", value.asInstanceOf[js.Any])
+    inline def setParameterOverrides(value: Parameters): Self = StObject.set(x, "ParameterOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterOverridesUndefined: Self = StObject.set(x, "ParameterOverrides", js.undefined)
+    inline def setParameterOverridesUndefined: Self = StObject.set(x, "ParameterOverrides", js.undefined)
     
-    @scala.inline
-    def setParameterOverridesVarargs(value: Parameter*): Self = StObject.set(x, "ParameterOverrides", js.Array(value :_*))
+    inline def setParameterOverridesVarargs(value: Parameter*): Self = StObject.set(x, "ParameterOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setRegions(value: RegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: RegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
     
-    @scala.inline
-    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
+    inline def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

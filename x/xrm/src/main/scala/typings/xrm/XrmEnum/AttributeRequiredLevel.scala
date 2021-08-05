@@ -20,15 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttributeRequiredLevel extends StObject
 object AttributeRequiredLevel {
   
-  @scala.inline
-  def ApplicationRequired: `2` = 2.asInstanceOf[`2`]
+  inline def ApplicationRequired: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Recommended: `3` = 3.asInstanceOf[`3`]
+  inline def Recommended: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def SystemRequired: `1` = 1.asInstanceOf[`1`]
+  inline def SystemRequired: `1` = 1.asInstanceOf[`1`]
 }

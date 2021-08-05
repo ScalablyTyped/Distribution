@@ -14,13 +14,10 @@ object sortDefinitionOrderMod {
   trait SortDefinitionOrder extends StObject
   object SortDefinitionOrder {
     
-    @scala.inline
-    def `0`: typings.tablesorter.tablesorterNumbers.`0` = 0.asInstanceOf[typings.tablesorter.tablesorterNumbers.`0`]
+    inline def `0`: typings.tablesorter.tablesorterNumbers.`0` = 0.asInstanceOf[typings.tablesorter.tablesorterNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.tablesorter.tablesorterNumbers.`1` = 1.asInstanceOf[typings.tablesorter.tablesorterNumbers.`1`]
+    inline def `1`: typings.tablesorter.tablesorterNumbers.`1` = 1.asInstanceOf[typings.tablesorter.tablesorterNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.tablesorter.tablesorterNumbers.`2` = 2.asInstanceOf[typings.tablesorter.tablesorterNumbers.`2`]
+    inline def `2`: typings.tablesorter.tablesorterNumbers.`2` = 2.asInstanceOf[typings.tablesorter.tablesorterNumbers.`2`]
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TotalModeType extends StObject
 object TotalModeType {
   
-  @scala.inline
-  def TOTAL_EXPR: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR = "TOTAL_EXPR".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR]
+  inline def TOTAL_EXPR: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR = "TOTAL_EXPR".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR]
   
-  @scala.inline
-  def TOTAL_OFF: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF = "TOTAL_OFF".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF]
+  inline def TOTAL_OFF: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF = "TOTAL_OFF".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF]
 }

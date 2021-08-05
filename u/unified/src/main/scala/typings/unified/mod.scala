@@ -17,8 +17,7 @@ object mod {
     *
     * @typeParam P Processor settings. Useful when packaging unified with a preset parser and compiler.
     */
-  @scala.inline
-  def apply[P](): Processor[P] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Processor[P]]
+  inline def apply[P](): Processor[P] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Processor[P]]
   
   @JSImport("unified", JSImport.Namespace)
   @js.native
@@ -51,17 +50,14 @@ object mod {
   }
   object Compiler {
     
-    @scala.inline
-    def apply(compile: () => String): Compiler = {
+    inline def apply(compile: () => String): Compiler = {
       val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile))
       __obj.asInstanceOf[Compiler]
     }
     
-    @scala.inline
-    implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
+    extension [Self <: Compiler](x: Self) {
       
-      @scala.inline
-      def setCompile(value: () => String): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
+      inline def setCompile(value: () => String): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
     }
   }
   
@@ -103,17 +99,14 @@ object mod {
   }
   object Parser {
     
-    @scala.inline
-    def apply(parse: () => Node): Parser = {
+    inline def apply(parse: () => Node): Parser = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse))
       __obj.asInstanceOf[Parser]
     }
     
-    @scala.inline
-    implicit class ParserMutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
+    extension [Self <: Parser](x: Self) {
       
-      @scala.inline
-      def setParse(value: () => Node): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
+      inline def setParse(value: () => Node): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
     }
   }
   
@@ -191,26 +184,20 @@ object mod {
   }
   object Preset {
     
-    @scala.inline
-    def apply[S, P](plugins: PluggableList[P]): Preset[S, P] = {
+    inline def apply[S, P](plugins: PluggableList[P]): Preset[S, P] = {
       val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[Preset[S, P]]
     }
     
-    @scala.inline
-    implicit class PresetMutableBuilder[Self <: Preset[?, ?], S, P] (val x: Self & (Preset[S, P])) extends AnyVal {
+    extension [Self <: Preset[?, ?], S, P](x: Self & (Preset[S, P])) {
       
-      @scala.inline
-      def setPlugins(value: PluggableList[P]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: PluggableList[P]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], P])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], P])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     }
   }
   
@@ -424,17 +411,14 @@ object mod {
   }
   object ProcessorSettings {
     
-    @scala.inline
-    def apply[P](settings: P): ProcessorSettings[P] = {
+    inline def apply[P](settings: P): ProcessorSettings[P] = {
       val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessorSettings[P]]
     }
     
-    @scala.inline
-    implicit class ProcessorSettingsMutableBuilder[Self <: ProcessorSettings[?], P] (val x: Self & ProcessorSettings[P]) extends AnyVal {
+    extension [Self <: ProcessorSettings[?], P](x: Self & ProcessorSettings[P]) {
       
-      @scala.inline
-      def setSettings(value: P): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: P): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   

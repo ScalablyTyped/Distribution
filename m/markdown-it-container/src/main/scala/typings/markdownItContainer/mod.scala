@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* was `typeof markdownItContainer.container_plugin` */
-  @scala.inline
-  def apply(md: MarkdownIt, name: String, opts: ContainerOpts): Unit = (^.asInstanceOf[js.Dynamic].apply(md.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(md: MarkdownIt, name: String, opts: ContainerOpts): Unit = (^.asInstanceOf[js.Dynamic].apply(md.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("markdown-it-container", JSImport.Namespace)
   @js.native
@@ -37,34 +36,26 @@ object mod {
     }
     object ContainerOpts {
       
-      @scala.inline
-      def apply(): ContainerOpts = {
+      inline def apply(): ContainerOpts = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ContainerOpts]
       }
       
-      @scala.inline
-      implicit class ContainerOptsMutableBuilder[Self <: ContainerOpts] (val x: Self) extends AnyVal {
+      extension [Self <: ContainerOpts](x: Self) {
         
-        @scala.inline
-        def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+        inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+        inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
         
-        @scala.inline
-        def setRender(
+        inline def setRender(
           value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* index */ Double, /* options */ js.Any, /* env */ js.Any, /* self */ typings.markdownIt.rendererMod.^) => Unit
         ): Self = StObject.set(x, "render", js.Any.fromFunction5(value))
         
-        @scala.inline
-        def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+        inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
         
-        @scala.inline
-        def setValidate(value: /* params */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+        inline def setValidate(value: /* params */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+        inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       }
     }
   }

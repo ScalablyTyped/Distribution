@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LightAlert extends StObject
 object LightAlert {
   
-  @scala.inline
-  def lselect: typings.nodeHueApi.nodeHueApiStrings.lselect = "lselect".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.lselect]
+  inline def lselect: typings.nodeHueApi.nodeHueApiStrings.lselect = "lselect".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.lselect]
   
-  @scala.inline
-  def none: typings.nodeHueApi.nodeHueApiStrings.none = "none".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.none]
+  inline def none: typings.nodeHueApi.nodeHueApiStrings.none = "none".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.none]
   
-  @scala.inline
-  def select: typings.nodeHueApi.nodeHueApiStrings.select = "select".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.select]
+  inline def select: typings.nodeHueApi.nodeHueApiStrings.select = "select".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.select]
 }

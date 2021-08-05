@@ -22,55 +22,39 @@ trait SceneOptions extends StObject {
 }
 object SceneOptions {
   
-  @scala.inline
-  def apply(): SceneOptions = {
+  inline def apply(): SceneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneOptions]
   }
   
-  @scala.inline
-  implicit class SceneOptionsMutableBuilder[Self <: SceneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SceneOptions](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setCullBackfaces(value: Boolean): Self = StObject.set(x, "cullBackfaces", value.asInstanceOf[js.Any])
+    inline def setCullBackfaces(value: Boolean): Self = StObject.set(x, "cullBackfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCullBackfacesUndefined: Self = StObject.set(x, "cullBackfaces", js.undefined)
+    inline def setCullBackfacesUndefined: Self = StObject.set(x, "cullBackfaces", js.undefined)
     
-    @scala.inline
-    def setFractionalPoints(value: Boolean): Self = StObject.set(x, "fractionalPoints", value.asInstanceOf[js.Any])
+    inline def setFractionalPoints(value: Boolean): Self = StObject.set(x, "fractionalPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFractionalPointsUndefined: Self = StObject.set(x, "fractionalPoints", js.undefined)
+    inline def setFractionalPointsUndefined: Self = StObject.set(x, "fractionalPoints", js.undefined)
     
-    @scala.inline
-    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
+    inline def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaderUndefined: Self = StObject.set(x, "shader", js.undefined)
+    inline def setShaderUndefined: Self = StObject.set(x, "shader", js.undefined)
     
-    @scala.inline
-    def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+    inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

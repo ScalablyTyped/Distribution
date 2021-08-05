@@ -13,22 +13,17 @@ trait BatchGetObjectAttributesResponse extends StObject {
 }
 object BatchGetObjectAttributesResponse {
   
-  @scala.inline
-  def apply(): BatchGetObjectAttributesResponse = {
+  inline def apply(): BatchGetObjectAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetObjectAttributesResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetObjectAttributesResponseMutableBuilder[Self <: BatchGetObjectAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetObjectAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
   }
 }

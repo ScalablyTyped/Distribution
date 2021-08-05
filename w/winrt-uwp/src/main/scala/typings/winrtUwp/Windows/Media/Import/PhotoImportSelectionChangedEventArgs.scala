@@ -12,16 +12,13 @@ trait PhotoImportSelectionChangedEventArgs extends StObject {
 }
 object PhotoImportSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(isSelectionEmpty: Boolean): PhotoImportSelectionChangedEventArgs = {
+  inline def apply(isSelectionEmpty: Boolean): PhotoImportSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(isSelectionEmpty = isSelectionEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoImportSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PhotoImportSelectionChangedEventArgsMutableBuilder[Self <: PhotoImportSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsSelectionEmpty(value: Boolean): Self = StObject.set(x, "isSelectionEmpty", value.asInstanceOf[js.Any])
+    inline def setIsSelectionEmpty(value: Boolean): Self = StObject.set(x, "isSelectionEmpty", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait BodyBundletypetransaction extends StObject {
 }
 object BodyBundletypetransaction {
   
-  @scala.inline
-  def apply(body: Bundletypetransaction): BodyBundletypetransaction = {
+  inline def apply(body: Bundletypetransaction): BodyBundletypetransaction = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyBundletypetransaction]
   }
   
-  @scala.inline
-  implicit class BodyBundletypetransactionMutableBuilder[Self <: BodyBundletypetransaction] (val x: Self) extends AnyVal {
+  extension [Self <: BodyBundletypetransaction](x: Self) {
     
-    @scala.inline
-    def setBody(value: Bundletypetransaction): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Bundletypetransaction): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

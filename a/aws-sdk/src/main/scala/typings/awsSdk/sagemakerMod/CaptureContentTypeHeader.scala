@@ -18,31 +18,23 @@ trait CaptureContentTypeHeader extends StObject {
 }
 object CaptureContentTypeHeader {
   
-  @scala.inline
-  def apply(): CaptureContentTypeHeader = {
+  inline def apply(): CaptureContentTypeHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptureContentTypeHeader]
   }
   
-  @scala.inline
-  implicit class CaptureContentTypeHeaderMutableBuilder[Self <: CaptureContentTypeHeader] (val x: Self) extends AnyVal {
+  extension [Self <: CaptureContentTypeHeader](x: Self) {
     
-    @scala.inline
-    def setCsvContentTypes(value: CsvContentTypes): Self = StObject.set(x, "CsvContentTypes", value.asInstanceOf[js.Any])
+    inline def setCsvContentTypes(value: CsvContentTypes): Self = StObject.set(x, "CsvContentTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvContentTypesUndefined: Self = StObject.set(x, "CsvContentTypes", js.undefined)
+    inline def setCsvContentTypesUndefined: Self = StObject.set(x, "CsvContentTypes", js.undefined)
     
-    @scala.inline
-    def setCsvContentTypesVarargs(value: CsvContentType*): Self = StObject.set(x, "CsvContentTypes", js.Array(value :_*))
+    inline def setCsvContentTypesVarargs(value: CsvContentType*): Self = StObject.set(x, "CsvContentTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setJsonContentTypes(value: JsonContentTypes): Self = StObject.set(x, "JsonContentTypes", value.asInstanceOf[js.Any])
+    inline def setJsonContentTypes(value: JsonContentTypes): Self = StObject.set(x, "JsonContentTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonContentTypesUndefined: Self = StObject.set(x, "JsonContentTypes", js.undefined)
+    inline def setJsonContentTypesUndefined: Self = StObject.set(x, "JsonContentTypes", js.undefined)
     
-    @scala.inline
-    def setJsonContentTypesVarargs(value: JsonContentType*): Self = StObject.set(x, "JsonContentTypes", js.Array(value :_*))
+    inline def setJsonContentTypesVarargs(value: JsonContentType*): Self = StObject.set(x, "JsonContentTypes", js.Array(value :_*))
   }
 }

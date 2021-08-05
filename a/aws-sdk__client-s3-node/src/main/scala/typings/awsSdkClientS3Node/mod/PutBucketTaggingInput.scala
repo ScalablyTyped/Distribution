@@ -10,8 +10,7 @@ trait PutBucketTaggingInput
      with typings.awsSdkClientS3Node.typesPutBucketTaggingInputMod.PutBucketTaggingInput
 object PutBucketTaggingInput {
   
-  @scala.inline
-  def apply(Bucket: String, Tagging: Tagging): PutBucketTaggingInput = {
+  inline def apply(Bucket: String, Tagging: Tagging): PutBucketTaggingInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Tagging = Tagging.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketTaggingInput]
   }

@@ -30,8 +30,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     referenceSchema: Input[
       ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema
     ],
@@ -44,30 +43,24 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDa
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource](x: Self) {
     
-    @scala.inline
-    def setReferenceId(value: Input[String]): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: Input[String]): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
+    inline def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
     
-    @scala.inline
-    def setReferenceSchema(
+    inline def setReferenceSchema(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema
         ]
     ): Self = StObject.set(x, "referenceSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ReferenceDataSource(
+    inline def setS3ReferenceDataSource(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource
         ]
     ): Self = StObject.set(x, "s3ReferenceDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

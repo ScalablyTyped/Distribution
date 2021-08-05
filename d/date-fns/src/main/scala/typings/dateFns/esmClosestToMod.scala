@@ -9,10 +9,8 @@ object esmClosestToMod {
   
   object default {
     
-    @scala.inline
-    def apply(dateToCompare: Double, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(dateToCompare: Date, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(dateToCompare: Double, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(dateToCompare: Date, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/closestTo", JSImport.Default)
     @js.native

@@ -14,22 +14,17 @@ trait ExchangeParams extends StObject {
 }
 object ExchangeParams {
   
-  @scala.inline
-  def apply(code: String, redirectUri: String, verifier: String): ExchangeParams = {
+  inline def apply(code: String, redirectUri: String, verifier: String): ExchangeParams = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], verifier = verifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeParams]
   }
   
-  @scala.inline
-  implicit class ExchangeParamsMutableBuilder[Self <: ExchangeParams] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeParams](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
+    inline def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait TableColumnProperties extends StObject {
 }
 object TableColumnProperties {
   
-  @scala.inline
-  def apply(): TableColumnProperties = {
+  inline def apply(): TableColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableColumnProperties]
   }
   
-  @scala.inline
-  implicit class TableColumnPropertiesMutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TableColumnProperties](x: Self) {
     
-    @scala.inline
-    def setColumnWidth(value: Dimension): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: Dimension): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
   }
 }

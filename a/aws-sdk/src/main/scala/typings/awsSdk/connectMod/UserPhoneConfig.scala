@@ -28,34 +28,25 @@ trait UserPhoneConfig extends StObject {
 }
 object UserPhoneConfig {
   
-  @scala.inline
-  def apply(PhoneType: PhoneType): UserPhoneConfig = {
+  inline def apply(PhoneType: PhoneType): UserPhoneConfig = {
     val __obj = js.Dynamic.literal(PhoneType = PhoneType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPhoneConfig]
   }
   
-  @scala.inline
-  implicit class UserPhoneConfigMutableBuilder[Self <: UserPhoneConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UserPhoneConfig](x: Self) {
     
-    @scala.inline
-    def setAfterContactWorkTimeLimit(value: AfterContactWorkTimeLimit): Self = StObject.set(x, "AfterContactWorkTimeLimit", value.asInstanceOf[js.Any])
+    inline def setAfterContactWorkTimeLimit(value: AfterContactWorkTimeLimit): Self = StObject.set(x, "AfterContactWorkTimeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterContactWorkTimeLimitUndefined: Self = StObject.set(x, "AfterContactWorkTimeLimit", js.undefined)
+    inline def setAfterContactWorkTimeLimitUndefined: Self = StObject.set(x, "AfterContactWorkTimeLimit", js.undefined)
     
-    @scala.inline
-    def setAutoAccept(value: AutoAccept): Self = StObject.set(x, "AutoAccept", value.asInstanceOf[js.Any])
+    inline def setAutoAccept(value: AutoAccept): Self = StObject.set(x, "AutoAccept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAcceptUndefined: Self = StObject.set(x, "AutoAccept", js.undefined)
+    inline def setAutoAcceptUndefined: Self = StObject.set(x, "AutoAccept", js.undefined)
     
-    @scala.inline
-    def setDeskPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "DeskPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setDeskPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "DeskPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeskPhoneNumberUndefined: Self = StObject.set(x, "DeskPhoneNumber", js.undefined)
+    inline def setDeskPhoneNumberUndefined: Self = StObject.set(x, "DeskPhoneNumber", js.undefined)
     
-    @scala.inline
-    def setPhoneType(value: PhoneType): Self = StObject.set(x, "PhoneType", value.asInstanceOf[js.Any])
+    inline def setPhoneType(value: PhoneType): Self = StObject.set(x, "PhoneType", value.asInstanceOf[js.Any])
   }
 }

@@ -28,44 +28,32 @@ object rangeMod {
   }
   object RangeProps {
     
-    @scala.inline
-    def apply(): RangeProps = {
+    inline def apply(): RangeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeProps]
     }
     
-    @scala.inline
-    implicit class RangePropsMutableBuilder[Self <: RangeProps] (val x: Self) extends AnyVal {
+    extension [Self <: RangeProps](x: Self) {
       
-      @scala.inline
-      def setAppendToParent(value: Boolean): Self = StObject.set(x, "appendToParent", value.asInstanceOf[js.Any])
+      inline def setAppendToParent(value: Boolean): Self = StObject.set(x, "appendToParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToParentUndefined: Self = StObject.set(x, "appendToParent", js.undefined)
+      inline def setAppendToParentUndefined: Self = StObject.set(x, "appendToParent", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

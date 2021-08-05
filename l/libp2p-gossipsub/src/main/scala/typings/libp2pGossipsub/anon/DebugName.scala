@@ -19,31 +19,23 @@ trait DebugName extends StObject {
 }
 object DebugName {
   
-  @scala.inline
-  def apply(debugName: String, multicodecs: js.Array[String], options: EmitSelf, peerId: ^, registrar: Handle): DebugName = {
+  inline def apply(debugName: String, multicodecs: js.Array[String], options: EmitSelf, peerId: ^, registrar: Handle): DebugName = {
     val __obj = js.Dynamic.literal(debugName = debugName.asInstanceOf[js.Any], multicodecs = multicodecs.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugName]
   }
   
-  @scala.inline
-  implicit class DebugNameMutableBuilder[Self <: DebugName] (val x: Self) extends AnyVal {
+  extension [Self <: DebugName](x: Self) {
     
-    @scala.inline
-    def setDebugName(value: String): Self = StObject.set(x, "debugName", value.asInstanceOf[js.Any])
+    inline def setDebugName(value: String): Self = StObject.set(x, "debugName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMulticodecs(value: js.Array[String]): Self = StObject.set(x, "multicodecs", value.asInstanceOf[js.Any])
+    inline def setMulticodecs(value: js.Array[String]): Self = StObject.set(x, "multicodecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMulticodecsVarargs(value: String*): Self = StObject.set(x, "multicodecs", js.Array(value :_*))
+    inline def setMulticodecsVarargs(value: String*): Self = StObject.set(x, "multicodecs", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: EmitSelf): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: EmitSelf): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerId(value: ^): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: ^): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrar(value: Handle): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
+    inline def setRegistrar(value: Handle): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
   }
 }

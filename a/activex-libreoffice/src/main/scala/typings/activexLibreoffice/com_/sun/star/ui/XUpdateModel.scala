@@ -19,8 +19,7 @@ trait XUpdateModel
 }
 object XUpdateModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -30,10 +29,8 @@ object XUpdateModel {
     __obj.asInstanceOf[XUpdateModel]
   }
   
-  @scala.inline
-  implicit class XUpdateModelMutableBuilder[Self <: XUpdateModel] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdateModel](x: Self) {
     
-    @scala.inline
-    def setUpdateModel(value: XModel => Unit): Self = StObject.set(x, "updateModel", js.Any.fromFunction1(value))
+    inline def setUpdateModel(value: XModel => Unit): Self = StObject.set(x, "updateModel", js.Any.fromFunction1(value))
   }
 }

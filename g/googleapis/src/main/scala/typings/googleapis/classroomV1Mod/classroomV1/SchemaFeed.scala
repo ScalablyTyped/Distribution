@@ -29,31 +29,23 @@ trait SchemaFeed extends StObject {
 }
 object SchemaFeed {
   
-  @scala.inline
-  def apply(): SchemaFeed = {
+  inline def apply(): SchemaFeed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFeed]
   }
   
-  @scala.inline
-  implicit class SchemaFeedMutableBuilder[Self <: SchemaFeed] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFeed](x: Self) {
     
-    @scala.inline
-    def setCourseRosterChangesInfo(value: SchemaCourseRosterChangesInfo): Self = StObject.set(x, "courseRosterChangesInfo", value.asInstanceOf[js.Any])
+    inline def setCourseRosterChangesInfo(value: SchemaCourseRosterChangesInfo): Self = StObject.set(x, "courseRosterChangesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseRosterChangesInfoUndefined: Self = StObject.set(x, "courseRosterChangesInfo", js.undefined)
+    inline def setCourseRosterChangesInfoUndefined: Self = StObject.set(x, "courseRosterChangesInfo", js.undefined)
     
-    @scala.inline
-    def setCourseWorkChangesInfo(value: SchemaCourseWorkChangesInfo): Self = StObject.set(x, "courseWorkChangesInfo", value.asInstanceOf[js.Any])
+    inline def setCourseWorkChangesInfo(value: SchemaCourseWorkChangesInfo): Self = StObject.set(x, "courseWorkChangesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseWorkChangesInfoUndefined: Self = StObject.set(x, "courseWorkChangesInfo", js.undefined)
+    inline def setCourseWorkChangesInfoUndefined: Self = StObject.set(x, "courseWorkChangesInfo", js.undefined)
     
-    @scala.inline
-    def setFeedType(value: String): Self = StObject.set(x, "feedType", value.asInstanceOf[js.Any])
+    inline def setFeedType(value: String): Self = StObject.set(x, "feedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedTypeUndefined: Self = StObject.set(x, "feedType", js.undefined)
+    inline def setFeedTypeUndefined: Self = StObject.set(x, "feedType", js.undefined)
   }
 }

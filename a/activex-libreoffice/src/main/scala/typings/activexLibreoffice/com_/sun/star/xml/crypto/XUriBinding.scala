@@ -32,8 +32,7 @@ trait XUriBinding
 }
 object XUriBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getUriBinding: String => XInputStream,
     queryInterface: `type` => js.Any,
@@ -44,13 +43,10 @@ object XUriBinding {
     __obj.asInstanceOf[XUriBinding]
   }
   
-  @scala.inline
-  implicit class XUriBindingMutableBuilder[Self <: XUriBinding] (val x: Self) extends AnyVal {
+  extension [Self <: XUriBinding](x: Self) {
     
-    @scala.inline
-    def setGetUriBinding(value: String => XInputStream): Self = StObject.set(x, "getUriBinding", js.Any.fromFunction1(value))
+    inline def setGetUriBinding(value: String => XInputStream): Self = StObject.set(x, "getUriBinding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUriBinding(value: (String, XInputStream) => Unit): Self = StObject.set(x, "setUriBinding", js.Any.fromFunction2(value))
+    inline def setSetUriBinding(value: (String, XInputStream) => Unit): Self = StObject.set(x, "setUriBinding", js.Any.fromFunction2(value))
   }
 }

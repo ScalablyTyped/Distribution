@@ -17,8 +17,7 @@ trait Typeofwebhook extends StObject {
 }
 object Typeofwebhook {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapWebhook: (AxiosInstance, WebhookProps) => WebHooks,
     wrapWebhookCollection: (AxiosInstance, CollectionProp[WebhookProps]) => Collection[WebHooks, WebhookProps]
   ): Typeofwebhook = {
@@ -26,13 +25,10 @@ object Typeofwebhook {
     __obj.asInstanceOf[Typeofwebhook]
   }
   
-  @scala.inline
-  implicit class TypeofwebhookMutableBuilder[Self <: Typeofwebhook] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofwebhook](x: Self) {
     
-    @scala.inline
-    def setWrapWebhook(value: (AxiosInstance, WebhookProps) => WebHooks): Self = StObject.set(x, "wrapWebhook", js.Any.fromFunction2(value))
+    inline def setWrapWebhook(value: (AxiosInstance, WebhookProps) => WebHooks): Self = StObject.set(x, "wrapWebhook", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapWebhookCollection(value: (AxiosInstance, CollectionProp[WebhookProps]) => Collection[WebHooks, WebhookProps]): Self = StObject.set(x, "wrapWebhookCollection", js.Any.fromFunction2(value))
+    inline def setWrapWebhookCollection(value: (AxiosInstance, CollectionProp[WebhookProps]) => Collection[WebHooks, WebhookProps]): Self = StObject.set(x, "wrapWebhookCollection", js.Any.fromFunction2(value))
   }
 }

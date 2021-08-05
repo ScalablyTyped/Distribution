@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(params: Params): js.Any = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(params: Params): js.Any = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("gulp-jade", JSImport.Namespace)
   @js.native
@@ -89,74 +87,52 @@ object mod {
   }
   object Params {
     
-    @scala.inline
-    def apply(): Params = {
+    inline def apply(): Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDoctype(value: String): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
+      inline def setDoctype(value: String): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoctypeUndefined: Self = StObject.set(x, "doctype", js.undefined)
+      inline def setDoctypeUndefined: Self = StObject.set(x, "doctype", js.undefined)
       
-      @scala.inline
-      def setJade(value: js.Any): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
+      inline def setJade(value: js.Any): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJadeUndefined: Self = StObject.set(x, "jade", js.undefined)
+      inline def setJadeUndefined: Self = StObject.set(x, "jade", js.undefined)
       
-      @scala.inline
-      def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      @scala.inline
-      def setPretty(value: Boolean | String): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+      inline def setPretty(value: Boolean | String): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+      inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
       
-      @scala.inline
-      def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+      inline def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
+      inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
     }
   }
 }

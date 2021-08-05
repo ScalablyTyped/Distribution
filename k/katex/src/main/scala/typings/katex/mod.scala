@@ -31,15 +31,11 @@ object mod {
     var position: Double = js.native
   }
   
-  @scala.inline
-  def render(tex: String, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def render(tex: String, element: HTMLElement, options: KatexOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(tex: String, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(tex: String, element: HTMLElement, options: KatexOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def renderToString(tex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def renderToString(tex: String, options: KatexOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def renderToString(tex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderToString(tex: String, options: KatexOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait KatexOptions extends StObject {
     
@@ -173,101 +169,70 @@ object mod {
   }
   object KatexOptions {
     
-    @scala.inline
-    def apply(): KatexOptions = {
+    inline def apply(): KatexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KatexOptions]
     }
     
-    @scala.inline
-    implicit class KatexOptionsMutableBuilder[Self <: KatexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KatexOptions](x: Self) {
       
-      @scala.inline
-      def setColorIsTextColor(value: Boolean): Self = StObject.set(x, "colorIsTextColor", value.asInstanceOf[js.Any])
+      inline def setColorIsTextColor(value: Boolean): Self = StObject.set(x, "colorIsTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorIsTextColorUndefined: Self = StObject.set(x, "colorIsTextColor", js.undefined)
+      inline def setColorIsTextColorUndefined: Self = StObject.set(x, "colorIsTextColor", js.undefined)
       
-      @scala.inline
-      def setDisplayMode(value: Boolean): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+      inline def setDisplayMode(value: Boolean): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
+      inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
       
-      @scala.inline
-      def setErrorColor(value: String): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
+      inline def setErrorColor(value: String): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorColorUndefined: Self = StObject.set(x, "errorColor", js.undefined)
+      inline def setErrorColorUndefined: Self = StObject.set(x, "errorColor", js.undefined)
       
-      @scala.inline
-      def setFleqn(value: Boolean): Self = StObject.set(x, "fleqn", value.asInstanceOf[js.Any])
+      inline def setFleqn(value: Boolean): Self = StObject.set(x, "fleqn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFleqnUndefined: Self = StObject.set(x, "fleqn", js.undefined)
+      inline def setFleqnUndefined: Self = StObject.set(x, "fleqn", js.undefined)
       
-      @scala.inline
-      def setGlobalGroup(value: Boolean): Self = StObject.set(x, "globalGroup", value.asInstanceOf[js.Any])
+      inline def setGlobalGroup(value: Boolean): Self = StObject.set(x, "globalGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalGroupUndefined: Self = StObject.set(x, "globalGroup", js.undefined)
+      inline def setGlobalGroupUndefined: Self = StObject.set(x, "globalGroup", js.undefined)
       
-      @scala.inline
-      def setLeqno(value: Boolean): Self = StObject.set(x, "leqno", value.asInstanceOf[js.Any])
+      inline def setLeqno(value: Boolean): Self = StObject.set(x, "leqno", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeqnoUndefined: Self = StObject.set(x, "leqno", js.undefined)
+      inline def setLeqnoUndefined: Self = StObject.set(x, "leqno", js.undefined)
       
-      @scala.inline
-      def setMacros(value: js.Any): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
+      inline def setMacros(value: js.Any): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacrosUndefined: Self = StObject.set(x, "macros", js.undefined)
+      inline def setMacrosUndefined: Self = StObject.set(x, "macros", js.undefined)
       
-      @scala.inline
-      def setMaxExpand(value: Double): Self = StObject.set(x, "maxExpand", value.asInstanceOf[js.Any])
+      inline def setMaxExpand(value: Double): Self = StObject.set(x, "maxExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxExpandUndefined: Self = StObject.set(x, "maxExpand", js.undefined)
+      inline def setMaxExpandUndefined: Self = StObject.set(x, "maxExpand", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setMinRuleThickness(value: Double): Self = StObject.set(x, "minRuleThickness", value.asInstanceOf[js.Any])
+      inline def setMinRuleThickness(value: Double): Self = StObject.set(x, "minRuleThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinRuleThicknessUndefined: Self = StObject.set(x, "minRuleThickness", js.undefined)
+      inline def setMinRuleThicknessUndefined: Self = StObject.set(x, "minRuleThickness", js.undefined)
       
-      @scala.inline
-      def setOutput(value: html | mathml | htmlAndMathml): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: html | mathml | htmlAndMathml): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean | String | js.Function): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean | String | js.Function): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setThrowOnError(value: Boolean): Self = StObject.set(x, "throwOnError", value.asInstanceOf[js.Any])
+      inline def setThrowOnError(value: Boolean): Self = StObject.set(x, "throwOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowOnErrorUndefined: Self = StObject.set(x, "throwOnError", js.undefined)
+      inline def setThrowOnErrorUndefined: Self = StObject.set(x, "throwOnError", js.undefined)
       
-      @scala.inline
-      def setTrust(value: Boolean | (js.Function1[/* context */ TrustContext, Boolean])): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
+      inline def setTrust(value: Boolean | (js.Function1[/* context */ TrustContext, Boolean])): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustFunction1(value: /* context */ TrustContext => Boolean): Self = StObject.set(x, "trust", js.Any.fromFunction1(value))
+      inline def setTrustFunction1(value: /* context */ TrustContext => Boolean): Self = StObject.set(x, "trust", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrustUndefined: Self = StObject.set(x, "trust", js.undefined)
+      inline def setTrustUndefined: Self = StObject.set(x, "trust", js.undefined)
     }
   }
   
@@ -281,23 +246,18 @@ object mod {
   }
   object TrustContext {
     
-    @scala.inline
-    def apply(command: String, protocol: String, url: String): TrustContext = {
+    inline def apply(command: String, protocol: String, url: String): TrustContext = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrustContext]
     }
     
-    @scala.inline
-    implicit class TrustContextMutableBuilder[Self <: TrustContext] (val x: Self) extends AnyVal {
+    extension [Self <: TrustContext](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

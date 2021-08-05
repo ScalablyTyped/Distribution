@@ -37,8 +37,7 @@ trait XBinaryStreamResolver
 }
 object XBinaryStreamResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createOutputStream: () => XOutputStream,
     getInputStream: String => XInputStream,
@@ -50,16 +49,12 @@ object XBinaryStreamResolver {
     __obj.asInstanceOf[XBinaryStreamResolver]
   }
   
-  @scala.inline
-  implicit class XBinaryStreamResolverMutableBuilder[Self <: XBinaryStreamResolver] (val x: Self) extends AnyVal {
+  extension [Self <: XBinaryStreamResolver](x: Self) {
     
-    @scala.inline
-    def setCreateOutputStream(value: () => XOutputStream): Self = StObject.set(x, "createOutputStream", js.Any.fromFunction0(value))
+    inline def setCreateOutputStream(value: () => XOutputStream): Self = StObject.set(x, "createOutputStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInputStream(value: String => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction1(value))
+    inline def setGetInputStream(value: String => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveOutputStream(value: XOutputStream => String): Self = StObject.set(x, "resolveOutputStream", js.Any.fromFunction1(value))
+    inline def setResolveOutputStream(value: XOutputStream => String): Self = StObject.set(x, "resolveOutputStream", js.Any.fromFunction1(value))
   }
 }

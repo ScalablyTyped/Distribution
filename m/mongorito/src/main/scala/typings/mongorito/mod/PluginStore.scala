@@ -16,28 +16,21 @@ trait PluginStore extends StObject {
 }
 object PluginStore {
   
-  @scala.inline
-  def apply(dispatch: js.Any => js.Any, getState: () => State, modelClass: ModelClass): PluginStore = {
+  inline def apply(dispatch: js.Any => js.Any, getState: () => State, modelClass: ModelClass): PluginStore = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getState = js.Any.fromFunction0(getState), modelClass = modelClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginStore]
   }
   
-  @scala.inline
-  implicit class PluginStoreMutableBuilder[Self <: PluginStore] (val x: Self) extends AnyVal {
+  extension [Self <: PluginStore](x: Self) {
     
-    @scala.inline
-    def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+    inline def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelClass(value: ModelClass): Self = StObject.set(x, "modelClass", value.asInstanceOf[js.Any])
+    inline def setModelClass(value: ModelClass): Self = StObject.set(x, "modelClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

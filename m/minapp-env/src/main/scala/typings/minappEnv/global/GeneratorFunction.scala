@@ -19,6 +19,5 @@ class GeneratorFunction protected ()
 }
 object GeneratorFunction {
   
-  @scala.inline
-  def apply: GeneratorFunctionConstructor = js.Dynamic.global.selectDynamic("GeneratorFunction").asInstanceOf[GeneratorFunctionConstructor]
+  inline def apply: GeneratorFunctionConstructor = js.Dynamic.global.selectDynamic("GeneratorFunction").asInstanceOf[GeneratorFunctionConstructor]
 }

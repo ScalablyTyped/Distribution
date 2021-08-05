@@ -11,16 +11,13 @@ trait BufferChangingEvent extends StObject {
 }
 object BufferChangingEvent {
   
-  @scala.inline
-  def apply(oldRange: Range): BufferChangingEvent = {
+  inline def apply(oldRange: Range): BufferChangingEvent = {
     val __obj = js.Dynamic.literal(oldRange = oldRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferChangingEvent]
   }
   
-  @scala.inline
-  implicit class BufferChangingEventMutableBuilder[Self <: BufferChangingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BufferChangingEvent](x: Self) {
     
-    @scala.inline
-    def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
+    inline def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
   }
 }

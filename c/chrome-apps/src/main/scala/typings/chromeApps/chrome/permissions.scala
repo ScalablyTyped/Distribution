@@ -41,32 +41,24 @@ object permissions {
   }
   object Permissions {
     
-    @scala.inline
-    def apply(): Permissions = {
+    inline def apply(): Permissions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Permissions]
     }
     
-    @scala.inline
-    implicit class PermissionsMutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
+    extension [Self <: Permissions](x: Self) {
       
-      @scala.inline
-      def setOrigins(value: js.Array[String | UrlMatches]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: js.Array[String | UrlMatches]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+      inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
       
-      @scala.inline
-      def setOriginsVarargs(value: (String | UrlMatches)*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: (String | UrlMatches)*): Self = StObject.set(x, "origins", js.Array(value :_*))
       
-      @scala.inline
-      def setPermissions(value: js.Array[OptionalPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: js.Array[OptionalPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+      inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      @scala.inline
-      def setPermissionsVarargs(value: OptionalPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: OptionalPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     }
   }
 }

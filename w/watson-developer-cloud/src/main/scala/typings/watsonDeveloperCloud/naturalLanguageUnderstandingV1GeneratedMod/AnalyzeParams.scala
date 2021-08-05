@@ -46,82 +46,57 @@ trait AnalyzeParams extends StObject {
 }
 object AnalyzeParams {
   
-  @scala.inline
-  def apply(features: Features): AnalyzeParams = {
+  inline def apply(features: Features): AnalyzeParams = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeParams]
   }
   
-  @scala.inline
-  implicit class AnalyzeParamsMutableBuilder[Self <: AnalyzeParams] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzeParams](x: Self) {
     
-    @scala.inline
-    def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+    inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+    inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
     
-    @scala.inline
-    def setFallback_to_raw(value: Boolean): Self = StObject.set(x, "fallback_to_raw", value.asInstanceOf[js.Any])
+    inline def setFallback_to_raw(value: Boolean): Self = StObject.set(x, "fallback_to_raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallback_to_rawUndefined: Self = StObject.set(x, "fallback_to_raw", js.undefined)
+    inline def setFallback_to_rawUndefined: Self = StObject.set(x, "fallback_to_raw", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLimit_text_characters(value: Double): Self = StObject.set(x, "limit_text_characters", value.asInstanceOf[js.Any])
+    inline def setLimit_text_characters(value: Double): Self = StObject.set(x, "limit_text_characters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit_text_charactersUndefined: Self = StObject.set(x, "limit_text_characters", js.undefined)
+    inline def setLimit_text_charactersUndefined: Self = StObject.set(x, "limit_text_characters", js.undefined)
     
-    @scala.inline
-    def setReturn_analyzed_text(value: Boolean): Self = StObject.set(x, "return_analyzed_text", value.asInstanceOf[js.Any])
+    inline def setReturn_analyzed_text(value: Boolean): Self = StObject.set(x, "return_analyzed_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_analyzed_textUndefined: Self = StObject.set(x, "return_analyzed_text", js.undefined)
+    inline def setReturn_analyzed_textUndefined: Self = StObject.set(x, "return_analyzed_text", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
+    inline def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
+    inline def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait LayerTreeDidChangeEvent extends StObject {
 }
 object LayerTreeDidChangeEvent {
   
-  @scala.inline
-  def apply(): LayerTreeDidChangeEvent = {
+  inline def apply(): LayerTreeDidChangeEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerTreeDidChangeEvent]
   }
   
-  @scala.inline
-  implicit class LayerTreeDidChangeEventMutableBuilder[Self <: LayerTreeDidChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LayerTreeDidChangeEvent](x: Self) {
     
-    @scala.inline
-    def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

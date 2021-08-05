@@ -23,25 +23,19 @@ trait CloudFrontOriginAccessIdentity extends StObject {
 }
 object CloudFrontOriginAccessIdentity {
   
-  @scala.inline
-  def apply(Id: String, S3CanonicalUserId: String): CloudFrontOriginAccessIdentity = {
+  inline def apply(Id: String, S3CanonicalUserId: String): CloudFrontOriginAccessIdentity = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], S3CanonicalUserId = S3CanonicalUserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFrontOriginAccessIdentity]
   }
   
-  @scala.inline
-  implicit class CloudFrontOriginAccessIdentityMutableBuilder[Self <: CloudFrontOriginAccessIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: CloudFrontOriginAccessIdentity](x: Self) {
     
-    @scala.inline
-    def setCloudFrontOriginAccessIdentityConfig(value: CloudFrontOriginAccessIdentityConfig): Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", value.asInstanceOf[js.Any])
+    inline def setCloudFrontOriginAccessIdentityConfig(value: CloudFrontOriginAccessIdentityConfig): Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFrontOriginAccessIdentityConfigUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", js.undefined)
+    inline def setCloudFrontOriginAccessIdentityConfigUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3CanonicalUserId(value: String): Self = StObject.set(x, "S3CanonicalUserId", value.asInstanceOf[js.Any])
+    inline def setS3CanonicalUserId(value: String): Self = StObject.set(x, "S3CanonicalUserId", value.asInstanceOf[js.Any])
   }
 }

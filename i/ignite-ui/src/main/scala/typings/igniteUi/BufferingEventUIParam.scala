@@ -18,25 +18,19 @@ trait BufferingEventUIParam extends StObject {
 }
 object BufferingEventUIParam {
   
-  @scala.inline
-  def apply(): BufferingEventUIParam = {
+  inline def apply(): BufferingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BufferingEventUIParam]
   }
   
-  @scala.inline
-  implicit class BufferingEventUIParamMutableBuilder[Self <: BufferingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: BufferingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+    inline def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
+    inline def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

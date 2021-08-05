@@ -48,61 +48,43 @@ trait SendCommandRequest extends StObject {
 }
 object SendCommandRequest {
   
-  @scala.inline
-  def apply(): SendCommandRequest = {
+  inline def apply(): SendCommandRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendCommandRequest]
   }
   
-  @scala.inline
-  implicit class SendCommandRequestMutableBuilder[Self <: SendCommandRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendCommandRequest](x: Self) {
     
-    @scala.inline
-    def setAbortTransaction(value: AbortTransactionRequest): Self = StObject.set(x, "AbortTransaction", value.asInstanceOf[js.Any])
+    inline def setAbortTransaction(value: AbortTransactionRequest): Self = StObject.set(x, "AbortTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortTransactionUndefined: Self = StObject.set(x, "AbortTransaction", js.undefined)
+    inline def setAbortTransactionUndefined: Self = StObject.set(x, "AbortTransaction", js.undefined)
     
-    @scala.inline
-    def setCommitTransaction(value: CommitTransactionRequest): Self = StObject.set(x, "CommitTransaction", value.asInstanceOf[js.Any])
+    inline def setCommitTransaction(value: CommitTransactionRequest): Self = StObject.set(x, "CommitTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitTransactionUndefined: Self = StObject.set(x, "CommitTransaction", js.undefined)
+    inline def setCommitTransactionUndefined: Self = StObject.set(x, "CommitTransaction", js.undefined)
     
-    @scala.inline
-    def setEndSession(value: EndSessionRequest): Self = StObject.set(x, "EndSession", value.asInstanceOf[js.Any])
+    inline def setEndSession(value: EndSessionRequest): Self = StObject.set(x, "EndSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSessionUndefined: Self = StObject.set(x, "EndSession", js.undefined)
+    inline def setEndSessionUndefined: Self = StObject.set(x, "EndSession", js.undefined)
     
-    @scala.inline
-    def setExecuteStatement(value: ExecuteStatementRequest): Self = StObject.set(x, "ExecuteStatement", value.asInstanceOf[js.Any])
+    inline def setExecuteStatement(value: ExecuteStatementRequest): Self = StObject.set(x, "ExecuteStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecuteStatementUndefined: Self = StObject.set(x, "ExecuteStatement", js.undefined)
+    inline def setExecuteStatementUndefined: Self = StObject.set(x, "ExecuteStatement", js.undefined)
     
-    @scala.inline
-    def setFetchPage(value: FetchPageRequest): Self = StObject.set(x, "FetchPage", value.asInstanceOf[js.Any])
+    inline def setFetchPage(value: FetchPageRequest): Self = StObject.set(x, "FetchPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchPageUndefined: Self = StObject.set(x, "FetchPage", js.undefined)
+    inline def setFetchPageUndefined: Self = StObject.set(x, "FetchPage", js.undefined)
     
-    @scala.inline
-    def setSessionToken(value: SessionToken): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
+    inline def setSessionToken(value: SessionToken): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
+    inline def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
     
-    @scala.inline
-    def setStartSession(value: StartSessionRequest): Self = StObject.set(x, "StartSession", value.asInstanceOf[js.Any])
+    inline def setStartSession(value: StartSessionRequest): Self = StObject.set(x, "StartSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSessionUndefined: Self = StObject.set(x, "StartSession", js.undefined)
+    inline def setStartSessionUndefined: Self = StObject.set(x, "StartSession", js.undefined)
     
-    @scala.inline
-    def setStartTransaction(value: StartTransactionRequest): Self = StObject.set(x, "StartTransaction", value.asInstanceOf[js.Any])
+    inline def setStartTransaction(value: StartTransactionRequest): Self = StObject.set(x, "StartTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTransactionUndefined: Self = StObject.set(x, "StartTransaction", js.undefined)
+    inline def setStartTransactionUndefined: Self = StObject.set(x, "StartTransaction", js.undefined)
   }
 }

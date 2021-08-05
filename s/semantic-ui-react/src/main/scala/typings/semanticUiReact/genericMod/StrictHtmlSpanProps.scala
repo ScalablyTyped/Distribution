@@ -11,19 +11,15 @@ trait StrictHtmlSpanProps extends StObject {
 }
 object StrictHtmlSpanProps {
   
-  @scala.inline
-  def apply(): StrictHtmlSpanProps = {
+  inline def apply(): StrictHtmlSpanProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrictHtmlSpanProps]
   }
   
-  @scala.inline
-  implicit class StrictHtmlSpanPropsMutableBuilder[Self <: StrictHtmlSpanProps] (val x: Self) extends AnyVal {
+  extension [Self <: StrictHtmlSpanProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

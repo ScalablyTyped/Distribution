@@ -10,6 +10,5 @@ object commonDebugMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def debug(prefix: String): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def debug(prefix: String): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
 }

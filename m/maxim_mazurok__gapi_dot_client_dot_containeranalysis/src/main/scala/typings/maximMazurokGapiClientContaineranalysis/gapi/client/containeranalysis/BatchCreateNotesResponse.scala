@@ -11,22 +11,17 @@ trait BatchCreateNotesResponse extends StObject {
 }
 object BatchCreateNotesResponse {
   
-  @scala.inline
-  def apply(): BatchCreateNotesResponse = {
+  inline def apply(): BatchCreateNotesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreateNotesResponse]
   }
   
-  @scala.inline
-  implicit class BatchCreateNotesResponseMutableBuilder[Self <: BatchCreateNotesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateNotesResponse](x: Self) {
     
-    @scala.inline
-    def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
   }
 }

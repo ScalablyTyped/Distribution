@@ -38,8 +38,7 @@ trait RendererType2 extends StObject {
 }
 object RendererType2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: StringDictionary[js.Any],
     encapsulation: ViewEncapsulation,
     id: String,
@@ -49,22 +48,16 @@ object RendererType2 {
     __obj.asInstanceOf[RendererType2]
   }
   
-  @scala.inline
-  implicit class RendererType2MutableBuilder[Self <: RendererType2] (val x: Self) extends AnyVal {
+  extension [Self <: RendererType2](x: Self) {
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
+    inline def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: js.Array[String | js.Array[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[String | js.Array[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: (String | js.Array[js.Any])*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: (String | js.Array[js.Any])*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

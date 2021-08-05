@@ -35,8 +35,7 @@ trait IPanelService extends StObject {
 }
 object IPanelService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absPosition: BOTTOM,
     animation: FADE,
     closeReasons: CLICKOUTSIDE,
@@ -52,37 +51,26 @@ object IPanelService {
     __obj.asInstanceOf[IPanelService]
   }
   
-  @scala.inline
-  implicit class IPanelServiceMutableBuilder[Self <: IPanelService] (val x: Self) extends AnyVal {
+  extension [Self <: IPanelService](x: Self) {
     
-    @scala.inline
-    def setAbsPosition(value: BOTTOM): Self = StObject.set(x, "absPosition", value.asInstanceOf[js.Any])
+    inline def setAbsPosition(value: BOTTOM): Self = StObject.set(x, "absPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimation(value: FADE): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: FADE): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseReasons(value: CLICKOUTSIDE): Self = StObject.set(x, "closeReasons", value.asInstanceOf[js.Any])
+    inline def setCloseReasons(value: CLICKOUTSIDE): Self = StObject.set(x, "closeReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: IPanelConfig => IPanelRef): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: IPanelConfig => IPanelRef): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInterceptorTypes(value: CLOSE_): Self = StObject.set(x, "interceptorTypes", value.asInstanceOf[js.Any])
+    inline def setInterceptorTypes(value: CLOSE_): Self = StObject.set(x, "interceptorTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPanelAnimation(value: () => IPanelAnimation): Self = StObject.set(x, "newPanelAnimation", js.Any.fromFunction0(value))
+    inline def setNewPanelAnimation(value: () => IPanelAnimation): Self = StObject.set(x, "newPanelAnimation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPanelPosition(value: () => IPanelPosition): Self = StObject.set(x, "newPanelPosition", js.Any.fromFunction0(value))
+    inline def setNewPanelPosition(value: () => IPanelPosition): Self = StObject.set(x, "newPanelPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: IPanelConfig => IPromise[IPanelRef]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: IPanelConfig => IPromise[IPanelRef]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXPosition(value: ALIGNEND): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
+    inline def setXPosition(value: ALIGNEND): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYPosition(value: ABOVE): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
+    inline def setYPosition(value: ABOVE): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
   }
 }

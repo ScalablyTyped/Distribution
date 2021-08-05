@@ -28,31 +28,23 @@ trait StopPipelineExecutionInput extends StObject {
 }
 object StopPipelineExecutionInput {
   
-  @scala.inline
-  def apply(pipelineExecutionId: PipelineExecutionId, pipelineName: PipelineName): StopPipelineExecutionInput = {
+  inline def apply(pipelineExecutionId: PipelineExecutionId, pipelineName: PipelineName): StopPipelineExecutionInput = {
     val __obj = js.Dynamic.literal(pipelineExecutionId = pipelineExecutionId.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopPipelineExecutionInput]
   }
   
-  @scala.inline
-  implicit class StopPipelineExecutionInputMutableBuilder[Self <: StopPipelineExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopPipelineExecutionInput](x: Self) {
     
-    @scala.inline
-    def setAbandon(value: Boolean): Self = StObject.set(x, "abandon", value.asInstanceOf[js.Any])
+    inline def setAbandon(value: Boolean): Self = StObject.set(x, "abandon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbandonUndefined: Self = StObject.set(x, "abandon", js.undefined)
+    inline def setAbandonUndefined: Self = StObject.set(x, "abandon", js.undefined)
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: StopPipelineExecutionReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: StopPipelineExecutionReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

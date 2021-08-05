@@ -84,14 +84,10 @@ object Widget {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def domInsert(widget: typings.photonui.photonui.Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("domInsert")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def domInsert(widget: typings.photonui.photonui.Widget, element: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("domInsert")(widget.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def domInsert(widget: typings.photonui.photonui.Widget, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("domInsert")(widget.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def domInsert(widget: typings.photonui.photonui.Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("domInsert")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def domInsert(widget: typings.photonui.photonui.Widget, element: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("domInsert")(widget.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def domInsert(widget: typings.photonui.photonui.Widget, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("domInsert")(widget.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def getWidget(name: String): typings.photonui.photonui.Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(name.asInstanceOf[js.Any]).asInstanceOf[typings.photonui.photonui.Widget]
+  inline def getWidget(name: String): typings.photonui.photonui.Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(name.asInstanceOf[js.Any]).asInstanceOf[typings.photonui.photonui.Widget]
 }

@@ -78,8 +78,7 @@ trait SchedulerSizes extends StObject {
 }
 object SchedulerSizes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bar_height: Double,
     editor_width: Double,
     lightbox_additional_height: Double,
@@ -99,49 +98,34 @@ object SchedulerSizes {
     __obj.asInstanceOf[SchedulerSizes]
   }
   
-  @scala.inline
-  implicit class SchedulerSizesMutableBuilder[Self <: SchedulerSizes] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerSizes](x: Self) {
     
-    @scala.inline
-    def setBar_height(value: Double): Self = StObject.set(x, "bar_height", value.asInstanceOf[js.Any])
+    inline def setBar_height(value: Double): Self = StObject.set(x, "bar_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor_width(value: Double): Self = StObject.set(x, "editor_width", value.asInstanceOf[js.Any])
+    inline def setEditor_width(value: Double): Self = StObject.set(x, "editor_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightbox_additional_height(value: Double): Self = StObject.set(x, "lightbox_additional_height", value.asInstanceOf[js.Any])
+    inline def setLightbox_additional_height(value: Double): Self = StObject.set(x, "lightbox_additional_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap_date_width(value: Double): Self = StObject.set(x, "map_date_width", value.asInstanceOf[js.Any])
+    inline def setMap_date_width(value: Double): Self = StObject.set(x, "map_date_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap_description_width(value: Double): Self = StObject.set(x, "map_description_width", value.asInstanceOf[js.Any])
+    inline def setMap_description_width(value: Double): Self = StObject.set(x, "map_description_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin_left(value: Double): Self = StObject.set(x, "margin_left", value.asInstanceOf[js.Any])
+    inline def setMargin_left(value: Double): Self = StObject.set(x, "margin_left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin_top(value: Double): Self = StObject.set(x, "margin_top", value.asInstanceOf[js.Any])
+    inline def setMargin_top(value: Double): Self = StObject.set(x, "margin_top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu_width(value: Double): Self = StObject.set(x, "menu_width", value.asInstanceOf[js.Any])
+    inline def setMenu_width(value: Double): Self = StObject.set(x, "menu_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_event_height(value: Double): Self = StObject.set(x, "min_event_height", value.asInstanceOf[js.Any])
+    inline def setMin_event_height(value: Double): Self = StObject.set(x, "min_event_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth_scale_height(value: Double): Self = StObject.set(x, "month_scale_height", value.asInstanceOf[js.Any])
+    inline def setMonth_scale_height(value: Double): Self = StObject.set(x, "month_scale_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNav_height(value: Double): Self = StObject.set(x, "nav_height", value.asInstanceOf[js.Any])
+    inline def setNav_height(value: Double): Self = StObject.set(x, "nav_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale_height(value: Double): Self = StObject.set(x, "scale_height", value.asInstanceOf[js.Any])
+    inline def setScale_height(value: Double): Self = StObject.set(x, "scale_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale_width(value: Double): Self = StObject.set(x, "scale_width", value.asInstanceOf[js.Any])
+    inline def setScale_width(value: Double): Self = StObject.set(x, "scale_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll_width(value: Double): Self = StObject.set(x, "scroll_width", value.asInstanceOf[js.Any])
+    inline def setScroll_width(value: Double): Self = StObject.set(x, "scroll_width", value.asInstanceOf[js.Any])
   }
 }

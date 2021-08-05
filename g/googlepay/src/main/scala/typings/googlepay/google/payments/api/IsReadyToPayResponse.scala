@@ -48,22 +48,17 @@ trait IsReadyToPayResponse extends StObject {
 }
 object IsReadyToPayResponse {
   
-  @scala.inline
-  def apply(result: Boolean): IsReadyToPayResponse = {
+  inline def apply(result: Boolean): IsReadyToPayResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsReadyToPayResponse]
   }
   
-  @scala.inline
-  implicit class IsReadyToPayResponseMutableBuilder[Self <: IsReadyToPayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IsReadyToPayResponse](x: Self) {
     
-    @scala.inline
-    def setPaymentMethodPresent(value: `false` | `true`): Self = StObject.set(x, "paymentMethodPresent", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodPresent(value: `false` | `true`): Self = StObject.set(x, "paymentMethodPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethodPresentUndefined: Self = StObject.set(x, "paymentMethodPresent", js.undefined)
+    inline def setPaymentMethodPresentUndefined: Self = StObject.set(x, "paymentMethodPresent", js.undefined)
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

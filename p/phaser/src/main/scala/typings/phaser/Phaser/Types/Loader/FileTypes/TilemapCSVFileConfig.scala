@@ -29,34 +29,25 @@ trait TilemapCSVFileConfig extends StObject {
 }
 object TilemapCSVFileConfig {
   
-  @scala.inline
-  def apply(key: String): TilemapCSVFileConfig = {
+  inline def apply(key: String): TilemapCSVFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[TilemapCSVFileConfig]
   }
   
-  @scala.inline
-  implicit class TilemapCSVFileConfigMutableBuilder[Self <: TilemapCSVFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TilemapCSVFileConfig](x: Self) {
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
+    inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

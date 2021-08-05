@@ -12,19 +12,15 @@ trait canSetBidModifier extends StObject {
 }
 object canSetBidModifier {
   
-  @scala.inline
-  def apply(getBidModifier: () => Double, setBidModifier: Double => Unit): canSetBidModifier = {
+  inline def apply(getBidModifier: () => Double, setBidModifier: Double => Unit): canSetBidModifier = {
     val __obj = js.Dynamic.literal(getBidModifier = js.Any.fromFunction0(getBidModifier), setBidModifier = js.Any.fromFunction1(setBidModifier))
     __obj.asInstanceOf[canSetBidModifier]
   }
   
-  @scala.inline
-  implicit class canSetBidModifierMutableBuilder[Self <: canSetBidModifier] (val x: Self) extends AnyVal {
+  extension [Self <: canSetBidModifier](x: Self) {
     
-    @scala.inline
-    def setGetBidModifier(value: () => Double): Self = StObject.set(x, "getBidModifier", js.Any.fromFunction0(value))
+    inline def setGetBidModifier(value: () => Double): Self = StObject.set(x, "getBidModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBidModifier(value: Double => Unit): Self = StObject.set(x, "setBidModifier", js.Any.fromFunction1(value))
+    inline def setSetBidModifier(value: Double => Unit): Self = StObject.set(x, "setBidModifier", js.Any.fromFunction1(value))
   }
 }

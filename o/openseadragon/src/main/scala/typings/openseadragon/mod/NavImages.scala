@@ -26,8 +26,7 @@ trait NavImages extends StObject {
 }
 object NavImages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flip: NavImagesValues,
     fullpage: NavImagesValues,
     home: NavImagesValues,
@@ -42,34 +41,24 @@ object NavImages {
     __obj.asInstanceOf[NavImages]
   }
   
-  @scala.inline
-  implicit class NavImagesMutableBuilder[Self <: NavImages] (val x: Self) extends AnyVal {
+  extension [Self <: NavImages](x: Self) {
     
-    @scala.inline
-    def setFlip(value: NavImagesValues): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    inline def setFlip(value: NavImagesValues): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullpage(value: NavImagesValues): Self = StObject.set(x, "fullpage", value.asInstanceOf[js.Any])
+    inline def setFullpage(value: NavImagesValues): Self = StObject.set(x, "fullpage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHome(value: NavImagesValues): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+    inline def setHome(value: NavImagesValues): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: NavImagesValues): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: NavImagesValues): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious(value: NavImagesValues): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: NavImagesValues): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateleft(value: NavImagesValues): Self = StObject.set(x, "rotateleft", value.asInstanceOf[js.Any])
+    inline def setRotateleft(value: NavImagesValues): Self = StObject.set(x, "rotateleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateright(value: NavImagesValues): Self = StObject.set(x, "rotateright", value.asInstanceOf[js.Any])
+    inline def setRotateright(value: NavImagesValues): Self = StObject.set(x, "rotateright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomIn(value: NavImagesValues): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+    inline def setZoomIn(value: NavImagesValues): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOut(value: NavImagesValues): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+    inline def setZoomOut(value: NavImagesValues): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
   }
 }

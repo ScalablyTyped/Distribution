@@ -15,6 +15,5 @@ trait GroupStore extends StObject {
 }
 object GroupStore {
   
-  @scala.inline
-  def apply: GroupStore = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupStore").asInstanceOf[GroupStore]
+  inline def apply: GroupStore = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupStore").asInstanceOf[GroupStore]
 }

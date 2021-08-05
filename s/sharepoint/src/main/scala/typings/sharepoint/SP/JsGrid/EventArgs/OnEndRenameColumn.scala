@@ -17,22 +17,17 @@ trait OnEndRenameColumn
 }
 object OnEndRenameColumn {
   
-  @scala.inline
-  def apply(columnKey: String, newColumnTitle: String, originalColumnTitle: String): OnEndRenameColumn = {
+  inline def apply(columnKey: String, newColumnTitle: String, originalColumnTitle: String): OnEndRenameColumn = {
     val __obj = js.Dynamic.literal(columnKey = columnKey.asInstanceOf[js.Any], newColumnTitle = newColumnTitle.asInstanceOf[js.Any], originalColumnTitle = originalColumnTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnEndRenameColumn]
   }
   
-  @scala.inline
-  implicit class OnEndRenameColumnMutableBuilder[Self <: OnEndRenameColumn] (val x: Self) extends AnyVal {
+  extension [Self <: OnEndRenameColumn](x: Self) {
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewColumnTitle(value: String): Self = StObject.set(x, "newColumnTitle", value.asInstanceOf[js.Any])
+    inline def setNewColumnTitle(value: String): Self = StObject.set(x, "newColumnTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalColumnTitle(value: String): Self = StObject.set(x, "originalColumnTitle", value.asInstanceOf[js.Any])
+    inline def setOriginalColumnTitle(value: String): Self = StObject.set(x, "originalColumnTitle", value.asInstanceOf[js.Any])
   }
 }

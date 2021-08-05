@@ -53,50 +53,36 @@ object mod {
   }
   object CookieOpts {
     
-    @scala.inline
-    def apply(): CookieOpts = {
+    inline def apply(): CookieOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieOpts]
     }
     
-    @scala.inline
-    implicit class CookieOptsMutableBuilder[Self <: CookieOpts] (val x: Self) extends AnyVal {
+    extension [Self <: CookieOpts](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+      inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     }
   }
   
@@ -165,17 +151,14 @@ object mod {
   }
   object GetOpts {
     
-    @scala.inline
-    def apply(doNotParse: Boolean): GetOpts = {
+    inline def apply(doNotParse: Boolean): GetOpts = {
       val __obj = js.Dynamic.literal(doNotParse = doNotParse.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOpts]
     }
     
-    @scala.inline
-    implicit class GetOptsMutableBuilder[Self <: GetOpts] (val x: Self) extends AnyVal {
+    extension [Self <: GetOpts](x: Self) {
       
-      @scala.inline
-      def setDoNotParse(value: Boolean): Self = StObject.set(x, "doNotParse", value.asInstanceOf[js.Any])
+      inline def setDoNotParse(value: Boolean): Self = StObject.set(x, "doNotParse", value.asInstanceOf[js.Any])
     }
   }
 }

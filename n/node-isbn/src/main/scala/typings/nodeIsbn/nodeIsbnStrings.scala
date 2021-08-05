@@ -9,54 +9,45 @@ object nodeIsbnStrings {
   
   @js.native
   sealed trait BOOK extends StObject
-  @scala.inline
-  def BOOK: BOOK = "BOOK".asInstanceOf[BOOK]
+  inline def BOOK: BOOK = "BOOK".asInstanceOf[BOOK]
   
   @js.native
   sealed trait en
     extends StObject
        with BookLanguage
-  @scala.inline
-  def en: en = "en".asInstanceOf[en]
+  inline def en: en = "en".asInstanceOf[en]
   
   @js.native
   sealed trait es
     extends StObject
        with BookLanguage
-  @scala.inline
-  def es: es = "es".asInstanceOf[es]
+  inline def es: es = "es".asInstanceOf[es]
   
   @js.native
   sealed trait fr
     extends StObject
        with BookLanguage
-  @scala.inline
-  def fr: fr = "fr".asInstanceOf[fr]
+  inline def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
   sealed trait google extends StObject
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
+  inline def google: google = "google".asInstanceOf[google]
   
   @js.native
   sealed trait isbndb extends StObject
-  @scala.inline
-  def isbndb: isbndb = "isbndb".asInstanceOf[isbndb]
+  inline def isbndb: isbndb = "isbndb".asInstanceOf[isbndb]
   
   @js.native
   sealed trait openlibrary extends StObject
-  @scala.inline
-  def openlibrary: openlibrary = "openlibrary".asInstanceOf[openlibrary]
+  inline def openlibrary: openlibrary = "openlibrary".asInstanceOf[openlibrary]
   
   @js.native
   sealed trait unknown
     extends StObject
        with BookLanguage
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
   sealed trait worldcat extends StObject
-  @scala.inline
-  def worldcat: worldcat = "worldcat".asInstanceOf[worldcat]
+  inline def worldcat: worldcat = "worldcat".asInstanceOf[worldcat]
 }

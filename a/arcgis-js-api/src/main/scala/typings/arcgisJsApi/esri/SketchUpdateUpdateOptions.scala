@@ -64,8 +64,7 @@ trait SketchUpdateUpdateOptions
 }
 object SketchUpdateUpdateOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -74,49 +73,34 @@ object SketchUpdateUpdateOptions {
     __obj.asInstanceOf[SketchUpdateUpdateOptions]
   }
   
-  @scala.inline
-  implicit class SketchUpdateUpdateOptionsMutableBuilder[Self <: SketchUpdateUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SketchUpdateUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setEnableRotation(value: Boolean): Self = StObject.set(x, "enableRotation", value.asInstanceOf[js.Any])
+    inline def setEnableRotation(value: Boolean): Self = StObject.set(x, "enableRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRotationUndefined: Self = StObject.set(x, "enableRotation", js.undefined)
+    inline def setEnableRotationUndefined: Self = StObject.set(x, "enableRotation", js.undefined)
     
-    @scala.inline
-    def setEnableScaling(value: Boolean): Self = StObject.set(x, "enableScaling", value.asInstanceOf[js.Any])
+    inline def setEnableScaling(value: Boolean): Self = StObject.set(x, "enableScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableScalingUndefined: Self = StObject.set(x, "enableScaling", js.undefined)
+    inline def setEnableScalingUndefined: Self = StObject.set(x, "enableScaling", js.undefined)
     
-    @scala.inline
-    def setEnableZ(value: Boolean): Self = StObject.set(x, "enableZ", value.asInstanceOf[js.Any])
+    inline def setEnableZ(value: Boolean): Self = StObject.set(x, "enableZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableZUndefined: Self = StObject.set(x, "enableZ", js.undefined)
+    inline def setEnableZUndefined: Self = StObject.set(x, "enableZ", js.undefined)
     
-    @scala.inline
-    def setMultipleSelectionEnabled(value: Boolean): Self = StObject.set(x, "multipleSelectionEnabled", value.asInstanceOf[js.Any])
+    inline def setMultipleSelectionEnabled(value: Boolean): Self = StObject.set(x, "multipleSelectionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleSelectionEnabledUndefined: Self = StObject.set(x, "multipleSelectionEnabled", js.undefined)
+    inline def setMultipleSelectionEnabledUndefined: Self = StObject.set(x, "multipleSelectionEnabled", js.undefined)
     
-    @scala.inline
-    def setPreserveAspectRatio(value: Boolean): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+    inline def setPreserveAspectRatio(value: Boolean): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+    inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
     
-    @scala.inline
-    def setToggleToolOnClick(value: Boolean): Self = StObject.set(x, "toggleToolOnClick", value.asInstanceOf[js.Any])
+    inline def setToggleToolOnClick(value: Boolean): Self = StObject.set(x, "toggleToolOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleToolOnClickUndefined: Self = StObject.set(x, "toggleToolOnClick", js.undefined)
+    inline def setToggleToolOnClickUndefined: Self = StObject.set(x, "toggleToolOnClick", js.undefined)
     
-    @scala.inline
-    def setTool(value: transform | reshape | move): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: transform | reshape | move): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
+    inline def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
   }
 }

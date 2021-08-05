@@ -28,25 +28,19 @@ trait SchemaCreateParagraphBulletsRequest extends StObject {
 }
 object SchemaCreateParagraphBulletsRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateParagraphBulletsRequest = {
+  inline def apply(): SchemaCreateParagraphBulletsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateParagraphBulletsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateParagraphBulletsRequestMutableBuilder[Self <: SchemaCreateParagraphBulletsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateParagraphBulletsRequest](x: Self) {
     
-    @scala.inline
-    def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
+    inline def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
+    inline def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

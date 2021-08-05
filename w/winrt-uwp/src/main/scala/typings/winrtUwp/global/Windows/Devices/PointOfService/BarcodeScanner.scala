@@ -23,22 +23,19 @@ object BarcodeScanner {
     * @return The barcode scanner specified by the unique device identifier. Returns a null object in the following cases:
     */
   /* static member */
-  @scala.inline
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner]]
+  inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner]]
   
   /**
     * Returns the first available barcode scanner.
     * @return The first available barcode scanner. Returns a null object in the following cases:
     */
   /* static member */
-  @scala.inline
-  def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner]]
+  inline def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner]]
   
   /**
     * Gets an Advanced Query Syntax (AQS) string that you can use to list the available barcode scanners.
     * @return An Advanced Query Syntax (AQS) string that is used to enumerate available barcode scanners.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+  inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
 }

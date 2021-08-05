@@ -18,8 +18,7 @@ trait MemberNameArray
 }
 object MemberNameArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: MemberName => Unit,
     addAll: js.Array[MemberName] => Unit,
     delim: String,
@@ -34,22 +33,16 @@ object MemberNameArray {
     __obj.asInstanceOf[MemberNameArray]
   }
   
-  @scala.inline
-  implicit class MemberNameArrayMutableBuilder[Self <: MemberNameArray] (val x: Self) extends AnyVal {
+  extension [Self <: MemberNameArray](x: Self) {
     
-    @scala.inline
-    def setAdd(value: MemberName => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: MemberName => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddAll(value: js.Array[MemberName] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+    inline def setAddAll(value: js.Array[MemberName] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelim(value: String): Self = StObject.set(x, "delim", value.asInstanceOf[js.Any])
+    inline def setDelim(value: String): Self = StObject.set(x, "delim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntries(value: js.Array[MemberName]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[MemberName]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: MemberName*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: MemberName*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

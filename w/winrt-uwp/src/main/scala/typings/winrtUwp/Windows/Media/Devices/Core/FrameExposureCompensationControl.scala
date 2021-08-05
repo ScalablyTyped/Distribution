@@ -12,16 +12,13 @@ trait FrameExposureCompensationControl extends StObject {
 }
 object FrameExposureCompensationControl {
   
-  @scala.inline
-  def apply(value: Double): FrameExposureCompensationControl = {
+  inline def apply(value: Double): FrameExposureCompensationControl = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameExposureCompensationControl]
   }
   
-  @scala.inline
-  implicit class FrameExposureCompensationControlMutableBuilder[Self <: FrameExposureCompensationControl] (val x: Self) extends AnyVal {
+  extension [Self <: FrameExposureCompensationControl](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

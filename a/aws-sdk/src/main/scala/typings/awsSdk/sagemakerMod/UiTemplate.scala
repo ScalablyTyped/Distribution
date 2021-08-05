@@ -13,16 +13,13 @@ trait UiTemplate extends StObject {
 }
 object UiTemplate {
   
-  @scala.inline
-  def apply(Content: TemplateContent): UiTemplate = {
+  inline def apply(Content: TemplateContent): UiTemplate = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any])
     __obj.asInstanceOf[UiTemplate]
   }
   
-  @scala.inline
-  implicit class UiTemplateMutableBuilder[Self <: UiTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: UiTemplate](x: Self) {
     
-    @scala.inline
-    def setContent(value: TemplateContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: TemplateContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
   }
 }

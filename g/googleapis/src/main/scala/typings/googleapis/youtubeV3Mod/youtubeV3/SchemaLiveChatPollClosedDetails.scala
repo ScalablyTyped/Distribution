@@ -13,19 +13,15 @@ trait SchemaLiveChatPollClosedDetails extends StObject {
 }
 object SchemaLiveChatPollClosedDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveChatPollClosedDetails = {
+  inline def apply(): SchemaLiveChatPollClosedDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatPollClosedDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatPollClosedDetailsMutableBuilder[Self <: SchemaLiveChatPollClosedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatPollClosedDetails](x: Self) {
     
-    @scala.inline
-    def setPollId(value: String): Self = StObject.set(x, "pollId", value.asInstanceOf[js.Any])
+    inline def setPollId(value: String): Self = StObject.set(x, "pollId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollIdUndefined: Self = StObject.set(x, "pollId", js.undefined)
+    inline def setPollIdUndefined: Self = StObject.set(x, "pollId", js.undefined)
   }
 }

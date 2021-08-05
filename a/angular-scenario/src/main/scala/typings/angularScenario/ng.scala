@@ -12,17 +12,14 @@ object ng {
   }
   object IAngularStatic {
     
-    @scala.inline
-    def apply(scenario: js.Any): IAngularStatic = {
+    inline def apply(scenario: js.Any): IAngularStatic = {
       val __obj = js.Dynamic.literal(scenario = scenario.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAngularStatic]
     }
     
-    @scala.inline
-    implicit class IAngularStaticMutableBuilder[Self <: IAngularStatic] (val x: Self) extends AnyVal {
+    extension [Self <: IAngularStatic](x: Self) {
       
-      @scala.inline
-      def setScenario(value: js.Any): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
+      inline def setScenario(value: js.Any): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
     }
   }
 }

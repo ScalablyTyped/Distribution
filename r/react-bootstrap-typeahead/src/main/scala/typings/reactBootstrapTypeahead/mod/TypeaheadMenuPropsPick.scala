@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeaheadMenuPropsPick extends StObject
 object TypeaheadMenuPropsPick {
   
-  @scala.inline
-  def labelKey: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey = "labelKey".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey]
+  inline def labelKey: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey = "labelKey".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey]
   
-  @scala.inline
-  def newSelectionPrefix: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.newSelectionPrefix = "newSelectionPrefix".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.newSelectionPrefix]
+  inline def newSelectionPrefix: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.newSelectionPrefix = "newSelectionPrefix".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.newSelectionPrefix]
   
-  @scala.inline
-  def options: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.options = "options".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.options]
+  inline def options: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.options = "options".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.options]
   
-  @scala.inline
-  def renderMenuItemChildren: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderMenuItemChildren = "renderMenuItemChildren".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderMenuItemChildren]
+  inline def renderMenuItemChildren: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderMenuItemChildren = "renderMenuItemChildren".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderMenuItemChildren]
 }

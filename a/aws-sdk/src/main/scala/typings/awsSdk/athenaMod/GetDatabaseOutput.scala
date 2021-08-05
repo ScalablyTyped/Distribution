@@ -13,19 +13,15 @@ trait GetDatabaseOutput extends StObject {
 }
 object GetDatabaseOutput {
   
-  @scala.inline
-  def apply(): GetDatabaseOutput = {
+  inline def apply(): GetDatabaseOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDatabaseOutput]
   }
   
-  @scala.inline
-  implicit class GetDatabaseOutputMutableBuilder[Self <: GetDatabaseOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDatabaseOutput](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
   }
 }

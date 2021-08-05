@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "duosecurity__duo_web"
-version := "1.0-dt-20200925Z-b74bbc"
+version := "1.0-dt-20200925Z-47e9f9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

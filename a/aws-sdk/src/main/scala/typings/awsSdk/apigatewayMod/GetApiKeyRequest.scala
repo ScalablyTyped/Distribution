@@ -18,22 +18,17 @@ trait GetApiKeyRequest extends StObject {
 }
 object GetApiKeyRequest {
   
-  @scala.inline
-  def apply(apiKey: String): GetApiKeyRequest = {
+  inline def apply(apiKey: String): GetApiKeyRequest = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiKeyRequest]
   }
   
-  @scala.inline
-  implicit class GetApiKeyRequestMutableBuilder[Self <: GetApiKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetApiKeyRequest](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeValue(value: NullableBoolean): Self = StObject.set(x, "includeValue", value.asInstanceOf[js.Any])
+    inline def setIncludeValue(value: NullableBoolean): Self = StObject.set(x, "includeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeValueUndefined: Self = StObject.set(x, "includeValue", js.undefined)
+    inline def setIncludeValueUndefined: Self = StObject.set(x, "includeValue", js.undefined)
   }
 }

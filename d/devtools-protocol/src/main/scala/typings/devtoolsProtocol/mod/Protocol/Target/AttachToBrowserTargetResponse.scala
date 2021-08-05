@@ -13,16 +13,13 @@ trait AttachToBrowserTargetResponse extends StObject {
 }
 object AttachToBrowserTargetResponse {
   
-  @scala.inline
-  def apply(sessionId: SessionID): AttachToBrowserTargetResponse = {
+  inline def apply(sessionId: SessionID): AttachToBrowserTargetResponse = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachToBrowserTargetResponse]
   }
   
-  @scala.inline
-  implicit class AttachToBrowserTargetResponseMutableBuilder[Self <: AttachToBrowserTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AttachToBrowserTargetResponse](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

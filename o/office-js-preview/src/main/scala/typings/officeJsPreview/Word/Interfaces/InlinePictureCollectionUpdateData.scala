@@ -11,22 +11,17 @@ trait InlinePictureCollectionUpdateData extends StObject {
 }
 object InlinePictureCollectionUpdateData {
   
-  @scala.inline
-  def apply(): InlinePictureCollectionUpdateData = {
+  inline def apply(): InlinePictureCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InlinePictureCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class InlinePictureCollectionUpdateDataMutableBuilder[Self <: InlinePictureCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: InlinePictureCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[InlinePictureData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[InlinePictureData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: InlinePictureData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InlinePictureData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

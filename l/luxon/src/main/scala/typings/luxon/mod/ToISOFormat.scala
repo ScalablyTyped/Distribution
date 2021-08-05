@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ToISOFormat extends StObject
 object ToISOFormat {
   
-  @scala.inline
-  def basic: typings.luxon.luxonStrings.basic = "basic".asInstanceOf[typings.luxon.luxonStrings.basic]
+  inline def basic: typings.luxon.luxonStrings.basic = "basic".asInstanceOf[typings.luxon.luxonStrings.basic]
   
-  @scala.inline
-  def extended: typings.luxon.luxonStrings.extended = "extended".asInstanceOf[typings.luxon.luxonStrings.extended]
+  inline def extended: typings.luxon.luxonStrings.extended = "extended".asInstanceOf[typings.luxon.luxonStrings.extended]
 }

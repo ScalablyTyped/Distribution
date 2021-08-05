@@ -28,47 +28,35 @@ trait PagespeedApiLoadingExperienceV5 extends StObject {
 }
 object PagespeedApiLoadingExperienceV5 {
   
-  @scala.inline
-  def apply(): PagespeedApiLoadingExperienceV5 = {
+  inline def apply(): PagespeedApiLoadingExperienceV5 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PagespeedApiLoadingExperienceV5]
   }
   
-  @scala.inline
-  implicit class PagespeedApiLoadingExperienceV5MutableBuilder[Self <: PagespeedApiLoadingExperienceV5] (val x: Self) extends AnyVal {
+  extension [Self <: PagespeedApiLoadingExperienceV5](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInitial_url(value: String): Self = StObject.set(x, "initial_url", value.asInstanceOf[js.Any])
+    inline def setInitial_url(value: String): Self = StObject.set(x, "initial_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitial_urlUndefined: Self = StObject.set(x, "initial_url", js.undefined)
+    inline def setInitial_urlUndefined: Self = StObject.set(x, "initial_url", js.undefined)
     
-    @scala.inline
-    def setMetrics(
+    inline def setMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.UserPageLoadMetricV5}
       */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.PagespeedApiLoadingExperienceV5 & TopLevel[js.Any]
     ): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setOrigin_fallback(value: Boolean): Self = StObject.set(x, "origin_fallback", value.asInstanceOf[js.Any])
+    inline def setOrigin_fallback(value: Boolean): Self = StObject.set(x, "origin_fallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin_fallbackUndefined: Self = StObject.set(x, "origin_fallback", js.undefined)
+    inline def setOrigin_fallbackUndefined: Self = StObject.set(x, "origin_fallback", js.undefined)
     
-    @scala.inline
-    def setOverall_category(value: String): Self = StObject.set(x, "overall_category", value.asInstanceOf[js.Any])
+    inline def setOverall_category(value: String): Self = StObject.set(x, "overall_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverall_categoryUndefined: Self = StObject.set(x, "overall_category", js.undefined)
+    inline def setOverall_categoryUndefined: Self = StObject.set(x, "overall_category", js.undefined)
   }
 }

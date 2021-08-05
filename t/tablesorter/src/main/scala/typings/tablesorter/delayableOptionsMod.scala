@@ -15,20 +15,16 @@ object delayableOptionsMod {
   }
   object DelayableOptions {
     
-    @scala.inline
-    def apply(): DelayableOptions = {
+    inline def apply(): DelayableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DelayableOptions]
     }
     
-    @scala.inline
-    implicit class DelayableOptionsMutableBuilder[Self <: DelayableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DelayableOptions](x: Self) {
       
-      @scala.inline
-      def setDelayed(value: Boolean): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
+      inline def setDelayed(value: Boolean): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayedUndefined: Self = StObject.set(x, "delayed", js.undefined)
+      inline def setDelayedUndefined: Self = StObject.set(x, "delayed", js.undefined)
     }
   }
 }

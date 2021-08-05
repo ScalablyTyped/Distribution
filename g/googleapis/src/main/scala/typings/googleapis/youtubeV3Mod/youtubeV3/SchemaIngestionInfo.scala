@@ -32,31 +32,23 @@ trait SchemaIngestionInfo extends StObject {
 }
 object SchemaIngestionInfo {
   
-  @scala.inline
-  def apply(): SchemaIngestionInfo = {
+  inline def apply(): SchemaIngestionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIngestionInfo]
   }
   
-  @scala.inline
-  implicit class SchemaIngestionInfoMutableBuilder[Self <: SchemaIngestionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIngestionInfo](x: Self) {
     
-    @scala.inline
-    def setBackupIngestionAddress(value: String): Self = StObject.set(x, "backupIngestionAddress", value.asInstanceOf[js.Any])
+    inline def setBackupIngestionAddress(value: String): Self = StObject.set(x, "backupIngestionAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupIngestionAddressUndefined: Self = StObject.set(x, "backupIngestionAddress", js.undefined)
+    inline def setBackupIngestionAddressUndefined: Self = StObject.set(x, "backupIngestionAddress", js.undefined)
     
-    @scala.inline
-    def setIngestionAddress(value: String): Self = StObject.set(x, "ingestionAddress", value.asInstanceOf[js.Any])
+    inline def setIngestionAddress(value: String): Self = StObject.set(x, "ingestionAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionAddressUndefined: Self = StObject.set(x, "ingestionAddress", js.undefined)
+    inline def setIngestionAddressUndefined: Self = StObject.set(x, "ingestionAddress", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
   }
 }

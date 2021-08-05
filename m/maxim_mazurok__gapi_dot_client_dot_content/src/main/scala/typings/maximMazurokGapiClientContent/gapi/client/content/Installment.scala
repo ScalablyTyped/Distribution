@@ -14,25 +14,19 @@ trait Installment extends StObject {
 }
 object Installment {
   
-  @scala.inline
-  def apply(): Installment = {
+  inline def apply(): Installment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Installment]
   }
   
-  @scala.inline
-  implicit class InstallmentMutableBuilder[Self <: Installment] (val x: Self) extends AnyVal {
+  extension [Self <: Installment](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+    inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
   }
 }

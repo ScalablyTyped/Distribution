@@ -18,25 +18,19 @@ trait ListResourceDefinitionsRequest extends StObject {
 }
 object ListResourceDefinitionsRequest {
   
-  @scala.inline
-  def apply(): ListResourceDefinitionsRequest = {
+  inline def apply(): ListResourceDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResourceDefinitionsRequest]
   }
   
-  @scala.inline
-  implicit class ListResourceDefinitionsRequestMutableBuilder[Self <: ListResourceDefinitionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceDefinitionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

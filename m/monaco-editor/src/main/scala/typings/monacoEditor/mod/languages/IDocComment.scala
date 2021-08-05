@@ -18,22 +18,17 @@ trait IDocComment extends StObject {
 }
 object IDocComment {
   
-  @scala.inline
-  def apply(open: String): IDocComment = {
+  inline def apply(open: String): IDocComment = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocComment]
   }
   
-  @scala.inline
-  implicit class IDocCommentMutableBuilder[Self <: IDocComment] (val x: Self) extends AnyVal {
+  extension [Self <: IDocComment](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

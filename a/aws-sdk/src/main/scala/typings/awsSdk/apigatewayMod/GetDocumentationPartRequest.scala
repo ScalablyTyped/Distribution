@@ -18,19 +18,15 @@ trait GetDocumentationPartRequest extends StObject {
 }
 object GetDocumentationPartRequest {
   
-  @scala.inline
-  def apply(documentationPartId: String, restApiId: String): GetDocumentationPartRequest = {
+  inline def apply(documentationPartId: String, restApiId: String): GetDocumentationPartRequest = {
     val __obj = js.Dynamic.literal(documentationPartId = documentationPartId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentationPartRequest]
   }
   
-  @scala.inline
-  implicit class GetDocumentationPartRequestMutableBuilder[Self <: GetDocumentationPartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentationPartRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentationPartId(value: String): Self = StObject.set(x, "documentationPartId", value.asInstanceOf[js.Any])
+    inline def setDocumentationPartId(value: String): Self = StObject.set(x, "documentationPartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

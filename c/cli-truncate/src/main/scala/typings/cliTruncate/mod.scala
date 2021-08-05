@@ -37,10 +37,8 @@ object mod {
   //=> 'Lorem ipsum dolor sit amet, consectetuer adipiscing…'
   ```
   */
-  @scala.inline
-  def apply(text: String, columns: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(text: String, columns: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, columns: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, columns: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("cli-truncate", JSImport.Namespace)
   @js.native
@@ -88,32 +86,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPosition(value: start | middle | end): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: start | middle | end): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setPreferTruncationOnSpace(value: Boolean): Self = StObject.set(x, "preferTruncationOnSpace", value.asInstanceOf[js.Any])
+      inline def setPreferTruncationOnSpace(value: Boolean): Self = StObject.set(x, "preferTruncationOnSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferTruncationOnSpaceUndefined: Self = StObject.set(x, "preferTruncationOnSpace", js.undefined)
+      inline def setPreferTruncationOnSpaceUndefined: Self = StObject.set(x, "preferTruncationOnSpace", js.undefined)
       
-      @scala.inline
-      def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     }
   }
 }

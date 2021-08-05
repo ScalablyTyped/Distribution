@@ -22,6 +22,5 @@ object iconStylesMod {
   @js.native
   val classNames: IProcessedStyleSet[Image] = js.native
   
-  @scala.inline
-  def getStyles(props: IIconStyleProps): IIconStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IIconStyles]
+  inline def getStyles(props: IIconStyleProps): IIconStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IIconStyles]
 }

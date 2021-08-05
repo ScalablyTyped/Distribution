@@ -10,6 +10,5 @@ object global {
   @JSGlobal("Mailcheck")
   @js.native
   def Mailcheck: Static = js.native
-  @scala.inline
-  def Mailcheck_=(x: Static): Unit = js.Dynamic.global.updateDynamic("Mailcheck")(x.asInstanceOf[js.Any])
+  inline def Mailcheck_=(x: Static): Unit = js.Dynamic.global.updateDynamic("Mailcheck")(x.asInstanceOf[js.Any])
 }

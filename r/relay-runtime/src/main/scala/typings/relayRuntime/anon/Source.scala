@@ -15,19 +15,15 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(operation: OperationDescriptor, source: RelayObservable[GraphQLResponse]): Source = {
+  inline def apply(operation: OperationDescriptor, source: RelayObservable[GraphQLResponse]): Source = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: RelayObservable[GraphQLResponse]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: RelayObservable[GraphQLResponse]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

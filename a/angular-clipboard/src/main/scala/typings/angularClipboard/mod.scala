@@ -21,20 +21,16 @@ object mod {
   }
   object ClipboardService {
     
-    @scala.inline
-    def apply(copyText: String => Unit, supported: Boolean): ClipboardService = {
+    inline def apply(copyText: String => Unit, supported: Boolean): ClipboardService = {
       val __obj = js.Dynamic.literal(copyText = js.Any.fromFunction1(copyText), supported = supported.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClipboardService]
     }
     
-    @scala.inline
-    implicit class ClipboardServiceMutableBuilder[Self <: ClipboardService] (val x: Self) extends AnyVal {
+    extension [Self <: ClipboardService](x: Self) {
       
-      @scala.inline
-      def setCopyText(value: String => Unit): Self = StObject.set(x, "copyText", js.Any.fromFunction1(value))
+      inline def setCopyText(value: String => Unit): Self = StObject.set(x, "copyText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+      inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     }
   }
 }

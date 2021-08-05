@@ -12,12 +12,8 @@ object frompromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](promise: js.Promise[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](promise: js.Promise[V], abort: Boolean): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any], abort.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](promise: js.Promise[V], abort: Boolean, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any], abort.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](promise: js.Promise[V], abort: Unit, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any], abort.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](promise: js.Promise[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def default[V](promise: js.Promise[V], abort: Boolean): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any], abort.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](promise: js.Promise[V], abort: Boolean, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any], abort.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](promise: js.Promise[V], abort: Unit, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any], abort.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
 }

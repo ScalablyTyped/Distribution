@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "App")
 @js.native
-class App_ protected () extends NativeObject {
+/* private */ class App_ () extends NativeObject {
   
   /**
     * Shuts down the running application and closes the UI.

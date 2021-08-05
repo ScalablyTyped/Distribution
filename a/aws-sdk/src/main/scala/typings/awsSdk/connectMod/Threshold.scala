@@ -18,25 +18,19 @@ trait Threshold extends StObject {
 }
 object Threshold {
   
-  @scala.inline
-  def apply(): Threshold = {
+  inline def apply(): Threshold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Threshold]
   }
   
-  @scala.inline
-  implicit class ThresholdMutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
+  extension [Self <: Threshold](x: Self) {
     
-    @scala.inline
-    def setComparison(value: Comparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
+    inline def setComparison(value: Comparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonUndefined: Self = StObject.set(x, "Comparison", js.undefined)
+    inline def setComparisonUndefined: Self = StObject.set(x, "Comparison", js.undefined)
     
-    @scala.inline
-    def setThresholdValue(value: ThresholdValue): Self = StObject.set(x, "ThresholdValue", value.asInstanceOf[js.Any])
+    inline def setThresholdValue(value: ThresholdValue): Self = StObject.set(x, "ThresholdValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdValueUndefined: Self = StObject.set(x, "ThresholdValue", js.undefined)
+    inline def setThresholdValueUndefined: Self = StObject.set(x, "ThresholdValue", js.undefined)
   }
 }

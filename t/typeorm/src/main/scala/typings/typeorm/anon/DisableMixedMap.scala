@@ -12,28 +12,21 @@ trait DisableMixedMap extends StObject {
 }
 object DisableMixedMap {
   
-  @scala.inline
-  def apply(): DisableMixedMap = {
+  inline def apply(): DisableMixedMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableMixedMap]
   }
   
-  @scala.inline
-  implicit class DisableMixedMapMutableBuilder[Self <: DisableMixedMap] (val x: Self) extends AnyVal {
+  extension [Self <: DisableMixedMap](x: Self) {
     
-    @scala.inline
-    def setDisableMixedMap(value: Boolean): Self = StObject.set(x, "disableMixedMap", value.asInstanceOf[js.Any])
+    inline def setDisableMixedMap(value: Boolean): Self = StObject.set(x, "disableMixedMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableMixedMapUndefined: Self = StObject.set(x, "disableMixedMap", js.undefined)
+    inline def setDisableMixedMapUndefined: Self = StObject.set(x, "disableMixedMap", js.undefined)
     
-    @scala.inline
-    def setRelations(value: js.Array[String]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: js.Array[String]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
+    inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
-    @scala.inline
-    def setRelationsVarargs(value: String*): Self = StObject.set(x, "relations", js.Array(value :_*))
+    inline def setRelationsVarargs(value: String*): Self = StObject.set(x, "relations", js.Array(value :_*))
   }
 }

@@ -19,7 +19,7 @@ object exclusionMod {
     /* protected */ def createSet[T /* <: All | String */](): Set[T] = js.native
     /* protected */ def createSet[T /* <: All | String */](values: js.Array[T]): Set[T] = js.native
     
-    val descriptor: Partial[TDescriptor] = js.native
+    /* protected */ val descriptor: Partial[TDescriptor] = js.native
     
     def excludes(node: Node): Boolean = js.native
   }

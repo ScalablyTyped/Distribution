@@ -20,8 +20,7 @@ trait DataSourceGroup
 }
 object DataSourceGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aggregates: js.Array[js.Any],
     field: String,
     hasSubgroups: Boolean,
@@ -32,28 +31,20 @@ object DataSourceGroup {
     __obj.asInstanceOf[DataSourceGroup]
   }
   
-  @scala.inline
-  implicit class DataSourceGroupMutableBuilder[Self <: DataSourceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceGroup](x: Self) {
     
-    @scala.inline
-    def setAggregates(value: js.Array[js.Any]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    inline def setAggregates(value: js.Array[js.Any]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatesVarargs(value: js.Any*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
+    inline def setAggregatesVarargs(value: js.Any*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSubgroups(value: Boolean): Self = StObject.set(x, "hasSubgroups", value.asInstanceOf[js.Any])
+    inline def setHasSubgroups(value: Boolean): Self = StObject.set(x, "hasSubgroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

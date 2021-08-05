@@ -14,20 +14,16 @@ trait VolumeEventData
 }
 object VolumeEventData {
   
-  @scala.inline
-  def apply(isMute: Boolean, `type`: String, volume: Double): VolumeEventData = {
+  inline def apply(isMute: Boolean, `type`: String, volume: Double): VolumeEventData = {
     val __obj = js.Dynamic.literal(isMute = isMute.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeEventData]
   }
   
-  @scala.inline
-  implicit class VolumeEventDataMutableBuilder[Self <: VolumeEventData] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeEventData](x: Self) {
     
-    @scala.inline
-    def setIsMute(value: Boolean): Self = StObject.set(x, "isMute", value.asInstanceOf[js.Any])
+    inline def setIsMute(value: Boolean): Self = StObject.set(x, "isMute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

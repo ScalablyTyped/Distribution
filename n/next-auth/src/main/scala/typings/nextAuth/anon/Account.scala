@@ -16,37 +16,27 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(): Account = {
+  inline def apply(): Account = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setAccount(value: Model): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Model): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
-    @scala.inline
-    def setSession(value: Model): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: Model): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
-    @scala.inline
-    def setUser(value: Model): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: Model): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
     
-    @scala.inline
-    def setVerificationRequest(value: Model): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
+    inline def setVerificationRequest(value: Model): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationRequestUndefined: Self = StObject.set(x, "VerificationRequest", js.undefined)
+    inline def setVerificationRequestUndefined: Self = StObject.set(x, "VerificationRequest", js.undefined)
   }
 }

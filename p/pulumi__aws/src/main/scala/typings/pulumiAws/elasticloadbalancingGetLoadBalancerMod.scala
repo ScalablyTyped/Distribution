@@ -15,10 +15,8 @@ object elasticloadbalancingGetLoadBalancerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLoadBalancerResult]]
-  @scala.inline
-  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLoadBalancerResult]]
+  inline def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLoadBalancerResult]]
+  inline def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLoadBalancerResult]]
   
   trait GetLoadBalancerArgs extends StObject {
     
@@ -31,23 +29,18 @@ object elasticloadbalancingGetLoadBalancerMod {
   }
   object GetLoadBalancerArgs {
     
-    @scala.inline
-    def apply(name: String): GetLoadBalancerArgs = {
+    inline def apply(name: String): GetLoadBalancerArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLoadBalancerArgs]
     }
     
-    @scala.inline
-    implicit class GetLoadBalancerArgsMutableBuilder[Self <: GetLoadBalancerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLoadBalancerArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -98,8 +91,7 @@ object elasticloadbalancingGetLoadBalancerMod {
   }
   object GetLoadBalancerResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessLogs: GetLoadBalancerAccessLogs,
       arn: String,
       availabilityZones: js.Array[String],
@@ -125,83 +117,57 @@ object elasticloadbalancingGetLoadBalancerMod {
       __obj.asInstanceOf[GetLoadBalancerResult]
     }
     
-    @scala.inline
-    implicit class GetLoadBalancerResultMutableBuilder[Self <: GetLoadBalancerResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLoadBalancerResult](x: Self) {
       
-      @scala.inline
-      def setAccessLogs(value: GetLoadBalancerAccessLogs): Self = StObject.set(x, "accessLogs", value.asInstanceOf[js.Any])
+      inline def setAccessLogs(value: GetLoadBalancerAccessLogs): Self = StObject.set(x, "accessLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectionDraining(value: Boolean): Self = StObject.set(x, "connectionDraining", value.asInstanceOf[js.Any])
+      inline def setConnectionDraining(value: Boolean): Self = StObject.set(x, "connectionDraining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionDrainingTimeout(value: Double): Self = StObject.set(x, "connectionDrainingTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionDrainingTimeout(value: Double): Self = StObject.set(x, "connectionDrainingTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossZoneLoadBalancing(value: Boolean): Self = StObject.set(x, "crossZoneLoadBalancing", value.asInstanceOf[js.Any])
+      inline def setCrossZoneLoadBalancing(value: Boolean): Self = StObject.set(x, "crossZoneLoadBalancing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheck(value: GetLoadBalancerHealthCheck): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+      inline def setHealthCheck(value: GetLoadBalancerHealthCheck): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
       
-      @scala.inline
-      def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+      inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListeners(value: js.Array[GetLoadBalancerListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: js.Array[GetLoadBalancerListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersVarargs(value: GetLoadBalancerListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: GetLoadBalancerListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceSecurityGroup(value: String): Self = StObject.set(x, "sourceSecurityGroup", value.asInstanceOf[js.Any])
+      inline def setSourceSecurityGroup(value: String): Self = StObject.set(x, "sourceSecurityGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSecurityGroupId(value: String): Self = StObject.set(x, "sourceSecurityGroupId", value.asInstanceOf[js.Any])
+      inline def setSourceSecurityGroupId(value: String): Self = StObject.set(x, "sourceSecurityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+      inline def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+      inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -29,37 +29,27 @@ trait ITileSourceOptions extends StObject {
 }
 object ITileSourceOptions {
   
-  @scala.inline
-  def apply(uriConstructor: String | (js.Function1[/* tile */ PyramidTileId, String])): ITileSourceOptions = {
+  inline def apply(uriConstructor: String | (js.Function1[/* tile */ PyramidTileId, String])): ITileSourceOptions = {
     val __obj = js.Dynamic.literal(uriConstructor = uriConstructor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITileSourceOptions]
   }
   
-  @scala.inline
-  implicit class ITileSourceOptionsMutableBuilder[Self <: ITileSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITileSourceOptions](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
-    @scala.inline
-    def setUriConstructor(value: String | (js.Function1[/* tile */ PyramidTileId, String])): Self = StObject.set(x, "uriConstructor", value.asInstanceOf[js.Any])
+    inline def setUriConstructor(value: String | (js.Function1[/* tile */ PyramidTileId, String])): Self = StObject.set(x, "uriConstructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriConstructorFunction1(value: /* tile */ PyramidTileId => String): Self = StObject.set(x, "uriConstructor", js.Any.fromFunction1(value))
+    inline def setUriConstructorFunction1(value: /* tile */ PyramidTileId => String): Self = StObject.set(x, "uriConstructor", js.Any.fromFunction1(value))
   }
 }

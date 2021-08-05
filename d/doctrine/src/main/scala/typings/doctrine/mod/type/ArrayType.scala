@@ -15,23 +15,18 @@ trait ArrayType
 }
 object ArrayType {
   
-  @scala.inline
-  def apply(elements: js.Array[Type_]): ArrayType = {
+  inline def apply(elements: js.Array[Type_]): ArrayType = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayType")
     __obj.asInstanceOf[ArrayType]
   }
   
-  @scala.inline
-  implicit class ArrayTypeMutableBuilder[Self <: ArrayType] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayType](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[Type_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Type_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: Type_ *): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Type_ *): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.ArrayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.ArrayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

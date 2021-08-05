@@ -10,7 +10,7 @@ trait HTMLBGsound extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLBGsound_typekey")
+  /* private */ @JSName("MSHTML.HTMLBGsound_typekey")
   var MSHTMLDotHTMLBGsound_typekey: HTMLBGsound = js.native
   
   var accessKey: String = js.native

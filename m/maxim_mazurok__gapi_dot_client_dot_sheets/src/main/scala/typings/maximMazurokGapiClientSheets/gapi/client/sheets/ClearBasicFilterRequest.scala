@@ -11,19 +11,15 @@ trait ClearBasicFilterRequest extends StObject {
 }
 object ClearBasicFilterRequest {
   
-  @scala.inline
-  def apply(): ClearBasicFilterRequest = {
+  inline def apply(): ClearBasicFilterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearBasicFilterRequest]
   }
   
-  @scala.inline
-  implicit class ClearBasicFilterRequestMutableBuilder[Self <: ClearBasicFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClearBasicFilterRequest](x: Self) {
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

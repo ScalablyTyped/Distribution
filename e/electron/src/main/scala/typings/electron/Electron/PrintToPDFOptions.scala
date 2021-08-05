@@ -51,61 +51,43 @@ trait PrintToPDFOptions extends StObject {
 }
 object PrintToPDFOptions {
   
-  @scala.inline
-  def apply(): PrintToPDFOptions = {
+  inline def apply(): PrintToPDFOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintToPDFOptions]
   }
   
-  @scala.inline
-  implicit class PrintToPDFOptionsMutableBuilder[Self <: PrintToPDFOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrintToPDFOptions](x: Self) {
     
-    @scala.inline
-    def setHeaderFooter(value: Record[String, String]): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
+    inline def setHeaderFooter(value: Record[String, String]): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderFooterUndefined: Self = StObject.set(x, "headerFooter", js.undefined)
+    inline def setHeaderFooterUndefined: Self = StObject.set(x, "headerFooter", js.undefined)
     
-    @scala.inline
-    def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+    inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    @scala.inline
-    def setMarginsType(value: Double): Self = StObject.set(x, "marginsType", value.asInstanceOf[js.Any])
+    inline def setMarginsType(value: Double): Self = StObject.set(x, "marginsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginsTypeUndefined: Self = StObject.set(x, "marginsType", js.undefined)
+    inline def setMarginsTypeUndefined: Self = StObject.set(x, "marginsType", js.undefined)
     
-    @scala.inline
-    def setPageRanges(value: Record[String, Double]): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
+    inline def setPageRanges(value: Record[String, Double]): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
+    inline def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: String | Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: String | Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
+    inline def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
+    inline def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
     
-    @scala.inline
-    def setPrintSelectionOnly(value: Boolean): Self = StObject.set(x, "printSelectionOnly", value.asInstanceOf[js.Any])
+    inline def setPrintSelectionOnly(value: Boolean): Self = StObject.set(x, "printSelectionOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintSelectionOnlyUndefined: Self = StObject.set(x, "printSelectionOnly", js.undefined)
+    inline def setPrintSelectionOnlyUndefined: Self = StObject.set(x, "printSelectionOnly", js.undefined)
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
   }
 }

@@ -17,16 +17,13 @@ trait InteractiveIOException
 }
 object InteractiveIOException {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Code: IOErrorCode, Context: XInterface, Message: String): InteractiveIOException = {
+  inline def apply(Classification: InteractionClassification, Code: IOErrorCode, Context: XInterface, Message: String): InteractiveIOException = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Code = Code.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveIOException]
   }
   
-  @scala.inline
-  implicit class InteractiveIOExceptionMutableBuilder[Self <: InteractiveIOException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveIOException](x: Self) {
     
-    @scala.inline
-    def setCode(value: IOErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: IOErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
   }
 }

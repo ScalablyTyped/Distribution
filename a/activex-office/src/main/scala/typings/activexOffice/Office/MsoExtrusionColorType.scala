@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoExtrusionColorType extends StObject
 object MsoExtrusionColorType {
   
-  @scala.inline
-  def msoExtrusionColorAutomatic: `1` = 1.asInstanceOf[`1`]
+  inline def msoExtrusionColorAutomatic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoExtrusionColorCustom: `2` = 2.asInstanceOf[`2`]
+  inline def msoExtrusionColorCustom: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoExtrusionColorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoExtrusionColorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
 }

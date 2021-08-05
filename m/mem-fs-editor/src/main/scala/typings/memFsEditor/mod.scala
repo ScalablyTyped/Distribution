@@ -21,8 +21,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(store: Store): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any]).asInstanceOf[Editor]
+  inline def create(store: Store): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any]).asInstanceOf[Editor]
   
   trait AppendOptions extends StObject {
     
@@ -32,26 +31,20 @@ object mod {
   }
   object AppendOptions {
     
-    @scala.inline
-    def apply(): AppendOptions = {
+    inline def apply(): AppendOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppendOptions]
     }
     
-    @scala.inline
-    implicit class AppendOptionsMutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppendOptions](x: Self) {
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setTrimEnd(value: Boolean): Self = StObject.set(x, "trimEnd", value.asInstanceOf[js.Any])
+      inline def setTrimEnd(value: Boolean): Self = StObject.set(x, "trimEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimEndUndefined: Self = StObject.set(x, "trimEnd", js.undefined)
+      inline def setTrimEndUndefined: Self = StObject.set(x, "trimEnd", js.undefined)
     }
   }
   
@@ -71,32 +64,24 @@ object mod {
   }
   object CopyOptions {
     
-    @scala.inline
-    def apply(): CopyOptions = {
+    inline def apply(): CopyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CopyOptions]
     }
     
-    @scala.inline
-    implicit class CopyOptionsMutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CopyOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreNoMatch(value: Boolean): Self = StObject.set(x, "ignoreNoMatch", value.asInstanceOf[js.Any])
+      inline def setIgnoreNoMatch(value: Boolean): Self = StObject.set(x, "ignoreNoMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNoMatchUndefined: Self = StObject.set(x, "ignoreNoMatch", js.undefined)
+      inline def setIgnoreNoMatchUndefined: Self = StObject.set(x, "ignoreNoMatch", js.undefined)
       
-      @scala.inline
-      def setProcess(value: (/* contents */ Buffer, /* path */ String) => WriteContents): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      inline def setProcess(value: (/* contents */ Buffer, /* path */ String) => WriteContents): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProcessDestinationPath(value: /* path */ String => String): Self = StObject.set(x, "processDestinationPath", js.Any.fromFunction1(value))
+      inline def setProcessDestinationPath(value: /* path */ String => String): Self = StObject.set(x, "processDestinationPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessDestinationPathUndefined: Self = StObject.set(x, "processDestinationPath", js.undefined)
+      inline def setProcessDestinationPathUndefined: Self = StObject.set(x, "processDestinationPath", js.undefined)
       
-      @scala.inline
-      def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+      inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     }
   }
   
@@ -169,26 +154,20 @@ object mod {
   }
   object ReadRawOptions {
     
-    @scala.inline
-    def apply(): ReadRawOptions = {
+    inline def apply(): ReadRawOptions = {
       val __obj = js.Dynamic.literal(raw = true)
       __obj.asInstanceOf[ReadRawOptions]
     }
     
-    @scala.inline
-    implicit class ReadRawOptionsMutableBuilder[Self <: ReadRawOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadRawOptions](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: ReadRawContents): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: ReadRawContents): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsNull: Self = StObject.set(x, "defaults", null)
+      inline def setDefaultsNull: Self = StObject.set(x, "defaults", null)
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setRaw(value: `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,26 +179,20 @@ object mod {
   }
   object ReadStringOptions {
     
-    @scala.inline
-    def apply(): ReadStringOptions = {
+    inline def apply(): ReadStringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadStringOptions]
     }
     
-    @scala.inline
-    implicit class ReadStringOptionsMutableBuilder[Self <: ReadStringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadStringOptions](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setRaw(value: `false`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: `false`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -229,20 +202,16 @@ object mod {
   }
   object WithGlobOptions {
     
-    @scala.inline
-    def apply(): WithGlobOptions = {
+    inline def apply(): WithGlobOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithGlobOptions]
     }
     
-    @scala.inline
-    implicit class WithGlobOptionsMutableBuilder[Self <: WithGlobOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WithGlobOptions](x: Self) {
       
-      @scala.inline
-      def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+      inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
+      inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
     }
   }
   

@@ -23,28 +23,21 @@ trait DisassociateNodeRequest extends StObject {
 }
 object DisassociateNodeRequest {
   
-  @scala.inline
-  def apply(NodeName: NodeName, ServerName: ServerName): DisassociateNodeRequest = {
+  inline def apply(NodeName: NodeName, ServerName: ServerName): DisassociateNodeRequest = {
     val __obj = js.Dynamic.literal(NodeName = NodeName.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateNodeRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateNodeRequestMutableBuilder[Self <: DisassociateNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateNodeRequest](x: Self) {
     
-    @scala.inline
-    def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
+    inline def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
+    inline def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
-    @scala.inline
-    def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
+    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeName(value: NodeName): Self = StObject.set(x, "NodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: NodeName): Self = StObject.set(x, "NodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

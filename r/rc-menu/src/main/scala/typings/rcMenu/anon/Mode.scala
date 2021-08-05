@@ -24,8 +24,7 @@ trait Mode extends StObject {
 }
 object Mode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     manualRef: () => Unit,
     mode: String,
     onMouseEnter: () => Unit,
@@ -39,31 +38,22 @@ object Mode {
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setManualRef(value: () => Unit): Self = StObject.set(x, "manualRef", js.Any.fromFunction0(value))
+    inline def setManualRef(value: () => Unit): Self = StObject.set(x, "manualRef", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
+    inline def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
+    inline def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTitleClick(value: () => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction0(value))
+    inline def setOnTitleClick(value: () => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTitleMouseEnter(value: () => Unit): Self = StObject.set(x, "onTitleMouseEnter", js.Any.fromFunction0(value))
+    inline def setOnTitleMouseEnter(value: () => Unit): Self = StObject.set(x, "onTitleMouseEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTitleMouseLeave(value: () => Unit): Self = StObject.set(x, "onTitleMouseLeave", js.Any.fromFunction0(value))
+    inline def setOnTitleMouseLeave(value: () => Unit): Self = StObject.set(x, "onTitleMouseLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

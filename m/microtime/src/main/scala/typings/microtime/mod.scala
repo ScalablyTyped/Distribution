@@ -10,12 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @scala.inline
-  def nowDouble(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nowDouble")().asInstanceOf[Double]
+  inline def nowDouble(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nowDouble")().asInstanceOf[Double]
   
-  @scala.inline
-  def nowStruct(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("nowStruct")().asInstanceOf[js.Array[Double]]
+  inline def nowStruct(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("nowStruct")().asInstanceOf[js.Array[Double]]
 }

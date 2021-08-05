@@ -19,20 +19,16 @@ trait Activity extends StObject {
 }
 object Activity {
   
-  @scala.inline
-  def apply(confidence: Double, `type`: ActivityType): Activity = {
+  inline def apply(confidence: Double, `type`: ActivityType): Activity = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activity]
   }
   
-  @scala.inline
-  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+  extension [Self <: Activity](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ActivityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ActivityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

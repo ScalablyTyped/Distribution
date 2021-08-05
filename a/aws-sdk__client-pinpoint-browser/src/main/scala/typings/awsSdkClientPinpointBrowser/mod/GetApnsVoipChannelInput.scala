@@ -9,8 +9,7 @@ trait GetApnsVoipChannelInput
      with typings.awsSdkClientPinpointBrowser.typesGetApnsVoipChannelInputMod.GetApnsVoipChannelInput
 object GetApnsVoipChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetApnsVoipChannelInput = {
+  inline def apply(ApplicationId: String): GetApnsVoipChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApnsVoipChannelInput]
   }

@@ -29,11 +29,9 @@ object libListMod {
     @JSImport("office-ui-fabric-react/lib/List", "List.defaultProps")
     @js.native
     def defaultProps: OnRenderCell = js.native
-    @scala.inline
-    def defaultProps_=(x: OnRenderCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnRenderCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps[T](nextProps: IListProps[T], previousState: IListState[T]): IListState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IListState[T]]
+    inline def getDerivedStateFromProps[T](nextProps: IListProps[T], previousState: IListState[T]): IListState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IListState[T]]
   }
   
   object ScrollToMode {
@@ -48,8 +46,7 @@ object libListMod {
     @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.auto")
     @js.native
     def auto: `0` = js.native
-    @scala.inline
-    def auto_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
+    inline def auto_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to scroll the list so the bottom of the desired item is aligned with the bottom of the viewport.
@@ -57,8 +54,7 @@ object libListMod {
     @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.bottom")
     @js.native
     def bottom: `2` = js.native
-    @scala.inline
-    def bottom_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    inline def bottom_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to scroll the list so the desired item is in the exact center of the viewport.
@@ -66,8 +62,7 @@ object libListMod {
     @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.center")
     @js.native
     def center: `3` = js.native
-    @scala.inline
-    def center_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
+    inline def center_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to scroll the list so the top of the desired item is aligned with the top of the viewport.
@@ -75,7 +70,6 @@ object libListMod {
     @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.top")
     @js.native
     def top: `1` = js.native
-    @scala.inline
-    def top_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    inline def top_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
 }

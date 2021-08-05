@@ -23,37 +23,27 @@ trait PacketMirroringFilter extends StObject {
 }
 object PacketMirroringFilter {
   
-  @scala.inline
-  def apply(): PacketMirroringFilter = {
+  inline def apply(): PacketMirroringFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PacketMirroringFilter]
   }
   
-  @scala.inline
-  implicit class PacketMirroringFilterMutableBuilder[Self <: PacketMirroringFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PacketMirroringFilter](x: Self) {
     
-    @scala.inline
-    def setCidrRanges(value: js.Array[String]): Self = StObject.set(x, "cidrRanges", value.asInstanceOf[js.Any])
+    inline def setCidrRanges(value: js.Array[String]): Self = StObject.set(x, "cidrRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrRangesUndefined: Self = StObject.set(x, "cidrRanges", js.undefined)
+    inline def setCidrRangesUndefined: Self = StObject.set(x, "cidrRanges", js.undefined)
     
-    @scala.inline
-    def setCidrRangesVarargs(value: String*): Self = StObject.set(x, "cidrRanges", js.Array(value :_*))
+    inline def setCidrRangesVarargs(value: String*): Self = StObject.set(x, "cidrRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setIPProtocols(value: js.Array[String]): Self = StObject.set(x, "IPProtocols", value.asInstanceOf[js.Any])
+    inline def setIPProtocols(value: js.Array[String]): Self = StObject.set(x, "IPProtocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPProtocolsUndefined: Self = StObject.set(x, "IPProtocols", js.undefined)
+    inline def setIPProtocolsUndefined: Self = StObject.set(x, "IPProtocols", js.undefined)
     
-    @scala.inline
-    def setIPProtocolsVarargs(value: String*): Self = StObject.set(x, "IPProtocols", js.Array(value :_*))
+    inline def setIPProtocolsVarargs(value: String*): Self = StObject.set(x, "IPProtocols", js.Array(value :_*))
   }
 }

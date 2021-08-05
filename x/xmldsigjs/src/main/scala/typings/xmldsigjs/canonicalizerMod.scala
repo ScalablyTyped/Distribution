@@ -22,11 +22,11 @@ object canonicalizerMod {
     def InclusiveNamespacesPrefixList: String = js.native
     def InclusiveNamespacesPrefixList_=(value: String): Unit = js.native
     
-    var IsNamespaceInclusive: js.Any = js.native
+    /* private */ var IsNamespaceInclusive: js.Any = js.native
     
-    var IsNamespaceRendered: js.Any = js.native
+    /* private */ var IsNamespaceRendered: js.Any = js.native
     
-    var IsTextNode: js.Any = js.native
+    /* private */ var IsTextNode: js.Any = js.native
     
     /* protected */ def NormalizeString(input: String, `type`: XmlNodeType): String = js.native
     /* protected */ def NormalizeString(input: Null, `type`: XmlNodeType): String = js.native
@@ -47,21 +47,21 @@ object canonicalizerMod {
     
     /* protected */ def WriteTextNode(node: Node): Unit = js.native
     
-    var document: Document = js.native
+    /* protected */ var document: Document = js.native
     
-    var exclusive: Boolean = js.native
+    /* protected */ var exclusive: Boolean = js.native
     
-    var inclusiveNamespacesPrefixList: js.Array[String] = js.native
+    /* protected */ var inclusiveNamespacesPrefixList: js.Array[String] = js.native
     
-    var propagatedNamespaces: NamespaceManager = js.native
+    /* protected */ var propagatedNamespaces: NamespaceManager = js.native
     
-    var result: js.Array[String] = js.native
+    /* protected */ var result: js.Array[String] = js.native
     
-    var state: XmlCanonicalizerState = js.native
+    /* protected */ var state: XmlCanonicalizerState = js.native
     
-    var visibleNamespaces: NamespaceManager = js.native
+    /* protected */ var visibleNamespaces: NamespaceManager = js.native
     
-    var withComments: Boolean = js.native
+    /* protected */ var withComments: Boolean = js.native
   }
   
   @js.native

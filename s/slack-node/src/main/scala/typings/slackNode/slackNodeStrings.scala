@@ -8,21 +8,17 @@ object slackNodeStrings {
   
   @js.native
   sealed trait fail extends StObject
-  @scala.inline
-  def fail: fail = "fail".asInstanceOf[fail]
+  inline def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
   sealed trait icon_emoji extends StObject
-  @scala.inline
-  def icon_emoji: icon_emoji = "icon_emoji".asInstanceOf[icon_emoji]
+  inline def icon_emoji: icon_emoji = "icon_emoji".asInstanceOf[icon_emoji]
   
   @js.native
   sealed trait icon_url extends StObject
-  @scala.inline
-  def icon_url: icon_url = "icon_url".asInstanceOf[icon_url]
+  inline def icon_url: icon_url = "icon_url".asInstanceOf[icon_url]
   
   @js.native
   sealed trait ok extends StObject
-  @scala.inline
-  def ok: ok = "ok".asInstanceOf[ok]
+  inline def ok: ok = "ok".asInstanceOf[ok]
 }

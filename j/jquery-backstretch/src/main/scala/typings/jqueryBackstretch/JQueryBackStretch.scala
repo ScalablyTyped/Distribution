@@ -85,38 +85,28 @@ object JQueryBackStretch {
   }
   object BackStretchOptions {
     
-    @scala.inline
-    def apply(): BackStretchOptions = {
+    inline def apply(): BackStretchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackStretchOptions]
     }
     
-    @scala.inline
-    implicit class BackStretchOptionsMutableBuilder[Self <: BackStretchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BackStretchOptions](x: Self) {
       
-      @scala.inline
-      def setCenteredX(value: Boolean): Self = StObject.set(x, "centeredX", value.asInstanceOf[js.Any])
+      inline def setCenteredX(value: Boolean): Self = StObject.set(x, "centeredX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredXUndefined: Self = StObject.set(x, "centeredX", js.undefined)
+      inline def setCenteredXUndefined: Self = StObject.set(x, "centeredX", js.undefined)
       
-      @scala.inline
-      def setCenteredY(value: Boolean): Self = StObject.set(x, "centeredY", value.asInstanceOf[js.Any])
+      inline def setCenteredY(value: Boolean): Self = StObject.set(x, "centeredY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredYUndefined: Self = StObject.set(x, "centeredY", js.undefined)
+      inline def setCenteredYUndefined: Self = StObject.set(x, "centeredY", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFade(value: Double): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+      inline def setFade(value: Double): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+      inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
     }
   }
 }

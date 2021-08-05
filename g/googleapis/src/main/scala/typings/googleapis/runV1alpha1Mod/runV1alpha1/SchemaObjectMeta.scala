@@ -181,115 +181,79 @@ trait SchemaObjectMeta extends StObject {
 }
 object SchemaObjectMeta {
   
-  @scala.inline
-  def apply(): SchemaObjectMeta = {
+  inline def apply(): SchemaObjectMeta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaObjectMeta]
   }
   
-  @scala.inline
-  implicit class SchemaObjectMetaMutableBuilder[Self <: SchemaObjectMeta] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaObjectMeta](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDeletionGracePeriodSeconds(value: Double): Self = StObject.set(x, "deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
+    inline def setDeletionGracePeriodSeconds(value: Double): Self = StObject.set(x, "deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionGracePeriodSecondsUndefined: Self = StObject.set(x, "deletionGracePeriodSeconds", js.undefined)
+    inline def setDeletionGracePeriodSecondsUndefined: Self = StObject.set(x, "deletionGracePeriodSeconds", js.undefined)
     
-    @scala.inline
-    def setDeletionTimestamp(value: String): Self = StObject.set(x, "deletionTimestamp", value.asInstanceOf[js.Any])
+    inline def setDeletionTimestamp(value: String): Self = StObject.set(x, "deletionTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionTimestampUndefined: Self = StObject.set(x, "deletionTimestamp", js.undefined)
+    inline def setDeletionTimestampUndefined: Self = StObject.set(x, "deletionTimestamp", js.undefined)
     
-    @scala.inline
-    def setFinalizers(value: js.Array[String]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
+    inline def setFinalizers(value: js.Array[String]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizersUndefined: Self = StObject.set(x, "finalizers", js.undefined)
+    inline def setFinalizersUndefined: Self = StObject.set(x, "finalizers", js.undefined)
     
-    @scala.inline
-    def setFinalizersVarargs(value: String*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
+    inline def setFinalizersVarargs(value: String*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
     
-    @scala.inline
-    def setGenerateName(value: String): Self = StObject.set(x, "generateName", value.asInstanceOf[js.Any])
+    inline def setGenerateName(value: String): Self = StObject.set(x, "generateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateNameUndefined: Self = StObject.set(x, "generateName", js.undefined)
+    inline def setGenerateNameUndefined: Self = StObject.set(x, "generateName", js.undefined)
     
-    @scala.inline
-    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setInitializers(value: SchemaInitializers): Self = StObject.set(x, "initializers", value.asInstanceOf[js.Any])
+    inline def setInitializers(value: SchemaInitializers): Self = StObject.set(x, "initializers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializersUndefined: Self = StObject.set(x, "initializers", js.undefined)
+    inline def setInitializersUndefined: Self = StObject.set(x, "initializers", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setOwnerReferences(value: js.Array[SchemaOwnerReference]): Self = StObject.set(x, "ownerReferences", value.asInstanceOf[js.Any])
+    inline def setOwnerReferences(value: js.Array[SchemaOwnerReference]): Self = StObject.set(x, "ownerReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerReferencesUndefined: Self = StObject.set(x, "ownerReferences", js.undefined)
+    inline def setOwnerReferencesUndefined: Self = StObject.set(x, "ownerReferences", js.undefined)
     
-    @scala.inline
-    def setOwnerReferencesVarargs(value: SchemaOwnerReference*): Self = StObject.set(x, "ownerReferences", js.Array(value :_*))
+    inline def setOwnerReferencesVarargs(value: SchemaOwnerReference*): Self = StObject.set(x, "ownerReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
+    inline def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }
 }

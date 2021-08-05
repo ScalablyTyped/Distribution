@@ -17,19 +17,15 @@ trait ColorModesScale
 }
 object ColorModesScale {
   
-  @scala.inline
-  def apply(): ColorModesScale = {
+  inline def apply(): ColorModesScale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorModesScale]
   }
   
-  @scala.inline
-  implicit class ColorModesScaleMutableBuilder[Self <: ColorModesScale] (val x: Self) extends AnyVal {
+  extension [Self <: ColorModesScale](x: Self) {
     
-    @scala.inline
-    def setModes(value: StringDictionary[ColorMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    inline def setModes(value: StringDictionary[ColorMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
+    inline def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
   }
 }

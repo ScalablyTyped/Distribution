@@ -11,8 +11,7 @@ trait BasicsProps
      with TransitionProps[StyledSystemLength]
 object BasicsProps {
   
-  @scala.inline
-  def apply(): BasicsProps = {
+  inline def apply(): BasicsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasicsProps]
   }

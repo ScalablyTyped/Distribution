@@ -14,22 +14,17 @@ trait TransformDeleteTransform
 }
 object TransformDeleteTransform {
   
-  @scala.inline
-  def apply(transform_id: String): TransformDeleteTransform = {
+  inline def apply(transform_id: String): TransformDeleteTransform = {
     val __obj = js.Dynamic.literal(transform_id = transform_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformDeleteTransform]
   }
   
-  @scala.inline
-  implicit class TransformDeleteTransformMutableBuilder[Self <: TransformDeleteTransform] (val x: Self) extends AnyVal {
+  extension [Self <: TransformDeleteTransform](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
+    inline def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
   }
 }

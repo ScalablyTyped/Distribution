@@ -12,24 +12,16 @@ object licenseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLicenseAssets(fileNames: js.Array[String], packager: PlatformPackager[js.Any]): js.Array[File] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseAssets")(fileNames.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Array[File]]
+  inline def getLicenseAssets(fileNames: js.Array[String], packager: PlatformPackager[js.Any]): js.Array[File] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseAssets")(fileNames.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Array[File]]
   
-  @scala.inline
-  def getLicenseFiles(packager: PlatformPackager[js.Any]): js.Promise[js.Array[LicenseFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseFiles")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseFile]]]
+  inline def getLicenseFiles(packager: PlatformPackager[js.Any]): js.Promise[js.Array[LicenseFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseFiles")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseFile]]]
   
-  @scala.inline
-  def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
-  @scala.inline
-  def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
-  @scala.inline
-  def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
-  @scala.inline
-  def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
-  @scala.inline
-  def getNotLocalizedLicenseFile(custom: Unit, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
-  @scala.inline
-  def getNotLocalizedLicenseFile(custom: Unit, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def getNotLocalizedLicenseFile(custom: Unit, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def getNotLocalizedLicenseFile(custom: Unit, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
   
   trait LicenseFile extends StObject {
     
@@ -43,26 +35,20 @@ object licenseMod {
   }
   object LicenseFile {
     
-    @scala.inline
-    def apply(file: String, lang: String, langName: String, langWithRegion: String): LicenseFile = {
+    inline def apply(file: String, lang: String, langName: String, langWithRegion: String): LicenseFile = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], langName = langName.asInstanceOf[js.Any], langWithRegion = langWithRegion.asInstanceOf[js.Any])
       __obj.asInstanceOf[LicenseFile]
     }
     
-    @scala.inline
-    implicit class LicenseFileMutableBuilder[Self <: LicenseFile] (val x: Self) extends AnyVal {
+    extension [Self <: LicenseFile](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangName(value: String): Self = StObject.set(x, "langName", value.asInstanceOf[js.Any])
+      inline def setLangName(value: String): Self = StObject.set(x, "langName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangWithRegion(value: String): Self = StObject.set(x, "langWithRegion", value.asInstanceOf[js.Any])
+      inline def setLangWithRegion(value: String): Self = StObject.set(x, "langWithRegion", value.asInstanceOf[js.Any])
     }
   }
 }

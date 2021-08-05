@@ -10,16 +10,13 @@ trait IComputedEditorOptions extends StObject {
 }
 object IComputedEditorOptions {
   
-  @scala.inline
-  def apply(get: js.Any => FindComputedEditorOptionValueById[js.Any]): IComputedEditorOptions = {
+  inline def apply(get: js.Any => FindComputedEditorOptionValueById[js.Any]): IComputedEditorOptions = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[IComputedEditorOptions]
   }
   
-  @scala.inline
-  implicit class IComputedEditorOptionsMutableBuilder[Self <: IComputedEditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IComputedEditorOptions](x: Self) {
     
-    @scala.inline
-    def setGet(value: js.Any => FindComputedEditorOptionValueById[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => FindComputedEditorOptionValueById[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

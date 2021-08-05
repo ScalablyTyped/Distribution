@@ -71,12 +71,9 @@ object PolyfillBlob {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def build(data: js.Any, cType: js.Any): js.Promise[PolyfillBlob] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(data.asInstanceOf[js.Any], cType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PolyfillBlob]]
+  inline def build(data: js.Any, cType: js.Any): js.Promise[PolyfillBlob] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(data.asInstanceOf[js.Any], cType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PolyfillBlob]]
   
-  @scala.inline
-  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
+  inline def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setLog(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLog")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLog(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLog")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

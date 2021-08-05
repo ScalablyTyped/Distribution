@@ -39,20 +39,16 @@ object storyStoreMod {
   }
   object AllowUnsafeOption {
     
-    @scala.inline
-    def apply(): AllowUnsafeOption = {
+    inline def apply(): AllowUnsafeOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AllowUnsafeOption]
     }
     
-    @scala.inline
-    implicit class AllowUnsafeOptionMutableBuilder[Self <: AllowUnsafeOption] (val x: Self) extends AnyVal {
+    extension [Self <: AllowUnsafeOption](x: Self) {
       
-      @scala.inline
-      def setAllowUnsafe(value: Boolean): Self = StObject.set(x, "allowUnsafe", value.asInstanceOf[js.Any])
+      inline def setAllowUnsafe(value: Boolean): Self = StObject.set(x, "allowUnsafe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnsafeUndefined: Self = StObject.set(x, "allowUnsafe", js.undefined)
+      inline def setAllowUnsafeUndefined: Self = StObject.set(x, "allowUnsafe", js.undefined)
     }
   }
   
@@ -64,17 +60,14 @@ object storyStoreMod {
   }
   object KindMetadata {
     
-    @scala.inline
-    def apply(order: Double): KindMetadata = {
+    inline def apply(order: Double): KindMetadata = {
       val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
       __obj.asInstanceOf[KindMetadata]
     }
     
-    @scala.inline
-    implicit class KindMetadataMutableBuilder[Self <: KindMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: KindMetadata](x: Self) {
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,20 +77,16 @@ object storyStoreMod {
   }
   object StoryOptions {
     
-    @scala.inline
-    def apply(): StoryOptions = {
+    inline def apply(): StoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoryOptions]
     }
     
-    @scala.inline
-    implicit class StoryOptionsMutableBuilder[Self <: StoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StoryOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeDocsOnly(value: Boolean): Self = StObject.set(x, "includeDocsOnly", value.asInstanceOf[js.Any])
+      inline def setIncludeDocsOnly(value: Boolean): Self = StObject.set(x, "includeDocsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeDocsOnlyUndefined: Self = StObject.set(x, "includeDocsOnly", js.undefined)
+      inline def setIncludeDocsOnlyUndefined: Self = StObject.set(x, "includeDocsOnly", js.undefined)
     }
   }
   
@@ -170,7 +159,7 @@ object storyStoreMod {
     
     def getStorybook(): js.Array[GetStorybookKind] = js.native
     
-    var mergeAdditionalDataToStory: js.Any = js.native
+    /* private */ var mergeAdditionalDataToStory: js.Any = js.native
     
     def pushToManager(): Unit = js.native
     

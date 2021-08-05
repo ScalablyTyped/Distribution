@@ -25,8 +25,7 @@ object cpuprofileMod {
   }
   object CPUProfileChunk {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       nodes: js.Array[CPUProfileChunkNode],
       pid: Double,
@@ -39,38 +38,27 @@ object cpuprofileMod {
       __obj.asInstanceOf[CPUProfileChunk]
     }
     
-    @scala.inline
-    implicit class CPUProfileChunkMutableBuilder[Self <: CPUProfileChunk] (val x: Self) extends AnyVal {
+    extension [Self <: CPUProfileChunk](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[CPUProfileChunkNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[CPUProfileChunkNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamples(value: js.Array[Double]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+      inline def setSamples(value: js.Array[Double]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplesVarargs(value: Double*): Self = StObject.set(x, "samples", js.Array(value :_*))
+      inline def setSamplesVarargs(value: Double*): Self = StObject.set(x, "samples", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTid(value: String): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
+      inline def setTid(value: String): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDeltas(value: js.Array[Double]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
+      inline def setTimeDeltas(value: js.Array[Double]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
+      inline def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
     }
   }
   
@@ -84,26 +72,20 @@ object cpuprofileMod {
   }
   object CPUProfileChunkNode {
     
-    @scala.inline
-    def apply(callFrame: Category, id: Double): CPUProfileChunkNode = {
+    inline def apply(callFrame: Category, id: Double): CPUProfileChunkNode = {
       val __obj = js.Dynamic.literal(callFrame = callFrame.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[CPUProfileChunkNode]
     }
     
-    @scala.inline
-    implicit class CPUProfileChunkNodeMutableBuilder[Self <: CPUProfileChunkNode] (val x: Self) extends AnyVal {
+    extension [Self <: CPUProfileChunkNode](x: Self) {
       
-      @scala.inline
-      def setCallFrame(value: Category): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
+      inline def setCallFrame(value: Category): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     }
   }
   
@@ -117,8 +99,7 @@ object cpuprofileMod {
   }
   object CPUProfileChunker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       nodes: js.Array[CPUProfileChunkNode],
       sampleNumbers: js.Array[Double],
       timeDeltas: js.Array[Double]
@@ -127,26 +108,19 @@ object cpuprofileMod {
       __obj.asInstanceOf[CPUProfileChunker]
     }
     
-    @scala.inline
-    implicit class CPUProfileChunkerMutableBuilder[Self <: CPUProfileChunker] (val x: Self) extends AnyVal {
+    extension [Self <: CPUProfileChunker](x: Self) {
       
-      @scala.inline
-      def setNodes(value: js.Array[CPUProfileChunkNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[CPUProfileChunkNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setSampleNumbers(value: js.Array[Double]): Self = StObject.set(x, "sampleNumbers", value.asInstanceOf[js.Any])
+      inline def setSampleNumbers(value: js.Array[Double]): Self = StObject.set(x, "sampleNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleNumbersVarargs(value: Double*): Self = StObject.set(x, "sampleNumbers", js.Array(value :_*))
+      inline def setSampleNumbersVarargs(value: Double*): Self = StObject.set(x, "sampleNumbers", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeDeltas(value: js.Array[Double]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
+      inline def setTimeDeltas(value: js.Array[Double]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
+      inline def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
     }
   }
 }

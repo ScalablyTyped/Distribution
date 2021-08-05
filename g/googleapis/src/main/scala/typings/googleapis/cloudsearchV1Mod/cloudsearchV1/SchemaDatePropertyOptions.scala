@@ -16,19 +16,15 @@ trait SchemaDatePropertyOptions extends StObject {
 }
 object SchemaDatePropertyOptions {
   
-  @scala.inline
-  def apply(): SchemaDatePropertyOptions = {
+  inline def apply(): SchemaDatePropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatePropertyOptions]
   }
   
-  @scala.inline
-  implicit class SchemaDatePropertyOptionsMutableBuilder[Self <: SchemaDatePropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatePropertyOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorOptions(value: SchemaDateOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
+    inline def setOperatorOptions(value: SchemaDateOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
+    inline def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
   }
 }

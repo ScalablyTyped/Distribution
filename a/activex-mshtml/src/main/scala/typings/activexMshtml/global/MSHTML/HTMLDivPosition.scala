@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDivPosition")
 @js.native
-class HTMLDivPosition protected ()
+/* private */ class HTMLDivPosition ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDivPosition

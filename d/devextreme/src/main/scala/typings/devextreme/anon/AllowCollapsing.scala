@@ -20,43 +20,31 @@ trait AllowCollapsing extends StObject {
 }
 object AllowCollapsing {
   
-  @scala.inline
-  def apply(): AllowCollapsing = {
+  inline def apply(): AllowCollapsing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowCollapsing]
   }
   
-  @scala.inline
-  implicit class AllowCollapsingMutableBuilder[Self <: AllowCollapsing] (val x: Self) extends AnyVal {
+  extension [Self <: AllowCollapsing](x: Self) {
     
-    @scala.inline
-    def setAllowCollapsing(value: Boolean): Self = StObject.set(x, "allowCollapsing", value.asInstanceOf[js.Any])
+    inline def setAllowCollapsing(value: Boolean): Self = StObject.set(x, "allowCollapsing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCollapsingUndefined: Self = StObject.set(x, "allowCollapsing", js.undefined)
+    inline def setAllowCollapsingUndefined: Self = StObject.set(x, "allowCollapsing", js.undefined)
     
-    @scala.inline
-    def setAutoExpandAll(value: Boolean): Self = StObject.set(x, "autoExpandAll", value.asInstanceOf[js.Any])
+    inline def setAutoExpandAll(value: Boolean): Self = StObject.set(x, "autoExpandAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoExpandAllUndefined: Self = StObject.set(x, "autoExpandAll", js.undefined)
+    inline def setAutoExpandAllUndefined: Self = StObject.set(x, "autoExpandAll", js.undefined)
     
-    @scala.inline
-    def setContextMenuEnabled(value: Boolean): Self = StObject.set(x, "contextMenuEnabled", value.asInstanceOf[js.Any])
+    inline def setContextMenuEnabled(value: Boolean): Self = StObject.set(x, "contextMenuEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextMenuEnabledUndefined: Self = StObject.set(x, "contextMenuEnabled", js.undefined)
+    inline def setContextMenuEnabledUndefined: Self = StObject.set(x, "contextMenuEnabled", js.undefined)
     
-    @scala.inline
-    def setExpandMode(value: buttonClick | rowClick): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
+    inline def setExpandMode(value: buttonClick | rowClick): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandModeUndefined: Self = StObject.set(x, "expandMode", js.undefined)
+    inline def setExpandModeUndefined: Self = StObject.set(x, "expandMode", js.undefined)
     
-    @scala.inline
-    def setTexts(value: GroupByThisColumn): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setTexts(value: GroupByThisColumn): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
+    inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
   }
 }

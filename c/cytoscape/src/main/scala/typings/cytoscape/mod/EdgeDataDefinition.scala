@@ -22,19 +22,15 @@ trait EdgeDataDefinition
 }
 object EdgeDataDefinition {
   
-  @scala.inline
-  def apply(source: String, target: String): EdgeDataDefinition = {
+  inline def apply(source: String, target: String): EdgeDataDefinition = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeDataDefinition]
   }
   
-  @scala.inline
-  implicit class EdgeDataDefinitionMutableBuilder[Self <: EdgeDataDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeDataDefinition](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

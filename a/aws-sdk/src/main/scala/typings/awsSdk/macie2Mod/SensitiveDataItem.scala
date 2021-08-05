@@ -23,34 +23,25 @@ trait SensitiveDataItem extends StObject {
 }
 object SensitiveDataItem {
   
-  @scala.inline
-  def apply(): SensitiveDataItem = {
+  inline def apply(): SensitiveDataItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SensitiveDataItem]
   }
   
-  @scala.inline
-  implicit class SensitiveDataItemMutableBuilder[Self <: SensitiveDataItem] (val x: Self) extends AnyVal {
+  extension [Self <: SensitiveDataItem](x: Self) {
     
-    @scala.inline
-    def setCategory(value: SensitiveDataItemCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: SensitiveDataItemCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setDetections(value: DefaultDetections): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
+    inline def setDetections(value: DefaultDetections): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
+    inline def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
-    @scala.inline
-    def setDetectionsVarargs(value: DefaultDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
+    inline def setDetectionsVarargs(value: DefaultDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

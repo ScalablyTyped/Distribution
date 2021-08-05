@@ -31,7 +31,7 @@ object radioButtonRadioButtonMod {
       */
     def this(props: RadioButtonProps, context: js.Any) = this()
     
-    var focusedByMouse: js.Any = js.native
+    /* private */ var focusedByMouse: js.Any = js.native
     
     def handleClick(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Unit = js.native
     
@@ -45,7 +45,7 @@ object radioButtonRadioButtonMod {
     
     def onInputBlur(): Unit = js.native
     
-    var radioRef: js.Any = js.native
+    /* private */ var radioRef: js.Any = js.native
     
     @JSName("state")
     var state_RadioButton: Focused = js.native
@@ -60,20 +60,17 @@ object radioButtonRadioButtonMod {
     @JSImport("wix-ui-core/dist/src/components/radio-button/RadioButton", "RadioButton.bypassDefaultPropsTypecheck")
     @js.native
     def bypassDefaultPropsTypecheck: js.Any = js.native
-    @scala.inline
-    def bypassDefaultPropsTypecheck_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bypassDefaultPropsTypecheck")(x.asInstanceOf[js.Any])
+    inline def bypassDefaultPropsTypecheck_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bypassDefaultPropsTypecheck")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/radio-button/RadioButton", "RadioButton.defaultProps")
     @js.native
     def defaultProps: OnBlur = js.native
-    @scala.inline
-    def defaultProps_=(x: OnBlur): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnBlur): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/radio-button/RadioButton", "RadioButton.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait RadioButtonChangeEvent
@@ -84,8 +81,7 @@ object radioButtonRadioButtonMod {
   }
   object RadioButtonChangeEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -125,11 +121,9 @@ object radioButtonRadioButtonMod {
       __obj.asInstanceOf[RadioButtonChangeEvent]
     }
     
-    @scala.inline
-    implicit class RadioButtonChangeEventMutableBuilder[Self <: RadioButtonChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonChangeEvent](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,8 +135,7 @@ object radioButtonRadioButtonMod {
   }
   object RadioButtonClickEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -182,11 +175,9 @@ object radioButtonRadioButtonMod {
       __obj.asInstanceOf[RadioButtonClickEvent]
     }
     
-    @scala.inline
-    implicit class RadioButtonClickEventMutableBuilder[Self <: RadioButtonClickEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonClickEvent](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,8 +189,7 @@ object radioButtonRadioButtonMod {
   }
   object RadioButtonHoverEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -239,11 +229,9 @@ object radioButtonRadioButtonMod {
       __obj.asInstanceOf[RadioButtonHoverEvent]
     }
     
-    @scala.inline
-    implicit class RadioButtonHoverEventMutableBuilder[Self <: RadioButtonHoverEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonHoverEvent](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,8 +243,7 @@ object radioButtonRadioButtonMod {
   }
   object RadioButtonKeyDownEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       bubbles: Boolean,
       cancelable: Boolean,
@@ -292,11 +279,9 @@ object radioButtonRadioButtonMod {
       __obj.asInstanceOf[RadioButtonKeyDownEvent]
     }
     
-    @scala.inline
-    implicit class RadioButtonKeyDownEventMutableBuilder[Self <: RadioButtonKeyDownEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonKeyDownEvent](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -353,110 +338,76 @@ object radioButtonRadioButtonMod {
   }
   object RadioButtonProps {
     
-    @scala.inline
-    def apply(): RadioButtonProps = {
+    inline def apply(): RadioButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioButtonProps]
     }
     
-    @scala.inline
-    implicit class RadioButtonPropsMutableBuilder[Self <: RadioButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonProps](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedIcon(value: ReactNode): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
+      inline def setCheckedIcon(value: ReactNode): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
+      inline def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* event */ RadioButtonChangeEvent | RadioButtonClickEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ RadioButtonChangeEvent | RadioButtonClickEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnHover(value: /* event */ RadioButtonHoverEvent => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+      inline def setOnHover(value: /* event */ RadioButtonHoverEvent => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
+      inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
       
-      @scala.inline
-      def setOnIconBlur(value: /* event */ typings.react.mod.MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onIconBlur", js.Any.fromFunction1(value))
+      inline def setOnIconBlur(value: /* event */ typings.react.mod.MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onIconBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIconBlurUndefined: Self = StObject.set(x, "onIconBlur", js.undefined)
+      inline def setOnIconBlurUndefined: Self = StObject.set(x, "onIconBlur", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* event */ RadioButtonKeyDownEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ RadioButtonKeyDownEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setUncheckedIcon(value: ReactNode): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
+      inline def setUncheckedIcon(value: ReactNode): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
+      inline def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -468,20 +419,16 @@ object radioButtonRadioButtonMod {
   }
   object RadioButtonState {
     
-    @scala.inline
-    def apply(focusVisible: Boolean, focused: Boolean): RadioButtonState = {
+    inline def apply(focusVisible: Boolean, focused: Boolean): RadioButtonState = {
       val __obj = js.Dynamic.literal(focusVisible = focusVisible.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioButtonState]
     }
     
-    @scala.inline
-    implicit class RadioButtonStateMutableBuilder[Self <: RadioButtonState] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonState](x: Self) {
       
-      @scala.inline
-      def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+      inline def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     }
   }
 }

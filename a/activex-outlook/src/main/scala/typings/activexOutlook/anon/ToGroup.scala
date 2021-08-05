@@ -13,19 +13,15 @@ trait ToGroup extends StObject {
 }
 object ToGroup {
   
-  @scala.inline
-  def apply(Cancel: Boolean, ToGroup: OutlookBarGroup): ToGroup = {
+  inline def apply(Cancel: Boolean, ToGroup: OutlookBarGroup): ToGroup = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ToGroup = ToGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToGroup]
   }
   
-  @scala.inline
-  implicit class ToGroupMutableBuilder[Self <: ToGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ToGroup](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToGroup(value: OutlookBarGroup): Self = StObject.set(x, "ToGroup", value.asInstanceOf[js.Any])
+    inline def setToGroup(value: OutlookBarGroup): Self = StObject.set(x, "ToGroup", value.asInstanceOf[js.Any])
   }
 }

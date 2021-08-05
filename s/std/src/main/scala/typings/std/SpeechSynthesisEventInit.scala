@@ -20,40 +20,29 @@ trait SpeechSynthesisEventInit
 }
 object SpeechSynthesisEventInit {
   
-  @scala.inline
-  def apply(utterance: SpeechSynthesisUtterance): SpeechSynthesisEventInit = {
+  inline def apply(utterance: SpeechSynthesisUtterance): SpeechSynthesisEventInit = {
     val __obj = js.Dynamic.literal(utterance = utterance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechSynthesisEventInit]
   }
   
-  @scala.inline
-  implicit class SpeechSynthesisEventInitMutableBuilder[Self <: SpeechSynthesisEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechSynthesisEventInit](x: Self) {
     
-    @scala.inline
-    def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
+    inline def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharIndexUndefined: Self = StObject.set(x, "charIndex", js.undefined)
+    inline def setCharIndexUndefined: Self = StObject.set(x, "charIndex", js.undefined)
     
-    @scala.inline
-    def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
+    inline def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharLengthUndefined: Self = StObject.set(x, "charLength", js.undefined)
+    inline def setCharLengthUndefined: Self = StObject.set(x, "charLength", js.undefined)
     
-    @scala.inline
-    def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
+    inline def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUtterance(value: SpeechSynthesisUtterance): Self = StObject.set(x, "utterance", value.asInstanceOf[js.Any])
+    inline def setUtterance(value: SpeechSynthesisUtterance): Self = StObject.set(x, "utterance", value.asInstanceOf[js.Any])
   }
 }

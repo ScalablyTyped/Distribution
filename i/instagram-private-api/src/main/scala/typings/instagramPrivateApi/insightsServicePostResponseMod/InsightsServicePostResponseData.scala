@@ -10,16 +10,13 @@ trait InsightsServicePostResponseData extends StObject {
 }
 object InsightsServicePostResponseData {
   
-  @scala.inline
-  def apply(media: InsightsServicePostResponseMedia): InsightsServicePostResponseData = {
+  inline def apply(media: InsightsServicePostResponseMedia): InsightsServicePostResponseData = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseData]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseDataMutableBuilder[Self <: InsightsServicePostResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseData](x: Self) {
     
-    @scala.inline
-    def setMedia(value: InsightsServicePostResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: InsightsServicePostResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

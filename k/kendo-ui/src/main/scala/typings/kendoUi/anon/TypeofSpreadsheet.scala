@@ -15,19 +15,15 @@ trait TypeofSpreadsheet extends StObject {
 }
 object TypeofSpreadsheet {
   
-  @scala.inline
-  def apply(extend: js.Object => Spreadsheet, fn: Spreadsheet): TypeofSpreadsheet = {
+  inline def apply(extend: js.Object => Spreadsheet, fn: Spreadsheet): TypeofSpreadsheet = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSpreadsheet]
   }
   
-  @scala.inline
-  implicit class TypeofSpreadsheetMutableBuilder[Self <: TypeofSpreadsheet] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSpreadsheet](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Spreadsheet): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Spreadsheet): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Spreadsheet): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Spreadsheet): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ object paginationLastMod {
        with HTMLProps[PaginationLast]
   object PaginationLastProps {
     
-    @scala.inline
-    def apply(): PaginationLastProps = {
+    inline def apply(): PaginationLastProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationLastProps]
     }

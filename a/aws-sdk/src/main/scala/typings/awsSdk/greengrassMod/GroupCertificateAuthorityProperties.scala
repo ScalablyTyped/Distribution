@@ -18,25 +18,19 @@ trait GroupCertificateAuthorityProperties extends StObject {
 }
 object GroupCertificateAuthorityProperties {
   
-  @scala.inline
-  def apply(): GroupCertificateAuthorityProperties = {
+  inline def apply(): GroupCertificateAuthorityProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupCertificateAuthorityProperties]
   }
   
-  @scala.inline
-  implicit class GroupCertificateAuthorityPropertiesMutableBuilder[Self <: GroupCertificateAuthorityProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GroupCertificateAuthorityProperties](x: Self) {
     
-    @scala.inline
-    def setGroupCertificateAuthorityArn(value: string): Self = StObject.set(x, "GroupCertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setGroupCertificateAuthorityArn(value: string): Self = StObject.set(x, "GroupCertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupCertificateAuthorityArnUndefined: Self = StObject.set(x, "GroupCertificateAuthorityArn", js.undefined)
+    inline def setGroupCertificateAuthorityArnUndefined: Self = StObject.set(x, "GroupCertificateAuthorityArn", js.undefined)
     
-    @scala.inline
-    def setGroupCertificateAuthorityId(value: string): Self = StObject.set(x, "GroupCertificateAuthorityId", value.asInstanceOf[js.Any])
+    inline def setGroupCertificateAuthorityId(value: string): Self = StObject.set(x, "GroupCertificateAuthorityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupCertificateAuthorityIdUndefined: Self = StObject.set(x, "GroupCertificateAuthorityId", js.undefined)
+    inline def setGroupCertificateAuthorityIdUndefined: Self = StObject.set(x, "GroupCertificateAuthorityId", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait NumberConstructor extends StObject {
 }
 object NumberConstructor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     above: Double => NumberConstructor,
     below: Double => NumberConstructor,
     max: Double => NumberConstructor,
@@ -30,22 +29,16 @@ object NumberConstructor {
     __obj.asInstanceOf[NumberConstructor]
   }
   
-  @scala.inline
-  implicit class NumberConstructorMutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: NumberConstructor](x: Self) {
     
-    @scala.inline
-    def setAbove(value: Double => NumberConstructor): Self = StObject.set(x, "above", js.Any.fromFunction1(value))
+    inline def setAbove(value: Double => NumberConstructor): Self = StObject.set(x, "above", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBelow(value: Double => NumberConstructor): Self = StObject.set(x, "below", js.Any.fromFunction1(value))
+    inline def setBelow(value: Double => NumberConstructor): Self = StObject.set(x, "below", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMax(value: Double => NumberConstructor): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    inline def setMax(value: Double => NumberConstructor): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMin(value: Double => NumberConstructor): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    inline def setMin(value: Double => NumberConstructor): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStep(value: Double => NumberConstructor): Self = StObject.set(x, "step", js.Any.fromFunction1(value))
+    inline def setStep(value: Double => NumberConstructor): Self = StObject.set(x, "step", js.Any.fromFunction1(value))
   }
 }

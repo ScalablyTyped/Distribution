@@ -11,6 +11,5 @@ object meetsContrastGuidelinesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(color1: String, color2: String): ContrastScores = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[ContrastScores]
+  inline def default(color1: String, color2: String): ContrastScores = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[ContrastScores]
 }

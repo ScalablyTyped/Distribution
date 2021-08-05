@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(app: Application_): Unit = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(app: Application_, filename: String): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(app: Application_): Unit = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(app: Application_, filename: String): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("express-routemap", JSImport.Namespace)
   @js.native

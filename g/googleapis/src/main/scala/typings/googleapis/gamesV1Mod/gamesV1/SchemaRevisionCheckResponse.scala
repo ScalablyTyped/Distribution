@@ -32,31 +32,23 @@ trait SchemaRevisionCheckResponse extends StObject {
 }
 object SchemaRevisionCheckResponse {
   
-  @scala.inline
-  def apply(): SchemaRevisionCheckResponse = {
+  inline def apply(): SchemaRevisionCheckResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevisionCheckResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRevisionCheckResponseMutableBuilder[Self <: SchemaRevisionCheckResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevisionCheckResponse](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRevisionStatus(value: String): Self = StObject.set(x, "revisionStatus", value.asInstanceOf[js.Any])
+    inline def setRevisionStatus(value: String): Self = StObject.set(x, "revisionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionStatusUndefined: Self = StObject.set(x, "revisionStatus", js.undefined)
+    inline def setRevisionStatusUndefined: Self = StObject.set(x, "revisionStatus", js.undefined)
   }
 }

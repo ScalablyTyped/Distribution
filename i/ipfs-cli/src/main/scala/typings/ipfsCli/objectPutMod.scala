@@ -24,21 +24,18 @@ object objectPutMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/object/put", "builder.input-enc")
     @js.native
     def inputEnc: DefaultStringTypeString = js.native
     
-    @scala.inline
-    def inputEnc_=(x: DefaultStringTypeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input-enc")(x.asInstanceOf[js.Any])
+    inline def inputEnc_=(x: DefaultStringTypeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input-enc")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/object/put", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/object/put", "command")
@@ -49,6 +46,5 @@ object objectPutMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintGetStdinDataInputEncCidBaseTimeout: InputEnc): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintGetStdinDataInputEncCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintGetStdinDataInputEncCidBaseTimeout: InputEnc): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintGetStdinDataInputEncCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

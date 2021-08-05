@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleAuto extends StObject
 object styleAuto {
   
-  @scala.inline
-  def styleAutoAuto: `0` = 0.asInstanceOf[`0`]
+  inline def styleAutoAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleAuto_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleAuto_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

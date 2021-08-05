@@ -12,19 +12,15 @@ trait IScheduledJobs extends StObject {
 }
 object IScheduledJobs {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => IScheduledJob): IScheduledJobs = {
+  inline def apply(Count: Double, Item: Double => IScheduledJob): IScheduledJobs = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IScheduledJobs]
   }
   
-  @scala.inline
-  implicit class IScheduledJobsMutableBuilder[Self <: IScheduledJobs] (val x: Self) extends AnyVal {
+  extension [Self <: IScheduledJobs](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IScheduledJob): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IScheduledJob): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

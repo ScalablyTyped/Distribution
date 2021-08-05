@@ -12,10 +12,8 @@ object mskGetClusterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
-  @scala.inline
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
   
   trait GetClusterArgs extends StObject {
     
@@ -31,23 +29,18 @@ object mskGetClusterMod {
   }
   object GetClusterArgs {
     
-    @scala.inline
-    def apply(clusterName: String): GetClusterArgs = {
+    inline def apply(clusterName: String): GetClusterArgs = {
       val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClusterArgs]
     }
     
-    @scala.inline
-    implicit class GetClusterArgsMutableBuilder[Self <: GetClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterArgs](x: Self) {
       
-      @scala.inline
-      def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -97,8 +90,7 @@ object mskGetClusterMod {
   }
   object GetClusterResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       bootstrapBrokers: String,
       bootstrapBrokersTls: String,
@@ -113,35 +105,25 @@ object mskGetClusterMod {
       __obj.asInstanceOf[GetClusterResult]
     }
     
-    @scala.inline
-    implicit class GetClusterResultMutableBuilder[Self <: GetClusterResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrapBrokers(value: String): Self = StObject.set(x, "bootstrapBrokers", value.asInstanceOf[js.Any])
+      inline def setBootstrapBrokers(value: String): Self = StObject.set(x, "bootstrapBrokers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrapBrokersTls(value: String): Self = StObject.set(x, "bootstrapBrokersTls", value.asInstanceOf[js.Any])
+      inline def setBootstrapBrokersTls(value: String): Self = StObject.set(x, "bootstrapBrokersTls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafkaVersion(value: String): Self = StObject.set(x, "kafkaVersion", value.asInstanceOf[js.Any])
+      inline def setKafkaVersion(value: String): Self = StObject.set(x, "kafkaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfBrokerNodes(value: Double): Self = StObject.set(x, "numberOfBrokerNodes", value.asInstanceOf[js.Any])
+      inline def setNumberOfBrokerNodes(value: Double): Self = StObject.set(x, "numberOfBrokerNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZookeeperConnectString(value: String): Self = StObject.set(x, "zookeeperConnectString", value.asInstanceOf[js.Any])
+      inline def setZookeeperConnectString(value: String): Self = StObject.set(x, "zookeeperConnectString", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,19 +17,15 @@ trait SchemaLocationMetadata extends StObject {
 }
 object SchemaLocationMetadata {
   
-  @scala.inline
-  def apply(): SchemaLocationMetadata = {
+  inline def apply(): SchemaLocationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaLocationMetadataMutableBuilder[Self <: SchemaLocationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocationMetadata](x: Self) {
     
-    @scala.inline
-    def setHsmAvailable(value: Boolean): Self = StObject.set(x, "hsmAvailable", value.asInstanceOf[js.Any])
+    inline def setHsmAvailable(value: Boolean): Self = StObject.set(x, "hsmAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmAvailableUndefined: Self = StObject.set(x, "hsmAvailable", js.undefined)
+    inline def setHsmAvailableUndefined: Self = StObject.set(x, "hsmAvailable", js.undefined)
   }
 }

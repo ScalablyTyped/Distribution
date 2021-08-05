@@ -30,31 +30,23 @@ trait SchemaFloodlightActivitiesGenerateTagResponse extends StObject {
 }
 object SchemaFloodlightActivitiesGenerateTagResponse {
   
-  @scala.inline
-  def apply(): SchemaFloodlightActivitiesGenerateTagResponse = {
+  inline def apply(): SchemaFloodlightActivitiesGenerateTagResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFloodlightActivitiesGenerateTagResponse]
   }
   
-  @scala.inline
-  implicit class SchemaFloodlightActivitiesGenerateTagResponseMutableBuilder[Self <: SchemaFloodlightActivitiesGenerateTagResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFloodlightActivitiesGenerateTagResponse](x: Self) {
     
-    @scala.inline
-    def setFloodlightActivityTag(value: String): Self = StObject.set(x, "floodlightActivityTag", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityTag(value: String): Self = StObject.set(x, "floodlightActivityTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityTagUndefined: Self = StObject.set(x, "floodlightActivityTag", js.undefined)
+    inline def setFloodlightActivityTagUndefined: Self = StObject.set(x, "floodlightActivityTag", js.undefined)
     
-    @scala.inline
-    def setGlobalSiteTagGlobalSnippet(value: String): Self = StObject.set(x, "globalSiteTagGlobalSnippet", value.asInstanceOf[js.Any])
+    inline def setGlobalSiteTagGlobalSnippet(value: String): Self = StObject.set(x, "globalSiteTagGlobalSnippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalSiteTagGlobalSnippetUndefined: Self = StObject.set(x, "globalSiteTagGlobalSnippet", js.undefined)
+    inline def setGlobalSiteTagGlobalSnippetUndefined: Self = StObject.set(x, "globalSiteTagGlobalSnippet", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

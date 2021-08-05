@@ -13,16 +13,13 @@ trait HlsId3SegmentTaggingScheduleActionSettings extends StObject {
 }
 object HlsId3SegmentTaggingScheduleActionSettings {
   
-  @scala.inline
-  def apply(Tag: string): HlsId3SegmentTaggingScheduleActionSettings = {
+  inline def apply(Tag: string): HlsId3SegmentTaggingScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsId3SegmentTaggingScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class HlsId3SegmentTaggingScheduleActionSettingsMutableBuilder[Self <: HlsId3SegmentTaggingScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsId3SegmentTaggingScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setTag(value: string): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: string): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
   }
 }

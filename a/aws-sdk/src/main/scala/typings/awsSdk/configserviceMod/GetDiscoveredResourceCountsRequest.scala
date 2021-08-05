@@ -23,34 +23,25 @@ trait GetDiscoveredResourceCountsRequest extends StObject {
 }
 object GetDiscoveredResourceCountsRequest {
   
-  @scala.inline
-  def apply(): GetDiscoveredResourceCountsRequest = {
+  inline def apply(): GetDiscoveredResourceCountsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDiscoveredResourceCountsRequest]
   }
   
-  @scala.inline
-  implicit class GetDiscoveredResourceCountsRequestMutableBuilder[Self <: GetDiscoveredResourceCountsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiscoveredResourceCountsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

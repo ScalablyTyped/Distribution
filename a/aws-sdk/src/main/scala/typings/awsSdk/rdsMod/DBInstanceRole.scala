@@ -23,31 +23,23 @@ trait DBInstanceRole extends StObject {
 }
 object DBInstanceRole {
   
-  @scala.inline
-  def apply(): DBInstanceRole = {
+  inline def apply(): DBInstanceRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBInstanceRole]
   }
   
-  @scala.inline
-  implicit class DBInstanceRoleMutableBuilder[Self <: DBInstanceRole] (val x: Self) extends AnyVal {
+  extension [Self <: DBInstanceRole](x: Self) {
     
-    @scala.inline
-    def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
+    inline def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNameUndefined: Self = StObject.set(x, "FeatureName", js.undefined)
+    inline def setFeatureNameUndefined: Self = StObject.set(x, "FeatureName", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait VideoAbuseReportSecondaryReason extends StObject {
 }
 object VideoAbuseReportSecondaryReason {
   
-  @scala.inline
-  def apply(): VideoAbuseReportSecondaryReason = {
+  inline def apply(): VideoAbuseReportSecondaryReason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoAbuseReportSecondaryReason]
   }
   
-  @scala.inline
-  implicit class VideoAbuseReportSecondaryReasonMutableBuilder[Self <: VideoAbuseReportSecondaryReason] (val x: Self) extends AnyVal {
+  extension [Self <: VideoAbuseReportSecondaryReason](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object blankNodeMod {
   
-  @scala.inline
-  def apply(blankNode: BlankNode): String = ^.asInstanceOf[js.Dynamic].apply(blankNode.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(blankNode: BlankNode): String = ^.asInstanceOf[js.Dynamic].apply(blankNode.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@rdfjs/to-ntriples/lib/blankNode", JSImport.Namespace)
   @js.native

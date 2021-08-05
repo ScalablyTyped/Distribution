@@ -21,8 +21,7 @@ trait Sort
 }
 object Sort {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -37,19 +36,14 @@ object Sort {
     __obj.asInstanceOf[Sort]
   }
   
-  @scala.inline
-  implicit class SortMutableBuilder[Self <: Sort] (val x: Self) extends AnyVal {
+  extension [Self <: Sort](x: Self) {
     
-    @scala.inline
-    def setGet_direction(value: () => SortDirection): Self = StObject.set(x, "get_direction", js.Any.fromFunction0(value))
+    inline def setGet_direction(value: () => SortDirection): Self = StObject.set(x, "get_direction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_property(value: () => String): Self = StObject.set(x, "get_property", js.Any.fromFunction0(value))
+    inline def setGet_property(value: () => String): Self = StObject.set(x, "get_property", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_direction(value: SortDirection => Unit): Self = StObject.set(x, "set_direction", js.Any.fromFunction1(value))
+    inline def setSet_direction(value: SortDirection => Unit): Self = StObject.set(x, "set_direction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_property(value: String => Unit): Self = StObject.set(x, "set_property", js.Any.fromFunction1(value))
+    inline def setSet_property(value: String => Unit): Self = StObject.set(x, "set_property", js.Any.fromFunction1(value))
   }
 }

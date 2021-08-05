@@ -16,8 +16,7 @@ trait AdHocSubProcess
 }
 object AdHocSubProcess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
@@ -52,16 +51,12 @@ object AdHocSubProcess {
     __obj.asInstanceOf[AdHocSubProcess]
   }
   
-  @scala.inline
-  implicit class AdHocSubProcessMutableBuilder[Self <: AdHocSubProcess] (val x: Self) extends AnyVal {
+  extension [Self <: AdHocSubProcess](x: Self) {
     
-    @scala.inline
-    def setCancelRemainingInstances(value: Boolean): Self = StObject.set(x, "cancelRemainingInstances", value.asInstanceOf[js.Any])
+    inline def setCancelRemainingInstances(value: Boolean): Self = StObject.set(x, "cancelRemainingInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionCondition(value: Expression): Self = StObject.set(x, "completionCondition", value.asInstanceOf[js.Any])
+    inline def setCompletionCondition(value: Expression): Self = StObject.set(x, "completionCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdering(value: AdHocOrdering): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
+    inline def setOrdering(value: AdHocOrdering): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
   }
 }

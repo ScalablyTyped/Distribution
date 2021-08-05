@@ -17,8 +17,7 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsUnsuspendInstallationEndpoint,
     request: AppsUnsuspendInstallationRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsUnsuspendInstallationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsUnsuspendInstallationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsUnsuspendInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsUnsuspendInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

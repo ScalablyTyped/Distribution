@@ -14,25 +14,19 @@ trait BLimitToList extends StObject {
 }
 object BLimitToList {
   
-  @scala.inline
-  def apply(bLimitToList: Boolean, id: String, items: js.Array[js.Any]): BLimitToList = {
+  inline def apply(bLimitToList: Boolean, id: String, items: js.Array[js.Any]): BLimitToList = {
     val __obj = js.Dynamic.literal(bLimitToList = bLimitToList.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[BLimitToList]
   }
   
-  @scala.inline
-  implicit class BLimitToListMutableBuilder[Self <: BLimitToList] (val x: Self) extends AnyVal {
+  extension [Self <: BLimitToList](x: Self) {
     
-    @scala.inline
-    def setBLimitToList(value: Boolean): Self = StObject.set(x, "bLimitToList", value.asInstanceOf[js.Any])
+    inline def setBLimitToList(value: Boolean): Self = StObject.set(x, "bLimitToList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait IPayInExecutionType extends StObject {
 }
 object IPayInExecutionType {
   
-  @scala.inline
-  def apply(): IPayInExecutionType = {
+  inline def apply(): IPayInExecutionType = {
     val __obj = js.Dynamic.literal(Direct = "DIRECT", Web = "WEB")
     __obj.asInstanceOf[IPayInExecutionType]
   }
   
-  @scala.inline
-  implicit class IPayInExecutionTypeMutableBuilder[Self <: IPayInExecutionType] (val x: Self) extends AnyVal {
+  extension [Self <: IPayInExecutionType](x: Self) {
     
-    @scala.inline
-    def setDirect(value: DIRECT): Self = StObject.set(x, "Direct", value.asInstanceOf[js.Any])
+    inline def setDirect(value: DIRECT): Self = StObject.set(x, "Direct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeb(value: WEB): Self = StObject.set(x, "Web", value.asInstanceOf[js.Any])
+    inline def setWeb(value: WEB): Self = StObject.set(x, "Web", value.asInstanceOf[js.Any])
   }
 }

@@ -15,31 +15,23 @@ trait PartialPickImplkeyofImplPercent extends StObject {
 }
 object PartialPickImplkeyofImplPercent {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplPercent = {
+  inline def apply(): PartialPickImplkeyofImplPercent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplPercent]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplPercentMutableBuilder[Self <: PartialPickImplkeyofImplPercent] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplPercent](x: Self) {
     
-    @scala.inline
-    def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

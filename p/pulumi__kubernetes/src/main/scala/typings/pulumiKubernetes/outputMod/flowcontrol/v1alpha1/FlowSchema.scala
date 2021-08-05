@@ -38,28 +38,21 @@ trait FlowSchema extends StObject {
 }
 object FlowSchema {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: FlowSchemaSpec, status: FlowSchemaStatus): FlowSchema = {
+  inline def apply(metadata: ObjectMeta, spec: FlowSchemaSpec, status: FlowSchemaStatus): FlowSchema = {
     val __obj = js.Dynamic.literal(apiVersion = "flowcontrol.apiserver.k8s.io/v1alpha1", kind = "FlowSchema", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowSchema]
   }
   
-  @scala.inline
-  implicit class FlowSchemaMutableBuilder[Self <: FlowSchema] (val x: Self) extends AnyVal {
+  extension [Self <: FlowSchema](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.FlowSchema): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.FlowSchema): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: FlowSchemaSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: FlowSchemaSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: FlowSchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FlowSchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

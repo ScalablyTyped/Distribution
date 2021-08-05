@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def expect(): Root = js.Dynamic.global.applyDynamic("expect")().asInstanceOf[Root]
-  @scala.inline
-  def expect(target: js.Any): Root = js.Dynamic.global.applyDynamic("expect")(target.asInstanceOf[js.Any]).asInstanceOf[Root]
+  inline def expect(): Root = js.Dynamic.global.applyDynamic("expect")().asInstanceOf[Root]
+  inline def expect(target: js.Any): Root = js.Dynamic.global.applyDynamic("expect")(target.asInstanceOf[js.Any]).asInstanceOf[Root]
 }

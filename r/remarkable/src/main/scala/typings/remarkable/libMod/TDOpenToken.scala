@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TDOpenToken {
   
-  @scala.inline
-  def apply(level: Double): TDOpenToken = {
+  inline def apply(level: Double): TDOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("td_open")
     __obj.asInstanceOf[TDOpenToken]
   }
   
-  @scala.inline
-  implicit class TDOpenTokenMutableBuilder[Self <: TDOpenToken] (val x: Self) extends AnyVal {
+  extension [Self <: TDOpenToken](x: Self) {
     
-    @scala.inline
-    def setType(value: td_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: td_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

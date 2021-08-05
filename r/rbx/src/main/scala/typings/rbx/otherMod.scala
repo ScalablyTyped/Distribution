@@ -14,10 +14,8 @@ object otherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  @scala.inline
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/other", "makeValidatingTransform")
   @js.native
@@ -43,50 +41,36 @@ object otherMod {
   }
   object OtherHelpersProps {
     
-    @scala.inline
-    def apply(): OtherHelpersProps = {
+    inline def apply(): OtherHelpersProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OtherHelpersProps]
     }
     
-    @scala.inline
-    implicit class OtherHelpersPropsMutableBuilder[Self <: OtherHelpersProps] (val x: Self) extends AnyVal {
+    extension [Self <: OtherHelpersProps](x: Self) {
       
-      @scala.inline
-      def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
+      inline def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
+      inline def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
       
-      @scala.inline
-      def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
+      inline def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
+      inline def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
       
-      @scala.inline
-      def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
+      inline def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
+      inline def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
       
-      @scala.inline
-      def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
+      inline def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
+      inline def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     }
   }
 }

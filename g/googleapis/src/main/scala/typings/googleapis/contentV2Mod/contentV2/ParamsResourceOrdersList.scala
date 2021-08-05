@@ -76,70 +76,49 @@ trait ParamsResourceOrdersList
 }
 object ParamsResourceOrdersList {
   
-  @scala.inline
-  def apply(): ParamsResourceOrdersList = {
+  inline def apply(): ParamsResourceOrdersList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrdersList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrdersListMutableBuilder[Self <: ParamsResourceOrdersList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrdersList](x: Self) {
     
-    @scala.inline
-    def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
+    inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcknowledgedUndefined: Self = StObject.set(x, "acknowledged", js.undefined)
+    inline def setAcknowledgedUndefined: Self = StObject.set(x, "acknowledged", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPlacedDateEnd(value: String): Self = StObject.set(x, "placedDateEnd", value.asInstanceOf[js.Any])
+    inline def setPlacedDateEnd(value: String): Self = StObject.set(x, "placedDateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacedDateEndUndefined: Self = StObject.set(x, "placedDateEnd", js.undefined)
+    inline def setPlacedDateEndUndefined: Self = StObject.set(x, "placedDateEnd", js.undefined)
     
-    @scala.inline
-    def setPlacedDateStart(value: String): Self = StObject.set(x, "placedDateStart", value.asInstanceOf[js.Any])
+    inline def setPlacedDateStart(value: String): Self = StObject.set(x, "placedDateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacedDateStartUndefined: Self = StObject.set(x, "placedDateStart", js.undefined)
+    inline def setPlacedDateStartUndefined: Self = StObject.set(x, "placedDateStart", js.undefined)
     
-    @scala.inline
-    def setStatuses(value: js.Array[String]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[String]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+    inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    @scala.inline
-    def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value :_*))
   }
 }

@@ -33,34 +33,25 @@ trait OptionStatus extends StObject {
 }
 object OptionStatus {
   
-  @scala.inline
-  def apply(CreationDate: UpdateTimestamp, State: OptionState, UpdateDate: UpdateTimestamp): OptionStatus = {
+  inline def apply(CreationDate: UpdateTimestamp, State: OptionState, UpdateDate: UpdateTimestamp): OptionStatus = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], UpdateDate = UpdateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionStatus]
   }
   
-  @scala.inline
-  implicit class OptionStatusMutableBuilder[Self <: OptionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: OptionStatus](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: UpdateTimestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: UpdateTimestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingDeletion(value: Boolean): Self = StObject.set(x, "PendingDeletion", value.asInstanceOf[js.Any])
+    inline def setPendingDeletion(value: Boolean): Self = StObject.set(x, "PendingDeletion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingDeletionUndefined: Self = StObject.set(x, "PendingDeletion", js.undefined)
+    inline def setPendingDeletionUndefined: Self = StObject.set(x, "PendingDeletion", js.undefined)
     
-    @scala.inline
-    def setState(value: OptionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: OptionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDate(value: UpdateTimestamp): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: UpdateTimestamp): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateVersion(value: UIntValue): Self = StObject.set(x, "UpdateVersion", value.asInstanceOf[js.Any])
+    inline def setUpdateVersion(value: UIntValue): Self = StObject.set(x, "UpdateVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateVersionUndefined: Self = StObject.set(x, "UpdateVersion", js.undefined)
+    inline def setUpdateVersionUndefined: Self = StObject.set(x, "UpdateVersion", js.undefined)
   }
 }

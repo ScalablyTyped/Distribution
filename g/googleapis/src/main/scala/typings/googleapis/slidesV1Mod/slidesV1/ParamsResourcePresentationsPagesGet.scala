@@ -29,31 +29,23 @@ trait ParamsResourcePresentationsPagesGet
 }
 object ParamsResourcePresentationsPagesGet {
   
-  @scala.inline
-  def apply(): ParamsResourcePresentationsPagesGet = {
+  inline def apply(): ParamsResourcePresentationsPagesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePresentationsPagesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePresentationsPagesGetMutableBuilder[Self <: ParamsResourcePresentationsPagesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePresentationsPagesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
+    inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
+    inline def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
     
-    @scala.inline
-    def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
+    inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
+    inline def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
   }
 }

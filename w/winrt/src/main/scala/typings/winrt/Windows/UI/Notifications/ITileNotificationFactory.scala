@@ -11,16 +11,13 @@ trait ITileNotificationFactory extends StObject {
 }
 object ITileNotificationFactory {
   
-  @scala.inline
-  def apply(createTileNotification: XmlDocument => TileNotification): ITileNotificationFactory = {
+  inline def apply(createTileNotification: XmlDocument => TileNotification): ITileNotificationFactory = {
     val __obj = js.Dynamic.literal(createTileNotification = js.Any.fromFunction1(createTileNotification))
     __obj.asInstanceOf[ITileNotificationFactory]
   }
   
-  @scala.inline
-  implicit class ITileNotificationFactoryMutableBuilder[Self <: ITileNotificationFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ITileNotificationFactory](x: Self) {
     
-    @scala.inline
-    def setCreateTileNotification(value: XmlDocument => TileNotification): Self = StObject.set(x, "createTileNotification", js.Any.fromFunction1(value))
+    inline def setCreateTileNotification(value: XmlDocument => TileNotification): Self = StObject.set(x, "createTileNotification", js.Any.fromFunction1(value))
   }
 }

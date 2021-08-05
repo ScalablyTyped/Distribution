@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Balloon")
 @js.native
-class Balloon protected ()
+/* private */ class Balloon ()
   extends StObject
      with typings.activexOffice.Office.Balloon {
   
@@ -63,7 +63,7 @@ class Balloon protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.Balloon_typekey")
   var OfficeDotBalloon_typekey: typings.activexOffice.Office.Balloon = js.native
   

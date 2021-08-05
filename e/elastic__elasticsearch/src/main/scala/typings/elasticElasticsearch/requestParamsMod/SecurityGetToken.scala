@@ -12,16 +12,13 @@ trait SecurityGetToken[T]
 }
 object SecurityGetToken {
   
-  @scala.inline
-  def apply[T](body: T): SecurityGetToken[T] = {
+  inline def apply[T](body: T): SecurityGetToken[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGetToken[T]]
   }
   
-  @scala.inline
-  implicit class SecurityGetTokenMutableBuilder[Self <: SecurityGetToken[?], T] (val x: Self & SecurityGetToken[T]) extends AnyVal {
+  extension [Self <: SecurityGetToken[?], T](x: Self & SecurityGetToken[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

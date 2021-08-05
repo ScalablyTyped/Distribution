@@ -80,8 +80,7 @@ trait IAxis extends StObject {
 }
 object IAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automatic: Boolean,
     axisSize: Double,
     bounds: IRectangle,
@@ -120,106 +119,72 @@ object IAxis {
     __obj.asInstanceOf[IAxis]
   }
   
-  @scala.inline
-  implicit class IAxisMutableBuilder[Self <: IAxis] (val x: Self) extends AnyVal {
+  extension [Self <: IAxis](x: Self) {
     
-    @scala.inline
-    def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisSize(value: Double): Self = StObject.set(x, "axisSize", value.asInstanceOf[js.Any])
+    inline def setAxisSize(value: Double): Self = StObject.set(x, "axisSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalc(value: Double => Double): Self = StObject.set(x, "calc", js.Any.fromFunction1(value))
+    inline def setCalc(value: Double => Double): Self = StObject.set(x, "calc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
+    inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPos(value: Double => Double): Self = StObject.set(x, "fromPos", js.Any.fromFunction1(value))
+    inline def setFromPos(value: Double => Double): Self = StObject.set(x, "fromPos", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromSize(value: Double => Double): Self = StObject.set(x, "fromSize", js.Any.fromFunction1(value))
+    inline def setFromSize(value: Double => Double): Self = StObject.set(x, "fromSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGrid(value: IGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: IGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAnySeries(value: () => Boolean): Self = StObject.set(x, "hasAnySeries", js.Any.fromFunction0(value))
+    inline def setHasAnySeries(value: () => Boolean): Self = StObject.set(x, "hasAnySeries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrem(value: Double): Self = StObject.set(x, "increm", value.asInstanceOf[js.Any])
+    inline def setIncrem(value: Double): Self = StObject.set(x, "increm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerTicks(value: ITicks): Self = StObject.set(x, "innerTicks", value.asInstanceOf[js.Any])
+    inline def setInnerTicks(value: ITicks): Self = StObject.set(x, "innerTicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+    inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: IAxisLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: IAxisLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorTicks(value: IMinorTicks): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
+    inline def setMinorTicks(value: IMinorTicks): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherSize(value: Boolean): Self = StObject.set(x, "otherSize", value.asInstanceOf[js.Any])
+    inline def setOtherSize(value: Boolean): Self = StObject.set(x, "otherSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll(value: Double => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
+    inline def setScroll(value: Double => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinMax(value: (Double, Double) => Unit): Self = StObject.set(x, "setMinMax", js.Any.fromFunction2(value))
+    inline def setSetMinMax(value: (Double, Double) => Unit): Self = StObject.set(x, "setMinMax", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
+    inline def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicks(value: ITicks): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: ITicks): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: IAxisTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: IAxisTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

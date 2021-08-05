@@ -10,22 +10,17 @@ trait ResultDisplayLine extends StObject {
 }
 object ResultDisplayLine {
   
-  @scala.inline
-  def apply(): ResultDisplayLine = {
+  inline def apply(): ResultDisplayLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultDisplayLine]
   }
   
-  @scala.inline
-  implicit class ResultDisplayLineMutableBuilder[Self <: ResultDisplayLine] (val x: Self) extends AnyVal {
+  extension [Self <: ResultDisplayLine](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[ResultDisplayField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[ResultDisplayField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: ResultDisplayField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ResultDisplayField*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

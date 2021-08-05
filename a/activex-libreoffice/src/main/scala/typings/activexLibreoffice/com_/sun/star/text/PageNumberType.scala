@@ -17,14 +17,11 @@ trait PageNumberType extends StObject
 object PageNumberType {
   
   /** The number of the current page is displayed. */
-  @scala.inline
-  def CURRENT: `1` = 1.asInstanceOf[`1`]
+  inline def CURRENT: `1` = 1.asInstanceOf[`1`]
   
   /** The number of the next page is displayed if there is any, otherwise the field is empty. */
-  @scala.inline
-  def NEXT: `2` = 2.asInstanceOf[`2`]
+  inline def NEXT: `2` = 2.asInstanceOf[`2`]
   
   /** The number of the previous page is displayed if there is any, otherwise the field is empty. */
-  @scala.inline
-  def PREV: `0` = 0.asInstanceOf[`0`]
+  inline def PREV: `0` = 0.asInstanceOf[`0`]
 }

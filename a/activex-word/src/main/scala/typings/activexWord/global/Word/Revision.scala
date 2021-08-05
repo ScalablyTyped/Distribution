@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Revision")
 @js.native
-class Revision protected ()
+/* private */ class Revision ()
   extends StObject
      with typings.activexWord.Word.Revision {
   
@@ -54,7 +54,7 @@ class Revision protected ()
   /* CompleteClass */
   override val Type: WdRevisionType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Revision_typekey")
   var WordDotRevision_typekey: typings.activexWord.Word.Revision = js.native
 }

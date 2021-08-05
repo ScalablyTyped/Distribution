@@ -18,13 +18,12 @@ trait EmailSignature extends StObject {
   
   var ReplyMessageSignature: String
   
-  @JSName("Word.EmailSignature_typekey")
+  /* private */ @JSName("Word.EmailSignature_typekey")
   var WordDotEmailSignature_typekey: EmailSignature
 }
 object EmailSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     EmailSignatureEntries: EmailSignatureEntries,
@@ -38,28 +37,20 @@ object EmailSignature {
     __obj.asInstanceOf[EmailSignature]
   }
   
-  @scala.inline
-  implicit class EmailSignatureMutableBuilder[Self <: EmailSignature] (val x: Self) extends AnyVal {
+  extension [Self <: EmailSignature](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSignatureEntries(value: EmailSignatureEntries): Self = StObject.set(x, "EmailSignatureEntries", value.asInstanceOf[js.Any])
+    inline def setEmailSignatureEntries(value: EmailSignatureEntries): Self = StObject.set(x, "EmailSignatureEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewMessageSignature(value: String): Self = StObject.set(x, "NewMessageSignature", value.asInstanceOf[js.Any])
+    inline def setNewMessageSignature(value: String): Self = StObject.set(x, "NewMessageSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyMessageSignature(value: String): Self = StObject.set(x, "ReplyMessageSignature", value.asInstanceOf[js.Any])
+    inline def setReplyMessageSignature(value: String): Self = StObject.set(x, "ReplyMessageSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotEmailSignature_typekey(value: EmailSignature): Self = StObject.set(x, "Word.EmailSignature_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotEmailSignature_typekey(value: EmailSignature): Self = StObject.set(x, "Word.EmailSignature_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -31,23 +31,18 @@ object tabCapture {
   }
   object CaptureInfo {
     
-    @scala.inline
-    def apply(fullscreen: Boolean, status: String, tabId: Double): CaptureInfo = {
+    inline def apply(fullscreen: Boolean, status: String, tabId: Double): CaptureInfo = {
       val __obj = js.Dynamic.literal(fullscreen = fullscreen.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CaptureInfo]
     }
     
-    @scala.inline
-    implicit class CaptureInfoMutableBuilder[Self <: CaptureInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureInfo](x: Self) {
       
-      @scala.inline
-      def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,38 +62,28 @@ object tabCapture {
   }
   object CaptureOptions {
     
-    @scala.inline
-    def apply(): CaptureOptions = {
+    inline def apply(): CaptureOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CaptureOptions]
     }
     
-    @scala.inline
-    implicit class CaptureOptionsMutableBuilder[Self <: CaptureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureOptions](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioConstraints(value: MediaStreamConstraint): Self = StObject.set(x, "audioConstraints", value.asInstanceOf[js.Any])
+      inline def setAudioConstraints(value: MediaStreamConstraint): Self = StObject.set(x, "audioConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioConstraintsUndefined: Self = StObject.set(x, "audioConstraints", js.undefined)
+      inline def setAudioConstraintsUndefined: Self = StObject.set(x, "audioConstraints", js.undefined)
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoConstraints(value: MediaStreamConstraint): Self = StObject.set(x, "videoConstraints", value.asInstanceOf[js.Any])
+      inline def setVideoConstraints(value: MediaStreamConstraint): Self = StObject.set(x, "videoConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoConstraintsUndefined: Self = StObject.set(x, "videoConstraints", js.undefined)
+      inline def setVideoConstraintsUndefined: Self = StObject.set(x, "videoConstraints", js.undefined)
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
   
@@ -112,23 +97,18 @@ object tabCapture {
   }
   object MediaStreamConstraint {
     
-    @scala.inline
-    def apply(mandatory: js.Object): MediaStreamConstraint = {
+    inline def apply(mandatory: js.Object): MediaStreamConstraint = {
       val __obj = js.Dynamic.literal(mandatory = mandatory.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaStreamConstraint]
     }
     
-    @scala.inline
-    implicit class MediaStreamConstraintMutableBuilder[Self <: MediaStreamConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: MediaStreamConstraint](x: Self) {
       
-      @scala.inline
-      def setMandatory(value: js.Object): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+      inline def setMandatory(value: js.Object): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: js.Object): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Object): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     }
   }
 }

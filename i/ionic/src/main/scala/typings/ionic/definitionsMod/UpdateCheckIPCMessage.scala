@@ -13,17 +13,14 @@ trait UpdateCheckIPCMessage
 }
 object UpdateCheckIPCMessage {
   
-  @scala.inline
-  def apply(): UpdateCheckIPCMessage = {
+  inline def apply(): UpdateCheckIPCMessage = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("update-check")
     __obj.asInstanceOf[UpdateCheckIPCMessage]
   }
   
-  @scala.inline
-  implicit class UpdateCheckIPCMessageMutableBuilder[Self <: UpdateCheckIPCMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCheckIPCMessage](x: Self) {
     
-    @scala.inline
-    def setType(value: `update-check`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `update-check`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -24,31 +24,25 @@ trait AlignItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
 }
 object AlignItemsProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): AlignItemsProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): AlignItemsProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlignItemsProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class AlignItemsPropsMutableBuilder[Self <: AlignItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & AlignItemsProps[ThemeType]) extends AnyVal {
+  extension [Self <: AlignItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & AlignItemsProps[ThemeType]) {
     
-    @scala.inline
-    def setAlignItems(
+    inline def setAlignItems(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignItemsNull: Self = StObject.set(x, "alignItems", null)
+    inline def setAlignItemsNull: Self = StObject.set(x, "alignItems", null)
     
-    @scala.inline
-    def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+    inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    @scala.inline
-    def setAlignItemsVarargs(
+    inline def setAlignItemsVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any) | Null)*
     ): Self = StObject.set(x, "alignItems", js.Array(value :_*))
   }

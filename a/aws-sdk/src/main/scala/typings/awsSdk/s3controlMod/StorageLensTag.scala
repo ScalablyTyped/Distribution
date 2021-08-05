@@ -18,19 +18,15 @@ trait StorageLensTag extends StObject {
 }
 object StorageLensTag {
   
-  @scala.inline
-  def apply(Key: TagKeyString, Value: TagValueString): StorageLensTag = {
+  inline def apply(Key: TagKeyString, Value: TagValueString): StorageLensTag = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageLensTag]
   }
   
-  @scala.inline
-  implicit class StorageLensTagMutableBuilder[Self <: StorageLensTag] (val x: Self) extends AnyVal {
+  extension [Self <: StorageLensTag](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TagValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TagValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -14,20 +14,16 @@ trait ReplaceAction
 }
 object ReplaceAction {
   
-  @scala.inline
-  def apply(payload: Location, `type`: /* "ROUTER_REPLACE" */ String): ReplaceAction = {
+  inline def apply(payload: Location, `type`: /* "ROUTER_REPLACE" */ String): ReplaceAction = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAction]
   }
   
-  @scala.inline
-  implicit class ReplaceActionMutableBuilder[Self <: ReplaceAction] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceAction](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Location): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Location): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: /* "ROUTER_REPLACE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: /* "ROUTER_REPLACE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

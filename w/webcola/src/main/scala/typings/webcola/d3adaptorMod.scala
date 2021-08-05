@@ -14,12 +14,9 @@ object d3adaptorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def d3adaptor(): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")().asInstanceOf[Layout & ID3StyleLayoutAdaptor]
-  @scala.inline
-  def d3adaptor(d3Context: D3v3Context): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")(d3Context.asInstanceOf[js.Any]).asInstanceOf[Layout & ID3StyleLayoutAdaptor]
-  @scala.inline
-  def d3adaptor(d3Context: D3Context): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")(d3Context.asInstanceOf[js.Any]).asInstanceOf[Layout & ID3StyleLayoutAdaptor]
+  inline def d3adaptor(): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")().asInstanceOf[Layout & ID3StyleLayoutAdaptor]
+  inline def d3adaptor(d3Context: D3v3Context): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")(d3Context.asInstanceOf[js.Any]).asInstanceOf[Layout & ID3StyleLayoutAdaptor]
+  inline def d3adaptor(d3Context: D3Context): Layout & ID3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")(d3Context.asInstanceOf[js.Any]).asInstanceOf[Layout & ID3StyleLayoutAdaptor]
   
   trait D3v3Context extends StObject {
     
@@ -27,17 +24,14 @@ object d3adaptorMod {
   }
   object D3v3Context {
     
-    @scala.inline
-    def apply(version: String): D3v3Context = {
+    inline def apply(version: String): D3v3Context = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[D3v3Context]
     }
     
-    @scala.inline
-    implicit class D3v3ContextMutableBuilder[Self <: D3v3Context] (val x: Self) extends AnyVal {
+    extension [Self <: D3v3Context](x: Self) {
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

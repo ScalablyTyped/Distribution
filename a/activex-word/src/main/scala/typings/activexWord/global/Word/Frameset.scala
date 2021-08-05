@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Frameset")
 @js.native
-class Frameset protected ()
+/* private */ class Frameset ()
   extends StObject
      with typings.activexWord.Word.Frameset {
   
@@ -78,7 +78,7 @@ class Frameset protected ()
   /* CompleteClass */
   var WidthType: WdFramesetSizeType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Frameset_typekey")
   var WordDotFrameset_typekey: typings.activexWord.Word.Frameset = js.native
 }

@@ -22,25 +22,19 @@ trait EventReminder extends StObject {
 }
 object EventReminder {
   
-  @scala.inline
-  def apply(): EventReminder = {
+  inline def apply(): EventReminder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventReminder]
   }
   
-  @scala.inline
-  implicit class EventReminderMutableBuilder[Self <: EventReminder] (val x: Self) extends AnyVal {
+  extension [Self <: EventReminder](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+    inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
   }
 }

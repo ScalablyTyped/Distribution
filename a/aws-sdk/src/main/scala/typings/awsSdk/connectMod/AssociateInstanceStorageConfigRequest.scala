@@ -23,8 +23,7 @@ trait AssociateInstanceStorageConfigRequest extends StObject {
 }
 object AssociateInstanceStorageConfigRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InstanceId: InstanceId,
     ResourceType: InstanceStorageResourceType,
     StorageConfig: InstanceStorageConfig
@@ -33,16 +32,12 @@ object AssociateInstanceStorageConfigRequest {
     __obj.asInstanceOf[AssociateInstanceStorageConfigRequest]
   }
   
-  @scala.inline
-  implicit class AssociateInstanceStorageConfigRequestMutableBuilder[Self <: AssociateInstanceStorageConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateInstanceStorageConfigRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: InstanceStorageResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: InstanceStorageResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageConfig(value: InstanceStorageConfig): Self = StObject.set(x, "StorageConfig", value.asInstanceOf[js.Any])
+    inline def setStorageConfig(value: InstanceStorageConfig): Self = StObject.set(x, "StorageConfig", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait CreateVideoResponse extends StObject {
 }
 object CreateVideoResponse {
   
-  @scala.inline
-  def apply(): CreateVideoResponse = {
+  inline def apply(): CreateVideoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVideoResponse]
   }
   
-  @scala.inline
-  implicit class CreateVideoResponseMutableBuilder[Self <: CreateVideoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVideoResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

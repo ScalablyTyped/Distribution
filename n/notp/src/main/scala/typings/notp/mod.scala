@@ -20,18 +20,12 @@ object mod {
       * for every user as this is the seed that is used to calculate the HMAC.
       * @param opt HOTP generate options.
       */
-    @scala.inline
-    def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def gen(key: String, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Buffer, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Uint8Array, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: String, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: Buffer, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: Uint8Array, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Check a One Time Password based on a counter.
@@ -40,18 +34,12 @@ object mod {
       * every user as it is the seed used to calculate the HMAC.
       * @param opt HOTP verify options.
       */
-    @scala.inline
-    def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: String, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Buffer, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Uint8Array, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: String, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Buffer, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Uint8Array, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
   }
   
   object totp {
@@ -67,18 +55,12 @@ object mod {
       * @param opt TOTP Generate options.
       *
       */
-    @scala.inline
-    def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def gen(key: String, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Buffer, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def gen(key: Uint8Array, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: String, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: Buffer, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: Uint8Array, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Check a One Time Password based on a timer.
@@ -87,18 +69,12 @@ object mod {
       * @param opt TOTP verify options.
       *
       */
-    @scala.inline
-    def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: String, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Buffer, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    @scala.inline
-    def verify(token: String, key: Uint8Array, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: String, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Buffer, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: Uint8Array, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
   }
   
   trait HOTPGenOpt extends StObject {
@@ -111,20 +87,16 @@ object mod {
   }
   object HOTPGenOpt {
     
-    @scala.inline
-    def apply(): HOTPGenOpt = {
+    inline def apply(): HOTPGenOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HOTPGenOpt]
     }
     
-    @scala.inline
-    implicit class HOTPGenOptMutableBuilder[Self <: HOTPGenOpt] (val x: Self) extends AnyVal {
+    extension [Self <: HOTPGenOpt](x: Self) {
       
-      @scala.inline
-      def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+      inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     }
   }
   
@@ -148,20 +120,16 @@ object mod {
   }
   object HOTPVerifyOpt {
     
-    @scala.inline
-    def apply(): HOTPVerifyOpt = {
+    inline def apply(): HOTPVerifyOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HOTPVerifyOpt]
     }
     
-    @scala.inline
-    implicit class HOTPVerifyOptMutableBuilder[Self <: HOTPVerifyOpt] (val x: Self) extends AnyVal {
+    extension [Self <: HOTPVerifyOpt](x: Self) {
       
-      @scala.inline
-      def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -182,26 +150,20 @@ object mod {
   }
   object TOTPGenOpt {
     
-    @scala.inline
-    def apply(): TOTPGenOpt = {
+    inline def apply(): TOTPGenOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TOTPGenOpt]
     }
     
-    @scala.inline
-    implicit class TOTPGenOptMutableBuilder[Self <: TOTPGenOpt] (val x: Self) extends AnyVal {
+    extension [Self <: TOTPGenOpt](x: Self) {
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def set_t(value: Double): Self = StObject.set(x, "_t", value.asInstanceOf[js.Any])
+      inline def set_t(value: Double): Self = StObject.set(x, "_t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_tUndefined: Self = StObject.set(x, "_t", js.undefined)
+      inline def set_tUndefined: Self = StObject.set(x, "_t", js.undefined)
     }
   }
   
@@ -225,20 +187,16 @@ object mod {
   }
   object TOTPVerifyOpt {
     
-    @scala.inline
-    def apply(): TOTPVerifyOpt = {
+    inline def apply(): TOTPVerifyOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TOTPVerifyOpt]
     }
     
-    @scala.inline
-    implicit class TOTPVerifyOptMutableBuilder[Self <: TOTPVerifyOpt] (val x: Self) extends AnyVal {
+    extension [Self <: TOTPVerifyOpt](x: Self) {
       
-      @scala.inline
-      def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -251,17 +209,14 @@ object mod {
   }
   object VerifyResult {
     
-    @scala.inline
-    def apply(delta: Double): VerifyResult = {
+    inline def apply(delta: Double): VerifyResult = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyResult]
     }
     
-    @scala.inline
-    implicit class VerifyResultMutableBuilder[Self <: VerifyResult] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyResult](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     }
   }
 }

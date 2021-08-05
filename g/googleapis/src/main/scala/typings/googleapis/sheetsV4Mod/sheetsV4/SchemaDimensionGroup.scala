@@ -35,31 +35,23 @@ trait SchemaDimensionGroup extends StObject {
 }
 object SchemaDimensionGroup {
   
-  @scala.inline
-  def apply(): SchemaDimensionGroup = {
+  inline def apply(): SchemaDimensionGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDimensionGroup]
   }
   
-  @scala.inline
-  implicit class SchemaDimensionGroupMutableBuilder[Self <: SchemaDimensionGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDimensionGroup](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

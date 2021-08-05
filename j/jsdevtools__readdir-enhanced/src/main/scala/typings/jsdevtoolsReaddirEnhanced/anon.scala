@@ -104,59 +104,42 @@ object anon {
   }
   object Optionsstatsfalseundefine {
     
-    @scala.inline
-    def apply(stats: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsstatsfalseundefine = {
+    inline def apply(stats: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsstatsfalseundefine = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstatsfalseundefine]
     }
     
-    @scala.inline
-    implicit class OptionsstatsfalseundefineMutableBuilder[Self <: Optionsstatsfalseundefine] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsstatsfalseundefine](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
+      inline def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFs(value: PartialFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: PartialFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+      inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
       
-      @scala.inline
-      def setStats(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
+      inline def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
+      inline def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
     }
   }
   
@@ -214,59 +197,42 @@ object anon {
   }
   object Optionsstatstrue {
     
-    @scala.inline
-    def apply(stats: js.UndefOr[Boolean] & `true`): Optionsstatstrue = {
+    inline def apply(stats: js.UndefOr[Boolean] & `true`): Optionsstatstrue = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstatstrue]
     }
     
-    @scala.inline
-    implicit class OptionsstatstrueMutableBuilder[Self <: Optionsstatstrue] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsstatstrue](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
+      inline def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFs(value: PartialFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: PartialFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+      inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
       
-      @scala.inline
-      def setStats(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
+      inline def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
+      inline def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
     }
   }
   
@@ -285,32 +251,24 @@ object anon {
   }
   object PartialFileSystem {
     
-    @scala.inline
-    def apply(): PartialFileSystem = {
+    inline def apply(): PartialFileSystem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFileSystem]
     }
     
-    @scala.inline
-    implicit class PartialFileSystemMutableBuilder[Self <: PartialFileSystem] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFileSystem](x: Self) {
       
-      @scala.inline
-      def setLstat(value: (/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
+      inline def setLstat(value: (/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
+      inline def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
       
-      @scala.inline
-      def setReaddir(value: (/* path */ String, /* callback */ Callback[js.Array[String]]) => Unit): Self = StObject.set(x, "readdir", js.Any.fromFunction2(value))
+      inline def setReaddir(value: (/* path */ String, /* callback */ Callback[js.Array[String]]) => Unit): Self = StObject.set(x, "readdir", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
+      inline def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
       
-      @scala.inline
-      def setStat(value: (/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "stat", js.Any.fromFunction2(value))
+      inline def setStat(value: (/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "stat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
   }
 }

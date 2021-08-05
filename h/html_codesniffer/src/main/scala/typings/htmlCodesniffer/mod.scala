@@ -41,8 +41,7 @@ object mod {
       *
       * @param hsvColour A HSV structure to convert.
       */
-    @scala.inline
-    def HSVtosRGB(hsvColour: HsvColour): Colour = ^.asInstanceOf[js.Dynamic].applyDynamic("HSVtosRGB")(hsvColour.asInstanceOf[js.Any]).asInstanceOf[Colour]
+    inline def HSVtosRGB(hsvColour: HsvColour): Colour = ^.asInstanceOf[js.Dynamic].applyDynamic("HSVtosRGB")(hsvColour.asInstanceOf[js.Any]).asInstanceOf[Colour]
     
     /**
       * Convert an RGB colour structure to a hex colour.
@@ -54,8 +53,7 @@ object mod {
       *
       * @param colour Structure with "red", "green" and "blue" elements.
       */
-    @scala.inline
-    def RGBtoColourStr(colou: Colour): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBtoColourStr")(colou.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def RGBtoColourStr(colou: Colour): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBtoColourStr")(colou.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Convert a colour string to a structure with red/green/blue/alpha elements.
@@ -65,15 +63,11 @@ object mod {
       *
       * @param colour The colour to convert.
       */
-    @scala.inline
-    def colourStrToRGB(colour: String): Colour = ^.asInstanceOf[js.Dynamic].applyDynamic("colourStrToRGB")(colour.asInstanceOf[js.Any]).asInstanceOf[Colour]
+    inline def colourStrToRGB(colour: String): Colour = ^.asInstanceOf[js.Dynamic].applyDynamic("colourStrToRGB")(colour.asInstanceOf[js.Any]).asInstanceOf[Colour]
     
-    @scala.inline
-    def contains(parent: Document, child: DocumentType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(parent: Document, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(parent: Element, child: DocumentType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(parent: Document, child: DocumentType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(parent: Document, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(parent: Element, child: DocumentType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Returns true if the passed child is contained by the passed parent.
       *
@@ -83,8 +77,7 @@ object mod {
       * @param parent The parent element or document.
       * @param child The child.
       */
-    @scala.inline
-    def contains(parent: Element, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(parent: Element, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Calculate the contrast ratio between two colours.
@@ -98,8 +91,7 @@ object mod {
       * @param colour1 The first colour to compare.
       * @param colour2 The second colour to compare.
       */
-    @scala.inline
-    def contrastRatio(colour1: String, colour2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("contrastRatio")(colour1.asInstanceOf[js.Any], colour2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def contrastRatio(colour1: String, colour2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("contrastRatio")(colour1.asInstanceOf[js.Any], colour2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Iterate parent nodes of an element.
@@ -107,8 +99,7 @@ object mod {
       * @param node Node to search from.
       * @param cb Callback function providing each parent node.
       */
-    @scala.inline
-    def eachParentNode(node: Node, cb: js.Function1[/* parent */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachParentNode")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def eachParentNode(node: Node, cb: js.Function1[/* parent */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachParentNode")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Find a parent node matching a selector.
@@ -116,8 +107,7 @@ object mod {
       * @param node  Node to search from.
       * @param selector The selector to search.
       */
-    @scala.inline
-    def findParentNode(node: Node, selector: String): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findParentNode")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+    inline def findParentNode(node: Node, selector: String): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findParentNode")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
     
     /**
       * Get the accessible name.
@@ -125,8 +115,7 @@ object mod {
       * @param element Element to process.
       * @param top Scoped container element.
       */
-    @scala.inline
-    def getAccessibleName(element: Node, top: Node): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessibleName")(element.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getAccessibleName(element: Node, top: Node): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessibleName")(element.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns all elements that are visible to the accessibility API.
@@ -134,8 +123,7 @@ object mod {
       * @param element The parent element to search.
       * @param selector Optional selector to pass to
       */
-    @scala.inline
-    def getAllElements(element: Element, selector: String): ArrayLike[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllElements")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[ArrayLike[Element]]
+    inline def getAllElements(element: Element, selector: String): ArrayLike[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllElements")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[ArrayLike[Element]]
     
     /**
       * Return expected cell headers from a table.
@@ -157,8 +145,7 @@ object mod {
       *
       * @param table The table to test.
       */
-    @scala.inline
-    def getCellHeaders(table: Element): js.Array[CellHeaderInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellHeaders")(table.asInstanceOf[js.Any]).asInstanceOf[js.Array[CellHeaderInfo]]
+    inline def getCellHeaders(table: Element): js.Array[CellHeaderInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellHeaders")(table.asInstanceOf[js.Any]).asInstanceOf[js.Array[CellHeaderInfo]]
     
     /**
       * Get the document type being tested.
@@ -170,8 +157,7 @@ object mod {
       *
       * @param document The document being tested.
       */
-    @scala.inline
-    def getDocumentType(document: Document): DocumentType = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentType")(document.asInstanceOf[js.Any]).asInstanceOf[DocumentType]
+    inline def getDocumentType(document: Document): DocumentType = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentType")(document.asInstanceOf[js.Any]).asInstanceOf[DocumentType]
     
     /**
       * Gets the text contents of an element.
@@ -180,20 +166,16 @@ object mod {
       * @param [includeAlt=true] Include alt text from images.
       * @returns The text contents.
       */
-    @scala.inline
-    def getElementTextContent(element: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def getElementTextContent(element: Element, includeAlt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementTextContent")(element.asInstanceOf[js.Any], includeAlt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getElementTextContent(element: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getElementTextContent(element: Element, includeAlt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementTextContent")(element.asInstanceOf[js.Any], includeAlt.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def getElementWindow(element: Document): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementWindow")(element.asInstanceOf[js.Any]).asInstanceOf[Window]
+    inline def getElementWindow(element: Document): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementWindow")(element.asInstanceOf[js.Any]).asInstanceOf[Window]
     /**
       * Get the window object relating to the passed element.
       *
       * @param element The element (or document) to pass.
       */
-    @scala.inline
-    def getElementWindow(element: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementWindow")(element.asInstanceOf[js.Any]).asInstanceOf[Window]
+    inline def getElementWindow(element: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementWindow")(element.asInstanceOf[js.Any]).asInstanceOf[Window]
     
     /**
       * Get the next sibling element.
@@ -208,14 +190,10 @@ object mod {
       * @param [tagName=null]  Only match this tag. If null, match any. Not case-sensitive.
       * @param [immediate=false] Only match if the tag in tagName is the immediately following non-whitespace node.
       */
-    @scala.inline
-    def getNextSiblingElement(element: Node): ChildNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any]).asInstanceOf[ChildNode | Null]
-    @scala.inline
-    def getNextSiblingElement(element: Node, tagName: String): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
-    @scala.inline
-    def getNextSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
-    @scala.inline
-    def getNextSiblingElement(element: Node, tagName: Unit, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    inline def getNextSiblingElement(element: Node): ChildNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any]).asInstanceOf[ChildNode | Null]
+    inline def getNextSiblingElement(element: Node, tagName: String): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    inline def getNextSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    inline def getNextSiblingElement(element: Node, tagName: Unit, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
     
     /**
       * Get the previous sibling element.
@@ -230,38 +208,31 @@ object mod {
       * @param [tagName=null] Only match this tag. If null, match any. Not case-sensitive.
       * @param [immediate=false] Only match if the tag in tagName is the immediately preceding non-whitespace node.
       */
-    @scala.inline
-    def getPreviousSiblingElement(element: Node): ChildNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any]).asInstanceOf[ChildNode | Null]
-    @scala.inline
-    def getPreviousSiblingElement(element: Node, tagName: String): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
-    @scala.inline
-    def getPreviousSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
-    @scala.inline
-    def getPreviousSiblingElement(element: Node, tagName: Unit, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    inline def getPreviousSiblingElement(element: Node): ChildNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any]).asInstanceOf[ChildNode | Null]
+    inline def getPreviousSiblingElement(element: Node, tagName: String): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    inline def getPreviousSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    inline def getPreviousSiblingElement(element: Node, tagName: Unit, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
     
     /**
       * Get the text content of a DOM node.
       *
       * @param element Element to process.
       */
-    @scala.inline
-    def getTextContent(element: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getTextContent(element: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Returns true if the element has a valid aria label.
       *
       * @param element The element we are checking.
       */
-    @scala.inline
-    def hasValidAriaLabel(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasValidAriaLabel")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasValidAriaLabel(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasValidAriaLabel")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the element is deliberately hidden from Accessibility APIs.
       *
       * @param element The element to check.
       */
-    @scala.inline
-    def isAccessibilityHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessibilityHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isAccessibilityHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessibilityHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the element is deliberately hidden from Accessibility APIs using ARIA hidden.
@@ -270,8 +241,7 @@ object mod {
       *
       * @param element The element to check.
       */
-    @scala.inline
-    def isAriaHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAriaHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isAriaHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAriaHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return true if an element is disabled.
@@ -281,40 +251,35 @@ object mod {
       *
       * @param element The element that is hiding, or not.
       */
-    @scala.inline
-    def isDisabled(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDisabled(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the element is able to be focused .
       *
       * @param element DOM Node to test.
       */
-    @scala.inline
-    def isFocusable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocusable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFocusable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocusable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return true if an element is in a document.
       *
       * @param element The element that is in a doc, or not.
       */
-    @scala.inline
-    def isInDocument(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isInDocument(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the element is able to be accessed via the keyboard.
       *
       * @param element DOM Node to test.
       */
-    @scala.inline
-    def isKeyboardNavigable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardNavigable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isKeyboardNavigable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardNavigable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the element is able to be focused by keyboard tabbing.
       *
       * @param element DOM Node to test.
       */
-    @scala.inline
-    def isKeyboardTabbable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardTabbable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isKeyboardTabbable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardTabbable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the table passed is a layout table.
@@ -325,16 +290,14 @@ object mod {
       *
       * @param table The table to check.
       */
-    @scala.inline
-    def isLayoutTable(table: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayoutTable")(table.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLayoutTable(table: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayoutTable")(table.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the provided node name is not a valid phrasing node.
       *
       * @param nodeName The node name to test.
       */
-    @scala.inline
-    def isPhrasingNode(nodeName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhrasingNode")(nodeName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isPhrasingNode(nodeName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhrasingNode")(nodeName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the string is "empty" according to WCAG standards.
@@ -346,8 +309,7 @@ object mod {
       *
       * @param string The potentially empty string.
       */
-    @scala.inline
-    def isStringEmpty(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringEmpty")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isStringEmpty(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringEmpty")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return true if an element is hidden visually.
@@ -357,8 +319,7 @@ object mod {
       *
       * @param element The element that is hiding, or not.
       */
-    @scala.inline
-    def isVisuallyHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisuallyHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isVisuallyHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisuallyHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Calculate relative luminescence for a colour in the sRGB colour profile.
@@ -372,8 +333,7 @@ object mod {
       *
       * @param colour The colour to calculate from.
       */
-    @scala.inline
-    def relativeLum(colour: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeLum")(colour.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def relativeLum(colour: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeLum")(colour.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Convert an RGB colour into hue-saturation-value.
@@ -389,10 +349,8 @@ object mod {
       *
       * @param colour A colour to convert.
       */
-    @scala.inline
-    def sRGBtoHSV(colour: String): HsvColour = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGBtoHSV")(colour.asInstanceOf[js.Any]).asInstanceOf[HsvColour]
-    @scala.inline
-    def sRGBtoHSV(colour: Colour): HsvColour = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGBtoHSV")(colour.asInstanceOf[js.Any]).asInstanceOf[HsvColour]
+    inline def sRGBtoHSV(colour: String): HsvColour = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGBtoHSV")(colour.asInstanceOf[js.Any]).asInstanceOf[HsvColour]
+    inline def sRGBtoHSV(colour: Colour): HsvColour = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGBtoHSV")(colour.asInstanceOf[js.Any]).asInstanceOf[HsvColour]
     
     /**
       * Return the appropriate computed style object for an element.
@@ -401,10 +359,8 @@ object mod {
       *
       * @param element An element with style.
       */
-    @scala.inline
-    def style(element: Element): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(element.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
-    @scala.inline
-    def style(element: Element, pseudo: String): CSSStyleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(element.asInstanceOf[js.Any], pseudo.asInstanceOf[js.Any])).asInstanceOf[CSSStyleDeclaration]
+    inline def style(element: Element): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(element.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
+    inline def style(element: Element, pseudo: String): CSSStyleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(element.asInstanceOf[js.Any], pseudo.asInstanceOf[js.Any])).asInstanceOf[CSSStyleDeclaration]
     
     /**
       * Test for the correct headers attributes on table cell elements.
@@ -424,16 +380,14 @@ object mod {
       *
       * @param element Table element to test upon.
       */
-    @scala.inline
-    def testTableHeaders(element: Node): TestTableHeadersResult = ^.asInstanceOf[js.Dynamic].applyDynamic("testTableHeaders")(element.asInstanceOf[js.Any]).asInstanceOf[TestTableHeadersResult]
+    inline def testTableHeaders(element: Node): TestTableHeadersResult = ^.asInstanceOf[js.Dynamic].applyDynamic("testTableHeaders")(element.asInstanceOf[js.Any]).asInstanceOf[TestTableHeadersResult]
     
     /**
       * Trim off excess spaces on either side.
       *
       * @param string The string with potentially extraneous whitespace.
       */
-    @scala.inline
-    def trim(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def trim(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(string.asInstanceOf[js.Any]).asInstanceOf[String]
     
     trait CellHeaderInfo extends StObject {
       
@@ -443,20 +397,16 @@ object mod {
     }
     object CellHeaderInfo {
       
-      @scala.inline
-      def apply(cell: Element, headers: String): CellHeaderInfo = {
+      inline def apply(cell: Element, headers: String): CellHeaderInfo = {
         val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
         __obj.asInstanceOf[CellHeaderInfo]
       }
       
-      @scala.inline
-      implicit class CellHeaderInfoMutableBuilder[Self <: CellHeaderInfo] (val x: Self) extends AnyVal {
+      extension [Self <: CellHeaderInfo](x: Self) {
         
-        @scala.inline
-        def setCell(value: Element): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+        inline def setCell(value: Element): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       }
     }
     
@@ -472,26 +422,20 @@ object mod {
     }
     object Colour {
       
-      @scala.inline
-      def apply(alpha: Double, blue: Double, green: Double, red: Double): Colour = {
+      inline def apply(alpha: Double, blue: Double, green: Double, red: Double): Colour = {
         val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
         __obj.asInstanceOf[Colour]
       }
       
-      @scala.inline
-      implicit class ColourMutableBuilder[Self <: Colour] (val x: Self) extends AnyVal {
+      extension [Self <: Colour](x: Self) {
         
-        @scala.inline
-        def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+        inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+        inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+        inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+        inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       }
     }
     
@@ -507,26 +451,19 @@ object mod {
     trait DocumentType extends StObject
     object DocumentType {
       
-      @scala.inline
-      def _empty: typings.htmlCodesniffer.htmlCodesnifferStrings._empty = "".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings._empty]
+      inline def _empty: typings.htmlCodesniffer.htmlCodesnifferStrings._empty = "".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings._empty]
       
-      @scala.inline
-      def html40: typings.htmlCodesniffer.htmlCodesnifferStrings.html40 = "html40".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.html40]
+      inline def html40: typings.htmlCodesniffer.htmlCodesnifferStrings.html40 = "html40".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.html40]
       
-      @scala.inline
-      def html401: typings.htmlCodesniffer.htmlCodesnifferStrings.html401 = "html401".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.html401]
+      inline def html401: typings.htmlCodesniffer.htmlCodesnifferStrings.html401 = "html401".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.html401]
       
-      @scala.inline
-      def html5: typings.htmlCodesniffer.htmlCodesnifferStrings.html5 = "html5".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.html5]
+      inline def html5: typings.htmlCodesniffer.htmlCodesnifferStrings.html5 = "html5".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.html5]
       
-      @scala.inline
-      def xhtml10: typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml10 = "xhtml10".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml10]
+      inline def xhtml10: typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml10 = "xhtml10".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml10]
       
-      @scala.inline
-      def xhtml11: typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml11 = "xhtml11".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml11]
+      inline def xhtml11: typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml11 = "xhtml11".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml11]
       
-      @scala.inline
-      def xhtml5: typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml5 = "xhtml5".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml5]
+      inline def xhtml5: typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml5 = "xhtml5".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml5]
     }
     
     trait HeaderInfo extends StObject {
@@ -539,23 +476,18 @@ object mod {
     }
     object HeaderInfo {
       
-      @scala.inline
-      def apply(actual: String, element: Element, expected: String): HeaderInfo = {
+      inline def apply(actual: String, element: Element, expected: String): HeaderInfo = {
         val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any])
         __obj.asInstanceOf[HeaderInfo]
       }
       
-      @scala.inline
-      implicit class HeaderInfoMutableBuilder[Self <: HeaderInfo] (val x: Self) extends AnyVal {
+      extension [Self <: HeaderInfo](x: Self) {
         
-        @scala.inline
-        def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+        inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+        inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+        inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       }
     }
     
@@ -569,23 +501,18 @@ object mod {
     }
     object HsvColour {
       
-      @scala.inline
-      def apply(hue: Double, saturation: Double, value: Double): HsvColour = {
+      inline def apply(hue: Double, saturation: Double, value: Double): HsvColour = {
         val __obj = js.Dynamic.literal(hue = hue.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[HsvColour]
       }
       
-      @scala.inline
-      implicit class HsvColourMutableBuilder[Self <: HsvColour] (val x: Self) extends AnyVal {
+      extension [Self <: HsvColour](x: Self) {
         
-        @scala.inline
-        def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+        inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+        inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -614,8 +541,7 @@ object mod {
     }
     object TestTableHeadersResult {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         allowScope: Boolean,
         correct: Boolean,
         missingTd: js.Array[Element],
@@ -628,38 +554,27 @@ object mod {
         __obj.asInstanceOf[TestTableHeadersResult]
       }
       
-      @scala.inline
-      implicit class TestTableHeadersResultMutableBuilder[Self <: TestTableHeadersResult] (val x: Self) extends AnyVal {
+      extension [Self <: TestTableHeadersResult](x: Self) {
         
-        @scala.inline
-        def setAllowScope(value: Boolean): Self = StObject.set(x, "allowScope", value.asInstanceOf[js.Any])
+        inline def setAllowScope(value: Boolean): Self = StObject.set(x, "allowScope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCorrect(value: Boolean): Self = StObject.set(x, "correct", value.asInstanceOf[js.Any])
+        inline def setCorrect(value: Boolean): Self = StObject.set(x, "correct", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingTd(value: js.Array[Element]): Self = StObject.set(x, "missingTd", value.asInstanceOf[js.Any])
+        inline def setMissingTd(value: js.Array[Element]): Self = StObject.set(x, "missingTd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingTdVarargs(value: Element*): Self = StObject.set(x, "missingTd", js.Array(value :_*))
+        inline def setMissingTdVarargs(value: Element*): Self = StObject.set(x, "missingTd", js.Array(value :_*))
         
-        @scala.inline
-        def setMissingThId(value: js.Array[Element]): Self = StObject.set(x, "missingThId", value.asInstanceOf[js.Any])
+        inline def setMissingThId(value: js.Array[Element]): Self = StObject.set(x, "missingThId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingThIdVarargs(value: Element*): Self = StObject.set(x, "missingThId", js.Array(value :_*))
+        inline def setMissingThIdVarargs(value: Element*): Self = StObject.set(x, "missingThId", js.Array(value :_*))
         
-        @scala.inline
-        def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+        inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+        inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWrongHeaders(value: js.Array[HeaderInfo]): Self = StObject.set(x, "wrongHeaders", value.asInstanceOf[js.Any])
+        inline def setWrongHeaders(value: js.Array[HeaderInfo]): Self = StObject.set(x, "wrongHeaders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWrongHeadersVarargs(value: HeaderInfo*): Self = StObject.set(x, "wrongHeaders", js.Array(value :_*))
+        inline def setWrongHeadersVarargs(value: HeaderInfo*): Self = StObject.set(x, "wrongHeaders", js.Array(value :_*))
       }
     }
   }
@@ -668,53 +583,37 @@ object mod {
   @js.native
   val WARNING: /* 2 */ Double = js.native
   
-  @scala.inline
-  def addMessage(`type`: Double, element: Element, msg: String, code: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(`type`.asInstanceOf[js.Any], element.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addMessage(`type`: Double, element: Element, msg: String, code: String, data: MessageData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(`type`.asInstanceOf[js.Any], element.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMessage(`type`: Double, element: Element, msg: String, code: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(`type`.asInstanceOf[js.Any], element.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMessage(`type`: Double, element: Element, msg: String, code: String, data: MessageData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(`type`.asInstanceOf[js.Any], element.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getMessages(): js.Array[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")().asInstanceOf[js.Array[Message]]
+  inline def getMessages(): js.Array[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")().asInstanceOf[js.Array[Message]]
   
-  @scala.inline
-  def getTranslation(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTranslation(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isFullDoc(content: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullDoc")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isFullDoc(content: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullDoc")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFullDoc(content: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullDoc")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFullDoc(content: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullDoc")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("html_codesniffer", "lang")
   @js.native
   val lang: String = js.native
   
-  @scala.inline
-  def loadStandard(standard: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStandard")(standard.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def loadStandard(standard: String, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStandard")(standard.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadStandard(standard: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStandard")(standard.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadStandard(standard: String, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStandard")(standard.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def process(standard: String, content: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def process(standard: String, content: String, callback: Callback, failCallback: Unit, language: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def process(standard: String, content: String, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def process(
+  inline def process(standard: String, content: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def process(standard: String, content: String, callback: Callback, failCallback: Unit, language: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def process(standard: String, content: String, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def process(
     standard: String,
     content: String,
     callback: Callback,
     failCallback: FailCallback,
     language: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def process(standard: String, content: Element, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def process(standard: String, content: Element, callback: Callback, failCallback: Unit, language: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def process(standard: String, content: Element, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def process(
+  inline def process(standard: String, content: Element, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def process(standard: String, content: Element, callback: Callback, failCallback: Unit, language: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def process(standard: String, content: Element, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def process(
     standard: String,
     content: Element,
     callback: Callback,
@@ -722,10 +621,8 @@ object mod {
     language: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def run(callback: Callback, content: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def run(callback: Callback, content: Node): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def run(callback: Callback, content: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def run(callback: Callback, content: Node): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Callback = js.Function0[Unit]
   
@@ -745,33 +642,25 @@ object mod {
   }
   object Message {
     
-    @scala.inline
-    def apply(code: String, element: Element, msg: String, `type`: Double): Message = {
+    inline def apply(code: String, element: Element, msg: String, `type`: Double): Message = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: MessageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: MessageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -29,8 +29,7 @@ trait MessageWebSocketControl extends StObject {
 }
 object MessageWebSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maxMessageSize: Double,
     messageType: SocketMessageType,
     outboundBufferSizeInBytes: Double,
@@ -42,25 +41,18 @@ object MessageWebSocketControl {
     __obj.asInstanceOf[MessageWebSocketControl]
   }
   
-  @scala.inline
-  implicit class MessageWebSocketControlMutableBuilder[Self <: MessageWebSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: MessageWebSocketControl](x: Self) {
     
-    @scala.inline
-    def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
+    inline def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: SocketMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: SocketMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
+    inline def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
+    inline def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedProtocols(value: IVector[String]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
+    inline def setSupportedProtocols(value: IVector[String]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
   }
 }

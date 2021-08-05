@@ -19,8 +19,7 @@ trait ColorButton
 }
 object ColorButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     color: Color,
@@ -49,16 +48,12 @@ object ColorButton {
     __obj.asInstanceOf[ColorButton]
   }
   
-  @scala.inline
-  implicit class ColorButtonMutableBuilder[Self <: ColorButton] (val x: Self) extends AnyVal {
+  extension [Self <: ColorButton](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogOnly(value: Boolean): Self = StObject.set(x, "dialogOnly", value.asInstanceOf[js.Any])
+    inline def setDialogOnly(value: Boolean): Self = StObject.set(x, "dialogOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

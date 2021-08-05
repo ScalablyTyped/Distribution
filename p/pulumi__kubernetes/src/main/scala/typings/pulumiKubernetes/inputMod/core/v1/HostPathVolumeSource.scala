@@ -22,22 +22,17 @@ trait HostPathVolumeSource extends StObject {
 }
 object HostPathVolumeSource {
   
-  @scala.inline
-  def apply(path: Input[String]): HostPathVolumeSource = {
+  inline def apply(path: Input[String]): HostPathVolumeSource = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostPathVolumeSource]
   }
   
-  @scala.inline
-  implicit class HostPathVolumeSourceMutableBuilder[Self <: HostPathVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: HostPathVolumeSource](x: Self) {
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

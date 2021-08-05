@@ -48,14 +48,11 @@ object iprioritysignalMod {
     @js.native
     val ^ : js.Symbol = js.native
     
-    @scala.inline
-    implicit class IPrioritySignalMutableBuilder[Self <: IPrioritySignal] (val x: Self) extends AnyVal {
+    extension [Self <: IPrioritySignal](x: Self) {
       
-      @scala.inline
-      def setAddOnceWithPriority(value: (js.Function, Double) => ISlot): Self = StObject.set(x, "addOnceWithPriority", js.Any.fromFunction2(value))
+      inline def setAddOnceWithPriority(value: (js.Function, Double) => ISlot): Self = StObject.set(x, "addOnceWithPriority", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddWithPriority(value: (js.Function, Double) => ISlot): Self = StObject.set(x, "addWithPriority", js.Any.fromFunction2(value))
+      inline def setAddWithPriority(value: (js.Function, Double) => ISlot): Self = StObject.set(x, "addWithPriority", js.Any.fromFunction2(value))
     }
   }
 }

@@ -26,52 +26,37 @@ trait UserPageLoadMetricV5 extends StObject {
 }
 object UserPageLoadMetricV5 {
   
-  @scala.inline
-  def apply(): UserPageLoadMetricV5 = {
+  inline def apply(): UserPageLoadMetricV5 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPageLoadMetricV5]
   }
   
-  @scala.inline
-  implicit class UserPageLoadMetricV5MutableBuilder[Self <: UserPageLoadMetricV5] (val x: Self) extends AnyVal {
+  extension [Self <: UserPageLoadMetricV5](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setDistributions(value: js.Array[Bucket]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
+    inline def setDistributions(value: js.Array[Bucket]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
+    inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
-    @scala.inline
-    def setDistributionsVarargs(value: Bucket*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: Bucket*): Self = StObject.set(x, "distributions", js.Array(value :_*))
     
-    @scala.inline
-    def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
+    inline def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
+    inline def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
     
-    @scala.inline
-    def setMedian(value: Double): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
+    inline def setMedian(value: Double): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
+    inline def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
     
-    @scala.inline
-    def setMetricId(value: String): Self = StObject.set(x, "metricId", value.asInstanceOf[js.Any])
+    inline def setMetricId(value: String): Self = StObject.set(x, "metricId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricIdUndefined: Self = StObject.set(x, "metricId", js.undefined)
+    inline def setMetricIdUndefined: Self = StObject.set(x, "metricId", js.undefined)
     
-    @scala.inline
-    def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
+    inline def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentileUndefined: Self = StObject.set(x, "percentile", js.undefined)
+    inline def setPercentileUndefined: Self = StObject.set(x, "percentile", js.undefined)
   }
 }

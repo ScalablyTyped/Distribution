@@ -13,19 +13,15 @@ trait ItemsIPlayReadyLicense extends StObject {
 }
 object ItemsIPlayReadyLicense {
   
-  @scala.inline
-  def apply(items: IPlayReadyLicense, returnValue: Double): ItemsIPlayReadyLicense = {
+  inline def apply(items: IPlayReadyLicense, returnValue: Double): ItemsIPlayReadyLicense = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsIPlayReadyLicense]
   }
   
-  @scala.inline
-  implicit class ItemsIPlayReadyLicenseMutableBuilder[Self <: ItemsIPlayReadyLicense] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsIPlayReadyLicense](x: Self) {
     
-    @scala.inline
-    def setItems(value: IPlayReadyLicense): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IPlayReadyLicense): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

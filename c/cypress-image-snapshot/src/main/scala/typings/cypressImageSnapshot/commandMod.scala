@@ -11,12 +11,8 @@ object commandMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addMatchImageSnapshotCommand(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")().asInstanceOf[Unit]
-  @scala.inline
-  def addMatchImageSnapshotCommand(nameOrOptions: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")(nameOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addMatchImageSnapshotCommand(nameOrOptions: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")(nameOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addMatchImageSnapshotCommand(name: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMatchImageSnapshotCommand(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")().asInstanceOf[Unit]
+  inline def addMatchImageSnapshotCommand(nameOrOptions: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")(nameOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addMatchImageSnapshotCommand(nameOrOptions: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")(nameOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addMatchImageSnapshotCommand(name: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMatchImageSnapshotCommand")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

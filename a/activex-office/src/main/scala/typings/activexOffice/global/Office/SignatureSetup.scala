@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SignatureSetup")
 @js.native
-class SignatureSetup protected ()
+/* private */ class SignatureSetup ()
   extends StObject
      with typings.activexOffice.Office.SignatureSetup {
   
@@ -25,7 +25,7 @@ class SignatureSetup protected ()
   /* CompleteClass */
   override val Id: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.SignatureSetup_typekey")
   var OfficeDotSignatureSetup_typekey: typings.activexOffice.Office.SignatureSetup = js.native
   

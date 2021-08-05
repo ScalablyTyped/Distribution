@@ -14,31 +14,23 @@ trait Datatooltip extends StObject {
 }
 object Datatooltip {
   
-  @scala.inline
-  def apply(): Datatooltip = {
+  inline def apply(): Datatooltip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Datatooltip]
   }
   
-  @scala.inline
-  implicit class DatatooltipMutableBuilder[Self <: Datatooltip] (val x: Self) extends AnyVal {
+  extension [Self <: Datatooltip](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def `setData-badge`(value: String | Double): Self = StObject.set(x, "data-badge", value.asInstanceOf[js.Any])
+    inline def `setData-badge`(value: String | Double): Self = StObject.set(x, "data-badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setData-badgeUndefined`: Self = StObject.set(x, "data-badge", js.undefined)
+    inline def `setData-badgeUndefined`: Self = StObject.set(x, "data-badge", js.undefined)
     
-    @scala.inline
-    def `setData-tooltip`(value: String | Double): Self = StObject.set(x, "data-tooltip", value.asInstanceOf[js.Any])
+    inline def `setData-tooltip`(value: String | Double): Self = StObject.set(x, "data-tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setData-tooltipUndefined`: Self = StObject.set(x, "data-tooltip", js.undefined)
+    inline def `setData-tooltipUndefined`: Self = StObject.set(x, "data-tooltip", js.undefined)
   }
 }

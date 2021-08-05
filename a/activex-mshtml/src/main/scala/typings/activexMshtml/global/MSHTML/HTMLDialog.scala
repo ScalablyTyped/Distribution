@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDialog")
 @js.native
-class HTMLDialog protected ()
+/* private */ class HTMLDialog ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDialog {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLDialog_typekey")
   var MSHTMLDotHTMLDialog_typekey: typings.activexMshtml.MSHTML.HTMLDialog = js.native
   

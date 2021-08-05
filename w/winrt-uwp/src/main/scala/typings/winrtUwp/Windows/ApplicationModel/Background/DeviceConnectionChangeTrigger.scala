@@ -18,22 +18,17 @@ trait DeviceConnectionChangeTrigger extends StObject {
 }
 object DeviceConnectionChangeTrigger {
   
-  @scala.inline
-  def apply(canMaintainConnection: Boolean, deviceId: String, maintainConnection: Boolean): DeviceConnectionChangeTrigger = {
+  inline def apply(canMaintainConnection: Boolean, deviceId: String, maintainConnection: Boolean): DeviceConnectionChangeTrigger = {
     val __obj = js.Dynamic.literal(canMaintainConnection = canMaintainConnection.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], maintainConnection = maintainConnection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceConnectionChangeTrigger]
   }
   
-  @scala.inline
-  implicit class DeviceConnectionChangeTriggerMutableBuilder[Self <: DeviceConnectionChangeTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConnectionChangeTrigger](x: Self) {
     
-    @scala.inline
-    def setCanMaintainConnection(value: Boolean): Self = StObject.set(x, "canMaintainConnection", value.asInstanceOf[js.Any])
+    inline def setCanMaintainConnection(value: Boolean): Self = StObject.set(x, "canMaintainConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintainConnection(value: Boolean): Self = StObject.set(x, "maintainConnection", value.asInstanceOf[js.Any])
+    inline def setMaintainConnection(value: Boolean): Self = StObject.set(x, "maintainConnection", value.asInstanceOf[js.Any])
   }
 }

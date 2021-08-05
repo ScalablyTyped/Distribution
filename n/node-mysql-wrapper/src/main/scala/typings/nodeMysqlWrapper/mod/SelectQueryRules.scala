@@ -45,7 +45,7 @@ class SelectQueryRules () extends StObject {
   
   /* private */ def last(propertyClauseName: js.Any): js.Any = js.native
   
-  var lastPropertyClauseName: String = js.native
+  /* private */ var lastPropertyClauseName: String = js.native
   
   def limit(limitRowsOrStart: Double): SelectQueryRules = js.native
   def limit(limitRowsOrStart: Double, limitEnd: Double): SelectQueryRules = js.native
@@ -77,18 +77,14 @@ object SelectQueryRules {
   
   //auto den benei oute sto last, oute sto from.
   /* static member */
-  @scala.inline
-  def build(): SelectQueryRules = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[SelectQueryRules]
+  inline def build(): SelectQueryRules = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[SelectQueryRules]
   
   /* static member */
-  @scala.inline
-  def fromRawObject(obj: RawRules): SelectQueryRules = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRawObject")(obj.asInstanceOf[js.Any]).asInstanceOf[SelectQueryRules]
+  inline def fromRawObject(obj: RawRules): SelectQueryRules = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRawObject")(obj.asInstanceOf[js.Any]).asInstanceOf[SelectQueryRules]
   
   /* static member */
-  @scala.inline
-  def toRawObject(rules: SelectQueryRules): RawRules = ^.asInstanceOf[js.Dynamic].applyDynamic("toRawObject")(rules.asInstanceOf[js.Any]).asInstanceOf[RawRules]
+  inline def toRawObject(rules: SelectQueryRules): RawRules = ^.asInstanceOf[js.Dynamic].applyDynamic("toRawObject")(rules.asInstanceOf[js.Any]).asInstanceOf[RawRules]
   
   /* static member */
-  @scala.inline
-  def toString_(rules: SelectQueryRules): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(rules.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(rules: SelectQueryRules): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(rules.asInstanceOf[js.Any]).asInstanceOf[String]
 }

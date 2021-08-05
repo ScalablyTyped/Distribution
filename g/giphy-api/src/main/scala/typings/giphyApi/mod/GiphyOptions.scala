@@ -14,31 +14,23 @@ trait GiphyOptions extends StObject {
 }
 object GiphyOptions {
   
-  @scala.inline
-  def apply(): GiphyOptions = {
+  inline def apply(): GiphyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GiphyOptions]
   }
   
-  @scala.inline
-  implicit class GiphyOptionsMutableBuilder[Self <: GiphyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GiphyOptions](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+    inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
     
-    @scala.inline
-    def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

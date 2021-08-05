@@ -12,25 +12,19 @@ trait IndexableText extends StObject {
 }
 object IndexableText {
   
-  @scala.inline
-  def apply(): IndexableText = {
+  inline def apply(): IndexableText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndexableText]
   }
   
-  @scala.inline
-  implicit class IndexableTextMutableBuilder[Self <: IndexableText] (val x: Self) extends AnyVal {
+  extension [Self <: IndexableText](x: Self) {
     
-    @scala.inline
-    def setIndexableText(value: String): Self = StObject.set(x, "indexableText", value.asInstanceOf[js.Any])
+    inline def setIndexableText(value: String): Self = StObject.set(x, "indexableText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexableTextUndefined: Self = StObject.set(x, "indexableText", js.undefined)
+    inline def setIndexableTextUndefined: Self = StObject.set(x, "indexableText", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: MimeType): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: MimeType): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

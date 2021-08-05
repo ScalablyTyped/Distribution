@@ -10,16 +10,13 @@ trait IWaitForReturn extends StObject {
 }
 object IWaitForReturn {
   
-  @scala.inline
-  def apply(force: js.Function): IWaitForReturn = {
+  inline def apply(force: js.Function): IWaitForReturn = {
     val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWaitForReturn]
   }
   
-  @scala.inline
-  implicit class IWaitForReturnMutableBuilder[Self <: IWaitForReturn] (val x: Self) extends AnyVal {
+  extension [Self <: IWaitForReturn](x: Self) {
     
-    @scala.inline
-    def setForce(value: js.Function): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: js.Function): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
   }
 }

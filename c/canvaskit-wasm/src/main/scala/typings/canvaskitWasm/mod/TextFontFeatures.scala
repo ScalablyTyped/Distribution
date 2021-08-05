@@ -12,19 +12,15 @@ trait TextFontFeatures extends StObject {
 }
 object TextFontFeatures {
   
-  @scala.inline
-  def apply(name: String, value: Double): TextFontFeatures = {
+  inline def apply(name: String, value: Double): TextFontFeatures = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFontFeatures]
   }
   
-  @scala.inline
-  implicit class TextFontFeaturesMutableBuilder[Self <: TextFontFeatures] (val x: Self) extends AnyVal {
+  extension [Self <: TextFontFeatures](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -16,28 +16,21 @@ trait RegisterCallbacksHash extends StObject {
 }
 object RegisterCallbacksHash {
   
-  @scala.inline
-  def apply(rpc: /* args */ DataArgs => RPCResult | Unit): RegisterCallbacksHash = {
+  inline def apply(rpc: /* args */ DataArgs => RPCResult | Unit): RegisterCallbacksHash = {
     val __obj = js.Dynamic.literal(rpc = js.Any.fromFunction1(rpc))
     __obj.asInstanceOf[RegisterCallbacksHash]
   }
   
-  @scala.inline
-  implicit class RegisterCallbacksHashMutableBuilder[Self <: RegisterCallbacksHash] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCallbacksHash](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* args */ ErrorArgs => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* args */ ErrorArgs => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+    inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
-    @scala.inline
-    def setRpc(value: /* args */ DataArgs => RPCResult | Unit): Self = StObject.set(x, "rpc", js.Any.fromFunction1(value))
+    inline def setRpc(value: /* args */ DataArgs => RPCResult | Unit): Self = StObject.set(x, "rpc", js.Any.fromFunction1(value))
   }
 }

@@ -16,17 +16,14 @@ object typesMaximumRepositoryNamesExceededExceptionMod {
   }
   object MaximumRepositoryNamesExceededException {
     
-    @scala.inline
-    def apply(): MaximumRepositoryNamesExceededException = {
+    inline def apply(): MaximumRepositoryNamesExceededException = {
       val __obj = js.Dynamic.literal(name = "MaximumRepositoryNamesExceededException")
       __obj.asInstanceOf[MaximumRepositoryNamesExceededException]
     }
     
-    @scala.inline
-    implicit class MaximumRepositoryNamesExceededExceptionMutableBuilder[Self <: MaximumRepositoryNamesExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: MaximumRepositoryNamesExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumRepositoryNamesExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

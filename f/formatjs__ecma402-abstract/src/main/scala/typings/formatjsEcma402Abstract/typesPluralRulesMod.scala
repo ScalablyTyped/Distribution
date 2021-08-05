@@ -23,23 +23,17 @@ object typesPluralRulesMod {
   trait LDMLPluralRule extends StObject
   object LDMLPluralRule {
     
-    @scala.inline
-    def few: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.few = "few".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.few]
+    inline def few: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.few = "few".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.few]
     
-    @scala.inline
-    def many: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.many = "many".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.many]
+    inline def many: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.many = "many".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.many]
     
-    @scala.inline
-    def one: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.one = "one".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.one]
+    inline def one: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.one = "one".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.one]
     
-    @scala.inline
-    def other: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.other = "other".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.other]
+    inline def other: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.other = "other".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.other]
     
-    @scala.inline
-    def two: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.two = "two".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.two]
+    inline def two: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.two = "two".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.two]
     
-    @scala.inline
-    def zero: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.zero = "zero".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.zero]
+    inline def zero: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.zero = "zero".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.zero]
   }
   
   @js.native
@@ -65,8 +59,7 @@ object typesPluralRulesMod {
   }
   object PluralRulesInternal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initializedPluralRules: Boolean,
       locale: String,
       minimumIntegerDigits: Double,
@@ -78,17 +71,13 @@ object typesPluralRulesMod {
       __obj.asInstanceOf[PluralRulesInternal]
     }
     
-    @scala.inline
-    implicit class PluralRulesInternalMutableBuilder[Self <: PluralRulesInternal] (val x: Self) extends AnyVal {
+    extension [Self <: PluralRulesInternal](x: Self) {
       
-      @scala.inline
-      def setInitializedPluralRules(value: Boolean): Self = StObject.set(x, "initializedPluralRules", value.asInstanceOf[js.Any])
+      inline def setInitializedPluralRules(value: Boolean): Self = StObject.set(x, "initializedPluralRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

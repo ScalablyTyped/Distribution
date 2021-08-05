@@ -23,37 +23,27 @@ trait InventoryAggregator extends StObject {
 }
 object InventoryAggregator {
   
-  @scala.inline
-  def apply(): InventoryAggregator = {
+  inline def apply(): InventoryAggregator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventoryAggregator]
   }
   
-  @scala.inline
-  implicit class InventoryAggregatorMutableBuilder[Self <: InventoryAggregator] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryAggregator](x: Self) {
     
-    @scala.inline
-    def setAggregators(value: InventoryAggregatorList): Self = StObject.set(x, "Aggregators", value.asInstanceOf[js.Any])
+    inline def setAggregators(value: InventoryAggregatorList): Self = StObject.set(x, "Aggregators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
+    inline def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
-    @scala.inline
-    def setAggregatorsVarargs(value: InventoryAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
+    inline def setAggregatorsVarargs(value: InventoryAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
     
-    @scala.inline
-    def setExpression(value: InventoryAggregatorExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: InventoryAggregatorExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
-    @scala.inline
-    def setGroups(value: InventoryGroupList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: InventoryGroupList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: InventoryGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: InventoryGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
   }
 }

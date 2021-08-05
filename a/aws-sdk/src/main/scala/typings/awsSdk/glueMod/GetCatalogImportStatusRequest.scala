@@ -13,19 +13,15 @@ trait GetCatalogImportStatusRequest extends StObject {
 }
 object GetCatalogImportStatusRequest {
   
-  @scala.inline
-  def apply(): GetCatalogImportStatusRequest = {
+  inline def apply(): GetCatalogImportStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCatalogImportStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetCatalogImportStatusRequestMutableBuilder[Self <: GetCatalogImportStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCatalogImportStatusRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
   }
 }

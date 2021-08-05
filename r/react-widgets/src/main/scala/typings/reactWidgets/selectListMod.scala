@@ -38,23 +38,18 @@ object selectListMod extends Shortcut {
   }
   object SelectListMessages {
     
-    @scala.inline
-    def apply(): SelectListMessages = {
+    inline def apply(): SelectListMessages = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectListMessages]
     }
     
-    @scala.inline
-    implicit class SelectListMessagesMutableBuilder[Self <: SelectListMessages] (val x: Self) extends AnyVal {
+    extension [Self <: SelectListMessages](x: Self) {
       
-      @scala.inline
-      def setEmptyList(value: String | (js.Function1[/* props */ SelectListProps, String])): Self = StObject.set(x, "emptyList", value.asInstanceOf[js.Any])
+      inline def setEmptyList(value: String | (js.Function1[/* props */ SelectListProps, String])): Self = StObject.set(x, "emptyList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyListFunction1(value: /* props */ SelectListProps => String): Self = StObject.set(x, "emptyList", js.Any.fromFunction1(value))
+      inline def setEmptyListFunction1(value: /* props */ SelectListProps => String): Self = StObject.set(x, "emptyList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmptyListUndefined: Self = StObject.set(x, "emptyList", js.undefined)
+      inline def setEmptyListUndefined: Self = StObject.set(x, "emptyList", js.undefined)
     }
   }
   
@@ -191,149 +186,102 @@ object selectListMod extends Shortcut {
   }
   object SelectListProps {
     
-    @scala.inline
-    def apply(): SelectListProps = {
+    inline def apply(): SelectListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectListProps]
     }
     
-    @scala.inline
-    implicit class SelectListPropsMutableBuilder[Self <: SelectListProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectListProps](x: Self) {
       
-      @scala.inline
-      def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
+      inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
+      inline def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: js.Any*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: js.Any*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, js.Any])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      inline def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, js.Any])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupByFunction1(value: /* dataItem */ js.Any => js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+      inline def setGroupByFunction1(value: /* dataItem */ js.Any => js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+      inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      @scala.inline
-      def setGroupComponent(value: ReactType[js.Any]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+      inline def setGroupComponent(value: ReactType[js.Any]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
+      inline def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
       
-      @scala.inline
-      def setItemComponent(value: ReactType[js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      inline def setItemComponent(value: ReactType[js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
+      inline def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
       
-      @scala.inline
-      def setListComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
+      inline def setListComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListComponentUndefined: Self = StObject.set(x, "listComponent", js.undefined)
+      inline def setListComponentUndefined: Self = StObject.set(x, "listComponent", js.undefined)
       
-      @scala.inline
-      def setListProps(value: js.Object): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+      inline def setListProps(value: js.Object): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
+      inline def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
       
-      @scala.inline
-      def setMessages(value: SelectListMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: SelectListMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* values */ js.Any | js.Array[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* values */ js.Any | js.Array[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* event */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyPress(value: /* event */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: /* event */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      @scala.inline
-      def setOnMove(value: (/* list */ HTMLElement, /* focusedNode */ HTMLElement, /* focusedItem */ js.Any) => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction3(value))
+      inline def setOnMove(value: (/* list */ HTMLElement, /* focusedNode */ HTMLElement, /* focusedItem */ js.Any) => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
+      inline def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setTextField(value: String | (js.Function1[/* dataItem */ js.Any, String])): Self = StObject.set(x, "textField", value.asInstanceOf[js.Any])
+      inline def setTextField(value: String | (js.Function1[/* dataItem */ js.Any, String])): Self = StObject.set(x, "textField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextFieldFunction1(value: /* dataItem */ js.Any => String): Self = StObject.set(x, "textField", js.Any.fromFunction1(value))
+      inline def setTextFieldFunction1(value: /* dataItem */ js.Any => String): Self = StObject.set(x, "textField", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
+      inline def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+      inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
+      inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   

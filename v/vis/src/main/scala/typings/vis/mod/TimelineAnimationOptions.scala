@@ -10,19 +10,15 @@ trait TimelineAnimationOptions extends StObject {
 }
 object TimelineAnimationOptions {
   
-  @scala.inline
-  def apply(): TimelineAnimationOptions = {
+  inline def apply(): TimelineAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineAnimationOptions]
   }
   
-  @scala.inline
-  implicit class TimelineAnimationOptionsMutableBuilder[Self <: TimelineAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: TimelineAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: TimelineAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
   }
 }

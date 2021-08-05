@@ -16,19 +16,15 @@ trait ProcessAudioFrameContext extends StObject {
 }
 object ProcessAudioFrameContext {
   
-  @scala.inline
-  def apply(inputFrame: AudioFrame, outputFrame: AudioFrame): ProcessAudioFrameContext = {
+  inline def apply(inputFrame: AudioFrame, outputFrame: AudioFrame): ProcessAudioFrameContext = {
     val __obj = js.Dynamic.literal(inputFrame = inputFrame.asInstanceOf[js.Any], outputFrame = outputFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessAudioFrameContext]
   }
   
-  @scala.inline
-  implicit class ProcessAudioFrameContextMutableBuilder[Self <: ProcessAudioFrameContext] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessAudioFrameContext](x: Self) {
     
-    @scala.inline
-    def setInputFrame(value: AudioFrame): Self = StObject.set(x, "inputFrame", value.asInstanceOf[js.Any])
+    inline def setInputFrame(value: AudioFrame): Self = StObject.set(x, "inputFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFrame(value: AudioFrame): Self = StObject.set(x, "outputFrame", value.asInstanceOf[js.Any])
+    inline def setOutputFrame(value: AudioFrame): Self = StObject.set(x, "outputFrame", value.asInstanceOf[js.Any])
   }
 }

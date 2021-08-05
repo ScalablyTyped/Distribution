@@ -18,19 +18,15 @@ trait Link extends StObject {
 }
 object Link {
   
-  @scala.inline
-  def apply(Destination: String, Source: String): Link = {
+  inline def apply(Destination: String, Source: String): Link = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
   
-  @scala.inline
-  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+  extension [Self <: Link](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

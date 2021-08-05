@@ -9,8 +9,7 @@ trait IKeytipLayerStyles
      with typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerStyles
 object IKeytipLayerStyles {
   
-  @scala.inline
-  def apply(): IKeytipLayerStyles = {
+  inline def apply(): IKeytipLayerStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IKeytipLayerStyles]
   }

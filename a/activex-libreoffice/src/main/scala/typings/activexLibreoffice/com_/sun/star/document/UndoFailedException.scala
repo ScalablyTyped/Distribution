@@ -21,16 +21,13 @@ trait UndoFailedException
 }
 object UndoFailedException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, Reason: js.Any): UndoFailedException = {
+  inline def apply(Context: XInterface, Message: String, Reason: js.Any): UndoFailedException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndoFailedException]
   }
   
-  @scala.inline
-  implicit class UndoFailedExceptionMutableBuilder[Self <: UndoFailedException] (val x: Self) extends AnyVal {
+  extension [Self <: UndoFailedException](x: Self) {
     
-    @scala.inline
-    def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

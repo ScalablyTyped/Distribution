@@ -17,31 +17,23 @@ trait OrderreturnsReturnItem extends StObject {
 }
 object OrderreturnsReturnItem {
   
-  @scala.inline
-  def apply(): OrderreturnsReturnItem = {
+  inline def apply(): OrderreturnsReturnItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderreturnsReturnItem]
   }
   
-  @scala.inline
-  implicit class OrderreturnsReturnItemMutableBuilder[Self <: OrderreturnsReturnItem] (val x: Self) extends AnyVal {
+  extension [Self <: OrderreturnsReturnItem](x: Self) {
     
-    @scala.inline
-    def setRefund(value: OrderreturnsRefundOperation): Self = StObject.set(x, "refund", value.asInstanceOf[js.Any])
+    inline def setRefund(value: OrderreturnsRefundOperation): Self = StObject.set(x, "refund", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundUndefined: Self = StObject.set(x, "refund", js.undefined)
+    inline def setRefundUndefined: Self = StObject.set(x, "refund", js.undefined)
     
-    @scala.inline
-    def setReject(value: OrderreturnsRejectOperation): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
+    inline def setReject(value: OrderreturnsRejectOperation): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
+    inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
     
-    @scala.inline
-    def setReturnItemId(value: String): Self = StObject.set(x, "returnItemId", value.asInstanceOf[js.Any])
+    inline def setReturnItemId(value: String): Self = StObject.set(x, "returnItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnItemIdUndefined: Self = StObject.set(x, "returnItemId", js.undefined)
+    inline def setReturnItemIdUndefined: Self = StObject.set(x, "returnItemId", js.undefined)
   }
 }

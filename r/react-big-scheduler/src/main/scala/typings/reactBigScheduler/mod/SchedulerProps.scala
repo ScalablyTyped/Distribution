@@ -18,8 +18,7 @@ trait SchedulerProps extends StObject {
 }
 object SchedulerProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     nextClick: SchedulerData => Unit,
     onSelectDate: (SchedulerData, String) => Unit,
     onViewChange: (SchedulerData, View) => Unit,
@@ -30,22 +29,16 @@ object SchedulerProps {
     __obj.asInstanceOf[SchedulerProps]
   }
   
-  @scala.inline
-  implicit class SchedulerPropsMutableBuilder[Self <: SchedulerProps] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerProps](x: Self) {
     
-    @scala.inline
-    def setNextClick(value: SchedulerData => Unit): Self = StObject.set(x, "nextClick", js.Any.fromFunction1(value))
+    inline def setNextClick(value: SchedulerData => Unit): Self = StObject.set(x, "nextClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectDate(value: (SchedulerData, String) => Unit): Self = StObject.set(x, "onSelectDate", js.Any.fromFunction2(value))
+    inline def setOnSelectDate(value: (SchedulerData, String) => Unit): Self = StObject.set(x, "onSelectDate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnViewChange(value: (SchedulerData, View) => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction2(value))
+    inline def setOnViewChange(value: (SchedulerData, View) => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPrevClick(value: SchedulerData => Unit): Self = StObject.set(x, "prevClick", js.Any.fromFunction1(value))
+    inline def setPrevClick(value: SchedulerData => Unit): Self = StObject.set(x, "prevClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSchedulerData(value: SchedulerData): Self = StObject.set(x, "schedulerData", value.asInstanceOf[js.Any])
+    inline def setSchedulerData(value: SchedulerData): Self = StObject.set(x, "schedulerData", value.asInstanceOf[js.Any])
   }
 }

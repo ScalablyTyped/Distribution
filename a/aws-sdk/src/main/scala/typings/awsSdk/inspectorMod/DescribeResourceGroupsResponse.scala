@@ -18,22 +18,17 @@ trait DescribeResourceGroupsResponse extends StObject {
 }
 object DescribeResourceGroupsResponse {
   
-  @scala.inline
-  def apply(failedItems: FailedItems, resourceGroups: ResourceGroupList): DescribeResourceGroupsResponse = {
+  inline def apply(failedItems: FailedItems, resourceGroups: ResourceGroupList): DescribeResourceGroupsResponse = {
     val __obj = js.Dynamic.literal(failedItems = failedItems.asInstanceOf[js.Any], resourceGroups = resourceGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResourceGroupsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeResourceGroupsResponseMutableBuilder[Self <: DescribeResourceGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourceGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
+    inline def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroups(value: ResourceGroupList): Self = StObject.set(x, "resourceGroups", value.asInstanceOf[js.Any])
+    inline def setResourceGroups(value: ResourceGroupList): Self = StObject.set(x, "resourceGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupsVarargs(value: ResourceGroup*): Self = StObject.set(x, "resourceGroups", js.Array(value :_*))
+    inline def setResourceGroupsVarargs(value: ResourceGroup*): Self = StObject.set(x, "resourceGroups", js.Array(value :_*))
   }
 }

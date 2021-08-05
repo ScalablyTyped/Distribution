@@ -13,6 +13,5 @@ class DataObjectFormat ()
   extends typings.xadesjs.xmlMod.DataObjectFormat
 object DataObjectFormat {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.DataObjectFormat] = ^.asInstanceOf[js.Dynamic].selectDynamic("DataObjectFormat").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DataObjectFormat]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.DataObjectFormat] = ^.asInstanceOf[js.Dynamic].selectDynamic("DataObjectFormat").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DataObjectFormat]]
 }

@@ -31,8 +31,7 @@ trait StorageModule extends StObject {
 }
 object StorageModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFlows: () => js.Promise[CredentialsFlows],
     getLibraryEntry: (String, String) => js.Promise[String | js.Array[String]],
     getSessions: () => js.Promise[js.Object | Null],
@@ -48,37 +47,26 @@ object StorageModule {
     __obj.asInstanceOf[StorageModule]
   }
   
-  @scala.inline
-  implicit class StorageModuleMutableBuilder[Self <: StorageModule] (val x: Self) extends AnyVal {
+  extension [Self <: StorageModule](x: Self) {
     
-    @scala.inline
-    def setGetFlows(value: () => js.Promise[CredentialsFlows]): Self = StObject.set(x, "getFlows", js.Any.fromFunction0(value))
+    inline def setGetFlows(value: () => js.Promise[CredentialsFlows]): Self = StObject.set(x, "getFlows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLibraryEntry(value: (String, String) => js.Promise[String | js.Array[String]]): Self = StObject.set(x, "getLibraryEntry", js.Any.fromFunction2(value))
+    inline def setGetLibraryEntry(value: (String, String) => js.Promise[String | js.Array[String]]): Self = StObject.set(x, "getLibraryEntry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSessions(value: () => js.Promise[js.Object | Null]): Self = StObject.set(x, "getSessions", js.Any.fromFunction0(value))
+    inline def setGetSessions(value: () => js.Promise[js.Object | Null]): Self = StObject.set(x, "getSessions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSettings(value: () => js.Promise[js.Object | Null]): Self = StObject.set(x, "getSettings", js.Any.fromFunction0(value))
+    inline def setGetSettings(value: () => js.Promise[js.Object | Null]): Self = StObject.set(x, "getSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: InternalRuntimeAPI => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: InternalRuntimeAPI => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveCredentials(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveCredentials", js.Any.fromFunction1(value))
+    inline def setSaveCredentials(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveCredentials", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveFlows(value: CredentialsDirty => js.Promise[Unit]): Self = StObject.set(x, "saveFlows", js.Any.fromFunction1(value))
+    inline def setSaveFlows(value: CredentialsDirty => js.Promise[Unit]): Self = StObject.set(x, "saveFlows", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveLibraryEntry(value: (String, String, Record[String, String], String) => js.Promise[Unit]): Self = StObject.set(x, "saveLibraryEntry", js.Any.fromFunction4(value))
+    inline def setSaveLibraryEntry(value: (String, String, Record[String, String], String) => js.Promise[Unit]): Self = StObject.set(x, "saveLibraryEntry", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSaveSessions(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveSessions", js.Any.fromFunction1(value))
+    inline def setSaveSessions(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveSessions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveSettings(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveSettings", js.Any.fromFunction1(value))
+    inline def setSaveSettings(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "saveSettings", js.Any.fromFunction1(value))
   }
 }

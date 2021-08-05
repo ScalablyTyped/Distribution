@@ -33,8 +33,7 @@ trait GeoJSONLayerApplyEditsEdits
 }
 object GeoJSONLayerApplyEditsEdits {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,34 +42,24 @@ object GeoJSONLayerApplyEditsEdits {
     __obj.asInstanceOf[GeoJSONLayerApplyEditsEdits]
   }
   
-  @scala.inline
-  implicit class GeoJSONLayerApplyEditsEditsMutableBuilder[Self <: GeoJSONLayerApplyEditsEdits] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONLayerApplyEditsEdits](x: Self) {
     
-    @scala.inline
-    def setAddFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "addFeatures", value.asInstanceOf[js.Any])
+    inline def setAddFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "addFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddFeaturesUndefined: Self = StObject.set(x, "addFeatures", js.undefined)
+    inline def setAddFeaturesUndefined: Self = StObject.set(x, "addFeatures", js.undefined)
     
-    @scala.inline
-    def setAddFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "addFeatures", js.Array(value :_*))
+    inline def setAddFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "addFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setDeleteFeatures(value: (js.Array[js.Any | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
+    inline def setDeleteFeatures(value: (js.Array[js.Any | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteFeaturesUndefined: Self = StObject.set(x, "deleteFeatures", js.undefined)
+    inline def setDeleteFeaturesUndefined: Self = StObject.set(x, "deleteFeatures", js.undefined)
     
-    @scala.inline
-    def setDeleteFeaturesVarargs(value: (js.Any | Graphic)*): Self = StObject.set(x, "deleteFeatures", js.Array(value :_*))
+    inline def setDeleteFeaturesVarargs(value: (js.Any | Graphic)*): Self = StObject.set(x, "deleteFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "updateFeatures", value.asInstanceOf[js.Any])
+    inline def setUpdateFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "updateFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateFeaturesUndefined: Self = StObject.set(x, "updateFeatures", js.undefined)
+    inline def setUpdateFeaturesUndefined: Self = StObject.set(x, "updateFeatures", js.undefined)
     
-    @scala.inline
-    def setUpdateFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "updateFeatures", js.Array(value :_*))
+    inline def setUpdateFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "updateFeatures", js.Array(value :_*))
   }
 }

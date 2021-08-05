@@ -58,8 +58,7 @@ object contextsMod {
     /**
       * Adds the variadic classnames to the Element
       */
-    @scala.inline
-    def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Appends an HTML element with the specified tag name to the provided element.
@@ -67,20 +66,17 @@ object contextsMod {
       *
       * Returns the new element.
       */
-    @scala.inline
-    def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Creates and returns a new HTMLElement with the attached classnames.
       */
-    @scala.inline
-    def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Returns the width/height of HTMLElement's bounding box
       */
-    @scala.inline
-    def getDimensions(element: HTMLElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
+    inline def getDimensions(element: HTMLElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
   @JSImport("typesettable/build/src/contexts", "SvgContext")
@@ -102,8 +98,7 @@ object contextsMod {
     @JSImport("typesettable/build/src/contexts", "SvgContext.AnchorMap")
     @js.native
     def AnchorMap: js.Any = js.native
-    @scala.inline
-    def AnchorMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
+    inline def AnchorMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typesettable/build/src/contexts", "SvgUtils")
@@ -120,8 +115,7 @@ object contextsMod {
     @JSImport("typesettable/build/src/contexts", "SvgUtils.SVG_NS")
     @js.native
     def SVG_NS: String = js.native
-    @scala.inline
-    def SVG_NS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SVG_NS")(x.asInstanceOf[js.Any])
+    inline def SVG_NS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SVG_NS")(x.asInstanceOf[js.Any])
     
     /**
       * Appends an SVG element with the specified tag name to the provided element.
@@ -129,20 +123,17 @@ object contextsMod {
       *
       * Returns the new element.
       */
-    @scala.inline
-    def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
-    @scala.inline
-    def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Returns the width/height of svg element's bounding box
       */
-    @scala.inline
-    def getDimensions(element: SVGGraphicsElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
+    inline def getDimensions(element: SVGGraphicsElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
   trait IPenFactoryContext[T] extends StObject {
@@ -154,17 +145,14 @@ object contextsMod {
   }
   object IPenFactoryContext {
     
-    @scala.inline
-    def apply[T](createPen: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen): IPenFactoryContext[T] = {
+    inline def apply[T](createPen: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen): IPenFactoryContext[T] = {
       val __obj = js.Dynamic.literal(createPen = js.Any.fromFunction3(createPen))
       __obj.asInstanceOf[IPenFactoryContext[T]]
     }
     
-    @scala.inline
-    implicit class IPenFactoryContextMutableBuilder[Self <: IPenFactoryContext[?], T] (val x: Self & IPenFactoryContext[T]) extends AnyVal {
+    extension [Self <: IPenFactoryContext[?], T](x: Self & IPenFactoryContext[T]) {
       
-      @scala.inline
-      def setCreatePen(value: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen): Self = StObject.set(x, "createPen", js.Any.fromFunction3(value))
+      inline def setCreatePen(value: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen): Self = StObject.set(x, "createPen", js.Any.fromFunction3(value))
     }
   }
   
@@ -176,17 +164,14 @@ object contextsMod {
   }
   object IRulerFactoryContext {
     
-    @scala.inline
-    def apply(createRuler: () => IRuler): IRulerFactoryContext = {
+    inline def apply(createRuler: () => IRuler): IRulerFactoryContext = {
       val __obj = js.Dynamic.literal(createRuler = js.Any.fromFunction0(createRuler))
       __obj.asInstanceOf[IRulerFactoryContext]
     }
     
-    @scala.inline
-    implicit class IRulerFactoryContextMutableBuilder[Self <: IRulerFactoryContext] (val x: Self) extends AnyVal {
+    extension [Self <: IRulerFactoryContext](x: Self) {
       
-      @scala.inline
-      def setCreateRuler(value: () => IRuler): Self = StObject.set(x, "createRuler", js.Any.fromFunction0(value))
+      inline def setCreateRuler(value: () => IRuler): Self = StObject.set(x, "createRuler", js.Any.fromFunction0(value))
     }
   }
   
@@ -196,8 +181,7 @@ object contextsMod {
        with IRulerFactoryContext
   object ITypesetterContext {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       createPen: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen,
       createRuler: () => IRuler
     ): ITypesetterContext[T] = {

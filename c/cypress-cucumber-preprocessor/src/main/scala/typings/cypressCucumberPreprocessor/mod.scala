@@ -11,13 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
-  @scala.inline
-  def default(options: js.Any): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
+  inline def default(): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
+  inline def default(options: js.Any): js.Function1[/* file */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* file */ js.Any, js.Promise[String]]]
   
-  @scala.inline
-  def transform(file: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def transform(file: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait TableDefinition extends StObject {
     
@@ -35,8 +32,7 @@ object mod {
   }
   object TableDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hashes: () => js.Array[StringDictionary[String]],
       raw: () => js.Array[js.Array[String]],
       rows: () => js.Array[js.Array[String]],
@@ -46,20 +42,15 @@ object mod {
       __obj.asInstanceOf[TableDefinition]
     }
     
-    @scala.inline
-    implicit class TableDefinitionMutableBuilder[Self <: TableDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: TableDefinition](x: Self) {
       
-      @scala.inline
-      def setHashes(value: () => js.Array[StringDictionary[String]]): Self = StObject.set(x, "hashes", js.Any.fromFunction0(value))
+      inline def setHashes(value: () => js.Array[StringDictionary[String]]): Self = StObject.set(x, "hashes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRaw(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      inline def setRaw(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRows(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
+      inline def setRows(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRowsHash(value: () => StringDictionary[String]): Self = StObject.set(x, "rowsHash", js.Any.fromFunction0(value))
+      inline def setRowsHash(value: () => StringDictionary[String]): Self = StObject.set(x, "rowsHash", js.Any.fromFunction0(value))
     }
   }
 }

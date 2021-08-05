@@ -208,8 +208,7 @@ trait XSlideShowController extends StObject {
 }
 object XSlideShowController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlwaysOnTop: Boolean,
     CurrentSlide: XDrawPage,
     CurrentSlideIndex: Double,
@@ -253,121 +252,82 @@ object XSlideShowController {
     __obj.asInstanceOf[XSlideShowController]
   }
   
-  @scala.inline
-  implicit class XSlideShowControllerMutableBuilder[Self <: XSlideShowController] (val x: Self) extends AnyVal {
+  extension [Self <: XSlideShowController](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddSlideShowListener(value: XSlideShowListener => Unit): Self = StObject.set(x, "addSlideShowListener", js.Any.fromFunction1(value))
+    inline def setAddSlideShowListener(value: XSlideShowListener => Unit): Self = StObject.set(x, "addSlideShowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "AlwaysOnTop", value.asInstanceOf[js.Any])
+    inline def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "AlwaysOnTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlankScreen(value: Double => Unit): Self = StObject.set(x, "blankScreen", js.Any.fromFunction1(value))
+    inline def setBlankScreen(value: Double => Unit): Self = StObject.set(x, "blankScreen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentSlide(value: XDrawPage): Self = StObject.set(x, "CurrentSlide", value.asInstanceOf[js.Any])
+    inline def setCurrentSlide(value: XDrawPage): Self = StObject.set(x, "CurrentSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSlideIndex(value: Double): Self = StObject.set(x, "CurrentSlideIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentSlideIndex(value: Double): Self = StObject.set(x, "CurrentSlideIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
+    inline def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentSlide(value: () => XDrawPage): Self = StObject.set(x, "getCurrentSlide", js.Any.fromFunction0(value))
+    inline def setGetCurrentSlide(value: () => XDrawPage): Self = StObject.set(x, "getCurrentSlide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentSlideIndex(value: () => Double): Self = StObject.set(x, "getCurrentSlideIndex", js.Any.fromFunction0(value))
+    inline def setGetCurrentSlideIndex(value: () => Double): Self = StObject.set(x, "getCurrentSlideIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextSlideIndex(value: () => Double): Self = StObject.set(x, "getNextSlideIndex", js.Any.fromFunction0(value))
+    inline def setGetNextSlideIndex(value: () => Double): Self = StObject.set(x, "getNextSlideIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSlideByIndex(value: Double => XDrawPage): Self = StObject.set(x, "getSlideByIndex", js.Any.fromFunction1(value))
+    inline def setGetSlideByIndex(value: Double => XDrawPage): Self = StObject.set(x, "getSlideByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSlideCount(value: () => Double): Self = StObject.set(x, "getSlideCount", js.Any.fromFunction0(value))
+    inline def setGetSlideCount(value: () => Double): Self = StObject.set(x, "getSlideCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSlideShow(value: () => XSlideShow): Self = StObject.set(x, "getSlideShow", js.Any.fromFunction0(value))
+    inline def setGetSlideShow(value: () => XSlideShow): Self = StObject.set(x, "getSlideShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoBookmark(value: String => Unit): Self = StObject.set(x, "gotoBookmark", js.Any.fromFunction1(value))
+    inline def setGotoBookmark(value: String => Unit): Self = StObject.set(x, "gotoBookmark", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoFirstSlide(value: () => Unit): Self = StObject.set(x, "gotoFirstSlide", js.Any.fromFunction0(value))
+    inline def setGotoFirstSlide(value: () => Unit): Self = StObject.set(x, "gotoFirstSlide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoLastSlide(value: () => Unit): Self = StObject.set(x, "gotoLastSlide", js.Any.fromFunction0(value))
+    inline def setGotoLastSlide(value: () => Unit): Self = StObject.set(x, "gotoLastSlide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoNextEffect(value: () => Unit): Self = StObject.set(x, "gotoNextEffect", js.Any.fromFunction0(value))
+    inline def setGotoNextEffect(value: () => Unit): Self = StObject.set(x, "gotoNextEffect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoNextSlide(value: () => Unit): Self = StObject.set(x, "gotoNextSlide", js.Any.fromFunction0(value))
+    inline def setGotoNextSlide(value: () => Unit): Self = StObject.set(x, "gotoNextSlide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoPreviousEffect(value: () => Unit): Self = StObject.set(x, "gotoPreviousEffect", js.Any.fromFunction0(value))
+    inline def setGotoPreviousEffect(value: () => Unit): Self = StObject.set(x, "gotoPreviousEffect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoPreviousSlide(value: () => Unit): Self = StObject.set(x, "gotoPreviousSlide", js.Any.fromFunction0(value))
+    inline def setGotoPreviousSlide(value: () => Unit): Self = StObject.set(x, "gotoPreviousSlide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoSlide(value: XDrawPage => Unit): Self = StObject.set(x, "gotoSlide", js.Any.fromFunction1(value))
+    inline def setGotoSlide(value: XDrawPage => Unit): Self = StObject.set(x, "gotoSlide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoSlideIndex(value: Double => Unit): Self = StObject.set(x, "gotoSlideIndex", js.Any.fromFunction1(value))
+    inline def setGotoSlideIndex(value: Double => Unit): Self = StObject.set(x, "gotoSlideIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEndless(value: () => Boolean): Self = StObject.set(x, "isEndless", js.Any.fromFunction0(value))
+    inline def setIsEndless(value: () => Boolean): Self = StObject.set(x, "isEndless", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFullScreen(value: () => Boolean): Self = StObject.set(x, "isFullScreen", js.Any.fromFunction0(value))
+    inline def setIsFullScreen(value: () => Boolean): Self = StObject.set(x, "isFullScreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPaused(value: () => Boolean): Self = StObject.set(x, "isPaused", js.Any.fromFunction0(value))
+    inline def setIsPaused(value: () => Boolean): Self = StObject.set(x, "isPaused", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
+    inline def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseVisible(value: Boolean): Self = StObject.set(x, "MouseVisible", value.asInstanceOf[js.Any])
+    inline def setMouseVisible(value: Boolean): Self = StObject.set(x, "MouseVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSlideIndex(value: Double): Self = StObject.set(x, "NextSlideIndex", value.asInstanceOf[js.Any])
+    inline def setNextSlideIndex(value: Double): Self = StObject.set(x, "NextSlideIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPenColor(value: Double): Self = StObject.set(x, "PenColor", value.asInstanceOf[js.Any])
+    inline def setPenColor(value: Double): Self = StObject.set(x, "PenColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPenWidth(value: Double): Self = StObject.set(x, "PenWidth", value.asInstanceOf[js.Any])
+    inline def setPenWidth(value: Double): Self = StObject.set(x, "PenWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveSlideShowListener(value: XSlideShowListener => Unit): Self = StObject.set(x, "removeSlideShowListener", js.Any.fromFunction1(value))
+    inline def setRemoveSlideShowListener(value: XSlideShowListener => Unit): Self = StObject.set(x, "removeSlideShowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlideCount(value: Double): Self = StObject.set(x, "SlideCount", value.asInstanceOf[js.Any])
+    inline def setSlideCount(value: Double): Self = StObject.set(x, "SlideCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShow(value: XSlideShow): Self = StObject.set(x, "SlideShow", value.asInstanceOf[js.Any])
+    inline def setSlideShow(value: XSlideShow): Self = StObject.set(x, "SlideShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopSound(value: () => Unit): Self = StObject.set(x, "stopSound", js.Any.fromFunction0(value))
+    inline def setStopSound(value: () => Unit): Self = StObject.set(x, "stopSound", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUsePen(value: Boolean): Self = StObject.set(x, "UsePen", value.asInstanceOf[js.Any])
+    inline def setUsePen(value: Boolean): Self = StObject.set(x, "UsePen", value.asInstanceOf[js.Any])
   }
 }

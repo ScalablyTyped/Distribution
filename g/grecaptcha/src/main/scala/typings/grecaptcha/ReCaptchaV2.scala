@@ -16,17 +16,14 @@ object ReCaptchaV2 {
   }
   object Action {
     
-    @scala.inline
-    def apply(action: String): Action = {
+    inline def apply(action: String): Action = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,14 +35,11 @@ object ReCaptchaV2 {
   trait Badge extends StObject
   object Badge {
     
-    @scala.inline
-    def bottomleft: typings.grecaptcha.grecaptchaStrings.bottomleft = "bottomleft".asInstanceOf[typings.grecaptcha.grecaptchaStrings.bottomleft]
+    inline def bottomleft: typings.grecaptcha.grecaptchaStrings.bottomleft = "bottomleft".asInstanceOf[typings.grecaptcha.grecaptchaStrings.bottomleft]
     
-    @scala.inline
-    def bottomright: typings.grecaptcha.grecaptchaStrings.bottomright = "bottomright".asInstanceOf[typings.grecaptcha.grecaptchaStrings.bottomright]
+    inline def bottomright: typings.grecaptcha.grecaptchaStrings.bottomright = "bottomright".asInstanceOf[typings.grecaptcha.grecaptchaStrings.bottomright]
     
-    @scala.inline
-    def `inline`: typings.grecaptcha.grecaptchaStrings.`inline` = "inline".asInstanceOf[typings.grecaptcha.grecaptchaStrings.`inline`]
+    inline def `inline`: typings.grecaptcha.grecaptchaStrings.`inline` = "inline".asInstanceOf[typings.grecaptcha.grecaptchaStrings.`inline`]
   }
   
   trait Parameters extends StObject {
@@ -120,74 +114,52 @@ object ReCaptchaV2 {
   }
   object Parameters {
     
-    @scala.inline
-    def apply(): Parameters = {
+    inline def apply(): Parameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Parameters]
     }
     
-    @scala.inline
-    implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+    extension [Self <: Parameters](x: Self) {
       
-      @scala.inline
-      def setBadge(value: Badge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Badge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* response */ String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* response */ String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def `setError-callback`(value: () => Unit): Self = StObject.set(x, "error-callback", js.Any.fromFunction0(value))
+      inline def `setError-callback`(value: () => Unit): Self = StObject.set(x, "error-callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def `setError-callbackUndefined`: Self = StObject.set(x, "error-callback", js.undefined)
+      inline def `setError-callbackUndefined`: Self = StObject.set(x, "error-callback", js.undefined)
       
-      @scala.inline
-      def `setExpired-callback`(value: () => Unit): Self = StObject.set(x, "expired-callback", js.Any.fromFunction0(value))
+      inline def `setExpired-callback`(value: () => Unit): Self = StObject.set(x, "expired-callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def `setExpired-callbackUndefined`: Self = StObject.set(x, "expired-callback", js.undefined)
+      inline def `setExpired-callbackUndefined`: Self = StObject.set(x, "expired-callback", js.undefined)
       
-      @scala.inline
-      def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
+      inline def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsolatedUndefined: Self = StObject.set(x, "isolated", js.undefined)
+      inline def setIsolatedUndefined: Self = StObject.set(x, "isolated", js.undefined)
       
-      @scala.inline
-      def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
+      inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSitekeyUndefined: Self = StObject.set(x, "sitekey", js.undefined)
+      inline def setSitekeyUndefined: Self = StObject.set(x, "sitekey", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+      inline def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+      inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -256,14 +228,11 @@ object ReCaptchaV2 {
   trait Size extends StObject
   object Size {
     
-    @scala.inline
-    def compact: typings.grecaptcha.grecaptchaStrings.compact = "compact".asInstanceOf[typings.grecaptcha.grecaptchaStrings.compact]
+    inline def compact: typings.grecaptcha.grecaptchaStrings.compact = "compact".asInstanceOf[typings.grecaptcha.grecaptchaStrings.compact]
     
-    @scala.inline
-    def invisible: typings.grecaptcha.grecaptchaStrings.invisible = "invisible".asInstanceOf[typings.grecaptcha.grecaptchaStrings.invisible]
+    inline def invisible: typings.grecaptcha.grecaptchaStrings.invisible = "invisible".asInstanceOf[typings.grecaptcha.grecaptchaStrings.invisible]
     
-    @scala.inline
-    def normal: typings.grecaptcha.grecaptchaStrings.normal = "normal".asInstanceOf[typings.grecaptcha.grecaptchaStrings.normal]
+    inline def normal: typings.grecaptcha.grecaptchaStrings.normal = "normal".asInstanceOf[typings.grecaptcha.grecaptchaStrings.normal]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -273,11 +242,9 @@ object ReCaptchaV2 {
   trait Theme extends StObject
   object Theme {
     
-    @scala.inline
-    def dark: typings.grecaptcha.grecaptchaStrings.dark = "dark".asInstanceOf[typings.grecaptcha.grecaptchaStrings.dark]
+    inline def dark: typings.grecaptcha.grecaptchaStrings.dark = "dark".asInstanceOf[typings.grecaptcha.grecaptchaStrings.dark]
     
-    @scala.inline
-    def light: typings.grecaptcha.grecaptchaStrings.light = "light".asInstanceOf[typings.grecaptcha.grecaptchaStrings.light]
+    inline def light: typings.grecaptcha.grecaptchaStrings.light = "light".asInstanceOf[typings.grecaptcha.grecaptchaStrings.light]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -287,10 +254,8 @@ object ReCaptchaV2 {
   trait Type extends StObject
   object Type {
     
-    @scala.inline
-    def audio: typings.grecaptcha.grecaptchaStrings.audio = "audio".asInstanceOf[typings.grecaptcha.grecaptchaStrings.audio]
+    inline def audio: typings.grecaptcha.grecaptchaStrings.audio = "audio".asInstanceOf[typings.grecaptcha.grecaptchaStrings.audio]
     
-    @scala.inline
-    def image: typings.grecaptcha.grecaptchaStrings.image = "image".asInstanceOf[typings.grecaptcha.grecaptchaStrings.image]
+    inline def image: typings.grecaptcha.grecaptchaStrings.image = "image".asInstanceOf[typings.grecaptcha.grecaptchaStrings.image]
   }
 }

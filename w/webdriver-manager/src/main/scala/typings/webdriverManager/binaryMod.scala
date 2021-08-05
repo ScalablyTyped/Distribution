@@ -86,8 +86,7 @@ object binaryMod {
     @JSImport("webdriver-manager/built/lib/binaries/binary", "Binary.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -128,20 +127,16 @@ object binaryMod {
   }
   object BinaryUrl {
     
-    @scala.inline
-    def apply(url: String, version: String): BinaryUrl = {
+    inline def apply(url: String, version: String): BinaryUrl = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[BinaryUrl]
     }
     
-    @scala.inline
-    implicit class BinaryUrlMutableBuilder[Self <: BinaryUrl] (val x: Self) extends AnyVal {
+    extension [Self <: BinaryUrl](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

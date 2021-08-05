@@ -161,71 +161,50 @@ object mod {
   }
   object ProgressBarOptions {
     
-    @scala.inline
-    def apply(total: Double): ProgressBarOptions = {
+    inline def apply(total: Double): ProgressBarOptions = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressBarOptions]
     }
     
-    @scala.inline
-    implicit class ProgressBarOptionsMutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressBarOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setCurr(value: Double): Self = StObject.set(x, "curr", value.asInstanceOf[js.Any])
+      inline def setCurr(value: Double): Self = StObject.set(x, "curr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrUndefined: Self = StObject.set(x, "curr", js.undefined)
+      inline def setCurrUndefined: Self = StObject.set(x, "curr", js.undefined)
       
-      @scala.inline
-      def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setIncomplete(value: String): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
+      inline def setIncomplete(value: String): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncompleteUndefined: Self = StObject.set(x, "incomplete", js.undefined)
+      inline def setIncompleteUndefined: Self = StObject.set(x, "incomplete", js.undefined)
       
-      @scala.inline
-      def setRenderThrottle(value: Double): Self = StObject.set(x, "renderThrottle", value.asInstanceOf[js.Any])
+      inline def setRenderThrottle(value: Double): Self = StObject.set(x, "renderThrottle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderThrottleUndefined: Self = StObject.set(x, "renderThrottle", js.undefined)
+      inline def setRenderThrottleUndefined: Self = StObject.set(x, "renderThrottle", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

@@ -26,44 +26,32 @@ object anon {
   }
   object Boolean {
     
-    @scala.inline
-    def apply(): Boolean = {
+    inline def apply(): Boolean = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Boolean]
     }
     
-    @scala.inline
-    implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
+    extension [Self <: Boolean](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: (scala.Boolean, /* context */ CastingContext) => String): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
+      inline def setBoolean(value: (scala.Boolean, /* context */ CastingContext) => String): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      @scala.inline
-      def setDate(value: (typings.std.Date, /* context */ CastingContext) => String): Self = StObject.set(x, "date", js.Any.fromFunction2(value))
+      inline def setDate(value: (typings.std.Date, /* context */ CastingContext) => String): Self = StObject.set(x, "date", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setNumber(value: (Double, /* context */ CastingContext) => String): Self = StObject.set(x, "number", js.Any.fromFunction2(value))
+      inline def setNumber(value: (Double, /* context */ CastingContext) => String): Self = StObject.set(x, "number", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setObject(value: (Record[String, js.Any], /* context */ CastingContext) => String): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
+      inline def setObject(value: (Record[String, js.Any], /* context */ CastingContext) => String): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setString(value: (String, /* context */ CastingContext) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
+      inline def setString(value: (String, /* context */ CastingContext) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     }
   }
   
@@ -84,44 +72,32 @@ object anon {
   }
   object Date {
     
-    @scala.inline
-    def apply(): Date = {
+    inline def apply(): Date = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: (scala.Boolean, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
+      inline def setBoolean(value: (scala.Boolean, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      @scala.inline
-      def setDate(value: (typings.std.Date, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "date", js.Any.fromFunction2(value))
+      inline def setDate(value: (typings.std.Date, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "date", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setNumber(value: (Double, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "number", js.Any.fromFunction2(value))
+      inline def setNumber(value: (Double, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "number", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setObject(value: (Record[String, js.Any], /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
+      inline def setObject(value: (Record[String, js.Any], /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setString(value: (String, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
+      inline def setString(value: (String, /* context */ typings.csvStringify.mod.CastingContext) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     }
   }
 }

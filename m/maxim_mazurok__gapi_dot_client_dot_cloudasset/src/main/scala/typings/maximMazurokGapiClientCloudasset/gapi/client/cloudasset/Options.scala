@@ -48,49 +48,35 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAnalyzeServiceAccountImpersonation(value: Boolean): Self = StObject.set(x, "analyzeServiceAccountImpersonation", value.asInstanceOf[js.Any])
+    inline def setAnalyzeServiceAccountImpersonation(value: Boolean): Self = StObject.set(x, "analyzeServiceAccountImpersonation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyzeServiceAccountImpersonationUndefined: Self = StObject.set(x, "analyzeServiceAccountImpersonation", js.undefined)
+    inline def setAnalyzeServiceAccountImpersonationUndefined: Self = StObject.set(x, "analyzeServiceAccountImpersonation", js.undefined)
     
-    @scala.inline
-    def setExpandGroups(value: Boolean): Self = StObject.set(x, "expandGroups", value.asInstanceOf[js.Any])
+    inline def setExpandGroups(value: Boolean): Self = StObject.set(x, "expandGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandGroupsUndefined: Self = StObject.set(x, "expandGroups", js.undefined)
+    inline def setExpandGroupsUndefined: Self = StObject.set(x, "expandGroups", js.undefined)
     
-    @scala.inline
-    def setExpandResources(value: Boolean): Self = StObject.set(x, "expandResources", value.asInstanceOf[js.Any])
+    inline def setExpandResources(value: Boolean): Self = StObject.set(x, "expandResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandResourcesUndefined: Self = StObject.set(x, "expandResources", js.undefined)
+    inline def setExpandResourcesUndefined: Self = StObject.set(x, "expandResources", js.undefined)
     
-    @scala.inline
-    def setExpandRoles(value: Boolean): Self = StObject.set(x, "expandRoles", value.asInstanceOf[js.Any])
+    inline def setExpandRoles(value: Boolean): Self = StObject.set(x, "expandRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandRolesUndefined: Self = StObject.set(x, "expandRoles", js.undefined)
+    inline def setExpandRolesUndefined: Self = StObject.set(x, "expandRoles", js.undefined)
     
-    @scala.inline
-    def setOutputGroupEdges(value: Boolean): Self = StObject.set(x, "outputGroupEdges", value.asInstanceOf[js.Any])
+    inline def setOutputGroupEdges(value: Boolean): Self = StObject.set(x, "outputGroupEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputGroupEdgesUndefined: Self = StObject.set(x, "outputGroupEdges", js.undefined)
+    inline def setOutputGroupEdgesUndefined: Self = StObject.set(x, "outputGroupEdges", js.undefined)
     
-    @scala.inline
-    def setOutputResourceEdges(value: Boolean): Self = StObject.set(x, "outputResourceEdges", value.asInstanceOf[js.Any])
+    inline def setOutputResourceEdges(value: Boolean): Self = StObject.set(x, "outputResourceEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputResourceEdgesUndefined: Self = StObject.set(x, "outputResourceEdges", js.undefined)
+    inline def setOutputResourceEdgesUndefined: Self = StObject.set(x, "outputResourceEdges", js.undefined)
   }
 }

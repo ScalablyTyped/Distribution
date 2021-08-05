@@ -18,25 +18,19 @@ trait DBClusterRole extends StObject {
 }
 object DBClusterRole {
   
-  @scala.inline
-  def apply(): DBClusterRole = {
+  inline def apply(): DBClusterRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterRole]
   }
   
-  @scala.inline
-  implicit class DBClusterRoleMutableBuilder[Self <: DBClusterRole] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterRole](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

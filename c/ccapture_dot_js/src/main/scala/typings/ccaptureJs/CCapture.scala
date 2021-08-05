@@ -82,77 +82,54 @@ object CCapture {
   }
   object Settings {
     
-    @scala.inline
-    def apply(format: webm | gif | png | jpg | ffmpegserver): Settings = {
+    inline def apply(format: webm | gif | png | jpg | ffmpegserver): Settings = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setAutoSaveTime(value: Double): Self = StObject.set(x, "autoSaveTime", value.asInstanceOf[js.Any])
+      inline def setAutoSaveTime(value: Double): Self = StObject.set(x, "autoSaveTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveTimeUndefined: Self = StObject.set(x, "autoSaveTime", js.undefined)
+      inline def setAutoSaveTimeUndefined: Self = StObject.set(x, "autoSaveTime", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setFormat(value: webm | gif | png | jpg | ffmpegserver): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: webm | gif | png | jpg | ffmpegserver): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramerate(value: Double): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
+      inline def setFramerate(value: Double): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramerateUndefined: Self = StObject.set(x, "framerate", js.undefined)
+      inline def setFramerateUndefined: Self = StObject.set(x, "framerate", js.undefined)
       
-      @scala.inline
-      def setMotionBlurFrames(value: Double): Self = StObject.set(x, "motionBlurFrames", value.asInstanceOf[js.Any])
+      inline def setMotionBlurFrames(value: Double): Self = StObject.set(x, "motionBlurFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionBlurFramesUndefined: Self = StObject.set(x, "motionBlurFrames", js.undefined)
+      inline def setMotionBlurFramesUndefined: Self = StObject.set(x, "motionBlurFrames", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+      inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+      inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setWorkersPath(value: String): Self = StObject.set(x, "workersPath", value.asInstanceOf[js.Any])
+      inline def setWorkersPath(value: String): Self = StObject.set(x, "workersPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersPathUndefined: Self = StObject.set(x, "workersPath", js.undefined)
+      inline def setWorkersPathUndefined: Self = StObject.set(x, "workersPath", js.undefined)
     }
   }
 }

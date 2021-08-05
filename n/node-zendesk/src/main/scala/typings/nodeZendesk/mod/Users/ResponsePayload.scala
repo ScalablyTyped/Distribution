@@ -10,16 +10,13 @@ trait ResponsePayload extends StObject {
 }
 object ResponsePayload {
   
-  @scala.inline
-  def apply(user: ResponseModel): ResponsePayload = {
+  inline def apply(user: ResponseModel): ResponsePayload = {
     val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsePayload]
   }
   
-  @scala.inline
-  implicit class ResponsePayloadMutableBuilder[Self <: ResponsePayload] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsePayload](x: Self) {
     
-    @scala.inline
-    def setUser(value: ResponseModel): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ResponseModel): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

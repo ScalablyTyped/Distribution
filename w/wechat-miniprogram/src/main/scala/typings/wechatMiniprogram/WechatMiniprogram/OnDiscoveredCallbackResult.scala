@@ -14,25 +14,19 @@ trait OnDiscoveredCallbackResult extends StObject {
 }
 object OnDiscoveredCallbackResult {
   
-  @scala.inline
-  def apply(messages: js.Array[js.Any], techs: js.Array[js.Any]): OnDiscoveredCallbackResult = {
+  inline def apply(messages: js.Array[js.Any], techs: js.Array[js.Any]): OnDiscoveredCallbackResult = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], techs = techs.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDiscoveredCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnDiscoveredCallbackResultMutableBuilder[Self <: OnDiscoveredCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnDiscoveredCallbackResult](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[js.Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[js.Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: js.Any*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: js.Any*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setTechs(value: js.Array[js.Any]): Self = StObject.set(x, "techs", value.asInstanceOf[js.Any])
+    inline def setTechs(value: js.Array[js.Any]): Self = StObject.set(x, "techs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTechsVarargs(value: js.Any*): Self = StObject.set(x, "techs", js.Array(value :_*))
+    inline def setTechsVarargs(value: js.Any*): Self = StObject.set(x, "techs", js.Array(value :_*))
   }
 }

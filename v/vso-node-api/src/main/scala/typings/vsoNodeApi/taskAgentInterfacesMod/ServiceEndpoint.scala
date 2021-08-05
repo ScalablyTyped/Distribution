@@ -63,8 +63,7 @@ trait ServiceEndpoint extends StObject {
 }
 object ServiceEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     administratorsGroup: IdentityRef,
     authorization: EndpointAuthorization,
     createdBy: IdentityRef,
@@ -84,46 +83,32 @@ object ServiceEndpoint {
     __obj.asInstanceOf[ServiceEndpoint]
   }
   
-  @scala.inline
-  implicit class ServiceEndpointMutableBuilder[Self <: ServiceEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceEndpoint](x: Self) {
     
-    @scala.inline
-    def setAdministratorsGroup(value: IdentityRef): Self = StObject.set(x, "administratorsGroup", value.asInstanceOf[js.Any])
+    inline def setAdministratorsGroup(value: IdentityRef): Self = StObject.set(x, "administratorsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorization(value: EndpointAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: EndpointAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
+    inline def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
+    inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationStatus(value: js.Any): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
+    inline def setOperationStatus(value: js.Any): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadersGroup(value: IdentityRef): Self = StObject.set(x, "readersGroup", value.asInstanceOf[js.Any])
+    inline def setReadersGroup(value: IdentityRef): Self = StObject.set(x, "readersGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

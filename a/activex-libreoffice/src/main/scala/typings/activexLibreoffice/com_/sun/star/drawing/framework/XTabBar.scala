@@ -68,8 +68,7 @@ trait XTabBar extends StObject {
 }
 object XTabBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TabBarButtons: SafeArray[TabBarButton],
     addTabBarButtonAfter: (TabBarButton, TabBarButton) => Unit,
     appendTabBarButton: TabBarButton => Unit,
@@ -81,25 +80,18 @@ object XTabBar {
     __obj.asInstanceOf[XTabBar]
   }
   
-  @scala.inline
-  implicit class XTabBarMutableBuilder[Self <: XTabBar] (val x: Self) extends AnyVal {
+  extension [Self <: XTabBar](x: Self) {
     
-    @scala.inline
-    def setAddTabBarButtonAfter(value: (TabBarButton, TabBarButton) => Unit): Self = StObject.set(x, "addTabBarButtonAfter", js.Any.fromFunction2(value))
+    inline def setAddTabBarButtonAfter(value: (TabBarButton, TabBarButton) => Unit): Self = StObject.set(x, "addTabBarButtonAfter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAppendTabBarButton(value: TabBarButton => Unit): Self = StObject.set(x, "appendTabBarButton", js.Any.fromFunction1(value))
+    inline def setAppendTabBarButton(value: TabBarButton => Unit): Self = StObject.set(x, "appendTabBarButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTabBarButtons(value: () => SafeArray[TabBarButton]): Self = StObject.set(x, "getTabBarButtons", js.Any.fromFunction0(value))
+    inline def setGetTabBarButtons(value: () => SafeArray[TabBarButton]): Self = StObject.set(x, "getTabBarButtons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasTabBarButton(value: TabBarButton => Boolean): Self = StObject.set(x, "hasTabBarButton", js.Any.fromFunction1(value))
+    inline def setHasTabBarButton(value: TabBarButton => Boolean): Self = StObject.set(x, "hasTabBarButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTabBarButton(value: TabBarButton => Unit): Self = StObject.set(x, "removeTabBarButton", js.Any.fromFunction1(value))
+    inline def setRemoveTabBarButton(value: TabBarButton => Unit): Self = StObject.set(x, "removeTabBarButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTabBarButtons(value: SafeArray[TabBarButton]): Self = StObject.set(x, "TabBarButtons", value.asInstanceOf[js.Any])
+    inline def setTabBarButtons(value: SafeArray[TabBarButton]): Self = StObject.set(x, "TabBarButtons", value.asInstanceOf[js.Any])
   }
 }

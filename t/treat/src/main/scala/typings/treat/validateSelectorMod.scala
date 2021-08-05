@@ -10,6 +10,5 @@ object validateSelectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateSelector(selector: String): js.Array[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Unit]]
+  inline def validateSelector(selector: String): js.Array[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Unit]]
 }

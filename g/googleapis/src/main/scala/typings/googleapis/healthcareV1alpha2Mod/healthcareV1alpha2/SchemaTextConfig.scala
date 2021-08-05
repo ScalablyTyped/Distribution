@@ -19,28 +19,21 @@ trait SchemaTextConfig extends StObject {
 }
 object SchemaTextConfig {
   
-  @scala.inline
-  def apply(): SchemaTextConfig = {
+  inline def apply(): SchemaTextConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextConfig]
   }
   
-  @scala.inline
-  implicit class SchemaTextConfigMutableBuilder[Self <: SchemaTextConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextConfig](x: Self) {
     
-    @scala.inline
-    def setExperimentalConfig(value: String): Self = StObject.set(x, "experimentalConfig", value.asInstanceOf[js.Any])
+    inline def setExperimentalConfig(value: String): Self = StObject.set(x, "experimentalConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentalConfigUndefined: Self = StObject.set(x, "experimentalConfig", js.undefined)
+    inline def setExperimentalConfigUndefined: Self = StObject.set(x, "experimentalConfig", js.undefined)
     
-    @scala.inline
-    def setTransformations(value: js.Array[SchemaInfoTypeTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+    inline def setTransformations(value: js.Array[SchemaInfoTypeTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+    inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
     
-    @scala.inline
-    def setTransformationsVarargs(value: SchemaInfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+    inline def setTransformationsVarargs(value: SchemaInfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
   }
 }

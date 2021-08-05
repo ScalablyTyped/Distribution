@@ -58,8 +58,7 @@ trait MediaProperties extends StObject {
 }
 object MediaProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FilterData: PropertyValues,
     InputStream: XInputStream,
     MimeType: String,
@@ -70,25 +69,18 @@ object MediaProperties {
     __obj.asInstanceOf[MediaProperties]
   }
   
-  @scala.inline
-  implicit class MediaPropertiesMutableBuilder[Self <: MediaProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MediaProperties](x: Self) {
     
-    @scala.inline
-    def setFilterData(value: PropertyValues): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
+    inline def setFilterData(value: PropertyValues): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterDataVarargs(value: PropertyValue*): Self = StObject.set(x, "FilterData", js.Array(value :_*))
+    inline def setFilterDataVarargs(value: PropertyValue*): Self = StObject.set(x, "FilterData", js.Array(value :_*))
     
-    @scala.inline
-    def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
+    inline def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputStream(value: XStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
+    inline def setOutputStream(value: XStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

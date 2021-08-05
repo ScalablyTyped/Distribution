@@ -18,31 +18,23 @@ trait ECPointFp extends StObject {
 }
 object ECPointFp {
   
-  @scala.inline
-  def apply(curve: ECFieldElementFp, x: ECFieldElementFp, y: ECFieldElementFp, z: BigInteger): ECPointFp = {
+  inline def apply(curve: ECFieldElementFp, x: ECFieldElementFp, y: ECFieldElementFp, z: BigInteger): ECPointFp = {
     val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zinv = null)
     __obj.asInstanceOf[ECPointFp]
   }
   
-  @scala.inline
-  implicit class ECPointFpMutableBuilder[Self <: ECPointFp] (val x: Self) extends AnyVal {
+  extension [Self <: ECPointFp](x: Self) {
     
-    @scala.inline
-    def setCurve(value: ECFieldElementFp): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: ECFieldElementFp): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: ECFieldElementFp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: ECFieldElementFp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: ECFieldElementFp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: ECFieldElementFp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: BigInteger): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: BigInteger): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZinv(value: BigInteger): Self = StObject.set(x, "zinv", value.asInstanceOf[js.Any])
+    inline def setZinv(value: BigInteger): Self = StObject.set(x, "zinv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZinvNull: Self = StObject.set(x, "zinv", null)
+    inline def setZinvNull: Self = StObject.set(x, "zinv", null)
   }
 }

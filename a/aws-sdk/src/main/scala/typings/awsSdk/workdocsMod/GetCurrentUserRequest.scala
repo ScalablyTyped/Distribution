@@ -13,16 +13,13 @@ trait GetCurrentUserRequest extends StObject {
 }
 object GetCurrentUserRequest {
   
-  @scala.inline
-  def apply(AuthenticationToken: AuthenticationHeaderType): GetCurrentUserRequest = {
+  inline def apply(AuthenticationToken: AuthenticationHeaderType): GetCurrentUserRequest = {
     val __obj = js.Dynamic.literal(AuthenticationToken = AuthenticationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCurrentUserRequest]
   }
   
-  @scala.inline
-  implicit class GetCurrentUserRequestMutableBuilder[Self <: GetCurrentUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCurrentUserRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
   }
 }

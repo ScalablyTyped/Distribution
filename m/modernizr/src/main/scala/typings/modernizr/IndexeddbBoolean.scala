@@ -13,16 +13,13 @@ trait IndexeddbBoolean
 }
 object IndexeddbBoolean {
   
-  @scala.inline
-  def apply(deletedatabase: scala.Boolean): IndexeddbBoolean = {
+  inline def apply(deletedatabase: scala.Boolean): IndexeddbBoolean = {
     val __obj = js.Dynamic.literal(deletedatabase = deletedatabase.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexeddbBoolean]
   }
   
-  @scala.inline
-  implicit class IndexeddbBooleanMutableBuilder[Self <: IndexeddbBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: IndexeddbBoolean](x: Self) {
     
-    @scala.inline
-    def setDeletedatabase(value: scala.Boolean): Self = StObject.set(x, "deletedatabase", value.asInstanceOf[js.Any])
+    inline def setDeletedatabase(value: scala.Boolean): Self = StObject.set(x, "deletedatabase", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait AssociateFleetRequest extends StObject {
 }
 object AssociateFleetRequest {
   
-  @scala.inline
-  def apply(FleetName: String, StackName: String): AssociateFleetRequest = {
+  inline def apply(FleetName: String, StackName: String): AssociateFleetRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateFleetRequest]
   }
   
-  @scala.inline
-  implicit class AssociateFleetRequestMutableBuilder[Self <: AssociateFleetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateFleetRequest](x: Self) {
     
-    @scala.inline
-    def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
+    inline def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

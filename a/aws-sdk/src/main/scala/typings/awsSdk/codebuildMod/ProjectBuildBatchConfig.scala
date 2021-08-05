@@ -28,37 +28,27 @@ trait ProjectBuildBatchConfig extends StObject {
 }
 object ProjectBuildBatchConfig {
   
-  @scala.inline
-  def apply(): ProjectBuildBatchConfig = {
+  inline def apply(): ProjectBuildBatchConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectBuildBatchConfig]
   }
   
-  @scala.inline
-  implicit class ProjectBuildBatchConfigMutableBuilder[Self <: ProjectBuildBatchConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectBuildBatchConfig](x: Self) {
     
-    @scala.inline
-    def setCombineArtifacts(value: WrapperBoolean): Self = StObject.set(x, "combineArtifacts", value.asInstanceOf[js.Any])
+    inline def setCombineArtifacts(value: WrapperBoolean): Self = StObject.set(x, "combineArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombineArtifactsUndefined: Self = StObject.set(x, "combineArtifacts", js.undefined)
+    inline def setCombineArtifactsUndefined: Self = StObject.set(x, "combineArtifacts", js.undefined)
     
-    @scala.inline
-    def setRestrictions(value: BatchRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: BatchRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+    inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
-    @scala.inline
-    def setServiceRole(value: NonEmptyString): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: NonEmptyString): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
+    inline def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
     
-    @scala.inline
-    def setTimeoutInMins(value: WrapperInt): Self = StObject.set(x, "timeoutInMins", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMins(value: WrapperInt): Self = StObject.set(x, "timeoutInMins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinsUndefined: Self = StObject.set(x, "timeoutInMins", js.undefined)
+    inline def setTimeoutInMinsUndefined: Self = StObject.set(x, "timeoutInMins", js.undefined)
   }
 }

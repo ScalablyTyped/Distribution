@@ -10,16 +10,13 @@ trait EventStreamSerdeContext extends StObject {
 }
 object EventStreamSerdeContext {
   
-  @scala.inline
-  def apply(eventStreamMarshaller: EventStreamMarshaller): EventStreamSerdeContext = {
+  inline def apply(eventStreamMarshaller: EventStreamMarshaller): EventStreamSerdeContext = {
     val __obj = js.Dynamic.literal(eventStreamMarshaller = eventStreamMarshaller.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventStreamSerdeContext]
   }
   
-  @scala.inline
-  implicit class EventStreamSerdeContextMutableBuilder[Self <: EventStreamSerdeContext] (val x: Self) extends AnyVal {
+  extension [Self <: EventStreamSerdeContext](x: Self) {
     
-    @scala.inline
-    def setEventStreamMarshaller(value: EventStreamMarshaller): Self = StObject.set(x, "eventStreamMarshaller", value.asInstanceOf[js.Any])
+    inline def setEventStreamMarshaller(value: EventStreamMarshaller): Self = StObject.set(x, "eventStreamMarshaller", value.asInstanceOf[js.Any])
   }
 }

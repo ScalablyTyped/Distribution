@@ -63,79 +63,55 @@ trait GameServer extends StObject {
 }
 object GameServer {
   
-  @scala.inline
-  def apply(): GameServer = {
+  inline def apply(): GameServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameServer]
   }
   
-  @scala.inline
-  implicit class GameServerMutableBuilder[Self <: GameServer] (val x: Self) extends AnyVal {
+  extension [Self <: GameServer](x: Self) {
     
-    @scala.inline
-    def setClaimStatus(value: GameServerClaimStatus): Self = StObject.set(x, "ClaimStatus", value.asInstanceOf[js.Any])
+    inline def setClaimStatus(value: GameServerClaimStatus): Self = StObject.set(x, "ClaimStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimStatusUndefined: Self = StObject.set(x, "ClaimStatus", js.undefined)
+    inline def setClaimStatusUndefined: Self = StObject.set(x, "ClaimStatus", js.undefined)
     
-    @scala.inline
-    def setConnectionInfo(value: GameServerConnectionInfo): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
+    inline def setConnectionInfo(value: GameServerConnectionInfo): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionInfoUndefined: Self = StObject.set(x, "ConnectionInfo", js.undefined)
+    inline def setConnectionInfoUndefined: Self = StObject.set(x, "ConnectionInfo", js.undefined)
     
-    @scala.inline
-    def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
+    inline def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
+    inline def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupArn(value: GameServerGroupArn): Self = StObject.set(x, "GameServerGroupArn", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupArn(value: GameServerGroupArn): Self = StObject.set(x, "GameServerGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerGroupArnUndefined: Self = StObject.set(x, "GameServerGroupArn", js.undefined)
+    inline def setGameServerGroupArnUndefined: Self = StObject.set(x, "GameServerGroupArn", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupName): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupName): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerGroupNameUndefined: Self = StObject.set(x, "GameServerGroupName", js.undefined)
+    inline def setGameServerGroupNameUndefined: Self = StObject.set(x, "GameServerGroupName", js.undefined)
     
-    @scala.inline
-    def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
+    inline def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerIdUndefined: Self = StObject.set(x, "GameServerId", js.undefined)
+    inline def setGameServerIdUndefined: Self = StObject.set(x, "GameServerId", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: GameServerInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: GameServerInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setLastClaimTime(value: Timestamp): Self = StObject.set(x, "LastClaimTime", value.asInstanceOf[js.Any])
+    inline def setLastClaimTime(value: Timestamp): Self = StObject.set(x, "LastClaimTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastClaimTimeUndefined: Self = StObject.set(x, "LastClaimTime", js.undefined)
+    inline def setLastClaimTimeUndefined: Self = StObject.set(x, "LastClaimTime", js.undefined)
     
-    @scala.inline
-    def setLastHealthCheckTime(value: Timestamp): Self = StObject.set(x, "LastHealthCheckTime", value.asInstanceOf[js.Any])
+    inline def setLastHealthCheckTime(value: Timestamp): Self = StObject.set(x, "LastHealthCheckTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastHealthCheckTimeUndefined: Self = StObject.set(x, "LastHealthCheckTime", js.undefined)
+    inline def setLastHealthCheckTimeUndefined: Self = StObject.set(x, "LastHealthCheckTime", js.undefined)
     
-    @scala.inline
-    def setRegistrationTime(value: Timestamp): Self = StObject.set(x, "RegistrationTime", value.asInstanceOf[js.Any])
+    inline def setRegistrationTime(value: Timestamp): Self = StObject.set(x, "RegistrationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationTimeUndefined: Self = StObject.set(x, "RegistrationTime", js.undefined)
+    inline def setRegistrationTimeUndefined: Self = StObject.set(x, "RegistrationTime", js.undefined)
     
-    @scala.inline
-    def setUtilizationStatus(value: GameServerUtilizationStatus): Self = StObject.set(x, "UtilizationStatus", value.asInstanceOf[js.Any])
+    inline def setUtilizationStatus(value: GameServerUtilizationStatus): Self = StObject.set(x, "UtilizationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationStatusUndefined: Self = StObject.set(x, "UtilizationStatus", js.undefined)
+    inline def setUtilizationStatusUndefined: Self = StObject.set(x, "UtilizationStatus", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait FamilyRole extends StObject {
 }
 object FamilyRole {
   
-  @scala.inline
-  def apply(): FamilyRole = {
+  inline def apply(): FamilyRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FamilyRole]
   }
   
-  @scala.inline
-  implicit class FamilyRoleMutableBuilder[Self <: FamilyRole] (val x: Self) extends AnyVal {
+  extension [Self <: FamilyRole](x: Self) {
     
-    @scala.inline
-    def setFamilyRole(value: String): Self = StObject.set(x, "familyRole", value.asInstanceOf[js.Any])
+    inline def setFamilyRole(value: String): Self = StObject.set(x, "familyRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyRoleUndefined: Self = StObject.set(x, "familyRole", js.undefined)
+    inline def setFamilyRoleUndefined: Self = StObject.set(x, "familyRole", js.undefined)
     
-    @scala.inline
-    def setIsSharingAllowed(value: Boolean): Self = StObject.set(x, "isSharingAllowed", value.asInstanceOf[js.Any])
+    inline def setIsSharingAllowed(value: Boolean): Self = StObject.set(x, "isSharingAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSharingAllowedUndefined: Self = StObject.set(x, "isSharingAllowed", js.undefined)
+    inline def setIsSharingAllowedUndefined: Self = StObject.set(x, "isSharingAllowed", js.undefined)
     
-    @scala.inline
-    def setIsSharingDisabledByFop(value: Boolean): Self = StObject.set(x, "isSharingDisabledByFop", value.asInstanceOf[js.Any])
+    inline def setIsSharingDisabledByFop(value: Boolean): Self = StObject.set(x, "isSharingDisabledByFop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSharingDisabledByFopUndefined: Self = StObject.set(x, "isSharingDisabledByFop", js.undefined)
+    inline def setIsSharingDisabledByFopUndefined: Self = StObject.set(x, "isSharingDisabledByFop", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait IGridResultSet extends StObject {
 }
 object IGridResultSet {
   
-  @scala.inline
-  def apply(columns: js.Array[IDbColumn], numberOfRows: Double, rowsUri: String): IGridResultSet = {
+  inline def apply(columns: js.Array[IDbColumn], numberOfRows: Double, rowsUri: String): IGridResultSet = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], numberOfRows = numberOfRows.asInstanceOf[js.Any], rowsUri = rowsUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridResultSet]
   }
   
-  @scala.inline
-  implicit class IGridResultSetMutableBuilder[Self <: IGridResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: IGridResultSet](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[IDbColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[IDbColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: IDbColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IDbColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setNumberOfRows(value: Double): Self = StObject.set(x, "numberOfRows", value.asInstanceOf[js.Any])
+    inline def setNumberOfRows(value: Double): Self = StObject.set(x, "numberOfRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUri(value: String): Self = StObject.set(x, "rowsUri", value.asInstanceOf[js.Any])
+    inline def setRowsUri(value: String): Self = StObject.set(x, "rowsUri", value.asInstanceOf[js.Any])
   }
 }

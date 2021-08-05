@@ -24,16 +24,13 @@ trait ParaUserDefinedAttributesSupplier extends StObject {
 }
 object ParaUserDefinedAttributesSupplier {
   
-  @scala.inline
-  def apply(ParaUserDefinedAttributes: XNameContainer): ParaUserDefinedAttributesSupplier = {
+  inline def apply(ParaUserDefinedAttributes: XNameContainer): ParaUserDefinedAttributesSupplier = {
     val __obj = js.Dynamic.literal(ParaUserDefinedAttributes = ParaUserDefinedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParaUserDefinedAttributesSupplier]
   }
   
-  @scala.inline
-  implicit class ParaUserDefinedAttributesSupplierMutableBuilder[Self <: ParaUserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: ParaUserDefinedAttributesSupplier](x: Self) {
     
-    @scala.inline
-    def setParaUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "ParaUserDefinedAttributes", value.asInstanceOf[js.Any])
+    inline def setParaUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "ParaUserDefinedAttributes", value.asInstanceOf[js.Any])
   }
 }

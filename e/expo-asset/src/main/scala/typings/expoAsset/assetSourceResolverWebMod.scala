@@ -58,8 +58,7 @@ object assetSourceResolverWebMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def pickScale(scales: js.Array[Double], deviceScale: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pickScale")(scales.asInstanceOf[js.Any], deviceScale.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def pickScale(scales: js.Array[Double], deviceScale: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pickScale")(scales.asInstanceOf[js.Any], deviceScale.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   trait AssetSourceResolver extends StObject {
@@ -90,8 +89,7 @@ object assetSourceResolverWebMod {
   }
   object AssetSourceResolver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asset: PackagerAsset,
       assetServerURL: () => ResolvedAssetSource,
       defaultAsset: () => ResolvedAssetSource,
@@ -107,56 +105,39 @@ object assetSourceResolverWebMod {
       __obj.asInstanceOf[AssetSourceResolver]
     }
     
-    @scala.inline
-    implicit class AssetSourceResolverMutableBuilder[Self <: AssetSourceResolver] (val x: Self) extends AnyVal {
+    extension [Self <: AssetSourceResolver](x: Self) {
       
-      @scala.inline
-      def setAsset(value: PackagerAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+      inline def setAsset(value: PackagerAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetServerURL(value: () => ResolvedAssetSource): Self = StObject.set(x, "assetServerURL", js.Any.fromFunction0(value))
+      inline def setAssetServerURL(value: () => ResolvedAssetSource): Self = StObject.set(x, "assetServerURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultAsset(value: () => ResolvedAssetSource): Self = StObject.set(x, "defaultAsset", js.Any.fromFunction0(value))
+      inline def setDefaultAsset(value: () => ResolvedAssetSource): Self = StObject.set(x, "defaultAsset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDrawableFolderInBundle(value: () => ResolvedAssetSource): Self = StObject.set(x, "drawableFolderInBundle", js.Any.fromFunction0(value))
+      inline def setDrawableFolderInBundle(value: () => ResolvedAssetSource): Self = StObject.set(x, "drawableFolderInBundle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFromSource(value: String => ResolvedAssetSource): Self = StObject.set(x, "fromSource", js.Any.fromFunction1(value))
+      inline def setFromSource(value: String => ResolvedAssetSource): Self = StObject.set(x, "fromSource", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLoadedFromFileSystem(value: () => Boolean): Self = StObject.set(x, "isLoadedFromFileSystem", js.Any.fromFunction0(value))
+      inline def setIsLoadedFromFileSystem(value: () => Boolean): Self = StObject.set(x, "isLoadedFromFileSystem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoadedFromServer(value: () => Boolean): Self = StObject.set(x, "isLoadedFromServer", js.Any.fromFunction0(value))
+      inline def setIsLoadedFromServer(value: () => Boolean): Self = StObject.set(x, "isLoadedFromServer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setJsbundleUrl(value: String): Self = StObject.set(x, "jsbundleUrl", value.asInstanceOf[js.Any])
+      inline def setJsbundleUrl(value: String): Self = StObject.set(x, "jsbundleUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsbundleUrlNull: Self = StObject.set(x, "jsbundleUrl", null)
+      inline def setJsbundleUrlNull: Self = StObject.set(x, "jsbundleUrl", null)
       
-      @scala.inline
-      def setJsbundleUrlUndefined: Self = StObject.set(x, "jsbundleUrl", js.undefined)
+      inline def setJsbundleUrlUndefined: Self = StObject.set(x, "jsbundleUrl", js.undefined)
       
-      @scala.inline
-      def setResourceIdentifierWithoutScale(value: () => ResolvedAssetSource): Self = StObject.set(x, "resourceIdentifierWithoutScale", js.Any.fromFunction0(value))
+      inline def setResourceIdentifierWithoutScale(value: () => ResolvedAssetSource): Self = StObject.set(x, "resourceIdentifierWithoutScale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScaledAssetPath(value: () => ResolvedAssetSource): Self = StObject.set(x, "scaledAssetPath", js.Any.fromFunction0(value))
+      inline def setScaledAssetPath(value: () => ResolvedAssetSource): Self = StObject.set(x, "scaledAssetPath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScaledAssetURLNearBundle(value: () => ResolvedAssetSource): Self = StObject.set(x, "scaledAssetURLNearBundle", js.Any.fromFunction0(value))
+      inline def setScaledAssetURLNearBundle(value: () => ResolvedAssetSource): Self = StObject.set(x, "scaledAssetURLNearBundle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
+      inline def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUrlNull: Self = StObject.set(x, "serverUrl", null)
+      inline def setServerUrlNull: Self = StObject.set(x, "serverUrl", null)
       
-      @scala.inline
-      def setServerUrlUndefined: Self = StObject.set(x, "serverUrl", js.undefined)
+      inline def setServerUrlUndefined: Self = StObject.set(x, "serverUrl", js.undefined)
     }
   }
   
@@ -182,8 +163,7 @@ object assetSourceResolverWebMod {
   }
   object PackagerAsset {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __packager_asset: Boolean,
       fileSystemLocation: String,
       hash: String,
@@ -197,44 +177,31 @@ object assetSourceResolverWebMod {
       __obj.asInstanceOf[PackagerAsset]
     }
     
-    @scala.inline
-    implicit class PackagerAssetMutableBuilder[Self <: PackagerAsset] (val x: Self) extends AnyVal {
+    extension [Self <: PackagerAsset](x: Self) {
       
-      @scala.inline
-      def setFileSystemLocation(value: String): Self = StObject.set(x, "fileSystemLocation", value.asInstanceOf[js.Any])
+      inline def setFileSystemLocation(value: String): Self = StObject.set(x, "fileSystemLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHttpServerLocation(value: String): Self = StObject.set(x, "httpServerLocation", value.asInstanceOf[js.Any])
+      inline def setHttpServerLocation(value: String): Self = StObject.set(x, "httpServerLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+      inline def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def set__packager_asset(value: Boolean): Self = StObject.set(x, "__packager_asset", value.asInstanceOf[js.Any])
+      inline def set__packager_asset(value: Boolean): Self = StObject.set(x, "__packager_asset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,35 +219,26 @@ object assetSourceResolverWebMod {
   }
   object ResolvedAssetSource {
     
-    @scala.inline
-    def apply(__packager_asset: Boolean, scale: Double, uri: String): ResolvedAssetSource = {
+    inline def apply(__packager_asset: Boolean, scale: Double, uri: String): ResolvedAssetSource = {
       val __obj = js.Dynamic.literal(__packager_asset = __packager_asset.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedAssetSource]
     }
     
-    @scala.inline
-    implicit class ResolvedAssetSourceMutableBuilder[Self <: ResolvedAssetSource] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedAssetSource](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def set__packager_asset(value: Boolean): Self = StObject.set(x, "__packager_asset", value.asInstanceOf[js.Any])
+      inline def set__packager_asset(value: Boolean): Self = StObject.set(x, "__packager_asset", value.asInstanceOf[js.Any])
     }
   }
 }

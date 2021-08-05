@@ -23,25 +23,19 @@ trait SchemaConcatPosition extends StObject {
 }
 object SchemaConcatPosition {
   
-  @scala.inline
-  def apply(): SchemaConcatPosition = {
+  inline def apply(): SchemaConcatPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConcatPosition]
   }
   
-  @scala.inline
-  implicit class SchemaConcatPositionMutableBuilder[Self <: SchemaConcatPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConcatPosition](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

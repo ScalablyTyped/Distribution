@@ -35,76 +35,53 @@ trait RouterStatusNatStatus extends StObject {
 }
 object RouterStatusNatStatus {
   
-  @scala.inline
-  def apply(): RouterStatusNatStatus = {
+  inline def apply(): RouterStatusNatStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouterStatusNatStatus]
   }
   
-  @scala.inline
-  implicit class RouterStatusNatStatusMutableBuilder[Self <: RouterStatusNatStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RouterStatusNatStatus](x: Self) {
     
-    @scala.inline
-    def setAutoAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "autoAllocatedNatIps", value.asInstanceOf[js.Any])
+    inline def setAutoAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "autoAllocatedNatIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAllocatedNatIpsUndefined: Self = StObject.set(x, "autoAllocatedNatIps", js.undefined)
+    inline def setAutoAllocatedNatIpsUndefined: Self = StObject.set(x, "autoAllocatedNatIps", js.undefined)
     
-    @scala.inline
-    def setAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "autoAllocatedNatIps", js.Array(value :_*))
+    inline def setAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "autoAllocatedNatIps", js.Array(value :_*))
     
-    @scala.inline
-    def setDrainAutoAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "drainAutoAllocatedNatIps", value.asInstanceOf[js.Any])
+    inline def setDrainAutoAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "drainAutoAllocatedNatIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrainAutoAllocatedNatIpsUndefined: Self = StObject.set(x, "drainAutoAllocatedNatIps", js.undefined)
+    inline def setDrainAutoAllocatedNatIpsUndefined: Self = StObject.set(x, "drainAutoAllocatedNatIps", js.undefined)
     
-    @scala.inline
-    def setDrainAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainAutoAllocatedNatIps", js.Array(value :_*))
+    inline def setDrainAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainAutoAllocatedNatIps", js.Array(value :_*))
     
-    @scala.inline
-    def setDrainUserAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "drainUserAllocatedNatIps", value.asInstanceOf[js.Any])
+    inline def setDrainUserAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "drainUserAllocatedNatIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrainUserAllocatedNatIpsUndefined: Self = StObject.set(x, "drainUserAllocatedNatIps", js.undefined)
+    inline def setDrainUserAllocatedNatIpsUndefined: Self = StObject.set(x, "drainUserAllocatedNatIps", js.undefined)
     
-    @scala.inline
-    def setDrainUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainUserAllocatedNatIps", js.Array(value :_*))
+    inline def setDrainUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "drainUserAllocatedNatIps", js.Array(value :_*))
     
-    @scala.inline
-    def setMinExtraNatIpsNeeded(value: Double): Self = StObject.set(x, "minExtraNatIpsNeeded", value.asInstanceOf[js.Any])
+    inline def setMinExtraNatIpsNeeded(value: Double): Self = StObject.set(x, "minExtraNatIpsNeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinExtraNatIpsNeededUndefined: Self = StObject.set(x, "minExtraNatIpsNeeded", js.undefined)
+    inline def setMinExtraNatIpsNeededUndefined: Self = StObject.set(x, "minExtraNatIpsNeeded", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumVmEndpointsWithNatMappings(value: Double): Self = StObject.set(x, "numVmEndpointsWithNatMappings", value.asInstanceOf[js.Any])
+    inline def setNumVmEndpointsWithNatMappings(value: Double): Self = StObject.set(x, "numVmEndpointsWithNatMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumVmEndpointsWithNatMappingsUndefined: Self = StObject.set(x, "numVmEndpointsWithNatMappings", js.undefined)
+    inline def setNumVmEndpointsWithNatMappingsUndefined: Self = StObject.set(x, "numVmEndpointsWithNatMappings", js.undefined)
     
-    @scala.inline
-    def setUserAllocatedNatIpResources(value: js.Array[String]): Self = StObject.set(x, "userAllocatedNatIpResources", value.asInstanceOf[js.Any])
+    inline def setUserAllocatedNatIpResources(value: js.Array[String]): Self = StObject.set(x, "userAllocatedNatIpResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAllocatedNatIpResourcesUndefined: Self = StObject.set(x, "userAllocatedNatIpResources", js.undefined)
+    inline def setUserAllocatedNatIpResourcesUndefined: Self = StObject.set(x, "userAllocatedNatIpResources", js.undefined)
     
-    @scala.inline
-    def setUserAllocatedNatIpResourcesVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIpResources", js.Array(value :_*))
+    inline def setUserAllocatedNatIpResourcesVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIpResources", js.Array(value :_*))
     
-    @scala.inline
-    def setUserAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "userAllocatedNatIps", value.asInstanceOf[js.Any])
+    inline def setUserAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "userAllocatedNatIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAllocatedNatIpsUndefined: Self = StObject.set(x, "userAllocatedNatIps", js.undefined)
+    inline def setUserAllocatedNatIpsUndefined: Self = StObject.set(x, "userAllocatedNatIps", js.undefined)
     
-    @scala.inline
-    def setUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIps", js.Array(value :_*))
+    inline def setUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIps", js.Array(value :_*))
   }
 }

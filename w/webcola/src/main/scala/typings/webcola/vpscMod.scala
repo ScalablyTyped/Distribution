@@ -17,25 +17,25 @@ object vpscMod {
   class Block protected () extends StObject {
     def this(v: Variable) = this()
     
-    var addVariable: js.Any = js.native
+    /* private */ var addVariable: js.Any = js.native
     
     var blockInd: Double = js.native
     
-    var compute_lm: js.Any = js.native
+    /* private */ var compute_lm: js.Any = js.native
     
     def cost(): Double = js.native
     
     def findMinLM(): Constraint = js.native
     
-    var findMinLMBetween: js.Any = js.native
+    /* private */ var findMinLMBetween: js.Any = js.native
     
-    var findPath: js.Any = js.native
+    /* private */ var findPath: js.Any = js.native
     
     def isActiveDirectedPathBetween(u: Variable, v: Variable): Boolean = js.native
     
     def mergeAcross(b: Block, c: Constraint, dist: Double): Unit = js.native
     
-    var populateSplitBlock: js.Any = js.native
+    /* private */ var populateSplitBlock: js.Any = js.native
     
     var posn: Double = js.native
     
@@ -67,11 +67,9 @@ object vpscMod {
     @JSImport("webcola/dist/src/vpsc", "Block.createSplitBlock")
     @js.native
     def createSplitBlock: js.Any = js.native
-    @scala.inline
-    def createSplitBlock_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
+    inline def createSplitBlock_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def split(c: Constraint): js.Array[Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(c.asInstanceOf[js.Any]).asInstanceOf[js.Array[Block]]
+    inline def split(c: Constraint): js.Array[Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(c.asInstanceOf[js.Any]).asInstanceOf[js.Array[Block]]
   }
   
   @JSImport("webcola/dist/src/vpsc", "Blocks")
@@ -85,7 +83,7 @@ object vpscMod {
     
     def insert(b: Block): Unit = js.native
     
-    var list: js.Any = js.native
+    /* private */ var list: js.Any = js.native
     
     def merge(c: Constraint): Unit = js.native
     
@@ -152,7 +150,7 @@ object vpscMod {
     
     var inactive: js.Array[Constraint] = js.native
     
-    var mostViolated: js.Any = js.native
+    /* private */ var mostViolated: js.Any = js.native
     
     def satisfy(): Unit = js.native
     
@@ -174,14 +172,12 @@ object vpscMod {
     @JSImport("webcola/dist/src/vpsc", "Solver.LAGRANGIAN_TOLERANCE")
     @js.native
     def LAGRANGIAN_TOLERANCE: Double = js.native
-    @scala.inline
-    def LAGRANGIAN_TOLERANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAGRANGIAN_TOLERANCE")(x.asInstanceOf[js.Any])
+    inline def LAGRANGIAN_TOLERANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAGRANGIAN_TOLERANCE")(x.asInstanceOf[js.Any])
     
     @JSImport("webcola/dist/src/vpsc", "Solver.ZERO_UPPERBOUND")
     @js.native
     def ZERO_UPPERBOUND: Double = js.native
-    @scala.inline
-    def ZERO_UPPERBOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO_UPPERBOUND")(x.asInstanceOf[js.Any])
+    inline def ZERO_UPPERBOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO_UPPERBOUND")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webcola/dist/src/vpsc", "Variable")
@@ -213,12 +209,8 @@ object vpscMod {
     var weight: Double = js.native
   }
   
-  @scala.inline
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter]): LowerBound = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any]).asInstanceOf[LowerBound]
-  @scala.inline
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double): LowerBound = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any], lowerBound.asInstanceOf[js.Any])).asInstanceOf[LowerBound]
-  @scala.inline
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double, upperBound: Double): LowerBound = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any], lowerBound.asInstanceOf[js.Any], upperBound.asInstanceOf[js.Any])).asInstanceOf[LowerBound]
-  @scala.inline
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Unit, upperBound: Double): LowerBound = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any], lowerBound.asInstanceOf[js.Any], upperBound.asInstanceOf[js.Any])).asInstanceOf[LowerBound]
+  inline def removeOverlapInOneDimension(spans: js.Array[DesiredCenter]): LowerBound = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any]).asInstanceOf[LowerBound]
+  inline def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double): LowerBound = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any], lowerBound.asInstanceOf[js.Any])).asInstanceOf[LowerBound]
+  inline def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double, upperBound: Double): LowerBound = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any], lowerBound.asInstanceOf[js.Any], upperBound.asInstanceOf[js.Any])).asInstanceOf[LowerBound]
+  inline def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Unit, upperBound: Double): LowerBound = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlapInOneDimension")(spans.asInstanceOf[js.Any], lowerBound.asInstanceOf[js.Any], upperBound.asInstanceOf[js.Any])).asInstanceOf[LowerBound]
 }

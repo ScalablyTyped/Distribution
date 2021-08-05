@@ -32,47 +32,34 @@ object buttonMod extends Shortcut {
   }
   object ButtonProps {
     
-    @scala.inline
-    def apply(iconSrc: ImageSourcePropType, onPress: () => Unit): ButtonProps = {
+    inline def apply(iconSrc: ImageSourcePropType, onPress: () => Unit): ButtonProps = {
       val __obj = js.Dynamic.literal(iconSrc = iconSrc.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
       __obj.asInstanceOf[ButtonProps]
     }
     
-    @scala.inline
-    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonProps](x: Self) {
       
-      @scala.inline
-      def setButtonStyle(value: StyleProp[ViewProps]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+      inline def setButtonStyle(value: StyleProp[ViewProps]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
+      inline def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
       
-      @scala.inline
-      def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+      inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIconSrc(value: ImageSourcePropType): Self = StObject.set(x, "iconSrc", value.asInstanceOf[js.Any])
+      inline def setIconSrc(value: ImageSourcePropType): Self = StObject.set(x, "iconSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconSrcVarargs(value: ImageURISource*): Self = StObject.set(x, "iconSrc", js.Array(value :_*))
+      inline def setIconSrcVarargs(value: ImageURISource*): Self = StObject.set(x, "iconSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTextStyle(value: StyleProp[TextProps]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextProps]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     }
   }
   

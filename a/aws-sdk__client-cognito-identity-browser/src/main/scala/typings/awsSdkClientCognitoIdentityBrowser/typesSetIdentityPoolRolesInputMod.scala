@@ -54,46 +54,34 @@ object typesSetIdentityPoolRolesInputMod {
   }
   object SetIdentityPoolRolesInput {
     
-    @scala.inline
-    def apply(IdentityPoolId: String, Roles: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): SetIdentityPoolRolesInput = {
+    inline def apply(IdentityPoolId: String, Roles: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): SetIdentityPoolRolesInput = {
       val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Roles = Roles.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetIdentityPoolRolesInput]
     }
     
-    @scala.inline
-    implicit class SetIdentityPoolRolesInputMutableBuilder[Self <: SetIdentityPoolRolesInput] (val x: Self) extends AnyVal {
+    extension [Self <: SetIdentityPoolRolesInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleMappings(value: StringDictionary[RoleMapping] | (Iterable[js.Tuple2[String, RoleMapping]])): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
+      inline def setRoleMappings(value: StringDictionary[RoleMapping] | (Iterable[js.Tuple2[String, RoleMapping]])): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
+      inline def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
       
-      @scala.inline
-      def setRoles(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     }
   }
 }

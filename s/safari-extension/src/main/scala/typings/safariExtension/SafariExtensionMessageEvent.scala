@@ -20,8 +20,7 @@ trait SafariExtensionMessageEvent
 }
 object SafariExtensionMessageEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: SafariEventTarget,
@@ -40,13 +39,10 @@ object SafariExtensionMessageEvent {
     __obj.asInstanceOf[SafariExtensionMessageEvent]
   }
   
-  @scala.inline
-  implicit class SafariExtensionMessageEventMutableBuilder[Self <: SafariExtensionMessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SafariExtensionMessageEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

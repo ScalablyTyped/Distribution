@@ -18,16 +18,13 @@ trait ASPxClientWebChartElementNamed
 }
 object ASPxClientWebChartElementNamed {
   
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, name: String): ASPxClientWebChartElementNamed = {
+  inline def apply(chart: ASPxClientWebChart, name: String): ASPxClientWebChartElementNamed = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientWebChartElementNamed]
   }
   
-  @scala.inline
-  implicit class ASPxClientWebChartElementNamedMutableBuilder[Self <: ASPxClientWebChartElementNamed] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWebChartElementNamed](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

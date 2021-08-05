@@ -145,38 +145,28 @@ object queryMod {
   }
   object ExecuteOptions {
     
-    @scala.inline
-    def apply(): ExecuteOptions = {
+    inline def apply(): ExecuteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecuteOptions]
     }
     
-    @scala.inline
-    implicit class ExecuteOptionsMutableBuilder[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExecuteOptions](x: Self) {
       
-      @scala.inline
-      def setAutoFetch(value: Boolean): Self = StObject.set(x, "autoFetch", value.asInstanceOf[js.Any])
+      inline def setAutoFetch(value: Boolean): Self = StObject.set(x, "autoFetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFetchUndefined: Self = StObject.set(x, "autoFetch", js.undefined)
+      inline def setAutoFetchUndefined: Self = StObject.set(x, "autoFetch", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMaxFetch(value: Double): Self = StObject.set(x, "maxFetch", value.asInstanceOf[js.Any])
+      inline def setMaxFetch(value: Double): Self = StObject.set(x, "maxFetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFetchUndefined: Self = StObject.set(x, "maxFetch", js.undefined)
+      inline def setMaxFetchUndefined: Self = StObject.set(x, "maxFetch", js.undefined)
       
-      @scala.inline
-      def setScanAll(value: Boolean): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
+      inline def setScanAll(value: Boolean): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
+      inline def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
     }
   }
   
@@ -192,32 +182,24 @@ object queryMod {
   }
   object QueryResult {
     
-    @scala.inline
-    def apply[T](done: Boolean, records: js.Array[T], totalSize: Double): QueryResult[T] = {
+    inline def apply[T](done: Boolean, records: js.Array[T], totalSize: Double): QueryResult[T] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryResult[T]]
     }
     
-    @scala.inline
-    implicit class QueryResultMutableBuilder[Self <: QueryResult[?], T] (val x: Self & QueryResult[T]) extends AnyVal {
+    extension [Self <: QueryResult[?], T](x: Self & QueryResult[T]) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextRecordsUrl(value: String): Self = StObject.set(x, "nextRecordsUrl", value.asInstanceOf[js.Any])
+      inline def setNextRecordsUrl(value: String): Self = StObject.set(x, "nextRecordsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextRecordsUrlUndefined: Self = StObject.set(x, "nextRecordsUrl", js.undefined)
+      inline def setNextRecordsUrlUndefined: Self = StObject.set(x, "nextRecordsUrl", js.undefined)
       
-      @scala.inline
-      def setRecords(value: js.Array[T]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[T]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: T*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: T*): Self = StObject.set(x, "records", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+      inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     }
   }
 }

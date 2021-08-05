@@ -26,32 +26,23 @@ object mod extends Shortcut {
   trait LogLevels extends StObject
   object LogLevels {
     
-    @scala.inline
-    def error: typings.npmlog.npmlogStrings.error = "error".asInstanceOf[typings.npmlog.npmlogStrings.error]
+    inline def error: typings.npmlog.npmlogStrings.error = "error".asInstanceOf[typings.npmlog.npmlogStrings.error]
     
-    @scala.inline
-    def http: typings.npmlog.npmlogStrings.http = "http".asInstanceOf[typings.npmlog.npmlogStrings.http]
+    inline def http: typings.npmlog.npmlogStrings.http = "http".asInstanceOf[typings.npmlog.npmlogStrings.http]
     
-    @scala.inline
-    def info: typings.npmlog.npmlogStrings.info = "info".asInstanceOf[typings.npmlog.npmlogStrings.info]
+    inline def info: typings.npmlog.npmlogStrings.info = "info".asInstanceOf[typings.npmlog.npmlogStrings.info]
     
-    @scala.inline
-    def notice: typings.npmlog.npmlogStrings.notice = "notice".asInstanceOf[typings.npmlog.npmlogStrings.notice]
+    inline def notice: typings.npmlog.npmlogStrings.notice = "notice".asInstanceOf[typings.npmlog.npmlogStrings.notice]
     
-    @scala.inline
-    def silent: typings.npmlog.npmlogStrings.silent = "silent".asInstanceOf[typings.npmlog.npmlogStrings.silent]
+    inline def silent: typings.npmlog.npmlogStrings.silent = "silent".asInstanceOf[typings.npmlog.npmlogStrings.silent]
     
-    @scala.inline
-    def silly: typings.npmlog.npmlogStrings.silly = "silly".asInstanceOf[typings.npmlog.npmlogStrings.silly]
+    inline def silly: typings.npmlog.npmlogStrings.silly = "silly".asInstanceOf[typings.npmlog.npmlogStrings.silly]
     
-    @scala.inline
-    def timing: typings.npmlog.npmlogStrings.timing = "timing".asInstanceOf[typings.npmlog.npmlogStrings.timing]
+    inline def timing: typings.npmlog.npmlogStrings.timing = "timing".asInstanceOf[typings.npmlog.npmlogStrings.timing]
     
-    @scala.inline
-    def verbose: typings.npmlog.npmlogStrings.verbose = "verbose".asInstanceOf[typings.npmlog.npmlogStrings.verbose]
+    inline def verbose: typings.npmlog.npmlogStrings.verbose = "verbose".asInstanceOf[typings.npmlog.npmlogStrings.verbose]
     
-    @scala.inline
-    def warn: typings.npmlog.npmlogStrings.warn = "warn".asInstanceOf[typings.npmlog.npmlogStrings.warn]
+    inline def warn: typings.npmlog.npmlogStrings.warn = "warn".asInstanceOf[typings.npmlog.npmlogStrings.warn]
   }
   
   // TODO: newStream, newGroup, setGaugeTemplate and setGaugeTemplateSet need to be added
@@ -144,29 +135,22 @@ object mod extends Shortcut {
   }
   object MessageObject {
     
-    @scala.inline
-    def apply(id: Double, level: String, message: String, messageRaw: String, prefix: String): MessageObject = {
+    inline def apply(id: Double, level: String, message: String, messageRaw: String, prefix: String): MessageObject = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageRaw = messageRaw.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageObject]
     }
     
-    @scala.inline
-    implicit class MessageObjectMutableBuilder[Self <: MessageObject] (val x: Self) extends AnyVal {
+    extension [Self <: MessageObject](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageRaw(value: String): Self = StObject.set(x, "messageRaw", value.asInstanceOf[js.Any])
+      inline def setMessageRaw(value: String): Self = StObject.set(x, "messageRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,50 +170,36 @@ object mod extends Shortcut {
   }
   object StyleObject {
     
-    @scala.inline
-    def apply(): StyleObject = {
+    inline def apply(): StyleObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyleObject]
     }
     
-    @scala.inline
-    implicit class StyleObjectMutableBuilder[Self <: StyleObject] (val x: Self) extends AnyVal {
+    extension [Self <: StyleObject](x: Self) {
       
-      @scala.inline
-      def setBell(value: Boolean): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
+      inline def setBell(value: Boolean): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBellUndefined: Self = StObject.set(x, "bell", js.undefined)
+      inline def setBellUndefined: Self = StObject.set(x, "bell", js.undefined)
       
-      @scala.inline
-      def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+      inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      @scala.inline
-      def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+      inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
+      inline def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
       
-      @scala.inline
-      def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     }
   }
   

@@ -13,16 +13,13 @@ trait PickImplplaceholderPlaceholder extends StObject {
 }
 object PickImplplaceholderPlaceholder {
   
-  @scala.inline
-  def apply(placeholder: (/* image */ String, /* icon */ String) => String): PickImplplaceholderPlaceholder = {
+  inline def apply(placeholder: (/* image */ String, /* icon */ String) => String): PickImplplaceholderPlaceholder = {
     val __obj = js.Dynamic.literal(placeholder = js.Any.fromFunction2(placeholder))
     __obj.asInstanceOf[PickImplplaceholderPlaceholder]
   }
   
-  @scala.inline
-  implicit class PickImplplaceholderPlaceholderMutableBuilder[Self <: PickImplplaceholderPlaceholder] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplplaceholderPlaceholder](x: Self) {
     
-    @scala.inline
-    def setPlaceholder(value: (/* image */ String, /* icon */ String) => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
+    inline def setPlaceholder(value: (/* image */ String, /* icon */ String) => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
   }
 }

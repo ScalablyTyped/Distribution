@@ -28,34 +28,25 @@ trait RotateSecretRequest extends StObject {
 }
 object RotateSecretRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): RotateSecretRequest = {
+  inline def apply(SecretId: SecretIdType): RotateSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateSecretRequest]
   }
   
-  @scala.inline
-  implicit class RotateSecretRequestMutableBuilder[Self <: RotateSecretRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RotateSecretRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenType): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenType): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setRotationLambdaARN(value: RotationLambdaARNType): Self = StObject.set(x, "RotationLambdaARN", value.asInstanceOf[js.Any])
+    inline def setRotationLambdaARN(value: RotationLambdaARNType): Self = StObject.set(x, "RotationLambdaARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationLambdaARNUndefined: Self = StObject.set(x, "RotationLambdaARN", js.undefined)
+    inline def setRotationLambdaARNUndefined: Self = StObject.set(x, "RotationLambdaARN", js.undefined)
     
-    @scala.inline
-    def setRotationRules(value: RotationRulesType): Self = StObject.set(x, "RotationRules", value.asInstanceOf[js.Any])
+    inline def setRotationRules(value: RotationRulesType): Self = StObject.set(x, "RotationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationRulesUndefined: Self = StObject.set(x, "RotationRules", js.undefined)
+    inline def setRotationRulesUndefined: Self = StObject.set(x, "RotationRules", js.undefined)
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

@@ -19,16 +19,13 @@ trait BooleanConstructor extends StObject {
 }
 object BooleanConstructor {
   
-  @scala.inline
-  def apply(parse: java.lang.String => Boolean): BooleanConstructor = {
+  inline def apply(parse: java.lang.String => Boolean): BooleanConstructor = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[BooleanConstructor]
   }
   
-  @scala.inline
-  implicit class BooleanConstructorMutableBuilder[Self <: BooleanConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanConstructor](x: Self) {
     
-    @scala.inline
-    def setParse(value: java.lang.String => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: java.lang.String => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

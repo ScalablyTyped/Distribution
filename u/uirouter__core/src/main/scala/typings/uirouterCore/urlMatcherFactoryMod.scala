@@ -26,7 +26,7 @@ object urlMatcherFactoryMod {
     
     def fromSearch(id: String, `type`: ParamType, state: StateDeclaration): Param = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
   }
   
   @JSImport("@uirouter/core/lib/url/urlMatcherFactory", "UrlMatcherFactory")
@@ -73,7 +73,7 @@ object urlMatcherFactoryMod {
     /** Creates a new [[Param]] for a given location (DefType) */
     var paramFactory: ParamFactory = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /** @deprecated use [[UrlConfig.strictMode]] */
     def strictMode(): Boolean = js.native

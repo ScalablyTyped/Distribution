@@ -13,19 +13,15 @@ trait TestRenderTemplateResponse extends StObject {
 }
 object TestRenderTemplateResponse {
   
-  @scala.inline
-  def apply(): TestRenderTemplateResponse = {
+  inline def apply(): TestRenderTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestRenderTemplateResponse]
   }
   
-  @scala.inline
-  implicit class TestRenderTemplateResponseMutableBuilder[Self <: TestRenderTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestRenderTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setRenderedTemplate(value: RenderedTemplate): Self = StObject.set(x, "RenderedTemplate", value.asInstanceOf[js.Any])
+    inline def setRenderedTemplate(value: RenderedTemplate): Self = StObject.set(x, "RenderedTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedTemplateUndefined: Self = StObject.set(x, "RenderedTemplate", js.undefined)
+    inline def setRenderedTemplateUndefined: Self = StObject.set(x, "RenderedTemplate", js.undefined)
   }
 }

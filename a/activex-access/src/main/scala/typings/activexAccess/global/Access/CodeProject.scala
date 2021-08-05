@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.CodeProject")
 @js.native
-class CodeProject protected ()
+/* private */ class CodeProject ()
   extends StObject
      with typings.activexAccess.Access.CodeProject

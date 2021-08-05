@@ -27,56 +27,40 @@ trait String
 }
 object String {
   
-  @scala.inline
-  def apply(): String = {
+  inline def apply(): String = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setEnum(value: js.Array[java.lang.String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[java.lang.String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+    inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    @scala.inline
-    def setEnumVarargs(value: java.lang.String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: java.lang.String*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
-    @scala.inline
-    def setIdempotencyToken(value: scala.Boolean): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: scala.Boolean): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyTokenUndefined: Self = StObject.set(x, "idempotencyToken", js.undefined)
+    inline def setIdempotencyTokenUndefined: Self = StObject.set(x, "idempotencyToken", js.undefined)
     
-    @scala.inline
-    def setJsonValue(value: scala.Boolean): Self = StObject.set(x, "jsonValue", value.asInstanceOf[js.Any])
+    inline def setJsonValue(value: scala.Boolean): Self = StObject.set(x, "jsonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonValueUndefined: Self = StObject.set(x, "jsonValue", js.undefined)
+    inline def setJsonValueUndefined: Self = StObject.set(x, "jsonValue", js.undefined)
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setPattern(value: java.lang.String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: java.lang.String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

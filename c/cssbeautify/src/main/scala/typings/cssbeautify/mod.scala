@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(cssText: String): String = ^.asInstanceOf[js.Dynamic].apply(cssText.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(cssText: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(cssText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(cssText: String): String = ^.asInstanceOf[js.Dynamic].apply(cssText.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(cssText: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(cssText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("cssbeautify", JSImport.Namespace)
   @js.native
@@ -38,32 +36,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutosemicolon(value: Boolean): Self = StObject.set(x, "autosemicolon", value.asInstanceOf[js.Any])
+      inline def setAutosemicolon(value: Boolean): Self = StObject.set(x, "autosemicolon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutosemicolonUndefined: Self = StObject.set(x, "autosemicolon", js.undefined)
+      inline def setAutosemicolonUndefined: Self = StObject.set(x, "autosemicolon", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setOpenbrace(value: `end-of-line` | `separate-line`): Self = StObject.set(x, "openbrace", value.asInstanceOf[js.Any])
+      inline def setOpenbrace(value: `end-of-line` | `separate-line`): Self = StObject.set(x, "openbrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenbraceUndefined: Self = StObject.set(x, "openbrace", js.undefined)
+      inline def setOpenbraceUndefined: Self = StObject.set(x, "openbrace", js.undefined)
     }
   }
 }

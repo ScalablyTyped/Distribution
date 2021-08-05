@@ -50,8 +50,7 @@ object Timeago {
   }
   object LocalizedStrings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       day: String | DynamicMessage,
       days: String | DynamicMessage,
       hour: String | DynamicMessage,
@@ -71,110 +70,75 @@ object Timeago {
       __obj.asInstanceOf[LocalizedStrings]
     }
     
-    @scala.inline
-    implicit class LocalizedStringsMutableBuilder[Self <: LocalizedStrings] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizedStrings](x: Self) {
       
-      @scala.inline
-      def setDay(value: String | DynamicMessage): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String | DynamicMessage): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "day", js.Any.fromFunction2(value))
+      inline def setDayFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "day", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDays(value: String | DynamicMessage): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: String | DynamicMessage): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "days", js.Any.fromFunction2(value))
+      inline def setDaysFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "days", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHour(value: String | DynamicMessage): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: String | DynamicMessage): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "hour", js.Any.fromFunction2(value))
+      inline def setHourFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "hour", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHours(value: String | DynamicMessage): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: String | DynamicMessage): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "hours", js.Any.fromFunction2(value))
+      inline def setHoursFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "hours", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInPast(value: String): Self = StObject.set(x, "inPast", value.asInstanceOf[js.Any])
+      inline def setInPast(value: String): Self = StObject.set(x, "inPast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: String | DynamicMessage): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: String | DynamicMessage): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "minute", js.Any.fromFunction2(value))
+      inline def setMinuteFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "minute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMinutes(value: String | DynamicMessage): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: String | DynamicMessage): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "minutes", js.Any.fromFunction2(value))
+      inline def setMinutesFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "minutes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMonth(value: String | DynamicMessage): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String | DynamicMessage): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "month", js.Any.fromFunction2(value))
+      inline def setMonthFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "month", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMonths(value: String | DynamicMessage): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: String | DynamicMessage): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "months", js.Any.fromFunction2(value))
+      inline def setMonthsFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "months", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNumbers(value: js.Array[String]): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      inline def setNumbers(value: js.Array[String]): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumbersVarargs(value: String*): Self = StObject.set(x, "numbers", js.Array(value :_*))
+      inline def setNumbersVarargs(value: String*): Self = StObject.set(x, "numbers", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixAgo(value: String): Self = StObject.set(x, "prefixAgo", value.asInstanceOf[js.Any])
+      inline def setPrefixAgo(value: String): Self = StObject.set(x, "prefixAgo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixAgoNull: Self = StObject.set(x, "prefixAgo", null)
+      inline def setPrefixAgoNull: Self = StObject.set(x, "prefixAgo", null)
       
-      @scala.inline
-      def setPrefixFromNow(value: String): Self = StObject.set(x, "prefixFromNow", value.asInstanceOf[js.Any])
+      inline def setPrefixFromNow(value: String): Self = StObject.set(x, "prefixFromNow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixFromNowNull: Self = StObject.set(x, "prefixFromNow", null)
+      inline def setPrefixFromNowNull: Self = StObject.set(x, "prefixFromNow", null)
       
-      @scala.inline
-      def setSeconds(value: String | DynamicMessage): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: String | DynamicMessage): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "seconds", js.Any.fromFunction2(value))
+      inline def setSecondsFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "seconds", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuffixAgo(value: String): Self = StObject.set(x, "suffixAgo", value.asInstanceOf[js.Any])
+      inline def setSuffixAgo(value: String): Self = StObject.set(x, "suffixAgo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixAgoNull: Self = StObject.set(x, "suffixAgo", null)
+      inline def setSuffixAgoNull: Self = StObject.set(x, "suffixAgo", null)
       
-      @scala.inline
-      def setSuffixFromNow(value: String): Self = StObject.set(x, "suffixFromNow", value.asInstanceOf[js.Any])
+      inline def setSuffixFromNow(value: String): Self = StObject.set(x, "suffixFromNow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixFromNowNull: Self = StObject.set(x, "suffixFromNow", null)
+      inline def setSuffixFromNowNull: Self = StObject.set(x, "suffixFromNow", null)
       
-      @scala.inline
-      def setWordSeparator(value: String): Self = StObject.set(x, "wordSeparator", value.asInstanceOf[js.Any])
+      inline def setWordSeparator(value: String): Self = StObject.set(x, "wordSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: String | DynamicMessage): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String | DynamicMessage): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "year", js.Any.fromFunction2(value))
+      inline def setYearFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "year", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setYears(value: String | DynamicMessage): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+      inline def setYears(value: String | DynamicMessage): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearsFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "years", js.Any.fromFunction2(value))
+      inline def setYearsFunction2(value: (/* n */ Double, /* distanceMillis */ Double) => String): Self = StObject.set(x, "years", js.Any.fromFunction2(value))
     }
   }
   
@@ -196,8 +160,7 @@ object Timeago {
   }
   object Settings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowFuture: Boolean,
       allowPast: Boolean,
       autoDispose: Boolean,
@@ -210,29 +173,21 @@ object Timeago {
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setAllowFuture(value: Boolean): Self = StObject.set(x, "allowFuture", value.asInstanceOf[js.Any])
+      inline def setAllowFuture(value: Boolean): Self = StObject.set(x, "allowFuture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowPast(value: Boolean): Self = StObject.set(x, "allowPast", value.asInstanceOf[js.Any])
+      inline def setAllowPast(value: Boolean): Self = StObject.set(x, "allowPast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDispose(value: Boolean): Self = StObject.set(x, "autoDispose", value.asInstanceOf[js.Any])
+      inline def setAutoDispose(value: Boolean): Self = StObject.set(x, "autoDispose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCutoff(value: Double): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
+      inline def setCutoff(value: Double): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleTitle(value: Boolean): Self = StObject.set(x, "localeTitle", value.asInstanceOf[js.Any])
+      inline def setLocaleTitle(value: Boolean): Self = StObject.set(x, "localeTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshMillis(value: Double): Self = StObject.set(x, "refreshMillis", value.asInstanceOf[js.Any])
+      inline def setRefreshMillis(value: Double): Self = StObject.set(x, "refreshMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrings(value: LocalizedStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: LocalizedStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     }
   }
   

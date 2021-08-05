@@ -13,17 +13,14 @@ object anon {
   }
   object FetchStart {
     
-    @scala.inline
-    def apply(fetchStart: Double): FetchStart = {
+    inline def apply(fetchStart: Double): FetchStart = {
       val __obj = js.Dynamic.literal(fetchStart = fetchStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchStart]
     }
     
-    @scala.inline
-    implicit class FetchStartMutableBuilder[Self <: FetchStart] (val x: Self) extends AnyVal {
+    extension [Self <: FetchStart](x: Self) {
       
-      @scala.inline
-      def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
+      inline def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,23 +35,18 @@ object anon {
   }
   object RequiredENVIRONMENT {
     
-    @scala.inline
-    def apply(OTEL_LOG_LEVEL: LogLevel, OTEL_NO_PATCH_MODULES: String, OTEL_SAMPLING_PROBABILITY: Double): RequiredENVIRONMENT = {
+    inline def apply(OTEL_LOG_LEVEL: LogLevel, OTEL_NO_PATCH_MODULES: String, OTEL_SAMPLING_PROBABILITY: Double): RequiredENVIRONMENT = {
       val __obj = js.Dynamic.literal(OTEL_LOG_LEVEL = OTEL_LOG_LEVEL.asInstanceOf[js.Any], OTEL_NO_PATCH_MODULES = OTEL_NO_PATCH_MODULES.asInstanceOf[js.Any], OTEL_SAMPLING_PROBABILITY = OTEL_SAMPLING_PROBABILITY.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredENVIRONMENT]
     }
     
-    @scala.inline
-    implicit class RequiredENVIRONMENTMutableBuilder[Self <: RequiredENVIRONMENT] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredENVIRONMENT](x: Self) {
       
-      @scala.inline
-      def setOTEL_LOG_LEVEL(value: LogLevel): Self = StObject.set(x, "OTEL_LOG_LEVEL", value.asInstanceOf[js.Any])
+      inline def setOTEL_LOG_LEVEL(value: LogLevel): Self = StObject.set(x, "OTEL_LOG_LEVEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOTEL_NO_PATCH_MODULES(value: String): Self = StObject.set(x, "OTEL_NO_PATCH_MODULES", value.asInstanceOf[js.Any])
+      inline def setOTEL_NO_PATCH_MODULES(value: String): Self = StObject.set(x, "OTEL_NO_PATCH_MODULES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOTEL_SAMPLING_PROBABILITY(value: Double): Self = StObject.set(x, "OTEL_SAMPLING_PROBABILITY", value.asInstanceOf[js.Any])
+      inline def setOTEL_SAMPLING_PROBABILITY(value: Double): Self = StObject.set(x, "OTEL_SAMPLING_PROBABILITY", value.asInstanceOf[js.Any])
     }
   }
 }

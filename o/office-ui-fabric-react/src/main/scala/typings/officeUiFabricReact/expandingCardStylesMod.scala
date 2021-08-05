@@ -12,6 +12,5 @@ object expandingCardStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IExpandingCardStyleProps): IExpandingCardStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IExpandingCardStyles]
+  inline def getStyles(props: IExpandingCardStyleProps): IExpandingCardStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IExpandingCardStyles]
 }

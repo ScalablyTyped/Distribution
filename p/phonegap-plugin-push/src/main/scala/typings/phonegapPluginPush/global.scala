@@ -19,6 +19,5 @@ object global {
   @JSGlobal("PushNotification")
   @js.native
   def PushNotification: PushNotificationStatic = js.native
-  @scala.inline
-  def PushNotification_=(x: PushNotificationStatic): Unit = js.Dynamic.global.updateDynamic("PushNotification")(x.asInstanceOf[js.Any])
+  inline def PushNotification_=(x: PushNotificationStatic): Unit = js.Dynamic.global.updateDynamic("PushNotification")(x.asInstanceOf[js.Any])
 }

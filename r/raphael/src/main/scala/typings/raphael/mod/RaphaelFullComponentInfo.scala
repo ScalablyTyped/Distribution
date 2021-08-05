@@ -27,22 +27,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object RaphaelFullComponentInfo {
   
-  @scala.inline
-  def apply(b: Double, g: Double, h: Double, hex: String, l: Double, r: Double, s: Double): RaphaelFullComponentInfo = {
+  inline def apply(b: Double, g: Double, h: Double, hex: String, l: Double, r: Double, s: Double): RaphaelFullComponentInfo = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelFullComponentInfo]
   }
   
-  @scala.inline
-  implicit class RaphaelFullComponentInfoMutableBuilder[Self <: RaphaelFullComponentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelFullComponentInfo](x: Self) {
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

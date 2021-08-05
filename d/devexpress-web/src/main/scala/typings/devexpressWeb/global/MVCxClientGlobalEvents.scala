@@ -63,8 +63,7 @@ object MVCxClientGlobalEvents {
     * @param handler A object containing the event handling function's content.
     */
   /* static member */
-  @scala.inline
-  def AddBeginCallbackEventHandler(
+  inline def AddBeginCallbackEventHandler(
     handler: typings.devexpressWeb.ASPxClientEvent[
       MVCxClientBeginCallbackEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]
     ]
@@ -75,8 +74,7 @@ object MVCxClientGlobalEvents {
     * @param handler A object containing the event handling function's content.
     */
   /* static member */
-  @scala.inline
-  def AddCallbackErrorHandler(
+  inline def AddCallbackErrorHandler(
     handler: typings.devexpressWeb.ASPxClientEvent[
       ASPxClientCallbackErrorEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]
     ]
@@ -87,8 +85,7 @@ object MVCxClientGlobalEvents {
     * @param handler A object representing the event handling function's content.
     */
   /* static member */
-  @scala.inline
-  def AddControlsInitializedEventHandler(
+  inline def AddControlsInitializedEventHandler(
     handler: typings.devexpressWeb.ASPxClientEvent[
       ASPxClientControlsInitializedEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]
     ]
@@ -99,8 +96,7 @@ object MVCxClientGlobalEvents {
     * @param handler A object containing the event handling function's content.
     */
   /* static member */
-  @scala.inline
-  def AddEndCallbackEventHandler(
+  inline def AddEndCallbackEventHandler(
     handler: typings.devexpressWeb.ASPxClientEvent[ASPxClientEndCallbackEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddEndCallbackEventHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

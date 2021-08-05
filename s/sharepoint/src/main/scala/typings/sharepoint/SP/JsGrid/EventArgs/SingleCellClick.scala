@@ -18,22 +18,17 @@ trait SingleCellClick
 }
 object SingleCellClick {
   
-  @scala.inline
-  def apply(eventInfo: DomEvent, fieldKey: String, recordKey: Double): SingleCellClick = {
+  inline def apply(eventInfo: DomEvent, fieldKey: String, recordKey: Double): SingleCellClick = {
     val __obj = js.Dynamic.literal(eventInfo = eventInfo.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleCellClick]
   }
   
-  @scala.inline
-  implicit class SingleCellClickMutableBuilder[Self <: SingleCellClick] (val x: Self) extends AnyVal {
+  extension [Self <: SingleCellClick](x: Self) {
     
-    @scala.inline
-    def setEventInfo(value: DomEvent): Self = StObject.set(x, "eventInfo", value.asInstanceOf[js.Any])
+    inline def setEventInfo(value: DomEvent): Self = StObject.set(x, "eventInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+    inline def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

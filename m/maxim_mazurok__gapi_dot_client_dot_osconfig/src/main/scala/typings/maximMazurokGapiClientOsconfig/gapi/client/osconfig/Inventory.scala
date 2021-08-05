@@ -22,29 +22,23 @@ trait Inventory extends StObject {
 }
 object Inventory {
   
-  @scala.inline
-  def apply(): Inventory = {
+  inline def apply(): Inventory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Inventory]
   }
   
-  @scala.inline
-  implicit class InventoryMutableBuilder[Self <: Inventory] (val x: Self) extends AnyVal {
+  extension [Self <: Inventory](x: Self) {
     
-    @scala.inline
-    def setItems(
+    inline def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.osconfig.gapi.client.osconfig.InventoryItem}
       */ typings.maximMazurokGapiClientOsconfig.maximMazurokGapiClientOsconfigStrings.Inventory & TopLevel[js.Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setOsInfo(value: InventoryOsInfo): Self = StObject.set(x, "osInfo", value.asInstanceOf[js.Any])
+    inline def setOsInfo(value: InventoryOsInfo): Self = StObject.set(x, "osInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsInfoUndefined: Self = StObject.set(x, "osInfo", js.undefined)
+    inline def setOsInfoUndefined: Self = StObject.set(x, "osInfo", js.undefined)
   }
 }

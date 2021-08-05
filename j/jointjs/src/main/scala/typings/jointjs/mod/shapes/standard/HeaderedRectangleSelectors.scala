@@ -21,43 +21,31 @@ trait HeaderedRectangleSelectors extends StObject {
 }
 object HeaderedRectangleSelectors {
   
-  @scala.inline
-  def apply(): HeaderedRectangleSelectors = {
+  inline def apply(): HeaderedRectangleSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderedRectangleSelectors]
   }
   
-  @scala.inline
-  implicit class HeaderedRectangleSelectorsMutableBuilder[Self <: HeaderedRectangleSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderedRectangleSelectors](x: Self) {
     
-    @scala.inline
-    def setBody(value: SVGRectAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: SVGRectAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyText(value: SVGTextAttributes): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
+    inline def setBodyText(value: SVGTextAttributes): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyTextUndefined: Self = StObject.set(x, "bodyText", js.undefined)
+    inline def setBodyTextUndefined: Self = StObject.set(x, "bodyText", js.undefined)
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeader(value: SVGRectAttributes): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: SVGRectAttributes): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderText(value: SVGTextAttributes): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
+    inline def setHeaderText(value: SVGTextAttributes): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
+    inline def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

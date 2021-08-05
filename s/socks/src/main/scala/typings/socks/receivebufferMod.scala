@@ -14,15 +14,15 @@ object receivebufferMod {
     
     def append(data: Buffer): Double = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
     def get(length: Double): Buffer = js.native
     
     def length: Double = js.native
     
-    var offset: js.Any = js.native
+    /* private */ var offset: js.Any = js.native
     
-    var originalSize: js.Any = js.native
+    /* private */ var originalSize: js.Any = js.native
     
     def peek(length: Double): Buffer = js.native
   }

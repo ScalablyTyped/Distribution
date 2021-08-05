@@ -17,31 +17,23 @@ trait ListBucketsQueryType extends StObject {
 }
 object ListBucketsQueryType {
   
-  @scala.inline
-  def apply(): ListBucketsQueryType = {
+  inline def apply(): ListBucketsQueryType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBucketsQueryType]
   }
   
-  @scala.inline
-  implicit class ListBucketsQueryTypeMutableBuilder[Self <: ListBucketsQueryType] (val x: Self) extends AnyVal {
+  extension [Self <: ListBucketsQueryType](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def `setMax-keys`(value: String | Double): Self = StObject.set(x, "max-keys", value.asInstanceOf[js.Any])
+    inline def `setMax-keys`(value: String | Double): Self = StObject.set(x, "max-keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-keysUndefined`: Self = StObject.set(x, "max-keys", js.undefined)
+    inline def `setMax-keysUndefined`: Self = StObject.set(x, "max-keys", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

@@ -24,28 +24,21 @@ trait RouteSpecHttp2RouteMatchHeader extends StObject {
 }
 object RouteSpecHttp2RouteMatchHeader {
   
-  @scala.inline
-  def apply(name: Input[String]): RouteSpecHttp2RouteMatchHeader = {
+  inline def apply(name: Input[String]): RouteSpecHttp2RouteMatchHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttp2RouteMatchHeader]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttp2RouteMatchHeaderMutableBuilder[Self <: RouteSpecHttp2RouteMatchHeader] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttp2RouteMatchHeader](x: Self) {
     
-    @scala.inline
-    def setInvert(value: Input[Boolean]): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: Input[Boolean]): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+    inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
-    @scala.inline
-    def setMatch(value: Input[RouteSpecHttp2RouteMatchHeaderMatch]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: Input[RouteSpecHttp2RouteMatchHeaderMatch]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

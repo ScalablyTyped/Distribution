@@ -10,16 +10,13 @@ trait GetEstimatedTime extends StObject {
 }
 object GetEstimatedTime {
   
-  @scala.inline
-  def apply(getEstimatedTime: () => Double): GetEstimatedTime = {
+  inline def apply(getEstimatedTime: () => Double): GetEstimatedTime = {
     val __obj = js.Dynamic.literal(getEstimatedTime = js.Any.fromFunction0(getEstimatedTime))
     __obj.asInstanceOf[GetEstimatedTime]
   }
   
-  @scala.inline
-  implicit class GetEstimatedTimeMutableBuilder[Self <: GetEstimatedTime] (val x: Self) extends AnyVal {
+  extension [Self <: GetEstimatedTime](x: Self) {
     
-    @scala.inline
-    def setGetEstimatedTime(value: () => Double): Self = StObject.set(x, "getEstimatedTime", js.Any.fromFunction0(value))
+    inline def setGetEstimatedTime(value: () => Double): Self = StObject.set(x, "getEstimatedTime", js.Any.fromFunction0(value))
   }
 }

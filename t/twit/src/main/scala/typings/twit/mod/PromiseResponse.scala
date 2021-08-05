@@ -13,19 +13,15 @@ trait PromiseResponse extends StObject {
 }
 object PromiseResponse {
   
-  @scala.inline
-  def apply(data: Response, resp: IncomingMessage): PromiseResponse = {
+  inline def apply(data: Response, resp: IncomingMessage): PromiseResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], resp = resp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseResponse]
   }
   
-  @scala.inline
-  implicit class PromiseResponseMutableBuilder[Self <: PromiseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PromiseResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: Response): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Response): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResp(value: IncomingMessage): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
+    inline def setResp(value: IncomingMessage): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
   }
 }

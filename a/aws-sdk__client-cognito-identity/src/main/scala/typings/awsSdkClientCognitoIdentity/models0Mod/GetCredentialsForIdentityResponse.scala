@@ -18,8 +18,7 @@ trait GetCredentialsForIdentityResponse extends StObject {
 }
 object GetCredentialsForIdentityResponse {
   
-  @scala.inline
-  def apply(): GetCredentialsForIdentityResponse = {
+  inline def apply(): GetCredentialsForIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCredentialsForIdentityResponse]
   }
@@ -28,22 +27,16 @@ object GetCredentialsForIdentityResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: GetCredentialsForIdentityResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: GetCredentialsForIdentityResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class GetCredentialsForIdentityResponseMutableBuilder[Self <: GetCredentialsForIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCredentialsForIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
   }
 }

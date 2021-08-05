@@ -16,8 +16,7 @@ object collectionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def printIteratorEntries(
+  inline def printIteratorEntries(
     iterator: Iterator[js.Tuple2[js.Any, js.Any], js.Any, Unit],
     config: Config,
     indentation: String,
@@ -25,8 +24,7 @@ object collectionsMod {
     refs: Refs,
     printer: Printer
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printIteratorEntries")(iterator.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def printIteratorEntries(
+  inline def printIteratorEntries(
     iterator: Iterator[js.Tuple2[js.Any, js.Any], js.Any, Unit],
     config: Config,
     indentation: String,
@@ -36,8 +34,7 @@ object collectionsMod {
     separator: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printIteratorEntries")(iterator.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printIteratorValues(
+  inline def printIteratorValues(
     iterator: Iterator[js.Any, js.Any, Unit],
     config: Config,
     indentation: String,
@@ -46,8 +43,7 @@ object collectionsMod {
     printer: Printer
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printIteratorValues")(iterator.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printListItems(
+  inline def printListItems(
     list: ArrayLike[js.Any],
     config: Config,
     indentation: String,
@@ -56,8 +52,7 @@ object collectionsMod {
     printer: Printer
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printListItems")(list.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printObjectProperties(
+  inline def printObjectProperties(
     `val`: Record[String, js.Any],
     config: Config,
     indentation: String,

@@ -13,8 +13,7 @@ object ColorInformation {
   /**
     * Creates a new ColorInformation literal.
     */
-  @scala.inline
-  def create(
+  inline def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     color: typings.vscodeLanguageserverTypes.mod.Color
   ): typings.vscodeLanguageserverTypes.mod.ColorInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ColorInformation]
@@ -22,6 +21,5 @@ object ColorInformation {
   /**
     * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean]
 }

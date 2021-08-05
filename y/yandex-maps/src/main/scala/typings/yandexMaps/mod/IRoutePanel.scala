@@ -17,25 +17,19 @@ trait IRoutePanel extends StObject {
 }
 object IRoutePanel {
   
-  @scala.inline
-  def apply(getRoute: () => MultiRoute, options: IOptionManager, state: IDataManager, switchPoints: () => Unit): IRoutePanel = {
+  inline def apply(getRoute: () => MultiRoute, options: IOptionManager, state: IDataManager, switchPoints: () => Unit): IRoutePanel = {
     val __obj = js.Dynamic.literal(getRoute = js.Any.fromFunction0(getRoute), options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], switchPoints = js.Any.fromFunction0(switchPoints))
     __obj.asInstanceOf[IRoutePanel]
   }
   
-  @scala.inline
-  implicit class IRoutePanelMutableBuilder[Self <: IRoutePanel] (val x: Self) extends AnyVal {
+  extension [Self <: IRoutePanel](x: Self) {
     
-    @scala.inline
-    def setGetRoute(value: () => MultiRoute): Self = StObject.set(x, "getRoute", js.Any.fromFunction0(value))
+    inline def setGetRoute(value: () => MultiRoute): Self = StObject.set(x, "getRoute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: IDataManager): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: IDataManager): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchPoints(value: () => Unit): Self = StObject.set(x, "switchPoints", js.Any.fromFunction0(value))
+    inline def setSwitchPoints(value: () => Unit): Self = StObject.set(x, "switchPoints", js.Any.fromFunction0(value))
   }
 }

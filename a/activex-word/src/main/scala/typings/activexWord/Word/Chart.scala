@@ -229,7 +229,7 @@ trait Chart extends StObject {
   
   val Walls: typings.activexWord.Word.Walls = js.native
   
-  @JSName("Word.Chart_typekey")
+  /* private */ @JSName("Word.Chart_typekey")
   var WordDotChart_typekey: Chart = js.native
   
   def XYGroups(): js.Any = js.native

@@ -14,28 +14,21 @@ trait GoogleAnalyticsAdminV1alphaListUserLinksResponse extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaListUserLinksResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaListUserLinksResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaListUserLinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListUserLinksResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaListUserLinksResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListUserLinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaListUserLinksResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setUserLinks(value: js.Array[GoogleAnalyticsAdminV1alphaUserLink]): Self = StObject.set(x, "userLinks", value.asInstanceOf[js.Any])
+    inline def setUserLinks(value: js.Array[GoogleAnalyticsAdminV1alphaUserLink]): Self = StObject.set(x, "userLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLinksUndefined: Self = StObject.set(x, "userLinks", js.undefined)
+    inline def setUserLinksUndefined: Self = StObject.set(x, "userLinks", js.undefined)
     
-    @scala.inline
-    def setUserLinksVarargs(value: GoogleAnalyticsAdminV1alphaUserLink*): Self = StObject.set(x, "userLinks", js.Array(value :_*))
+    inline def setUserLinksVarargs(value: GoogleAnalyticsAdminV1alphaUserLink*): Self = StObject.set(x, "userLinks", js.Array(value :_*))
   }
 }

@@ -38,49 +38,35 @@ trait JobExecutionSummary extends StObject {
 }
 object JobExecutionSummary {
   
-  @scala.inline
-  def apply(): JobExecutionSummary = {
+  inline def apply(): JobExecutionSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobExecutionSummary]
   }
   
-  @scala.inline
-  implicit class JobExecutionSummaryMutableBuilder[Self <: JobExecutionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: JobExecutionSummary](x: Self) {
     
-    @scala.inline
-    def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
+    inline def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionNumberUndefined: Self = StObject.set(x, "executionNumber", js.undefined)
+    inline def setExecutionNumberUndefined: Self = StObject.set(x, "executionNumber", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setQueuedAt(value: QueuedAt): Self = StObject.set(x, "queuedAt", value.asInstanceOf[js.Any])
+    inline def setQueuedAt(value: QueuedAt): Self = StObject.set(x, "queuedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuedAtUndefined: Self = StObject.set(x, "queuedAt", js.undefined)
+    inline def setQueuedAtUndefined: Self = StObject.set(x, "queuedAt", js.undefined)
     
-    @scala.inline
-    def setStartedAt(value: StartedAt): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: StartedAt): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

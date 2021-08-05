@@ -18,8 +18,7 @@ trait RowSelectionModel[T /* <: SlickData */, E]
 }
 object RowSelectionModel {
   
-  @scala.inline
-  def apply[T /* <: SlickData */, E](
+  inline def apply[T /* <: SlickData */, E](
     destroy: () => Unit,
     getSelectedRanges: () => js.Array[Double],
     getSelectedRows: () => js.Array[Double],
@@ -32,19 +31,14 @@ object RowSelectionModel {
     __obj.asInstanceOf[RowSelectionModel[T, E]]
   }
   
-  @scala.inline
-  implicit class RowSelectionModelMutableBuilder[Self <: RowSelectionModel[?, ?], T /* <: SlickData */, E] (val x: Self & (RowSelectionModel[T, E])) extends AnyVal {
+  extension [Self <: RowSelectionModel[?, ?], T /* <: SlickData */, E](x: Self & (RowSelectionModel[T, E])) {
     
-    @scala.inline
-    def setGetSelectedRanges(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRanges", js.Any.fromFunction0(value))
+    inline def setGetSelectedRanges(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedRows(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
+    inline def setGetSelectedRows(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSelectedRanges(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSelectedRanges", js.Any.fromFunction1(value))
+    inline def setSetSelectedRanges(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSelectedRanges", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelectedRows(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSelectedRows", js.Any.fromFunction1(value))
+    inline def setSetSelectedRows(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSelectedRows", js.Any.fromFunction1(value))
   }
 }

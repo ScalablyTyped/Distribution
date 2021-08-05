@@ -25,25 +25,19 @@ trait RemoveDuplicatesResultData extends StObject {
 }
 object RemoveDuplicatesResultData {
   
-  @scala.inline
-  def apply(): RemoveDuplicatesResultData = {
+  inline def apply(): RemoveDuplicatesResultData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveDuplicatesResultData]
   }
   
-  @scala.inline
-  implicit class RemoveDuplicatesResultDataMutableBuilder[Self <: RemoveDuplicatesResultData] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveDuplicatesResultData](x: Self) {
     
-    @scala.inline
-    def setRemoved(value: Double): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Double): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
-    @scala.inline
-    def setUniqueRemaining(value: Double): Self = StObject.set(x, "uniqueRemaining", value.asInstanceOf[js.Any])
+    inline def setUniqueRemaining(value: Double): Self = StObject.set(x, "uniqueRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueRemainingUndefined: Self = StObject.set(x, "uniqueRemaining", js.undefined)
+    inline def setUniqueRemainingUndefined: Self = StObject.set(x, "uniqueRemaining", js.undefined)
   }
 }

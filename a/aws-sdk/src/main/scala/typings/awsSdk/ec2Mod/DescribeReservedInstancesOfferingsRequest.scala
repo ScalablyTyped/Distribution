@@ -83,109 +83,75 @@ trait DescribeReservedInstancesOfferingsRequest extends StObject {
 }
 object DescribeReservedInstancesOfferingsRequest {
   
-  @scala.inline
-  def apply(): DescribeReservedInstancesOfferingsRequest = {
+  inline def apply(): DescribeReservedInstancesOfferingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedInstancesOfferingsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeReservedInstancesOfferingsRequestMutableBuilder[Self <: DescribeReservedInstancesOfferingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedInstancesOfferingsRequest](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeMarketplace(value: Boolean): Self = StObject.set(x, "IncludeMarketplace", value.asInstanceOf[js.Any])
+    inline def setIncludeMarketplace(value: Boolean): Self = StObject.set(x, "IncludeMarketplace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMarketplaceUndefined: Self = StObject.set(x, "IncludeMarketplace", js.undefined)
+    inline def setIncludeMarketplaceUndefined: Self = StObject.set(x, "IncludeMarketplace", js.undefined)
     
-    @scala.inline
-    def setInstanceTenancy(value: Tenancy): Self = StObject.set(x, "InstanceTenancy", value.asInstanceOf[js.Any])
+    inline def setInstanceTenancy(value: Tenancy): Self = StObject.set(x, "InstanceTenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTenancyUndefined: Self = StObject.set(x, "InstanceTenancy", js.undefined)
+    inline def setInstanceTenancyUndefined: Self = StObject.set(x, "InstanceTenancy", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setMaxDuration(value: Long): Self = StObject.set(x, "MaxDuration", value.asInstanceOf[js.Any])
+    inline def setMaxDuration(value: Long): Self = StObject.set(x, "MaxDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationUndefined: Self = StObject.set(x, "MaxDuration", js.undefined)
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "MaxDuration", js.undefined)
     
-    @scala.inline
-    def setMaxInstanceCount(value: Integer): Self = StObject.set(x, "MaxInstanceCount", value.asInstanceOf[js.Any])
+    inline def setMaxInstanceCount(value: Integer): Self = StObject.set(x, "MaxInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInstanceCountUndefined: Self = StObject.set(x, "MaxInstanceCount", js.undefined)
+    inline def setMaxInstanceCountUndefined: Self = StObject.set(x, "MaxInstanceCount", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMinDuration(value: Long): Self = StObject.set(x, "MinDuration", value.asInstanceOf[js.Any])
+    inline def setMinDuration(value: Long): Self = StObject.set(x, "MinDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationUndefined: Self = StObject.set(x, "MinDuration", js.undefined)
+    inline def setMinDurationUndefined: Self = StObject.set(x, "MinDuration", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOfferingClass(value: OfferingClassType): Self = StObject.set(x, "OfferingClass", value.asInstanceOf[js.Any])
+    inline def setOfferingClass(value: OfferingClassType): Self = StObject.set(x, "OfferingClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingClassUndefined: Self = StObject.set(x, "OfferingClass", js.undefined)
+    inline def setOfferingClassUndefined: Self = StObject.set(x, "OfferingClass", js.undefined)
     
-    @scala.inline
-    def setOfferingType(value: OfferingTypeValues): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
+    inline def setOfferingType(value: OfferingTypeValues): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
+    inline def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
     
-    @scala.inline
-    def setProductDescription(value: RIProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
+    inline def setProductDescription(value: RIProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
+    inline def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesOfferingIds(value: ReservedInstancesOfferingIdStringList): Self = StObject.set(x, "ReservedInstancesOfferingIds", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesOfferingIds(value: ReservedInstancesOfferingIdStringList): Self = StObject.set(x, "ReservedInstancesOfferingIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesOfferingIdsUndefined: Self = StObject.set(x, "ReservedInstancesOfferingIds", js.undefined)
+    inline def setReservedInstancesOfferingIdsUndefined: Self = StObject.set(x, "ReservedInstancesOfferingIds", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesOfferingIdsVarargs(value: ReservedInstancesOfferingId*): Self = StObject.set(x, "ReservedInstancesOfferingIds", js.Array(value :_*))
+    inline def setReservedInstancesOfferingIdsVarargs(value: ReservedInstancesOfferingId*): Self = StObject.set(x, "ReservedInstancesOfferingIds", js.Array(value :_*))
   }
 }

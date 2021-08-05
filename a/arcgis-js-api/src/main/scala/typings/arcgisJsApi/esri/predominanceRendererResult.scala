@@ -68,8 +68,7 @@ trait predominanceRendererResult
 }
 object predominanceRendererResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
@@ -84,43 +83,30 @@ object predominanceRendererResult {
     __obj.asInstanceOf[predominanceRendererResult]
   }
   
-  @scala.inline
-  implicit class predominanceRendererResultMutableBuilder[Self <: predominanceRendererResult] (val x: Self) extends AnyVal {
+  extension [Self <: predominanceRendererResult](x: Self) {
     
-    @scala.inline
-    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
+    inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedCategoryInfos(value: js.Array[js.Any]): Self = StObject.set(x, "excludedCategoryInfos", value.asInstanceOf[js.Any])
+    inline def setExcludedCategoryInfos(value: js.Array[js.Any]): Self = StObject.set(x, "excludedCategoryInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedCategoryInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedCategoryInfos", js.Array(value :_*))
+    inline def setExcludedCategoryInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedCategoryInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setOpacity(value: opacityVisualVariableResult): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: opacityVisualVariableResult): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setPredominanceScheme(value: PredominanceScheme): Self = StObject.set(x, "predominanceScheme", value.asInstanceOf[js.Any])
+    inline def setPredominanceScheme(value: PredominanceScheme): Self = StObject.set(x, "predominanceScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredominantCategoryInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
+    inline def setPredominantCategoryInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredominantCategoryInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value :_*))
+    inline def setPredominantCategoryInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: sizeVisualVariableResult): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: sizeVisualVariableResult): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

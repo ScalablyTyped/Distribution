@@ -344,64 +344,56 @@ object Link {
   @JSImport("go", "Link.AvoidsNodes")
   @js.native
   def AvoidsNodes: EnumValue = js.native
-  @scala.inline
-  def AvoidsNodes_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AvoidsNodes")(x.asInstanceOf[js.Any])
+  inline def AvoidsNodes_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AvoidsNodes")(x.asInstanceOf[js.Any])
   
   /**Used as a value for Link.curve, to indicate that the link path uses Bezier curve segments.*/
   /* static member */
   @JSImport("go", "Link.Bezier")
   @js.native
   def Bezier: EnumValue = js.native
-  @scala.inline
-  def Bezier_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bezier")(x.asInstanceOf[js.Any])
+  inline def Bezier_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bezier")(x.asInstanceOf[js.Any])
   
   /**Used as a value for Link.adjusting, to indicate that the link route computation should keep the intermediate points of the previous route, just modifying the first and/or last points; if the routing is orthogonal, it will only modify the first two and/or last two points.*/
   /* static member */
   @JSImport("go", "Link.End")
   @js.native
   def End: EnumValue = js.native
-  @scala.inline
-  def End_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
+  inline def End_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
   
   /**Used as a value for Link.curve, to indicate that orthogonal link segments will be discontinuous where they cross over other orthogonal link segments that have a Link.curve or JumpOver or JumpGap.*/
   /* static member */
   @JSImport("go", "Link.JumpGap")
   @js.native
   def JumpGap: EnumValue = js.native
-  @scala.inline
-  def JumpGap_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JumpGap")(x.asInstanceOf[js.Any])
+  inline def JumpGap_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JumpGap")(x.asInstanceOf[js.Any])
   
   /**Used as a value for Link.curve, to indicate that orthogonal link segments will veer around where they cross over other orthogonal link segments that have a Link.curve or JumpOver or JumpGap.*/
   /* static member */
   @JSImport("go", "Link.JumpOver")
   @js.native
   def JumpOver: EnumValue = js.native
-  @scala.inline
-  def JumpOver_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JumpOver")(x.asInstanceOf[js.Any])
+  inline def JumpOver_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JumpOver")(x.asInstanceOf[js.Any])
   
   /**This is the default value for Link.curve and Link.adjusting, to indicate that the path geometry consists of straight line segments and to indicate that the link route computation does not depend on any previous route points; this can also be used as a value for GraphObject.segmentOrientation to indicate that the object is never rotated along the link route -- its angle is unchanged.*/
   /* static member */
   @JSImport("go", "Link.None")
   @js.native
   def None: EnumValue = js.native
-  @scala.inline
-  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**Used as the default value for Link.routing: the route goes fairly straight between ports.*/
   /* static member */
   @JSImport("go", "Link.Normal")
   @js.native
   def Normal: EnumValue = js.native
-  @scala.inline
-  def Normal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
+  inline def Normal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
   
   /**This value for GraphObject.segmentOrientation results in the GraphObject turned to have the same angle as the route: the GraphObject's angle is always the same as the angle of the link's route at the segment where the GraphObject is attached; use this orientation for arrow heads.*/
   /* static member */
   @JSImport("go", "Link.OrientAlong")
   @js.native
   def OrientAlong: EnumValue = js.native
-  @scala.inline
-  def OrientAlong_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientAlong")(x.asInstanceOf[js.Any])
+  inline def OrientAlong_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientAlong")(x.asInstanceOf[js.Any])
   
   /**This value for GraphObject.segmentOrientation results in the GraphObject being turned counter-clockwise to be perpendicular to the route: the GraphObject's angle is always 90 degrees less than the angle of the link's route at the segment where the GraphObject is attached.*/
   /* static member */
@@ -414,19 +406,16 @@ object Link {
   @JSImport("go", "Link.OrientMinus90Upright")
   @js.native
   def OrientMinus90Upright: EnumValue = js.native
-  @scala.inline
-  def OrientMinus90Upright_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientMinus90Upright")(x.asInstanceOf[js.Any])
+  inline def OrientMinus90Upright_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientMinus90Upright")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def OrientMinus90_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientMinus90")(x.asInstanceOf[js.Any])
+  inline def OrientMinus90_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientMinus90")(x.asInstanceOf[js.Any])
   
   /**This value for GraphObject.segmentOrientation results in the GraphObject's angle always being 180 degrees opposite from the angle of the link's route at the segment where the GraphObject is attached.*/
   /* static member */
   @JSImport("go", "Link.OrientOpposite")
   @js.native
   def OrientOpposite: EnumValue = js.native
-  @scala.inline
-  def OrientOpposite_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientOpposite")(x.asInstanceOf[js.Any])
+  inline def OrientOpposite_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientOpposite")(x.asInstanceOf[js.Any])
   
   /**This value for GraphObject.segmentOrientation results in the GraphObject is turned clockwise to be perpendicular to the route: the GraphObject's angle is always 90 degrees more than the angle of the link's route at the segment where the GraphObject is attached.*/
   /* static member */
@@ -439,11 +428,9 @@ object Link {
   @JSImport("go", "Link.OrientPlus90Upright")
   @js.native
   def OrientPlus90Upright: EnumValue = js.native
-  @scala.inline
-  def OrientPlus90Upright_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientPlus90Upright")(x.asInstanceOf[js.Any])
+  inline def OrientPlus90Upright_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientPlus90Upright")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def OrientPlus90_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientPlus90")(x.asInstanceOf[js.Any])
+  inline def OrientPlus90_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientPlus90")(x.asInstanceOf[js.Any])
   
   /**This value for GraphObject.segmentOrientation results in the GraphObject turned to have the same angle as the route, just like Link.OrientAlong, but is never upside down: the GraphObject's angle always following the angle of the link's route at the segment where the GraphObject is attached; this is typically only used for TextBlocks or Panels that contain text.*/
   /* static member */
@@ -456,33 +443,28 @@ object Link {
   @JSImport("go", "Link.OrientUpright45")
   @js.native
   def OrientUpright45: EnumValue = js.native
-  @scala.inline
-  def OrientUpright45_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientUpright45")(x.asInstanceOf[js.Any])
+  inline def OrientUpright45_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientUpright45")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def OrientUpright_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientUpright")(x.asInstanceOf[js.Any])
+  inline def OrientUpright_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OrientUpright")(x.asInstanceOf[js.Any])
   
   /**Used as a value for Link.routing: each segment is horizontal or vertical.*/
   /* static member */
   @JSImport("go", "Link.Orthogonal")
   @js.native
   def Orthogonal: EnumValue = js.native
-  @scala.inline
-  def Orthogonal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Orthogonal")(x.asInstanceOf[js.Any])
+  inline def Orthogonal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Orthogonal")(x.asInstanceOf[js.Any])
   
   /**Used as a value for Link.adjusting, to indicate that the link route computation should scale and rotate the intermediate points so that the link's shape looks approximately the same; if the routing is orthogonal, this value is treated as if it were Link.End.*/
   /* static member */
   @JSImport("go", "Link.Scale")
   @js.native
   def Scale: EnumValue = js.native
-  @scala.inline
-  def Scale_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scale")(x.asInstanceOf[js.Any])
+  inline def Scale_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scale")(x.asInstanceOf[js.Any])
   
   /**Used as a value for Link.adjusting, to indicate that the link route computation should linearly interpolate the intermediate points so that the link's shape looks stretched; if the routing is orthogonal, this value is treated as if it were Link.End.*/
   /* static member */
   @JSImport("go", "Link.Stretch")
   @js.native
   def Stretch: EnumValue = js.native
-  @scala.inline
-  def Stretch_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stretch")(x.asInstanceOf[js.Any])
+  inline def Stretch_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stretch")(x.asInstanceOf[js.Any])
 }

@@ -21,12 +21,10 @@ object TimePicker {
   @JSImport("wix-ui-core/src", "TimePicker.defaultProps")
   @js.native
   def defaultProps: UseNativeInteraction = js.native
-  @scala.inline
-  def defaultProps_=(x: UseNativeInteraction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: UseNativeInteraction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "TimePicker.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

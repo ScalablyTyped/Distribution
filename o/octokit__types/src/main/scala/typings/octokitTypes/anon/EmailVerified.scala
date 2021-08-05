@@ -12,19 +12,15 @@ trait EmailVerified extends StObject {
 }
 object EmailVerified {
   
-  @scala.inline
-  def apply(email: String, verified: Boolean): EmailVerified = {
+  inline def apply(email: String, verified: Boolean): EmailVerified = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailVerified]
   }
   
-  @scala.inline
-  implicit class EmailVerifiedMutableBuilder[Self <: EmailVerified] (val x: Self) extends AnyVal {
+  extension [Self <: EmailVerified](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait CustomerRiskData extends StObject {
 }
 object CustomerRiskData {
   
-  @scala.inline
-  def apply(): CustomerRiskData = {
+  inline def apply(): CustomerRiskData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerRiskData]
   }
   
-  @scala.inline
-  implicit class CustomerRiskDataMutableBuilder[Self <: CustomerRiskData] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerRiskData](x: Self) {
     
-    @scala.inline
-    def setCustomerBrowser(value: String): Self = StObject.set(x, "customerBrowser", value.asInstanceOf[js.Any])
+    inline def setCustomerBrowser(value: String): Self = StObject.set(x, "customerBrowser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerBrowserUndefined: Self = StObject.set(x, "customerBrowser", js.undefined)
+    inline def setCustomerBrowserUndefined: Self = StObject.set(x, "customerBrowser", js.undefined)
     
-    @scala.inline
-    def setCustomerIp(value: String): Self = StObject.set(x, "customerIp", value.asInstanceOf[js.Any])
+    inline def setCustomerIp(value: String): Self = StObject.set(x, "customerIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIpUndefined: Self = StObject.set(x, "customerIp", js.undefined)
+    inline def setCustomerIpUndefined: Self = StObject.set(x, "customerIp", js.undefined)
   }
 }

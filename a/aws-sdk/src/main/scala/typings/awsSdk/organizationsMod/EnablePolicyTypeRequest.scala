@@ -18,19 +18,15 @@ trait EnablePolicyTypeRequest extends StObject {
 }
 object EnablePolicyTypeRequest {
   
-  @scala.inline
-  def apply(PolicyType: PolicyType, RootId: RootId): EnablePolicyTypeRequest = {
+  inline def apply(PolicyType: PolicyType, RootId: RootId): EnablePolicyTypeRequest = {
     val __obj = js.Dynamic.literal(PolicyType = PolicyType.asInstanceOf[js.Any], RootId = RootId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnablePolicyTypeRequest]
   }
   
-  @scala.inline
-  implicit class EnablePolicyTypeRequestMutableBuilder[Self <: EnablePolicyTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnablePolicyTypeRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
+    inline def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootId(value: RootId): Self = StObject.set(x, "RootId", value.asInstanceOf[js.Any])
+    inline def setRootId(value: RootId): Self = StObject.set(x, "RootId", value.asInstanceOf[js.Any])
   }
 }

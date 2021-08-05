@@ -61,119 +61,82 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppend(value: js.Array[js.Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: js.Array[js.Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setAppendVarargs(value: js.Any*): Self = StObject.set(x, "append", js.Array(value :_*))
+      inline def setAppendVarargs(value: js.Any*): Self = StObject.set(x, "append", js.Array(value :_*))
       
-      @scala.inline
-      def setCamelCase(value: Boolean): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
+      inline def setCamelCase(value: Boolean): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamelCaseUndefined: Self = StObject.set(x, "camelCase", js.undefined)
+      inline def setCamelCaseUndefined: Self = StObject.set(x, "camelCase", js.undefined)
       
-      @scala.inline
-      def setCreateImportedName(value: js.Function): Self = StObject.set(x, "createImportedName", value.asInstanceOf[js.Any])
+      inline def setCreateImportedName(value: js.Function): Self = StObject.set(x, "createImportedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateImportedNameUndefined: Self = StObject.set(x, "createImportedName", js.undefined)
+      inline def setCreateImportedNameUndefined: Self = StObject.set(x, "createImportedName", js.undefined)
       
-      @scala.inline
-      def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
+      inline def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
+      inline def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setGenerateScopedName(value: String | js.Function): Self = StObject.set(x, "generateScopedName", value.asInstanceOf[js.Any])
+      inline def setGenerateScopedName(value: String | js.Function): Self = StObject.set(x, "generateScopedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateScopedNameUndefined: Self = StObject.set(x, "generateScopedName", js.undefined)
+      inline def setGenerateScopedNameUndefined: Self = StObject.set(x, "generateScopedName", js.undefined)
       
-      @scala.inline
-      def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
+      inline def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
+      inline def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String | RegExp | (js.Function1[/* filepath */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | RegExp | (js.Function1[/* filepath */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreFunction1(value: /* filepath */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
+      inline def setIgnoreFunction1(value: /* filepath */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPrepend(value: js.Array[js.Any]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+      inline def setPrepend(value: js.Array[js.Any]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+      inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
       
-      @scala.inline
-      def setPrependVarargs(value: js.Any*): Self = StObject.set(x, "prepend", js.Array(value :_*))
+      inline def setPrependVarargs(value: js.Any*): Self = StObject.set(x, "prepend", js.Array(value :_*))
       
-      @scala.inline
-      def setPreprocessCss(value: js.Function): Self = StObject.set(x, "preprocessCss", value.asInstanceOf[js.Any])
+      inline def setPreprocessCss(value: js.Function): Self = StObject.set(x, "preprocessCss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreprocessCssUndefined: Self = StObject.set(x, "preprocessCss", js.undefined)
+      inline def setPreprocessCssUndefined: Self = StObject.set(x, "preprocessCss", js.undefined)
       
-      @scala.inline
-      def setProcessCss(value: js.Function): Self = StObject.set(x, "processCss", value.asInstanceOf[js.Any])
+      inline def setProcessCss(value: js.Function): Self = StObject.set(x, "processCss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessCssUndefined: Self = StObject.set(x, "processCss", js.undefined)
+      inline def setProcessCssUndefined: Self = StObject.set(x, "processCss", js.undefined)
       
-      @scala.inline
-      def setProcessorOpts(value: js.Object): Self = StObject.set(x, "processorOpts", value.asInstanceOf[js.Any])
+      inline def setProcessorOpts(value: js.Object): Self = StObject.set(x, "processorOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessorOptsUndefined: Self = StObject.set(x, "processorOpts", js.undefined)
+      inline def setProcessorOptsUndefined: Self = StObject.set(x, "processorOpts", js.undefined)
       
-      @scala.inline
-      def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+      inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
+      inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
       
-      @scala.inline
-      def setUse(value: js.Array[js.Any]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: js.Array[js.Any]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
       
-      @scala.inline
-      def setUseVarargs(value: js.Any*): Self = StObject.set(x, "use", js.Array(value :_*))
+      inline def setUseVarargs(value: js.Any*): Self = StObject.set(x, "use", js.Array(value :_*))
     }
   }
   

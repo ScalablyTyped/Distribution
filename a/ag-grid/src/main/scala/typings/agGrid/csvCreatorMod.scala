@@ -21,7 +21,7 @@ object csvCreatorMod {
   @js.native
   abstract class BaseCreator[T, S /* <: GridSerializingSession[T] */, P /* <: ExportParams[T] */] () extends StObject {
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
     def createSerializingSession(): S = js.native
     def createSerializingSession(params: P): S = js.native
@@ -50,9 +50,9 @@ object csvCreatorMod {
   @js.native
   class CsvCreator () extends BaseCreator[String, CsvSerializingSession, CsvExportParams] {
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var downloader: js.Any = js.native
+    /* private */ var downloader: js.Any = js.native
     
     def exportDataAsCsv(): String = js.native
     def exportDataAsCsv(params: CsvExportParams): String = js.native
@@ -62,11 +62,11 @@ object csvCreatorMod {
     
     var gridOptionsWrapper: GridOptionsWrapper = js.native
     
-    var gridSerializer: js.Any = js.native
+    /* private */ var gridSerializer: js.Any = js.native
     
     def postConstruct(): Unit = js.native
     
-    var valueService: js.Any = js.native
+    /* private */ var valueService: js.Any = js.native
   }
   
   @JSImport("ag-grid/dist/lib/csvCreator", "CsvSerializingSession")
@@ -82,9 +82,9 @@ object csvCreatorMod {
       columnSeparator: String
     ) = this()
     
-    var columnSeparator: js.Any = js.native
+    /* private */ var columnSeparator: js.Any = js.native
     
-    var lineOpened: js.Any = js.native
+    /* private */ var lineOpened: js.Any = js.native
     
     /* private */ def onNewBodyRowColumn(column: js.Any, index: js.Any, node: js.Any): js.Any = js.native
     
@@ -94,9 +94,9 @@ object csvCreatorMod {
     
     /* private */ def putInQuotes(value: js.Any, suppressQuotes: js.Any): js.Any = js.native
     
-    var result: js.Any = js.native
+    /* private */ var result: js.Any = js.native
     
-    var suppressQuotes: js.Any = js.native
+    /* private */ var suppressQuotes: js.Any = js.native
   }
   
   trait BaseCreatorBeans extends StObject {
@@ -109,23 +109,18 @@ object csvCreatorMod {
   }
   object BaseCreatorBeans {
     
-    @scala.inline
-    def apply(downloader: Downloader, gridOptionsWrapper: GridOptionsWrapper, gridSerializer: GridSerializer): BaseCreatorBeans = {
+    inline def apply(downloader: Downloader, gridOptionsWrapper: GridOptionsWrapper, gridSerializer: GridSerializer): BaseCreatorBeans = {
       val __obj = js.Dynamic.literal(downloader = downloader.asInstanceOf[js.Any], gridOptionsWrapper = gridOptionsWrapper.asInstanceOf[js.Any], gridSerializer = gridSerializer.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseCreatorBeans]
     }
     
-    @scala.inline
-    implicit class BaseCreatorBeansMutableBuilder[Self <: BaseCreatorBeans] (val x: Self) extends AnyVal {
+    extension [Self <: BaseCreatorBeans](x: Self) {
       
-      @scala.inline
-      def setDownloader(value: Downloader): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
+      inline def setDownloader(value: Downloader): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridOptionsWrapper(value: GridOptionsWrapper): Self = StObject.set(x, "gridOptionsWrapper", value.asInstanceOf[js.Any])
+      inline def setGridOptionsWrapper(value: GridOptionsWrapper): Self = StObject.set(x, "gridOptionsWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridSerializer(value: GridSerializer): Self = StObject.set(x, "gridSerializer", value.asInstanceOf[js.Any])
+      inline def setGridSerializer(value: GridSerializer): Self = StObject.set(x, "gridSerializer", value.asInstanceOf[js.Any])
     }
   }
 }

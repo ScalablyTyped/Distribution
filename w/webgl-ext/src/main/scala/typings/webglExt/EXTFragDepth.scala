@@ -10,16 +10,13 @@ trait EXTFragDepth extends StObject {
 }
 object EXTFragDepth {
   
-  @scala.inline
-  def apply(__EXT_frag_depth: Unit): EXTFragDepth = {
+  inline def apply(__EXT_frag_depth: Unit): EXTFragDepth = {
     val __obj = js.Dynamic.literal(__EXT_frag_depth = __EXT_frag_depth.asInstanceOf[js.Any])
     __obj.asInstanceOf[EXTFragDepth]
   }
   
-  @scala.inline
-  implicit class EXTFragDepthMutableBuilder[Self <: EXTFragDepth] (val x: Self) extends AnyVal {
+  extension [Self <: EXTFragDepth](x: Self) {
     
-    @scala.inline
-    def set__EXT_frag_depth(value: Unit): Self = StObject.set(x, "__EXT_frag_depth", value.asInstanceOf[js.Any])
+    inline def set__EXT_frag_depth(value: Unit): Self = StObject.set(x, "__EXT_frag_depth", value.asInstanceOf[js.Any])
   }
 }

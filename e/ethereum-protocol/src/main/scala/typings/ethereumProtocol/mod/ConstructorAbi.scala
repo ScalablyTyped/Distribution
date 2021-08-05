@@ -19,8 +19,7 @@ trait ConstructorAbi
 }
 object ConstructorAbi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputs: js.Array[DataItem],
     payable: Boolean,
     stateMutability: ConstructorStateMutability,
@@ -31,22 +30,16 @@ object ConstructorAbi {
     __obj.asInstanceOf[ConstructorAbi]
   }
   
-  @scala.inline
-  implicit class ConstructorAbiMutableBuilder[Self <: ConstructorAbi] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorAbi](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[DataItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[DataItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: DataItem*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: DataItem*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
+    inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMutability(value: ConstructorStateMutability): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
+    inline def setStateMutability(value: ConstructorStateMutability): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Constructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Constructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

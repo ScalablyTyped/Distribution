@@ -10,8 +10,7 @@ trait Uri
      with IUriRuntimeClassWithAbsoluteCanonicalUri
 object Uri {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absoluteCanonicalUri: String,
     absoluteUri: String,
     combineUri: String => Uri,

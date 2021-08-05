@@ -38,43 +38,31 @@ trait RedshiftDataParameters extends StObject {
 }
 object RedshiftDataParameters {
   
-  @scala.inline
-  def apply(Database: Database, Sql: Sql): RedshiftDataParameters = {
+  inline def apply(Database: Database, Sql: Sql): RedshiftDataParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Sql = Sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftDataParameters]
   }
   
-  @scala.inline
-  implicit class RedshiftDataParametersMutableBuilder[Self <: RedshiftDataParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftDataParameters](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUser(value: DbUser): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: DbUser): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
+    inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    @scala.inline
-    def setSecretManagerArn(value: RedshiftSecretManagerArn): Self = StObject.set(x, "SecretManagerArn", value.asInstanceOf[js.Any])
+    inline def setSecretManagerArn(value: RedshiftSecretManagerArn): Self = StObject.set(x, "SecretManagerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretManagerArnUndefined: Self = StObject.set(x, "SecretManagerArn", js.undefined)
+    inline def setSecretManagerArnUndefined: Self = StObject.set(x, "SecretManagerArn", js.undefined)
     
-    @scala.inline
-    def setSql(value: Sql): Self = StObject.set(x, "Sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: Sql): Self = StObject.set(x, "Sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementName(value: StatementName): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
+    inline def setStatementName(value: StatementName): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementNameUndefined: Self = StObject.set(x, "StatementName", js.undefined)
+    inline def setStatementNameUndefined: Self = StObject.set(x, "StatementName", js.undefined)
     
-    @scala.inline
-    def setWithEvent(value: Boolean): Self = StObject.set(x, "WithEvent", value.asInstanceOf[js.Any])
+    inline def setWithEvent(value: Boolean): Self = StObject.set(x, "WithEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithEventUndefined: Self = StObject.set(x, "WithEvent", js.undefined)
+    inline def setWithEventUndefined: Self = StObject.set(x, "WithEvent", js.undefined)
   }
 }

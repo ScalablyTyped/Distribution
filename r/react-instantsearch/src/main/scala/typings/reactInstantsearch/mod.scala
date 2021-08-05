@@ -18,8 +18,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConnector[TProvided, TExposed](connectorDesc: ConnectorDescription[TProvided, TExposed]): (js.Function1[
+  inline def createConnector[TProvided, TExposed](connectorDesc: ConnectorDescription[TProvided, TExposed]): (js.Function1[
     /* stateless */ FunctionComponent[ConnectorProvided[TProvided]], 
     ComponentClass[TExposed, ComponentState]
   ]) & (js.Function1[

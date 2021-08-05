@@ -15,19 +15,15 @@ trait LineWidget extends StObject {
 }
 object LineWidget {
   
-  @scala.inline
-  def apply(changed: () => Unit, clear: () => Unit): LineWidget = {
+  inline def apply(changed: () => Unit, clear: () => Unit): LineWidget = {
     val __obj = js.Dynamic.literal(changed = js.Any.fromFunction0(changed), clear = js.Any.fromFunction0(clear))
     __obj.asInstanceOf[LineWidget]
   }
   
-  @scala.inline
-  implicit class LineWidgetMutableBuilder[Self <: LineWidget] (val x: Self) extends AnyVal {
+  extension [Self <: LineWidget](x: Self) {
     
-    @scala.inline
-    def setChanged(value: () => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction0(value))
+    inline def setChanged(value: () => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }
 }

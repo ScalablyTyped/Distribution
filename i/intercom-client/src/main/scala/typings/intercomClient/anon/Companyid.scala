@@ -13,16 +13,13 @@ trait Companyid
 }
 object Companyid {
   
-  @scala.inline
-  def apply(company_id: String): Companyid = {
+  inline def apply(company_id: String): Companyid = {
     val __obj = js.Dynamic.literal(company_id = company_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Companyid]
   }
   
-  @scala.inline
-  implicit class CompanyidMutableBuilder[Self <: Companyid] (val x: Self) extends AnyVal {
+  extension [Self <: Companyid](x: Self) {
     
-    @scala.inline
-    def setCompany_id(value: String): Self = StObject.set(x, "company_id", value.asInstanceOf[js.Any])
+    inline def setCompany_id(value: String): Self = StObject.set(x, "company_id", value.asInstanceOf[js.Any])
   }
 }

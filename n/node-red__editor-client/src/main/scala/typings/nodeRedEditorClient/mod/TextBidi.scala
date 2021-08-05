@@ -35,8 +35,7 @@ trait TextBidi extends StObject {
 }
 object TextBidi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enforceTextDirectionWithUCC: String => String,
     prepareInput: HTMLInputElement => Unit,
     resolveBaseTextDir: String => String,
@@ -46,19 +45,14 @@ object TextBidi {
     __obj.asInstanceOf[TextBidi]
   }
   
-  @scala.inline
-  implicit class TextBidiMutableBuilder[Self <: TextBidi] (val x: Self) extends AnyVal {
+  extension [Self <: TextBidi](x: Self) {
     
-    @scala.inline
-    def setEnforceTextDirectionWithUCC(value: String => String): Self = StObject.set(x, "enforceTextDirectionWithUCC", js.Any.fromFunction1(value))
+    inline def setEnforceTextDirectionWithUCC(value: String => String): Self = StObject.set(x, "enforceTextDirectionWithUCC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrepareInput(value: HTMLInputElement => Unit): Self = StObject.set(x, "prepareInput", js.Any.fromFunction1(value))
+    inline def setPrepareInput(value: HTMLInputElement => Unit): Self = StObject.set(x, "prepareInput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveBaseTextDir(value: String => String): Self = StObject.set(x, "resolveBaseTextDir", js.Any.fromFunction1(value))
+    inline def setResolveBaseTextDir(value: String => String): Self = StObject.set(x, "resolveBaseTextDir", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTextDirection(value: String => Unit): Self = StObject.set(x, "setTextDirection", js.Any.fromFunction1(value))
+    inline def setSetTextDirection(value: String => Unit): Self = StObject.set(x, "setTextDirection", js.Any.fromFunction1(value))
   }
 }

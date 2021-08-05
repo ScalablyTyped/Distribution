@@ -13,16 +13,13 @@ trait PauseClusterMessage extends StObject {
 }
 object PauseClusterMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): PauseClusterMessage = {
+  inline def apply(ClusterIdentifier: String): PauseClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PauseClusterMessage]
   }
   
-  @scala.inline
-  implicit class PauseClusterMessageMutableBuilder[Self <: PauseClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PauseClusterMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

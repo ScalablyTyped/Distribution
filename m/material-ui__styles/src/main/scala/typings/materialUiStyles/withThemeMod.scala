@@ -25,8 +25,7 @@ object withThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Theme](
+  inline def default[Theme](
     component: ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
   ): ComponentType[
     (Omit[
@@ -49,8 +48,7 @@ object withThemeMod {
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
-  @scala.inline
-  def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]): ComponentType[
+  inline def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]): ComponentType[
     (Omit[
       LibraryManagedAttributes[
         FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
@@ -68,8 +66,6 @@ object withThemeMod {
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
   
-  @scala.inline
-  def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")().asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
-  @scala.inline
-  def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")(option.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
+  inline def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")().asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
+  inline def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")(option.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
 }

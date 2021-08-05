@@ -17,25 +17,19 @@ trait UpdateSubaccount extends StObject {
 }
 object UpdateSubaccount {
   
-  @scala.inline
-  def apply(name: String, status: String): UpdateSubaccount = {
+  inline def apply(name: String, status: String): UpdateSubaccount = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSubaccount]
   }
   
-  @scala.inline
-  implicit class UpdateSubaccountMutableBuilder[Self <: UpdateSubaccount] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSubaccount](x: Self) {
     
-    @scala.inline
-    def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
+    inline def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
+    inline def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

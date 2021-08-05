@@ -11,16 +11,13 @@ trait PseudoCookieUpgrade extends StObject {
 }
 object PseudoCookieUpgrade {
   
-  @scala.inline
-  def apply(): PseudoCookieUpgrade = {
+  inline def apply(): PseudoCookieUpgrade = {
     val __obj = js.Dynamic.literal(pseudoCookie = true)
     __obj.asInstanceOf[PseudoCookieUpgrade]
   }
   
-  @scala.inline
-  implicit class PseudoCookieUpgradeMutableBuilder[Self <: PseudoCookieUpgrade] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoCookieUpgrade](x: Self) {
     
-    @scala.inline
-    def setPseudoCookie(value: `true`): Self = StObject.set(x, "pseudoCookie", value.asInstanceOf[js.Any])
+    inline def setPseudoCookie(value: `true`): Self = StObject.set(x, "pseudoCookie", value.asInstanceOf[js.Any])
   }
 }

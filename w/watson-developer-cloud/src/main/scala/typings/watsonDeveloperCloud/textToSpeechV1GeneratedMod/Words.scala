@@ -12,19 +12,15 @@ trait Words extends StObject {
 }
 object Words {
   
-  @scala.inline
-  def apply(words: js.Array[Word]): Words = {
+  inline def apply(words: js.Array[Word]): Words = {
     val __obj = js.Dynamic.literal(words = words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Words]
   }
   
-  @scala.inline
-  implicit class WordsMutableBuilder[Self <: Words] (val x: Self) extends AnyVal {
+  extension [Self <: Words](x: Self) {
     
-    @scala.inline
-    def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

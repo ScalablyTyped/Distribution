@@ -16,31 +16,23 @@ trait IConsensusFinalizeBlockResponse extends StObject {
 }
 object IConsensusFinalizeBlockResponse {
   
-  @scala.inline
-  def apply(): IConsensusFinalizeBlockResponse = {
+  inline def apply(): IConsensusFinalizeBlockResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusFinalizeBlockResponse]
   }
   
-  @scala.inline
-  implicit class IConsensusFinalizeBlockResponseMutableBuilder[Self <: IConsensusFinalizeBlockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusFinalizeBlockResponse](x: Self) {
     
-    @scala.inline
-    def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
+    inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
-    @scala.inline
-    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
+    inline def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

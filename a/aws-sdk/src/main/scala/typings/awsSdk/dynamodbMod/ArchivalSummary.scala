@@ -23,31 +23,23 @@ trait ArchivalSummary extends StObject {
 }
 object ArchivalSummary {
   
-  @scala.inline
-  def apply(): ArchivalSummary = {
+  inline def apply(): ArchivalSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArchivalSummary]
   }
   
-  @scala.inline
-  implicit class ArchivalSummaryMutableBuilder[Self <: ArchivalSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ArchivalSummary](x: Self) {
     
-    @scala.inline
-    def setArchivalBackupArn(value: BackupArn): Self = StObject.set(x, "ArchivalBackupArn", value.asInstanceOf[js.Any])
+    inline def setArchivalBackupArn(value: BackupArn): Self = StObject.set(x, "ArchivalBackupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivalBackupArnUndefined: Self = StObject.set(x, "ArchivalBackupArn", js.undefined)
+    inline def setArchivalBackupArnUndefined: Self = StObject.set(x, "ArchivalBackupArn", js.undefined)
     
-    @scala.inline
-    def setArchivalDateTime(value: Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
+    inline def setArchivalDateTime(value: Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivalDateTimeUndefined: Self = StObject.set(x, "ArchivalDateTime", js.undefined)
+    inline def setArchivalDateTimeUndefined: Self = StObject.set(x, "ArchivalDateTime", js.undefined)
     
-    @scala.inline
-    def setArchivalReason(value: ArchivalReason): Self = StObject.set(x, "ArchivalReason", value.asInstanceOf[js.Any])
+    inline def setArchivalReason(value: ArchivalReason): Self = StObject.set(x, "ArchivalReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivalReasonUndefined: Self = StObject.set(x, "ArchivalReason", js.undefined)
+    inline def setArchivalReasonUndefined: Self = StObject.set(x, "ArchivalReason", js.undefined)
   }
 }

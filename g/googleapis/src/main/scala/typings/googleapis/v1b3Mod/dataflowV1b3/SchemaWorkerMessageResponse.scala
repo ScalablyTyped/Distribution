@@ -27,31 +27,23 @@ trait SchemaWorkerMessageResponse extends StObject {
 }
 object SchemaWorkerMessageResponse {
   
-  @scala.inline
-  def apply(): SchemaWorkerMessageResponse = {
+  inline def apply(): SchemaWorkerMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerMessageResponse]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerMessageResponseMutableBuilder[Self <: SchemaWorkerMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerMessageResponse](x: Self) {
     
-    @scala.inline
-    def setWorkerHealthReportResponse(value: SchemaWorkerHealthReportResponse): Self = StObject.set(x, "workerHealthReportResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerHealthReportResponse(value: SchemaWorkerHealthReportResponse): Self = StObject.set(x, "workerHealthReportResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerHealthReportResponseUndefined: Self = StObject.set(x, "workerHealthReportResponse", js.undefined)
+    inline def setWorkerHealthReportResponseUndefined: Self = StObject.set(x, "workerHealthReportResponse", js.undefined)
     
-    @scala.inline
-    def setWorkerMetricsResponse(value: SchemaResourceUtilizationReportResponse): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerMetricsResponse(value: SchemaResourceUtilizationReportResponse): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMetricsResponseUndefined: Self = StObject.set(x, "workerMetricsResponse", js.undefined)
+    inline def setWorkerMetricsResponseUndefined: Self = StObject.set(x, "workerMetricsResponse", js.undefined)
     
-    @scala.inline
-    def setWorkerShutdownNoticeResponse(value: SchemaWorkerShutdownNoticeResponse): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerShutdownNoticeResponse(value: SchemaWorkerShutdownNoticeResponse): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerShutdownNoticeResponseUndefined: Self = StObject.set(x, "workerShutdownNoticeResponse", js.undefined)
+    inline def setWorkerShutdownNoticeResponseUndefined: Self = StObject.set(x, "workerShutdownNoticeResponse", js.undefined)
   }
 }

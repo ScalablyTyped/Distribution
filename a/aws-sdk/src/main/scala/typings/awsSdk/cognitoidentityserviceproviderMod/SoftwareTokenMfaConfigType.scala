@@ -13,19 +13,15 @@ trait SoftwareTokenMfaConfigType extends StObject {
 }
 object SoftwareTokenMfaConfigType {
   
-  @scala.inline
-  def apply(): SoftwareTokenMfaConfigType = {
+  inline def apply(): SoftwareTokenMfaConfigType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SoftwareTokenMfaConfigType]
   }
   
-  @scala.inline
-  implicit class SoftwareTokenMfaConfigTypeMutableBuilder[Self <: SoftwareTokenMfaConfigType] (val x: Self) extends AnyVal {
+  extension [Self <: SoftwareTokenMfaConfigType](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

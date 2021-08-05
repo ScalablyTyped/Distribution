@@ -31,8 +31,7 @@ trait XFootnote
 }
 object XFootnote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     Label: String,
     acquire: () => Unit,
@@ -50,16 +49,12 @@ object XFootnote {
     __obj.asInstanceOf[XFootnote]
   }
   
-  @scala.inline
-  implicit class XFootnoteMutableBuilder[Self <: XFootnote] (val x: Self) extends AnyVal {
+  extension [Self <: XFootnote](x: Self) {
     
-    @scala.inline
-    def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
   }
 }

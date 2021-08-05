@@ -135,17 +135,14 @@ object mod extends Shortcut {
       }
       object LanguageChains {
         
-        @scala.inline
-        def apply(always: Assertion): LanguageChains = {
+        inline def apply(always: Assertion): LanguageChains = {
           val __obj = js.Dynamic.literal(always = always.asInstanceOf[js.Any])
           __obj.asInstanceOf[LanguageChains]
         }
         
-        @scala.inline
-        implicit class LanguageChainsMutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
+        extension [Self <: LanguageChains](x: Self) {
           
-          @scala.inline
-          def setAlways(value: Assertion): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
+          inline def setAlways(value: Assertion): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
         }
       }
     }

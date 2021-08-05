@@ -43,8 +43,7 @@ trait XContentAccess
 }
 object XContentAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryContent: () => XContent,
     queryContentIdentifier: () => XContentIdentifier,
@@ -56,16 +55,12 @@ object XContentAccess {
     __obj.asInstanceOf[XContentAccess]
   }
   
-  @scala.inline
-  implicit class XContentAccessMutableBuilder[Self <: XContentAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XContentAccess](x: Self) {
     
-    @scala.inline
-    def setQueryContent(value: () => XContent): Self = StObject.set(x, "queryContent", js.Any.fromFunction0(value))
+    inline def setQueryContent(value: () => XContent): Self = StObject.set(x, "queryContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryContentIdentifier(value: () => XContentIdentifier): Self = StObject.set(x, "queryContentIdentifier", js.Any.fromFunction0(value))
+    inline def setQueryContentIdentifier(value: () => XContentIdentifier): Self = StObject.set(x, "queryContentIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryContentIdentifierString(value: () => String): Self = StObject.set(x, "queryContentIdentifierString", js.Any.fromFunction0(value))
+    inline def setQueryContentIdentifierString(value: () => String): Self = StObject.set(x, "queryContentIdentifierString", js.Any.fromFunction0(value))
   }
 }

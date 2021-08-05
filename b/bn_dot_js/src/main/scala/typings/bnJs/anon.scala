@@ -17,23 +17,18 @@ object anon {
   }
   object A {
     
-    @scala.inline
-    def apply(a: BN, b: BN, gcd: BN): A = {
+    inline def apply(a: BN, b: BN, gcd: BN): A = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], gcd = gcd.asInstanceOf[js.Any])
       __obj.asInstanceOf[A]
     }
     
-    @scala.inline
-    implicit class AMutableBuilder[Self <: A] (val x: Self) extends AnyVal {
+    extension [Self <: A](x: Self) {
       
-      @scala.inline
-      def setA(value: BN): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: BN): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: BN): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: BN): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGcd(value: BN): Self = StObject.set(x, "gcd", value.asInstanceOf[js.Any])
+      inline def setGcd(value: BN): Self = StObject.set(x, "gcd", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -36,8 +36,7 @@ trait WebDAVDocumentContent
      with XChild
 object WebDAVDocumentContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

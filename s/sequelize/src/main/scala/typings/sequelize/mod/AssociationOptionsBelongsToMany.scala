@@ -46,34 +46,25 @@ trait AssociationOptionsBelongsToMany
 }
 object AssociationOptionsBelongsToMany {
   
-  @scala.inline
-  def apply(through: (Model[js.Any, js.Any, js.Any]) | String | ThroughOptions): AssociationOptionsBelongsToMany = {
+  inline def apply(through: (Model[js.Any, js.Any, js.Any]) | String | ThroughOptions): AssociationOptionsBelongsToMany = {
     val __obj = js.Dynamic.literal(through = through.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationOptionsBelongsToMany]
   }
   
-  @scala.inline
-  implicit class AssociationOptionsBelongsToManyMutableBuilder[Self <: AssociationOptionsBelongsToMany] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationOptionsBelongsToMany](x: Self) {
     
-    @scala.inline
-    def setOtherKey(value: String | AssociationForeignKeyOptions): Self = StObject.set(x, "otherKey", value.asInstanceOf[js.Any])
+    inline def setOtherKey(value: String | AssociationForeignKeyOptions): Self = StObject.set(x, "otherKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherKeyUndefined: Self = StObject.set(x, "otherKey", js.undefined)
+    inline def setOtherKeyUndefined: Self = StObject.set(x, "otherKey", js.undefined)
     
-    @scala.inline
-    def setThrough(value: (Model[js.Any, js.Any, js.Any]) | String | ThroughOptions): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
+    inline def setThrough(value: (Model[js.Any, js.Any, js.Any]) | String | ThroughOptions): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    @scala.inline
-    def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
+    inline def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueKeyUndefined: Self = StObject.set(x, "uniqueKey", js.undefined)
+    inline def setUniqueKeyUndefined: Self = StObject.set(x, "uniqueKey", js.undefined)
   }
 }

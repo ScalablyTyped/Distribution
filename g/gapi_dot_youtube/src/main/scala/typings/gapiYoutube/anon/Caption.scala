@@ -43,8 +43,7 @@ trait Caption extends StObject {
 }
 object Caption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: String,
     contentRating: AcbRating,
     definition: String,
@@ -57,28 +56,20 @@ object Caption {
     __obj.asInstanceOf[Caption]
   }
   
-  @scala.inline
-  implicit class CaptionMutableBuilder[Self <: Caption] (val x: Self) extends AnyVal {
+  extension [Self <: Caption](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentRating(value: AcbRating): Self = StObject.set(x, "contentRating", value.asInstanceOf[js.Any])
+    inline def setContentRating(value: AcbRating): Self = StObject.set(x, "contentRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensedContent(value: Boolean): Self = StObject.set(x, "licensedContent", value.asInstanceOf[js.Any])
+    inline def setLicensedContent(value: Boolean): Self = StObject.set(x, "licensedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionRestriction(value: Allowed): Self = StObject.set(x, "regionRestriction", value.asInstanceOf[js.Any])
+    inline def setRegionRestriction(value: Allowed): Self = StObject.set(x, "regionRestriction", value.asInstanceOf[js.Any])
   }
 }

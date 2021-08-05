@@ -18,25 +18,19 @@ trait AssociatedTargetNetwork extends StObject {
 }
 object AssociatedTargetNetwork {
   
-  @scala.inline
-  def apply(): AssociatedTargetNetwork = {
+  inline def apply(): AssociatedTargetNetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociatedTargetNetwork]
   }
   
-  @scala.inline
-  implicit class AssociatedTargetNetworkMutableBuilder[Self <: AssociatedTargetNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: AssociatedTargetNetwork](x: Self) {
     
-    @scala.inline
-    def setNetworkId(value: String): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: String): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
+    inline def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
     
-    @scala.inline
-    def setNetworkType(value: AssociatedNetworkType): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: AssociatedNetworkType): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
   }
 }
